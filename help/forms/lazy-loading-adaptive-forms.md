@@ -1,5 +1,5 @@
 ---
-title: ¿Cómo se puede mejorar el rendimiento de los formularios grandes mediante la carga diferida?
+title: Cómo mejorar el rendimiento de los formularios grandes mediante la carga diferida
 description: Obtenga información sobre cómo mejorar el rendimiento de los formularios grandes mediante la carga diferida. La carga diferida mejora significativamente el rendimiento de los formularios adaptables grandes y complejos al aplazar la inicialización y la carga de los fragmentos de formulario hasta que son visibles.
 feature: Adaptive Forms, Foundation Components
 role: User
@@ -8,7 +8,7 @@ exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1063'
-ht-degree: 91%
+ht-degree: 96%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 91%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/lazy-loading-adaptive-forms.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/asynchronous-submissions-adaptive-forms.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 
 ## Introducción a la carga diferida {#introduction-to-lazy-loading}
 
-Cuando un formulario se vuelve grande y complejo e incluye cientos y miles de campos, los usuarios finales experimentan tiempos de respuesta largos cuando representan formularios en tiempo de ejecución. Para minimizar el tiempo de respuesta, la Forms adaptable permite dividir formularios en fragmentos lógicos y configurarlos para retrasar la inicialización o la carga de los fragmentos hasta que el fragmento deba ser visible. Este proceso se denomina carga diferida. Además, los fragmentos configurados para la carga diferida se descargan una vez que el usuario se desplaza a otras secciones del formulario y los fragmentos ya no son visibles.
+Cuando un formulario se vuelve grande y complejo e incluye cientos y miles de campos, los usuarios finales experimentan tiempos de respuesta largos cuando representan formularios en tiempo de ejecución. Para minimizar el tiempo de respuesta, los formularios adaptables permiten dividir cada formulario en fragmentos lógicos y configurarlos para retrasar la inicialización o la carga de los fragmentos hasta que el fragmento tenga que ser visible. Este proceso se denomina carga diferida. Además, los fragmentos configurados para la carga diferida se descargan una vez que el usuario se desplaza a otras secciones del formulario y los fragmentos ya no son visibles.
 
 En primer lugar, vamos a explicar cuáles son los requisitos y los pasos preparatorios antes de configurar la carga diferida.
 
@@ -71,7 +71,7 @@ Puede marcar los valores de los objetos del fragmento cargado de forma diferida 
 
 A continuación encontrará algunas limitaciones, recomendaciones y puntos importantes a tener en cuenta a la hora de trabajar con la carga diferida:
 
-* El Adobe recomienda utilizar Forms adaptable basado en esquemas XSD sobre Forms adaptable basado en XFA para configurar la carga diferida en formularios grandes. La mejora del rendimiento obtenida mediante la implementación de la carga diferida en los formularios adaptables basados en XFA es relativamente menor que la obtenida en los formularios adaptables basados en XSD.
+* Se recomienda utilizar formularios adaptables basados en esquemas XSD sobre formularios adaptables basados en XFA para configurar la carga diferida en formularios grandes. La mejora del rendimiento obtenida mediante la implementación de la carga diferida en los formularios adaptables basados en XFA es relativamente menor que la obtenida en los formularios adaptables basados en XSD.
 * No configure la carga diferida en fragmentos de un formulario adaptable que utilicen el diseño **[!UICONTROL Adaptable: todo en una página sin navegación]** en el panel raíz. La configuración de diseño Adaptable provoca que todos los fragmentos se carguen simultáneamente en un formulario adaptable. También puede provocar una reducción del rendimiento.
 * Se recomienda no configurar la carga diferida de los fragmentos del primer panel que se representa al cargar el formulario adaptable.
 * La carga diferida es compatible con hasta dos niveles de la jerarquía de fragmentos.
@@ -90,6 +90,6 @@ Estos son algunos puntos importantes que debe tener en cuenta al desarrollar scr
   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})).resetData()
 
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}

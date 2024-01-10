@@ -5,7 +5,7 @@ exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '3539'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -192,7 +192,7 @@ Es posible que desee mostrar nombres de páginas localizados a los usuarios de c
 
 El desafío que supone la localización del nombre de la página es que muchas de las herramientas de localización disponibles en la plataforma AEM dependen de que los nombres de las páginas coincidan en las distintas configuraciones regionales para mantener el contenido sincronizado.
 
-El `sling:alias` La propiedad permite tener nuestro pastel y comerlo también. `sling:alias` se puede agregar como propiedad a cualquier recurso para permitir un nombre de alias para el recurso. En el ejemplo anterior, tendría:
+La propiedad `sling:alias` permite disfrutar de todos los beneficios. `sling:alias` se puede agregar como propiedad a cualquier recurso para permitir un nombre de alias para el recurso. En el ejemplo anterior, tendría:
 
 * Una página del JCR en:
   `…/es/home`

@@ -6,7 +6,7 @@ hidefromtoc: true
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1709'
-ht-degree: 60%
+ht-degree: 77%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 60%
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
-<span class="preview"> Este documento describe el procedimiento manual para habilitar Adobe Analytics en un formulario adaptable. Sin embargo, el Adobe recomienda utilizar la variable [Habilitar Adobe Analytics para un formulario adaptable mediante la automatización de la configuración de Experience Cloud](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md). </span>
+<span class="preview"> Este documento describe el procedimiento manual para habilitar Adobe Analytics en un formulario adaptable. Sin embargo, Adobe recomienda utilizar la variable [Habilitar Adobe Analytics para un formulario adaptable mediante la automatización de la configuración de Experience Cloud](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md). </span>
 
-AEM Forms se integra con [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=es) para permitirle capturar y rastrear las métricas de rendimiento de sus formularios publicados. El objetivo detrás del análisis de estas métricas es permitir que los usuarios empresariales obtengan información sobre el comportamiento del usuario final y optimizar la experiencia de captura de datos. Puede capturar y hacer un seguimiento del comportamiento de los usuarios que iniciaron sesión y no los que iniciaron sesión (anónimos) mediante Adobe Analytics para Forms adaptable.
+AEM Forms se integra con [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=es) para permitirle capturar y rastrear las métricas de rendimiento de sus formularios publicados. El objetivo detrás del análisis de estas métricas es permitir que los usuarios empresariales obtengan información sobre el comportamiento del usuario final y optimizar la experiencia de captura de datos. Puede capturar y hacer un seguimiento del comportamiento de los usuarios que iniciaron sesión y los que no iniciaron sesión (anónimos) mediante Adobe Analytics para formularios adaptables.
 
 Después de realizar las acciones mencionadas en este artículo, puede configurar y ver los informes en [!DNL Adobe Analytics], como se muestra en el siguiente vídeo:
 
@@ -41,7 +41,7 @@ Puede usar [!DNL Adobe Analytics] para descubrir patrones de interacción y prob
 
 * **Guardar**: Número de veces que los usuarios guardan un formulario en el Portal de Forms.
 
-Además de estos eventos predeterminados, puede definir eventos personalizados en formularios adaptables mediante un editor de reglas y asignar esos eventos a eventos en [!DNL Adobe Analytics]
+Además de estos eventos predeterminados, puede definir eventos personalizados en formularios adaptables mediante el editor de reglas y asignar esos eventos a eventos en [!DNL Adobe Analytics]
 
 La siguiente imagen ilustra las acciones que debe realizar antes de ver los informes en [!DNL Adobe Analytics]:
 
@@ -170,7 +170,7 @@ Realice los siguientes pasos para crear reglas basadas en la extensión **[!UICO
 1. Seleccione **[!UICONTROL Borrar variables]** como tipo de acción. Seleccionar **[!UICONTROL Conservar cambios]**. Después de realizar estos pasos, la sección **[!UICONTROL Acciones]** se muestra de la siguiente forma:
    ![Configuración de acciones](assets/actions-config.png)
 
-   Personalice la sección **[!UICONTROL Acciones]** según sus necesidades. Por ejemplo, puede definir dos **Send Beacon** pasos en un flujo de acción para enviar datos a [!DNL Adobe Analytics] y tratarla como una vista de página en un solo paso y enviar datos a [!DNL Adobe Analytics] y no la trate como una vista de página en el segundo paso.
+   Personalice la sección **[!UICONTROL Acciones]** según sus necesidades. Por ejemplo, puede definir dos pasos **Enviar señalización** en un flujo de acciones para enviar datos a [!DNL Adobe Analytics] y que se trate como una vista de página en un paso y enviar datos a [!DNL Adobe Analytics] y que no se trate como una vista de página en el segundo paso.
 
    ![Configuración de acciones](assets/actions-config-2.png)
 
@@ -195,13 +195,13 @@ Siga estos pasos para publicar la configuración:
 
 1. En el **[!UICONTROL Desarrollo]** , seleccione ![Más opciones](assets/more-options-icon.svg) y luego seleccione **[!UICONTROL Aprobar y publicar en producción]**.
 
-1. Confirme que los cambios y el flujo de publicación se mostrarán pronto en la **[!UICONTROL Publicado]** sección.
+1. Confirme los cambios y el flujo de publicación se muestra en la sección **[!UICONTROL Publicado]** 
 
 ![Flujo de publicación](assets/publish-flow.png)
 
 ## 2. Configurar AEM Forms {#configure-aem-forms}
 
-Antes de crear una configuración de Launch de Adobe, cree una [Configuración de IMS de Adobe mediante Adobe Launch como solución de nube](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=es).
+Antes de crear la configuración de Adobe Launch, crea una [Configuración de Adobe IMS utilizando Adobe Launch como solución de nube](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=es).
 
 ### Crear configuración de Adobe Launch {#create-adobe-launch-configuration}
 
@@ -219,13 +219,13 @@ Realice los siguientes pasos para crear una configuración de Adobe Launch:
 
 1. Seleccione el nombre de la propiedad creada mientras [configura Adobe Analytics](#install-extensions).
 
-1. Seleccionar **[!UICONTROL Guardar y cerrar]**.
+1. Seleccione **[!UICONTROL Guardar y cerrar]**.
 
 1. Publique la configuración.
 
 ### Habilitar [!DNL Adobe Analytics] para un formulario adaptable {#enable-analytics-adaptive-form}
 
-Para usar la variable [!DNL Adobe Launch] en un formulario adaptable existente:
+Para usar la configuración [!DNL Adobe Launch] en un formulario adaptable existente:
 
 1. En la instancia de autor de AEM Forms, vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
 1. Seleccione el formulario adaptable y seleccione **[!UICONTROL Propiedades]**.
@@ -237,11 +237,11 @@ Tras habilitar [!DNL Adobe Analytics] para un formulario adaptable, puede [valid
 
 ### Crear reglas para capturar eventos personalizados (opcional) {#capture-custom-events}
 
-Cree reglas sobre campos específicos de un formulario adaptable mediante un editor de reglas para enviar datos de Analytics de un formulario adaptable a [!DNL Adobe Analytics].
+Crea reglas sobre campos específicos de un formulario adaptable mediante el editor de reglas para enviar datos de Analytics de un formulario adaptable a [!DNL Adobe Analytics].
 
 En un proceso de dos fases, usted define una regla en un campo de un formulario adaptable. La regla envía un evento. El nombre del evento se asigna a un evento de captura personalizado en Adobe Launch.
 
-Para crear reglas utilizando un editor de reglas en un formulario adaptable:
+Para crear reglas utilizando el editor de reglas en un formulario adaptable:
 
 1. Seleccione el campo y seleccione ![Editor de reglas](assets/rule-editor-icon.svg) para abrir la página del editor de reglas.
 1. Defina una condición en la sección [!UICONTROL Cuándo] de la regla.
@@ -262,7 +262,7 @@ Para asignar el evento a un evento de captura personalizado en [!DNL Adobe Analy
 
 1. Seleccione **[!UICONTROL Capturar evento personalizado]** de la lista desplegable **[!UICONTROL Tipo de evento]**.
 
-1. Especifique el nombre del evento que indicó en el paso 4 al crear una regla con el editor de reglas.
+1. Especifique el nombre del evento que indicaste en el paso 4 al crear una regla con el editor de reglas.
 
 1. Seleccionar **Conservar cambios** y realizar el resto de las acciones especificadas en [Configurar reglas](#configure-rules).
 

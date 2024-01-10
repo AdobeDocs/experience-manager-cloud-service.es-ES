@@ -1,13 +1,13 @@
 ---
 title: ¿Configurar una acción de envío para un formulario adaptable?
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesará un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias
-keywords: Obtenga información sobre cómo seleccionar la acción de envío para un formulario adaptable, conectar un formulario adaptable a una lista de sharepoint, conectar un formulario adaptable a una biblioteca de documentos de sharepoint, conectar un formulario adaptable al modelo de datos de formulario
+keywords: cómo seleccionar la acción de envío para un formulario adaptable, conectar un formulario adaptable a una lista de SharePoint, conectar un formulario adaptable a una biblioteca de documentos de SharePoint, conectar un formulario adaptable al modelo de datos de formulario
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 source-git-commit: 3cd10760fa48f4aa1810877f79476be744f048d1
 workflow-type: tm+mt
 source-wordcount: '4090'
-ht-degree: 87%
+ht-degree: 93%
 
 ---
 
@@ -108,7 +108,7 @@ Para habilitar la opción [!UICONTROL Adjuntar documento de registro], consulte 
 
 ## Enviar a SharePoint {#submit-to-sharedrive}
 
-La acción de envío **[!UICONTROL Enviar a SharePoint]** conecta un formulario adaptable con un almacenamiento de Microsoft® SharePoint. Puede enviar el archivo de datos de formulario, los archivos adjuntos o el documento de registro al almacenamiento de Microsoft® Sharepoint conectado.
+La acción de envío **[!UICONTROL Enviar a SharePoint]** conecta un formulario adaptable con un almacenamiento de Microsoft® SharePoint. Puede enviar el archivo de datos de formulario, los archivos adjuntos o el documento de registro al almacenamiento de Microsoft® SharePoint conectado.
 
 Con Enviar a SharePoint, puede:
 * [Conectar un formulario adaptable a la biblioteca de documentos de SharePoint](#connect-af-sharepoint-doc-library)
@@ -116,14 +116,14 @@ Con Enviar a SharePoint, puede:
 
 ### Conectar un formulario adaptable a la biblioteca de documentos de SharePoint {#connect-af-sharepoint-doc-library}
 
-Para usar la variable **[!UICONTROL Enviar a la biblioteca de documentos de SharePoint]** Enviar acción en un formulario adaptable:
+Para usar la acción de envío **[!UICONTROL Enviar a Biblioteca de documentos de SharePoint]** en un formulario adaptable:
 
-1. [Crear una configuración de biblioteca de documentos de SharePoint](#create-a-sharepoint-configuration-create-sharepoint-configuration): conecta AEM Forms a su almacenamiento de Microsoft® Sharepoint.
+1. [Crear una configuración de Biblioteca de documentos de SharePoint](#create-a-sharepoint-configuration-create-sharepoint-configuration): conecta AEM Forms a su almacenamiento de Microsoft® SharePoint.
 2. [Utilice la acción de envío Enviar a SharePoint en un formulario adaptable](#use-sharepoint-configuartion-in-af): conecta el formulario adaptable al Microsoft® SharePoint configurado.
 
-#### Crear una configuración de la biblioteca de documentos de SharePoint {#create-sharepoint-configuration}
+#### Crear configuración de biblioteca de documentos de SharePoint {#create-sharepoint-configuration}
 
-Para conectar AEM Forms al almacenamiento de la biblioteca de documentos de Microsoft® Sharepoint:
+Para conectar AEM Forms a su almacenamiento de Biblioteca de documentos de Microsoft® Sharepoint:
 
 1. Vaya a su instancia de **AEM Forms Author** > **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
 1. Una vez seleccionada la variable **[!UICONTROL Microsoft® SharePoint]**, se le redirigirá a **[!UICONTROL Explorador SharePoint]**.
@@ -152,15 +152,15 @@ Para conectar AEM Forms al almacenamiento de la biblioteca de documentos de Micr
 
 Ahora puede utilizar esta configuración de SharePoint Sites para la acción de envío en un formulario adaptable.
 
-#### Usar la configuración de la biblioteca de documentos de SharePoint en un formulario adaptable {#use-sharepoint-configuartion-in-af}
+#### Uso de la configuración de la biblioteca de documentos de SharePoint en un formulario adaptable {#use-sharepoint-configuartion-in-af}
 
-Puede utilizar la configuración de la biblioteca de documentos de SharePoint creada en un formulario adaptable para guardar datos o el documento de registro generado en una carpeta de SharePoint. Siga estos pasos para utilizar una configuración de almacenamiento de la biblioteca de documentos de SharePoint en un formulario adaptable como:
+Puede utilizar la configuración de la biblioteca de documentos de SharePoint creada en un formulario adaptable para guardar datos o el documento de registro generado en una carpeta de SharePoint. Siga estos pasos para usar una configuración de almacenamiento de la biblioteca de documentos de SharePoint en un formulario adaptable como el siguiente:
 
 1. Crear un [Formulario adaptable](/help/forms/creating-adaptive-form-core-components.md).
 
    >[!NOTE]
    >
-   > * Seleccionar lo mismo [!UICONTROL Contenedor de configuración] para un formulario adaptable, donde haya creado su almacenamiento de la biblioteca de documentos de SharePoint.
+   > * Seleccione el mismo [!UICONTROL Contenedor de configuración] para un formulario adaptable, donde haya creado su almacenamiento de la biblioteca de documentos de SharePoint.
    > * Si no se selecciona ningún [!UICONTROL Contenedor de configuración], a continuación, las carpetas globales [!UICONTROL Configuración de almacenamiento] aparecen en la ventana de propiedades de la acción de envío.
 
 1. Seleccionar **Acción de envío** como **[!UICONTROL Enviar a SharePoint]**.
@@ -168,7 +168,7 @@ Puede utilizar la configuración de la biblioteca de documentos de SharePoint cr
 1. Seleccione la **[!UICONTROL Configuración de almacenamiento]**, donde desee guardar los datos.
 1. Haga clic en **[!UICONTROL Guardar]** para guardar la configuración de envío.
 
-Cuando envía el formulario, los datos se guardan en el almacenamiento de la biblioteca de documentos de Microsoft® Sharepoint especificado.
+Al enviar el formulario, los datos se guardan en el almacenamiento especificado de la biblioteca de documentos de Microsoft® SharePoint.
 La estructura de carpetas para guardar datos es `/folder_name/form_name/year/month/date/submission_id/data`.
 
 ### Conectar un formulario adaptable a la lista de Microsoft® SharePoint {#connect-af-sharepoint-list}
@@ -225,7 +225,7 @@ Cuando envía el formulario, los datos se guardan en el almacenamiento de listas
 
 La acción de envío **[!UICONTROL Enviar mediante el modelo de datos de formulario]** escribe los datos del formulario adaptable enviados para el objeto del modelo de datos especificado en un modelo de datos de formulario en su origen de datos. Al configurar la acción de envío, puede elegir un objeto de modelo de datos cuyos datos enviados desee volver a escribir en su origen de datos.
 
-Puede conectar un formulario adaptable a una lista de SharePoint de Microsoft mediante la acción de envío del modelo de datos de formulario.
+Se puede conectar un formulario adaptable a una lista de Microsoft SharePoint al enviar un modelo de datos de formulario.
 
 Además, puede enviar al origen de datos un archivo adjunto de formulario mediante un modelo de datos de formulario y un documento de registro (DoR). Para obtener información sobre el modelo de datos de formulario, consulte integración de datos de [[!DNL AEM Forms] ](data-integration.md).
 
@@ -473,7 +473,7 @@ Utilice **[!UICONTROL Revalidar en el servidor]** en el contenedor de formulario
 
 Habilitar la validación del lado del servidor
 
-Si el usuario final omite esas validaciones y envía los formularios, el servidor volverá a realizar la validación. Si la validación falla al final del servidor, se detendrá la transacción del envío. Al usuario se le volverá a presentar el formulario original. Los datos capturados y enviados se presentarán al usuario como un error.
+Si el usuario final omite esas validaciones y envía los formularios, el servidor volverá a realizar la validación. Si la validación falla al final del servidor, se detendrá la transacción del envío. Al usuario se le presenta el formulario original nuevamente. Los datos capturados y enviados se presentarán al usuario como un error.
 
 >[!NOTE]
 >
@@ -507,7 +507,7 @@ Cuando rellena previamente un modelo de datos de formulario o un formulario adap
 
 -->
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}
 

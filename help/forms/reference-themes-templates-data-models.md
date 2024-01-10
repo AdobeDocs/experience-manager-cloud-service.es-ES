@@ -1,22 +1,22 @@
 ---
-title: AEM ¿Cómo se obtienen las temáticas y plantillas de referencia para los formularios de?
-description: AEM Forms proporciona temáticas de formularios adaptables, plantillas y modelos de datos de formulario de ejemplo para ayudarle a crear formularios rápidamente.
+title: ¿Cómo obtener temáticas de referencia y plantillas para AEM Forms?
+description: AEM Forms proporciona temáticas de formularios adaptables de muestra, plantillas y modelos de datos de formularios adaptables para ayudarle a crear formularios rápidamente.
 feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
 source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-# Temáticas, plantillas y modelos de datos de formulario de referencia {#reference-themes-templates-and-data-models}
+# Temáticas de referencia, plantillas y modelos de datos de formularios {#reference-themes-templates-and-data-models}
 
 
 | Se aplica a | Vínculo del artículo |
 | -------- | ---------------------------- |
 | Formulario adaptable basado en componentes principales | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es) |
-| Formulario adaptable basado en componentes de base | Este artículo |
+| Formulario adaptable en función de los componentes de base | Este artículo |
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Formularios adaptables](/help/forms/creating-adaptive-form-core-components.md) o [adición de Formularios adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
@@ -117,7 +117,7 @@ La plantilla básica le ayuda a crear rápidamente un formulario de inscripción
 Después, los formularios adaptables pueden interactuar con los servidores de Microsoft Dynamics 365 y Salesforce para habilitar los flujos de trabajo empresariales. Por ejemplo:
 
 * Escriba datos en Microsoft Dynamics 365 y Salesforce al enviar formularios adaptables.
-* escribir datos en Microsoft Dynamics 365 y Salesforce a través de entidades personalizadas definidas en el modelo de datos de formulario y a la inversa;
+* Escriba datos en Microsoft Dynamics 365 y Salesforce a través de entidades personalizadas definidas en el modelo de datos de formulario y viceversa.
 * Consulte el servidor de Microsoft Dynamics 365 y Salesforce para obtener datos y rellenar previamente formularios adaptables.
 * Lea los datos del servidor de Microsoft Dynamics 365 y Salesforce.
 
@@ -129,6 +129,6 @@ Puede obtener los siguientes modelos de datos de formulario instalando el [Paque
 Para obtener información sobre el uso de estos modelos, consulte [Configuración de los servicios en la nube de Microsoft Dynamics 365 y Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=es#configure-dynamics-cloud-service)
 
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}

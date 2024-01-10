@@ -7,7 +7,7 @@ exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1017'
-ht-degree: 85%
+ht-degree: 98%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 85%
 
 Empiece en el editor de fragmentos de contenido con la aplicación de muestra que se proporciona con la versión de prueba de AEM sin encabezado ya cargada. La aplicación de muestra cuenta con la tecnología de fragmentos de contenido que se entrega mediante GraphQL. Utilice el editor de fragmentos de contenido para familiarizarse con el editor previsualizando la aplicación de muestra.
 
-1. Seleccione el **Previsualizar** en la parte superior derecha de la pantalla del editor.
+1. Haga clic o pulse en el botón **Vista previa** en la parte superior derecha de la pantalla del editor.
 
 1. La aplicación de muestra se abre en una nueva pestaña. La aplicación es para la marca ficticia de estilo de vida al aire libre WKND. Muévase hacia abajo por la página para desplazarse por el contenido de ejemplo.
 
@@ -45,7 +45,7 @@ Empiece en el editor de fragmentos de contenido con la aplicación de muestra qu
 
 El editor de fragmentos de contenido muestra el diseño básico de la aplicación como un fragmento de contenido de página. Los **Paneles** representan diferentes páginas de la aplicación, cada una de las cuales es su propio fragmento de contenido. Al modificar estos fragmentos, puede cambiar el contenido de la aplicación.
 
-1. Seleccionar **Mtn Biker en Canyon** en el **Paneles** sección.
+1. Haga clic o pulse en **Ciclista de montaña en el Cañón** en la sección **Paneles**.
 
    ![Selección del panel de texto](assets/do-not-localize/edit-header-1.png)
 
@@ -57,7 +57,7 @@ El editor de fragmentos de contenido muestra el diseño básico de la aplicació
 
 1. Cambie el texto de `Your next great adventure is calling` a `Choose your own adventure`. El editor guarda automáticamente el cambio.
 
-1. Seleccionar **Previsualizar** en la parte superior derecha de la ventana para ver los cambios. La vista previa de la aplicación de demostración se abre en una nueva pestaña.
+1. Haga clic o pulse en **Vista previa** en la parte superior derecha de la ventana para ver los cambios. La vista previa de la aplicación de demostración se abre en una nueva pestaña.
 
    ![Vista previa de la aplicación de demostración](assets/do-not-localize/edit-header-5-6.png)
 
@@ -75,21 +75,21 @@ Ahora que ha modificado un titular en la aplicación, intente cambiar una imagen
 
 1. Seleccione la capa de imagen **Ciclista de montaña: Ciclista**. Se abre el editor de fragmentos de contenido
 
-1. Seleccione el **X** para eliminar la imagen del motociclista. La imagen desaparece y el editor muestra un error, ya que la imagen son datos requeridos para este modelo de fragmento de contenido.
+1. Seleccione la **X** para eliminar la imagen del motociclista. La imagen desaparece y el editor muestra un error, ya que la imagen son datos requeridos para este modelo de fragmento de contenido.
 
    ![Quitar imagen del fragmento](assets/do-not-localize/swap-image-4.png)
 
-1. Seleccionar **Añadir recurso** y luego **Examinar recursos** en el menú emergente.
+1. Seleccione **Añadir recurso** y luego **Examinar recursos** en el menú emergente.
 
 1. Se abre el cuadro de diálogo **Seleccionar recurso** y la ruta **sample-wknd-app** > **en** > **image-files** se selecciona automáticamente.
 
-1. Seleccionar la imagen `biker-yellow.png` y luego seleccione **Seleccionar**.
+1. Seleccione la imagen `biker-yellow.png` y luego haga clic en **Seleccionar**.
 
 1. La imagen del ciclista se reemplaza por la seleccionada. El editor guarda automáticamente los cambios.
 
-1. Seleccionar **Previsualizar** en la parte superior derecha de la ventana para ver los cambios. La vista previa de la aplicación de demostración se abre en una nueva pestaña. Haga clic en actualizar en el explorador y debería ver la nueva imagen del ciclista con pantalones cortos amarillos en la aplicación.
+1. Haga clic o pulse en **Vista previa** en la parte superior derecha de la ventana para ver los cambios. La vista previa de la aplicación de demostración se abre en una nueva pestaña. Haga clic en actualizar en el explorador y debería ver la nueva imagen del ciclista con pantalones cortos amarillos en la aplicación.
 
-AEM Es así de fácil actualizar imágenes y recursos en sus aplicaciones con CMS sin encabezado, que no tiene encabezado.
+Es muy fácil actualizar imágenes y recursos en sus aplicaciones con el CMS de AEM sin encabezado.
 
 ## Adición de una referencia a un nuevo fragmento de contenido en la aplicación {#create-moment}
 
@@ -99,13 +99,13 @@ Ahora que ha actualizado la imagen del ciclista, vamos a ver cómo añadir conte
 
 1. Vuelva a la pestaña del explorador del editor de fragmentos de contenido desde la pestaña de vista previa.
 
-1. Debe volver al lugar correcto en el editor de fragmentos de contenido. Las rutas de exploración en la parte superior izquierda del editor muestran dónde se encuentra en la jerarquía de contenido. Seleccionar **Inicio de WKND** en las rutas de exploración para volver a esa página.
+1. Debe volver al lugar correcto en el editor de fragmentos de contenido. Las rutas de exploración en la parte superior izquierda del editor muestran dónde se encuentra en la jerarquía de contenido. Haga clic o pulse en **Inicio de WKND** en las rutas de exploración para volver a esa página.
 
 1. Seleccione el panel **Ciclista de montaña en WKND amarillo**.
 
 1. Seleccione la capa **Ciclista de montaña: ventas**.
 
-1. Para crear una llamada en este panel, cree un fragmento de contenido de momento de ventas. Seleccione el **+ Crear nuevo fragmento** botón.
+1. Para crear una nueva llamada en este panel, debe crear un nuevo fragmento de contenido en el momento de ventas. Seleccione el botón **+ Crear nuevo fragmento**.
 
    ![Adición de un momento de ventas](assets/do-not-localize/add-reference-1-5.png)
 
@@ -113,7 +113,7 @@ Ahora que ha actualizado la imagen del ciclista, vamos a ver cómo añadir conte
 
 1. Asigne un nombre al fragmento de contenido. Por ejemplo, introduzca `Shorts` en el campo **Nombre**.
 
-1. Seleccionar **Crear y abrir**.
+1. Seleccione **Crear y abrir**.
 
    ![Asigne un nombre al momento de ventas](assets/do-not-localize/add-reference-6-7-8.png)
 
@@ -126,7 +126,7 @@ Ahora que ha actualizado la imagen del ciclista, vamos a ver cómo añadir conte
    * **X**: `-5`
    * **Y**: `-10`
 
-1. Seleccionar **Previsualizar** en la parte superior derecha de la ventana para ver los cambios. La vista previa de la aplicación de demostración se abre en una nueva pestaña. Haga clic en actualizar en el explorador para probar la posición y realizar los ajustes necesarios en el editor.
+1. Haga clic en **Vista previa** en la parte superior derecha de la ventana para ver los cambios. La vista previa de la aplicación de demostración se abre en una nueva pestaña. Haga clic en actualizar en el explorador para probar la posición y realizar los ajustes necesarios en el editor.
 
    ![Vista previa](assets/do-not-localize/add-reference-10-11-12.png)
 

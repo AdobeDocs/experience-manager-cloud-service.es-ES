@@ -9,18 +9,18 @@ exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
 source-git-commit: e81da7414335e00411942adeb41978d39f172b52
 workflow-type: tm+mt
 source-wordcount: '3242'
-ht-degree: 87%
+ht-degree: 91%
 
 ---
 
-# Utilizar [!DNL Adobe Sign] en un formulario adaptable {#using-adobe-sign-in-an-adaptive-form}
+# Utilice [!DNL Adobe Sign] en un formulario adaptable {#using-adobe-sign-in-an-adaptive-form}
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/creating-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 
@@ -168,7 +168,7 @@ Para seleccionar un servicio de Cloud Service y la petición de firma:
 
    Si la lista **[!UICONTROL Adobe Sign Cloud Service]** está vacía, consulte el artículo [Configurar [!DNL Adobe Sign] con [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) para configurar el servicio.
 
-   La lista desplegable enumera los Cloud Service que existen en la variable `global` en Herramientas > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. Además, la lista desplegable también enumera los Cloud Service que existen en la carpeta que selecciona en la **[!UICONTROL Contenedor de configuración]** al crear un formulario adaptable.
+   La lista desplegable enumera los servicios de Cloud Service que existen en la carpeta `global` en Herramientas > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. Además, la lista desplegable también enumera los servicios de Cloud Service que existen en la carpeta que seleccionas en el campo **[!UICONTROL Contenedor de configuración]** al crear un formulario adaptable.
 
 1. Seleccione la opción para configurar la acción de envío mediante **[!UICONTROL Enviar el formulario]**. Puede seleccionar cualquiera de las dos opciones siguientes:
    * **Enviar el formulario (y enviar el acuerdo para su firma)**: Esta opción envía el formulario inmediatamente y, a continuación, lo envía para su firma a los destinatarios.
@@ -330,7 +330,7 @@ Después de [editar las propiedades del formulario adaptable para Adobe Sign](wo
 
      >[!NOTE]
      >
-     > La firma digital también se aplica a [!DNL Adobe Acrobat Sign for Government] pero no se puede aplicar mediante firmas en la nube.
+     > La firma digital también se aplica a [!DNL Adobe Acrobat Sign for Government], pero no puede aplicarla usando Cloud Signatures.
 
    Después de agregar el campo de firma de nube al formulario adaptable, realice los siguientes pasos para completar el proceso de configuración:
 
@@ -371,10 +371,10 @@ Cuando el servicio de [!DNL Adobe Sign] está configurado para un formulario ada
 
 >[!MORELIKETHIS]
 >
->* [Integrar [!DNL Adobe Sign] con [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)
->* [Prácticas recomendadas para usar [!DNL Adobe Sign] con formularios adaptables](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
+>* [Integrar [!DNL Adobe Sign]  con  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)
+>* [Prácticas recomendadas para usar  [!DNL Adobe Sign]  con formularios adaptables](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
 
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}

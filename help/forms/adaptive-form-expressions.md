@@ -4,7 +4,7 @@ description: Utilice expresiones de formularios adaptables para agregar validaci
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2683'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -109,7 +109,7 @@ La expresión “options” se utiliza para rellenar de manera dinámica las opc
 
 **`marital_status.value == "married" ? ["1=One", "2=two"] : ["0=Zero"]`.**
 
-Siempre que el valor de **marital_status** cambia, se recupera la expresión. También puede rellenar la lista desplegable desde un servicio REST. <!-- For detailed information, see [Dynamically populating dropdowns](dynamically-populate-dropdowns.md). -->
+Siempre que el valor de **marital_status** cambia, se recupera la expresión. También puede rellenar el menú desplegable desde un servicio REST. <!-- For detailed information, see [Dynamically populating dropdowns](dynamically-populate-dropdowns.md). -->
 
 ### Expresión “summary” {#summary}
 
@@ -187,7 +187,7 @@ Los métodos para agregar validaciones en un campo son los siguientes:
 
 ### Requerido {#required}
 
-Para hacer que un componente sea obligatorio, en el diálogo **Editar** del componente, puede seleccionar la opción **Título y texto > Requerido**. También puede añadir el mensaje necesario correspondiente (opcional).
+Para hacer que un componente sea obligatorio, en el diálogo **Editar** del componente, puede seleccionar la opción **Título y texto > Requerido**. También puede agregar el mensaje necesario correspondiente (opcional).
 
 ### motivos de validación {#validation-patterns}
 
@@ -205,7 +205,7 @@ El formato de visualización puede utilizarse para mostrar los datos en distinto
 
 ### GuideBridge: API y eventos {#guidebridge-apis-and-events}
 
-GuideBridge es una colección de API que se pueden usar para interactuar con Forms adaptable en el modelo de memoria en un explorador. Para obtener una introducción detallada a la API de Guide Bridge, los métodos de clase y los eventos expuestos, consulte [Referencia de la API de la biblioteca JavaScript™ para formularios adaptables](https://helpx.adobe.com/es/aem-forms/6/javascript-api/).
+GuideBridge es una colección de API que se pueden usar para interactuar con formularios adaptables en el modelo de memoria en un explorador. Para obtener una introducción detallada a la API de Guide Bridge, los métodos de clase y los eventos expuestos, consulte [Referencia de la API de la biblioteca JavaScript™ para formularios adaptables](https://helpx.adobe.com/es/aem-forms/6/javascript-api/).
 
 >[!NOTE]
 >

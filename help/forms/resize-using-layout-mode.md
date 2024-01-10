@@ -1,6 +1,6 @@
 ---
-title: ¿Cómo utilizo el modo Diseño para cambiar el tamaño de los componentes de los formularios adaptables?
-description: Defina la posición de los componentes de AEM Forms, aprenda a acceder al modo de diseño, cambie el tamaño de los componentes, cambie el tamaño de los paneles y defina el diseño de varias columnas para un panel.
+title: ¿Cómo utilizar el modo Diseño para cambiar el tamaño de los componentes para formularios adaptables?
+description: Defina la posición de los componentes de AEM Forms, aprenda a acceder al modo de diseño, cambie el tamaño de los componentes, de los paneles y defina el diseño de varias columnas para un panel.
 role: User
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
@@ -8,17 +8,17 @@ exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1138'
-ht-degree: 76%
+ht-degree: 81%
 
 ---
 
-# Utilice el modo Diseño para cambiar el tamaño de los componentes para el Forms adaptable {#use-layout-mode-to-resize-components}
+# Utilice el modo Diseño para cambiar el tamaño de los componentes para los formularios adaptables {#use-layout-mode-to-resize-components}
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/creating-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/resize-using-layout-mode.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/resize-using-layout-mode.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 La interfaz de creación de formularios adaptables le permite cambiar el tamaño de los componentes mediante el modo Diseño. Arrastre los puntos azules dentro de las columnas para definir los puntos iniciales y finales para colocar los componentes. Aparecen puntos azules tras pulsar el componente en la cuadrícula adaptable. La cuadrícula adaptable consta de 12 columnas iguales. El sombreado de color blanco y azul en las columnas alternativas diferencia una columna de la otra.
@@ -109,7 +109,7 @@ Realice los siguientes pasos para habilitar la nueva cuadrícula adaptable:
 
 ### Integrar un fragmento antiguo en un formulario adaptable con un nuevo diseño adaptable {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
-El nuevo diseño adaptable del formulario adaptable le permite agregar un fragmento de formulario adaptable con el diseño antiguo al formulario. Con todo, el nuevo diseño descarta las propiedades de diseño ya definidas para los componentes utilizados en el fragmento. Puede cambiar al modo Diseño para definir las propiedades de diseño de los componentes utilizados en el fragmento.
+El nuevo diseño adaptable del formulario adaptable te permite añadir un fragmento de formulario adaptable con el antiguo diseño adaptable al formulario. Con todo, el nuevo diseño descarta las propiedades de diseño ya definidas para los componentes utilizados en el fragmento. Puede cambiar al modo Diseño para definir las propiedades de diseño de los componentes utilizados en el fragmento.
 
 ### Integrar un fragmento con un nuevo diseño adaptable en un antiguo formulario adaptable {#embed-a-fragment-with-new-responsive-layout-in-an-old-adaptive-form}
 
@@ -131,6 +131,6 @@ Siga estos pasos para desactivar el modo Diseño:
 1. Seleccione el **[!UICONTROL Configuración de diseño]** y seleccione **[!UICONTROL Desactivar modo de diseño]**.
 1. Seleccionar ![Guardar cambios](assets/save_icon.svg) para guardar las propiedades de la plantilla.
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}

@@ -1,5 +1,5 @@
 ---
-title: ¿Cómo rellenar previamente los campos del formulario adaptable?
+title: Rellenado previo de los campos del formulario adaptable
 description: Utilice los datos existentes para rellenar previamente los campos de un formulario adaptable. Los usuarios pueden rellenar previamente la información básica de un formulario iniciando sesión con sus perfiles sociales.
 topic-tags: develop
 feature: Adaptive Forms, Foundation Components
@@ -7,7 +7,7 @@ exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
 source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
 source-wordcount: '2007'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 ## Introducción {#introduction}
@@ -262,7 +262,7 @@ Por lo general, los campos enlazados (esquema de formulario) y no enlazados se c
 
 >[!NOTE]
 >
-> Como regla general, no mezcle campos enlazados y no enlazados si están intersectados en datos rellenados por el usuario en campos no enlazados. Si es posible, debe modificar el esquema o la plantilla de formulario XFA y agregar una entrada para los campos no enlazados, de modo que también se conviertan en enlazados y sus datos estén disponibles como otros campos en los datos enviados.
+> Como regla general, no mezcle campos enlazados y no enlazados si están intersectados en datos rellenos por el usuario final en campos no enlazados. Si es posible, debe modificar el esquema o la plantilla de formulario XFA y agregar una entrada para los campos no enlazados, de modo que también se conviertan en enlazados y sus datos estén disponibles como otros campos en los datos enviados.
 
 ## Protocolos admitidos para rellenar previamente datos de usuario {#supported-protocols-for-prefilling-user-data}
 

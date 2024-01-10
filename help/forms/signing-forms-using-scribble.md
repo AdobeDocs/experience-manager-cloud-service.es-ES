@@ -1,6 +1,6 @@
 ---
 title: ¿Cómo se aplican firmas electrónicas a un formulario utilizando firmas manuscritas?
-description: Aprenda a aplicar firmas electrónicas a un formulario mediante firmas manuscritas.
+description: Aprenda a aplicar firmas electrónicas a un formulario utilizando firmas manuscritas.
 uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
 products: SG_EXPERIENCEMANAGER/FORMS
 topic-tags: author
@@ -9,7 +9,7 @@ exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '709'
-ht-degree: 83%
+ht-degree: 89%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 83%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/signing-forms-using-scribble.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-redirect-page.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 
@@ -75,7 +75,7 @@ Puede seleccionar el **Configurar** ![icono de configuración](assets/configure.
 
    * **Título:** especifique un título único para el componente.
    * **Mensaje de plantilla:** especifique el mensaje que se mostrará mientras se carga el PDF de firma. Los servicios de Adobe Sign tardan algún tiempo en preparar y cargar el PDF de firma.
-   * **Servicio de firma:** seleccione la opción **Firma manuscrita**.
+   * **Servicio de firma:** selecciona la opción **Firma manuscrita**.
 
    * **Clase CSS**: especifique la clase CSS de la biblioteca de cliente, si la hay. Adobe recomienda utilizar [temas](themes.md) y [estilos en línea](inline-style-adaptive-forms.md) en lugar de la clase CSS.
 
@@ -99,6 +99,6 @@ Puede seleccionar el **Configurar** ![icono de configuración](assets/configure.
 
 Las firmas se agregan al formulario y el control de formulario pasa al siguiente panel.
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}

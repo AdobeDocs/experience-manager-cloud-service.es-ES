@@ -7,7 +7,7 @@ exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
 source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
 workflow-type: tm+mt
 source-wordcount: '601'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 96%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/reusing-adaptive-forms.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/reusing-adaptive-forms.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 Si desea utilizar algunas de las propiedades de un formulario adaptable existente para generar uno nuevo, puede utilizar simplemente la funcionalidad Copiar y pegar. Además, puede pegar el nuevo formulario adaptable en la ruta de carpeta deseada. Todas las propiedades de metadatos se replican, y también se copian los XFA y XSD de los formularios adaptables basados en XFA y XSD.
@@ -74,6 +74,6 @@ El contenido de un formulario adaptable pegado se puede cambiar utilizando los s
    El recurso pegado es diferente del copiado. Puede publicarlo como un nuevo recurso para que esté disponible para los usuarios finales. Para obtener información sobre cómo publicar un recurso, <!-- see [Publishing and unpublishing forms](publishing-unpublishing-forms.md) -->
 
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}

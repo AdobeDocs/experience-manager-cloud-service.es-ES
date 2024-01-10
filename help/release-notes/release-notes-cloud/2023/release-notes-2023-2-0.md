@@ -5,7 +5,7 @@ exl-id: 671056e6-84cc-4c2c-bca3-fde68d5cc835
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '730'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -45,8 +45,8 @@ Eche un vistazo al vídeo de información general sobre la versión de febrero d
 ### Nuevas funciones de [!DNL Assets] {#assets-features}
 
 * Nuevo protocolo (DASH - Dynamic Adaptive Streaming over HTTP) compatible con el flujo adaptable en la entrega de vídeo de Dynamic Media (con CMAF habilitado):
-   * El streaming adaptable (DASH/HLS) garantiza una mejor experiencia de visualización de los vídeos por parte del usuario
-   * DASH es el protocolo estándar internacional para la transmisión de vídeo adaptable y es ampliamente adoptado en el sector
+   * La transmisión adaptable (DASH/HLS) garantiza una mejor experiencia de visualización de vídeos por parte del usuario
+   * DASH es el protocolo estándar internacional para la transmisión de vídeo adaptable y es ampliamente adoptado en el sector.
    * Disponible en NA, que se habilitará mediante ticket de soporte, próximamente en APAC, EMEA
 
 * Se ha añadido compatibilidad con imágenes WebP para extraer automáticamente metadatos, generar miniaturas y representaciones personalizadas. Ahora, las funciones Smart Tag y Smart Crop también son compatibles con estos archivos.

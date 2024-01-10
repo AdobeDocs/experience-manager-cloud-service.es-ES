@@ -8,7 +8,7 @@ exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1768'
-ht-degree: 91%
+ht-degree: 94%
 
 ---
 
@@ -49,7 +49,7 @@ Puede crear un fragmento de formulario adaptable desde cero o guardar un panel e
 
      >[!NOTE]
      >
-     > En Forms adaptable, puede utilizar un solo fragmento de formulario (basado en componentes principales) varias veces. Admite fragmentos de formulario basados en ninguno y en esquema.
+     > En Formularios adaptables, puede utilizar un solo fragmento de formulario (basado en componentes principales) varias veces. Admite fragmentos de formulario basados en ninguno y en esquema.
 
    * **Esquema**: especifica que se crea el fragmento con un esquema XML o JSON cargado en AEM Forms. Puede cargar o seleccionar entre los esquemas XML disponibles como modelo de formulario para el fragmento. Al seleccionar un esquema XML, también puede crear un fragmento de formulario adaptable seleccionando un complexType presente en el esquema seleccionado del cuadro desplegable **[!UICONTROL Tipo complejo de esquema XML]**. Al seleccionar un esquema JSON, también puede crear un fragmento de formulario adaptable seleccionando una definición de esquema presente en el esquema seleccionado del cuadro desplegable **[!UICONTROL Definiciones de esquema JSON]**.
    * **Modelo de datos de formulario**: especifica la creación del fragmento mediante un modelo de datos de formulario. Puede crear un fragmento de formulario adaptable basado en un único objeto de modelo de datos en un modelo de datos de formulario. Expanda la lista desplegable Definiciones del modelo de datos de formulario. Esta lista enumera todos los objetos de modelo de datos del modelo de datos de formulario especificado. Seleccione un objeto de modelo de datos de la lista.

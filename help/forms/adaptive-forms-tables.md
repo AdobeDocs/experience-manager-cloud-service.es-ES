@@ -7,7 +7,7 @@ exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '2476'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -71,13 +71,13 @@ Para agregar, eliminar o mover la fila, haga clic en cualquier celda de la fila.
 
 ![add-delete-move-row-column](assets/add-delete-move-row.png)
 
-Haga doble clic en la fila para configurar las propiedades de una fila, como Nombre, Referencia de enlace, Configuración de repetición y Clase CSS.
+Haga doble clic en la fila para configurar sus propiedades, como Nombre, Referencia de vínculo, Configuración de repetición y Clase CSS.
 ![add-delete-move-row-column](assets/row-properties-image.png)
 
 
 #### Adición o supresión de una columna
 
-Para agregar o eliminar una columna, haga clic en la celda de texto de la sección del encabezado y se abrirá una barra de herramientas con las opciones para agregar o eliminar una columna:
+Para agregar o eliminar una columna, haga clic en la celda de texto de la sección del encabezado y se abrirá una barra de herramientas con las opciones para ello:
 
 ![add-delete-move-row-column](assets/add-delet-column.png)
 
@@ -155,7 +155,7 @@ Las tablas proporcionan compatibilidad para agregar o eliminar filas de forma di
 1. En la pestaña Repetir configuración, especifique los recuentos mínimo y máximo para limitar el número de filas de la tabla.
 1. Haga clic en **Listo**.
 
-Durante el tiempo de ejecución o la previsualización, verá lo siguiente **+** y ![Botón Eliminar](/help/forms/assets/Smock_Delete.svg) para agregar o eliminar una fila.
+Durante el tiempo de ejecución o la vista previa, verá los botones **+** y ![Eliminar](/help/forms/assets/Smock_Delete.svg) para añadir o eliminar una fila.
 
 ![add-delete-rows-dynamically](assets/add-delete-layout.png)
 

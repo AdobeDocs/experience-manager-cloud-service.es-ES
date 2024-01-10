@@ -5,7 +5,7 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '1344'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -133,7 +133,7 @@ La **Referencia de fragmento**:
 
 * Es un tipo de datos específico disponible cuando se define un modelo de fragmento de contenido.
 * Hace referencia a otro fragmento, según un modelo de fragmento de contenido específico.
-* Permite crear y recuperar datos estructurados.
+* Permite crear datos estructurados y luego recuperarlos.
 
    * Cuando se define como **multifuente**, el fragmento principal puede hacer referencia (recuperar) a varios subfragmentos.
 

@@ -5,7 +5,7 @@ exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 47%
+ht-degree: 97%
 
 ---
 
@@ -25,11 +25,11 @@ En la siguiente sección se describen las notas de la versión de funciones de l
 
 ## Fecha de la versión {#release-date}
 
-La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] (2023.7.0) fue el viernes, 27 de julio de 2023. La siguiente versión con funcionalidades (2023.8.0) está planificada para el viernes, 31 de agosto de 2023.
+La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.7.0) es el 27 de junio de 2023. La próxima versión con funcionalidades (2023.8.0) está planificada para el 31 de agosto de 2023.
 
 ## Vídeo de la versión {#release-video}
 
-Eche un vistazo al vídeo Información general sobre la versión de julio de 2023 para ver un resumen de las funciones añadidas en la versión 2023.7.0:
+Eche un vistazo al vídeo Información general sobre la versión de julio de 2023 para ver un resumen de las funcionalidades añadidas en la versión 2023.7.0:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3422016/?quality=12)
 
@@ -37,11 +37,11 @@ Eche un vistazo al vídeo Información general sobre la versión de julio de 202
 
 ### Nuevas funciones de [!DNL Experience Manager Sites] {#sites-features}
 
-* MSM para fragmentos de contenido. AEM El Administrador de varios sitios ya está disponible para los fragmentos de contenido, lo que permite crear Live Copies de fragmentos de contenido para la distribución de contenido por lotes. Los controles de herencia granulares están disponibles hasta el nivel de Variación y Elemento de fragmento de contenido.
+* MSM para fragmentos de contenido. El Administrador de varios sitios de AEM ya está disponible para los fragmentos de contenido, lo que permite crear Live Copies de fragmentos de contenido para la distribución de contenido por lotes. Los controles de herencia granulares están disponibles hasta el nivel de Variación y Elemento de fragmentos de contenido.
 
 ### Nuevas funciones en el canal de prelanzamiento de [!DNL Experience Manager Sites] {#prerelease-sites}
 
-* El [Consola de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=es) ahora permite a los usuarios ver etiquetas y buscar por etiquetas aplicadas como metadatos a fragmentos de contenido. Los usuarios ya no tendrán que cambiar a la IU de Assets para esta capacidad, lo que reduce el cambio de contexto y mejora la eficacia.
+* La [Consola de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=es) ahora permite a los usuarios ver etiquetas y buscar por etiquetas aplicadas como metadatos a fragmentos de contenido. Los usuarios ya no tendrán que cambiar a la IU de Assets para esta capacidad, lo que reduce el cambio de contexto y mejora la eficacia.
 
 ![Etiquetado en la consola de fragmentos de contenido](/help/assets/content-fragments-console-tags.png)
 
@@ -78,16 +78,16 @@ Assets Essentials ahora ordena los resultados de la búsqueda según la relevanc
 
 ### Nuevas funciones disponibles en [!DNL Forms] {#new-features-available-in-forms-channel}
 
-* [**Temáticas listas para usar**](/help/forms/using-themes-in-core-components.md) **y plantillas**: inicie su proceso de creación de formularios con nuestras temáticas y plantillas OOTB listas para usar, diseñadas para potenciar tanto a profesionales experimentados como a autores de nuevos formularios. Creadas sin problemas con los componentes principales de Forms adaptables, estas temáticas y plantillas cuidadosamente depuradas le permiten empezar a crear formularios rápidamente para los casos de uso más comunes.
+* [**Temáticas**](/help/forms/using-themes-in-core-components.md) **y plantillas** listas para usar: inicie su proceso de creación de formularios con nuestras temáticas y plantillas listas para usar, diseñadas para potenciar tanto a profesionales experimentados como a autores de formularios principiantes. Estas temáticas y plantillas creadas de forma optimizada y seleccionada, con los componentes principales de Formularios adaptables, le permiten empezar a crear formularios rápidamente para los casos de uso más comunes.
 
-* **[Componentes de React para Forms sin encabezado](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: Ahora puede obtener una vista previa y personalizar las representaciones de formularios adaptables sin encabezado con los componentes de React predeterminados. Estos componentes utilizan clases de BEM de componentes principales de Forms adaptables para el estilo, lo que facilita la personalización de su aspecto según sus necesidades específicas.
+* **[Componentes de React para formularios sin encabezado](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: ahora puede obtener una vista previa y personalizar las representaciones de formularios adaptables sin encabezado con los componentes de React predeterminados. Estos componentes utilizan clases de BEM de componentes principales de Forms adaptables para el estilo, lo que facilita la personalización de su aspecto según sus necesidades específicas.
 
-* [**Crear Forms adaptable con secciones repetibles**](/help/forms/create-forms-repeatable-sections.md): Ahora puede hacer que [Acordeón](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms//adaptive-forms-components/accordion.html?lang=es), [Asistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=es), [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=es), y [Fichas horizontales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=es) Componentes basados en formularios adaptables repetibles para capturar varios registros de datos.  Estas secciones repetibles le permiten proporcionar varias entradas de datos fácilmente. Resulta útil cuando se desconocen de antemano las instancias de datos requeridas. Un usuario que rellena formularios puede agregar o quitar secciones fácilmente, lo que permite que los formularios se adapten a diferentes escenarios de entrada de datos y simplifica la recopilación de varias ocurrencias del mismo registro de datos.
+* [**Crear formularios adaptables con secciones repetibles**](/help/forms/create-forms-repeatable-sections.md): ahora puede hacer repetibles los componentes [Acordeón](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms//adaptive-forms-components/accordion.html?lang=es), [Asistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=es), [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=es) y [pestañas horizontales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=es) basados en formularios adaptables para capturar varios registros de datos.  Estas secciones repetibles le permiten proporcionar varias entradas de datos fácilmente. Resulta útil cuando se desconocen de antemano las instancias de datos requeridas. El usuario que rellena el formulario puede agregar o quitar secciones fácilmente, lo que permite que los formularios se adapten a diferentes escenarios de entrada de datos y simplifica la recopilación de varias ocurrencias de los mismos datos.
 
 
 ### Funciones previas al lanzamiento disponibles en [!DNL Forms] {#pre-release-features-available-in-forms-channel}
 
-* [**Soporte empresarial de Google reCAPTCHA**](/help/forms/captcha-adaptive-forms.md): utilice Google reCAPTCHA Enterprise en un formulario adaptable para proporcionar una protección mejorada contra la actividad fraudulenta y el correo no deseado, lo que ofrece una experiencia de usuario más segura. Con un análisis de riesgo avanzado y una integración perfecta, los usuarios genuinos pueden enviar fácilmente formularios mientras los bots están bloqueados de manera efectiva.
+* [**Soporte empresarial de Google reCAPTCHA**](/help/forms/captcha-adaptive-forms.md): utilice Google reCAPTCHA empresarial en un formulario adaptable para proporcionar una protección mejorada contra la actividad fraudulenta y el correo no deseado, lo que ofrece una experiencia de usuario más segura. Con un análisis de riesgos avanzado y una integración optimizada, los usuarios compradores pueden enviar fácilmente formularios mientras los bots están bloqueados de manera efectiva.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3422097/adaptive-forms-recaptcha-core-components-captcha/?quality=12&learn=on)
 
@@ -106,23 +106,23 @@ Puede enviar un correo electrónico a `aem-forms-headless@adobe.com` desde su ID
 
 ### Centro de acciones {#actions-center}
 
-Suscríbase a notificaciones por correo electrónico que le avisen cuando ocurran incidentes críticos que requieran una acción inmediata, y también con recomendaciones personalizadas para optimizar su sitio. [Centro de acciones](/help/operations/actions-center.md) sirve como concentrador donde puede revisar estas alertas, como colas de replicación bloqueadas o credenciales que caducan, y marcarlas como resueltas.
+Suscríbase a notificaciones por correo electrónico que le avisen cuando ocurran incidentes críticos que requieran una acción inmediata y también se envían recomendaciones personalizadas para optimizar su sitio. El [Centro de acciones](/help/operations/actions-center.md) sirve como una plataforma donde puede revisar estas alertas, como colas de replicación bloqueadas o credenciales que caducan, y marcarlas como resueltas.
 
 ![Captura de pantalla del Centro de acciones](/help/assets/assets/actions-center.png)
 
 ### Programa de adopción temprana de reglas CDN y WAF {#waf-early-adopter}
 
-Filtre el tráfico en la CDN en función de lo siguiente:
+Filtre el tráfico en la red de distribución de contenido (CDN) en función de lo siguiente:
 * encabezados y propiedades de solicitud (por ejemplo, dirección IP)
 * patrones de tráfico asociados a tráfico malintencionado
 
-¿Quiere probar la función y compartir sus comentarios? Envíe un correo electrónico a **aemcs-waf-adopter@adobe.com** desde su ID de correo electrónico oficial para obtener más información sobre el programa de usuarios que lo adoptaron por primera vez. El espacio es limitado.
+¿Quiere probar la función y compartir sus comentarios? Puede enviar un correo electrónico a **aemcs-waf-adopter@adobe.com** desde su ID de correo electrónico oficial para más información acerca del programa de primeros usuarios. El espacio es limitado.
 
 Obtenga más información acerca de la función en el artículo [aquí](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Otros cambios de base {#other-foundation-changes}
 
-* AEM AEM Durante la semana del 7 de agosto, el usuario devolverá el código de error 429 en lugar del código de error 503 cuando las solicitudes a instancias de superen un nivel correcto. [Más información](/help/implementing/developing/introduction/development-guidelines.md).
+* Durante la semana del 7 de agosto, el usuario devolverá el código de error 429 en lugar del código de error 503 cuando las solicitudes a instancias de AEM superen un nivel correcto. [Más información](/help/implementing/developing/introduction/development-guidelines.md).
 
 ## Notas de la versión de mantenimiento {#maintenance}
 

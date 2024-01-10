@@ -1,5 +1,5 @@
 ---
-title: ¿Cómo se puede crear una plantilla de formulario adaptable?
+title: ¿Cómo se crea una plantilla de formulario adaptable?
 description: Cree plantillas de formularios adaptables para definir la estructura básica y el contenido inicial con el Editor de plantillas.
 feature: Adaptive Forms, Foundation Components
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
@@ -16,7 +16,7 @@ ht-degree: 93%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 Al crear un formulario, se agregan campos y componentes para definir la estructura del formulario, el contenido y las acciones en el editor. Los campos y componentes se agregan en el `guideRootPanel` del contenedor de formulario. Con el Editor de plantillas, puede crear una plantilla que contenga una estructura básica y contenido inicial que los autores puedan utilizar para crear formularios.
@@ -226,6 +226,6 @@ También puede guardar un formulario adaptable como plantilla para usarlo en el 
 Para obtener más información sobre los puntos de ruptura, consulte [Diseño adaptable](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html?lang=es#authoring).
 
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}

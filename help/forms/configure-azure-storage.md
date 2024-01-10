@@ -5,7 +5,7 @@ exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '583'
-ht-degree: 84%
+ht-degree: 86%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 84%
 La integración de datos de [[!DNL Experience Manager Forms] ](data-integration.md) proporciona una configuración de almacenamiento de [!DNL Azure] para integrar formularios con los servicios de [!DNL Azure] Storage. El modelo de datos de formulario se puede utilizar para crear formularios adaptables que interactúen con el servidor [!DNL Azure] para habilitar los flujos de trabajo empresariales. Por ejemplo:
 
 * escribir datos sobre el envío de formularios adaptables en [!DNL Azure];
-* Escritura de datos en [!DNL Azure] mediante entidades personalizadas definidas en el modelo de datos de formulario y a la inversa.
+* Escribir datos en [!DNL Azure] a través de entidades personalizadas definidas en el modelo de datos de formulario y viceversa.
 * consultar datos en el servidor de [!DNL Azure] y rellenar previamente formularios adaptables.
 * leer datos del servidor de [!DNL Azure].
 

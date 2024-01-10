@@ -1,12 +1,12 @@
 ---
-title: ¿Cuáles son las capacidades de diseño de Adaptive Forms?
+title: ¿Cuáles son las funcionalidades de diseño de los formularios adaptables?
 description: El diseño y el aspecto visual de los formularios adaptables en diferentes dispositivos se rigen por la configuración de diseño. Obtenga información sobre los distintos diseños y cómo aplicarlos.
 feature: Adaptive Forms, Foundation Components
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '847'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 93%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 [!DNL Adobe Experience Manager] permite crear formularios adaptables fáciles de usar que ofrecen experiencias dinámicas a los usuarios finales. El diseño del formulario controla cómo se muestran los elementos o los componentes de un formulario adaptable.
@@ -116,7 +116,7 @@ Este diseño, como su nombre indica, muestra únicamente el menú y la barra de 
 
 ![Diseños móviles sin títulos de panel en los encabezados del formulario](assets/mobile-layout2.png)
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}
 

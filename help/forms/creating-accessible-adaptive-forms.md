@@ -7,7 +7,7 @@ feature: Adaptive Forms, Foundation Components
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '2018'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 94%
 
 ## Introducción {#introduction}
 
-Un formulario accesible es un formulario que todos pueden utilizar, incluidos los usuarios con necesidades especiales. Los Forms adaptables incluyen varias funciones y capacidades que mejoran la facilidad de uso de los usuarios con diferentes capacidades. La creación de accesibilidad en los formularios adaptables no solo permite la mayor audiencia posible de contenido, sino que también es un requisito al proporcionar documentos en zonas geográficas en las que se exige el cumplimiento de los estándares de accesibilidad. [!DNL AEM Forms] ayuda a los desarrolladores de formularios a cumplir con los estándares de accesibilidad.
+Un formulario accesible es un formulario que todos pueden utilizar, incluidos los usuarios con necesidades especiales. Los formularios adaptables incluyen una serie de características y funcionalidades que mejoran el uso de los usuarios con diferentes capacidades. La creación de accesibilidad en los formularios adaptables no solo permite la mayor audiencia posible de contenido, sino que también es un requisito al proporcionar documentos en zonas geográficas en las que se exige el cumplimiento de los estándares de accesibilidad. [!DNL AEM Forms] ayuda a los desarrolladores de formularios a cumplir con los estándares de accesibilidad.
 
 Durante la creación de un formulario adaptable, el autor debe tener en cuenta los siguientes puntos para crear un formulario adaptable accesible:
 
@@ -137,7 +137,7 @@ El diseño de accesibilidad implica considerar directrices adicionales para el u
 
 Los usuarios con deficiencias visuales dependen del alto contraste entre el texto y el fondo para poder leer el contenido digital. Sin un contraste suficiente, una forma puede resultar difícil, si no imposible, de leer para algunos usuarios.
 
-Se recomienda utilizar la fuente y los colores de fondo predeterminados, contenido en color negro sobre fondo blanco. Si cambia los colores predeterminados, elija un color de primer plano oscuro en un color de fondo claro o a la inversa.
+Se recomienda utilizar la fuente y los colores de fondo predeterminados, contenido en color negro sobre fondo blanco. Si cambia los colores predeterminados, elija un color de primer plano oscuro en un color de fondo claro o viceversa.
 
 <!-- See [Creating custom themes for Adaptive Forms](creating-custom-adaptive-form-themes.md), for more information about changing the color contrast and theme for the Adaptive Forms. -->
 
@@ -156,7 +156,7 @@ Los siguientes métodos abreviados del teclado están disponibles en [!DNL AEM F
 | Restablecer los datos rellenados en un formulario | Alt + R |
 | Enviar un formulario | Alt + S |
 
-Además, hay varias teclas de método abreviado de teclado disponibles para el **[!UICONTROL Selector de fechas]** en los formularios adaptables. Para activar las teclas de método abreviado, seleccione la opción **[!UICONTROL Selector de fecha]** Componente y seleccione ![Configurar](assets/configure-icon.svg) para abrir las propiedades. En el **[!UICONTROL Patrones]** , seleccione un patrón de visualización usando el **[!UICONTROL Tipo]** y **[!UICONTROL Patrón]** listas desplegables. Guarde las propiedades para habilitar el uso de teclas de método abreviado para el componente **[!UICONTROL Selector de fechas]**.
+Además, hay varias teclas de método abreviado de teclado disponibles para el **[!UICONTROL Selector de fechas]** en los formularios adaptables. Para activar las teclas de método abreviado, seleccione la opción **[!UICONTROL Selector de fecha]** Componente y seleccione ![Configurar](assets/configure-icon.svg) para abrir las propiedades. En la sección **[!UICONTROL Patrones]**, seleccione un patrón de visualización mediante las listas desplegables **[!UICONTROL Tipo]** y **[!UICONTROL Patrón]**. Guarde las propiedades para habilitar el uso de teclas de método abreviado para el componente **[!UICONTROL Selector de fechas]**.
 
 Las siguientes teclas de método abreviado de teclado están disponibles para el componente Selector de fecha en formularios adaptables:
 

@@ -5,7 +5,7 @@ exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '3057'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -85,7 +85,7 @@ Para modificar el contenido sin problemas, AEM ofrece dos API sólidas.
 * La API de GraphQL permite crear solicitudes para acceder a fragmentos de contenido y enviarlos.
 * La API de REST de Assets permite crear y modificar fragmentos de contenido (y otros recursos).
 
-AEM Obtenga información acerca de estas API y cómo utilizarlas en una parte posterior del recorrido sin encabezado de la. O bien, consulte [recursos adicionales](#additional-resources) para obtener más documentación.
+Aprenderá a utilizar estas API en una parte posterior del recorrido sin encabezado de AEM. O consulte la sección de [recursos adicionales](#additional-resources) para obtener más documentación.
 
 ## Niveles de integración sin encabezado {#integration-levels}
 
@@ -117,13 +117,13 @@ Este nivel de integración se basa en el nivel dos al permitir que la mayoría d
 
 ### Todavía no tiene un consumidor externo del contenido sin encabezado, como una aplicación de una sola página (SPA). {#do-not-have-a-spa}
 
-SPA AEM SPA AEM SPA Si su objetivo es crear una interfaz de usuario que consuma contenido sin encabezado de los recursos, puede utilizar funciones como Fragmentos de contenido para administrar el contenido sin encabezado y también crear un marco de trabajo de con el editor de contenido sin encabezado, por ejemplo, para crear una interfaz de usuario que le permita crear una interfaz de usuario con el editor de contenido sin encabezado
+Si su objetivo es crear una SPA que consuma contenido sin encabezado desde AEM, puede utilizar funciones como Fragmentos de contenido para administrar el contenido sin encabezado y también generar una SPA dentro del marco de trabajo del editor de SPA.
 
 Con el editor de SPA, la SPA no solo consume contenido de AEM, sino que también es totalmente editable dentro de AEM por sus autores de contenido, lo que le ofrece la flexibilidad de envío sin encabezado y de edición en contexto dentro de AEM.
 
 ## Condiciones y requisitos previos {#requirements-prerequisites}
 
-AEM Antes de comenzar un proyecto de integración sin encabezado, deben cumplirse varios requisitos
+Antes de comenzar con su proyecto sin encabezado de AEM, existen varios requisitos.
 
 ### Conocimiento {#knowledge}
 
@@ -143,7 +143,7 @@ Para que cualquier proyecto tenga éxito, es importante definir claramente no so
 
 ### Ámbito {#scope}
 
-Es importante tener un ámbito claramente definido para el proyecto. El ámbito informa los criterios de aceptación y le permite establecer una definición de listo.
+Es importante tener un ámbito claramente definido para el proyecto. El ámbito informa acerca de los criterios de aceptación y le permite establecer una definición de listo.
 
 La primera pregunta que deben hacer es “¿Qué estoy tratando de lograr con el contenido sin encabezado de AEM?” La respuesta debe ser, en general, que tiene o tendrá en el futuro una aplicación de experiencia que ha creado con sus propias herramientas de desarrollo, no con AEM. Esta aplicación de experiencia puede ser una aplicación móvil, un sitio web o cualquier otra aplicación de experiencia orientada al cliente final. El objetivo de utilizar contenido sin encabezado de AEM es alimentar su aplicación de experiencia con contenido creado, almacenado y administrado en AEM con una API de última generación, la cual llama al contenido sin encabezado de AEM para recuperarlo o incluso contenido completamente CRUD directamente desde su aplicación de experiencia. Si esto no es lo que está buscando hacer, probablemente desee [volver a la documentación de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es) y buscar la sección que mejor se adapte a lo que desea lograr.
 
@@ -166,7 +166,7 @@ El administrador debe ser el usuario que configura AEM y prepara el entorno de t
 
 #### Autor de contenido {#content-author}
 
-Los autores de contenido crean y administran el contenido sin encabezado que entrega AEM. AEM Los autores de contenido utilizan funciones de la, como el editor de fragmentos de contenido y varias consolas, para administrar su contenido.
+Los autores de contenido crean y administran el contenido sin encabezado que entrega AEM. Los autores de contenido utilizan funciones de AEM, como el editor de fragmentos de contenido y varias consolas, para administrar su contenido.
 
 Los autores de contenido deben tener en cuenta las siguientes prácticas recomendadas.
 
@@ -259,7 +259,7 @@ Para comprender el tráfico y los patrones de tráfico, comience por reunir lo q
 
 #### Frecuencia de actualización {#update-frequency}
 
-A menudo, las secciones de experiencias tienen distintas frecuencias de actualizaciones de contenido. Es importante comprender esto para poder ajustar las configuraciones de CDN y caché. Esto también es una aportación importante para los [Arquitectos de contenido](#content-architects), ya que diseñan modelos para representar su contenido. Tenga en cuenta lo siguiente:
+A menudo, las secciones de experiencias tienen distintas frecuencias de actualizaciones de contenido. Comprender esto es importante para poder ajustar las configuraciones de la red de distribución de contenido (CDN) y la caché. Esto también es una aportación importante para los [Arquitectos de contenido](#content-architects), ya que diseñan modelos para representar su contenido. Tenga en cuenta lo siguiente:
 
 * ¿Deben caducar algunos tipos de contenido después de un período determinado?
 * ¿Hay elementos específicos del usuario que no se pueden almacenar en caché?
@@ -273,7 +273,7 @@ Ahora que ha completado esta parte del recorrido para desarrolladores de AEM sin
 * Tener en cuenta los niveles de integración de AEM sin encabezado.
 * Ser capaz de definir el proyecto en términos del ámbito.
 
-AEM Debe continuar con el recorrido sin encabezado de la revisando el documento a continuación [AEM Ruta a la primera experiencia al usar el sin encabezado](path-to-first-experience.md) AEM donde aprenderá a configurar las herramientas necesarias y a empezar a pensar en el modelado de sus datos en el entorno de la creación de informes de usuario de la plataforma de datos de la plataforma de datos de la plataforma de datos de la plataforma de datos de.
+Debe continuar su recorrido sin encabezado de AEM revisando a continuación el documento [Ruta de la primera experiencia para usar el contenido sin encabezado de AEM](path-to-first-experience.md), donde aprenderá a configurar las herramientas necesarias y a empezar a pensar en modelar los datos en AEM.
 
 ## Recursos adicionales {#additional-resources}
 
@@ -281,8 +281,8 @@ Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo sin 
 
 * [Recorrido de traducción sin encabezado en AEM](/help/journey-headless/translation/overview.md): este recorrido de documentación le ofrece una amplia explicación de la tecnología sin encabezado, cómo AEM sirve contenido sin encabezado y cómo puede traducirlo.
 * [Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md): comprender la estructura de AEM as a Cloud Service.
-* Un [AEM Introducción a la como CMS sin encabezado](/help/headless/introduction.md)
-* El [AEM Portal para desarrolladores de](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
+* Una [Introducción a AEM como CMS sin encabezado](/help/headless/introduction.md)
+* El [Portal para desarrolladores de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
 * [Tutoriales de contenido sin encabezado de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es): utilice estos tutoriales prácticos para explorar cómo utilizar las distintas opciones para enviar contenido a puntos de conexión sin encabezado con AEM y elegir el más adecuado para usted.
 * [Administración de contenido sin encabezado mediante las API de GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless&amp;lang=es#courses): siga este curso para obtener una descripción general de la API de GraphQL implementada en AEM. Se requiere autenticación con AdobeID.
 * [AEM Guides de WKND, GraphQL](https://github.com/adobe/aem-guides-wknd-graphql): este proyecto de GitHub incluye aplicaciones de ejemplo que destacan las API de GraphQL de AEM.

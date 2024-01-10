@@ -5,7 +5,7 @@ exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 86%
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,7 @@ Desde que han surgido los sistemas de administración de contenido (CMS) a gran 
 
 ![El CMS de pila completa clásico](assets/full-stack.png)
 
-En un CMS de pila completa, la funcionalidad para manipular el contenido se encuentra en el CMS. Las características del sistema componen diferentes componentes de la pila de CMS. La solución de pila completa tiene muchas ventajas.
+En un CMS de pila completa, la funcionalidad para manipular su contenido está en el CMS. Las características del sistema componen diferentes componentes de la pila de CMS. La solución de pila completa tiene muchas ventajas.
 
 * Tiene un sistema que mantener.
 * El contenido se administra de forma centralizada.
@@ -62,7 +62,7 @@ Cuando hablamos de un CMS sin encabezado, el CMS administra el contenido y conti
 
 ![CMS sin encabezado](assets/headless-cms.png)
 
-Los servicios de consumo, ya sean experiencias de RA, una tienda web, experiencias móviles, aplicaciones web progresivas (PWA), etc., incorporan contenido del CMS sin encabezado y proporcionan su propio procesamiento. Se ocupan de proporcionar sus propios HEADS para su contenido.
+Los servicios que consumen, ya sean experiencias AR, una tienda web, experiencias móviles, aplicaciones web progresivas (PWA), etc., reciben contenido del CMS sin encabezado y proporcionan su propia representación. Se ocupan de proporcionar sus propios HEADS para su contenido.
 
 Omitir el HEAD simplifica el CMS al eliminar la complejidad. Al hacerlo, también se traslada la responsabilidad de procesar el contenido a los servicios que realmente necesitan el contenido y que a menudo son más adecuados para dicho procesamiento.
 
@@ -76,7 +76,7 @@ Este desacoplamiento significa que cada servicio consumidor (el front-end) puede
 
 ## Fundamentos tecnológicos {#technology}
 
-Un enfoque sin encabezado le permite crear un conjunto de tecnologías que se pueden adaptar fácil y rápidamente a las futuras demandas de experiencias digitales.
+Un enfoque sin encabezado le permite generar una pila de tecnologías que se adapte rápida y fácilmente a las futuras exigencias de experiencias digitales.
 
 Las API para CMS en el pasado generalmente se basaban en REST. La transferencia de estado representativo (REST) proporciona recursos como texto en modo sin estado. Esto permite leer y modificar los recursos con un conjunto predefinido de operaciones. REST permite una buena interoperabilidad entre los servicios de la web al garantizar la representación sin estado del contenido.
 
@@ -96,7 +96,7 @@ El contenido sin encabezado abre un mundo de flexibilidad para ofrecer sus exper
 
 Tener muchos canales diferentes puede significar que cada uno tiene sus propios sistemas de presentación. Aunque todas consumen el mismo contenido a través de las mismas API, la experiencia puede ser diferente debido a las diferentes presentaciones. Se debe prestar atención y atención a garantizar la coherencia de la experiencia del cliente.
 
-Mediante la implementación de sistemas de diseño cuidadosos, el uso compartido de bibliotecas de patrones y el uso de componentes de diseño reutilizables y marcos de trabajo del lado del cliente establecidos y abiertos, se pueden garantizar experiencias coherentes, pero esto debe planificarse.
+Al implementar sistemas de diseño cuidadosos, compartir bibliotecas de patrones y utilizar componentes de diseño reutilizables, y marcos abiertos y establecidos del lado del cliente, se pueden asegurar experiencias coherentes, pero esto debe planificarse.
 
 ## El futuro es el contenido sin encabezado y es ahora {#future}
 
@@ -106,7 +106,7 @@ Es imposible predecir el futuro, pero el contenido sin encabezado le da la agili
 
 ## AEM y el contenido sin encabezado {#aem-and-headless}
 
-A medida que continúa con este recorrido AEM para desarrolladores, aprenderá cómo admite la entrega sin encabezado junto con sus funcionalidades de entrega de pila completa.
+A medida que continúe con este recorrido para desarrolladores, aprenderá cómo AEM admite la entrega de contenido sin encabezado junto con sus funciones de entrega de pila completa.
 
 Como líder del sector en la administración de experiencias digitales, Adobe se da cuenta de que la solución ideal a los desafíos del mundo real que enfrentan los creadores de experiencias rara vez es una opción binaria. Por este motivo, AEM no solo admite ambos modelos, sino que también permite de forma exclusiva la combinación híbrida continua de los dos, fusionando las ventajas del contenido sin encabezado y de pila completa, para ayudarle a servir mejor a los consumidores de su contenido, independientemente del lugar en que se encuentren.
 
@@ -120,13 +120,13 @@ Gracias por empezar con el recorrido de contenido sin encabezado de AEM Ahora qu
 * Comprenda por qué y cuándo es necesario el contenido sin encabezado.
 * Conocer en un nivel superior cómo se utilizan los conceptos del contenido sin encabezado y cómo se interrelacionan.
 
-AEM Aproveche este conocimiento y continúe con su recorrido sin encabezado de la revisando el documento a continuación [AEM Introducción a la as a Cloud Service sin encabezado de](getting-started.md) AEM aquí aprenderá a configurar las herramientas necesarias y a pensar en cómo aborda la entrega de contenido sin encabezado y sus requisitos previos, de manera más sencilla y eficaz.
+Aproveche este conocimiento y continúe su recorrido de contenido sin encabezado de AEM al revisar el documento [Introducción a AEM Headless as a Cloud Service](getting-started.md) donde aprenderá a configurar las herramientas necesarias y a empezar a pensar en cómo AEM aborda la entrega de contenido sin encabezado y sus requisitos previos.
 
 ## Recursos adicionales {#additional-resources}
 
 Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo de contenido sin encabezado revisando el documento [Introducción a AEM Headless as a Cloud Service,](getting-started.md) los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido.
 
 * [Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md), comprender la estructura de AEM as a Cloud Service
-* Un [AEM Introducción a la como CMS sin encabezado](/help/headless/introduction.md)
-* El [AEM Portal para desarrolladores de](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
+* Una [Introducción a AEM como CMS sin encabezado](/help/headless/introduction.md)
+* El [Portal para desarrolladores de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
 * [Tutoriales de contenido sin encabezado de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es): utilice estos tutoriales prácticos para explorar cómo utilizar las distintas opciones para enviar contenido a puntos de conexión sin encabezado con AEM y elegir el más adecuado para usted.

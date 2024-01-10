@@ -1,12 +1,12 @@
 ---
 title: ¿Cómo puedo añadir compatibilidad con nuevas configuraciones regionales a un formulario adaptable basado en componentes de base?
-description: Para el Forms adaptable, puede añadir configuraciones regionales para más idiomas, aparte de la que se proporciona de forma predeterminada.
+description: Para el formulario adaptable, puede añadir configuraciones regionales para más idiomas, aparte de la que se proporciona de forma predeterminada.
 feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
 source-wordcount: '1220'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 83%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html?lang=es) |
 | Componentes principales | [Haga clic aquí](supporting-new-language-localization-core-components.md) |
-| Componentes básicos | Este artículo |
+| Componentes de base | Este artículo |
 
 AEM Forms admite de forma predeterminada las configuraciones regionales de inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués brasileño (pt-BR), chino (zh-CN), chino taiwanés (zh-TW) y coreano (ko-KR). También puede agregar compatibilidad con más configuraciones regionales, como Hindi (hi_IN).
 
@@ -29,11 +29,11 @@ La localización de formularios adaptables se basa en dos tipos de diccionarios 
 
 * **El diccionario específico del formulario**: contiene cadenas utilizadas en formularios adaptables. Por ejemplo, etiquetas, nombres de campos, mensajes de error y descripciones de ayuda. Se administra como un conjunto de archivos XLIFF para cada configuración regional y puede acceder a él en `[author-instance]/libs/cq/i18n/gui/translator.html`.
 
-* **Diccionarios globales** AEM Hay dos diccionarios globales, administrados como objetos JSON, en la biblioteca de cliente de. Estos diccionarios contienen mensajes de error predeterminados, nombres de mes, símbolos de moneda, patrones de fecha y hora, etc. Puede encontrar estos diccionarios en `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. Estas ubicaciones contienen carpetas independientes para cada configuración regional. Dado que los diccionarios globales no se actualizan con frecuencia, utilizar archivos JavaScript independientes para cada configuración regional permite a los exploradores almacenarlos en caché y reducir el uso del ancho de banda de red al acceder a diferentes formularios adaptables en el mismo servidor.
+* **Los diccionarios globales**: hay dos diccionarios globales, administrados como objetos JSON en la biblioteca de cliente de AEM. Estos diccionarios contienen mensajes de error predeterminados, nombres de mes, símbolos de moneda, patrones de fecha y hora, etc. Puede encontrar estos diccionarios en `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. Estas ubicaciones contienen carpetas independientes para cada configuración regional. Dado que los diccionarios globales no suelen actualizarse con frecuencia, utilizar archivos JavaScript independientes para cada configuración regional permite a los exploradores almacenarlos en caché y reducir el uso del ancho de banda de red al acceder a diferentes formularios adaptables en el mismo servidor.
 
 ## Agregar compatibilidad con nuevas configuraciones regionales {#add-support-for-new-locales}
 
-Realice los siguientes pasos para agregar compatibilidad con una nueva configuración regional:
+Sigue estos dos pasos para agregar compatibilidad para una nueva configuración regional:
 
 1. [Agregar compatibilidad con la localización para configuraciones regionales no admitidas](#add-localization-support-for-non-supported-locales)
 1. [Usar configuraciones regionales agregadas en Formularios adaptables](#use-added-locale-in-af)
@@ -42,7 +42,7 @@ Realice los siguientes pasos para agregar compatibilidad con una nueva configura
 
 AEM Forms admite actualmente la localización del contenido de los formularios adaptables en las configuraciones regionales de inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués brasileño (pt-BR), chino (zh-CN), chino taiwanés (zh-TW) y coreano (ko-KR).
 
-Para añadir compatibilidad con una nueva configuración regional en el tiempo de ejecución de Forms adaptable:
+Para añadir compatibilidad con una nueva configuración regional en el tiempo de ejecución de un formulario adaptable:
 
 1. [Clone su repositorio](#clone-the-repository)
 1. [Añada una configuración regional al servicio GuideLocalizationService.](#add-a-locale-to-the-guide-localization-service)
@@ -70,7 +70,7 @@ Para añadir compatibilidad con una nueva configuración regional en el tiempo d
 1. En la carpeta UI.content, cree la carpeta `etc/clientlibs`.
 1. Cree además una carpeta denominada como `locale-name` bajo `etc/clientlibs` para servir como contenedor para clientlibs xfa y af.
 
-##### 3.1 Agregar la biblioteca de cliente XFA para una configuración regional en una carpeta con nombre de configuración regional
+##### 3.1 Agregar la biblioteca de cliente XFA para una configuración regional en la carpeta locale-name
 
 Cree un nodo con el nombre `[locale-name]_xfa` y escriba como `cq:ClientLibraryFolder` bajo `etc/clientlibs/locale_name`, con categoría `xfaforms.I18N.<locale>`, y agregue los siguientes archivos:
 
@@ -105,7 +105,7 @@ Realice este paso solo si la configuración regional `<locale>` que está agrega
 1. Agregue los valores de configuración regional predeterminados `<locale-name>` `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja` y `ko-kr`, si no están presentes.
 
 1. Agregue `<locale>` a los valores de la propiedad `languages` de `/etc/languages`.
-1. Añada las carpetas creadas en `filter.xml` bajo etc/META-INF/[jerarquía de carpetas] como:
+1. Añada las carpetas recién creadas en `filter.xml`, en etc/META-INF/[jerarquía de carpetas]como:
 
    ```
    <filter root="/etc/clientlibs/[locale-name]"/>
@@ -116,12 +116,12 @@ Antes de confirmar los cambios en el repositorio de Git de AEM, debe acceder a s
 
 #### 5. Confirmar los cambios en el repositorio e implementar la canalización {#commit-changes-in-repo-deploy-pipeline}
 
-Confirme los cambios en el repositorio de GIT después de agregar una compatibilidad con la configuración regional. Implemente el código mediante la canalización de pila completa. Aprenda a [configurar una canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#setup-pipeline) para añadir compatibilidad con una nueva configuración regional.
+Confirme los cambios en el repositorio de Git después de agregar compatibilidad con una nueva configuración regional. Implemente el código mediante la canalización de pila completa. Aprenda a [configurar una canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#setup-pipeline) para añadir compatibilidad con una nueva configuración regional.
 Una vez finalizada la canalización, la configuración regional recién agregada aparece en el entorno de AEM.
 
 ### Uso de una configuración regional añadida en formularios adaptables {#use-added-locale-in-af}
 
-Siga estos pasos para utilizar y procesar un formulario adaptable mediante la configuración regional recién agregada:
+Siga estos pasos para utilizar y procesar un formulario adaptable mediante una configuración regional recién agregada:
 
 1. Inicie sesión en la instancia de autor de AEM.
 1. Vaya a **Formularios** > **Formularios y documentos**.
@@ -147,21 +147,21 @@ Para anular la configuración regional del explorador de los usuarios, puede pas
 Si no existe una biblioteca de cliente para la configuración regional solicitada, se busca una biblioteca de cliente para el código de idioma presente en la configuración regional. Por ejemplo, si la configuración regional solicitada es `en_ZA` (inglés sudafricano) y la biblioteca de cliente `en_ZA` no existe, el formulario adaptable utiliza la biblioteca de cliente del idioma `en` (inglés), si existe. Sin embargo, si no existe ninguna biblioteca, el formulario adaptable utiliza el diccionario de la configuración regional `en`.
 
 
-Una vez identificada la configuración regional, el formulario adaptable elige el diccionario específico del formulario. Si no se encuentra el diccionario específico del formulario para la configuración regional solicitada, utiliza el diccionario del idioma en el que se crea el formulario adaptable.
+Una vez identificada la configuración regional, el formulario adaptable elige el diccionario específico del formulario. Si no se encuentra el diccionario específico del formulario para la configuración regional solicitada, utilice el del idioma en el que se creó el formulario adaptable.
 
 Si no hay información de configuración regional, el formulario adaptable se entrega en el idioma original del formulario. El idioma original es el idioma utilizado al desarrollar el formulario adaptable.
 
-Obtenga una [biblioteca de cliente de ejemplo](/help/forms/assets/locale-support-sample.zip) para agregar compatibilidad con la nueva configuración regional. Debe cambiar el contenido de la carpeta en la configuración regional requerida.
+Obtenga la [biblioteca de cliente de muestra](/help/forms/assets/locale-support-sample.zip) para agregar compatibilidad con una nueva configuración regional. Debe cambiar el contenido de la carpeta en la configuración regional requerida.
 
 ## Prácticas recomendadas para la compatibilidad con localización nueva {#best-practices}
 
-* El Adobe recomienda crear un proyecto de traducción después de crear un formulario adaptable.
+* Adobe recomienda crear un proyecto de traducción después de crear un formulario adaptable.
 
 * Cuando se agregan campos nuevos en un formulario adaptable existente:
    * **Para traducción automática**: vuelva a crear el diccionario y ejecute el proyecto de traducción. Los campos añadidos a un formulario adaptable después de crear un proyecto de traducción permanecen sin traducir.
    * **Para traducción humana**: exporte el diccionario a través de `[server:port]/libs/cq/i18n/gui/translator.html`. Actualice el diccionario de los campos recién añadidos y cárguelo.
 
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}

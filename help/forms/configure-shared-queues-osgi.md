@@ -7,14 +7,14 @@ docset: aem65
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '839'
-ht-degree: 74%
+ht-degree: 76%
 
 ---
 
 
 # Compartir y solicitar acceso a los elementos de la bandeja de entrada de un usuario {#share-and-request-access}
 
-Una cola es una lista de elementos de la Bandeja de entrada de AEM de un usuario. Pueden ser elementos asignados a un usuario o elementos compartidos con el grupo al que pertenece un usuario. Puede acceder a la Bandeja de entrada para ver el elemento de la Bandeja de entrada y actuar en él. Por ejemplo, compartir un elemento con otro usuario.
+Una cola es una lista de elementos de la Bandeja de entrada de AEM de un usuario. Pueden ser elementos asignados a un usuario o elementos compartidos con el grupo al que pertenece un usuario. Puede acceder a la Bandeja de entrada para ver y realizar acciones con un elemento de la Bandeja de entrada. Por ejemplo, compartir un elemento con otro usuario.
 
 También puede compartir los elementos de la Bandeja de entrada con otro usuario. Una vez que otro usuario tiene acceso a los elementos de la Bandeja de entrada, ese usuario puede reclamar y realizar las acciones adecuadas con los elementos compartidos. Del mismo modo, puede solicitar acceso a los elementos de la Bandeja de entrada de otros usuarios.
 

@@ -1,11 +1,11 @@
 ---
-title: Acceso a los KPI
+title: Acceso a los indicadores clave de rendimiento (KPI)
 description: Obtenga información sobre cómo acceder a los KPI y definir el proceso de creación de informes
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ Antes de comenzar el lanzamiento de Adobe Experience Manager, todas las personas
 
 En un estudio de 2018, IDC analizó el valor comercial que varias grandes empresas vieron al usar Adobe Experience Manager. En promedio, las organizaciones que utilizan Experience Manager Sites han mejorado la productividad de sus equipos de experiencia digital en un 23 %, han reducido el tiempo necesario para realizar cambios editoriales menores en un 64 % y han aumentado las visitas mensuales al sitio en un 10 %. Las empresas que utilizan Experience Manager Assets aumentaron en un 19 % la productividad de sus equipos de recursos digitales, acortaron el tiempo de creación de nuevos recursos en un 47 % y redujeron el tiempo de lanzamiento de las campañas de marketing en un 20 %.
 
-Para obtener los mismos beneficios importantes, su organización debe tener objetivos claros para la implementación de su Experience Manager. Y necesita tener KPI que ayuden a todos a centrarse en esos objetivos.
+Para obtener los mismos beneficios importantes, su organización necesita tener objetivos claros para la implementación de su Experience Manager. Y necesita tener KPI que ayuden a todos a centrarse en esos objetivos.
 
 ## Acceso a los KPI
 

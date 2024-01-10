@@ -1,15 +1,15 @@
 ---
-title: ¿Cómo configuro un entorno de desarrollo local para AEM Forms?
+title: ¿Cómo se configura un entorno de desarrollo local para AEM Forms?
 description: Configurar un entorno de desarrollo local para Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2682'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Configuración del entorno de desarrollo local para AEM Forms {#overview}
+# Configurar un entorno de desarrollo local para AEM Forms {#overview}
 
 Al establecer y configurar un [!DNL  Adobe Experience Manager Forms] como entorno de[!DNL  Cloud Service], configura entornos de desarrollo, de puesta en escena y de producción en la nube. Además, también puede establecer y configurar un entorno de desarrollo local.
 
@@ -88,7 +88,7 @@ Para descargar la última versión del SDK de Adobe Experience Manager as a Clou
 
 1. Vaya a la pestaña **[!UICONTROL AEM as a Cloud Service]**.
 1. Ordene por fecha de publicación en orden de bajada.
-1. Haga clic en el SDK de Adobe Experience Manager as a Cloud Service más reciente, el archivo de características de Experience Manager Forms (complemento de AEM Forms), los recursos de referencia de formularios o Forms Designer.
+1. Haga clic en el SDK de Adobe Experience Manager as a Cloud Service más reciente, el archivo de características de Experience Manager Forms (complemento de AEM Forms), los activos de referencia de formularios o Forms Designer.
 1. Revise y acepte el EULA. Seleccione el botón **[!UICONTROL Descargar]**.
 
 ## Configurar las herramientas de desarrollo para Proyectos AEM {#setup-development-tools-for-AEM-projects}
@@ -268,7 +268,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
      >[!WARNING]
      >
-     * Al crear un proyecto de tipo de archivo con versión 45, la variable [AEM Carpeta de proyecto de tipo de archivo]/pom.xml establece inicialmente la versión de los componentes principales de formularios en 2.0.64. Antes de crear o implementar el proyecto Archetype, actualice la versión de los componentes principales de Forms a 2.0.62.
+     * Al crear un proyecto de tipo de archivo con versión 45, la variable [Carpeta de proyecto de tipo de archivo de AEM]/pom.xml establece inicialmente la versión de los componentes principales de formularios en 2.0.64. Antes de crear o implementar el proyecto Archetype, actualice la versión de los componentes principales de Forms a 2.0.62.
 
 1. Implemente el proyecto en su entorno de desarrollo local. Puede utilizar el siguiente comando para implementarlo en su entorno de desarrollo local
 
@@ -286,7 +286,7 @@ Realice los siguientes pasos para configurar Dispatcher local y luego agregarle 
 
 ### Configurar Dispatcher local {#setup-local-dispatcher}
 
-El [!DNL Experience Manager] El SDK as a Cloud Service incluye la versión de herramientas de Dispatcher recomendada que facilita la configuración, validación y simulación de Dispatcher localmente. Las herramientas de Dispatcher están basadas en Docker y proporcionan herramientas de línea de comandos para transformar archivos de configuración de Apache HTTP Web Server y Dispatcher en un formato compatible e implementarlos en Dispatcher, que se ejecuta en el contenedor de Docker.
+El SDK de [!DNL Experience Manager] as a Cloud Service incluye la versión de herramientas de Dispatcher recomendada, que facilita la configuración, validación y simulación de Dispatcher de manera local. Las herramientas de Dispatcher están basadas en Docker y proporcionan herramientas de línea de comandos para transformar archivos de configuración de Apache HTTP Web Server y Dispatcher en un formato compatible e implementarlos en Dispatcher, que se ejecuta en el contenedor de Docker.
 
 El almacenamiento en caché en Dispatcher permite [!DNL AEM Forms] rellenar previamente formularios adaptables en un cliente. Mejora la velocidad de procesamiento de los formularios rellenados previamente.
 
@@ -298,7 +298,7 @@ Realice los siguientes pasos para configurar la memoria caché de Dispatcher par
 
 1. Abra el proyecto AEM y navegue hasta `\src\conf.dispatcher.d\available_farms`
 1. Cree una copia del archivo `default.farm`. Por ejemplo, `forms.farm`.
-1. Abra el creado `forms.farm` para editar y reemplazar el siguiente código:
+1. Abra el archivo `forms.farm` creado para editar y reemplazar el siguiente código:
 
    ```json
    #/ignoreUrlParams {

@@ -8,7 +8,7 @@ discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1109'
-ht-degree: 92%
+ht-degree: 96%
 
 ---
 
@@ -89,7 +89,7 @@ Puede utilizar uno de los siguientes métodos para crear paneles repetibles:
 
       >[!NOTE]
       >
-      >Cuando todas las instancias de un panel se quiten de un formulario adaptable, para agregar una instancia del panel eliminado, utilice la sintaxis _panelName para capturar el Instance Manager del panel y use la API addInstance de Instance Manager para agregar la instancia eliminada. Por ejemplo, _panelName.addInstance(). Añade una instancia del panel eliminado.
+      >Cuando todas las instancias de un panel se quitan de un formulario adaptable, para añadir una instancia del panel eliminado, utilice la sintaxis _panelName para capturar el Instance Manager del panel y use la API addInstance del Instance Manager para añadir la instancia eliminada. Por ejemplo, _panelName.addInstance(). Añade una instancia del panel eliminado.
 
 ## Usar el diseño de acordeón para el panel principal   {#using-the-accordion-layout-for-the-parent-panel-nbsp}
 

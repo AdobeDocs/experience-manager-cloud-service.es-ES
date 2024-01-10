@@ -1,6 +1,6 @@
 ---
 title: Cómo aplicar estilos en línea a los componentes de un formulario adaptable
-description: Aprenda a aplicar estilos personalizados a un formulario adaptable, también puede aplicar propiedades CSS en línea a los componentes individuales de un formulario adaptable.
+description: Aunque se puede aplicar estilos personalizados a un formulario adaptable, también se puede aplicar propiedades CSS en línea a los componentes individuales de un formulario adaptable.
 feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
@@ -8,7 +8,7 @@ exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '761'
-ht-degree: 80%
+ht-degree: 83%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 80%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 Puede definir el aspecto y el estilo generales de un formulario adaptable especificando los estilos mediante el [Editor de temáticas](themes.md). Además, puede aplicar estilos CSS en línea a componentes de formulario adaptable individuales y previsualizar los cambios sobre la marcha. Los estilos en línea reemplazan el estilo proporcionado en el tema.
@@ -134,7 +134,7 @@ También puede simular los estados de éxito y error. Seleccione el icono Expand
 ![Simular estados](assets/simulate-states.png)
 
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}
 

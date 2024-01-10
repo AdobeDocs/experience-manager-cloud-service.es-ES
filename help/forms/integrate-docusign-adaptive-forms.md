@@ -5,7 +5,7 @@ exl-id: fb2e75d6-e454-4999-a079-f663af79051f
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1534'
-ht-degree: 87%
+ht-degree: 90%
 
 ---
 
@@ -186,7 +186,7 @@ Para crear un formulario adaptable habilitado para firmar:
 1. Seleccionar **[!UICONTROL Crear.]** Se crea un formulario adaptable con firma habilitada. Puede agregar campos de [!DNL DocuSign] al formulario y enviarlo para su firma.
 1. Abra el formulario adaptable en modo de edición. En el **[!UICONTROL Contenido]** , seleccione la pestaña **[!UICONTROL Contenedor del formulario]** y seleccione ![Configurar](assets/configure-icon.svg).
 
-1. En el **[!UICONTROL Envío]** , seleccione **[!UICONTROL Enviar con firmas electrónicas de DocuSign]** desde el **[!UICONTROL Acción de envío]** lista desplegable.
+1. En la sección **[!UICONTROL Envío]**, seleccione **[!UICONTROL Enviar con firmas electrónicas de DocuSign]** de la lista desplegable **[!UICONTROL Enviar acción]**.
 
 1. En el **[!UICONTROL Configuración de acción]** , seleccione **[!UICONTROL Añadir]** para agregar un destinatario y especificar la dirección de correo electrónico del destinatario. Seleccionar **[!UICONTROL Añadir]** para agregar más destinatarios.
 
@@ -211,7 +211,7 @@ Para usar [!DNL DocuSign] en un formulario adaptable existente:
 
 1. Abra el formulario adaptable en modo de edición. En el **[!UICONTROL Contenido]** , seleccione la pestaña **[!UICONTROL Contenedor del formulario]** y seleccione ![Configurar](assets/configure-icon.svg).
 
-1. En el **[!UICONTROL Envío]** , seleccione **[!UICONTROL Enviar con firmas electrónicas de DocuSign]** desde el **[!UICONTROL Acción de envío]** lista desplegable.
+1. En la sección **[!UICONTROL Envío]**, seleccione **[!UICONTROL Enviar con firmas electrónicas de DocuSign]** de la lista desplegable **[!UICONTROL Enviar acción]**.
 
 1. En el **[!UICONTROL Configuración de acción]** , seleccione **[!UICONTROL Añadir]** para agregar un destinatario y especificar la dirección de correo electrónico del destinatario. Seleccionar **[!UICONTROL Añadir]** para agregar más destinatarios.
 

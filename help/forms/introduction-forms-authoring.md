@@ -9,7 +9,7 @@ docset: aem65
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '2465'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 96%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 ## Información general {#overview}
@@ -52,7 +52,7 @@ La IU táctil para crear formularios adaptables es intuitiva y proporciona lo si
 * Componentes de formulario estándar
 * Repositorio integrado para recursos
 
-Cuando crea o edita un formulario adaptable existente, utiliza los siguientes elementos de la interfaz de usuario:
+Cuando crea un formulario adaptable nuevo o edita uno existente, utiliza los siguientes elementos de la IU:
 
 * [Barra lateral](#sidebar)
 * [Barra de herramientas de la página](#page-toolbar)
@@ -90,7 +90,7 @@ Muestra la jerarquía de objetos del formulario. El autor puede desplazarse a un
 
    * **Objetos del modelo de datos**
 Permite ver la jerarquía del modelo del formulario. 
-Permite arrastrar y soltar elementos del modelo del formulario en el formulario adaptable. Los elementos agregados se convierten automáticamente en componentes de formulario y conservan sus propiedades originales. Puede ver objetos del modelo de datos cuando el formulario utilice un esquema XML, un esquema JSON o una plantilla XDP.
+Arrastrar y soltar elementos del modelo del formulario en el formulario adaptable. Los elementos agregados se convierten automáticamente en componentes de formulario y conservan sus propiedades originales. Puede ver objetos del modelo de datos cuando el formulario utilice un esquema XML, un esquema JSON o una plantilla XDP.
 
 * **Explorador de propiedades**
 
@@ -174,7 +174,7 @@ Permite arrastrar y soltar elementos del modelo del formulario en el formulario 
   </tr>
   <tr>
    <td>Imagen</td>
-   <td>Permite insertar una imagen.</td>
+   <td>Insertar una imagen.</td>
   </tr>
   <tr>
    <td>Opción de imagen</td>
@@ -230,7 +230,7 @@ Permite arrastrar y soltar elementos del modelo del formulario en el formulario 
   </tr>
   <tr>
    <td>Texto</td>
-   <td>Permite especificar texto estático.</td>
+   <td>Especificar texto estático.</td>
   </tr>
   <tr>
    <td>Botón Enviar</td>
@@ -361,6 +361,6 @@ La estructura del contenido suele contener los siguientes componentes principale
 
 * **activos:** Este nodo contiene información adicional utilizada para la creación de formularios. Por ejemplo, detalles del modelo del formulario, detalles de localización, etc.
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}

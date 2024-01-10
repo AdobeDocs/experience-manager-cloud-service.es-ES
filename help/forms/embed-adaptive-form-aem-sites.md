@@ -7,7 +7,7 @@ exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '3145'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -266,13 +266,13 @@ Puede personalizar la configuración avanzada del componente **[!UICONTROL Formu
 * **El formulario abarca toda la anchura del marco**:
 un marco en línea (iframe) es un elemento de HTML que carga un formulario adaptable en una página de AEM Sites.
 
-   * Si la casilla de verificación **[!UICONTROL El formulario abarca toda la anchura del marco]** está seleccionada, significa que ese formulario adaptable ocupa la anchura completa del contenedor en el que se coloca. En este caso, no se utiliza un iframe para procesar el formulario. La presentación y el diseño de un formulario adaptable se ajustan para abarcar toda la anchura del contenedor, lo que lo hace adaptable y capaz de ajustarse a diferentes tamaños de pantalla. Esta opción le permite incrustar varios Forms adaptables en una página de AEM Sites.
+   * Si la casilla de verificación **[!UICONTROL El formulario abarca toda la anchura del marco]** está seleccionada, significa que ese formulario adaptable ocupa la anchura completa del contenedor en el que se coloca. En este caso, no se utiliza un iframe para procesar el formulario. La presentación y el diseño de un formulario adaptable se ajustan para abarcar toda la anchura del contenedor, lo que lo hace adaptable y capaz de ajustarse a diferentes tamaños de pantalla. Esta opción permite incrustar varios Formularios adaptables en una página de AEM Sites.
 
      >[!NOTE]
      >
      > Para incrustar varios formularios en una página de AEM Sites, seleccione la casilla de verificación **[!UICONTROL El formulario abarca toda la anchura del marco]**.
 
-   * Si la casilla de verificación **[!UICONTROL El formulario abarca toda la anchura del marco]** no está seleccionada, ese formulario adaptable no cubre toda la anchura del contenedor. En su lugar, se utiliza un iframe para procesar el formulario, que no se puede extender más allá de una anchura específica. AEM Este método es útil cuando un formulario adaptable tiene límites definidos y debe coexistir con otros componentes del formulario adaptable junto a él dentro del contenedor. Si esta opción no está seleccionada, solo permite incrustar un Formulario adaptable en la página de AEM Sites sin un iframe.
+   * Si la casilla de verificación **[!UICONTROL El formulario abarca toda la anchura del marco]** no está seleccionada, ese formulario adaptable no cubre toda la anchura del contenedor. En su lugar, se utiliza un iframe para procesar el formulario, que no se puede extender más allá de una anchura específica. Este método es útil cuando el formulario adaptable tiene límites definidos y necesita coexistir con otros componentes de AEM que se encuentran junto a él dentro del contenedor. Si esta opción no está seleccionada, solo permite incrustar un Formulario adaptable en la página de AEM Sites sin un iframe.
 
      >[!NOTE]
      >

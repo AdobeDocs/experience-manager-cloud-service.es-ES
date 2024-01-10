@@ -9,7 +9,7 @@ exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '2377'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -406,7 +406,7 @@ Using this custom error handler, the adaptive form converts the fields listed in
 ## Vea también {#see-also}
 
 {{see-also}}
-* [Crear y usar controladores de error personalizados en Forms adaptable (componentes principales)](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
+* [Crear y usar controladores de error personalizados en Formularios adaptables (componentes principales)](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
 
 <!--
 

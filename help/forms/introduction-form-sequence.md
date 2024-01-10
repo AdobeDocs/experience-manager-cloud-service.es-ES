@@ -1,6 +1,6 @@
 ---
 title: Cómo crear una secuencia de formularios de varios pasos
-description: Con [!DNL Experience Manager Forms], puede definir una secuencia de paneles de formulario para que los usuarios se desplacen por un formulario adaptable y lo rellenen.
+description: Con  [!DNL Experience Manager Forms], puede definir una secuencia de paneles de formulario para que los usuarios se desplacen por un formulario adaptable y lo rellenen.
 role: User
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
@@ -8,7 +8,7 @@ exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
 source-git-commit: 0eac90a8f120a9c7655e68533d4b0a32292621e1
 workflow-type: tm+mt
 source-wordcount: '537'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 90%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/introduction-form-sequence.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/introduction-form-sequence.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 Los formularios adaptables permiten a los autores de formularios crear experiencias de captura de datos de varios pasos con gran facilidad. Estos formularios incluyen compatibilidad para crear varios paneles y asociar cada uno con diferentes patrones de navegación. Los autores de formularios pueden agrupar los campos de formulario en secciones lógicas y representar un grupo como un panel. La navegación general entre los paneles se controla mediante el diseño del panel. Los autores pueden elegir organizar los paneles en diferentes diseños, por ejemplo, colocándolos secuencialmente utilizando el diseño Asistente o de forma improvisada utilizando el diseño con pestañas. Para obtener información sobre los diseños de panel, consulte [Funciones de diseño de formularios adaptables](layout-capabilities-adaptive-forms.md).
@@ -53,6 +53,6 @@ Veamos un caso de uso en el que debe crear una secuencia para los pasos de relle
 Después de definir la secuencia del formulario en la plantilla de formulario, puede utilizarla para crear formularios que tengan la estructura básica definida como dicha secuencia, aunque siempre puede personalizar el formulario para adaptarlo a sus necesidades.
 
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}

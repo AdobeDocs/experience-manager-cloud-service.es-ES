@@ -6,7 +6,7 @@ exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1785'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
@@ -34,7 +34,7 @@ Los componentes del portal de Forms le permiten agregar las siguientes funciones
 * Habilita la búsqueda de formularios en función del título y la descripción.
 * Utiliza CSS personalizada para personalizar la apariencia del portal.
 * Crea vínculos a formularios.
-* Enumera borradores y envíos relacionados con Forms adaptable que haya creado el usuario.
+* Muestra borradores y envíos relacionados con formularios adaptables que haya creado el usuario.
 
 ## Componentes de una página del portal de Forms {#forms-portal-components}
 

@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 65893c0c0dee37bed8ecfbb06a12e7c093c4397c
 workflow-type: tm+mt
 source-wordcount: '4573'
-ht-degree: 91%
+ht-degree: 96%
 
 ---
 
@@ -332,10 +332,10 @@ ht-degree: 91%
       + Fragmentos de contenido {#content-fragments}
          + [Información general y conceptos](/help/sites-cloud/administering/content-fragments/overview.md)
          + [Entrega sin encabezado con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
-         + [Configuración de fragmento de contenido](/help/sites-cloud/administering/content-fragments/setup.md)
+         + [Configuración de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/setup.md)
          + [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
          + [Administrar fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md)
-         + [Creación de contenido de fragmentos](/help/sites-cloud/administering/content-fragments/authoring.md)
+         + [Creación del contenido de fragmentos](/help/sites-cloud/administering/content-fragments/authoring.md)
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
          + [Eliminar consideraciones](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [Analizando estructura](/help/sites-cloud/administering/content-fragments/analysis.md)
@@ -471,7 +471,7 @@ ht-degree: 91%
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [Árbol de estructura](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [Previsualización: representación JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
-      + [Reutilización de fragmentos de contenido mediante MSM para recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html)
+      + [Reutilización de fragmentos de contenido mediante MSM para recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=es)
    + Dynamic Media {#dynamicmedia}
       + Recorrido de Dynamic Media: Conceptos básicos {#dm-journey}
          + [Parte I: Dynamic Media, Casos de uso, Flujo de recursos a través del sistema](/help/assets/dynamic-media/dm-journey-part1.md)
@@ -518,7 +518,7 @@ ht-degree: 91%
       + [Adición de recursos de Dynamic Media a las páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
       + [Incrustación de Dynamic Video o el visualizador de imágenes en una página web](/help/assets/dynamic-media/embed-code.md)
       + [Vinculación de URL en la aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
-      + [Informe de error de solicitud para direcciones URL de envío fallidas](/help/assets/dynamic-media/reporting-dm.md)
+      + [Solicitar informe de errores para direcciones URL de envío fallidas](/help/assets/dynamic-media/reporting-dm.md)
       + [Uso de conjuntos de reglas para transformar URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
       + [Publicación de recursos de Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
       + [Trabajo con Publicación selectiva en Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)
@@ -581,13 +581,13 @@ ht-degree: 91%
          + [Integración de AEM Forms as a Cloud Service con Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
          + [Integrar AEM Forms as a Cloud Service con DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
          + [Integración de AEM Forms as a Cloud Service con Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-         + [Integración de Forms adaptable a Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
-         + [Ver y comprender el informe de Forms Analytics adaptable](/help/forms/view-understand-aem-forms-analytics-reports.md)
+         + [Integración de Formularios adaptables a Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+         + [Ver y comprender el informe de Analytics de Formularios adaptables](/help/forms/view-understand-aem-forms-analytics-reports.md)
          + [Envío de un formulario adaptable a Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [Integración de un formulario adaptable con Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Incrustar un formulario adaptable en una página de AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
          + [Incrustar formulario adaptable basado en componentes principales en una página web externa](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
-         + [Incrustar formulario adaptable basado en componentes de base en una página web externa](/help/forms/embed-adaptive-form-external-web-page.md)
+         + [Incrustar formulario adaptable basado en componentes principales en una página web externa](/help/forms/embed-adaptive-form-external-web-page.md)
       + Modelo de datos de formulario {#use-form-data-model}
          + [Conectar AEM Forms a la base de datos o fuente de datos](/help/forms/data-integration.md)
          + [Configuración de fuentes de datos](/help/forms/configure-data-sources.md)
@@ -600,14 +600,14 @@ ht-degree: 91%
          + [Uso del modelo de datos de formulario](/help/forms/using-form-data-model.md)
    + Formularios adaptables {#adaptive-forms-authoring}
       + [Crear un formulario adaptable](/help/forms/create-an-adaptive-form.md)
-      + [Crear un fragmento de formulario adaptable](/help/forms/adaptive-form-fragments.md)
+      + [Crear fragmento de formulario adaptable](/help/forms/adaptive-form-fragments.md)
       + [Agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + Componentes principales {#authoring-adaptive-forms-core-components}
          + Crear un formulario adaptable {#create-an-adaptive-form-on-forms-cs}
             + [Crear un formulario adaptable](/help/forms/creating-adaptive-form-core-components.md)
-            + [Crear un fragmento de formulario adaptable](/help/forms/adaptive-form-fragments-core-components.md)
+            + [Crear fragmento de formulario adaptable](/help/forms/adaptive-form-fragments-core-components.md)
             + [Creación de temáticas para un formulario adaptable: componentes principales](/help/forms/using-themes-in-core-components.md)
-            + [Crear una plantilla de formulario adaptable basada en componentes principales](/help/forms/template-editor-core-components.md)
+            + [Crear una plantilla de formulario adaptable basado en componentes principales](/help/forms/template-editor-core-components.md)
             + [Generar documento de registro para formularios adaptables](/help/forms/generate-document-of-record-core-components.md)
             + [Utilizar la traducción automática o la traducción humana para traducir un formulario adaptable](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configurar la página de redireccionamiento o el mensaje de agradecimiento](/help/forms/configure-redirect-page-or-thank-you-message.md)
@@ -615,8 +615,8 @@ ht-degree: 91%
             + [Configuración de una acción de envío para un formulario adaptable](/help/forms/configure-submit-actions-core-components.md)
             + [Uso de Google reCAPTCHA en un formulario adaptable](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Agregar un controlador de error personalizado en un formulario adaptable](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-            + [Añadir una configuración regional para Forms adaptable basada en componentes principales](/help/forms/supporting-new-language-localization-core-components.md)
-      + Componentes básicos {#authoring-adaptive-forms-foundation-components}
+            + [Añadir una configuración regional para Formularios adaptables basada en componentes principales](/help/forms/supporting-new-language-localization-core-components.md)
+      + Componentes de base {#authoring-adaptive-forms-foundation-components}
          + Convertir sus formularios PDF en formularios adaptables {#afcs}
             + [Introducción al servicio de conversión automatizada de formularios](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=es)
             + [Conversión de un formulario PDF existente en un formulario adaptable](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=es)
@@ -802,7 +802,7 @@ ht-degree: 91%
          + [Extensión de Sidekick Chrome](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
          + [Bot de Github](https://github.com/apps/aem-code-sync)
          + [Registro de auditoría](/help/edge/docs/auditlog.md)
-+ Headless {#headless}
++ {#headless} sin encabezado
    + [¿Qué es un CMS sin encabezado?](/help/headless/what-is-headless.md)
    + [Introducción a AEM Headless](/help/headless/introduction.md)
    + [Portal de desarrolladores (recursos adicionales)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
@@ -815,14 +815,14 @@ ht-degree: 91%
       + [Fragmento de contenido](/help/headless/setup/create-content-fragment.md)
       + [Punto de conexión de GraphQL](/help/headless/setup/create-api-request.md)
    + Fragmentos de contenido {#content-fragments}
-      + [Información general](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
-      + [Modelos de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
-      + [Administrar fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
+      + [Información general](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html?lang=es)
+      + [Modelos de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html?lang=es)
+      + [Administrar fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html?lang=es)
       + Creación {#authoring}
-         + [Creación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
-         + [Editor de Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
-      + [Árbol de estructura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
-      + [Vista previa de JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
+         + [Creación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=es)
+         + [Editor de Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=es)
+      + [Árbol de estructura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=es)
+      + [Vista previa de JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=es)
    + API de GraphQL {#graphql-api}
       + [API de GraphQL para fragmentos de contenido](/help/headless/graphql-api/content-fragments.md)
       + [Administración de puntos de conexión de GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
@@ -1056,7 +1056,7 @@ ht-degree: 91%
       + [Configuración de RTE para crear sitios accesibles](/help/implementing/developing/extending/rte-accessible-content.md)
       + [Ampliación de la creación de páginas](/help/implementing/developing/extending/page-authoring.md)
       + [Ampliación de consolas](/help/implementing/developing/extending/consoles.md)
-      + [Ampliación de propiedades de página](/help/implementing/developing/extending/page-properties.md)
+      + [Ampliación de las propiedades de página](/help/implementing/developing/extending/page-properties.md)
       + [Ampliación del editor por lotes](/help/implementing/developing/extending/bulk-editor.md)
       + [Ampliación de MSM](/help/implementing/developing/extending/msm.md)
    + Implementación en AEM as a Cloud Service {#deploying}
@@ -1117,6 +1117,6 @@ ht-degree: 91%
       + [Atributos y tipos de elementos](/help/implementing/universal-editor/attributes-types.md)
       + [Tipos de campos](/help/implementing/universal-editor/field-types.md)
       + [Autenticación del editor universal](/help/implementing/universal-editor/authentication.md)
-      + [AEM Desarrollo local con el editor universal de la aplicación](/help/implementing/universal-editor/local-dev.md)
+      + [Desarrollo local de AEM con el Editor universal](/help/implementing/universal-editor/local-dev.md)
       + [Llamadas al editor universal](/help/implementing/universal-editor/calls.md)
       + [Personalización de la IU](/help/implementing/universal-editor/customizing.md)

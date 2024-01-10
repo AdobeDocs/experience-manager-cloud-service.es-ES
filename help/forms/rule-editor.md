@@ -1,6 +1,6 @@
 ---
-title: ¿Cómo se utiliza el editor de reglas para agregar reglas a los campos de formulario para agregar un comportamiento dinámico y generar una lógica compleja a un formulario adaptable?
-description: El editor de reglas de Forms adaptable permite agregar un comportamiento dinámico y generar una lógica compleja en los formularios sin codificación ni scripts.
+title: ¿Cómo se utiliza el editor de reglas para agregar reglas a los campos de formulario para agregar un comportamiento dinámico y generar una lógica compleja para un formulario adaptable?
+description: El editor de reglas de formularios adaptables permite agregar un comportamiento dinámico y generar una lógica compleja en los formularios sin codificación ni scripts.
 feature: Adaptive Forms, Foundation Components
 role: User
 level: Beginner, Intermediate
@@ -8,7 +8,7 @@ exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '6457'
-ht-degree: 88%
+ht-degree: 93%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 88%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 ## Información general {#overview}
@@ -93,7 +93,7 @@ El editor de reglas proporciona los siguientes operadores lógicos y eventos med
 * **Has Selected:** devuelve el valor True cuando el usuario selecciona una opción concreta para un botón de opción, un menú desplegable o una casilla de verificación.
 * **Is Initialized (event):** devuelve el valor True cuando un objeto de formulario se procesa en el explorador.
 * **Is Changed (event):** devuelve el valor True cuando el usuario cambia el valor indicado o la opción seleccionada para un objeto de formulario.
-* **Navegación (evento):** Devuelve true cuando el usuario hace clic en un objeto de navegación. Los objetos de navegación se utilizan para desplazarse entre paneles.
+* **Navegación (evento):** devuelve el valor True cuando el usuario hace clic en un objeto de navegación. Los objetos de navegación se utilizan para desplazarse entre paneles.
 * **Step Completion(event):** devuelve el valor True cuando se completa un paso de una regla.
 * **Successful Submission(event):** devuelve el valor True si los datos se han enviado correctamente a un modelo de datos de formulario.
 * **Error in Submission(event):** devuelve el valor True si el envío de datos a un modelo de datos de formulario no se ha realizado correctamente.
@@ -128,7 +128,7 @@ Por ejemplo, una lista tiene cuatro opciones: rojo, azul, verde y amarillo. Al c
 
 ![Opciones de visualización de varios valores](assets/multivaluefcdisplaysoptions.png)
 
-Al escribir una regla When, puede activar la acción Clear Value Of. La acción Clear Value Of borra el valor del objeto especificado. Contar con Clear Value Of como opción en la instrucción When permite crear condiciones complejas con varios campos.
+Al escribir una regla When, puede activar la acción Clear Value Of. La acción Clear Value Of borra el valor del objeto especificado. Contar con Borrar valor de como opción en la instrucción Cuando permite crear condiciones complejas con varios campos.
 
 ![Clear Value Of](assets/clearvalueof.png)
 
@@ -150,19 +150,19 @@ Para obtener más información sobre la configuración de servicios en el modelo
 
 Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario, consulte integración de datos de [[!DNL Experience Manager Forms] ](data-integration.md).
 
-El **[!UICONTROL Establecer propiedad]** tipo de regla permite establecer el valor de una propiedad del objeto especificado en función de una acción de condición. Puede establecer la propiedad en una de las siguientes opciones:
+El tipo de regla **[!UICONTROL Establecer propiedad]** permite establecer el valor de una propiedad del objeto especificado en función de una acción de condición. Puede establecer la propiedad en una de las siguientes opciones:
 * visible (booleano)
 * dorExclusion (booleano)
-* chartType (String)
-* title (cadena)
-* enabled (booleano)
+* chartType (Cadena)
+* título (Cadena)
+* habilitado (booleano)
 * obligatorio (booleano)
 * validationsDisabled (booleano)
-* validateExpMessage (String)
-* value (Number, String, Date)
-* items (lista)
+* validateExpMessage (Cadena)
+* valor (Número, Cadena, Fecha)
+* elementos (Lista)
 * válido (booleano)
-* errorMessage (String)
+* errorMessage (Cadena)
 
 Por ejemplo, permite definir reglas para agregar casillas de verificación de forma dinámica al formulario adaptable. Puede utilizar una función personalizada, un objeto de formulario o una propiedad de objeto para definir una regla.
 
@@ -172,7 +172,7 @@ Para definir una regla basada en una función personalizada, seleccione **[!UICO
 
 Para definir una regla basada en un objeto de formulario, seleccione **[!UICONTROL Objeto de formulario]** en la lista desplegable y arrastre y suelte un objeto de formulario desde la pestaña **[!UICONTROL Objetos de formulario]**. Si se cumple la acción de condición, el número de casillas de verificación definidas en el objeto de formulario se agrega al formulario adaptable.
 
-La regla Set Property basada en una propiedad de objeto permite agregar el número de casillas de verificación en un formulario adaptable basándose en otra propiedad de objeto incluida en el formulario adaptable.
+La regla Establecer propiedad basada en una propiedad de objeto permite agregar el número de casillas de verificación en un formulario adaptable basándose en otra propiedad de objeto incluida en el formulario adaptable.
 
 En la siguiente figura se muestra un ejemplo de cómo agregar casillas de verificación de forma dinámica en función del número de listas desplegables del formulario adaptable:
 
@@ -198,7 +198,7 @@ En la siguiente figura se muestra un ejemplo de cómo agregar casillas de verifi
 
 ### [!UICONTROL Set Value Of] {#set-value-of}
 
-El **[!UICONTROL Configurar el valor de]** el tipo de regla permite establecer el valor de un objeto de formulario en función de si la condición especificada se cumple o no. El valor puede establecerse en un valor de otro objeto, una cadena literal, un valor derivado de una expresión matemática o una función, un valor de una propiedad de otro objeto o el resultado de un servicio de modelo de datos de formulario. Del mismo modo, se puede comprobar la existencia de una condición en un componente, una cadena, una propiedad o valores derivados de una función o expresión matemática.
+El tipo de regla **[!UICONTROL Fijar valor de]** le permite definir el valor de un objeto de formulario en función de si la condición especificada se cumple o no. El valor puede establecerse en un valor de otro objeto, una cadena literal, un valor derivado de una expresión matemática o una función, un valor de una propiedad de otro objeto o el resultado de un servicio de modelo de datos de formulario. Del mismo modo, se puede comprobar la existencia de una condición en un componente, una cadena, una propiedad o valores derivados de una función o expresión matemática.
 
 El tipo de regla **Set Value Of** no está disponible para todos los objetos de formulario, como paneles y botones de la barra de herramientas. Una regla de valor definido estándar tiene la siguiente estructura:
 
@@ -274,7 +274,7 @@ Una regla Enable típica se estructura de la siguiente manera:
 
 ### [!UICONTROL Disable] {#disable}
 
-Similar al tipo de regla Enable, la variable **[!UICONTROL Deshabilitar]** el tipo de regla permite habilitar o deshabilitar un objeto de formulario en función de si se cumple o no una condición. El tipo de regla Disable también activa la acción Enable (habilitar) en caso de que la condición no se cumpla o devuelva un valor `False`.
+Similar al tipo de regla Habilitar, el tipo de regla **[!UICONTROL Deshabilitar]** permite habilitar o deshabilitar un objeto de formulario en función de si se cumple o no una condición. El tipo de regla Disable también activa la acción Enable (habilitar) en caso de que la condición no se cumpla o devuelva un valor `False`.
 
 Una regla Disable típica se estructura de la siguiente manera:
 
@@ -659,7 +659,7 @@ Para abrir un formulario en modo de edición, seleccione un formulario y selecci
 
    >[!NOTE]
    >
-   > Para invocar un modelo de datos de formulario desde el editor de reglas utilizando funciones personalizadas, [ver aquí](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services).
+   > Para invocar un modelo de datos de formulario desde el editor de reglas utilizando funciones personalizadas, [véase aquí](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services).
 
 #### Tipos admitidos para la declaración de funciones {#function-declaration-supported-types}
 
@@ -726,7 +726,7 @@ var c = {
 
 ## Administrar reglas {#manage-rules}
 
-Cualquier regla existente en un objeto de formulario se enumera al seleccionar el objeto y al seleccionar ![edit-rules1](assets/edit-rules-icon.svg). Puede ver el título y una vista previa del resumen de la regla. Además, la interfaz de usuario le permite expandir y ver el resumen completo de la regla, cambiar el orden de las reglas, editar las reglas y eliminarlas.
+Cualquier regla existente en un objeto de formulario se enumera al seleccionar el objeto y al seleccionar ![edit-rules1](assets/edit-rules-icon.svg). Puede ver el título y una vista previa del resumen de la regla. Además, la IU le permite expandir y ver el resumen completo de las reglas, cambiar el orden, editarlas y eliminarlas.
 
 ![List-rules](assets/list-rules.png)
 
@@ -783,7 +783,7 @@ También puede arrastrar y soltar condiciones dentro de una regla para editarla.
 
 ## Condiciones de expresión de fecha {#dateexpression}
 
-El editor de reglas permite utilizar comparaciones de fechas para crear condiciones.
+El editor de reglas permite usar comparaciones de fechas para crear condiciones.
 
 A continuación verá una condición de ejemplo que muestra un objeto de texto estático si la hipoteca de la casa ya está cogida, lo que el usuario indica rellenando el campo de la fecha.
 

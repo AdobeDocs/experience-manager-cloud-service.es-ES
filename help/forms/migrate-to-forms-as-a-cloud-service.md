@@ -1,5 +1,5 @@
 ---
-title: AEM ¿Cómo se puede migrar de Forms de la versión 6.5 a AEM Forms as a Cloud Service?
+title: ¿Cómo se puede migrar de AEM 6.5 Forms a AEM Forms as a Cloud Service?
 description: Introducción al Recorrido de migración a AEM as a Cloud Service | Adobe Experience Manager. Migración desde un  [!DNL AEM Forms] (entornos On-Premise y AMS) a un entorno de  [!DNL AEM Forms] as a Cloud Service.
 Keywords: 6.5 forms to cloud service, 6.5 forms to cs, migrate 6.5 forms to CS, migrate 6.5 forms to cloud service, upgrade 6.5 forms to CS, move 6.5 forms to CS, upgrade AEM 6.5 to CS, AEM Forms 6.5 to Cloud Service, AEM form migration to cloud service, Migration Journey to AEM as a Cloud Service | Adobe Experience Manager.
 contentOwner: khsingh
@@ -12,7 +12,7 @@ exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1430'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -171,7 +171,7 @@ Cuando migre modelos de flujo de trabajo de AEM Forms 6.5 a Cloud Service, espec
 La utilidad de migración le ayuda a migrar formularios adaptables en función de los componentes de base. Además, Forms as a Cloud Service es compatible con los componentes principales de los formularios adaptables. Por lo tanto, puede hacer lo siguiente:
 
 * [Crear formularios adaptables independientes basados en los componentes principales](/help/forms/creating-adaptive-form-core-components.md)
-* [Crear un formulario adaptable basado en componentes principales directamente en una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Creación de un formulario adaptable basado en componentes principales directamente en una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 Para obtener más información sobre AEM Forms as a Cloud Service, consulte lo siguiente:
 

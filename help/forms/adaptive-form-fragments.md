@@ -10,7 +10,7 @@ docset: aem65
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '2137'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
@@ -45,7 +45,7 @@ Puede crear un fragmento de formulario adaptable desde cero o guardar un panel e
 
      >[!NOTE]
      >
-     > En Forms adaptable, puede utilizar un solo fragmento de formulario (basado en componentes principales) varias veces en un formulario. Admite fragmentos de formulario basados en ninguno y en esquema.
+     > Con los formularios adaptables, puede utilizar un solo fragmento de formulario (basado en componentes principales) varias veces en un formulario. Admite fragmentos de formulario basados en ninguno y en esquema.
 
    * **Plantilla de formulario**: Especifica la creación del fragmento mediante una plantilla XDP cargada en [!DNL AEM Forms]. Seleccione la plantilla XDP adecuada como modelo de formulario para el fragmento.
 

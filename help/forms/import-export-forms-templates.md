@@ -1,16 +1,16 @@
 ---
-title: Cómo importar, exportar y organizar Forms adaptable o PDF forms en una instancia de AEM Forms
-description: Obtenga información sobre cómo migrar Forms adaptable, PDF form AEM, temáticas y otros recursos de soporte a y desde instancias de y de la.
+title: Cómo importar, exportar y organizar formularios adaptables o PDF forms en una instancia de AEM Forms
+description: Obtenga información sobre cómo migrar Forms adaptable, PDF form, temáticas y otros recursos de soporte desde y hacia instancias de AEM.
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '1193'
-ht-degree: 82%
+ht-degree: 88%
 
 ---
 
-# Importar o exportar recursos adaptables de Forms y AEM Forms {#importing-and-exporting-assets-to-aem-forms}
+# Importar o exportar formularios adaptables y recursos de AEM Forms {#importing-and-exporting-assets-to-aem-forms}
 
 Puede mover formularios adaptables y recursos relacionados, como temáticas de formulario adaptable, modelos de datos de formulario, plantillas de formulario adaptable, fragmentos de documentos y PDF forms, entre instancias de [!DNL AEM Forms]. Puede importar y exportar recursos en paquetes CRX o formatos de archivo binario.
 
@@ -28,7 +28,7 @@ Para descargar formularios o recursos relacionados:
    * **Descargar como paquete CRX:** Utilice la opción para descargar y mover todos los recursos seleccionados y las dependencias relacionadas de una instancia de [!DNL AEM Forms] a otra. Descarga todos los recursos y carpetas como paquete CRX, incluidos los formularios creados en AEM (formularios adaptables y fragmentos de formularios adaptables), conjuntos de formularios, modelos de datos de formulario, plantillas de formulario, documentos PDF y recursos de referencia (XSD e imágenes). 
 La ventaja de descargar recursos como paquete es que también descarga las referencias de los recursos seleccionados. Por ejemplo, si tiene un formulario adaptable que utiliza una plantilla de formulario, XSD y una imagen. Al seleccionar este formulario adaptable y descargarlo como un paquete, el paquete descargado también contiene la plantilla de formulario, XSD y la imagen. También se descargan todas las propiedades de metadatos (incluidas las propiedades personalizadas) asociadas al recurso.
 
-   * **Descargar recursos como archivos binarios:** Utilice la opción para descargar solo plantillas de formulario (XDP), PDF forms (PDF), documentos (PDF) y recursos (imágenes, esquemas, hojas de estilo). Puede editar estos recursos con aplicaciones externas. Descarga los recursos que poseen binarios, como imágenes, PDF y otros formatos compatibles como archivo .zip. 
+   * **Descargar recursos como archivos binarios:** utilice la opción para descargar solo plantillas de formulario (XDP), formularios PDF (PDF), documento (PDF) y recursos (imágenes, esquemas, hojas de estilo). Puede editar estos recursos con aplicaciones externas. Descarga los recursos que poseen binarios, como imágenes, PDF y otros formatos compatibles como archivo .zip. 
 No puede descargar Forms adaptable, fragmentos de formularios adaptables, temáticas y conjuntos de formularios con **[!UICONTROL Descargar recursos como archivos binarios]** opción. Para descargar estos recursos, debe utilizar la opción **[!UICONTROL Descargar como paquete CRX]**.
 
    Los recursos seleccionados se descargan como un archivo (archivo .zip).

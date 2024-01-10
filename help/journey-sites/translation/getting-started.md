@@ -8,7 +8,7 @@ exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 89%
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ Este documento le ayuda a comprender cómo empezar a traducir contenido de sitio
 
 ## Requisitos y requisitos previos {#requirements-prerequisites}
 
-AEM Antes de empezar a traducir el contenido de la, existen varios requisitos.
+Antes de comenzar a traducir el contenido de AEM, existen varios requisitos.
 
 ### Conocimiento {#knowledge}
 
@@ -63,7 +63,7 @@ Para el especialista en traducción, no es importante comprender en profundidad 
 
 La consola Sites proporciona una descripción general de la estructura del contenido, lo que facilita la navegación y la administración al crear páginas nuevas, mover y copiar páginas o publicar contenido.
 
-Para acceder a la consola Sites:
+Para acceder a la consola Sites, haga lo siguiente:
 
 1. En el menú de navegación global, seleccione **Navegación** > **Sites**.
 1. La consola Sites se abre en el nivel superior del contenido.
@@ -75,7 +75,7 @@ Para acceder a la consola Sites:
 
    ![Jerarquía de contenido](assets/sites-console-hierarchy.png)
 
-1. Al tocar o hacer clic en la casilla de verificación de un elemento de una columna, se selecciona ese elemento y se muestran sus detalles en la columna de la derecha, así como varias acciones disponibles en la barra de herramientas de arriba.
+1. Al tocar o hacer clic en la casilla de verificación de un elemento de una columna, se selecciona ese elemento y se muestran sus detalles en la columna de la derecha, y varias acciones disponibles en la barra de herramientas de arriba.
 
    ![Selección de contenido](assets/sites-console-selection.png)
 
@@ -97,7 +97,7 @@ La consola Sites le permite desplazarse por el contenido y proporciona una descr
 
 Para editar una página:
 
-1. Utilice la consola Sites para localizar y seleccionar una página. Recuerde que debe seleccionar la casilla de verificación de una página individual para seleccionarla.
+1. Utilice la consola Sites para localizar y seleccionar una página. Recuerde que debe tocar o hacer clic en la casilla de verificación de una página individual para seleccionarla.
 
    ![Selección de una página para editarla](assets/sites-editor-select-page.png)
 
@@ -107,7 +107,7 @@ Para editar una página:
 
    ![Edición de una página](assets/sites-editor-title.png)
 
-Puede volver a la consola Sites regresando a esa pestaña en el explorador en cualquier momento. Con el editor de sitios puede ver rápidamente el contenido de la página, tal y como pueden verlo los autores de contenido y la audiencia.
+Puede volver a la consola Sites regresando a esa pestaña en el explorador en cualquier momento. Con el editor de Sites puede ver rápidamente el contenido de la página, tal y como lo verán los autores de contenido y la audiencia.
 
 >[!NOTE]
 >
@@ -201,7 +201,7 @@ Ahora que ha completado esta parte del recorrido de traducción de AEM Sites, de
 * Entender cómo AEM almacena contenido.
 * Estar familiarizado con las herramientas de traducción de AEM.
 
-Aproveche este conocimiento y continúe con su recorrido de traducción de AEM Sites revisando el documento a continuación [Configuración del conector de traducción](configure-connector.md) AEM donde aprenderá a conectarse a un servicio de traducción de forma gratuita.|
+Aproveche este conocimiento y continúe con su recorrido de traducción de AEM Sites revisando el documento [Configuración del conector de traducción](configure-connector.md), donde aprenderá a conectar AEM a un servicio de traducción.|
 
 ## Recursos adicionales {#additional-resources}
 

@@ -1,12 +1,12 @@
 ---
-title: ¿Cómo podemos traducir un formulario adaptable basado en componentes principales?
+title: ¿Cómo se puede traducir un formulario adaptable basado en componentes principales?
 description: Aprenda a crear un modelo de datos de formulario en AEM Forms, probarlo con datos y servicios de ejemplo y configurar varias opciones para un modelo.
 feature: Adaptive Forms, Core Components
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '884'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
@@ -84,6 +84,6 @@ Realice los siguientes pasos para localizar un formulario y su documento de regi
 
 1. Para obtener una vista previa del formulario localizado, en la IU de AEM Forms, seleccione el formulario localizado. Haga clic en **[!UICONTROL Vista previa]** >**[!UICONTROL Vista previa como HTML]**. Vuelva a abrir el formulario después de agregar `afAcceptLang=<locale code>` a la dirección URL del formulario. Por ejemplo, añada `afAcceptLang=de`para abrir la versión en alemán del formulario.
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}

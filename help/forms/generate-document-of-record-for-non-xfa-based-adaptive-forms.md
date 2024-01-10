@@ -1,12 +1,12 @@
 ---
 title: Cómo generar un documento de registro (DoR) para AEM Forms
-description: Obtenga información sobre cómo generar una plantilla para un documento de registro (DoR) para Forms adaptable.
+description: Obtenga información sobre cómo generar una plantilla para un documento de registro (DoR) para componentes principales de Formularios adaptables.
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '4124'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 94%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/asynchronous-submissions-adaptive-forms.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 ## Información general {#overview}
@@ -54,11 +54,11 @@ Cargue la plantilla XFA (archivo XDP) en la instancia de AEM Forms. Realice los 
 1. En la sección Configuración de plantilla de documento de registro de la pestaña Modelo de formulario, seleccione **Asociar plantilla de formulario como plantilla de documento de registro**. Al seleccionar esta opción, se muestran todas las plantillas XFA (archivos XDP) disponibles en el equipo. Seleccione el archivo apropiado. Además, asegúrese de que se utiliza el mismo esquema (esquema de datos) para el formulario adaptable y la plantilla XFA seleccionada (archivo XDP).
 1. Haga clic en **[!UICONTROL Listo.]**
 
-El formulario adaptable ahora está configurado para utilizar un archivo XDP como plantilla para el documento de registro. El siguiente paso es [enlazar componentes de formulario adaptable con campos de plantilla correspondientes](#bind-adaptive-form-components-with-template-fields).
+El formulario adaptable ahora está configurado para utilizar un archivo XDP como plantilla para el documento de registro. Los siguientes pasos son [enlazar componentes de formulario adaptable con campos de plantilla correspondientes](#bind-adaptive-form-components-with-template-fields).
 
 ## Generar un documento de registro basado en AcroForm {#generate-an-Acroform-based-document-of-record}
 
-Cargue el PDF de Adobe Acrobat (AcroForm) a su instancia de AEM Forms. Realice los siguientes pasos para configurar un formulario adaptable con el que utilizar un PDF de Adobe Acrobat (AcroForm) como plantilla para el documento de registro:
+Cargue el PDF de Adobe Acrobat (AcroForm) a su instancia de AEM Forms. Realiza los siguientes pasos para configurar un formulario adaptable con el que utilizar un PDF de Adobe Acrobat (AcroForm) como plantilla para el documento de registro:
 
 1. En la instancia de autor del Experience Manager, haga clic en **[!UICONTROL Forms]** > **[!UICONTROL Formularios y documentos].**
 1. Seleccione un formulario y haga clic en **[!UICONTROL Propiedades]**.
@@ -67,7 +67,7 @@ Cargue el PDF de Adobe Acrobat (AcroForm) a su instancia de AEM Forms. Realice l
 1. En la sección Configuración de plantilla de documento de registro de la pestaña Modelo de formulario, seleccione **Asociar plantilla de formulario como plantilla de documento de registro**. Al seleccionar esta opción, se muestran todos los PDF de Acrobat (AcroForm) disponibles en el equipo. Seleccione el archivo apropiado.
 1. Haga clic en **[!UICONTROL Listo.]**
 
-El formulario adaptable ahora está configurado para utilizar AcroForm como plantilla para el documento de registro. El siguiente paso es [enlazar componentes de formulario adaptable con campos de plantilla correspondientes](#bind-adaptive-form-components-with-template-fields).
+El formulario adaptable ahora está configurado para utilizar AcroForm como plantilla para el documento de registro. Los siguientes pasos son [enlazar componentes de formulario adaptable con campos de plantilla correspondientes](#bind-adaptive-form-components-with-template-fields).
 
 ## Generar automáticamente un documento de registro {#auto-generate-a-document-of-record}
 
@@ -113,7 +113,7 @@ Puede utilizar la acción de envío de correo electrónico, la acción de envío
 
 Los formularios adaptables y las plantillas de documento de registro correspondientes pueden evolucionar a lo largo del tiempo. Puede elegir entre agregar, quitar o modificar campos a un formulario adaptable o a una plantilla de documento de registro.
 
-Al cambiar una plantilla de documento de registro y cargar la plantilla modificada en AEM Forms, el editor de Forms adaptable detecta automáticamente los enlaces modificados y le informa sobre los componentes de formulario adaptable que requieren nuevos enlaces. Permite realizar actualizaciones incrementales en una plantilla de documento de registro.
+Cuando se realizan cambios en una plantilla de documento de registro y se carga la plantilla modificada en AEM Forms, el editor de formularios adaptables detecta automáticamente los enlaces modificados y te informa sobre los componentes de formulario adaptables que requieren nuevos enlaces. Permite realizar actualizaciones incrementales en una plantilla de documento de registro.
 
 Por ejemplo, una organización, *We.Retail*, tiene una plantilla de documento de registro basada en AcroForm, *we-retail-Invoice.pdf*. La plantilla tiene el siguiente aspecto:
 
@@ -138,7 +138,7 @@ Ahora, cuando se envía el formulario adaptable, se crea un documento actualizad
 
 Tenga en cuenta las siguientes consideraciones y limitaciones al trabajar en documentos de registro para formularios adaptables.
 
-* Las plantillas de documento de registro no admiten texto enriquecido. Por lo tanto, cualquier texto enriquecido del formulario adaptable estático o de la información rellenada por el usuario aparece como texto sin formato en el documento de registro.
+* Las plantillas de documento de registro no admiten texto enriquecido. Por lo tanto, cualquier texto enriquecido del formulario adaptable estático o de la información rellenada por el usuario final aparece como texto sin formato en el documento de registro.
 * Los fragmentos de documento de un formulario adaptable no aparecen en el documento de registro. Sin embargo, se admiten los fragmentos de formularios adaptables.
 * No se admite el enlace de contenido en el documento de registro generado para el formulario adaptable basado en el esquema XML.
 * La versión localizada del documento de registro se crea bajo demanda para una configuración regional cuando el usuario solicita la representación del documento de registro. La localización del documento de registro se produce junto con la localización del formulario adaptable. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
@@ -501,11 +501,11 @@ Un archivo XCI ayuda a establecer varias propiedades de un documento. Forms as a
 ### Utilice un archivo XCI personalizado en el entorno de desarrollo local de Forms as a Cloud Service.
 
 1. Cargue el archivo XCI en su entorno de desarrollo local.
-1. Abra el Administrador de configuración del SDK de Cloud Service. La URL predeterminada es <http://localhost:4502/system/console/configMgr>.
+1. Abra el administrador de configuración del SDK de Cloud Service. La URL predeterminada es <http://localhost:4502/system/console/configMgr>.
 1. Busque y abra la configuración del **[!UICONTROL canal web de comunicaciones interactivas y formularios adaptables]**.
 1. Especifique la ruta del archivo XCI y haga clic en **[!UICONTROL Guardar]**.
 
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}

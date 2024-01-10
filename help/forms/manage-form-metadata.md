@@ -6,7 +6,7 @@ exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
 source-wordcount: '1733'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 98%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 Los metadatos facilitan la categorización y organización de los recursos y ayudan a los usuarios que buscan un recurso específico.
@@ -141,7 +141,7 @@ A continuación se ofrece una amplia lista de propiedades de metadatos compatibl
      <li>HTML</li> 
      <li>PDF</li> 
      <li>Ambas</li> 
-    </ul> <p>Esta opción se utiliza para restringir el formato de procesamiento de los formularios solo en el portal de formularios donde sean visibles para el usuario.</p> </td> 
+    </ul> <p>Esta opción se utiliza para restringir el formato de procesamiento de los formularios solo en el Portal de Forms donde sean visibles para el usuario final.</p> </td> 
   </tr> 
   <tr> 
    <td>Etiquetas</td> 
@@ -310,6 +310,6 @@ Se ofrece una herramienta (Editor de esquemas de metadatos) para definir el esqu
 Todos los formularios adaptables de [!DNL AEM Forms] ahora contienen esta propiedad de metadatos adicional. Puede editarlo desde la página de propiedades.
 
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}
