@@ -1,13 +1,14 @@
 ---
 title: Implementación de un conector de AEM
-description: AEM Obtenga información sobre cómo generar, probar e implementar un conector de. Además, aprenderá sobre los patrones de integración comunes.
+description: Obtenga información sobre los conectores, lo que pueden hacer y cómo implementar estas valiosas herramientas en Experience Manager.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
 workflow-type: tm+mt
 source-wordcount: '935'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
+
 
 Implementación de un conector de AEM
 =============================

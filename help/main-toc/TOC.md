@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 65893c0c0dee37bed8ecfbb06a12e7c093c4397c
+source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
 workflow-type: tm+mt
-source-wordcount: '4573'
+source-wordcount: '4538'
 ht-degree: 96%
 
 ---
@@ -16,7 +16,6 @@ ht-degree: 96%
 
 # Ayuda de Experience Manager as a Cloud Service {#content}
 
-+ [Página de inicio de AEMaaCS](/help/overview/home.md)
 + Información general {#overview}
    + [Introducción a AEM as a Cloud Service](/help/overview/introduction.md)
    + [Novedades y diferencias](/help/overview/what-is-new-and-different.md)
@@ -169,9 +168,8 @@ ht-degree: 96%
    + [API obsoletas](/help/release-notes/deprecated-apis.md)
    + [Canal de prelanzamiento](/help/release-notes/prerelease.md)
 + Seguridad {#security}
-   + [Seguridad para AEM as a Cloud Service](/help/security/home.md)
-   + [Configurar la conexión avanzada para AEM as a Cloud Service](/help/security/configuring-advanced-networking.md)
    + [Información general de seguridad para AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
+   + [Configurar la conexión avanzada para AEM as a Cloud Service](/help/security/configuring-advanced-networking.md)
    + [Compatibilidad con IMS para AEM as a Cloud Service](/help/security/ims-support.md)
    + [Compatibilidad con cookies del mismo sitio para AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [Compatibilidad con OAuth2 para el servicio de correo](/help/security/oauth2-support-for-mail-service.md)
@@ -261,7 +259,6 @@ ht-degree: 96%
       + [Dispatcher Converter de AEM](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
       + [Herramientas de modernización de AEM](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
-   + [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
    + [Cambios importantes en AEM Sites en AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
    + Creación {#authoring}
       + Introducción {#getting-started}
@@ -396,7 +393,6 @@ ht-degree: 96%
       + [Exportación de fragmentos de experiencias a Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integración con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
 + Assets {#assets}
-   + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [Información general y novedades](/help/assets/overview.md)
    + [Cambios importantes en [!DNL Assets] como [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
    + [[!DNL Assets] arquitectura](/help/assets/architecture.md)
@@ -681,7 +677,6 @@ ht-degree: 96%
       + [Instalación y configuración](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Almacenamiento en caché de Dispatcher y CDN](/help/forms/troubleshooting-caching-performance.md)
 + Pantallas {#screens-as-cloud-service}
-   + [AEM Screens as a Cloud Service](/help/screens-cloud/home.md)
    + Información general para Screens as a Cloud Service {#overview}
       + [Introducción](/help/screens-cloud/introduction/introduction.md)
       + [Explicación de las definiciones de funciones](/help/screens-cloud/introduction/personas-screens-cloud.md)
@@ -718,9 +713,8 @@ ht-degree: 96%
       + [Desarrollo de un componente personalizado para Screens as a Cloud Service](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
    + [Preguntas frecuentes de Screens as a Cloud Service](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
-   + [AEM Content and Commerce](/help/commerce-cloud/home.md)
-   + [Cambios importantes en AEM Content and Commerce as a Cloud Service](/help/commerce-cloud/changes.md)
    + [Introducción y descripción general](/help/commerce-cloud/introduction.md)
+   + [Cambios importantes en AEM Content and Commerce as a Cloud Service](/help/commerce-cloud/changes.md)
    + Recorridos de Commerce {#journeys}
       + Recorrido del autor de contenido {#author}
          + [Recorrido de autor de contenido de AEM Content and Commerce](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
@@ -1079,7 +1073,6 @@ ht-degree: 96%
       + [CDN en AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
       + [Almacenamiento en caché en AEM as a Cloud Service](/help/implementing/dispatcher/caching.md)
 + Conectores {#connectors}
-   + [Implementación de conectores para AEM as a Cloud Service](/help/connectors/home.md)
    + [Implementación de un conector de AEM](/help/connectors/implement.md)
    + [Envío de un conector de AEM](/help/connectors/submit.md)
    + [Mantenimiento de un conector de AEM](/help/connectors/maintain.md)

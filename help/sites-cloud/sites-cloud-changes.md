@@ -1,11 +1,11 @@
 ---
 title: Cambios importantes en AEM Sites en AEM Cloud Service
-description: Obtenga más información sobre los cambios más importantes en AEM Sites en AEM Cloud Service
+description: Obtenga información sobre cómo crear contenido y administrar AEM Sites as a Cloud Service, así como sobre cambios importantes en AEM Sites en AEM Cloud Service.
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 88%
+source-wordcount: '527'
+ht-degree: 85%
 
 ---
 

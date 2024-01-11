@@ -1,13 +1,14 @@
 ---
 title: Información general sobre seguridad de AEM as a Cloud Service
-description: AEM Lea una descripción detallada de la seguridad en el as a Cloud Service
+description: Obtenga información sobre temas de seguridad importantes relacionados con Experience Manager as a Cloud Service.
 exl-id: 19b123de-5db5-4fa8-81ec-e5438fed3f7f
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 63%
+source-wordcount: '99'
+ht-degree: 71%
 
 ---
+
 
 # Información general de seguridad para AEM as a Cloud Service {#cloud-service-security-overview}
 

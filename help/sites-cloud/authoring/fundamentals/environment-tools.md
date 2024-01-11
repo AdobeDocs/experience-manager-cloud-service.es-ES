@@ -2,7 +2,7 @@
 title: Herramientas y entorno de creación
 description: El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
 workflow-type: tm+mt
 source-wordcount: '2161'
 ht-degree: 84%
@@ -102,7 +102,7 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
 
 ## Navegador de recursos {#assets-browser}
 
-El explorador de recursos muestra todos los [recursos](/help/assets/home.md) que se pueden utilizar directamente en la página actual.
+El explorador de recursos muestra todos los [recursos](/help/assets/overview.md) que se pueden utilizar directamente en la página actual.
 
 El explorador de recursos es una pestaña del panel lateral que está situada junto al [explorador de componentes](#components-browser) y al [árbol de contenido](#content-tree). Para abrir o cerrar el panel lateral, utilice el icono de la parte superior izquierda de la barra de herramientas:
 

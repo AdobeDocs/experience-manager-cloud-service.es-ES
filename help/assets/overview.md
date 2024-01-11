@@ -1,16 +1,17 @@
 ---
-title: Introducción a Assets as a [!DNL Cloud Service]
-description: Descubra las novedades y las ventajas de Experience Manager Assets as a [!DNL Cloud Service]. Una solución PaaS nativa de la nube para empresas.
+title: Introducción a Assets as a  [!DNL Cloud Service]
+description: Obtenga información sobre cómo usar y administrar Experience Manager Assets as a Cloud Service.
 contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: a4601d95076d37ed5df79b7c9dabb8beab8353d0
+source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 88%
+source-wordcount: '820'
+ht-degree: 100%
 
 ---
+
 
 # Introducción a Assets as a [!DNL Cloud Service] {#assets-cloud-service-introduction}
 
@@ -55,7 +56,7 @@ Para obtener información sobre cómo acceder a la vista Recursos y algunas de l
 
 ## Integración con la creación basada en documentos para Edge Delivery Services {#integrate-doc-authoring-edge-and-assets}
 
-Edge Delivery permite crear sitios web atractivos y rápidos donde los autores pueden actualizar y publicar contenido rápidamente y se pueden iniciar nuevos sitios rápidamente.
+Con Edge Delivery, puede crear entornos de desarrollo rápidos en los que los autores pueden actualizar y publicar contenido rápidamente y en los que se pueden iniciar nuevos sitios rápidamente.
 
 Integre AEM Assets con la creación basada en documentos para Edge Delivery Services para permitir que los autores de sitios web utilicen las imágenes disponibles en repositorios de AEM Assets durante la creación de documentos en Microsoft Word o Google Docs. Para obtener más información, consulte [Integración de AEM Assets con la creación basada en documentos](/help/edge/using.md#integrate-assets-edge).
 
