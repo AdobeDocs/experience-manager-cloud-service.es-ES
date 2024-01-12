@@ -2,10 +2,10 @@
 title: Reglas de filtro de tráfico, incluidas reglas WAF
 description: Configuración de las reglas de filtro de tráfico, incluidas las reglas de cortafuegos de aplicación web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 46e48b6bb8d2b926b55330024e145d608fcf3609
 workflow-type: tm+mt
-source-wordcount: '3357'
-ht-degree: 92%
+source-wordcount: '3350'
+ht-degree: 91%
 
 ---
 
@@ -20,7 +20,7 @@ Las reglas de filtro de tráfico se pueden utilizar para bloquear o permitir sol
 
 La mayoría de estas reglas de filtro de tráfico están disponibles para todos los clientes de AEM as a Cloud Service Sites y de Forms. Funcionan principalmente en propiedades de solicitud y encabezados de solicitud, incluidos IP, nombre de host, ruta y agente de usuario.
 
-Una subcategoría de reglas de filtro de tráfico requiere una licencia de seguridad mejorada o una licencia de protección WAF-DDoS y estará disponible a finales de este año. Estas potentes reglas se conocen como reglas de filtro de tráfico WAF (cortafuegos de aplicación web) (o reglas WAF para abreviar) y tienen acceso a [Indicadores WAF](#waf-flags-list) que se describen más adelante en este artículo.
+Una subcategoría de reglas de filtro de tráfico requiere una licencia de seguridad mejorada o una licencia de protección WAF-DDoS. Estas potentes reglas se conocen como reglas de filtro de tráfico WAF (cortafuegos de aplicación web) (o reglas WAF para abreviar) y tienen acceso a [Indicadores WAF](#waf-flags-list) que se describen más adelante en este artículo.
 
 Las reglas de filtro de tráfico se pueden implementar mediante canalizaciones de configuración de Cloud Manager para los tipos de entorno de desarrollo, fase y producción en programas de producción (que no sean de zonas protegidas). El soporte para RDE vendrá en el futuro.
 
