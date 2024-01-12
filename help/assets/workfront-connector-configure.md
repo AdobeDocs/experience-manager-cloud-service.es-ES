@@ -4,9 +4,9 @@ description: Configurar [!DNL Workfront for Experience Manager enhanced connecto
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: e49d536dc918861604f3e5d19608eb69d038c49a
+source-git-commit: 4bda798113d85b800cb088d150f8c9d453c9ec3e
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1767'
 ht-degree: 1%
 
 ---
@@ -69,6 +69,7 @@ Para suscribirse a los eventos, siga estos pasos:
 1. Estado del proyecto: seleccione el estado para el que se debe configurar el proyecto para crear la carpeta vinculada.
 1. Crear una carpeta vinculada en proyectos con portafolio: lista de Portfolio a los que debe pertenecer el proyecto para poder crear la carpeta vinculada. Deje esta lista vacía para crear la carpeta vinculada para todo el portafolio de proyectos.
 1. Crear una carpeta vinculada en proyectos con un campo de formulario personalizado: Campo de formulario personalizado y su valor correspondiente que debe tener el proyecto para poder crear la carpeta vinculada. Esta configuración se ignora si se deja vacía. Seleccionar `CUSTOM FORMS: Create DAM Linked Folder` para campo y entrada `Yes` para el valor.
+1. Configurar permiso: configure estos permisos, `jcr:all permissions for /conf/workfront-tools/settings/cloudconfigs` para el `wf-workfront-users group`.
 1. Haga clic en Habilitar la creación automática de carpetas vinculadas. Si vuelve a la pestaña Suscripciones de eventos, verá que ahora hay un evento de creación.
 
 ![configuración de carpeta vinculada](/help/assets/assets/wf-linked-folder-config.png)
