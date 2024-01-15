@@ -1,13 +1,13 @@
 ---
 title: ¿Cómo se previsualiza un formulario adaptable?
-description: Los usuarios pueden obtener una vista previa de los formularios antes de publicarlos o activarlos para asegurarse de que cumplen las expectativas. Las opciones de vista previa pueden variar según los tipos de formulario admitidos.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+description: Los usuarios pueden obtener una vista previa del formulario antes de publicarlo o activarlo para asegurarse de que cumple las expectativas. Las opciones de vista previa pueden variar según los tipos de formulario admitidos.
 topic-tags: author
-discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+role: Admin, Developer, User
+feature: Adaptive Forms
+source-git-commit: 6511c4273ca3d394d98a61e8acb4d3cb03c243d5
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 89%
+source-wordcount: '336'
+ht-degree: 84%
 
 ---
 
@@ -28,10 +28,10 @@ La siguiente tabla muestra las opciones de vista previa disponibles para los dis
    <td><strong>Tipo de recurso</strong><br /> </td>
    <td><strong>Opciones de vista previa disponibles</strong><br /> </td>
   </tr>
-  <tr>
-   <td>Documento</td>
-   <td>Vista previa del PDF</td>
-  </tr>
+  <!--<tr>
+   <td>Document</td>
+   <td>PDF preview</td>
+  </tr>-->
   <tr>
    <td>Formulario PDF</td>
    <td>Vista previa del PDF y vista previa con datos<br /> </td>
@@ -40,16 +40,16 @@ La siguiente tabla muestra las opciones de vista previa disponibles para los dis
    <td>Formulario adaptable</td>
    <td>Vista previa del HTML y vista previa del HTML con datos</td>
   </tr>
-  <tr>
-   <td>Plantilla de formulario</td>
-   <td>Vista previa del PDF, vista previa del PDF con datos, vista previa del HTML, vista previa del HTML con datos<br /> </td>
-  </tr>
+  <!--<tr>
+   <td>Form Template</td>
+   <td>PDF preview, PDF preview with Data, HTML preview, HTML preview with Data<br /> </td>
+  </tr>-->
  </tbody>
 </table>
 
 ## Vista previa de un formulario {#previewing-a-form-1}
 
-1. Seleccione el recurso que desea previsualizar y haga clic en Vista previa ![aem6forms_preview](assets/aem6forms_preview.png) en la barra de herramientas de acciones.
+1. Seleccione el recurso que desee previsualizar y haga clic en Previsualizar ![aem6forms_preview](assets/aem6forms_preview.png) en la barra de herramientas acciones.
 
    >[!NOTE]
    >
@@ -61,7 +61,7 @@ La siguiente tabla muestra las opciones de vista previa disponibles para los dis
 
    * Vista precia como HTML
    * Vista previa con datos
-   * Vista previa como PDF (disponible para plantillas de formulario)
+     <!--* Preview as PDF (available for form templates)-->
 
 ## Vista previa con datos {#preview-with-data}
 
