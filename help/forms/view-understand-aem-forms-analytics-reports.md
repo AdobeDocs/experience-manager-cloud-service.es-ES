@@ -4,15 +4,15 @@ description: Los Forms adaptables se integran perfectamente con Adobe Analytics 
 keywords: Ver y comprender los informes de análisis de Forms adaptable, el informe de análisis de Adobe, el informe de Forms Analytics
 topic-tags: develop
 feature: Adaptive Forms
-role: User
+role: Admin, User
 level: Intermediate
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+exl-id: 756dee1f-4685-4783-961d-b172a5bd0692
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
-source-wordcount: '988'
-ht-degree: 2%
+source-wordcount: '976'
+ht-degree: 12%
 
 ---
-
 
 # Ver y comprender los informes de análisis de Forms adaptable {#viewing-and-understanding-aem-forms-analytics-reports}
 
@@ -29,18 +29,18 @@ Al capturar y rastrear los indicadores de rendimiento clave, las empresas pueden
 
 Para el informe de AEM Forms Analytics, primero debe integrar Adobe Analytics en AEM Forms mediante la automatización de la configuración del Experience Cloud. La automatización de la configuración de Experience Cloud en Forms adaptable requiere una licencia de Adobe Analytics, recopilación de datos (anteriormente, Adobe Launch) para administrar los scripts de seguimiento e integración con la API de Experience Platform Launch para optimizar la agregación de datos y la generación de perspectivas. Visita [Habilitar Adobe Analytics para un formulario adaptable mediante la automatización de la configuración de Experience Cloud](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md) para obtener información completa sobre la configuración.
 
-## Ver informe de Adobe Analytics de Forms adaptable {#view-adobe-analytics-report}
+## Ver informe de Adobe Analytics de Formularios adaptables {#view-adobe-analytics-report}
 
-1. AEM En la instancia de la, vaya a **[!UICONTROL Forms]** >> **[!UICONTROL Forms y documento]**.
+1. En la instancia de AEM, vaya a **[!UICONTROL Formularios]** >> **[!UICONTROL Formularios y documento]**.
 1. Seleccione el formulario y verá que Adobe Analytics está integrado, como se muestra a la izquierda, en el Forms activado para Adobe Analytics.
 
    ![Ver informe](assets/activ-aa.png){width="100%"}
 
-1. Clic **Adobe Analytics** para ver el informe y analizar los datos de rendimiento.
+1. Haga clic en **Adobe Analytics** para ver el informe y analizar los datos de rendimiento.
 
 ## Explicación del informe de análisis de Forms adaptable {#understanding-aem-forms-analytics-reports}
 
-Adobe Analytics ofrece una matriz completa de métricas de rendimiento de Forms adaptables diseñadas para proporcionar información valiosa sobre el uso del formulario. Estas métricas son:
+Adobe Analytics ofrece una matriz completa de métricas de rendimiento de Formularios adaptables diseñadas para proporcionar información valiosa sobre el uso del formulario. Estas métricas son las siguientes:
 
 ### **¿Qué rendimiento tiene Forms adaptable?** {#how-your-adaptive-form-is-performing}
 
@@ -107,7 +107,7 @@ Le ayuda a analizar los campos del formulario en los que los usuarios han invert
 
 ![Visitantes de campo](assets/field-visitors.png){width="100%"}
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 * [Habilitar Adobe Analytics para un formulario adaptable mediante la automatización de la configuración de Experience Cloud](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
 * [Agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

@@ -2,10 +2,12 @@
 title: ¿Cuáles son las consideraciones, problemas conocidos y prácticas recomendadas de AEM Forms?
 description: Consideraciones, problemas conocidos y prácticas recomendadas para las API de comunicaciones de AEM Forms.
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Adaptive Forms
+role: Admin, Developer, User
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
-source-wordcount: '1749'
-ht-degree: 98%
+source-wordcount: '1733'
+ht-degree: 100%
 
 ---
 
@@ -80,7 +82,7 @@ Un diseño de formulario que se utiliza con las API de comunicaciones puede cont
 
 Para diseñar un formulario que utilice fuentes residentes en la impresora, elija un nombre de tipo de letra en Designer que coincida con las fuentes disponibles en la impresora. En los perfiles de dispositivo correspondientes (archivos XDC), se encuentra una lista de fuentes compatibles con PCL o PostScript. Alternativamente, se puede crear una asignación de fuentes para asignar fuentes no residentes en la impresora a fuentes residentes en la impresora con un nombre de tipo de letra diferente. Por ejemplo, en un escenario de PostScript, las referencias a la fuente Arial® se pueden asignar al tipo de letra Helvetica® residente en la impresora.
 
-Si una fuente está instalada en un equipo cliente, está disponible en la lista desplegable de Designer. Si la fuente no está instalada, es necesario especificar el nombre de la fuente manualmente. La opción &quot;Reemplazar permanentemente fuentes no disponibles&quot; de Designer puede estar desactivada. De lo contrario, cuando el archivo XDP se guarda en Designer, el nombre de la fuente de sustitución se escribe en el archivo XDP. Significa que no se utiliza la fuente residente en la impresora.
+Si una fuente está instalada en un equipo cliente, está disponible en la lista desplegable de Designer. Si la fuente no está instalada, es necesario especificar el nombre de la fuente manualmente. La opción “Reemplazar permanentemente fuentes no disponibles” de Designer puede estar desactivada. De lo contrario, cuando el archivo XDP se guarda en Designer, el nombre de la fuente de sustitución se escribe en el archivo XDP. Significa que no se utiliza la fuente residente en la impresora.
 
 Existen dos tipos de fuentes OpenType®. Un tipo es una fuente TrueType OpenType® compatible con PCL. El otro es CFF OpenType®. La salida de PDF y PostScript es compatible con fuentes Type-1, TrueType y OpenType® incrustadas. La salida PCL es compatible con fuentes TrueType incrustadas.
 
@@ -171,7 +173,7 @@ La siguiente tabla especifica las opciones de XCI.
 
 ## Prácticas recomendadas
 
-* El Adobe recomienda alojar los archivos de datos en el almacén de contenedores del blob en la región de la nube utilizada por AEM Cloud Service.
+* Adobe recomienda hospedar los archivos de datos en el almacén de contenedores del blob en la región de la nube utilizada por AEM Cloud Service.
 
 ## Preguntas frecuentes {#faq}
 

@@ -2,9 +2,10 @@
 title: Cómo descargar e instalar Forms Designer para crear plantillas de documento de registro
 description: Puede utilizar Forms Designer para crear plantillas de formularios XDP y PDF que sirvan de plantilla para un documento de registro.
 keywords: Instalar Designer, Instalar Forms Designer, Requisitos para instalar Forms Designer
-feature: Forms Designer
+feature: Adaptive Forms, Forms Designer
+role: Admin, Developer, User
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: b2769134c2e744f41cbb7e8a3cf08c622cdc07ca
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 100%

@@ -1,8 +1,10 @@
 ---
 title: Configuración de los modelos de datos de formulario predeterminados de Microsoft Dynamics 365 y Salesforce para formularios adaptables
 description: Aprenda a integrar Microsoft Dynamics 365 y Salesforce con formularios adaptables.
+feature: Adaptive Forms, Form Data Model
+role: User, Developer
 exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 90%

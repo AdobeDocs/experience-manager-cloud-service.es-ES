@@ -2,11 +2,12 @@
 title: Incrustar un formulario adaptable en una página web externa
 description: Aprenda a incrustar un Formulario adaptable en un sitio web.
 topic-tags: author
+role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 00b8cd79-bf2d-4001-b2d6-1b020c868008
-source-git-commit: 8f2f3aa894bd43d0f5439d6e7c0dfddbb28f4307
-workflow-type: ht
-source-wordcount: '1015'
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+workflow-type: tm+mt
+source-wordcount: '1003'
 ht-degree: 100%
 
 ---

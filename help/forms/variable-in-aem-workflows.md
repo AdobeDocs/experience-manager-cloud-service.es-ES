@@ -2,7 +2,9 @@
 title: AEM ¿Cómo se pueden agregar variables a los pasos del flujo de trabajo de la?
 description: Aprenda cómo crear una variable, establecer un valor para ella y usarlo en [!DNL AEM Forms] los pasos del flujo de trabajo.
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Adaptive Forms, Workflow
+role: Admin, User
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '1928'
 ht-degree: 88%

@@ -2,7 +2,9 @@
 title: ¿Cómo utilizar Forms as a Cloud Service para combinar datos con plantillas XDP y de PDF o generar resultados en los formatos PCL, ZPL y PostScript?
 description: Combine datos automáticamente con plantillas XDP y PDF o genere salidas en formato PCL, ZPL y PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Adaptive Forms, APIs
+role: Admin, Developer, User
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 100%

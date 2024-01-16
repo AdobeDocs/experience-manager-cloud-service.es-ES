@@ -3,13 +3,15 @@ title: Integración de Adobe Workfront Fusion con AEM Forms Submission
 description: Adobe Workfront Fusion le permite centrarse en nuevas tareas en lugar de centrarse en tareas repetitivas. Puede conectar Adobe Workfront Fusion a un formulario adaptable mediante el envío de formularios.
 keywords: Enviar un formulario adaptable a Adobe Workfront Fusion, Integración de Adobe Workfront Fusion con AEM Forms Submission, Adobe Workfront Fusion con AEM Forms, Workfront Fusion con AEM Forms, Conexión de Workfront Fusion a AEM Forms, AEM Forms y Workfront Fusion, Conexión de Workfront Fusion con AEM Forms?, Conexión de Workfront Fusion a un formulario
 topic-tags: author, developer
-source-git-commit: 68314ca09594d3c4c5639363326117b89b733a4d
+feature: Adaptive Forms
+role: Admin, User
+exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 4%
 
 ---
-
 
 # Envío de un formulario adaptable a Adobe Workfront Fusion
 
@@ -189,5 +191,3 @@ Para configurar la acción de envío de un formulario adaptable existente para W
 - Un escenario puede tener varios vínculos de gancho web, pero a la vez solo hay un vínculo activo. Se recomienda eliminar el webhook no vinculado, de modo que no aparezca en la lista desplegable de acciones de envío de AEM Forms.
 
 <!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->
-
-
