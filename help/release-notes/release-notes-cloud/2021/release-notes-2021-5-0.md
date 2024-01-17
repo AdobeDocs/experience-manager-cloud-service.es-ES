@@ -1,10 +1,10 @@
 ---
-title: Notas de la versión 2021.5.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notas de la versión 2021.5.0 de la versión de [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Notas de la versión 2021.5.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notas de la versión 2021.5.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 720430af374636878b42ce346ca9c61ab089709b
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1355'
 ht-degree: 45%
 
 ---
@@ -31,7 +31,7 @@ La de la siguiente versión (2021.6.0) será el 28 de junio de 2021.
 
 * [Canal de prelanzamiento](/help/release-notes/prerelease.md): Previsualice las próximas funciones durante un mes completo antes de que se activen en la producción.
 
-* [Desaprobación de API](/help/release-notes/deprecated-apis.md)AEM : hay disponible una lista de las API obsoletas más recientes para el as a Cloud Service de la.
+* [Desaprobación de API](/help/release-notes/deprecated-removed-features.md)AEM : hay disponible una lista de las API obsoletas más recientes para el as a Cloud Service de la.
 
 * [AEM Complemento Maven de SDK Build Analyzer as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=es): Actualice sus proyectos de Maven a la versión más reciente, que incluye una comprobación de API de Java en desuso y otras mejoras.
 
@@ -101,14 +101,14 @@ Esta sección describe las notas de la versión para Cloud Manager en AEM as a C
 
 ### Fecha de lanzamiento {#release-date-cm-may}
 
-La fecha de lanzamiento de Cloud Manager en AEM as a Cloud Service 2021.5.0 es el 6 de mayo de 2021.
-La próxima versión está planificada para el 03 de junio de 2021.
+AEM La fecha de lanzamiento de Cloud Manager en la as a Cloud Service 2021.5.0 de es el 6 de mayo de 2021.
+La próxima versión está planificada para el viernes, 03 de junio de 2021.
 
 ### Novedades {#what-is-new-may}
 
-* La regla de calidad PackageOverlaps ahora detecta casos en los que el mismo paquete se implementó varias veces, es decir, en varias ubicaciones incrustadas, en el mismo conjunto de paquetes implementado.
+* La regla de calidad PackageOverlaps ahora detecta casos en los que el mismo paquete se implementó varias veces, es decir, en varias ubicaciones integradas, en el mismo conjunto de paquetes implementado.
 
-* El extremo del repositorio en la API Public ahora incluye la URL de Git.
+* El punto final del repositorio en la API pública ahora incluye la URL de Git.
 
 * Los registros de implementación descargados por un usuario de Cloud Manager son más profundos e incluyen detalles sobre errores y escenarios de éxito.
 
@@ -116,7 +116,7 @@ La próxima versión está planificada para el 03 de junio de 2021.
 
 * Ahora, el complemento Commerce se puede aplicar a los programas de zonas protegidas durante el flujo de trabajo Editar programa.
 
-* La experiencia Editar programa se ha actualizado.
+* Se ha actualizado la experiencia Editar programa.
 
 * La tabla Nombres de dominio de la página Detalles del entorno mostrará hasta 250 nombres de dominio a través de las páginas.
 
