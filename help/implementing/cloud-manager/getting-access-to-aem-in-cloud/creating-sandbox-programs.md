@@ -2,10 +2,10 @@
 title: Creación de programas de zona protegida
 description: Aprenda a utilizar Cloud Manager para crear su propio programa de zona protegida para formación, demostración, POC u otros fines que no sean de producción.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 90%
+source-wordcount: '443'
+ht-degree: 86%
 
 ---
 
@@ -19,7 +19,7 @@ Obtenga más información sobre los tipos de programas en el documento [Explicac
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. En la página de aterrizaje de Cloud Manager, cerca de la esquina superior derecha de la pantalla, haga clic en **Agregar programa**.
+1. En el **[Mis programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** pantalla, toque o haga clic en **Agregar programa** cerca de la esquina superior derecha de la pantalla.
 
    ![Página de aterrizaje de Cloud Manager](assets/cloud-manager-my-programs.png)
 
@@ -27,7 +27,7 @@ Obtenga más información sobre los tipos de programas en el documento [Explicac
 
    ![Creación de tipo de programa](assets/create-sandbox.png)
 
-1. Si lo desea, puede agregar una imagen al programa arrastrando y soltando un archivo de imagen en el destino **Agregar una imagen de programa** o haciendo clic en él para seleccionar una imagen de un explorador de archivos. Seleccionar **Continuar**.
+1. Si lo desea, puede agregar una imagen al programa arrastrando y soltando un archivo de imagen en el destino **Agregar una imagen de programa** o haciendo clic en él para seleccionar una imagen de un explorador de archivos. Seleccione **Continuar**.
 
    * La imagen solo sirve como mosaico en la ventana de información general del programa y ayuda a identificar el programa.
 

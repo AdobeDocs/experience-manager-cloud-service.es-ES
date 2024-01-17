@@ -2,10 +2,10 @@
 title: Tablero de licencias
 description: Cloud Manager proporciona un tablero para facilitar la visualización de las autorizaciones de productos de AEMaaCS disponibles para su organización o inquilino.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: fbfb5d3ee8dbc8bc4cbe118fd4ce97284f712bb4
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 66%
+source-wordcount: '661'
+ht-degree: 58%
 
 ---
 
@@ -30,7 +30,7 @@ Para acceder al tablero de licencias, siga estos pasos.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. En la página de información general de productos, cambie a la pestaña **Licencia**.
+1. En el **[Mis programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** pantalla, cambie a la **Licencia** pestaña.
 
 ![Tablero de licencias](assets/license-dashboard.png)
 
@@ -55,7 +55,7 @@ Cada sección resume lo que está disponible y cómo se utiliza, si es que lo es
 
 ### ¿Qué es una solicitud de contenido? {#what-is-a-content-request}
 
-Una solicitud de contenido es una solicitud que llega a AEM Sites o a cualquier sistema de almacenamiento en caché proporcionado por el cliente, como una red de distribución de contenido, para entregar contenido o datos en formato HTML, como una vista de página, o en formato JSON, como una llamada de la API.
+Una solicitud de contenido es una solicitud que llega a AEM Sites o a cualquier sistema de almacenamiento en caché proporcionado por el cliente, como una red de entrega de contenido, para entregar contenido o datos en formato de HTML, como una vista de página, o en formato JSON, como una llamada de la API.
 
 Se cuenta una solicitud de contenido por cada vista de página o por cada cinco llamadas a la API, se miden a la entrada del primer sistema de almacenamiento en la memoria caché que recibe una solicitud de contenido. Las solicitudes de contenido se cuentan únicamente en los entornos de producción.
 

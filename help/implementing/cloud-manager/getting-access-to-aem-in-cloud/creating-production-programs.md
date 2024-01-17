@@ -2,10 +2,10 @@
 title: Creación de programas de producción
 description: Aprenda a utilizar Cloud Manager para crear su propio programa de producción y alojar tráfico en directo.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 79d3ec7f5ede84fd989b7d5440739ec9560a547f
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 73%
+source-wordcount: '599'
+ht-degree: 64%
 
 ---
 
@@ -22,7 +22,7 @@ Siga estos pasos para crear un programa de producción.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. Clic **Agregar programa** desde la esquina superior derecha de la pantalla.
+1. En el **[Mis programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** pantalla, toque o haga clic en **Agregar programa** en la esquina superior derecha de la pantalla.
 
    ![Página de aterrizaje de Cloud Manager](assets/log-in.png)
 
@@ -30,15 +30,13 @@ Siga estos pasos para crear un programa de producción.
 
    ![Creación del asistente del programa](assets/create-production-program.png)
 
-1. Para añadir, si lo desea, una imagen al programa, arrastre y suelte un archivo de imagen en el destino **Añadir una imagen del programa** o haga clic en él para seleccionar una imagen de un explorador de archivos. Seleccionar **Continuar**.
+1. Para añadir, si lo desea, una imagen al programa, arrastre y suelte un archivo de imagen en el destino **Añadir una imagen del programa** o haga clic en él para seleccionar una imagen de un explorador de archivos. Seleccione **Continuar**.
 
 1. Si tiene los derechos necesarios, la variable **Seguridad** se mostrará la pestaña y proporcionará la opción de activación **HIPAA** y/o **Protección WAF-DDOS** para su programa de producción. Si es necesario para el programa que está creando, marque las opciones aplicables y luego seleccione **Continuar**.
 
    * HIPAA no se puede habilitar o deshabilitar después de la creación del programa.
       * [Más información](https://www.adobe.com/go/hipaa-ready_es) acerca de la implementación de la solución compatible con HIPAA de Adobe.
    * Una vez activada, la protección WAF-DDOS se puede configurar mediante la configuración de una [canalización que no sea de producción.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-
-   {{waf-limited-release}}
 
    ![Opciones de seguridad](assets/create-production-program-security.png)
 
@@ -60,7 +58,7 @@ Siga estos pasos para crear un programa de producción.
    ![Definir la fecha de lanzamiento planeada](assets/setup-go-live.png)
 
    * Esta fecha se puede editar en cualquier momento.
-   * Esta fecha es solo para uso informativo y activa el widget Go Live en la página de descripción general del programa para proporcionar vínculos internos del producto a la documentación de prácticas recomendadas de AEM as a Cloud Service de forma oportuna para que se ajuste a su recorrido y que culmine en una experiencia Go Live correcta y sin problemas.
+   * Esta fecha es solo para uso informativo y déclencheur el widget Go Live en la [**Resumen del programa** página](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) AEM proporcionar vínculos internos del producto a la documentación de prácticas recomendadas as a Cloud Service de forma oportuna para que se ajuste a su recorrido y que culmine en una experiencia de Go Live correcta y sin problemas.
 
 1. Haga clic en **Crear**.
 

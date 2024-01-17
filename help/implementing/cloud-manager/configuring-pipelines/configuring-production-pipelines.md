@@ -3,10 +3,10 @@ title: Configurar canalizaciones de producción
 description: Aprenda a configurar canalizaciones de producción para crear e implementar su código en entornos de producción.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '1412'
-ht-degree: 77%
+source-wordcount: '1418'
+ht-degree: 72%
 
 ---
 
@@ -35,7 +35,9 @@ Una vez que haya configurado el programa y tenga al menos un entorno usando la i
 >
 >Antes de configurar una canalización front-end, consulte [Recorrido de creación rápida de sitios de AEM](/help/journey-sites/quick-site/overview.md) para obtener una guía completa a través de la herramienta de creación rápida de sitios de AEM fácil de usar. Este recorrido le ayudará a optimizar el desarrollo front-end de su sitio de AEM, lo que le permitirá personalizar rápidamente su sitio sin conocimiento del back-end de AEM.
 
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada
+
+1. En el **[Mis programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** , seleccione el programa.
 
 1. Vaya a **Canalizaciones** de la tarjeta de **Resumen del programa** y haga clic en **Añadir** para seleccionar **Agregar canalización de producción**.
 
@@ -67,7 +69,7 @@ Los pasos para completar la creación de la canalización de producción varían
 
 ### Código de pila completa {#full-stack-code}
 
-Una canalización de código de pila completa implementa simultáneamente compilaciones de código de back-end y front-end que contienen una o más aplicaciones de servidor AEM junto con la configuración HTTPD/Dispatcher.
+AEM Una canalización de código de pila completa implementa simultáneamente compilaciones de código de back-end y front-end que contienen una o más aplicaciones de servidor de junto con la configuración HTTPD/Dispatcher.
 
 >[!NOTE]
 >
@@ -156,7 +158,7 @@ Los pasos para completar la creación de la canalización de implementación de 
       * Introduzca los primeros caracteres del nombre de la rama y la función de autocompletar de este campo. Encuentra las ramas coincidentes que puede seleccionar.
    * **Ubicación del código**: esta opción define la ruta en la rama de la repo seleccionada desde la que la canalización debe recuperar el código.
    * **Pausar antes de implementar en producción**: esta opción pone en pausa la canalización antes de implementarla en producción.
-   * **Programada**: esta opción permite al usuario activar la implementación de producción programada. Solo disponible para implementaciones de destino de nivel web.
+   * **Programado** : esta opción permite al usuario habilitar la implementación de producción programada. Solo disponible para implementaciones de destino de nivel web.
 
    ![Configurar canalización](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
 
