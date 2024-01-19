@@ -1,9 +1,10 @@
 ---
 title: Llamadas al editor universal
 description: Obtenga información sobre los distintos tipos de llamadas que el Editor universal realiza a su aplicación para ayudarle en la depuración.
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
+source-git-commit: 7ef3efa6e074778b7b3e3a8159056200b2663b30
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '576'
 ht-degree: 1%
 
 ---
@@ -34,23 +35,26 @@ Un `update` Esta llamada se produce cuando edita contenido en la aplicación med
 
 Su carga útil incluye detalles de lo que se debe escribir en el JCR.
 
-* `itemid`: La ruta JCR que se va a actualizar
-* `itemprop`: la propiedad JCR que se está actualizando
-* `itemtype`: el tipo de valor JCR de la propiedad que se actualiza
+* `resource`: La ruta JCR que se va a actualizar
+* `prop`: la propiedad JCR que se está actualizando
+* `type`: el tipo de valor JCR de la propiedad que se actualiza
 * `value`: los datos actualizados
 
 ### Carga útil de muestra {#update-payload}
 
 ```json
 {
-  "op": "patch",
-  "connections": {
-    "aem": "aem:https://author-pXXXX-eYYYYY.adobeaemcloud.com"
-  },
-  "path": {
-    "itemid": "urn:aem:/content/wknd/language-masters/en/jcr:content/root/container/carousel/item_1571954853062",
-    "itemtype": "text",
-    "itemprop": "jcr:title"
+  "connections": [
+    {
+      "name": "aem",
+      "protocol": "aem",
+      "uri": "https://localhost:8443"
+    }
+  ],
+  "target": {
+    "resource": "urn:aem:/content/wknd/language-masters/en/jcr:content/root/container/carousel/item_1571954853062",
+    "type": "text",
+    "prop": "jcr:title"
   },
   "value": "Tiny Toon Adventures"
 }
@@ -62,9 +66,9 @@ Su carga útil incluye detalles de lo que se debe escribir en el JCR.
 {
   "updates": [
     {
-      "itemid": "urn:aem:/content/wknd/language-masters/en/jcr:content/root/container/carousel/item_1571954853062",
-      "itemprop": "jcr:title",
-      "itemtype": "text"
+      "resource": "urn:aem:/content/wknd/language-masters/en/jcr:content/root/container/carousel/item_1571954853062",
+      "prop": "jcr:title",
+      "type": "text"
     }
   ]
 }
@@ -83,14 +87,17 @@ Su carga útil incluye los datos que se van a procesar, así como detalles de lo
 
 ```json
 {
-  "op": "patch",
-  "connections": {
-    "aem": "aem:https://author-pXXXX-eYYYYY.adobeaemcloud.com"
-  },
-  "path": {
-    "itemid": "urn:aem:/content/wknd/language-masters/en/jcr:content/root/container/carousel/item_1571954853062",
-    "itemtype": "component",
-    "itemprop": ""
+  "connections": [
+    {
+      "name": "aem",
+      "protocol": "aem",
+      "uri": "https://localhost:8443"
+    }
+  ],
+  "target": {
+    "resource": "urn:aem:/content/wknd/language-masters/en/jcr:content/root/container/carousel/item_1571954853062",
+    "type": "component",
+    "prop": ""
   }
 }
 ```
@@ -101,14 +108,14 @@ Su carga útil incluye los datos que se van a procesar, así como detalles de lo
 {
   "data": {
     "jcr:primaryType": "nt:unstructured",
-    "jcr:title": "Tiny Toon Adventures!",
+    "jcr:title": "Tiny Toon Adventures",
     "fileReference": "/content/dam/wknd-shared/en/adventures/riverside-camping-australia/adobestock-216674449.jpeg",
     "cq:panelTitle": "WKND Adventures",
     "actionsEnabled": "true",
     "jcr:lastModifiedBy": "admin",
     "titleFromPage": "false",
-    "jcr:description": "<p>With WKND Adventures, you don't just see the world you experinece it.</p>",
-    "jcr:lastModified": "Wed Jan 03 2024 09:06:05 GMT+0100",
+    "jcr:description": "<p>With WKND Adventures, you don't just see the world you experinece it.</p>\r\n",
+    "jcr:lastModified": "Fri Jan 19 2024 11:05:59 GMT+0100",
     "descriptionFromPage": "true",
     "sling:resourceType": "wknd/components/teaser",
     "textIsRich": "true",
@@ -139,15 +146,18 @@ También incluye una `content` con objetos adicionales para detalles específico
 
 ```json
 {
-  "op": "patch",
-  "connections": {
-    "aemconnection": "aem:https://author-pXXXX-eYYYYY.adobeaemcloud.com"
-  },
-  "path": {
+  "connections": [
+    {
+      "name": "aemconnection",
+      "protocol": "aem",
+      "uri": "https://author-pXXXX-eYYYYY.adobeaemcloud.com"
+    }
+  ],
+  "target": {
     "container": {
-      "itemid": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container",
-      "itemtype": "container",
-      "itemprop": ""
+      "resource": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container",
+      "type": "container",
+      "prop": ""
     }
   },
   "content": {
@@ -170,10 +180,11 @@ También incluye una `content` con objetos adicionales para detalles específico
 {
   "updates": [
     {
-      "itemid": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container",
-      "itemtype": "container"
+      "resource": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container",
+      "type": "container"
     }
-  ]
+  ],
+  "resource": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/text_1138559521"
 }
 ```
 
@@ -187,32 +198,30 @@ Su carga útil incluye un `from` que define dónde estaba el componente y un `to
 
 ```json
 {
-  "op": "patch",
-  "connections": {
-    "aemconnection": "aem:https://author-pXXXX-eYYYYY.adobeaemcloud.com"
-  },
+  "connections": [
+    {
+      "name": "aemconnection",
+      "protocol": "aem",
+      "uri": "https://author-pXXXX-eYYYYY.adobeaemcloud.com"
+    }
+  ],
   "from": {
     "container": {
-      "itemid": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container",
-      "itemtype": "container",
-      "itemprop": ""
+      "resource": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container",
+      "type": "container",
+      "prop": ""
     },
     "component": {
-      "itemid": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/text_1068508321",
-      "itemtype": "text",
-      "itemprop": "text"
+      "resource": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/image_275525847",
+      "type": "media",
+      "prop": "fileReference"
     }
   },
   "to": {
     "container": {
-      "itemid": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container",
-      "itemtype": "container",
-      "itemprop": ""
-    },
-    "before": {
-      "itemid": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/text_2063168902",
-      "itemtype": "text",
-      "itemprop": "text"
+      "resource": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container",
+      "type": "container",
+      "prop": ""
     }
   }
 }
@@ -224,8 +233,8 @@ Su carga útil incluye un `from` que define dónde estaba el componente y un `to
 {
   "updates": [
     {
-      "itemid": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container",
-      "itemtype": "container"
+      "resource": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container",
+      "type": "container"
     }
   ]
 }
@@ -241,20 +250,23 @@ Su carga útil incluye la ruta del objeto que se elimina.
 
 ```json
 {
-  "op": "patch",
-  "connections": {
-    "aemconnection": "aem:https://author-pXXXX-eYYYYY.adobeaemcloud.com"
-  },
-  "path": {
+  "connections": [
+    {
+      "name": "aemconnection",
+      "protocol": "aem",
+      "uri": "https://author-pXXXX-eYYYYY.adobeaemcloud.com"
+    }
+  ],
+  "target": {
     "component": {
-      "itemid": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/text_1068508321",
-      "itemtype": "text",
-      "itemprop": "text"
+      "resource": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/text_593170193",
+      "type": "text",
+      "prop": "text"
     },
     "container": {
-      "itemid": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container",
-      "itemtype": "container",
-      "itemprop": ""
+      "resource": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container",
+      "type": "container",
+      "prop": ""
     }
   }
 }
@@ -266,50 +278,9 @@ Su carga útil incluye la ruta del objeto que se elimina.
 {
   "updates": [
     {
-      "itemid": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container",
-      "itemprop": "",
-      "itemtype": "container"
-    }
-  ]
-}
-```
-
-## Parche {#patch}
-
-A `patch` esta llamada se produce al actualizar contenido en un cuadro de diálogo dentro de la aplicación. Esto actualiza el contenido dentro de la página de la aplicación como un parche JSON al contenido existente.
-
-Su carga útil incluye la ruta del contenido de la página, así como el parche JSON del cambio que se va a realizar.
-
-### Carga útil de muestra {#patch-payload}
-
-```json
-{
-  "op": "patch",
-  "connections": {
-    "aemconnection": "aem:https://author-pXXXX-eYYYYY.adobeaemcloud.com"
-  },
-  "path": {
-    "itemid": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/text_1540979193",
-    "itemtype": "text",
-    "itemprop": "text"
-  },
-  "patch": [
-    {
-      "op": "replace",
-      "path": "/text",
-      "value": "Still More WKND Adventures"
-    }
-  ]
-}
-```
-
-### Respuesta de ejemplo {#patch-response}
-
-```json
-{
-  "updates": [
-    {
-      "itemid": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/text_1540979193"
+      "resource": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container",
+      "prop": "",
+      "type": "container"
     }
   ]
 }
@@ -325,13 +296,15 @@ El editor universal repite el contenido y genera una lista de referencias que ta
 
 ```json
 {
-  "op": "patch",
-  "connections": {
-    "aemconnection": "aem:https://author-pXXXX-eYYYYY.adobeaemcloud.com"
-  },
+  "connections": [
+    {
+      "name": "aemconnection",
+      "protocol": "aem",
+      "uri": "https://author-pXXXX-eYYYYY.adobeaemcloud.com"
+    }
+  ],
   "references": [
     "urn:aemconnection:/content/dam/wknd-shared/en/magazine/arctic-surfing/aloha-spirits-in-northern-norway/jcr:content/data/master",
-    "urn:aemconnection:/content/wknd/us/en/adventures/jcr:content/root/container/container/title",
     "urn:aemconnection:/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp/jcr:content/data/master",
     "urn:aemconnection:/content/dam/wknd-shared/en/adventures/climbing-new-zealand/climbing-new-zealand/jcr:content/data/master",
     "urn:aemconnection:/content/dam/wknd-shared/en/adventures/cycling-southern-utah/cycling-southern-utah/jcr:content/data/master",
@@ -348,15 +321,13 @@ El editor universal repite el contenido y genera una lista de referencias que ta
     "urn:aemconnection:/content/wknd/us/en/newsletter/jcr:content/root/container/text",
     "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/title",
     "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container",
-    "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/text",
     "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/image",
+    "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/text",
+    "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/image_229050934",
     "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/image_2123678383",
     "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/text_1668104604",
-    "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/image_229050934",
-    "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/image_275525847",
-    "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/text_358189229",
-    "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/text_2063168902",
-    "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/text_1540979193"
+    "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/text_1138559521",
+    "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/image_275525847"
   ]
 }
 ```
@@ -367,7 +338,6 @@ El editor universal repite el contenido y genera una lista de referencias que ta
 {
   "publishes": [
     "/content/dam/wknd-shared/en/magazine/arctic-surfing/aloha-spirits-in-northern-norway",
-    "/content/wknd/us/en/adventures",
     "/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp",
     "/content/dam/wknd-shared/en/adventures/climbing-new-zealand/climbing-new-zealand",
     "/content/dam/wknd-shared/en/adventures/cycling-southern-utah/cycling-southern-utah",

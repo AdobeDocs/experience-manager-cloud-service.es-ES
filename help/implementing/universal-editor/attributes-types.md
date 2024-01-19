@@ -2,7 +2,7 @@
 title: Atributos y tipos de elementos
 description: Obtenga información sobre los atributos de datos y los tipos de elementos que requiere el Editor universal.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 7550491de94f1e2cbb28b07f8abbdaded5aa04ea
+source-git-commit: febaec244b4400b8d7fc5a5d8a4f75b4f4505d6f
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 76%
@@ -28,13 +28,13 @@ Para que el editor universal pueda editar una aplicación, debe instrumentarse c
 
 | Propiedad de los datos | Descripción |
 |---|---|
-| `itemid` | Para el URN del recurso, consulte la sección [Instrumentación de la página del documento Introducción al editor universal en AEM](getting-started.md#instrument-thepage) |
-| `itemprop` | Para el atributo del recurso, consulte la sección [Instrumentación de la página del documento Introducción al editor universal en AEM](getting-started.md#instrument-thepage) |
-| `itemtype` | Tipo del elemento editable (por ejemplo, texto, imagen, referencia, etc.) |
-| `data-editor-itemfilter` | Define qué referencias se pueden utilizar |
-| `data-editor-itemlabel` | Define una etiqueta personalizada para un elemento seleccionable que se muestra en el editor. <br>Si `itemmodel` está configurado, la etiqueta se recupera mediante el modelo |
-| `data-editor-itemmodel` | Define un modelo que se usa para la edición basada en formularios en el carril de propiedades |
-| `data-editor-behavior` | Define el comportamiento de una instrumentación; por ejemplo, el texto o la imagen independientes también pueden imitar un componente para hacerlo móvil o eliminable |
+| `data-aue-resource` | Para el URN del recurso, consulte la sección [Instrumentación de la página del documento Introducción al editor universal en AEM](getting-started.md#instrument-thepage) |
+| `data-aue-prop` | Para el atributo del recurso, consulte la sección [Instrumentación de la página del documento Introducción al editor universal en AEM](getting-started.md#instrument-thepage) |
+| `data-aue-type` | Tipo del elemento editable (por ejemplo, texto, imagen, referencia, etc.) |
+| `data-aue-filter` | Define qué referencias se pueden utilizar |
+| `data-aue-label` | Define una etiqueta personalizada para un elemento seleccionable que se muestra en el editor. <br>Si `itemmodel` está configurado, la etiqueta se recupera mediante el modelo |
+| `data-aue-model` | Define un modelo que se usa para la edición basada en formularios en el carril de propiedades |
+| `data-aue-behavior` | Define el comportamiento de una instrumentación; por ejemplo, el texto o la imagen independientes también pueden imitar un componente para hacerlo móvil o eliminable |
 
 ## Tipos de elementos {#item-types}
 
@@ -47,14 +47,14 @@ Para que el editor universal pueda editar una aplicación, debe instrumentarse c
 | `component` | El componente editable es un componente. No añade ninguna funcionalidad adicional. Es necesario para indicar partes móviles o eliminables del DOM y para abrir el carril de propiedades y sus campos | Requerido | N/D | N/D | Opcional | Opcional | N/D |
 | `reference` | El editable es una referencia, por ejemplo, un fragmento de contenido, un fragmento de experiencia o un producto | Depende <br>consultar más abajo | Depende <br>consultar más abajo | Opcional<br>lista de criterios de filtro de fragmento de contenido, producto o fragmento de experiencia que se pasan al selector de referencia | Opcional | Opcional | N/D |
 
-Dependiendo del caso de uso, `itemprop` o `itemid` pueden no ser obligatorios. Por ejemplo:
+Dependiendo del caso de uso, `data-aue-prop` o `data-aue-resource` pueden no ser obligatorios. Por ejemplo:
 
-* `itemid` es necesario si consulta los fragmentos de contenido a través de GraphQL y desea que la lista sea editable en contexto.
-* `itemprop` es necesario en caso de que tenga un componente que procese el contenido del fragmento de contenido al que se hace referencia y desee actualizar la referencia.
+* `data-aue-resource` es necesario si consulta los fragmentos de contenido a través de GraphQL y desea que la lista sea editable en contexto.
+* `data-aue-prop` es necesario en caso de que tenga un componente que procese el contenido del fragmento de contenido al que se hace referencia y desee actualizar la referencia.
 
 ## Comportamientos {#behaviors}
 
-| `data-editor-behavior` | Descripción |
+| `data-aue-behavior` | Descripción |
 |---|---|
 | `component` | Se utiliza para permitir componentes de imitación de texto, texto enriquecido y medios independientes, de modo que también se pueda mover y eliminar en la página |
 | `container` | Se utiliza para permitir que los contenedores se traten como sus propios componentes, de modo que se puedan mover y eliminar en la página |

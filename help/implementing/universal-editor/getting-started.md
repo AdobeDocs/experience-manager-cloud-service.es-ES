@@ -2,10 +2,10 @@
 title: Introducción al editor universal en AEM
 description: Obtenga información sobre cómo acceder al editor universal y cómo instrumentar la primera aplicación de AEM para utilizarlo.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: febaec244b4400b8d7fc5a5d8a4f75b4f4505d6f
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 76%
+source-wordcount: '903'
+ht-degree: 71%
 
 ---
 
@@ -35,7 +35,7 @@ Este documento le guiará a través de estos pasos.
 
 ## Solicite acceso al editor universal {#request-access}
 
-Primero debe solicitar acceso al editor universal. Vaya a [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor), inicie sesión y valide si tiene acceso al Editor universal.
+Primero debe solicitar acceso al editor universal. Abrir [`https://experience.adobe.com/#/aem/editor&quot;](https://experience.adobe.com/#/aem/editor), inicie sesión y valide si tiene acceso al editor universal.
 
 En caso de que no tenga acceso, puede solicitarlo a través de un formulario vinculado en la misma página.
 
@@ -59,7 +59,7 @@ import "@adobe/universal-editor-cors";
 
 ### Alternativa para aplicaciones que no sean React {#alternative}
 
-Si no va a implementar una aplicación React o requiere procesamiento del lado del servidor, un método alternativo es incluir lo siguiente en el cuerpo del documento.
+Si no va a implementar una aplicación React o requiere un procesamiento del lado del servidor, otro método consiste en incluir lo siguiente en el cuerpo del documento.
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
@@ -124,10 +124,10 @@ Las conexiones que se utilizan en la aplicación se almacenan como etiquetas `<m
 
 El identificador `urn:adobe:aue:system` representa la conexión para el Editor universal de Adobe.
 
-`itemid` utilizará el prefijo `urn` para abreviar el identificador.
+`data-aue-resource` utilizará el prefijo `urn` para abreviar el identificador.
 
 ```html
-itemid="urn:<referenceName>:<resource>"
+data-aue-resource="urn:<referenceName>:<resource>"
 ```
 
 * `<referenceName>`: esta es la referencia mencionada en la etiqueta `<meta>`. P. ej., `aemconnection`
