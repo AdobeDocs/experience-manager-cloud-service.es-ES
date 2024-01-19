@@ -3,10 +3,10 @@ title: Notas de la versión 2024.1.0 para Cloud Manager en Adobe Experience Mana
 description: Estas son las notas de la versión para Cloud Manager 2024.1.0 en AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a00eb97859f679ade3a4a6d89a427735451ebd70
+source-git-commit: 06f534e6541bd04e005f3acf1edbb3e372c1cd0d
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 24%
+source-wordcount: '673'
+ht-degree: 20%
 
 ---
 
@@ -21,7 +21,12 @@ Esta página documenta las notas de la versión 2024.1.0 para Cloud Manager en A
 
 ## Fecha de lanzamiento {#release-date}
 
-AEM La fecha de lanzamiento de la versión 2024.1.0 de Cloud Manager en la versión as a Cloud Service de es el 18 de enero de 2024.
+AEM La fecha de lanzamiento de la versión 2024.1.0 de Cloud Manager en la versión as a Cloud Service de es el 18 de enero de 2024. La próxima versión está planificada para el 16 de febrero de 2024.
+
+## Novedades {#what-is-new}
+
+* Cloud Manager ahora valida las fechas de caducidad no solo para el principal [certificado,](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) pero también para certificados intermedios.
+* CDN [registros](/help/implementing/cloud-manager/manage-logs.md) ahora se devuelven en un formato comprimido.
 
 ## Programa para primeros usuarios {#early-adoption}
 
@@ -61,3 +66,8 @@ Si está interesado en probar esta nueva función y compartir sus comentarios, e
 El tablero utiliza Google Lighthouse, una herramienta automatizada de código abierto para mejorar la calidad de sus aplicaciones web. Puede ejecutarlo en cualquier página web, pública o que requiera autenticación. Tiene auditorías de rendimiento, accesibilidad, aplicaciones web progresivas, SEO y más.
 
 ¿Interesado en probar a conducir el nuevo tablero? Para empezar, envíe un correo electrónico a `aem-lighthouse-pilot@adobe.com` de su correo electrónico asociado a su Adobe ID.
+
+## Correcciones de errores {#bug-fixes}
+
+* Se corrigió un error en el que las canalizaciones de configuración fallaban en el paso de compilación con un mensaje de error no claro si la ubicación de los archivos de configuración no se establecía correctamente. El mensaje de error ahora está claro e indica que el usuario debe comprobar que la ubicación de los archivos de configuración es correcta.
+* Cuando un paso de generación termina con el estado `FAILED` debido a un `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`Sin embargo, ahora se describe correctamente como un error debido a conflictos de combinación con la rama de destino.
