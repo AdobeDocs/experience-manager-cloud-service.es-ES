@@ -2,7 +2,7 @@
 title: Replicación
 description: AEM Obtenga información acerca de la distribución y la solución de problemas de replicación en as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 3249f17e6ecb341880597577e1f2a48653a7a88a
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 39%
@@ -89,7 +89,7 @@ También puede crear un modelo de flujo de trabajo que utilice la variable `Publ
 
 * `includeChildren` (valor booleano, predeterminado: `false`). El valor `false` significa que solo se publica la ruta; `true` significa que los elementos secundarios también se publican.
 * `replicateAsParticipant` (valor booleano, predeterminado: `false`). Si está configurado como `true`, la replicación está usando la `userid` del principal que realizó el paso del participante.
-* `enableVersion` (valor booleano, predeterminado: `true`). Este parámetro determina si se crea una nueva versión tras la replicación.
+* `enableVersion` (valor booleano, predeterminado: `false`). Este parámetro determina si se crea una nueva versión tras la replicación.
 * `agentId` (valor de cadena, de forma predeterminada significa que solo se utilizan agentes para la publicación). Se recomienda ser explícito sobre agentId; por ejemplo, si se establece el valor: publicar. Configuración del agente en `preview` publica en el servicio de vista previa.
 * `filters` (valor de cadena, predeterminado significa que todas las rutas están activadas). Los valores disponibles son los siguientes:
    * `onlyActivated` - activar solo las páginas que (ya) se han activado. Actúa como una forma de reactivación.
