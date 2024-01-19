@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 94%
+source-wordcount: '1000'
+ht-degree: 85%
 
 ---
 
@@ -35,6 +35,9 @@ ht-degree: 94%
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
 <!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  El servicio en la nube de OData de MS Dynamics (servicio OData) también está disponible con otros modos de ejecución. Para obtener más información sobre la configuración de los modos de ejecución de una  [!DNL Experience Manager] instancia, consulte [Modos de ejecución](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=es#runmodes).
+
+AEM as a Cloud Service ofrece varias acciones de envío listas para usar para administrar los envíos de formularios. Puede obtener más información sobre estas opciones en la [Acción de envío del formulario adaptable](/help/forms/configure-submit-actions-core-components.md)  artículo.
+
 
 ## Requisitos previos {#prerequisites}
 
@@ -70,7 +73,7 @@ Haga lo siguiente para establecer la URL de respuesta para la aplicación de [!D
 
 >[!NOTE]
 >
->Utilice este procedimiento solo mientras integra [!DNL Experience Manager Forms] con el servidor local de [!DNL Microsoft Dynamics].
+> Utilice este procedimiento solo mientras integra [!DNL Experience Manager Forms] con el servidor local de [!DNL Microsoft Dynamics].
 
 1. Configure la instancia local de [!DNL Microsoft Dynamics] para IFD, tal como se describe en [Configuración de IFD para  [!DNL Microsoft Dynamics]](https://technet.microsoft.com/es-es/library/dn609803.aspx).
 1. Ejecute los siguientes comandos utilizando Windows PowerShell para configurar las opciones de notificación en [!DNL Microsoft Dynamics] para IFD:
@@ -158,7 +161,7 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
  Form Data Model 
 ![default-fdm-1](assets/default-fdm-1.png)-->
 
-Después de configurar el modelo de datos del servicio en la nube de OData de MS Dynamics, puede utilizar el servicio al crear modelos de datos de formulario. Para obtener más información, consulte [Creación del modelo de datos de formulario](create-form-data-models.md).
+Después de configurar el servicio en la nube de OData de MS Dynamics, puede utilizarlo al crear modelos de datos de formulario. Para obtener más información, consulte [Creación del modelo de datos de formulario](create-form-data-models.md).
 
 A continuación, puede crear un formulario adaptable basado en el modelo de datos de formulario y utilizarlo en varios casos de uso de formularios adaptables, como los siguientes:
 
@@ -167,5 +170,7 @@ A continuación, puede crear un formulario adaptable basado en el modelo de dato
 * escribir datos de formularios enviados en entidades de [!DNL Microsoft Dynamics].
 
 <!--It is recommended to create a copy of the Form Data Model provided with the [!DNL Experience Manager Forms] package and configure data models and services to suit your requirements. It will ensure that any future updates to the package do not override your form data model.-->
+
+Puede [Configurar la acción de envío del modelo de datos de formulario](/help/forms/using-form-data-model.md) para que un formulario adaptable envíe datos a OData de Microsoft Dynamics.
 
 Para obtener más información sobre la creación y el uso de modelos de datos de formulario en flujos de trabajo empresariales, consulte [Integración de datos](data-integration.md).

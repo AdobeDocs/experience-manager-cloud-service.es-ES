@@ -5,10 +5,10 @@ Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, sale
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 100%
+source-wordcount: '482'
+ht-degree: 85%
 
 ---
 
@@ -24,6 +24,8 @@ Puede utilizar las credenciales de cliente de OAuth 2.0 para integrar AEM Forms 
 ![Flujo de trabajo al establecer la comunicación entre AEM Forms y la aplicación Salesforce](/help/forms/assets/salesforce-workflow.png)
 
 AEM Forms intercambia las credenciales del cliente (clave del cliente y secreto de cliente), definidas en la aplicación conectada de Salesforce, para obtener un token de acceso.
+
+AEM as a Cloud Service ofrece varias acciones de envío listas para usar para administrar los envíos de formularios. Puede obtener más información sobre estas opciones en la [Acción de envío del formulario adaptable](/help/forms/configure-submit-actions-core-components.md) artículo.
 
 El uso de credenciales del cliente OAuth 2.0 para la autenticación a través de la autenticación de flujo de código de autorización ofrece varias ventajas:
 
@@ -69,6 +71,9 @@ Para conectar un formulario adaptable a la aplicación Salesforce mediante la co
 1. Haga clic en **[!UICONTROL Probar conexión]**.
 1. Si la conexión se realiza correctamente, haga clic en el botón **[!UICONTROL Crear]**.
 
-Ahora, puede [crear el modelo de datos de formulario](/help/forms/create-form-data-models.md) para enviar un formulario adaptable a la aplicación Salesforce.
+
+Después de configurar la aplicación Salesforce, puede utilizar la configuración al crear modelos de datos de formulario. Para obtener más información, consulte [Crear modelo de datos de formulario](create-form-data-models.md). [Configurar la acción de envío del modelo de datos de formulario](/help/forms/using-form-data-model.md) para que un formulario adaptable envíe datos a aplicaciones de Salesforce.
+
+Para obtener más información sobre la creación y el uso de modelos de datos de formulario en flujos de trabajo empresariales, consulte [Integración de datos](data-integration.md).
 
 

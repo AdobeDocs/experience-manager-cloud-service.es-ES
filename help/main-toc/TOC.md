@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 104dfd255185816983674026a84337624a851d9a
+source-git-commit: cb817f2ce94a1618fd8dd73834f663e8aaed2b7f
 workflow-type: tm+mt
-source-wordcount: '4551'
-ht-degree: 96%
+source-wordcount: '4600'
+ht-degree: 95%
 
 ---
 
@@ -609,6 +609,12 @@ ht-degree: 96%
             + [Configurar la página de redireccionamiento o el mensaje de agradecimiento](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Crear formularios con secciones repetibles](/help/forms/create-forms-repeatable-sections.md)
             + [Configuración de una acción de envío para un formulario adaptable](/help/forms/configure-submit-actions-core-components.md)
+            + [Enviar un formulario adaptable al almacenamiento del blob de Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
+            + [Enviar un formulario adaptable a Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
+            + [Configuración del almacenamiento de SharePoint para un formulario adaptable](/help/forms/configure-submit-action-sharepoint.md)
+            + [AEM AEM Integración de formularios adaptables de la con flujo de trabajo](/help/forms/configure-submit-action-workflow.md)
+            + [Configurar la acción de envío Enviar al extremo REST para Forms adaptable](/help/forms/configure-submit-action-restpoint.md)
+            + [Configuración de la acción de envío Enviar correo electrónico para un formulario adaptable](/help/forms/configure-submit-action-send-email.md)
             + [Uso de Google reCAPTCHA en un formulario adaptable](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Agregar un controlador de error personalizado en un formulario adaptable](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Añadir una configuración regional para Formularios adaptables basada en componentes principales](/help/forms/supporting-new-language-localization-core-components.md)
