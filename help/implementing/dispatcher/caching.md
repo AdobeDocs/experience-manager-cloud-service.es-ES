@@ -3,9 +3,9 @@ title: Almacenamiento en caché en AEM as a Cloud Service
 description: AEM Obtenga información acerca de los conceptos básicos del almacenamiento en caché en as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 8351e5e60c7ec823a399cbbdc0f08d2704f12ccf
+source-git-commit: 28537409c5974ff8ade30207f16cc62b45c47616
 workflow-type: tm+mt
-source-wordcount: '2865'
+source-wordcount: '2894'
 ht-degree: 1%
 
 ---
@@ -223,6 +223,10 @@ Ahora, las imágenes en el almacenamiento del blob marcadas como privadas no se 
         Header set Age 0
      </LocationMatch>
      ```
+
+### Análisis de la proporción de visitas de caché de CDN {#analyze-chr}
+
+Consulte la [tutorial de análisis de proporción de aciertos de caché](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html) para obtener información sobre la descarga de registros de CDN y el análisis de la proporción de blancos de caché del sitio, utilice un tablero.
 
 ### comportamiento de solicitud del HEAD {#request-behavior}
 
