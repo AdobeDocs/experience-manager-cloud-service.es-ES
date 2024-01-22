@@ -2,12 +2,13 @@
 title: Compatibilidad con OAuth2 para el servicio de correo
 description: Compatibilidad con Oauth2 para el servicio de correo en Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
 workflow-type: tm+mt
-source-wordcount: '672'
-ht-degree: 88%
+source-wordcount: '680'
+ht-degree: 83%
 
 ---
+
 
 # Compatibilidad con OAuth2 para el servicio de correo {#oauth2-support-for-the-mail-service}
 
@@ -165,7 +166,7 @@ bajo `/apps/<my-project>/osgiconfig/config` con la sintaxis siguiente. `smtp.hos
    ```
 
 1. Para Outlook, el valor de configuración de `smtp.host` es `smtp.office365.com`
-1. Durante el tiempo de ejecución, pase los secretos `refreshToken values` y `clientSecret` mediante la API de variables de Cloud Manager como se describe [aquí](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api). Los valores de las variables `SECRET_SMTP_OAUTH_REFRESH_TOKEN` y `SECRET_SMTP_OAUTH_CLIENT_SECRET` deben definirse.
+1. Durante el tiempo de ejecución, pase el `refreshToken values` y `clientSecret` secretos que utilizan la API de variables de Cloud Manager como se describe [aquí](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) o utilizando [Cloud Manager para agregar variables.](/help/implementing/cloud-manager/environment-variables.md) Los valores de las variables `SECRET_SMTP_OAUTH_REFRESH_TOKEN`  y `SECRET_SMTP_OAUTH_CLIENT_SECRET` debe definirse.
 
 ### Solución de problemas {#troubleshooting}
 
