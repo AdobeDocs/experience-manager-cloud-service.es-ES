@@ -15,7 +15,7 @@ ht-degree: 11%
 >id="aemcloud_ctt_prereqs"
 >title="Consideraciones importantes sobre el uso de la herramienta de transferencia de contenido"
 >abstract="Revise las consideraciones importantes para usar la herramienta de transferencia de contenido, incluidas las versiones de Java™ y AEM, los tipos de almacén de datos admitidos, las consideraciones de grupos de usuarios y más."
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="Consideraciones importantes sobre el uso de la herramienta de transferencia de contenido"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=es" text="Consideraciones importantes sobre el uso de la herramienta de transferencia de contenido"
 additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#best-practices" text="Prácticas recomendadas y directrices"
 
 La siguiente tabla resume los requisitos previos para utilizar la herramienta de transferencia de contenido.

@@ -5,7 +5,7 @@ exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 99%
 >id="aemcloud_assesskpis"
 >title="Evaluación de los KPI"
 >abstract="Antes de comenzar el lanzamiento de Adobe Experience Manager, todas las personas que tengan participación en el proyecto deben saber cuáles son los tres KPI principales y por qué importan."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="Alineación de los KPI"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html" text="Elección del equipo adecuado"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=es" text="Alineación de los KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=es" text="Elección del equipo adecuado"
 
 Antes de comenzar el lanzamiento de Adobe Experience Manager, todas las personas que tengan participación en el proyecto deben saber cuáles son los tres KPI principales y por qué importan.
 

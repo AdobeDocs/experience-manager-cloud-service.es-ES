@@ -127,7 +127,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >title="Interpretación del informe de Best Practices Analyzer"
 >abstract="Existen dos opciones para ver los resultados de los informes de BPA: IU y CSV. Cuando la herramienta Best Practices Analyzer se ejecuta en la instancia de AEM, el informe IU se muestra en los resultados de la ventana de las herramientas. El formato CSV del informe incluye información que se genera a partir de los resultados de Pattern Detector, ordenados y organizados por tipo de categoría, subtipo y nivel de importancia."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#analysis-report" text="Revisar el informe de Best Practices Analyzer"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html" text="Explicación de las categorías del informe de Best Practices Analyzer"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=es" text="Explicación de las categorías del informe de Best Practices Analyzer"
 
 AEM Cuando la herramienta Analizador de prácticas recomendadas se ejecuta en la instancia de la, el informe se muestra en los resultados de la ventana de herramientas.
 
@@ -144,7 +144,7 @@ El formato del informe es el siguiente:
 Se asigna un nivel de importancia a cada resultado para indicar una prioridad aproximada para la acción.
 
 >[!NOTE]
->Para obtener más información sobre cada categoría de búsqueda, consulte [Categorías de Pattern Detector](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
+>Para obtener más información sobre cada categoría de búsqueda, consulte [Categorías de Pattern Detector](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=es).
 
 Siga la tabla siguiente para comprender los niveles de importancia:
 
