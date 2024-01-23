@@ -2,10 +2,10 @@
 title: Crear informes de SLA
 description: Aprenda cómo ver el rendimiento de su entorno de AEM de producción en relación con el contrato de nivel de servicio (SLA).
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: f037f47f0b131c87301faf4458658224d1d62a43
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 88%
+source-wordcount: '400'
+ht-degree: 55%
 
 ---
 
@@ -51,3 +51,14 @@ La sección **Análisis de eventos** en el gráfico muestra el conjunto de incid
 Cada incidente tiene un intervalo de tiempo, una causa y un conjunto de comentarios.
 
 ![Ejemplo de análisis de eventos](assets/sla-reporting-c.png)
+
+## Actualizar intervalo {#refresh}
+
+AEM La creación de informes de SLA le ofrecen una perspectiva del rendimiento de su entorno de producción de y está actualizado, pero no es instantánea. La generación de informes de SLA se produce mensualmente y se genera para nuevos programas marcados como Producción el mes anterior. No es instantáneo. Debido a este retraso, tenga en cuenta lo siguiente al revisar su informe de SLA:
+
+* El SLA notificado será el que existió a principios de mes, incluso si el SLA cambió durante ese mes.
+* Si no había SLA a principios de mes porque el programa no existía en ese momento, se aplica el SLA que existía en la fecha de creación del programa.
+
+## Previsualizar entornos {#preview}
+
+El entorno de vista previa está diseñado como una herramienta para que los autores de contenido comprueben la experiencia final del contenido antes de publicarlo. Debido a esto, los entornos de vista previa no están diseñados con alta disponibilidad y no tienen un SLA asociado.
