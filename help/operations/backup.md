@@ -2,10 +2,10 @@
 title: Copia de seguridad y restauración en AEM as a Cloud Service
 description: AEM as a Cloud Service Obtenga información acerca de Copia de seguridad y restauración en
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 83b5d9a3ff0e9a3c69e36a97a3f733b05f827d3b
+source-git-commit: b77ee0697e8f6f4aeaa6651336588f1c5321abd1
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 27%
+source-wordcount: '539'
+ht-degree: 24%
 
 ---
 
@@ -22,7 +22,7 @@ Si la implementación de un cliente, lo que significa que el código de la aplic
 
 >[!CAUTION]
 >
->Esta función solo debe usarse cuando hay problemas graves con el código o el contenido. Se perderán los datos recientes entre el momento de la copia de seguridad restaurada y el presente. La puesta en marcha también se restaurará a la versión antigua.
+>Esta función solo debe usarse cuando hay problemas graves con el código o el contenido. Se perderán los datos recientes entre el momento de la copia de seguridad restaurada y el presente. El ensayo también se restaura a la versión antigua. Si se conservan datos recientes, deben exportarse a través de un paquete de contenido antes de restaurarlos y reinstalarse en el repositorio restaurado.
 
 ## Usos {#how-to-use}
 
