@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: fa57e0438a7570551785375c4e5a57fa38fd2f6f
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 9%
+source-wordcount: '1953'
+ht-degree: 8%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 9%
 
 ## Por qué necesitamos los metadatos {#why-metadata}
 
-Los metadatos son datos sobre datos. A este respecto, los datos hacen referencia a su recurso digital, por ejemplo, una imagen. Los metadatos son esenciales para una administración eficiente de los recursos.
+Los metadatos son datos sobre datos. A este respecto, los datos hacen referencia a su recurso digital, por ejemplo, una imagen. Los metadatos son esenciales para una administración eficaz de los recursos.
 
 Los metadatos son la recopilación de todos los datos disponibles para un recurso, pero que no están necesariamente contenidos en esa imagen. Algunos ejemplos de metadatos son los siguientes:
 
@@ -60,18 +60,53 @@ Por estas razones, [!DNL Assets] le proporciona los medios adecuados para crear,
 
 ## Tipos de metadatos {#types-of-metadata}
 
-Los dos tipos básicos de metadatos son los metadatos técnicos y los metadatos descriptivos.
+Los metadatos se clasifican como metadatos técnicos, informativos y administrativos.
 
-Los metadatos técnicos son útiles para aplicaciones de software que tratan con recursos digitales y no deben mantenerse manualmente. [!DNL Experience Manager Assets] y otro software determinan automáticamente los metadatos técnicos, y los metadatos pueden cambiar cuando se modifica el recurso. Los metadatos técnicos disponibles de un recurso dependen en gran medida del tipo de archivo del recurso. Algunos ejemplos de metadatos técnicos son los siguientes:
+### Metadatos técnicos
 
-* Tamaño de un archivo.
-* Dimension (alto y ancho) de una imagen.
-* Velocidad de bits de un archivo de audio o vídeo.
-* Resolución (nivel de detalle) de una imagen.
+Los metadatos técnicos se centran en los aspectos técnicos de los recursos digitales, y proporcionan información crucial relacionada con lo siguiente:
 
-Los metadatos descriptivos son metadatos relacionados con el dominio de aplicación, por ejemplo, el negocio del que proviene un recurso. Los metadatos descriptivos no se pueden determinar automáticamente. Se crea de forma manual o semiautomática. Por ejemplo, una cámara con GPS puede rastrear automáticamente la latitud y longitud y añadir geotag a la imagen.
+* Tamaño de archivo
+* Formato
+* Resolución
+* Dimensiones
+* Modo de color
 
-El coste de crear manualmente información descriptiva de metadatos es elevado. Por lo tanto, se establecen estándares para facilitar el intercambio de metadatos entre sistemas de software y organizaciones. [!DNL Experience Manager Assets] admite todos los estándares relevantes para la administración de metadatos.
+Este tipo de metadatos ayuda a los usuarios a comprender los recursos digitales y a utilizarlos de forma eficaz.
+
+### Metadatos informativos
+
+Los metadatos informativos proporcionan información descriptiva para mejorar la comprensión del contenido, lo que ayuda a descubrir contenido y a realizar búsquedas. Incluye palabras clave, subtítulos y descripciones. <br>Por ejemplo, al administrar un vídeo en Experience Manager Assets, podemos incluir los siguientes metadatos informativos:
+
+* **Palabras clave**: Marketing, lanzamiento de producto, promoción
+* **Rótulo**: Presentamos nuestro último producto con increíbles funciones
+* **Descripción**: Información general detallada sobre el contenido del vídeo.
+
+### Metadatos administrativos
+
+Los metadatos administrativos tratan los aspectos administrativos de los recursos digitales. Garantiza el control de acceso, el cumplimiento y la administración del ciclo de vida general de los recursos dentro del sistema de administración de recursos digitales. Incluye información relacionada con lo siguiente:
+
+* Propiedad de activos
+* Derechos de uso
+* Permisos
+* Otros detalles administrativos
+
+Este tipo de metadatos garantiza la administración eficaz de los recursos, el control de acceso y el cumplimiento normativo.
+
+<!-- Learn more about [metadata best practices](metadata-best-practices.md) to manage your digital assets effectively. -->
+
+<!-- The two basic types of metadata are technical metadata and descriptive metadata.
+
+Technical metadata is useful for software applications that are dealing with digital assets and should not be maintained manually. [!DNL Experience Manager Assets] and other software automatically determine technical metadata and the metadata may change when the asset is modified. The available technical metadata of an asset depends largely on the file type of the asset. Some examples of technical metadata are:
+
+* Size of a file.
+* Dimensions (height and width) of an image.
+* Bit rate of an audio or video file.
+* Resolution (level of detail) of an image.
+
+Descriptive metadata is metadata concerned with the application domain, for example, the business that an asset is coming from. Descriptive metadata cannot be determined automatically. It is created manually or semi-automatically. For example, a GPS-enabled camera can automatically track the latitude and longitude and add geotag the image.
+
+The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management. -->
 
 ## Metadatos y última modificación {#last-modification}
 
