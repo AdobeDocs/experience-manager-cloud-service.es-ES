@@ -2,10 +2,10 @@
 title: Administración y edición de programas
 description: Obtenga información sobre cómo editar los programas de producción y de zonas protegidas para ajustar sus opciones después de crearlas.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 0d60c19638707262dab7f290f84fa873b694bc22
+source-git-commit: 2dfae31e32d375c82c4f690624e48f7f09feb4df
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 24%
+source-wordcount: '773'
+ht-degree: 19%
 
 ---
 
@@ -99,38 +99,21 @@ El **Rendimiento** ofrece una descripción general de la **[Panel de CDN.](/help
 
    ![Opción Editar programa](assets/edit-program-overview.png)
 
-1. Se abrirá la página **Editar programa**. En la pestaña **General**, edite el nombre y la descripción del programa.
-
-   * Debe seleccionar al menos una solución para un programa.
+1. El **Editar programa** página se abre para la **General** pestaña.
 
    ![Pestaña General](assets/edit-program-prod1.png)
 
-1. En la pestaña **Soluciones y complementos**, modifique las soluciones para el programa.
-
-   ![Seleccionar soluciones](assets/edit-prg.png)
-
-1. Haga clic en las comillas angulares antes del nombre de la solución para mostrar complementos opcionales, como seleccionar la opción **Comercio** opción de complemento en **Sites**.
-
-   ![Editar complementos](assets/edit-program-add-on.png)
-
-1. En la pestaña **Configuración de Go live**, modifique la fecha de go-live planeada para el programa.
-
-   ![Editar la configuración de go-live](assets/edit-program-go-live.png)
-
-   * Esta fecha es solo para uso informativo. Almacena en déclencheur el widget Go Live en la página de información general del programa. A su vez, proporciona vínculos internos del producto a la documentación de prácticas recomendadas as a Cloud Service de Adobe Experience Manager AEM () para que se ajuste a su recorrido, lo que culmina en una experiencia de Go Live exitosa.
-   * Esta pestaña no está disponible para programas de zonas protegidas.
-
-1. Si los derechos requeridos están disponibles para el programa, la variable **Seguridad** La pestaña mostrará dónde puede modificar las opciones de seguridad del programa.
-
-   ![Editar configuración de seguridad](assets/edit-program-security.png)
-
-   * HIPAA no se puede habilitar o deshabilitar después de [creación de programas.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-      * [Más información](https://www.adobe.com/go/hipaa-ready_es) acerca de la implementación de la solución compatible con HIPAA de Adobe.
-   * Una vez activada, la protección WAF-DDOS se puede configurar mediante la configuración de una [canalización que no sea de producción.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+1. Las opciones disponibles para editar el programa son las mismas que al crearlo.
+   * Consulte los documentos [Creación de programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) y [Creación de programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) para obtener más información sobre las opciones individuales.
+   * [Opciones adicionales](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) puede estar disponible para su programa de producción en función de los derechos de su organización.
 
 1. Clic **Actualizar** para guardar los cambios en el programa.
 
-Cada vez que se edita un programa, incluida la adición o eliminación de una solución o complemento, esos cambios surten efecto después de la siguiente implementación.
+Se guardarán los cambios realizados en el programa.
+
+>[!NOTE]
+>
+>Cada vez que se edita un programa, incluida la adición o eliminación de una solución o complemento, esos cambios surten efecto después de la siguiente implementación.
 
 ## Eliminar programas de zona protegida {#delete-sandbox-program}
 
