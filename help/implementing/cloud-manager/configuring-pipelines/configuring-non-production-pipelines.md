@@ -3,10 +3,10 @@ title: Configurar canalizaciones que no sean de producción
 description: Obtenga información sobre cómo configurar canalizaciones que no sean de producción para probar la calidad del código antes de implementarlas en entornos de producción.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 78%
+source-wordcount: '1297'
+ht-degree: 77%
 
 ---
 
@@ -112,18 +112,17 @@ La canalización se guarda y ahora puede [administrar las canalizaciones](managi
 
 AEM Una implementación de destino implementa el código únicamente para partes seleccionadas de la aplicación de. En una implementación de este tipo puede elegir **Incluir** uno de los siguientes tipos de código:
 
-* **[Configuración](#config)** AEM : configure las opciones de su entorno de, tareas de mantenimiento, reglas de CDN y mucho más.
+* **Configuración** AEM : configure las reglas de filtro de tráfico en su entorno de.
    * Ver el documento [Reglas de filtro de tráfico, incluidas las reglas WAF](/help/security/traffic-filter-rules-including-waf.md) para obtener información sobre cómo administrar las reglas de filtro de tráfico en el repositorio para que se implementen correctamente.
-* **[Código front-end](#front-end-code)** AEM - Configure JavaScript y CSS para el front-end de su aplicación de la.
+   * Al ejecutar una canalización de implementación de destino, las configuraciones [como las configuraciones de WAF](/help/security/traffic-filter-rules-including-waf.md) se implementarán, siempre que se guarden en el entorno, el repositorio y la rama que haya definido en la canalización.
+   * En cualquier momento, solo puede haber una canalización de configuración por entorno.
+* **Código front-end** AEM - Configure JavaScript y CSS para el front-end de su aplicación de la.
    * Con las canalizaciones front-end, se da más independencia a los desarrolladores de front-end y el proceso de desarrollo se puede acelerar.
    * Consulte el documento [Desarrollo de sitios con la canalización front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber cómo funciona este proceso, así como algunas consideraciones que deben tenerse en cuenta para aprovechar al máximo este proceso.
-* **[Configuración de nivel web](#web-tier-config)** : configure las propiedades de Dispatcher para almacenar, procesar y enviar páginas web al cliente.
-
->[!NOTE]
->
->* Si existe una canalización de código de nivel web para el entorno seleccionado, esta selección está deshabilitada.
->* Si tiene una canalización de pila completa existente implementando en un entorno, al crear una canalización de configuración de capa web para el mismo entorno, se omitirá la configuración de capa web existente en la canalización de pila completa.
-> * En cualquier momento, solo puede haber una canalización de configuración por entorno.
+* **Configuración de nivel web** : configure las propiedades de Dispatcher para almacenar, procesar y enviar páginas web al cliente.
+   * Ver el documento [Canalizaciones de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) para obtener más información.
+   * Si existe una canalización de código de nivel web para el entorno seleccionado, esta selección está deshabilitada.
+   * Si tiene una canalización de pila completa existente implementando en un entorno, al crear una canalización de configuración de capa web para el mismo entorno, se omitirá la configuración de capa web existente en la canalización de pila completa.
 
 Los pasos para completar la creación de la canalización de implementación de destino que no sea de producción son los mismos una vez que elija un tipo de implementación.
 
@@ -152,8 +151,6 @@ Los pasos para completar la creación de la canalización de implementación de 
 1. Haga clic en **Guardar**.
 
 La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en la tarjeta **Canalizaciones** en la página **Información general del programa**.
-
-Al ejecutar una canalización de implementación de destino, las configuraciones [como las configuraciones de WAF](/help/security/traffic-filter-rules-including-waf.md) se implementarán, siempre que se guarden en el entorno, el repositorio y la rama que haya definido en la canalización.
 
 ## Omitir paquetes de Dispatcher {#skip-dispatcher-packages}
 
