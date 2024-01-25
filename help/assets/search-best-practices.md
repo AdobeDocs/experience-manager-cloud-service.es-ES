@@ -3,10 +3,10 @@ title: Prácticas recomendadas de búsqueda para [!DNL Adobe Experience Manager]
 description: Prácticas recomendadas para buscar, buscar y recuperar metadatos de recursos dentro de la aplicación.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 47003c9aa0faefc01a9935c53a5a78938c37cf66
+source-git-commit: 6397a300de13c5e4f6ee5828de1ba76a1677c227
 workflow-type: tm+mt
-source-wordcount: '2521'
-ht-degree: 3%
+source-wordcount: '2527'
+ht-degree: 2%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 [!DNL Adobe Experience Manager Assets] proporciona métodos de búsqueda de recursos sólidos que le ayudan a lograr una mayor velocidad de contenido. A veces, encontrar el recurso adecuado puede ser arduo y requerir mucho tiempo. Por lo tanto, busque la capacidad Recursos en [!DNL Adobe Experience Manager Assets] es fundamental para el uso de un sistema de administración de activos digitales, ya sea para su uso posterior por parte de los creativos, para una administración sólida de los activos por parte de los usuarios empresariales y los especialistas en marketing, o para la administración por parte de los administradores de DAM.
 
-AEM AEM Este documento de ayuda contiene prácticas recomendadas de búsqueda en el ámbito de la asistencia con la ayuda de diversos escenarios para ayudar a los usuarios de la aplicación a realizar búsquedas de nivel básico a avanzado.
+AEM AEM Este documento de ayuda contiene prácticas recomendadas de búsqueda en la aplicación de la búsqueda con la ayuda de varios escenarios para ayudar a los usuarios a realizar búsquedas de nivel básico a avanzado.
 
 ## Búsqueda del Experience Manager de acceso {#access-experience-manager-search}
 
@@ -255,7 +255,11 @@ o seleccione el recurso > vaya a los puntos suspensivos en la parte superior der
 
 1. Fíjese en la barra de búsqueda. La miniatura del recurso seleccionado aparecerá en la barra de búsqueda indicando los requisitos de búsqueda. Como resultado, devuelve recursos con etiquetas inteligentes similares.
 
-**[!UICONTROL Vista de recursos]** no es compatible con [!UICONTROL Buscar elemento similar] opción.
+Siga estos pasos en **[!UICONTROL Vista de recursos]**:
+
+1. Busque el recurso según sus necesidades.
+1. Seleccione la imagen > vaya a [!UICONTROL Buscar imagen similar] en la barra de navegación de la parte superior.
+Le lleva a la colección de recursos con colores y metadatos similares.
 
 ## Facetas de búsqueda personalizadas {#custom-search-facets}
 
@@ -279,7 +283,7 @@ Puede mejorar la relevancia de las palabras clave para recursos concretos para a
 
 1. En la interfaz de usuario de Assets, abra la página de propiedades del recurso. Clic [!UICONTROL Avanzadas] y haga clic en [!UICONTROL Añadir] bajo [!UICONTROL Elevar para palabras clave de búsqueda].
 2. En el cuadro Buscar Promocionar, especifique una palabra clave para la que desee aumentar la búsqueda de la imagen y, a continuación, haga clic en [!UICONTROL Añadir]. Puede especificar varias palabras clave del mismo modo.
-3. Haga clic en [!UICONTROL Guardar y cerrar]. El recurso que promocionó para esta palabra clave aparece entre los resultados de búsqueda principales.
+3. Clic [!UICONTROL Guardar y cerrar]. El recurso que promocionó para esta palabra clave aparece entre los resultados de búsqueda principales.
 
 ## Cosas importantes al realizar una búsqueda en Experience Manager {#notable-things}
 
@@ -415,11 +419,6 @@ The newly added assets are not indexed.
             <li> Modelo de fragmento de contenido
             </ul> 
         </td>
-        <td> No compatible </td>
-    </tr>
-     <tr>
-        <td> Buscar elemento similar </td>
-        <td> Compatible </td>
         <td> No compatible </td>
     </tr>
 </table>
