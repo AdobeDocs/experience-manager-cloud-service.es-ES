@@ -2,10 +2,10 @@
 title: ¿Cómo se administran las etiquetas en la vista Recursos?
 description: Obtenga información sobre cómo administrar las etiquetas en la vista Recursos. Las etiquetas le ayudan a categorizar los archivos que se pueden examinar y buscar de forma más eficaz.
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: ea0978d09ce74d37487cd921496b03acbfd632d0
 workflow-type: tm+mt
-source-wordcount: '1416'
-ht-degree: 96%
+source-wordcount: '1256'
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 96%
 
 Las etiquetas le ayudan a categorizar los archivos que se pueden examinar y buscar de forma más eficaz. El etiquetado propaga la taxonomía adecuada a otros usuarios y flujos de trabajo.
 
-Las listas planas de vocabularios controlados pueden volverse inmanejables con el tiempo. Los administradores pueden utilizar la estructura jerárquica de etiquetado, que facilita la aplicación de metadatos relevantes, la categorización de recursos, la compatibilidad con la búsqueda, la reutilización de etiquetas, la mejora de la capacidad de detección, etc.
+Las listas planas de vocabularios controlados pueden volverse inmanejables con el tiempo. Los administradores tienen la capacidad de utilizar la estructura jerárquica de etiquetado, que facilita la aplicación de metadatos relevantes, la categorización de archivos, la compatibilidad con la búsqueda, la reutilización de etiquetas, la mejora de la capacidad de detección, etc.
 
 Puede crear un área de nombres en el nivel raíz y crear una estructura jerárquica de subetiquetas dentro del área de nombres. Por ejemplo, puede crear un área de nombres `Activities` en el nivel de raíz y tener etiquetas `Cycling`, `Hiking` y `Running` dentro del área de nombres. Puede tener más subetiquetas `Clothing` y `Shoes` dentro de `Running`.
 
@@ -33,7 +33,7 @@ El etiquetado ofrece muchas ventajas, como las siguientes:
 
 * Las etiquetas pueden evolucionar con el tiempo a medida que cambia el vocabulario de la organización.
 
-* Las etiquetas administradas en la vista Administración están sincronizadas con las etiquetas administradas en la vista Recursos, que garantiza la integridad y el control de los metadatos.
+* Las etiquetas administradas en Recursos as a Cloud Service permanecen sincronizadas con las etiquetas administradas en la vista Recursos, lo que garantiza la integridad y el control de los metadatos.
 
 Para poder aplicar etiquetas a los recursos, primero debe crear un área de nombres y luego crear y añadirle etiquetas. También puede crear etiquetas y añadirlas a un área de nombres existente. Todas las etiquetas que cree en el nivel raíz se añaden automáticamente al área de nombres de etiquetas estándar. A continuación, puede añadir el campo Etiquetas al formulario de metadatos para que se muestre en la página Detalles del recurso. Después de configurar estos ajustes, puede comenzar a aplicar etiquetas a los recursos.
 
@@ -43,7 +43,7 @@ Para poder aplicar etiquetas a los recursos, primero debe crear un área de nomb
 
 ![Administración de etiquetado](assets/tagging-taxonomy-management.png)
 
-En la vista Administración hay disponibles funcionalidades adicionales, además de las mencionadas en este artículo, como combinar, cambiar el nombre, localizar y publicar etiquetas.
+En Assets as a Cloud Service hay disponibles funcionalidades adicionales, además de las mencionadas en este artículo, como combinar, cambiar el nombre, localizar y publicar etiquetas.
 
 ## Creación de un área de nombres {#creating-a-namespace}
 
@@ -59,7 +59,6 @@ Siga estos pasos para crear un área de nombres:
 
    <!--
     >[!NOTE]
-    >
     >You can use `Name` as a primary key if you are using any other metadata management tool is the source of truth for taxonomy values, you can use the name as a primary key.
     >
     -->
@@ -77,13 +76,6 @@ Ejecute los siguientes pasos para añadir etiquetas a un área de nombres:
    En este ejemplo, la imagen de la izquierda representa la etiqueta directamente debajo del área de nombres `automobile-four-wheeler` que aparece en el campo `Path`. La imagen de la derecha es un ejemplo de subetiquetas que se han añadido dentro de una etiqueta, ya que hay más nombres de etiqueta, `jeep` y `jeep-meridian`, que se muestran en el campo `Path` además del área de nombres.
 1. Especifique el título, el nombre y la descripción de la etiqueta, y haga clic en `Save`.
 
-
-   >[!NOTE]
-   >
-   >* Los campos `Title` y `Name` son obligatorios, mientras que el campo `Description` es opcional.
-   >* De forma predeterminada, la herramienta copia el texto que escribe en el campo Título y elimina los espacios en blanco o los caracteres especiales (. &amp; / \ : * ? [ ] | &quot; %) y lo almacena como el nombre.
-   >* Puede actualizar el campo `Title` luego, pero el campo `Name` es de solo lectura.
-
 ## Adición de etiquetas a etiquetas estándar {#adding-tags-to-standard-tags}
 
 Las etiquetas no estructuradas o las etiquetas que no tienen jerarquía se almacenan en el área de nombres `Standard Tags`. Además, si desea añadir términos descriptivos adicionales sin que afecte a la taxonomía controlada, puede almacenar dicho valor en `Standard Tags`. Con el tiempo, puede mover estos valores a áreas de nombres estructuradas. Además, puede utilizar el área de nombres `Standard Tags` como entrada de forma libre para palabras clave.
@@ -91,10 +83,11 @@ Las etiquetas no estructuradas o las etiquetas que no tienen jerarquía se almac
 Para crear una etiqueta estándar, haga clic en `Create Tag` en el nivel raíz. Especifique el título, el nombre y la descripción y haga clic en `Save`.
 
 ![Adición de etiquetas a etiquetas estándar](assets/adding-tags-to-standard-tags.png)
-
+<!--
 >[!NOTE]
 >
->Si elimina el espacio de nombres `Standard Tags` mediante la vista Administrador, las etiquetas creadas en el nivel raíz no se muestran en la lista de etiquetas disponibles.
+>If you delete `Standard Tags` namespace using Assets as a Cloud Service, the tags created at the root-level do not display in the list of available tags. 
+-->
 
 ## Mover etiquetas {#moving-tags}
 
@@ -117,7 +110,7 @@ Para editar el título de la etiqueta, selecciónela y haga clic en `Edit`. Espe
 >[!NOTE]
 >
 >* El `Name` de una etiqueta no se puede actualizar. La ruta raíz de una etiqueta también se basa en el nombre de la etiqueta. La ruta sigue siendo la misma aunque actualice el campo `Title`.
->* Las operaciones adicionales, como combinar, localizar y publicar, están disponibles en la vista Administración.
+>* Las operaciones adicionales, como combinar, localizar y publicar, están disponibles en Assets as a Cloud Service.
 
 ## Eliminación de etiquetas {#deleting-tags}
 
@@ -136,7 +129,7 @@ Realice los siguientes pasos para eliminar etiquetas:
 
 ## Adición del componente Etiquetas al formulario de metadatos {#adding-tags-to-metadata-form}
 
-El componente de etiquetas se añade al formulario de metadatos `default` automáticamente. Puede diseñar un [formulario de metadatos](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=es#metadata-forms) mediante una plantilla o desde cero. Si no utiliza una plantilla de formulario de metadatos existente, puede modificar el formulario de metadatos y añadir el componente de etiquetas. La asignación de propiedades de metadatos se rellena automáticamente y no se puede modificar en este momento. Los usuarios en la vista Administrador pueden actualizar la asignación para almacenar valores de etiquetas utilizando áreas de nombres personalizadas y exponer solo subconjuntos de jerarquías mediante rutas raíz.
+El componente de etiquetas se añade al formulario de metadatos `default` automáticamente. Puede diseñar un [formulario de metadatos](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=es#metadata-forms) mediante una plantilla o desde cero. Si no utiliza una plantilla de formulario de metadatos existente, puede modificar el formulario de metadatos y añadir el componente de etiquetas. La asignación de propiedades de metadatos se rellena automáticamente y no se puede modificar en este momento. Los usuarios de Assets as a Cloud Service pueden actualizar la asignación para almacenar valores de etiquetas utilizando áreas de nombres personalizadas y exponer solo subconjuntos de jerarquías mediante rutas raíz.
 
 Vea este vídeo rápido para ver cómo añadir el componente Etiquetas al formulario de metadatos:
 
@@ -151,32 +144,10 @@ Vea este vídeo rápido para ver cómo añadir el componente Etiquetas al formul
    ![Etiquetado de recursos](assets/adding-tags-to-assets.png)
 
 1. Seleccione una o varias etiquetas. La subetiqueta se selecciona automáticamente junto con la etiqueta principal o el área de nombres.
-Las etiquetas modificadas en la vista Recursos también se aplican en la vista Administración.
+Las etiquetas modificadas en la vista Recursos se aplican también en Recursos as a Cloud Service.
 
-## Restricciones {#limitations}
-
-Las siguientes funciones avanzadas de taxonomía no están disponibles en la vista Recursos en este momento y solo se puede acceder a ellas desde la vista Administrador:
-
-* **Localización:** cualquier localización debe realizarse en la vista Administrador.
-* **Ruta raíz:** las rutas raíz no se pueden configurar. Todas las áreas de nombres almacenadas en administración de taxonomía se exponen en la propiedad Etiquetas de la vista Recursos.
-* **Etiquetas estándar:** las etiquetas estándar aplicadas en la vista Administrador son visibles en la vista Recursos. No puede añadir etiquetas estándar nuevas en la vista Recursos de la página Detalles del recurso. Los valores existentes almacenados en etiquetas estándar se aplican en la página Detalles de recursos.
-* **Espacios de nombres personalizados:** las etiquetas no se pueden asignar a áreas de nombres personalizadas.
-* **Visualización de referencias:** los administradores pueden ver el uso de las etiquetas en la vista Recursos. Hace referencia a todos los recursos que utilizan activamente una etiqueta. Sin embargo, los administradores no pueden ver los recursos individuales que utilizan la etiqueta en referencias.
-
-<!--
-*   Overview
-*   Benefits
-*   Prerequisites and Permissions
-*   Configuration
-*   Managing Tags
-    *   Creating a Namespace
-    *   Adding Tags to a Namespace
-    *   Adding Tags to Standard Tags
-    *   Moving Tags
-    *   Editing Tags
-    *   Deleting Tags
-*   Applying Tags
-    *   Adding Tags to the Metadata form
-    *   Adding Tags to Assets
-*   Limitations
--->
+>[!NOTE]
+>
+>* Los campos `Title` y `Name` son obligatorios, mientras que el campo `Description` es opcional.
+>* De forma predeterminada, la herramienta copia el texto que escribe en el campo Título y elimina los espacios en blanco o los caracteres especiales (. &amp; / \ : * ? [ ] | &quot; %) y lo almacena como el nombre.
+>* Puede actualizar el campo `Title` luego, pero el campo `Name` es de solo lectura.

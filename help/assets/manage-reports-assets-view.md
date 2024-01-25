@@ -2,25 +2,34 @@
 title: Administración de informes en la vista Recursos
 description: Acceda a los datos de la sección de informes de la vista Recursos para evaluar el uso de productos y funciones, y obtener información sobre las métricas de éxito clave.
 exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
-source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
+source-git-commit: c9ec348d7e65f4bb69b93a39b9ad7192485d8db4
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 97%
+source-wordcount: '814'
+ht-degree: 92%
 
 ---
 
 # Administrar informes {#manage-reports}
 
->[!CONTEXTUALHELP]
->id="assets_reports"
->title="Informes"
->abstract="La creación de informes de recursos proporciona visibilidad a los administradores de la actividad del entorno de la vista Adobe Experience Manager Assets. Estos datos proporcionan información útil sobre cómo los usuarios interactúan con el contenido y el producto. Todos los usuarios asignados al Perfil de producto de los administradores pueden acceder al panel de Insights o crear informes definidos por el usuario."
-
-La creación de informes de recursos proporciona visibilidad a los administradores de la actividad del entorno de la vista Adobe Experience Manager Assets. Estos datos proporcionan información útil sobre cómo los usuarios interactúan con el contenido y el producto.
+La creación de informes de recursos proporciona visibilidad a los administradores de la actividad del entorno de la vista Adobe Experience Manager Assets. Estos datos proporcionan información útil sobre cómo los usuarios interactúan con el contenido y el producto. Cualquier persona usuaria puede acceder al panel de Insights. Además, las personas asignadas al perfil de producto del rol de administrador pueden crear informes definidos por el usuario.
 
 ## Acceso a los informes {#access-reports}
 
 Todas las personas asignadas al perfil de producto Administradores de la vista Recursos pueden acceder al tablero de Insights o crear informes definidos por el usuario en la vista Recursos.
+
+Para acceder a los informes, vaya a **[!UICONTROL Informes]** debajo de **[!UICONTROL Configuración]**.
+
+![Informes](assets/reports.png)
+<!--
+In the **[!UICONTROL Reports]** screen, various components are shown in the tabular format which includes the following:
+
+* **Title**: Title of the report
+* **Type**: Determines whether the report is uploaded or downloaded to the repository
+* **Description**: Provide details of the report that was given during uploading/downloading the report
+* **Status**: Determines whether the report is completed, under progress, or deleted.
+* **Author**: Provides email of the author who has uploaded/downloaded the report.
+* **Created**: Gives information of the date when the report was generated.
+-->
 
 ## Vista Insights {#view-live-statistics}
 
@@ -32,9 +41,9 @@ Haga clic en **[!UICONTROL Insights]** en el panel de navegación izquierdo para
 
 ![Perspectivas](assets/insights.png)
 
-* **Descargas**: el número de archivos descargados del entorno de la vista Recursos en los últimos 30 días o 12 meses representados mediante un gráfico de líneas.
+* **Descargas**: el número de recursos descargados del entorno de vista de recursos en los últimos 30 días o 12 meses representados mediante un gráfico de líneas.
 
-* **Cargas**: el número de archivos cargados en el entorno de la vista Recursos en los últimos 30 días o 12 meses representados mediante un gráfico de líneas.
+* **Cargas**: el número de recursos cargados en el entorno de vista de recursos en los últimos 30 días o 12 meses representados mediante un gráfico de líneas.
 
 <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
@@ -46,11 +55,10 @@ Haga clic en **[!UICONTROL Insights]** en el panel de navegación izquierdo para
 
 * **Búsquedas principales**: vea los términos más buscados junto con el número de veces que se buscan en el entorno de vista Recursos en los últimos 30 días o 12 meses representados en formato tabular.
 
-<!--
-
-* **Storage usage**: The storage usage, in gigabytes (GB), for the Assets view environment, for the last 30 days or 12 months represented using a bar chart.
-
--->
+  <!--
+   ![Insights](assets/insights1.png)
+   ![Insights](assets/insights2.png)
+   -->
 
 ## Creación de un informe de descarga {#create-download-report}
 

@@ -2,10 +2,10 @@
 title: Mi espacio de trabajo para la vista Recursos
 description: Mi espacio de trabajo es una página que proporciona módulos visuales personalizables para acceder fácilmente a las áreas clave de la interfaz de usuario de Assets y a la información más relevante para el usuario.
 exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
-source-git-commit: 701a7610780553731a6ac4c85fe3221ee3d98ae2
+source-git-commit: 2500322c5565314e84ee7989399b9130f5cd6f74
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 93%
+source-wordcount: '745'
+ht-degree: 84%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 93%
 
 Assets ahora incluye un espacio de trabajo personalizable que proporciona utilidades para acceder fácilmente a las áreas clave de la interfaz de usuario de Assets y a la información más relevante para usted. Esta página sirve como solución integral para proporcionar información general sobre los elementos de trabajo y un acceso rápido a los flujos de trabajo clave. Un acceso más práctico a estas opciones aumenta su eficacia y velocidad de contenido.
 
-Puede acceder a mi espacio de trabajo haciendo clic en **[!UICONTROL mi espacio de trabajo]** de los elementos disponibles en el panel de navegación izquierdo. Mi espacio de trabajo incluye una serie de widgets, entre los que se muestran Insights, Tareas y Contenido. Puede configurar cómo se muestran estos widgets en el espacio de trabajo en función de sus preferencias.
+Puede acceder a mi espacio de trabajo haciendo clic en **[!UICONTROL mi espacio de trabajo]** de los elementos disponibles en el panel de navegación izquierdo. Mi Espacio de trabajo incluye una serie de widgets, entre los que se muestran Acceso rápido, Insights, Tareas y Contenido. Puede configurar cómo se muestran estos widgets en el espacio de trabajo en función de sus preferencias.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Para fijar un recurso, una carpeta o una colección, haga lo siguiente:
 
 1. Seleccione el elemento y haga clic en **[!UICONTROL fijar a Acceso rápido]**.
 
-1. Seleccione si necesita fijar el elemento solo para usted, para toda la organización o para los grupos seleccionados. Si selecciona **[!UICONTROL Para grupos]**, defina los nombres de grupo en el campo **[!UICONTROL Fijar para grupos]**.
+1. Seleccione si necesita fijar el elemento solo para usted, para toda la organización o para los grupos seleccionados. Si selecciona **[!UICONTROL Para grupos]**, elija un nombre de grupo existente en la **[!UICONTROL Fijar para grupos]** field.
 
    ![Fijar elementos para grupos](assets/pin-items-for-groups.png)
 1. Haga clic en **[!UICONTROL Fijar]**.
@@ -62,7 +62,7 @@ También puede ver los términos más buscados junto con el número de veces que
 
 **Tareas**
 
-Muestra la lista de tareas que le han asignado en la pestaña **[!UICONTROL Mis tareas]**, creado por usted en la pestaña **[!UICONTROL Tareas asignadas]**, y las tareas que ya ha completado, en la pestaña **[!UICONTROL Completado]**. Puede seleccionar una tarea y hacer clic en **[!UICONTROL Completar tarea]** para aprobar o rechazar una tarea. También puede seleccionar una tarea y hacer clic en **[!UICONTROL Abrir detalles de tarea]** para ver la tarea y aprobarla, rechazarla, editarla o eliminarla.
+Muestra la lista de tareas asignadas actualmente en la **[!UICONTROL Mis tareas]** , creado por usted en la **[!UICONTROL Tareas asignadas]** y las tareas que ya haya completado en la pestaña **[!UICONTROL Tareas completadas]** pestaña. Puede seleccionar una tarea y hacer clic en **[!UICONTROL Completar tarea]** para aprobar o rechazar una tarea. También puede seleccionar una tarea y hacer clic en **[!UICONTROL Abrir detalles de tarea]** para ver la tarea y aprobarla, rechazarla, editarla o eliminarla.
 
 ![Tareas en el espacio de trabajo](assets/tasks-workspace.png)
 
