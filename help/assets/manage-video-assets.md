@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: fd1c3d1e524e5882ae04ca784b618ddba123bdd6
+source-git-commit: 4b05e8f8ae554e7c0881134ef24ca8ce35e3e2bf
 workflow-type: tm+mt
-source-wordcount: '4975'
+source-wordcount: '4976'
 ht-degree: 6%
 
 ---
@@ -41,7 +41,7 @@ Más información sobre [cargando recursos](manage-digital-assets.md#uploading-a
 
 ### Previsualización de recursos de vídeo
 
-Puede obtener una vista previa de las representaciones MP4 en el [!DNL Assets] interfaz de usuario. Para obtener una vista previa de un recurso de vídeo, siga estos pasos:
+Puede obtener una vista previa de los vídeos en las representaciones compatibles en la [!DNL Assets] interfaz de usuario. Para obtener una vista previa de un recurso de vídeo, siga estos pasos:
 
 1. Cargue un recurso de vídeo de un formato compatible en [!DNL Experience Manager Assets]. Obtenga más información acerca de [formatos de vídeo compatibles](file-format-support.md#video-formats). <br>Una vez cargado, el recurso de vídeo se procesa y se genera una vista previa de la representación.
 1. Haga clic en el recurso y seleccione ![opción de detalles](assets/do-not-localize/details_icon.svg) **[!UICONTROL Detalles]**  en la barra de herramientas superior. El recurso de vídeo se abre en el visor de vídeo.
