@@ -3,10 +3,10 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 17903c6e44afd1742d21b7fc7dbe4d7c63fe8b6b
+source-git-commit: fa106c2e3fec70971e2c54572199e35c24db0aa7
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 22%
+source-wordcount: '751'
+ht-degree: 38%
 
 ---
 
@@ -26,7 +26,7 @@ En la siguiente sección se describen las notas de la versión de la funcionalid
 
 ## Fecha de la versión {#release-date}
 
-La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] (2023.12.0) fue el viernes, 14 de diciembre de 2023. La siguiente versión con funcionalidades (2024.1.0) está planificada para el jueves, 25 de enero de 2023.
+La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.1.0) fue el viernes, 25 de enero de 2024. La próxima versión con funcionalidades (2024.2.0) está planificada para el viernes, 29 de febrero de 2024.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
@@ -44,45 +44,41 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Programa de usuarios pioneros {#sites-early-adopter}
+### Extension Manager en AEM Sites {#sites-extension-manager}
 
-**Puede aprovechar las [Servicio Real User Monitoring (RUM) Data](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** AEM para habilitar la recopilación del lado del cliente para el uso de la as a Cloud Service.
+**Explore la nueva [Extension Manager en AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/)** AEM para personalizar la configuración de la mediante la configuración de extensiones de interfaz de usuario.
 
-El servicio de datos de Real User Monitoring (RUM) ofrece una reflexión más precisa de las interacciones del usuario, lo que garantiza una medida fiable de la participación en el sitio web. Es una gran oportunidad para obtener perspectivas avanzadas sobre el rendimiento de su página. Aunque esto resulta beneficioso para los clientes que utilizan CDN administrada por Adobe o CDN no administrada por Adobe. Además, para los clientes que utilizan una CDN administrada que no es de Adobe, ahora se pueden habilitar los informes de tráfico automatizados para ellos, lo que elimina la necesidad de compartir cualquier informe de tráfico con Adobe.
+![Extension Manager en AEM Sites](/help/assets/sites/extension-manager/homepage.png)
 
-Si está interesado en probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a `aemcs-rum-adopter@adobe.com`, junto con su nombre de dominio para el entorno de producción, ensayo y desarrollo desde su dirección de correo electrónico asociada a su Adobe ID. El equipo de productos de Adobe habilitará entonces el servicio de datos de Real User Monitoring (RUM).
+El Extension Manager de AEM Sites permite a los desarrolladores y profesionales acceder, administrar y personalizar las extensiones de la interfaz de usuario creadas para mejorar la funcionalidad de AEM Sites.
+Con el Extension Manager, puede:
 
+* Habilitar o deshabilitar las extensiones por instancia;
+* Configurar parámetros de extensión;
+* Previsualizar extensiones y generar un vínculo de vista previa compartible;
+* Descubra las funciones de extensibilidad de la IU mediante demostraciones interactivas;
+* Acceda a las funciones experimentales de Adobe mediante extensiones de origen.
+
+Estamos buscando activamente comentarios y nuevos casos de uso para las extensiones de interfaz de usuario. Si desea conectarse, envíe un correo electrónico a `uix@adobe.com`.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nuevas funciones en la vista Recursos {#assets-view-features}
+### Funciones de prelanzamiento de vista de administrador {#admin-view-prerelease}
 
-**Creación de imágenes de GenAI con Adobe Firefly**
+**Previsualizar representaciones para todos los tipos de vídeo admitidos**
 
-Cree nuevas imágenes basadas en consultas de búsqueda con una integración de la función de Adobe Firefly de texto a imagen (requiere licencia de Adobe Firefly).
+Experience Manager Assets ahora genera de forma predeterminada representaciones de previsualización de todos los tipos de vídeo admitidos sin requerir una configuración de perfil de procesamiento
 
-![Integración del Firefly de recursos](/help/assets/assets/assets-firefly-integration.png)
+### Vista de recursos {#assets-view-features}
 
-**Buscar imágenes similares**
+**Lista de bloqueados de etiquetas inteligentes**
 
-Ahora puede encontrar contenido fácilmente seleccionando una imagen y viendo imágenes similares en el repositorio de Experience Manager Assets.
+Ahora, Assets Essentials permite definir una lista de bloqueados compuesta por palabras que no deben añadirse como etiquetas inteligentes a los recursos cuando se cargan en el repositorio. Esta posibilidad le ayuda a mantener el cumplimiento de la marca y reduce el esfuerzo por moderar las etiquetas inteligentes.
 
-<!--
+![Lista de bloqueados de etiquetas inteligentes](/help/assets/assets/block-tags.png)
 
-* **Smart tags blocklist**: Experience Manager Assets now enables you to define a list of blocked tags. These tags are automatically removed from the auto-generated smart tags when you upload assets to the repository. This capability performs tags governance and saves a lot of time as you can add a tag to the block list and AEM Assets automatically excludes it from the list of tags for any of the assets that are added to the repository.
-
-  ![storage usage insights](/help/assets/assets/block-tags.png)
-
-
-**Video Preview**: AEM Assets now generates preview renditions of all supported video formats by default, without the need to configure a processing profile.
-
--->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
-
-### Nuevas funciones de [!DNL Experience Manager Forms] {#forms-features}
-
-* **[Conectar un Forms adaptable con Microsoft® SharePoint List](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: AEM Forms proporciona una integración OOTB para enviar datos de formulario directamente a la lista de SharePoint, lo que le permite utilizar las capacidades de Listas de SharePoint. Puede configurar Microsoft SharePoint List como fuente de datos para un modelo de datos de formulario y utilizar el **Enviar mediante modelo de datos de formulario** Enviar acción para conectar un formulario adaptable con una lista de SharePoint.
 
 <!-- 
 
@@ -98,24 +94,19 @@ Ahora puede encontrar contenido fácilmente seleccionando una imagen y viendo im
 
   ![Compatibilidad con idiomas de derecha a izquierda](/help/forms/assets/right-to-left-language-support.png)
 
-* **[Protect sus documentos con las API de DocAssurance (parte de las API de comunicación)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: las API de DocAssurance le permiten proteger la información confidencial mediante la firma y el cifrado de los documentos. Mediante el cifrado, el contenido de un documento se transforma en un formato ilegible, lo que garantiza que solo los usuarios autorizados puedan obtener acceso. Esta capa reforzada de protección no solo protege los datos valiosos de los ojos no autorizados, sino que también proporciona tranquilidad. Las API de firmas permiten a su organización proteger la seguridad y la privacidad de los documentos de Adobe PDF que distribuye y recibe. Este servicio utiliza firmas digitales y certificación para garantizar que solo los destinatarios previstos puedan modificar los documentos.
+* **[Protect sus documentos con las API de DocAssurance (parte de las API de comunicación)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: las API de DocAssurance le permiten proteger la información confidencial mediante la firma y el cifrado de los documentos. Mediante el cifrado, el contenido de un documento se convierte a un formato ilegible, lo que garantiza que solo los usuarios autorizados puedan acceder. Esta capa reforzada de protección no solo protege los datos valiosos de posibles visitas no autorizadas, sino que también proporciona tranquilidad. Las API de firmas permiten a su organización proteger la seguridad y la privacidad de los documentos PDF de Adobe que distribuye y recibe. Este servicio utiliza firmas digitales y certificaciones para garantizar que solo los destinatarios autorizados puedan modificar los documentos.
 
   Puede escribir a `aem-forms-early-adopter-program@adobe.com` desde su id de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez y solicitar acceso a esta capacidad.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Programa de pioneros de configuración de CDN {#cdn-config-early-adopter}
+### Compatibilidad con Dynatrace {#dynatrace}
 
-Además de los lanzamientos recientes [Reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md), que incluye las reglas del cortafuegos de aplicaciones web (WAF) con licencia opcional, existe la oportunidad de utilizar la canalización de configuración para declarar e implementar otros tipos de configuración de CDN. Nos encantaría conocer sus casos de uso, incluidos los siguientes:
-* Redirecciones del lado del cliente 301/302
-* solicitudes de proxy en el perímetro a orígenes arbitrarios
-* Transformaciones de URL
-* configuración o modificación de encabezados de solicitud o respuesta
-* AEM páginas de error personalizadas cuando la CDN no puede llegar a la dirección de correo electrónico de
-* autenticación por nombre de usuario/contraseña
-* cualquier otra configuración de CDN útil
+AEM Los clientes de Dynatrace pueden monitorizar su uso de la. [Leer cómo](/help/implementing/cloud-manager/dynatrace.md) para solicitar conectividad con su entorno de Dynatrace para monitorizar el rendimiento de las aplicaciones. Tenga en cuenta que New Relic APM, que está disponible para todos los clientes, dejará de recopilar datos si Dynatrace está habilitado.
 
-Envíe un correo electrónico a **aemcs-cdn-config-adopter@adobe.com** desde su ID de correo electrónico oficial con sus comentarios.
+### Compatibilidad con RDE para código front-end mediante temas de sitio y plantillas de sitio: Programa para usuarios pioneros {#rde-frontend-early-adopter}
+
+[Entornos de desarrollo rápido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) ahora admite código front-end basado en [temas del sitio](/help/sites-cloud/administering/site-creation/site-themes.md) y [plantillas del sitio](/help/sites-cloud/administering/site-creation/site-templates.md), para los primeros usuarios. Con los RDE, esto se hace usando una directiva de línea de comandos, en lugar de una [canalización front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Póngase en contacto con **aemcs-rde-support@adobe.com** para probarlo y proporcionar comentarios.
 
 ## Cloud Manager {#cloud-manager}
 

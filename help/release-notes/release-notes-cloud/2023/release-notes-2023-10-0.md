@@ -1,17 +1,17 @@
 ---
 title: Notas de la versión 2023.10.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2023.10.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
-source-git-commit: d79335bde72a2517939e9bfc07a75ab7a8b6b0b9
+exl-id: 81a6cbd2-7101-429b-8572-2650c5bea963
+source-git-commit: 811a8f4d83a1034737c23b1707a24b52742fef55
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 26%
+source-wordcount: '918'
+ht-degree: 50%
 
 ---
 
-
 # Notas de la versión 2023.10.0 para [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-En la siguiente sección se describen las notas de la versión de la funcionalidad actual (la más reciente) de [!DNL Experience Manager] as a Cloud Service.
+En la siguiente sección se describen las notas de la versión de funciones de la versión 2023.10.0 de [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ En la siguiente sección se describen las notas de la versión de la funcionalid
 
 ## Fecha de la versión {#release-date}
 
-La fecha de lanzamiento de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la versión de la función actual (2023.10.0) es el 26 de octubre de 2023. La próxima versión de la funcionalidad (2023.11.0) está planificada para el 30 de noviembre de 2023.
+La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.10.0) fue el viernes, 26 de octubre de 2023. La próxima versión con funcionalidades (2023.11.0) está planificada para el viernes, 30 de noviembre de 2023.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
@@ -59,7 +59,7 @@ Eche un vistazo al vídeo Información general sobre la versión de octubre de 2
 
 ### Funciones previas al lanzamiento disponibles en [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
-* **Dynamic Media**: [Compatibilidad con subtítulos múltiples y pistas de audio múltiple para vídeos en Dynamic Media](/help/assets/dynamic-media/video.md#about-msma): ahora se pueden añadir fácilmente varios subtítulos y varias pistas de audio a un vídeo principal. Esta capacidad significa que los vídeos son accesibles para toda la audiencia global. Puede personalizar un solo vídeo principal publicado a una audiencia global en varios idiomas y adherirse a las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
+* **Dynamic Media**: [compatibilidad con subtítulos y pistas de audio múltiples para vídeos en Dynamic Media](/help/assets/dynamic-media/video.md#about-msma). Ahora se pueden añadir fácilmente varios subtítulos y pistas de audio a un vídeo principal. Esta capacidad significa que los vídeos son accesibles para una audiencia global. Se puede personalizar un único vídeo inicial publicado para una audiencia global en varios idiomas y cumplir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
 
   ![Pestaña Subtítulos y pistas de audio en la página Propiedades de un recurso de vídeo seleccionado.](/help/release-notes/assets/msma-aem-cs.png)*Pestaña Subtítulos y pistas de audio en la página Propiedades de un recurso de vídeo seleccionado.*
 
@@ -69,14 +69,14 @@ Eche un vistazo al vídeo Información general sobre la versión de octubre de 2
 
 * **[Propiedades personalizadas para Forms adaptable](/help/forms/template-editor-core-components.md#add-a-custom-group-name-in-the-policy-of-template-editor)**: puede asociar atributos personalizados (pares clave-valor) con una plantilla de formulario o un componente de formularios adaptables para permitir a los desarrolladores de formularios proporcionar comportamientos de formulario dinámicos que se adapten en función de los valores de estos atributos personalizados. Por ejemplo, los desarrolladores pueden crear diferentes representaciones de un componente Forms sin encabezado en plataformas móviles, de escritorio o web, en función de los valores de los atributos personalizados, lo que mejora significativamente la experiencia del usuario en una amplia gama de dispositivos.
 
-* **Temas y plantillas**: Inicie el proceso de creación de formularios con nuestras nuevas temáticas y plantillas, diseñadas para potenciar tanto a profesionales experimentados como a autores de nuevos formularios. Creadas sin problemas con los componentes principales de Forms adaptables, estas temáticas y plantillas cuidadosamente depuradas le permiten empezar a crear formularios rápidamente para los casos de uso más comunes.
+* **Temas y plantillas**: Inicie el proceso de creación de formularios con nuestras nuevas temáticas y plantillas, diseñadas para potenciar tanto a profesionales experimentados como a autores de nuevos formularios. Estas temáticas y plantillas creadas de forma optimizada y seleccionada, con los componentes principales de Formularios adaptables, le permiten empezar a crear formularios rápidamente para los casos de uso más comunes.
 
   ![Plantillas listas para usar](/help/forms/assets/form-templates-ootb.png)
 
 
 ### Programa de adopción temprana {#forms-early-adopter}
 
-* **[Protect sus documentos con las API de DocAssurance (parte de las API de comunicación)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: las API de DocAssurance le permiten proteger la información confidencial mediante la firma y el cifrado de los documentos. Mediante el cifrado, el contenido de un documento se transforma en un formato ilegible, lo que garantiza que solo los usuarios autorizados puedan obtener acceso. Esta capa reforzada de protección no solo protege los datos valiosos de los ojos no autorizados, sino que también proporciona tranquilidad. Las API de firmas permiten a su organización proteger la seguridad y la privacidad de los documentos de Adobe PDF que distribuye y recibe. Este servicio utiliza firmas digitales y certificación para garantizar que solo los destinatarios previstos puedan modificar los documentos.
+* **[Protect sus documentos con las API de DocAssurance (parte de las API de comunicación)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: las API de DocAssurance le permiten proteger la información confidencial mediante la firma y el cifrado de los documentos. Mediante el cifrado, el contenido de un documento se convierte a un formato ilegible, lo que garantiza que solo los usuarios autorizados puedan acceder. Esta capa reforzada de protección no solo protege los datos valiosos de posibles visitas no autorizadas, sino que también proporciona tranquilidad. Las API de firmas permiten a su organización proteger la seguridad y la privacidad de los documentos PDF de Adobe que distribuye y recibe. Este servicio utiliza firmas digitales y certificaciones para garantizar que solo los destinatarios autorizados puedan modificar los documentos.
 
   Puede escribir a `aem-forms-early-adopter-program@adobe.com` desde su id de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez y solicitar acceso a esta capacidad.
 

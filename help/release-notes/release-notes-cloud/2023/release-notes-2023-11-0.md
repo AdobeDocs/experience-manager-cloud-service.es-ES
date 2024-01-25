@@ -1,17 +1,17 @@
 ---
 title: Notas de la versión 2023.11.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2023.11.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
-source-git-commit: c33874869bccae1e9837b30827a655e70636dd56
+exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
+source-git-commit: 07a799cf374bbd1ce0fe5d85433bf12d1d5ee648
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 15%
+ht-degree: 23%
 
 ---
 
-
 # Notas de la versión 2023.11.0 para [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-En la siguiente sección se describen las notas de la versión de la funcionalidad actual (la más reciente) de [!DNL Experience Manager] as a Cloud Service.
+En la siguiente sección se describen las notas de la versión de funciones de la versión 2023.11.0 de [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ En la siguiente sección se describen las notas de la versión de la funcionalid
 
 ## Fecha de la versión {#release-date}
 
-La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] (2023.11.0) fue el viernes, 30 de noviembre de 2023. La siguiente versión con funcionalidades (2023.12.0) está planificada para el viernes, 14 de diciembre de 2023.
+La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.11.0) fue el viernes, 30 de noviembre de 2023. La próxima versión con funcionalidades (2023.12.0) está planificada para el viernes, 14 de diciembre de 2023.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
@@ -66,11 +66,11 @@ Eche un vistazo al vídeo Información general sobre la versión de noviembre de
 
 * **Informes de uso del almacenamiento en Insights**: los administradores ahora tienen la capacidad de ver los informes de uso del almacenamiento disponibles como parte de Insights.
 
-  ![datos de uso de almacenamiento](/help/assets/assets/storage-usage-insights.png)
+  ![uso de almacenamiento en Insights](/help/assets/assets/storage-usage-insights.png)
 
-* **Configuración de la primera página principal de búsqueda**: Experience Manager Assets ahora le permite configurar la experiencia de página principal para su organización. Si selecciona buscar primero como página principal, puede configurar la alineación de la barra de búsqueda, la imagen de fondo y el logotipo de su organización.
+* **Configuración de la primera página principal de búsqueda**: Experience Manager Assets ahora le permite configurar la experiencia de página principal para su organización. Si selecciona Buscar primero como página principal, puede configurar la alineación de la barra de búsqueda, la imagen de fondo y el logotipo de su organización.
 
-  ![buscar primera configuración](/help/assets/assets/search-first-configuration.png)
+  ![configuración de Buscar primero](/help/assets/assets/search-first-configuration.png)
 
 ### Nuevas funciones del prelanzamiento para la vista de administrador {#admin-view-features-prerelease}
 
@@ -108,7 +108,7 @@ Eche un vistazo al vídeo Información general sobre la versión de noviembre de
 
   ![Compatibilidad con idiomas de derecha a izquierda](/help/forms/assets/right-to-left-language-support.png)
 
-* **[Protect sus documentos con las API de DocAssurance (parte de las API de comunicación)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: las API de DocAssurance le permiten proteger la información confidencial mediante la firma y el cifrado de los documentos. Mediante el cifrado, el contenido de un documento se transforma en un formato ilegible, lo que garantiza que solo los usuarios autorizados puedan obtener acceso. Esta capa reforzada de protección no solo protege los datos valiosos de los ojos no autorizados, sino que también proporciona tranquilidad. Las API de firmas permiten a su organización proteger la seguridad y la privacidad de los documentos de Adobe PDF que distribuye y recibe. Este servicio utiliza firmas digitales y certificación para garantizar que solo los destinatarios previstos puedan modificar los documentos.
+* **[Protect sus documentos con las API de DocAssurance (parte de las API de comunicación)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: las API de DocAssurance le permiten proteger la información confidencial mediante la firma y el cifrado de los documentos. Mediante el cifrado, el contenido de un documento se convierte a un formato ilegible, lo que garantiza que solo los usuarios autorizados puedan acceder. Esta capa reforzada de protección no solo protege los datos valiosos de posibles visitas no autorizadas, sino que también proporciona tranquilidad. Las API de firmas permiten a su organización proteger la seguridad y la privacidad de los documentos PDF de Adobe que distribuye y recibe. Este servicio utiliza firmas digitales y certificaciones para garantizar que solo los destinatarios autorizados puedan modificar los documentos.
 
   Puede escribir a `aem-forms-early-adopter-program@adobe.com` desde su id de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez y solicitar acceso a esta capacidad.
 

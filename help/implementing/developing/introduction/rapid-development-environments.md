@@ -2,10 +2,10 @@
 title: Entornos de desarrollo rápido
 description: Aprenda a utilizar entornos de desarrollo rápido para iteraciones de desarrollo rápido en un entorno de nube.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 43f76a3f1e0bb52ca9d44982b2bb2b37064edf9f
 workflow-type: tm+mt
-source-wordcount: '3304'
-ht-degree: 5%
+source-wordcount: '3414'
+ht-degree: 4%
 
 ---
 
@@ -66,7 +66,7 @@ Siga estos pasos para poder usar Cloud Manager para crear un RDE para su program
 
 1. Haga clic en **Guardar** para agregar el entorno especificado.
 
-La pantalla **Información general** ahora muestra el nuevo entorno en la tarjeta **Entornos.**
+El **Información general** ahora muestra su nuevo entorno en la **Entornos** Tarjeta de.
 
 AEM Tras la creación, los RDE se establecen en la versión de la versión de la aplicación disponible más reciente AEM Un restablecimiento de RDE, que también se puede realizar mediante Cloud Manager, ciclo el RDE y lo establece en la versión de la versión de la aplicación más reciente que se encuentre disponible en el mercado de trabajo de la comunidad de datos de.
 
@@ -310,6 +310,56 @@ The analyser found the following errors for publish :
 
 El ejemplo de código anterior ilustra el comportamiento si un paquete no se resuelve. En cuyo caso, se &quot;almacena en zona intermedia&quot; y solo se instala si sus requisitos (importaciones que faltan, en este caso) se satisfacen mediante la instalación de otro código.
 
+<u>Implementación de código front-end basado en temas de sitio y plantillas de sitio</u>
+
+>[!NOTE]
+>
+>Esta función aún no se conoce como GA, pero puede ser utilizada por los primeros usuarios que la adoptaron. Póngase en contacto con **aemcs-rde-support@adobe.com** para probarlo y proporcionar comentarios.
+
+Los RDE admiten código front-end basado en [temas del sitio](/help/sites-cloud/administering/site-creation/site-themes.md) y [plantillas del sitio](/help/sites-cloud/administering/site-creation/site-templates.md). Con RDE, esto se hace utilizando una directiva de línea de comandos para implementar paquetes front-end, en lugar de Cloud Manager [Canalización front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) se utiliza para otros tipos de entornos.
+
+Como de costumbre, cree su paquete front-end utilizando npm:
+
+`npm run build`
+
+Debe generar un `dist/` carpeta, de modo que la carpeta del paquete front-end debe contener un `package.json` archivo y `dist` carpeta:
+
+```
+ls ./path-to-frontend-pkg-folder/
+...
+dist
+package.json
+```
+Ahora está listo para implementar el paquete front-end en RDE apuntando a la carpeta de paquetes front-end:
+
+```
+aio aem:rde:install -t frontend ./path-to-frontend-pkg-folder/
+...
+#1: deploy completed for frontend frontend-pipeline.zip on author,publish - done by ... at 2024-01-18T15:33:22.898Z
+Logs:
+> Deployed artifact wknd-1.0.0-1705592008-26e7ec1a
+> with workspace hash 692021864642a20d6d298044a927d66c0d9cf2adf42d4cca0c800a378ac3f8d3
+```
+
+También puede comprimir el `package.json` archivo y `dist` e implemente ese archivo zip:
+
+`zip -r frontend-pkg.zip ./path-to-frontend-pkg-folder/dist ./path-to-frontend-pkg-folder/package.json`
+
+```
+aio aem:rde:install -t frontend frontend-pkg.zip
+...
+#1: deploy completed for frontend frontend-pipeline.zip on author,publish - done by ... at 2024-01-18T15:33:22.898Z
+Logs:
+> Deployed artifact wknd-1.0.0-1705592008-26e7ec1a
+> with workspace hash 692021864642a20d6d298044a927d66c0d9cf2adf42d4cca0c800a378ac3f8d3
+```
+
+>[!NOTE]
+>
+>El nombre de los archivos del paquete front-end debe cumplir las siguientes convenciones de nomenclatura:
+> * carpeta &quot;dist&quot;, para la carpeta npm build output package
+> * archivo &quot;package.json&quot;, para el paquete de dependencias npm
+
 ### Comprobación del estado de RDE {#checking-rde-status}
 
 Puede utilizar la CLI de RDE para comprobar si el entorno está listo para implementarse en, ya que las implementaciones se han realizado mediante el complemento de RDE.
@@ -470,8 +520,9 @@ Por estos motivos, se recomienda que, después de validar el código en un entor
 Tenga en cuenta también las siguientes consideraciones:
 
 * Los RDE no incluyen un nivel de previsualización
-* Actualmente, los RDE no admiten la visualización y depuración del código front-end implementado mediante la canalización front-end de Cloud Manager.
 * Actualmente, los RDE no son compatibles con el canal de prelanzamiento.
+* Mientras que la compatibilidad con RDE para ver y depurar el código front-end se basa en [temas del sitio](/help/sites-cloud/administering/site-creation/site-themes.md) y [plantillas del sitio](/help/sites-cloud/administering/site-creation/site-templates.md) implementado aún no está listo para GA, puede ser utilizado por los primeros usuarios. Póngase en contacto con **aemcs-rde-support@adobe.com** para probarlo y proporcionar comentarios.
+
 
 
 ## ¿Cuántos RDE necesito? {#how-many-rds-do-i-need}
