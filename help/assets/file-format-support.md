@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
+source-git-commit: 4c1525fd51956d3d788a91f58978a9c885e6daa5
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 11%
+source-wordcount: '1409'
+ht-degree: 33%
 
 ---
 
@@ -24,7 +24,7 @@ Los aspectos destacados de la conversión de recursos mediante microservicios de
 * Clave [formatos de archivo de imagen](#image-formats).
 * [Formatos de archivo Camera Raw](#camera-raw-formats) para una amplia gama de cámaras, incluyendo Canon, Nikon, Fujifilm, Olympus y otros fabricantes (con tecnología Adobe Camera Raw).
 * Común [formatos de documento](#document-formats), incluidos los formatos Microsoft® Office y Open Document.
-* Amplia gama de formatos de [vídeo](#video-formats) y [audio.](#audio-formats)
+* Amplia gama de [video](#video-formats) y [audio](#audio-formats) formatos.
 
 La siguiente leyenda describe el nivel de compatibilidad con cada formato.
 
@@ -147,31 +147,31 @@ Los formatos de documento admitidos para las funciones de administración de rec
 
 ## Formatos de vídeo {#video-formats}
 
-| Formato de archivo | Generación de miniaturas | Extracción de metadatos | Anchura/Altura |
-| ----------- | -------------------- | ------------------- | ------------ |
-| 3G2 | - | ✓ | - |
-| 3GP | - | ✓ | - |
-| AVI | ✓ | ✓ | ✓ |
-| DIVX | ✓ | - | ✓ |
-| F4V | ✓ | ✓ | ✓ |
-| FLV | ✓ | ✓ | ✓ |
-| M2T | ✓ | - | ✓ |
-| M2TS | ✓ | - | ✓ |
-| M2V | ✓ | - | ✓ |
-| M4V | ✓ | ✓ | ✓ |
-| MKV | ✓ | - | ✓ |
-| MOV | ✓ | ✓ | ✓ |
-| MP4 | ✓ | ✓ | ✓ |
-| MPEG | ✓ | ✓ | ✓ |
-| MPG | ✓ | ✓ | ✓ |
-| MTS | ✓ | - | ✓ |
-| MXF | ✓ | - | ✓ |
-| OGV | ✓ | - | ✓ |
-| QT | ✓ | - | ✓ |
-| R3D | - | ✓ | ✓ |
-| SWF | ✓ | - | ✓ |
-| WebM | ✓ | - | ✓ |
-| WMV | ✓ | ✓ | ✓ |
+| Formato de archivo | Generación de miniaturas | Extracción de metadatos | Anchura/Altura | Vista previa |
+| ----------- | -------------------- | ------------------- | ------------ | ------- |
+| 3G2 | - | ✓ | - | - |
+| 3GP | - | ✓ | - | - |
+| AVI | ✓ | ✓ | ✓ | ✓ |
+| DIVX | ✓ | - | ✓ | ✓ |
+| F4V | ✓ | ✓ | ✓ | ✓ |
+| FLV | ✓ | ✓ | ✓ | ✓ |
+| M2T | ✓ | - | ✓ | ✓ |
+| M2TS | ✓ | - | ✓ | ✓ |
+| M2V | ✓ | - | ✓ | ✓ |
+| M4V | ✓ | ✓ | ✓ | ✓ |
+| MKV | ✓ | - | ✓ | ✓ |
+| MOV | ✓ | ✓ | ✓ | ✓ |
+| MP4 | ✓ | ✓ | ✓ | ✓ |
+| MPEG | ✓ | ✓ | ✓ | ✓ |
+| MPG | ✓ | ✓ | ✓ | ✓ |
+| MTS | ✓ | - | ✓ | ✓ |
+| MXF | ✓ | - | ✓ | ✓ |
+| OGV | ✓ | - | ✓ | ✓ |
+| QT | ✓ | - | ✓ | ✓ |
+| R3D | - | ✓ | ✓ | ✓ |
+| SWF | ✓ | - | ✓ | ✓ |
+| WebM | ✓ | - | ✓ | ✓ |
+| WMV | ✓ | ✓ | ✓ | ✓ |
 
 ## Formatos de audio {#audio-formats}
 
@@ -205,7 +205,7 @@ Los formatos de documento admitidos para las funciones de administración de rec
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 y HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
 | MP4 | MPEG-4 | H264/AVC (todos los perfiles) | − |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | − |
-| MXF ‡ | MXF | XDCAM de Sony, MPEG-2, MPEG-4, Panasonic DVCPro | − |
+| ‡ MXF | MXF | XDCAM de Sony, MPEG-2, MPEG-4, Panasonic DVCPro | − |
 | OGV, OGG | OGG | Theora, VP3, Dirac | − |
 | WebM | WebM | Google VP8 | − |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Pantalla Microsoft® (MSS2), Microsoft® Photo Story (WVP2) |
@@ -234,7 +234,7 @@ Los formatos de documento admitidos para las funciones de administración de rec
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagen](/help/assets/dynamic-media/image-sets.md), [Medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md), y [Giro](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | ✓ | - | - | - | - | - |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagen](/help/assets/dynamic-media/image-sets.md), [Medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md), y [Giro](/help/assets/dynamic-media/spin-sets.md) |
-| PSD   ‡ | ✓ | - | - | - | - | - |
+| PSD ‡ | ✓ | - | - | - | - | - |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagen](/help/assets/dynamic-media/image-sets.md), [Medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md), y [Giro](/help/assets/dynamic-media/spin-sets.md) |
 
 ‡ La imagen combinada se extrae del archivo del PSD. Es una imagen que genera el [!DNL Adobe Photoshop] y se incluye en el archivo del PSD. Según la configuración, la imagen combinada puede ser o no la imagen real.
@@ -243,10 +243,10 @@ Los formatos de documento admitidos para las funciones de administración de rec
 
 Los siguientes subtipos de formatos de archivo de imagen rasterizada son *no* admitido en [!DNL Dynamic Media]:
 
-* Archivos PNG con un tamaño de fragmento IDAT bueno a 100 MB.
+* Archivos PNG con un tamaño de fragmento IDAT superior a 100 MB.
 * Archivos PSB.
 * Los archivos de PSD con un espacio de color distinto de CMYK, RGB, escala de grises o mapa de bits no son compatibles. No se admiten los espacios de color DuoTone, Lab e Indexed.
-* Archivos PSD con una profundidad de bits buena a 16.
+* Archivos PSD con una profundidad de bits superior a 16.
 * Archivos de TIFF que tienen datos de punto flotante.
 * Archivos de TIFF con espacio de color Lab.
 

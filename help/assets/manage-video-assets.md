@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 517412d3f9d79a35bd1c25bd0eb09c0dee63c9af
+source-git-commit: fd1c3d1e524e5882ae04ca784b618ddba123bdd6
 workflow-type: tm+mt
-source-wordcount: '4904'
+source-wordcount: '4975'
 ht-degree: 6%
 
 ---
@@ -25,12 +25,34 @@ Obtenga información sobre cómo administrar y editar los recursos de vídeo en 
 
 ## Carga y previsualización de recursos de vídeo {#upload-and-preview-video-assets}
 
-[!DNL Adobe Experience Manager Assets] genera previsualizaciones para recursos de vídeo con la extensión MP4. Puede obtener una vista previa de las representaciones en el [!DNL Assets] interfaz de usuario.
+Puede cargar y previsualizar recursos de vídeo de un formato compatible en [!DNL Experience Manager Assets].
+<!-- It generates previews for video assets with the extension MP4. -->
 
-1. En la carpeta o subcarpetas de recursos digitales, vaya a la ubicación donde desee agregar recursos digitales.
-1. Para cargar el recurso, haga clic en **[!UICONTROL Crear]** en la barra de herramientas y elija **[!UICONTROL Archivos]**. También puede arrastrar un archivo a la interfaz de usuario. Consulte [cargar recursos](manage-digital-assets.md#uploading-assets) para obtener más información.
-1. Para obtener una vista previa de un vídeo en la vista de tarjeta, haga clic en **[!UICONTROL Reproducir]** ![opción de reproducción](assets/do-not-localize/play.png) en el recurso de vídeo. Solo puede pausar o reproducir vídeo en la vista de tarjeta. El [!UICONTROL Reproducir] y [!UICONTROL Pausar] Las opciones de no están disponibles en la vista de lista.
-1. Para obtener una vista previa del vídeo en la página de detalles del recurso, seleccione **[!UICONTROL Editar]** en la tarjeta. El vídeo se reproduce en el reproductor de vídeo nativo del explorador. Puede reproducir, pausar, controlar el volumen y ampliar el vídeo a pantalla completa.
+### Cargar recursos de vídeo
+
+Para cargar un recurso de vídeo, siga estos pasos:
+
+1. En la carpeta o subcarpetas de recursos digitales, vaya a la ubicación donde debe agregar el recurso.
+1. Clic **[!UICONTROL Crear]** en la barra de herramientas y elija **[!UICONTROL Archivos]**. <br>También puede arrastrar un archivo a la interfaz de usuario.
+Más información sobre [cargando recursos](manage-digital-assets.md#uploading-assets) in [!DNL Experience Manager Assets].
+
+<!-- 1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
+1. To preview the video in the asset details page, select **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen. -->
+
+### Previsualización de recursos de vídeo
+
+Puede obtener una vista previa de las representaciones MP4 en el [!DNL Assets] interfaz de usuario. Para obtener una vista previa de un recurso de vídeo, siga estos pasos:
+
+1. Cargue un recurso de vídeo de un formato compatible en [!DNL Experience Manager Assets]. Obtenga más información acerca de [formatos de vídeo compatibles](file-format-support.md#video-formats). <br>Una vez cargado, el recurso de vídeo se procesa y se genera una vista previa de la representación.
+1. Haga clic en el recurso y seleccione ![opción de detalles](assets/do-not-localize/details_icon.svg) **[!UICONTROL Detalles]**  en la barra de herramientas superior. El recurso de vídeo se abre en el visor de vídeo.
+1. Haga clic en ![opción de reproducción](assets/do-not-localize/play.png) en la miniatura de vídeo. <br>Puede reproducir, pausar, controlar el volumen y ampliar el vídeo a pantalla completa.
+
+Para recursos de vídeo existentes en [!DNL Experience Manager Assets], debe hacer lo siguiente **[!UICONTROL Reprocesar]** los recursos en [!DNL Experience Manager] para activar la función de previsualización de vídeo. Obtenga información sobre cómo [reprocesar recursos digitales](reprocessing.md) in [!DNL Experience Manager].
+
+### Limitaciones de la previsualización de vídeo
+
+* Los archivos MXF no muestran previsualizaciones de vídeo aunque se haya generado la representación.
+* Los archivos WebM no generan representaciones de previsualización, ya que los exploradores web los pueden reproducir de forma nativa.
 
 ## Publicar recursos de vídeo {#publish-video-assets}
 
@@ -226,7 +248,7 @@ Deje abierta la página Crear configuración de YouTube; volverá a ella en un m
 
    Si lo desea, puede añadir una descripción.
 
-1. Seleccionar **[!UICONTROL Añadir]**.
+1. Seleccione **[!UICONTROL Añadir]**.
 1. Se muestra la verificación de YouTube/Google. Si aún no ha iniciado sesión en la cuenta de Google Cloud, omita este paso.
 
    * Introduzca el nombre de usuario y la contraseña de Google asociados con el ID del proyecto de Google y el texto JSON anteriores.
