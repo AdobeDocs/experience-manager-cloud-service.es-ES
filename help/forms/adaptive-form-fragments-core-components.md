@@ -5,10 +5,10 @@ topic-tags: author
 keywords: Agregar fragmentos de formulario adaptable, fragmentos de formulario adaptable, Crear un fragmento de formulario, Agregar un fragmento a un formulario adaptable, Administrar fragmentos
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 5d9cf5d4dee5122263b15cee8874975887c57219
 workflow-type: tm+mt
-source-wordcount: '1768'
-ht-degree: 94%
+source-wordcount: '1789'
+ht-degree: 93%
 
 ---
 
@@ -27,6 +27,10 @@ Los formularios adaptables proporcionan un mecanismo cómodo para crear segmento
 Los fragmentos de formulario se integran perfectamente en varios formularios, lo que optimiza la creación de formularios coherentes y de aspecto profesional. Los fragmentos de formulario garantizan la reutilización, la estandarización y la coherencia de la marca mediante la funcionalidad “cambiar una vez y reflejar en todas partes”. Experimente una mayor capacidad de mantenimiento y eficacia, ya que las actualizaciones realizadas en un solo lugar se propagan automáticamente a todos los formularios que utilizan estos fragmentos.
 
 Puede agregar un fragmento varias veces a un documento y utilizar las propiedades de enlace de datos de sus componentes para vincularlo a diferentes fuentes de datos o esquemas. Por ejemplo, puede utilizar el mismo fragmento de dirección para la dirección permanente, de comunicación y de facturación y conectarlo a diferentes campos de un origen de datos o esquema.
+
+>[!NOTE]
+>
+> Puede personalizar fácilmente la experiencia del fragmento para los usuarios con [Cuadro de diálogo Configurar y cuadro de diálogo Diseño del componente Fragmento de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html).
 
 ## Creación de un fragmento de formulario {#create-a-fragment}
 
