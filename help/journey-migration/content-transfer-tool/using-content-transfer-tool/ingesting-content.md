@@ -2,9 +2,9 @@
 title: Ingesta de contenido en Cloud Service
 description: Aprenda a utilizar Cloud Acceleration Manager para introducir contenido del conjunto de migración en una instancia de Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 4c8565d60ddcd9d0675822f37e77e70dd42c0c36
+source-git-commit: 281523183cecf1e74c33f58ca9ad038bba1a6363
 workflow-type: tm+mt
-source-wordcount: '2407'
+source-wordcount: '2410'
 ht-degree: 7%
 
 ---
@@ -38,7 +38,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración mediante C
    > Si la extracción se está ejecutando, el cuadro de diálogo lo indicará. Una vez que la extracción ha finalizado correctamente, la ingesta se inicia automáticamente. Si la extracción falla o se detiene, el trabajo de ingesta se rescindirá.
 
    * **Destino:** Seleccione el entorno de destino. En este entorno es donde se ingiere el contenido del conjunto de migración.
-      * Las ingestas no admiten un destino de entorno de desarrollo rápido (RDE) y no aparecen como una posible opción de destino, aunque el usuario tenga acceso a él.
+      * Las ingestas no admiten destinos de tipo Entorno de desarrollo rápido (RDE) o Vista previa, y no aparecen como una posible opción de destino, aunque el usuario tenga acceso a ellos.
       * Aunque un conjunto de migración se puede ingerir en varios destinos simultáneamente, un destino solo puede ser el destino de una ingesta en ejecución o en espera a la vez.
 
    * **Nivel:** Seleccione el nivel. (Autor/Publicación).
