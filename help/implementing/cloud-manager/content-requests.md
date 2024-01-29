@@ -2,10 +2,10 @@
 title: Explicación de las solicitudes de contenido de Cloud Service
 description: Si ha adquirido licencias de solicitud de contenido de Adobe, obtenga información acerca de los tipos de solicitudes de contenido que mide Adobe Experience Cloud as a Service y las variaciones con las herramientas de informes de análisis de una organización.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: e31b05f0cef6c5ca3a1c00b757eac013aa43bb90
+source-git-commit: 6212ad20cb427d6b2ccd4c467d571832f923ed2a
 workflow-type: tm+mt
-source-wordcount: '2690'
-ht-degree: 4%
+source-wordcount: '2683'
+ht-degree: 5%
 
 ---
 
@@ -96,9 +96,13 @@ Real User Monitoring (RUM) proporciona un profundo conocimiento de las métricas
 
 ### ¿Quién puede beneficiarse del servicio de monitoreo de datos RUM? {#who-can-benefit-from-rum-data-monitoring-service}
 
-El servicio de datos RUM es beneficioso para quienes utilizan la CDN de Adobe, ya que ofrece una reflexión más precisa de las interacciones del usuario, lo que garantiza una medida fiable de la participación en el sitio web al reflejar el número de vistas de página del lado del cliente que se pueden comparar con las vistas de página del registro de CDN del lado del servidor existentes. Además, para los clientes que utilizan su propia CDN, el Adobe ahora puede agilizar los informes de tráfico automáticos que incluyen Vistas de página para ellos, lo que significa que no tienen que compartir ningún informe de tráfico con Adobe.
+El servicio de datos de RUM es beneficioso para todos los clientes, ya sea mediante Adobe o su propia CDN. Ofrece una reflexión más precisa de las interacciones del usuario, lo que garantiza una medida fiable de la participación en el sitio web al reflejar el número de vistas de página en el lado del cliente.
 
-También es una buena oportunidad para obtener perspectivas avanzadas sobre el rendimiento de su página, tanto para los clientes que utilizan la CDN de Adobe como para aquellos que utilizan su propia CDN.
+En particular, para los usuarios de CDN de Adobe, rastrea con precisión las interacciones del usuario para una comparación directa de las vistas de página del lado del cliente con los registros de CDN del lado del servidor.
+
+Para los clientes que utilizan su propia CDN, pueden beneficiarse de la creación de informes de tráfico simplificados, ya que el Adobe ahora integra directamente estas vistas de página, lo que elimina la necesidad de informes independientes.
+
+Además, todos los clientes obtienen perspectivas profundas del rendimiento de la página para optimizar sus experiencias digitales de forma eficaz.
 
 ### Comprender cómo funciona el servicio de datos de Real User Monitoring (RUM) {#understand-how-the-rum-data-service-works}
 
