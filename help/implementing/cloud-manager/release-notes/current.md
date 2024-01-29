@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 06f534e6541bd04e005f3acf1edbb3e372c1cd0d
 workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 20%
+ht-degree: 47%
 
 ---
 
@@ -38,7 +38,7 @@ Puede aprovechar las [Servicio Real User Monitoring (RUM) Data](/help/implementi
 
 El servicio de datos de Real User Monitoring (RUM) ofrece una reflexión más precisa de las interacciones del usuario, lo que garantiza una medida fiable de la participación en el sitio web. Es una gran oportunidad para obtener perspectivas avanzadas sobre el rendimiento de su página. Esto resulta beneficioso para los clientes que utilizan CDN administrada por Adobe o CDN administrada por no Adobe. Para los clientes que utilizan una CDN administrada que no es de Adobe, ahora se pueden habilitar los informes de tráfico automatizados para ellos, lo que elimina la necesidad de compartir cualquier informe de tráfico con Adobe.
 
-Si está interesado en probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a `aemcs-rum-adopter@adobe.com` de la dirección de correo electrónico asociada a su Adobe ID. Incluya el nombre de dominio para los entornos de producción, fase y desarrollo en su correo electrónico.  La disponibilidad del programa de adopción anticipada de esta función es limitada.
+Si está interesado en probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a `aemcs-rum-adopter@adobe.com` de la dirección de correo electrónico asociada a su Adobe ID. Incluya el nombre de dominio para los entornos de producción, fase y desarrollo en su correo electrónico.  La disponibilidad del programa para primeros usuarios de esta funcionalidad es limitada.
 
 ### Traer su propio GitHub {#byo-github}
 
@@ -48,26 +48,26 @@ Si está interesado en probar esta nueva función y compartir sus comentarios, e
 
 ### Restauración de contenido de autoservicio {#content-restore}
 
-[Una nueva función de restauración de contenido de autoservicio](/help/operations/restore.md) ahora proporciona una restauración de copia de seguridad durante un máximo de siete días y está disponible para los usuarios que la adoptaron por primera vez con fines de evaluación, que incluye:
+[Una nueva funcionalidad de restauración de contenido de autoservicio](/help/operations/restore.md) ahora proporciona una restauración de copia de seguridad durante siete días y está disponible para los primeros usuarios para la evaluación:
 
-* Restauración de la copia de seguridad puntual de las 24 horas anteriores
-* Restauraciones a tiempo fijo de hasta siete días
+* Restauración de copias de seguridad puntuales de las 24 horas anteriores
+* Restauraciones a hora fija durante un máximo de siete días
 
 Si está interesado en probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a `aemcs-restorefrombackup-adopter@adobe.com` de su correo electrónico asociado a su Adobe ID.
 
-* El programa de los primeros en adoptarlo se limita únicamente a los entornos de desarrollo.
-* La disponibilidad del programa de adopción anticipada de esta función es limitada.
-* Esta función se utiliza para recuperar contenido eliminado accidentalmente y no está pensada para la recuperación ante desastres.
+* El programa para primeros usuarios se limita únicamente a los entornos de desarrollo.
+* La disponibilidad del programa para primeros usuarios de esta funcionalidad es limitada.
+* Esta funcionalidad se utiliza para recuperar contenido eliminado accidentalmente y no está pensada para la recuperación ante desastres.
 
 ### Tablero de auditoría de experiencias {#experience-audit-dashboard}
 
-[El panel de auditoría de experiencias de Cloud Manager](/help/implementing/cloud-manager/experience-audit-dashboard.md) incluye una vista de tendencias de las puntuaciones de rendimiento de la página, junto con perspectivas y recomendaciones para ayudarle a mejorarlas. La auditoría de experiencias se incluye como paso en la canalización de producción de Cloud Manager.
+[El tablero de auditoría de experiencias de Cloud Manager](/help/implementing/cloud-manager/experience-audit-dashboard.md) incluye una vista de tendencias de las puntuaciones de rendimiento de la página, junto con perspectivas y recomendaciones para ayudarle a mejorarlas. La auditoría de experiencias se incluye como paso en la canalización de producción de Cloud Manager.
 
 El tablero utiliza Google Lighthouse, una herramienta automatizada de código abierto para mejorar la calidad de sus aplicaciones web. Puede ejecutarlo en cualquier página web, pública o que requiera autenticación. Tiene auditorías de rendimiento, accesibilidad, aplicaciones web progresivas, SEO y más.
 
-¿Interesado en probar a conducir el nuevo tablero? Para empezar, envíe un correo electrónico a `aem-lighthouse-pilot@adobe.com` de su correo electrónico asociado a su Adobe ID.
+¿Está interesado en probar el nuevo tablero? Para empezar, envíe un correo electrónico a `aem-lighthouse-pilot@adobe.com` de su correo electrónico asociado a su Adobe ID.
 
 ## Correcciones de errores {#bug-fixes}
 
 * Se corrigió un error en el que las canalizaciones de configuración fallaban en el paso de compilación con un mensaje de error no claro si la ubicación de los archivos de configuración no se establecía correctamente. El mensaje de error ahora está claro e indica que el usuario debe comprobar que la ubicación de los archivos de configuración es correcta.
-* Cuando un paso de generación termina con el estado `FAILED` debido a un `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`Sin embargo, ahora se describe correctamente como un error debido a conflictos de combinación con la rama de destino.
+* Cuando un paso de compilación termina con el estado `FAILED` debido a un `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, ahora se describe correctamente como un error debido a conflictos de combinación con la rama de destino.

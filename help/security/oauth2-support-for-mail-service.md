@@ -5,7 +5,7 @@ exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
 workflow-type: tm+mt
 source-wordcount: '680'
-ht-degree: 83%
+ht-degree: 87%
 
 ---
 
@@ -66,7 +66,7 @@ A continuación, genere el token de actualización, que forma parte de la config
    ```
 
 1. Cuando se le pida, conceda el permiso.
-1. La dirección URL redirige a una nueva ubicación, construida con este formato:
+1. La dirección URL se redirecciona a una nueva ubicación, construida con este formato:
 
    ```
    http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`

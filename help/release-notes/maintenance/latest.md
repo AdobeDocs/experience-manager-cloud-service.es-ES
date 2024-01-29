@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 0b4c820159f918cb9b3a93d9ab36dc26b1d8da47
 workflow-type: tm+mt
 source-wordcount: '381'
-ht-degree: 32%
+ht-degree: 35%
 
 ---
 
@@ -15,9 +15,9 @@ En la siguiente sección se describen las notas de la versión técnicas actuale
 
 ## Versión 14697 {#release-14697}
 
-A continuación se resumen las mejoras continuas para la versión de mantenimiento 14697, que se publicó el martes, 18 de diciembre de 2023. Sustituye a las 14538 de la versión que tenían un problema. La versión de mantenimiento anterior era 14227.
+A continuación se resumen las mejoras continuas de la versión de mantenimiento 14697, que se publicó el martes, 18 de diciembre de 2023. Sustituye a las 14538 de la versión que tenían un problema. La versión de mantenimiento anterior era 14227.
 
-La activación de funciones 2023.12.0 proporciona el conjunto completo de funciones para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es) para obtener más información.
+La activación de funciones 2023.12.0 proporcionará el conjunto completo de funciones para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es) para obtener más información.
 
 ### Mejoras {#enhancements-14697}
 
