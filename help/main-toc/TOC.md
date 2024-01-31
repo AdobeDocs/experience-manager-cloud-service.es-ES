@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 796dbcfefc6ed5e1b937a0c45ec1b3987c3c2af3
+source-git-commit: b63dc036834210a6fdfe856c1972ede4888b9758
 workflow-type: tm+mt
-source-wordcount: '4615'
+source-wordcount: '4619'
 ht-degree: 95%
 
 ---
@@ -1119,7 +1119,7 @@ ht-degree: 95%
       + [Introducción al editor universal en AEM](/help/implementing/universal-editor/getting-started.md)
       + [Información general para desarrolladores de Universal Editor](/help/implementing/universal-editor/developer-overview.md)
       + [Atributos y tipos de elementos](/help/implementing/universal-editor/attributes-types.md)
-      + [Tipos de campos](/help/implementing/universal-editor/field-types.md)
+      + [Definiciones de modelo, campos y tipos de componentes](/help/implementing/universal-editor/field-types.md)
       + [Autenticación del editor universal](/help/implementing/universal-editor/authentication.md)
       + [Desarrollo local de AEM con el Editor universal](/help/implementing/universal-editor/local-dev.md)
       + [Llamadas al editor universal](/help/implementing/universal-editor/calls.md)
