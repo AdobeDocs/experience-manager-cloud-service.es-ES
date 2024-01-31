@@ -1,18 +1,18 @@
 ---
-title: Importe y exporte metadatos de recursos de manera masiva
+title: Importación y exportación de metadatos de recursos de forma masiva
 description: Este artículo describe cómo importar y exportar metadatos por lotes.
 contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 52a6cb359bfe0d76bdceb3f517e92d78994872c8
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 12%
+source-wordcount: '732'
+ht-degree: 9%
 
 ---
 
-# Importe y exporte metadatos de recursos de manera masiva {#import-and-export-asset-metadata-in-bulk}
+# Importación y exportación de metadatos de recursos de forma masiva {#import-and-export-asset-metadata-in-bulk}
 
 Adobe Experience Manager Assets permite importar metadatos de recursos de forma masiva mediante un archivo CSV. Puede realizar actualizaciones masivas de los recursos cargados recientemente o de los recursos existentes importando un archivo CSV. También puede introducir metadatos de recursos de forma masiva desde sistemas de terceros en formato CSV.
 
@@ -30,7 +30,7 @@ La importación de metadatos es asíncrona y no impide el rendimiento del sistem
 
    | Parámetro | Descripción |
    | ---------------------- | ------- |
-   | Tamaño del lote | Número de recursos de un lote cuyos metadatos se van a importar. El valor predeterminado es 50. El valor máximo es 100. |
+   | Tamaño de lote | Número de recursos de un lote cuyos metadatos se van a importar. El valor predeterminado es 50. El valor máximo es 100. |
    | Separador de campos | El valor predeterminado es `,` (una coma). Puede especificar cualquier otro carácter. |
    | Delimitador de varios valores | Separador para valores de metadatos. El valor predeterminado es `|`. |
    | Lanzar flujos de trabajo | False de forma predeterminada. Cuando se establece en `true` XMP y la configuración predeterminada están vigentes para el flujo de trabajo de escritura diferida de metadatos DAM (que escribe metadatos en los datos binarios). Al habilitar los flujos de trabajo, el sistema se ralentiza. |
@@ -60,6 +60,10 @@ Algunos casos de uso para exportar metadatos por lotes son:
 * Comparta metadatos de recursos con un equipo de proyecto más amplio.
 * Probar o auditar el cumplimiento de los metadatos.
 * Externalice los metadatos para una localización independiente.
+
+>[!NOTE]
+>
+>Las exportaciones de metadatos están limitadas a 1 048 575 recursos, que corresponden al tamaño máximo de la hoja de cálculo en Microsoft Excel. Si una jerarquía exportada contiene más de este número de recursos, solo se incluirán en el archivo CSV los metadatos de los primeros 1 048 575 recursos.
 
 1. Seleccione la carpeta de recursos que contiene los recursos para los que desea exportar metadatos. En la barra de herramientas, seleccione **[!UICONTROL Exportar metadatos]**.
 1. En el cuadro de diálogo Exportación de metadatos, especifique un nombre para el archivo CSV. Para exportar metadatos de recursos en subcarpetas, seleccione **[!UICONTROL Incluir recursos en subcarpetas]**.
