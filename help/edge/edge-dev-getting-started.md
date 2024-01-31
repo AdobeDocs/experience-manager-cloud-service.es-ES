@@ -2,9 +2,9 @@
 title: AEM Guía de introducción para desarrolladores para la creación de contenido con Edge Delivery Services en la creación de
 description: Esta guía le ayudará a ponerse en marcha con un nuevo sitio de Adobe Experience Manager que utiliza Edge Delivery Services y el editor universal para la creación de contenido
 feature: Edge Delivery Services
-source-git-commit: eae751441435949296eb76a7e9b4103393860a8d
+source-git-commit: 5967bd78b9c23cf3451ac3b0ec2118da5200ddc1
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -48,8 +48,6 @@ En primer lugar, deberá crear un nuevo proyecto en GitHub basado en la plantill
    ![Copiar proyecto de repositorio](assets/edge-dev-getting-started/use-template-project.png)
 
 1. De forma predeterminada, se le asignará el repositorio. Cambie esto según sea necesario, proporcione un nombre y una descripción del repositorio y haga clic en **Crear repositorio**.
-
-   * El repositorio debe ser **Público**.
 
    ![Creación del repositorio](assets/edge-dev-getting-started/create-repo.png)
 
