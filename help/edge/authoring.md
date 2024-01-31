@@ -2,13 +2,13 @@
 title: Creación de contenido para Edge Delivery Services
 description: Descubra cómo funciona la creación de contenido con los Edge Delivery Services AEM y cómo crear contenido de con los Edge Delivery Services.
 feature: Edge Delivery Services
-source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
+exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
+source-git-commit: 7d28a3a8304d79ecc3143bdc9373134d312af49d
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 14%
+source-wordcount: '491'
+ht-degree: 13%
 
 ---
-
 
 # Creación de contenido para Edge Delivery Services {#authoring-edge}
 
@@ -53,6 +53,8 @@ Los detalles de los bloques se pueden configurar en el carril Propiedades.
 ![Configuración de propiedades de bloque](assets/block-properties.png)
 
 Para obtener más información sobre cómo crear contenido con el editor universal, consulte el documento [Creación de contenido con el editor universal.](/help/implementing/universal-editor/authoring.md)
+
+Consulte la [AEM Guía de introducción para desarrolladores para la creación de contenido con Edge Delivery Services en la creación de](/help/edge/edge-dev-getting-started.md) AEM para aprender a iniciar su propio proyecto para crear proyectos con Edge Delivery Services de y de la.
 
 ## Cómo empezar a trabajar {#how-to-get-started}
 

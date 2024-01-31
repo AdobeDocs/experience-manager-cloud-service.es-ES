@@ -1,8 +1,8 @@
 ---
-source-git-commit: 2f567d45a6ba2dfb4dd3346e8510bcb04113eefb
+source-git-commit: 45b263651f6139b1c7f83ff3485186b272ba1a4f
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 81%
+source-wordcount: '302'
+ht-degree: 71%
 
 ---
 # Fragmentos de código {#snippets}
@@ -56,3 +56,7 @@ ht-degree: 81%
 * [Enviar a Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Conectar el formulario adaptable a la aplicación de Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
 * [Conectar un formulario adaptable a OData de Microsoft® Dynamics](/help/forms/ms-dynamics-odata-configuration.md)
+
+## AEM Creación de informes con Edge Delivery Services Acceso anticipado {#aem-authoring-edge-early-access}
+
+[!BADGE TECNOLOGÍA DE ACCESO ANTICIPADO: Infórmenos sobre esta función en los laboratorios de AEM Sites de su canal de Slack.]{type=Informative url="/help/edge/docs/slack.md" tooltip="AEM La creación de informes con Edge Delivery Services es una tecnología de acceso anticipado."}
