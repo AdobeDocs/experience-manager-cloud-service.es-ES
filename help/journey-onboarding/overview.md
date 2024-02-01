@@ -2,10 +2,11 @@
 title: Introducción al Recorrido de incorporación a AEM as a Cloud Service
 description: Comience aquí para obtener una descripción general del recorrido guiado a través del proceso de incorporación para AEM as a Cloud Service.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: bba8310b9ba560ab9b6c2f9bea3e5c3cbec9228b
+recommendations: noDisplay
+source-git-commit: 98618765b405316b18110182c221ddd968c70e96
 workflow-type: tm+mt
-source-wordcount: '1256'
-ht-degree: 93%
+source-wordcount: '1290'
+ht-degree: 92%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 93%
 
 ## Introducción {#introduction}
 
-Adobe Experience Manager es un potente conjunto de servicios de contenido maquetable que ofrecen rápidamente experiencias personalizadas y de gran impacto en cualquier canal, desbloqueando el contenido de todos los canales. **Servicios de entrega perimetral** es la última innovación de Adobe Experience Manager que permite una velocidad de contenido extrema y ofrece experiencias excepcionales. Obtenga información sobre cómo empezar a trabajar con los Edge Delivery Services en [esta página](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html). Para comprender cómo usar los Edge Delivery Services, consulte la [Tutorial para desarrolladores](https://www.hlx.live/developer/tutorial) página.
+Adobe Experience Manager es un potente conjunto de servicios de contenido maquetable que ofrecen rápidamente experiencias personalizadas y de gran impacto en cualquier canal, desbloqueando el contenido de todos los canales. **Edge Delivery Services** es la última innovación de Adobe Experience Manager que permite una velocidad de contenido extrema y ofrece experiencias excepcionales. Obtenga información sobre cómo empezar a trabajar con los Edge Delivery Services en [esta página](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html). Para comprender cómo usar los Edge Delivery Services, consulte la [Tutorial para desarrolladores](https://www.hlx.live/developer/tutorial) página.
 
 La incorporación es el proceso durante el cual un administrador designado del sistema configura AEM as a Cloud Service para su organización. Esto incluye el aprovisionamiento inicial de recursos en la nube y la asignación de usuarios a funciones en función de sus responsabilidades laborales. Como resultado, cada miembro puede iniciar sesión y acceder a sus recursos de AEM as a Cloud Service.
 
@@ -98,11 +99,8 @@ Los recorridos de documentación están diseñados en torno a los principios de 
 
 Si quiere saber cómo recomienda Adobe que su equipo se incorpore a su nueva aplicación de AEM as a Cloud Service, aquí es donde debe empezar.
 
-<!-- ERROR: Not Found (HTTP error 404)
-## Additional Resources {#additional-resources}
+## Recursos adicionales {#additional-resources}
 
-The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
+Los siguientes son recursos opcionales adicionales si desea ir más allá del contenido del recorrido de incorporación.
 
-* [AEM Champion Tips and Tricks - Cloud Manager Onboarding Playbook](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/onboarding-playbook.md) - Watch this video to learn Cloud Manager onboarding tips and trick from an AEM champion. -->
-
-
+* [AEM Incorporación a la as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding.html) - Este breve vídeo ofrece una visión general del proceso de incorporación del Cloud Service AEM para la incorporación de la tecnología de la información en el sistema de gestión de la información ().
