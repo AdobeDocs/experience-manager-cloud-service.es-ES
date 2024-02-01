@@ -2,10 +2,10 @@
 title: Entorno de compilación
 description: Obtenga información sobre el entorno de compilación de Cloud Manager y cómo crea y prueba su código.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: f59959bc10e502d85d3f4797dcf4ad0490d233f4
+source-git-commit: 30f2eaf4d2edba13e875cd1bfe767e83a2b7f1a5
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 79%
+source-wordcount: '1166'
+ht-degree: 92%
 
 ---
 
@@ -20,7 +20,7 @@ Cloud Manager crea y prueba su código mediante un entorno de compilación espec
 
 * El entorno de compilación está basado en Linux, derivado de Ubuntu 22.04.
 * Apache Maven 3.8.8 está instalado.
-   * Adobe recomienda usuarios [Actualice sus repositorios de Maven para que utilicen HTTPS en lugar de HTTP.](#https-maven)
+   * Adobe recomienda [actualizar los repositorios de Maven para que utilicen HTTPS en lugar de HTTP.](#https-maven)
 * Las versiones de Java instaladas son JDK 8u371 y JDK 11.0.20 y Oracle.
 * De forma predeterminada, la variable `JAVA_HOME` la variable de entorno está configurada como `/usr/lib/jvm/jdk1.8.0_371` que contiene el Oracle JDK 8u371. Consulte la [Versión JDK de ejecución de Maven alternativa](#alternate-maven-jdk-version) para obtener más información.
 * Hay algunos paquetes de sistema adicionales instalados que son necesarios.
@@ -36,7 +36,6 @@ Cloud Manager crea y prueba su código mediante un entorno de compilación espec
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven se configura a nivel de sistema con un archivo `settings.xml`, que incluye automáticamente el repositorio de artefactos de Adobe público usando un perfil denominado `adobe-public`. (Consulte [Repositorio Maven público de Adobe](https://repo1.maven.org/) para obtener más información).
-* Node.js 18 está disponible para [canalizaciones front-end y full stack.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
 
 >[!NOTE]
 >
@@ -44,11 +43,11 @@ Cloud Manager crea y prueba su código mediante un entorno de compilación espec
 
 ## Repositorios de Maven HTTPS {#https-maven}
 
-Cloud Manager [versión 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) ha iniciado una actualización móvil del entorno de compilación (que finaliza con la versión 2023.12.0), que incluye una actualización de Maven 3.8.8. Un cambio significativo introducido en Maven 3.8.1 fue una mejora de la seguridad destinada a mitigar posibles vulnerabilidades. Específicamente, Maven ahora deshabilita todas las cookies inseguras `http://*` duplicaciones de forma predeterminada, tal como se describe en la [Notas de la versión de Maven.](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+Cloud Manager [versión 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) inició una actualización móvil del entorno de compilación (que finalizó con la versión 2023.12.0), que incluía una actualización a Maven 3.8.8. Un cambio significativo introducido en Maven 3.8.1 ha sido una mejora de la seguridad destinada a mitigar posibles vulnerabilidades. En concreto, Maven ahora deshabilita de forma predeterminada todas las duplicaciones de `http://*` inseguras, tal como se describe en las [Notas de la versión de Maven.](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
 
-Como resultado de esta mejora de seguridad, algunos usuarios pueden tener problemas durante el paso de generación, especialmente al descargar artefactos de repositorios Maven que utilizan conexiones HTTP no seguras.
+Como resultado de esta mejora de seguridad, algunas personas pueden tener problemas durante el paso de compilación, especialmente al descargar artefactos de repositorios Maven que utilizan conexiones HTTP no seguras.
 
-Para garantizar una experiencia sin problemas con la versión actualizada, Adobe recomienda que los usuarios actualicen sus repositorios de Maven para que utilicen HTTPS en lugar de HTTP. Este ajuste se ajusta al cambio creciente de la industria hacia protocolos de comunicación seguros y ayuda a mantener un proceso de construcción seguro y fiable.
+Para garantizar una experiencia sin problemas con la versión actualizada, Adobe recomienda actualizar los repositorios de Maven para que utilicen HTTPS en lugar de HTTP. Este ajuste se ha llevado a cabo para adaptarse a la adopción creciente de la industria de protocolos de comunicación seguros y ayuda a mantener un proceso de compilación seguro y fiable.
 
 ### Uso de una versión de Java específica {#using-java-support}
 

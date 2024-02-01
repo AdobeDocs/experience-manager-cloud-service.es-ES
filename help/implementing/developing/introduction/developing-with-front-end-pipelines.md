@@ -2,9 +2,9 @@
 title: Desarrollo de Sites con la canalización front-end
 description: Con la canalización front-end, se da más independencia a los desarrolladores de front-end y el proceso de desarrollo puede ganar velocidad sustancial. Este documento describe algunas consideraciones particulares del proceso de compilación del front-end que deben darse.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: de2d4355894d166d47f49a22af773b9e2c19e67b
+source-git-commit: 74e4c4cc57dbdc78b6c93efe78c856bdafbae477
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1169'
 ht-degree: 1%
 
 ---
@@ -20,17 +20,22 @@ ht-degree: 1%
 
 ## Contrato de versión front-end {#front-end-build-contract}
 
-Similar a la [entorno de compilación de pila completa,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) la canalización front-end tiene su propio entorno. Los desarrolladores tienen cierta flexibilidad en esta canalización siempre y cuando se observe el siguiente contrato de versión del front-end.
+Similar a la [entorno de compilación de pila completa,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) la canalización front-end tiene su propio entorno. Los desarrolladores tienen cierta flexibilidad al utilizar esta canalización siempre y cuando se observe el siguiente contrato de versión del front-end.
 
-La canalización front-end requiere que el proyecto front-end Node.js utilice el `build` directiva de script para generar la compilación que implementa la canalización front-end. Es decir, Cloud Manager utiliza el comando `npm run build` para generar el proyecto implementable en `dist` carpeta.
+La canalización front-end requiere que el proyecto front-end Node.js utilice el `build` para generar la compilación que implementa. Esto se debe a que Cloud Manager utiliza el comando `npm run build` para generar el proyecto implementable para la compilación del front-end.
 
-El contenido del `dist` AEM Esta carpeta es lo que se implementa finalmente para que se ejecute en as a Cloud Service desde la canalización de Cloud Manager.
+El contenido resultante de la `dist` Esta carpeta es lo que implementa Cloud Manager en última instancia, y los sirve como archivos estáticos. AEM Estos archivos están alojados de forma externa a la, pero están disponibles a través de una `/content/...` URL en el entorno implementado.
 
-### Versiones de nodo {#node-versions}
+## Versiones de nodo {#node-versions}
 
-De forma predeterminada, la canalización front-end utiliza el nodo 14, pero 12, 16 y 18 también están disponibles.
+El entorno de compilación del front-end es compatible con las siguientes versiones de Node.js.
 
-Puede usar el complemento `NODE_VERSION` para establecer la versión deseada.
+* 12
+* 14 (predeterminado)
+* 16
+* 18
+
+Puede usar el complemento `NODE_VERSION` [variable de entorno](/help/implementing/cloud-manager/environment-variables.md) para establecer la versión deseada.
 
 ## Fuente única de verdad {#single-source-of-truth}
 
