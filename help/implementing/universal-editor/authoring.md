@@ -2,10 +2,10 @@
 title: Creación de contenido con el editor universal
 description: Aprenda lo fácil e intuitivo que es para los autores crear contenido con el editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: a616b27c5212b00d3b51778402ed52a68028fdaf
 workflow-type: tm+mt
-source-wordcount: '2165'
-ht-degree: 38%
+source-wordcount: '2189'
+ht-degree: 37%
 
 ---
 
@@ -295,11 +295,14 @@ Además, los detalles del texto están disponibles en el carril de propiedades. 
 
 Puede editar el texto en su lugar haciendo doble clic o pulsando dos veces el componente.
 
-Pulse Intro o Retorno o seleccione fuera del cuadro de texto para guardar los cambios.
-
 ![Edición de un componente de texto enriquecido](assets/rich-text-editing.png)
 
-Además, las opciones de formato y los detalles del texto están disponibles en el carril de propiedades. Los cambios se guardan automáticamente una vez que el enfoque abandona el campo editado en el carril de propiedades.
+Para su comodidad, las opciones de formato y los detalles del texto están disponibles en dos lugares.
+
+* El **menú contextual** se abre sobre el bloque de texto enriquecido y ofrece opciones básicas de formato en contexto. Debido a limitaciones de espacio, algunas opciones pueden estar ocultas detrás del botón de los tres puntos.
+* El **carril de propiedades** muestra todas las opciones de formato disponibles junto con el texto.
+
+Los cambios se guardan automáticamente una vez que el enfoque abandona el campo editado.
 
 ### Edición de medios {#edit-media}
 
