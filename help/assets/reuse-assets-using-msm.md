@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 9e0aefa096a493df22860d0194a0a76f3eaf2390
 workflow-type: tm+mt
-source-wordcount: '3403'
-ht-degree: 12%
+source-wordcount: '3400'
+ht-degree: 10%
 
 ---
 
@@ -166,7 +166,7 @@ Para un recurso o carpeta de origen, puede ver la siguiente información y reali
 * Suspender la relación o cambiar la configuración de despliegue de una Live Copy específica.
 * Acceda a la consola de información general de live copy.
 
-Seleccione el recurso o la carpeta de origen, abra el carril izquierdo y haga clic en **[!UICONTROL Referencias]**. También puede seleccionar un recurso o una carpeta y utilizar la combinación de teclas `Alt + 4`. 
+Seleccione el recurso o la carpeta de origen, abra el carril izquierdo y haga clic en **[!UICONTROL Referencias]**. También puede seleccionar un recurso o una carpeta y utilizar el método abreviado de teclado `Alt + 4`.
 
 ![Acciones e información disponible en el carril Referencias para la fuente seleccionada](assets/referencerail_source.png)
 
@@ -186,7 +186,7 @@ Para un recurso o una carpeta de Live Copy, puede ver la siguiente información 
 * Abra o muestre una Live Copy específica en [!DNL Experience Manager] interfaz de usuario.
 * Despliegue las actualizaciones.
 
-Seleccione una carpeta o un recurso de Live Copy, abra el carril izquierdo y haga clic en **[!UICONTROL Referencias]**. También puede seleccionar un recurso o una carpeta y utilizar la combinación de teclas `Alt + 4`. 
+Seleccione una carpeta o un recurso de Live Copy, abra el carril izquierdo y haga clic en **[!UICONTROL Referencias]**. También puede seleccionar un recurso o una carpeta y utilizar el método abreviado de teclado `Alt + 4`.
 
 ![Acciones disponibles en el carril Referencias para la Live Copy seleccionada](assets/referencerail_livecopy.png)
 
@@ -223,7 +223,7 @@ También puede iniciar una acción de despliegue desde el carril Referencias des
 
 Una acción de sincronización extrae las modificaciones de un origen solo para la Live Copy seleccionada. La acción de sincronización respeta y mantiene las modificaciones locales realizadas después de cancelar la herencia. Las modificaciones locales no se sobrescriben y la herencia cancelada no se restablece. Puede iniciar una acción de sincronización de tres formas.
 
-| Dónde en [!DNL Experience Manager] interfaz | Cuándo y por qué utilizar | Utilización |
+| Dónde en [!DNL Experience Manager] interfaz | Cuándo y por qué utilizar | Cómo usar |
 |---|---|---|
 | [!UICONTROL Referencias] carril | Sincronice rápidamente cuando ya tenga seleccionado el origen. | Consulte [Acciones rápidas del carril Referencias para el origen](#ref-rail-source) |
 | Barra de herramientas en [!UICONTROL Propiedades] página | Inicie una sincronización cuando ya tenga abiertas las propiedades de Live Copy. | Consulte [Sincronización de una Live Copy](#sync-lc) |
@@ -248,8 +248,8 @@ Para ver los estados y la información relacionados con una acción de sincroniz
 Puede cancelar la herencia de Live Copy para un:
 
 * campo de metadatos
-* Variación de fragmento de contenido
-* Campo de datos del fragmento de contenido
+* [Variación de fragmento de contenido](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
+* [Campo de datos del fragmento de contenido](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
 
 Esto significa que el elemento ya no está sincronizado con el componente de origen. Puede habilitar la herencia en un momento posterior si es necesario.
 
@@ -319,7 +319,7 @@ Si tiene varios recursos en una carpeta de Live Copy, iniciar acciones en cada r
 
 1. Seleccione una carpeta de origen. Clic **[!UICONTROL Propiedades]** en la barra de herramientas. También puede utilizar el método abreviado de teclado `p`.
 1. Haga clic en **[!UICONTROL Origen de Live Copy]**. Para abrir la consola, haga clic en **[!UICONTROL Descripción general de Live Copy]**.
-1. En este tablero, seleccione un recurso de Live Copy de una carpeta de Live Copy. Haga clic en las acciones que desee en la barra de herramientas. Las acciones disponibles son **[!UICONTROL Sincronizar]**, **[!UICONTROL Restablecer]**, **[!UICONTROL Suspender]** y **[!UICONTROL Desconectar]**. Puede iniciar rápidamente estas acciones en cualquier recurso de cualquier número de carpetas de Live Copy que estén en una relación activa con la carpeta de origen seleccionada.
+1. En este tablero, seleccione un recurso de Live Copy de una carpeta de Live Copy. Haga clic en las acciones que desee en la barra de herramientas. Las acciones disponibles son **[!UICONTROL Sincronizar]**, **[!UICONTROL Restablecer]**, **[!UICONTROL Suspender]**, y **[!UICONTROL Desasociar]**. Puede iniciar rápidamente estas acciones en cualquier recurso de cualquier número de carpetas de Live Copy que estén en una relación activa con la carpeta de origen seleccionada.
 
    ![Actualice fácilmente muchos recursos en carpetas de Live Copy desde la consola Información general de Live Copy](assets/livecopyconsole_update_many_assets.png)
 
