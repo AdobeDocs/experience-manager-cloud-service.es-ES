@@ -2,10 +2,10 @@
 title: Atributos y tipos de elementos
 description: Obtenga información sobre los atributos de datos y los tipos de elementos que requiere el Editor universal.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 453cbaeabd28223cac5e732a551aa71f5a425839
+source-git-commit: ff8a832d61e42ac17ca37e5a3c41e39119879af6
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 76%
+ht-degree: 74%
 
 ---
 
@@ -30,11 +30,11 @@ Para que el editor universal pueda editar una aplicación, debe instrumentarse c
 |---|---|
 | `data-aue-resource` | Para el URN del recurso, consulte la sección [Instrumentación de la página del documento Introducción al editor universal en AEM](getting-started.md#instrument-thepage) |
 | `data-aue-prop` | Para el atributo del recurso, consulte la sección [Instrumentación de la página del documento Introducción al editor universal en AEM](getting-started.md#instrument-thepage) |
-| `data-aue-type` | Tipo del elemento editable (por ejemplo, texto, imagen, referencia, etc.) |
+| `data-aue-type` | [Tipo del elemento editable](#item-types) (por ejemplo, texto, imagen y referencia) |
 | `data-aue-filter` | Define qué referencias se pueden utilizar |
 | `data-aue-label` | Define una etiqueta personalizada para un elemento seleccionable que se muestra en el editor. <br>Si `itemmodel` está configurado, la etiqueta se recupera mediante el modelo |
 | `data-aue-model` | Define un modelo que se usa para la edición basada en formularios en el carril de propiedades |
-| `data-aue-behavior` | Define el comportamiento de una instrumentación; por ejemplo, el texto o la imagen independientes también pueden imitar un componente para hacerlo móvil o eliminable |
+| `data-aue-behavior` | Define el [comportamiento de una instrumentación,](#behaviors) por ejemplo, el texto o la imagen independientes también pueden imitar un componente para hacerlo movible o eliminable |
 
 ## Tipos de elementos {#item-types}
 
