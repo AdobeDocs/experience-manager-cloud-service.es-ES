@@ -5,9 +5,9 @@ hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '217'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Para admitir operaciones criptográficas asimétricas, AEM guarda certificados d
 
 ### Características del almacén de confianza {#truststore-characteristics}
 
-* El almacén de confianza se encuentra debajo de `/etc/truststore` y consta de un archivo de almacén de claves Java, su contraseña y los metadatos del repositorio. Tanto la contraseña como el propio almacén de claves se cifran por motivos técnicos, aunque los certificados contenidos sean accesibles para todos de forma predeterminada a través de la API
+* El almacén de confianza se encuentra debajo de `/etc/truststore` y consta de un archivo de almacén de claves Java, su contraseña y los metadatos del repositorio. Tanto la contraseña como el almacén de claves en sí están cifrados por motivos técnicos, aunque los certificados contenidos sean accesibles para todos de forma predeterminada a través de la API
 * De forma predeterminada, los certificados se utilizan solo para la compatibilidad con HTTPS y SAML, y el almacén debe crearse manualmente primero
 * Los clientes pueden usarlo en su propio código a través de la [API de almacén de claves](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-)
 * El almacén de confianza se puede administrar a través de la IU en **Herramientas** - **Seguridad** - **Almacén de confianza** o accediendo a *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`*, como se muestra a continuación:

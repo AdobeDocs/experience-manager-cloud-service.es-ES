@@ -3,9 +3,9 @@ title: Reglas de filtro de tráfico, incluidas reglas WAF
 description: Configuración de las reglas de filtro de tráfico, incluidas las reglas de cortafuegos de aplicación web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: 46e48b6bb8d2b926b55330024e145d608fcf3609
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3350'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Este artículo está organizado en las secciones siguientes:
 * **Información general sobre protección del tráfico:** descubra cómo está protegido contra el tráfico malintencionado.
 * **Proceso sugerido para configurar reglas:** lea acerca de una metodología de alto nivel para proteger su sitio web.
 * **Configuración:** descubra cómo configurar e implementar reglas de filtro de tráfico, incluidas las reglas WAF avanzadas.
-* **Sintaxis de reglas:** obtenga información sobre cómo declarar reglas de filtro de tráfico en el archivo de configuración de `cdn.yaml`. Esto incluye las reglas de filtro de tráfico disponibles para todos los clientes de Sites y Forms, y la subcategoría de reglas WAF para aquellos que otorgan licencia a esa capacidad.
+* **Sintaxis de reglas:** obtenga información sobre cómo declarar reglas de filtro de tráfico en el archivo de configuración de `cdn.yaml`. Esto incluye las reglas de filtro de tráfico disponibles para todos los clientes de Sites y Forms, y la subcategoría de reglas WAF para aquellos que otorgan licencia a esa funcionalidad.
 * **Ejemplos de reglas:** consulte ejemplos de reglas declaradas para ponerse en marcha.
 * **Reglas de límite de volumen:** aprenda a utilizar reglas de limitación de volumen para proteger el sitio de ataques de gran volumen.
 * **Registros de CDN:** compruebe qué reglas declaradas e indicadores WAF coinciden con el tráfico.
@@ -54,7 +54,7 @@ De forma predeterminada, Adobe toma medidas para evitar la degradación del rend
 
 Los clientes pueden tomar medidas proactivas para mitigar los ataques de la capa de aplicación (capa 7) configurando reglas en varios niveles del flujo de distribución de contenido.
 
-Por ejemplo, en la capa de Apache, los clientes pueden configurar el [módulo de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-access-to-content-filter) o [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html) para limitar el acceso a determinado contenido.
+Por ejemplo, en la capa de Apache, los clientes pueden configurar el [módulo de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#configuring-access-to-content-filter) o [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=es) para limitar el acceso a determinado contenido.
 
 Y, tal como se describe en este artículo, las reglas de filtro de tráfico pueden implementarse en la red de distribución de contenido (CDN) administrada por Adobe mediante la canalización de configuración de Cloud Manager. Además de las reglas de filtro de tráfico basadas en propiedades como la dirección IP, la ruta y los encabezados o las reglas basadas en la configuración de límites de volumen, los clientes también pueden obtener una licencia de una potente subcategoría de reglas de filtro de tráfico denominadas reglas WAF.
 
@@ -149,7 +149,7 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-El formato de las reglas de filtro de tráfico en el archivo `cdn.yaml` se describe a continuación. Ver algunos [otros ejemplos](#examples) en una sección posterior y en una sección independiente sobre [Reglas de límite de velocidad](#rate-limit-rules).
+El formato de las reglas de filtro de tráfico en el archivo `cdn.yaml` se describe a continuación. Vea algunos [ejemplos más](#examples) en una sección posterior y en una sección independiente sobre [Reglas de límite de volumen](#rate-limit-rules).
 
 
 | **Propiedad** | **La mayoría de las reglas de filtro de tráfico** | **Reglas de filtro de tráfico WAF** | **Tipo** | **Valor predeterminado** | **Descripción** |
@@ -192,7 +192,7 @@ Un grupo de condiciones está compuesto por varias condiciones simples o de grup
 
 | **Propiedad** | **Tipo** | **Descripción** |
 |---|---|---|
-| reqProperty | `string` | Solicitar propiedad.<br><br>Uno de:<br><ul><li>`path`: Devuelve la ruta completa de una dirección URL sin los parámetros de consulta.</li><li>`queryString`: Devuelve la parte de consulta de una dirección URL</li><li>`method`: devuelve el método HTTP utilizado en la solicitud.</li><li>`tier`: devuelve uno de `author`, `preview` o `publish`.</li><li>`domain`: devuelve la propiedad de dominio (tal como se define en el encabezado `Host`) en minúsculas</li><li>`clientIp`: devuelve la IP del cliente.</li><li>`clientCountry`: devuelve un código de dos letras ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) que identifica en qué país se encuentra el cliente.</li></ul> |
+| reqProperty | `string` | Solicitar propiedad.<br><br>Uno de:<br><ul><li>`path`: devuelve la ruta completa de una dirección URL sin los parámetros de consulta.</li><li>`queryString`: devuelve la parte de consulta de una dirección URL</li><li>`method`: devuelve el método HTTP utilizado en la solicitud.</li><li>`tier`: devuelve uno de `author`, `preview` o `publish`.</li><li>`domain`: devuelve la propiedad de dominio (tal como se define en el encabezado `Host`) en minúsculas</li><li>`clientIp`: devuelve la IP del cliente.</li><li>`clientCountry`: devuelve un código de dos letras ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) que identifica en qué país se encuentra el cliente.</li></ul> |
 | reqHeader | `string` | Devuelve el encabezado de la solicitud con el nombre especificado |
 | queryParam | `string` | Devuelve el parámetro de consulta con el nombre especificado |
 | reqCookie | `string` | Devuelve una cookie con el nombre especificado |
@@ -246,7 +246,7 @@ La propiedad `wafFlags`, que se puede utilizar en las reglas de filtro de tráfi
 | **Identificador de marca** | **Nombre de indicador** | **Descripción** |
 |---|---|---|
 | SQLI | Inyección de SQL | La inyección de SQL es el intento de obtener acceso a una aplicación o de obtener información privilegiada ejecutando consultas de base de datos arbitrarias. |
-| BACKDOOR | Puerta trasera | Una señal de puerta trasera es una solicitud que intenta determinar si hay un archivo de puerta trasera común en el sistema. |
+| PUERTA TRASERA | Puerta trasera | Una señal de puerta trasera es una solicitud que intenta determinar si hay un archivo de puerta trasera común en el sistema. |
 | CMDEXE | Ejecución de comandos | La ejecución de comandos es el intento de obtener control o dañar un sistema objetivo a través de comandos arbitrarios del sistema por medio de la entrada del usuario. |
 | XSS | Scripts en sitios múltiples | La ejecución de scripts en sitios múltiples es el intento de apropiarse de la cuenta de un usuario o de una sesión de exploración web mediante código JavaScript malintencionado. |
 | TRAVERSAL | Traversal de directorios | Traversal de directorios es el intento de navegar por carpetas privilegiadas a través de un sistema con la esperanza de obtener información confidencial. |
@@ -264,7 +264,7 @@ La propiedad `wafFlags`, que se puede utilizar en las reglas de filtro de tráfi
 | TORNODE | Tráfico de Tor | Tor es un software que oculta la identidad de un usuario. Un pico en el tráfico de Tor puede indicar que un atacante está tratando de ocultar su ubicación. |
 | NULLBYTE | Byte nulo | Los bytes nulos no suelen aparecer en una solicitud e indican que la solicitud tiene un formato incorrecto y es potencialmente maliciosa. |
 | PRIVATEFILE | Archivos privados | Los archivos privados suelen ser de naturaleza confidencial, como un archivo `.htaccess` Apache o un archivo de configuración que podría filtrar información confidencial |
-| SCANNER | Escáner | Identifica los servicios y herramientas de digitalización más populares |
+| ESCÁNER | Escáner | Identifica los servicios y herramientas de digitalización más populares |
 | RESPONSESPLIT | División de respuesta HTTP | Identifica cuándo se envían los caracteres CRLF como entrada a la aplicación para insertar encabezados en la respuesta HTTP |
 | XML-ERROR | Error de codificación XML | Un cuerpo de solicitud POST, PUT o PATCH que se especifica que contiene XML dentro del encabezado de solicitud &quot;Content-Type&quot;, pero que contiene errores de análisis de XML. Esto suele estar relacionado con un error de programación o una solicitud automatizada o maliciosa. |
 
@@ -415,10 +415,10 @@ Los límites de volumen se calculan por CDN POP. Por ejemplo, supongamos que los
 
 | **Propiedad** | **Tipo** | **Predeterminado** | **SIGNIFICADO** |
 |---|---|---|---|
-| limit | entero de 10 a 10000 | required | Volumen de solicitud (por CDN POP) en solicitudes por segundo para las que se activa la regla. |
-| ventana | integer enum: 1, 10 o 60 | 10 | Ventana de muestreo en segundos para la que se calcula el volumen de solicitud. La precisión de los contadores dependerá del tamaño de la ventana (ventana más grande, mayor precisión). Por ejemplo, se puede esperar una precisión del 50 % para la ventana de 1 segundo y del 90 % para la de 60 segundos. |
+| limit | entero de 10 a 10000 | Requerido | Volumen de solicitud (por CDN POP) en solicitudes por segundo para las que se activa la regla. |
+| ventana | integer enum: 1, 10 o 60 | 10 | Ventana de muestreo en segundos para la que se calcula el volumen de solicitud. La precisión de los contadores dependerá del tamaño de la ventana (ventana más grande, mayor precisión). Por ejemplo, se puede esperar una precisión del 50 % para la ventana de 1 segundo y del 90 % para la de 60 segundos. |
 | penalty | entero de 60 a 3600 | 300 (5 minutos) | Período en segundos durante el cual se bloquean las solicitudes de coincidencia (redondeado al minuto más próximo). |
-| groupBy | array[Getter] | ninguno | El contador del limitador de velocidad se agregará mediante un conjunto de propiedades de solicitud (por ejemplo, clientIp). |
+| groupBy | array[Getter] | ninguno | El contador de limitador de volumen se añadirá mediante un conjunto de propiedades de solicitud (por ejemplo, clientIp). |
 
 
 ### Ejemplos {#ratelimiting-examples}
@@ -471,7 +471,7 @@ data:
 
 AEM as a Cloud Service proporciona acceso a los registros de CDN, que son útiles para casos de uso, incluida la optimización de la proporción de visitas de caché y la configuración de reglas de filtro de tráfico. Los registros de CDN aparecen en el cuadro diálogo de Cloud Manager **Descargar registros**, al seleccionar el servicio de creación o publicación.
 
-Los registros de CDN se pueden retrasar hasta cinco minutos.
+Los registros de CDN pueden retrasarse hasta cinco minutos.
 
 La propiedad `rules` describe qué reglas de filtro de tráfico coinciden y tiene el siguiente patrón:
 
@@ -489,7 +489,7 @@ Las reglas se comportan de la siguiente manera:
 
 * El nombre de regla declarado por el cliente de cualquier regla coincidente se enumerará en el atributo `match`.
 * El atributo `action` determina si las reglas tuvieron el efecto de bloquear, permitir o registrar.
-* Si el WAF tiene licencia y está habilitado, la variable `waf` El atributo indicará cualquier indicador WAF que se haya detectado (por ejemplo, SQLI), independientemente de si los indicadores WAF estaban incluidos en alguna regla. Esto sirve para conocer las posibles nuevas reglas que se pueden declarar.
+* Si el WAF tiene licencia y está habilitado, el atributo `waf` enumerará cualquier indicador WAF (por ejemplo, SQLI) que se haya detectado, independientemente de si los indicadores WAF se han enumerado en alguna regla. Esto sirve para conocer las posibles nuevas reglas que se pueden declarar.
 * Si no coinciden las reglas declaradas por el cliente y no coinciden las reglas waf, la propiedad `rules` estará en blanco.
 
 Como se ha indicado anteriormente, las coincidencias de reglas WAF solo aparecen en los registros CDN para errores y aprobaciones de CDN, no en los aciertos.
@@ -587,7 +587,7 @@ Las herramientas de tablero se pueden clonar directamente desde el repositorio d
 
 ## Reglas de inicio recomendadas {#recommended-starter-rules}
 
-Puede copiar las reglas recomendadas a continuación en su `cdn.yaml` para empezar. Inicie en el modo de registro, analice el tráfico y, cuando esté satisfecho, cambie al modo de bloqueo. Es posible que desee modificar las reglas en función de las características únicas del tráfico en directo del sitio web.
+Puede copiar las reglas recomendadas a continuación en su `cdn.yaml` para empezar. Inicie en el modo de registro, analice el tráfico y, cuando esté satisfecho, cambie al modo de bloqueo. Es posible que quiera modificar las reglas en función de las características únicas del tráfico en directo del sitio web.
 
 ```
 kind: "CDN"

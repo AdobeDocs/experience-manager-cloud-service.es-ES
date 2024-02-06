@@ -1,11 +1,11 @@
 ---
-title: Notas de la versión as a Cloud Service de AEM Forms
+title: 'AEM Forms as a Cloud Service: notas de la versión'
 description: Obtenga información sobre las nuevas funciones, versiones beta, información previa al lanzamiento y mucho más de AEM Forms as a Cloud Service.
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
-workflow-type: tm+mt
-source-wordcount: '2024'
-ht-degree: 84%
+workflow-type: ht
+source-wordcount: '2003'
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service recibe mejoras de f
 
 ### Novedades de [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-- **Analytics para Forms adaptable**: ahora puede capturar y rastrear el comportamiento del inicio de sesión y no inicio de sesión (anónimo) mediante Adobe Analytics para Forms adaptable para recopilar las perspectivas de usuario. Ayuda a tomar decisiones informadas basadas en datos para mejorar la experiencia del usuario.
+- **Analytics para formularios adaptables**: Ahora puede capturar y hacer un seguimiento del comportamiento del inicio de sesión y no inicio de sesión (Anónimo) mediante Adobe Analytics para formularios adaptables para recoger las opiniones de los usuarios.  Ayuda a tomar decisiones informadas basadas en datos para mejorar la experiencia del usuario.
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Forms] {#prerelease-features-forms-oct-2021}
 
@@ -39,7 +39,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service recibe mejoras de f
 
 ### Características beta de [!DNL Forms] {#sep-what-is-new-forms-oct-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: las [API de comunicación](aem-forms-cloud-service-communications.md) le ayudan a combinar una plantilla y los datos XML para generar documentos de impresión en distintos formatos. El servicio permite generar documentos en modos sincrónico y por lotes. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: las [API de comunicación](aem-forms-cloud-service-communications.md) le ayudan a combinar una plantilla y los datos XML para generar documentos de impresión en distintos formatos. El servicio le permite generar documentos en modos sincrónico y por lotes.  Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
 
    - Generar documentos rellenando archivos de plantilla (PDF y XDP) con datos XML.
    - Generar formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.
@@ -52,7 +52,7 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 
 - **Utilizar funciones de Adobe Sign en un formulario adaptable**: Adobe Sign para el nivel de servicio empresarial tiene la opción de ampliar las funciones de los destinatarios del contrato, más allá del firmante, para que coincidan mejor con los requisitos del flujo de trabajo. Ahora puede [permitir que cada destinatario del acuerdo configure su función en un formulario adaptable](working-with-adobe-sign.md#addsignerstoanadaptiveform), siendo la de firmante la función predeterminada.
 
-- **Analytics para Forms adaptable**: Ahora puede capturar y [seguimiento del comportamiento del usuario mediante Adobe Analytics](integrate-aem-forms-with-adobe-analytics.md) para que Forms adaptable recopile información del usuario. Ayuda a tomar decisiones informadas basadas en datos para mejorar la experiencia del usuario.
+- **Analytics para formularios adaptables**: Ahora puede capturar y [hacer un seguimiento del comportamiento del usuario mediante Adobe Analytics](integrate-aem-forms-with-adobe-analytics.md) para que los formulario adaptables recopilen información del usuario. Ayuda a tomar decisiones informadas basadas en datos para mejorar la experiencia del usuario.
 
 - **Conecte fácilmente AEM Forms con Microsoft Dynamics y Salesforce**: El servicio proporciona una configuración de origen de datos y modelos de datos predeterminados para Microsoft Dynamics y Salesforce, lo que lo hace [más rápido y fácil para los desarrolladores configurar Microsoft Dynamics y Salesforce como fuentes de datos para un formulario adaptable](configure-msdynamics-salesforce.md).
 
@@ -63,7 +63,7 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 - **Conector de almacenamiento unificado:** Utilice el conector de almacenamiento unificado para externalizar los datos en proceso en repositorios que administre el cliente. Por ejemplo, puede almacenar datos de los flujos de trabajo de AEM en proceso (datos de variables del flujo de trabajo de AEM) que contengan datos personales confidenciales (SPD) en un repositorio que administra el cliente.
   <!--* Enable Forms Portal's save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: las [API de comunicación](aem-forms-cloud-service-communications.md) le ayudan a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: las [API de comunicación](aem-forms-cloud-service-communications.md) le ayudan a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio le permite generar documentos en modo sincrónico.  Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
    - Generar documentos rellenando archivos de plantilla con datos XML.
    - Generar formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.
    - Genere archivos de PDF imprimibles desde un PDF de formularios XFA y un formulario de Adobe Acrobat.
@@ -104,16 +104,16 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 
 - **Documento de registro basado en Acrobat**: Compatibilidad de AEM Forms as a Cloud Service con [formularios PDF de Adobe Acrobat (PDF de Acrobat)](generate-document-of-record-for-non-xfa-based-adaptive-forms.md) como plantilla para documentos de registro además de la plantilla de formulario basada en XFA.
 
-- **Conector del almacén de datos de Microsoft Azure**: Ahora puede [conectar el modelo de datos de formulario al almacenamiento de Microsoft Azure](configure-azure-storage.md). Permite recuperar y almacenar datos de formulario adaptables en el almacenamiento de Microsoft Azure como BLOB.
+- **Conector del almacén de datos de Microsoft Azure**: Ahora puede [conectar el modelo de datos de formulario al almacenamiento de Microsoft Azure](configure-azure-storage.md). Le permite recuperar y almacenar datos de formulario adaptables en Microsoft Azure Storage como un BLOB.
 
 ### Característica beta de [!DNL Forms] {#aug-what-is-new-forms-prerelease}
 
 - **Conector de almacenamiento unificado:** Utilice el conector de almacenamiento unificado para externalizar los datos en proceso en repositorios que administre el cliente. Por ejemplo, puede
 
-   - Habilite la funcionalidad Forms de guardar y reanudar y almacene borradores de formularios adaptables en un repositorio de datos que administre el cliente.
+   - Habilitar la funcionalidad de guardar y reanudar el portal de Forms y almacenar borradores de formularios adaptables en un repositorio de datos que administre el cliente.
    - Almacenar datos de los flujos de trabajo de AEM en proceso (datos de variables de flujo de trabajo de AEM) que contengan datos personales confidenciales (SPD) en un repositorio que administre el cliente.
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: las [API de comunicación](aem-forms-cloud-service-communications.md) le ayudan a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: las [API de comunicación](aem-forms-cloud-service-communications.md) le ayudan a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio le permite generar documentos en modo sincrónico.  Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
    - Generar documentos rellenando archivos de plantilla con datos XML.
    - Generar formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.
    - Genere archivos de PDF imprimibles desde un PDF de formularios XFA y un formulario de Adobe Acrobat.
@@ -124,7 +124,7 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 
 - **Utilizar funciones de Adobe Sign en un formulario adaptable**: Adobe Sign para el nivel de servicio empresarial tiene la opción de ampliar las funciones de los destinatarios del contrato, más allá del firmante, para que coincidan mejor con los requisitos del flujo de trabajo. Ahora puede [permitir que cada destinatario del acuerdo configure su función en un formulario adaptable](working-with-adobe-sign.md#addsignerstoanadaptiveform), siendo la de firmante la función predeterminada.
 
-- **Analytics para Forms adaptable**: ahora puede capturar y rastrear el comportamiento del usuario mediante Adobe Analytics para Forms adaptable para recopilar las perspectivas del usuario. Ayuda a tomar decisiones informadas basadas en datos para mejorar la experiencia del usuario.
+- **Analytics para formularios adaptables**: ahora puede capturar y hacer un seguimiento del comportamiento del usuario final mediante Adobe Analytics para que el formulario adaptable recopile información del usuario. Ayuda a tomar decisiones informadas basadas en datos para mejorar la experiencia del usuario.
 
 - **Conecte fácilmente AEM Forms con Microsoft Dynamics y Salesforce**: El servicio proporciona una configuración de origen de datos y modelos de datos predeterminados para Microsoft Dynamics y Salesforce, lo que lo hace [más rápido y fácil para los desarrolladores configurar Microsoft Dynamics y Salesforce como fuentes de datos para un formulario adaptable](configure-msdynamics-salesforce.md).
 
@@ -139,13 +139,13 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 
 - **Documento de registro basado en Acrobat**: También puede [usar el formulario PDF de Adobe Acrobat (PDF de Acrobat)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=es) como plantilla para el documento de registro además de la plantilla de formulario basada en XFA.
 
-- **Conector del almacén de datos de Microsoft Azure**: Ahora puede [conectar el modelo de datos de formulario al almacenamiento de Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=es). Permite recuperar y almacenar datos de formulario adaptables en el almacenamiento de Microsoft Azure como BLOB.
+- **Conector del almacén de datos de Microsoft Azure**: Ahora puede [conectar el modelo de datos de formulario al almacenamiento de Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=es). Le permite recuperar y almacenar datos de formulario adaptables en Microsoft Azure Storage como un BLOB.
 
 - **Externalizador de datos de las variables**: Puede guardar datos de las variables del flujo de trabajo de AEM en un sistema de almacenamiento externo que administre su organización.
 
 ### Característica beta de [!DNL Forms] {#july-what-is-new-forms-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: las [API de comunicación](aem-forms-cloud-service-communications.md) le ayudan a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: las [API de comunicación](aem-forms-cloud-service-communications.md) le ayudan a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio le permite generar documentos en modo sincrónico.  Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
    - Generar documentos rellenando archivos de plantilla con datos XML.
    - Generar formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.
    - Genere archivos de PDF imprimibles desde un PDF de formularios XFA y un formulario de Adobe Acrobat.
@@ -161,7 +161,7 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 
 ### Característica beta de [!DNL Forms] {#june-what-is-new-forms-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: las API de comunicación le ayudan a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: las API de comunicación le ayudan a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio le permite generar documentos en modo sincrónico.  Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
 
    - Generar formularios finales al rellenar archivos de plantilla con datos XML.
    - Generar formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.
@@ -187,7 +187,7 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 
 ### Próxima característica beta de [!DNL Forms] {#may-what-is-new-forms-prerelease}
 
-Output as a Cloud service: El servicio de salida le ayuda a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio permite generar documentos en modo por lotes sincrónico y asincrónico. El servicio Output le permite crear aplicaciones con las que puede hacer lo siguiente:
+Output as a Cloud service: El servicio de salida le ayuda a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio le permite generar documentos en los modos sincrónico y asicrónico por lotes.  El servicio Output le permite crear aplicaciones con las que puede hacer lo siguiente:
 
 - Generar formularios finales al rellenar archivos de plantilla con datos XML.
 - Generar formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.
@@ -207,9 +207,9 @@ Puede escribir a formscsbeta@adobe.com para inscribirse en el programa beta.
 
 - **Utilizar el método de autenticación de Id. de gobierno en los formularios adaptables habilitados para Adobe Sign**
 
-  Con la tecnología de algoritmos avanzados de aprendizaje automático, el proceso de identificación oficial de Adobe Sign ofrece a las empresas de todo el mundo la capacidad de garantizar una autenticación de alta calidad de la identidad de sus destinatarios. Ahora puede utilizar el método de autenticación de identidad de Id. de gobierno en los formularios adaptativos habilitados para Adobe Sign.
+  Con la tecnología de algoritmos avanzados de aprendizaje automático, el proceso de Id. de gobierno de Adobe Sign ofrece a las empresas de todo el mundo la capacidad de garantizar una autenticación de alta calidad de la identidad de sus destinatarios.  Ahora puede utilizar el método de autenticación de identidad de Id. de gobierno en los formularios adaptativos habilitados para Adobe Sign.
 
-  El Id. de gobierno es un método de autenticación de identidad premium que indica al destinatario que [cargar la imagen de un documento de identidad emitido por el gobierno (licencia de conducir, identificación nacional, pasaporte)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)y, a continuación, evalúa ese documento para asegurarse de que es auténtico.
+  La Id. de gobierno es un método de autenticación de identidad premium que indica al destinatario cómo [cargar la imagen de un documento de identidad emitido por el gobierno (carnet de conducir, identificación nacional, pasaporte)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html) y luego evalúa ese documento para asegurarse de que es auténtico.
 
 - **Compatibilidad para utilizar la experiencia de firma en formularios para envíos asincrónicos de formularios adaptables**
 

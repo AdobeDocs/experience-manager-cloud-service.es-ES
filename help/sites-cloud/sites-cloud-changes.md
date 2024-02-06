@@ -3,16 +3,16 @@ title: Cambios importantes en AEM Sites en AEM Cloud Service
 description: Descubra cómo crear contenido y administrar AEM Sites as a Cloud Service, así como los cambios importantes en AEM Sites en AEM Cloud Service.
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '527'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
 # Cambios importantes en AEM Sites as a Cloud Service {#notable-changes}
 
-AEM Sites as a Cloud Service proporciona funciones de administración de experiencias como parte de la plataforma nativa de la nube de AEM as a Cloud Service. AEM Además de las ventajas principales de la as a Cloud Service, como la escalabilidad nativa de la nube, el tiempo de actividad y estar siempre actualizado, AEM Sites as a Cloud Service también proporciona varios cambios y adiciones específicos de sitios.
+AEM Sites as a Cloud Service proporciona funciones de administración de experiencias como parte de la plataforma nativa de la nube de AEM as a Cloud Service. Además de las ventajas principales de AEM as a Cloud Service, como la escalabilidad nativa de la nube, el tiempo de actividad y estar siempre actualizado, AEM Sites as a Cloud Service también proporciona varios cambios y adiciones específicos de sitios.
 
 >[!NOTE]
 >Este documento destaca los cambios más importantes que se han producido en AEM Sites. Para ver los cambios generales en AEM as a Cloud Service y otros módulos, consulte:
@@ -41,7 +41,7 @@ El iniciador de estas acciones puede comprobar su estado en una nueva interfaz d
 
 >[!NOTE]
 >
->El usuario del sistema no necesita realizar ningún cambio para utilizar esta nueva función. Se observa aquí simplemente como un cambio en el comportamiento con respecto a versiones locales anteriores de AEM.
+>El usuario del sistema no necesita hacer ningún cambio para utilizar esta nueva función. Se observa aquí simplemente como un cambio en el comportamiento con respecto a versiones locales anteriores de AEM.
 
 ## Nuevo sitio de referencia y tutorial {#new-reference-site-and-tutorial}
 

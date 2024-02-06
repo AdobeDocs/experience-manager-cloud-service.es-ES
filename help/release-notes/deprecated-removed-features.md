@@ -3,9 +3,9 @@ title: Funciones en desuso y eliminadas
 description: Notas de versión específicas de las funciones en desuso y eliminadas de  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: cb2c883fbadc5347dbe5fc50337abc41d4f5cec3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2068'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -37,11 +37,11 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 | [!DNL Sites] | Propiedades de Fragmentos de experiencias para **Estado de los medios sociales**. | La función se eliminará próximamente. |
 | [!DNL Sites] | Fragmentos de contenido simples basados en plantillas. | [Fragmentos de contenido estructurados basados en modelos](/help/assets/content-fragments/content-fragments-models.md) ahora. |
 | [!DNL Assets] | `DAM Asset Update` flujo de trabajo para procesar imágenes grabadas. | Ahora, el consumo de recursos utiliza [los microservicios](/help/assets/asset-microservices-overview.md) de recursos. |
-| [!DNL Assets] | Cargar recursos directamente en [!DNL Experience Manager]. Consulte [API de carga de recursos en desuso](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Utilice la [carga binaria directa](/help/assets/add-assets.md). Para obtener más información técnica, consulte [API de carga directa](/help/assets/developer-reference-material-apis.md#upload-binary). |
+| [!DNL Assets] | Cargar recursos directamente en [!DNL Experience Manager].  Consulte [API de carga de recursos en desuso](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Utilice la [carga binaria directa](/help/assets/add-assets.md). Para obtener más información técnica, consulte [API de carga directa](/help/assets/developer-reference-material-apis.md#upload-binary). |
 | [!DNL Assets] | No se admiten [determinados pasos](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) en el flujo de trabajo `DAM Asset Update`, incluida la llamada a herramientas de línea de comandos como [!DNL ImageMagick]. | [Los microservicios de recursos](/help/assets/asset-microservices-overview.md) sustituyen a muchos flujos de trabajo. Para el procesamiento personalizado, utilice [flujos de trabajo posteriores al procesamiento](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | FFmpeg transcodificar vídeos. | Para la generación de miniaturas de FFmpeg, use los [microservicios de Asset](/help/assets/asset-microservices-overview.md). Para la transcodificación FFmpeg, utilice [Dynamic Media](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation] | IU de replicación de árbol en la pestaña Distribuir del agente de replicación (eliminación después del 30 de septiembre de 2021) | Enfoques [Administrar publicación](/help/operations/replication.md#manage-publication) o [flujo de trabajo del árbol de contenido de publicación](/help/operations/replication.md#publish-content-tree-workflow) |
-| [!DNL Foundation] | Ni la pestaña Distribuir de la pantalla del administrador del agente de replicación ni la API de replicación pueden utilizarse para replicar paquetes de contenido de más de 10 MB. En su lugar, utilice [Administrar publicación](/help/operations/replication.md#manage-publication) o [flujo de trabajo publicar árbol de contenido](/help/operations/replication.md#publish-content-tree-workflow) |
+| [!DNL Foundation] | Ni la pestaña Distribuir de la pantalla del administrador del agente de replicación ni la API de replicación pueden utilizarse para replicar paquetes de contenido de más de 10 MB.  En su lugar, utilice [Administrar publicación](/help/operations/replication.md#manage-publication) o [flujo de trabajo del árbol de contenido de publicación](/help/operations/replication.md#publish-content-tree-workflow) |
 
 ## Funciones eliminadas {#removed-features}
 
@@ -61,26 +61,26 @@ En esta sección se enumeran las funciones que se han eliminado de [!DNL Experie
 
 ## Configuración OSGi {#osgi-configuration}
 
-AEM Las dos listas siguientes reflejan la superficie de configuración as a Cloud Service de OSGi, describiendo lo que los clientes pueden configurar.
+Las dos listas siguientes reflejan la superficie de configuración de AEM as a Cloud Service de OSGi, describiendo lo que los clientes pueden configurar.
 
 1. Una lista de configuraciones de OSGi que el código de cliente no debe configurar
 1. Una lista de configuraciones de OSGi cuyas propiedades pueden configurarse, pero deben cumplir las reglas de validación indicadas. Estas reglas incluyen si la declaración de la propiedad es obligatoria, su tipo y, en algunos casos, su intervalo permitido de valores.
 
 Si la configuración de OSGI no aparece en la lista, puede configurarse mediante el código de cliente.
 
-Estas reglas se validan durante el proceso de compilación de Cloud Manager. Con el tiempo se pueden añadir reglas adicionales y la fecha de aplicación esperada se indica en la tabla. Se espera que los clientes cumplan estas reglas en la fecha objetivo de aplicación. Si no se respetan las reglas después de la fecha de eliminación, se generan errores en el proceso de generación de Cloud Manager. Los proyectos de Maven deben incluir [AEM Complemento Maven de SDK Build Analyzer as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=es) para marcar los errores de configuración de OSGI durante el desarrollo local del SDK.
+Estas reglas se validan durante el proceso de compilación de Cloud Manager.  Con el tiempo se pueden añadir reglas adicionales y la fecha de aplicación esperada se indica en la tabla. Se espera que los clientes cumplan estas reglas en la fecha objetivo de aplicación. Si no se respetan las reglas después de la fecha de eliminación, se generarán errores en el proceso de generación de Cloud Manager. Los proyectos de Maven deben incluir [el complemento Maven AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=es) para marcar los errores de configuración de OSGI durante el desarrollo local del SDK.
 
-Puede encontrar información adicional sobre la configuración de OSGI en [esta ubicación](/help/implementing/deploying/configuring-osgi.md).
+Puede encontrar información adicional sobre la configuración de OSGI en [esta ubicación](/help/implementing/deploying/configuring-osgi.md).
 
 Configuraciones de +++OSGi que no se pueden modificar.
-* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (Fecha de anuncio: 30/4/2021, fecha de aplicación: 31/7/2021)
+* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (Fecha de anuncio: 30/4/2021, fecha de aplicación: 31/7/2021)
 * **`com.day.cq.auth.impl.cug.CugSupportImpl`** (Fecha de anuncio: 30/4/2021, fecha de aplicación: 31/7/2021)
 * **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (Fecha de anuncio: 30/4/2021, fecha de aplicación: 31/7/2021)
 * **`org.apache.felix.http (Factory)`** (Fecha de anuncio: 30/4/2021, fecha de aplicación: 31/7/2021)
 * **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Fecha de anuncio: 25/8/2021, fecha de aplicación: 26/11/2021)
 +++
 
-+++Las configuraciones de OSGi están sujetas a reglas de validación de compilación.
+Las configuraciones de +++OSGi están sujetas a reglas de validación de compilación.
 * **`org.apache.felix.eventadmin.impl.EventAdmin`** (Fecha de anuncio: 30/4/2021, fecha de aplicación: 31/7/2021)
 * `org.apache.felix.eventadmin.ThreadPoolSize`
    * Tipo: entero
@@ -94,7 +94,7 @@ Configuraciones de +++OSGi que no se pueden modificar.
 * `org.apache.felix.eventadmin.IgnoreTimeout`
    * Requerido
    * Tipo: matriz de cadenas
-   * Intervalo requerido: debe incluir al menos todos los `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`
+   * Intervalo requerido: debe incluir al menos todos los `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`
 * `org.apache.felix.eventadmin.IgnoreTopic`
    * Tipo: matriz de cadenas
 * **`org.apache.felix.http`** (Fecha de anuncio: 30/4/2021, fecha de aplicación: 31/7/2021)
@@ -190,7 +190,7 @@ Configuraciones de +++OSGi que no se pueden modificar.
       * Tipo: booleano
    * `oauth.flow`
       * Tipo: booleano
-* **`org.apache.sling.commons.log.LogManager.factory.config`** (Fecha de anuncio: 16/11/21, Fecha de aplicación: 2/16/21)
+* **`org.apache.sling.commons.log.LogManager.factory.config`** (Fecha de anuncio: 16/11/21, Fecha de aplicación: 2/16/21)
    * `org.apache.sling.commons.log.level`
       * Tipo: enumeración
       * Intervalo requerido: INFO, DEPURACIÓN o TRACE
@@ -202,7 +202,7 @@ Configuraciones de +++OSGi que no se pueden modificar.
       * Tipo: booleano
 +++
 
-## AEM API de {#aem-apis}
+## API DE AEM {#aem-apis}
 
 A continuación se incluye una lista detallada de las API de AEM en desuso y su fecha prevista de eliminación. Se espera que los clientes eliminen las API antes de la fecha prevista de eliminación de su código. Cualquier uso de la API más allá de la fecha de eliminación generará errores en el SDK/entorno de desarrollo local y en el proceso de compilación de Cloud Manager.
 

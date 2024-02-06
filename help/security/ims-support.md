@@ -3,9 +3,9 @@ title: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
 description: Compatibilidad del sistema de administración de imágenes con Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1917'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Una vez que un cliente existe como una organización de IMS, debe configurar su 
 ![Integración de IMS](/help/security/assets/ims2.png)
 
 1. El administrador del sistema designado recibe una invitación para iniciar sesión en Cloud Manager. Después de iniciar sesión en Cloud Manager, los administradores del sistema pueden optar por ofrecer los programas y entornos de AEM o navegar a Admin Console para llevar a cabo tareas administrativas.
-1. El administrador del sistema reclama un dominio para confirmar la propiedad del dominio en cuestión (por ejemplo, acme.com)
+1. El administrador del sistema reclama un dominio para confirmar la propiedad del dominio en cuestión (por ejemplo, acme.com).
 1. El administrador del sistema configura los directorios de usuario.
 1. El administrador del sistema realiza la configuración de IDP en Admin Console para configurar el registro único.
 1. El administrador de AEM gestiona los grupos locales, los permisos y los privilegios de la forma habitual.
@@ -213,7 +213,7 @@ Para poder acceder a los entornos de Cloud Manager o AEM as a Cloud Service, se 
 Consulte Definiciones de funciones para obtener más información sobre las funciones de los usuarios que rigen la disponibilidad de características específicas en Cloud Manager.
 
 >[!NOTE]
->Cloud Manager tiene funciones preconfiguradas con los permisos adecuados. Para obtener más información sobre cada una de las funciones con permisos específicos, tareas preconfiguradas o permisos asociados a cada función, consulte [Permisos basados en roles](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html).
+>Cloud Manager tiene funciones preconfiguradas con los permisos adecuados. Para obtener más información sobre cada una de las funciones con permisos específicos, tareas preconfiguradas o permisos asociados a cada función, consulte [Permisos basados en roles](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=es).
 
 **Pasos para Añadir un usuario**
 

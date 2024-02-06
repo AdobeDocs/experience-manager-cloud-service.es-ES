@@ -3,9 +3,9 @@ title: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Exper
 description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 0b4c820159f918cb9b3a93d9ab36dc26b1d8da47
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '381'
-ht-degree: 35%
+ht-degree: 100%
 
 ---
 
@@ -15,41 +15,41 @@ En la siguiente sección se describen las notas de la versión técnicas actuale
 
 ## Versión 14697 {#release-14697}
 
-A continuación se resumen las mejoras continuas de la versión de mantenimiento 14697, que se publicó el martes, 18 de diciembre de 2023. Sustituye a las 14538 de la versión que tenían un problema. La versión de mantenimiento anterior era 14227.
+A continuación se resumen las mejoras continuas de la versión de mantenimiento 14697, que se publicó el martes, 18 de diciembre de 2023. Sustituye a la versión 14538, que presentaba un problema.  La versión de mantenimiento anterior era 14227.
 
 La activación de funciones 2023.12.0 proporcionará el conjunto completo de funciones para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es) para obtener más información.
 
 ### Mejoras {#enhancements-14697}
 
 * GRANITE-46723: Sincronización de usuarios: migración de SAML de la sincronización predeterminada a la sincronización basada en IDP.
-* AEM OAK-10311: Replicación: optimice la comparación de blobs para reducir el tiempo de replicación de grandes lotes de recursos en el espacio de trabajo de la.
-* AEM OAK-10511: Replicación: Reduzca los viajes de ida y vuelta en la red para reducir el tiempo de replicación de grandes recursos en la.
-* GRANITE-48334: Publishers - Falta el script de colección para RUM.
+* OAK-10311: Replicación: optimice la comparación de blobs para reducir el tiempo de replicación de grandes lotes de recursos en AEM.
+* OAK-10511: Replicación: Reduzca los viajes de ida y vuelta en la red para reducir el tiempo de replicación de grandes recursos en AEM.
+* GRANITE-48334: Editores: Falta el script de colección de RUM.
 
 ### Problemas corregidos {#fixed-issues-14697}
 
-* CQ-4354867: la referencia ToggleCondition hace referencia a un campo inexistente en InstanceActionServlet.
-* CQ-4349948: localización de cadenas &quot;Propiedades del perfil&quot; en Editar configuración de usuario en Herramientas → Seguridad → Usuarios.
+* CQ-4354867: La referencia ToggleCondition hace referencia a un campo inexistente en InstanceActionServlet.
+* CQ-4349948: Localización de cadenas “Propiedades del perfil” en Editar configuración de usuario en Herramientas → Seguridad → Usuarios.
 * GRANITE-44541: Localización de los cuadros de diálogo de error en la pantalla Añadir archivo de clave privada de Editar usuario > Almacén de claves en Herramientas → Seguridad → Usuarios.
-* GRANITE-45341: localización de cadenas de éxito/error para activar/desactivar la acción del usuario en Herramientas → Seguridad → Usuarios.
-* GRANITE-46650: Localización del mensaje de error &quot;El ID de usuario y la contraseña no coinciden&quot;. cadena en Herramientas → Seguridad → cuadro de diálogo Crear usuarios.
+* GRANITE-45341: Localización de cadenas de éxito/error para activar/desactivar la acción del usuario en Herramientas → Seguridad → Usuarios.
+* GRANITE-46650: Localización de la cadena del mensaje de error “El ID de usuario y la contraseña no coinciden”. en Herramientas → Seguridad → Cuadro de diálogo Crear usuarios.
 * GRANITE-47764: Actualización a la API de modelos Sling 1.5.0: La inyección en una variable estática en un modelo Sling provocará errores de compilación (SLING-11507).
 * GRANITE-48452: Envío de clientlibs vacíos con código de estado 200.
 * GRANITE-48410: ResourceResolver no está cerrado.
 * ASSETS-31297: Impedir la eliminación del recurso copiado de los medios dinámicos.
 * ASSETS-30811: Actualizaciones de referencia para el servicio de etiquetas de bloque enlazado.
-* AEM GRANITE-46418: Actualizar eventos de Sling en: El soporte de GaugeSupport tiene una recursión infinita en registerWithSuffix (SLING-11918).
-* GRANITE-48937: Corrija la regresión de la 14538 de la versión de mantenimiento en la que Omnisearch no funciona en la página aem/start.html.
+* GRANITE-46418: Actualizar eventos de Sling en AEM: GaugeSupport tiene una recursión infinita en registerWithSuffix (SLING-11918).
+* GRANITE-48937: Corrija la regresión de la versión de mantenimiento 14538 en la que Omnisearch no funciona en la página aem/start.html.
 
 ### Problemas conocidos {#known-issues-14697}
 
-* GRANITE-49031: Regresión que resulta en `@JsonIgnore` anotación que se ignora en campos transitorios.
+* GRANITE-49031: Regresión que resulta en la anotación `@JsonIgnore` que se ignora en campos transitorios.
 
 ### Tecnologías integradas {#embedded-tech-14697}
 
 | Tecnología | Versión | Vínculo |
 |---|---|---|
-| AEM OAK | 1,58-T20231123092841-619e1bd | [API Oak 1.58.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.58.0/index.html) |
+| AEM OAK | 1.58-T20231123092841-619e1bd | [API Oak 1.58.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.58.0/index.html) |
 | API AEM SLING | Versión 2.27.2 | [API de Apache Sling 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | Versión 1.4.20-1.4.0 | [Especificación de idioma de la plantilla HTML](https://github.com/adobe/htl-spec) |
 | Los componentes principales de AEM | Versión 2.23.4 | [Componentes principales de WCM de AEM](https://github.com/adobe/aem-core-wcm-components) |
