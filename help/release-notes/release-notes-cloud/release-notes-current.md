@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 77d38f03f18eb6b0fdc2f2eec5b2dc4b608b8057
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 46%
+ht-degree: 96%
 
 ---
 
@@ -24,9 +24,9 @@ En la siguiente sección se describen las notas de la versión de la funcionalid
 >
 >Consulte [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=es) para obtener más información sobre las actualizaciones de la documentación no relacionadas directamente con una versión.
 
-## Fecha de la versión {#release-date}
+## Fecha de lanzamiento {#release-date}
 
-La fecha de la versión de [!DNL Adobe Experience Manager] como versión de funcionalidad actual (2024.1.0) de [!DNL Cloud Service] es el viernes, 25 de enero de 2024. La próxima versión de la funcionalidad (2024.2.0) está planificada para el viernes, 29 de febrero de 2024.
+La fecha de lanzamiento de [!DNL Adobe Experience Manager] como versión de funcionalidad actual (2024.1.0) de [!DNL Cloud Service] es el viernes, 25 de enero de 2024. La próxima versión de la funcionalidad (2024.2.0) está planificada para el viernes, 29 de febrero de 2024.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
@@ -42,20 +42,20 @@ Eche un vistazo al vídeo Información general sobre la versión de enero de 202
 
 ### Extension Manager en AEM Sites {#sites-extension-manager}
 
-**Explore la nueva [Extension Manager en AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/)** AEM para personalizar la configuración de la mediante la configuración de extensiones de interfaz de usuario.
+**Explore el nuevo [Extension Manager en AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/)** para personalizar la configuración de AEM mediante la configuración de extensiones de IU.
 
 ![Extension Manager en AEM Sites](/help/assets/sites/extension-manager/homepage.png)
 
 El Extension Manager de AEM Sites permite a los desarrolladores y profesionales acceder, administrar y personalizar [Extensiones de IU](https://developer.adobe.com/uix/docs/) compilado con [Adobe App Builder](https://developer.adobe.com/app-builder/) para mejorar la funcionalidad de AEM Sites.
-Con el Extension Manager, puede:
+Con Extension Manager, puede:
 
 * Habilitar o deshabilitar las extensiones por instancia;
-* Configurar parámetros de extensión;
+* Configurar los parámetros de extensión;
 * Previsualizar extensiones y generar un vínculo de vista previa compartible;
-* Descubra las funciones de extensibilidad de la IU mediante demostraciones interactivas;
-* Acceda a las funciones experimentales de Adobe mediante extensiones de origen.
+* Descubrir las funciones de extensibilidad de la IU mediante demostraciones interactivas;
+* Acceder a las funciones experimentales de Adobe mediante extensiones de origen.
 
-Estamos buscando activamente comentarios y nuevos casos de uso para las extensiones de interfaz de usuario. Si desea conectarse, envíe un correo electrónico a `uix@adobe.com`.
+Estamos buscando activamente comentarios y nuevos casos de uso para las extensiones de IU.  Si desea conectarse, envíe un correo electrónico a `uix@adobe.com`.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -82,11 +82,11 @@ Ahora, Assets Essentials permite definir una lista de bloqueados compuesta por p
 
 -->
 
-### Programa de usuarios pioneros {#forms-early-adopter}
+### Programa para primeros usuarios {#forms-early-adopter}
 
-* **[Envío de un formulario adaptable a un escenario de Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: Forms as a Cloud Service ofrece opciones listas para usar para conectar fácilmente un formulario adaptable con Adobe Workfront. Esto simplifica el proceso de envío de un formulario adaptable a un escenario de Adobe Workfront, lo que le permite almacenar en déclencheur un escenario de Workfront Fusion al enviar un formulario adaptable.
+* **[Envío de un formulario adaptable a un escenario de Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: Forms as a Cloud Service ofrece opciones listas para usar para conectar fácilmente un formulario adaptable con Adobe Workfront.  Esto simplifica el proceso de envío de un formulario adaptable a un escenario de Adobe Workfront, permitiéndole activar un escenario de Workfront Fusion al enviar un formulario adaptable.
 
-* **[Compatibilidad con idiomas de derecha a izquierda](/help/forms/supporting-new-language-localization-core-components.md)**: Forms adaptable creado en los componentes principales ahora se puede presentar en un idioma de derecha a izquierda (RTL) como árabe, persa y urdu. Más de 2.000 millones de personas en todo el mundo hablan los idiomas RTL. El uso de un formulario en idioma RTL le permite ampliar el alcance de sus formularios adaptables para adaptarse a estas diversas audiencias y seleccionar en los mercados RTL. En ciertas regiones, también es un mandato legal proporcionar formularios en el idioma local. Al adaptarse a los idiomas locales, no solo abre las puertas a una audiencia más amplia, sino que también garantiza el cumplimiento de las leyes y regulaciones relevantes.
+* **[Compatibilidad con idiomas de derecha a izquierda](/help/forms/supporting-new-language-localization-core-components.md)**: los formularios adaptables creados en los componentes principales ahora se pueden presentar en un idioma de derecha a izquierda (RTL) como árabe, persa y urdu.  Más de 2000 millones de personas en todo el mundo hablan los idiomas RTL.  El uso de un formulario en idioma RTL le permite ampliar el alcance de sus formularios adaptables para adaptarse a estas diversas audiencias y seleccionar en los mercados RTL. En ciertas regiones, también es un mandato legal proporcionar formularios en el idioma local.  Al adaptarse a los idiomas locales, no solo abre las puertas a una audiencia más amplia, sino que también garantiza el cumplimiento de las leyes y regulaciones relevantes.
 
   ![Compatibilidad con idiomas de derecha a izquierda](/help/forms/assets/right-to-left-language-support.png)
 
@@ -98,11 +98,11 @@ Ahora, Assets Essentials permite definir una lista de bloqueados compuesta por p
 
 ### Compatibilidad con Dynatrace {#dynatrace}
 
-AEM Los clientes de Dynatrace pueden monitorizar su uso de la. [Leer cómo](/help/implementing/cloud-manager/dynatrace.md) para solicitar conectividad con su entorno de Dynatrace para monitorizar el rendimiento de las aplicaciones. Tenga en cuenta que New Relic APM, que está disponible para todos los clientes, dejará de recopilar datos si Dynatrace está habilitado.
+Los clientes de Dynatrace pueden monitorizar su uso de AEM. [Lea cómo](/help/implementing/cloud-manager/dynatrace.md) para solicitar conectividad con su entorno de Dynatrace para monitorizar el rendimiento de las aplicaciones. Tenga en cuenta que New Relic APM, que está disponible para todos los clientes, dejará de recopilar datos si Dynatrace está habilitado.
 
-### Compatibilidad con RDE para código front-end mediante temas de sitio y plantillas de sitio: Programa para usuarios pioneros {#rde-frontend-early-adopter}
+### Compatibilidad con RDE para código front-end mediante temas del sitio y plantillas del sitio: Programa para primeros usuarios {#rde-frontend-early-adopter}
 
-[Entornos de desarrollo rápido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) ahora admite código front-end basado en [temas del sitio](/help/sites-cloud/administering/site-creation/site-themes.md) y [plantillas del sitio](/help/sites-cloud/administering/site-creation/site-templates.md), para los primeros usuarios. Con los RDE, esto se hace usando una directiva de línea de comandos, en lugar de una [canalización front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Póngase en contacto con **aemcs-rde-support@adobe.com** para probarlo y proporcionar comentarios.
+Los [Entornos de desarrollo rápido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) admiten ahora código front-end basado en [temas del sitio](/help/sites-cloud/administering/site-creation/site-themes.md) y [plantillas del sitio](/help/sites-cloud/administering/site-creation/site-templates.md), para los primeros usuarios. Con los RDE, esto se hace usando una directiva de línea de comandos, en lugar de una [canalización front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Póngase en contacto con **aemcs-rde-support@adobe.com** para probarlo y proporcionar comentarios.
 
 ## Cloud Manager {#cloud-manager}
 

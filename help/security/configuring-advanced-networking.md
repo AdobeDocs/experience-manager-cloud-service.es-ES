@@ -5,7 +5,7 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: dfeeaca8341abec5d4fd518957baf6936a21aea3
 workflow-type: tm+mt
 source-wordcount: '3540'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -40,7 +40,7 @@ Un programa puede proporcionar una única variación avanzada de red. Al decidir
 
 ## Salida de puerto flexible {#flexible-port-egress}
 
-AEM Esta función de red avanzada le permite configurar el tráfico de salida as a Cloud Service a través de puertos que no sean HTTP (puerto 80) y HTTPS (puerto 443), que están abiertos de forma predeterminada.
+Esta función de redes avanzadas le permite configurar AEM as a Cloud Service para enviar tráfico a través de puertos que no sean HTTP (puerto 80) y HTTPS (puerto 443), que están abiertos de forma predeterminada.
 
 ### Consideraciones {#flexible-port-egress-considerations}
 
@@ -196,9 +196,9 @@ Sin la función de dirección IP dedicada habilitada, el tráfico proveniente de
 
 La configuración de la dirección IP de salida dedicada es idéntica a la [salida de puerto flexible](#configuring-flexible-port-egress-provision).
 
-La principal diferencia es que el tráfico siempre saldrá de una IP única y dedicada. Para encontrar esa IP, utilice una resolución DNS para identificar la dirección IP asociada a `p{PROGRAM_ID}.external.adobeaemcloud.com`. No se espera que la dirección IP cambie, pero si debe cambiarse en el futuro, se proporciona una notificación avanzada.
+La principal diferencia es que el tráfico siempre saldrá de una IP única y dedicada. Para encontrar esa IP, utilice una resolución DNS para identificar la dirección IP asociada a `p{PROGRAM_ID}.external.adobeaemcloud.com`. No se espera que la dirección IP cambie, pero si necesita cambiarla en el futuro, se proporciona una notificación avanzada.
 
-Además de las reglas de enrutamiento admitidas por la salida de puerto flexible en el punto final `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`, la dirección IP de salida dedicada admite un parámetro `nonProxyHosts`. Esto permite declarar un conjunto de hosts que deben enrutarse a través de un intervalo de direcciones IP compartidas en lugar de la IP dedicada, lo que puede resultar útil, ya que la salida de tráfico a través de direcciones IP compartidas puede optimizarse aún más. Las direcciones URL `nonProxyHost` pueden seguir los patrones de `example.com` o `*.example.com`, donde el comodín solo se admite al inicio del dominio.
+Además de las reglas de enrutamiento admitidas por la salida de puerto flexible en el punto final `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`, la dirección IP de salida dedicada admite un parámetro `nonProxyHosts`. Esto le permite declarar un conjunto de hosts que deben enrutarse a través de un intervalo de direcciones IP compartidas en lugar de la IP dedicada, lo que puede resultar útil, ya que la salida de tráfico a través de direcciones IP compartidas puede optimizarse aún más.  Las direcciones URL `nonProxyHost` pueden seguir los patrones de `example.com` o `*.example.com`, donde el comodín solo se admite al inicio del dominio.
 
 Al decidir entre una salida de puerto flexible y una dirección IP de salida dedicada, los clientes deben elegir una salida de puerto flexible si no se requiere una dirección IP específica, ya que Adobe puede optimizar el rendimiento del tráfico de salida de puerto flexible.
 
@@ -337,7 +337,7 @@ Para validar que el tráfico realmente salga por la dirección IP dedicada esper
 ## Clientes de direcciones de salida dedicadas heredadas {#legacy-dedicated-egress-address-customers}
 
 Si se le ha aprovisionado con una IP de salida dedicada antes del 30 de septiembre de 2021, su función de IP de salida dedicada solo admite puertos HTTP y HTTPS.
-Esto incluye HTTP/1.1 y HTTP/2 cuando se cifran. Además, un extremo de salida dedicado puede hablar con cualquier destino solo a través de HTTP/HTTPS en los puertos 80/443 respectivamente.
+Esto incluye HTTP/1.1 y HTTP/2 cuando se cifran. Además, un punto final de salida dedicado puede hablar con cualquier destino solo a través de HTTP/HTTPS en los puertos 80/443 respectivamente.
 
 ## Red privada virtual (VPN) {#vpn}
 
@@ -367,13 +367,13 @@ Las reglas de reenvío de puertos deben declararse para cualquier tráfico TCP d
 
 La API debe responder en solo unos segundos, indicando un estado de `updating` y después de unos 10 minutos, una llamada al punto de conexión GET de entorno de Cloud Manager mostraría un estado de `ready`, con lo que indica que se ha aplicado la actualización al entorno.
 
-Incluso si no hay reglas de enrutamiento de tráfico de entorno (hosts o bypass), `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` Aún debe llamarse, solo con una carga útil vacía.
+Aunque no haya reglas de enrutamiento de tráfico de entorno (hosts o bypass), `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` debe llamarse, solo con una carga útil vacía.
 
 ### Actualización de la VPN {#updating-the-vpn}
 
 La configuración de VPN en el nivel de programa se puede actualizar invocando el punto de conexión `PUT /api/program/<program_id>/network/<network_id>`.
 
-El espacio de direcciones no se puede cambiar después del aprovisionamiento de VPN inicial. Si es necesario, póngase en contacto con Asistencia al cliente. Además, el parámetro `kind` (`flexiblePortEgress`, `dedicatedEgressIP` o `VPN`) no se puede modificar. Póngase en contacto con la asistencia al cliente para obtener ayuda; describa lo que ya se ha creado y el motivo del cambio.
+El espacio de direcciones no se puede cambiar después del aprovisionamiento de VPN inicial.  Si es necesario, póngase en contacto con Asistencia al cliente. Además, el parámetro `kind` (`flexiblePortEgress`, `dedicatedEgressIP` o `VPN`) no se puede modificar. Póngase en contacto con la asistencia al cliente para obtener ayuda; describa lo que ya se ha creado y el motivo del cambio.
 
 Las reglas de enrutamiento por entorno se pueden actualizar invocando de nuevo el punto de conexión `PUT /program/{programId}/environment/{environmentId}/advancedNetworking`. Asegúrese de incluir el conjunto completo de parámetros de configuración en lugar de un subconjunto. Las actualizaciones de entorno suelen tardar entre 5 y 10 minutos en aplicarse.
 
@@ -545,7 +545,7 @@ Si el tiempo de inactividad puede causar un impacto comercial significativo, pó
 
 ## Configuración de redes avanzadas para regiones de publicación adicionales {#advanced-networking-configuration-for-additional-publish-regions}
 
-Cuando se añade una región adicional a un entorno que ya tiene configuradas redes avanzadas, el tráfico de la región de publicación adicional que coincida con las reglas de redes avanzadas se enrutará de forma predeterminada a través de la región principal. Sin embargo, si la región principal deja de estar disponible, el tráfico de redes avanzadas se elimina si no se han habilitado las redes avanzadas en la región adicional. Si desea optimizar la latencia y aumentar la disponibilidad en caso de que una de las regiones sufra una interrupción, es necesario habilitar la red avanzada para las regiones de publicación adicionales. En las siguientes secciones se describen dos escenarios diferentes.
+Cuando se añade una región adicional a un entorno que ya tiene configuradas redes avanzadas, el tráfico de la región de publicación adicional que coincida con las reglas de redes avanzadas se enrutará de forma predeterminada a través de la región principal. Sin embargo, si la región principal deja de estar disponible, el tráfico de redes avanzadas se elimina si no se han habilitado las redes avanzadas en la región adicional. Si quiere optimizar la latencia y aumentar la disponibilidad en caso de que una de las regiones sufra una interrupción, es necesario habilitar las redes avanzadas para las regiones de publicación adicionales. En las siguientes secciones se describen dos escenarios diferentes.
 
 >[!NOTE]
 >
@@ -557,9 +557,9 @@ Cuando se añade una región adicional a un entorno que ya tiene configuradas re
 
 Si ya se ha habilitado una configuración de redes avanzadas en la región principal, siga estos pasos:
 
-1. Si ha bloqueado la infraestructura de modo que la dirección IP de AEM dedicada esté incluida en la lista de permitidos, se recomienda deshabilitar temporalmente cualquier regla de denegación de dicha infraestructura. Si no es así, su propia infraestructura denegará las solicitudes de las direcciones IP de la nueva región durante un breve período. Esto no es necesario si ha bloqueado la infraestructura mediante un nombre de dominio completo (FQDN), (`p1234.external.adobeaemcloud.com`AEM , por ejemplo), porque todas las regiones de la red de salida de todas las regiones de la red avanzada desde el mismo FQDN
+1. Si ha bloqueado la infraestructura de modo que la dirección IP de AEM dedicada esté incluida en la lista de permitidos, se recomienda deshabilitar temporalmente cualquier regla de denegación de dicha infraestructura. Si no es así, su propia infraestructura denegará las solicitudes de las direcciones IP de la nueva región durante un breve período. Tenga en cuenta que esto no es necesario si ha bloqueado la infraestructura mediante el nombre de dominio completo (FQDN), (`p1234.external.adobeaemcloud.com`, por ejemplo), ya que que todas las regiones de AEM reciben tráfico de redes avanzadas desde el mismo FQDN
 1. Cree la infraestructura de redes con alcance de programa para la región secundaria a través de una llamada del POST a la API Crear infraestructura de redes de Cloud Manager, tal como se describe en la documentación de redes avanzadas. La única diferencia en la configuración JSON de la carga útil en relación con la región principal es la propiedad de la región
-1. AEM Si la infraestructura debe estar bloqueada por una dirección IP para permitir el tráfico de, agregue las direcciones IP que coincidan `p1234.external.adobeaemcloud.com`. Debe haber una por región.
+1. Si su infraestructura debe estar bloqueada por IP para permitir el tráfico de AEM, añada las IP que coincidan `p1234.external.adobeaemcloud.com`. Debe haber una por región.
 
 #### Las redes avanzadas aún no están configuradas en ninguna región {#not-yet-configured}
 
