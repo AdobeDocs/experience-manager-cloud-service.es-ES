@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f04ab32093371ff425c4e196872738867d9ed528
+source-git-commit: 3d5901e6543b0b5d3214e69c5119367eeb71bf07
 workflow-type: tm+mt
-source-wordcount: '4631'
-ht-degree: 95%
+source-wordcount: '4633'
+ht-degree: 98%
 
 ---
 
@@ -737,8 +737,8 @@ ht-degree: 95%
          + [Creación de experiencias de producto](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
    + Integraciones {#integrations}
       + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
-      + [CIF Componente de Live Search para](/help/commerce-cloud/integrating/live-search-plp.md)
-      + [CIF Componente de emergente de Live Search](/help/commerce-cloud/integrating/live-search-popover.md)
+      + [Componente de CIF de Live Search](/help/commerce-cloud/integrating/live-search-plp.md)
+      + [Componente de CIF de ventana emergente de Live Search](/help/commerce-cloud/integrating/live-search-popover.md)
       + [Solución de comercio de terceros](/help/commerce-cloud/integrating/third-party.md)
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM Storefront {#storefront}
@@ -766,50 +766,51 @@ ht-degree: 95%
 + Edge Delivery Services {#edge-delivery}
    + [AEM y Edge Delivery Services](/help/edge/overview.md)
    + [Uso de Edge Delivery](/help/edge/using.md)
-   + [Creación de contenido para la entrega de Edge](/help/edge/authoring.md)
-   + [Publicación de contenido para la entrega de Edge](/help/edge/publishing.md)
-   + [Desarrollo para la entrega en Edge](/help/edge/developing.md)
-   + [Proyectos existentes y entrega perimetral](/help/edge/existing-projects.md)
    + [Guía de introducción para desarrolladores](/help/edge/edge-dev-getting-started.md)
-   + Creación de aplicaciones de envío de Edge {#build}
+   + [Creación de contenido para Edge Delivery](/help/edge/authoring.md)
+   + [Publicación de contenido para Edge Delivery](/help/edge/publishing.md)
+   + [Desarrollo para Edge Delivery](/help/edge/developing.md)
+   + [Modelado de contenido](/help/edge/content-modeling.md)
+   + [Proyectos existentes y Edge Delivery](/help/edge/existing-projects.md)
+   + Creación de aplicaciones de Edge Delivery {#build}
       + [Introducción: Tutorial para desarrolladores](/help/edge/developer/tutorial.md)
       + [Anatomía de un proyecto](/help/edge/developer/anatomy-of-a-franklin-project.md)
-      + [Colección de bloques](/help/edge/developer/block-collection.md)
+      + [Colección de bloqueos](/help/edge/developer/block-collection.md)
       + [Hojas de cálculo](/help/edge/developer/spreadsheets.md)
       + [Forms](/help/edge/developer/forms.md)
       + [Indexación](/help/edge/developer/indexing.md)
       + [Mantenerlo en 100](/help/edge/developer/keeping-it-100.md)
       + [Marcado: secciones](/help/edge/developer/markup-sections-blocks.md)
-      + [Favicon](/help/edge/developer/favicon.md)
+      + [Icono de favoritos](/help/edge/developer/favicon.md)
       + [Encabezados personalizados](/help/edge/docs/custom-headers.md)
       + [Prácticas recomendadas para desarrolladores](/help/edge/docs/dev-collab-and-good-practices.md)
-   + Publicación de aplicaciones de envío de Edge {#publish}
+   + Publicación de aplicaciones de Edge Delivery {#publish}
       + [Creación](/help/edge/docs/authoring.md)
-      + [Metadatos masivos](/help/edge/docs/bulk-metadata.md)
-      + [Marcadores](/help/edge/docs/placeholders.md)
-      + [Sitemap](/help/edge/developer/sitemap.md)
+      + [Metadatos por lotes](/help/edge/docs/bulk-metadata.md)
+      + [Marcadores de posición](/help/edge/docs/placeholders.md)
+      + [Mapa del sitio](/help/edge/developer/sitemap.md)
       + [Configuración de SharePoint](/help/edge/docs/setup-customer-sharepoint.md)
-      + [Bot Slack](/help/edge/docs/slack.md)
-   + Inicio de aplicaciones de envío de Edge {#launch}
-      + [Lista de comprobación de lanzamiento](/help/edge/docs/go-live-checklist.md)
-      + [Invalidación push](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
+      + [Bot de Slack](/help/edge/docs/slack.md)
+   + Lanzamiento de aplicaciones de Edge Delivery {#launch}
+      + [Lanzamiento de lista de verificación](/help/edge/docs/go-live-checklist.md)
+      + [Anulación de push](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
       + [Configuración de Cloudflare Worker](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
       + [Configuración de Akamai](/help/edge/docs/byo-cdn-akamai-setup.md)
-      + [Configuración rápida](/help/edge/docs/byo-cdn-fastly-setup.md)
-      + [Redirecciones](/help/edge/docs/redirects.md)
-   + Recursos para la entrega de Edge {#resources}
-      + Sidekick {#sidekick}
-         + [Uso del Sidekick](/help/edge/docs/sidekick.md)
-         + [Instalación de extensiones](/help/edge/docs/sidekick-extension.md)
+      + [Configuración de Fastly](/help/edge/docs/byo-cdn-fastly-setup.md)
+      + [Redireccionamientos](/help/edge/docs/redirects.md)
+   + Recursos para Edge Delivery {#resources}
+      + Barra de tareas {#sidekick}
+         + [Uso de la barra de tareas](/help/edge/docs/sidekick.md)
+         + [Instalación de la extensión](/help/edge/docs/sidekick-extension.md)
          + [Configurador de proyectos](https://www.aem.live/tools/sidekick/)
-         + [Biblioteca de Sidekick](/help/edge/docs/sidekick-library.md)
+         + [Biblioteca de la barra de tareas](/help/edge/docs/sidekick-library.md)
       + [Preguntas más frecuentes](/help/edge/docs/faq.md)
-      + [API de administración](https://www.aem.live/docs/admin.html)
-      + [AEM Estado de](https://www.aemstatus.net)
+      + [API de administrador](https://www.aem.live/docs/admin.html)
+      + [Estado de AEM](https://www.aemstatus.net)
       + Herramientas {#tools}
-         + [Extensión de Sidekick Chrome](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [Extensión de Chrome de la barra de tareas](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
          + [Bot de Github](https://github.com/apps/aem-code-sync)
-         + [Registro de auditoría](/help/edge/docs/auditlog.md)
+         + [Registro de auditorías](/help/edge/docs/auditlog.md)
 + {#headless} sin encabezado
    + [¿Qué es un CMS sin encabezado?](/help/headless/what-is-headless.md)
    + [Introducción a AEM Headless](/help/headless/introduction.md)
@@ -839,14 +840,14 @@ ht-degree: 95%
       + [Optimización de consultas de GraphQL](/help/headless/graphql-api/graphql-optimization.md)
       + [Actualización de los fragmentos de contenido para el filtrado optimizado de GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [Ejemplos de consultas de GraphQL](/help/headless/graphql-api/sample-queries.md)
-      + [Solución de problemas de consultas GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
+      + [Resolución de problemas de consultas de GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
    + [API de REST de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=es)
    + Seguridad {#security}
       + [Permisos](/help/headless/security/permissions.md)
       + [Autenticación](/help/headless/security/authentication.md)
    + Implementación {#deployment}
       + [Arquitectura](/help/headless/deployment/architecture.md)
-      + [Dispatcher: puntos finales](/help/headless/deployment/dispatcher.md)
+      + [Dispatcher: puntos de conexión](/help/headless/deployment/dispatcher.md)
       + [Dispatcher: habilitar el almacenamiento en caché para consultas persistentes](/help/headless/deployment/dispatcher-caching.md)
       + [Configuración de CORS](/help/headless/deployment/cross-origin-resource-sharing.md)
       + [Filtro de referente](/help/headless/deployment/referrer-filter.md)
@@ -1120,10 +1121,10 @@ ht-degree: 95%
       + [Publicación de contenido con el editor universal](/help/implementing/universal-editor/publishing.md)
    + Desarrollo de {#developing}
       + [Introducción al editor universal en AEM](/help/implementing/universal-editor/getting-started.md)
-      + [Información general para desarrolladores de Universal Editor](/help/implementing/universal-editor/developer-overview.md)
+      + [Información general sobre el desarrollador del editor universal](/help/implementing/universal-editor/developer-overview.md)
       + [Atributos y tipos de elementos](/help/implementing/universal-editor/attributes-types.md)
       + [Definiciones de modelo, campos y tipos de componentes](/help/implementing/universal-editor/field-types.md)
       + [Autenticación del editor universal](/help/implementing/universal-editor/authentication.md)
       + [Desarrollo local de AEM con el Editor universal](/help/implementing/universal-editor/local-dev.md)
-      + [Llamadas al editor universal](/help/implementing/universal-editor/calls.md)
+      + [Llamadas del editor universal](/help/implementing/universal-editor/calls.md)
       + [Personalización del editor universal](/help/implementing/universal-editor/customizing.md)
