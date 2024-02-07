@@ -4,9 +4,9 @@ description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 77d38f03f18eb6b0fdc2f2eec5b2dc4b608b8057
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '781'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Eche un vistazo al vídeo Información general sobre la versión de enero de 202
 
 ![Extension Manager en AEM Sites](/help/assets/sites/extension-manager/homepage.png)
 
-El Extension Manager de AEM Sites permite a los desarrolladores y profesionales acceder, administrar y personalizar [Extensiones de IU](https://developer.adobe.com/uix/docs/) compilado con [Adobe App Builder](https://developer.adobe.com/app-builder/) para mejorar la funcionalidad de AEM Sites.
+El Extension Manager de AEM Sites permite a los desarrolladores y profesionales acceder, administrar y personalizar las [extensiones de la IU](https://developer.adobe.com/uix/docs/) creadas con el [Generador de aplicaciones de Adobe](https://developer.adobe.com/app-builder/) para mejorar la funcionalidad de AEM Sites.
 Con Extension Manager, puede:
 
 * Habilitar o deshabilitar las extensiones por instancia;

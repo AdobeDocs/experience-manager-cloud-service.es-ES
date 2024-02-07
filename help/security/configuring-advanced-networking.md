@@ -3,9 +3,9 @@ title: Configurar la conexión avanzada para AEM as a Cloud Service
 description: Aprenda a configurar funciones de red avanzadas como una VPN o una dirección IP de salida flexible o dedicada para AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: dfeeaca8341abec5d4fd518957baf6936a21aea3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3540'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -351,7 +351,7 @@ La mayoría de los dispositivos VPN con tecnología IPSec son compatibles. Consu
 
 * La compatibilidad se limita a una única conexión VPN
 * La capacidad de reenvío de Splunk no es posible a través de una conexión VPN.
-* Los solucionadores de DNS deben aparecer en el espacio Dirección de puerta de enlace para resolver los nombres de host privados.
+* Los solucionadores de DNS deben aparecer en el espacio de direcciones de puerta de enlace para resolver los nombres de host privados.
 
 ### Creación {#vpn-creation}
 

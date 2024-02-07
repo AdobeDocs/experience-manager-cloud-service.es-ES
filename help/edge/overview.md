@@ -4,9 +4,9 @@ description: Descubra cómo AEM as a Cloud Service puede beneficiarse del rendim
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 source-git-commit: 7d28a3a8304d79ecc3143bdc9373134d312af49d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '868'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Para más información, consulte la documentación de Edge Delivery Services:
 
 Edge Delivery Services forman parte de Adobe Experience Manager y, como tales, dichos sitios de Edge Delivery Services y AEM pueden coexistir en el mismo dominio. Este es un caso de uso común en sitios web más grandes. Además, el contenido de Edge Delivery Services se puede consumir fácilmente en sus páginas de AEM Sites y viceversa.
 
-Consulte la [AEM Guía de introducción para desarrolladores para la creación de contenido con Edge Delivery Services en la creación de](/help/edge/edge-dev-getting-started.md) AEM para aprender a iniciar su propio proyecto para crear proyectos con Edge Delivery Services de y de la.
+Consulte la [Guía de introducción de desarrolladores para la creación de contenido en AEM con Edge Delivery Services](/help/edge/edge-dev-getting-started.md) y aprenda a crear su propio proyecto con AEM y Edge Delivery Services.
 
 También puede utilizar Edge Delivery Services con Adobe Target, Analytics y Launch.
 
