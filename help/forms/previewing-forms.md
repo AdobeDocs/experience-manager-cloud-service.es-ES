@@ -4,13 +4,13 @@ description: Los usuarios pueden obtener una vista previa del formulario antes d
 topic-tags: author
 role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: 6511c4273ca3d394d98a61e8acb4d3cb03c243d5
+exl-id: 72235277-6c34-4341-9a10-02afa753e7f5
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
 workflow-type: tm+mt
 source-wordcount: '336'
-ht-degree: 84%
+ht-degree: 91%
 
 ---
-
 
 # Vista previa de un formulario {#previewing-a-form}
 
@@ -69,4 +69,3 @@ Al seleccionar **Vista previa con datos**, puede ver el aspecto que tendrá el f
 
 1. Seleccione un recurso, haga clic en Vista previa ![aem6forms_preview](assets/aem6forms_preview.png) y seleccione **Vista previa con datos**.
 1. En el cuadro de diálogo Vista previa de formulario, proporcione FormData como el archivo XML. Haga clic en Vista previa para representar el formulario con los datos combinados del XML.
-

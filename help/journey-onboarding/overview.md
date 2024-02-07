@@ -6,7 +6,7 @@ recommendations: noDisplay
 source-git-commit: 98618765b405316b18110182c221ddd968c70e96
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 92%
 
 ## Introducción {#introduction}
 
-Adobe Experience Manager es un potente conjunto de servicios de contenido maquetable que ofrecen rápidamente experiencias personalizadas y de gran impacto en cualquier canal, desbloqueando el contenido de todos los canales. **Edge Delivery Services** es la última innovación de Adobe Experience Manager que permite una velocidad de contenido extrema y ofrece experiencias excepcionales. Obtenga información sobre cómo empezar a trabajar con los Edge Delivery Services en [esta página](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html). Para comprender cómo usar los Edge Delivery Services, consulte la [Tutorial para desarrolladores](https://www.hlx.live/developer/tutorial) página.
+Adobe Experience Manager es un potente conjunto de servicios de contenido de composición que ofrece rápidamente experiencias personalizadas y de gran impacto en cualquier canal, desbloqueando contenido para todos.  **Edge Delivery Services** es la última innovación de Adobe Experience Manager que permite una velocidad de contenido extrema y ofrece experiencias excepcionales. Obtenga información sobre cómo empezar a trabajar con Edge Delivery Services en [esta página](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).  Para comprender cómo usar Edge Delivery Services, consulte la página [Tutorial para desarrolladores](https://www.hlx.live/developer/tutorial).
 
 La incorporación es el proceso durante el cual un administrador designado del sistema configura AEM as a Cloud Service para su organización. Esto incluye el aprovisionamiento inicial de recursos en la nube y la asignación de usuarios a funciones en función de sus responsabilidades laborales. Como resultado, cada miembro puede iniciar sesión y acceder a sus recursos de AEM as a Cloud Service.
 

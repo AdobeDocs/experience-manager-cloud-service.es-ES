@@ -9,7 +9,7 @@ role: Admin, User
 source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '7367'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -187,7 +187,7 @@ El paso para convertir a PDF/A tiene las siguientes propiedades:
 
 ## Paso para enviar correo electrónico {#send-email-step}
 
-Utilice este paso para enviar un correo electrónico, por ejemplo, con un documento de registro o un vínculo de un formulario adaptable <!-- , link of an interactive communication-->o con un documento de PDF adjunto. Este paso es compatible con el [correo electrónico HTML](https://es.wikipedia.org/wiki/Correo_HTML). Los correos electrónicos HTML responden y se adaptan al cliente de correo electrónico y al tamaño de pantalla de los destinatarios. Puede utilizar una plantilla de correo electrónico HTML para definir el aspecto, el esquema de colores y el comportamiento del correo electrónico.
+Utilice este paso para enviar un correo electrónico, por ejemplo un correo electrónico con un documento de registro, un vínculo <!-- , link of an interactive communication--> de formulario adaptable o con un documento PDF adjunto. Este paso es compatible con el [correo electrónico HTML](https://es.wikipedia.org/wiki/Correo_HTML). Los correos electrónicos HTML responden y se adaptan al cliente de correo electrónico y al tamaño de pantalla de los destinatarios. Puede utilizar una plantilla de correo electrónico HTML para definir el aspecto, el esquema de colores y el comportamiento del correo electrónico.
 
 El paso de correo electrónico utiliza el servicio de correo de Day CQ para enviar correos electrónicos. Antes de utilizar el paso de correo electrónico, asegúrese de que el servicio de correo electrónico está configurado. De forma predeterminada, el correo electrónico admite los protocolos HTTP y HTTPs. [Póngase en contacto con el equipo de soporte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=es#sending-email) para habilitar puertos para enviar correos electrónicos y para habilitar el protocolo SMTP para su entorno. La restricción ayuda a mejorar la seguridad de la plataforma.
 
@@ -589,7 +589,7 @@ El paso Generar salida impresa tiene las siguientes propiedades:
 * **PDF etiquetado**: especifica si se debe hacer accesible el PDF generado.
 * **Documento XCI**: especifica la ruta del archivo XCI.
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 * [Variables en flujos de trabajo de AEM centrados en Forms](/help/forms/variable-in-aem-workflows.md)
 * [Configuración del ajuste Fuera de la oficina](/help/forms/configure-out-of-office-settings.md)

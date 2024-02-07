@@ -9,7 +9,7 @@ exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
 source-git-commit: 95af49839d206f67ac02116730229f5b0531c5bb
 workflow-type: tm+mt
 source-wordcount: '2309'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -193,9 +193,9 @@ Con el editor de reglas, se puede hacer lo siguiente:
 Se admite un controlador de errores predeterminado para mostrar los mensajes de error en los campos si la respuesta de error está en el esquema estándar o en un error de validación del lado del servidor.
 Para comprender cómo utilizar un controlador de errores predeterminado con la acción [Invocar servicio del editor de reglas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=es#invoke), vamos a ver un ejemplo de formulario adaptable con dos campos, **ID de mascota** y **Nombre de mascota**. Además, usaremos un controlador de errores predeterminado en el campo **ID de mascota** para comprobar si hay varios errores devueltos por el punto final REST configurado para invocar un servicio externo, por ejemplo, `200 - OK`, `404 - Not Found` y `400 - Bad Request`.  Para añadir un controlador de error predeterminado mediante la acción Invocar servicio del Editor de reglas, ejecute los siguientes pasos:
 
-1. Abra un formulario adaptable en el modo Autor, seleccione un componente del formulario y seleccione **[!UICONTROL Editor de reglas]** para abrir el editor de reglas.
+1. Abra el formulario adaptable en el modo de creación, seleccione cualquier componente del formulario y seleccione **[!UICONTROL Editor de reglas]** para abrir el editor de reglas.
 1. Seleccione **[!UICONTROL Crear]**.
-1. Crear una condición en la sección **Cuando** de la regla. Por ejemplo, **Cuándo[Nombre del campo ID de mascota]** se ha cambiado. Seleccione se cambia de la **Seleccionar estado** lista desplegable.
+1. Crear una condición en la sección **Cuando** de la regla. Por ejemplo, **cuando se cambia[Nombre del campo ID de mascota]**. Seleccione “se ha cambiado” de la lista desplegable **Seleccionar estado**.
 1. En la sección **Entonces**, seleccione **[!UICONTROL Invocar servicio]** de la lista desplegable **Seleccionar acción**.
 1. Seleccione un **servicio Post** y sus enlaces de datos correspondientes en la sección **Entrada**. Por ejemplo, para validar **ID de mascota**, seleccione un **servicio Post** como **GET /pet/{petId}** y seleccione **ID de mascota** en la sección **Entrada**.
 1. Seleccione los enlaces de datos en la sección **Salida**. Seleccione **Nombre de mascota** en la sección **Salida**.
@@ -236,7 +236,7 @@ Para crear una función de error personalizada, realice los siguientes pasos:
 1. Vaya a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` y cree un `ClientLibraryFolder` como `clientlibs`.
 1. Cree una carpeta con el nombre `js`.
 1. Navegue hasta la carpeta `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js`. 
-1. Añada un archivo JavaScript, por ejemplo, `function.js`. El archivo contiene el código del controlador de errores personalizado.
+1. Añada un archivo JavaScript, por ejemplo `function.js`.  El archivo contiene el código del controlador de errores personalizado.
 Vamos a añadir el siguiente código al archivo JavaScript para mostrar la respuesta y los encabezados, recibidos del extremo del servicio REST, en la consola del explorador.
 
    ```javascript
@@ -300,7 +300,7 @@ Antes de implementar el controlador de error personalizado en un formulario adap
 
 Para utilizar un controlador de errores personalizado utilizando la acción **[!UICONTROL Invocar servicio del Editor de reglas]**:
 
-1. Abra un formulario adaptable en el modo Autor, seleccione un componente del formulario y seleccione **[!UICONTROL Editor de reglas]** para abrir el editor de reglas.
+1. Abra el formulario adaptable en el modo de creación, seleccione cualquier componente del formulario y seleccione **[!UICONTROL Editor de reglas]** para abrir el editor de reglas.
 1. Seleccione **[!UICONTROL Crear]**.
 1. Crear una condición en la sección **Cuando** de la regla. Por ejemplo, cuando se ha cambiado el **[Nombre del campo ID de mascota]**, seleccione **se ha cambiado** en la lista desplegable **Seleccionar estado**.
 1. En la sección **Entonces**, seleccione **[!UICONTROL Invocar servicio]** de la lista desplegable **Seleccionar acción**.
@@ -309,7 +309,7 @@ Para utilizar un controlador de errores personalizado utilizando la acción **[!
 1. Seleccione **[!UICONTROL Controlador de errores personalizado]** en la sección **[!UICONTROL Controlador de errores]**.
 1. Haga clic en **[!UICONTROL Listo]**.
 
-![agregar un controlador de error personalizado en un formulario para controlar las respuestas de error](/help/forms/assets/custom-error-handler.png)s
+![añadir un controlador de errores personalizado en un formulario para controlar las respuestas de error](/help/forms/assets/custom-error-handler.png)
 
 
 Como resultado de esta regla, los valores introducidos para **ID de mascota** comprueban la validación de **Nombre de mascota** utilizando el servicio externo invocado por el punto final REST. Si los criterios de validación basados en la fuente de datos fallan, los mensajes de error se muestran en el nivel de campo.
@@ -406,7 +406,7 @@ Using this custom error handler, the adaptive form converts the fields listed in
 * [Creación de estilos o temáticas para los formularios](/help/forms/using-themes-in-core-components.md)
 * [Crear o agregar un formulario adaptable a una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}
 

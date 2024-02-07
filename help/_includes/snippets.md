@@ -2,7 +2,7 @@
 source-git-commit: 45b263651f6139b1c7f83ff3485186b272ba1a4f
 workflow-type: tm+mt
 source-wordcount: '302'
-ht-degree: 71%
+ht-degree: 81%
 
 ---
 # Fragmentos de código {#snippets}
@@ -15,13 +15,13 @@ ht-degree: 71%
 
 [!BADGE Para crear contenido de AEM para Edge Delivery Services, haga clic aquí.]{type=Positive url="/help/edge/overview.md" tooltip="Creación de contenido de AEM para Edge Delivery Services"}
 
-## Estado del editor universal {#universal-editor-status}
+## Estado del Editor universal {#universal-editor-status}
 
 >[!NOTE]
 >
->El editor universal sigue en desarrollo y sus capacidades están sujetas a cambios y pueden diferir de lo que se detalla en este documento.
+>El Editor universal sigue en desarrollo y sus funcionalidades están sujetas a cambios y pueden diferir de lo que se detalla en este documento.
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 * [Crear un formulario adaptable de AEM](/help/forms/creating-adaptive-form-core-components.md)
 * [Agregar un formulario adaptable de AEM a la página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

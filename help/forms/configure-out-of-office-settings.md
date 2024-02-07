@@ -7,7 +7,7 @@ role: Admin, User
 source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -39,17 +39,17 @@ Puede distribuir la delegación de elementos según los modelos de flujo de trab
 
 Realice los siguientes pasos para habilitar la configuración de Fuera de la oficina en su cuenta y delegar los elementos de la Bandeja de entrada en otro usuario:
 
-1. Inicie sesión en la instancia de AEM. Seleccione el ![Bandeja de entrada](assets/bell.svg) y seleccione **[!UICONTROL Ver todo]**. Aparecerá una lista de los elementos de la Bandeja de entrada.
-1. Seleccione el ![Selector de vista](assets/viewlist.svg) o ![Selector de vista](assets/calendar.svg) junto al icono **[!UICONTROL Crear]** y seleccione **[!UICONTROL Configuración]**. Aparecerá el cuadro de diálogo Configuración.
+1. Inicie sesión en la instancia de AEM. Seleccione el icono ![Bandeja de entrada](assets/bell.svg) y luego seleccione **[!UICONTROL Ver todo]**. Aparecerá una lista de los elementos de la Bandeja de entrada.
+1. Seleccione ![Selector de vista](assets/viewlist.svg) o el icono ![Selector de vista](assets/calendar.svg) junto al botón **[!UICONTROL Crear]** y luego seleccione **[!UICONTROL Configuración]**.  Aparece el cuadro de diálogo Configuración.
 1. Abra la pestaña **[!UICONTROL Fuera de la oficina]** en el cuadro de diálogo Configuración.
-1. Seleccione el **[!UICONTROL Habilitar/deshabilitar]** para habilitar la configuración de Fuera de la oficina.
+1. Seleccione el botón **[!UICONTROL Habilitar/Deshabilitar]** para habilitar la configuración de Fuera de la oficina.
 1. Especifique la **[!UICONTROL Hora de inicio]** y la **[!UICONTROL Hora de finalización]** para la configuración. Los elementos se delegarán únicamente durante el período especificado. Deje el campo **[!UICONTROL Hora de finalización]** vacío para delegar los elementos durante un período de tiempo indefinido.
 1. Seleccione la casilla de verificación **[!UICONTROL Reenviar mis elementos durante este periodo]**. Si no selecciona la opción y no especifica un usuario asignado, los elementos no se reenvían a ningún usuario. Aunque no esté presente y la configuración esté habilitada, los elementos permanecerán en la Bandeja de entrada.
-1. Seleccionar **[!UICONTROL Agregar usuario asignado]**. Especifique un usuario en el campo **[!UICONTROL Usuario asignado]** en el que delegar los elementos. Especifique el **[!UICONTROL Modelo de flujo de trabajo]** para delegar en el usuario especificado. Puede seleccionar más de un modelo de flujo de trabajo.
+1. Seleccione **[!UICONTROL Agregar usuario asignado]**. Especifique un usuario en el campo **[!UICONTROL Usuario asignado]** en el que delegar los elementos. Especifique el **[!UICONTROL Modelo de flujo de trabajo]** para delegar en el usuario especificado. Puede seleccionar más de un modelo de flujo de trabajo.
 
    Además, para asignar todos los elementos a un usuario determinado independientemente del modelo de flujo de trabajo, seleccione **[!UICONTROL Todos los flujos de trabajo]** en la lista desplegable Modelo de flujo de trabajo. <br>
 
-   Para asignar elementos a un usuario determinado para todos los modelos de flujo de trabajo excepto algunos, seleccione **[!UICONTROL Todos los flujos de trabajo]** en la lista desplegable Workflow Model, seleccione **[!UICONTROL + Agregar excepciones]**y especifique los modelos de flujo de trabajo que desea excluir.
+   Para asignar elementos a un usuario determinado para todos los modelos de flujo de trabajo excepto algunos, seleccione **[!UICONTROL Todos los flujos de trabajo]** en la lista desplegable Modelo de flujo de trabajo, seleccione **[!UICONTROL + Agregar excepciones]** y especifique los modelos de flujo de trabajo que desea excluir.
    <br>
 
    Repita el paso para agregar más usuarios asignados. <br>
@@ -59,7 +59,7 @@ Realice los siguientes pasos para habilitar la configuración de Fuera de la ofi
    >El orden de los usuarios asignados es importante. Cuando se asigna un elemento a un usuario que ha habilitado la configuración de Fuera de la oficina, el elemento se evalúa según la lista de usuarios asignados especificados en el orden en el que se agregan los usuarios asignados. Cuando un elemento coincide con los criterios, se asigna al usuario destinado y el siguiente usuario no se comprueba.
 
 
-1. Seleccionar **[!UICONTROL Guardar]**. La configuración se aplica en la fecha y la hora de inicio especificadas. Si inicia sesión mientras está fuera de la oficina, no se considerará que ha vuelto hasta que cambie la configuración.
+1. Seleccione **[!UICONTROL Guardar]**. La configuración se aplica en la fecha y la hora de inicio especificadas. Si inicia sesión mientras está fuera de la oficina, no se considerará que ha vuelto hasta que cambie la configuración.
 
 Ahora, los elementos que se le hayan asignado durante el período de tiempo que ha estado fuera de la oficina se asignarán automáticamente al usuario asignado especificado. 
 ![Fuera de la oficina](assets/out-of-office.png)

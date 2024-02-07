@@ -8,7 +8,7 @@ exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
 source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 88%
+ht-degree: 93%
 
 ---
 
@@ -46,7 +46,7 @@ Puede crear [formularios adaptables](creating-adaptive-form.md) y fragmentos de 
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. Seleccionar para expandir **[!UICONTROL Seleccionar modelo de datos de formulario]**. Se muestran todos los modelos de datos de formulario disponibles.
+1. Seleccione para expandir **[!UICONTROL Seleccionar modelo de datos de formulario]**. Se muestran todos los modelos de datos de formulario disponibles.
 
    Seleccione un modelo de datos de formulario.
 
@@ -100,7 +100,7 @@ The interactive communication opens with prefilled sample data.
 
 ![web-preview](assets/web-preview.png)-->
 
-Para obtener una vista previa de un formulario adaptable con datos de ejemplo, abra el formulario adaptable en el modo Autor y seleccione **[!UICONTROL Previsualizar]**.
+Para obtener una vista previa de un formulario adaptable con datos de ejemplo, abra el formulario adaptable en el modo Autor y seleccione **[!UICONTROL Vista previa]**.
 
 ## Prerrellenado mediante el servicio del modelo de datos de formulario {#prefill}
 
@@ -144,10 +144,10 @@ También puede enviar los archivos adjuntos del formulario a una fuente de datos
 
 1. Agregue un objeto de modelo de datos que incluya una propiedad binaria al modelo de datos de formulario.
 1. En el formulario adaptable, arrastre y coloque el componente **[!UICONTROL Archivo adjunto]** desde el Explorador de componente al formulario adaptable.
-1. Seleccione para seleccionar el componente añadido y seleccione ![settings_icon](assets/configure-icon.svg) para abrir el Explorador de propiedades del componente.
-1. En el campo Referencia de enlace, seleccione ![foldersearch_18](assets/folder-search-icon.svg) y desplácese hasta seleccionar la propiedad binaria añadida en el modelo de datos de formulario. Configure otras propiedades según corresponda.
+1. Seleccione para seleccionar el componente agregado y seleccione ![settings_icon](assets/configure-icon.svg) para abrir el Explorador de propiedades del componente.
+1. En el campo Referencia de enlace, seleccione ![foldersearch_18](assets/folder-search-icon.svg) y desplácese hasta seleccionar la propiedad binaria añadida en el modelo de datos de formulario. Configure otras propiedades según corresponda.
 
-   Seleccionar ![botón de verificación](assets/save_icon.svg) para guardar las propiedades. El campo Datos adjuntos ahora está enlazado a la propiedad binaria del modelo de datos de formulario.
+   Seleccione ![check-button](assets/save_icon.svg) para guardar las propiedades. El campo Datos adjuntos ahora está enlazado a la propiedad binaria del modelo de datos de formulario.
 
 1. En la sección Envío de las propiedades del contenedor de formulario adaptable, active **[!UICONTROL Enviar archivos adjuntos del formulario]**. Esto envía el archivo adjunto del campo de propiedad binaria a la fuente de datos al enviar el formulario.
 

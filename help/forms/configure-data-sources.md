@@ -8,7 +8,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '2121'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Antes de configurar bases de datos relacionales mediante la configuración de la
 Puede configurar bases de datos relacionales mediante la configuración de la consola web de [!DNL Experience Manager]. Haga lo siguiente:
 
 1. Vaya a la consola web de [!DNL Experience Manager] en `https://server:host/system/console/configMgr`.
-1. Localice la configuración de **[!UICONTROL Grupos de conexiones JDBC de Day Commons]**. Seleccione para abrir la configuración en modo de edición.
+1. Localice la configuración de **[!UICONTROL Grupos de conexiones JDBC de Day Commons]**. Seleccione esta opción para abrir la configuración en modo de edición.
 
    ![Grupo de conectores JDBC](/help/forms/assets/jdbc_connector.png)
 
@@ -72,9 +72,9 @@ Puede configurar bases de datos relacionales mediante la configuración de la co
 
    >[!NOTE]
    >
-   > Consulte [Conexiones SQL con el conjunto de fuentes de datos JDBC](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=es) para obtener información más detallada.
+   > Consulte las [Conexiones SQL con el conjunto de fuentes de datos JDBC](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=es) para obtener información más detallada.
 
-1. Seleccionar **[!UICONTROL Guardar]** para guardar la configuración.
+1. Seleccione **[!UICONTROL Guardar]** para salvar la configuración.
 
 Ahora puede utilizar la base de datos relacional configurada con el modelo de datos de formulario.
 
@@ -111,15 +111,15 @@ Para configurar la carpeta para las configuraciones de servicios en la nube:
    * Consulte la documentación del [Explorador de configuración](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=es) para obtener más información.
 1. Haga lo siguiente para habilitar la carpeta global para configuraciones de nube u omita este paso para crear y configurar otra carpeta para configuraciones de servicios en la nube.
 
-   1. En el **[!UICONTROL Explorador de configuración]**, seleccione la `global` carpeta y seleccione **[!UICONTROL Propiedades]**.
+   1. En el **[!UICONTROL Explorador de configuración]**, seleccione la carpeta `global` y **[!UICONTROL Propiedades]**.
 
    1. En el cuadro de diálogo **[!UICONTROL Propiedades de configuración]**, habilite **[!UICONTROL Configuraciones de nube]**.
 
-   1. Seleccionar **[!UICONTROL Guardar y cerrar]** para guardar la configuración y salir del cuadro de diálogo.
+   1. Seleccione **[!UICONTROL Guardar y cerrar]** para guardar la configuración y salir del cuadro de diálogo.
 
-1. En el **[!UICONTROL Explorador de configuración]**, seleccione **[!UICONTROL Crear]**.
+1. En el **[!UICONTROL Explorador de configuración]**, seleccione **[!UICONTROL Crear]**.
 1. En el cuadro de diálogo **[!UICONTROL Crear configuración]**, especifique un título para la carpeta y habilite **[!UICONTROL Configuraciones de nube]**.
-1. Seleccionar **[!UICONTROL Crear]** para crear la carpeta habilitada para las configuraciones del servicio en la nube.
+1. Seleccione **[!UICONTROL Crear]** para crear la carpeta habilitada para las configuraciones del servicio en la nube.
 
 ## Configurar servicios web de RESTful {#configure-restful-web-services}
 
@@ -127,11 +127,11 @@ El servicio web RESTful se puede describir con las [especificaciones de Swagger]
 
 ### Configuración de servicios RESTful para la especificación de API abierta versión 2.0 {#configure-restful-services-open-api-2.0}
 
-1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Seleccione para seleccionar la carpeta en la que desea crear una configuración de nube.
+1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Seleccione para elegir la carpeta en la que desea crear una configuración de nube.
 
    Consulte [Configurar carpetas para configuraciones de servicios en la nube](configure-data-sources.md#cloud-folder) para obtener información sobre la creación y configuración de una carpeta para configuraciones de servicios en la nube.
 
-1. Seleccionar **[!UICONTROL Crear]** para abrir **[!UICONTROL Asistente de configuración de creación de fuentes de datos]**. Especifique un nombre y, opcionalmente, un título para la configuración, seleccione **[!UICONTROL Servicio RESTful]** desde el **[!UICONTROL Tipo de servicio]** , si lo desea, busque y seleccione una imagen en miniatura para la configuración y seleccione **[!UICONTROL Siguiente]**.
+1. Seleccione **[!UICONTROL Crear]** para abrir el **[!UICONTROL Asistente de configuración para crear fuentes de datos]**. Especifique un nombre y, opcionalmente, un título para la configuración, seleccione **[!UICONTROL Servicio RESTful]** en la lista desplegable **[!UICONTROL Tipo de servicio]**; opcionalmente puede examinar y seleccionar una imagen de miniatura para la configuración y seleccionar **[!UICONTROL Siguiente]**.
 1. Especifique los siguientes detalles para el servicio RESTful:
 
    * Seleccione la URL o archivo en la lista desplegable [!UICONTROL Fuente de Swagger] y, en consecuencia, especifique el [!DNL Swagger URL] para el archivo de definición [!DNL  Swagger] o cargue el archivo [!DNL Swagger] de su sistema de archivos local.
@@ -148,15 +148,15 @@ El servicio web RESTful se puede describir con las [especificaciones de Swagger]
 
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
-1. Seleccionar **[!UICONTROL Crear]** para crear la configuración de nube para el servicio RESTful.
+1. Seleccione **[!UICONTROL Crear]** para crear la configuración de nube para el servicio RESTful.
 
 ### Configuración de servicios RESTful para la especificación de API abierta versión 3.0 {#configure-restful-services-open-api-3.0}
 
-1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Seleccione para seleccionar la carpeta en la que desea crear una configuración de nube.
+1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Seleccione para elegir la carpeta en la que desea crear una configuración de nube.
 
    Consulte [Configurar carpetas para configuraciones de servicios en la nube](configure-data-sources.md#cloud-folder) para obtener información sobre la creación y configuración de una carpeta para configuraciones de servicios en la nube.
 
-1. Seleccionar **[!UICONTROL Crear]** para abrir **[!UICONTROL Asistente de configuración de creación de fuentes de datos]**. Especifique un nombre y, opcionalmente, un título para la configuración, seleccione **[!UICONTROL Servicio RESTful]** desde el **[!UICONTROL Tipo de servicio]** , si lo desea, busque y seleccione una imagen en miniatura para la configuración y seleccione **[!UICONTROL Siguiente]**.
+1. Seleccione **[!UICONTROL Crear]** para abrir el **[!UICONTROL Asistente de configuración para crear fuentes de datos]**. Especifique un nombre y, opcionalmente, un título para la configuración, seleccione **[!UICONTROL Servicio RESTful]** en la lista desplegable **[!UICONTROL Tipo de servicio]**; opcionalmente puede examinar y seleccionar una imagen de miniatura para la configuración y seleccionar **[!UICONTROL Siguiente]**.
 1. Especifique los siguientes detalles para el servicio RESTful:
 
    * Seleccione la URL o archivo en la lista desplegable [!UICONTROL Fuente de Swagger] y, en consecuencia, especifique la [!DNL Swagger 3.0 URL] para el archivo de definición [!DNL  Swagger] o cargue el archivo [!DNL Swagger] de su sistema de archivos local.
@@ -167,7 +167,7 @@ El servicio web RESTful se puede describir con las [especificaciones de Swagger]
 
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
-1. Seleccionar **[!UICONTROL Crear]** para crear la configuración de nube para el servicio RESTful.
+1. Seleccione **[!UICONTROL Crear]** para crear la configuración de nube para el servicio RESTful.
 
 Algunas de las operaciones no admitidas por los servicios de la especificación de API abierta versión 3.0 son las siguientes:
 * Rellamadas
@@ -208,7 +208,7 @@ El siguiente archivo JSON muestra un ejemplo:
 } 
 ```
 
-1. Seleccionar **[!UICONTROL Configuración del cliente HTTP del modelo de datos del formulario para fuente de datos de REST]**.
+1. Seleccione **[!UICONTROL Configuración del cliente HTTP del modelo de datos del formulario para fuente de datos de REST]**.
 
 1. En el diálogo [!UICONTROL Configuración del cliente HTTP del modelo de datos del formulario para fuente de datos de REST]:
 
@@ -228,11 +228,11 @@ Los servicios web basados en SOAP se describen utilizando [Especificaciones del 
 
 Para configurar el servicio web basado en SOAP en [!DNL Experience Manager] as a Cloud Service, asegúrese de que cuenta con la URL de WSDL para el servicio web y haga lo siguiente:
 
-1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Seleccione para seleccionar la carpeta en la que desea crear una configuración de nube.
+1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Seleccione para elegir la carpeta en la que desea crear una configuración de nube.
 
    Consulte [Configurar carpetas para configuraciones de servicios en la nube](configure-data-sources.md#cloud-folder) para obtener información sobre la creación y configuración de una carpeta para configuraciones de servicios en la nube.
 
-1. Seleccionar **[!UICONTROL Crear]** para abrir **[!UICONTROL Asistente de configuración de creación de fuentes de datos]**. Especifique un nombre y, opcionalmente, un título para la configuración, seleccione **[!UICONTROL Servicio web SOAP]** desde el **[!UICONTROL Tipo de servicio]** , si lo desea, busque y seleccione una imagen en miniatura para la configuración y seleccione **[!UICONTROL Siguiente]**.
+1. Seleccione **[!UICONTROL Crear]** para abrir el **[!UICONTROL Asistente de configuración para crear las fuentes de datos]**. Especifique un nombre y, opcionalmente, un título para la configuración, seleccione **[!UICONTROL Servicio web SOAP]** en la lista desplegable **[!UICONTROL Tipo de servicio]**. También puede examinar y seleccionar una imagen en miniatura para la configuración y seleccionar **[!UICONTROL Siguiente]**.
 1. Especifique lo siguiente para el servicio web SOAP:
 
    * URL de WSDL para el servicio web.
@@ -244,7 +244,7 @@ Para configurar el servicio web basado en SOAP en [!DNL Experience Manager] as a
 
      <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
-1. Seleccionar **[!UICONTROL Crear]** para crear la configuración de nube para el servicio web SOAP.
+1. Seleccione **[!UICONTROL Crear]** para crear la configuración de nube para el servicio web SOAP.
 
 ### Habilitar el uso de instrucciones de importación en el WSDL de los servicios web SOAP {#enable-import-statements}
 
@@ -269,11 +269,11 @@ Un servicio OData se identifica mediante su URL raíz de servicio. Para configur
 > El modelo de datos de formulario es compatible con la [versión 4 de OData](https://www.odata.org/documentation/).
 >Para obtener una guía paso a paso sobre la configuración de [!DNL Microsoft®® Dynamics 365], en línea o de forma local, consulte [[!DNL Microsoft® Dynamics] Configuración de OData](ms-dynamics-odata-configuration.md).
 
-1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Seleccione para seleccionar la carpeta en la que desea crear una configuración de nube.
+1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Seleccione para elegir la carpeta en la que desea crear una configuración de nube.
 
    Consulte [Configurar carpetas para configuraciones de servicios en la nube](#cloud-folder) para obtener información sobre la creación y configuración de una carpeta para configuraciones de servicios en la nube.
 
-1. Seleccionar **[!UICONTROL Crear]** para abrir **[!UICONTROL Asistente de configuración de creación de fuentes de datos]**. Especifique un nombre y, opcionalmente, un título para la configuración, seleccione **[!UICONTROL Servicio OData]** desde el **[!UICONTROL Tipo de servicio]** , si lo desea, busque y seleccione una imagen en miniatura para la configuración y seleccione **[!UICONTROL Siguiente]**.
+1. Seleccione **[!UICONTROL Crear]** para abrir el **[!UICONTROL Asistente de configuración para crear fuentes de datos]**. Especifique un nombre y, opcionalmente, un título para la configuración, seleccione **[!UICONTROL Servicio OData]** en la lista desplegable **[!UICONTROL Tipo de servicio]**. También puede examinar y seleccionar una imagen en miniatura para la configuración y seleccionar **[!UICONTROL Siguiente]**.
 1. Especifique los siguientes detalles para el servicio OData:
 
    * URL raíz del servicio para configurar el servicio OData.
@@ -283,9 +283,9 @@ Un servicio OData se identifica mediante su URL raíz de servicio. Para configur
 
    >[!NOTE]
    >
-   Debe seleccionar el tipo de autenticación OAuth 2.0 con el que conectarse a los servicios de [!DNL Microsoft®® Dynamics] que utilizan el punto final OData como raíz de servicio.
+   >Debe seleccionar el tipo de autenticación OAuth 2.0 con el que conectarse a los servicios de [!DNL Microsoft®® Dynamics] que utilizan el punto final OData como raíz de servicio.
 
-1. Seleccionar **[!UICONTROL Crear]** para crear la configuración de nube para el servicio OData.
+1. Seleccione **[!UICONTROL Crear]** para crear la configuración de nube para el servicio OData.
 
 <!--
 ## Configure Microsoft® SharePoint List {#config-sharepoint-list}

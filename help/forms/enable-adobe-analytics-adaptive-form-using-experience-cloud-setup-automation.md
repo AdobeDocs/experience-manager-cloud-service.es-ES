@@ -8,7 +8,7 @@ exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
 source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
 source-wordcount: '1555'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ Siga los pasos que se indican a continuación para habilitar y configurar Adobe 
 1. Creación de un contenedor de configuración para los servicios en la nube:
    1. Vaya a **[!UICONTROL Herramientas > General > Explorador de configuración]**.
    1. Seleccione o cree un contenedor de configuración y habilite la carpeta para **[!UICONTROL Configuraciones de nube]**.
-   1. Seleccionar **[!UICONTROL Guardar y cerrar]** para guardar la configuración y salir del cuadro de diálogo.
+   1. Seleccione **[!UICONTROL Guardar y cerrar]** para guardar la configuración y salir del cuadro de diálogo.
 1. En la instancia de AEM, vaya a **[Formularios]** >> **[Formularios y documentos]**.
 1. Seleccione su **[!UICONTROL Formulario]** >> **[!UICONTROL Propiedades]**, en el **[!UICONTROL Contenedor de configuración]**, seleccione el contenedor de configuración que creó o seleccionó en el Paso 1 **[!UICONTROL Explorador de configuración]**.
 1. Seleccione el Panel de tareas en el carril izquierdo y haga clic en **Análisis de configuración** y **Activar Adobe Analytics**.
@@ -212,7 +212,7 @@ Una vez que haya enlazado las reglas de Forms y Sites a través de los pasos men
 
 1. Haga clic en **Flujo de publicaciones** a la izquierda.
 1. Haga clic en **Añadir biblioteca** y escriba el nombre que prefiera.
-1. En el **Entorno** desplegable a la derecha, seleccione **desarrollo**.
+1. En el menú desplegable **Entorno** a la derecha, seleccione **desarrollo**.
 1. Haga clic en **Añadir todos los recursos modificados**.
 1. Haga clic en **Guardar y generar en desarrollo**.
 
@@ -235,7 +235,7 @@ Una vez que haya enlazado las reglas de Forms y Sites a través de los pasos men
 
 -->
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 * [Ver y comprender los informes de análisis de Formularios adaptables](/help/forms/view-understand-aem-forms-analytics-reports.md)
 * [Agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

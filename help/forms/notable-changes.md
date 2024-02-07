@@ -8,7 +8,7 @@ contentOwner: khsingh
 source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '1317'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Adobe Experience Manager Forms as a Cloud Service incluye algunos cambios import
 
 <!--* **Prefill Service:** By default, the prefill service merges data with an Adaptive Form at client as opposed to merging data on Server in AEM 6.5 Forms. The feature helps improve the time required to prefill an Adaptive Form. You can always configure to run the merge action on the Adobe Experience Manager Forms Server.-->
 
-* **Servicio de relleno previo:** El servicio de prerrellenado recupera datos del servidor y los combina para prerrellenar el Forms adaptable en el lado del cliente. Esta función ayuda a mejorar el tiempo necesario para rellenar un formulario adaptable. Siempre puede configurar la variable [servicio de prerrellenar](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html) para ejecutar la acción de combinación en Adobe Experience Manager Forms Server.
+* **Servicio de relleno previo:** el servicio de relleno previo recupera datos del servidor y los combina para rellenar previamente el formulario adaptable en el lado del cliente. Esta funcionalidad ayuda a mejorar el tiempo necesario para rellenar un formulario adaptable. Siempre puede configurar el [servicio de relleno previo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html) para ejecutar la acción de combinación en el servidor de Adobe Experience Manager Forms.
 
 * **Acciones de envío:** la acción de envío **Correo electrónico** proporciona opciones para enviar archivos adjuntos y adjuntar documentos de registro (DoR) mediante correo electrónico. Puede utilizarla en lugar de la acción **Enviar por correo electrónico como PDF** disponible en AEM Forms 6.5.
 

@@ -8,7 +8,7 @@ exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
 source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '3145'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 Puede aprovechar al máximo esta función utilizando las siguientes opciones:
 
-* **[Crear un formulario adaptable con plantillas aprobadas e incrustarlo en una página de AEM Sites](#embed-form-using-adaptive-form-wizzard-aem-sites):** Puede utilizar plantillas aprobadas previamente para crear e incrustar rápidamente Forms adaptables que se ajusten a las directrices de promoción de la marca y los estándares de diseño de su organización.
+* **[Crear un formulario adaptable con plantillas aprobadas e incrustarlo en una página de AEM Sites](#embed-form-using-adaptive-form-wizzard-aem-sites):** puede utilizar las plantillas aprobadas previamente para crear e incrustar rápidamente Formularios adaptables que se ajusten a las directrices de personalización de marca y los estándares de diseño de su organización.
 
 * **[Añada formularios existentes a una página de AEM Sites](#embed-an-adaptive-form-in-sites-editor):** puede integrar fácilmente formularios que ya haya creado en sus sitios web, lo que permite a los visitantes interactuar con ellos directamente.
 
@@ -202,7 +202,7 @@ Para incrustar un formulario adaptable en una página de Sites, haga lo siguient
 
 1. Abra la página de AEM Sites en el modo de edición.
 1. Arrastre y suelte el componente **[!UICONTROL Formularios adaptables: incrustados (v2)]** del explorador de componentes a la página de Sites.
-1. Seleccione el **[!UICONTROL Forms adaptable: incrustado]** en la página Sitios y seleccione ![Propiedades del contenedor del formulario adaptable](/help/forms/assets/configure-icon.svg) en la barra de acciones. Se abre el cuadro de diálogo **[!UICONTROL Editar formularios adaptables: incrustados (v2)]**.
+1. Seleccione el componente **[!UICONTROL Formularios adaptables: incrustados]** en la página de Sites y, a continuación, seleccione ![propiedades del Contenedor de formulario adaptable](/help/forms/assets/configure-icon.svg) en la barra de acciones. Se abre el cuadro de diálogo **[!UICONTROL Editar formularios adaptables: incrustados (v2)]**.
 1. Busque y seleccione el formulario adaptable para incrustarlo en la **[!UICONTROL Ruta de recursos]**.
 1. Guarde la configuración. El formulario adaptable está ahora incrustado en la página.
 
@@ -216,7 +216,7 @@ También puede ampliar la accesibilidad de los formularios incrustándolos en el
 
 1. Abra un Fragmento de experiencia en modo de edición.
 1. Arrastre y suelte el componente **[!UICONTROL Formularios adaptables: incrustados (v2)]** del explorador de componentes al Fragmento de experiencia.
-1. Seleccione el **[!UICONTROL Forms adaptable: incrustado]** en el Fragmento de experiencia y seleccione ![Propiedades del contenedor del formulario adaptable](/help/forms/assets/configure-icon.svg) en la barra de acciones. Se abre el cuadro de diálogo **[!UICONTROL Editar formularios adaptables: incrustados (v2)]**.
+1. Seleccione el componente **[!UICONTROL Formularios adaptables: incrustados]** en el Fragmento de experiencia y ![Propiedades del contenedor del formulario adaptable](/help/forms/assets/configure-icon.svg) en la barra de acciones. Se abre el cuadro de diálogo **[!UICONTROL Editar formularios adaptables: incrustados (v2)]**.
 1. Busque y seleccione el formulario adaptable para incrustarlo en la **[!UICONTROL Ruta de recursos]**.
 1. Guarde la configuración. El formulario adaptable ahora está incrustado en el Fragmento de experiencia.
 
@@ -241,7 +241,7 @@ Para convertir un formulario adaptable en una página de AEM Sites en un Fragmen
    * **Acción:** seleccione crear un Fragmento de experiencia o añadir a un Fragmento de experiencia existente.
    * **Ruta principal:** especifique la ruta de la carpeta en la que se alojará el Fragmento de experiencia. La opción solo está disponible para crear un nuevo Fragmento de experiencia.
    * **Plantilla:** especifique la ruta de la plantilla del Fragmento de experiencia. Si no tiene una plantilla de fragmento de experiencia, [créela](/help/implementing/developing/extending/experience-fragments.md). La opción solo está disponible para agregar formularios adaptables a un Fragmento de experiencia existente.
-   * **Título del fragmento:** Especifique el título del Fragmento de experiencia. El título identifica de forma exclusiva un fragmento de experiencia.
+   * **Título del fragmento:** Especifique el título del Fragmento de experiencia. El título identifica de forma exclusiva un Fragmento de experiencia.
    * **Etiquetas del fragmento:** especifique la etiqueta del Fragmento de experiencia. La etiqueta identifica de forma exclusiva la categoría de un Fragmento de experiencia.
 
 ## Configurar las propiedades de incrustación del Formulario adaptable (v2)
@@ -358,7 +358,7 @@ Consideremos los siguientes escenarios a la hora de publicar un formulario adapt
 Para modificar cualquier configuración o propiedad del formulario adaptable incrustado, realice una de las siguientes acciones.
 
 * Abra el formulario original en Formularios adaptables en los respectivos editores y modifíquelo.
-* Seleccione el formulario adaptable desde la página de Sites en el modo Edición y, a continuación, seleccione **[!UICONTROL Editar en una nueva ventana]**. El formulario original se abrirá en el modo Edición, en el cual puede modificarlo.
+* Seleccione el formulario adaptable desde la página de Sites en el modo Edición y, a continuación, seleccione **[!UICONTROL Editar en una nueva ventana]**. El formulario original se abrirá en el modo de edición, donde puede modificarlo.
 
 >[!NOTE]
 >
@@ -373,7 +373,7 @@ Tenga en cuenta los siguientes puntos al incrustar formularios adaptables en pá
 * La acción de envío configurada en el formulario original se mantiene en el formulario incrustado.
 * Si Adobe Analytics está configurado para el formulario original, los datos de análisis del formulario incrustado se capturan en esta aplicación. Sin embargo, no está disponible en el informe de análisis de Forms.
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 * [Crear formularios adaptables independientes basados en los componentes principales](/help/forms/creating-adaptive-form-core-components.md)
 * [Creación de un formulario adaptable basado en componentes principales directamente en una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
