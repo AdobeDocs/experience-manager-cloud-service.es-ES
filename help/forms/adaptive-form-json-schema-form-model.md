@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1333'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -738,7 +738,7 @@ Para permitir que todos los Formularios adaptables basados en esquemas JSON gene
 
 1. Vaya a la consola web de Experience Manager en `https://server:host/system/console/configMgr`.
 1. Localizar **[!UICONTROL Configuración del canal web de comunicaciones interactivas y formularios adaptables]**.
-1. Seleccione para abrir la configuración en modo de edición.
+1. Seleccione esta opción para abrir la configuración en modo de edición.
 1. Seleccione la casilla de verificación **[!UICONTROL Generar datos compatibles con esquemas]**.
 1. Guarde la configuración.
 
@@ -771,7 +771,7 @@ Tiene dos opciones:
 
 La extensión del archivo de esquema JSON debe ser .schema.json. Por ejemplo, &lt;filename>.schema.json.
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}
 

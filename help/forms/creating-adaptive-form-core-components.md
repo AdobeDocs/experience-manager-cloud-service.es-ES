@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2264'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -62,9 +62,9 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 
 1. Inicie sesión en la instancia de autor de [!DNL Experience Manager Forms]. Puede ser una instancia de nube o una instancia de desarrollo local.
 
-1. Introduzca sus credenciales en la página de inicio de sesión de Experience Manager. Cuando haya iniciado sesión, en la esquina superior izquierda, seleccione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms y documentos]**.
+1. Introduzca sus credenciales en la página de inicio de sesión de Experience Manager. Cuando haya iniciado sesión, en la esquina superior izquierda, seleccione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
 
-1. Seleccionar **[!UICONTROL Crear]**  > **[!UICONTROL Forms adaptable]**. Se abre el asistente. En la pestaña Fuente, seleccione una plantilla:
+1. Seleccione **[!UICONTROL Crear]** > **[!UICONTROL Formularios adaptables]**. Se abre el asistente. En la pestaña Fuente, seleccione una plantilla:
 
    ![Plantilla de componentes principales](/help/forms/assets/core-components-template.png)
 
@@ -184,11 +184,11 @@ Puede utilizar el servicio de rellenado previo del modelo de datos de formulario
 
 ## Edición de las propiedades del modelo de formulario de un formulario adaptable {#edit-form-model}
 
-1. Seleccione el formulario adaptable y seleccione ![Información de página](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Abrir propiedades]**. Se abre la página Propiedades del formulario.
+1. Seleccione el formulario adaptable e ![Información de página](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Abrir propiedades]**. Se abre la página Propiedades del formulario.
 
 1. Vaya a la pestaña **[!UICONTROL Modelo de formulario]** y elija un modelo de formulario. Si el formulario adaptable no cuenta con un modelo de formulario, tiene la posibilidad de elegir un esquema JSON o un modelo de datos de formulario. Por otro lado, si el formulario adaptable ya se basa en un modelo de formulario, tiene la opción de cambiar a otro modelo de formulario del mismo tipo. Por ejemplo, si el formulario utiliza un esquema JSON, puede cambiar fácilmente a otro esquema JSON y, del mismo modo, si el formulario utiliza un modelo de datos de formulario, puede cambiar a otro modelo de datos de formulario.
 
-1. Seleccionar **[!UICONTROL Guardar]** para guardar las propiedades.
+1. Seleccione **[!UICONTROL Guardar]** para guardar las propiedades.
 
 
 <!--

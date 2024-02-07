@@ -4,9 +4,9 @@ description: Aprenda a crear un modelo de datos de formulario en AEM Forms, prob
 feature: Adaptive Forms, Core Components
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '884'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Los formularios localizados le ayudan a llegar a una audiencia más amplia en to
 
 El servicio de traducción automática traduce inmediatamente el contenido de los formularios adaptables y los [documentos de registro](/help/forms/generate-document-of-record-core-components.md). AEM Forms as a Cloud Service está preconfigurado para utilizar una versión de prueba de Microsoft Translator para la traducción automática. Realice los siguientes pasos para habilitar la traducción automática en los formularios adaptables y los documentos de registro:
 
-1. En la interfaz de usuario de AEM Forms, seleccione un formulario y haga clic en el botón **[!UICONTROL Agregar diccionario]** opción.
+1. En la interfaz de usuario de AEM Forms, selecciona un formulario y selecciona la opción **[!UICONTROL Agregar diccionario]**.
 1. En la pantalla Agregar diccionario al proyecto de traducción, para la opción de **[!UICONTROL Proyecto]**
 
    * Para crear un proyecto de traducción, seleccione la opción de **[!UICONTROL Creación de un nuevo proyecto de traducción]** y en el campo de **Título del proyecto**, especifique el título. Por ejemplo, `Government Reference Site - German locale.`
@@ -61,7 +61,7 @@ Para la traducción, un diccionario que contiene archivos en formato XLIFF se co
 
 Realice los siguientes pasos para localizar un formulario y su documento de registro mediante traductores humanos:
 
-1. En la interfaz de usuario de AEM Forms, seleccione un formulario y haga clic en el botón **[!UICONTROL Agregar diccionario]** opción.
+1. En la interfaz de usuario de AEM Forms, selecciona un formulario y selecciona la opción **[!UICONTROL Agregar diccionario]**.
 1. En la pantalla Agregar diccionario al proyecto de traducción, para la opción de **[!UICONTROL Proyecto]**
 
    * Para crear un proyecto de traducción, seleccione la opción de **[!UICONTROL Creación de un nuevo proyecto de traducción]** y en el campo de **Título del proyecto**, especifique el título. Por ejemplo, `Government Reference Site - German locale.`

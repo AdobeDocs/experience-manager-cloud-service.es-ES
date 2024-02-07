@@ -5,9 +5,9 @@ role: Architect, Developer, Admin, User
 feature: Adaptive Forms, Core Components
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1256'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Para repetir un panel en el formulario o quitar paneles repetibles, un autor de 
 ![Pestaña Accesibilidad](/help/forms/assets/repeat-panel.png)
 
 Para hacer que un panel sea repetible, realice los siguientes pasos:
-1. Seleccione un contenedor de panel y seleccione ![cmppr](/help/forms/assets/cmppr.png).
+1. Seleccione un contenedor de panel y seleccione ![cmppr](/help/forms/assets/cmppr.png).
 1. Haga clic en **repetir panel** y active la opción para **hacer repetible el panel**.
 1. Establezca **repeticiones mínimas** según sea necesario para las secciones mínimas repetibles. Puede establecer las **repeticiones mínimas** a cero para la no repetición de paneles o para quitar los paneles repetidos. De forma predeterminada, el valor de repetición mínima es cero.
 1. Establezca **repeticiones máximas** para repetir el panel el número de veces necesarias. De forma predeterminada, el valor es infinito.
@@ -64,7 +64,7 @@ Para hacer que un panel sea repetible, realice los siguientes pasos:
 
 El elemento principal del panel que se va a repetir debe contener un botón de adición para administrar la instancia de repetición del panel. Realice los siguientes pasos para insertar botones en el elemento principal y habilitar scripts en los botones:
 
-1. Añada un **componente de botón** al elemento principal del panel. En el siguiente vídeo de ejemplo, se utiliza un componente de botón con el nombre de etiqueta **Agregar** y el nombre de campo **AgregarPanel**. Seleccione el componente y seleccione ![edit-rules](/help/forms/assets/edit-rules.png). Las reglas del botón se abren en el editor de reglas.
+1. Añada un **componente de botón** al elemento principal del panel. En el siguiente vídeo de ejemplo, se utiliza un componente de botón con el nombre de etiqueta **Agregar** y el nombre de campo **AgregarPanel**. Seleccione el componente y seleccione ![edit-rules](/help/forms/assets/edit-rules.png). Las reglas del botón se abren en el editor de reglas.
 1. En la ventana Editor de reglas, haga clic en **Crear**.
 
    Seleccione **Editor visual** en la fila Objetos y funciones de formularios.
@@ -85,7 +85,7 @@ El elemento principal del panel que se va a repetir debe contener un botón de a
 
 El elemento principal del panel debe contener un botón de eliminación para eliminar la instancia de los paneles repetibles. Realice los siguientes pasos para insertar botones en el elemento principal y habilitar secuencias de comandos en los botones para eliminar paneles repetibles:
 
-1. Añada un **componente de botón** al elemento principal del panel. En el siguiente vídeo, se utiliza un componente de botón con el nombre de etiqueta **eliminar** y nombre de campo **EliminarPanel**. Seleccione el componente y seleccione ![edit-rules](/help/forms/assets/edit-rules.png). Las reglas del botón se abren en el editor de reglas.
+1. Añada un **componente de botón** al elemento principal del panel. En el siguiente vídeo, se utiliza un componente de botón con el nombre de etiqueta **eliminar** y nombre de campo **EliminarPanel**. Seleccione el componente y seleccione ![edit-rules](/help/forms/assets/edit-rules.png). Las reglas del botón se abren en el editor de reglas.
 1. En la ventana Editor de reglas, haga clic en **Crear**.
 
    Seleccione **Editor visual** en la fila Objetos y funciones de formularios.
@@ -226,7 +226,7 @@ En el siguiente código, el panel `SampleType` utiliza la propiedad minOccours y
 ```
 
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}
 

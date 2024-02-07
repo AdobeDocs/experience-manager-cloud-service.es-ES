@@ -4,9 +4,9 @@ description: Utiliza temáticas de formularios adaptables para aplicar estilos y
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5558'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -364,7 +364,7 @@ Cuando seleccione un componente en el lienzo, verá la barra de herramientas de 
 * **[!UICONTROL Widget de cuadro numérico]**: permite seleccionar el componente para personalizar su aspecto en la barra lateral.
 * **[!UICONTROL Widget de campos]**: permite seleccionar el componente genérico para el estilo. En este ejemplo, todos los componentes de entrada de texto (cuadro de texto/cuadro numérico/paso numérico/entrada de fecha) están seleccionados para el estilo.
 
-* ![field-level](assets/select_parent_icon.svg): permite seleccionar el componente principal para el estilo. Si selecciona un cuadro numérico y selecciona este icono, el componente de campo estará seleccionado. Si selecciona el componente de campo y este icono, el panel estará seleccionado. Si sigue pulsando este icono para seleccionarlo, acaba seleccionando el diseño para el estilo.
+* ![field-level](assets/select_parent_icon.svg): permite seleccionar el componente principal para el estilo. Si selecciona un cuadro numérico y selecciona este icono, el componente de campo estará seleccionado.  Si selecciona el componente de campo y seleccione este icono, el panel estará seleccionado.  Si sigue pulsando este icono para seleccionarlo, acaba seleccionando el diseño para el estilo.
 
 >[!NOTE]
 >
@@ -590,7 +590,7 @@ Para copiar una temática, realice los siguientes pasos:
 
 1. En la instancia de creación, vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Temáticas]**.
 1. Abra la carpeta Biblioteca de temáticas.
-1. En la carpeta Biblioteca de temáticas, pase el puntero sobre la temática correspondiente y seleccione **[!UICONTROL Copiar]**.
+1. En la carpeta Biblioteca de temáticas, pase el puntero sobre la temática correspondiente y seleccione **[!UICONTROL Copiar]**.
 1. Pegue la temática copiada fuera de la carpeta Biblioteca de temáticas.
 1. Personalice la temática copiada.
 

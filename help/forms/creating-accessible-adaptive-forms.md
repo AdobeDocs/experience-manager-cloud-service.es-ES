@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms, Foundation Components
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2018'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ El tema Ultramarine-Accessible es un tema de referencia. Muestra cómo corregir 
 
 1. Descargue el paquete de temáticas.
 1. Vaya a **[!UICONTROL Experience Manager]** > **[!UICONTROL Navegación]** ![Navegación](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** en la instancia de AEM.
-1. Seleccionar **[!UICONTROL Crear]** > **[!UICONTROL Carga de archivos]**. Seleccione y cargue el archivo x Ultramarine-Accessible-Theme.zip. Cargue el tema en la instancia de AEM.
+1. Seleccione **[!UICONTROL Crear]** > **[!UICONTROL Cargar archivo]**. Seleccione y cargue el archivo x Ultramarine-Accessible-Theme.zip. Cargue el tema en la instancia de AEM.
 
 ## Hacer accesible un formulario adaptable
 
@@ -57,8 +57,8 @@ Debe centrarse en cuatro aspectos clave: navegación mediante el teclado, contra
 Aplique el tema Ultramarine-Accessible al formulario adaptable existente. Para aplicar el tema, haga lo siguiente:
 
 1. Abra el formulario adaptable para editarlo.
-1. Seleccione un componente y seleccione el icono principal. En el menú contextual, seleccione **[!UICONTROL Contenedor de formulario adaptable]** y, a continuación, seleccione el icono configurar.
-1. Seleccione la temática Ultramarine-Accessible en el explorador de propiedades y seleccione **[!UICONTROL Guardar]** icono.
+1. Seleccione un componente y el icono principal. En el menú contextual, seleccione **[!UICONTROL Contenedor de formulario adaptable]** y, a continuación, seleccione el icono configurar.
+1. Seleccione la temática Ultramarine-Accessible en el explorador de propiedades y seleccione el icono **[!UICONTROL Guardar]**.
 1. Actualice la ventana del explorador. El tema se aplica al formulario adaptable.
 
 Después de aplicar un tema accesible, realice las siguientes correcciones adicionales. Las correcciones se agregan a las correcciones de accesibilidad que se tratan en el tema accesible:
@@ -99,7 +99,7 @@ La etiqueta que perciben los lectores de pantalla no necesariamente debe ser la 
 
 Para utilizar la opción Accesibilidad, haga lo siguiente:
 
-1. Seleccione un componente y seleccione ![cmppr](assets/cmppr.png).
+1. Seleccione un componente y ![cmppr](assets/cmppr.png).
 1. Haga clic en **[!UICONTROL Accesibilidad]** en la barra lateral para elegir la opción de accesibilidad deseada.
 
 ### Opciones de accesibilidad en componentes del formulario {#accessibility-options-in-form-components}
@@ -127,7 +127,7 @@ Las imágenes pueden ayudar a mejorar la comprensión de algunos usuarios. Sin e
 
 Asegúrese de que el texto describa el objeto y su propósito en el formulario. Un lector de pantalla lee este texto alternativo cuando encuentra una imagen. Una imagen siempre debe tener un texto alternativo especificado.
 
-Seleccione un componente de imagen y seleccione ![cmppr](assets/cmppr.png). En la barra lateral, en Propiedades, especifique el texto alternativo de una imagen.
+Seleccione un componente de imagen y seleccione ![cmppr](assets/cmppr.png). En la barra lateral, en Propiedades, especifique el texto alternativo de una imagen.
 
 ![Texto alternativo de una imagen](assets/image-properties.png)
 
@@ -156,7 +156,7 @@ Los siguientes métodos abreviados del teclado están disponibles en [!DNL AEM F
 | Restablecer los datos rellenados en un formulario | Alt + R |
 | Enviar un formulario | Alt + S |
 
-Además, hay varias teclas de método abreviado de teclado disponibles para el **[!UICONTROL Selector de fechas]** en los formularios adaptables. Para activar las teclas de método abreviado, seleccione la opción **[!UICONTROL Selector de fecha]** Componente y seleccione ![Configurar](assets/configure-icon.svg) para abrir las propiedades. En la sección **[!UICONTROL Patrones]**, seleccione un patrón de visualización mediante las listas desplegables **[!UICONTROL Tipo]** y **[!UICONTROL Patrón]**. Guarde las propiedades para habilitar el uso de teclas de método abreviado para el componente **[!UICONTROL Selector de fechas]**.
+Además, hay varias teclas de método abreviado de teclado disponibles para el **[!UICONTROL Selector de fechas]** en los formularios adaptables. Para habilitar las teclas de método abreviado, seleccione el componente **[!UICONTROL Selector de fechas]** y ![Configurar](assets/configure-icon.svg) para abrir las propiedades. En la sección **[!UICONTROL Patrones]**, seleccione un patrón de visualización mediante las listas desplegables **[!UICONTROL Tipo]** y **[!UICONTROL Patrón]**. Guarde las propiedades para habilitar el uso de teclas de método abreviado para el componente **[!UICONTROL Selector de fechas]**.
 
 Las siguientes teclas de método abreviado de teclado están disponibles para el componente Selector de fecha en formularios adaptables:
 

@@ -4,7 +4,7 @@ description: Para el formulario adaptable, puede añadir configuraciones regiona
 feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1220'
 ht-degree: 100%
 

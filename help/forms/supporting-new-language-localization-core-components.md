@@ -4,9 +4,9 @@ description: Aprenda a agregar nuevas configuraciones regionales a un formulario
 feature: Adaptive Forms, Core Components
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1333'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 92%
 | Componentes de base | [Haga clic aquí](supporting-new-language-localization.md) |
 | Componentes principales | Este artículo |
 
-<span class="preview"> La función de soporte de idioma de derecha a izquierda está disponible en el programa para usuarios pioneros. Puede escribir a aem-forms-early-adopter-program@adobe.com desde su ID de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez y solicitar acceso a esta capacidad. </span>
+<span class="preview"> La función de compatibilidad de idioma de derecha a izquierda está disponible en el programa de primeros usuarios. Puede escribir a aem-forms-early-adopter-program@adobe.com desde su ID de correo electrónico oficial para unirse al programa de primeros usuarios y solicitar acceso a esta capacidad. </span>
 
-AEM Forms admite de forma predeterminada las configuraciones regionales de inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués brasileño (pt-BR), chino (zh-CN), chino taiwanés (zh-TW) y coreano (ko-KR). También puede agregar compatibilidad con más configuraciones regionales, como Hindi(hi_IN). También puede presentar Forms adaptable en un idioma de derecha a izquierda (RTL) como árabe, persa y urdu si agrega estas configuraciones regionales.
+AEM Forms admite de forma predeterminada las configuraciones regionales de inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués brasileño (pt-BR), chino (zh-CN), chino taiwanés (zh-TW) y coreano (ko-KR). También puede agregar compatibilidad con más configuraciones regionales, como Hindi (hi_IN). También puede presentar formularios adaptables en un idioma de derecha a izquierda (RTL) como árabe, persa y urdu si agrega estas configuraciones regionales.
 
 ## ¿Cómo se selecciona la configuración regional para un formulario adaptable?
 
@@ -75,7 +75,7 @@ Para añadir compatibilidad con una nueva configuración regional, siga estos pa
    git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/
    ```
 
-   Reemplazar `<my-org>` y `<my-program>` en la URL anterior con el nombre de su organización y el nombre del programa. Para obtener instrucciones detalladas sobre cómo obtener el nombre de la organización, el nombre del programa o la ruta completa de su repositorio Git y las credenciales necesarias para clonar el repositorio, consulte [Acceso a Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#accessing-git) artículo.
+   Reemplazar `<my-org>` y `<my-program>` en la URL anterior con el nombre de su organización y el nombre del programa. Para obtener instrucciones detalladas sobre cómo obtener el nombre de la organización, el nombre del programa o la ruta completa de su repositorio Git y las credenciales necesarias para clonar el repositorio, consulte el artículo [Acceso a Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#accessing-git).
 
    Después de completar correctamente el comando, se crea la carpeta `<my-program>`. Contiene el contenido clonado del repositorio de Git. En el resto del artículo, la carpeta se denomina `[AEM Forms as a Cloud Service Git repository]`.
 

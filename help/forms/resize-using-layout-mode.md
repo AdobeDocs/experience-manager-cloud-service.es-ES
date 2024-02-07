@@ -6,9 +6,9 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1138'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Seleccione **[!UICONTROL Diseño]** en la lista desplegable que aparece en la pa
 
 ## Cambiar el tamaño de los componentes {#resize-components}
 
-1. En el modo Diseño, seleccione el componente cuyo tamaño desea cambiar. Los puntos azules se muestran al principio y al final de la cuadrícula adaptable.
+1. En el modo Diseño, seleccione el componente para cambiar su tamaño. Los puntos azules se muestran al principio y al final de la cuadrícula adaptable.
 1. Arrastre y suelte los puntos azules para definir la posición del componente en la cuadrícula adaptable.
 
    ![Cambiar el tamaño mediante el modo Diseño](assets/layout_mode_resize_new_updated1.png)
@@ -59,7 +59,7 @@ Seleccione **[!UICONTROL Diseño]** en la lista desplegable que aparece en la pa
 **Objetivo:** Desea insertar un componente de tabla y un componente de imagen y colocarlos en paralelo en un formulario adaptable.
 
 1. Inserte los componentes de tabla e imagen con el modo [!UICONTROL Editar] en el formulario adaptable. El componente de imagen se muestra después del componente de tabla.
-1. Cambiar a [!UICONTROL Diseño] y seleccione el [!UICONTROL Tabla] componente. Los puntos azules para cambiar el tamaño del componente se muestran en las columnas 1 y 12.
+1. Cambie al modo [!UICONTROL Diseño] y seleccione el componente [!UICONTROL Tabla]. Los puntos azules para cambiar el tamaño del componente se muestran en las columnas 1 y 12.
 1. Arrastre el punto azul en la columna 12 a la columna 6 de la cuadrícula adaptable.
 
    ![Definir el punto final de la tabla](assets/layout_mode_end_point_table_new.png)
@@ -68,13 +68,13 @@ Seleccione **[!UICONTROL Diseño]** en la lista desplegable que aparece en la pa
 
    ![Tabla e imagen en paralelo en el modo Diseño](assets/table_image_parallel_new.png)
 
-   Puede seleccionar el componente Imagen y seleccionar la variable **[!UICONTROL Flotar a una línea nueva]** disponible en la barra de herramientas para cambiar el componente Imagen a la línea siguiente.
+   Puede seleccionar el componente Imagen y la opción **[!UICONTROL Flotar a una línea nueva]**, disponible en la barra de herramientas para cambiar el componente Imagen a la línea siguiente.
 
 ## Cambiar el tamaño de los paneles {#resize-panels-layout-mode}
 
 Ejecute los siguientes pasos si desea cambiar el tamaño de todo el panel en lugar de componentes individuales:
 
-1. Seleccione cualquiera de los componentes del panel cuyo tamaño desee cambiar, seleccione ![Seleccionar principal](assets/select_parent_icon.svg)y seleccione la primera opción de la lista desplegable, si el panel es el elemento principal inmediato del componente.
+1. Seleccione cualquiera de los componentes del panel cuyo tamaño desee cambiar, seleccione ![Seleccionar principal](assets/select_parent_icon.svg) y seleccione la primera opción de la lista desplegable, si el panel es el elemento principal inmediato del componente.
 
    Los puntos azules se muestran al principio y al final de la cuadrícula adaptable.
 
@@ -84,13 +84,13 @@ Ejecute los siguientes pasos si desea cambiar el tamaño de todo el panel en lug
 
 Ejecute los siguientes pasos para definir el número de columnas para un panel:
 
-1. Entrada **[!UICONTROL Editar]** modo, seleccione el panel, seleccione ![Configurar](assets/configure-icon.svg)y seleccione **[!UICONTROL Adaptable: todo en la página sin navegación]** de la opción **[!UICONTROL Diseño de panel]** lista desplegable.
+1. En el modo **[!UICONTROL Editar]**, seleccione el panel, seleccione ![Configurar](assets/configure-icon.svg) y luego la opción **[!UICONTROL Adaptable: Todo lo que hay en la página sin navegación]** de la lista desplegable **[!UICONTROL Diseño del panel]**.
 
-1. Seleccionar ![Guardar](assets/save_icon.svg) para guardar las propiedades.
+1. Seleccione ![Guardar](assets/save_icon.svg) para guardar las propiedades.
 
-1. En el **[!UICONTROL Diseño]** modo, seleccione cualquiera de los componentes del panel, seleccione ![Seleccionar principal](assets/select_parent_icon.svg)y seleccione el panel.
+1. En el modo **[!UICONTROL Diseño]**, seleccione cualquiera de los componentes del panel y seleccione ![Seleccionar principal](assets/select_parent_icon.svg) y seleccione el panel.
 
-1. Seleccionar ![de varias columnas](assets/multi-column.svg) y seleccione el número de columnas de la lista desplegable. El número de columnas puede oscilar entre 1 y 12. El panel se divide en un diseño de varias columnas.
+1. Seleccione ![varias columnas](assets/multi-column.svg) y seleccione el número de columnas de la lista desplegable. El número de columnas puede oscilar entre 1 y 12. El panel se divide en un diseño de varias columnas.
 
 ![varias columnas en el modo Diseño](assets/multi-column-layout.png)
 
@@ -105,7 +105,7 @@ Habilite la nueva cuadrícula adaptable para los formularios que cree mediante [
 Realice los siguientes pasos para habilitar la nueva cuadrícula adaptable:
 
 1. Seleccione **[!UICONTROL Diseño]** en la lista desplegable que aparece en la parte superior junto a la opción **[!UICONTROL Vista previa]**. Aparece una confirmación para habilitar el modo Diseño.
-1. Seleccionar **[!UICONTROL Sí]** para habilitar el **[!UICONTROL Diseño]** modo para el formulario.
+1. Seleccione **[!UICONTROL Sí]** para habilitar el modo **[!UICONTROL Diseño]** para el formulario.
 
 ### Integrar un fragmento antiguo en un formulario adaptable con un nuevo diseño adaptable {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
@@ -115,7 +115,7 @@ El nuevo diseño adaptable del formulario adaptable te permite añadir un fragme
 
 Si integra un fragmento con el nuevo diseño adaptable en un formulario adaptable con un diseño adaptable antiguo, el sistema le indicará que habilite el modo Diseño para el formulario y vuelva a integrar el fragmento.
 
-Para activar el modo Diseño, seleccione **[!UICONTROL Diseño]** en la lista desplegable que aparece en la parte superior junto a la etiqueta **[!UICONTROL Previsualizar]** y seleccione **[!UICONTROL Sí]** para confirmar. Seleccione el modo **[!UICONTROL Editar]** para volver a integrar el fragmento.
+Para habilitar el modo Diseño, seleccione **[!UICONTROL Diseño]** en la lista desplegable que aparece en la parte superior junto a la opción **[!UICONTROL Vista previa]** y seleccione **[!UICONTROL Sí]** para confirmar. Seleccione el modo **[!UICONTROL Editar]** para volver a integrar el fragmento.
 
 ## Desactivar el modo Diseño para formularios con un diseño adaptable antiguo {#disable-layout-mode-for-forms-with-old-responsive-layout}
 
@@ -124,12 +124,12 @@ Puede desactivar el modo Diseño para formularios con un diseño adaptable antig
 Siga estos pasos para desactivar el modo Diseño:
 
 1. Seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Plantillas]** y abra la plantilla utilizada en el formulario en el modo **[!UICONTROL Editar]**.
-1. Seleccione el contenedor del formulario en el panel izquierdo y seleccione **[!UICONTROL Política.]**
+1. Seleccione el contenedor del formulario en el panel izquierdo y seleccione **[!UICONTROL Directiva]**.
 
    ![Desactivar el modo Diseño](assets/policy_disable_layout_mode.png)
 
-1. Seleccione el **[!UICONTROL Configuración de diseño]** y seleccione **[!UICONTROL Desactivar modo de diseño]**.
-1. Seleccionar ![Guardar cambios](assets/save_icon.svg) para guardar las propiedades de la plantilla.
+1. Seleccione la pestaña **[!UICONTROL Configuración de diseño]** y **[!UICONTROL Desactivar el modo Diseño]**.
+1. Seleccione ![Guardar cambios](assets/save_icon.svg) para guardar las propiedades de la plantilla.
 
 ## Consulte también {#see-also}
 

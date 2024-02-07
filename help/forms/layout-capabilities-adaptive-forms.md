@@ -4,9 +4,9 @@ description: El diseño y el aspecto visual de los formularios adaptables en dif
 feature: Adaptive Forms, Foundation Components
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '847'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Para cambiar el diseño de un formulario adaptable, utilice el modo Autor de [!D
 
 Un autor de formularios puede asociar un diseño a cada uno de los paneles de un formulario adaptable, incluido el panel raíz.
 
-Los diseños de panel están disponibles en la ubicación `/libs/fd/af/layouts/panel`. Seleccione el panel y seleccione ![cmppr1](assets/configure-icon.svg) para ver las propiedades del panel.
+Los diseños de panel están disponibles en la ubicación `/libs/fd/af/layouts/panel`. Pulse el panel y seleccione ![cmppr1](assets/configure-icon.svg) para ver sus propiedades.
 
 ![Lista de diseños de panel del panel raíz de un formulario adaptable](assets/layouts.png)
 

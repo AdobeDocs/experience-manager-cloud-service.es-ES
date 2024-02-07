@@ -3,9 +3,9 @@ title: Notas de la versión 2023.8.0 de la versión de  [!DNL Adobe Experience M
 description: Notas de la versión 2023.8.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1691'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -70,11 +70,11 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   ![Importación masiva de recursos desde una fuente de datos](/help/release-notes/assets/bulk-import.png)
 
-* **Herramientas de edición de imágenes con tecnología de Adobe Express**: Fácil e intuitivo [herramientas de edición de imágenes con tecnología de Adobe Express](/help/assets/edit-images-assets-view.md) disponible directamente en AEM Assets para aumentar la reutilización del contenido y acelerar la velocidad de contenido.
+* **Herramientas de edición de imágenes con tecnología Adobe Express**: herramientas de edición de [imágenes sencillas e intuitivas con tecnología Adobe Express](/help/assets/edit-images-assets-view.md) disponibles directamente en AEM Assets para aumentar la reutilización de contenidos y acelerar la velocidad del contenido.
 
   ![Edición de imágenes con Adobe Express](/help/release-notes/assets/edit-adobe-express.png)
 
-* **Flexibilidad al anclar elementos para el acceso rápido a Mi espacio de trabajo**: capacidad para seleccionar y anclar elementos para usted, para toda su organización o para una lista de grupos para que se muestren en el [Sección Acceso rápido de Mi espacio de trabajo](/help/assets/my-workspace-assets-view.md) en función de su selección.
+* **Flexibilidad a la hora de anclar elementos para el Acceso rápido de Mi espacio de trabajo**: capacidad para seleccionar y fijar elementos para usted, para toda su organización o para una lista de grupos, de modo que aparezcan en la sección [Acceso rápido de Mi espacio de trabajo](/help/assets/my-workspace-assets-view.md) en función de su selección.
 
   ![Fijar elementos para grupos](/help/release-notes/assets/pin-items-for-groups.png)
 

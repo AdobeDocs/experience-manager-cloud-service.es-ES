@@ -6,9 +6,9 @@ role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1063'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -50,8 +50,8 @@ Los formularios incluyen algunos campos y secciones que no son aplicables a todo
 Realice los siguientes pasos para habilitar la carga diferida en un fragmento de formulario adaptable:
 
 1. Abra el formulario adaptable que contiene el fragmento en el que desea habilitar la carga diferida en el modo Autor.
-1. Seleccione el fragmento de formulario adaptable y seleccione ![configurar](assets/configure-icon.svg).
-1. En la barra lateral, habilite **[!UICONTROL Carga diferida de fragmento]** y seleccione **Listo**.
+1. Selecciona el fragmento de formulario adaptable y selecciona ![Configurar](assets/configure-icon.svg).
+1. En la barra lateral, habilita la opción **[!UICONTROL Cargar fragmento de forma diferida]** y selecciona **Listo**.
 
    ![Habilitar la carga diferida en el fragmento de formulario adaptable](assets/lazy-loading-fragment.png)
 
@@ -60,7 +60,7 @@ Realice los siguientes pasos para habilitar la carga diferida en un fragmento de
 Puede marcar los valores de los objetos del fragmento cargado de forma diferida como globales, de modo que estén disponibles para su uso en scripts cuando el fragmento que los contiene no esté cargado. Haga lo siguiente:
 
 1. Abra el fragmento del formulario adaptable en el modo Autor.
-1. Seleccione el campo cuyo valor desee marcar como global y, a continuación, seleccione ![configurar](assets/configure-icon.svg).
+1. Selecciona el campo cuyo valor desee marcar como global y, a continuación, selecciona ![Configurar](assets/configure-icon.svg).
 1. En la barra lateral, habilite la opción **[!UICONTROL Utilizar valor durante la carga diferida]**.
 
    ![Campo de carga diferida en la barra lateral](assets/enable-lazy-loading.png)

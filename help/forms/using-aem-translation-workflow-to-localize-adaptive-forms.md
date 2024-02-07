@@ -7,9 +7,9 @@ topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '533'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Este artículo explica el proceso para utilizar el flujo de trabajo de traducci�
 
 El servicio de traducción automática traduce inmediatamente el contenido de los formularios adaptables y los documentos de registro. [!DNL AEM Forms] está preconfigurado para utilizar una versión de prueba de [!DNL Microsoft Translator] para la traducción automática. Realice los siguientes pasos para habilitar la traducción automática en los formularios adaptables y los documentos de registro:
 
-1. En el [!DNL AEM Forms] IU, seleccione un formulario y seleccione **Agregar diccionario** opción.
+1. En la IU de [!DNL AEM Forms], seleccione un formulario y seleccione la opción **Agregar diccionario**.
 1. En la pantalla **Agregar diccionario al proyecto de traducción**, seleccione las opciones **Crear un nuevo proyecto de traducción** o **Agregar a un proyecto de traducción existente**.
 1. En el campo **Título del proyecto**, especifique el título. Por ejemplo, `Government Reference Site - German locale.`
 1. En el campo **Idiomas de destino**, especifique una configuración regional (por ejemplo, `German(de)`) y haga clic en **Listo**. Puede especificar varias configuraciones regionales. El formulario se traduce a todas las configuraciones regionales especificadas en el campo **Idiomas de destino**.

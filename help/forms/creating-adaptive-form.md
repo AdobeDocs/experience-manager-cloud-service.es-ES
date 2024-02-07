@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1493'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -78,9 +78,9 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 
 1. Introduzca sus credenciales en la página de inicio de sesión de Experience Manager.
 
-   Cuando haya iniciado sesión, en la esquina superior izquierda, seleccione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms y documentos]**.
+   Cuando haya iniciado sesión, en la esquina superior izquierda, seleccione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
 
-1. Seleccionar **[!UICONTROL Crear]**  > **[!UICONTROL Forms adaptable]**. Se abre el asistente.
+1. Seleccione **[!UICONTROL Crear]** > **[!UICONTROL Formularios adaptables]**. Se abre el asistente.
 1. En la pestaña Fuente, seleccione una plantilla:
 
    * Al seleccionar una Plantilla editable, se seleccionan automáticamente un tema y una acción de envío especificados en la plantilla, y se habilita el botón **[!UICONTROL Crear]**. Puede ir a las pestañas **[!UICONTROL Estilo]** o **[!UICONTROL Envío]** para seleccionar una temática o acción de envío diferente. Si la Plantilla editable seleccionada no especifica ningún tema, el botón Crear permanece desactivado. Puede ir a la pestaña **[!UICONTROL Estilos]** para seleccionar manualmente una temática.
@@ -177,17 +177,17 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 >
 >You can also change the schema for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model). -->
 
-## Editar propiedades del modelo de formulario de un formulario adaptable {#edit-form-model}
+## Edición de las propiedades del modelo de formulario de un formulario adaptable {#edit-form-model}
 
 Puede cambiar el modelo de formulario para un formulario adaptable (basado en JSON o en el modelo de datos de formulario). No se puede cambiar de un modelo de formulario a otro.
 
-1. Seleccione el formulario adaptable y seleccione el **Propiedades** icono.
+1. Seleccione el formulario adaptable y seleccione el icono **Propiedades**.
 1. Abra la pestaña **[!UICONTROL Modelo de formulario]** y haga una de las siguientes acciones.
 
    * Si el formulario adaptable no cuenta con un modelo de formulario, puede elegir otro modelo de formulario y, en consecuencia, seleccionar <!-- a form template, --> el esquema XML o JSON o el modelo de datos de formulario.
    * Si el formulario adaptable se basa en un modelo de formulario, puede elegir otro <!-- form template, --> esquema XML o JSON o modelo de datos de formulario para el mismo modelo de formulario.
 
-1. Seleccionar **[!UICONTROL Guardar]** para guardar las propiedades.
+1. Seleccione **[!UICONTROL Guardar]** para guardar las propiedades.
 
 También puede modificar las propiedades del modelo del formulario desde el editor de Formulario adaptable o el editor de plantillas de Formulario adaptable.
 
@@ -197,7 +197,7 @@ También puede modificar las propiedades del modelo del formulario desde el edit
 
    * Si el Formulario adaptable no posee un modelo de formulario, puede elegir un modelo de formulario y seleccionar <!-- a form template, --> esquema XML o JSON, o modelo de datos de formulario, según corresponda.
    * Si el formulario adaptable se basa en un modelo de formulario, no se puede cambiar el modelo de formulario. Puede elegir otro esquema XML o JSON <!-- form template, -->, o un modelo de datos de formulario para el mismo modelo de formulario, según corresponda.
-1. Seleccionar ![Guardar](/help/forms/assets/check-button.png) para guardar las propiedades.
+1. Seleccione ![Guardar](/help/forms/assets/check-button.png) para guardar las propiedades.
 
 ![Compatibilidad con FDM-Esquema](/help/forms/assets/fdmsupport.png)
 
@@ -206,6 +206,6 @@ También puede modificar las propiedades del modelo del formulario desde el edit
 > También puede guardar un formulario adaptable como plantilla. Para obtener más información, consulte [Creación de una plantilla con un formulario adaptable](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template).
 
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}

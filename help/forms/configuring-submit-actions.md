@@ -4,9 +4,9 @@ description: Un formulario adaptable proporciona varias acciones de envío. Una 
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3913'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -174,9 +174,9 @@ Antes de usar la acción de envío **[!UICONTROL Invocar un flujo de trabajo de 
 
 La acción de envío **[!UICONTROL Enviar a SharePoint]** conecta un formulario adaptable con un almacenamiento de Microsoft® SharePoint. Puede enviar el archivo de datos de formulario, los archivos adjuntos o el documento de registro al almacenamiento de Microsoft® SharePoint conectado.
 
-Con Enviar a SharePoint, puede:
+Con Enviar a SharePoint, puede hacer lo siguiente:
 * [Conectar un formulario adaptable a la biblioteca de documentos de SharePoint](#connect-af-sharepoint-doc-library)
-* [Conectar un formulario adaptable a una lista de SharePoint](#connect-af-sharepoint-list)
+* [Conectar un formulario adaptable a la lista SharePoint](#connect-af-sharepoint-list)
 
 
 ### Conectar un formulario adaptable a la biblioteca de documentos de SharePoint {#connect-af-sharepoint-doc-library}
@@ -242,16 +242,16 @@ La estructura de carpetas para guardar datos es `/folder_name/form_name/year/mon
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
-Para usar la variable [!UICONTROL Enviar a la lista de SharePoint] Enviar acción en un formulario adaptable:
+Para usar la acción de envío [!UICONTROL Enviar a la lista SharePoint] en un formulario adaptable:
 
-1. [Crear una configuración de lista de SharePoint](#create-sharepoint-list-configuration): conecta AEM Forms al almacenamiento de listas de SharePoint de Microsoft®.
-1. [Uso del envío mediante el modelo de datos de formulario en un formulario adaptable](#use-submit-using-fdm): conecta el formulario adaptable al Microsoft® SharePoint configurado.
+1. [Crear una configuración de lista de SharePoint](#create-sharepoint-list-configuration): conecta AEM Forms a su almacenamiento de de lista de Sharepoint de Microsoft®.
+1. [Utilice la acción de envío Enviar con un modelo de datos de formulario en un formulario adaptable](#use-submit-using-fdm): conecta el formulario adaptable a Microsoft® SharePoint configurado.
 
-#### Crear una configuración de lista de SharePoint {#create-sharepoint-list-configuration}
+#### Crear configuración de lista de SharePoint {#create-sharepoint-list-configuration}
 
-Para conectar AEM Forms a la lista de SharePoint de Microsoft®:
+Para conectar AEM Forms a su lista de Sharepoint de Microsoft®:
 
-1. Ir a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
 1. Seleccione un **Contenedor de configuración**. La configuración se almacena en el contenedor de configuración seleccionado.
 1. Haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Lista de SharePoint]** en la lista desplegable. Aparecerá el asistente de configuración de SharePoint.
 1. Especifique el **[!UICONTROL Título]**, **[!UICONTROL ID de cliente]**, **[!UICONTROL Secreto del cliente]** y **[!UICONTROL URL de OAuth]**. Para obtener información sobre cómo recuperar el ID de cliente, el secreto de cliente o el ID de inquilino para la URL de OAuth, consulte [Documentación de Microsoft®](https://learn.microsoft.com/es-es/graph/auth-register-app-v2).
@@ -266,19 +266,19 @@ Para conectar AEM Forms a la lista de SharePoint de Microsoft®:
 
 1. Haga clic en **[!UICONTROL Conectar]**. Si la conexión se realiza correctamente, aparece el mensaje `Connection Successful`.
 1. Seleccionar **[!UICONTROL Sitio de SharePoint]** y **[!UICONTROL Lista de SharePoint]** en la lista desplegable.
-1. Seleccionar **[!UICONTROL Crear]** para crear la configuración de nube para Microsoft® SharePointList.
+1. Seleccione **[!UICONTROL Crear]** para crear la configuración de nube para la lista de SharePoint de Microsoft®.
 
 
-#### Uso del envío mediante el modelo de datos de formulario en un formulario adaptable {#use-submit-using-fdm}
+#### Usar la acción de envío Enviar con el modelo de datos de formulario en un formulario adaptable {#use-submit-using-fdm}
 
-Puede utilizar la configuración creada en la Lista de SharePoint en un formulario adaptable para guardar datos o documentos de registro generados en una Lista de SharePoint. Siga estos pasos para utilizar una configuración de almacenamiento de lista de SharePoint en un formulario adaptable como:
+Puede utilizar la configuración de lista de SharePoint creada en un formulario adaptable para guardar datos o el documento de registro generado en una lista de SharePoint. Siga estos pasos para usar una configuración de almacenamiento de lista de SharePoint en un formulario adaptable como:
 
 1. [Crear un modelo de datos de formulario con la configuración de la lista de Microsoft® SharePoint](/help/forms/create-form-data-models.md)
 1. [Configurar el modelo de datos de formulario para recuperar y enviar datos](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Crear un formulario adaptable](/help/forms/creating-adaptive-form.md)
 1. [Configurar la acción de envío mediante un modelo de datos de formulario](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
 
-Cuando envía el formulario, los datos se guardan en el almacenamiento de listas de SharePoint de Microsoft® especificado.
+Al enviar el formulario, los datos se guardan en el almacenamiento de lista de Sharepoint de Microsoft® especificado.
 
 >[!NOTE]
 >
@@ -410,7 +410,7 @@ Después de una configuración correcta, utilice la acción de envío [Invocar u
 
 Puede configurar un formulario adaptable para enviar datos a Workfront Fusion en el envío. Workfront Fusion permite la automatización de los procesos para que el usuario pueda concentrarse en nuevas tareas en lugar de repetir las mismas tareas una y otra vez. Automatiza tanto las tareas simples como las complejas, ahorrando tiempo y garantizando una ejecución coherente del proceso.
 
-El editor de Forms adaptable proporciona el **Invocar un escenario de Workfront Fusion** Enviar acción para enviar datos de Forms adaptable o archivos adjuntos a un escenario de Workfront Fusion. Para utilizar la acción de envío para enviar los datos capturados a un escenario de Workfront Fusion, consulte [Envío de un formulario adaptable a Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
+El editor de Forms adaptable proporciona la acción de envío **Invocar un escenario de Workfront Fusion** para enviar datos de formularios adaptables o archivos adjuntos a un escenario de Workfront Fusion. Para utilizar la acción de envío para enviar los datos capturados a un escenario de Workfront Fusion, consulte [Envío de un formulario adaptable a Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
 
 ## Usar envío sincrónico o asincrónico {#use-synchronous-or-asynchronous-submission}
 

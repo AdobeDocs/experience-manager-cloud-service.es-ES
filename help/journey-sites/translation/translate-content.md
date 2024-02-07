@@ -6,9 +6,9 @@ hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2526'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ Para los propietarios de contenido que también son responsables de la traducci�
 
 1. Vaya a **Navegación** > **Sites** y seleccionr el proyecto.
 1. Busque la raíz de idioma del proyecto. Por ejemplo, si la raíz de idioma es el inglés, `/content/<your-project>/en`.
-   * Antes de la primera traducción, asegúrese de que las otras carpetas de idioma sean marcadores de posición vacíos. Normalmente, los crea el arquitecto de contenido.
+   * Antes de la primera traducción, las otras carpetas de idioma son marcadores de posición vacíos.  Normalmente, los crea el arquitecto de contenido.
 1. Busque la raíz de idioma del proyecto.
 1. Seleccione el selector de carril y muestre el panel de **Referencias**.
 1. Seleccione **copias de idioma**.
@@ -123,7 +123,7 @@ El proyecto se divide en varias tarjetas.
 
 * **Resumen** - Esta tarjeta muestra la información básica del encabezado del proyecto, incluido el propietario, el idioma y el proveedor de traducción.
 * **Trabajo de traducción**: esta tarjeta o estos programas de tarjetas proporcionan una visión general del trabajo de traducción real, incluyendo el estado, el número de archivos, etc. Generalmente, hay un trabajo por idioma con el código de idioma ISO-2 anexado al nombre del trabajo.
-   * Cuándo [creación automática de trabajos de traducción,](#automatically-creating) AEM Los trabajos se crean de forma asíncrona y es posible que no aparezcan inmediatamente en el proyecto.
+   * Cuando [se crean automáticamente trabajos de traducción,](#automatically-creating) AEM crea los trabajos de forma asíncrona y es posible que no aparezcan inmediatamente en el proyecto.
 * **Equipo** - Esta tarjeta muestra los usuarios que están colaborando en este proyecto de traducción. Este recorrido no cubre este tema.
 * **Tareas**: Tareas adicionales asociadas con la traducción del contenido, como hacer elementos o elementos de flujo de trabajo. Este recorrido no cubre este tema.
 

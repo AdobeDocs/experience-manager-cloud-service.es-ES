@@ -3,9 +3,9 @@ title: Notas de la versión 2023.6.0 de la versión de  [!DNL Adobe Experience M
 description: Notas de la versión 2023.6.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 29cf9548-e413-4e4f-b233-d6bb04918b22
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1357'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -130,15 +130,15 @@ La vista de recursos ahora le permite [añadir texto de varios valores y compone
 
   Esta funcionalidad ayuda a mejorar su capacidad general de gestión de errores mediante la introducción de respuestas de error basadas en estándares compatibles con los controladores de errores OOTB, con buena flexibilidad y control.
 
-* [Métodos de autenticación mejorados para el modelo de datos de formulario](/help/forms/configure-data-sources.md): Disfrute de una mayor seguridad con la introducción de la autenticación basada en credenciales de cliente para conectar AEM Forms con fuentes de datos compatibles. Esta mejora elimina la necesidad de suplantación o inicio de sesión del usuario, lo que refuerza la protección de los datos.
+* [Métodos de autenticación mejorados para el modelo de datos de formulario](/help/forms/configure-data-sources.md): disfrute de una mayor seguridad con la introducción de la autenticación basada en credenciales de cliente para conectar AEM Forms con fuentes de datos compatibles. Esta mejora elimina la necesidad de suplantación o inicio de sesión del usuario, lo que refuerza la protección de los datos.
 
-* [Forms adaptable con secciones repetibles](/help/forms/create-forms-repeatable-sections.md): Ahora puede hacer que [Acordeón](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms//adaptive-forms-components/accordion.html?lang=es), [Asistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=es), [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=es), y [Fichas horizontales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=es) componentes en un formulario adaptable basado en componentes principales para crear secciones repetibles.
+* [Formularios adaptables con secciones repetibles](/help/forms/create-forms-repeatable-sections.md): ahora puede hacer que los componentes [Acordeón](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms//adaptive-forms-components/accordion.html?lang=es), [Asistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=es), [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=es) y [Pestañas horizontales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=es) en un formulario adaptable basado en componentes principales para crear secciones repetibles.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
   Estas secciones repetibles le permiten proporcionar un número ilimitado de entradas sin un recuento de campos fijo. Resulta útil cuando se desconocen de antemano las instancias de datos requeridas. Los usuarios de Forms pueden agregar o quitar secciones fácilmente, lo que permite que los formularios se adapten a diferentes escenarios de entrada de datos y simplifica la recopilación de varias ocurrencias de los mismos datos.
 
-* **[Envío de formularios adaptables a Microsoft® SharePoint y Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**: mejore la agilidad del usuario empresarial para iniciar nuevos formularios rápidamente y almacenar los datos enviados en las herramientas habituales que utilizan, como el sitio de Microsoft SharePoint o la carpeta de OneDrive.
+* **[Envío de formularios adaptables a Microsoft® SharePoint y Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**: mejore la agilidad del usuario empresarial para iniciar nuevos formularios rápidamente y almacenar los datos enviados en las herramientas habituales que utilizan, como el sitio de Microsoft® SharePoint o la carpeta de OneDrive.
 
 ### Formularios adaptables sin encabezado, programa para primeros usuarios {#forms-early-adopter}
 

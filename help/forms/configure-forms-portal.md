@@ -1,12 +1,12 @@
 ---
-title: Cómo crear un portal de Forms en una página de Experience Manager Sites
+title: ¿Cómo crear un portal de Forms en una página de Experience Manager Sites?
 description: Obtenga información sobre cómo crear un portal de Forms y utilizar componentes principales listos para usar en una página de AEM Sites.
 feature: Adaptive Forms, Foundation Components
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1785'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -90,7 +90,7 @@ La integración de datos de [[!DNL Experience Manager Forms] ](data-integration.
 Antes de ejecutar estos pasos, asegúrese de que tiene una cuenta de almacenamiento de Azure y una clave de acceso para autorizar el acceso [!DNL Azure]a ella.
 
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Almacenamiento de Azure]**.
-1. Seleccione una carpeta para crear la configuración y seleccione **[!UICONTROL Crear]**.
+1. Seleccione una carpeta para crear la configuración y seleccione **[!UICONTROL Crear]**.
 1. Especifique un título para la configuración en el campo **[!UICONTROL Título]**.
 1. Especifique el nombre de la cuenta de [!DNL Azure] Storage en el campo **[!UICONTROL Cuenta de Azure Storage]**.
 
@@ -101,7 +101,7 @@ Para configurar el conector de almacenamiento unificado para flujos de trabajo d
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Formularios]** > **[!UICONTROL Conector de almacenamiento unificado]**.
 1. En el **[!UICONTROL portal de Forms]**, seleccione **[!UICONTROL Azure]** de la lista desplegable **[!UICONTROL Almacenamiento]**.
 1. Especifique la ruta de configuración [para la configuración del almacenamiento de Azure](#create-azure-storage-configuration) en el campo **[!UICONTROL Ruta de configuración del almacenamiento]**.
-1. Seleccionar **[!UICONTROL Publish]** y luego seleccione **[!UICONTROL Guardar]** para guardar la configuración.
+1. Seleccione **[!UICONTROL Publicar]** y, a continuación, seleccione **[!UICONTROL Guardar]** para guardar la configuración.
 
 ## Habilitar componentes del portal de Forms {#enable-forms-portal-components}
 
@@ -113,11 +113,11 @@ Una vez habilitado un componente del portal, puede utilizarlo en la instancia Au
 
 Puede crear y personalizar el portal de Forms en sitios web creados mediante AEM si agrega y configura los componentes del portal. Asegúrese de que los componentes [estén habilitados](#enable-forms-portal-components) antes de utilizarlos en el portal de Forms.
 
-Para agregar un componente, arrástrelo y suéltelo desde el panel Componentes al contenedor de diseño de la página o seleccione el icono Agregar en el contenedor de diseño y agregue el componente desde el [!UICONTROL Insertar nuevo componente] diálogo.
+Para agregar un componente, arrástrelo y suéltelo desde el panel Componentes al contenedor del diseño de la página, o bien, seleccione el icono Agregar en el contenedor de diseño y agregue el componente desde el cuadro de diálogo [!UICONTROL Insertar nuevo componente].
 
 ### Configurar Borradores y envíos {#configure-drafts-submissions-component}
 
-El componente Borradores y envíos muestra los formularios guardados como borrador para completarlos posteriormente y enviarlos. Para configurarlo, seleccione el componente y, a continuación, seleccione ![Icono Configurar](assets/configure_icon.png). En el cuadro de diálogo [!UICONTROL Borradores y envíos], especifique el título para indicar la lista del formulario como formulario borrador o enviado. Seleccione también si el componente debe enumerar los formularios borrador o enviados en formato de tarjeta o lista.
+El componente Borradores y envíos muestra los formularios guardados como borrador para completarlos posteriormente y enviarlos. Para configurarlo, seleccione el componente y, a continuación, seleccione el icono ![Configurar](assets/configure_icon.png). En el cuadro de diálogo [!UICONTROL Borradores y envíos], especifique el título para indicar la lista del formulario como formulario borrador o enviado. Seleccione también si el componente debe enumerar los formularios borrador o enviados en formato de tarjeta o lista.
 
 ![Icono Borradores](assets/drafts-component.png)
 
@@ -129,7 +129,7 @@ El componente Buscar y listar se utiliza para enumerar los formularios adaptable
 
 ![Icono Buscar y listar](assets/search-and-lister-component.png)
 
-Para configurarlo, seleccione el componente y, a continuación, seleccione ![Icono Configurar](assets/configure_icon.png). El cuadro de diálogo [!UICONTROL Buscar y listar] se abre.
+Para configurarlo, seleccione el componente y, a continuación, seleccione el icono ![Configurar](assets/configure_icon.png). El cuadro de diálogo [!UICONTROL Buscar y listar] se abre.
 
 1. En la pestaña [!UICONTROL Mostrar], configure lo siguiente:
    * En **[!UICONTROL Título]**, especifique el título del componente Buscar y listar. Un título indicativo permite a los usuarios realizar una búsqueda rápida en toda la lista de formularios.
@@ -141,7 +141,7 @@ Para configurarlo, seleccione el componente y, a continuación, seleccione ![Ico
 
 ### Configurar el componente Vínculo {#configure-link-component}
 
-El componente Vínculo le permite proporcionar vínculos a un formulario adaptable en la página. Para configurarlo, seleccione el componente y, a continuación, seleccione ![Icono Configurar](assets/configure_icon.png). Se abrirá el cuadro de diálogo [!UICONTROL Editar el componente Vínculo].
+El componente Vínculo le permite proporcionar vínculos a un formulario adaptable en la página. Para configurarlo, seleccione el componente y, a continuación, seleccione el icono ![Configurar](assets/configure_icon.png). Se abrirá el cuadro de diálogo [!UICONTROL Editar el componente Vínculo].
 
 1. En la pestaña [!UICONTROL Mostrar], proporcione el pie de ilustración del vínculo y la información del objeto para facilitar la identificación de los formularios representados por el vínculo.
 1. En la pestaña [!UICONTROL Información del activo], especifique la ruta del repositorio donde se almacena el activo.
@@ -152,7 +152,7 @@ El componente Vínculo le permite proporcionar vínculos a un formulario adaptab
 Puede enviar un formulario adaptable solo cuando todos los destinatarios hayan completado la ceremonia de firma. Para configurar la configuración mediante Adobe Sign, haga lo siguiente.
 
 1. En la instancia Autor, abra un formulario adaptable en el modo de edición.
-1. En el panel izquierdo, seleccione el icono Propiedades y expanda **[!UICONTROL FIRMA ELECTRÓNICA]** opción.
+1. En el panel izquierdo, seleccione el icono Propiedades y expanda la opción **[!UICONTROL FIRMA ELECTRÓNICA]**.
 1. Seleccione **[!UICONTROL Habilitar Adobe Sign]**. Se mostrarán varias opciones de configuración.
 1. En la sección [!UICONTROL Enviar el formulario], seleccione la opción **[!UICONTROL después de que cada destinatario complete la ceremonia de firma]** para configurar la acción Enviar formulario, donde el formulario se enviará por primera vez a todos los destinatarios para que lo firmen. Una vez que todos los destinatarios hayan firmado el formulario, solo entonces se enviará.
 
@@ -160,32 +160,32 @@ Puede enviar un formulario adaptable solo cuando todos los destinatarios hayan c
 
 Los formularios se pueden guardar como borradores para completarlos más adelante. Existen dos formas de guardar un formulario como borrador:
 
-* Crear una regla &quot;Guardar formulario&quot; en un componente de formulario, por ejemplo, un botón. Al hacer clic en el botón, los activadores de la regla y el formulario se guardarán como borrador.
+* Crear una regla “Guardar formulario” en un componente de formulario, por ejemplo, un botón. Al hacer clic en el botón, los activadores de la regla y el formulario se guardarán como borrador.
 * Habilite la característica de guardado automático, que guarda el formulario según el evento especificado o después de un intervalo de tiempo configurado.
 
 ### Crear reglas para guardar un formulario adaptable como borrador {#rule-to-save-adaptive-form-as-draft}
 
-Para crear una regla &quot;Guardar formulario&quot; en un componente de formulario, por ejemplo, un botón, siga los pasos a continuación:
+Para crear una regla “Guardar formulario”; en un componente de formulario, por ejemplo, un botón, haga lo siguiente:
 
 1. En la instancia Autor, abra un formulario adaptable en modo de edición.
-1. En el panel izquierdo, seleccione ![Icono Componentes](assets/components_icon.png) y arrastre el [!UICONTROL Botón] al formulario.
-1. Seleccione el [!UICONTROL Botón] y seleccione el componente ![Icono Configurar](assets/configure_icon.png).
-1. Seleccione el [!UICONTROL Editar reglas] para abrir el Editor de reglas.
-1. Seleccionar **[!UICONTROL Crear]** para configurar y crear la regla.
+1. En el panel izquierdo, seleccione el icono ![Componentes](assets/components_icon.png) y arrastre el componente [!UICONTROL Botón] al formulario.
+1. Seleccione el componente [!UICONTROL Botón] y, a continuación, seleccione el icono ![Configurar](assets/configure_icon.png).
+1. Seleccione el icono [!UICONTROL Editar reglas] para abrir el Editor de reglas.
+1. Seleccione **[!UICONTROL Crear]** para configurar y crear la regla.
 1. En la sección [!UICONTROL Cuándo], seleccione “se haga clic” y en la sección [!UICONTROL Entonces] seleccione la opción “Guardar formulario”.
-1. Seleccionar **[!UICONTROL Listo]** para guardar la regla.
+1. Seleccione **[!UICONTROL Listo]** para guardar la regla.
 
 ### Habilitar el guardado automático {#enable-auto-save}
 
 Puede configurar la característica de guardado automático para un formulario adaptable de la siguiente manera:
 
 1. En la instancia Autor, abra un formulario adaptable en modo de edición.
-1. En el panel izquierdo, seleccione ![Icono Propiedades](assets/configure_icon.png) y expanda el [!UICONTROL GUARDAR AUTOMÁTICAMENTE] opción.
+1. En el panel izquierdo, seleccione el icono ![Propiedades](assets/configure_icon.png) y expanda la opción [!UICONTROL GUARDAR AUTOMÁTICAMENTE].
 1. Seleccione la casilla de verificación **[!UICONTROL Habilitar]** para habilitar el guardado automático del formulario. Puede configurar lo siguiente:
 * De forma predeterminada, [!UICONTROL Evento de formulario adaptable] se establece en “true”, lo que significa que el formulario se guardará automáticamente después de cada evento.
 * En [!UICONTROL Activador], establezca activar el guardado automático en función de la ocurrencia de un evento o después de un intervalo de tiempo específico.
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}
 

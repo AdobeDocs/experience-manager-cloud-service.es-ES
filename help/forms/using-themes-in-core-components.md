@@ -4,9 +4,9 @@ description: Puede utilizar temáticas para aplicar estilo y proporcionar una id
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2610'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -168,7 +168,7 @@ Del mismo modo, puede utilizar el archivo `variable.scss` para establecer la fam
 
 ##### Definir estilos de nivel de componente {#component-based-customization}
 
-También puede cambiar la fuente, el color, el tamaño y otras propiedades CSS de un componente principal de formulario adaptable específico. Por ejemplo, botón, casilla de verificación, contenedor, pie de página, etc. Puede aplicar estilo a un botón o una casilla de verificación editando el archivo CSS del componente específico para alinearlo con el estilo de su organización. Para personalizar el estilo de un componente, haga lo siguiente:
+También puede cambiar la fuente, el color, el tamaño y otras propiedades CSS de un componente principal de formulario adaptable específico. Por ejemplo, botón, casilla de verificación, contenedor, pie de página, etc.  Puede aplicar estilo a un botón o una casilla de verificación editando el archivo CSS del componente específico para alinearlo con el estilo de su organización. Para personalizar el estilo de un componente, haga lo siguiente:
 
 1. Abra el archivo `<your-theme-sources>/src/components/<component>/<component.scss>` para editarlo. Por ejemplo, para cambiar el color de fuente del componente Botón, abra el archivo `<your-theme-sources>/src/components/button/button.scss`.
 1. Cambie el valor de cualquiera según sus necesidades. Por ejemplo, para cambiar el color del componente Botón al pasar el ratón por encima de `green`, cambia el valor de la propiedad `color: $white` en la clase `cmp-adaptiveform-button__widget:hover` a código hexadecimal `#12B453` o cualquier otro tono de `green`. El código final tiene el siguiente aspecto:
@@ -379,7 +379,7 @@ Los pasos para aplicar una temática a un formulario adaptable son los siguiente
 
 1. Inicie sesión en la instancia de creación de AEM Forms.
 
-1. Seleccionar **Adobe Experience Manager** > **Forms** > **Forms y documentos**.
+1. Seleccione **Adobe Experience Manager** > **Formularios** > **Formularios y documentos**.
 
 1. Haga clic en **Crear** > **Formularios adaptables**. Se abre el asistente para crear formularios adaptables.
 

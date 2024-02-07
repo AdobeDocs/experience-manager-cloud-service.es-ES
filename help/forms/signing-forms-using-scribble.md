@@ -7,9 +7,9 @@ topic-tags: author
 feature: Adaptive Forms, Foundation Components
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '709'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -34,9 +34,9 @@ Puede usar los componentes **Firma manuscrita** y **Paso de firma** para dibujar
 * **C:** haga clic en el icono **Geolocalización** para añadir geolocalización junto con la firma.
 * **D:** haga clic en el icono **Teclado** para escribir su nombre en lienzo.
 
-Una vez seleccionadas las opciones Listo ![aem_forms_save](assets/aem_forms_save.png) en la ventana Firma manuscrita, no se puede editar la firma. Si desea editar la firma, ignore la firma actual y vuelva a firmar el formulario con las opciones Pincel/Teclado mencionadas anteriormente.
+Una vez que seleccione el icono Listo ![aem_forms_save](assets/aem_forms_save.png) en la ventana Firma manuscrita, no podrá editar la firma. Si desea editar la firma, ignore la firma actual y vuelva a firmar el formulario con las opciones Pincel/Teclado mencionadas anteriormente.
 
-Puede seleccionar el **Configurar** ![icono de configuración](assets/configure.png) para establecer la proporción de aspecto del lienzo de firma manuscrita.
+Puede seleccionar el icono **Configurar** ![configurar](assets/configure.png) para establecer la relación de aspecto del lienzo de la firma manuscrita.
 * Cuando la relación de aspecto del lienzo de firma manuscrita es menor que 1, la información de geolocalización se agrega en la parte inferior del lienzo de firma manuscrita.
 
 
@@ -56,20 +56,20 @@ Puede seleccionar el **Configurar** ![icono de configuración](assets/configure.
 
 1. Active la opción Documento de registro o utilice un formulario adaptable basado en una plantilla de formulario. Para obtener información paso a paso, consulte [Crear un formulario adaptable](creating-adaptive-form.md).
 1. Arrastre y coloque el componente **Firma manuscrita** desde el Explorador de componentes al formulario adaptable.
-1. Seleccione el **Configurar** ![configurar](assets/configure.png) icono. Se abrirá el explorador de propiedades, donde verá las propiedades del componente Firma manuscrita. Configure las propiedades del componente Firma manuscrita.
+1. Seleccione el icono **Configurar** ![configurar](assets/configure.png). Se abrirá el explorador de propiedades, donde verá las propiedades del componente Firma manuscrita. Configure las propiedades del componente Firma manuscrita.
 1. Arrastre y coloque el componente Paso de firma desde el Explorador de componentes al formulario adaptable.
 
    >[!NOTE]
    >
    >El componente Paso de firma ocupa el ancho completo disponible en el formulario. Se recomienda no colocar ningún otro componente en la sección que contiene el componente Paso de firma.
 
-1. En el Explorador de contenido, seleccione **Contenedor del formulario** y seleccione la opción **Configurar** ![icono de configuración](assets/configure.png) icono. Se abrirá el explorador de propiedades, donde verá las propiedades del contenedor de formularios adaptables. Vaya a **Contenedor de formulario adaptable** > **Firma electrónica** y deseleccione la opción **Habilitar Adobe Sign**. Seleccione el botón Listo ![aem_forms_save](assets/aem_forms_save.png) para guardar los cambios.
+1. En el explorador de contenido, seleccione **Contenedor de formulario** y seleccione el icono **Configurar** ![configurar](assets/configure.png). Se abrirá el explorador de propiedades, donde verá las propiedades del contenedor de formularios adaptables. Vaya a **Contenedor de formulario adaptable** > **Firma electrónica** y deseleccione la opción **Habilitar Adobe Sign**. Seleccione el icono Listo ![aem_forms_save](assets/aem_forms_save.png) para guardar los cambios.
 
    >[!NOTE]
    >
    >Cuando se agrega un componente Paso de firma a un formulario adaptable, la opción Habilitar Adobe Sign se selecciona automáticamente.
 
-1. Seleccione el **Configurar** ![configurar](assets/configure.png) icono. Se abrirá el explorador de propiedades, donde verá las propiedades del Paso de firma. Configure las siguientes propiedades:
+1. Seleccione el icono **Configurar** ![configurar](assets/configure.png). Se abrirá el explorador de propiedades, donde verá las propiedades del Paso de firma. Configure las siguientes propiedades:
 
    * **Nombre del elemento**: especifique el nombre del componente.
 
@@ -79,7 +79,7 @@ Puede seleccionar el **Configurar** ![icono de configuración](assets/configure.
 
    * **Clase CSS**: especifique la clase CSS de la biblioteca de cliente, si la hay. Adobe recomienda utilizar [temas](themes.md) y [estilos en línea](inline-style-adaptive-forms.md) en lugar de la clase CSS.
 
-   Seleccione el botón Listo ![aem_forms_save](assets/aem_forms_save.png) para guardar los cambios. La firma se ha configurado correctamente.
+   Seleccione el icono Listo ![aem_forms_save](assets/aem_forms_save.png) para guardar los cambios. La firma se ha configurado correctamente.
 
    Ahora, al rellenar un formulario, se muestra una versión PDF del formulario adaptable y se proporcionan las opciones para firmar el documento PDF. Para obtener información detallada, consulte [Firmar un formulario adaptable con una firma manuscrita](signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
 

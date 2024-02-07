@@ -3,9 +3,9 @@ title: Notas de la versión 2023.4.0 de la versión de  [!DNL Adobe Experience M
 description: Notas de la versión 2023.4.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: c34aedee-e45a-4e2a-ae7f-930bc0cc026f
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1122'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

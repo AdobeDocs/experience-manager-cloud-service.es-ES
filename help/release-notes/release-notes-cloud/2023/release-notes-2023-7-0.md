@@ -3,9 +3,9 @@ title: Notas de la versión 2023.7.0 de la versión de  [!DNL Adobe Experience M
 description: Notas de la versión 2023.7.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '896'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ Assets Essentials ahora ordena los resultados de la búsqueda según la relevanc
 
 * [**Temáticas**](/help/forms/using-themes-in-core-components.md) **y plantillas** listas para usar: inicie su proceso de creación de formularios con nuestras temáticas y plantillas listas para usar, diseñadas para potenciar tanto a profesionales experimentados como a autores de formularios principiantes. Estas temáticas y plantillas creadas de forma optimizada y seleccionada, con los componentes principales de Formularios adaptables, le permiten empezar a crear formularios rápidamente para los casos de uso más comunes.
 
-* **[Componentes de React para formularios sin encabezado](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: ahora puede obtener una vista previa y personalizar las representaciones de formularios adaptables sin encabezado con los componentes de React predeterminados. Estos componentes utilizan clases de BEM de componentes principales de Forms adaptables para el estilo, lo que facilita la personalización de su aspecto según sus necesidades específicas.
+* **[Componentes de React para formularios sin encabezado](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: ahora puede obtener una vista previa y personalizar las representaciones de formularios adaptables sin encabezado con los componentes de React predeterminados. Estos componentes utilizan las clases de BEM de los componentes principales de Formularios adaptables para el estilo, lo que facilita la personalización de su aspecto según sus necesidades específicas.
 
 * [**Crear formularios adaptables con secciones repetibles**](/help/forms/create-forms-repeatable-sections.md): ahora puede hacer repetibles los componentes [Acordeón](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms//adaptive-forms-components/accordion.html?lang=es), [Asistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=es), [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=es) y [pestañas horizontales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=es) basados en formularios adaptables para capturar varios registros de datos.  Estas secciones repetibles le permiten proporcionar varias entradas de datos fácilmente. Resulta útil cuando se desconocen de antemano las instancias de datos requeridas. El usuario que rellena el formulario puede agregar o quitar secciones fácilmente, lo que permite que los formularios se adapten a diferentes escenarios de entrada de datos y simplifica la recopilación de varias ocurrencias de los mismos datos.
 

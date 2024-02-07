@@ -3,9 +3,9 @@ title: Configuración de reglas de traducción para contenido sin encabezado
 description: Aprenda a definir reglas de traducción para identificar el contenido que se va a traducir.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '912'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ En la IU **Configuración de traducción**, hay un número de opciones disponibl
    ![Agregar contexto](assets/add-translation-context.png)
 1. Utilice el navegador de rutas para seleccionar la ruta requerida y seleccione **Confirmar** para guardar. Recuerde que los fragmentos de contenido, que contienen contenido sin encabezado, generalmente se encuentran debajo de `/content/dam/<your-project>`.
    ![Seleccionar la ruta](assets/select-context.png)
-1. Seleccione el contexto que ha creado y luego seleccione **Editar**. Esto abre el **Editor de reglas de traducción** para configurar las propiedades.
+1. Seleccione el contexto que acaba de crear y luego seleccione **Editar**. Esto abre el **Editor de reglas de traducción** para configurar las propiedades.
    ![Editor de reglas de traducción](assets/translation-rules-editor.png)
 1. De forma predeterminada, todas las configuraciones se heredan de la ruta principal, en este caso, `/content/dam`. Desmarque la opción **Heredar de`/content/dam`** para añadir campos adicionales a la configuración.
 1. Una vez desmarcado, en la sección **General** de la lista, añada los nombres de propiedad de los modelos de fragmento de contenido que haya [identificado anteriormente como campos para traducción.](getting-started.md#content-models)

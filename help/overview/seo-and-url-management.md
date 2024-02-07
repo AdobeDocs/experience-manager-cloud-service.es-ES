@@ -3,9 +3,9 @@ title: Prácticas recomendadas para la optimización de los motores de búsqueda
 description: Prácticas recomendadas para la optimización de los motores de búsqueda y administración de URL para Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3539'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -458,7 +458,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-Además, la funcionalidad implementada para los mapas del sitio XML también se puede utilizar en diferentes casos de uso, por ejemplo, para añadir el vínculo canónico o las alternativas de idioma al encabezado de una página. Consulte la [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) para obtener más información.
+Además, la funcionalidad implementada para los mapas del sitio XML también se puede utilizar en diferentes casos de uso, por ejemplo para añadir el vínculo canónico o las alternativas de idioma al encabezado de una página.  Consulte la [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) para obtener más información.
 
 ### Crear redirecciones 301 para URL heredadas {#creating-redirects-for-legacy-urls}
 

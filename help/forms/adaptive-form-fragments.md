@@ -8,9 +8,9 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2137'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -98,7 +98,7 @@ Además, si ha seleccionado un esquema XML o una plantilla de formulario XDP com
 
    * **Modelo de formulario**: En función del modelo de formulario para el formulario adaptable, este campo muestra **Esquema XML**, **Plantilla de formulario** o **Ninguno**. Es un campo no editable.
 
-   * **Raíz del modelo de fragmento**: Solo aparece en formularios adaptables basados en XSD. Especifica la raíz del modelo de fragmento. Puede elegir **/** o el tipo complejo XSD de la lista desplegable. Solo puede reutilizar el fragmento en otro formulario adaptable si selecciona el tipo complejo como raíz del modelo de fragmento.
+   * **Raíz del modelo de fragmento**: Solo aparece en formularios adaptables basados en XSD. Especifica la raíz del modelo de fragmento. Puede elegir **/** o el tipo complejo XSD de la lista desplegable. Solo puedes reutilizar el fragmento en otro formulario adaptable si seleccionas el tipo complejo como raíz del modelo de fragmento.
 Si elige **/** como raíz del modelo de fragmento, el árbol XSD completo de la raíz se podrá ver en la pestaña Modelo de datos del formulario adaptable. Para una raíz de modelo de fragmento de tipo complejo, solo los descendientes del tipo complejo seleccionado serán visibles en la pestaña Modelo de datos de formulario adaptable.
 
    * **XSD Ref**: Solo aparece en formularios adaptables basados en XSD. Muestra la ubicación del esquema XML.
@@ -109,7 +109,7 @@ Si elige **/** como raíz del modelo de fragmento, el árbol XSD completo de la 
 
    Guardar como diálogo de fragmento
 
-1. Haga clic en **Aceptar**.
+1. Haz clic en **OK**.
 
    El panel se guardará en la ubicación especificada o predeterminada del repositorio. En el formulario adaptable, el panel se reemplazará por una captura del fragmento. Como se muestra a continuación, el panel Información general y sus paneles secundarios, Información personal y Dirección, se guardarán como un fragmento.
 
@@ -173,7 +173,7 @@ Puede utilizar un fragmento de formulario basado en esquemas varias veces en un 
 
 >[!NOTE]
 >
-> Si utiliza fragmentos de formulario basados en ninguno varias veces en un formulario adaptable, se produce un problema de sincronización de datos entre los campos de los fragmentos. Puede usar un [fragmento de formulario basado en componentes principales](/help/forms/adaptive-form-fragments-core-components.md) que no está vinculado a ningún modelo de datos de formulario, varias veces en un formulario sin experimentar problemas de sincronización de datos.
+> Si utiliza fragmentos de formulario basados en ninguno varias veces en un formulario adaptable, se produce un problema de sincronización de datos entre los campos de los fragmentos. Puedes usar varias veces en un formulario un [fragmento de formulario basado en componentes principales](/help/forms/adaptive-form-fragments-core-components.md) que no está vinculado a ningún modelo de datos de formulario sin experimentar problemas de sincronización de datos.
 
 ## Asignar automáticamente fragmentos para enlazar datos {#auto-mapping-of-fragments-for-data-binding}
 
@@ -251,7 +251,7 @@ Para localizar un formulario adaptable que contenga fragmentos de formulario ada
 * Asegúrese de que el nombre del fragmento sea único. El fragmento no se creará si hay un fragmento existente con el mismo nombre.
 * En un formulario adaptable basado en XDP, si guarda un panel como fragmento que incluye otro fragmento XDP, el fragmento resultante se enlaza automáticamente al fragmento XDP secundario. En el caso de un formulario adaptable basado en XSD, el fragmento resultante se enlaza a la raíz del esquema.
 * Cuando cree un fragmento de formulario adaptable, se creará un nodo de fragmento en CRXDe Lite, similar al nodo guideContainer para un formulario adaptable.
-* No se admite un fragmento de un formulario adaptable que utilice un modelo de datos de formulario diferente. Por ejemplo, un fragmento basado en XDP no es compatible con un formulario adaptable basado en XSD y, a la inversa.
+* No se admite un fragmento de un formulario adaptable que utilice un modelo de datos de formulario diferente. Por ejemplo, un fragmento basado en XDP no es compatible con un formulario adaptable basado en XSD y viceversa.
 * Los fragmentos de formulario adaptables están disponibles para su uso a través de la pestaña Fragmentos de formulario adaptables en el buscador de contenido de AEM.
 * Cualquier expresión, script o estilo de un fragmento de formulario adaptable independiente se conservará cuando se inserte por referencia o se incruste en un formulario adaptable.
 * No puede editar un fragmento de formulario adaptable, que se inserte por referencia, desde un formulario adaptable. Para editarlo, edite el fragmento de formulario adaptable independiente o incruste el fragmento en el formulario adaptable.
