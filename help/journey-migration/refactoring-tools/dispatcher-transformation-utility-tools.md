@@ -4,8 +4,8 @@ description: AEM AEM Aprenda a convertir las configuraciones existentes en Dispa
 exl-id: 2e95ff7b-cc94-477d-99ab-816a58998287
 source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 33%
+source-wordcount: '330'
+ht-degree: 28%
 
 ---
 
@@ -35,9 +35,9 @@ Consulte [Dispatcher en la nube](https://experienceleague.adobe.com/docs/experie
 
 ## Dispatcher Converter de AEM {#aem-dispatcher-converter}
 
-AEM AEM Dispatcher Converter proporciona la capacidad de refactorizar las configuraciones locales existentes o las configuraciones de Dispatcher de Adobe Managed Services a una configuración de Dispatcher compatible as a Cloud Service.
+AEM Dispatcher Converter proporciona la capacidad de refactorizar las configuraciones locales o de Adobe de Managed Services AEM Dispatcher existentes para establecer una configuración de Dispatcher compatible as a Cloud Service con la de Dispatcher.
 
-## Uso de Dispatcher Converter de AEM {#using-dispatcher-converter}
+## AEM Uso de Dispatcher Converter {#using-dispatcher-converter}
 
 * A través de Adobe Developer CLI : Adobe AEM recomienda utilizar el convertidor de Dispatcher de forma mediante `aio-cli-plugin-aem-cloud-service-migration` AEM (complemento de refactorización de código as a Cloud Service para la CLI de Adobe Developer).
 

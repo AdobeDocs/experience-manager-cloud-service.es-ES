@@ -4,8 +4,8 @@ description: Obtenga información sobre cómo supervisar problemas y mejorar el 
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 29%
+source-wordcount: '459'
+ht-degree: 22%
 
 ---
 
@@ -40,7 +40,7 @@ Consulte [AEM Implementación de para el as a Cloud Service](/help/implementing/
 
 ## CRXDE Lite {#crxde-lite}
 
-Los clientes pueden acceder a la lista CRXDE Lite en el entorno de desarrollo, pero no en la fase o en la producción.
+Como usuario, puede acceder a CRXDE Lite en el entorno de desarrollo, pero no en la fase o en la producción.
 
 >[!IMPORTANT]
 >Escribir en repositorios inmutables como `/libs` y `/apps` en tiempo de ejecución genera errores. Además, no tiene acceso a las herramientas para desarrolladores para entornos de ensayo y producción.

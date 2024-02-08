@@ -1,13 +1,13 @@
 ---
 title: Asignar perfiles de producto de AEM
-description: AEM AEM Una vez configurados los recursos de nube, conceda a su equipo acceso para que se auto-utilizando perfiles de producto de la aplicación de la nube de forma predeterminada.
+description: Una vez configurados los recursos de la nube, deberá otorgar a su equipo acceso a AEM mediante perfiles de producto de AEM.
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 77%
+source-wordcount: '878'
+ht-degree: 100%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 77%
 >title="Asignar perfiles de producto de AEM"
 >abstract="No tiene derecho a utilizar Experience Manager Assets. Póngase en contacto con su administrador o administradora."
 
-En esta parte del [recorrido de incorporación,](overview.md) AEM AEM aprenderá a otorgar acceso a su equipo a los perfiles de producto de los que se puede acceder mediante el uso de perfiles de producto de la.
+En esta parte del [recorrido de incorporación,](overview.md) aprenderá a otorgar acceso a su equipo a AEM mediante perfiles de producto de AEM.
 
 ## Objetivo {#objective}
 
-Después de leer el documento anterior en este recorrido de incorporación, [Crear entornos,](create-environments.md) AEM AEM y una vez configurados los recursos de nube, conceda a su equipo acceso para que se autoconfigure usando perfiles de producto de la. Como administrador del sistema, puede hacerlo asignando perfiles de producto de AEM.
+Una vez que haya leído el documento anterior en este recorrido de incorporación, [Creación de entornos,](create-environments.md) y tenga configurados los recursos de la nube, deberá otorgar a su equipo acceso a AEM mediante perfiles de producto de AEM. Como administrador del sistema, puede hacerlo asignando perfiles de producto de AEM.
 
-Después de leer este documento, debería comprender lo siguiente:
+Después de leer este documento, debería poder comprender lo siguiente:
 
 * Qué son los perfiles de producto de AEM.
 * Añadir integrantes del equipo al perfil de producto Usuario de AEM.
@@ -74,7 +74,7 @@ Siga estos pasos para ver los perfiles de producto de AEM desde Admin Console.
 
    ![Seleccionar instancia](/help/journey-onboarding/assets/cloud-profiles-1.png)
 
-1. AEM Puede ver la lista de perfiles de producto as a Cloud Service que se pueden asignar a un usuario según sus funciones.
+1. Verá la lista de perfiles de producto de AEM as a Cloud Service que se pueden asignar a un usuario según sus funciones.
 
    ![Perfiles de producto](/help/journey-onboarding/assets/cloud-profiles-2.png)
 
@@ -88,11 +88,11 @@ Estas tareas requieren que sea administrador del sistema con el perfil de produc
 
    ![Administrar acceso](/help/journey-onboarding/assets/add-team1.png)
 
-1. Una nueva pestaña le lleva a Admin Console desde el que tiene acceso a la instancia de autor del entorno. Seleccionar **AEM Administradores de** o **AEM Usuarios de** en función de los permisos que se le deben otorgar a esta persona.
+1. Una nueva pestaña le lleva a Admin Console desde el que tiene acceso a la instancia de autor del entorno. Seleccione **Administradores de AEM** o **Usuarios de AEM** en función de los permisos que se le deben otorgar a esta persona.
 
    ![Asignar acceso](/help/journey-onboarding/assets/add-team2.png)
 
-1. Seleccionar `AEM Administrator` o `AEM User` y haga clic en **Añadir usuario** como se muestra a continuación, y envíe los detalles necesarios para completar la adición del miembro del equipo.
+1. Seleccione `AEM Administrator` o `AEM User` y haga clic en **Agregar usuario** como se muestra a continuación, y envíe los detalles necesarios para completar la adición del miembro del equipo.
 
    ![Agregar miembro del equipo](/help/journey-onboarding/assets/add-team3.png)
 
@@ -106,8 +106,8 @@ El usuario que ha agregado ahora tendrá acceso a los servicios de autor de AEM 
 
 Sin embargo, si desea comprender mejor cómo utilizan el sistema los autores y desarrolladores, puede continuar con dos partes opcionales de este recorrido de integración:
 
-* [Tareas del desarrollador y del administrador de implementación](developers.md) : aquí aprenderá cómo acceden los desarrolladores a Git para almacenar su código personalizado e implementarlo mediante canalizaciones de Cloud Manager.
-* [AEM Tareas del usuario de](aem-users.md) AEM - Donde aprenderá a acceder al entorno de la donde puede empezar a crear contenido.
+* [Tareas del desarrollador y del administrador de implementación](developers.md): aquí aprenderá cómo acceden los desarrolladores a Git para almacenar su código personalizado e implementarlo mediante canalizaciones de Cloud Manager.
+* [Tareas del usuario de AEM](aem-users.md): aquí aprenderá a acceder al entorno de AEM donde puede empezar a crear contenido.
 
 ## Recursos adicionales {#additional-resources}
 
