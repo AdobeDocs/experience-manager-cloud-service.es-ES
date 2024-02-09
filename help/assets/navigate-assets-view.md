@@ -3,10 +3,10 @@ title: “Interfaz de usuario de [!DNL Assets view]”
 description: Explicación de la interfaz de usuario de y la navegación en [!DNL Assets view].
 role: User
 exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2f701c527b5aac9d604cbfe857df90c3e8bf6054
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 89%
+source-wordcount: '922'
+ht-degree: 81%
 
 ---
 
@@ -44,10 +44,10 @@ Puede examinar las carpetas desde la interfaz de usuario principal o desde la ba
 * [Tareas](/help/assets/my-workspace-assets-view.md): Puede ver las tareas asignadas en la pestaña de **Mis tareas**. Por su parte, las tareas que crea puede verse en la pestaña de **Tareas asignadas**. Además, las tareas que complete se encuentran en **Tareas completadas** pestaña.
 * [Recursos](/help/assets/manage-organize-assets-view.md): lista de todas las carpetas en una vista de árbol, a las que tiene acceso.
 * **Vistos recientemente**: lista de recursos que ha previsualizado recientemente. [!DNL Assets view] muestra solo los recursos que previsualiza. No muestra los recursos por los que pasa de largo al examinar los archivos o carpetas del repositorio.
-* [Colecciones](/help/assets/manage-collections-assets-view.md): una colección es un conjunto de recursos, carpetas u otras colecciones dentro de la vista Recursos de Adobe Experience Manager. Utilice las colecciones para compartir recursos entre los usuarios. A diferencia de las carpetas, una colección puede incluir recursos de distintas ubicaciones. Puede compartir varias colecciones con un usuario. Cada colección contiene referencias a recursos. La integridad referencial de los recursos se mantiene entre colecciones.
+* [Colecciones](/help/assets/manage-collections-assets-view.md): una colección es un conjunto de recursos, carpetas u otras colecciones dentro de la vista de Adobe Experience Manager Assets. Utilice las colecciones para compartir recursos entre los usuarios. A diferencia de las carpetas, una colección puede incluir recursos de distintas ubicaciones. Puede compartir varias colecciones con un usuario. Cada colección contiene referencias a recursos. La integridad referencial de los recursos se mantiene entre colecciones.
 
 * [Perspectivas](/help/assets/manage-reports-assets-view.md#view-live-statistics): En [!DNL Assets view], puede ver perspectivas en tiempo real en su panel. La vista Recursos le permite ver datos en tiempo real de su entorno de la vista Recursos con el tablero de Insights. Puede ver las métricas de eventos en tiempo real durante los últimos 30 días o 12 meses.
-* **Papelera**: Enumere los recursos eliminados de la carpeta raíz **[!UICONTROL Assets]**. Puede seleccionar un recurso en la carpeta Papelera para restaurarlo a la ubicación original o eliminarlo permanentemente. También puede especificar una palabra clave o aplicar filtros estándar o personalizados para buscar los recursos adecuados en la carpeta Papelera. Para obtener más información sobre el uso de filtros estándar y personalizados, consulte [Buscar recursos en la vista Recursos](/help/assets/search-assets-view.md).
+* **Papelera**: Enumere los recursos eliminados de la carpeta raíz **[!UICONTROL Assets]**. Puede seleccionar un recurso de la carpeta Papelera para restaurarlo a su ubicación original o eliminarlo de forma permanente. Puede especificar una palabra clave o aplicar filtros como el estado del recurso, el tipo de archivo, el tipo de mime, el tamaño de la imagen, la creación del recurso, la modificación y las fechas de caducidad, así como filtrar por los recursos descartados por el usuario actual. También puede aplicar filtros personalizados para buscar los recursos adecuados en la carpeta Papelera. Para obtener más información sobre el uso de filtros estándar y personalizados, vea cómo [buscar recursos en la vista Recursos](/help/assets/search-assets-view.md).
 * **Configuración**: puede configurar varias opciones de la vista de recursos mediante **Configuración**, como, Formularios de metadatos, Informes y Administración de taxonomía.
 
 <!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
