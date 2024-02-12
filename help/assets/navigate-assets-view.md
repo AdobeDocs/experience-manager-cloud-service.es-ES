@@ -3,10 +3,10 @@ title: “Interfaz de usuario de [!DNL Assets view]”
 description: Explicación de la interfaz de usuario de y la navegación en [!DNL Assets view].
 role: User
 exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: 2f701c527b5aac9d604cbfe857df90c3e8bf6054
+source-git-commit: 39166f59eb773a149ba28be2b34d0c1aa6c831b4
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 81%
+source-wordcount: '912'
+ht-degree: 63%
 
 ---
 
@@ -24,15 +24,7 @@ Al iniciar sesión en [!DNL Assets view], verá la siguiente interfaz.
 
 ![[!DNL Assets view]Interfaz de usuario](assets/assets-view-interface.png)
 
-    *A: Barra lateral izquierda para examinar el repositorio y proporciona acceso a algunas otras opciones*
-    *B: Mostrar o contraer la barra lateral izquierda para aumentar el área de visualización de recursos*
-    *C: Filtrar resultados de búsqueda*
-    *D: Seleccionar todo el contenido de la carpeta seleccionada*
-    *E: Opciones para ordenar archivos*
-    *F: Cuadro de búsqueda*
-    *G: Cargar o arrastrar y soltar archivos mediante `Add Assets` botón*
-    *H: Crear una carpeta nueva*
-    *I: Cambiar entre diferentes vistas*
+**A**: barra lateral izquierda para examinar el repositorio y proporciona acceso a otras opciones **B**: Muestra o contrae la barra lateral izquierda para aumentar el área de visualización de recursos **C**: filtrar los resultados de búsqueda **D**: seleccione todo el contenido de la carpeta seleccionada **E**: Opciones para ordenar los recursos **F**: cuadro de búsqueda **G**: Cargue o arrastre y suelte archivos mediante `Add Assets` botón **H**: cree una nueva carpeta **I**: cambiar entre diferentes vistas
 
 <!-- TBD: Need an embedded video here with narration. It has to be hosted on MPC to be embeddable. -->
 
@@ -82,23 +74,7 @@ Para previsualizar un recurso, selecciónelo y haga clic en el ![icono de detall
 
 ![Previsualización de un recurso](assets/preview-asset-2.png)
 
-*A: Volver a la carpeta actual o al resultado de búsqueda actual en el repositorio*
-*B: Nombre y formato del archivo que está previsualizando*
-*C: Asignar tareas*
-*D: Descargar recurso*
-*E: Previsualizar recurso y ver información de metadatos*
-*D: Metadatos avanzados*
-*E: Palabras clave y etiquetas inteligentes*
-*F: Comentar y anotar*
-*G: Ver tareas relacionadas con el recurso seleccionado*
-*H: Ver y administrar versiones*
-*I: Ver representaciones de la imagen*
-*J: Editar imagen*
-*K: Metadatos básicos*
-*L: Metadatos avanzados*
-*M: Palabras clave y etiquetas inteligentes*
-*N: Previsualice más de cerca. Zoom, pantalla completa y otras opciones*
-*O: Continúe con el recurso anterior o siguiente de la carpeta actual sin volver a la carpeta*
+**A**: volver a la carpeta actual o al resultado de búsqueda actual en el repositorio **B**: Nombre y formato del archivo que está previsualizando **C**: Asignar tareas **D**: metadatos avanzados **E**: palabras clave y etiquetas inteligentes **F**: comentar y anotar **G**: vea las tareas relacionadas con el recurso seleccionado **H**: Ver y administrar versiones **I**: vea las representaciones de la imagen **J**: Editar imagen **K**: metadatos básicos **L**: metadatos avanzados **M**: palabras clave y etiquetas inteligentes **N**: previsualizar más de cerca. Zoom, pantalla completa y otras opciones **O**: continuar con el recurso anterior o siguiente de la carpeta actual sin volver a la carpeta
 
 También puede previsualizar los vídeos.
 
