@@ -3,10 +3,10 @@ title: Trabajar con sus propios repositorios de GitHub en Cloud Manager
 description: Obtenga información sobre cómo configurar Cloud Manager para que funcione con sus propios repositorios de GitHub.
 feature: Release Information
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: ce9d65179d9cc1f02f786516554e07c95a89484d
+source-git-commit: b81c2bd5c339bce97fe5774572bf1532fc8e04df
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 70%
+source-wordcount: '734'
+ht-degree: 68%
 
 ---
 
@@ -18,6 +18,10 @@ Al configurar Cloud Manager para que funcione con sus propios repositorios de Gi
 >[!NOTE]
 >
 >Esta funcionalidad solo está disponible para [el programa de clientes pioneros.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
+
+>[!NOTE]
+>
+>Esta función es exclusiva de GitHub público. La compatibilidad con GitHub autoalojado no está disponible.
 
 ## Configuración {#configuration}
 
