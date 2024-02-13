@@ -5,10 +5,10 @@ keywords: Agregar una función personalizada, utilizar una función personalizad
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: 28020b05e4aaaa3f066943e0504f05e307c7020b
+source-git-commit: 1fb7fece71eec28219ce36c72d628867a222b618
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 22%
+source-wordcount: '779'
+ht-degree: 16%
 
 ---
 
@@ -43,7 +43,7 @@ En el ejemplo anterior, cuando el usuario intenta enviar el formulario, se invoc
 
 ### Usos de las funciones personalizadas {#uses-of-custom-function}
 
-Algunas de las ventajas de utilizar funciones personalizadas en Forms adaptable son:
+Las ventajas de utilizar funciones personalizadas en Forms adaptable son:
 
 * **Manipulación de datos**: Las funciones personalizadas manipulan y procesan los datos introducidos en los campos de formulario.
 * **Validación de datos**: las funciones personalizadas permiten realizar comprobaciones personalizadas en las entradas del formulario y proporcionar mensajes de error especificados.
@@ -90,7 +90,7 @@ Some of the examples to create Arrow functions are:
 
 * **Expresión de función con comentario jsdoc obligatorio**
 
-Cree funciones personalizadas en los siguientes formatos para enumerarlas en el editor de reglas de un formulario adaptable. Por ejemplo:
+Para enumerar funciones personalizadas en el editor de reglas de un formulario adaptable, cree funciones personalizadas en el siguiente formato:
 
 ```javascript
     /**
@@ -118,7 +118,7 @@ The functions that are not supported in the custom function list are:
 
 >[!NOTE]
 >
-> Puede consultar la `error.log` en caso de errores, como las funciones personalizadas, no se enumeran en el editor de reglas.
+> Puede consultar la `error.log` para cualquier error, como funciones personalizadas que no aparecen en el editor de reglas.
 
 <!--The `error.log` file also displays the methods and parameters that are not supported for custom functions. -->
 
@@ -136,13 +136,13 @@ Los pasos para crear funciones personalizadas son los siguientes:
 Puede agregar funciones personalizadas agregando la biblioteca de cliente. Para crear una biblioteca de cliente, realice los siguientes pasos:
 
 1. [Clone su repositorio de AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#accessing-git).
-1. Crear una carpeta dentro de la carpeta `[AEM Forms as a Cloud Service repository folder]/apps/`. Por ejemplo, cree una carpeta denominada `experience-league`
-1. Vaya a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` y cree un `ClientLibraryFolder` como `es6clientlibs`.
-1. Añadir una propiedad `categories`con valor de tipo de cadena como `es6customfunctions` a la `es6clientlibs` carpeta.
+1. Crear una carpeta dentro de la carpeta `[AEM Forms as a Cloud Service repository folder]/apps/`. Por ejemplo, cree una carpeta denominada como `experience-league`.
+1. Vaya a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` y cree un `ClientLibraryFolder`. Por ejemplo, cree una carpeta de biblioteca de cliente como `es6clientlibs`.
+1. Añadir una propiedad `categories` con valor de tipo cadena. Por ejemplo, asigne el valor `es6customfunctions` a la `categories` propiedad para `es6clientlibs` carpeta.
 
    >[!NOTE]
    >
-   >`es6customfunctions` es una categoría de ejemplo. Puede elegir cualquier nombre para la categoría.
+   > Puede elegir cualquier nombre para `client library folder` y `categories` propiedad.
 
 1. Cree una carpeta con el nombre `js`.
 1. Navegue hasta la carpeta `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/es6clientlibs/js`. 
@@ -150,7 +150,7 @@ Puede agregar funciones personalizadas agregando la biblioteca de cliente. Para 
 
    >[!NOTE]
    >
-   >* Si el archivo JavaScript que contiene código para funciones personalizadas tiene un error, las funciones personalizadas no aparecen en el editor de reglas de un formulario adaptable. También puede consultar la `error.log` archivo para el error.
+   > Si el archivo JavaScript que contiene código para funciones personalizadas tiene un error, las funciones personalizadas no aparecen en el editor de reglas de un formulario adaptable. También puede consultar la `error.log` archivo para el error.
 
    <!-- 
     >* AEM Adaptive Form supports the caching of custom functions. If the JavaScript is modified, the caching becomes invalidated, and it is parsed. You can see a message as `Fetched following custom functions list from cache` in the `error.log` file.  -->
@@ -179,18 +179,22 @@ Una vez que la canalización se ejecute correctamente, la función personalizada
 
 ### Agregar una biblioteca de cliente en un formulario adaptable{#use-custom-function}
 
-Después de agregar la biblioteca de cliente, utilícela en el formulario adaptable. Le permite utilizar su [función personalizada como regla en el formulario](/help/forms/rule-editor.md#custom-functions). Para agregar la biblioteca del cliente en el formulario adaptable, siga estos pasos:
+Una vez que haya implementado la biblioteca de cliente en el entorno de Forms CS, utilice sus funcionalidades en el formulario adaptable. Para agregar la biblioteca de cliente en el formulario adaptable
 
-1. Abra el formulario en modo de edición. 
-Para abrir un formulario en modo de edición, seleccione un formulario y **[!UICONTROL Ábralo]**.
-1. En el modo de edición, seleccione un componente y, a continuación, ![field-level](assets/select_parent_icon.svg) > **[!UICONTROL Contenedor de formulario adaptable]** y ![cmppr](assets/configure-icon.svg).
-1. En la barra lateral, bajo Nombre de la biblioteca de cliente, agregue la biblioteca de cliente. (`es6customfunctions` en el ejemplo)
+1. Abra el formulario en modo de edición. Para abrir un formulario en modo de edición, seleccione un formulario y seleccione **[!UICONTROL Editar]**.
+1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
+1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
+1. Abra el **[!UICONTROL Básico]** y seleccione el nombre de la **[!UICONTROL categoría de biblioteca de cliente]** en la lista desplegable (en este caso, seleccione `es6customfunctions`).
 
    ![Agregar la biblioteca de cliente de funciones personalizada](/help/forms/assets/clientlib-custom-function.png)
 
-Cree una regla para utilizar una función personalizada en el editor de reglas.
+1. Clic **[!UICONTROL Listo]** .
+
+Ahora puede crear una regla para utilizar funciones personalizadas en el editor de reglas.
 
 <!--
+
+Create a rule to use custom function in the rule editor. 
 
 ### Support for the optional parameters in custom functions{#support-for-optional-parameter}
 
