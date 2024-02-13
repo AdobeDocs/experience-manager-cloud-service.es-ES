@@ -2,9 +2,9 @@
 title: AEM Información general del editor universal para desarrolladores
 description: AEM Si usted es un desarrollador de interesado en cómo funciona el editor universal y cómo utilizarlo en su proyecto, este documento le ofrece una introducción completa al instrumentarlo para que trabaje con el editor universal.
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
-source-git-commit: d7154fcec9cf6e3cb00ce8e434e38544294df165
+source-git-commit: 3dff6fa71c29da70daba80176d2fe51ef1e05200
 workflow-type: tm+mt
-source-wordcount: '3112'
+source-wordcount: '3139'
 ht-degree: 0%
 
 ---
@@ -150,7 +150,7 @@ Debe añadir la biblioteca JavaScript necesaria al componente Página de la apli
 1. Añada la biblioteca JavaScript al final del archivo.
 
    ```html
-   <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js"></script>
+   <script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>
    ```
 
 1. Clic **Guardar todo** y, a continuación, vuelva a cargar el Editor universal.
@@ -183,6 +183,8 @@ Sin embargo, es probable que haya observado que no puede interactuar con la pág
    ```html
    <meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">
    ```
+
+   * Siempre se recomienda la versión más reciente de la biblioteca. Si necesita una versión anterior, consulte el documento [AEM Introducción al editor universal en la documentación de la aplicación de la versión de.](/help/implementing/universal-editor/getting-started.md#alternative)
 
 1. Agregue los metadatos necesarios para la conexión al servicio Editor universal local al final del archivo.
 

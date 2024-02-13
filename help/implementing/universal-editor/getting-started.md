@@ -2,10 +2,10 @@
 title: Introducción al editor universal en AEM
 description: Obtenga información sobre cómo acceder al editor universal y cómo instrumentar la primera aplicación de AEM para utilizarlo.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: f9d584d7b117c24224079f581802f5f126890304
+source-git-commit: 3dff6fa71c29da70daba80176d2fe51ef1e05200
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 73%
+source-wordcount: '921'
+ht-degree: 69%
 
 ---
 
@@ -62,8 +62,15 @@ import "@adobe/universal-editor-cors";
 Si no va a implementar una aplicación React o requiere un procesamiento del lado del servidor, otro método consiste en incluir lo siguiente en el cuerpo del documento.
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
+<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST" async></script>
 ```
+
+Siempre se recomienda la versión más reciente, pero se puede hacer referencia a las versiones anteriores del servicio en caso de cambios importantes.
+
+* `https://universal-editor-service.experiencecloud.live/corslib/LATEST` - La última biblioteca UE CORS
+* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST` - La última biblioteca UE CORS en la versión 2.x
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST` - La última biblioteca UE CORS en la versión 2.1.x
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1`- La versión exacta UE CORS lib 2.1.1
 
 ## Añada las configuraciones de OSGi necesarias {#osgi-configurations}
 
