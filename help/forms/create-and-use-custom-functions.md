@@ -5,9 +5,9 @@ keywords: Agregar una función personalizada, utilizar una función personalizad
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: 94a290964a92f8c6ed353d9c77f3dd3b8a5598a4
+source-git-commit: 28020b05e4aaaa3f066943e0504f05e307c7020b
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '763'
 ht-degree: 22%
 
 ---
@@ -64,11 +64,11 @@ Puede crear una función personalizada con o sin comentarios jsdoc.
             // code to be executed
         }
 ```
+<!--
 
-* **Función de flecha con comentario jsdoc obligatorio**
+* **Arrow function with mandatory jsdoc comment**
 
-Algunos de los ejemplos para crear funciones de flecha son los siguientes:
-
+Some of the examples to create Arrow functions are:
 ```javascript
     /**
     * test function
@@ -82,7 +82,6 @@ Algunos de los ejemplos para crear funciones de flecha son los siguientes:
     };
 ```
 
-<!-- 
     * @param {string=} b another parameter description
       /** */
     testFunction1=(a) => (return a)
