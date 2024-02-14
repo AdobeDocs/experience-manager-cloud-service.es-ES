@@ -3,9 +3,9 @@ title: Validación y depuración mediante las herramientas de Dispatcher
 description: Obtenga información sobre la validación local, la depuración, la estructura de archivos en modo flexible y cómo migrar del modo heredado al modo flexible.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: 2cb57347856568da979b34832ce12cce295841dd
 workflow-type: tm+mt
-source-wordcount: '2971'
+source-wordcount: '3028'
 ht-degree: 1%
 
 ---
@@ -300,7 +300,7 @@ Durante una implementación de Cloud Manager, la variable `httpd -t` también se
 
 >[!NOTE]
 >
-Consulte la [Recarga y validación automáticas](#automatic-loading) para obtener una alternativa eficaz a la ejecución `validate.sh` después de cada modificación de la configuración.
+>Consulte la [Recarga y validación automáticas](#automatic-loading) para obtener una alternativa eficaz a la ejecución `validate.sh` después de cada modificación de la configuración.
 
 ### Fase 1 {#first-phase}
 
@@ -439,8 +439,8 @@ Esta fase comprueba la sintaxis de Apache iniciando Apache HTTPD en un contenedo
 
 >[!NOTE]
 >
-Los usuarios de Windows deben utilizar Windows 10 Professional u otras distribuciones compatibles con Docker. Este requisito es un requisito previo para ejecutar y depurar Dispatcher en un equipo local.
-Para Windows y macOS, Adobe recomienda utilizar Docker Desktop.
+>Los usuarios de Windows deben utilizar Windows 10 Professional u otras distribuciones compatibles con Docker. Este requisito es un requisito previo para ejecutar y depurar Dispatcher en un equipo local.
+>Para Windows y macOS, Adobe recomienda utilizar Docker Desktop.
 
 Esta fase también se puede ejecutar de forma independiente mediante `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
@@ -509,13 +509,13 @@ Los registros para entornos de nube se exponen a través del servicio de registr
 
 >[!NOTE]
 >
-AEM Para los entornos en los que se ha as a Cloud Service el recurso, la depuración es el nivel de detalle máximo. El nivel de registro de seguimiento no es compatible, por lo que debe evitar configurarlo cuando trabaje en entornos de nube.
+>AEM Para los entornos en los que se ha as a Cloud Service el recurso, la depuración es el nivel de detalle máximo. El nivel de registro de seguimiento no es compatible, por lo que debe evitar configurarlo cuando trabaje en entornos de nube.
 
 ### Recarga y validación automáticas {#automatic-reloading}
 
 >[!NOTE]
 >
-Debido a una limitación del sistema operativo Windows, esta función solo está disponible para usuarios de macOS y Linux®.
+>Debido a una limitación del sistema operativo Windows, esta función solo está disponible para usuarios de macOS y Linux®.
 
 En lugar de ejecutar la validación local (`validate.sh`) e iniciando el contenedor de docker (`docker_run.sh`), cada vez que se modifique la configuración, se puede ejecutar alternativamente el `docker_run_hot_reload.sh` script. La secuencia de comandos observa cualquier cambio en la configuración y la vuelve a cargar automáticamente y vuelve a ejecutar la validación. Con esta opción, puede ahorrar una cantidad de tiempo considerable durante la depuración.
 
@@ -545,6 +545,25 @@ Cloud manager validator 2.0.43
 2022/07/04 09:53:55 No issues found
 INFO Mon Jul  4 09:53:55 UTC 2022: Testing with fresh base configuration files.
 INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apache/2.4.54 (Unix)
+```
+
+### Inserción de variables de entorno personalizadas {#environment-variables}
+
+Las variables de entorno personalizadas se pueden usar con el SDK de Dispatcher configurándolas en un archivo independiente y haciendo referencia a ellas en la `ENV_FILE` antes de iniciar el Dispatcher local.
+
+Un archivo con variables de entorno personalizadas tendría este aspecto:
+
+```
+COMMERCE_ENDPOINT=commerce-host
+AEM_HTTP_PROXY_HOST=host.docker.internal
+AEM_HTTP_PROXY_PORT=8000
+```
+
+Y se puede utilizar en el SDK local de Dispatcher con los siguientes comandos:
+
+```
+export ENV_FILE=custom.env
+./bin/docker_run.sh src/dispatcher docker.for.mac.localhost:4503 8080
 ```
 
 ## Diferentes configuraciones de Dispatcher por entorno {#different-dispatcher-configurations-per-environment}
@@ -620,7 +639,7 @@ Con la versión Cloud Manager 2021.7.0, los nuevos programas de Cloud Manager ge
 
    >[!NOTE]
    >
-   En el modo flexible, debe utilizar rutas relativas en lugar de rutas absolutas.
+   >En el modo flexible, debe utilizar rutas relativas en lugar de rutas absolutas.
 1. **Implementar en producción:**
    * Confirmar el archivo `opt-in/USE_SOURCES_DIRECTLY` a una rama de Git implementada por la canalización de producción en los entornos de ensayo y producción de la nube.
    * Utilice Cloud Manager para implementar en el ensayo.
