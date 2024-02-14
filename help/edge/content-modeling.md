@@ -1,10 +1,10 @@
 ---
 title: AEM Modelado de contenido para la creación de con proyectos de Edge Delivery Services
 description: AEM Aprenda cómo funciona el modelado de contenido para la creación de contenido con proyectos de Edge Delivery Services y para crear su propio contenido.
-source-git-commit: 8f3c7524ae8ee642a9aee5989e03e6584a664eba
+source-git-commit: e9c882926baee001170bad2265a1085e03cdbedf
 workflow-type: tm+mt
-source-wordcount: '1940'
-ht-degree: 1%
+source-wordcount: '2097'
+ht-degree: 0%
 
 ---
 
@@ -109,16 +109,19 @@ Para cada bloque, el desarrollador:
 
 * Debe utilizar el `core/franklin/components/block/v1/block` AEM tipo de recurso, la implementación genérica de la lógica de bloque en la aplicación de tipo de recurso de tipo de recurso de tipo de.
 * Debe definir el nombre del bloque, que se procesará en el encabezado de tabla del bloque.
+   * El nombre del bloque se utiliza para recuperar el estilo y la secuencia de comandos adecuados para decorar el bloque.
 * Puede definir un [ID de modelo.](/help/implementing/universal-editor/field-types.md#model-structure)
+   * El ID de modelo es una referencia al modelo del componente, que define los campos disponibles para el autor en el carril de propiedades.
 * Puede definir un [ID de filtro.](/help/implementing/universal-editor/customizing.md#filtering-components)
+   * El ID de filtro es una referencia al filtro del componente, que permite cambiar el comportamiento de creación, por ejemplo, limitando qué elementos secundarios se pueden añadir al bloque o la sección, o qué funciones RTE están habilitadas.
 
-AEM Toda esta información se almacena en los datos cuando se agrega un bloque de a una página de la lista de direcciones de correo electrónico.
+AEM Toda esta información se almacena en los datos cuando se agrega un bloque de a una página de la lista de direcciones de correo electrónico. Si falta el tipo de recurso o el nombre del bloque, el bloque no se procesará en la página.
 
 >[!WARNING]
 >
->AEM Si bien es posible, no es necesario implementar componentes personalizados de. Los componentes para los Edge Delivery Services AEM proporcionados por los son suficientes y ofrecen ciertas barandillas de protección para facilitar el desarrollo.
+>AEM Aunque es posible, no es necesario ni recomendado implementar componentes personalizados de la. Los componentes para los Edge Delivery Services AEM proporcionados por los son suficientes y ofrecen ciertas barandillas de protección para facilitar el desarrollo.
 >
->Por este motivo, Adobe AEM no recomienda utilizar tipos de recursos de personalizados.
+>AEM Los componentes proporcionados por el usuario representan un marcado que se puede consumir por [helix-html2md](https://github.com/adobe/helix-html2md) al publicar en Edge Delivery Services y por [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) al cargar una página en el editor universal. AEM El marcado es el contrato estable entre el usuario y las demás partes del sistema, y no permite personalizaciones. Por este motivo, los proyectos no deben cambiar los componentes y no deben utilizar componentes personalizados.
 
 ### Estructura del bloque {#block-structure}
 
@@ -130,7 +133,9 @@ En la forma más sencilla, un bloque procesa cada propiedad en una sola fila/col
 
 En el ejemplo siguiente, la imagen se define primero en el modelo y el texto segundo. Por lo tanto, se representan con la imagen primero y el texto segundo.
 
-##### Data {#data-simple}
+>[!BEGINTABS]
+
+>[!TAB Datos]
 
 ```json
 {
@@ -142,7 +147,7 @@ En el ejemplo siguiente, la imagen se define primero en el modelo y el texto seg
 }
 ```
 
-##### Marcado {#markup-simple}
+>[!TAB Marcado]
 
 ```html
 <div class="hero">
@@ -161,6 +166,20 @@ En el ejemplo siguiente, la imagen se define primero en el modelo y el texto seg
 </div>
 ```
 
+>[!TAB Tabla]
+
+```text
++---------------------------------------------+
+| Hero                                        |
++=============================================+
+| ![Helix - a shape like a corkscrew][image0] |
++---------------------------------------------+
+| # Welcome to AEM                            |
++---------------------------------------------+
+```
+
+>[!ENDTABS]
+
 Es posible que observe que algunos tipos de valores permiten inferir semántica en el marcado y que las propiedades se combinan en celdas individuales. Este comportamiento se describe en la sección [Inferencia de tipo.](#type-inference)
 
 #### Bloque clave-valor {#key-value}
@@ -171,7 +190,9 @@ Sin embargo, en otros casos, el bloque se lee como una configuración de par cla
 
 Un ejemplo de esto es el [metadatos de sección.](/help/edge/developer/markup-sections-blocks.md#sections) En este caso de uso, el bloque se puede configurar para que se represente como una tabla de pares clave-valor. Consulte la sección [Secciones y metadatos de sección](#sections-metadata) para obtener más información.
 
-##### Data {#data-key-value}
+>[!BEGINTABS]
+
+>[!TAB Datos]
 
 ```json
 {
@@ -184,7 +205,7 @@ Un ejemplo de esto es el [metadatos de sección.](/help/edge/developer/markup-se
 }
 ```
 
-##### Marcado {#markup-key-value}
+>[!TAB Marcado]
 
 ```html
 <div class="featured-articles">
@@ -203,13 +224,31 @@ Un ejemplo de esto es el [metadatos de sección.](/help/edge/developer/markup-se
 </div>
 ```
 
+>[!TAB Tabla]
+
+```text
++-----------------------------------------------------------------------+
+| Featured Articles                                                     |
++=======================================================================+
+| source   | [/content/site/articles.json](/content/site/articles.json) |
++-----------------------------------------------------------------------+
+| keywords | Developer,Courses                                          |
++-----------------------------------------------------------------------+
+| limit    | 4                                                          |
++-----------------------------------------------------------------------+
+```
+
+>[!ENDTABS]
+
 #### Bloques de contenedor {#container}
 
 Ambas estructuras anteriores tienen una sola dimensión: la lista de propiedades. Los bloques contenedores permiten agregar elementos secundarios (normalmente del mismo tipo o modelo) y, por lo tanto, son bidimensionales. Estos bloques siguen admitiendo sus propias propiedades, representadas como filas con una sola columna en primer lugar. Pero también permiten agregar elementos secundarios, para los que cada elemento se procesa como fila y cada propiedad como columna dentro de esa fila.
 
 En el siguiente ejemplo, un bloque acepta una lista de iconos vinculados como elementos secundarios, donde cada icono vinculado tiene una imagen y un vínculo. Observe el [ID de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) se establece en los datos del bloque para hacer referencia a la configuración del filtro.
 
-##### Data {#data-container}
+>[!BEGINTABS]
+
+>[!TAB Datos]
 
 ```json
 {
@@ -232,7 +271,7 @@ En el siguiente ejemplo, un bloque acepta una lista de iconos vinculados como el
 }
 ```
 
-##### Marcado {#markup-container}
+>[!TAB Marcado]
 
 ```html
 <div class="our-partners">
@@ -263,6 +302,22 @@ En el siguiente ejemplo, un bloque acepta una lista de iconos vinculados como el
   </div>
 </div>
 ```
+
+>[!TAB Tabla]
+
+```text
++------------------------------------------------------------ +
+| Our Partners                                                |
++=============================================================+
+| Our community of partners is ...                            |
++-------------------------------------------------------------+
+| ![Icon of Foo][image0] | [https://foo.com](https://foo.com) |
++-------------------------------------------------------------+
+| ![Icon of Bar][image1] | [https://bar.com](https://bar.com) |
++-------------------------------------------------------------+
+```
+
+>[!ENDTABS]
 
 ### Creación de modelos de contenido semántico para bloques {#creating-content-models}
 
@@ -300,7 +355,9 @@ El colapso de campo es el mecanismo para combinar varios valores de campo en un 
 
 ##### Imágenes {#image-collapse}
 
-###### Data {#data-image}
+>[!BEGINTABS]
+
+>[!TAB Datos]
 
 ```json
 {
@@ -309,7 +366,7 @@ El colapso de campo es el mecanismo para combinar varios valores de campo en un 
 }
 ```
 
-###### Marcado {#markup-image}
+>[!TAB Marcado]
 
 ```html
 <picture>
@@ -317,9 +374,19 @@ El colapso de campo es el mecanismo para combinar varios valores de campo en un 
 </picture>
 ```
 
+>[!TAB Tabla]
+
+```text
+![A red car on a road][image0]
+```
+
+>[!ENDTABS]
+
 ##### Vínculos y botones {#links-buttons-collapse}
 
-###### Data {#data-links-buttons}
+>[!BEGINTABS]
+
+>[!TAB Datos]
 
 ```json
 {
@@ -330,7 +397,7 @@ El colapso de campo es el mecanismo para combinar varios valores de campo en un 
 }
 ```
 
-###### Marcado {#markup-links-buttons}
+>[!TAB Marcado]
 
 No `linkType`, o `linkType=default`
 
@@ -354,9 +421,21 @@ No `linkType`, o `linkType=default`
 </em>
 ```
 
+>[!TAB Tabla]
+
+```text
+[adobe.com](https://www.adobe.com "Navigate to adobe.com")
+**[adobe.com](https://www.adobe.com "Navigate to adobe.com")**
+_[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
+```
+
+>[!ENDTABS]
+
 ##### Encabezados {#headings-collapse}
 
-###### Data {#data-headings}
+>[!BEGINTABS]
+
+>[!TAB Datos]
 
 ```json
 {
@@ -365,19 +444,31 @@ No `linkType`, o `linkType=default`
 }
 ```
 
-###### Marcado {#markup-headings}
+>[!TAB Marcado]
 
 ```html
 <h2>Getting started</h2>
 ```
 
+>[!TAB Tabla]
+
+```text
+## Getting started
+```
+
+>[!ENDTABS]
+
 #### Agrupación de elementos {#element-grouping}
 
 While [contracción de campo](#field-collapse) Cuando se trata de combinar varias propiedades en un único elemento semántico, la agrupación de elementos consiste en concatenar varios elementos semánticos en una sola celda. Esto resulta especialmente útil en casos de uso en los que el autor debe estar restringido en el tipo y el número de elementos que puede crear.
 
-Por ejemplo, el autor solo debe crear un subtítulo, un título y una descripción de párrafo único combinados con un máximo de dos botones de llamada a la acción. Al agrupar estos elementos, se obtiene un marcado semántico al que se puede dar estilo sin tener que realizar ninguna acción.
+Por ejemplo, un componente teaser puede permitir al autor crear únicamente un subtítulo, un título y una descripción de párrafo único combinados con un máximo de dos botones de llamada a la acción. Al agrupar estos elementos, se obtiene un marcado semántico al que se puede dar estilo sin tener que realizar ninguna acción.
 
-##### Data {#data-grouping}
+La agrupación de elementos utiliza una convención de nombres, en la que el nombre del grupo se separa de cada propiedad del grupo mediante un guion bajo. La contracción de campos de las propiedades de un grupo funciona como se describió anteriormente.
+
+>[!BEGINTABS]
+
+>[!TAB Datos]
 
 ```json
 {
@@ -397,7 +488,7 @@ Por ejemplo, el autor solo debe crear un subtítulo, un título y una descripci�
 }
 ```
 
-##### Marcado {#markup-grouping}
+>[!TAB Marcado]
 
 ```html
 <div class="teaser">
@@ -419,6 +510,24 @@ Por ejemplo, el autor solo debe crear un subtítulo, un título y una descripci�
   </div>
 </div>
 ```
+
+>[!TAB Tabla]
+
+```text
++-------------------------------------------------+
+| Teaser                                          |
++=================================================+
+| ![A group of people sitting on a stage][image0] |
++-------------------------------------------------+
+| Adobe Experience Cloud                          |
+| ## Welcome to AEM                               |
+| Join us in this ask me everything session ...   |
+| [More Details](https://link.to/more-details)    |
+| [RSVP](https://link.to/sign-up)                 |
++-------------------------------------------------+
+```
+
+>[!ENDTABS]
 
 ## Secciones y metadatos de sección {#sections-metadata}
 
@@ -500,18 +609,17 @@ AEM Es posible definir metadatos por ruta o por patrón de ruta de una manera si
 
 Para crear dicha tabla, cree una página y utilice la plantilla Metadatos en la consola Sitios.
 
->[!NOTE]
->
->Al editar la hoja de cálculo de metadatos, asegúrese de cambiar a **Previsualizar** ya que la creación se produce en la propia página, no dentro del editor.
-
-En las propiedades de página de la hoja de cálculo, defina los campos de metadatos que necesite junto con la dirección URL. AEM A continuación, agregue metadatos por ruta de página o patrón de ruta de página, donde el campo URL se relaciona con las rutas públicas asignadas y no con la ruta de contenido en la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la.
+En las propiedades de página de la hoja de cálculo, defina los campos de metadatos que necesite junto con la dirección URL. A continuación, agregue metadatos por ruta de página o patrón de ruta de página.
 
 Asegúrese de que la hoja de cálculo también se añada a la asignación de ruta antes de publicarla.
 
-```text
-mappings:
-  - /content/site/:/
-  - /content/site/metadata:/metadata.json
+```json
+{
+  "mappings": [
+    "/content/site/:/",
+    "/content/site/metadata:/metadata.json"
+  ]
+}
 ```
 
 ### Propiedades de página {#page-properties}
