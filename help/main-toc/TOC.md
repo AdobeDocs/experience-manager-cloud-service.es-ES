@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6966486b9bf919fecb8d625ddb92ce1bb1a98291
+source-git-commit: d76273ddcbcf5013713e515e39dde8f42bbbf425
 workflow-type: tm+mt
-source-wordcount: '4640'
+source-wordcount: '4648'
 ht-degree: 98%
 
 ---
@@ -89,6 +89,8 @@ ht-degree: 98%
          + [Notas de la versión de mantenimiento de 2023.1.0](/help/release-notes/maintenance/2023/2023-1-0.md)
    + Notas de la versión de Cloud Manager {#cloud-manager}
       + [Notas de la versión actual](/help/implementing/cloud-manager/release-notes/current.md)
+      + 2024 {#2024}
+         + [Notas de la versión 2024.1.0](/help/implementing/cloud-manager/release-notes/2024/2024-1-0.md)
       + 2023 {#2023}
          + [Notas de la versión 2023.12.0](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md)
          + [Notas de la versión 2023.11.0](/help/implementing/cloud-manager/release-notes/2023/2023-11-0.md)
@@ -915,6 +917,7 @@ ht-degree: 98%
          + [Configuración de una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [Configuración de una canalización que no es de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [Administración de canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
+         + [Variables de canalización](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [Implementación del código](/help/implementing/cloud-manager/deploy-code.md)
       + Comprender los resultados de la prueba {#test-results}
          + [Información general](/help/implementing/cloud-manager/overview-test-results.md)
