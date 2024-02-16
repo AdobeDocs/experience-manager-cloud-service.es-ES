@@ -2,10 +2,10 @@
 title: Acceder y administrar registros
 description: Obtenga información sobre cómo acceder y administrar registros para ayudarle en el proceso de desarrollo en AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 178af74512e74ff401588b68c73fa4661acec704
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 71%
+source-wordcount: '346'
+ht-degree: 68%
 
 ---
 
@@ -43,8 +43,6 @@ Para descargar registros, haga lo siguiente:
 También puede acceder a sus registros desde la página **Entornos**.
 
 ![Registros de la pantalla Entornos](assets/download-logs.png)
-
-
 
 ## Registros a través de la API {#logs-through-api}
 
@@ -86,6 +84,10 @@ Environment Id Service    Name
 ```
 
 ### Recursos adicionales {#resources}
+
+>[!TIP]
+>
+>Desproteger [este recurso de vídeo](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) AEM para obtener más información acerca de la depuración de los as a Cloud Service.
 
 Consulte los siguientes recursos adicionales para obtener más información sobre la API de Cloud Manager y la CLI de Adobe I/O:
 
