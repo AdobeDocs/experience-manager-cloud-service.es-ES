@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 8546e6286bea5f603b1e011a76c206b178337ab7
+source-git-commit: 3e1e1eba822bf3156ef563b88269cdef2298e951
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1241'
 ht-degree: 6%
 
 ---
@@ -21,28 +21,24 @@ ht-degree: 6%
 
 Por ejemplo, con Workfront Fusion puede crear un escenario para recopilar datos con formularios adaptables, procesar los datos y enviarlos a un almacén de datos para su archivo. Una vez configurado un escenario, Workfront Fusion ejecuta automáticamente las tareas cada vez que un usuario rellena un formulario, actualizando el almacén de datos sin problemas.
 
-AEM as a Cloud Service ofrece varias acciones de envío listas para usar para administrar los envíos de formularios. Puede obtener más información sobre estas opciones en la [Acción de envío del formulario adaptable](/help/forms/configure-submit-actions-core-components.md)  artículo.
+AEM Forms as a Cloud Service proporciona un conector OOTB para conectarse y enviar un formulario adaptable a Adobe Workfront Fusion. El envío de un formulario a Adobe Workfront Fusion puede ofrecer varias ventajas:
+* Permite la transferencia perfecta de datos de los envíos de formularios a los flujos de trabajo de Workfront Fusion.
+* Ayuda a automatizar varias tareas activadas por los envíos de formularios. Esto puede incluir el inicio de proyectos, la asignación de tareas a miembros específicos del equipo, el envío de notificaciones y la actualización de los estados de los proyectos, todo sin intervención manual.
+* Todos los envíos de formularios capturados en Workfront Fusion proporcionan una única fuente fiable para la información relacionada con el proyecto
 
 
-## Ventajas de utilizar Adobe Workfront Fusion{#advatages-of-workfront-fusion}
+<!--  AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.-->
 
-Algunas de las ventajas de utilizar Adobe Workfront Fusion con AEM Forms:
-
-* Envío de datos capturados con Forms adaptable a un escenario de Workfront Fusion
-* Automatizar tareas que sean menos propensas a errores.
-* Personalizar requisitos específicos de una organización que no se incluyen directamente en Workfront.
-* Administrar lógicas sencillas y decisiones sencillas como, por ejemplo, instrucciones if/then.
+>[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
 ## Requisitos previos para integrar AEM Forms con Adobe Workfront Fusion {#prerequisites}
 
-Los requisitos previos necesarios para conectar Workfront Fusion a AEM Forms son:
+Para establecer una conexión entre Workfront Fusion y AEM Forms, es necesario lo siguiente:
 
-* Un válido [Licencia de Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* Un válido [Licencia de Workfront y Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
 * AEM Un usuario con derecho de acceso a la aplicación [Consola de desarrollador](https://my.cloudmanager.adobe.com/) hasta [recuperar las credenciales del servicio](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=es).
 
 ## Integración de AEM Forms con Adobe Workfront Fusion
-
->[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
 Para conectar [fusión de Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) Para configurar un formulario, realice los siguientes pasos:
 
