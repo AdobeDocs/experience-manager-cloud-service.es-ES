@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 4a41de9da557be562bb2ff5773c7954f76a9acc7
 workflow-type: tm+mt
 source-wordcount: '725'
-ht-degree: 76%
+ht-degree: 97%
 
 ---
 
@@ -25,12 +25,12 @@ AEM La fecha de lanzamiento de la versión 2024.2.0 de Cloud Manager en la versi
 
 ## Novedades {#what-is-new}
 
-* Cloud Manager ahora admite la administración de autoservicio de [variables de canalización](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) a través de la IU de Cloud Manager.
-* [El servicio de previsualización](/help/implementing/cloud-manager/manage-environments.md#access-preview-sevice) ahora se habilitará para los entornos creados antes de que se implementara la función del servicio de vista previa.
-* [Permisos personalizados de Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) le permite crear perfiles de permisos personalizados con permisos configurables para restringir el acceso a programas, canalizaciones y entornos para los usuarios de Cloud Manager.
-   * Esta función comenzó a implementarse por fases con el [Versión de diciembre de 2023](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md) y se completará el 20 de febrero de 2024.
-* Para todos los entornos nuevos, la variable [perfil de producto del entorno](/help/onboarding/aem-cs-team-product-profiles.md) Los nombres de serán un formato más fácil de usar, basado en una combinación de descripción de perfil, tipo de entorno, número y número de programa.
-* [El entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) se ha actualizado a la versión 3.9.4 de Maven y a las versiones jdk-11.0.22 y jdk1.8.0_401 de JDK.
+* Cloud Manager ahora admite la gestión de autoservicio de [variables de canalización](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) a través de la IU de Cloud Manager.
+* A partir de ahora, [el servicio de vista previa](/help/implementing/cloud-manager/manage-environments.md#access-preview-sevice) se habilitará en los entornos creados antes de que se implementara la función del servicio de vista previa.
+* Los [permisos personalizados de Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) le permiten crear perfiles de permisos personalizados con permisos configurables para restringir el acceso a programas, canalizaciones y entornos para los usuarios de Cloud Manager.
+   * Esta función comenzó a implementarse de manera gradual con la [versión de diciembre de 2023](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md) y se completará el 20 de febrero de 2024.
+* En todos los entornos nuevos, los nombres del [ perfil de producto del entorno](/help/onboarding/aem-cs-team-product-profiles.md) tendrán un formato más fácil de usar basado en una combinación de descripción de perfil, tipo de entorno, número y número de programa.
+* [El entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) se ha actualizado a la versión 3.9.4 de Maven y a las versiones de JDK jdk-11.0.22 y jdk1.8.0_401.
 
 ## Programa para primeros usuarios {#early-adoption}
 
@@ -73,4 +73,4 @@ El tablero utiliza Google Lighthouse, una herramienta automatizada de código ab
 
 ## Correcciones de errores {#bug-fixes}
 
-* El JDK de los contenedores de compilación se ha actualizado a una versión que resuelve [JDK-8313765.](https://bugs.openjdk.org/browse/JDK-8313765)
+* El JDK de los contenedores de la versión se ha actualizado a una versión que soluciona [JDK-8313765.](https://bugs.openjdk.org/browse/JDK-8313765)
