@@ -4,9 +4,9 @@ description: ¡Crea formas perfectas, rápido! ⚡ la creación basada en docume
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: f37a99cd5cbfb745cb591e3be2a46a5f52139cb2
+source-git-commit: b94bd6cd70af541444fda1d03f502b4588fd879b
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '924'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Estos formularios envían datos directamente a un archivo de Microsoft Excel o G
 
 ## Requisitos previos
 
-* Tiene una cuenta de Github.
+* Tiene una cuenta de GitHub.
 * Tiene acceso a las hojas de Google o a Microsoft SharePoint.
 * Comprenderá los conceptos básicos de Git, HTML, CSS y JavaScript.
 * Tiene Node y NPM instalados para el desarrollo local.
@@ -36,14 +36,14 @@ Estos formularios envían datos directamente a un archivo de Microsoft Excel o G
 
 AEM Forms Edge Delivery incluye un bloque de formulario para ayudarle a crear fácilmente formularios para capturar y almacenar los datos capturados. Para incluir el bloque de formulario en el proyecto de servicio de entrega de Edge:
 
-1. Vaya a la carpeta del proyecto Edge Delivery Service (EDS) en su entorno de desarrollo local.
+1. Vaya a `blocks` en la carpeta del proyecto del servicio de entrega de Edge (EDS) en su entorno de desarrollo local.
 
 
    ```Shell
-   cd [EDS Project folder]
+   cd [EDS Project folder]/blocks
    ```
 
-1. Cree una carpeta llamada `form` en el directorio del proyecto EDS. Por ejemplo, en el directorio del proyecto EDS denominado `Portal`, cree una carpeta llamada `form`.
+1. Cree una carpeta llamada `form` en el `blocks` directorio. Por ejemplo, en el directorio del proyecto EDS denominado `Portal`, cree una carpeta llamada `form`.
 
    ```Shell
    mkdir form
@@ -54,62 +54,82 @@ AEM Forms Edge Delivery incluye un bloque de formulario para ayudarle a crear f�
 
    ```shell
    cp -R <source:path of the form block> <destination: path of the form folder created in the previous step>
-   
-   For example
-   
-   cp -R Documents/afb/blocks/form Documents/portal/blocks/
    ```
+
+   **Por ejemplo,**
+
+
+   ```shell
+   cp -R ../../afb/blocks/form ../../fantastic-computing-machine/blocks 
+   ```
+
+
 
 1. Compruebe la carpeta &quot;formulario&quot; y los archivos subyacentes en el proyecto de servicio de entrega de Edge en GitHub.
 
    ```Shell
+   cd ..
    git add .
    git commit -m "Added form block"
    git push origin
    ```
 
-   Ya está listo para procesar un formulario EDS.
+   El bloque Formulario se añade al proyecto EDS. Ahora puede crear un formulario y agregarlo al sitio.
 
    >[!NOTE]
    >
-   > * Si la generación del proyecto de solicitud de extracción/finalizaciones falla y aparece un error relacionado con la importación de `franklin-lib.js` , actualice la instrucción import para hacer referencia al archivo `aem.js` en lugar del archivo `franklin-lib.js` archivo.
-   > * Si encuentra algún error de linting, no dude en ignorarlo. Para omitir las comprobaciones de vinculación, vaya al archivo package.json y actualice la secuencia de comandos &quot;lint&quot; desde `"lint": "npm run lint:js && npm run lint:css"` hasta `"lint": "echo 'skipping linting for now'"`. A continuación, confirme los cambios en el archivo package.json.
+   > * Si aparece el error &quot;No se puede resolver la ruta al módulo &quot;&#39;../../scripts/lib-franklin.js&#39;&quot;, abra el `[EDS Project]/blocks/forms/form.js` archivo. En la instrucción import, reemplace `franklin-lib.js` archivo con la variable `aem.js` archivo.
+   > * Si encuentra algún error de linting, no dude en ignorarlo. Para omitir las comprobaciones de linting, abra el `[EDS Project]\package.json` y actualice el script &quot;lint&quot; desde `"lint": "npm run lint:js && npm run lint:css"` hasta `"lint": "echo 'skipping linting for now'"`. Guarde el archivo y configúrelo en su proyecto de GitHub.
 
 ## Crear un formulario con Microsoft Excel o Google Sheet {#create-a-form-for-an-eds-project}
 
-Puede resultar útil permitir a los desarrolladores de sitios web crear formularios y elegir qué información recopilar de los visitantes del sitio web. En lugar de procesos complejos, los autores pueden configurar fácilmente un formulario con una hoja de cálculo. Deben agregar los encabezados de columna correctos y, a continuación, utilizar un bloque de formulario para mostrarlo en el sitio web sin ningún inconveniente. Para crear un formulario:
+En lugar de procesos complejos, puede crear fácilmente un formulario con una hoja de cálculo. Para empezar, puede agregar las filas y los encabezados de columna a una hoja de cálculo, donde cada fila define un campo de formulario y cada encabezado de columna define las propiedades de los campos de formulario correspondientes.
 
-1. Cree un libro o una hoja de Google AEM de Microsoft Excel en cualquier lugar bajo el directorio del proyecto de entrega perimetral de en Microsoft SharePoint o Google Drive.
+Por ejemplo, en la siguiente hoja de cálculo, las filas definen los campos de un `contact us` el encabezado de formulario y columna define las propiedades de los campos correspondientes.
 
-1. AEM Asegúrese de que el usuario de la (por ejemplo, `helix@adobe.com`) configurado para el proyecto tiene permisos de edición para la hoja.
+![hoja de cálculo](/help/edge/assets/contact-us-form-spreadsheet.png)
 
-1. Abra el libro que ha creado y cambie el nombre de la hoja predeterminada a &quot;shared-default&quot;.
+Para crear un formulario:
 
-   ![cambiar el nombre de la hoja predeterminada por &quot;shared-default&quot;](/help/edge/assets/rename-sheet-to-helix-default.png)
+1. AEM Abra la carpeta del proyecto Entrega de Edge de la cuenta de la cuenta de usuario en Microsoft SharePoint o Google Drive.
 
-1. Copie el contenido del [hoja de cálculo](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link) a su propia hoja de cálculo.
+1. Cree un libro o una hoja de Google AEM de Microsoft Excel en cualquier parte bajo el directorio del proyecto de entrega perimetral de. Por ejemplo, cree una hoja de cálculo llamada `contact-us` AEM en el directorio de proyectos de entrega de Edge en Google Drive.
 
-   ![hoja de cálculo](/help/edge/assets/contact-us-form-spreadsheet.png)
+1. AEM Asegúrese de que la hoja se comparte con el usuario (por ejemplo, si es un usuario de ). `helix@adobe.com`) [configurado para su proyecto](https://www.aem.live/docs/setup-customer-sharepoint) y el usuario tiene permisos de edición para la hoja.
+
+1. Abra la hoja de cálculo que ha creado y cambie el nombre de la hoja predeterminada a &quot;shared-default&quot;.
+
+   ![cambiar el nombre de la hoja predeterminada por &quot;shared-default&quot;](/help/edge/assets/rename-sheet-to-shared-default.png)
+
+1. Para agregar los campos del formulario, agregue los encabezados de filas y columnas al `shared-default` hoja, donde cada fila define un campo de formulario y cada encabezado de columna define el [propiedades](/help/edge/docs/forms/eds-form-field-properties)) de los campos de formulario correspondientes.
+
+   Para empezar rápidamente, puede copiar el contenido del [hoja de cálculo](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link) a la hoja de cálculo.
+
+   >[!VIDEO](https://video.tv.adobe.com/v/3427468?quality=12&learn=on)
 
 1. Uso [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para obtener una vista previa y publicar la hoja.
+
+   ![Utilizar el AEM Sidekick para obtener una vista previa y publicar la hoja](/help/edge/assets/preview-form.png)
 
    Al obtener una vista previa y publicar, el explorador abre nuevas pestañas que muestran el contenido de la hoja en formato JSON. Asegúrese de tomar nota de la dirección URL activa, ya que es necesaria para procesar el formulario más adelante.
 
    El formato de la URL es el siguiente:
 
-   ```shell
+   ```JSON
    https://<branch>--<repository>--<owner>.hlx.live/<form>.json
    
    For example, https://main--portal--wkndforms.hlx.live/contact-us.json
    ```
 
+
+
 ## Vista previa del formulario mediante la página del servicio de entrega de Edge (EDS) {#add-a-form-to-your-eds-page}
 
-Hasta ahora, ha habilitado el bloque de formulario para el proyecto EDS y ha preparado la estructura del formulario. Ahora, para incluir el formulario en la página EDS y procesarlo:
+Hasta ahora, ha habilitado el bloque de formulario para el proyecto EDS y ha preparado la estructura del formulario. Ahora, para obtener una vista previa del formulario:
 
 1. AEM Vaya al directorio del proyecto de entrega de Edge de la red de distribución de la red en Microsoft SharePoint o Google Drive.
 
-1. Para agregar el formulario a una página, abra el archivo doc correspondiente. Por ejemplo, abra el archivo de índice.
+1. Cree o abra un archivo doc para alojar el formulario. Por ejemplo, abra el archivo de índice.
 
 1. Vaya a la ubicación deseada dentro del documento en el que desea agregar el formulario.
 
@@ -117,24 +137,30 @@ Hasta ahora, ha habilitado el bloque de formulario para el proyecto EDS y ha pre
 
    ![](/help/edge/assets/form-block-in-sites-page-example.png)
 
-   En la segunda fila, incluya la dirección URL anotada en la sección anterior como hipervínculo.
+   En la segunda fila, incluya la dirección URL anotada en la sección anterior como hipervínculo. Puede utilizar la URL de vista previa (URL .page) o la URL de publicación (.live). La URL de vista previa se puede utilizar mientras se crea o prueba el formulario y la URL de publicación para producción.
 
-1. Uso [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para obtener una vista previa y publicar la página. Se procesará el formulario.
+   >[!IMPORTANT]
+   >
+   >
+   > Asegúrese de que la dirección URL no se mencione como texto sin formato. Debe añadirse como hipervínculo.
 
-   Por ejemplo, este es el formulario basado en [hoja de cálculo](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link):
+1. Uso [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para previsualizar la página. La página ahora muestra el formulario. Por ejemplo, este es el formulario basado en [hoja de cálculo](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link):
 
 
-   ![Contáctenos (formulario EDS)](/help/edge/assets/eds-form.png)
+   ![Formulario EDS de ejemplo](/help/edge/assets/eds-form.png)
 
-   El bloque de formulario procesa el formulario, pero aún no está listo para aceptar los datos. Al hacer clic en el botón Enviar, se produce un error similar al siguiente:
+   Ahora, rellene el formulario y haga clic en el botón Enviar . Se producirá un error similar al siguiente, ya que la hoja de cálculo aún no está configurada para aceptar los datos.
 
    ![error al enviar el formulario](/help/edge/assets/form-error.png)
 
-   [Preparar la hoja para aceptar datos](/help/edge/docs/forms/submit-forms.md). Puede enviar los datos a la hoja después de prepararlos para aceptar los datos.
+
+   El siguiente paso es [preparar la hoja de cálculo para aceptar datos](/help/edge/docs/forms/submit-forms.md).
+
 
 
 ## Más información
 
+* [Propiedades del campo de formulario](/help/edge/docs/forms/eds-form-field-properties)
 * [Creación y previsualización de un formulario](/help/edge/docs/forms/create-forms.md)
 * [Habilitar formulario para enviar datos](/help/edge/docs/forms/submit-forms.md)
 * [Publicar un formulario en la página de Sites](/help/edge/docs/forms/publish-eds-forms.md)
