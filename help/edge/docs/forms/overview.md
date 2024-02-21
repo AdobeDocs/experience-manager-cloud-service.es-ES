@@ -4,9 +4,9 @@ description: El servicio de entrega perimetral de AEM Forms está diseñado para
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: b94bd6cd70af541444fda1d03f502b4588fd879b
+source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ El servicio de entrega perimetral de AEM Forms le ayuda a:
 
 * **Simplificar la creación y los envíos**: cree formularios con herramientas conocidas como Microsoft Excel o Hojas de cálculo de Google en lugar de los entornos de creación tradicionales. Envíe formularios directamente a las hojas de cálculo de Microsoft Excel o Google y utilice su ecosistema para procesar fácilmente los datos enviados.
 
-## Introducción al servicio de entrega de AEM Forms Edge
+## Empiece con lo básico
 
 <div>
 

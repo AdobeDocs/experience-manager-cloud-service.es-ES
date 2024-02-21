@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
+source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
 workflow-type: tm+mt
-source-wordcount: '4711'
-ht-degree: 96%
+source-wordcount: '4692'
+ht-degree: 97%
 
 ---
 
@@ -810,13 +810,13 @@ ht-degree: 96%
          + [Publicar un formulario en la página de Sites](/help/edge/docs/forms/publish-eds-forms.md)
          + [Agregar validaciones a campos de formulario](/help/edge/docs/forms/validate-forms.md)
          + [Cambiar temáticas y estilo de formulario](/help/edge/docs/forms/style-theme-forms.md)
-      + Funciones avanzadas {#advanced-features-eds-forms}
-         + [Crear y agregar fragmentos de formulario a un formulario](/help/edge/docs/forms/form-fragments.md)
-         + [Traducción de un formulario](/help/edge/docs/forms/translate-forms.md)
-         + [Agregar secciones repetibles a un formulario](/help/edge/docs/forms/repeatable-forms.md)
-         + [Aplicar reCAPTCHA a un formulario](/help/edge/docs/forms/recaptacha-forms.md)
-         + [Crear componentes personalizados](/help/edge/docs/forms/custom-components-forms.md)
-         + [Agregar página de agradecimiento](/help/edge/docs/forms/thank-you-page-form.md)
+      + Funcionalidades {#advanced-features-eds-forms}
+         + [Fragmentos de formulario](/help/edge/docs/forms/form-fragments.md)
+         + [Secciones repetibles](/help/edge/docs/forms/repeatable-forms.md)
+         + [Traducción](/help/edge/docs/forms/translate-forms.md)
+         + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
+         + [Página de agradecimiento](/help/edge/docs/forms/thank-you-page-form.md)
+         + [Componentes personalizados](/help/edge/docs/forms/custom-components-forms.md)
    + Recursos para Edge Delivery {#resources}
       + Barra de tareas {#sidekick}
          + [Uso de la barra de tareas](/help/edge/docs/sidekick.md)
