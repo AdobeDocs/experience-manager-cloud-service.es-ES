@@ -2,10 +2,10 @@
 title: Fase de preparación en Cloud Acceleration Manager
 description: Esta página proporciona información general sobre la fase de preparación en Cloud Acceleration Manager.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: f99395870d076d47ef53b01c9fc6579a9f8788a2
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 4%
+source-wordcount: '984'
+ht-degree: 6%
 
 ---
 
@@ -60,10 +60,13 @@ Siga los pasos a continuación para ir a la fase de preparación:
 
    ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
+   >[!NOTE]
+   >Si se cargan varios informes, el informe que se muestra en detalle siempre es el que tiene la fecha de creación más reciente (no la fecha de carga).
+
 1. Revise y explore el panel de análisis de las prácticas recomendadas en CAM. Consulte [Revisión del informe de análisis de prácticas recomendadas](#analysis-report) para obtener más información.
 
    >[!NOTE]
-   >Al cargar un nuevo informe se restablecen todas las evaluaciones.
+   >La carga de un nuevo informe restablece todas las evaluaciones si es más reciente que el informe cargado anteriormente.
 
 ### Uso de la vista previa {#print-preview-cam}
 
@@ -86,12 +89,12 @@ Complete los siguientes pasos:
 
 ### Uso de Ver línea de tendencia {#trendline-view-cam}
 
-Cuando cargue más de un informe de Analizador de prácticas recomendadas (BPA) en un proyecto, podrá seleccionar el **Ver línea de tendencia** para ver y comparar los resultados de los informes históricos de BPA.
+Cuando cargue más de un informe de Analizador de prácticas recomendadas (BPA) definido en un proyecto, podrá seleccionar el **Ver línea de tendencia** para ver y comparar los resultados de los informes históricos de BPA.
 
 Siga los pasos a continuación para ver los informes de la opción de línea de tendencia:
 
 >[!NOTE]
->Cuando cargue más de un informe de BPA en un proyecto, verá el **...** icono.
+>Cuando carga más de un informe de BPA distinto en un proyecto, verá el **...** icono. Los informes se consideran iguales (no distintos) si su host y la hora de creación son iguales.
 
 1. Vaya al proyecto y haga clic en **Revisar** desde el **Análisis de las prácticas recomendadas** Tarjeta de en **Preparación** fase.
 
@@ -100,9 +103,6 @@ Siga los pasos a continuación para ver los informes de la opción de línea de 
 1. Clic **...**.
 
    ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
-
-   >[!IMPORTANT]
-   >El informe que se muestra siempre es el que tiene la fecha del informe más reciente.
 
 1. En la lista desplegable, haga clic en **Ver línea de tendencia**, como se muestra en la figura siguiente.
 
@@ -165,19 +165,19 @@ Puede filtrar el informe en función de su importancia, subtipo o recuento.
 
 AEM AEM La opción de Evaluación de las prácticas recomendadas proporciona una evaluación de su instancia actual de y proporciona orientación sobre los próximos pasos para adoptar las prácticas recomendadas. Puede revisar la siguiente información en esta pestaña:
 
-* AEM Resumen de instancia de
+* Información general de la instancia de AEM
 * Componentes y plantillas personalizadas
 * Conclusiones adicionales
 * Consultas lentas
 * Tareas de mantenimiento
 
-#### Evaluación de complejidad de migración {#migration-complexity-assessment}
+#### Evaluación de la complejidad de la migración {#migration-complexity-assessment}
 
 AEM AEM La opción Evaluación de la complejidad de la migración proporciona una evaluación de la complejidad para migrar la implementación de la existente a la implementación de la migración en as a Cloud Service.
 
 Puede revisar la siguiente información en esta pestaña:
 
-* AEM Resumen de instancia de
+* Información general de la instancia de AEM
 * Evaluación
 * Consideraciones de migración de contenido
 
