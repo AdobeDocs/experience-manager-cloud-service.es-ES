@@ -4,9 +4,9 @@ description: Cree formularios potentes más rápido mediante hojas de cálculo y
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
+source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '989'
 ht-degree: 1%
 
 ---
@@ -14,65 +14,72 @@ ht-degree: 1%
 
 # Habilitar el formulario para enviar datos
 
-Después de crear y previsualizar el formulario, active la hoja correspondiente para aceptar datos. Para empezar a aceptar datos, configure la hoja de cálculo para que incluya los encabezados que coincidan con los datos que desea recopilar. Todos los encabezados agregados a la hoja &quot;shared-default&quot; también deben estar presentes en la hoja &quot;entrante&quot; debajo de una tabla.
+Una vez que haya [creación y previsualización del formulario](/help/edge/docs/forms/create-forms.md)Sin embargo, es hora de permitir que la hoja de cálculo correspondiente comience a recibir datos.
 
-El siguiente ejemplo muestra los campos de un formulario &quot;contact-us&quot;:
+>[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
 
-![Campos para un formulario de contacto](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
+Para habilitar la hoja de cálculo:
 
-
-Una vez completada esta configuración, el formulario estará listo para aceptar envíos. Puede utilizar uno de los siguientes métodos para permitir que la hoja de cálculo acepte datos:
-
-* [Configurar manualmente una hoja de cálculo para aceptar datos](#manually-configure-a-spreadsheet-to-receive-data)
-
-* [Utilice las API de administrador para permitir que una hoja de cálculo acepte datos](#use-admin-apis-to-enable-a-spreadsheet-to-receive-data-use-admin-apis-to-enable-a-spreadsheet-to-recieve-data)
-
-## Configurar manualmente una hoja de cálculo para aceptar datos
-
-Para configurar manualmente una hoja de cálculo para aceptar datos:
-
-
-1. Abra el libro que ha creado y cambie el nombre de la hoja predeterminada a entrante.
+1. Abra la hoja de cálculo que tiene el formulario, añádale una hoja y cambie el nombre a `incoming`.
 
    >[!WARNING]
    >
-   > AEM Si la hoja &quot;entrante&quot; no existe, no se envía ningún dato a este libro de trabajo, ya que no se envía ningún dato a la hoja de cálculo &quot;entrante&quot;.
+   > Si la variable `incoming` AEM La hoja de cálculo no existe, no se envía ningún dato a este libro de trabajo.
 
-1. Prepare la hoja agregando encabezados que coincidan con los datos que va a incluir. El siguiente ejemplo muestra los campos de un formulario &quot;contact-us&quot;:
+1. En el `incoming` , refleje todos los encabezados de columna en `Name` (nombres de campos de formulario) en la columna `shared-default` hoja.
+
+   El siguiente ejemplo muestra los encabezados de un formulario &quot;contact-us&quot;:
 
    ![Campos para un formulario de contacto](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-1. Previsualice la hoja en la barra de tareas.
+1. Utilice la barra de tareas para previsualizar la hoja.
 
    >[!NOTE]
    >
-   >Incluso si ya ha previsualizado la hoja anteriormente, debe volver a previsualizarla después de crear la hoja &quot;entrante&quot; por primera vez.
+   >Incluso si ya ha previsualizado la hoja anteriormente, debe volver a previsualizarla después de crear la hoja de cálculo `incoming` por primera vez.
 
 
-## Utilice las API de administrador para permitir que una hoja de cálculo acepte datos
+Una vez añadidos los nombres de campo a `incoming` , el formulario estará listo para aceptar envíos. Puede obtener una vista previa del formulario y enviar datos a la hoja mediante él.
 
-Puede iniciar una solicitud de POST AEM a la ruta del formulario dentro del servicio de administración de. Al recibir los datos del cuerpo del POST, el servicio de administración los analiza y genera de forma autónoma los encabezados, las tablas y las hojas esenciales necesarios para la ingesta de datos, lo que optimiza la funcionalidad del servicio de Forms.
+También observará los siguientes cambios en la hoja de cálculo:
+
+Se agrega una hoja denominada &quot;Slack&quot; al libro de Excel o a la hoja de Google. En esta hoja, puede configurar las notificaciones automáticas para un canal de Slack designado cada vez que se incorporen nuevos datos en la hoja de cálculo. AEM AEM En la actualidad, el servicio admite notificaciones únicamente a la organización Slack de ingeniería de la organización de y a la organización de soporte Enterprise de Adobe.
+
+1. Para configurar las notificaciones de Slack, introduzca el &quot;teamId&quot; del espacio de trabajo del Slack y el &quot;nombre del canal&quot; o &quot;ID&quot;. También puede solicitar al bot de Slack (con el comando debug) los parámetros &quot;teamId&quot; y &quot;channel ID&quot;. Es preferible utilizar el &quot;ID de canal&quot; en lugar del &quot;nombre de canal&quot;, ya que sobrevive a los cambios de nombre de canal.
+
+   >[!NOTE]
+   >
+   > Los formularios más antiguos no tenían la columna &quot;teamId&quot;. El &quot;teamId&quot; se incluía en la columna del canal, separado por &quot;#&quot; o &quot;/&quot;.
+
+1. Introduzca el título que desee y en los campos introduzca los nombres de los campos que desea ver en la notificación al Slack. Cada encabezado debe separarse con una coma (por ejemplo, nombre, correo electrónico).
+
+   >[!WARNING]
+   >
+   >  Las hojas &quot;compartidas por defecto&quot; nunca deben contener información personal identificable o datos confidenciales que no le resulte cómodo tener acceso público.
+
+
+## (Opcional) Utilice las API de administrador para permitir que una hoja de cálculo acepte datos
+
+También puede enviar una solicitud de POST al formulario para permitir que acepte datos y configure los encabezados del `incoming` hoja. Al recibir la solicitud del POST, el servicio analiza el cuerpo de la solicitud y genera de forma autónoma los encabezados y hojas esenciales necesarios para la ingesta de datos.
 
 Para utilizar las API de administrador para permitir que una hoja de cálculo acepte datos:
 
 
-1. Abra el libro que ha creado y cambie el nombre de la hoja predeterminada a entrante.
+1. Abra el libro que ha creado y cambie el nombre de la hoja predeterminada a `incoming`.
 
    >[!WARNING]
    >
-   > AEM Si la hoja &quot;entrante&quot; no existe, no se envía ningún dato a este libro de trabajo, ya que no se envía ningún dato a la hoja de cálculo &quot;entrante&quot;.
+   > Si la variable `incoming` AEM La hoja de cálculo no existe. No se enviará ningún dato a este libro de trabajo.
 
 1. Previsualice la hoja en la barra de tareas.
 
    >[!NOTE]
    >
-   >Incluso si ya ha previsualizado la hoja anteriormente, debe volver a previsualizarla después de crear la hoja &quot;entrante&quot; por primera vez.
+   >Incluso si ya ha previsualizado la hoja anteriormente, debe volver a previsualizarla después de crear la hoja de cálculo `incoming` por primera vez.
 
-1. Prepare la hoja agregando encabezados que coincidan con los datos que va a incluir.
+1. Envíe la solicitud del POST para generar los encabezados adecuados en la `incoming` y añada la etiqueta `shared-default` a la hoja de cálculo, si no existe todavía.
 
-   Para ello, envíe una solicitud de POST AEM a la ruta del formulario en el servicio de administración de. El servicio de administración examina los datos en el cuerpo del POST y genera los encabezados, las tablas y las hojas necesarias para introducir los datos de forma eficaz y aprovechar al máximo el servicio de Forms.
-
-   Para saber cómo dar formato a la solicitud del POST para configurar la hoja, consulte la [Documentación de API de administración](https://www.hlx.live/docs/admin.html#tag/form). Además, observe el ejemplo que se proporciona a continuación:
+   Para saber cómo dar formato a la solicitud del POST para configurar la hoja, consulte la [Documentación de API de administración](https://www.hlx.live/docs/admin.html#tag/form). Puede ver el ejemplo que se proporciona a continuación:
 
    **Solicitud**
 
@@ -135,27 +142,26 @@ Para utilizar las API de administrador para permitir que una hoja de cálculo ac
    }'
    ```
 
-   La solicitud de POST mencionada anteriormente proporciona datos de ejemplo, incluidos los campos de formulario y sus respectivos valores de ejemplo. El servicio de administración utiliza estos datos para configurar el formulario.
+   La solicitud de POST mencionada proporciona datos de ejemplo, incluidos los campos de formulario y sus respectivos valores de ejemplo. El servicio de administración utiliza estos datos para configurar el formulario.
 
-   Al enviar la solicitud del POST al servicio de administración, se observan los siguientes cambios en el libro de trabajo:
+   El formulario ahora está habilitado para aceptar datos. También observará los siguientes cambios en la hoja de cálculo:
 
-* Se agrega una nueva hoja denominada &quot;shared-default&quot; al libro de Excel o a la hoja de Google. Los datos presentes en la hoja &quot;shared-default&quot; se recuperan al realizar una solicitud de GET a la hoja. Esta hoja sirve como una ubicación óptima para utilizar fórmulas de hoja de cálculo para resumir los datos entrantes, lo que la hace propicia para el consumo en otros contextos.
+Se agrega una hoja denominada &quot;Slack&quot; al libro de Excel o a la hoja de Google. En esta hoja, puede configurar las notificaciones automáticas para un canal de Slack designado cada vez que se incorporen nuevos datos en la hoja de cálculo. AEM AEM En la actualidad, el servicio admite notificaciones únicamente a la organización Slack de ingeniería de la organización de y a la organización de soporte Enterprise de Adobe.
 
-  Las hojas &quot;compartidas por defecto&quot; nunca deben contener información personal identificable o datos confidenciales que no le resulte cómodo tener acceso público.
+1. Para configurar las notificaciones de Slack, introduzca el &quot;teamId&quot; del espacio de trabajo del Slack y el &quot;nombre del canal&quot; o &quot;ID&quot;. También puede solicitar al bot de Slack (con el comando debug) los parámetros &quot;teamId&quot; y &quot;channel ID&quot;. Es preferible utilizar el &quot;ID de canal&quot; en lugar del &quot;nombre de canal&quot;, ya que sobrevive a los cambios de nombre de canal.
 
-* Se agrega una hoja denominada &quot;Slack&quot; al libro de Excel o a la hoja de Google. En esta hoja, puede configurar las notificaciones automáticas para un canal de Slack designado cada vez que se incorporen nuevos datos en la hoja de cálculo. AEM AEM En la actualidad, el servicio admite notificaciones únicamente a la organización Slack de ingeniería de la organización de y a la organización de soporte Enterprise de Adobe.
+   >[!NOTE]
+   >
+   > Los formularios más antiguos no tenían la columna &quot;teamId&quot;. El &quot;teamId&quot; se incluía en la columna del canal, separado por &quot;#&quot; o &quot;/&quot;.
 
-   1. Para configurar las notificaciones de Slack, introduzca el &quot;teamId&quot; del espacio de trabajo del Slack y el &quot;nombre del canal&quot; o &quot;ID&quot;. También puede solicitar al bot de Slack (con el comando debug) los parámetros &quot;teamId&quot; y &quot;channel ID&quot;. Es preferible utilizar el &quot;ID de canal&quot; en lugar del &quot;nombre de canal&quot;, ya que sobrevive a los cambios de nombre de canal.
+1. Introduzca el título que desee y en los campos introduzca los nombres de los campos que desea ver en la notificación al Slack. Cada encabezado debe separarse con una coma (por ejemplo, nombre, correo electrónico).
 
-      >[!NOTE]
-      >
-      > Los formularios más antiguos no tenían la columna &quot;teamId&quot;. El &quot;teamId&quot; se incluía en la columna del canal, separado por &quot;#&quot; o &quot;/&quot;.
-
-   1. Introduzca el título que desee y en los campos introduzca los nombres de los campos que desea ver en la notificación al Slack. Cada encabezado debe separarse con una coma (por ejemplo, nombre, correo electrónico).
 
 La hoja ahora está configurada para recibir datos, puede [previsualizar el formulario mediante el bloque de formularios](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) o [usar solicitudes de POST](#use-admin-apis-to-send-data-to-your-sheet) para comenzar a enviar datos a la hoja.
 
-
+>[!WARNING]
+>
+>  Las hojas &quot;compartidas por defecto&quot; nunca deben contener información personal identificable o datos confidenciales que no le resulte cómodo tener acceso público.
 
 ## Enviar datos a la hoja {#send-data-to-your-sheet}
 
