@@ -2,10 +2,10 @@
 title: Creación y administración de canales en Screens as a Cloud Service
 description: En esta página se describe cómo crear y administrar canales en Pantallas as a Cloud Service.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: f7ed7c63fd141c6a9817e4718edb31425b14a761
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 2%
+source-wordcount: '1103'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ Este documento le ayuda a comprender la creación y administración de canales p
 
 * Obtenga información sobre cómo crear canales para el proveedor de contenido de Screens
 * administrar y editar contenido en sus canales
-* programación de activación de sus canales
+* administre la asignación y la programación de activación de sus canales en [Proveedor de servicios de Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)
 
 ## Pasos para crear un nuevo canal de secuencia en Screens as a Cloud Service {#create-new-channel}
 
@@ -93,6 +93,8 @@ Las siguientes plantillas están disponibles mientras se utiliza la variable **C
 
 Esta capacidad permite definir una programación de activación predeterminada para un canal y utilizarla de forma predeterminada para cada asignación de una visualización. Esto proporciona un método para que no sea necesario repetir la engorrosa definición de programación.
 
+1. Vaya al proveedor de servicios de Screens desde [aquí](https://experience.adobe.com/screens).
+
 ### Crear detalles de asignación predeterminados para un canal {#create-default}
 
 1. Vaya a la página de detalles del canal que desee configurar.
@@ -119,7 +121,7 @@ Este mosaico muestra la siguiente información:
 Los canales con detalles de asignación predeterminados se pueden asignar a y muestran de la misma manera que los canales normales, con la opción añadida de utilizar los detalles de asignación predeterminados en lugar de definir manualmente los personalizados cada vez.
 
 1. Vaya a la página de detalles de visualización a la que desee asignar el canal y haga clic en **Asignar canal**.
-también puede seleccionar la visualización que desee en la vista de inventario y hacer clic en **Asignar canal**.
+también puede seleccionar la visualización que desee en la [inventario](https://experience.adobe.com/screens/displays) ver y hacer clic en **Asignar canal**.
 1. Se abrirá el cuadro de diálogo Asignación de canal.
 
    ![imagen](/help/screens-cloud/assets/display/Assignments4.png)
