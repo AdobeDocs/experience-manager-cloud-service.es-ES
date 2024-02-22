@@ -4,10 +4,10 @@ description: ¡Crea formas perfectas, rápido! ⚡ la creación basada en docume
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
+source-git-commit: 7b497791c70fd588b7e8c9a94caa218189d3153a
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 1%
+source-wordcount: '891'
+ht-degree: 2%
 
 ---
 
@@ -28,43 +28,21 @@ Estos formularios envían datos directamente a un archivo de Microsoft Excel o G
 ## Antes de comenzar
 
 * Configure y clone su proyecto de servicio de entrega de Edge (EDS). Consulte [tutorial para desarrolladores](https://www.aem.live/developer/tutorial) para obtener más información.
-* Clonar el [Repositorio de bloques de Forms](https://github.com/adobe/afb). Incluye el bloque Formulario necesario para procesar el formulario.
+* Clonar el [Repositorio de bloques de Forms](https://github.com/adobe/afb).
 
-![Introducción a Edge Delivery Forms](/help/edge/assets/getting-started-with-eds-forms.png)
+  ![Introducción a Edge Delivery Forms](/help/edge/assets/getting-started-with-eds-forms.png)
 
 
-## Paso 1: Añadir el bloque de formulario al proyecto de servicio de envío de Edge (EDS) {#add-forms-block-to-an-eds-project}
+## Creación de un formulario
+
+
++++ Paso 1: Añadir el bloque de formulario al proyecto de servicio de envío de Edge (EDS).
 
 AEM Forms Edge Delivery incluye un bloque de formulario para ayudarle a crear fácilmente formularios para capturar y almacenar los datos capturados. Para incluir el bloque de formulario en el proyecto de servicio de entrega de Edge:
 
-1. Vaya a `blocks` en la carpeta del proyecto del servicio de entrega de Edge (EDS) en su entorno de desarrollo local.
+1. Vaya a `[cloned Forms Block repository folder]`/blocks/.
 
-
-   ```Shell
-   cd [EDS Project folder]/blocks
-   ```
-
-1. Cree una carpeta llamada `form` en el `blocks` directorio. Por ejemplo, en el directorio del proyecto EDS denominado `Portal`, cree una carpeta llamada `form`.
-
-   ```Shell
-   mkdir form
-   ```
-
-
-1. Añada el [Bloque de Forms](https://github.com/adobe/afb/tree/main/blocks/form) archivos a la carpeta &quot;formulario&quot;.
-
-   ```shell
-   cp -R <source:path of the form block> <destination: path of the form folder created in the previous step>
-   ```
-
-   **Por ejemplo,**
-
-
-   ```shell
-   cp -R ../../afb/blocks/form ../../fantastic-computing-machine/blocks 
-   ```
-
-
+1. Copie el `forms` carpeta a `[Cloned EDS Project repository folder]\blocks` carpeta.
 
 1. Compruebe la carpeta &quot;formulario&quot; y los archivos subyacentes en el proyecto de servicio de entrega de Edge en GitHub.
 
@@ -79,10 +57,13 @@ AEM Forms Edge Delivery incluye un bloque de formulario para ayudarle a crear f�
 
    >[!NOTE]
    >
-   > * Si aparece el error &quot;No se puede resolver la ruta al módulo &quot;&#39;../../scripts/lib-franklin.js&#39;&quot;, abra el `[EDS Project]/blocks/forms/form.js` archivo. En la instrucción import, reemplace `franklin-lib.js` archivo con la variable `aem.js` archivo.
+   > * Si aparece el error &quot;No se puede resolver la ruta al módulo &quot;&#39;../../scripts/lib-franklin.js&#39;&quot;, abra el `[EDS Project]/blocks/forms/form.js` archivo. En la instrucción import, reemplace `lib-franklin.js` archivo con la variable `aem.js` archivo.
    > * Si encuentra algún error de linting, no dude en ignorarlo. Para omitir las comprobaciones de linting, abra el `[EDS Project]\package.json` y actualice el script &quot;lint&quot; desde `"lint": "npm run lint:js && npm run lint:css"` hasta `"lint": "echo 'skipping linting for now'"`. Guarde el archivo y configúrelo en su proyecto de GitHub.
 
-## Paso 2: Crear un formulario con una hoja de cálculo de Microsoft Excel o Google
++++
+
++++ Paso 2: Crear un formulario con una hoja de cálculo de Microsoft Excel o Google
+
 
 En lugar de procesos complejos, puede crear fácilmente un formulario con una hoja de cálculo. Para empezar, puede agregar las filas y los encabezados de columna a una hoja de cálculo, donde cada fila define un campo de formulario y cada encabezado de columna define las propiedades de los campos de formulario correspondientes.
 
@@ -122,15 +103,16 @@ Para crear un formulario:
    For example, https://main--portal--wkndforms.hlx.live/contact-us.json
    ```
 
++++
 
++++ Paso 3: Previsualizar el formulario mediante la página del servicio de entrega de Edge (EDS)
 
-## Paso 3: Previsualizar el formulario mediante la página del servicio de entrega de Edge (EDS)
 
 Hasta ahora, ha habilitado el bloque de formulario para el proyecto EDS y ha preparado la estructura del formulario. Ahora, para obtener una vista previa del formulario:
 
-1. AEM Vaya al directorio del proyecto de entrega de Edge de la red de distribución de la red en Microsoft SharePoint o Google Drive.
+1. Vaya a la cuenta de Microsoft SharePoint o Google AEM Drive y abra el directorio del proyecto de entrega perimetral de la cuenta de.
 
-1. Cree o abra un archivo doc para alojar el formulario. Por ejemplo, abra el archivo de índice.
+1. Abra un archivo doc para incrustar el formulario en él. Por ejemplo, abra el archivo de índice. También puede crear un nuevo archivo.
 
 1. Vaya a la ubicación deseada dentro del documento en el que desea agregar el formulario.
 
@@ -153,6 +135,9 @@ Hasta ahora, ha habilitado el bloque de formulario para el proyecto EDS y ha pre
    Ahora, rellene el formulario y haga clic en el botón Enviar . Se producirá un error similar al siguiente, ya que la hoja de cálculo aún no está configurada para aceptar los datos.
 
    ![error al enviar el formulario](/help/edge/assets/form-error.png)
+
++++
+
 
 ## Siguiente paso
 
