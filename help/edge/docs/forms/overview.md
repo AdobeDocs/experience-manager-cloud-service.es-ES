@@ -4,25 +4,35 @@ description: El servicio de entrega perimetral de AEM Forms está diseñado para
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
+source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 0%
+source-wordcount: '468'
+ht-degree: 1%
 
 ---
 
 
 # Servicio de entrega perimetral de AEM Forms {#aem-forms-edge-delivery-service-overview}
 
-El servicio de entrega perimetral de AEM Forms es un servicio maquetable ofrecido por Adobe que le permite crear y entregar formularios web de alto impacto y rendimiento rápido. Este servicio de composición se integra a la perfección con Adobe Experience Manager AEM () para permitirle diseñar, crear e implementar formularios web de alto impacto y velocidad excepcional con un flujo de trabajo intuitivo y eficaz.
-
-El servicio de entrega perimetral de AEM Forms le ayuda a:
+El servicio de entrega perimetral de AEM Forms es un servicio maquetable ofrecido por Adobe que le permite crear y entregar formularios web de alto impacto y rendimiento rápido. Puede utilizar el servicio para lo siguiente:
 
 * **Diseñar formularios visualmente impresionantes**: Elimine los diseños suaves y suaves y cautive a los usuarios con formas modernas y dinámicas que reflejen la identidad de su marca. Aproveche los componentes creados previamente o cree sus propios componentes personalizados para dar vida a su visión de forma rápida y sencilla.
 
 * **Crear formularios con una puntuación de faro perfecta**: cree formularios que se carguen y procesen rápidamente, incluso con conexiones a Internet lentas. Los tiempos de carga más rápidos y la experiencia de usuario optimizada contribuyen a tasas de finalización de formularios más altas y tasas de conversión mejoradas.
 
 * **Simplificar la creación y los envíos**: cree formularios con herramientas conocidas como Microsoft Excel o Hojas de cálculo de Google en lugar de los entornos de creación tradicionales. Envíe formularios directamente a las hojas de cálculo de Microsoft Excel o Google y utilice su ecosistema para procesar fácilmente los datos enviados.
+
+
+Este servicio componible está disociado de la fuente de contenido y ofrece la flexibilidad en la creación de contenido al permitir a los usuarios utilizar sus herramientas de creación preferidas.
+
+![Herramientas de creación de formularios de entrega perimetral](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+
+Los creadores de contenido pueden aprovechar las herramientas que les resultan cómodas, como Microsoft Excel o Hojas de cálculo de Google (creación basada en documentos), editores JSON o el editor de Forms adaptable de AEM Forms para la edición WYSIWYG (proyectos de AEM Forms), para diseñar y crear sus formularios.
+
+>[!NOTE]
+>
+>
+> Función de edición WYSIWYG y áreas de Cross Walk disponibles bajo el programa de adopción temprana. Puede escribir a aem-forms-early-adopter-program@adobe.com desde su ID de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez y solicitar acceso a esta capacidad.
 
 ## Empiece con lo básico
 
@@ -47,7 +57,7 @@ El servicio de entrega perimetral de AEM Forms le ayuda a:
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md">
             <img src="/help/edge/assets/smock_devices_18_n.svg" alt="Crear un formulario con formularios terminados" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Creación de un formulario</b>
+            <br><b style="margin-top: 5px;">Crear un formulario con hojas de Google o Microsoft Excel</b>
         </a>
         <p>Cree formularios que se carguen y procesen rápida y automáticamente en los dispositivos móviles.</p>
     </div>

@@ -1,18 +1,18 @@
 ---
-title: 'De hojas de cálculo a Forms: dominio de validaciones de campos de bloque de formulario'
-description: Cree formularios potentes más rápido mediante hojas de cálculo y campos de bloque de formularios. Esta guía le ayuda a crear validaciones personalizadas para los campos de bloque Forms de EDS.
+title: Preparar la hoja de cálculo para aceptar datos
+description: Cree formularios potentes más rápido mediante hojas de cálculo y campos de bloque de formularios.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
+source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
 
 
-# Habilitar el formulario para enviar datos
+# Preparar la hoja de cálculo para aceptar datos
 
 Una vez que haya [creación y previsualización del formulario](/help/edge/docs/forms/create-forms.md)Sin embargo, es hora de permitir que la hoja de cálculo correspondiente comience a recibir datos.
 
@@ -20,15 +20,15 @@ Una vez que haya [creación y previsualización del formulario](/help/edge/docs/
 
 Para habilitar la hoja de cálculo:
 
-1. Abra la hoja de cálculo que tiene el formulario, añádale una hoja y cambie el nombre a `incoming`.
+1. Abra la hoja de cálculo que tiene el formulario y anexe una hoja nueva, cambiando el nombre a `incoming`.
 
    >[!WARNING]
    >
-   > Si la variable `incoming` AEM La hoja de cálculo no existe, no se envía ningún dato a este libro de trabajo.
+   > Si la variable `incoming` AEM La hoja de cálculo no está presente, no se envía ningún dato a la hoja de cálculo, por lo que no se envía ningún dato a la hoja de cálculo.
 
-1. En el `incoming` , refleje todos los encabezados de columna en `Name` (nombres de campos de formulario) en la columna `shared-default` hoja.
+1. Reflejar los nombres de los campos de formulario, los valores de la variable `Name` en la columna`shared-default` , a los encabezados de la hoja `incoming` hoja.
 
-   El siguiente ejemplo muestra los encabezados de un formulario &quot;contact-us&quot;:
+   Cada valor de `Name` de la columna `shared-default` hoja, excluyendo el botón de envío, sirve como encabezado en la `incoming` hoja. Por ejemplo, vea la siguiente imagen que ilustra los encabezados de un formulario de &quot;contacto&quot;:
 
    ![Campos para un formulario de contacto](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
@@ -79,7 +79,7 @@ Para utilizar las API de administrador para permitir que una hoja de cálculo ac
 
 1. Envíe la solicitud del POST para generar los encabezados adecuados en la `incoming` y añada la etiqueta `shared-default` a la hoja de cálculo, si no existe todavía.
 
-   Para saber cómo dar formato a la solicitud del POST para configurar la hoja, consulte la [Documentación de API de administración](https://www.hlx.live/docs/admin.html#tag/form). Puede ver el ejemplo que se proporciona a continuación:
+   Para saber cómo dar formato a la solicitud del POST para configurar la hoja, consulte la [Documentación de API de administración](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). Puede ver el ejemplo que se proporciona a continuación:
 
    **Solicitud**
 
