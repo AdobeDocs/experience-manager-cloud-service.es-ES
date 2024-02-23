@@ -2,10 +2,10 @@
 title: Reglas de filtro de tráfico, incluidas reglas WAF
 description: Configuración de las reglas de filtro de tráfico, incluidas las reglas de cortafuegos de aplicación web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 46e48b6bb8d2b926b55330024e145d608fcf3609
-workflow-type: ht
-source-wordcount: '3350'
-ht-degree: 100%
+source-git-commit: 86a7815a1055b8ffaf57b802f3232f2c03ec06dc
+workflow-type: tm+mt
+source-wordcount: '3376'
+ht-degree: 99%
 
 ---
 
@@ -253,6 +253,7 @@ La propiedad `wafFlags`, que se puede utilizar en las reglas de filtro de tráfi
 | USERAGENT | Herramienta de ataque | La herramienta de ataque es el uso de software automatizado para identificar vulnerabilidades de seguridad o para intentar explotar una vulnerabilidad descubierta. |
 | LOG4J-JNDI | Log4J JNDI | Los ataques Log4J JNDI intentan explotar la [vulnerabilidad de Log4Shell](https://en.wikipedia.org/wiki/Log4Shell) presente en las versiones de Log4J anteriores a la versión 2.16.0 |
 | BHH | Encabezados de salto incorrecto | Los encabezados de salto incorrecto indican un intento de introducir HTTP a través de un encabezado Transfer-Encoding (TE) o Content-Length (CL) mal formado o un encabezado TE y CL bien formado |
+| INYECCIÓN DE CÓDIGO | Inyección de código | La inyección de código es el intento de obtener control o dañar un sistema objetivo a través de comandos arbitrarios de código de aplicación por medio de la entrada del usuario. |
 | ABNORMALPATH | Ruta anormal | Ruta anormal indica que la ruta original difiere de la ruta normalizada (por ejemplo, `/foo/./bar` se normaliza a `/foo/bar`) |
 | DOUBLEENCODING | Codificación doble | La codificación doble comprueba la técnica de evasión de los caracteres HTML de doble codificación |
 | NOTUTF8 | Codificación no válida | La codificación no válida puede hacer que el servidor traduzca caracteres malintencionados de una solicitud a una respuesta, lo que provoca una denegación de servicio o XSS |
