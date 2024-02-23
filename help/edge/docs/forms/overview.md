@@ -4,9 +4,9 @@ description: El servicio de entrega perimetral de AEM Forms está diseñado para
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
+source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '463'
 ht-degree: 1%
 
 ---
@@ -27,12 +27,12 @@ Este servicio componible está disociado de la fuente de contenido y ofrece la f
 
 ![Herramientas de creación de formularios de entrega perimetral](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
-Los creadores de contenido pueden aprovechar las herramientas que les resultan cómodas, como Microsoft Excel o Hojas de cálculo de Google (creación basada en documentos), editores JSON o el editor de Forms adaptable de AEM Forms para la edición WYSIWYG (proyectos de AEM Forms), para diseñar y crear sus formularios.
+Los creadores de contenido pueden aprovechar las herramientas con las que se sienten cómodos, como Microsoft Excel o Hojas de cálculo de Google (creación basada en documentos), archivos JSON (creación sin encabezado) o el editor de Forms adaptable de AEM Forms (creación WYSIWYG) para diseñar y crear sus formularios.
 
 >[!NOTE]
 >
 >
-> Función de edición WYSIWYG y áreas de Cross Walk disponibles bajo el programa de adopción temprana. Puede escribir a aem-forms-early-adopter-program@adobe.com desde su ID de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez y solicitar acceso a esta capacidad.
+> La capacidad de creación de WYSIWYG está disponible en el programa de usuarios pioneros. Puede escribir a aem-forms-early-adopter-program@adobe.com desde su ID de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez y solicitar acceso a esta capacidad.
 
 ## Empiece con lo básico
 
@@ -67,13 +67,12 @@ Los creadores de contenido pueden aprovechar las herramientas que les resultan c
             <br><b style="margin-top: 5px;">Aplicar validaciones de campo</b>
         </a>
         <p>Reduzca los errores y la frustración comprobando que las entradas del formulario tengan el formato adecuado.</p>
-    </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/form-fragments.md">
-            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Uso de fragmentos de formulario en un formulario EDS" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Creación de fragmentos de formulario</b>
+    </div>    <div class="card-container">
+        <a href="/help/edge/docs/forms/style-theme-forms.md">
+            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Aplicar estilos o temáticas a un formulario de extremos" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Personalizar una temática</b>
         </a>
-        <p>Reutilizar fragmentos preconfigurados en varios formularios.</p>
+        <p>Crear una imagen de marca coherente aplicando la misma temática a todos los formularios.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
@@ -83,11 +82,11 @@ Los creadores de contenido pueden aprovechar las herramientas que les resultan c
         <p>Amplíe el alcance de los formularios manteniendo los costes bajo control.</p>
     </div>
     <div class="card-container">
-        <a href="/help/edge/docs/forms/style-theme-forms.md">
-            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Aplicar estilos o temáticas a un formulario de extremos" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Personalizar una temática</b>
+        <a href="/help/edge/docs/forms/form-fragments.md">
+            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Uso de fragmentos de formulario en un formulario EDS" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Creación de fragmentos de formulario</b>
         </a>
-        <p>Crear una imagen de marca coherente aplicando la misma temática a todos los formularios.</p>
+        <p>Reutilizar fragmentos preconfigurados en varios formularios.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/repeatable-forms.md">  
