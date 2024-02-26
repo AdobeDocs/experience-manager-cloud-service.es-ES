@@ -1,16 +1,16 @@
 ---
-title: Llamadas al editor universal
+title: Llamadas del editor universal
 description: Obtenga información sobre los distintos tipos de llamadas que el Editor universal realiza a su aplicación para ayudarle en la depuración.
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
-source-git-commit: 7ef3efa6e074778b7b3e3a8159056200b2663b30
+source-git-commit: 1fc53e726f3a15c9ac7d772b4c181a7877e417af
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 1%
+source-wordcount: '615'
+ht-degree: 2%
 
 ---
 
 
-# Llamadas al editor universal {#calls}
+# Llamadas del editor universal {#calls}
 
 Obtenga información sobre los distintos tipos de llamadas que el Editor universal realiza a su aplicación para ayudarle en la depuración.
 
@@ -27,6 +27,8 @@ Sin embargo, para el desarrollador, comprender estas llamadas y lo que hacen pue
 * El **Carga útil** de la llamada contiene detalles de lo que el editor está actualizando, incluida la identificación de qué actualizar y cómo actualizarlo.
 * El **Respuesta** incluye detalles de qué ha actualizado exactamente el servicio de edición. Esto sirve para facilitar la actualización del contenido en el editor. En algunos casos, como un `move` Llamada de, se debe actualizar la página completa.
 
+Una vez que una llamada se completa correctamente, se activan eventos que incluyen la carga útil de la solicitud y la respuesta, que se puede personalizar para su propia aplicación. Consulte el documento [Eventos del editor universal](/help/implementing/universal-editor/events.md) para obtener más información.
+
 A continuación se muestra una lista de los tipos de llamadas que el editor universal realiza a su aplicación, así como cargas útiles y respuestas de ejemplo.
 
 ## Actualizar {#update}
@@ -40,7 +42,9 @@ Su carga útil incluye detalles de lo que se debe escribir en el JCR.
 * `type`: el tipo de valor JCR de la propiedad que se actualiza
 * `value`: los datos actualizados
 
-### Carga útil de muestra {#update-payload}
+>[!BEGINTABS]
+
+>[!TAB Carga útil de muestra]
 
 ```json
 {
@@ -60,7 +64,7 @@ Su carga útil incluye detalles de lo que se debe escribir en el JCR.
 }
 ```
 
-### Respuesta de ejemplo {#update-response}
+>[!TAB Respuesta de ejemplo]
 
 ```json
 {
@@ -74,6 +78,8 @@ Su carga útil incluye detalles de lo que se debe escribir en el JCR.
 }
 ```
 
+>[!ENDTABS]
+
 ## Detalles {#details}
 
 A `details` Esta llamada se produce al cargar la aplicación en el editor universal para recuperar el contenido de la aplicación.
@@ -83,7 +89,9 @@ Su carga útil incluye los datos que se van a procesar, así como detalles de lo
 * Para un componente, el editor universal solo recupera un componente `data` , ya que el esquema de los datos se define en la aplicación.
 * Para los fragmentos de contenido, el editor universal también recupera un `schema` ya que el modelo de fragmento de contenido se define en el JCR.
 
-### Carga útil de muestra {#details-payload}
+>[!BEGINTABS]
+
+>[!TAB Carga útil de muestra]
 
 ```json
 {
@@ -102,7 +110,7 @@ Su carga útil incluye los datos que se van a procesar, así como detalles de lo
 }
 ```
 
-### Respuesta de ejemplo {#details-response}
+>[!TAB Respuesta de ejemplo]
 
 ```json
 {
@@ -134,6 +142,8 @@ Su carga útil incluye los datos que se van a procesar, así como detalles de lo
 }
 ```
 
+>[!ENDTABS]
+
 ## Añadir {#add}
 
 Un `add` Esta llamada se produce cuando se coloca un componente nuevo en la aplicación mediante el Editor universal.
@@ -142,7 +152,9 @@ Su carga útil incluye un `path` objeto que contiene dónde se debe añadir el c
 
 También incluye una `content` con objetos adicionales para detalles específicos del extremo del contenido que se va a almacenar [para cada complemento.](/help/implementing/universal-editor/architecture.md) AEM Por ejemplo, si la aplicación se basa en el contenido de los Magento y de la aplicación, la carga útil contendría un objeto de datos para cada sistema.
 
-### Carga útil de muestra {#add-payload}
+>[!BEGINTABS]
+
+>[!TAB Carga útil de muestra]
 
 ```json
 {
@@ -174,7 +186,7 @@ También incluye una `content` con objetos adicionales para detalles específico
 }
 ```
 
-### Respuesta de ejemplo {#add-response}
+>[!TAB Respuesta de ejemplo]
 
 ```json
 {
@@ -188,13 +200,17 @@ También incluye una `content` con objetos adicionales para detalles específico
 }
 ```
 
+>[!ENDTABS]
+
 ## Mover {#move}
 
 A `move` Esta llamada se produce cuando se mueve un componente dentro de la aplicación mediante el Editor universal.
 
 Su carga útil incluye un `from` que define dónde estaba el componente y un `to` que define dónde se movió.
 
-### Carga útil de muestra {#move-payload}
+>[!BEGINTABS]
+
+>[!TAB Carga útil de muestra]
 
 ```json
 {
@@ -227,7 +243,7 @@ Su carga útil incluye un `from` que define dónde estaba el componente y un `to
 }
 ```
 
-### Respuesta de ejemplo {#move-response}
+>[!TAB Respuesta de ejemplo]
 
 ```json
 {
@@ -240,13 +256,17 @@ Su carga útil incluye un `from` que define dónde estaba el componente y un `to
 }
 ```
 
+>[!ENDTABS]
+
 ## Quitar {#remove}
 
 A `remove` Esta llamada se produce cuando se elimina un componente de la aplicación mediante el Editor universal.
 
 Su carga útil incluye la ruta del objeto que se elimina.
 
-### Carga útil de muestra {#remove-payload}
+>[!BEGINTABS]
+
+>[!TAB Carga útil de muestra]
 
 ```json
 {
@@ -272,7 +292,7 @@ Su carga útil incluye la ruta del objeto que se elimina.
 }
 ```
 
-### Respuesta de ejemplo {#remove-response}
+>[!TAB Respuesta de ejemplo]
 
 ```json
 {
@@ -286,13 +306,17 @@ Su carga útil incluye la ruta del objeto que se elimina.
 }
 ```
 
+>[!ENDTABS]
+
 ## Publicación {#publish}
 
 A `publish` La llamada de se produce al hacer clic en **Publish** en el Editor universal para publicar el contenido que ha editado.
 
 El editor universal repite el contenido y genera una lista de referencias que también deben publicarse.
 
-### Carga útil de muestra {#publish-payload}
+>[!BEGINTABS]
+
+>[!TAB Carga útil de muestra]
 
 ```json
 {
@@ -332,7 +356,7 @@ El editor universal repite el contenido y genera una lista de referencias que ta
 }
 ```
 
-### Respuesta de ejemplo {#publish-response}
+>[!TAB Respuesta de ejemplo]
 
 ```json
 {
@@ -355,3 +379,9 @@ El editor universal repite el contenido y genera una lista de referencias que ta
   ]
 }
 ```
+
+>[!ENDTABS]
+
+## Recursos adicionales {#additional-resources}
+
+* [Eventos del editor universal](/help/implementing/universal-editor/events.md)
