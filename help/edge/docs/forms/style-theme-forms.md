@@ -4,9 +4,9 @@ description: Personalización del tema y el estilo de un formulario de servicio 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
+source-git-commit: 59ed012f10a20939c846c8fff088534c5638f3db
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1268'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Todos los campos de formulario, excepto los desplegables, los grupos de opción 
 * Entrada: El `input` define el tipo de datos que se van a introducir. Por ejemplo, texto, número, correo electrónico.
 * Descripción (Opcional): La `div` con clase `field-description` proporciona información o instrucciones adicionales para el usuario.
 
-**Ejemplo**
+**Ejemplo de estructura del HTML**
 
 ```HTML
 <div class="form-text-wrapper form-first-name field-wrapper" data-required="true">
@@ -99,7 +99,7 @@ Todos los campos de formulario, excepto los desplegables, los grupos de opción 
 </div>
 ```
 
-#### Selector de CSS para componentes generales
+**Selector de CSS para componentes generales**
 
 ```CSS
 .form-{Type}-wrapper input {
@@ -121,7 +121,7 @@ Todos los campos de formulario, excepto los desplegables, los grupos de opción 
 * `.form-{Type}-wrapper`: segmenta el `div` basado en el tipo de campo. Por ejemplo, `.form-text-wrapper` selecciona todos los campos de entrada de texto.
 * `.form-{Name}`: selecciona además el elemento en función del nombre de campo específico. Por ejemplo, `.form-first-name` se dirige al campo de texto &quot;Nombre&quot;.
 
-**Ejemplo:**
+**Ejemplo de selectores CSS para componentes generales**
 
 ```CSS
 /*Target all text input fields */
@@ -159,7 +159,7 @@ Para los menús desplegables, la variable `select` se utiliza en lugar de un `in
 </div>
 ```
 
-**Ejemplo**
+**Ejemplo de estructura del HTML**
 
 ```HTML
     <div class="form-drop-down-wrapper form-country field-wrapper" data-required="true">
@@ -173,7 +173,7 @@ Para los menús desplegables, la variable `select` se utiliza en lugar de un `in
    </div>
 ```
 
-#### Selectores CSS para el componente desplegable
+#### Ejemplo de selectores CSS para el componente desplegable
 
 ```CSS
 /* Target the outer wrapper */
@@ -265,98 +265,95 @@ De forma similar a los componentes desplegables, los grupos de radio y casilla d
 </div>
 ```
 
-#### Selectores CSS para grupos de radio y casillas de verificación
+**Ejemplo de selectores CSS para grupos de radio y casilla de verificación**
 
-**Segmentación del envoltorio exterior**
-
-
-```CSS
-   /* Targets all radio group wrappers */
-.form-radio-group-wrapper {
-  margin-bottom: 20px; /* Adds space between radio groups */
-}
-
-/* Targets all checkbox group wrappers */
-.form-checkbox-group-wrapper {
-  margin-bottom: 20px; /* Adds space between checkbox groups */
-}
-```
-
-Estos selectores se dirigen a los contenedores más externos de los grupos de radio y casilla de verificación, lo que permite aplicar estilos generales a toda la estructura del grupo. Esto resulta útil para establecer el espaciado, la alineación u otras propiedades relacionadas con el diseño.
-
-**Etiquetas de grupo de destino**
-
-```CSS
-.form-radio-group-wrapper .field-label,
-.form-checkbox-group-wrapper .field-label {
- font-weight: bold; /* Makes the group label bold */
-}
-```
-
-Este selector se dirige a `.field-label` dentro de los contenedores de grupo de casilla de verificación y radio. Esto le permite aplicar estilo a las etiquetas específicamente para estos grupos, lo que podría hacerlos destacar más.
-
-**Segmentación de entradas y etiquetas individuales**
-
-```CSS
-/* Styling radio buttons */
-.form-radio-group-wrapper input[type="radio"] {
-  margin-right: 5px; /* Adds space between the input and its label */
-} 
-
-/* Styling radio button labels */
-.form-radio-group-wrapper label {
-  font-size: 15px; /* Changes the label font size */
-}
-
-/* Styling checkboxes */
-.form-checkbox-group-wrapper input[type="checkbox"] {
-  margin-right: 5px;  /* Adds space between the input and its label */ 
-}
-
-/* Styling checkbox labels */
-.form-checkbox-group-wrapper label {
-  font-size: 15px; /* Changes the label font size */
-}
-```
-
-Estos selectores proporcionan un control más granular sobre los botones de opción individuales, las casillas de verificación y sus etiquetas asociadas. Puede utilizarlas para ajustar el tamaño, el espaciado o aplicar estilos visuales más distintos.
+* Segmentación del contenedor exterior: estos selectores se dirigen a los contenedores más externos de los grupos de radio y casilla de verificación, lo que permite aplicar estilos generales a toda la estructura del grupo. Esto resulta útil para establecer el espaciado, la alineación u otras propiedades relacionadas con el diseño.
 
 
-**Personalizar el aspecto de los botones de opción y las casillas de verificación**
-
-```CSS
-/* Hide the default radio button or checkbox */
-.form-radio-group-wrapper input[type="radio"],
-.form-checkbox-group-wrapper input[type="checkbox"] {
-  opacity: 0; 
-  position: absolute; 
-}
-
-/* Create a custom radio button */
-.form-radio-group-wrapper input[type="radio"] + label::before { 
-  content: "";
-  display: inline-block;
-  width: 16px; 
-  height: 16px; 
-  border: 2px solid #ccc; 
-  border-radius: 50%;
-  margin-right: 5px;
-}
-
-.form-radio-group-wrapper input[type="radio"]:checked + label::before {
-  background-color: #007bff; 
-}
-
-/* Create a custom checkbox */
-/* Similar styling as above, with adjustments for a square shape */
-```
-
-Esta técnica oculta la entrada predeterminada y utiliza los pseudoelementos :before y :after para crear imágenes personalizadas que cambian de aspecto en función del estado &quot;activado&quot;.
+  ```CSS
+     /* Targets all radio group wrappers */
+  .form-radio-group-wrapper {
+    margin-bottom: 20px; /* Adds space between radio groups */
+  }
+  
+  /* Targets all checkbox group wrappers */
+  .form-checkbox-group-wrapper {
+    margin-bottom: 20px; /* Adds space between checkbox groups */
+  }
+  ```
 
 
-## Estilo de campos
+* Etiquetas de grupos de destino: este selector se dirige a `.field-label` dentro de los contenedores de grupo de casilla de verificación y radio. Esto le permite aplicar estilo a las etiquetas específicamente para estos grupos, lo que podría hacerlos destacar más.
 
-Además de las técnicas de estilo generales tratadas anteriormente, también puede aplicar estilo a los campos de formulario en función de su tipo específico o nombres individuales. Esto permite un control y una personalización más granulares del aspecto del formulario.
+  ```CSS
+  .form-radio-group-wrapper .field-label,
+  .form-checkbox-group-wrapper .field-label {
+   font-weight: bold; /* Makes the group label bold */
+  }
+  ```
+
+
+
+* Segmentación de entradas y etiquetas individuales: estos selectores proporcionan un control más granular sobre botones de opción individuales, casillas de verificación y sus etiquetas asociadas. Puede utilizarlas para ajustar el tamaño, el espaciado o aplicar estilos visuales más distintos.
+
+  ```CSS
+  /* Styling radio buttons */
+  .form-radio-group-wrapper input[type="radio"] {
+    margin-right: 5px; /* Adds space between the input and its   label */
+  } 
+  
+  /* Styling radio button labels */
+  .form-radio-group-wrapper label {
+    font-size: 15px; /* Changes the label font size */
+  }
+  
+  /* Styling checkboxes */
+  .form-checkbox-group-wrapper input[type="checkbox"] {
+    margin-right: 5px;  /* Adds space between the input and its  label */ 
+  }
+  
+  /* Styling checkbox labels */
+  .form-checkbox-group-wrapper label {
+    font-size: 15px; /* Changes the label font size */
+  }
+  ```
+
+
+
+
+* Personalización del aspecto de los botones de opción y las casillas de verificación: Esta técnica oculta la entrada predeterminada y utiliza los pseudoelementos :before y :after para crear imágenes personalizadas que cambian de aspecto en función del estado &quot;activado&quot;.
+
+  ```CSS
+  /* Hide the default radio button or checkbox */
+  .form-radio-group-wrapper input[type="radio"],
+  .form-checkbox-group-wrapper input[type="checkbox"] {
+    opacity: 0; 
+    position: absolute; 
+  }
+  
+  /* Create a custom radio button */
+  .form-radio-group-wrapper input[type="radio"] + label::before { 
+    content: "";
+    display: inline-block;
+    width: 16px; 
+    height: 16px; 
+    border: 2px solid #ccc; 
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .form-radio-group-wrapper input[type="radio"]:checked +  label::before {
+    background-color: #007bff; 
+  }
+  
+  /* Create a custom checkbox */
+  /* Similar styling as above, with adjustments for a square shape  */
+  ```
+
+
+## Estilo de componentes
+
+También puede aplicar estilo a los campos de formulario en función de su tipo específico o nombres individuales. Esto permite un control y una personalización más granulares del aspecto del formulario.
 
 ### Estilo basado en el tipo de campo
 
@@ -388,7 +385,7 @@ Puede utilizar selectores de CSS para segmentar tipos de campo específicos y ap
 * El `data-required` El atributo indica si el campo es obligatorio u opcional.
 * Cada campo tiene una etiqueta correspondiente, un elemento de entrada y posibles elementos adicionales como marcadores de posición y descripciones.
 
-Por ejemplo:
+**Ejemplo de selectores CSS**
 
 ```CSS
 /* Target all text input fields */
@@ -403,7 +400,7 @@ Por ejemplo:
 }
 ```
 
-### Estilo de tipos de campo específicos
+### Estilo basado en el nombre del campo
 
 También puede segmentar campos individuales por nombre para aplicar estilos únicos.
 
@@ -416,7 +413,7 @@ También puede segmentar campos individuales por nombre para aplicar estilos ún
 </div>
 ```
 
-**Selector de CSS**
+**Ejemplo de selector de CSS**
 
 ```CSS
 .form-otp input {
@@ -424,6 +421,6 @@ También puede segmentar campos individuales por nombre para aplicar estilos ún
 }
 ```
 
-* Selector: este CSS se dirige a todos los elementos de entrada ubicados dentro de un elemento que tiene la clase `form-otp`. La estructura del HTML sigue las convenciones del bloque de formulario, lo que implica que hay un contenedor marcado con la clase &quot;form-top&quot; que contiene el campo con el nombre &quot;otp&quot;.
+Este CSS identifica todos los elementos de entrada que se encuentran dentro de un elemento que tiene la clase `form-otp`. La estructura del HTML del formulario sigue las convenciones del bloque de formulario, lo que implica que hay un contenedor marcado con la clase &quot;form-top&quot; que contiene el campo con el nombre &quot;top&quot;.
 
-* Propiedad y valor: se aplica el código `letter-spacing: 2px`. Esta propiedad CSS controla el espaciado entre letras individuales dentro del contenido de texto del campo de entrada.
+
