@@ -2,10 +2,10 @@
 title: Definiciones de modelo, campos y tipos de componentes
 description: Obtenga información acerca de los campos y los tipos de componentes que el Editor universal puede editar en el carril de propiedades con ejemplos. Descubra cómo puede instrumentar su propia aplicación creando una definición de modelo y vinculándola al componente.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: bbe02f66b5bce3b919be4abd3b2de482a235b6ee
+source-git-commit: fcdba895510b0c428a4274092c8b314fd36f5c7d
 workflow-type: tm+mt
-source-wordcount: '1126'
-ht-degree: 9%
+source-wordcount: '1144'
+ht-degree: 10%
 
 ---
 
@@ -89,6 +89,23 @@ Un objeto de campo tiene la siguiente definición de tipo.
 ### Tipos de componentes {#component-types}
 
 A continuación se indican los tipos de componentes que se pueden utilizar para procesar campos.
+
+| Descripción | Tipo de componente |
+|---|---|
+| [AEM Etiqueta de](#aem-tag) | `aem-tag` |
+| [AEM Contenido de](#aem-content) | `aem-content` |
+| [Booleana](#boolean) | `boolean` |
+| [Grupo de casillas](#checkbox-group) | `checkbox-group` |
+| [Contenedor](#container) | `container` |
+| [Fecha y hora](#date-time) | `date-time` |
+| [Multiselect](#multiselect) | `multiselect` |
+| [Número](#number) | `number` |
+| [Grupo de radio](#radio-group) | `radio-group` |
+| [Referencia](#reference) | `reference` |
+| [Texto enriquecido](#rich-text) | `rich-text` |
+| [Seleccionar](#select) | `select` |
+| [Ficha](#tab) | `tab` |
+| [Texto](#text) | `text` |
 
 #### AEM Etiqueta de {#aem-tag}
 
@@ -624,6 +641,59 @@ Un tipo de componente de referencia permite hacer referencia a otro objeto de da
 
 >[!ENDTABS]
 
+#### Texto enriquecido {#rich-text}
+
+El texto enriquecido permite la entrada de texto enriquecido multilínea. Ofrece tipos de validación adicionales.
+
+| Tipo de validación | Tipo de valor | Descripción | Requerido |
+|---|---|---|---|
+| `maxSize` | `number` | Número máximo de caracteres permitidos | No |
+| `customErrorMsg` | `string` | Mensaje que se mostrará si `maxSize` se ha superado | No |
+
+>[!BEGINTABS]
+
+>[!TAB Muestra 1]
+
+```json
+{
+  "id": "richtext",
+  "fields": [
+    {
+      "component": "richtext",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+>[!TAB Muestra 2]
+
+```json
+{
+  "id": "another-richtext",
+  "fields": [
+    {
+      "component": "richtext",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string",
+      "validation": {
+        "maxSize": 1000,
+        "customErrorMsg": "That's about as funny as a screen door on a battleship."
+      }
+    }
+  ]
+}
+```
+
+>[!TAB Captura de pantalla]
+
+![Captura de pantalla del tipo de componente del área de texto](assets/component-types/richtext.png)
+
+>[!ENDTABS]
+
 #### Seleccionar {#select}
 
 Un tipo de componente Seleccionar permite seleccionar una sola opción de una lista de opciones predefinidas en un menú desplegable.
@@ -704,62 +774,9 @@ Si desea que los elementos aparezcan encima de todas las pestañas, deben defini
 
 >[!ENDTABS]
 
-#### Área de texto {#text-area}
+#### Texto {#text}
 
-Un área de texto permite la entrada de texto enriquecido multilínea. Ofrece tipos de validación adicionales.
-
-| Tipo de validación | Tipo de valor | Descripción | Requerido |
-|---|---|---|---|
-| `maxSize` | `number` | Número máximo de caracteres permitidos | No |
-| `customErrorMsg` | `string` | Mensaje que se mostrará si `maxSize` se ha superado | No |
-
->[!BEGINTABS]
-
->[!TAB Muestra 1]
-
-```json
-{
-  "id": "richtext",
-  "fields": [
-    {
-      "component": "text-area",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string"
-    }
-  ]
-}
-```
-
->[!TAB Muestra 2]
-
-```json
-{
-  "id": "another-richtext",
-  "fields": [
-    {
-      "component": "text-area",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string",
-      "validation": {
-        "maxSize": 1000,
-        "customErrorMsg": "That's about as funny as a screen door on a battleship."
-      }
-    }
-  ]
-}
-```
-
->[!TAB Captura de pantalla]
-
-![Captura de pantalla del tipo de componente del área de texto](assets/component-types/richtext.png)
-
->[!ENDTABS]
-
-#### Entrada de texto {#text-input}
-
-Una entrada de texto permite una sola línea de entrada de texto.  Incluye tipos de validación adicionales.
+El texto permite introducir una sola línea de texto.  Incluye tipos de validación adicionales.
 
 | Tipo de validación | Tipo de valor | Descripción | Requerido |
 |---|---|---|---|
@@ -777,7 +794,7 @@ Una entrada de texto permite una sola línea de entrada de texto.  Incluye tipos
   "id": "simpletext",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "text",
       "label": "Simple Text",
       "valueType": "string"
@@ -793,7 +810,7 @@ Una entrada de texto permite una sola línea de entrada de texto.  Incluye tipos
   "id": "another simpletext",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "text",
       "label": "Simple Text",
       "valueType": "string",
@@ -812,6 +829,6 @@ Una entrada de texto permite una sola línea de entrada de texto.  Incluye tipos
 
 >[!TAB Captura de pantalla]
 
-![Captura de pantalla del tipo de componente de entrada de texto](assets/component-types/simpletext.png)
+![Captura de pantalla del tipo de componente Texto](assets/component-types/simpletext.png)
 
 >[!ENDTABS]
