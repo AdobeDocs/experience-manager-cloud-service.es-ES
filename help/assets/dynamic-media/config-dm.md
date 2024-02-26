@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo configurar Dynamic Media en Adobe 
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '3811'
 ht-degree: 2%
@@ -107,7 +107,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    ![dynamicmediaconfiguration2updated](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
-1. Seleccionar **[!UICONTROL Guardar]**. Se guardarán la nueva contraseña y configuración de Dynamic Media. Si ha seleccionado **[!UICONTROL Cancelar]** en su lugar, no se actualiza la contraseña.
+1. Seleccione **[!UICONTROL Guardar]**. Se guardarán la nueva contraseña y configuración de Dynamic Media. Si ha seleccionado **[!UICONTROL Cancelar]** en su lugar, no se actualiza la contraseña.
 1. En el **[!UICONTROL Configuración de Dynamic Media]** , seleccione **[!UICONTROL OK]** para comenzar la configuración.
 
    >[!IMPORTANT]
@@ -115,7 +115,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >Cuando la nueva configuración de Dynamic Media finalice, recibirá una notificación de estado en la bandeja de entrada del Experience Manager as a Cloud Service.
    >
    >Esta notificación de la bandeja de entrada le informa si la configuración se ha realizado correctamente o no.
-   > Consulte [Solución de problemas de una nueva configuración de Dynamic Media](#troubleshoot-dm-config) y [Su bandeja de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) para obtener más información.
+   > Consulte [Solución de problemas de una nueva configuración de Dynamic Media](#troubleshoot-dm-config) y [Su bandeja de entrada](/help/sites-cloud/authoring/inbox.md) para obtener más información.
 
 1. Para previsualizar de forma segura el contenido de Dynamic Media antes de que se publique, Experience Manager as a Cloud Service utiliza la validación basada en tokens y, por lo tanto, Experience Manager Author previsualiza el contenido de Dynamic Media de forma predeterminada. Sin embargo, puede *lista de permitidos* Obtenga más direcciones IP para proporcionar a los usuarios acceso para previsualizar el contenido de forma segura. Para configurar esta acción en Experience Manager as a Cloud Service, consulte [Configuración del programa de instalación de publicación de Dynamic Media para el servidor de imágenes: pestaña Seguridad](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
@@ -139,7 +139,7 @@ Cuando una nueva configuración de Dynamic Media finalice, recibirá una notific
 
 ![Error de bandeja de entrada Experience Manager](/help/assets/dynamic-media/assets/dmconfig-inbox-failure.png)
 
-Consulte también [Su bandeja de entrada](/help/sites-cloud/authoring/getting-started/inbox.md).
+Consulte también [Su bandeja de entrada](/help/sites-cloud/authoring/inbox.md).
 
 **Para solucionar problemas de una nueva configuración de Dynamic Media:**
 
@@ -474,7 +474,7 @@ La configuración de conexión de carga de Dynamic Media Classic (Scene7) sincro
 
 **Para actualizar el número máximo de conexiones de carga al servidor de Dynamic Media Classic (Scene7):**
 
-1. Vaya a `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
+1. Navegue hasta `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. En el **[!UICONTROL Número de conexiones]** o el campo **[!UICONTROL Tiempo de espera del trabajo activo]** , o ambos, cambie el número como desee.
 
    El **[!UICONTROL Número de conexiones]** Esta opción controla la cantidad máxima de conexiones HTTP permitidas para la carga de Experience Manager a Dynamic Media. Normalmente, el valor predefinido de diez conexiones es suficiente.

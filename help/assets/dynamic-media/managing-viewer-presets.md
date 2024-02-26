@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '4326'
 ht-degree: 8%
@@ -114,7 +114,7 @@ Los administradores pueden añadir y personalizar los siguientes tipos de medios
    <td><p>Los visores de imagen panorámica y de realidad virtual panorámica procesan imágenes panorámicas esféricas para sumergir a los usuarios en una experiencia de visualización de 360° de una habitación, propiedad, ubicación o paisaje.</p> <p>Para que una imagen cargada pueda considerarse como un panorama esférico, debe tener uno o ambos de los siguientes elementos:</p>
     <ul>
      <li>Una relación de aspecto de 2:1.</li>
-     <li>Etiquetado con las palabras clave <code>equirectangular</code>, o <code>spherical</code> y <code>panorama</code>, o <code>spherical </code>y <code>panoramic</code>. Consulte <a href="/help/sites-cloud/authoring/features/tags.md">Uso de etiquetas</a>.</li>
+     <li>Etiquetado con las palabras clave <code>equirectangular</code>, o <code>spherical</code> y <code>panorama</code>, o <code>spherical </code>y <code>panoramic</code>. Consulte <a href="/help/sites-cloud/authoring/sites-console/tags.md">Uso de etiquetas</a>.</li>
     </ul> <p>Tanto la proporción de aspecto como los criterios de palabra clave se aplican a los recursos panorámicos para la página de detalles de recursos y el componente WCM "Medios panorámicos".</p></td>
   </tr>
     <tr>
@@ -142,7 +142,7 @@ Los administradores pueden añadir y personalizar los siguientes tipos de medios
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Acercar o alejar</strong></td>
+   <td><strong>Zoom</strong></td>
    <td>Permite a los usuarios ampliar el área seleccionándola. Los usuarios pueden seleccionar controles para acercar, alejar y restablecer el tamaño predeterminado de la imagen.</td>
   </tr>
  </tbody>
@@ -295,7 +295,7 @@ Consulte &quot;Notas de la versión de los visualizadores&quot; en la tabla de c
   </tr>
   <tr>
    <td>Zoom_light<br /> </td>
-   <td>Acercar o alejar</td>
+   <td>Zoom</td>
    <td><code>html5_basiczoomviewer_light.css</code></td>
   </tr>
   <tr>
@@ -320,7 +320,7 @@ La siguiente tabla identifica los gestos del visor móvil compatibles con los di
   <tr>
    <td><strong>Gesto</strong></td>
    <td><strong>Zoom flotante </strong></td>
-   <td><strong>Acercar o alejar</strong></td>
+   <td><strong>Zoom</strong></td>
    <td><strong>Giro</strong></td>
   </tr>
   <tr>

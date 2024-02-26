@@ -2,10 +2,10 @@
 title: Información general sobre fragmentos de experiencias
 description: Ampliar fragmentos de experiencias de Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 29d8d08899bb60b2bf3027ed32dbcdca3a73e671
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '1646'
-ht-degree: 1%
+source-wordcount: '1642'
+ht-degree: 0%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 ## Conceptos básicos {#the-basics}
 
-Un [Fragmento de experiencia](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) es un grupo de uno o más componentes, incluido el contenido y el diseño, al que se puede hacer referencia en las páginas.
+Un [Fragmento de experiencia](/help/sites-cloud/authoring/fragments/content-fragments.md) es un grupo de uno o más componentes, incluido el contenido y el diseño, al que se puede hacer referencia en las páginas.
 
 Un fragmento de experiencia principal, una variante o ambos utilizan:
 
@@ -80,18 +80,16 @@ Al desarrollar una nueva plantilla para fragmentos de experiencias, puede seguir
 
 Para crear una plantilla de fragmento de experiencia que detecte el **Crear fragmento de experiencia** asistente, debe seguir uno de estos conjuntos de reglas:
 
-1. Ambas:
+1. Ambos:
 
    1. El tipo de recurso de la plantilla (el nodo inicial) debe heredar de:
-
       `cq/experience-fragments/components/xfpage`
 
    1. Y el nombre de la plantilla debe comenzar por:
-
       `experience-fragments`
 Este patrón permite a los usuarios crear fragmentos de experiencias en /content/experience-fragments como `cq:allowedTemplates` de esta carpeta incluye todas las plantillas que tienen nombres que comienzan por `experience-fragment`. Los clientes pueden actualizar esta propiedad para incluir sus propios esquemas de nomenclatura o ubicaciones de plantillas.
 
-1. [Plantillas permitidas](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) se puede configurar en la consola Fragmentos de experiencias.
+1. [Plantillas permitidas](/help/sites-cloud/authoring/fragments/content-fragments.md#configure-allowed-templates-folder) se puede configurar en la consola Fragmentos de experiencias.
 
 <!--
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
@@ -114,7 +112,7 @@ La única configuración adicional es garantizar que los componentes estén perm
 The only additional configuration is to ensure that the components are [allowed on the template, this is achieved with the Content Policy](/help/sites-developing/page-templates-editable.md#content-policies).
 -->
 
-## El proveedor de reescritura de vínculos de fragmentos de experiencia: HTML {#the-experience-fragment-link-rewriter-provider-html}
+## El proveedor del reescritor de vínculos de fragmentos de experiencias: HTML {#the-experience-fragment-link-rewriter-provider-html}
 
 AEM En el caso de los fragmentos de experiencias, tiene la posibilidad de crear fragmentos de experiencias. Un fragmento de experiencia:
 

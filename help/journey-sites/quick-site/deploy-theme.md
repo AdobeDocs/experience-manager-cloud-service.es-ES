@@ -2,10 +2,10 @@
 title: Implementar el tema personalizado
 description: Aprenda cómo implementar el tema del sitio mediante la canalización.
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
 workflow-type: tm+mt
-source-wordcount: '1014'
-ht-degree: 88%
+source-wordcount: '1002'
+ht-degree: 95%
 
 ---
 
@@ -36,17 +36,17 @@ Esta parte del recorrido se aplica al desarrollador front-end.
 
 ## Iniciar la canalización {#start-pipeline}
 
-AEM Después de confirmar los cambios de personalización de la temática en el repositorio de Git de, puede ejecutar [la canalización que ha creado el administrador](pipeline-setup.md) para implementar los cambios.
+Una vez que haya confirmado los cambios de personalización del tema en el repositorio de Git de AEM, puede ejecutar [la canalización que el administrador creó](pipeline-setup.md) para implementar los cambios.
 
-1. Inicie sesión en Cloud Manager [como lo hizo para recuperar la información de acceso de Git](retrieve-access.md) y acceda a su programa. En el **Información general** pestaña, verá una tarjeta para **Canalizaciones**.
+1. Inicie sesión en Cloud Manager [como lo hizo para recuperar la información de acceso de Git](retrieve-access.md) y acceda a su programa. En la pestaña **Información general**, verá una tarjeta para **Canalizaciones**.
 
    ![Información general de Cloud Manager](assets/cloud-manager-overview.png)
 
-1. Seleccione los puntos suspensivos junto a la canalización que necesita iniciar. En el menú desplegable, seleccione **Ejecutar**.
+1. Haga clic en los puntos suspensivos junto a la canalización que necesita iniciar. En el menú desplegable, seleccione **Ejecutar**.
 
    ![Ejecutar canalización](assets/run-pipeline.png)
 
-1. En el **Ejecutar canalización** cuadro de diálogo de confirmación, seleccione **Sí**.
+1. En el cuadro de diálogo **Ejecutar canalización** de confirmación, seleccione **Sí**.
 
    ![Confirmar ejecución de canalización](assets/pipeline-confirm.png)
 
@@ -68,7 +68,7 @@ Puede comprobar el estado de la canalización para ver los detalles de su progre
 
 >[!TIP]
 >
->En la ventana de detalles de la canalización, puede seleccionar **Descargar registro** para cualquier paso de la canalización con fines de depuración en caso de que algún paso falle. La depuración de la canalización está fuera del ámbito de este recorrido. Consulte los documentos técnicos de Cloud Manager en la sección [Recursos adicionales](#additional-resources) de esta página.
+>En la ventana de detalles de la canalización, puede hacer clic en **Descargar registro** para cualquier paso de la canalización con fines de depuración en caso de que algún paso falle. La depuración de la canalización está fuera del ámbito de este recorrido. Consulte los documentos técnicos de Cloud Manager en la sección [Recursos adicionales](#additional-resources) de esta página.
 
 ## Validación de las personalizaciones implementadas {#view-customizations}
 
@@ -112,7 +112,9 @@ A continuación se muestran algunos recursos adicionales que profundizan en algu
 * [Tema del sitio AEM](https://github.com/adobe/aem-site-template-standard-theme-e2e): este es el repositorio de GitHub del tema del sitio AEM.
 * [npm](https://www.npmjs.com): los temas de AEM utilizados para construir sitios rápidamente se basan en npm.
 * [webpack](https://webpack.js.org): los temas de AEM utilizados para construir sitios rápidamente dependen del webpack.
-* [Crear y organizar páginas](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) AEM : Esta guía detalla cómo administrar las páginas de su sitio de si desea personalizarlo aún más después de crearlo a partir de la plantilla.
+* [Organización de páginas](/help/sites-cloud/authoring/sites-console/organizing-pages.md) AEM - Esta guía detalla cómo organizar las páginas de su sitio de.
+* [Creación de páginas](/help/sites-cloud/authoring/sites-console/creating-pages.md) : Esta guía detalla cómo añadir nuevas páginas al sitio.
+* [Administración de páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md) : Esta guía detalla cómo administrar las páginas del sitio, incluido el movimiento, la copia y la eliminación.
 * [Cómo trabajar con el paquete](/help/implementing/developing/tools/package-manager.md): los paquetes permiten importar y exportar el contenido del repositorio. Este documento explica cómo trabajar con paquetes en AEM 6.5, que también se aplica a AEMaaCS.
 * [Recorrido de incorporación](/help/journey-onboarding/overview.md): esta guía sirve como punto de partida para garantizar que sus equipos estén configurados y tengan acceso a AEM as a Cloud Service.
 * [Documentación de Cloud Manager de Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=es): explore la documentación de Cloud Manager para obtener toda la información detallada sobre sus funciones.

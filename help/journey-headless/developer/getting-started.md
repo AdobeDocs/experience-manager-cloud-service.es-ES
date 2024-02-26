@@ -2,8 +2,8 @@
 title: Introducción al contenido sin encabezado de AEM as a Cloud Service
 description: En esta parte del Recorrido para desarrolladores de contenido sin encabezado de AEM, obtenga información sobre los requisitos previos.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
 source-wordcount: '3057'
 ht-degree: 100%
 
@@ -286,8 +286,8 @@ Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo sin 
 * [Tutoriales de contenido sin encabezado de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es): utilice estos tutoriales prácticos para explorar cómo utilizar las distintas opciones para enviar contenido a puntos de conexión sin encabezado con AEM y elegir el más adecuado para usted.
 * [Administración de contenido sin encabezado mediante las API de GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless&amp;lang=es#courses): siga este curso para obtener una descripción general de la API de GraphQL implementada en AEM. Se requiere autenticación con AdobeID.
 * [AEM Guides de WKND, GraphQL](https://github.com/adobe/aem-guides-wknd-graphql): este proyecto de GitHub incluye aplicaciones de ejemplo que destacan las API de GraphQL de AEM.
-* [Conceptos sobre la creación](/help/sites-cloud/authoring/getting-started/concepts.md): documentación técnica para el entorno de creación de AEM que incluye detalles sobre la configuración de creación y publicación
-* [Publicación de páginas](/help/sites-cloud/authoring/fundamentals/publishing-pages.md): documentación técnica para la publicación de contenido en AEM
+* [Conceptos sobre la creación](/help/sites-cloud/authoring/author-publish.md): documentación técnica para el entorno de creación de AEM que incluye detalles sobre la configuración de creación y publicación
+* [Publicación de páginas](/help/sites-cloud/authoring/sites-console/publishing-pages.md): documentación técnica para la publicación de contenido en AEM
 * [Convenciones de nomenclatura](/help/implementing/developing/introduction/naming-conventions.md): documentación técnica de las restricciones de asignación de nombres a páginas en AEM
 * [Traductor y administrador de varios sitios](/help/sites-cloud/administering/msm-and-translation.md): documentación técnica sobre potentes funciones de traducción de AEM
 * [Flujos de trabajo de AEM](/help/sites-cloud/authoring/workflows/overview.md): documentación técnica sobre cómo automatizar flujos de trabajo en AEM

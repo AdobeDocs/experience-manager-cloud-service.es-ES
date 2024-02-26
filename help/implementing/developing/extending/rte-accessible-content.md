@@ -3,9 +3,9 @@ title: Configure RTE para crear páginas web y sitios accesibles.
 description: Aprenda a configurar el Editor de texto enriquecido para crear sitios accesibles en [!DNL Adobe Experience Manager].
 contentOwner: AG
 exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
-source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '509'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ Hay nuevos formatos de bloque semántico disponibles para la selección.
 1. [Especifique los formatos que desea tener disponibles en el campo de selección de párrafos](rich-text-editor.md).
 1. Los formatos de párrafo están disponibles para el autor de contenido desde los campos de selección en RTE.
 
-Con los elementos estructurales disponibles en RTE a través de las opciones de formato de párrafo, [!DNL Experience Manager] proporciona una buena base para el desarrollo de contenido accesible. Los autores de contenido no pueden utilizar RTE para dar formato al tamaño de fuente, los colores u otros atributos relacionados, lo que impide la creación de formato en línea. En su lugar, los autores pueden seleccionar los elementos estructurales adecuados, como encabezados y utilizar estilos globales elegidos desde la opción Estilos para garantizar un marcado limpio y buenas opciones para los usuarios que exploran con sus propias hojas de estilos y contenido estructurado correctamente.
+Con los elementos estructurales disponibles en RTE a través de las opciones de formato de párrafo, [!DNL Experience Manager] proporciona una buena base para el desarrollo de contenido accesible. Los autores de contenido no pueden utilizar RTE para dar formato al tamaño de fuente, los colores u otros atributos relacionados, lo que impide la creación de formato en línea. En su lugar, los autores pueden seleccionar los elementos estructurales adecuados, como encabezados y utilizar estilos globales elegidos desde la opción Estilos para garantizar un marcado limpio y mejores opciones para los usuarios que exploran con sus propias hojas de estilos y contenido estructurado correctamente.
 
 ## Uso de la función Modificar código fuente {#use-of-the-source-edit-feature}
 
@@ -148,5 +148,4 @@ In a `Table`, set the attribute to the DOM element or or remove it from the DOM 
 >[!MORELIKETHIS]
 >
 >* [Una guía rápida de los estándares WCAG](/help/compliance/accessibility/quick-guide-wcag.md)
->* [Cómo crear contenido accesible en Experience Manager](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
-
+>* [Cómo crear contenido accesible en Experience Manager](/help/sites-cloud/authoring/page-editor/accessible-content.md)

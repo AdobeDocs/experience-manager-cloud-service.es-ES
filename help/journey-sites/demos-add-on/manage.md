@@ -2,10 +2,10 @@
 title: Administrar los sitios de muestra
 description: Obtenga información sobre las herramientas disponibles para ayudarle a administrar los sitios de muestra y cómo eliminarlos.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 89%
+source-wordcount: '927'
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Este documento le ayuda a comprender cómo administrar los sitios de muestra que
 
 Ahora que tiene sus propios sitios de muestra, probablemente le gustaría saber cómo puede administrarlos. La canalización no solo implementó las plantillas de sitio para dar contenido a los sitios de muestra, sino también un conjunto de utilidades para administrar esos sitios.
 
-1. AEM En la barra de navegación global de la, seleccione **Herramientas** > **Demostraciones de referencia** > **Utilidades de demostración de referencia**.
+1. En la barra de navegación global de AEM, seleccione **Herramientas** > **Demostraciones de referencia** > **Utilidades de demostración de referencia**.
 
    ![Utilidades de demostración de autoservicio](assets/demo-utilities.png)
 
@@ -49,7 +49,7 @@ Ahora que tiene sus propios sitios de muestra, probablemente le gustaría saber 
 
    ![Tablero](assets/dashboard.png)
 
-Utilidades de demostración de autoservicio proporciona varias herramientas.
+Las utilidades de demostración de autoservicio proporcionan varias herramientas.
 
 * **Eliminar sitios**: seleccione el sitio que desee eliminar en esta instancia de Adobe Experience Manager. Tenga en cuenta que esta es una acción destructiva y no se puede deshacer una vez iniciada.
 * **Eliminar plantillas de sitio**: seleccione la plantilla de sitio que desee eliminar en esta instancia de Adobe Experience Manager. Antes de eliminar una plantilla de sitio, asegúrese de que todos los sitios que hacen referencia a la plantilla también se eliminen. Tenga en cuenta que esta es una acción destructiva y no se puede deshacer una vez iniciada.
@@ -62,7 +62,7 @@ Utilidades de demostración de autoservicio proporciona varias herramientas.
 
  Después de probar un conjunto de funcionalidades de AEM, es posible que ya no necesite el sitio de muestra o incluso la plantilla en la que se basa. Es fácil eliminar los sitios de muestra y las plantillas de sitio.
 
-1. Acceda a la **Utilidades de demostración de referencia** y seleccione **Eliminar sitios**.
+1. Acceda a **Utilidades de demostración de referencia** y seleccione **Eliminar sitios**.
 
    ![Eliminar sitios](assets/delete-sites.png)
 
@@ -105,7 +105,7 @@ Ya está listo para explorar las capacidades de AEM usando sus propios sitios de
 
 * [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=es): si desea obtener más información sobre las funciones de Cloud Manager, puede consultar directamente los documentos técnicos detallados.
 * [Crear sitio](/help/sites-cloud/administering/site-creation/create-site.md): aprenda a utilizar AEM para crear un sitio mediante plantillas para definir el estilo y la estructura del sitio.
-* [Convenciones de asignación de nombres a páginas de AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices). Consulte esta página para comprender las convenciones y la organización de páginas de AEM.
-* [Gestión básica de AEM](/help/sites-cloud/authoring/getting-started/basic-handling.md): consulte este documento si es nuevo en AEM para comprender conceptos básicos como la navegación y la organización de la consola.
+* [Convenciones de asignación de nombres a páginas de AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices). Consulte esta página para comprender las convenciones y la organización de páginas de AEM.
+* [Gestión básica de AEM](/help/sites-cloud/authoring/basic-handling.md): consulte este documento si es nuevo en AEM para comprender conceptos básicos como la navegación y la organización de la consola.
 * [Documentación técnica de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es): si ya tiene una base firme de AEM, puede consultar directamente los documentos técnicos detallados.
 * [Plantillas de sitio](/help/sites-cloud/administering/site-creation/site-templates.md): si desea obtener más información acerca de la estructura de las plantillas de sitios y cómo se utilizan para crear sitios, consulte este documento.

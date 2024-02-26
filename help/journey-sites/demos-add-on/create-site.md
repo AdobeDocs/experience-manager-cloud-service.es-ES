@@ -2,10 +2,10 @@
 title: Creación de un sitio de muestra
 description: Cree un sitio de demostración en AEM basado en una biblioteca de plantillas preconfiguradas.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '815'
-ht-degree: 72%
+source-wordcount: '809'
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ En el documento anterior del recorrido del complemento Demostraciones de referen
 * Obtenga información sobre cómo activar el complemento de demostraciones de referencia para el nuevo programa.
 * Poder ejecutar una canalización para implementar el contenido del complemento.
 
-En este artículo se describe el siguiente paso del proceso: crear un sitio o proyecto de AEM Screens AEM en basado en las plantillas del complemento Demostraciones de referencia.
+En este artículo se describe el siguiente paso del proceso: crear un sitio o proyecto de AEM Screens en AEM basado en las plantillas del complemento Demostraciones de referencia.
 
 ## Objetivo {#objective}
 
@@ -35,19 +35,19 @@ Este documento le ayuda a comprender cómo crear un sitio basado en las plantill
 
 Una vez que la canalización haya implementado el complemento Demostraciones de referencia, puede acceder al entorno de creación de AEM para crear sitios de demostración basados en el contenido del complemento.
 
-1. AEM En la página de información general del programa de Cloud Manager, seleccione el vínculo al entorno de creación de.
+1. En la página de información general del programa de Cloud Manager, haga clic en el vínculo al entorno de creación de AEM.
 
    ![Acceso al entorno de creación](assets/access-author.png)
 
-1. AEM En el menú principal de la, seleccione **Sites**.
+1. En el menú principal de AEM, seleccione **Sites**.
 
-   ![Acceso a sitios](assets/access-sites.png)
+   ![Acceso a Sites](assets/access-sites.png)
 
-1. En la consola Sitios, seleccione **Crear** en la parte superior derecha de la pantalla y seleccione **Sitio a partir de plantilla** en la lista desplegable.
+1. Desde la consola Sites, haga clic en **Crear** en la parte superior derecha de la pantalla y seleccione **Sitio a partir de una plantilla** en la lista desplegable.
 
    ![Crear sitio a partir de una plantilla](assets/create-site-from-template.png)
 
-1. Se inicia el asistente para la creación del sitio. En la columna izquierda puede ver las plantillas de demostración que la canalización implementó en la instancia de creación. Seleccione uno para seleccionarlo y mostrar los detalles en la columna derecha. Si desea probar o hacer una demostración de AEM Screens, asegúrese de elegir **Plantilla del sitio de We.Cafe**. Seleccione **Siguiente**.
+1. Se inicia el asistente para la creación del sitio. En la columna izquierda puede ver las plantillas de demostración que la canalización implementó en la instancia de creación. Haga clic en una para seleccionarla y mostrar los detalles en la columna derecha. Si desea probar o hacer una demostración de AEM Screens, asegúrese de seleccionar la opción **Plantilla de sitio de We.Cafe**. Seleccione **Siguiente**.
 
    ![Asistente de creación de sitios](assets/site-creation-wizard.png)
 
@@ -59,7 +59,7 @@ Una vez que la canalización haya implementado el complemento Demostraciones de 
 
    ![Detalles del sitio](assets/site-details.png)
 
-1. La creación del sitio se confirma con un cuadro de diálogo. Seleccionar **Listo**.
+1. La creación del sitio se confirma con un cuadro de diálogo. Seleccione **Listo**.
 
    ![Creación del sitio completa](assets/site-creation-complete.png)
 
@@ -81,7 +81,7 @@ Ahora que se ha creado el sitio de demostración, puede navegar y utilizarlo com
 
    ![Estructura del sitio](assets/site-structure.png)
 
-1. Seleccione una página para seleccionarla y luego seleccione **Editar** en la barra de herramientas.
+1. Seleccione una página para seleccionarla y luego **Editar** en la barra de herramientas.
 
    ![Seleccionar página](assets/select-page.png)
 
@@ -103,12 +103,12 @@ Ahora que ha completado esta parte del recorrido del complemento de demostració
 
 Ahora puede probar las características de AEM usando contenido de complementos. Tiene dos opciones para continuar con el recorrido:
 
-* Si desea realizar una demostración completa y probar el contenido de AEM Screens, asegúrese de haber implementado un sitio basado en **Plantilla del sitio de We.Cafe** como se describió anteriormente y siga [Habilite AEM Screens para el sitio de demostración.](screens.md)
-* Si solo tiene que mostrar contenido de Sites, continúe a [Administrar Los Sitios De Demostración,](manage.md) donde puede obtener información sobre las herramientas disponibles para ayudarle a administrar los sitios de muestra y cómo eliminarlos.
+* Si desea llevar a cabo una demostración completa y probar el contenido de AEM Screens, asegúrese de que ha implementado un sitio basado en la **Plantilla de sitio de We.Cafe**, tal como se ha descrito antes. Continúe a [Habilitación de AEM Screens para el sitio de demostración.](screens.md)
+* Si solo tiene que mostrar contenido de Sites, continúe con [Administración de los sitios de demostración,](manage.md) donde conocerá las herramientas disponibles para ayudarle a administrar los sitios de demostración y cómo eliminarlos.
 
 ## Recursos adicionales {#additional-resources}
 
 * [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=es): si desea obtener más información sobre las funciones de Cloud Manager, puede consultar directamente los documentos técnicos detallados.
 * [Crear sitio](/help/sites-cloud/administering/site-creation/create-site.md): aprenda a utilizar AEM para crear un sitio mediante plantillas para definir el estilo y la estructura del sitio.
-* [Convenciones de asignación de nombres a páginas de AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices). Consulte esta página para comprender las convenciones y la organización de páginas de AEM.
-* [Gestión básica de AEM](/help/sites-cloud/authoring/getting-started/basic-handling.md): consulte este documento si es nuevo en AEM para comprender conceptos básicos como la navegación y la organización de la consola.
+* [Convenciones de asignación de nombres a páginas de AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices). Consulte esta página para comprender las convenciones y la organización de páginas de AEM.
+* [Gestión básica de AEM](/help/sites-cloud/authoring/basic-handling.md): consulte este documento si es nuevo en AEM para comprender conceptos básicos como la navegación y la organización de la consola.

@@ -4,8 +4,8 @@ description: Obtenga información sobre las prácticas recomendadas recopiladas 
 feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ La creación o ampliación de una presencia web global puede ser un proceso comp
 
 * Al diseñar la estructura del sitio, comience por examinar el contenido y determinar dónde y en qué idioma se crea el contenido. Esta ubicación debe ser el nivel superior del sitio.
 * Una práctica recomendada es la **estructura basada en un idioma** con no más de tres niveles entre el nivel superior de creación y los sitios del país.
-* Utilice una convención de nomenclatura de sitios por idioma/país que siga los **[estándares W3C](/help/sites-cloud/authoring/fundamentals/accessible-content.md)**.
+* Utilice una convención de nomenclatura de sitios por idioma/país que siga los **[estándares W3C](/help/sites-cloud/authoring/page-editor/accessible-content.md)**.
 * Determine cómo se distribuye el contenido por regiones y países. Considere qué países comparten idiomas. Se recomienda crear formatos de idiomas, una capa de páginas no activadas, donde el contenido traducido puede revisarse y modificarse, luego ser transferido o llevado a un sitio de un país que comparta ese idioma.
 * Existen dos métodos para crear formatos de idiomas: usando copias de idioma y usando MSM/Live Copies.
    * El enfoque de copia de idioma es el que utiliza el marco de trabajo de integración de traducción predeterminado de AEM y, por lo tanto, es la forma más sencilla de empezar. El marco de trabajo proporciona una interfaz de usuario que facilita inicialmente la propagación y traducción de los cambios de contenido del formato de idioma principal (por ejemplo, inglés) a los otros formatos de idioma. Sin embargo, a medida que el proyecto crece, la automatización del flujo de trabajo se hace cada vez más necesaria para administrar la traducción del mayor número de páginas o idiomas.

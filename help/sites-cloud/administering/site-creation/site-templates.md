@@ -4,10 +4,10 @@ description: Descubra cómo se pueden utilizar las plantillas de sitio AEM para 
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 84%
+source-wordcount: '556'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ Las plantillas son eficaces, ya que se pueden reutilizar y personalizar. Y como 
 
 >[!NOTE]
 >
->Las plantillas de sitio de AEM no deben confundirse con las [plantillas de página](/help/sites-cloud/authoring/features/templates.md). Las plantillas de sitio definen la estructura general de un sitio. Una plantilla de página define la estructura y el contenido inicial de una página individual.
+>Las plantillas de sitio de AEM no deben confundirse con las [plantillas de página](/help/sites-cloud/authoring/sites-console/templates.md). Las plantillas de sitio definen la estructura general de un sitio. Una plantilla de página define la estructura y el contenido inicial de una página individual.
 >
 >Las plantillas de sitio de AEM no deben confundirse con los [temas de sitio de AEM](site-themes.md). Los temas del sitio de AEM solo contienen la información de estilo de un sitio de AEM. Las plantillas del sitio de AEM definen la estructura del sitio y el contenido inicial. Además, contienen un tema del sitio de AEM para permitir una [rápida creación del sitio](create-site.md).
 
@@ -37,7 +37,7 @@ Puede agregar varias plantillas a AEM, que luego se pueden usar para [crear siti
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Seleccionar **Crear** en la parte superior derecha de la pantalla y en el menú desplegable, seleccione **Sitio a partir de plantilla**.
+1. Seleccione **Crear** en la parte superior derecha de la pantalla y en el menú desplegable, seleccione **Sitio a partir de una plantilla**.
 
    ![Creación de un sitio a partir de una plantilla](../assets/create-site-from-template.png)
 

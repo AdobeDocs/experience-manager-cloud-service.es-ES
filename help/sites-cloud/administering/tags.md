@@ -2,7 +2,7 @@
 title: Administración de etiquetas
 description: AEM Obtenga información sobre cómo administrar etiquetas en la de organizar el contenido.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '2200'
 ht-degree: 1%
@@ -16,7 +16,7 @@ Las etiquetas son un método intuitivo de clasificar el contenido. Se pueden con
 En Adobe Experience Manager AEM (), una etiqueta puede ser una propiedad de:
 
 * Un nodo de contenido para una página
-   * Ver el documento [Uso de etiquetas](/help/sites-cloud/authoring/features/tags.md) para obtener más información.
+   * Ver el documento [Uso de etiquetas](/help/sites-cloud/authoring/sites-console/tags.md) para obtener más información.
 * Un nodo de metadatos para un recurso
    * Ver el documento [Administración de metadatos para recursos digitales](/help/assets/manage-metadata.md) para obtener más información.
 
@@ -135,7 +135,7 @@ AEM Al igual que con la creación de cualquier otro contenido en la, después de
 
    ![Selección de etiquetas en la consola](assets/select-tags.png)
 
-1. El **Publicar etiqueta** El cuadro de diálogo solicita una confirmación para publicar las etiquetas seleccionadas. Seleccionar **Publish**.
+1. El **Publicar etiqueta** El cuadro de diálogo solicita una confirmación para publicar las etiquetas seleccionadas. Seleccione **Publicar**.
 
    ![El modal de confirmación Publicar etiqueta](assets/publish-tag.png)
 
@@ -183,7 +183,7 @@ Puede ver más detalles acerca de la etiqueta, incluidos quién la publicó por 
 
    ![Visualización de propiedades de etiqueta](assets/tag-properties.png)
 
-Para obtener más información sobre la selección de los modos de visualización y el carril, consulte [Gestión básica](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+Para obtener más información sobre la selección de los modos de visualización y el carril, consulte [Gestión básica](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 ### Edición de etiquetas {#editing-tags}
 
@@ -215,7 +215,7 @@ Para desactivar la etiqueta en la instancia de autor y quitarla de la instancia 
 
    ![Selección de etiquetas en la consola](assets/select-tags.png)
 
-1. El **Cancelar publicación de etiqueta** El cuadro de diálogo solicita una confirmación para publicar las etiquetas seleccionadas. Seleccionar **Publish**.
+1. El **Cancelar publicación de etiqueta** El cuadro de diálogo solicita una confirmación para publicar las etiquetas seleccionadas. Seleccione **Publicar**.
 
    ![El modal de confirmación Publicar etiqueta](assets/unpublish-tag.png)
 
@@ -245,7 +245,7 @@ Puede resultar útil ver a qué contenido se aplica una etiqueta en particular. 
 
 Pase el ratón o seleccione un contenido de referencia en la lista para mostrar la ruta completa del contenido.
 
-Para obtener más información sobre la selección de los modos de visualización y el carril, consulte [Gestión básica](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+Para obtener más información sobre la selección de los modos de visualización y el carril, consulte [Gestión básica](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 ### Mover etiquetas {#moving-tags}
 

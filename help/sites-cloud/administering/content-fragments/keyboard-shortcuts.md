@@ -4,7 +4,7 @@ description: AEM Hay varios métodos abreviados del teclado disponibles mediante
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 88%
@@ -15,7 +15,7 @@ ht-degree: 88%
 
 Hay una selección de métodos abreviados de teclado disponibles para su uso en la consola Fragmentos de contenido.
 
-Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se aplican cuando [edición de páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), otros al [uso general de las consolas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se aplican cuando [edición de páginas](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), otros al [uso general de las consolas](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -38,11 +38,11 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 | Seleccionar uno o varios fragmentos de contenido | `u` | Abrir el cuadro de diálogo Cancelar la publicación ahora |
 | Cualquier cuadro de diálogo abierto | `esc` | El cuadro de diálogo se cierra |
 
-También hay varios métodos abreviados de teclado disponibles para los usuarios de escritorio. Algunos se emplean en la [edición de páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md) y otros, en el [uso de las consolas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) habitual.
+También hay varios métodos abreviados de teclado disponibles para los usuarios de escritorio. Algunos se emplean en la [edición de páginas](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md) y otros, en el [uso de las consolas](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) habitual.
 
 >[!NOTE]
 >
->Los métodos abreviados del teclado del editor siempre están activos independientemente de si [se han desactivado los métodos abreviados de la consola](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
+>Los métodos abreviados del teclado del editor siempre están activos independientemente de si [se han desactivado los métodos abreviados de la consola](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
 
 ## Teclas modificadoras específicas del sistema operativo {#os-specific-modifier-keys}
 

@@ -2,7 +2,7 @@
 title: Uso de fragmentos de contenido (recursos - fragmentos de contenido)
 description: Descubra cómo el as a Cloud Service Fragmentos de contenido en Adobe Experience Manager AEM () le permite diseñar, crear, depurar y utilizar contenido independiente de las páginas, lo que resulta ideal para la creación de páginas y la entrega sin encabezado. También cómo se pueden usar junto con MSM.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '2222'
 ht-degree: 57%
@@ -11,7 +11,7 @@ ht-degree: 57%
 
 # Trabajar con fragmentos de contenido {#working-with-content-fragments}
 
-Con Adobe Experience Manager AEM () as a Cloud Service, los fragmentos de contenido le permiten diseñar, crear, depurar y [publicar contenido independiente de las páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Permiten preparar contenido listo para usar en varias ubicaciones/en varios canales, lo que resulta ideal para la entrega sin encabezado. También se pueden utilizar junto con [Administración de varios sitios para permitirle reutilizar el contenido](#reusing-content-fragments-with-msm-assets).
+Con Adobe Experience Manager AEM () as a Cloud Service, los fragmentos de contenido le permiten diseñar, crear, depurar y [publicar contenido independiente de las páginas](/help/sites-cloud/authoring/fragments/content-fragments.md). Permiten preparar contenido listo para usar en varias ubicaciones/en varios canales, lo que resulta ideal para la entrega sin encabezado. También se pueden utilizar junto con [Administración de varios sitios para permitirle reutilizar el contenido](#reusing-content-fragments-with-msm-assets).
 
 Los fragmentos de contenido incluyen contenido estructurado:
 
@@ -56,7 +56,7 @@ Esta y las siguientes páginas tratan sobre las tareas para crear, configurar, m
 >
 >Estas páginas se pueden leer con:
 >
->* [Creación de páginas con fragmentos de contenido](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* [Creación de páginas con fragmentos de contenido](/help/sites-cloud/authoring/fragments/content-fragments.md).
 >* [Personalizar y ampliar fragmentos de contenido](/help/implementing/developing/extending/content-fragments-customizing.md)
 >* [Fragmentos de contenido Configurar componentes para procesamiento](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Compatibilidad con fragmentos de contenido en la API HTTP de AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
@@ -82,7 +82,7 @@ Estos fragmentos de contenido se pueden ensamblar para ofrecer experiencias en v
 
 >[!NOTE]
 >
->Los **fragmentos de contenido** y los **[fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** son funciones distintas de AEM:
+>Los **fragmentos de contenido** y los **[fragmentos de experiencias](/help/sites-cloud/authoring/fragments/content-fragments.md)** son funciones distintas de AEM:
 >* Los **fragmentos de contenido** son contenidos editoriales, con definición y estructura, pero sin diseño y/o maquetación visuales adicionales. Pueden utilizarse para acceder a datos estructurados, incluidos textos, números y fechas, entre otros.
 >* Los **fragmentos de experiencias** son contenidos plenamente diseñados; un fragmento de una página web.
 >
@@ -133,7 +133,7 @@ Los fragmentos de contenido son lo siguiente:
    * Los fragmentos de contenido (y sus variaciones) se pueden crear y mantener desde **Assets** consola.
    * Se crean y editan en el editor de fragmentos de contenido.
 
-* Se utiliza en [por el componente Fragmento de contenido](/help/sites-cloud/authoring/fundamentals/content-fragments.md) (componente de referencia):
+* Se utiliza en [por el componente Fragmento de contenido](/help/sites-cloud/authoring/fragments/content-fragments.md) (componente de referencia):
 
    * El componente **Fragmento de contenido** está disponible para los autores de páginas. Les permite hacer referencia y entregar el fragmento de contenido requerido en formato HTML o JSON.
 
@@ -177,7 +177,7 @@ Los recursos se pueden utilizar con un fragmento de contenido de varias formas, 
    * Tiene cierta flexibilidad para el posicionamiento.
    * No proporcionan el concepto de aprobarse para un fragmento específico.
 
-  Consulte el [Explorador de recursos](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) para obtener más información.
+  Consulte el [Explorador de recursos](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) para obtener más información.
 
 ### Partes constitutivas de un fragmento de contenido {#constituent-parts-of-a-content-fragment}
 
@@ -200,7 +200,7 @@ Los activos de fragmento de contenido están formados por las siguientes partes 
 
    * Recursos (imágenes) insertados en el fragmento real y usados como contenido interno de un fragmento.
    * Incrustado en el sistema de párrafos del fragmento.
-   * Se les puede dar formato cuando el [fragmento se utiliza/referencia en una página](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+   * Se les puede dar formato cuando el [fragmento se utiliza/referencia en una página](/help/sites-cloud/authoring/fragments/content-fragments.md).
    * Solo se pueden agregar, eliminar o mover dentro de un fragmento con el editor de fragmentos. Estas acciones no se pueden llevar a cabo en el editor de páginas.
    * Solo se pueden agregar, eliminar o mover dentro de un fragmento con la variable [Formato de texto enriquecido en el editor de fragmentos](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
    * Solo se puede añadir a elementos de texto multilínea (cualquier tipo de fragmento).
@@ -264,8 +264,8 @@ Los activos de fragmento de contenido están formados por las siguientes partes 
 Contenido intermedio:
 
 * Disponible para usar en el editor de páginas al trabajar con fragmentos de contenido.
-* [Contenido adicional que se añade dentro del flujo de un fragmento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-in-between-content) después de usarla o de hacer referencia a ella en una página.
-* Disponible para su uso en [Editor de páginas al trabajar con fragmentos de contenido](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+* [Contenido adicional que se añade dentro del flujo de un fragmento](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-in-between-content) después de usarla o de hacer referencia a ella en una página.
+* Disponible para su uso en [Editor de páginas al trabajar con fragmentos de contenido](/help/sites-cloud/authoring/fragments/content-fragments.md).
 * El contenido intermedio se puede añadir a cualquier fragmento donde solo haya un elemento visible.
 * Se puede utilizar contenido asociado, así como recursos o componentes del explorador adecuado.
 
@@ -293,7 +293,7 @@ Para utilizar los fragmentos de contenido para la creación de páginas, tambié
 * **Componente Fragmento de contenido**
 
    * Instrumental para entregar el fragmento en formato HTML, en formato JSON o en ambos.
-   * Requerido para [hacer referencia al fragmento en una página](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+   * Requerido para [hacer referencia al fragmento en una página](/help/sites-cloud/authoring/fragments/content-fragments.md).
    * Responsable del diseño y entrega de un fragmento; es decir, de los canales.
    * Los fragmentos necesitan uno o más componentes dedicados para definir el diseño y proporcionar algunos o todos los elementos/variaciones y el contenido asociado.
    * Al arrastrar un fragmento a una página en la creación, se asocia automáticamente el componente requerido.

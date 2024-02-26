@@ -2,7 +2,7 @@
 title: Marco de trabajo de etiquetado de AEM
 description: AEM Etiquete el contenido y utilice la infraestructura de etiquetado de la para categorizarlo y organizarlo.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 El etiquetado permite clasificar y organizar el contenido. Las etiquetas se pueden clasificar por un área de nombres y una taxonomía. Para obtener información detallada sobre el uso de etiquetas:
 
-* Consulte [Uso de etiquetas](/help/sites-cloud/authoring/features/tags.md) para obtener información sobre cómo etiquetar contenido como autor de contenido.
+* Consulte [Uso de etiquetas](/help/sites-cloud/authoring/sites-console/tags.md) para obtener información sobre cómo etiquetar contenido como autor de contenido.
 * Consulte Administración de etiquetas para conocer la perspectiva de un administrador sobre la creación y administración de etiquetas y sobre las etiquetas de contenido que se han aplicado.
 
 AEM Este artículo se centra en el marco de trabajo subyacente que admite el etiquetado en los entornos de y en cómo utilizarlo como desarrollador.
@@ -175,7 +175,7 @@ Cuando la etiqueta A se mueva o combine en la etiqueta B en `/content/cq:tags`:
      >
      >El `cq:movedTo` La propiedad solo se añade a la etiqueta movida o combinada si se cumple cualquiera de estas condiciones:
      >
-     > 1. La etiqueta se utiliza en el contenido (lo que significa que tiene una referencia). O
+     > 1. La etiqueta se utiliza en el contenido (lo que significa que tiene una referencia). OR
      > 1. La etiqueta tiene elementos secundarios que ya se han movido.
      >
 * La etiqueta B se crea (si hay un movimiento) y recibe un `cq:backlinks` propiedad.

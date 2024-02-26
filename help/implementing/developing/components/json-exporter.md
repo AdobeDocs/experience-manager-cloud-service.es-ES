@@ -2,7 +2,7 @@
 title: Exportador JSON para servicios de contenido
 description: AEM AEM Los servicios de contenido están diseñados para generalizar la descripción y la entrega de contenido desde o hacia el exterior, más allá de un enfoque en las páginas web. Los servicios de contenido están diseñados para proporcionar una descripción y una entrega de contenido desde o hacia el interior de las páginas web. AEM Proporcionan la entrega de contenido a canales que no son páginas web tradicionales, utilizando métodos estandarizados que cualquier cliente puede consumir.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 17%
@@ -78,5 +78,5 @@ La página puede contener un solo fragmento de contenido o varios componentes de
 
 * [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md)
 * [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-* [Creación con fragmentos de contenido](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
+* [Creación con fragmentos de contenido](/help/sites-cloud/authoring/fragments/content-fragments.md)
 * [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y el [Componente Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es)

@@ -1,7 +1,7 @@
 ---
 title: Configuración del contenedor y el modo de diseño
 description: Aprenda a configurar el contenedor y el modo de diseño para habilitar los diseños adaptables para los autores de contenido.
-source-git-commit: 4ae0ae4fbf8f6a97434628f5f6049720c6c43118
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 3%
@@ -11,11 +11,11 @@ ht-degree: 3%
 
 # Configuración del contenedor y el modo de diseño {#configuring-layout-container-and-layout-mode}
 
-[Diseño interactivo](/help/sites-cloud/authoring/features/responsive-layout.md) es un mecanismo para realizar [diseño web adaptable.](https://en.wikipedia.org/wiki/Responsive_web_design) Esto permite al autor del contenido crear páginas web con un diseño y dimensiones dependientes de los dispositivos que utilizan los usuarios.
+[Diseño interactivo](/help/sites-cloud/authoring/page-editor/responsive-layout.md) es un mecanismo para realizar [diseño web adaptable.](https://en.wikipedia.org/wiki/Responsive_web_design) Esto permite al autor del contenido crear páginas web con un diseño y dimensiones dependientes de los dispositivos que utilizan los usuarios.
 
 AEM realiza un diseño interactivo para sus páginas mediante una combinación de diferentes mecanismos:
 
-* **[Contenedor de diseño](/help/sites-cloud/authoring/features/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** : Este componente proporciona un sistema de párrafos de cuadrícula que le permite agregar y colocar componentes dentro de una cuadrícula adaptable.
+* **[Contenedor de diseño](/help/sites-cloud/authoring/page-editor/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** : Este componente proporciona un sistema de párrafos de cuadrícula que le permite agregar y colocar componentes dentro de una cuadrícula adaptable.
    * Se puede utilizar como parsys predeterminado para la página o estar disponible para los autores en el explorador de componentes.
    * El valor predeterminado **Contenedor de diseño** el componente se define en `/libs/wcm/foundation/components/responsivegrid`.
    * Puede definir contenedores de diseño:
@@ -23,8 +23,8 @@ AEM realiza un diseño interactivo para sus páginas mediante una combinación d
       * Como parsys predeterminado para la página.
       * Como componente y como parsys predeterminado.
          * Puede tener el contenedor de diseño como estándar para la página, a la vez que permite al usuario agregar más contenedores de diseño dentro de esta página; por ejemplo, para lograr el control de columna.
-* **[Modo de diseño](/help/sites-cloud/authoring/fundamentals/environment-tools.md)** : Una vez que el contenedor de diseño esté colocado en la página, puede utilizar el **Diseño** modo para colocar contenido en la cuadrícula adaptable.
-* **[Emulador](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate)** - Esto le permite crear y editar sitios web adaptables que reorganizan el diseño según el tamaño del dispositivo o la ventana mediante el cambio de tamaño de los componentes de forma interactiva. A continuación, el usuario puede ver cómo se representa el contenido mediante el emulador.
+* **[Modo de diseño](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)** : Una vez que el contenedor de diseño esté colocado en la página, puede utilizar el **Diseño** modo para colocar contenido en la cuadrícula adaptable.
+* **[Emulador](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)** - Esto le permite crear y editar sitios web adaptables que reorganizan el diseño según el tamaño del dispositivo o la ventana mediante el cambio de tamaño de los componentes de forma interactiva. A continuación, el usuario puede ver cómo se representa el contenido mediante el emulador.
 
 Con estos mecanismos de cuadrícula adaptable puede hacer lo siguiente:
 
@@ -220,9 +220,9 @@ Para que el diseño sea eficaz, el autor del contenido debe poder arrastrar inst
 
 Para permitir que los autores agreguen más cuadrículas adaptables a las páginas de contenido, debe habilitar el componente Contenedor de diseño para su página. Para ello, utilice uno de los métodos siguientes:
 
-* **A través del entorno de creación** - [Edite las plantillas de página](/help/sites-cloud/authoring/features/templates.md) para habilitar el contenedor de diseño para una página.
+* **A través del entorno de creación** - [Edite las plantillas de página](/help/sites-cloud/authoring/sites-console/templates.md) para habilitar el contenedor de diseño para una página.
 * **Definición del componente** - Uso `allowedComponent` o una inclusión estática al definir el componente.
 
 ### Configuración de la cuadrícula del contenedor de diseño {#configure-the-grid-of-the-layout-container}
 
-Puede configurar el número de columnas disponibles para cada instancia específica del contenedor de diseño [editando las plantillas de página.](/help/sites-cloud/authoring/features/templates.md)
+Puede configurar el número de columnas disponibles para cada instancia específica del contenedor de diseño [editando las plantillas de página.](/help/sites-cloud/authoring/sites-console/templates.md)

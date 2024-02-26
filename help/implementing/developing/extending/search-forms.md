@@ -2,16 +2,16 @@
 title: Configurar formularios de búsqueda
 description: Configuración de Search Forms para Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
-source-wordcount: '2033'
-ht-degree: 17%
+source-wordcount: '2036'
+ht-degree: 10%
 
 ---
 
 # Configurar formularios de búsqueda {#configuring-search-forms}
 
-Adobe Experience Manager as a Cloud Service incluye un potente [Buscar](/help/sites-cloud/authoring/getting-started/search.md) mecanismo.
+Adobe Experience Manager as a Cloud Service incluye un potente [Buscar](/help/sites-cloud/authoring/search.md) mecanismo.
 
 En combinación con esto, también hay un conjunto de opciones predefinidas para ayudarle a filtrar su contenido. Contienen facetas predefinidas como **Fecha de modificación**, **Estado de publicación**, o **Estado de Livecopy** para ayudarle a explorar en profundidad rápidamente los recursos que necesita.
 
@@ -19,9 +19,9 @@ En combinación con esto, también hay un conjunto de opciones predefinidas para
 
 Juntos, estos objetivos le ayudan a localizar su contenido de forma rápida y sencilla desde:
 
-* [Buscar y filtrar](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
-* [Selector de carril](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
-* el [Explorador de recursos](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) (al editar páginas)
+* [Buscar y filtrar](/help/sites-cloud/authoring/search.md#search-and-filter)
+* [Selector de carril](/help/sites-cloud/authoring/basic-handling.md#rail-selector)
+* el [Explorador de recursos](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) (al editar páginas)
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ El **Buscar Forms** proporciona una selección de forma predeterminada de [predi
 
 * **Herramientas**
    * **General**
-      * **Formularios de búsqueda**
+      * **Buscar Forms**
 
 ## Forms predeterminado {#default-forms}
 
@@ -43,9 +43,9 @@ La primera vez que acceda al **Buscar Forms** consola puede ver que todas las co
 
 Las configuraciones predeterminadas disponibles (enumeradas alfabéticamente) son las siguientes:
 
-* **Carril de búsqueda de administración de recursos**
+* **Carril de búsqueda de administración de Assets**
 * **Editor de páginas (búsqueda de documentos)**
-* **Editor de página (búsqueda de fragmentos de experiencias)**
+* **Editor de páginas (búsqueda de fragmentos de experiencias)**
 * **Editor de páginas (búsqueda de imágenes)**
 * **Editor de páginas (búsqueda de manuscritos)**
 * **Editor de páginas (búsqueda de páginas)**
@@ -53,13 +53,13 @@ Las configuraciones predeterminadas disponibles (enumeradas alfabéticamente) so
 * **Editor de páginas (búsqueda de productos)**
 * **Editor de páginas (búsqueda de Scene7)**
 * **Editor de páginas (búsqueda de vídeos)**
-* **Carril de búsqueda de administración de proyecto**
+* **Carril de búsqueda del administrador del proyecto**
 * **Carril de búsqueda de traducción del proyecto**
 * **Carril de búsqueda de administración de sitios**
-* **Carril de búsqueda de administración de fragmentos de código**
+* **Carril de búsqueda de administración de fragmentos**
 * **Carril de búsqueda de administración de Stock**
 * **Carril de búsqueda de modelos de fragmentos de contenido**
-* **Carril de búsqueda de administración de proyecto**
+* **Carril de búsqueda del administrador del proyecto**
 * **Carril de búsqueda de traducción del proyecto**
 
 >[!NOTE]
@@ -78,7 +78,7 @@ Los siguientes predicados están disponibles, según la configuración:
   <tr>
    <th>Predicado</th>
    <th>Función</th>
-   <th>Configuración</th>
+   <th>Ajustes</th>
   </tr>
   <tr>
    <td>Análisis</td>
@@ -95,7 +95,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Descripción</li>
     </ul> 
    </td>
@@ -106,7 +106,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Marcador de posición</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Descripción</li>
     </ul> 
    </td>
@@ -128,7 +128,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Descripción</li>
     </ul> 
    </td>
@@ -139,7 +139,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Marcador de posición</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Profundidad de la propiedad</li>
      <li>Descripción</li>
     </ul> </td>
@@ -151,7 +151,7 @@ Los siguientes predicados están disponibles, según la configuración:
     <ul>
      <li>Etiqueta de campo</li>
      <li>Marcador de posición</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Texto de intervalo (desde)*</li>
      <li>Texto de intervalo (hasta)*</li>
      <li>Descripción</li>
@@ -163,7 +163,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Descripción</li>
     </ul> </td>
   </tr>
@@ -173,7 +173,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Ruta de opción</li>
      <li>Descripción</li>
     </ul> </td>
@@ -184,7 +184,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li> 
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Ruta de tipo MIME</li>
      <li>Descripción</li>
     </ul> 
@@ -214,7 +214,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>Un filtro de propiedad y valor, no visible para el usuario.</td>
    <td>
     <ul>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Valor de propiedad*</li>
      <li>Descripción</li>
     </ul> </td>
@@ -246,7 +246,7 @@ Los siguientes predicados están disponibles, según la configuración:
     <ul>
      <li>Etiqueta de campo</li>
      <li>Marcador de posición</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Compatibilidad con el delimitador</li>
      <li>Delimitadores de entrada</li>
      <li>Ignorar mayúsculas y minúsculas</li>
@@ -260,23 +260,23 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de la propiedad*</li>
-     <li>Una sola selección</li>
+     <li>Nombre de propiedad*</li>
+     <li>Selección única</li>
      <li>Agregar opciones</li>
      <li>Manual</li>
      <li>Descripción</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Opciones Propiedad</td>
+   <td>Propiedad Options</td>
    <td>Busque una o más propiedades de la opción.</td>
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Ruta del nodo de opciones</li>
      <li>Profundidad de la propiedad</li>
-     <li>Una sola selección</li>
+     <li>Selección única</li>
      <li>Descripción</li>
     </ul> </td>
   </tr>
@@ -286,8 +286,8 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de la propiedad de publicación*</li>
-     <li>Nombre de la propiedad de páginas bloqueadas*</li>
+     <li>Nombre de propiedad de publicación*</li>
+     <li>Nombre de propiedad de páginas bloqueadas*</li>
      <li>Descripción</li>
     </ul> </td>
   </tr>
@@ -342,7 +342,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Descripción</li>
     </ul> </td>
   </tr>
@@ -352,7 +352,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Descripción</li>
     </ul> </td>
   </tr>
@@ -362,7 +362,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Ruta de opción</li>
      <li>Descripción</li>
     </ul> </td>
@@ -373,7 +373,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Fecha relativa</li>
      <li>Descripción</li>
     </ul> </td>
@@ -384,7 +384,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Ruta del nodo de opciones</li>
      <li>Descripción</li>
     </ul> </td>
@@ -406,7 +406,7 @@ Los siguientes predicados están disponibles, según la configuración:
     <ul>
      <li>Lavel de campo</li>
      <li>Marcador de posición</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Mostrar la opción de hacer coincidir todas las etiquetas</li>
      <li>Ruta de etiquetas raíz</li>
      <li>Descripción</li>
@@ -418,7 +418,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Marcador de posición</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Descripción</li>
     </ul> 
    </td>
@@ -501,7 +501,7 @@ En función del predicado, hay una selección de opciones disponibles para la co
 
   Detalles descriptivos del usuario.
 
-* **Marcador de posición**
+* **Marcador**
 
   Texto vacío o el marcador de posición del predicado en caso de que no se introduzca ningún texto de filtrado.
 
@@ -511,7 +511,7 @@ En función del predicado, hay una selección de opciones disponibles para la co
 
   Si desea buscar únicamente en un nodo secundario de primer nivel del recurso que tiene la variable `x` propiedad en el `jcr:content` uso de nodo `*/jcr:content/x`
 
-* **Profundidad de la propiedad**
+* **Profundidad de propiedad**
 
   Profundidad máxima para buscar esa propiedad dentro de los recursos. Por lo tanto, se puede realizar una búsqueda de esa propiedad en un recurso y en elementos secundarios recursivos hasta que el nivel de los elementos secundarios sea igual a la profundidad especificada.
 

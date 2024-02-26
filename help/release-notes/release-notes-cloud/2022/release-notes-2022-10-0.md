@@ -2,10 +2,10 @@
 title: Notas de la versión 2022.10.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2022.10.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 77%
+source-wordcount: '833'
+ht-degree: 78%
 
 ---
 
@@ -23,7 +23,7 @@ En la siguiente sección se describen las notas de la versión de la función pa
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de [!DNL Adobe Experience Manager] como una versión mensual actual de [!DNL Cloud Service] (2022.10.0) es el 10 de noviembre de 2022. La próxima versión mensual (2023.1.0) está planificada para el 9 de febrero de 2023.
+La fecha de lanzamiento de [!DNL Adobe Experience Manager] como una versión mensual actual de [!DNL Cloud Service] (2022.10.0) es el 10 de noviembre de 2022. La próxima versión mensual (2023.1.0) está planificada para el viernes, 09 de febrero de 2023.
 
 ## Vídeo de la versión {#release-video}
 
@@ -36,7 +36,7 @@ Eche un vistazo al vídeo Información general sobre la versión de octubre de 2
 
 ### Nuevas funciones de [!DNL Sites] {#sites-features}
 
-* El [Pestaña Personalización para fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) permite al editor de fragmentos de experiencias las funciones de especificación de segmentación y la flexibilidad para crear fragmentos de experiencias anidados, mediante la cual se pueden crear variaciones de encabezados y pies de página para varios segmentos. Antes del lanzamiento de esta funcionalidad, la personalización que ofrece AEM solo está disponible para páginas de sitio, pero no para Fragmentos de experiencias
+* El [Pestaña Personalización para fragmentos de experiencias](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) permite al editor de fragmentos de experiencias las funciones de especificación de segmentación y la flexibilidad para crear fragmentos de experiencias anidados, mediante la cual se pueden crear variaciones de encabezados y pies de página para varios segmentos. Antes del lanzamiento de esta funcionalidad, la personalización que ofrece AEM solo está disponible para páginas de sitio, pero no para Fragmentos de experiencias
 
 * La variable [Consola de fragmento de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) ahora permite a los usuarios administrar de forma eficaz los fragmentos de contenido traducidos. Se ha proporcionado un acceso de 1 clic para ver todas las copias de idioma. Los usuarios también pueden filtrar la vista de tabla según la configuración regional de su interés.
 

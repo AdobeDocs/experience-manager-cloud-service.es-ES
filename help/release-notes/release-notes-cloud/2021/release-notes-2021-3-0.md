@@ -2,7 +2,7 @@
 title: Notas de la versión 2021.3.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2021.3.0."
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 35%
@@ -20,14 +20,14 @@ En la siguiente sección se describen las notas de la versión generales de la v
 >
 >Consulte [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=es) para obtener más información sobre las actualizaciones de la documentación no relacionadas directamente con una versión.
 
-## Fecha de la versión {#release-date}
+## Fecha de lanzamiento {#release-date}
 
 La fecha de lanzamiento de [!DNL Adobe Experience Manager] La versión 2021.3.0 as a Cloud Service es el 25 de marzo de 2021.
 La de la siguiente versión (2021.4.0) será el 29 de abril de 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-* [Versión de aplicación web progresiva (PWA) de un sitio](/help/sites-cloud/authoring/features/enable-pwa.md) ahora se puede habilitar en el nivel de proyecto mediante una configuración simple.
+* [Versión de aplicación web progresiva (PWA) de un sitio](/help/sites-cloud/authoring/sites-console/enable-pwa.md) ahora se puede habilitar en el nivel de proyecto mediante una configuración simple.
 * Extensiones del modelo de fragmentos de contenido: ahora es posible definir tipos de datos de texto multilínea como listas de varios campos.
 * Mejoras en la experiencia de usuario del editor de fragmentos de contenido: los fragmentos secundarios anidados ahora se muestran en la ruta de exploración y se mejora la vista de las acciones de publicar, guardar, y guardar y salir
 
@@ -76,7 +76,7 @@ Póngase en contacto con el representante de su Adobe para ver una demostración
 
 * CIF CIF Lanzamiento del sitio de referencia de Venia el 25 de marzo de 2021, que incluye la versión más reciente de componentes principales (v1.9.0) de la versión de Venia. Consulte [CIF Sitio de referencia de Venia en](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) para obtener más información.
 
-* CIF Lanzamiento de los componentes principales de la versión 1.9.0 de. Consulte [Componentes principales del CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) para obtener más información.
+* CIF Lanzamiento de los componentes principales de la versión 1.9.0 de. Consulte [CIF Componentes principales](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) para obtener más información.
 
 
 ## Cloud Manager {#cloud-manager}

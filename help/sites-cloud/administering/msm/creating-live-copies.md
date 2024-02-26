@@ -4,7 +4,7 @@ description: Aprenda a crear y sincronizar Live Copies para reutilizar el conten
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '4270'
 ht-degree: 94%
@@ -53,7 +53,7 @@ Los siguientes pasos están disponibles para un administrador en una instancia d
 
 Para crear una configuración de modelo:
 
-1. [Navegar](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) al menú **Herramientas** y, a continuación, seleccione el menú **Sitios**.
+1. [Navegar](/help/sites-cloud/authoring/basic-handling.md#global-navigation) al menú **Herramientas** y, a continuación, seleccione el menú **Sitios**.
 1. Seleccione **Modelos** para abrir la consola **Configuraciones del modelo**:
 
    ![Configuraciones del modelo](../assets/blueprint-configurations.png)
@@ -72,7 +72,7 @@ Para crear una configuración de modelo:
 
 Puede editar o eliminar una configuración de modelo existente:
 
-1. [Navegar](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) al menú **Herramientas** y, a continuación, seleccione el menú **Sitios**.
+1. [Navegar](/help/sites-cloud/authoring/basic-handling.md#global-navigation) al menú **Herramientas** y, a continuación, seleccione el menú **Sitios**.
 1. Seleccione **Modelos** para abrir la consola **Configuraciones del modelo**:
 
    ![Configuraciones del modelo](../assets/blueprint-configurations.png)
@@ -211,7 +211,7 @@ Para ver las propiedades:
 
 ### Ver las Live Copies de una página de modelo {#seeing-the-live-copies-of-a-blueprint-page}
 
-Las páginas de modelo (a las que se hace referencia en una configuración de modelo) proporcionan una lista de las páginas de Live Copy que utilizan la página actual (modelo) como origen. Utilice esta lista para realizar un seguimiento de las Live Copies. La lista aparece en la pestaña **Modelo** de las [propiedades de página](/help/sites-cloud/authoring/fundamentals/page-properties.md).
+Las páginas de modelo (a las que se hace referencia en una configuración de modelo) proporcionan una lista de las páginas de Live Copy que utilizan la página actual (modelo) como origen. Utilice esta lista para realizar un seguimiento de las Live Copies. La lista aparece en la pestaña **Modelo** de las [propiedades de página](/help/sites-cloud/authoring/sites-console/page-properties.md).
 
 ![Pestaña Modelo de las propiedades de página](../assets/live-copy-blueprint-tab.png)
 
@@ -249,7 +249,7 @@ Los despliegues se procesan como trabajos asincrónicos y se pueden comprobar en
 
 #### Despliegue un modelo desde el carril de referencia {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. En la consola **Sitios**, seleccione la página en la Live Copy y abra el panel **[Referencias](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** (de la barra de herramientas).
+1. En la consola **Sitios**, seleccione la página en la Live Copy y abra el panel **[Referencias](/help/sites-cloud/authoring/basic-handling.md#references)** (de la barra de herramientas).
 1. Seleccione la opción **Modelo** de la lista, para mostrar los modelos asociados con esta página.
 1. Seleccione el modelo requerido de la lista.
 1. Seleccione **Despliegue**.
@@ -575,8 +575,8 @@ La acción [**Restablecer** también está disponible en la Información general
 
 Para realizar un seguimiento de los cambios realizados, puede ver la página de modelo en **Referencias** y compárela con su página Live Copy:
 
-1. En la consola **Sites**, [vaya a un modelo o a una página de Live Copy y selecciónela](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Abra el panel **[Referencias](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** y, en función del contexto, seleccione:
+1. En la consola **Sites**, [vaya a un modelo o a una página de Live Copy y selecciónela](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Abra el panel **[Referencias](/help/sites-cloud/authoring/basic-handling.md#references)** y, en función del contexto, seleccione:
 
    * **Modelo**
    * **Live Copies**
@@ -592,7 +592,7 @@ Para realizar un seguimiento de los cambios realizados, puede ver la página de 
 
 1. Las páginas Live Copy y modelo se abren en paralelo.
 
-   Para obtener información completa sobre el uso de esta característica de comparación, consulte la [diferencia de la página](/help/sites-cloud/authoring/features/page-diff.md).
+   Para obtener información completa sobre el uso de esta característica de comparación, consulte la [diferencia de la página](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## Desasociación de una Live Copy {#detaching-a-live-copy}
 

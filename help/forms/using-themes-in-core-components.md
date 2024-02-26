@@ -3,8 +3,8 @@ title: ¿Cómo se pueden crear y utilizar temáticas en los formularios adaptabl
 description: Puede utilizar temáticas para aplicar estilo y proporcionar una identidad visual a un formulario adaptable mediante los componentes principales. Puede compartir una temática en cualquier número de formularios adaptables.
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+workflow-type: tm+mt
 source-wordcount: '2610'
 ht-degree: 100%
 
@@ -416,7 +416,7 @@ Si desea proporcionar información como un logotipo, el nombre de la empresa en 
 
 ## See next
 
-* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
 * [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
@@ -432,7 +432,7 @@ Si desea proporcionar información como un logotipo, el nombre de la empresa en 
 ## Consulte también {#see-also}
 
 {{see-also}}
-* [Definición del diseño de los formularios para diferentes tamaños de pantalla y tipos de dispositivos](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Definición del diseño de los formularios para diferentes tamaños de pantalla y tipos de dispositivos](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generar documento de registro para formularios adaptables (Componentes principales](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Creación de un formulario adaptable con secciones repetibles](/help/forms/create-forms-repeatable-sections.md)
 * [Plantillas temáticas y modelos de datos de formularios de ejemplo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es)

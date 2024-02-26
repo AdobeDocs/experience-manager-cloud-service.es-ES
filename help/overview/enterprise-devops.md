@@ -2,8 +2,8 @@
 title: Operaciones de desarrollo empresarial
 description: Obtenga información sobre los procesos, métodos y comunicaciones necesarios para facilitar la implementación y la colaboración.
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
-workflow-type: ht
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ El entorno de ensayo debe ser un reflejo del entorno de producción: configuraci
 
 ### Producción: creación y publicación {#production-author-and-publish}
 
-El entorno de producción consiste en los entornos que [crean y publican](/help/sites-cloud/authoring/getting-started/concepts.md) la implementación.
+El entorno de producción consiste en los entornos que [crean y publican](/help/sites-cloud/authoring/author-publish.md) la implementación.
 
 Un entorno de producción consta de al menos una instancia de autor y una instancia de publicación:
 

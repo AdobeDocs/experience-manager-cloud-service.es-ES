@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '5863'
 ht-degree: 2%
@@ -102,7 +102,7 @@ Si utiliza un WCM (Administrador de contenido web) de terceros, debe integrar el
 >* Desea añadir interactividad al vídeo activando en Vistas rápidas.
 >* La implementación de Experience Manager hace lo siguiente *no* utilice un marco de integración de comercio electrónico para extraer datos de productos en Experience Manager desde cualquier solución de comercio electrónico, como IBM® WebSphere® Commerce, Elastic Path, SAP Hybris o Intershop. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 >
-Si la implementación de Experience Manager utiliza el comercio electrónico, puede omitir esta tarea y continuar con la siguiente.
+>Si la implementación de Experience Manager utiliza el comercio electrónico, puede omitir esta tarea y continuar con la siguiente.
 
 Comience identificando las variables dinámicas utilizadas por la implementación de Quickview existente para poder asignar miniaturas de productos a la vista rápida de productos correspondiente durante el proceso de creación de vídeo interactivo.
 
@@ -243,7 +243,7 @@ Si ya ha cargado el vídeo y los recursos de miniaturas, continúe en [Añada in
 
 >[!NOTE]
 >
-El formato de vídeo MXF aún no se admite para su uso con vídeos interactivos en Dynamic Media.
+>El formato de vídeo MXF aún no se admite para su uso con vídeos interactivos en Dynamic Media.
 
 Si ha cargado vídeos o imágenes incorrectos, o si desea eliminar vídeos o imágenes cargados que ya no necesita, consulte [Eliminar recursos](/help/assets/manage-digital-assets.md#delete-assets).
 
@@ -262,15 +262,15 @@ Los segmentos de cronología se añaden a un vídeo mediante el editor visual lo
 
 Después de agregar segmentos de cronología, agregue imágenes en miniatura dentro de cada segmento. Por cada miniatura que agregue, le aplicará una acción. Por ejemplo, puede aplicar una vista rápida a la miniatura o puede asignarle un hipervínculo o un Fragmento de experiencia.
 
-Consulte [Fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+Consulte [Fragmentos de experiencias](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
-Las herramientas de uso compartido de medios sociales de un vídeo interactivo no son compatibles cuando se incrusta el visualizador en un fragmento de experiencia. En su lugar, puede utilizar o crear ajustes preestablecidos de visualizador que no tengan herramientas de uso compartido de medios sociales. Estos ajustes preestablecidos de visualizador le permiten incrustarlo correctamente en los fragmentos de experiencias.
+>Las herramientas de uso compartido de medios sociales de un vídeo interactivo no son compatibles cuando se incrusta el visualizador en un fragmento de experiencia. En su lugar, puede utilizar o crear ajustes preestablecidos de visualizador que no tengan herramientas de uso compartido de medios sociales. Estos ajustes preestablecidos de visualizador le permiten incrustarlo correctamente en los fragmentos de experiencias.
 
 >[!NOTE]
 >
-El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
+>El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
 
 Las opciones Deshacer y Rehacer, cerca de la esquina superior derecha de la página, son compatibles durante la sesión de creación y edición actual.
 
@@ -432,7 +432,7 @@ Después de guardar el vídeo interactivo, este se abre inmediatamente en Vista 
       <td>Para asociar la imagen en miniatura seleccionada con un fragmento de experiencia</td> 
       <td><p>En Tipo de acción, seleccione <strong>Fragmento de experiencia</strong>, luego haga lo siguiente:<p> 
        <ul> 
-       <li>Si es cliente de Experience Manager Sites, seleccione el icono Buscar (lupa) para abrir la página Fragmento de experiencia. Seleccione el fragmento de experiencia que desee utilizar y, a continuación, seleccione <strong>Para volver al panel Acciones de la página anterior, seleccione </strong>en la esquina superior derecha de la página.<br /> Consulte <a href="/help/sites-cloud/authoring/fundamentals/experience-fragments.md">Fragmentos de experiencias</a>.</li> 
+       <li>Si es cliente de Experience Manager Sites, seleccione el icono Buscar (lupa) para abrir la página Fragmento de experiencia. Seleccione el fragmento de experiencia que desee utilizar y, a continuación, seleccione <strong>Para volver al panel Acciones de la página anterior, seleccione </strong>en la esquina superior derecha de la página.<br /> Consulte <a href="/help/sites-cloud/authoring/fragments/content-fragments.md">Fragmentos de experiencias</a>.</li> 
       </ul> 
        <ul> 
        <li>Especifique la anchura y la altura del fragmento de experiencia tal como aparece en el vídeo.</li>
@@ -493,7 +493,7 @@ Después de guardar el vídeo interactivo, este se abre inmediatamente en Vista 
 
    >[!NOTE]
    >
-   Al guardar el vídeo interactivo, se guarda automáticamente un archivo asociado de `.vtt`. El `.vtt` El archivo se guardará en `_VTT` carpeta en la raíz de **[!UICONTROL Assets]**. El archivo y la carpeta son necesarios para que el vídeo interactivo se reproduzca correctamente en el sitio web. Como tal, no mueva, edite ni elimine la carpeta `_VTT` ni su contenido.
+   >Al guardar el vídeo interactivo, se guarda automáticamente un archivo asociado de `.vtt`. El `.vtt` El archivo se guardará en `_VTT` carpeta en la raíz de **[!UICONTROL Assets]**. El archivo y la carpeta son necesarios para que el vídeo interactivo se reproduzca correctamente en el sitio web. Como tal, no mueva, edite ni elimine la carpeta `_VTT` ni su contenido.
 
 1. Publique el vídeo interactivo. La publicación crea el código incrustado o la dirección URL que finalmente copia y pega en las experiencias del sitio web.
 
@@ -503,7 +503,7 @@ Después de guardar el vídeo interactivo, este se abre inmediatamente en Vista 
 
    >[!NOTE]
    >
-   Para publicar un vídeo de ventas con vistas rápidas, asegúrese de publicar también cada uno de los recursos de imagen relacionados del vídeo desde su área de comercio, por separado.
+   >Para publicar un vídeo de ventas con vistas rápidas, asegúrese de publicar también cada uno de los recursos de imagen relacionados del vídeo desde su área de comercio, por separado.
 
    Después de agregar segmentos de cronología y publicar el vídeo interactivo, está listo para agregarlo a la página de aterrizaje del sitio web existente. Consulte [Integración de un vídeo interactivo con el sitio web](#integrating-an-interactive-video-with-your-website).
 
@@ -529,9 +529,9 @@ El código incrustado copiado se configura para un entorno interactivo, de modo 
 
 >[!NOTE]
 >
-En este punto, si ha agregado interactividad con solo páginas web con hipervínculos, habrá terminado.
+>En este punto, si ha agregado interactividad con solo páginas web con hipervínculos, habrá terminado.
 >
-Sin embargo, si ha agregado interactividad para almacenar en déclencheur una vista rápida, las miniaturas junto al vídeo interactivo son solo para fines de visualización; aún no se han integrado con las vistas rápidas existentes. En tal caso, debe integrar el vídeo interactivo con las vistas rápidas existentes en el sitio web.
+>Sin embargo, si ha agregado interactividad para almacenar en déclencheur una vista rápida, las miniaturas junto al vídeo interactivo son solo para fines de visualización; aún no se han integrado con las vistas rápidas existentes. En tal caso, debe integrar el vídeo interactivo con las vistas rápidas existentes en el sitio web.
 
 **Ejemplo**
 
@@ -574,7 +574,7 @@ La integración es tan sencilla como eliminar el código de incrustación de ví
 
 >[!NOTE]
 >
-Esta tarea solo se aplica si es un cliente independiente de Experience Manager Assets.
+>Esta tarea solo se aplica si es un cliente independiente de Experience Manager Assets.
 
 El último paso de este proceso es integrar su vídeo interactivo con una implementación de Quickview existente que se utilice en su sitio web. No hay ninguna solución para la integración que funcione para todos los casos. Cada implementación de Quickview es única. Por lo tanto, se necesita un enfoque específico que implique la asistencia de una persona de TI front-end.
 

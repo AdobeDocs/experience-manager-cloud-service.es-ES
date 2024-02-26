@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo administrar instancias de flujo de
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 98%
@@ -15,7 +15,7 @@ ht-degree: 98%
 
 La consola de flujo de trabajo proporciona varias herramientas para administrar instancias de flujo de trabajo a fin de garantizar que se ejecuten según lo esperado.
 
-Hay una serie de consolas disponibles para administrar los flujos de trabajo. Utilice la variable [navegación global](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) para abrir el panel **Herramientas** y, a continuación, seleccione **Flujo de trabajo**:
+Hay una serie de consolas disponibles para administrar los flujos de trabajo. Utilice la variable [navegación global](/help/sites-cloud/authoring/basic-handling.md#global-navigation) para abrir el panel **Herramientas** y, a continuación, seleccione **Flujo de trabajo**:
 
 * **Modelos**: Administrar definiciones de flujo de trabajo
 * **Instancias**: Ver y administrar la ejecución de instancias de flujo de trabajo

@@ -3,16 +3,16 @@ title: Configure el Editor de texto enriquecido para crear contenido en [!DNL Ad
 description: Configuración del editor de texto enriquecido para crear contenido en [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1858'
 ht-degree: 0%
 
 ---
 
 # Configuración del editor de texto enriquecido {#configure-the-rich-text-editor}
 
-El Editor de texto enriquecido (RTE) proporciona a los autores una amplia gama de funcionalidades para editar contenido de texto. Se proporcionan iconos, cuadros de selección, barras de herramientas y menús para una experiencia de edición de texto WYSIWYG. Los administradores configuran el RTE para habilitar, deshabilitar y ampliar las funciones disponibles en los componentes de creación. Ver cómo trabajan los autores [utilizar RTE para la creación](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) contenido web.
+El Editor de texto enriquecido (RTE) proporciona a los autores una amplia gama de funcionalidades para editar contenido de texto. Se proporcionan iconos, cuadros de selección, barras de herramientas y menús para una experiencia de edición de texto WYSIWYG. Los administradores configuran el RTE para habilitar, deshabilitar y ampliar las funciones disponibles en los componentes de creación. Ver cómo trabajan los autores [utilizar RTE para la creación](/help/sites-cloud/authoring/page-editor/rich-text-editor.md) contenido web.
 
 A continuación se enumeran los conceptos y pasos de RTE necesarios para configurarlo.
 
@@ -24,7 +24,7 @@ A continuación se enumeran los conceptos y pasos de RTE necesarios para configu
 
 ## Comprender la interfaz de usuario disponible para los autores {#understand-rte-ui}
 
-La interfaz RTE ofrece un [diseño interactivo](/help/sites-cloud/authoring/features/responsive-layout.md) para el entorno de creación. La interfaz está diseñada para su uso en dispositivos táctiles y de escritorio.
+La interfaz RTE ofrece un [diseño interactivo](/help/sites-cloud/authoring/page-editor/responsive-layout.md) para el entorno de creación. La interfaz está diseñada para su uso en dispositivos táctiles y de escritorio.
 
 ![Barra de herramientas Editor de texto enriquecido](assets/rte-toolbar-full-screen-mode.png)
 
@@ -100,7 +100,7 @@ En la tabla siguiente se enumeran los complementos actuales, mostrando:
 | image | `image` | Compatibilidad con imágenes básica (arrastre desde contenido o Buscador de contenido). Según el explorador, la compatibilidad tiene comportamientos diferentes para los autores |
 | teclas | - | Para definir este valor, consulte [tamaño de ficha](configure-rich-text-editor-plug-ins.md#tabsize). |
 | justificar | `justifyleft`, `justifycenter`, `justifyright` | Alineación de párrafo. |
-| links | `modifylink`, `unlink`, `anchor` | [Hipervínculos y anclajes](configure-rich-text-editor-plug-ins.md#linkstyles). |
+| vínculos | `modifylink`, `unlink`, `anchor` | [Hipervínculos y anclajes](configure-rich-text-editor-plug-ins.md#linkstyles). |
 | listas | `ordered`, `unordered`, `indent`, `outdent` | Este complemento controla ambos [sangría y listas](configure-rich-text-editor-plug-ins.md#indentmargin); incluyendo listas anidadas. |
 | herramientas diversas | `specialchars`, `sourceedit` | Varias herramientas permiten a los autores introducir [caracteres especiales](configure-rich-text-editor-plug-ins.md#spchar) o editar el origen del HTML. Además, puede agregar un [intervalo de caracteres especiales](configure-rich-text-editor-plug-ins.md#definerangechar) si desea definir su propia lista. |
 | Paraformato | `paraformat` | Los formatos de párrafo predeterminados son Párrafo, Encabezado 1, Encabezado 2 y Encabezado 3 (`<p>`, `<h1>`, `<h2>`, y `<h3>`). Puede [agregar más formatos de párrafo](configure-rich-text-editor-plug-ins.md#paraformats) o ampliar la lista. |
@@ -152,7 +152,7 @@ Para obtener configuraciones detalladas de los complementos RTE, consulte [Cómo
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-El [Componente de texto de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) permite a los editores de plantillas configurar muchos complementos RTE utilizando la interfaz de usuario como directivas de contenido, lo que elimina la necesidad de configuración técnica. Las políticas de contenido pueden funcionar con configuraciones de IU RTE como se describe en este documento. Para obtener más información, consulte [crear plantillas de página](/help/sites-cloud/authoring/features/templates.md) y el [Documentación para desarrolladores de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
+El [Componente de texto de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) permite a los editores de plantillas configurar muchos complementos RTE utilizando la interfaz de usuario como directivas de contenido, lo que elimina la necesidad de configuración técnica. Las políticas de contenido pueden funcionar con configuraciones de IU RTE como se describe en este documento. Para obtener más información, consulte [crear plantillas de página](/help/sites-cloud/authoring/sites-console/templates.md) y el [Documentación para desarrolladores de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >Para fines de referencia, los componentes de texto predeterminados (entregados como parte de una instalación estándar) se encuentran en:
 >
@@ -218,7 +218,7 @@ El nodo emergente bajo el modo en línea o de pantalla completa contiene una lis
 
 ## Configuración de la interfaz de usuario de RTE y políticas de contenido {#rtecontentpolicies}
 
-Los administradores pueden controlar las opciones de RTE mediante políticas de contenido, por ejemplo, en lugar de realizar la configuración como se ha descrito anteriormente. Las políticas de contenido definen las propiedades de diseño de un componente cuando se utilizan como parte de una [plantilla editable](/help/sites-cloud/authoring/features/templates.md). Por ejemplo, si un componente de texto que utiliza RTE se utiliza con una plantilla editable, la política de contenido puede definir que la opción de negrita esté disponible y que haya algunas opciones de formato de párrafo disponibles. Las políticas de contenido se pueden reutilizar y aplicar en varias plantillas.
+Los administradores pueden controlar las opciones de RTE mediante políticas de contenido, por ejemplo, en lugar de realizar la configuración como se ha descrito anteriormente. Las políticas de contenido definen las propiedades de diseño de un componente cuando se utilizan como parte de una [plantilla editable](/help/sites-cloud/authoring/sites-console/templates.md). Por ejemplo, si un componente de texto que utiliza RTE se utiliza con una plantilla editable, la política de contenido puede definir que la opción de negrita esté disponible y que haya algunas opciones de formato de párrafo disponibles. Las políticas de contenido se pueden reutilizar y aplicar en varias plantillas.
 
 Las opciones disponibles en RTE fluyen hacia abajo desde las configuraciones de interfaz de usuario hasta las políticas de contenido.
 
@@ -280,5 +280,5 @@ A continuación se muestra un fragmento de ejemplo para asignar el comando `Bold
 >[!MORELIKETHIS]
 >
 >* [Configuración de complementos RTE](configure-rich-text-editor-plug-ins.md)
->* [Uso del Editor de texto enriquecido para la creación](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
+>* [Uso del Editor de texto enriquecido para la creación](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
 >* [Configuración de RTE para sitios accesibles](rte-accessible-content.md)

@@ -2,10 +2,10 @@
 title: Configuraciones y el explorador de configuración
 description: Comprenda las configuraciones de Adobe Experience Manager AEM AEM () y cómo administran la configuración del espacio de trabajo en los entornos de trabajo de los usuarios de la.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 6%
+source-wordcount: '1482'
+ht-degree: 4%
 
 ---
 
@@ -35,7 +35,7 @@ AEM Se pueden crear configuraciones para muchas funciones diferentes dentro de l
 
 * [Segmentos de Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-* [Plantillas editables](/help/sites-cloud/authoring/features/templates.md)
+* [Plantillas editables](/help/sites-cloud/authoring/sites-console/templates.md)
 * varias configuraciones de nube
 
 ### Ejemplos {#administrator-example}
@@ -76,12 +76,12 @@ AEM Es sencillo crear una configuración en mediante el Explorador de configurac
 
    * El **Título** debe ser descriptivo.
    * El **nombre** se convierte en el nombre de nodo del repositorio.
-      * Se genera automáticamente en función del título y se ajusta según las [convenciones de nomenclatura de AEM.](naming-conventions.md)
+      * Se genera automáticamente en función del título y se ajusta según [AEM Convenciones de nomenclatura de.](naming-conventions.md)
       * Se puede modificar si es necesario.
 1. Compruebe el tipo de configuraciones que desea permitir.
    * [Segmentos de Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
    * [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-   * [Plantillas editables](/help/sites-cloud/authoring/features/templates.md)
+   * [Plantillas editables](/help/sites-cloud/authoring/sites-console/templates.md)
    * varias configuraciones de nube
 1. Seleccione **Crear**.
 

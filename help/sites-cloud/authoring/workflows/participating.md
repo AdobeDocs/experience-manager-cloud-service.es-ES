@@ -2,7 +2,7 @@
 title: Participación en flujos de trabajo
 description: Los flujos de trabajo incluyen normalmente los pasos que una persona debe llevar a cabo para realizar una actividad en una página o un recurso.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '1507'
 ht-degree: 77%
@@ -24,11 +24,11 @@ Los flujos de trabajo incluyen normalmente los pasos que una persona debe llevar
 
 Cuando se le asigna un elemento de trabajo (por ejemplo, **Aprobar contenido**), aparecen varias alertas o notificaciones:
 
-* El indicador de [notificación](/help/sites-cloud/authoring/getting-started/inbox.md) (barra de herramientas) se ha incrementado:
+* El indicador de [notificación](/help/sites-cloud/authoring/inbox.md) (barra de herramientas) se ha incrementado:
 
   ![Barra de herramientas de notificaciones](/help/sites-cloud/authoring/assets/workflows-notifications.png)
 
-* El elemento figura en la [Bandeja de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) de notificaciones:
+* El elemento figura en la [Bandeja de entrada](/help/sites-cloud/authoring/inbox.md) de notificaciones:
 
   ![Notificaciones en la bandeja de entrada](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
@@ -72,7 +72,7 @@ Puede completar un paso de participante desde:
 
 Utilice el siguiente procedimiento para completar el elemento de trabajo:
 
-1. Abra la **[Bandeja de entrada AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Abra la **[Bandeja de entrada AEM](/help/sites-cloud/authoring/inbox.md)**.
 1. Seleccione el elemento de flujo de trabajo en el que desea actuar (seleccione la miniatura).
 1. Seleccione **Completar** en la barra de herramientas.
 1. El **Completar elemento de trabajo** se abre. Seleccione el **Paso siguiente** en el selector desplegable y añada una **Comentario** si es necesario.
@@ -82,7 +82,7 @@ Utilice el siguiente procedimiento para completar el elemento de trabajo:
 
 Utilice el siguiente procedimiento para completar el elemento de trabajo:
 
-1. Abra la [página para editarla](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
+1. Abra la [página para editarla](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Seleccione **Completar** de la barra de estado situada en la parte superior.
 1. El **Completar elemento de trabajo** se abre. Seleccione el **Paso siguiente** en el selector desplegable y añada una **Comentario** si es necesario.
 1. Utilice **Aceptar** para completar el paso (o **Cancelar** para anular la acción).
@@ -131,7 +131,7 @@ Puede delegar una etapa de participante desde:
 
 Utilice el siguiente procedimiento para delegar un elemento de trabajo:
 
-1. Abra la **[Bandeja de entrada AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Abra la **[Bandeja de entrada AEM](/help/sites-cloud/authoring/inbox.md)**.
 1. Seleccione el elemento de flujo de trabajo en el que desea actuar (seleccione la miniatura).
 1. Seleccione **Delegar** en la barra de herramientas.
 1. Se abre el cuadro de diálogo. Especifique el **Usuario** en el selector desplegable (también puede ser un grupo) y añada una **Comentario** si es necesario.
@@ -141,7 +141,7 @@ Utilice el siguiente procedimiento para delegar un elemento de trabajo:
 
 Utilice el siguiente procedimiento para delegar un elemento de trabajo:
 
-1. Abra la [página para editarla](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
+1. Abra la [página para editarla](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Seleccione **Delegar** de la barra de estado situada en la parte superior.
 1. Se abre el cuadro de diálogo. Especifique el **Usuario** en el selector desplegable (también puede ser un grupo) y añada una **Comentario** si es necesario.
 1. Utilice **Aceptar** para completar el paso (o **Cancelar** para anular la acción).
@@ -181,7 +181,7 @@ Puede volver a un paso anterior en un paso de participante desde:
 
 Utilice el siguiente procedimiento para retroceder:
 
-1. Abra la **[Bandeja de entrada AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Abra la **[Bandeja de entrada AEM](/help/sites-cloud/authoring/inbox.md)**.
 1. Seleccione el elemento de flujo de trabajo en el que desea actuar (seleccione la miniatura).
 1. Seleccione **Retroceder** para abrir el cuadro de diálogo. 
 1. Especifique el **Etapa anterior** y añada un **Comentario** si es necesario.
@@ -191,7 +191,7 @@ Utilice el siguiente procedimiento para retroceder:
 
 Utilice el siguiente procedimiento para retroceder:
 
-1. Abra la [página para editarla](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
+1. Abra la [página para editarla](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Seleccione **Retroceder** de la barra de estado situada en la parte superior.
 1. Especifique el **Etapa anterior** y añada un **Comentario** si es necesario.
 1. Utilice **Aceptar** para completar el paso (o **Cancelar** para anular la acción).
@@ -242,7 +242,7 @@ Puede abrir los detalles del elemento de trabajo desde las ubicaciones siguiente
 
 Para abrir un elemento de flujo de trabajo y ver los detalles:
 
-1. Abra la **[Bandeja de entrada AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Abra la **[Bandeja de entrada AEM](/help/sites-cloud/authoring/inbox.md)**.
 1. Seleccione el elemento de flujo de trabajo en el que desea actuar (seleccione la miniatura).
 1. Seleccione **Abrir** para abrir las pestañas de información. 
 1. Si es necesario, seleccione la acción adecuada, proporcione los detalles necesarios y confirme con **OK** (o **Cancelar**).
@@ -252,7 +252,7 @@ Para abrir un elemento de flujo de trabajo y ver los detalles:
 
 Para abrir un elemento de flujo de trabajo y ver los detalles:
 
-1. Abra la [página para editarla](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
+1. Abra la [página para editarla](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Seleccione **Ver detalles** de la barra de estado para abrir las pestañas de información. 
 1. Si es necesario, seleccione la acción adecuada, proporcione los detalles necesarios y confirme con **OK** (o **Cancelar**).
 1. Utilice las opciones **Guardar** o **Cancelar** para salir.
@@ -263,7 +263,7 @@ Puede ver los detalles de la carga útil asociada con la instancia de flujo de t
 
 Para ver la carga útil y los recursos de la instancia del flujo de trabajo:
 
-1. Abra la **[Bandeja de entrada AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Abra la **[Bandeja de entrada AEM](/help/sites-cloud/authoring/inbox.md)**.
 1. Seleccione el elemento de flujo de trabajo en el que desea actuar (seleccione la miniatura).
 1. Seleccione **Ver carga útil** de la barra de herramientas para abrir el cuadro de diálogo. 
    * Dado que un paquete de flujo de trabajo es simplemente una colección de punteros a rutas dentro del repositorio, puede añadir, quitar o modificar las entradas aquí para ajustar los elementos a los que el paquete de flujo de trabajo hace referencia. Utilice el componente **Definición de medios** para añadir nuevas entradas.

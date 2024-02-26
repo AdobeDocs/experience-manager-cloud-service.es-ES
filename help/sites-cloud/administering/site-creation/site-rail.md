@@ -1,25 +1,26 @@
 ---
-title: Uso del carril del sitio para administrar el tema del sitio
-description: Conozca las potentes funciones del carril del sitio para ayudarle a personalizar y administrar fácilmente el tema del sitio.
+title: Uso del panel del sitio para administrar el tema del sitio
+description: Conozca las potentes funciones del panel del sitio para ayudarle a personalizar y administrar fácilmente el tema del sitio.
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '583'
-ht-degree: 81%
+ht-degree: 38%
 
 ---
 
-# Uso del carril del sitio para administrar el tema del sitio {#site-rail}
 
-Conozca las potentes funciones del carril del sitio para ayudarle a personalizar y administrar fácilmente el tema del sitio.
+# Uso del panel del sitio para administrar el tema del sitio {#site-panel}
+
+Conozca las potentes funciones del panel del sitio para ayudarle a personalizar y administrar fácilmente el tema del sitio.
 
 ## Información general {#overview}
 
-El carril del sitio permite administrar los recursos de tema y plantilla del sitio. [Como otros raíles](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) como el árbol de contenido, las referencias o los raíles de cronología, el carril del sitio se muestra como el panel situado más a la izquierda en la consola Sitios y muestra información sobre el elemento seleccionado. A diferencia de otros carriles, el carril del sitio solo se aplica a las raíces del sitio.
+El panel Sitio permite administrar los recursos de tema y plantilla del sitio. [Como otros paneles](/help/sites-cloud/authoring/sites-console/console-side-panel.md) como los paneles Árbol de contenido, Referencias o Línea de tiempo, el panel Sitio se muestra como el panel situado más a la izquierda en la consola Sitios y muestra información sobre el elemento seleccionado. A diferencia de otros paneles, el panel Sitio solo se aplica a las raíces del sitio.
 
-El carril del sitio se utiliza para administrar la información relacionada con el tema y la plantilla para su sitio, que incluye:
+El panel Sitio se utiliza para administrar la información relacionada con el tema y la plantilla para el sitio, que incluye:
 
 * [Descarga de fuentes de temas](#downloading-theme-sources)
 * [Descarga de recursos de plantilla, como mallas metálicas](#downloading-template-resources)
@@ -32,11 +33,11 @@ El carril del sitio se utiliza para administrar la información relacionada con 
 
 ## Descarga de fuentes de temas {#downloading-theme-sources}
 
-Cuando crea un sitio en AEM basado en una [plantilla de sitio,](site-templates.md) puede descargar su [tema del sitio](site-themes.md) mediante el carril del sitio.
+AEM Cuando crea un sitio en basado en un elemento de la lista de direcciones [plantilla del sitio,](site-templates.md) puede descargar su [tema del sitio](site-themes.md) mediante el panel Sitio.
 
-Con el carril del sitio en la consola Sitios, seleccione la raíz del sitio para mostrar la información del tema sobre el sitio.
+Con el panel Sitio en la consola Sitios, seleccione la raíz del sitio para mostrar la información del tema sobre el sitio.
 
-![Descargar fuentes de temas](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
+![Descarga de fuentes de temas](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
 Seleccionar **Descargar fuentes de temas** para descargar una copia local del tema del sitio como `.zip` para fines de personalización.
 
@@ -44,19 +45,19 @@ Seleccionar **Descargar fuentes de temas** para descargar una copia local del te
 
 [Plantillas de sitio](site-templates.md) puede contener información además de la estructura de contenido del sitio y [tema del sitio.](site-themes.md) Las plantillas de sitio pueden contener diseños de malla metálica u otros archivos relacionados con el sitio, por ejemplo.
 
-Si el sitio se basa en una plantilla de sitio, y el carril del sitio se muestra en la consola Sitios, seleccione la raíz del sitio para mostrar la información del tema sobre el sitio, incluidos los recursos del sitio adicionales.
+Si el sitio se basa en una plantilla de sitio, y el panel Sitio se muestra en la consola Sitios, seleccione la raíz del sitio para mostrar la información del tema sobre el sitio, incluidos los recursos del sitio adicionales.
 
-![Descargar fuentes de temas](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
+![Descarga de fuentes de temas](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
 Seleccione el botón o los botones situados debajo del encabezado **Descargar recursos de plantilla adicionales** para descargar una copia local de los archivos disponibles.
 
 ## Visualización y cambio de versiones de temas {#them-versions}
 
-Si el sitio se basa en una plantilla de sitio, es posible que su tema ya haya sido personalizado por el desarrollador del front-end. Con el carril del sitio, puede ver qué versión del tema del sitio está implementada actualmente y cambiar a versiones anteriores.
+Si el sitio se basa en una plantilla de sitio, es posible que su tema ya haya sido personalizado por el desarrollador del front-end. Con el panel Sitio, puede ver qué versión del tema del sitio está implementada actualmente y cambiar a versiones anteriores.
 
-Con el carril del sitio en la consola Sitios, seleccione la raíz del sitio para mostrar la información del tema sobre el sitio.
+Con el panel Sitio en la consola Sitios, seleccione la raíz del sitio para mostrar la información del tema sobre el sitio.
 
-![Versiones del sitio en el carril](/help/sites-cloud/administering/assets/theme-versions.png)
+![Versiones del sitio en el panel](/help/sites-cloud/administering/assets/theme-versions.png)
 
 La versión actual del tema se muestra con su hash de compromiso junto con la marca de tiempo de su última actualización del estado.
 
@@ -76,9 +77,9 @@ Puede usar el botón **Seleccionar versión** para actualizar a la nueva versió
 
 Si el sitio no se creó con una plantilla de sitio, no es posible utilizar la canalización de front-end para personalizar e implementar su tema.
 
-Sin embargo, puede habilitar la canalización front-end para su sitio mediante el carril del sitio.
+Sin embargo, puede habilitar la canalización front-end para su sitio mediante el panel Sitio.
 
-Con el carril del sitio en la consola Sitios, seleccione la raíz del sitio para mostrar la información del tema sobre el sitio y, a continuación, seleccione **Habilitar canalización front-end**.
+Con el panel Sitio en la consola Sitios, seleccione la raíz del sitio para mostrar la información del tema sobre el sitio y, a continuación, seleccione **Habilitar canalización front-end**.
 
 ![Habilitar canalización front-end](/help/sites-cloud/administering/assets/enable-fep.png)
 

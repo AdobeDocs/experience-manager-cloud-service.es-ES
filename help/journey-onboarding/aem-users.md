@@ -4,17 +4,17 @@ description: Una vez que el administrador del sistema haya configurado los recur
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 93%
+source-wordcount: '576'
+ht-degree: 100%
 
 ---
 
 
 # Tareas del usuario de AEM {#aem-user-tasks}
 
-En esta parte opcional de [recorrido de incorporación,](overview.md) AEM AEM aprenderá cómo pueden acceder los usuarios de la a contenido as a Cloud Service para crear contenido.
+En esta parte opcional del [recorrido de incorporación,](overview.md) aprenderá cómo los usuarios de AEM pueden acceder a AEM as a Cloud Service para crear contenido.
 
 ## La historia hasta ahora {#story-so-far}
 
@@ -52,7 +52,7 @@ Como autor de AEM, debe iniciar sesión en AEM para comenzar a crear contenido.
 
 1. Seleccione el programa adecuado de la página **Programas y productos** de Cloud Manager para iniciar la página **Información general**. Pregunte al administrador del sistema si no está seguro a qué programa acceder.
 
-1. Desde el **Información general** en Cloud Manager, haga clic en el vínculo de autor desde la página **Entornos** Tarjeta de.
+1. En la página **Información general** en Cloud Manager, haga clic en el vínculo de autor desde la tarjeta **Entornos**.
 
    ![Tarjeta Entornos](/help/journey-onboarding/assets/author-environ.png)
 
@@ -83,5 +83,5 @@ Si le interesa cómo crean y administran los desarrolladores y los administrador
 
 Los siguientes son recursos opcionales adicionales si desea ir más allá del contenido del recorrido de incorporación.
 
-[Guía rápida para la creación de páginas](/help/sites-cloud/authoring/getting-started/quick-start.md): Empiece aquí para ver una descripción general rápida de los fundamentos de la creación en AEM.
+[Guía rápida para la creación de páginas](/help/sites-cloud/authoring/quick-start.md): Empiece aquí para ver una descripción general rápida de los fundamentos de la creación en AEM.
 [Recorrido de creación sin encabezado](/help/journey-headless/author/overview.md): Si desea crear contenido sin encabezado, siga esta introducción guiada.

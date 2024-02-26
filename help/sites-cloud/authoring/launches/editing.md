@@ -2,7 +2,7 @@
 title: Edición de lanzamientos
 description: Después de crear un lanzamiento para la página (o conjunto de páginas), puede editar el contenido en la copia de lanzamiento de las páginas.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 87%
@@ -48,15 +48,15 @@ Consulte [Cambio del contenido de Live Copy](/help/sites-cloud/administering/msm
 
 Para rastrear los cambios realizados, puede ver el lanzamiento en **Referencias** y comparar la página de lanzamiento con la página de origen:
 
-1. En la consola **Sitios**, [vaya a la página de origen del lanzamiento y seleccione uno](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Abra el panel **[Referencias](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** y seleccione **Lanzamientos**.
+1. En la consola **Sitios**, [vaya a la página de origen del lanzamiento y seleccione uno](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Abra el panel **[Referencias](/help/sites-cloud/authoring/basic-handling.md#references)** y seleccione **Lanzamientos**.
 1. Seleccione el lanzamiento específico y luego **Comparar con el origen**:
 
    ![Comparación entre el lanzamiento y el origen](/help/sites-cloud/authoring/assets/launches-compare.png)
 
 1. Las dos páginas (inicio y origen) se abrirán una junto a la otra.
 
-   Para obtener información completa sobre el uso de esta funcionalidad, consulte [Diferencias de página](/help/sites-cloud/authoring/features/page-diff.md).
+   Para obtener información completa sobre el uso de esta funcionalidad, consulte [Diferencias de página](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## Cambio de las páginas de origen utilizadas {#changing-the-source-pages-used}
 

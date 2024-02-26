@@ -1,7 +1,7 @@
 ---
 title: Creación de bloques instrumentados para su uso con el editor universal
 description: AEM Aprenda a crear bloques instrumentados para utilizarlos con el editor universal en la creación de proyectos de Edge Delivery Services de la creación de la.
-source-git-commit: 40e404c743102f1de8b3d959597836f04f0c0fef
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 0%
@@ -130,7 +130,7 @@ El siguiente ejemplo de bloque de comillas sigue este enfoque.
 
 Ahora que el bloque de comillas básico está definido y comprometido con el proyecto de muestra, puede agregar un bloque de comillas a una página existente.
 
-1. AEM En un explorador, inicie sesión en as a Cloud Service de la. [Mediante la consola Sitios,](/help/sites-cloud/authoring/getting-started/basic-handling.md) vaya al sitio que creó en la [AEM Guía de introducción para desarrolladores para la creación de contenido con Edge Delivery Services en la creación de](/help/edge/edge-dev-getting-started.md) y seleccione una página.
+1. AEM En un explorador, inicie sesión en as a Cloud Service de la. [Mediante la consola Sitios,](/help/sites-cloud/authoring/basic-handling.md) vaya al sitio que creó en la [AEM Guía de introducción para desarrolladores para la creación de contenido con Edge Delivery Services en la creación de](/help/edge/edge-dev-getting-started.md) y seleccione una página.
 
    * En este caso, `index` se utiliza con fines ilustrativos.
 

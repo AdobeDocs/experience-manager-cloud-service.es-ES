@@ -4,7 +4,7 @@ description: AEM Descubra cómo los fragmentos de contenido en as a Cloud Servic
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '1792'
 ht-degree: 39%
@@ -13,7 +13,7 @@ ht-degree: 39%
 
 # Información general sobre el trabajo con fragmentos de contenido {#overview-working-with-content-fragments}
 
-Con Adobe Experience Manager AEM () as a Cloud Service, los fragmentos de contenido le permiten diseñar, crear, depurar y [publicar contenido independiente de las páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Permiten preparar contenido listo para usar en varias ubicaciones y en varios canales, lo que resulta ideal para la entrega sin encabezado y la creación de páginas.
+Con Adobe Experience Manager AEM () as a Cloud Service, los fragmentos de contenido le permiten diseñar, crear, depurar y [publicar contenido independiente de las páginas](/help/sites-cloud/authoring/fragments/content-fragments.md). Permiten preparar contenido listo para usar en varias ubicaciones y en varios canales, lo que resulta ideal para la entrega sin encabezado y la creación de páginas.
 
 >[!IMPORTANT]
 >
@@ -27,7 +27,7 @@ Con Adobe Experience Manager AEM () as a Cloud Service, los fragmentos de conten
 >
 >* uso del **Assets** consola para [administrar fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md)
 >* uso del [*original* Editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-variations.md),
->* usando [Fragmentos de contenido para la creación de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* usando [Fragmentos de contenido para la creación de páginas](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 
 Los fragmentos de contenido incluyen contenido estructurado:
@@ -74,7 +74,7 @@ Estos fragmentos de contenido se pueden ensamblar para ofrecer experiencias en u
 
 >[!NOTE]
 >
->Los **fragmentos de contenido** y los **[fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** son funciones distintas de AEM:
+>Los **fragmentos de contenido** y los **[fragmentos de experiencias](/help/sites-cloud/authoring/fragments/content-fragments.md)** son funciones distintas de AEM:
 >* Los **fragmentos de contenido** son contenidos editoriales, con definición y estructura, pero sin diseño y/o maquetación visuales adicionales. Pueden utilizarse para acceder a datos estructurados, incluidos textos, números y fechas, entre otros.
 >* Los **fragmentos de experiencias** son contenidos plenamente diseñados; un fragmento de una página web.
 >
@@ -94,7 +94,7 @@ Una vez creados los fragmentos, puede:
 * [Uso del editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md) : para editar, publicar (para previsualizar o producir) y hacer referencia a sus fragmentos
 * [Analizar](/help/sites-cloud/administering/content-fragments/analysis.md)  la estructura del fragmento de contenido, con el editor
 * [Acceda a sus fragmentos con GraphQL para realizar entregas sin encabezado a sus aplicaciones](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
-* [O use sus fragmentos para la creación de páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
+* [O use sus fragmentos para la creación de páginas](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Una vez creados los fragmentos, puede:
 >* [Fragmentos de contenido Configurar componentes para procesamiento](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Compatibilidad con fragmentos de contenido en la API HTTP de AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [API de GraphQL de AEM para su uso con fragmentos de contenido](/help/headless/graphql-api/content-fragments.md)
->* [Creación de páginas con fragmentos de contenido](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* [Creación de páginas con fragmentos de contenido](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 ## Principal y variaciones {#main-and-variations}
 
@@ -172,7 +172,7 @@ Los fragmentos de contenido son lo siguiente:
 
 * Accesible para la entrega de contenido mediante [AEM API de GraphQL](/help/headless/graphql-api/content-fragments.md).
 
-* Disponible en el [editor de páginas mediante el componente Fragmento de contenido](/help/sites-cloud/authoring/fundamentals/content-fragments.md) (componente de referencia):
+* Disponible en el [editor de páginas mediante el componente Fragmento de contenido](/help/sites-cloud/authoring/fragments/content-fragments.md) (componente de referencia):
 
    * El [Componente principal de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=es) está disponible para los autores de páginas. Les permite hacer referencia y enviar el fragmento de contenido requerido en formato HTML o JSON.
 
@@ -257,7 +257,7 @@ Para utilizar los fragmentos de contenido para la creación de páginas, tambié
 * A **Componente Fragmento de contenido**
 
    * Instrumental para entregar el fragmento en formato HTML o JSON.
-   * Requerido para [hacer referencia al fragmento en una página](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+   * Requerido para [hacer referencia al fragmento en una página](/help/sites-cloud/authoring/fragments/content-fragments.md).
    * Responsable del diseño y la entrega de un fragmento; por ejemplo, de los canales.
    * Los fragmentos necesitan uno o más componentes dedicados para definir el diseño y proporcionar algunos o todos los elementos/variaciones y el contenido asociado.
    * Al arrastrar un fragmento a una página en la creación, se asocia automáticamente el componente requerido.

@@ -8,7 +8,7 @@ content-type: reference
 feature: 3D Assets
 role: User
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '2252'
 ht-degree: 2%
@@ -247,7 +247,7 @@ Si está utilizando [!DNL Experience Manager] como WCM, utilice este método de 
 
 Consulte también [Publicar recursos de Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-Consulte también [Publicar páginas](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).
+Consulte también [Publicar páginas](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
 
 **Para publicar recursos estáticos de Dynamic Media 3D:**
 

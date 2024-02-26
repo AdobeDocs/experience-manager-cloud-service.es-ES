@@ -2,9 +2,9 @@
 title: Promoción de lanzamientos
 description: Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '812'
 ht-degree: 98%
 
 ---
@@ -44,12 +44,12 @@ Puede promocionar lanzamientos desde la consola **Sites** o la consola **Lanzami
 
 1. Abra:
    * La consola **Sites** al navegar por las páginas de origen:
-      1. Abra el [carril de referencias](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) y seleccione la página de origen necesaria con el [modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md) (o seleccione y abra el carril de referencias, el orden no importa). Se muestran todas las referencias.
+      1. Abra el [carril de referencias](/help/sites-cloud/authoring/sites-console/console-side-panel.md#references) y seleccione la página de origen necesaria con el [modo de selección](/help/sites-cloud/authoring/basic-handling.md) (o seleccione y abra el carril de referencias, el orden no importa). Se muestran todas las referencias.
       1. Seleccione **Lanzamientos** (por ejemplo, Lanzamientos (1)) para mostrar una lista de los lanzamientos específicos.
       1. Seleccione el lanzamiento específico para mostrar las acciones disponibles.
       1. Seleccione **Promocionar lanzamiento** para abrir el asistente.
    * La consola **Sites** al navegar por las páginas de lanzamiento:
-      1. Seleccione la página de lanzamiento necesaria mediante el [modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md).
+      1. Seleccione la página de lanzamiento necesaria mediante el [modo de selección](/help/sites-cloud/authoring/basic-handling.md).
       1. La acción **Promocionar** está disponible en la barra de herramientas.
    * La consola **Lanzamientos**:
       1. Seleccione el lanzamiento (seleccione la miniatura).

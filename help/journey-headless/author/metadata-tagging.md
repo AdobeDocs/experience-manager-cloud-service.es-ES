@@ -2,7 +2,7 @@
 title: Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido
 description: Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 92%
@@ -38,6 +38,6 @@ Ahora, puede poner en práctica todos estos conocimientos y empezar a crear frag
 
 * [Metadatos: propiedades del fragmento](/help/sites-cloud/administering/content-fragments/authoring.md#view-properties-tags)
 
-* [Uso de etiquetas](/help/sites-cloud/authoring/features/tags.md)
+* [Uso de etiquetas](/help/sites-cloud/authoring/sites-console/tags.md)
 
 * [Modelos de fragmento de contenido: permitir modelos de fragmento de contenido en la carpeta de recursos](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)

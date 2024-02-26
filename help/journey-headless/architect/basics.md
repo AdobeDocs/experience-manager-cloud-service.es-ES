@@ -2,10 +2,10 @@
 title: Información sobre los conceptos básicos del modelado de contenido
 description: Conozca los aspectos básicos del modelado de contenido para su de contenido sin encabezado de CMS utilizando fragmentos de contenido.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Dentro de un modelo:
 1. Los **Tipos de datos** permiten definir los atributos individuales.
 Por ejemplo, defina el campo que contiene el nombre de un profesor como **Texto** y sus años de servicio como un **Número**.
 1. Los tipos de datos **Referencia de contenido** y **Referencia de fragmento** permiten crear relaciones con otro contenido dentro de AEM.
-1. El **Referencia a fragmento** El tipo de datos permite realizar varios niveles de estructura anidando los fragmentos de contenido (según el tipo de modelo). Esto es importante para el modelado de contenido.
+1. El tipo de datos **referencia de fragmento** le permite obtener varios niveles de estructura anidando los fragmentos de contenido (según el tipo de modelo). Esto es importante para el modelado de contenido.
 
 Por ejemplo:
 
@@ -113,7 +113,7 @@ El tipo de datos se puede configurar para que los autores de fragmentos puedan h
 
 ## Niveles de estructura (fragmentos anidados) {#levels-of-structure-nested-fragments}
 
-Para el modelado de contenido de **Referencia a fragmento** El tipo de datos permite crear varios niveles de estructura y relaciones.
+Para modelar contenido, el tipo de datos **Referencia a fragmentos** le permite crear varios niveles de estructura y relaciones.
 
 Con esta referencia, puede *conectar* varios modelos de fragmento de contenido para representar las interrelaciones. Esto permite que la aplicación sin encabezado siga las conexiones y acceda al contenido según sea necesario.
 
@@ -130,7 +130,7 @@ Por ejemplo, puede que tenga definidos los siguientes modelos de fragmento de co
 * Persona
 * Premios
 
-Parece bastante sencillo, pero una compañía tiene un CEO y empleados....y todas ellas se definen como una persona.
+Parece bastante sencillo, pero una Compañía tiene un director ejecutivo (CEO) y empleados…y todas ellas se definen como una persona.
 
 Una persona puede obtener un premio (o tal vez dos).
 
@@ -153,8 +153,8 @@ Ahora que ha aprendido lo básico, el siguiente paso consiste en [Obtener inform
 
    * [Modelos de fragmento de contenido: tipos de datos](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
-* [Conceptos de creación](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [Conceptos de creación](/help/sites-cloud/authoring/author-publish.md)
 
-* [Gestión básica](/help/sites-cloud/authoring/getting-started/basic-handling.md): esta página se basa principalmente en la consola **Sites**, pero muchas funciones (la mayoría de ellas) también son relevantes para la creación de **Fragmentos de contenido** en la consola **Recursos**.
+* [Gestión básica](/help/sites-cloud/authoring/basic-handling.md): esta página se basa principalmente en la consola **Sites**, pero muchas funciones (la mayoría de ellas) también son relevantes para la creación de **Fragmentos de contenido** en la consola **Recursos**.
 
 * [Trabajar con fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md)

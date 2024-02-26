@@ -2,8 +2,8 @@
 title: Prácticas recomendadas para la optimización de los motores de búsqueda y administración de URL para Adobe Experience Manager as a Cloud Service
 description: Prácticas recomendadas para la optimización de los motores de búsqueda y administración de URL para Adobe Experience Manager as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+workflow-type: tm+mt
 source-wordcount: '3539'
 ht-degree: 100%
 
@@ -210,7 +210,7 @@ También permite a los usuarios finales interactuar con el nombre de la página 
 
 >[!NOTE]
 >
->La propiedad `sling:alias` se puede establecer con la propiedad de Alias [ al editar Propiedades](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) de página.
+>La propiedad `sling:alias` se puede establecer con la propiedad de Alias [ al editar Propiedades](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) de página.
 
 #### /etc/map {#etc-map}
 

@@ -11,16 +11,16 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
-source-wordcount: '2535'
-ht-degree: 18%
+source-wordcount: '2342'
+ht-degree: 14%
 
 ---
 
 # Diseño de los componentes principales del CIF de AEM {#style-aem-cif-core-components}
 
-El [CIF Proyecto Venia en la](https://github.com/adobe/aem-cif-guides-venia) es una base de código de referencia para utilizar [Componentes principales del CIF](https://github.com/adobe/aem-core-cif-components). AEM CIF En este tutorial, inspeccionará el proyecto de referencia de Venia y comprenderá cómo se organizan los componentes principales y CSS y JavaScript utilizados por los componentes principales de la. También puede crear un estilo utilizando CSS para actualizar el estilo predeterminado de **Teaser de productos** componente.
+El [CIF Proyecto Venia en la](https://github.com/adobe/aem-cif-guides-venia) es una base de código de referencia para utilizar [CIF Componentes principales](https://github.com/adobe/aem-core-cif-components). AEM CIF En este tutorial, inspeccionará el proyecto de referencia de Venia y comprenderá cómo se organizan los componentes principales y CSS y JavaScript utilizados por los componentes principales de la. También puede crear un estilo utilizando CSS para actualizar el estilo predeterminado de **Teaser de productos** componente.
 
 >[!TIP]
 >
@@ -180,9 +180,9 @@ A continuación, realice un pequeño cambio en el estilo Teaser para ver cómo s
 
    **clientlib-base** : una biblioteca de cliente vacía que simplemente incrusta las dependencias necesarias de [AEM Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es). La categoría es `venia.base`.
 
-   **clientlib-cif** : una biblioteca de cliente vacía que simplemente incrusta las dependencias necesarias de [AEM Componentes principales de CIF](https://github.com/adobe/aem-core-cif-components). La categoría es `venia.cif`.
+   **clientlib-cif** : una biblioteca de cliente vacía que simplemente incrusta las dependencias necesarias de [AEM CIF Componentes principales de](https://github.com/adobe/aem-core-cif-components). La categoría es `venia.cif`.
 
-   **clientlib-grid** AEM : incluye el CSS para habilitar la función Cuadrícula interactiva de la respuesta de la aplicación. AEM El uso de la cuadrícula de habilita [Modo de diseño](/help/sites-cloud/authoring/features/responsive-layout.md) AEM en el Editor de y permite a los autores de contenido cambiar el tamaño de los componentes. La categoría es `venia.grid` y está incrustado en `venia.base` biblioteca.
+   **clientlib-grid** AEM : incluye el CSS para habilitar la función Cuadrícula interactiva de la respuesta de la aplicación. AEM El uso de la cuadrícula de habilita [Modo de diseño](/help/sites-cloud/authoring/page-editor/responsive-layout.md) AEM en el Editor de y permite a los autores de contenido cambiar el tamaño de los componentes. La categoría es `venia.grid` y está incrustado en `venia.base` biblioteca.
 
 1. Inspect los archivos `customheaderlibs.html` y `customfooterlibs.html` debajo `ui.apps/src/main/content/jcr_root/apps/venia/components/page`:
 
@@ -217,7 +217,7 @@ AEM Ahora que se han implementado las actualizaciones de código, añada una ins
 
    Debe ver que el teaser de productos ahora tiene un borde rosa brillante en función del cambio de regla CSS creado anteriormente.
 
-## Verificación de las bibliotecas de cliente en la página {#verify-client-libraries}
+## Verificar las bibliotecas de cliente en la página {#verify-client-libraries}
 
 A continuación, compruebe la inclusión de las bibliotecas de cliente en la página.
 
@@ -435,7 +435,7 @@ Vuelva al IDE y al proyecto generado.
 
    ![Cambios en el teaser de Webpack Dev Server](../assets/style-cif-component/webpack-dev-server-teaser-changes.png)
 
-   AEM Sin embargo, aún no se han implementado los cambios en la configuración de los recursos de la. Puede descargar el archivo [solution aquí](../assets/style-cif-component/_productteaser.scss).
+   AEM Sin embargo, aún no se han implementado los cambios en la configuración de los recursos de la. Puede descargar el [archivo de solución aquí](../assets/style-cif-component/_productteaser.scss).
 
 1. AEM Implemente las actualizaciones para que se utilicen sus habilidades con Maven, desde un terminal de línea de comandos:
 
@@ -447,7 +447,7 @@ Vuelva al IDE y al proyecto generado.
    >[!NOTE]
    >Existen [herramientas y configuración IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment) adicionales que pueden sincronizar los archivos de proyecto directamente con una instancia de AEM local sin tener que realizar una compilación completa de Maven.
 
-## Visualización de teaser de productos actualizado {#view-updated-product-teaser}
+## Ver teaser de productos actualizado {#view-updated-product-teaser}
 
 AEM Una vez que el código del proyecto se haya implementado para su uso en la aplicación, debería poder ver los cambios en el teaser de productos.
 
@@ -471,9 +471,9 @@ AEM también intenta almacenar en caché las bibliotecas de cliente para el rend
 
 AEM CIF Ha terminado de diseñar su primer componente principal de la y ha utilizado un servidor de desarrollo de Webpack.
 
-## Desafío para una bonificación {#bonus-challenge}
+## Desafío de bonificación {#bonus-challenge}
 
-Utilice el [AEM Sistema de estilos de](/help/sites-cloud/authoring/features/style-system.md) para crear dos estilos que un autor de contenido pueda activar o desactivar. [Desarrollo con el sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=es) incluye pasos detallados e información sobre cómo realizar esta tarea.
+Utilice el [AEM Sistema de estilos de](/help/sites-cloud/authoring/page-editor/style-system.md) para crear dos estilos que un autor de contenido pueda activar o desactivar. [Desarrollo con el sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=es) incluye pasos detallados e información sobre cómo realizar esta tarea.
 
 ![Desafío para una bonificación: Sistema de estilos](../assets/style-cif-component/bonus-challenge.png)
 
@@ -482,6 +482,6 @@ Utilice el [AEM Sistema de estilos de](/help/sites-cloud/authoring/features/styl
 * [Tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype)
 * [Componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components)
 * [Configuración de un Entorno de desarrollo de AEM local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es)
-* [Bibliotecas de cliente](/help/implementing/developing/introduction/clientlibs.md)
+* [Bibliotecas del cliente](/help/implementing/developing/introduction/clientlibs.md)
 * [Introducción a AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es)
 * [Desarrollo con el sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=es)

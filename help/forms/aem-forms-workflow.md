@@ -4,8 +4,8 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: Utilice el flujo de trabajo de AEM Forms para automatizar y crear rápidamente flujos de trabajo de procesos empresariales. Por ejemplo, revisión y aprobación, generación de PDF, flujos de trabajo de Adobe Sign.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
 source-wordcount: '2373'
 ht-degree: 100%
 
@@ -197,7 +197,7 @@ Puede iniciar o habilitar un flujo de trabajo centrado en Forms mediante:
 
 ### El envío de una solicitud desde la bandeja de entrada AEM {#inbox}
 
-La solicitud de flujo de trabajo que ha creado está disponible como solicitud en la bandeja de entrada. Los usuarios que sean miembros de [!DNL workflow-users] pueden rellenar y enviar la solicitud que activa el flujo de trabajo asociado. Para obtener información sobre el uso de la bandeja de entrada AEM para enviar solicitudes y administrar tareas, consulte [Administrar solicitudes y tareas de Forms en la bandeja de entrada AEM](manage-applications-inbox.md).
+La solicitud de flujo de trabajo que ha creado está disponible como solicitud en la bandeja de entrada. Los usuarios que sean miembros de [!DNL workflow-users] pueden rellenar y enviar la solicitud que activa el flujo de trabajo asociado. Para obtener información sobre el uso de la bandeja de entrada AEM para enviar solicitudes y administrar tareas, consulte [Administrar solicitudes y tareas de Forms en la bandeja de entrada AEM](manage-applications-/help/sites-cloud/authoring/inbox.md).
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 

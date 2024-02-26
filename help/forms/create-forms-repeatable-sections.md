@@ -4,8 +4,8 @@ description: Aprenda a crear secciones o campos repetibles en un formulario adap
 role: Architect, Developer, Admin, User
 feature: Adaptive Forms, Core Components
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+workflow-type: tm+mt
 source-wordcount: '1256'
 ht-degree: 100%
 
@@ -237,6 +237,6 @@ En el siguiente código, el panel `SampleType` utiliza la propiedad minOccours y
 >* [Create an Adaptive Form](creating-adaptive-form-core-components.md)
 >* [Create style or themes for your forms](using-themes-in-core-components.md)
 >* [Add dynamic behavior to forms using the rule editor](rule-editor.md)
->* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+>* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/console-layout.md)
 
 -->

@@ -2,10 +2,10 @@
 title: Notas de la versión 2021.5.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2021.5.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: 720430af374636878b42ce346ca9c61ab089709b
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 45%
+ht-degree: 46%
 
 ---
 
@@ -20,7 +20,7 @@ En la siguiente sección se describen las notas de la versión generales de la v
 >
 >Consulte [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=es) para obtener más información sobre las actualizaciones de la documentación no relacionadas directamente con una versión.
 
-## Fecha de la versión {#release-date}
+## Fecha de lanzamiento {#release-date}
 
 La fecha de lanzamiento de [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 es el 27 de mayo de 2021.
 La de la siguiente versión (2021.6.0) será el 28 de junio de 2021.
@@ -39,7 +39,7 @@ La de la siguiente versión (2021.6.0) será el 28 de junio de 2021.
 
 ### Novedades de [!DNL Sites] {#what-is-new-sites}
 
-* Próximamente podrá verificar el contenido de una nueva [Previsualizar nivel](/help/sites-cloud/authoring/fundamentals/previewing-content.md) para simular la apariencia final de la experiencia como lo haría en el nivel de publicación. Esto se habilita mediante el asistente de publicación administrada de AEM Sites, que ahora le permite elegir un destino de publicación entre Publicar o Vista previa. Se puede acceder a las experiencias en Vista previa a través de una dirección URL dedicada. Después de la validación en Vista previa, el contenido se puede publicar de Autor a Publicar como de costumbre. AEM La activación del servicio Vista previa en entornos as a Cloud Service de la se implementará de forma gradual en las próximas semanas.
+* Próximamente podrá verificar el contenido de una nueva [Previsualizar nivel](/help/sites-cloud/authoring/sites-console/previewing-content.md) para simular la apariencia final de la experiencia como lo haría en el nivel de publicación. Esto se habilita mediante el asistente de publicación administrada de AEM Sites, que ahora le permite elegir un destino de publicación entre Publicar o Vista previa. Se puede acceder a las experiencias en Vista previa a través de una dirección URL dedicada. Después de la validación en Vista previa, el contenido se puede publicar de Autor a Publicar como de costumbre. AEM La activación del servicio Vista previa en entornos as a Cloud Service de la se implementará de forma gradual en las próximas semanas.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -80,7 +80,7 @@ La de la siguiente versión (2021.6.0) será el 28 de junio de 2021.
 
 ### Próxima característica beta de [!DNL Forms] {#what-is-new-forms-prerelease}
 
-Output as a Cloud service: El servicio de salida le ayuda a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio permite generar documentos en modo por lotes sincrónico y asincrónico. El servicio Output le permite crear aplicaciones con las que puede hacer lo siguiente:
+Output as a Cloud service: El servicio de salida le ayuda a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio le permite generar documentos en los modos sincrónico y asicrónico por lotes.  El servicio Output le permite crear aplicaciones con las que puede hacer lo siguiente:
 
 * Generar formularios finales al rellenar archivos de plantilla con datos XML.
 * Generar formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.

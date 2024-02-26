@@ -2,16 +2,16 @@
 title: Información general sobre componentes
 description: Los componentes son unidades modulares que implementan una funcionalidad específica para presentar el contenido en su sitio web
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 67%
+source-wordcount: '376'
+ht-degree: 66%
 
 ---
 
 # Información general sobre componentes {#components-overview}
 
-Esta página proporciona información general sobre los componentes de Adobe Experience Manager (AEM), como los [usados para la creación de páginas](/help/sites-cloud/authoring/fundamentals/components.md).
+Esta página proporciona información general sobre los componentes de Adobe Experience Manager (AEM), como los [usados para la creación de páginas](/help/sites-cloud/authoring/page-editor/components.md).
 
 ## ¿Qué son los componentes? {#what-are-components}
 
@@ -48,7 +48,7 @@ Los componentes principales se proporcionan con AEM as a Cloud Service, y el [Tu
 
 ### Visualización de componentes disponibles {#viewing-available-components}
 
-AEM Para obtener una descripción general de todos los componentes disponibles en la instancia de la, utilice el [Consola Componentes](/help/sites-cloud/authoring/features/components-console.md).
+AEM Para obtener una descripción general de todos los componentes disponibles en la instancia de la, utilice el [Consola Componentes](/help/sites-cloud/authoring/components-console.md).
 
 Como alternativa, también puede utilizar CRXDE Lite para obtener una lista de todos los componentes disponibles en el repositorio.
 

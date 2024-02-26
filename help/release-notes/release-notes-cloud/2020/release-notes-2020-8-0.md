@@ -2,14 +2,14 @@
 title: Notas de la versión 2020.8.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.8.0."
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 36%
+source-wordcount: '1031'
+ht-degree: 35%
 
 ---
 
-# Notas de la versión [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
+# Notas de la versión para [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
 
 En la siguiente sección se describen las notas de la versión generales de Experience Manager as a Cloud Service 2020.8.0.
 
@@ -18,7 +18,7 @@ En la siguiente sección se describen las notas de la versión generales de Expe
 
 ### Novedades de [!DNL Sites] {#what-is-new-sites}
 
-* Capacidad para [restaurar páginas y páginas secundarias (árboles de páginas) a una versión anterior](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions).
+* Capacidad para [restaurar páginas y páginas secundarias (árboles de páginas) a una versión anterior](/help/sites-cloud/authoring/sites-console/page-versions.md#reinstating-versions).
 
 * Capacidad para [crear lanzamientos](/help/sites-cloud/authoring/launches/overview.md) AEM en el [SPA Editor de](/help/implementing/developing/hybrid/introduction.md).
 
@@ -72,7 +72,7 @@ En la siguiente sección se describen las notas de la versión generales de Expe
 
 ### Fecha de la versión {#release-date-cm}
 
-La fecha de lanzamiento de [!UICONTROL Cloud Manager] La versión 2020.8.0 es el 6 de agosto de 2020.
+La fecha de versión de [!UICONTROL Cloud Manager] versión 2020.8.0 es viernes, 06 de agosto de 2020.
 
 ### Novedades {#what-is-new-cloud-manager}
 

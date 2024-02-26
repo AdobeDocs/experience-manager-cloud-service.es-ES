@@ -2,7 +2,7 @@
 title: Desarrollo y diferencia de página
 description: Comprenda cómo funciona la función Diferencias de página y cómo puede afectar a un desarrollador
 exl-id: 03c08616-2203-4b90-bed6-4836266e2507
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 12%
@@ -15,11 +15,11 @@ ht-degree: 12%
 
 La creación de contenido es un proceso iterativo. La creación con eficiencia de contenido requiere poder ver qué ha cambiado de una iteración a otra. Visualizar la versión de la página y luego otra es un proceso poco eficaz y propenso a errores. Un autor desea poder comparar la página actual con una versión anterior en paralelo con las diferencias resaltadas.
 
-La diferencia de página permite al usuario comparar la página actual con lanzamientos, versiones anteriores, etc. Para obtener más información sobre esta función de usuario, consulte [Diferencias de página](/help/sites-cloud/authoring/features/page-diff.md).
+La diferencia de página permite al usuario comparar la página actual con lanzamientos, versiones anteriores, etc. Para obtener más información sobre esta función de usuario, consulte [Diferencias de página](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## Detalles de operación {#operation-details}
 
-AEM Al comparar versiones de una página, la versión anterior que el usuario desea comparar se vuelve a crear en segundo plano para facilitar la comparación de diferencias. La comparación de versiones de una página se realiza de nuevo en segundo plano para facilitar la comparación de diferencias. Esta versión anterior es necesaria para procesar el contenido [para una comparación en paralelo](/help/sites-cloud/authoring/features/page-diff.md).
+AEM Al comparar versiones de una página, la versión anterior que el usuario desea comparar se vuelve a crear en segundo plano para facilitar la comparación de diferencias. La comparación de versiones de una página se realiza de nuevo en segundo plano para facilitar la comparación de diferencias. Esta versión anterior es necesaria para procesar el contenido [para una comparación en paralelo](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 AEM Esta operación de recreación se realiza por parte de los usuarios de forma interna, es transparente para el usuario y no requiere intervención alguna. Sin embargo, un administrador que visualice el repositorio, por ejemplo, en CRXDE Lite, verá estas versiones recreadas dentro de la estructura de contenido.
 

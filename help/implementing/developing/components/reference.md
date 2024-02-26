@@ -2,10 +2,10 @@
 title: Guía de referencia de componentes
 description: Una guía de referencia para desarrolladores para los detalles de los componentes y su estructura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
-source-wordcount: '3642'
-ht-degree: 2%
+source-wordcount: '3481'
+ht-degree: 1%
 
 ---
 
@@ -103,7 +103,7 @@ La definición de un componente se puede desglosar de la siguiente manera:
 * **Nodo raíz**:
    * `<mycomponent> (cq:Component)` : nodo de jerarquía del componente.
 * **Propiedades vitales**:
-   * `jcr:title` : título del componente; por ejemplo, se utiliza como etiqueta cuando el componente aparece en la lista de [Navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) y [Consola Componentes](/help/sites-cloud/authoring/features/components-console.md)
+   * `jcr:title` : título del componente; por ejemplo, se utiliza como etiqueta cuando el componente aparece en la lista de [Navegador de componentes](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) y [Consola Componentes](/help/sites-cloud/authoring/components-console.md)
    * `jcr:description` : descripción del componente; se utiliza como sugerencia para pasar el ratón en el navegador de componentes y la consola de componentes.
    * Consulte la sección [Icono de componente](#component-icon) para obtener más información
 * **Nodos secundarios vitales**:
@@ -141,7 +141,7 @@ Si ninguna de las propiedades anteriores (`cq:icon`, `abbreviation`, `cq:icon.pn
 
 Para cancelar la herencia de los iconos de los supercomponentes, configure un valor empty `abbreviation` La propiedad en el componente volverá al comportamiento predeterminado.
 
-El [Consola de componente](/help/sites-cloud/authoring/features/components-console.md#component-details) muestra cómo se define el icono de un componente en particular.
+El [Consola de componente](/help/sites-cloud/authoring/components-console.md#component-details) muestra cómo se define el icono de un componente en particular.
 
 #### Ejemplo de icono de SVG {#svg-icon-example}
 
@@ -166,7 +166,7 @@ Un componente es un nodo de tipo `cq:Component` y tiene las siguientes propiedad
 | Nombre | Tipo | Descripción |
 |---|---|---|
 | `.` | `cq:Component` | Representa el componente actual. Un componente es de tipo nodo `cq:Component`. |
-| `componentGroup` | `String` | Representa el grupo en el cual se puede seleccionar el componente en la [Navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Un valor que comienza por `.` se utiliza para componentes que no están disponibles para su selección en la interfaz de usuario, como los componentes base de los que heredan otros componentes. |
+| `componentGroup` | `String` | Representa el grupo en el cual se puede seleccionar el componente en la [Navegador de componentes](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). Un valor que comienza por `.` se utiliza para componentes que no están disponibles para su selección en la interfaz de usuario, como los componentes base de los que heredan otros componentes. |
 | `cq:isContainer` | `Boolean` | Esto indica si el componente es un componente contenedor y, por lo tanto, puede contener otros componentes, como un sistema de párrafos. |
 | `cq:dialog` | `nt:unstructured` | Esta es la definición del cuadro de diálogo de edición para el componente. |
 | `cq:design_dialog` | `nt:unstructured` | Esta es la definición del cuadro de diálogo de diseño para el componente. |
@@ -199,7 +199,7 @@ Los nodos secundarios de interés particular incluyen:
 
 ### Cuadros de diálogo {#dialogs}
 
-Los cuadros de diálogo son un elemento clave del componente, ya que proporcionan una interfaz para que los autores configuren el componente en una página de contenido y proporcionen entradas para ese componente. Consulte la [documentación de creación](/help/sites-cloud/authoring/fundamentals/editing-content.md) para obtener más información sobre cómo los autores de contenido interactúan con los componentes.
+Los cuadros de diálogo son un elemento clave del componente, ya que proporcionan una interfaz para que los autores configuren el componente en una página de contenido y proporcionen entradas para ese componente. Consulte la [documentación de creación](/help/sites-cloud/authoring/page-editor/edit-content.md) para obtener más información sobre cómo los autores de contenido interactúan con los componentes.
 
 Según la complejidad del componente, el cuadro de diálogo puede necesitar una o más pestañas.
 
@@ -221,9 +221,9 @@ En el cuadro de diálogo, se definen campos individuales:
 
 ### Cuadros de diálogo de diseño {#design-dialogs}
 
-Los cuadros de diálogo de diseño son similares a los utilizados para editar y configurar contenido, pero proporcionan la interfaz para que los autores de plantillas preconfiguren y proporcionen detalles de diseño para ese componente en una plantilla de página. Los autores de contenido utilizan las plantillas de página para crear páginas de contenido. Consulte la [documentación de plantilla](/help/sites-cloud/authoring/features/templates.md) para obtener más información sobre cómo se crean las plantillas.
+Los cuadros de diálogo de diseño son similares a los utilizados para editar y configurar contenido, pero proporcionan la interfaz para que los autores de plantillas preconfiguren y proporcionen detalles de diseño para ese componente en una plantilla de página. Los autores de contenido utilizan las plantillas de página para crear páginas de contenido. Consulte la [documentación de plantilla](/help/sites-cloud/authoring/sites-console/templates.md) para obtener más información sobre cómo se crean las plantillas.
 
-[Los cuadros de diálogo de diseño se utilizan al editar una plantilla de página](/help/sites-cloud/authoring/features/templates.md), aunque no son necesarios para todos los componentes. Por ejemplo, la variable **Título** y **Componentes de imagen** ambos tienen cuadros de diálogo de diseño, mientras que la variable **Componente Compartir en redes sociales** no lo tiene.
+[Los cuadros de diálogo de diseño se utilizan al editar una plantilla de página](/help/sites-cloud/authoring/sites-console/templates.md), aunque no son necesarios para todos los componentes. Por ejemplo, la variable **Título** y **Componentes de imagen** ambos tienen cuadros de diálogo de diseño, mientras que la variable **Componente Compartir en redes sociales** no lo tiene.
 
 ### IU de Coral e IU de Granite {#coral-and-granite}
 
@@ -278,7 +278,7 @@ Una vez creado un componente, debe habilitarlo para utilizarlo. Su uso muestra c
 
 Una vez definido un componente, debe estar disponible para su uso. Para que un componente esté disponible para utilizarlo en una plantilla, debe habilitarlo en la directiva del contenedor de diseño de la plantilla.
 
-Consulte la [documentación de plantilla](/help/sites-cloud/authoring/features/templates.md) para obtener más información sobre cómo se crean las plantillas.
+Consulte la [documentación de plantilla](/help/sites-cloud/authoring/sites-console/templates.md) para obtener más información sobre cómo se crean las plantillas.
 
 ### Componentes y el contenido que crean {#components-and-the-content-they-create}
 
@@ -469,7 +469,7 @@ Todo lo que tienes que hacer es colocar un `README.md` en la estructura del comp
 
 ![README.md en la estructura de componentes](assets/components-documentation.png)
 
-Esta marca se muestra en la variable [Consola de componente](/help/sites-cloud/authoring/features/components-console.md).
+Esta marca se muestra en la variable [Consola de componente](/help/sites-cloud/authoring/components-console.md).
 
 ![README.md visible en la consola Componentes](assets/components-documentation-console.png)
 

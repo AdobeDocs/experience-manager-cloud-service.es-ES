@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Panoramic Images
 role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 2%
+source-wordcount: '149'
+ht-degree: 1%
 
 ---
 
@@ -25,10 +25,9 @@ Consulte también [Administrar ajustes preestablecidos de visor](/help/assets/dy
 Para que un recurso cargado se califique como imagen panorámica esférica que desea utilizar con el visualizador de imágenes panorámicas, el recurso debe tener uno o ambos de los siguientes elementos:
 
 * Una proporción de aspecto de 2.
-
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* Etiquetado con las palabras clave `equirectangular`, o `spherical`y `panorama`, o `spherical` y `panoramic`. Consulte [Uso de etiquetas](/help/sites-cloud/authoring/features/tags.md).
+* Etiquetado con las palabras clave `equirectangular`, o `spherical`y `panorama`, o `spherical` y `panoramic`. Consulte [Uso de etiquetas](/help/sites-cloud/authoring/sites-console/tags.md).
 
 Tanto la proporción de aspecto como los criterios de palabra clave se aplican a los recursos panorámicos para la página de detalles de recursos y el `Panoramic Media` Componente WCM.
 

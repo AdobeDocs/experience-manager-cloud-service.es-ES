@@ -3,16 +3,16 @@ title: Creación de contenido para Edge Delivery Services
 description: Descubra cómo funciona la creación de contenido con los Edge Delivery Services AEM y cómo crear contenido de con los Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
-source-git-commit: 7d28a3a8304d79ecc3143bdc9373134d312af49d
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 13%
+ht-degree: 21%
 
 ---
 
 # Creación de contenido para Edge Delivery Services {#authoring-edge}
 
-Con los Edge Delivery Services, la creación es fácil, rápida y flexible. Tiene dos opciones para crear contenido para Edge Delivery Services:
+Con Edge Delivery Services, la creación es fácil, rápida y flexible.  Tiene dos opciones para crear contenido para Edge Delivery Services:
 
 * [Creación basada en documentos](#document-based) - Como Microsoft Word o Google Docs
 * [Editor universal](#universal-editor) AEM - Una interfaz de usuario moderna para crear contenido dentro de la
@@ -29,7 +29,7 @@ Cuando se utilizan Edge Delivery Services AEM con as a Cloud Service AEM, el hec
 
 ![AEM Funcionamiento de la creación de con Edge Delivery Services](assets/how-aem-edge-works.png)
 
-1. [AEM El entorno de creación de](/help/sites-cloud/authoring/getting-started/quick-start.md) se utiliza para la administración de contenido, como la creación de nuevas páginas, fragmentos de experiencias, fragmentos de contenido, etc.
+1. [AEM El entorno de creación de](/help/sites-cloud/authoring/quick-start.md) se utiliza para la administración de contenido, como la creación de nuevas páginas, fragmentos de experiencias, fragmentos de contenido, etc.
    * AEM Todas las funciones de la están disponibles, como flujos de trabajo, MSM, traducción, lanzamientos, etc.
 1. [El editor universal](/help/implementing/universal-editor/authoring.md) AEM se utiliza para crear el contenido gestionado en el.
    * El editor universal ofrece una interfaz de usuario nueva y moderna para la creación de contenido.
@@ -54,7 +54,7 @@ Los detalles de los bloques se pueden configurar en el carril Propiedades.
 
 Para obtener más información sobre cómo crear contenido con el editor universal, consulte el documento [Creación de contenido con el editor universal.](/help/implementing/universal-editor/authoring.md)
 
-Consulte la [AEM Guía de introducción para desarrolladores para la creación de contenido con Edge Delivery Services en la creación de](/help/edge/edge-dev-getting-started.md) AEM para aprender a iniciar su propio proyecto para crear proyectos con Edge Delivery Services de y de la.
+Consulte la [Guía de introducción de desarrolladores para la creación de contenido en AEM con Edge Delivery Services](/help/edge/edge-dev-getting-started.md) y aprenda a crear su propio proyecto con AEM y Edge Delivery Services.
 
 ## Cómo empezar a trabajar {#how-to-get-started}
 

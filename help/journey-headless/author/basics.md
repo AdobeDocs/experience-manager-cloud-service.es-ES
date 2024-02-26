@@ -2,10 +2,10 @@
 title: Información sobre conceptos básicos de creación
 description: Obtenga información sobre los conceptos y la mecánica de creación de contenido para su CMS sin encabezado mediante Fragmentos de contenido.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '1727'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Al igual que con la mayoría de los sistemas, debe iniciar sesión. Como autor, 
 * Una contraseña
 * Un vínculo para acceder a la pantalla de inicio de sesión
 
-Su cuenta se habrá configurado con los privilegios que necesite. Si tiene algún problema, Adobe recomienda ponerse en contacto con el equipo interno de soporte del proyecto.
+Su cuenta se habrá configurado con los privilegios que necesite. Si tiene algún problema, recomendamos que se ponga en contacto con su equipo de soporte interno del proyecto.
 
 ### Navegación {#navigation}
 
@@ -135,7 +135,7 @@ Puede hacerlo creando una serie de carpetas dentro de la sección **Archivos** d
 
 ![Opción Crear carpeta](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-Se abrirá un cuadro de diálogo en el que puede introducir los detalles y confirmar con **Crear**:
+Se abre un cuadro de diálogo en el que puede escribir los detalles y confirmarlos con **Crear**:
 
 ![Cuadro de diálogo Crear carpeta](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -181,7 +181,7 @@ Especifique lo siguiente:
 * **Nombre**
 * **Descripción**
 
-A continuación, confirme con: **Crear** o **Crear y abrir**.
+A continuación, confirma con: **Crear** o **Crear y abrir**.
 
 ### Edición de un fragmento {#editing-fragment}
 
@@ -193,10 +193,10 @@ Puede abrir un fragmento inmediatamente después de crearlo o seleccionarlo en l
 >
 >Existen dos editores para crear fragmentos de contenido.
 >
->* El nuevo editor, al que se accede principalmente desde el **Fragmentos de contenido** consola.
->* El editor original, al que se accede principalmente desde el **Assets** consola.
+>* El nuevo editor, al que se accede principalmente desde la consola **Fragmentos de contenido**.
+>* El editor original, al que se accede principalmente desde la consola **Assets**.
 
-Cuando se abre el editor por primera vez, ve lo siguiente:
+Cuando se abre el editor por primera vez, se ve lo siguiente:
 
 * barra de herramientas superior: para obtener información clave y acciones
    * un vínculo a la consola Fragmento de contenido (icono de Inicio)
@@ -206,17 +206,17 @@ Cuando se abre el editor por primera vez, ve lo siguiente:
    * una opción para mostrar todo **Referencias principales** (icono de vínculo)
    * el fragmento **Estado** y la información guardada por última vez
    * un conmutador para cambiar al editor original (basado en recursos)
-* panel izquierdo: muestra el **Variaciones** para el fragmento de contenido y su **Campos**:
+* panel izquierdo: muestra las **Variaciones** para el fragmento de contenido y sus **Campos**:
    * estos vínculos se pueden utilizar para desplazarse por la estructura del fragmento de contenido
 * panel derecho: presenta pestañas que muestran las propiedades (metadatos) y etiquetas, información sobre el historial de versiones e información relacionada con cualquier copia de idioma
-   * en el **Propiedades** puede actualizar la pestaña **Título** y **Descripción** para el fragmento, o **Variación**
+   * en **Propiedades** puede actualizar la pestaña **Título** y **Descripción** para el fragmento o **Variación**
 * panel central: muestra los campos y el contenido reales de la variación seleccionada
-   * le permite editar el contenido
-   * if **Marcador de ficha** Los campos de se definen dentro del modelo que se muestra aquí y pueden utilizarse para navegar
+   * permite editar el contenido
+   * Si los campos **Marcador de pestaña** se definen dentro del modelo que se muestra aquí y pueden utilizarse para navegar
 
-Por ejemplo, un fragmento puede:
+Por ejemplo, un fragmento puede requerir lo siguiente:
 
-* Requiere varios fragmentos de información, algunos con un tipo específico. Para el contenido sin encabezado, las referencias son clave (las aprenderá más adelante en su recorrido).
+* varios fragmentos de información, algunos con un tipo específico. Para el contenido sin encabezado, las referencias son clave (más adelante, en el recorrido, aprenderá sobre ellas).
 
 * Permite escribir una sección larga de texto. Aquí hay opciones adicionales para administrar y dar formato al texto. Incluso puede abrir los campos de texto individuales en un editor de pantalla completa (con el icono en forma de pantalla pequeña de la derecha)
 
@@ -267,21 +267,21 @@ Ahora que ha aprendido lo básico, el siguiente paso es [Obtener información so
 
 ## Recursos adicionales {#additional-resources}
 
-* [Conceptos de creación](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [Conceptos de creación](/help/sites-cloud/authoring/author-publish.md)
 
-* [Gestión básica](/help/sites-cloud/authoring/getting-started/basic-handling.md): esta página se basa principalmente en la consola **Sites**, pero la mayoría de funciones también son relevantes para la creación de los **Fragmentos de contenido** debajo de la consola **Recursos**.
+* [Gestión básica](/help/sites-cloud/authoring/basic-handling.md): esta página se basa principalmente en la consola **Sites**, pero la mayoría de funciones también son relevantes para la creación de los **Fragmentos de contenido** debajo de la consola **Recursos**.
 
-   * [Panel de navegación](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigation-panel)
+   * [Panel de navegación](/help/sites-cloud/authoring/basic-handling.md#navigation-panel)
 
-   * [Encabezado](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)
+   * [Encabezado](/help/sites-cloud/authoring/basic-handling.md#the-header)
 
-   * [Barra de herramientas de acciones](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
+   * [Barra de herramientas de acciones](/help/sites-cloud/authoring/basic-handling.md#actions-toolbar)
 
-   * [Acciones rápidas](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
+   * [Acciones rápidas](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
 
-   * [Visualización y selección de los recursos](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+   * [Visualización y selección de los recursos](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)
 
-   * [Selector de carril](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+   * [Selector de carril](/help/sites-cloud/authoring/basic-handling.md#rail-selector)
 
 * [Trabajar con fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md)
 

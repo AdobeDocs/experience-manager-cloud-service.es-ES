@@ -2,9 +2,9 @@
 title: Exportación de fragmentos de contenido a Adobe Target
 description: Obtenga información sobre cómo exportar los fragmentos de contenido a Adobe Target para probar y personalizar experiencias.
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '2223'
+source-wordcount: '2159'
 ht-degree: 95%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 95%
 >* Los fragmentos de contenido de AEM se exportan al espacio de trabajo predeterminado de Adobe Target.
 >* AEM debe integrarse con Adobe Target según las instrucciones de [Integración con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
-Puede exportar [Fragmentos de contenido](/help/sites-cloud/authoring/fundamentals/content-fragments.md), creados en Adobe Experience Manager as a Cloud Service (AEM), a Adobe Target (Target). Luego pueden utilizarse como ofertas en actividades de Target para probar y personalizar experiencias a escala.
+Puede exportar [Fragmentos de contenido](/help/sites-cloud/authoring/fragments/content-fragments.md), creados en Adobe Experience Manager as a Cloud Service (AEM), a Adobe Target (Target). Luego pueden utilizarse como ofertas en actividades de Target para probar y personalizar experiencias a escala.
 
 Hay una opción disponible para exportar un fragmento de contenido a Adobe Target:
 
@@ -286,7 +286,7 @@ After you create a Target framework in AEM, associate your web pages with the fr
 When you associate a page with the framework, the child pages inherit the association.
 
 1. In the **Sites** console, navigate to the site that you want to configure.
-1. Using either [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources), select **View Properties.**
+1. Using either [quick actions](/help/sites-cloud/authoring/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/basic-handling.md#selecting-resources), select **View Properties.**
 1. Select the **Cloud Services** tab.
 1. Select **Edit**.
 1. Select **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
@@ -300,7 +300,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >Make sure that you select the specific **framework** that you created and not the Target cloud configuration under which it was created.
 
 1. Select **Done**.
-1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).)
+1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md).)
 
    >[!NOTE]
    >
@@ -352,7 +352,7 @@ Para exportar un fragmento de contenido de AEM a Target (después de especificar
 
    >[!NOTE]
    >
-   >[Varios detalles](/help/sites-cloud/authoring/fundamentals/content-fragments.md#details-of-your-content-fragment) de la exportación se pueden ver en **Vista de lista** de la consola y **Propiedades**.
+   >[Varios detalles](/help/sites-cloud/authoring/fragments/content-fragments.md#details-of-your-content-fragment) de la exportación se pueden ver en **Vista de lista** de la consola y **Propiedades**.
 
    >[!NOTE]
    >
@@ -360,7 +360,7 @@ Para exportar un fragmento de contenido de AEM a Target (después de especificar
 
 >[!NOTE]
 >
->También puede realizar la exportación desde el editor de páginas utilizando comandos comparables en el menú [Información de la página](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information).
+>También puede realizar la exportación desde el editor de páginas utilizando comandos comparables en el menú [Información de la página](/help/sites-cloud/authoring/page-editor/introduction.md#page-information).
 
 ## Uso de los fragmentos de contenido en Adobe Target {#using-your-content-fragments-in-adobe-target}
 

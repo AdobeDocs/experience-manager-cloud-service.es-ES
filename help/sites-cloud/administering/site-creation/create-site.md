@@ -4,10 +4,10 @@ description: Aprenda a utilizar AEM para crear un sitio mediante plantillas de s
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 77%
+source-wordcount: '755'
+ht-degree: 80%
 
 ---
 
@@ -55,7 +55,7 @@ El uso de una plantilla para crear un sitio es sencillo.
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Seleccionar **Crear** en la parte superior derecha de la pantalla y en el menú desplegable, seleccione **Sitio a partir de plantilla**.
+1. Seleccione **Crear** en la parte superior derecha de la pantalla y en el menú desplegable, seleccione **Sitio a partir de una plantilla**.
 
    ![Creación de un sitio a partir de una plantilla](../assets/create-site-from-template.png)
 
@@ -75,7 +75,7 @@ El uso de una plantilla para crear un sitio es sencillo.
 
    * El título del sitio aparece en la barra de título de los exploradores.
    * El nombre del sitio forma parte de la dirección URL.
-   * El nombre del sitio debe cumplir con las [convenciones de asignación de nombres de páginas de AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices).
+   * El nombre del sitio debe cumplir con las [convenciones de asignación de nombres de páginas de AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices).
 
 1. Seleccionar **Crear** y el sitio se crea a partir de la plantilla del sitio.
 

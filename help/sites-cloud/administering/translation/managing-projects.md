@@ -4,7 +4,7 @@ description: Aprenda a crear y administrar proyectos de traducción automática 
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '3960'
 ht-degree: 85%
@@ -142,7 +142,7 @@ Al igual que al crear un proyecto, al añadir páginas, se añaden copias de las
    >
    >El idioma de destino definido en el proyecto de traducción debe coincidir con la ruta de la copia de idioma, como se muestra en el carril de referencias.
 
-1. Seleccionar **Actualizar**.
+1. Seleccione **Actualizar**.
 
 ### Creación de la estructura de una copia de idioma {#creating-the-structure-of-a-language-copy}
 
@@ -166,7 +166,7 @@ Rellene la copia de idioma para que albergue contenido de la lengua principal qu
 
    ![Solo estructura](../assets/language-copy-structure-only.png)
 
-1. Seleccionar **Actualizar**.
+1. Seleccione **Actualizar**.
 
 ### Actualización de la memoria de traducción {#updating-translation-memory}
 
@@ -196,7 +196,7 @@ Las actualizaciones de la memoria de traducción se pueden interceptar y enviar 
 
 Se puede seleccionar una propiedad en la vista de lista de la consola Sites que muestre si una página se ha traducido, está en proceso de traducción o aún no se ha traducido.
 
-1. En la consola del sitio, cambie a la [vista de lista](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. En la consola del sitio, cambie a la [vista de lista](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Seleccione, **Configuración de vista** en la lista desplegable de vista.
 1. En el cuadro de diálogo, marque la **Traducido** y seleccione **Actualizar**.
 
@@ -338,7 +338,7 @@ Especifique la fecha antes de la cual el proveedor de traducción debe devolver 
 
    ![Propiedades del proyecto de traducción](../assets/translation-project-properties-basic.png)
 
-1. Seleccionar **Guardar y cerrar**.
+1. Seleccione **Guardar y cerrar**.
 
 ### Creación de ámbitos para un trabajo de traducción {#scoping-a-translation-job}
 
@@ -437,18 +437,18 @@ Cuando el contenido se traduce para una copia de idioma existente, revise las tr
 Para comparar las copias de idioma con el maestro de idioma:
 
 1. En la consola Sites, vaya a la copia de idioma que desee comparar.
-1. Abra el [Carril referencias](/help/sites-cloud/authoring/getting-started/basic-handling.md#references).
+1. Abra el [Carril referencias](/help/sites-cloud/authoring/basic-handling.md#references).
 1. En el encabezado **Copias**, seleccione **Copias de idioma.**
 1. Seleccione la copia de idioma específica y, a continuación, puede hacer clic en **Comparar con maestro** o **Comparar con anterior** si procede.
 
    ![Comparar copias de idioma](../assets/language-copy-compare.png)
 
 1. Las dos páginas (inicio y origen) se abrirán una junto a la otra.
-   * Para obtener información completa sobre el uso de esta funcionalidad, consulte [Diferencias de página](/help/sites-cloud/authoring/features/page-diff.md).
+   * Para obtener información completa sobre el uso de esta funcionalidad, consulte [Diferencias de página](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## Mover una página de origen o cambiarle el nombre {#move-source}
 
-Si una página de origen ya traducida debe ser [cambiado de nombre o movido](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page), vuelva a traducir la página después de moverla y cree una copia de idioma basada en el nuevo nombre/ubicación de la página. La copia de idioma antigua basada en el nombre/ubicación anterior seguirá ahí.
+Si una página de origen ya traducida debe ser [cambiado de nombre o movido](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page), vuelva a traducir la página después de moverla y cree una copia de idioma basada en el nuevo nombre/ubicación de la página. La copia de idioma antigua basada en el nombre/ubicación anterior seguirá ahí.
 
 La práctica recomendada en este escenario es seguir este procedimiento:
 

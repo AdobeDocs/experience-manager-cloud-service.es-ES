@@ -2,10 +2,10 @@
 title: 'Creación de una carpeta de recursos: configuración sin encabezado'
 description: Utilice modelos de fragmentos de contenido de AEM para definir la estructura de los fragmentos de contenido, la base del contenido sin encabezado.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '375'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 
@@ -34,11 +34,11 @@ Un administrador solo tendría que crear carpetas ocasionalmente para organizar 
       * Se puede modificar si es necesario.
 
    ![Crear carpeta](../assets/assets-folder-create.png)
-1. Seleccione la carpeta que ha creado pasando el puntero sobre ella y pulsando la marca de verificación. A continuación, seleccione **Propiedades** en la barra de herramientas (o utilice el `p` [método abreviado de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)).
+1. Seleccione la carpeta que ha creado pasando el puntero sobre ella y pulsando la marca de verificación. A continuación, seleccione **Propiedades** en la barra de herramientas (o utilice el `p` [método abreviado de teclado](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)).
 1. En la ventana **Propiedades**, seleccione la pestaña **Servicios de nube**.
 1. Para la **Configuración de nube**, seleccione la [configuración que creó anteriormente.](create-configuration.md)
    ![Configurar la carpeta de recursos](../assets/assets-folder-configure.png)
-1. Seleccionar **Guardar y cerrar**.
+1. Seleccione **Guardar y cerrar**.
 1. Seleccionar **OK** en la ventana de confirmación.
 
    ![Ventana de confirmación](../assets/assets-folder-confirmation.png)

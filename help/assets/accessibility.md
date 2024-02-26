@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '1943'
-ht-degree: 3%
+source-wordcount: '1916'
+ht-degree: 2%
 
 ---
 
@@ -80,7 +80,7 @@ Muchos elementos de la interfaz de usuario en los que se puede hacer clic o que 
 
 ### Métodos abreviados de teclado en [!DNL Assets] {#keyboard-shortcuts}
 
-Las siguientes acciones en [!DNL Assets] trabaje con los métodos abreviados de teclado enumerados. La mayoría de los métodos abreviados de teclado aplicables a [!DNL Experience Manager] Las consolas también se aplican a [!DNL Assets]. Consulte [métodos abreviados del teclado para consolas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md). Consulte cómo [habilitar o deshabilitar los métodos abreviados de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Las siguientes acciones en [!DNL Assets] trabaje con los métodos abreviados de teclado enumerados. La mayoría de los métodos abreviados de teclado aplicables a [!DNL Experience Manager] Las consolas también se aplican a [!DNL Assets]. Consulte [métodos abreviados del teclado para consolas](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md). Consulte cómo [habilitar o deshabilitar los métodos abreviados de teclado](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 | Interfaz de usuario o escenario | Métodos abreviados del teclado | Acción |
 |---|---|---|
@@ -161,7 +161,7 @@ Al examinar el repositorio de recursos, la siguiente funcionalidad mejora la acc
 * Some enhancements to metadata properties UI?
 -->
 
-## Administre recursos digitales {#manage-assets}
+## Administrar recursos digitales {#manage-assets}
 
 Muchas tareas de administración de recursos, como las operaciones de CRUD, la descarga de un recurso y la adición de metadatos, son accesibles en varios grados. [!DNL Assets] le permite realizar las tareas utilizando varias tecnologías de asistencia, especialmente un lector de pantalla y un teclado.
 

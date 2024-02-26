@@ -2,16 +2,16 @@
 title: Configuración de la edición masiva de propiedades de página
 description: Aprenda a configurar la edición masiva para poder editar las propiedades de varias páginas a la vez.
 exl-id: 0d10c6b9-8643-479d-adc1-4066d227e83d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '250'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
 # Configuración de la edición masiva de propiedades de página {#configuring-bulk-editing-of-page-properties}
 
-[Edición masiva de propiedades de página](/help/sites-cloud/authoring/fundamentals/page-properties.md#from-the-sites-console-multiple-pages) permite editar las propiedades de varias páginas a la vez.
+[Edición masiva de propiedades de página](/help/sites-cloud/authoring/sites-console/page-properties.md#from-the-sites-console-multiple-pages) permite editar las propiedades de varias páginas a la vez.
 
 ## Consideraciones {#considerations}
 

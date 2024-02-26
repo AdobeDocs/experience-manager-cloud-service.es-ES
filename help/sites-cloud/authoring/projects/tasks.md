@@ -2,7 +2,7 @@
 title: Uso de tareas
 description: Las tareas representan elementos de trabajo por realizar en el contenido y se utilizan en los proyectos para determinar el nivel de compleción de las tareas actuales
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 95%
@@ -76,6 +76,6 @@ Otra forma de acceder a las tareas es desde la bandeja de entrada. Desde la band
 
 ![Tareas en la bandeja de entrada](/help/sites-cloud/authoring/assets/projects-task-inbox.png)
 
-Para completar una tarea, selecciónela y haga clic en **Completada**. Añada información a la tarea y, a continuación, haga clic en **Hecho**. Consulte la [bandeja de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) para obtener más información.
+Para completar una tarea, selecciónela y haga clic en **Completada**. Añada información a la tarea y, a continuación, haga clic en **Hecho**. Consulte la [bandeja de entrada](/help/sites-cloud/authoring/inbox.md) para obtener más información.
 
 ![Notificaciones de tareas](/help/sites-cloud/authoring/assets/projects-task-notifications.png)

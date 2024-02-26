@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ En un nivel superior, la traducción en AEM consiste en cuatro pasos simples:
 1. Revise y publique el contenido traducido.
 
 
-Más adelante, en el recorrido AEM, aprenderá los detalles acerca de cómo traduce el contenido paso a paso.
+Más adelante, en el recorrido, aprenderá los detalles sobre cómo AEM traduce el contenido paso a paso.
 
 ## Siguientes pasos {#what-is-next}
 
@@ -62,5 +62,5 @@ Aprovechar este conocimiento y continuar con su recorrido de traducción de AEM 
 
 Aunque se recomienda pasar a la siguiente parte del recorrido de traducción de sitios revisando el documento [Introducción a la traducción de AEM Sites,](getting-started.md) los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido.
 
-* [Guía rápida para la creación de páginas](/help/sites-cloud/authoring/getting-started/quick-start.md): Una breve descripción general de los conceptos más importantes para la creación de contenido con AEM Sites
+* [Guía rápida para la creación de páginas](/help/sites-cloud/authoring/quick-start.md): Una breve descripción general de los conceptos más importantes para la creación de contenido con AEM Sites
 * [MSM y traducción](/help/sites-cloud/administering/msm-and-translation.md): Los detalles de Multi-Site Manager de AEM y cómo funciona con sus herramientas de traducción

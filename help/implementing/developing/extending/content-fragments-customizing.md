@@ -2,10 +2,10 @@
 title: Personalizar y ampliar fragmentos de contenido
 description: Un fragmento de contenido amplía un recurso estándar. Descubra cómo puede personalizarlos.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 4%
+source-wordcount: '1689'
+ht-degree: 1%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 Dentro de Adobe Experience Manager as a Cloud Service, un fragmento de contenido amplía un recurso estándar; consulte:
 
-* [Creación y administración de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md) y [Creación de páginas con fragmentos de contenido](/help/sites-cloud/authoring/fundamentals/content-fragments.md) para obtener más información sobre fragmentos de contenido.
+* [Creación y administración de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md) y [Creación de páginas con fragmentos de contenido](/help/sites-cloud/authoring/fragments/content-fragments.md) para obtener más información sobre fragmentos de contenido.
 
 * [Administración de recursos](/help/assets/manage-digital-assets.md) para obtener más información sobre los recursos estándar.
 
@@ -61,7 +61,6 @@ Los fragmentos de contenido, basados en un modelo de fragmento de contenido, se 
 * Todo el contenido se almacena en `jcr:content/data` nodo del recurso:
 
    * Los datos del elemento se almacenan en el subnodo maestro:
-
      `jcr:content/data/master`
 
    * Las variaciones se almacenan en un subnodo que lleva el nombre de la variación: por ejemplo, `jcr:content/data/myvariation`
@@ -95,9 +94,9 @@ Para integrar con el núcleo de Assets:
 
 >[!CAUTION]
 >
->El [El componente Fragmento de contenido forma parte de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=es). Consulte [Desarrollo de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=es) para obtener más información.
+>El [El componente Fragmento de contenido forma parte de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=es). Consulte [Desarrollo de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) para obtener más información.
 
-AEM Se puede hacer referencia a los fragmentos de contenido desde páginas de recursos de la misma manera que desde cualquier otro tipo de recurso. AEM proporciona el **[Componente principal del fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=es)** - a [componente que permite incluir fragmentos de contenido en las páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). También puede ampliar esta **[Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=es)** componente principal.
+AEM Se puede hacer referencia a los fragmentos de contenido desde páginas de recursos de la misma manera que desde cualquier otro tipo de recurso. AEM proporciona el **[Componente principal del fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=es)** - a [componente que permite incluir fragmentos de contenido en las páginas](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page). También puede ampliar esta **[Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)** componente principal.
 
 * El componente utiliza el `fragmentPath` para hacer referencia al fragmento de contenido real. El `fragmentPath` La propiedad de se gestiona de la misma manera que propiedades similares de otros tipos de recursos; por ejemplo, cuando el fragmento de contenido se mueve a otra ubicación.
 
@@ -197,7 +196,7 @@ Las tres interfaces siguientes pueden servir como puntos de entrada:
 
       * Enumerar colecciones
       * Agregar colecciones
-      * Eliminar colecciones
+      * Quitar colecciones
 
    * Acceso al modelo del fragmento
 
@@ -327,7 +326,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 El [intervalo de guardado automático](/help/sites-cloud/administering/content-fragments/managing.md#save-close-and-versions) (medido en segundos) se puede definir mediante el administrador de configuración (ConfMgr):
 
 * Nodo: `<conf-root>/settings/dam/cfm/jcr:content`
-* Nombre de la propiedad: `autoSaveInterval`
+* Nombre de propiedad: `autoSaveInterval`
 * Tipo: `Long`
 
 * Predeterminado: `600` (10 minutos); se define en `/libs/settings/dam/cfm/jcr:content`
@@ -337,7 +336,7 @@ Si desea establecer un intervalo de guardado automático de 5 minutos, defina la
 Por ejemplo:
 
 * Nodo: `/conf/global/settings/dam/cfm/jcr:content`
-* Nombre de la propiedad: `autoSaveInterval`
+* Nombre de propiedad: `autoSaveInterval`
 
 * Tipo: `Long`
 
@@ -345,6 +344,6 @@ Por ejemplo:
 
 ## Componentes para la creación de páginas {#components-for-page-authoring}
 
-Para obtener más información, consulte lo siguiente
+Para obtener más información, consulte
 
 * [Componentes principales: componente Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=es) (recomendado)

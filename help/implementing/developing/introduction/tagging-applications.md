@@ -2,9 +2,9 @@
 title: Creación del etiquetado en aplicaciones de AEM
 description: AEM Trabajar mediante programación con etiquetas o ampliar etiquetas dentro de una aplicación de personalizada
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '717'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ que interactúa con el
 
 Para obtener información relacionada con el etiquetado:
 
-* Consulte [Uso de etiquetas](/help/sites-cloud/authoring/features/tags.md) para obtener información sobre cómo etiquetar contenido como autor de contenido.
+* Consulte [Uso de etiquetas](/help/sites-cloud/authoring/sites-console/tags.md) para obtener información sobre cómo etiquetar contenido como autor de contenido.
 * Consulte Administración de etiquetas para conocer la perspectiva de un administrador sobre la creación y administración de etiquetas y sobre las etiquetas de contenido que se han aplicado.
 
 ## Información general sobre la API de etiquetado {#overview-of-the-tagging-api}

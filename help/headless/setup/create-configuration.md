@@ -2,7 +2,7 @@
 title: 'Creación de una configuración: configuración sin encabezado'
 description: Cree una configuración como primer paso para empezar a utilizar sin encabezado en AEM as a Cloud Service.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 92%
@@ -19,7 +19,7 @@ El explorador de configuración proporciona una API de configuración genérica,
 
 En el contexto de la administración de contenido sin encabezado en AEM, piense en una configuración como lugar de trabajo dentro de AEM donde puede crear los modelos de contenido, que definen la estructura de su contenido futuro y los fragmentos de contenido. Puede tener varias configuraciones para separar estos modelos.
 
-Si está familiarizado con las [plantillas de página en una implementación de AEM e de pila completa](/help/sites-cloud/authoring/features/templates.md), el uso de configuraciones para la administración de modelos de contenido es similar.
+Si está familiarizado con las [plantillas de página en una implementación de AEM e de pila completa](/help/sites-cloud/authoring/sites-console/templates.md), el uso de configuraciones para la administración de modelos de contenido es similar.
 
 ## Cómo crear una configuración {#how-to-create-a-configuration}
 
@@ -37,7 +37,7 @@ Un administrador solo tendría que crear una configuración una vez, o poco a po
 
    ![Creación de configuración](../assets/create-configuration.png)
 
-1. Seleccione **Crear**
+1. Seleccionar **Crear**
 
 Si es necesario, puede crear varias configuraciones. Las configuraciones también se pueden anidar.
 

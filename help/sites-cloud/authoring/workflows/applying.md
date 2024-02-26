@@ -2,7 +2,7 @@
 title: Aplicación de flujos de trabajo a páginas
 description: Durante la creación, puede invocar flujos de trabajo para que actúen en las páginas; también es posible aplicar más de un flujo de trabajo.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 83%
@@ -70,7 +70,7 @@ Puede iniciar un flujo de trabajo desde la barra de herramientas de la consola *
 
 Desde la **Cronología** puede iniciar un flujo de trabajo para aplicarlo al recurso seleccionado.
 
-1. [Seleccione el recurso](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) y abra [Cronología](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) (o abra Cronología y seleccione el recurso).
+1. [Seleccione el recurso](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) y abra [Cronología](/help/sites-cloud/authoring/basic-handling.md#timeline) (o abra Cronología y seleccione el recurso).
 1. La punta de flecha junto al campo Comentario puede utilizarse para mostrar **Iniciar flujo de trabajo**:
 
    ![Crear flujo de trabajo a partir de la cronología](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
@@ -116,7 +116,7 @@ Puede especificar los detalles:
 
 1. En la etapa **Ámbito**, puede seleccionar lo siguiente:
 
-   * **Añadir contenido** para abrir [explorador de rutas](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) y seleccione recursos adicionales; en el explorador, seleccione **Seleccionar** para añadir el contenido a la instancia de flujo de trabajo.
+   * **Añadir contenido** para abrir [explorador de rutas](/help/sites-cloud/authoring/path-selection.md) y seleccione recursos adicionales; en el explorador, seleccione **Seleccionar** para añadir el contenido a la instancia de flujo de trabajo.
 
    * Un recurso existente para ver acciones adicionales:
 

@@ -4,9 +4,9 @@ description: Descubra cómo puede habilitar la canalización front-end para siti
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '554'
 ht-degree: 98%
 
 ---
@@ -51,7 +51,7 @@ La activación del sitio se realiza desde la consola Sitios mediante el [carril 
 
 1. Inicie sesión en AEM y navegue hasta su sitio a través de **Navegación global** > **Sitios**.
 1. Seleccione el sitio en la consola. Seleccione la raíz del sitio y no cualquier página secundaria.
-1. Con el sitio seleccionado, abra el [selector de carril](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) a la izquierda y elija **Sitio**.
+1. Con el sitio seleccionado, abra el [selector de carril](/help/sites-cloud/authoring/basic-handling.md#rail-selector) a la izquierda y elija **Sitio**.
 1. En el carril del **sitio**, haga clic en el botón **Habilitar canalización front-end**.
 
    ![Habilitación de la canalización front-end](/help/sites-cloud/administering/assets/enable-front-end-pipeline.png)

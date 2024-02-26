@@ -2,7 +2,7 @@
 title: Administración de páginas en el lanzamiento
 description: Puede crear páginas nuevas dentro del lanzamiento. También puede eliminar páginas no deseadas.
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 89%
@@ -25,7 +25,6 @@ Puede navegar por la estructura del lanzamiento desde:
 * El Editor de página:
 
    * Seleccione **Navegar** para abrir la estructura del lanzamiento en la consola:
-
      ![Navegar desde el lanzamiento desde el editor de páginas](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
      >[!NOTE]
@@ -59,7 +58,7 @@ Para agregar nuevas páginas al lanzamiento:
 
 1. [Vaya a la ubicación requerida en el lanzamiento](#navigate-structure-of-launch).
 
-1. Seleccione **Crear** para [crear una página](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) como de costumbre.
+1. Seleccione **Crear** para [crear una página](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) como de costumbre.
 
 ## Eliminar páginas del lanzamiento {#remove-pages-from-launch}
 
@@ -67,4 +66,4 @@ Para eliminar páginas del lanzamiento:
 
 1. [Vaya a la ubicación requerida en el lanzamiento](#navigate-structure-of-launch).
 
-1. Seleccione **Eliminar** para [eliminar una página](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page) como de costumbre.
+1. Seleccione **Eliminar** para [eliminar una página](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) como de costumbre.

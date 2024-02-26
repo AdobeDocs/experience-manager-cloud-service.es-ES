@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Carousel Banners
 role: User
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '4534'
+source-wordcount: '4492'
 ht-degree: 1%
 
 ---
@@ -241,7 +241,7 @@ Puede añadir zonas interactivas o mapas de imagen a un titular mediante el edit
 
 Al agregar zonas interactivas o mapas de imagen, puede definirlos como una visualización emergente de Vista rápida, como un hipervínculo o como un Fragmento de experiencia.
 
-Consulte [Fragmento de experiencia](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+Consulte [Fragmento de experiencia](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
@@ -313,7 +313,7 @@ Consulte [(Opcional) Previsualizar titulares de carrusel](#optional-previewing-c
    * Seleccionar **[!UICONTROL Fragmento de experiencia]**.
 
       * Si es cliente de Experience Manager Sites, seleccione el icono Buscar (lupa) para abrir la página Fragmento de experiencia. Para volver a la página de administración de puntos interactivos, seleccione el fragmento de experiencia que desee utilizar y, en la esquina superior derecha de la página, seleccione **[!UICONTROL Seleccionar]**.
-Consulte [Fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+Consulte [Fragmentos de experiencias](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
       * Especifique la anchura y altura del fragmento de experiencia tal como aparece en el banner.
 
@@ -392,7 +392,7 @@ Puede previsualizar los titulares del carrusel desde el Editor de carrusel (mét
 
    ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. Seleccione **[!UICONTROL Vista previa]**.
+1. Seleccionar **[!UICONTROL Previsualizar]**.
 1. Para probar las acciones asociadas, seleccione las zonas interactivas o los mapas de imagen de la imagen.
 
 **Para previsualizar titulares de carrusel desde la lista Visualizadores:**

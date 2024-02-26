@@ -2,10 +2,10 @@
 title: Administración de entornos
 description: Obtenga información sobre los tipos de entornos que puede crear y cómo para su proyecto de Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '2614'
-ht-degree: 80%
+ht-degree: 81%
 
 ---
 
@@ -169,7 +169,7 @@ Un usuario con los permisos necesarios debe completar los siguientes pasos antes
 
 Una vez desbloqueado el acceso al servicio de vista previa, ya no se mostrará el icono de bloqueo antes del nombre del servicio de vista previa.
 
-Una vez activado, puede publicar contenido en el servicio de vista previa mediante la IU Administrar publicación dentro de AEM. Consulte la [vista previa del contenido](/help/sites-cloud/authoring/fundamentals/previewing-content.md) para obtener más información.
+Una vez activado, puede publicar contenido en el servicio de vista previa mediante la IU Administrar publicación dentro de AEM. Consulte la [vista previa del contenido](/help/sites-cloud/authoring/sites-console/previewing-content.md) para obtener más información.
 
 >[!NOTE]
 >

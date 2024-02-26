@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service y las directrices de accesibilidad web
 description: Una introducción a Adobe Experience Manager as a Cloud Service y las directrices de accesibilidad web
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '369'
 ht-degree: 100%
 
 ---
@@ -45,7 +45,7 @@ Con Adobe Experience Manager, los autores de contenido o los propietarios de sit
 
 * En nuestra [guía rápida de WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)se destacan aspectos específicos de WCAG 2.1.
 
-* [Crear contenido accesible](/help/sites-cloud/authoring/fundamentals/accessible-content.md) detalla cómo se relacionan con AEM.
+* [Crear contenido accesible](/help/sites-cloud/authoring/page-editor/accessible-content.md) detalla cómo se relacionan con AEM.
 
 >[!NOTE]
 >

@@ -4,7 +4,7 @@ description: Aprenda a preparar el contenido para la traducción al desarrollar 
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 73%
@@ -92,7 +92,7 @@ AEM proporciona un carril **Referencias** que muestra una lista de las raíces d
 
 ![Raíces del idioma](../assets/language-roots.png)
 
-Utilice el siguiente procedimiento para ver las copias de idioma de una página mediante el uso del [selector de carril](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+Utilice el siguiente procedimiento para ver las copias de idioma de una página mediante el uso del [selector de carril](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 1. En la consola Sitios, seleccione una página del sitio y, a continuación, seleccione **Referencias**.
 
