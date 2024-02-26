@@ -4,9 +4,9 @@ description: El servicio de entrega perimetral de AEM Forms está diseñado para
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
+source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '422'
 ht-degree: 1%
 
 ---
@@ -20,19 +20,14 @@ El servicio de entrega perimetral de AEM Forms es un servicio maquetable ofrecid
 
 * **Crear formularios con una puntuación de faro perfecta**: cree formularios que se carguen y procesen rápidamente, incluso con conexiones a Internet lentas. Los tiempos de carga más rápidos y la experiencia de usuario optimizada contribuyen a tasas de finalización de formularios más altas y tasas de conversión mejoradas.
 
-* **Simplificar la creación y los envíos**: cree formularios con herramientas conocidas como Microsoft Excel o Hojas de cálculo de Google en lugar de los entornos de creación tradicionales. Envíe formularios directamente a las hojas de cálculo de Microsoft Excel o Google y utilice su ecosistema para procesar fácilmente los datos enviados.
+* **Simplificar la creación y los envíos**: aproveche las herramientas de creación con las que se sienta cómodo, como Microsoft Excel o Hojas de cálculo de Google (creación basada en documentos), archivos JSON (creación sin encabezado) o el editor de Forms adaptable (creación WYSIWYG), para diseñar y crear sus formularios. El servicio está disociado de la fuente de contenido y ofrece la flexibilidad en la creación de contenido al permitirle utilizar sus herramientas de creación preferidas.
 
+  ![Herramientas de creación de formularios de entrega perimetral](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
-Este servicio componible está disociado de la fuente de contenido y ofrece la flexibilidad en la creación de contenido al permitir a los usuarios utilizar sus herramientas de creación preferidas.
-
-![Herramientas de creación de formularios de entrega perimetral](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
-
-Los creadores de contenido pueden aprovechar las herramientas con las que se sienten cómodos, como Microsoft Excel o Hojas de cálculo de Google (creación basada en documentos), archivos JSON (creación sin encabezado) o el editor de Forms adaptable de AEM Forms (creación WYSIWYG) para diseñar y crear sus formularios.
-
->[!NOTE]
->
->
-> La capacidad de creación de WYSIWYG está disponible en el programa de usuarios pioneros. Puede escribir a aem-forms-early-adopter-program@adobe.com desde su ID de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez y solicitar acceso a esta capacidad.
+  >[!NOTE]
+  >
+  >
+  > La capacidad de creación de WYSIWYG está disponible en el programa de usuarios pioneros. Puede escribir a aem-forms-early-adopter-program@adobe.com desde su ID de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez y solicitar acceso a esta capacidad.
 
 ## Empiece con lo básico
 

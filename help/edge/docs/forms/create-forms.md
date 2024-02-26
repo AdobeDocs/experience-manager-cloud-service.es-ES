@@ -4,9 +4,9 @@ description: ¡Crea formas perfectas, rápido! ⚡ la creación basada en docume
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
+source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '980'
 ht-degree: 1%
 
 ---
@@ -18,13 +18,15 @@ En la era digital de hoy en día, la creación de formularios fáciles de usar e
 
 Estos formularios envían datos directamente a un archivo de Microsoft Excel o Google Sheets, lo que le permite utilizar un ecosistema dinámico y API sólidas de Google Sheets, Microsoft Excel y Microsoft Sharepoint para procesar fácilmente los datos enviados o iniciar un flujo de trabajo empresarial existente.
 
+AEM Forms Edge Delivery proporciona un bloque de formulario para ayudarle a crear fácilmente formularios para capturar y almacenar los datos capturados. AEM Puede incluir el bloque Formulario en el proyecto de EDS de la para empezar a crear un formulario. Vamos a empezar:
+
 
 ## Requisitos previos
 
 Antes de comenzar, asegúrese de haber completado los siguientes pasos:
 
-* Configure y clone su proyecto de servicio de entrega de Edge (EDS). Consulte [tutorial para desarrolladores](https://www.aem.live/developer/tutorial) para obtener más información. En este documento, la carpeta local del proyecto de servicio de entrega perimetral (EDS) se denomina `[EDS Project repository]` .
-* Clonar el [Repositorio de bloques de Forms](https://github.com/adobe/afb). Contiene el código para procesar el formulario en una página web de EDS. En este documento, la carpeta local del repositorio de bloques de Forms se denomina `[Forms Block repository]` en este documento.
+* AEM Configure el proyecto de Github del servicio de entrega perimetral (EDS) mediante plantillas de palabras clave de y clone el repositorio de Github correspondiente en el equipo local. Consulte [tutorial para desarrolladores](https://www.aem.live/developer/tutorial) para obtener más información. En este documento, la carpeta local del proyecto de servicio de entrega perimetral (EDS) se denomina `[EDS Project repository]` .
+* Clonar el [Repositorio de bloques de Forms](https://github.com/adobe/afb) en el equipo local. Contiene el código para procesar el formulario en una página web de EDS. En este documento, la carpeta local del repositorio de bloques de Forms se denomina `[Forms Block repository]`.
 * Asegúrese de que tiene acceso a las hojas de Google o a Microsoft SharePoint.
 
 
@@ -32,13 +34,11 @@ Antes de comenzar, asegúrese de haber completado los siguientes pasos:
 
 +++ Paso 1: Añadir el bloque de formulario al proyecto de servicio de envío de Edge (EDS).
 
-AEM Forms Edge Delivery incluye un bloque de formulario para ayudarle a crear fácilmente formularios para capturar y almacenar los datos capturados. Para incluir el bloque de formulario en el proyecto de servicio de entrega de Edge:
+El `Form block` incluye la capacidad de agregar un formulario a un sitio EDS. AEM El bloque no se incluye en un proyecto creado con plantillas de plantillas de. Para incluir el bloque de formulario en el proyecto de servicio de entrega de Edge:
 
-1. Vaya a `[Forms Block repository]/blocks` y copie el `forms` carpeta.
+1. Vaya a `[Forms Block repository]/blocks` en el equipo local y copie la carpeta `form` carpeta.
 
-1. Vaya a `[EDS Project repository]/blocks/` y pegue el `forms` carpeta.
-
-   >[!VIDEO](https://video.tv.adobe.com/v/3427487?quality=12&learn=on)
+1. Vaya a `[EDS Project repository]/blocks/` en el equipo local y pegue el `form` carpeta.
 
 1. Marque en `form` y archivos subyacentes al proyecto del servicio de envío de Edge en GitHub.
 
