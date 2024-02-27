@@ -1,0 +1,142 @@
+---
+title: El servicio de entrega perimetral de AEM Forms utiliza con frecuencia expresiones regex para validar campos de formulario
+description: El servicio de entrega perimetral de AEM Forms utiliza con frecuencia expresiones regex para validar campos de formulario
+feature: Edge Delivery Services
+hide: true
+hidefromtoc: true
+source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+workflow-type: tm+mt
+source-wordcount: '193'
+ht-degree: 4%
+
+---
+
+
+# Expresiones regex más utilizadas para las validaciones
+
+Estas son algunas expresiones regulares que puede utilizar para mejorar la validación del formulario más allá de lo que ofrecen los exploradores modernos:
+
+## Contraseña segura
+
+```regex
+^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$
+```
+
+Garantiza al menos 8 caracteres con:
+
+* Letra minúscula (a-z)
+* Letra mayúscula (A-Z)
+* Dígito (0-9)
+* Carácter especial (@$!%*?&amp;)
+
+
+## Dirección de correo electrónico
+
+
+```regex
+^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$
+```
+
+Permite letras, números y caracteres especiales en el nombre de usuario y el nombre de dominio.
+
+
+## Número de teléfono (formato de EE. UU.)
+
+```regex
+^\(?([0-9]{3})\)?[-. ]([0-9]{3})[-. ]([0-9]{4})$
+```
+
+Valida los números de teléfono con el formato (XXX) XXX-XXXX.
+
+
+
+## URL
+
+```regex
+^(http|https)://.*$
+```
+
+Garantiza una dirección URL válida que empieza por http o https.
+
+
+
+## Fecha (DD-MM-AAAA)
+
+```regex
+^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$
+```
+
+Valida las fechas con el formato AAAA-MM-DD.
+
+
+## Tiempo (HH:MM)
+
+```regex
+^([01][0-9]|2[0-3]):[0-5][0-9]$
+```
+
+Valida las horas con el formato HH:MM (formato de 24 horas).
+
+
+## Código postal (formato de EE. UU.)
+
+```regex
+^\d{5}(?:[-\ ]\d{4})?$
+```
+
+Valida códigos postales de 5 dígitos de EE. UU. con un guión opcional y una extensión de 4 dígitos.
+
+
+## Nombre de usuario (alfanumérico y guion bajo)
+
+```regex
+^[a-zA-Z0-9_]+$
+```
+
+Permite letras, números y guiones bajos.
+
+
+## Código hexadecimal de color
+
+```regex
+^#[0-9a-fA-F]{6}$
+```
+
+Valida los códigos de color hexadecimal de 6 dígitos. Por ejemplo, #FFFFFF.
+
+
+## Dirección IP
+
+```regex
+^(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[0-9]{2,3})\.(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[0-9]{2,3})\.(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[0-9]{2,3})\.(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[0-9]{2,3})$
+```
+
+Valida direcciones IPv4.
+
+
+
+## Número de la Seguridad Social (formato de EE.UU.)
+
+```regex
+^\d{3}-\d{2}-\d{4}$
+```
+
+
+
+## Número de tarjeta de crédito
+
+```regex
+^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}$
+```
+
+Valida los números de teléfono con el formato (XXX) XXX-XXXX.
+
+
+
+## Número de teléfono (formato de EE. UU.):
+
+```regex
+^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$
+```
+
+Valida los números de teléfono con el formato (XXX) XXX-XXXX.

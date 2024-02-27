@@ -4,10 +4,10 @@ description: El servicio de entrega perimetral de AEM Forms está diseñado para
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
+source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 1%
+source-wordcount: '413'
+ht-degree: 4%
 
 ---
 
@@ -16,18 +16,30 @@ ht-degree: 1%
 
 El servicio de entrega perimetral de AEM Forms es un servicio maquetable ofrecido por Adobe que le permite crear y entregar formularios web de alto impacto y rendimiento rápido. Puede utilizar el servicio para lo siguiente:
 
-* **Diseñar formularios visualmente impresionantes**: Elimine los diseños suaves y suaves y cautive a los usuarios con formas modernas y dinámicas que reflejen la identidad de su marca. Aproveche los componentes creados previamente o cree sus propios componentes personalizados para dar vida a su visión de forma rápida y sencilla.
+* **Usuarios Captivate con formularios increíbles**: cree formularios complejos y atractivos con facilidad mediante una biblioteca de componentes creados previamente. Integre reCAPTCHA fácilmente, envíe formularios directamente al correo electrónico y permita cargas de archivos sin problemas a soluciones de almacenamiento seguro como Sharepoint, Azure Storage y Amazon S3. Incluso puede crear sus propios componentes de formularios personalizados para dar vida a su visión única.
+
+  ![Formularios de inscripción](/help/edge/assets/enrollment-form.png)
 
 * **Crear formularios con una puntuación de faro perfecta**: cree formularios que se carguen y procesen rápidamente, incluso con conexiones a Internet lentas. Los tiempos de carga más rápidos y la experiencia de usuario optimizada contribuyen a tasas de finalización de formularios más altas y tasas de conversión mejoradas.
 
-* **Simplificar la creación y los envíos**: aproveche las herramientas de creación con las que se sienta cómodo, como Microsoft Excel o Hojas de cálculo de Google (creación basada en documentos), archivos JSON (creación sin encabezado) o el editor de Forms adaptable (creación WYSIWYG), para diseñar y crear sus formularios. El servicio está disociado de la fuente de contenido y ofrece la flexibilidad en la creación de contenido al permitirle utilizar sus herramientas de creación preferidas.
+  ![puntuación de faro perfecta para sus formularios](/help/edge/assets/lighthouse-forms.png)
+
+* **Cree experiencias de inscripción digital con las herramientas que elija**: aumente la eficacia de la creación mediante la desvinculación de fuentes de contenido. De forma predeterminada, puede utilizar tanto la creación en AEM como la creación basada en documentos. De este modo, puede trabajar con varios orígenes de contenido en el mismo sitio web y utilizar las herramientas de creación que prefiera, como Microsoft Excel, Google AEM Sheets o Editores de páginas de la página de la página de la versión de la aplicación (en inglés).
 
   ![Herramientas de creación de formularios de entrega perimetral](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
-  >[!NOTE]
-  >
-  >
-  > La capacidad de creación de WYSIWYG está disponible en el programa de usuarios pioneros. Puede escribir a aem-forms-early-adopter-program@adobe.com desde su ID de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez y solicitar acceso a esta capacidad.
+<!--
+* **Measure customer impact and deliver effective forms**: Use our RUM dashboards to visualize form performance and identify areas for improvement. Experiment with different versions and continuously optimize your forms for maximum effectiveness, ensuring you capture the data you need and drive better business outcomes.
+
+* **Use Integrated services:** Use integrated services to streamline and empowers your users with a one-stop shop for managing their digital enrollment journeys. Use e-signatures, automated workflows, document of record (DoR), and seamless data integration, simplify the entire digital enrollment process, accelerate approvals, and optimizes your business workflows. 
+
+    
+>[!NOTE]
+    >
+    >
+    > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
+
+    -->
 
 ## Empiece con lo básico
 
@@ -57,18 +69,26 @@ El servicio de entrega perimetral de AEM Forms es un servicio maquetable ofrecid
         <p>Cree formularios que se carguen y procesen rápida y automáticamente en los dispositivos móviles.</p>
     </div>
     <div class="card-container">
-        <a href="/help/edge/docs/forms/validate-forms.md">
-            <img src="/help/edge/assets/smock_condition_18_n.svg" alt="Agregar validaciones a campos de formulario" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Aplicar validaciones de campo</b>
+        <a href="/help/edge/docs/forms/create-forms.md#manually-configure-a-spreadsheet-to-accept-data">   
+            <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="Enviar formulario" alt="Uso de fragmentos de formulario en un formulario EDS" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Enviar formulario a hoja de cálculo</b>
         </a>
-        <p>Reduzca los errores y la frustración comprobando que las entradas del formulario tengan el formato adecuado.</p>
-    </div>    <div class="card-container">
+        <p>Envíe formularios directamente a las hojas de cálculo de Microsoft Excel o Google.</p>
+    </div>
+     <div class="card-container">
         <a href="/help/edge/docs/forms/style-theme-forms.md">
             <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Aplicar estilos o temáticas a un formulario de extremos" style="border-radius: 5px;"> </b>
             <br><b style="margin-top: 5px;">Personalizar una temática</b>
         </a>
         <p>Crear una imagen de marca coherente aplicando la misma temática a todos los formularios.</p>
     </div>
+      <div class="card-container">
+        <a href="/help/edge/docs/forms/validate-forms.md">
+            <img src="/help/edge/assets/smock_condition_18_n.svg" alt="Agregar validaciones a campos de formulario" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Aplicar validaciones de campo</b>
+        </a>
+        <p>Reduzca los errores y la frustración comprobando que las entradas del formulario tengan el formato adecuado.</p>
+    </div> 
     <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
             <img src="/help/edge/assets/smock_abc_18_n.svg" alt="Traducción de un formulario EDS" style="border-radius: 5px;"> </b>
@@ -104,13 +124,7 @@ El servicio de entrega perimetral de AEM Forms es un servicio maquetable ofrecid
         </a>
         <p>Utilice la integración reCAPTCHA de OOTB para una sólida protección contra spam y bots.</p>
     </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/create-forms.md#manually-configure-a-spreadsheet-to-accept-data">   
-            <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="Enviar formulario" alt="Uso de fragmentos de formulario en un formulario EDS" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Enviar formulario a hoja de cálculo</b>
-        </a>
-        <p>Envíe formularios directamente a las hojas de cálculo de Microsoft Excel o Google.</p>
-    </div>
+
 </div>
 
 
