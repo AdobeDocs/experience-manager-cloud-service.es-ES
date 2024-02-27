@@ -1,10 +1,10 @@
 ---
 title: Creación de páginas
 description: Obtenga información sobre cómo crear nuevas páginas para el sitio web mediante la consola Sitios.
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 0ba8faaa14d09d09fce5846bfff77287bfbd94c7
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 64%
+source-wordcount: '461'
+ht-degree: 28%
 
 ---
 
@@ -21,7 +21,7 @@ Obtenga información sobre cómo crear nuevas páginas para el sitio web mediant
 
 Su cuenta necesita los derechos de acceso y permisos adecuados para crear páginas.
 
-Si se producen problemas, le sugerimos que se ponga en contacto con el administrador del sistema.
+Si tiene algún problema, póngase en contacto con el administrador del sistema.
 
 ## Creación de una nueva página {#creating-a-new-page}
 
@@ -33,7 +33,7 @@ A menos que se hayan creado todas las páginas por adelantado, debe crear una p�
 
    ![Creación de una página](/help/sites-cloud/authoring/assets/organizing-create-page.png)
 
-1. En el primer paso del asistente puede realizar una de las acciones siguientes:
+1. En el primer paso del asistente, puede hacer lo siguiente:
 
    * Seleccione la plantilla que desee utilizar para crear la nueva página y, a continuación, seleccione **Siguiente** para continuar.
 
@@ -41,7 +41,7 @@ A menos que se hayan creado todas las páginas por adelantado, debe crear una p�
 
    ![Selección de una plantilla para una nueva página](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 
-1. En el último paso del asistente puede realizar una de las acciones siguientes:
+1. En el último paso del asistente, puede hacer lo siguiente:
 
    * Utilice las tres pestañas para introducir la variable [propiedades de página](/help/sites-cloud/authoring/sites-console/page-properties.md) Si desea asignar a la nueva página, seleccione **Crear** para crear la página.
 
@@ -57,7 +57,7 @@ A menos que se hayan creado todas las páginas por adelantado, debe crear una p�
 
       * Se usa para generar la URI. Si no se especifica, el nombre se obtiene a partir del título.
       * Si proporciona una página **Nombre** AEM al crear una página, se debe hacer lo siguiente [valida el nombre según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) AEM impuesta por el y el JCR.
-      * **No se pueden enviar caracteres no válidos** desde el campo **Nombre**. Cuando AEM detecta caracteres no válidos, se resalta el campo y se muestra un mensaje explicativo para indicar los caracteres que deben eliminarse o reemplazarse.
+      * **No se pueden enviar caracteres no válidos** desde el campo **Nombre**. AEM Cuando detecta caracteres no válidos, se resalta el campo y se muestra un mensaje explicativo para indicar los caracteres que deben eliminarse o reemplazarse.
 
    >[!TIP]
    >
@@ -67,18 +67,22 @@ A menos que se hayan creado todas las páginas por adelantado, debe crear una p�
 
    ![Proporcionar título de página](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 
-1. Utilice **Crear** para completar el proceso y crear la nueva página. El cuadro de diálogo de confirmación le preguntará si desea **abrir** la página inmediatamente o volver a la consola (**Listo**): 
+1. Haga clic o pulse **Crear** para completar el proceso y crear la nueva página. El cuadro de diálogo de confirmación le preguntará si desea **Abrir** la página inmediatamente o vuelva a la consola (**Listo**). Seleccione uno para finalizar el proceso de creación de página.
 
    ![Éxito en la creación de páginas](/help/sites-cloud/authoring/assets/organizing-create-page-success.png)
 
-   >[!NOTE]
-   >
-   >Si crea una página con un nombre que ya existe en la ubicación, el sistema generará automáticamente una variación del nombre añadiéndole un número. Por ejemplo, si `beach` ya existe, la página nueva pasará a llamarse `beach1`.
+   * Si elige **Abrir**, el **Sites** La consola de abre el editor adecuado basado en la plantilla de la nueva página, ya sea:
+      * [El Editor de página](/help/sites-cloud/authoring/page-editor/introduction.md)
+      * [El editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
-1. Si vuelve a la consola, podrá ver su nueva página:
+Si vuelve a la consola, podrá ver la nueva página:
 
-   ![Nueva página resultante](/help/sites-cloud/authoring/assets/organizing-create-page-result.png)
+![Nueva página resultante](/help/sites-cloud/authoring/assets/organizing-create-page-result.png)
+
+>[!NOTE]
+>
+>AEM Si crea una página con un nombre que ya existe en la misma ubicación, crea la página con una variación del nombre especificado agregando un número. Por ejemplo, si `beach` ya existe, la nueva página se convierte en `beach1`.
 
 >[!CAUTION]
 >
->Después de crear una página, su plantilla no se puede modificar, a menos que [cree un lanzamiento con una plantilla nueva](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template), aunque así se pierda el contenido existente.
+>Una vez creada una página, su plantilla no se puede cambiar a menos que [creación de un lanzamiento con una plantilla nueva](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template), aunque esto perderá cualquier contenido existente.

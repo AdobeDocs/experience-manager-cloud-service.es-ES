@@ -1,10 +1,10 @@
 ---
 title: La consola Sitios
 description: AEM Aprenda a utilizar la consola Sitios para administrar y organizar las páginas de la.
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 91ce6a0c880436327f4dd333a2eb3d36a4e89a4d
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 45%
+source-wordcount: '1628'
+ht-degree: 44%
 
 ---
 
@@ -231,16 +231,18 @@ Siempre que se selecciona un recurso, se pueden realizar varias acciones en el e
 
 La barra de herramientas de acciones solo aparece cuando se selecciona un recurso en la consola. La acción disponible en la barra de herramientas de acciones cambia para reflejar las acciones que puede realizar en los elementos específicos seleccionados. Las acciones más comunes son:
 
-* [Crear](#create-action) : cree nuevo contenido o acciones relacionadas con el contenido
-* [Editar](/help/sites-cloud/authoring/page-editor/introduction.md) - Editar la página
-* [Propiedades](/help/sites-cloud/authoring/sites-console/page-properties.md) - Abre la ventana de propiedades de la página
-* [Bloquear](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - Bloquear una página para evitar que otros la cambien
-* [Copiar](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - Copiar una página
-* [Mover](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - Mover una página o cambiarle el nombre
-* [Publicación rápida](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Publicar una página o páginas inmediatamente
-* [Administrar publicación](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - Programar una o varias páginas para su publicación
-* [Restaurar](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - Restaurar una versión de una página o árbol de páginas
-* [Eliminar](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - Eliminar una o varias páginas
+* [**Crear**](#create-action) : cree nuevo contenido o acciones relacionadas con el contenido
+* **Editar** : Según cómo se haya creado la página seleccionada, la variable **Editar** La acción abrirá el editor correspondiente.
+   * [Editor de página](/help/sites-cloud/authoring/page-editor/introduction.md) AEM - Para páginas creadas con el Editor de páginas de la
+   * [Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md) - Para páginas creadas con el editor universal
+* [**Propiedades**](/help/sites-cloud/authoring/sites-console/page-properties.md) - Abre la ventana de propiedades de la página
+* [**Bloquear**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - Bloquear una página para evitar que otros la cambien
+* [**Copiar**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - Copiar una página
+* [**Mover**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - Mover una página o cambiarle el nombre
+* [**Publicación rápida**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Publicar una página o páginas inmediatamente
+* [**Administrar publicación**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - Programar una o varias páginas para su publicación
+* [**Restaurar**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - Restaurar una versión de una página o árbol de páginas
+* [**Eliminar**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - Eliminar una o varias páginas
 
 Debido a las restricciones de espacio en algunas ventanas, es posible que la barra de herramientas supere rápidamente la longitud disponible. Cuando esto ocurre, aparecen opciones adicionales. Tocando o haciendo clic en los puntos suspensivos (los tres puntos o **...**) abre un selector desplegable que contiene todas las acciones restantes.
 
@@ -248,13 +250,13 @@ Debido a las restricciones de espacio en algunas ventanas, es posible que la bar
 
 ### Crear acción {#create-action}
 
-La acción Crear ofrece opciones similares al botón Crear barra de herramientas para crear páginas nuevas y elementos similares.
+La acción crear ofrece opciones similares a las de [**Crear** botón barra de herramientas](#create-button) para crear páginas nuevas y elementos similares.
 
 Además, ofrece la capacidad de crear acciones relacionadas con la página.
 
-* [Flujo de trabajo](/help/sites-cloud/authoring/workflows/overview.md) - Aplicar un flujo de trabajo a una página
-* [Versión](/help/sites-cloud/authoring/sites-console/page-versions.md) - Crear una versión de una página
+* [**Flujo de trabajo**](/help/sites-cloud/authoring/workflows/overview.md) - Aplicar un flujo de trabajo a una página
+* [**Versión**](/help/sites-cloud/authoring/sites-console/page-versions.md) - Crear una versión de una página
 
 ## Plantillas
 
-Puede ver fácilmente en qué plantilla se basa la página al seleccionar la página en la vista [Columna](/help/sites-cloud/authoring/basic-handling.md#column-view) o en la [vista Lista](/help/sites-cloud/authoring/basic-handling.md#list-view).
+Puede ver fácilmente en qué plantilla se basa la página al seleccionar la página en la vista [**Columna**](/help/sites-cloud/authoring/basic-handling.md#column-view) o en la [**vista Lista**](/help/sites-cloud/authoring/basic-handling.md#list-view).

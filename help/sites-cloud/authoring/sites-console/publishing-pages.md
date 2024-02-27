@@ -2,10 +2,10 @@
 title: Publicar páginas
 description: AEM Obtenga información sobre cómo publicar y cancelar la publicación de páginas mediante varios mecanismos en la documentación de.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
-source-wordcount: '1927'
-ht-degree: 85%
+source-wordcount: '1936'
+ht-degree: 81%
 
 ---
 
@@ -39,8 +39,9 @@ Puede encontrar diferentes términos relacionados con la publicación al trabaja
 
 En función de su ubicación, puede publicar lo siguiente:
 
-* [Desde el editor de páginas](#publishing-from-the-editor)
-* [Desde la consola Sitios](#publishing-from-the-console)
+* [Desde el editor de páginas](#publishing-from-the-page-editor)
+* [Desde el ](#publishing-from-the-sites-console)
+* [Desde el editor universal](/help/sites-cloud/authoring/universal-editor/publishing.md)
 
 >[!NOTE]
 >
@@ -62,9 +63,9 @@ En función de su ubicación, puede publicar lo siguiente:
 >
 > Para obtener más información, consulte **Tiempo de activación** y **Tiempo de inactividad** en la [pestaña Básico de Propiedades de página](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
 
-### Publicar desde el editor {#publishing-from-the-editor}
+### Publicar desde el editor de páginas {#publishing-from-the-page-editor}
 
-Si está editando una página, puede publicarla directamente desde el editor.
+Si está editando una página en la [editor de páginas,](/help/sites-cloud/authoring/page-editor/introduction.md) se puede publicar directamente desde el editor.
 
 1. Seleccione el icono **Información de página** para abrir el menú y, a continuación, elija la opción **Publicar página**.
 
@@ -89,15 +90,15 @@ Si está editando una página, puede publicarla directamente desde el editor.
 
 >[!NOTE]
 >
->La publicación desde el editor es una publicación superficial; es decir, solo se publica la página o páginas seleccionadas y no las páginas secundarias.
+>La publicación desde el editor de páginas es superficial; es decir, solo se publica la página o páginas seleccionadas y no las páginas secundarias.
 
 >[!NOTE]
 >
 >Páginas a las que accede [alias](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) en el editor no se puede publicar. Las opciones de publicación del editor solo están disponibles para las páginas a las que se accede mediante sus rutas reales.
 
-### Publicar desde la consola {#publishing-from-the-console}
+### Publicar desde la consola del sitio {#publishing-from-the-sites-console}
 
-En la consola Sitios hay dos opciones para la publicación:
+En el **Sites** consola hay dos opciones para la publicación:
 
 * [Publicación rápida ](#quick-publish)
 * [Administrar publicación    ](#manage-publication)

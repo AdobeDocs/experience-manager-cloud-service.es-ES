@@ -1,10 +1,10 @@
 ---
 title: Administrar páginas
 description: AEM Obtenga información sobre cómo administrar las páginas de su sitio web en las que se incluye el movimiento, la copia y la eliminación de sitios web en la.
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
-source-wordcount: '1236'
-ht-degree: 66%
+source-wordcount: '1271'
+ht-degree: 64%
 
 ---
 
@@ -42,7 +42,9 @@ Después [creación de una página](/help/sites-cloud/authoring/sites-console/cr
 
    Botón ![Editar](/help/sites-cloud/authoring/assets/edit.png)
 
-1. Se abrirá la página, y podrá [editarla](/help/sites-cloud/authoring/page-editor/edit-content.md) si es necesario.
+1. La página se abre y puede editarla según sea necesario. En función de cómo se haya creado la página seleccionada, la variable **Editar** La acción abrirá el editor correspondiente.
+   * [Editor de página](/help/sites-cloud/authoring/page-editor/introduction.md) AEM - Para páginas creadas con el Editor de páginas de la
+   * [Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md) - Para páginas creadas con el editor universal
 
 ## Copiar y pegar una página    {#copying-and-pasting-a-page}
 

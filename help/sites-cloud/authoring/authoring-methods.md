@@ -2,7 +2,7 @@
 title: AEM Métodos para crear contenido en el
 description: AEM Conozca las diferentes formas en que puede crear contenido en las listas de contenido y en qué se diferencian.
 feature: Authoring
-source-git-commit: 85b99fc0b0eb20b24f27d06159a52d4339a3c962
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
@@ -49,7 +49,7 @@ AEM Para obtener más información acerca del editor de fragmentos de contenido 
 
 >[!NOTE]
 >
->El *nuevo* el editor resaltado en esta sección solo está disponible en el as a Cloud Service en línea de Adobe Experience Manager AEM ().
+>El *nuevo* AEM el editor resaltado en esta sección no está disponible cuando se desarrolla localmente para el as a Cloud Service de la.
 >
 >El [*original* Editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-variations.md) también está disponible.
 
@@ -61,11 +61,11 @@ AEM AEM El editor universal es una interfaz de usuario moderna que le permite cr
 
 AEM AEM Se accede al editor universal a través de la consola Sites dentro de la interfaz de usuario de, pero ofrece la potencia y la flexibilidad independiente del contenido para crear no solo el contenido de la, sino también el contenido externo correctamente instrumentado.
 
-Para obtener más información sobre el editor universal, consulte el documento [Creación de contenido con el editor universal.](/help/implementing/universal-editor/authoring.md)
+Para obtener más información sobre el editor universal, consulte el documento [Creación de contenido con el editor universal.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 ## Creación basada en documentos {#document-based}
 
-Si utiliza los servicios de envío perimetral, puede optar por crear el contenido como documentos convencionales, como Microsoft Word o Google AEM Docs, completamente fuera de la consola de.
+Si utiliza los servicios de envío perimetral, puede elegir crear el contenido como documentos convencionales, como Microsoft Word o Google Docs, completamente fuera de [AEM **Sites** consola.](/help/sites-cloud/authoring/sites-console/introduction.md)
 
 ![Edición de contenido basado en documentos](assets/authoring-methods-document.jpg)
 

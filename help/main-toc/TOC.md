@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5786283b75f28d594aea923a6d3490a9582a73a9
+source-git-commit: 87552743ef13d122864a676637138f72f87d8500
 workflow-type: tm+mt
 source-wordcount: '4721'
 ht-degree: 96%
@@ -305,6 +305,9 @@ ht-degree: 96%
          + [Métodos abreviados de teclado](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [Sistema de estilos](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [Deshacer las limitaciones de rehacer](/help/sites-cloud/authoring/page-editor/undo-redo.md)
+      + Editor universal {#universal-editor}
+         + [Creación de contenido con el editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md)
+         + [Publicación de contenido con el editor universal](/help/sites-cloud/authoring/universal-editor/publishing.md)
       + Fragmentos {#fragments}
          + [Fragmentos de contenido](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [Fragmentos de experiencias](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -1028,6 +1031,18 @@ ht-degree: 96%
             + [Implementación de un evaluador de predicados personalizado](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [Páginas de error personalizadas](/help/implementing/developing/introduction/custom-error-page.md)
          + [Tipos de nodos AEM](/help/implementing/developing/introduction/node-types.md)
+      + Editor universal {#universal-editor}
+         + [Introducción al editor universal](/help/implementing/universal-editor/introduction.md)
+         + [Arquitectura del editor universal](/help/implementing/universal-editor/architecture.md)
+         + [Introducción al editor universal en AEM](/help/implementing/universal-editor/getting-started.md)
+         + [Información general sobre el desarrollador del editor universal](/help/implementing/universal-editor/developer-overview.md)
+         + [Atributos y tipos de elementos](/help/implementing/universal-editor/attributes-types.md)
+         + [Definiciones de modelo, campos y tipos de componentes](/help/implementing/universal-editor/field-types.md)
+         + [Autenticación del editor universal](/help/implementing/universal-editor/authentication.md)
+         + [Desarrollo local de AEM con el Editor universal](/help/implementing/universal-editor/local-dev.md)
+         + [Llamadas del editor universal](/help/implementing/universal-editor/calls.md)
+         + [Eventos](/help/implementing/universal-editor/events.md)
+         + [Personalización del editor universal](/help/implementing/universal-editor/customizing.md)
       + [Administración de experiencias sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=es)
       + Desarrollo híbrido y SPA {#hybrid}
          + [Híbrido y SPA con AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
@@ -1144,19 +1159,3 @@ ht-degree: 96%
    + Accesibilidad {#accessibility}
       + [AEM as a Cloud Service y las directrices de accesibilidad web](/help/compliance/accessibility/web-accessibility.md)
       + [Guía rápida de WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
-+ Editor universal {#universal-editor}
-   + [Introducción al editor universal](/help/implementing/universal-editor/introduction.md)
-   + [Arquitectura del editor universal](/help/implementing/universal-editor/architecture.md)
-   + Creación {#developing}
-      + [Creación de contenido con el editor universal](/help/implementing/universal-editor/authoring.md)
-      + [Publicación de contenido con el editor universal](/help/implementing/universal-editor/publishing.md)
-   + Desarrollo de {#developing}
-      + [Introducción al editor universal en AEM](/help/implementing/universal-editor/getting-started.md)
-      + [Información general sobre el desarrollador del editor universal](/help/implementing/universal-editor/developer-overview.md)
-      + [Atributos y tipos de elementos](/help/implementing/universal-editor/attributes-types.md)
-      + [Definiciones de modelo, campos y tipos de componentes](/help/implementing/universal-editor/field-types.md)
-      + [Autenticación del editor universal](/help/implementing/universal-editor/authentication.md)
-      + [Desarrollo local de AEM con el Editor universal](/help/implementing/universal-editor/local-dev.md)
-      + [Llamadas del editor universal](/help/implementing/universal-editor/calls.md)
-      + [Personalización del editor universal](/help/implementing/universal-editor/customizing.md)
-      + [Eventos](/help/implementing/universal-editor/events.md)
