@@ -4,7 +4,7 @@ description: Cree formularios potentes más rápido mediante hojas de cálculo y
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
+source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 1%
@@ -16,7 +16,10 @@ ht-degree: 1%
 
 Una vez que haya [creación y previsualización del formulario](/help/edge/docs/forms/create-forms.md)Sin embargo, es hora de permitir que la hoja de cálculo correspondiente comience a recibir datos.
 
+<!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
+
+-->
 
 Para habilitar la hoja de cálculo:
 

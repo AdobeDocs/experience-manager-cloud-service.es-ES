@@ -1,13 +1,17 @@
 ---
-description: Este tutorial incluye toda la información relacionada con los componentes de EDS.
-title: 'Componentes de formulario admitidos en el bloque de formulario: tutorial para desarrolladores'
+title: Componentes de formulario del servicio de entrega perimetral de AEM Forms
+description: El servicio de entrega perimetral de AEM Forms está diseñado para ofrecer un rendimiento máximo, lo que le permite visualizar el futuro de la recopilación de datos y la participación del usuario optimizadas. El artículo enumera todos los componentes de formularios disponibles de forma predeterminada para los formularios EDD.
 feature: Edge Delivery Services
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+hide: true
+hidefromtoc: true
+source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 6%
+source-wordcount: '871'
+ht-degree: 5%
 
 ---
+
+
 
 
 # Componentes de HTML admitidos en la entrega perimetral de bloque de formulario
