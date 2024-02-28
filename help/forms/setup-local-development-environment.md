@@ -4,10 +4,10 @@ description: Configurar un entorno de desarrollo local para Adobe Experience Man
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+source-git-commit: 1ec17aebe4eb003b24f5036288a8836aabddb77a
 workflow-type: tm+mt
-source-wordcount: '2682'
-ht-degree: 100%
+source-wordcount: '2724'
+ht-degree: 97%
 
 ---
 
@@ -130,7 +130,12 @@ El archivo de características de Adobe Experience Manager Forms as a Cloud Serv
 
 1. Navegue hasta el directorio crx-quickstart/install. Si la carpeta no existe, créela.
 
-1. Detenga la instancia de AEM, coloque el archivo de características de complementos [!DNL AEM Forms], `aem-forms-addon-<version>.far`, en la carpeta de instalación y reinicie la instancia.
+1. AEM Detenga la instancia de, coloque el [!DNL AEM Forms] archivo de características de complementos, `aem-forms-addon-<version>.far`, en la carpeta de instalación.
+1. Vaya a la ventana de comandos activa y pulse `Ctrl + C` para reiniciar el SDK.
+
+   >[!NOTE]
+   >
+   > Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. AEM AEM El reinicio del SDK de la mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de la.
 
 ### Configurar usuarios y permisos {#configure-users-and-permissions}
 
