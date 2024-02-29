@@ -4,9 +4,9 @@ description: ¡Crea formas perfectas, rápido! ⚡ la creación basada en docume
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1120'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Para continuar con la creación del formulario:
 
    ![cambiar el nombre de la hoja predeterminada por &quot;shared-default&quot;](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. Para agregar los campos del formulario, inserte filas y encabezados de columna en la hoja &#39;shared-default&#39;. Cada fila debe representar un campo de formulario, con encabezados de columna que definan el campo correspondiente [propiedades](/help/edge/docs/forms/eds-form-field-properties).
+1. Para agregar los campos del formulario, inserte filas y encabezados de columna en la hoja &#39;shared-default&#39;. Cada fila debe representar un [campo de formulario](/help/edge/docs/forms/form-components.md), con encabezados de columna que definen el campo correspondiente [propiedades](/help/edge/docs/forms/eds-form-field-properties).
 
    Para empezar rápidamente, considere la posibilidad de copiar el contenido de la [Hoja de consulta](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) en la hoja de cálculo. Después de copiar el contenido, guarde la hoja de cálculo.
 
@@ -153,6 +153,7 @@ Hasta ahora, ha agregado el bloque de formulario al proyecto EDS y ha preparado 
 
 ## Más información
 
+* [Componentes de formulario](/help/edge/docs/forms/form-components.md)
 * [Propiedades del campo de formulario](/help/edge/docs/forms/eds-form-field-properties)
 * [Creación y previsualización de un formulario](/help/edge/docs/forms/create-forms.md)
 * [Habilitar formulario para enviar datos](/help/edge/docs/forms/submit-forms.md)

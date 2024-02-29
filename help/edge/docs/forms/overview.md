@@ -4,7 +4,7 @@ description: El servicio de entrega perimetral de AEM Forms está diseñado para
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e21b681b12e90110436c7319797809c8d6b75eea
+source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 1%
@@ -16,8 +16,6 @@ ht-degree: 1%
 
 Optimice la creación de formularios y aumente las tasas de finalización con el servicio de entrega perimetral de AEM Forms de Adobe. Este potente servicio de composición le permite crear formularios de nivel empresarial con un rendimiento excepcional y un atractivo visual. AEM La priorización de la experiencia del usuario y los objetivos de su empresa es prioridad, lo que garantiza tiempos de carga increíblemente rápidos y un mayor número de finalizaciones de formularios.
 
-![Características principales de EDS Forms](/help/edge/assets/eds-forms-key-features.png){width="70%"}
-
 Puede utilizar el servicio para lo siguiente:
 
 * **Usuarios Captivate con formularios increíbles**: cree formularios complejos y atractivos con facilidad mediante una biblioteca de componentes creados previamente. Integre reCAPTCHA fácilmente, envíe formularios directamente al correo electrónico y permita cargas de archivos sin problemas a soluciones de almacenamiento seguro como Sharepoint, Azure Storage y Amazon S3. Incluso puede crear sus propios componentes de formularios personalizados para dar vida a su visión única.
@@ -26,6 +24,7 @@ Puede utilizar el servicio para lo siguiente:
 
 * **Crear formularios con una puntuación de Lighthouse perfecta**: cree formularios que se carguen y procesen rápidamente, incluso con conexiones a Internet lentas. Los tiempos de carga más rápidos y la experiencia de usuario optimizada contribuyen a tasas de finalización de formularios más altas y tasas de conversión mejoradas.
 
+  <img src="/help/edge/assets/eds-forms-key-features.png" alt="Características principales de EDS Forms" style = "width=`80%`; align=`center`; border: 1px solid;padding: 15px;">
 
 <!-- >
 * **Captivate users with stunning forms**: 
