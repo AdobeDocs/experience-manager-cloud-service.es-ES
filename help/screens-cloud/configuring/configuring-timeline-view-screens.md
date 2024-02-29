@@ -1,10 +1,10 @@
 ---
 title: Configuración de la vista Cronología para AEM Screens
 description: En esta página se describe cómo configurar una vista de cronología en Pantallas as a Cloud Service.
-source-git-commit: 30317d006142b3fbfc1b62fab5b4e28cb1b7dbb7
+source-git-commit: eb71ea3a1a739b08fb3154a5f41a0706bd81488c
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 7%
+source-wordcount: '813'
+ht-degree: 11%
 
 ---
 
@@ -28,17 +28,17 @@ Para crear una vista de línea de tiempo para AEM Screens, complete los siguient
 1. Guardar una versión
 1. Iniciar un flujo de trabajo
 
-La siguiente sección describe estos pasos en detalle.
+Las secciones siguientes describen estos pasos en detalle.
 
 ### Agregar un comentario {#addcomment}
 
 Los comentarios disponibles a través de la cronología permiten a los usuarios crear un registro centralizado e histórico para las discusiones que tienen lugar sobre el canal, la ubicación o cualquier carpeta de la pantalla.
 AEM Los comentarios proporcionan una buena manera consolidada para que los usuarios de la discutan una manera que puede persistir, permitiendo que otros entiendan las decisiones clave.
 
-1. Vaya al canal para el que desea agregar un comentario
-1. Seleccione el canal
-1. Abrir la columna Cronología
-1. Añada el comentario deseado y pulse Intro
+1. Desplácese hasta el canal para el que desee agregar un comentario.
+1. Seleccione el canal.
+1. Abra el **Cronología** columna.
+1. Añada su comentario y pulse **Entrar**.
 
 ![Agregar un comentario](/help/screens-cloud/assets/configure/screen-timeline3.jpg)
 
@@ -58,91 +58,95 @@ El control de versiones crea una &quot;captura de pantalla&quot; de un canal en 
 
 #### Crear una nueva versión {#createnewversion}
 
-1. Vaya al canal para el que desea agregar un comentario
-1. Seleccione el canal
-1. Abrir la columna Cronología
-1. Haga clic en el botón (tres puntos) junto al campo de comentarios en la parte inferior.
+1. Desplácese hasta el canal para el que desee agregar un comentario.
+1. Seleccione el canal.
+1. Abra el **Cronología** columna.
+1. Haga clic en el botón (tres puntos) junto al campo de comentario en la parte inferior de la página.
 
    ![Agregar un comentario](/help/screens-cloud/assets/configure/screens-timeline5.jpg)
 
-1. Seleccione Guardar como versión
-1. Introduzca una Etiqueta y un Comentario si es necesario
+1. Seleccione **Guardar como versión**.
+1. Introduzca una **Etiqueta** y **Comentario** para la versión.
 
    ![Agregar un comentario](/help/screens-cloud/assets/configure/screens-timeline6.jpg)
 
-1. Confirme la nueva versión con Crear. La información de la cronología se actualiza para indicar la nueva versión.
+1. Confirme la nueva versión seleccionando **Crear**. La información de la cronología se actualiza para indicar la nueva versión.
 
 #### Revertir a una versión {#revertversion}
 
 Para revertir la página seleccionada a una versión anterior:
-1. Vaya al canal para el que desea agregar un comentario
-1. Seleccione el canal
-1. Abrir la columna Cronología
-1. Seleccione Mostrar todo o Versiones en el menú desplegable de filtros. Se muestran las versiones de canal del canal seleccionado
+
+1. Vaya al canal para añadir un comentario.
+1. Seleccione el canal.
+1. Abra el **Cronología** columna.
+1. Seleccione una de las opciones **Mostrar todo** o **Versiones** en la lista desplegable de filtros. Se muestran las versiones de canal del canal seleccionado.
 1. Seleccione la versión a la que desea revertir. Se muestran las opciones posibles:
 
    ![Agregar un comentario](/help/screens-cloud/assets/configure/screens-timeline7.jpg)
 
-1. Seleccione Revertir a esta versión. La versión seleccionada se restaura y la información de la cronología se actualiza
+1. Seleccione **Revertir a esta versión**. La versión seleccionada se restaura y la información de la cronología se actualiza.
 
 #### Previsualizar una versión {#previewversion}
 
 Puede obtener una vista previa de una versión específica:
-1. Vaya al canal para el que desea agregar un comentario
-1. Seleccione el canal
-1. Abrir la columna Cronología
-1. Seleccione Mostrar todo o Versiones en el menú desplegable de filtros. Se muestran las versiones de canal del canal seleccionado
+
+1. Vaya al canal para añadir un comentario.
+1. Seleccione el canal.
+1. Abra el **Cronología** columna.
+1. Seleccione una de las opciones **Mostrar todo** o **Versiones** en la lista desplegable de filtros. Se muestran las versiones de canal del canal seleccionado.
 1. Seleccione la versión que desee previsualizar. Se muestran las opciones posibles:
 
    ![Previsualizar versión](/help/screens-cloud/assets/configure/screens-timeline8.jpg)
 
-1. Seleccione Previsualizar. El canal se muestra en una nueva pestaña.
+1. Seleccione **Vista previa**. El canal se muestra en una nueva pestaña.
 
 #### Comparar una versión con la versión actual {#compareversion}
 
 Puede comparar una versión específica con la versión actual:
-1. Vaya al canal para el que desea agregar un comentario
-1. Seleccione el canal
-1. Abrir la columna Cronología
-1. Seleccione Mostrar todo o Versiones en el menú desplegable de filtros. Se muestran las versiones de canal del canal seleccionado
+
+1. Desplácese hasta el canal para el que desee agregar un comentario.
+1. Seleccione el canal.
+1. Abra el **Cronología** columna
+1. Seleccione una de las opciones **Mostrar todo** o **Versiones** en la lista desplegable de filtros. Se muestran las versiones de canal del canal seleccionado.
 1. Seleccione la versión que desea comparar. Se muestran las opciones posibles:
 
    ![Comparar versión](/help/screens-cloud/assets/configure/screens-timeline9.jpg)
 
-1. Seleccione Comparar con actual. La ventana emergente se abre para mostrar las diferencias
+1. Seleccione **Comparar con actual**. La ventana emergente se abre para mostrar las diferencias.
 
 ### Iniciar un flujo de trabajo {#workflowstart}
 
 Durante la creación, puede invocar flujos de trabajo para realizar acciones en los canales; también es posible aplicar más de un flujo de trabajo.
 A la hora de aplicar el flujo de trabajo, se especifica la siguiente información:
-* Flujo de trabajo que se va a aplicar
-* De forma opcional, un título que ayude a identificar la instancia de flujo de trabajo en la bandeja de entrada de un usuario
-* La carga útil del flujo de trabajo
+
+* Flujo de trabajo que se va a aplicar.
+* De forma opcional, un título que ayude a identificar la instancia de flujo de trabajo en la bandeja de entrada de un usuario.
+* La carga útil del flujo de trabajo.
 
 #### Inicio del flujo de trabajo
 
-1. Vaya al canal para el que desea agregar un comentario
-1. Seleccione el canal
-1. Abrir la columna Cronología
-1. Haga clic en el botón (tres puntos) junto al campo de comentarios en la parte inferior
+1. Desplácese hasta el canal para el que desee agregar un comentario.
+1. Seleccione el canal.
+1. Abra el **Cronología** columna.
+1. Haga clic en el botón (tres puntos) junto al campo de comentario en la parte inferior.
 
    ![Iniciar flujo de trabajo](/help/screens-cloud/assets/configure/screens-timeline10.jpg)
 
-1. Seleccione Iniciar flujo de trabajo
-1. Se abrirá el asistente Crear flujo de trabajo para especificar los detalles del flujo de trabajo
-1. Seleccione Modelo de flujo de trabajo de la lista desplegable e introduzca el título del flujo de trabajo
+1. Seleccionar **Iniciar flujo de trabajo**.
+1. Se abrirá el asistente Crear flujo de trabajo para especificar los detalles del flujo de trabajo.
+1. Seleccionar **Modelo de flujo de trabajo** en la lista desplegable e introduzca el título del flujo de trabajo.
 
    ![Iniciar flujo de trabajo](/help/screens-cloud/assets/configure/screens-timeline11.jpg)
 
-1. Continúe haciendo clic en Siguiente
-1. En el paso Ámbito, puede
-* Añadir contenido para añadir recursos adicionales al flujo de trabajo
-* Incluir elementos secundarios para especificar que en el flujo de trabajo se incluirán los elementos secundarios de ese recurso
-* Remove Selection para eliminar ese recurso del flujo de trabajo
+1. Continúe haciendo clic en **Siguiente**.
+1. En el paso Ámbito, puede:
+   * **Añadir contenido** para añadir recursos adicionales al flujo de trabajo.
+   * **Incluir elementos secundarios** para especificar que en el flujo de trabajo se incluyan los elementos secundarios de ese recurso.
+   * **Eliminar la selección** para eliminar ese recurso del flujo de trabajo.
 
-  ![Iniciar flujo de trabajo](/help/screens-cloud/assets/configure/screens-timeline12.jpg)
+   ![Iniciar flujo de trabajo](/help/screens-cloud/assets/configure/screens-timeline12.jpg)
 
-1. Use Crear para cerrar el asistente y crear la instancia de flujo de trabajo
-1. Es posible que deba realizar algunas acciones adicionales para completar el flujo de trabajo según el modelo de flujo de trabajo seleccionado
+1. Seleccionar **Crear** para cerrar el asistente y crear la instancia de flujo de trabajo.
+1. Es posible que deba realizar algunas acciones adicionales para completar el flujo de trabajo según el modelo de flujo de trabajo seleccionado.
 
-![Iniciar flujo de trabajo](/help/screens-cloud/assets/configure/screens-timeline13.jpg)
+   ![Iniciar flujo de trabajo](/help/screens-cloud/assets/configure/screens-timeline13.jpg)
