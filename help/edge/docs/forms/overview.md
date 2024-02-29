@@ -4,9 +4,9 @@ description: El servicio de entrega perimetral de AEM Forms está diseñado para
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 6fbeb94d3547d50e93ab80aee5d6458e51edb1da
+source-git-commit: e21b681b12e90110436c7319797809c8d6b75eea
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '445'
 ht-degree: 1%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 1%
 
 # Servicio de entrega perimetral de AEM Forms
 
-El servicio de entrega perimetral de AEM Forms es un servicio maquetable ofrecido por Adobe que le permite crear y entregar formularios web de alto impacto y rendimiento rápido.
+Optimice la creación de formularios y aumente las tasas de finalización con el servicio de entrega perimetral de AEM Forms de Adobe. Este potente servicio de composición le permite crear formularios de nivel empresarial con un rendimiento excepcional y un atractivo visual. AEM La priorización de la experiencia del usuario y los objetivos de su empresa es prioridad, lo que garantiza tiempos de carga increíblemente rápidos y un mayor número de finalizaciones de formularios.
 
-![Características principales de EDS Forms](/help/edge/assets/eds-forms-key-features.png)
+![Características principales de EDS Forms](/help/edge/assets/eds-forms-key-features.png){width="70%"}
 
 Puede utilizar el servicio para lo siguiente:
 
