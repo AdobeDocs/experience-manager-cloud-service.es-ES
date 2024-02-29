@@ -4,9 +4,9 @@ description: El servicio de entrega perimetral de AEM Forms está diseñado para
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '275'
 ht-degree: 3%
 
 ---
@@ -57,8 +57,8 @@ Las siguientes propiedades son compatibles con los componentes de formulario del
    </td>
   </tr>
       <tr>
-   <td>Marcador de posición</td>
-   <td>Texto, búsqueda, URL, teléfono, correo electrónico, contraseña y número</td>
+   <td>Descripción</td>
+   <td>Aplicable a todos los campos</td>
    <td> El atributo placeholder proporciona al usuario una breve sugerencia sobre qué tipo de información se espera en el campo.
    </td>
   </tr>

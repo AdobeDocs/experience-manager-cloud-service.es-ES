@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 41976a70f5566c79a0e14d5d4e1396dbdee12046
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
-source-wordcount: '4733'
+source-wordcount: '4748'
 ht-degree: 96%
 
 ---
@@ -825,6 +825,7 @@ ht-degree: 96%
          + [Publicar un formulario en la página de Sites](/help/edge/docs/forms/publish-eds-forms.md)
          + [Agregar validaciones a campos de formulario](/help/edge/docs/forms/validate-forms.md)
          + [Cambiar temáticas y estilo de formulario](/help/edge/docs/forms/style-theme-forms.md)
+         + [Usar reglas para agregar un comportamiento dinámico a un formulario](/help/edge/docs/forms/rules-forms.md)
       + Funcionalidades {#advanced-features-eds-forms}
          + [Fragmentos de formulario](/help/edge/docs/forms/form-fragments.md)
          + [Secciones repetibles](/help/edge/docs/forms/repeatable-forms.md)
@@ -832,6 +833,8 @@ ht-degree: 96%
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Página de agradecimiento](/help/edge/docs/forms/thank-you-page-form.md)
          + [Componentes personalizados](/help/edge/docs/forms/custom-components-forms.md)
+      + Referencias {#forms-references}
+         + [Lista de componentes de bloque de formulario](/help/edge/docs/forms/form-components.md)
    + Recursos para Edge Delivery {#resources}
       + Barra de tareas {#sidekick}
          + [Uso de la barra de tareas](/help/edge/docs/sidekick.md)

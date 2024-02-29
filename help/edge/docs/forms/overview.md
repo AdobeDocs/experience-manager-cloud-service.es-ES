@@ -4,7 +4,7 @@ description: El servicio de entrega perimetral de AEM Forms está diseñado para
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 6%
@@ -15,26 +15,28 @@ ht-degree: 6%
 # Servicio de entrega perimetral de AEM Forms {#aem-forms-edge-delivery-service-overview}
 
 
-<div>
-&lt;style="font-family: Arial, sans-serif; margin: 0; padding: 0;"&gt;
-    <main class="content">
-      <section class="content-section">
-        <p style="line-height: 1.5;">El servicio de entrega perimetral de AEM Forms es un servicio maquetable ofrecido por Adobe que le permite crear y entregar formularios web de alto impacto y rendimiento rápido. Puede utilizar el servicio para lo siguiente:</p>
-        </section> <section class="content-section">
-        <h2 style="font-size: 20px; margin-bottom: 10px;">Usuarios Captivate con formularios increíbles</h2>
-        <img src="/help/edge/assets/enrollment-form.png" alt="Formulario de inscripción" style="float: left; margin: 0 20px 20px 0; width: 150px;">
-        <p style="line-height: 1.5;">Cree formularios complejos y atractivos con facilidad mediante una biblioteca de componentes creados previamente. Integre reCAPTCHA fácilmente, envíe formularios directamente al correo electrónico y permita cargas de archivos sin problemas a soluciones de almacenamiento seguro como Sharepoint, Azure Storage y Amazon S3. Incluso puede crear sus propios componentes de formularios personalizados para dar vida a su visión única.</p>
-        </section> <section class="content-section">
-        <h2 style="font-size: 20px; margin-bottom: 10px;">Crear formularios con una puntuación de faro perfecta</h2>
-        <img src="/help/edge/assets/lighthouse-forms.png" alt="puntuación de faro perfecta para sus formularios" style="float: right; margin: 20px 0 0 20px; width: 150px;">
-        <p style="line-height: 1.5;"> Cree formularios que se carguen y procesen rápidamente, incluso con conexiones a Internet lentas. Los tiempos de carga más rápidos y la experiencia de usuario optimizada contribuyen a tasas de finalización de formularios más altas y tasas de conversión mejoradas.</p>
-        </section>
-        <section class="content-section">
-        <h2 style="font-size: 20px; margin-bottom: 10px;">Cree experiencias de inscripción digital con las herramientas que elija</h2>
-        <img src="/help/edge/assets/edge-delivery-forms-authoring-tools.png" alt="Formulario de inscripción" style="float: left; margin: 0 20px 20px 0; width: 150px;">
-        <p style="line-height: 1.5;">Aumentar la eficacia de la creación desacoplando las fuentes de contenido. De forma predeterminada, puede utilizar tanto la creación en AEM como la creación basada en documentos. De este modo, puede trabajar con varios orígenes de contenido en el mismo sitio web y utilizar las herramientas de creación que prefiera, como Microsoft Excel, Google AEM Sheets o Editores de páginas de la página de la página de la versión de la aplicación (en inglés).</p>
-        </section>
-</div>
+<div style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
+        <main class="content">
+            <section class="content-section">
+                <p style="line-height: 1.5;">El servicio de entrega perimetral de AEM Forms es un servicio maquetable ofrecido por Adobe que le permite crear y entregar formularios web de alto impacto y rendimiento rápido. Puede utilizar el servicio para lo siguiente:</p>
+            </section>
+            <section class="content-section"></br>
+                <h2 style="font-size: 20px; margin-bottom: 10px;">Usuarios Captivate con formularios increíbles</h2>
+                <img src="/help/edge/assets/enrollment-form.png" alt="Formulario de inscripción" style="float: left; margin: 0 20px 20px 0; width: 30%;">
+                <p style="line-height: 1.5;">Cree formularios complejos y atractivos con facilidad mediante una biblioteca de componentes creados previamente. Integre reCAPTCHA fácilmente, envíe formularios directamente al correo electrónico y permita cargas de archivos sin problemas a soluciones de almacenamiento seguro como Sharepoint, Azure Storage y Amazon S3. Incluso puede crear sus propios componentes de formularios personalizados para dar vida a su visión única.</p>
+            </section>
+            <section class="content-section"></br>
+                <h2 style="font-size: 20px; margin-bottom: 10px;">Crear formularios con una puntuación de faro perfecta</h2>
+                <img src="/help/edge/assets/lighthouse-forms.png" alt="puntuación de faro perfecta para sus formularios" style="float: right; margin: 20px 0 0 20px; width: 30%;">
+                <p style="line-height: 1.5;"> Cree formularios que se carguen y procesen rápidamente, incluso con conexiones a Internet lentas. Los tiempos de carga más rápidos y la experiencia de usuario optimizada contribuyen a tasas de finalización de formularios más altas y tasas de conversión mejoradas.</p>
+            </section>
+            <section class="content-section"></br>
+                <h2 style="font-size: 20px; margin-bottom: 10px;">Cree experiencias de inscripción digital con las herramientas que elija</h2>
+                <img src="/help/edge/assets/edge-delivery-forms-authoring-tools.png" alt="Formulario de inscripción" style="float: left; margin: 0 20px 20px 0; width: 30%;">
+                <p style="line-height: 1.5;">Aumentar la eficacia de la creación desacoplando las fuentes de contenido. De forma predeterminada, puede utilizar tanto la creación en AEM como la creación basada en documentos. De este modo, puede trabajar con varios orígenes de contenido en el mismo sitio web y utilizar las herramientas de creación que prefiera, como Microsoft Excel, Google AEM Sheets o Editores de páginas de la página de la página de la versión de la aplicación (en inglés).</p>
+            </section>
+        </main>
+    </div>
 
 
 <!-- >
@@ -112,19 +114,19 @@ Build complex and engaging forms with ease using a library of pre-built componen
         </a>
         <p>Reduzca los errores y la frustración comprobando que las entradas del formulario tengan el formato adecuado.</p>
     </div> 
+            <div class="card-container">
+        <a href="/help/edge/docs/forms/rules-forms.md">
+            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Usar reglas para agregar un comportamiento dinámico a un formulario" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Usar reglas para agregar un comportamiento dinámico a un formulario</b>
+        </a>
+        <p>Reutilizar fragmentos preconfigurados en varios formularios.</p>
+    </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
             <img src="/help/edge/assets/smock_abc_18_n.svg" alt="Traducción de un formulario EDS" style="border-radius: 5px;"> </b>
             <br><b style="margin-top: 5px;">Traducción de un formulario</b>
         </a>
         <p>Amplíe el alcance de los formularios manteniendo los costes bajo control.</p>
-    </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/form-fragments.md">
-            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Uso de fragmentos de formulario en un formulario EDS" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Creación de fragmentos de formulario</b>
-        </a>
-        <p>Reutilizar fragmentos preconfigurados en varios formularios.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/repeatable-forms.md">  
@@ -147,6 +149,7 @@ Build complex and engaging forms with ease using a library of pre-built componen
         </a>
         <p>Utilice la integración reCAPTCHA de OOTB para una sólida protección contra spam y bots.</p>
     </div>
+
 
 </div>
 

@@ -4,9 +4,9 @@ description: El servicio de entrega perimetral de AEM Forms está diseñado para
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '872'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 AEM Forms Edge Delivery incluye un bloque de formulario. El bloque de formulario le ayuda a crear fácilmente formularios para capturar y almacenar los datos capturados.
 
-El bloque de formulario admite componentes de HTML-5 como texto, correo electrónico, número, fecha y muchos más. También admite elementos de área de texto, selección y conjunto de campos, e incluye funciones de validación de entrada nativas de HTML-5. El bloque de formulario crea una estructura de HTML uniforme para todos los tipos de campo y contenedores, lo que garantiza la coherencia. Usted también [Aplicar estilo a los tipos de campo](https://adobe-rnd.github.io/form-block/customization/styling_form) uso del `form.css` archivo.
+El bloque de formulario es compatible con los componentes de OOTB HTML-5, como texto, correo electrónico, número, fecha y muchos más. También admite elementos de área de texto, selección y conjunto de campos, e incluye funciones de validación de entrada nativas de HTML-5. El bloque de formulario crea una estructura de HTML uniforme para todos los tipos de campo y contenedores, lo que garantiza la coherencia. Usted también [Aplicar estilo a los tipos de campo](https://adobe-rnd.github.io/form-block/customization/styling_form) uso del `form.css` archivo.
 
 ## HTML compatible 5 tipos de entrada en el bloque de formulario
 
