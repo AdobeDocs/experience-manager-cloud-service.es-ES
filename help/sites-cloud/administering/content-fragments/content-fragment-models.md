@@ -4,10 +4,10 @@ description: AEM Descubra cómo los modelos de fragmentos de contenido sirven de
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: e5a48cfd042c0e8d7448007854e1f73bded8cf7f
 workflow-type: tm+mt
-source-wordcount: '3125'
-ht-degree: 56%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -43,6 +43,12 @@ También puede definir varias propiedades; por ejemplo, agregar **Etiquetas**, a
    ![Título y descripción](assets/cf-cfmodels-create.png)
 
 1. Use **Crear** para guardar el modelo vacío. Un mensaje indica el éxito de la acción. Puede seleccionar **Abrir** para editar inmediatamente el modelo, o **Listo** para volver a la consola.
+
+>[!CAUTION]
+>
+>Si va a consultar varios fragmentos a los que se hace referencia, no se recomienda que los distintos modelos de fragmento tengan nombres de campo con el mismo nombre, pero con tipos diferentes.
+>
+>Para obtener más información, consulte [AEM API de GraphQL para el uso con fragmentos de contenido: limitaciones](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### Modelo de fragmento de contenido: propiedades {#content-fragment-model-properties}
 
@@ -290,6 +296,12 @@ AEM tiene protección contra recurrencias para:
 * Referencias de contenido Esto evita que el usuario agregue una referencia al fragmento actual y puede provocar un cuadro de diálogo vacío del selector de referencias a fragmento.
 >
 * Referencias a fragmento en GraphQL Si crea una consulta profunda que devuelve varios fragmentos de contenido referenciados entre sí, devolverá un valor nulo en la primera ocurrencia.
+
+>[!CAUTION]
+>
+Si va a consultar varios fragmentos a los que se hace referencia, no se recomienda que los distintos modelos de fragmento tengan nombres de campo con el mismo nombre, pero con tipos diferentes.
+>
+Para obtener más información, consulte [AEM API de GraphQL para el uso con fragmentos de contenido: limitaciones](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### Referencia de contenido {#content-reference}
 

@@ -3,10 +3,10 @@ title: API de GraphQL de AEM para su uso con fragmentos de contenido
 description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) as a Cloud Service con la API de GraphQL de AEM para la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: fd0f0fdfc0aaf02d631b9bf909fcb1e1431f5401
+source-git-commit: a8fbf0a9a1f7e12b6a668544b1a67d8551abf1b7
 workflow-type: tm+mt
-source-wordcount: '4994'
-ht-degree: 87%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -1125,6 +1125,31 @@ Para protegerse de posibles problemas, se han impuesto limitaciones predetermina
 * La consulta no puede contener más de 1 millón de caracteres (1024 * 1024)
 * La consulta no puede contener más de 15000 tokens
 * La consulta no puede contener más de 200000 tokens de espacio en blanco
+
+También debe tener en cuenta lo siguiente:
+
+* Se devolverá un error de conflicto de campos cuando la consulta de GraphQL contenga campos con el mismo nombre en dos (o más) modelos:
+
+   * Entonces, ¿dónde?
+
+      * Dos (o más modelos) se utilizan como posibles referencias; cuando se definen como un permitido **Tipo de modelo** en la Referencia del fragmento de contenido.
+
+     y:
+
+      * Estos dos modelos tienen campos con un nombre común; es decir, el mismo nombre se produce en ambos modelos.
+
+     y
+
+      * Estos campos son de diferentes tipos de datos.
+
+   * Por ejemplo:
+
+      * Cuando hay dos (o más) fragmentos con modelos diferentes (por ejemplo, `M1`, `M2`) se utilizan como posibles referencias (Referencia de contenido o Referencia de fragmento) de otro fragmento; por ejemplo, `Fragment1` `MultiField/List`
+      * Y estos dos fragmentos con diferentes modelos (`M1`, `M2`) tienen campos con el mismo nombre, pero de tipos diferentes.
+Como ejemplo:
+         * `M1.Title` as `Text`
+         * `M2.Title` as `Text/MultiField`
+      * Entonces, se producirá un error de conflicto de campos si la consulta de GraphQL contiene el `Title` field.
 
 ## Preguntas frecuentes {#faqs}
 
