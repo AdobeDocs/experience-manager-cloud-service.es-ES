@@ -1,12 +1,12 @@
 ---
-title: Configuración de la página de agradecimiento para EDS Forms
-description: Aprenda a configurar las páginas de agradecimiento y la redirección de EDS Forms para optimizar la experiencia del usuario y optimizar los recorridos del usuario.
+title: Configurar la página de agradecimiento o el formulario de redirección después del envío
+description: Aprenda a configurar las páginas de agradecimiento y la redirección del bloque de Forms para optimizar la experiencia del usuario y optimizar sus recorridos.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: cadeccd916884ca2437e2b2684771c181cc8281e
+source-git-commit: d6b1048c44022da47a9d7443f564a2ff9d1802cf
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '608'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Una vez que un usuario envía un formulario, es crucial proporcionar una experie
 En el bloque de Forms adaptable, el comportamiento predeterminado es mostrar una página de agradecimiento. Sin embargo, tiene la flexibilidad de adaptar esta experiencia para satisfacer sus necesidades específicas. Las opciones incluyen:
 
 * [Configuración de la página y el mensaje de agradecimiento para que se ajusten a los objetivos de marca y comunicación](#configuring-the-thank-you-page-and-message)
-* [Redirigir a los usuarios a otra página después del envío](#redirect-users-to-another-page-post-submission), mejorando aún más su recorrido
+* [Redirigir a los usuarios a otra página después del envío para realizar más acciones](#redirect-users-to-another-page-post-submission)
 
 ## Configuración de la página y el mensaje de agradecimiento
 
@@ -43,10 +43,10 @@ El bloque de Forms adaptable muestra la página de &quot;agradecimiento&quot; al
 
 De forma predeterminada, el bloque de Forms adaptable redirige a los usuarios a la página de &quot;agradecimiento&quot;. Para redirigir a los usuarios a una página que no sea la página de agradecimiento predeterminada, tiene dos opciones:
 
-* reemplace la página de agradecimiento existente por una página diferente o
-* redirija la página &quot;agradecimiento&quot; a otra página de su elección.
+* [Reemplace la página &quot;agradecimiento&quot; por una página diferente](#replace-the-existing-thankyou-page)
+* [Usar redirecciones de sitios web para la redirección de páginas de &quot;agradecimiento&quot;](#use-website-redirects-for-thankyou-page-redirection)
 
-### Reemplazar la página de &quot;agradecimiento&quot; existente
+### Sustituya la página de &quot;agradecimiento&quot;.
 
 1. Abra el &quot;[Proyecto EDS]Archivo /blocks/form/form.js&quot; para editar.
 1. Cambie el `thankyou` página de la siguiente línea a la página que elija:
@@ -70,9 +70,15 @@ De forma predeterminada, el bloque de Forms adaptable redirige a los usuarios a 
 1. Asegúrese de que la página exista en la carpeta del proyecto EDS y publíquela.
 
 
-### Usar redirecciones de sitios web
+### Usar redirecciones de sitios web para la redirección de páginas de &quot;agradecimiento&quot;
 
-Configure un redireccionamiento de sitio web para dirigir la página de &quot;agradecimiento&quot; a una página diferente. Consulte la [Documentación de redirecciones](https://www.aem.live/docs/redirects) para obtener instrucciones detalladas.
+Redirigir a un usuario a otra página después del envío del formulario puede mejorar la experiencia del usuario al proporcionar información relevante, confirmar las acciones y guiar a los usuarios hacia los resultados deseados. Por ejemplo,
+
+* una vez que un usuario completa un formulario de compra, se le redirige a una página de pago para completar la transacción de forma segura.
+* al enviar un formulario de registro para un evento o seminario web, se redirige a los usuarios a una página de confirmación que muestra los detalles del evento, como la fecha, la hora y la ubicación.
+
+Para redirigir la página de &quot;agradecimiento&quot; a una página diferente, use [redirecciones de sitios web](https://www.aem.live/docs/redirects) hoja de cálculo.
+
 
 ## Más información
 
