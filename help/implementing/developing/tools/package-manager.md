@@ -4,10 +4,10 @@ description: Conozca los conceptos básicos de AEM; administración de paquetes 
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 422b4d98e2665e332ff65a3638a02282064b2bea
 workflow-type: tm+mt
-source-wordcount: '3774'
-ht-degree: 4%
+source-wordcount: '3769'
+ht-degree: 3%
 
 ---
 
@@ -109,7 +109,7 @@ El Administrador de paquetes se divide en cuatro áreas funcionales principales:
 * **Lista de paquetes** : Esta es la lista de paquetes de la instancia filtrados y ordenados por selecciones en el panel de navegación izquierdo.
 * **Registro de actividad** : Este panel se minimiza al principio y se expande para detallar la actividad del Administrador de paquetes, como cuando se crea o instala un paquete. Hay botones adicionales en la pestaña Registro de actividad para:
    * **Borrar registro**
-   * **Mostrar / Ocultar**
+   * **Mostrar/ocultar**
 * **Barra de herramientas** : La barra de herramientas contiene botones de actualización para el panel de navegación izquierdo y la lista de paquetes, así como botones para buscar, crear y cargar paquetes.
 
 ![IU del Administrador de paquetes](assets/package-manager-ui.png)
@@ -123,7 +123,7 @@ Al hacer clic en el nombre de un paquete, se expande la entrada en la Lista de p
 Existen varias acciones que se pueden realizar en un paquete a través de los botones de la barra de herramientas disponibles cuando se expanden los detalles del paquete.
 
 * [Editar](#edit-package)
-* [Compilación](#building-a-package)
+* [Generar](#building-a-package)
 * [Reinstalar](#reinstalling-packages)
 * [Descargar](#downloading-packages-to-your-file-system)
 
@@ -207,7 +207,7 @@ Los filtros de paquetes se definen con mayor frecuencia la primera vez que [cree
 
 ![Pestaña Dependencias](assets/dependencies.png)
 
-| Campo | Descripción | Ejemplos/Detalles |
+| Campo | Descripción | Ejemplo/Detalles |
 |---|---|---|
 | Probado con | El nombre y la versión del producto a los que se dirige este paquete o con los que es compatible. | `AEMaaCS` |
 | Problemas solucionados | Un campo de texto que permite enumerar los detalles de los errores corregidos con este paquete, un error por línea | - |
@@ -218,7 +218,7 @@ Los filtros de paquetes se definen con mayor frecuencia la primera vez que [cree
 
 ![Pestaña Configuración avanzada](assets/advanced-settings.png)
 
-| Campo | Descripción | Ejemplos/Detalles |
+| Campo | Descripción | Ejemplo/Detalles |
 |---|---|---|
 | Nombre | El nombre del proveedor del paquete | `WKND Media Group` |
 | URL | URL del proveedor | `https://wknd.site` |
@@ -240,7 +240,7 @@ Se pueden realizar muchas acciones en un paquete.
 
 1. [Acceda al Administrador de paquetes.](#accessing)
 
-1. Haga clic en **Crear paquete**.
+1. Clic **Crear paquete**.
 
    >[!TIP]
    >
@@ -612,4 +612,4 @@ AEM Los paquetes de se pueden utilizar para crear y compartir contenido en entor
 
 [Distribución de software](https://downloads.experiencecloud.adobe.com) AEM AEM proporciona paquetes de datos para su uso en el SDK local de la aplicación de desarrollo de la aplicación (SDK). AEM Los paquetes proporcionados en la distribución de software no deben instalarse en entornos de nube AEMaaCS a menos que el soporte de Adobe los apruebe expresamente.
 
-Para obtener más información, consulte la [Documentación de distribución de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=es).
+Para obtener más información, consulte la [Documentación de distribución de software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=es)
