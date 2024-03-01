@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 05e4adb0d7ada0f7cea98858229484bf8cca0d16
+source-git-commit: 974650c0f268de8ecff7fdb693cdd1e32efb2e1c
 workflow-type: tm+mt
-source-wordcount: '4749'
-ht-degree: 96%
+source-wordcount: '4748'
+ht-degree: 95%
 
 ---
 
@@ -178,7 +178,7 @@ ht-degree: 96%
    + [Compatibilidad con OAuth2 para el servicio de correo](/help/security/oauth2-support-for-mail-service.md)
    + [Reglas de filtro de tráfico, incluidas reglas WAF](/help/security/traffic-filter-rules-including-waf.md)
    + [Consideraciones de seguridad de AEM as a Cloud Service Security](/help/security/security-considerations.md)
-   + [Obsolescencia de credenciales JWT en Adobe Systems Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [Desaprobación de credenciales de JWT en la consola de Adobe Developer](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + Incorporación {#onboarding}
    + [Empiece aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=es)
    + Recorrido de incorporación {#journey}
@@ -276,7 +276,7 @@ ht-degree: 96%
       + [Selección de la ruta](/help/sites-cloud/authoring/path-selection.md)
       + [Solución de problemas](/help/sites-cloud/authoring/troubleshooting.md)
       + Consola Sitios {#sites-console}
-         + [Consola Sites](/help/sites-cloud/authoring/sites-console/introduction.md)
+         + [La consola Sitios](/help/sites-cloud/authoring/sites-console/introduction.md)
          + [Panel lateral de la consola](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
          + [Crear un nuevo canal](/help/sites-cloud/authoring/sites-console/create-site.md)
          + [Organización de páginas](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
@@ -419,7 +419,7 @@ ht-degree: 96%
       + [Selector de recursos de Micro-Frontend](/help/assets/asset-selector.md)
       + [Selector de destino de Micro-Frontend](/help/assets/destination-selector.md)
       + [Compartir recursos](/help/assets/share-assets.md)
-      + [Repreocessing activos](/help/assets/reprocessing.md)
+      + [Reprocesando recursos](/help/assets/reprocessing.md)
       + [Supervisar actividades y tareas de DAM](/help/assets/assets-activity-history.md)
       + [Introducción a los microservicios de recursos](/help/assets/asset-microservices-configure-and-use.md)
       + [Agregar y cargar recursos](/help/assets/add-assets.md)
@@ -484,7 +484,7 @@ ht-degree: 96%
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [Árbol de estructura](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [Previsualización: representación JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
-      + [Reutilización de fragmentos de contenido mediante MSM para recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=es)
+      + [Reutilización de fragmentos de contenido mediante MSM (para Recursos)](/help/assets/content-fragments/content-fragments-msm.md)
    + Dynamic Media {#dynamicmedia}
       + Recorrido de Dynamic Media: Conceptos básicos {#dm-journey}
          + [Parte I: Dynamic Media, Casos de uso, Flujo de recursos a través del sistema](/help/assets/dynamic-media/dm-journey-part1.md)
@@ -635,7 +635,7 @@ ht-degree: 96%
             + [Uso de Google reCAPTCHA en un formulario adaptable](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Agregar un controlador de error personalizado en un formulario adaptable](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Añadir una configuración regional para Formularios adaptables basada en componentes principales](/help/forms/supporting-new-language-localization-core-components.md)
-            + [Crear y utilizar funciones personalizadas](/help/forms/create-and-use-custom-functions.md)
+            + [Creación y uso de funciones personalizadas](/help/forms/create-and-use-custom-functions.md)
       + Componentes de base {#authoring-adaptive-forms-foundation-components}
          + Convertir sus formularios PDF en formularios adaptables {#afcs}
             + [Introducción al servicio de conversión automatizada de formularios](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=es)
@@ -817,16 +817,16 @@ ht-degree: 96%
       + [Configuración de Akamai](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Configuración de Fastly](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [Redireccionamientos](/help/edge/docs/redirects.md)
-   + Creación de Forms de entrega de Edge {#build-forms}
+   + Creación de Edge Delivery Forms {#build-forms}
       + [Información general](/help/edge/docs/forms/overview.md)
       + Introducción {#getting-started-eds-forms}
-         + [Crear y previsualización un formulario](/help/edge/docs/forms/create-forms.md)
+         + [Creación y previsualización de un formulario](/help/edge/docs/forms/create-forms.md)
          + [Habilitar formulario para enviar datos](/help/edge/docs/forms/submit-forms.md)
          + [Publicar un formulario en la página de Sites](/help/edge/docs/forms/publish-eds-forms.md)
          + [Agregar validaciones a campos de formulario](/help/edge/docs/forms/validate-forms.md)
          + [Cambiar temáticas y estilo de formulario](/help/edge/docs/forms/style-theme-forms.md)
          + [Usar reglas para agregar un comportamiento dinámico a un formulario](/help/edge/docs/forms/rules-forms.md)
-      + Capacidades {#advanced-features-eds-forms}
+      + Funcionalidades {#advanced-features-eds-forms}
          + [Fragmentos de formulario](/help/edge/docs/forms/form-fragments.md)
          + [Secciones repetibles](/help/edge/docs/forms/repeatable-forms.md)
          + [Traducción](/help/edge/docs/forms/translate-forms.md)
@@ -834,7 +834,7 @@ ht-degree: 96%
          + [Página de agradecimiento](/help/edge/docs/forms/thank-you-page-form.md)
          + [Componentes personalizados](/help/edge/docs/forms/custom-components-forms.md)
       + Referencias {#forms-references}
-         + [Lista de componentes de bloques de formulario](/help/edge/docs/forms/form-components.md)
+         + [Lista de componentes de bloque de formulario](/help/edge/docs/forms/form-components.md)
    + Recursos para Edge Delivery {#resources}
       + Barra de tareas {#sidekick}
          + [Uso de la barra de tareas](/help/edge/docs/sidekick.md)
@@ -845,7 +845,7 @@ ht-degree: 96%
       + [API de administrador](https://www.aem.live/docs/admin.html)
       + [Estado de AEM](https://www.aemstatus.net)
       + Herramientas {#tools}
-         + [Extensión de AEM Sidekick Cromo](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [Extensión de AEM Sidekick Chrome](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
          + [Bot de Github](https://github.com/apps/aem-code-sync)
          + [Registro de auditorías](/help/edge/docs/auditlog.md)
 + {#headless} sin encabezado
@@ -1042,7 +1042,7 @@ ht-degree: 96%
          + [Introducción al editor universal en AEM](/help/implementing/universal-editor/getting-started.md)
          + [Información general sobre el desarrollador del editor universal](/help/implementing/universal-editor/developer-overview.md)
          + [Atributos y tipos de elementos](/help/implementing/universal-editor/attributes-types.md)
-         + [Definiciones de modelos, campos y tipos de Componente](/help/implementing/universal-editor/field-types.md)
+         + [Definiciones de modelo, campos y tipos de componentes](/help/implementing/universal-editor/field-types.md)
          + [Autenticación del editor universal](/help/implementing/universal-editor/authentication.md)
          + [Desarrollo local de AEM con el Editor universal](/help/implementing/universal-editor/local-dev.md)
          + [Llamadas del editor universal](/help/implementing/universal-editor/calls.md)
