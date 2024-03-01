@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b7b9dbfa7f939828d66a785daecf84c917923c37
+source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
 workflow-type: tm+mt
 source-wordcount: '4751'
 ht-degree: 95%
@@ -178,7 +178,7 @@ ht-degree: 95%
    + [Compatibilidad con OAuth2 para el servicio de correo](/help/security/oauth2-support-for-mail-service.md)
    + [Reglas de filtro de tráfico, incluidas reglas WAF](/help/security/traffic-filter-rules-including-waf.md)
    + [Consideraciones de seguridad de AEM as a Cloud Service Security](/help/security/security-considerations.md)
-   + [Desaprobación de credenciales de JWT en la consola de Adobe Developer](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [Credenciales JWT de Adobe Developer Console en desuso](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + Incorporación {#onboarding}
    + [Empiece aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=es)
    + Recorrido de incorporación {#journey}
@@ -826,12 +826,12 @@ ht-degree: 95%
          + [Agregar validaciones a campos de formulario](/help/edge/docs/forms/validate-forms.md)
          + [Cambiar temáticas y estilo de formulario](/help/edge/docs/forms/style-theme-forms.md)
          + [Usar reglas para agregar un comportamiento dinámico a un formulario](/help/edge/docs/forms/rules-forms.md)
+         + [Página de agradecimiento](/help/edge/docs/forms/thank-you-page-form.md)
       + Funcionalidades {#advanced-features-eds-forms}
          + [Fragmentos de formulario](/help/edge/docs/forms/form-fragments.md)
          + [Secciones repetibles](/help/edge/docs/forms/repeatable-forms.md)
          + [Traducción](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
-         + [Página de agradecimiento](/help/edge/docs/forms/thank-you-page-form.md)
          + [Componentes personalizados](/help/edge/docs/forms/custom-components-forms.md)
       + Referencias {#forms-references}
          + [Lista de componentes de bloque de formulario](/help/edge/docs/forms/form-components.md)

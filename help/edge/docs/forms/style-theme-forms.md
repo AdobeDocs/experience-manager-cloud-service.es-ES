@@ -4,9 +4,9 @@ description: Personalización del tema y el estilo de un formulario de servicio 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1271'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Estilo de campos de formulario
 
-Forms es crucial para la interacción de los usuarios en los sitios web, ya que les permite introducir datos. Esta guía explica los aspectos básicos del diseño de varios campos de formulario en la [Bloque de formulario](/help/edge/docs/forms/create-forms.md), lo que le ayuda a crear formularios visualmente atractivos y fáciles de usar.
+Forms es crucial para la interacción de los usuarios en los sitios web, ya que les permite introducir datos. Esta guía explica los aspectos básicos del diseño de varios campos de formulario en la [Bloque de formulario adaptable](/help/edge/docs/forms/create-forms.md), lo que le ayuda a crear formularios visualmente atractivos y fáciles de usar.
 
 ## Explicación de tipos de campos de formulario
 
-Antes de profundizar en el estilo, vamos a revisar los tipos de campos de formulario comunes admitidos por el bloque de formulario:
+Antes de profundizar en el estilo, vamos a revisar los tipos de campos de formulario comunes admitidos por el bloque de formulario adaptable:
 
 * Campos de entrada: Incluyen entradas de texto, entradas de correo electrónico, entradas de contraseña y mucho más.
 * Grupos de casillas de verificación: se utiliza para seleccionar varias opciones.
@@ -35,7 +35,7 @@ Comprender los conceptos fundamentales de CSS es crucial antes de aplicar estilo
 * Modelo de cuadro: El modelo de cuadro CSS describe la estructura de los elementos del HTML como un área de contenido rodeada de relleno, bordes y márgenes.
 * Flexbox/Grid: Los diseños de Flexbox y Grid CSS son herramientas potentes para crear diseños adaptables y flexibles.
 
-## Estilo de un formulario para un bloque de formulario
+## Estilo de un formulario para el bloque de formulario adaptable
 
 El bloque de formulario ofrece una estructura de HTML estandarizada que simplifica el proceso de selección y estilo de los componentes del formulario:
 
