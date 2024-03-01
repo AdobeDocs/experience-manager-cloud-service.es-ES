@@ -4,10 +4,10 @@ description: Aprenda a crear y administrar proyectos de traducción automática 
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: ae500923bac34689a28b9ff0bc78586f725829de
 workflow-type: tm+mt
-source-wordcount: '3960'
-ht-degree: 85%
+source-wordcount: '4011'
+ht-degree: 83%
 
 ---
 
@@ -448,14 +448,26 @@ Para comparar las copias de idioma con el maestro de idioma:
 
 ## Mover una página de origen o cambiarle el nombre {#move-source}
 
-Si una página de origen ya traducida debe ser [cambiado de nombre o movido](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page), vuelva a traducir la página después de moverla y cree una copia de idioma basada en el nuevo nombre/ubicación de la página. La copia de idioma antigua basada en el nombre/ubicación anterior seguirá ahí.
+Si una página de origen ya traducida necesita ser [cambiado de nombre o movido](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page), volver a traducir la página después del traslado crea una copia de idioma basada en el nuevo nombre/ubicación de página. La copia de idioma antigua basada en el nombre/ubicación anterior sigue ahí. Para evitarlo, puede utilizar la funcionalidad de actualización de copia de idioma después del movimiento:
 
-La práctica recomendada en este escenario es seguir este procedimiento:
+1. Mueva una página que tenga una copia de idioma.
+1. Seleccione la raíz de la copia de idioma.
+1. Abra el **Referencias** panel.
+1. Seleccionar **Copias de idiomas**.
+1. Seleccione los idiomas de destino que desee actualizar.
+1. Seleccionar **Actualizar copias de idioma**.
 
-1. Cancele la publicación de las copias de idioma asociadas con la página de origen que desee mover.
-1. Elimínelas.
-1. Cree nuevas copias de idioma a partir de la página de origen que acaba de mover.
-1. Publique las copias de idioma creadas.
+   ![update-language-copies](../assets/translation-move-to.png)
+
+1. Clic **Actualizar**. A [Launch](/help/sites-cloud/authoring/launches/promoting.md) se creará.
+1. Vaya a la raíz de idioma necesaria y selecciónela.
+1. Uso del **Referencias** panel, seleccionar **Lanzamientos**.
+
+   ![promote-launch-translation](../assets/promote-launch-translation.png)
+
+1. Haga clic en el lanzamiento creado y haga clic en **Promocionar lanzamiento**.
+
+Ahora se ha movido la página de origen y se ha copiado la copia de idioma asociada.
 
 ## Importación y exportación de trabajos de traducción {#import-export}
 
