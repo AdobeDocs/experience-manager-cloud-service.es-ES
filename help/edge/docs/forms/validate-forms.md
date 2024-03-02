@@ -1,12 +1,12 @@
 ---
-title: 'De hojas de cálculo a Forms: dominio de validaciones de campos de bloque de formulario'
-description: Cree formularios potentes más rápido mediante hojas de cálculo y campos de bloque de formularios. Esta guía le ayuda a crear validaciones personalizadas para los campos de bloque Forms de EDS.
+title: 'De hojas de cálculo a Forms: Dominio de validaciones de campos de bloque de formularios adaptables'
+description: Cree formularios potentes más rápido con hojas de cálculo y campos de bloque de formularios adaptables. Esta guía le ayuda a crear validaciones personalizadas para los campos de bloque Forms de EDS.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Agregar validaciones a campos de formulario
 
-El bloque de formulario tiene una función de validaciones integrada. Estas validaciones se aplican automáticamente en exploradores modernos según el tipo de campo elegido y las propiedades adicionales proporcionadas.
+El bloque de formulario adaptable tiene funciones de validaciones integradas. Estas validaciones se aplican automáticamente en exploradores modernos según el tipo de campo elegido y las propiedades adicionales proporcionadas.
 
 ## Explicación de los tipos de campo y validación
 
-El bloque de formulario admite varias opciones [Tipos de entrada de HTML-5](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), incluidos texto, correo electrónico, número, fecha, etc. También se adapta [área de texto](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), select y fieldset, junto con las completas funciones de validación de entrada inherentes a HTML-5.
+El bloque de formulario adaptable admite diversas funciones [Tipos de entrada de HTML-5](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), incluidos texto, correo electrónico, número, fecha, etc. También se adapta [área de texto](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), select y fieldset, junto con las completas funciones de validación de entrada inherentes a HTML-5.
 
 utiliza tipos de campo de HTML para definir el tipo de datos que puede introducir un usuario. Los distintos tipos de campo tienen diferentes reglas de validación integradas:
 

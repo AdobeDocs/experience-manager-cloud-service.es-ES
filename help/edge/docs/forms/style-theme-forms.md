@@ -4,9 +4,9 @@ description: Personalización del tema y el estilo de un formulario de servicio 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1275'
 ht-degree: 0%
 
 ---
@@ -37,9 +37,9 @@ Comprender los conceptos fundamentales de CSS es crucial antes de aplicar estilo
 
 ## Estilo de un formulario para el bloque de formulario adaptable
 
-El bloque de formulario ofrece una estructura de HTML estandarizada que simplifica el proceso de selección y estilo de los componentes del formulario:
+El bloque de formulario adaptable ofrece una estructura de HTML estandarizada que simplifica el proceso de selección y estilo de los componentes del formulario:
 
-* **Actualizar estilos predeterminados**: Puede modificar los estilos predeterminados de un formulario si edita la variable `/blocks/form/form.css file`. Este archivo proporciona un estilo completo para un formulario, que admite formularios de asistente de varios pasos. Hace hincapié en el uso de variables CSS personalizadas para facilitar la personalización, el mantenimiento y el estilo uniforme en todos los formularios. Para obtener instrucciones sobre cómo agregar el bloque de formulario al proyecto, consulte [creación de un formulario](/help/edge/docs/forms/create-forms.md).
+* **Actualizar estilos predeterminados**: Puede modificar los estilos predeterminados de un formulario si edita la variable `/blocks/form/form.css file`. Este archivo proporciona un estilo completo para un formulario, que admite formularios de asistente de varios pasos. Hace hincapié en el uso de variables CSS personalizadas para facilitar la personalización, el mantenimiento y el estilo uniforme en todos los formularios. Para obtener instrucciones sobre cómo agregar el bloque de formulario adaptable al proyecto, consulte [creación de un formulario](/help/edge/docs/forms/create-forms.md).
 
 * **Personalización**: utilice el valor predeterminado `forms.css` como base y personalícelo para modificar el aspecto de los componentes del formulario, lo que lo hace visualmente atractivo y fácil de usar. La estructura del archivo alienta la organización y mantiene los estilos de los formularios, lo que promueve diseños coherentes en todo el sitio web.
 
@@ -60,7 +60,7 @@ El bloque de formulario ofrece una estructura de HTML estandarizada que simplifi
 
 ## Estructura de componentes
 
-El bloque de formulario ofrece una estructura de HTML coherente para varios elementos de formulario, lo que garantiza un estilo y una administración más sencillos. Puede manipular los componentes mediante CSS con fines de estilo.
+El bloque de formulario adaptable ofrece una estructura de HTML coherente para varios elementos de formulario, lo que garantiza una gestión y un estilo más sencillos. Puede manipular los componentes mediante CSS con fines de estilo.
 
 ### Componentes generales (excepto desplegables, grupos de opciones y grupos de casillas de verificación):
 
@@ -421,6 +421,6 @@ También puede segmentar campos individuales por nombre para aplicar estilos ún
 }
 ```
 
-Este CSS identifica todos los elementos de entrada que se encuentran dentro de un elemento que tiene la clase `form-otp`. La estructura del HTML del formulario sigue las convenciones del bloque de formulario, lo que implica que hay un contenedor marcado con la clase &quot;form-top&quot; que contiene el campo con el nombre &quot;top&quot;.
+Este CSS identifica todos los elementos de entrada que se encuentran dentro de un elemento que tiene la clase `form-otp`. La estructura del HTML del formulario sigue las convenciones del bloque de formulario adaptable, lo que implica que hay un contenedor marcado con la clase &quot;form-top&quot; que contiene el campo con el nombre &quot;top&quot;.
 
 

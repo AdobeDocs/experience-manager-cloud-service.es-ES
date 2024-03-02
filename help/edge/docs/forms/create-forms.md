@@ -4,7 +4,7 @@ description: ¡Crea formas perfectas, rápido! ⚡ la creación basada en docume
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 68b60d33e6ccfe27452cfea76603e4d7d29f0c6e
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 1%
@@ -18,7 +18,7 @@ En la era digital de hoy en día, la creación de formularios fáciles de usar e
 
 Estos formularios envían datos directamente a un archivo de Microsoft Excel o Google Sheets, lo que le permite utilizar un ecosistema dinámico y API sólidas de Google Sheets, Microsoft Excel y Microsoft Sharepoint para procesar fácilmente los datos enviados o iniciar un flujo de trabajo empresarial existente.
 
-![Ecosistema de creación basado en documentos](/help/edge/assets/document-based-authoring.png)
+![Ecosistema de creación basado en documentos](/help/edge/assets/document-based-authoring-workflow.png)
 
 AEM Forms Edge Delivery proporciona un bloque, conocido como bloque de formulario adaptable, para ayudarle a crear fácilmente formularios para capturar y almacenar los datos capturados. AEM Puede incluir el bloque de formulario adaptable en el proyecto de EDS de la para empezar a crear un formulario. Vamos a empezar:
 
@@ -34,12 +34,12 @@ Antes de comenzar, asegúrese de haber completado los siguientes pasos:
 
 ## Creación de un formulario
 
-+++ Paso 1: Añadir el bloque de formulario adaptable al proyecto de servicio de envío de Edge (EDS).
++++ Paso 1: Agregar el bloque de formulario adaptable al proyecto de servicio de envío de Edge (EDS).
 
 El formulario adaptable permite a los usuarios crear formularios para un sitio de servicio de entrega de Edge. AEM Sin embargo, este bloque no se incluye en la plantilla de palabras predeterminada (utilizada para crear un proyecto de servicio de entrega perimetral). Para integrar a la perfección el bloque de formulario adaptable en su proyecto de servicio de entrega de Edge:
 
-1. **Clone el repositorio de bloques del formulario adaptable**: Clone el [Repositorio de bloques de formularios adaptables](https://github.com/adobe/afb) en el equipo local. Contiene el código para procesar el formulario en una página web de EDS. En este documento, la carpeta local del repositorio de bloques de Forms se denomina `[Adaptive Form block repository]`.
-1. **Busque el repositorio de bloques del formulario adaptable:** Acceda a la [Repositorio de bloques de formularios adaptables]/blocks en su equipo local y copie el `form` carpeta.
+1. **Clone el repositorio de bloque de formulario adaptable**: Clone el [Repositorio de bloques de formularios adaptables](https://github.com/adobe/afb) en el equipo local. Contiene el código para procesar el formulario en una página web de EDS. En este documento, la carpeta local del repositorio de bloques de Forms se denomina `[Adaptive Form Block repository]`.
+1. **Busque el repositorio de bloques de formularios adaptables:** Acceda a la [Repositorio de bloques de formularios adaptables]/blocks en su equipo local y copie el `form` carpeta.
 1. **Pegue el bloque de formulario adaptable en el proyecto EDS:**
 Vaya a [Repositorio del proyecto EDS]/blocks/ en el equipo local y pegue la carpeta del formulario.
 1. **Confirmar cambios en GitHub:** Compruebe la carpeta del formulario y sus archivos subyacentes en el proyecto del servicio de entrega de Edge en GitHub.
@@ -113,7 +113,7 @@ Para continuar con la creación del formulario:
 +++ Paso 3: Previsualizar el formulario mediante la página del servicio de entrega de Edge (EDS).
 
 
-Hasta ahora, ha agregado el bloque Formulario adaptable al proyecto EDS y ha preparado la estructura del formulario. Ahora, para obtener una vista previa del formulario:
+Hasta ahora, ha agregado el bloque de formulario adaptable al proyecto EDS y ha preparado la estructura del formulario. Ahora, para obtener una vista previa del formulario:
 
 1. **Acceda al directorio de su proyecto:** Abra la cuenta de Microsoft SharePoint o Google AEM Drive y vaya al directorio del proyecto de entrega perimetral de la red de distribución de la red de.
 

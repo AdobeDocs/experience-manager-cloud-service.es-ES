@@ -1,12 +1,12 @@
 ---
 title: Preparar la hoja de cálculo para aceptar datos
-description: Cree formularios potentes más rápido mediante hojas de cálculo y campos de bloque de formularios.
+description: Cree formularios potentes más rápido con hojas de cálculo y campos de bloque de formularios adaptables.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '997'
 ht-degree: 1%
 
 ---
