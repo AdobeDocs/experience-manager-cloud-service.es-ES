@@ -4,9 +4,9 @@ description: Cree formularios potentes más rápido con hojas de cálculo y camp
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1000'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,10 @@ ht-degree: 1%
 
 # Preparar la hoja de cálculo para aceptar datos
 
+![Ecosistema de creación basado en documentos](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
+
 Una vez que haya [creación y previsualización del formulario](/help/edge/docs/forms/create-forms.md)Sin embargo, es hora de permitir que la hoja de cálculo correspondiente comience a recibir datos.
+
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -43,6 +46,7 @@ Para habilitar la hoja de cálculo:
 
 
 Una vez añadidos los nombres de campo a `incoming` , el formulario estará listo para aceptar envíos. Puede obtener una vista previa del formulario y enviar datos a la hoja mediante él.
+
 
 También observará los siguientes cambios en la hoja de cálculo:
 
