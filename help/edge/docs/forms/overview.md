@@ -4,9 +4,9 @@ description: El servicio de entrega perimetral de AEM Forms está diseñado para
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '814'
 ht-degree: 1%
 
 ---
@@ -27,13 +27,10 @@ Puede utilizar el servicio para lo siguiente:
   <div>
     <style>
     .image-container {
-    width: 80%;
     text-align: center; 
     }
     .image-container img {
-        width: 100%; /* Set image width to 100% of the container */
-        border: .5px solid; /* Maintain the border style */
-        padding: 15px; /* Maintain the padding */
+        width: 100%; /* Set image width to 100% of the container 
     }
 </style>
     <div class="image-container">
@@ -42,6 +39,8 @@ Puede utilizar el servicio para lo siguiente:
 
 
 </div>
+
+<!--
 
 <!--
 
@@ -62,25 +61,33 @@ Puede utilizar el servicio para lo siguiente:
 
     
     >[!NOTE]
+    >[!NOTE]
     >
     >
     > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
 
     -->
 
-## Capacidades clave
+## Funciones principales
 
-* **Componentes de campo de formulario basados en HTML5**: el servicio de entrega perimetral de AEM Forms le permite crear formularios interactivos y fáciles de usar utilizando campos de formulario basados en un HTML válido5 [tipos de entrada](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">área de texto</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, y <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  componentes. Estos componentes se adaptan a diferentes tipos de recopilación de datos y se pueden personalizar fácilmente para adaptarlos a sus necesidades específicas.
+* **Componentes de campo de formulario basados en HTML5**: el servicio de entrega perimetral de AEM Forms le permite crear formularios interactivos y fáciles de usar utilizando componentes de formulario basados en HTML5 [tipos de entrada](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">área de texto</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, y <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  elementos. Estos componentes se adaptan a diferentes tipos de recopilación de datos y se pueden personalizar fácilmente para adaptarlos a sus necesidades específicas.
 
 * **Accesibilidad**: Se puede acceder a los campos del bloque del formulario. Cada etiqueta está vinculada con su elemento de entrada respectivo y los ID se generan automáticamente para la vinculación. Las descripciones asociadas a los campos se vinculan mediante el atributo aria-described by. Se admite la navegación mediante el teclado utilizando las teclas estándar Tab/Mayús + Tab.
 
-* **Reglas de formulario**: cree una lógica que ajuste la visibilidad, la validación y el comportamiento del campo en función de la entrada del usuario o de condiciones predefinidas. Las reglas ofrecen una forma flexible e intuitiva de agregar inteligencia a los formularios, lo que garantiza que se adapten sin problemas en función de las entradas del usuario.
+* **Estilo**: cada campo de formulario tiene una estructura de HTML fija que se puede decorar fácilmente con archivos CSS o JavaScript personalizados. Los selectores para los campos de segmentación en CSS y JS se proporcionan en función del tipo y el nombre. Puede crear fácilmente nuevos selectores debido a la estructura estandarizada.
 
-* **Cargas de archivos**: Mejore los formularios con funciones de archivos adjuntos perfectas. Tanto si necesita recopilar documentos, imágenes u otros archivos de los usuarios, el bloque de formulario adaptable le permite integrar la funcionalidad de carga de archivos sin esfuerzo. Con las opciones de gestión personalizadas disponibles, puede adaptar el proceso de carga de archivos para adaptarlo a sus necesidades específicas.
+* **Reglas**: cree fácilmente una lógica que ajuste la visibilidad, validación y comportamiento del campo en función de la entrada del usuario o de condiciones predefinidas. Las reglas ofrecen una forma flexible e intuitiva de agregar inteligencia a los formularios, lo que garantiza que se adapten sin problemas en función de las entradas del usuario.
 
-* **Validación de formulario**: antes del envío, el formulario se valida y los campos no válidos se marcan correctamente con mensajes de error mostrados al usuario. Hay varios patrones disponibles para mostrar estos errores.
+* **Validaciones**: antes del envío, el formulario se valida y los campos no válidos se marcan correctamente con mensajes de error mostrados al usuario. Hay varios patrones disponibles para mostrar estos errores.
 
-* **Estilo de Forms**: cada campo de formulario tiene una estructura de HTML fija que se puede decorar aún más con archivos CSS o JavaScript personalizados. Los selectores para los campos de segmentación en CSS/JS se proporcionan según el tipo y el nombre.
+Hay algunas funciones avanzadas disponibles bajo petición:
+
+* **Cargas de archivos**: puede agregar funcionalidades de archivos adjuntos a los formularios. Tanto si necesita recopilar documentos, imágenes u otros archivos de los usuarios, la funcionalidad de carga de archivos le resulta muy útil. Con las opciones de gestión personalizadas disponibles, puede adaptar el proceso de carga de archivos para adaptarlo a sus necesidades específicas.
+
+* **reCAPTCHA**: aproveche la integración perfecta de Google reCAPTCHA en sus formularios con nuestra compatibilidad predeterminada (OOTB). Proteja sus formularios contra actividades fraudulentas, correo no deseado y abusos, a la vez que mantiene una experiencia de usuario fluida e ininterrumpida.
+
+* **Enviar notificación por correo electrónico al enviar el formulario**: elimine la molestia de los seguimientos manuales y garantice una comunicación oportuna con nuestra automatización de correo electrónico integrada para los envíos de formularios. Esta solución integrada le permite notificar sin esfuerzo a las partes relevantes, incluido el envío de datos de formulario, cada vez que alguien rellene un formulario en su sitio web. No necesita configuraciones complejas ni herramientas adicionales: está listo para usar de forma predeterminada.
+
 
 ## Flujo de trabajo
 

@@ -4,7 +4,7 @@ description: Cree formularios potentes más rápido con hojas de cálculo y camp
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
@@ -33,6 +33,6 @@ Tel: Este tipo de campo está diseñado específicamente para números de teléf
 
 * [Creación y previsualización de un formulario](/help/edge/docs/forms/create-forms.md)
 * [Habilitar formulario para enviar datos](/help/edge/docs/forms/submit-forms.md)
-* [Publicar un formulario en la página de Sites](/help/edge/docs/forms/publish-eds-forms.md)
+* [Publicar un formulario en la página de Sites](/help/edge/docs/forms/publish-forms.md)
 * [Agregar validaciones a campos de formulario](/help/edge/docs/forms/validate-forms.md)
 * [Cambiar temáticas y estilo de formulario](/help/edge/docs/forms/style-theme-forms.md)

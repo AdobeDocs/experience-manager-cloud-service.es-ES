@@ -4,9 +4,9 @@ description: Cree formularios potentes más rápido con hojas de cálculo y camp
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1003'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,7 @@ ht-degree: 1%
 
 Una vez que haya [creación y previsualización del formulario](/help/edge/docs/forms/create-forms.md)Sin embargo, es hora de permitir que la hoja de cálculo correspondiente comience a recibir datos.
 
+![Ecosistema de creación basado en documentos](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -46,6 +47,7 @@ Para habilitar la hoja de cálculo:
 
 
 Una vez añadidos los nombres de campo a `incoming` , el formulario estará listo para aceptar envíos. Puede obtener una vista previa del formulario y enviar datos a la hoja mediante él.
+
 
 
 También observará los siguientes cambios en la hoja de cálculo:
@@ -290,6 +292,6 @@ A continuación, puede personalizar el mensaje de agradecimiento, [configurar un
 
 * [Creación y previsualización de un formulario](/help/edge/docs/forms/create-forms.md)
 * [Habilitar formulario para enviar datos](/help/edge/docs/forms/submit-forms.md)
-* [Publicar un formulario en la página de Sites](/help/edge/docs/forms/publish-eds-forms.md)
+* [Publicar un formulario en la página de Sites](/help/edge/docs/forms/publish-forms.md)
 * [Agregar validaciones a campos de formulario](/help/edge/docs/forms/validate-forms.md)
 * [Cambiar temáticas y estilo de formulario](/help/edge/docs/forms/style-theme-forms.md)

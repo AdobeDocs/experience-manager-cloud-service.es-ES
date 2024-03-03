@@ -4,7 +4,7 @@ description: Aprenda a configurar las páginas de agradecimiento y la redirecci�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d6b1048c44022da47a9d7443f564a2ff9d1802cf
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 1%
@@ -86,6 +86,6 @@ Para redirigir la página de &quot;agradecimiento&quot; a una página diferente,
 * [Propiedades del campo de formulario](/help/edge/docs/forms/eds-form-field-properties)
 * [Creación y previsualización de un formulario](/help/edge/docs/forms/create-forms.md)
 * [Habilitar formulario para enviar datos](/help/edge/docs/forms/submit-forms.md)
-* [Publicar un formulario en la página de Sites](/help/edge/docs/forms/publish-eds-forms.md)
+* [Publicar un formulario en la página de Sites](/help/edge/docs/forms/publish-forms.md)
 * [Agregar validaciones a campos de formulario](/help/edge/docs/forms/validate-forms.md)
 * [Cambiar temáticas y estilo de formulario](/help/edge/docs/forms/style-theme-forms.md)

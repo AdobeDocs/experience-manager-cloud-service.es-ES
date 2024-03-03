@@ -2,9 +2,9 @@
 description: Este tutorial incluye instrucciones para hacer que una sección de un formulario sea repetible
 title: Secciones repetibles en Edge Delivery Services
 feature: Edge Delivery Services
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Por ejemplo, considere un formulario utilizado para recopilar información de lo
 
 ## Requisitos previos
 
-AEM Configure el proyecto de Github del servicio de entrega perimetral (EDS) mediante plantillas de palabras clave de y clone el repositorio de Github correspondiente en el equipo local. Consulte [tutorial para desarrolladores](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial.html) para obtener más información.
+AEM Configure el proyecto de GitHub del servicio de entrega perimetral (EDS) mediante una plantilla de plantillas y clone el repositorio de GitHub correspondiente en el equipo local. Consulte [tutorial para desarrolladores](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial.html) para obtener más información.
 
 ## Secciones repetibles en la entrega de Edge
 
