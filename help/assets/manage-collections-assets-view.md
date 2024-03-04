@@ -1,11 +1,10 @@
 ---
 title: Administrar colecciones
 description: Una colección es un conjunto de recursos dentro de la vista de Experience Manager Assets. Utilice las colecciones para compartir recursos entre los usuarios.
-exl-id: 33c889f5-c989-4772-9591-db62f50e5c80
-source-git-commit: d198b3f0c7d8469a376ba7a3e95e57c84f835dbb
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 87%
+source-wordcount: '789'
+ht-degree: 89%
 
 ---
 
@@ -16,7 +15,7 @@ ht-degree: 87%
 >title="Administrar colecciones"
 >abstract="Una colección es un conjunto de recursos, carpetas u otras colecciones dentro de la vista Assets. Utilice las colecciones para compartir recursos entre los usuarios. A diferencia de las carpetas, una colección puede incluir recursos de distintas ubicaciones. Puede compartir varias colecciones con un usuario. Cada colección contiene referencias a recursos. La integridad referencial de los recursos se mantiene entre colecciones."
 
-Una colección es un conjunto de recursos, carpetas u otras colecciones dentro de la vista Recursos de Adobe Experience Manager. Utilice las colecciones para compartir recursos entre los usuarios.
+Una colección es un conjunto de recursos, carpetas u otras colecciones dentro de la vista de Adobe Experience Manager Assets. Utilice las colecciones para compartir recursos entre los usuarios.
 
 A diferencia de las carpetas, una colección puede incluir recursos de distintas ubicaciones.
 
@@ -188,7 +187,7 @@ Para eliminar una colección:
 
 ## Siguientes pasos {#next-steps}
 
-* Proporcione comentarios sobre productos usando [!UICONTROL Comentarios] opción disponible en la interfaz de usuario de la vista Recursos
+* Realice comentarios del producto mediante la opción [!UICONTROL Comentarios] disponible en la interfaz de usuario de la vista Recursos
 
 * Proporcione comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar una incidencia] ![crear una incidencia de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha
 

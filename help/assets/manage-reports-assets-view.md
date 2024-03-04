@@ -1,8 +1,7 @@
 ---
 title: Administración de informes en la vista Recursos
 description: Acceda a los datos de la sección de informes de la vista Recursos para evaluar el uso de productos y funciones, y obtener información sobre las métricas de éxito clave.
-exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
-source-git-commit: c9ec348d7e65f4bb69b93a39b9ad7192485d8db4
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 92%

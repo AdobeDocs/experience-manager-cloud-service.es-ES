@@ -2,11 +2,10 @@
 title: Obtenga información sobre cómo buscar y descubrir recursos en [!DNL Assets view]?
 description: Obtenga información sobre cómo buscar y descubrir recursos en la vista de AEM Assets. La potente funcionalidad de búsqueda le permite descubrir rápidamente el recurso adecuado y ayudarle a mejorar la velocidad del contenido.
 role: User
-exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 7b815a83e4e93c024403fab02f9a9b4ba8685007
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '1543'
-ht-degree: 60%
+ht-degree: 91%
 
 ---
 
@@ -54,7 +53,7 @@ Puede ordenar los recursos buscados en orden creciente o descendente de `Name`, 
 
 ## Administrar filtros personalizados {#custom-filters}
 
-**Permisos necesarios:**  `Can Edit`, `Owner` o Administrador.
+**Permisos necesarios:** `Can Edit`, `Owner` o Administrador.
 
 La vista Recursos también permite agregar filtros personalizados a la interfaz de usuario. A continuación, puede aplicar esos filtros personalizados además de los [filtros estándar](#refine-search-results) para restringir los resultados de búsqueda.
 
@@ -120,37 +119,37 @@ Para eliminar filtros personalizados:
 
 1. Haga clic en **[!UICONTROL Confirmar]** para eliminar los filtros de la interfaz de usuario.
 
-## Búsqueda de recursos mediante [!DNL Adobe Firefly] {#search-firefly}
+## Búsqueda de recursos con [!DNL Adobe Firefly] {#search-firefly}
 
-Puede buscar un recurso que no esté disponible en ninguna de las carpetas de recursos utilizando [!DNL Adobe Firefly] función de búsqueda de recursos dentro de [!DNL Experience Manager Assets]. Esto le permite generar de forma eficaz recursos en tiempo real que no se almacenan en las carpetas de recursos.
+Puede buscar un recurso que no esté disponible en ninguna de las carpetas de recursos utilizando la [!DNL Adobe Firefly] funcionalidad de búsqueda de recursos dentro de [!DNL Experience Manager Assets]. Esto permite generar eficazmente recursos en tiempo real que no están almacenados en las carpetas de recursos.
 
 ### Antes de empezar
 
-Debe tener un activo [!DNL Adobe Express] suscripción.
+Debe tener una suscripción [!DNL Adobe Express] activa.
 
-### Generar recursos
+### Generación de recursos
 
 Para generar nuevos recursos mediante [!DNL Adobe Firefly]:
 
-1. Vaya a [!DNL AEM Assets] workspace.
+1. Navegue hasta el espacio de trabajo [!DNL AEM Assets].
 1. Introduzca el nombre del recurso en la barra de búsqueda situada en la parte superior de la página.<br>
 Por ejemplo, puede buscar un recurso mediante la palabra clave `Bugatti Type 57`. Al buscar el recurso, no se encuentran resultados porque el recurso no está presente en ninguna de las carpetas de recursos.
 1. Escriba el nombre del recurso en la barra de búsqueda situada en medio de la página y haga clic en **[!UICONTROL Generar]**.
    ![Integración de Firefly](assets/firefly-integration.jpg)
-   *Imagen: no se han encontrado resultados para Bugatti Type 57 en la carpeta de recursos.* <br>
+   *Figura: no se han encontrado resultados para Bugatti Tipo 57 en la carpeta de recursos.* <br>
 Los nuevos recursos se han generado correctamente.
    ![Integración de Firefly](assets/bugatti-type-57.jpg)
-   *Imagen: recursos de referencia buscados con [!DNL Adobe Firefly] función de búsqueda de recursos.* <br>
+   *Figura: recursos de referencia buscados con la funcionalidad de búsqueda de recursos [!DNL Adobe Firefly].* <br>
 Puede cargar estos recursos en su carpeta preferida para acceder fácilmente a ellos.
 
 ### Carga de activos
 
 Para cargar el recurso generado en el repositorio de recursos:
 
-1. Clic **[!UICONTROL Cargar]**.
+1. Haga clic en **[!UICONTROL Cargar]**. 
 1. Seleccione la carpeta de recursos en la que debe cargar el recurso y haga clic en **[!UICONTROL Seleccionar carpeta]**.
    ![Cargar recurso](assets/upload-asset-firefly.jpg)
-   *Imagen: seleccione la carpeta para cargar el recurso.*
+   *Figura: seleccione la carpeta para cargar el recurso.*
 
 ## Búsquedas guardadas {#saved-search}
 
@@ -187,9 +186,9 @@ Puede seleccionar los recursos que se muestran en los resultados de búsqueda y 
 
 * **Fijar en Acceso rápido**: [fijar un recurso](my-workspace-assets-view.md) para un acceso más rápido cuando lo necesite más tarde. Todos los elementos fijados se muestran en la sección **Acceso rápido** de Mi espacio de trabajo.
 
-* **Abrir en Adobe Express**: edite una imagen en el Adobe Express integrado desde la pantalla de Experience Manager Assets.
+* **Abrir en Adobe Express**: edite una imagen en Adobe Express integrado desde la pantalla de Adobe Experience Manager Assets.
 
-* **Editar**: edite la imagen con el Adobe Express.
+* **Editar**: edite la imagen con Adobe Express.
 
 * **Compartir vínculo**: [compartir vínculos](share-links-for-assets-view.md) para un recurso con otros usuarios para que puedan acceder a él y descargarlo.
 
@@ -201,44 +200,44 @@ Puede seleccionar los recursos que se muestran en los resultados de búsqueda y 
 
 * **Cambiar nombre**: cambiar el nombre de un recurso.
 
-* **Copiar a bibliotecas**: agregue un recurso a la biblioteca.
+* **Copiar en las bibliotecas**: agregue un recurso a la biblioteca.
 
 * **Asignar tareas**: asignar tareas a los usuarios de un recurso.
 
 * **Ver**: [monitorizar las operaciones](manage-notifications-assets-view.md) realizadas en un recurso.
 
-## Configurar la primera página de inicio de búsqueda {#configuring-search-first-homepage}
+## Configuración de la página principal Buscar primero {#configuring-search-first-homepage}
 
-Experience Manager Assets le permite seleccionar la página de aterrizaje predeterminada para su organización. Al utilizar Buscar primero como página principal, también tiene opciones para adaptar la marca de la página configurando las imágenes de fondo y del logotipo para que coincidan con su marca.
+Experience Manager Assets le permite seleccionar la página de aterrizaje predeterminada para su organización. Al utilizar Buscar primero como página principal, también tiene opciones para adaptar la personalización de marca de la página configurando las imágenes de fondo y del logotipo para que coincidan con su marca.
 
-Para configurar la primera página de inicio de búsqueda, ejecute los pasos a continuación:
+Para configurar la página principal Buscar primero, ejecute los siguientes pasos:
 
 1. Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración general]**.
-1. Seleccionar **[!UICONTROL Buscar primero]**. Además, abre la configuración relacionada con la búsqueda primero. Puede establecer [alineación](#setting-alignment-search-bar) o [establecer imagen de fondo y logotipo](#setting-background-image-and-logo) de su página de inicio.
+1. Seleccione **[!UICONTROL Buscar primero]**. Además, abre la configuración relacionada con Buscar primero. Puede establecer [alineación](#setting-alignment-search-bar) o [establecer imagen de fondo y logotipo](#setting-background-image-and-logo) de su página principal.
 
-### Establecer la alineación de la barra de búsqueda {#setting-alignment-search-bar}
+### Alineación de la barra de búsqueda {#setting-alignment-search-bar}
 
 [!DNL Assets view] permite cambiar la alineación de la barra de búsqueda. Puede hacer que la barra de búsqueda aparezca en el centro o en la parte superior. Seleccione la alineación adecuada y haga clic en **[!UICONTROL Guardar]**.
 
-![Buscar primera alineación de página principal](assets/search-first-alignment.png)
+![Alineación de la página principal Buscar primero](assets/search-first-alignment.png)
 
-### Estableciendo imagen de fondo y logotipo de la página principal {#setting-background-image-and-logo}
+### Imagen de fondo y logotipo de la página principal {#setting-background-image-and-logo}
 
-Puede agregar el logotipo de la marca y la imagen de fondo a la primera página de inicio de búsqueda. Siga estos pasos:
+Puede agregar el logotipo de la marca y la imagen de fondo a la página principal Buscar primero. Ejecute los siguientes pasos:
 
-1. Vaya a **[!UICONTROL Imagen de fondo y logotipo]** sección debajo de **[!UICONTROL Homepage]**.
-1. Clic **[!UICONTROL Reemplazar]** para examinar imágenes de un repositorio de recursos existente.
-1. Haga clic en **[!UICONTROL Guardar]**. [Previsualizar](#preview-configured-homepage) los cambios para revisar las modificaciones.
+1. Vaya a **[!UICONTROL Imagen de fondo y logotipo]** sección debajo de **[!UICONTROL Página principal]**.
+1. Haga clic en **[!UICONTROL Reemplazar]** para examinar imágenes de un repositorio de recursos existente.
+1. Haga clic en **[!UICONTROL Guardar]**. [Previsualice](#preview-configured-homepage) los cambios para revisar las modificaciones.
 
-### Previsualizar página principal configurada {#preview-configured-homepage}
+### Vista previa de la página principal configurada {#preview-configured-homepage}
 
-Puede obtener una vista previa para comprobar el diseño y el formato de la primera página de inicio de búsqueda. Uso de **[!UICONTROL Previsualizar]**, puede corregir el diseño o realizar modificaciones según sea necesario. Para obtener una vista previa de la página principal configurada, ejecute los pasos siguientes:
+Puede obtener una vista previa para comprobar el diseño y el formato de la página principal Buscar primero. Mediante **[!UICONTROL Vista previa]** puede corregir el diseño o realizar modificaciones según sea necesario. Para obtener una vista previa de la página principal configurada, ejecute los pasos siguientes:
 
-1. Clic **[!UICONTROL Configuración general]** y seleccione **[!UICONTROL Buscar primero]**.
-1. Vaya a **[!UICONTROL Personalizar la primera página de inicio de búsqueda]** y haga clic en **[!UICONTROL Previsualizar]**. Alternar entre **[!UICONTROL Tema oscuro]** para obtener una vista previa de la página principal en un tema oscuro o claro.
-1. Clic **[!UICONTROL Cerrar]** para cerrar la pantalla de vista previa.
+1. Haga clic en **[!UICONTROL Configuración general]** y seleccione **[!UICONTROL Buscar primero]**.
+1. Vaya a **[!UICONTROL Personalizar la página principal Buscar primero]** y haga clic en **[!UICONTROL Vista previa]**. Cambie mediante el botón **[!UICONTROL Tema oscuro]** para obtener una vista previa de la página principal en un tema oscuro o claro.
+1. Haga clic en **[!UICONTROL Cerrar]** para cerrar el cuadro de diálogo.
 
-   ![Buscar la primera previsualización de página principal](assets/search-first-preview.gif)
+   ![Vista previa de la página principal Buscar primero](assets/search-first-preview.gif)
 
 ## Pasos siguientes {#next-steps}
 

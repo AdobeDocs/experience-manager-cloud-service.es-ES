@@ -2,10 +2,9 @@
 title: Carga de recursos al repositorio
 description: Cargue recursos a [!DNL Assets view], vea los estados de carga y resuelva problemas de carga.
 role: User
-exl-id: a85a4455-4456-48af-aee9-f05300677605
-source-git-commit: df82681338f8ca1a34df6118cbddc6642aa8d4b5
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '825'
 ht-degree: 91%
 
 ---
@@ -82,7 +81,7 @@ Si intenta cargar recursos duplicados, estos no se cargarán hasta que confirme 
 
 >[!TIP]
 >
->Puede cargar recursos en el repositorio de DAM directamente desde sus aplicaciones de escritorio de [!DNL Creative Cloud]. 
+>Puede cargar recursos en el repositorio de DAM directamente desde su [!DNL Creative Cloud] aplicaciones de escritorio.
 <!--TBD
 See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
 -->
@@ -103,7 +102,7 @@ Los usuarios pueden eliminar recursos o carpetas individuales que ya no sean nec
 
 * [Vea un vídeo para cargar recursos en la vista Recursos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html?lang=es)
 
-* Proporcione comentarios sobre productos usando [!UICONTROL Comentarios] opción disponible en la interfaz de usuario de la vista Recursos
+* Realice comentarios del producto mediante la opción [!UICONTROL Comentarios] disponible en la interfaz de usuario de la vista Recursos
 
 * Proporcione comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar una incidencia] ![crear una incidencia de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha
 

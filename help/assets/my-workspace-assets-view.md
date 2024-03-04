@@ -1,8 +1,7 @@
 ---
 title: Mi espacio de trabajo para la vista Recursos
 description: Mi espacio de trabajo es una página que proporciona módulos visuales personalizables para acceder fácilmente a las áreas clave de la interfaz de usuario de Assets y a la información más relevante para el usuario.
-exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
-source-git-commit: 2500322c5565314e84ee7989399b9130f5cd6f74
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 84%
