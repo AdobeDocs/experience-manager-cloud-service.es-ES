@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: 74254387de1761f25127180787453e681181d97a
 workflow-type: tm+mt
 source-wordcount: '3166'
 ht-degree: 5%
@@ -149,7 +149,7 @@ Puede editar la siguiente configuración de Dynamic Media seleccionando la **[!U
 
 * **[!UICONTROL Modificadores de visor]** - Los modificadores de visualizador toman la forma de par nombre=valor con un delimitador &amp; y le permiten cambiar visualizadores como se describe en la Guía de referencia de visualizadores. Un ejemplo de modificador de visor es `posterimage=img.jpg&caption=text.vtt,1` que establece una imagen diferente para la miniatura de vídeo y asocia un archivo de subtítulo o rótulo cerrado con el vídeo.
 
-* **[!UICONTROL Ajuste preestablecido de imagen]** - Seleccione un ajuste preestablecido de imagen existente en la lista desplegable. Si el ajuste preestablecido de imagen que está buscando no está visible, debe hacerlo visible. Consulte Administración de ajustes preestablecidos de imagen. No puede seleccionar un ajuste preestablecido de visualizador si utiliza un ajuste preestablecido de imagen y a la inversa.
+* **[!UICONTROL Ajuste preestablecido de imagen]** - Seleccione un ajuste preestablecido de imagen existente en la lista desplegable. Si el ajuste preestablecido de imagen que está buscando no está visible, debe hacerlo visible. Consulte [Administrar ajustes preestablecidos de imagen](/help/assets/dynamic-media/managing-image-presets.md). No puede seleccionar un ajuste preestablecido de visualizador si utiliza un ajuste preestablecido de imagen y a la inversa.
 
   Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
