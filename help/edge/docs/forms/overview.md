@@ -4,10 +4,10 @@ description: El servicio de entrega perimetral de AEM Forms está diseñado para
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+source-git-commit: d63d0f1152d0a23623c197924a44bc6b1e69fb42
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 1%
+source-wordcount: '1120'
+ht-degree: 0%
 
 ---
 
@@ -89,9 +89,36 @@ Hay algunas funciones avanzadas disponibles bajo petición:
 * **Enviar notificación por correo electrónico al enviar el formulario**: elimine la molestia de los seguimientos manuales y garantice una comunicación oportuna con nuestra automatización de correo electrónico integrada para los envíos de formularios. Esta solución integrada le permite notificar sin esfuerzo a las partes relevantes, incluido el envío de datos de formulario, cada vez que alguien rellene un formulario en su sitio web. No necesita configuraciones complejas ni herramientas adicionales: está listo para usar de forma predeterminada.
 
 
-## Flujo de trabajo
+## Bloques de Forms disponibles
 
-![Ecosistema de creación basado en documentos](/help/edge/assets/document-based-authoring-workflow.png)
+El servicio de entrega perimetral de AEM Forms ofrece dos tipos de bloques de formularios para satisfacer diferentes necesidades:
+
+* **Bloque básico de Forms**: Esta es una opción versátil adecuada para crear formularios simples con funcionalidades esenciales. Permite integrar varios tipos de entrada, como campos de texto, menús desplegables y botones de opción, lo que permite recopilar datos de usuario de forma eficaz.
+
+* **Bloque de Forms adaptable**: este bloque avanzado desbloquea funciones adicionales más allá del bloque básico de Forms, lo que le permite crear formularios más complejos e interactivos. A continuación se muestra un desglose de sus características principales:
+
+   * Reglas: defina acciones basadas en lógica dentro de los formularios. Puede utilizar reglas para mostrar u ocultar condicionalmente secciones de formulario, rellenar previamente campos basados en los datos introducidos por el usuario y realizar varias validaciones para garantizar la integridad de los datos.
+
+   * Extensibilidad del lado del servidor: amplíe las funcionalidades de los formularios integrándolas con lógica del lado del servidor. Esto le permite realizar cálculos complejos, interactuar con sistemas externos y automatizar tareas específicas en función de las acciones del usuario dentro del formulario.
+
+   * AEM Cross Walk: Optimice los flujos de trabajo y la administración de datos: Aproveche la potencia de los flujos de trabajo para lo siguiente
+
+      * AEM Diseñe formularios fáciles de usar con editores de formularios de la.
+
+      * Genere un &quot;documento de registro&quot; para un archivado seguro y a prueba de manipulaciones de los datos enviados.
+
+      * Facilite la firma electrónica con Adobe Sign para disfrutar de una experiencia de firma sencilla y segura.
+
+      * AEM Automatice los procesos empresariales a través de flujos de trabajo de, activando acciones basadas en los envíos de formularios.
+
+      * Se integra sin esfuerzo con varias fuentes de datos, lo que permite un flujo de datos e intercambio fluidos.
+
+  El uso del bloque de Forms adaptable requiere una licencia adicional.
+
+### Elegir el bloque de Forms adecuado
+
+La selección entre los bloques Básico y Adaptable de Forms depende de sus requisitos específicos. Si necesita una solución directa para recopilar información básica del usuario, el bloque básico de Forms es la solución perfecta. AEM Sin embargo, si los formularios requieren una lógica intrincada, manipulación de datos, integración con sistemas externos o flujos de trabajo optimizados que utilicen funciones de, y **tiene la licencia necesaria**, el bloque de Forms adaptable proporciona la potencia y flexibilidad necesarias para lograr sus objetivos.
+
 
 ## Empezar a crear formularios
 
