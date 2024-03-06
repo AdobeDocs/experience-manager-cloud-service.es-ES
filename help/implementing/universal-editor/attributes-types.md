@@ -2,7 +2,7 @@
 title: Atributos y tipos de elementos
 description: Obtenga información sobre los atributos de datos y los tipos de elementos que requiere el Editor universal.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 9d88d9b6d3315f34ca6819820b4b4306ba901390
+source-git-commit: 5ddd4bbcce10c5cda97e3ea3f6750b209b5743f0
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 75%
@@ -32,7 +32,7 @@ Para que el editor universal pueda editar una aplicación, debe instrumentarse c
 | `data-aue-prop` | Para el atributo del recurso, consulte la sección [Instrumentación de la página del documento Introducción al editor universal en AEM](getting-started.md#instrument-thepage) |
 | `data-aue-type` | [Tipo del elemento editable](#item-types) (por ejemplo, texto, imagen y referencia) |
 | `data-aue-filter` | Define qué referencias se pueden utilizar |
-| `data-aue-label` | Define una etiqueta personalizada para un elemento seleccionable que se muestra en el editor. <br>Si `itemmodel` está configurado, la etiqueta se recupera mediante el modelo |
+| `data-aue-label` | Define una etiqueta personalizada para un elemento seleccionable que se muestra en el editor. <br>Si `data-aue-model` está configurado, la etiqueta se recupera mediante el modelo |
 | `data-aue-model` | Define un modelo que se usa para la edición basada en formularios en el carril de propiedades |
 | `data-aue-behavior` | Define el [comportamiento de una instrumentación,](#behaviors) por ejemplo, el texto o la imagen independientes también pueden imitar un componente para hacerlo movible o eliminable |
 
