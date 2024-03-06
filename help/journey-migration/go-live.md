@@ -2,9 +2,9 @@
 title: Go-Live
 description: Aprenda a realizar la migración una vez que el código y el contenido estén listos para la nube
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 8baea95d57ce1e92e0e7083c161c9fee395fcb8e
 workflow-type: tm+mt
-source-wordcount: '1721'
+source-wordcount: '1771'
 ht-degree: 4%
 
 ---
@@ -156,6 +156,9 @@ Revise esta lista de actividades para asegurarse de que la migración se realiza
    * Los entornos de desarrollo no tienen el mismo tamaño que los de fase y producción.
 * Pase el ratón por encima y asegúrese de que el go-live real se realiza sin ninguna implementación nueva o actualización de contenido.
 * Crear perfiles de notificación de usuario Admin Console. Consulte [Perfiles de notificación](/help/journey-onboarding/notification-profiles.md)
+* Considere la posibilidad de configurar reglas de filtro de tráfico para controlar qué tráfico no debe permitirse en el sitio web.
+   * Las reglas de filtro de tráfico de límite de velocidad pueden ser una herramienta eficaz contra ataques DDoS. Una categoría especial de reglas de filtro de tráfico, denominadas reglas WAF, requieren una licencia independiente.
+   * Consulte la documentación para ver algunos [reglas de inicio sugeridas](/help/security/traffic-filter-rules-including-waf.md#recommended-starter-rules).
 
 Siempre puede hacer referencia a la lista en caso de que necesite volver a calibrar las tareas mientras realiza la migración.
 
