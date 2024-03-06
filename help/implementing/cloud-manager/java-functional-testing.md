@@ -2,10 +2,10 @@
 title: Pruebas funcionales Java&trade;
 description: Obtenga información sobre cómo escribir las pruebas funcionales Javaamp;amp;trade; para AEM as a Cloud Service
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
-workflow-type: ht
-source-wordcount: '844'
-ht-degree: 100%
+source-git-commit: e463979df1f705283f29d954f9869d85f0a96465
+workflow-type: tm+mt
+source-wordcount: '877'
+ht-degree: 92%
 
 ---
 
@@ -111,6 +111,25 @@ Consulte el [`aem-testing-clients`repositorio de GitHub](https://github.com/adob
 >
 > Si necesita más recursos, cree un caso de uso con el Servicio de atención al cliente y descríbalo. El equipo de Adobe revisará su solicitud y proporcionará la asistencia adecuada.
 
+#### Dependencias
+
+* aem-cloud-testing-customers:
+
+Los próximos cambios en la infraestructura en contenedores utilizada para ejecutar pruebas funcionales requerirán la biblioteca [aem-cloud-testing-customers](https://github.com/adobe/aem-testing-clients) se utiliza en la prueba funcional personalizada para actualizarse al menos a la versión **1.2.1**
+Asegúrese de que la dependencia de en `it.tests/pom.xml` se ha actualizado.
+
+```
+<dependency>
+   <groupId>com.adobe.cq</groupId>
+   <artifactId>aem-cloud-testing-clients</artifactId>
+   <version>1.2.1</version>
+</dependency>
+```
+
+>[!NOTE]
+>
+>Este cambio será necesario después del 6 de abril de 2024.
+>Si no se actualiza la biblioteca de dependencias, se producirán errores de canalización en el paso &quot;Pruebas funcionales personalizadas&quot;.
 
 ### Ejecución de pruebas locales {#local-test-execution}
 
@@ -153,3 +172,4 @@ mvn verify -Plocal \
     -Dit.publish.user=<user> \
     -Dit.publish.password=<password>
 ```
+
