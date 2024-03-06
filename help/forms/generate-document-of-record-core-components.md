@@ -3,10 +3,10 @@ title: Generación del documento de registro para los formularios adaptables
 description: Obtén información sobre cómo generar una plantilla para un documento de registro (DoR) para componentes principales de Formularios adaptables.
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
-source-wordcount: '3108'
-ht-degree: 100%
+source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
+workflow-type: tm+mt
+source-wordcount: '3131'
+ht-degree: 99%
 
 ---
 
@@ -327,6 +327,10 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
       * **Plantilla**: si elige una plantilla personalizada, busque y seleccione un XDP en su servidor [!DNL AEM Forms]. Si desea utilizar una plantilla que no esté disponible en el servidor [!DNL AEM Forms], primero debe cargar el XDP en su servidor [!DNL AEM Forms].
       * **Color de contraste**: el color en el que se muestra el texto de encabezado y las líneas de separación en el documento de registro en PDF.
       * **Familia tipográfica**: la familia de fuentes de texto del Documento de registro en PDF.
+
+        >[!NOTE]
+        >
+        > AEM Forms ofrece una variedad de fuentes integradas que se integran perfectamente con los archivos de PDF. Para ver la lista de fuentes compatibles, [haga clic aquí](/help/forms/supported-out-of-the-box-fonts.md).
 
       * **Incluir objetos de formulario que no estén enlazados al modelo de datos**: al configurar esta propiedad se incluyen campos no enlazados del formulario adaptable basado en esquemas del Documento de registro.
 

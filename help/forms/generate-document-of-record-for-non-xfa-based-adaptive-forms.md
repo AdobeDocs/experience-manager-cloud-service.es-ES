@@ -3,10 +3,10 @@ title: Cómo generar un documento de registro (DoR) para AEM Forms
 description: Obtenga información sobre cómo generar una plantilla para un documento de registro (DoR) para componentes principales de Formularios adaptables.
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
-source-wordcount: '4124'
-ht-degree: 100%
+source-git-commit: 51d72edcde18503e9e4d83eaf51e28658d9ee5e6
+workflow-type: tm+mt
+source-wordcount: '4170'
+ht-degree: 98%
 
 ---
 
@@ -345,13 +345,18 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
       * **Plantilla**: si elige una plantilla personalizada, busque y seleccione un XDP en el servidor [!DNL AEM Forms]. Si desea utilizar una plantilla que no esté ya en el servidor [!DNL AEM Forms], primero debe cargar el XDP en el servidor [!DNL AEM Forms].
       * **Color de contraste**: el color en el que se muestra el texto de encabezado y las líneas de separación en el documento de registro en PDF.
       * **Familia tipográfica**: la familia de fuentes de texto del Documento de registro en PDF.
+
+        >[!NOTE]
+        >
+        > AEM Forms ofrece una variedad de fuentes integradas que se integran perfectamente con los archivos de PDF. Para ver la lista de fuentes compatibles, [haga clic aquí](/help/forms/supported-out-of-the-box-fonts.md).
+
       * **Incluir objetos de formulario que no estén enlazados al modelo de datos**: al configurar esta propiedad se incluyen campos no enlazados del formulario adaptable basado en esquemas del Documento de registro.
       * **Excluir campos ocultos del documento de registro**: al configurar esta propiedad se identifican los campos ocultos para la exclusión del Documento de registro.
       * **Ocultar la descripción de paneles:** al configurar esta propiedad se excluye la descripción de paneles o tablas del Documento de registro. Aplicable para paneles y tablas.
 
       ![Propiedades básicas](/help/forms/assets/basicpropertiesdor.png)
 
-   1. **Propiedades del campo de formulario**:
+   2. **Propiedades del campo de formulario**:
       * **Mostrar solo los valores seleccionados para los componentes Casilla de verificación y Botón de radio**: al configurar esta propiedad solo se muestran los valores seleccionados de la casilla de verificación y el botón de radio en [!UICONTROL Documento de registro].
       * **Separador para varios valores**: puede elegir cualquier separador, como comas o saltos de línea, para mostrar varios valores.
       * **Alineación de opciones**: puede seleccionar la alineación deseada (Horizontal, Vertical o Igual que el formulario adaptable) para establecer la alineación de los campos, como la casilla de verificación o el botón de radio, que se mostrarán en [!UICONTROL Documento de registro]. De forma predeterminada, la alineación vertical está establecida para los campos de [!UICONTROL Documento de registro]. Al configurar las propiedades desde la variable [!UICONTROL Propiedades del campo de formulario] del documento, se sobrescriben las propiedades establecidas en la variable [!UICONTROL Alineación de elementos] para los campos de un formulario adaptable. En caso de que seleccione la opción [!UICONTROL Igual que el formulario adaptable], se utiliza la alineación tal y como está configurada en una instancia de autor del formulario adaptable para los campos de [!UICONTROL Documento de registro].
@@ -359,7 +364,7 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
 
       ![Propiedades del campo de formulario](/help/forms/assets/formfieldpropertiesdor.png)
 
-   1. **Propiedades de página maestra**:
+   3. **Propiedades de página maestra**:
       * **Imagen del logotipo**: puede elegir usar la imagen del logotipo en el formulario adaptable, elegir una de DAM o cargar una desde el equipo.
       * **Título del formulario**: título del documento de registro.
       * **Texto de encabezado**: texto que aparece en la sección de encabezado del Documento de registro.
@@ -476,6 +481,11 @@ Un archivo XCI ayuda a establecer varias propiedades de un documento. Forms as a
 | config/present/pdf/pdfa/conformance | Especifica el nivel de conformidad con la especificación PDF/A. |
 | config/present/pdf/version | Especifica la versión del documento PDF que se va a generar. |
 | config/present/pdf/version/map | Especifica las fuentes de reserva para el documento. |
+
+>[!NOTE]
+>
+> AEM Forms ofrece una variedad de fuentes integradas que se integran perfectamente con los archivos de PDF. Para ver la lista de fuentes compatibles, [haga clic aquí](/help/forms/supported-out-of-the-box-fonts.md).
+
 
 ### Utilizar un archivo XCI personalizado en el entorno de Forms as a Cloud Service.
 
