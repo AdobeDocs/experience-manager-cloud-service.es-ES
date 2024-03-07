@@ -8,9 +8,9 @@ activity: develop
 audience: developer
 feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ AEM AEM La creación de contenido y comercio proporciona un conjunto de herramie
 
 ## Selector de productos {#product-picker}
 
-Para utilizar el selector de productos en un componente de proyecto, un desarrollador debe agregar `commerce/gui/components/common/cifproductfield` al cuadro de diálogo de componente. Por ejemplo, use lo siguiente para cq:dialog:
+Para utilizar el selector de productos en un componente de proyecto, un desarrollador debe agregar `commerce/gui/components/common/cifproductfield` al cuadro de diálogo de componente. Por ejemplo, use lo siguiente para `cq:dialog`:
 
 ```xml
 <product jcr:primaryType="nt:unstructured"
