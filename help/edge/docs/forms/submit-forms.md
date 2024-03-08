@@ -4,17 +4,16 @@ description: Cree formularios potentes más rápido con hojas de cálculo y camp
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '971'
 ht-degree: 1%
 
 ---
 
-
 # Preparar la hoja de cálculo para aceptar datos
 
-![Ecosistema de creación basado en documentos](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 Una vez que haya [creación y previsualización del formulario](/help/edge/docs/forms/create-forms.md)Sin embargo, es hora de permitir que la hoja de cálculo correspondiente comience a recibir datos.
 
@@ -33,13 +32,21 @@ Para habilitar la hoja de cálculo:
    >
    > Si la variable `incoming` AEM La hoja de cálculo no está presente, no se envía ningún dato a la hoja de cálculo, por lo que no se envía ningún dato a la hoja de cálculo.
 
-1. Reflejar los nombres de los campos de formulario, los valores de la variable `Name` en la columna`shared-default` , a los encabezados de la hoja `incoming` hoja.
+1. En esta hoja, inserte una tabla denominada &quot;consumer_form&quot;. Seleccione el número de columnas necesarias para hacer coincidir los nombres de los campos de formulario. A continuación, en la barra de herramientas, vaya a Insertar > Tabla y haga clic en Aceptar.
 
-   Cada valor de `Name` de la columna `shared-default` hoja, excluyendo el botón de envío, sirve como encabezado en la `incoming` hoja. Por ejemplo, vea la siguiente imagen que ilustra los encabezados de un formulario de &quot;contacto&quot;:
+1. Cambie el nombre de la tabla a &quot;consumer_form&quot;. En Microsoft Excel, para cambiar el nombre de la tabla, seleccione la tabla y haga clic en Diseño de tabla.
+
+1. A continuación, agregue los nombres de los campos de formulario como encabezados de tabla. Para asegurarse de que los campos son exactamente los mismos, puede copiarlos y pegarlos desde la hoja &quot;shared-default&quot;.  En la hoja &quot;shared-default&quot;, seleccione y copie los ID de formulario enumerados en la columna &quot;Name&quot;, excepto el campo de envío.
+
+1. En la hoja &quot;entrante&quot;, seleccione Pegado especial > Transponer filas a columnas para copiar los ID de campo como encabezados de columna en esta nueva hoja. Mantenga solo los campos cuyos datos necesiten capturar otros datos se pueden ignorar.
+
+   Cada valor de `Name` de la columna `shared-default` hoja, excluyendo el botón de envío, puede servir como encabezado en la `incoming` hoja. Por ejemplo, vea la siguiente imagen que ilustra los encabezados de un formulario de &quot;contacto&quot;:
 
    ![Campos para un formulario de contacto](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-1. Utilice la barra de tareas para previsualizar la hoja.
+
+
+1. Utilice la extensión de AEM Sidekick para obtener una vista previa de las actualizaciones del formulario. La hoja ya está lista para aceptar los envíos entrantes del formulario.
 
    >[!NOTE]
    >
@@ -48,23 +55,11 @@ Para habilitar la hoja de cálculo:
 
 Una vez añadidos los nombres de campo a `incoming` , el formulario estará listo para aceptar envíos. Puede obtener una vista previa del formulario y enviar datos a la hoja mediante él.
 
+Una vez configurada la hoja para recibir datos, puede [previsualizar el formulario mediante el bloque de formulario adaptable](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) o [usar solicitudes de POST](#use-admin-apis-to-send-data-to-your-sheet) para comenzar a enviar datos a la hoja.
 
-
-También observará los siguientes cambios en la hoja de cálculo:
-
-Se agrega una hoja denominada &quot;Slack&quot; al libro de Excel o a la hoja de Google. En esta hoja, puede configurar las notificaciones automáticas para un canal de Slack designado cada vez que se incorporen nuevos datos en la hoja de cálculo. AEM AEM En la actualidad, el servicio admite notificaciones únicamente a la organización Slack de ingeniería de la organización de y a la organización de soporte Enterprise de Adobe.
-
-1. Para configurar las notificaciones de Slack, introduzca el &quot;teamId&quot; del espacio de trabajo del Slack y el &quot;nombre del canal&quot; o &quot;ID&quot;. También puede solicitar al bot de Slack (con el comando debug) los parámetros &quot;teamId&quot; y &quot;channel ID&quot;. Es preferible utilizar el &quot;ID de canal&quot; en lugar del &quot;nombre de canal&quot;, ya que sobrevive a los cambios de nombre de canal.
-
-   >[!NOTE]
-   >
-   > Los formularios más antiguos no tenían la columna &quot;teamId&quot;. El &quot;teamId&quot; se incluía en la columna del canal, separado por &quot;#&quot; o &quot;/&quot;.
-
-1. Introduzca el título que desee y en los campos introduzca los nombres de los campos que desea ver en la notificación al Slack. Cada encabezado debe separarse con una coma (por ejemplo, nombre, correo electrónico).
-
-   >[!WARNING]
-   >
-   >  Las hojas &quot;compartidas por defecto&quot; nunca deben contener información personal identificable o datos confidenciales que no le resulte cómodo tener acceso público.
+>[!WARNING]
+>
+>  Las hojas &quot;compartidas por defecto&quot; nunca deben contener información personal identificable o datos confidenciales que no le resulte cómodo tener acceso público.
 
 
 ## (Opcional) Utilice las API de administrador para permitir que una hoja de cálculo acepte datos
@@ -155,6 +150,11 @@ Para utilizar las API de administrador para permitir que una hoja de cálculo ac
 
    El formulario ahora está habilitado para aceptar datos. También observará los siguientes cambios en la hoja de cálculo:
 
+## Automático Cambia a la hoja una vez que está habilitada para aceptar datos.
+
+
+Una vez que la hoja está configurada para recibir datos, se observan los siguientes cambios en la hoja de cálculo:
+
 Se agrega una hoja denominada &quot;Slack&quot; al libro de Excel o a la hoja de Google. En esta hoja, puede configurar las notificaciones automáticas para un canal de Slack designado cada vez que se incorporen nuevos datos en la hoja de cálculo. AEM AEM En la actualidad, el servicio admite notificaciones únicamente a la organización Slack de ingeniería de la organización de y a la organización de soporte Enterprise de Adobe.
 
 1. Para configurar las notificaciones de Slack, introduzca el &quot;teamId&quot; del espacio de trabajo del Slack y el &quot;nombre del canal&quot; o &quot;ID&quot;. También puede solicitar al bot de Slack (con el comando debug) los parámetros &quot;teamId&quot; y &quot;channel ID&quot;. Es preferible utilizar el &quot;ID de canal&quot; en lugar del &quot;nombre de canal&quot;, ya que sobrevive a los cambios de nombre de canal.
@@ -165,12 +165,10 @@ Se agrega una hoja denominada &quot;Slack&quot; al libro de Excel o a la hoja de
 
 1. Introduzca el título que desee y en los campos introduzca los nombres de los campos que desea ver en la notificación al Slack. Cada encabezado debe separarse con una coma (por ejemplo, nombre, correo electrónico).
 
+   >[!WARNING]
+   >
+   >  Las hojas &quot;compartidas por defecto&quot; nunca deben contener información personal identificable o datos confidenciales que no le resulte cómodo tener acceso público.
 
-La hoja ahora está configurada para recibir datos, puede [previsualizar el formulario mediante el bloque de formulario adaptable](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) o [usar solicitudes de POST](#use-admin-apis-to-send-data-to-your-sheet) para comenzar a enviar datos a la hoja.
-
->[!WARNING]
->
->  Las hojas &quot;compartidas por defecto&quot; nunca deben contener información personal identificable o datos confidenciales que no le resulte cómodo tener acceso público.
 
 ## Enviar datos a la hoja {#send-data-to-your-sheet}
 
@@ -288,10 +286,3 @@ Existen varias formas de dar formato a los datos del formulario en el cuerpo del
 
 A continuación, puede personalizar el mensaje de agradecimiento, [configurar una página de agradecimiento](/help/edge/docs/forms/thank-you-page-form.md), o [establecer redirecciones](/help/edge/docs/forms/thank-you-page-form.md).
 
-## Más información
-
-* [Creación y previsualización de un formulario](/help/edge/docs/forms/create-forms.md)
-* [Habilitar formulario para enviar datos](/help/edge/docs/forms/submit-forms.md)
-* [Publicar un formulario en la página de Sites](/help/edge/docs/forms/publish-forms.md)
-* [Agregar validaciones a campos de formulario](/help/edge/docs/forms/validate-forms.md)
-* [Cambiar temáticas y estilo de formulario](/help/edge/docs/forms/style-theme-forms.md)

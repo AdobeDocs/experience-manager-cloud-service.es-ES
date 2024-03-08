@@ -4,13 +4,13 @@ description: Cree formularios potentes más rápido con hojas de cálculo y camp
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: 16e1d42a-42d0-4335-ba81-feedea7ed7d7
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
-
 
 # Agregar validaciones a campos de formulario
 
@@ -29,10 +29,4 @@ URL: este tipo de campo valida los datos introducidos por el usuario con un form
 Tel: Este tipo de campo está diseñado específicamente para números de teléfono y puede almacenar en déclencheur la validación en función de formatos de país específicos (no admitido universalmente).
 
 
-## Más información
 
-* [Creación y previsualización de un formulario](/help/edge/docs/forms/create-forms.md)
-* [Habilitar formulario para enviar datos](/help/edge/docs/forms/submit-forms.md)
-* [Publicar un formulario en la página de Sites](/help/edge/docs/forms/publish-forms.md)
-* [Agregar validaciones a campos de formulario](/help/edge/docs/forms/validate-forms.md)
-* [Cambiar temáticas y estilo de formulario](/help/edge/docs/forms/style-theme-forms.md)

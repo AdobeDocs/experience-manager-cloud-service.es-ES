@@ -3,7 +3,7 @@ title: Almacenamiento en caché en AEM as a Cloud Service
 description: AEM Obtenga información acerca de los conceptos básicos del almacenamiento en caché en as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 28537409c5974ff8ade30207f16cc62b45c47616
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '2894'
 ht-degree: 1%
@@ -135,7 +135,7 @@ AEM La capa establece encabezados de caché en función de si ya se ha estableci
 |------------------------------|---------------|------------------------------------------------|
 | No | público | Cache-Control: public, max-age=600, inmutable |
 | No | autenticado | Cache-Control: private, max-age=600, inmutable |
-| Sí | cualquiera | inalterable |
+| Sí | cualquiera | sin modificar |
 
 Aunque no se recomienda, es posible cambiar el nuevo comportamiento predeterminado para seguir el comportamiento anterior (ID de programa iguales o inferiores a 65000) configurando la variable de entorno de Cloud Manager `AEM_BLOB_ENABLE_CACHING_HEADERS` a false.
 
@@ -434,7 +434,7 @@ public class InvalidatedHandler implements EventHandler {
 
         String distributionType = (String) event.getProperty(DISTRIBUTION_TYPE);
 
-        if (INVALIDATE.name().equals(distributionType)) {
+        if (INVALIDATE.name().equals (distributionType)) {
             boolean isLeader = discoveryService.getTopology().getLocalInstance().isLeader();
             // process the OSGi event on the leader author instance
             if (isLeader) {
@@ -472,11 +472,11 @@ El agente de vaciado suele activarse mediante código personalizado basado en ev
 
 ```
 String[] paths = …
-ReplicationOptions options = new ReplicationOptions();
-options.setSynchronous(true);
+ReplicationOptions options = new ReplicationOptions ();
+options.setSynchronous (true);
 options.setFilter( new AgentFilter {
   public boolean isIncluded (Agent agent) {
-   return agent.getId().equals("flush");
+   return agent.getId().equals ("flush");
   }
 });
 

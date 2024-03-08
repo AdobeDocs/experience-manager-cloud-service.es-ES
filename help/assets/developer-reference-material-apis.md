@@ -5,7 +5,7 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 5acbd7a56f18ee4c3d8b8f04ab17ad44fe6f0647
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '1931'
 ht-degree: 7%
@@ -76,7 +76,7 @@ Entrada [!DNL Experience Manager] as a [!DNL Cloud Service], puede cargar direct
 
 >[!IMPORTANT]
 >
-Ejecute los pasos anteriores en una aplicación externa y no dentro de [!DNL Experience Manager] JVM.
+>Ejecute los pasos anteriores en una aplicación externa y no dentro de [!DNL Experience Manager] JVM.
 
 El método ofrece una administración escalable y más eficaz de las cargas de recursos. Las diferencias con respecto a [!DNL Experience Manager] 6.5 son:
 
@@ -85,11 +85,11 @@ El método ofrece una administración escalable y más eficaz de las cargas de r
 
 >[!NOTE]
 >
-Consulte el código de cliente para implementar este enfoque en el código abierto [biblioteca de carga de aem](https://github.com/adobe/aem-upload).
+>Consulte el código de cliente para implementar este enfoque en el código abierto [biblioteca de carga de aem](https://github.com/adobe/aem-upload).
 >
-[!IMPORTANT]
+>[!IMPORTANT]
 >
-En determinadas circunstancias, es posible que los cambios no se propaguen completamente entre solicitudes y Experience Manager debido a la naturaleza finalmente coherente del almacenamiento en Cloud Service. Esto provoca que se produzcan respuestas 404 para iniciar o completar llamadas de carga debido a que no se propagan las creaciones de carpetas necesarias. Los clientes deben esperar respuestas 404 y gestionarlas implementando un reintento con una estrategia de back-off.
+>En determinadas circunstancias, es posible que los cambios no se propaguen completamente entre solicitudes y Experience Manager debido a la naturaleza finalmente coherente del almacenamiento en Cloud Service. Esto provoca que se produzcan respuestas 404 para iniciar o completar llamadas de carga debido a que no se propagan las creaciones de carpetas necesarias. Los clientes deben esperar respuestas 404 y gestionarlas implementando un reintento con una estrategia de back-off.
 
 ### Iniciar carga {#initiate-upload}
 
@@ -144,7 +144,7 @@ Si el tamaño del binario es menor o igual que `maxPartSize`, en su lugar, puede
 
 Los nodos perimetrales de CDN ayudan a acelerar la carga solicitada de binarios.
 
-La forma más sencilla de lograrlo es utilizar el valor de `maxPartSize` como tamaño de la pieza. El contrato de API garantiza que haya suficientes URI de carga para cargar el binario si utiliza este valor como tamaño de parte. Para ello, divida el binario en partes de tamaño `maxPartSize`, utilizando un URI para cada parte, en orden. La parte final puede ser de cualquier tamaño inferior o igual a `maxPartSize`. Por ejemplo, supongamos que el tamaño total del binario es de 20 000 bytes, la variable `minPartSize` tiene 5000 bytes, `maxPartSize` tiene 8000 bytes y el número de URI de carga es 5. Siga estos pasos:
+La forma más sencilla de lograrlo es utilizar el valor de `maxPartSize` como tamaño de la pieza. El contrato de API garantiza que haya suficientes URI de carga para cargar el binario si utiliza este valor como tamaño de parte. Para ello, divida el binario en partes de tamaño `maxPartSize`, utilizando un URI para cada parte, en orden. La parte final puede ser de cualquier tamaño inferior o igual a `maxPartSize`. Por ejemplo, supongamos que el tamaño total del binario es de 20 000 bytes, la variable `minPartSize` tiene 5000 bytes, `maxPartSize` tiene 8000 bytes y el número de URI de carga es 5. Ejecute los siguientes pasos:
 
 * Cargue los primeros 8000 bytes del binario con el primer URI de carga.
 * Cargue los segundos 8000 bytes del binario mediante el segundo URI de carga.
@@ -159,7 +159,7 @@ Si la carga se realiza correctamente, el servidor responde a cada solicitud con 
 
 >[!NOTE]
 >
-Para obtener más información sobre el algoritmo de carga, consulte la [documentación oficial de funciones](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) y [Documentación de API](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) en el proyecto Apache Jackrabbit Oak.
+>Para obtener más información sobre el algoritmo de carga, consulte la [documentación oficial de funciones](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) y [Documentación de API](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) en el proyecto Apache Jackrabbit Oak.
 
 ### Carga completa {#complete-upload}
 
@@ -179,7 +179,7 @@ Una vez cargadas todas las partes de un archivo binario, envíe una solicitud de
 
 >[!NOTE]
 >
-Si el recurso existe y ninguno `createVersion` ni `replace` se especifica, entonces [!DNL Experience Manager] actualiza la versión actual del recurso con el nuevo binario.
+>Si el recurso existe y ninguno `createVersion` ni `replace` se especifica, entonces [!DNL Experience Manager] actualiza la versión actual del recurso con el nuevo binario.
 
 Al igual que el proceso de inicio, los datos de solicitud completos pueden contener información de más de un archivo.
 
@@ -215,7 +215,7 @@ function debug() {
 }
 
 # Function to check if a file exists
-function file_exists() {
+function file_exists () {
     [ -e "$1" ]
 }
 
@@ -431,7 +431,7 @@ Para obtener más información sobre los algoritmos de carga o para crear sus pr
 
 >[!NOTE]
 >
-La biblioteca de carga de aem y la herramienta de línea de comandos utilizan la variable [biblioteca node-httptransfer](https://github.com/adobe/node-httptransfer/)
+>La biblioteca de carga de aem y la herramienta de línea de comandos utilizan la variable [biblioteca node-httptransfer](https://github.com/adobe/node-httptransfer/)
 
 ### API de carga de recursos obsoletas {#deprecated-asset-upload-api}
 
@@ -444,9 +444,9 @@ El nuevo método de carga solo es compatible para [!DNL Adobe Experience Manager
 
 >[!MORELIKETHIS]
 >
-* [Biblioteca de código abierto aem-upload](https://github.com/adobe/aem-upload).
-* [Herramienta de línea de comandos de código abierto](https://github.com/adobe/aio-cli-plugin-aem).
-* [Documentación de Apache Jackrabbit Oak para carga directa](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
+>* [Biblioteca de código abierto aem-upload](https://github.com/adobe/aem-upload).
+>* [Herramienta de línea de comandos de código abierto](https://github.com/adobe/aio-cli-plugin-aem).
+>* [Documentación de Apache Jackrabbit Oak para carga directa](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
 
 ## Flujos de trabajo de procesamiento de recursos y posprocesamiento {#post-processing-workflows}
 
@@ -551,4 +551,4 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!MORELIKETHIS]
 >
-* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+>* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).

@@ -2,9 +2,9 @@
 title: Prueba de calidad del código
 description: Descubra cómo funcionan las pruebas de calidad del código de las canalizaciones y cómo pueden mejorar la calidad de las implementaciones.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1173'
 ht-degree: 96%
 
 ---
@@ -87,7 +87,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 SonarQube generará una vulnerabilidad de bloqueo. Pero después de revisar el código, reconoce que no se trata de una vulnerabilidad y puede anotar el código con el ID de regla adecuado.
 
 ```java
-@SuppressWarnings("squid:S2068")
+@SuppressWarnings ("squid:S2068")
 @Property(label = "Service Password")
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```

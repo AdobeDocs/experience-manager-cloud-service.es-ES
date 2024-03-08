@@ -2,9 +2,9 @@
 title: Reglas de calidad del código personalizadas
 description: Esta página describe las reglas de calidad del código personalizadas ejecutadas por Cloud Manager como parte de las pruebas de calidad del código. Se basan en las prácticas recomendadas de ingeniería de Adobe Experience Manager.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '4095'
+source-wordcount: '4167'
 ht-degree: 87%
 
 ---
@@ -101,7 +101,7 @@ El uso de una cadena de formato de una fuente externa (como un parámetro de sol
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
   String messageFormat = request.getParameter("messageFormat");
   request.getResource().getValueMap().put("some property", String.format(messageFormat, "some text"));
-  response.sendStatus(HttpServletResponse.SC_OK);
+  response.sendStatus (HttpServletResponse.SC_OK);
 }
 ```
 
@@ -120,7 +120,7 @@ Al ejecutar solicitudes HTTP desde la aplicación de Experience Manager, es esen
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
  
-public void dontDoThis() {
+public void dontDoThis () {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   HttpClient httpClient = builder.build();
 
@@ -149,7 +149,7 @@ public void dontDoThisEither() {
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
  
-public void doThis() {
+public void doThis () {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   RequestConfig requestConfig = RequestConfig.custom()
     .setConnectTimeout(5000)
@@ -162,7 +162,7 @@ public void doThis() {
   // do something with the client
 }
 
-public void orDoThis() {
+public void orDoThis () {
   URL url = new URL("http://www.google.com");
   URLConnection urlConnection = url.openConnection();
   urlConnection.setConnectTimeout(5000);
@@ -194,7 +194,7 @@ Una idea errónea relativamente frecuente es que los objetos `ResourceResolver` 
 #### Código no conforme {#non-compliant-code-4}
 
 ```java
-public void dontDoThis(Session session) throws Exception {
+public void dontDoThis (Session session) throws Exception {
   ResourceResolver resolver = factory.getResourceResolver(Collections.singletonMap("user.jcr.session", (Object)session));
   // do some stuff with the resolver
 }
@@ -203,7 +203,7 @@ public void dontDoThis(Session session) throws Exception {
 #### Código conforme {#compliant-code-2}
 
 ```java
-public void doThis(Session session) throws Exception {
+public void doThis (Session session) throws Exception {
   ResourceResolver resolver = null;
   try {
     resolver = factory.getResourceResolver(Collections.singletonMap("user.jcr.session", (Object)session));
@@ -215,7 +215,7 @@ public void doThis(Session session) throws Exception {
   }
 }
 
-public void orDoThis(Session session) throws Exception {
+public void orDoThis (Session session) throws Exception {
   try (ResourceResolver resolver = factory.getResourceResolver(Collections.singletonMap("user.jcr.session", (Object) session))){
     // do something with the resolver
   }
@@ -254,7 +254,7 @@ En general, una excepción debe registrarse exactamente una vez. El registro de 
 #### Código no conforme {#non-compliant-code-6}
 
 ```java
-public void dontDoThis() throws Exception {
+public void dontDoThis () throws Exception {
   try {
     someOperation();
   } catch (Exception e) {
@@ -267,7 +267,7 @@ public void dontDoThis() throws Exception {
 #### Código conforme {#compliant-code-3}
 
 ```java
-public void doThis() {
+public void doThis () {
   try {
     someOperation();
   } catch (Exception e) {
@@ -275,7 +275,7 @@ public void doThis() {
   }
 }
 
-public void orDoThis() throws MyCustomException {
+public void orDoThis () throws MyCustomException {
   try {
     someOperation();
   } catch (Exception e) {
@@ -296,7 +296,7 @@ Otro patrón común que se debe evitar es registrar un mensaje y luego iniciar i
 #### Código no conforme {#non-compliant-code-7}
 
 ```java
-public void dontDoThis() throws Exception {
+public void dontDoThis () throws Exception {
   logger.error("something went wrong");
   throw new RuntimeException("something went wrong");
 }
@@ -305,7 +305,7 @@ public void dontDoThis() throws Exception {
 #### Código conforme {#compliant-code-4}
 
 ```java
-public void doThis() throws Exception {
+public void doThis () throws Exception {
   throw new RuntimeException("something went wrong");
 }
 ```
@@ -350,7 +350,7 @@ Como práctica recomendada, los mensajes de registro deben proporcionar informac
 #### Código no conforme {#non-compliant-code-9}
 
 ```java
-public void dontDoThis() {
+public void dontDoThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -362,7 +362,7 @@ public void dontDoThis() {
 #### Código conforme {#compliant-code-6}
 
 ```java
-public void doThis() {
+public void doThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -383,7 +383,7 @@ Como sugiere el nombre, las excepciones de Java™ siempre deben usarse en circu
 #### Código no conforme {#non-compliant-code-10}
 
 ```java
-public void dontDoThis() {
+public void dontDoThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -395,7 +395,7 @@ public void dontDoThis() {
 #### Código conforme {#compliant-code-7}
 
 ```java
-public void doThis() {
+public void doThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -416,7 +416,7 @@ Como se ha mencionado, el contexto es fundamental para comprender los mensajes d
 #### Código no conforme {#non-compliant-code-11}
 
 ```java
-public void dontDoThis() {
+public void dontDoThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -428,7 +428,7 @@ public void dontDoThis() {
 #### Código conforme {#compliant-code-8}
 
 ```java
-public void doThis() {
+public void doThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -449,7 +449,7 @@ El inicio de sesión de Experience Manager siempre se debe realizar mediante el 
 #### Código no conforme {#non-compliant-code-12}
 
 ```java
-public void dontDoThis() {
+public void dontDoThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -461,7 +461,7 @@ public void dontDoThis() {
 #### Código conforme {#compliant-code-9}
 
 ```java
-public void doThis() {
+public void doThis () {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -482,7 +482,7 @@ En general, las rutas que comienzan por `/libs` y `/apps` no deben estar codific
 #### Código no conforme {#non-compliant-code-13}
 
 ```java
-public boolean dontDoThis(Resource resource) {
+public boolean dontDoThis (Resource resource) {
   return resource.isResourceType("/libs/foundation/components/text");
 }
 ```
@@ -490,7 +490,7 @@ public boolean dontDoThis(Resource resource) {
 #### Código conforme {#compliant-code-10}
 
 ```java
-public void doThis(Resource resource) {
+public void doThis (Resource resource) {
   return resource.isResourceType("foundation/components/text");
 }
 ```
@@ -986,7 +986,7 @@ Experience Manager as a Cloud Service prohíbe que las definiciones de índice d
 * **Gravedad**: Menor
 * **Desde**: Versión 2021.2.0
 
-Experience Manager as a Cloud Service prohíbe que las definiciones de índice de búsqueda personalizadas (es decir, los nodos de tipo `oak:QueryIndexDefinition`) contengan una propiedad denominada `reindex`. La indexación que utiliza esta propiedad debe actualizarse antes de la migración a Experience Manager as a Cloud Service. Consulte el documento [Búsqueda de contenido e indexación](/help/operations/indexing.md#how-to-use) para obtener más información.
+Experience Manager as a Cloud Service prohíbe que las definiciones de índice de búsqueda personalizadas (es decir, los nodos de tipo `oak:QueryIndexDefinition`) contengan una propiedad denominada `reindex`. La indexación con esta propiedad debe actualizarse antes de la migración al Experience Manager as a Cloud Service. Consulte el documento [Búsqueda de contenido e indexación](/help/operations/indexing.md#how-to-use) para obtener más información.
 
 ### Los nodos lucene de recursos DAM personalizados no deben especificar queryPaths {#oakpal-damAssetLucene-queryPaths}
 

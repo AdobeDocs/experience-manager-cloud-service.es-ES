@@ -1,8 +1,8 @@
 ---
-source-git-commit: 45b263651f6139b1c7f83ff3485186b272ba1a4f
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 81%
+source-wordcount: '331'
+ht-degree: 75%
 
 ---
 # Fragmentos de código {#snippets}
@@ -55,8 +55,17 @@ ht-degree: 81%
 * [Enviar a Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Enviar a Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Conectar el formulario adaptable a la aplicación de Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
-* [Conectar un formulario adaptable a OData de Microsoft® Dynamics](/help/forms/ms-dynamics-odata-configuration.md)
+* [Conectar un formulario adaptable a Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
 
 ## AEM Creación de informes con Edge Delivery Services Acceso anticipado {#aem-authoring-edge-early-access}
 
 [!BADGE TECNOLOGÍA DE ACCESO ANTICIPADO: Infórmenos sobre esta función en los laboratorios de AEM Sites de su canal de Slack.]{type=Informative url="/help/edge/docs/slack.md" tooltip="AEM La creación de informes con Edge Delivery Services es una tecnología de acceso anticipado."}
+
+## Consulte también {#see-also-forms-eds}
+
+* [Componentes de formulario](/help/edge/docs/forms/form-components.md)
+* [Creación y previsualización de un formulario](/help/edge/docs/forms/create-forms.md)
+* [Habilitar formulario para enviar datos](/help/edge/docs/forms/submit-forms.md)
+* [Publicar un formulario en la página de Sites](/help/edge/docs/forms/publish-forms.md)
+* [Agregar validaciones a campos de formulario](/help/edge/docs/forms/validate-forms.md)
+* [Cambiar temáticas y estilo de formulario](/help/edge/docs/forms/style-theme-forms.md)

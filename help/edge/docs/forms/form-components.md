@@ -4,17 +4,17 @@ description: Este documento proporciona información general sobre los component
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: 7d087d41-9313-482a-a905-8955b0999781
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '964'
 ht-degree: 3%
 
 ---
 
-
 # Componentes y propiedades de formulario: servicio de entrega perimetral de AEM Forms
 
-El servicio de envío perimetral de AEM Forms le permite crear formularios interactivos y de fácil manejo con varios componentes. Estos componentes se adaptan a diferentes tipos de recopilación de datos y se pueden personalizar fácilmente para adaptarlos a sus necesidades específicas.
+Los servicios de envío perimetral de AEM Forms le permiten crear formularios interactivos y fáciles de usar utilizando varios componentes. Estos componentes se adaptan a diferentes tipos de recopilación de datos y se pueden personalizar fácilmente para adaptarlos a sus necesidades específicas.
 
 
 ![Hoja de cálculo de ejemplo con algunos componentes y propiedades](/help/edge/assets/sample-form-in-spreadsheet.png)

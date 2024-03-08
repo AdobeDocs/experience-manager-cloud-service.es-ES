@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 0d5f95cc2e7378f09c8f6c4bc3858e7b42c07924
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '9350'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -567,7 +567,7 @@ Al mismo tiempo que crea un caso de Soporte de Adobe para tener DASH habilitado 
 
 ## Acerca de la compatibilidad con subtítulos múltiples y pistas de audio múltiple para vídeos en Dynamic Media{#about-msma}
 
-Con la capacidad de pistas de audio y subtítulos múltiples en Dynamic Media, puede añadir fácilmente varios subtítulos y pistas de audio a un vídeo principal. Esta capacidad significa que los vídeos son accesibles para toda la audiencia global. Puede personalizar un solo vídeo principal publicado a una audiencia global en varios idiomas y adherirse a las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
+Con la capacidad de pistas de audio y subtítulos múltiples en Dynamic Media, puede añadir fácilmente varios subtítulos y pistas de audio a un vídeo principal. Esta posibilidad significa que los vídeos son accesibles para todo el público global. Puede personalizar un solo vídeo principal publicado para un público global en varios idiomas y seguir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
 
 ![Pestaña Subtítulos y pistas de audio en Dynamic Media junto con una tabla que muestra los archivos de subtítulo .VTT cargados y los archivos de pista de audio .MP3 cargados para un vídeo.](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab.png)
 
@@ -717,7 +717,7 @@ Sin embargo, cualquier archivo de pista de audio cargado puede establecerse como
 >La reproducción del audio predeterminado también puede depender de lo que se establezca en los siguientes exploradores:
 >
 >* Chrome: se reproduce el audio predeterminado definido en el vídeo.
-* Safari: si el idioma por defecto está definido en Safari, el audio se reproduce con el idioma por defecto definido, si está disponible con el manifiesto del vídeo. De lo contrario, se reproduce el audio predeterminado que se establece como parte de las propiedades de un vídeo.
+>* Safari: si el idioma por defecto está definido en Safari, el audio se reproduce con el idioma por defecto definido, si está disponible con el manifiesto del vídeo. De lo contrario, se reproduce el audio predeterminado que se establece como parte de las propiedades de un vídeo.
 
 **Para establecer el audio predeterminado de un vídeo que tiene varias pistas de audio:**
 
@@ -746,7 +746,7 @@ Consulte [Añadir recursos de Dynamic Media a las páginas](/help/assets/dynamic
 
 >[!NOTE]
 >
-La pestaña de previsualización predeterminada del Experience Manager no muestra varias pistas de subtítulos y audio. El motivo es que esas pistas están asociadas a Dynamic Media y solo se pueden ver con la previsualización del visualizador de Dynamic Media.
+>La pestaña de previsualización predeterminada del Experience Manager no muestra varias pistas de subtítulos y audio. El motivo es que esas pistas están asociadas a Dynamic Media y solo se pueden ver con la previsualización del visualizador de Dynamic Media.
 
 **Para obtener una vista previa de un vídeo que tiene varios subtítulos y pistas de audio:**
 
@@ -825,7 +825,7 @@ No se puede descargar la pista de audio original extraída de un archivo princip
 
 >[!IMPORTANT]
 >
-El Adobe recomienda que [habilitar la capacidad de pistas de varios subtítulos y audio](#enable-dash) en su cuenta de Dynamic Media. Al hacerlo, puede aprovechar la arquitectura de back-end de Dynamic Media más reciente y un flujo de trabajo simplificado para agregar subtítulos, subtítulos y pistas de audio a los vídeos.
+>El Adobe recomienda que [habilitar la capacidad de pistas de varios subtítulos y audio](#enable-dash) en su cuenta de Dynamic Media. Al hacerlo, puede aprovechar la arquitectura de back-end de Dynamic Media más reciente y un flujo de trabajo simplificado para agregar subtítulos, subtítulos y pistas de audio a los vídeos.
 
 Puede ampliar el alcance de sus vídeos a los mercados globales añadiendo subtítulos a vídeos únicos o a conjuntos de vídeos adaptables. Al añadir subtítulos opcionales, evitará la necesidad de doblar el audio o la necesidad de utilizar hablantes nativos para volver a grabar el audio para cada idioma diferente. El vídeo se reproduce en el idioma en que se grabó. Los subtítulos en idiomas extranjeros aparecen para que las personas de diferentes idiomas puedan entender la parte del audio.
 
@@ -833,7 +833,7 @@ Los subtítulos opcionales también proporcionan una mayor accesibilidad para la
 
 >[!NOTE]
 >
-El reproductor de vídeo que utilice debe admitir la visualización de subtítulos.
+>El reproductor de vídeo que utilice debe admitir la visualización de subtítulos.
 
 Consulte también [Accesibilidad en Dynamic Media](/help/assets/dynamic-media/accessibility-dm.md).
 
@@ -861,7 +861,7 @@ Siga las instrucciones en pantalla de un sitio para crear y guardar el archivo W
 
 >[!NOTE]
 >
-Para que los subtítulos de vídeo se admitan globalmente en varios idiomas, el estándar WebVTT requiere que cree archivos .vtt independientes y que realice llamadas a cada idioma que desee admitir.
+>Para que los subtítulos de vídeo se admitan globalmente en varios idiomas, el estándar WebVTT requiere que cree archivos .vtt independientes y que realice llamadas a cada idioma que desee admitir.
 
 Por lo general, debe asignar al archivo VTT de rótulo el mismo nombre que al archivo de vídeo y anexarlo a la configuración regional del idioma, como -EN, -FR o -DE. Al hacerlo, puede ayudarle con la automatización de la generación de las direcciones URL de vídeo mediante el sistema de administración de contenido web existente.
 
@@ -892,7 +892,7 @@ Puede facilitar la visualización y navegación de los vídeos de formato largo 
 
 >[!NOTE]
 >
-El reproductor de vídeo utilizado debe admitir el uso de marcadores de capítulo. Los reproductores de vídeo de Dynamic Media admiten marcadores de capítulo, pero es posible que el uso de reproductores de vídeo de terceros no los admita.
+>El reproductor de vídeo utilizado debe admitir el uso de marcadores de capítulo. Los reproductores de vídeo de Dynamic Media admiten marcadores de capítulo, pero es posible que el uso de reproductores de vídeo de terceros no los admita.
 
 <!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
@@ -1238,7 +1238,7 @@ public class ManifestServlet extends HttpServlet {
     private void error(String errorMessage, HttpServletResponse response) throws IOException { 
         ManifestUrl errorManifest = new ManifestUrl(null); 
         errorManifest.setErrorMessage(errorMessage); 
-        response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR); 
+        response.setStatus (HttpServletResponse.SC_INTERNAL_SERVER_ERROR); 
         objectMapper.writeValue(response.getWriter(), errorManifest); 
     } 
 } 
@@ -1283,7 +1283,7 @@ public abstract class VideoResponse {
 ```java
 public final class Constants { 
 
-     private Constants() { 
+     private Constants () { 
      } 
 
      public static final String VIDEO_API_PREFIX = "/dynamicmedia/video"; 
@@ -1345,7 +1345,7 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
   */ 
  public static String getRealContextPath(HttpServletRequest req) { 
      final String path = req.getContextPath(); 
-     if (path.equals(CONTEXT_PATH)) { 
+     if (path.equals (CONTEXT_PATH)) { 
          return ""; 
      } 
      return path.substring(CONTEXT_PATH.length()); 

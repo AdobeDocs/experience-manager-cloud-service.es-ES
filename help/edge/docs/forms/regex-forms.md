@@ -1,12 +1,12 @@
 ---
-title: El servicio de entrega perimetral de AEM Forms utiliza con frecuencia expresiones regex para validar campos de formulario
-description: El servicio de entrega perimetral de AEM Forms utiliza con frecuencia expresiones regex para validar campos de formulario
+title: 'AEM Forms Edge Delivery Services: expresiones regex comúnmente utilizadas para validar campos de formulario'
+description: 'AEM Forms Edge Delivery Services: expresiones regex comúnmente utilizadas para validar campos de formulario'
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '191'
 ht-degree: 4%
 
 ---

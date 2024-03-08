@@ -1,12 +1,12 @@
 ---
-title: Componentes de formulario del servicio de entrega perimetral de AEM Forms
-description: El servicio de entrega perimetral de AEM Forms está diseñado para ofrecer un rendimiento máximo, lo que le permite visualizar el futuro de la recopilación de datos y la participación del usuario optimizadas. El artículo enumera todos los componentes de formularios disponibles de forma predeterminada para los formularios EDD.
+title: Componentes de formulario de AEM Forms Edge Delivery Services
+description: Los servicios de entrega perimetral de AEM Forms están diseñados para ofrecer un rendimiento máximo, lo que le permite visualizar el futuro de la recopilación de datos optimizada y la participación del usuario. El artículo enumera todos los componentes de formularios disponibles de forma predeterminada para los formularios EDD.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '870'
 ht-degree: 5%
 
 ---

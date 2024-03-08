@@ -2,13 +2,13 @@
 title: AEM Guía de introducción para desarrolladores para la creación de contenido con Edge Delivery Services en la creación de
 description: Esta guía le ayudará a ponerse en marcha con un nuevo sitio de Adobe Experience Manager que utiliza Edge Delivery Services y el editor universal para la creación de contenido
 feature: Edge Delivery Services
-source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
+exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '988'
 ht-degree: 0%
 
 ---
-
 
 # AEM Creación de con Edge Delivery Services {#edge-dev-getting-started}
 
@@ -20,7 +20,7 @@ Esta guía le ayudará a ponerse en marcha con un nuevo sitio de Adobe Experienc
 
 Antes de comenzar esta guía, debe estar familiarizado con los conceptos básicos de y tener acceso a los Edge Delivery Services, incluidos los siguientes:
 
-* Ha completado la [Tutorial del servicio de envío de Edge.](/help/edge/developer/tutorial.md)
+* Ha completado la [Tutorial Del Servicio De Entrega De Edge.](/help/edge/developer/tutorial.md)
 * Tiene acceso a un [Zona protegida de AEM Cloud Service.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * Tiene [se habilitó el editor universal en el mismo entorno de zona protegida.](/help/implementing/universal-editor/getting-started.md)
 

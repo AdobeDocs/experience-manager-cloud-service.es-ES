@@ -2,7 +2,7 @@
 title: Ampliación de ContextHub
 description: Defina nuevos tipos de módulos y tiendas de ContextHub cuando los que se proporcionan no cumplan con los requisitos de su solución
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Cree y registre la clase de procesador en una función anónima de ejecución au
 ```javascript
 ;(function() {
 
-    var SurferinfoRenderer = new Class({
+    var SurferinfoRenderer = new Class ({
         extend: ContextHub.UI.BaseModuleRenderer,
 
         defaultConfig: {

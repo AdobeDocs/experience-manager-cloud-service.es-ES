@@ -2,10 +2,10 @@
 title: 'Reglamentos de protección de datos y privacidad de datos: preparación de Adobe Experience Manager as a Cloud Service Sites'
 description: Obtenga información acerca del soporte de Adobe Experience Manager as a Cloud Service Sites respecto a los distintos reglamentos de protección de datos y privacidad de datos; se incluye el Reglamento general de protección de datos (RGPD) de la UE y la Ley de Privacidad del Consumidor de California y cómo cumplirlos al implementar un nuevo proyecto de AEM as a Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 96%
+source-wordcount: '1001'
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Para la exclusión:
 
    * Para no participar en la agregación y el análisis de los datos acerca de su visita a este sitio, es necesario instalar una cookie en su explorador. Esta cookie identifica que se ha excluido.
 
-     Si elimina la cookie de exclusión, o si cambia de equipo o de explorador web, deberá volver a excluirse.
+     Si elimina la cookie de exclusión, o si cambia de equipo o de explorador web, tendrá que volver a excluirse.
 
      Exclusión - Excluirme del análisis y la agregación de sesiones del visitante (instale la cookie de exclusión `amcglobal.sc.omtrdc.net`): haga clic aquí.
 
@@ -223,10 +223,10 @@ Para borrar la persistencia de ContextHub:
   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
   
   // following call asks all currently loaded stores to clear their data
-  ContextHub.cleanAllStores();
+  ContextHub.cleanAllStores ();
   
   // following call asks all currently loaded stores to set back default values (provided in their configs)
-  ContextHub.resetAllStores();
+  ContextHub.resetAllStores ();
   ```
 
 * Para borrar una capa de persistencia específica; por ejemplo, sessionStorage:

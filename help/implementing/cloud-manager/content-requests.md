@@ -2,7 +2,7 @@
 title: Explicación de las solicitudes de contenido de Cloud Service
 description: Si ha adquirido licencias de solicitud de contenido de Adobe, obtenga información acerca de los tipos de solicitudes de contenido que mide Adobe Experience Cloud as a Service y las variaciones con las herramientas de informes de análisis de una organización.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 9033820fa0dc8eee181e3f581675f45cf11e694a
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '2688'
 ht-degree: 5%
@@ -138,7 +138,7 @@ El servicio de Monitoreo de Usuario Real está diseñado para evitar la recopila
 
 ### Configuración del Servicio de Control de Usuarios Reales {#how-to-set-up-the-rum-service}
 
-* Si desea formar parte de nuestro programa de adopción anticipada, envíe un correo electrónico a `aemcs-rum-adopter@adobe.com`, junto con su nombre de dominio para el entorno de producción, ensayo y desarrollo desde su dirección de correo electrónico asociada a su Adobe ID. El equipo de productos de Adobe habilitará entonces el servicio de datos de Real User Monitoring (RUM).
+* Si desea formar parte de nuestro programa de adopción anticipada, envíe un correo electrónico a `aemcs-rum-adopter@adobe.com`, junto con su nombre de dominio para el entorno de producción, ensayo y desarrollo desde su dirección de correo electrónico asociada a su Adobe ID. El equipo de productos de Adobe habilitará entonces el servicio de datos RUM (Monitorización del usuario real) para usted.
 * Una vez finalizado, el equipo de productos de Adobe creará un canal de colaboración con el cliente.
 * El equipo de productos de Adobe se pondrá en contacto con usted para proporcionarle la clave de dominio y la URL del panel de datos, donde podrá ver las vistas de páginas y [Elementos vitales de la web (CWV)](https://web.dev/vitals/) métricas recopiladas por la recopilación del servicio de control de usuarios reales del lado del cliente.
 * A continuación, se le guiará sobre cómo utilizar la clave de dominio para acceder a la URL del panel de datos y ver las métricas.

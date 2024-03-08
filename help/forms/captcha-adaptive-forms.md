@@ -7,8 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 feature: Adaptive Forms, Foundation Components
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 100%
 
@@ -84,7 +84,7 @@ Una vez habilitado el servicio empresarial de reCAPTCHA, estará disponible para
 1. Crear un contenedor de configuración para los servicios en la nube.
    1. Vaya a **[!UICONTROL Herramientas > General > Explorador de configuración]**.
    1. Seleccione una carpeta o cree una carpeta y habilítela para las configuraciones de nube mediante los siguientes pasos:
-      1. En el Explorador de configuración, selecciona la carpeta y seleccione	**[!UICONTROL Propiedades]**.
+      1. En el Explorador de configuración, selecciona la carpeta y selecciona	**[!UICONTROL Propiedades]**.
       1. En el cuadro de diálogo Propiedades de configuración, habilite **[!UICONTROL Configuraciones de nube]**.
       1. Seleccione **[!UICONTROL Guardar y cerrar]** para guardar la configuración y salir del cuadro de diálogo.
 
@@ -262,7 +262,7 @@ if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
         String formPath = slingRequest.getResource().getPath();
         String captchaData = slingRequest.getParameter(GuideConstants.GUIDE_CAPTCHA_DATA);
         if (!apiProvider.validateCAPTCHA(formPath, captchaData).isCaptchaValid()){
-            response.setStatus(400);
+            response.setStatus (400);
             return;
         }
     }
