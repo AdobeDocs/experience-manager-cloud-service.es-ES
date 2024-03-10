@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '845'
 ht-degree: 0%
 
 ---
@@ -27,41 +27,46 @@ AEM Forms Edge Delivery proporciona un bloque, conocido como bloque de formulari
 
 Antes de comenzar, asegúrese de haber completado los siguientes pasos:
 
-* Configure el proyecto de GitHub de los Edge Delivery Services AEM (EDS) mediante una plantilla de plantillas y clone el repositorio de GitHub correspondiente en el equipo local. Consulte [tutorial para desarrolladores](https://www.aem.live/developer/tutorial) para obtener más información. En este documento, la carpeta local del proyecto de los Edge Delivery Services (EDS) se denomina `[EDS Project repository]` .
+* Configuración de un [AEM proyecto con plantillas de AEM Forms](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) o [AEM agregar un bloque de formularios adaptables al proyecto de existente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) y clone el repositorio de GitHub correspondiente en el equipo local.
+En este documento, la carpeta local del proyecto de los Edge Delivery Services (EDS) se denomina `[EDS Project repository]` .
 * Asegúrese de que tiene acceso a las hojas de Google o a Microsoft SharePoint. Para configurar Microsoft SharePoint como fuente de contenido, consulte [Cómo usar Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
 
 
 
 ## Creación de un formulario
 
-+++ Paso 1: Añadir el bloque de formulario adaptable al proyecto de Edge Delivery Services (EDS).
+<!-- 
 
-El formulario adaptable permite a los usuarios crear formularios para un sitio de servicios de envío de Edge. AEM Sin embargo, este bloque no se incluye en la plantilla de plantillas predeterminada de la (utilizada para crear un proyecto de Edge Delivery Services). Para integrar a la perfección el bloque de formulario adaptable en su proyecto de Edge Delivery Services:
++++ Step 1: Add the Adaptive Form Block to your Edge Delivery Services (EDS) project.
 
-1. **Clone el repositorio de bloque de formulario adaptable**: Clone el [Repositorio de bloques de formularios adaptables](https://github.com/adobe-rnd/form-block) en el equipo local. Contiene el código para procesar el formulario en una página web de EDS. En este documento, la carpeta local del repositorio de bloques de Forms se denomina `[Adaptive Form Block repository]`.
-1. **Busque el repositorio de bloques de formularios adaptables:** Acceda a la [Repositorio de bloques de formularios adaptables]/blocks/src y copie su contenido.
+The Adaptive  empowers users to create forms for an Edge Delivery ServicesSite. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Services project). To seamlessly integrate the Adaptive Form Block into your Edge Delivery Services project:
 
-1. en el equipo local y copie el `form` carpeta.
-1. **Pegue el código del bloque de formulario adaptable en el proyecto EDS:**
-Vaya a [Repositorio del proyecto EDS]/blocks/ en el equipo local y cree una carpeta &quot;form&quot;. Pegue el `[Adaptive Form Block repository]/blocks/src content`, copiado en el paso anterior a `[EDS Project repository]/blocks/form` carpeta.
-1. **Confirmar cambios en GitHub:** Marque en `[EDS Project repository]/blocks/form` y sus archivos subyacentes al proyecto de Edge Delivery Services en GitHub.
+1. **Clone the Adaptive Form Block repository**: Clone the [Adaptive Form Block repository](https://github.com/adobe-rnd/form-block) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Adaptive Form Block repository]`.
+1. **Locate the Adaptive Form Block Repository:** Access the [Adaptive Form Block repository]/blocks/src folder and copy its content. 
 
-Después de completar estos pasos, el bloque de formulario adaptable se agrega correctamente al repositorio del proyecto de los Edge Delivery Services (EDS) en GitHub. Ahora puede crear y agregar formularios a una página de Sites de EDS.
+1. on your local machine and copy the `form` folder. 
+1. **Paste the Adaptive Form Block's code into your EDS Project:**
+Navigate to the [EDS Project repository]/blocks/ folder on your local machine and create a 'form' folder. Paste the `[Adaptive Form Block repository]/blocks/src content`, copied in perevious step to the `[EDS Project repository]/blocks/form` folder.
+1. **Commit Changes to GitHub:** Check in the `[EDS Project repository]/blocks/form` folder and its underlying files to your Edge Delivery Services project on GitHub.
 
+After completing these steps, the Adaptive Form Block is successfully added to your Edge Delivery Services (EDS) project repository on GitHub. You can now create and add forms to a EDS Sites page.
+ 
 
-**Solución de problemas de compilación de GitHub**
+**Troubleshooting GitHub build issues**
 
-Asegúrese de que el proceso de generación de GitHub sea fluido y aborde los posibles problemas:
+Ensure a smooth GitHub build process by addressing potential issues:
 
-* **Resolver error de ruta del módulo:**
-Si aparece el error &quot;No se puede resolver la ruta al módulo &quot;&#39;../../scripts/lib-franklin.js&quot;&quot;, vaya al [Proyecto EDS]Archivo /blocks/forms/form.js. Actualice la instrucción import reemplazando el archivo lib-franklin.js por el archivo aem.js.
+* **Resolve Module Path Error:**
+    If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file.
 
-* **Controlar errores de vinculación:**
-Si encuentra algún error de linting, puede evitarlo. Abra el [Proyecto EDS]/package.json y modifique el script &quot;lint&quot; de &quot;lint&quot;: &quot;npm run lint:js &amp;&amp; npm run lint:css&quot; a &quot;lint&quot;: &quot;echo &#39;omitiendo linting por ahora&#39;&quot;. Guarde el archivo y confirme los cambios en su proyecto de GitHub.
+* **Handle Linting Errors:**
+    Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project.
 
 +++
 
-+++ Paso 2: Crear un formulario con Microsoft Excel o Google Sheet.
+-->
+
++++ Paso 1: Crear un formulario con Microsoft Excel o Google Sheet.
 
 En lugar de navegar por procesos complejos, la creación de un formulario se puede lograr fácilmente mediante una hoja de cálculo. Puede definir las filas y columnas que compondrán la estructura del formulario. Cada fila representa a un individuo [campo de formulario](/help/edge/docs/forms/form-components.md#available-components) y los encabezados de columna definen la correspondiente [propiedades de campo](/help/edge/docs/forms/form-components.md#components-properties).
 
@@ -110,7 +115,7 @@ Para continuar con la creación del formulario:
 
 +++
 
-+++ Paso 3: Previsualizar el formulario mediante la página de Edge Delivery Services (EDS).
++++ Paso 2: Previsualizar el formulario mediante la página de Edge Delivery Services (EDS).
 
 
 Hasta ahora, ha agregado el bloque de formulario adaptable al proyecto EDS y ha preparado la estructura del formulario. Ahora, para obtener una vista previa del formulario:
@@ -150,7 +155,6 @@ Hasta ahora, ha agregado el bloque de formulario adaptable al proyecto EDS y ha 
 ## Siguiente paso
 
 [Preparar hoja de cálculo](/help/edge/docs/forms/submit-forms.md) para empezar a aceptar datos al enviar el formulario.
-
 
 
 
