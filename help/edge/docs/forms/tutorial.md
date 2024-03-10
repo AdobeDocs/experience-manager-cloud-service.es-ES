@@ -4,10 +4,10 @@ description: Este tutorial le ayuda a ponerse en marcha con un nuevo proyecto de
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 30dfe0cfd7f845ba7a27699db22f8c4e61a0f7ed
 workflow-type: tm+mt
-source-wordcount: '1770'
-ht-degree: 1%
+source-wordcount: '1803'
+ht-degree: 0%
 
 ---
 
@@ -198,31 +198,29 @@ Para previsualizar contenido sin publicar:
 
    [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
 
-### Actualizar el formulario
+### Creación de un formulario
 
-1. Vaya a la carpeta de Microsoft SharePoint o Google Drive.
+El contenido de ejemplo incluye una hoja de &quot;consulta&quot; que sirve como plantilla para el formulario de &quot;consulta&quot;. Cada fila de la hoja representa un [campo de formulario](/help/edge/docs/forms/form-components.md#available-components)y los encabezados de columna definen la variable [propiedades de campo](/help/edge/docs/forms/form-components.md#available-components). Este formulario de ejemplo le proporciona una ventaja inicial en la creación del formulario.
 
-1. Abra `enquiry.xlsx` para editarlo.
+![Formulario de consulta](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-   ![Formulario de consulta](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+Empecemos por actualizar una etiqueta de campo. Abra la hoja &#39;consulta&#39; para editarla, cambie la etiqueta del botón de envío a `Let's Chat`y use la barra de tareas para publicarlo.
 
-1. Cambie la etiqueta del botón de envío a `Let's Chat`.
+![Formulario de consulta](/help/edge/assets/enquiry-form-preview-publish.png)
 
-   ![Formulario de consulta](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
-
-1. Utilice el AEM Sidekick para obtener una vista previa y publicar `enquiry.xlsx` archivo.
-
-   ![Formulario de consulta](/help/edge/assets/enquiry-form-preview-publish.png)
-
-1. Para obtener una vista previa del formulario de consulta, vaya a la siguiente URL:
+Para obtener una vista previa del formulario de consulta actualizado, vaya a la siguiente URL:
 
 
-   ```HTML
-   https://<branch>--<repository>--<owner>.hlx.page/enquiry
-   ```
+```HTML
+    https://<branch>--<repository>--<owner>.hlx.page/enquiry
+       
+```
 
-   Se actualiza la etiqueta del botón de envío. Ahora, rellene el formulario y haga clic en el botón Enviar . Se producirá un error similar al siguiente, ya que la hoja de cálculo no está vacía [configurado para aceptar los datos aún](/help/edge/docs/forms/submit-forms.md).
+La etiqueta del botón Enviar se actualiza a `Let's Chat`.
 
+![Formulario de consulta](/help/edge/assets/updated-form.png)
+
+Para obtener información detallada sobre la creación y publicación de un nuevo formulario, visite [creación de un formulario](/help/edge/docs/forms/create-forms.md) guía.
 
 ### Empiece a desarrollar el estilo y la funcionalidad
 
