@@ -4,10 +4,10 @@ description: Este tutorial le ayuda a ponerse en marcha con un nuevo proyecto de
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 30dfe0cfd7f845ba7a27699db22f8c4e61a0f7ed
+source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
 workflow-type: tm+mt
-source-wordcount: '1803'
-ht-degree: 0%
+source-wordcount: '1786'
+ht-degree: 1%
 
 ---
 
@@ -65,7 +65,7 @@ La plantilla de plantillas de AEM Forms AEM le permite empezar rápidamente con 
    >[!NOTE]
    >
    >
-   > Si utiliza Github Enterprise con filtrado de IP, puede agregar la siguiente IP a la lista de permitidos: 3.227.118.73
+   > Si utiliza GitHub Enterprise con filtrado de IP, puede agregar la siguiente IP a la lista de permitidos: 3.227.118.73
 
    Felicitaciones. Tiene un nuevo sitio web en ejecución `https://<branch>--<repo>--<owner>.hlx.page/`.
 
@@ -79,11 +79,11 @@ La plantilla de plantillas de AEM Forms AEM le permite empezar rápidamente con 
 
 ### Vincular su propio origen de contenido
 
-El repositorio de Github recién creado apunta a [contenido de ejemplo almacenado en una carpeta de Google Drive](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). Este contenido de solo lectura proporciona un buen punto de partida para los formularios. No dude en copiarlo en su propia unidad de Google y personalizarlo para adaptarlo a sus necesidades.
+El repositorio de GitHub recién creado apunta a [contenido de ejemplo almacenado en una carpeta de Google Drive](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). Este contenido de solo lectura proporciona un buen punto de partida para los formularios. No dude en copiarlo en su propia unidad de Google y personalizarlo para adaptarlo a sus necesidades.
 
 ![Contenido de muestra en Google Drive](/help/edge/assets/folder-with-sample-content.png)
 
-Para copiar el contenido de muestra en su propia carpeta de contenido y dirigir el repositorio de Github a su propia carpeta de contenido:
+Para copiar el contenido de muestra en su propia carpeta de contenido y dirigir el repositorio de GitHub a su propia carpeta de contenido:
 
 1. AEM Cree una nueva carpeta específica para el contenido de su en Google Drive o Microsoft SharePoint. Este documento utiliza una carpeta creada en Microsoft SharePoint.
 
@@ -106,7 +106,7 @@ Para copiar el contenido de muestra en su propia carpeta de contenido y dirigir 
 
       ![Descargar contenido de muestra](/help/edge/assets/download-sample-content.png)
 
-      El `index`, `nav`, y `footer` Los archivos definen el diseño básico de las páginas y cambian con poca frecuencia a lo largo de un proyecto. También tienen una estructura específica diferente de la mayoría de los demás archivos de contenido. AEM Al examinar estos archivos, comprobará cómo se organiza el contenido de los proyectos de los que se dispone a través de la aplicación de la documentación de la aplicación de la documentación de la aplicación de la documentación de la aplicación de datos.
+      El `index`, `nav`, y `footer` Los archivos definen el diseño básico de las páginas y cambian con poca frecuencia a lo largo de un proyecto. También tienen una estructura específica diferente de la mayoría de los demás archivos de contenido. AEM Al examinar estos archivos, podrá hacerse una idea de cómo se organiza el contenido en los proyectos de los que se dispone en el sitio web, así como de cómo se organiza el contenido de los proyectos de los que se dispone en el sitio web.
 
 
    1. Cargue estos archivos en la carpeta Microsoft SharePoint o Google Drive.
@@ -119,7 +119,7 @@ Para copiar el contenido de muestra en su propia carpeta de contenido y dirigir 
 
    1. Vaya al repositorio de GitHub que creó anteriormente con las plantillas de AEM Forms.
    1. Abra `fstab.yaml` para editarlo.
-   1. AEM Reemplace la referencia existente por la ruta a la carpeta que compartió con el usuario de la (helix@adobe.com).
+   1. AEM Reemplace la referencia existente por la ruta de acceso a la carpeta que compartió con el usuario de la cuenta de usuario de la cuenta de usuario de la cuenta de usuario de la cuenta de usuario (helix@adobe.com).
 
       ![Contenido de muestra en Google Drive](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -168,13 +168,13 @@ Para previsualizar contenido sin publicar:
 
    ![AEM Sidekick - Añadir un proyecto](/help/edge/assets/aem-sidekick-add-a-project.png)
 
-   Tan pronto como se instale la extensión y se añada el proyecto, estará listo para obtener una vista previa y publicar el contenido de Google Drive.
+   Cuando se instale la extensión y se añada el proyecto, estará listo para obtener una vista previa y publicar el contenido de Google Drive.
 
 1. Seleccione todos los documentos de la carpeta Microsoft SharePoint o Google Drive. Para seleccionar varios documentos, mantenga pulsada la tecla Ctrl (Windows/Linux) o Cmd (Mac) mientras hace clic en.
 
    ![Seleccionar todos los archivos](/help/edge/assets/select-all-files.png)
 
-1. Haga clic en el icono del AEM Sidekick anclado a la barra de extensiones de Chrome. Aparecerá una barra de herramientas en la pantalla. Puede elegir previsualizar o publicar el contenido.
+1. Haga clic en el AEM Sidekick de anclado a la barra de extensiones de Chrome. Aparecerá una barra de herramientas en la pantalla. Puede elegir previsualizar o publicar el contenido.
 
    Si ha copiado `index`, `nav`, `footer` y `enquiry` archivos, todos son documentos independientes con sus propios ciclos de vista previa y publicación, por lo que debe asegurarse de previsualizar (y publicar) todos ellos.
 
@@ -233,7 +233,7 @@ AEM Para ponerse en marcha con un entorno de desarrollo de la local en poco tiem
        npm install -g @adobe/aem-cli
    ```
 
-1. Clone su proyecto de Github: Clone su repositorio de proyecto desde GitHub con el siguiente comando, reemplazando <owner> con el propietario del repositorio y <repo> con el nombre del repositorio:
+1. Clone su proyecto de GitHub: Clone su repositorio de proyecto desde GitHub mediante el siguiente comando, reemplazando <owner> con el propietario del repositorio y <repo> con el nombre del repositorio:
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -281,7 +281,7 @@ Asegúrese de que el proceso de generación de GitHub sea fluido y aborde los po
 Si aparece el error &quot;No se puede resolver la ruta al módulo &quot;&#39;../../scripts/lib-franklin.js&quot;&quot;, vaya al [Proyecto EDS]Archivo /blocks/forms/form.js. Actualice la instrucción import reemplazando el archivo lib-franklin.js por el archivo aem.js.
 
 * **Controlar errores de vinculación:**
-Si encuentra algún error de linting, puede evitarlo. Abra el [Proyecto EDS]/package.json y modifique el script &quot;lint&quot; de &quot;lint&quot;: &quot;npm run lint:js &amp;&amp; npm run lint:css&quot; a &quot;lint&quot;: &quot;echo &#39;omitiendo linting por ahora&#39;&quot;. Guarde el archivo y confirme los cambios en su proyecto de GitHub.
+Si encuentra algún error de linting, puede evitarlo. Abra el [Proyecto EDS]/package.json y modifique la secuencia de comandos &quot;lint&quot; desde `"lint": "npm run lint:js && npm run lint:css"` hasta `"lint": "echo 'skipping linting for now'"`. Guarde el archivo y confirme los cambios en su proyecto de GitHub.
 
 
 ## Consulte también
@@ -289,9 +289,4 @@ Si encuentra algún error de linting, puede evitarlo. Abra el [Proyecto EDS]/pac
 * [Crear un formulario con hojas de Google o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
 * [Envíe formularios directamente a las hojas de cálculo de Microsoft Excel o Google](/help/edge/docs/forms/submit-forms.md)
 * [Cambiar la apariencia de los formularios](/help/edge/docs/forms/style-theme-forms.md)
-
-
-
-
-
 
