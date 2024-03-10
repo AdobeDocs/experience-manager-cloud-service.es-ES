@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '1819'
 ht-degree: 0%
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Estilo de campos de formulario
 
-Forms es crucial para la interacción de los usuarios en los sitios web, ya que les permite introducir datos. Esta guía explica los aspectos básicos del diseño de varios campos de formulario en la [Bloque de formulario adaptable](/help/edge/docs/forms/create-forms.md), lo que le ayuda a crear formularios visualmente atractivos y fáciles de usar.
+Forms es crucial para la interacción de los usuarios en los sitios web, ya que les permite introducir datos. Esta guía explica los aspectos básicos del diseño de varios campos de formulario en la [Bloque de Forms adaptable](/help/edge/docs/forms/create-forms.md), lo que le ayuda a crear formularios visualmente atractivos y fáciles de usar.
 
 ## Explicación de tipos de campos de formulario
 
-Antes de profundizar en el estilo, vamos a revisar los tipos de campos de formulario comunes admitidos por el bloque de formulario adaptable:
+Antes de profundizar en el estilo, vamos a revisar los tipos de campos de formulario comunes admitidos por el bloque de Forms adaptable:
 
 * Campos de entrada: Incluyen entradas de texto, entradas de correo electrónico, entradas de contraseña y mucho más.
 * Grupos de casillas de verificación: se utiliza para seleccionar varias opciones.
@@ -35,11 +35,11 @@ Comprender los conceptos fundamentales de CSS es crucial antes de aplicar estilo
 * Modelo de cuadro: El modelo de cuadro CSS describe la estructura de los elementos del HTML como un área de contenido rodeada de relleno, bordes y márgenes.
 * Flexbox/Grid: Los diseños de Flexbox y Grid CSS son herramientas potentes para crear diseños adaptables y flexibles.
 
-## Estilo de un formulario para el bloque de formulario adaptable
+## Estilo de un formulario para un bloque de Forms adaptable
 
-El bloque de formulario adaptable ofrece una estructura de HTML estandarizada que simplifica el proceso de selección y estilo de los componentes del formulario:
+El bloque de Forms adaptable ofrece una estructura de HTML estandarizada que simplifica el proceso de selección y estilo de los componentes del formulario:
 
-* **Actualizar estilos predeterminados**: Puede modificar los estilos predeterminados de un formulario si edita la variable `/blocks/form/form.css file`. Este archivo proporciona un estilo completo para un formulario, que admite formularios de asistente de varios pasos. Hace hincapié en el uso de variables CSS personalizadas para facilitar la personalización, el mantenimiento y el estilo uniforme en todos los formularios. Para obtener instrucciones sobre cómo agregar el bloque de formulario adaptable al proyecto, consulte [creación de un formulario](/help/edge/docs/forms/create-forms.md).
+* **Actualizar estilos predeterminados**: Puede modificar los estilos predeterminados de un formulario si edita la variable `/blocks/form/form.css file`. Este archivo proporciona un estilo completo para un formulario, que admite formularios de asistente de varios pasos. Hace hincapié en el uso de variables CSS personalizadas para facilitar la personalización, el mantenimiento y el estilo uniforme en todos los formularios. Para obtener instrucciones sobre cómo añadir el bloque de Forms adaptable al proyecto, consulte [creación de un formulario](/help/edge/docs/forms/create-forms.md).
 
 * **Personalización**: utilice el valor predeterminado `forms.css` como base y personalícelo para modificar el aspecto de los componentes del formulario, lo que lo hace visualmente atractivo y fácil de usar. La estructura del archivo alienta la organización y mantiene los estilos de los formularios, lo que promueve diseños coherentes en todo el sitio web.
 
@@ -60,7 +60,7 @@ El bloque de formulario adaptable ofrece una estructura de HTML estandarizada qu
 
 ## Estructura de componentes
 
-El bloque de formulario adaptable ofrece una estructura de HTML coherente para varios elementos de formulario, lo que garantiza una gestión y un estilo más sencillos. Puede manipular los componentes mediante CSS con fines de estilo.
+El bloque de Forms adaptable ofrece una estructura de HTML coherente para varios elementos de formulario, lo que garantiza una gestión y un estilo más sencillos. Puede manipular los componentes mediante CSS con fines de estilo.
 
 ### Componentes generales (excepto desplegables, grupos de opciones y grupos de casillas de verificación):
 
@@ -821,5 +821,5 @@ También puede segmentar campos individuales por nombre para aplicar estilos ún
 }
 ```
 
-Este CSS identifica todos los elementos de entrada que se encuentran dentro de un elemento que tiene la clase `field-otp`. La estructura del HTML del formulario sigue las convenciones del bloque de formulario adaptable, lo que implica que hay un contenedor marcado con la clase &quot;field-top&quot; que contiene el campo con el nombre &quot;top&quot;.
+Este CSS identifica todos los elementos de entrada que se encuentran dentro de un elemento que tiene la clase `field-otp`. La estructura del HTML del formulario sigue las convenciones del bloque de Forms adaptable, lo que implica que hay un contenedor marcado con la clase &quot;field-top&quot; que contiene el campo con el nombre &quot;top&quot;.
 

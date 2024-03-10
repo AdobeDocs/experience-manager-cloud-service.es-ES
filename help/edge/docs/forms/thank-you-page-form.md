@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 1%
@@ -27,7 +27,7 @@ En el bloque de Forms adaptable, el comportamiento predeterminado es mostrar una
 
 ## Configuración de la página y el mensaje de agradecimiento
 
-El comportamiento predeterminado del bloque de Forms adaptable es mostrar la página de &quot;agradecimiento&quot; en el envío. Siga estos pasos para configurar la página de &quot;agradecimiento&quot; para su bloque de Forms adaptable:
+El comportamiento predeterminado del bloque de Forms adaptable es mostrar la página de &quot;agradecimiento&quot; al enviarla. Siga estos pasos para configurar la página de &quot;agradecimiento&quot; para su bloque de Forms adaptable:
 
 1. AEM Acceda a la carpeta del proyecto Entrega de Edge de la red de trabajo en Microsoft SharePoint o Google Workspace.
 1. Cree un archivo de Microsoft Word o Google Docs llamado &quot;thank you&quot; dentro del directorio del proyecto.

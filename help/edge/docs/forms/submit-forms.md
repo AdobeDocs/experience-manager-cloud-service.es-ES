@@ -1,11 +1,11 @@
 ---
 title: Preparar la hoja de cálculo para aceptar datos
-description: Cree formularios potentes más rápido con hojas de cálculo y campos de bloque de formularios adaptables.
+description: Cree formularios potentes más rápido con hojas de cálculo y campos de bloque de Forms adaptables.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 1%
@@ -55,7 +55,7 @@ Para habilitar la hoja de cálculo:
 
 Una vez añadidos los nombres de campo a `incoming` , el formulario estará listo para aceptar envíos. Puede obtener una vista previa del formulario y enviar datos a la hoja mediante él.
 
-Una vez configurada la hoja para recibir datos, puede [previsualizar el formulario mediante el bloque de formulario adaptable](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) o [usar solicitudes de POST](#use-admin-apis-to-send-data-to-your-sheet) para comenzar a enviar datos a la hoja.
+Una vez configurada la hoja para recibir datos, puede [previsualizar el formulario mediante el bloque de Forms adaptable](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) o [usar solicitudes de POST](#use-admin-apis-to-send-data-to-your-sheet) para comenzar a enviar datos a la hoja.
 
 >[!WARNING]
 >
@@ -172,7 +172,7 @@ Se agrega una hoja denominada &quot;Slack&quot; al libro de Excel o a la hoja de
 
 ## Enviar datos a la hoja {#send-data-to-your-sheet}
 
-Una vez que la hoja esté configurada para recibir datos, puede [previsualizar el formulario mediante el bloque de formulario adaptable](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) o [Uso de API de administrador](#use-admin-apis-to-send-data-to-your-sheet) para comenzar a enviar datos a la hoja.
+Una vez que la hoja esté configurada para recibir datos, puede [previsualizar el formulario mediante el bloque de Forms adaptable](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) o [Uso de API de administrador](#use-admin-apis-to-send-data-to-your-sheet) para comenzar a enviar datos a la hoja.
 
 ### Utilice las API de administrador para enviar datos a la hoja
 

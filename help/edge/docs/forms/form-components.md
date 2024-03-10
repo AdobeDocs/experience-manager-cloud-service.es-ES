@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '964'
 ht-degree: 3%
@@ -19,7 +19,7 @@ Los servicios de envío perimetral de AEM Forms le permiten crear formularios in
 
 ![Hoja de cálculo de ejemplo con algunos componentes y propiedades](/help/edge/assets/sample-form-in-spreadsheet.png)
 
-El bloque de formulario adaptable genera un [estructura uniforme del HTML](/help/edge/docs/forms/style-theme-forms.md) para todos los tipos de campo y contenedores (paneles), lo que garantiza la coherencia. Esta estructura coherente facilita la [aplicar estilo a un formulario](/help/edge/docs/forms/style-theme-forms.md).
+El bloque de Forms adaptable genera un [estructura uniforme del HTML](/help/edge/docs/forms/style-theme-forms.md) para todos los tipos de campo y contenedores (paneles), lo que garantiza la coherencia. Esta estructura coherente facilita la [aplicar estilo a un formulario](/help/edge/docs/forms/style-theme-forms.md).
 
 ## Componentes disponibles
 
@@ -46,13 +46,13 @@ A continuación se muestra una descripción general de los componentes disponibl
 
 ## Propiedades de componentes
 
-Cada componente del formulario incluye varias propiedades que le permiten controlar su comportamiento y apariencia. Estas son las propiedades que admiten los componentes de bloque de formulario adaptable:
+Cada componente del formulario incluye varias propiedades que le permiten controlar su comportamiento y apariencia. Estas son las propiedades que admiten los componentes de bloque de Forms adaptable:
 
 
 | Propiedad | Componentes aplicables | Detalles |
 |--------------|------------------------------|----------------------------------------------------------------------|
-| Tipo | Todos | Especifica el tipo de componente. Esta propiedad determina el comportamiento y el aspecto del campo de entrada. Por ejemplo, para las entradas de texto, el tipo puede ser &quot;texto&quot;, &quot;correo electrónico&quot; para las entradas de correo electrónico y &quot;contraseña&quot; para las entradas de contraseña. El bloque de formulario adaptable admite  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">todos los tipos de entrada válidos de HTML5</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">área de texto</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, y <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> como tipo. |
-| Tipo | Todos | Especifica el tipo de componente. Esta propiedad determina el comportamiento y el aspecto del campo de entrada. Por ejemplo, para las entradas de texto, el tipo puede ser &quot;texto&quot;, &quot;correo electrónico&quot; para las entradas de correo electrónico y &quot;contraseña&quot; para las entradas de contraseña. El bloque de formulario adaptable admite  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">todos los tipos de entrada válidos de HTML5</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">área de texto</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, y <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> como tipo. |
+| Tipo | Todos | Especifica el tipo de componente. Esta propiedad determina el comportamiento y el aspecto del campo de entrada. Por ejemplo, para las entradas de texto, el tipo puede ser &quot;texto&quot;, &quot;correo electrónico&quot; para las entradas de correo electrónico y &quot;contraseña&quot; para las entradas de contraseña. El bloque de Forms adaptable admite  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">todos los tipos de entrada válidos de HTML5</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">área de texto</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, y <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> como tipo. |
+| Tipo | Todos | Especifica el tipo de componente. Esta propiedad determina el comportamiento y el aspecto del campo de entrada. Por ejemplo, para las entradas de texto, el tipo puede ser &quot;texto&quot;, &quot;correo electrónico&quot; para las entradas de correo electrónico y &quot;contraseña&quot; para las entradas de contraseña. El bloque de Forms adaptable admite  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">todos los tipos de entrada válidos de HTML5</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">área de texto</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, y <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> como tipo. |
 | Nombre | Todos | Identifica el componente para el envío de formularios. El atributo name se utiliza cuando se envían los datos del formulario al servidor, asociando la entrada del usuario con un campo específico. |
 | Etiqueta | Todos | Proporciona información contextual a los usuarios. La etiqueta es el texto que se muestra junto al componente, lo que orienta a los usuarios sobre qué información introducir. |
 | Valor | Texto, Contraseña, Correo electrónico, Número, Intervalo, Fecha y sus variantes (fecha y hora local, mes, semana, hora), Casilla de verificación, Radio, Oculto, Enviar, Botón | Especifica el valor inicial del componente. Para las entradas de texto, el área de texto y los elementos seleccionados, esta es la opción o el texto predeterminado que se muestra. Para los componentes de radio y casilla de verificación, este es el valor/datos enviados cuando se seleccionan. El atributo value es opcional, pero debe considerarse obligatorio para las entradas de casilla de verificación y radio. |
@@ -72,9 +72,9 @@ Cada componente del formulario incluye varias propiedades que le permiten contro
 
 <!--
 
-## Supported HTML 5 input types in Adaptive Form Block
+## Supported HTML 5 input types in Adaptive Forms Block
 
-The Adaptive Form Block supports a range of HTML 5 input types, and it also seamlessly renders forms created with AEM core components.
+The Adaptive Forms Block supports a range of HTML 5 input types, and it also seamlessly renders forms created with AEM core components.
 Here is the table which outlines how core components correspond to their HTML-5 input types in Edge Delivery:
 <table>
  <tbody>
@@ -176,26 +176,26 @@ Here is the table which outlines how core components correspond to their HTML-5 
   </tr>
   <tr>
    <td><a href = "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html">Accordion<a></td>
-   <td><i>Not yet supported in Adaptive Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Forms Block</i></td>
    <td> Allows user to create expandable and collapsible sections in a form. </td>
   </tr>
   <tr>
    <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html">Horizontal tabs</a></td>
-   <td><i>Not yet supported in Adaptive Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Forms Block</i></td>
    <td>Organizes multiple sections of a form into separate tabs which are displayed horizontally.</td>
   </tr>
   <tr>
    <td><a href = "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/image.html">Image</a></td>
-   <td><i>Not yet supported in Adaptive Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Forms Block</i></td>
    <td> Allows user to include images in a form.</td>
   </tr><tr>
    <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/title.html">Title</a></td>
-   <td><i>Not yet supported in Adaptive Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Forms Block</i></td>
    <td> Refers to the text that appears at the top of the form. </td>
   </tr>
   <tr>
    <td><a href = "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/submit-button.html">Switch</td>
-   <td><i>Not yet supported in Adaptive Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Forms Block</i></td>
    <td> A two-state toggle that allows user to select between two states such as enabling or disabling a feature, setting, or functionality.</td>
   </tr>
  </tbody>

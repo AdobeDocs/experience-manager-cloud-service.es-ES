@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 062d5a88-48ca-421f-bf0d-1483e3cfee28
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 13%
@@ -14,7 +14,7 @@ ht-degree: 13%
 
 # Agregar secciones repetibles a un formulario
 
-El bloque de formulario adaptable permite agregar o hacer repetible una sección o componente de un formulario. Esto permite a los usuarios introducir información varias veces para el mismo tipo de datos, lo que facilita la recopilación de información, como la experiencia laboral o los antecedentes educativos.
+El bloque de Forms adaptable permite agregar o hacer repetible una sección o componente de un formulario. Esto permite a los usuarios introducir información varias veces para el mismo tipo de datos, lo que facilita la recopilación de información, como la experiencia laboral o los antecedentes educativos.
 
 Por ejemplo, considere un formulario utilizado para recopilar información sobre la experiencia laboral de una persona. Puede tener una sección repetible para capturar los detalles de cada trabajo anterior. La sección repetible generalmente contiene campos como nombre de la empresa, cargo, fechas de empleo y responsabilidades del puesto. El usuario puede agregar varias instancias de la sección repetible para introducir información sobre cada trabajo que ha realizado.
 
@@ -81,7 +81,7 @@ The form allows users to provide personal information, including details of the 
 
 ## Prerequisites
 
-The [Adaptive Form block is enabled](/help/edge/docs/forms/create-forms.md) for your Edge Delivery Services project. 
+The [Adaptive Forms Block is enabled](/help/edge/docs/forms/create-forms.md) for your Edge Delivery Services project. 
 
 ## Add a repeatable section to a form 
 
