@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: ea61a794788ee2a59e05727fa3c4fd4fc1ca9956
+source-git-commit: 320967ee4cd5a92639b60b00750343222b307aef
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 34%
+source-wordcount: '1415'
+ht-degree: 33%
 
 ---
 
@@ -228,17 +228,17 @@ Los formatos de documento admitidos para las funciones de administración de rec
 
 | Formato | Cargar (formato de entrada) | Crear ajuste preestablecido de imagen (formato de salida) | Previsualizar representación dinámica | Ofrecer representación dinámica | Descargar representación dinámica | Establecer tipos compatibles con este formato |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
-| AVIF | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| AVIF | − | − | − | ✓ | − | − |
 | BMP | ✓ | − | − | − | − | [Imagen](/help/assets/dynamic-media/image-sets.md), [Medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md), y [Giro](/help/assets/dynamic-media/spin-sets.md) |
-| [EPS](/help/assets/dynamic-media/managing-image-presets.md#adobe-illustrator-ai-postscript&reg;-eps-and-pdf-file-formats-adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| [EPS](/help/assets/dynamic-media/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − |
-| HEIC | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| HEIC | − | − | − | ✓ | − | − |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagen](/help/assets/dynamic-media/image-sets.md), [Medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md), y [Giro](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | ✓ | − | − | − | − | − |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagen](/help/assets/dynamic-media/image-sets.md), [Medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md), y [Giro](/help/assets/dynamic-media/spin-sets.md) |
 | PSD ‡ | ✓ | − | − | − | − | − |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagen](/help/assets/dynamic-media/image-sets.md), [Medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md), y [Giro](/help/assets/dynamic-media/spin-sets.md) |
-| WEBP | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| WEBP | − | − | − | ✓ | − | − |
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
 ‡ La imagen combinada se extrae del archivo del PSD. Es una imagen que genera el [!DNL Adobe Photoshop] y se incluye en el archivo del PSD. Según la configuración, la imagen combinada puede ser o no la imagen real.
