@@ -4,10 +4,10 @@ description: Este tutorial le ayuda a ponerse en marcha con un nuevo proyecto de
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
+source-git-commit: 14171647dce7d2f6ce985616035eefa62c6955db
 workflow-type: tm+mt
-source-wordcount: '1786'
-ht-degree: 1%
+source-wordcount: '1878'
+ht-degree: 0%
 
 ---
 
@@ -106,7 +106,7 @@ Para copiar el contenido de muestra en su propia carpeta de contenido y dirigir 
 
       ![Descargar contenido de muestra](/help/edge/assets/download-sample-content.png)
 
-      El `index`, `nav`, y `footer` Los archivos definen el diseño básico de las páginas y cambian con poca frecuencia a lo largo de un proyecto. También tienen una estructura específica diferente de la mayoría de los demás archivos de contenido. AEM Al examinar estos archivos, podrá hacerse una idea de cómo se organiza el contenido en los proyectos de los que se dispone en el sitio web, así como de cómo se organiza el contenido de los proyectos de los que se dispone en el sitio web.
+      El `nav` y `footer` Los archivos definen el diseño básico de las páginas y cambian con poca frecuencia a lo largo de un proyecto. También tienen una estructura específica diferente de la mayoría de los demás archivos de contenido. AEM Al examinar estos archivos, podrá hacerse una idea de cómo se organiza el contenido en los proyectos de los que se dispone en el sitio web, así como de cómo se organiza el contenido de los proyectos de los que se dispone en el sitio web.
 
 
    1. Cargue estos archivos en la carpeta Microsoft SharePoint o Google Drive.
@@ -148,7 +148,7 @@ Para copiar el contenido de muestra en su propia carpeta de contenido y dirigir 
 
       Esto conecta la carpeta de contenido con el sitio web. Después de actualizar la referencia, es posible que experimente inicialmente errores &quot;404 Not Found&quot;. Esto se debe a que el contenido aún no se ha previsualizado. En la siguiente sección se explica cómo empezar a crear y previsualizar el contenido.
 
-      ![Confirme el archivo fsatab.yaml actualizado](/help/edge/assets/aem-forms-project-folder-error.png)
+
 
 ### Previsualización y publicación del contenido
 
@@ -204,9 +204,22 @@ El contenido de ejemplo incluye una hoja de &quot;consulta&quot; que sirve como 
 
 ![Formulario de consulta](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-Empecemos por actualizar una etiqueta de campo. Abra la hoja &#39;consulta&#39; para editarla, cambie la etiqueta del botón de envío a `Let's Chat`y use la barra de tareas para publicarlo.
+Empecemos por actualizar una etiqueta de campo. Abra la hoja &#39;consulta&#39; para editarla, cambie la etiqueta del botón de envío a `Let's Chat` y utilice el AEM Sidekick para obtener una vista previa y publicar el archivo.
 
 ![Formulario de consulta](/help/edge/assets/enquiry-form-preview-publish.png)
+
+Al obtener una vista previa o publicar el archivo, aparece una versión JSON del archivo en una nueva pestaña. Copie la URL de vista previa (.hlx.page) o publicación (.hlx.live) del archivo.
+
+![JSON de la hoja de cálculo del formulario](/help/edge/assets//preview-and-publish-enquiry-form.png)
+
+Abra el `enquiry` y reemplace la URL en el bloque de formulario por la URL del archivo copiado en el paso anterior. Asegúrese de que la dirección URL sea un hipervínculo.
+
+![Archivo de consulta con la dirección URL .json de la dirección URL de la hoja de cálculo](/help/edge/assets/enquiry-doc-to-embed-form.png)
+
+Utilice AEM Sidekick para previsualizar y publicar el documento de consulta.
+
+![Archivo de consulta con la dirección URL .json de la dirección URL de la hoja de cálculo](/help/edge/assets/preview-and-publish-enquiry-document.png)
+
 
 Para obtener una vista previa del formulario de consulta actualizado, vaya a la siguiente URL:
 
