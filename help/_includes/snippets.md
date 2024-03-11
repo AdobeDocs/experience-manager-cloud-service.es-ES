@@ -1,8 +1,8 @@
 ---
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 75%
+source-wordcount: '367'
+ht-degree: 67%
 
 ---
 # Fragmentos de código {#snippets}
@@ -61,11 +61,13 @@ ht-degree: 75%
 
 [!BADGE TECNOLOGÍA DE ACCESO ANTICIPADO: Infórmenos sobre esta función en los laboratorios de AEM Sites de su canal de Slack.]{type=Informative url="/help/edge/docs/slack.md" tooltip="AEM La creación de informes con Edge Delivery Services es una tecnología de acceso anticipado."}
 
-## Consulte también {#see-also-forms-eds}
+## Más información {#see-more-forms-eds}
 
-* [Componentes de formulario](/help/edge/docs/forms/form-components.md)
-* [Creación y previsualización de un formulario](/help/edge/docs/forms/create-forms.md)
-* [Habilitar formulario para enviar datos](/help/edge/docs/forms/submit-forms.md)
-* [Publicar un formulario en la página de Sites](/help/edge/docs/forms/publish-forms.md)
-* [Agregar validaciones a campos de formulario](/help/edge/docs/forms/validate-forms.md)
-* [Cambiar temáticas y estilo de formulario](/help/edge/docs/forms/style-theme-forms.md)
+* [Introducción a los Edge Delivery Services de AEM Forms](/help/edge/docs/forms/tutorial.md)
+* [Crear un formulario con hojas de Google o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+* [Configure las hojas de Google o los archivos de Microsoft Excel para empezar a aceptar datos&#x200B;](/help/edge/docs/forms/submit-forms.md)
+* [Publicar el formulario y empezar a recopilar datos](/help/edge/docs/forms/publish-forms.md)
+* [Personalice el aspecto de los formularios&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
+* [Agregar secciones repetibles a un formulario&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
+* [Mostrar un mensaje de agradecimiento personalizado después del envío del formulario&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
+* [Componentes de bloque de formulario adaptable y sus propiedades](/help/edge/docs/forms/form-components.md)
