@@ -5,22 +5,21 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 67d9eaaf18725403f6a152b04e022cdca6902de0
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 2%
+source-wordcount: '937'
+ht-degree: 0%
 
 ---
 
 # Edge Delivery Services de AEM Forms
 
-Los Edge Delivery Services de AEM Forms son un conjunto de servicios componibles que permiten un entorno de desarrollo rápido en el que los autores pueden actualizar y publicar rápidamente y en el que los nuevos formularios se inician rápidamente.
+Los Edge Delivery Services de AEM Forms son un conjunto de servicios componibles que permiten un entorno de desarrollo rápido en el que los autores pueden actualizar, publicar e iniciar nuevos formularios rápidamente. Estos servicios ofrecen experiencias de formularios excepcionales y de alto impacto que impulsan la participación y las conversiones. Estas experiencias de formulario son fáciles de crear y desarrollar.
 
-Los Edge Delivery Services de AEM Forms ofrecen experiencias de formularios excepcionales que impulsan la participación y las conversiones, lo que permite experiencias de alto impacto fáciles de crear y desarrollar.
 
 Estos servicios le permiten:
 
-* **Cree experiencias de inscripción con las herramientas que elija:** Aumente la eficacia de la creación desacoplando las fuentes de contenido. De forma predeterminada, puede utilizar la creación basada en documentos (Microsoft SharePoint o Google AEM Drive) y la creación de (editor de Forms adaptable). De este modo, puede trabajar con varios orígenes de contenido en el mismo formulario y utilizar sus herramientas de creación preferidas, como Microsoft Excel, Hojas de cálculo de Google o Editor de Forms adaptable.
+* **Cree experiencias de inscripción con las herramientas que elija:** Aumente la eficacia de la creación desacoplando las fuentes de contenido. De forma predeterminada, puede utilizar la creación basada en documentos (Microsoft SharePoint o Google AEM Drive) y la creación de (editor de Forms adaptable). Puede trabajar con varios orígenes de contenido en el mismo sitio de formularios y utilizar sus herramientas de creación preferidas, como Microsoft Excel, Hojas de cálculo de Google o Editor de Forms adaptable.
 
 * **Ofrezca experiencias excepcionales de inscripción digital:** Ofrezca experiencias de inscripción digital que se carguen y procesen rápidamente. Los tiempos de carga más rápidos y la experiencia de usuario optimizada contribuyen a que las tasas de finalización y conversión de formularios sean más altas.
 
@@ -28,23 +27,25 @@ Estos servicios le permiten:
 
 ## Información general sobre Edge Delivery Services AEM Forms {#edge-overview}
 
-El diagrama siguiente ilustra cómo se pueden editar formularios en Microsoft Excel o en hojas de Google (edición basada en documentos) y publicar en Edge Delivery Services. AEM También muestra el método de publicación de la mediante el Editor de Forms adaptable.
+El diagrama siguiente ilustra cómo se pueden editar formularios en Microsoft Excel o en hojas de Google (creación basada en documentos ) y publicar en Edge Delivery Services. AEM También muestra el método de publicación de la mediante el Editor de Forms AEM adaptable (creación de la).
 
 ![Arquitectura de Edge Delivery](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-Los servicios de envío perimetral de AEM Forms son un conjunto de servicios componibles que permiten un alto grado de flexibilidad en la forma en que se crean formularios en el sitio web. AEM Puede utilizar tanto la administración de contenido de la con [AEM creación de](/help/forms/creating-adaptive-form-core-components.md) así como [creación basada en documentos](/help/edge/docs/forms/create-forms.md).
+Los servicios de envío perimetral de AEM Forms son un conjunto de servicios componibles que permiten un alto grado de flexibilidad en la forma en que se crean formularios en el sitio web. AEM Puede utilizar tanto la administración de contenido de la con [AEM creación de](/help/forms/creating-adaptive-form-core-components.md) así como [Creación basada en documentos](/help/edge/docs/forms/create-forms.md).
 
-Por ejemplo, los formularios se crean directamente en Microsoft Excel o en Hojas de cálculo de Google y estas se transforman en formularios para el sitio web. Cualquier contenido nuevo del formulario, como un nuevo campo de formulario, está disponible instantáneamente en el sitio web sin necesidad de un proceso de reconstrucción.
+Por ejemplo, los formularios se crean directamente en Microsoft Excel o en Hojas de cálculo de Google y estas se transforman en formularios para el sitio web. Cualquier formulario o contenido nuevo, como un campo de formulario nuevo, está disponible instantáneamente en el sitio web sin necesidad de volver a compilar el proceso.
 
-Edge Delivery Services aprovecha GitHub para que los clientes puedan administrar e implementar código directamente desde su repositorio de GitHub. Por ejemplo, puede escribir formularios en [Hojas de cálculo de Google o Microsoft Excel](/help/edge/docs/forms/create-forms.md) y los componentes de los formularios se pueden desarrollar mediante CSS y JavaScript en GitHub. Cuando esté listo, puede usar el complemento [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content) extensión del explorador para previsualizar y publicar actualizaciones de contenido.
+Los Edge Delivery Services de AEM Forms utilizan GitHub para que los clientes puedan administrar e implementar código directamente desde su repositorio de GitHub. Por ejemplo, puede escribir formularios en [Hojas de cálculo de Google o Microsoft Excel](/help/edge/docs/forms/create-forms.md) y los componentes de los formularios se pueden desarrollar mediante CSS y JavaScript en GitHub.
+
+Cuando esté listo, puede usar el complemento [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content), una extensión del explorador chrome, para obtener una vista previa y publicar actualizaciones de contenido.
 
 ![AEM Sidekick de instalación](/help/edge/assets/install-aem-sidekick.png)
 
 Los Edge Delivery Services de AEM Forms proporcionan un bloque de formularios denominado [Bloque de Forms adaptable](/help/edge/docs/forms/create-forms.md) para agregar un formulario al sitio de Edge Delivery Services.
 
-La elección entre [creación basada en documentos](#document-based-authoring-features) y [AEM creación de](#aem-authoring-features) depende de sus necesidades específicas.
+La elección entre [Creación basada en documentos](#document-based-authoring-features) y [AEM creación de](#aem-authoring-features) depende de sus necesidades específicas.
 
-Para formularios simples que solo recopilan información básica como nombres y correos electrónicos (como formularios de contacto, formularios de generación de posibles clientes o formularios de solicitud de servicio) y donde solo necesita los datos para ir a una hoja de cálculo, la variable [Creación basada en documentos](/help/edge/docs/forms/create-forms.md) es un ajuste perfecto. Puede crear estos formularios como lo haría con un documento de Google Docs.
+Para formularios simples que solo recopilan información básica como nombres y correos electrónicos (como formularios de contacto, formularios de generación de posibles clientes o formularios de solicitud de servicio) y donde solo necesita los datos para ir a una hoja de cálculo, la variable [Creación basada en documentos](/help/edge/docs/forms/create-forms.md) es un ajuste perfecto. Puede crear estos formularios como lo haría con un documento en Google Sheets o Microsoft Excel.
 
 AEM Si los formularios se vuelven más complejos, como requerir varios paneles, reglas complejas y lógica empresarial, manipulación de datos, integración con sistemas externos o flujos de trabajo optimizados mediante funciones de la aplicación de, entonces [AEM Creación de](/help/forms/creating-adaptive-form-core-components.md) es una mejor opción.
 
@@ -57,9 +58,9 @@ AEM La creación basada en documentos ofrece un conjunto básico de funciones y 
 
 >[!BEGINTABS]
 
->[!TAB Document-based authoring]
+>[!TAB Document-based Authoring ]
 
-Document-based authoring is a versatile option suitable for creating simple forms with essential functionalities. It allows you to integrate various input types like text fields, dropdown menus, and radio buttons, enabling you to collect user data effectively. It offers a basic version of rules to add dynamic behaviour to forms. Key features of Document-based authoring are: 
+Document-based Authoring  is a versatile option suitable for creating simple forms with essential functionalities. It allows you to integrate various input types like text fields, dropdown menus, and radio buttons, enabling you to collect user data effectively. It offers a basic version of rules to add dynamic behaviour to forms. Key features of Document-based Authoring  are: 
 
 * **[HTML5-based Form Field components](/help/edge/docs/forms/form-components.md)**: AEM Forms Edge Delivery Services allow you to create user-friendly and interactive forms using form components based on HTML5 [input types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  elements. These components cater to different types of data collection and can be easily customized to fit your specific needs.  
 
@@ -79,7 +80,7 @@ Document-based authoring is a versatile option suitable for creating simple form
 
 >[!TAB AEM Authoring]
 
-AEM Authoring unlocks additional capabilities beyond the document-based authoring, empowering you to build more complex and interactive forms. In additon to the features of Document-based authoring, AEM authoring offers the following additional features:  
+AEM Authoring unlocks additional capabilities beyond the Document-based Authoring , empowering you to build more complex and interactive forms. In additon to the features of Document-based Authoring , AEM authoring offers the following additional features:  
 
 * Advanced Rules: Define logic-based actions within your forms. You can use rules to conditionally show or hide form sections, pre-populate fields based on user input, and perform various validations to ensure data integrity.
 
@@ -113,7 +114,7 @@ La creación basada en documentos permite crear formularios utilizando herramien
 
 #### AEM Funciones de creación de
 
-AEM La creación de formularios (mediante el Editor de Forms adaptable) proporciona una interfaz WYSIWYG para crear formularios y ofrece todas las capacidades de la creación basada en documentos, además de una amplia gama de funciones adicionales:
+AEM La creación de documentos proporciona una interfaz WYSIWYG (editor de Forms adaptable) para crear formularios y ofrece todas las capacidades de la creación basada en documentos, además de una amplia gama de funciones adicionales:
 
 * Editor de reglas avanzado para crear lógica compleja.
 * Extensibilidad del lado del servidor para funcionalidades personalizadas.
@@ -125,11 +126,11 @@ AEM La creación de formularios (mediante el Editor de Forms adaptable) proporci
 * Modelo de datos de formulario para definir la estructura de datos y las interacciones con varias fuentes de datos.
 * Capacidad para configurar varias acciones de envío para administrar los envíos de formularios, incluido el envío de datos a Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics y muchas más fuentes de datos.
 
-AEM Básicamente, la creación de formularios se basa en la creación basada en documentos, que proporciona un conjunto de herramientas más avanzado para crear y administrar formularios complejos.
+AEM Básicamente, la creación de documentos se basa en la creación basada en documentos, que proporciona un conjunto de herramientas más avanzadas para crear y administrar formularios complejos.
 
 ### Flujo de trabajo de creación
 
-![Creación basada en documentos](/help/edge/assets/document-based-authoring-workflow.png)
+![Creación basada en documentos ](/help/edge/assets/document-based-authoring-workflow.png)
 
 ![AEM creación de](/help/edge/assets/aem-authoring-workflow.png)
 

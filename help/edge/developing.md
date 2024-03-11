@@ -2,17 +2,17 @@
 title: Desarrollo para Edge Delivery Services
 description: AEM Aprenda a desarrollar bloques y personalizar su proyecto de para trabajar con Edge Delivery Services.
 feature: Edge Delivery Services
-source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
+exl-id: c356c03c-af43-43a1-a14e-45f94ccb3970
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 14%
+ht-degree: 29%
 
 ---
 
-
 # Desarrollo para Edge Delivery Services {#developing-edge}
 
-Edge Delivery Services se basa en el concepto de bloques. AEM El paquete incluye una completa biblioteca de bloques predefinidos, que se pueden ampliar para satisfacer las necesidades de cada proyecto. El código de los proyectos de Edge Delivery Services se administra en GitHub.
+Edge Delivery Services se basa en el concepto de bloques. AEM incluye una completa biblioteca de bloques predefinidos, que se puede ampliar para satisfacer las necesidades de cada proyecto.  El código de los proyectos de Edge Delivery Services se administra en GitHub.
 
 ## Bloques {#blocks}
 
@@ -26,7 +26,7 @@ Consulte la [Sección Generar](/help/edge/developer/block-collection.md) Consult
 
 Edge Delivery aprovecha GitHub para que pueda administrar e implementar código directamente desde su repositorio de GitHub.
 
-AEM Los autores pueden crear contenido mediante la creación basada en documentos o contenido en el Editor universal, de manera que se pueda crear contenido de manera que se pueda crear con el Editor universal. Los desarrolladores pueden personalizar la funcionalidad del sitio utilizando CSS y JavaScript en GitHub, independientemente de cómo creen el contenido los autores.
+AEM Los autores pueden crear contenido mediante la creación basada en documentos o contenido en el modo de creación con el Editor universal, en el modo de creación basada en documentos o en el modo de creación de contenido con el Editor universal. Los desarrolladores pueden personalizar la funcionalidad del sitio utilizando CSS y JavaScript en GitHub, independientemente de cómo creen el contenido los autores.
 
 Los sitios web se crean automáticamente para cada una de las ramas, desde la previsualización de contenido hasta la producción. Todos los recursos que introduce en el repositorio de GitHub están disponibles en el sitio web sin un proceso de compilación.
 

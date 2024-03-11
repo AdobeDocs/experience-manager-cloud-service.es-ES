@@ -3,10 +3,10 @@ title: Creación de contenido para Edge Delivery Services
 description: Descubra cómo funciona la creación de contenido con los Edge Delivery Services AEM y cómo crear contenido de con los Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
-source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 21%
+ht-degree: 17%
 
 ---
 
@@ -17,9 +17,9 @@ Con Edge Delivery Services, la creación es fácil, rápida y flexible.  Tiene 
 * [Creación basada en documentos](#document-based) - Como Microsoft Word o Google Docs
 * [Editor universal](#universal-editor) AEM - Una interfaz de usuario moderna para crear contenido dentro de la
 
-## Creación basada en documentos {#document-based}
+## Creación basada en documentos  {#document-based}
 
-En el caso de la creación basada en documentos, puede trabajar con una variedad de fuentes, como Microsoft Word y Google Docs. Los documentos de estas fuentes se convierten en páginas del sitio web. Encabezados, listas, imágenes, elementos de fuente, vídeos se pueden transferir desde la fuente inicial a su sitio web. Puede añadir metadatos con fines de SEO o utilizar bloques para trabajar con contenido estructurado y añadir funcionalidad.
+En el caso de la creación basada en documentos , puede trabajar con una variedad de fuentes, como Microsoft Word y Google Docs. Los documentos de estas fuentes se convierten en páginas del sitio web. Encabezados, listas, imágenes, elementos de fuente, vídeos se pueden transferir desde la fuente inicial a su sitio web. Puede añadir metadatos con fines de SEO o utilizar bloques para trabajar con contenido estructurado y añadir funcionalidad.
 
 Para obtener más información sobre la creación basada en documentos, consulte [este documento se encuentra en la documentación de Edge Delivery Services.](/help/edge/docs/authoring.md)
 

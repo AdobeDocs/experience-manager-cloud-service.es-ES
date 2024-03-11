@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: b3bfc841f0609e1e529c97dd1f11d16de561701c
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '892'
-ht-degree: 92%
+ht-degree: 86%
 
 ---
 
@@ -58,7 +58,7 @@ Para obtener información sobre cómo acceder a la vista Recursos y algunas de l
 
 Con Edge Delivery, puede crear entornos de desarrollo rápidos en los que los autores pueden actualizar y publicar contenido rápidamente y en los que se pueden iniciar nuevos sitios rápidamente. 
 
-Integre AEM Assets con la creación basada en documentos para Edge Delivery Services para permitir que los autores de sitios web utilicen las imágenes disponibles en repositorios de AEM Assets durante la creación de documentos en Microsoft Word o Google Docs. Para obtener más información, consulte [Integración de AEM Assets con la creación basada en documentos](/help/edge/using.md#integrate-assets-edge).
+Integre AEM Assets con la creación basada en documentos para Edge Delivery Services para permitir que los autores de sitios web utilicen las imágenes disponibles en repositorios de AEM Assets durante la creación de documentos en Microsoft Word o Google Docs. Para obtener más información, consulte [Integrar AEM Assets con la creación basada en documentos](/help/edge/using.md#integrate-assets-edge).
 
 ## Integración con Adobe Journey Optimizer {#integration-with-ajo}
 

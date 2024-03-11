@@ -4,7 +4,7 @@ description: Este tutorial le ayuda a ponerse en marcha con un nuevo proyecto de
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 14171647dce7d2f6ce985616035eefa62c6955db
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '1878'
 ht-degree: 0%
@@ -18,11 +18,11 @@ En la era digital de hoy en día, la creación de formularios fáciles de usar e
 
 Estos formularios envían datos directamente a un archivo de Microsoft Excel o Google Sheets, lo que le permite utilizar un ecosistema dinámico y API sólidas de Google Sheets, Microsoft Excel y Microsoft Sharepoint para procesar fácilmente los datos enviados o iniciar un flujo de trabajo empresarial existente.
 
-AEM Forms proporciona un bloque, conocido como bloque de Forms adaptable, para ayudarle a crear fácilmente formularios para capturar y almacenar los datos capturados. AEM Puede crear un nuevo proyecto de preequipado con el bloque de Forms adaptable o agregar el bloque de Forms AEM adaptable a un proyecto de existente.
+AEM Forms proporciona un bloque, conocido como bloque de Forms adaptable, para ayudarle a crear fácilmente formularios para capturar y almacenar los datos capturados. AEM Puede crear un nuevo proyecto de preconfigurado con el bloque de Forms adaptable o agregar el bloque de Forms AEM adaptable a un proyecto de existente.
 
 Este tutorial de AEM Forms le guía a través de la creación, la previsualización y la publicación de su propio formulario personalizado con un nuevo proyecto de Adobe Experience Manager AEM () Forms. También aprenderá a agregar el bloque de Forms AEM adaptable a un proyecto de existente.
 
-* **[AEM Cree un nuevo proyecto de preequipado con el bloque de Forms adaptable](#create-a-new-eds-project-pre-equipped-with-adaptive-forms-block)**
+* **[AEM Cree un nuevo proyecto de preconfigurado con el bloque de Forms adaptable](#create-a-new-eds-project-pre-configured-with-adaptive-forms-block)**
 * **[Añadir un bloque de Forms AEM adaptable a un proyecto de existente](#add-adaptive-forms-block-to-an-existing-eds-project)**
 
 
@@ -37,7 +37,7 @@ Este tutorial de AEM Forms le guía a través de la creación, la previsualizaci
 **¡Cuidado!** Este tutorial utiliza macOS, Chrome y Visual Studio Code. Aunque los pasos se pueden adaptar para otras configuraciones, las capturas de pantalla y los elementos específicos de la interfaz de usuario pueden diferir según el sistema operativo, el explorador y el editor de código que haya elegido.
 
 
-## AEM Cree un nuevo proyecto de preequipado con el bloque de Forms adaptable
+## AEM Cree un nuevo proyecto de preconfigurado con el bloque de Forms adaptable
 
 La plantilla de plantillas de AEM Forms AEM le permite empezar rápidamente con un proyecto de preconfigurado con el bloque de Forms adaptable. AEM Es la forma más rápida y sencilla de seguir las prácticas recomendadas de los usuarios y empezar a crear formularios de forma directa, y con mayor rapidez y facilidad.
 

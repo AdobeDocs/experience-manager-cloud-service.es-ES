@@ -2,10 +2,10 @@
 title: Notas de la versión 2023.9.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2023.9.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: 3bec7e0387a5e04a7748a3b7341c17a993c6feb9
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 76%
+ht-degree: 79%
 
 ---
 
@@ -24,9 +24,9 @@ En la siguiente sección se describen las notas de la versión de funciones de l
 >
 >Consulte [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=es) para obtener más información sobre las actualizaciones de la documentación no relacionadas directamente con una versión.
 
-## Fecha de la versión {#release-date}
+## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.9.0) fue el viernes, 28 de septiembre de 2023. La próxima versión con funcionalidades (2023.10.0) está planificada para el viernes, 26 de octubre de 2023.
+La fecha de lanzamiento de [!DNL Adobe Experience Manager] como versión de funcionalidad actual (2023.9.0) de [!DNL Cloud Service] es el viernes, 28 de septiembre de 2023. La próxima versión con funcionalidades (2023.10.0) está planificada para el viernes, 26 de octubre de 2023.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
@@ -56,15 +56,15 @@ Ahora puede asignar un formulario de metadatos a una carpeta específica dentro 
 
 ### Nuevas funciones de la vista Recursos {#admin-view-features}
 
-* **Integrar AEM Assets as a Cloud Service con la creación basada en documentos para Edge Delivery Services**: integre AEM Assets con la creación basada en documentos para Edge Delivery Services para permitir que los autores de sitios web [utilizar imágenes disponibles en repositorios de AEM Assets al crear documentos en Microsoft Word o Google Docs](/help/edge/using.md#integrate-assets-edge).
+* **Integrar AEM Assets as a Cloud Service con la creación basada en documentos para Edge Delivery Services**: Integre AEM Assets con la creación basada en documentos para Edge Delivery Services para permitir que los autores de sitios web [utilizar imágenes disponibles en repositorios de AEM Assets al crear documentos en Microsoft Word o Google Docs](/help/edge/using.md#integrate-assets-edge).
 
 * **Extraer archivos .zip**: capacidad para seleccionar archivos ZIP administrados en Experience Manager y [extracción de los archivos directamente en el Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) sin descargarlos.
 
   ![Fijar elementos para grupos](/help/release-notes/assets/extract-archive.png)
 
-### Funciones previas al lanzamiento disponibles en [!DNL Experience Manager Assets] {#prerelease-features-assets}
+### Nuevas funciones disponibles en [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
-* **Dynamic Media**: [compatibilidad con subtítulos y pistas de audio múltiples para vídeos en Dynamic Media](/help/assets/dynamic-media/video.md#about-msma). Ahora se pueden añadir fácilmente varios subtítulos y pistas de audio a un vídeo principal. Esta capacidad significa que los vídeos son accesibles para una audiencia global. Se puede personalizar un único vídeo inicial publicado para una audiencia global en varios idiomas y cumplir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
+* **Dynamic Media**: [compatibilidad con subtítulos múltiples y pistas de audio múltiple para vídeos en Dynamic Media](/help/assets/dynamic-media/video.md#about-msma): ahora se pueden añadir fácilmente varios subtítulos y varias pistas de audio a un vídeo principal. Esta posibilidad significa que los vídeos son accesibles para todo el público global. Puede personalizar un solo vídeo principal publicado para un público global en varios idiomas y seguir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
 
   ![Pestaña Subtítulos y pistas de audio en la página Propiedades de un recurso de vídeo seleccionado.](/help/release-notes/assets/msma-aem-cs.png)*Pestaña Subtítulos y pistas de audio en la página Propiedades de un recurso de vídeo seleccionado.*
 
@@ -97,11 +97,11 @@ Ahora puede asignar un formulario de metadatos a una carpeta específica dentro 
 
 * **[Versión de 64 bits de AEM Forms Designer](/help/forms/installing-configuring-designer.md)**: la versión de 64 bits de AEM Forms Designer ofrece un rendimiento, una escalabilidad y una administración de memoria mejorados para potenciar su experiencia de creación de formularios. Con la arquitectura de 64 bits, puede abordar proyectos aún más grandes y complejos con facilidad, lo que garantiza flujos de trabajo de diseño sin problemas y eficiencia optimizada. Aumente sus capacidades de diseño de formularios y disfrute del futuro de AEM Forms Designer con esta versión de vanguardia.
 
-### Programa de adopción temprana {#forms-early-adopter}
+### Programa para primeros usuarios {#forms-early-adopter}
 
-* **[Protect sus documentos con las API de DocAssurance (parte de las API de comunicación)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: las API de DocAssurance le permiten proteger la información confidencial mediante la firma y el cifrado de los documentos. Mediante el cifrado, el contenido de un documento se convierte a un formato ilegible, lo que garantiza que solo los usuarios autorizados puedan acceder. Esta capa reforzada de protección no solo protege los datos valiosos de posibles visitas no autorizadas, sino que también proporciona tranquilidad. Las API de firmas permiten a su organización proteger la seguridad y la privacidad de los documentos PDF de Adobe que distribuye y recibe. Este servicio utiliza firmas digitales y certificaciones para garantizar que solo los destinatarios autorizados puedan modificar los documentos.
+* **[Proteja sus documentos con las API de DocAssurance (parte de las API de comunicación)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: las API de DocAssurance le permiten proteger la información confidencial mediante la firma y el cifrado de los documentos. Mediante el cifrado, el contenido de un documento se transforma en un formato ilegible, lo que garantiza que solo los usuarios autorizados puedan obtener acceso. Esta capa de protección fortificada no solo protege los datos valiosos de miradas no autorizadas, sino que también proporciona tranquilidad. Las API de firma permiten a su organización proteger la seguridad y la privacidad de los documentos PDF de Adobe que distribuye y recibe. Este servicio utiliza firmas digitales y certificación para garantizar que solo los destinatarios previstos puedan modificar los documentos.
 
-  Puede escribir a `aem-forms-early-adopter-program@adobe.com` desde su id de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez y solicitar acceso a esta capacidad.
+  Puede escribir a `aem-forms-early-adopter-program@adobe.com` desde su ID de correo electrónico oficial para unirse al programa de primeros usuarios y solicitar acceso a esta posibilidad.
 
 * **[Forms adaptable sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=es)**: utilice Forms adaptable sin encabezado para permitir que los desarrolladores creen, publiquen y administren formularios interactivos a los que se puede acceder e interactuar mediante API, en lugar de hacerlo a través de una interfaz gráfica de usuario tradicional. Los formularios adaptables sin encabezado le ayudan a:
 
