@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
+source-git-commit: 67d9eaaf18725403f6a152b04e022cdca6902de0
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '932'
 ht-degree: 2%
 
 ---
@@ -41,6 +41,13 @@ Edge Delivery Services aprovecha GitHub para que los clientes puedan administrar
 ![AEM Sidekick de instalación](/help/edge/assets/install-aem-sidekick.png)
 
 Los Edge Delivery Services de AEM Forms proporcionan un bloque de formularios denominado [Bloque de Forms adaptable](/help/edge/docs/forms/create-forms.md) para agregar un formulario al sitio de Edge Delivery Services.
+
+La elección entre [creación basada en documentos](#document-based-authoring-features) y [AEM creación de](#aem-authoring-features) depende de sus necesidades específicas.
+
+Para formularios simples que solo recopilan información básica como nombres y correos electrónicos (como formularios de contacto, formularios de generación de posibles clientes o formularios de solicitud de servicio) y donde solo necesita los datos para ir a una hoja de cálculo, la variable [Creación basada en documentos](/help/edge/docs/forms/create-forms.md) es un ajuste perfecto. Puede crear estos formularios como lo haría con un documento de Google Docs.
+
+AEM Si los formularios se vuelven más complejos, como requerir varios paneles, reglas complejas y lógica empresarial, manipulación de datos, integración con sistemas externos o flujos de trabajo optimizados mediante funciones de la aplicación de, entonces [AEM Creación de](/help/forms/creating-adaptive-form-core-components.md) es una mejor opción.
+
 
 ### AEM Características principales de la creación basada en documentos y la creación de
 
@@ -119,6 +126,13 @@ AEM La creación de formularios (mediante el Editor de Forms adaptable) proporci
 * Capacidad para configurar varias acciones de envío para administrar los envíos de formularios, incluido el envío de datos a Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics y muchas más fuentes de datos.
 
 AEM Básicamente, la creación de formularios se basa en la creación basada en documentos, que proporciona un conjunto de herramientas más avanzado para crear y administrar formularios complejos.
+
+### Flujo de trabajo de creación
+
+![Creación basada en documentos](/help/edge/assets/document-based-authoring-workflow.png)
+
+![AEM creación de](/help/edge/assets/aem-authoring-workflow.png)
+
 
 ## Empezar a crear formularios
 
