@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '576'
 ht-degree: 1%
 
 ---
@@ -80,12 +80,6 @@ Redirigir a un usuario a otra página después del envío del formulario puede m
 Para redirigir la página de &quot;agradecimiento&quot; a una página diferente, use [redirecciones de sitios web](https://www.aem.live/docs/redirects) hoja de cálculo.
 
 
-## Más información
+## Consulte también
 
-* [Componentes de formulario](/help/edge/docs/forms/form-components.md)
-* [Propiedades del campo de formulario](/help/edge/docs/forms/eds-form-field-properties)
-* [Creación y previsualización de un formulario](/help/edge/docs/forms/create-forms.md)
-* [Habilitar formulario para enviar datos](/help/edge/docs/forms/submit-forms.md)
-* [Publicar un formulario en la página de Sites](/help/edge/docs/forms/publish-forms.md)
-* [Agregar validaciones a campos de formulario](/help/edge/docs/forms/validate-forms.md)
-* [Cambiar temáticas y estilo de formulario](/help/edge/docs/forms/style-theme-forms.md)
+{{see-more-forms-eds}}

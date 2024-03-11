@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -27,21 +27,20 @@ Estos servicios le permiten:
 
 ## Información general sobre Edge Delivery Services AEM Forms {#edge-overview}
 
-El diagrama siguiente ilustra cómo se pueden editar formularios en Microsoft Excel o en hojas de Google (creación basada en documentos ) y publicar en Edge Delivery Services. AEM También muestra el método de publicación de la mediante el Editor de Forms AEM adaptable (creación de la).
+Los servicios de envío perimetral de AEM Forms son un conjunto de servicios componibles que permiten un alto grado de flexibilidad en la forma en que se crean formularios en el sitio web. AEM Puede utilizar tanto la administración de contenido de la con [AEM creación de](/help/forms/creating-adaptive-form-core-components.md) así como [Creación basada en documentos](/help/edge/docs/forms/create-forms.md). Los Edge Delivery Services de AEM Forms también proporcionan un bloque de formularios denominado [Bloque de Forms adaptable](/help/edge/docs/forms/create-forms.md) para agregar un formulario al sitio de Edge Delivery Services.
+
+Por ejemplo, los formularios se crean directamente en Microsoft Excel o en Hojas de cálculo de Google y estas se transforman en formularios para el sitio web. Cualquier formulario o contenido nuevo, como un campo de formulario nuevo, está disponible instantáneamente en el sitio web sin necesidad de volver a compilar el proceso.
+
+El diagrama siguiente ilustra cómo se pueden editar formularios en Microsoft Excel o en hojas de Google (creación basada en documentos) y publicar en Edge Delivery Services. AEM También muestra el método de publicación de la mediante el Editor de Forms AEM adaptable (creación de la).
 
 ![Arquitectura de Edge Delivery](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-Los servicios de envío perimetral de AEM Forms son un conjunto de servicios componibles que permiten un alto grado de flexibilidad en la forma en que se crean formularios en el sitio web. AEM Puede utilizar tanto la administración de contenido de la con [AEM creación de](/help/forms/creating-adaptive-form-core-components.md) así como [Creación basada en documentos](/help/edge/docs/forms/create-forms.md).
-
-Por ejemplo, los formularios se crean directamente en Microsoft Excel o en Hojas de cálculo de Google y estas se transforman en formularios para el sitio web. Cualquier formulario o contenido nuevo, como un campo de formulario nuevo, está disponible instantáneamente en el sitio web sin necesidad de volver a compilar el proceso.
 
 Los Edge Delivery Services de AEM Forms utilizan GitHub para que los clientes puedan administrar e implementar código directamente desde su repositorio de GitHub. Por ejemplo, puede escribir formularios en [Hojas de cálculo de Google o Microsoft Excel](/help/edge/docs/forms/create-forms.md) y los componentes de los formularios se pueden desarrollar mediante CSS y JavaScript en GitHub.
 
 Cuando esté listo, puede usar el complemento [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content), una extensión del explorador chrome, para obtener una vista previa y publicar actualizaciones de contenido.
 
 ![AEM Sidekick de instalación](/help/edge/assets/install-aem-sidekick.png)
-
-Los Edge Delivery Services de AEM Forms proporcionan un bloque de formularios denominado [Bloque de Forms adaptable](/help/edge/docs/forms/create-forms.md) para agregar un formulario al sitio de Edge Delivery Services.
 
 La elección entre [Creación basada en documentos](#document-based-authoring-features) y [AEM creación de](#aem-authoring-features) depende de sus necesidades específicas.
 

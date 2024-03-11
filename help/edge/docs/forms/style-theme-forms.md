@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '1819'
+source-wordcount: '1821'
 ht-degree: 0%
 
 ---
@@ -823,3 +823,6 @@ También puede segmentar campos individuales por nombre para aplicar estilos ún
 
 Este CSS identifica todos los elementos de entrada que se encuentran dentro de un elemento que tiene la clase `field-otp`. La estructura del HTML del formulario sigue las convenciones del bloque de Forms adaptable, lo que implica que hay un contenedor marcado con la clase &quot;field-top&quot; que contiene el campo con el nombre &quot;top&quot;.
 
+## Consulte también
+
+{{see-more-forms-eds}}

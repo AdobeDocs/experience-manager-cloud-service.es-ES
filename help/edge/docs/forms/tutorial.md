@@ -4,9 +4,9 @@ description: Este tutorial le ayuda a ponerse en marcha con un nuevo proyecto de
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1854'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 En la era digital de hoy en día, la creación de formularios fáciles de usar es esencial para cualquier organización. Los Edge Delivery Services de AEM Forms (EDS) le permiten crear formularios utilizando herramientas conocidas como Google Docs y Microsoft Office.
 
-Estos formularios envían datos directamente a un archivo de Microsoft Excel o Google Sheets, lo que le permite utilizar un ecosistema dinámico y API sólidas de Google Sheets, Microsoft Excel y Microsoft Sharepoint para procesar fácilmente los datos enviados o iniciar un flujo de trabajo empresarial existente.
+Estos formularios envían datos directamente a un archivo de Microsoft Excel o Google Sheets, lo que le permite utilizar un ecosistema dinámico y API sólidas de Google Sheets, Microsoft Excel y Microsoft SharePoint para procesar fácilmente los datos enviados o iniciar un flujo de trabajo empresarial existente.
 
 AEM Forms proporciona un bloque, conocido como bloque de Forms adaptable, para ayudarle a crear fácilmente formularios para capturar y almacenar los datos capturados. AEM Puede crear un nuevo proyecto de preconfigurado con el bloque de Forms adaptable o agregar el bloque de Forms AEM adaptable a un proyecto de existente.
 
@@ -127,16 +127,16 @@ Para copiar el contenido de muestra en su propia carpeta de contenido y dirigir 
       Si utiliza Microsoft SharePoint, la ruta de la carpeta utiliza el siguiente formato:
 
       ```HTML
-      https://<tenant>.sharepoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
+      https://<tenant>.SharePoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
       ```
 
       Por ejemplo,
 
       ```HTML
-      https://adobe.sharepoint.com/sites/wkndforms/Shared%20Documents/wefinance
+      https://adobe.SharePoint.com/sites/wkndforms/Shared%20Documents/wefinance
       ```
 
-      Para obtener más información sobre la administración de archivos con en Microsoft SharePoint, consulte [Cómo usar Adobe Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint).
+      Para obtener más información sobre la administración de archivos con en Microsoft SharePoint, consulte [Cómo usar Adobe SharePoint](https://www.aem.live/docs/setup-customer-SharePoint).
 
 
 
@@ -299,7 +299,5 @@ Si encuentra algún error de linting, puede evitarlo. Abra el [Proyecto EDS]/pac
 
 ## Consulte también
 
-* [Crear un formulario con hojas de Google o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Envíe formularios directamente a las hojas de cálculo de Microsoft Excel o Google](/help/edge/docs/forms/submit-forms.md)
-* [Cambiar la apariencia de los formularios](/help/edge/docs/forms/style-theme-forms.md)
+{{see-more-forms-eds}}
 
