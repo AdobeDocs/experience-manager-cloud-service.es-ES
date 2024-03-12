@@ -1,18 +1,18 @@
 ---
-title: Configurar la página de agradecimiento o el formulario de redirección después del envío
+title: Mostrar un mensaje de agradecimiento personalizado después del envío del formulario
 description: Aprenda a configurar las páginas de agradecimiento y la redirección del bloque de Forms para optimizar la experiencia del usuario y optimizar sus recorridos.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '195'
 ht-degree: 4%
 
 ---
 
-# Mostrar la página de agradecimiento o el formulario de redirección después del envío
+# Mostrar un mensaje de agradecimiento personalizado después del envío del formulario
 
 Una vez que un usuario envía un formulario, es crucial proporcionar una experiencia fluida a través de un mensaje de agradecimiento. Esto no solo confirma el envío correcto, sino que también aumenta la satisfacción del usuario y le guía en su recorrido.
 

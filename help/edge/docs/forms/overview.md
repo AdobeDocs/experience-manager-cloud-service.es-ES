@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 0%
@@ -84,7 +84,7 @@ En esencia, [AEM Creación de](/help/forms/creating-adaptive-form-core-component
 >
 > AEM La capacidad Creación de segmentos de la página está disponible en el programa de adopción anticipada. Si está interesado, envíe un correo electrónico rápido desde su dirección de trabajo a aem-forms-ea@adobe.com para solicitar acceso a la funcionalidad.
 
-### Edge Delivery Services de AEM Forms: Creación. Publicación y envío de Forms
+### Edge Delivery Services de AEM Forms: Creación, publicación y envío de Forms
 
 AEM Los siguientes diagramas ilustran el proceso de creación, publicación y envío de formularios mediante la creación y el procesamiento basados en documentos de la creación de formularios y de la creación de formularios basados en la creación de documentos
 

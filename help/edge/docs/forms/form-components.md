@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 2%
+source-wordcount: '937'
+ht-degree: 3%
 
 ---
 
@@ -64,3 +64,6 @@ Cada componente del formulario incluye varias propiedades que le permiten contro
 | Comprobado | Casilla de verificación, radio | Determina si el campo está seleccionado de forma predeterminada. El atributo activado es una propiedad booleana que se utiliza con las entradas de casilla de verificación y radio. Cuando se establece en true, indica que el campo está seleccionado de forma predeterminada cuando se carga el formulario. |
 | Fieldset | Todos | Agrupa campos para crear secciones visualmente distintas dentro de un formulario. El elemento fieldset agrupa los campos relacionados dentro de un formulario, separándolos visualmente para mejorar la organización y la experiencia del usuario. </br> Para organizar un conjunto de campos dentro de un conjunto de campos, simplemente utilice el `fieldset` y especifique su atributo name. En el ejemplo siguiente, demostramos cómo se encapsulan los botones de opción dentro de un solo conjunto de campos para mejorar la organización. ![Ejemplo de conjunto de campos](/help/edge/assets/fieldset-example.png) |
 
+## Consulte también
+
+{{see-more-forms-eds}}

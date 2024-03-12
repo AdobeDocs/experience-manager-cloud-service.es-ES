@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 # Preparar la hoja de cálculo para aceptar datos
 
 
-Una vez que haya [creación y previsualización del formulario](/help/edge/docs/forms/create-forms.md)Sin embargo, es hora de permitir que la hoja de cálculo correspondiente comience a recibir datos.
+Una vez que haya [creación y previsualización del formulario](/help/edge/docs/forms/create-forms.md)Sin embargo, es hora de permitir que la hoja de cálculo correspondiente comience a recibir datos. Puede habilitar manualmente la hoja de cálculo para aceptar datos o utilizar las API de administrador para permitir que una hoja de cálculo acepte datos.
 
 ![Ecosistema de creación basado en documentos](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -24,7 +24,10 @@ Una vez que haya [creación y previsualización del formulario](/help/edge/docs/
 
 -->
 
-Para habilitar la hoja de cálculo:
+
+## Habilitar manualmente la hoja de cálculo para aceptar datos
+
+Para permitir que la hoja de cálculo acepte datos
 
 1. Abra la hoja de cálculo que tiene el formulario y anexe una hoja nueva, cambiando el nombre a `incoming`.
 
@@ -61,8 +64,7 @@ Una vez configurada la hoja para recibir datos, puede [previsualizar el formular
 >
 >  Las hojas &quot;compartidas por defecto&quot; nunca deben contener información personal identificable o datos confidenciales que no le resulte cómodo tener acceso público.
 
-
-## (Opcional) Utilice las API de administrador para permitir que una hoja de cálculo acepte datos
+### Utilice las API de administrador para permitir que una hoja de cálculo acepte datos
 
 También puede enviar una solicitud de POST al formulario para permitir que acepte datos y configure los encabezados del `incoming` hoja. Al recibir la solicitud del POST, el servicio analiza el cuerpo de la solicitud y genera de forma autónoma los encabezados y hojas esenciales necesarios para la ingesta de datos.
 
@@ -151,7 +153,6 @@ Para utilizar las API de administrador para permitir que una hoja de cálculo ac
    El formulario ahora está habilitado para aceptar datos. También observará los siguientes cambios en la hoja de cálculo:
 
 ## Automático Cambia a la hoja una vez que está habilitada para aceptar datos.
-
 
 Una vez que la hoja está configurada para recibir datos, se observan los siguientes cambios en la hoja de cálculo:
 
@@ -284,7 +285,7 @@ Existen varias formas de dar formato a los datos del formulario en el cuerpo del
     https://main--portal--wkndforms.hlx.live/contact-us
   ```
 
-A continuación, puede personalizar el mensaje de agradecimiento, [configurar una página de agradecimiento](/help/edge/docs/forms/thank-you-page-form.md), o [establecer redirecciones](/help/edge/docs/forms/thank-you-page-form.md).
+A continuación, puede [personalizar el mensaje de agradecimiento](/help/edge/docs/forms/thank-you-page-form.md).
 
 ## Consulte también
 
