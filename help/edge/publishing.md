@@ -3,12 +3,13 @@ title: Publicación de contenido para Edge Delivery Services
 description: Descubra cómo funciona la publicación de contenido con los Edge Delivery Services AEM y cómo publicar contenido con los Edge Delivery Services de la.
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
-source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
+source-git-commit: 3ee1ba83518c3d4fba59b0c98b31e5c63a2eb6ab
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '295'
 ht-degree: 0%
 
 ---
+
 
 # Publicación de contenido para Edge Delivery Services {#publishing-edge}
 
@@ -31,9 +32,13 @@ El flujo de información al publicar es el siguiente. Una vez que el autor inici
 
 1. AEM El autor del contenido publica contenido de la en el editor universal.
 1. Un evento de publicación se inserta en la cola de canalización de Adobe.
-1. El servicio de publicación de entrega perimetral reenvía los eventos relevantes a la API de administración de entrega perimetral.
-1. Edge Delivery extrae e ingiere el HTML AEM semántico de Autor de la.
+1. El servicio de publicación de Edge Delivery Services reenvía los eventos relevantes a la API de administración de Edge Delivery Services.
+1. Edge Delivery extrae e ingiere el HTML AEM semántico del autor de la.
 1. AEM Se actualiza el estado de publicación de la.
+
+>[!NOTE]
+>
+>De forma predeterminada, la API de administración de Edge Delivery Services no está protegida y se puede utilizar para publicar o cancelar la publicación de documentos sin autenticación. Para configurar la autenticación para la API de administrador como se documenta en [Configurar la autenticación para autores](https://www.aem.live/docs/authentication-setup-authoring)Sin embargo, el proyecto debe estar aprovisionado con una API_KEY, que concede acceso al servicio de publicación. [Póngase en contacto con el equipo de Adobe en Slack](/help/edge/docs/slack.md) para obtener orientación.
 
 ## Cómo empezar a trabajar {#how-to-get-started}
 
