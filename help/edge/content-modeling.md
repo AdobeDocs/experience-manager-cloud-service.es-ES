@@ -1,13 +1,13 @@
 ---
 title: AEM Modelado de contenido para la creación de con proyectos de Edge Delivery Services
 description: AEM Aprenda cómo funciona el modelado de contenido para la creación de contenido con proyectos de Edge Delivery Services y para crear su propio contenido.
-source-git-commit: e9c882926baee001170bad2265a1085e03cdbedf
+exl-id: e68b09c5-4778-4932-8c40-84693db892fd
+source-git-commit: 22a631d394de1c0fb934d9703e966c8287aef391
 workflow-type: tm+mt
-source-wordcount: '2097'
+source-wordcount: '2095'
 ht-degree: 0%
 
 ---
-
 
 # AEM Modelado de contenido para la creación de con proyectos de Edge Delivery Services {#content-modeling}
 
@@ -351,7 +351,7 @@ Todo lo demás se procesará como texto sin formato.
 
 #### Contraer campo {#field-collapse}
 
-El colapso de campo es el mecanismo para combinar varios valores de campo en un único elemento semántico basado en una convención de nombres que utiliza los sufijos `Title`, `Type`, `Alt`, y `Text` (con distinción de mayúsculas y minúsculas). Cualquier propiedad que termine con cualquiera de esos sufijos no se considerará un valor, sino como un atributo de otra propiedad.
+El colapso de campo es el mecanismo para combinar varios valores de campo en un único elemento semántico basado en una convención de nombres que utiliza los sufijos `Title`, `Type`, `MimeType`, `Alt`, y `Text` (con distinción de mayúsculas y minúsculas). Cualquier propiedad que termine con cualquiera de esos sufijos no se considerará un valor, sino como un atributo de otra propiedad.
 
 ##### Imágenes {#image-collapse}
 
@@ -624,7 +624,13 @@ Asegúrese de que la hoja de cálculo también se añada a la asignación de rut
 
 ### Propiedades de página {#page-properties}
 
-También es posible definir un modelo de componente para los metadatos de página, que se pondrán a disposición del autor como pestaña del cuadro de diálogo de propiedades de página de AEM Sites.
+AEM Muchas de las propiedades de página predeterminadas disponibles en los documentos se asignan a los metadatos de página correspondientes de un documento. Esto incluye, por ejemplo `title`, `description`, `robots`, `canonical url` o `keywords`. AEM También hay algunas propiedades específicas de la:
+
+* `cq:lastModified` as `modified-time` en formato ISO8601
+* La última vez que se publicó el documento como `published-time` en formato ISO8601
+* `cq:tags` as `cq-tags` como lista separada por comas de los ID de etiqueta.
+
+También es posible definir un modelo de componente para los metadatos de página personalizados, que se pondrán a disposición del autor como una pestaña del cuadro de diálogo de propiedades de página de AEM Sites.
 
 Para ello, cree un modelo de componentes con la ID `page-metadata`.
 
@@ -633,15 +639,10 @@ Para ello, cree un modelo de componentes con la ID `page-metadata`.
   "id": "page-metadata",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "theme",
       "label": "Theme"
     }
   ]
 }
 ```
-
-Hay algunos nombres de campo que tienen un significado especial y que se omitirán al servir a la IU del cuadro de diálogo de creación:
-
-* **`cq:tags`** - De forma predeterminada, `cq:tags` no se añaden a los metadatos. Añadiéndolos al `page-metadata` El modelo agregará los ID de etiqueta como una lista separada por comas `tags` metaetiqueta en la cabeza.
-* **`cq:lastModified`** - `cq:lastModified` agregará sus datos como `last-modified` a la cabeza.
