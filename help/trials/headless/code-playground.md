@@ -4,7 +4,7 @@ description: Explore la recuperación de contenido JSON desde su entorno de prue
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 96%
@@ -64,7 +64,7 @@ En la línea 6, el parámetro de consulta `publishHost` lee los detalles del hos
 Usted configura el cliente sin encabezado de AEM en la línea 12:
 
 ```javascript
-const aemHeadlessClient = new AdobeAemHeadlessClientJs ({
+const aemHeadlessClient = new AdobeAemHeadlessClientJs({
   // Use a proxy to avoid CORS issues
   serviceURL: 'https://102588-505tanocelot.adobeioruntime.net/api/v1/web/aem/proxy',
   headers: {

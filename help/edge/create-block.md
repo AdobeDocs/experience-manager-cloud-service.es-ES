@@ -2,9 +2,9 @@
 title: Creación de bloques instrumentados para su uso con el editor universal
 description: AEM Aprenda a crear bloques instrumentados para utilizarlos con el editor universal en la creación de proyectos de Edge Delivery Services de la creación de la.
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '1204'
+source-wordcount: '1205'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ AEM Esta guía proporciona instrucciones paso a paso para crear bloques instrume
 
 AEM Esta guía requiere necesariamente conocimientos existentes sobre la creación de proyectos con Edge Delivery Services, así como sobre la creación de proyectos con el Editor universal de. Antes de comenzar esta guía, ya debería tener acceso a los Edge Delivery Services y estar familiarizado con sus conceptos básicos, incluidos los siguientes:
 
-* Ha completado la [Tutorial Del Servicio De Entrega De Edge.](/help/edge/developer/tutorial.md)
+Ha completado la [Tutorial del servicio de envío de Edge.](/help/edge/developer/tutorial.md)
 * Tiene acceso a un [Zona protegida de AEM Cloud Service.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * Tiene [se habilitó el editor universal en el mismo entorno de zona protegida.](/help/implementing/universal-editor/getting-started.md)
 * Ha completado la [AEM Guía de introducción para desarrolladores para la creación de contenido con Edge Delivery Services en la creación de](/help/edge/edge-dev-getting-started.md) guía.

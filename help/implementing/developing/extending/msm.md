@@ -2,7 +2,7 @@
 title: Ampliación del Administrador de varios sitios
 description: Obtenga información sobre cómo ampliar la funcionalidad del Administrador de varios sitios.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '2337'
 ht-degree: 1%
@@ -478,7 +478,7 @@ Lo siguiente `LiveActionFactory` clase implementa un `LiveAction` que registra m
       return null;
      }
      @Deprecated
-     public String[] getPropertiesNames () {
+     public String[] getPropertiesNames() {
       return null;
      }
      @Deprecated

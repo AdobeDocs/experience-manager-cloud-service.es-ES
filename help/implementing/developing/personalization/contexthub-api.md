@@ -2,7 +2,7 @@
 title: Referencia de la API de JavaScript de ContextHub
 description: La API de JavaScript de ContextHub está disponible para los scripts cuando se agrega el componente ContextHub a la página
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '4602'
 ht-degree: 2%
@@ -68,7 +68,7 @@ El objeto ContextHub proporciona acceso a todas las tiendas.
 
 ### Funciones (ContextHub) {#functions-contexthub}
 
-#### getAllStores () {#getallstores}
+#### getAllStores() {#getallstores}
 
 Devuelve todas las tiendas registradas de ContextHub.
 
@@ -83,7 +83,7 @@ Un objeto que contiene todos los almacenes de ContextHub. Cada almacén es un ob
 El ejemplo siguiente recupera todos los almacenes y, a continuación, recupera el almacén de geolocalización:
 
 ```javascript
-var allStores = ContextHub.getAllStores ();
+var allStores = ContextHub.getAllStores();
 var geoloc = allStores.geolocation
 ```
 
@@ -127,7 +127,7 @@ Proporciona acceso a los segmentos de ContextHub.
 
 ### Funciones (ContextHub.SegmentEngine.SegmentManager) {#functions-contexthub-segmentengine-segmentmanager}
 
-#### getResolvedSegments () {#getresolvedsegments}
+#### getResolvedSegments() {#getresolvedsegments}
 
 Devuelve los segmentos resueltos en el contexto actual. Esta función no tiene parámetros.
 
@@ -155,7 +155,7 @@ A `ContextHub.Utils.Persistence` objeto. Para obtener información sobre el valo
 
 ### Funciones (ContextHub.Store.Core) {#functions-contexthub-store-core}
 
-#### addAllItems (árbol, opciones) {#addallitems-tree-options}
+#### addAllItems(árbol, opciones) {#addallitems-tree-options}
 
 Combina un objeto de datos o una matriz con los datos almacenados. Cada par clave/valor del objeto o matriz se agrega al almacén (a través de la variable `setItem` función):
 
@@ -193,7 +193,7 @@ A `boolean` valor:
 * Un valor de `true` indica que se agregó la referencia.
 * Un valor de `false` indica que no se añadió ninguna referencia.
 
-#### announcementReadiness (versión) {#announcereadiness}
+#### announcementReadiness() {#announcereadiness}
 
 Déclencheur el `ready` para esta tienda. Esta función no tiene parámetros y no devuelve ningún valor.
 
@@ -213,7 +213,7 @@ Devuelve el valor asociado a una clave.
 
 Object que representa el valor de la clave.
 
-#### getKeys (includeInternals) {#getkeys-includeinternals}
+#### getKeys(includeInternals) {#getkeys-includeinternals}
 
 Recupera las claves del almacén. Opcionalmente, puede recuperar las claves que utiliza internamente el marco de trabajo de ContextHub.
 
@@ -225,7 +225,7 @@ Recupera las claves del almacén. Opcionalmente, puede recuperar las claves que 
 
 Una matriz de nombres de clave ( `string` valores).
 
-#### getReferences () {#getreferences}
+#### getReferences() {#getreferences}
 
 Recupera las referencias del almacén.
 
@@ -401,7 +401,7 @@ Devuelve la respuesta sin procesar almacenada en caché desde la última llamada
 
 Un objeto que representa la respuesta sin procesar.
 
-#### getServiceDetails () {#getservicedetails}
+#### getServiceDetails() {#getservicedetails}
 
 Recupera el objeto de servicio para este objeto ContextHub.Store.JSONPStore. El objeto de servicio contiene la información necesaria para crear la dirección URL del servicio.
 
@@ -521,7 +521,7 @@ Una clase de utilidad para interactuar con cookies.
 
 ### Funciones (ContextHub.Utils.Cookie) {#functions-contexthub-utils-cookie}
 
-#### existe (clave) {#exists-key}
+#### exists(key) {#exists-key}
 
 Determina si existe una cookie.
 
@@ -536,12 +536,12 @@ A `boolean` el valor true indica que la cookie existe.
 ##### Ejemplos {#example-exists}
 
 ```javascript
-if (ContextHub.Utils.Cookie.exists ("name")) {
+if (ContextHub.Utils.Cookie.exists("name")) {
    // conditionally-executed code
 }
 ```
 
-#### getAllItems (filtro) {#getallitems-filter}
+#### getAllItems(filtro) {#getallitems-filter}
 
 Devuelve todas las cookies que tienen claves que coinciden con un filtro.
 
@@ -560,7 +560,7 @@ Un objeto de cookies. Las propiedades de objeto son claves de cookie y los valor
 ##### Ejemplos {#example-getallitems}
 
 ```javascript
-ContextHub.Utils.Cookie.getAllItems ([/^cq-authoring/, /^cq-editor/])
+ContextHub.Utils.Cookie.getAllItems([/^cq-authoring/, /^cq-editor/])
 ```
 
 #### getItem(key) {#getitem-key-1}
@@ -581,7 +581,7 @@ El valor de la cookie, o `null` si no se ha encontrado ninguna cookie para la cl
 ContextHub.Utils.Cookie.getItem("name");
 ```
 
-#### getKeys (filtro) {#getkeys-filter}
+#### getKeys(filtro) {#getkeys-filter}
 
 Devuelve una matriz de claves de cookies existentes que coinciden con un filtro.
 
@@ -600,7 +600,7 @@ Matriz de cadenas en la que cada cadena es la clave de una cookie que coincide c
 ##### Ejemplos {#example-getkeys-1}
 
 ```javascript
-ContextHub.Utils.Cookie.getKeys ([/^cq-authoring/, /^cq-editor/])
+ContextHub.Utils.Cookie.getKeys([/^cq-authoring/, /^cq-editor/])
 ```
 
 #### removeItem(key, options) {#removeitem-key-options-1}
@@ -829,7 +829,7 @@ Esta clase facilita la manipulación de los objetos de datos que se van a almace
 
 ### Funciones (ContextHub.Utils.JSON.tree) {#functions-contexthub-utils-json-tree}
 
-#### addAllItems () {#addallitems}
+#### addAllItems() {#addallitems}
 
 Crea una copia de un objeto de datos y le agrega el árbol de datos a partir de un segundo objeto. La función devuelve la copia y no modifica ninguno de los objetos originales. Cuando los árboles de datos de los dos objetos contienen claves idénticas, el valor del segundo objeto sobrescribe el valor del primer objeto.
 
@@ -911,7 +911,7 @@ Object {
 }
 ```
 
-#### getKeys () {#getkeys}
+#### getKeys() {#getkeys}
 
 Recupera todas las claves del árbol de datos de un objeto. De forma opcional, puede recuperar únicamente las claves secundarias de una clave específica. Si lo desea, también puede especificar un orden de las claves recuperadas.
 
@@ -946,7 +946,7 @@ myObject {
 }
 ```
 
-El `ContextHub.Utils.JSON.tree.getKeys (myObject);` script devuelve la siguiente matriz:
+El `ContextHub.Utils.JSON.tree.getKeys(myObject);` script devuelve la siguiente matriz:
 
 ```javascript
 ["/location", "/location/city", "/location/country", "/location/latitude", "/location/longitude", "/location/weather", "/location/weather/humidity", "/location/weather/precipitation", "/location/weather/temperature", "/location/weather/wind"]
@@ -1072,7 +1072,7 @@ Permite registrar candidatos de tienda y obtener candidatos de tienda registrado
 
 ### Funciones (ContextHub.Utils.storeCandidates) {#functions-contexthub-utils-storecandidates}
 
-#### getRegisteredCandidates (storeType) {#getregisteredcandidates-storetype}
+#### getRegisteredCandidates(storeType) {#getregisteredcandidates-storetype}
 
 Devuelve los tipos de almacén que están registrados como candidatos de almacén. Recupere los candidatos registrados de un tipo de tienda específico o de todos los tipos de tienda.
 
@@ -1084,7 +1084,7 @@ Devuelve los tipos de almacén que están registrados como candidatos de almacé
 
 Un objeto de tipos de almacén. Las propiedades de objeto son los nombres de tipo de almacén y los valores de propiedad son una matriz de candidatos de almacén registrados.
 
-#### getStoreFromCandidates (storeType) {#getstorefromcandidates-storetype}
+#### getStoreFromCandidates(storeType) {#getstorefromcandidates-storetype}
 
 Devuelve un tipo de almacén de los candidatos registrados. Si se registra más de un tipo de almacén con el mismo nombre, la función devuelve el tipo de almacén con la prioridad más alta.
 
@@ -1096,7 +1096,7 @@ Devuelve un tipo de almacén de los candidatos registrados. Si se registra más 
 
 Un objeto que representa el candidato de almacén registrado. Si el tipo de almacén solicitado no está registrado, se genera un error.
 
-#### getSupportedStoreTypes () {#getsupportedstoretypes}
+#### getSupportedStoreTypes() {#getsupportedstoretypes}
 
 Devuelve los nombres de los tipos de almacén que están registrados como candidatos de almacén. Esta función no requiere parámetros.
 

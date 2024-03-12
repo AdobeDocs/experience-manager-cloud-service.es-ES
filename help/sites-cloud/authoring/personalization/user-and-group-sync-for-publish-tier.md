@@ -2,7 +2,7 @@
 title: Registro, inicio de sesión y perfil de usuario
 description: Obtenga información sobre el registro, el inicio de sesión, los datos de usuario y la sincronización de grupos para AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 90%
@@ -37,7 +37,7 @@ AEM Se puede escribir un código de registro personalizado que contenga, como m�
 
 1. Mostrar un componente de AEM personalizado que recopila información de registro
 1. Tras el envío, se utiliza un usuario de servicio aprovisionado correctamente para lo siguiente:
-   1. Verificar que un usuario existente ya no existe utilizando uno de los métodos `findAuthorizables ()` de la API de UserManager
+   1. Verificar que un usuario existente ya no existe utilizando uno de los métodos `findAuthorizables()` de la API de UserManager
    1. Crear un registro de usuario utilizando uno de los métodos `createUser()` de la API de UserManager
    1. Conservar los datos de perfil capturados mediante los métodos `setProperty()` de la Interfaz autorizable 
 1. Flujos opcionales, como exigir al usuario que valide su correo electrónico.

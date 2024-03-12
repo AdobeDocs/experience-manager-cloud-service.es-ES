@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 2%
@@ -85,12 +85,12 @@ Supongamos que está utilizando el siguiente código incrustado de muestra en la
 
    El controlador se carga en el visor mediante `setHandlers`:
 
-   `*viewerInstance*.setHandlers ({ *handler 1*, *handler 2*}, ...`
+   `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
    **Con el ejemplo de código incrustado de muestra anterior, se obtiene el siguiente código:**
 
    ```xml {.line-numbers}
-   s7interactiveimageviewer.setHandlers ({
+   s7interactiveimageviewer.setHandlers({
        quickViewActivate": function(inData) {
            var sku=inData.sku;
            var genericVariable1=inData.genericVariable1;
@@ -100,7 +100,7 @@ Supongamos que está utilizando el siguiente código incrustado de muestra en la
    })
    ```
 
-   Más información sobre `setHandlers ()` método en lo siguiente:
+   Más información sobre `setHandlers()` método en lo siguiente:
 
    * Visualizador de imágenes interactivo - [marineros de mar](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * Visualizador de vídeo interactivo - [marineros de mar](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
@@ -236,7 +236,7 @@ El controlador también requiere una llamada a la función para que funcione la 
 1. Todo el código de setHandlers es similar al siguiente (se ha utilizado el visualizador de vídeo interactivo):
 
    ```xml {.line-numbers}
-   s7interactivevideoviewer.setHandlers ({
+   s7interactivevideoviewer.setHandlers({
        "quickViewActivate": function(inData) {
            var sku=inData.sku;
            loadQuickView(sku);
