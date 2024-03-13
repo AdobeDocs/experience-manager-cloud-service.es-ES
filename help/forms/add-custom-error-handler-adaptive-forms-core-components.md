@@ -6,10 +6,10 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
-source-git-commit: e0607ff37572a586f5a83f2974054ebfb4b7d98f
+source-git-commit: d75d448d631da7af3a37192f0890a38c760ab09b
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 100%
+source-wordcount: '2331'
+ht-degree: 99%
 
 ---
 
@@ -255,6 +255,7 @@ Vamos a añadir el siguiente código al archivo JavaScript para mostrar la respu
        return true; // true - call default error handler, false - don't call default error handler.
    }
    ```
+   En el código anterior, `return true` invoca automáticamente el controlador de error predeterminado. Para evitar que se llame al controlador de error predeterminado de forma predeterminada, incluya `return false`.
 
    >[!NOTE]
    >
