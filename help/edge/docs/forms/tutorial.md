@@ -4,7 +4,7 @@ description: Este tutorial le ayuda a ponerse en marcha con un nuevo proyecto de
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: d0298f3c15264bfa7421ccf0cde752f164829c02
 workflow-type: tm+mt
 source-wordcount: '1850'
 ht-degree: 0%
@@ -124,7 +124,7 @@ Para copiar el contenido de muestra en su propia carpeta de contenido y dirigir 
       Si utiliza Microsoft SharePoint, la ruta de la carpeta utiliza el siguiente formato:
 
       ```HTML
-      https://<tenant>.SharePoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
+      https://<tenant>.SharePoint.com/sites/<sp-site>/Shared%20Documents/<folder-name>
       ```
 
       Por ejemplo,
@@ -271,7 +271,7 @@ Producción: `https://<branch>--<repo>--<owner>.hlx.live/`
 
 AEM Si tiene un proyecto de existente, puede integrar el bloque de Forms adaptable en su proyecto actual para empezar a crear formularios.
 
->
+>[!NOTE]
 >
 >
 > Este paso se aplica a los proyectos creados con [AEM placa de boiler](https://github.com/adobe/aem-boilerplate). AEM Si ha creado el proyecto de con el [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), puede omitir este paso.
