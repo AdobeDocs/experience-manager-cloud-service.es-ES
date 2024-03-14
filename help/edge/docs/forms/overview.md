@@ -2,12 +2,10 @@
 title: Información general sobre Edge Delivery Services AEM Forms
 description: Los Edge Delivery Services de AEM Forms están diseñados para ofrecer un rendimiento máximo, lo que le permite visualizar el futuro de la recopilación de datos y la participación del usuario optimizadas.
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: f4cf79e2cd71a390741987cfcf034e6eed02432d
+source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1017'
 ht-degree: 0%
 
 ---
@@ -20,7 +18,7 @@ Estos servicios le permiten:
 
 * **Cree experiencias de inscripción con las herramientas que elija:** Aumente la eficacia de la creación desacoplando las fuentes de contenido. De forma predeterminada, puede utilizar la creación basada en documentos (Microsoft SharePoint o Google AEM Drive) y la creación de documentos (Editor de Forms adaptable). Puede trabajar con varios orígenes de contenido en el mismo sitio de formularios y utilizar sus herramientas de creación preferidas, como Microsoft Excel, Hojas de cálculo de Google o Editor de Forms adaptable.
 
-* **Ofrezca experiencias excepcionales de inscripción digital:** Ofrezca experiencias de inscripción digital que se carguen y procesen rápidamente. Los tiempos de carga más rápidos y la experiencia de usuario optimizada contribuyen a que las tasas de finalización y conversión de formularios sean más altas.
+* **Ofrezca experiencias excepcionales de inscripción digital:** Ofrezca experiencias de inscripción digital que se carguen y procesen de forma rápida y continua para supervisar el rendimiento de los formularios mediante la supervisión de usuarios reales (RUM). Los tiempos de carga más rápidos y la experiencia de usuario optimizada contribuyen a que las tasas de finalización y conversión de formularios sean más altas.
 
 * **Utilice un conjunto de herramientas fácil de desarrollar:** Los Edge Delivery Services de AEM Forms utilizan HTML simples, CSS moderno y JavaScript convencional para crear experiencias excepcionales, evitando la pronunciada curva de aprendizaje de un módulo específico. Un desarrollador con habilidades básicas de desarrollo web puede personalizar y crear fácilmente componentes y experiencias de formulario. No es necesario esperar a que se ejecute una canalización, solo tiene que registrar el código en GitHub y los cambios estarán activos.
 
@@ -62,6 +60,7 @@ La creación basada en documentos permite crear formularios utilizando herramien
 * Integración de Google reCAPTCHA para la protección contra spam.
 * Capacidad para crear componentes de formulario personalizados para necesidades específicas.
 * Envíe datos de formulario directamente a las direcciones de correo electrónico o a las hojas de cálculo de Microsoft Excel o Google.
+* Supervise el rendimiento de los formularios mediante la monitorización de usuarios reales (RUM)
 
 #### AEM Funciones de creación de
 
@@ -92,9 +91,6 @@ AEM Los siguientes diagramas ilustran el proceso de creación, publicación y en
 
 ![AEM Creación de](/help/edge/assets/aem-authoring-workflow.png)
 
-
-
-
 ## Empezar a crear formularios
 
 * [Introducción a los Edge Delivery Services de AEM Forms](/help/edge/docs/forms/tutorial.md)
@@ -105,20 +101,7 @@ AEM Los siguientes diagramas ilustran el proceso de creación, publicación y en
 * [Agregar secciones repetibles a un formulario&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [Mostrar un mensaje de agradecimiento personalizado después del envío del formulario&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
 * [Componentes de bloque de formulario adaptable y sus propiedades](/help/edge/docs/forms/form-components.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* [Monitorización de usuarios en tiempo real](https://www.aem.live/developer/rum#authentication)
 
 <!-- 
 

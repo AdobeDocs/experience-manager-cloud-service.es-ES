@@ -2,10 +2,8 @@
 title: Mostrar un mensaje de agradecimiento personalizado después del envío del formulario
 description: Aprenda a configurar las páginas de agradecimiento y la redirección del bloque de Forms para optimizar la experiencia del usuario y optimizar sus recorridos.
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
-source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
+source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 4%

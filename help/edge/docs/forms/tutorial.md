@@ -2,9 +2,7 @@
 title: 'Introducción a los Edge Delivery Services de AEM Forms: Tutorial para desarrolladores '
 description: Este tutorial le ayuda a ponerse en marcha con un nuevo proyecto de Adobe Experience Manager Forms AEM (). En diez a veinte minutos, habrá creado sus propios formularios.
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
-source-git-commit: d0298f3c15264bfa7421ccf0cde752f164829c02
+source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
 source-wordcount: '1850'
 ht-degree: 0%

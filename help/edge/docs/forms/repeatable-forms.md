@@ -2,10 +2,8 @@
 title: Agregar secciones repetibles a un formulario
 description: Adición de secciones repetibles a un formulario EDS
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 exl-id: 062d5a88-48ca-421f-bf0d-1483e3cfee28
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 14%
@@ -17,8 +15,6 @@ ht-degree: 14%
 El bloque de Forms adaptable permite agregar o hacer repetible una sección o componente de un formulario. Esto permite a los usuarios introducir información varias veces para el mismo tipo de datos, lo que facilita la recopilación de información, como la experiencia laboral o los antecedentes educativos.
 
 Por ejemplo, considere un formulario utilizado para recopilar información sobre la experiencia laboral de una persona. Puede tener una sección repetible para capturar los detalles de cada trabajo anterior. La sección repetible generalmente contiene campos como nombre de la empresa, cargo, fechas de empleo y responsabilidades del puesto. El usuario puede agregar varias instancias de la sección repetible para introducir información sobre cada trabajo que ha realizado.
-
-
 
 Al final de este artículo, aprenderá lo siguiente:
 
