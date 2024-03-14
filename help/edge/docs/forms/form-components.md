@@ -1,16 +1,16 @@
 ---
-title: Componentes y propiedades de formulario
+title: Componentes de bloque de formulario adaptable y sus propiedades
 description: Este documento proporciona información general sobre los componentes de formulario y sus propiedades disponibles en el servicio de entrega perimetral de AEM Forms.
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '938'
 ht-degree: 3%
 
 ---
 
-# Componentes y propiedades de formulario: servicio de entrega perimetral de AEM Forms
+# Componentes de bloque de formulario adaptable y sus propiedades
 
 Los servicios de envío perimetral de AEM Forms le permiten crear formularios interactivos y fáciles de usar utilizando varios componentes. Estos componentes se adaptan a diferentes tipos de recopilación de datos y se pueden personalizar fácilmente para adaptarlos a sus necesidades específicas.
 

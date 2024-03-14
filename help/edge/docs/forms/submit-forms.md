@@ -3,14 +3,14 @@ title: Preparar la hoja de cálculo para aceptar datos
 description: Cree formularios potentes más rápido con hojas de cálculo y campos de bloque de Forms adaptables.
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1001'
 ht-degree: 1%
 
 ---
 
-# Preparar la hoja de cálculo para aceptar datos
+# Configure las hojas de Google o los archivos de Microsoft Excel para empezar a aceptar datos
 
 
 Una vez que haya [creación y previsualización del formulario](/help/edge/docs/forms/create-forms.md)Sin embargo, es hora de permitir que la hoja de cálculo correspondiente comience a recibir datos. Puede habilitar manualmente la hoja de cálculo para aceptar datos o utilizar las API de administrador para permitir que una hoja de cálculo acepte datos.

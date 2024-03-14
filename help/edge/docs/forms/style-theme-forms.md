@@ -3,14 +3,15 @@ title: Personalización del tema y el estilo de un formulario de servicios de en
 description: Personalización del tema y el estilo de un formulario de servicios de entrega de AEM Forms Edge
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '2012'
+source-wordcount: '2014'
 ht-degree: 0%
 
 ---
 
-# Estilo de campos de formulario
+
+# Personalizar el aspecto de los formularios
 
 Forms es crucial para la interacción de los usuarios en los sitios web, ya que les permite introducir datos. Puede utilizar Hojas de estilo en cascada (CSS) para aplicar estilo a los campos de un formulario, mejorar la presentación visual de los formularios y mejorar la experiencia del usuario.
 
@@ -22,7 +23,7 @@ Al final del artículo:
 
 * Puede comprender la estructura del archivo CSS predeterminado incluido con el bloque de Forms adaptable.
 * Puede comprender la estructura del HTML de los componentes de formulario que proporciona el bloque de Forms adaptable, incluidos los componentes generales y específicos como los desplegables, los grupos de radio y los grupos de casillas de verificación.
-* Aprenda a aplicar estilo a los campos de formulario en función del tipo de campo y los nombres de campo mediante selectores CSS, lo que permite aplicar un estilo coherente o único en función de los requisitos.
+* Aprenderá a aplicar estilo a los campos de formulario en función del tipo de campo y los nombres de campo mediante selectores CSS, lo que permite aplicar un estilo coherente o único en función de los requisitos.
 
 
 ## Explicación de tipos de campos de formulario
@@ -87,7 +88,7 @@ Todos los campos de formulario, excepto los desplegables, los grupos de opción 
 </div>
 ```
 
-* Clases: el elemento div tiene varias clases para dirigirse a elementos y estilos específicos. Necesita el `{Type}-wrapper` o `field-{Name}` para desarrollar un selector CSS para aplicar estilo a un campo de formulario:
+* Clases: el elemento div tiene varias clases para dirigirse a elementos y estilos específicos. Necesita el `{Type}-wrapper` o `field-{Name}` para desarrollar un selector de CSS para aplicar estilo a un campo de formulario:
    * {Type}: identifica el componente por tipo de campo. Por ejemplo, texto (ajustador de texto), número (ajustador de número), fecha (ajustador de fecha).
    * {Name}: identifica el componente por su nombre. El nombre del campo solo puede tener caracteres alfanuméricos. Los múltiples guiones consecutivos del nombre se sustituyen por un solo guión `(-)`, y los guiones inicial y final del nombre de un campo se eliminarán. Por ejemplo, nombre (field-first-name field-wrapper).
    * {FieldId}: es el identificador único del campo, generado automáticamente.
@@ -201,7 +202,7 @@ Para los menús desplegables, la variable `select` se utiliza en lugar de un `in
 
 +++
 
-+++ Selectores CSS para el componente desplegable
++++ Componente desplegable Selectores CSS para
 
 En la siguiente CSS se enumeran algunos selectores CSS de ejemplo para los componentes desplegables.
 
@@ -300,7 +301,7 @@ Al igual que los componentes desplegables, los grupos de radio tienen su propia 
 
 +++
 
-+++ Selectores CSS para el componente desplegable
++++ Selectores CSS para grupos de radio
 
 * Segmentación del conjunto de campos
 
@@ -334,7 +335,7 @@ Este selector se dirige a cualquier conjunto de campos con la clase radio-group-
 
 ### Grupos de casillas
 
-+++ Casilla de verificación Estructura del HTML de grupo
++++ Estructura del HTML del grupo de casillas de verificación
 
 ```HTML
 <fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -370,7 +371,7 @@ Este selector se dirige a cualquier conjunto de campos con la clase radio-group-
 
 +++
 
-+++ Selectores CSS de ejemplo para grupos de radio y casilla de verificación**
++++ Selectores CSS para grupos de casillas de verificación
 
 * Segmentación del contenedor exterior: estos selectores se dirigen a los contenedores más externos de los grupos de radio y casilla de verificación, lo que permite aplicar estilos generales a toda la estructura del grupo. Esto resulta útil para establecer el espaciado, la alineación u otras propiedades relacionadas con el diseño.
 
@@ -798,7 +799,7 @@ Puede aplicar estilo a los campos de formulario en función de su tipo específi
 
 Puede utilizar selectores de CSS para segmentar tipos de campo específicos y aplicar estilos de forma coherente.
 
-**Estructura del HTML**
++++ Estructura del HTML
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -837,8 +838,10 @@ Puede utilizar selectores de CSS para segmentar tipos de campo específicos y ap
 * Cada campo tiene una etiqueta correspondiente, un elemento de entrada y posibles elementos adicionales como marcadores de posición y descripciones.
 
 
++++
 
-**Ejemplo de selectores CSS**
+
++++ Ejemplo de selectores CSS
 
 ```CSS
 /* Target all text input fields */
@@ -853,13 +856,13 @@ Puede utilizar selectores de CSS para segmentar tipos de campo específicos y ap
 }
 ```
 
-
++++
 
 ### Estilo basado en el nombre del campo
 
 También puede segmentar campos individuales por nombre para aplicar estilos únicos.
 
-**Estructura del HTML**
++++ Estructura del HTML
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -883,7 +886,9 @@ También puede segmentar campos individuales por nombre para aplicar estilos ún
 </div>
 ```
 
-**Ejemplo de selector de CSS**
++++
+
++++ Ejemplo de selector de CSS
 
 ```CSS
 .field-otp input {
@@ -891,7 +896,11 @@ También puede segmentar campos individuales por nombre para aplicar estilos ún
 }
 ```
 
+
+
 Este CSS identifica todos los elementos de entrada que se encuentran dentro de un elemento que tiene la clase `field-otp`. La estructura del HTML del formulario sigue las convenciones del bloque de Forms adaptable, lo que implica que hay un contenedor marcado con la clase &quot;field-top&quot; que contiene el campo con el nombre &quot;top&quot;.
+
++++
 
 ## Consulte también
 
