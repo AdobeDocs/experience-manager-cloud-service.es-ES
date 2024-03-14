@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
+source-git-commit: f4cf79e2cd71a390741987cfcf034e6eed02432d
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Por ejemplo, los formularios se crean directamente en Microsoft Excel o en Hojas
 
 El diagrama siguiente ilustra cómo se pueden editar formularios en Microsoft Excel o en hojas de Google (creación basada en documentos) y publicar en Edge Delivery Services. AEM También muestra el método de publicación de la mediante el Editor de Forms AEM adaptable (creación de la).
 
-![Arquitectura de Edge Delivery](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
+![Publicación en Edge Delivery Services AEM y](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
 Los Edge Delivery Services de AEM Forms utilizan GitHub para que los clientes puedan administrar e implementar código directamente desde su repositorio de GitHub. Por ejemplo, puede escribir formularios en [Hojas de Google](/help/edge/docs/forms/create-forms.md) o [Microsoft Excel](/help/edge/docs/forms/create-forms.md) y los componentes de los formularios se pueden desarrollar utilizando CSS y JavaScript en un repositorio de GitHub.
 

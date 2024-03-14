@@ -5,20 +5,31 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: f4cf79e2cd71a390741987cfcf034e6eed02432d
 workflow-type: tm+mt
-source-wordcount: '1821'
+source-wordcount: '2012'
 ht-degree: 0%
 
 ---
 
 # Estilo de campos de formulario
 
-Forms es crucial para la interacción de los usuarios en los sitios web, ya que les permite introducir datos. Esta guía explica los aspectos básicos del diseño de varios campos de formulario en la [Bloque de Forms adaptable](/help/edge/docs/forms/create-forms.md), lo que le ayuda a crear formularios visualmente atractivos y fáciles de usar.
+Forms es crucial para la interacción de los usuarios en los sitios web, ya que les permite introducir datos. Puede utilizar Hojas de estilo en cascada (CSS) para aplicar estilo a los campos de un formulario, mejorar la presentación visual de los formularios y mejorar la experiencia del usuario.
+
+El bloque de Forms adaptable produce una estructura coherente para todos los campos de formulario. La estructura coherente facilita el desarrollo de selectores CSS para seleccionar y aplicar estilo a los campos de formulario en función del tipo de campo y los nombres de campo.
+
+Este documento describe la estructura del HTML para varios componentes de formulario y le ayuda a comprender cómo crear selectores CSS para varios campos de formulario y aplicar estilo a los campos de formulario de un bloque de Forms adaptable.
+
+Al final del artículo:
+
+* Puede comprender la estructura del archivo CSS predeterminado incluido con el bloque de Forms adaptable.
+* Puede comprender la estructura del HTML de los componentes de formulario que proporciona el bloque de Forms adaptable, incluidos los componentes generales y específicos como los desplegables, los grupos de radio y los grupos de casillas de verificación.
+* Aprenda a aplicar estilo a los campos de formulario en función del tipo de campo y los nombres de campo mediante selectores CSS, lo que permite aplicar un estilo coherente o único en función de los requisitos.
+
 
 ## Explicación de tipos de campos de formulario
 
-Antes de profundizar en el estilo, vamos a revisar los tipos de campos de formulario comunes admitidos por el bloque de Forms adaptable:
+Antes de sumergirse en el estilo, vamos a revisar el formulario común [tipos de campo](/help/edge/docs/forms/form-components.md) compatible con el bloque de Forms adaptable:
 
 * Campos de entrada: Incluyen entradas de texto, entradas de correo electrónico, entradas de contraseña y mucho más.
 * Grupos de casillas de verificación: se utiliza para seleccionar varias opciones.
@@ -28,12 +39,12 @@ Antes de profundizar en el estilo, vamos a revisar los tipos de campos de formul
 
 ## Principios básicos de estilo
 
-Comprender los conceptos fundamentales de CSS es crucial antes de aplicar estilo a campos de formulario específicos:
+Comprensión [conceptos básicos de CSS](https://www.w3schools.com/css/css_intro.asp) es crucial antes de aplicar estilo a campos de formulario específicos:
 
-* Selectores: los selectores de CSS permiten seleccionar elementos de HTML específicos para el estilo. Puede utilizar selectores de elementos, selectores de clases o selectores de ID.
-* Propiedades: las propiedades CSS definen el aspecto visual de los elementos. Las propiedades comunes para aplicar estilo a los campos de formulario incluyen color, color de fondo, borde, relleno, margen y más.
-* Modelo de cuadro: El modelo de cuadro CSS describe la estructura de los elementos del HTML como un área de contenido rodeada de relleno, bordes y márgenes.
-* Flexbox/Grid: Los diseños de Flexbox y Grid CSS son herramientas potentes para crear diseños adaptables y flexibles.
+* [Selectores](https://www.w3schools.com/css/css_selectors.asp): los selectores CSS permiten dirigirse a elementos HTML específicos para el estilo. Puede utilizar selectores de elementos, selectores de clases o selectores de ID.
+* [Propiedades](https://www.w3schools.com/css/css_syntax.asp): las propiedades CSS definen el aspecto visual de los elementos. Las propiedades comunes para aplicar estilo a los campos de formulario incluyen color, color de fondo, borde, relleno, margen y más.
+* [Modelo de cuadro](https://www.w3schools.com/css/css_boxmodel.asp): el modelo de cuadro CSS describe la estructura de los elementos HTML como un área de contenido rodeada de relleno, bordes y márgenes.
+* Estructura/Cuadrícula: CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) y [Diseños de cuadrícula](https://www.w3schools.com/css/css_grid.asp) son herramientas potentes para crear diseños adaptables y flexibles.
 
 ## Estilo de un formulario para un bloque de Forms adaptable
 
@@ -45,7 +56,7 @@ El bloque de Forms adaptable ofrece una estructura de HTML estandarizada que sim
 
 ## Desglose de la estructura de forms.css
 
-* **Variables globales:** Definido en el `:root` nivel, estas variables (`--variable-name`) almacene valores utilizados en toda la hoja de estilo para mantener la coherencia y facilitar las actualizaciones. Estas variables definen colores, tamaños de fuente, relleno y otras propiedades. Puede declarar sus propias variables globales o modificar las existentes para cambiar el estilo del formulario.
+* **Variables globales:** Definido en el `:root` nivel, estas variables (`--variable-name`) almacene los valores utilizados en toda la hoja de estilo para mantener la coherencia y facilitar las actualizaciones. Estas variables definen colores, tamaños de fuente, relleno y otras propiedades. Puede declarar sus propias variables globales o modificar las existentes para cambiar el estilo del formulario.
 
 * **Estilos de selector universal:** El `*` El selector de coincide con todos los elementos del formulario, lo que garantiza que los estilos se apliquen a todos los componentes de forma predeterminada, incluida la configuración de `box-sizing` propiedad a `border-box`.
 
@@ -66,7 +77,7 @@ El bloque de Forms adaptable ofrece una estructura de HTML coherente para varios
 
 Todos los campos de formulario, excepto los desplegables, los grupos de opción y los grupos de casillas de verificación, tienen la siguiente estructura de HTML:
 
-#### Estructura del HTML
++++ Estructura del HTML de componentes generales
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -99,34 +110,39 @@ Todos los campos de formulario, excepto los desplegables, los grupos de opción 
 </div>
 ```
 
-**Selector de CSS para componentes generales**
++++
+
++++ Selector de CSS para componentes generales
 
 ```CSS
-/* Target all input fields within any .{Type}-wrapper  */
-.{Type}-wrapper  {
-  /* Add your styles here */
-  border: 1px solid #ccc;
-  padding: 8px;
-  border-radius: 4px;
-}
-
-/* Target all input fields within any .{Type}-wrapper  */
-.{Type}-wrapper input {
-  /* Add your styles here */
-  border: 1px solid #ccc;
-  padding: 8px;
-  border-radius: 4px;
-}
-
-/* Target any element with the class field-{Name}  */
-.field-{Name} {
-  /* Add your styles here */
-  /* This could be used for styles specific to all elements with field-{Name} class, not just inputs */
-}
+  
+  /* Target all input fields within any .{Type}-wrapper  */
+  .{Type}-wrapper  {
+    /* Add your styles here */
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  /* Target all input fields within any .{Type}-wrapper  */
+  .{Type}-wrapper input {
+    /* Add your styles here */
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  /* Target any element with the class field-{Name}  */
+  .field-{Name} {
+    /* Add your styles here */
+    /* This could be used for styles specific to all elements with   field-{Name} class, not just inputs */
+  }
+  
+  
 ```
 
 * `.{Type}-wrapper`: segmenta el `div` basado en el tipo de campo. Por ejemplo, `.text-wrapper` selecciona todos los campos de texto.
-* `.field-{Name}`: selecciona además el elemento en función del nombre de campo específico. Por ejemplo, `.field-first-name` se dirige al campo de texto &quot;Nombre&quot;. Aunque este selector se puede utilizar para elementos de segmentación con el campo{Name} clase, es importante ser cauteloso. En este caso específico, no sería muy útil para aplicar estilo a los campos de entrada porque se dirigiría no solo a la entrada en sí, sino también a los elementos de etiqueta y descripción. Por lo general, se recomienda utilizar selectores más específicos como los que tiene para segmentar campos de entrada de texto (entrada .text-wrapper).
+* `.field-{Name}`: selecciona además el elemento en función del nombre de campo específico. Por ejemplo, `.field-first-name` se dirige al campo de texto &quot;Nombre&quot;. Aunque este selector se puede utilizar para elementos de segmentación con el campo{Name} clase, es importante ser cauteloso. En este caso específico, no sería útil para aplicar estilo a los campos de entrada porque se dirigiría no solo a la entrada en sí, sino también a los elementos de etiqueta y descripción. Se recomienda utilizar selectores más específicos como los que tiene para segmentar los campos de entrada de texto (entrada .text-wrapper).
 
 
 
@@ -149,14 +165,15 @@ first-name input {
   border-radius: 4px;
 }
 ```
-
++++
 
 ### Componente desplegable
 
 Para los menús desplegables, la variable `select` se utiliza en lugar de un `input` elemento:
 
 
-#### Estructura del HTML
+
++++ Estructura del HTML del componente desplegable
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={required}>
@@ -184,7 +201,11 @@ Para los menús desplegables, la variable `select` se utiliza en lugar de un `in
 </div>
 ```
 
-#### Ejemplo de selectores CSS para el componente desplegable
++++
+
++++ Selectores CSS para el componente desplegable
+
+En la siguiente CSS se enumeran algunos selectores CSS de ejemplo para los componentes desplegables.
 
 ```CSS
 /* Target the outer wrapper */
@@ -233,15 +254,17 @@ Para los menús desplegables, la variable `select` se utiliza en lugar de un `in
 * Oriente el envoltorio: el primer selector (`.drop-down-wrapper`) tiene como destino el elemento envolvente exterior, lo que garantiza que los estilos se apliquen a todo el componente desplegable.
 * Diseño de la Estructura: La Estructura organiza la etiqueta, la lista desplegable y la descripción verticalmente para conseguir un diseño limpio.
 * Estilo de etiqueta: La etiqueta destaca por su grosor de fuente más negrita y un ligero margen.
-* Estilo desplegable: el elemento seleccionado recibe un borde, un relleno y esquinas redondeadas para lograr un aspecto pulido.
+* Estilo Desplegable: El `select` recibe un borde, un relleno y esquinas redondeadas para obtener un aspecto pulido.
 * Color de fondo: se establece un color de fondo coherente para una armonía visual.
 * Personalización de flechas: los estilos opcionales ocultan la flecha desplegable predeterminada y crean una flecha personalizada utilizando un carácter Unicode y una posición determinada.
+
++++
 
 ### Grupos de radio
 
 Al igual que los componentes desplegables, los grupos de radio tienen su propia estructura de HTML y estructura CSS:
 
-#### Estructura del HTML del grupo de radio
++++ Estructura del HTML del grupo de radio
 
 ```HTML
 <fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -277,7 +300,9 @@ Al igual que los componentes desplegables, los grupos de radio tienen su propia 
 </fieldset>
 ```
 
-#### Ejemplo de selectores CSS para el componente desplegable
++++
+
++++ Selectores CSS para el componente desplegable
 
 * Segmentación del conjunto de campos
 
@@ -307,9 +332,11 @@ Este selector se dirige a cualquier conjunto de campos con la clase radio-group-
 }
 ```
 
++++
+
 ### Grupos de casillas
 
-#### Casilla de verificación Estructura del HTML de grupo
++++ Casilla de verificación Estructura del HTML de grupo
 
 ```HTML
 <fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -343,7 +370,9 @@ Este selector se dirige a cualquier conjunto de campos con la clase radio-group-
 </fieldset>
 ```
 
-**Ejemplo de selectores CSS para grupos de radio y casilla de verificación**
++++
+
++++ Selectores CSS de ejemplo para grupos de radio y casilla de verificación**
 
 * Segmentación del contenedor exterior: estos selectores se dirigen a los contenedores más externos de los grupos de radio y casilla de verificación, lo que permite aplicar estilos generales a toda la estructura del grupo. Esto resulta útil para establecer el espaciado, la alineación u otras propiedades relacionadas con el diseño.
 
@@ -399,7 +428,7 @@ Este selector se dirige a cualquier conjunto de campos con la clase radio-group-
 
 
 
-* Personalización del aspecto de los botones de opción y las casillas de verificación: Esta técnica oculta la entrada predeterminada y utiliza los pseudoelementos :before y :after para crear imágenes personalizadas que cambian de aspecto en función del estado &quot;activado&quot;.
+* Personalización del aspecto de los botones de opción y las casillas de verificación: Esta técnica oculta la entrada predeterminada y utiliza `:before` y `:after` pseudoelementos para crear imágenes personalizadas que cambian de aspecto en función del estado &quot;activado&quot;.
 
   ```CSS
   /* Hide the default radio button or checkbox */
@@ -429,9 +458,11 @@ Este selector se dirige a cualquier conjunto de campos con la clase radio-group-
      }
   ```
 
++++
+
 ### Componentes de panel/contenedor
 
-#### Estructura del HTML
++++ Estructura del HTML de los componentes de panel/contenedor
 
 ```HTML
 <fieldset class="panel-wrapper field-{PanelName} field-wrapper">
@@ -473,7 +504,9 @@ Este selector se dirige a cualquier conjunto de campos con la clase radio-group-
 * Dentro del conjunto de campos, varios{Type}Los elementos -wrapper (.text-wrapper y .password-wrapper en este caso) representan campos de formulario individuales dentro del panel.
 * Cada contenedor contiene una etiqueta, un campo de entrada y una descripción, similares a los ejemplos anteriores.
 
-#### Selectores CSS y ejemplos
++++
+
++++ Ejemplo de selectores CSS para componentes de panel/contenedor
 
 1. Segmentación del panel:
 
@@ -535,9 +568,11 @@ Este selector se dirige a cualquier conjunto de campos con la clase radio-group-
 
 * Estos selectores opcionales le permiten segmentar contenedores de campo específicos dentro del panel para aplicar un estilo único, como resaltar el campo de nombre de usuario.
 
++++
+
 ### Panel repetible
 
-#### Estructura del HTML
++++ Estructura del HTML de un panel repetible
 
 ```HTML
 <fieldset class="panel-wrapper field-{PanelName} field-wrapper">
@@ -595,11 +630,11 @@ Cada panel tiene la misma estructura que el ejemplo del panel único, con atribu
 
 * data-repeatable=&quot;true&quot;: este atributo indica que el panel se puede repetir dinámicamente mediante JavaScript o un marco de trabajo.
 
-* ID y nombres únicos: Cada elemento del panel tiene un ID único (por ejemplo, nombre-1, correo electrónico-1) y un atributo de nombre basado en el índice del panel (por ejemplo, nombre=&quot;contactos&quot;)[0].name&quot;). Esto permite una recopilación de datos adecuada cuando se envían varios paneles.
+* ID y nombres únicos: Cada elemento del panel tiene un ID único (por ejemplo, name-1, email-1) y un atributo de nombre basado en el índice del panel (por ejemplo, name=&quot;contacts&quot;[0].name&quot;). Esto permite una recopilación de datos adecuada cuando se envían varios paneles.
 
++++
 
-
-#### Selectores CSS y ejemplos
++++ Selectores CSS para un panel repetible
 
 * Segmentación de todos los paneles repetibles:
 
@@ -639,8 +674,11 @@ Este selector aplica estilo a todos los contenedores de campo dentro de un panel
 /* Target all
 ```
 
++++
+
 ### Adjuntar archivos
 
++++ Estructura del HTML para el archivo adjunto
 
 ```HTML
 <div class="file-wrapper field-{FileName} field-wrapper">
@@ -681,10 +719,11 @@ Este selector aplica estilo a todos los contenedores de campo dentro de un panel
 
 * El atributo class utiliza el nombre proporcionado para el archivo adjunto (claim_form).
 * Los atributos id y name del elemento input coinciden con el nombre del archivo adjunto (claim_form).
-* La sección de lista de archivos está vacía inicialmente. Se rellenará dinámicamente con JavaScript cuando se carguen los archivos.
+* La sección de lista de archivos está vacía inicialmente. Se rellena dinámicamente con JavaScript cuando se cargan los archivos.
 
++++
 
-**Selectores CSS y ejemplos:**
++++ Selectores CSS para el componente Archivo adjunto
 
 * Segmentación de todo el componente Archivo adjunto:
 
@@ -750,14 +789,28 @@ Este selector aplica estilo a todo el componente de archivo adjunto, incluida la
 
 Estos selectores permiten aplicar estilo a varias partes del componente de archivo adjunto de forma individual. Puede ajustar los estilos para que coincidan con sus preferencias de diseño.
 
++++
+
 
 ## Estilo de componentes
 
-También puede aplicar estilo a los campos de formulario en función de su tipo específico o nombres individuales. Esto permite un control y una personalización más granulares del aspecto del formulario.
+Puede aplicar estilo a los campos de formulario en función de su tipo específico (`{Type}-wrapper`) o nombres individuales (`field-{Name}`). Esto permite un control y una personalización más granulares del aspecto del formulario.
 
 ### Estilo basado en el tipo de campo
 
 Puede utilizar selectores de CSS para segmentar tipos de campo específicos y aplicar estilos de forma coherente.
+
+**Estructura del HTML**
+
+```HTML
+<div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
+   <label for="{FieldId}" class="field-label">First Name</label>
+   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
+   <div class="field-description" aria-live="polite" id="{FieldId}-description">
+    Hint - First name should be minimum 3 characters and a maximum of 10 characters.
+   </div>
+</div>
+```
 
 **Ejemplo de estructura del HTML**
 
@@ -785,6 +838,8 @@ Puede utilizar selectores de CSS para segmentar tipos de campo específicos y ap
 * El `data-required` El atributo indica si el campo es obligatorio u opcional.
 * Cada campo tiene una etiqueta correspondiente, un elemento de entrada y posibles elementos adicionales como marcadores de posición y descripciones.
 
+
+
 **Ejemplo de selectores CSS**
 
 ```CSS
@@ -800,16 +855,33 @@ Puede utilizar selectores de CSS para segmentar tipos de campo específicos y ap
 }
 ```
 
+
+
 ### Estilo basado en el nombre del campo
 
 También puede segmentar campos individuales por nombre para aplicar estilos únicos.
+
+**Estructura del HTML**
+
+```HTML
+<div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
+   <label for="{FieldId}" class="field-label">First Name</label>
+   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id="{FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
+   <div class="field-description" aria-live="polite" id="{FieldId}-description">
+    Hint - Enter the 6 digit number sent to your mobile number.
+   </div>
+</div>
+```
 
 **Ejemplo de estructura del HTML**
 
 ```HTML
 <div class="number-wrapper field-otp field-wrapper" data-required="true">
   <label for="otp" class="field-label">OTP</label>
-  <input type="number" placeholder="Enter your OTP" maxlength="6" id="otp" name="otp">
+  <input type="number" placeholder="Enter your OTP" maxlength="6" id="otp" name="otp" aria-describedby="otp-description">
+  <div class="field-description" aria-live="polite" id="otp-description">
+    Hint - Enter the 6 digit number sent to your mobile number.
+   </div>
 </div>
 ```
 
