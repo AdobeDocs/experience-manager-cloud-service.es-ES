@@ -3,10 +3,10 @@ title: Configurar canalizaciones de producción
 description: Aprenda a configurar canalizaciones de producción para crear e implementar su código en entornos de producción.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '1422'
-ht-degree: 72%
+source-wordcount: '1338'
+ht-degree: 67%
 
 ---
 
@@ -93,25 +93,13 @@ Para finalizar la configuración de la canalización de producción de código d
 
    ![Código de pila completa](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
-1. Haga clic en **Continuar** para avanzar a la pestaña **Auditoría de experiencias**, donde puede definir las rutas que siempre deben incluirse en la auditoría de experiencias.
+1. Haga clic o pulse **Continuar** para avanzar a la **Auditoría de experiencias** donde puede definir las rutas que siempre deben incluirse en la auditoría de experiencias.
 
    ![Añadir auditoría de experiencias](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
-1. Proporcione una ruta que se incluya en la auditoría de experiencias.
+1. Proporcione las rutas que se incluirán en la auditoría de experiencias.
 
-   * Las rutas de página deben comenzar con `/`.
-   * Por ejemplo, si desea incluir `https://wknd.site/us/en/about-us.html` en la auditoría de experiencias, introduzca la ruta `/us/en/about-us.html`.
-
-   ![Definición de una ruta para la auditoría de experiencias](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
-
-1. Haga clic en **Agregar página** y la ruta se completará de forma automática con la dirección de su entorno, además se agregará a la tabla de rutas.
-
-   ![Guardar ruta de acceso a la tabla](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
-
-1. Siga agregando rutas según sea necesario repitiendo los dos pasos anteriores.
-
-   * Puede agregar un máximo de 25 rutas.
-   * Si no define una ruta, la página principal del sitio se incluye en la auditoría de experiencias de forma predeterminada.
+   * Ver el documento [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) para obtener más información.
 
 1. Haga clic en **Guardar** para guardar la canalización.
 

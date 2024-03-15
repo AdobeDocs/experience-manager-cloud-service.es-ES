@@ -2,10 +2,10 @@
 title: Pruebas de auditoría de experiencias
 description: Descubra cómo la auditoría de experiencias valida el proceso de implementación y ayuda a garantizar que los cambios implementados cumplan los estándares de línea de base para el rendimiento, la accesibilidad, las prácticas recomendadas y la SEO.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 82%
+source-wordcount: '890'
+ht-degree: 56%
 
 ---
 
@@ -31,15 +31,57 @@ La auditoría de experiencias en Cloud Manager garantiza que la experiencia del 
 
 Los resultados de la auditoría son informativos y permiten al administrador de implementación ver las puntuaciones y el cambio entre las puntuaciones actuales y anteriores. Esta perspectiva es importante para determinar si hay una regresión que se haya introducido con la implementación actual.
 
-La auditoría de experiencias está equipada con Google Lighthouse, una herramienta de código abierto de Google y está habilitada en todas las canalizaciones de producción de Cloud Manager.
+La auditoría de experiencias está equipada con Google Lighthouse, una herramienta de código abierto de Google.
 
 >[!INFO]
 >
 >A partir del 31 de agosto de 2023, la auditoría de experiencias pasará a mostrar resultados específicos de la plataforma móvil. Las métricas de rendimiento de Mobile suelen registrar menos que las de los equipos de escritorio, por lo que debería anticipar un cambio en el rendimiento del informe después de este cambio.
 
->[!TIP]
->
->Puede configurar qué páginas se incluyen en la Auditoría de experiencias al [configurar la canalización](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
+## Disponibilidad {#availability}
+
+La auditoría de experiencias está disponible para Cloud Manager:
+
+* Canalizaciones de producción de Sites, de forma predeterminada.
+* Canalizaciones de desarrollo front-end, opcionalmente.
+
+Consulte la [Sección Configuración](#configuration) para obtener más información sobre cómo configurar la auditoría para los entornos opcionales.
+
+## Configuración {#configuration}
+
+La auditoría de experiencias está disponible de forma predeterminada para las canalizaciones de producción. Se puede habilitar de forma opcional para canalizaciones de desarrollo front-end. En todos los casos, debe definir qué rutas de contenido se evalúan durante la ejecución de la canalización.
+
+Puede configurar qué páginas se incluyen en la auditoría de experiencias al configurar la canalización.
+
+1. Según el tipo de canalización que desee configurar, siga las instrucciones para:
+
+   * Añadir un nuevo [canalización de producción,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) si desea definir las rutas que debe evaluar la auditoría.
+   * Añadir un nuevo [canalización que no sea de producción,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) si desea habilitar la auditoría en una canalización front-end o de full-stack de desarrollo.
+   * O puedes [editar una canalización existente,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) y actualizar las opciones existentes.
+
+1. Si está agregando o editando una canalización que no es de producción para la que desea utilizar la auditoría de experiencias, debe seleccionar la **Auditoría de experiencias** de la casilla de verificación **Código fuente** pestaña.
+
+   ![Habilitar la auditoría de experiencias](assets/experience-audit-enable.jpg)
+
+   * Esto solo es necesario para canalizaciones que no sean de producción.
+   * El **Auditoría de experiencias** aparece cuando se selecciona la casilla de verificación.
+
+1. Tanto para las canalizaciones de producción como para las que no son de producción, debe definir las rutas que deben incluirse en la auditoría de experiencias en la **Auditoría de experiencias** pestaña.
+
+   * Las rutas de página deben comenzar con `/` y son relativos al sitio.
+   * Por ejemplo, si el sitio es `wknd.site` y desea incluir `https://wknd.site/us/en/about-us.html` en la auditoría de experiencias, introduzca la ruta `/us/en/about-us.html`.
+
+   ![Definición de una ruta para la auditoría de experiencias](assets/experience-audit-add-page.png)
+
+1. Haga clic o pulse **Agregar página** y la ruta se completa automáticamente con la dirección de su entorno y se agrega a la tabla de rutas.
+
+   ![Guardar ruta de acceso a la tabla](assets/experience-audit-page-added.png)
+
+1. Siga agregando rutas según sea necesario repitiendo los dos pasos anteriores.
+
+   * Puede agregar un máximo de 25 rutas.
+   * Si no define una ruta, la página principal del sitio se incluye en la auditoría de experiencias de forma predeterminada.
+
+1. Haga clic en **Guardar** para guardar la canalización.
 
 ## Comprender los resultados de la auditoría de experiencias {#understanding-experience-audit-results}
 

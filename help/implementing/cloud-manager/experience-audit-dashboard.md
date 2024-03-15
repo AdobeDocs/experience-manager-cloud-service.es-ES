@@ -2,9 +2,9 @@
 title: Tablero de auditoría de experiencias
 description: Descubra cómo la auditoría de experiencias valida el proceso de implementación y ayuda a garantizar que los cambios implementados cumplan los estándares de línea de base para el rendimiento, la accesibilidad, las prácticas recomendadas y la SEO a través de una interfaz de panel clara e informativa.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: 390faed91889e16d06c5024eaf1b4b1ad1427444
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1958'
 ht-degree: 7%
 
 ---
@@ -40,7 +40,7 @@ La auditoría de experiencias está disponible para Cloud Manager:
 
 * Canalizaciones de producción de Sites, de forma predeterminada
 * Desarrollo de canalizaciones de pila completa, opcionalmente
-* Canalizaciones front-end, opcionalmente
+* Desarrollo de canalizaciones front-end, opcional
 
 Consulte la [Sección Configuración](#configuration) para obtener más información sobre cómo configurar la auditoría para los entornos opcionales.
 

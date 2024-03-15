@@ -3,10 +3,10 @@ title: Configurar canalizaciones que no sean de producción
 description: Obtenga información sobre cómo configurar canalizaciones que no sean de producción para probar la calidad del código antes de implementarlas en entornos de producción.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 77%
+source-wordcount: '1371'
+ht-degree: 73%
 
 ---
 
@@ -145,10 +145,16 @@ Los pasos para completar la creación de la canalización de implementación de 
    * **Rama de Git**: esta opción define desde qué rama de la canalización seleccionada debe recuperar el código.
       * Introduzca los primeros caracteres del nombre de la rama y la función de autocompletar de este campo. Encuentra las ramas coincidentes que puede seleccionar.
    * **Ubicación del código**: esta opción define la ruta en la rama de la repo seleccionada desde la que la canalización debe recuperar el código.
+   * **Canalización** : Para las canalizaciones front-end que no sean de producción, tiene la opción de habilitar **[Auditoría de experiencias.](/help/implementing/cloud-manager/experience-audit-testing.md)**
 
-   ![Configurar canalización](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
+   ![Configurar canalización](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. Haga clic en **Guardar**.
+1. Si habilitó la auditoría de experiencias, toque o haga clic en **Continuar** para avanzar a la **Auditoría de experiencias** donde puede definir las rutas que siempre deben incluirse en la auditoría de experiencias.
+
+   * Si ha activado **Auditoría de experiencias**, consulte el documento [Auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) para obtener más información sobre cómo configurar.
+   * Si no lo ha hecho, omita este paso.
+
+1. Haga clic o pulse **Guardar** para guardar la canalización.
 
 La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en la tarjeta **Canalizaciones** en la página **Información general del programa**.
 
