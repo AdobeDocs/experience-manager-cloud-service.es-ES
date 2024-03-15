@@ -3,10 +3,10 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3a86639d9203fff3c72e63baa8d1499b18a4539f
-workflow-type: ht
-source-wordcount: '937'
-ht-degree: 100%
+source-git-commit: 4fdca70b3a711f747e44ac2a6c1d117ac990d49b
+workflow-type: tm+mt
+source-wordcount: '1020'
+ht-degree: 91%
 
 ---
 
@@ -108,6 +108,15 @@ Los clientes de Dynatrace pueden monitorizar su uso de AEM. [Lea cómo](/help/im
 ### Compatibilidad con RDE para código front-end mediante temas del sitio y plantillas del sitio: Programa para primeros usuarios {#rde-frontend-early-adopter}
 
 Los [Entornos de desarrollo rápido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) admiten ahora código front-end basado en [temas del sitio](/help/sites-cloud/administering/site-creation/site-themes.md) y [plantillas del sitio](/help/sites-cloud/administering/site-creation/site-templates.md), para los primeros usuarios. Con los RDE, esto se hace usando una directiva de línea de comandos, en lugar de una [canalización front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Póngase en contacto con **aemcs-rde-support@adobe.com** para probarlo y proporcionar comentarios.
+
+### Programa de pioneros de configuración de CDN {#cdn-config-early-adopter}
+
+Además de los lanzamientos recientes [Reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md), que incluye las reglas del cortafuegos de aplicaciones web (WAF) con licencia opcional, existe la oportunidad de utilizar la canalización de configuración para declarar e implementar otros tipos de configuración de CDN. Únase al programa de usuarios pioneros enviando un correo electrónico **aemcs-cdn-config-adopter@adobe.com** para obtener acceso a:
+* Redirecciones del lado del cliente 301/302
+* solicitudes de proxy en el perímetro a orígenes arbitrarios
+* Transformaciones de URL
+* configuración o modificación de encabezados de solicitud o respuesta
+* AEM páginas de error personalizadas cuando la CDN no puede llegar a la dirección de correo electrónico de
 
 ## Cloud Manager {#cloud-manager}
 
