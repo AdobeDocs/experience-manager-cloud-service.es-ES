@@ -2,10 +2,10 @@
 title: Reglas de filtro de tráfico, incluidas reglas WAF
 description: Configuración de las reglas de filtro de tráfico, incluidas las reglas de cortafuegos de aplicación web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 86a7815a1055b8ffaf57b802f3232f2c03ec06dc
-workflow-type: ht
-source-wordcount: '3376'
-ht-degree: 100%
+source-git-commit: 043c87330bca37529c0cc614596599bea1e41def
+workflow-type: tm+mt
+source-wordcount: '3382'
+ht-degree: 98%
 
 ---
 
@@ -287,7 +287,7 @@ A continuación se muestran algunos ejemplos de reglas. Consulte la [sección so
 
 **Ejemplo: 1**
 
-Esta regla bloquea las solicitudes procedentes de IP 192.168.1.1:
+Esta regla bloquea las solicitudes procedentes de **IP 192.168.1.1**:
 
 ```
 kind: "CDN"
@@ -426,7 +426,7 @@ Los límites de volumen se calculan por CDN POP. Por ejemplo, supongamos que los
 
 **Ejemplo 1**
 
-Esta regla bloquea un cliente durante 5 m cuando supera los 100 req/seg (por CDN POP) en los últimos 60 segundos:
+Esta regla bloquea un cliente durante 5 m cuando supera un promedio de 60 req/seg (por POP de CDN) en los últimos 10 s:
 
 ```
 kind: "CDN"
@@ -451,7 +451,7 @@ data:
 
 **Ejemplo: 2**
 
-Bloquear solicitudes de 60 segundos en la ruta /crítico/recurso cuando supere los 100 req/s (por CDN POP) en los últimos 60 segundos:
+Bloquear solicitudes en la ruta /crítico/recurso durante 60 segundos cuando supere un promedio de 100 req/seg (por POP de CDN) en los últimos 60 segundos:
 
 ```
 kind: "CDN"
