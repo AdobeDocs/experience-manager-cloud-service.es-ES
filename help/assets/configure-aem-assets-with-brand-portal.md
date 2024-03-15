@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 0411da1113c6bddfa1adcc583b4e53c5daa9bd41
 workflow-type: tm+mt
-source-wordcount: '2584'
-ht-degree: 12%
+source-wordcount: '2568'
+ht-degree: 9%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 12%
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
-La configuración de Adobe Experience Manager Assets Brand Portal permite publicar recursos de marca aprobados desde Adobe Experience Manager Assets como [!DNL Cloud Service] instancia de a Brand Portal y distribuirlas a los usuarios de Brand Portal.
+La configuración de Adobe Experience Manager Assets Brand Portal permite publicar recursos de marca aprobados desde Adobe Experience Manager Assets as a [!DNL Cloud Service] instancia de a Brand Portal y distribuirlas a los usuarios de Brand Portal.
 
 ## Activar Brand Portal mediante Cloud Manager {#activate-brand-portal}
 
@@ -219,7 +219,7 @@ Siga estos pasos en la secuencia especificada para configurar Experience Manager
 1. [Obtener un certificado público](#public-certificate)
 1. [Crear una conexión de cuenta de servicio (JWT)](#createnewintegration)
 1. [Configuración de la cuenta IMS](#create-ims-account-configuration)
-1. [Configurar el servicio en la nube de ](#configure-the-cloud-service)
+1. [Configurar servicio en la nube](#configure-the-cloud-service)
 
 ### Crear la configuración de IMS {#create-ims-configuration}
 
@@ -294,7 +294,8 @@ Realice los siguientes pasos para generar las credenciales de la cuenta de servi
 
    >[!NOTE]
    >
-   >Puede ver las credenciales y realizar acciones como generar tokens JWT, copiar detalles de credenciales, recuperar secretos de cliente, etc.
+   >* Puede ver las credenciales y realizar acciones como generar tokens JWT, copiar detalles de credenciales, recuperar secretos de cliente, etc.
+   >* Actualmente, solo se admite el tipo de credencial de la cuenta del servicio de Developer Console (JWT) de Adobe. No utilice el tipo de credencial de servidor a servidor OAuth hasta que sea compatible a mediados de abril. Más información en [Desaprobación de credenciales de JWT en la consola de Adobe Developer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
 
 1. Desde el **[!UICONTROL Credenciales del cliente]** pestaña, copie el **[!UICONTROL ID de cliente]**.
 
@@ -375,11 +376,11 @@ Siga estos pasos para configurar la cuenta de IMS.
 
 >[!CAUTION]
 >
->Sólo debe tener una configuración de IMS.
+>Solo debe tener una configuración de IMS.
 >
 >Asegúrese de que la configuración de IMS pase la comprobación de estado. Si la configuración no pasa la comprobación de estado, no es válida. Debe eliminarla y crear otra configuración válida.
 
-### Configurar el servicio en la nube de  {#configure-the-cloud-service}
+### Configurar servicio en la nube {#configure-the-cloud-service}
 
 Siga estos pasos para configurar el servicio en la nube de Brand Portal:
 
@@ -397,7 +398,7 @@ Siga estos pasos para configurar el servicio en la nube de Brand Portal:
 
    ![Cuadro de diálogo Configuración de Brand Portal.](assets/create-cloud-service.png)
 
-1. Haga clic en **[!UICONTROL Guardar y cerrar]**. Se crea la configuración de la nube.
+1. Clic **[!UICONTROL Guardar y cerrar]**. Se crea la configuración de nube.
 
    Su Experience Manager Assets as a [!DNL Cloud Service] ahora está configurada con el inquilino de Brand Portal.
 
@@ -410,8 +411,8 @@ Las direcciones IP de salida son las siguientes:
 | **Región** | **IP de salida** |
 |--- |--- |
 | ND | 130.248.160.68, 20.94.203.130 |
-| EMEA | 51.132.146.75, 130.248.244.202, 130.248.244.203, 130.248.244.204, 130.248.244.210, 130.248.244.211, 130.248.244.212 |
-| APAC | 63.140.44.54 |
+| EMEA | 51.132.146.75, 130.248.244.202, 130.248.244.203, 130.248.244.204, 130.248.244.210, 130.248.244.211, 130 248 244 212 |
+| APAC | 63 140 44 54 |
 
 <!--
 ### Test configuration {#test-configuration}
