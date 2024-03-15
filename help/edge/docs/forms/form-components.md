@@ -3,9 +3,9 @@ title: Componentes de bloque de formulario adaptable y sus propiedades
 description: Este documento proporciona información general sobre los componentes de formulario y sus propiedades disponibles en el servicio de entrega perimetral de AEM Forms.
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
+source-git-commit: 703a48903c44678f6fe311de740b7c767c886ba5
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '1006'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,6 @@ Cada componente del formulario incluye varias propiedades que le permiten contro
 | Propiedad | Componentes aplicables | Detalles |
 |--------------|------------------------------|----------------------------------------------------------------------|
 | Tipo | Todos | Especifica el tipo de componente. Esta propiedad determina el comportamiento y el aspecto del campo de entrada. Por ejemplo, para las entradas de texto, el tipo puede ser &quot;texto&quot;, &quot;correo electrónico&quot; para las entradas de correo electrónico y &quot;contraseña&quot; para las entradas de contraseña. El bloque de Forms adaptable admite  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">todos los tipos de entrada válidos de HTML5</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">área de texto</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, y <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> como tipo. |
-| Tipo | Todos | Especifica el tipo de componente. Esta propiedad determina el comportamiento y el aspecto del campo de entrada. Por ejemplo, para las entradas de texto, el tipo puede ser &quot;texto&quot;, &quot;correo electrónico&quot; para las entradas de correo electrónico y &quot;contraseña&quot; para las entradas de contraseña. El bloque de Forms adaptable admite  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">todos los tipos de entrada válidos de HTML5</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">área de texto</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, y <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> como tipo. |
 | Nombre | Todos | Identifica el componente para el envío de formularios. El atributo name se utiliza cuando se envían los datos del formulario al servidor, asociando la entrada del usuario con un campo específico. |
 | Etiqueta | Todos | Proporciona información contextual a los usuarios. La etiqueta es el texto que se muestra junto al componente, lo que orienta a los usuarios sobre qué información introducir. |
 | Valor | Texto, Contraseña, Correo electrónico, Número, Intervalo, Fecha y sus variantes (fecha y hora local, mes, semana, hora), Casilla de verificación, Radio, Oculto, Enviar, Botón | Especifica el valor inicial del componente. Para las entradas de texto, el área de texto y los elementos seleccionados, esta es la opción o el texto predeterminado que se muestra. Para los componentes de radio y casilla de verificación, este es el valor/datos enviados cuando se seleccionan. El atributo value es opcional, pero debe considerarse obligatorio para las entradas de casilla de verificación y radio. |
@@ -61,6 +60,10 @@ Cada componente del formulario incluye varias propiedades que le permiten contro
 | Opciones | Lista desplegable | Especifica las opciones para los menús desplegables. La propiedad options es una lista de opciones separadas por comas para los menús desplegables que define las opciones seleccionables que se muestran al usuario. |
 | Comprobado | Casilla de verificación, radio | Determina si el campo está seleccionado de forma predeterminada. El atributo activado es una propiedad booleana que se utiliza con las entradas de casilla de verificación y radio. Cuando se establece en true, indica que el campo está seleccionado de forma predeterminada cuando se carga el formulario. |
 | Fieldset | Todos | Agrupa campos para crear secciones visualmente distintas dentro de un formulario. El elemento fieldset agrupa los campos relacionados dentro de un formulario, separándolos visualmente para mejorar la organización y la experiencia del usuario. </br> Para organizar un conjunto de campos dentro de un conjunto de campos, simplemente utilice el `fieldset` y especifique su atributo name. En el ejemplo siguiente, demostramos cómo se encapsulan los botones de opción dentro de un solo conjunto de campos para mejorar la organización. ![Ejemplo de conjunto de campos](/help/edge/assets/fieldset-example.png) |
+| Repetible | Todos | Una propiedad booleana para `fieldset` lo que indica que un conjunto de campos en particular se puede repetir para `Min` y `Max` número de veces. El `Min` debe establecerse en 1 o superior, no establezca el valor de `Min` propiedad en 0. |
+| Expresión visible | Todos | Una expresión visible hace referencia a una fórmula de hoja de cálculo, indicada por la etiqueta &quot;=&quot;, que se utiliza para controlar la visibilidad de un campo. En esta fórmula, solo se puede emplear la propiedad value de otros campos, lo que permite administrar de forma directa la visibilidad de los campos dentro del sistema. |
+| Expresión de valor | Todos | Una expresión de valor hace referencia a una fórmula de hoja de cálculo, indicada por la etiqueta &quot;=&quot;, que se utiliza para controlar el valor de un campo. En esta fórmula, solo se puede utilizar la propiedad value de otros campos, lo que permite una administración directa del valor de campo dentro del sistema. |
+
 
 ## Consulte también
 
