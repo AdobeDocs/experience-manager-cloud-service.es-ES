@@ -3,10 +3,10 @@ title: 'Consultas persistentes de GraphQL: habilitar el almacenamiento en caché
 description: Dispatcher es una capa de almacenamiento en caché y seguridad situada frente a los entornos de publicación de Adobe Experience Manager. AEM Puede habilitar el almacenamiento en caché para consultas persistentes en la interfaz de usuario sin encabezado de.
 feature: Dispatcher, GraphQL API
 exl-id: 30a97e56-6699-41c4-a4eb-fc6236667f8f
-source-git-commit: ea5b404e83c11f0057342bff22ba45e6b0ead124
+source-git-commit: 6bcbef1695b291c36e19e70db203a114a7e40e67
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 8%
+source-wordcount: '359'
+ht-degree: 11%
 
 ---
 
@@ -42,15 +42,7 @@ Para habilitar el almacenamiento en caché de consultas persistentes, defina la 
 >
 >Cuando el almacenamiento en caché de Dispatcher está habilitado para consultas persistentes mediante `Define CACHE_GRAPHQL_PERSISTED_QUERIES` un `ETag` Dispatcher agrega el encabezado a la respuesta.
 >
->De forma predeterminada, la variable `ETag` El encabezado de está configurado con la siguiente directiva:
->
->```
->FileETag MTime Size 
->```
->
->Sin embargo, esta configuración puede causar problemas cuando se utiliza en las respuestas de consulta persistentes, ya que no tiene en cuenta los pequeños cambios en la respuesta.
->
->Para lograr objetivos individuales `ETag` cálculos en *cada* respuesta única en el `FileETag Digest` la configuración debe usarse en la configuración de dispatcher:
+>Para lograr objetivos individuales `ETag` cálculo del encabezado en las consultas persistentes en caché (para *cada* respuesta que es única) el `FileETag Digest` la configuración debe usarse en la configuración de dispatcher del host virtual (si no existe todavía):
 >
 >```xml
 ><Directory />    
