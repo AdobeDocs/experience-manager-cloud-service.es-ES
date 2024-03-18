@@ -2,9 +2,9 @@
 title: AEM Registro para la as a Cloud Service
 description: AEM Obtenga información sobre cómo utilizar Registro para el registro as a Cloud Service para configurar parámetros globales para el servicio de registro central, ajustes específicos para los servicios individuales o cómo solicitar el registro de datos.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 35959a1cd47e9ea1b93aeddc3eb72cf03c44eda8
+source-git-commit: 97a1781f0a2d59d2bed7b03c7d4f045c81784f60
 workflow-type: tm+mt
-source-wordcount: '2776'
+source-wordcount: '2797'
 ht-degree: 8%
 
 ---
@@ -504,7 +504,7 @@ Define DISP_LOG_LEVEL debug
 
 AEM El as a Cloud Service proporciona acceso a los registros de CDN, que son útiles para casos de uso, incluida la optimización de la proporción de visitas de caché. El formato de registro de CDN no se puede personalizar y no se puede configurar en diferentes modos, como información, advertir o error.
 
-La función de reenvío de Splunk aún no admite registros de CDN.
+Los registros de CDN se reenviarán a Splunk para las nuevas solicitudes de vale de soporte del reenvío de Splunk; los clientes que ya tengan habilitado el reenvío de Splunk podrán agregar registros de CDN en el futuro.
 
 **Ejemplo**
 
