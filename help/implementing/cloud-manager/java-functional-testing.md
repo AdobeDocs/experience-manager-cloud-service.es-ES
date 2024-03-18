@@ -2,10 +2,10 @@
 title: Pruebas funcionales Java&trade;
 description: Obtenga información sobre cómo escribir las pruebas funcionales Javaamp;amp;trade; para AEM as a Cloud Service
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
-source-git-commit: e463979df1f705283f29d954f9869d85f0a96465
+source-git-commit: 641690f2eca17bbfb47360282e818b6902a36144
 workflow-type: tm+mt
-source-wordcount: '877'
-ht-degree: 92%
+source-wordcount: '878'
+ht-degree: 94%
 
 ---
 
@@ -128,7 +128,7 @@ Asegúrese de que la dependencia de en `it.tests/pom.xml` se ha actualizado.
 
 >[!NOTE]
 >
->Este cambio será necesario después del 6 de abril de 2024.
+>Este cambio debe realizarse antes del 6 de abril de 2024.
 >Si no se actualiza la biblioteca de dependencias, se producirán errores de canalización en el paso &quot;Pruebas funcionales personalizadas&quot;.
 
 ### Ejecución de pruebas locales {#local-test-execution}
