@@ -5,9 +5,9 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 0411da1113c6bddfa1adcc583b4e53c5daa9bd41
+source-git-commit: 2cb630203b818ae338fe6b7c2ff341c76e3a3958
 workflow-type: tm+mt
-source-wordcount: '2568'
+source-wordcount: '2566'
 ht-degree: 9%
 
 ---
@@ -295,7 +295,7 @@ Realice los siguientes pasos para generar las credenciales de la cuenta de servi
    >[!NOTE]
    >
    >* Puede ver las credenciales y realizar acciones como generar tokens JWT, copiar detalles de credenciales, recuperar secretos de cliente, etc.
-   >* Actualmente, solo se admite el tipo de credencial de la cuenta del servicio de Developer Console (JWT) de Adobe. No utilice el tipo de credencial de servidor a servidor OAuth hasta que sea compatible a mediados de abril. Más información en [Desaprobación de credenciales de JWT en la consola de Adobe Developer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
+   >* Actualmente, solo se admite el tipo de credencial de la cuenta del servicio de Developer Console (JWT) de Adobe. No use el `OAuth Server-to-Server` tipo de credencial hasta que se admita a mediados de abril. Más información en [Desaprobación de credenciales de JWT en la consola de Adobe Developer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
 
 1. Desde el **[!UICONTROL Credenciales del cliente]** pestaña, copie el **[!UICONTROL ID de cliente]**.
 
