@@ -2,10 +2,10 @@
 title: Uso de hojas de cálculo para administrar datos tabulares
 description: AEM Aprenda a utilizar hojas de cálculo para administrar los datos tabulares para varios valores, como metadatos y redirecciones para su sitio de con Edge Delivery Services.
 feature: Edge Delivery Services
-source-git-commit: 0fa88453a7d7c58a3ccb2a4baf7d2b143acf7ad5
+source-git-commit: f872ab4eb891ab4aa634e88c76eedeb0f13cb285
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 2%
+source-wordcount: '958'
+ht-degree: 1%
 
 ---
 
@@ -81,25 +81,9 @@ AEM En este ejemplo, se crea una hoja de cálculo para administrar las redirecci
    * El editor añade nuevas filas a la hoja de cálculo según sea necesario.
    * Para eliminar o mover una fila, utilice el **Eliminar** al final de cada fila y los controladores de arrastre al principio de cada fila, respectivamente.
 
-1. Cuando haya terminado de definir las redirecciones, cierre la pestaña y vuelva a la **Sites** consola.
+## Publicación de un archivo path.json de hoja de cálculo {#paths-json}
 
-1. Toque o haga clic para seleccionar la hoja de cálculo de redirecciones que ha creado en la consola y, a continuación, toque o haga clic **Publicación rápida** en la barra de acciones para publicar la hoja de cálculo.
-
-   ![Seleccione la hoja de cálculo en la consola Sitios](assets/tabular-data/tabular-data-select-publish.png)
-
-1. En el **Publicación rápida** diálogo, toque o haga clic **Publish**.
-
-   ![Confirmar publicación](assets/tabular-data/tabular-data-quick-publish.png)
-
-1. Un titular confirma la publicación.
-
-   ![Confirmación de publicación del titular](assets/tabular-data/tabular-data-publish-banner.png)
-
-La hoja de cálculo de redirecciones ahora está publicada y es accesible públicamente.
-
-## Actualizar paths.json {#paths-json}
-
-AEM Para que los usuarios puedan consumir los datos de la hoja de cálculo, debe actualizar también la hoja de cálculo de `paths.json` del proyecto.
+AEM Para que los datos de la hoja de cálculo se puedan publicar en la hoja de cálculo, también debe actualizar la hoja de cálculo de `paths.json` del proyecto.
 
 1. Abra la raíz del proyecto en GitHub.
 
@@ -122,7 +106,21 @@ AEM Para que los usuarios puedan consumir los datos de la hoja de cálculo, debe
 
    * Compromiso con `main` o cree una solicitud de extracción de acuerdo con su proceso.
 
-Una vez que los cambios en `paths.json` Cuando se combinan, las redirecciones se activan para el sitio.
+1. Cuando haya terminado de definir las redirecciones y haya actualizado la asignación de ruta, vuelva a la **Sites** consola.
+
+1. Toque o haga clic para seleccionar la hoja de cálculo de redirecciones que ha creado en la consola y, a continuación, toque o haga clic **Publicación rápida** en la barra de acciones para publicar la hoja de cálculo.
+
+   ![Seleccione la hoja de cálculo en la consola Sitios](assets/tabular-data/tabular-data-select-publish.png)
+
+1. En el **Publicación rápida** diálogo, toque o haga clic **Publish**.
+
+   ![Confirmar publicación](assets/tabular-data/tabular-data-quick-publish.png)
+
+1. Un titular confirma la publicación.
+
+   ![Confirmación de publicación del titular](assets/tabular-data/tabular-data-publish-banner.png)
+
+La hoja de cálculo de redirecciones ahora está publicada y es accesible públicamente.
 
 ## Otros tipos de hoja de cálculo {#other}
 
@@ -134,6 +132,12 @@ Ahora que sabe cómo crear una hoja de cálculo de redirecciones, puede crear cu
 * Configuración
 
 Simplemente siga los mismos pasos en las secciones [Crear hoja de cálculo](#spreadsheet) y [Actualizar paths.json](#paths-json) y elija la plantilla adecuada y actualice el `paths.json` archivo correctamente.
+
+Para [Configuración](https://www.aem.live/docs/configuration), [Encabezados](https://www.aem.live/docs/custom-headers) y [Metadatos](https://www.aem.live/docs/bulk-metadata) asegúrese de añadir una asignación para publicarlos en sus ubicaciones predeterminadas:
+
+* Configuración: `/.helix/config.json`
+* Encabezados: `/.helix/headers.json`
+* Metadatos: `/metadata.json`
 
 Además, puede hacer lo siguiente [crear su propia hoja de cálculo](#own-spreadsheet) con columnas arbitrarias para su propio uso.
 
