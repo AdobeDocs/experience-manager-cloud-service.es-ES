@@ -1,0 +1,377 @@
+---
+title: Configuración del tráfico en la CDN
+description: Obtenga información sobre cómo configurar el tráfico de CDN declarando reglas y filtros en un archivo de configuración e implementándolos en CDN mediante la canalización de configuración de Cloud Manager.
+feature: Dispatcher
+source-git-commit: 0a0c9aa68b192e8e2a612f50a58ba5f9057c862d
+workflow-type: tm+mt
+source-wordcount: '974'
+ht-degree: 2%
+
+---
+
+
+# Configuración del tráfico en la CDN {#cdn-configuring-cloud}
+
+>[!NOTE]
+>Esta función aún no está disponible de forma general. Para unirse al programa de adopción anticipada, envíe un correo electrónico a `aemcs-cdn-config-adopter@adobe.com` y describa su caso de uso.
+
+AEM as a Cloud Service ofrece una colección de funciones configurables en [CDN administrado por Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) que modifican la naturaleza de las solicitudes entrantes o de las respuestas salientes. Se pueden declarar las siguientes reglas, descritas en detalle en esta página, para lograr el siguiente comportamiento:
+
+* [Solicitar transformaciones](#request-transformations) : modifique aspectos de las solicitudes entrantes, incluidos encabezados, rutas y parámetros.
+* [Transformaciones de respuesta](#response-transformations) : modifique los encabezados que están en camino de regreso al cliente (por ejemplo, un explorador web).
+* [Redirectores de cliente](#client-side-redirectors) - déclencheur un redireccionamiento del explorador.
+* [Selectores de origen](#origin-selectors) : proxy a un servidor de origen diferente.
+
+También se pueden configurar en la CDN las reglas de filtro de tráfico (incluido WAF), que controlan qué tráfico permite o rechaza la CDN. Esta función ya está disponible y puede obtener más información al respecto en la [Reglas de filtro de tráfico, incluidas las reglas WAF](/help/security/traffic-filter-rules-including-waf.md) página.
+
+Además, si la CDN no puede ponerse en contacto con su origen, puede escribir una regla que haga referencia a una página de error personalizada autoalojada (que luego se procesará). Para obtener más información, lea la [Configuración de páginas de error de CDN](/help/implementing/dispatcher/cdn-error-pages.md) artículo.
+
+Todas estas reglas, declaradas en un archivo de configuración del control de código fuente, se implementan mediante [Canalización de configuración de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Tenga en cuenta que el tamaño acumulado del archivo de configuración no puede superar los 100 KB.
+
+## Orden de evaluación {#order-of-evaluation}
+
+Desde el punto de vista funcional, las distintas funciones mencionadas anteriormente se evalúan en la siguiente secuencia:
+
+![imagen](/help/implementing/dispatcher/assets/order.png)
+
+## Configuración {#initial-setup}
+
+Para poder configurar el tráfico en la CDN, debe hacer lo siguiente:
+
+* En primer lugar, cree esta carpeta y estructura de archivos en la carpeta de nivel superior del proyecto Git:
+
+```
+config/
+     cdn.yaml
+```
+
+* En segundo lugar, la `cdn.yaml` El archivo de configuración debe contener metadatos y las reglas que se describen en los ejemplos siguientes.
+
+## Solicitar transformaciones {#request-transformations}
+
+Las reglas de transformación de solicitudes permiten modificar las solicitudes entrantes. Las reglas admiten la configuración, desconfiguración y modificación de rutas, parámetros de consulta y encabezados (incluidas las cookies) en función de diversas condiciones de coincidencia, incluidas las expresiones regulares. También puede establecer variables, a las que se puede hacer referencia más adelante en la secuencia de evaluación.
+
+Los casos de uso son variados e incluyen reescrituras de URL para la simplificación de la aplicación o la asignación de URL heredadas.
+
+Como se ha mencionado anteriormente, existe un límite de tamaño para el archivo de configuración, por lo que las organizaciones con requisitos más grandes deben definir reglas en la `apache/dispatcher` capa.
+
+Ejemplo de configuración:
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["prod", "dev"]
+data:  
+  experimental_requestTransformations:
+    removeMarketingParams: true
+    rules:
+      - name: set-header-rule
+        when:
+          reqProperty: path
+          like: /set-header
+        actions:
+          - type: set
+            reqHeader: x-some-header
+            value: some value
+ 
+      - name: unset-header-rule
+        when:
+          reqProperty: path
+          like: /unset-header
+        actions:
+          - type: unset
+            reqHeader: x-some-header
+ 
+      - name: set-query-param-rule
+        when:
+          reqProperty: path
+          equals: /set-query-param
+        actions:
+          - type: set
+            queryParam: someParam
+            value: someValue
+ 
+      - name: unset-query-param-rule
+        when:
+          reqProperty: path
+          equals: /unset-query-param
+        actions:
+          - type: unset
+            queryParam: someParam
+ 
+      - name: unset-matching-query-params-rule
+        when:
+          reqProperty: path
+          equals: /unset-matching-query-params
+        actions:
+          - type: unset
+            queryParamMatch: ^removeMe_.*$
+ 
+      - name: unset-all-query-params-except-exact-two-rule
+        when:
+          reqProperty: path
+          equals: /unset-all-query-params-except-exact-two
+        actions:
+          - type: unset
+            queryParamMatch: ^(?!leaveMe$|leaveMeToo$).*$
+ 
+      - name: set-req-cookie-rule
+        when:
+          reqProperty: path
+          equals: /set-req-cookie
+        actions:
+          - type: set
+            reqCookie: someParam
+            value: someValue
+ 
+      - name: unset-req-cookie-rule
+        when:
+          reqProperty: path
+          equals: /unset-req-cookie
+        actions:
+          - type: unset
+            reqCookie: someParam
+ 
+      - name: set-variable-rule
+        when:
+          reqProperty: path
+          equals: /set-variable
+        actions:
+          - type: set
+            var: some_var_name
+            value: some value
+ 
+      - name: unset-variable-rule
+        when:
+          reqProperty: path
+          equals: /unset-variable
+        actions:
+          - type: unset
+            var: some_var_name
+ 
+      - name: replace-segment
+        when:
+          reqProperty: path
+          like: /replace-segment/*
+        actions:
+          - type: replace
+            reqProperty: path
+            match: /replace-segment/
+            value: /segment-was-replaced/
+ 
+      - name: replace-extension
+        when:
+          reqProperty: path
+          like: /replace-extension/*.html
+        actions:
+          - type: replace
+            reqProperty: path
+            match: \.html
+            value: ''
+ 
+      - name: multi-action
+        when:
+          reqProperty: path
+          like: /multi-action
+        actions:
+          - type: set
+            reqHeader: x-header1
+            value: body set by transformation rule
+          - type: set
+            reqHeader: x-header2
+            value: '201'
+```
+
+**Acciones**
+
+En la tabla siguiente se explican las acciones disponibles.
+
+| Nombre | Propiedades | Significado |
+|-----------|--------------------------|-------------|
+| **set** | reqHeader, valor | Establece un encabezado especificado en un valor determinado. |
+|     | queryParam, valor | Establece un parámetro de consulta especificado en un valor determinado. |
+|     | reqCookie, valor | Establece una cookie especificada en un valor determinado. |
+|     | var, valor | Establece una variable especificada en un valor determinado. |
+| **anular** | reqHeader | Quita un encabezado especificado. |
+|         | queryParam | Quita un parámetro de consulta especificado. |
+|         | reqCookie | Quita una cookie especificada. |
+|         | var | Quita una variable especificada. |
+|         | queryParamMatch | Quita todos los parámetros de consulta que coinciden con una expresión regular especificada. |
+| **replace** | reqProperty, match, value | Reemplaza parte de la propiedad de solicitud por un nuevo valor. Actualmente solo se admite la propiedad &quot;path&quot;. |
+
+### Variables {#variables}
+
+Puede establecer variables durante la transformación de la solicitud y luego hacer referencia a ellas más adelante en la secuencia de evaluación. Consulte la [orden de evaluación](#order-of-evaluation) diagrama para obtener más información.
+
+Ejemplo de configuración:
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["prod", "dev"]
+data:   
+  experimental_requestTransformations:
+    rules:
+      - name: set-variable-rule
+        when:
+          reqProperty: path
+          equals: /set-variable
+        actions:
+          - type: set
+            var: some_var_name
+            value: some_value
+ 
+  experimental_responseTransformations:
+    rules:
+      - name: set-response-header-while-variable
+        when:
+          var: some_var_name
+          equals: some_value
+        actions:
+          - type: set
+            respHeader: x-some-header
+            value: some header value
+```
+
+## Transformaciones de respuesta {#response-transformations}
+
+Las reglas de transformación de respuestas permiten establecer y anular la configuración de encabezados de las respuestas salientes de CDN. Además, consulte el ejemplo anterior para hacer referencia a una variable configurada anteriormente en una regla de transformación de solicitud.
+
+Ejemplo de configuración:
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["prod", "dev"]
+data:
+  experimental_responseTransformations:
+    rules:
+      - name: set-response-header-rule
+        when:
+          reqProperty: path
+          like: /set-response-header
+        actions:
+          - type: set
+            value: value-set-by-resp-rule
+            respHeader: x-resp-header
+ 
+      - name: unset-response-header-rule
+        when:
+          reqProperty: path
+          like: /unset-response-header
+        actions:
+          - type: unset
+            respHeader: x-header1
+ 
+      # Example: Multi-action on response header
+      - name: multi-action-response-header-rule
+        when:
+          reqProperty: path
+          like: /multi-action-response-header
+        actions:
+          - type: set
+            respHeader: x-resp-header-1
+            value: value-set-by-resp-rule-1
+          - type: set
+            respHeader: x-resp-header-2
+            value: value-set-by-resp-rule-2
+```
+
+**Acciones**
+
+En la tabla siguiente se explican las acciones disponibles.
+
+| Nombre | Propiedades | Significado |
+|-----------|--------------------------|-------------|
+| **set** | reqHeader, valor | Establece un encabezado especificado en un valor determinado de la respuesta. |
+| **anular** | respHeader | Quita un encabezado especificado de la respuesta. |
+
+## Selectores de origen {#origin-selectors}
+
+AEM Puede aprovechar la CDN de la para enrutar el tráfico a diferentes backends, incluidas las aplicaciones que no sean de Adobe (tal vez por ruta o subdominio).
+
+Ejemplo de configuración:
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  experimental_originSelectors:
+    rules:
+      - name: example-com
+        when: { reqProperty: path, like: /proxy-me* }
+        action:
+          type: selectOrigin
+          originName: example-com
+          # useCache: false
+    origins:
+      - name: example-com
+        domain: www.example.com
+        # ip: '1.1.1.1'
+        # forwardHost: true
+        # forwardCookie: true 
+        # forwardAuthorization: true
+        # timeout: 20
+```
+
+**Acciones**
+
+La acción disponible se explica en la tabla siguiente.
+
+| Nombre | Propiedades | Significado |
+|-----------|--------------------------|-------------|
+| **selectOrigin** | originName | Nombre de uno de los orígenes definidos. |
+|     | useCache (opcional, el valor predeterminado es true) | Indicar si se debe utilizar el almacenamiento en caché para las solicitudes que coinciden con esta regla. |
+
+**Orígenes**
+
+Las conexiones a orígenes son solo SSL y utilizan el puerto 443.
+
+| Propiedad | Significado |
+|------------------|--------------------------------------|
+| **name** | Nombre al que se puede hacer referencia mediante &quot;action.originName&quot;. |
+| **sector** | Nombre de dominio utilizado para conectarse al backend personalizado. También se utiliza para el SNI y la validación SSL. |
+| **ip** (opcional, compatible con iv4 e ipv6) | Si se proporciona, se utiliza para conectarse al servidor en lugar de a &quot;dominio&quot;. Todavía se utiliza &quot;domain&quot; para el SNI y la validación SSL. |
+| **forwardHost** (opcional, el valor predeterminado es false) | Si se establece en true, el encabezado &quot;Host&quot; de la solicitud del cliente se pasará al backend; de lo contrario, el valor &quot;domain&quot; se pasará al encabezado &quot;Host&quot;. |
+| **forwardCookie** (opcional, el valor predeterminado es false) | Si se establece en true, el encabezado &quot;Cookie&quot; de la solicitud del cliente se pasará al servidor; de lo contrario, se eliminará el encabezado &quot;Cookie&quot;. |
+| **forwardAuthorization** (opcional, el valor predeterminado es false) | Si se establece en true, el encabezado &quot;Autorización&quot; de la solicitud del cliente se pasará al backend; de lo contrario, se eliminará el encabezado Autorización. |
+| **timeout** (opcional, en segundos, el valor predeterminado es 60) | Número de segundos que la CDN debe esperar para que un servidor back-end envíe el primer byte de un cuerpo de respuesta HTTP. Este valor también se utiliza como tiempo de espera entre bytes para el servidor back-end. |
+
+## Redirectores de cliente {#client-side-redirectors}
+
+Puede utilizar reglas de redireccionamiento del lado del cliente para redirecciones del lado del cliente 301, 302 y similares. Si una regla coincide, la CDN responde con una línea de estado que incluye el código y el mensaje de estado (por ejemplo, HTTP/1.1 301 Movido permanentemente), así como el conjunto de encabezado de ubicación.
+
+Se permiten ubicaciones absolutas y relativas con valores fijos.
+
+Ejemplo de configuración:
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  experimental_redirects:
+    rules:
+      - name: redirect-absolute
+        when: { reqProperty: path, equals: "/page.html" }
+        action:
+          type: redirect
+          status: 301
+          location: https://example.com/page
+      - name: redirect-relative
+        when: { reqProperty: path, equals: "/anotherpage.html" }
+        action:
+          type: redirect
+          location: /anotherpage
+```
+
+| Nombre | Propiedades | Significado |
+|-----------|--------------------------|-------------|
+| **redireccionamiento** | ubicación | Valor del encabezado &quot;Ubicación&quot;. |
+|     | estado (opcional, el valor predeterminado es 301) | Estado HTTP que se utilizará en el mensaje de redirección, 301 de forma predeterminada, los valores permitidos son: 301, 302, 303, 307, 308. |

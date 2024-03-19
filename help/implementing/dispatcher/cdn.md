@@ -3,10 +3,10 @@ title: CDN en AEM as a Cloud Service
 description: AEM AEM Aprenda a utilizar la CDN administrada por el y a apuntar su propia CDN a la CDN administrada por el administrador de la red de distribución de contenido (CDN) administrada por el administrador de la.
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
+source-git-commit: 43fdf17ab09fd7a974c32cfd716f65072b678726
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 25%
+source-wordcount: '1118'
+ht-degree: 23%
 
 ---
 
@@ -39,6 +39,14 @@ Consulte [administración de listas de IP permitidas](/help/implementing/cloud-m
 >[!CAUTION]
 >
 >AEM Solo las solicitudes de las IP permitidas son atendidas por CDN administradas por el administrador de la red de distribución de contenido (CDN) que se gestionan en la. AEM Si dirige su propia CDN a la CDN administrada por la CDN, asegúrese de que las IP de su CDN estén incluidas en la lista de permitidos.
+
+### Configuración del tráfico en la CDN {#cdn-configuring-cloud}
+
+Las reglas para configurar el tráfico y los filtros de la CDN se pueden declarar en un archivo de configuración e implementarse en la CDN mediante el [Canalización de configuración de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Para obtener más información, consulte [Configuración del tráfico en la CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) y [Reglas de filtro de tráfico, incluidas las reglas WAF](/help/security/traffic-filter-rules-including-waf.md).
+
+### Configuración de páginas de error de CDN {#cdn-error-pages}
+
+AEM Se puede configurar una página de error de CDN para anular la página predeterminada sin marca que se proporciona al explorador en el improbable evento de que no se pueda acceder a la página de error de CDNo. Para obtener más información, consulte [Configuración de páginas de error de CDN](/help/implementing/dispatcher/cdn-error-pages.md).
 
 ## La CDN del cliente apunta a la CDN administrada por AEM {#point-to-point-CDN}
 
