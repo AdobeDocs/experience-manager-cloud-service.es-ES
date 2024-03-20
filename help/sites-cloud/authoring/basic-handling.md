@@ -2,10 +2,10 @@
 title: Gestión básica
 description: Familiarícese con la navegación por AEM y su uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: 7e0ca5dad5cd53c2304e2eba48a5131d587967ef
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 64%
+source-wordcount: '926'
+ht-degree: 63%
 
 ---
 
@@ -36,7 +36,7 @@ Para comprender bien el uso básico de AEM, este documento se basa en la consola
 
 Cada vez que se accede por primera vez a una consola, se inicia un tutorial de navegación por los productos. AEM Dedique un minuto a seleccionar hasta el final para obtener una buena descripción general de la gestión básica de los recursos de la.
 
-![Tutorial de navegación](assets/tutorial.png)
+![Tutorial de navegación](assets/basic-handling-tutorial.png)
 
 Seleccionar **Siguiente** para avanzar a la siguiente página de la descripción general. Seleccionar **Cerrar** o seleccione fuera del cuadro de diálogo información general para cerrar.
 
@@ -48,7 +48,7 @@ Puede navegar entre las consolas con el panel de navegación global. Se activa c
 
 Para volver a la ubicación anterior, puede cerrar el panel de navegación global tocando o haciendo clic en **Cerrar**.
 
-![Barra superior del panel de navegación](assets/basic-handling-navigation-bar.png)
+![Barra superior del panel de navegación](assets/basic-handling-navigation-options.png)
 
 La navegación global dispone de dos paneles, representados por iconos en el lado izquierdo de la pantalla:
 
@@ -86,31 +86,37 @@ En el **Herramientas** tiene un panel lateral que contiene una serie de categor�
 
 El encabezado de siempre está presente en la parte superior de la pantalla. Aunque la mayoría de las opciones del encabezado no varían en todo el sistema, algunas dependen del contexto.
 
-![Encabezado de navegación](/help/sites-cloud/authoring/assets/navigation-bar.png)
+![Encabezado de navegación](/help/sites-cloud/authoring/assets/basic-handling-navigation-bar.png)
 
 * [Navegación global](#global-navigation) - Seleccione el **Adobe Experience Manager** para navegar entre consolas.
 
-  ![Navegación global](/help/sites-cloud/authoring/assets/global-navigation.png)
+  ![Navegación global](/help/sites-cloud/authoring/assets/basic-handling-global-navigation.png)
 
-* [Buscar](/help/sites-cloud/authoring/search.md) - También puede utilizar el [tecla de método abreviado](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` (barra diagonal) para invocar la búsqueda desde cualquier consola.
+* Comentarios
 
-  ![Icono de búsqueda](/help/sites-cloud/authoring/assets/search-icon.png)
+  ![Botón Comentarios](/help/sites-cloud/authoring/assets/basic-handling-feedback.png)
+
+* Su organización IMS: seleccione para cambiar si es necesario.
 
 * [Soluciones](https://www.adobe.com/es/experience-cloud.html) - Seleccione esta opción para acceder a las demás soluciones de Adobe.
 
-  ![Botón Soluciones](/help/sites-cloud/authoring/assets/solutions.png)
+  ![Botón Soluciones](/help/sites-cloud/authoring/assets/basic-handling-solutions.png)
+
+* [Buscar](/help/sites-cloud/authoring/search.md) - También puede utilizar el [tecla de método abreviado](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` (barra diagonal) para invocar la búsqueda desde cualquier consola.
+
+  ![Icono de búsqueda](/help/sites-cloud/authoring/assets/basic-handling-search-icon.png)
 
 * [Ayuda](#accessing-help)
 
-  ![Botón Ayuda](/help/sites-cloud/authoring/assets/help.png)
+  ![Botón Ayuda](/help/sites-cloud/authoring/assets/basic-handling-help-icon.png)
 
 * [Notificaciones](/help/sites-cloud/authoring/inbox.md) : Este icono se señala con el número de notificaciones incompletas asignadas actualmente.
 
-  ![Botón Notificaciones](/help/sites-cloud/authoring/assets/notifications.png)
+  ![Botón Notificaciones](/help/sites-cloud/authoring/assets/basic-handling-notifications.png)
 
 * [Propiedades del usuario](/help/sites-cloud/authoring/account-environment.md) - Seleccione esta opción para cambiar la configuración de usuario.
 
-  ![Botón Propiedades del usuario](/help/sites-cloud/authoring/assets/user-properties.png)
+  ![Botón Propiedades del usuario](/help/sites-cloud/authoring/assets/basic-handling-user-properties.png)
 
 ## Acceso a la Ayuda   {#accessing-help}
 
