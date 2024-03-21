@@ -3,7 +3,7 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5f780f5e8fa9289b35eefbbd4c3a71d37a7f465a
+source-git-commit: 8a64e2ca1dc3987558c36346422ee43d202d9ecc
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 91%
@@ -111,7 +111,7 @@ Los [Entornos de desarrollo rápido (RDE)](/help/implementing/developing/introdu
 
 ### Programa de pioneros de configuración de CDN {#cdn-config-early-adopter}
 
-Además de los lanzamientos recientes [Reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md), que incluye las reglas del cortafuegos de aplicaciones web (WAF) con licencia opcional, existe la oportunidad de utilizar la canalización de configuración para declarar e implementar otros tipos de configuración de CDN. Únase al programa de usuarios pioneros enviando un correo electrónico **aemcs-cdn-config-adopter@adobe.com** para obtener acceso a:
+Además de los lanzamientos recientes [Reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md), que incluye las reglas de cortafuegos de aplicaciones web (WAF) con licencia opcional, existe la oportunidad de utilizar la canalización de configuración para declarar e implementar [otros tipos de configuración de CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md). Únase al programa de usuarios pioneros enviando un correo electrónico **aemcs-cdn-config-adopter@adobe.com** para obtener acceso a:
 * Redirecciones del lado del cliente 301/302
 * solicitudes de proxy en el perímetro a orígenes arbitrarios
 * Transformaciones de URL

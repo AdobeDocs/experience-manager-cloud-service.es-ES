@@ -2,10 +2,10 @@
 title: Reglas de filtro de tráfico, incluidas reglas WAF
 description: Configuración de las reglas de filtro de tráfico, incluidas las reglas de cortafuegos de aplicación web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 9a535f7fa0a1e7b6f508e887787dd421bfffe8df
+source-git-commit: 9f23b91df3139115ca442de03457bb50a1e1cb71
 workflow-type: tm+mt
-source-wordcount: '3634'
-ht-degree: 90%
+source-wordcount: '3669'
+ht-degree: 89%
 
 ---
 
@@ -25,6 +25,10 @@ Una subcategoría de reglas de filtro de tráfico requiere una licencia de segur
 Las reglas de filtro de tráfico se pueden implementar mediante canalizaciones de configuración de Cloud Manager para los tipos de entorno de desarrollo, fase y producción en programas de producción (que no sean de zonas protegidas). El soporte para RDE vendrá en el futuro.
 
 [Siga un tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=es) para adquirir rápidamente conocimientos sobre esta funcionalidad.
+
+>[!NOTE]
+>AEM ¿Quiere conocer otras opciones para configurar el tráfico en la CDN, como la modificación de la solicitud/respuesta, la declaración de redirecciones y el proxy a un origen no-? [Descubra cómo y pruebe](/help/implementing/dispatcher/cdn-configuring-traffic.md) al unirse al programa de usuarios pioneros.
+
 
 ## Organización de este artículo {#how-organized}
 
