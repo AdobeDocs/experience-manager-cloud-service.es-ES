@@ -2,7 +2,7 @@
 source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
 source-wordcount: '367'
-ht-degree: 67%
+ht-degree: 80%
 
 ---
 # Fragmentos de código {#snippets}
@@ -43,7 +43,7 @@ ht-degree: 67%
 * [Enviar datos de formulario adaptable al flujo de trabajo de AEM](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [Utilizar el portal de Forms para ver una lista de Formularios adaptables de AEM en un sitio web de AEM](/help/forms/configure-forms-portal.md)
 
-## Acciones de envío de formulario adaptable {#af-submit-action}
+## Acción de envío del formulario adaptable {#af-submit-action}
 
 * [Enviar correo electrónico](/help/forms/configure-submit-action-send-email.md)
 * [Enviar a SharePoint](/help/forms/configure-submit-action-sharepoint.md)
@@ -54,12 +54,12 @@ ht-degree: 67%
 * [Invocar un flujo de trabajo de AEM](/help/forms/configure-submit-action-workflow.md)
 * [Enviar a Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Enviar a Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Conectar el formulario adaptable a la aplicación de Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Conectar un formulario adaptable a la aplicación de Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
 * [Conectar un formulario adaptable a Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
 
-## AEM Creación de informes con Edge Delivery Services Acceso anticipado {#aem-authoring-edge-early-access}
+## Creación de AEM con el acceso rápido de Edge Delivery Services {#aem-authoring-edge-early-access}
 
-[!BADGE TECNOLOGÍA DE ACCESO ANTICIPADO: Infórmenos sobre esta función en los laboratorios de AEM Sites de su canal de Slack.]{type=Informative url="/help/edge/docs/slack.md" tooltip="AEM La creación de informes con Edge Delivery Services es una tecnología de acceso anticipado."}
+[!BADGE TECNOLOGÍA DE ACCESO RÁPIDO: infórmenos sobre esta función en los laboratorios de AEM Sites de su canal de Slack.]{type=Informative url="/help/edge/docs/slack.md" tooltip="La creación de AEM con Edge Delivery Services es una tecnología de acceso rápido."}
 
 ## Consulte también {#see-more-forms-eds}
 

@@ -1,12 +1,12 @@
 ---
 title: Desarrollo para Edge Delivery Services
-description: AEM Aprenda a desarrollar bloques y personalizar su proyecto de para trabajar con Edge Delivery Services.
+description: Aprenda a desarrollar bloques y personalizar su proyecto de AEM para trabajar con Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: c356c03c-af43-43a1-a14e-45f94ccb3970
 source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 29%
+ht-degree: 93%
 
 ---
 
@@ -18,16 +18,16 @@ Edge Delivery Services se basa en el concepto de bloques. AEM incluye una comple
 
 Los bloques son la parte más fundamental de una página que envían los Edge Delivery Services. Un bloque encapsula el estilo y el código que impulsa un componente lógico de una página de contenido.
 
-AEM proporciona bloques estándar como parte del producto dentro de la plantilla del proyecto. Estos bloques incluyen encabezados, texto, imágenes, vínculos, listas, etc.
+AEM proporciona bloques estándar como parte del producto dentro del elemento repetitivo del proyecto. Estos bloques incluyen encabezados, texto, imágenes, vínculos, listas, etc.
 
-Consulte la [Sección Generar](/help/edge/developer/block-collection.md) Consulte la documentación de Edge Delivery Services para obtener más información sobre los bloques de y cómo desarrollar para los servicios de envío de Edge.
+Consulte la documentación de la [sección Versión](/help/edge/developer/block-collection.md) de Edge Delivery Services para obtener más información sobre los bloques y cómo desarrollar para los servicios de Edge Delivery.
 
 ## Edge Delivery Services y GitHub {#github-edge}
 
-Edge Delivery aprovecha GitHub para que pueda administrar e implementar código directamente desde su repositorio de GitHub.
+Edge Delivery aprovecha GitHub para que pueda administrar e implementar código directamente desde su repositorio de GitHub. 
 
 AEM Los autores pueden crear contenido mediante la creación basada en documentos o contenido en el modo de creación con el Editor universal, en el modo de creación basada en documentos o en el modo de creación de contenido con el Editor universal. Los desarrolladores pueden personalizar la funcionalidad del sitio utilizando CSS y JavaScript en GitHub, independientemente de cómo creen el contenido los autores.
 
 Los sitios web se crean automáticamente para cada una de las ramas, desde la previsualización de contenido hasta la producción. Todos los recursos que introduce en el repositorio de GitHub están disponibles en el sitio web sin un proceso de compilación.
 
-Consulte la [Sección Generar](/help/edge/developer/block-collection.md) Consulte la documentación de Edge Delivery Services para obtener más información sobre los bloques de y cómo desarrollar para los servicios de envío de Edge.
+Consulte la documentación de la [sección Versión](/help/edge/developer/block-collection.md) de Edge Delivery Services para obtener más información sobre los bloques y cómo desarrollar para los servicios de Edge Delivery.

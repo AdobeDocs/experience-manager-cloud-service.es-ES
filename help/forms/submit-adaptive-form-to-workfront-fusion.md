@@ -1,7 +1,7 @@
 ---
-title: Integración de Adobe Workfront Fusion con AEM Forms Submission
+title: Integración de Adobe Workfront Fusion con el envío de AEM Forms
 description: Adobe Workfront Fusion le permite centrarse en nuevas tareas en lugar de centrarse en tareas repetitivas. Puede conectar Adobe Workfront Fusion a un formulario adaptable mediante el envío de formularios.
-keywords: Enviar un formulario adaptable a Adobe Workfront Fusion, Integración de Adobe Workfront Fusion con AEM Forms Submission, Adobe Workfront Fusion con AEM Forms, Workfront Fusion con AEM Forms, Conexión de Workfront Fusion a AEM Forms, AEM Forms y Workfront Fusion, Conexión de Workfront Fusion con AEM Forms?, Conexión de Workfront Fusion a un formulario
+keywords: Envío de un formulario adaptable a Adobe Workfront Fusion, Integración de Adobe Workfront Fusion con el envío de AEM Forms, Adobe Workfront Fusion con AEM Forms, Workfront Fusion con AEM Forms, Conexión de Workfront Fusion a AEM Forms, AEM Forms y Workfront Fusion, ¿Cómo conectar Workfront Fusion con AEM Forms?, Conexión de Workfront Fusion a un formulario
 topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
@@ -9,17 +9,17 @@ exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
 source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
 workflow-type: tm+mt
 source-wordcount: '1255'
-ht-degree: 6%
+ht-degree: 85%
 
 ---
 
 # Envío de un formulario adaptable a Adobe Workfront Fusion
 
-<span class="preview"> La función está disponible en el programa de usuarios pioneros. Puede escribir a aem-forms-early-adopter-program@adobe.com desde su ID de correo electrónico oficial para unirse al programa de primeros usuarios y solicitar acceso a esta capacidad. </span>
+<span class="preview"> La funcionalidad está disponible en el programa de primeros usuarios. Puede escribir a aem-forms-early-adopter-program@adobe.com desde su ID de correo electrónico oficial para unirse al programa de primeros usuarios y solicitar acceso a esta capacidad. </span>
 
-[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) automatiza el proceso de repetición de las mismas tareas, como los flujos de trabajo de aprobación de documentos, el filtrado y la ordenación por correo electrónico, lo que le permite centrarse en nuevas tareas en lugar de en las recurrentes. Adobe Workfront Fusion incluye varios escenarios. Un escenario consiste en una serie de módulos que ejecutan la transferencia de datos entre aplicaciones y servicios web. En un escenario concreto, se agregan varios pasos (módulos) para automatizar una tarea.
+[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=es) automatiza el proceso de repetición de las mismas tareas, como los flujos de trabajo de aprobación de documentos, el filtrado y la ordenación por correo electrónico, lo que le permite centrarse en nuevas tareas en lugar de en las recurrentes. Adobe Workfront Fusion incluye varios escenarios. Un escenario consiste en una serie de módulos que ejecutan la transferencia de datos entre aplicaciones y servicios web. En un escenario concreto, se añaden varios pasos (módulos) para automatizar una tarea.
 
-Por ejemplo, con Workfront Fusion puede crear un escenario para recopilar datos con formularios adaptables, procesar los datos y enviarlos a un almacén de datos para su archivo. Una vez configurado un escenario, Workfront Fusion ejecuta automáticamente las tareas cada vez que un usuario rellena un formulario, actualizando el almacén de datos sin problemas.
+Por ejemplo, con Workfront Fusion puede crear un escenario para recopilar datos con formularios adaptables, procesar los datos y enviarlos a un almacén de datos para su archivo. Una vez configurado un escenario, Workfront Fusion ejecuta automáticamente las tareas cada vez que se rellena un formulario, actualizando el almacén de datos sin problemas.
 
 AEM Forms as a Cloud Service proporciona un conector OOTB para conectarse y enviar un formulario adaptable a Adobe Workfront Fusion. El envío de un formulario a Adobe Workfront Fusion puede ofrecer varias ventajas:
 * Permite la transferencia perfecta de datos de los envíos de formularios a los flujos de trabajo de Workfront Fusion.
@@ -35,8 +35,8 @@ AEM Forms as a Cloud Service proporciona un conector OOTB para conectarse y envi
 
 Para establecer una conexión entre Workfront Fusion y AEM Forms, es necesario lo siguiente:
 
-* Un válido [Licencia de Workfront y Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
-* AEM Un usuario con derecho de acceso a la aplicación [Consola de desarrollador](https://my.cloudmanager.adobe.com/) hasta [recuperar las credenciales del servicio](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=es).
+* Un válido [Licencia de Workfront y Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html?lang=es).
+* Un usuario de AEM con derecho de acceso a la aplicación [Consola de desarrollo](https://my.cloudmanager.adobe.com/) para [recuperar las credenciales del servicio](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=es).
 
 ## Integración de AEM Forms con Adobe Workfront Fusion
 
@@ -51,72 +51,72 @@ Para crear un escenario de Workfront, realice los siguientes pasos:
 #### Creación de un escenario {#create-scenario}
 
 Para crear un escenario:
-1. Inicie sesión en su [Cuenta de Workfront Fusion](https://app-qa.workfrontfusion.com/).
-1. Clic **[!UICONTROL Escenarios]** ![Icono Compartir](/help/forms/assets/Smock_ShareAndroid_18_N.svg) en el panel izquierdo.
-1. Clic **[!UICONTROL Crear un nuevo escenario]** en la esquina superior derecha de la página. Aparece en pantalla una página para crear un nuevo escenario.
-1. Seleccionar **[!UICONTROL Nuevo escenario]** en la esquina superior izquierda de la página y escriba un nombre adecuado para el escenario.
-1. Haga clic en el signo de interrogación y asegúrese de agregar el primer módulo como **[!UICONTROL AEM Forms]**.
+1. Inicie sesión en su [cuenta de Workfront Fusion](https://app-qa.workfrontfusion.com/).
+1. Haga clic en **[!UICONTROL Escenarios]** ![icono Compartir](/help/forms/assets/Smock_ShareAndroid_18_N.svg) en el panel izquierdo.
+1. Haga clic en **[!UICONTROL Crear un nuevo escenario]** en la esquina superior derecha de la página. Aparece en pantalla una página para crear un nuevo escenario.
+1. Seleccione **[!UICONTROL Nuevo escenario]** en la esquina superior izquierda de la página y escriba un nombre adecuado para el escenario.
+1. Haga clic en el signo de interrogación y asegúrese de añadir el primer módulo como **[!UICONTROL AEM Forms]**.
 
    ![Añadir un módulo de AEM Forms](/help/forms/assets/workfront-aemforms.png)
 
-   El **[!UICONTROL Buscar eventos de formulario]** aparece el cuadro de diálogo.
+   Aparece el cuadro de diálogo **[!UICONTROL Buscar eventos de formulario]**.
 
    >[!NOTE]
    >
    > Es obligatorio añadir el primer módulo como **[!UICONTROL AEM Forms]**.
 
-1. Seleccione el **[!UICONTROL Buscar eventos de formulario]** y aparecerá una ventana para agregar un webhook.
+1. Seleccione el cuadro de diálogo **[!UICONTROL Buscar eventos de formulario]** y aparecerá una ventana para añadir un webhook.
 
 #### Añadir un webhook {#add-webhook}
 
 ![Añadir un webhook](/help/forms/assets/workfront-add-webhook.png)
 
-Para agregar un webhook:
+Para añadir un webhook:
 
-1. Clic **[!UICONTROL Añadir]** y una **[!UICONTROL Añadir un webhook]** aparece el cuadro de diálogo.
+1. Haga clic en **[!UICONTROL Añadir]** y aparecerá un cuadro de diálogo **[!UICONTROL Añadir un webhook]**.
 1. Especifique un nombre de webhook.
 
    >[!NOTE]
    >
-   > AEM Se recomienda elegir cuidadosamente el nombre del webhook, ya que el nombre del webhook especificado aparece en la instancia de.
+   > Se recomienda elegir cuidadosamente el nombre del webhook, ya que el nombre del webhook especificado aparece en la instancia de AEM.
 
-1. Clic **[!UICONTROL Añadir]** para agregar una nueva conexión. El **[!UICONTROL Crear una conexión]** aparece el cuadro de diálogo.
+1. Haga clic en **[!UICONTROL Añadir]** para añadir una nueva conexión. Aparece el cuadro de diálogo **[!UICONTROL Crear una conexión]**.
 
 #### Añadir una conexión a un webhook {#add-connection}
 
 ![Añadir una conexión](/help/forms/assets/workfront-add-connection.png)
 
-Para agregar una conexión:
+Para añadir una conexión, haga lo siguiente:
 
-1. Especifique un **[!UICONTROL Nombre de conexión]** en el **[!UICONTROL Crear una conexión]** Cuadro de diálogo.
+1. Especifique un **[!UICONTROL Nombre de conexión]** en el cuadro de diálogo **[!UICONTROL Crear una conexión]**.
 
-1. Seleccionar **Entorno** y **Tipo** en la lista desplegable.
+1. Seleccione **Entorno** y **Tipo** en la lista desplegable.
 
-1. Introduzca el **URL de instancia**.
+1. Introduzca la **URL de instancia**.
 
    >[!NOTE]
    >
    > La URL de instancia es la dirección web única que apunta a una instancia de AEM Forms específica.
 
-   Puede recuperar la variable [credenciales de servicio de la consola de desarrollador](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=es) necesario para crear una conexión.
+   Puede recuperar las [credenciales de servicio de Developer console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=es) necesarias para crear una conexión.
 
-1. Reemplazar `ims-na1.adobelogin.com` en el **Extremo de IMS** con el valor de **imsEndpoint** desde las credenciales del servicio en la consola de desarrollador.
-
-   >[!NOTE]
-   >
-   > Conserve el `https://` en el **Extremo de IMS** cuadro de texto al añadir `imsEndpoint` URL.
-
-1. Especifique los siguientes valores en la **[!UICONTROL Crear una conexión]** Cuadro de diálogo:
-   * Especificar **ID de cliente** con valor de **clientId** desde las credenciales del servicio en la consola de desarrollador.
-   * Especificar **Secreto del cliente** con valor de **clientSecret** desde las credenciales del servicio en la consola de desarrollador.
-   * Especificar **ID de cuenta técnica**  con valor de **id** desde las credenciales del servicio en la consola de desarrollador.
-   * Especificar **ID de organización**  con valor de **org** desde las credenciales del servicio en la consola de desarrollador.
-   * **Meta ámbitos**  con valor de **metascopios** desde las credenciales del servicio en la consola de desarrollador.
-   * **Claves privadas**  con valor de **privateKey** desde las credenciales del servicio en la consola de desarrollador.
+1. Reemplazar `ims-na1.adobelogin.com` en el **Punto final de IMS** con el valor de **imsEndpoint** desde las credenciales del servicio en la Developer console.
 
    >[!NOTE]
    >
-   >* Para **Clave privada**, eliminar `\r\n` de su valor.
+   > Conserve el `https://` en el cuadro de texto **Punto final de IMS** al añadir la URL `imsEndpoint`.
+
+1. Especifique los siguientes valores en el cuadro de diálogo **[!UICONTROL Crear una conexión]**:
+   * Especifique **ID de cliente** con valor de **clientId** en las credenciales del servicio en Developer console.
+   * Especifique **Secreto del cliente** con valor de **clientSecret** en las credenciales del servicio en Developer console.
+   * Especifique **ID de cuenta técnica** con valor de **id** en las credenciales del servicio en Developer console.
+   * Especifique **ID de organización** con valor de **org** en las credenciales del servicio en Developer console.
+   * **Meta ámbitos** con valor de **metascopios** en las credenciales del servicio en Developer console.
+   * **Claves privadas** con valor de **privateKey** en las credenciales del servicio en Developer console.
+
+   >[!NOTE]
+   >
+   >* Para **Clave privada**, quitar `\r\n` de su valor.
    >  Por ejemplo, si el valor de la clave privada es:
    >`\r\nIJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL\r\nMy1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`, y después de quitar el `\r\n` desde la clave privada, la clave tendría el siguiente aspecto, y ambos valores aparecerían en una línea independiente:
    >
@@ -124,15 +124,15 @@ Para agregar una conexión:
    >
    >   `My1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`
    > 
-   >* También tiene la opción de recuperar una clave privada o un certificado del archivo seleccionando la **Extract** botón.
+   >* También tiene la opción de recuperar una clave privada o un certificado del archivo seleccionando el botón **Extraer**.
 
 1. Haga clic en **Continuar**.
 
-   La conexión creada aparecerá en la lista desplegable de la **[!UICONTROL Conexión]** en el **[!UICONTROL Añadir un webhook]** Cuadro de diálogo.
+   La conexión creada aparecerá en la lista desplegable de la **[!UICONTROL Conexión]** en el cuadro de diálogo **[!UICONTROL Añadir un webhook]**.
 
 1. Seleccione la conexión creada **[!UICONTROL Conexión]** en la lista desplegable.
 1. Haga clic en **[!UICONTROL Guardar]**.
-1. Clic **[!UICONTROL OK]** y guarde los cambios para el escenario.
+1. Haga clic en **[!UICONTROL OK]** y guarde los cambios para el escenario.
 1. Para activar el escenario, haga clic en el botón de alternancia ENCENDIDO/APAGADO del editor de escenarios.
 
 >[!NOTE]
@@ -142,26 +142,26 @@ Para agregar una conexión:
 ### 2. Configurar la acción de envío de un formulario adaptable para Workfront Fusion
 
 Puede configurar la acción de envío para Workfront Fusion para:
-* [Nuevo Forms adaptable](#new-af-submit-action)
+* [Nuevos Formularios adaptables](#new-af-submit-action)
 * [Formularios adaptables existentes](#existing-af-submit-action)
 
 #### Configuración de la acción de envío del nuevo formulario adaptable para Workfront Fusion {#new-af-submit-action}
 
 Para configurar la acción de envío del nuevo formulario adaptable para Workfront Fusion:
 
-1. AEM Inicie sesión en la instancia de.
-1. Ir a **[!UICONTROL Forms]** > **[!UICONTROL Forms y documentos]** > **[!UICONTROL Crear]** > **[!UICONTROL Formulario adaptable]**. El **[!UICONTROL Crear formulario]** aparece el asistente.
-1. Seleccione una plantilla de formulario adaptable de la **[!UICONTROL Origen]** pestaña.
-1. Seleccione una temática del **[!UICONTROL Estilo]** pestaña.
+1. Inicie sesión en la instancia de AEM. 
+1. Ir a **[!UICONTROL Forms]** > **[!UICONTROL Forms y documentos]** > **[!UICONTROL Crear]** > **[!UICONTROL Formulario adaptable]**. Aparece el asistente **[!UICONTROL Crear formulario]**.
+1. Seleccione una plantilla de formulario adaptable de la pestaña **[!UICONTROL Origen]**.
+1. Seleccione la temática en la pestaña **[!UICONTROL Estilo]**.
 
    ![Acción de envío para Workfront Fusion](/help/forms/assets/workfront-scenario-new-af.png)
 
-1. Seleccione el **[!UICONTROL Invocar un escenario de Workfront Fusion]** desde el **[!UICONTROL Envío]** pestaña.
-1. Seleccione el webhook creado en **[!UICONTROL Opciones]** en la pestaña **[!UICONTROL Propiedades]** ventana.
+1. Seleccione **[!UICONTROL Invocar un escenario de Workfront Fusion]** desde la pestaña **[!UICONTROL Envío]**.
+1. Seleccione el webhook creado en la pestaña **[!UICONTROL Opciones]** en la ventana **[!UICONTROL Propiedades]**.
 
    >[!NOTE]
    >
-   > El nombre del webhook del escenario de Workfront aparece en la **Opciones** lista desplegable.
+   > El nombre del webhook del escenario de Workfront aparece en la lista desplegable **Opciones**.
 
 1. Haga clic en **[!UICONTROL Crear]**.
 1. Especifique el nombre del nuevo formulario adaptable y haga clic en **[!UICONTROL Crear]**.
@@ -170,7 +170,7 @@ Para configurar la acción de envío del nuevo formulario adaptable para Workfro
 
 Para configurar la acción de envío de un formulario adaptable existente para Workfront Fusion:
 
-1. AEM Inicie sesión en la instancia de.
+1. Inicie sesión en la instancia de AEM. 
 1. Vaya a **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
 1. Seleccione un formulario adaptable y ábralo en modo de edición.
 1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
@@ -179,14 +179,14 @@ Para configurar la acción de envío de un formulario adaptable existente para W
    ![Acción de envío para Workfront Fusion](/help/forms/assets/workfront-scenario-existing-af.png)
 
 1. Abra la pestaña **[!UICONTROL Envío]**.
-1. Seleccione el **[!UICONTROL Acción de envío]** as **[!UICONTROL Invocar un escenario de Workfront Fusion]**
-1. Seleccionar **[!UICONTROL Escenario de Workfront Fusion]** en la lista desplegable.
+1. Seleccione una **[!UICONTROL acción de envío]** como **[!UICONTROL Invocar un escenario de Workfront Fusion]**
+1. Seleccione **[!UICONTROL Escenario de Workfront Fusion]** en la lista desplegable.
 1. Haga clic en **[!UICONTROL Listo]**.
 
 ## Prácticas recomendadas {#best-practices}
 
-* AEM Se recomienda elegir el nombre del webhook con cuidado, ya que no hay forma de obtener el nombre del escenario en la instancia de. En caso de que cambie el nombre del gancho web en el futuro, esto no se reflejará en la lista desplegable de acción de envío de AEM Forms.
-* Un escenario puede tener varios vínculos de gancho web, pero a la vez solo hay un vínculo activo. Se recomienda eliminar el webhook no vinculado, de modo que no aparezca en la lista desplegable de acciones de envío de AEM Forms.
+* Se recomienda elegir cuidadosamente el nombre del webhook, ya que no hay forma de obtener el nombre del escenario en la instancia de AEM. En caso de que cambie el nombre de webhook en el futuro, no se reflejará en la lista desplegable de acción de envío de AEM Forms.
+* Un escenario puede tener varios vínculos de webhook, pero a la vez solo hay un vínculo de webhook activo. Se recomienda eliminar el webhook no vinculado, de modo que no aparezca en la lista desplegable de acciones de envío de AEM Forms.
 
 <!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->
 

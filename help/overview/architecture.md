@@ -227,7 +227,7 @@ La nueva arquitectura de AEM as a Cloud Service presenta algunos cambios e innov
 ## Información adicional {#further-information}
 
 * Configuración del programa
-   * [Recorrido de incorporación](/help/journey-onboarding/overview.md)
+   * [Recorrido de la incorporación](/help/journey-onboarding/overview.md)
    * [Programas y tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 * Arquitectura de desarrollo
    * [Repositorios de Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)

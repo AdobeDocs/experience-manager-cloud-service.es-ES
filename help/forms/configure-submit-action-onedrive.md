@@ -1,28 +1,28 @@
 ---
 Title: How to submit data from an Adaptive Form to Microsoft® OneDrive?
 Description: Explore the streamlined process of connecting AEM Forms with Microsoft® OneDrive using the Submit to OneDrive Submit Action. Learn the step-by-step guide to configure OneDrive and set up submission actions for efficient data storage and retrieval
-keywords: Integración de AEM Forms OneDrive, Conectarse a Microsoft AEM OneDrive, Configuración de OneDrive con formularios de
+keywords: Integración de AEM Forms OneDrive, Conexión a Microsoft AEM OneDrive, Configuración de OneDrive con formularios de AEM
 feature: Adaptive Forms, Core Components
-source-git-commit: 20458e710502e445cf5c8f582a1d183bdac75c8d
+exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
 workflow-type: tm+mt
 source-wordcount: '587'
-ht-degree: 66%
+ht-degree: 98%
 
 ---
 
+# Envío de un formulario adaptable a Microsoft® OneDrive
 
-# Enviar un formulario adaptable a Microsoft® OneDrive
+La acción de envío **[!UICONTROL Enviar a OneDrive]** conecta un formulario adaptable con un Microsoft® OneDrive. Puede enviar los datos del formulario, archivos, archivos adjuntos o el documento de registro al almacenamiento de Microsoft® OneDrive conectado.
 
-La acción de envío **[!UICONTROL Enviar a OneDrive]** conecta un formulario adaptable con un Microsoft® OneDrive. Puede enviar los datos del formulario, los archivos, los archivos adjuntos o el documento de registro al almacenamiento de Microsoft® OneDrive conectado.
-
-AEM as a Cloud Service ofrece varias acciones de envío listas para usar para administrar los envíos de formularios. Puede obtener más información sobre estas opciones en la [Acción de envío del formulario adaptable](/help/forms/configure-submit-actions-core-components.md)  artículo.
+AEM as a Cloud Service ofrece varias acciones de envío predeterminadas para gestionar los envíos de formularios. Puede obtener más información sobre estas opciones en el artículo [Acción de envío del formulario adaptable](/help/forms/configure-submit-actions-core-components.md).
 
 ## Ventajas
 
 Algunas de las ventajas de la integración perfecta de AEM Forms y Microsoft® OneDrive son:
 
-* La accesibilidad entre dispositivos de OneDrive garantiza que los datos de formulario almacenados estén fácilmente disponibles en diferentes plataformas. Los usuarios pueden acceder a los datos, archivos adjuntos y documentos enviados desde equipos de escritorio, portátiles, tabletas y dispositivos móviles, lo que mejora la accesibilidad y la flexibilidad.
-* AEM La integración de OneDrive con los formularios de datos de la aplicación proporciona una solución fiable y escalable para un almacenamiento de datos eficiente. Todos los envíos de formularios adaptables, como archivos, archivos adjuntos y documentos de registro, se pueden guardar cómodamente en OneDrive, lo que garantiza la organización y el acceso a los datos.
+* La accesibilidad entre dispositivos de OneDrive garantiza que los datos de formulario almacenados estén fácilmente disponibles en diferentes plataformas. Se puede acceder a los datos enviados, archivos adjuntos y documentos enviados desde equipos de escritorio, portátiles, tabletas y dispositivos móviles, lo que mejora la accesibilidad y la flexibilidad.
+* La integración de OneDrive con AEM Forms proporciona una solución fiable y escalable para un almacenamiento de datos eficiente. Todos los envíos de formularios adaptables, como archivos, archivos adjuntos y el documento de registro, se pueden guardar cómodamente en OneDrive, lo que garantiza que los datos estén organizados y sean accesibles.
 
 ## Conectar OneDrive a un formulario adaptable
 
@@ -31,7 +31,7 @@ Algunas de las ventajas de la integración perfecta de AEM Forms y Microsoft® O
 Para configurar OneDrive para el envío de AEM Forms, realice los siguientes pasos:
 
 1. [Crear una configuración de OneDrive](#create-a-onedrive-configuration-create-onedrive-configuration): conecta AEM Forms al almacenamiento de Microsoft® OneDrive.
-2. [Utilizar la acción de envío Enviar a OneDrive en un formulario adaptable](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): conecta el formulario adaptable al Microsoft® OneDrive configurado.
+2. [Utilice la acción de envío Enviar a OneDrive en un formulario adaptable](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): conecta el formulario adaptable a Microsoft® OneDrive configurado.
 
 ### Crear configuración de OneDrive {#create-onedrice-configuration}
 

@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 2c3be4b60396c5cf57c327fd5b858a3af65397f2
 workflow-type: tm+mt
 source-wordcount: '4829'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -624,17 +624,17 @@ ht-degree: 94%
             + [Crear un formulario adaptable](/help/forms/creating-adaptive-form-core-components.md)
             + [Crear fragmento de formulario adaptable](/help/forms/adaptive-form-fragments-core-components.md)
             + [Creación de temáticas para un formulario adaptable: componentes principales](/help/forms/using-themes-in-core-components.md)
-            + [Crear una plantilla de formulario adaptable basado en componentes principales](/help/forms/template-editor-core-components.md)
+            + [Creación de una plantilla de formulario adaptable basado en componentes principales](/help/forms/template-editor-core-components.md)
             + [Generar documento de registro para formularios adaptables](/help/forms/generate-document-of-record-core-components.md)
             + [Utilizar la traducción automática o la traducción humana para traducir un formulario adaptable](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configurar la página de redireccionamiento o el mensaje de agradecimiento](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Crear formularios con secciones repetibles](/help/forms/create-forms-repeatable-sections.md)
             + [Configuración de una acción de envío para un formulario adaptable](/help/forms/configure-submit-actions-core-components.md)
-            + [Enviar un formulario adaptable al almacenamiento del blob de Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
+            + [Envío de un formulario adaptable a Adobe Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Enviar un formulario adaptable a Microsoft](/help/forms/configure-submit-action-onedrive.md)
             + [Conectar un formulario adaptable a Microsoft](/help/forms/configure-submit-action-sharepoint.md)
-            + [AEM AEM Integración de formularios adaptables de la con flujo de trabajo](/help/forms/configure-submit-action-workflow.md)
-            + [Configurar la acción de envío Enviar al extremo REST para Forms adaptable](/help/forms/configure-submit-action-restpoint.md)
+            + [Integración del formulario adaptable de AEM con el flujo de trabajo de AEM](/help/forms/configure-submit-action-workflow.md)
+            + [Configuración de la acción de envío Enviar a punto final REST para formularios adaptables](/help/forms/configure-submit-action-restpoint.md)
             + [Configuración de la acción de envío Enviar correo electrónico para un formulario adaptable](/help/forms/configure-submit-action-send-email.md)
             + [Uso de Google reCAPTCHA en un formulario adaptable](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Agregar un controlador de error personalizado en un formulario adaptable](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
@@ -750,7 +750,7 @@ ht-degree: 94%
       + [Desarrollo de un componente personalizado para Screens as a Cloud Service](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
    + [Preguntas frecuentes de Screens as a Cloud Service](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
-   + [Introducción y descripción general](/help/commerce-cloud/introduction.md)
+   + [Introducción e información general](/help/commerce-cloud/introduction.md)
    + [Cambios importantes en AEM Content and Commerce as a Cloud Service](/help/commerce-cloud/changes.md)
    + Recorridos de Commerce {#journeys}
       + Recorrido del autor de contenido {#author}
@@ -790,7 +790,7 @@ ht-degree: 94%
 + AEM con Edge Delivery Services {#edge-delivery}
    + [Introducción a los Edge Delivery Services](/help/edge/overview.md)
    + [Uso de Edge Delivery](/help/edge/using.md)
-   + [Guía de introducción para desarrolladores](/help/edge/edge-dev-getting-started.md)
+   + [Guía de introducción del desarrollador](/help/edge/edge-dev-getting-started.md)
    + [Creación de contenido para Edge Delivery](/help/edge/authoring.md)
    + [Publicación de contenido para Edge Delivery](/help/edge/publishing.md)
    + [Desarrollo para Edge Delivery](/help/edge/developing.md)
@@ -803,7 +803,7 @@ ht-degree: 94%
       + [Anatomía de un proyecto](/help/edge/developer/anatomy-of-a-franklin-project.md)
       + [Colección de bloqueos](/help/edge/developer/block-collection.md)
       + [Hojas de cálculo](/help/edge/developer/spreadsheets.md)
-      + [Forms](/help/edge/developer/forms.md)
+      + [Formularios](/help/edge/developer/forms.md)
       + [Indexación](/help/edge/developer/indexing.md)
       + [Mantenerlo en 100](/help/edge/developer/keeping-it-100.md)
       + [Marcado: secciones](/help/edge/developer/markup-sections-blocks.md)
@@ -1051,7 +1051,7 @@ ht-degree: 94%
          + [Introducción al editor universal en AEM](/help/implementing/universal-editor/getting-started.md)
          + [Información general sobre el desarrollador del editor universal](/help/implementing/universal-editor/developer-overview.md)
          + [Atributos y tipos de elementos](/help/implementing/universal-editor/attributes-types.md)
-         + [Definiciones de modelo, campos y tipos de componentes](/help/implementing/universal-editor/field-types.md)
+         + [Definiciones del modelo, campos y tipos de componentes](/help/implementing/universal-editor/field-types.md)
          + [Autenticación del editor universal](/help/implementing/universal-editor/authentication.md)
          + [Desarrollo local de AEM con el Editor universal](/help/implementing/universal-editor/local-dev.md)
          + [Llamadas del editor universal](/help/implementing/universal-editor/calls.md)
