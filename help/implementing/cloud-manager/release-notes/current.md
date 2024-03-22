@@ -1,17 +1,17 @@
 ---
-title: Notas de la versión 2024.3.0 para Cloud Manager en Adobe Experience Manager as a Cloud Service
+title: Notas de la versión para Cloud Manager 2024.3.0 en Adobe Experience Manager as a Cloud Service
 description: Estas son las notas de la versión para Cloud Manager 2024.3.0 en AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 4bae300f653ae6b84cf798f4fe9e8c9326963718
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '648'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 
-# Notas de la versión 2024.3.0 para Cloud Manager en Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notas de la versión para Cloud Manager 2024.3.0 en Adobe Experience Manager as a Cloud Service {#release-notes}
 
 Esta página documenta las notas de la versión 2024.3.0 para Cloud Manager en AEM as a Cloud Service.
 
@@ -21,12 +21,12 @@ Esta página documenta las notas de la versión 2024.3.0 para Cloud Manager en A
 
 ## Fecha de lanzamiento {#release-date}
 
-AEM La fecha de lanzamiento de la versión 2024.3.0 de Cloud Manager en la versión as a Cloud Service de es el 14 de marzo de 2024. La próxima versión está planificada para el 11 de abril de 2024.
+La fecha de lanzamiento de Cloud Manager 2023.3.0 en AEM as a Cloud Service es el 14 de marzo de 2024. La próxima versión está planificada para el 11 de abril de 2024.
 
 ## Novedades {#what-is-new}
 
-* [Ahora puede crear una infraestructura de red avanzada](/help/security/configuring-advanced-networking.md) en el programa de Cloud Manager y configúrelo en sus entornos de forma de autoservicio mediante la interfaz de usuario de Cloud Manager.
-* [Detalles del paso de ejecución de la canalización](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) incluirá cuál es el paso actual de la implementación y qué se espera que siga.
+* [Ahora puede crear una infraestructura de redes avanzadas](/help/security/configuring-advanced-networking.md) en el programa de Cloud Manager y configurarla en sus entornos en forma de autoservicio mediante la interfaz de usuario de Cloud Manager.
+* [Los detalles del paso de ejecución de la canalización](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) incluirán cuál es el paso actual de la implementación y qué se espera que siga.
 
 ## Programa para primeros usuarios {#early-adoption}
 
@@ -69,4 +69,4 @@ El tablero utiliza Google Lighthouse, una herramienta automatizada de código ab
 
 ## Correcciones de errores {#bug-fixes}
 
-* Se corrigió un error cuando un usuario define la variable `COMMERCE_ENDPOINT` con un espacio final, entonces dispatcher no se puede cargar.
+* Se ha corregido un error que se produce cuando un usuario define la variable `COMMERCE_ENDPOINT` con un espacio final. Entonces Dispatcher no se puede cargar.

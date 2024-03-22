@@ -3,9 +3,9 @@ title: Notas de la versión [!DNL Workfront for Experience Manager enhanced conn
 description: Notas de la versión [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 411793f140a2a9cf482d820382d41de843a97e87
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1648'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -13,14 +13,14 @@ ht-degree: 96%
 
 En la siguiente sección se describen las notas generales de la versión de [!DNL Workfront for Experience Manager enhanced connector].
 
-La fecha de la última versión, 1.9.18 de [!DNL Workfront for Experience Manager enhanced connector] es el 8 de marzo de 2024.
+La fecha de la última versión 1.9.18 de [!DNL Workfront for Experience Manager enhanced connector] es el 8 de marzo de 2024.
 
 ## Puntos destacados de la versión {#release-highlights}
 
-La versión más reciente de [!DNL Workfront for Experience Manager enhanced connector] incluye la siguiente corrección de errores:
+La versión más reciente de [!DNL Workfront for Experience Manager enhanced connector] incluye las siguientes correcciones de errores:
 
 * El procesamiento de cargas de varios recursos desde Workfront encuentra problemas.
-* No añadir comillas de cierre al utilizar Workfront para buscar carpetas en los resultados de Experience Manager en `SERVER_ERROR`.
+* No añada comillas de cierre al utilizar Workfront para buscar carpetas en los resultados de Experience Manager en `SERVER_ERROR`.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ La versión más reciente de [!DNL Workfront for Experience Manager enhanced con
 
 >[!IMPORTANT]
 >
->El Adobe le recomienda [actualice a la última versión 1.9.18](/help/assets/workfront-connector-install.md) de la [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe le recomienda [actualizar a la versión 1.9.18](/help/assets/workfront-connector-install.md) más reciente de [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemas conocidos {#known-issues}
 

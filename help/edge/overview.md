@@ -4,9 +4,9 @@ description: Descubra cómo AEM as a Cloud Service puede beneficiarse del rendim
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '874'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Con Edge Delivery Services, AEM ofrece experiencias excepcionales que fomentan l
 Mediante Edge Delivery Services, puede:
 
 * Crear sitios rápidos con una puntuación de Lighthouse perfecta y monitorizar continuamente el rendimiento de su sitio a través de la monitorización real del usuario (RUM).
-* Aumentar la eficacia de la creación desacoplando las fuentes de contenido. AEM De serie, puede utilizar tanto la creación de documentos como la creación basada en documentos . De este modo, puede trabajar con varias fuentes de contenido en el mismo sitio web.
+* Aumentar la eficacia de la creación desacoplando las fuentes de contenido. De forma predeterminada, puede utilizar tanto la creación en AEM como la creación basada en documentos. De este modo, puede trabajar con varias fuentes de contenido en el mismo sitio web.
 * Utilice un marco de trabajo de experimentación integrado que permita la creación y ejecución rápidas de pruebas sin impacto en el rendimiento y la publicación rápida en producción de un ganador de pruebas.
 
 ## Información general de Edge Delivery Services {#edge-overview}
@@ -27,7 +27,7 @@ En el diagrama siguiente se ilustra cómo se puede editar contenido en Microsoft
 
 ![Arquitectura de Edge Delivery](assets/AEM-with-EDS-publishing-simple2.png)
 
-Edge Delivery Services es un conjunto de servicios que admiten composición que permiten un alto grado de flexibilidad en la forma en que se crea contenido en su sitio web. Como se mencionó anteriormente, puede utilizar ambos [AEM administración de contenido de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html?lang=es) con [Creación del editor universal](/help/implementing/universal-editor/introduction.md) así como [Creación basada en documentos](https://www.aem.live/docs/authoring)
+Edge Delivery Services es un conjunto de servicios que admiten composición que permiten un alto grado de flexibilidad en la forma en que se crea contenido en su sitio web. Como se mencionó anteriormente, puede utilizar tanto la [administración de contenido AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html?lang=es) con la [creación del editor universal](/help/implementing/universal-editor/introduction.md) como la [creación basada en documentos.](https://www.aem.live/docs/authoring)
 
 Por ejemplo, puede utilizar contenido directamente desde Microsoft Word o Google Docs. Esto significa que los documentos de esas fuentes pueden convertirse en páginas de su sitio web. Además, los encabezados, las listas, las imágenes y los elementos de tipo de fuente se pueden transferir desde el origen inicial al sitio web. El nuevo contenido se añade al instante sin que sea necesario un proceso de reconstrucción.
 
@@ -63,7 +63,7 @@ Adobe proporciona tres canales para ayudarle con Edge Delivery Services:
 
 ### Acceder a recursos de la comunidad {#community-resource}
 
-El Adobe se compromete a empoderarle con la mejor participación de la comunidad y apoyo para Edge Delivery Services y creación basada en documentos
+Adobe se compromete a ofrecerle el mejor compromiso y la mejor asistencia de la comunidad para Edge Delivery Services y la creación basada en documentos. 
 
 * Participe en la [Comunidad de Experience League](https://adobe.ly/3Q6kTKl) para hacer preguntas, compartir comentarios, iniciar discusiones, buscar ayuda de expertos de Adobe y asesores/expertos de AEM, y conectarse con personas con ideas afines en tiempo real. 
 * Únase a nuestro [Canal de la discordia](https://discord.gg/aem-live), una plataforma más informal para interacciones en tiempo real e intercambios de ideas rápidos.
