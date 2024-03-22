@@ -2,9 +2,9 @@
 title: Ingesta de contenido en Cloud Service
 description: Aprenda a utilizar Cloud Acceleration Manager para introducir contenido del conjunto de migración en una instancia de Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 8795d9d2078d9f49699ffa77b1661dbe5451a4a2
+source-git-commit: de05abac3620b254343196a283cef198f434cfca
 workflow-type: tm+mt
-source-wordcount: '2534'
+source-wordcount: '2752'
 ht-degree: 6%
 
 ---
@@ -211,6 +211,14 @@ Consulte la `Node property value in MongoDB` nota en [Requisitos previos para la
 >abstract="La extracción que la ingesta estaba esperando no finalizó correctamente. La ingesta se ha rescindido porque no se ha podido ejecutar."
 
 Una ingesta creada con una extracción en ejecución como el conjunto de migración de origen espera pacientemente hasta que la extracción se realice correctamente y, en ese momento, comienza con normalidad. Si la extracción falla o se detiene, la ingesta y su trabajo de indexación no comenzarán, pero se rescindirán. En este caso, compruebe la extracción para determinar por qué ha fallado, corrija el problema y vuelva a empezar a extraer. Una vez que se esté ejecutando la extracción fija, se puede programar una nueva ingesta.
+
+### El recurso eliminado no está presente después de volver a ejecutar la ingesta
+
+En general, no se recomienda modificar los datos del entorno de la nube entre ingestas.
+
+Cuando se elimina un recurso del destino del Cloud Service mediante la IU táctil de los recursos, los datos del nodo se eliminan, pero el blob de recursos con la imagen no se elimina inmediatamente. Se marca para su eliminación de modo que ya no aparezca en la interfaz de usuario; sin embargo, permanece en el almacén de datos hasta que se produce la recolección de elementos no utilizados y se elimina el blob.
+
+En el escenario en el que se elimina un recurso migrado anteriormente y la siguiente ingesta se ejecuta antes de que el recolector de elementos no utilizados haya terminado de eliminar el recurso, la ingesta del mismo conjunto de migración no restaurará el recurso eliminado. Cuando la ingesta comprueba el entorno de nube del recurso, no hay datos del nodo; por lo tanto, la ingesta copiará los datos del nodo en el entorno de nube. Sin embargo, cuando comprueba el almacén de blobs, ve que el blob está presente y omite la copia del blob. Por este motivo, los metadatos están presentes después de la ingesta cuando se mira el recurso desde la interfaz de usuario táctil, pero la imagen no. Recuerde que los conjuntos de migración y la ingesta de contenido no se diseñaron para manejar este caso. Su objetivo es añadir contenido nuevo al entorno de la nube y no restaurar el contenido migrado anteriormente.
 
 ## Siguientes pasos {#whats-next}
 
