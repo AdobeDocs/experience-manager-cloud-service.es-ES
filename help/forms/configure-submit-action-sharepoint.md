@@ -1,21 +1,21 @@
 ---
 Title: How to send data to a SharePoint storage on submission of an Adaptive Form?
 Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list or Document library when you submit the form.
-keywords: ¿Cómo conectar la lista de SharePoint para un formulario adaptable?, Cómo conectar la biblioteca de documentos de SharePoint para un formulario adaptable, Enviar a SharePoint, Crear una configuración de la biblioteca de documentos de SharePoint, Utilizar la acción de envío Enviar a SharePoint en un formulario adaptable, Conectar un formulario adaptable a Microsoft&reg; SharePoint List.
+keywords: ¿Cómo conectar la lista de SharePoint para un formulario adaptable?, Cómo conectar la biblioteca de documentos de SharePoint para un formulario adaptable, Enviar a SharePoint, Crear una configuración de la biblioteca de documentos de SharePoint, Utilizar la acción de envío Enviar a SharePoint en un formulario adaptable, Conectar un formulario adaptable a la lista de Microsoft&reg; SharePoint.
 feature: Adaptive Forms, Core Components
 source-git-commit: 8784c0bcd05eeae41a472faa5ecad03cbdd8a9b6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1037'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
 
-# Conectar un formulario adaptable a Microsoft® SharePoint
+# Conectar un formulario adaptable a la lista de Microsoft® SharePoint
 
-El **[!UICONTROL Enviar a SharePoint]** La acción de envío le permite conectar sin problemas su formulario adaptable con un almacenamiento de Microsoft® SharePoint. Envía los datos del formulario al almacenamiento de SharePoint que elija después de enviar el formulario.
+La acción de envío **[!UICONTROL Enviar a SharePoint]** le permite conectar sin problemas un formulario adaptable con un almacenamiento de Microsoft® SharePoint. Envía los datos del formulario al almacenamiento de SharePoint que elija después de enviar el formulario.
 
-AEM as a Cloud Service ofrece varias acciones de envío listas para usar para administrar los envíos de formularios. Puede obtener más información sobre estas opciones en la [Acción de envío del formulario adaptable](/help/forms/configure-submit-actions-core-components.md)  artículo.
+AEM as a Cloud Service ofrece varias acciones de envío predeterminadas para gestionar los envíos de formularios. Puede obtener más información sobre estas opciones en el artículo [Acción de envío del formulario adaptable](/help/forms/configure-submit-actions-core-components.md).
 
 ## Ventajas
 
@@ -24,10 +24,10 @@ Algunas de las ventajas de enviar datos de un formulario adaptable al almacenami
 * Facilita el envío directo de datos de formulario a SharePoint, lo que proporciona una ubicación centralizada para almacenar y administrar la información.
 * Al aplicar las funciones de control de acceso y permisos de SharePoint, se garantiza que solo las personas autorizadas puedan ver o modificar los datos enviados.
 
-Uso de **[!UICONTROL Enviar a SharePoint]**, puede:
+Mediante **[!UICONTROL Enviar a SharePoint]**, puede hacer lo siguiente:
 
 * [Conectar un formulario adaptable a la biblioteca de documentos de SharePoint](#connect-af-sharepoint-doc-library)
-* [Conectar un formulario adaptable a una lista de SharePoint](#connect-af-sharepoint-list)
+* [Conectar un formulario adaptable a la lista de SharePoint](#connect-af-sharepoint-list)
 
 ## Conectar un formulario adaptable a la biblioteca de documentos de SharePoint {#connect-af-sharepoint-doc-library}
 
@@ -38,7 +38,7 @@ Para usar la acción de envío **[!UICONTROL Enviar a Biblioteca de documentos d
 
 ### Crear configuración de biblioteca de documentos de SharePoint {#create-sharepoint-configuration}
 
-Para conectar AEM Forms al almacenamiento de la biblioteca de documentos de Microsoft® Sharepoint:
+Para conectar AEM Forms a su almacenamiento de la biblioteca de documentos de Microsoft® Sharepoint:
 
 1. Vaya a su instancia de **AEM Forms Author** > **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
 1. Una vez seleccionada la variable **[!UICONTROL Microsoft® SharePoint]**, se le redirigirá a **[!UICONTROL Explorador SharePoint]**.
@@ -90,16 +90,16 @@ La estructura de carpetas para guardar datos es `/folder_name/form_name/year/mon
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
-Para usar la variable [!UICONTROL Enviar a la lista de SharePoint] Enviar acción en un formulario adaptable:
+Para usar la acción de envío [!UICONTROL Enviar a lista de SharePoint] en un formulario adaptable, haga lo siguiente:
 
-1. [Crear una configuración de lista de SharePoint](#create-sharepoint-list-configuration): conecta AEM Forms al almacenamiento de listas de SharePoint de Microsoft®.
-1. [Uso del envío mediante el modelo de datos de formulario en un formulario adaptable](#use-submit-using-fdm): conecta el formulario adaptable al Microsoft® SharePoint configurado.
+1. [Crear una configuración de lista de SharePoint](#create-sharepoint-list-configuration): conecta AEM Forms a su almacenamiento de de lista de Sharepoint de Microsoft®.
+1. [Utilice la acción de envío Enviar con un modelo de datos de formulario en un formulario adaptable](#use-submit-using-fdm): conecta el formulario adaptable a Microsoft® SharePoint configurado.
 
-### Crear una configuración de lista de SharePoint {#create-sharepoint-list-configuration}
+### Crear configuración de lista de SharePoint {#create-sharepoint-list-configuration}
 
-Para conectar AEM Forms a la lista de SharePoint de Microsoft®:
+Para conectar AEM Forms a su lista de Sharepoint de Microsoft®:
 
-1. Ir a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
 1. Seleccione un **Contenedor de configuración**. La configuración se almacena en el contenedor de configuración seleccionado.
 1. Haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Lista de SharePoint]** en la lista desplegable. Aparecerá el asistente de configuración de SharePoint.
 1. Especifique el **[!UICONTROL Título]**, **[!UICONTROL ID de cliente]**, **[!UICONTROL Secreto del cliente]** y **[!UICONTROL URL de OAuth]**. Para obtener información sobre cómo recuperar el ID de cliente, el secreto de cliente o el ID de inquilino para la URL de OAuth, consulte [Documentación de Microsoft®](https://learn.microsoft.com/es-es/graph/auth-register-app-v2).
@@ -114,27 +114,27 @@ Para conectar AEM Forms a la lista de SharePoint de Microsoft®:
 
 1. Haga clic en **[!UICONTROL Conectar]**. Si la conexión se realiza correctamente, aparece el mensaje `Connection Successful`.
 1. Seleccionar **[!UICONTROL Sitio de SharePoint]** y **[!UICONTROL Lista de SharePoint]** en la lista desplegable.
-1. Seleccionar **[!UICONTROL Crear]** para crear la configuración de nube para Microsoft® SharePointList.
+1. Seleccione **[!UICONTROL Crear]** para crear la configuración de nube para la lista de SharePoint de Microsoft®.
 
 
-### Uso del envío mediante el modelo de datos de formulario en un formulario adaptable {#use-submit-using-fdm}
+### Usar la acción de envío Enviar con el modelo de datos de formulario en un formulario adaptable {#use-submit-using-fdm}
 
-Puede utilizar la configuración creada en la Lista de SharePoint en un formulario adaptable para guardar datos o documentos de registro generados en una Lista de SharePoint. Siga estos pasos para utilizar una lista de SharePoint en un formulario adaptable como:
+Puede utilizar la configuración de lista de SharePoint creada en un formulario adaptable para guardar datos o el documento de registro generado en una lista de SharePoint. Siga estos pasos para usar una lista de SharePoint en un formulario adaptable como:
 
 1. [Crear un modelo de datos de formulario con Microsoft](/help/forms/create-form-data-models.md)
 1. [Configurar el modelo de datos de formulario para recuperar y enviar datos](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Crear un formulario adaptable](/help/forms/creating-adaptive-form-core-components.md)
 1. [Configurar la acción de envío mediante un modelo de datos de formulario](/help/forms/using-form-data-model.md)
 
-Cuando envía el formulario, los datos se guardan en el almacenamiento de listas de SharePoint de Microsoft® especificado.
+Al enviar el formulario, los datos se guardan en el almacenamiento de lista de Sharepoint de Microsoft® especificado.
 
 >[!NOTE]
 >
 > En la lista de Microsoft® SharePoint, no se admiten los siguientes tipos de columnas:
-* columna de imagen
-* columna de metadatos
-* columna de persona
-* columna de datos externos
+> * columna de imagen
+> * columna de metadatos
+> * columna de persona
+> * columna de datos externos
 
 ## Artículos relacionados
 

@@ -6,9 +6,9 @@ role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
 source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1290'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -125,12 +125,12 @@ Para configurar la acción de envío del modelo de datos de formulario:
 1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
 1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
 1. Abra la pestaña **[!UICONTROL Envío]**.
-1. Desde el **[!UICONTROL Acción de envío]** , seleccione la opción **[!UICONTROL Enviar mediante modelo de datos de formulario]**.
+1. En la lista desplegable **[!UICONTROL Acción de envío]**, seleccione la opción **[!UICONTROL Enviar mediante modelo de datos de formulario]**.
 
-   ![Configuración de acción](/help/forms/assets/configure-submit-action-invoke-fdm.png)
+   ![Configuración de la acción](/help/forms/assets/configure-submit-action-invoke-fdm.png)
 
-1. Especifique el **[!UICONTROL Modelo de datos que enviar]**.
-1. Clic **[!UICONTROL Listo]**
+1. Especifique el **[!UICONTROL modelo de datos para enviar]**.
+1. Haga clic en **[!UICONTROL Listo]**.
 
 Al enviar el formulario, los datos del objeto de modelo de datos configurado se escriben en la fuente de datos correspondiente. Además, puede enviar al origen de datos un archivo adjunto de formulario mediante un modelo de datos de formulario y un documento de registro (DoR). Para obtener información sobre el modelo de datos de formulario, consulte integración de datos de [[!DNL AEM Forms] ](data-integration.md).
 
@@ -138,7 +138,7 @@ Al enviar el formulario, los datos del objeto de modelo de datos configurado se 
 
 >[!NOTE]
 >
-> AEM as a Cloud Service ofrece varias acciones de envío listas para usar para administrar los envíos de formularios. Puede obtener más información sobre estas opciones en la [Acción de envío del formulario adaptable](/help/forms/configure-submit-actions-core-components.md)  artículo.
+> AEM as a Cloud Service ofrece varias acciones de envío predeterminadas para gestionar los envíos de formularios. Puede obtener más información sobre estas opciones en el artículo [Acción de envío del formulario adaptable](/help/forms/configure-submit-actions-core-components.md).
 
 También puede enviar los archivos adjuntos del formulario a una fuente de datos mediante la propiedad de objeto del modelo de datos binaria. Haga lo siguiente para enviar archivos adjuntos a una fuente de datos JDBC:
 

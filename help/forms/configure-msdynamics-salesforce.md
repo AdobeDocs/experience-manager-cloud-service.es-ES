@@ -5,7 +5,7 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
 source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '952'
 ht-degree: 100%
 
@@ -107,4 +107,4 @@ Después de configurar el ](#configure-dynamics-cloud-service)servicio de config
 >
 >* [Configuración de fuentes de datos para AEM Forms](/help/forms/configure-data-sources.md)
 >* [Configuración del almacenamiento de Azure para AEM Forms](/help/forms/configure-azure-storage.md)
->  [Agregar Portal de Forms a una página de AEM Sites](/help/forms/configure-forms-portal.md)
+>  [Añadir Portal de Forms a una página de AEM Sites](/help/forms/configure-forms-portal.md)

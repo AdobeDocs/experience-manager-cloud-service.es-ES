@@ -1,14 +1,14 @@
 ---
-title: ¿Cómo podemos solucionar problemas relacionados con el almacenamiento en caché para AEM Forms as a Cloud Service?
-description: Solucione problemas relacionados con el almacenamiento en caché para AEM Forms as a Cloud Service.
+title: Solucionar problemas relacionados con el almacenamiento en caché para AEM Forms as a Cloud Service?
+description: Solucionar problemas relacionados con el almacenamiento en caché para AEM Forms as a Cloud Service.
 contentOwner: khsingh
 feature: Adaptive Forms, Troubleshooting
 role: User
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
 source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '381'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 

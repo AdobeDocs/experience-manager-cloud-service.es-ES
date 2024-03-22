@@ -1,44 +1,44 @@
 ---
-title: Uso de Edge Delivery Services AEM con proyectos existentes en la
-description: Aprenda a aprovechar las ventajas de los Edge Delivery Services AEM en sus proyectos de existentes
+title: Uso de Edge Delivery Services con proyectos AEM existentes
+description: Aprenda a aprovechar las ventajas de Edge Delivery Services AEM en sus proyectos AEM existentes
 feature: Edge Delivery Services
-source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
-workflow-type: tm+mt
+exl-id: f54aac3a-1d0c-4be0-9aa6-616217e0e458
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '339'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# Uso de Edge Delivery Services con proyectos AEM existentes {#existing-projects}
 
-# Uso de Edge Delivery Services AEM con proyectos existentes en la {#existing-projects}
+No es necesario esperar a tener un nuevo proyecto AEM para beneficiarse de Edge Delivery Services.  Edge Delivery Services se puede integrar en su proyecto AEM existente para que pueda aprovechar inmediatamente sus mejoras de rendimiento.
 
-AEM No hace falta esperar a que un nuevo proyecto de se beneficie de los Edge Delivery Services. Los Edge Delivery Services AEM se pueden integrar en su proyecto de existente para que pueda aprovechar inmediatamente sus mejoras de rendimiento.
+## Limitaciones del editor de páginas de AEM {#page-editor}
 
-## AEM Limitaciones del editor de páginas {#page-editor}
+Antes de la llegada de Edge Delivery Services, el contenido gestionado en AEM se editaba con el editor de páginas de AEM. Si el proyecto comenzó antes de la introducción de los Edge Delivery Services, es casi seguro que está utilizando el editor de páginas.
 
-Antes de la llegada de los Edge Delivery Services AEM AEM, el contenido gestionado en la se editaba con el Editor de páginas de la página de la. Si el proyecto comenzó antes de la introducción de los Edge Delivery Services, es casi seguro que está utilizando el Editor de páginas.
+El editor de páginas de AEM solo funciona con [componentes de AEM](/help/implementing/developing/components/overview.md) como los [componentes principales.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) Estos componentes son incompatibles con Edge Delivery Services. Debido a esto, son necesarias dos fases para introducir Edge Delivery Services en un proyecto de AEM existente:
 
-AEM El editor de páginas de la solo funciona con [AEM componentes de](/help/implementing/developing/components/overview.md) como el [Componentes principales.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) Estos componentes son incompatibles con los Edge Delivery Services. Debido a esto, se requieren dos fases para presentar a los Edge Delivery Services AEM a un proyecto de existente:
+* [Fase 1: Reemplazar el front-end](#replace-front-end)
+* [Fase 2: Cambiar al editor universal](#switch-ue)
 
-* [Fase 1: Reemplazo de la parte delantera](#replace-front-end)
-* [Fase 2: cambiar al editor universal](#switch-ue)
+## Fase 1: Reemplazar el front-end {#replace-front-end}
 
-## Fase 1: Reemplazo de la parte delantera {#replace-front-end}
+En la fase uno, puede seguir utilizando la estructura, los componentes y las herramientas de creación existentes del sitio de AEM. El procesamiento del sitio web se reconstruirá utilizando bloques con JavaScript y CSS y se enviará a través de Edge Delivery Services.
 
-AEM En la fase uno, puede seguir utilizando la estructura, los componentes y las herramientas de creación existentes del sitio de. El procesamiento del sitio web se reconstruirá utilizando bloques de JavaScript y CSS y se enviará a través de Edge Delivery Services.
+Consulte la [sección Versión](/help/edge/developer/block-collection.md) de la documentación de Edge Delivery Services para obtener más información sobre los bloques y cómo desarrollarlos para Edge Delivery Services.
 
-Consulte la [Sección Generar](/help/edge/developer/block-collection.md) Consulte la documentación de Edge Delivery Services para obtener más información sobre los bloques de y cómo desarrollar para los servicios de envío de Edge.
-
-AEM Se necesitará un convertidor en el Generador de aplicaciones para convertir la salida del HTML procesado de la y enviarla a los Edge Delivery Services.
+Se necesitará un convertidor en el generador de aplicaciones para convertir la salida del HTML procesado de AEM y enviarla a Edge Delivery Services.
 
 ![El convertidor de contenido en el flujo de publicación](assets/content-converter.png)
 
-AEM AEM La fase dos completa el proceso al eliminar la superposición de tecnología: componentes principales con HTL y Java en el Autor de, bloques basados en JS en la entrega de Edge y un convertidor basado en JS de nodos.
+La fase dos completa el proceso al eliminar la superposición de tecnología: componentes principales de AEM con HTL y Java en AEM Author, bloques basados en JS en Edge Delivery y un convertidor basado en nodeJS.
 
-## Fase 2: cambiar al editor universal {#switch-ue}
+## Fase 2: Cambiar al editor universal {#switch-ue}
 
-AEM En esta fase, el Editor de páginas de la página de la se sustituye por el Editor universal. AEM Dado que el editor universal puede trabajar directamente con bloques, ya no se necesitarán los componentes principales y el convertidor de la.
+En esta fase, el editor de páginas de AEM se sustituye por el editor universal. Dado que el editor universal puede trabajar directamente con bloques, ya no se necesitarán los componentes principales y el convertidor de AEM.
 
-## Cómo empezar a trabajar {#how-to-get-started}
+## Introducción {#how-to-get-started}
 
-Póngase en contacto con el representante del Adobe para obtener acceso a esta función.
+Póngase en contacto con el representante de Adobe para obtener acceso a esta funcionalidad.

@@ -5,9 +5,9 @@ keywords: cómo seleccionar la acción de envío para un formulario adaptable, c
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 source-git-commit: 2f567d45a6ba2dfb4dd3346e8510bcb04113eefb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '673'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -25,19 +25,19 @@ ht-degree: 66%
 Una acción de envío permite elegir el destino de los datos capturados mediante un formulario adaptable. Se activa cuando un usuario hace clic en el botón **[!UICONTROL Enviar]** en un formulario adaptable. Forms as a Cloud Service, para Formularios adaptables basados en componentes principales, ofrece una matriz de acciones de envío creadas previamente. Estas acciones de envío listas para usar le permiten lo siguiente:
 
 * Enviar datos de formulario por correo electrónico sin esfuerzo.
-* Inicie flujos de trabajo de MicrosoftAEM ® Power Automate o flujos de trabajo de la al transmitir los datos.
-* Transmita directamente los datos del formulario a Microsoft® SharePoint Server, Microsoft® Azure Blob Storage o Microsoft® OneDrive.
+* Iniciar flujos de Microsoft® Power Automate o flujos de trabajo de AEM al transmitir los datos.
+* Transmitir directamente los datos del formulario al servidor de Microsoft® SharePoint, a Microsoft Azure Blob Storage o a Microsoft® OneDrive.
 * Enviar los datos sin problemas a una fuente de datos configurada mediante el modelo de datos de formulario.
 * Enviar cómodamente los datos a un punto final REST.
 
-Puede [ampliar las acciones de envío predeterminadas](custom-submit-action-form.md). También puede personalizar las acciones de envío para los requisitos específicos de la organización.
+Puede [ampliar las acciones de envío predeterminadas](custom-submit-action-form.md). También puede personalizar Enviar acciones para requisitos específicos de la organización.
 
-Para definir una acción de envío para un formulario adaptable, utilice el cuadro de diálogo Configurar de una **Contenedor de formulario adaptable** componente. El cuadro de diálogo de configuración de una **Contenedor de formulario adaptable** el componente incluye:
+Para definir una acción de envío para un adaptable, utilice el cuadro de diálogo configuración de un componente de **Contenedor de formulario adaptable**. El cuadro de diálogo de configuración de un componente de **Contenedor de formulario adaptable** incluye:
 * Pestaña Básicos
-* Pestaña Modelo de datos de formulario
+* Pestaña del modelo de datos de formulario
 * Pestaña Envío
 
-Puede definir las propiedades del contenedor de formularios mediante el cuadro de diálogo Configurar. Para obtener más información sobre el Cuadro de diálogo de configuración de un componente Contenedor de formularios, [haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html)
+Puede definir las propiedades del contenedor de formulario utilizando el cuadro de diálogo Configuración. Para obtener más información sobre el cuadro de diálogo Configuración de un componente de contenedor de formulario,[haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html?lang=es)
 
 ## Seleccionar y configurar una acción de envío para un formulario adaptable {#select-and-configure-submit-action}
 
@@ -50,18 +50,18 @@ Para seleccionar y configurar una acción de envío para el formulario, haga lo 
 
    ![Haga clic en el icono Llave inglesa para abrir el cuadro de diálogo Contenedor de formulario adaptable y configurar una acción de envío](/help/forms/assets/adaptive-forms-submit-message.png)
 
-1. Seleccione y configure un **[!UICONTROL Acción de envío]**, según sus necesidades.
+1. Seleccione y configure una **[!UICONTROL Acción de envío]** según sus necesidades. 
 
-También puede configurar diferentes acciones para los envíos de formularios adaptables.
-* **URL/ruta de redireccionamiento** : Esta opción permite al usuario configurar una página para cada formulario, a la cual se redirigirá a los usuarios después de enviar un formulario adaptable.
-* **Mostrar mensaje**: esta opción permite a los usuarios agregar un mensaje que se muestra cuando el formulario adaptable se envía correctamente. El texto predefinido se incluye en el cuadro de diálogo y el usuario puede modificarlo.
+Los usuarios pueden configurar distintas acciones para los envíos de formularios adaptables.
+* **Ruta/URL de redireccionamiento**: esta opción permite al usuario configurar una página para cada formulario, a la que se redirige a los usuarios después de enviar un formulario adaptable. 
+* **Mostrar mensaje**: esta opción permite a los usuarios añadir un mensaje que se muestra cuando el formulario adaptable se envía correctamente. El texto predefinido se incluye en el cuadro de diálogo y el usuario puede modificarlo. 
 
-Para obtener información detallada sobre las siguientes acciones de envío, consulte:
+Para obtener información detallada sobre las acciones de envío siguientes, consulte:
 
 * [Enviar correo electrónico](/help/forms/configure-submit-action-send-email.md)
 * [Invocar un flujo de Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Enviar a SharePoint](/help/forms/configure-submit-action-sharepoint.md)
-* [Invocación de Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+* [Invocar un Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Enviar mediante el modelo de datos de formulario](/help/forms/using-form-data-model.md)
 * [Enviar a Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Enviar al punto final REST](/help/forms/configure-submit-action-restpoint.md)
@@ -70,10 +70,10 @@ Para obtener información detallada sobre las siguientes acciones de envío, con
 
 También puede enviar un formulario adaptable a otras configuraciones de almacenamiento:
 
-* [Conectar el formulario adaptable a la aplicación de Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
-* [Conectar un formulario adaptable a OData de Microsoft® Dynamics](/help/forms/ms-dynamics-odata-configuration.md)
+* [Conectar un formulario adaptable a la aplicación de Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Conectar un formulario adaptable a Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
 
-Puede [personalizar las acciones de envío predeterminadas](custom-submit-action-form.md). Además, puede personalizar las acciones de envío para alinearlas con requisitos organizativos específicos.
+Puede [personalizar las acciones de envío predeterminadas](custom-submit-action-form.md). Además, puede personalizar las acciones de envío para que se ajusten a requisitos específicos de su organización.
 
 
 <!--

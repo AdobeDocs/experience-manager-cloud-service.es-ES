@@ -1,11 +1,12 @@
 ---
-description: Este tutorial le ayudará a ponerse en marcha con un nuevo proyecto de Adobe Experience Manager AEM (). En diez a veinte minutos, habrá creado su propio sitio y podrá crear, previsualizar y publicar su propio contenido, estilo y agregar nuevos bloques.
+description: Este tutorial le ayudará a ponerse en marcha con un nuevo proyecto de Adobe Experience Manager (AEM). En diez a veinte minutos, habrá creado su propio sitio y podrá crear, previsualizar y publicar su propio contenido, estilo y añadir nuevos bloques.
 title: 'Introducción: Tutorial para desarrolladores'
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: f84a9584-0962-4d70-aedc-f7a130fd489b
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '50'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 

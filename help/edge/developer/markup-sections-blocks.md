@@ -2,10 +2,11 @@
 description: Para diseñar sitios web y crear funcionalidad, los desarrolladores utilizan el marcado y el DOM que se representan dinámicamente a partir del contenido. El marcado y el DOM se construyen de una manera que permite una manipulación y un estilo flexibles. Al mismo tiempo, proporciona una funcionalidad predeterminada para que el desarrollador no tenga que preocuparse por algunos de los aspectos de los sitios web modernos.
 title: Marcado, secciones, bloques y bloqueo automático
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 3f4ae9e9-e5c8-4873-a3d0-591c4d8683dd
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '70'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 

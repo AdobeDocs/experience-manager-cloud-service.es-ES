@@ -6,7 +6,7 @@ role: Admin, Developer, User
 feature: Adaptive Forms
 contentOwner: khsingh
 source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1317'
 ht-degree: 100%
 

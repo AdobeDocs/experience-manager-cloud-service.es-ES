@@ -4,9 +4,9 @@ description: Obtenga información general sobre el cumplimiento en Experience Ma
 landing-page-description: Para obtener información general sobre el cumplimiento en AEM as a Cloud Service, incluido de la privacidad y accesibilidad, comience aquí.
 exl-id: d7ef2875-a6d7-4f97-b14e-7e5a383cdee9
 source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '90'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 

@@ -1,14 +1,14 @@
 ---
-title: Cómo solucionar problemas de instalación y configuración para el entorno as a Cloud Service de AEM Forms
-description: Solución de problemas de la instalación y configuración del entorno as a Cloud Service de AEM Forms.
+title: Cómo solucionar problemas de instalación y configuración para el entorno de AEM Forms as a Cloud Service?
+description: Solución de problemas de la instalación y configuración del entorno de AEM Forms as a Cloud Service.
 contentOwner: khsingh
 feature: Adaptive Forms, Troubleshooting
 role: User
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
 source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '167'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 

@@ -1,11 +1,12 @@
 ---
-description: Adobe Experience Manager ofrece una forma de mantener un índice de todas las páginas publicadas en una sección concreta del sitio web. Esto se utiliza comúnmente para crear listas y fuentes y habilitar casos de uso de búsqueda y filtrado para sus páginas o fragmentos de contenido.
+description: Adobe Experience Manager ofrece una forma de mantener un índice de todas las páginas publicadas en una sección concreta del sitio web. Esto se utiliza comúnmente para crear listas y fuentes, y habilitar casos de uso de búsqueda y filtrado para sus páginas o fragmentos de contenido.
 title: Indexación
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 8ca968fd-73af-4082-bfc5-0737fdd8a5be
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '45'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 

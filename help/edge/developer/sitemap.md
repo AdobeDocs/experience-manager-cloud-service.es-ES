@@ -2,10 +2,11 @@
 description: Cree archivos de mapa del sitio generados automáticamente a los que se hará referencia desde su `robots.txt`. Esto ayuda con la optimización de los motores de búsqueda y el descubrimiento de nuevo contenido.
 title: Mapas del sitio
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: cdc12747-6003-4744-819e-d17e010901e7
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '23'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 

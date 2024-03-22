@@ -1,11 +1,12 @@
 ---
-description: Además de traducir documentos de Google y documentos de Word en Markdown y marcado de HTML AEM, también traduce hojas de cálculo (libros de Excel de Microsoft y hojas de cálculo de Google) en archivos JSON que su sitio web o aplicación web pueden consumir fácilmente.
+description: Además de convertir documentos de Google y Word en Markdown y marcado de HTML, AEM también convierte hojas de cálculo (libros de trabajo de Microsoft Excel y Google Sheets) en archivos JSON que su sitio web o aplicación web puede consumir fácilmente.
 title: Hojas de cálculo y JSON
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 032ae9aa-577c-44b1-8f5f-fb3d2885013e
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '44'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 

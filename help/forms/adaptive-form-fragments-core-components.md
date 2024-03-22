@@ -6,9 +6,9 @@ keywords: Agregar fragmentos de formulario adaptable, fragmentos de formulario a
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 source-git-commit: 5d9cf5d4dee5122263b15cee8874975887c57219
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1789'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Puede agregar un fragmento varias veces a un documento y utilizar las propiedade
 
 >[!NOTE]
 >
-> Puede personalizar fácilmente la experiencia del fragmento para los usuarios con [Cuadro de diálogo Configurar y cuadro de diálogo Diseño del componente Fragmento de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html).
+> Puede personalizar fácilmente la experiencia del fragmento para los usuarios con el cuadro de diálogo [Configurar y el cuadro de diálogo Diseño del componente Fragmento de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html?lang=es).
 
 ## Creación de un fragmento de formulario {#create-a-fragment}
 

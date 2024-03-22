@@ -1,11 +1,12 @@
 ---
-description: Trabajando con un gran número de equipos de desarrollo en muchos proyectos y organizaciones, descubrimos que es útil recopilar algunas de nuestras perspectivas. AEM Algunos de ellos están relacionados con el desarrollo de front-end, pero la mayoría están relacionados con el desarrollo de front-end de uso general o son solo directrices generales sobre cómo colaborar en un equipo de desarrolladores.
+description: Trabajando con un gran número de equipos de desarrollo en muchos proyectos y organizaciones, descubrimos que es útil recopilar algunas de nuestras perspectivas. Algunos de ellos están relacionados con AEM, pero la mayoría están relacionados con el desarrollo de front-end de uso general o son solo directrices generales sobre cómo colaborar en un equipo de desarrolladores.
 title: Colaboración para el desarrollo y buenas prácticas
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: e7f9b0f7-d22f-44ec-b8b7-85daa34de2a0
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '66'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 

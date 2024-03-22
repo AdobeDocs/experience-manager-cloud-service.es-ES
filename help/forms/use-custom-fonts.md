@@ -1,13 +1,13 @@
 ---
 title: ¿Cómo se pueden usar fuentes personalizadas en AEM Forms?
-description: Aprenda a añadir fuentes personalizadas a un entorno as a Cloud Service de Forms.
+description: Aprenda a añadir fuentes personalizadas al entorno de Forms as a Cloud Service.
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
 feature: Adaptive Forms
 role: Admin, User
 source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '467'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 

@@ -4,14 +4,14 @@ description: Comience aquí para obtener una descripción general del recorrido 
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
 source-git-commit: 98618765b405316b18110182c221ddd968c70e96
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1290'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Recorrido de incorporación {#onboarding-journey}
+# Recorrido de la incorporación {#onboarding-journey}
 
 ¡Felicidades por elegir AEM as a Cloud Service! Este documento es el punto de partida para un recorrido guiado a través del proceso de incorporación. Tanto si va a implementar una aplicación nueva como si va a migrar una existente, este recorrido de incorporación garantiza que sus equipos estén configurados y tengan acceso a AEM as a Cloud Service.
 
@@ -75,7 +75,7 @@ Los siguientes artículos describen en detalle los conceptos básicos de incorpo
 
 | # | Artículo | Descripción | Audiencia |
 |---|---|---|---|
-| 0 | Recorrido de incorporación | Este documento | Administrador del sistema |
+| 0 | Recorrido de la incorporación | Este documento | Administrador del sistema |
 | 1 | [Preparación de la incorporación](preparation.md) | Antes de iniciar el proceso de incorporación, hay que realizar una serie de pasos preparatorios que el administrador del sistema debe conocer antes de iniciar sesión en el sistema. | Administrador del sistema |
 | 2 | [Terminología de AEM as a Cloud Service](terminology.md) | Antes de iniciar sesión en AEMaaCS por primera vez, resulta útil conocer parte de la terminología del sistema y su estructura básica. | Administrador del sistema |
 | 3 | [Admin Console](admin-console.md) | Obtenga información sobre qué es Admin Console, cómo iniciar sesión y cómo comprobar el perfil como administrador del sistema. | Administrador del sistema |
@@ -103,4 +103,4 @@ Si quiere saber cómo recomienda Adobe que su equipo se incorpore a su nueva apl
 
 Los siguientes son recursos opcionales adicionales si desea ir más allá del contenido del recorrido de incorporación.
 
-* [AEM Incorporación a la as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding.html) - Este breve vídeo ofrece una visión general del proceso de incorporación del Cloud Service AEM para la incorporación de la tecnología de la información en el sistema de gestión de la información ().
+* [Incorporación en AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding.html?lang=es): en este breve vídeo se ofrece información general del proceso de incorporación de Cloud Service para AEM.

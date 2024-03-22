@@ -6,9 +6,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
 source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '484'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Puede utilizar las credenciales de cliente de OAuth 2.0 para integrar AEM Forms 
 
 AEM Forms intercambia las credenciales del cliente (clave del cliente y secreto de cliente), definidas en la aplicación conectada de Salesforce, para obtener un token de acceso.
 
-AEM as a Cloud Service ofrece varias acciones de envío listas para usar para administrar los envíos de formularios. Puede obtener más información sobre estas opciones en la [Acción de envío del formulario adaptable](/help/forms/configure-submit-actions-core-components.md) artículo.
+AEM as a Cloud Service ofrece varias acciones de envío predeterminadas para gestionar los envíos de formularios. Puede obtener más información sobre estas opciones en el artículo [Acción de envío del formulario adaptable](/help/forms/configure-submit-actions-core-components.md).
 
 El uso de credenciales del cliente OAuth 2.0 para la autenticación a través de la autenticación de flujo de código de autorización ofrece varias ventajas:
 
@@ -72,7 +72,7 @@ Para conectar un formulario adaptable a la aplicación Salesforce mediante la co
 1. Si la conexión se realiza correctamente, haga clic en el botón **[!UICONTROL Crear]**.
 
 
-Después de configurar la aplicación Salesforce, puede utilizar la configuración al crear modelos de datos de formulario. Para obtener más información, consulte [Crear modelo de datos de formulario](create-form-data-models.md). [Configurar la acción de envío del modelo de datos de formulario](/help/forms/using-form-data-model.md) para que un formulario adaptable envíe datos a aplicaciones de Salesforce.
+Después de configurar la aplicación Salesforce, puede utilizar la configuración durante la creación modelos de datos de formulario. Para obtener más información, consulte [Crear modelo de datos de formulario](create-form-data-models.md). [Configure la acción de envío del modelo de datos de formulario](/help/forms/using-form-data-model.md) para que un formulario adaptable envíe datos a aplicaciones de Salesforce.
 
 Para obtener más información sobre la creación y el uso de modelos de datos de formulario en flujos de trabajo empresariales, consulte [Integración de datos](data-integration.md).
 

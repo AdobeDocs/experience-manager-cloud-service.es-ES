@@ -5,8 +5,9 @@ contentOwner: khsingh
 role: User
 feature: Adaptive Forms, FAQ
 index: false
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: tm+mt
+exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '986'
 ht-degree: 100%
 
@@ -123,5 +124,3 @@ Cree el formulario adaptable basado en el esquema JSON en el entorno de Experien
     A sample Service Credential JSON file fields mapped to Adobe Experience Manager connector for Microsoft Power Automate.
 
     -->
-
-

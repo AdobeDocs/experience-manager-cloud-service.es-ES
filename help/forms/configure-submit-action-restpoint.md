@@ -1,40 +1,40 @@
 ---
 Title: How to configure submit to Rest Endpoint submit action for an Adaptive Form?
 Description: Discover the steps to set up Rest Endpoint when submitting an Adaptive Form.
-keywords: Extremo REST de AEM Forms, Enviar a extremo REST, Publicar datos en URL REST, Configurar acción de extremo REST
+keywords: Punto final REST de AEM Forms, Enviar a punto final REST, Publicar datos en URL REST, Configurar acción de punto final REST
 feature: Adaptive Forms, Core Components
 source-git-commit: 8784c0bcd05eeae41a472faa5ecad03cbdd8a9b6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '550'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
 
-# Configurar un formulario adaptable para la acción de envío del extremo REST
+# Configurar un formulario adaptable para la acción de envío del punto final REST
 
-Utilice el **[!UICONTROL Enviar a extremo REST]** acción para publicar los datos enviados en una URL de REST. La URL puede ser de un servidor interno (el servidor en el que se procesa el formulario) o externo.
+Utilice la acción **[!UICONTROL Enviar al punto final REST]** para publicar los datos enviados en una URL de REST. La URL puede ser de un servidor interno (el servidor en el que se procesa el formulario) o externo.
 
-AEM as a Cloud Service ofrece varias acciones de envío listas para usar para administrar los envíos de formularios. Puede obtener más información sobre estas opciones en la [Acción de envío del formulario adaptable](/help/forms/configure-submit-actions-core-components.md)  artículo.
+AEM as a Cloud Service ofrece varias acciones de envío predeterminadas para gestionar los envíos de formularios. Puede obtener más información sobre estas opciones en el artículo [Acción de envío del formulario adaptable](/help/forms/configure-submit-actions-core-components.md).
 
 ## Ventajas
 
-Algunas de las ventajas de configurar **[!UICONTROL Enviar al extremo REST]** Las acciones de envío para Forms adaptable son:
+Algunas de las ventajas de configurar la acción de envío **[!UICONTROL Enviar al punto final REST]** para los formularios adaptables son:
 
-* Permite la integración perfecta de los datos del formulario con sistemas y servicios externos a través de las API de RESTful.
-* Proporciona flexibilidad para administrar los envíos de datos de Forms adaptable, lo que admite estructuras de datos dinámicas y complejas.
-* Admite la asignación dinámica de campos de formulario a parámetros en la dirección URL del extremo REST, lo que permite envíos de datos adaptables y personalizables.
+* Permite la integración perfecta de los datos del formulario con los sistemas y servicios externos a través de las API de RESTful.
+* Proporciona flexibilidad para manejar envíos de datos de formularios adaptables, lo que admite estructuras de datos dinámicas y complejas.
+* Admite la asignación dinámica de campos de formulario a parámetros en la dirección URL del punto final REST, lo que permite envíos de datos adaptables y personalizables.
 
 
-## Configurar la acción de envío Enviar al extremo REST {#steps-to-configure-submit-to-restendpoint-submit-action}
+## Configurar la acción de envío Enviar al punto final REST {#steps-to-configure-submit-to-restendpoint-submit-action}
 
 Para configurar la acción de envío:
 
 1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
 1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
 1. Abra la pestaña **[!UICONTROL Envío]**.
-1. Desde el **[!UICONTROL Acción de envío]** , seleccione la opción **[!UICONTROL Enviar al punto final REST]**.
-   ![Configuración de acción de Enviar a extremo REST](/help/forms/assets/submit-action-restendpoint.png)
+1. En la lista desplegable **[!UICONTROL Acción de envío]**, seleccione la opción **[!UICONTROL Enviar al punto final REST]**.
+   ![Configuración de la acción de Enviar a punto final REST](/help/forms/assets/submit-action-restendpoint.png)
 
    Para enviar datos a un servidor interno, proporcione la ruta del recurso. Los datos se publican en la ruta del recurso. Por ejemplo, `/content/restEndPoint`. Para esas peticiones POST se utiliza la información de autenticación de la solicitud de envío.
 
@@ -55,7 +55,7 @@ Para configurar la acción de envío:
 
    En este ejemplo, `data` almacena los datos XML y `att` almacena datos adjuntos.
 
-   La acción de envío **[!UICONTROL Enviar al punto final REST]** envía los datos rellenados en el formulario a una página de confirmación configurada como parte de la petición HTTP GET. Puede añadir el nombre del campo que desea solicitar. El formato de la solicitud es el siguiente:
+   La acción de envío **[!UICONTROL Enviar al punto final REST]** envía los datos rellenados en el formulario a una página de confirmación configurada como parte de la petición HTTP GET. Puede añadir el nombre de los campos que desea solicitar. El formato de la solicitud es el siguiente:
 
    `{fieldName}={request parameter name}`
 
@@ -69,7 +69,7 @@ Para configurar la acción de envío:
 
 ## Prácticas recomendadas
 
-* Al publicar datos en un servidor externo, asegúrese de que la dirección URL sea segura y configure la ruta para gestionar la solicitud del POST de forma anónima a fin de proteger la información confidencial.
+* Al publicar datos en un servidor externo, asegúrese de que la dirección URL sea segura y configure la ruta para gestionar la petición POST de forma anónima a fin de proteger la información confidencial.
 * Para pasar los campos como parámetros en una URL REST, todos los campos deben tener nombres de elementos diferentes, incluso si se colocan en paneles diferentes.
 
 ## Artículos relacionados

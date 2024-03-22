@@ -1,14 +1,14 @@
 ---
 title: ¿Cómo se previsualiza un formulario adaptable?
-description: Los usuarios pueden obtener una vista previa del formulario antes de publicarlo o activarlo para asegurarse de que cumple las expectativas. Las opciones de vista previa pueden variar según los tipos de formulario admitidos.
+description: Los usuarios pueden obtener una vista previa de los formularios antes de publicarlos o activarlos para asegurarse de que cumplen las expectativas.  Las opciones de vista previa pueden variar según los tipos de formulario admitidos.
 topic-tags: author
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 72235277-6c34-4341-9a10-02afa753e7f5
 source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '336'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ La siguiente tabla muestra las opciones de vista previa disponibles para los dis
 
 ## Vista previa de un formulario {#previewing-a-form-1}
 
-1. Seleccione el recurso que desee previsualizar y haga clic en Previsualizar ![aem6forms_preview](assets/aem6forms_preview.png) en la barra de herramientas acciones.
+1. Seleccione el recurso que desea previsualizar, y haga clic en Vista previa ![aem6forms_preview](assets/aem6forms_preview.png) en la barra de herramientas de acciones.
 
    >[!NOTE]
    >
