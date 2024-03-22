@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: dbdc63db9a9ac954ce6359d3643231d6e195fd53
 workflow-type: tm+mt
 source-wordcount: '302'
-ht-degree: 65%
+ht-degree: 92%
 
 ---
 
@@ -26,7 +26,7 @@ Ninguna.
 ### Problemas corregidos {#fixed-issues-15575}
 
 * ASSETS-36358: no se puede procesar el informe de carga.
-* GRANITE-50774: GraniteContent debe utilizar un orden determinista de los valores de propiedad al inicio.
+* GRANITE-50774: GraniteContent debe utilizar un orden determinista de los valores de propiedad en el momento de la inicialización.
 
 ### Problemas conocidos {#known-issues-15575}
 
@@ -34,13 +34,13 @@ Ninguna.
 
 ### Aviso de cambio {#change-notice-15575}
 
-**Acciones necesarias**
+**Acción necesaria**
 
 #### Establecer la versión de CM Java en 11 {#set-java-version-11}
 
 La nueva versión de aem-sdk-api contiene clases compiladas con un destino Java 11, que no es compatible con la versión 1.8 JDK predeterminada del entorno de compilación de Cloud Manager. Esta actualización requiere que Maven se ejecute con JDK 11.
 
-Se recomienda a los clientes que agreguen un `.cloudmanager/java-version` a la raíz de su repositorio de Git con el contenido: `11`. Consulte [Entorno de compilación / Configuración de la versión del JDK de Maven](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#alternate-maven-jdk-version).
+Se recomienda a los clientes que añadan un archivo `.cloudmanager/java-version` a la raíz de su repositorio de Git con el contenido: `11`. Consulte [Entorno de compilación / Configuración de la versión del JDK de Maven](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#alternate-maven-jdk-version).
 
 #### Actualizar aem-cloud-testing-customers a 1.2.1 {#update-aem-cloud-testing-clients}
 
