@@ -3,9 +3,9 @@ title: Configurar la conexión avanzada para AEM as a Cloud Service
 description: Aprenda a configurar funciones de red avanzadas como una VPN o una dirección IP de salida flexible o dedicada para AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: 01b55f2ff06d3886724dbb2c25d0c109a5ab6aec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5142'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Al configurar funciones de redes avanzadas, se aplican las siguientes restriccio
 El uso de funciones de redes avanzadas requiere dos pasos:
 
 1. La configuración de la opción de redes avanzadas, ya sea [salida de puerto flexible,](#flexible-port-egress) [dirección IP de salida dedicada,](#dedicated-egress-ip-address) o [VPN,](#vpn) debe realizarse primero en el nivel de programa.
-1. Para poder utilizar, la opción de red avanzada debe estar [habilitado en el nivel de entorno.](#enabling)
+1. Para poder utilizarla, la opción de redes avanzadas debe [habilitarse en el nivel de entorno.](#enabling)
 
 Ambos pasos se pueden realizar mediante la interfaz de usuario de Cloud Manager o la API de Cloud Manager.
 
@@ -212,7 +212,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ## Dirección IP de salida dedicada {#dedicated-egress-ip-address}
 
-Una dirección IP dedicada puede mejorar la seguridad al integrarse con proveedores de SaaS (como un proveedor CRM) u otras integraciones fuera de AEM as a Cloud Service que ofrecen una lista de permitidos de direcciones IP. Al añadir la dirección IP específica a la lista de permitidos, se garantiza que solo el tráfico de su AEM Cloud Service pueda fluir al servicio externo. Esto se suma al tráfico de cualquier otra IP permitida.
+Una dirección IP dedicada puede mejorar la seguridad al integrarse con proveedores de SaaS (como un proveedor CRM) u otras integraciones fuera de AEM as a Cloud Service que ofrecen una lista de permitidos de direcciones IP. Al añadir la dirección IP dedicada a la lista de permitidos, se garantiza que solo el tráfico de AEM Cloud Service pueda fluir al servicio externo. Esto se suma al tráfico de cualquier otra IP permitida.
 
 La misma IP dedicada se aplica a todos los programas en su organización de Adobe y a todos los entornos de cada uno de sus programas. Se aplica tanto a los servicios de creación como de publicación.
 
@@ -425,7 +425,7 @@ La mayoría de los dispositivos VPN con tecnología IPSec son compatibles. Consu
 1. En el asistente **Añadir infraestructura de red** Cuando se inicie el asistente, seleccione **Red privada virtual** y proporcione la información necesaria antes de tocar o hacer clic en **Continuar**.
 
    * **Región**: es la región en la que se debe crear la infraestructura.
-   * **Espacio de direcciones** : el espacio de direcciones solo puede ser un CIDR /26 (64 direcciones IP) o un intervalo IP más grande en su propio espacio.
+   * **Espacio de direcciones**: el espacio de direcciones solo puede ser un CIDR /26 (64 direcciones IP) o un intervalo IP más grande en su propio espacio.
       * Este valor no se puede cambiar más adelante.
    * **Información de DNS**: es una lista de resolución de DNS remotos.
       * Presione `Enter` después de escribir una dirección de servidor DNS para añadir otra.
@@ -462,7 +462,7 @@ Aparece un nuevo registro debajo del encabezado **Infraestructura de red** en el
 
 ### Configuración de la API {#configuring-vpn-api}
 
-Una vez por programa, el POST `/program/<programId>/networkInfrastructures` se invoca el punto de conexión, pasando una carga útil de información de configuración que incluye: el valor de **vpn** para el `kind` parámetro, región, espacio de direcciones (lista de CIDR; tenga en cuenta que esto no se puede modificar más adelante), resolución de DNS (para resolver nombres en la red) e información de conexión VPN, como configuración de puerta de enlace, clave VPN compartida y directiva de seguridad IP. El punto final responde con `network_id`, así como otras informaciones, incluido el estado. 
+Una vez por programa, se invoca el punto final POST`/program/<programId>/networkInfrastructures`, pasando una carga útil de información de configuración que incluye: el valor de **vpn** para el parámetro `kind`, región, espacio de direcciones (lista de CIDR; tenga en cuenta que esto no se puede modificar más adelante), resolución de DNS (para resolver nombres en la red del cliente) e información de conexión VPN, como la configuración de puerta de enlace, clave VPN compartida y política de seguridad IP. El punto final responde con `network_id`, así como otras informaciones, incluido el estado. 
 
 Una vez realizada la llamada, la infraestructura de red tarda normalmente entre 45 y 60 minutos en aprovisionarse. Se puede llamar al método GET de la API para devolver el estado actual, que finalmente cambiará de `creating` a `ready`. Consulte la documentación de la API para todos los estados.
 
@@ -582,12 +582,12 @@ El diagrama siguiente proporciona una representación visual de un conjunto de d
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
     <td>N/D</td>
-    <td>IP de la puerta de enlace VPN en el lado AEM. Su equipo de ingeniería de redes puede utilizarlo para permitir únicamente conexiones VPN a su puerta de enlace VPN desde una dirección IP específica. </td>
+    <td>IP de la puerta de enlace VPN en el lado AEM. Su equipo de ingeniería de redes de un cliente puede utilizarla para permitir únicamente conexiones VPN a su puerta de enlace VPN desde una dirección IP específica. </td>
   </tr>
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}.inner.adobeaemcloud.net</code></td>
-    <td>AEM La IP del tráfico proveniente del lado de la de la VPN a su lado. Esto puede verse incluido en la lista de permitidos AEM en la configuración para garantizar que las conexiones solo se puedan realizar desde el punto de vista de la conexión de la red de la red de área de trabajo.</td>
-    <td>AEM Si desea permitir que la VPN acceda a la red, debe configurar las entradas DNS CNAME para asignar su dominio personalizado o <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> y/o <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> por esto.</td>
+    <td>IP del tráfico proveniente del lado de AEM de la VPN al lado del cliente. Esto puede verse incluido en la lista de permitidos en la configuración del cliente para garantizar que las conexiones solo se puedan realizar desde AEM.</td>
+    <td>Si el cliente quiere permitir el acceso de VPN a AEM, debe configurar las entradas DNS CNAME para asignar el dominio personalizado y/o <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> y/o <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> a esto.</td>
   </tr>
 </tbody>
 </table>
@@ -616,7 +616,7 @@ Al habilitar una configuración de redes avanzadas para un entorno, puede habili
 * **Reenvío de puertos**: las reglas de reenvío de puertos deben declararse para cualquier puerto de destino que no sea 80/443, pero solo si no utiliza el protocolo http o https.
    * Las reglas de reenvío de puertos se definen especificando el conjunto de hosts de destino (nombres o IP y puertos).
    * La conexión de cliente que utiliza el puerto 80/443 a través de http/https debe seguir utilizando la configuración de proxy en su conexión para que se apliquen a la conexión las propiedades de redes avanzadas. 
-   * Para cada host de destino, debe asignar el puerto de destino deseado a un puerto desde 30000 hasta 30999.
+   * Para cada host de destino, los clientes deben asignar el puerto de destino deseado a un puerto de 30000 a 30999.
    * Las reglas de reenvío de puertos están disponibles para todos los tipos de redes avanzadas.
 
 * **Hosts no proxy** : los hosts no proxy le permiten declarar un conjunto de hosts que deben enrutarse a través de un intervalo de direcciones IP compartidas en lugar de la IP dedicada.
@@ -648,7 +648,7 @@ Al habilitar una configuración de redes avanzadas para un entorno, puede habili
 
    ![Añadir hosts que no son proxy](assets/advanced-networking-ui-enable-non-proxy-hosts.png)
 
-1. En el **Reenvíos de puerto** puede definir opcionalmente reglas de reenvío de puertos para cualquier puerto de destino que no sea 80/443 si no utiliza HTTP o HTTPS. Proporcione un **Nombre**, **Origen del puerto** y **Destino del puerto** y pulse o haga clic en **Añadir**.
+1. En la pestaña **Reenvíos de puerto** puede definir opcionalmente reglas de reenvío de puertos para cualquier puerto de destino que no sea 80/443 si no utiliza HTTP o HTTPS. Proporcione un **Nombre**, **Origen del puerto** y **Destino del puerto** y pulse o haga clic en **Añadir**.
 
    * La regla se añade a la lista de reglas de la pestaña.
    * Repita este paso para añadir varias reglas.

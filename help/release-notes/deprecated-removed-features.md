@@ -3,9 +3,9 @@ title: Funciones en desuso y eliminadas
 description: Notas de versión específicas de las funciones en desuso y eliminadas de  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: b675ff42eeaeb124e8789480a51684d359429d15
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2146'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 | [!DNL Assets] | FFmpeg transcodificar vídeos. | Para la generación de miniaturas de FFmpeg, use los [microservicios de Asset](/help/assets/asset-microservices-overview.md). Para la transcodificación FFmpeg, utilice [Dynamic Media](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation] | IU de replicación de árbol en la pestaña Distribuir del agente de replicación (eliminación después del 30 de septiembre de 2021) | Enfoques [Administrar publicación](/help/operations/replication.md#manage-publication) o [flujo de trabajo del árbol de contenido de publicación](/help/operations/replication.md#publish-content-tree-workflow) |
 | [!DNL Foundation] | Ni la pestaña Distribuir de la pantalla del administrador del agente de replicación ni la API de replicación pueden utilizarse para replicar paquetes de contenido de más de 10 MB.  En su lugar, utilice [Administrar publicación](/help/operations/replication.md#manage-publication) o [flujo de trabajo del árbol de contenido de publicación](/help/operations/replication.md#publish-content-tree-workflow) |
-| [!DNL Foundation] | Las integraciones que utilizan credenciales generadas a partir de proyectos de la consola de Adobe Developer perderán gradualmente la compatibilidad con las credenciales de la cuenta de servicio (JWT). No se pueden crear nuevas credenciales de cuenta de servicio (JWT) en la consola de Adobe Developer a partir del 1 de mayo de 2024, aunque las credenciales de cuenta de servicio (JWT) existentes se pueden seguir utilizando para integraciones ya configuradas hasta el 1 de enero de 2025, momento en el que las credenciales de cuenta de servicio (JWT) existentes dejarán de funcionar y los clientes deberán migrar a las credenciales de servidor a servidor de OAuth. [Más información](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrar](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) a las credenciales de servidor a servidor de OAuth. |
+| [!DNL Foundation] | Las integraciones que utilizan credenciales generadas a partir de proyectos de Adobe Developer Console perderán gradualmente la compatibilidad con las credenciales de la cuenta de servicio (JWT). No se pueden crear nuevas credenciales de cuenta de servicio (JWT) enAdobe Developer Console a partir del 1 de mayo de 2024, aunque las credenciales de cuenta de servicio (JWT) existentes se pueden seguir utilizando para integraciones ya configuradas hasta el 1 de enero de 2025, momento en el que las credenciales de cuenta de servicio (JWT) existentes dejarán de funcionar y los clientes deberán migrar a las credenciales de servidor a servidor de OAuth. [Más información](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrar](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) a las credenciales de servidor a servidor de OAuth. |
 
 ## Funciones eliminadas {#removed-features}
 
