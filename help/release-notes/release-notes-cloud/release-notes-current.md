@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 47e85190c2aacfb4429408ce159fecb9b0646569
 workflow-type: tm+mt
 source-wordcount: '1020'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ En la siguiente sección se describen las notas de la versión de la funcionalid
 >
 >Desde aquí puede navegar hasta las notas de la versión de versiones anteriores, como 2021 o 2022.
 >
->Eche un vistazo a la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información acerca de las próximas activaciones de funcionalidades para [!DNL Experience Manager] as a Cloud Service.
+>Eche un vistazo a la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información acerca de las próximas activaciones de funcionalidades para [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
->Consulte [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates) para obtener más información sobre las actualizaciones de la documentación no relacionadas directamente con una versión.
+>Consulte [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates) para obtener más información sobre las actualizaciones de la documentación no relacionadas directamente con una versión.
 
 ## Fecha de lanzamiento {#release-date}
 
@@ -109,14 +109,14 @@ Los clientes de Dynatrace pueden monitorizar su uso de AEM. [Lea cómo](/help/im
 
 Los [Entornos de desarrollo rápido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) admiten ahora código front-end basado en [temas del sitio](/help/sites-cloud/administering/site-creation/site-themes.md) y [plantillas del sitio](/help/sites-cloud/administering/site-creation/site-templates.md), para los primeros usuarios. Con los RDE, esto se hace usando una directiva de línea de comandos, en lugar de una [canalización front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Póngase en contacto con **aemcs-rde-support@adobe.com** para probarlo y proporcionar comentarios.
 
-### Programa de pioneros de configuración de CDN {#cdn-config-early-adopter}
+### Programa para primeros usuarios de configuración de CDN {#cdn-config-early-adopter}
 
-Además de los lanzamientos recientes [Reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md), que incluye las reglas de cortafuegos de aplicaciones web (WAF) con licencia opcional, existe la oportunidad de utilizar la canalización de configuración para declarar e implementar [otros tipos de configuración de CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md). Únase al programa de usuarios pioneros enviando un correo electrónico **aemcs-cdn-config-adopter@adobe.com** para obtener acceso a:
+Además de las recientemente lanzadas [Reglas de filtrado de tráfico](/help/security/traffic-filter-rules-including-waf.md), que incluyen las reglas del firewall de aplicaciones web (Web Application Firewall, WAF) con licencia opcional, existe la posibilidad de utilizar la canalización de configuración para declarar e implementar [otros tipos de configuración de CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md). Únase al programa para primeros usuarios enviando un correo electrónico a **aemcs-cdn-config-adopter@adobe.com** para obtener acceso a:
 * Redirecciones del lado del cliente 301/302
 * solicitudes de proxy en el perímetro a orígenes arbitrarios
-* Transformaciones de URL
+* transformaciones de URL
 * configuración o modificación de encabezados de solicitud o respuesta
-* AEM páginas de error personalizadas cuando la CDN no puede llegar a la dirección de correo electrónico de
+* páginas de error personalizadas cuando la CDN no puede llegar a AEM
 
 ## Cloud Manager {#cloud-manager}
 
