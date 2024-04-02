@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 80%
+source-wordcount: '340'
+ht-degree: 100%
 
 ---
 # Fragmentos de código {#snippets}
@@ -14,12 +14,6 @@ ht-degree: 80%
 ## Creación de Edge Delivery Services {#edge-delivery-authoring}
 
 [!BADGE Para crear contenido de AEM para Edge Delivery Services, haga clic aquí.]{type=Positive url="/help/edge/overview.md" tooltip="Creación de contenido de AEM para Edge Delivery Services"}
-
-## Estado del Editor universal {#universal-editor-status}
-
->[!NOTE]
->
->El Editor universal sigue en desarrollo y sus funcionalidades están sujetas a cambios y pueden diferir de lo que se detalla en este documento.
 
 ## Consulte también {#see-also}
 
@@ -63,11 +57,11 @@ ht-degree: 80%
 
 ## Consulte también {#see-more-forms-eds}
 
-* [Introducción a los Edge Delivery Services de AEM Forms](/help/edge/docs/forms/tutorial.md)
-* [Crear un formulario con hojas de Google o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Configure las hojas de Google o los archivos de Microsoft Excel para empezar a aceptar datos&#x200B;](/help/edge/docs/forms/submit-forms.md)
+* [Introducción a Edge Delivery Services de AEM Forms](/help/edge/docs/forms/tutorial.md)
+* [Crear un formulario con Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+* [Configurar Google Sheets o los archivos de Microsoft Excel para empezar a aceptar datos](/help/edge/docs/forms/submit-forms.md)
 * [Publicar el formulario y empezar a recopilar datos](/help/edge/docs/forms/publish-forms.md)
-* [Personalice el aspecto de los formularios&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
-* [Agregar secciones repetibles a un formulario&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
-* [Mostrar un mensaje de agradecimiento personalizado después del envío del formulario&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
+* [Personalizar el aspecto de los formularios](/help/edge/docs/forms/style-theme-forms.md)
+* [Añadir secciones repetibles a un formulario](/help/edge/docs/forms/repeatable-forms.md)
+* [Mostrar un mensaje de agradecimiento personalizado después del envío del formulario](/help/edge/docs/forms/thank-you-page-form.md)
 * [Componentes de bloque de formulario adaptable y sus propiedades](/help/edge/docs/forms/form-components.md)

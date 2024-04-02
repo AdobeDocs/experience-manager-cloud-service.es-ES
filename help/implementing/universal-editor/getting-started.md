@@ -2,7 +2,7 @@
 title: Introducción al editor universal en AEM
 description: Obtenga información sobre cómo acceder al editor universal y cómo instrumentar la primera aplicación de AEM para utilizarlo.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 799ca20f8787afffd783c93a2480e096fffb1566
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
 source-wordcount: '921'
 ht-degree: 69%
@@ -17,8 +17,6 @@ Obtenga información sobre cómo acceder al editor universal y cómo instrumenta
 >[!TIP]
 >
 >Si prefiere ir directamente a un ejemplo, puede revisar la [Aplicación de muestra del editor universal en GitHub.](https://github.com/adobe/universal-editor-sample-editable-app)
-
-{{universal-editor-status}}
 
 ## Pasos para la incorporación {#onboarding}
 

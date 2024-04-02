@@ -2,7 +2,7 @@
 title: Atributos y tipos de elementos
 description: Obtenga información sobre los atributos de datos y los tipos de elementos que requiere el Editor universal.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 5ddd4bbcce10c5cda97e3ea3f6750b209b5743f0
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 75%
@@ -13,8 +13,6 @@ ht-degree: 75%
 # Atributos y tipos {#attributes-types}
 
 Obtenga información sobre los atributos de datos y los tipos de elementos que requiere el Editor universal.
-
-{{universal-editor-status}}
 
 ## Introducción {#introduction}
 
