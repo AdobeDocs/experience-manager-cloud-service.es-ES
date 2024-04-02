@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 96ec736b5774fc48d006264b316e390bf022c0e9
+source-git-commit: f3192858ea6fcf87788fafe07aa8870211dbb637
 workflow-type: tm+mt
-source-wordcount: '4828'
-ht-degree: 95%
+source-wordcount: '4832'
+ht-degree: 99%
 
 ---
 
@@ -78,9 +78,9 @@ ht-degree: 95%
    + Notas de la versión de mantenimiento de AEMaaCS {#maintenance}
       + [Notas de la versión actuales sobre el mantenimiento](/help/release-notes/maintenance/latest.md)
       + 2024 {#2024}
-         + [Notas de la versión de mantenimiento de 2024.3.0](/help/release-notes/maintenance/2024/2024-3-0.md)
+         + [Notas de la versión de mantenimiento 2024.3.0](/help/release-notes/maintenance/2024/2024-3-0.md)
       + 2023 {#2023}
-         + [Notas de la versión de mantenimiento de 2023.12.0](/help/release-notes/maintenance/2023/2023-12-0.md)
+         + [Notas de la versión de mantenimiento 2023.12.0](/help/release-notes/maintenance/2023/2023-12-0.md)
          + [Notas de la versión de mantenimiento de 2023.11.0](/help/release-notes/maintenance/2023/2023-11-0.md)
          + [Notas de la versión de mantenimiento de 2023.10.0](/help/release-notes/maintenance/2023/2023-10-0.md)
          + [Notas de la versión de mantenimiento de 2023.9.0](/help/release-notes/maintenance/2023/2023-9-0.md)
@@ -181,7 +181,7 @@ ht-degree: 95%
    + [Compatibilidad con cookies del mismo sitio para AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [Compatibilidad con OAuth2 para el servicio de correo](/help/security/oauth2-support-for-mail-service.md)
    + [Reglas de filtro de tráfico, incluidas reglas WAF](/help/security/traffic-filter-rules-including-waf.md)
-   + [Consideraciones de seguridad de AEM as a Cloud Service Security](/help/security/security-considerations.md)
+   + [Consideraciones de AEM as a Cloud Service Security](/help/security/security-considerations.md)
    + [Credenciales JWT de Adobe Developer Console en desuso](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + Incorporación {#onboarding}
    + [Empiece aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=es)
@@ -279,10 +279,10 @@ ht-degree: 95%
       + [Consola Componentes](/help/sites-cloud/authoring/components-console.md)
       + [Selección de la ruta](/help/sites-cloud/authoring/path-selection.md)
       + [Solución de problemas](/help/sites-cloud/authoring/troubleshooting.md)
-      + Consola Sitios {#sites-console}
-         + [La consola Sitios](/help/sites-cloud/authoring/sites-console/introduction.md)
+      + Consola Sites {#sites-console}
+         + [La Consola Sites](/help/sites-cloud/authoring/sites-console/introduction.md)
          + [Panel lateral de la consola](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
-         + [Crear un nuevo canal](/help/sites-cloud/authoring/sites-console/create-site.md)
+         + [Crear un nuevo sitio](/help/sites-cloud/authoring/sites-console/create-site.md)
          + [Organización de páginas](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
          + [Creación de páginas](/help/sites-cloud/authoring/sites-console/creating-pages.md)
          + [Administrar páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md)
@@ -308,7 +308,7 @@ ht-degree: 95%
          + [Crear contenido accesible (Conformidad con WCAG 2.1)](/help/sites-cloud/authoring/page-editor/accessible-content.md)
          + [Métodos abreviados de teclado](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [Sistema de estilos](/help/sites-cloud/authoring/page-editor/style-system.md)
-         + [Deshacer las limitaciones de rehacer](/help/sites-cloud/authoring/page-editor/undo-redo.md)
+         + [Limitaciones de Deshacer y Rehacer](/help/sites-cloud/authoring/page-editor/undo-redo.md)
       + Editor universal {#universal-editor}
          + [Creación de contenido con el editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [Publicación de contenido con el editor universal](/help/sites-cloud/authoring/universal-editor/publishing.md)
@@ -357,7 +357,7 @@ ht-degree: 95%
          + [Analizando estructura](/help/sites-cloud/administering/content-fragments/analysis.md)
          + [Métodos abreviados de teclado](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
       + Creación de sitios {#site-creation}
-         + [Crear un nuevo canal](/help/sites-cloud/administering/site-creation/create-site.md)
+         + [Crear un nuevo sitio](/help/sites-cloud/administering/site-creation/create-site.md)
          + [Habilitación de canalización front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
          + [Uso del carril del sitio](/help/sites-cloud/administering/site-creation/site-rail.md)
          + [Plantillas de sitios](/help/sites-cloud/administering/site-creation/site-templates.md)
@@ -423,7 +423,7 @@ ht-degree: 95%
       + [Selector de recursos de Micro-Frontend](/help/assets/asset-selector.md)
       + [Selector de destino de Micro-Frontend](/help/assets/destination-selector.md)
       + [Compartir recursos](/help/assets/share-assets.md)
-      + [Reprocesando recursos](/help/assets/reprocessing.md)
+      + [Reprocesamiento de recursos](/help/assets/reprocessing.md)
       + [Supervisar actividades y tareas de DAM](/help/assets/assets-activity-history.md)
       + [Introducción a los microservicios de recursos](/help/assets/asset-microservices-configure-and-use.md)
       + [Agregar y cargar recursos](/help/assets/add-assets.md)
@@ -488,7 +488,7 @@ ht-degree: 95%
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [Árbol de estructura](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [Previsualización: representación JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
-      + [Reutilización de fragmentos de contenido mediante MSM (para Recursos)](/help/assets/content-fragments/content-fragments-msm.md)
+      + [Reutilización de fragmentos de contenido mediante MSM (para recursos)](/help/assets/content-fragments/content-fragments-msm.md)
    + Dynamic Media {#dynamicmedia}
       + Recorrido de Dynamic Media: Conceptos básicos {#dm-journey}
          + [Parte I: Dynamic Media, Casos de uso, Flujo de recursos a través del sistema](/help/assets/dynamic-media/dm-journey-part1.md)
@@ -631,7 +631,7 @@ ht-degree: 95%
             + [Crear formularios con secciones repetibles](/help/forms/create-forms-repeatable-sections.md)
             + [Configuración de una acción de envío para un formulario adaptable](/help/forms/configure-submit-actions-core-components.md)
             + [Envío de un formulario adaptable a Adobe Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
-            + [Enviar un formulario adaptable a Microsoft](/help/forms/configure-submit-action-onedrive.md)
+            + [Envío de un formulario adaptable a Microsoft](/help/forms/configure-submit-action-onedrive.md)
             + [Conectar un formulario adaptable a Microsoft](/help/forms/configure-submit-action-sharepoint.md)
             + [Integración del formulario adaptable de AEM con el flujo de trabajo de AEM](/help/forms/configure-submit-action-workflow.md)
             + [Configuración de la acción de envío Enviar a punto final REST para formularios adaptables](/help/forms/configure-submit-action-restpoint.md)
@@ -640,7 +640,7 @@ ht-degree: 95%
             + [Agregar un controlador de error personalizado en un formulario adaptable](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Añadir una configuración regional para Formularios adaptables basada en componentes principales](/help/forms/supporting-new-language-localization-core-components.md)
             + [Creación y uso de funciones personalizadas](/help/forms/create-and-use-custom-functions.md)
-            + [Agregar reglas a un formulario adaptable basado en componentes principales](/help/forms/rule-editor-core-components.md)
+            + [Añadir reglas a un formulario adaptable basado en componentes principales](/help/forms/rule-editor-core-components.md)
       + Componentes de base {#authoring-adaptive-forms-foundation-components}
          + Convertir sus formularios PDF en formularios adaptables {#afcs}
             + [Introducción al servicio de conversión automatizada de formularios](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=es)
@@ -698,7 +698,7 @@ ht-degree: 95%
       + [Instalación y configuración de Forms Designer](/help/forms/installing-configuring-designer.md)
       + [Uso de Forms Designer para crear plantillas](/help/forms/use-forms-designer.md)
       + [Uso de fuentes personalizadas en documentos PDF](/help/forms/use-custom-fonts.md)
-      + [Lista de fuentes admitidas en los documentos del PDF](/help/forms/supported-out-of-the-box-fonts.md)
+      + [Lista de fuentes admitidas en los documentos PDF](/help/forms/supported-out-of-the-box-fonts.md)
       + [Problemas conocidos, prácticas recomendadas y preguntas más frecuentes](/help/forms/communications-known-issues-limitations.md)
    + Informes de transacciones {#using-communications}
       + [API facturables de informes de transacciones](/help/forms/transaction-reports-billable-apis.md)
@@ -711,8 +711,8 @@ ht-degree: 95%
    + Solución de problemas {#troubleshooting-aem-forms-cloud-service}
       + [Instalación y configuración](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Almacenamiento en caché de Dispatcher y CDN](/help/forms/troubleshooting-caching-performance.md)
-      + [AEM Reinicio del SDK de](/help/forms/restart-aem-sdk.md)
-+ Pantallas {#screens-as-cloud-service}
+      + [Reinicio del SDK de AEM](/help/forms/restart-aem-sdk.md)
++ Screens {#screens-as-cloud-service}
    + Información general para Screens as a Cloud Service {#overview}
       + [Introducción](/help/screens-cloud/introduction/introduction.md)
       + [Explicación de las definiciones de funciones](/help/screens-cloud/introduction/personas-screens-cloud.md)
@@ -730,7 +730,7 @@ ht-degree: 95%
       + [Uso del proveedor de contenido de Screens](/help/screens-cloud/configuring/using-screens-content-provider.md)
       + [Creación de representaciones de vídeo de Screens](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
       + [Configuración de Dispatcher para Screens as a Cloud Service](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
-      + [Configuración de vistas de cronología para pantallas as a Cloud Service](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
+      + [Configuración de Timeline Views para Screens as a Cloud Service](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
    + Creación de contenido {#create-content}
       + [Creación y administración de un proyecto en el proveedor de contenido de Screens](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
       + [Creación y administración de un canal en el proveedor de contenido de Screens](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
@@ -788,7 +788,7 @@ ht-degree: 95%
    + [Migración](/help/commerce-cloud/migration.md)
    + [Preguntas más frecuentes](/help/commerce-cloud/faq.md)
 + AEM con Edge Delivery Services {#edge-delivery}
-   + [Introducción a los Edge Delivery Services](/help/edge/overview.md)
+   + [Introducción a Edge Delivery Services](/help/edge/overview.md)
    + [Uso de Edge Delivery](/help/edge/using.md)
    + [Guía de introducción del desarrollador](/help/edge/edge-dev-getting-started.md)
    + [Creación de contenido para Edge Delivery](/help/edge/authoring.md)
@@ -796,7 +796,7 @@ ht-degree: 95%
    + [Desarrollo para Edge Delivery](/help/edge/developing.md)
    + [Modelado de contenido](/help/edge/content-modeling.md)
    + [Creación de bloques](/help/edge/create-block.md)
-   + [Datos tabulares y preadhesivos](/help/edge/tabular-data.md)
+   + [Datos tabulares y hojas de cálculo](/help/edge/tabular-data.md)
    + [Proyectos existentes y Edge Delivery](/help/edge/existing-projects.md)
    + Creación de aplicaciones de Edge Delivery {#build}
       + [Introducción: Tutorial para desarrolladores](/help/edge/developer/tutorial.md)
@@ -828,16 +828,16 @@ ht-degree: 95%
       + [Información general](/help/edge/docs/forms/overview.md)
       + Introducción {#getting-started-eds-forms}
          + [Introducción](/help/edge/docs/forms/tutorial.md)
-         + [Crear un formulario con hojas de Google o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-         + [Configure las hojas de Google o los archivos de Microsoft Excel para empezar a aceptar datos&#x200B;](/help/edge/docs/forms/submit-forms.md)
+         + [Crear un formulario con Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+         + [Configurar Google Sheets o los archivos de Microsoft Excel para empezar a aceptar datos](/help/edge/docs/forms/submit-forms.md)
          + [Publicar el formulario y empezar a recopilar datos](/help/edge/docs/forms/publish-forms.md)
-         + [Agregar validaciones a campos de formulario](/help/edge/docs/forms/validate-forms.md)
-         + [Personalice el aspecto de los formularios&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
+         + [Agregar validaciones a los campos de formulario](/help/edge/docs/forms/validate-forms.md)
+         + [Personalizar el aspecto de los formularios](/help/edge/docs/forms/style-theme-forms.md)
          + [Usar reglas para agregar un comportamiento dinámico a un formulario](/help/edge/docs/forms/rules-forms.md)
          + [Mostrar un mensaje de agradecimiento personalizado después del envío del formulario](/help/edge/docs/forms/thank-you-page-form.md)
-      + Funcionalidades {#advanced-features-eds-forms}
+      + Funciones {#advanced-features-eds-forms}
          + [Fragmentos de formulario](/help/edge/docs/forms/form-fragments.md)
-         + [Agregar secciones repetibles a un formulario&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
+         + [Añadir secciones repetibles a un formulario](/help/edge/docs/forms/repeatable-forms.md)
          + [Traducción](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Componentes personalizados](/help/edge/docs/forms/custom-components-forms.md)
@@ -853,7 +853,7 @@ ht-degree: 95%
       + [API de administrador](https://www.aem.live/docs/admin.html)
       + [Estado de AEM](https://www.aemstatus.net)
       + Herramientas {#tools}
-         + [Extensión de AEM Sidekick Chrome](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [Extensión de Chrome de la barra de tareas de AEM](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
          + [Bot de Github](https://github.com/apps/aem-code-sync)
          + [Registro de auditorías](/help/edge/docs/auditlog.md)
 + {#headless} sin encabezado
@@ -928,6 +928,8 @@ ht-degree: 95%
          + [Conceptos básicos de creación para usuarios sin encabezado con AEM](/help/journey-headless/author/basics.md)
          + [Obtenga información sobre el uso de referencias en fragmentos de contenido](/help/journey-headless/author/references.md)
          + [Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido](/help/journey-headless/author/metadata-tagging.md)
++ IA generativa {#generative-ai}
+   + [Generar variaciones](/help/generative-ai/generate-variations.md)
 + Implementación {#implementing}
    + [Implementación de aplicaciones para AEM as a Cloud Service](/help/implementing/home.md)
    + Uso de Cloud Manager {#using-cloud-manager}
@@ -976,7 +978,7 @@ ht-degree: 95%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Notificaciones](/help/implementing/cloud-manager/notifications.md)
-      + [Redes avanzadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
+      + [Redes avanzadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=es)
       + Certificados SSL {#manage-ssl-certificates}
          + [Introducción](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [Adición de un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
@@ -1147,7 +1149,7 @@ ht-degree: 95%
       + [Validación y depuración mediante herramientas de Dispatcher heredadas](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [CDN en AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
       + [Configuración del tráfico en la CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md)
-      + [Configuración de páginas de error de CDN](/help/implementing/dispatcher/cdn-error-pages.md)
+      + [Configuración de páginas de error de la CDN](/help/implementing/dispatcher/cdn-error-pages.md)
       + [Almacenamiento en caché en AEM as a Cloud Service](/help/implementing/dispatcher/caching.md)
 + Conectores {#connectors}
    + [Implementación de un conector de AEM](/help/connectors/implement.md)
