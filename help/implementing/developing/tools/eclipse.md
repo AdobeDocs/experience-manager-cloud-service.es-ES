@@ -1,8 +1,8 @@
 ---
 title: Herramientas para desarrolladores de AEM para Eclipse
-description: AEM Aprenda a utilizar las herramientas para desarrolladores de Eclipse, un complemento de Eclipse basado en el complemento de Eclipse para Apache Sling.
+description: AEM Aprenda a utilizar las herramientas para desarrolladores de para Eclipse, un complemento de Eclipse basado en el complemento Eclipse para Apache Sling.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 2%
@@ -208,7 +208,7 @@ Para resolver dependencias no válidas y la definición del proyecto, siga estos
 1. Haga clic con el botón derecho.
 1. En el menú contextual, seleccione **Maven** > **Actualizar proyectos**.
 1. Marque **Forzar actualizaciones de instantáneas/versiones**.
-1. Haga clic en **Aceptar**.
+1. Haz clic en **OK**.
 
 Eclipse descarga las dependencias requeridas. Esto puede tardar un momento.
 
@@ -222,6 +222,6 @@ La página web oficial de Apache Sling IDE tooling for Eclipse le proporciona in
 
 El siguiente funcionario [Eclipse](https://www.eclipse.org/) La documentación de puede ayudarle a configurar su entorno:
 
-* [Introducción a Eclipse](https://www.eclipse.org/getting-started/)
+* [Introducción a Eclipse](https://eclipseide.org/getting-started/)
 * [Sistema de ayuda de Eclipse Luna](https://help.eclipse.org/latest/index.jsp)
 * [Integración de Maven (m2eclipse)](https://www.eclipse.org/m2e/)

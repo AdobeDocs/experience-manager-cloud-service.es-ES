@@ -1,13 +1,13 @@
 ---
 title: Generar variaciones
 description: Obtenga información sobre la Generación de variaciones, accesible desde el Sidekick de Edge Delivery Services
-source-git-commit: 88d0b0a6dc2dacdf907ab46c804087772ab2e030
+exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
 workflow-type: tm+mt
 source-wordcount: '3338'
 ht-degree: 0%
 
 ---
-
 
 # Generar variaciones {#generate-variations}
 
@@ -343,7 +343,7 @@ Selección de un **Adobe Target** La audiencia en el mensaje permite personaliza
 
    >[!NOTE]
    >
-   >Para utilizar un **Adobe Target** audiencia se debe rellenar el campo description. Si no es así, la audiencia se muestra en la lista desplegable como no disponible. Para añadir una descripción, vaya a Target y [añadir una descripción de audiencia](https://experienceleague.adobe.com/docs/target-learn/tutorials/audiences/create-audiences).
+   >Para utilizar un **Adobe Target** audiencia se debe rellenar el campo description. Si no es así, la audiencia se muestra en la lista desplegable como no disponible. Para añadir una descripción, vaya a Target y [añadir una descripción de audiencia](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences).
 
    ![Generar variaciones: fuente de audiencia, Adobe Target](assets/generate-variations-audiences-adobe-target.png)
 

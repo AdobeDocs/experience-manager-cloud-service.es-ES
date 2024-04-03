@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: fa57e0438a7570551785375c4e5a57fa38fd2f6f
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1937'
 ht-degree: 8%
 
 ---
@@ -66,7 +66,7 @@ Los metadatos se clasifican como metadatos técnicos, informativos y administrat
 
 Los metadatos técnicos se centran en los aspectos técnicos de los recursos digitales, y proporcionan información crucial relacionada con lo siguiente:
 
-* Tamaño de archivo
+* Tamaño del archivo
 * Formato
 * Resolución
 * Dimensiones
@@ -250,7 +250,7 @@ Los metadatos específicos de la aplicación incluyen metadatos técnicos y desc
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
 * MÁS - [Sistema universal de licencias de imágenes](https://www.useplus.com).
-* PRISMA - [Requisitos de publicación para metadatos estándar del sector](https://www.idealliance.org/prism-metadata).
+<!--THIS LINK IS 404 WITH NO SUITABLE REPLACEMENT * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata). -->
 * PRL - PRISM Rights Language.
 * PUR - Derechos de uso de PRISM.
 * `xmpPlus` XMP - Integración de PLUS con la.
@@ -265,7 +265,7 @@ Los metadatos específicos de la aplicación incluyen metadatos técnicos y desc
 ### Metadatos específicos de impresión {#print-specific-metadata}
 
 * PDF y PDF/X: aplicaciones de Adobe PDF y de terceros.
-* PRISMA - [Requisitos de publicación para metadatos estándar del sector](https://www.idealliance.org/prism-metadata).
+<!--THIS LINK IS 404 WITH NO SUITABLE REPLACEMENT * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata). -->
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` XMP - metadatos de la página para texto paginado.
 
