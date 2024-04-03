@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: de05abac3620b254343196a283cef198f434cfca
 workflow-type: tm+mt
 source-wordcount: '2752'
-ht-degree: 6%
+ht-degree: 11%
 
 ---
 
@@ -153,13 +153,13 @@ AEM Si &quot;Actualizaciones de la versión de la versión de la&quot; está act
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### Error de ingesta superior debido a una infracción de la restricción de unicidad {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
+### Error de ingesta de recarga debido a una infracción de la restricción de unicidad {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_uuid"
 >title="Infracción de restricción de unicidad"
 >abstract="Una causa común de un error de ingesta que no es de borrado es un conflicto en los identificadores de nodo. Solo puede existir uno de los nodos en conflicto."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="Ingesta superior"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=es#top-up-ingestion-process" text="Ingesta de recarga"
 
 Una causa común de una [Ingesta superior](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) el error es un conflicto en los id de nodo. Para identificar este error, descargue el registro de ingesta mediante la interfaz de usuario de Cloud Acceleration Manager y busque una entrada como la siguiente:
 
@@ -173,13 +173,13 @@ AEM Cada nodo de la interfaz de usuario de debe tener un uuid único. Este error
 
 Este conflicto debe resolverse manualmente. Alguien familiarizado con el contenido debe decidir cuál de los dos nodos se debe eliminar, teniendo en cuenta otro contenido que haga referencia a él. La solución puede requerir que la extracción superior se realice de nuevo sin el nodo infractor.
 
-### Error de ingesta superior debido a que no se puede eliminar el nodo al que se hace referencia {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
+### Error de ingesta de recarga debido a que no se puede eliminar el nodo al que se hace referencia {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
 >title="No se puede eliminar el nodo de referencia"
 >abstract="Una causa común de un error de ingesta sin borrado es un conflicto de versiones para un nodo en particular en la instancia de destino. Se deben corregir las versiones del nodo."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="Ingesta superior"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=es#top-up-ingestion-process" text="Ingesta de recarga"
 
 Otra causa común de una [Ingesta superior](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) el error es un conflicto de versiones para un nodo en particular en la instancia de destino. Para identificar este error, descargue el registro de ingesta mediante la interfaz de usuario de Cloud Acceleration Manager y busque una entrada como la siguiente:
 
@@ -196,18 +196,18 @@ Las prácticas recomendadas indican que si **Sin barrido** La ingesta debe ejecu
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_bson"
 >title="Propiedad de nodo grande"
->abstract="Una causa común de un error de ingesta es el exceso del tamaño máximo de los valores de propiedad del nodo. Siga la documentación, incluidas las relacionadas con el informe de BPA, para solucionar esta situación."
+>abstract="Una causa común de un error de ingesta es el exceso del tamaño máximo de los valores de propiedad del nodo. Consulte la documentación, incluida la relacionada con el informe de BPA, para solucionar esta situación."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=es" text="Requisitos previos de migración"
 
 Los valores de propiedad del nodo almacenados en MongoDB no pueden superar los 16 MB. Si el valor de un nodo supera el tamaño admitido, la ingesta falla y el registro contiene un `BSONObjectTooLarge` y especifique qué nodo ha superado el máximo. Esta es una restricción de MongoDB.
 
 Consulte la `Node property value in MongoDB` nota en [Requisitos previos para la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) para obtener más información y un vínculo a una herramienta Oak que pueda ayudar a encontrar todos los nodos grandes. Una vez corregidos todos los nodos con tamaños grandes, ejecute de nuevo la extracción y la ingesta.
 
-### Ingesta Rescindida {#ingestion-rescinded}
+### Ingesta rescindida {#ingestion-rescinded}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_rescinded"
->title="Ingesta Rescindida"
+>title="Ingesta rescindida"
 >abstract="La extracción que la ingesta estaba esperando no finalizó correctamente. La ingesta se ha rescindido porque no se ha podido ejecutar."
 
 Una ingesta creada con una extracción en ejecución como el conjunto de migración de origen espera pacientemente hasta que la extracción se realice correctamente y, en ese momento, comienza con normalidad. Si la extracción falla o se detiene, la ingesta y su trabajo de indexación no comenzarán, pero se rescindirán. En este caso, compruebe la extracción para determinar por qué ha fallado, corrija el problema y vuelva a empezar a extraer. Una vez que se esté ejecutando la extracción fija, se puede programar una nueva ingesta.
