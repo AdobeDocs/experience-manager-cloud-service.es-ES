@@ -2,10 +2,10 @@
 title: Modelado de contenido para la creación de AEM con proyectos de Edge Delivery Services
 description: Aprenda cómo funciona el modelado de contenido para la creación de contenido de AEM con proyectos de Edge Delivery Services y cómo modelar su propio contenido.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
-source-git-commit: 22a631d394de1c0fb934d9703e966c8287aef391
+source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
 workflow-type: tm+mt
-source-wordcount: '2095'
-ht-degree: 81%
+source-wordcount: '2072'
+ht-degree: 99%
 
 ---
 
@@ -23,7 +23,7 @@ Antes de empezar a modelar el contenido de su proyecto, asegúrese de leer prime
 
 * [Introducción: Tutorial para desarrolladores](/help/edge/developer/tutorial.md)
 * [Marcado, secciones, bloques y bloqueo automático](/help/edge/developer/markup-sections-blocks.md)
-* [Colección de bloqueos](/help/edge/developer/block-collection.md)
+  <!--* [Block Collection](/help/edge/developer/block-collection.md)-->
 
 Es esencial comprender estos conceptos para llegar a un modelo de contenido atractivo que funcione de manera independiente de la fuente de contenido. Este documento proporciona detalles sobre los mecanismos implementados específicamente para la creación de AEM.
 
@@ -109,19 +109,19 @@ Para cada bloque, el desarrollador:
 
 * Debe utilizar el tipo de recurso `core/franklin/components/block/v1/block`, la implementación genérica de la lógica de bloque en AEM.
 * Debe definir el nombre del bloque, que se procesará en el encabezado de tabla del bloque.
-   * El nombre del bloque se utiliza para recuperar el estilo y la secuencia de comandos adecuados para decorar el bloque.
+   * El nombre del bloque se utiliza para recuperar el estilo y el script adecuados para decorar el bloque.
 * Puede definir un [ID de modelo.](/help/implementing/universal-editor/field-types.md#model-structure)
    * El ID de modelo es una referencia al modelo del componente, que define los campos disponibles para el autor en el carril de propiedades.
 * Puede definir un [ID de filtro.](/help/implementing/universal-editor/customizing.md#filtering-components)
-   * El ID de filtro es una referencia al filtro del componente, que permite cambiar el comportamiento de creación, por ejemplo, limitando qué elementos secundarios se pueden añadir al bloque o la sección, o qué funciones RTE están habilitadas.
+   * El ID de filtro es una referencia al filtro del componente, que permite cambiar el comportamiento de creación, por ejemplo, al limitar qué elementos secundarios se pueden añadir al bloque o a la sección, o qué funciones RTE están habilitadas.
 
-AEM Toda esta información se almacena en los datos cuando se agrega un bloque de a una página de la lista de direcciones de correo electrónico. Si falta el tipo de recurso o el nombre del bloque, el bloque no se procesará en la página.
+Toda esta información se almacena en AEM cuando se añade un bloque a una página. Si falta el tipo de recurso o el nombre del bloque, el bloque no se procesará en la página.
 
 >[!WARNING]
 >
->AEM Aunque es posible, no es necesario ni recomendado implementar componentes personalizados de la. Los componentes de Edge Delivery Services proporcionados por AEM son suficientes y ofrecen determinados mecanismos de protección para facilitar el desarrollo.
+>Si bien es posible, no es necesario o recomendable implementar componentes de AEM personalizados. Los componentes de Edge Delivery Services proporcionados por AEM son suficientes y ofrecen determinados mecanismos de protección para facilitar el desarrollo.
 >
->AEM Los componentes proporcionados por el usuario representan un marcado que se puede consumir por [helix-html2md](https://github.com/adobe/helix-html2md) al publicar en Edge Delivery Services y por [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) al cargar una página en el editor universal. AEM El marcado es el contrato estable entre el usuario y las demás partes del sistema, y no permite personalizaciones. Por este motivo, los proyectos no deben cambiar los componentes y no deben utilizar componentes personalizados.
+>Los componentes proporcionados por AEM representan un marcado que puede consumir [helix-html2md](https://github.com/adobe/helix-html2md) al publicar en Edge Delivery Services y [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) al cargar una página en el editor universal. El marcado es el contrato estable entre AEM y las demás partes del sistema, y no permite personalizaciones. Por este motivo, los proyectos no deben cambiar los componentes y no deben utilizar componentes personalizados.
 
 ### Estructura del bloque {#block-structure}
 
@@ -323,7 +323,7 @@ En el siguiente ejemplo, un bloque acepta una lista de iconos vinculados como ta
 
 Con la [mecánica de la estructura de bloques explicada,](#block-structure) es posible crear un modelo de contenido que asigne el contenido persistido en el nivel de envío de uno a uno de AEM.
 
-Al principio de cada proyecto, se debe considerar cuidadosamente un modelo de contenido para cada bloque. Debe ser independiente del origen de contenido y de la experiencia de creación para permitir a los autores cambiarlos o combinarlos al reutilizar implementaciones y estilos de bloque. Puede encontrar más información y sugerencias generales en el [Modelo de David (toma 2).](https://www.aem.live/docs/davidsmodel) Más específicamente, la [colección en bloque](/help/edge/developer/block-collection.md) contiene un amplio conjunto de modelos de contenido para casos de uso específicos de patrones de interfaz de usuario comunes.
+Al principio de cada proyecto, se debe considerar cuidadosamente un modelo de contenido para cada bloque. Debe ser independiente del origen de contenido y de la experiencia de creación para permitir a los autores cambiarlos o combinarlos al reutilizar implementaciones y estilos de bloque. Puede encontrar más información y sugerencias generales en [David&#39;s Model (toma 2).](https://www.aem.live/docs/davidsmodel) <!--More specifically, the [block collection](/help/edge/developer/block-collection.md) contains a extensive set of content models for specific use cases of common user interface patterns.-->
 
 Para la creación de formularios de AEM con Edge Delivery Services, esto plantea la cuestión de cómo servir un modelo de contenido semántico atractivo cuando la información se crea con formularios compuestos de varios campos en lugar de editar el marcado semántico en contexto como texto enriquecido.
 
@@ -351,7 +351,7 @@ Todo lo demás se procesará como texto sin formato.
 
 #### Contraer campo {#field-collapse}
 
-El colapso de campo es el mecanismo para combinar varios valores de campo en un único elemento semántico basado en una convención de nombres que utiliza los sufijos `Title`, `Type`, `MimeType`, `Alt`, y `Text` (con distinción de mayúsculas y minúsculas). Cualquier propiedad que termine con cualquiera de esos sufijos no se considerará un valor, sino un atributo de otra propiedad.
+La contracción de campo es el mecanismo para combinar varios valores de campo en un único elemento semántico basado en una convención de nomenclatura que utiliza los sufijos `Title`, `Type`, `MimeType`, `Alt` y `Text` (todos con distinción de mayúsculas y minúsculas). Cualquier propiedad que termine con cualquiera de esos sufijos no se considerará un valor, sino un atributo de otra propiedad.
 
 ##### Imágenes {#image-collapse}
 
@@ -399,7 +399,7 @@ El colapso de campo es el mecanismo para combinar varios valores de campo en un 
 
 >[!TAB Marcado]
 
-No `linkType`, o `linkType=default`
+No `linkType` ni `linkType=default`
 
 ```html
 <a href="https://www.adobe.com" title="Navigate to adobe.com">adobe.com</a>
@@ -462,9 +462,9 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 
 Mientras que la [contracción de campo](#field-collapse) consiste en combinar varias propiedades en un único elemento semántico, la agrupación de elementos consiste en concatenar varios elementos semánticos en una sola celda. Esto resulta especialmente útil en casos de uso en los que el autor tuviera una restricción en cuanto al tipo y al número de elementos que puede crear.
 
-Por ejemplo, un componente teaser puede permitir al autor crear únicamente un subtítulo, un título y una descripción de párrafo único combinados con un máximo de dos botones de llamada a la acción. Al agrupar estos elementos, se obtiene un marcado semántico al que se puede dar estilo sin tener que realizar ninguna otra acción.
+Por ejemplo, el componente de teaser puede permitir al autor crear solo un subtítulo, un título y una descripción de párrafo único combinados con un máximo de dos botones de llamada a la acción. Al agrupar estos elementos, se obtiene un marcado semántico al que se puede dar estilo sin tener que realizar ninguna otra acción.
 
-La agrupación de elementos utiliza una convención de nombres, en la que el nombre del grupo se separa de cada propiedad del grupo mediante un guion bajo. La contracción de campos de las propiedades de un grupo funciona como se describió anteriormente.
+La agrupación de elementos utiliza una convención de nomenclatura, en la que el nombre del grupo se separa de cada propiedad del grupo mediante un guion bajo. La contracción de campos de las propiedades de un grupo funciona como se describió anteriormente.
 
 >[!BEGINTABS]
 
@@ -609,7 +609,7 @@ Es posible definir metadatos en función de una ruta o un patrón de ruta de una
 
 Para crear dicha tabla, cree una página y utilice la plantilla Metadatos en la consola Sitios.
 
-En las propiedades de página de la hoja de cálculo, defina los campos de metadatos que necesite junto con la dirección URL. A continuación, agregue metadatos por ruta de página o patrón de ruta de página.
+En las propiedades de la página de la hoja de cálculo, defina los campos de metadatos que necesite junto con la dirección URL. A continuación, agregue metadatos por ruta de página o patrón de ruta de página.
 
 Asegúrese de que la hoja de cálculo también se añada a la asignación de ruta antes de publicarla.
 
@@ -624,13 +624,13 @@ Asegúrese de que la hoja de cálculo también se añada a la asignación de rut
 
 ### Propiedades de página {#page-properties}
 
-AEM Muchas de las propiedades de página predeterminadas disponibles en los documentos se asignan a los metadatos de página correspondientes de un documento. Esto incluye, por ejemplo `title`, `description`, `robots`, `canonical url` o `keywords`. AEM También hay algunas propiedades específicas de la:
+Muchas de las propiedades de página predeterminadas disponibles en AEM se asignan a los metadatos de página correspondientes de un documento. Esto incluye, por ejemplo, `title`, `description`, `robots`, `canonical url` o `keywords`. También hay disponibles algunas propiedades específicas de AEM, como las siguientes:
 
-* `cq:lastModified` as `modified-time` en formato ISO8601
+* `cq:lastModified` como `modified-time` en formato ISO8601
 * La última vez que se publicó el documento como `published-time` en formato ISO8601
-* `cq:tags` as `cq-tags` como lista separada por comas de los ID de etiqueta.
+* `cq:tags` como `cq-tags` como lista separada por comas de los ID de etiqueta.
 
-También es posible definir un modelo de componente para los metadatos de página personalizados, que se pondrán a disposición del autor como una pestaña del cuadro de diálogo de propiedades de página de AEM Sites.
+También es posible definir un modelo de componente para los metadatos de página personalizada, que se pondrán a disposición del autor como pestaña del cuadro de diálogo de propiedades de la página de AEM Sites.
 
 Para ello, cree un modelo de componentes con el ID `page-metadata`.
 
