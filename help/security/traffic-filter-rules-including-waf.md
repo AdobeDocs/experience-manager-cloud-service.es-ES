@@ -2,8 +2,8 @@
 title: Reglas de filtro de tráfico, incluidas reglas WAF
 description: Configuración de las reglas de filtro de tráfico, incluidas las reglas de cortafuegos de aplicación web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 38a16251372ee6ba77687f524e5057e00f16f58e
-workflow-type: ht
+source-git-commit: 3a79de1cccdec1de4902b234dac3120efefdbce8
+workflow-type: tm+mt
 source-wordcount: '3669'
 ht-degree: 100%
 
@@ -696,7 +696,7 @@ data:
           - reqProperty: path
             matches: "^/bin/.*"
       action:
-        type: log
+        type: allow
         wafFlags:
           - CMDEXE
 ```
