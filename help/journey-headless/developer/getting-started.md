@@ -2,10 +2,10 @@
 title: Introducción al contenido sin encabezado de AEM as a Cloud Service
 description: En esta parte del Recorrido para desarrolladores de contenido sin encabezado de AEM, obtenga información sobre los requisitos previos.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: 998651bf0529d6a8aab0cd340a1c171974c405f6
 workflow-type: tm+mt
 source-wordcount: '3057'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -95,7 +95,7 @@ Para garantizar su comprensión de los conceptos sin encabezado, este Recorrido 
 
 Sin embargo, hay que tener en cuenta las posibilidades híbridas adicionales que se abren una vez que entienda las características sin encabezado de AEM. Para su información, estos casos se detallan a continuación. Al final del recorrido, se le presentan estos conceptos con más detalle en caso de que su proyecto requiera flexibilidad.
 
-### Ya tiene un consumo externo de contenido sin encabezado, como una aplicación de página única (SPA). {#already-have-a-spa}
+### SPA Ya tiene un consumo externo de contenido sin encabezado, como una aplicación de una sola página (). {#already-have-a-spa}
 
 Supongamos que su requisito básico es, como mínimo, entregar contenido de AEM a un servicio externo existente.
 
