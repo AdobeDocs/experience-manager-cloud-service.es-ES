@@ -2,7 +2,7 @@
 title: AEM Información general del editor universal para desarrolladores
 description: AEM Si usted es un desarrollador de interesado en cómo funciona el editor universal y cómo utilizarlo en su proyecto, este documento le ofrece una introducción completa al instrumentarlo para que trabaje con el editor universal.
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '3139'
 ht-degree: 0%
@@ -593,3 +593,4 @@ Consulte los siguientes documentos para obtener más información y detalles sob
 * Ver el documento [Arquitectura del editor universal](/help/implementing/universal-editor/architecture.md#service) para obtener más información sobre la estructura del editor universal.
 * Ver el documento [AEM Desarrollo local con el editor universal de la aplicación](/help/implementing/universal-editor/local-dev.md) para obtener más información sobre cómo conectarse a una versión autoalojada del editor universal.
 * Ver el documento [Uso de la fusión de recursos de Sling en Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/sling-resource-merger.md) para obtener más información sobre la superposición de nodos.
+

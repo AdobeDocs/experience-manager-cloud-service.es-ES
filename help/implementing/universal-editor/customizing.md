@@ -2,7 +2,7 @@
 title: Personalización de la experiencia de creación del editor universal
 description: Obtenga información acerca de los diferentes puntos de extensión y otras funciones que le permiten personalizar la interfaz de usuario del editor universal para satisfacer las necesidades de los autores de contenido.
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
-source-git-commit: f04ab32093371ff425c4e196872738867d9ed528
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -96,3 +96,4 @@ Las condiciones se pueden definir mediante [Esquema JsonLogic.](https://jsonlogi
 #### Condición verdadera {#true}
 
 ![Campo de texto mostrado](assets/shown.png)
+

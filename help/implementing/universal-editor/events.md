@@ -1,13 +1,13 @@
 ---
 title: Eventos del editor universal
 description: Obtenga información sobre los diferentes eventos que envía el editor universal y que puede utilizar para reaccionar ante los cambios de contenido o de interfaz de usuario en la aplicación remota.
-source-git-commit: e92a0be2213e3d5793fd077bd1968852336cc98b
+exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 2%
 
 ---
-
 
 # Eventos del editor universal {#events}
 
@@ -279,3 +279,4 @@ La carga útil está vacía para este evento.
 ## Recursos adicionales {#additional-resources}
 
 * [Llamadas del editor universal](/help/implementing/universal-editor/calls.md)
+
