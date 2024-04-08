@@ -2,10 +2,10 @@
 title: Replicación
 description: AEM Obtenga información acerca de la distribución y la solución de problemas de replicación en as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 9ab6ac5588b6ca5135e3635cc886ec51207e89d7
 workflow-type: tm+mt
 source-wordcount: '1312'
-ht-degree: 39%
+ht-degree: 37%
 
 ---
 
@@ -196,14 +196,17 @@ El tamaño del contenido transmitido por llamada de replicación no debe superar
 
 Para solucionar problemas de replicación, vaya a las colas de replicación en la interfaz de usuario web del servicio de autor de AEM:
 
-1. AEM En el menú Inicio de la, vaya a **Herramientas > Implementación > Distribución**
-2. Seleccione la tarjeta **publicar**
+1. AEM En el menú Inicio de la, vaya a **Herramientas** > **Implementación** > **Distribución**
+1. Seleccione la tarjeta **publicar**
+
    ![Estado](assets/publish-status.png "Estado")
-3. Comprobar el estado de la cola que debería ser verde
-4. Puede probar la conexión con el servicio de replicación
-5. Seleccione la pestaña **Registros** que muestra el historial de publicaciones de contenido
+
+1. Comprobar el estado de la cola que debería ser verde
+1. Puede probar la conexión con el servicio de replicación
+1. Seleccione la pestaña **Registros** que muestra el historial de publicaciones de contenido
 
 ![Registros](assets/publish-logs.png "Registros")
 
-Si no se pudo publicar el contenido, toda la publicación se revierte desde el servicio de publicación de AEM.
+AEM Si no se pudo publicar el contenido, toda la publicación se revierte desde el servicio de publicación de la publicación de la.
+
 En ese caso, la cola principal editable muestra un estado rojo y debe revisarse para identificar qué elementos provocaron la cancelación de la publicación. Al hacer clic en esa cola, se muestran los elementos pendientes, desde los cuales se puede borrar un solo elemento o todos los elementos si es necesario.
