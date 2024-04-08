@@ -2,7 +2,7 @@
 title: Atributos y tipos de elementos
 description: Obtenga información sobre los atributos de datos y los tipos de elementos que requiere el Editor universal.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: 36be262a7949bc66f97f5483ff463d755f5f78e5
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 75%
@@ -32,7 +32,7 @@ Para que el editor universal pueda editar una aplicación, debe instrumentarse c
 | `data-aue-filter` | Define qué referencias se pueden utilizar |
 | `data-aue-label` | Define una etiqueta personalizada para un elemento seleccionable que se muestra en el editor. <br>Si `data-aue-model` está configurado, la etiqueta se recupera mediante el modelo |
 | `data-aue-model` | Define un modelo que se usa para la edición basada en formularios en el carril de propiedades |
-| `data-aue-behavior` | Define el [comportamiento de una instrumentación,](#behaviors) por ejemplo, el texto o la imagen independientes también pueden imitar un componente para hacerlo movible o eliminable |
+| `data-aue-behavior` | Define el [comportamiento de una instrumentación](#behaviors)Por ejemplo, el texto o la imagen independientes también pueden imitar un componente para hacerlo móvil o eliminable |
 
 ## Tipos de elementos {#item-types}
 
@@ -67,4 +67,3 @@ Para obtener más información acerca del editor universal, consulte estos docum
 * [Introducción al editor universal en AEM](getting-started.md): obtenga información sobre cómo acceder al editor universal y cómo instrumentar la primera aplicación de AEM para utilizarlo.
 * [Arquitectura del editor universal](architecture.md): obtenga información acerca de la arquitectura del editor universal y cómo fluyen los datos entre sus servicios y capas.
 * [Autenticación del editor universal](authentication.md): obtenga información sobre cómo se autentica el editor universal.
-
