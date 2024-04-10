@@ -2,10 +2,10 @@
 title: Administración de entornos
 description: Obtenga información sobre los tipos de entornos que puede crear y cómo para su proyecto de Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: 8f7ddeea27df8e765a7c83c74af25961748ee26d
 workflow-type: tm+mt
-source-wordcount: '2614'
-ht-degree: 81%
+source-wordcount: '2660'
+ht-degree: 77%
 
 ---
 
@@ -209,9 +209,9 @@ En cualquier caso, [el tráfico siempre se dirige a la otra región más cercana
 
 ## Actualizar entornos {#updating-dev-environment}
 
-Como servicio nativo de la nube, las actualizaciones de los entornos de ensayo y producción dentro de los programas de producción se administran automáticamente mediante Adobe.
+Como servicio nativo de la nube, las actualizaciones de los entornos de desarrollo, ensayo y producción dentro de los programas de producción se administran automáticamente mediante el Adobe.
 
-Sin embargo, las actualizaciones de los entornos de desarrollo, así como de los entornos de los programas de zonas protegidas, se administran dentro de los programas. Cuando un entorno de este tipo no ejecuta la última versión de AEM disponible públicamente, el estado de la tarjeta **Entornos** en la pantalla **Información general** del programa muestra **Actualización disponible**.
+Sin embargo, las actualizaciones de los entornos de los programas de zonas protegidas se administran dentro de los programas. Cuando un entorno de este tipo no ejecuta la última versión de AEM disponible públicamente, el estado de la tarjeta **Entornos** en la pantalla **Información general** del programa muestra **Actualización disponible**.
 
 ![Estado de actualización del entorno](assets/environ-update.png)
 
@@ -228,7 +228,10 @@ Por lo tanto, el proceso de actualización consta de dos pasos:
 
 ### Actualizar entornos {#updating-your-environments}
 
-La opción **Actualizar** está disponible en la tarjeta **Entornos** para entornos de desarrollo en programas de zona protegida al hacer clic en el botón de los tres puntos del entorno.
+>[!NOTE]
+> A partir de 2024, las instancias de desarrollo y algunos programas de zonas protegidas ya se actualizan automáticamente, por lo que no es necesario administrar las actualizaciones para ellos manualmente. Como resultado de esta transición, es posible que la opción Actualizar el entorno manualmente para instancias de desarrollo no esté disponible para _algunos_ de sus programas.
+
+El **Actualizar** La opción está disponible en **Entornos** para algunos entornos de desarrollo y entornos de programas de zona protegida al hacer clic en el botón de los tres puntos del entorno.
 
 ![Opción Actualizar de la tarjeta Entornos](assets/environ-update2.png)
 
@@ -246,7 +249,7 @@ El comportamiento de la opción **Actualizar** varía según la configuración y
 
 * Si la canalización ya se ha actualizado, la opción **Actualizar** solicitará al usuario que ejecute la canalización.
 * Si la canalización ya se está actualizando, la opción **Actualizar** informará al usuario de que ya se está ejecutando una actualización.
-* Si no existe una canalización adecuada, la opción **Actualizar** solicitará al usuario que cree una.
+* Si no existe una canalización adecuada, la variable **Actualizar** pide al usuario que cree una.
 
 ## Eliminar entornos de desarrollo {#deleting-environment}
 
