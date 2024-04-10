@@ -3,10 +3,10 @@ title: ¿Cómo puedo añadir compatibilidad con nuevas configuraciones regionale
 description: Aprenda a agregar nuevas configuraciones regionales a un formulario adaptable.
 feature: Adaptive Forms, Core Components
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
+source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
+workflow-type: tm+mt
 source-wordcount: '1333'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 | Componentes de base | [Haga clic aquí](supporting-new-language-localization.md) |
 | Componentes principales | Este artículo |
 
-<span class="preview"> La función de compatibilidad de idioma de derecha a izquierda está disponible en el programa de primeros usuarios. Puede escribir a aem-forms-early-adopter-program@adobe.com desde su ID de correo electrónico oficial para unirse al programa de primeros usuarios y solicitar acceso a esta capacidad. </span>
+<span class="preview"> La función de compatibilidad de idioma de derecha a izquierda está disponible en el programa de primeros usuarios. Puede escribir a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez y solicitar acceso a esta capacidad. </span>
 
 AEM Forms admite de forma predeterminada las configuraciones regionales de inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués brasileño (pt-BR), chino (zh-CN), chino taiwanés (zh-TW) y coreano (ko-KR). También puede agregar compatibilidad con más configuraciones regionales, como Hindi (hi_IN). También puede presentar formularios adaptables en un idioma de derecha a izquierda (RTL) como árabe, persa y urdu si agrega estas configuraciones regionales.
 
