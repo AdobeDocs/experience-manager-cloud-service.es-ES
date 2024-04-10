@@ -3,10 +3,10 @@ title: Actualizaciones de la versión de AEM
 description: Descubra cómo Adobe Experience Manager AEM () as a Cloud Service utiliza la integración y la entrega continuas (CI/CD) para mantener sus proyectos en la última versión.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 9bfea65c07da5da044df8f698e409eab5c4320fb
+source-git-commit: 72fc611e006f80fdda672f08b0b795432f5899e2
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 3%
+source-wordcount: '970'
+ht-degree: 1%
 
 ---
 
@@ -19,23 +19,36 @@ Descubra cómo Adobe Experience Manager AEM () as a Cloud Service utiliza la int
 
 AEM as a Cloud Service AEM utiliza la integración y la entrega continuas (CI/CD) para garantizar que sus proyectos se encuentren en la versión de la aplicación más actual de la. Este proceso actualiza sin problemas las instancias de producción, ensayo y desarrollo sin causar ninguna interrupción a los usuarios.
 
-AEM Antes de que las instancias se actualicen automáticamente, se publica una nueva versión de mantenimiento de la con 3-5 días de antelación. Durante este período, puede, si lo desea, [déclencheur de actualizaciones manuales para las instancias de desarrollo](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment). Una vez transcurrido este tiempo, las actualizaciones de versión se aplican automáticamente primero a los entornos de desarrollo. Si la actualización se realiza correctamente, el proceso de actualización continúa con las instancias de fase y producción. Las instancias de desarrollo y ensayo actúan como una puerta de calidad automatizada, donde las pruebas escritas a medida se ejecutan antes de que la actualización se aplique en el entorno de producción.
+>[!NOTE]
+> Como las instancias de desarrollo ya se actualizan automáticamente, es posible que las actualizaciones manuales de las instancias de desarrollo no estén disponibles para _algunos_ de sus programas. Esta función se está migrando a actualizaciones automáticas.
+
+AEM Antes de que las instancias se actualicen automáticamente, se publica una nueva versión de mantenimiento de la con 3-5 días de antelación. Durante este periodo, la instancia de desarrollo puede actualizarse automáticamente o, si está disponible, puede [Almacene en déclencheur la actualización para las instancias de desarrollo](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment). Las actualizaciones de versión se aplican automáticamente primero a los entornos de desarrollo. Si la actualización se realiza correctamente, el proceso de actualización continúa con las instancias de fase y producción. Las instancias de desarrollo y ensayo actúan como una puerta de calidad automatizada, donde las pruebas escritas a medida se ejecutan antes de que la actualización se aplique en el entorno de producción.
+
+### NIMU (actualizaciones de mantenimiento no intrusivas) {#nimu}
+
+Las actualizaciones de mantenimiento no intrusivas son actualizaciones automáticas que se aplican sin involucrar a las canalizaciones del cliente.
+AEM A través de NIMU, el cliente puede utilizar la canalización en cualquier momento, incluso si se ha programado o está en curso una actualización de la versión de la aplicación y las actualizaciones de mantenimiento ya no aparecerán en el historial de ejecución de la canalización del cliente, lo que facilita el seguimiento del historial de implementaciones de código.
+
+#### Actualizar actividades
+
+AEM La versión actual de la interfaz de usuario aún se puede comprobar para cada entorno, como antes, mediante el panel Entornos de la interfaz de usuario de Cloud Manager. Las actualizaciones de mantenimiento no intrusivas utilizan las mismas puertas de calidad que se utilizan en la canalización, incluidas las pruebas escritas por el cliente.
+Se enviará una notificación de la interfaz de usuario de Cloud Manager cada vez que se aplique una actualización de mantenimiento no intrusiva a los entornos del programa. Puede configurarlo para que también se envíe a su correo electrónico.
 
 >[!NOTE]
 >
-> Nota: Las actualizaciones automáticas para entornos de desarrollo se habilitan progresivamente en 2023 para todos los clientes. Si los entornos de desarrollo no se actualizan automáticamente, puede utilizar actualizaciones manuales para mantenerlos sincronizados con los entornos de ensayo y producción.
+> Nota: Las actualizaciones de mantenimiento no intrusivas se habilitarán progresivamente para todos los clientes en 2024.
 
 
 ## Tipo de actualizaciones {#update-types}
 
 Existen dos tipos de actualizaciones versión de AEM:
 
-* [**Actualizaciones de mantenimiento de AEM**](/help/release-notes/maintenance/latest.md)
+* [AEM **Actualizaciones de mantenimiento**](/help/release-notes/maintenance/latest.md)
 
    * Se utilizan principalmente con fines de mantenimiento, incluidas las últimas correcciones de errores y actualizaciones de seguridad.
    * Tiene un impacto mínimo porque los cambios se aplican con regularidad.
 
-* [**Nuevas actualizaciones de funciones**](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [AEM **Activación de funciones**](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
    * Se publican con un calendario mensual predecible.
 
