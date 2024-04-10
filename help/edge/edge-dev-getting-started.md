@@ -4,9 +4,9 @@ description: Esta guía le ayudará a ponerse en marcha con un nuevo sitio de Ad
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '989'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ AEM ofrece dos editores de contenido diferentes y la elección de cuál utilizar
 
 Esta guía se centra en los proyectos AEM en Edge Delivery Services que utilizan el Editor universal. Consulte el documento [Desarrollo para Edge Delivery Services](/help/edge/developing.md) para obtener más información sobre cómo elegir el editor adecuado y la migración de los AEM sites existentes a los Edge Delivery Services.
 
-## AEM Introducción a la creación y los Edge Delivery Services de {#getting-started}
+## Introducción a la creación con AEM y Edge Delivery Services {#getting-started}
 
 Una vez que haya completado [los requisitos previos](#prerequisites) y haya hecho [la elección de utilizar el Editor universal,](#editor-choice) puede empezar con su propio proyecto.
 
@@ -165,6 +165,6 @@ Una vez que haya terminado de editar el nuevo sitio con el editor universal, pue
 
 ## Pasos siguientes {#next-steps}
 
-AEM Ahora que tiene un proyecto de creación de proyectos de Edge Delivery Services de trabajo en el que trabaja en la creación de proyectos de trabajo en el que puede empezar a crear y aplicar estilos a sus propios bloques.
+Ahora que tiene un proyecto de creación de Edge Delivery Services de AEM en el que trabajar, puede empezar a crear y aplicar estilos a sus propios bloques.
 
 Consulte la guía [Creación de bloques instrumentados para su uso con el editor universal](/help/edge/create-block.md) para obtener más información.

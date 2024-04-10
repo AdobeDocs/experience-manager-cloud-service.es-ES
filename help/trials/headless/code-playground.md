@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '971'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Al hacer clic en el botón **Iniciar la aplicación CodePen de ejemplo** de la v
           ...
 ```
 
-Si aparece un error, compruebe la consola del explorador para obtener más detalles o póngase en contacto con [por correo electrónico](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request).
+Si ve un error en su lugar, consulte la consola del explorador para obtener más información o póngase en contacto [por correo electrónico](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request).
 
 Ahora que conoce un poco sobre CodePen, a continuación configurará la aplicación para recuperar datos de la consulta persistente que creó en un módulo anterior.
 
@@ -92,7 +92,7 @@ En la línea 25, usted indica de qué consulta persistente de GraphQL debe recup
    persistedQueryName = 'your-project/adventure-list';
    ```
 
-1. Una vez realizado este cambio, la aplicación debería actualizarse automáticamente e imprimir la respuesta JSON sin procesar de la consulta persistente en el div `#output`. Si aparece un mensaje de error, compruebe la consola para obtener más información. Extender la mano [por correo electrónico](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request) si sigue teniendo problemas con este paso.
+1. Una vez realizado este cambio, la aplicación debería actualizarse automáticamente e imprimir la respuesta JSON sin procesar de la consulta persistente en el div `#output`. Si aparece un mensaje de error, compruebe la consola para obtener más información. Póngase en contacto [por correo electrónico](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request) si sigue teniendo problemas con este paso.
 
 1. ¿Este JSON contiene las propiedades exactas que necesita la aplicación? Si no es así, vuelva a la guía de aprendizaje [Extraer contenido mediante la API de GraphQL](https://experience.adobe.com/experiencemanager/learn/extract_content_using_graphql) para realizar cambios. No olvide guardar y publicar la consulta una vez que haya terminado.
 

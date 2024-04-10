@@ -3,7 +3,7 @@ title: Información sobre los conceptos básicos del modelado de contenido
 description: Conozca los aspectos básicos del modelado de contenido para su de contenido sin encabezado de CMS utilizando fragmentos de contenido.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '900'
 ht-degree: 100%
 

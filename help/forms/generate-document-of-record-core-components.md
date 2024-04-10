@@ -4,9 +4,9 @@ description: Obtén información sobre cómo generar una plantilla para un docum
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3131'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

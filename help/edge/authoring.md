@@ -4,9 +4,9 @@ description: Descubra cómo funciona la creación de contenido con los Edge Deli
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '491'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -14,14 +14,14 @@ ht-degree: 90%
 
 Con Edge Delivery Services, la creación es fácil, rápida y flexible.  Tiene dos opciones para crear contenido para Edge Delivery Services:
 
-* [Creación basada en documentos](#document-based) - Como Microsoft Word o Google Docs
-* [Editor universal](#universal-editor) - Una interfaz de usuario moderna para crear contenido dentro de AEM
+* [Creación basada en documentos](#document-based), como Microsoft Word o Google Docs
+* [Editor universal](#universal-editor). Una interfaz de usuario moderna para crear contenido dentro de AEM
 
 ## Creación basada en documentos  {#document-based}
 
-En el caso de la creación basada en documentos , puede trabajar con una variedad de fuentes, como Microsoft Word y Google Docs. Los documentos de estas fuentes se convierten en páginas del sitio web. Encabezados, listas, imágenes, elementos de fuente, vídeos se pueden transferir desde la fuente inicial a su sitio web. Puede añadir metadatos con fines de SEO o utilizar bloques para trabajar con contenido estructurado y añadir funcionalidad.
+En el caso de la creación basada en documentos, puede trabajar con una variedad de fuentes, como Microsoft Word y Google Docs. Los documentos de estas fuentes se convierten en páginas del sitio web. Encabezados, listas, imágenes, elementos de fuente, vídeos se pueden transferir desde la fuente inicial a su sitio web. Puede añadir metadatos con fines de SEO o utilizar bloques para trabajar con contenido estructurado y añadir funcionalidad.
 
-Para obtener más información sobre la creación basada en documentos, consulte [este documento se encuentra en la documentación de Edge Delivery Services.](/help/edge/docs/authoring.md)
+Para obtener más información sobre la Creación basada en documentos, consulte [este documento en la documentación de Edge Delivery Services.](/help/edge/docs/authoring.md)
 
 ## Creación del Editor universal {#universal-editor}
 

@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo generar una plantilla para un docu
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 source-git-commit: 51d72edcde18503e9e4d83eaf51e28658d9ee5e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4170'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

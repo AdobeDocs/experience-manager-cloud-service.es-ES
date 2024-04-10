@@ -1,15 +1,15 @@
 ---
-title: 'De hojas de cálculo a Forms: dominación de fragmentos de formulario para Edge Delivery Forms'
-description: Cree formularios potentes más rápido mediante fragmentos de formulario
+title: 'De hojas de cálculo a formularios: perfeccione el uso de los fragmentos de formulario para Edge Delivery Forms'
+description: Elabore formularios potentes más rápido mediante fragmentos de formulario
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: f2752673dcaa0762bb55719cee23765aa8ecde96
-workflow-type: tm+mt
+exl-id: ba8c7220-55b3-4731-9e40-ce0c360c508d
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
+workflow-type: ht
 source-wordcount: '27'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-
-# Dominio de fragmentos de formulario para el servicio de entrega de AEM Forms Edge
+# Perfeccionamiento de los fragmentos de formulario de Edge Delivery Services de AEM Forms

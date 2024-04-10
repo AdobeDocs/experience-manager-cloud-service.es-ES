@@ -4,9 +4,9 @@ description: Aprenda a configurar las páginas de agradecimiento y la redirecci�
 feature: Edge Delivery Services
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
 source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '195'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
@@ -16,16 +16,16 @@ Una vez que un usuario envía un formulario, es crucial proporcionar una experie
 
 ## Configuración de un mensaje de agradecimiento personalizado
 
-El comportamiento predeterminado del bloque de Forms adaptable es mostrar el siguiente mensaje de agradecimiento al enviarlo. El mensaje se muestra en la parte superior del formulario.
+El comportamiento predeterminado del bloque de Formularios adaptables es mostrar el siguiente mensaje de agradecimiento al enviarlo. El mensaje se muestra en la parte superior del formulario.
 
 ![mensaje de agradecimiento predeterminado](/help/edge/assets/thank-you-message.png)
 
 
-Siga los siguientes pasos para configurar un mensaje de agradecimiento personalizado para su bloque de Forms adaptable:
+Siga los siguientes pasos para configurar un mensaje de agradecimiento personalizado para su bloque de Formularios adaptables:
 
-1. AEM Acceda a su proyecto de en su equipo local o repositorio de GitHub.
+1. Acceda a su proyecto de AEM en su equipo local o repositorio de GitHub.
 
-1. Vaya a [AEM Carpeta de proyecto de]Archivo \blocks\form\submit.js para editar.
+1. Vaya al archivo [Carpeta de proyecto de AEM]\blocks\form\submit.js para editarlo.
 
 1. Busque el siguiente código
 
@@ -41,7 +41,7 @@ Siga los siguientes pasos para configurar un mensaje de agradecimiento personali
    ```
 
 
-1. Guarde el archivo. Transfiera el archivo actualizado a su repositorio de GitHub. Ahora, al enviar un formulario, se muestra el mensaje de agradecimiento personalizado. Por ejemplo,
+1. Guarde el archivo. Confirme el archivo actualizado en su repositorio GitHub. Ahora, al enviar un formulario, se muestra el mensaje de agradecimiento personalizado. Por ejemplo,
 
 ![Mensaje de agradecimiento personalizado](/help/edge/assets/custom-thank-you-message.png)
 

@@ -4,9 +4,9 @@ description: Descubra cómo funciona la publicación de contenido con Edge Deliv
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
 source-git-commit: 3ee1ba83518c3d4fba59b0c98b31e5c63a2eb6ab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '295'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -31,14 +31,14 @@ El flujo de información durante la publicación es el siguiente. Una vez que el
 ![El flujo de información durante la publicación desde AEM hasta Edge Delivery Services](assets/publishing-flow.png)
 
 1. El autor del contenido publica contenido de AEM en el editor universal.
-1. Un evento de publicación se inserta en la cola de canalización de Adobe.
-1. El servicio de publicación de Edge Delivery Services reenvía los eventos relevantes a la API de administración de Edge Delivery Services.
-1. Edge Delivery extrae e ingiere el HTML AEM semántico del autor de la.
+1. Un evento de publicación se envía a la cola de canalización de Adobe.
+1. El servicio de publicación de Edge Delivery reenvía los eventos relevantes a la API de administrador de Edge Delivery.
+1. Edge Delivery extrae e introduce HTML semántico del autor de AEM.
 1. AEM se actualiza con el estado de la publicación.
 
 >[!NOTE]
 >
->De forma predeterminada, la API de administración de Edge Delivery Services no está protegida y se puede utilizar para publicar o cancelar la publicación de documentos sin autenticación. Para configurar la autenticación para la API de administrador como se documenta en [Configurar la autenticación para autores](https://www.aem.live/docs/authentication-setup-authoring)Sin embargo, el proyecto debe estar aprovisionado con una API_KEY, que concede acceso al servicio de publicación. [Póngase en contacto con el equipo de Adobe en Slack](/help/edge/docs/slack.md) para obtener orientación.
+>De forma predeterminada, la API de administrador de Edge Delivery Services no está protegida y se puede utilizar para publicar o cancelar la publicación de documentos sin autenticación. Para configurar la autenticación para la API de administrador tal como se documenta en [Configuración de la autenticación para autores](https://www.aem.live/docs/authentication-setup-authoring), el proyecto debe estar aprovisionado con una API_KEY, que otorga acceso al servicio de publicación. [Póngase en contacto con el equipo de Adobe en Slack](/help/edge/docs/slack.md) para obtener ayuda.
 
 ## Introducción {#how-to-get-started}
 

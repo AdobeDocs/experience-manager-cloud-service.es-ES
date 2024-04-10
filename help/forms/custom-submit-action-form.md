@@ -6,9 +6,9 @@ role: User
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
 source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1669'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -97,7 +97,7 @@ Una acción de envío es sling:Folder, que incluye lo siguiente:
 
 * **addfields.jsp**: Este script aporta los campos de acción que se añaden al archivo HTML durante la representación. Utilice este script para agregar los parámetros de entrada ocultos necesarios durante el envío en el script post.POST.jsp.
 * **dialog.xml**: Este script es similar al cuadro de diálogo Componente CQ. Aporta información de configuración que el autor personaliza. Los campos se muestran en la pestaña Acciones de envío, del cuadro de diálogo Editar formulario adaptable, al seleccionar la acción de envío.
-* **post.POST.jsp**: El servlet de envío utiliza este script con los datos que envía y los datos adicionales de las secciones anteriores. Cualquier mención de la ejecución de una acción en esta página implica la ejecución del script post.POST.jsp. Para registrar la acción de envío con el Forms adaptable para que se muestre en el cuadro de diálogo Editar formulario adaptable, agregue estas propiedades al `sling:Folder`:
+* **post.POST.jsp**: El servlet de envío utiliza este script con los datos que envía y los datos adicionales de las secciones anteriores. Cualquier mención de la ejecución de una acción en esta página implica la ejecución del script post.POST.jsp. Para registrar la acción de envío con los formularios adaptables para que se muestre en el cuadro de diálogo Editar formulario adaptable, añada estas propiedades al `sling:Folder`:
 
    * **guideComponentType** de tipo cadena y valor **fd/af/components/guidesubmittype**
    * **guideDataModel** de tipo cadena que especifica el tipo de formulario adaptable para el que se aplica la acción de envío. <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** es compatible con formularios adaptables basados en XSD. **basic** es compatible con formularios adaptables que no utilizan XDP o XSD. Para mostrar la acción en varios tipos de formularios adaptables, añada las cadenas correspondientes. Separe cada cadena con una coma. Por ejemplo, para que una acción esté visible en <!--XFA- and -->formularios adaptables basados en XSD, especifique el valor como <!--**xfa** and--> **xsd**.

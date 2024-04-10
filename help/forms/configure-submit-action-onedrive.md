@@ -5,9 +5,9 @@ keywords: Integración de AEM Forms OneDrive, Conexión a Microsoft AEM OneDrive
 feature: Adaptive Forms, Core Components
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
 source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '587'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Algunas de las ventajas de la integración perfecta de AEM Forms y Microsoft® O
 * La accesibilidad entre dispositivos de OneDrive garantiza que los datos de formulario almacenados estén fácilmente disponibles en diferentes plataformas. Se puede acceder a los datos enviados, archivos adjuntos y documentos enviados desde equipos de escritorio, portátiles, tabletas y dispositivos móviles, lo que mejora la accesibilidad y la flexibilidad.
 * La integración de OneDrive con AEM Forms proporciona una solución fiable y escalable para un almacenamiento de datos eficiente. Todos los envíos de formularios adaptables, como archivos, archivos adjuntos y el documento de registro, se pueden guardar cómodamente en OneDrive, lo que garantiza que los datos estén organizados y sean accesibles.
 
-## Conectar OneDrive a un formulario adaptable
+## Conexión de OneDrive a un formulario adaptable
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
 

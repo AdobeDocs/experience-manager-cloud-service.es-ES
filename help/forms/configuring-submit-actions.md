@@ -4,7 +4,7 @@ description: Un formulario adaptable proporciona varias acciones de envío. Una 
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3901'
 ht-degree: 100%
 

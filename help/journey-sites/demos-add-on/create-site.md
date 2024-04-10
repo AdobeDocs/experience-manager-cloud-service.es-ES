@@ -3,7 +3,7 @@ title: Creación de un sitio de muestra
 description: Cree un sitio de demostración en AEM basado en una biblioteca de plantillas preconfiguradas.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '809'
 ht-degree: 100%
 

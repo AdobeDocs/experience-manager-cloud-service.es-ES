@@ -3,9 +3,9 @@ title: Introducción a la arquitectura de Adobe Experience Manager as a Cloud Se
 description: Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2713'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,8 @@ Para la administración de contenido, hay dos conjuntos principales de servicios
 proporciona una interfaz basada en web (con API asociadas) para la administración de contenido web. Esto funciona para ambos enfoques:
    * Encabezado: a través del editor de páginas y del editor universal
    * Sin encabezado: a través del editor de fragmentos de contenido
-* Nivel de creación basada en documentos: permite crear contenido mediante aplicaciones estándar, como:
+* Nivel de creación basado en documentos: 
+permite crear contenido mediante aplicaciones estándar, como:
    * Microsoft Word y Excel: a través de SharePoint
    * Documentos y hojas de Google: a través de Google Drive
 
@@ -92,7 +93,7 @@ Para la entrega de experiencias, al utilizar AEM Sites o AEM Forms, también hay
    * Ejecuta una granja de editores y distribuidores de contenido estándar de AEM, lo que permite el procesamiento dinámico de páginas web y contenido de API (por ejemplo, GraphQL) ensamblados con contenido publicado.
    * Se basa principalmente en la lógica de la aplicación del lado del servidor.
 * Nivel de publicación de Edge Delivery:
-   * AEM Permite el procesamiento dinámico de páginas web y contenido de API a partir de varias fuentes de contenido, como el nivel de creación de documentos basado en documentos o el nivel de creación de páginas basado en documentos.
+   * Permite el procesamiento dinámico de páginas web y contenido de API a partir de varias fuentes de contenido, como el nivel de Autor de AEM o el nivel de creación basado en documentos.
    * Se basa en la lógica de la aplicación del lado del cliente y está diseñado para obtener el máximo rendimiento.
 
 También están los servicios adyacentes clave:
@@ -159,9 +160,9 @@ El nivel de previsualización de AEM consta de un nodo único de AEM. Se utiliza
 
 Los Edge Delivery Services funcionan sobre una CDN e infraestructura sin servidor para ensamblar las páginas de la manera más eficiente. Cuando se solicita un recurso, la infraestructura sin servidor es responsable de convertir el contenido publicado en HTML semántico y sirve como origen para la CDN.
 
-La conversión a HTML AEM semántico se produce a partir del contenido publicado servido desde el nivel de creación de la publicación o desde el entorno de creación basado en documentos de la publicación de.
+La conversión a HTML semántico se produce a partir del contenido publicado servido desde el nivel de autor de AEM o desde el entorno de creación basado en documentos.
 
-El diagrama siguiente ilustra cómo se puede editar el contenido de Sites en Microsoft Word (creación basada en documentos ) y publicarlo en Edge Delivery. También muestra el método de publicación tradicional en AEM utilizando los diversos editores.
+En el diagrama siguiente se ilustra cómo se puede editar contenido de sitios en Microsoft Word (creación basada en documentos) y publicarlo en Edge Delivery. También muestra el método de publicación tradicional en AEM utilizando los diversos editores.
 
 ![AEM Sites as a Cloud Service: con Edge Delivery Services](assets/architecture-aem-edge-author-publish.png "AEM Sites as a Cloud Service: con Edge Delivery Services")
 

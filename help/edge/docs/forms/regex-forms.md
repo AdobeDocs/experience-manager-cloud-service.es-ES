@@ -1,18 +1,18 @@
 ---
-title: 'AEM Forms Edge Delivery Services: expresiones regex comúnmente utilizadas para validar campos de formulario'
-description: 'AEM Forms Edge Delivery Services: expresiones regex comúnmente utilizadas para validar campos de formulario'
+title: 'Edge Delivery Services de AEM Forms: expresiones regex comúnmente utilizadas para validar campos de formulario'
+description: 'Edge Delivery Services de AEM Forms: expresiones regex comúnmente utilizadas para validar campos de formulario'
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '191'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 
-# Expresiones regex más utilizadas para las validaciones
+# Expresiones regex comúnmente utilizadas para las validaciones
 
 Estas son algunas expresiones regulares que puede utilizar para mejorar la validación del formulario más allá de lo que ofrecen los exploradores modernos:
 
@@ -22,12 +22,12 @@ Estas son algunas expresiones regulares que puede utilizar para mejorar la valid
 ^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$
 ```
 
-Garantiza al menos 8 caracteres con:
+Garantiza al menos ocho caracteres con lo siguiente:
 
-* Letra minúscula (a-z)
-* Letra mayúscula (A-Z)
-* Dígito (0-9)
-* Carácter especial (@$!%*?&amp;)
+* Letras minúsculas (a-z)
+* Letras mayúsculas (A-Z)
+* Dígitos (0-9)
+* Caracteres especiales (@$!%*?&amp;)
 
 
 ## Dirección de correo electrónico
@@ -37,10 +37,10 @@ Garantiza al menos 8 caracteres con:
 ^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$
 ```
 
-Permite letras, números y caracteres especiales en el nombre de usuario y el nombre de dominio.
+Permite letras, números y caracteres especiales en el nombre de usuario y de dominio.
 
 
-## Número de teléfono (formato de EE. UU.)
+## Número de teléfono (formato de los EE. UU.)
 
 ```regex
 ^\(?([0-9]{3})\)?[-. ]([0-9]{3})[-. ]([0-9]{4})$
@@ -56,11 +56,11 @@ Valida los números de teléfono con el formato (XXX) XXX-XXXX.
 ^(http|https)://.*$
 ```
 
-Garantiza una dirección URL válida que empieza por http o https.
+Garantiza una dirección URL válida que empiece por HTTP o HTTPS.
 
 
 
-## Fecha (DD-MM-AAAA)
+## Fecha (AAAA-MM-DD)
 
 ```regex
 ^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$
@@ -69,7 +69,7 @@ Garantiza una dirección URL válida que empieza por http o https.
 Valida las fechas con el formato AAAA-MM-DD.
 
 
-## Tiempo (HH:MM)
+## Hora (HH:MM)
 
 ```regex
 ^([01][0-9]|2[0-3]):[0-5][0-9]$
@@ -78,13 +78,13 @@ Valida las fechas con el formato AAAA-MM-DD.
 Valida las horas con el formato HH:MM (formato de 24 horas).
 
 
-## Código postal (formato de EE. UU.)
+## Código postal (formato de los EE. UU.)
 
 ```regex
 ^\d{5}(?:[-\ ]\d{4})?$
 ```
 
-Valida códigos postales de 5 dígitos de EE. UU. con un guión opcional y una extensión de 4 dígitos.
+Valida códigos postales de cinco dígitos de los EE. UU. con un guion opcional y una extensión de cuatro dígitos.
 
 
 ## Nombre de usuario (alfanumérico y guion bajo)
@@ -102,7 +102,7 @@ Permite letras, números y guiones bajos.
 ^#[0-9a-fA-F]{6}$
 ```
 
-Valida los códigos de color hexadecimal de 6 dígitos. Por ejemplo, #FFFFFF.
+Valida los códigos de color hexadecimal de seis dígitos. Por ejemplo, #FFFFFF.
 
 
 ## Dirección IP
@@ -115,7 +115,7 @@ Valida direcciones IPv4.
 
 
 
-## Número de la Seguridad Social (formato de EE.UU.)
+## Número del Seguro Social (formato de los EE. UU.)
 
 ```regex
 ^\d{3}-\d{2}-\d{4}$
@@ -123,7 +123,7 @@ Valida direcciones IPv4.
 
 
 
-## Número de tarjeta de crédito
+## Número de la tarjeta de crédito
 
 ```regex
 ^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}$
@@ -133,7 +133,7 @@ Valida los números de teléfono con el formato (XXX) XXX-XXXX.
 
 
 
-## Número de teléfono (formato de EE. UU.):
+## Número de teléfono (formato de los EE. UU.)
 
 ```regex
 ^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$
