@@ -2,10 +2,10 @@
 title: Modelado de contenido para la creación de AEM con proyectos de Edge Delivery Services
 description: Aprenda cómo funciona el modelado de contenido para la creación de contenido de AEM con proyectos de Edge Delivery Services y cómo modelar su propio contenido.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
-source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
+source-git-commit: eef58b59cd528743702e3d436acec02dbba58211
 workflow-type: tm+mt
-source-wordcount: '2072'
-ht-degree: 99%
+source-wordcount: '2095'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Antes de empezar a modelar el contenido de su proyecto, asegúrese de leer prime
 
 * [Introducción: Tutorial para desarrolladores](/help/edge/developer/tutorial.md)
 * [Marcado, secciones, bloques y bloqueo automático](/help/edge/developer/markup-sections-blocks.md)
-  <!--* [Block Collection](/help/edge/developer/block-collection.md)-->
+* [Colección de bloqueos](/help/edge/developer/block-collection.md)
 
 Es esencial comprender estos conceptos para llegar a un modelo de contenido atractivo que funcione de manera independiente de la fuente de contenido. Este documento proporciona detalles sobre los mecanismos implementados específicamente para la creación de AEM.
 
@@ -323,7 +323,7 @@ En el siguiente ejemplo, un bloque acepta una lista de iconos vinculados como ta
 
 Con la [mecánica de la estructura de bloques explicada,](#block-structure) es posible crear un modelo de contenido que asigne el contenido persistido en el nivel de envío de uno a uno de AEM.
 
-Al principio de cada proyecto, se debe considerar cuidadosamente un modelo de contenido para cada bloque. Debe ser independiente del origen de contenido y de la experiencia de creación para permitir a los autores cambiarlos o combinarlos al reutilizar implementaciones y estilos de bloque. Puede encontrar más información y sugerencias generales en [David&#39;s Model (toma 2).](https://www.aem.live/docs/davidsmodel) <!--More specifically, the [block collection](/help/edge/developer/block-collection.md) contains a extensive set of content models for specific use cases of common user interface patterns.-->
+Al principio de cada proyecto, se debe considerar cuidadosamente un modelo de contenido para cada bloque. Debe ser independiente del origen de contenido y de la experiencia de creación para permitir a los autores cambiarlos o combinarlos al reutilizar implementaciones y estilos de bloque. Puede encontrar más información y sugerencias generales en el [Modelo de David (toma 2).](https://www.aem.live/docs/davidsmodel) Más específicamente, la [colección en bloque](/help/edge/developer/block-collection.md) contiene un amplio conjunto de modelos de contenido para casos de uso específicos de patrones de interfaz de usuario comunes.
 
 Para la creación de formularios de AEM con Edge Delivery Services, esto plantea la cuestión de cómo servir un modelo de contenido semántico atractivo cuando la información se crea con formularios compuestos de varios campos en lugar de editar el marcado semántico en contexto como texto enriquecido.
 
