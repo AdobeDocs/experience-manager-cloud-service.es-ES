@@ -6,24 +6,24 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
+source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
 workflow-type: tm+mt
 source-wordcount: '1255'
-ht-degree: 85%
+ht-degree: 98%
 
 ---
 
 # Envío de un formulario adaptable a Adobe Workfront Fusion
 
-<span class="preview"> La funcionalidad está disponible en el programa de primeros usuarios. Puede escribir a aem-forms-early-adopter-program@adobe.com desde su ID de correo electrónico oficial para unirse al programa de primeros usuarios y solicitar acceso a esta capacidad. </span>
+<span class="preview"> La funcionalidad está disponible en el programa de primeros usuarios. Puede escribir a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez y solicitar acceso a esta capacidad. </span>
 
 [Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=es) automatiza el proceso de repetición de las mismas tareas, como los flujos de trabajo de aprobación de documentos, el filtrado y la ordenación por correo electrónico, lo que le permite centrarse en nuevas tareas en lugar de en las recurrentes. Adobe Workfront Fusion incluye varios escenarios. Un escenario consiste en una serie de módulos que ejecutan la transferencia de datos entre aplicaciones y servicios web. En un escenario concreto, se añaden varios pasos (módulos) para automatizar una tarea.
 
 Por ejemplo, con Workfront Fusion puede crear un escenario para recopilar datos con formularios adaptables, procesar los datos y enviarlos a un almacén de datos para su archivo. Una vez configurado un escenario, Workfront Fusion ejecuta automáticamente las tareas cada vez que se rellena un formulario, actualizando el almacén de datos sin problemas.
 
-AEM Forms as a Cloud Service proporciona un conector OOTB para conectarse y enviar un formulario adaptable a Adobe Workfront Fusion. El envío de un formulario a Adobe Workfront Fusion puede ofrecer varias ventajas:
-* Permite la transferencia perfecta de datos de los envíos de formularios a los flujos de trabajo de Workfront Fusion.
-* Ayuda a automatizar varias tareas activadas por los envíos de formularios. Esto puede incluir el inicio de proyectos, la asignación de tareas a miembros específicos del equipo, el envío de notificaciones y la actualización de los estados de los proyectos, todo sin intervención manual.
+AEM Forms as a Cloud Service proporciona un conector predeterminado para conectarse y enviar un formulario adaptable a Adobe Workfront Fusion. El envío de un formulario a Adobe Workfront Fusion puede ofrecer varias ventajas:
+* Permitía la transferencia perfecta de datos de los envíos de formularios a los flujos de trabajo de Workfront Fusion.
+* Ayuda a automatizar varias tareas activadas por los envíos de formularios. Esto puede incluir el inicio de proyectos, la asignación de tareas a integrantes del equipo específicos, el envío de notificaciones y la actualización de los estados de los proyectos, todo sin intervención manual.
 * Todos los envíos de formularios capturados en Workfront Fusion proporcionan una única fuente fiable para la información relacionada con el proyecto
 
 
@@ -35,7 +35,7 @@ AEM Forms as a Cloud Service proporciona un conector OOTB para conectarse y envi
 
 Para establecer una conexión entre Workfront Fusion y AEM Forms, es necesario lo siguiente:
 
-* Un válido [Licencia de Workfront y Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html?lang=es).
+* Una [licencia de Workfront y Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html?lang=es) válida.
 * Un usuario de AEM con derecho de acceso a la aplicación [Consola de desarrollo](https://my.cloudmanager.adobe.com/) para [recuperar las credenciales del servicio](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=es).
 
 ## Integración de AEM Forms con Adobe Workfront Fusion
@@ -44,11 +44,11 @@ Para establecer una conexión entre Workfront Fusion y AEM Forms, es necesario l
 
 Para crear un escenario de Workfront, realice los siguientes pasos:
 
-1. [Creación de un escenario](#create-scenario)
-1. [Agregar un vínculo web a un escenario](#add-webhook)
-1. [Adición de una conexión a un vínculo web](#add-connection)
+1. [Crear un escenario](#create-scenario)
+1. [Añadir un vínculo web a un escenario](#add-webhook)
+1. [Añadir una conexión a un vínculo web](#add-connection)
 
-#### Creación de un escenario {#create-scenario}
+#### Crear un escenario {#create-scenario}
 
 Para crear un escenario:
 1. Inicie sesión en su [cuenta de Workfront Fusion](https://app-qa.workfrontfusion.com/).
@@ -133,7 +133,7 @@ Para añadir una conexión, haga lo siguiente:
 1. Seleccione la conexión creada **[!UICONTROL Conexión]** en la lista desplegable.
 1. Haga clic en **[!UICONTROL Guardar]**.
 1. Haga clic en **[!UICONTROL OK]** y guarde los cambios para el escenario.
-1. Para activar el escenario, haga clic en el botón de alternancia ENCENDIDO/APAGADO del editor de escenarios.
+1. Para activar el escenario, haga clic en el botón de alternancia ON/OFF del editor de escenarios.
 
 >[!NOTE]
 >
