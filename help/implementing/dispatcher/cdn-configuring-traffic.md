@@ -2,13 +2,13 @@
 title: Configuración del tráfico en la CDN
 description: Obtenga información sobre cómo configurar el tráfico de CDN declarando reglas y filtros en un archivo de configuración e implementándolos en CDN mediante la canalización de configuración de Cloud Manager.
 feature: Dispatcher
-source-git-commit: 0a0c9aa68b192e8e2a612f50a58ba5f9057c862d
+exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
+source-git-commit: 1e2d147aec53fc0f5be53571078ccebdda63c819
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '1109'
 ht-degree: 2%
 
 ---
-
 
 # Configuración del tráfico en la CDN {#cdn-configuring-cloud}
 
@@ -47,6 +47,16 @@ config/
 
 * En segundo lugar, la `cdn.yaml` El archivo de configuración debe contener metadatos y las reglas que se describen en los ejemplos siguientes.
 
+## Sintaxis {#configuration-syntax}
+
+Los tipos de reglas de las secciones siguientes comparten una sintaxis común.
+
+Se hace referencia a una regla mediante un nombre, una cláusula when condicional y acciones.
+
+La cláusula when determina si se evaluará una regla en función de propiedades como dominio, ruta, cadenas de consulta, encabezados y cookies. La sintaxis es la misma en todos los tipos de reglas; para obtener más información, consulte la [Sección Estructura de condición](/help/security/traffic-filter-rules-including-waf.md#condition-structure) en el artículo Reglas del filtro de tráfico.
+
+Los detalles del nodo de acciones difieren según el tipo de regla y se describen en las secciones individuales siguientes.
+
 ## Solicitar transformaciones {#request-transformations}
 
 Las reglas de transformación de solicitudes permiten modificar las solicitudes entrantes. Las reglas admiten la configuración, desconfiguración y modificación de rutas, parámetros de consulta y encabezados (incluidas las cookies) en función de diversas condiciones de coincidencia, incluidas las expresiones regulares. También puede establecer variables, a las que se puede hacer referencia más adelante en la secuencia de evaluación.
@@ -61,7 +71,7 @@ Ejemplo de configuración:
 kind: "CDN"
 version: "1"
 metadata:
-  envTypes: ["prod", "dev"]
+  envTypes: ["dev", "stage", "prod"]
 data:  
   experimental_requestTransformations:
     removeMarketingParams: true
@@ -74,7 +84,7 @@ data:
           - type: set
             reqHeader: x-some-header
             value: some value
- 
+            
       - name: unset-header-rule
         when:
           reqProperty: path
@@ -82,24 +92,7 @@ data:
         actions:
           - type: unset
             reqHeader: x-some-header
- 
-      - name: set-query-param-rule
-        when:
-          reqProperty: path
-          equals: /set-query-param
-        actions:
-          - type: set
-            queryParam: someParam
-            value: someValue
- 
-      - name: unset-query-param-rule
-        when:
-          reqProperty: path
-          equals: /unset-query-param
-        actions:
-          - type: unset
-            queryParam: someParam
- 
+            
       - name: unset-matching-query-params-rule
         when:
           reqProperty: path
@@ -107,7 +100,7 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^removeMe_.*$
- 
+            
       - name: unset-all-query-params-except-exact-two-rule
         when:
           reqProperty: path
@@ -115,61 +108,7 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^(?!leaveMe$|leaveMeToo$).*$
- 
-      - name: set-req-cookie-rule
-        when:
-          reqProperty: path
-          equals: /set-req-cookie
-        actions:
-          - type: set
-            reqCookie: someParam
-            value: someValue
- 
-      - name: unset-req-cookie-rule
-        when:
-          reqProperty: path
-          equals: /unset-req-cookie
-        actions:
-          - type: unset
-            reqCookie: someParam
- 
-      - name: set-variable-rule
-        when:
-          reqProperty: path
-          equals: /set-variable
-        actions:
-          - type: set
-            var: some_var_name
-            value: some value
- 
-      - name: unset-variable-rule
-        when:
-          reqProperty: path
-          equals: /unset-variable
-        actions:
-          - type: unset
-            var: some_var_name
- 
-      - name: replace-segment
-        when:
-          reqProperty: path
-          like: /replace-segment/*
-        actions:
-          - type: replace
-            reqProperty: path
-            match: /replace-segment/
-            value: /segment-was-replaced/
- 
-      - name: replace-extension
-        when:
-          reqProperty: path
-          like: /replace-extension/*.html
-        actions:
-          - type: replace
-            reqProperty: path
-            match: \.html
-            value: ''
- 
+            
       - name: multi-action
         when:
           reqProperty: path
@@ -181,6 +120,17 @@ data:
           - type: set
             reqHeader: x-header2
             value: '201'
+            
+      - name: replace-html
+        when:
+          reqProperty: path
+          like: /mypath
+        actions:
+          - type: transform
+           reqProperty: path
+           op: replace
+           match: \.html$
+           replacement: ""
 ```
 
 **Acciones**
@@ -189,16 +139,27 @@ En la tabla siguiente se explican las acciones disponibles.
 
 | Nombre | Propiedades | Significado |
 |-----------|--------------------------|-------------|
-| **set** | reqHeader, valor | Establece un encabezado especificado en un valor determinado. |
-|     | queryParam, valor | Establece un parámetro de consulta especificado en un valor determinado. |
-|     | reqCookie, valor | Establece una cookie especificada en un valor determinado. |
-|     | var, valor | Establece una variable especificada en un valor determinado. |
-| **anular** | reqHeader | Quita un encabezado especificado. |
-|         | queryParam | Quita un parámetro de consulta especificado. |
-|         | reqCookie | Quita una cookie especificada. |
+| **set** | (reqProperty o reqHeader o queryParam o reqCookie), valor | Establece un parámetro de solicitud especificado (solo se admite la propiedad &quot;path&quot;), un encabezado de solicitud, un parámetro de consulta o una cookie, en un valor determinado. |
+|     | var, valor | Establece una propiedad de solicitud especificada en un valor determinado. |
+| **anular** | reqProperty | Quita un parámetro de solicitud especificado (solo se admite la propiedad &quot;path&quot;), un encabezado de solicitud, un parámetro de consulta o una cookie, de un valor determinado. |
 |         | var | Quita una variable especificada. |
 |         | queryParamMatch | Quita todos los parámetros de consulta que coinciden con una expresión regular especificada. |
-| **replace** | reqProperty, match, value | Reemplaza parte de la propiedad de solicitud por un nuevo valor. Actualmente solo se admite la propiedad &quot;path&quot;. |
+| **transformar** | op:replace, (reqProperty o reqHeader o queryParam o reqCookie), match, replace | Reemplaza parte del parámetro de solicitud (solo se admite la propiedad &quot;path&quot;) o el encabezado de solicitud, el parámetro de consulta o la cookie por un nuevo valor. |
+|              | op:tolower, (reqProperty o reqHeader o queryParam o reqCookie) | Establece el parámetro de solicitud (solo se admite la propiedad &quot;path&quot;) o el encabezado de solicitud, el parámetro de consulta o la cookie en su valor en minúsculas. |
+
+Las acciones se pueden encadenar. Por ejemplo:
+
+```
+actions:
+    - type: transform
+      reqProperty: path
+      op: replace
+      match: \.html$
+      replacement: ""
+    - type: transform
+      reqProperty: path
+      op: tolower
+```
 
 ### Variables {#variables}
 
