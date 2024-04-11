@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: aaae2986d0b807b34055a48c810c32167d3715d0
+source-git-commit: b940877abff45e2a9ee046aec74af067007f41c3
 workflow-type: tm+mt
-source-wordcount: '4862'
-ht-degree: 99%
+source-wordcount: '4850'
+ht-degree: 98%
 
 ---
 
@@ -790,18 +790,25 @@ ht-degree: 99%
    + [PWA Studio de Adobe Commerce](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [Migración](/help/commerce-cloud/migration.md)
    + [Preguntas más frecuentes](/help/commerce-cloud/faq.md)
-+ AEM con Edge Delivery Services {#edge-delivery}
-   + [Introducción a Edge Delivery Services](/help/edge/overview.md)
-   + [Uso de Edge Delivery](/help/edge/using.md)
-   + [Guía de introducción del desarrollador](/help/edge/edge-dev-getting-started.md)
-   + [Creación de contenido para Edge Delivery](/help/edge/authoring.md)
-   + [Publicación de contenido para Edge Delivery](/help/edge/publishing.md)
-   + [Desarrollo para Edge Delivery](/help/edge/developing.md)
-   + [Modelado de contenido](/help/edge/content-modeling.md)
-   + [Creación de bloques](/help/edge/create-block.md)
-   + [Datos tabulares y hojas de cálculo](/help/edge/tabular-data.md)
-   + [Proyectos existentes y Edge Delivery](/help/edge/existing-projects.md)
-   + Creación de aplicaciones de Edge Delivery {#build}
++ Edge Delivery Services {#edge-delivery}
+   + [Información general de Edge Delivery Services](/help/edge/overview.md)
+   + [Uso de Edge Delivery Services AEM con](/help/edge/using.md)
+   + AEM Creación basada en la {#aem-authoring}
+      + [Creación de contenido para Edge Delivery](/help/edge/aem-authoring/authoring.md)
+      + [Publicación de contenido para Edge Delivery](/help/edge/aem-authoring/publishing.md)
+      + [Guía de introducción del desarrollador](/help/edge/aem-authoring/edge-dev-getting-started.md)
+      + [Creación de bloques](/help/edge/aem-authoring/create-block.md)
+      + [Modelado de contenido](/help/edge/aem-authoring/content-modeling.md)
+      + [Datos tabulares y hojas de cálculo](/help/edge/aem-authoring/tabular-data.md)
+      + [Proyectos existentes y Edge Delivery](/help/edge/aem-authoring/existing-projects.md)
+   + Creación basada en documentos {#document-authoring}
+      + [Creación](/help/edge/docs/authoring.md)
+      + [Metadatos por lotes](/help/edge/docs/bulk-metadata.md)
+      + [Marcadores de posición](/help/edge/docs/placeholders.md)
+      + [Mapa del sitio](/help/edge/developer/sitemap.md)
+      + [Configuración de SharePoint](/help/edge/docs/setup-customer-sharepoint.md)
+      + [Bot de Slack](/help/edge/docs/slack.md)
+   + Creación de aplicaciones {#build}
       + [Introducción: Tutorial para desarrolladores](/help/edge/developer/tutorial.md)
       + [Anatomía de un proyecto](/help/edge/developer/anatomy-of-a-franklin-project.md)
       + [Colección de bloqueos](/help/edge/developer/block-collection.md)
@@ -813,21 +820,14 @@ ht-degree: 99%
       + [Icono de favoritos](/help/edge/developer/favicon.md)
       + [Encabezados personalizados](/help/edge/docs/custom-headers.md)
       + [Prácticas recomendadas para desarrolladores](/help/edge/docs/dev-collab-and-good-practices.md)
-   + Publicación de aplicaciones de Edge Delivery {#publish}
-      + [Creación](/help/edge/docs/authoring.md)
-      + [Metadatos por lotes](/help/edge/docs/bulk-metadata.md)
-      + [Marcadores de posición](/help/edge/docs/placeholders.md)
-      + [Mapa del sitio](/help/edge/developer/sitemap.md)
-      + [Configuración de SharePoint](/help/edge/docs/setup-customer-sharepoint.md)
-      + [Bot de Slack](/help/edge/docs/slack.md)
-   + Lanzamiento de aplicaciones de Edge Delivery {#launch}
+   + Inicio de aplicaciones {#launch}
       + [Lanzamiento de lista de verificación](/help/edge/docs/go-live-checklist.md)
       + [Anulación de push](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
       + [Configuración de Cloudflare Worker](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
       + [Configuración de Akamai](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Configuración de Fastly](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [Redireccionamientos](/help/edge/docs/redirects.md)
-   + Creación de Edge Delivery Forms {#build-forms}
+   + Creación de Forms {#build-forms}
       + [Información general](/help/edge/docs/forms/overview.md)
       + Introducción {#getting-started-eds-forms}
          + [Introducción](/help/edge/docs/forms/tutorial.md)
@@ -848,7 +848,7 @@ ht-degree: 99%
          + [Monitorización de usuarios en tiempo real de formularios](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
       + Referencias {#forms-references}
          + [Componentes de bloque de formulario adaptable y sus propiedades](/help/edge/docs/forms/form-components.md)
-   + Recursos para Edge Delivery {#resources}
+   + Recursos de envío de Edge {#resources}
       + Barra de tareas {#sidekick}
          + [Uso de la barra de tareas](/help/edge/docs/sidekick.md)
          + [Instalación de la extensión](/help/edge/docs/sidekick-extension.md)

@@ -3,7 +3,7 @@ title: Introducción a Edge Delivery Services de AEM Forms, Tutorial para desarr
 description: Este tutorial le ayudará a ponerse en marcha con un nuevo proyecto de Adobe Experience Manager Forms (AEM). En diez a veinte minutos, habrá creado sus propios formularios.
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
-source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
+source-git-commit: 74e3bc79a734bd2c686e28cdcbbda96a58268c77
 workflow-type: tm+mt
 source-wordcount: '1848'
 ht-degree: 99%
@@ -192,7 +192,7 @@ Para una vista previa del contenido sin publicar, haga lo siguiente:
 
 El contenido de ejemplo incluye una hoja de “consulta” que sirve como plantilla para el formulario de “consulta”. Cada fila de la hoja representa un [campo de formulario](/help/edge/docs/forms/form-components.md#available-components), y los encabezados de columna definen las [propiedades de campo](/help/edge/docs/forms/form-components.md#available-components). Este formulario de ejemplo le proporciona una ventaja inicial en la creación del formulario.
 
-![Formulario de consulta](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+![Formulario de consulta](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
 Empecemos por actualizar la etiqueta de campo. Abra la hoja “consulta” para editarla, cambie la etiqueta del botón de envío a `Let's Chat` y utilice AEM Sidekick para obtener una vista previa y publicar el archivo.
 

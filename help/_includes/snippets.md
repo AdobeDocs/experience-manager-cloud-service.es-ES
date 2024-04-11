@@ -1,7 +1,7 @@
 ---
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: 61d65c37d263edef641db42589fc0f28a8eb9078
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '302'
 ht-degree: 100%
 
 ---
@@ -50,10 +50,6 @@ ht-degree: 100%
 * [Enviar a Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Conectar un formulario adaptable a la aplicación de Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
 * [Conectar un formulario adaptable a Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
-
-## Creación de AEM con el acceso rápido de Edge Delivery Services {#aem-authoring-edge-early-access}
-
-[!BADGE TECNOLOGÍA DE ACCESO RÁPIDO: infórmenos sobre esta función en los laboratorios de AEM Sites de su canal de Slack.]{type=Informative url="/help/edge/docs/slack.md" tooltip="La creación de AEM con Edge Delivery Services es una tecnología de acceso rápido."}
 
 ## Consulte también {#see-more-forms-eds}
 
