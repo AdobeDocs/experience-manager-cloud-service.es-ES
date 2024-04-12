@@ -4,12 +4,20 @@ description: El editor de reglas de formularios adaptables permite agregar un co
 feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
-source-git-commit: 78b3b11caf143ed147079ef2b3b3ebe5c1beafd7
+exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
+source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
 workflow-type: tm+mt
-source-wordcount: '5755'
+source-wordcount: '5444'
 ht-degree: 88%
 
 ---
+
+
+<span class="preview"> Este artículo incluye contenido para algunas funciones previas al lanzamiento. Solo se puede acceder a estas funciones previas al lanzamiento a través de nuestra [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features). Las funciones del programa previo al lanzamiento son las siguientes:
+* Compatibilidad para implementar condiciones anidadas con la funcionalidad When-then-else
+* Validar o restablecer paneles y formularios, incluidos campos
+* Compatibilidad con funciones de JavaScript modernas, como las funciones izquierda y flecha (compatibilidad con ES10) dentro de funciones personalizadas.
+</span>
 
 # Agregar reglas a un formulario adaptable (componentes principales) {#adaptive-forms-rule-editor}
 
@@ -563,83 +571,83 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### Funciones personalizadas en el editor de reglas {#custom-functions}
 
-También puede utilizar funciones personalizadas en el editor de reglas. Para obtener instrucciones sobre la creación de funciones personalizadas, consulte el artículo [Funciones personalizadas en Forms adaptable](/help/forms/create-and-use-custom-functions.md).
-
-Aparte de las funciones integradas, como *Sum of* que se enumeran en Salida de funciones, puede escribir funciones personalizadas que necesite con frecuencia. Asegúrese de que la función que escriba esté acompañada de una etiqueta `jsdoc` encima.
-
-Incluir una etiqueta `jsdoc` es obligatorio:
-
-* Si desea una configuración y descripción personalizadas.
-* Porque hay varias formas de declarar una función en `JavaScript,` y los comentarios permiten realizar un seguimiento de las funciones.
-
-El editor de reglas admite la sintaxis de JavaScript ES2015 para scripts y funciones personalizadas. 
-Para obtener más información, consulte [jsdoc.app](https://jsdoc.app/).
-
-Etiquetas `jsdoc` compatibles:
-
-* **Sintaxis**
-privada: `@private`
-una función privada no se incluye como función personalizada.
-
-* **Sintaxis**
-de nombre: `@name funcName <Function Name>`
-O bien, `,` puede usar: `@function funcName <Function Name>` **o** `@func` `funcName <Function Name>`.
-  `funcName` es el nombre de la función (no se permiten espacios).
-  `<Function Name>` es el nombre para mostrar de la función.
-
-* **Sintaxis**
-de parámetro: `@param {type} name <Parameter Description>`
-O bien, puede usar: `@argument` `{type} name <Parameter Description>` **o** `@arg` `{type}` `name <Parameter Description>`.
-Muestra los parámetros utilizados por la función. Una función puede tener varias etiquetas de parámetro, una etiqueta para cada parámetro en el orden de ocurrencia.
-  `{type}` representa el tipo de parámetro. Los tipos de parámetros permitidos son:
-
-   1. cadena
-   1. número
-   1. booleano
-   1. ámbito
-   1. cadena[]
-   1. número[]
-   1. booleano[]
-   1. fecha
-   1. fecha[]
-   1. matriz
-   1. objeto
-
-  `scope` hace referencia a un objeto especial globals proporcionado por el motor de ejecución de formularios. Debe ser el último parámetro y no debe ser visible para el usuario en el editor de reglas. Puede utilizar el ámbito para acceder a un formulario legible y a un objeto proxy de campo para leer las propiedades, el evento que activó la regla y un conjunto de funciones para manipular el formulario.
-
-  `object` type se utiliza para pasar un objeto de campo legible en parámetro a una función personalizada en lugar de pasar el valor.
-
-  Todos los tipos de parámetros se clasifican en una de las categorías anteriores. Ninguno no es compatible. Asegúrese de seleccionar uno de los tipos anteriores. Los tipos no distinguen entre mayúsculas y minúsculas. No se permiten espacios en el nombre del parámetro.  La descripción del parámetro puede tener varias palabras.
-
-* **Parámetro opcional**
-Sintaxis: `@param {type=} name <Parameter Description>`
-Como alternativa, puede utilizar: `@param {type} [name] <Parameter Description>`
-De forma predeterminada, todos los parámetros son obligatorios. Puede marcar un parámetro como opcional añadiendo `=` en el tipo del parámetro o colocando el nombre del parámetro entre corchetes.
-
-  Por ejemplo, vamos a declarar `Input1` como parámetro opcional:
-   * `@param {type=} Input1`
-   * `@param {type} [Input1]`
-
-* **Sintaxis**
-de tipo de retorno: `@return {type}`
-O bien, puede usar `@returns {type}`.
-Agrega información sobre la función, como su objetivo. 
-{type} representa el tipo de valor devuelto de la función. Los tipos de valor devuelto permitidos son:
-
-   1. cadena
-   2. número
-   3. booleano
-   4. cadena[]
-   5. número[]
-   6. booleano[]
-   7. fecha
-   8. fecha[]
-   9. matriz
-   10. objeto
-
-  Todos los demás tipos de valor devuelto se clasifican en una de las categorías anteriores. Ninguno no es compatible. Asegúrese de seleccionar uno de los tipos anteriores. Los tipos de valor devuelto no distinguen entre mayúsculas y minúsculas.
+Aparte de las funciones integradas, como *Suma de* que se enumeran en **Salida de funciones** Además, también puede utilizar funciones personalizadas en el editor de reglas. El editor de reglas admite la sintaxis de JavaScript ECMAScript 2019 para scripts y funciones personalizadas. Para obtener instrucciones sobre la creación de funciones personalizadas, consulte el artículo [Funciones personalizadas en Forms adaptable](/help/forms/create-and-use-custom-functions.md).
 
 <!--
+
+Ensure that the function you write is accompanied by the `jsdoc` above it. Adaptive Form supports the various [JavaScript annotations for custom functions](/help/forms/create-and-use-custom-functions.md#js-annotations).
+
+For more information, see [jsdoc.app](https://jsdoc.app/).
+
+Accompanying `jsdoc` is required:
+
+* If you want custom configuration and description
+* Because there are multiple ways to declare a function in `JavaScript,` and comments let you keep a track of the functions.
+
+Supported `jsdoc` tags:
+
+* **Private**
+  Syntax: `@private`
+  A private function is not included as a custom function.
+
+* **Name**
+  Syntax: `@name funcName <Function Name>`
+  Alternatively `,` you can use: `@function funcName <Function Name>` **or** `@func` `funcName <Function Name>`.
+  `funcName` is the name of the function (no spaces allowed).
+  `<Function Name>` is the display name of the function.
+
+* **Parameter**
+  Syntax: `@param {type} name <Parameter Description>`
+  Alternatively, you can use: `@argument` `{type} name <Parameter Description>` **or** `@arg` `{type}` `name <Parameter Description>`.
+  Shows parameters used by the function. A function can have multiple parameter tags, one tag for each parameter in the order of occurrence.
+  `{type}` represents parameter type. Allowed parameter types are:
+
+    1. string
+    2. number
+    3. boolean
+    4. scope
+    5. string[]
+    6. number[]
+    7. boolean[]
+    8. date
+    9. date[]
+    10. array
+    11. object
+
+   `scope` refers to a special globals object which is provided by forms runtime. It must be the last parameter and is not be visible to the user in the rule editor. You can use scope to access readable form and field proxy object to read properties, event which triggered the rule and a set of functions to manipulate the form.
+
+   `object` type is used to pass readable field object in parameter to a custom function instead of passing the value.
+
+   All parameter types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Types are not case-sensitive. Spaces are not allowed in the parameter name.  Parameter description can have multiple words.
+
+* **Optional Parameter**
+Syntax: `@param {type=} name <Parameter Description>` 
+Alternatively, you can use: `@param {type} [name] <Parameter Description>`
+By default all parameters are mandatory. You can mark a parameter optional by adding `=` in type of the parameter or by putting param name in square brackets.
+   
+   For example, let us declare `Input1` as optional parameter:
+    * `@param {type=} Input1`
+    * `@param {type} [Input1]`
+
+* **Return Type**
+  Syntax: `@return {type}`
+  Alternatively, you can use `@returns {type}`.
+  Adds information about the function, such as its objective.
+  {type} represents the return type of the function. Allowed return types are:
+
+    1. string
+    2. number
+    3. boolean
+    4. string[]
+    5. number[]
+    6. boolean[]
+    7. date
+    8. date[]
+    9. array
+    10. object
+
+  All other return types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Return types are not case-sensitive.
+
 **Adding a custom function**
 
 For example, you want to add a custom function which calculates area of a square. Side length is the user input to the custom function, which is accepted using a numeric box in your form. The calculated output is displayed in another numeric box in your form. To add a custom function, you have to first create a client library, and then add it to the CRX repository.
@@ -647,7 +655,7 @@ For example, you want to add a custom function which calculates area of a square
 To create a client library and add it in the CRX repository, perform the following steps:
 
 1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
-1. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
+2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
    >

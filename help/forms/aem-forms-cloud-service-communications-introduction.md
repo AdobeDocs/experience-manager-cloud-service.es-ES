@@ -5,10 +5,10 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
-workflow-type: ht
-source-wordcount: '1452'
-ht-degree: 100%
+source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
+workflow-type: tm+mt
+source-wordcount: '1409'
+ht-degree: 93%
 
 ---
 
@@ -171,21 +171,22 @@ El servicio DocAssurance incluye las API de firma y codificación:
 
 ### API de firmas
 
-Las API de firmas permiten a su organización proteger la seguridad y la privacidad de los documentos de Adobe PDF que distribuye y recibe. Este servicio utiliza firmas digitales y certificación para garantizar que solo los destinatarios previstos puedan modificar los documentos. Dado que las características de seguridad se aplican al propio documento, este permanece seguro y controlado durante todo su ciclo de vida. Un documento permanece seguro más allá del cortafuegos mientras se descarga sin conexión y se envía nuevamente a su organización. Puede realizar las siguientes tareas mediante las API de firmas:
+Las API de firmas permiten a su organización proteger la seguridad y la privacidad de los documentos de Adobe PDF que distribuye y recibe. <!--This service uses digital signatures and certification to ensure that only intended recipients can alter documents. --> Las funciones de seguridad se aplican al propio documento, el documento permanece seguro y controlado durante todo su ciclo de vida. El documento permanece seguro más allá del cortafuegos, cuando se descarga sin conexión y cuando se devuelve a su organización. Puede realizar las siguientes tareas mediante las API de firmas:
 
-* Agregue un campo de firma a un documento PDF.
+* Agregue un campo de firma visible a un documento de PDF.
+* Agregue un campo de firma invisible a un documento de PDF.
 * Firme el campo de firma especificado en un documento PDF.
 * Certificar un documento PDF
 
 ### Las API de cifrado
 
-Las API de cifrado permiten encriptar y desencriptar documentos. Cuando se encripta un documento, su contenido se vuelve ilegible. Un usuario autorizado puede desencriptar el documento para obtener acceso a su contenido. Si un documento PDF está encriptado con una contraseña, el usuario debe escribir la contraseña para abrir y visualizar el documento en Adobe Reader o Adobe Acrobat. Del mismo modo, si un documento PDF está encriptado con un certificado, el usuario debe desencriptar el documento PDF con la clave pública que corresponde al certificado (clave privada) que se utilizó para encriptarlo.
+Las API de cifrado permiten encriptar y desencriptar documentos. Cuando se encripta un documento, su contenido se vuelve ilegible. Un usuario autorizado puede desencriptar el documento para obtener acceso a su contenido. Si un documento de PDF está cifrado con una contraseña, el usuario debe especificar la contraseña de apertura para poder ver el documento en Adobe Reader o Adobe Acrobat. <!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
 
 Puede realizar estas tareas mediante las API de encriptado:
 
 * Encriptar un documento PDF con una contraseña.
 * Quitar el encriptado de contraseña de un documento PDF.
-* Recupera el tipo de seguridad aplicada a un documento PDF.
+* Devuelve el tipo de seguridad aplicado a un documento de PDF.
 
 Tanto las API de firma como las de encriptado son [API sincrónicas](#types-of-communications-apis-types).
 
