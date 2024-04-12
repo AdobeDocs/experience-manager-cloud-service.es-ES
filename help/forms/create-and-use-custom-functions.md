@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '3039'
+source-wordcount: '3108'
 ht-degree: 4%
 
 ---
@@ -42,102 +42,112 @@ Las funciones personalizadas son esencialmente bibliotecas de cliente que se agr
 
 Las anotaciones de JavaScript se utilizan para proporcionar metadatos para el código JavaScript. Incluye comentarios que comienzan con símbolos específicos como, por ejemplo, /** y @. Las anotaciones proporcionan información importante sobre funciones, variables y otros elementos del código. El formulario adaptable admite las siguientes anotaciones de JavaScript para funciones personalizadas:
 
-* **Nombre**
+#### Nombre
+
 El nombre se utiliza para identificar la función personalizada en el editor de reglas de un formulario adaptable. Las siguientes sintaxis se utilizan para asignar un nombre a una función personalizada:
-   * `@name [functionName] <Function Name>`
-   * `@function [functionName] <Function Name>`
-   * `@func [functionName] <Function Name>`.
-     `functionName` es el nombre de la función. No se permiten espacios.
-     `<Function Name>` es el nombre para mostrar de la función en el editor de reglas de un formulario adaptable.
+
+* `@name [functionName] <Function Name>`
+* `@function [functionName] <Function Name>`
+* `@func [functionName] <Function Name>`.
+  `functionName` es el nombre de la función. No se permiten espacios.
+  `<Function Name>` es el nombre para mostrar de la función en el editor de reglas de un formulario adaptable.
 Si el nombre de la función es idéntico al nombre de la función en sí, puede omitir `[functionName]` de la sintaxis. <!-- For example,  in the `calculateAge` custom function, the name is defined as:
 `* @name calculateAge` -->
 
-* **Parámetro**
+#### Parámetro
+
 El parámetro es una lista de argumentos que utilizan las funciones personalizadas. Una función puede admitir varios parámetros. Las siguientes sintaxis se utilizan para definir un parámetro en una función personalizada:
-   * `@param {type} name <Parameter Description>`
-   * `@argument` `{type} name <Parameter Description>`
-   * `@arg` `{type}` `name <Parameter Description>`.
-     `{type}` representa el tipo de parámetro.  Los tipos de parámetros permitidos son:
-      * string: Representa un solo valor de cadena.
-      * number: representa un solo valor numérico.
-      * boolean: Representa un solo valor booleano (true o false).
-      * cadena[]: Representa una matriz de valores de cadena.
-      * número[]: representa una matriz de valores numéricos.
-      * booleano[]: Representa una matriz de valores booleanos.
-      * date: representa un solo valor de fecha.
-      * fecha[]: representa una matriz de valores de fecha.
-      * array: representa una matriz genérica que contiene valores de varios tipos.
-      * object: representa un objeto de formulario pasado a una función personalizada en lugar de pasar su valor directamente.
-      * ámbito: representa un objeto global utilizado por funciones personalizadas en tiempo de ejecución. Se declara como el último parámetro en anotaciones de JavaScript y no es visible en el editor de reglas de un formulario adaptable. El parámetro scope accede al objeto del formulario o componente para almacenar en déclencheur la regla o el evento necesarios para el procesamiento del formulario.
 
-  El tipo de parámetro no distingue entre mayúsculas y minúsculas y no se permiten espacios en el nombre del parámetro.
+* `@param {type} name <Parameter Description>`
+* `@argument` `{type} name <Parameter Description>`
+* `@arg` `{type}` `name <Parameter Description>`.
+  `{type}` representa el tipo de parámetro.  Los tipos de parámetros permitidos son:
+   * string: Representa un solo valor de cadena.
+   * number: representa un solo valor numérico.
+   * boolean: Representa un solo valor booleano (true o false).
+   * cadena[]: Representa una matriz de valores de cadena.
+   * número[]: representa una matriz de valores numéricos.
+   * booleano[]: Representa una matriz de valores booleanos.
+   * date: representa un solo valor de fecha.
+   * fecha[]: representa una matriz de valores de fecha.
+   * array: representa una matriz genérica que contiene valores de varios tipos.
+   * object: representa un objeto de formulario pasado a una función personalizada en lugar de pasar su valor directamente.
+   * ámbito: representa un objeto global utilizado por funciones personalizadas en tiempo de ejecución. Se declara como el último parámetro en anotaciones de JavaScript y no es visible en el editor de reglas de un formulario adaptable. El parámetro scope accede al objeto del formulario o componente para almacenar en déclencheur la regla o el evento necesarios para el procesamiento del formulario.
 
-  `<Parameter Description>` contiene detalles sobre el propósito del parámetro. Puede tener varias palabras.
+    El tipo de parámetro no distingue entre mayúsculas y minúsculas y no se permiten espacios en el nombre del parámetro.
+    
+    `&lt;parameter description=&quot;&quot;>` contiene detalles sobre el propósito del parámetro. Puede tener varias palabras.
+    
+    De forma predeterminada, todos los parámetros son obligatorios. Puede definir un parámetro como opcional añadiendo &quot;=&quot; después del tipo de parámetro o incluyendo el nombre del parámetro en &quot;[]&quot;. Los parámetros definidos como opcionales en anotaciones de JavaScript se muestran como opcionales en el editor de reglas.
+    Para definir una variable como parámetro opcional, puede utilizar cualquiera de las siguientes sintaxis:
+    
+    * `@param {type=} Input1`
+    
+    En la línea de código anterior, &quot;Input1&quot; es un parámetro opcional sin ningún valor predeterminado. Para declarar un parámetro opcional con el valor predeterminado:
+    `@param {string=&lt;value>} input1`
+    
+    input1 como parámetro opcional con el valor predeterminado establecido en value.
+    
+    * `@param {type} [Entrada1]`
+    
+    En la línea de código anterior, &quot;Input1&quot; es un parámetro opcional sin ningún valor predeterminado. Para declarar un parámetro opcional con el valor predeterminado:
+    `@param {array} [input1=&lt;value>]`
+    input1 es un parámetro opcional de tipo matriz con el valor predeterminado establecido en value.
+    Asegúrese de que el tipo de parámetro esté entre llaves {} y el nombre del parámetro se escribe entre corchetes [].
+    
+    Considere el siguiente fragmento de código, donde input2 se define como un parámetro opcional:
+    
+    &quot;javascript
+    
+    /**
+    * función de parámetro opcional
+    * @name OptionalParameterFunction
+    * @param {string} input1
+    * @param {string=} input2
+    * @return {string}
+    */
+    function OpcionalParámetroFunción(input1, input2) {
+    let result = &quot;Result: &quot;;
+    resultado += entrada1;
+    if (input2 !== (nulo) {
+    resultado += &quot; &quot; + input2;
+    }
+    resultado devuelto;
+    }
+    &quot;
+    
+    La siguiente ilustración muestra el uso de la función personalizada OptionalParameterFunction en el editor de reglas:
+    
+    &lt;!>— ![Parámetros opcionales o requeridos ](/help/forms/assets/optional-default-params.png) —>
+    
+    Puede guardar la regla sin especificar un valor para los parámetros necesarios, pero la regla no se ejecuta y muestra un mensaje de advertencia como:
+    
+    &lt;!>— ![advertencia de regla incompleta](/help/forms/assets/incomplete-rule.png) —>
+    
+    Cuando el usuario deja vacío el parámetro opcional, el valor &quot;Undefined&quot; se pasa a la función personalizada para el parámetro opcional.
 
-  De forma predeterminada, todos los parámetros son obligatorios. Puede definir un parámetro como opcional añadiendo `=` después del tipo de parámetro o de incluir el nombre del parámetro en  `[]`. Los parámetros definidos como opcionales en anotaciones de JavaScript se muestran como opcionales en el editor de reglas.
-Para definir una variable como parámetro opcional, puede utilizar cualquiera de las siguientes sintaxis:
+#### Tipo de devolución
 
-   * `@param {type=} Input1`
-En la línea de código anterior, `Input1` es un parámetro opcional sin ningún valor predeterminado. Para declarar un parámetro opcional con el valor predeterminado:
-     `@param {string=<value>} input1`
-
-     `input1` como parámetro opcional con el valor predeterminado establecido en `value`.
-
-   * `@param {type} [Input1]`
-En la línea de código anterior, `Input1` es un parámetro opcional sin ningún valor predeterminado. Para declarar un parámetro opcional con el valor predeterminado:
-     `@param {array} [input1=<value>]`
-     `input1` es un parámetro opcional de tipo matriz con el valor predeterminado establecido en `value`.
-Asegúrese de que el tipo de parámetro esté entre llaves {} y el nombre del parámetro se escribe entre corchetes [].
-
-     Considere el siguiente fragmento de código, donde input2 se define como un parámetro opcional:
-
-     ```javascript
-          /**
-          * optional parameter function
-          * @name OptionalParameterFunction
-          * @param {string} input1 
-          * @param {string=} input2 
-          * @return {string}
-         */
-         function OptionalParameterFunction(input1, input2) {
-         let result = "Result: ";
-         result += input1;
-         if (input2 !== null) {
-             result += " " + input2;
-         }
-         return result;
-         }
-     ```
-
-     La siguiente ilustración muestra el uso de la variable `OptionalParameterFunction` función personalizada en el editor de reglas:
-
-     ![Parámetros opcionales o requeridos](/help/forms/assets/optional-default-params.png)
-
-     Puede guardar la regla sin especificar un valor para los parámetros necesarios, pero la regla no se ejecuta y muestra un mensaje de advertencia como:
-
-     ![mensaje de advertencia de regla incompleta](/help/forms/assets/incomplete-rule.png)
-
-     Cuando el usuario deja vacío el parámetro opcional, el valor &quot;Undefined&quot; se pasa a la función personalizada para el parámetro opcional.
-
-* **Tipo de devolución**
 El tipo de valor devuelto especifica el tipo de valor que la función personalizada devuelve después de la ejecución. Las siguientes sintaxis se utilizan para definir un tipo de valor devuelto en una función personalizada:
-   * `@return {type}`
-   * `@returns {type}`
-     `{type}` representa el tipo devuelto de la función. Los tipos de valor devuelto permitidos son:
-      * string: Representa un solo valor de cadena.
-      * number: representa un solo valor numérico.
-      * boolean: Representa un solo valor booleano (true o false).
-      * cadena[]: Representa una matriz de valores de cadena.
-      * número[]: representa una matriz de valores numéricos.
-      * booleano[]: Representa una matriz de valores booleanos.
-      * date: representa un solo valor de fecha.
-      * fecha[]: representa una matriz de valores de fecha.
-      * array: representa una matriz genérica que contiene valores de varios tipos.
-      * object: representa el objeto de formulario en lugar de su valor directamente.
 
-     El tipo de valor devuelto no distingue entre mayúsculas y minúsculas.
+* `@return {type}`
+* `@returns {type}`
+  `{type}` representa el tipo devuelto de la función. Los tipos de valor devuelto permitidos son:
+   * string: Representa un solo valor de cadena.
+   * number: representa un solo valor numérico.
+   * boolean: Representa un solo valor booleano (true o false).
+   * cadena[]: Representa una matriz de valores de cadena.
+   * número[]: representa una matriz de valores numéricos.
+   * booleano[]: Representa una matriz de valores booleanos.
+   * date: representa un solo valor de fecha.
+   * fecha[]: representa una matriz de valores de fecha.
+   * array: representa una matriz genérica que contiene valores de varios tipos.
+   * object: representa el objeto de formulario en lugar de su valor directamente.
 
-* **Privado**
+  El tipo de valor devuelto no distingue entre mayúsculas y minúsculas.
+
+#### Privado
+
 La función personalizada, declarada como privada, no aparece en la lista de funciones personalizadas del editor de reglas de un formulario adaptable. De forma predeterminada, las funciones personalizadas son públicas. La sintaxis para declarar la función personalizada como privada es `@private`.
 
 Para obtener más información sobre cómo definir parámetros opcionales en JSDocs, [haga clic aquí](https://jsdoc.app/tags-param).
@@ -390,7 +400,7 @@ Agregue el siguiente código en la función personalizada como se explica en la 
 
 ```javascript
     
-	/**
+    /**
     * enablePanel
     * @name enablePanel
     * @param {object} field1

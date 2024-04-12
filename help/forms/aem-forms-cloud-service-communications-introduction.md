@@ -5,10 +5,10 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 93%
+source-wordcount: '1964'
+ht-degree: 72%
 
 ---
 
@@ -106,7 +106,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## Manipulación de documentos
 
-Las API de manipulación de documentos de comunicación ayudan a combinar, reorganizar y validar documentos PDF. Normalmente, crea un DDX y lo envía a las API de manipulación de documentos para montar o reorganizar un documento. El [documento DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) ofrece instrucciones sobre cómo utilizar los documentos de origen para producir un conjunto de documentos necesarios. La documentación de referencia DDX ofrece información detallada acerca de todas las operaciones compatibles. Algunos ejemplos de manipulación de documentos son los siguientes:
+Las API de manipulación de documentos de comunicación ayudan a combinar, reorganizar y validar documentos PDF. Normalmente, crea un DDX y lo envía a las API de manipulación de documentos para montar o reorganizar un documento. El [documento DDX](https://helpx.adobe.com/content/dam/help/es/experience-manager/forms-cloud-service/ddxRef.pdf) ofrece instrucciones sobre cómo utilizar los documentos de origen para producir un conjunto de documentos necesarios. La documentación de referencia DDX ofrece información detallada acerca de todas las operaciones compatibles. Algunos ejemplos de manipulación de documentos son los siguientes:
 
 ### Montar los documentos PDF
 
@@ -186,10 +186,63 @@ Puede realizar estas tareas mediante las API de encriptado:
 
 * Encriptar un documento PDF con una contraseña.
 * Quitar el encriptado de contraseña de un documento PDF.
+* Recupera el tipo de seguridad aplicada a un documento PDF.
 * Devuelve el tipo de seguridad aplicado a un documento de PDF.
 
 Tanto las API de firma como las de encriptado son [API sincrónicas](#types-of-communications-apis-types).
 
+### Servicio Extensiones de Reader
+
+<span class="preview"> La capacidad del Servicio de extensión para Reader está incluida en el Programa de adopción anticipada. Puede escribir a `aem-forms-ea@adobe.com` desde su id de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez y solicitar acceso a esta capacidad. </span>
+
+El servicio Extensiones de Reader permite a su organización compartir fácilmente documentos interactivos de PDF mediante la ampliación de la funcionalidad de Adobe Reader con derechos de uso adicionales. El servicio Extensiones de Reader funciona con Adobe Reader. El servicio agrega derechos de uso a un documento PDF. Esta acción activa funciones que normalmente no están disponibles cuando se abre un documento de PDF con Adobe Reader, como agregar comentarios a un documento, rellenar formularios y guardar el documento.
+
+
+Cuando se agregan los derechos de uso correspondientes a los documentos PDF, los destinatarios pueden realizar las siguientes actividades desde Adobe Reader:
+
+* Completar documentos y formularios de PDF en línea o sin conexión, lo que permite a los destinatarios guardar copias localmente para sus registros y mantener intacta la información agregada.
+* Guarde los documentos del PDF en un disco duro local para conservar el documento original y los comentarios, datos o archivos adjuntos adicionales.
+* Adjuntar archivos y clips multimedia a documentos de PDF.
+* Firme, certifique y autentique documentos de PDF mediante la aplicación de firmas digitales con tecnologías de infraestructura de clave pública (PKI) conformes con los estándares del sector.
+* Enviar documentos de PDF completados o anotados electrónicamente.
+* Utilice documentos y formularios de PDF como un front-end de desarrollo intuitivo para bases de datos y servicios web internos.
+* compartir documentos PDF con terceros para que los revisores puedan agregar comentarios mediante herramientas de marcado intuitivas. Entre estas herramientas se incluyen las notas adhesivas electrónicas, los sellos, los resaltados y el tachado de texto. Estas funciones también están disponibles en Acrobat;
+* admitir la descodificación de formularios con códigos de barras.
+
+Estas funciones de derechos de uso especiales se activan automáticamente cuando se abre un documento de PDF con los derechos activados en Adobe Reader. Cuando el usuario termina de trabajar con un documento con derechos activados, esas funciones vuelven a desactivarse en Adobe Reader. Permanecen desactivados hasta que el usuario recibe otro documento PDF con los derechos activados.
+
+Las distintas funciones de derechos de uso de Reader Extension Services son:
+
+* **Descodificación de códigos de barras**: para descodificar códigos de barras dentro del documento del PDF.
+
+* **Comentarios**: para realizar comentarios sin conexión en el documento de PDF.
+
+* **Comentarios en línea**: para realizar comentarios en línea sobre el documento de PDF.
+
+* **Firma digital**: para agregar firmas digitales a un documento de PDF.
+
+* **Campos de formulario dinámico**: para agregar campos de formulario a un documento de PDF.
+
+* **Páginas de formulario dinámico**: para agregar páginas de formulario a un documento de PDF.
+
+* **Archivos incrustados**: para incrustar archivos en un documento de PDF.
+
+* **Importación de datos de formulario**: para importar datos de formulario a un documento de PDF.
+
+* **Exportación de datos de formulario**: para importar datos de formulario a un documento de PDF.
+
+* **Cumplimentación de formulario**: para rellenar campos de formulario dentro de un documento de PDF.
+
+* **Forms en línea**: Para acceder a un servicio web o a una base de datos desde un documento de PDF.
+
+* **Enviar independiente**: para enviar datos de formulario sin conexión desde un documento de PDF.
+
+**Otras funciones de los servicios de extensión de Reader**
+
+* **Mensaje**: mensaje que se muestra en Adobe Acrobat Reader al abrir un documento de PDF con uno o más derechos de uso aplicados.
+* **Desbloquear contraseña**: contraseña necesaria para abrir un documento de PDF cifrado. Normalmente, esta es la contraseña de apertura del documento, pero si el documento de PDF está protegido además por una contraseña de permisos, puede utilizarse para abrirlo.
+
+La [documentación de referencia de la API](https://adobe-aem-document-experimental.redoc.ly/) ofrece información detallada sobre todos los parámetros, métodos de autenticación y diversos servicios que ofrecen las API. La documentación de referencia de la API también está disponible en formato .yaml. Puede descargar el .yaml y cargarlo en Postman para comprobar la funcionalidad de las API.
 
 ## Tipos de API de comunicaciones {#types}
 

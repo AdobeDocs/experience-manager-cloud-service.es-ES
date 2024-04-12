@@ -3,7 +3,7 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: af9e30ffb585619d1581db94d3961f561e12df2b
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
 source-wordcount: '2261'
 ht-degree: 34%
@@ -134,22 +134,22 @@ Estos servicios le permiten:
 
   Ahora puede optimizar las interacciones de funciones personalizadas mediante lo siguiente:
 
-   * Aprovechamiento de nuevas anotaciones para proporcionar definiciones de funciones más claras.
-   * Usar mecanismos de almacenamiento en caché para funciones personalizadas, lo que permite un rendimiento de formulario más rápido.
-   * Trabajar sin problemas con objetos globales dentro de funciones personalizadas.
-   * Definición y utilización de parámetros opcionales dentro de funciones personalizadas.
+   * [Aprovechamiento de nuevas anotaciones para proporcionar definiciones de funciones más claras](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function).
+   * [Usar mecanismos de almacenamiento en caché para funciones personalizadas, lo que permite un rendimiento de formulario más rápido](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function).
+   * [Trabajar sin problemas con objetos globales dentro de funciones personalizadas](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
+   * [Definición y utilización de parámetros opcionales dentro de funciones personalizadas](/help/forms/create-and-use-custom-functions.md#parameter).
 
   Esta actualización también incorpora las siguientes mejoras en la funcionalidad del editor de reglas. Puede hacer lo siguiente:
 
-   * Implemente una potente lógica &quot;when-then-else&quot; para la ejecución condicional.
+   * Implementación potente [&quot;cuando-entonces-sino&quot;](/help/forms/rule-editor-core-components.md#when) lógica para la ejecución condicional.
    * Aproveche las funciones modernas de JavaScript como las funciones izquierda y flecha (compatibilidad con ES10).
    * Valide o restablezca no solo campos, sino también paneles y formularios completos, lo que expande el control sobre las interacciones del usuario.
 
   Estos avances proporcionan una experiencia más intuitiva y potente para crear reglas y funciones personalizadas dentro del editor de reglas visuales.
 
-* **Crear varias versiones de un formulario adaptable**: Ahora puede administrar fácilmente las variaciones de los formularios existentes. Esto simplifica el control de versiones y facilita la comparación para la optimización de formularios, todo dentro de un único flujo de trabajo optimizado.
+* **[Crear varias versiones de un formulario adaptable](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)**: Ahora puede administrar fácilmente las variaciones de los formularios existentes. Esto simplifica el control de versiones y facilita la comparación para la optimización de formularios, todo dentro de un único flujo de trabajo optimizado.
 
-* **Comparar formulario adaptable**: ahora puede comparar fácilmente dos formularios para identificar diferencias entre dos formularios. Facilita una colaboración fluida ya que permite a los miembros del equipo comparar revisiones y discutir cambios de forma eficaz.
+* **[Comparar formulario adaptable](/help/forms/compare-forms.md)**: ahora puede comparar fácilmente dos formularios para identificar diferencias entre dos formularios. Facilita una colaboración fluida ya que permite a los miembros del equipo comparar revisiones y discutir cambios de forma eficaz.
 
 * **Mejoras de accesibilidad para el componente Firma manuscrita**: Esta actualización aporta mejoras significativas de accesibilidad al componente Firma manuscrita:
 
@@ -179,7 +179,7 @@ Esta actualización garantiza una experiencia más inclusiva para los usuarios c
 
   <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> Con Adobe Workfront Fusion Connector, puede diseñar flujos de trabajo que se activan automáticamente al enviar un formulario adaptable. Por ejemplo, imagine un escenario en el que se inicia un flujo de trabajo para asignar a un individuo específico la tarea de revisar los datos enviados, lo que permite la aprobación o el rechazo de una solicitud en función de la información capturada a través del formulario adaptable. Esta integración optimizada mejora la eficacia y aporta un nuevo nivel de automatización a los procesos de flujo de trabajo.|
 
-* **Servicio de extensión de Reader**: las API de comunicación de AEM Forms han incorporado el servicio de extensión de Reader para permitirle añadir funcionalidades como rellenar formularios y hacer comentarios a los PDF habituales, lo que las hace interactivas para los usuarios con el Adobe Reader gratuito.
+* **[Servicio de extensión de Reader](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)**: las API de comunicación de AEM Forms han incorporado el servicio de extensión de Reader para permitirle añadir funcionalidades como rellenar formularios y hacer comentarios a los PDF habituales, lo que las hace interactivas para los usuarios con el Adobe Reader gratuito.
 
 * [Compatibilidad con idiomas de derecha a izquierda](/help/forms/supporting-new-language-localization-core-components.md): los formularios adaptables creados en los componentes principales ahora se pueden presentar en un idioma de derecha a izquierda (RTL) como árabe, persa y urdu.  Más de 2000 millones de personas en todo el mundo hablan los idiomas RTL.  El uso de un formulario en idioma RTL le permite ampliar el alcance de sus formularios adaptables para adaptarse a estas diversas audiencias y seleccionar en los mercados RTL. En ciertas regiones, también es un mandato legal proporcionar formularios en el idioma local.  Al adaptarse a los idiomas locales, no solo abre las puertas a una audiencia más amplia, sino que también garantiza el cumplimiento de las leyes y regulaciones relevantes.
 

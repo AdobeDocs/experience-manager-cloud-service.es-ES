@@ -4,9 +4,9 @@ description: Utilice los componentes principales del formulario adaptable para a
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
 hidefromtoc: true
-source-git-commit: 4e60d7315fe7a92d608f0858a7108f7590e9aefa
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '593'
 ht-degree: 2%
 
 ---
@@ -33,11 +33,11 @@ Las versiones de formularios adaptables ayudan a agregar versiones a un formular
 Para crear una versión de un formulario, siga los pasos a continuación:
 
 1. Cree un formulario o utilice un formulario existente.
-1. AEM En la interfaz de usuario de, vaya a **[!UICONTROL Form]**>>**[!UICONTROL Forms y documentos]** y seleccione su **Form**.
+1. AEM En la interfaz de usuario de, navegue hasta **[!UICONTROL Form]**>>**[!UICONTROL Forms y documentos]** y seleccione su **Form**.
 1. En el menú desplegable de selección del panel izquierdo, seleccione **[!UICONTROL Versiones]**.
    ![Seleccionar un formulario](select-a-form.png)
 1. Haga clic en **tres puntos** situado en el panel inferior de la izquierda, haga clic en **[!UICONTROL Guardar como versión]**.
-1. Ahora proporcione una etiqueta a la versión del formulario y puede proporcionar información sobre el formulario a través del comentario.
+1. Ahora, proporcione una etiqueta a la versión del formulario y puede proporcionar información sobre el formulario a través del comentario.
    ![Crear una versión de formulario](create-a-form-version.png)
 
 ### Actualizar una versión de formulario {#update-a-form-version}
@@ -77,22 +77,15 @@ En muchos casos, los usuarios de grupos de formularios deben agregar anotaciones
 1. Haga clic en **añadir icono** situado en el carril superior derecho, tal como se indica en la imagen.
    ![Anotación](annotation.png)
 
-1. Haga clic en **añadir icono** situado en el carril superior izquierdo, tal como se indica en la imagen, para añadir la notación.
+1. Haga clic en **añadir icono** situado en el carril superior izquierdo, tal como se indica en la imagen, para añadir la anotación.
    ![Añadir anotación](add-annotation.png)
 
-1. Ahora puede agregar comentarios, dibujar bocetos con varios colores, para formar componentes.
+1. Ahora puede agregar comentarios y dibujar bocetos con varios colores para formar componentes.
 
 1. Para ver todas las anotaciones agregadas a un formulario, seleccione el formulario y verá las anotaciones agregadas en el panel izquierdo, como se muestra en la imagen.
 
    ![Ver anotaciones añadidas](see-annotations.png)
 
+## Consulte también {#see-also}
 
-
-
-
-
-
-
-
-
-
+{{see-also}}
