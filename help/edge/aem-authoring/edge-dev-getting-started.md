@@ -3,10 +3,10 @@ title: Guía de introducción para desarrolladores para la creación de contenid
 description: Esta guía le ayudará a ponerse en marcha con un nuevo sitio de Adobe Experience Manager que utiliza Edge Delivery Services y el Editor universal para la creación de contenido.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
+source-git-commit: 7cd19f674d3eae2bcbe2b40402e135d4db6e3035
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1297'
+ht-degree: 88%
 
 ---
 
@@ -130,7 +130,7 @@ Ahora que tiene un proyecto de GitHub, debe crear un nuevo sitio que el proyecto
 >
 >Para editar el sitio con el editor universal, debe utilizar un explorador basado en Chromium.
 
-1. Solicite la última plantilla del sitio de creación de informes de Edge Delivery Services de Adobe Engineering a través de su [canal del Slack del proyecto.](/help/edge/docs/slack.md)
+1. AEM Descargue la última plantilla del sitio Creación de segmentos con Edge Delivery Services de GitHub en [`https://github.com/adobe-rnd/aem-boilerplate-xwalk`](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
 
 1. Inicie sesión en la instancia de creación de AEM as a Cloud Service, vaya a la consola Sitios y pulse o haga clic en **Crear** -> **Sitio a partir de una plantilla**.
 
@@ -141,6 +141,8 @@ Ahora que tiene un proyecto de GitHub, debe crear un nuevo sitio que el proyecto
    ![Importación de plantillas](assets/edge-dev-getting-started/site-templates.png)
 
 1. Cargue la plantilla del sitio Creación de AEM con Edge Delivery Services proporcionada por Adobe Engineering.
+
+   * La plantilla solo debe cargarse una vez. Una vez cargado, puede reutilizarse para crear sitios adicionales.
 
 1. Una vez importada la plantilla, aparecerá en el asistente. Haga clic o pulse para seleccionarla y, a continuación, pulse o haga clic en **Siguiente**.
 
