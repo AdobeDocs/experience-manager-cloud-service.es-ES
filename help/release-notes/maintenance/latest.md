@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 1dd2eae9201c86d2cdac78ff99634eff8ca57a05
 workflow-type: tm+mt
 source-wordcount: '272'
-ht-degree: 83%
+ht-degree: 94%
 
 ---
 
@@ -15,7 +15,7 @@ En la siguiente sección se describen las notas de la versión técnicas actuale
 
 ## Versión 15860 {#release-15860}
 
-A continuación se resumen las mejoras continuas para la versión de mantenimiento 15860, que se publicó el jueves, 10 de abril de 2024. La versión de mantenimiento anterior era 15787.
+A continuación, se resumen las mejoras continuas para la versión de mantenimiento 15860, que se publicó el jueves, 10 de abril de 2024. La versión de mantenimiento anterior fue la 15787.
 
 La activación de funcionalidades 2024.3.0 proporcionará el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es) para obtener más información.
 
@@ -35,7 +35,7 @@ Ninguna.
 
 * [Credenciales JWT de Adobe Developer Console en desuso](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 
-Eche un vistazo a [Funciones y API obsoletas y eliminadas](/help/release-notes/deprecated-removed-features.md) AEM para saber qué se ha desaprobado o eliminado en el as a Cloud Service de la.
+Eche un vistazo a [Funciones y API en desuso y eliminadas](/help/release-notes/deprecated-removed-features.md) para saber qué se ha desaprobado o eliminado en AEM as a Cloud Service.
 
 ### Aviso de cambio {#change-notice-15860}
 
