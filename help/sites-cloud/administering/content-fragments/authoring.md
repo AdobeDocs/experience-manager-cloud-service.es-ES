@@ -4,10 +4,10 @@ description: Aprenda a crear contenido para los fragmentos de contenido y a crea
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 6353bd50c1df43d9ce11616f71a69d8bfb5ab338
 workflow-type: tm+mt
-source-wordcount: '2266'
-ht-degree: 4%
+source-wordcount: '2381'
+ht-degree: 8%
 
 ---
 
@@ -52,12 +52,12 @@ Cuando abra el Editor de fragmentos de contenido por primera vez, verá cuatro �
      >
      >El editor original se abre en la misma pestaña. No se recomienda tener ambos editores abiertos al mismo tiempo.
 
-* panel izquierdo: muestra el **[Variaciones](#variations)** para el fragmento de contenido y su **Campos**:
+* panel izquierdo: muestra las **[Variaciones](#variations)** para el fragmento de contenido y sus **Campos**:
    * estos vínculos se pueden utilizar para lo siguiente: [Navegar por la estructura de fragmentos de contenido](#navigate-structure)
 * panel derecho: presenta pestañas [mostrar las propiedades (metadatos) y etiquetas](#view-properties-tags), información acerca de [historial de versiones](#view-version-history), e información relacionada con cualquier [copias de idioma](#view-language-copies)
-   * en el **Propiedades** puede actualizar la pestaña **Título** y **Descripción** para el fragmento, o **Variación**
+   * en **Propiedades** puede actualizar la pestaña **Título** y **Descripción** para el fragmento o **Variación**
 * panel central: muestra los campos y el contenido reales de la variación seleccionada
-   * le permite editar el contenido
+   * permite editar el contenido
    * if **Marcador de ficha** Los campos de se definen dentro del modelo que se muestra aquí y pueden utilizarse para navegar; se presentarán horizontalmente o como una lista desplegable.
 
   >[!NOTE]
@@ -371,6 +371,27 @@ En el **Historial de versiones** del panel derecho, se muestran los detalles de 
 
 ![Editor de fragmentos de contenido: información general del historial de versiones](assets/cf-authoring-version-history-overview.png)
 
+### Comparar versión {#compare-version}
+
+Para un fragmento de contenido, puede comparar una versión anterior con la versión actual.
+
+Para comparar una versión anterior con la actual:
+
+1. Seleccione el icono de tres puntos junto a la versión.
+
+1. Seleccionar **Comparar**.
+
+![Editor de fragmentos de contenido: comparación del historial de versiones](assets/cf-authoring-version-history-compare.png)
+
+Esto abre una vista que muestra las diferencias entre la versión actual del contenido y la versión anterior seleccionada del fragmento de contenido. Desde el **Variaciones con cambios** , puede seleccionar ver las diferencias en el contenido principal y/o en el contenido de una variación.
+
+Las diferencias se indican por color:
+
+* Verde: indica el contenido añadido (a la versión actual)
+* Rojo: indica el contenido eliminado (de la versión actual)
+
+![Editor de fragmentos de contenido: historial de versiones Comparar versiones](assets/cf-authoring-version-history-compare-versions.png)
+
 ### Volver a esta versión {#revert-version}
 
 Puede volver a cualquier versión.
@@ -379,7 +400,7 @@ Para volver a una versión específica:
 
 1. Seleccione el icono de tres puntos junto a la versión.
 
-1. Seleccionar **Revertir**.
+1. Selecciona **Revertir**.
 
 ![Editor de fragmentos de contenido: revertir historial de versiones](assets/cf-authoring-version-history-revert.png)
 

@@ -4,10 +4,10 @@ description: AEM Obtenga información sobre cómo administrar los fragmentos de 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 3c550a08983ce198a6718d0c2120f1f5001fb28d
+source-git-commit: 404eb317562f974f72820c6e3aa019fbe043d7f7
 workflow-type: tm+mt
-source-wordcount: '2629'
-ht-degree: 46%
+source-wordcount: '2643'
+ht-degree: 45%
 
 ---
 
@@ -449,6 +449,7 @@ El panel Filtro ofrece lo siguiente:
 * una selección de predicados;
    * incluyendo modelos de fragmentos de contenido, localización, etiquetas, campos de estado, entre otros
    * se pueden seleccionar uno o más predicados y combinarlos para crear el filtro
+* **Excluir elementos de subcarpeta**, lo que le permite excluir fragmentos de contenido almacenados en subcarpetas
 * la oportunidad de **Guardar** su configuración
 * la opción recuperar un filtro de búsqueda guardada para reutilizarlo
 
