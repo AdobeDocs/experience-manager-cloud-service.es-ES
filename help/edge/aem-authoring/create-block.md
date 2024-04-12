@@ -2,10 +2,10 @@
 title: Creación de bloques instrumentados para su uso con el editor universal
 description: Aprenda a crear bloques instrumentados para utilizarlos con el editor universal en la creación de AEM con proyectos de Edge Delivery Services.
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
-source-git-commit: cc41ff626f6fc6d72785401e3ba38b189945bf74
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 93%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -255,3 +255,4 @@ Consulte el documento [AEM Modelado de contenido para la creación de con proyec
 >[!TIP]
 >
 >Para obtener una guía completa sobre la creación de un nuevo proyecto de Edge Delivery Services AEM AEM habilitado para la creación de contenido con el fin de crear un grupo de usuarios con el fin de crear un grupo de usuarios con el fin de crear un grupo de usuarios que esté as a Cloud Service para la creación de contenido, vea la sección [AEM Este seminario web de GEM de la.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+

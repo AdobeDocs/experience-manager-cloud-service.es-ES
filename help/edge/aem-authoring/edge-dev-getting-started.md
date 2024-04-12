@@ -3,10 +3,10 @@ title: Guía de introducción para desarrolladores para la creación de contenid
 description: Esta guía le ayudará a ponerse en marcha con un nuevo sitio de Adobe Experience Manager que utiliza Edge Delivery Services y el Editor universal para la creación de contenido.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: 61d65c37d263edef641db42589fc0f28a8eb9078
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
-source-wordcount: '1284'
-ht-degree: 90%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -197,3 +197,4 @@ Consulte la guía [Creación de bloques instrumentados para su uso con el editor
 >[!TIP]
 >
 >Para obtener una guía completa sobre la creación de un nuevo proyecto de Edge Delivery Services AEM AEM habilitado para la creación de contenido con el fin de crear un grupo de usuarios con el fin de crear un grupo de usuarios con el fin de crear un grupo de usuarios que esté as a Cloud Service para la creación de contenido, vea la sección [AEM Este seminario web de GEM de la.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+

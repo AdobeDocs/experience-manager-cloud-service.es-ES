@@ -2,10 +2,10 @@
 title: Modelado de contenido para la creación de AEM con proyectos de Edge Delivery Services
 description: Aprenda cómo funciona el modelado de contenido para la creación de contenido de AEM con proyectos de Edge Delivery Services y cómo modelar su propio contenido.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
-source-git-commit: bf6d0ff2f4aebb6620be46704072743578b096d2
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
-source-wordcount: '2233'
-ht-degree: 93%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -657,3 +657,4 @@ Si ya está familiarizado con la creación de bloques, consulte el documento [AE
 >[!TIP]
 >
 >Para obtener una guía completa sobre la creación de un nuevo proyecto de Edge Delivery Services AEM AEM habilitado para la creación de contenido con el fin de crear un grupo de usuarios con el fin de crear un grupo de usuarios con el fin de crear un grupo de usuarios que esté as a Cloud Service para la creación de contenido, vea la sección [AEM Este seminario web de GEM de la.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+

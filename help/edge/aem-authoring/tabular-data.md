@@ -3,7 +3,7 @@ title: Uso de hojas de cálculo para administrar datos tabulares
 description: Aprenda a utilizar hojas de cálculo para administrar los datos tabulares para varios valores, como metadatos y redirecciones para su sitio de AEM con Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
-source-git-commit: 61d65c37d263edef641db42589fc0f28a8eb9078
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 100%
@@ -163,3 +163,4 @@ Además, puede [crear su propia hoja de cálculo](#own-spreadsheet) con columnas
 1. Cree la hoja de cálculo y publíquela según las instrucciones de la hoja de cálculo de redirecciones.
 
 1. Añada una asignación al archivo `paths.json` según las instrucciones de la hoja de cálculo de redirecciones.
+
