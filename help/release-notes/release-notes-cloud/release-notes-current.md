@@ -3,9 +3,9 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
+source-git-commit: 0ef1e1915f2fdbe44cff209851eb43cc9d69958e
 workflow-type: tm+mt
-source-wordcount: '2285'
+source-wordcount: '2261'
 ht-degree: 34%
 
 ---
@@ -32,11 +32,13 @@ La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Ex
 
 Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help/release-notes/maintenance/latest.md).
 
-## Vídeo de la versión {#release-video}
+<!-- ## Release Video {#release-video}
 
-Eche un vistazo al vídeo Información general sobre la versión de marzo de 2024 para ver un resumen de las funciones añadidas en la versión 2024.3.0:
+Have a look at the March 2024 Release Overview video for a summary of the features added in the 2024.3.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
+
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -170,8 +172,6 @@ Estos servicios le permiten:
    * Cuando se escribe una firma, los usuarios del lector de pantalla pueden oír el texto utilizado para crearla.
 
 Esta actualización garantiza una experiencia más inclusiva para los usuarios con discapacidades al mejorar la navegación, la claridad y los comentarios del componente Firma manuscrita.
-
-
 
 ### Programa para primeros usuarios {#forms-early-adopter}
 
