@@ -2,9 +2,9 @@
 title: Ingesta de contenido en Cloud Service
 description: Aprenda a utilizar Cloud Acceleration Manager para introducir contenido del conjunto de migración en una instancia de Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: de05abac3620b254343196a283cef198f434cfca
+source-git-commit: 727fbc49657de752ac6daeb38b5a9d7aba331a5c
 workflow-type: tm+mt
-source-wordcount: '2752'
+source-wordcount: '2876'
 ht-degree: 11%
 
 ---
@@ -60,6 +60,19 @@ Siga los pasos a continuación para ingerir el conjunto de migración mediante C
 
    >[!IMPORTANT]
    > Solo puede iniciar una ingesta en el entorno de destino si pertenece al entorno local de **AEM administradores de** en el servicio de creación del Cloud Service de destino. Si no puede iniciar una ingesta, consulte [No se puede iniciar la ingesta](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) para obtener más información.
+
+1. Una vez seleccionadas las opciones de ingesta, se mostrará una estimación de su duración. Se trata de una estimación del esfuerzo máximo basada en datos históricos de ingestas similares.
+
+   * Esta estimación solo se calcula y se muestra si los valores &quot;Comprobar tamaño&quot; de la extracción se recopilaron y están disponibles.
+   * Este valor es una estimación y, aunque se calcula de forma inteligente, no debe considerarse exacto. Varios factores pueden cambiar la duración real.
+   * Mientras se esté ejecutando la ingesta, este valor también estará disponible en el cuadro de diálogo de duraciones, al que se accede a través de &quot;**Ver duraciones**&quot; acción de la ingesta.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_estimate"
+>title="Estimación de duración de ingesta"
+>abstract="Se puede mostrar una duración aproximada de una ingesta determinada para proporcionar una idea general de cuánto tiempo tardará. Existen limitaciones a su precisión."
+
+![imagen](/help/journey-migration/content-transfer-tool/assets/estimate.png)
 
 1. Clic **Ingesta**.
 
