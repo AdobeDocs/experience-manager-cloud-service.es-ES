@@ -4,9 +4,9 @@ description: AEM Obtenga información sobre cómo administrar los fragmentos de 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+source-git-commit: 3c550a08983ce198a6718d0c2120f1f5001fb28d
 workflow-type: tm+mt
-source-wordcount: '2620'
+source-wordcount: '2629'
 ht-degree: 46%
 
 ---
@@ -72,6 +72,8 @@ Para obtener más información detallada, consulte:
 
 Seleccionar **Fragmentos de contenido** abre la consola en una nueva pestaña.
 
+<!-- CQDOC-21349: screenshot -->
+
 ![Consola Fragmentos de contenido: información general](assets/cf-managing-console-overview.png)
 
 Aquí se pueden ver tres áreas principales:
@@ -84,6 +86,7 @@ Aquí se pueden ver tres áreas principales:
    * Aquí puede ocultar o mostrar el árbol de carpetas
    * Puede seleccionar una rama específica del árbol
    * Se puede cambiar el tamaño para mostrar carpetas anidadas
+   * Puede seleccionar entre ver fragmentos de contenido o [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 * Panel principal/derecho, desde aquí puede hacer lo siguiente:
    * Consulte la lista de todos los fragmentos de contenido en la rama seleccionada del árbol:
       * Se mostrarán los fragmentos de contenido de la carpeta seleccionada y todas las carpetas secundarias:
@@ -132,6 +135,8 @@ Algunas acciones están disponibles desde la consola, sin seleccionar un fragmen
 #### Acciones para un fragmento de contenido (seleccionado) {#actions-selected-content-fragment}
 
 Al seleccionar un fragmento específico, se abre una barra de herramientas centrada en las acciones disponibles para dicho fragmento. También puede seleccionar varios fragmentos: la selección de acciones se ajustará en consecuencia.
+
+<!-- CQDOC-21349: screenshot -->
 
 ![Consola Fragmentos de contenido: barra de herramientas para un fragmento seleccionado](assets/cf-managing-console-fragment-toolbar.png)
 
@@ -368,6 +373,8 @@ Cuando se abra el cuadro de diálogo correspondiente, puede seleccionar el servi
 
 ## Buscar y reemplazar {#find-and-replace}
 
+<!-- CQDOC-21349: screenshot -->
+
 El **Reemplazar** La acción está disponible (en la barra de herramientas superior) para buscar y reemplazar el texto especificado en los fragmentos de contenido seleccionados.
 
 ![Buscar y reemplazar](assets/cf-managing-find-replace.png)
@@ -380,8 +387,9 @@ Antes del reemplazo, se comprueban los criterios de validación y se le informa 
 >
 >Si selecciona más de 20 fragmentos de contenido, verá el mensaje **No se puede encontrar y reemplazar**.
 
-![Confirmar reemplazo](assets/cf-managing-confirm-replace.png)
+<!-- CQDOC-21349: screenshot -->
 
+![Confirmar reemplazo](assets/cf-managing-confirm-replace.png)
 
 ## Eliminación de un fragmento {#deleting-a-fragment}
 
@@ -446,6 +454,8 @@ El panel Filtro ofrece lo siguiente:
 
 Una vez seleccionada, la variable **Filtrado por** Las opciones de se muestran (debajo del cuadro Buscar ). Se pueden anular las selecciones desde allí. Por ejemplo:
 
+<!-- CQDOC-21349: screenshot -->
+
 ![Consola Fragmentos de contenido: filtrado](assets/cf-managing-console-filter.png)
 
 ### Filtrado rápido {#fast-filtering}
@@ -468,9 +478,13 @@ Cuando se seleccione, aparecerá como un predicado de filtro y la lista se filtr
 
 El cuadro de búsqueda admite la búsqueda de texto completo. Introducción de los términos de búsqueda en el cuadro de búsqueda:
 
+<!-- CQDOC-21349: screenshot -->
+
 ![Consola Fragmentos de contenido: búsqueda](assets/cf-managing-console-search-specification.png)
 
 Proporcionará los resultados seleccionados:
+
+<!-- CQDOC-21349: screenshot -->
 
 ![Consola Fragmentos de contenido: resultados de búsqueda](assets/cf-managing-console-search-results.png)
 

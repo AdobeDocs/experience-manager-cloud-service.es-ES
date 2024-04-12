@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
 workflow-type: tm+mt
-source-wordcount: '1587'
+source-wordcount: '1631'
 ht-degree: 3%
 
 ---
@@ -22,6 +22,10 @@ ht-degree: 3%
 ## Información general {#overview}
 
 El [!DNL Assets] La API HTTP permite realizar operaciones de creación, lectura, actualización y eliminación (CRUD) en recursos digitales, incluidos metadatos, representaciones y comentarios, así como contenido estructurado mediante [!DNL Experience Manager] Fragmentos de contenido. Se expone en `/api/assets` y se implementa como API de REST. Incluye [compatibilidad con fragmentos de contenido](/help/assets/content-fragments/assets-api-content-fragments.md).
+
+>[!NOTE]
+>
+>El [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) también están disponibles.
 
 Para acceder a la API:
 
@@ -40,9 +44,17 @@ A [Fragmento de contenido](/help/assets/content-fragments/content-fragments.md) 
 
 Para obtener más información, consulte [Compatibilidad con fragmentos de contenido en [!DNL Experience Manager Assets] API HTTP](/help/assets/content-fragments/assets-api-content-fragments.md).
 
+>[!NOTE]
+>
+>El [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) también están disponibles.
+
 ## Modelo de datos {#data-model}
 
 El [!DNL Assets] La API HTTP expone dos elementos principales, carpetas y recursos (para recursos estándar). Además, expone elementos más detallados para los modelos de datos personalizados que describen el contenido estructurado en Fragmentos de contenido. Consulte [Modelos de datos de fragmentos de contenido](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) para obtener más información.
+
+>[!NOTE]
+>
+>El [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) también están disponibles.
 
 ### Carpetas {#folders}
 
@@ -75,6 +87,10 @@ Entrada [!DNL Experience Manager] un recurso contiene los siguientes elementos:
 * Comentarios opcionales.
 
 Para obtener información sobre los elementos de los fragmentos de contenido, consulte [Compatibilidad con fragmentos de contenido en la API HTTP de Experience Manager Assets](/help/assets/content-fragments/assets-api-content-fragments.md).
+
+>[!NOTE]
+>
+>El [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) también están disponibles.
 
 Entrada [!DNL Experience Manager] una carpeta tiene los siguientes componentes:
 
@@ -138,7 +154,7 @@ Una llamada de API falla con un `500` código de respuesta si el nodo principal 
 
 **Parámetros**: `name` es el nombre de la carpeta.
 
-**Solicitud**
+**Petición**
 
 * `POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"title":"My Folder"}}'`
 * `POST /api/assets/* -F"name=myfolder" -F"title=My Folder"`
@@ -177,7 +193,7 @@ Crear una representación para un recurso. Si no se proporciona el nombre del pa
 
 **Parámetros**: los parámetros son `name` para el nombre de la representación y `file` como referencia de archivo.
 
-**Solicitud**
+**Petición**
 
 * `POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"`
 * `POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"`
@@ -257,7 +273,7 @@ Mueve una carpeta o un recurso en la ruta determinada a un nuevo destino.
 
 Elimina un recurso (-tree) en la ruta proporcionada.
 
-**Solicitud**
+**Petición**
 
 * `DELETE /api/assets/myFolder`
 * `DELETE /api/assets/myFolder/myAsset.png`

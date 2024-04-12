@@ -2,10 +2,10 @@
 title: 'Creación de una solicitud de API: configuración sin encabezado'
 description: Aprenda a utilizar la API de GraphQL para la entrega sin encabezado de contenido de fragmentos de contenido y la API de REST de Assets de AEM para administrar fragmentos de contenido.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 92%
+source-wordcount: '674'
+ht-degree: 90%
 
 ---
 
@@ -20,6 +20,10 @@ Aprenda a utilizar la API de GraphQL para la entrega sin encabezado de contenido
 * [La API de GraphQL](/help/headless/graphql-api/content-fragments.md) permite crear solicitudes para acceder a fragmentos de contenido y enviarlos. Esta API ofrece el conjunto más sólido de funciones para consultar y consumir contenido de fragmentos de contenido.
    * Para utilizar la API, [defina y habilite puntos finales en AEM](/help/headless/graphql-api/graphql-endpoint.md) y, si es necesario, la [interfaz de GraphiQL instalada](/help/headless/graphql-api/graphiql-ide.md).
 * [La API de REST de Assets](/help/assets/content-fragments/assets-api-content-fragments.md) permite crear y modificar fragmentos de contenido (y otros recursos).
+
+>[!NOTE]
+>
+>El [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) también están disponibles.
 
 El resto de esta guía se centra en el acceso a GraphQL y la entrega de fragmentos de contenido.
 
@@ -51,7 +55,7 @@ GraphiQL es un IDE, incluido en su entorno AEM; es accesible/visible después de
 
    Puede acceder al editor de consultas desde:
 
-   * **Herramientas** > **General** > **Editor de consultas de GraphQL**
+   * **Herramientas** > **General** > **Editor de consultas de GraphQL**
    * directamente; por ejemplo, `http://localhost:4502/aem/graphiql.html`
 
 1. El IDE de GraphiQL es un editor de consultas en el explorador para GraphQL. Puede utilizarlo para generar consultas, recuperar fragmentos de contenido y entregarlos sin encabezado como JSON.
@@ -99,3 +103,7 @@ GraphQL puede evitar las solicitudes de API iterativas y el exceso de entrega, y
 * **[Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md)**: para obtener más información acerca de la creación y administración de fragmentos de contenido
 * **[Compatibilidad con fragmentos de contenido en la API HTTP de AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)**: para obtener más información sobre el acceso al contenido de AEM directamente a través de la API HTTP, mediante las operaciones CRUD (Crear, Leer, Actualizar, Eliminar)
 * **[API de GraphQL](/help/headless/graphql-api/content-fragments.md)**: para obtener más información sobre cómo enviar fragmentos de contenido sin encabezado
+
+>[!NOTE]
+>
+>El [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) también están disponibles.

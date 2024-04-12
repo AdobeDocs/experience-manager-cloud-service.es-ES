@@ -3,7 +3,7 @@ title: Introducción a Edge Delivery Services de AEM Forms, Tutorial para desarr
 description: Este tutorial le ayudará a ponerse en marcha con un nuevo proyecto de Adobe Experience Manager Forms (AEM). En diez a veinte minutos, habrá creado sus propios formularios.
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
-source-git-commit: 74e3bc79a734bd2c686e28cdcbbda96a58268c77
+source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
 workflow-type: tm+mt
 source-wordcount: '1848'
 ht-degree: 99%
@@ -255,7 +255,8 @@ La carpeta Bloque de Formularios adaptables `blocks/form` es su patio de recreo 
 
 Vista previa: `https://<branch>--<repo>--<owner>.hlx.page/`
 Producción: `https://<branch>--<repo>--<owner>.hlx.live/`
-¡Felicitaciones! Ha configurado correctamente su entorno de desarrollo local e implementado los cambios.
+
+Felicitaciones. Ha configurado correctamente su entorno de desarrollo local e implementado los cambios.
 
 
 

@@ -2,13 +2,13 @@
 title: Solución de problemas de consultas persistentes de GraphQL
 description: Obtenga información sobre cómo solucionar problemas con consultas de GraphQL persistentes en Adobe Experience Manager as a Cloud Service.
 feature: Content Fragments,GraphQL API
-source-git-commit: c8ea9846600d1773e6f269973635f5338f31906f
+exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
+source-git-commit: 220e86f18e4a61304764753d8daecb68503e9fd0
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
-
 
 # Solucionar problemas de consultas de GraphQL persistentes {#troubleshoot-persisted-graphql-queries}
 
@@ -34,13 +34,13 @@ Para solucionarlo, haga lo siguiente:
 
 ## Extremo de GraphQL no configurado {#graphql-endpoint-not-configured}
 
-Cuando las consultas persistentes devuelven el `400` o `500` código de error, junto con la información `No suitable endpoint found`, esto significa que no hay ningún extremo de GraphQL AEM configurado en el entorno de la.
+Cuando las consultas persistentes devuelven el `404` código de error, junto con la información `No suitable endpoint found`, esto significa que no hay ningún extremo de GraphQL AEM configurado en el entorno de la.
 
 Para corregir esto, siga los pasos para habilitar y publicar el extremo desde [Administrar puntos finales de GraphQL AEM en la administración de](/help/headless/graphql-api/graphql-endpoint.md).
 
 ## Falta ruta en la URL de la consulta persistente de GraphQL {#missing-path-query-url}
 
-Si las consultas persistentes devuelven el `400` o `500` código de error con la información `Suffix: '/' does not contain a path`, se llama al servlet de GraphQL sin un sufijo de ruta.
+Si las consultas persistentes devuelven el `400` código de error con la información `Suffix: '/' does not contain a path`, se llama al servlet de GraphQL sin un sufijo de ruta.
 
 El patrón debe ser `/graphql/execute.json/thePath`.
 

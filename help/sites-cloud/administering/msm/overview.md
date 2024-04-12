@@ -4,10 +4,10 @@ description: Obtenga una introducción para reutilizar contenido con las potente
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 0a4f9edba00e65439a306024c604e6935c8bac47
 workflow-type: tm+mt
-source-wordcount: '2702'
-ht-degree: 93%
+source-wordcount: '2721'
+ht-degree: 92%
 
 ---
 
@@ -141,6 +141,10 @@ Se puede acceder directamente a MSM desde la IU mediante diversas opciones desde
 * **Modelos** (**Herramientas** - **Sites**)
 
    * Esta consola le permite [cree y administre sus configuraciones de modelo.](creating-live-copies.md#creating-a-blueprint-configuration)
+
+>[!NOTE]
+>
+>MSM se puede utilizar con ambas páginas y [Fragmentos de experiencias](/help/sites-cloud/authoring/fragments/experience-fragments.md) ya que estos fragmentos forman parte de una experiencia (página).
 
 >[!NOTE]
 >

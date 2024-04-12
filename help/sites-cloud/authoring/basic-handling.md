@@ -2,10 +2,10 @@
 title: Gestión básica
 description: Familiarícese con la navegación por AEM y su uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 7e0ca5dad5cd53c2304e2eba48a5131d587967ef
+source-git-commit: 40759b8c07833b0927fa374b906d4202bf258249
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 63%
+source-wordcount: '954'
+ht-degree: 61%
 
 ---
 
@@ -75,10 +75,11 @@ En Navegación, las consolas disponibles son:
 | Assets | La consola Recursos le permite importar y administrar [recursos digitales, como imágenes, vídeos, documentos y archivos de audio](/help/assets/overview.md). Estos recursos se pueden utilizar en cualquier sitio web que ejecute la misma instancia de AEM. También puede crear y administrar [Fragmentos de contenido](/help/assets/content-fragments/content-fragments.md) desde la consola Recursos. |
 | Personalización | [Esta consola ofrece un marco de herramientas para crear contenido dirigido y presentar experiencias personalizadas](/help/sites-cloud/authoring/personalization/overview.md). |
 | Fragmentos de contenido | [Los fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md) permiten diseñar, crear, depurar y publicar contenido independiente de cualquier página. Permiten preparar contenido estructurado listo para su uso en varias ubicaciones/en varios canales, y es ideal tanto para la creación de páginas como para la entrega sin encabezado. |
+| Generar variaciones | [Generar variaciones](/help/generative-ai/generate-variations.md) utiliza inteligencia artificial generativa (IA) para crear variaciones de contenido basadas en indicadores; estos indicadores los proporciona Adobe o los crean y administran los usuarios. |
 
 ## Panel de herramientas {#tools-panel}
 
-En el **Herramientas** tiene un panel lateral que contiene una serie de categorías, que agrupan consolas similares. El **Herramientas** las consolas proporcionan acceso a varias herramientas y consolas especializadas que le ayudan a administrar sus sitios web, recursos digitales y otros aspectos de su repositorio de contenido. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+El **Herramientas** tiene un panel lateral que contiene una serie de categorías, que agrupan consolas similares. El **Herramientas** las consolas proporcionan acceso a varias herramientas y consolas especializadas que le ayudan a administrar sus sitios web, recursos digitales y otros aspectos de su repositorio de contenido.
 
 ![Panel de herramientas](assets/basic-handling-tools.png)
 

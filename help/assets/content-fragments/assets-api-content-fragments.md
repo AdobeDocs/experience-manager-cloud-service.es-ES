@@ -3,9 +3,9 @@ title: Compatibilidad con fragmentos de contenido de Adobe Experience Manager as
 description: Obtenga información acerca de la compatibilidad con fragmentos de contenido en la API HTTP de Assets, una parte importante de la función de entrega sin encabezado de Adobe Experience Manager.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 47666e87b1cb87577291304336e0219481b7b4e2
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1804'
 ht-degree: 11%
 
 ---
@@ -20,6 +20,10 @@ ht-degree: 11%
 | AEM as a Cloud Service | Este artículo |
 
 Obtenga información acerca de la compatibilidad con fragmentos de contenido en la API HTTP de Assets, una parte importante de la función de entrega sin encabezado de Adobe Experience Manager AEM ().
+
+>[!NOTE]
+>
+>El [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) también están disponibles.
 
 >[!NOTE]
 >
@@ -91,6 +95,10 @@ El método HTTP determina la operación que se va a ejecutar:
 >El cuerpo de solicitud o los parámetros de URL se pueden usar para configurar algunas de estas operaciones; por ejemplo, definir que una carpeta o un recurso deben crearse mediante una solicitud **POST**.
 
 El formato exacto de las solicitudes admitidas se define en la variable [Referencia de API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) documentación.
+
+>[!NOTE]
+>
+>El [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) también están disponibles.
 
 ### Comportamiento transaccional {#transactional-behavior}
 
@@ -167,6 +175,10 @@ Para obtener más información sobre las funciones disponibles a través de la A
 
 * El [API de REST de Assets](/help/assets/mac-api-assets.md)
 * [Tipos de entidad](/help/assets/content-fragments/assets-api-content-fragments.md#entity-types), donde se explican las funciones específicas de cada tipo admitido (según corresponda a los fragmentos de contenido)
+
+>[!NOTE]
+>
+>El [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) también están disponibles.
 
 ### Paginación {#paging}
 
@@ -262,6 +274,8 @@ AEM El uso puede variar en función de si utiliza un entorno de autor o publicac
 >[!NOTE]
 >
 >Consulte la [Referencia de API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). En particular, la [API de Adobe Experience Manager Assets: fragmentos de contenido](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>
+>El [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) también están disponibles.
 
 ## Restricciones {#limitations}
 
@@ -352,6 +366,8 @@ Consulte aquí las referencias detalladas de la API:
 * [API HTTP de recursos](/help/assets/mac-api-assets.md)
 
    * [Funciones disponibles](/help/assets/mac-api-assets.md#available-features)
+
+* El [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) también están disponibles.
 
 ## Recursos adicionales {#additional-resources}
 
