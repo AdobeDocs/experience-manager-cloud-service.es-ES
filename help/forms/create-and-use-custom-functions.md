@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 9582cd8c7777544fde5d13fcd79cfec318e3f780
+source-git-commit: bc040f29a8912c5901ddb71bd32ee2d2a97d3eec
 workflow-type: tm+mt
 source-wordcount: '3104'
 ht-degree: 4%
@@ -155,7 +155,7 @@ La función personalizada, declarada como privada, no aparece en la lista de fun
 
 Para enumerar las funciones personalizadas en el editor de reglas, puede utilizar cualquiera de los siguientes formatos:
 
-* **Instrucción de función con o sin comentarios jsdoc**
+### **Instrucción de función con o sin comentarios jsdoc**
 
 Puede crear una función personalizada con o sin comentarios jsdoc.
 
@@ -167,7 +167,7 @@ Puede crear una función personalizada con o sin comentarios jsdoc.
 ```
 Si el usuario no agrega anotaciones JavaScript a la función personalizada, aparece en el editor de reglas por su nombre de función. Sin embargo, se recomienda incluir anotaciones de JavaScript para mejorar la legibilidad de las funciones personalizadas.
 
-* **Función de flecha con anotaciones o comentarios JavaScript obligatorios**
+### **Función de flecha con anotaciones o comentarios JavaScript obligatorios**
 
 Puede crear una función personalizada con una sintaxis de función de flecha:
 
@@ -191,7 +191,7 @@ Puede crear una función personalizada con una sintaxis de función de flecha:
 
 Si el usuario no agrega anotaciones JavaScript a la función personalizada, esta no aparece en la lista del editor de reglas de un formulario adaptable.
 
-* **Expresión de función con anotaciones o comentarios JavaScript obligatorios**
+### **Expresión de función con anotaciones o comentarios JavaScript obligatorios**
 
 Para enumerar funciones personalizadas en el editor de reglas de un formulario adaptable, cree funciones personalizadas en el siguiente formato:
 
