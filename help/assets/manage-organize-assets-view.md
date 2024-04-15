@@ -3,10 +3,11 @@ title: Administración de recursos digitales
 description: Mueva, elimine, copie, cambie de nombre, actualice y convierta en versión los recursos en [!DNL Assets view].
 role: User,Leader
 contentOwner: AG
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
+source-git-commit: e2a0e93a4ff01d9a180fcf1ad097ccbfb354fc0f
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 92%
+source-wordcount: '1062'
+ht-degree: 88%
 
 ---
 
@@ -28,6 +29,7 @@ Use [!DNL Assets view] para llevar a cabo las siguientes tareas de administraci�
 * ![icono de copia](assets/do-not-localize/copy-icon.png) Copie el archivo o la carpeta seleccionados.
 * ![icono de movimiento](assets/do-not-localize/move-icon.png) Mueva el recurso o la carpeta seleccionados a una ubicación diferente en la jerarquía del repositorio.
 * ![icono de cambio de nombre](assets/do-not-localize/rename-icon.png) Cambie el nombre del recurso o la carpeta seleccionados. Utilice un nombre único, si no, el cambio de nombre producirá un error con una advertencia. Puede intentarlo de nuevo con un nombre nuevo.
+Además, puede hacer clic en el título de un recurso o de una carpeta para cambiarle el nombre. Mencione el nuevo texto en la **Cambiar nombre de recurso** y haga clic en **Guardar**. Esta funcionalidad está disponible en las vistas Cuadrícula, Galería, Cascada y Lista. <!--in-place rename-->
 * ![icono de asignación de tarea](assets/do-not-localize/review-delegate-icon.png) Asigne tareas a otros usuarios para colaborar en un recurso.
 
 Puede ver las mismas opciones en las miniaturas de recursos.
