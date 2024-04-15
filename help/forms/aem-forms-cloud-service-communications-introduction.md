@@ -2,13 +2,12 @@
 title: ¿Qué son las API de comunicaciones de Forms as a Cloud Service?
 description: Utilice las API de comunicaciones para firmar, certificar o proteger sus documentos, automatizar los procesos de generación de documentos PDF y convertirlos a otro formato.
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
-exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
+source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
 workflow-type: tm+mt
-source-wordcount: '1964'
-ht-degree: 72%
+source-wordcount: '1982'
+ht-degree: 73%
 
 ---
 
@@ -193,10 +192,12 @@ Tanto las API de firma como las de encriptado son [API sincrónicas](#types-of-c
 
 ### Servicio Extensiones de Reader
 
-<span class="preview"> La capacidad del Servicio de extensión para Reader está incluida en el Programa de adopción anticipada. Puede escribir a `aem-forms-ea@adobe.com` desde su id de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez y solicitar acceso a esta capacidad. </span>
+<span class="preview"> La capacidad del Servicio de extensión para Reader está incluida en el Programa de adopción anticipada. Puede escribir a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez y solicitar acceso a esta capacidad. </span>
 
-El servicio Extensiones de Reader permite a su organización compartir fácilmente documentos interactivos de PDF mediante la ampliación de la funcionalidad de Adobe Reader con derechos de uso adicionales. El servicio Extensiones de Reader funciona con Adobe Reader. El servicio agrega derechos de uso a un documento PDF. Esta acción activa funciones que normalmente no están disponibles cuando se abre un documento de PDF con Adobe Reader, como agregar comentarios a un documento, rellenar formularios y guardar el documento.
+El servicio Extensiones de Reader permite a su organización compartir fácilmente documentos interactivos de PDF mediante la ampliación de la funcionalidad de Adobe Reader con derechos de uso adicionales. El servicio Extensiones de Reader es compatible con Adobe Reader 7.0 o versiones posteriores. El servicio agrega derechos de uso a un documento PDF. Esta acción activa funciones que normalmente no están disponibles cuando se abre un documento de PDF con Adobe Reader, como agregar comentarios a un documento, rellenar formularios y guardar el documento.
 
+>[!NOTE]
+>Los usuarios de terceros no requieren software ni complementos adicionales para trabajar con los documentos con derechos activados.
 
 Cuando se agregan los derechos de uso correspondientes a los documentos PDF, los destinatarios pueden realizar las siguientes actividades desde Adobe Reader:
 
@@ -242,7 +243,7 @@ Las distintas funciones de derechos de uso de Reader Extension Services son:
 * **Mensaje**: mensaje que se muestra en Adobe Acrobat Reader al abrir un documento de PDF con uno o más derechos de uso aplicados.
 * **Desbloquear contraseña**: contraseña necesaria para abrir un documento de PDF cifrado. Normalmente, esta es la contraseña de apertura del documento, pero si el documento de PDF está protegido además por una contraseña de permisos, puede utilizarse para abrirlo.
 
-La [documentación de referencia de la API](https://adobe-aem-document-experimental.redoc.ly/) ofrece información detallada sobre todos los parámetros, métodos de autenticación y diversos servicios que ofrecen las API. La documentación de referencia de la API también está disponible en formato .yaml. Puede descargar el .yaml y cargarlo en Postman para comprobar la funcionalidad de las API.
+La [documentación de referencia de la API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) ofrece información detallada sobre todos los parámetros, métodos de autenticación y diversos servicios que ofrecen las API. La documentación de referencia de la API también está disponible en formato .yaml. Puede descargar el .yaml y cargarlo en Postman para comprobar la funcionalidad de las API.
 
 ## Tipos de API de comunicaciones {#types}
 
