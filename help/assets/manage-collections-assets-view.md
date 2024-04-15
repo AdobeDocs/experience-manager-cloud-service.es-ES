@@ -1,10 +1,11 @@
 ---
 title: Administrar colecciones
 description: Una colección es un conjunto de recursos dentro de la vista de Experience Manager Assets. Utilice las colecciones para compartir recursos entre los usuarios.
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
+source-git-commit: 24c92e3a8ea20696cd39a5070f161d45d09d6f69
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 89%
+source-wordcount: '919'
+ht-degree: 77%
 
 ---
 
@@ -46,6 +47,8 @@ Puede realizar las siguientes tareas para administrar y utilizar colecciones:
 * [Descargar una colección](#download-collection)
 
 * [Eliminar una colección](#delete-collection)
+
+* [Administración de permisos en una colección privada](#manage-permissions-to-a-private-collection)
 
 ## Crear una colección {#create-collection}
 
@@ -185,7 +188,19 @@ Para eliminar una colección:
 
 1. Haga clic en **[!UICONTROL Eliminar]**.
 
-## Siguientes pasos {#next-steps}
+## Administración de permisos para una colección privada{#manage-permissions-private-collection}
+
+Puede permitir que los administradores administren [niveles de acceso](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) para colecciones privadas disponibles en el repositorio. Puede asignar permisos como `Can View` y `Can Edit` a los grupos de usuarios o a los usuarios. También puede delegar privilegios de administración de permisos a grupos de usuarios. Los usuarios que crean colecciones privadas son los propietarios de esas colecciones. Pueden usar el [!UICONTROL Administrar permisos] acción para conceder acceso a los demás usuarios. Además, los administradores pueden ver y administrar permisos de las colecciones privadas en [!DNL Experience Manager] repositorio.
+
+>[!NOTE]
+>
+>Adobe no recomienda asignar permisos a los usuarios.
+
+Para obtener información sobre cómo asignar los permisos disponibles a los grupos de usuarios, consulte [Adición de permisos a grupos de usuarios](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+
+Para obtener más información sobre el flujo de trabajo completo, consulte [administración de permisos](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+
+## Pasos siguientes {#next-steps}
 
 * Realice comentarios del producto mediante la opción [!UICONTROL Comentarios] disponible en la interfaz de usuario de la vista Recursos
 
