@@ -4,7 +4,7 @@ description: Mueva, elimine, copie, cambie de nombre, actualice y convierta en v
 role: User,Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
-source-git-commit: e2a0e93a4ff01d9a180fcf1ad097ccbfb354fc0f
+source-git-commit: f7d3e356e4e43d5838a6319f5ead750c149a9b3b
 workflow-type: tm+mt
 source-wordcount: '1062'
 ht-degree: 88%
@@ -149,3 +149,4 @@ Para añadir el campo de metadatos Fecha de caducidad al formulario, arrastre el
 * Proporcione comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar una incidencia] ![crear una incidencia de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha
 
 * Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General&amp;lang=es#support)
+
