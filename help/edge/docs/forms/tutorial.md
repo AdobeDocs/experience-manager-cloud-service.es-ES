@@ -129,7 +129,7 @@ Para copiar el contenido de muestra en su propia carpeta de contenido y dirigir 
       https://adobe.SharePoint.com/sites/wkndforms/Shared%20Documents/wefinance
       ```
 
-      Para obtener más información sobre la administración de archivos con Microsoft SharePoint, consulte [Cómo usar Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
+      Para obtener más información sobre la administración de archivos en Microsoft SharePoint, consulte [Cómo utilizar Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
    1. Confirme el archivo actualizado `fsatb.yaml`, una vez que haya actualizado la referencia y todo se vea bien. Si tiene algún problema con la compilación, consulte [Solución de problemas de compilación de GitHub](#troubleshooting-github-build-issues).

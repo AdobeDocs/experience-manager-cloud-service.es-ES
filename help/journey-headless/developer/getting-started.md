@@ -95,7 +95,7 @@ Para garantizar su comprensión de los conceptos sin encabezado, este Recorrido 
 
 Sin embargo, hay que tener en cuenta las posibilidades híbridas adicionales que se abren una vez que entienda las características sin encabezado de AEM. Para su información, estos casos se detallan a continuación. Al final del recorrido, se le presentan estos conceptos con más detalle en caso de que su proyecto requiera flexibilidad.
 
-### SPA Ya tiene un consumo externo de contenido sin encabezado, como una aplicación de una sola página (). {#already-have-a-spa}
+### Ya tiene un consumo externo de contenido sin encabezado, como una aplicación de página única (SPA). {#already-have-a-spa}
 
 Supongamos que su requisito básico es, como mínimo, entregar contenido de AEM a un servicio externo existente.
 

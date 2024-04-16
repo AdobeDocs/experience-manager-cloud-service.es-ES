@@ -283,7 +283,7 @@ ht-degree: 98%
       + [Su bandeja de entrada](/help/sites-cloud/authoring/inbox.md)
       + [Consola Componentes](/help/sites-cloud/authoring/components-console.md)
       + [Selección de la ruta](/help/sites-cloud/authoring/path-selection.md)
-      + [Solución de problemas](/help/sites-cloud/authoring/troubleshooting.md)
+      + [Resolución de problemas](/help/sites-cloud/authoring/troubleshooting.md)
       + Consola Sites {#sites-console}
          + [La Consola Sites](/help/sites-cloud/authoring/sites-console/introduction.md)
          + [Panel lateral de la consola](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
@@ -647,8 +647,8 @@ ht-degree: 98%
             + [Añadir una configuración regional para Formularios adaptables basada en componentes principales](/help/forms/supporting-new-language-localization-core-components.md)
             + [Creación y uso de funciones personalizadas](/help/forms/create-and-use-custom-functions.md)
             + [Añadir reglas a un formulario adaptable basado en componentes principales](/help/forms/rule-editor-core-components.md)
-            + [Agregar versiones, comentarios y anotaciones a un formulario adaptable](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
-            + [Comparar Forms adaptable](/help/forms/compare-forms.md)
+            + [Añadir versiones, comentarios y anotaciones a un formulario adaptable](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
+            + [Nuevos formularios adaptables](/help/forms/compare-forms.md)
       + Componentes de base {#authoring-adaptive-forms-foundation-components}
          + Convertir sus formularios PDF en formularios adaptables {#afcs}
             + [Introducción al servicio de conversión automatizada de formularios](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=es)
