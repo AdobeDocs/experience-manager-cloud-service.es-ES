@@ -4,10 +4,10 @@ description: Mueva, elimine, copie, cambie de nombre, actualice y convierta en v
 role: User,Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
-source-git-commit: f7d3e356e4e43d5838a6319f5ead750c149a9b3b
+source-git-commit: 3912f52112b3d9dcb568e477c33d3f4b28064b66
 workflow-type: tm+mt
-source-wordcount: '1062'
-ht-degree: 88%
+source-wordcount: '1177'
+ht-degree: 89%
 
 ---
 
@@ -22,15 +22,39 @@ Use [!DNL Assets view] para llevar a cabo las siguientes tareas de administraci�
 *Imagen: opciones disponibles en la barra de herramientas de una imagen seleccionada.*
 
 * ![icono de anular selección](assets/do-not-localize/close-icon.png) Anule la selección.
+
+* ![icono de buscar similar](assets/do-not-localize/find-similar.svg) Busque un recurso de imagen similar en la interfaz de usuario de Assets en función de los metadatos y las etiquetas inteligentes.
+
 * ![icono de detalles](assets/do-not-localize/edit-in-icon.png) Haga clic para previsualizar un recurso y ver los metadatos detallados. Al previsualizar, puede ver las versiones y editar una imagen.
+
 * ![icono de descarga](assets/do-not-localize/download-icon.png) Descargue el recurso seleccionado en el sistema de archivos local.
+
+* ![icono de añadir a la colección](assets/do-not-localize/add-collection.svg): añada el recurso seleccionado a una colección.
+
+* ![icono de Fijar recursos](assets/do-not-localize/pin-quick-access.svg): fije un recurso para un acceso más rápido cuando lo necesite más tarde. Todos los elementos fijados se muestran en la sección **Acceso rápido** de Mi espacio de trabajo.
+
+* ![icono de editar en Express](assets/do-not-localize/edit-e.svg) Edite una imagen en el Adobe Express integrado en Adobe Experience Manager Assets.
+
+* ![icono de editar recurso](assets/do-not-localize/edit-e.svg) Edite la imagen con Adobe Express.
+
+* ![icono de compartir vínculo de recurso](assets/do-not-localize/share-link.svg) para un recurso con otros usuarios para que puedan acceder a él y lo descarguen.
+
 * ![icono de eliminación](assets/do-not-localize/delete-icon.png) Elimine el recurso o la carpeta seleccionados.
-* ![icono de cierre de compra](assets/do-not-localize/checkout-icon.png) Cierre el recurso seleccionado.
+
 * ![icono de copia](assets/do-not-localize/copy-icon.png) Copie el archivo o la carpeta seleccionados.
+
 * ![icono de movimiento](assets/do-not-localize/move-icon.png) Mueva el recurso o la carpeta seleccionados a una ubicación diferente en la jerarquía del repositorio.
+
 * ![icono de cambio de nombre](assets/do-not-localize/rename-icon.png) Cambie el nombre del recurso o la carpeta seleccionados. Utilice un nombre único, si no, el cambio de nombre producirá un error con una advertencia. Puede intentarlo de nuevo con un nombre nuevo.
-Además, puede hacer clic en el título de un recurso o de una carpeta para cambiarle el nombre. Mencione el nuevo texto en la **Cambiar nombre de recurso** y haga clic en **Guardar**. Esta funcionalidad está disponible en las vistas Cuadrícula, Galería, Cascada y Lista. <!--in-place rename-->
+Además, puede hacer clic en el título de un recurso o de una carpeta para cambiarle el nombre. Mencione el nuevo texto en la **Cambiar nombre de recurso** y haga clic en **Guardar**. Esta funcionalidad está disponible en las vistas Cuadrícula, Galería, Cascada y Lista.
+
+* ![icono de vista de cascada](assets/do-not-localize/waterfall-view.png) [!UICONTROL Vista de cascada].
+
+* ![icono de copiar biblioteca](assets/do-not-localize/copy-icon.png) Añada un recurso a la biblioteca.
+
 * ![icono de asignación de tarea](assets/do-not-localize/review-delegate-icon.png) Asigne tareas a otros usuarios para colaborar en un recurso.
+
+* ![icono de asignar tarea](assets/do-not-localize/watch-asset.svg) Monitorice las operaciones realizadas en un recurso.
 
 Puede ver las mismas opciones en las miniaturas de recursos.
 
