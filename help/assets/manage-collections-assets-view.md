@@ -2,9 +2,9 @@
 title: Administrar colecciones
 description: Una colección es un conjunto de recursos dentro de la vista de Experience Manager Assets. Utilice las colecciones para compartir recursos entre los usuarios.
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
-source-git-commit: 24c92e3a8ea20696cd39a5070f161d45d09d6f69
+source-git-commit: b2144820ad549332e8a921744717a77824f9e099
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '910'
 ht-degree: 77%
 
 ---
@@ -191,11 +191,11 @@ Para eliminar una colección:
 ## Administración de permisos para una colección privada{#manage-permissions-private-collection}
 
 Puede permitir que los administradores administren [niveles de acceso](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) para colecciones privadas disponibles en el repositorio. Puede asignar permisos como `Can View` y `Can Edit` a los grupos de usuarios o a los usuarios. También puede delegar privilegios de administración de permisos a grupos de usuarios. Los usuarios que crean colecciones privadas son los propietarios de esas colecciones. Pueden usar el [!UICONTROL Administrar permisos] acción para conceder acceso a los demás usuarios. Además, los administradores pueden ver y administrar permisos de las colecciones privadas en [!DNL Experience Manager] repositorio.
-
+<!--
 >[!NOTE]
 >
->Adobe no recomienda asignar permisos a los usuarios.
-
+>Adobe does not recommend to assign permissions to users.
+-->
 Para obtener información sobre cómo asignar los permisos disponibles a los grupos de usuarios, consulte [Adición de permisos a grupos de usuarios](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 Para obtener más información sobre el flujo de trabajo completo, consulte [administración de permisos](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
