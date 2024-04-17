@@ -2,9 +2,9 @@
 title: Notas de la versión 2023.6.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2023.6.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 29cf9548-e413-4e4f-b233-d6bb04918b22
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: ht
-source-wordcount: '1357'
+source-git-commit: 18f07bab308b707952b8df6b980dd3a6a9e024e9
+workflow-type: tm+mt
+source-wordcount: '1322'
 ht-degree: 100%
 
 ---
@@ -23,7 +23,7 @@ En la siguiente sección se describen las notas de la versión de funciones de l
 >
 >Consulte [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=es) para obtener más información sobre las actualizaciones de la documentación no relacionadas directamente con una versión.
 
-## Fecha de la versión {#release-date}
+## Fecha de lanzamiento {#release-date}
 
 La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] (2023.6.0) fue el 29 de junio de 2023. La siguiente versión con funcionalidades (2023.7.0) está planificada para el 27 de julio de 2023.
 
@@ -65,12 +65,6 @@ Experience Manager Assets ahora le permite hacer más desde la interfaz de usuar
 **Vistas previas de miniaturas para recursos 3D**
 
 [!DNL Experience Manager Assets] genera ahora [vistas previas de miniaturas para formatos de archivo 3D comunes](/help/assets/file-format-support.md) incluidos gLB, USDz, FBX, 3DS, OBJ y SBSAR. Cuando se cargan estos archivos, las miniaturas se generan automáticamente de forma predeterminada.
-
-**Configuración de vínculos compartidos**
-
-Una nueva experiencia de usuario mejorada para [crear vínculos compartidos](/help/assets/share-assets.md) junto con un nuevo conjunto de configuraciones que permiten a los administradores personalizar el comportamiento predeterminado de esta función para los usuarios.
-
-![Administración de etiquetas](/help/assets/assets/config-email-service.png)
 
 **Dynamic Media: se han actualizado los campos relacionados con los recortes inteligentes en el perfil de imagen**
 
