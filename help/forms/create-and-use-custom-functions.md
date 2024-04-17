@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: ee6072b3fc6786905a6610081acb22c708f1eae4
+source-git-commit: ff4f8416284c8491a252b725dfa5224e0c0d9fd5
 workflow-type: tm+mt
-source-wordcount: '3104'
+source-wordcount: '3119'
 ht-degree: 4%
 
 ---
@@ -22,6 +22,11 @@ ht-degree: 4%
 Asegúrese de que la variable [El componente principal está configurado en la versión 3.0.8.](https://github.com/adobe/aem-core-forms-components) para utilizar funciones previas al lanzamiento en funciones personalizadas. </span>
 
 # Funciones personalizadas en Forms adaptable (componentes principales)
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions) |
+| AEM as a Cloud Service | Este artículo |
 
 ## Introducción
 
@@ -606,7 +611,7 @@ Los Forms adaptables implementan el almacenamiento en caché de funciones person
 
 En caso de que se modifiquen las funciones personalizadas, el almacenamiento en caché se invalidará y se analizará.
 
-## Solución de problemas
+## Resolución de problemas
 
 Si el archivo JavaScript que contiene código para funciones personalizadas tiene un error, las funciones personalizadas no aparecen en el editor de reglas de un formulario adaptable. Para comprobar la lista de funciones personalizadas, puede desplazarse a la `error.log` archivo para el error. En caso de error, la lista de funciones personalizadas aparece vacía:
 
