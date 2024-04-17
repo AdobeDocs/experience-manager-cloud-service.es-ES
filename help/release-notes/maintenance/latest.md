@@ -3,9 +3,9 @@ title: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Exper
 description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 1dd2eae9201c86d2cdac78ff99634eff8ca57a05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '272'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ En la siguiente sección se describen las notas de la versión técnicas actuale
 
 ## Versión 15860 {#release-15860}
 
-A continuación, se resumen las mejoras continuas para la versión de mantenimiento 15860, que se publicó el jueves, 10 de abril de 2024. La versión de mantenimiento anterior fue la 15787.
+A continuación, se resumen las mejoras continuas para la versión de mantenimiento 15860, que se publicó el 10 de abril de 2024. La versión de mantenimiento anterior fue la 15787.
 
 La activación de funcionalidades 2024.3.0 proporcionará el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es) para obtener más información.
 
@@ -25,7 +25,7 @@ Ninguna.
 
 ### Problemas corregidos {#fixed-issues-15860}
 
-* Corrige la regresión para mostrar la consola Lanzamientos cuando un lanzamiento hace referencia a una página eliminada o desplazada.
+* Corrige la regresión para mostrar la consola Lanzamientos cuando un lanzamiento hace referencia a una página eliminada o movida.
 
 ### Problemas conocidos {#known-issues-15860}
 

@@ -4,9 +4,9 @@ description: Estas son las notas de la versión para Cloud Manager 2024.4.0 en A
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: f1d8778f3cfb6868740141d008fd0217839e9103
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '706'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -21,15 +21,15 @@ Esta página documenta las notas de la versión 2024.4.0 para Cloud Manager en A
 
 ## Fecha de lanzamiento {#release-date}
 
-AEM La fecha de lanzamiento de la versión 2024.4.0 de Cloud Manager en la versión as a Cloud Service de es el 10 de abril de 2024. La próxima versión está planificada para el 9 de mayo de 2024.
+La fecha de lanzamiento de Cloud Manager 2024.4.0 en AEM as a Cloud Service es el 10 de abril de 2024. La próxima versión está planificada para el 9 de mayo de 2024.
 
 ## Novedades {#what-is-new}
 
-* Se ha mejorado la operación de eliminación para [Entrega en Edge](/help/edge/overview.md) actualizando las asignaciones de dominio desde el programa que está relacionado con ese sitio.
+* Se ha mejorado la operación de eliminación para sitios web de [Edge Delivery](/help/edge/overview.md) actualizando las asignaciones de dominio desde el programa que está relacionado con ese sitio.
    * Si no se asignan más sitios, se elimina la asignación.
-* AEM El seguimiento de la implementación se ha mejorado mediante la provisión de actualizaciones de estado en tiempo real durante la fase de inicio crítica de una instancia de.
-   * Esta función garantiza una visibilidad completa del progreso de la implementación, lo que permite una mejor toma de decisiones y eficiencia operativa.
-* El [infraestructura de red](/help/security/configuring-advanced-networking.md) La lista se ha mejorado para mostrar todos los entornos conectados sin filtrado basado en regiones para proporcionar una vista más completa.
+* El seguimiento de la implementación se ha mejorado proporcionando actualizaciones de estado en tiempo real durante la fase de inicio crítica de una instancia de AEM.
+   * Esta función garantiza una visibilidad completa del progreso de la implementación, lo que le permite tomar mejores decisiones y aumentar la eficacia operativa.
+* La [infraestructura de red](/help/security/configuring-advanced-networking.md) se ha mejorado para mostrar todos los entornos conectados sin filtrado basado en regiones para proporcionar una vista más completa.
 * Los mensajes de error mejorados para problemas de generación de código facilitan la identificación de las causas raíz y los siguientes pasos procesables.
 
 ## Programa para primeros usuarios {#early-adoption}
@@ -73,4 +73,4 @@ El tablero utiliza Google Lighthouse, una herramienta automatizada de código ab
 
 ## Correcciones de errores {#bug-fixes}
 
-* Se ha corregido un error por el que Cloud Manager reutilizaba artefactos con el hash de compromiso incorrecto.
+* Se ha corregido un error por el que Cloud Manager reutilizaba artefactos con el hash de confirmación incorrecto.
