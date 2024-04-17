@@ -2,10 +2,10 @@
 title: Agregar un certificado SSL
 description: Aprenda a agregar su propio certificado SSL con las herramientas de autoservicio de Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 65aaa732d08cee541153f1b2fb4ea7b44f1f3029
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 78%
+source-wordcount: '612'
+ht-degree: 75%
 
 ---
 
@@ -25,9 +25,9 @@ Revise la sección **Requisitos de certificado** del documento [Introducción a 
 
 Siga estos pasos para agregar un certificado mediante Cloud Manager.
 
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. En el **[Mis programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** , seleccione el programa.
+1. En la pantalla **[Mis programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**, seleccione el programa.
 
 1. Vaya a la pantalla **Entornos** de la página **Información general**.
 
@@ -40,6 +40,7 @@ Siga estos pasos para agregar un certificado mediante Cloud Manager.
    * Escriba un nombre para el certificado en **Nombre del certificado**.
       * Esto es solo para fines informativos y puede ser cualquier nombre que le ayude a hacer referencia al certificado fácilmente.
    * Pegue los valores **Certificado**, **Clave privada** y **Cadena de certificados** en sus respectivos campos. Los tres campos son obligatorios.
+   * En algunos casos, el certificado de usuario final puede incluirse en la cadena y debe eliminarse antes de pegar la cadena en el campo.
 
    ![Cuadro de diálogo Agregar certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
@@ -56,6 +57,10 @@ Una vez guardado, verá el certificado como una fila nueva en la tabla.
 >[!NOTE]
 >
 >El usuario debe ser miembro de la función **Propietario del negocio** o **Administrador de implementación** para instalar un certificado SSL en Cloud Manager.
+
+>[!NOTE]
+>
+>Si recibe un error similar al siguiente `The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.`, es probable que haya incluido el certificado de cliente en la cadena de certificados. Asegúrese de que la cadena no incluya el certificado de cliente e inténtelo de nuevo.
 
 ## Errores de certificado {#certificate-errors}
 
