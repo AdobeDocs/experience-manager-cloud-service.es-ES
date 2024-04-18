@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: ff4f8416284c8491a252b725dfa5224e0c0d9fd5
+source-git-commit: c1c170e1cae148c53662cd49850e2a33754fbafc
 workflow-type: tm+mt
 source-wordcount: '3119'
 ht-degree: 4%
@@ -65,6 +65,7 @@ El parámetro es una lista de argumentos que utilizan las funciones personalizad
 * `@argument` `{type} name <Parameter Description>`
 * `@arg` `{type}` `name <Parameter Description>`.
   `{type}` representa el tipo de parámetro.  Los tipos de parámetros permitidos son:
+
    * string: Representa un solo valor de cadena.
    * number: representa un solo valor numérico.
    * boolean: Representa un solo valor booleano (true o false).
