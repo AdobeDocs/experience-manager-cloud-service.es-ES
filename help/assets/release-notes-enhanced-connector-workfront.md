@@ -3,9 +3,9 @@ title: Notas de la versión [!DNL Workfront for Experience Manager enhanced conn
 description: Notas de la versión [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: fdac9b4152c61f775769d7ed30be1097db119e2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1660'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -13,13 +13,13 @@ ht-degree: 98%
 
 En la siguiente sección se describen las notas generales de la versión de [!DNL Workfront for Experience Manager enhanced connector].
 
-La fecha de la última versión, 1.9.19 de [!DNL Workfront for Experience Manager enhanced connector] es el 12 de abril de 2024.
+La fecha de la última versión 1.9.19 de [!DNL Workfront for Experience Manager enhanced connector] es el 12 de abril de 2024.
 
 ## Puntos destacados de la versión {#release-highlights}
 
 La versión más reciente de [!DNL Workfront for Experience Manager enhanced connector] incluye las siguientes correcciones de errores:
 
-* El error al cerrar los clientes HTTP está causando problemas de memoria insuficiente.
+* El error al cerrar los clientes HTTP está causando problemas de falta de memoria.
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ La versión más reciente de [!DNL Workfront for Experience Manager enhanced con
 
 >[!IMPORTANT]
 >
->El Adobe le recomienda [actualice a la última versión 1.9.19](/help/assets/workfront-connector-install.md) de la [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe le recomienda [actualizar a la versión 1.9.19](/help/assets/workfront-connector-install.md) más reciente del [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemas conocidos {#known-issues}
 
