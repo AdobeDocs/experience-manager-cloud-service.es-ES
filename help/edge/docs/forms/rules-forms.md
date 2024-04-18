@@ -2,10 +2,8 @@
 title: Usar reglas para agregar un comportamiento dinámico a un formulario
 description: Los Edge Delivery Services de AEM Forms están diseñados para ofrecer un rendimiento máximo, lo que le permite visualizar el futuro de la recopilación de datos y la participación del usuario optimizadas. Utilice reglas para agregar un comportamiento dinámico a los formularios.
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 exl-id: 58042016-e655-446f-a2bf-83f1811525e3
-source-git-commit: 61c8d08a21ad81a74e1093838b38f22af94751c3
+source-git-commit: 2affe155b285986128487043fcc4f2938fc15842
 workflow-type: tm+mt
 source-wordcount: '2216'
 ht-degree: 0%

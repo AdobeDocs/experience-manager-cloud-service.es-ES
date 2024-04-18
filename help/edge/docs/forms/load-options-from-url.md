@@ -2,26 +2,29 @@
 title: Cargar opciones de lista desplegable desde URL
 description: Las opciones de la lista desplegable se incluyen en una hoja de cálculo distinta y luego se importan en la hoja de cálculo principal a través de la dirección URL proporcionada.
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
-source-git-commit: eadfc3d448bd2fadce08864ab65da273103a6212
+source-git-commit: 2affe155b285986128487043fcc4f2938fc15842
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 2%
+source-wordcount: '442'
+ht-degree: 3%
 
 ---
 
 
 # Cargar opciones de lista desplegable desde URL
 
-En los formularios de Edge Delivery Services, los usuarios tienen la opción de seleccionar un valor de un conjunto predefinido de opciones. Los autores de formularios utilizan el `select` , que proporciona una lista de opciones.
-Por ejemplo, la variable `enquiry` El formulario presenta un menú desplegable para seleccionar países, que ofrece a los usuarios una amplia gama de países predefinidos entre los que elegir. Puede ver que esta lista incluye una larga lista de países separados por comas.
+Forms suele incluir menús desplegables para que los usuarios seleccionen entre las opciones predefinidas. Estas opciones suelen definirse dentro del propio formulario, pero la administración de listas largas puede resultar engorrosa. Esta guía describe cómo mejorar la creación de formularios cargando opciones desplegables de una hoja de cálculo independiente a través de una dirección URL.
+
+
+Las ventajas de cargar una lista desplegable desde una hoja de cálculo independiente son las siguientes:
+
+* Administración simplificada: mantenga las opciones desplegables en una ubicación centralizada para facilitar las actualizaciones y adiciones.
+* Eficiencia mejorada: Elimine la necesidad de añadir manualmente listas de opciones largas dentro de la definición del formulario.
+
+
+
 
 ![Opciones desplegables](/help/forms/assets/drop-down-options.png)
 
-La administración de listas largas de opciones para menús desplegables puede resultar complicada al agregarlas directamente a la hoja que contiene la definición del formulario. La creación de una hoja independiente para almacenar estas opciones desplegables puede simplificar y optimizar el proceso. Esta hoja actúa como un repositorio centralizado para todas las opciones desplegables, organizadas en un formato estructurado. Cada opción se enumera en su propia fila, lo que facilita la administración y las actualizaciones.
-
-Exploremos la mejora del proceso de creación de formularios cargando la lista de opciones de otra hoja de cálculo a través de una dirección URL.
 
 Al final de este artículo, aprenderá lo siguiente:
 
@@ -30,24 +33,26 @@ Al final de este artículo, aprenderá lo siguiente:
 
 ## Definir opciones en una hoja independiente {#define-options}
 
-Cree una hoja con dos columnas:`Option` y `Value`, para definir las opciones:
+Definición de opciones en una hoja de cálculo independiente
 
-1. AEM Vaya a la carpeta Proyecto de la carpeta en Microsoft® SharePoint o Google Drive.
-2. Añada una hoja con el nombre `shared-country` en el sitio de Microsoft® SharePoint o en la carpeta Google Drive y agregue lo siguiente:
-
-   * **Opción**: representa los valores de visualización de las opciones del menú desplegable.
-   * **Valor**: representa el valor enviado cuando un usuario selecciona la opción.
+1. Crear una hoja de cálculo:
+   1. AEM Busque la carpeta del proyecto de la en Microsoft® SharePoint o Google Drive.
+   1. Añada una hoja nueva. Por ejemplo, &quot;shared-country&quot;.
+1. Definir columnas de opciones: añada dos columnas: &quot;Option&quot; y &quot;Value&quot;.
+   * &quot;Opción&quot; define el texto que se muestra en el menú desplegable.
+   * &quot;Valor&quot; define el valor enviado cuando un usuario selecciona la opción.
 
    >[!NOTE]
    >
-   > Si el valor y la opción de una opción desplegable son el mismo, la hoja de cálculo solo puede contener los siguientes elementos **Opción** columna.
+   >Si tanto la opción como el valor son idénticos, solo se requiere la columna Opción.
 
-   Vamos a añadir una nueva hoja, [país-compartido](/help/forms/assets/enquiry-options.xlsx) para las opciones mostradas en la `Destination` en la lista desplegable de `enquiry` formulario.
+1. Rellene la hoja de cálculo: introduzca las opciones de país en la columna &quot;Opción&quot; (y la columna &quot;Valor&quot; si es necesario).
 
-   Consulte la siguiente ilustración, que muestra el `shared-country` hoja de cálculo:
+   Consulte el ejemplo siguiente para ver la estructura.
 
    ![Lista desplegable por país](/help/forms/assets/drop-down-country-options.png)
-3. Previsualización y publicación de `shared-country` hoja que utiliza [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+
+1. Previsualización y publicación de `shared-country` hoja que utiliza [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
    Consulte la URL que muestra el `shared-country` hoja: https://main--wefinance--wkndforms.hlx.live/enquiry.json?sheet=country
 

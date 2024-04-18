@@ -2,14 +2,14 @@
 title: Monitorización de usuarios en tiempo real para Edge Delivery Services Forms
 description: La monitorización de usuarios en tiempo real para Edge Delivery Services de Forms implica el seguimiento y análisis continuos de las interacciones de los usuarios con los formularios.
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
-source-git-commit: eadfc3d448bd2fadce08864ab65da273103a6212
+exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
+source-git-commit: 2affe155b285986128487043fcc4f2938fc15842
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 0%
 
 ---
+
 
 # Monitorización de usuarios en tiempo real para Edge Delivery Services Forms
 
@@ -62,4 +62,3 @@ Puede evaluar las interacciones de los visitantes con sitios impulsados por Adob
    * **Bueno**: Si la duración entre las acciones del usuario es de 200 milisegundos (ms) o menos.
    * **Okay**: Si la duración es superior a 200 ms pero inferior a 500 ms.
    * **Malo**: Si la duración supera los 500 ms.
-
