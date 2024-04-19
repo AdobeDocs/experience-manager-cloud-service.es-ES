@@ -2,10 +2,10 @@
 title: Reglas de filtro de tráfico, incluidas reglas WAF
 description: Configuración de las reglas de filtro de tráfico, incluidas las reglas de cortafuegos de aplicación web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 3a79de1cccdec1de4902b234dac3120efefdbce8
-workflow-type: ht
-source-wordcount: '3669'
-ht-degree: 100%
+source-git-commit: d210fed56667b307a7a816fcc4e52781dc3a792d
+workflow-type: tm+mt
+source-wordcount: '3788'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ Una subcategoría de reglas de filtro de tráfico requiere una licencia de segur
 
 Las reglas de filtro de tráfico se pueden implementar mediante canalizaciones de configuración de Cloud Manager para los tipos de entorno de desarrollo, fase y producción en programas de producción (que no sean de zonas protegidas). El soporte para RDE vendrá en el futuro.
 
-[Siga un tutorial](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) para adquirir rápidamente conocimientos sobre esta funcionalidad.
+[Siga un tutorial](#tutorial) para adquirir rápidamente conocimientos sobre esta funcionalidad.
 
 >[!NOTE]
 >¿Quiere conocer otras opciones para configurar el tráfico en la CDN, como la modificación de la solicitud/respuesta, la declaración de redirecciones y el proxy a un origen que no sea AEM? [Descubra cómo y pruébelo](/help/implementing/dispatcher/cdn-configuring-traffic.md) uniéndose al programa para primeros usuarios.
@@ -416,6 +416,8 @@ Las reglas de límite de volumen no pueden hacer referencia a indicadores WAF. E
 
 Los límites de volumen se calculan por CDN POP. Por ejemplo, supongamos que los POP de Montreal, Miami y Dublín tienen volúmenes de tráfico de 80, 90 y 120 solicitudes por segundo respectivamente, y que la regla de límite de volumen está establecida en un límite de 100. En ese caso, solo el tráfico a Dublín tendría limitación de volumen.
 
+Los límites de velocidad se evalúan en función del tráfico que llega al extremo, el tráfico que llega al extremo o el número de errores.
+
 ### Estructura rateLimit {#ratelimit-structure}
 
 | **Propiedad** | **Tipo** | **Predeterminado** | **SIGNIFICADO** |
@@ -423,6 +425,7 @@ Los límites de volumen se calculan por CDN POP. Por ejemplo, supongamos que los
 | limit | entero de 10 a 10000 | Requerido | Volumen de solicitud (por CDN POP) en solicitudes por segundo para las que se activa la regla. |
 | ventana | integer enum: 1, 10 o 60 | 10 | Ventana de muestreo en segundos para la que se calcula el volumen de solicitud. La precisión de los contadores dependerá del tamaño de la ventana (ventana más grande, mayor precisión). Por ejemplo, se puede esperar una precisión del 50 % para la ventana de 1 segundo y del 90 % para la de 60 segundos. |
 | penalty | entero de 60 a 3600 | 300 (5 minutos) | Período en segundos durante el cual se bloquean las solicitudes de coincidencia (redondeado al minuto más próximo). |
+| recuento | all, fetch, error | todo | evalúe en función del tráfico de Edge (todo), el tráfico de origen (captura) o el número de errores. |
 | groupBy | array[Getter] | ninguno | El contador de limitador de volumen se añadirá mediante un conjunto de propiedades de solicitud (por ejemplo, clientIp). |
 
 
@@ -448,6 +451,7 @@ data:
         limit: 60
         window: 10
         penalty: 300
+        count: all
         groupBy:
           - reqProperty: clientIp
       action: block
@@ -469,7 +473,7 @@ data:
         when: { reqProperty: path, equals: /critical/resource }
         action:
           type: block
-        rateLimit: { limit: 100, window: 60, penalty: 60 }
+        rateLimit: { limit: 100, window: 60, penalty: 60, count: all }
 ```
 
 ## Alertas de reglas de filtro de tráfico {#traffic-filter-rules-alerts}
@@ -616,7 +620,7 @@ Adobe proporciona un mecanismo para descargar las herramientas del tablero en el
 
 Las herramientas de tablero se pueden clonar directamente desde el repositorio de Github [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool).
 
-[Consulte el tutorial](#tutorial) para obtener instrucciones concretas sobre cómo utilizar las herramientas de tablero.
+[Tutorials](#tutorial) están disponibles para obtener instrucciones concretas sobre cómo utilizar las herramientas de tablero.
 
 ## Reglas de inicio recomendadas {#recommended-starter-rules}
 
@@ -701,9 +705,13 @@ data:
           - CMDEXE
 ```
 
-## Tutorial {#tutorial}
+## Tutoriales {#tutorial}
 
-[Trabaje con un tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=es) para obtener conocimientos prácticos y experiencia en torno a las reglas de filtro de tráfico.
+Hay dos tutoriales disponibles.
+
+### Protección de sitios web con reglas de filtro de tráfico (incluidas las reglas WAF)
+
+[Trabajar con un tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=es) para obtener conocimientos y experiencia generales y prácticos sobre las reglas de filtro de tráfico, incluidas las reglas de WAF.
 
 El tutorial le guiará por los siguientes temas:
 
@@ -712,3 +720,16 @@ El tutorial le guiará por los siguientes temas:
 * Declaración de reglas de filtro de tráfico, incluidas las reglas WAF
 * Análisis de resultados con las herramientas del tablero
 * Prácticas recomendadas
+
+### Bloqueo de ataques DoS y DoS mediante reglas de filtro de tráfico
+
+[Profundizar en cómo bloquear](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) Ataques de denegación de servicio (DoS) y denegación de servicio distribuido (DDoS) que utilizan reglas de filtro de tráfico de límite de velocidad y otras estrategias.
+
+El tutorial le guiará por los siguientes temas:
+
+* comprensión de la protección
+* recepción de alertas cuando se superen los límites de velocidad
+* análisis de los patrones de tráfico mediante las herramientas del tablero para configurar los umbrales de las reglas de filtro de tráfico de límite de velocidad
+
+
+
