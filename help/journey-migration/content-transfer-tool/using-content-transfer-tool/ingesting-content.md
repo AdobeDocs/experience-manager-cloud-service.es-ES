@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 727fbc49657de752ac6daeb38b5a9d7aba331a5c
 workflow-type: tm+mt
 source-wordcount: '2876'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -69,7 +69,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración mediante C
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_estimate"
->title="Estimación de duración de ingesta"
+>title="Estimación de la duración de una ingesta"
 >abstract="Se puede mostrar una duración aproximada de una ingesta determinada para proporcionar una idea general de cuánto tiempo tardará. Existen limitaciones a su precisión."
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets/estimate.png)
@@ -105,7 +105,7 @@ Comience creando un trabajo de ingesta y asegúrese de que **Barrido** se desact
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
