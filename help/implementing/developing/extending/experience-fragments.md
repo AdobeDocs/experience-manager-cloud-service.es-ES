@@ -2,9 +2,9 @@
 title: Información general sobre fragmentos de experiencias
 description: Ampliar fragmentos de experiencias de Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: e9b9ab2dfd5e1a5b204cbec70ec0a46ebb46f9e9
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1656'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,8 @@ El Adobe recomienda configurar la reescritura mediante una superposición. Consu
 >[!CAUTION]
 >
 >***Solo*** Las plantillas editables son compatibles con los fragmentos de experiencias.
+>
+>Los fragmentos de experiencias solo se pueden usar en páginas que estén basadas en plantillas editables.
 
 <!-- >***Only*** [editable templates](/help/sites-developing/page-templates-editable.md) are supported for Experience Fragments.
 -->
