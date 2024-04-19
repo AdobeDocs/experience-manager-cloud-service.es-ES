@@ -3,10 +3,10 @@ title: ¿Cómo se pueden crear y utilizar temáticas en los formularios adaptabl
 description: Puede utilizar temáticas para aplicar estilo y proporcionar una identidad visual a un formulario adaptable mediante los componentes principales. Puede compartir una temática en cualquier número de formularios adaptables.
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
-workflow-type: ht
-source-wordcount: '2610'
-ht-degree: 100%
+source-git-commit: 159407dfaa5d17caddca2953a5732f0e91eb474c
+workflow-type: tm+mt
+source-wordcount: '2754'
+ht-degree: 93%
 
 ---
 
@@ -128,7 +128,7 @@ Para copiar una temática, realice los siguientes pasos:
 1. Ejecute el siguiente comando:
 
    ```
-         code .
+      code .
    ```
 
    ![Abre la carpeta de temáticas en un editor de texto sin formato](/help/forms/assets/aem-forms-theme-folder-in-vs-code.png)
@@ -137,14 +137,31 @@ Para copiar una temática, realice los siguientes pasos:
 
 1. Abra el archivo `package.json` para editarlo.
 
-1. Establezca los valores de los atributos `name` y `description`.
+1. Establezca los valores de los atributos `name` y `version`.
 
-   El atributo name se utiliza para identificar la temática de forma exclusiva, como &quot;aem-forms-wknd-theme&quot; y se muestra en la pestaña **Estilo** de **Asistente de creación de formularios**. El atributo descripción proporciona detalles adicionales sobre la temática, incluido su propósito y los escenarios para los que está diseñada. También puedes especificar la versión, la descripción y la licencia para la temática.
+   ![Cambiar imagen de nombre del tema de lienzo](/help/forms/assets/changename_canvastheme.png)
 
-1. Guarde y cierre el archivo.
+   >[!NOTE]
+   >
+   > * El atributo name se utiliza para identificar la temática de forma exclusiva y el nombre especificado se muestra en la variable **Estilo** de la pestaña **Asistente de creación de formularios**.
+   > * Tiene la opción de seleccionar un nombre para la temática según su elección, por ejemplo, `mytheme` o `customtheme`. Sin embargo, para este caso, se ha especificado el nombre como `aem-forms-wknd-theme`.
 
-![Cambiar imagen de nombre del tema de lienzo](/help/forms/assets/changename_canvastheme.png)
+1. Abra el archivo `package-lock.json` para editarlo.
+1. Establezca los valores de `name` y `version` atributos. Asegúrese de que los valores de `name` y `version` atributos en la `Package-lock`El archivo .json coincide con los del `Package.json` archivo.
 
+   ![Cambiar imagen de nombre del tema de lienzo](/help/forms/assets/changename_canvastheme-package-lock.png)
+
+1. (Opcional) Abra `ReadMe` para editar y actualizar el nombre de la temática.
+
+   ![Cambiar imagen de nombre del tema de lienzo](/help/forms/assets/changename_canvastheme-readme-file.png)
+
+1. Guarde y cierre los archivos.
+
+**Consideraciones al establecer el nombre de la temática**
+
+* Es obligatorio eliminar la variable `@aemforms` del nombre de la temática en `Package.json` archivo y `Package-lock.json` archivo. En caso de que no pueda eliminar `@aemforms` a partir del nombre del tema personalizado, se produce un error en la canalización de frontend durante la implementación del tema.
+* Se recomienda actualizar la temática `version` in `Package.json` archivo y `Package-lock.json` para reflejar con precisión los cambios y mejoras realizados con el tiempo en la temática.
+* Para obtener la información importante acerca del uso, las instrucciones de instalación y otros detalles relevantes, se recomienda actualizar el nombre de la temática en la `ReadMe` archivo.
 
 #### 3. Personalizar una temática {#customize-the-theme}
 
