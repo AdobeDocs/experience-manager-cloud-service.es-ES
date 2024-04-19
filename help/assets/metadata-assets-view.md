@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo administrar metadatos en la vista 
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
-source-git-commit: 9823bd8af9fce93c8f21495f720673d8b41595ed
+source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
 workflow-type: tm+mt
 source-wordcount: '1783'
-ht-degree: 82%
+ht-degree: 81%
 
 ---
 
@@ -17,7 +17,7 @@ Los metadatos son los datos o la descripción de los datos. Por ejemplo, las im�
 
 Los metadatos le ayudan a categorizar los recursos y son útiles a medida que aumenta la cantidad de información digital. Es posible administrar algunos cientos de archivos basados únicamente en los nombres de archivo, miniaturas y memoria. Sin embargo, este enfoque no es escalable. Se queda corto cuando aumenta el número de personas involucradas y el número de recursos administrados.
 
-Con la adición de metadatos, el valor de un recurso digital aumenta, ya que pasa a ser:
+Con la adición de metadatos, el valor de un recurso digital aumenta, ya que pasa a ser lo siguiente:
 
 * Más accesible: los sistemas y los usuarios pueden encontrarlo fácilmente.
 * Más fácil de administrar: puede encontrar recursos con el mismo conjunto de propiedades más fácilmente y aplicarles cambios.
