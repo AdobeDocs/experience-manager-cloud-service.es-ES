@@ -2,18 +2,19 @@
 title: Editar vídeos
 description: Editar vídeos con [!DNL Adobe Express] opciones de y guardar vídeos actualizados como versiones de.
 role: User
-source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
+exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
+source-git-commit: 6eb9cfbb463fc976c9101acb434b3b39131c8067
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 19%
+source-wordcount: '779'
+ht-degree: 16%
 
 ---
 
 # Edición de vídeos en [!DNL Assets Essentials] {#edit-videos}
 
-Transformar un vídeo en un tamaño perfecto es fácil gracias al uso de funciones integradas [!DNL Adobe Express] acciones rápidas. Acciones rápidas en [!DNL Assets Essentials] equipado con [!DNL Adobe Express] proporciona opciones de edición de vídeo fáciles de usar, como recorte de vídeo, cambio de tamaño de vídeo, recorte de vídeo y conversión de vídeo a GIF.
+Crear variaciones de contenido de vídeo es fácil para los usuarios de Assets con el [!DNL Adobe Express] acciones rápidas para vídeo. Acciones rápidas en [!DNL Assets Essentials] equipado con [!DNL Adobe Express] proporciona opciones de edición de vídeo fáciles de usar, como recorte de vídeo, cambio de tamaño de vídeo, recorte de vídeo y conversión de vídeo a GIF.
 
-Después de editar un vídeo, puede guardar el nuevo como una nueva versión. El uso de versiones le ayuda a volver al recurso original más adelante, si es necesario. Para editar un vídeo, vaya a los detalles del vídeo y haga clic en **[!UICONTROL Editar vídeo]**. También puede seleccionar el recurso, hacer clic en Detalles y luego hacer clic en ![tijera](assets/do-not-localize/cut.svg) disponible en el panel derecho.
+Para editar un vídeo, vaya a los detalles del vídeo y haga clic en [!UICONTROL Editar vídeo]. También puede seleccionar el recurso, hacer clic en Detalles y luego hacer clic en ![tijera](assets/do-not-localize/cut.svg) disponible en el panel derecho. Después de editar un vídeo, puede guardarlo como una nueva versión o como un nuevo recurso.
 
 ## Requisitos previos {#prerequisites}
 
@@ -38,7 +39,7 @@ Puede eliminar partes no deseadas del vídeo si utiliza funciones integradas [!D
 
 ### Cambiar tamaño de vídeo {#resize-video-using-express}
 
-Cambiar el tamaño de un vídeo a un tamaño específico es un caso de uso popular. [!DNL Assets Essentials] le permite cambiar rápidamente el tamaño del vídeo para adaptarlo a las dimensiones comunes, ya que proporciona nuevas resoluciones calculadas previamente para tamaños específicos. Para cambiar el tamaño del vídeo mediante [!DNL Assets Essentials], siga los pasos a continuación:
+El contenido final de vídeo en DAM suele necesitar un cambio de tamaño para su distribución en canales específicos. [!DNL Assets Essentials] le permite cambiar fácilmente el tamaño del vídeo para adaptarlo a las dimensiones requeridas por los canales sociales comunes y también puede cambiar el tamaño para obtener resoluciones personalizadas. Para cambiar el tamaño del vídeo mediante [!DNL Assets Essentials], ejecute los pasos siguientes:
 
 1. Seleccione un vídeo y haga clic en **[!UICONTROL Editar]**.
 2. Clic **[!UICONTROL Cambiar tamaño de vídeo]** de las acciones rápidas disponibles en el panel izquierdo.
@@ -52,7 +53,7 @@ El vídeo que ha cambiado de tamaño está disponible para descargar. Puede guar
 
 ### Recortar vídeo {#trim-video-using-express}
 
-Un recortador de vídeo rápido en [!DNL Assets Essentials] equipado con [!DNL Adobe Express] le permite recortar vídeo sin esfuerzo. Siga estos pasos:
+Si necesita utilizar un clip de un vídeo más grande, puede utilizar el **[!UICONTROL Recortar vídeo]** para seleccionar y recortar una sección del vídeo. Siga estos pasos:
 
 1. Seleccione un vídeo y haga clic en **[!UICONTROL Editar]**.
 2. Clic **[!UICONTROL Recortar vídeo]** de las acciones rápidas disponibles en el panel izquierdo.
@@ -80,11 +81,11 @@ El vídeo está disponible en formato GIF para su descarga. Puede guardar el rec
 
 ## Restricciones {#limitations-video-adobe-express}
 
-* Solo se admite el tipo de vídeo MP4.
+* Solo se admiten vídeos en formato MP4 para su edición.
 
-* Tamaño máximo de archivo: 200 MB
+* El tamaño máximo de archivo de origen admitido es de 200 MB.
 
-* Las dimensiones mínimas y máximas del vídeo son de 46 píxeles y 3840 píxeles respectivamente.
+* Los vídeos compatibles tienen más de 46 píxeles y menos de 3840 píxeles en cualquier lado.
 
 * Los exploradores web admitidos son Google Chrome, Firefox, Safari y Edge.
 
