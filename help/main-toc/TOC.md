@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 5e7a1ec21cc99963e95e4b0655055b8f38703101
 workflow-type: tm+mt
 source-wordcount: '4893'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -175,7 +175,7 @@ ht-degree: 98%
    + Notas de la versión de Workfront para el conector mejorado de Experience Manager{#workfront}
       + [Notas de la versión de Workfront para el conector mejorado de Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
    + Notas de la versión para generar variaciones {#generate-variations}
-      + [Notas de la versión actuales de Generar variaciones](/help/generative-ai/release-notes-generate-variations.md)
+      + [Notas de la versión actual para generar variaciones](/help/generative-ai/release-notes-generate-variations.md)
    + [¿Qué hay de nuevo?](/help/release-notes/what-is-new.md)
    + [Cambios importantes en AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
    + [Funciones y API obsoletas y eliminadas](/help/release-notes/deprecated-removed-features.md)
@@ -361,7 +361,7 @@ ht-degree: 98%
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
          + [Eliminar consideraciones](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [Analizando estructura](/help/sites-cloud/administering/content-fragments/analysis.md)
-         + [Recursos en la consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+         + [Recursos de la consola de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
          + [Métodos abreviados de teclado](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
       + Creación de sitios {#site-creation}
          + [Crear un nuevo sitio](/help/sites-cloud/administering/site-creation/create-site.md)
@@ -799,9 +799,9 @@ ht-degree: 98%
    + [Migración](/help/commerce-cloud/migration.md)
    + [Preguntas más frecuentes](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
-   + [Información general sobre Edge Delivery Services](/help/edge/overview.md)
+   + [Información general de Edge Delivery Services](/help/edge/overview.md)
    + [Uso de Edge Delivery Services con AEM](/help/edge/using.md)
-   + AEM Creación basada en la {#aem-authoring}
+   + Creación basada en AEM {#aem-authoring}
       + [Creación de contenido para Edge Delivery](/help/edge/aem-authoring/authoring.md)
       + [Publicación de contenido para Edge Delivery](/help/edge/aem-authoring/publishing.md)
       + [Guía de introducción del desarrollador](/help/edge/aem-authoring/edge-dev-getting-started.md)
@@ -835,7 +835,7 @@ ht-degree: 98%
       + [Configuración de Akamai](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Configuración de Fastly](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [Redireccionamientos](/help/edge/docs/redirects.md)
-   + Creación de Forms {#build-forms}
+   + Creación de formularios {#build-forms}
       + [Información general](/help/edge/docs/forms/overview.md)
       + Introducción {#getting-started-eds-forms}
          + [Introducción](/help/edge/docs/forms/tutorial.md)
@@ -843,7 +843,7 @@ ht-degree: 98%
          + [Configurar Google Sheets o los archivos de Microsoft Excel para empezar a aceptar datos](/help/edge/docs/forms/submit-forms.md)
          + [Publicar el formulario y empezar a recopilar datos](/help/edge/docs/forms/publish-forms.md)
          + [Agregar validaciones a los campos de formulario](/help/edge/docs/forms/validate-forms.md)
-         + [Cargar opciones desde la URL a un formulario](/help/edge/docs/forms/load-options-from-url.md)
+         + [Cargar opciones desde la URL en un formulario](/help/edge/docs/forms/load-options-from-url.md)
          + [Personalizar el aspecto de los formularios](/help/edge/docs/forms/style-theme-forms.md)
          + [Usar reglas para agregar un comportamiento dinámico a un formulario](/help/edge/docs/forms/rules-forms.md)
          + [Mostrar un mensaje de agradecimiento personalizado después del envío del formulario](/help/edge/docs/forms/thank-you-page-form.md)
@@ -856,7 +856,7 @@ ht-degree: 98%
          + [Monitorización de usuarios en tiempo real de formularios](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
       + Referencias {#forms-references}
          + [Componentes de bloque de formulario adaptable y sus propiedades](/help/edge/docs/forms/form-components.md)
-   + Recursos de envío de Edge {#resources}
+   + Recursos de Edge Delivery {#resources}
       + Barra de tareas {#sidekick}
          + [Uso de la barra de tareas](/help/edge/docs/sidekick.md)
          + [Instalación de la extensión](/help/edge/docs/sidekick-extension.md)
@@ -899,7 +899,7 @@ ht-degree: 98%
       + [Actualización de los fragmentos de contenido para el filtrado optimizado de GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [Ejemplos de consultas de GraphQL](/help/headless/graphql-api/sample-queries.md)
       + [Resolución de problemas de consultas de GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [Fragmentos de contenido y modelos OpenAPI](/help/headless/content-fragment-openapis.md)
+   + [OpenAPI de fragmentos de contenido y modelos](/help/headless/content-fragment-openapis.md)
    + [Compatibilidad con fragmentos de contenido en la API HTTP de Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=es)
    + Seguridad {#security}
       + [Permisos](/help/headless/security/permissions.md)

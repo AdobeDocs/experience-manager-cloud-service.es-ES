@@ -8,7 +8,7 @@ exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 source-git-commit: 126af719cfd2c9361d0e7768b3b65e1149b6a989
 workflow-type: tm+mt
 source-wordcount: '1988'
-ht-degree: 70%
+ht-degree: 95%
 
 ---
 
@@ -171,72 +171,72 @@ El servicio DocAssurance incluye las API de firma y codificación:
 
 ### API de firmas
 
-Las API de firmas permiten a su organización proteger la seguridad y la privacidad de los documentos de Adobe PDF que distribuye y recibe. <!--This service uses digital signatures and certification to ensure that only intended recipients can alter documents. --> Las funciones de seguridad se aplican al propio documento, el documento permanece seguro y controlado durante todo su ciclo de vida. El documento permanece seguro más allá del cortafuegos, cuando se descarga sin conexión y cuando se devuelve a su organización. Puede realizar las siguientes tareas mediante las API de firmas:
+Las API de firmas permiten a su organización proteger la seguridad y la privacidad de los documentos de Adobe PDF que distribuye y recibe. <!--This service uses digital signatures and certification to ensure that only intended recipients can alter documents. --> Dado que las características de seguridad se aplican al propio documento, éste permanece seguro y controlado durante todo su ciclo de vida. Un documento permanece seguro más allá del cortafuegos mientras se descarga sin conexión y se envía nuevamente a su organización. Puede realizar las siguientes tareas mediante las API de firmas:
 
-* Agregue un campo de firma visible a un documento de PDF.
-* Agregue un campo de firma invisible a un documento de PDF.
+* Añada un campo de firma visible a un documento PDF.
+* Añada un campo de firma invisible a un documento PDF.
 * Firme el campo de firma especificado en un documento PDF.
 * Certificar un documento PDF
 
 ### Las API de cifrado
 
-Las API de cifrado permiten encriptar y desencriptar documentos. Cuando se encripta un documento, su contenido se vuelve ilegible. Un usuario autorizado puede desencriptar el documento para obtener acceso a su contenido. Si un documento de PDF está cifrado con una contraseña, el usuario debe especificar la contraseña de apertura para poder ver el documento en Adobe Reader o Adobe Acrobat. <!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
+Las API de cifrado permiten encriptar y desencriptar documentos. Cuando se encripta un documento, su contenido se vuelve ilegible. Un usuario autorizado puede desencriptar el documento para obtener acceso a su contenido. Si un documento PDF está cifrado con una contraseña, el usuario debe escribir la contraseña de apertura para poder ver el documento en Adobe Reader o Adobe Acrobat. <!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
 
 Puede realizar estas tareas mediante las API de encriptado:
 
 * Encriptar un documento PDF con una contraseña.
 * Quitar el encriptado de contraseña de un documento PDF.
 * Recupera el tipo de seguridad aplicada a un documento PDF.
-* Devuelve el tipo de seguridad aplicado a un documento de PDF.
+* Devolver el tipo de seguridad aplicado a un documento PDF.
 
 Tanto las API de firma como las de encriptado son [API sincrónicas](#types-of-communications-apis-types).
 
 ### API de derechos de uso
 
-<span class="preview"> La capacidad Derechos de uso se encuentra en Programa de adopción anticipada. Puede escribir a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa de usuarios que lo adoptaron por primera vez y solicitar acceso a esta capacidad. </span>
+<span class="preview"> La capacidad Derechos de uso se encuentra en Programa de adopción anticipada. Puede escribir a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa de primeros usuarios y solicitar acceso a esta funcionalidad. </span>
 
-La capacidad Derechos de uso permite a su organización compartir fácilmente documentos interactivos de PDF mediante la ampliación de la funcionalidad de Adobe Reader con derechos de uso adicionales. El servicio funciona con Adobe Reader 7.0 o posterior y agrega derechos de uso a un documento de PDF. Esta acción activa funciones que normalmente no están disponibles cuando se abre un documento de PDF con Adobe Reader, como agregar comentarios a un documento, rellenar formularios y guardar el documento.
+La capacidad Derechos de uso permite a su organización compartir fácilmente documentos interactivos de PDF mediante la ampliación de la funcionalidad de Adobe Reader con derechos de uso adicionales. El servicio funciona con Adobe Reader 7.0 o posterior y agrega derechos de uso a un documento de PDF. Esta acción activa funciones que normalmente no están disponibles cuando se abre un documento PDF con Adobe Reader, como añadir comentarios a un documento, rellenar formularios y guardar el documento. 
 
 Cuando se agregan los derechos de uso correspondientes a los documentos PDF, los destinatarios pueden realizar las siguientes actividades desde Adobe Reader:
 
-* Completar documentos y formularios de PDF en línea o sin conexión, lo que permite a los destinatarios guardar copias localmente para sus registros y mantener intacta la información agregada.
-* Guarde los documentos del PDF en un disco duro local para conservar el documento original y los comentarios, datos o archivos adjuntos adicionales.
-* Adjuntar archivos y clips multimedia a documentos de PDF.
-* Firme, certifique y autentique documentos de PDF mediante la aplicación de firmas digitales con tecnologías de infraestructura de clave pública (PKI) conformes con los estándares del sector.
-* Enviar documentos de PDF completados o anotados electrónicamente.
-* Utilice documentos y formularios de PDF como un front-end de desarrollo intuitivo para bases de datos y servicios web internos.
+* Completar documentos y formularios PDF en línea o sin conexión, lo que permite a los destinatarios guardar copias de forma local para sus registros y mantener intacta la información añadida.
+* Guardar los documentos PDF en un disco duro local para conservar el documento original y los comentarios, datos o archivos adjuntos adicionales;
+* Adjuntar archivos y clips de medios a documentos PDF.
+* Firmar, certificar y autenticar documentos PDF mediante la aplicación de firmas digitales con tecnologías de infraestructura de clave pública (PKI) conformes con los estándares del sector;
+* Enviar documentos PDF completados o anotados electrónicamente.
+* Utilizar documentos y formularios PDF como un front-end de desarrollo intuitivo para bases de datos y servicios web internos.
 * compartir documentos PDF con terceros para que los revisores puedan agregar comentarios mediante herramientas de marcado intuitivas. Entre estas herramientas se incluyen las notas adhesivas electrónicas, los sellos, los resaltados y el tachado de texto. Estas funciones también están disponibles en Acrobat;
 * Compatibilidad con descodificación Forms con códigos de barras.
 
-Estas funciones de derechos de uso especiales se activan automáticamente cuando se abre un documento de PDF con los derechos activados en Adobe Reader. Cuando el usuario termina de trabajar con un documento con derechos activados, esas funciones vuelven a desactivarse en Adobe Reader. Permanecen desactivados hasta que el usuario recibe otro documento PDF con los derechos activados.
+Estas funciones de uso especiales se activan automáticamente al abrir un documento PDF con los derechos habilitados en Adobe Reader. Cuando el usuario ha terminado de trabajar con un documento con los derechos habilitados, esas funciones vuelven a deshabilitarse en Adobe Reader. Permanecen desactivados hasta que el usuario recibe otro documento PDF con los derechos activados.
 
 #### Habilitar o deshabilitar los derechos de uso
 
 Las distintas funciones de derechos de uso para ampliar los servicios de Reader PDF son:
 
-* **Descodificación de códigos de barras**: para descodificar códigos de barras dentro del documento del PDF.
+* **Descodificación de códigos de barras**: descodificar códigos de barras dentro del documento PDF.
 
-* **Comentarios**: para realizar comentarios sin conexión en el documento de PDF.
+* **Comentarios**: realizar comentarios sin conexión en el documento PDF.
 
-* **Comentarios en línea**: para realizar comentarios en línea sobre el documento de PDF.
+* **Comentarios en línea**: realizar comentarios en línea en el documento PDF.
 
-* **Firma digital**: para agregar firmas digitales a un documento de PDF.
+* **Firma digital**: añadir firmas digitales a un documento PDF.
 
-* **Campos de formulario dinámico**: para agregar campos de formulario a un documento de PDF.
+* **Campos de formulario dinámico**: añadir campos de formulario a un documento PDF.
 
-* **Páginas de formulario dinámico**: para agregar páginas de formulario a un documento de PDF.
+* **Páginas de formulario dinámico**: añadir páginas de formulario a un documento PDF.
 
-* **Archivos incrustados**: para incrustar archivos en un documento de PDF.
+* **Archivos incrustados**: incrustar archivos en un documento PDF.
 
-* **Importación de datos de formulario**: para importar datos de formulario a un documento de PDF.
+* **Importación de datos de formulario**: importar datos de formulario a un documento PDF.
 
-* **Exportación de datos de formulario**: para importar datos de formulario a un documento de PDF.
+* **Exportación de datos de formulario**: importar datos de formulario a un documento PDF.
 
-* **Cumplimentación de formulario**: para rellenar campos de formulario dentro de un documento de PDF.
+* **Cumplimentación de formulario**: rellenar campos de formulario dentro de un documento PDF.
 
-* **Forms en línea**: Para acceder a un servicio web o a una base de datos desde un documento de PDF.
+* **Formularios en línea**: acceder a un servicio web o a una base de datos desde un documento PDF.
 
-* **Enviar independiente**: para enviar datos de formulario sin conexión desde un documento de PDF.
+* **Enviar independiente**: enviar datos de formulario sin conexión desde un documento PDF.
 
 #### Extraer derechos de uso
 
@@ -244,10 +244,10 @@ Ayuda a recuperar los derechos de uso habilitados o deshabilitados en un documen
 
 #### Otras capacidades
 
-* **Mensaje**: mensaje que se muestra en Adobe Acrobat Reader al abrir un documento de PDF con uno o más derechos de uso aplicados.
-* **Desbloquear contraseña**: contraseña necesaria para abrir un documento de PDF cifrado. Normalmente, esta es la contraseña de apertura del documento, pero si el documento de PDF está protegido además por una contraseña de permisos, puede utilizarse para abrirlo.
+* **Mensaje**: mensaje que se muestra en Adobe Acrobat Reader al abrir un documento PDF con uno o más derechos de uso aplicados.
+* **Desbloquear contraseña**: la contraseña necesaria para abrir un documento PDF cifrado. Normalmente, es la contraseña de apertura del documento, pero si el documento de PDF está protegido además por una contraseña de permisos, puede utilizar cualquiera de ellas para abrirlo.
 
-La [documentación de referencia de la API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) ofrece información detallada sobre todos los parámetros, métodos de autenticación y diversos servicios que ofrecen las API. La documentación de referencia de la API también está disponible en formato .yaml. Puede descargar el .yaml y cargarlo en Postman para comprobar la funcionalidad de las API.
+La [documentación de referencia de la API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) ofrece información detallada sobre todos los parámetros, métodos de autenticación y diversos servicios que ofrecen las API. La documentación de referencia del API también está disponible en formato .yaml. Puede descargar el archivo .yaml y cargarlo en Postman para comprobar la funcionalidad de las API.
 
 ## Tipos de API de comunicaciones {#types}
 
