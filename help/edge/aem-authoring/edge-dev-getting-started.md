@@ -3,8 +3,8 @@ title: Guía de introducción para desarrolladores para la creación de contenid
 description: Esta guía le ayudará a ponerse en marcha con un nuevo sitio de Adobe Experience Manager que utiliza Edge Delivery Services y el Editor universal para la creación de contenido.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: 8bdca5357666841c4471170ab3b97476b6be63b6
-workflow-type: ht
+source-git-commit: fc5ffe334873b7b98565f38d5664313b26d5f635
+workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 100%
 
@@ -184,7 +184,7 @@ Una vez que haya terminado de editar el nuevo sitio con el editor universal, pue
 
 1. Abra una nueva pestaña en el mismo explorador y vaya a la dirección URL del nuevo sitio.
 
-   * `https://main--<site-name>--<owner>.hlx.page`
+   * `https://main--<repository-name>--<owner>.hlx.page`
 
 1. Vea el contenido publicado.
 
