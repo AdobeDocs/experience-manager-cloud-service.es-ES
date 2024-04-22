@@ -3,9 +3,9 @@ title: Introducción al contenido sin encabezado de AEM as a Cloud Service
 description: En esta parte del Recorrido para desarrolladores de contenido sin encabezado de AEM, obtenga información sobre los requisitos previos.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3068'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -298,4 +298,4 @@ Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo sin 
 * [API de REST de Assets](/help/assets/content-fragments/assets-api-content-fragments.md): documentación técnica que explica cómo crear y modificar fragmentos de contenido (y otros recursos)
 * [Consultas persistentes](/help/headless/graphql-api/persisted-queries.md): documentación técnica sobre consultas persistentes en AEM
 * [Contenido con encabezado y sin encabezado en AEM](/help/implementing/developing/headful-headless.md): un análisis completo de los niveles de integración sin encabezado disponibles en AEM
-* El [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) también están disponibles.
+* Las [OpenAPI de fragmento de contenido y modelo de fragmento de contenidos](/help/headless/content-fragment-openapis.md) también están disponibles.

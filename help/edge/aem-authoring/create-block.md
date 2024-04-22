@@ -3,9 +3,9 @@ title: Creación de bloques instrumentados para su uso con el editor universal
 description: Aprenda a crear bloques instrumentados para utilizarlos con el editor universal en la creación de AEM con proyectos de Edge Delivery Services.
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1297'
+ht-degree: 100%
 
 ---
 
@@ -236,7 +236,7 @@ Ahora que tiene un bloque de cita de trabajo, puede aplicarle estilo.
 
    ![El bloque de cita publicado y con estilo](assets/create-block/quote-styled-published.png)
 
-Felicitaciones. Ahora tiene un bloque de cita completamente funcional y con estilo. Puede utilizar este ejemplo como base para diseñar sus propios bloques específicos de proyectos.
+Enhorabuena. Ahora tiene un bloque de cita completamente funcional y con estilo. Puede utilizar este ejemplo como base para diseñar sus propios bloques específicos de proyectos.
 
 ## Uso de otras ramas de trabajo {#other-branches}
 
@@ -246,13 +246,13 @@ Cuando no esté desarrollando en la rama `main`, puede anexar `?ref=<branch>` en
 
 La publicación de contenido con un nuevo modelo solo se admite cuando el modelo se combina con la rama `main`.
 
-## Pasos siguientes {#next-steps}
+## Siguientes pasos {#next-steps}
 
-Ahora que sabe cómo crear bloques, es esencial comprender cómo modelar contenido de una manera semántica para lograr una experiencia de desarrollador ligera.
+Ahora que sabe cómo crear bloques, es esencial comprender cómo modelar contenido de una manera semántica para lograr una experiencia de desarrollador ágil.
 
-Consulte el documento [AEM Modelado de contenido para la creación de con proyectos de Edge Delivery Services](/help/edge/aem-authoring/content-modeling.md) AEM para saber cómo funciona el modelado de contenido para la creación de contenido de la con proyectos de Edge Delivery Services.
+Consulte el documento [Modelado de contenido para la creación de AEM con proyectos de Edge Delivery Services](/help/edge/aem-authoring/content-modeling.md) para saber cómo funciona el modelado de contenido para la creación de contenido de AEM con proyectos de Edge Delivery Services.
 
 >[!TIP]
 >
->Para obtener una guía completa sobre la creación de un nuevo proyecto de Edge Delivery Services AEM AEM habilitado para la creación de contenido con el fin de crear un grupo de usuarios con el fin de crear un grupo de usuarios con el fin de crear un grupo de usuarios que esté as a Cloud Service para la creación de contenido, vea la sección [AEM Este seminario web de GEM de la.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Para obtener una guía completa sobre la creación de un nuevo proyecto de Edge Delivery Services que está habilitado para la creación de contenido de AEM con AEM as a Cloud Service como un origen de contenido, consulte [este seminario web de GEM de AEM.](https://experienceleague.adobe.com/es/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 

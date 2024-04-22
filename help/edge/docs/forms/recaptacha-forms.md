@@ -1,26 +1,26 @@
 ---
-title: Uso de reCAPTCHA con Edge Delivery Services de AEM Forms
+title: Uso de reCAPTCHA con AEM Forms Edge Delivery Services
 description: Uso de Google reCAPTCHA en un formulario EDS
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
 source-git-commit: eadfc3d448bd2fadce08864ab65da273103a6212
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '190'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
-# Uso de reCAPTCHA con Edge Delivery Services de AEM Forms
+# Uso de reCAPTCHA con AEM Forms Edge Delivery Services
 
-reCAPTCHA es una herramienta popular que se utiliza para proteger los sitios web de actividades fraudulentas, correo no deseado y uso indebido. En los Edge Delivery Services, el bloque de Forms adaptable permite añadir Google reCAPTCHA para distinguir entre humanos y bots. Esta función permite a los usuarios proteger su sitio web del correo no deseado y del uso indebido.
-Por ejemplo, considere un formulario de consulta que recopile datos como fechas de inicio y finalización del viaje, presupuesto de la habitación, coste estimado del viaje e información del viajero. En estos casos, existe el riesgo de que usuarios maliciosos exploten el formulario con fines como enviar correos electrónicos de phishing o inundarlo con contenido irrelevante o dañino mediante bots de spam. La integración de reCAPTCHA ofrece una seguridad añadida al verificar que los envíos proceden de usuarios genuinos, lo que minimiza de forma eficaz las entradas de correo no deseado.
+reCAPTCHA es una herramienta popular que se utiliza para proteger los sitios web de actividades fraudulentas, correo no deseado y uso indebido. En Edge Delivery Services, el bloque de formularios adaptables ofrece la funcionalidad para añadir reCAPTCHA de Google para distinguir entre humanos y bots. Esta función permite a los usuarios proteger su sitio web del correo no deseado y del uso indebido.
+Por ejemplo, considere un formulario de consulta que recopile datos como las fechas de inicio y finalización de viaje, presupuesto de la habitación, coste estimado del viaje e información del viajero. En estos casos, existe el riesgo de que usuarios maliciosos exploten el formulario para enviar correos electrónicos de phishing o inundarlo con contenido irrelevante o dañino mediante bots de spam. La integración de reCAPTCHA ofrece una seguridad añadida al verificar que los envíos proceden de usuarios genuinos, lo que minimiza de forma eficaz las entradas de correo no deseado.
 
-Los Edge Delivery Services solo admiten el **Basado en puntuación (v3)-reCAPTCHA** para el bloque de formulario adaptable.
+Los Edge Delivery Services solo admiten **Score based(v3)-reCAPTCHA** para el bloque de formulario adaptable.
 
-![Recaptcha V2](/help/forms/assets/recaptcha-v2-invisible.png)
+![ReCaptcha V2](/help/forms/assets/recaptcha-v2-invisible.png)
 
-El **reCAPTCHA** Esta función se encuentra en el programa previo al lanzamiento. Para solicitar acceso a **reCAPTCHA** para Edge Delivery Services de AEM Forms, envíe un correo electrónico desde su dirección de trabajo a mailto:aem-forms-ea@adobe.com.
+La función **reCAPTCHA** se encuentra en el programa de la versión previa. Para solicitar acceso a **reCAPTCHA** para AEM Forms Edge Delivery Services, envíe un correo electrónico desde su dirección de trabajo a mailto:aem-forms-ea@adobe.com.
 
 <!--
 By the end of this article, you learn to:

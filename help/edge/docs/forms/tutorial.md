@@ -4,9 +4,9 @@ description: Este tutorial le ayudará a ponerse en marcha con un nuevo proyecto
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1848'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ La plantilla repetitiva de AEM Forms le permite empezar rápidamente con un proy
    >
    > Si utiliza GitHub Enterprise con filtrado de IP, puede agregar la siguiente IP a la lista de permitidos: 3.227.118.73
 
-   Felicitaciones. Tiene un nuevo sitio web en ejecución `https://<branch>--<repo>--<owner>.hlx.page/`.
+   Enhorabuena. Tiene un nuevo sitio web en ejecución `https://<branch>--<repo>--<owner>.hlx.page/`.
 
    * `<branch>` hace referencia a la rama del repositorio de GitHub.
    * `<repository>` indica su repositorio de GitHub.
@@ -253,10 +253,10 @@ La carpeta Bloque de Formularios adaptables `blocks/form` es su patio de recreo 
 
 ¿Está listo para mostrar su creación? Utilice Git para confirmar e insertar los cambios. Esto actualiza los entornos de vista previa y producción accesibles en estas direcciones URL (reemplace los marcadores de posición por los detalles del proyecto):
 
-Vista previa: `https://<branch>--<repo>--<owner>.hlx.page/`
-Producción: `https://<branch>--<repo>--<owner>.hlx.live/`
+Vista previa: `https://<branch>--<repo>--<owner>.hlx.page/`
+Producción: `https://<branch>--<repo>--<owner>.hlx.live/`
 
-Felicitaciones. Ha configurado correctamente su entorno de desarrollo local e implementado los cambios.
+Enhorabuena. Ha configurado correctamente su entorno de desarrollo local e implementado los cambios.
 
 
 

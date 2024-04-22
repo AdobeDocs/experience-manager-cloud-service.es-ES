@@ -4,7 +4,7 @@ description: Aprenda a desarrollar bloques y personalizar su proyecto de AEM par
 feature: Edge Delivery Services
 exl-id: c356c03c-af43-43a1-a14e-45f94ccb3970
 source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '257'
 ht-degree: 100%
 

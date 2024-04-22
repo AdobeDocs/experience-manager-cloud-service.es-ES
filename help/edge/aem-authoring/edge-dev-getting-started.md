@@ -4,9 +4,9 @@ description: Esta guía le ayudará a ponerse en marcha con un nuevo sitio de Ad
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 source-git-commit: 8bdca5357666841c4471170ab3b97476b6be63b6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1296'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ AEM ofrece dos editores de contenido diferentes y la elección de cuál utilizar
 * **Editor universal**: Esta debe ser la opción predeterminada para los nuevos sitios.
 * **Editor de página de AEM**: debe elegirse para una migración de AEM Sites existente a Edge Delivery Services.
 
-Esta guía se centra en los proyectos AEM en Edge Delivery Services que utilizan el Editor universal. Ver el documento [Uso de Edge Delivery Services AEM con](/help/edge/using.md) AEM para obtener más información sobre cómo elegir el editor adecuado y la migración de los sitios de la existentes a los Edge Delivery Services.
+Esta guía se centra en los proyectos AEM en Edge Delivery Services que utilizan el Editor universal. Consulte el documento [Uso de Edge Delivery Services](/help/edge/using.md) para obtener más información sobre cómo elegir el editor adecuado y la migración de los AEM Sites existentes a Edge Delivery Services.
 
 ## Conceptos principales al desarrollar para Edge Delivery Services {#core-concepts}
 
@@ -116,7 +116,7 @@ En primer lugar, deberá crear un nuevo proyecto en GitHub, basado en la plantil
    * Proporcione sus propios `<site-name>`. Lo necesitará en un paso posterior.
    * Las asignaciones indican a los Edge Delivery Services cómo asignar el contenido del repositorio de AEM a la dirección URL del sitio.
 
-   ![Actualizando paths.json](assets/edge-dev-getting-started/paths-update.png)
+   ![Actualización de paths.json](assets/edge-dev-getting-started/paths-update.png)
 
 1. Añada un mensaje de confirmación si lo desea y haga clic en **Confirmar cambios**, confirmándolos directamente en la rama `main`.
 
@@ -130,7 +130,7 @@ Ahora que tiene un proyecto de GitHub, debe crear un nuevo sitio que el proyecto
 >
 >Para editar el sitio con el editor universal, debe utilizar un explorador basado en Chromium.
 
-1. AEM Descargue la última plantilla del sitio Creación de segmentos con Edge Delivery Services de GitHub en [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
+1. Descargue la última plantilla del sitio Creación de AEM con Edge Delivery Services desde GitHub en [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 
 1. Inicie sesión en la instancia de creación de AEM as a Cloud Service, vaya a la consola Sitios y pulse o haga clic en **Crear** -> **Sitio a partir de una plantilla**.
 
@@ -140,9 +140,9 @@ Ahora que tiene un proyecto de GitHub, debe crear un nuevo sitio que el proyecto
 
    ![Importación de plantillas](assets/edge-dev-getting-started/site-templates.png)
 
-1. AEM Cargue la plantilla del sitio Creación de con Edge Delivery Services que descargó de GitHub.
+1. Cargue la plantilla del sitio Creación de AEM con Edge Delivery Services que descargó desde GitHub.
 
-   * La plantilla solo debe cargarse una vez. Una vez cargado, puede reutilizarse para crear sitios adicionales.
+   * La plantilla solo debe cargarse una vez. Una vez cargada, puede reutilizarse para crear sitios adicionales.
 
 1. Una vez importada la plantilla, aparecerá en el asistente. Haga clic o pulse para seleccionarla y, a continuación, pulse o haga clic en **Siguiente**.
 
@@ -190,13 +190,13 @@ Una vez que haya terminado de editar el nuevo sitio con el editor universal, pue
 
    ![Contenido publicado](assets/edge-dev-getting-started/published-site.png)
 
-## Pasos siguientes {#next-steps}
+## Siguientes pasos {#next-steps}
 
-AEM Ahora que tiene un proyecto de creación de proyectos de Edge Delivery Services en funcionamiento, puede empezar a crear y aplicar estilos a sus propios bloques.
+Ahora que dispone de un proyecto en curso de creación de AEM con Edge Delivery Services, puede empezar a crear y aplicar estilos a sus propios bloques.
 
 Consulte la guía [Creación de bloques instrumentados para su uso con el editor universal](/help/edge/aem-authoring/create-block.md) para obtener más información.
 
 >[!TIP]
 >
->Para obtener una guía completa sobre la creación de un nuevo proyecto de Edge Delivery Services AEM AEM habilitado para la creación de contenido con el fin de crear un grupo de usuarios con el fin de crear un grupo de usuarios con el fin de crear un grupo de usuarios que esté as a Cloud Service para la creación de contenido, vea la sección [AEM Este seminario web de GEM de la.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Para obtener una guía completa sobre la creación de un nuevo proyecto de Edge Delivery Services que está habilitado para la creación de contenido de AEM con AEM as a Cloud Service como origen de contenido, vea [este seminario web de GEM de AEM.](https://experienceleague.adobe.com/es/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 
