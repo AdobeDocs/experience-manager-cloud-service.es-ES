@@ -5,7 +5,7 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: d118cd57370a472dfe752c6ce7e332338606b898
 workflow-type: tm+mt
 source-wordcount: '3817'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -636,7 +636,7 @@ Adobe proporciona un mecanismo para descargar las herramientas del tablero en el
 
 Las herramientas de tablero se pueden clonar directamente desde el repositorio de Github [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool).
 
-[Tutorials](#tutorial) están disponibles para obtener instrucciones concretas sobre cómo utilizar las herramientas de tablero.
+Hay [tutoriales](#tutorial) disponibles para obtener instrucciones concretas sobre cómo utilizar las herramientas del tablero.
 
 ## Reglas de inicio recomendadas {#recommended-starter-rules}
 
@@ -725,7 +725,7 @@ Hay dos tutoriales disponibles.
 
 ### Protección de sitios web con reglas de filtro de tráfico (incluidas las reglas WAF)
 
-[Trabajar con un tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=es) para obtener conocimientos y experiencia generales y prácticos sobre las reglas de filtro de tráfico, incluidas las reglas de WAF.
+[Trabaje siguiendo un tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=es) para obtener conocimientos generales y prácticos, y experiencia sobre las reglas de filtro de tráfico, incluidas las reglas WAF.
 
 El tutorial le guiará por los siguientes temas:
 
@@ -735,15 +735,15 @@ El tutorial le guiará por los siguientes temas:
 * Análisis de resultados con las herramientas del tablero
 * Prácticas recomendadas
 
-### Bloqueo de ataques DoS y DoS mediante reglas de filtro de tráfico
+### Bloqueo de ataques DoS y DDoS mediante reglas de filtro de tráfico
 
-[Profundizar en cómo bloquear](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) Ataques de denegación de servicio (DoS) y denegación de servicio distribuido (DDoS) que utilizan reglas de filtro de tráfico de límite de velocidad y otras estrategias.
+[Profundice en cómo bloquear](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) ataques de denegación de servicio (DoS) y denegación de servicio distribuido (DDoS) que utilizan reglas de filtro de tráfico de límite de velocidad y otras estrategias.
 
 El tutorial le guiará por los siguientes temas:
 
-* comprensión de la protección
-* recepción de alertas cuando se superen los límites de velocidad
-* análisis de los patrones de tráfico mediante las herramientas del tablero para configurar los umbrales de las reglas de filtro de tráfico de límite de velocidad
+* conocer la protección
+* recibir alertas cuando se superen los límites de velocidad
+* analizar los patrones de tráfico mediante las herramientas del tablero para configurar los umbrales de las reglas de filtro de tráfico de límite de velocidad
 
 
 
