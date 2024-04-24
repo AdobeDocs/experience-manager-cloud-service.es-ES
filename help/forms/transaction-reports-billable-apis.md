@@ -2,16 +2,22 @@
 title: API facturables de informes de transacciones
 description: Lista de todas las API que se contabilizan como transacciones
 feature: Adaptive Forms, Foundation Components
-hide: true
-hidefromtoc: true
-source-git-commit: 7318c5e65fc03bfebbf5fb43e4edc30ffbb53909
+exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
+source-git-commit: 539f4bf86f0e32057b2228dc44c86120d6e8457b
 workflow-type: tm+mt
-source-wordcount: '1598'
-ht-degree: 82%
+source-wordcount: '1411'
+ht-degree: 75%
 
 ---
 
+
 # API facturables de informes de transacciones {#transaction-reports-billable-apis}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-billable-apis) |
+| AEM as a Cloud Service | Este artículo |
+
 
 AEM Forms ofrece varias API para enviar formularios, procesar documentos y representar documentos. Algunas API se contabilizan como transacciones y otras se pueden usar libremente. Este documento proporciona una lista de todas las API que se contabilizan como transacciones en un informe de transacciones. Estos son algunos escenarios comunes en los que se utiliza un API facturable:
 
@@ -41,32 +47,32 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
 >title="Duración media de la generación de formularios"
->abstract="El gráfico ilustra el tiempo medio necesario para crear un formulario. Cada barra del gráfico representa un formulario específico y la altura de la barra indica la duración media de creación del formulario durante ese lapso de tiempo. El análisis de este gráfico ayuda a los usuarios a comprender la eficacia y rapidez de la creación de formularios en distintos periodos o contextos, lo que permite conocer posibles mejoras. El gráfico proporciona datos específicos de la instancia de autor actual de AEM Forms. Para ver datos de otras instancias, acceda al panel de la instancia correspondiente."
+>abstract="El gráfico ilustra el tiempo medio necesario para crear un formulario. Cada barra del gráfico representa una forma específica y la altura de la barra indica la duración promedio tomada para la creación del formulario durante ese lapso de tiempo."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
 >title="Duración media de creación de formularios"
->abstract="El gráfico muestra el tiempo medio que se tarda en crear y publicar un formulario, medido desde el día inicial en que se abrió el formulario para editarlo. Cada barra corresponde a un lapso de tiempo específico de un formulario, y la altura de la barra indica el tiempo medio transcurrido desde el inicio del desarrollo del formulario hasta su finalización y publicación. El gráfico proporciona datos específicos de la instancia de autor actual de AEM Forms. Para ver datos de otras instancias, acceda al panel de la instancia correspondiente."
+>abstract="El gráfico muestra el tiempo promedio empleado para crear y publicar un formulario, medido desde el día inicial en que se abrió para su edición. El gráfico proporciona datos específicos de la instancia de autor actual de AEM Forms. Para ver datos de otras instancias, acceda al panel de la instancia correspondiente."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_newForms_graph_en"
 >title="Nuevo rastreador de formularios"
->abstract="El gráfico proporciona información sobre el número o la frecuencia de formularios de nueva creación durante periodos de tiempo específicos. Cada barra del gráfico representa una unidad de medida distinta, como días, semanas o meses. La altura de cada barra indica la cantidad o frecuencia de nuevos formularios creados durante ese intervalo concreto. El gráfico proporciona datos específicos de la instancia de autor actual de AEM Forms. Para ver datos de otras instancias, acceda al panel de la instancia correspondiente."
+>abstract="El gráfico proporciona información sobre el número o la frecuencia de formularios de nueva creación durante periodos de tiempo específicos. El gráfico proporciona datos específicos de la instancia de autor actual de AEM Forms. Para ver datos de otras instancias, acceda al panel de la instancia correspondiente."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
 >title="Rastreador de formularios publicados"
->abstract="El gráfico proporciona información sobre el número o la frecuencia de formularios que se han publicado con éxito durante periodos de tiempo específicos. Esto le permite comprender las tendencias, patrones o variaciones en la publicación de formularios a lo largo del tiempo, lo que ayuda a supervisar la productividad, identificar los periodos de máxima publicación o evaluar el éxito de los cambios en el proceso de publicación de formularios. El gráfico proporciona datos específicos de la instancia de publicación de AEM Forms actual. Para ver los datos de conversión de otras instancias, acceda al panel de la instancia correspondiente."
+>abstract="El gráfico proporciona información sobre el número o la frecuencia de formularios que se han publicado con éxito durante periodos de tiempo específicos. El gráfico proporciona datos específicos de la instancia de publicación de AEM Forms actual. Para ver los datos de conversión de otras instancias, acceda al panel de la instancia correspondiente."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formFragments_graph_en"
 >title="Rastreador de formularios publicados"
->abstract="Este gráfico le ayuda a ver cuántos fragmentos de formulario utiliza la gente en sus formularios. Le da una idea de lo populares o comunes que son estas partes reutilizables en la creación de formularios. El gráfico proporciona datos específicos de la instancia de publicación de AEM Forms actual. Para ver los datos de conversión de otras instancias, acceda al panel de la instancia correspondiente."
+>abstract="Este gráfico le ayuda a ver cuántos fragmentos de formulario utiliza la gente en sus formularios. El gráfico proporciona datos específicos de la instancia de publicación de AEM Forms actual. Para ver los datos de conversión de otras instancias, acceda al panel de la instancia correspondiente."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
 >title="Rastreador de formularios publicados"
->abstract="El gráfico muestra el tiempo medio que se tarda en crear un fragmento de formulario, medido desde el día inicial en que se abrió el fragmento de formulario para editarlo. Cada barra corresponde a un lapso de tiempo específico de un fragmento de formulario, y la altura de la barra indica el tiempo medio transcurrido desde el inicio del desarrollo del fragmento de formulario hasta su finalización y publicación. El gráfico proporciona datos específicos de la instancia de publicación de AEM Forms actual. Para ver los datos de conversión de otras instancias, acceda al panel de la instancia correspondiente."
+>abstract="El gráfico muestra el tiempo medio que se tarda en crear un fragmento de formulario, medido desde el día inicial en que se abrió el fragmento de formulario para editarlo. El gráfico proporciona datos específicos de la instancia de publicación de AEM Forms actual. Para ver los datos de conversión de otras instancias, acceda al panel de la instancia correspondiente."
 
 <!-- 
 
