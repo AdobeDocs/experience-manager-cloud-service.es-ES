@@ -1,15 +1,15 @@
 ---
-title: Creación de experiencias comerciales
+title: Creación de experiencias de Commerce
 description: Aprenda a crear y a crear experiencias relacionadas con el comercio de forma eficaz obteniendo acceso a los datos y al contenido del producto sin salir del contexto.
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 77350822c261371e6eda1fd10d02dcd905a5dd6e
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 1%
+source-wordcount: '721'
+ht-degree: 0%
 
 ---
 
-# Creación de experiencias comerciales {#authoring-commerce-experiences}
+# Creación de experiencias de Commerce {#authoring-commerce-experiences}
 
 ## Información general {#overview}
 
@@ -51,9 +51,9 @@ El cuadro de diálogo de configuración de este componente requiere 1 : n catego
 
 ![Componente de carrusel con selección](../assets/authoring/carousel_component_with_selection.png)
 
-## Editor universal {#universal-editor}
+## Editor de página {#page-editor}
 
-El editor universal se amplía con funciones para acceder a los datos de productos en tiempo real y al contenido de productos asociado.
+AEM El Editor de páginas de se ha ampliado con funciones para acceder a los datos de productos en tiempo real y al contenido de productos asociado, en el momento de su publicación.
 
 ### Acceso a datos del producto {#access-product-data}
 
@@ -65,7 +65,7 @@ Analógicamente, los productos se pueden enviar en una página (que crea un comp
 
 ### Adición de vínculos en campos de texto mediante RTE {#rte}
 
-CIF Las páginas de catálogo de productos de son páginas virtuales que se procesan sobre la marcha. AEM Por lo tanto, no es posible incrustar hipervínculos como para las páginas de normales. CIF Añade una nueva acción &quot;Vínculos de comercio&quot; a RTE (Editor de texto enriquecido). Esta acción funciona exactamente igual que la acción normal &quot;Hipervínculo&quot;, pero permite a los autores seleccionar un producto o una categoría mediante los selectores.
+CIF Las páginas de catálogo de productos de son páginas virtuales que se procesan sobre la marcha. AEM Por lo tanto, no es posible incrustar hipervínculos como para las páginas de normales. CIF Añade una nueva acción &quot;Vínculos de Commerce&quot; al RTE (Editor de texto enriquecido). Esta acción funciona exactamente igual que la acción normal &quot;Hipervínculo&quot;, pero permite a los autores seleccionar un producto o una categoría mediante los selectores.
 
 ![RTE](../assets/authoring/RTE.png)
 
@@ -77,7 +77,7 @@ Esto crea un vínculo de marcador de posición que se sustituye por un vínculo 
 
 ### Acceso al contenido del producto asociado {#associated-content}
 
-Si el editor universal reconoce productos 1:n en una página, el panel lateral mostrará automáticamente la pestaña &quot;Contenido de comercio asociado&quot;. AEM Esta pestaña permite a los autores acceder rápidamente al contenido de la documentación que se ha etiquetado con el producto (consulte ). [AEM enriquecer datos de productos con contenido asociado de la](./enrich-product-associated-content.md) para obtener más información). Esta pestaña ofrece listas desplegables para filtrar por tipo de contenido y productos específicos si hay varios productos en la página. El uso del contenido funciona exactamente igual que el uso de contenido de la pestaña Recursos.
+Si el editor reconoce productos 1:n en una página, el panel lateral mostrará automáticamente la pestaña &quot;Contenido de Commerce asociado&quot;. AEM Esta pestaña permite a los autores acceder rápidamente al contenido de la documentación que se ha etiquetado con el producto (consulte ). [AEM enriquecer datos de productos con contenido asociado de la](./enrich-product-associated-content.md) para obtener más información). Esta pestaña ofrece listas desplegables para filtrar por tipo de contenido y productos específicos si hay varios productos en la página. El uso del contenido funciona exactamente igual que el uso de contenido de la pestaña Recursos.
 
 ![Panel lateral de datos del producto](../assets/authoring/associated-commerce-content-tab.png)
 
@@ -85,7 +85,7 @@ Si el editor universal reconoce productos 1:n en una página, el panel lateral m
 
 AEM El modo Deformación de tiempo del editor permite a los autores obtener una vista previa y examinar una experiencia con datos de catálogo de productos clasificados en función de la fecha de Deformación de tiempo.
 
-![Deformación de tiempo  ](../assets/authoring/timewarp.png)
+![Deformación de tiempo](../assets/authoring/timewarp.png)
 
 Los componentes mostrarán un indicador visual si la fecha utilizada está ensayada.
 

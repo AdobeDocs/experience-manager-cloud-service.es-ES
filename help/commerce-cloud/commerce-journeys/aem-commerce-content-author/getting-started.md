@@ -2,9 +2,9 @@
 title: Introducción a la creación de CIF
 description: CIF Introducción a la creación de.
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 6f27c968c347e6b2be8c9bfcf9bb69e531d10ff9
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '781'
 ht-degree: 2%
 
 ---
@@ -15,21 +15,21 @@ Obtenga información acerca de Adobe Experience Manager AEM CIF () y la creació
 
 ## La historia hasta ahora {#story-so-far}
 
-AEM En el documento anterior de este recorrido de contenido y comercio de la, [AEM Obtenga información sobre Contenido y comercio de la](/help/commerce-cloud/introduction.md)AEM , ha aprendido la teoría básica y los conceptos de CMS sin encabezado y Contenido y comercio de la.
+AEM En el documento anterior de este recorrido de contenido y Commerce de la, [AEM Obtenga información sobre el contenido de la y Commerce](/help/commerce-cloud/introduction.md)AEM , ha aprendido la teoría básica y los conceptos de CMS sin encabezado, Contenido de la y Commerce.
 
 Este artículo se basa en estos aspectos básicos.
 
 ## Objetivo {#objective}
 
-CIF Este documento le ayuda a comprender cómo utilizar la creación de contenido y comercio específicos para la creación de contenido. Después de leer, debería haber logrado lo siguiente:
+CIF Este documento le ayuda a comprender cómo utilizar la creación de contenido y la creación específica de Commerce. Después de leer, debería haber logrado lo siguiente:
 
-* CIF Comprensión de los conceptos de creación de mediante el editor universal
+* CIF AEM Comprensión de los conceptos de creación de páginas de con el Editor de páginas en
 * AEM Cómo acceder a los datos del catálogo de productos en el uso de selectores de productos y categorías en el
 * AEM Cómo acceder a los datos de contenido y comercio mediante la cabina de productos y el acceso a la plataforma de datos de Omnisearch y el acceso a la plataforma de datos de Omnisearch
 
-## CIF Creación de en el editor universal {#cif-authoring}
+## CIF AEM Creación de en el editor de páginas {#cif-authoring}
 
-CIF Amplia el editor universal con funciones para acceder a los datos de productos en tiempo real sin abandonar el contexto:
+CIF AEM Extendemos el Editor de páginas con capacidades de para acceder a los datos de productos en tiempo real sin salir del contexto, de la siguiente manera:
 
 Abra el panel lateral y seleccione &quot;Productos&quot; en la lista desplegable.
 ![Seleccionar tipo de producto](assets/asset-finder-overview.png)
@@ -95,7 +95,7 @@ Omnisearch ejecuta una búsqueda de texto completo en el backend del comercio pa
 
 Ahora que ha completado esta parte del recorrido, debe:
 
-* CIF Comprensión de los conceptos de creación de mediante el editor universal
+* CIF Comprensión de los conceptos de creación de páginas mediante el uso del Editor de páginas
 * AEM Cómo acceder al catálogo de productos en el uso de selectores de productos y categorías en el
 * AEM Cómo acceder a los datos de contenido y comercio mediante la cabina de productos y el acceso a la plataforma de datos de Omnisearch y el acceso a la plataforma de datos de Omnisearch
 
