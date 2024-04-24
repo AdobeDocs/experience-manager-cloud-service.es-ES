@@ -3,9 +3,9 @@ title: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Exper
 description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: f15b42e4012385c461b5440b92f53c4e58fb8ac2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '213'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -15,18 +15,18 @@ En la siguiente sección se describen las notas de la versión técnicas actuale
 
 ## Versión 15977 {#release-15977}
 
-A continuación, se resumen las mejoras continuas para la versión de mantenimiento 15977, que se publicó el sábado, 19 de abril de 2024. La versión de mantenimiento anterior fue la 15939.
+A continuación, se resumen las mejoras continuas para la versión de mantenimiento 15977, que se publicó el 19 de abril de 2024. La versión de mantenimiento anterior fue la 15939.
 
 La activación de funcionalidades 2024.4.0 proporcionará el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es) para obtener más información.
 
 ### Mejoras {#enhancements-15977}
 
-* AEM GRANITE-51335: Optimice la comprobación de estado de la para aumentar la estabilidad de la instancia.
+* GRANITE-51335: optimizar la comprobación de estado de AEM para aumentar la estabilidad de la instancia.
 
 ### Problemas corregidos {#fixed-issues-15977}
 
-* CQ-4357226: corrija la regresión en la compatibilidad de las configuraciones de IMS con las credenciales de OAuth.
-* GRANITE-51335: Actualización de límite de velocidad a 5.0.4 Registros fijos de comprobación de estado de Felix.
+* CQ-4357226: corregir la regresión en la compatibilidad de las configuraciones de IMS con las credenciales de OAuth.
+* GRANITE-51335: actualizar Ratelimit a 5.0.4 Corregidos los registros de comprobación de estado de Felix.
 
 ### Problemas conocidos {#known-issues-15977}
 
