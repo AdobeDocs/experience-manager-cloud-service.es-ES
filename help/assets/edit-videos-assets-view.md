@@ -1,24 +1,24 @@
 ---
-title: Editar vídeos
+title: Edición de vídeos
 description: Editar vídeos con [!DNL Adobe Express] opciones de y guardar vídeos actualizados como versiones de.
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
-source-git-commit: 6eb9cfbb463fc976c9101acb434b3b39131c8067
+source-git-commit: 4f3c15d3a103d15c51ddfe4b0c5dbb5e7e18e8b7
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
-# Edición de vídeos en [!DNL Assets Essentials] {#edit-videos}
+# Edición de vídeos en [!DNL Assets view] {#edit-videos}
 
-Crear variaciones de contenido de vídeo es fácil para los usuarios de Assets con el [!DNL Adobe Express] acciones rápidas para vídeo. Acciones rápidas en [!DNL Assets Essentials] equipado con [!DNL Adobe Express] proporciona opciones de edición de vídeo fáciles de usar, como recorte de vídeo, cambio de tamaño de vídeo, recorte de vídeo y conversión de vídeo a GIF.
+Crear variaciones de contenido de vídeo es fácil para los usuarios de Assets con el [!DNL Adobe Express] acciones rápidas para vídeo. Acciones rápidas en [!DNL Assets view] equipado con [!DNL Adobe Express] proporciona opciones de edición de vídeo fáciles de usar, como recorte de vídeo, cambio de tamaño de vídeo, recorte de vídeo y conversión de vídeo a GIF.
 
 Para editar un vídeo, vaya a los detalles del vídeo y haga clic en [!UICONTROL Editar vídeo]. También puede seleccionar el recurso, hacer clic en Detalles y luego hacer clic en ![tijera](assets/do-not-localize/cut.svg) disponible en el panel derecho. Después de editar un vídeo, puede guardarlo como una nueva versión o como un nuevo recurso.
 
 ## Requisitos previos {#prerequisites}
 
-Derechos de acceso [!DNL Adobe Express] y al menos un entorno dentro de AEM Assets. El entorno puede ser cualquiera de los repositorios de [!DNL Assets as a Cloud Service] o [!DNL Assets Essentials].
+Derechos de acceso [!DNL Adobe Express] y al menos un entorno dentro de AEM Assets. El entorno puede ser cualquiera de los repositorios de [!DNL Assets as a Cloud Service] o [!DNL Assets view].
 
 ## Editar vídeos con el Adobe Express {#edit-video-using-express}
 
@@ -39,7 +39,7 @@ Puede eliminar partes no deseadas del vídeo si utiliza funciones integradas [!D
 
 ### Cambiar tamaño de vídeo {#resize-video-using-express}
 
-El contenido final de vídeo en DAM suele necesitar un cambio de tamaño para su distribución en canales específicos. [!DNL Assets Essentials] le permite cambiar fácilmente el tamaño del vídeo para adaptarlo a las dimensiones requeridas por los canales sociales comunes y también puede cambiar el tamaño para obtener resoluciones personalizadas. Para cambiar el tamaño del vídeo mediante [!DNL Assets Essentials], ejecute los pasos siguientes:
+El contenido final de vídeo en DAM suele necesitar un cambio de tamaño para su distribución en canales específicos. [!DNL Assets view] le permite cambiar fácilmente el tamaño del vídeo para adaptarlo a las dimensiones requeridas por los canales sociales comunes y también puede cambiar el tamaño para obtener resoluciones personalizadas. Para cambiar el tamaño del vídeo mediante [!DNL Assets view], ejecute los pasos siguientes:
 
 1. Seleccione un vídeo y haga clic en **[!UICONTROL Editar]**.
 2. Clic **[!UICONTROL Cambiar tamaño de vídeo]** de las acciones rápidas disponibles en el panel izquierdo.
@@ -93,7 +93,7 @@ El vídeo está disponible en formato GIF para su descarga. Puede guardar el rec
 
 ### Siguientes pasos {#next-steps}
 
-* Proporcione comentarios de producto mediante la opción [!UICONTROL Comentarios] disponible en la interfaz de usuario de Assets Essentials
+* Realice comentarios del producto mediante la opción [!UICONTROL Comentarios] disponible en la interfaz de usuario de la vista Recursos
 
 * Proporcione comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar una incidencia] ![crear una incidencia de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha
 
@@ -101,5 +101,5 @@ El vídeo está disponible en formato GIF para su descarga. Puede guardar el rec
 
 >[!MORELIKETHIS]
 >
->* [Edición de imágenes en Assets Essentials](edit-images-assets-view.md)
+>* [Editar imágenes en la vista Recursos](edit-images-assets-view.md)
 >* [Previsualización de un recurso](navigate-assets-view.md)
