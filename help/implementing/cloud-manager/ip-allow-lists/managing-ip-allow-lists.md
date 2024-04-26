@@ -2,7 +2,7 @@
 title: Administrar listas de IP permitidas
 description: Obtenga información sobre cómo ver, editar, eliminar y comprobar el estado de las listas de permitidos IP en Cloud Manager.
 exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 52%
@@ -18,7 +18,7 @@ Obtenga información sobre cómo ver, editar, eliminar y comprobar el estado de 
 Un usuario en la **Propietario del negocio** o **Administrador de implementación** Esta función puede seguir estos pasos para ver y actualizar una lista de permitidos IP.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
-1. En el **[Mis programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** , seleccione el programa.
+1. En el **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)** , seleccione el programa.
 1. Vaya a la pantalla **Entornos** de la página **Información general**.
 1. Navegue hasta **Listas de IP permitidas** desde la pantalla **Entornos**.
 1. Identifique la fila de las listas de permitidos IP que desee ver o actualizar.

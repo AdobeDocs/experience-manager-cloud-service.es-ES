@@ -1,10 +1,10 @@
 ---
 title: 'Proceso de aprovisionamiento: información general'
 description: 'Proceso de aprovisionamiento: información general'
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: eec64a5dc211dc72712989bf6dc81de8004e2a85
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 98%
+source-wordcount: '288'
+ht-degree: 94%
 
 ---
 
@@ -26,13 +26,10 @@ Esta sección muestra algunos de los artículos más importantes centrados en:
 
 Una vez completado el aprovisionamiento automático:
 
-* Derechos de acceso concedidos: Adobe creará una organización dentro del Sistema Identity Management de Adobe (IMS)
+* Derechos de acceso concedidos: el Adobe creará una organización dentro del sistema Identity Management de Adobe (IMS)
 * El administrador designado tendrá permisos de administrador de forma predeterminada
 * El administrador puede agregar usuarios y roles para otros integrantes del equipo a través de Admin Console
 * Revise los permisos basados en roles para los usuarios con el fin de determinar las asignaciones de permisos en Cloud Manager
-
-![processoverview.jpg](assets/processOverview.jpg)
-
 
 Para obtener más información, consulte [Incorporación a Experience Manager as a Cloud Service en Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=es).
 
@@ -49,8 +46,6 @@ Para obtener más información, consulte [Incorporación a Experience Manager as
 
 ### 2. Incorporar organizaciones a Adobe Admin Console:
 
-![processoverview2.jpg](assets/processOverview2.jpg)
-
 * Administrador del sistema:
    * Aprovisionar programas y entornos de AEM.
    * Navegue hasta Admin Console para realizar tareas administrativas.
@@ -61,8 +56,6 @@ Para obtener más información, consulte [Incorporación a Experience Manager as
    * Administrar grupos locales, permisos y privilegios.
 
 ### 3. Incorporar usuarios y administrar el acceso en Admin Console:
-
-![processoverview3.jpg](assets/processOverview3.jpg)
 
 Tres métodos para incorporar usuarios, según el tamaño y la preferencia:
 * Crear usuarios manualmente en Admin Console

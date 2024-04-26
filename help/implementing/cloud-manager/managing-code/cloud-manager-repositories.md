@@ -2,10 +2,10 @@
 title: Repositorios de Cloud Manager
 description: Obtenga información sobre cómo crear, ver y eliminar repositorios de Git en Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 4bf1d961705ce07c5ae5d33a546a276192f10178
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 85%
+source-wordcount: '575'
+ht-degree: 84%
 
 ---
 
@@ -61,8 +61,6 @@ Siga estos pasos para eliminar un repositorio en Cloud Manager.
 1. Desde el **Resumen del programa** , haga clic en **Repositorios** y vaya a la **Repositorios** página.
 
 1. Seleccione el repositorio, haga clic en el botón de puntos suspensivos y seleccione **Eliminar** para eliminar el repositorio.
-
-   ![Eliminar repositorio](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 
 ## Compatibilidad con el submódulo Git {#git-submodule-support}
 

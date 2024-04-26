@@ -2,10 +2,10 @@
 title: Crear informes de SLA
 description: Aprenda cómo ver el rendimiento de su entorno de AEM de producción en relación con el contrato de nivel de servicio (SLA).
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: f037f47f0b131c87301faf4458658224d1d62a43
+source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 55%
+source-wordcount: '405'
+ht-degree: 52%
 
 ---
 
@@ -20,9 +20,9 @@ Los datos de informes de SLA están disponibles para cada programa de producció
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. En el **[Mis programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** seleccione el programa.
+1. En el **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)** , seleccione el programa.
 
-1. Navegue hasta la pestaña **Informes** desde la página **Información general**.
+1. Con el panel de navegación lateral, vaya al **Informes** de la pestaña **Información general** página.
 
 1. Haga clic en el año deseado para ver los datos de SLA en gráficos.
 

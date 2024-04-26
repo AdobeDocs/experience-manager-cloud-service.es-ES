@@ -2,10 +2,10 @@
 title: Administrar los nombres de dominio personalizados
 description: Aprenda a utilizar Cloud Manager para ver, actualizar, reemplazar y eliminar nombres de dominio personalizados.
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: fcb6dd8ec74446643aaef1870685d26bc138bbd7
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 81%
+source-wordcount: '326'
+ht-degree: 77%
 
 ---
 
@@ -19,7 +19,7 @@ Utilice el menú **Ver y actualizar** para ver los detalles de cualquiera de sus
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. En el **[Mis programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** , seleccione el programa.
+1. En el **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)** , seleccione el programa.
 
 1. Vaya a la pantalla **Entornos** de la página **Información general**.
 
@@ -45,17 +45,13 @@ Un usuario con el rol de **Propietario del negocio** o **Administrador de implem
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Navegue hasta la pantalla **Entornos** de la página **Información general**.
-
-1. Navegue hasta la página **Configuración de dominio** desde la pantalla **Entornos**.
+1. Vaya a **Configuración de dominio** página desde el **Información general** pantalla.
 
 1. Identifique la fila del nombre de dominio personalizado que desee eliminar.
 
 1. Haga clic en el botón de los tres puntos del extremo derecho de la fila.
 
 1. Seleccione **Eliminar**.
-
-   ![Eliminar nombres de dominio personalizados](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
 
 1. Confirme el envío.
 

@@ -1,13 +1,13 @@
 ---
 title: Tablero de rendimiento de CDN
 description: Comprenda cómo Cloud Manager evalúa el rendimiento de la red de entrega de contenido (CDN) y lo que puede aprender del tablero.
-source-git-commit: 0d60c19638707262dab7f290f84fa873b694bc22
+exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
-
 
 # Tablero de rendimiento de CDN {#cdn-performance}
 
@@ -25,7 +25,7 @@ El panel CDN está disponible en la página de información general de cada prog
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. En el **[Mis programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** , pulse o haga clic en el programa cuyo panel CDN desee ver.
+1. En el **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)** , pulse o haga clic en el programa cuyo panel CDN desee ver.
 
    ![Página Mis programas](assets/my-programs.png)
 

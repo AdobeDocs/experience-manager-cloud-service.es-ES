@@ -2,10 +2,10 @@
 title: La herramienta Copia de contenido
 description: AEM La herramienta de copia de contenido permite a los usuarios copiar contenido mutable bajo demanda desde sus entornos de producción en entornos as a Cloud Service a entornos más bajos para realizar pruebas.
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
-source-git-commit: 8bc20c66aad7bf4befdd28db2c628a1535ae375b
+source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 34%
+source-wordcount: '1286'
+ht-degree: 33%
 
 ---
 
@@ -49,9 +49,7 @@ Para poder copiar cualquier contenido, se debe definir un conjunto de contenido.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y el programa adecuados.
 
-1. Vaya a la pantalla **Entornos** de la página **Información general**.
-
-1. Vaya a la página **Conjuntos de contenido** en la pantalla **Entornos**.
+1. Con el panel de navegación lateral, vaya al **Conjuntos de contenido** de la pestaña **Información general** página.
 
 1. En la parte superior derecha de la pantalla, haga clic en **Añadir conjunto de contenido**.
 
@@ -136,7 +134,7 @@ Una vez creado un conjunto de contenido, puede utilizarlo para copiar contenido.
 
 1. Si es necesario, también puede elegir **Incluir listas de control de acceso** en el proceso de copia.
 
-1. Seleccionar **Copiar**.
+1. Seleccione **Copiar**.
 
 Se inicia el proceso de copia. El estado del proceso de copia se refleja en la consola del conjunto de contenido seleccionado.
 

@@ -1,18 +1,18 @@
 ---
-title: Administración y edición de programas
+title: Editar programas
 description: Obtenga información sobre cómo editar los programas de producción y de zonas protegidas para ajustar sus opciones después de crearlas.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 2dfae31e32d375c82c4f690624e48f7f09feb4df
+source-git-commit: 401f853b197e67a6c54e4bf168081dc8165bd505
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 19%
+source-wordcount: '439'
+ht-degree: 30%
 
 ---
 
 
-# Administración y edición de programas {#editing-programs}
+# Editar programas {#editing-programs}
 
-El **Mis programas** Esta página proporciona información general de todos los programas a los que tiene acceso. Al seleccionar un programa individual, la variable **Resumen del programa** Esta página proporciona detalles del programa de un vistazo.
+Para administrar y editar programas, comience por la [**Mis programas** consola.](/help/implementing/cloud-manager/navigation.md) El **Mis programas** Esta página proporciona información general de todos los programas a los que tiene acceso. Al seleccionar un programa individual, la variable **Resumen del programa** Esta página proporciona detalles del programa de un vistazo.
 
 Desde el **Resumen del programa**, los usuarios con los permisos necesarios pueden editar [programas de producción creados en su organización](creating-production-programs.md) y [programas de zona protegida creados en su organización.](creating-sandbox-programs.md) Al editar un programa, puede:
 
@@ -24,70 +24,6 @@ Desde el **Resumen del programa**, los usuarios con los permisos necesarios pued
 ## Permisos {#permissions}
 
 Debe ser miembro de la **Propietario del negocio** función para editar programas o eliminar programas de zona protegida, así como para acceder al Tablero de licencias.
-
-## Mis programas {#my-programs}
-
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
-
-1. El **Mis programas** Esta página muestra una lista de todos los programas a los que tiene acceso como mosaicos.
-
-![Página Mis programas](/help/implementing/cloud-manager/assets/my-programs.png)
-
-### Llamada a acción {#cta}
-
-En la parte superior de la página hay una llamada a la acción relevante para el estado de la organización. Por ejemplo, si ha configurado correctamente sus programas, pueden mostrarse estadísticas de las actividades de los últimos 90 días, incluidas las siguientes:
-
-* Número de [implementaciones](/help/implementing/cloud-manager/deploy-code.md)
-* Número de [problemas de calidad del código](/help/implementing/cloud-manager/code-quality-testing.md) identificado
-* Número de compilaciones
-
-O si acaba de comenzar la configuración de su organización, puede haber sugerencias sobre los pasos siguientes o los recursos de documentación.
-
-### Pestaña Programas {#programs-tab}
-
-El **Programas** La pestaña enumera las tarjetas que representan cada programa al que tiene acceso. Toque o haga clic en una tarjeta para acceder a **Resumen del programa** del programa para obtener más información sobre el programa.
-
-Utilice las opciones de clasificación para encontrar mejor el programa que necesita.
-
-![Opciones de ordenación](/help/implementing/cloud-manager/assets/my-programs-sorting.png)
-
-* Ordenar por
-   * Fecha de creación (predeterminada)
-   * Nombre del programa
-   * Estado
-* Ascendente (predeterminado) / Descendente
-* Vista de cuadrícula (predeterminada)
-* Vista de lista   
-
-### Pestaña Licencia {#license-tab}
-
-El **Licencia** le permite acceder rápidamente a la pestaña [Tablero de licencias.](/help/implementing/cloud-manager/license-dashboard.md)
-
-## Resumen del programa {#program-overview}
-
-Una vez que haya seleccionado un programa de la **[Mis programas](#my-programs)** , Cloud Manager abre la página **Resumen del programa** para el programa seleccionado.
-
-![Página Resumen del Programa](/help/implementing/cloud-manager/assets/program-overview.png)
-
-Toque o haga clic en el nombre del programa en la esquina superior izquierda de la página para cambiar rápidamente a otro programa o volver a la página **[Mis programas](#my-programs)** página. También puede [editar el programa seleccionado](#editing) o [añada un programa.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-
-![Conmutador de programas](/help/implementing/cloud-manager/assets/program-switcher.png)
-
-La llamada a acción en la parte superior le proporcionará información útil según el estado del programa. Para un programa nuevo, puede ver los pasos siguientes ofrecidos, así como un recordatorio de una fecha de lanzamiento, [se configura durante la creación del programa.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
-
-![Llamada a acción para un nuevo programa](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
-
-Para un programa activo, el estado de la última implementación con vínculos para obtener más información e iniciar una nueva implementación.
-
-![Llamada a acción](/help/implementing/cloud-manager/assets/info-banner.png)
-
-**Entornos** y **Canalizaciones** Las tarjetas de ofrecen una descripción general rápida de ambos dentro del programa seleccionado.
-
-![Tarjetas](/help/implementing/cloud-manager/assets/environments-pipelines.png)
-
-El **Rendimiento** ofrece una descripción general de la **[Panel de CDN.](/help/implementing/cloud-manager/cdn-performance.md)**
-
-![Tarjeta de rendimiento](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
 
 ## Edición de un programa {#editing}
 

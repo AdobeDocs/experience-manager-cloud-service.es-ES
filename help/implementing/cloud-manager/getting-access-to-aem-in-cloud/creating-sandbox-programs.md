@@ -2,10 +2,10 @@
 title: Creación de programas de zona protegida
 description: Aprenda a utilizar Cloud Manager para crear su propio programa de zona protegida para formación, demostración, POC u otros fines que no sean de producción.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 558b46f58491dbd6845003827dcf2a0ae1b1d074
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 86%
+source-wordcount: '434'
+ht-degree: 74%
 
 ---
 
@@ -19,9 +19,9 @@ Obtenga más información sobre los tipos de programas en el documento [Explicac
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. En el **[Mis programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** pantalla, toque o haga clic en **Agregar programa** cerca de la esquina superior derecha de la pantalla.
+1. En el **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)** consola, toque o haga clic en **Agregar programa** cerca de la esquina superior derecha de la pantalla.
 
-   ![Página de aterrizaje de Cloud Manager](assets/cloud-manager-my-programs.png)
+   ![Página de aterrizaje de Cloud Manager](assets/log-in.png)
 
 1. En el asistente Crear programa, seleccione **Configuración de una zona protegida** y proporcione un nombre de programa.
 
@@ -63,12 +63,12 @@ Puede ver los detalles de la configuración de la zona protegida, así como acce
 
 1. Una vez creado el entorno de desarrollo, puede usar el vínculo **Acceso a AEM** para iniciar sesión en AEM.
 
-   ![Vínculo Acceso a AEM](assets/create-program-5.png)
+   ![Vínculo Acceso a AEM](assets/create-program5.png)
 
-1. Una vez completada la implementación de la canalización de no producción en el desarrollo, el asistente le guía para acceder al entorno de desarrollo de AEM o para implementar código en el entorno de desarrollo.
+1. AEM Una vez completada la implementación de la canalización que no es de producción en el entorno de desarrollo, el asistente de la llamada a la acción le guía para acceder al entorno de desarrollo de o para implementar código en el entorno de desarrollo.
 
    ![Implementación de zonas protegidas](assets/create-program-setup-deploy.png)
 
-Si en cualquier momento necesita cambiar a otro programa o volver a la página de información general para crear otro programa, haga clic en el nombre del programa en la parte superior izquierda de la pantalla para mostrar la opción **Vaya a**.
-
-![Vaya a](assets/create-program-a1.png)
+>[!TIP]
+>
+>Consulte el documento [Navegación por la IU de Cloud Manager](/help/implementing/cloud-manager/navigation.md) para obtener más información sobre cómo navegar por Cloud Manager y comprender el **Mis programas** consola.

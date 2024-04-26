@@ -2,7 +2,7 @@
 title: Tablero de licencias
 description: Cloud Manager proporciona un tablero para facilitar la visualización de las autorizaciones de productos de AEMaaCS disponibles para su organización o inquilino.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 58%
@@ -30,7 +30,7 @@ Para acceder al tablero de licencias, siga estos pasos.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. En el **[Mis programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** pantalla, cambie a la **Licencia** pestaña.
+1. En el **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)** consola, cambie a la **Licencia** pestaña.
 
 ![Tablero de licencias](assets/license-dashboard.png)
 

@@ -2,10 +2,10 @@
 title: Creación de programas de producción
 description: Aprenda a utilizar Cloud Manager para crear su propio programa de producción y alojar tráfico en directo.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: a25f1c674534792353cb9b34d4f88a5e32230bc1
+source-git-commit: 418aff3f8519bba4bf5e2459175983633eb664b8
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 33%
+source-wordcount: '1031'
+ht-degree: 34%
 
 ---
 
@@ -22,7 +22,7 @@ Siga estos pasos para crear un programa de producción. Tenga en cuenta que, seg
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. En el **[Mis programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** pantalla, toque o haga clic en **Agregar programa** en la esquina superior derecha de la pantalla.
+1. En el **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)** consola, toque o haga clic en **Agregar programa** en la esquina superior derecha de la pantalla.
 
    ![Página de aterrizaje de Cloud Manager](assets/log-in.png)
 
@@ -48,7 +48,7 @@ Siga estos pasos para crear un programa de producción. Tenga en cuenta que, seg
 
 1. En la pestaña **Fecha de lanzamiento**, introduzca la fecha en la que planea que su programa de producción se ponga en marcha.
 
-   ![Definir la fecha de lanzamiento planeada](assets/setup-go-live.png)
+   ![Definir la fecha de lanzamiento planeada](assets/set-up-go-live.png)
 
    * Esta fecha se puede editar en cualquier momento.
    * Esta fecha es solo para uso informativo y déclencheur el widget Go Live en la [**Resumen del programa** página](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) AEM proporcionar vínculos internos del producto a la documentación de prácticas recomendadas as a Cloud Service de forma oportuna para que se ajuste a su recorrido y que culmine en una experiencia de Go Live correcta y sin problemas.
@@ -117,9 +117,9 @@ Más allá de los derechos requeridos, el 99,99 % de SLA tiene requisitos adicio
 
    ![Información general del programa](assets/set-up-prod5.png)
 
-Si en cualquier momento necesita cambiar a otro programa o volver a la página de información general para crear otro programa, haga clic en el nombre del programa en la parte superior izquierda de la pantalla para mostrar el **Vaya a** opción.
-
-![Vaya a](assets/create-program-a1.png)
+>[!TIP]
+>
+>Consulte el documento [Navegación por la IU de Cloud Manager](/help/implementing/cloud-manager/navigation.md) para obtener más información sobre cómo navegar por Cloud Manager y comprender el **Mis programas** consola.
 
 >[!NOTE]
 >
