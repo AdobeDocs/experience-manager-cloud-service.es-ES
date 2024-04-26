@@ -2,10 +2,10 @@
 title: Introducción al editor universal
 description: Descubra cómo el editor universal permite la edición de lo que se ve es lo que se obtiene (WYSIWYG) de cualquier experiencia sin encabezado y con encabezado. Descubra cómo puede ayudar a los autores de contenido a ofrecer contenidos excepcionales y mayor velocidad, y una experiencia de última generación a los desarrolladores.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: bbcf44c585e98f75c558d06edc3c1c030adad2cf
+source-git-commit: 2ad5920d0b3d8a3ad780a2cb0f28b7e6f9e596ab
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 63%
+source-wordcount: '1066'
+ht-degree: 58%
 
 ---
 
@@ -79,6 +79,16 @@ Un profesional del marketing quiere crear contenido sin tener que preocuparse po
 Un profesional del marketing quiere crear contenido que esté adaptado al diseño de un contexto determinado para ofrecer una experiencia excepcional.
 
 * El trabajo subyacente que hay que realizar es conectar de manera convincente con los lectores.
+
+## Restricciones {#limitations}
+
+A medida que explore el editor universal y avance en la implementación de él en sus propios proyectos, tenga en cuenta las siguientes limitaciones.
+
+* AEM No más de 25 recursos de (fragmentos de contenido, páginas, fragmentos de experiencias, recursos, etc.) deben ser referencias como instrumentación en una sola página.
+* AEM El as a Cloud Service AEM es el único back-end de la compatible.
+* AEM Versión as a Cloud Service `2023.8.13099` Se requiere una versión o superior.
+* Los autores de contenido deben tener sus propias cuentas de Experience Cloud individuales.
+* Chrome y Edge son los exploradores admitidos
 
 ## Recursos adicionales {#additional-resources}
 
