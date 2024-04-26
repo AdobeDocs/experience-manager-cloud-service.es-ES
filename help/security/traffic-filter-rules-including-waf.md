@@ -5,7 +5,7 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: b52da0a604d2c320d046136f5e526e2b244fa6cb
 workflow-type: tm+mt
 source-wordcount: '3790'
-ht-degree: 77%
+ht-degree: 80%
 
 ---
 
@@ -255,7 +255,7 @@ La propiedad `wafFlags`, que se puede utilizar en las reglas de filtro de tráfi
 | SQLI | Inyección de SQL | La inyección de SQL es el intento de obtener acceso a una aplicación o de obtener información privilegiada ejecutando consultas de base de datos arbitrarias. |
 | PUERTA TRASERA | Puerta trasera | Una señal de puerta trasera es una solicitud que intenta determinar si hay un archivo de puerta trasera común en el sistema. |
 | CMDEXE | Ejecución de comandos | La ejecución de comandos es el intento de obtener control o dañar un sistema objetivo a través de comandos arbitrarios del sistema por medio de la entrada del usuario. |
-| CMDEXE-NO-BIN | Ejecución de comandos excepto en `/bin/` | Proporcionar el mismo nivel de protección que `CMDEXE` al deshabilitar los falsos positivos en `/bin` AEM debido a la arquitectura de la. |
+| CMDEXE-NO-BIN | Ejecución de comandos excepto en `/bin/` | Proporciona el mismo nivel de protección que `CMDEXE` a la vez que deshabilita falsos positivos en `/bin` debido a la arquitectura AEM. |
 | XSS | Scripts en sitios múltiples | La ejecución de scripts en sitios múltiples es el intento de apropiarse de la cuenta de un usuario o de una sesión de exploración web mediante código JavaScript malintencionado. |
 | TRAVERSAL | Traversal de directorios | Traversal de directorios es el intento de navegar por carpetas privilegiadas a través de un sistema con la esperanza de obtener información confidencial. |
 | USERAGENT | Herramienta de ataque | La herramienta de ataque es el uso de software automatizado para identificar vulnerabilidades de seguridad o para intentar explotar una vulnerabilidad descubierta. |
@@ -335,7 +335,7 @@ data:
 
 **Ejemplo 3**
 
-Esta regla bloquea las solicitudes en la publicación que contienen el parámetro de consulta `foo`, pero permite todas las solicitudes procedentes de IP 192.168.1.1:
+Esta regla bloquea solicitudes en la publicación que contienen el parámetro de consulta `foo`, pero permite todas las solicitudes procedentes de IP 192.168.1.1:
 
 ```
 kind: "CDN"
@@ -360,7 +360,7 @@ data:
 
 **Ejemplo: 4**
 
-Esta regla bloquea las solicitudes a la ruta `/block-me` al publicar, y bloquea todas las solicitudes que coinciden con una `SQLI` o `XSS` patrón. Este ejemplo incluye reglas de filtro de tráfico WAF, que hace referencia a los [Indicadores WAF](#waf-flags-list) `SQLI` y `XSS` y, por lo tanto, requiere una licencia independiente.
+Esta regla bloquea las solicitudes a la ruta `/block-me` en la publicación y bloquea todas las solicitudes que coinciden con un patrón `SQLI` o `XSS`. Este ejemplo incluye reglas de filtro de tráfico WAF, que hace referencia a los [Indicadores WAF](#waf-flags-list) `SQLI` y `XSS` y, por lo tanto, requiere una licencia independiente.
 
 ```
 kind: "CDN"
@@ -426,7 +426,7 @@ Las reglas de límite de volumen no pueden hacer referencia a indicadores WAF. E
 
 Los límites de volumen se calculan por CDN POP. Por ejemplo, supongamos que los POP de Montreal, Miami y Dublín tienen tasas de tráfico de 80, 90 y 120 solicitudes por segundo, respectivamente. Y la regla de límite de tasa se establece en un límite de 100. En ese caso, solo el tráfico a Dublín tendría limitación de volumen.
 
-Los límites de velocidad se evalúan en función del tráfico que llega al extremo, el tráfico que llega al origen o el número de errores.
+Los límites de velocidad se evalúan en función del tráfico que llega al borde, el tráfico que llega al borde o el número de errores.
 
 ### Estructura rateLimit {#ratelimit-structure}
 
@@ -435,7 +435,7 @@ Los límites de velocidad se evalúan en función del tráfico que llega al extr
 | limit | entero de 10 a 10000 | Requerido | Volumen de solicitud (por CDN POP) en solicitudes por segundo para las que se activa la regla. |
 | ventana | integer enum: 1, 10 o 60 | 10 | Ventana de muestreo en segundos para la que se calcula el volumen de solicitud. La precisión de los contadores depende del tamaño de la ventana (ventana más grande, mayor precisión). Por ejemplo, se puede esperar una precisión del 50 % para la ventana de 1 segundo y del 90 % para la de 60 segundos. |
 | penalty | entero de 60 a 3600 | 300 (5 minutos) | Período en segundos durante el cual se bloquean las solicitudes de coincidencia (redondeado al minuto más próximo). |
-| recuento | todos, recuperaciones, errores | todo | evalúe en función del tráfico de Edge (todo), el tráfico de origen (recuperaciones) o el número de errores (errores). |
+| recuento | todo, recuperaciones, errores | todo | evaluar en función del tráfico del borde (todo), el tráfico de origen (recuperaciones) o el número de errores (errores). |
 | groupBy | array[Getter] | ninguno | El contador de limitador de volumen se añadirá mediante un conjunto de propiedades de solicitud (por ejemplo, clientIp). |
 
 ### Ejemplos {#ratelimiting-examples}
