@@ -4,21 +4,21 @@ description: Las opciones de la lista desplegable se incluyen en una hoja de cá
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 source-git-commit: e61ef529dc562862bd02d7767e45de3e2ec4983b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '442'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
 # Cargar opciones de la lista desplegable desde la URL
 
-Forms suele incluir menús desplegables para que los usuarios seleccionen entre las opciones predefinidas. Estas opciones suelen definirse dentro del propio formulario, pero la administración de listas largas puede resultar engorrosa. Esta guía describe cómo mejorar la creación de formularios cargando opciones desplegables de una hoja de cálculo independiente a través de una dirección URL.
+Los formularios suelen incluir menús desplegables para que los usuarios seleccionen entre las opciones predefinidas. Estas opciones suelen definirse dentro del propio formulario, pero la administración de listas largas puede resultar engorrosa. En esta se guía se describe cómo mejorar la creación de formularios cargando opciones desplegables de una hoja de cálculo independiente a través de una dirección URL.
 
 
 Las ventajas de cargar una lista desplegable desde una hoja de cálculo independiente son las siguientes:
 
 * Administración simplificada: mantenga las opciones desplegables en una ubicación centralizada para facilitar las actualizaciones y adiciones.
-* Eficiencia mejorada: Elimine la necesidad de añadir manualmente listas de opciones largas dentro de la definición del formulario.
+* Mayor eficiencia: elimine la necesidad de añadir manualmente listas de opciones largas dentro de la definición del formulario.
 
 
 
@@ -36,19 +36,21 @@ Al final de este artículo, aprenderá lo siguiente:
 Definición de opciones en una hoja de cálculo independiente
 
 1. Crear una hoja de cálculo:
-   1. AEM Busque la carpeta del proyecto de la en Microsoft® SharePoint o Google Drive.
-   1. Añada una hoja nueva. Por ejemplo, &quot;shared-country&quot;.
-1. Definir columnas de opciones: añada dos columnas: &quot;Option&quot; y &quot;Value&quot;.
+   1. Localice la carpeta del proyecto de AEM en Microsoft® SharePoint o Google Drive.
+   1. Añada una nueva hoja. Por ejemplo, &quot;shared-country&quot;.
+1. Definir columnas de opciones: 
+Añada dos columnas: &quot;Opción&quot; y &quot;Valor&quot;.
    * &quot;Opción&quot; define el texto que se muestra en el menú desplegable.
    * &quot;Valor&quot; define el valor enviado cuando un usuario selecciona la opción.
 
    >[!NOTE]
    >
-   >Si tanto la opción como el valor son idénticos, solo se requiere la columna Opción.
+   >Si tanto la opción como el valor son idénticos, solo se requiere la columna &quot;Opción&quot;.
 
-1. Rellene la hoja de cálculo: introduzca las opciones de país en la columna &quot;Opción&quot; (y la columna &quot;Valor&quot; si es necesario).
+1. Rellenar la hoja de cálculo: 
+Introduzca las opciones de país en la columna &quot;Opción&quot; (y la columna &quot;Valor&quot; si es necesario).
 
-   Consulte el ejemplo siguiente para ver la estructura.
+   Consulte el siguiente ejemplo para ver la estructura.
 
    ![Lista desplegable para el país](/help/forms/assets/drop-down-country-options.png)
 

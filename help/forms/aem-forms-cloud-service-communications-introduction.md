@@ -6,9 +6,9 @@ feature: Adaptive Forms, APIs
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 source-git-commit: 126af719cfd2c9361d0e7768b3b65e1149b6a989
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1988'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -193,11 +193,11 @@ Tanto las API de firma como las de encriptado son [API sincrónicas](#types-of-c
 
 ### API de derechos de uso
 
-<span class="preview"> La capacidad Derechos de uso se encuentra en Programa de adopción anticipada. Puede escribir a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa de primeros usuarios y solicitar acceso a esta funcionalidad. </span>
+<span class="preview"> La funcionalidad de Derechos de uso está incluida en el programa de primeros usuarios. Puede escribir a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa de primeros usuarios y solicitar acceso a esta funcionalidad. </span>
 
-La capacidad Derechos de uso permite a su organización compartir fácilmente documentos interactivos de PDF mediante la ampliación de la funcionalidad de Adobe Reader con derechos de uso adicionales. El servicio funciona con Adobe Reader 7.0 o posterior y agrega derechos de uso a un documento de PDF. Esta acción activa funciones que normalmente no están disponibles cuando se abre un documento PDF con Adobe Reader, como añadir comentarios a un documento, rellenar formularios y guardar el documento. 
+La funcionalidad Derechos de uso permite a su organización compartir fácilmente documentos PDF interactivos, ampliando la funcionalidad de Adobe Reader con derechos de uso adicionales. El servicio funciona con Adobe Reader 7.0 o posterior y añade derechos de uso a un documento PDF. Esta acción activa funciones que normalmente no están disponibles cuando se abre un documento PDF con Adobe Reader, como añadir comentarios a un documento, rellenar formularios y guardar el documento.
 
-Cuando se agregan los derechos de uso correspondientes a los documentos PDF, los destinatarios pueden realizar las siguientes actividades desde Adobe Reader:
+Cuando se añaden los derechos de uso correspondientes a los documentos PDF, los destinatarios pueden realizar las siguientes actividades desde Adobe Reader:
 
 * Completar documentos y formularios PDF en línea o sin conexión, lo que permite a los destinatarios guardar copias de forma local para sus registros y mantener intacta la información añadida.
 * Guardar los documentos PDF en un disco duro local para conservar el documento original y los comentarios, datos o archivos adjuntos adicionales;
@@ -206,7 +206,7 @@ Cuando se agregan los derechos de uso correspondientes a los documentos PDF, los
 * Enviar documentos PDF completados o anotados electrónicamente.
 * Utilizar documentos y formularios PDF como un front-end de desarrollo intuitivo para bases de datos y servicios web internos.
 * compartir documentos PDF con terceros para que los revisores puedan agregar comentarios mediante herramientas de marcado intuitivas. Entre estas herramientas se incluyen las notas adhesivas electrónicas, los sellos, los resaltados y el tachado de texto. Estas funciones también están disponibles en Acrobat;
-* Compatibilidad con descodificación Forms con códigos de barras.
+* Admitir la descodificación de formularios con códigos de barras.
 
 Estas funciones de uso especiales se activan automáticamente al abrir un documento PDF con los derechos habilitados en Adobe Reader. Cuando el usuario ha terminado de trabajar con un documento con los derechos habilitados, esas funciones vuelven a deshabilitarse en Adobe Reader. Permanecen desactivados hasta que el usuario recibe otro documento PDF con los derechos activados.
 
@@ -238,11 +238,11 @@ Las distintas funciones de derechos de uso para ampliar los servicios de Reader 
 
 * **Enviar independiente**: enviar datos de formulario sin conexión desde un documento PDF.
 
-#### Extraer derechos de uso
+#### Extraer los derechos de uso
 
-Ayuda a recuperar los derechos de uso habilitados o deshabilitados en un documento de PDF para la extensibilidad de Adobe Acrobat Reader.
+Ayuda a recuperar los derechos de uso habilitados o deshabilitados en un documento PDF para la extensibilidad de Adobe Acrobat Reader.
 
-#### Otras capacidades
+#### Otras funciones
 
 * **Mensaje**: mensaje que se muestra en Adobe Acrobat Reader al abrir un documento PDF con uno o más derechos de uso aplicados.
 * **Desbloquear contraseña**: la contraseña necesaria para abrir un documento PDF cifrado. Normalmente, es la contraseña de apertura del documento, pero si el documento de PDF está protegido además por una contraseña de permisos, puede utilizar cualquiera de ellas para abrirlo.
@@ -365,7 +365,7 @@ An interactive PDF document contains various elements that constitute a form. Th
 
 When such an interactive PDF document is flattened using the Communications APIs, the state of the form is not retained. To ensure that the state of the form is retained even after the form is flattened, set the Boolean value _retainFormState_ to True to save and retain the state of the form.  -->
 
-## Vea también {#see-also}
+## Consulte también {#see-also}
 
 * [Procesamiento de comunicaciones: API sincrónicas](/help/forms/aem-forms-cloud-service-communications.md)
 * [Procesamiento de comunicaciones: API por lotes](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

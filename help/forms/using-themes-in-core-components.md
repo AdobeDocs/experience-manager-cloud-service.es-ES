@@ -4,9 +4,9 @@ description: Puede utilizar temáticas para aplicar estilo y proporcionar una id
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 source-git-commit: 159407dfaa5d17caddca2953a5732f0e91eb474c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2754'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 93%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components?lang=es) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 Puede crear y aplicar temáticas para diseñar un formulario adaptable. Una temática contiene detalles de estilo para los componentes y paneles. Los estilos incluyen propiedades como colores de fondo, colores de estado, transparencia, alineación y tamaño. Al aplicar una temática, el estilo especificado se refleja en los componentes correspondientes. Una temática se administra de forma independiente sin hacer referencia a un formulario adaptable y se puede reutilizar en varios de estos.
@@ -123,7 +123,7 @@ Para copiar una temática, realice los siguientes pasos:
 
 1. Abra la carpeta de temáticas en un editor de texto sin formato. Por ejemplo, para abrir la carpeta `aem-forms-theme-canvas` en el editor de código de Visual Studio.
 
-1. Navegue hasta la carpeta `aem-forms-theme-canvas`. 
+1. Navegue hasta la carpeta `aem-forms-theme-canvas`.
 
 1. Ejecute el siguiente comando:
 
@@ -143,25 +143,25 @@ Para copiar una temática, realice los siguientes pasos:
 
    >[!NOTE]
    >
-   > * El atributo name se utiliza para identificar la temática de forma exclusiva y el nombre especificado se muestra en la variable **Estilo** de la pestaña **Asistente de creación de formularios**.
-   > * Tiene la opción de seleccionar un nombre para la temática según su elección, por ejemplo, `mytheme` o `customtheme`. Sin embargo, para este caso, se ha especificado el nombre como `aem-forms-wknd-theme`.
+   > * El atributo name se utiliza para identificar el tema de forma exclusiva y el nombre se muestra en la pestaña **Estilo** del **Asistente de creación de formularios**.
+   > * Tiene la opción de seleccionar un nombre para el tema según su elección, por ejemplo, `mytheme` o `customtheme`. Sin embargo, para este caso, hemos especificado el nombre como `aem-forms-wknd-theme`.
 
 1. Abra el archivo `package-lock.json` para editarlo.
-1. Establezca los valores de `name` y `version` atributos. Asegúrese de que los valores de `name` y `version` atributos en la `Package-lock`El archivo .json coincide con los del `Package.json` archivo.
+1. Establezca los valores de los atributos `name` y `version`. Asegúrese de que los valores de los atributos `name` y `version` en el archivo `Package-lock`.json coinciden con los del archivo `Package.json`.
 
    ![Cambiar imagen de nombre del tema de lienzo](/help/forms/assets/changename_canvastheme-package-lock.png)
 
-1. (Opcional) Abra `ReadMe` para editar y actualizar el nombre de la temática.
+1. (Opcional) Abra el archivo `ReadMe` para editar y actualizar el nombre del tema.
 
    ![Cambiar imagen de nombre del tema de lienzo](/help/forms/assets/changename_canvastheme-readme-file.png)
 
 1. Guarde y cierre los archivos.
 
-**Consideraciones al establecer el nombre de la temática**
+**Consideraciones al establecer el nombre del tema**
 
-* Es obligatorio eliminar la variable `@aemforms` del nombre de la temática en `Package.json` archivo y `Package-lock.json` archivo. En caso de que no pueda eliminar `@aemforms` a partir del nombre del tema personalizado, se produce un error en la canalización de frontend durante la implementación del tema.
-* Se recomienda actualizar la temática `version` in `Package.json` archivo y `Package-lock.json` para reflejar con precisión los cambios y mejoras realizados con el tiempo en la temática.
-* Para obtener la información importante acerca del uso, las instrucciones de instalación y otros detalles relevantes, se recomienda actualizar el nombre de la temática en la `ReadMe` archivo.
+* Es obligatorio quitar `@aemforms` del nombre de tema en el archivo `Package.json` y el archivo `Package-lock.json`. En caso de que no pueda quitar `@aemforms` del nombre del tema personalizado, se producirá un error en la canalización de front-end durante la implementación del tema.
+* Se recomienda actualizar el tema `version` en el archivo `Package.json` y el archivo `Package-lock.json` para reflejar con precisión los cambios y mejoras realizados con el tiempo en el tema.
+* Para obtener la información importante sobre el uso, las instrucciones de instalación y otros detalles relevantes, se recomienda actualizar el nombre del tema en el archivo `ReadMe`.
 
 #### 3. Personalizar una temática {#customize-the-theme}
 
@@ -185,7 +185,7 @@ Del mismo modo, puede utilizar el archivo `variable.scss` para establecer la fam
 
 ##### Definir estilos de nivel de componente {#component-based-customization}
 
-También puede cambiar la fuente, el color, el tamaño y otras propiedades CSS de un componente principal de formulario adaptable específico. Por ejemplo, botón, casilla de verificación, contenedor, pie de página, etc.  Puede aplicar estilo a un botón o una casilla de verificación editando el archivo CSS del componente específico para alinearlo con el estilo de su organización. Para personalizar el estilo de un componente, haga lo siguiente:
+También puede cambiar la fuente, el color, el tamaño y otras propiedades CSS de un componente principal de formulario adaptable específico. Por ejemplo, botón, casilla de verificación, contenedor, pie de página, etc. Puede aplicar estilo a un botón o una casilla de verificación editando el archivo CSS del componente específico para alinearlo con el estilo de su organización. Para personalizar el estilo de un componente, haga lo siguiente:
 
 1. Abra el archivo `<your-theme-sources>/src/components/<component>/<component.scss>` para editarlo. Por ejemplo, para cambiar el color de fuente del componente Botón, abra el archivo `<your-theme-sources>/src/components/button/button.scss`.
 1. Cambie el valor de cualquiera según sus necesidades. Por ejemplo, para cambiar el color del componente Botón al pasar el ratón por encima de `green`, cambia el valor de la propiedad `color: $white` en la clase `cmp-adaptiveform-button__widget:hover` a código hexadecimal `#12B453` o cualquier otro tono de `green`. El código final tiene el siguiente aspecto:
@@ -367,7 +367,7 @@ Ahora, inserte los cambios en el repositorio de temáticas de AEM Forms Cloud Se
 
 La temática se implementa mediante la canalización front-end [.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=es). Para implementar una temática, realice los siguientes pasos:
 
-1. Inicie sesión en el repositorio de  AEM Cloud Manager.
+1. Inicie sesión en el repositorio de AEM Cloud Manager.
 1. Haga clic en el botón **[!UICONTROL Añadir]** desde la sección **[!UICONTROL Canalizaciones]**.
 1. Seleccione **[!UICONTROL Agregar canalización que no sea de producción]** o **[!UICONTROL Agregar canalización de producción]** en función del entorno Cloud Service. Por ejemplo, aquí la opción **[!UICONTROL Agregar canalización de producción]** está seleccionada.
 1. En el diálogo **[!UICONTROL Agregar canalización de producción]** como parte de la **[!UICONTROL Configuración]**, especifica el nombre de la canalización. Por ejemplo, el nombre de la canalización es `customcanvastheme`.
@@ -420,7 +420,7 @@ Las temáticas se utilizan como parte de una plantilla de formulario adaptable p
 
 * **Uso del editor de formularios o de temáticas para trabajar con encabezado y pie de página**
 
-  Utilice el editor de temáticas si desea aplicar estilo al encabezado y al pie de página mediante opciones de estilo como estilo de fuente, fondo y transparencia. 
+  Utilice el editor de temáticas si desea aplicar estilo al encabezado y al pie de página mediante opciones de estilo como estilo de fuente, fondo y transparencia.
 Si desea proporcionar información como un logotipo, el nombre de la empresa en el encabezado e información de copyright en el pie de página, utilice las opciones del editor de formularios.
 
 ## Preguntas frecuentes {#faq}
@@ -453,4 +453,4 @@ Si desea proporcionar información como un logotipo, el nombre de la empresa en 
 * [Generar documento de registro para formularios adaptables (Componentes principales](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Creación de un formulario adaptable con secciones repetibles](/help/forms/create-forms-repeatable-sections.md)
 * [Plantillas temáticas y modelos de datos de formularios de ejemplo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es)
-* [Habilitar los componentes principales de formularios adaptables en el entorno AEM Forms as a Cloud Service  y en el de desarrollo local.](/help/forms/enable-adaptive-forms-core-components.md)
+* [Habilitar los componentes principales de formularios adaptables en el entorno AEM Forms as a Cloud Service y en el de desarrollo local.](/help/forms/enable-adaptive-forms-core-components.md)

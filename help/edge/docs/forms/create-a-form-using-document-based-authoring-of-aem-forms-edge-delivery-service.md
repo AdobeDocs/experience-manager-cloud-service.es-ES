@@ -1,44 +1,44 @@
 ---
-title: Creación de un formulario mediante la creación basada en documentos para el servicio de entrega perimetral de AEM Forms
-description: Elabore formularios perfectos, ¡y rápido! ⚡ AEM Forms Edge Delivery + creación basada en documentos = velocidad increíble y formularios compatibles con SEO para usuarios y motores de búsqueda más felices.
+title: Creación de un formulario mediante la creación basada en documentos para Forms Edge Delivery Service de AEM
+description: Elabore formularios perfectos, ¡y rápido! ⚡ Edge Delivery Services de AEM Forms + creación basada en documentos = velocidad increíble, formularios compatibles con SEO y motores de búsqueda para usuarios más satisfechos.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '889'
-ht-degree: 20%
+ht-degree: 100%
 
 ---
 
 
-# Creación de un formulario mediante la creación basada en documentos para el servicio de entrega perimetral de AEM Forms
+# Creación de un formulario mediante la creación basada en documentos para Forms Edge Delivery Service de AEM
 
-En la era digital de hoy en día, la creación de formularios fáciles de usar es esencial para cualquier organización. La creación basada en documentos de AEM Forms Edge Delivery permite crear formularios utilizando herramientas conocidas como Word o Google Docs. Estos formularios envían datos directamente a un archivo de Microsoft Excel o Google Sheets, lo que permite utilizar un ecosistema dinámico y API sólidas de Google Sheets, Microsoft Excel y Microsoft Sharepoint para procesar fácilmente los datos enviados o iniciar un flujo de trabajo empresarial existente.
+En la era digital de hoy en día, la creación de formularios fáciles de usar es esencial para cualquier organización. La creación basada en documentos de AEM Forms Delivery Edge le permite crear formularios usando herramientas como Word o Google Docs. Estos formularios envían datos directamente a un archivo de Microsoft Excel o Google Sheets, lo que le permite utilizar un ecosistema dinámico y API sólidas de Google Sheets, Microsoft Excel y Microsoft SharePoint para procesar fácilmente los datos enviados o iniciar un flujo de trabajo empresarial existente.
 
 Esta guía le explica lo siguiente:
 
-* Preparación de la hoja de cálculo: Aprenda a configurar un archivo de hojas de cálculo de Excel o Google para la recopilación de datos y a agregarle campos de formulario.
-* Enviar datos a la hoja: Aprenda a enviar datos a la hoja mediante solicitudes del POST.
-* Publicación del formulario: integre el formulario en la página de AEM Sites o publíquelo como una página independiente.
+* Preparación de la hoja de cálculo: aprenda a configurar un archivo de Excel o Google Sheets para la recopilación de datos y a añadirle campos de formulario.
+* Envío de datos a la hoja: aprenda a enviar datos a su hoja mediante peticiones POST.
+* Publicación del formulario: integre su formulario en la página de AEM Sites o publíquelo como una página independiente.
 
-Tanto si es un principiante como un profesional, esta guía le permite crear formularios hermosos y funcionales que encantan a los usuarios. Vamos a desbloquear la creación eficiente de formularios: ¡sumérjase ahora!
+Tanto si es un principiante como si es un profesional, esta guía le permite crear formularios hermosos y funcionales que les encantan a los usuarios. Vamos a descubrir cómo crear formularios eficientes: ¡láncese ahora!
 
 ## Antes de comenzar
 
 `WIP`
 
-## Preparación de una hoja de cálculo para recibir datos
+## Preparación de la hoja de cálculo para recibir datos
 
-1. Cree un libro o una hoja de Google AEM de Microsoft Excel en cualquier parte bajo el directorio del proyecto de entrega perimetral de en Microsoft OneDrive o Google Drive. Este documento utiliza una hoja de Google denominada `contact-us.xlsx`, ubicado en la raíz de un proyecto de Adobe Experience Manager AEM ().
+1. Cree un libro de trabajo de Microsoft Excel o una hoja de Google en cualquier parte del directorio de proyectos de AEM Edge Delivery en Microsoft OneDrive o Google Drive. Este documento utiliza una hoja de Google denominada `contact-us.xlsx`, ubicada en la raíz de un proyecto de Adobe Experience Manager (AEM).
 
-1. AEM Asegúrese de que el usuario de la plantilla (por ejemplo, helix@adobe.com) configurado para su proyecto tenga permisos de edición para la hoja.
+1. Asegúrese de que el usuario de AEM (por ejemplo, helix@adobe.com) configurado para su proyecto tenga permisos de edición para la hoja.
 
-1. Abra el libro que ha creado y cambie el nombre de la hoja predeterminada a entrante.
+1. Abra el libro de trabajo que ha creado y cambie el nombre de la hoja predeterminada a &quot;entrante&quot;.
 
    >[!NOTE]
    >
-   > AEM Si la hoja &quot;entrante&quot; no existe, no se envía ningún dato a este libro de trabajo, ya que no se envía ningún dato a la hoja de cálculo &quot;entrante&quot;.
+   > Si la hoja &quot;entrante&quot; no existe, AEM no enviará ningún dato a este libro de trabajo.
 
 1. Previsualice la hoja en la barra de tareas.
 
@@ -46,13 +46,13 @@ Tanto si es un principiante como un profesional, esta guía le permite crear for
    >
    >Incluso si ya ha previsualizado la hoja anteriormente, debe volver a previsualizarla después de crear la hoja &quot;entrante&quot; por primera vez.
 
-1. Prepare la hoja agregando encabezados que coincidan con los datos que va a incluir. El siguiente ejemplo muestra los campos de un formulario &quot;contact-us&quot;:
+1. Prepare la hoja añadiendo encabezados que coincidan con los datos que va a incluir. El siguiente ejemplo muestra los campos de un formulario &quot;contáctenos&quot;:
 
    ![Campos para un formulario contáctenos](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-   Puede hacerlo manualmente o mediante una solicitud de POST AEM a la ruta del formulario en el servicio de administración de la. El servicio de administración examinará los datos en el cuerpo del POST y generará los encabezados, las tablas y las hojas necesarias para introducir los datos de forma eficaz y aprovechar al máximo el servicio de Forms.
+   Puede hacerlo manualmente o mediante una petición POST a la ruta del formulario en el servicio de administración de AEM. El servicio de administración examinará los datos en el cuerpo de POST y generará los encabezados, las tablas y las hojas adecuadas para ingestar los datos de forma eficaz y aprovechar al máximo el servicio de formularios.
 
-   Para saber cómo dar formato a la petición POST para configurar la hoja, consulte la [Documentación de API de administrador](https://www.hlx.live/docs/admin.html#tag/form). Además, observe el ejemplo que se proporciona a continuación:
+   Para saber cómo dar formato a la petición POST para configurar la hoja, consulte la [Documentación de API de administrador](https://www.hlx.live/docs/admin.html?lang=es#tag/form). Además, eche una ojeada al ejemplo que se muestra a continuación:
 
    **Petición**
 
@@ -114,32 +114,32 @@ Tanto si es un principiante como un profesional, esta guía le permite crear for
    }'
    ```
 
-La solicitud de POST mencionada proporciona datos de ejemplo, incluidos los campos de formulario y sus respectivos valores de ejemplo. El servicio de administración utiliza estos datos para configurar el formulario.
+La petición POST mencionada anteriormente proporciona datos de muestra, incluidos los campos de formulario y sus respectivos valores de ejemplo. El servicio de administración utiliza estos datos para configurar el formulario.
 
-Aunque el servicio de administración recomienda configurar la hoja, si prefiere crear los encabezados manualmente, consulte el documento titulado [Configuración manual de hojas de Forms](https://www.hlx.live/docs/manual-forms-sheet-setup).
+Aunque el servicio de administración recomienda configurar la hoja, si prefiere crear los encabezados manualmente, consulte el documento titulado [Configuración manual de hojas de formularios](https://www.hlx.live/docs/manual-forms-sheet-setup).
 
-Al enviar la solicitud del POST al servicio de administración, observará los siguientes cambios en el libro de trabajo:
+Tras enviar la petición POST al servicio de administración, detectará los siguientes cambios en el libro de trabajo:
 
-* Se agrega una nueva hoja denominada &quot;shared-default&quot; al libro de Excel o a la hoja de Google. Los datos presentes en la hoja &quot;shared-default&quot; se recuperan al realizar una solicitud de GET a la hoja. Esta hoja sirve como una ubicación óptima para utilizar fórmulas de hoja de cálculo para resumir los datos entrantes, lo que la hace propicia para el consumo en otros contextos.
+* Se ha añadido una hoja denominada “shared-default” al libro de trabajo de Excel o a la hoja de Google. Los datos presentes en la hoja &quot;shared-default&quot; se recuperan al realizar una petición GET a la hoja. Esta hoja sirve de ubicación óptima para utilizar fórmulas de hoja de cálculo para resumir los datos entrantes, lo que la hace propicia para el consumo en otros contextos.
 
-  Bajo ninguna circunstancia la hoja &quot;shared-default&quot; debe contener información personal identificable o datos sensibles que no se sienta cómodo con ser de acceso público.
+  Bajo ningún concepto la hoja &quot;shared-default&quot; debe contener información personal identificable o datos confidenciales con los que no se sienta cómodo si tienen acceso público.
 
-* Se agrega una hoja denominada &quot;slack&quot; al libro de Excel o a la hoja de Google. En esta hoja, puede configurar las notificaciones automáticas para un canal de Slack designado cada vez que se incorporen nuevos datos en la hoja de cálculo. En la actualidad, AEM admite notificaciones únicamente a las organizaciones AEM Engineering Slack y Adobe Enterprise Support.
+* Se ha añadido una hoja denominada “Slack” al libro de trabajo de Excel o a la hoja de Google. En esta hoja, puede configurar las notificaciones automáticas para un canal de Slack designado cada vez que se incorporen nuevos datos en la hoja de cálculo. En la actualidad, AEM admite notificaciones únicamente a las organizaciones AEM Engineering Slack y Adobe Enterprise Support.
 
-   1. Para configurar las notificaciones del Slack, introduzca el &quot;teamId&quot; del espacio de trabajo del Slack y el &quot;nombre del canal&quot; o &quot;ID&quot;. También puede solicitar al bot de Slack (con el comando debug) para el “teamId” y “channel ID”. Es preferible utilizar el “ID de canal” en lugar del “nombre de canal”, ya que se mantiene después de cambiar el nombre del canal.
+   1. Para configurar las notificaciones de Slack, escriba “teamId” en el espacio de trabajo de Slack y el nombre del canal o “ID”. También puede solicitar al bot de Slack (con el comando debug) para el “teamId” y “channel ID”. Es preferible utilizar el “ID de canal” en lugar del “nombre de canal”, ya que se mantiene después de cambiar el nombre del canal.
 
       >[!NOTE]
       >
       > Los formularios anteriores no tenían la columna “teamId”. El “teamId” se incluía en la columna del canal, separado por “#” o “/”.
 
-   1. Escriba el título que desee y en los campos escriba los nombres de los campos que desee ver en la notificación al Slack. Cada encabezado debe separarse con una coma (por ejemplo, nombre, correo electrónico).
+   1. Introduzca el título que desee y en los campos escriba los nombres de los campos que desea ver en la notificación de Slack. Cada encabezado debe separarse con una coma (por ejemplo, nombre, correo electrónico).
 
-Ahora, la hoja está configurada para recibir datos y puede enviar solicitudes de POST directamente a ella mediante hlx.page, hlx.live o su dominio de producción.
+Ahora, la hoja está configurada para recibir datos y puede enviarle peticiones POST directamente mediante hlx.page, hlx.live o su dominio de producción.
 
 
 ## Enviar datos a la hoja {#send-data-to-your-sheet}
 
-Una vez que la hoja esté configurada para recibir datos, puede enviarle solicitudes de POST directamente mediante hlx.page, hlx.live o su dominio de producción para enviar datos.
+Una vez que la hoja esté configurada para recibir datos, puede enviarle peticiones POST directamente mediante hlx.page, hlx.live o su dominio de producción para enviar datos.
 
 ```JSON
 POST https://branch–repo–owner.hlx.(page|live)/email-form
@@ -148,11 +148,11 @@ POST https://my-domain.com/email-form
 
 >[!NOTE]
 >
-> La dirección URL no debe tener la extensión .json. Debe publicar la hoja para que las operaciones de POST funcionen en .live o en el dominio de producción.
+> La dirección URL no debe tener la extensión .json. Debe publicar la hoja para que las operaciones POST funcionen en .live o en el dominio de producción.
 
-### Formato de datos para EDS Forms
+### Formato de datos para formularios de EDS
 
-Existen varias formas de dar formato a los datos del formulario en el cuerpo del POST.
+Existen varias formas de dar formato a los datos del formulario en el cuerpo de POST.
 
 * Matriz de pares nombre:valor:
 
@@ -209,7 +209,8 @@ Existen varias formas de dar formato a los datos del formulario en el cuerpo del
       }
   ```
 
-* `x-www-form-urlencoded` cuerpo (`content-type` el encabezado debe establecerse en `application/x-www-form-urlencoded`) &#39;firstname=bruce&amp;lastname=banner&amp;email=bruce%40example.com&#39;
+* `x-www-form-urlencoded` cuerpo (`content-type` el encabezado debe establecerse en `application/x-www-form-urlencoded`)
+&#39;firstname=bruce&amp;lastname=banner&amp;email=bruce%40example.com&#39;
 
 
 
