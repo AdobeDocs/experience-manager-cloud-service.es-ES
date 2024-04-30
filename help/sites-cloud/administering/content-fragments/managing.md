@@ -4,9 +4,9 @@ description: AEM Obtenga información sobre cómo administrar los fragmentos de 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 404eb317562f974f72820c6e3aa019fbe043d7f7
+source-git-commit: a9a2362903e8eec25393e2ceb307814e1a21f142
 workflow-type: tm+mt
-source-wordcount: '2643'
+source-wordcount: '2628'
 ht-degree: 45%
 
 ---
@@ -302,11 +302,7 @@ Puede publicar los fragmentos de contenido en:
 
   >[!NOTE]
   >
-  >Para obtener más información sobre los entornos de vista previa, consulte lo siguiente:
-  >
-  >* [Administrar entornos](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
-  >* [Configuración de OSGi para el nivel de vista previa](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
-  >* [Depuración de la vista previa mediante Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
+  >Para obtener más información sobre los entornos de vista previa, consulte [Administrar entornos](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 >[!CAUTION]
 >

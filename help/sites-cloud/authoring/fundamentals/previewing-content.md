@@ -2,10 +2,10 @@
 title: Vista previa del contenido
 description: Aprenda a utilizar el servicio de vista previa de AEM para obtener una vista previa del contenido antes de publicarlo.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: a9a2362903e8eec25393e2ceb307814e1a21f142
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 77%
+source-wordcount: '298'
+ht-degree: 75%
 
 ---
 
@@ -54,11 +54,3 @@ El contenido también se puede publicar para previsualizarse mediante un [flujo 
 Cancelar la publicación de contenido desde el entorno de **Vista previa** es básicamente el mismo proceso que [cancelar la publicación de páginas](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) del entorno de **Publicación**.
 
 La única diferencia es que puede seleccionar el **Destino** a **Vista previa**.
-
-## Información adicional {#further-information}
-
-Consulte también lo siguiente:
-
-* [Configuración de OSGi para el nivel de vista previa](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
-
-* [Depuración de la vista previa mediante Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
