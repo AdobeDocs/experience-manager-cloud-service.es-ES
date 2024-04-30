@@ -3,22 +3,18 @@ title: Selector de recursos para [!DNL Adobe Experience Manager] como un [!DNL C
 description: Utilice el selector de recursos para buscar y recuperar metadatos y representaciones de recursos dentro de la aplicación.
 contentOwner: KK
 role: Admin,User
-exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: e882e89afa213f3423efe497585994eb91186fd7
+exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
+source-git-commit: b9fe6f4c2f74d5725575f225f8d9eb2e5fbfceb7
 workflow-type: tm+mt
-source-wordcount: '2371'
-ht-degree: 91%
+source-wordcount: '3908'
+ht-degree: 45%
 
 ---
 
+
 # Selector de recursos de Micro-Frontend {#Overview}
 
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-selector.html?lang=en) |
-| AEM as a Cloud Service | Este artículo |
-
-El Selector de recursos de Micro-Frontend proporciona una interfaz de usuario que se integra fácilmente con el repositorio de [!DNL Experience Manager Assets as a Cloud Service] para poder examinar o buscar recursos digitales disponibles en el repositorio y utilizarlos en la experiencia de creación de la aplicación.
+El Selector de recursos de Micro-Frontend proporciona una interfaz de usuario que se integra fácilmente con el repositorio de [!DNL Experience Manager Assets] para poder examinar o buscar recursos digitales disponibles en el repositorio y utilizarlos en la experiencia de creación de la aplicación.
 
 La interfaz de usuario de Micro-Frontend está disponible en la experiencia de su aplicación mediante el paquete Selector de recursos. Las actualizaciones del paquete se importan automáticamente y el último Selector de recursos implementado se carga automáticamente en la aplicación.
 
@@ -26,88 +22,46 @@ La interfaz de usuario de Micro-Frontend está disponible en la experiencia de s
 
 El Selector de recursos ofrece muchas ventajas, como las siguientes:
 
-* Facilidad de integración con cualquiera de las aplicaciones de Adobe o que no sean de Adobe mediante la biblioteca JavaScript de Vanilla.
+* Facilidad de integración con cualquiera de las [Adobe](#asset-selector-ims) o [no Adobe](#asset-selector-non-ims) aplicaciones que utilizan la biblioteca JavaScript de Vanilla.
 * Son fáciles de mantener, ya que las actualizaciones del paquete del Selector de recursos se implementan automáticamente en el Selector de recursos disponible para su aplicación. No se requieren actualizaciones dentro de la aplicación para cargar las modificaciones más recientes.
 * Facilidad de personalización, ya que hay propiedades disponibles que controlan la visualización del Selector de recursos en la aplicación.
-
 * Filtros personalizados, de búsqueda de texto completo y listos para usar para navegar rápidamente a los recursos y utilizarlos en la experiencia de creación.
-
 * Capacidad para cambiar repositorios dentro de una organización IMS para la selección de recursos.
-
 * Capacidad para ordenar recursos por nombre, dimensiones y tamaño y verlos en la vista Lista, Cuadrícula, Galería o Cascada.
 
-El ámbito de este artículo es demostrar cómo utilizar el Selector de recursos con una aplicación de [!DNL Adobe] bajo Unified Shell o cuando ya tiene un imsToken generado para la autenticación. Estos flujos de trabajo se denominan flujo no SUSI en este artículo.
+<!--Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
 
-Realice las siguientes tareas para integrar y utilizar el Selector de recursos con su repositorio de [!DNL Experience Manager Assets as a Cloud Service]:
-
-* [Integración del Selector de recursos mediante Vanilla JS](#integration-with-vanilla-js)
-* [Definir propiedades de visualización del Selector de recursos](#asset-selector-properties)
-* [Uso del Selector de recursos](#using-asset-selector)
-
-## Integración del Selector de recursos mediante Vanilla JS {#integration-with-vanilla-js}
-
-Puede integrar cualquier [!DNL Adobe] o aplicación sin Adobe con [!DNL Experience Manager Assets] como un repositorio de [!DNL Cloud Service] y seleccione recursos desde la aplicación.
-
-La integración se realiza importando el paquete Selector de recursos y conectándose a los Assets as a Cloud Service mediante la biblioteca JavaScript de Vanilla. Debe editar un `index.html` o cualquier archivo apropiado dentro de su aplicación para:
-
-* Definición de los detalles de autenticación
-* Acceso al repositorio Assets as a Cloud Service
-* Configurar las propiedades de visualización del Selector de recursos
-
-<!--
-Asset Selector supports authentication to the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID`. Authentication using these IMS properties is referred to as SUSI (Sign Up Sign In) flow in this article.
-
-You can perform authentication without defining some of the IMS properties, such as `imsScope` or `imsClientID`, if:
-
-*   You are integrating an [!DNL Adobe] application on [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
-*   You already have an IMS token generated for authentication.
-
-Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository without defining `imsScope` or `imsClientID` IMS properties is referred to as a non-SUSI flow in this article.
+1. [Install Asset Selector](#installation)
+2. [Integrate Asset Selector using Vanilla JS](#integration-using-vanilla-js)
+3. [Use Asset Selector](#using-asset-selector)
 -->
 
-Puede realizar la autenticación sin definir algunas de las propiedades de IMS, si:
-
-* Está integrando una aplicación de [!DNL Adobe] en [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=es).
-* Ya ha generado un token de IMS para la autenticación.
-
-## Requisitos previos {#prerequisites}
-
 <!--
-If your application requires user based authentication, out-of-the-box Asset Selector also supports a flow for authentication to the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository using Identity Management System (IMS.)
+## Setting up Asset Selector {#asset-selector-setup}
 
-You can use properties such as `imsScope` or `imsClientID` to retrieve `imsToken` automatically. You can use SUSI (Sign Up Sign In) flow and IMS properties. Also, you can obtain your own imsToken and pass it to Asset Selector by integrating within [!DNL Adobe] application on Unified Shell or if you already have an imsToken obtained via other methods (for example, using technical account). Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository without defining IMS properties (For example, `imsScope` and `imsClientID`) is referred to as a non-SUSI flow.
+![Asset Selector set up](assets/asset-selector-prereqs.png)
 -->
 
-Defina los requisitos previos en el archivo de `index.html` o un archivo similar dentro de la implementación de la aplicación para definir los detalles de la autenticación para acceder al repositorio de [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. Los requisitos previos incluyen:
+## Requisitos previos{#prereqs}
 
-* imsOrg
-* imsToken
-* apikey
-<!--
-The prerequisites vary if you are authenticating using a SUSI flow or a non-SUSI flow.
+Debe asegurarse de que dispone de los siguientes métodos de comunicación:
 
-**Non-SUSI flow**
+* La aplicación se está ejecutando en HTTPS.
+* La dirección URL de la aplicación está en la lista de permitidos de direcciones URL de redireccionamiento del cliente IMS.
+* El flujo de inicio de sesión de IMS se configura y se representa mediante una ventana emergente en el explorador web. Por lo tanto, las ventanas emergentes deben habilitarse o permitirse en el explorador de destino.
 
-*   imsOrg
-*   imsToken
-*   apikey
+Utilice los requisitos previos anteriores si necesita el flujo de trabajo de autenticación IMS del Selector de recursos. Alternativamente, si ya está autenticado con el flujo de trabajo de IMS, puede añadir la información de IMS en su lugar.
 
-For more information on these properties, see [Asset Selector Properties](#asset-selector-properties).
-
-**SUSI flow**
-
-*   imsClientId
-*   imsScope
-*   redirectUrl
-*   imsOrg
-*   apikey
-
-For more information on these properties, see [Example for the SUSI flow](#susi-vanilla) and [Asset Selector Properties](#asset-selector-properties).
--->
+>[!IMPORTANT]
+>
+> Este repositorio está diseñado para servir como documentación suplementaria que describa las API disponibles y ejemplos de uso para la integración del Selector de recursos. Antes de intentar instalar o utilizar el Selector de recursos, asegúrese de que su organización tenga acceso al Selector de recursos como parte del perfil as a Cloud Service de Experience Manager Assets. Si no se ha aprovisionado, no puede integrar ni utilizar estos componentes. Para solicitar el aprovisionamiento, el administrador del programa debe generar un ticket de asistencia marcado como P2 desde Admin Console e incluir la siguiente información:
+>
+>* Nombres de dominio en los que está alojada la aplicación integradora.
+>* Después del aprovisionamiento, su organización recibirá `imsClientId`, `imsScope`, y a `redirectUrl` correspondientes a los entornos solicitados que son esenciales para la configuración del Selector de recursos. Sin estas propiedades válidas, no se pueden ejecutar los pasos de instalación.
 
 ## Instalación {#installation}
 
-Los selectores de recursos están disponibles a través de la CDN de ESM (por ejemplo, [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/)) y versión [UMD](https://github.com/umdjs/umd).
+El Selector de recursos está disponible a través de la CDN de ESM (por ejemplo, [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/)) y [UMD](https://github.com/umdjs/umd) versión.
 
 En navegadores que utilizan la **Versión de UMD** (recomendado):
 
@@ -133,106 +87,50 @@ En la federación de módulos Deno/Webpack mediante **Versión de CDN de ESM**:
 import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 ```
 
-### Tipo de recurso seleccionado {#selected-asset-type}
+## Integración del Selector de recursos mediante Vanilla JS {#integration-using-vanilla-js}
 
-El tipo de recurso seleccionado es una matriz de objetos que contiene la información del recurso al utilizar las funciones `handleSelection`, `handleAssetSelection`, y `onDrop`.
+Puede integrar cualquier [!DNL Adobe] o aplicación sin Adobe con [!DNL Experience Manager Assets] repositorio y seleccione recursos desde la aplicación. Consulte [Integración del Selector de recursos con diversas aplicaciones](#asset-selector-integration-with-apps).
 
-**Sintaxis de esquema**
+La integración se realiza importando el paquete Selector de recursos y conectándose a los Assets as a Cloud Service mediante la biblioteca JavaScript de Vanilla. Editar un `index.html` o cualquier archivo apropiado dentro de su aplicación para:
 
-```
-interface SelectedAsset {
-    'repo:id': string;
-    'repo:name': string;
-    'repo:path': string;
-    'repo:size': number;
-    'repo:createdBy': string;
-    'repo:createDate': string;
-    'repo:modifiedBy': string; 
-    'repo:modifyDate': string; 
-    'dc:format': string; 
-    'tiff:imageWidth': number;
-    'tiff:imageLength': number;
-    'repo:state': string;
-    computedMetadata: Record<string, any>;
-    _links: {
-        'http://ns.adobe.com/adobecloud/rel/rendition': Array<{
-            href: string;
-            type: string;
-            'repo:size': number;
-            width: number;
-            height: number;
-            [others: string]: any;
-        }>;
-    };
-}
-```
+* Definición de los detalles de autenticación
+* Acceso al repositorio Assets as a Cloud Service
+* Configurar las propiedades de visualización del Selector de recursos
 
-En la tabla siguiente se describen algunas de las propiedades importantes del objeto Recurso seleccionado.
+Puede realizar la autenticación sin definir algunas de las propiedades de IMS, si:
 
-| Propiedad | Tipo | Explicación |
-|---|---|---|
-| *repo:repositoryId* | cadena | Identificador único del repositorio en el que se almacena el recurso. |
-| *repo:id* | cadena | Identificador único del recurso. |
-| *repo:assetClass* | cadena | La clasificación del recurso (por ejemplo, imagen o vídeo, documento). |
-| *repo:name* | cadena | Nombre del recurso, incluida la extensión de archivo. |
-| *repo:size* | número | El tamaño del recurso en bytes. |
-| *repo:path* | cadena | La ubicación del recurso dentro del repositorio. |
-| *repo:ancestors* | `Array<string>` | Matriz de elementos antecesores del recurso en el repositorio. |
-| *repo:state* | cadena | Estado actual del recurso en el repositorio (por ejemplo, activo, eliminado, etc.). |
-| *repo:createdBy* | cadena | El usuario o sistema que creó el recurso. |
-| *repo:createDate* | cadena | La fecha y la hora en que se creó el recurso. |
-| *repo:modifiedBy* | cadena | Usuario o sistema que modificó el recurso por última vez. |
-| *repo:modifyDate* | cadena | La fecha y la hora en que se modificó el recurso por última vez. |
-| *dc:format* | cadena | El formato del recurso, como el tipo de archivo (por ejemplo, JPEG, PNG, etc.). |
-| *tiff:imageWidth* | número | La anchura de un recurso. |
-| *tiff:imageLength* | número | Altura de un recurso. |
-| *computedMetadata* | `Record<string, any>` | Un objeto que representa un cubo para todos los metadatos del recurso de todo tipo (repositorio, aplicación o metadatos incrustados). |
-| *_links* | `Record<string, any>` | Vínculos de hipermedia para el recurso asociado. Incluye vínculos para recursos como metadatos y representaciones. |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition* | `Array<Object>` | Matriz de objetos que contiene información sobre las representaciones del recurso. |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].href* | cadena | URI de la representación. |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].type* | cadena | Tipo MIME de la representación. |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].&#39;repo:size&#39;* | número | El tamaño de la representación en bytes. |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].width* | número | La anchura de la representación. |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].height* | número | Altura de la representación. |
+* Está integrando una aplicación de [!DNL Adobe] en [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=es).
+* Ya ha generado un token de IMS para la autenticación.
 
-Para obtener una lista completa de las propiedades y un ejemplo detallado, visite [Ejemplo de código del selector de recursos](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+## Integración del Selector de recursos con varias aplicaciones {#asset-selector-integration-with-apps}
 
-<!--
-### ImsAuthProps {#ims-auth-props}
+Puede integrar el Selector de recursos con varias aplicaciones, como:
 
-The `ImsAuthProps` properties define the authentication information and flow that the Asset Selector uses to obtain an `imsToken`. By setting these properties, you can control how the authentication flow should behave and register listeners for various authentication events.
+* [Integrar el Selector de recursos con una [!DNL Adobe] aplicación](#adobe-app-integration-vanilla)
+* [Integración del Selector de recursos con una aplicación que no sea de Adobe](#adobe-non-app-integration)
 
-| Property Name | Description|
-|---|---|
-| `imsClientId`| A string value representing the IMS client ID used for authentication purposes. This value is provided by Adobe and is specific to your Adobe AEM CS organization.|
-| `imsScope`| Describes the scopes used in authentication. The scopes determine the level of access that the application has to your organization resources. Multiple scopes can be separated by commas.|
-| `redirectUrl` | Represents the URL where the user is redirected after authentication. This value is typically set to the current URL of the application. If a `redirectUrl` is not supplied, `ImsAuthService` will use the redirectUrl used to register the `imsClientId`|
-| `modalMode`| A boolean indicating whether the authentication flow should be displayed in a modal (pop-up) or not. If set to `true`, the authentication flow is displayed in a pop-up. If set to `false`, the authentication flow is displayed in a full page reload. _Note:_ for better UX, you can dynamically control this value if the user has browser pop-up disabled. |
-| `onImsServiceInitialized`| A callback function that is called when the Adobe IMS authentication service is initialized. This function takes one parameter, `service`, which is an object representing the Adobe IMS service. See [`ImsAuthService`](#imsauthservice-ims-auth-service) for more details.|
-| `onAccessTokenReceived`| A callback function that is called when an `imsToken` is received from the Adobe IMS authentication service. This function takes one parameter, `imsToken`, which is a string representing the access token. |
-| `onAccessTokenExpired`| A callback function that is called when an access token has expired. This function is typically used to trigger a new authentication flow to obtain a new access token. |
-| `onErrorReceived`| A callback function that is called when an error occurs during authentication. This function takes two parameters: the error type and error message. The error type is a string representing the type of error and the error message is a string representing the error message. |
+>[!BEGINTABS]
 
-### ImsAuthService {#ims-auth-service}
+<!--Integration with an Adobe application content starts here-->
 
-`ImsAuthService` class handles the authentication flow for the Asset Selector. It is responsible for obtaining an `imsToken` from the Adobe IMS authentication service. The `imsToken` is used to authenticate the user and authorize access to the Adobe Experience Manager (AEM) CS Assets repository. ImsAuthService uses the `ImsAuthProps` properties to control the authentication flow and register listeners for various authentication events. You can use the convenient [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) function to register the _ImsAuthService_ instance with the Asset Selector. The following functions are available on the `ImsAuthService` class. However, if you are using the _registerAssetsSelectorsAuthService_ function, you do not need to call these functions directly.
+>[!TAB Integración con una aplicación de Adobe]
 
-| Function Name | Description |
-|---|---|
-| `isSignedInUser` | Determines whether the user is currently signed in to the service and returns a boolean value accordingly.|
-| `getImsToken`    | Retrieves the authentication `imsToken` for the currently signed-in user, which can be used to authenticate requests to other services such as generating asset _rendition.|
-| `signIn`| Initiates the sign-in process for the user. This function uses the `ImsAuthProps` to show authentication in either a pop-up or a full page reload |
-| `signOut`| Signs the user out of the service, invalidating their authentication token and requiring them to sign in again to access protected resources. Invoking this function will reload the current page.|
-| `refreshToken`| Refreshes the authentication token for the currently signed-in user, preventing it from expiring and ensuring uninterrupted access to protected resources. Returns a new authentication token that can be used for subsequent requests. |
--->
+### Requisitos previos{#prereqs-adobe-app}
 
-### Ejemplo de flujo no SUSI {#non-susi-vanilla}
+Utilice los siguientes requisitos previos si integra el Selector de recursos con una [!DNL Adobe] aplicación:
 
-En este ejemplo se muestra cómo utilizar el Selector de recursos con un flujo que no sea SUSI al ejecutar una aplicación de [!DNL Adobe] en Unified Shell o cuando ya tiene `imsToken` generado para la autenticación.
+* [Métodos de comunicación](#prereqs)
+* imsOrg
+* imsToken
+* apikey
 
-Incluya el paquete Selector de recursos en su código mediante el `script` , como se muestra en _líneas 6-15_ del ejemplo siguiente. Una vez cargado el script, la variable global `PureJSSelectors` está disponible para su uso. Definición del selector de recursos [propiedades](#asset-selector-properties) como se muestra en _líneas 16-23_. Las propiedades de `imsOrg` y `imsToken` son necesarias para la autenticación en un flujo que no es SUSI. La propiedad de `handleSelection` se utiliza para gestionar los recursos seleccionados. Para procesar el Selector de recursos, llame a la función de `renderAssetSelector` como se menciona en _línea 17_. El Selector de recursos se muestra en el elemento contenedor de `<div>`, como se muestra en las _líneas 21 y 22_.
+### Integrar el Selector de recursos con una [!DNL Adobe] aplicación {#adobe-app-integration-vanilla}
 
-Al seguir estos pasos, puede utilizar el Selector de recursos con un flujo que no sea SUSI en su aplicación de [!DNL Adobe].
+En el siguiente ejemplo se muestra el uso del Selector de recursos al ejecutar un [!DNL Adobe] aplicación en Unified Shell o cuando ya tiene `imsToken` generado para la autenticación.
+
+Incluya el paquete Selector de recursos en su código mediante el `script` , como se muestra en _líneas 6-15_ del ejemplo siguiente. Una vez cargado el script, la variable global `PureJSSelectors` está disponible para su uso. Definición del selector de recursos [propiedades](#asset-selector-properties) como se muestra en _líneas 16-23_. El `imsOrg` y `imsToken` ambas propiedades son necesarias para la autenticación en la aplicación de Adobe. La propiedad de `handleSelection` se utiliza para gestionar los recursos seleccionados. Para procesar el Selector de recursos, llame a la función de `renderAssetSelector` como se menciona en _línea 17_. El Selector de recursos se muestra en el elemento contenedor de `<div>`, como se muestra en las _líneas 21 y 22_.
+
+Al seguir estos pasos, puede utilizar el Selector de recursos con su [!DNL Adobe] aplicación.
 
 ```html {line-numbers="true"}
 <!DOCTYPE html>
@@ -243,7 +141,7 @@ Al seguir estos pasos, puede utilizar el Selector de recursos con un flujo que n
     <script>
         // get the container element in which we want to render the AssetSelector component
         const container = document.getElementById('asset-selector-container');
-        // imsOrg and imsToken are required for authentication in non-SUSI flow
+        // imsOrg and imsToken are required for authentication in Adobe application
         const assetSelectorProps = {
             imsOrg: 'example-ims@AdobeOrg',
             imsToken: "example-imsToken",
@@ -263,24 +161,146 @@ Al seguir estos pasos, puede utilizar el Selector de recursos con un flujo que n
 </html>
 ```
 
-Para ver un ejemplo detallado, visite [Ejemplo de código del selector de recursos](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+<!--For detailed example, visit [Asset Selector Code Example](https://github.com/adobe/aem-assets-selectors-mfe-examples).-->
 
-<!--
-### Example for the SUSI flow {#susi-vanilla}
++++**ImsAuthProps**
+El `ImsAuthProps` Las propiedades de definen la información de autenticación y el flujo que utiliza el Selector de recursos para obtener una `imsToken`. Al establecer estas propiedades, puede controlar cómo debe comportarse el flujo de autenticación y registrar los agentes de escucha para varios eventos de autenticación.
 
-Use this example `index.html` file for authentication if you are integrating your application using SUSI flow.
+| Nombre de la propiedad | Descripción |
+|---|---|
+| `imsClientId` | Valor de cadena que representa el ID de cliente de IMS utilizado con fines de autenticación. Este valor lo proporciona el Adobe y es específico de su organización de Adobe AEM CS. |
+| `imsScope` | Describe los ámbitos utilizados en la autenticación. Los ámbitos determinan el nivel de acceso que la aplicación tiene a los recursos de su organización. Los ámbitos múltiples se pueden separar con comas. |
+| `redirectUrl` | Representa la dirección URL a la que se redirige al usuario después de la autenticación. Este valor se suele establecer en la dirección URL actual de la aplicación. Si un `redirectUrl` no se proporciona, `ImsAuthService` utiliza la redirectUrl utilizada para registrar el `imsClientId` |
+| `modalMode` | Un booleano que indica si el flujo de autenticación debe mostrarse en un modal (emergente) o no. Si se establece en `true`, el flujo de autenticación se muestra en una ventana emergente. Si se establece en `false`, el flujo de autenticación se muestra en una recarga de página completa. _Nota:_ para una mejor experiencia de usuario, puede controlar dinámicamente este valor si el usuario tiene deshabilitadas las ventanas emergentes del explorador. |
+| `onImsServiceInitialized` | Una función de llamada de retorno que se llama cuando se inicializa el servicio de autenticación IMS de Adobe. Esta función toma un parámetro, `service`, que es un objeto que representa el servicio IMS de Adobe. Consulte [`ImsAuthService`](#imsauthservice-ims-auth-service) para obtener más información. |
+| `onAccessTokenReceived` | Una función de llamada de retorno a la que se llama cuando una función `imsToken` se recibe desde el servicio de autenticación IMS de Adobe. Esta función toma un parámetro, `imsToken`, que es una cadena que representa el token de acceso. |
+| `onAccessTokenExpired` | Función de llamada de retorno a la que se llama cuando ha caducado un token de acceso. Esta función se utiliza generalmente para almacenar en déclencheur un nuevo flujo de autenticación para obtener un nuevo token de acceso. |
+| `onErrorReceived` | Función de llamada de retorno a la que se llama cuando se produce un error durante la autenticación. Esta función toma dos parámetros: el tipo de error y el mensaje de error. El tipo de error es una cadena que representa el tipo de error y el mensaje de error es una cadena que representa el mensaje de error. |
 
-Access the Asset Selector package using the `Script` Tag, as shown in *line 9* to *line 11* of the example `index.html` file.
++++
 
-*Line 14* to *line 38* of the example describes the IMS flow properties, such as `imsClientId`, `imsScope`, and `redirectURL`. The function requires that you define at least one of the `imsClientId` and `imsScope` properties. If you do not define a value for `redirectURL`, the registered redirect URL for the client ID is used.
++++**ImsAuthService**
+`ImsAuthService` administra el flujo de autenticación para el Selector de recursos. Es responsable de obtener una `imsToken` del servicio de autenticación IMS de Adobe. El `imsToken` se utiliza para autenticar al usuario y autorizar el acceso a [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Repositorio de recursos. ImsAuthService utiliza `ImsAuthProps` propiedades para controlar el flujo de autenticación y registrar agentes de escucha para varios eventos de autenticación. Puede usar el conveniente [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) función para registrar el _ImsAuthService_ con el Selector de recursos. Las siguientes funciones están disponibles en la `ImsAuthService` clase. Sin embargo, si utiliza el _registerAssetsSelectorsAuthService_ función, no es necesario llamar a estas funciones directamente.
 
-As you do not have an `imsToken` generated, use the `registerAssetsSelectorsAuthService` and `renderAssetSelectorWithAuthFlow` functions, as shown in line 40 to line 50 of the example `index.html` file. Use the `registerAssetsSelectorsAuthService` function before `renderAssetSelectorWithAuthFlow` to register the `imsToken` with the Asset Selector. [!DNL Adobe] recommends to call `registerAssetsSelectorsAuthService` when you instantiate the component.
+| Nombre de función | Descripción |
+|---|---|
+| `isSignedInUser` | Determina si el usuario ha iniciado sesión en el servicio y devuelve un valor booleano en consecuencia. |
+| `getImsToken` | Recupera la autenticación `imsToken` para el usuario que ha iniciado sesión, que se puede utilizar para autenticar solicitudes a otros servicios, como la generación de la _representación del recurso. |
+| `signIn` | Inicia el proceso de inicio de sesión del usuario. Esta función utiliza el `ImsAuthProps` para mostrar la autenticación en una ventana emergente o en una recarga de página completa |
+| `signOut` | Cierra la sesión del usuario del servicio, invalidando su token de autenticación y obligándole a iniciar sesión de nuevo para acceder a los recursos protegidos. Al invocar esta función, se volverá a cargar la página actual. |
+| `refreshToken` | Actualiza el token de autenticación del usuario que ha iniciado sesión, lo que evita que caduque y garantiza un acceso ininterrumpido a los recursos protegidos. Devuelve un nuevo token de autenticación que puede utilizarse para solicitudes posteriores. |
 
-Define the authentication and other Assets as a Cloud Service access-related properties in the `const props` section, as shown in *line 54* to *line 60* of the example `index.html` file.
++++
 
-The `PureJSSelectors` global variable, mentioned in *line 65*, is used to render the Asset Selector in the web browser.
++++**Validación con el token de IMS proporcionado**
 
-Asset Selector is rendered on the `<div>` container element, as mentioned in *line 74* to *line 81*. The example uses a dialog to display the Asset Selector.
+```
+<script>
+    const apiToken="<valid IMS token>";
+    function handleSelection(selection) {
+    console.log("Selected asset: ", selection);
+    };
+    function renderAssetSelectorInline() {
+    console.log("initializing Asset Selector");
+    const props = {
+    "repositoryId": "delivery-p64502-e544757.adobeaemcloud.com",
+    "apiKey": "ngdm_test_client",
+    "imsOrg": "<IMS org>",
+    "imsToken": apiToken,
+    handleSelection,
+    hideTreeNav: true
+    }
+    const container = document.getElementById('asset-selector-container');
+    PureJSSelectors.renderAssetSelector(container, props);
+    }
+    $(document).ready(function() {
+    renderAssetSelectorInline();
+    });
+</script>
+```
+
++++
+
++++**Registro de llamadas de retorno al servicio IMS**
+
+```
+// object `imsProps` to be defined as below 
+let imsProps = {
+    imsClientId: <IMS Client Id>,
+        imsScope: "openid",
+        redirectUrl: window.location.href,
+        modalMode: true,
+        adobeImsOptions: {
+            modalSettings: {
+            allowOrigin: window.location.origin,
+},
+        useLocalStorage: true,
+},
+onImsServiceInitialized: (service) => {
+            console.log("onImsServiceInitialized", service);
+},
+onAccessTokenReceived: (token) => {
+            console.log("onAccessTokenReceived", token);
+},
+onAccessTokenExpired: () => {
+            console.log("onAccessTokenError");
+// re-trigger sign-in flow
+},
+onErrorReceived: (type, msg) => {
+            console.log("onErrorReceived", type, msg);
+},
+}
+```
+
++++
+
+<!--Integration with non-Adobe application content starts here-->
+
+>[!TAB Integración con una aplicación que no es de Adobe]
+
+<!--### Integrate Asset Selector with a [!DNL non-Adobe] application {#adobe-non-app-integration}-->
+
+### Requisitos previos {#prereqs-non-adobe-app}
+
+Utilice los siguientes requisitos previos si integra el Selector de recursos con una aplicación que no sea de Adobe:
+
+* [Métodos de comunicación](#prereqs)
+* imsClientId
+* imsScope
+* redirectUrl
+* imsOrg
+* apikey
+
+El Selector de recursos admite la autenticación en [!DNL Experience Manager Assets] repositorio que utiliza propiedades del sistema Identity Management (IMS) como `imsScope` o `imsClientID` cuando se integra con una aplicación que no es de Adobe.
+
++++**Configuración del Selector de recursos para una aplicación que no sea de Adobe**
+Para configurar el Selector de recursos para una aplicación que no sea de Adobe, primero debe registrar un ticket de asistencia para el aprovisionamiento seguido de los pasos de integración.
+
+**Registro de un ticket de asistencia**
+Pasos para registrar un ticket de asistencia a través del Admin Console:
+
+1. Añadir **Selector de recursos con AEM Assets** en el título del billete.
+
+1. En la descripción, proporcione los siguientes detalles:
+
+   * [!DNL Experience Manager Assets] as a [!DNL Cloud Service] URL (ID de programa e ID de entorno).
+   * Nombres de dominio en los que está alojada la aplicación web que no es de Adobe.
++++
+
++++**Pasos de integración**
+Utilice este ejemplo `index.html` para la autenticación al integrar el Selector de recursos con una aplicación que no sea de Adobe.
+
+Acceda al paquete Selector de recursos mediante el `Script` Etiqueta, como se muestra en *línea 9* hasta *línea 11* del ejemplo `index.html` archivo.
+
+*Línea 14* hasta *línea 38* En el ejemplo se describen las propiedades de flujo de IMS, como `imsClientId`, `imsScope`, y `redirectURL`. La función requiere que defina al menos una de las `imsClientId` y `imsScope` propiedades. Si no define un valor para `redirectURL`, se utiliza la URL de redireccionamiento registrada para el ID del cliente.
+
+Como no tiene un `imsToken` generado, utilice el `registerAssetsSelectorsAuthService` y `renderAssetSelectorWithAuthFlow` funciones, como se muestra en las líneas 40 a 50 del ejemplo `index.html` archivo. Utilice el `registerAssetsSelectorsAuthService` función antes de `renderAssetSelectorWithAuthFlow` para registrar el `imsToken` con el Selector de recursos. [!DNL Adobe] recomienda llamar a `registerAssetsSelectorsAuthService` al crear una instancia del componente.
+
+Defina la autenticación y otras propiedades relacionadas con el acceso as a Cloud Service de Assets en la `const props` , como se muestra en *línea 54* hasta *línea 60* del ejemplo `index.html` archivo.
+
+El `PureJSSelectors` variable global, mencionada en *línea 65*, se utiliza para representar el Selector de recursos en el explorador web.
+
+El selector de recursos se procesa en la `<div>` elemento contenedor, tal como se menciona en *línea 74* hasta *línea 81*. En el ejemplo se utiliza un cuadro de diálogo para mostrar el Selector de recursos.
 
 ```html {line-numbers="true"}
 <!DOCTYPE html>
@@ -357,11 +377,19 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 </body>
 
 </html>
-
 ```
--->
 
-## Usar propiedades del Selector de recursos {#asset-selector-properties}
++++
+
++++**No se puede acceder al repositorio de envío**
+
+>[!TIP]
+>
+>Si ha integrado el Selector de recursos mediante el flujo de trabajo de registro de inicio de sesión, pero sigue sin poder acceder al repositorio de envío, asegúrese de que las cookies del explorador se limpien. De lo contrario, terminará obteniendo `invalid_credentials All session cookies are empty` error en la consola.
+
+>[!ENDTABS]
+
+## Propiedades del Selector de recursos {#asset-selector-properties}
 
 Puede utilizar las propiedades del Selector de recursos para personalizar la forma en que se procesa el Selector de recursos. En la tabla siguiente se enumeran las propiedades que puede utilizar para personalizar y utilizar el Selector de recursos.
 
@@ -369,15 +397,15 @@ Puede utilizar las propiedades del Selector de recursos para personalizar la for
 |---|---|---|---|---|
 | *carril* | booleano | No | false | Si está marcado `true`, el Selector de recursos se representa en una vista del carril izquierdo. Si está marcado `false`, el Selector de recursos se procesará en la vista modal. |
 | *imsOrg* | cadena | Sí | | ID del sistema Identity Management de Adobe (IMS) asignado durante el aprovisionamiento [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] para su organización. El `imsOrg` La clave es necesaria para autenticar si la organización a la que accede se encuentra en Adobe IMS o no. |
-| *imsToken* | cadena | No | | Token de portador de IMS utilizado para la autenticación. `imsToken` es necesario si utiliza el flujo que no es SUSI. |
-| *apiKey* | cadena | No | | Clave de API utilizada para acceder al servicio AEM Discovery. `apiKey` es necesario si utiliza el flujo que no es SUSI. |
+| *imsToken* | cadena | No | | Token de portador de IMS utilizado para la autenticación. `imsToken` es necesario si utiliza un [!DNL Adobe] aplicación para la integración. |
+| *apiKey* | cadena | No | | Clave de API utilizada para acceder al servicio AEM Discovery. `apiKey` es necesario si utiliza un [!DNL Adobe] integración de aplicaciones. |
 | *rootPath* | cadena | No | /content/dam/ | Ruta de la carpeta desde la que el Selector de recursos muestra los recursos. `rootPath` también se puede utilizar en forma de encapsulación. Por ejemplo, dada la siguiente ruta, `/content/dam/marketing/subfolder/`Sin embargo, el Selector de recursos no le permite atravesar ninguna carpeta principal, sino que solo muestra las carpetas secundarias. |
 | *ruta* | cadena | No | | Ruta que se utiliza para navegar a un directorio específico de recursos cuando se procesa el Selector de recursos. |
 | *filterSchema* | matriz | No | | Modelo que se utiliza para configurar las propiedades del filtro. Esto resulta útil cuando desea limitar ciertas opciones de filtro en el Selector de recursos. |
 | *filterFormProps* | Objeto | No | | Especifique las propiedades del filtro que debe utilizar para restringir la búsqueda. Por ejemplo, JPG de tipo MIME, PNG, GIF. |
 | *selectedAssets* | Matriz `<Object>` | No |                 | Especificar los recursos seleccionados cuando se procese el selector de recursos. Se requiere una matriz de objetos que contenga una propiedad id de los recursos. Por ejemplo, `[{id: 'urn:234}, {id: 'urn:555'}]` Un recurso debe estar disponible en el directorio actual. Si necesita utilizar un directorio diferente, proporcione un valor para la propiedad de `path` también. |
-| *acvConfig* | Objeto | No | | Propiedad de vista de colección de recursos que contiene un objeto con una configuración personalizada para anular los valores predeterminados. |
-| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No |                 | Si las traducciones de OOTB no son suficientes para las necesidades de la aplicación, puede exponer una interfaz a través de la cual puede pasar sus propios valores localizados personalizados a través del prop `i18nSymbols`. Al pasar un valor a través de esta interfaz, se anulan las traducciones predeterminadas proporcionadas y, en su lugar, se utilizan las suyas.  Para realizar la anulación, debe pasar un objeto [Descriptor del mensaje](https://formatjs.io/docs/react-intl/api/#message-descriptor) válido a la clave de `i18nSymbols` que desee anular. |
+| *acvConfig* | Objeto | No | | Propiedad de vista de colección de recursos que contiene un objeto con una configuración personalizada para anular los valores predeterminados. Además, esta propiedad se utiliza con `rail` para habilitar la vista de carril del visor de recursos. |
+| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No |                 | Si las traducciones OOTB no son suficientes para las necesidades de la aplicación, puede exponer una interfaz a través de la cual puede pasar sus propios valores localizados personalizados a través de la variable `i18nSymbols` prop. Al pasar un valor a través de esta interfaz, se anulan las traducciones predeterminadas proporcionadas y, en su lugar, se utilizan las suyas. Para realizar la anulación, debe pasar un objeto [Descriptor del mensaje](https://formatjs.io/docs/react-intl/api/#message-descriptor) válido a la clave de `i18nSymbols` que desee anular. |
 | *intl* | Objeto | No | | El Selector de recursos proporciona traducciones OOTB predeterminadas. Puede seleccionar el idioma de traducción proporcionando una cadena de configuración regional válida a través del prop `intl.locale`. Por ejemplo: `intl={{ locale: "es-es" }}` </br></br> Las cadenas de configuración regional admitidas siguen los [Códigos ISO 639](https://www.iso.org/iso-639-language-codes.html) para la representación de los estándares de nombres de idiomas. </br></br> Lista de configuraciones regionales admitidas: Inglés - &#39;en-us&#39; (predeterminado) Español - &#39;es-es&#39; Alemán - &#39;de-de&#39; Francés - &#39;fr-fr&#39; Italiano - &#39;it-it&#39; Japonés - &#39;ja-jp&#39; Coreano - &#39;ko-kr&#39; Portugués - &#39;pt-br&#39; Chino (tradicional) - &#39;zh-cn&#39; Chino (Taiwán) - &#39;zh-tw&#39; |
 | *repositoryId* | cadena | No | &#39;&#39; | Repositorio desde el que el Selector de recursos carga el contenido. |
 | *additionalAemSolutions* | `Array<string>` | No | [ ] | AEM Permite añadir una lista de repositorios de recursos de la adicionales. Si no se proporciona información en esta propiedad, solo se tienen en cuenta los repositorios de la biblioteca de medios o de AEM Assets. |
@@ -390,6 +418,13 @@ Puede utilizar las propiedades del Selector de recursos para personalizar la for
 | *onClose* | Función | No | | Se invoca cuando se pulsa el botón `Close` en la vista modal. Esto solo se llama en la vista `modal` y se ignora en la vista `rail`. |
 | *onFilterSubmit* | Función | No | | Se invoca con elementos de filtro cuando el usuario cambia criterios de filtro diferentes. |
 | *selectionType* | cadena | No | sencillo | Configuración para selección de `single` o `multiple` de recursos a la vez. |
+| *dragOptions.lista de permitidos* | booleano | No | | La propiedad se utiliza para permitir o denegar el arrastre de recursos que no se pueden seleccionar. |
+| *aemTierType* | cadena | No | | Permite seleccionar si desea mostrar los recursos del nivel de entrega, del nivel de creación o de ambos. <br><br> Sintaxis: `aemTierType:[0: "author" 1: "delivery"` <br><br> Por ejemplo, si tanto `["author","delivery"]` se utilizan, el conmutador de repositorios muestra las opciones para la creación y la entrega. |
+| *handleNavigateToAsset* | Función | No | | Es una función de llamada de retorno para gestionar la selección de un recurso. |
+| *noWrap* | booleano | No | | El *noWrap* La propiedad ayuda a procesar el Selector de recursos en el panel de raíl lateral. Si no se menciona esta propiedad, procesa el *Vista de diálogo* de forma predeterminada. |
+| *dialogSize* | adquisición en pequeña, mediana, grande, pantalla completa o pantalla completa | Cadena | Opcional | Puede controlar el diseño especificando su tamaño con las opciones dadas. |
+| *colorScheme* | claro u oscuro | No | | Esta propiedad se utiliza para establecer la temática de una aplicación Selector de recursos. Puede elegir entre tema claro u oscuro. |
+| *filterRepoList* | Función | No |  | Puede utilizar `filterRepoList` función de llamada de retorno que llama al repositorio del Experience Manager y devuelve una lista filtrada de repositorios. |
 
 ## Ejemplos de uso de las propiedades del Selector de recursos {#usage-examples}
 
@@ -399,7 +434,7 @@ Puede definir las [propiedades](#asset-selector-properties) del Selector de recu
 
 ![rail-view-example](assets/rail-view-example-vanilla.png)
 
-Si el valor de AssetSelector `rail` se establece en `false` o no se menciona en las propiedades, el Selector de recursos se muestra en la vista Modal de forma predeterminada.
+Si el valor de AssetSelector `rail` se establece en `false` o no se menciona en las propiedades, el Selector de recursos se muestra en la vista modal de forma predeterminada. El `acvConfig` permite realizar algunas configuraciones en profundidad, como Arrastrar y soltar. Visita [habilitar o deshabilitar arrastrar y soltar](#enable-disable-drag-and-drop) para comprender el uso de `acvConfig` propiedad.
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property
@@ -415,10 +450,9 @@ Utilice varias propiedades para definir los metadatos de un recurso que desee ve
 
 ![metadata-popover-example](assets/metadata-popover.png)
 
-
 ### Ejemplo 3: Propiedad de filtro personalizado en la vista de carril
 
-Además de la búsqueda con facetas, el Selector de recursos permite personalizar varios atributos para restringir la búsqueda desde [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] aplicación. Debe agregar el siguiente código para agregar filtros de búsqueda personalizados en la aplicación. En el ejemplo siguiente, la búsqueda `Type Filter` que filtra el tipo de recurso entre imágenes, documentos o vídeos o el tipo de filtro que ha agregado para la búsqueda.
+Además de la búsqueda con facetas, el Selector de recursos permite personalizar varios atributos para restringir la búsqueda desde [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] aplicación. Agregue el siguiente código para agregar filtros de búsqueda personalizados en la aplicación. En el ejemplo siguiente, la búsqueda `Type Filter` que filtra el tipo de recurso entre imágenes, documentos o vídeos o el tipo de filtro que ha agregado para la búsqueda.
 
 ![custom-filter-example-vanilla](assets/custom-filter-example-vanilla.png)
 
@@ -431,15 +465,125 @@ Además de la búsqueda con facetas, el Selector de recursos permite personaliza
 Assets display panel shows the out of the box metadata that can be displayed in the info of the asset. In addition to this, [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application allows configuration of the asset selector by adding custom metadata that is shown in info panel of the asset.
 -->
 
-<!-- Property details to be added here. Referred the ticket https://jira.corp.adobe.com/browse/ASSETS-19023-->
+## Fragmentos de código de configuración funcional{#code-snippets}
 
-<!--
-## Asset Selector Object Schema {#object-schema}
+Defina los requisitos previos en la `index.html` o un archivo similar dentro de la implementación de la aplicación para definir los detalles de autenticación para acceder al [!DNL Experience Manager Assets] repositorio. Una vez finalizado, puede agregar fragmentos de código según sus necesidades.
 
-Schema describes the object properties associated with an asset selected using Asset Selector. It uses the combination of data types and their values to validate the object describing the selected Asset using an Asset Selector.
+### Personalizar panel de filtro {#customize-filter-panel}
 
-**Schema Syntax**
-````
+Puede añadir el siguiente fragmento de código en `assetSelectorProps` para personalizar el panel de filtros:
+
+```
+filterSchema: [
+    {
+    header: 'File Type',
+    groupKey: 'TopGroup',
+    fields: [
+    {
+    element: 'checkbox',
+    name: 'type',
+    options: [
+    {
+    label: 'Images',
+    value: '<comma separated mimetypes, without space, that denote all images, for e.g., image/>',
+    },
+    {
+    label: 'Videos',
+    value: '<comma separated mimetypes, without space, that denote all videos for e.g., video/,model/vnd.mts,application/mxf>'
+    }
+    ]
+    }
+    ]
+    },
+    {
+    fields: [
+    {
+    element: 'checkbox',
+    name: 'type',
+    options: [
+    { label: 'JPG', value: 'image/jpeg' },
+    { label: 'PNG', value: 'image/png' },
+    { label: 'TIFF', value: 'image/tiff' },
+    { label: 'GIF', value: 'image/gif' },
+    { label: 'MP4', value: 'video/mp4' }
+    ],
+    columns: 3,
+    },
+    ],
+    header: 'Mime Types',
+    groupKey: 'MimeTypeGroup',
+    }},
+    {
+    fields: [
+    {
+    element: 'checkbox',
+    name: 'property=metadata.application.xcm:keywords.value',
+    options: [
+    { label: 'Fruits', value: 'fruits' },
+    { label: 'Vegetables', value: 'vegetables'}
+    ],
+    columns: 3,
+    },
+    ],
+    header: 'Food Category',
+    groupKey: 'FoodCategoryGroup',
+    }
+],
+```
+
+### Personalizar información en la vista modal {#customize-info-in-modal-view}
+
+Puede personalizar la vista de detalles de un recurso al hacer clic en ![icono de información](assets/info-icon.svg) icono. Ejecute el siguiente código:
+
+```
+// Create an object infoPopoverMap and set the property `infoPopoverMap` with it in assetSelectorProps
+const infoPopoverMap = (map) => {
+// for example, to skip `path` from the info popover view
+let defaultPopoverData = PureJSSelectors.getDefaultInfoPopoverData(map);
+return defaultPopoverData.filter((i) => i.label !== 'Path'
+};
+assetSelectorProps.infoPopoverMap = infoPopoverMap;
+```
+
+### Habilitar o deshabilitar el modo de arrastrar y soltar {#enable-disable-drag-and-drop}
+
+Agregue las siguientes propiedades a `assetSelectorProp` para habilitar el modo de arrastrar y soltar. Para deshabilitar la función de arrastrar y soltar, reemplace el `true` parámetro con `false`.
+
+```
+rail: true,
+acvConfig: {
+dragOptions: {
+allowList: {
+'*': true,
+},
+},
+selectionType: 'multiple'
+}
+
+// the drop handler to be implemented
+function drop(e) {
+e.preventDefault();
+// following helps you get the selected assets – an array of objects.
+const data = JSON.parse(e.dataTransfer.getData('collectionviewdata'));
+}
+```
+
+### Selección de recursos {#selection-of-assets}
+
+El tipo de recurso seleccionado es una matriz de objetos que contiene la información del recurso al utilizar las funciones `handleSelection`, `handleAssetSelection`, y `onDrop`.
+
+Ejecute los siguientes pasos para configurar la selección de uno o varios recursos:
+
+```
+acvConfig: {
+selectionType: 'multiple' // 'single' for single selection
+}
+// the `handleSelection` callback, always gets you the array of selected assets
+```
+
+**Sintaxis de esquema**
+
+```
 interface SelectedAsset {
     'repo:id': string;
     'repo:name': string;
@@ -465,35 +609,72 @@ interface SelectedAsset {
         }>;
     };
 }
-````
+```
 
-**Query Parameters**
+En la tabla siguiente se describen algunas de las propiedades importantes del objeto Recurso seleccionado.
 
-| Parameter | Type | Description |
+| Propiedad | Tipo | Descripción |
 |---|---|---|
-| repo:id | string | ID of an Asset |
-| repo:name | string | The name of an Asset |
-| repo:path | string | The path of an Asset |
-| repo:size | number | Size of an Asset (in bytes) |
-| repo:createdBy | string | ID of a user who created an Asset |
-| repo: createdDate | string | The timestamp when an asset was created |
-| repo:modifiedBy | string | ID of a user who modified the asset recently |
-| repo:modifyDate | string | The timestamp when the asset was last modified |
-| dc:format | string | MIME type of an Asset |
-| tiff:imageWidth | number | The width of an image type of Asset |
-| tiff:imageLength | number | The height of an image type of Asset |
-| repo:state | string | The `Approved`, `Rejected`, or `Expired`state of an Asset |
-| computedMetadata | string | It is an object that represents a bucket for all the Asset's metadata of all kinds (repository, application or embedded metadata) |
-| _links | string | It represents the collection of links used in the Asset Selector. The links are represented in the form of an array. The parameters of an array include: `href`, `type`, `repo:size`, `width`, `height`, and so on  |
+| *repo:repositoryId* | cadena | Identificador único del repositorio en el que se almacena el recurso. |
+| *repo:id* | cadena | Identificador único del recurso. |
+| *repo:assetClass* | cadena | La clasificación del recurso (por ejemplo, imagen o vídeo, documento). |
+| *repo:name* | cadena | Nombre del recurso, incluida la extensión de archivo. |
+| *repo:size* | número | El tamaño del recurso en bytes. |
+| *repo:path* | cadena | La ubicación del recurso dentro del repositorio. |
+| *repo:ancestors* | `Array<string>` | Matriz de elementos antecesores del recurso en el repositorio. |
+| *repo:state* | cadena | Estado actual del recurso en el repositorio (por ejemplo, activo, eliminado, etc.). |
+| *repo:createdBy* | cadena | El usuario o sistema que creó el recurso. |
+| *repo:createDate* | cadena | La fecha y la hora en que se creó el recurso. |
+| *repo:modifiedBy* | cadena | Usuario o sistema que modificó el recurso por última vez. |
+| *repo:modifyDate* | cadena | La fecha y la hora en que se modificó el recurso por última vez. |
+| *dc:format* | cadena | El formato del recurso, como el tipo de archivo (por ejemplo, JPEG, PNG, etc.). |
+| *tiff:imageWidth* | número | La anchura de un recurso. |
+| *tiff:imageLength* | número | Altura de un recurso. |
+| *computedMetadata* | `Record<string, any>` | Un objeto que representa un cubo para todos los metadatos del recurso de todo tipo (repositorio, aplicación o metadatos incrustados). |
+| *_links* | `Record<string, any>` | Vínculos de hipermedia para el recurso asociado. Incluye vínculos para recursos como metadatos y representaciones. |
+| *_vínculos.<http://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | Matriz de objetos que contiene información sobre las representaciones del recurso. |
+| *_vínculos.<http://ns.adobe.com/adobecloud/rel/rendition[].href>* | cadena | URI de la representación. |
+| *_vínculos.<http://ns.adobe.com/adobecloud/rel/rendition[].type>* | cadena | Tipo MIME de la representación. |
+| *_vínculos.<http://ns.adobe.com/adobecloud/rel/rendition[].'repo:size>&#39;* | número | El tamaño de la representación en bytes. |
+| *_vínculos.<http://ns.adobe.com/adobecloud/rel/rendition[].width>* | número | La anchura de la representación. |
+| *_vínculos.<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | número | Altura de la representación. |
 
-For the detailed example of Object Schema, click 
--->
+Para obtener una lista completa de las propiedades y un ejemplo detallado, visite [Ejemplo de código del selector de recursos](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
 ## Gestión de la selección de recursos mediante el esquema de objetos {#handling-selection}
 
 La propiedad `handleSelection` se utiliza para gestionar una o varias selecciones de recursos en el Selector de recursos. El ejemplo siguiente indica la sintaxis de uso de `handleSelection`.
 
 ![handle-selection](assets/handling-selection.png)
+
+## Desactivación de la selección de recursos {#disable-selection}
+
+Deshabilitar selección se utiliza para ocultar o deshabilitar la selección de recursos o carpetas. Oculta la casilla de verificación de selección de la tarjeta o el recurso, lo que impide que se seleccione. Para utilizar esta función, puede declarar la posición de un recurso o carpeta que desee deshabilitar en una matriz. Por ejemplo, si desea deshabilitar la selección de una carpeta que aparece en la primera posición, puede agregar el siguiente código:
+`disableSelection: [0]:folder`
+
+Puede proporcionar a la matriz una lista de tipos MIME (como imagen, carpeta, archivo u otros tipos MIME, por ejemplo, imagen/jpeg) que desee desactivar. Los tipos MIME que declare se asignan a `data-card-type` y `data-card-mimetype` atributos de un recurso.
+
+Además, los recursos con la selección deshabilitada se pueden arrastrar. Para desactivar la función de arrastrar y soltar de un tipo de recurso concreto, puede utilizar `dragOptions.allowList` propiedad.
+
+La sintaxis de la selección de deshabilitar es la siguiente:
+
+```
+(args)=> {
+    return(
+        <ASDialogWrapper
+            {...args}
+            disableSelection={args.disableSelection}
+            handleAssetSelection={action('handleAssetSelection')}
+            handleSelection={action('handleSelection')}
+            selectionType={args.selectionType}
+        />
+    );
+}
+```
+
+>[!NOTE]
+>
+> En el caso de un recurso, la casilla de verificación de selección está oculta, mientras que en el caso de una carpeta, la carpeta no se puede seleccionar, pero sigue apareciendo la navegación por la carpeta mencionada.
 
 ## Uso del Selector de recursos {#using-asset-selector}
 
@@ -516,7 +697,7 @@ Para ocultar carpetas en el panel de navegación izquierdo, haga clic en el icon
 
 ### Conmutador de repositorios {#repository-switcher}
 
-El Selector de recursos también le permite cambiar de repositorio para la selección de recursos. Puede seleccionar el repositorio que desee en la lista desplegable disponible en el panel izquierdo. Las opciones del repositorio disponibles en la lista desplegable se basan en la propiedad `repositoryId` definida en el archivo `index.html`. Se basa en los entornos de la organización de IMS seleccionada a la que accede el usuario que ha iniciado sesión. Los consumidores pueden aprobar un `repositoryID` preferido y, en ese caso, el Selector de recursos deja de procesar el conmutador de repositorios y solo procesa los recursos del repositorio dado.
+El Selector de recursos también le permite cambiar de repositorio para la selección de recursos. Puede seleccionar el repositorio que desee en la lista desplegable disponible en el panel izquierdo. Las opciones del repositorio disponibles en la lista desplegable se basan en la propiedad `repositoryId` definida en el archivo `index.html`. Se basa en el entorno de la organización de IMS seleccionada al que accede el usuario que ha iniciado sesión. Los consumidores pueden aprobar un `repositoryID` preferido y, en ese caso, el Selector de recursos deja de procesar el conmutador de repositorios y solo procesa los recursos del repositorio dado.
 <!--
 It is based on the `imsOrg` that is provided in the application. If you want to see the list of repositories, then `repositoryId` is required to view those specific repositories in your application.
 -->
@@ -539,7 +720,7 @@ El Selector de recursos también proporciona opciones de filtro listas para usar
 
 Además de la búsqueda de texto completo, el Selector de recursos permite buscar recursos dentro de los archivos mediante búsquedas personalizadas. Puede utilizar filtros de búsqueda personalizados en los modos Vista modal y Vista de carril.
 
-![custom-search](assets/custom-search.png)
+![custom-search](assets/custom-search1.png)
 
 También puede crear un filtro de búsqueda predeterminado para guardar los campos que busca con frecuencia y utilizarlos más adelante. Para crear una búsqueda personalizada de sus recursos, puede utilizar la propiedad `filterSchema`.
 
@@ -618,4 +799,26 @@ Asset Selector lets you know the status of your uploaded assets. The status can 
 ### Localization
 
 The integration of Asset Selector with [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] allows localized content appear in your application.
+-->
+
+
+
+<!--Best Practice-->
+<!--
++++**Control default selection of the filter**
+You can make the selection of filter default by implementing the following code snippet:
+
+```
+"defaultValue": [
+    "image/*",
+    "application/*"
+],
+
+{
+    "label": "Documents",
+    "value": "application/*"
+}
+```
+
++++
 -->
