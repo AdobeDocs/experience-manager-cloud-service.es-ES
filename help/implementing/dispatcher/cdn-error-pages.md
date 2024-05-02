@@ -3,10 +3,10 @@ title: Configuración de páginas de error de CDN
 description: Obtenga información sobre cómo anular la página de error predeterminada alojando archivos estáticos en un almacenamiento autoalojado como Amazon S3 o Azure Blob Storage y haciendo referencia a ellos en un archivo de configuración que se implementa mediante la canalización de configuración de Cloud Manager.
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
-source-git-commit: 8489b40f45e6cbeb98288969bc9f6bd42815e2a6
+source-git-commit: 69ffcccae150a5e49c6344973890733f3e5b74ae
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 1%
+source-wordcount: '376'
+ht-degree: 5%
 
 ---
 
@@ -18,14 +18,21 @@ En el improbable caso de que la [CDN administrado por Adobe](/help/implementing/
 
 Para poder anular la página de error predeterminada, debe hacer lo siguiente:
 
-* En primer lugar, cree esta carpeta y estructura de archivos en la carpeta de nivel superior del proyecto Git:
+* Cree esta carpeta y estructura de archivos en la carpeta de nivel superior del proyecto Git:
 
 ```
 config/
      cdn.yaml
 ```
 
-* En segundo lugar, la `cdn.yaml` el archivo de configuración debe contener metadatos y referencias de página de error, como se describe a continuación.
+* El `cdn.yaml` El archivo de configuración debe contener metadatos y las reglas que se describen en los ejemplos siguientes. El `kind` el parámetro debe establecerse en `CDN` y la versión debe establecerse en la versión de esquema, que actualmente es `1`.
+
+* Cree una canalización de configuración de implementación de destino en Cloud Manager. Consulte [configuración de canalizaciones de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) y [configuración de canalizaciones que no son de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+
+**Notas**
+
+* Actualmente, los RDE no admiten la canalización de configuración.
+* Puede utilizar `yq` para validar localmente el formato YAML del archivo de configuración (por ejemplo, `yq cdn.yaml`).
 
 ### Configuración {#configuration}
 
