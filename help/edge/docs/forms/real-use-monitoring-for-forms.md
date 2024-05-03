@@ -1,19 +1,19 @@
 ---
-title: Monitorización de uso real para Edge Delivery Services para AEM Forms as a Cloud Service
-description: La monitorización del uso real para Edge Delivery Services de AEM Forms as a Cloud Service implica el seguimiento y el análisis continuos de las interacciones del usuario con los formularios.
+title: Monitorización de uso real (RUM) para Edge Delivery Services para AEM Forms as a Cloud Service
+description: La Monitorización de uso real (RUM) para Edge Delivery Services para AEM Forms as a Cloud Service implica el seguimiento y análisis continuos de las interacciones del usuario con los formularios.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
-source-git-commit: 6f78b43e857ca496465c315e8812bb67aff8c627
+source-git-commit: 6c56f753d2a32de6fe11fd47843cee5bcb8cac4e
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '792'
 ht-degree: 45%
 
 ---
 
 
-# Monitorización de uso real para Edge Delivery Services para AEM Forms as a Cloud Service
+# Monitorización de uso real (RUM) para Edge Delivery Services para AEM Forms as a Cloud Service
 
 La Monitorización de uso real (RUM) le permite obtener información real sobre cómo los visitantes interactúan con los sitios web de Adobe Experience Manager AEM (). Esta herramienta integrada proporciona datos valiosos para comprender el comportamiento del usuario, diagnosticar problemas de rendimiento y medir la eficacia de los experimentos de sitios web. RUM va más allá de las pruebas sintéticas al capturar las interacciones de uso real, ofreciendo una imagen más precisa del rendimiento de su sitio.
 
@@ -75,3 +75,7 @@ Al analizar estas métricas, puede identificar oportunidades para lo siguiente:
 * Solucionar problemas técnicos que ralentizan la carga de formularios.
 
 Al centrarse en estas áreas, puede crear formularios que sean más fáciles de usar y que animen a los visitantes a completarlos, lo que a la larga conduce a tasas de conversión más altas.
+
+## Consulte también
+
+{{see-more-forms-eds}}
