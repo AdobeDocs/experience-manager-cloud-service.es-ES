@@ -1,13 +1,13 @@
 ---
 title: Consideraciones de seguridad de AEM as a Cloud Service Security
-description: AEM Obtenga información acerca de consideraciones de seguridad importantes al usar el as a Cloud Service de la.
+description: Obtenga información acerca de las consideraciones de seguridad importantes al utilizar AEM as a Cloud Service.
 hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
 source-git-commit: 678e81eb22cc1d7c239ac7a2594b39a3a60c51e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '215'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Para admitir operaciones criptográficas asimétricas, AEM guarda certificados d
 
 ### Características del almacén de confianza {#truststore-characteristics}
 
-* El almacén de confianza se encuentra a continuación `/etc/truststore` y consta de un archivo Java™ keystore, la contraseña del repositorio de claves y los metadatos del repositorio. Tanto la contraseña como el repositorio de claves se cifran por motivos técnicos, aunque los certificados contenidos sean accesibles para todos de forma predeterminada a través de la API
+* El almacén de confianza se encuentra debajo de `/etc/truststore` y consta de un archivo de almacén de claves Java™, su contraseña y los metadatos del repositorio. Tanto la contraseña como el almacén de claves están cifrados por motivos técnicos, aunque los certificados contenidos sean accesibles para todo el mundo de forma predeterminada a través de la API
 * De forma predeterminada, los certificados se utilizan solo para la compatibilidad con HTTPS y SAML, y el almacén debe crearse manualmente primero
 * Los clientes pueden usarlo en su propio código a través de la [API de almacén de claves](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-)
 * El almacén de confianza se puede administrar a través de la IU en **Herramientas** - **Seguridad** - **Almacén de confianza** o accediendo a *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`*, como se muestra a continuación:
@@ -30,7 +30,7 @@ Para admitir operaciones criptográficas asimétricas, AEM guarda certificados d
 
 >[!NOTE]
 >
->El Adobe recomienda que se utilicen los controles de acceso predeterminados para el almacén de confianza, lo que significa que sigue siendo accesible públicamente. Para obtener la configuración más segura, puede utilizar una directiva de denegación `jcr:all` para todos.
+>Adobe recomienda que se utilicen los controles de acceso predeterminados para el almacén de confianza, lo que significa que queda accesible al público. Para una configuración más segura, puede usar una política de denegación `jcr:all` para todo el mundo. 
 
 <!--
 Commenting out section for now as requested by Lars
