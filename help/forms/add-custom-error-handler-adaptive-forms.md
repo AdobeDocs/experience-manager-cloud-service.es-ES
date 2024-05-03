@@ -6,10 +6,10 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
-workflow-type: ht
-source-wordcount: '2377'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '2378'
+ht-degree: 99%
 
 ---
 
@@ -179,7 +179,7 @@ Utilizando la acción del [Servicio de invocación del editor de reglas](https:/
 
 >[!NOTE]
 >
-> * Para utilizar controladores de errores con la acción Invocar servicio del Editor de reglas, configure los formularios adaptables con un modelo de datos de formulario.
+> * Para utilizar controladores de error con la acción Invocar servicio del Editor de reglas, configure Forms adaptable con un modelo de datos de formulario (FDM).
 > * De forma predeterminada, se proporciona el controlador de errores para mostrar los mensajes de error en los campos si la respuesta de error está en el esquema estándar. También puede llamar al controlador de error predeterminado desde la función del controlador de error personalizado.
 
 Con el editor de reglas, se puede hacer lo siguiente:
@@ -338,7 +338,7 @@ Before adding custom handler, you must configure the adaptive form for asynchron
 1. Select **[!UICONTROL Revalidate on server]** to validate the input field values on server before submission.
 1. Select the Submit Action:
 
-    * Select **[!UICONTROL Submit using Form Data Model]** and select the appropriate data model, if you are using RESTful web service based [form data model](work-with-form-data-model.md) as the data source.
+    * Select **[!UICONTROL Submit using Form Data Model (FDM)]** and select the appropriate data model, if you are using RESTful web service based [form data model (FDM)](work-with-form-data-model.md) as the data source.
     * Select **[!UICONTROL Submit to REST Service endpoint]** and specify the **[!UICONTROL Redirect URL/Path]**, if you are using RESTful web services as the data source.
 
     ![adaptive form submission properties](assets/af_submission_properties.png)

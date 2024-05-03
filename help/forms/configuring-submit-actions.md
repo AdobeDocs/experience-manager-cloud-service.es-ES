@@ -3,10 +3,10 @@ title: ¿Configurar una acción de envío para un formulario adaptable?
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesará un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias.
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
-workflow-type: ht
-source-wordcount: '3901'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '3914'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ Se activa una acción de envío cuando un usuario hace clic en el botón **[!UIC
 
 * [Enviar al punto final REST](#submit-to-rest-endpoint)
 * [Enviar correo electrónico](#send-email)
-* [Enviar mediante modelo de datos de formulario](#submit-using-form-data-model)
+* [Enviar mediante el modo de datos de formulario (FDM)l](#submit-using-form-data-model)
 * [Invocar un flujo de trabajo de AEM](#invoke-an-aem-workflow)
 * [Enviar a SharePoint](#submit-to-sharedrive)
 * [Enviar a OneDrive](#submit-to-onedrive)
@@ -137,11 +137,11 @@ The **Submit to Forms workflow** submit option sends a data xml and file attachm
 
 For information about how to configure the Submit to forms workflow Submit Action, see [Submitting and processing your form data using forms workflows](submit-form-data-livecycle-process.md). -->
 
-## Enviar mediante modelo de datos de formulario {#submit-using-form-data-model}
+## Enviar mediante modelo de datos de formulario (FDM) {#submit-using-form-data-model}
 
-La acción de envío **[!UICONTROL Enviar mediante el modelo de datos de formulario]** escribe los datos del formulario adaptable enviados para el objeto del modelo de datos especificado en un modelo de datos de formulario en su origen de datos. Al configurar la acción de envío, puede elegir un objeto de modelo de datos cuyos datos enviados desee volver a escribir en su origen de datos.
+El **[!UICONTROL Enviar mediante modelo de datos de formulario]** La acción de envío escribe los datos del formulario adaptable enviados para el objeto del modelo de datos especificado en un modelo de datos de formulario (FDM) en su fuente de datos. Al configurar la acción de envío, puede elegir un objeto de modelo de datos cuyos datos enviados desee volver a escribir en su origen de datos.
 
-Además, puede enviar al origen de datos un archivo adjunto de formulario mediante un modelo de datos de formulario y un documento de registro (DoR). Para obtener información sobre el modelo de datos de formulario, consulte integración de datos de [[!DNL AEM Forms] ](data-integration.md).
+Además, puede enviar al origen de datos un archivo adjunto de formulario mediante un modelo de datos de formulario (FDM) y un documento de registro (DoR). Para obtener información sobre el modelo de datos de formulario (FDM), consulte [[!DNL AEM Forms] Integración de datos](data-integration.md).
 
 <!--
 ## Forms Portal Submit Action {#forms-portal-submit-action}
@@ -243,7 +243,7 @@ La estructura de carpetas para guardar datos es `/folder_name/form_name/year/mon
 Para usar la acción de envío [!UICONTROL Enviar a lista de SharePoint] en un formulario adaptable, haga lo siguiente:
 
 1. [Crear una configuración de lista de SharePoint](#create-sharepoint-list-configuration): conecta AEM Forms a su almacenamiento de de lista de Sharepoint de Microsoft®.
-1. [Utilice la acción de envío Enviar con un modelo de datos de formulario en un formulario adaptable](#use-submit-using-fdm): conecta el formulario adaptable a Microsoft® SharePoint configurado.
+1. [Utilizar el modelo de datos de formulario (FDM) de envío en un formulario adaptable](#use-submit-using-fdm): conecta el formulario adaptable al Microsoft® SharePoint configurado.
 
 #### Crear configuración de lista de SharePoint {#create-sharepoint-list-configuration}
 
@@ -267,14 +267,14 @@ Para conectar AEM Forms a su lista de Sharepoint de Microsoft®:
 1. Seleccione **[!UICONTROL Crear]** para crear la configuración de nube para la lista de SharePoint de Microsoft®.
 
 
-#### Usar la acción de envío Enviar con el modelo de datos de formulario en un formulario adaptable {#use-submit-using-fdm}
+#### Utilizar el modelo de datos de formulario (FDM) de envío en un formulario adaptable {#use-submit-using-fdm}
 
 Puede utilizar la configuración de lista de SharePoint creada en un formulario adaptable para guardar datos o el documento de registro generado en una lista de SharePoint. Siga estos pasos para usar una configuración de almacenamiento de lista de SharePoint en un formulario adaptable como:
 
-1. [Crear un modelo de datos de formulario con la configuración de la lista de Microsoft® SharePoint](/help/forms/create-form-data-models.md)
-1. [Configurar el modelo de datos de formulario para recuperar y enviar datos](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Crear un modelo de datos de formulario (FDM) con la configuración de Microsoft® SharePoint List](/help/forms/create-form-data-models.md)
+1. [Configurar el modelo de datos de formulario (FDM) para recuperar y enviar datos](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Crear un formulario adaptable](/help/forms/creating-adaptive-form.md)
-1. [Configurar la acción de envío mediante un modelo de datos de formulario](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+1. [Configurar la acción de envío mediante un modelo de datos de formulario (FDM)](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
 
 Al enviar el formulario, los datos se guardan en el almacenamiento de lista de Sharepoint de Microsoft® especificado.
 
@@ -462,7 +462,7 @@ El autor puede configurar la biblioteca customJavaScript para formularios adapta
 
 Como parte de las directrices de seguridad y endurecimiento de AEM, configure las páginas de error personalizadas como 400.jsp, 404.jsp y 500.jsp. Se llama a estos controladores cuando aparecen errores 400, 404 o 500 al enviar un formulario. También se llama a los controladores cuando estos códigos de error se activan en el nodo Publish. También puede crear páginas JSP para otros códigos de error HTTP.
 
-Cuando rellena previamente un modelo de datos de formulario o un formulario adaptable basado en un esquema, con datos XML o JSON que se ajustan a un esquema que no contiene las etiquetas `<afData>`, `<afBoundData>`y `</afUnboundData>`, los datos de los campos ilimitados del formulario adaptable se perderán. El esquema puede ser un esquema XML, JSON o un modelo de datos de formulario. Los campos sin límites son campos de formulario adaptable sin la propiedad `bindref`.
+Cuando rellena previamente un modelo de datos de formulario (FDM) o un formulario adaptable basado en esquemas con datos XML o JSON que se ajustan a un esquema que no contiene datos `<afData>`, `<afBoundData>`, y `</afUnboundData>` , se perderán los datos de los campos ilimitados del formulario adaptable. El esquema puede ser un esquema XML, JSON o un modelo de datos de formulario (FDM). Los campos sin límites son campos de formulario adaptable sin la propiedad `bindref`.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

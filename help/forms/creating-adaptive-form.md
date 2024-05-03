@@ -1,14 +1,14 @@
 ---
 title: Creación de un formulario adaptable
-description: Aprenda a crear un formulario adaptable para optimizar la recopilación y el procesamiento de la información. Además, aprenda a crear formularios adaptables basados en un modelo de datos de formulario.
+description: Aprenda a crear un formulario adaptable para optimizar la recopilación y el procesamiento de la información. Además, aprenda a crear formularios adaptables basados en un modelo de datos de formulario (FDM).
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
-source-wordcount: '1493'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '1500'
+ht-degree: 88%
 
 ---
 
@@ -98,7 +98,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 
 1. (Opcional) En la pestaña **[!UICONTROL Datos]**, seleccione un modelo de datos:
 
-   * **Modelo de datos de formulario**: A [El modelo de datos de formulario](data-integration.md) permite integrar entidades y servicios de distintas fuentes de datos en un formulario adaptable. Elija modelo de datos de formulario si el formulario adaptable que está creando implica recuperar y escribir datos desde y hacia varias fuentes de datos.
+   * **Modelo de datos de formulario**: A [El modelo de datos de formulario](data-integration.md) permite integrar entidades y servicios de distintas fuentes de datos en un formulario adaptable. Elija Modelo de datos de formulario (FDM) si el formulario adaptable que está creando implica recuperar y escribir datos desde y hacia varias fuentes de datos.
 
    * **Esquema JSON**: [El esquema JSON](adaptive-form-json-schema-form-model.md) representa la estructura en la que el sistema back-end de su organización produce o consume datos. Puede asociar el esquema a un formulario adaptable y utilizar sus elementos para agregarle contenido dinámico. Los elementos del esquema están disponibles para su uso en la pestaña Objetos del modelo de datos del explorador de contenido al crear formularios adaptables y todos los campos también se añaden al formulario adaptable creado.
 
@@ -126,7 +126,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 
 1. Seleccione **[!UICONTROL Crear]**. Se crea un formulario adaptable que se abre en el editor de formularios adaptables. El editor muestra el contenido disponible en la plantilla. También muestra la barra lateral para personalizar el formulario recién creado según las necesidades.
 
-   En base al tipo de formulario adaptable, los elementos del formulario presentes en el <!--XFA form template, XML schema or --> esquema JSON o el modelo de datos de formulario asociado se muestran en la pestaña **[!UICONTROL Objetos del modelo de datos]** del **[!UICONTROL Explorador de contenido]** en la barra lateral. También puede arrastrar y soltar estos elementos para crear su formulario adaptable.
+   En función del tipo de formulario adaptable, los elementos del formulario presentes en el formulario asociado <!--XFA form template, XML schema or --> El esquema JSON o el modelo de datos de formulario (FDM) se muestran en la variable **[!UICONTROL Objetos del modelo de datos]** de la pestaña **[!UICONTROL Explorador de contenido]** en la barra lateral. También puede arrastrar y soltar estos elementos para crear su formulario adaptable.
 
 <!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
@@ -184,8 +184,8 @@ Puede cambiar el modelo de formulario para un formulario adaptable (basado en JS
 1. Seleccione el formulario adaptable y seleccione el icono **Propiedades**.
 1. Abra la pestaña **[!UICONTROL Modelo de formulario]** y haga una de las siguientes acciones.
 
-   * Si el formulario adaptable no cuenta con un modelo de formulario, puede elegir otro modelo de formulario y, en consecuencia, seleccionar <!-- a form template, --> el esquema XML o JSON o el modelo de datos de formulario.
-   * Si el formulario adaptable se basa en un modelo de formulario, puede elegir otro <!-- form template, --> esquema XML o JSON o modelo de datos de formulario para el mismo modelo de formulario.
+   * Si el formulario adaptable no cuenta con un modelo de formulario, puede elegir otro modelo de formulario y, en consecuencia, seleccionar <!-- a form template, --> Esquema XML o JSON o modelo de datos de formulario (FDM).
+   * Si el formulario adaptable se basa en un modelo de formulario, puede elegir otro <!-- form template, --> Esquema XML o JSON o modelo de datos de formulario (FDM) para el mismo modelo de formulario.
 
 1. Seleccione **[!UICONTROL Guardar]** para guardar las propiedades.
 
@@ -195,8 +195,8 @@ También puede modificar las propiedades del modelo del formulario desde el edit
 1. Haga clic en el ![Icono Configurar](/help/forms/assets/configure-icon.svg) para abrir **[!UICONTROL Propiedades]** del contenedor del Formulario adaptable.
 1. Seleccione la pestaña **[!UICONTROL Modelo de datos]** y realice una de las siguientes acciones:
 
-   * Si el Formulario adaptable no posee un modelo de formulario, puede elegir un modelo de formulario y seleccionar <!-- a form template, --> esquema XML o JSON, o modelo de datos de formulario, según corresponda.
-   * Si el formulario adaptable se basa en un modelo de formulario, no se puede cambiar el modelo de formulario. Puede elegir otro esquema XML o JSON <!-- form template, -->, o un modelo de datos de formulario para el mismo modelo de formulario, según corresponda.
+   * Si el formulario adaptable no cuenta con un modelo de formulario, puede elegir un modelo de formulario y seleccionar lo siguiente <!-- a form template, --> Esquema XML o JSON o modelo de datos de formulario (FDM).
+   * Si el formulario adaptable se basa en un modelo de formulario, no se puede cambiar el modelo de formulario. Puede elegir otra <!-- form template, --> Esquema XML o JSON o modelo de datos de formulario (FDM) para el mismo modelo de formulario, según corresponda.
 1. Seleccione ![Guardar](/help/forms/assets/check-button.png) para guardar las propiedades.
 
 ![Compatibilidad con FDM-Esquema](/help/forms/assets/fdmsupport.png)

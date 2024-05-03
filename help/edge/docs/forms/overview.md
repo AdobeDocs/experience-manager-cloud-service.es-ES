@@ -3,10 +3,10 @@ title: Información general sobre Edge Delivery Services de AEM Forms
 description: Edge Delivery Services de AEM Forms está diseñado para ofrecer un rendimiento máximo, lo que le permite imaginar el futuro de la recopilación de datos optimizada y la participación de los usuarios.
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
-workflow-type: ht
-source-wordcount: '1017'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '1018'
+ht-degree: 98%
 
 ---
 
@@ -73,7 +73,7 @@ La creación de AEM proporciona una interfaz WYSIWYG (editor de formularios adap
 * Integración con Adobe Sign para firmas electrónicas.
 * Integración con Adobe Workfront Fusion para activar los escenarios de Adobe Workfront Fusion al enviar el formulario.
 * Integración con varias fuentes de datos para rellenar previamente formularios y enviar datos.
-* Modelo de datos de formulario para definir la estructura de datos y las interacciones con varias fuentes de datos.
+* Modelo de datos de formulario (FDM) para definir la estructura de datos y las interacciones con varias fuentes de datos.
 * Capacidad para elegir entre varias acciones de envío para administrar los envíos de formularios, incluido el envío de datos a Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics y muchas más fuentes de datos.
 
 En esencia, [Creación de AEM](/help/forms/creating-adaptive-form-core-components.md) se basa en los fundamentos de [Creación basada en documentos](/help/edge/docs/forms/create-forms.md), que proporciona un kit de herramientas más avanzado para crear y administrar formularios complejos.

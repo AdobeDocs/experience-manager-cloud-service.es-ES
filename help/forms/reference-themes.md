@@ -3,16 +3,16 @@ title: Obtener temáticas de referencia para formularios adaptables basadas en c
 description: Utilice la referencia a las temáticas de formularios adaptables, las plantillas y los modelos de datos de formulario que se proporcionan para empezar rápidamente.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 03305b4a-d82d-4b8d-8804-249b10bdd358
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 94%
+source-wordcount: '504'
+ht-degree: 89%
 
 ---
 
 # Activos de referencia para Forms como Cloud Service {#reference-themes}
 
-Puede obtener los temas de referencia, las plantillas y los modelos de datos de formulario instalando el [Paquete de activos de referencia](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Ayuda a iniciar y acelerar rápidamente su desarrollo de formularios adaptables. Puede usar [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=es) para implementar este paquete en su entorno de AEM Forms as a Cloud Service.
+Puede obtener las temáticas de referencia, las plantillas y el modelo de datos de formulario (FDM) instalando el [Paquete de activos de referencia](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Ayuda a iniciar y acelerar rápidamente su desarrollo de formularios adaptables. Puede usar [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=es) para implementar este paquete en su entorno de AEM Forms as a Cloud Service.
 
 Los activos de referencia incluidos en el paquete son:
 
@@ -115,7 +115,7 @@ La plantilla básica le ayuda a crear rápidamente un formulario de inscripción
 
 La plantilla básica proporciona un lienzo vacío para crear la estructura inicial de los formularios adaptables para su organización.
 
-## Modelos de datos de formulario
+## Modelo de datos de formulario (FDM)
 
 ### Microsoft® Dynamics 365
 

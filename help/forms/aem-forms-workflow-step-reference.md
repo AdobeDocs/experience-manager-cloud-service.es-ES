@@ -6,10 +6,10 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Uso de flujos de trabajo de AEM, uso de los pasos Asignar tarea, paso Convertir en PDF/A, paso Generar documento de registro, uso de flujos de trabajo, paso Firmar documento, paso Generar salida impresa, paso Generar salida de PDF no interactiva
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: ht
-source-wordcount: '7367'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '7379'
+ht-degree: 97%
 
 ---
 
@@ -85,12 +85,12 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 * **[!UICONTROL Para las tareas completadas, procese el formulario adaptable como]**: cuando se marca una tarea como completada, puede procesar el formulario adaptable como un formulario adaptable de solo lectura o un documento PDF. Se necesita habilitar una opción de documento de registro o formulario adaptable basado en plantillas de formulario para procesar el formulario adaptable como documento de registro.
 * **[!UICONTROL Rellenado previamente]**: los siguientes campos sirven como entradas para la tarea:
 
-   * **[!UICONTROL Seleccionar el archivo de datos de entrada mediante]**: ruta del archivo de datos de entrada (.json, .xml, .doc o modelo de datos de formulario). Puede recuperar el archivo de datos de entrada mediante una ruta relativa a la carga útil o recuperar el archivo almacenado en una variable de tipo Doc, XML o JSON. Por ejemplo, el archivo contiene los datos enviados para el formulario a través de una aplicación de bandeja de entrada AEM. Una ruta de ejemplo es [Payload_Directory]/workflow/data.
+   * **[!UICONTROL Seleccionar archivo de datos de entrada mediante]**: ruta del archivo de datos de entrada (.json, .xml, .doc o modelo de datos de formulario (FDM)). Puede recuperar el archivo de datos de entrada mediante una ruta relativa a la carga útil o recuperar el archivo almacenado en una variable de tipo Doc, XML o JSON. Por ejemplo, el archivo contiene los datos enviados para el formulario a través de una aplicación de bandeja de entrada AEM. Una ruta de ejemplo es [Payload_Directory]/workflow/data.
    * **[!UICONTROL Seleccionar datos adjuntos de entrada mediante]**: los archivos adjuntos disponibles en la ubicación se adjuntan al formulario asociado a la tarea. La ruta puede ser relativa a la carga útil o recuperar el archivo adjunto almacenado en una variable de tipo Doc. Una ruta de ejemplo es [Payload_Directory]/attachments/. Puede especificar archivos adjuntos colocados en relación con la carga útil o utilizar una variable de tipo Doc (Lista de matriz > Documento) para especificar un archivo adjunto de entrada para el formulario adaptable.
 
   <!-- 
     
-    * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
+    * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model (FDM) data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
     * **[!UICONTROL Choose a custom prefill service]**: Select the prefill service to retrieve the data and prefill the Interactive Communication Web channel document or the Agent UI.  
     
@@ -108,13 +108,13 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 
 * **[!UICONTROL Información enviada]**: los siguientes campos sirven como ubicaciones de salida para la tarea:
 
-   * **[!UICONTROL Guardar el archivo de datos de salida mediante]**: guarde el archivo de datos (.json, .xml, .doc o modelo de datos de formulario). El archivo de datos contiene información enviada a través del formulario asociado. Puede guardar el archivo de datos de salida utilizando una ruta relativa a la carga útil o almacenarla en una variable de tipo Doc, XML o JSON. Por ejemplo, [Payload_Directory]/Workflow/data, donde los datos son un archivo.
+   * **[!UICONTROL Guardar archivo de datos de salida mediante]**: guarde el archivo de datos (.json, .xml, .doc o modelo de datos de formulario (FDM)). El archivo de datos contiene información enviada a través del formulario asociado. Puede guardar el archivo de datos de salida utilizando una ruta relativa a la carga útil o almacenarla en una variable de tipo Doc, XML o JSON. Por ejemplo, [Payload_Directory]/Workflow/data, donde los datos son un archivo.
    * **[!UICONTROL Guardar archivos adjuntos mediante]**: guarde los datos adjuntos del formulario proporcionados en una tarea. Puede guardar los archivos adjuntos utilizando una ruta relativa a la carga útil o almacenarla en una variable de lista de matriz de documento.
    * **[!UICONTROL Guardar documento de registro mediante]**: ruta para guardar un archivo de documento de registro. Por ejemplo, [Payload_Directory]/DocumentofRecord/credit-card.pdf. Puede guardar el documento de registro mediante una ruta relativa a la carga útil o almacenarlo en una variable de tipo Doc. Si selecciona la opción **[!UICONTROL Relativo a la carga útil]**, el documento de registro no se genera si el campo de ruta se deja vacío. Esta opción solo está disponible si selecciona Formulario adaptable en la lista desplegable Tipo.
 
   <!-- 
     
-    * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
+    * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model (FDM) data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
     * **[!UICONTROL Save PDF document using]**: Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
     <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. 
     
@@ -273,9 +273,9 @@ El paso Invocar DDX tiene las siguientes propiedades:
 * **[!UICONTROL Guardar salida en carga útil]**: guarda los documentos de salida en la carpeta de carga útil o sobrescribe la carga útil, en caso de que esta sea un archivo.
 * **[!UICONTROL Mapa del documento de salida]**: especifica la ubicación para guardar cada archivo de documento explícitamente, añadiendo una entrada por documento. Cada entrada representa el documento y la ubicación donde guardarlo. Si hay varios documentos de salida, se utiliza esta opción.
 
-## Paso para invocar el servicio de modelo de datos de formulario {#invoke-form-data-model-service-step}
+## Paso para invocar el servicio del modelo de datos de formulario (FDM) {#invoke-form-data-model-service-step}
 
-Puede usar la integración de datos de [[!DNL AEM Forms] ](data-integration.md) para configurar y conectarse a fuentes de datos dispares. Estas fuentes de datos pueden ser un servicio web, un servicio REST, un servicio OData y una solución CRM. La integración de datos de [!DNL AEM Forms] le permite crear un modelo de datos de formulario que incluya varios servicios para realizar operaciones de recuperación, adición y actualización de datos en la base de datos configurada. Puede usar el **[!UICONTROL paso para invocar el servicio de modelo de datos]** para seleccionar un modelo de datos de formulario (FDM) y utilizar los servicios de FDM para recuperar, actualizar o agregar datos a distintos orígenes de datos.
+Puede usar la integración de datos de [[!DNL AEM Forms] ](data-integration.md) para configurar y conectarse a fuentes de datos dispares. Estas fuentes de datos pueden ser un servicio web, un servicio REST, un servicio OData y una solución CRM. [!DNL AEM Forms] La integración de datos de le permite crear un modelo de datos de formulario (FDM) que incluya varios servicios para realizar operaciones de recuperación, adición y actualización de datos en la base de datos configurada. Puede usar el **[!UICONTROL paso para invocar el servicio de modelo de datos]** para seleccionar un modelo de datos de formulario (FDM) y utilizar los servicios de FDM para recuperar, actualizar o agregar datos a distintos orígenes de datos.
 
 Para explicar las entradas de los campos del paso, se utilizan como ejemplo la siguiente tabla de base de datos y el archivo JSON:
 
@@ -330,14 +330,14 @@ Para explicar las entradas de los campos del paso, se utilizan como ejemplo la s
   }
 ```
 
-El paso para invocar el servicio de modelo de datos de formulario tiene los campos siguientes para facilitar las operaciones del modelo de datos de formulario:
+El paso para invocar el servicio de modelo de datos de formulario (FDM) tiene los siguientes campos para facilitar las operaciones de este tipo:
 
 * **[!UICONTROL Título]**: título del paso. Ayuda a identificar los pasos en el editor de flujo de trabajo.
 * **[!UICONTROL Descripción]**: la explicación es útil para otros desarrolladores de procesos cuando trabaja en un entorno de desarrollo compartido.
 
-* **[!UICONTROL Ruta del modelo de datos del formulario]**: busque y seleccione un modelo de datos de formulario presente en el servidor.
+* **[!UICONTROL Ruta del modelo de datos del formulario]**: busque y seleccione un modelo de datos de formulario (FDM) presente en el servidor.
 
-* **[!UICONTROL Errores y validaciones]**: la opción permite capturar mensajes de error y especificar opciones de validación para los datos recuperados y enviados a fuentes de datos. Con estos cambios, se puede garantizar que los datos transferidos al paso para invocar el servicio de modelo de datos de formulario se ajusten a las restricciones de datos definidas por la fuente de datos. Para obtener más información, consulte [Validación automatizada de los datos de entrada](work-with-form-data-model.md#automated-validation-of-input-data).
+* **[!UICONTROL Errores y validaciones]**: la opción permite capturar mensajes de error y especificar opciones de validación para los datos recuperados y enviados a fuentes de datos. Con estos cambios, se puede garantizar que los datos transferidos al paso para invocar el servicio de modelo de datos de formulario (FDM) se ajusten a las restricciones de datos definidas por el origen de datos. Para obtener más información, consulte [Validación automatizada de los datos de entrada](work-with-form-data-model.md#automated-validation-of-input-data).
 
 * **[!UICONTROL Nivel de validación]**: existen tres categorías de validaciones: Básico, Completo y Desactivado:
 
@@ -353,7 +353,7 @@ El paso para invocar el servicio de modelo de datos de formulario tiene los camp
 
 * **[!UICONTROL Almacenar detalles de error en variable]**: puede almacenar detalles de error en una [variable de tipo JSON](variable-in-aem-workflows.md).
 
-* **[!UICONTROL Servicio]**: lista de los servicios que proporciona el modelo de datos de formulario seleccionado.
+* **[!UICONTROL Servicio]**: lista de los servicios que proporciona el modelo de datos de formulario (FDM) seleccionado.
 * **[!UICONTROL Entrada para servicios]** > **[!UICONTROL Proporcionar datos de entrada utilizando metadatos literales, variables o de flujo de trabajo, y un archivo JSON]**: un servicio puede tener varios argumentos. Seleccione la opción para obtener el valor de los argumentos de servicio de una propiedad de metadatos de flujo de trabajo, un objeto JSON o una variable, o indique directamente el valor en el cuadro de texto proporcionado:
 
    * **[!UICONTROL Literal]**: utilice la opción cuando conozca el valor exacto que desea especificar. Por ejemplo, srose@we.info.
@@ -365,16 +365,16 @@ El paso para invocar el servicio de modelo de datos de formulario tiene los camp
      Por ejemplo, si la carpeta Relativo a la carga útil en el repositorio CRX incluye un archivo adjunto en la ubicación `attachment\attachment-folder`, especifique `attachment\attachment-folder` en el cuadro de texto después de seleccionar la variable **[!UICONTROL Relativo a la carga útil]**.
 
    * **[!UICONTROL Notación de puntos JSON]**: utilice la opción cuando el valor que desea utilizar esté en un archivo JSON. Por ejemplo, insurance.customerDetails.emailAddress. La opción de notación de puntos JSON solo está disponible si se selecciona la opción Asignar campos de entrada desde la entrada JSON.
-   * **[!UICONTROL Asignar campos de entrada desde la entrada JSON]**: especifique la ruta de un archivo JSON para obtener el valor de entrada de algunos argumentos de servicio del archivo JSON. La ruta del archivo JSON puede ser relativa a la carga útil, una ruta de acceso absoluta o puede seleccionar un documento JSON de entrada mediante una variable de tipo JSON o un modelo de datos de formulario.
+   * **[!UICONTROL Asignar campos de entrada desde la entrada JSON]**: especifique la ruta de un archivo JSON para obtener el valor de entrada de algunos argumentos de servicio del archivo JSON. La ruta del archivo JSON puede ser relativa a la carga útil, una ruta de acceso absoluta o puede seleccionar un documento JSON de entrada mediante una variable de tipo JSON o un modelo de datos de formulario (FDM).
 
 * **[!UICONTROL Entrada para servicios]** > **[!UICONTROL Proporcionar datos de entrada mediante una variable o un archivo JSON]**: seleccione la opción para obtener valores para todos los argumentos de un archivo JSON guardado en una ruta de acceso absoluta, en una ruta relativa a la carga útil o en una variable.
-* **[!UICONTROL Seleccionar el documento JSON de entrada mediante:]** el archivo JSON que contiene valores para todos los argumentos de servicio. La ruta del archivo JSON puede ser **[!UICONTROL relativa a la carga útil]** o una **[!UICONTROL ruta de acceso absoluta]**. También puede recuperar el documento JSON de entrada mediante una variable de tipo de datos JSON o un modelo de datos de formulario.
+* **[!UICONTROL Seleccionar el documento JSON de entrada mediante:]** el archivo JSON que contiene valores para todos los argumentos de servicio. La ruta del archivo JSON puede ser **[!UICONTROL relativa a la carga útil]** o una **[!UICONTROL ruta de acceso absoluta]**. También puede recuperar el documento JSON de entrada mediante una variable de tipo de datos JSON o un modelo de datos de formulario (FDM).
 
 * **[!UICONTROL Notación de puntos JSON]**: deje el campo en blanco para utilizar todos los objetos del archivo JSON especificado como entrada para argumentos de servicio. Para leer un objeto JSON específico del archivo JSON especificado como entrada para los argumentos del servicio, especifique la notación de puntos para el objeto JSON. Por ejemplo: si tiene un archivo JSON similar al listado al principio de la sección, especifique insurance.customerDetails para proporcionar todos los detalles de un cliente como entrada al servicio.
 * **[!UICONTROL Resultados del servicio]** > **[!UICONTROL Asignación y escritura de valores de salida en variables o metadatos]**: seleccione la opción para guardar los valores de salida como propiedades del nodo de metadatos de instancia de flujo de trabajo en el repositorio CRX. Especifique el nombre de la propiedad de metadatos y seleccione el atributo de salida del servicio correspondiente que se va a asignar con la propiedad de metadatos. Por ejemplo: asigne el número de teléfono devuelto por el servicio de salida con la propiedad phone_number (número de teléfono) de los metadatos del flujo de trabajo. Del mismo modo, se puede almacenar la salida en una variable de tipo de datos de registro. Al seleccionar una propiedad para la opción **[!UICONTROL Atributo de salida del servicio que se va a asignar]**, solo se rellenan las variables capaces de almacenar datos de la propiedad seleccionada para la opción **[!UICONTROL Guardar salida en]**.
 
 * **[!UICONTROL Resultados del servicio]** > **[!UICONTROL Guardar resultados en una variable o un archivo JSON]**: seleccione la opción para guardar los valores de salida en un archivo JSON en una ruta de acceso absoluta, en una ruta relativa a la carga útil o en una variable.
-* **[!UICONTROL Guardar documento JSON de salida con las siguientes opciones]**: guarde el archivo JSON de salida. La ruta del archivo JSON de salida puede ser relativa a la carga útil o a una ruta de acceso absoluta. También puede guardar el archivo JSON de salida con una variable de tipo de datos JSON o un modelo de datos de formulario.
+* **[!UICONTROL Guardar documento JSON de salida con las siguientes opciones]**: guarde el archivo JSON de salida. La ruta del archivo JSON de salida puede ser relativa a la carga útil o a una ruta de acceso absoluta. También puede guardar el archivo JSON de salida mediante una variable de tipo de datos JSON o un modelo de datos de formulario (FDM).
 
 
 

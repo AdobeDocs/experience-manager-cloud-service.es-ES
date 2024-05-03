@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '5444'
-ht-degree: 88%
+source-wordcount: '5453'
+ht-degree: 86%
 
 ---
 
@@ -30,7 +30,7 @@ El editor de reglas proporciona una interfaz de usuario intuitiva y simplificada
 * Establecer un valor para un objeto
 * Validar el valor de un objeto
 * Ejecutar funciones para calcular el valor de un objeto
-* Invocar un servicio del modelo de datos de formulario y realizar una operación
+* Invocar un servicio del Modelo de datos de formulario (FDM) y realizar una operación
 * Establecer la propiedad de un objeto
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
@@ -147,15 +147,15 @@ Al escribir una regla When, puede activar la acción Clear Value Of. La acción 
 
 **[!UICONTROL Disable]**. Deshabilita el objeto especificado.
 
-**[!UICONTROL Invoke service]**. Invoca un servicio configurado en un modelo de datos de formulario. Al elegir la operación Invoke Service, aparece un campo. Al pulsar el campo, se muestran todos los servicios configurados en todos los modelos de datos de formulario de la instancia [!DNL Experience Manager]. Al elegir un servicio del modelo de datos de formulario, aparecen más campos en los que se pueden asignar objetos de formulario con parámetros de entrada y salida para el servicio especificado. Consulte la regla de ejemplo para invocar los servicios de modelo de datos de formulario.
+**[!UICONTROL Invocar servicio]** Invoca un servicio configurado en un modelo de datos de formulario (FDM). Al elegir la operación Invoke Service, aparece un campo. Al pulsar el campo, se muestran todos los servicios configurados en todo el modelo de datos de formulario (FDM) de la aplicación [!DNL Experience Manager] ejemplo. Al elegir un servicio del modelo de datos de formulario, aparecen más campos en los que se pueden asignar objetos de formulario con parámetros de entrada y salida para el servicio especificado. Consulte la regla de ejemplo para invocar los servicios del Modelo de datos de formulario (FDM).
 
 Además del servicio de modelo de datos de formulario, puede especificar una URL de WSDL directa para invocar un servicio web. Sin embargo, un servicio de modelo de datos de formulario tiene muchas ventajas y es el método recomendado para invocar un servicio.
 
-Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario, consulte integración de datos de [[!DNL Experience Manager Forms] ](data-integration.md).
+Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario (FDM), consulte [[!DNL Experience Manager Forms] Integración de datos](data-integration.md).
 
-**[!UICONTROL Set value of]**. Calcula y establece el valor del objeto especificado. Puede establecer el valor del objeto en una cadena, el valor de otro objeto, el valor calculado mediante expresión o función matemática, el valor de una propiedad de un objeto o el valor de salida de un servicio configurado de modelo de datos de formulario. Al elegir la opción de servicio web, se muestran todos los servicios configurados en todos los modelos de datos de formulario de la instancia [!DNL Experience Manager]. Al elegir un servicio del modelo de datos de formulario, aparecen más campos en los que se pueden asignar objetos de formulario con parámetros de entrada y salida para el servicio especificado.
+**[!UICONTROL Set value of]**. Calcula y establece el valor del objeto especificado. Puede establecer el valor del objeto en una cadena, el valor de otro objeto, el valor calculado mediante expresión o función matemática, el valor de una propiedad de un objeto o el valor de salida de un servicio configurado de modelo de datos de formulario. Al elegir la opción de servicio web, se muestran todos los servicios configurados en todo el modelo de datos de formulario (FDM) de la [!DNL Experience Manager] ejemplo. Al elegir un servicio del modelo de datos de formulario, aparecen más campos en los que se pueden asignar objetos de formulario con parámetros de entrada y salida para el servicio especificado.
 
-Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario, consulte integración de datos de [[!DNL Experience Manager Forms] ](data-integration.md).
+Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario (FDM), consulte [[!DNL Experience Manager Forms] Integración de datos](data-integration.md).
 
 El tipo de regla **[!UICONTROL Establecer propiedad]** permite establecer el valor de una propiedad del objeto especificado en función de una acción de condición. Puede establecer la propiedad en una de las siguientes opciones:
 * visible (booleano)
@@ -838,7 +838,7 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 ### Invocar servicio de modelo de datos de formulario {#invoke}
 
-Piense en un servicio web `GetInterestRates` que toma el importe del préstamo, el ejercicio y la puntuación crediticia del solicitante como entrada y devuelve un plan de préstamo que incluye el importe del EMI y el tipo de interés. Puede crear un modelo de datos de formulario utilizando el servicio web como origen de datos. Se agregan objetos del modelo de datos y un servicio `get` al modelo de formulario. El servicio aparece en la pestaña Servicios del modelo de datos de formulario. A continuación, cree un formulario adaptable que incluya campos de los objetos del modelo de datos para capturar las entradas del usuario para el importe del préstamo, el ejercicio y la puntuación crediticia. Agregue un botón que active el servicio web para obtener detalles del plan. La salida se rellena en los campos adecuados.
+Piense en un servicio web `GetInterestRates` que toma el importe del préstamo, el ejercicio y la puntuación crediticia del solicitante como entrada y devuelve un plan de préstamo que incluye el importe del EMI y el tipo de interés. Puede crear un modelo de datos de formulario (FDM) utilizando el servicio web como fuente de datos. Se agregan objetos del modelo de datos y un servicio `get` al modelo de formulario. El servicio aparece en la pestaña Servicios del modelo de datos de formulario (FDM). A continuación, cree un formulario adaptable que incluya campos de los objetos del modelo de datos para capturar las entradas del usuario para el importe del préstamo, el ejercicio y la puntuación crediticia. Agregue un botón que active el servicio web para obtener detalles del plan. La salida se rellena en los campos adecuados.
 
 La regla siguiente muestra cómo configurar la acción Invocar servicio para que se realice el escenario de ejemplo.
 

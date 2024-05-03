@@ -4,10 +4,10 @@ description: Familiarícese con la arquitectura de  [!DNL AEM Forms]  as a Cl
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: ht
-source-wordcount: '1033'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '1034'
+ht-degree: 97%
 
 ---
 
@@ -84,7 +84,7 @@ Adobe’s PDF Services API lets create, combine, export, and extract data from P
 
 Forms as a Cloud Service proporciona opciones para almacenar contenido en un sistema de almacenamiento externo como un almacenamiento de blobs, Database o un servicio de almacenamiento. También puede almacenar datos de flujos de trabajo en proceso (datos de variables de flujos de trabajo de AEM) que contengan elementos de datos personales confidenciales (SPD) en un repositorio administrado por el cliente para un procesamiento seguro. Adobe recomienda almacenar los datos confidenciales únicamente en un almacenamiento administrado por el cliente.
 
-Puede usar el **conector de almacenamiento unificado** para conectarse a Blob Storage y el **modelo de datos de formulario** para conectarse a bases de datos o servicios back-end (RESTful, SOAP, Azure Blob Storage, etc.).
+Puede usar el complemento **Conector de almacenamiento unificado** para conectarse a Blob Storage y **Modelo de datos de formulario (FDM)** para conectarse a bases de datos o servicios back-end (RESTful, SOAP, Azure Blob Storage y más).
 
 ### Servicios de documentos
 
@@ -118,7 +118,7 @@ Every AEM Forms as a Cloud Service program has access to Fastly CDN service. It 
 +++
 
 +++Adaptive Forms
-Adaptive Forms enable customers to author web-friendly reflowable web forms and fragments that are used by the customers for their data capture needs. This feature enables customers to manage their complex data capture needs easily, by using multiple integrations with Adobe Sign, Document Services, Form Data Model, Automated Forms Conversion service, and more.
+Adaptive Forms enable customers to author web-friendly reflowable web forms and fragments that are used by the customers for their data capture needs. This feature enables customers to manage their complex data capture needs easily, by using multiple integrations with Adobe Sign, Document Services, Form Data Model (FDM), Automated Forms Conversion service, and more.
 
 +++
 
@@ -127,7 +127,7 @@ Automated Forms Conversion service helps accelerate digitization and modernizati
 
 +++
 
-+++Form Data Model
++++Form Data Model (FDM)
 The Form Data Model (FDM) feature is the standard way of creating data integrations with external/internal data sources and using them across the different Forms as a Cloud Service features. FDM provides a rich editor for customers to integrate, define, and manage relationships between the different entities and data sources and perform operations on them. Form data is stored in a data store hosted on the customer premises. Organizations can also use blob store hosted by the cloud provider and Adobe Experince Platform to store data.
 
 +++

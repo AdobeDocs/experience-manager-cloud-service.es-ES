@@ -6,10 +6,11 @@ topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
 docset: aem65
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
-source-wordcount: '2465'
-ht-degree: 100%
+exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '2468'
+ht-degree: 97%
 
 ---
 
@@ -26,8 +27,8 @@ ht-degree: 100%
 
 Los formularios adaptables le permiten crear formularios atractivos, interactivos, dinámicos y adaptables. [!DNL AEM Forms] proporciona una interfaz de usuario intuitiva y componentes predeterminados para crear y trabajar con formularios adaptables. Puede elegir crear un formulario adaptable en base a un modelo o esquema de formulario o sin un modelo de formulario. Es importante elegir cuidadosamente un modelo del formulario que no solo se adapte a sus necesidades, sino que amplíe sus inversiones y activos de infraestructura existentes. Puede elegir entre las siguientes opciones para crear un formulario adaptable:
 
-* **Usar un modelo de datos de formulario**
-  La [integración de datos](data-integration.md) permite integrar entidades y servicios de distintos orígenes de datos en un modelo de datos de formulario que se puede utilizar para crear formularios adaptables. Seleccione un modelo de datos de formulario si el formulario adaptativo que está creando implica recuperar y escribir datos desde y hacia varias fuentes de datos.
+* **Uso de un modelo de datos de formulario (FDM)**
+  [Integración de datos](data-integration.md) permite integrar entidades y servicios de distintas fuentes de datos en un modelo de datos de formulario (FDM) que se puede utilizar para crear Forms adaptable. Elija Modelo de datos de formulario (FDM) si el formulario adaptable que está creando implica recuperar y escribir datos desde y hacia varias fuentes de datos.
 
 * **Usar una plantilla de formulario XDP**
 Es un modelo de formulario ideal si tiene inversiones en formularios XFA o XDP. Proporciona una forma directa de convertir los formularios basados en XFA en formularios adaptables. Cualquier regla XFA existente se conservará en el formulario adaptable asociado. El formulario adaptable resultante admitirá construcciones XFA, como validaciones, eventos, propiedades y patrones.

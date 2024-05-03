@@ -4,10 +4,10 @@ description: Aprenda cómo crear una variable, establecer un valor para ella y u
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: ht
-source-wordcount: '1928'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '1930'
+ht-degree: 99%
 
 ---
 
@@ -58,7 +58,7 @@ Para crear una variable, haga lo siguiente:
 
    * Tipo de datos primitivo: especifique un valor predeterminado opcional para la variable.
    * JSON o XML: especifique una ruta de esquema JSON o XML opcional. El sistema valida la ruta del esquema al asignar y almacenar las propiedades disponibles en este esquema para otra variable.
-   * Modelo de datos de formulario: especifique una ruta del modelo de datos de formulario.
+   * Modelo de datos de formulario (FDM): especifique una ruta del modelo de datos de formulario.
    * ArrayList: especifique un subtipo para la colección.
 
 1. Especifique una descripción opcional para la variable y seleccione ![done_icon](assets/Smock_Checkmark_18_N.svg) para guardar los cambios. La variable se muestra en la lista disponible en el panel izquierdo.
@@ -198,7 +198,7 @@ Utilice las siguientes API en el script ECMA para recuperar los valores de varia
 | Primitiva (larga, doble, booleano, fecha y en cadena) | workItem.getWorkflowData().getMetaDataMap().get(variableName, type) |
 | Documento | Packages.com.adobe.aemfd.docmanager.Document doc = workItem.getWorkflowData().getMetaDataMap().get(&quot;docVar&quot;, Packages.com.adobe.aemfd.docmanager.Document.class); |
 | XML | Packages.org.w3c.dom.Document xmlObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.org.w3c.dom.Document.class); |
-| Modelo de datos de formulario | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
+| Modelo de datos de formulario (FDM) | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
 

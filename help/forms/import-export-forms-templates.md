@@ -5,16 +5,16 @@ topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
-source-wordcount: '1193'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '1195'
+ht-degree: 94%
 
 ---
 
 # Importar o exportar formularios adaptables y recursos de AEM Forms {#importing-and-exporting-assets-to-aem-forms}
 
-Puede mover formularios adaptables y recursos relacionados, como temáticas de formulario adaptable, modelos de datos de formulario, plantillas de formulario adaptable, fragmentos de documentos y PDF forms, entre instancias de [!DNL AEM Forms]. Puede importar y exportar recursos en paquetes CRX o formatos de archivo binario.
+Puede mover Forms adaptable y recursos relacionados, como temáticas de formulario adaptable, modelo de datos de formulario (FDM), plantillas de formulario adaptable, fragmentos de documento y PDF forms, entre [!DNL AEM Forms] instancias. Puede importar y exportar recursos en paquetes CRX o formatos de archivo binario.
 
 Al exportar un formulario adaptable, las directivas de contenido y las plantillas no se exportan. Utilice el [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=es#how-rolling-deployments-work) para exportar estos recursos.
 
@@ -27,7 +27,7 @@ Para descargar formularios o recursos relacionados:
 1. Seleccione los recursos y el icono **[!UICONTROL Descargar]**.
 1. En Descargar recursos, elija una de las siguientes opciones y seleccione **[!UICONTROL Descargar]**.
 
-   * **Descargar como paquete CRX:** utilice la opción para descargar y mover todos los recursos seleccionados y las dependencias relacionadas de una instancia de [!DNL AEM Forms] a otra. Descarga todos los recursos y carpetas como paquete CRX, incluidos los formularios creados en AEM (formularios adaptables y fragmentos de formularios adaptables), conjuntos de formularios, modelos de datos de formulario, plantillas de formulario, documentos PDF y recursos de referencia (XSD e imágenes). 
+   * **Descargar como paquete CRX:** utilice la opción para descargar y mover todos los recursos seleccionados y las dependencias relacionadas de una instancia de [!DNL AEM Forms] a otra. AEM Descarga todos los recursos y carpetas como un paquete CRX, incluidos los formularios creados en el (Forms adaptable y fragmentos de formularios adaptables), los conjuntos de formularios, el modelo de datos de formulario (FDM), las plantillas de formulario, los documentos de PDF y los recursos de referencia (XSD e imágenes).
 La ventaja de descargar recursos como paquete es que también descarga las referencias de los recursos seleccionados. Por ejemplo, si tiene un formulario adaptable que utiliza una plantilla de formulario, XSD y una imagen. Al seleccionar este formulario adaptable y descargarlo como un paquete, el paquete descargado también contiene la plantilla de formulario, XSD y la imagen. También se descargan todas las propiedades de metadatos (incluidas las propiedades personalizadas) asociadas al recurso.
 
    * **Descargar recursos como archivos binarios:** utilice la opción para descargar solo plantillas de formulario (XDP), formularios PDF (PDF), documento (PDF) y recursos (imágenes, esquemas, hojas de estilo). Puede editar estos recursos con aplicaciones externas. Descarga los recursos que poseen binarios, como imágenes, PDF y otros formatos compatibles como archivo .zip. 

@@ -3,10 +3,10 @@ title: ¿Cómo se pueden administrar los metadatos de AEM Forms?
 description: Los metadatos facilitan la categorización y organización de los recursos y ayudan a los usuarios que buscan un recurso específico.
 feature: Adaptive Forms, Foundation Components
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
-workflow-type: ht
-source-wordcount: '1733'
-ht-degree: 100%
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+workflow-type: tm+mt
+source-wordcount: '1735'
+ht-degree: 99%
 
 ---
 
@@ -71,7 +71,7 @@ A continuación se ofrece una amplia lista de propiedades de metadatos compatibl
      <li>Formulario PDF, formulario PDF (acróformulario) o formulario PDF (firmado)</li> 
      <li>Documento, documento (firmado)</li> 
      <li>Formulario adaptable</li> 
-     <li>Modelo de datos de formulario</li>
+     <li>Modelo de datos de formulario (FDM)</li>
      <li>Recurso</li> 
     </ul> </td> 
   </tr> 
@@ -162,7 +162,7 @@ A continuación se ofrece una amplia lista de propiedades de metadatos compatibl
    <td>Formulario adaptable</td> 
    <td><p>Especifica qué modelo de formulario se utiliza durante la creación del formulario adaptable. Esta propiedad puede tener los siguientes valores:</p> 
     <ul> 
-      <li>Modelo de datos de formulario </li>
+      <li>Modelo de datos de formulario (FDM)</li>
       <li>Esquema: Un XML del esquema JSON</li>
      <!-- <li>Form template: A form template is selected from the ones existing in the repository. This value can be updated.</li> 
      <li>XML schema: An XSD file is uploaded. This value can be updated.</li> -->

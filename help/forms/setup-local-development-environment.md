@@ -4,10 +4,10 @@ description: Configurar un entorno de desarrollo local para Adobe Experience Man
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a86e68f9dd195512a689943b303225a48b5f8a23
-workflow-type: ht
-source-wordcount: '2723'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '2726'
+ht-degree: 98%
 
 ---
 
@@ -249,7 +249,7 @@ Ahora puede utilizar el entorno de desarrollo local para procesar el documento d
 
 Utilice este proyecto para crear formularios adaptables, implementar actualizaciones de configuración, superposiciones, crear componentes de formularios adaptables personalizados, probar y personalizar código en el SDK local [!DNL Experience Manager Forms]. Después de realizar la prueba de manera local, puede implementar el proyecto en entornos de producción y no producción [!DNL Experience Manager Forms]as a Cloud Service. Al implementar el proyecto, también se implementan los siguientes activos de AEM Forms:
 
-| Temáticas | Plantillas | Modelos de datos de formulario |
+| Temáticas | Plantillas | Modelo de datos de formulario (FDM) |
 ---------|----------|---------
 | Canvas 3.0 | Basic | Microsoft® Dynamics 365 |
 | Tranquilo | Blank | Salesforce |
@@ -259,7 +259,7 @@ Utilice este proyecto para crear formularios adaptables, implementar actualizaci
 
 >[!NOTE]
 >
-> Configure la versión 30 o posterior de AEM Archetype para obtener y utilizar los modelos de datos de formulario Microsoft® Dynamics 365 y Salesforce con AEM Forms as a Cloud Service.
+> AEM Configure la versión 30 o posterior del tipo de archivo para obtener y utilizar el modelo de datos de formulario (FDM) de Microsoft® Dynamics 365 y Salesforce con AEM Forms as a Cloud Service.
 > Configure la versión 32 o posterior de AEM Archetype para obtener y utilizar los temas Tranquil, Urbane y Ultramarine con AEM Forms as a Cloud Service.
 
 Para configurar el proyecto, haga lo siguiente:
@@ -399,7 +399,7 @@ Para realizar una copia de seguridad y mover activos del SDK existente a un ento
 
 ### Crear una copia de seguridad del contenido existente {#create-backup-of-your-existing-content}
 
-Haga una copia de seguridad de su formulario adaptable, plantillas, modelos de datos de formulario, temáticas, configuraciones y códigos personalizados. Puede realizar la siguiente acción para crear una copia de seguridad:
+Haga una copia de seguridad de su Forms adaptable, plantillas, modelos de datos de formulario (FDM), temáticas, configuraciones y códigos personalizados. Puede realizar la siguiente acción para crear una copia de seguridad:
 
 1. [Descargar](import-export-forms-templates.md#manage-forms-and-related-assets) formularios adaptables, temáticas y PDF forms.
 1. Exportar plantillas de formularios adaptables.

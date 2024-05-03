@@ -4,10 +4,10 @@ description: Utilice los componentes principales del formulario adaptable en una
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
-source-wordcount: '2067'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '2071'
+ht-degree: 97%
 
 ---
 
@@ -110,12 +110,12 @@ En el cuadro de diálogo [!UICONTROL Editar contenedor de AEM Forms], especifiq
    * **Servicio de rellenado automático**: puede utilizar el servicio de cumplimentación previa para rellenar automáticamente los campos de un formulario adaptable utilizando los datos existentes. Cuando un usuario abre un formulario, los valores de esos campos ya han sido rellenados. Para obtener información sobre el servicio de rellenado automático, consulte [Rellenar previamente los campos del formulario adaptable](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html?lang=es#configuring-prefill-service-using-configuration-manager)
    * **Categoría de la biblioteca del cliente**: especifique las [Funciones de JavaScript](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=es#custom-functions) que se utilizan en expresiones y son compatibles con Adaptive Forms.
 * **Modelo de datos**: un modelo de datos de formulario permite integrar entidades y servicios de distintas fuentes de datos en un formulario adaptable. Elija un **[!UICONTROL modelo de datos de formulario]** si el formulario adaptable que está creando implica recuperar y escribir datos desde y hacia varias fuentes de datos.
-   * **Modelo de datos de formulario**: un modelo de datos de formulario permite que un formulario adaptable se comunique con distintas fuentes de datos. Para obtener información sobre la configuración de una fuente de datos, consulte [Configurar fuentes de datos](/help/forms/configure-data-sources.md).
+   * **Modelo de datos de formulario**: Un modelo de datos de formulario (FDM) permite que un formulario adaptable se comunique con fuentes de datos dispares. Para obtener información sobre la configuración de una fuente de datos, consulte [Configurar fuentes de datos](/help/forms/configure-data-sources.md).
    * **Esquema**: el esquema representa la estructura en la que el sistema back-end de su organización produce o consume datos. Puede [asociar el esquema a un formulario adaptable](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html?lang=es) y utilizar sus elementos para agregar contenido dinámico a un formulario adaptable.
 
      >[!NOTE]
      >
-     > Después de configurar el modelo de datos del formulario, no se puede cambiar el modelo de formulario asociado. Sin embargo, es posible modificar el esquema asociado al modelo de datos de formulario.
+     > Después de configurar el modelo de datos de formulario (FDM), no se puede cambiar el modelo de formulario asociado. Sin embargo, es posible modificar el esquema asociado al modelo de datos de formulario (FDM).
 
 * **Pestaña Envío**
 
@@ -125,7 +125,7 @@ En el cuadro de diálogo [!UICONTROL Editar contenedor de AEM Forms], especifiq
       * **Acción de envío**: se activa una acción de envío cuando un usuario hace clic en el botón Enviar en un formulario adaptable. Puede [configurar la acción de envío en el formulario adaptable](/help/forms/configuring-submit-actions.md). Los formularios adaptables proporcionan algunas acciones de envío listas para usar:
          * Enviar al punto final REST
          * Enviar correo electrónico
-         * Enviar mediante modelo de datos de formulario
+         * Enviar mediante modelo de datos de formulario (FDM)
          * Invocar un flujo de trabajo de AEM
          * Enviar a SharePoint
          * Enviar a OneDrive
@@ -253,7 +253,7 @@ Considere los siguientes escenarios para publicar Formularios adaptables agregad
 Para modificar cualquier configuración o propiedad de un formulario adaptable, realice una de las siguientes acciones:
 
 * Abra el formulario original en Formularios adaptables en los respectivos editores y modifíquelo.
-* Seleccione el formulario adaptable desde la página de Sites en el modo Edición y, a continuación, seleccione **[!UICONTROL Editar en una nueva ventana]**.  El formulario original se abrirá en el modo de edición, donde puede modificarlo.
+* Seleccione el formulario adaptable desde la página de Sites en el modo Edición y, a continuación, seleccione **[!UICONTROL Editar en una nueva ventana]**. El formulario original se abrirá en el modo de edición, donde puede modificarlo.
 
 ## Cambiar el diseño de un formulario adaptable agregado a una página de AEM Sites {#change-layout-af-aem-sites-page}
 

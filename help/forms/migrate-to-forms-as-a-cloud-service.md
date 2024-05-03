@@ -9,10 +9,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
-source-wordcount: '1430'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '1433'
+ht-degree: 95%
 
 ---
 
@@ -128,14 +128,14 @@ Realice los siguientes pasos para lograr que sus recursos de [!DNL AEM Forms] se
 
    <!-- 1. Install the latest [Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) to your cloned [!DNL AEM Forms] environment. -->
 
-1. Ejecute la [herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=es#cloud-migration). Al especificar los parámetros en la pantalla **[!UICONTROL Crear conjunto de migración]**, especifique la ruta de los formularios adaptables, temáticas, plantillas, modelos de datos de formulario, servicios en la nube, componentes personalizados y otros recursos específicos de AEM Forms a la opción **[!UICONTROL Rutas que se deben incluir]**. Añade los recursos especificados de [!DNL AEM Forms] al conjunto de migración.
+1. Ejecute la [herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=es#cloud-migration). Al especificar parámetros en **[!UICONTROL Crear conjunto de migración]** , especifique la ruta de Forms adaptable, temáticas, plantillas, modelo de datos de formulario (FDM), Cloud Service, componentes personalizados y otros recursos específicos de AEM Forms a la **[!UICONTROL Rutas que se incluirán]** opción. Añade los recursos especificados de [!DNL AEM Forms] al conjunto de migración.
 
 ## Rutas de varios recursos específicos de AEM Forms
 
 Cuando migre de AEM Forms 6.5 al servicio en la nube, puede localizar los recursos específicos de AEM Forms en los siguientes lugares:
 
 * **Formularios adaptables**: puede encontrar formularios adaptables en `/content/dam/formsanddocuments/` y en `/content/forms/af`. Por ejemplo, para un formulario adaptable titulado “WKND Registration”, añada las rutas `/content/dam/formsanddocuments/wknd-registration` y `/content/forms/af/wknd-registration`.
-* **Modelo de datos de formulario**: puede encontrar todos los modelos de datos de formulario en `/content/dam/formsanddocuments-fdm`. Por ejemplo, `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
+* **Modelo de datos de formulario**: Puede encontrar todo el modelo de datos de formulario (FDM) en `/content/dam/formsanddocuments-fdm`. Por ejemplo, `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
 
 * **Bibliotecas de cliente**: La ruta predeterminada de las bibliotecas de cliente es `/etc/clientlibs/fd/theme`.
 
@@ -143,7 +143,7 @@ Cuando migre de AEM Forms 6.5 al servicio en la nube, puede localizar los recurs
 
 * **Temáticas de formularios adaptables y bibliotecas de cliente**: La ruta predeterminada de las temáticas es ` /content/dam/formsanddocuments-themes/` y la ruta predeterminada de las bibliotecas de cliente es `/etc/clientlibs/fd/theme`. Por ejemplo, para una plantilla titulada “WKND Theme”, añada la ruta ` /content/dam/formsanddocuments-themes/wkndtheme` y las bibliotecas de cliente para la temática en `/etc/clientlibs/reference-themes/wkndtheme-3-0`. También puede tener temáticas y bibliotecas de cliente en otras rutas personalizadas.
 
-* **Configuraciones de nube**: Puede encontrar configuraciones de nube en `/conf/`. Por ejemplo, la configuración de nube del modelo de datos de formulario se encuentra en `/conf/global/settings/cloudconfigs/fdm`.
+* **Configuraciones de nube**: Puede encontrar configuraciones de nube en `/conf/`. Por ejemplo, la configuración de nube del Modelo de datos de formulario (FDM) se encuentra en `/conf/global/settings/cloudconfigs/fdm`.
 
 * **Modelo de flujo de trabajo**: Puede encontrar modelos de flujo de trabajo de AEM en `/conf/global/settings/workflow/models/`. Por ejemplo, para un modelo de flujo de trabajo llamado “WKND Registration”, añada la ruta `/conf/global/settings/workflow/models/wknd-registration`
 

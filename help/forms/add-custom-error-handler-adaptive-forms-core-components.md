@@ -6,10 +6,10 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
-source-git-commit: d75d448d631da7af3a37192f0890a38c760ab09b
-workflow-type: ht
-source-wordcount: '2331'
-ht-degree: 100%
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+workflow-type: tm+mt
+source-wordcount: '2332'
+ht-degree: 99%
 
 ---
 
@@ -180,7 +180,7 @@ Utilizando la acción del [Servicio de invocación del editor de reglas](https:/
 
 >[!NOTE]
 >
-> * Para utilizar controladores de errores con la acción Invocar servicio del Editor de reglas, configure los formularios adaptables con un modelo de datos de formulario.
+> * Para utilizar controladores de error con la acción Invocar servicio del Editor de reglas, configure Forms adaptable con un modelo de datos de formulario (FDM).
 > * De forma predeterminada, se proporciona el controlador de errores para mostrar los mensajes de error en los campos si la respuesta de error está en el esquema estándar. También puede llamar al controlador de error predeterminado desde la función del controlador de error personalizado.
 
 Con el editor de reglas, se puede hacer lo siguiente:

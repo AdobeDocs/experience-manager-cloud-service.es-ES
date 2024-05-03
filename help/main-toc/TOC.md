@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a5fc1f7e42edc8d41cac687a348dad7fc98742c1
+source-git-commit: 1b5dec707eb63a43a3e6240c785ed9ef00a3a3c4
 workflow-type: tm+mt
-source-wordcount: '4892'
+source-wordcount: '4901'
 ht-degree: 99%
 
 ---
@@ -619,7 +619,7 @@ ht-degree: 99%
          + [Conectar AEM Forms a la base de datos o fuente de datos](/help/forms/data-integration.md)
          + [Configuración de fuentes de datos](/help/forms/configure-data-sources.md)
          + [Configuración de [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-         + [Conectar el formulario adaptable a la aplicación Salesforce mediante el flujo de credenciales de cliente de OAuth 2.0](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+         + [Conectar el formulario adaptable a la aplicación Salesforce mediante el flujo de credenciales de cliente de OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
          + [Configuración de almacenamiento de  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
          + [Configurar [!DNL Microsoft Dynamics 365] y [!DNL Salesforce] cloud services](/help/forms/configure-msdynamics-salesforce.md)
          + [Crear modelo de datos de formulario](/help/forms/create-form-data-models.md)
@@ -651,6 +651,7 @@ ht-degree: 99%
             + [Añadir una configuración regional para Formularios adaptables basada en componentes principales](/help/forms/supporting-new-language-localization-core-components.md)
             + [Creación y uso de funciones personalizadas](/help/forms/create-and-use-custom-functions.md)
             + [Añadir reglas a un formulario adaptable basado en componentes principales](/help/forms/rule-editor-core-components.md)
+            + [Diseño de un esquema JSON para un formulario adaptable (componentes principales)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Añadir versiones, comentarios y anotaciones a un formulario adaptable](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Nuevos formularios adaptables](/help/forms/compare-forms.md)
       + Componentes de base {#authoring-adaptive-forms-foundation-components}
