@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 71e3a268c5033f0a7f0d054a9f4c1fe599cd6b83
+source-git-commit: 6f78b43e857ca496465c315e8812bb67aff8c627
 workflow-type: tm+mt
-source-wordcount: '4908'
+source-wordcount: '4907'
 ht-degree: 99%
 
 ---
@@ -856,7 +856,7 @@ ht-degree: 99%
          + [Traducción](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Componentes personalizados](/help/edge/docs/forms/custom-components-forms.md)
-         + [Monitorización de usuarios en tiempo real de formularios](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [Monitorización de uso real de formularios](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
       + Referencias {#forms-references}
          + [Componentes de bloque de formulario adaptable y sus propiedades](/help/edge/docs/forms/form-components.md)
    + Recursos de Edge Delivery {#resources}
@@ -1068,7 +1068,7 @@ ht-degree: 99%
       + Editor universal {#universal-editor}
          + [Introducción al editor universal](/help/implementing/universal-editor/introduction.md)
          + [Arquitectura del editor universal](/help/implementing/universal-editor/architecture.md)
-         + [Aplicación de ejemplo de SecurBank](/help/implementing/universal-editor/securbank.md)
+         + [Aplicación SecurBank de muestra](/help/implementing/universal-editor/securbank.md)
          + [Introducción al editor universal en AEM](/help/implementing/universal-editor/getting-started.md)
          + [Información general sobre el desarrollador del editor universal](/help/implementing/universal-editor/developer-overview.md)
          + [Atributos y tipos de elementos](/help/implementing/universal-editor/attributes-types.md)

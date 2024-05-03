@@ -2,11 +2,13 @@
 title: Monitorización de uso real para Edge Delivery Services para AEM Forms as a Cloud Service
 description: La monitorización del uso real para Edge Delivery Services de AEM Forms as a Cloud Service implica el seguimiento y el análisis continuos de las interacciones del usuario con los formularios.
 feature: Edge Delivery Services
+hide: true
+hidefromtoc: true
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
-source-git-commit: 71e3a268c5033f0a7f0d054a9f4c1fe599cd6b83
+source-git-commit: 6f78b43e857ca496465c315e8812bb67aff8c627
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 44%
+source-wordcount: '787'
+ht-degree: 45%
 
 ---
 
@@ -30,15 +32,13 @@ Para iniciar sesión en el tablero de monitorización de Edge Delivery Services 
 
 * **URL**: la dirección URL es específica del sitio o dominio del usuario. Los usuarios tienen la opción de filtrar el sitio o dominio para ver el panel según sus necesidades.
 
-* **Clave de dominio**: el usuario genera manualmente la clave de dominio.
-
-Para obtener ayuda con las claves de dominio, consulte la [Autenticación](https://www.aem.live/developer/rum#authentication) documentación.
+* **Clave de dominio**: el usuario genera manualmente la clave de dominio. Para obtener claves de dominio para los formularios, póngase en contacto con el representante del Adobe.
 
 ### Panel de monitorización para Edge Delivery Services de AEM Forms as a Cloud Service
 
 Después de introducir la dirección URL y las claves de dominio en la pantalla de inicio de sesión, obtiene acceso al panel de monitorización para Edge Delivery Services de AEM Forms as a Cloud Service.
 
-La siguiente ilustración muestra el tablero RUM para as a Cloud Service de Edge Delivery Services for AEM Forms:
+En la siguiente ilustración se muestra el tablero de Edge Delivery Services for AEM Forms as a Cloud Service:
 
 ![Tablero de formularios de RUM](/help/edge/assets/rum-forms-dashboard.png)
 
