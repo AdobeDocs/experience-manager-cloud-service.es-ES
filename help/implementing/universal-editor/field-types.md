@@ -2,7 +2,7 @@
 title: Definiciones del modelo, campos y tipos de componentes
 description: Obtenga información acerca de los campos y los tipos de componentes que el Editor universal puede editar en el carril de propiedades con ejemplos. Descubra cómo puede instrumentar su propia aplicación creando una definición de modelo y vinculándola al componente.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: 9f0a3bf5c8d839fa2ab6744c6fa7f97cc5fe8684
+source-git-commit: c2dd0ed800739c2194ab20267f72b85461f3c5b8
 workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 11%
@@ -289,6 +289,8 @@ Un tipo de componente contenedor permite agrupar componentes. Ofrece una configu
 >[!TAB Captura de pantalla]
 
 ![Captura de pantalla del tipo de componente de contenedor](assets/component-types/container.png)
+
+>[!ENDTABS]
 
 #### Fragmento de contenido {#content-fragment}
 

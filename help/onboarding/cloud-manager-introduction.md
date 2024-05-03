@@ -2,10 +2,10 @@
 title: Introducción a Cloud Manager
 description: Obtenga información sobre cómo Cloud Manager admite su proyecto de AEM a través de sus programas, entornos y canalizaciones.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 6181b066742357169b67f605ac3970685537bb5e
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 96%
+source-wordcount: '864'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ También puede navegar hasta la página Programas y productos de Cloud Manager d
 
 1. Seleccione **Experience Manager**.
 
-1. En el **Cloud Manager** , haga clic en **Launch**
+1. En la tarjeta **Cloud Manager**, haga clic en **Iniciar**
 
 ## Permisos basados en roles en Cloud Manager {#role-based-permissions}
 
@@ -52,12 +52,16 @@ También puede navegar hasta la página Programas y productos de Cloud Manager d
 | Generar token de acceso personal | Acceso a Git |  | x |  | x |
 | Crear RDE | Crear un Entorno de desarrollo rápido | x |  |  | x |
 | Restablecer RDE | Restablecer un Entorno de desarrollo rápido | x |  |  | x |
-| Creación o modificación de conjuntos de contenido | Creación o modificación de un conjunto de contenido para la copia de contenido |  | x |  |  |
-| Iniciar/cancelar copia de contenido | Iniciar o cancelar un proceso de copia de contenido |  | x |  |  |
+| Crear y modificar conjuntos de contenido | Creación o modificación de un conjunto de contenido para la copia de contenido |  | x |  |  |
+| Iniciar/cancelar copia de contenido | Iniciar o cancelar el proceso de copia de contenido |  | x |  |  |
 
 >[!NOTE]
 >
 >Se puede asignar a un usuario varias funciones. Por ejemplo, asignar ambas funciones de **Propietario empresarial** y **Administrador de implementación** a un usuario le da al usuario la suma de estos permisos.
+
+>[!TIP]
+>
+>También hay disponibles perfiles de permiso personalizados con permisos configurables. Consulte el documento [Permisos personalizados](/help/implementing/cloud-manager/custom-permissions.md) para obtener más información.
 
 ## Programas de Cloud Manager {#cloud-manager-programs}
 
