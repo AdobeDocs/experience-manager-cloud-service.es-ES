@@ -77,7 +77,7 @@ Ninguna.
 
 ### Funciones y API obsoletas {#deprecated-16145}
 
-* [Credenciales JWT de Adobe Developer Console en desuso](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+* [Credenciales de JWT de Adobe Developer Console en desuso](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 
 * A partir del 1 de mayo de 2024, Adobe Dynamic Media dejará de ofrecer asistencia para lo siguiente:
 
