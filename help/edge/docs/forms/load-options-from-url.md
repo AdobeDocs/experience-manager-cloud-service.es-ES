@@ -3,12 +3,13 @@ title: Cargar opciones de la lista desplegable desde la URL
 description: Las opciones de la lista desplegable se incluyen en una hoja de cálculo distinta y luego se importan a la hoja de cálculo principal a través de la dirección URL proporcionada.
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
-source-git-commit: e61ef529dc562862bd02d7767e45de3e2ec4983b
-workflow-type: ht
+source-git-commit: 4a534f4335376673c362ef91a877e67a523be560
+workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 100%
 
 ---
+
 
 # Cargar opciones de la lista desplegable desde la URL
 
@@ -88,3 +89,5 @@ https://main--wefinance--wkndforms.hlx.live/enquiry-form
 ## Consulte también
 
 {{see-more-forms-eds}}
+
+

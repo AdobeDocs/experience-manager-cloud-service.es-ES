@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 695389430e3be4cef107aefad44fd7453cc9d36d
+source-git-commit: 4a534f4335376673c362ef91a877e67a523be560
 workflow-type: tm+mt
 source-wordcount: '4908'
 ht-degree: 99%
@@ -840,7 +840,7 @@ ht-degree: 99%
       + [Redireccionamientos](/help/edge/docs/redirects.md)
    + Creación de formularios {#build-forms}
       + [Información general](/help/edge/docs/forms/overview.md)
-      + Introducción {#getting-started-eds-forms}
+      + Introducción {#getting-started-edge-delivery-services-forms}
          + [Introducción](/help/edge/docs/forms/tutorial.md)
          + [Crear un formulario con Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
          + [Configurar Google Sheets o los archivos de Microsoft Excel para empezar a aceptar datos](/help/edge/docs/forms/submit-forms.md)
@@ -850,13 +850,13 @@ ht-degree: 99%
          + [Personalizar el aspecto de los formularios](/help/edge/docs/forms/style-theme-forms.md)
          + [Usar reglas para agregar un comportamiento dinámico a un formulario](/help/edge/docs/forms/rules-forms.md)
          + [Mostrar un mensaje de agradecimiento personalizado después del envío del formulario](/help/edge/docs/forms/thank-you-page-form.md)
-      + Funciones {#advanced-features-eds-forms}
+      + Funciones {#advanced-features-edge-delivery-services-forms}
          + [Fragmentos de formulario](/help/edge/docs/forms/form-fragments.md)
          + [Añadir secciones repetibles a un formulario](/help/edge/docs/forms/repeatable-forms.md)
          + [Traducción](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Componentes personalizados](/help/edge/docs/forms/custom-components-forms.md)
-         + [Monitorización de usuarios en tiempo real de formularios](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
+         + [Monitorización de usuarios en tiempo real de formularios](/help/edge/docs/forms/real-user-monitoring-for-forms.md)
       + Referencias {#forms-references}
          + [Componentes de bloque de formulario adaptable y sus propiedades](/help/edge/docs/forms/form-components.md)
    + Recursos de Edge Delivery {#resources}
