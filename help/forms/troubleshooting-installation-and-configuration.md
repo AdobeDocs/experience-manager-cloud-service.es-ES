@@ -5,10 +5,10 @@ contentOwner: khsingh
 feature: Adaptive Forms, Troubleshooting
 role: User
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: ht
-source-wordcount: '167'
-ht-degree: 100%
+source-git-commit: a19a3d81652cb17fcd6b11e6047d2ea697bf3041
+workflow-type: tm+mt
+source-wordcount: '213'
+ht-degree: 78%
 
 ---
 
@@ -53,3 +53,13 @@ If the profile exists and issues still persist, contact Adobe Support. -->
 Los usuarios no pueden ejecutar la canalización de compilación. Se produce un error en la canalización después de ejecutarse durante algún tiempo.
 
 Para resolver el problema, abra Cloud Manager, seleccione la opción **[!UICONTROL Actualizar]** correspondiente a su entorno y ejecute la canalización.
+
+
+## Los paquetes no están en estado activo {#bundles-inactive-state}
+
+Para resolver el problema, realice los siguientes pasos:
+
+1. AEM Comience y espere a que se inicie completamente hasta que todos los paquetes estén activos.
+1. AEM Detener (Ctrl + C).
+1. Colocar el Forms `.far` en la carpeta de instalación.
+1. AEM Reinicie el servidor de la.

@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 619cf91e3d1cc5504d8de0e70eb88e9ae7285af9
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 88%
+source-wordcount: '1560'
+ht-degree: 84%
 
 ---
 
@@ -205,6 +205,16 @@ También puede modificar las propiedades del modelo del formulario desde el edit
 >
 > También puede guardar un formulario adaptable como plantilla. Para obtener más información, consulte [Creación de una plantilla con un formulario adaptable](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template).
 
+## AEM ¿Cómo se cambia el nombre de un formulario adaptable de? {#rename-an-AEM-Adaptive-Form}
+
+Para cambiar el nombre de un formulario adaptable, realice los siguientes pasos:
+
+1. Seleccione un formulario adaptable en la interfaz de usuario de AEM Forms.
+1. Haga clic en **Propiedades** situado en el carril superior.
+1. Cambie el nombre del formulario en la **Título** , como se muestra en la siguiente imagen.
+1. Clic **Guardar y cerrar**.
+
+![AEM Cambiar el nombre de un formulario adaptable](/help/forms/assets/change-af-name.png)
 
 ## Consulte también {#see-also}
 

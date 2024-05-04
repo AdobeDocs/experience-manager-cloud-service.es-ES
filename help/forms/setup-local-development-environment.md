@@ -4,10 +4,10 @@ description: Configurar un entorno de desarrollo local para Adobe Experience Man
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: a070e945f23641cfdfd71511366e5b2c16ec22e8
 workflow-type: tm+mt
-source-wordcount: '2726'
-ht-degree: 98%
+source-wordcount: '2762'
+ht-degree: 96%
 
 ---
 
@@ -91,6 +91,11 @@ Para descargar la última versión del SDK de Adobe Experience Manager as a Clou
 1. Vaya a la pestaña **[!UICONTROL AEM as a Cloud Service]**.
 1. Ordene por fecha de publicación en orden de bajada.
 1. Haga clic en el SDK de Adobe Experience Manager as a Cloud Service más reciente, el archivo de características de Experience Manager Forms (complemento de AEM Forms), los activos de referencia de formularios o Forms Designer.
+
+   >[!NOTE]
+   >
+   > Se recomienda descargar la última versión del archivo de características de Experience Manager Forms (complemento de AEM Forms), los recursos de referencia de formularios o Forms Designer para lograr una compatibilidad perfecta con el SDK de Adobe Experience Manager as a Cloud Service.
+
 1. Revise y acepte el EULA. Seleccione el botón **[!UICONTROL Descargar]**.
 
 ## Configurar las herramientas de desarrollo para Proyectos AEM {#setup-development-tools-for-AEM-projects}
@@ -136,6 +141,13 @@ El archivo de características de Adobe Experience Manager Forms as a Cloud Serv
    >[!NOTE]
    >
    > Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. El reinicio del SDK de AEM mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de AEM.
+
+<!--**Q**: I've set up a Aem as a Cloud Service environment and added the Forms Add-On for a project. After the .far file addition, the bundles are not in the active state and are in installed state only due to the missing dependencies. How to make the bundles in the active state?
+**A**: To resolve the issue:
+1. Start the AEM and wait for it to start completely (all bundles up)
+1. Stop aem (ctrl + c). Place the forms far in the install folder.
+1. Restart AEM.-->
+
 
 ### Configurar usuarios y permisos {#configure-users-and-permissions}
 
