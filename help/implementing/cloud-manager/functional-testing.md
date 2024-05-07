@@ -2,7 +2,7 @@
 title: Pruebas funcionales
 description: Obtenga información sobre los tres tipos diferentes de pruebas funcionales integradas en el proceso de implementación de AEM as a Cloud Service para garantizar la calidad y fiabilidad de su código.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: b85d43a05c8bb8a6438ab44bd184b7624456ab6a
 workflow-type: tm+mt
 source-wordcount: '1354'
 ht-degree: 9%
@@ -45,9 +45,9 @@ El siguiente diagrama proporciona una vista detallada de las puertas de calidad 
 
 |                               | Pruebas de unidad | Personalizado<br/> Pruebas funcionales | Personalizado<br/> Pruebas de IU | Cliente<br/> Validaciones | Manual<br/> Pruebas |
 |:------------------------------|:---------------------:|:-----------------------------------:|:-----------------------------------:|:-------------------------:|:-------------------:|
-| **Canalización de producción** | Sí<br/>Bloqueo<br/> | Sí<br/>Bloqueo<br/>Tiempo de espera de 60 m | Sí<br/>Bloqueo<br/>Tiempo de espera de 60 m | No | No |
-| **Canalización que no es de producción** | Sí<br/>Bloqueo<br/> | Opt-in<br/>Bloqueo<br/>Tiempo de espera de 60 m | Opt-in<br/>Bloqueo<br/>Tiempo de espera de 60 m | No | No |
-| **Validación interna de Adobe** | Sí<br/>Bloqueo<br/> | Sí<br/>Bloqueo<br/>Tiempo de espera de 60 m | Sí<br/>Bloqueo<br/>Tiempo de espera de 60 m | No | No |
+| **Canalización de producción** | Sí<br/>Bloqueo<br/> | Sí<br/>Bloqueo<br/>Tiempo de espera de 60 m | Sí<br/>Bloqueo<br/>Tiempo de espera de 30 m | No | No |
+| **Canalización que no es de producción** | Sí<br/>Bloqueo<br/> | Opt-in<br/>Bloqueo<br/>Tiempo de espera de 60 m | Opt-in<br/>Bloqueo<br/>Tiempo de espera de 30 m | No | No |
+| **Validación interna de Adobe** | Sí<br/>Bloqueo<br/> | Sí<br/>Bloqueo<br/>Tiempo de espera de 60 m | Sí<br/>Bloqueo<br/>Tiempo de espera de 30 m | No | No |
 | **CI/CD del cliente** | Sí | Sí | Sí | Sí | Sí |
 | **Desarrollador local del cliente** | Sí | Sí | Sí | Sí | Sí |
 
