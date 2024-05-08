@@ -97,7 +97,7 @@ Ahora, puede [asignar o quitar formularios de metadatos a varias carpetas](/help
 
 -->
 
-### Nuevas funciones de AEM Forms {#forms-new-features}
+### Nuevas funciones en AEM Forms {#forms-new-features}
 
 * **Editor de reglas visuales mejorado para formularios adaptables basados en componentes principales**: esta versión aporta una actualización significativa al editor de reglas visuales para formularios adaptables basados en componentes principales. Esta versión aporta una actualización significativa al editor de reglas visuales para formularios adaptables basados en componentes principales. Esta actualización se centra en la optimización de las interacciones con funciones personalizadas, lo que le permite crear formularios más sólidos y eficientes.
 
