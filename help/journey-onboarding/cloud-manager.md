@@ -3,9 +3,9 @@ title: Acceder a Cloud Manager
 description: Obtenga información sobre cómo acceder a Cloud Manager para configurar los recursos del proyecto.
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
-source-git-commit: 5c9dbaa25f0142afdae8b09dc18d1e1aaaf4c1fb
-workflow-type: ht
-source-wordcount: '1044'
+source-git-commit: 0e0337f6e14aa2f5b616ebc0a4b3c95089637369
+workflow-type: tm+mt
+source-wordcount: '1040'
 ht-degree: 100%
 
 ---
@@ -109,8 +109,6 @@ Si los programas ya existen en su organización y usted es administrador del sis
 Una vez que haya iniciado sesión correctamente en Cloud Manager, puede verificar que se le ha asignado el perfil de producto **Propietario empresarial**.
 
 1. Seleccione el perfil en la parte superior derecha de la ventana.
-
-   ![Perfil de usuario](/help/journey-onboarding/assets/setup-resources5.png)
 
 1. Para mostrar las funciones asignadas al usuario, seleccione **Funciones del usuario**.
 
