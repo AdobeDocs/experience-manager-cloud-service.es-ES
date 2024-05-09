@@ -1,53 +1,53 @@
 ---
-title: Monitorización de uso real (RUM) para Edge Delivery Services para AEM Forms as a Cloud Service
-description: La Monitorización de uso real (RUM) para Edge Delivery Services para AEM Forms as a Cloud Service implica el seguimiento y análisis continuos de las interacciones del usuario con los formularios.
+title: Monitorización de uso real (RUM) de Edge Delivery Services para AEM Forms as a Cloud Service
+description: La Monitorización de uso real (RUM) de Edge Delivery Services para AEM Forms as a Cloud Service implica el seguimiento y análisis continuos de las interacciones del usuario con los formularios.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
 source-git-commit: 6c56f753d2a32de6fe11fd47843cee5bcb8cac4e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '792'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
 
-# Monitorización de uso real (RUM) para Edge Delivery Services para AEM Forms as a Cloud Service
+# Monitorización de uso real (RUM) de Edge Delivery Services para AEM Forms as a Cloud Service
 
-La Monitorización de uso real (RUM) le permite obtener información real sobre cómo los visitantes interactúan con los sitios web de Adobe Experience Manager AEM (). Esta herramienta integrada proporciona datos valiosos para comprender el comportamiento del usuario, diagnosticar problemas de rendimiento y medir la eficacia de los experimentos de sitios web. RUM va más allá de las pruebas sintéticas al capturar las interacciones de uso real, ofreciendo una imagen más precisa del rendimiento de su sitio.
+La Monitorización de uso real (RUM) le permite obtener información real sobre cómo los visitantes interactúan con los sitios web de Adobe Experience Manager (AEM). Esta herramienta integrada proporciona datos valiosos para comprender el comportamiento del usuario, diagnosticar problemas de rendimiento y medir la eficacia de los experimentos de sitios web. RUM va más allá de las pruebas sintéticas al capturar las interacciones de uso real, lo que ofrece una imagen más precisa del rendimiento de su sitio.
 
-Sin embargo, RUM prioriza la privacidad del visitante. Utiliza técnicas de muestreo para recopilar datos de un subconjunto representativo de usuarios, lo que garantiza que nunca se capture información de identificación personal (PII). Además, RUM está diseñado teniendo en cuenta la minimización de datos y recopila solo las métricas esenciales necesarias para el análisis del rendimiento. AEM Este enfoque le permite optimizar los sitios de la al tiempo que mantiene la confianza del usuario.
+Sin embargo, RUM prioriza la privacidad del visitante. Utiliza técnicas de muestreo para recopilar datos de un subconjunto representativo de usuarios, lo que garantiza que nunca se capture información de identificación personal (PII). Además, RUM está diseñado teniendo en cuenta la minimización de datos y recopila solo las métricas esenciales necesarias para el análisis del rendimiento. Este enfoque le permite optimizar sus sitios AEM al tiempo que mantiene la confianza de los usuarios.
 
 
 ## Requisitos previos
 
-Puede ver el panel de monitorización de los Edge Delivery Services de AEM Forms as a Cloud Service accediendo a la siguiente URL:
+Puede ver el panel de monitorización de Edge Delivery Services para AEM Forms as a Cloud Service en la siguiente URL:
 
 https://data.aem.live/?ext=forms
 
-![Pantalla de inicio de sesión de RUM para Edge Delivery Services de Forms](/help/edge/assets/rum-login-screen.png)
+![Pantalla de inicio de sesión RUM para formularios de Edge Delivery Services](/help/edge/assets/rum-login-screen.png)
 
 Para iniciar sesión en el tablero de monitorización de Edge Delivery Services para AEM Forms as a Cloud Service, introduzca lo siguiente:
 
 * **URL**: la dirección URL es específica del sitio o dominio del usuario. Los usuarios tienen la opción de filtrar el sitio o dominio para ver el panel según sus necesidades.
 
-* **Clave de dominio**: el usuario genera manualmente la clave de dominio. Para obtener claves de dominio para los formularios, póngase en contacto con el representante del Adobe.
+* **Clave de dominio**: el usuario genera manualmente la clave de dominio. Para obtener claves de dominio para los formularios, póngase en contacto con el representante de Adobe.
 
-### Panel de monitorización para Edge Delivery Services de AEM Forms as a Cloud Service
+### Panel de monitorización de Edge Delivery Services para AEM Forms as a Cloud Service
 
-Después de introducir la dirección URL y las claves de dominio en la pantalla de inicio de sesión, obtiene acceso al panel de monitorización para Edge Delivery Services de AEM Forms as a Cloud Service.
+Después de introducir la URL y las claves de dominio en la pantalla de inicio de sesión, se accede al panel de monitorización de Edge Delivery Services para AEM Forms as a Cloud Service.
 
-En la siguiente ilustración se muestra el tablero de Edge Delivery Services for AEM Forms as a Cloud Service:
+En la siguiente ilustración se muestra el tablero de Edge Delivery Services para AEM Forms as a Cloud Service:
 
 ![Tablero de formularios de RUM](/help/edge/assets/rum-forms-dashboard.png)
 
-### Diferentes métricas clave del tablero de Forms {#different-metrics-rum-dashboard-forms}
+### Diferentes métricas clave del panel para formularios {#different-metrics-rum-dashboard-forms}
 
-Este tablero proporciona información clave sobre cómo los visitantes interactúan con los formularios del sitio web de Adobe Experience Manager AEM (). Al monitorizar estas métricas, puede identificar áreas que deben mejorarse y optimizar los formularios para mejorar la experiencia del usuario y las tasas de conversión:
+Este panel proporciona información clave sobre cómo los visitantes interactúan con los formularios del sitio web de Adobe Experience Manager (AEM). Al monitorizar estas métricas, puede identificar áreas que deben mejorarse y optimizar los formularios para mejorar la experiencia del usuario y las tasas de conversión:
 
-* **Vistas de formularios**: Realice un seguimiento de la cantidad total de veces que se muestran los formularios
-* **Envíos de formularios**: Rastree el número total de envíos completados
+* **Vistas de formularios**: realice un seguimiento de la cantidad total de veces que se muestran los formularios
+* **Envíos de formularios**: rastree el número total de envíos completados
 
 * **Pintura de contenido más grande**: muestra la velocidad a la que se carga la URL, indicando el tiempo necesario para que el elemento de contenido más grande sea visible en la ventanilla desde el momento en que el usuario solicita la URL. Este elemento de contenido más grande puede ser una imagen, un vídeo o un elemento de texto sustancial a nivel de bloque. Las clasificaciones de rendimiento para la velocidad de carga de la URL se clasifican de la siguiente manera:
    * **Bueno**: si el tiempo de carga es de 2,5 segundos o menos.
@@ -65,17 +65,17 @@ Este tablero proporciona información clave sobre cómo los visitantes interact�
    * **Correcto**: si la duración es superior a 200 ms pero inferior a 500 ms.
    * **Malo**: si la duración supera los 500 ms.
 
-## Perspectivas procesables
+## Información procesable
 
 Al analizar estas métricas, puede identificar oportunidades para lo siguiente:
 
-* Simplifique los formularios y reduzca el número de campos.
-* Mejore la claridad del formulario con instrucciones y etiquetas claras.
+* Simplificar los formularios y reducir el número de campos.
+* Mejorar la claridad de los formularios con instrucciones y etiquetas claras.
 * Optimizar el diseño del formulario para la capacidad de respuesta móvil.
 * Solucionar problemas técnicos que ralentizan la carga de formularios.
 
 Al centrarse en estas áreas, puede crear formularios que sean más fáciles de usar y que animen a los visitantes a completarlos, lo que a la larga conduce a tasas de conversión más altas.
 
-## Consulte también
+## Ver también
 
 {{see-more-forms-eds}}
