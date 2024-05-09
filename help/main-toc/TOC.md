@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: bf7afba2376b12b8d4f513db07c178209447e343
 workflow-type: tm+mt
 source-wordcount: '4917'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -571,7 +571,7 @@ ht-degree: 99%
       + [Ver recursos, carpetas y colecciones](/help/assets/manage-notifications-assets-view.md)
       + [Administrar informes](/help/assets/manage-reports-assets-view.md)
       + [Administrar etiquetas](/help/assets/tagging-management-assets-view.md)
-      + [AEM Publicación de recursos en y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+      + [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
    + Prácticas recomendadas{#best-practices}
       + [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md)
       + [Administración de metadatos y prácticas recomendadas](/help/assets/metadata-best-practices.md)
@@ -619,7 +619,7 @@ ht-degree: 99%
          + [Incrustar formulario adaptable basado en componentes principales en una página web externa](/help/forms/embed-adaptive-form-external-web-page.md)
       + Modelo de datos de formulario {#use-form-data-model}
          + [Conectar AEM Forms a la base de datos o fuente de datos](/help/forms/data-integration.md)
-         + [Configuración de fuentes de datos](/help/forms/configure-data-sources.md)
+         + [Configuración de las fuentes de datos](/help/forms/configure-data-sources.md)
          + [Configuración de [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Conectar el formulario adaptable a la aplicación Salesforce mediante el flujo de credenciales de cliente de OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
          + [Configuración de almacenamiento de  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
@@ -628,12 +628,12 @@ ht-degree: 99%
          + [Trabajo con el modelo de datos de formulario](/help/forms/work-with-form-data-model.md)
          + [Uso del modelo de datos de formulario](/help/forms/using-form-data-model.md)
    + Formularios adaptables {#adaptive-forms-authoring}
-      + [Crear un formulario adaptable](/help/forms/create-an-adaptive-form.md)
+      + [Creación de un formulario adaptable](/help/forms/create-an-adaptive-form.md)
       + [Crear fragmento de formulario adaptable](/help/forms/adaptive-form-fragments.md)
       + [Agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + Componentes principales {#authoring-adaptive-forms-core-components}
          + Crear un formulario adaptable {#create-an-adaptive-form-on-forms-cs}
-            + [Crear un formulario adaptable](/help/forms/creating-adaptive-form-core-components.md)
+            + [Creación de un formulario adaptable](/help/forms/creating-adaptive-form-core-components.md)
             + [Crear fragmento de formulario adaptable](/help/forms/adaptive-form-fragments-core-components.md)
             + [Creación de temáticas para un formulario adaptable: componentes principales](/help/forms/using-themes-in-core-components.md)
             + [Creación de una plantilla de formulario adaptable basado en componentes principales](/help/forms/template-editor-core-components.md)
@@ -663,7 +663,7 @@ ht-degree: 99%
             + [Revisar y corregir formularios convertidos](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=es#welcome-to-review-and-correct-editor)
          + Crear un formulario adaptable {#create-an-adaptive-form-on-forms-cs}
             + [Introducción a la creación de un formulario adaptable](/help/forms/introduction-forms-authoring.md)
-            + [Crear un formulario adaptable](/help/forms/creating-adaptive-form.md)
+            + [Creación de un formulario adaptable](/help/forms/creating-adaptive-form.md)
             + [Temáticas de referencia, plantillas y modelos de datos](/help/forms/reference-themes-templates-data-models.md)
             + [Creación de una plantilla](/help/forms/template-editor.md)
             + [Crear una temática](/help/forms/themes.md)
@@ -854,10 +854,10 @@ ht-degree: 99%
       + Funciones {#advanced-features-edge-delivery-services-forms}
          + [Usar fragmentos de formulario](/help/edge/docs/forms/form-fragments.md)
          + [Añadir secciones repetibles a un formulario](/help/edge/docs/forms/repeatable-forms.md)
-         + [Traducción del formulario](/help/edge/docs/forms/translate-forms.md)
+         + [Traducir el formulario](/help/edge/docs/forms/translate-forms.md)
          + [Utilizar reCAPTCHA para proteger los formularios](/help/edge/docs/forms/recaptacha-forms.md)
          + [Componentes personalizados](/help/edge/docs/forms/custom-components-forms.md)
-         + [Monitorización de uso real de formularios](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [Monitorizar el uso real de formularios](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
       + Referencias {#forms-references}
          + [Componentes de bloque de formulario adaptable y sus propiedades](/help/edge/docs/forms/form-components.md)
    + Recursos de Edge Delivery {#resources}
