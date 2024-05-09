@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+source-git-commit: 835aab546896195c3a2a3355b35b81f2cd385676
 workflow-type: tm+mt
-source-wordcount: '1631'
-ht-degree: 3%
+source-wordcount: '1670'
+ht-degree: 5%
 
 ---
 
@@ -25,7 +25,7 @@ El [!DNL Assets] La API HTTP permite realizar operaciones de creación, lectura,
 
 >[!NOTE]
 >
->El [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) también están disponibles.
+> Hay disponible una implementación modernizada de OpenAPI de la API de administración de fragmentos de contenido. Para obtener toda la documentación, consulte [API de administración de fragmentos de contenido](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). Se recomienda utilizar la nueva implementación de OpenAPI. El uso existente de la API HTTP de Assets para fragmentos de contenido debe migrarse a la nueva API abierta de administración de fragmentos de contenido.
 
 Para acceder a la API:
 
@@ -46,7 +46,7 @@ Para obtener más información, consulte [Compatibilidad con fragmentos de conte
 
 >[!NOTE]
 >
->El [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) también están disponibles.
+>Las [OpenAPI de fragmento de contenido y modelo de fragmento de contenidos](/help/headless/content-fragment-openapis.md) también están disponibles.
 
 ## Modelo de datos {#data-model}
 
@@ -54,7 +54,7 @@ El [!DNL Assets] La API HTTP expone dos elementos principales, carpetas y recurs
 
 >[!NOTE]
 >
->El [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) también están disponibles.
+>Las [OpenAPI de fragmento de contenido y modelo de fragmento de contenidos](/help/headless/content-fragment-openapis.md) también están disponibles.
 
 ### Carpetas {#folders}
 
@@ -77,7 +77,7 @@ Las carpetas son como los directorios, como en los sistemas de archivos tradicio
 * `parent`: vínculo a la carpeta principal.
 * `thumbnail`: (Opcional) vínculo a una imagen en miniatura de la carpeta.
 
-### Assets {#assets}
+### Recursos {#assets}
 
 Entrada [!DNL Experience Manager] un recurso contiene los siguientes elementos:
 
@@ -90,7 +90,7 @@ Para obtener información sobre los elementos de los fragmentos de contenido, co
 
 >[!NOTE]
 >
->El [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) también están disponibles.
+>Las [OpenAPI de fragmento de contenido y modelo de fragmento de contenidos](/help/headless/content-fragment-openapis.md) también están disponibles.
 
 Entrada [!DNL Experience Manager] una carpeta tiene los siguientes componentes:
 
