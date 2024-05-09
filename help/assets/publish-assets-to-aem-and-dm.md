@@ -2,7 +2,7 @@
 title: AEM Publicación rápida en y Dynamic Media
 description: AEM La publicación rápida en la vista de recursos permite publicar recursos en y en medios dinámicos de forma simultánea o independiente. Puede seleccionar recursos y carpetas, y elegir publicar en Dynamic Media AEM o en la carpeta de carpetas de la aplicación de la.
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
-source-git-commit: 0891d58e10e8be746c0be5f55d554174567fcd64
+source-git-commit: a9a94e948ad7d038f28a046c950f2158871ddbb3
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
@@ -40,7 +40,7 @@ AEM Puede publicar recursos en Dynamic Media y al cargarlos en una carpeta. Las 
 Para publicar recursos durante la carga en una carpeta con el modo de publicación de Dynamic Media establecido en **Tras la activación**:
 
 1. Clic **Añadir recursos** > **Examinar** > **Examinar archivos** para desplazarse a la carpeta adecuada y cargar recursos. El **Opciones de publicación** muestra la sección **Modo de publicación DM** as **Tras la activación**.
-   ![Cargar imagen tras la activación](/help/assets/assets/upload-upon-activation.png)
+   ![Cargar imagen tras la activación](/help/assets/assets/upload-upon-activation1.png)
 2. Seleccionar **AEM Publicación en y Dynamic Media** y haga clic en **Cargar**. AEM Los recursos se publican en Dynamic Media y en el mismo tiempo para su publicación en el sitio web de la comunidad de recursos Para ver el estado de publicación actualizado de estos recursos, consulte [Comprobar estado de publicación](#check-publish-status).
 
 ### Modo de publicación de Dynamic Media establecido en Inmediato {#dynamic-media-publish-mode-set-to-immediate}
