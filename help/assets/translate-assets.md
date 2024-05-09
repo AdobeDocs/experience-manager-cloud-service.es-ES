@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2603'
+source-wordcount: '2615'
 ht-degree: 17%
 
 ---
@@ -168,7 +168,7 @@ Si utiliza esta opción, el conjunto de recursos se agrega a un proyecto de trad
 1. Seleccionar **[!UICONTROL Actualizar copias de idioma]** en la parte inferior.
 1. Desde el **[!UICONTROL Proyecto]** lista, elija **[!UICONTROL Añadir a un proyecto de traducción existente]**.
 1. Desde el **[!UICONTROL Proyecto de traducción existente]** , seleccione un proyecto para añadir el recurso para su traducción.
-1. Seleccionar **[!UICONTROL Inicio]**.
+1. Seleccione **[!UICONTROL Inicio]**.
 1. Consulte los pasos 9-14 de [Añadir a un proyecto de traducción existente](#add-to-existing-translation-project) para completar el resto del procedimiento.
 
 ### Creación de copias de idioma temporales {#creating-temporary-language-copies}
@@ -294,3 +294,4 @@ Si desea aplicar un conector personalizado para los servicios de traducción que
 * [Facetas de búsqueda](search-facets.md)
 * [Administrar colecciones](manage-collections.md)
 * [Importación masiva de metadatos](metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

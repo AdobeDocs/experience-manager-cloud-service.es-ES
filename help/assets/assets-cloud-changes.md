@@ -4,10 +4,10 @@ description: Cambios importantes en [!DNL Adobe Experience Manager Assets] in [!
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 11%
+source-wordcount: '998'
+ht-degree: 9%
 
 ---
 
@@ -29,7 +29,7 @@ La carga de recursos está optimizada para lograr una mayor eficacia al permitir
    * Carga de recursos [con acceso binario directo](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access).
    * Para obtener más información técnica, consulte [protocolo de carga binaria directa y API](/help/assets/developer-reference-material-apis.md#upload-binary).
    * Para ver una comparación de los métodos de API disponibles para operaciones básicas de CRUD, consulte [API y operaciones de recursos](/help/assets/developer-reference-material-apis.md#use-cases-and-apis).
-* El flujo de trabajo predeterminado de **[!UICONTROL actualización de recursos DAM]** en versiones anteriores de ya no está disponible. [!DNL Experience Manager] En su lugar, los microservicios de recursos proporcionan un servicio escalable y fácilmente disponible que cubre la mayoría del procesamiento de recursos predeterminado (representaciones, extracción de metadatos y extracción de texto para la indexación).
+* Flujo de trabajo predeterminado **[!UICONTROL Actualización de recursos DAM]** en versiones anteriores de [!DNL Experience Manager] ya no está disponible. En su lugar, los microservicios de recursos proporcionan un servicio escalable y fácilmente disponible que cubre la mayoría del procesamiento de recursos predeterminado (representaciones, extracción de metadatos y extracción de texto para la indexación).
    * Consulte [configuración y uso de microservicios de recursos](/help/assets/asset-microservices-configure-and-use.md)
    * Para tener pasos de flujo de trabajo personalizados en el procesamiento, [flujos de trabajo posteriores al procesamiento](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) se puede utilizar.
 
@@ -81,6 +81,7 @@ Para realizar una validación completa del código y el proceso, incluida la ing
 * [Facetas de búsqueda](search-facets.md)
 * [Administrar colecciones](manage-collections.md)
 * [Importación masiva de metadatos](metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

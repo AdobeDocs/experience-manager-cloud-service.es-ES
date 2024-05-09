@@ -4,10 +4,10 @@ description: Administración de documentos de PDF en [!DNL Adobe Experience Mana
 feature: Asset Management
 role: User,Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 4%
+source-wordcount: '838'
+ht-degree: 5%
 
 ---
 
@@ -44,7 +44,7 @@ El visualizador nativo de PDF de Doc Cloud tiene los siguientes componentes en A
 
 ## Compatibilidad con la vista previa de varias páginas y anotaciones para el recurso de PDF {#multi-page}
 
-Adobe Experience Manager Assets permite previsualizar un documento del PDF que consta de varias páginas. Para obtener una vista previa de varias páginas de un documento de PDF, siga estos pasos:
+Adobe Experience Manager Assets permite obtener una vista previa del documento del PDF que consta de varias páginas. Para obtener una vista previa de varias páginas de un documento de PDF, siga estos pasos:
 
 1. Siga los pasos para [AEM carga de recursos en la](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
 1. Examine el documento del PDF que desea cargar y previsualizar.
@@ -79,7 +79,7 @@ A continuación, se muestran las anotaciones que se pueden aplicar en un documen
             <th> Descripción </th>
         </tr>
         <tr>
-           <td> <img src="/help/assets/assets/Comment.svg"> Comentar </td>
+           <td> <img src="/help/assets/assets/Comment.svg"> Comentario </td>
             <td> Seleccione Comentario para expresar una observación. </td>
         </tr>
         <tr>
@@ -147,3 +147,4 @@ Para la vista previa de varias páginas de otros formatos de documento admitidos
 * [Facetas de búsqueda](search-facets.md)
 * [Administrar colecciones](manage-collections.md)
 * [Importación masiva de metadatos](metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

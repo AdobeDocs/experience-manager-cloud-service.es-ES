@@ -2,9 +2,9 @@
 title: Etiquetas de color para imágenes
 description: Adobe Experience Manager Assets permite distinguir entre colores en una imagen y aplicarlos como etiquetas automáticamente. A continuación, puede utilizar estas etiquetas para buscar y filtrar imágenes.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1244'
 ht-degree: 7%
 
 ---
@@ -23,7 +23,7 @@ La siguiente figura ilustra la secuencia de tareas que se realizan para configur
 
 ## Formatos de archivo compatibles {#supported-file-formats-color-tags}
 
-| Formato de archivo | Extensión | Tipo MIME | Input Colorspace | Tamaño máximo de archivo de origen admitido | Resolución de tamaño de archivo máxima admitida |
+| Formato del archivo | Extensión | Tipo MIME | Input Colorspace | Tamaño máximo de archivo de origen admitido | Resolución de tamaño de archivo máxima admitida |
 |---|---|---|---|---|---|
 | JPEG | .jpg y .jpeg | image/jpeg | sRGB | 15 GB | 20000 × 20000 píxeles |
 | PNG | .png | image/png | sRGB | 15 GB | 20000 × 20000 píxeles |
@@ -196,3 +196,4 @@ Para buscar imágenes basadas en colores:
 * [Facetas de búsqueda](search-facets.md)
 * [Administrar colecciones](manage-collections.md)
 * [Importación masiva de metadatos](metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

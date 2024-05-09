@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 3%
+source-wordcount: '772'
+ht-degree: 5%
 
 ---
 
@@ -24,31 +24,31 @@ Los usuarios pueden crear perfiles de procesamiento para automatizar las siguien
 
 * **Montar en vertical automáticamente**: utiliza inteligencia artificial para analizar el contenido de la imagen y corregir la perspectiva sesgada en las imágenes. Por ejemplo, para crear horizontes de nivel.
 
-   ![tono automático](/help/assets/assets/content-automation-autotone.png)
+  ![tono automático](/help/assets/assets/content-automation-autotone.png)
 
-   *Imagen: el tono automático y el enderezado automático pueden ayudar a mejorar las imágenes distorsionadas.*
+  *Imagen: el tono automático y el enderezado automático pueden ayudar a mejorar las imágenes distorsionadas.*
 
 * **Ajustes preestablecidos de Lightroom**: aplica un aspecto definido por el usuario a las imágenes para lograr un aspecto coherente mediante ajustes preestablecidos personalizados.
 
-   ![Ajuste preestablecido de Lightroom](/help/assets/assets/content-automation-lrpresets.png)
+  ![Ajuste preestablecido de Lightroom](/help/assets/assets/content-automation-lrpresets.png)
 
-   *Imagen: ajuste preestablecido de Adobe Lightroom para mejorar la calidad de la imagen de forma coherente en muchas imágenes.*
+  *Imagen: ajuste preestablecido de Adobe Lightroom para mejorar la calidad de la imagen de forma coherente en muchas imágenes.*
 
 * **Recorte de imágenes**: utiliza inteligencia artificial para crear selección alrededor de objetos salientes y eliminar fondo con un solo comando.
 
-   ![Quitar el fondo y cortar una imagen de una foto](/help/assets/assets/content-automation-backgroundremove.png)
+  ![Quitar el fondo y cortar una imagen de una foto](/help/assets/assets/content-automation-backgroundremove.png)
 
 * **Máscara de imagen**: utiliza inteligencia artificial para crear máscaras alrededor de objetos salientes con un solo comando.
 
-   ![Enmascarar una imagen mediante IA](/help/assets/assets/content-automation-mask.png)
+  ![Enmascarar una imagen mediante IA](/help/assets/assets/content-automation-mask.png)
 
 * **Acciones de Photoshop**: aplica una serie de [!DNL Adobe Photoshop] las tareas a un archivo o a un lote de archivos.
 
-   ![Acciones de Photoshop](/help/assets/assets/content-automation-psactions.png)
+  ![Acciones de Photoshop](/help/assets/assets/content-automation-psactions.png)
 
 * **Sustitución de objetos inteligentes**: realiza una personalización a escala permitiéndole intercambiar imágenes al tiempo que conserva todos los efectos y ajustes aplicados dentro de un archivo PSD.
 
-   ![Reemplace los objetos inteligentemente](/help/assets/assets/content-automation-objectreplace.png)
+  ![Reemplace los objetos inteligentemente](/help/assets/assets/content-automation-objectreplace.png)
 
 ## AEM Habilitar la automatización de contenido para programa as a Cloud Service {#enable-content-automation}
 
@@ -104,21 +104,21 @@ Para procesar los recursos existentes, seleccione los recursos y seleccione **[!
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)
 * [Facetas de búsqueda](search-facets.md)
 * [Administrar colecciones](manage-collections.md)
 * [Importación masiva de metadatos](metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [Configuración y uso de microservicios de recursos a través de perfiles de procesamiento](/help/assets/asset-microservices-configure-and-use.md).
->* [Integrar  [!DNL Experience Manager]  con [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
+>* [Integrar [!DNL Experience Manager] con [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
 >* [Ingesta y procesamiento de recursos con microservicios de recursos: información general](/help/assets/asset-microservices-overview.md).
-

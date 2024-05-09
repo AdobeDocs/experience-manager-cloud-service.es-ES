@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Asset Compute Microservices
 role: Architect
 exl-id: 0440c6a0-97c7-440e-a96e-629825d34a73
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 23%
+source-wordcount: '125'
+ht-degree: 36%
 
 ---
 
@@ -21,21 +21,21 @@ Para ver la descripción general de la arquitectura de los microservicios de rec
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)
 * [Facetas de búsqueda](search-facets.md)
 * [Administrar colecciones](manage-collections.md)
 * [Importación masiva de metadatos](metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [Información general y novedades](/help/assets/overview.md)
 >* [Formatos de archivo y tipos MIME admitidos](file-format-support.md)
 >* [Información general sobre los microservicios de recursos](asset-microservices-overview.md)
-

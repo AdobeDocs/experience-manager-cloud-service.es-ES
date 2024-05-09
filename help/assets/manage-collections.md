@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collections,Asset Management
 role: User
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2391'
-ht-degree: 18%
+source-wordcount: '2398'
+ht-degree: 19%
 
 ---
 
@@ -114,7 +114,7 @@ Las colecciones inteligentes se crean guardando una búsqueda para que pueda mod
 1. En la lista **[!UICONTROL Búsquedas guardadas]**, seleccione la colección inteligente que desee modificar. El panel Buscar aparecen los filtros configurados para la búsqueda guardada.
 1. Desde el **[!UICONTROL Archivos y carpetas]** , seleccione **[!UICONTROL Archivos]**.
 1. Modifique uno o más filtros según sea necesario. Seleccionar **[!UICONTROL Editar colección inteligente]**. También puede editar el nombre de la colección inteligente.
-1. Seleccionar **[!UICONTROL Guardar]**. El **[!UICONTROL Editar colección inteligente]** aparece el cuadro de diálogo.
+1. Seleccione **[!UICONTROL Guardar]**. El **[!UICONTROL Editar colección inteligente]** aparece el cuadro de diálogo.
 1. Seleccionar **[!UICONTROL Sobrescribir]** para reemplazar la colección inteligente original por la colección editada. Como alternativa, seleccione **[!UICONTROL Guardar como]** para guardar la colección editada por separado.
 1. En el cuadro de diálogo de confirmación, seleccione **[!UICONTROL Guardar]** para completar el proceso.
 
@@ -272,6 +272,7 @@ Puede ejecutar un flujo de trabajo para los recursos de una colección. Si la co
 * [Administración de metadatos](manage-metadata.md)
 * [Facetas de búsqueda](search-facets.md)
 * [Importación masiva de metadatos](metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

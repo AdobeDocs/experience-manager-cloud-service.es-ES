@@ -4,10 +4,10 @@ description: Añadir sus recursos digitales a [!DNL Adobe Experience Manager] as
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '3137'
-ht-degree: 5%
+source-wordcount: '3144'
+ht-degree: 9%
 
 ---
 
@@ -197,7 +197,7 @@ Para configurar la herramienta Importación masiva, siga estos pasos:
 
 1. Especifique una ruta para definir una ubicación en DAM en la que se importarán los recursos mediante **[!UICONTROL Carpeta de destino de recursos]**. Por ejemplo, `/content/dam/imported_assets`.
 
-1. (Opcional) Especifique el archivo de metadatos que desea importar, proporcionado en formato CSV, en la variable **[!UICONTROL Archivo de metadatos]** field. Especifique el archivo CSV en la ubicación del blob de origen y consulte la ruta al configurar la herramienta Importación masiva. El formato de archivo CSV al que se hace referencia en este campo es el mismo que el formato de archivo CSV cuando se selecciona [Importación y exportación de metadatos de recursos de forma masiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html). Si selecciona la opción **Eliminar archivo de origen tras importar** opción, filtre los archivos CSV mediante la variable **Excluir** o **Incluir tipo MIME** o **Filtrar por ruta/archivo** campos. Puede utilizar una expresión regular para filtrar los archivos CSV en estos campos.
+1. (Opcional) Especifique el archivo de metadatos que desea importar, proporcionado en formato CSV, en el campo **[!UICONTROL Archivo de metadatos]**. Especifique el archivo CSV en la ubicación del blob de origen y consulte la ruta al configurar la herramienta Importación masiva. El formato de archivo CSV al que se hace referencia en este campo es el mismo que el formato de archivo CSV cuando se selecciona [Importación y exportación de metadatos de recursos de forma masiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html). Si selecciona la opción **Eliminar archivo de origen tras importar** opción, filtre los archivos CSV mediante la variable **Excluir** o **Incluir tipo MIME** o **Filtrar por ruta/archivo** campos. Puede utilizar una expresión regular para filtrar los archivos CSV en estos campos.
 
 1. Haga clic en **[!UICONTROL Guardar]** para guardar la configuración.
 
@@ -225,11 +225,11 @@ Seleccione la configuración y haga clic en **[!UICONTROL Ejecución en seco]** 
 
 ![Resultado del simulacro](assets/dry-assets-result.png)
 
-### Administración de nombres de archivo durante la importación masiva {#filename-handling-bulkimport}
+### Uso de nombres de archivo durante la importación masiva {#filename-handling-bulkimport}
 
-Al importar recursos o carpetas de forma masiva, [!DNL Experience Manager Assets] importa toda la estructura de lo que existe en el origen de importación. [!DNL Experience Manager] sigue las reglas integradas para los caracteres especiales en los nombres de recursos y carpetas, por lo que estos nombres de archivo necesitan saneamiento. Tanto para el nombre de la carpeta como para el nombre del recurso, el título definido por el usuario permanece sin cambios y se almacena en `jcr:title`.
+Al importar recursos o carpetas de forma masiva, [!DNL Experience Manager Assets] importa toda la estructura existente en el origen de importación. [!DNL Experience Manager] sigue las reglas integradas en cuanto a los caracteres especiales en los nombres de recursos y carpetas, por lo que estos nombres de archivo necesitan limpiarse. Tanto para el nombre de la carpeta como para el nombre del recurso, el título definido por el usuario permanece sin cambios y se almacena en `jcr:title`.
 
-Durante la importación masiva, [!DNL Experience Manager] busque las carpetas existentes para evitar volver a importar los recursos y las carpetas, y compruebe también las reglas de saneamiento aplicadas en la carpeta principal en la que se realiza la importación. Si las reglas de saneamiento se aplican en la carpeta principal, las mismas reglas se aplican al origen de importación. Para la nueva importación, se aplican las siguientes reglas de saneamiento para administrar los nombres de archivo de los recursos y las carpetas.
+Durante la importación masiva, [!DNL Experience Manager] busque las carpetas existentes para evitar volver a importar los recursos y las carpetas, y compruebe también las reglas de limpieza aplicadas en la carpeta principal en la que se realiza la importación. Si las reglas de limpieza se aplican en la carpeta principal, se aplicarán las mismas reglas al origen de importación. Para la nueva importación, se aplican las siguientes reglas de limpieza para administrar los nombres de archivo de los recursos y las carpetas.
 
 **Nombres no permitidos en la importación masiva**
 
@@ -412,6 +412,7 @@ Los detalles técnicos de las API de carga y del protocolo, y los vínculos al S
 * [Facetas de búsqueda](search-facets.md)
 * [Administrar colecciones](manage-collections.md)
 * [Importación masiva de metadatos](metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

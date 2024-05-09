@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,DRM
 role: User,Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1367'
-ht-degree: 4%
+source-wordcount: '1368'
+ht-degree: 6%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=en) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
 Los recursos digitales suelen estar asociados a una licencia que especifica los términos y la duración de uso. Uso del [!DNL Experience Manager] puede administrar de forma eficaz la información de caducidad de recursos y la información de licencias.
@@ -54,7 +54,7 @@ Es posible modificar la fecha de caducidad de un recurso publicado a una fecha a
 
 Además, si un error impide que el programador detecte los recursos caducados en el ciclo actual, vuelve a examinarlos en el ciclo siguiente y detecta su estado caducado.
 
-Para habilitar la variable [!DNL Assets] consola para mostrar los recursos compuestos de referencia junto con los subrecursos caducados, configure **[!UICONTROL Notificación de caducidad de Adobe CQ DAM]** flujo de trabajo en [!DNL Experience Manager]. El planificador basado en tiempo programa un trabajo para comprobar en un momento específico si un recurso tiene recursos secundarios caducados. Una vez finalizado el trabajo, los recursos que tienen recursos secundarios caducados y los recursos a los que se hace referencia se muestran como caducados en los resultados de búsqueda.
+Para habilitar la variable [!DNL Assets] consola para mostrar los recursos compuestos de referencia junto con los subrecursos caducados, configure **[!UICONTROL Notificación de caducidad de Adobe CQ DAM]** flujo de trabajo en [!DNL Experience Manager]. El programador basado en tiempo programa una tarea para comprobar en un momento específico si un recurso tiene recursos secundarios caducados. Una vez finalizado el trabajo, los recursos que tienen recursos secundarios caducados y los recursos a los que se hace referencia se muestran como caducados en los resultados de búsqueda.
 
 1. Acceda a la [!DNL Cloud Manager] Repositorio de Git asociado con su entorno.
 1. Confirme un archivo llamado `com.day.cq.dam.core.impl.ExpiryNotificationJobImpl.cfg.json` en el repositorio con el siguiente contenido.
@@ -158,14 +158,15 @@ Un activo se considera protegido si se cumple cualquiera de estas condiciones:
 **Consulte también**
 
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de Recursos](mac-api-assets.md)
-* [Formatos de archivo compatibles con Assets](file-format-support.md)
+* [API HTTP de recursos](mac-api-assets.md)
+* [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Buscar recursos](search-assets.md)
-* [Recursos conectados](use-assets-across-connected-assets-instances.md)
-* [Informes de Asset](asset-reports.md)
+* [Recursos de red](use-assets-across-connected-assets-instances.md)
+* [Informes de recurso](asset-reports.md)
 * [Esquemas de metadatos](metadata-schemas.md)
 * [Descarga de recursos](download-assets-from-aem.md)
 * [Administración de metadatos](manage-metadata.md)
 * [Facetas de búsqueda](search-facets.md)
 * [Administrar colecciones](manage-collections.md)
 * [Importación masiva de metadatos](metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

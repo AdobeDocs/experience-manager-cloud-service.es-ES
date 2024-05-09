@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 320967ee4cd5a92639b60b00750343222b307aef
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 33%
+source-wordcount: '1422'
+ht-degree: 34%
 
 ---
 
@@ -36,7 +36,7 @@ La siguiente leyenda describe el nivel de compatibilidad con cada formato.
 
 ## formatos de Adobe {#adobe-formats}
 
-| Formato de archivo | Generación de miniaturas | Extracción de texto completo | Extracción de metadatos | Anchura/Altura |
+| Formato del archivo | Generación de miniaturas | Extracción de texto completo | Extracción de metadatos | Anchura/Altura |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
 | IA | ✓ | - | ✓ | ✓ |
 | COLLAGE | - | - | ✓ | - |
@@ -55,7 +55,7 @@ La siguiente leyenda describe el nivel de compatibilidad con cada formato.
 
 ## Formatos de imagen {#image-formats}
 
-| Formato de archivo | Generación de miniaturas | Extracción de metadatos | Anchura/Altura | Recortar |
+| Formato del archivo | Generación de miniaturas | Extracción de metadatos | Anchura/Altura | Recortar |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
 | BMP | ✓ | - | ✓ | ✓ |
 | EPS | ✓ | ✓ | - | - |
@@ -89,7 +89,7 @@ Consulte también [Uso de recursos 3D en Dynamic Media](/help/assets/dynamic-med
 
 ## [!DNL Camera Raw] formatos {#camera-raw-formats}
 
-| Formato de archivo | Generación de miniaturas | Extracción de metadatos | Anchura/Altura |
+| Formato del archivo | Generación de miniaturas | Extracción de metadatos | Anchura/Altura |
 | ----------- | -------------------- | ------------------- | ------------ |
 | 3FR | ✓ | ✓ | ✓ |
 | ARW | ✓ | ✓ | ✓ |
@@ -123,7 +123,7 @@ Consulte también [Uso de recursos 3D en Dynamic Media](/help/assets/dynamic-med
 
 Los formatos de documento admitidos para las funciones de administración de recursos son los siguientes.
 
-| Formato de archivo | Generación de miniaturas | Extracción de texto completo | Anchura/Altura | Administración de metadatos | [Recursos conectados](use-assets-across-connected-assets-instances.md) | Vista previa completa del documento |
+| Formato del archivo | Generación de miniaturas | Extracción de texto completo | Anchura/Altura | Administración de metadatos | [Recursos conectados](use-assets-across-connected-assets-instances.md) | Vista previa completa del documento |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |--------|
 | DOC | - | - | - | ✓ | ✓ | ✓ |
 | DOCX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -147,7 +147,7 @@ Los formatos de documento admitidos para las funciones de administración de rec
 
 ## Formatos de vídeo {#video-formats}
 
-| Formato de archivo | Generación de miniaturas | Extracción de metadatos | Anchura/Altura | Vista previa |
+| Formato del archivo | Generación de miniaturas | Extracción de metadatos | Anchura/Altura | Vista previa |
 | ----------- | -------------------- | ------------------- | ------------ | ------- |
 | 3G2 | - | ✓ | - | - |
 | 3GP | - | ✓ | - | - |
@@ -258,7 +258,7 @@ Los siguientes subtipos de formatos de archivo de imagen rasterizada son *no* ad
 
 Consulte también [Formatos 3D admitidos](/help/assets/file-format-support.md#support-3d-formats)
 
-| Extensión de archivo 3D | Formato de archivo | Tipo MIME | Notas |
+| Extensión de archivo 3D | Formato del archivo | Tipo MIME | Notas |
 |---|---|---|---|
 | GLB | Transmisión binaria GL | model/gltf-binary | Incluye los materiales y las texturas como un solo recurso. |
 | OBJ | Archivo de objeto 3D WaveFront | application/x-tgif | |
@@ -278,6 +278,7 @@ Consulte también [Formatos 3D admitidos](/help/assets/file-format-support.md#su
 * [Facetas de búsqueda](search-facets.md)
 * [Administrar colecciones](manage-collections.md)
 * [Importación masiva de metadatos](metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

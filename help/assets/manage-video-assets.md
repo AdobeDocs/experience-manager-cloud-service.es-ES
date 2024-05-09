@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '4976'
+source-wordcount: '4983'
 ht-degree: 6%
 
 ---
@@ -439,7 +439,7 @@ Para vincular URL de YouTube a la aplicación web:
    Recuerde que las direcciones URL de YouTube solo están disponibles para copiar *después* usted tiene primero *publicado* los recursos de vídeo a YouTube.
 
 1. En la barra de herramientas, seleccione **[!UICONTROL Propiedades]**.
-1. Seleccione el **[!UICONTROL Avanzadas]** pestaña.
+1. Seleccione la pestaña **[!UICONTROL Avanzadas]**.
 1. En el encabezado Publicación de YouTube, en la Lista de URL de YouTube, seleccione y copie el texto de la URL en el explorador web para previsualizar el recurso o añadirlo a la página de contenido web.
 
 ### Cancele la publicación de vídeos para poder eliminarlos de YouTube {#unpublishing-videos-to-remove-them-from-youtube}
@@ -646,6 +646,7 @@ Puede añadir anotaciones a recursos de vídeo. Al realizar anotaciones en víde
 * [Facetas de búsqueda](search-facets.md)
 * [Administrar colecciones](manage-collections.md)
 * [Importación masiva de metadatos](metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

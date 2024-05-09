@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '4270'
+source-wordcount: '4277'
 ht-degree: 10%
 
 ---
@@ -106,7 +106,7 @@ Para obtener una vista previa de un recurso, siga estos pasos.
    >
    > Para crear etiquetas, debe tener permiso de escritura en `/content/cq:tags/default` ruta en el repositorio CRX.
 
-1. Seleccionar **[!UICONTROL Guardar y cerrar]**.
+1. Seleccione **[!UICONTROL Guardar y cerrar]**.
 
 1. Vaya a la interfaz de usuario de Assets. Las propiedades de metadatos editadas, incluidos el título, la descripción y las etiquetas, se muestran en la tarjeta de recursos en la vista de tarjeta y en las columnas relevantes de la vista de lista.
 
@@ -675,3 +675,4 @@ Para obtener más información, vea cómo [examinar recursos DAM con la aplicaci
 * [Facetas de búsqueda](search-facets.md)
 * [Administrar colecciones](manage-collections.md)
 * [Importación masiva de metadatos](metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

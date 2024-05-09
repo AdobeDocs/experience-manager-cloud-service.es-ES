@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 0ccca6194cfcd6e834b2e63337230f83cba96dcd
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1647'
 ht-degree: 3%
 
 ---
@@ -53,7 +53,7 @@ Necesita privilegios de administrador para [configure las opciones para comparti
 
 Para ver las opciones relacionadas con la configuración de correo electrónico, visite [Documentación del servicio de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=es)
 
-![Configurar servicio de correo electrónico](/help/assets/assets/config-email-service.png)
+![Configurar el servicio de correo electrónico](/help/assets/assets/config-email-service.png)
 
 ## Uso compartido de recursos como vínculo {#sharelink}
 
@@ -299,3 +299,4 @@ Consulte [cómo configurar [!DNL Assets] para utilizarlo con [!DNL Adobe Asset L
 * [Facetas de búsqueda](search-facets.md)
 * [Administrar colecciones](manage-collections.md)
 * [Importación masiva de metadatos](metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

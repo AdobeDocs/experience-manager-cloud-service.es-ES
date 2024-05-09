@@ -4,9 +4,9 @@ description: En este artículo se describe cómo crear, modificar y utilizar fac
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2498'
+source-wordcount: '2505'
 ht-degree: 19%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 19%
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html) |
 | AEM as a Cloud Service | Este artículo |
 
-Una implementación empresarial de Adobe Experience Manager Assets tiene la capacidad de almacenar muchos recursos. A veces, encontrar el recurso adecuado puede resultar arduo y requerir tiempo si solo utiliza las capacidades de búsqueda genéricas de Experience Manager.
+Una implementación de Adobe Experience Manager Assets en toda la empresa tiene la capacidad de almacenar muchos recursos. A veces, encontrar el recurso adecuado puede resultar arduo y requerir tiempo si solo utiliza las capacidades de búsqueda genéricas de Experience Manager.
 
 Utilice las facetas de búsqueda en el panel Filtros para añadir más granularidad a la experiencia de búsqueda y hacer que la funcionalidad de búsqueda sea más eficiente y versátil. Las facetas de búsqueda añaden varias dimensiones (predicados) que permiten realizar búsquedas más complejas. El panel Filtros incluye algunas facetas estándar. También puede agregar facetas de búsqueda personalizadas.
 
@@ -354,6 +354,7 @@ Si no se le ha asignado una función de administrador, aquí encontrará una lis
 * [Administración de metadatos](manage-metadata.md)
 * [Administrar colecciones](manage-collections.md)
 * [Importación masiva de metadatos](metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

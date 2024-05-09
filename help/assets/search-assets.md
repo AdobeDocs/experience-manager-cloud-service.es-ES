@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '5496'
-ht-degree: 5%
+source-wordcount: '5503'
+ht-degree: 6%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
 
 [!DNL Adobe Experience Manager Assets] proporciona métodos de búsqueda de recursos sólidos que le ayudan a lograr una mayor velocidad de contenido. Sus equipos pueden reducir el tiempo de salida al mercado con una experiencia de búsqueda de recursos inteligente y fluida mediante la funcionalidad y los métodos personalizados predeterminados. La capacidad de búsqueda de recursos es fundamental para el uso de un sistema de administración de recursos digitales, ya sea para su uso posterior por parte de los creativos, para una administración sólida de los recursos por parte de los usuarios y los especialistas en marketing, o para la administración por parte de los administradores de DAM. Búsquedas simples, avanzadas y personalizadas que puede realizar mediante [!DNL Assets] La interfaz de usuario de u otras aplicaciones y superficies ayudan a cumplir estos casos de uso.
@@ -154,7 +154,7 @@ Puede utilizarlo para su ventaja al aumentar la clasificación de algunos recurs
 
 ## Configurar el tamaño del lote de recursos para mostrar los resultados de búsqueda {#configure-asset-batch-size}
 
-Los administradores ahora pueden configurar el tamaño del lote de recursos que se muestra al realizar una búsqueda. Los resultados de la búsqueda de recursos se muestran en múltiplos del número de tamaño de lote configurado al desplazarse hacia abajo para cargar los resultados. Puede seleccionar entre los tamaños de lote disponibles de 200, 500 y 1000 recursos. Configurar un número de tamaño de lote menor resulta en tiempos de respuesta de búsqueda más rápidos.
+Los administradores ahora pueden configurar el tamaño del lote de recursos que se muestra al realizar una búsqueda. Los resultados de la búsqueda de recursos se muestran en múltiplos del número de tamaños de lotes configurados al desplazarse hacia abajo para cargar los resultados. Puede seleccionar entre los tamaños de lote disponibles de 200, 500 y 1000 recursos. Configurar un número de tamaño de lote menor resulta en tiempos de respuesta de búsqueda más rápidos.
 
 Por ejemplo, si establece el límite de recuento de resultados en un tamaño de lote de 200 recursos, Experience Manager Assets muestra un tamaño de lote de 200 recursos en los resultados de búsqueda cuando comienza a realizar la búsqueda. Cuando se desplaza hacia abajo para navegar por los resultados de búsqueda, se muestra el siguiente lote de 200 recursos. El proceso continúa hasta que se muestren todos los recursos que coincidan con la consulta de búsqueda.
 
@@ -164,7 +164,7 @@ Para configurar el tamaño del lote de recursos:
 
 1. Seleccione el límite de recuento de resultados y haga clic en **[!UICONTROL Guardar]**.
 
-   ![Configuración de tamaño de lote de recursos](/help/release-notes/assets/assets-batch-size-configuration.png)
+   ![Configuración de tamaño del lote de recursos](/help/release-notes/assets/assets-batch-size-configuration.png)
 
 ## Búsqueda avanzada {#scope}
 
@@ -551,6 +551,7 @@ Vaya a la ubicación de la carpeta para los recursos mostrados en los resultados
 * [Facetas de búsqueda](search-facets.md)
 * [Administrar colecciones](manage-collections.md)
 * [Importación masiva de metadatos](metadata-import-export.md)
+* [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
