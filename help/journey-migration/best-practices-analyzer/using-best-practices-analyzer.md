@@ -2,10 +2,10 @@
 title: Uso del analizador de prácticas recomendadas
 description: Aprenda a utilizar el Analizador de prácticas recomendadas para comprender la preparación de la actualización.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 077be031da7a610810d398b163676a98fc036f30
+source-git-commit: 0c7e38d1973458ef3212e816ced867423bd62e86
 workflow-type: tm+mt
-source-wordcount: '2661'
-ht-degree: 39%
+source-wordcount: '2686'
+ht-degree: 38%
 
 ---
 
@@ -61,6 +61,11 @@ AEM La instancia de origen puede estar ejecutándose detrás de un cortafuegos d
 ## Visualización del informe del Analizador de prácticas recomendadas {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 y posterior {#aem-later-versions}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_bpa_upload_setup"
+>title="Cargar automáticamente el informe del Analizador de prácticas recomendadas en CAM"
+>abstract="Proporcione la clave de carga de BPA para cargar automáticamente el informe de BPA generado en Cloud Acceleration Manager (CAM)."
 
 Siga esta sección para obtener información sobre la vista del informe Analizador de prácticas recomendadas:
 
