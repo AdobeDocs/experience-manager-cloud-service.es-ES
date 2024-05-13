@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bf7afba2376b12b8d4f513db07c178209447e343
+source-git-commit: 3eb2a7ce311f9e738a95ea5fcf6876f4df1fa648
 workflow-type: tm+mt
-source-wordcount: '4917'
-ht-degree: 100%
+source-wordcount: '4930'
+ht-degree: 99%
 
 ---
 
@@ -605,6 +605,9 @@ ht-degree: 100%
       + [Migrar desde [!DNL AEM 6.5 Forms] o anterior a [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Grupos y permisos](/help/forms/forms-groups-privileges-tasks.md)
       + [Importación, exportación y organización de formularios adaptables, formularios PDF y otros recursos](/help/forms/import-export-forms-templates.md)
+   + Introducción {#getting-started-forms}
+      + [Caso de uso y entorno de desarrollo de configuración](/help/forms/create-adaptive-form-tutorial-getting-started.md)
+      + [Creación del formulario de solicitud de préstamo](/help/forms/create-adaptive-form-tutorial.md)
    + Integrar {#integrate}
       + Servicios {#services}
          + [Integración de AEM Forms as a Cloud Service con Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
@@ -1004,7 +1007,7 @@ ht-degree: 100%
          + [Administración de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + Nombres de dominio personalizados {#custom-domain-names}
          + [Introducción](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-         + [Adición de un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+         + [Añadir un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [Adición de un registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
          + [Comprobación del estado del nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
          + [Configuración de DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
