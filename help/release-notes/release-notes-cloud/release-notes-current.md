@@ -3,10 +3,10 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 1a01a18008316c4d02553316020ec0c2a3f3cd57
+source-git-commit: c8b78ec6f1c7ff43950778fdd429a0aefff9856e
 workflow-type: tm+mt
-source-wordcount: '2655'
-ht-degree: 73%
+source-wordcount: '2696'
+ht-degree: 100%
 
 ---
 
@@ -87,6 +87,13 @@ Experience Manager Assets ahora ofrece una experiencia del usuario simplificada 
 
 Ahora, puede [asignar o quitar formularios de metadatos a varias carpetas](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder).
 
+### Nuevas funciones de la vista Recursos {#admin-view-new-features}
+
+**Configuración de vínculos compartidos**
+
+Una nueva experiencia de usuario mejorada para [crear vínculos compartidos](/help/assets/share-assets.md) junto con un nuevo conjunto de configuraciones que permiten a los administradores personalizar el comportamiento predeterminado de esta función para los usuarios.
+
+![Configuración de vínculos compartidos](/help/assets/assets/config-email-service.png)
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -212,36 +219,36 @@ Al depurar código en un [Entorno de desarrollo rápido (RDE)](/help/implementin
 Póngase en contacto con **<aemcs-rde-support@adobe.com>** para probarlo y proporcionar comentarios.
 
 
-## [!DNL Experience Manager] Guías {#guides}
+## Guías de [!DNL Experience Manager] {#guides}
 
 
-### Capacidad para traducir contenido a varios idiomas utilizando grupos de idiomas preconfigurados
+### Posibilidad de traducir contenido a varios idiomas utilizando grupos de idiomas preconfigurados
 
-Las guías del Experience Manager ahora le permiten crear grupos de idiomas y traducir fácilmente su contenido a varios idiomas. Esta función le ayuda a organizar y administrar las traducciones según las necesidades de su organización.
+Ahora, Experience Manager Guides permiten crear grupos de idiomas y traducir fácilmente su contenido a varios idiomas. Esta función le ayuda a organizar y administrar las traducciones según las necesidades de su organización.
 
-Por ejemplo, si necesita traducir el contenido para algunos países de Europa, puede crear un grupo de idiomas para idiomas europeos como inglés (EN), francés (FR), alemán (DE), español (ES) e italiano (IT).
+Por ejemplo, si tiene que traducir el contenido para algunos países de Europa, puede crear un grupo de idiomas para idiomas europeos como el inglés (EN), francés (FR), alemán (DE), español (ES) e italiano (IT).
 
 ![panel de traducción](../assets/guides/translation-languages-2404.png)
 
-*Seleccione los grupos de idiomas o idiomas que desee traducir los documentos.*
+*Seleccione los grupos de idiomas o idiomas a los que desee traducir los documentos.*
 
 >[!NOTE]
 >
->Si falta la carpeta de destino de un idioma o el idioma de destino es el mismo que el origen, aparece atenuado y muestra un signo de advertencia.
+>Si falta la carpeta de destino de un idioma o el idioma de destino es el mismo que el de origen, aparecerá atenuado y mostrará un signo de advertencia.
 
-Como administrador, puede crear grupos de idiomas y configurarlos en varios perfiles de carpeta. Como autor, puede ver los grupos de idiomas configurados en el perfil de carpeta.
+Como administrador, puede crear grupos de idiomas y configurarlos en varios perfiles de carpeta. Como autor, puede ver los grupos de idiomas configurados en el perfil de la carpeta.
 
 
 En general, la creación de grupos de idiomas mejora la eficacia y la productividad de los proyectos de traducción y, en última instancia, mejora el proceso de localización en varios idiomas.
 
 
-Obtenga información sobre cómo [traducir documentos desde el editor web](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor)
+Obtenga información sobre cómo [traducir documentos desde el editor web](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor)
 
-### Experiencia modificada para buscar y filtrar archivos en la vista de repositorio
+### Experiencia renovada para buscar y filtrar archivos en la vista de repositorio
 
-Ahora tiene una experiencia mejorada al filtrar archivos. La funcionalidad renovada para filtrar archivos proporciona una forma mejorada de buscar y navegar por los archivos sin esfuerzo.
+Ahora tiene una mejor experiencia al filtrar archivos. La funcionalidad renovada para filtrar archivos ofrece una mejor forma de buscar y navegar por los archivos sin esfuerzo.
 
-![buscar archivos en la vista del repositorio](../assets/guides/repository-filter-search-2404.png)
+![búsqueda de archivos en la vista del repositorio](../assets/guides/repository-filter-search-2404.png)
 
 *Busque los archivos que contienen el texto`general purpose.`*
 
@@ -249,41 +256,41 @@ Disfrute de ventajas como un acceso más rápido a los archivos relevantes y una
 
 ![filtro de búsqueda rápida ](../assets/guides/repository-filter-search-quick.png)
 
-*Utilice los filtros rápidos para buscar ficheros DITA y no DITA.*
+*Utilice los filtros rápidos para buscar archivos DITA y no DITA.*
 
-Obtenga más información acerca de **Filtrar búsqueda** función en la [Panel izquierdo](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS) sección.
+Obtenga más información sobre la función **Filtrar búsqueda** en la sección [Panel izquierdo](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS).
 
 ### Mejoras en los conectores de fuentes de datos
 
 Se han realizado las siguientes mejoras en los conectores de fuente de datos para la versión 2024.4.0:
 
-#### Conectarse a las fuentes de datos de los paneles de desarrollo de Salsify, Akeneo y Microsoft Azure (ADO)
+#### Conexión a las fuentes de datos de Salsify, Akeneo y Microsoft Azure DevOps Boards (ADO)
 
-Además de los conectores predeterminados existentes, las guías del Experience Manager también proporcionan conectores para fuentes de datos de Salsify, Akeneo y Microsoft Azure DevOps Boards (ADO). Como administrador, puede descargar e instalar estos conectores. A continuación, configure los conectores instalados.
+Además de los conectores predeterminados existentes, las guías de Experience Manager también proporcionan conectores para fuentes de datos de Salsify, Akeneo y Microsoft Azure DevOps Boards (ADO). Como administrador, puede descargar e instalar estos conectores. A continuación, configure los conectores instalados.
 
-#### Copiar y pegar la consulta de muestra para crear un fragmento de contenido o un tema
+#### Copiar y pegar la consulta de muestra para crear un fragmento de código de contenido o un tema
 
-Puede copiar y pegar fácilmente una consulta de datos de ejemplo en el generador para crear un fragmento de contenido o un tema. Con esta función, no es necesario recordar la sintaxis ni crear una consulta manualmente. En lugar de escribir manualmente la consulta, puede copiar y pegar una consulta de ejemplo, editarla y utilizarla para recuperar los datos según sus necesidades.
+Puede copiar y pegar fácilmente una consulta de datos de muestra en el generador para crear un fragmento de código de contenido o un tema. Con esta función, no es necesario recordar la sintaxis ni crear una consulta manualmente. En lugar de escribir manualmente la consulta, puede copiar y pegar una consulta de muestra, editarla y utilizarla para recuperar los datos según sus necesidades.
 
-![cuadro de diálogo insertar fragmento de contenido](../assets/guides/insert-content-snippet.png)
+![cuadro de diálogo para insertar fragmento de código de contenido](../assets/guides/insert-content-snippet.png)
 
-*Copie y edite una consulta de ejemplo para crear el fragmento de contenido.*
+*Copie y edite una consulta de muestra para crear el fragmento de código de contenido.*
 
 #### Conexión a archivos de datos JSON mediante un conector de archivo
 
 
-Ahora, como administrador, puede configurar un conector de archivo JSON para utilizar archivos de datos JSON como fuente de datos. Utilice el conector para importar los archivos JSON del equipo o de Adobe Experience Manager Assets. A continuación, como autor, puede crear fragmentos de contenido o temas mediante los generadores.
+Ahora, como administrador, puede configurar un conector de archivo JSON para utilizar archivos de datos JSON como fuente de datos. Utilice el conector para importar los archivos JSON del equipo o de Adobe Experience Manager Assets. A continuación, como autor, puede crear fragmentos de código de contenido o temas mediante los generadores.
 
-Esta función le ayuda a utilizar los datos almacenados en sus archivos JSON y a reutilizarlos en varios fragmentos. El contenido también se actualiza dinámicamente cada vez que se actualizan los archivos JSON.
+Esta función le ayuda a utilizar los datos almacenados en sus archivos JSON y a reutilizarlos en varios fragmentos de código. El contenido también se actualiza dinámicamente cada vez que se actualizan los archivos JSON.
 
-#### Configuración de varias URL de recursos para un conector para crear fragmentos de contenido o temas
+#### Configuración de varias URL de recursos para que un conector cree fragmentos de código de contenido o temas
 
-Como administrador, puede configurar varias URL de recursos para algunos conectores, como Cliente REST genérico, Salsify, Akeneo y Tableros de DevOps de Microsoft Azure (ADO).
-A continuación, como autor, conéctese con las fuentes de datos para crear fragmentos de contenido o temas mediante los generadores. Esta función es práctica, ya que no tiene que crear una fuente de datos para cada URL. Ayuda a recuperar rápidamente datos de cualquiera de los recursos de una fuente de datos concreta en un solo fragmento de contenido o tema. Vea más detalles sobre los conectores de fuentes de datos y cómo [configuración de un conector de origen de datos desde la interfaz de usuario](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools). Obtenga información sobre cómo [uso de datos de la fuente de datos](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet).
+Como administrador, puede configurar varias URL de recursos para algunos conectores, como Cliente REST genérico, Salsify, Akeneo y Microsoft Azure DevOps Boards (ADO).
+A continuación, como autor, conéctese con las fuentes de datos para crear fragmentos de código de contenido o temas mediante los generadores. Esta función es práctica, ya que no tiene que crear una fuente de datos para cada URL. Ayuda a recuperar rápidamente datos de cualquiera de los recursos de una fuente de datos concreta en un solo fragmento de código de contenido o tema. Vea más detalles sobre los conectores de fuentes de datos y cómo [configurar un conector de origen de datos desde la interfaz de usuario](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools). Obtenga información sobre cómo [utilizar datos de la fuente de datos](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet).
 
-Para obtener más información sobre las nuevas funciones y mejoras, consulte [Novedades de la versión 2024.04.0](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
+Para obtener más información sobre las nuevas funciones y mejoras, consulte [Novedades de la versión 2024.04.0](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
 
-Para ver la lista de problemas corregidos en esta versión, consulte [Se han corregido problemas en la versión 2024.4.0](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0).
+Para ver la lista de problemas corregidos en esta versión, consulte [Problemas solucionados en la versión 2024.4.0](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0).
 
 ## Cloud Manager {#cloud-manager}
 
