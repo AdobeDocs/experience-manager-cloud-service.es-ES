@@ -2,11 +2,12 @@
 title: Uso de imágenes inteligentes con proporción de píxeles de dispositivo del lado del cliente
 description: Aprenda a utilizar la proporción de píxeles de dispositivo del lado del cliente con imágenes inteligentes en Adobe Experience Manager as a Cloud Service con Dynamic Media.
 contentOwner: Rick Brough
+feature: Device Pixel Ratio,Smart Imaging
 role: Admin,User
 exl-id: 556710c7-133c-487a-8cd9-009a5912e94c
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---
@@ -73,4 +74,3 @@ Los siguientes archivos JavaScript de la descarga se proporcionan solo como refe
 >[!MORELIKETHIS]
 >
 >* [Imágenes inteligentes](/help/assets/dynamic-media/imaging-faq.md)
-

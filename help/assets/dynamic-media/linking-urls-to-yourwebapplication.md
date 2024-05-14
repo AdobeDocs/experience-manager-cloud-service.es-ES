@@ -2,12 +2,13 @@
 title: Vinculación de URL en la aplicación web
 description: Obtenga información sobre cómo vincular direcciones URL a su aplicación web en Dynamic Media.
 contentOwner: Rick Brough
+feature: Publishing,Upload,Viewer Presets,Image Presets,Video
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 2009e549eadd97d4d2bfcccd728ece17ecfeede5
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '1276'
-ht-degree: 6%
+source-wordcount: '1281'
+ht-degree: 4%
 
 ---
 
@@ -63,19 +64,19 @@ Existen varias formas de obtener una cadena URL. Sin embargo, los pasos siguient
 
    * Si seleccionó una imagen, en el menú desplegable, seleccione **[!UICONTROL Representaciones]**.
 
-      En el **[!UICONTROL Dinámico]** encabezado, seleccione un nombre de ajuste preestablecido para ver su representación en el marco derecho. Si es necesario, desplácese por la lista Representaciones para ver el encabezado Dinámico.
+     En el **[!UICONTROL Dinámico]** encabezado, seleccione un nombre de ajuste preestablecido para ver su representación en el marco derecho. Si es necesario, desplácese por la lista Representaciones para ver el encabezado Dinámico.
 
-      En la parte inferior del carril izquierdo, seleccione **[!UICONTROL URL]**.
+     En la parte inferior del carril izquierdo, seleccione **[!UICONTROL URL]**.
 
-      ![chlimage_1-270](assets/chlimage_1-270.png)
+     ![chlimage_1-270](assets/chlimage_1-270.png)
 
    * Si seleccionó un conjunto de giros, un conjunto de imágenes, un conjunto de carrusel o un vídeo, en el menú desplegable, seleccione **[!UICONTROL Espectadores]**.
 
-      En el carril izquierdo, seleccione un nombre de ajuste preestablecido de visualizador. Se abre una vista previa del conjunto o vídeo en una página independiente.
+     En el carril izquierdo, seleccione un nombre de ajuste preestablecido de visualizador. Se abre una vista previa del conjunto o vídeo en una página independiente.
 
-      En el carril izquierdo, en la parte inferior, seleccione **[!UICONTROL URL]**.
+     En el carril izquierdo, en la parte inferior, seleccione **[!UICONTROL URL]**.
 
-      ![chlimage_1-271](assets/chlimage_1-271.png)
+     ![chlimage_1-271](assets/chlimage_1-271.png)
 
 1. Para obtener una vista previa del recurso o agregarlo a la página de contenido web, seleccione y copie el texto en el explorador web.
 
@@ -109,16 +110,16 @@ Dynamic Media admite el envío de recursos estáticos, que son otros recursos m�
 
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
-         Por ejemplo, `https://aem.com/is/content/adobe/image.gif`.
+        Por ejemplo, `https://aem.com/is/content/adobe/image.gif`.
+
    * Seleccionar **[!UICONTROL Recurso]** > **[!UICONTROL Representaciones dinámicas]**, luego seleccione una representación dinámica del recurso estático y copie la URL.
 
-      Cambiar la dirección URL copiada para utilizar `is/content` en la ruta en lugar de en `is/image/`.
-
+     Cambiar la dirección URL copiada para utilizar `is/content` en la ruta en lugar de en `is/image/`.
 
 ## Obtener una URL de vídeo para una representación de vídeo publicada {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. En Experience Manager, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Implementación]** > **[!UICONTROL Nube]** > **[!UICONTROL Cloud Services]**.
-1. En el **[!UICONTROL Cloud Services]** página, desplácese hacia abajo hasta la **[!UICONTROL Cloud Services de Dynamic Media]** encabezado, luego seleccione **[!UICONTROL Mostrar configuraciones]**.
+1. En Experience Manager, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Implementación]** > **[!UICONTROL Nube]** > **[!UICONTROL Cloud Service]**.
+1. En el **[!UICONTROL Cloud Service]** página, desplácese hacia abajo hasta la **[!UICONTROL Cloud Service de Dynamic Media]** encabezado, luego seleccione **[!UICONTROL Mostrar configuraciones]**.
 1. En **[!UICONTROL Configuraciones disponibles]**, seleccione el nombre de la configuración que desee.
 
 1. En el **[!UICONTROL Configuración de nube de Dynamic Media]** página, debajo de **[!UICONTROL URL del servicio de vídeo]**, copie la ruta de URL completa. Necesita la ruta de URL copiada más adelante en los pasos.
@@ -133,7 +134,7 @@ Dynamic Media admite el envío de recursos estáticos, que son otros recursos m�
 
    Por ejemplo, si el ID de registro era `87654321|MyCompany`, el nombre del cliente sería `MyCompany`.
 
-1. Cerca de la esquina superior izquierda de la página, seleccione **[!UICONTROL Cloud Services]**, luego seleccione el icono Experience Manager y vaya a **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. Cerca de la esquina superior izquierda de la página, seleccione **[!UICONTROL Cloud Service]**, luego seleccione el icono Experience Manager y vaya a **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. Copie toda la ruta de representación de vídeo desde el JCR (repositorio de contenido Java™).
 
    Por ejemplo, la ruta de representación del vídeo podría ser similar a la siguiente:
@@ -154,10 +155,10 @@ Dynamic Media admite el envío de recursos estáticos, que son otros recursos m�
 
 ## Obtener una URL de vídeo para flujo de velocidad de bits adaptable (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. En Experience Manager, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Implementación]** > **[!UICONTROL Nube]** > **[!UICONTROL Cloud Services]**.
-1. En el **[!UICONTROL Cloud Services]** página, desplácese hacia abajo hasta la **[!UICONTROL Cloud Services de Dynamic Media]** encabezado, luego seleccione **[!UICONTROL Mostrar configuraciones]**.
+1. En Experience Manager, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Implementación]** > **[!UICONTROL Nube]** > **[!UICONTROL Cloud Service]**.
+1. En el **[!UICONTROL Cloud Service]** página, desplácese hacia abajo hasta la **[!UICONTROL Cloud Service de Dynamic Media]** encabezado, luego seleccione **[!UICONTROL Mostrar configuraciones]**.
 1. En **[!UICONTROL Configuraciones disponibles]**, seleccione el nombre de la configuración que desee.
-1. En el **[!UICONTROL Configuración de Cloud Services de Dynamic Media]** , haga lo siguiente:
+1. En el **[!UICONTROL Configuración de Cloud Service de Dynamic Media]** , haga lo siguiente:
 
    * En **[!UICONTROL URL del servicio de vídeo]**, copie toda la ruta URL. Necesita la ruta de URL copiada más adelante en estos pasos. Por ejemplo, la ruta URL podría aparecer de forma similar a la siguiente:
 
@@ -167,8 +168,7 @@ Dynamic Media admite el envío de recursos estáticos, que son otros recursos m�
 
    * En **[!UICONTROL ID de registro]**, copie el nombre del cliente que se encuentra en la última parte del ID. Necesitará el nombre de cliente que ha copiado más adelante.
 
-      Por ejemplo, si el ID de registro era `87654321|demoCo`, el nombre de cliente que copie sería `demoCo`.
-
+     Por ejemplo, si el ID de registro era `87654321|demoCo`, el nombre de cliente que copie sería `demoCo`.
 
 1. Según el protocolo de entrega de vídeo que utilice, copie el selector de protocolo correspondiente. Necesita el selector de protocolo copiado más adelante en estos pasos.
 
