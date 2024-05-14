@@ -4,7 +4,7 @@ description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: c8b78ec6f1c7ff43950778fdd429a0aefff9856e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2696'
 ht-degree: 100%
 
@@ -87,7 +87,7 @@ Experience Manager Assets ahora ofrece una experiencia del usuario simplificada 
 
 Ahora, puede [asignar o quitar formularios de metadatos a varias carpetas](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder).
 
-### Nuevas funciones de la vista Recursos {#admin-view-new-features}
+### Nuevas funciones de la vista Administrador {#admin-view-new-features}
 
 **Configuración de vínculos compartidos**
 
