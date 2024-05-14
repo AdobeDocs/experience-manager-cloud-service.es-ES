@@ -4,9 +4,9 @@ description: Descubra cómo funciona la publicación de contenido con Edge Deliv
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
 source-git-commit: c85a82161a7594588290793c89ecbe1f0f60a56d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '294'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ El flujo de información durante la publicación es el siguiente. Una vez que el
 
 >[!NOTE]
 >
->Se permiten hasta un máximo de 5000 rutas publicadas desde la interfaz de usuario de creación o por flujos de trabajo al día. No se admiten integraciones que creen cargas de trabajo de publicación masiva. Si su proyecto requiere una capacidad mayor, proponga una [VIP Programa de](https://www.aem.live/vip/intake).
+>Se permiten hasta un máximo de 5000 rutas publicadas desde la interfaz de usuario de creación o por flujos de trabajo al día. No se admiten integraciones que creen cargas de trabajo de publicación masiva. Si su proyecto requiere una capacidad mayor, propóngala para el [Programa VIP](https://www.aem.live/vip/intake).
 
 ![El flujo de información durante la publicación desde AEM hasta Edge Delivery Services](assets/publishing-flow.png)
 
