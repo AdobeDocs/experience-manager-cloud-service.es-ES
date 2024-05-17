@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 300bbbf0af0f0d896bf39f2a4e1fe4ed3d41f09a
 workflow-type: tm+mt
 source-wordcount: '4946'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
