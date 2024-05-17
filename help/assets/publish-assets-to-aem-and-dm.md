@@ -2,7 +2,7 @@
 title: AEM Publicación rápida en y Dynamic Media
 description: AEM La publicación rápida en la vista de recursos permite publicar recursos en y en medios dinámicos de forma simultánea o independiente. Puede seleccionar recursos y carpetas, y elegir publicar en Dynamic Media AEM o en la carpeta de carpetas de la aplicación de la.
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
-source-git-commit: 9ad74a9c7ecd193446506cb883fff723c806f0a7
+source-git-commit: 8d360b9d3382350c8f78247919c3e3810fe9e58b
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
