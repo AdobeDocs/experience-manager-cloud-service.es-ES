@@ -5,7 +5,7 @@ exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 source-git-commit: 0c56cfdd2c18d3bc77edafdbda3f99fbc43f12cf
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 6%
+ht-degree: 9%
 
 ---
 
@@ -31,13 +31,13 @@ Siga los pasos a continuación para ir a la fase de preparación:
    >[!NOTE]
    >Consulte Creación y administración de un proyecto en Cloud Acceleration Manager para obtener más información.
 
-## Tarjeta de análisis de prácticas recomendadas {#best-practices-analysis}
+## Uso de la tarjeta de análisis de prácticas recomendadas {#best-practices-analysis}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_bpa"
->title="Informe de análisis de prácticas recomendadas"
->abstract="AEM as a Cloud Service El informe de BPA se puede cargar en la CAM para proporcionar un análisis de él con respecto a la migración a la."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="Uso del analizador de prácticas recomendadas"
+>title="Informe del análisis de prácticas recomendadas"
+>abstract="El informe de BPA puede cargarse en CAM para proporcionar un análisis del mismo con respecto a la migración a AEM as a Cloud Service."
+>additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="Uso del analizador de prácticas recomendadas"
 
 1. Clic **Revisar** desde el **Análisis de las prácticas recomendadas** Tarjeta de.
 

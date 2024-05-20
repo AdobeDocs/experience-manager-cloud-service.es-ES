@@ -5,7 +5,7 @@ exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: 0c7e38d1973458ef3212e816ced867423bd62e86
 workflow-type: tm+mt
 source-wordcount: '2686'
-ht-degree: 38%
+ht-degree: 39%
 
 ---
 
@@ -60,11 +60,11 @@ AEM La instancia de origen puede estar ejecutándose detrás de un cortafuegos d
 
 ## Visualización del informe del Analizador de prácticas recomendadas {#viewing-report}
 
-### Adobe Experience Manager 6.3.0 y posterior {#aem-later-versions}
+### Adobe Experience Manager 6.3.0 y versiones posteriores {#aem-later-versions}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_bpa_upload_setup"
->title="Cargar automáticamente el informe del Analizador de prácticas recomendadas en CAM"
+>title="Carga automática del informe del Analizador de prácticas recomendadas en CAM"
 >abstract="Proporcione la clave de carga de BPA para cargar automáticamente el informe de BPA generado en Cloud Acceleration Manager (CAM)."
 
 Siga esta sección para obtener información sobre la vista del informe Analizador de prácticas recomendadas:
@@ -141,11 +141,11 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >In all versions, the included Pattern Detector may run independently.
 -->
 
-## Interpretación del informe de Best Practices Analyzer {#cra-report}
+## Interpretación del informe del Analizador de prácticas recomendadas {#cra-report}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_interpreting"
->title="Interpretación del informe de Best Practices Analyzer"
+>title="Interpretación del informe del Analizador de prácticas recomendadas"
 >abstract="Existen dos opciones para ver los resultados de los informes de BPA: IU y CSV. Cuando la herramienta Best Practices Analyzer se ejecuta en la instancia de AEM, el informe IU se muestra en los resultados de la ventana de las herramientas. El formato CSV del informe incluye información que se genera a partir de los resultados de Pattern Detector, ordenados y organizados por tipo de categoría, subtipo y nivel de importancia."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=es#analysis-report" text="Revisar el informe de Best Practices Analyzer"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=es" text="Explicación de las categorías del informe de Best Practices Analyzer"
