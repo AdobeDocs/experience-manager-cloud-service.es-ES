@@ -2,16 +2,27 @@
 title: Configuración de IMS que usar al integrar con Adobe Analytics
 description: Obtenga más información acerca de la configuración de IMS que usar al integrar con Adobe Analytics
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+hide: true
+hidefromtoc: true
+index: false
+source-git-commit: 43c820996af947fab2bacdec7646211f4104ae4d
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 94%
+source-wordcount: '931'
+ht-degree: 89%
 
 ---
 
 # Configuración de IMS que usar al integrar con Adobe Analytics {#ims-configuration-for-integration-with-adobe-analytics}
 
 La integración de Adobe Experience Manager as a Cloud Service (AEMaaCS) con Adobe Analytics a través de la API de Analytics Standard requiere la configuración de Adobe IMS (Identity Management System). La configuración se ejecuta con Adobe Developer Console.
+
+>[!CAUTION]
+>
+>La configuración descrita en esta página ya no se puede utilizar para integraciones nuevas o actualizadas.
+>
+>[Las integraciones de IMS ahora están configuradas con S2S OAuth](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>
+>Las configuraciones anteriores, tal como se describe en esta página, se realizaron con [Las credenciales de JWT ahora están sujetas a desaprobación en la consola de Adobe Developer](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 >[!NOTE]
 >
@@ -80,10 +91,8 @@ Abra Adobe Developer Console para crear un proyecto con Adobe Analytics que usar
 1. Se muestran todos los proyectos que tenga. Seleccione **Crear nuevo proyecto**. La ubicación y el uso dependerán de lo siguiente:
 
    * Si todavía no tiene ningún proyecto, **Crear nuevo proyecto** está en el centro, abajo.
-
      ![Creación de un nuevo proyecto: primer proyecto](assets/integration-analytics-ims-02.png)
    * Si ya tiene proyectos, estos se enumeran y **Crear nuevo proyecto** está en la parte superior derecha.
-
      ![Creación de un nuevo proyecto: varios proyectos](assets/integration-analytics-ims-03.png)
 
 
