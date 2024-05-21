@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 74254387de1761f25127180787453e681181d97a
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
-source-wordcount: '3166'
+source-wordcount: '3165'
 ht-degree: 5%
 
 ---
@@ -147,7 +147,7 @@ Puede editar la siguiente configuración de Dynamic Media seleccionando la **[!U
 
   Esta opción es la única disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos. Los ajustes preestablecidos de visualizador mostrados también son ajustes preestablecidos de visualizador relevantes de solo inteligente.
 
-* **[!UICONTROL Modificadores de visor]** - Los modificadores de visualizador toman la forma de par nombre=valor con un delimitador &amp; y le permiten cambiar visualizadores como se describe en la Guía de referencia de visualizadores. Un ejemplo de modificador de visor es `posterimage=img.jpg&caption=text.vtt,1` que establece una imagen diferente para la miniatura de vídeo y asocia un archivo de subtítulo o rótulo cerrado con el vídeo.
+* **[!UICONTROL Modificadores de visor]** - Los modificadores de visualizador toman la forma de par nombre=valor con un delimitador &amp; y le permiten cambiar visualizadores como se describe en la Guía de referencia de visualizadores. Un ejemplo de modificador de visor es `posterimage=img.jpg&caption=text.vtt,1` que establece una imagen diferente para la miniatura de vídeo y asocia un archivo de subtítulos con el vídeo.
 
 * **[!UICONTROL Ajuste preestablecido de imagen]** - Seleccione un ajuste preestablecido de imagen existente en la lista desplegable. Si el ajuste preestablecido de imagen que está buscando no está visible, debe hacerlo visible. Consulte [Administrar ajustes preestablecidos de imagen](/help/assets/dynamic-media/managing-image-presets.md). No puede seleccionar un ajuste preestablecido de visualizador si utiliza un ajuste preestablecido de imagen y a la inversa.
 
@@ -300,7 +300,7 @@ Puede editar las siguientes opciones **[!UICONTROL General]** configuración sel
 
 * **[!UICONTROL Mostrar recurso del producto]** : De forma predeterminada, este valor está seleccionado. El recurso de producto muestra una imagen del producto tal como se define en el módulo de Commerce. Desactive la marca de verificación para no mostrar el recurso del producto.
 
-* **[!UICONTROL Mostrar precio del producto]** : De forma predeterminada, este valor está seleccionado. El precio del producto muestra el precio del artículo tal como se define en el módulo Comercio. Desactive la marca de verificación para no mostrar el precio del producto.
+* **[!UICONTROL Mostrar precio del producto]** : De forma predeterminada, este valor está seleccionado. El precio del producto muestra el precio del artículo tal como se define en el módulo Commerce. Desactive la marca de verificación para no mostrar el precio del producto.
 
 * **[!UICONTROL Mostrar formulario del producto]** - De forma predeterminada, este valor no está seleccionado. El formulario de producto incluye cualquier variante de producto, como tamaño y color. Desactive la marca de verificación para no mostrar las variantes del producto.
 

@@ -2,7 +2,7 @@
 title: Edición de las propiedades de página
 description: AEM Obtenga información sobre cómo definir las propiedades necesarias para administrar una página en la administración de páginas en la.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
 source-wordcount: '2268'
 ht-degree: 90%
@@ -52,7 +52,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
    * **Título de página**: un título que se usará en la página. Normalmente se utiliza en los componentes de título. Si está vacío, se utiliza **Título**.
    * **Título de navegación**: puede especificar un título independiente para utilizarlo en la navegación (por ejemplo, si desea algo más conciso). Si está vacío, se utiliza **Título**.
-   * **Subtítulo**: un subtítulo que se usará en la página.
+   * **Rótulo** - Un subtítulo para usar en la página.
    * **Descripción**: la descripción de la página, su propósito o cualquier otro detalle que quiera añadir.
 
 * **Tiempo de activación/desactivación**

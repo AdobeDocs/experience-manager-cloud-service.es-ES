@@ -2,10 +2,10 @@
 title: Notas de la versión 2023.9.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2023.9.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 79%
+ht-degree: 74%
 
 ---
 
@@ -26,7 +26,7 @@ En la siguiente sección se describen las notas de la versión de funciones de l
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de [!DNL Adobe Experience Manager] como versión de funcionalidad actual (2023.9.0) de [!DNL Cloud Service] es el viernes, 28 de septiembre de 2023. La próxima versión con funcionalidades (2023.10.0) está planificada para el viernes, 26 de octubre de 2023.
+La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] (2023.9.0) es el viernes, 28 de septiembre de 2023. La siguiente versión con funcionalidades (2023.10.0) está planificada para el viernes, 26 de octubre de 2023.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
@@ -54,7 +54,7 @@ Ahora puede asignar un formulario de metadatos a una carpeta específica dentro 
 
 ![asignar formulario de metadatos a una carpeta](/help/release-notes/assets/assign-to-folder.png)
 
-### Nuevas funciones de la vista Recursos {#admin-view-features}
+### Nuevas funciones de la vista Administrador {#admin-view-features}
 
 * **Integrar AEM Assets as a Cloud Service con la creación basada en documentos para Edge Delivery Services**: Integre AEM Assets con la creación basada en documentos para Edge Delivery Services para permitir que los autores de sitios web [utilizar imágenes disponibles en repositorios de AEM Assets al crear documentos en Microsoft Word o Google Docs](/help/edge/using.md#integrate-assets-edge).
 
@@ -64,9 +64,9 @@ Ahora puede asignar un formulario de metadatos a una carpeta específica dentro 
 
 ### Nuevas funciones disponibles en [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
-* **Dynamic Media**: [compatibilidad con subtítulos múltiples y pistas de audio múltiple para vídeos en Dynamic Media](/help/assets/dynamic-media/video.md#about-msma): ahora se pueden añadir fácilmente varios subtítulos y varias pistas de audio a un vídeo principal. Esta posibilidad significa que los vídeos son accesibles para todo el público global. Puede personalizar un solo vídeo principal publicado para un público global en varios idiomas y seguir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
+* **Dynamic Media**: [Compatibilidad con varios subtítulos y pistas de audio para vídeos en Dynamic Media](/help/assets/dynamic-media/video.md#about-msma): ahora se pueden añadir fácilmente varios subtítulos y varias pistas de audio a un vídeo principal. Esta posibilidad significa que los vídeos son accesibles para todo el público global. Puede personalizar un solo vídeo principal publicado para un público global en varios idiomas y seguir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
 
-  ![Pestaña Subtítulos y pistas de audio en la página Propiedades de un recurso de vídeo seleccionado.](/help/release-notes/assets/msma-aem-cs.png)*Pestaña Subtítulos y pistas de audio en la página Propiedades de un recurso de vídeo seleccionado.*
+  ![Pestaña Pistas de subtítulos y audio de la página Propiedades de un recurso de vídeo seleccionado.](/help/release-notes/assets/msma-aem-cs.png)*Pestaña Pistas de subtítulos y audio de la página Propiedades de un recurso de vídeo seleccionado.*
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

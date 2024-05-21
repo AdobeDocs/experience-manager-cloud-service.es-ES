@@ -2,10 +2,10 @@
 title: Notas de la versión 2023.8.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2023.8.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
+workflow-type: tm+mt
 source-wordcount: '1691'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -90,9 +90,9 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 ### Funciones previas al lanzamiento disponibles en [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
-* **Dynamic Media**: [compatibilidad con subtítulos y pistas de audio múltiples para vídeos en Dynamic Media](/help/assets/dynamic-media/video.md#about-msma). Ahora se pueden añadir fácilmente varios subtítulos y pistas de audio a un vídeo principal. Esta capacidad significa que los vídeos son accesibles para una audiencia global. Se puede personalizar un único vídeo inicial publicado para una audiencia global en varios idiomas y cumplir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
+* **Dynamic Media**: [Compatibilidad con varios subtítulos y pistas de audio para vídeos en Dynamic Media](/help/assets/dynamic-media/video.md#about-msma): ahora se pueden añadir fácilmente varios subtítulos y varias pistas de audio a un vídeo principal. Esta posibilidad significa que los vídeos son accesibles para todo el público global. Puede personalizar un solo vídeo principal publicado para un público global en varios idiomas y seguir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
 
-  ![Pestaña Subtítulos y pistas de audio en la página Propiedades de un recurso de vídeo seleccionado.](/help/release-notes/assets/msma-aem-cs.png)*Pestaña Subtítulos y pistas de audio en la página Propiedades de un recurso de vídeo seleccionado.*
+  ![Pestaña Pistas de subtítulos y audio de la página Propiedades de un recurso de vídeo seleccionado.](/help/release-notes/assets/msma-aem-cs.png)*Pestaña Pistas de subtítulos y audio de la página Propiedades de un recurso de vídeo seleccionado.*
 
 * **Assets**: capacidad para seleccionar archivos ZIP administrados en Experience Manager y [ extracción de los archivos directamente en Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) sin descargarlos.
 
@@ -123,7 +123,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
    * **Nuevas funciones para los destinatarios del acuerdo más allá del firmante**: Adobe Acrobat Sign tiene la opción de ampliar las funciones de los destinatarios del acuerdo más allá del firmante para que coincidan mejor con sus requisitos de flujo de trabajo. Cuando se habilita, cada destinatario de un acuerdo tiene su función que se configura de forma individual, siendo la de Firmante la predeterminada.
 
-* **[Proteja sus documentos con las API de verificación de documentos (parte de las API de comunicación)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: las API de verificación de documentos permiten proteger la información confidencial mediante la firma y el cifrado de los documentos. Mediante el cifrado, el contenido de un documento se convierte a un formato ilegible, lo que garantiza que solo los usuarios autorizados puedan acceder. Esta capa reforzada de protección no solo protege los datos valiosos de posibles visitas no autorizadas, sino que también proporciona tranquilidad. Las API de firmas permiten a su organización proteger la seguridad y la privacidad de los documentos PDF de Adobe que distribuye y recibe. Este servicio utiliza firmas digitales y certificaciones para garantizar que solo los destinatarios autorizados puedan modificar los documentos.
+* **[Proteja sus documentos con las API de verificación de documentos (parte de las API de comunicación)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: las API de verificación de documentos permiten proteger la información confidencial mediante la firma y el cifrado de los documentos. Mediante el cifrado, el contenido de un documento se convierte a un formato ilegible, lo que garantiza que solo los usuarios autorizados puedan acceder. Esta capa de protección fortificada no solo protege los datos valiosos de miradas no autorizadas, sino que también proporciona tranquilidad. Las API de firma permiten a su organización proteger la seguridad y la privacidad de los documentos PDF de Adobe que distribuye y recibe. Este servicio utiliza firmas digitales y certificaciones para garantizar que solo los destinatarios autorizados puedan modificar los documentos.
 
 * **Compatibilidad con recuentos de páginas en las API de comunicación**: ahora, junto con recuperar el documento a través de las API de comunicación, también puede recibir información valiosa sobre el número de páginas que contiene el documento.
 
