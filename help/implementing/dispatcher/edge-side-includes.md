@@ -2,9 +2,9 @@
 title: Edge Side Includes
 description: La CDN administrada por Adobe ahora es compatible con Edge Side Includes (ESI), un lenguaje de marcado para el ensamblado de contenido web dinámico a nivel de Edge.
 feature: Dispatcher
-source-git-commit: 3aab5d3beb7bedf7a61bc557be349f2aa5ed8a7b
+source-git-commit: fb7c793a975fd725ef1cebcab545e057de78fa9d
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '543'
 ht-degree: 2%
 
 ---
@@ -40,7 +40,7 @@ La sintaxis de ESI es la siguiente, si una página principal `/content/page.html
 
 Consulte la [Especificación de ESI](https://www.w3.org/TR/esi-lang/) para obtener más información.
 
-### Consideraciones (#esi-syntax-considerations}
+### Consideraciones {#esi-syntax-considerations}
 
 * Se admiten las siguientes etiquetas ESI: incluir, comentar, eliminar.
 * Las etiquetas ESI se procesan en la CDN de forma secuencial en lugar de simultánea, por lo que muchas etiquetas ESI de una página con TTL bajos pueden añadir latencia a la experiencia del usuario final.
