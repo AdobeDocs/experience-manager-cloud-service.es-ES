@@ -2,7 +2,7 @@
 title: Edge Side Includes
 description: La CDN administrada por Adobe ahora es compatible con Edge Side Includes (ESI), un lenguaje de marcado para el ensamblado de contenido web dinámico a nivel de Edge.
 feature: Dispatcher
-source-git-commit: fb7c793a975fd725ef1cebcab545e057de78fa9d
+source-git-commit: 4523efa659ea2aef28e16d5df39f9793cd35d969
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 2%
@@ -44,8 +44,8 @@ Consulte la [Especificación de ESI](https://www.w3.org/TR/esi-lang/) para obten
 
 * Se admiten las siguientes etiquetas ESI: incluir, comentar, eliminar.
 * Las etiquetas ESI se procesan en la CDN de forma secuencial en lugar de simultánea, por lo que muchas etiquetas ESI de una página con TTL bajos pueden añadir latencia a la experiencia del usuario final.
-* La profundidad máxima del procesamiento ESI:include es de 5.
-* El máximo total de fragmentos de procesamiento ESI:include es de 256.
+* La profundidad máxima de ESI: incluir procesamiento es 5.
+* El máximo total de ESI: incluir fragmentos de procesamiento es de 256.
 
 
 ## Configuración de Apache {#esi-apache}
