@@ -4,9 +4,9 @@ description: Aprenda a crear contenido para los fragmentos de contenido y a crea
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 36fa580b017ab10097512165a35a9198a6d331d3
+source-git-commit: fc97a51bb20bbf0d438d0f27a2246467a480eb71
 workflow-type: tm+mt
-source-wordcount: '2670'
+source-wordcount: '2669'
 ht-degree: 7%
 
 ---
@@ -167,7 +167,7 @@ Para utilizar las variaciones generativas en el Editor de fragmentos de contenid
 
 1. Abra el Editor de fragmentos de contenido. En el encabezado encontrará el punto de entrada para Generar variaciones:
 
-![Generar variaciones en el editor de fragmentos de contenido](assets/cfm-generate-variations1.png)
+   ![Generar variaciones en el editor de fragmentos de contenido](assets/cfm-generate-variations1.png)
 
 1. La opción Generar variaciones se abre en una pestaña nueva. AEM En el carril izquierdo puede ver la instancia de nube de y el fragmento de contenido para el que está creando contenido. Seleccione la solicitud que desee utilizar o cree una nueva solicitud.
 
@@ -175,7 +175,7 @@ Para utilizar las variaciones generativas en el Editor de fragmentos de contenid
    >
    >Las plantillas de mensajes de Adobe disponibles ahora son limitadas, pero se añadirán más en futuras versiones.
 
-![Exportar para generar variaciones en el fragmento de contenido](assets/cfm-generate-variations2.png)
+   ![Exportar para generar variaciones en el fragmento de contenido](assets/cfm-generate-variations2.png)
 
 1. Genere contenido rellenando las indicaciones. El modelo de contenido del fragmento se utilizará automáticamente para generar contenido mediante GenAI.
 
@@ -183,20 +183,20 @@ Para utilizar las variaciones generativas en el Editor de fragmentos de contenid
    >
    >Actualmente solo se admiten campos de texto.
 
-![Exportar para generar variaciones en el fragmento de contenido](assets/cfm-generate-variations3.png)
+   ![Exportar para generar variaciones en el fragmento de contenido](assets/cfm-generate-variations3.png)
 
 1. Seleccione la variante que desee generar y seleccione exportar variación. Confirme el nombre de la variación del fragmento de contenido y seleccione una de las siguientes opciones:
 
    * **Exportar**: exporte la variación al fragmento de contenido y permanezca en la aplicación Generar variación.
    * **Exportar y abrir**: exporte la variación a un fragmento de contenido y abra una nueva pestaña que muestre el fragmento de contenido con la nueva variación de GenAI.
 
-   ![Exportar para generar variaciones en el fragmento de contenido](assets/cfm-generate-variations4.png)
+     ![Exportar para generar variaciones en el fragmento de contenido](assets/cfm-generate-variations4.png)
 
 1. Las variaciones generadas se muestran en el Editor de fragmentos de contenido principal.
 
    ![Ver y generar variaciones en el fragmento de contenido](assets/cfm-generate-variations5.png)
 
-Puede obtener más información sobre Generar variaciones [aquí]{generative-ai/generate-variations.md}.
+Puede obtener más información sobre Generar variaciones [aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations).
 
 ### Eliminar una variación {#delete-variation}
 
