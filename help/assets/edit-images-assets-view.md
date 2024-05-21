@@ -2,10 +2,11 @@
 title: Edición de imágenes
 description: Edite imágenes mediante opciones que se sirven de [!DNL Adobe Photoshop Express] y guarde imágenes actualizadas como versiones.
 role: User
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
+source-git-commit: 89d13f278fdaddbcf6b07a2f3edfc1fda1092aa2
 workflow-type: tm+mt
-source-wordcount: '1251'
-ht-degree: 80%
+source-wordcount: '901'
+ht-degree: 72%
 
 ---
 
@@ -117,7 +118,8 @@ Para editar imágenes con el editor de [!DNL Adobe Express] integrado, siga esto
 >* El tamaño del recurso debe ser inferior a 17 MB.
 >* Puede guardar una imagen en `PDF`, `JPEG`, o `PNG` formatos; mientras que, cuando hay varias páginas, puede guardarlas como `PDF`.
 
-## Edición de imágenes mediante [!DNL Adobe Photoshop Express] {#edit-using-photoshop-express}
+<!-- 
+## Edit images using [!DNL Adobe Photoshop Express] {#edit-using-photoshop-express}
 
 <!--
 After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later, if needed. To edit an image, [open its preview](navigate-assets-view.md#preview-assets) and click **[!UICONTROL Edit Image]** ![edit icon](assets/do-not-localize/edit-icon.png) from the rail on the right.
@@ -126,49 +128,49 @@ After editing an image, you can save the new image as a new version. Versioning 
 
 *Figure: The options to edit images are powered by [!DNL Adobe Photoshop Express].*
 -->
+<!-- 
+### Touch up images {#spot-heal-images-using-photoshop-express}
 
-### Retocar imágenes {#spot-heal-images-using-photoshop-express}
+If there are minor spots or small objects on an image, you can edit and remove the spots using the spot healing feature provided by Adobe Photoshop.
 
-Si hay manchas de menor importancia u objetos pequeños en una imagen, puede editarlos y eliminarlos con la función de corrección puntual que proporciona Adobe Photoshop.
+The brush samples the retouched area and makes the repaired pixels blend seamlessly into the rest of the image. Use a brush size that is only slightly larger than the spot you want to fix.
 
-El pincel toma muestras del área retocada y hace que los píxeles reparados se fusionen por completo con el resto de la imagen. Utilice un tamaño de pincel que sea solo ligeramente más grande que el lugar que desea corregir.
-
-![Opción de edición Corrección puntual](assets/edit-spot-healing.png)
+![Spot healing edit option](assets/edit-spot-healing.png)
 
 <!-- 
 TBD: See if we should give backlinks to PS docs for these concepts.
 For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/photoshop/using/retouching-repairing-images.html). 
 -->
+<!-- 
+### Crop and straighten images {#crop-straighten-images-using-photoshop-express}
 
-### Recortar y enderezar imágenes {#crop-straighten-images-using-photoshop-express}
+Using the crop and straighten option that you can do basic cropping, rotate image, flip it horizontally or vertically, and crop it to dimensions suitable for popular social media websites.
 
-Con la opción Recortar y enderezar puede realizar recortes básicos, girar la imagen, voltearla horizontal o verticalmente y recortarla hasta que tenga dimensiones adecuadas para los sitios web de medios sociales más populares.
+To save your edits, click **[!UICONTROL Crop Image]**. After editing, you can save the new image as a version.
 
-Para guardar las ediciones, haga clic en **[!UICONTROL Recortar imagen]**. Tras la edición, puede guardar la nueva imagen como una versión.
+![Option to crop and straighten](assets/edit-crop-straighten.png)
 
-![Opción para recortar y enderezar](assets/edit-crop-straighten.png)
+Many default options let you crop your image to the best proportions that fit various social media profiles and posts.
 
-Muchas opciones predeterminadas permiten recortar la imagen hasta que tenga las mejores proporciones que se ajusten a varios perfiles y publicaciones de medios sociales.
+### Resize image {#resize-image-using-photoshop-express}
 
-### Cambiar tamaño de imagen {#resize-image-using-photoshop-express}
+You can view the common photo sizes in centimeters or inches to know the dimensions. By default, the resizing method retains the aspect ratio. To manually override the aspect ratio, click ![](assets/do-not-localize/lock-closed-icon.png).
 
-Puede ver los tamaños de foto comunes en centímetros o pulgadas para conocer las dimensiones. De forma predeterminada, el método de cambio de tamaño conserva la relación de aspecto. Para anular manualmente la relación de aspecto, haga clic en ![](assets/do-not-localize/lock-closed-icon.png).
+Enter the dimensions and click **[!UICONTROL Resize Image]** to resize the image. Before you save the changes as a version, you can either undo all the changes done before saving by clicking [!UICONTROL Undo] or you can change the specific step in the editing process by clicking [!UICONTROL Revert].
 
-Introduzca las dimensiones y haga clic en **[!UICONTROL Cambiar tamaño de imagen]** para cambiar el tamaño de la imagen. Antes de guardar los cambios como una versión, puede deshacerlos todos haciendo clic en [!UICONTROL Deshacer] o puede cambiar el paso específico del proceso de edición haciendo clic en [!UICONTROL Revertir].
+![Options when resizing an image](assets/resize-image.png)
 
-![Opciones al cambiar el tamaño de una imagen](assets/resize-image.png)
+### Adjust image {#adjust-image-using-photoshop-express}
 
-### Ajustar imagen {#adjust-image-using-photoshop-express}
+[!DNL Assets view] lets you adjust the color, tone, contrast, and more, with just a few clicks. Click **[!UICONTROL Adjust image]** in the edit window. The following options are available in the right sidebar:
 
-[!DNL Assets view] permite ajustar el color, el tono, el contraste y mucho más con solo unos pocos clics. Haga clic en **[!UICONTROL Ajustar imagen]** en la ventana de edición. Las siguientes opciones están disponibles en la barra lateral derecha:
+* **Popular**: [!UICONTROL High Contrast & Detail], [!UICONTROL Desaturated Contrast], [!UICONTROL Aged Photo], [!UICONTROL B&W Soft], and [!UICONTROL B&W Sepia Tone].
+* **Color**: [!UICONTROL Natural], [!UICONTROL Bright], [!UICONTROL High Contrast], [!UICONTROL High Contrast & Detail], [!UICONTROL Vivid], and [!UICONTROL Matte].
+* **Creative**: [!UICONTROL Desaturated Contrast], [!UICONTROL Cool Light], [!UICONTROL Turquoise & Red], [!UICONTROL Soft Mist], [!UICONTROL Vintage Instant], [!UICONTROL Warm Contrast], [!UICONTROL Flat & Green], [!UICONTROL Red Lift Matte], [!UICONTROL Warm Shadows], and [!UICONTROL Aged Photo].
+* **B&W**: [!UICONTROL B&W Landscape], [!UICONTROL B&W High Contrast], [!UICONTROL B&W Punch], [!UICONTROL B&W Low Contrast], [!UICONTROL B&W Flat], [!UICONTROL B&W Soft], [!UICONTROL B&W Infrared], [!UICONTROL B&W Selenium Tone], [!UICONTROL B&W Sepia Tone], and [!UICONTROL B&W Split Tone].
+* **Vignetting**: [!UICONTROL None], [!UICONTROL Light], [!UICONTROL Medium], and [!UICONTROL Heavy].
 
-* **Popular**: [!UICONTROL Alto contraste y detalle], [!UICONTROL Contraste desaturado], [!UICONTROL Foto antigua], [!UICONTROL ByN suave] y [!UICONTROL Tono sepia ByN].
-* **Color**: [!UICONTROL Natural], [!UICONTROL Brillante], [!UICONTROL Alto contraste], [!UICONTROL Alto contraste y detalle], [!UICONTROL Vívido] y [!UICONTROL Mate].
-* **Creativo**: [!UICONTROL Contraste desaturado], [!UICONTROL Luz fría], [!UICONTROL Turquesa y rojo], [!UICONTROL Bruma suave], [!UICONTROL Instante vintage], [!UICONTROL Contraste cálido], [!UICONTROL Plano y verde], [!UICONTROL Alza roja mate], [!UICONTROL Sombras cálidas] y [!UICONTROL Foto antigua].
-* **ByN**: [!UICONTROL Paisaje ByN], [!UICONTROL Alto contraste ByN], [!UICONTROL Puntero ByN], [!UICONTROL Contraste bajo ByN], [!UICONTROL Plano ByN], [!UICONTROL ByN suave], [!UICONTROL ByN infrarrojo], [!UICONTROL Tono selenio ByN], [!UICONTROL Tono sepia ByN] y [!UICONTROL Tono dividido ByN].
-* **Viñetas**: [!UICONTROL Ninguna], [!UICONTROL Clara], [!UICONTROL Media] e [!UICONTROL Intensa].
-
-![Ajustar imagen al editar](assets/adjust-image.png)
+![Adjust image by editing](assets/adjust-image.png)
 
 <!--
 TBD: Insert a video of the available social media options.
@@ -180,7 +182,7 @@ TBD: Insert a video of the available social media options.
 
 * Proporcione comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar una incidencia] ![crear una incidencia de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha
 
-* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General&amp;lang=es#support)
+* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General#support)
 
 >[!MORELIKETHIS]
 >
