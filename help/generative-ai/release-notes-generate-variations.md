@@ -1,10 +1,11 @@
 ---
 title: Notas de la versión para generar variaciones
 description: AEM Notas de la versión para Generar variaciones, accesibles desde el as a Cloud Service de la aplicación y desde el Sidekick de Edge Delivery Services de la aplicación
-source-git-commit: 8067da7fb65bee6c147f306712eb312323244357
+exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
+source-git-commit: 28df3ace2933d0fc00742ced9496645fc3dc15da
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 10%
+source-wordcount: '225'
+ht-degree: 8%
 
 ---
 
@@ -17,6 +18,15 @@ AEM Esta página documenta las notas de la versión de Generate Variations, a la
 >Consulte [esta página](/help/release-notes/release-notes-cloud/release-notes-current.md) para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service.
 
 ## Liberar elementos destacados {#release-highlights}
+
+La versión actual es la 2.2.0.
+
+### 2.2.0 {#release-notes-2-2-0}
+
+* Compatibilidad implementada para fragmentos de contenido
+* Se ha introducido la capacidad de descargar resultados como archivos CSV desde Favoritos
+* Se ha mejorado la lista Recientes con agrupaciones de tiempo
+* Se ha añadido la compatibilidad con la localización para varios idiomas
 
 La versión actual es la 2.0.0.
 

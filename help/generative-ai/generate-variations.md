@@ -2,10 +2,10 @@
 title: Generar variaciones
 description: AEM Obtenga información sobre la Generación de variaciones, accesible desde el as a Cloud Service y desde el Sidekick de Edge Delivery Services de
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
+source-git-commit: 1d4c6512a3414db901d289557f9704699c8b6222
 workflow-type: tm+mt
-source-wordcount: '3257'
-ht-degree: 0%
+source-wordcount: '3262'
+ht-degree: 1%
 
 ---
 
@@ -18,6 +18,7 @@ Puede [Acceso a Generar variaciones](#access-generate-variations) de:
 
 * [dentro de Adobe Experience Manager AEM () as a Cloud Service](#access-aemaacs)
 * [el Sidekick AEM de Edge Delivery Services de la](#access-aem-sidekick)
+* [en el Editor de fragmentos de contenido](#authoring-content-fragments)
 
 >[!NOTE]
 >
@@ -291,7 +292,7 @@ La siguiente imagen muestra las ventajas de hacerlo:
 
 ![Generar variaciones: Preguntar con Título y Descripción formateados por separado](assets/generate-variations-prompt-formatted.png)
 
-## Guardar indicador {#save-prompt}
+## Guardar indicación {#save-prompt}
 
 Después de editar o crear mensajes, es posible que desee guardarlos para usarlos en el futuro; solo para su organización IMS o para usted. La solicitud guardada aparecerá como un **Plantilla de mensaje** Tarjeta de.
 
