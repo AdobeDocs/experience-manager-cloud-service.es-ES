@@ -2,9 +2,9 @@
 title: Edge Side Includes
 description: La CDN administrada por Adobe ahora es compatible con Edge Side Includes (ESI), un lenguaje de marcado para el ensamblado de contenido web dinámico a nivel de Edge.
 feature: Dispatcher
-source-git-commit: 4523efa659ea2aef28e16d5df39f9793cd35d969
+source-git-commit: 8f9173e45dd802ecced21531dfa161890e4a8af1
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '541'
 ht-degree: 2%
 
 ---
@@ -81,9 +81,8 @@ Las propiedades configuradas tienen el siguiente comportamiento:
 |-----------|--------------------------|
 | **no-gzip** | Si se establece en 1, la página HTML se transmite de Apache a la CDN sin comprimir. Esto es necesario para ESI, ya que el contenido debe enviarse a CDN sin comprimir para que CDN pueda ver y evaluar las etiquetas ESI.<br/><br/>Tanto la página principal como los fragmentos incluidos deben establecer no-gzip en 1.<br/><br/>Esta configuración anula cualquier configuración de compresión que Apache podría haber utilizado de otra manera, según la solicitud de `Accept-Encoding` valores. |
 | **x-aem-esi** | Si se establece en &quot;activado&quot;, la CDN evaluará las etiquetas ESI de la página del HTML principal.  De forma predeterminada, el encabezado no está establecido. |
-| **x-aem-compress** | Si se establece en &quot;Activado&quot;, la CDN comprimirá el contenido de la CDN al explorador. Dado que la transmisión de la página principal de Apache a CDN debe estar sin comprimir para que funcione ESI (no-gzip configurado en 1), esto puede reducir la latencia.<br/><br/>Si no se establece este encabezado, cuando la CDN recupere contenido del origen sin comprimir, también servirá contenido al cliente sin comprimir. Por lo tanto, es necesario establecer este encabezado si no-gzip se establece en 1 (requerido para ESI) y se desea servir contenido comprimido desde la CDN al explorador. |
+| **x-aem-compress** | Si se establece en &quot;Activado&quot;, la CDN comprimirá el contenido de la CDN al explorador. Dado que la transmisión de la página principal de Apache a CDN debe estar sin comprimir para que ESI funcione (`no-gzip` si se establece en 1), esto puede reducir la latencia.<br/><br/>Si no se establece este encabezado, cuando la CDN recupere contenido del origen sin comprimir, también servirá contenido al cliente sin comprimir. Por lo tanto, es necesario establecer este encabezado si `no-gzip` se establece en 1 (requerido para ESI) y se desea servir contenido comprimido desde la CDN al explorador. |
 
 ## Sling Dynamic Include {#esi-sdi}
 
 Aunque no es obligatorio, [Sling Dynamic Include](https://sling.apache.org/documentation/bundles/dynamic-includes.html) (SDI) se puede utilizar para generar fragmentos de ESI que se interpretan en la CDN.
-
