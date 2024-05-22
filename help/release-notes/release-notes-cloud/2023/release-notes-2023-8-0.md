@@ -3,9 +3,9 @@ title: Notas de la versión 2023.8.0 de la versión de  [!DNL Adobe Experience M
 description: Notas de la versión 2023.8.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
 source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1691'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -90,9 +90,9 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 ### Funciones previas al lanzamiento disponibles en [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
-* **Dynamic Media**: [Compatibilidad con varios subtítulos y pistas de audio para vídeos en Dynamic Media](/help/assets/dynamic-media/video.md#about-msma): ahora se pueden añadir fácilmente varios subtítulos y varias pistas de audio a un vídeo principal. Esta posibilidad significa que los vídeos son accesibles para todo el público global. Puede personalizar un solo vídeo principal publicado para un público global en varios idiomas y seguir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
+* **Dynamic Media**: [compatibilidad con subtítulos y pistas de audio múltiples para vídeos en Dynamic Media](/help/assets/dynamic-media/video.md#about-msma). Ahora se pueden añadir fácilmente varios subtítulos y pistas de audio a un vídeo principal. Esta posibilidad significa que los vídeos son accesibles para todo el público global. Puede personalizar un solo vídeo principal publicado para un público global en varios idiomas y seguir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
 
-  ![Pestaña Pistas de subtítulos y audio de la página Propiedades de un recurso de vídeo seleccionado.](/help/release-notes/assets/msma-aem-cs.png)*Pestaña Pistas de subtítulos y audio de la página Propiedades de un recurso de vídeo seleccionado.*
+  ![Pestaña Subtítulos y pistas de audio en la página Propiedades de un recurso de vídeo seleccionado.](/help/release-notes/assets/msma-aem-cs.png)*Pestaña Subtítulos y pistas de audio en la página Propiedades de un recurso de vídeo seleccionado.*
 
 * **Assets**: capacidad para seleccionar archivos ZIP administrados en Experience Manager y [ extracción de los archivos directamente en Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) sin descargarlos.
 
