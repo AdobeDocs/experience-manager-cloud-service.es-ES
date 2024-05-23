@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
+source-git-commit: ea2e82f02e9b5ee1ef64d186516c786d8c264c52
 workflow-type: tm+mt
-source-wordcount: '9340'
+source-wordcount: '9357'
 ht-degree: 2%
 
 ---
@@ -537,13 +537,13 @@ Algunas ventajas clave de habilitar DASH en su cuenta son las siguientes:
 
 La activación de la compatibilidad con DASH en su cuenta se realiza mediante un caso de asistencia al cliente de Adobe que crea y envía.
 
-**Acerca de la activación de la compatibilidad con subtítulos múltiples y pistas de audio múltiple en su cuenta**
+**Acerca de la activación de la compatibilidad con varios subtítulos y pistas de audio en la cuenta**
 
-Al mismo tiempo que crea un caso de Soporte de Adobe para tener DASH habilitado en su cuenta, también puede beneficiarse de tener soporte para múltiples subtítulos y pistas de audio habilitado automáticamente. Después de la activación, todos los vídeos subsiguientes que cargue se procesarán con una nueva arquitectura de back-end que incluya compatibilidad para añadir pistas de varios subtítulos y audio a sus vídeos.
+Al mismo tiempo que crea un caso de Soporte de Adobe para tener DASH habilitado en su cuenta, también puede beneficiarse de tener múltiples subtítulos y soporte de pista de audio habilitado automáticamente. Después de la activación, todos los vídeos posteriores que cargue se procesarán con una nueva arquitectura de back-end que incluya compatibilidad para agregar varios subtítulos y pistas de audio a los vídeos.
 
 >[!IMPORTANT]
 >
->Cualquier vídeo que haya cargado *antes* habilitar la compatibilidad con subtítulos múltiples y pistas de audio múltiple en su cuenta de Dynamic Media, [debe volver a procesarse](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Este paso de reprocesamiento de vídeo es necesario para que tengan disponibles las funciones de subtítulos y pistas de audio múltiple. Las direcciones URL del vídeo siguen funcionando y reproduciéndose como de costumbre, después del reprocesamiento.
+>Cualquier vídeo que haya cargado *antes* habilitar la compatibilidad con varios subtítulos y pistas de audio en su cuenta de Dynamic Media, [debe volver a procesarse](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Este paso de reprocesamiento de vídeo es necesario para que tengan disponibles múltiples subtítulos y pistas de audio. Las direcciones URL del vídeo siguen funcionando y reproduciéndose como de costumbre, después del reprocesamiento.
 
 **Para habilitar la compatibilidad con DASH, subtítulos y pistas de audio múltiple en su cuenta de Dynamic Media:**
 
@@ -562,16 +562,16 @@ Al mismo tiempo que crea un caso de Soporte de Adobe para tener DASH habilitado 
 1. Ahora puede realizar una de las siguientes acciones:
 
    * Cree su [ajuste preestablecido de visor de vídeo](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) como siempre.
-   * [Agregar subtítulos y pistas de audio múltiples](#add-msma) a su vídeo.
+   * [Añadir varios subtítulos y pistas de audio](#add-msma) a su vídeo.
 
 
-## Acerca de la compatibilidad con subtítulos y pistas de audio múltiple para vídeos en Dynamic Media{#about-msma}
+## Acerca de la compatibilidad con varios subtítulos y pistas de audio para vídeos en Dynamic Media{#about-msma}
 
-Con la capacidad de varios subtítulos y pistas de audio en Dynamic Media, puede añadir fácilmente varios subtítulos y pistas de audio a un vídeo principal. Esta posibilidad significa que los vídeos son accesibles para todo el público global. Puede personalizar un solo vídeo principal publicado para un público global en varios idiomas y seguir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
+Con la capacidad de varios subtítulos y pistas de audio de Dynamic Media, puede añadir fácilmente varios subtítulos y pistas de audio a un vídeo principal. Esta posibilidad significa que los vídeos son accesibles para todo el público global. Puede personalizar un solo vídeo principal publicado para un público global en varios idiomas y seguir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
 
 ![Pestaña Pistas de subtítulos y pistas de audio en Dynamic Media junto con una tabla que muestra los archivos de subtítulos .VTT cargados y los archivos de pistas de audio .MP3 cargados para un vídeo.](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab.png)
 
-Algunos de los casos de uso que se deben tener en cuenta para agregar subtítulos y pistas de audio múltiples al vídeo principal son los siguientes:
+Algunos de los casos de uso que se deben tener en cuenta para agregar varios subtítulos y pistas de audio al vídeo principal son los siguientes:
 
 | Tipo | Caso de uso |
 |--- |--- |
@@ -581,13 +581,13 @@ Algunos de los casos de uso que se deben tener en cuenta para agregar subtítulo
 |  | Pistas de comentarios |
 |  | Audio descriptivo |
 
-Todo [formatos de vídeo admitidos en Dynamic Media](/help/assets/file-format-support.md) y todos los visores de vídeo de Dynamic Media, excepto Dynamic Media *Video_360* visor: se admiten para su uso con subtítulos y pistas de audio múltiples.
+Todo [formatos de vídeo admitidos en Dynamic Media](/help/assets/file-format-support.md) y todos los visores de vídeo de Dynamic Media, excepto Dynamic Media *Video_360* visor: se admiten para su uso con varios subtítulos y pistas de audio.
 
 La capacidad de seguimiento de varios subtítulos y audio está disponible para su cuenta de Dynamic Media a través de una opción de función que debe habilitar (activar) la Asistencia al cliente de Adobe.
 
-### Añade varios subtítulos y pistas de audio a tu video {#add-msma}
+### Agregue varios subtítulos y pistas de audio al vídeo {#add-msma}
 
-Antes de agregar pistas de varios subtítulos y de audio al vídeo, asegúrese de que ya dispone de lo siguiente:
+Antes de agregar varias pistas de subtítulos y audio al vídeo, asegúrese de que ya dispone de lo siguiente:
 
 * Dynamic Media AEM se configura en un entorno de.
 * A [El perfil de vídeo de Dynamic Media se aplica a la carpeta donde se ingieren los vídeos](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
@@ -597,12 +597,12 @@ Los subtítulos y subtítulos añadidos son compatibles con los formatos WebVTT 
 
 >[!IMPORTANT]
 >
->Cualquier vídeo que haya cargado *antes* habilitar la compatibilidad con subtítulos múltiples y pistas de audio múltiple en su cuenta de Dynamic Media, [debe volver a procesarse](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Este paso de reprocesamiento de vídeo es necesario para que tengan disponibles las funciones de subtítulos y pistas de audio múltiple. Las direcciones URL del vídeo siguen funcionando y reproduciéndose como de costumbre, después del reprocesamiento.
+>Cualquier vídeo que haya cargado *antes* habilitar la compatibilidad con varios subtítulos y pistas de audio en su cuenta de Dynamic Media, [debe volver a procesarse](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Este paso de reprocesamiento de vídeo es necesario para que tengan disponibles múltiples subtítulos y pistas de audio. Las direcciones URL del vídeo siguen funcionando y reproduciéndose como de costumbre, después del reprocesamiento.
 
 **Para agregar varios subtítulos y pistas de audio al vídeo:**
 
 1. [Cargar el vídeo principal en una carpeta](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) que ya tiene un perfil de vídeo asignado.
-1. Desplácese hasta el recurso de vídeo cargado al que desee agregar pistas de varios subtítulos y audio.
+1. Desplácese hasta el recurso de vídeo cargado al que desee agregar varias pistas de subtítulos y audio.
 1. En el modo de selección de recursos, ya sea en la vista de lista o en la vista de tarjeta, seleccione el recurso de vídeo.
 1. En la barra de herramientas, seleccione el icono Propiedades (un círculo con una &quot;i&quot;).
    ![Recurso de vídeo seleccionado con marca de verificación sobre la imagen en miniatura de vídeo y Propiedades de vista resaltadas en la barra de herramientas.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Recurso de vídeo seleccionado en la vista de tarjeta.*
@@ -825,7 +825,7 @@ No se puede descargar la pista de audio original extraída de un archivo princip
 
 >[!IMPORTANT]
 >
->El Adobe recomienda que [habilite la capacidad de seguimiento de varios subtítulos y audio](#enable-dash) en su cuenta de Dynamic Media. Al hacerlo, puede aprovechar la arquitectura de back-end de Dynamic Media más reciente y un flujo de trabajo simplificado para agregar subtítulos, subtítulos y pistas de audio a los vídeos.
+>El Adobe recomienda que [habilitar la capacidad de múltiples subtítulos y pistas de audio](#enable-dash) en su cuenta de Dynamic Media. Al hacerlo, puede aprovechar la arquitectura de back-end de Dynamic Media más reciente y un flujo de trabajo simplificado para agregar subtítulos, subtítulos y pistas de audio a los vídeos.
 
 Puede ampliar el alcance de sus vídeos a los mercados globales añadiendo subtítulos a vídeos únicos o a conjuntos de vídeos adaptables. Al añadir subtítulos opcionales, evitará la necesidad de doblar el audio o la necesidad de utilizar hablantes nativos para volver a grabar el audio para cada idioma diferente. El vídeo se reproduce en el idioma en que se grabó. Los subtítulos en idiomas extranjeros aparecen para que las personas de diferentes idiomas puedan entender la parte de audio.
 
