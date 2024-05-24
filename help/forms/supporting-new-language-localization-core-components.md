@@ -4,10 +4,10 @@ description: Aprenda a agregar nuevas configuraciones regionales a un formulario
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 2658d844036d8ac5759d819f9d19c4528cc4df61
+source-git-commit: 9cb3b52d0cf172c16777eadbc4d78b267c3db513
 workflow-type: tm+mt
-source-wordcount: '2152'
-ht-degree: 17%
+source-wordcount: '2028'
+ht-degree: 12%
 
 ---
 
@@ -270,7 +270,7 @@ Ahora, vamos a incorporar la `clientlib-it-custom-locale` AEM en su biblioteca d
 
 
 
-### 5. Agregar compatibilidad de configuración regional para el diccionario
+### Agregar compatibilidad con la configuración regional al diccionario
 
 Este paso se aplica solo a las configuraciones regionales que no sean las siguientes comúnmente admitidas: inglés (en), alemán (de), español (es), francés (fr), italiano (it), portugués brasileño (pt-br), chino (simplificado - zh_cn), chino (tradicional - zh_tw), japonés (ja) y coreano (ko_kr).
 
@@ -350,7 +350,7 @@ Ya está todo configurado para utilizar la nueva configuración regional con su 
 
       Déclencheur de una implementación del código a través de [canalización de pila completa existente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#setup-pipeline). Esto crea e implementa automáticamente el código actualizado con la nueva compatibilidad con configuración regional.
 
-      Si aún no ha configurado una canalización, consulte la guía de [cómo configurar una canalización para AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#setup-pipeline)..
+      Si aún no ha configurado una canalización, consulte la guía de [cómo configurar una canalización para AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#setup-pipeline).
 
 
 ## Vista previa de un formulario adaptable con la configuración regional recién agregada
@@ -358,8 +358,6 @@ Ya está todo configurado para utilizar la nueva configuración regional con su 
 Estos pasos le guían a través de la previsualización de un formulario adaptable con la configuración regional recién agregada:
 
 1. Inicie sesión en la instancia as a Cloud Service de AEM Forms.
-
-1. Busque la sección &quot;Forms&quot; y vaya a &quot;Forms y documentos&quot;.
 1. Vaya a **Formularios** > **Formularios y documentos**.
 1. Seleccione un formulario adaptable y haga clic en **Agregar diccionario** y aparecerá el asistente **Agregar diccionario al proyecto de traducción**.
 1. Especifique el **Título del proyecto** y seleccione los **Idiomas de destino** en el menú desplegable del asistente **Agregar diccionario al proyecto de traducción**.
@@ -367,20 +365,6 @@ Estos pasos le guían a través de la previsualización de un formulario adaptab
 1. Vaya a **Formularios** > **Formularios y documentos**.
 1. Seleccione el formulario adaptable y elija el **Vista previa como HTML** opción.
 1. Añadir `&afAcceptLang=<locale-name>` Vaya a la URL de vista previa y pulse la tecla retorno. Reemplazar `<locale-name>` con su código de configuración regional real. El formulario adaptable se muestra en la configuración regional especificada.
-
-
-## Vista previa de un formulario adaptable con la configuración regional recién agregada {#use-added-locale-in-af}
-
-Realice los siguientes pasos para previsualizar un formulario adaptable con la configuración regional recién agregada:
-
-1. Inicie sesión en la instancia as a Cloud Service de AEM Forms.
-1. Vaya a **Formularios** > **Formularios y documentos**.
-1. Seleccione un formulario adaptable y haga clic en **Agregar diccionario** y aparecerá el asistente **Agregar diccionario al proyecto de traducción**.
-1. Especifique el **Título del proyecto** y seleccione los **Idiomas de destino** en el menú desplegable del asistente **Agregar diccionario al proyecto de traducción**.
-1. Haga clic en **Listo** y ejecute el proyecto de traducción creado.
-1. Seleccione un formulario adaptable y haga clic en **Previsualizar como HTML**.
-1. Añada `&afAcceptLang=<locale-name>` en la URL de un formulario adaptable.
-1. Actualice la página y el formulario adaptable se procesará en la configuración regional especificada.
 
 ## Prácticas recomendadas para la compatibilidad con localización nueva {#best-practices}
 
@@ -393,12 +377,11 @@ Realice los siguientes pasos para previsualizar un formulario adaptable con la c
 
    * **Traducción humana**: para flujos de trabajo de traducción humana, exporte el diccionario mediante la interfaz de usuario en `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Actualice el diccionario de los nuevos campos y cargue la versión revisada.
 
-## Más información
+
+## Ver también {#see-also}
+
+{{see-also}}
 
 * [Generar documento de registro para Formularios adaptables](/help/forms/generate-document-of-record-core-components.md)
 * [Agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
-
-## Consulte también {#see-also}
-
-{{see-also}}
