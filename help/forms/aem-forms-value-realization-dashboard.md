@@ -1,19 +1,21 @@
 ---
 title: Panel de realización de valor de AEM Forms
-description: Supervise fácilmente los envíos de formularios en las instancias de AEM Forms con nuestro intuitivo panel de seguimiento.
+description: Monitorice sin esfuerzo los envíos de formularios en las instancias de AEM Forms con nuestro intuitivo panel de seguimiento.
 feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
-source-git-commit: 613adeee805069155881b1a26b247c3dec3eb593
+source-git-commit: df4fbe8552ad61df3a8e8b44dcd1427b8f6e9240
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 22%
+source-wordcount: '477'
+ht-degree: 0%
 
 ---
 
 
 # Comprender el panel de realización de valores: Saque el máximo partido a Forms {#value-realization-dashboard}
+
+<span class="preview"> Esta función es una función beta, habilitada solo para algunos clientes seleccionados. </span>
 
 Bienvenido a su ventanilla única para comprender el valor que aportan sus formularios. Este tablero le proporciona información valiosa para optimizar los formularios, optimizar los flujos de trabajo y, en última instancia, lograr los objetivos más rápido.
 
@@ -42,26 +44,6 @@ Este tablero le permite tomar decisiones basadas en datos sobre sus formularios.
 * **Optimizar creación de formularios**: Reduzca los tiempos de creación identificando cuellos de botella. Explore las plantillas creadas previamente para optimizar los flujos de trabajo.
 * **Aumentar la reutilización de fragmentos**: Fomente la colaboración y la capacidad de detección de fragmentos reutilizables. Las bibliotecas de fragmentos bien organizadas pueden mejorar significativamente la eficacia.
 
->[!CONTEXTUALHELP]
->id="aemforms_cs_transaction_reporting_submission_graph_en"
->title="Rastreador de envíos de formularios"
->abstract="Este gráfico representa el recuento de los envíos de formularios adaptables durante períodos de tiempo específicos. El aumento de los envíos podría indicar que el formulario está ganando popularidad o que es necesario recopilar más datos de los usuarios. **Nota:** El gráfico proporciona datos específicos de la instancia actual, lo que le permite analizar rápidamente las tendencias y tomar decisiones informadas. Para enviar datos de otras instancias, acceda simplemente al panel de la instancia correspondiente."
-
->[!CONTEXTUALHELP]
->id="aemforms_cs_transaction_reporting_conversions_graph_en"
->title="Rastreador de representaciones de documentos"
->abstract="Este gráfico representa el recuento de representaciones de documentos durante períodos de tiempo específicos. **Nota:** El gráfico proporciona datos específicos de la instancia actual, lo que le permite analizar rápidamente las tendencias y tomar decisiones informadas. Para enviar datos de otras instancias, acceda simplemente al panel de la instancia correspondiente."
-
->[!CONTEXTUALHELP]
->id="aemforms_cs_transaction_reporting_newForms_graph_en"
->title="Nuevo rastreador de formularios"
->abstract="El gráfico proporciona información sobre el número de formularios recién creados durante períodos de tiempo específicos. **Nota:** El gráfico proporciona datos específicos de la instancia de autor actual de AEM Forms. Para ver datos de otras instancias, acceda al panel de la instancia correspondiente."
-
->[!CONTEXTUALHELP]
->id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
->title="Rastreador de formularios publicados"
->abstract="El gráfico proporciona información sobre el número de formularios que se han publicado correctamente durante períodos de tiempo específicos. **Nota:** El gráfico proporciona datos específicos de la instancia de publicación de AEM Forms actual. Para ver los datos de conversión de otras instancias, acceda al panel de la instancia correspondiente."
-
 
 ## Conversión de Insights en acción {#turning-insights-into-actions}
 
@@ -73,32 +55,10 @@ Este tablero le permite tomar decisiones basadas en datos sobre sus formularios.
 
 Al analizar estas tendencias, puede crear mejores formularios, ahorrar tiempo en la creación y aprovechar los componentes reutilizables. Esto se traduce en un flujo de trabajo más fluido, usuarios más felices y, en última instancia, un mayor retorno de su inversión.
 
->[!CONTEXTUALHELP]
->id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
->title="Duración media de la generación de formularios"
->abstract="El gráfico ilustra el tiempo medio necesario para crear un formulario. Cada barra del gráfico representa un formulario específico y la altura de la barra indica la duración media de creación del formulario durante ese lapso de tiempo. "
-
->[!CONTEXTUALHELP]
->id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
->title="Duración media de creación de formularios"
->abstract="El gráfico muestra el tiempo medio que se tarda en crear y publicar un formulario, medido desde el día inicial en que se abrió el formulario para editarlo. **Nota:** El gráfico proporciona datos específicos de la instancia de autor actual de AEM Forms. Para ver datos de otras instancias, acceda al panel de la instancia correspondiente."
-
-
->[!CONTEXTUALHELP]
->id="aemforms_cs_transaction_reporting_formFragments_graph_en"
->title="Rastreador de fragmentos de Forms"
->abstract="Este gráfico le ayuda a ver cuántos fragmentos de formulario está utilizando en los formularios. **Nota:** El gráfico proporciona datos específicos de la instancia de publicación de AEM Forms actual. Para ver los datos de conversión de otras instancias, acceda al panel de la instancia correspondiente."
-
->[!CONTEXTUALHELP]
->id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
->title="Rastreador de tiempo promedio de fragmentos de formulario"
->abstract="El gráfico muestra el tiempo medio que se tarda en crear un fragmento de formulario, medido desde el día inicial en que se abrió el fragmento de formulario para editarlo. **Nota:** El gráfico proporciona datos específicos de la instancia de publicación de AEM Forms actual. Para ver los datos de conversión de otras instancias, acceda al panel de la instancia correspondiente."
-
-
 ## Sugerencias adicionales {#additional-tips}
 
-* **Establecer metas:** Determine lo que desea lograr con los formularios. ¿Se trata de una mayor recopilación de datos, una generación más rápida de posibles clientes o una mejor satisfacción del cliente? Conocer sus objetivos guiará su análisis del panel.
+* **Establecer metas:** Determine lo que desea lograr con los formularios. ¿Se trata de una mayor recopilación de datos, una generación más rápida de posibles clientes o una mejor satisfacción del cliente? Conocer sus objetivos guía su análisis del panel.
 * **Revisión regular:** Programe registros regulares con el panel para rastrear el progreso e identificar nuevas áreas para mejorar.
-* **Experimentar y refinar:** No tenga miedo de experimentar con diferentes diseños de formulario y uso de fragmentos. El tablero le ayudará a medir la eficacia de sus cambios.
+* **Experimentar y refinar:** No tenga miedo de experimentar con diferentes diseños de formulario y uso de fragmentos. El panel le ayuda a medir la eficacia de los cambios.
 
-¡Recuerda, este tablero es tu aliado! Utilizándolo de forma eficaz, puede transformar sus formularios de herramientas sencillas de recopilación de datos en activos estratégicos que impulsen el éxito para usted y su empresa.
+¡Recuerda, este tablero es tu aliado! Si lo utiliza de forma eficaz, puede transformar los formularios de herramientas de recopilación de datos sencillas en recursos estratégicos que impulsen el éxito para usted y su empresa.

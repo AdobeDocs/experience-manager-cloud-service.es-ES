@@ -3,10 +3,10 @@ title: API facturables de informes de transacciones
 description: Lista de todas las API que se contabilizan como transacciones
 feature: Adaptive Forms, Foundation Components
 exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
-source-git-commit: 543e9b78b4bdc11c49f79c6baec79615c5f7f91b
+source-git-commit: df4fbe8552ad61df3a8e8b44dcd1427b8f6e9240
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 73%
+source-wordcount: '1438'
+ht-degree: 65%
 
 ---
 
@@ -34,6 +34,46 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
 
 * **Documentos representados:** Generar un documento mediante la combinación de una plantilla y datos, la firma o certificación digitalmente de un documento, el uso de las API de servicios de documentos facturables para servicios de documento o la conversión de un documento de un formato a otro se contabilizan como documentos representados.
 
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_submission_graph_en"
+>title="Rastreador de envíos de formularios"
+>abstract="Este gráfico representa el recuento de los envíos de formularios adaptables durante períodos de tiempo específicos. El aumento de los envíos podría indicar que el formulario está ganando popularidad o que es necesario recopilar más datos de los usuarios. **Nota:** El gráfico proporciona datos específicos de la instancia actual, lo que le permite analizar rápidamente las tendencias y tomar decisiones informadas. Para enviar datos de otras instancias, acceda simplemente al panel de la instancia correspondiente."
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_conversions_graph_en"
+>title="Rastreador de representación de documentos"
+>abstract="Este gráfico representa el recuento de la representación de documentos durante períodos de tiempo específicos. **Nota:** El gráfico proporciona datos específicos de la instancia actual, lo que le permite analizar rápidamente las tendencias y tomar decisiones informadas. Para enviar datos de otras instancias, acceda simplemente al panel de la instancia correspondiente."
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_newForms_graph_en"
+>title="Nuevo rastreador de formularios"
+>abstract="El gráfico proporciona información sobre el número de formularios recién creados durante períodos de tiempo específicos. **Nota:** El gráfico proporciona datos específicos de la instancia de autor actual de AEM Forms. Para ver datos de otras instancias, acceda al panel de la instancia correspondiente."
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
+>title="Rastreador de formularios publicados"
+>abstract="El gráfico proporciona información sobre el número de formularios que se han publicado correctamente durante períodos de tiempo específicos. **Nota:** El gráfico proporciona datos específicos de la instancia de publicación de AEM Forms actual. Para ver los datos de conversión de otras instancias, acceda al panel de la instancia correspondiente."
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
+>title="Duración media de la generación de formularios"
+>abstract="El gráfico ilustra el tiempo medio necesario para crear un formulario. Cada barra del gráfico representa un formulario específico y la altura de la barra indica la duración media de creación del formulario durante ese lapso de tiempo. "
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
+>title="Duración media de creación de formularios"
+>abstract="El gráfico muestra el tiempo medio que se tarda en crear y publicar un formulario, medido desde el día inicial en que se abrió el formulario para editarlo. **Nota:** El gráfico proporciona datos específicos de la instancia de autor actual de AEM Forms. Para ver datos de otras instancias, acceda al panel de la instancia correspondiente."
+
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_formFragments_graph_en"
+>title="Rastreador de fragmentos de Forms"
+>abstract="Este gráfico le ayuda a ver cuántos fragmentos de formulario está utilizando en los formularios. **Nota:** El gráfico proporciona datos específicos de la instancia de publicación de AEM Forms actual. Para ver los datos de conversión de otras instancias, acceda al panel de la instancia correspondiente."
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
+>title="Rastreador de tiempo promedio de fragmentos de formulario"
+>abstract="El gráfico muestra el tiempo medio que se tarda en crear un fragmento de formulario, medido desde el día inicial en que se abrió el fragmento de formulario para editarlo. **Nota:** El gráfico proporciona datos específicos de la instancia de publicación de AEM Forms actual. Para ver los datos de conversión de otras instancias, acceda al panel de la instancia correspondiente."
 
 
 <!-- 
