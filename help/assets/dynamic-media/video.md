@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: ea2e82f02e9b5ee1ef64d186516c786d8c264c52
+source-git-commit: 7a80f68f71475b2bdb6b5559354d7248208a3819
 workflow-type: tm+mt
 source-wordcount: '9357'
 ht-degree: 2%
@@ -642,7 +642,7 @@ Los subtítulos y subtítulos añadidos son compatibles con los formatos WebVTT 
      | Nombre de archivo | El nombre de archivo predeterminado se deriva del nombre de archivo original. El nombre de archivo solo se puede cambiar durante la carga y no se puede cambiar más adelante. Los requisitos de caracteres de nombre de archivo son los mismos que para AEM Assets.<br>No se puede utilizar el mismo nombre de archivo para archivos de pista de audio o de rótulo adicionales. |
      | Idioma | Seleccione el idioma de la pista de audio. |
      | Tipo | Seleccione el tipo de pista de audio que está utilizando.<br>**Original** - Pista de audio originalmente conectada al vídeo y representada como `[Original]` en la etiqueta con `English` idioma seleccionado de forma predeterminada. While **[!UICONTROL Etiqueta]** y **[!UICONTROL Idioma]** se puede cambiar en la **[!UICONTROL Editar pista de audio]** , toma como valor predeterminado los valores originales si se vuelve a procesar el vídeo principal.<br>**Standard** - Pista de audio adicional para un idioma distinto del original.<br>**Descripción del audio** - Una pista de audio que también incluye una narración descriptiva de las acciones y gestos no verbales en el vídeo, haciendo que el contenido sea más accesible para las personas con discapacidad visual. |
-     | Etiqueta | Texto que se muestra como nombre de la pista de audio en el **[!UICONTROL Seleccionar audio o pie de ilustración]** lista emergente en el reproductor de contenido. La etiqueta es lo que ve un cliente y que corresponde a una pista de audio. Por ejemplo, `English [Original]`. La etiqueta de audio adjunto a un vídeo se establece en `[Original|` de forma predeterminada. |
+     | Etiqueta | Texto que se muestra como nombre de la pista de audio en el **[!UICONTROL Seleccionar audio o pie de ilustración]** lista emergente en el reproductor de contenido. La etiqueta es lo que ve un cliente y que corresponde a una pista de audio. Por ejemplo, `English [Original]`. La etiqueta de audio adjunto a un vídeo se establece en `[Original]` de forma predeterminada. |
 
      Si es necesario, puede cambiar o editar los metadatos de la pista de audio más adelante. Cuando se publica el vídeo, estos detalles se reflejan en las direcciones URL públicas de los vídeos publicados.
 
@@ -815,8 +815,6 @@ No se puede descargar la pista de audio original extraída de un archivo princip
    | Recursos | Especifica el número de archivos que está descargando y el tamaño total combinado de todos los archivos seleccionados. Al anular la selección de esta opción, se atenúa (desactiva) el **[!UICONTROL Descargar]** , impidiendo que descargue cualquier archivo. |
 1. Seleccionar **[!UICONTROL Descargar]**.
 1. Publique el vídeo. Consulte [Publicar recursos](publishing-dynamicmedia-assets.md).
-
-
 
 
 
