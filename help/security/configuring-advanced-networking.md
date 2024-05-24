@@ -2,10 +2,10 @@
 title: Configuración de las redes avanzadas para AEM as a Cloud Service
 description: Aprenda a configurar funciones de redes avanzadas como una VPN o una dirección IP de salida flexible o dedicada para AEM as a Cloud Service.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 2ce64892cd5bf414d328a9112c47092b762d3668
+source-git-commit: 0cd4a720874c9d4138665f0bfdecbd29468f01e5
 workflow-type: tm+mt
-source-wordcount: '5093'
-ht-degree: 99%
+source-wordcount: '5388'
+ht-degree: 94%
 
 ---
 
@@ -396,7 +396,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### Consideraciones sobre la depuración {#debugging-considerations}
 
-Para validar que el tráfico realmente salga por la dirección IP dedicada esperada, compruebe los registros en el servicio de destino, si está disponible. De lo contrario, puede resultar útil llamar a un servicio de depuración como [https://ifconfig.me/ip](https://ifconfig.me/ip), que devuelve la dirección IP que realiza la llamada.
+Para validar que el tráfico realmente salga por la dirección IP dedicada esperada, compruebe los registros en el servicio de destino, si está disponible. De lo contrario, puede que sea útil utilizar un servicio de depuración como [https://ifconfig.me/ip](https://ifconfig.me/ip), que devuelve la dirección IP que realiza la llamada.
 
 ## Red privada virtual (VPN) {#vpn}
 
@@ -792,3 +792,17 @@ El procedimiento es muy similar al de las instrucciones anteriores. Sin embargo,
 #### VPN {#vpn-regions}
 
 El procedimiento es casi idéntico al de las instrucciones de direcciones IP de salida dedicadas. La única diferencia es que, además de que la propiedad de la región se configura de forma diferente a la región principal, el campo `connections.gateway` se puede configurar de forma opcional. La configuración puede enrutarse a un punto final VPN diferente operado por su organización, geográficamente más cerca de la nueva región.
+
+## Resolución de problemas
+
+Tenga en cuenta que los siguientes puntos se proporcionan como directrices informativas y abarcan prácticas recomendadas para la resolución de problemas. El objetivo de estas recomendaciones es ayudar a diagnosticar y resolver los problemas de forma eficaz.
+
+### Agrupación de conexiones {#connection-pooling-advanced-networking}
+
+La agrupación de conexiones es una técnica diseñada para crear y mantener un repositorio de conexiones, que están listas para su uso inmediato por cualquier hilo que las requiera. Se pueden encontrar numerosas técnicas de agrupación de conexiones en varias plataformas y recursos en línea, cada una con sus ventajas y consideraciones únicas. Recomendamos a nuestros clientes que investiguen estas metodologías para identificar la más compatible con la arquitectura de sus sistemas.
+
+La implementación de una estrategia adecuada de agrupación de conexiones es una medida proactiva para corregir una supervisión común en la configuración del sistema, que a menudo conduce a un rendimiento subóptimo. Al establecer correctamente un grupo de conexión, Adobe Experience Manager AEM () puede mejorar la eficacia de las llamadas externas. Esto no solo reduce el consumo de recursos, sino que también mitiga el riesgo de interrupciones en el servicio y disminuye la probabilidad de encontrar solicitudes fallidas al comunicarse con servidores de flujo ascendente.
+
+AEM A la luz de esta información, le aconsejamos que reevalúe su configuración actual de la red y que considere la incorporación deliberada de la agrupación de conexiones junto con la configuración de red avanzada. Al implementar estas medidas, la solución está diseñada para evitar que los proxies se sobrecarguen, reduciendo así la probabilidad de que las solicitudes no lleguen a los extremos externos.
+
+AEM A la luz de esta información, le aconsejamos que reevalúe su configuración actual de la red y que considere la posibilidad de incorporar deliberadamente la agrupación de conexiones junto con la configuración de redes avanzadas. Al gestionar el número de conexiones paralelas y minimizar la aparición de posibles conexiones antiguas, estas medidas reducen el riesgo de que los servidores proxy alcancen sus límites de conexión. Por lo tanto, esta implementación estratégica está diseñada para reducir la probabilidad de que las solicitudes no lleguen a los extremos externos.
