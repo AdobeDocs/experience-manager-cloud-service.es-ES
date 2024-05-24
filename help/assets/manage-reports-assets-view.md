@@ -1,16 +1,17 @@
 ---
 title: Administración de informes en la vista Recursos
 description: Acceda a los datos de la sección de informes de la vista Recursos para evaluar el uso de productos y funciones, y obtener información sobre las métricas de éxito clave.
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
+source-git-commit: 6dc6b3e4ec9d6a816d92152cb535cd9a5d56a3b0
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 92%
+source-wordcount: '884'
+ht-degree: 80%
 
 ---
 
 # Administrar informes {#manage-reports}
 
-La creación de informes de recursos proporciona visibilidad a los administradores de la actividad del entorno de la vista Adobe Experience Manager Assets. Estos datos proporcionan información útil sobre cómo los usuarios interactúan con el contenido y el producto. Cualquier persona usuaria puede acceder al panel de Insights. Además, las personas asignadas al perfil de producto del rol de administrador pueden crear informes definidos por el usuario.
+Los informes de recursos proporcionan a los administradores visibilidad de la actividad del entorno de vista de Adobe Experience Manager Assets. Estos datos proporcionan información útil sobre cómo los usuarios interactúan con el contenido y el producto. Cualquier persona usuaria puede acceder al panel de Insights. Además, las personas asignadas al perfil de producto del rol de administrador pueden crear informes definidos por el usuario.
 
 ## Acceso a los informes {#access-reports}
 
@@ -38,26 +39,30 @@ La vista Recursos le permite ver datos en tiempo real de su entorno de la vista 
 
 Haga clic en **[!UICONTROL Insights]** en el panel de navegación izquierdo para ver los siguientes gráficos generados automáticamente:
 
-![Perspectivas](assets/insights.png)
-
 * **Descargas**: el número de recursos descargados del entorno de vista de recursos en los últimos 30 días o 12 meses representados mediante un gráfico de líneas.
+  ![insights-downloads](/help/assets/assets/insights-downloads2341.svg)
 
 * **Cargas**: el número de recursos cargados en el entorno de vista de recursos en los últimos 30 días o 12 meses representados mediante un gráfico de líneas.
-
-<!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
+  ![insights-uploads](/help/assets/assets/insights-uplods2.svg)
+  <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
 * **Uso de almacenamiento**: el uso del almacenamiento, en bytes, para el entorno de vista de recursos representado mediante un gráfico de barras.
-
-<!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
+  ![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
+  <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **Búsquedas principales**: vea los términos más buscados junto con el número de veces que se buscan en el entorno de vista Recursos en los últimos 30 días o 12 meses representados en formato tabular.
-
+  ![insights-uploads](/help/assets/assets/insights-top-search.svg)
   <!--
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
+
+* **Recuento de recursos por tamaño:** Segmenta el recuento total de recursos en el entorno de vista de recursos en diferentes intervalos de tamaño, resaltando el recuento y el porcentaje de recursos en cada intervalo de tamaño, representados mediante un gráfico de anillo.
+  ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
+* **Recuento de recursos por tipo de recurso:** Segmenta el recuento total de recursos en el entorno de vista de recursos, resaltando el recuento y el porcentaje de recursos en función de sus tipos de archivo, representados por un gráfico de anillo.
+  ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
 
 ## Creación de un informe de descarga {#create-download-report}
 
@@ -77,7 +82,7 @@ Para crear un informe de descarga, haga lo siguiente:
    >
    > La vista Recursos convierte todas las zonas horarias locales a la hora universal coordinada (UTC).
 
-1. En la pestaña [!UICONTROL Columnas], seleccione los nombres de columna que debe mostrar en el informe.
+1. En el [!UICONTROL Columnas] pestaña, seleccione los nombres de columna que debe mostrar en el informe.
 
 1. Haga clic en **[!UICONTROL Crear]**.
 
