@@ -2,10 +2,10 @@
 title: Administración de informes en la vista Recursos
 description: Acceda a los datos de la sección de informes de la vista Recursos para evaluar el uso de productos y funciones, y obtener información sobre las métricas de éxito clave.
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
-source-git-commit: 6dc6b3e4ec9d6a816d92152cb535cd9a5d56a3b0
+source-git-commit: f4944cdb9f4ec51af6169c5cbf1890f469d91781
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 80%
+source-wordcount: '817'
+ht-degree: 89%
 
 ---
 
@@ -59,11 +59,6 @@ Haga clic en **[!UICONTROL Insights]** en el panel de navegación izquierdo para
    ![Insights](assets/insights2.png)
    -->
 
-* **Recuento de recursos por tamaño:** Segmenta el recuento total de recursos en el entorno de vista de recursos en diferentes intervalos de tamaño, resaltando el recuento y el porcentaje de recursos en cada intervalo de tamaño, representados mediante un gráfico de anillo.
-  ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
-* **Recuento de recursos por tipo de recurso:** Segmenta el recuento total de recursos en el entorno de vista de recursos, resaltando el recuento y el porcentaje de recursos en función de sus tipos de archivo, representados por un gráfico de anillo.
-  ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
-
 ## Creación de un informe de descarga {#create-download-report}
 
 Para crear un informe de descarga, haga lo siguiente:
@@ -82,7 +77,7 @@ Para crear un informe de descarga, haga lo siguiente:
    >
    > La vista Recursos convierte todas las zonas horarias locales a la hora universal coordinada (UTC).
 
-1. En el [!UICONTROL Columnas] pestaña, seleccione los nombres de columna que debe mostrar en el informe.
+1. En la pestaña [!UICONTROL Columnas], seleccione los nombres de columna que debe mostrar en el informe.
 
 1. Haga clic en **[!UICONTROL Crear]**.
 
