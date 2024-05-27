@@ -2,10 +2,10 @@
 title: Configuración de las redes avanzadas para AEM as a Cloud Service
 description: Aprenda a configurar funciones de redes avanzadas como una VPN o una dirección IP de salida flexible o dedicada para AEM as a Cloud Service.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 0cd4a720874c9d4138665f0bfdecbd29468f01e5
+source-git-commit: 3e8a1a8a48fc5ec6bff71062ff740acf98d743d2
 workflow-type: tm+mt
-source-wordcount: '5388'
-ht-degree: 94%
+source-wordcount: '5332'
+ht-degree: 95%
 
 ---
 
@@ -803,6 +803,4 @@ La agrupación de conexiones es una técnica diseñada para crear y mantener un 
 
 La implementación de una estrategia adecuada de agrupación de conexiones es una medida proactiva para corregir una supervisión común en la configuración del sistema, que a menudo conduce a un rendimiento subóptimo. Al establecer correctamente un grupo de conexión, Adobe Experience Manager AEM () puede mejorar la eficacia de las llamadas externas. Esto no solo reduce el consumo de recursos, sino que también mitiga el riesgo de interrupciones en el servicio y disminuye la probabilidad de encontrar solicitudes fallidas al comunicarse con servidores de flujo ascendente.
 
-AEM A la luz de esta información, le aconsejamos que reevalúe su configuración actual de la red y que considere la incorporación deliberada de la agrupación de conexiones junto con la configuración de red avanzada. Al implementar estas medidas, la solución está diseñada para evitar que los proxies se sobrecarguen, reduciendo así la probabilidad de que las solicitudes no lleguen a los extremos externos.
-
-AEM A la luz de esta información, le aconsejamos que reevalúe su configuración actual de la red y que considere la posibilidad de incorporar deliberadamente la agrupación de conexiones junto con la configuración de redes avanzadas. Al gestionar el número de conexiones paralelas y minimizar la aparición de posibles conexiones antiguas, estas medidas reducen el riesgo de que los servidores proxy alcancen sus límites de conexión. Por lo tanto, esta implementación estratégica está diseñada para reducir la probabilidad de que las solicitudes no lleguen a los extremos externos.
+A la luz de esta información, Adobe AEM recomienda reevaluar la configuración actual de la red de redes y considerar la incorporación deliberada de la agrupación de conexiones junto con la configuración de redes avanzadas. Al gestionar el número de conexiones paralelas y minimizar la posibilidad de conexiones antiguas, estas medidas reducen el riesgo de que los servidores proxy alcancen sus límites de conexión. Por lo tanto, esta implementación estratégica está diseñada para reducir la probabilidad de que las solicitudes no lleguen a los extremos externos.
