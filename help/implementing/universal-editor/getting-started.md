@@ -2,10 +2,10 @@
 title: Introducción al editor universal en AEM
 description: Obtenga información sobre cómo acceder al editor universal y cómo instrumentar la primera aplicación de AEM para utilizarlo.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: a9a428eb5329bc2aa3d86ac5e0c91f633516446c
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 69%
+source-wordcount: '828'
+ht-degree: 68%
 
 ---
 
@@ -24,22 +24,11 @@ Aunque el editor universal puede editar contenido desde cualquier fuente, este d
 
 AEM Hay que seguir varios pasos para incorporar la aplicación de e instrumentarla para que utilice el editor universal.
 
-1. [Solicite acceso al editor universal.](#request-access)
 1. [Incluya la biblioteca principal del editor universal.](#core-library)
 1. [Añada la configuración OSGi necesaria.](#osgi-configurations)
 1. [Instrumente la página.](#instrument-page)
 
 Este documento le guiará a través de estos pasos.
-
-## Solicite acceso al editor universal {#request-access}
-
-Primero debe solicitar acceso al editor universal. Abrir [`https://experience.adobe.com/#/aem/editor&quot;](https://experience.adobe.com/#/aem/editor), inicie sesión y valide si tiene acceso al editor universal.
-
-En caso de que no tenga acceso, puede solicitarlo a través de un formulario vinculado en la misma página.
-
-![Solicite acceso al editor universal](assets/request-access.png)
-
-Haga clic en **Solicitud de acceso** y rellene el formulario como se le indica para solicitarlo. Un representante del Adobe revisará su solicitud y se pondrá en contacto para analizar su caso práctico.
 
 ## Incluya la biblioteca principal del editor universal {#core-library}
 

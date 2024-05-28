@@ -2,10 +2,10 @@
 title: Creación de contenido con el editor universal
 description: Aprenda lo fácil e intuitivo que es para los autores crear contenido con el editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: b42390dcecb546853380d64808bcf009680c89a3
 workflow-type: tm+mt
-source-wordcount: '2189'
-ht-degree: 37%
+source-wordcount: '2083'
+ht-degree: 36%
 
 ---
 
@@ -89,7 +89,7 @@ Este icono se muestra con la cantidad de [notificaciones](/help/implementing/clo
 
 #### Propiedades del usuario {#user-properties}
 
-Seleccione el icono que representa al usuario para acceder a su configuración de usuario. Si no tiene una imagen de usuario configurada, se le asigna un icono de forma aleatoria.
+Seleccione el icono que representa a su usuario para acceder a la configuración. Si no tiene una imagen de usuario configurada, se le asigna un icono de forma aleatoria.
 
 ![Propiedades del usuario](assets/user-properties.png)
 
@@ -384,9 +384,4 @@ En el modo de vista previa, tocar o hacer clic en el contenido reacciona como lo
 
 Para obtener más información acerca del editor universal, consulte estos documentos.
 
-* [Introducción al editor universal](introduction.md): descubra cómo el editor universal permite editar cualquier aspecto de los contenidos en varias implementaciones para ofrecer experiencias excepcionales, aumentar la velocidad de contenido y proporcionar una experiencia de desarrollador de última generación.
 * [Publicación de contenido con el editor universal](publishing.md) - Descubra cómo el editor universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
-* [Introducción al editor universal en AEM](getting-started.md): obtenga información sobre cómo acceder al editor universal y cómo instrumentar la primera aplicación de AEM para utilizarlo.
-* [Arquitectura del editor universal](architecture.md): obtenga información acerca de la arquitectura del editor universal y cómo fluyen los datos entre sus servicios y capas.
-* [Atributos y tipos](attributes-types.md): obtenga información acerca de los atributos y tipos de datos que requiere el editor universal.
-* [Autenticación del editor universal](authentication.md): obtenga información sobre cómo se autentica el editor universal.

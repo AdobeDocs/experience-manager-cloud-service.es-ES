@@ -2,10 +2,10 @@
 title: Introducción al editor universal
 description: Descubra cómo el editor universal permite la edición de lo que se ve es lo que se obtiene (WYSIWYG) de cualquier experiencia sin encabezado y con encabezado. Descubra cómo puede ayudar a los autores de contenido a ofrecer contenidos excepcionales y mayor velocidad, y una experiencia de última generación a los desarrolladores.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 2ad5920d0b3d8a3ad780a2cb0f28b7e6f9e596ab
+source-git-commit: b42390dcecb546853380d64808bcf009680c89a3
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 58%
+source-wordcount: '973'
+ht-degree: 52%
 
 ---
 
@@ -90,13 +90,6 @@ A medida que explore el editor universal y avance en la implementación de él e
 * Los autores de contenido deben tener sus propias cuentas de Experience Cloud individuales.
 * Chrome y Edge son los exploradores admitidos
 
-## Recursos adicionales {#additional-resources}
+## Siguientes pasos {#next-steps}
 
-Para obtener más información acerca del editor universal, consulte estos documentos.
-
-* [Creación de contenido con el editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md): aprenda lo fácil e intuitivo que es para los autores de contenido crearlo con el editor universal.
-* [Publicación de contenido con el editor universal](/help/sites-cloud/authoring/universal-editor/publishing.md) - Descubra cómo el editor universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
-* [Introducción al editor universal en AEM](getting-started.md): obtenga información sobre cómo acceder al editor universal y cómo instrumentar la primera aplicación de AEM para utilizarlo.
-* [Arquitectura del editor universal](architecture.md): obtenga información acerca de la arquitectura del editor universal y cómo fluyen los datos entre sus servicios y capas.
-* [Atributos y tipos](attributes-types.md): obtenga información acerca de los atributos y tipos de datos que requiere el editor universal.
-* [Autenticación del editor universal](authentication.md): obtenga información sobre cómo se autentica el editor universal.
+Consulte el documento [Casos de uso y rutas de aprendizaje del editor universal](/help/implementing/universal-editor/use-cases.md) para obtener más información sobre los casos de uso comunes del editor universal y descubrir los recursos de documentación adecuados para ayudarle en su proyecto.
