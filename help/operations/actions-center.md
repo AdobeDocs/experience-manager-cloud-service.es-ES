@@ -2,10 +2,10 @@
 title: Centro de acciones
 description: Aproveche el Centro de Acciones para actuar convenientemente sobre incidentes y otra información importante
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: df10d8d210877e166312f66d5c4e74dbe771446a
+source-git-commit: 383d56ccd1e523082c21e58252a7c03a9807c582
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 68%
+source-wordcount: '829'
+ht-degree: 65%
 
 ---
 
@@ -60,18 +60,19 @@ Al igual que todos los tickets de soporte, aparecerá en la [pestaña Casos de s
 AEM as a Cloud Service tiene varios tipos de notificaciones, pero solo un subconjunto aparece en el Centro de acciones, tal y como se muestra en la siguiente tabla.
 
 | Tipo de notificación | Descripción | Cómo configurar | Aparece en el Centro de acciones |
-|---|---|---|---|
+|---------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | Incidencias operativas | Incidentes críticos que requieren una acción inmediata | Usuario asignado al perfil de producto &quot;Notificación de problemas - Cloud Service&quot; | X |
 | Recomendaciones proactivas | Optimizaciones que deben planificarse | Usuario asignado al perfil de producto “Notificación proactiva - Cloud Service” | X |
-| Estados de canalización de Cloud Manager | Información sobre el estado de sus canalizaciones | Usuario con los roles de Propietario del negocio, Administrador de programa o Administrador de implementación, casilla de verificación &quot;Otros&quot; seleccionada en [Preferencias del Experience Cloud](https://experience.adobe.com/preferences), como [descrito aquí](/help/implementing/cloud-manager/notifications.md). |   |
+| Estados de canalización de Cloud Manager | Información sobre el estado de sus canalizaciones | Usuario con los roles de Propietario del negocio, Administrador de programa o Administrador de implementación, casilla de verificación &quot;Otros&quot; seleccionada en [Preferencias del Experience Cloud](https://experience.adobe.com/preferences), como [descrito aquí](/help/implementing/cloud-manager/notifications.md). |                           |
 
 ## Tipos de notificación compatibles {#supported-notification-types}
 
 En la tabla siguiente se enumeran los tipos de notificación admitidos actualmente en el Centro de acciones. Actualmente, las notificaciones se limitan a entornos de producción.
 
 | Tipo de notificación | Perfil de producto relacionado | Acción correctiva |
-|---------------------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---------------------------------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cola de replicación bloqueada | Problema | Desbloquear la cola siguiendo las instrucciones de la [Documentación de replicación](/help/operations/replication.md#troubleshooting) |
 | Consulta GraphQL persistente no válida | Problema | Corrija la consulta de GraphQL no válida haciendo referencia a la variable [Documentación de solución de problemas de consultas persistentes de GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
-| Certificado S2S caducado | Proactivo | Obtenga información sobre cómo actualizar una credencial en la [documentación de Generación de tokens de acceso para las API del lado del servidor](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) | Recuento alto de conexiones | Proactivo | Obtenga información acerca de la agrupación de conexiones en [Agrupación de conexiones junto con documentación de redes avanzadas](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
 | Pico de tráfico en origen | Problema | Protect define su origen mediante la configuración de reglas de filtro de tráfico de límite de velocidad que aplican umbrales inferiores a los del pico de tráfico predeterminado en la alerta de déclencheur.  Consulte la [Bloqueo de ataques DoS y DDoS mediante reglas de tráfico](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) de la documentación de Reglas del filtro de tráfico, que hace referencia a un tutorial. |
+| Certificado S2S caducado | Proactivo | Obtenga información sobre cómo actualizar una credencial en la [documentación de Generación de tokens de acceso para las API del lado del servidor](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) | Recuento alto de conexiones | Proactivo | Obtenga información acerca de la agrupación de conexiones en [Agrupación de conexiones junto con documentación de redes avanzadas](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
+| Asignación de usuarios de servicio obsoleta | Proactivo | Aprenda a utilizar el formato más reciente de asignación de usuarios de Sling Service, como se indica en [Prácticas recomendadas para la asignación de usuarios al servicio Sling y la definición de usuarios del servicio](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
