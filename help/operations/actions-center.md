@@ -2,10 +2,10 @@
 title: Centro de acciones
 description: Aproveche el Centro de Acciones para actuar convenientemente sobre incidentes y otra información importante
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 383d56ccd1e523082c21e58252a7c03a9807c582
+source-git-commit: ae8c5e832134caf4ff6799c601810e9a735f4195
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 65%
+source-wordcount: '842'
+ht-degree: 64%
 
 ---
 
@@ -76,3 +76,4 @@ En la tabla siguiente se enumeran los tipos de notificación admitidos actualmen
 | Pico de tráfico en origen | Problema | Protect define su origen mediante la configuración de reglas de filtro de tráfico de límite de velocidad que aplican umbrales inferiores a los del pico de tráfico predeterminado en la alerta de déclencheur.  Consulte la [Bloqueo de ataques DoS y DDoS mediante reglas de tráfico](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) de la documentación de Reglas del filtro de tráfico, que hace referencia a un tutorial. |
 | Certificado S2S caducado | Proactivo | Obtenga información sobre cómo actualizar una credencial en la [documentación de Generación de tokens de acceso para las API del lado del servidor](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) | Recuento alto de conexiones | Proactivo | Obtenga información acerca de la agrupación de conexiones en [Agrupación de conexiones junto con documentación de redes avanzadas](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
 | Asignación de usuarios de servicio obsoleta | Proactivo | Aprenda a utilizar el formato más reciente de asignación de usuarios de Sling Service, como se indica en [Prácticas recomendadas para la asignación de usuarios al servicio Sling y la definición de usuarios del servicio](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
+| Recuento alto de conexiones | Proactivo | Obtenga información acerca de la agrupación de conexiones en [Documentación de redes avanzadas](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
