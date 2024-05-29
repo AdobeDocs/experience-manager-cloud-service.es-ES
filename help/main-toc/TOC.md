@@ -728,7 +728,7 @@ ht-degree: 99%
    + Informes de transacciones {#using-communications}
       + [API facturables de informes de transacciones](/help/forms/transaction-reports-billable-apis.md)
       + [Registrar una transacción para una implementación personalizada](/help/forms/record-transaction-custom-implementation.md)
-      + [Explicación del panel de realización de valores](/help/forms/aem-forms-value-realization-dashboard.md)
+      + [Información acerca del panel de realización de valor](/help/forms/aem-forms-value-realization-dashboard.md)
    + Referencia de API de desarrollador {#aem-forms-developer-api-reference}
       + [Referencia de la API de los formularios adaptables](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [Referencia de la API de comunicaciones del Cloud Service de AEM Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -1037,7 +1037,7 @@ ht-degree: 99%
       + [Entornos de desarrollo rápido de AEM](/help/implementing/developing/introduction/rapid-development-environments.md)
       + [Directrices de desarrollo de AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md)
       + [Registro](/help/implementing/developing/introduction/logging.md)
-      + [Reenvío de registros](/help/implementing/developing/introduction/log-forwarding.md)
+      + [Reenvío de registro](/help/implementing/developing/introduction/log-forwarding.md)
       + [Configuraciones y el explorador de configuración](/help/implementing/developing/introduction/configurations.md)
       + [Fundamentos técnicos de AEM](/help/implementing/developing/introduction/aem-technologies.md)
       + [Materiales de referencia de la API](/help/implementing/developing/reference-materials.md)
@@ -1090,7 +1090,7 @@ ht-degree: 99%
          + [Autenticación](/help/implementing/universal-editor/authentication.md)
          + [Introducción](/help/implementing/universal-editor/getting-started.md)
          + [Información general para desarrolladores](/help/implementing/universal-editor/developer-overview.md)
-         + [AEM Desarrollo local](/help/implementing/universal-editor/local-dev.md)
+         + [Desarrollo de AEM local](/help/implementing/universal-editor/local-dev.md)
          + [Llamadas](/help/implementing/universal-editor/calls.md)
       + [Administración de experiencias sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=es)
       + Desarrollo híbrido y SPA {#hybrid}
