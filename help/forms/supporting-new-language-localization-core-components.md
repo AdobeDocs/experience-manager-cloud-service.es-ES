@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 source-git-commit: 9cb3b52d0cf172c16777eadbc4d78b267c3db513
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2028'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -270,7 +270,7 @@ Ahora, vamos a incorporar la biblioteca `clientlib-it-custom-locale` en su AEM a
 
 
 
-### Agregar compatibilidad con la configuración regional al diccionario
+### Añadir la compatibilidad con la configuración regional al diccionario
 
 Este paso solo se aplica a las configuraciones regionales que no sean las siguientes comúnmente admitidas: inglés (en), alemán (de), español (es), francés (fr), italiano (it), portugués de Brasil (pt-br), chino (simplificado - zh_cn), chino (tradicional - zh_tw), japonés (ja) y coreano (ko_kr).
 
@@ -350,7 +350,7 @@ Ya está todo configurado para utilizar la nueva configuración regional con sus
 
       Active una implementación del código a través de la [canalización de pila completa existente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#setup-pipeline). Esto crea e implementa automáticamente el código actualizado con la nueva compatibilidad con la configuración regional.
 
-      Si aún no ha configurado una canalización, consulte la guía de [cómo configurar una canalización para AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#setup-pipeline).
+      Si aún no ha configurado una canalización, consulte la guía sobre [cómo configurar una canalización para AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#setup-pipeline).
 
 
 ## Vista previa de un formulario adaptable con la configuración regional recién añadida

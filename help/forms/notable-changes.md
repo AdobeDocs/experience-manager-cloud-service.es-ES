@@ -6,13 +6,13 @@ role: Admin, Developer, User
 feature: Adaptive Forms
 contentOwner: khsingh
 source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1325'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# AEM Diferencia entre Forms (AMS y local) de 6.5 y AEM Forms as a Cloud Service AEM (Forms de CS {#notable-changes-for-existing-AEM-Forms-users}
+# Diferencia entre AEM 6.5 Forms (AMS y local) y AEM Forms as a Cloud Service (AEM CS Forms) {#notable-changes-for-existing-AEM-Forms-users}
 
 Adobe Experience Manager Forms as a Cloud Service incluye algunos cambios importantes en las funciones existentes en comparación con Adobe Experience Manager Forms local y los entornos de [!DNL Adobe-Managed Service]. A continuación se enumeran las principales diferencias:
 
@@ -117,7 +117,7 @@ Forms as a Cloud Service proporciona API RESTful de generación y manipulación 
 
 * Puede utilizar las API de comunicaciones para elaborar documentos personalizados bajo demanda o por lotes en Forms as a Cloud Service. Puede utilizar un entorno de Forms de AEM 6.5 para comunicaciones interactivas y casos de uso de la interfaz de usuario del agente.
 
-## Consulte también
+## Ver también
 
 * [Migración desde AEM Forms (entornos On-Premise y AMS) a AEM Forms as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 * [Agregar o crear formularios adaptables en la página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
