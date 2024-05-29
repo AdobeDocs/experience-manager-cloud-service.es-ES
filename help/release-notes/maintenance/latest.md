@@ -3,9 +3,9 @@ title: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Exper
 description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 13a266e9611fd8eb427c7cc83e99092e66fd8bc5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '207'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ En la siguiente sección se describen las notas de la versión técnicas actuale
 
 ## Versión 16461 {#release-16461}
 
-A continuación, se resumen las mejoras continuas para la versión de mantenimiento 16461, que se publicó el martes, 27 de mayo de 2024. La versión de mantenimiento anterior fue la 16357.
+A continuación, se resumen las mejoras continuas para la versión de mantenimiento 16461, que se publicó el 27 de mayo de 2024. La versión de mantenimiento anterior fue la 16357.
 
 La activación de funcionalidades 2024.5.0 proporcionará el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 

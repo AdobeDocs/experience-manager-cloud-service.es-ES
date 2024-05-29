@@ -3,9 +3,9 @@ title: Configuración de las redes avanzadas para AEM as a Cloud Service
 description: Aprenda a configurar funciones de redes avanzadas como una VPN o una dirección IP de salida flexible o dedicada para AEM as a Cloud Service.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: 3e8a1a8a48fc5ec6bff71062ff740acf98d743d2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5332'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -799,8 +799,8 @@ Tenga en cuenta que los siguientes puntos se proporcionan como directrices infor
 
 ### Agrupación de conexiones {#connection-pooling-advanced-networking}
 
-La agrupación de conexiones es una técnica diseñada para crear y mantener un repositorio de conexiones, que están listas para su uso inmediato por cualquier hilo que las requiera. Se pueden encontrar numerosas técnicas de agrupación de conexiones en varias plataformas y recursos en línea, cada una con sus ventajas y consideraciones únicas. Recomendamos a nuestros clientes que investiguen estas metodologías para identificar la más compatible con la arquitectura de sus sistemas.
+La agrupación de conexiones es una técnica adaptada para crear y mantener un repositorio de conexiones, que están listas para su uso inmediato por cualquier hilo que las requiera. Se pueden encontrar numerosas técnicas de agrupación de conexiones en varias plataformas y recursos en línea, cada una con sus propias ventajas y consideraciones. Recomendamos a nuestros clientes que investiguen estas metodologías para identificar la más compatible con la arquitectura de sus sistemas.
 
-La implementación de una estrategia adecuada de agrupación de conexiones es una medida proactiva para corregir una supervisión común en la configuración del sistema, que a menudo conduce a un rendimiento subóptimo. Al establecer correctamente un grupo de conexión, Adobe Experience Manager AEM () puede mejorar la eficacia de las llamadas externas. Esto no solo reduce el consumo de recursos, sino que también mitiga el riesgo de interrupciones en el servicio y disminuye la probabilidad de encontrar solicitudes fallidas al comunicarse con servidores de flujo ascendente.
+La implementación de una estrategia adecuada de agrupación de conexiones es una medida proactiva para corregir una supervisión común en la configuración del sistema, que a menudo conduce a un rendimiento subóptimo. Al establecer correctamente un grupo de conexiones, Adobe Experience Manager (AEM) puede mejorar la eficacia de las llamadas externas. Esto no solo reduce el consumo de recursos, sino que también mitiga el riesgo de interrupciones en el servicio y disminuye la probabilidad de se produzcan errores en las solicitudes al comunicarse con servidores de flujo ascendente.
 
-A la luz de esta información, Adobe AEM recomienda reevaluar la configuración actual de la red de redes y considerar la incorporación deliberada de la agrupación de conexiones junto con la configuración de redes avanzadas. Al gestionar el número de conexiones paralelas y minimizar la posibilidad de conexiones antiguas, estas medidas reducen el riesgo de que los servidores proxy alcancen sus límites de conexión. Por lo tanto, esta implementación estratégica está diseñada para reducir la probabilidad de que las solicitudes no lleguen a los extremos externos.
+A la luz de esta información, Adobe recomienda revaluar la configuración actual de AEM y considerar la incorporación deliberada de la agrupación de conexiones junto con la configuración de redes avanzadas. Al administrar el número de conexiones paralelas y minimizar la posibilidad de conexiones obsoletas, estas medidas reducen el riesgo de que los servidores proxy alcancen sus límites de conexión. Por lo tanto, esta implementación estratégica está diseñada para reducir la probabilidad de que las solicitudes no lleguen a los puntos finales externos.
