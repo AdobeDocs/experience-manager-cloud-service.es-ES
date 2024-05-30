@@ -2,10 +2,10 @@
 title: Entornos de desarrollo rápido
 description: Aprenda a utilizar entornos de desarrollo rápido para iteraciones de desarrollo rápido en un entorno de nube.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: cd74240f59cb3139e425f568828ba9ab1b59147f
+source-git-commit: 4a5b7c671a149d61c60fc86f93a41d52fb4b5468
 workflow-type: tm+mt
-source-wordcount: '4345'
-ht-degree: 4%
+source-wordcount: '4294'
+ht-degree: 3%
 
 ---
 
@@ -408,11 +408,12 @@ The analyser found the following errors for publish :
 
 El ejemplo de código anterior ilustra el comportamiento si un paquete no se resuelve. En cuyo caso, se &quot;almacena en zona intermedia&quot; y solo se instala si sus requisitos (importaciones que faltan, en este caso) se satisfacen mediante la instalación de otro código.
 
-<u>Implementación de código front-end basado en temas de sitio y plantillas de sitio</u>
+### Implementación de código front-end basado en temas de sitio y plantillas de sitio {#deploying-themes-to-rde}
 
 >[!NOTE]
 >
->Esta función aún no se conoce como GA, pero puede ser utilizada por los primeros usuarios que la adoptaron. Póngase en contacto con **aemcs-rde-support@adobe.com** para probarlo y proporcionar comentarios.
+> Esta función aún no está disponible. Se lanzará en algún momento en junio.
+>
 
 Los RDE admiten código front-end basado en [temas del sitio](/help/sites-cloud/administering/site-creation/site-themes.md) y [plantillas del sitio](/help/sites-cloud/administering/site-creation/site-templates.md). Con RDE, esto se hace utilizando una directiva de línea de comandos para implementar paquetes front-end, en lugar de Cloud Manager [Canalización front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) se utiliza para otros tipos de entornos.
 
@@ -1011,8 +1012,6 @@ Tenga en cuenta también las siguientes consideraciones:
 
 * Los RDE no incluyen un nivel de previsualización
 * Actualmente, los RDE no son compatibles con el canal de prelanzamiento.
-* Mientras que la compatibilidad con RDE para ver y depurar el código front-end se basa en [temas del sitio](/help/sites-cloud/administering/site-creation/site-themes.md) y [plantillas del sitio](/help/sites-cloud/administering/site-creation/site-templates.md) implementado aún no está listo para GA, puede ser utilizado por los primeros usuarios. Póngase en contacto con **aemcs-rde-support@adobe.com** para probarlo y proporcionar comentarios.
-
 
 
 ## ¿Cuántos RDE necesito? {#how-many-rds-do-i-need}
