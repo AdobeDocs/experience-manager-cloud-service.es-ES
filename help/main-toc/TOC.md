@@ -595,7 +595,7 @@ ht-degree: 99%
    + Información general {#forms-overview}
       + [Introducción](/help/forms/home.md)
       + [Principales innovaciones de Adobe Experience Manager Forms](/help/forms/latest-innovations.md)
-      + [EA Funciones de usuario pionero ()](/help/forms/early-adopter-ea-features.md)
+      + [Funciones para primeros usuarios (EA)](/help/forms/early-adopter-ea-features.md)
       + [Cambios importantes](/help/forms/notable-changes.md)
       + [Arquitectura](/help/forms/aem-forms-cloud-service-architecture.md)
       + [Preguntas frecuentes](/help/forms/faq.md)
