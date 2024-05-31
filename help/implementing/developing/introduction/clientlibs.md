@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service Uso de bibliotecas del lado del cliente en el uso de
 description: AEM proporciona Carpetas de biblioteca del lado del cliente, que le permiten almacenar el código del lado del cliente (clientlibs) en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '2551'
-ht-degree: 2%
+source-wordcount: '2497'
+ht-degree: 1%
 
 ---
 
@@ -77,7 +77,7 @@ Para que las bibliotecas de cliente en `/apps` para que sea accesible, se utiliz
 
 1. Abra el CRXDE Lite en un explorador web (`https://<host>:<port>/crx/de`).
 1. Seleccione el `/apps` y haga clic en **Crear > Crear nodo**.
-1. Introduzca un nombre para la carpeta de la biblioteca y, en **Tipo** seleccionar lista `cq:ClientLibraryFolder`. Haga clic en **Aceptar** y luego en **Guardar todo**.
+1. Introduzca un nombre para la carpeta de la biblioteca y, en **Tipo** seleccionar lista `cq:ClientLibraryFolder`. Clic **OK** y luego haga clic en **Guardar todo**.
 1. Para especificar las categorías a las que pertenece la biblioteca, seleccione `cq:ClientLibraryFolder` , agregue la siguiente propiedad y haga clic en **Guardar todo**:
    * Nombre: `categories`
    * Tipo: cadena
@@ -194,7 +194,7 @@ Cuando el código de la carpeta de la biblioteca de cliente haga referencia a ot
 Las dependencias deben ser otras `cq:ClientLibraryFolder`. Para identificar dependencias, agregue una propiedad a su `cq:ClientLibraryFolder` nodo con los atributos siguientes:
 
 * **Nombre:** dependencias
-* **Tipo:** cadena[]
+* **Tipo:** Cadena[]
 * **Valores:** El valor de la propiedad categories del nodo cq:ClientLibraryFolder del que depende la carpeta de biblioteca actual.
 
 Por ejemplo, la variable `/etc/clientlibs/myclientlibs/publicmain` depende de la variable `cq.jquery` biblioteca. La página que hace referencia a la biblioteca de cliente principal genera un HTML que incluye el siguiente código:
@@ -217,7 +217,7 @@ Se recomienda mantener todos los archivos relacionados con la aplicación en la 
 Utilice la propiedad categories para identificar la carpeta de biblioteca de cliente que se va a incrustar. Para incrustar la biblioteca, agregue una propiedad a la incrustación `cq:ClientLibraryFolder` mediante los atributos de propiedad siguientes:
 
 * **Nombre:** incrustar
-* **Tipo:** cadena[]
+* **Tipo:** Cadena[]
 * **Valor:** El valor de la propiedad categories de `cq:ClientLibraryFolder` nodo para incrustar.
 
 #### Uso de la incrustación para minimizar las solicitudes {#using-embedding-to-minimize-requests}
@@ -345,7 +345,7 @@ Para obtener más información sobre las opciones de GCC, consulte [Documentaci�
 
 AEM YUI se establece como el minificador predeterminado en la interfaz de usuario de. Para cambiar esto a GCC, siga estos pasos.
 
-1. Vaya al Administrador de configuración de Apache Felix en (`http://<host>:<portY/system/console/configMgr`)
+1. Vaya al Administrador de configuración de Apache Felix en (`http://<host>:<port/system/console/configMgr`)
 1. Busque y edite el **Administrador de bibliotecas de Adobe Granite HTML**.
 1. Habilite la **Minificar** opción (si no está activada).
 1. Establecer el valor **Configuraciones predeterminadas del procesador JS** hasta `min:gcc`.

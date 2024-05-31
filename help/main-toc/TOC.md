@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b13310c256fe06210b9c79023972c4e41a241f43
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '4970'
+source-wordcount: '4997'
 ht-degree: 99%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 99%
    + Notas de la versión de la funcionalidad AEMaaCS {#release-notes}
       + [Notas de la versión actual](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
+         + [Notas de la versión 2024.4.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-4-0.md)
          + [Notas de la versión 2024.3.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
          + [Notas de la versión 2024.1.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-1-0.md)
       + 2023 {#2023}
@@ -664,6 +665,8 @@ ht-degree: 99%
             + [Diseño de un esquema JSON para un formulario adaptable (componentes principales)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Añadir versiones, comentarios y anotaciones a un formulario adaptable](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Nuevos formularios adaptables](/help/forms/compare-forms.md)
+            + [Convertir Forms adaptable basado en componentes básicos a formularios basados en componentes principales mediante la herramienta de utilidad de migración](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + [Guardar un formulario adaptable como borrador](/help/forms/save-core-component-based-form-as-draft.md)
       + Componentes de base {#authoring-adaptive-forms-foundation-components}
          + Convertir sus formularios PDF en formularios adaptables {#afcs}
             + [Introducción al servicio de conversión automatizada de formularios](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=es)

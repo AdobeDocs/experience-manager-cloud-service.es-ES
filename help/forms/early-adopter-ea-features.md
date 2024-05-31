@@ -3,10 +3,10 @@ title: Características actuales de Early Adopter de [!DNL Adobe Experience Mana
 description: Características actuales de Early Adopter de [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user
-source-git-commit: 2b035e9597518ff64a2b4ce8c18ae31e5deef6f3
+source-git-commit: e6ceb53ee821a1fde5e79c687a4445d6c18faf54
 workflow-type: tm+mt
-source-wordcount: '1599'
-ht-degree: 10%
+source-wordcount: '1731'
+ht-degree: 9%
 
 ---
 
@@ -20,8 +20,7 @@ El programa AEM Forms Early Adopter ofrece una oportunidad única para que obten
 
 ## ¿Cómo participar en el programa de usuarios pioneros?
 
-Si está interesado en unirse a nuestro programa de usuarios que lo adoptaron por primera vez para cualquier innovación, simplemente envíe un correo electrónico desde su dirección oficial a `aem-forms-ea@adobe.com` para solicitar acceso. Puede solicitar acceso a todas las innovaciones o a cualquier innovación específica.
-
+Si está interesado en unirse a nuestro programa de usuarios que lo adoptaron por primera vez para cualquier innovación, simplemente envíe un correo electrónico desde su dirección oficial a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  para solicitar acceso. Puede solicitar acceso a todas las innovaciones o a cualquier innovación específica.
 
 ## Innovaciones para pioneros
 
@@ -154,6 +153,15 @@ Este es un desglose de lo que las API de Doc Assurance pueden hacer:
 En general, [API de Doc Assurance](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) le ayuda a mejorar la seguridad y el cumplimiento normativo de los documentos mediante la adición de una capa adicional de control.
 
 
+### API del servicio Forms
+
+El servicio Forms genera PDF forms interactivos para la captura de datos. También se puede utilizar para importar/exportar datos desde/hacia un formulario interactivo de PDF existente y validar los datos enviados. A continuación se muestra un desglose de sus funcionalidades:
+
+* **Renderización de Forms**: genera un formulario de PDF interactivo a partir de una plantilla creada con AEM Forms Designer y, opcionalmente, datos XML. Básicamente, esto genera un formulario PDF rellenable que, opcionalmente, está rellenado previamente con datos.
+
+* **Extracción e importación de datos**: importe datos en un formulario de PDF existente, así como extraer datos de un formulario de PDF rellenado. Se admiten los formatos de datos XDP y XML, y la importación a PDF forms que no sean XFA (también conocidos como AcroForms) admite además datos FDF y XFDF.
+
+* **Validación de datos**: valide los datos enviados, en formato XDP o XML, con una plantilla creada con AEM Forms Designer.
 
 ## Ver también
 

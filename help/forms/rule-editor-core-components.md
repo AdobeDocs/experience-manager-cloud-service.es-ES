@@ -5,19 +5,18 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '5453'
+source-wordcount: '5612'
 ht-degree: 86%
 
 ---
 
 
-<span class="preview"> Este artículo incluye contenido para algunas funciones previas al lanzamiento. Solo se puede acceder a estas funciones previas al lanzamiento a través de nuestra [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features). Las funciones del programa previo al lanzamiento son las siguientes:
-* Compatibilidad para implementar condiciones anidadas con la funcionalidad When-then-else
-* Validar o restablecer paneles y formularios, incluidos campos
-* Compatibilidad con funciones de JavaScript modernas, como las funciones izquierda y flecha (compatibilidad con ES10) dentro de funciones personalizadas.
-</span>
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| Componentes de base | [Haga clic aquí](/help/forms/rule-editor.md) |
+| Componentes principales | Este artículo |
 
 # Agregar reglas a un formulario adaptable (componentes principales) {#adaptive-forms-rule-editor}
 
@@ -30,12 +29,20 @@ El editor de reglas proporciona una interfaz de usuario intuitiva y simplificada
 * Establecer un valor para un objeto
 * Validar el valor de un objeto
 * Ejecutar funciones para calcular el valor de un objeto
-* Invocar un servicio del Modelo de datos de formulario (FDM) y realizar una operación
+* Invocar un servicio del modelo de datos de formulario (FDM) y realizar una operación
 * Establecer la propiedad de un objeto
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
 Los usuarios que se agregan al grupo de usuarios avanzados de formularios pueden crear scripts y editar los existentes. Los usuarios del grupo [!DNL forms-users] pueden utilizar los scripts, pero no crearlos o editarlos.
+
+## Diferencia entre el editor de reglas en los componentes principales y el editor de reglas en los componentes básicos
+
+{{rule-editor-diff}}
+
+>[!NOTE]
+>
+> Para ver en detalle cómo crear y utilizar funciones personalizadas, consulte [Funciones personalizadas en Forms adaptable (componentes principales)](/help/forms/create-and-use-custom-functions.md) artículo.
 
 ## Explicación de una regla {#understanding-a-rule}
 
@@ -117,13 +124,14 @@ En palabras simples, una regla When típica está estructurada de la siguiente m
 
 `Then, do the following:`
 
-Acción 2 en objeto B;
-AND
-Acción 3 en objeto C;
+`Action 2 on Object B;`
+`AND`
+`Acción 3 sobre el objeto C;
 
 `Else, do the following:`
 
-Acción 2 en objeto C; _
+`Action 2 on Object C;`
+_
 
 Cuando tiene un componente de varios valores, como botones de opción o lista, mientras crea una regla para ese componente, las opciones se recuperan automáticamente y se ponen a disposición del creador de reglas. No es necesario volver a escribir los valores de las opciones.
 
@@ -139,6 +147,58 @@ Al escribir una regla When, puede activar la acción Clear Value Of. La acción 
 >
 > Cuando el tipo de regla solo admite instrucciones de un solo nivel then-else.
 
+#### Varios campos permitidos en [!UICONTROL Cuándo] {#allowed-multiple-fields}
+
+En el **Cuándo** , tiene la opción de agregar otros campos aparte del campo al que se aplica la regla.
+
+Por ejemplo, con el tipo de regla When, puede evaluar una condición en diferentes objetos de formulario y realizar la acción:
+
+Cuándo:
+
+(Objeto A, condición 1)
+
+Y/O
+
+(Objeto B Condición 2)
+
+A continuación, haga lo siguiente:
+
+Acción 1 en el objeto A
+
+_
+
+![Varios campos permitidos en Cuándo](/help/forms/assets/allowed-multiple-field-when.png)
+
+##### Consideraciones al utilizar los campos múltiples permitidos en la función de condición When
+
+* Asegúrese de que la variable [El componente principal está configurado en la versión 3.0.14 o posterior](https://github.com/adobe/aem-core-forms-components) para utilizar esta función en el editor de reglas.
+* Si las reglas se aplican a diferentes campos dentro de la condición When, la regla entra en déclencheur aunque solo se cambie uno de esos campos.
+
+
+<!--
+* It is not possible to add multiple fields in the When condition while applying rules to a button.
+
+##### To enable Allowed Multiple fields in When condition feature
+
+Allowed Multiple fields in When condition feature is disabled by default. To enable this feature, add a custom property at the template policy:
+
+1. Open the corresponding template associated with an Adaptive Form in the template editor.
+1. Select the existing policy as **formcontainer-policy**.
+1. Navigate to the **[!UICONTROL Structure]**  view and, from the **[!UICONTROL Allowed Components]** list, open the **[!UICONTROL Adaptive Forms Container]** policy.
+1. Go to the **[!UICONTROL Custom Properties]** tab and to add a custom property, click **[!UICONTROL Add]**.
+1. Specify the **Group Name** of your choice. For example, in our case, we added the group name as **allowedfeature**.
+1. Add the **key** and **value** pair as follows:
+   * key: fd:changeEventBehaviour
+   * value: deps
+1. Click **[!UICONTROL Done]**. -->
+
+Si los campos múltiples permitidos en la función de condición When encuentran algún problema, siga los pasos de solución de problemas como:
+
+1. Abra el formulario en modo de edición.
+1. Abra el Explorador de contenido y seleccione **[!UICONTROL Contenedor de guía]** del formulario adaptable.
+1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
+1. Haga clic en Listo y vuelva a guardar el cuadro de diálogo.
+
 **[!UICONTROL Hide]**. Oculta el objeto especificado.
 
 **[!UICONTROL Show]**. Muestra el objeto especificado.
@@ -147,15 +207,15 @@ Al escribir una regla When, puede activar la acción Clear Value Of. La acción 
 
 **[!UICONTROL Disable]**. Deshabilita el objeto especificado.
 
-**[!UICONTROL Invocar servicio]** Invoca un servicio configurado en un modelo de datos de formulario (FDM). Al elegir la operación Invoke Service, aparece un campo. Al pulsar el campo, se muestran todos los servicios configurados en todo el modelo de datos de formulario (FDM) de la aplicación [!DNL Experience Manager] ejemplo. Al elegir un servicio del modelo de datos de formulario, aparecen más campos en los que se pueden asignar objetos de formulario con parámetros de entrada y salida para el servicio especificado. Consulte la regla de ejemplo para invocar los servicios del Modelo de datos de formulario (FDM).
+**[!UICONTROL Invoke service]**. Invoca un servicio configurado en un modelo de datos de formulario (FDM). Al elegir la operación Invocar un servicio, aparece un campo. Al pulsar el campo, se muestran todos los servicios configurados en todos los modelos de datos de formularios de la instancia de [!DNL Experience Manager]. Al elegir un servicio del modelo de datos de formulario, aparecen más campos en los que se pueden asignar objetos de formulario con parámetros de entrada y salida para el servicio especificado. Consulte la regla de ejemplo para invocar los servicios del Modelo de datos de formulario (FDM).
 
 Además del servicio de modelo de datos de formulario, puede especificar una URL de WSDL directa para invocar un servicio web. Sin embargo, un servicio de modelo de datos de formulario tiene muchas ventajas y es el método recomendado para invocar un servicio.
 
-Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario (FDM), consulte [[!DNL Experience Manager Forms] Integración de datos](data-integration.md).
+Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario (FDM), consulte integración de datos de [[!DNL Experience Manager Forms] ](data-integration.md).
 
-**[!UICONTROL Set value of]**. Calcula y establece el valor del objeto especificado. Puede establecer el valor del objeto en una cadena, el valor de otro objeto, el valor calculado mediante expresión o función matemática, el valor de una propiedad de un objeto o el valor de salida de un servicio configurado de modelo de datos de formulario. Al elegir la opción de servicio web, se muestran todos los servicios configurados en todo el modelo de datos de formulario (FDM) de la [!DNL Experience Manager] ejemplo. Al elegir un servicio del modelo de datos de formulario, aparecen más campos en los que se pueden asignar objetos de formulario con parámetros de entrada y salida para el servicio especificado.
+**[!UICONTROL Set value of]**. Calcula y establece el valor del objeto especificado. Puede establecer el valor del objeto en una cadena, el valor de otro objeto, el valor calculado mediante expresión o función matemática, el valor de una propiedad de un objeto o el valor de salida de un servicio configurado de modelo de datos de formulario. Al elegir la opción de servicio web, se muestran todos los servicios configurados en todos los modelos de datos de formularios de la instancia de [!DNL Experience Manager]. Al elegir un servicio del modelo de datos de formulario, aparecen más campos en los que se pueden asignar objetos de formulario con parámetros de entrada y salida para el servicio especificado.
 
-Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario (FDM), consulte [[!DNL Experience Manager Forms] Integración de datos](data-integration.md).
+Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario (FDM), consulte integración de datos de [[!DNL Experience Manager Forms] ](data-integration.md).
 
 El tipo de regla **[!UICONTROL Establecer propiedad]** permite establecer el valor de una propiedad del objeto especificado en función de una acción de condición. Puede establecer la propiedad en una de las siguientes opciones:
 * visible (booleano)
@@ -899,8 +959,6 @@ Rule in the code editor -->
 En el formulario de orden de compra que se explica en el ejemplo anterior, se desea restringir el pedido de más de una cantidad de cualquier producto cuyo precio sea superior a 10 000. Para realizar esta validación, puede escribir una regla de validación como se muestra a continuación.
 
 ![Example-validate](assets/example-validate.png)
-
-Regla en el editor visual
 
 <!-- The rule appears as follows in the code editor.
 

@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8c60b02c1759fc4d0cf66d6c8f1c2edf294fc1ce
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 100%
+source-wordcount: '516'
+ht-degree: 61%
 
 ---
 # Fragmentos de código {#snippets}
@@ -64,4 +64,56 @@ ht-degree: 100%
 * [Añadir secciones repetibles a un formulario](/help/edge/docs/forms/repeatable-forms.md)
 * [Mostrar un mensaje de agradecimiento personalizado después del envío del formulario](/help/edge/docs/forms/thank-you-page-form.md)
 * [Componentes de bloque de formulario adaptable y sus propiedades](/help/edge/docs/forms/form-components.md)
+
+
+## Diferencia entre el editor de reglas en los componentes principales y el editor de reglas en los componentes básicos  {#rule-editor-diff}
+
+En la tabla siguiente se muestra la diferencia entre las funciones disponibles en los componentes principales del editor de reglas y los componentes básicos del editor de reglas:
+
+<table>
+  <tbody>
+  <tr>
+    <td><strong>Características</strong></td>
+    <td><strong>Componentes de base de formulario adaptable</strong></td>
+    <td><strong>Componentes principales de formularios adaptables</strong></td>   
+    </tr>
+  </tr>
+  <tr>
+    <td>Determinar las opciones de la lista desplegable </td>
+    <td>Las opciones de la lista desplegable se establecen con el Editor de reglas de <b>Configurar opciones de</b> propiedad.</td>
+    <td>Las opciones desplegables se establecen mediante las funciones personalizadas. 
+   </td>
+   </tr>
+     </tr>
+   <tr>
+    <td>Realizar operaciones matemáticas en el campo del panel repetible </td>
+    <td>Las funciones matemáticas OOTB se pueden aplicar en campos de panel repetibles para realizar funciones como suma o promedio. </td>
+    <td>Las operaciones matemáticas en el campo del panel repetible se pueden realizar mediante las funciones personalizadas.
+   </td>
+   </tr>
+      <tr>
+    <td>Validar/restablecer campo/panel/regla de formulario en "Then" </td>
+    <td>Las funciones Validar y Restablecer solo admiten objetos de formulario en el Editor de reglas. 
+   </td>
+    <td>Las funciones Validar y Restablecer admiten objetos de formulario, panel o campo en el Editor de reglas. 
+   </td>
+   </tr>
+   <tr>
+    <td>Compatibilidad con ES10 </td>
+    <td>ES10 aún no es compatible. </td>
+    <td>Compatibilidad con funciones de JavaScript modernas, como las funciones izquierda y flecha (compatibilidad con ES10) dentro de funciones personalizadas. 
+   </td>
+   </tr>
+   </tr>
+   <tr>
+   <td>Propiedad de salida del servicio</td>
+   <td> La propiedad de salida del servicio es compatible con <b>Configurar el valor de</b> del Editor de reglas. </td>
+   <td>El <b>Configurar el valor de</b> La opción no admite <b>Salida de servicio</b> para invocar API en el Editor de reglas.
+   </td>
+   </tr>
+   </tr>
+   </tr>
+  </tbody>
+  <table>
+  </tbody>
 

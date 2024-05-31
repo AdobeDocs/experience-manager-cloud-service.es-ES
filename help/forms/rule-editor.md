@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '6468'
-ht-degree: 97%
+source-wordcount: '6492'
+ht-degree: 99%
 
 ---
 
@@ -20,6 +20,12 @@ ht-degree: 97%
 | -------- | ---------------------------- |
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
+
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| Componente principal | [Haga clic aquí](/help/forms/rule-editor-core-components.md) |
+| Componente de base | Este artículo |
 
 ## Información general {#overview}
 
@@ -38,6 +44,10 @@ El editor de reglas proporciona una interfaz de usuario intuitiva y simplificada
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
 Los usuarios que se agregan al grupo de usuarios avanzados de formularios pueden crear scripts y editar los existentes. Los usuarios del grupo [!DNL forms-users] pueden utilizar los scripts, pero no crearlos o editarlos.
+
+## Diferencia entre el editor de reglas en los componentes principales y el editor de reglas en los componentes básicos
+
+{{rule-editor-diff}}
 
 ## Explicación de una regla {#understanding-a-rule}
 
@@ -140,15 +150,15 @@ Al escribir una regla When, puede activar la acción Clear Value Of. La acción 
 
 **[!UICONTROL Disable]**. Deshabilita el objeto especificado.
 
-**[!UICONTROL Invocar servicio]** Invoca un servicio configurado en un modelo de datos de formulario (FDM). Al elegir la operación Invoke Service, aparece un campo. Al pulsar el campo, se muestran todos los servicios configurados en todo el modelo de datos de formulario (FDM) de la aplicación [!DNL Experience Manager] ejemplo. Al elegir un servicio del Modelo de datos de formulario (FDM), aparecen más campos en los que se pueden asignar objetos de formulario con parámetros de entrada y salida para el servicio especificado. Consulte la regla de ejemplo para invocar los servicios de modelo de datos de formulario.
+**[!UICONTROL Invoke service]**. Invoca un servicio configurado en un modelo de datos de formulario (FDM). Al elegir la operación Invocar un servicio, aparece un campo. Al pulsar el campo, se muestran todos los servicios configurados en todos los modelos de datos de formularios de la instancia de [!DNL Experience Manager]. Al elegir un servicio del modelo de datos de formulario (FDM), aparecen más campos en los que se pueden asignar objetos de formulario con parámetros de entrada y salida para el servicio especificado. Consulte la regla de ejemplo para invocar los servicios de modelo de datos de formulario.
 
 Además del servicio de modelo de datos de formulario, puede especificar una URL de WSDL directa para invocar un servicio web. Sin embargo, un servicio de modelo de datos de formulario tiene muchas ventajas y es el método recomendado para invocar un servicio.
 
-Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario (FDM), consulte [[!DNL Experience Manager Forms] Integración de datos](data-integration.md).
+Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario (FDM), consulte integración de datos de [[!DNL Experience Manager Forms] ](data-integration.md).
 
-**[!UICONTROL Set value of]**. Calcula y establece el valor del objeto especificado. Puede establecer el valor del objeto en una cadena, el valor de otro objeto, el valor calculado mediante expresión o función matemática, el valor de una propiedad de un objeto o el valor de salida de un servicio configurado de modelo de datos de formulario. Al elegir la opción de servicio web, se muestran todos los servicios configurados en todo el modelo de datos de formulario (FDM) de la [!DNL Experience Manager] ejemplo. Al elegir un servicio del modelo de datos de formulario, aparecen más campos en los que se pueden asignar objetos de formulario con parámetros de entrada y salida para el servicio especificado.
+**[!UICONTROL Set value of]**. Calcula y establece el valor del objeto especificado. Puede establecer el valor del objeto en una cadena, el valor de otro objeto, el valor calculado mediante expresión o función matemática, el valor de una propiedad de un objeto o el valor de salida de un servicio configurado de modelo de datos de formulario. Al elegir la opción de servicio web, se muestran todos los servicios configurados en todos los modelos de datos de formularios de la instancia de [!DNL Experience Manager]. Al elegir un servicio del modelo de datos de formulario, aparecen más campos en los que se pueden asignar objetos de formulario con parámetros de entrada y salida para el servicio especificado.
 
-Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario (FDM), consulte [[!DNL Experience Manager Forms] Integración de datos](data-integration.md).
+Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario (FDM), consulte integración de datos de [[!DNL Experience Manager Forms] ](data-integration.md).
 
 El tipo de regla **[!UICONTROL Establecer propiedad]** permite establecer el valor de una propiedad del objeto especificado en función de una acción de condición. Puede establecer la propiedad en una de las siguientes opciones:
 * visible (booleano)
@@ -659,7 +669,7 @@ Para abrir un formulario en modo de edición, seleccione un formulario y **[!UIC
 
    >[!NOTE]
    >
-   > Para invocar un modelo de datos de formulario (FDM) desde el editor de reglas utilizando funciones personalizadas, [ver aquí](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services).
+   > Para invocar un modelo de datos de formulario (FDM) desde el editor de reglas utilizando funciones personalizadas, [véase aquí](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services).
 
 #### Tipos admitidos para la declaración de funciones {#function-declaration-supported-types}
 

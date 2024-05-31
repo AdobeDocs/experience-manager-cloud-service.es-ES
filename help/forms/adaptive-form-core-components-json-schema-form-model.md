@@ -4,10 +4,11 @@ description: Aprenda a crear un esquema JSON para los componentes principales de
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 10389af2bce06f95d4d841371b7111340d40edaa
+exl-id: 185b12bc-cea9-45c8-9b57-dc313bd0cfaa
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '1301'
-ht-degree: 85%
+source-wordcount: '1347'
+ht-degree: 82%
 
 ---
 
@@ -36,6 +37,7 @@ Las funciones principales del uso de un esquema JSON son:
 * La estructura del JSON se muestra como un árbol en la pestaña Buscador de contenido en el modo de creación de un formulario adaptable. Puede arrastrar y agregar un elemento de la jerarquía JSON al formulario adaptable en función de los componentes principales.
 * Puede rellenar previamente el formulario utilizando un JSON que cumpla con el esquema asociado.
 * En el envío, los datos especificados por el usuario se envían como JSON, que se adhiere al esquema asociado.
+* También puede crear el formulario basado en el esquema JSON según las especificaciones del [Versión 2012-20](https://json-schema.org/draft/2020-12/release-notes).
 
 Un esquema JSON consta de tipos de elementos simples y complejos. Los elementos tienen atributos que agregan reglas al elemento. Cuando estos elementos y atributos se arrastran a un formulario adaptable, se asignan automáticamente a los componentes del formulario adaptable correspondientes.
 
@@ -121,181 +123,314 @@ El formulario adaptable utiliza la información disponible en el esquema JSON pa
 
 ## Ejemplo de esquema JSON {#sample-json-schema}
 
-Este es un ejemplo de esquema JSON.
+>[!BEGINTABS]
+
+>[!TAB Esquema JSON v4]
 
 ```json
 {
- "$schema": "https://json-schema.org/draft-04/schema#",
- "definitions": {
+"$schema": "https://json-schema.org/draft-04/schema#",
+"definitions": {
   "employee": {
-   "type": "object",
-   "properties": {
+  "type": "object",
+  "properties": {
     "userName": {
      "type": "string"
-    },
+   },
     "dateOfBirth": {
      "type": "string",
      "format": "date"
     },
     "email": {
-     "type": "string",
-     "format": "email"
+    "type": "string",
+    "format": "email"
     },
     "language": {
      "type": "string"
-    },
+   },
     "personalDetails": {
      "$ref": "#/definitions/personalDetails"
-    },
+   },
     "projectDetails": {
      "$ref": "#/definitions/projectDetails"
     }
-   },
-   "required": [
-    "userName",
-    "dateOfBirth",
-    "language"
-   ]
   },
-  "personalDetails": {
+  "required": [
+   "userName",
+   "dateOfBirth",
+   "language"
+  ]
+  },
+    "personalDetails": {
    "type": "object",
-   "properties": {
-    "GeneralDetails": {
-     "$ref": "#/definitions/GeneralDetails"
-    },
+  "properties": {
+     "GeneralDetails": {
+    "$ref": "#/definitions/GeneralDetails"
+   },
     "Family": {
      "$ref": "#/definitions/Family"
     },
     "Income": {
      "$ref": "#/definitions/Income"
-    }
    }
-  },
+   }
+     },
   "projectDetails": {
    "type": "array",
    "items": {
-    "properties": {
-     "name": {
-      "type": "string"
-     },
-     "age": {
-      "type": "number"
-     },
-     "projects": {
-      "$ref": "#/definitions/projects"
-     }
-    }
-   },
-   "minItems": 1,
-   "maxItems": 4
-  },
-  "projects": {
-   "type": "array",
-   "items": {
-    "properties": {
-     "name": {
-      "type": "string"
-     },
-     "age": {
-      "type": "number"
-     },
-     "projectsAdditional": {
-      "$ref": "#/definitions/projectsAdditional"
-     }
-    }
-   },
-   "minItems": 1,
-   "maxItems": 4
-  },
-  "projectsAdditional": {
-   "type": "array",
-   "items": {
-    "properties": {
-     "Additional_name": {
-      "type": "string"
-     },
-     "Additional_areacode": {
-      "type": "number"
-     }
-    }
-   },
-   "minItems": 1,
-   "maxItems": 4
-  },
-  "GeneralDetails": {
-   "type": "object",
    "properties": {
-    "age": {
-     "type": "number"
-    },
-    "married": {
-     "type": "boolean"
-    },
-    "phone": {
-     "type": "number"
-    },
-    "address": {
-     "type": "string"
-    }
-   }
-  },
-  "Family": {
-   "type": "object",
-   "properties": {
-    "spouse": {
-     "$ref": "#/definitions/spouse"
-    },
-    "kids": {
-     "$ref": "#/definitions/kids"
-    }
-   }
-  },
-  "Income": {
-   "type": "object",
-   "properties": {
-    "monthly": {
-     "type": "number"
-    },
-    "yearly": {
-     "type": "number"
-    }
-   }
-  },
-  "spouse": {
-   "type": "object",
-   "properties": {
-    "name": {
-     "type": "string"
-    },
-    "Income": {
-     "$ref": "#/definitions/Income"
-    }
-   }
-  },
-  "kids": {
-   "type": "array",
-   "items": {
-    "properties": {
-     "name": {
-      "type": "string"
-     },
-     "age": {
-      "type": "number"
-     }
-    }
+   "name": {
+    "type": "string"
    },
-   "minItems": 1,
-   "maxItems": 4
+   "age": {
+    "type": "number"
+   },
+   "projects": {
+    "$ref": "#/definitions/projects"
+   }
   }
  },
+ "minItems": 1,
+ "maxItems": 4
+},
+"projects": {
+ "type": "array",
+ "items": {
+  "properties": {
+   "name": {
+    "type": "string"
+   },
+   "age": {
+    "type": "number"
+   },
+   "projectsAdditional": {
+    "$ref": "#/definitions/projectsAdditional"
+   }
+  }
+ },
+ "minItems": 1,
+ "maxItems": 4
+},
+"projectsAdditional": {
+ "type": "array",
+ "items": {
+  "properties": {
+   "Additional_name": {
+    "type": "string"
+   },
+   "Additional_areacode": {
+    "type": "number"
+   }
+  }
+ },
+ "minItems": 1,
+ "maxItems": 4
+},
+"GeneralDetails": {
  "type": "object",
  "properties": {
-  "employee": {
-   "$ref": "#/definitions/employee"
+  "age": {
+   "type": "number"
+  },
+  "married": {
+   "type": "boolean"
+  },
+  "phone": {
+   "type": "number",
+  },
+  "address": {
+   "type": "string"
   }
  }
+},
+"Family": {
+ "type": "object",
+ "properties": {
+  "spouse": {
+   "$ref": "#/definitions/spouse"
+  },
+  "kids": {
+   "$ref": "#/definitions/kids"
+  }
+ }
+},
+"Income": {
+ "type": "object",
+ "properties": {
+  "monthly": {
+   "type": "number"
+  },
+  "yearly": {
+   "type": "number"
+  }
+ }
+},
+"spouse": {
+ "type": "object",
+ "properties": {
+  "name": {
+   "type": "string"
+  },
+  "Income": {
+   "$ref": "#/definitions/Income"
+  }
+ }
+},
+"kids": {
+ "type": "array",
+ "items": {
+  "properties": {
+   "name": {
+    "type": "string"
+   },
+   "age": {
+    "type": "number"
+   }
+  }
+ },
+ "minItems": 1,
+ "maxItems": 4
+}
+},
+"type": "object",
+"properties": {
+"employee": {
+ "$ref": "#/definitions/employee"
+}
+}
 }
 ```
+
+
+>[!TAB Esquema JSON 2012-20]
+
+
+```json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/employee.schema.json",
+  "$defs": {
+    "employee": {
+      "type": "object",
+      "properties": {
+        "userName": {
+          "type": "string"
+        },
+        "dateOfBirth": {
+          "type": "string",
+          "format": "date"
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "language": {
+          "type": "string"
+        },
+        "personalDetails": {
+          "$ref": "#/$defs/personalDetails"
+        },
+        "projectDetails": {
+          "$ref": "#/$defs/projectDetails"
+        }
+      },
+      "required": [
+        "userName",
+        "dateOfBirth",
+        "language"
+      ]
+    },
+    "personalDetails": {
+      "type": "object",
+      "properties": {
+        "GeneralDetails": {
+          "$ref": "#/$defs/GeneralDetails"
+        },
+        "Family": {
+          "$ref": "#/$defs/Family"
+        },
+        "Income": {
+          "$ref": "#/$defs/Income"
+        }
+      }
+    },
+    "projectDetails": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "age": {
+            "type": "number"
+          },
+          "projects": {
+            "$ref": "#/$defs/projects"
+          }
+        }
+      },
+      "minItems": 1,
+      "maxItems": 4
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "age": {
+            "type": "number"
+          },
+          "projectsAdditional": {
+            "$ref": "#/$defs/projectsAdditional"
+          }
+        }
+      },
+      "minItems": 1,
+      "maxItems": 4
+    },
+    "projectsAdditional": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "Additional_name": {
+            "type": "string"
+          },
+          "Additional_areacode": {
+            "type": "number"
+          }
+        }
+      },
+      "minItems": 1,
+      "maxItems": 4
+    },
+    "GeneralDetails": {
+      "type": "object",
+      "properties": {
+        "age": {
+          "type": "number"
+        },
+        "married": {
+          "type": "boolean"
+        },
+        "phone": {
+          "type": "number",
+        },
+        "address": {
+          "type": "string"
+        }
+      }
+      }
+  }
+  }
+```
+
+>[!ENDTABS]
+
+Los cambios clave de las especificaciones del esquema JSON V4 a la versión 2020-12 son los siguientes:
+* El ID se ha declarado como `$id`
+* se declara como `$defs`
 
 ### Definiciones de esquema reutilizables {#reusable-schema-definitions}
 
@@ -739,6 +874,7 @@ Los formularios adaptables no son compatibles con las siguientes construcciones 
 * Tipos de unión, como any y
 * OneOf, AnyOf, AllOf y NOT
 * Solo es compatible con matrices homogéneas. Por lo tanto, la restricción de elementos debe ser un objeto y no una matriz.
+* Referencias de URI en $ref
 
 ## Preguntas frecuentes {#frequently-asked-questions}
 
@@ -761,7 +897,7 @@ La extensión del archivo de esquema JSON debe ser .schema.json. Por ejemplo, &l
 
 No, `aem:afProperties` no es compatible con los componentes principales. Esta propiedad solo se admite para componentes de base.
 
-## Consulte también {#see-also}
+## Ver también {#see-also}
 
 {{see-also}}
 
