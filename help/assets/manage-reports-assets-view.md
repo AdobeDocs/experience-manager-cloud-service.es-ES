@@ -2,10 +2,10 @@
 title: Administración de informes en la vista Recursos
 description: Acceda a los datos de la sección de informes de la vista Recursos para evaluar el uso de productos y funciones, y obtener información sobre las métricas de éxito clave.
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
-source-git-commit: 0eea9b83d437c7e91daae08c33d94a83ba1db3f9
+source-git-commit: 7e8d4487ec545b5625d6401513df00d5c6240ee2
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 83%
+source-wordcount: '817'
+ht-degree: 89%
 
 ---
 
@@ -58,11 +58,6 @@ Haga clic en **[!UICONTROL Insights]** en el panel de navegación izquierdo para
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
-* **Recuento de recursos por tamaño:** Segmenta el recuento total de recursos en el entorno de vista de recursos en diferentes intervalos de tamaño, destacando el recuento y el porcentaje de recursos en cada intervalo de tamaño, representados por un gráfico de anillo.
-  ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
-* **Recuento de recursos por tipo de recurso:** Segmenta el recuento total de recursos en el entorno de vista de recursos, resaltando el recuento y el porcentaje de recursos en función de sus tipos de archivo, representados por un gráfico de anillo.
-  ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
-
 
 ## Creación de un informe de descarga {#create-download-report}
 
