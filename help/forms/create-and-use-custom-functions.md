@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: b6061690fa278ccb883656cefd065d06ab924499
+source-git-commit: 05b149c60cb8d05489668b13f63ed5b0e1d0bbfb
 workflow-type: tm+mt
-source-wordcount: '3521'
+source-wordcount: '3522'
 ht-degree: 4%
 
 ---
@@ -442,7 +442,7 @@ Vamos a aprender cómo las funciones personalizadas utilizan los objetos globale
 
 ![Formulario de contacto](/help/forms/assets/contact-us-form.png)
 
-+++ Caso de uso: mostrar un panel con `SetProperty` regla
+#### Caso de uso: mostrar un panel con la regla SetProperty
 
 Agregue el siguiente código en la función personalizada como se explica en la [create-custom-function](#create-custom-function) , para establecer el campo de formulario como `Required`.
 
