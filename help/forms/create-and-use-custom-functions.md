@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 4cd7924e99809146e111f6b3309db0a8292e61b1
+source-git-commit: 6f50bdf2a826654e0d5b35de5bd50e66981fb56a
 workflow-type: tm+mt
-source-wordcount: '3510'
+source-wordcount: '3513'
 ht-degree: 4%
 
 ---
@@ -649,7 +649,7 @@ También puede inspeccionar la ventana de la consola para ver los datos enviados
 
 
 
-#### Anular los mensajes de éxito y error del envío del formulario
+#### Anular los mensajes de éxito y error del envío para el formulario adaptable
 
 Añada la siguiente línea de código como se explica en la sección [create-custom-function](#create-custom-function) , para personalizar el envío o el mensaje de error para los envíos de formularios y mostrar los mensajes de envío de formularios en un cuadro modal:
 
