@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: 64704592c663c0287505d3a8a8e92781d1702497
 workflow-type: tm+mt
-source-wordcount: '1422'
-ht-degree: 34%
+source-wordcount: '1425'
+ht-degree: 35%
 
 ---
 
@@ -147,31 +147,31 @@ Los formatos de documento admitidos para las funciones de administración de rec
 
 ## Formatos de vídeo {#video-formats}
 
-| Formato del archivo | Generación de miniaturas | Extracción de metadatos | Anchura/Altura | Vista previa |
-| ----------- | -------------------- | ------------------- | ------------ | ------- |
-| 3G2 | - | ✓ | - | - |
-| 3GP | - | ✓ | - | - |
-| AVI | ✓ | ✓ | ✓ | ✓ |
-| DIVX | ✓ | - | ✓ | ✓ |
-| F4V | ✓ | ✓ | ✓ | ✓ |
-| FLV | ✓ | ✓ | ✓ | ✓ |
-| M2T | ✓ | - | ✓ | ✓ |
-| M2TS | ✓ | - | ✓ | ✓ |
-| M2V | ✓ | - | ✓ | ✓ |
-| M4V | ✓ | ✓ | ✓ | ✓ |
-| MKV | ✓ | - | ✓ | ✓ |
-| MOV | ✓ | ✓ | ✓ | ✓ |
-| MP4 | ✓ | ✓ | ✓ | ✓ |
-| MPEG | ✓ | ✓ | ✓ | ✓ |
-| MPG | ✓ | ✓ | ✓ | ✓ |
-| MTS | ✓ | - | ✓ | ✓ |
-| MXF | ✓ | - | ✓ | ✓ |
-| OGV | ✓ | - | ✓ | ✓ |
-| QT | ✓ | - | ✓ | ✓ |
-| R3D | - | ✓ | ✓ | ✓ |
-| SWF | ✓ | - | ✓ | ✓ |
-| WebM | ✓ | - | ✓ | ✓ |
-| WMV | ✓ | ✓ | ✓ | ✓ |
+| Formato del archivo | Generación de miniaturas | Extracción de metadatos | Anchura/Altura | Vista previa | Salida |
+| ----------- | -------------------- | ------------------- | ------------ | ------- | ------- |
+| 3G2 | - | ✓ | - | - | - |
+| 3GP | - | ✓ | - | - | - |
+| AVI | ✓ | ✓ | ✓ | ✓ | - |
+| DIVX | ✓ | - | ✓ | ✓ | - |
+| F4V | ✓ | ✓ | ✓ | ✓ | - |
+| FLV | ✓ | ✓ | ✓ | ✓ | - |
+| M2T | ✓ | - | ✓ | ✓ | - |
+| M2TS | ✓ | - | ✓ | ✓ | - |
+| M2V | ✓ | - | ✓ | ✓ | - |
+| M4V | ✓ | ✓ | ✓ | ✓ | - |
+| MKV | ✓ | - | ✓ | ✓ | - |
+| MOV | ✓ | ✓ | ✓ | ✓ | - |
+| MP4 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| MPEG | ✓ | ✓ | ✓ | ✓ | - |
+| MPG | ✓ | ✓ | ✓ | ✓ | - |
+| MTS | ✓ | - | ✓ | ✓ | - |
+| MXF | ✓ | - | ✓ | ✓ | - |
+| OGV | ✓ | - | ✓ | ✓ | - |
+| QT | ✓ | - | ✓ | ✓ | - |
+| R3D | - | ✓ | ✓ | ✓ | - |
+| SWF | ✓ | - | ✓ | ✓ | - |
+| WebM | ✓ | - | ✓ | ✓ | ✓ |
+| WMV | ✓ | ✓ | ✓ | ✓ | - |
 
 ## Formatos de audio {#audio-formats}
 
@@ -282,5 +282,5 @@ Consulte también [Formatos 3D admitidos](/help/assets/file-format-support.md#su
 
 >[!MORELIKETHIS]
 >
->* [Procesamiento de recursos mediante microservicios de recursos](asset-microservices-overview.md)
+>* [Procesamiento de recursos mediante microservicios de recursos](asset-microservices-overview.md).
 >* [Formatos de archivo compatibles con el etiquetado inteligente de recursos basados en texto](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
