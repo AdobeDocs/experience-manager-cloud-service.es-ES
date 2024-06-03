@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: 8123d5c9e3343361baab651d2c1eb72779b952ab
 workflow-type: tm+mt
-source-wordcount: '4997'
+source-wordcount: '5001'
 ht-degree: 99%
 
 ---
@@ -741,6 +741,7 @@ ht-degree: 99%
       + [Instalación y configuración](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Almacenamiento en caché de Dispatcher y CDN](/help/forms/troubleshooting-caching-performance.md)
       + [Reinicio del SDK de AEM](/help/forms/restart-aem-sdk.md)
+      + [Resolver errores de creación de Forms](/help/forms/form-creation-failing.md)
 + Screens {#screens-as-cloud-service}
    + Información general para Screens as a Cloud Service {#overview}
       + [Introducción](/help/screens-cloud/introduction/introduction.md)
@@ -1186,7 +1187,7 @@ ht-degree: 99%
       + [Edge Side incluye](/help/implementing/dispatcher/edge-side-includes.md)
       + [Configuración de las credenciales y la autenticación de CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md)
       + [Configuración de páginas de error de la CDN](/help/implementing/dispatcher/cdn-error-pages.md)
-      + [Depuración de la caché de CDN](/help/implementing/dispatcher/cdn-cache-purge.md)
+      + [Depuración de la caché de la CDN](/help/implementing/dispatcher/cdn-cache-purge.md)
       + [Almacenamiento en caché en AEM as a Cloud Service](/help/implementing/dispatcher/caching.md)
 + Conectores {#connectors}
    + [Implementación de un conector de AEM](/help/connectors/implement.md)
