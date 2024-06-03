@@ -3,14 +3,14 @@ title: Solucionar errores de creación de formularios
 description: Solucionar errores de creación de formularios en el entorno as a Cloud Service de AEM Forms.
 feature: Adaptive Forms, Troubleshooting
 role: User
-source-git-commit: 5e7cd7015d68cc634fcf6a99dd552289abbaedcf
+source-git-commit: 23491130b44147753c5b98f316be5a9e5937afea
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 6%
+source-wordcount: '183'
+ht-degree: 5%
 
 ---
 
-# Problema {#form-creation-fails}
+# Problema al publicar formularios{#form-creation-fails}
 
 Después de que los usuarios actualicen a la versión as a Cloud Service de AEM Forms `2024.5.16461`:
 
