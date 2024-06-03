@@ -2,7 +2,7 @@
 title: Integración nativa de AEM Assets con Adobe Express
 description: La integración nativa de AEM Assets con Adobe Express permite acceder directamente a los recursos almacenados en AEM Assets desde la interfaz de usuario de Adobe Express.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 9044d5cefe7064a015c18c988e29b8c2e8088bae
+source-git-commit: c6cde0a3f5a1513f8158c654167ec0332e4c42a7
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 9%
@@ -58,7 +58,7 @@ Después de incorporar las modificaciones adecuadas en el lienzo Express, puede 
 
 4. Haga clic en el área de texto debajo de **Carpeta de destino** para seleccionar una ubicación y guardar los recursos.
 
-   ![AEM Guardado de recursos en el](/help/assets/assets/page-selection-and-destination-folder.png)
+   ![AEM Guardado de recursos en el](/help/assets/assets/page-selection-and-destination-folder.svg)
 
 5. Opcional: puede añadir metadatos de campaña para la carga mediante la variable **Nombre del proyecto o campaña** field. Puede utilizar un nombre existente o crear uno nuevo. Puede definir varios nombres de proyecto o campaña para la carga. Para registrar el nombre, simplemente escriba el nombre y pulse Intro.
 Como práctica recomendada, Adobe recomienda especificar valores en el resto de los campos, así como crear una experiencia de búsqueda mejorada para los recursos cargados.
@@ -82,5 +82,5 @@ c) No se admiten vídeos con fondos transparentes (canal alfa).
 
 3. Para exportar vídeo MP4:
 
-   a) El tamaño máximo de archivo admitido es de 200 MB. Si este límite supera, aparece un mensaje de alerta con una sugerencia de solución alternativa, como se muestra en la siguiente imagen
-   ![alerta con solución](/help/assets/assets/alert-with-workaround.png).
+   a) El tamaño máximo de archivo admitido es de 200 MB. Si este límite supera, aparece un mensaje de alerta con una sugerencia de solución alternativa, como se muestra en la siguiente imagen.
+   ![alerta con solución](/help/assets/assets/alert-with-workaround.png)
