@@ -2,10 +2,10 @@
 title: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 558babc0124a8ee8c1337b91c5ef016ed238c935
+source-git-commit: 624ba716cb2ec2a45b0ed70516d0b2ad1db94912
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 48%
+source-wordcount: '353'
+ht-degree: 46%
 
 ---
 
@@ -31,11 +31,13 @@ La activación de funcionalidades 2024.6.0 proporcionará el conjunto completo d
 
 ### Problemas solucionados {#fixed-issues-16544}
 
-* AEM DXML-17171: Guías de la: La operación de copiar y pegar de temas que exceden los 15 KB falla con un error inesperado.
-* AEM DXML-17088: Guías de la aplicación: la funcionalidad para cambiar el estado del documento desde el **Propiedades de archivo** el panel no funciona correctamente y cambia al *Borrador* estado.
-* AEM DXML-16931: Guías de: Las imágenes vinculadas de los temas no aparecen en la línea de base después de la creación de la versión.
-* AEM DXML-16896: Guías de la aplicación: Los paneles de contenido reutilizables no enumeran elementos cuando la variable **Preferencias de usuario** están configurados para ver archivos por **Nombre de archivo**.
 * GRANITE-51375: idp-sync emite NPE si no se especifica ninguna ruta intermedia.
+* GUIDES-17171: La operación de copiar y pegar de temas que superan los 15 KB falla con un error inesperado.
+* GUIDES-17088: la funcionalidad para cambiar el estado del documento desde el **Propiedades de archivo** el panel no funciona correctamente y cambia al *Borrador* estado.
+* GUIDES-16931: Las imágenes vinculadas de los temas no aparecen en la línea de base después de la creación de la versión.
+* GUIDES-16896: Los paneles de contenido reutilizables no enumeran elementos cuando la variable **Preferencias de usuario** están configurados para ver archivos por **Nombre de archivo**.
+
+Para obtener más información sobre las funciones nuevas y mejoradas y los problemas corregidos en las Guías del Experience Manager, consulte la [Guía del Experience Manager publica hoja de ruta](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Problemas conocidos {#known-issues-16544}
 
