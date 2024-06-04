@@ -33,7 +33,7 @@ ht-degree: 99%
       + [Notas de la versión actual](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
          + [Notas de la versión 2024.4.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-4-0.md)
-         + [Notas de la versión 2024.3.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
+         + [Notas de la versión para 2024.3.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
          + [Notas de la versión 2024.1.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-1-0.md)
       + 2023 {#2023}
          + [Notas de la versión 2023.12.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-12-0.md)
@@ -100,7 +100,7 @@ ht-degree: 99%
       + [Notas de la versión actual](/help/implementing/cloud-manager/release-notes/current.md)
       + 2024 {#2024}
          + [Notas de la versión 2024.4.0](/help/implementing/cloud-manager/release-notes/2024/2024-4-0.md)
-         + [Notas de la versión 2024.3.0](/help/implementing/cloud-manager/release-notes/2024/2024-3-0.md)
+         + [Notas de la versión para 2024.3.0](/help/implementing/cloud-manager/release-notes/2024/2024-3-0.md)
          + [Notas de la versión 2024.2.0](/help/implementing/cloud-manager/release-notes/2024/2024-2-0.md)
          + [Notas de la versión 2024.1.0](/help/implementing/cloud-manager/release-notes/2024/2024-1-0.md)
       + 2023 {#2023}
@@ -665,7 +665,7 @@ ht-degree: 99%
             + [Diseño de un esquema JSON para un formulario adaptable (componentes principales)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Añadir versiones, comentarios y anotaciones a un formulario adaptable](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Nuevos formularios adaptables](/help/forms/compare-forms.md)
-            + [Convertir Forms adaptable basado en componentes básicos a formularios basados en componentes principales mediante la herramienta de utilidad de migración](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + [Convertir formularios adaptables basados en componentes de base a formularios basados en componentes principales mediante la herramienta de utilidad de migración](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [Guardar un formulario adaptable como borrador](/help/forms/save-core-component-based-form-as-draft.md)
       + Componentes de base {#authoring-adaptive-forms-foundation-components}
          + Convertir sus formularios PDF en formularios adaptables {#afcs}
