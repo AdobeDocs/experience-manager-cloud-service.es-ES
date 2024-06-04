@@ -6,9 +6,9 @@ role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6492'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ El editor de reglas proporciona una interfaz de usuario intuitiva y simplificada
 
 Los usuarios que se agregan al grupo de usuarios avanzados de formularios pueden crear scripts y editar los existentes. Los usuarios del grupo [!DNL forms-users] pueden utilizar los scripts, pero no crearlos o editarlos.
 
-## Diferencia entre el editor de reglas en los componentes principales y el editor de reglas en los componentes básicos
+## Diferencia entre el editor de reglas en los componentes principales y el editor de reglas en los componentes de base
 
 {{rule-editor-diff}}
 

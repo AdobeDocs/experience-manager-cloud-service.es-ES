@@ -1,8 +1,8 @@
 ---
 source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '516'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 # Fragmentos de código {#snippets}
@@ -66,33 +66,33 @@ ht-degree: 61%
 * [Componentes de bloque de formulario adaptable y sus propiedades](/help/edge/docs/forms/form-components.md)
 
 
-## Diferencia entre el editor de reglas en los componentes principales y el editor de reglas en los componentes básicos  {#rule-editor-diff}
+## Diferencia entre el editor de reglas en los componentes principales y el editor de reglas en los componentes de base  {#rule-editor-diff}
 
-En la tabla siguiente se muestra la diferencia entre las funciones disponibles en los componentes principales del editor de reglas y los componentes básicos del editor de reglas:
+En la tabla siguiente se muestra la diferencia entre las funciones disponibles en los componentes principales del editor de reglas y los componentes de base del editor de reglas:
 
 <table>
   <tbody>
   <tr>
     <td><strong>Características</strong></td>
-    <td><strong>Componentes de base de formulario adaptable</strong></td>
+    <td><strong>Componentes de base de formularios adaptables</strong></td>
     <td><strong>Componentes principales de formularios adaptables</strong></td>   
     </tr>
   </tr>
   <tr>
-    <td>Determinar las opciones de la lista desplegable </td>
-    <td>Las opciones de la lista desplegable se establecen con el Editor de reglas de <b>Configurar opciones de</b> propiedad.</td>
+    <td>Establecer las opciones de la lista desplegable </td>
+    <td>Las opciones de la lista desplegable se establecen con la propiedad <b>Configurar opciones de</b> del Editor de reglas.</td>
     <td>Las opciones desplegables se establecen mediante las funciones personalizadas. 
    </td>
    </tr>
      </tr>
    <tr>
-    <td>Realizar operaciones matemáticas en el campo del panel repetible </td>
-    <td>Las funciones matemáticas OOTB se pueden aplicar en campos de panel repetibles para realizar funciones como suma o promedio. </td>
-    <td>Las operaciones matemáticas en el campo del panel repetible se pueden realizar mediante las funciones personalizadas.
+    <td>Realizar operaciones matemáticas en el campo de panel repetible </td>
+    <td>Las funciones matemáticas OOTB se pueden aplicar en campos del panel repetible para realizar funciones como suma o promedio. </td>
+    <td>Las operaciones matemáticas en el campo de panel repetible se pueden realizar mediante las funciones personalizadas.
    </td>
    </tr>
       <tr>
-    <td>Validar/restablecer campo/panel/regla de formulario en "Then" </td>
+    <td>Validar/restablecer campo/panel/regla de formulario en “Then” </td>
     <td>Las funciones Validar y Restablecer solo admiten objetos de formulario en el Editor de reglas. 
    </td>
     <td>Las funciones Validar y Restablecer admiten objetos de formulario, panel o campo en el Editor de reglas. 
@@ -101,14 +101,14 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
    <tr>
     <td>Compatibilidad con ES10 </td>
     <td>ES10 aún no es compatible. </td>
-    <td>Compatibilidad con funciones de JavaScript modernas, como las funciones izquierda y flecha (compatibilidad con ES10) dentro de funciones personalizadas. 
+    <td>Compatibilidad con funciones modernas de JavaScript, como las funciones let y arrow (compatibilidad con ES10) dentro de funciones personalizadas. 
    </td>
    </tr>
    </tr>
    <tr>
    <td>Propiedad de salida del servicio</td>
-   <td> La propiedad de salida del servicio es compatible con <b>Configurar el valor de</b> del Editor de reglas. </td>
-   <td>El <b>Configurar el valor de</b> La opción no admite <b>Salida de servicio</b> para invocar API en el Editor de reglas.
+   <td> La propiedad de salida del servicio es compatible con la opción <b>Definir valor de</b> del Editor de reglas. </td>
+   <td>La opción <b>Definir valor de</b> no admite la propiedad <b>Salida de servicio</b> para invocar las API en el Editor de reglas.
    </td>
    </tr>
    </tr>

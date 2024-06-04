@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
 source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1389'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Las funciones principales del uso de un esquema JSON son:
 * La estructura del JSON se muestra como un árbol en la pestaña Buscador de contenido en el modo de creación de un formulario adaptable. Puede arrastrar y agregar un elemento de la jerarquía JSON al formulario adaptable.
 * Puede rellenar previamente el formulario utilizando un JSON que cumpla con el esquema asociado.
 * En el envío, los datos especificados por el usuario se envían como JSON, que se adhiere al esquema asociado.
-* También puede crear el formulario basado en el esquema JSON según las especificaciones del [Versión 2012-20](https://json-schema.org/draft/2020-12/release-notes).
+* También puede crear el formulario basado en el esquema JSON según las especificaciones de la [versión 2012-20](https://json-schema.org/draft/2020-12/release-notes).
 
 Un esquema JSON consta de tipos de elementos simples y complejos. Los elementos tienen atributos que agregan reglas al elemento. Cuando estos elementos y atributos se arrastran a un formulario adaptable, se asignan automáticamente al componente del formulario adaptable correspondiente.
 
@@ -452,7 +452,7 @@ El formulario adaptable utiliza la información disponible en el esquema JSON pa
 
 Los cambios clave de las especificaciones del esquema JSON V4 a la versión 2020-12 son los siguientes:
 * El ID se ha declarado como `$id`
-* se declara como `$defs`
+* las definiciones se han declarado como `$defs`
 
 ### Definiciones de esquema reutilizables {#reusable-schema-definitions}
 
