@@ -2,10 +2,12 @@
 title: Información general sobre el transformador de contenido
 description: Obtenga información sobre cómo detectar y corregir problemas relacionados con el contenido notificados por la BPA mediante el transformador de contenido.
 exl-id: aa3397ff-3dd6-4c67-9064-cb9b19bf1c73
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 2%
+source-wordcount: '383'
+ht-degree: 3%
 
 ---
 
@@ -13,7 +15,7 @@ ht-degree: 2%
 
 El transformador de contenido (CT) es una herramienta desarrollada por Adobe que se puede utilizar para detectar y corregir automáticamente los problemas relacionados con el contenido notificados por el [Analizador de prácticas recomendadas (BPA)](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) AEM antes de migrar el contenido de su implementación actual de la (On-Premise o Managed Services AEM) a la as a Cloud Service de la.
 
-El transformador de contenido puede ayudar a resolver los problemas que se encuentran en las siguientes áreas [Categorías de patrones de BPA](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html) (que se muestra en la tabla siguiente) al permitir a los usuarios realizar acciones masivas como mover o eliminar. Esto puede reducir significativamente el tiempo y la complejidad asociada con un proyecto de migración.
+El transformador de contenido puede ayudar a resolver los problemas que se encuentran en las siguientes áreas [Categorías de patrones de BPA](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=es) (que se muestra en la tabla siguiente) al permitir a los usuarios realizar acciones masivas como mover o eliminar. Esto puede reducir significativamente el tiempo y la complejidad asociada con un proyecto de migración.
 
 ## Categorías de patrones cubiertas por el transformador de contenido y soluciones sugeridas {#pattern-categories-and-benefits}
 

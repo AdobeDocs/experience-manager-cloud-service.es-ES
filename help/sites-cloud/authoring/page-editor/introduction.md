@@ -1,13 +1,16 @@
 ---
 title: AEM Editor de página de
 description: AEM El editor de páginas de es una potente herramienta para crear contenido.
-source-git-commit: 91ce6a0c880436327f4dd333a2eb3d36a4e89a4d
+exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 39%
 
 ---
-
 
 # AEM Editor de página de {#editing-page-content}
 
@@ -178,7 +181,7 @@ Por ejemplo:
 
 ![Ejemplo del estado de la Live Copy que se muestra](assets/page-editor-editing-live-copy-status.png)
 
-## Previsualizar páginas   {#previewing-pages}
+## Previsualizar páginas {#previewing-pages}
 
 Existen dos métodos para visualizar la vista previa de una página:
 

@@ -2,7 +2,10 @@
 title: Lanzamientos
 description: Los lanzamientos le permiten desarrollar contenido con eficacia para una versión futura. También permiten realizar los cambios para una publicación en el futuro, a la vez que se mantienen las páginas actuales
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 94%
@@ -65,7 +68,6 @@ Los lanzamientos permiten realizar lo siguiente:
       * El campo **Fecha**(**Live**) **de lanzamiento**: esto se puede establecer al crear o editar un lanzamiento. 
       * El indicador **Producción lista**: esto solo se puede establecer al editar un lanzamiento.
       * Si se establece el indicador **Preparado para la producción**, el lanzamiento se promocionará automáticamente a las páginas de producción en la **fecha** de **Lanzamiento**(**Activo**). Después de la promoción, las páginas de producción se publican automáticamente.\
-
         Si no se ha establecido ninguna fecha, el indicador no tiene ningún efecto.
 * Actualice las páginas de origen y de lanzamiento en paralelo:
    * Los cambios que se realicen en las páginas de origen se implementan automáticamente en la copia de lanzamiento (si está configurada con herencia; es decir, como Live Copy). 

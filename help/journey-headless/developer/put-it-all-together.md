@@ -2,10 +2,13 @@
 title: 'Cómo ponerlo todo junto: su aplicación y su contenido en AEM sin encabezado'
 description: En esta parte del recorrido para desarrolladores de contenido de AEM sin encabezado, aprenda a lanzar su proyecto de AEM, incluidos los fragmentos de contenido, las llamadas de GraphQL, las llamadas de la API REST y la aplicación, para prepararlo para su puesta en marcha.
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 98%
+source-wordcount: '1061'
+ht-degree: 100%
 
 ---
 
@@ -114,6 +117,6 @@ Continúe con su recorrido de AEM sin encabezado revisando a continuación el do
 * [SDK de AEM sin encabezado para exploradores del lado del cliente (JavaScript)](https://github.com/adobe/aem-headless-client-js)
 * [SDK de AEM sin encabezado del lado del servidor/Nodo.js (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
 * [SDK de AEM sin encabezado para Java™](https://github.com/adobe/aem-headless-client-java)
-* [AEM Introducción a la como CMS sin encabezado](/help/headless/introduction.md)
-* [AEM Portal para desarrolladores de](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
-* [Tutorials AEM para Headless en la](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)
+* [Introducción a AEM como CMS sin encabezado](/help/headless/introduction.md)
+* [Portal para desarrolladores de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
+* [Tutoriales de AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)

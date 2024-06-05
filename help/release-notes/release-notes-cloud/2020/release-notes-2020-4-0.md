@@ -2,9 +2,11 @@
 title: Notas de la versión de Adobe Experience Manager as a Cloud Service para 2020.4.0
 description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.4.0."
 exl-id: d98a3862-76fa-4b5b-b81a-333f5f532b67
-source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '612'
 ht-degree: 93%
 
 ---
@@ -17,7 +19,7 @@ Esta página describe las notas de la versión generales de [!DNL Experience Man
 
 La fecha de la versión de [!DNL Experience Manager] as a Cloud Service 2020.4.0 es el 9 de abril de 2020.
 
-## Novedades de Assets {#assets}
+## Novedades de los recursos de {#assets}
 
 Obtenga información sobre las nuevas funciones, mejoras y correcciones de errores de [!DNL Experience Manager Assets] y [!DNL Dynamic Media] en la versión actual.
 

@@ -1,13 +1,16 @@
 ---
 title: Creación de páginas
 description: Obtenga información sobre cómo crear nuevas páginas para el sitio web mediante la consola Sitios.
-source-git-commit: 0ba8faaa14d09d09fce5846bfff77287bfbd94c7
+exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '461'
-ht-degree: 28%
+ht-degree: 29%
 
 ---
-
 
 # Creación de páginas {#creating-pages}
 

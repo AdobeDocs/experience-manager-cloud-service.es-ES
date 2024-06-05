@@ -4,7 +4,8 @@ description: Aprenda a preparar el contenido para la traducción al desarrollar 
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 73%
@@ -77,7 +78,7 @@ Puede utilizar cualquiera de los dos formatos, según la estructura que haya ele
 1. Seleccione el sitio para el que desea crear una copia de idioma.
 1. Seleccionar **Crear**, y luego seleccione **Página**.
 
-   ![Crear página](../assets/create-page.png)
+   ![Creación de página](../assets/create-page.png)
 
 1. Seleccione la plantilla de página y luego seleccione **Siguiente**.
 1. En el **Nombre** campo escriba el código de país con el formato de `<language-code>` o `<language-code>_<country-code>`, por ejemplo, `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Escriba un título para la página.

@@ -1,13 +1,16 @@
 ---
 title: Administrar páginas
 description: AEM Obtenga información sobre cómo administrar las páginas de su sitio web en las que se incluye el movimiento, la copia y la eliminación de sitios web en la.
-source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
+exl-id: 355b60c5-a82e-4bbb-98ea-bfcc0126b7fd
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 64%
 
 ---
-
 
 # Administrar páginas {#managing-pages}
 

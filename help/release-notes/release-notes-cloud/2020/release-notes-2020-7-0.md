@@ -2,14 +2,16 @@
 title: Notas de la versión 2020.7.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.7.0."
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 76%
+source-wordcount: '1012'
+ht-degree: 74%
 
 ---
 
-# Notas de la versión [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 {#release-notes}
+# Notas de la versión para [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 {#release-notes}
 
 En la siguiente sección se describen las notas de la versión generales de Experience Manager as a Cloud Service 2020.7.0.
 
@@ -41,7 +43,7 @@ Conectores de [!DNL Experience Manager] as a Cloud Service para [!DNL Adobe Targ
 
 * Los pasos de flujo de trabajo que no son compatibles con una implementación de Cloud Service ahora se marcan con una advertencia en el editor de [!UICONTROL modelos de flujo de trabajo]. Además, al ejecutar los flujos de trabajo existentes en el entorno de Cloud Service, se omiten los pasos de flujo de trabajo incompatibles.
 
-* Los modelos de flujo de trabajo creados por clientes que son implementados `/conf/global`[!DNL Cloud Manager] en el proyecto Git asociado con el entorno en se implementan automáticamente en `/var` y, por lo tanto, están disponibles en [!DNL Experience Manager]. Los modelos de flujo de trabajo de productos en los `/libs` que el cliente cambió no se implementan automáticamente en `/var`.
+* Modelos de flujo de trabajo creados por clientes implementados en `/conf/global` en el proyecto Git asociado con el entorno en [!DNL Cloud Manager] se implementan automáticamente en `/var` y, por lo tanto, disponible en [!DNL Experience Manager]. Los modelos de flujo de trabajo de productos en los `/libs` que el cliente cambió no se implementan automáticamente en `/var`.
 
 ### Errores corregidos {#assets-bugs-fixed}
 
@@ -55,7 +57,7 @@ Conectores de [!DNL Experience Manager] as a Cloud Service para [!DNL Adobe Targ
 
 AEM Commerce ahora está disponible en Cloud Service.
 
-Consulte [AEM Introducción a Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) para obtener más información.
+Consulte [AEM Introducción a Commerce as a Cloud Service de la](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) para obtener más información.
 
 ## Componentes principales {#core-components}
 

@@ -1,11 +1,14 @@
 ---
-title: Obtenga información sobre el contenido sin encabezado y su traducción en AEM
+title: Obtén información sobre el contenido sin encabezado y su traducción en AEM
 description: Aprenda conceptos sin encabezado, cómo se asignan a AEM y la teoría de la traducción de AEM.
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 89%
+source-wordcount: '737'
+ht-degree: 100%
 
 ---
 
@@ -26,7 +29,7 @@ Desde que han surgido los sistemas de administración de contenido (CMS) a gran 
 
 ![El CMS de pila completa clásico](/help/journey-headless/developer/assets/full-stack.png)
 
-En un CMS de pila completa, la funcionalidad para manipular contenido se encuentra en el CMS. Las características del sistema componen diferentes componentes de la pila de CMS. La solución de pila completa tiene muchas ventajas.
+En un CMS de pila completa, toda la funcionalidad para manipular contenido está en el CMS. Las características del sistema componen diferentes componentes de la pila de CMS. La solución de pila completa tiene muchas ventajas.
 
 * Hay un solo sistema que mantener.
 * El contenido se administra de forma centralizada.
@@ -47,7 +50,7 @@ Cuando hablamos de un CMS sin encabezado, el CMS administra el contenido y conti
 
 ![CMS sin encabezado](/help/journey-headless/developer/assets/headless-cms.png)
 
-Los servicios de consumo, ya sean experiencias de RA, una tienda web, experiencias móviles, aplicaciones web progresivas (PWA), etc., incorporan contenido del CMS sin encabezado y proporcionan su propio procesamiento. Se ocupan de proporcionar sus propios HEADS para su contenido.
+Los servicios que consumen, ya sean experiencias de AR, una tienda web, experiencias móviles, aplicaciones web progresivas (progressive web apps, PWA), etc., reciben contenido del CMS sin encabezado y proporcionan su propia renderización. Se ocupan de proporcionar sus propios HEADS para su contenido.
 
 Omitir el HEAD simplifica el CMS al eliminar la complejidad. Al hacerlo, también se traslada la responsabilidad de procesar el contenido a los servicios que realmente necesitan el contenido y que a menudo son más adecuados para dicho procesamiento.
 
@@ -57,7 +60,7 @@ Además de ofrecer herramientas sólidas para crear, gestionar y entregar págin
 
 La potencia de AEM le permite entregar contenido sin encabezado, en pilas completas o en ambos modelos al mismo tiempo. Para el especialista en traducción, se puede aplicar el mismo conjunto de herramientas de traducción a ambos tipos de contenido, lo que le ofrece un enfoque unificado para traducir el contenido.
 
-Más adelante, en el recorrido AEM, aprenderá los detalles acerca de cómo traduce el contenido, pero, en un nivel superior, el concepto es simple:
+Más adelante en el recorrido conocerá los detalles sobre cómo AEM traduce el contenido, pero a un alto nivel, el concepto es sencillo:
 
 1. Defina una conexión a un servicio de traducción configurando el marco de trabajo de integración de traducción.
 1. Defina qué contenido debe traducirse mediante reglas de traducción.
@@ -78,5 +81,5 @@ Aproveche este conocimiento y continúe con su recorrido de traducción de AEM s
 Si bien se recomienda pasar a la siguiente parte del recorrido de traducción sin encabezado mediante la revisión del documento [Introducción a la traducción sin encabezado de AEM,](getting-started.md) los siguientes son algunos adicionales, recursos opcionales que hacen una inmersión más profunda en algunos conceptos mencionados en este documento, pero no están obligados a continuar en el recorrido sin encabezado.
 
 * [MSM y traducción](/help/sites-cloud/administering/msm-and-translation.md): los detalles de Multi-Site Manager de AEM y cómo funciona con sus herramientas de traducción
-* [AEM Introducción a la como CMS sin encabezado](/help/headless/introduction.md)
-* [Tutorials AEM para Headless en la](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)
+* [Introducción a AEM como CMS sin encabezado](/help/headless/introduction.md)
+* [Tutoriales de contenido sin encabezado en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)

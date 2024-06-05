@@ -2,10 +2,12 @@
 title: Complemento Maven del paquete de contenido de Adobe
 description: AEM Utilice el complemento Maven del paquete de contenido para implementar aplicaciones de
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1832'
-ht-degree: 6%
+source-wordcount: '1802'
+ht-degree: 5%
 
 ---
 
@@ -87,7 +89,7 @@ AEM Los objetivos que utilizan proxies para el uso de la primera configuración 
 
 Los parámetros de la siguiente tabla son comunes a todos los objetivos, excepto cuando se indican en la **Metas** columna.
 
-| Nombre | Tipo | Requerido | Valor predeterminado | Descripción | Objetivos |
+| Nombre | Tipo | Requerido | Valor predeterminado | Descripción | Metas |
 |---|---|---|---|---|---|
 | `failOnError` | `boolean` | No | `false` | Un valor de `true` provoca que la generación falle cuando se produce un error. Un valor de `false` hace que la generación ignore el error. | Todas las metas excepto `package` |
 | `name` | `String` | `build`: Sí, `install`: No, `rm`: sí | `build`: Sin valor predeterminado, `install`: El valor del `artifactId` propiedad del proyecto Maven | Nombre del paquete sobre el que se va a actuar | Todas las metas excepto `ls` |

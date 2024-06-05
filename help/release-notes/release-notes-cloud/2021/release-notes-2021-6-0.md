@@ -2,10 +2,12 @@
 title: Notas de la versión 2021.6.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2021.6.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1432'
-ht-degree: 47%
+ht-degree: 48%
 
 ---
 
@@ -21,7 +23,7 @@ En la siguiente sección se describen las notas de la versión generales de la v
 >
 >Consulte [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=es) para obtener más información sobre las actualizaciones de la documentación no relacionadas directamente con una versión.
 
-## Fecha de la versión {#release-date}
+## Fecha de lanzamiento {#release-date}
 
 La fecha de lanzamiento de [!DNL Adobe Experience Manager] La versión 2021.6.0 as a Cloud Service es el 28 de junio de 2021.
 La de la siguiente versión (2021.7.0) será el 29 de julio de 2021.
@@ -128,7 +130,7 @@ La próxima versión está planificada para el 15 de julio de 2021.
 
 ### Característica beta de [!DNL Forms] {#what-is-new-forms-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: las API de comunicación le ayudan a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: las API de comunicación le ayudan a combinar plantillas XDP y datos XML para generar documentos imprimibles en varios formatos. El servicio le permite generar documentos en modo sincrónico.  Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
    * Generar formularios finales al rellenar archivos de plantilla con datos XML.
    * Generar formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.
    * Generar PDF imprimibles desde un formulario PDF de XFA y un formulario de Adobe Acrobat (AcroForm).
@@ -170,7 +172,7 @@ La fecha de lanzamiento as a Cloud Service de AEM Screens es el 24 de junio de 2
 * CIF Nuevos tipos de datos de referencia de productos y categorías para fragmentos de contenido (incl. soporte de la interfaz de usuario del selector de productos/categorías)
 * Nuevo componente principal de fragmento de contenido de Commerce
 * AEM Búsqueda de comercio de texto completo admitida en el back-end de la
-* Los componentes principales de Commerce admiten la recopilación de datos de Adobe Commerce Sensei Recs
+* Los componentes principales de Commerce admiten la recopilación de datos Adobe Commerce Sensei Recs
 * Se han mejorado las URL compatibles con SEO para las páginas de categorías
 * Compatibilidad con encabezados HTTP personalizados por sitio/configuración
 

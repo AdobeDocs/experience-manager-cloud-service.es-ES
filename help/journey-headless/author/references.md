@@ -2,10 +2,13 @@
 title: Obtenga información sobre el uso de referencias en fragmentos de contenido
 description: Obtenga información sobre el uso de referencias en fragmentos de contenido para los contenidos, otros fragmentos y archivos (medios). Introduzca la necesidad y la mecánica de los fragmentos anidados para la creación de CMS sin encabezado.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '705'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -27,13 +30,13 @@ Este artículo se basa en estos conceptos para que pueda comprender cómo utiliz
    * Referencias de contenidos
    * Referencias de recursos/medios
    * Referencias a fragmentos
-   * Referencias improvisadas desde un bloque de texto
+   * Referencias improvisadas desde dentro de un bloque de texto
 
 ## Qué son las referencias {#what-are-references}
 
 Las referencias son simplemente un mecanismo para conectar los recursos, ya sea otro contenido, recursos (como en las imágenes) u otros fragmentos. Aunque son muy similares, existen algunas diferencias.
 
-Algunas referencias tienen tipos de datos dedicados (por ejemplo, Referencias de contenido y Referencias de fragmento), mientras que otras simplemente se añaden como referencia dentro de un bloque de texto (referencias de recursos y referencias improvisadas).
+Algunas referencias tienen tipos de datos específicos (por ejemplo, Referencias de contenidos y Referencias a fragmentos), mientras que otras se agregan simplemente como una referencia dentro de un bloque de texto (referencias de recursos y referencias improvisadas).
 
 ![Fragmentos de contenido: referencias](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
@@ -43,7 +46,7 @@ Las referencias de contenido hacen precisamente eso: permiten hacer referencia a
 
 ## Referencias de recursos/medios {#assets-media-references}
 
-Se puede hacer referencia a los recursos (por ejemplo, imágenes o medios) dentro de un bloque de texto utilizando la opción **Insertar recurso**. Se abrirá un explorador que le permitirá seleccionar el recurso.
+Se puede hacer referencia a los recursos (por ejemplo, imágenes o medios) dentro de un bloque de texto utilizando la opción **Insertar recurso**. Se abre un explorador que permite seleccionar el recurso.
 
 ![Fragmentos de contenido: insertar recurso](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
@@ -58,7 +61,7 @@ Por ejemplo, puede que tenga definidos los siguientes modelos de fragmento de co
 * Persona
 * Premios
 
-Parece bastante sencillo, pero una compañía tiene un CEO y empleados....y todas ellas se definen como una persona.
+Parece bastante sencillo, pero una Compañía tiene un director ejecutivo (CEO) y empleados…y todas ellas se definen como una persona.
 
 Una persona puede obtener un premio (o tal vez dos).
 
@@ -79,7 +82,7 @@ Como autor, no es responsable de definir estas relaciones (lo hace el arquitecto
 
 ### Creación de fragmentos anidados {#author-nested-fragment}
 
-La creación de referencias a fragmentos es bastante sencilla (aunque normalmente el campo no se etiqueta como **Referencia a fragmento**). Puede escribir la referencia directamente o (lo más probable) seleccionar el icono de carpeta para abrir un explorador que le permita desplazarse y seleccionar el fragmento que necesite.
+La creación de referencias a fragmentos es bastante sencilla (aunque normalmente el campo no se etiqueta como **Referencia a fragmento**). Puede escribir la referencia directamente o seleccionar el icono de carpeta para abrir el explorador (lo más probable) que le permita desplazarse y seleccionar el fragmento que necesita.
 
 ![Fragmentos de contenido: referencias](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 
@@ -96,7 +99,7 @@ Al usar la pestaña **Árbol de estructura** del Editor de fragmentos de conteni
 
 ## Referencias Ad hoc {#adhoc-references}
 
-Las referencias improvisadas se pueden añadir como un vínculo simple dentro de un bloque de texto:
+Las referencias improvisadas se pueden agregar como un vínculo simple dentro de un bloque de texto.
 
 ![Fragmentos de contenido: referencias Ad hoc](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 

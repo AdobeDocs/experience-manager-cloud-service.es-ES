@@ -4,7 +4,9 @@ description: Consideraciones importantes sobre la herramienta de asignación de 
 exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
 hide: true
 hidefromtoc: true
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 1%
@@ -21,7 +23,7 @@ ht-degree: 1%
 
 Se registran los siguientes casos específicos:
 
-1. Si un usuario no tiene una dirección de correo electrónico en `profile/email` campo de su *jcr* , el usuario o grupo en cuestión se migra pero no se asigna. Este es el caso incluso si la dirección de correo electrónico se utiliza como nombre de usuario para iniciar sesión.
+1. Si un usuario no tiene dirección de correo electrónico en la `profile/email` campo de su *jcr* , el usuario o grupo en cuestión se migra pero no se asigna. Este es el caso incluso si la dirección de correo electrónico se utiliza como nombre de usuario para iniciar sesión.
 
 1. Si no se encuentra un correo electrónico en el sistema Identity Management System (IMS) de Adobe para el ID de organización utilizado (o, si no se puede recuperar el ID de IMS), se migra el usuario o grupo, pero no se asigna.
 

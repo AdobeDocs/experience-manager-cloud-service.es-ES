@@ -2,10 +2,12 @@
 title: Credenciales de JWT de Adobe Developer Console en desuso
 description: Obtenga información sobre el impacto de las credenciales de JWT en desuso de Adobe Developer Console en AEM.
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
-source-git-commit: f183e1999e29ee7f25f2d427d0b2273d244e4632
+feature: Security
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '479'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +21,7 @@ Los clientes de Adobe utilizan [Adobe Developer Console](https://developer.adobe
 
 En este artículo se ofrece contexto adicional sobre cómo AEM as a Cloud Service debe gestionar el desuso.
 
-Lo más importante es que AEM ahora es compatible con las nuevas credenciales de servidor a servidor de OAuth para AEM as a Cloud Service. Es posible que haya recibido un correo electrónico con instrucciones para migrar sus credenciales de JWT y esta migración ya se puede realizar.
+Lo más importante es que AEM ahora es compatible con las nuevas credenciales de servidor a servidor de OAuth para AEM as a Cloud Service. Es posible que haya recibido un correo electrónico con instrucciones para migrar sus credenciales de JWT. Esta migración ya se puede realizar.
 
 En las secciones siguientes se enumeran los escenarios en los que los clientes deben (o en algunos casos, no) reemplazar sus credenciales de cuenta de servicio (JWT) por credenciales de servidor a servidor de OAuth, ahora que AEM los admite. [Lea cómo](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) migrar las credenciales.
 
@@ -42,7 +44,7 @@ Consulte la [Configuración de integraciones de IMS para AEM as a Cloud Service]
 
 ## Las API de Cloud Manager {#cloud-manager-apis}
 
-**Acción**: Migre sus credenciales de JWT a las credenciales de OAuth, que ahora admite Cloud Manager.
+**Acción**: migre sus credenciales de JWT a las credenciales de OAuth, ahora ya admitidas por Cloud Manager.
 
 **Versiones relevantes de AEM**: AEM as a Cloud Service.
 

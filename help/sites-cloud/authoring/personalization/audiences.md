@@ -2,10 +2,13 @@
 title: Administrar audiencias
 description: La consola Audiencias permite crear, organizar y administrar las audiencias de la cuenta de Adobe Target o administrar segmentos de ContextHub
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 87%
+source-wordcount: '885'
+ht-degree: 86%
 
 ---
 
@@ -73,7 +76,7 @@ Para crear una audiencia de Adobe Target:
 1. Haga clic en **Agregar regla** para añadir otra regla. Escriba tantas reglas como sea necesario. Las reglas se combinan con el operador boolean AND, lo que significa que la audiencia debe cumplir todos los requisitos de cada regla para poder optar a una actividad.
 1. Seleccione **Siguiente**.
 1. Introduzca un nombre para la audiencia y seleccione **Guardar**.
-1. Seleccione **Guardar**. El público se enumera en la lista de públicos.
+1. Seleccione **Guardar**. El público se enumera en la lista de públicos.
 
 ### Atributos y sus opciones {#attributes-and-their-options}
 

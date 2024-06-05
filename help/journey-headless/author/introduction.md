@@ -2,10 +2,13 @@
 title: 'Creación para AEM como un CMS sin encabezado: una introducción'
 description: Una introducción al uso de las características de Adobe Experience Manager as a Cloud Service como un CMS sin encabezado para crear contenido para su proyecto.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 94%
+source-wordcount: '680'
+ht-degree: 100%
 
 ---
 
@@ -61,7 +64,7 @@ Esto quiere decir que el contenido puede llegar a una amplia gama de dispositivo
 
 El modelado de contenido (también conocido como modelado de datos) es otro término técnico, ¿por qué debería interesarle como autor?
 
-Para que las aplicaciones sin encabezado puedan acceder al contenido y hacer algo con él, el contenido debe tener una estructura predefinida. Sería posible que el contenido fuese de forma libre, pero complicaría *mucho* la vida a las aplicaciones.
+Para que las aplicaciones sin encabezado puedan acceder a su contenido y hacer algo con él, el contenido debe tener una estructura predefinida. Sería posible que el contenido fuese de forma libre, pero complicaría *mucho* la vida a las aplicaciones.
 
 Básicamente, el proceso de definición de la estructura a la que debe ceñirse el contenido implica el diseño de un modelo, y a esto se le conoce como modelado de datos.
 
@@ -77,15 +80,15 @@ Ahora que ya conoce los conceptos y la terminología, el siguiente paso es [Apre
 
 ## Recursos adicionales {#additional-resources}
 
-* [AEM Introducción a la como CMS sin encabezado](/help/headless/introduction.md)
+* [Introducción a AEM como CMS sin encabezado](/help/headless/introduction.md)
 
-* [Tutorials AEM para Headless en la](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)
+* [Tutoriales de contenido sin encabezado en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)
 
 * Recorrido para desarrolladores de AEM sin encabezado
    * [Obtenga más información acerca del desarrollo de CMS sin encabezado](/help/journey-headless/developer/learn-about.md)
    * [Aprenda cómo modelar el contenido](/help/journey-headless/developer/model-your-content.md)
 
-* [AEM Portal para desarrolladores de](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
+* [Portal para desarrolladores de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
 
 * [Recorrido para arquitectos de contenido sin encabezado de AEM](/help/journey-headless/architect/overview.md)
 

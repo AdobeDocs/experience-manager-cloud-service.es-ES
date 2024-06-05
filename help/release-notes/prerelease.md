@@ -2,10 +2,12 @@
 title: Canal de la versión preliminar de Adobe Experience Manager as a Cloud Service
 description: Aprenda a utilizar el canal de la versión preliminar para obtener una vista previa de las próximas funciones de AEM as a Cloud Service.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1304'
-ht-degree: 100%
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
+source-wordcount: '1264'
+ht-degree: 99%
 
 ---
 
@@ -177,7 +179,7 @@ Los JavaDocs se publican en Maven Central.
 
    Como de costumbre, los proyectos individuales pueden utilizar la dependencia.
 
-1. Implementación en el servidor local.
+1. Implemente en el servidor local.
 
 1. Si está seguro de que funciona como se espera localmente, confirme el código a una rama de desarrollo y utilice una canalización de no producción de Cloud Manager para implementar en un entorno que se suscriba al canal de la versión preliminar.
 

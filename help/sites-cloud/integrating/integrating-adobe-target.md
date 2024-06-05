@@ -1,10 +1,11 @@
 ---
 title: Integración con Adobe Target
 description: Obtenga información sobre cómo integrar Adobe Target AEM con el as a Cloud Service de la mediante la interfaz de usuario táctil y Adobe Launch.
-feature: Administering
+feature: Integration
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 3ac17f1a67f4d952a0206b124d70762b65e1f354
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 86%

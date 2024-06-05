@@ -2,7 +2,9 @@
 title: Gestión de repositorios de contenido grandes
 description: En esta sección se describe la administración de repositorios de contenido grandes
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1800'
 ht-degree: 8%
@@ -170,7 +172,7 @@ Con el archivo de configuración anterior en su lugar, la fase de precopia de Az
 c.a.g.s.m.commons.ContentExtractor - *************** Beginning AzCopy Pre-Copy phase ***************
 ```
 
-Felicitaciones. Esta entrada de registro significa que la configuración se consideró válida y que AzCopy está copiando todos los blobs del contenedor de origen al contenedor de migración.
+Enhorabuena. Esta entrada de registro significa que la configuración se consideró válida y que AzCopy está copiando todos los blobs del contenedor de origen al contenedor de migración.
 
 Las entradas de registro de AzCopy aparecen en el registro de extracción y llevan el prefijo c.a.g.s.m.c.azcopy.AzCopyBlobPreCopy - [Copia previa de AzCopy]
 

@@ -2,10 +2,12 @@
 title: Introducción al Analizador de prácticas recomendadas
 description: AEM Aprenda a utilizar el Analizador de prácticas recomendadas para evaluar el cumplimiento de la implementación de su con las prácticas recomendadas
 exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 65%
+ht-degree: 61%
 
 ---
 
@@ -22,7 +24,7 @@ Esta herramienta genera un informe que identifica las áreas de posible refactor
 
 ## Informe del Analizador de prácticas recomendadas {#bpa-report}
 
-El informe de Best Practices Analyzer se utiliza para obtener una comprensión de alto nivel de la preparación general para la actualización. El informe consiste en categorías de problemas que deben resolverse antes de una implementación exitosa en AEM as a Cloud Service.
+El informe del Analizador de prácticas recomendadas se utiliza para obtener una comprensión de alto nivel de la preparación general para la actualización. El informe consiste en categorías de problemas que deben resolverse antes de una implementación exitosa en AEM as a Cloud Service.
 
 El informe del Analizador de prácticas recomendadas incluye las siguientes categorías:
 

@@ -2,7 +2,9 @@
 title: Eliminación de un conjunto de migración en la herramienta de transferencia de contenido
 description: Obtenga información sobre cómo eliminar un conjunto de migraciones en la herramienta de transferencia de contenido.
 exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 8%

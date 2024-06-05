@@ -2,10 +2,13 @@
 title: Configurar la canalización
 description: Cree una canalización front-end para administrar la personalización del tema del sitio.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 94%
+source-wordcount: '949'
+ht-degree: 100%
 
 ---
 
@@ -18,7 +21,7 @@ Cree una canalización front-end para administrar la personalización del tema d
 En el documento anterior del recorrido de Creación rápida del sitio de AEM, [Crear sitio a partir de una plantilla,](create-site.md) ha aprendido a utilizar una plantilla de sitio para crear rápidamente un sitio AEM que se pueda personalizar aún más con herramientas front-end y ahora debería:
 
 * Entender cómo obtener plantillas del sitio de AEM.
-* Aprenda a crear un sitio con una plantilla.
+* Obtenga información sobre cómo crear un sitio con una plantilla.
 * Consulte cómo descargar la plantilla del nuevo sitio para facilitarla al desarrollador front-end.
 
 Este artículo se basa en estos aspectos básicos para que pueda configurar una canalización front-end que el desarrollador de front-end utilizará más adelante en el recorrido para implementar personalizaciones front-end.
@@ -65,13 +68,13 @@ Ahora verá una descripción general del programa. Su página tendrá un aspecto
 
 ![Información general de Cloud Manager](assets/cloud-manager-overview.png)
 
-Observe el nombre del programa al que ha accedido o copie la URL. Debe proporcionárselo más adelante al desarrollador front-end.
+Observe el nombre del programa al que ha accedido o copie la URL. Deberá proporcionárselo más adelante al desarrollador de front-end.
 
 ## Creación de una canalización front-end {#create-front-end-pipeline}
 
 Ahora que ha accedido a Cloud Manager, puede crear una canalización para la implementación de front-end.
 
-1. En el **Canalizaciones** de la página Cloud Manager, seleccione la opción **Añadir** botón.
+1. En la sección **Canalizaciones** de la página Cloud Manager, haga clic en el botón **Agregar**.
 
    ![Canalizaciones](assets/pipelines-add.png)
 
@@ -83,7 +86,7 @@ Ahora que ha accedido a Cloud Manager, puede crear una canalización para la imp
 
    ![Agregar configuración de canalización](assets/add-pipeline-configuration.png)
 
-1. Seleccionar **Continuar**.
+1. Seleccione **Continuar**.
 
 1. En la pestaña **Código fuente**:
    * Seleccione **Código front-end** como el tipo de código que se va a implementar.

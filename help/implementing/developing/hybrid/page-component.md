@@ -2,10 +2,12 @@
 title: Componente de página SPA
 description: En un recurso, el componente de página no proporciona los elementos HTML SPA de sus componentes secundarios, sino que los delega en el SPA de trabajo de la página de trabajo. SPA En este documento se explica cómo hace que el componente de página de una página sea único en un sitio de trabajo de la.
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '602'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
@@ -28,7 +30,7 @@ No olvide limitar la inclusión de la variable `cq.authoring.pagemodel.messaging
 
 El tipo de datos de comunicación se establece como un elemento de HTML AEM dentro del componente Página de la página de la mediante la variable `data-cq-datatype` atributo. Cuando el tipo de datos de comunicación está establecido en JSON, las solicitudes de GET llegan a los extremos del modelo Sling de un componente. Una vez que se produce una actualización de estado en el editor de páginas, la representación JSON del componente actualizado se envía a la biblioteca del Modelo de página. SPA A continuación, la biblioteca de modelo de página advierte a los usuarios de las actualizaciones que se han realizado en su.
 
-**Componente de página SPA -`body.html`**
+**SPA Componente de página -`body.html`**
 
 ```
 <div id="page"></div>
@@ -36,7 +38,7 @@ El tipo de datos de comunicación se establece como un elemento de HTML AEM dent
 
 SPA Además de ser una buena práctica para no retrasar la generación de DOM, el marco de trabajo de la requiere que se añadan los scripts al final del cuerpo.
 
-**Componente de página SPA -`customfooterlibs.html`**
+**SPA Componente de página -`customfooterlibs.html`**
 
 ```
 <sly data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}"></sly>
@@ -47,7 +49,7 @@ SPA Además de ser una buena práctica para no retrasar la generación de DOM, e
 
 SPA Las propiedades del recurso meta que describen el contenido de la:
 
-**Componente de página SPA -`customheaderlibs.html`**
+**SPA Componente de página -`customheaderlibs.html`**
 
 ```
 <meta property="cq:datatype" data-sly-test="${wcmmode.edit || wcmmode.preview}" content="JSON"/>

@@ -2,7 +2,9 @@
 title: Herramientas para desarrolladores de AEM para Eclipse
 description: AEM Aprenda a utilizar las herramientas para desarrolladores de para Eclipse, un complemento de Eclipse basado en el complemento Eclipse para Apache Sling.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 2%
@@ -198,7 +200,7 @@ Si desea volver a compilar un paquete a partir del proyecto, haga clic con el bo
 
 Ahora tiene una carpeta de destino creada con el paquete dentro de (llamada, por ejemplo, `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
 ### Resolver definición de proyecto no válida {#resolving-invalid-project-definition}
 

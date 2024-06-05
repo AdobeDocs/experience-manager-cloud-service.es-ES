@@ -2,14 +2,16 @@
 title: Notas de la versión de Adobe Experience Manager as a Cloud Service para 2020.6.0
 description: '"[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.6.0".'
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1932'
-ht-degree: 94%
+source-wordcount: '1939'
+ht-degree: 92%
 
 ---
 
-# Notas de la versión de AEM as a Cloud Service 2020.6.0 {#release-notes}
+# AEM Notas de la versión de as a Cloud Service 2020.6.0 {#release-notes}
 
 Esta página describe las notas de la versión generales de Experience Manager as a Cloud Service 2020.6.0.
 
@@ -17,7 +19,7 @@ Esta página describe las notas de la versión generales de Experience Manager a
 
 La fecha de la versión de [!DNL Experience Manager] as a Cloud Service 2020.6.0 es el 4 de junio de 2020.
 
-## Novedades en AEM Sites {#aem-sites}
+## Novedades de AEM Sites. {#aem-sites}
 
 Siga esta sección para conocer las novedades y las actualizaciones de AEM Sites en AEM as a Cloud Service versión 2020.6.0.
 
@@ -46,7 +48,7 @@ La versión 2.9.0 de los [componentes principales](https://experienceleague.adob
 
 * Mejoras en el lector de pantalla.
 
-## Novedades de Foundations en AEM as a Cloud Service {#foundations}
+## AEM Novedades de Foundations en as a Cloud Service {#foundations}
 
 AEM AEM los tiempos de creación de proyectos mejorarán si se eliminan todas las referencias del archivo pom.xml del proyecto de la aplicación al repositorio remoto. `https://downloads.experiencecloud.adobe.com/content/maven/public`.
 
@@ -102,7 +104,7 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 
 * El vínculo a Developer Console directamente desde Cloud Manager no mostrará la opción de anular la hibernación o hibernar el entorno de un programa de zona protegida para pruebas. Para solucionarlo, una vez en Developer Console, agregue el patrón `#release-cm-p1234-e5678` al final de la dirección URL, donde *1234* es el ID de Programa y *5678* es el ID del entorno. Esto se solucionará en una próxima versión.
 
-## Novedades de [!DNL Adobe Experience Manager Assets] {#aem-assets}
+## Novedades de la versión de [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
 **Experiencia del usuario guiada para etiquetas inteligentes mejoradas, con tecnología Adobe Sensei**
 

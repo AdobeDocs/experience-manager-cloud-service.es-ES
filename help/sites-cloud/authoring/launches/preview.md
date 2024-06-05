@@ -2,7 +2,10 @@
 title: Vista previa del futuro con el lanzamiento
 description: Con Deformación de tiempo, puede ver el contenido en función de sus lanzamientos.
 exl-id: 3e19f11c-53cc-491b-8d9b-1e82745caebc
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 100%

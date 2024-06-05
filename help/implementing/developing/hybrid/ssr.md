@@ -2,9 +2,11 @@
 title: SPA Procesamiento del lado del servidor y de
 description: SPA El uso del procesamiento del lado del servidor (SSR) en el servidor puede acelerar la carga inicial de la página y, a continuación, pasar más procesamiento al cliente.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1517'
+source-wordcount: '1492'
 ht-degree: 0%
 
 ---

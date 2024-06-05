@@ -2,10 +2,12 @@
 title: Perfiles de AEM as a Cloud Service Team y de producto
 description: Aprenda cómo los perfiles de equipo y de producto de AEM as a Cloud Service pueden conceder y limitar el acceso a sus soluciones de Adobe con licencia.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '847'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +26,9 @@ AEM as a Cloud Service es una oferta totalmente nativa de la nube que ofrece AEM
 
 Los integrantes del equipo de AEM as a Cloud Service se agregan y asignan a uno o más de los siguientes perfiles de producto a través de Admin Console durante la incorporación.
 
-* **AEM Administradores de** AEM : Un administrador de la se suele asignar a desarrolladores, en particular a desarrolladores que necesitan acceso, por ejemplo, a los entornos de desarrollo. El perfil de producto del administrador de AEM se utiliza para otorgar privilegios de administrador en la instancia de AEM asociada.
+* **Administradores de AEM**: un administrador de AEM se suele asignar a desarrolladores, en particular a los que necesitan tener acceso, por ejemplo, a los entornos de desarrollo. El perfil de producto del administrador de AEM se utiliza para otorgar privilegios de administrador en la instancia de AEM asociada.
 
-* **Usuarios de AEM**: Los usuarios de AEM son los usuarios de su organización que utilizan AEM as a Cloud Service generalmente para crear contenido. AEM Estos usuarios deben acceder a la documentación de para realizar sus tareas a la vez que lo hacen El perfil de producto de los usuarios de AEM suele asignarse a un autor de contenido de AEM que crea y revisa el contenido. Este contenido puede ser de muchos tipos, como páginas, recursos, publicaciones, etc. El perfil de producto de AEM de los usuarios que se muestra a continuación se asigna a estos miembros.
+* **Usuarios de AEM**: los usuarios de AEM son los usuarios de su organización que utilizan AEM as a Cloud Service generalmente para crear contenido. Estos usuarios deberán acceder a AEM para realizar sus tareas. El perfil de producto de los usuarios de AEM suele asignarse a un autor de contenido de AEM que crea y revisa el contenido. Este contenido puede ser de muchos tipos, como páginas, recursos, publicaciones, etc. El perfil de producto de AEM de los usuarios que se muestra a continuación se asigna a estos miembros.
 
 ![Perfiles de producto](/help/onboarding/assets/admin-console-profiles.png)
 
@@ -42,7 +44,7 @@ Los integrantes del equipo de AEM as a Cloud Service se agregan y asignan a uno 
 
 >[!TIP]
 >
->* AEM Para obtener más información acerca de los perfiles de producto de la, consulte [AEM Asignación de perfiles de producto de](/help/journey-onboarding/assign-profiles-aem.md).
+>* Para obtener más información acerca de los perfiles de producto de AEM, consulte [Asignación de perfiles de producto de AEM](/help/journey-onboarding/assign-profiles-aem.md).
 >* Para obtener más información sobre el proceso de incorporación, consulte [recorrido de incorporación](/help/journey-onboarding/overview.md).
 
 ## Perfiles de producto de Cloud Manager {#cloud-manager-product-profiles}
@@ -56,13 +58,13 @@ Cloud Manager tiene perfiles de producto preconfigurados que se pueden considera
 Cada uno de los perfiles de producto tiene permisos específicos asociados a ellos.
 
 * **Propietario del negocio**
-   * AEM En este rol tiene permiso para agregar un nuevo programa o editar un programa, agregar o actualizar un entorno, implementar código en un entorno de trabajo o ejecutar comprobaciones de calidad del código de un entorno de trabajo.
+   * En este rol, tiene permiso para agregar un nuevo programa o editarlo, agregar o actualizar un entorno, implementar código en un entorno de AEM o ejecutar comprobaciones de calidad del código.
    * Este usuario es responsable de definir los indicadores clave de rendimiento (KPI), aprobar implementaciones de producción y anular errores importantes de tres niveles cuando sea necesario.
 * **Administrador de implementación**
-   * AEM En esta función, tiene permiso para agregar o actualizar un entorno, ejecutar cualquier canalización e implementar código en un entorno de trabajo, o ejecutar comprobaciones de calidad del código en un entorno de trabajo, o bien, ejecutar comprobaciones de calidad del código.
+   * En este rol, tiene permiso para agregar o actualizar un entorno, ejecutar cualquier canalización e implementar código en un entorno de AEM, o ejecutar comprobaciones de calidad del código.
    * Este usuario gestiona las operaciones de implementación y utiliza Cloud Manager para ejecutar implementaciones de ensayo/producción, editar las canalizaciones CI/CD, aprobar errores importantes de tres niveles cuando sea necesario y puede acceder al repositorio de Git.
 * **Desarrollador**
-   * En este rol, tiene permiso para generar tokens de acceso personal para acceder a Git.
+   * En este rol, tiene permiso para generar tókenes de acceso personal para acceder a Git.
    * Este usuario desarrolla y prueba el código de aplicación personalizado y emplea principalmente Cloud Manager para ver el estado de implementación y puede acceder al repositorio de Git para confirmaciones de código.
 * **Administrador de programa**
    * En este rol, tiene permiso para programar canalizaciones, anular las puertas de calidad de tres niveles y proporcionar la aprobación de producción.
@@ -82,5 +84,5 @@ Su equipo de Cloud Manager incluirá al menos lo siguiente:
 
 >[!TIP]
 >
->* Para obtener más información sobre los perfiles de producto de Cloud Manager, consulte [Asignar integrantes del equipo a perfiles de producto de Cloud Manager](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+>* Para obtener más información sobre los perfiles de producto de Cloud Manager, consulte [Asignación de integrantes del equipo a perfiles de producto de Cloud Manager](/help/journey-onboarding/assign-profiles-cloud-manager.md).
 >* Para obtener más información sobre el proceso de incorporación, consulte [recorrido de incorporación](/help/journey-onboarding/overview.md).

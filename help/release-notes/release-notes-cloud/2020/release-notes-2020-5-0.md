@@ -2,14 +2,16 @@
 title: Notas de la versión de Adobe Experience Manager as a Cloud Service para 2020.5.0
 description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.5.0."
 exl-id: 8570d2c3-6d55-4914-94b2-f5d162e0c285
-source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 98%
+source-wordcount: '389'
+ht-degree: 92%
 
 ---
 
-# Notas de la versión de AEM as a Cloud Service 2020.5.0 {#release-notes}
+# AEM Notas de la versión de as a Cloud Service 2020.5.0 {#release-notes}
 
 Esta página describe las notas de la versión generales de Experience Manager as a Cloud Service 2020.5.0.
 
@@ -17,7 +19,7 @@ Esta página describe las notas de la versión generales de Experience Manager a
 
 La fecha de la versión de [!DNL Experience Manager] as a Cloud Service 2020.5.0 es el 7 de mayo de 2020.
 
-## Novedades en AEM Sites {#aem-sites}
+## Novedades de AEM Sites. {#aem-sites}
 
 Siga esta sección para conocer las novedades y las actualizaciones de AEM Sites en AEM as a Cloud Service versión 2020.5.0.
 

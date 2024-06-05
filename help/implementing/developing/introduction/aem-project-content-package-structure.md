@@ -2,9 +2,11 @@
 title: Estructura del proyecto AEM
 description: Obtenga información sobre cómo definir estructuras de paquetes para su implementación en el Cloud Service de Adobe Experience Manager.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2918'
+source-wordcount: '2859'
 ht-degree: 4%
 
 ---
@@ -114,7 +116,7 @@ La estructura de implementación de la aplicación recomendada es la siguiente:
    + Se considera código y pertenece a paquetes OSGi, pero no contiene nodos de contenido normales. Por lo tanto, se marca como paquete contenedor
    + Carpeta organizativa que contiene definiciones de configuración OSGi específicas del modo de ejecución
       + `/apps/my-app/osgiconfig`
-   + AEM Carpeta de configuración de OSGi común que contiene configuraciones de OSGi predeterminadas que se aplican a todos los destinos de implementación as a Cloud Service de Target
+   + AEM Carpeta de configuración común de OSGi que contiene configuraciones predeterminadas de OSGi que se aplican a todos los destinos de implementación as a Cloud Service de Target
       + `/apps/my-app/osgiconfig/config`
    + AEM Ejecute carpetas de configuración de OSGi específicas del modo que contengan las configuraciones de OSGi predeterminadas que se aplican a todos los destinos de implementación as a Cloud Service de OSGi de destino
       + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
@@ -122,7 +124,7 @@ La estructura de implementación de la aplicación recomendada es la siguiente:
       + [Inicio de repo](#repo-init) AEM es la forma recomendada de implementar contenido (mutable) que lógicamente forma parte de la aplicación de la. Las configuraciones de OSGi de inicio de repo deben colocarse en la ubicación adecuada `config.<runmode>` como se ha descrito anteriormente, y se utilizará para definir lo siguiente:
          + Estructuras de contenido de referencia
          + Usuarios
-         + Usuarios de servicio
+         + Usuarios del servicio
          + Grupos
          + ACL (permisos)
 
@@ -172,12 +174,12 @@ Las ventajas clave de Repo Init son que tienen permisos implícitos para realiza
 Mientras que los scripts de inicio de repo se activan en la variable `ui.config` proyecto como secuencias de comandos, se pueden y se deben utilizar para definir las siguientes estructuras mutables:
 
 + Estructuras de contenido de referencia
-+ Usuarios de servicio
++ Usuarios del servicio
 + Usuarios
 + Grupos
 + ACL
 
-Los scripts de inicio de repo se almacenan como `scripts` entradas de `RepositoryInitializer` Configuraciones de fábrica de OSGi. Como tal, se pueden dirigir implícitamente al modo de ejecución, lo que permite diferencias entre los scripts de inicio de repositorios de AEM Author y AEM Publish Services, o incluso entre entornos (Desarrollo, Ensayo y Producción).
+Los scripts de inicio de repo se almacenan como `scripts` entradas de `RepositoryInitializer` Configuraciones de fábrica de OSGi. AEM AEM De este modo, se pueden dirigir implícitamente al modo de ejecución, lo que permite diferencias entre los scripts de inicio del repositorio de los servicios de autor o de publicación de los servicios de publicación, o incluso entre entornos (desarrollo, fase y producción).
 
 Las configuraciones OSGi de inicio de repo se escriben mejor en la variable [`.config` Formato de configuración OSGi](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-config-1) ya que admiten varias líneas, lo que supone una excepción a las prácticas recomendadas de uso de [`.cfg.json` para definir las configuraciones de OSGi](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 

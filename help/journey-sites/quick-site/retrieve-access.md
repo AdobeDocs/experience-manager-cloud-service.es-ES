@@ -2,10 +2,13 @@
 title: Recuperación de información de acceso al repositorio de Git
 description: Descubra cómo el desarrollador front-end utiliza Cloud Manager para acceder a la información del repositorio de Git.
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 83%
+source-wordcount: '874'
+ht-degree: 100%
 
 ---
 
@@ -76,9 +79,9 @@ Si no ha recibido este correo electrónico, póngase en contacto con el administ
 
 ## Acceder a Cloud Manager {#access-cloud-manager}
 
-1. Inicie sesión en Adobe Experience Cloud en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) o haga clic en el vínculo proporcionado en el correo electrónico de bienvenida.
+1. Inicie sesión en Adobe Experience Cloud en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) o haga clic en el vínculo que aparece en el correo electrónico de bienvenida.
 
-1. Cloud Manager enumera los distintos programas disponibles. Seleccione el que necesita acceder según lo proporcionado por el administrador de Cloud Manager. Si este es su primer proyecto front-end para AEMaaCS, es probable que solo haya un programa disponible.
+1. Cloud Manager enumera los distintos programas disponibles. Haga clic en el que necesite acceder según le indique el administrador de Cloud Manager. Si este es su primer proyecto front-end para AEMaaCS, es probable que solo haya un programa disponible.
 
    ![Selección de un programa en Cloud Manager](assets/cloud-manager-select-program.png)
 
@@ -88,7 +91,7 @@ Ahora verá una descripción general del programa. Su página tendrá un aspecto
 
 ## Recuperación de información de acceso al repositorio  {#repo-access}
 
-1. En el **Canalizaciones** de la página Cloud Manager, seleccione la opción **Acceder a info del repositorio** botón.
+1. En la sección **Canalizaciones** de la página Cloud Manager, haga clic en el botón **Acceder a información de repositorio**.
 
    ![Canalizaciones](assets/pipelines-repo-info.png)
 
@@ -96,13 +99,13 @@ Ahora verá una descripción general del programa. Su página tendrá un aspecto
 
    ![Información del repositorio](assets/repo-info.png)
 
-1. Seleccione el **Generar contraseña** para crear una contraseña para usted.
+1. Haga clic en el botón **Generar contraseña** para crear una contraseña para usted.
 
 1. Guarde la contraseña generada en un administrador de contraseñas seguro. La contraseña no se volverá a mostrar nunca más.
 
 1. Copie también los campos **Nombre de usuario** y la **Línea de comandos de Git**. Utilizará esta información más adelante para acceder al repositorio.
 
-1. Seleccionar **Cerrar**.
+1. Seleccione **Cerrar**.
 
 ## Siguientes pasos {#what-is-next}
 
@@ -111,7 +114,7 @@ Ahora que ha completado esta parte del Recorrido de creación rápida de sitios 
 * Comprender a alto nivel qué es Cloud Manager.
 * Haber recuperado sus credenciales para acceder al Git de AEM y confirmar sus personalizaciones.
 
-AEM Aproveche este conocimiento y continúe con su recorrido de Creación rápida de sitios de la revisando el documento [Personalizar el tema del sitio,](customize-theme.md) AEM dónde aprenderá cómo se crea el tema del sitio, cómo personalizarlo y cómo probarlo con contenido en directo
+Aproveche este conocimiento y continúe con su Recorrido de creación rápida de sitios de AEM revisando el documento [Personalización del tema del sitio,](customize-theme.md) con el que aprenderá cómo se crea el tema del sitio, cómo personalizarlo y probarlo con contenido de AEM en directo.
 
 ## Recursos adicionales {#additional-resources}
 

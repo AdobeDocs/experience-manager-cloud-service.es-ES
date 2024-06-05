@@ -2,7 +2,10 @@
 title: Conceptos de creación y publicación
 description: AEM Aprenda los conceptos de creación en entornos de creación, publicación y previsualización de, usando el entorno de creación y publicación de.
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 29%

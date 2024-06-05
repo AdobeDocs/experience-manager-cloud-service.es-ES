@@ -2,10 +2,12 @@
 title: Modelo SPA
 description: SPA SPA AEM En este documento se describe el contrato general independiente del marco de trabajo que cualquier marco de trabajo de debe cumplir para que pueda implementar componentes de la estructura editables dentro de los componentes de la.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2055'
-ht-degree: 2%
+source-wordcount: '2022'
+ht-degree: 1%
 
 ---
 
@@ -271,7 +273,7 @@ Consulte el artículo [SPA Enrutamiento de modelo de](routing.md) para obtener m
 
 SPA SPA Vea cómo funciona un simple y experimente con un usuario de la misma manera continuando con los siguientes documentos:
 
-* [Introducción a SPA en AEM usando React](getting-started-react.md).
+* [SPA AEM Introducción a la administración de la en React](getting-started-react.md).
 * [SPA AEM Introducción a la administración de la en el uso de Angular](getting-started-angular.md).
 
 ## Lectura adicional {#further-reading}

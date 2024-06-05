@@ -2,16 +2,18 @@
 title: Terminología de AEM as a Cloud Service
 description: Antes de iniciar sesión en AEMaaCS, es útil conocer parte de la terminología del sistema y su estructura básica.
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 # Terminología de AEM as a Cloud Service {#terminology}
 
-En esta parte del [recorrido de incorporación,](overview.md) AEM se aprende parte de la terminología de la as a Cloud Service y su estructura básica.
+En esta parte del [recorrido de incorporación,](overview.md) aprenderá parte de la terminología de AEM as a Cloud Service y su estructura básica.
 
 ## Objetivo {#objective}
 
@@ -19,7 +21,7 @@ Ahora que comprende lo que ha llevado al proceso de incorporación al leer el do
 
 AEM as a Cloud Service es una herramienta potente y flexible y para utilizar cualquier herramienta, debe estar familiarizado con su organización, la terminología y el lenguaje que se usa para describirla. Este documento resume algunos términos clave que debe comprender antes de comenzar a utilizar el sistema.
 
-Después de leer este documento, debería saber lo siguiente
+Después de leer este documento, debería poder comprender lo siguiente:
 
 * Las diferentes capas que componen AEMaaCS.
 * Conceptos básicos de lo que hace cada capa.
@@ -44,7 +46,7 @@ Un ejemplo suele ser útil para contextualizar esta jerarquía.
    * Un programa de Assets para la división WKND Media
 * Los programas de WKND Magazine y WKND Media tendrían **entornos** de desarrollo, ensayo y producción.
 * **Los repositorios** se utilizan para mantener el código personalizado y las aplicaciones para WKND Magazine y WKND Media.
-* Varios **herramientas y flujos de trabajo** AEM Trabaje en todos los repositorios para implementar código mediante canalizaciones de CI/CD, registros de acceso, acceso, etc., y así sucesivamente.
+* Varias **herramientas y flujos de trabajo** trabajan en todos los repositorios para implementar código mediante canalizaciones de CI/CD, registros de acceso, acceso de AEM, etc.
 
 ## Siguientes pasos {#what-is-next}
 
@@ -53,4 +55,4 @@ Ahora que ha completado esta parte del recorrido de incorporación de AEM, deber
 * Las diferentes capas que componen AEMaaCS.
 * Conceptos básicos de lo que hace cada capa.
 
-AEM Aproveche este conocimiento y continúe con su recorrido de incorporación de la leyendo el documento a continuación [Acceso al Admin Console](admin-console.md), donde aprenderá a acceder a la consola y a verificar su estado como administrador del sistema.
+Aproveche este conocimiento y continúe con su recorrido de incorporación de AEM al leer el documento [Acceso a Admin Console](admin-console.md), donde aprenderá a acceder a la consola y a verificar su estado como administrador del sistema.

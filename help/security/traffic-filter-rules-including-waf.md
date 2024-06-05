@@ -2,10 +2,12 @@
 title: Reglas de filtro de tráfico, incluidas reglas WAF
 description: Configuración de las reglas de filtro de tráfico, incluidas las reglas de cortafuegos de la aplicación web (WAF).
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: c914ae4a0ad3486feb54cbcf91f6659afa1372b8
+feature: Security
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '3947'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +29,7 @@ Las reglas de filtro de tráfico se pueden implementar mediante canalizaciones d
 [Siga un tutorial](#tutorial) para adquirir rápidamente conocimientos sobre esta funcionalidad.
 
 >[!NOTE]
->AEM Para obtener más opciones relacionadas con la configuración del tráfico en la CDN, incluida la edición de la solicitud/respuesta, la declaración de redirecciones y la creación de proxy a un origen que no sea de la lista de distribución, consulte la sección [Configuración del tráfico en la CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) artículo.
+>Para obtener más opciones relacionadas con la configuración del tráfico en la CDN, incluida la edición de la solicitud/respuesta, la declaración de redirecciones y la creación de proxy a un origen que no sea de AEM, consulte el artículo [Configuración del tráfico en la CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md).
 
 
 ## Organización de este artículo {#how-organized}
@@ -40,7 +42,7 @@ Este artículo está organizado en las secciones siguientes:
 * **Sintaxis de reglas:** obtenga información sobre cómo declarar reglas de filtro de tráfico en el archivo de configuración de `cdn.yaml`. Esto incluye las reglas de filtro de tráfico disponibles para todos los clientes de Sites y Forms, y la subcategoría de reglas WAF para aquellos que otorgan licencia a esa funcionalidad.
 * **Ejemplos de reglas:** consulte ejemplos de reglas declaradas para ponerse en marcha.
 * **Reglas de límite de volumen:** aprenda a utilizar reglas de limitación de volumen para proteger el sitio de ataques de gran volumen.
-* **Alertas de reglas de filtro de tráfico** Configure las alertas a las que se notificará cuando se activen las reglas.
+* **Alertas de reglas de filtro de tráfico** Configure las alertas para que se le notifique cuando se activen sus reglas.
 * **Pico de tráfico predeterminado en la alerta de origen** Reciba una notificación cuando haya una oleada de tráfico en el origen sugestivo de un ataque DDoS.
 * **Registros de CDN:** compruebe qué reglas declaradas e indicadores WAF coinciden con el tráfico.
 * **Herramientas del tablero:** analice los registros de CDN para crear nuevas reglas de filtro de tráfico.
@@ -525,13 +527,13 @@ data:
 
 >[!NOTE]
 >
->Esta función se está implementando gradualmente.
+>Esta función se está trasladando gradualmente.
 
-Un [Centro de acciones](/help/operations/actions-center.md) La notificación por correo electrónico se enviará cuando haya una cantidad significativa de tráfico enviado al origen, cuando un umbral alto de solicitudes provienen de la misma dirección IP, lo que sugiere un ataque DDoS.
+Una notificación por correo electrónico del [Centro de acciones](/help/operations/actions-center.md) se envía cuando haya una cantidad significativa de tráfico enviado al origen, cuando un umbral alto de solicitudes provienen de la misma dirección IP, lo que sugiere un ataque DDoS.
 
-Si se cumple este umbral, el Adobe bloqueará el tráfico de esa dirección IP, pero se recomienda tomar medidas adicionales para proteger el origen, incluida la configuración de reglas de filtro de tráfico de límite de velocidad para bloquear los picos de tráfico en umbrales más bajos. Consulte la [Bloqueo de ataques DoS y DDoS mediante el tutorial de reglas de tráfico](#tutorial-blocking-DDoS-with-rules) para una visita guiada.
+Si se cumple este umbral, Adobe bloqueará el tráfico de esa dirección IP, pero se recomienda tomar medidas adicionales para proteger el origen, incluida la configuración de reglas de filtro de tráfico de límite de velocidad para bloquear los picos de tráfico en umbrales más bajos. Consulte [Bloqueo de ataques DoS y DDoS mediante el tutorial de reglas de tráfico](#tutorial-blocking-DDoS-with-rules) para una visita guiada.
 
-Esta alerta está habilitada de forma predeterminada, pero se puede deshabilitar con la variable *enable_ddos_alerts* , establezca en false.
+Esta alerta está habilitada de manera predeterminada, pero se puede deshabilitar con la propiedad *enable_ddos_alerts*, establecida en falso.
 
 ```
 kind: "CDN"
@@ -657,7 +659,7 @@ A continuación se muestra una lista de los nombres de campo utilizados en los r
 
 Adobe proporciona un mecanismo para descargar las herramientas del tablero en el equipo para introducir registros de CDN descargados mediante Cloud Manager. Con esta herramienta, puede analizar el tráfico para determinar las reglas de filtro de tráfico apropiadas que se deben declarar, incluidas las reglas WAF.
 
-Las herramientas de tablero se pueden clonar directamente desde el [AEMCS-CDN-Log-Analysis-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) Repositorio de GitHub.
+Las herramientas del tablero se pueden clonar directamente desde el repositorio de GitHub [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling).
 
 Hay [tutoriales](#tutorial) disponibles para obtener instrucciones concretas sobre cómo utilizar las herramientas del tablero.
 

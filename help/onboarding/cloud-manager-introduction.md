@@ -2,10 +2,12 @@
 title: Introducción a Cloud Manager
 description: Obtenga información sobre cómo Cloud Manager admite su proyecto de AEM a través de sus programas, entornos y canalizaciones.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 6181b066742357169b67f605ac3970685537bb5e
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '864'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +63,7 @@ También puede navegar hasta la página Programas y productos de Cloud Manager d
 
 >[!TIP]
 >
->También hay disponibles perfiles de permiso personalizados con permisos configurables. Consulte el documento [Permisos personalizados](/help/implementing/cloud-manager/custom-permissions.md) para obtener más información.
+>También hay disponibles perfiles de permisos personalizados y configurables. Consulte el documento [Permisos personalizados](/help/implementing/cloud-manager/custom-permissions.md) para obtener más información.
 
 ## Programas de Cloud Manager {#cloud-manager-programs}
 

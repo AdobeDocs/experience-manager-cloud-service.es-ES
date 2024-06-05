@@ -2,10 +2,13 @@
 title: Personalización del tema del sitio
 description: Descubra cómo se crea el tema del sitio, cómo personalizarlo y cómo probarlo con contenido de AEM en directo.
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 94%
+source-wordcount: '954'
+ht-degree: 100%
 
 ---
 
@@ -64,7 +67,7 @@ Una vez que esté cómodo con la estructura del proyecto de tema, inicie el prox
 
    ![npm run live](assets/npm-run-live.png)
 
-1. Cuando se inicia el servidor proxy, se abre automáticamente un explorador a `http://localhost:7001/`. Seleccionar **INICIAR SESIÓN LOCALMENTE (SOLO TAREAS DE ADMINISTRACIÓN)** AEM e inicie sesión con las credenciales de usuario de proxy proporcionadas por el administrador de la.
+1. Cuando se inicia el servidor proxy, se abre automáticamente un explorador a `http://localhost:7001/`. Selecciona  **INICIAR SESIÓN LOCALMENTE (SOLO TAREAS DE ADMINISTRACIÓN)** e inicia sesión con las credenciales del usuario proxy proporcionadas por el administrador de AEM.
 
    ![Iniciar sesión localmente](assets/sign-in-locally.png)
 
@@ -135,7 +138,7 @@ Ahora que ha completado esta parte del Recorrido de creación rápida de sitios 
 * Consulte cómo probar las personalizaciones de temas mediante contenido AEM real a través de un proxy local.
 * Obtenga información sobre cómo confirmar los cambios en el repositorio de Git de AEM.
 
-AEM Aproveche este conocimiento y continúe con su recorrido de Creación rápida de sitios de la revisando el documento [Implementar El Tema Personalizado,](deploy-theme.md) donde aprenderá a implementar el tema mediante la canalización front-end.
+Aproveche este conocimiento y continúe con el recorrido de Creación rápida de sitios de AEM revisando el documento [Implementar un tema personalizado,](deploy-theme.md) donde aprenderá a implementar el tema utilizando la canalización front-end.
 
 ## Recursos adicionales {#additional-resources}
 

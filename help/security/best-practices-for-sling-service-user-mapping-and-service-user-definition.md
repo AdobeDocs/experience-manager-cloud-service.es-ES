@@ -1,13 +1,15 @@
 ---
 title: Prácticas recomendadas para la asignación de usuarios al servicio Sling y la definición de usuarios del servicio
 description: Obtenga información acerca de las prácticas recomendadas para la asignación de usuarios al servicio sling y la definición de usuarios del servicio
-source-git-commit: b6f7b6996b377ecfa372742ce1ad22139547ebdd
-workflow-type: ht
+exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
+feature: Security
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 100%
 
 ---
-
 
 # Prácticas recomendadas para la asignación de usuarios al servicio Sling y la definición de usuarios del servicio {#best-practices-for-sling-service-user-mapping-and-service-user-definition}
 
@@ -274,8 +276,3 @@ delete service my-feature-service
 Es crucial escribir pruebas del lado del servidor para los usuarios del servicio y su configuración de permisos. Esto no solo comprueba que la configuración realmente funciona, sino que también le ayuda a detectar regresiones y errores no deseados al cambiar el contenido del control de acceso o los usuarios del servicio.
 
 La biblioteca `com.adobe.granite.testing.clients` proporciona muchas utilidades que facilitan la escritura de SST para los usuarios de servicios.
-
-
-
-
-

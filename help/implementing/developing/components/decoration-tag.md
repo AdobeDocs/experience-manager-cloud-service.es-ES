@@ -2,10 +2,12 @@
 title: Etiqueta decorativa
 description: Cuando se procesa un componente de una página web, se puede generar un elemento HTML que ajuste el componente procesado en sí mismo. Para los desarrolladores, AEM tiene una lógica clara y sencilla para controlar las etiquetas de decoración que envuelven los componentes incluidos.
 exl-id: a90fd619-eff6-466f-9178-90374f988b5d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 10%
+source-wordcount: '786'
+ht-degree: 8%
 
 ---
 
@@ -18,7 +20,7 @@ Cuando se procesa un componente de una página web, se puede generar un elemento
    * Información de diseño
    * Información de estilo
 
-Para los desarrolladores, AEM tiene una lógica clara y sencilla para controlar las etiquetas de decoración que envuelven los componentes incluidos. El procesamiento de la etiqueta de decoración y cómo se realiza se define mediante la combinación de dos factores, en los que se sumergirá esta página:
+AEM Para los desarrolladores, el control de etiquetas de decoración que envuelven los componentes incluidos es lógico, claro y simple. El procesamiento de la etiqueta de decoración y cómo se realiza se define mediante la combinación de dos factores, en los que se sumergirá esta página:
 
 * Los propios componentes pueden configurar su etiqueta de decoración con un conjunto de propiedades.
 * Los scripts que incluyen componentes pueden definir los aspectos de la etiqueta de decoración con parámetros include.

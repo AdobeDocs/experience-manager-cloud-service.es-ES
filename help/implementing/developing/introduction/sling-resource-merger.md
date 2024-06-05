@@ -2,10 +2,12 @@
 title: Uso de la fusión de recursos de Sling en Adobe Experience Manager as a Cloud Service
 description: La fusión de recursos de Sling proporciona servicios para acceder y combinar recursos
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 2%
+source-wordcount: '1158'
+ht-degree: 1%
 
 ---
 
@@ -183,8 +185,8 @@ Estas funciones, junto con las funciones estándar, permiten:
    1. Cree el nodo correspondiente en /apps
    1. Creación de una propiedad `sling:hideResource`
 
-      * type: `Boolean`
-      * value: `true`
+      * tipo: `Boolean`
+      * valor: `true`
 
 * **Ocultar tareas secundarias de un nodo (conservando las propiedades del nodo)**
 
@@ -193,7 +195,7 @@ Estas funciones, junto con las funciones estándar, permiten:
    1. Cree el nodo correspondiente en `/apps`
    1. Creación de la propiedad `sling:hideChildren`:
 
-      * type: `String[]`
+      * tipo: `String[]`
       * value: una lista de los nodos secundarios (como se define en `/libs`) para ocultar/omitir
 
       El comodín &amp;ast; se puede usar para ocultar o ignorar todos los nodos secundarios.
@@ -209,8 +211,8 @@ Estas funciones, junto con las funciones estándar, permiten:
 
          Esto especifica el nodo (como en `/libs`) que el nodo actual debe colocarse antes de:
 
-         * type: `String`
-         * value: `<before-SiblingName>`
+         * tipo: `String`
+         * valor: `<before-SiblingName>`
 
 ### Invocar la fusión de recursos de Sling desde el código {#invoking-the-sling-resource-merger-from-your-code}
 
@@ -231,7 +233,7 @@ La fusión de recursos de Sling incluye dos proveedores de recursos personalizad
 
       * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
 
-* Omitir:
+* Anular:
 
    * objetivo: combinar recursos en función de su supertipo
    * punto de montaje: `/mnt/overide`

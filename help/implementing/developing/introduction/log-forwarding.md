@@ -1,15 +1,17 @@
 ---
 title: AEM Reenvío de registros para la as a Cloud Service
 description: AEM Obtenga información acerca del reenvío de registros a Splunk y otros proveedores de registro en as a Cloud Service
-source-git-commit: 13696ffde99114e5265e5c2818cb3257dd09ee8c
+exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '718'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-
-# Reenvío de registros {#log-forwarding}
+# Reenvío de registro {#log-forwarding}
 
 >[!NOTE]
 >

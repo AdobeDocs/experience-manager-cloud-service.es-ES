@@ -3,34 +3,35 @@ title: Crear un programa
 description: Aprenda a utilizar Cloud Manager para crear su primer programa.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Onboarding
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 67%
+source-wordcount: '669'
+ht-degree: 100%
 
 ---
 
 # Crear un programa {#create-program}
 
-En esta parte del [recorrido de incorporación,](overview.md) Aprenderá a utilizar Cloud Manager para crear su primer programa.
+En esta parte del [recorrido de incorporación,](overview.md) aprenderá a utilizar Cloud Manager para crear su primer programa.
 
 ## Objetivo {#objective}
 
 Tras revisar el documento anterior de este recorrido de incorporación, [Acceder a Cloud Manager,](cloud-manager.md) se ha asegurado de tener acceso adecuado a Cloud Manager. Ahora puede crear su primer programa.
 
-Después de leer este documento, puede:
+Después de leer este documento, debería poder hacer lo siguiente:
 
 * Comprender y explicar qué es un programa.
-* Conocer la diferencia entre los programas de producción y los de zonas protegidas.
-* Cree su propio programa.
+* Conocer la diferencia entre los programas de producción y los de las zonas protegidas.
+* Crear su propio programa.
 
 ## ¿Qué es un programa? {#programs}
 
 Los programas son el nivel más alto de organización en Cloud Manager. Según la licencia con Adobe, los programas permiten organizar la solución y conceder acceso a miembros concretos del equipo a esos programas.
 
-Los programas de Cloud Manager representan conjuntos de entornos de Cloud Manager. Estos programas admiten conjuntos lógicos de iniciativas del negocio, que normalmente corresponden a un Contrato de nivel de servicio (SLA) con licencia. Por ejemplo, un programa puede representar los recursos de Adobe Experience Manager AEM () para apoyar un sitio web público global para una organización, mientras que otro programa representa un DAM central interno.
+Los programas de Cloud Manager representan conjuntos de entornos de Cloud Manager. Estos programas admiten conjuntos lógicos de iniciativas del negocio, que normalmente corresponden a un Contrato de nivel de servicio (SLA) con licencia. Por ejemplo, un programa puede representar los recursos de Adobe Experience Manager (AEM) para apoyar un sitio web público mundial para una organización, mientras que otro programa representa un DAM central interno.
 
-Si recuerda el ejemplo de WKND Travel and Adventure Enterprises teórico, que es un inquilino que se centra en medios relacionados con viajes, podrían tener dos programas. Un programa de AEM Sites para su división WKND Magazine y un programa de AEM Assets para la división WKND Media. Los distintos integrantes del equipo tendrían entonces acceso a los diferentes programas debido a su propia división de las necesidades laborales.
+Si recuerda el ejemplo de WKND Travel and Adventure Enterprises teórico, que es un inquilino que se centra en medios relacionados con viajes, podrían tener dos programas. Un programa de AEM Sites para su división WKND Magazine y un programa de AEM Assets para la división de WKND Media. Los distintos integrantes del equipo tendrían entonces acceso a los diferentes programas debido a su propia división de las necesidades laborales.
 
 Existen dos tipos diferentes de programas:
 
@@ -41,7 +42,7 @@ Dado que sirven para diferentes propósitos, los diferentes entornos tienen dife
 
 >[!TIP]
 >
->Si debe crear un programa de producción, consulte la [Recursos adicionales](#additional-resources) para ver un vínculo a la documentación que describe los programas en detalle.
+>Si necesita crear un programa de producción, consulte la sección [Recursos adicionales](#additional-resources) para obtener un vínculo a la documentación que describe los programas en detalle.
 
 ## Creación de un programa de zona protegida {#create-sandbox}
 
@@ -51,11 +52,11 @@ Dado que sirven para diferentes propósitos, los diferentes entornos tienen dife
 
    ![Página de aterrizaje de Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. En el asistente Crear programa, seleccione **Configuración de una zona protegida**, proporcione un nombre de programa y seleccione **Continuar**.
+1. En el asistente Crear programa, seleccione **Configuración de una zona protegida**, proporcione un nombre de programa y haga clic en **Continuar**.
 
-   ![Creación de tipo de programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
+   ![Creación de un tipo de programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
 
-1. En el **Configurar la zona protegida** , puede elegir qué soluciones desea habilitar en el programa de zona protegida. Las soluciones de **Sites** y **Assets** siempre se incluyen en los programas de zonas protegidas y se seleccionan automáticamente. Esto es suficiente para el ejemplo de incorporación. Haga clic en **Crear**.
+1. En el cuadro de diálogo **Configurar la zona protegida** puede elegir qué soluciones desea habilitar en el programa de zona protegida. Las soluciones de **Sites** y **Assets** siempre se incluyen en los programas de zonas protegidas y se seleccionan automáticamente. Esto es suficiente como ejemplo de incorporación. Haga clic en **Crear**.
 
    ![Selección de soluciones](assets/set-up-sandbox-onboarding.png)
 
@@ -63,11 +64,11 @@ Verá una nueva tarjeta de programa de zona protegida en la página de aterrizaj
 
 ![Creación de una zona protegida desde la página Información general](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/program-create-setupdemo2.png)
 
-Una vez completado el programa, los miembros de la organización se asignan al **Desarrollador** El perfil de producto puede iniciar sesión en Cloud Manager y administrar los repositorios de Git de Cloud Manager.
+Una vez completado el programa, los miembros de la organización asignados al perfil de producto **Desarrollador** podrán iniciar sesión en Cloud Manager y administrar los repositorios de Git de Cloud Manager.
 
 ## Siguientes pasos {#whats-next}
 
-Ahora que se ha creado el primer programa, puede crear entornos para él. Continúe con el recorrido de incorporación revisando el documento a continuación [Crear entornos.](create-environments.md)
+Ahora que se ha creado el primer programa, puede crear entornos para él. Debe continuar con su recorrido de incorporación revisando el documento [Crear entornos.](create-environments.md)
 
 ## Recursos adicionales {#additional-resources}
 

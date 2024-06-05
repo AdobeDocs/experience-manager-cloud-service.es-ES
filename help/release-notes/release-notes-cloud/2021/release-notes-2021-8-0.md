@@ -2,10 +2,12 @@
 title: Notas de la versión 2021.8.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2021.8.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 28%
+source-wordcount: '1011'
+ht-degree: 27%
 
 ---
 
@@ -21,10 +23,10 @@ En la siguiente sección se describen las notas de la versión generales de la v
 >
 >Consulte [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=es) para obtener más información sobre las actualizaciones de la documentación no relacionadas directamente con una versión.
 
-## Fecha de la versión {#release-date}
+## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] La versión actual (2021.8.0) es el 26 de agosto de 2021.
-La de la siguiente versión (2021.9.0) es la del 6 de octubre de 2021.
+La fecha de lanzamiento de la versión actual de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2021.8.0) es el viernes, 26 de agosto de 2021.
+La de la siguiente versión (2021.9.0) es el jueves, 06 de octubre de 2021.
 
 ## Vídeo de la versión {#release-video}
 
@@ -90,7 +92,7 @@ AEM Esta sección describe las notas de la versión para Cloud Manager en las ve
 
 ## Fecha de lanzamiento {#release-date-cm-aug}
 
-La fecha de lanzamiento de Cloud Manager en AEM as a Cloud Service 2021.8.0 es el 12 de agosto de 2021.
+AEM La fecha de lanzamiento de Cloud Manager en la as a Cloud Service 2021.8.0 de es el 12 de agosto de 2021.
 La próxima versión está planificada para el 9 de septiembre de 2021.
 
 ### Novedades {#what-is-new-aug}

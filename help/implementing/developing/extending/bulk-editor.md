@@ -2,7 +2,9 @@
 title: Configuración de la edición masiva de propiedades de página
 description: Aprenda a configurar la edición masiva para poder editar las propiedades de varias páginas a la vez.
 exl-id: 0d10c6b9-8643-479d-adc1-4066d227e83d
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 0%

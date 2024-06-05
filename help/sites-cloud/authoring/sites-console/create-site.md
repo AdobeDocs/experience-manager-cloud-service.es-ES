@@ -1,10 +1,11 @@
 ---
-title: Crear un nuevo canal
+title: Crear un nuevo sitio
 description: AEM Aprenda cómo los administradores utilizan la para crear un sitio mediante plantillas de sitio para definir el estilo y la estructura del sitio.
-feature: Administering
-role: Admin
+feature: Administering, Authoring
+role: Admin, User
 exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+solution: Experience Manager Sites
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 67%
@@ -12,7 +13,7 @@ ht-degree: 67%
 ---
 
 
-# Crear un nuevo canal {#new-site}
+# Crear un nuevo sitio {#new-site}
 
 AEM Aprenda cómo los administradores utilizan la creación de un sitio mediante plantillas de sitio para definir el estilo y la estructura del sitio.
 

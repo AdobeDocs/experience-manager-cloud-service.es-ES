@@ -2,10 +2,12 @@
 title: SPA AEM Introducción a la administración de la en React
 description: SPA SPA Este artículo presenta una aplicación de ejemplo para la creación de informes, explica cómo se crea y le permite ponerse en marcha con su propia aplicación de forma rápida mediante el marco de trabajo React.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1130'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -95,7 +97,7 @@ module.exports = {
 };
 ```
 
-### Edificio {#building}
+### Generación {#building}
 
 La creación de la aplicación utiliza [Webpack](https://webpack.js.org/) para la transpilación, además de aem-clientlib-generator para la creación automática de bibliotecas de cliente. Por lo tanto, el comando build será similar a:
 
@@ -103,7 +105,7 @@ La creación de la aplicación utiliza [Webpack](https://webpack.js.org/) para l
 
 AEM Una vez creado, el paquete se puede cargar en una instancia de.
 
-### Tipo de archivo del proyecto AEM. {#aem-project-archetype}
+### Tipo de archivo del proyecto AEM {#aem-project-archetype}
 
 Cualquier proyecto AEM debería utilizar el [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es), que admite proyectos de SPA que utilizan React o Angular y aprovecha el SDK de SPA.
 
@@ -260,7 +262,7 @@ Normalmente, es necesario que los componentes de una aplicación de una sola pá
 * **Opción 2:** Comparta estados de componentes mediante una biblioteca de estados como Redux.
 * **Opción 3:** Aproveche la jerarquía de objetos personalizando y ampliando el componente contenedor.
 
-## Pasos siguientes {#next-steps}
+## Siguientes pasos {#next-steps}
 
 * [SPA AEM Introducción a la administración de la en el uso de Angular](getting-started-angular.md) SPA SPA AEM muestra cómo se crea una básica para trabajar con el Editor de en el uso de Angular.
 * La [Información general del Editor de SPA](editor-overview.md) profundiza en el modelo de comunicación entre AEM y el SPA.

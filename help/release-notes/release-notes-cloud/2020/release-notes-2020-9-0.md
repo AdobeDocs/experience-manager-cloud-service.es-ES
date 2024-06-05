@@ -1,15 +1,17 @@
 ---
-title: Notas de la versión 2020.9.0 de la versión de [!DNL Adobe Experience Manager]  as a Cloud Service.
+title: Notas de la versión 2020.9.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.9.0."
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 20%
+source-wordcount: '711'
+ht-degree: 16%
 
 ---
 
-# Notas de la versión [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
+# Notas de la versión para [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
 
 En la siguiente sección se describen las notas de la versión generales de [!DNL Experience Manager] as a Cloud Service 2020.9.0.
 
@@ -21,7 +23,7 @@ La fecha de lanzamiento de [!DNL Adobe Experience Manager] La versión 2020.9.0 
 
 ### Novedades de [!DNL Sites] {#what-is-new-sites}
 
-* El SDK del Editor de JavaScript para la Aplicación de una sola página (SPA) [ahora es de código abierto](/help/implementing/developing/hybrid/reference-materials.md).
+* SPA SDK de JavaScript del Editor de aplicaciones de una sola página () [ahora es de código abierto](/help/implementing/developing/hybrid/reference-materials.md).
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
@@ -50,7 +52,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### Novedades {#what-is-new-commerce}
 
-* Componentes principales de CIF v1.3.0. Consulte [Componentes principales del CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) para obtener más información.
+* CIF Lanzamiento de los componentes principales de la versión 1.3.0 de. Consulte [CIF Componentes principales](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) para obtener más información.
 
 * Ya está disponible la capacidad de previsualización con plantillas de producto/categoría para productos y categorías. AEM Esto permite a los usuarios/especialistas en marketing de la empresa de la comunidad de datos ver las plantillas de producto/categoría con datos reales.
 
@@ -68,13 +70,13 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### Fecha de la versión {#release-date-cm}
 
-La fecha de lanzamiento de [!UICONTROL Cloud Manager] La versión 2020.9.0 es el 3 de septiembre de 2020.
+La fecha de versión de [!UICONTROL Cloud Manager] versión 2020.9.0 es viernes, 03 de septiembre de 2020.
 
 ### Novedades {#what-is-new-cloud-manager}
 
 * La auditoría de contenido se ha vuelto a etiquetar como auditoría de experiencias.
 * El proceso de generación se ha separado en tres comandos de Maven independientes.
-* Si el repositorio Git no se clona, se vuelve a crear hasta tres veces.
+* Si no se consigue clonar el repositorio Git, se reintenta hasta tres veces.
 
 ### Correcciones de errores {#bug-fixes-cm}
 
@@ -82,7 +84,7 @@ La fecha de lanzamiento de [!UICONTROL Cloud Manager] La versión 2020.9.0 es el
 
 ## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
-Consulte esta sección para conocer las novedades y las actualizaciones de Cloud Manager versión 1.1.0.
+Siga esta sección para conocer las novedades y las actualizaciones de Cloud Readiness Analyzer versión 1.1.0.
 
 ### Novedades {#what-is-new-cra}
 

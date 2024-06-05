@@ -2,7 +2,10 @@
 title: Tablero de auditoría de experiencias
 description: Descubra cómo la auditoría de experiencias valida el proceso de implementación y ayuda a garantizar que los cambios implementados cumplan los estándares de línea de base para el rendimiento, la accesibilidad, las prácticas recomendadas y la SEO a través de una interfaz de panel clara e informativa.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1958'
 ht-degree: 7%
@@ -134,7 +137,7 @@ El informe se divide en dos áreas:
 * **[Puntuaciones de página: tendencia](#trend)**
 * **[Experimente los resultados del análisis de auditoría](#results)**
 
-#### Puntuaciones de la página: tendencia {#trend}
+#### Puntuaciones de la página de Lighthouse: tendencia {#trend}
 
 De forma predeterminada, la vista seleccionada para **Puntuaciones de página: tendencia** es **puntuación media** para el **Últimos 6 meses**.
 

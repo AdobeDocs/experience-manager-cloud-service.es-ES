@@ -2,8 +2,10 @@
 title: Modelado de contenido para la creación de AEM con proyectos de Edge Delivery Services
 description: Aprenda cómo funciona el modelado de contenido para la creación de contenido de AEM con proyectos de Edge Delivery Services y cómo modelar su propio contenido.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
-source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
-workflow-type: ht
+feature: Edge Delivery Services
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '2233'
 ht-degree: 100%
 

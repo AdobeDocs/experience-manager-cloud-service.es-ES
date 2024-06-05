@@ -2,9 +2,11 @@
 title: SPA Asignación de modelos dinámicos a componentes para la creación de
 description: SPA AEM En este artículo se describe cómo se produce la asignación de modelos dinámicos a componentes en el SDK de JavaScript para la.
 exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---

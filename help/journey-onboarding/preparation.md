@@ -2,10 +2,12 @@
 title: Preparación de la incorporación
 description: Antes de iniciar el proceso de incorporación, hay que realizar una serie de pasos preparatorios que el administrador del sistema debe conocer antes de iniciar sesión en el sistema.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '760'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +19,7 @@ Ahora que sabe lo que le queda en el proceso de incorporación, al leer el artí
 
 AEM as a Cloud Service es una herramienta potente y flexible con numerosas soluciones, complementos y modelos de implementación disponibles. La solución que puede utilizar su organización se define en su contrato con Adobe, que guía el inicio del proceso de incorporación.
 
-Después de leer este documento, debería saber lo siguiente
+Después de leer este documento, debería poder comprender lo siguiente:
 
 * Lo que define su contrato con Adobe.
 * Lo que aprovisiona Adobe.
@@ -34,7 +36,7 @@ Este vídeo resume el proceso de incorporación establecido en este recorrido y 
 
 ## Su contrato {#contract}
 
-La incorporación a AEM as a Cloud Service comienza con un contrato firmado entre su organización y Adobe. El motivo es que el contrato especifica varios acuerdos importantes entre el Adobe y la organización, como los siguientes:
+La incorporación a AEM as a Cloud Service comienza con un contrato firmado entre su organización y Adobe. El motivo es que el contrato especifica varios acuerdos importantes entre Adobe y la organización, como los siguientes:
 
 * Qué soluciones y complementos puede utilizar su organización.
 * Número y tipos de entornos a los que puede acceder.
@@ -88,4 +90,4 @@ Ahora debería tener una comprensión básica de lo siguiente:
 * Cómo afecta ese contrato al proceso de incorporación.
 * Cómo prepararse para su llamada de incorporación.
 
-Ahora que está familiarizado con estos pasos de preparación, está casi listo para iniciar sesión en el sistema usted mismo. AEM Pero primero necesita una breve visión general de cómo está estructurado el as a Cloud Service desde el punto de vista de un administrador del sistema y conocer la terminología importante. Continúe con la siguiente parte del recorrido, [Terminología de AEM as a Cloud Service](terminology.md).
+Ahora que está familiarizado con estos pasos de preparación, está casi listo para iniciar sesión en el sistema usted mismo. Pero primero necesita una breve visión general de cómo está estructurado AEM as a Cloud Service desde el punto de vista de un administrador del sistema y conocer la terminología importante. Continúe con la siguiente parte del recorrido, [Terminología de AEM as a Cloud Service](terminology.md).

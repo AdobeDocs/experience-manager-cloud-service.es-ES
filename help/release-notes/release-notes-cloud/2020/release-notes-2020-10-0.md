@@ -2,14 +2,16 @@
 title: Notas de la versión 2020.10.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.10.0."
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1194'
-ht-degree: 30%
+source-wordcount: '1103'
+ht-degree: 25%
 
 ---
 
-# Notas de la versión [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 {#release-notes}
+# Notas de la versión para [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 {#release-notes}
 
 En la siguiente sección se describen las notas de la versión generales de [!DNL Experience Manager] as a Cloud Service 2020.10.0.
 
@@ -35,8 +37,8 @@ La de la siguiente versión (2020.11.0) será el 1 de diciembre de 2020.
 * **Mejoras de Brand Portal**: Las siguientes nuevas funciones y más están disponibles en [!DNL Brand Portal]. Para obtener más información, consulte [[!DNL Brand Portal] notas de la versión](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
 
    * [Experiencia de descarga mejorada](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html) para descargas rápidas y simplificadas. Los administradores pueden configurar configuraciones de descarga adicionales para ofrecer una experiencia que se adapte a las necesidades de los usuarios y las empresas.
-   * La navegación con un solo clic a Archivos, [Colecciones](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/share/brand-portal-share-collection.html) y Vínculos compartidos ahora es posible desde cualquier página.
-   * Los usuarios ya pueden [seleccionar y descargar representaciones específicas](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page). La nueva opción de descarga de representación está disponible en el panel Representaciones de la página Detalles del recurso.
+   * Navegación con un solo clic a Archivos, [Colecciones](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/share/brand-portal-share-collection.html)y Vínculos compartidos ahora es posible desde cualquier página.
+   * Los usuarios pueden [seleccionar y descargar representaciones específicas](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page) ahora. La nueva opción de descarga de representación está disponible en el panel Representaciones de la página Detalles del recurso.
    * Un tiempo de espera de 15 minutos para sesiones de usuarios invitados garantiza una mejor experiencia a todos los usuarios simultáneos.
 
 * **[!DNL Adobe Asset Link]versión 2.1**: una nueva versión de [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html) extensión para [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], y [!DNL Adobe InDesign] está disponible. Añade compatibilidad con las últimas [!DNL Adobe Creative Cloud] aplicaciones con versión 2021, lanzadas en octubre de 2020.
@@ -63,9 +65,9 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 
 ### Novedades {#what-is-new-commerce}
 
-* CIF CIF Lanzamiento del sitio de referencia de Venia de la versión 2020.10.2, que incluye la versión más reciente de componentes principales de la versión 1.4.0 de la versión de. Consulte [Sitio de referencia de CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) para obtener más información.
+* CIF CIF Lanzamiento del sitio de referencia de Venia de la versión 2020.10.2, que incluye la versión más reciente de componentes principales de la versión 1.4.0 de la versión de. Consulte [CIF Sitio de referencia de Venia en](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) para obtener más información.
 
-* CIF Lanzamiento de los componentes principales de la versión 1.4.0 de. Consulte [Componentes principales del CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) para obtener más información.
+* CIF Lanzamiento de los componentes principales de la versión 1.4.0 de. Consulte [CIF Componentes principales](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) para obtener más información.
 
 ### Correcciones de errores {#bug-fixes-commerce}
 
@@ -118,7 +120,7 @@ Consulte [Ver entorno](/help/implementing/cloud-manager/manage-environments.md#v
 
 ## Herramienta de transferencia de contenido {#content-transfer-tool}
 
-Obtenga más información sobre novedades y actualizaciones de [Herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang?es) Versión v1.1.12.
+Obtenga más información sobre novedades y actualizaciones de [Herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Versión v1.1.12.
 
 ### Novedades {#what-is-new-ctt}
 

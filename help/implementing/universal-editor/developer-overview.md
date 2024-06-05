@@ -2,7 +2,9 @@
 title: AEM Información general del editor universal para desarrolladores
 description: AEM Si usted es un desarrollador de interesado en cómo funciona el editor universal y cómo utilizarlo en su proyecto, este documento le ofrece una introducción completa al instrumentarlo para que trabaje con el editor universal.
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '3139'
 ht-degree: 0%
@@ -561,7 +563,7 @@ Cualquier campo del JCR del componente se puede exponer en el editor universal d
 
 ## Resumen {#summary}
 
-Felicitaciones. AEM Ahora puede instrumentar sus propias aplicaciones de para que funcionen con el editor universal.
+Enhorabuena. AEM Ahora puede instrumentar sus propias aplicaciones de para que funcionen con el editor universal.
 
 Cuando empiece a instrumentar su propia aplicación, tenga en cuenta los pasos básicos que ha realizado en este ejemplo.
 

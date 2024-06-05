@@ -2,10 +2,12 @@
 title: Extracción de contenido del origen
 description: Obtenga información sobre cómo extraer contenido de una instancia de Adobe Experience Manager AEM () de origen para transferirlo más tarde a una instancia de Cloud Service AEM de.
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 28%
+source-wordcount: '728'
+ht-degree: 19%
 
 ---
 
@@ -61,12 +63,12 @@ Siga los pasos a continuación para extraer el conjunto de migración de la herr
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18b.png)
 
 
-## Extracción superior {#top-up-extraction-process}
+## Extracción Superior {#top-up-extraction-process}
 
 La herramienta de transferencia de contenido tiene una función que permite agregar contenido diferencial donde solo es posible transferir los cambios realizados desde la actividad de transferencia de contenido anterior.
 
 >[!NOTE]
->Después de la transferencia de contenido inicial, se recomienda realizar frecuentes recargas de contenido diferencial para acortar el período de congelación de contenido para la transferencia de contenido diferencial final antes de lanzarse a Cloud Service. Si ha utilizado el paso de precopia para la primera extracción completa, puede omitir la precopia para las siguientes extracciones de recarga (si el tamaño del conjunto de migración superior es inferior a 200 GB). El motivo es que puede añadir tiempo a todo el proceso.
+>Después de la transferencia de contenido inicial, se recomienda realizar frecuentes recargas de contenido diferencial para acortar el período de congelación de contenido para la transferencia de contenido diferencial final antes de lanzarse al Cloud Service. Si ha utilizado el paso de precopia para la primera extracción completa, puede omitir la precopia para las siguientes extracciones de recarga (si el tamaño del conjunto de migración superior es inferior a 200 GB). El motivo es que puede añadir tiempo a todo el proceso.
 >Además, es esencial que la estructura de contenido del contenido existente no cambie desde el momento en que se realiza la extracción inicial hasta cuando se ejecuta la extracción superior. Las recargas no se pueden ejecutar en contenido cuya estructura se haya cambiado desde la extracción inicial. Asegúrese de restringir esto durante el proceso de migración.
 
 Una vez completado el proceso de extracción, se puede transferir contenido delta mediante el método de extracción superior.
@@ -77,7 +79,7 @@ Complete los siguientes pasos:
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam19.png)
 
-1. Aparece el cuadro de diálogo **extracción de conjunto de migración** . Clic **Extract**.
+1. El **Extracción del conjunto de migración** aparece el cuadro de diálogo. Clic **Extract**.
 
    >[!IMPORTANT]
    >Se debe desactivar la opción **Sobrescribir el contenedor de ensayo durante la extracción** .

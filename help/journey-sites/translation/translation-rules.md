@@ -5,10 +5,13 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Translation
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '776'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -55,22 +58,22 @@ Las reglas de traducción están diseñadas para manejar estos escenarios. Sin e
 
 Hay una consola de **Configuración de traducción** disponible para configurar las reglas de traducción.
 
-Para acceder a ella:
+Para acceder a ella, haga lo siguiente:
 
-1. Vaya a **Herramientas** > **General**.
+1. Vaya a **Herramientas** > **General**.
 1. Seleccione **Configuración de traducción**.
 
 AEM crea automáticamente reglas de traducción para todo el contenido. Para ver estas reglas, haga lo siguiente:
 
-1. Seleccione el `/content` contexto.
+1. Seleccione el contexto `/content`.
 1. En la barra de herramientas, seleccione **Editar**.
 1. El Editor de reglas de traducción se abre con las reglas que AEM crea automáticamente para la ruta `/content`.
 
    ![Editor de reglas de traducción](assets/translation-rules-editor.png)
 
 1. Las propiedades de página que se traducen se encuentran en la sección **General** de la lista. Puede agregar o actualizar nombres de propiedades existentes que desee incluir explícitamente en la traducción.
-   1. En el **Nueva propiedad** , introduzca el nombre de la propiedad. Las opciones **Traducir** y **Heredar** se marcan automáticamente.
-   1. Seleccionar **Añadir**.
+   1. En el campo **Nueva propiedad**, escriba el nombre de la propiedad. Las opciones **Traducir** y **Heredar** se marcan automáticamente.
+   1. Seleccione **Añadir**.
    1. Repita estos pasos para todos los campos que debe traducir.
    1. Seleccione **Guardar**.
 
@@ -88,7 +91,7 @@ Ya ha configurado las reglas de traducción.
 
 Hay varias propiedades adicionales que se pueden configurar como parte de las reglas de traducción. Además, puede especificar las reglas manualmente como XML, lo que permite una mayor especificidad y flexibilidad.
 
-Estas funciones generalmente no son necesarias para empezar a localizar el contenido. De igual manera, puede leer más sobre ellas en la sección [Recursos adicionales](#additional-resources).
+Estas funciones generalmente no son necesarias para empezar a localizar el contenido. De igual manera, puedes leer más sobre ellas en la sección [Recursos adicionales](#additional-resources).
 
 ## Siguientes pasos {#what-is-next}
 
@@ -97,7 +100,7 @@ Ahora que ha completado esta parte del recorrido de traducción de AEM Sites, de
 * Comprender lo que hacen las reglas de traducción.
 * Poder definir sus propias reglas de traducción.
 
-Aproveche este conocimiento y continúe con su recorrido de traducción de AEM Sites revisando el documento a continuación [Traducir contenido](translate-content.md) donde aprenderá cómo funcionan juntos el conector y las reglas para traducir contenido.
+Aproveche este conocimiento y continúe con su recorrido de traducción de AEM Sites. Revise el documento [Traducir contenido](translate-content.md) donde aprenderá cómo funcionan juntos el conector y las reglas para traducir contenido.
 
 ## Recursos adicionales {#additional-resources}
 

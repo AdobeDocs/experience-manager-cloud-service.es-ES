@@ -2,7 +2,10 @@
 title: Información general sobre las pruebas de Cloud Manager
 description: Obtenga información general sobre los tres tipos de pruebas que Cloud Manager ejecuta automáticamente para garantizar la calidad del código personalizado.
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 91%

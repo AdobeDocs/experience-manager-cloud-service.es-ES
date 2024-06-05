@@ -2,10 +2,12 @@
 title: Habilitación de AEM Screens para el sitio de demostración
 description: Conozca los pasos para habilitar la experiencia completa de AEM Screens as a Cloud Service en su sitio de demostración.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2665'
-ht-degree: 93%
+source-wordcount: '2654'
+ht-degree: 100%
 
 ---
 
@@ -102,7 +104,7 @@ Una vez se complete el asistente, encontrará el contenido implementado en Sites
 
 Ahora que tiene contenido de demostración de We.Cafe, puede elegir cómo desea probar AEM Screens:
 
-* Si solo desea explorar el contenido de la consola de AEM Sites, comience a explorar y descubra más en la [Recursos adicionales](#additional-resources) ¡Sección! No se requieren más acciones.
+* Si solo desea explorar el contenido de la consola de AEM Sites, basta con comenzar a investigar y descubrir más en la sección [Recursos adicionales](#additional-resources). No se requieren más acciones.
 * Si desea experimentar todas las funciones dinámicas de AEM Screens, continúe a la siguiente sección: [Cambio dinámico del contenido de Screens.](#dynamically-change)
 
 ## Cambio dinámico del contenido de Screens {#dynamically-change}
@@ -145,7 +147,7 @@ En primer lugar, debe crear una clave de API de Google para facilitar el interca
 
 Para permitir el intercambio de datos de Hojas de cálculo de Google mediante la clave de API, debe habilitar la API de Hojas de cálculo de Google.
 
-1. Vuelva a la consola de Google Cloud en `https://console.cloud.google.com` para el proyecto y, a continuación, utilice el menú hamburguesa para seleccionar **API y servicios > Biblioteca**.
+1. Vuelva a la consola de Google Cloud en `https://console.cloud.google.com` para el proyecto y, a continuación, utilice el menú de hamburguesa para seleccionar **API y servicios > Biblioteca**.
 
    ![Biblioteca de API](assets/api-library.png)
 
@@ -221,9 +223,9 @@ Cuando se muestre el contenido de la pantalla, ContextHub llama al servicio mete
 
 Para fines de demostración, se pueden cambiar los valores de la hoja. ContextHub reconoce este hecho y el contenido se ajusta en el canal según la temperatura actualizada.
 
-1. En la instancia de autor de AEMaaCS, vaya a **Navegación global > Herramientas > Sitios > ContextHub**.
-1. Seleccione el contenedor de configuración que tenga el mismo nombre que le dio al proyecto cuando creó el proyecto Screens desde la **Plantilla del sitio web de We.Cafe**.
-1. Seleccionar **Configuración > Configuración de ContextHub > Hojas de cálculo de Google** luego haga clic en **Siguiente** en la parte superior derecha.
+1. En la instancia de autor de AEMaaCS, vaya a **Navegación global > Herramientas > Sites > ContextHub**.
+1. Seleccione el contenedor de configuración que tenga el mismo nombre del proyecto cuando creó el proyecto Screens desde la **Plantilla del sitio web de We.Cafe**.
+1. Seleccione **Configuración > Configuración de ContextHub > Hojas de cálculo de Google** y, a continuación, haga clic en **Siguiente** en la parte superior derecha.
 1. La configuración ya debería tener los datos JSON preconfigurados. Hay dos valores que deben cambiarse:
    1. Reemplace `[your Google Sheets id]` con el ID de hoja [que guardó anteriormente](#create-spreadsheet).
    1. Reemplace `[your Google API Key]` con la clave de API [que guardó anteriormente](#create-api-key).
@@ -236,9 +238,9 @@ Ahora puede cambiar el valor de temperatura en la hoja de cálculo de Hojas de c
 Ahora que AEM Screens y ContextHub están conectados al servicio meteorológico, puede probarlo para ver cómo las pantallas pueden actualizar el contenido de forma dinámica.
 
 1. Acceda a la instancia de autor de la zona protegida.
-1. Vaya a la consola Sites mediante **Navegación global > Sitios** y seleccione la siguiente página **Pantallas > &lt;project-name> > Canales > Entrada mañana (vertical)**.
+1. Vaya a la consola Sites a través de **Navegación global > Sites** y seleccione la siguiente página **Screens > &lt;project-name> > Canales > Entrada mañana (vertical)**.
 
-   ![Seleccionar contenido del proyecto de demostración](assets/project-content.png)
+   ![Seleccione el contenido del proyecto de demostración](assets/project-content.png)
 
 1. Haga clic en **Editar** en la barra de herramientas o escriba la tecla de método abreviado `e` para editar la página.
 
@@ -325,7 +327,7 @@ En primer lugar, deberá crear un código de registro para conectar de forma seg
 
    ![Compruebe la organización de Screens](assets/screens-org.png)
 
-1. En el panel izquierdo, haga clic en **Administración del reproductor > Códigos de registro** y luego haga clic en **Crear código** en la parte superior derecha de la pantalla.
+1. En el panel izquierdo, haga clic en **Administración del reproductor > Códigos de registro** y luego, en **Crear código** en la parte superior derecha de la pantalla.
 
 ![Códigos de registro](assets/registration-codes.png)
 
@@ -360,7 +362,7 @@ En primer lugar, deberá crear un código de registro para conectar de forma seg
 
    ![Compruebe la organización de Screens](assets/screens-org.png)
 
-1. En el panel izquierdo, haga clic en **Administración de reproductores > Reproductores** y verá el reproductor que instaló y registró anteriormente.
+1. En el panel izquierdo, haga clic en **Administración del reproductor > Reproductores** y verá el reproductor que instaló y registró anteriormente.
 
    ![Reproductores](assets/players.png)
 
@@ -388,7 +390,7 @@ Ahora que ha completado esta parte del recorrido del complemento de demostració
 * Comprender el contenido de la demostración de We.Cafe.
 * Saber cómo configurar AEM Screens para We.Cafe.
 
-Está listo para explorar las capacidades de AEM Screens con sus propios sitios de muestra. Continúe con la siguiente sección del recorrido. [Administrar Los Sitios De Demostración,](manage.md) donde puede obtener información sobre las herramientas disponibles para ayudarle a administrar los sitios de muestra y cómo eliminarlos.
+Está listo para explorar las capacidades de AEM Screens con sus propios sitios de muestra. Continúe con la siguiente sección del recorrido, [Administrar los sitios de muestra](manage.md), aquí aprenderá sobre las herramientas disponibles para administrar los sitios de muestra y cómo eliminarlos.
 
 También puede consultar algunos de los recursos adicionales disponibles en la [sección de Recursos adicionales](#additional-resources) para obtener más información sobre las funciones que ha visto en este recorrido.
 

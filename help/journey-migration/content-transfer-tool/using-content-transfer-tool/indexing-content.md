@@ -2,10 +2,12 @@
 title: Indexación después de migrar contenido
 description: Descubra cómo el proceso de migración indexará el contenido ingerido en la instancia del Cloud Service de destino.
 exl-id: a13d5df4-b351-410a-9336-1b34a8af21b6
-source-git-commit: 58195fcb10312c89042f555665d4c8b3642f82ba
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '538'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
@@ -42,7 +44,7 @@ Cuando la ingesta se realiza correctamente, el trabajo de indexación se inicia 
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-indexing/running.png)
 
-### Completar
+### Completado
 
 Cuando el trabajo de indexación se realiza correctamente, la instancia está lista para utilizarse con un rendimiento óptimo. En este punto, los registros del trabajo de indexación están disponibles para verlos o descargarlos para inspeccionarlos.
 

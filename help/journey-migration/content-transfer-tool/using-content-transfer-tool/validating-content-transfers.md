@@ -2,9 +2,11 @@
 title: Validación de transferencias de contenido
 description: Utilice la herramienta de transferencia de contenido para validar las transferencias de contenido
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1074'
 ht-degree: 2%
 
 ---
@@ -150,9 +152,9 @@ Verá un cuadro de diálogo con la información de resumen. Utilice los iconos d
 >
 >Si la asignación de usuarios está deshabilitada, se muestra otra variante de este cuadro de diálogo. Indicará que la asignación de usuarios estaba deshabilitada y no mostrará los 3 campos que proporcionan valores de asignación de usuarios.
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
-### Error de validación. ¿Y ahora qué?  {#validation-fail}
+### Error de validación. ¿Y ahora qué? {#validation-fail}
 
 El primer paso es determinar si la ingesta falló realmente o si el contenido extraído ya está presente en el entorno de destino. Esto puede ocurrir si se repite una ingesta con el **Borrar contenido existente en la instancia de Cloud antes de la ingesta** opción desactivada.
 

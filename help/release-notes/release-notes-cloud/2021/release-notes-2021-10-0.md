@@ -2,10 +2,12 @@
 title: Notas de la versión 2021.10.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2021.10.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1436'
-ht-degree: 70%
+ht-degree: 71%
 
 ---
 
@@ -21,10 +23,10 @@ En la siguiente sección se describen las notas de la versión generales de la v
 >
 >Consulte [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=es) para obtener más información sobre las actualizaciones de la documentación no relacionadas directamente con una versión.
 
-## Fecha de la versión {#release-date}
+## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la versión actual (2021.10.0) es el 4 de noviembre de 2021.
-La de la siguiente versión (2021.11.0) es el 2 de diciembre de 2021.
+La fecha de lanzamiento de la versión actual de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2021.10.0) es el viernes, 04 de noviembre de 2021.
+La de la siguiente versión (2021.11.0) es el viernes, 02 de diciembre de 2021.
 
 ## Vídeo de la versión {#release-video}
 
@@ -44,7 +46,7 @@ Eche un vistazo a la [Información general de la versión de octubre de 2021](ht
 
 ### Nueva función en la [!DNL Assets] canal de prelanzamiento {#assets-prerelease-features}
 
-* [!DNL Dynamic Media]El recorte inteligente y la muestra de la imagen de ahora cuenta con la tecnología de los últimos servicios de Sensei, que generan recortes y muestras mejorados. Además, se ha lanzado una mejora para generar diferentes contenidos de recorte, para la misma proporción de aspecto pero en diferentes resoluciones. Además, las ediciones manuales se conservan al reprocesar si no hay cambios en la anchura y la altura del perfil de imagen.
+* [!DNL Dynamic Media] El recorte inteligente y la muestra de imagen ahora cuenta con la tecnología de los servicios de Sensei más recientes, que generan recortes y muestras mejorados. Además, se ha lanzado una mejora para generar diferentes contenidos de recorte, para la misma proporción de aspecto pero en diferentes resoluciones. Además, las ediciones manuales se conservan al reprocesar si no hay cambios en la anchura y la altura del perfil de imagen.
 
 * Las etiquetas inteligentes se aplican automáticamente a los recursos mediante microservicios de recursos, en lugar de Smart Content Services. El modelo subyacente se actualiza para mejorar los resultados de etiquetado y reducir el sesgo. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
@@ -66,7 +68,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### Características beta de [!DNL Forms] {#what-is-new-forms-oct2021-beta}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: las [API de comunicación](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=es) le ayudan a combinar una plantilla y los datos XML para generar documentos de impresión en distintos formatos. El servicio permite generar documentos en modos sincrónico y por lotes. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: las [API de comunicación](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=es) le ayudan a combinar una plantilla y los datos XML para generar documentos de impresión en distintos formatos. El servicio le permite generar documentos en modos sincrónico y por lotes.  Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
 
    * Generar documentos rellenando archivos de plantilla (PDF y XDP) con datos XML.
    * Generar formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.

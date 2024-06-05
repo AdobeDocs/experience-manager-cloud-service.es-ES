@@ -3,8 +3,9 @@ title: Guía de introducción para desarrolladores para la creación de contenid
 description: Esta guía le ayudará a ponerse en marcha con un nuevo sitio de Adobe Experience Manager que utiliza Edge Delivery Services y el Editor universal para la creación de contenido.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: fc5ffe334873b7b98565f38d5664313b26d5f635
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 100%
 

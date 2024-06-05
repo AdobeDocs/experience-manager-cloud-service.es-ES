@@ -1,25 +1,25 @@
 ---
 title: Personalización de plantillas y temas del sitio
-description: AEM Aprenda cómo se pueden utilizar las plantillas de sitio de la para predefinir la estructura del sitio y el contenido inicial, y cómo se utilizan los temas para definir el estilo del sitio para permitirle crear sitios rápidamente.
-feature: Administering
+description: AEM Descubra cómo se pueden utilizar las plantillas de sitio para predefinir la estructura del sitio y el contenido inicial, y cómo se utilizan los temas para definir el estilo del sitio para permitirle crear sitios rápidamente.
+feature: Administering, Developing
 role: Admin
 exl-id: dc20f26c-59f0-4244-9797-926f25ed4da3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '285'
-ht-degree: 22%
+ht-degree: 25%
 
 ---
 
 # Personalización de plantillas y temas del sitio {#customizing-site-templates-themes}
 
-AEM Aprenda cómo se pueden utilizar las plantillas de sitio de la para predefinir la estructura del sitio y el contenido inicial, y cómo se utilizan los temas para definir el estilo del sitio para permitirle crear sitios rápidamente.
+AEM Descubra cómo se pueden utilizar las plantillas de sitio para predefinir la estructura del sitio y el contenido inicial, y cómo se utilizan los temas para definir el estilo del sitio para permitirle crear sitios rápidamente.
 
 ## Información general {#overview}
 
 AEM AEM Para permitir a los administradores de la crear rápidamente sitios adaptados a las necesidades de la empresa, admite la creación de nuevos sitios mediante plantillas de sitio y temas de sitio.
 
-* Un **AEM plantilla del sitio de** generalmente contiene contenido y estructura base del sitio e información de estilo del sitio, conocida como tema del sitio para iniciar un nuevo sitio rápidamente. Las plantillas son potentes porque se pueden reutilizar y personalizar. Y como puede tener varias plantillas disponibles en la instalación de AEM, tiene la flexibilidad de crear diferentes sitios para satisfacer diversas necesidades comerciales.
+* Un **AEM plantilla del sitio de** generalmente contiene contenido y estructura base del sitio e información de estilo del sitio, conocida como tema del sitio para iniciar un nuevo sitio rápidamente. Las plantillas son eficaces, ya que se pueden reutilizar y personalizar. Y como puede tener varias plantillas disponibles en la instalación de AEM, tiene la flexibilidad de crear diferentes sitios para satisfacer diversas necesidades comerciales.
 * Un **AEM tema del sitio** AEM AEM es un paquete que contiene CSS, JavaScript y recursos estáticos que definen el estilo del sitio y cumplen la estructura de un tema del sitio de la.
 
 ## Recursos adicionales {#additional-resources}

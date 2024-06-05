@@ -2,7 +2,9 @@
 title: Desarrollo y diferencia de página
 description: Comprenda cómo funciona la función Diferencias de página y cómo puede afectar a un desarrollador
 exl-id: 03c08616-2203-4b90-bed6-4836266e2507
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 12%

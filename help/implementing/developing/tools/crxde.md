@@ -2,7 +2,9 @@
 title: Uso del CRXDE Lite
 description: El CRXDE Lite AEM forma parte del inicio rápido de la y está disponible para acceder y modificar el repositorio en los entornos de desarrollo local dentro del explorador.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 2%
@@ -24,7 +26,7 @@ Para empezar a usar CRXDE Lite:
 1. AEM Inicie el inicio rápido del desarrollo de la local.
 1. En el explorador, abra la dirección URL `https://<host>:<port>/crx/de`.
 1. Introduzca su **nombre de usuario** y **contraseña**.
-1. Haga clic en **Aceptar**.
+1. Haz clic en **OK**.
 
 La interfaz de usuario del CRXDE Lite aparece de la siguiente manera en el explorador:
 
@@ -183,7 +185,7 @@ Para crear un nodo con un CRXDE Lite:
 1. Abra el CRXDE Lite en el explorador.
 1. En el [**Panel Explorador**,](#explorer-pane) haga clic con el botón derecho en el nodo en el que desee crear el nuevo nodo y seleccione **Crear**, entonces **Crear nodo**.
 1. Introduzca el **Nombre** y seleccione la **Tipo**.
-1. Haga clic en **Aceptar**.
+1. Haz clic en **OK**.
 1. Haga clic en [**Botón Guardar todo**](#save-all-button) para guardar los cambios en el servidor.
 
 Ahora puede adaptar el nodo a sus necesidades modificando propiedades o creando nuevos nodos.
@@ -211,7 +213,7 @@ Para crear un archivo con el CRXDE Lite:
 1. Abra el CRXDE Lite en el explorador.
 1. En el [**Panel Explorador**,](#explorer-pane) haga clic con el botón derecho en el componente donde desee crear el archivo y seleccione **Crear**, entonces **Crear archivo**.
 1. Introduzca el archivo **Nombre** incluida su extensión.
-1. Haga clic en **Aceptar**.
+1. Haz clic en **OK**.
 1. El nuevo archivo se abre como una pestaña en la [**Panel de edición**.](#edit-pane)
 1. Edite el archivo.
 1. Haga clic en [**Botón Guardar todo**](#save-all-button) para guardar los cambios.

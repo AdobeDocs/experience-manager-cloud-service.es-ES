@@ -2,10 +2,13 @@
 title: Aplicar y cancelar la aplicación de listas de IP permitidas
 description: Aprenda a aplicar y a anular la aplicación de listas de IP permitidas a entornos.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
-source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 81%
+ht-degree: 84%
 
 ---
 
@@ -20,7 +23,7 @@ Un usuario con el rol de **Propietario del negocio** o **Administrador de implem
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. En el **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)** , seleccione el programa.
+1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
 1. Vaya a la pantalla **Entornos** de la página **Información general**.
 1. Vaya a la página de detalles específicos del entorno en la pantalla **Entornos** y navegue hasta la tabla **Lista de IP permitidas**.
 1. Utilice los campos de entrada de la parte superior de la tabla para poder seleccionar la lista de permitidos IP y el servicio de autor o publicación al que desea aplicarla.

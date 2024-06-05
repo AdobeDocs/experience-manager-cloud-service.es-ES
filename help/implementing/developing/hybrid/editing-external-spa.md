@@ -2,10 +2,12 @@
 title: Edición de un SPA externo dentro de AEM
 description: SPA AEM En este documento se describen los pasos recomendados para cargar una instancia independiente a una instancia de, agregar secciones de contenido editables y habilitar la creación de contenido.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2418'
-ht-degree: 2%
+source-wordcount: '2374'
+ht-degree: 1%
 
 ---
 
@@ -369,7 +371,7 @@ SPA AEM El siguiente material de referencia puede resultar útil para comprender
 * [Modelos con encabezado y sin encabezado en AEM](/help/implementing/developing/headful-headless.md)
 * [AEM Arquetipo del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
 * [SPA El proyecto de WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=es)
-* [Introducción a SPA en AEM usando React](/help/implementing/developing/hybrid/getting-started-react.md)
+* [SPA AEM Introducción a la administración de la en React](/help/implementing/developing/hybrid/getting-started-react.md)
 * [SPA Materiales de referencia (referencias de API)](/help/implementing/developing/hybrid/reference-materials.md)
 * [SPA Modelo de página y administrador de modelos de página](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
 * [SPA Enrutamiento de modelo de](/help/implementing/developing/hybrid/routing.md)

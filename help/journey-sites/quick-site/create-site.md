@@ -2,8 +2,11 @@
 title: Creación de un sitio a partir de una plantilla
 description: Obtenga información sobre cómo crear rápidamente un nuevo sitio de AEM con una plantilla de sitio.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 100%
 
@@ -183,7 +186,7 @@ Aunque se recomienda pasar a la siguiente parte del Recorrido de creación rápi
 * [Plantilla de sitio estándar de AEM](https://github.com/adobe/aem-site-template-standard): este es el repositorio de GitHub de la plantilla de sitio estándar de AEM.
 * [Organización de páginas](/help/sites-cloud/authoring/sites-console/organizing-pages.md): esta guía detalla cómo organizar las páginas de su sitio de AEM.
 * [Creación de páginas](/help/sites-cloud/authoring/sites-console/creating-pages.md): esta guía detalla cómo añadir nuevas páginas a su sitio.
-* [Administración de páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md): esta guía detalla cómo administrar las páginas de su sitio, incluido mover, copiar y eliminar.
+* [Administración de páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md): esta guía detalla cómo administrar las páginas del sitio, incluido el movimiento, la copia y la eliminación.
 * [Cómo trabajar con el paquete](/help/implementing/developing/tools/package-manager.md): los paquetes permiten importar y exportar el contenido del repositorio. Este documento explica cómo trabajar con paquetes en AEM 6.5, que también se aplica a AEMaaCS.
 * [Documentación de administración del sitio](/help/sites-cloud/administering/site-creation/create-site.md). Consulte los documentos técnicos sobre la creación de sitios para obtener más información sobre las funciones de la herramienta de creación rápida de sitios.
 * [Crear o agregar formularios a una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): conozca las técnicas paso a paso y las prácticas recomendadas para integrar formularios en su sitio web y optimizar sus experiencias digitales para lograr el máximo impacto.

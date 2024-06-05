@@ -2,16 +2,18 @@
 title: Acceder a Admin Console
 description: Una vez que haya comprendido la preparación necesaria para la incorporación y los conceptos básicos de la estructura de AEMaaCS, ya puede iniciar sesión en Admin Console por primera vez.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 84%
+source-wordcount: '1071'
+ht-degree: 100%
 
 ---
 
 # Acceder a Admin Console {#accessing-admin-console}
 
-En esta parte del [recorrido de incorporación,](overview.md) obtenga información sobre la preparación necesaria para poder iniciar sesión en el sistema por primera vez.
+En esta parte del [recorrido de incorporación,](overview.md) aprenderá sobre la preparación necesaria para poder iniciar sesión en el sistema por primera vez.
 
 ## Objetivo {#objective}
 
@@ -26,11 +28,11 @@ Como administrador del sistema, es responsable de administrar los usuarios de de
 
 ## Admin Console {#admin-console}
 
-Adobe Admin Console es un lugar central para administrar las licencias y los usuarios de productos de Adobe. El Admin Console le permite crear y administrar usuarios en una sola ubicación en lugar de en las distintas soluciones individuales.
+Adobe Admin Console es un lugar central para administrar las licencias y los usuarios de productos de Adobe. Admin Console le permite crear y administrar usuarios en una sola ubicación en lugar de en las distintas soluciones individuales.
 
 ## Adobe ID {#adobe-id}
 
-Para iniciar sesión en el Admin Console, necesita un Adobe ID. Y Adobe ID es una cuenta ligada a una dirección de correo electrónico específica que es necesaria para iniciar sesión y acceder a AEM as a Cloud Service o a cualquiera de sus soluciones de Adobe. Al usar su Adobe ID mantiene todos sus planes de Adobe y productos asociados a una sola cuenta.
+Para iniciar sesión en Admin Console, necesitará un Adobe ID. Y Adobe ID es una cuenta ligada a una dirección de correo electrónico específica que es necesaria para iniciar sesión y acceder a AEM as a Cloud Service o a cualquiera de sus soluciones de Adobe. Al usar su Adobe ID mantiene todos sus planes de Adobe y productos asociados a una sola cuenta.
 
 Cuando configure su equipo, como administrador del sistema, en Admin Console, especifica la dirección de correo electrónico que se utiliza como Adobe ID.
 
@@ -50,11 +52,11 @@ Antes de poder usar Admin Console para administrar usuarios dentro de su equipo,
 
 1. Como administrador del sistema, recibirá varios correos electrónicos de Adobe como parte del proceso de incorporación. Busque el correo electrónico de bienvenida que proporciona la información sobre el nombre de la organización a la que se le ha concedido acceso.
 
-1. Haga clic en **Introducción a** en el correo electrónico de bienvenida para ir al Admin Console. Si no encuentra el correo electrónico, abra un explorador directamente en el Admin Console en [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
+1. Haga clic en el vínculo **Empezar** en el correo electrónico de bienvenida para ir a Admin Console. Si no encuentra el correo electrónico, abra un explorador directamente en Admin Console en [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
    ![Correo electrónico de bienvenida](/help/journey-onboarding/assets/get-started-email.png)
 
-1. Iniciar sesión con su Adobe ID. Una vez que el inicio de sesión se haya realizado correctamente, verá el **Información general** de Adobe Admin Console.
+1. Iniciar sesión con su Adobe ID. Una vez que inicie sesión correctamente, verá la página **Información general** de Adobe Admin Console.
 
    ![Admin Console](/help/journey-onboarding/assets/get-started1.png)
 
@@ -66,7 +68,7 @@ Antes de poder usar Admin Console para administrar usuarios dentro de su equipo,
 
    ![Revise los administradores](/help/journey-onboarding/assets/get-started2.png)
 
-1. Después de hacer clic en **Administradores** desde el **Usuarios** Con esta tarjeta, puede buscar introduciendo su correo electrónico, nombre de usuario, nombre o apellidos de Adobe ID.
+1. Una vez que haga clic en **Administradores** de la tarjeta **Usuarios**, puede buscar si escribe su correo electrónico, nombre de usuario, nombre o apellidos de Adobe ID.
 
    ![Buscar usuarios](/help/journey-onboarding/assets/get-started3.png)
 
@@ -82,7 +84,7 @@ AEM as a Cloud Service viene preconfigurado con el sistema Identity Management d
 
 Al utilizar IMS, AEM as a Cloud Service consolida la experiencia de inicio de sesión entre AEM y el resto de Adobe Experience Cloud. Las organizaciones con varios productos de Adobe se benefician especialmente al crear grupos basados en roles en Admin Console y luego asignar acceso a varios productos, incluido AEM as a Cloud Service mediante IMS.
 
-Obtenga más información acerca de los perfiles de producto y la asignación de usuarios en la siguiente parte de este recorrido de incorporación.
+En la siguiente parte de este recorrido de incorporación, obtendrá más información sobre los perfiles de producto y la asignación de usuarios.
 
 ## Contactar con el servicio de soporte técnico de Adobe {#support}
 

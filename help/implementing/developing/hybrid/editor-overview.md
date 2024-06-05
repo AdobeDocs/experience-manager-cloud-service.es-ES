@@ -2,10 +2,12 @@
 title: Información general del editor de SPA
 description: Este artículo ofrece una información general completa del Editor de SPA y cómo funciona, e incluye flujos de trabajo detallados de interacción del Editor de SPA dentro de AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1633'
-ht-degree: 96%
+ht-degree: 93%
 
 ---
 
@@ -25,9 +27,9 @@ El soporte de las SPA en AEM introduce una capa delgada de JS que interactúa co
 
 SPA AEM Para obtener más información acerca de la de en, consulte lo siguiente:
 
-* [Modelo de SPA](blueprint.md) para los requisitos técnicos de una SPA.
-* [Introducción a las SPA en AEM con React](getting-started-react.md) para un recorrido rápido por una SPA simple usando React.
-* [Introducción a las SPA en AEM con Angular](getting-started-angular.md) para realizar un recorrido rápido por una SPA simple usando Angular.
+* [SPA Modelo de](blueprint.md) SPA para los requisitos técnicos de una.
+* [SPA AEM Introducción a la administración de la en React](getting-started-react.md) SPA para un recorrido rápido por un sencillo sitio de la red de transporte que utiliza React.
+* [SPA AEM Introducción a la administración de la en el uso de Angular](getting-started-angular.md) SPA para un rápido recorrido por un sencillo y sencillo Angular de la mano de un sencillo.
 
 ## Diseño {#design}
 

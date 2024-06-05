@@ -2,10 +2,13 @@
 title: Creación de contenido con el editor universal
 description: Aprenda lo fácil e intuitivo que es para los autores crear contenido con el editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2313'
-ht-degree: 35%
+ht-degree: 36%
 
 ---
 
@@ -102,7 +105,7 @@ Este icono se muestra con la cantidad de [notificaciones](/help/implementing/clo
 
 #### Propiedades del usuario {#user-properties}
 
-Seleccione el icono que representa al usuario para acceder a su configuración de usuario. Si no tiene una imagen de usuario configurada, se le asigna un icono de forma aleatoria.
+Seleccione el icono que representa a su usuario para acceder a la configuración. Si no tiene una imagen de usuario configurada, se le asigna un icono de forma aleatoria.
 
 ![Propiedades del usuario](assets/user-properties.png)
 

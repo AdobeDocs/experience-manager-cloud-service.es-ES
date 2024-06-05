@@ -2,9 +2,12 @@
 title: Introducción a las listas de IP permitidas
 description: Descubra cómo las listas de IP permitidas pueden limitar desde qué direcciones se puede acceder a los dominios de AEM as a Cloud Service.
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
-source-git-commit: f0edd0e3deeba89dcbd2dc1a07859138b24e2220
-workflow-type: ht
-source-wordcount: '306'
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
+source-wordcount: '292'
 ht-degree: 100%
 
 ---

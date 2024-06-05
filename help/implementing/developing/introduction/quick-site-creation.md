@@ -2,10 +2,12 @@
 title: Creación rápida de sitios y personalización del front-end
 description: Descubra cómo la herramienta Creación rápida de sitios utiliza plantillas de sitio, temas y la canalización front-end para permitir una implementación rápida de nuevos sitios y desvincular el desarrollo front-end.
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 

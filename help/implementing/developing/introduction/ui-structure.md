@@ -2,9 +2,11 @@
 title: Estructura de la IU de AEM
 description: AEM La interfaz de usuario de tiene varios principios subyacentes y consta de varios elementos clave
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '887'
 ht-degree: 4%
 
 ---
@@ -60,9 +62,9 @@ El carril izquierdo se puede abrir u ocultar según sea necesario para mostrar:
 
 * **Solo contenido**
 * **Árbol de contenido**
-* **Escala de cronología**
+* **Cronología**
 * **Referencias**
-* **Filter**
+* **Filtrar**
 
 El valor predeterminado es **Solo contenido** (carril oculto).
 

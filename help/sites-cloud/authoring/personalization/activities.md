@@ -2,7 +2,10 @@
 title: Administración de actividades
 description: La consola Actividades permite crear, organizar y administrar las actividades de marketing de las marcas
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1958'
 ht-degree: 85%
@@ -105,7 +108,7 @@ Para añadir una actividad, haga lo siguiente:
 1. Si utiliza la segmentación de AEM o la segmentación de experiencias de Adobe Target:
    1. Seleccionar **Seleccionar audiencia** y seleccione el segmento de destino de la experiencia.
    1. Seleccionar **Añadir experiencia**, escriba un nombre y seleccione **OK**.
-   1. Seleccione **Siguiente**.
+   1. Seleccionar **Siguiente**.
 Si utiliza las pruebas A/B de Adobe Target:
    1. Seleccione el lápiz en el cuadro audiencias para seleccionar una audiencia.
    1. Seleccionar **Añadir experiencia**, escriba un nombre y seleccione **OK**.

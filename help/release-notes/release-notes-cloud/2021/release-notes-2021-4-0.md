@@ -2,10 +2,12 @@
 title: Notas de la versión 2021.4.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notas de la versión 2021.4.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 41%
+source-wordcount: '1545'
+ht-degree: 45%
 
 ---
 
@@ -20,7 +22,7 @@ En la siguiente sección se describen las notas de la versión generales de la v
 >
 >Consulte [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=es) para obtener más información sobre las actualizaciones de la documentación no relacionadas directamente con una versión.
 
-## Fecha de la versión {#release-date}
+## Fecha de lanzamiento {#release-date}
 
 La fecha de lanzamiento de [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 es el 6 de mayo de 2021.
 La de la siguiente versión (2021.5.0) será el 27 de mayo de 2021.
@@ -95,9 +97,9 @@ La de la siguiente versión (2021.5.0) será el 27 de mayo de 2021.
 
 * **Utilizar el método de autenticación de Id. de gobierno en los formularios adaptables habilitados para Adobe Sign**
 
-  Con la tecnología de algoritmos avanzados de aprendizaje automático, el proceso de identificación oficial de Adobe Sign ofrece a las empresas de todo el mundo la capacidad de garantizar una autenticación de alta calidad de la identidad de sus destinatarios. Ahora puede utilizar el método de autenticación de identidad de Id. de gobierno en los formularios adaptativos habilitados para Adobe Sign.
+  Con la tecnología de algoritmos avanzados de aprendizaje automático, el proceso de Id. de gobierno de Adobe Sign ofrece a las empresas de todo el mundo la capacidad de garantizar una autenticación de alta calidad de la identidad de sus destinatarios.  Ahora puede utilizar el método de autenticación de identidad de Id. de gobierno en los formularios adaptativos habilitados para Adobe Sign.
 
-  El Id. de gobierno es un método de autenticación de identidad premium que indica al destinatario que [cargar la imagen de un documento de identidad emitido por el gobierno (licencia de conducir, identificación nacional, pasaporte)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)y, a continuación, evalúa ese documento para asegurarse de que es auténtico.
+  La Id. de gobierno es un método de autenticación de identidad premium que indica al destinatario cómo [cargar la imagen de un documento de identidad emitido por el gobierno (carnet de conducir, identificación nacional, pasaporte)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html) y luego evalúa ese documento para asegurarse de que es auténtico.
 
 * **Compatibilidad para utilizar la experiencia de firma en formularios para envíos asincrónicos de formularios adaptables**
 
@@ -136,7 +138,7 @@ La de la siguiente versión (2021.5.0) será el 27 de mayo de 2021.
 
 * AEM Indicador visual para datos de catálogo clasificados en tienda de
 
-* El extremo de comercio ahora se puede configurar mediante la interfaz de usuario de Cloud Manager
+* El punto de conexión de Commerce ahora se puede configurar mediante la IU de Cloud Manager
 
 ### Correcciones de errores {#bug-fixes-commerce}
 

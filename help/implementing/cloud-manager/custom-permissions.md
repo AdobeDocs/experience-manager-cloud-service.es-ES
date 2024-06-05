@@ -2,10 +2,13 @@
 title: Permisos personalizados
 description: Descubra cómo puede utilizar permisos personalizados para crear perfiles de permisos personalizados con permisos configurables para restringir el acceso a programas, canalizaciones y entornos para usuarios de Cloud Manager.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: 3891a55ff48f48de4e55e0229e9f76e5bf500cb3
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1515'
-ht-degree: 38%
+ht-degree: 41%
 
 ---
 
@@ -16,7 +19,7 @@ Descubra cómo puede utilizar permisos personalizados para crear perfiles de per
 
 ## Introducción {#introduction}
 
-Cloud Manager tiene un conjunto de funciones predefinidas que rigen el acceso a varias funciones de Cloud Manager:
+Cloud Manager tiene un conjunto de funciones predefinidas que regulan el acceso a las diversas funciones de Cloud Manager:
 
 * Propietario del negocio
 * Administrador de programa
@@ -83,7 +86,7 @@ Ahora que tiene un nuevo perfil de producto, puede asignarle permisos personaliz
 1. El **Editar permiso** se abre.
    * El permiso seleccionado en el paso anterior se selecciona en la columna izquierda.
    * Los elementos de permiso disponibles para la asignación del permiso se encuentran en la columna central denominada Elementos de **permisos disponibles**.
-   * Los elementos de permiso asignados se encuentran en la columna derecha con la etiqueta **Elementos de permisos incluidos**.
+   * Los elementos de permisos asignados se encuentran en la columna derecha con la etiqueta **Elementos de permisos incluidos**.
 
    ![Editar elementos de permiso](assets/edit-permission-items.png)
 
@@ -137,7 +140,7 @@ Los siguientes permisos están disponibles para crear perfiles personalizados.
 | Creación de repositorios | Permitir que los usuarios creen repositorios de Git |
 | Eliminación de repositorios | Permitir que los usuarios eliminen repositorios de Git |
 | Edición de repositorios | Permitir que los usuarios editen repositorios de Git |
-| Generación de código de repositorios | Permitir que los usuarios generen proyectos a partir del tipo de archivo |
+| Generación de código de repositorios | Permitir que los usuarios generen proyectos a partir de arquetipos |
 | Administrador de nombres de dominio | Permitir que los usuarios creen, editen o eliminen nombres de dominio |
 | Administrar Lista de permitidos IP | Permitir a los usuarios crear, editar o eliminar enlaces de lista de permitidos y lista de permitidos IP |
 | Administrador de infraestructura de red | Permitir a los usuarios crear, editar o eliminar la infraestructura de red |
@@ -201,7 +204,7 @@ Los perfiles de producto predeterminados y las funciones de Cloud Manager siguen
 
 ### ¿Puedo editar perfiles de permisos predefinidos?
 
-No, los perfiles predeterminados no se pueden editar. No puede agregar ni quitar permisos al perfil de permisos predeterminado. Solo puede añadir o quitar usuarios de perfiles predefinidos.
+No, los perfiles predeterminados no se pueden editar. No puede añadir ni quitar permisos al perfil de permisos predeterminado. Solo puede añadir o quitar usuarios de perfiles predefinidos.
 
 ### ¿Debería eliminar los perfiles de permiso predefinidos, ya que los perfiles personalizados ya están disponibles?
 

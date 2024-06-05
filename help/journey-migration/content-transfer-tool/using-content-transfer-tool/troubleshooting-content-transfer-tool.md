@@ -2,10 +2,12 @@
 title: Resolución de problemas de la herramienta de transferencia de contenido
 description: Obtenga información sobre cómo solucionar problemas de la herramienta de transferencia de contenido
 exl-id: 01bc9be7-a576-45eb-90a0-386ea951040d
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 91%
+source-wordcount: '179'
+ht-degree: 88%
 
 ---
 
@@ -40,7 +42,7 @@ Consulte [Oak Runnable Jar](https://github.com/apache/jackrabbit-oak/tree/trunk/
 Los archivos creados en *OUT_DIR* especificados anteriormente para mantener la consistencia se pueden comprobar en busca de rutas en las que falten binarios y acciones adecuadas como restaurar desde una copia de seguridad, eliminar las rutas, volver a indexar, etc.
 
 
-## Comportamiento de la IU {#ui-behavior}
+## Comportamiento de IU {#ui-behavior}
 
 Como usuario, es posible que vea los siguientes cambios de comportamiento en la IU (IU) para la herramienta de transferencia de contenido:
 

@@ -2,10 +2,13 @@
 title: Agregar una lista de IP permitidas
 description: Aprenda a añadir su propia lista de permitidos de IP con Cloud Manager.
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
-source-git-commit: fa6d0670a011276facc561f62f52c6e69147a49e
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '194'
-ht-degree: 71%
+ht-degree: 75%
 
 ---
 
@@ -18,7 +21,7 @@ Un usuario con la función de **Propietario del negocio** o **Administrador de i
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. En el **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)** , seleccione el programa.
+1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
 
 1. Desde el **Información general** , vaya a la página **LISTAS DE PERMITIDOS IP** página que utiliza la pestaña de navegación lateral.
 

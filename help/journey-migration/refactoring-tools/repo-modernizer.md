@@ -2,10 +2,12 @@
 title: Modernizador de repositorio
 description: Aprenda a reestructurar los paquetes de proyectos existentes y a hacerlos compatibles con la estructura de proyectos definida para Adobe Experience Manager as a Cloud Service.
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 16%
+source-wordcount: '304'
+ht-degree: 8%
 
 ---
 
@@ -15,7 +17,7 @@ Repository Modernizer es una utilidad desarrollada para reestructurar los paquet
 
 ## Introducción {#introduction}
 
-Adobe Experience Manager as a Cloud Service ofrece muchas nuevas funciones y posibilidades para sus Proyectos AEM. Con todo, se requieren algunos cambios en los proyectos de Adobe Experience Manager Maven para que sean compatibles con AEM Cloud Service. AEM En un nivel elevado, la separación de las funciones requiere, por lo tanto, la separación de las funciones de la **content** y **código** en subpaquetes discretos para respetar la división entre contenido mutable e inmutable. Consulte [AEM Estructura del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=es) AEM para obtener más información sobre la nueva estructura de proyecto de la para Cloud Service.
+Adobe Experience Manager as a Cloud Service AEM ofrece muchas nuevas funciones y posibilidades para sus proyectos de. Con todo, se requieren algunos cambios en los proyectos de Adobe Experience Manager Maven para que sean compatibles con AEM Cloud Service. AEM En un nivel elevado, la separación de las funciones requiere, por lo tanto, la separación de las funciones de la **content** y **código** en subpaquetes discretos para respetar la división entre contenido mutable e inmutable. Consulte [AEM Estructura del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=es) AEM para obtener más información sobre la nueva estructura de proyecto de la para Cloud Service.
 
 El Modernizador de repositorio crea una estructura de proyecto de AEM Cloud Service compatible mediante la creación de la siguiente estructura de implementación:
 
