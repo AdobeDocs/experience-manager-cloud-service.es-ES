@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2193'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ En esta sección se enumeran las funciones que se han eliminado de [!DNL Experie
 | [!DNL Foundation] | Compatibilidad con plantillas de scripts JST (paquete OSGi org.apache.sling.scripting.jst) | N/D | Eliminado |
 | [!DNL Foundation] | Compatibilidad con la pizarra Apache Felix Http | Pizarra Http OSGi | Marzo de 2022 |
 | [!DNL Foundation] | Compatibilidad con com.adobe.granite.oauth.server | Integración de IMS de Adobe | Marzo de 2023 |
-| [!DNL Foundation] | Compatibilidad con la función org.apache.sling.serviceusermapping en [obtener el id de usuario del servicio](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | N/D | 30/08/24 |
+| [!DNL Foundation] | Compatibilidad con la función org.apache.sling.serviceusermapping para [obtener el id de usuario del servicio](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | N/D | 30/08/24 |
 
 
 ## API DE AEM {#aem-apis}
@@ -274,7 +274,7 @@ A continuación se incluye una lista detallada de las API de AEM en desuso y su 
   </tr>
   <tr>
     <td>org.slf4j.event	</td>
-    <td>AEM Esta API interna de slf4j no es compatible con el as a Cloud Service de la</td>
+    <td>Esta API slf4j interna no es compatible con AEM as a Cloud Service.</td>
     <td>11/4/2022</td>
     <td>30/8/2024</td>
   </tr>
