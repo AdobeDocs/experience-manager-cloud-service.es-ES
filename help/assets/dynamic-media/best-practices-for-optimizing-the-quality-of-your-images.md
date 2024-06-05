@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: f2701b35c2bc64e7bb049dc49632b7127923970d
 workflow-type: tm+mt
-source-wordcount: '1478'
-ht-degree: 5%
+source-wordcount: '1648'
+ht-degree: 1%
 
 ---
 
@@ -18,16 +18,57 @@ La optimización de la calidad de la imagen puede ser un proceso laborioso, ya q
 
 Adobe Experience Manager incluye más de 100 comandos de entrega de imágenes de Dynamic Media para ajustar y optimizar imágenes y resultados de procesamiento. Las siguientes directrices pueden ayudarle a optimizar el proceso y obtener buenos resultados rápidamente mediante algunos comandos esenciales y prácticas recomendadas.
 
-## Prácticas recomendadas para el formato de imagen (`&fmt=`) {#best-practices-for-image-format-fmt}
+<!-- ADDED THE FOLLOWING TOPIC AS PER CQDOC-21594 -->
 
-* JPG o PNG son las mejores opciones para ofrecer imágenes de buena calidad y con un tamaño y peso manejables.
-* Si no se proporciona ningún comando de formato en la dirección URL, la opción predeterminada de Dynamic Media Image Delivery es JPG para la entrega.
-* El JPG comprime en una proporción de 10:1 y normalmente produce tamaños de archivo de imagen más pequeños. PNG comprime aproximadamente 2:1, excepto cuando las imágenes contienen un fondo blanco. Sin embargo, normalmente, los tamaños de archivo PNG son mayores que los archivos de JPG.
-* El JPG utiliza la compresión con pérdida, lo que significa que los elementos de la imagen (píxeles) se pierden durante la compresión. PNG, por otro lado, utiliza compresión sin pérdidas.
-* El JPG suele comprimir las imágenes fotográficas con mejor fidelidad que las imágenes sintéticas con bordes nítidos y contraste.
-* Si las imágenes contienen transparencias, utilice PNG porque JPG no las admite.
+## Habilitar imágenes inteligentes en Dynamic Media {#bp-enable-smart-imaging}
 
-Como práctica recomendada para el formato de imagen, comience con la configuración más común `&fmt=JPG`.
+**Imágenes inteligentes:**
+
+* Al habilitar Imágenes inteligentes en Dynamic Media, se optimiza automáticamente el formato, el tamaño y la calidad de la imagen en función de las funciones del explorador del cliente.
+¿Desea obtener más información? Ir a [Imágenes inteligentes](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq)
+* Mejora el rendimiento de la entrega de imágenes ajustando dinámicamente estos parámetros.
+* Puede evaluar imágenes inteligentes con la herramienta de autoevaluación [Instantánea](https://snapshot.scene7.com/)
+
+**Formatos de imagen:**
+
+* Evite utilizar funciones explícitas `fmt=webp` o `fmt=avif` comandos en una URL a menos que sea específicamente necesario para un caso de uso.
+* Smart Imaging selecciona automáticamente el mejor formato, lo que resulta en una ganancia de ancho de banda óptima.
+
+**Comportamiento predeterminado:**
+
+* Cuando no se especifica ningún comando de formato en la URL y Smart Imaging no está habilitado, la entrega de imágenes de Dynamic Media toma el formato predeterminado de JPEG.
+
+Al tomar decisiones informadas sobre los formatos de imagen y habilitar Imágenes inteligentes, puede afectar significativamente al rendimiento y la experiencia del usuario.
+
+
+<!-- ADDED THE FOLLOWING TOPIC AS PER CQDOC-21594 -->
+
+## Prácticas recomendadas para seleccionar la imagen de origen {#bp-select-source-image}
+
+Consideraciones esenciales para trabajar con imágenes de origen:
+
+* **Formato de imagen de origen:**
+   * El uso de formatos sin pérdidas como PNG, TIFF o PSD garantiza que la calidad de la imagen permanezca alta sin ningún artefacto de compresión.
+   * Estos formatos conservan todos los datos originales, lo que los hace ideales para la edición y posterior procesamiento.
+* **Tamaño de la imagen de origen:**
+   * Comenzar con una imagen de alta resolución proporciona más detalle y flexibilidad.
+   * Cuando es necesario mostrar las imágenes en diferentes tamaños (por ejemplo, en distintos dispositivos o resoluciones de pantalla), tener una imagen de origen más grande permite un mejor escalado.
+   * Para las imágenes que admiten zoom (como las fotos de productos), apunte a dimensiones de alrededor de 2000 píxeles o más en el lado más largo.
+   * Los logotipos o banners que no requieran zoom se pueden cargar en el tamaño más grande necesario para el uso previsto.
+
+Al realizar estas cuidadosas elecciones en el nivel de fuente, puede contribuir significativamente a la calidad general del contenido visual.
+
+<!-- REMOVED TOPIC AS PER CQDOC-21594
+## Best practices for image format (`&fmt=`) {#best-practices-for-image-format-fmt}
+
+* JPG or PNG are the best choices to deliver images in good quality and with manageable size and weight.
+* If no format command is supplied in the URL, Dynamic Media Image Delivery defaults to JPG for delivery.
+* JPG compresses at a ratio of 10:1 and usually produces smaller image file sizes. PNG compresses at a ratio of about 2:1, except when images contain a white background. Typically though, PNG file sizes are larger than JPG files.
+* JPG uses lossy compression, meaning that picture elements (pixels) are dropped during compression. PNG on the other hand uses lossless compression.
+* JPG often compresses photographic images with better fidelity than synthetic images with sharp edges and contrast.
+* If your images contain transparency, use PNG because JPG does not support transparency.
+
+As a best practice for image format, start with the most common setting `&fmt=JPG`. -->
 
 ## Prácticas recomendadas para el tamaño de imagen {#best-practices-for-image-size}
 
@@ -44,13 +85,13 @@ El enfoque de imágenes es el aspecto más complejo del control de imágenes en 
 
 * Documentación técnica sobre prácticas recomendadas [Prácticas recomendadas de calidad y enfoque de imágenes de Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) también se aplica al Experience Manager.
 
-* Ver [Uso del enfoque de imagen con el Experience Manager: Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
+* Ver [Uso del enfoque de imagen con el Experience Manager: Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
 Con Experience Manager, puede enfocar las imágenes durante la ingesta, la entrega o ambas cosas. Sin embargo, normalmente es mejor enfocar las imágenes con un solo método o con el otro, pero no con ambos. Enfoque de las imágenes en el momento de la entrega, en una dirección URL, normalmente le ofrece los mejores resultados.
 
 Existen dos métodos de enfoque de imagen que puede utilizar:
 
-* Enfoque simple ( `&op_sharpen`): similar al filtro de enfoque utilizado en Photoshop, el enfoque simple aplica un enfoque básico a la vista final de la imagen después del cambio de tamaño dinámico. Sin embargo, este método no se puede configurar por el usuario. Se recomienda no utilizar &amp;op_sharpen a menos que sea necesario.
+* Enfoque simple ( `&op_sharpen`): similar al filtro de enfoque utilizado en Photoshop, el enfoque simple aplica un enfoque básico a la vista final de la imagen después del cambio de tamaño dinámico. Sin embargo, este método no se puede configurar por el usuario. Una práctica recomendada es evitar el uso de `&op_sharpen` a menos que sea necesario.
 * Máscara de enfoque ( `&op_USM`) - Máscara de enfoque es un filtro de enfoque estándar de la industria. La práctica recomendada es enfocar las imágenes con máscara de enfoque siguiendo las directrices que se indican a continuación. El enmascaramiento de enfoque permite controlar los tres parámetros siguientes:
 
    * `&op_sharpen=`importe, radio, umbral
@@ -58,21 +99,19 @@ Existen dos métodos de enfoque de imagen que puede utilizar:
       * **[!UICONTROL cantidad]** (0-5, intensidad del efecto.)
       * **[!UICONTROL radio]** (0-250, anchura de las &quot;líneas de enfoque&quot; dibujadas alrededor del objeto enfocado, medida en píxeles.)
 
-      Tenga en cuenta que los parámetros radio y cantidad funcionan entre sí. La reducción del radio puede compensarse aumentando la cantidad. El radio permite un control más preciso, ya que un valor más bajo enfoca únicamente los píxeles del borde, mientras que un valor más alto enfoca una banda más ancha de píxeles.
+     Tenga en cuenta que los parámetros radio y cantidad funcionan entre sí. La reducción del radio puede compensarse aumentando la cantidad. El radio permite un control más preciso, ya que un valor más bajo enfoca únicamente los píxeles del borde, mientras que un valor más alto enfoca una banda más ancha de píxeles.
 
       * **[!UICONTROL umbral]** (0-255, sensibilidad del efecto.)
 
-      Este parámetro determina la diferencia entre los píxeles enfocados y el área circundante antes de que se consideren píxeles de borde y el filtro los enfoque. El **[!UICONTROL umbral]** Este parámetro ayuda a evitar áreas de enfoque excesivo con colores similares, como los tonos de piel. Por ejemplo, un valor de umbral de 12 ignora las ligeras variaciones en el brillo del tono de la piel para evitar agregar “ruido”, mientras que al mismo tiempo agrega contraste al borde de las áreas de alto contraste, como cuando las pestañas tocan la piel.
+     Este parámetro determina la diferencia entre los píxeles enfocados y el área circundante antes de que se consideren píxeles de borde y el filtro los enfoque. El **[!UICONTROL umbral]** Este parámetro ayuda a evitar áreas de enfoque excesivo con colores similares, como los tonos de piel. Por ejemplo, un valor de umbral de 12 ignora las ligeras variaciones en el brillo del tono de la piel para evitar añadir &quot;ruido&quot;, mientras que al mismo tiempo agrega contraste al borde de las áreas de alto contraste, como cuando las pestañas tocan la piel.
 
-      Para obtener más información sobre cómo configurar estos tres parámetros, incluidas las prácticas recomendadas para su uso con el filtro, consulte los siguientes recursos:
+     Para obtener más información sobre cómo configurar estos tres parámetros, incluidas las prácticas recomendadas para su uso con el filtro, consulte los siguientes recursos:
 
       * Documentación técnica sobre prácticas recomendadas [Prácticas recomendadas de calidad y enfoque de imágenes de Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) también se aplica al Experience Manager.
 
-      * Ver [Uso del enfoque de imagen con el Experience Manager: Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
+      * Ver [Uso del enfoque de imagen con el Experience Manager: Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
       * Experience Manager también permite controlar un cuarto parámetro: monocromo (0,1). Este parámetro determina si se aplica máscara de enfoque a cada componente de color por separado utilizando el valor 0 o al brillo/intensidad de la imagen utilizando el valor 1.
-
-
 
 Se recomienda comenzar con el parámetro radio de la máscara de enfoque. Los ajustes de radio con los que puede empezar son los siguientes:
 
@@ -88,7 +127,7 @@ Deje el parámetro monocromo en 0.
 ### Prácticas recomendadas para la compresión JPEF (`&qlt=`) {#best-practices-for-jpef-compression-qlt}
 
 * Este parámetro controla la calidad de codificación JPG. Un valor más alto significa una imagen de mayor calidad pero un tamaño de archivo grande; alternativamente, un valor más bajo significa una imagen de menor calidad pero un tamaño de archivo más pequeño. El rango de este parámetro es de 0 a 100.
-* Para optimizar la calidad, no establezca el valor del parámetro en 100. La diferencia entre un ajuste de 90 o 95 y 100 es casi imperceptible, pero 100 aumenta innecesariamente el tamaño del archivo de imagen. Por lo tanto, para optimizar la calidad pero evitar que los archivos de imagen se vuelvan demasiado grandes, establezca el `qlt= value` a 90 o 95.
+* Para optimizar la calidad, no establezca el valor del parámetro en 100. La diferencia entre un ajuste de 90 o 95 y 100 es casi imperceptible. Y sin embargo 100 aumenta innecesariamente el tamaño del archivo de imagen. Por lo tanto, para optimizar la calidad pero evitar que los archivos de imagen se vuelvan demasiado grandes, establezca el `qlt= value` a 90 o 95.
 * Para optimizar para un tamaño de archivo de imagen pequeño pero mantener la calidad de imagen en un nivel aceptable, establezca el `qlt= value` a 80. Los valores por debajo de 70 a 75 dan como resultado una degradación significativa de la calidad de imagen.
 * Como práctica recomendada, para permanecer en el medio, configure el `qlt= value` a 85 para permanecer en el medio.
 * Uso del indicador de croma en `qlt=`
@@ -103,7 +142,7 @@ Como práctica recomendada para el uso de compresión JPG `&qlt=85,0`.
 El parámetro `jpegSize` es útil si desea garantizar que una imagen no supere un tamaño determinado para su entrega a dispositivos con memoria limitada.
 
 * Este parámetro se establece en kilobytes (`jpegSize=&lt;size_in_kilobytes&gt;`). Define el tamaño máximo permitido para la entrega de imágenes.
-* `&jpegSize=` interactúa con el parámetro de compresión del JPG `&qlt=`. Si la respuesta del JPG con el parámetro de compresión del JPG especificado (`&qlt=`) no supera el valor jpegSize, la imagen se devuelve con `&qlt=` como se define. De lo contrario, `&qlt=` disminuye gradualmente hasta que la imagen se ajusta al tamaño máximo permitido o hasta que el sistema determina que no se ajusta y devuelve un error.
+* `&jpegSize=` interactúa con el parámetro de compresión del JPG `&qlt=`. Si la respuesta del JPG con el parámetro de compresión del JPG especificado (`&qlt=`) no supera el valor jpegSize, la imagen se devuelve con `&qlt=` como se define. De lo contrario, `&qlt=` se reduce gradualmente hasta que la imagen se ajusta al tamaño máximo permitido. O bien, hasta que el sistema determine que no cabe y devuelva un error.
 
 Como práctica recomendada, establezca `&jpegSize=` y añada el parámetro `&qlt=` si ofrece imágenes JPG a dispositivos con memoria limitada.
 
