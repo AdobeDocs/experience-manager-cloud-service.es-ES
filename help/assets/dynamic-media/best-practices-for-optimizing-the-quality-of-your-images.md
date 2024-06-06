@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: f2701b35c2bc64e7bb049dc49632b7127923970d
+source-git-commit: 7820492f462d2b5824e408429332b5adf2e67aab
 workflow-type: tm+mt
 source-wordcount: '1648'
 ht-degree: 1%
@@ -25,9 +25,9 @@ Adobe Experience Manager incluye más de 100 comandos de entrega de imágenes de
 **Imágenes inteligentes:**
 
 * Al habilitar Imágenes inteligentes en Dynamic Media, se optimiza automáticamente el formato, el tamaño y la calidad de la imagen en función de las funciones del explorador del cliente.
-¿Desea obtener más información? Ir a [Imágenes inteligentes](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq)
+¿Desea obtener más información? Ir a [Imágenes inteligentes](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
 * Mejora el rendimiento de la entrega de imágenes ajustando dinámicamente estos parámetros.
-* Puede evaluar imágenes inteligentes con la herramienta de autoevaluación [Instantánea](https://snapshot.scene7.com/)
+* Puede evaluar imágenes inteligentes con la herramienta de autoevaluación [Instantánea](https://snapshot.scene7.com/).
 
 **Formatos de imagen:**
 
