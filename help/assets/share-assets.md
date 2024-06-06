@@ -4,9 +4,9 @@ description: Distribuya sus recursos digitales mediante métodos como compartir 
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 1b4c5d985c71a84449a13b79fc00adea0443a631
+source-git-commit: 90da6851240add93de73dd6da46e54ffbf80a1d3
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '1835'
 ht-degree: 3%
 
 ---
@@ -116,12 +116,12 @@ La plantilla de correo electrónico se puede personalizar mediante texto sin for
 
 | Marcadores de posición | Descripción |
 |---|-----|
-| ${emailSubject} | Asunto de un correo electrónico |
-| ${emailInitiator} | ID de correo electrónico del usuario que creó el correo electrónico |
-| ${emailMessage} | Cuerpo del correo electrónico |
-| ${pagePath} | URL del vínculo compartido |
-| ${linkExpiry} | Fecha de caducidad del vínculo compartido |
-| ${host.prefix} | Origen de la [!DNL Experience Manager] ejemplo, `http://www.adobe.com"` |
+| `${emailSubject}` | Asunto de un correo electrónico |
+| `${emailInitiator}` | ID de correo electrónico del usuario que creó el correo electrónico |
+| `${emailMessage}` | Cuerpo del correo electrónico |
+| `${pagePath}` | URL del vínculo compartido |
+| `${linkExpiry}` | Fecha de caducidad del vínculo compartido |
+| `${host.prefix}` | Origen de la [!DNL Experience Manager] ejemplo, `http://www.adobe.com"` |
 
 #### Ejemplo de plantilla de correo electrónico personalizada {#custom-email-template-example}
 
