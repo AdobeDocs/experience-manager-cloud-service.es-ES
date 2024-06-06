@@ -1,7 +1,7 @@
 ---
 title: AEM Monitorización de uso real para el uso as a Cloud Service de la
 description: Aprenda a utilizar Real Use Monitoring (RUM) para capturar y analizar la experiencia de usuario digital de un sitio web o aplicación en tiempo real.
-source-git-commit: a15f973c21044e16751401bd0ffb256a4d0fb17d
+source-git-commit: d2997213d47d398efdb7ce3810fa0959ece072c6
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 0%
@@ -10,6 +10,7 @@ ht-degree: 0%
 
 
 >[!NOTE]
+>
 >Estamos encantados de anunciar el [Despliegue de GA](/help/release-notes/release-notes-cloud/release-notes-current.md#real-use-monitoring) para el servicio de monitorización de uso real, la recopilación de datos del lado del cliente. Es un servicio automatizado y no se requiere la configuración del cliente.
 
 # AEM Servicio de Monitorización de Uso Real para el uso as a Cloud Service de la {#real-use-monitoring-service-for-aem-as-a-cloud-service}
@@ -113,6 +114,6 @@ Al analizar los datos de RUM, puede haber variaciones en las vistas de página y
 
 1. **¿Cómo puedo optar por no participar?**
 
-Recomendamos encarecidamente el uso de Real Use Monitoring (RUM) debido a sus importantes ventajas y que le puede permitir optimizar sus experiencias digitales. Puede ofrecer perspectivas valiosas que pueden ayudar a mejorar el rendimiento del sitio web. El servicio está diseñado para ser fluido y no tiene impacto en el rendimiento del sitio web.
+   Recomendamos encarecidamente el uso de Real Use Monitoring (RUM) debido a sus importantes ventajas y que le puede permitir optimizar sus experiencias digitales. Puede ofrecer perspectivas valiosas que pueden ayudar a mejorar el rendimiento del sitio web. El servicio está diseñado para ser fluido y no tiene impacto en el rendimiento del sitio web.
 
-La exclusión significa no conocer estas perspectivas. Sin embargo, si tiene algún problema, póngase en contacto con el Soporte técnico de Adobe.
+   La exclusión significa no conocer estas perspectivas. Sin embargo, si tiene algún problema, póngase en contacto con el Soporte técnico de Adobe.
