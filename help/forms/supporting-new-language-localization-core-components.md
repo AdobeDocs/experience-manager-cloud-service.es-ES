@@ -4,7 +4,7 @@ description: Aprenda a agregar nuevas configuraciones regionales a un formulario
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
+source-git-commit: 6238d059ff44586ab1b0d24895a8b73d74b1f913
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 98%
@@ -369,7 +369,7 @@ Estos pasos le guían a través de la previsualización de un formulario adaptab
 ## Prácticas recomendadas para la compatibilidad con localización nueva {#best-practices}
 
 * Adobe recomienda crear un proyecto de traducción después de crear un formulario adaptable. Esto optimiza el proceso de localización.
-* Cuando los componentes Cuadro numérico y Selector de fecha se traducen a una configuración regional específica, pueden surgir problemas de formato. Para mitigar esto, **Idioma** se ha incorporado al cuadro de diálogo Configurar de [Componente de selector de fechas](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/number-input#formats-configure-tab) y [Componente Cuadro numérico](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
+* Cuando los componentes Cuadro numérico y Selector de fecha se traducen a una configuración regional específica, pueden surgir problemas de formato. Para mitigar esto, **Idioma** se ha incorporado al cuadro de diálogo Configurar de [Componente de selector de fechas](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) y [Componente Cuadro numérico](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
 
 
 * Gestión de nuevos campos:
