@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: de06178f66c95baef15de19296a654f1ed4a0387
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 43%
+ht-degree: 92%
 
 ---
 
@@ -17,29 +17,29 @@ En la siguiente sección se describen las notas de la versión técnicas actuale
 
 ## Versión 16544 {#release-16544}
 
-A continuación, se resumen las mejoras continuas para la versión de mantenimiento 16544, que se publicó el miércoles, 04 de junio de 2024. La versión de mantenimiento anterior fue la 16461.
+A continuación, se resumen las mejoras continuas para la versión de mantenimiento 16544, que se publicó el 4 de junio de 2024. La versión de mantenimiento anterior fue la 16461.
 
 La activación de funcionalidades 2024.6.0 proporcionará el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
 ### Mejoras {#enhancements-16544}
 
-* GRANITE-41133: admite la API de servlet de Jakarta 5 y la API de pizarra electrónica de servlet OSGi.
-* GRANITE-51355: Obsoleto org.slf4j.event.
-* AEM AEM GRANITE-51565: La pierde la relación de grupo local con el grupo externo cuando el grupo local se publica desde la publicación de un grupo de un grupo de un grupo de un grupo de un grupo de un grupo de un grupo de un grupo de un grupo de un grupo de un grupo local de un grupo de un grupo de un grupo de.
-* GRANITE-51707: establezca la cookie saml_request_path durante el redireccionamiento http para la autenticación.
-* GRANITE-52010: Actualice la versión de Jackrabbit a 2.20.16.
-* GRANITE-52057: Actualice Filevault a 3.7.3-T20240514105118-694f6aea fijando JCRVLT-745.
-* SKYOPS-35998: Actualizar dependencias de &quot;Sling RepoInit&quot; : Repoinit Parser 1.9.0, Repoinit JCR 1.1.46.
+* GRANITE-41133: admite la API Jakarta Servlet 5 y la API OSGi Servlet Whiteboard.
+* GRANITE-51355: pone en desuso org.slf4j.event.
+* GRANITE-51565: AEM pierde la relación de grupo local con el grupo externo cuando el grupo local se publica desde AEM.
+* GRANITE-51707: establece la cookie saml_request_path durante el redireccionamiento de http para autenticación.
+* GRANITE-52010: actualiza la versión de Jackrabbit a 2.20.16.
+* GRANITE-52057: actualiza Filevault a 3.7.3-T20240514105118-694f6aea solucionando JCRVLT-745.
+* SKYOPS-35998: actualiza las dependencias “Sling RepoInit”: Repoinit Parser 1.9.0, Repoinit JCR 1.1.46.
 
 ### Problemas solucionados {#fixed-issues-16544}
 
 * GRANITE-51375: idp-sync emite NPE si no se especifica ninguna ruta intermedia.
-* GUIDES-17171: La operación de copiar y pegar de temas que superan los 15 KB falla con un error inesperado.
-* GUIDES-17088: la funcionalidad para cambiar el estado del documento desde el **Propiedades de archivo** el panel no funciona correctamente y cambia al *Borrador* estado.
-* GUIDES-16931: Las imágenes vinculadas de los temas no aparecen en la línea de base después de la creación de la versión.
-* GUIDES-16896: Los paneles de contenido reutilizables no enumeran elementos cuando la variable **Preferencias de usuario** están configurados para ver archivos por **Nombre de archivo**.
+* GUIDES-17171: la operación de copiar y pegar de temas que superan los 15 KB falla con un error inesperado.
+* GUIDES-17088: la funcionalidad para cambiar el estado del documento desde el panel **Propiedades de archivo** no funciona correctamente y cambia al estado *Borrador*.
+* GUIDES-16931: las imágenes vinculadas de los temas no aparecen en la línea de base después de la creación de la versión.
+* GUIDES-16896: los paneles de contenidos reutilizables no enumeran elementos cuando las **Preferencias de usuario** están configuradas para ver archivos por **Nombre de archivo**.
 
-Para obtener más información sobre las funciones nuevas y mejoradas y los problemas corregidos en las Guías del Experience Manager, consulte la [Guía del Experience Manager publica hoja de ruta](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Para obtener más información sobre las funciones nuevas y mejoradas y los problemas corregidos en Experience Manager Guides, consulte la [hoja de ruta de la versión de Experience Manager Guides](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Problemas conocidos {#known-issues-16544}
 

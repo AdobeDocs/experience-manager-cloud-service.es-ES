@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: e6de1fc47eb2b9c3ba5b115c74b874016449bc20
 workflow-type: tm+mt
 source-wordcount: '1942'
-ht-degree: 82%
+ht-degree: 92%
 
 ---
 
@@ -62,8 +62,8 @@ Las acciones y flujos de trabajo de traducción de contenido ahora almacenan en 
 
 #### Servicio de datos de Real Use Monitoring (RUM) {#real-use-monitoring}
 
-* **[El servicio de datos de Real Use Monitoring (RUM) ahora es GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** AEM habilitar la recopilación de datos del lado del cliente para la creación de informes as a Cloud Service.
-El servicio de Monitorización de uso real, la recopilación del lado del cliente, ofrece una reflexión más precisa de las interacciones, lo que garantiza una medida fiable de la participación en el sitio web. Permite a los clientes obtener una información avanzada sobre el tráfico y el rendimiento de sus páginas. Es una gran oportunidad para obtener más información sobre el rendimiento de su página y obtener perspectivas para mejorarlo.
+* **[El servicio de datos de monitorización de usuario real (RUM) ahora es GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**, que permite la colección de datos del lado del cliente para AEM as a Cloud Service.
+El servicio de Monitorización de uso real, la recopilación del lado del cliente, ofrece una reflexión más precisa de las interacciones, lo que garantiza una medida fiable de la participación en el sitio web. Permite a los clientes obtener perspectivas avanzadas sobre el tráfico y el rendimiento de sus páginas. Es una gran oportunidad para obtener más información sobre el rendimiento de su página y obtener perspectivas para mejorarlo.
 
 #### AEM Creación de para Edge Delivery Services {#edge-enhancements}
 
@@ -112,7 +112,7 @@ Experience Manager Assets ahora le permite [publicar rápidamente en Experience 
 
 Esta versión aporta una actualización significativa al editor de reglas visuales para formularios adaptables basados en componentes principales. Ahora puede:
 
-* Cree reglas en el Editor de reglas visuales para [omitir los mensajes de éxito/error predeterminados para el envío del formulario](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
+* Cree reglas en el editor de reglas visuales para [anular los mensajes de éxito y error predeterminados para el envío de formularios](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
 
 * En el Editor de reglas de formularios adaptables, se ha añadido la posibilidad de [seleccionar diferentes tipos de campos para la operación WHEN](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when).
 
@@ -237,11 +237,11 @@ La CDN administrada por Adobe es ahora compatible con [Edge Side Includes (ESI)]
 ## Guías de [!DNL Experience Manager] {#guides}
 
 * **Publicación de un tema o sus elementos en un fragmento de experiencia**
-Ahora, las guías del Experience Manager le permiten publicar un tema o sus elementos en un Fragmento de experiencia. Un fragmento de experiencia es una unidad de contenido modular que integra contenido y diseño.  Los fragmentos de experiencias son fundamentales y pueden ayudarle a crear experiencias coherentes y atractivas.
-* **Capacidad para pasar el tema metadatos de recursos a la salida del PDF nativo**
-Puede añadir el tema metadatos de recursos al generar la salida del PDF nativo. Esta función le ayuda a agregar metadatos específicos para diferentes temas, como el título y el autor del tema, a los encabezados y pies de página del tema.
+Ahora, las Experience Manager Guides le permiten publicar un tema o sus elementos en un fragmento de experiencia. Un fragmento de experiencia es una unidad de contenido modular que integra tanto contenido como diseño. Los fragmentos de experiencias son fundamentales y pueden ayudarle a crear experiencias coherentes y atractivas.
+* **Capacidad para pasar los metadatos de recursos del tema a la salida del PDF nativo**
+Puede añadir los metadatos de recursos del tema al generar la salida del PDF nativo. Esta función le ayuda a añadir metadatos específicos para diferentes temas, como el título y el autor del tema, a los encabezados y pies de página del tema.
 
-Para obtener más información sobre las funciones nuevas y mejoradas y los problemas corregidos en la versión, consulte la [Guía del Experience Manager publica hoja de ruta](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Para obtener más información sobre las funciones nuevas y mejoradas y los problemas corregidos en la versión, consulte la [hoja de ruta de la versión de Experience Manager Guides](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
