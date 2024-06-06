@@ -8,10 +8,10 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
 workflow-type: tm+mt
-source-wordcount: '2139'
-ht-degree: 97%
+source-wordcount: '2150'
+ht-degree: 99%
 
 ---
 
@@ -20,8 +20,9 @@ ht-degree: 97%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
+| AEM as a Cloud Service (componentes base) | Este artículo |
+| AEM as a Cloud Service (componentes principales) | [Haga clic aquí](/help/forms/adaptive-form-fragments-core-components.md) |
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=es) |
-| AEM as a Cloud Service | Este artículo |
 
 Aunque cada formulario está diseñado para un propósito específico, hay algunos segmentos comunes en la mayoría de las formas, como para proporcionar detalles personales como nombre y dirección, detalles familiares, detalles de ingresos, etc. Los desarrolladores de formularios deben crear estos segmentos comunes cada vez que se crea un nuevo formulario. Los formularios adaptables proporcionan un mecanismo cómodo para crear segmentos de formulario como un panel o un grupo de campos solo una vez y reutilizarlos. Estos segmentos reutilizables e independientes se denominan fragmentos de formulario adaptables.
 
@@ -174,7 +175,7 @@ Puede utilizar un fragmento de formulario basado en esquemas varias veces en un 
 
 >[!NOTE]
 >
-> Si utiliza fragmentos de formulario basados en ninguno varias veces en un formulario adaptable, se produce un problema de sincronización de datos entre los campos de los fragmentos. Puede usar un [fragmento de formulario basado en componentes principales](/help/forms/adaptive-form-fragments-core-components.md) que no está vinculado a ningún modelo de datos de formulario (FDM), varias veces en un formulario sin experimentar problemas de sincronización de datos.
+> Si utiliza fragmentos de formulario basados en ninguno varias veces en un formulario adaptable, se produce un problema de sincronización de datos entre los campos de los fragmentos. Puede usar varias veces un [fragmento de formulario basado en componentes principales](/help/forms/adaptive-form-fragments-core-components.md) que no esté vinculado a ningún modelo de datos de formulario (FDM) sin experimentar problemas de sincronización de datos.
 
 ## Asignar automáticamente fragmentos para enlazar datos {#auto-mapping-of-fragments-for-data-binding}
 
@@ -251,7 +252,7 @@ Para localizar un formulario adaptable que contenga fragmentos de formulario ada
 
 * Asegúrese de que el nombre del fragmento sea único. El fragmento no se creará si hay un fragmento existente con el mismo nombre.
 * En un formulario adaptable basado en XDP, si guarda un panel como fragmento que incluye otro fragmento XDP, el fragmento resultante se enlaza automáticamente al fragmento XDP secundario. En el caso de un formulario adaptable basado en XSD, el fragmento resultante se enlaza a la raíz del esquema.
-* Cuando cree un fragmento de formulario adaptable, se creará un nodo de fragmento en CRXDe Lite, similar al nodo guideContainer para un formulario adaptable.
+* Cuando crea un fragmento de formulario adaptable, se genera un nodo de fragmento en CRXDE Lite, similar al nodo guideContainer para un formulario adaptable.
 * No se admite un fragmento de un formulario adaptable que utilice un modelo de datos de formulario (FDM) diferente. Por ejemplo, un fragmento basado en XDP no es compatible con un formulario adaptable basado en XSD y viceversa.
 * Los fragmentos de formulario adaptables están disponibles para su uso a través de la pestaña Fragmentos de formulario adaptables en el buscador de contenido de AEM.
 * Cualquier expresión, script o estilo de un fragmento de formulario adaptable independiente se conservará cuando se inserte por referencia o se incruste en un formulario adaptable.

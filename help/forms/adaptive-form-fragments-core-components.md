@@ -5,10 +5,10 @@ topic-tags: author
 keywords: Agregar fragmentos de formulario adaptable, fragmentos de formulario adaptable, Crear un fragmento de formulario, Agregar un fragmento a un formulario adaptable, Administrar fragmentos
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: c8172320a8c0372ea6947415a9c1c1be326f3828
+source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
 workflow-type: tm+mt
-source-wordcount: '1344'
-ht-degree: 88%
+source-wordcount: '1355'
+ht-degree: 87%
 
 ---
 
@@ -17,7 +17,8 @@ ht-degree: 88%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | Este artículo |
+| AEM as a Cloud Service (componentes principales) | Este artículo |
+| AEM as a Cloud Service (componentes base) | [Haga clic aquí](/help/forms/adaptive-form-fragments.md) |
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=es) |
 
 Aunque cada formulario está diseñado para un propósito específico, hay algunos segmentos comunes en la mayoría de los formularios, como para proporcionar detalles personales como nombre y dirección, detalles familiares, detalles de ingresos, etc. Los desarrolladores de formularios deben crear estos segmentos comunes cada vez que se crea un nuevo formulario.

@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
-workflow-type: ht
+source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+workflow-type: tm+mt
 source-wordcount: '6492'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -18,14 +18,9 @@ ht-degree: 100%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
+| AEM as a Cloud Service (componentes base) | Este artículo |
+| AEM as a Cloud Service (componentes principales) | [Haga clic aquí](/help/forms/rule-editor-core-components.md) |
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=es) |
-| AEM as a Cloud Service | Este artículo |
-
-
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| Componente principal | [Haga clic aquí](/help/forms/rule-editor-core-components.md) |
-| Componente de base | Este artículo |
 
 ## Información general {#overview}
 
