@@ -4,10 +4,10 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: b7e8fd902bb2fe98e183b7d987b87fee69e48337
+source-git-commit: f52b5f763277c9288d5dd30b01cfb7a4afeddda7
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 46%
+source-wordcount: '384'
+ht-degree: 43%
 
 ---
 
@@ -44,6 +44,10 @@ Para obtener más información sobre las funciones nuevas y mejoradas y los prob
 ### Problemas conocidos {#known-issues-16544}
 
 Ninguna.
+
+### Aviso de cambio {#change-notice-16544}
+
+AEM A partir de septiembre de 2024, el as a Cloud Service de la deshabilitará la serialización de los solucionadores de recursos a través del marco de trabajo Exportador de modelos Sling. Consulte [la documentación](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter) para obtener más información.
 
 ### Características y API obsoletas {#deprecated-16544}
 
