@@ -1,13 +1,12 @@
 ---
 title: Distribuir y compartir recursos, carpetas y colecciones
 description: Distribuya sus recursos digitales mediante métodos como compartir como vínculo, descargar y a través de [!DNL Brand Portal], [!DNL desktop app], y [!DNL Asset Link].
-contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: 1b4c5d985c71a84449a13b79fc00adea0443a631
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1847'
 ht-degree: 3%
 
 ---
@@ -107,7 +106,43 @@ Para compartir recursos por correo electrónico:
 
    ![Correo electrónico de uso compartido de vínculos](assets/link-sharing-email-notification.png)
 
-### Descarga de recursos mediante el vínculo de recursos
+### Personalizar plantilla de correo electrónico {#customize-email-template}
+
+Una plantilla bien diseñada transmite profesionalidad y competencia, mejorando la credibilidad de su mensaje y su organización. El [!DNL Adobe Experience Manager] permite personalizar la plantilla de correo electrónico, que se envía a los destinatarios que reciben el correo electrónico que contiene el vínculo compartido. Además, las plantillas de correo electrónico personalizadas permiten personalizar el contenido del correo electrónico al dirigirse a los destinatarios con un nombre y hacer referencia a detalles específicos relevantes para ellos. Este contacto personal puede hacer que el destinatario se sienta valorado y aumentar la participación. Además, una plantilla personalizada garantiza que los correos electrónicos sean coherentes con la identidad de su marca, incluidos los logotipos, los colores y las fuentes. La coherencia refuerza el reconocimiento de la marca y la confianza entre los destinatarios.
+
+#### Formato de una plantilla de correo electrónico personalizada {#format-of-custom-email-template}
+
+La plantilla de correo electrónico se puede personalizar mediante texto sin formato o HTML. El vínculo de plantilla editable predeterminado se encuentra en `/libs/settings/dam/adhocassetshare/en.txt`. Puede anular la plantilla creando el archivo `/apps/settings/dam/adhocassetshare/en.txt`. Puede modificar la plantilla de correo electrónico tantas veces como sea necesario.
+
+| Marcadores de posición | Descripción |
+|---|-----|
+| ${emailSubject} | Asunto de un correo electrónico |
+| ${emailInitiator} | ID de correo electrónico del usuario que creó el correo electrónico |
+| ${emailMessage} | Cuerpo del correo electrónico |
+| ${pagePath} | URL del vínculo compartido |
+| ${linkExpiry} | Fecha de caducidad del vínculo compartido |
+| ${host.prefix} | Origen de la [!DNL Experience Manager] ejemplo, `http://www.adobe.com"` |
+
+#### Ejemplo de plantilla de correo electrónico personalizada {#custom-email-template-example}
+
+```
+subject: ${emailSubject}
+
+<!DOCTYPE html>
+<html><body>
+<p><strong>${emailInitiator}</strong> invited you to review assets.</p>
+<p>${emailMessage}</p>
+<p>The shared link will be available until ${linkExpiry}.
+<p>
+    <a href="${pagePath}" target="_blank"><strong>Open</strong></a>
+</p>
+
+Sent from instance: ${host.prefix}
+
+</body></html>
+```
+
+### Descarga de recursos mediante el vínculo de recursos {#download-assets-using-asset-link}
 
 Cualquier usuario que tenga acceso al vínculo de recursos compartidos puede descargar los recursos agrupados en una carpeta zip. El proceso de descarga es el mismo, tanto si un usuario accede al vínculo de recurso copiado como si utiliza el vínculo de recurso compartido a través del correo electrónico.
 
@@ -211,7 +246,7 @@ Los usuarios pueden descargar los recursos necesarios y compartirlos fuera de [!
 
 Los especialistas en marketing y los usuarios de la línea de negocios pueden compartir fácilmente recursos aprobados con sus profesionales creativos mediante,
 
-* **aplicación de escritorio de Experience Manager**: la aplicación funciona en Windows y Mac. Consulte [información general de aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=es). Para saber cómo cualquier usuario de escritorio autorizado puede acceder fácilmente a los recursos compartidos, consulte [examinar, buscar y previsualizar recursos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Los usuarios de escritorio pueden crear recursos y volver a compartirlos con sus homólogos que sean usuarios Experience Manager, por ejemplo, cargando nuevas imágenes. Consulte [cargar recursos mediante la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **aplicación de escritorio de Experience Manager**: la aplicación funciona en Windows y Mac. Consulte [información general de aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=es). Para saber cómo cualquier usuario de escritorio autorizado puede acceder fácilmente a los recursos compartidos, consulte [examinar, buscar y previsualizar recursos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Los usuarios de escritorio pueden crear recursos y volver a compartirlos con sus homólogos que sean usuarios Experience Manager, por ejemplo, cargando nuevas imágenes. Consulte [carga de recursos mediante una aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
 * **Adobe Asset Link**: los profesionales creativos pueden buscar y utilizar recursos directamente desde [!DNL Adobe InDesign], [!DNL Adobe Illustrator], y [!DNL Adobe Photoshop].
 
@@ -223,7 +258,7 @@ Las distintas opciones para compartir los recursos requieren una configuración 
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-Para generar la dirección URL de los recursos que desea compartir con los usuarios, utilice el cuadro de diálogo Uso compartido de vínculos. Usuarios con privilegios de administrador o con permisos de lectura en `/var/dam/share` Las ubicaciones de pueden ver los vínculos compartidos con ellas. Compartir recursos a través de un vínculo es una forma cómoda de poner los recursos a disposición de terceros externos sin tener que iniciar sesión primero en [!DNL Assets].
+Para generar la dirección URL de los recursos que desea compartir con los usuarios, utilice el cuadro de diálogo Uso compartido de vínculos. Usuarios con privilegios de administrador o con permisos de lectura en `/var/dam/share` Las ubicaciones de pueden ver los vínculos compartidos con ellas. Compartir recursos a través de un vínculo es una forma cómoda de poner los recursos a disposición de terceros sin que tengan que iniciar sesión primero en [!DNL Assets].
 
 >[!NOTE]
 >
@@ -266,7 +301,7 @@ Desde dentro de [!DNL Assets] interfaz de usuario en un explorador, puede explor
 
 ### Configuraciones para utilizar [!DNL Adobe Asset Link] {#configure-asset-link}
 
-Adobe Asset Link optimiza la colaboración entre creativos y especialistas en marketing en el proceso de creación de contenido. Se conecta [!DNL Adobe Experience Manager Assets] con [!DNL Creative Cloud] aplicaciones de escritorio [!DNL Adobe InDesign], [!DNL Adobe Photoshop], y [!DNL Adobe Illustrator]. El [!DNL Adobe Asset Link] El panel permite a los creativos acceder y modificar el contenido almacenado en [!DNL Assets] sin salir de las aplicaciones creativas con las que están más familiarizados.
+Adobe Asset Link optimiza la colaboración entre creativos y especialistas en marketing en el proceso de creación de contenido. Se conecta [!DNL Adobe Experience Manager Assets] con [!DNL Creative Cloud] aplicaciones de escritorio, [!DNL Adobe InDesign], [!DNL Adobe Photoshop], y [!DNL Adobe Illustrator]. El [!DNL Adobe Asset Link] El panel permite a los creativos acceder y modificar el contenido almacenado en [!DNL Assets] sin salir de las aplicaciones creativas con las que están más familiarizados.
 
 Consulte [cómo configurar [!DNL Assets] para utilizarlo con [!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
 
@@ -300,3 +335,4 @@ Consulte [cómo configurar [!DNL Assets] para utilizarlo con [!DNL Adobe Asset L
 * [Administrar colecciones](manage-collections.md)
 * [Importación masiva de metadatos](metadata-import-export.md)
 * [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
