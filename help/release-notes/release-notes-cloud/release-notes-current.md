@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 05144cc11c3a3e99e4e76aa6c8720592e9ca7a9f
+source-git-commit: e6de1fc47eb2b9c3ba5b115c74b874016449bc20
 workflow-type: tm+mt
-source-wordcount: '1900'
-ht-degree: 86%
+source-wordcount: '1942'
+ht-degree: 82%
 
 ---
 
@@ -44,12 +44,28 @@ Eche un vistazo al vídeo Información general sobre la versión de mayo de 2024
 
 ### Nuevas funciones en Sites {#sites-new-features}
 
+#### AEM Integración de traducción de {#translation-integration}
+
+Las acciones y flujos de trabajo de traducción de contenido ahora almacenan en déclencheur eventos para permitir el seguimiento de pasos y estados de procesos relevantes desde aplicaciones externas. Se están generando los siguientes eventos. Los usuarios podrán suscribirse a eventos mediante la consola de Adobe Developer.
+
+* `TRANSLATION_JOB_CREATED`
+* `TRANSLATION_JOB_CONTENT_ADDITION_STARTED`
+* `TRANSLATION_JOB_CONTENT_ADDITION_COMPLETED`
+* `TRANSLATION_JOB_CONTENT_DELETION_STARTED`
+* `TRANSLATION_JOB_CONTENT_DELETION_COMPLETED`
+* `TRANSLATION_JOB_COMMITTED_FOR_TRANSLATION`
+* `TRANSLATION_JOB_READY_FOR_REVIEW`
+* `TRANSLATION_JOB_APPROVED`
+* `TRANSLATION_JOB_COMPLETED`
+* `TRANSLATION_JOB_CANCELLED`
+* `TRANSLATION_JOB_ERROR`
+
 #### Servicio de datos de Real Use Monitoring (RUM) {#real-use-monitoring}
 
 * **[El servicio de datos de Real Use Monitoring (RUM) ahora es GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** AEM habilitar la recopilación de datos del lado del cliente para la creación de informes as a Cloud Service.
-El servicio de Monitorización de Uso Real , la colección del lado del cliente, ofrece una reflexión más precisa de las interacciones, lo que garantiza una medida fiable de la participación en el sitio web. Permite a los clientes obtener una información avanzada sobre el tráfico y el rendimiento de sus páginas. Es una gran oportunidad para obtener más información sobre el rendimiento de su página y obtener perspectivas para mejorarlo.
+El servicio de Monitorización de uso real, la recopilación del lado del cliente, ofrece una reflexión más precisa de las interacciones, lo que garantiza una medida fiable de la participación en el sitio web. Permite a los clientes obtener una información avanzada sobre el tráfico y el rendimiento de sus páginas. Es una gran oportunidad para obtener más información sobre el rendimiento de su página y obtener perspectivas para mejorarlo.
 
-### AEM Creación de para Edge Delivery Services
+#### AEM Creación de para Edge Delivery Services {#edge-enhancements}
 
 Mejor estabilidad y diversas mejoras para una mejor experiencia de creación.
 
@@ -132,7 +148,7 @@ El servicio Forms genera PDF forms interactivos para la captura de datos. Tambi�
 
 * **Representación de formularios**: genera un formulario de PDF interactivo a partir de una plantilla creada con AEM Forms Designer y, opcionalmente, datos XML. Básicamente, esto genera un formulario PDF rellenable que, opcionalmente, está rellenado previamente con datos.
 * **Extracción e importación de datos**: importe datos a un formulario de PDF existente y extraiga datos de un formulario de PDF rellenado. Se admiten los formatos de datos XDP y XML y la importación a PDF forms que no sean XFA (también conocidos como AcroForms) admite además datos FDF y XFDF.
-* **Validación de datos**: valide los datos enviados, en formato XDP o XML con una plantilla creada con AEM Forms Designer.
+* **Validación de datos**: valide los datos enviados, en formato XDP o XML, con una plantilla creada con AEM Forms Designer.
 
 >[!IMPORTANT]
 >
@@ -239,4 +255,3 @@ Puede encontrar una lista completa de las versiones de las herramientas de migra
 
 Puede encontrar información sobre las versiones de otras aplicaciones de Experience Cloud [aquí](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current).
 Para recibir una notificación mensual por correo electrónico acerca de las actualizaciones realizadas en las notas de la versión de Experience Cloud, suscríbase al [Adobe Actualización de producto prioritario](https://www.adobe.com/subscription/priority-product-update.html).
-
