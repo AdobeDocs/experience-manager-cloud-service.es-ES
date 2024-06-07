@@ -2,10 +2,10 @@
 title: Restauración de contenidos en AEM as a Cloud Service
 description: Obtenga información sobre cómo restaurar el contenido de AEM as a Cloud Service desde la copia de seguridad mediante Cloud Manager.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 5baeb4012e5aa82a8cd8710b18d9164583ede0bd
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 57%
+source-wordcount: '1339'
+ht-degree: 50%
 
 ---
 
@@ -13,15 +13,6 @@ ht-degree: 57%
 # Restauración de contenidos en AEM as a Cloud Service {#content-restore}
 
 Obtenga información sobre cómo restaurar el contenido de AEM as a Cloud Service desde la copia de seguridad mediante Cloud Manager.
-
->[!NOTE]
->
->Esta función solo está disponible para [el programa de usuarios pioneros](/help/implementing/cloud-manager/release-notes/current.md#early-adoption) y tiene ciertas limitaciones además de las documentadas en el artículo. En la fase de adopción temprana:
->
->* La función solo está disponible en entornos de desarrollo.
->* Las restauraciones de contenido están limitadas a dos al mes por programa.
->
->AEM Para obtener más información sobre el sistema de copia de seguridad y restauración existente para los as a Cloud Service de la, consulte [AEM Copia de seguridad y restauración en as a Cloud Service](/help/operations/backup.md).
 
 ## Información general {#overview}
 
@@ -40,13 +31,41 @@ AEM En ambos casos, la versión del código personalizado y la versión de la pe
 >
 >También es posible restaurar copias de seguridad [mediante la API pública.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
 
+>[!WARNING]
+>
+>* Esta función solo debe utilizarse cuando haya problemas graves con el código o el contenido.
+>* La restauración de una copia de seguridad resultará en la pérdida de datos recientes entre el momento de la copia de seguridad y el presente. La puesta en marcha también se restaurará a la versión antigua.
+>* Antes de iniciar una restauración de contenido, considere otras opciones selectivas de restauración de contenido.
+
+## Opciones de restauración selectiva de contenido {#selective-options}
+
+Antes de restaurar a una restauración de contenido completa, tenga en cuenta estas opciones para restaurar el contenido con mayor facilidad.
+
+* Si hay un paquete disponible para la ruta eliminada, instale de nuevo el paquete con la variable [Administrador de paquetes.](/help/implementing/developing/tools/package-manager.md)
+* Si la ruta eliminada era una página de Sites, use [Función Restaurar árbol.](/help/sites-cloud/authoring/sites-console/page-versions.md)
+* Si la ruta eliminada era una carpeta de recursos y los archivos originales están disponibles, vuelva a cargarlos mediante [la consola Recursos.](/help/assets/add-assets.md)
+* Si la eliminación de contenido era recursos, considere lo siguiente [restaurar versiones anteriores de los recursos.](/help/assets/manage-digital-assets.md)
+
+Si ninguna de las opciones anteriores funciona y el contenido de la ruta eliminada es significativo, realice una restauración de contenido como se detalla en las secciones siguientes.
+
+## Crear función de usuario {#user-role}
+
+De forma predeterminada, ningún usuario tendrá permiso para ejecutar restauraciones de contenido en entornos de desarrollo, producción o ensayo. Para delegar este permiso a usuarios o grupos específicos, siga estos pasos generales.
+
+1. Cree un perfil de producto con un nombre expresivo que haga referencia a la restauración de contenido.
+1. Proporcione el **Acceso al programa** en el programa requerido.
+1. Proporcione el **Restauración de contenido** permiso en el entorno requerido para todos los entornos del programa, según el caso de uso.
+1. Asigne usuarios a ese perfil.
+
+Para obtener más información sobre la administración de permisos, consulte [Permisos personalizados](/help/implementing/cloud-manager/custom-permissions.md) documentación.
+
 ## Restauración de contenido {#restoring-content}
 
 En primer lugar, determine el lapso de tiempo del contenido que desea restaurar. A continuación, para restaurar el contenido de su entorno desde una copia de seguridad, siga estos pasos.
 
 >[!NOTE]
 >
->Un usuario con **Propietario del negocio** o **Administrador de implementación** La función debe estar conectada para iniciar una operación de restauración.
+>Un usuario debe tener [permisos adecuados](#user-role) para iniciar una operación de restauración.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 

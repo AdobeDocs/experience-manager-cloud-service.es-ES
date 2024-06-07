@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 68%
+source-wordcount: '1367'
+ht-degree: 67%
 
 ---
 
@@ -86,7 +86,7 @@ Para finalizar la configuración de la canalización de producción de código d
 
    >[!TIP]
    > 
-   >Consulte el documento [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para aprender a añadir y administrar repositorios en Cloud Manager.
+   >Consulte el documento [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/managing-repositories.md) para aprender a añadir y administrar repositorios en Cloud Manager.
 
    * **Rama de Git**: esta opción define desde qué rama de la canalización seleccionada debe recuperar el código.
       * Introduzca los primeros caracteres del nombre de la rama y la función de autocompletar de este campo encontrará las ramas coincidentes que le ayudarán a seleccionar.
@@ -126,6 +126,10 @@ AEM Una implementación de destino implementa el código únicamente para partes
    * Si existe una canalización de código de nivel web para el entorno seleccionado, esta selección está deshabilitada.
    * Si tiene una canalización de pila completa existente implementando en un entorno, al crear una canalización de configuración de capa web para el mismo entorno, se omitirá la configuración de capa web existente en la canalización de pila completa.
 
+>[!NOTE]
+>
+>Las canalizaciones de nivel web y configuración no son compatibles con los repositorios privados. Consulte el documento [Adición de repositorios privados en Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) para obtener más información y la lista completa de limitaciones.
+
 Los pasos para completar la creación de la canalización de implementación de producción y destino son los mismos una vez que elija un tipo de implementación.
 
 1. Elija el tipo de implementación que necesita.
@@ -142,7 +146,7 @@ Los pasos para completar la creación de la canalización de implementación de 
 
    >[!TIP]
    > 
-   >Consulte [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para poder aprender a añadir y administrar repositorios en Cloud Manager.
+   >Consulte [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/managing-repositories.md) para poder aprender a añadir y administrar repositorios en Cloud Manager.
 
    * **Rama de Git**: esta opción define desde qué rama de la canalización seleccionada debe recuperar el código.
       * Introduzca los primeros caracteres del nombre de la rama y la función de autocompletar de este campo. Encuentra las ramas coincidentes que puede seleccionar.

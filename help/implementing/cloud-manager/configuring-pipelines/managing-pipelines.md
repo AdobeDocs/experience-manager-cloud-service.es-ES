@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 53%
+source-wordcount: '1119'
+ht-degree: 48%
 
 ---
 
@@ -110,6 +110,10 @@ Según el tipo de canalización, puede cancelar la ejecución si hace clic de nu
 >
 >No se puede editar una canalización en ejecución.
 
+>[!NOTE]
+>
+>Las canalizaciones de nivel web y configuración no son compatibles con los repositorios privados. Consulte el documento [Adición de repositorios privados en Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) para obtener más información y la lista completa de limitaciones.
+
 ## Eliminar canalizaciones {#deleting-pipelines}
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
@@ -143,6 +147,14 @@ Una vez completado el paso de una canalización, se presenta un resumen.
 Seleccione el **Ver detalles** vínculo para mostrar el **Duración** sección. Esto incluye la duración promedio de la canalización en función de la tendencia histórica para ese programa.
 
 ![Duración](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
+
+Si la canalización contenía un **Escaneado de códigos** , que ha planteado problemas, puede tocar o hacer clic en el **Descargar detalles** para ver una lista de [pruebas de calidad del código](/help/implementing/cloud-manager/code-quality-testing.md) que no pasó.
+
+![Problemas de calidad del código](assets/managing-pipelines-code-quality-issues.png)
+
+A **Ubicación del archivo del proyecto** está disponible en el archivo CSV para indicar la ubicación del código infractor. Esta columna es la ruta relativa al proyecto, mientras que la variable **Ubicación del archivo** es generada por Maven.
+
+![Detalles del problema de análisis de código de proyecto](assets/managing-pipelines-code-quality-details.png)
 
 >[!NOTE]
 >

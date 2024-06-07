@@ -4,7 +4,7 @@ description: Introducción a la arquitectura de Adobe Experience Manager as a Cl
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '2713'
 ht-degree: 100%
@@ -233,7 +233,7 @@ La nueva arquitectura de AEM as a Cloud Service presenta algunos cambios e innov
    * [Recorrido de la incorporación](/help/journey-onboarding/overview.md)
    * [Programas y tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 * Arquitectura de desarrollo
-   * [Repositorios de Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
+   * [Repositorios de Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
    * [Canalización de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
    * [Prueba de calidad del código](/help/implementing/cloud-manager/code-quality-testing.md)
 * Edge Delivery Services:

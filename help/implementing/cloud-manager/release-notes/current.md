@@ -1,20 +1,20 @@
 ---
-title: Notas de la versión para Cloud Manager 2024.5.0 en Adobe Experience Manager as a Cloud Service
-description: Estas son las notas de la versión para Cloud Manager 2024.5.0 en AEM as a Cloud Service.
+title: Notas de la versión para Cloud Manager 2024.6.0 en Adobe Experience Manager as a Cloud Service
+description: Estas son las notas de la versión para Cloud Manager 2024.6.0 en AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 5644e6f433b18408780e13057ba469e7c4926f78
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 100%
+source-wordcount: '702'
+ht-degree: 52%
 
 ---
 
 
-# Notas de la versión para Cloud Manager 2024.5.0 en Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notas de la versión para Cloud Manager 2024.6.0 en Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Esta página documenta las notas de la versión 2024.5.0 para Cloud Manager en AEM as a Cloud Service.
+Esta página documenta las notas de la versión 2024.6.0 para Cloud Manager en AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -22,16 +22,37 @@ Esta página documenta las notas de la versión 2024.5.0 para Cloud Manager en A
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de Cloud Manager 2024.5.0 en AEM as a Cloud Service fue el 9 de mayo de 2024. La próxima versión está planificada para el 6 de junio de 2024.
+AEM La fecha de lanzamiento de la versión 2024.6.0 de Cloud Manager en la versión as a Cloud Service de es el 6 de junio de 2024. La próxima versión está planificada para el 11 de julio de 2024.
 
 ## Novedades {#what-is-new}
 
-* El [Tablero de licencias](/help/implementing/cloud-manager/license-dashboard.md) ahora es accesible a través de un punto de entrada distinto incluido en la [navegación](/help/implementing/cloud-manager/navigation.md) de la izquierda.
-* Cuando falla el aprovisionamiento de un entorno de desarrollo, la interfaz de usuario de Cloud Manager proporciona comentarios.
+* Ahora puede [usar sus propios repositorios de GitHub](/help/implementing/cloud-manager/managing-code/private-repositories.md) como fuentes para canalizaciones de pila completa y de front-end.
+   * Además, puede aprovechar los repositorios de GitHub con [submódulos git,](/help/implementing/cloud-manager/managing-code/git-submodules.md) proporciona un control mejorado sobre las canalizaciones generadas automáticamente que se utilizan para validar las solicitudes de extracción y permite definir comportamientos para métricas cruciales durante la fase de análisis de código.
+   * [También tiene la opción](/help/implementing/cloud-manager/managing-code/github-check-config.md) para conservar el historial de informes en GitHub, asigne un nombre a la canalización y establezca las variables de canalización que se adapten a sus necesidades.
+* [Restauración de contenido de autoservicio](/help/operations/restore.md) proporciona restauración de copia de seguridad durante un máximo de siete días y ofrece las siguientes funciones:
+   * Restauración de copias de seguridad puntuales de las 24 horas anteriores
+   * Restauraciones a hora fija durante un máximo de siete días
+* [Nuevas reglas de OakPal](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-ui-content-package) se agregaron al análisis de calidad del código de Cloud Manager.
+   * Cada nueva regla añadida a partir de junio de 2024 es un cambio permanente.
+   * Se le insta a abordar estos problemas lo antes posible, ya que estas nuevas reglas provocarán que las canalizaciones fallen a partir de la versión de agosto de 2024 de Cloud Manager.
 
 ## Programa para primeros usuarios {#early-adoption}
 
 Para tener la oportunidad de probar algunas de las próximas funciones, forme parte del programa de adopción anticipada de Adobe.
+
+### Compatibilidad con Edge Delivery Services en Cloud Manager {#edge-delivery-services}
+
+Si tiene Edge Delivery Services con licencia como parte de Adobe Experience Manager Sites, [ahora puede incorporar su sitio con Edge Delivery Services directamente en Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md) e inicie sesión con una experiencia de autoservicio guiada.
+
+AEM Esto permite una experiencia unificada para todas las propiedades de la, lo que garantiza la coherencia con todos los flujos de trabajo críticos, incluida la administración de nombres de dominio, la administración de certificados SSL y las asignaciones de CDN.
+
+Si está interesado en probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a `aemcs-cmedgedelsvs-program-adopter@adobe.com` de la dirección de correo electrónico asociada a su Adobe ID.
+
+### Certificados validados por dominio (DV)
+
+Cloud Manager ahora le permite [generar y administrar certificados SSL validados por dominio (DV) de autoservicio.](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) Esto le proporciona la solución más rápida, sencilla y rentable para crear un sitio web seguro para su negocio en línea.
+
+Si está interesado en probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a `Grp-aemcs-dv-dert-adopter@adobe.com` de la dirección de correo electrónico asociada a su Adobe ID.
 
 ### Colección del lado del cliente mediante Monitorización del usuario real (RUM) {#rum}
 
@@ -41,25 +62,6 @@ El servicio de datos de Monitorización del usuario real (RUM) ofrece un reflejo
 
 Si le interesa probar esta nueva funcionalidad y compartir sus comentarios, envíe un correo electrónico a `aemcs-rum-adopter@adobe.com` desde su dirección de correo electrónico asociada a su Adobe ID. Incluya el nombre de dominio para los entornos de producción, fase y desarrollo en su correo electrónico.  La disponibilidad del programa para primeros usuarios de esta funcionalidad es limitada.
 
-### Traer su propio GitHub {#byo-github}
-
-Si utiliza GitHub para administrar sus repositorios, [ahora puede validar códigos directamente dentro de sus repositorios de GitHub a través de Cloud Manager.](/help/implementing/cloud-manager/managing-code/byo-github.md)Esta integración elimina la necesidad de sincronizar el código de forma coherente con el repositorio de Adobe y le permite comprobar las solicitudes de extracción antes de combinarlas en las ramas principales. Esta funcionalidad es exclusiva de GitHub público. La compatibilidad con GitHub autoalojado no está disponible.
-
-Si le interesa probar esta nueva funcionalidad y compartir sus comentarios, envíe un correo electrónico a `Grp-CloudManager_BYOG@adobe.com` desde su dirección de correo electrónico asociada a su Adobe ID.
-
-### Restauración de contenido de autoservicio {#content-restore}
-
-[Una nueva funcionalidad de restauración de contenido de autoservicio](/help/operations/restore.md) ahora proporciona una restauración de copia de seguridad durante siete días y está disponible para los primeros usuarios para la evaluación:
-
-* Restauración de copias de seguridad puntuales de las 24 horas anteriores
-* Restauraciones a hora fija durante un máximo de siete días
-
-Si le interesa probar esta nueva funcionalidad y compartir sus comentarios, envíe un correo electrónico a `aemcs-restorefrombackup-adopter@adobe.com` desde su correo electrónico asociado a su Adobe ID.
-
-* El programa para primeros usuarios se limita únicamente a los entornos de desarrollo.
-* La disponibilidad del programa para primeros usuarios de esta funcionalidad es limitada.
-* Esta funcionalidad se utiliza para recuperar contenido eliminado accidentalmente y no está pensada para la recuperación ante desastres.
-
 ### Tablero de auditoría de experiencias {#experience-audit-dashboard}
 
 [El tablero de auditoría de experiencias de Cloud Manager](/help/implementing/cloud-manager/experience-audit-dashboard.md) incluye una vista de tendencias de las puntuaciones de rendimiento de la página, junto con perspectivas y recomendaciones para ayudarle a mejorarlas. La auditoría de experiencias se incluye como paso en la canalización de producción de Cloud Manager.
@@ -67,7 +69,3 @@ Si le interesa probar esta nueva funcionalidad y compartir sus comentarios, env�
 El tablero utiliza Google Lighthouse, una herramienta automatizada de código abierto para mejorar la calidad de sus aplicaciones web. Puede ejecutarlo en cualquier página web, pública o que requiera autenticación. Tiene auditorías de rendimiento, accesibilidad, aplicaciones web progresivas, SEO y más.
 
 ¿Está interesado en probar el nuevo tablero? Para empezar, envíe un correo electrónico a `aem-lighthouse-pilot@adobe.com` desde su correo electrónico asociado a su Adobe ID.
-
-## Correcciones de errores {#bug-fixes}
-
-* Se ha corregido un error por el que Cloud Manager reutilizaba artefactos con el hash de confirmación incorrecto.

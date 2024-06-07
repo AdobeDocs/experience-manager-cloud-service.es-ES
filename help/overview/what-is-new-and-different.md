@@ -4,7 +4,7 @@ description: 'Novedades y diferencias: Adobe Experience Manager (AEM) as a Cloud
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 73bd693d47f37b453209208816dfed15d65e9e09
 workflow-type: tm+mt
 source-wordcount: '1883'
 ht-degree: 100%
@@ -208,7 +208,7 @@ A fin de apoyar las iteraciones y el desarrollo rápidos, también es posible de
 
 >[!NOTE]
 >
->Para obtener más información, comience por [Restauración de contenido](/help/operations/backup.md), [Indexación](/help/operations/indexing.md) y [Otras tareas de mantenimiento](/help/operations/maintenance.md).
+>Para obtener más información, comience por [Restauración de contenido](/help/operations/restore.md), [Indexación](/help/operations/indexing.md) y [Otras tareas de mantenimiento](/help/operations/maintenance.md).
 
 Con AEM as a Cloud Service, esas operaciones se automatizan para que ya no sea necesaria ninguna interrupción del servicio.
 
