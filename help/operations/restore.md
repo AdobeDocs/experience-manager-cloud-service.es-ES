@@ -2,7 +2,9 @@
 title: Restauración de contenidos en AEM as a Cloud Service
 description: Obtenga información sobre cómo restaurar el contenido de AEM as a Cloud Service desde la copia de seguridad mediante Cloud Manager.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: 5baeb4012e5aa82a8cd8710b18d9164583ede0bd
+feature: Operations
+role: Admin
+source-git-commit: c7488b9a10704570c64eccb85b34f61664738b4e
 workflow-type: tm+mt
 source-wordcount: '1339'
 ht-degree: 50%
