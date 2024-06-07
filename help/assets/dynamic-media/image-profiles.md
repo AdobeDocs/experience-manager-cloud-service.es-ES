@@ -2,10 +2,10 @@
 title: Perfiles de imagen de Dynamic Media
 description: Obtenga información sobre cómo crear perfiles de imagen de Dynamic Media que contengan ajustes para máscara de enfoque y recorte inteligente o muestra inteligente, o ambos. A continuación, aplique el perfil a una carpeta de recursos de imagen.
 contentOwner: Rick Brough
-feature: Asset Management,Image Profiles,Renditions
+feature: Asset Management,Image Profiles,Renditions,Best Practices
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
 workflow-type: tm+mt
 source-wordcount: '3555'
 ht-degree: 5%
@@ -134,7 +134,7 @@ Consulte también [Prácticas recomendadas para organizar los recursos digitales
 
    ![recorte](assets/crop.png)
 
-1. Seleccionar **[!UICONTROL Guardar]**. El perfil creado aparece en la lista de perfiles disponibles.
+1. Seleccione **[!UICONTROL Guardar]**. El perfil creado aparece en la lista de perfiles disponibles.
 
 ## Editar o eliminar perfiles de imagen de Dynamic Media {#editing-or-deleting-image-profiles}
 

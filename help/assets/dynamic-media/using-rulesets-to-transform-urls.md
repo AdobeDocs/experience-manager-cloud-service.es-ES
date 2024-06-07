@@ -2,10 +2,10 @@
 title: Uso de conjuntos de reglas para transformar direcciones URL
 description: Obtenga información sobre cómo implementar conjuntos de reglas en Dynamic Media para transformar direcciones URL. Los conjuntos de reglas son conjuntos de instrucciones escritas en un lenguaje de script (como JavaScript) que evalúan los datos XML y realizan determinadas acciones si dichos datos cumplen determinadas condiciones.
 contentOwner: Rick Brough
-feature: Rulesets,Troubleshooting,Upload
+feature: Rulesets,Troubleshooting,Upload,Best Practices
 role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: ad2b36ffa178d787f50d33ce3393a76811467323
+source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 0%

@@ -2,13 +2,13 @@
 title: Imágenes inteligentes
 description: Descubra cómo Imágenes inteligentes con Adobe Sensei AI aplica las características de visualización únicas de cada usuario para ofrecer automáticamente las imágenes adecuadas y optimizadas para su experiencia, lo que resulta en un mejor rendimiento y participación.
 contentOwner: Rick Brough
-feature: Asset Management,Renditions
+feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 6f9ddcf31a1869bb8bebb566d05c371e996fe354
+source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
 workflow-type: tm+mt
-source-wordcount: '3535'
+source-wordcount: '3454'
 ht-degree: 1%
 
 ---
@@ -42,10 +42,10 @@ Los siguientes ejemplos de recursos de imagen ilustran la optimización de imág
 
 | Imagen (URL) | Miniatura    | Tamaño (JPEG) | Tamaño (WebP) con imágenes inteligentes | Tamaño (AVIF) con imágenes inteligentes | % de reducción con WebP | % de reducción con AVIF |
 |---|---|---|---|---|---|---|
-| [Imagen 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 145 KB | 106 KB | 90.2 KB | 26.89% | 37.79% |
-| [Imagen 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 412 KB | 346 KB | 113 KB | 16.01% | 72.57% |
-| [Imagen 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture3](/help/assets/assets-dm/picture3.png) | 221 KB | 189 KB | 87.1 KB | 14.47% | 60.58% |
-| [Imagen 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 594 KB | 545 KB | 286 KB | 8.25% | 51.85% |
+| [Imagen 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 145 KB | 106 KB | 90,2 KB | 26,89 % | 37,79 % |
+| [Imagen 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 412 KB | 346 KB | 113 KB | 16,01 % | 72,57 % |
+| [Imagen 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture3](/help/assets/assets-dm/picture3.png) | 221 KB | 189 KB | 87,1 KB | 14,47 % | 60,58 % |
+| [Imagen 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 594 KB | 545 KB | 286 KB | 8,25 % | 51,85 % |
 
 De forma similar a lo anterior, Adobe también ejecutó una prueba con un conjunto de muestras más grande. El formato AVIF proporciona una reducción de tamaño adicional del 20 % con respecto a WebP, lo que supone una reducción del 27 % con respecto al JPEG. Todos con la misma calidad visual. En total, AVIF proporciona una reducción de tamaño promedio de hasta el 41 % con respecto al JPEG.
 
@@ -91,13 +91,12 @@ Actualmente, la densidad de píxeles de la visualización proviene de los valore
 | Valores permitidos en la dirección URL de una imagen | Descripción |
 |---|---|
 | `dpr=off` | Desactive la optimización del RGPD en un nivel de URL de imagen individual. |
-| `dpr=on,dprValue` | Anule el valor del DPR detectado por Imágenes inteligentes, con un valor personalizado (tal y como lo detecta cualquier lógica del lado del cliente u otro medio). Valor permitido para `dprValue` es cualquier número bueno que 0. |
+| `dpr=on,dprValue` | Anule el valor del DPR detectado por Imágenes inteligentes, con un valor personalizado (tal y como lo detecta cualquier lógica del lado del cliente u otro medio). Valor permitido para `dprValue` es cualquier número mayor que 0. |
 
 >[!NOTE]
 >
 >* Puede utilizar `dpr=on,dprValue` incluso si la configuración del DPR a nivel de compañía está desactivada.
->* Debido a la optimización del RGPD, cuando la imagen resultante es buena respecto a la configuración de MaxPix Dynamic Media, la anchura de MaxPix siempre se reconoce manteniendo la proporción de aspecto de la imagen. —>
-
+>* Debido a la optimización del RGPD, cuando la imagen resultante es mayor que la configuración de MaxPix Dynamic Media, la anchura de MaxPix siempre se reconoce manteniendo la proporción de aspecto de la imagen. -->
 
 | Tamaño de imagen solicitado | Valor de proporción de píxeles del dispositivo (dpr) | Tamaño de imagen entregado |
 |---|---|---|
@@ -135,7 +134,7 @@ Cuando un consumidor solicita una imagen, Smart Imaging comprueba las caracterí
 * Convertir automáticamente a WebP si la conversión AVIF no fue beneficiosa o el explorador no admite AVIF
 * Convertir automáticamente a JPEG 2000 si Safari no admite WebP
 * Convertir automáticamente a JPEGXR para IE 9+ o si Edge no admite WebP\
-   | Formato de imagen | Exploradores admitidos | |—|—| | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) | | WebP | [https://caniuse.com/webp](https://caniuse.com/webp) | | JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) | | JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+  | Formato de imagen | Navegadores admitidos | |—|—| | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) | | WebP | [https://caniuse.com/webp](https://caniuse.com/webp) | | JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) | | JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
 * En los exploradores que no admiten estos formatos, se proporciona el formato de imagen solicitado originalmente.
 
 Si el tamaño de la imagen original es menor que el que produce Smart Imaging, se sirve la imagen original.
@@ -255,26 +254,26 @@ Si ya tiene habilitadas las imágenes inteligentes con WebP, pero desea otras nu
       * AVIF
       * Optimización del ancho de banda de red y DPR
       * PNG a AVIF con pérdida o WebP con pérdida
+
    * Todos los dominios que deben habilitarse para imágenes inteligentes (es decir, `images.company.com` o `mycompany.scene7.com`).
 
-      Para buscar los dominios, abra [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), luego inicie sesión en su cuenta o cuentas de empresa.
+     Para buscar los dominios, abra [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), luego inicie sesión en su cuenta o cuentas de empresa.
 
-      Ir a **[!UICONTROL Configurar]** > **[!UICONTROL Ajustes de aplicación]** > **[!UICONTROL Configuración general]**.
+     Ir a **[!UICONTROL Configurar]** > **[!UICONTROL Ajustes de aplicación]** > **[!UICONTROL Configuración general]**.
 
-      Busque el campo con la etiqueta **[!UICONTROL Servidor de publicación]**.
+     Busque el campo con la etiqueta **[!UICONTROL Servidor de publicación]**.
 
    * Compruebe que está utilizando la red de distribución de contenido (CDN) a través del Adobe y que no está gestionada con una relación directa.
 
    * Compruebe que está utilizando un dominio dedicado como `images.company.com` o `mycompany.scene7.com`y no un dominio genérico, como `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-      Para buscar los dominios, abra [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), luego inicie sesión en su cuenta o cuentas de empresa.
+     Para buscar los dominios, abra [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), luego inicie sesión en su cuenta o cuentas de empresa.
 
-      Ir a **[!UICONTROL Configurar]** > **[!UICONTROL Ajustes de aplicación]** > **[!UICONTROL Configuración general]**.
+     Ir a **[!UICONTROL Configurar]** > **[!UICONTROL Ajustes de aplicación]** > **[!UICONTROL Configuración general]**.
 
-      Busque el campo con la etiqueta **[!UICONTROL Servidor de publicación]**. Si está utilizando un dominio de Dynamic Media Classic genérico, puede solicitar pasar a su propio dominio personalizado como parte de esta transición.
+     Busque el campo con la etiqueta **[!UICONTROL Servidor de publicación]**. Si está utilizando un dominio de Dynamic Media Classic genérico, puede solicitar pasar a su propio dominio personalizado como parte de esta transición.
 
    * Indique si desea que funcione sobre HTTP/2.
-
 
 1. La Asistencia al cliente de Adobe le añade a la Lista de espera de clientes de imágenes inteligentes en función del orden en que se envían las solicitudes.
 1. Cuando el Adobe está listo para administrar su solicitud, el Servicio de atención al cliente se pone en contacto con usted para coordinar y establecer una fecha objetivo.
@@ -474,4 +473,4 @@ See also [When working with images](/help/assets/dynamic-media/adding-dynamic-me
 >[!MORELIKETHIS]
 >
 >* [Image optimization with next generation image formats WebP and AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4) -->
->
+>>
