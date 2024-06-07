@@ -4,9 +4,9 @@ description: Distribuya sus recursos digitales mediante métodos como compartir 
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 90da6851240add93de73dd6da46e54ffbf80a1d3
+source-git-commit: ec01a1b383160014918ee8c9b81e15f0cc855d02
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1829'
 ht-degree: 3%
 
 ---
@@ -121,7 +121,7 @@ La plantilla de correo electrónico se puede personalizar mediante texto sin for
 | `${emailMessage}` | Cuerpo del correo electrónico |
 | `${pagePath}` | URL del vínculo compartido |
 | `${linkExpiry}` | Fecha de caducidad del vínculo compartido |
-| `${host.prefix}` | Origen de la [!DNL Experience Manager] ejemplo, `http://www.adobe.com"` |
+<!--| `${host.prefix}` | Origin of the [!DNL Experience Manager] instance, for example `http://www.adobe.com"` |-->
 
 #### Ejemplo de plantilla de correo electrónico personalizada {#custom-email-template-example}
 
@@ -137,10 +137,10 @@ subject: ${emailSubject}
     <a href="${pagePath}" target="_blank"><strong>Open</strong></a>
 </p>
 
-Sent from instance: ${host.prefix}
-
 </body></html>
 ```
+
+<!--Sent from instance: ${host.prefix}-->
 
 ### Descarga de recursos mediante el vínculo de recursos {#download-assets-using-asset-link}
 
