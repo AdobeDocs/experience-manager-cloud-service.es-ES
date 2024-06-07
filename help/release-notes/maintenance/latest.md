@@ -4,10 +4,10 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: de06178f66c95baef15de19296a654f1ed4a0387
-workflow-type: ht
-source-wordcount: '383'
-ht-degree: 100%
+source-git-commit: 8f7c2fc175a542df5725693cfc332802d54e1e88
+workflow-type: tm+mt
+source-wordcount: '400'
+ht-degree: 95%
 
 ---
 
@@ -20,6 +20,11 @@ En la siguiente sección se describen las notas de la versión técnicas actuale
 A continuación, se resumen las mejoras continuas para la versión de mantenimiento 16544, que se publicó el 4 de junio de 2024. La versión de mantenimiento anterior fue la 16461.
 
 La activación de funcionalidades 2024.6.0 proporcionará el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
+
+>[!CAUTION]
+>
+>Utilice el SDK al que se hace referencia aquí, ya que se ha confirmado una regresión con el SDK anterior:
+>`AEM SDK v2024.06.16647.20240607T103723Z-240500`
 
 ### Mejoras {#enhancements-16544}
 
