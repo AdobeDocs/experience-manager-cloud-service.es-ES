@@ -2,10 +2,10 @@
 title: Integración nativa de AEM Assets con Adobe Express
 description: La integración nativa de AEM Assets con Adobe Express permite acceder directamente a los recursos almacenados en AEM Assets desde la interfaz de usuario de Adobe Express.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 4e33782dd8db0c1185b9a7733e7bcccfbcf3c3ba
+source-git-commit: d7e144d7f7722d4de96b3f85d44432863b350f92
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 9%
+source-wordcount: '635'
+ht-degree: 8%
 
 ---
 
@@ -50,18 +50,19 @@ Después de incorporar las modificaciones adecuadas en el lienzo Express, puede 
    ![AEM Guardado de recursos en el](assets/adobe-express-share.png)
 
 2. En la sección Almacenamiento del panel derecho, seleccione **AEM Assets**. El Adobe Express muestra el cuadro de diálogo de carga.
-3. Seleccione la opción **Página actual** o **Todas las páginas** opción de guardado. Seleccionar **Página actual** guarda el archivo en la carpeta de destino, sin embargo, seleccionando **Todas las páginas** crea una nueva carpeta en el destino para todos los archivos que no sean del PDF y los guarda como archivos independientes mientras los archivos del PDF se guardan como un solo archivo en la carpeta de destino.
-4. Especifique un nombre y un formato para el recurso. Puede guardar el contenido del lienzo en los formatos PNG, JPEG, PDF, MP4, MP4+PNG o MP4+JPEG. El formato se ajusta automáticamente en función de los recursos.
-5. Haga clic en el icono de carpeta en **Carpeta de destino** para seleccionar una ubicación y guardar los recursos.
+3. Seleccione una de las opciones **Página actual** o **Todas las páginas**. Especifique un nombre y un formato para los recursos que desea exportar. Puede exportar el contenido del lienzo en los formatos PNG, JPEG, PDF, MP4, MP4+PNG o MP4+JPEG. El formato se ajusta automáticamente en función de los recursos de las páginas de lienzo.
+Seleccionar **Página actual** guarda el recurso de la página actual en la carpeta de destino. Si selecciona **Todas las páginas** y el formato de exportación no es PDF, todas las páginas de lienzo se guardan como archivos independientes en una nueva carpeta dentro de la carpeta de destino. Si el formato de exportación es PDF, todas las páginas del lienzo se guardan como un solo archivo de PDF en la carpeta de destino.
+
+4. Haga clic en el icono de carpeta en **Carpeta de destino** para seleccionar una ubicación y guardar los recursos.
 
    ![AEM Guardado de recursos en el](/help/assets/assets/page-selection-and-destination-folder.svg)
 
-6. Opcional: puede añadir metadatos de campaña para la carga mediante la variable **Nombre del proyecto o campaña** field. Puede utilizar un nombre existente o crear uno nuevo. Puede definir varios nombres de proyecto o campaña para la carga. Para registrar el nombre, simplemente escriba el nombre y pulse Intro.
+5. Opcional: puede añadir metadatos de campaña para la carga mediante la variable **Nombre del proyecto o campaña** field. Puede utilizar un nombre existente o crear uno nuevo. Puede definir varios nombres de proyecto o campaña para la carga. Para registrar el nombre, simplemente escriba el nombre y pulse Intro.
 Como práctica recomendada, Adobe recomienda especificar valores en el resto de los campos, así como crear una experiencia de búsqueda mejorada para los recursos cargados.
 
-7. Del mismo modo, defina los valores de **[!UICONTROL Palabras clave]** y **[!UICONTROL Canales]** campos.
+6. Del mismo modo, defina los valores de **[!UICONTROL Palabras clave]** y **[!UICONTROL Canales]** campos.
 
-8. Clic **[!UICONTROL Cargar]** para cargar los recursos en AEM Assets.
+7. Clic **[!UICONTROL Cargar]** para cargar los recursos en AEM Assets.
 
 ## Restricciones {#limitations}
 
