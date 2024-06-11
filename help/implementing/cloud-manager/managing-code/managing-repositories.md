@@ -2,10 +2,10 @@
 title: Administración de repositorios en Cloud Manager
 description: Obtenga información sobre cómo crear, ver y eliminar repositorios de Git en Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: 395179c078d87a393adbc4072a9f4e5b5ca3de51
+source-git-commit: e467c8058531441524fedd37e14b82b7fb255c69
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 30%
+source-wordcount: '624'
+ht-degree: 28%
 
 ---
 
@@ -38,7 +38,7 @@ El **Repositorios** Esta ventana proporciona detalles sobre los repositorios:
 
 * El tipo de repositorio
    * **Adobe** indica repositorios administrados por Adobe
-   * **Privado** indica los repositorios de GitHub que administra
+   * **GitHub** indica los repositorios privados de GitHub que administra
 * Cuando se creó
 * Canalizaciones asociadas al repositorio de
 
@@ -75,7 +75,14 @@ Cuando vea sus repositorios en la **Repositorios** , puede ver los detalles sobr
 
 El **Información del repositorio** se abre con los detalles. Para obtener más información sobre el acceso a la información del repositorio, consulte el documento [Acceder a Información de repositorio.](accessing-repos.md)
 
-## Comprobar ramas {#check-branches}
+## Comprobar ramas/Crear proyecto {#check-branches}
+
+El **Comprobar ramas / Crear proyecto** La acción realiza dos funciones según el estado del repositorio.
+
+* Si el repositorio es de nueva creación, la acción crea un proyecto de ejemplo basado en [AEM el arquetipo del proyecto de la.](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/overview)
+* Si el repositorio ya ha creado el proyecto de muestra, comprueba el estado del repositorio y sus ramas e informa de nuevo si el proyecto de muestra ya existe.
+
+![Acción Comprobar ramas](assets/check-branches.png)
 
 ## Copiar la URL del repositorio {#copy-url}
 
