@@ -4,10 +4,10 @@ description: Aprenda a utilizar entornos de desarrollo rápido para iteraciones 
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1c157af3f7ed4ab3ae4a67d7db200e772cf8b565
 workflow-type: tm+mt
-source-wordcount: '4294'
-ht-degree: 3%
+source-wordcount: '4312'
+ht-degree: 4%
 
 ---
 
@@ -412,11 +412,6 @@ El ejemplo de código anterior ilustra el comportamiento si un paquete no se res
 
 ### Implementación de código front-end basado en temas de sitio y plantillas de sitio {#deploying-themes-to-rde}
 
->[!NOTE]
->
-> Esta función aún no está disponible. Se lanzará en algún momento en junio.
->
-
 Los RDE admiten código front-end basado en [temas del sitio](/help/sites-cloud/administering/site-creation/site-themes.md) y [plantillas del sitio](/help/sites-cloud/administering/site-creation/site-templates.md). Con RDE, esto se hace utilizando una directiva de línea de comandos para implementar paquetes front-end, en lugar de Cloud Manager [Canalización front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) se utiliza para otros tipos de entornos.
 
 Como de costumbre, cree su paquete front-end utilizando npm:
@@ -460,6 +455,10 @@ Logs:
 >El nombre de los archivos del paquete front-end debe cumplir las siguientes convenciones de nomenclatura:
 > * carpeta &quot;dist&quot;, para la carpeta npm build output package
 > * archivo &quot;package.json&quot;, para el paquete de dependencias npm
+
+>[!TIP]
+>
+> Si creó su RDE antes de abril de 2023 y experimentó el error &quot;UNEXPECTED_API_ERROR&quot; al intentar la función de front-end por primera vez, intente eliminar su entorno y crearlo de nuevo.
 
 ### Comprobación del estado de RDE {#checking-rde-status}
 
@@ -533,8 +532,8 @@ Consulte `aio aem:rde:logs --help` para obtener el conjunto completo de opciones
 
 Las funciones incluyen:
 
-* declarar niveles de registro en un nivel de paquete o clase
-* personalización del formato de salida del registro
+* declarar niveles de registro en un nivel por paquete o clase
+* personalizar el formato de salida del registro
 * hasta cuatro configuraciones de registro actuales, cada una en su propio terminal
 * resaltar registros específicos
 
