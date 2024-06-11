@@ -4,10 +4,10 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 8f7c2fc175a542df5725693cfc332802d54e1e88
-workflow-type: ht
-source-wordcount: '400'
-ht-degree: 100%
+source-git-commit: c969b78f5e93e15d1f8f57dd409e58a6275069ce
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 94%
 
 ---
 
@@ -48,7 +48,7 @@ Para obtener más información sobre las funciones nuevas y mejoradas y los prob
 
 ### Problemas conocidos {#known-issues-16544}
 
-Ninguna.
+* GRANITE-52573: Solicitudes que contienen una barra doble `//` se rechazan con el código de estado 400. Este comportamiento se revertirá en una versión de mantenimiento posterior.
 
 ### Aviso de cambio {#change-notice-16544}
 
