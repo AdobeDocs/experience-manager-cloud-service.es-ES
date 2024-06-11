@@ -425,7 +425,7 @@ ht-degree: 99%
       + [Exportación de fragmentos de contenido a Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportación de fragmentos de experiencias a Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integración con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-   + [AEM Monitorización de uso real para el uso as a Cloud Service de la](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
+   + [Monitorización de uso real para AEM as a Cloud Service](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [Información general y novedades](/help/assets/overview.md)
    + [Cambios importantes en [!DNL Assets] como [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
@@ -978,7 +978,7 @@ ht-degree: 99%
          + [Creación de programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [Edición de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [Entornos en hibernación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-         + [Asistencia para Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery-services.md)
+         + [Compatibilidad con Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery-services.md)
       + Creación de un proyecto de aplicación de AEM {#create-application-project}
          + [Asistente para la creación de proyectos](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [Configuración del proyecto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
@@ -1033,7 +1033,7 @@ ht-degree: 99%
          + [Configuración de DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [Comprobación del estado de registro DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [Administración de nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-         + [Certificados validados por dominio (DV)](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)
+         + [Certificados de dominio validado (DV)](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)
       + Listas de permitidos de IP {#ip-allow-lists}
          + [Introducción](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [Adición de una lista de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
@@ -1210,7 +1210,7 @@ ht-degree: 99%
    + [Regiones de publicación adicionales](/help/operations/additional-publish-regions.md)
    + [Monitorización de infraestructura y servicios en AEM as a Cloud Service](/help/operations/monitoring.md)
    + [Tareas de mantenimiento](/help/operations/maintenance.md)
-   + [Restauración de autoservicio](/help/operations/restore.md)
+   + [Restauración del autoservicio](/help/operations/restore.md)
    + [Trabajos asincrónicos](/help/operations/asynchronous-jobs.md)
    + [Eliminación del índice de Lucene genérico](/help/operations/removal-generic-lucene-index.md)
    + [Prácticas recomendadas de consulta e indexación](/help/operations/query-and-indexing-best-practices.md)
