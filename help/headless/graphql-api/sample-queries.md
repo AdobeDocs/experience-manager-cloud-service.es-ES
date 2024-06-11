@@ -3,10 +3,10 @@ title: 'Formación para utilizar GraphQL con AEM: contenido y consultas de muest
 description: Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encabezado explorando contenido y consultas de muestra.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 667cac9153947d1c236ff1117fc7200883416d8d
+source-git-commit: 07670a532294a4ae8afb9636a206d2a8cbdce2b9
 workflow-type: tm+mt
-source-wordcount: '1754'
-ht-degree: 99%
+source-wordcount: '1826'
+ht-degree: 95%
 
 ---
 
@@ -45,7 +45,7 @@ Vea estas consultas de muestra para ver de forma ilustrada la creación de consu
 >
 >Puede acceder al editor de consultas desde:
 >
->* **Herramientas** > **General** > **Editor de consultas de GraphQL**
+>* **Herramientas** > **General** > **Editor de consultas de GraphQL**
 >* directamente; por ejemplo, `http://localhost:4502/aem/graphiql.html`
 
 >[!NOTE]
@@ -1794,6 +1794,20 @@ Esta consulta busca lo siguiente:
   }
 } 
 ```
+
+## Consultas de muestra para el envío de recursos DAM y Dynamic Media {#sample-queries-delivery-DAM-DM}
+
+Para la entrega de imágenes optimizadas para la web (de recursos DAM):
+
+* [Consulta de muestra para entrega de imágenes optimizadas para la web con parámetros completos](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-full-parameters)
+
+* [Consulta de muestra para entrega de imágenes optimizadas para la web con un solo parámetro especificado](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-single-query-variable)
+
+Para la entrega de la URL a un recurso de Dynamic Media
+
+* Consulte [Consulta de muestra para la entrega de recursos de Dynamic Media por dirección URL: referencia de imagen](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+
+* Consulte [Consulta de muestra para la entrega de recursos de Dynamic Media por dirección URL: varias referencias](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
 ## La estructura del fragmento de contenido de muestra (utilizada con GraphQL) {#content-fragment-structure-graphql}
 
