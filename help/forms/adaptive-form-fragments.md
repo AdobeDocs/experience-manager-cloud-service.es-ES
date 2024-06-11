@@ -9,9 +9,9 @@ discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
 source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2150'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 99%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service (componentes base) | Este artículo |
+| AEM as a Cloud Service (componentes de base) | Este artículo |
 | AEM as a Cloud Service (componentes principales) | [Haga clic aquí](/help/forms/adaptive-form-fragments-core-components.md) |
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=es) |
 
@@ -159,7 +159,7 @@ Puede incrustar un fragmento de formulario adaptable en un formulario adaptable 
 >
 >El fragmento incrustado ya no estará vinculado al fragmento independiente. Puede editar los componentes del fragmento incrustado desde el formulario adaptable.
 
-### Usar fragmentos dentro de fragmentos {#using-fragments-within-fragments}
+### Uso de fragmentos dentro de fragmentos {#using-fragments-within-fragments}
 
 Puede crear fragmentos de formulario adaptable anidados, lo que significa que puede arrastrar y soltar un fragmento en otro fragmento y tener una estructura anidada.
 
@@ -167,7 +167,7 @@ Puede crear fragmentos de formulario adaptable anidados, lo que significa que pu
 
 Puede reemplazar o cambiar un fragmento de formulario adaptable por otro fragmento mediante la propiedad **Seleccionar activo de fragmento** en el cuadro de diálogo Editar componente para un panel de fragmento de formulario adaptable.
 
-### Usar un fragmento de formulario varias veces en un formulario adaptable {#using-form-fragment-mutiple-times-in-af}
+### Uso de un fragmento de formulario varias veces en un formulario adaptable {#using-form-fragment-mutiple-times-in-af}
 
 Puede utilizar un fragmento de formulario basado en esquemas varias veces en un formulario adaptable para guardar datos de forma única para cada campo de fragmento de formulario. Por ejemplo, puede utilizar un fragmento de formulario de dirección para recopilar detalles de dirección para direcciones permanentes, de comunicación y actuales en un formulario de solicitud de préstamo.
 

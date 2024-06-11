@@ -6,9 +6,9 @@ keywords: Agregar fragmentos de formulario adaptable, fragmentos de formulario a
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1355'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 87%
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (componentes principales) | Este artículo |
-| AEM as a Cloud Service (componentes base) | [Haga clic aquí](/help/forms/adaptive-form-fragments.md) |
+| AEM as a Cloud Service (componentes de base) | [Haga clic aquí](/help/forms/adaptive-form-fragments.md) |
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=es) |
 
 Aunque cada formulario está diseñado para un propósito específico, hay algunos segmentos comunes en la mayoría de los formularios, como para proporcionar detalles personales como nombre y dirección, detalles familiares, detalles de ingresos, etc. Los desarrolladores de formularios deben crear estos segmentos comunes cada vez que se crea un nuevo formulario.
@@ -31,11 +31,11 @@ Puede agregar un fragmento varias veces a un documento y utilizar las propiedade
 
 >[!NOTE]
 >
-> Puede personalizar fácilmente la experiencia del fragmento para los usuarios con el cuadro de diálogo [Configurar y el cuadro de diálogo Diseño del componente Fragmento de formulario](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
+> Puede personalizar fácilmente la experiencia del fragmento para los usuarios con el cuadro de diálogo [Configurar y el cuadro de diálogo Diseño del componente Fragmento de formulario](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
 
 ## Crear un fragmento de formulario adaptable {#create-a-fragment}
 
-Puede crear un fragmento de formulario adaptable desde cero o guardar un panel en un formulario adaptable existente como fragmento. Para crear un fragmento de formulario, haga lo siguiente:
+Puede crear un fragmento de formulario adaptable desde cero o guardar un panel en un formulario adaptable existente como un fragmento. Para crear un fragmento de formulario:
 
 1. Inicie sesión en una instancia de AEM Forms en https://[*hostname*]:[*port*]/aem/forms.html.
 1. Haga clic en **Crear > fragmento de formulario adaptable**.
@@ -43,7 +43,7 @@ Puede crear un fragmento de formulario adaptable desde cero o guardar un panel e
    ![Crear fragmento de formulario adaptable](/help/forms/assets/adaptive-form-fragment.png)
 
 1. Especifique el título, el nombre, la descripción y las etiquetas del fragmento. Asegúrese de especificar un nombre único para el fragmento. Si ya existe otro fragmento con el mismo nombre, el fragmento no se creará.
-1. Seleccione una plantilla de formulario. Puede crear un fragmento de formulario para componentes principales basados en Forms adaptable o en componentes de base basados en Forms adaptable. Para crear un fragmento de formulario para formularios basados en componentes principales, seleccione una plantilla basada en componentes principales.
+1. Seleccione una plantilla de formulario. Puede crear un fragmento de formulario para formularios adaptables basados en componentes principales o formularios adaptables basados en componentes de base. Para crear un fragmento de formulario para formularios basados en componentes principales, seleccione una plantilla basada en componentes principales.
 
    Cuando cree un fragmento de formulario para formularios basados en componentes principales, utilice la opción Seleccionar tema de formulario para seleccionar un tema basado en componentes principales.
 
@@ -64,7 +64,7 @@ Puede crear un fragmento de formulario adaptable desde cero o guardar un panel e
 
 1. Haga clic en **Crear** y luego haga clic en **Abrir** para abrir el fragmento, con una plantilla predeterminada, en el modo de edición. En el modo de edición, puede agregar cualquier componente del formulario adaptable al fragmento.
 
-<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> Además, si seleccionó un esquema XML como modelo de formulario para el fragmento, aparecerá una nueva pestaña que mostrará la jerarquía del modelo de formulario en el buscador de contenido. Permite arrastrar y soltar elementos del modelo de formulario en el fragmento. <!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
+<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> Además, si ha seleccionado un esquema XML como modelo de formulario para el fragmento, aparecerá una nueva pestaña que mostrará la jerarquía del modelo de formulario en el buscador de contenido. Le permite arrastrar y soltar los elementos del modelo de formulario en el fragmento.<!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
 
 Una vez creado el fragmento de formulario adaptable basado en un esquema o modelo de datos de formulario (FDM), los elementos del modelo de datos de formulario (FDM o del esquema aparecen en la pestaña Fuentes de datos del Explorador de contenido en el Editor de formularios adaptables. Puede arrastrar y soltar elementos del modelo de formulario en el fragmento. Los elementos del modelo de formulario agregados se convierten en componentes de formulario, al tiempo que se conservan las propiedades originales del esquema asociado.
 
@@ -75,10 +75,10 @@ Para agregar un fragmento de formulario adaptable en un formulario adaptable, ha
 
 1. Abra el formulario adaptable en modo de edición.
 1. Añada el componente **Fragmento de formulario adaptable** al formulario.
-1. Abra el cuadro de diálogo Configuración de **Fragmento de formulario adaptable** componente.
-1. Seleccione el **Referencia a fragmento** en el **Básico** pestaña. Aparecerán todos los fragmentos de Formularios adaptables disponibles para el formulario, según el modelo del formulario.
+1. Abra el cuadro de diálogo Configuración del componente **Fragmento de formulario adaptable**.
+1. Seleccione la **Referencia de fragmento** en la pestaña **Básico**. Aparecerán todos los fragmentos de Formularios adaptables disponibles para el formulario, según el modelo del formulario.
 
-1. Seleccione un fragmento de formulario adaptable en la **Fragmento de formulario adaptable** en el formulario adaptable.
+1. Seleccione un fragmento de formulario adaptable en el componente **Fragmento de formulario adaptable** de su formulario adaptable.
 
    ![seleccione la opción Fragmentos de formulario adaptable](/help/forms/assets/adaptive-form-fragment-basic.png)
 
@@ -108,11 +108,11 @@ Perform the following steps to show complete fragments in forms:
 
 -->
 
-### Usar fragmentos dentro de fragmentos {#using-fragments-within-fragments}
+### Uso de fragmentos dentro de fragmentos {#using-fragments-within-fragments}
 
-Puede crear fragmentos de formulario adaptable anidados, lo que significa que puede agregar un fragmento en otro fragmento y tener una estructura anidada.
+Puede crear fragmentos de formulario adaptable anidados, lo que significa que puede arrastrar y soltar un fragmento en otro fragmento y tener una estructura anidada.
 
-### Usar un fragmento de formulario varias veces en un formulario adaptable {#using-form-fragment-mutiple-times-in-af}
+### Uso de un fragmento de formulario varias veces en un formulario adaptable {#using-form-fragment-mutiple-times-in-af}
 
 Puede utilizar un fragmento de formulario basado en esquemas y no basado en esquema varias veces en un formulario adaptable para guardar datos de forma única para cada campo de fragmento de formulario.  Por ejemplo, puede utilizar un fragmento de formulario de dirección para recopilar detalles de dirección para direcciones permanentes, de comunicación y actuales en un formulario de solicitud de préstamo.
 
@@ -134,7 +134,7 @@ Puede realizar varias operaciones en los fragmentos de formularios adaptables me
 
 1. Vaya a `https://[hostname]/aem/forms.html`.
 
-1. Clic **Seleccionar** en la barra de herramientas de la IU de AEM Forms y seleccione un fragmento de formulario adaptable. La barra de herramientas muestra las siguientes operaciones que puede realizar en el fragmento de formulario adaptable seleccionado.
+1. Haga clic en **Seleccionar** en la barra de herramientas de la IU de AEM Forms y seleccione un fragmento de formulario adaptable. La barra de herramientas muestra las siguientes operaciones que puede realizar en el fragmento de formulario adaptable seleccionado.
 
 <table>
  <tbody>

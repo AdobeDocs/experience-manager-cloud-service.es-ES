@@ -1,18 +1,18 @@
 ---
 title: ¿Cómo se pueden crear y utilizar temáticas en los formularios adaptables?
-description: Puede utilizar temáticas para aplicar estilos y proporcionar una identidad visual a un formulario adaptable mediante Componentes principales. Puede compartir una temática en cualquier número de formularios adaptables.
-keywords: componentes principales de estilo de formularios adaptables. usar la temática en los componentes principales, aplicar estilo a los formularios adaptables, personalizar temáticas
+description: Puede utilizar temáticas para aplicar estilo y proporcionar una identidad visual a un formulario adaptable mediante los componentes principales. Puede compartir una temática en cualquier número de formularios adaptables.
+keywords: formularios adaptables que aplican estilo a los componentes principales uso de la temática en los componentes principales, aplicación de estilos a un formulario adaptable, personalización de temáticas
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 source-git-commit: aca3508d85a0382f679a8fa0ca986cfd13ee793b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2879'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 
-# Utilizar temáticas para aplicar estilo a los componentes principales basados en Forms adaptable{#themes-for-af-using-core-components}
+# Utilizar temáticas para aplicar estilo a los formularios adaptables basados en componentes principales{#themes-for-af-using-core-components}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -21,9 +21,9 @@ ht-degree: 79%
 
 Puede crear y aplicar temáticas para diseñar un formulario adaptable. Una temática contiene detalles de estilo para los componentes y paneles. Los estilos incluyen propiedades como colores de fondo, colores de estado, transparencia, alineación y tamaño. Al aplicar una temática, el estilo especificado se refleja en los componentes correspondientes. Una temática se administra de forma independiente sin hacer referencia a un formulario adaptable y se puede reutilizar en varios de estos.
 
-En este artículo, explicamos cómo diseñar miradas personalizadas para Forms adaptable basado en componentes principales mediante temáticas.
+En este artículo, entenderemos cómo diseñar aspectos personalizados para formularios adaptables basados en componentes principales mediante temáticas.
 
-## Temas disponibles para aplicar estilo a los componentes principales
+## Temáticas disponibles para aplicar estilo a los componentes principales
 
 Forms como Cloud Service proporciona los siguientes temas para componentes principales basados en los formularios adaptables:
 
@@ -31,9 +31,9 @@ Forms como Cloud Service proporciona los siguientes temas para componentes princ
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Temática Caballete](https://github.com/adobe/aem-forms-theme-easel)
 
-## Explicación de la estructura de las temáticas
+## Comprender la estructura de las temáticas
 
-Una temática es un paquete que incluye componentes de estilo como un archivo CSS, archivos JavaScript y recursos (como iconos) que definen el estilo de su Forms adaptable. Una temática de formulario adaptable sigue una organización específica, que consta de los siguientes componentes:
+Una temática es un paquete que incluye componentes de estilo como el archivo CSS, los archivos JavaScript y recursos (como iconos) que definen el estilo de los formularios adaptables. Una temática de formulario adaptable sigue una organización específica, que consta de los siguientes componentes:
 
 * `src/theme.scss`: esta carpeta incluye el archivo CSS que tiene un impacto amplio en toda la temática. Sirve como una ubicación centralizada para definir y administrar el estilo y el comportamiento de la temática. Al realizar ediciones en este archivo, puede realizar cambios que se apliquen universalmente en toda la temática, lo que influye en el aspecto y la funcionalidad tanto de las páginas de AEM Sites como de formularios adaptables.
 
@@ -47,7 +47,7 @@ Una temática es un paquete que incluye componentes de estilo como un archivo CS
 
 ## Crear una temática
 
-Forms, como Cloud Service, proporciona las siguientes temáticas de estilo de formulario adaptable para componentes principales basados en Forms adaptables.
+Forms as Cloud Service proporciona las siguientes temáticas de estilos de formularios adaptables para formularios adaptables basados en componentes principales.
 
 * [Temática Lienzo](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
@@ -59,7 +59,7 @@ Puede [personalizar cualquiera de estas temáticas para crear una nueva](#custom
 
 ## Personalizar una temática {#customize-a-theme-core-components}
 
-La personalización de una temática hace referencia al proceso de modificación, aplicación de estilos y personalización del aspecto de una temática. Al personalizar una temática, cambia sus elementos de diseño, diseño, colores, tipografía y, a veces, el código subyacente. Permite crear un aspecto único y personalizado para el sitio web o la aplicación, al tiempo que mantiene la estructura y la funcionalidad básicas proporcionadas por la temática.
+La personalización de una temática hace referencia al proceso de modificación, aplicación de estilo y personalización de la apariencia de una temática. Al personalizar una temática, cambia sus elementos de diseño, diseño, colores, tipografía y, a veces, el código subyacente. Permite crear un aspecto único y personalizado para el sitio web o la aplicación, al tiempo que mantiene la estructura y la funcionalidad básicas proporcionadas por la temática.
 
 ### Requisitos previos {#prerequisites-to-customize}
 
@@ -71,7 +71,7 @@ La personalización de una temática hace referencia al proceso de modificación
 ### Configurar su entorno
 
 * [Habilite los componentes principales de formularios adaptables](/help/forms/enable-adaptive-forms-core-components.md) para su entorno de desarrollo local y de Cloud Service.
-* Configurar un [canalización de implementación front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=es) para su entorno de Cloud Service. Como alternativa, puede configurar la canalización más adelante, lo que le ofrece la flexibilidad de priorizar la prueba y el refinamiento del tema antes de configurar la canalización de implementación.
+* Configure una [canalización de implementación front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=es) para su entorno de Cloud Service. Como alternativa, puede configurar la canalización más adelante, lo que le ofrece la flexibilidad de priorizar la prueba y el refinamiento del tema antes de configurar la canalización de implementación.
 
 <!-- 
 To deploy your themes to a Forms as a Cloud Service environment, first test theme on a local development environment to address any issues. Once the theme is tested, configure the front-end deployment pipeline, which is responsible for deploying the themes.
@@ -80,7 +80,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 -->
 
-Después de conocer los requisitos previos y configurar el entorno de desarrollo, está bien preparado para empezar a personalizar o a aplicar estilo al tema según sus necesidades específicas.
+Después de conocer los requisitos previos y configurar el entorno de desarrollo, estará bien preparado para empezar a personalizar el tema o aplicarle estilo según sus requisitos específicos.
 
 ### Personalizar una temática {#steps-to-customize-a-theme-core-components}
 
@@ -94,7 +94,7 @@ La personalización de una temática es un proceso de varios pasos. Para persona
 
 Los ejemplos proporcionados en el documento se basan en la temática **Lienzo**, pero es importante tener en cuenta que puede clonar cualquier temática y personalizarla con las mismas instrucciones. Estas instrucciones se aplican a cualquier tema, lo que le permite modificarlas según sus necesidades específicas.
 
-Empecemos con un proceso para crear una experiencia de marca para su Forms adaptable basado en componentes principales mediante temáticas.
+Empecemos con un proceso para crear una experiencia de marca para sus formularios adaptables basados en el componente principal mediante temáticas.
 
 #### 1. Clonar una temática {#download-a-theme-core-components}
 
@@ -114,7 +114,7 @@ Para copiar una temática, realice los siguientes pasos:
       git clone [Path of Git Repository of the theme]
    ```
 
-   Reemplace el [Ruta del repositorio Git de la temática] con la URL real del repositorio de Git correspondiente de la temática
+   Reemplace la [Ruta del repositorio Git de la temática] por la URL real del repositorio Git correspondiente de la temática
 
    Por ejemplo, para clonar la temática Lienzo, ejecute el siguiente comando:
 
@@ -122,7 +122,7 @@ Para copiar una temática, realice los siguientes pasos:
       git clone https://github.com/adobe/aem-forms-theme-canvas
    ```
 
-   Después de ejecutar el comando correctamente, tiene una copia local del tema disponible en el equipo en el  `aem-forms-theme-canvas` carpeta.
+   Después de ejecutar el comando correctamente, tendrá una copia local de la temática disponible en la carpeta `aem-forms-theme-canvas` de su equipo. 
 
 
 #### 2. Establecer el nombre de una temática {#set-name-of-theme}
@@ -149,7 +149,7 @@ Para copiar una temática, realice los siguientes pasos:
 
    >[!NOTE]
    >
-   > * El atributo name se utiliza para identificar la temática de forma exclusiva y el nombre especificado se muestra en la variable **Estilo** de la pestaña **Asistente de creación de formularios**.
+   > * El atributo de nombre se utiliza para identificar la temática de forma exclusiva y el nombre se muestra en la pestaña **Estilo** del **Asistente de creación de formularios**.
    > * Tiene la opción de seleccionar un nombre para el tema según su elección, por ejemplo, `mytheme` o `customtheme`. Sin embargo, para este caso, hemos especificado el nombre como `aem-forms-wknd-theme`.
 
 1. Abra el archivo `package-lock.json` para editarlo.
@@ -163,7 +163,7 @@ Para copiar una temática, realice los siguientes pasos:
 
 1. Guarde y cierre los archivos.
 
-**Consideraciones al establecer el nombre de la temática**
+**Consideraciones al establecer el nombre del tema**
 
 * Es obligatorio quitar `@aemforms` del nombre de tema en el archivo `Package.json` y el archivo `Package-lock.json`. En caso de que no pueda quitar `@aemforms` del nombre del tema personalizado, se producirá un error en la canalización de front-end durante la implementación del tema.
 * Se recomienda actualizar el tema `version` en el archivo `Package.json` y el archivo `Package-lock.json` para reflejar con precisión los cambios y mejoras realizados con el tiempo en el tema.
@@ -191,9 +191,9 @@ Del mismo modo, puede utilizar el archivo `variable.scss` para establecer la fam
 
 ##### Definir estilos de nivel de componente {#component-based-customization}
 
-También puede cambiar la fuente, el color, el tamaño y otras propiedades CSS de un componente principal de formulario adaptable específico. Por ejemplo, botón, casilla de verificación, contenedor, pie de página, etc. Puede aplicar estilo a un botón o casilla de verificación editando el archivo CSS del componente específico para alinearlo con el estilo de su organización. Para personalizar el estilo de un componente, haga lo siguiente:
+También puede cambiar la fuente, el color, el tamaño y otras propiedades CSS de un componente principal de un formulario adaptable específico. Por ejemplo, botón, casilla de verificación, contenedor, pie de página, etc. Puede aplicar estilo a un botón o una casilla de verificación editando el archivo CSS del componente específico para alinearlo con el estilo de su organización. Para personalizar el estilo de un componente, haga lo siguiente:
 
-1. Abra el archivo `<your-theme-sources>/src/components/<component>/<component.scss>` para editarlo. Por ejemplo, para cambiar el color de fuente del componente Botón, abra el `<your-theme-sources>/src/components/button/button.scss`, archivo.
+1. Abra el archivo `<your-theme-sources>/src/components/<component>/<component.scss>` para editarlo. Por ejemplo, para cambiar el color de fuente del componente de botón, abra el archivo `<your-theme-sources>/src/components/button/button.scss`.
 1. Cambie el valor de cualquiera según sus necesidades. Por ejemplo, para cambiar el color del componente Botón al pasar el ratón por encima de `green`, cambia el valor de la propiedad `color: $white` en la clase `cmp-adaptiveform-button__widget:hover` a código hexadecimal `#12B453` o cualquier otro tono de `green`. El código final tiene el siguiente aspecto:
 
    ```
@@ -209,14 +209,14 @@ También puede cambiar la fuente, el color, el tamaño y otras propiedades CSS d
 
    >
    >
-   > Cuando se define un estilo tanto en el nivel de tema como de componente, el estilo definido en el nivel de componente tiene prioridad.
+   > Cuando se define un estilo tanto a nivel de temática como de componente, el estilo definido en el nivel de componente tiene prioridad.
 
 #### 4. Probar una temática personalizada {#test-the-theme}
 
 Para obtener una vista previa y probar los cambios en el entorno local y personalizar la temática según los requisitos de diferentes componentes de la AEM, realice los siguientes pasos:
 
-* 4,1 [Configuración de un entorno local para pruebas](#rename-env-file-theme-folder)
-* 4,2 [Probar la temática con el entorno local](#start-a-local-proxy-server)
+* 4.1 [Configurar un entorno local para realizar pruebas](#rename-env-file-theme-folder)
+* 4.2 [Probar la temática mediante el entorno local](#start-a-local-proxy-server)
 
 ##### 4.1. Configurar un entorno local para realizar pruebas {#rename-env-file-theme-folder}
 
@@ -243,7 +243,7 @@ Para obtener una vista previa y probar los cambios en el entorno local y persona
 
    ![Estructura de la temática Lienzo](/help/forms/assets/env-file-canvas-theme.png)
 
-##### 4.2 Probar la temática con un entorno local {#start-a-local-proxy-server}
+##### 4.2 Probar la temática mediante un entorno local {#start-a-local-proxy-server}
 
 1. Vaya hasta la raíz de la carpeta de temáticas. En este caso, el nombre de la carpeta de temáticas es `aem-forms-theme-canvas`.
 1. Abra el símbolo de comando o el terminal.
@@ -261,7 +261,7 @@ Esta es una implementación activa. Por lo tanto, cada vez que realice cambios y
 
 ![Sincronización de exploradores proxy](/help/forms/assets/browser_sync.png)
 
-Después de haber seguido los ejemplos de estilo de un formulario adaptable (componentes principales) tanto en el nivel de tema como en el de componente para las personalizaciones de temas, los mensajes de error de un formulario adaptable se cambian al siguiente `blue` color, mientras que el color de la etiqueta del componente de botón cambia a `green` al pasar el ratón por encima.
+Después de haber seguido los ejemplos de aplicación de estilo a un formulario adaptable (componentes principales) tanto a nivel de temática como de componente para las personalizaciones de temas, los mensajes de error de un formulario adaptable se cambian al color `blue`, mientras que el color de la etiqueta del componente de botón cambia a `green` al pasar el ratón por encima.
 
 **Vista previa del estilo de nivel de tema**
 
@@ -271,7 +271,7 @@ Después de haber seguido los ejemplos de estilo de un formulario adaptable (com
 
 ![Ejemplo: color de desplazamiento establecido en verde](/help/forms/assets/button-customization.png)
 
-La personalización de una temática ayuda a diseñar la apariencia personalizada de un Forms adaptable basado en componentes principales según los requisitos de la organización.
+La personalización de una temática ayuda a diseñar los aspectos personalizados de formularios adaptables basados en el componente principal según los requisitos de la organización.
 
 ###### Probar la temática para formularios alojados en un entorno de Cloud Service
 
@@ -321,9 +321,9 @@ Para implementar la temática en el entorno del Cloud Service mediante la canali
 
 ##### 5.1 Crear un repositorio para la temática{#create-a-new-theme-repo}
 
-Se necesita un repositorio para implementar la temática. Inicie sesión en el [Repositorio de Cloud Manager de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#accessing-git) y agregue un nuevo repositorio para la temática.
+Se necesita un repositorio para implementar la temática. Inicie sesión en el [Repositorio de Cloud Manager de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#accessing-git) y añada un nuevo repositorio para la temática.
 
-1. Cree un nuevo repositorio para una temática haciendo clic en el **[!UICONTROL Repositorios]** > **[!UICONTROL Añadir repositorio]**.
+1. Cree un nuevo repositorio para una temática haciendo clic en **[!UICONTROL Repositorios]** > **[!UICONTROL Añadir repositorio]**.
 
    ![crear nuevo repositorio de temáticas](/help/forms/assets/createrepo_canvastheme.png)
 
@@ -373,12 +373,12 @@ Ahora, inserte los cambios en el repositorio de temáticas de AEM Forms Cloud Se
 
 ##### 5.3. Ejecutar la canalización de front-end {#run-a-frontend-pipeline}
 
-La temática se implementa mediante la canalización front-end [.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=es). Para implementar una temática, realice los siguientes pasos:
+La temática se implementa mediante la canalización front-end [.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=es). Para implementar una temática, siga estos pasos:
 
 1. Inicie sesión en el repositorio de AEM Cloud Manager.
-1. Haga clic en **[!UICONTROL Añadir]** del menú contextual **[!UICONTROL Canalizaciones]** sección.
+1. Haga clic en el botón **[!UICONTROL Añadir]** en la sección **[!UICONTROL Canalizaciones]**.
 1. Seleccione **[!UICONTROL Agregar canalización que no sea de producción]** o **[!UICONTROL Agregar canalización de producción]** en función del entorno Cloud Service. Por ejemplo, aquí la opción **[!UICONTROL Agregar canalización de producción]** está seleccionada.
-1. En el **[!UICONTROL Agregar canalización de producción]** como parte del **[!UICONTROL Configuración]** , especifique el nombre de la canalización. Por ejemplo, el nombre de la canalización es `customcanvastheme`.
+1. En el cuadro de diálogo **[!UICONTROL Añadir canalización de producción]** como parte de los pasos de **[!UICONTROL Configuración]**, indique el nombre de la canalización. Por ejemplo, el nombre de la canalización es `customcanvastheme`.
 1. Haga clic en **[!UICONTROL Continuar]**.
 1. Seleccione **[!UICONTROL Implementación objetivo]** > las opciones **[!UICONTROL Código front-end]**, 
 en los pasos **[!UICONTROL Código fuente]**.
@@ -398,7 +398,7 @@ Una vez finalizada la compilación, la temática está disponible en la instanci
 
 ![temática personalizada disponible en la pestaña estilo](/help/forms/assets/custom-theme-style-tab.png)
 
-El tema personalizado ayuda a crear una experiencia de marca para el componente principal basado en el Forms adaptable.
+La temática personalizada ayuda a crear una experiencia de marca para los formularios adaptables basados en el componente principal
 
 ## Aplicar una temática a un formulario adaptable {#using-theme-in-adaptive-form}
 
@@ -428,10 +428,10 @@ Las temáticas se utilizan como parte de una plantilla de formulario adaptable p
 
   No se recomienda cambiar la anchura del diseño del panel contenedor. Cuando se especifica la anchura de un panel contenedor, este se vuelve estático y no se adapta a distintas pantallas.
 
-* **Usar un editor de formularios o un editor de temáticas para trabajar con encabezado y pie de página**
+* **Uso del editor de formularios o de temáticas para trabajar con el encabezado y el pie de página**
 
-  Utilice un editor de temáticas si desea aplicar estilo al encabezado y al pie de página mediante opciones de estilo como estilo de fuente, fondo y transparencia.
-Si desea proporcionar información como un logotipo, el nombre de la empresa en el encabezado e información de copyright en el pie de página, utilice las opciones del editor de formularios.
+  Utilice el editor de temáticas si desea aplicar estilo al encabezado y al pie de página mediante opciones de estilo como estilo de fuente, fondo y transparencia. 
+Si desea proporcionar información como una imagen de logotipo, el nombre de la compañía en el encabezado e información de copyright en el pie de página, utilice las opciones del editor de formularios.
 
 ## Preguntas frecuentes {#faq}
 

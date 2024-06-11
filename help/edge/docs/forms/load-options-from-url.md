@@ -1,17 +1,17 @@
 ---
-title: Cargar opciones de lista desplegable desde una dirección URL u otra hoja para Edge Delivery Services de AEM Forms as a Cloud Service
+title: Cargar opciones de lista desplegable desde una dirección URL u otra hoja para Edge Delivery Services para AEM Forms as a Cloud Service
 description: Las opciones de la lista desplegable se incluyen en una hoja de cálculo distinta y luego se importan a la hoja de cálculo principal a través de la dirección URL proporcionada.
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '469'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
-# Opciones de una dirección URL u otra hoja para Edge Delivery Services de AEM Forms as a Cloud Service
+# Opciones de una dirección URL u otra hoja para Edge Delivery Services para AEM Forms as a Cloud Service
 
 Los formularios suelen incluir menús desplegables para que los usuarios seleccionen entre las opciones predefinidas. Estas opciones suelen definirse dentro del propio formulario, pero la administración de listas largas puede resultar engorrosa. En esta se guía se describe cómo mejorar la creación de formularios cargando opciones desplegables de una hoja de cálculo independiente a través de una dirección URL.
 
