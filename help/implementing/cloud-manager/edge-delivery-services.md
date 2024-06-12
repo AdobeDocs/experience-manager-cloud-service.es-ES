@@ -1,10 +1,10 @@
 ---
 title: Compatibilidad con Edge Delivery Services en Cloud Manager
 description: Obtenga información sobre cómo entregar sus proyectos de Cloud Manager con Edge Delivery Services.
-source-git-commit: 73bd693d47f37b453209208816dfed15d65e9e09
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
 workflow-type: tm+mt
 source-wordcount: '283'
-ht-degree: 14%
+ht-degree: 28%
 
 ---
 
@@ -21,7 +21,7 @@ Obtenga información sobre cómo entregar sus proyectos de Cloud Manager con Edg
 
 Edge Delivery Services es un conjunto de servicios componibles que permite un alto grado de flexibilidad en la forma en que se crea contenido en su sitio web. Esto le permite:
 
-* Cree sitios rápidos con una puntuación de Lighthouse perfecta y supervise continuamente el rendimiento a través de la monitorización del usuario real (RUM).
+* Cree sitios rápidos con una puntuación de Lighthouse perfecta y monitorice continuamente el rendimiento a través de la monitorización de uso real (RUM).
 * Aumente la eficacia de la creación desacoplando las fuentes de contenido.
 
 AEM AEM Puede utilizar tanto la administración de contenido de la como la creación basada en la documentación mediante el Editor universal, así como la creación basada en documentos.
@@ -36,7 +36,7 @@ AEM Cloud Manager en el as a Cloud Service de la le permite habilitar el servici
 
 Si tiene Edge Delivery Services con licencia como parte de Adobe Experience Manager Sites, puede incorporar el sitio con Edge Delivery Services directamente en Cloud Manager y activarlo [uso de una experiencia de autoservicio guiada.](/help/implementing/cloud-manager/managing-code/private-repositories.md)
 
-AEM Esto permite una experiencia unificada para todas las propiedades de la, lo que garantiza la coherencia con todos los flujos de trabajo críticos, incluida la administración de nombres de dominio, la administración de certificados SSL y las asignaciones de CDN.
+Esto permite tener una experiencia unificada para todas las propiedades de AEM, lo que garantiza la coherencia con todos los flujos de trabajo críticos, incluida la administración de nombres de dominio, la administración de certificados SSL y las asignaciones de CDN.
 
 Edge Delivery Services está disponible para ambos [programas de producción y de zonas protegidas.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
