@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: e2d9823575f75e4cd38a61a35569cbbe14b30fc6
+source-git-commit: c24b017e60363b3b6d79105122bdbaab138c701d
 workflow-type: tm+mt
 source-wordcount: '3574'
 ht-degree: 0%
@@ -91,6 +91,8 @@ Dynamic Media junto con Experience Manager Assets permite crear, editar y compar
 * **Organizar recursos mediante perfiles:**
 Un perfil de procesamiento automatiza la administración de recursos en carpetas designadas, lo que optimiza la organización. La estandarización de los metadatos, los nombres de archivo y las estructuras de carpetas permite la aplicación coherente y precisa de estos perfiles a medida que se amplía la colección de recursos digitales.
 ¿Desea obtener más información? Ir a [Organización de recursos mediante perfiles](/help/assets/organize-assets.md#organize-to-use-profiles).
+
+
 
 ### Optimización de la calidad de las imágenes
 
