@@ -2,10 +2,11 @@
 title: Configuración de las credenciales y la autenticación de CDN
 description: Obtenga información sobre cómo configurar las credenciales y la autenticación de CDN declarando reglas en un archivo de configuración que luego se implementa mediante la canalización de configuración de Cloud Manager.
 feature: Dispatcher
-source-git-commit: ee993798739232da794dbf7ff0a643ca93effa7d
+exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
+source-git-commit: 7a53f936aacfb3e5aa431f26e5346c1809f9c76f
 workflow-type: tm+mt
 source-wordcount: '1143'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -71,7 +72,7 @@ La sintaxis de la variable `X-AEM-Edge-Key` el valor incluye:
 
 ## Purgar token de API {#purge-API-token}
 
-Los clientes pueden purgar la caché de la CDN utilizando un token de API de purga declarado. El token se declara con la sintaxis siguiente.  Consulte la [Configuración común](#common-setup) para obtener información sobre cómo implementarla.
+Los clientes pueden [depurar la caché de CDN](/help/implementing/dispatcher/cdn-cache-purge.md) mediante un token de API de purga declarado. El token se declara con la sintaxis siguiente.  Consulte la [Configuración común](#common-setup) para obtener información sobre cómo implementarla.
 
 ```
 kind: "CDN"
