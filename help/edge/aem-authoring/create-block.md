@@ -4,10 +4,10 @@ description: Aprenda a crear bloques instrumentados para utilizarlos con el edit
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
-source-wordcount: '1297'
-ht-degree: 100%
+source-git-commit: 72949b36e7e7f8689365e7cb76a8c491edf23825
+workflow-type: tm+mt
+source-wordcount: '1375'
+ht-degree: 94%
 
 ---
 
@@ -53,75 +53,99 @@ El siguiente ejemplo de bloque de comillas sigue este enfoque.
 
 1. Edite el archivo `component-definition.json` en la raíz del proyecto, agregue la siguiente definición para el nuevo bloque de comillas y guarde el archivo.
 
-   ```json
-   {
-     "title": "Quote",
-     "id": "quote",
-     "plugins": {
-       "xwalk": {
-         "page": {
-           "resourceType": "core/franklin/components/block/v1/block",
-           "template": {
-             "name": "Quote",
-             "model": "quote",
-             "quote": "<p>Think, McFly! Think!</p>",
-             "author": "Biff Tannen"
-           }
-         }
-       }
-     }
-   }
-   ```
+>[!BEGINTABS]
 
-   ![Edición del archivo component-definitions.json para definir el bloque de comillas](assets/create-block/component-definitions.png)
+>[!TAB Ejemplo de JSON]
+
+```json
+{
+  "title": "Quote",
+  "id": "quote",
+  "plugins": {
+    "xwalk": {
+      "page": {
+        "resourceType": "core/franklin/components/block/v1/block",
+        "template": {
+          "name": "Quote",
+          "model": "quote",
+          "quote": "<p>Think, McFly! Think!</p>",
+          "author": "Biff Tannen"
+        }
+      }
+    }
+  }
+}
+```
+
+>[!TAB Captura de pantalla]
+
+![Edición del archivo component-definitions.json para definir el bloque de comillas](assets/create-block/component-definitions.png)
+
+>[!ENDTABS]
 
 1. Edite el archivo `component-models.json` en la raíz del proyecto y añada la siguiente [definición de modelo](/help/implementing/universal-editor/field-types.md#model-structure) para el nuevo bloque de presupuesto; guarde el archivo.
 
    * Consulte el documento [Modelado de contenido para la creación de proyectos con Edge Delivery Services de AEM](/help/edge/aem-authoring/content-modeling.md) para obtener más información acerca de lo que es importante tener en cuenta al crear modelos de contenido.
 
-   ```json
-   {
-     "id": "quote",
-     "fields": [
-        {
-          "component": "text-area",
-          "name": "quote",
-          "value": "",
-          "label": "Quote",
-          "valueType": "string"
-        },
-        {
-          "component": "text-input",
-          "valueType": "string",
-          "name": "author",
-          "label": "Author",
-          "value": ""
-        }
-      ]
-   }
-   ```
+>[!BEGINTABS]
 
-   ![Edición del archivo component-models.json para definir el modelo del bloque de comillas](assets/create-block/component-models.png)
+>[!TAB Ejemplo de JSON]
+
+```json
+{
+  "id": "quote",
+  "fields": [
+     {
+       "component": "text-area",
+       "name": "quote",
+       "value": "",
+       "label": "Quote",
+       "valueType": "string"
+     },
+     {
+       "component": "text-input",
+       "valueType": "string",
+       "name": "author",
+       "label": "Author",
+       "value": ""
+     }
+   ]
+}
+```
+
+>[!TAB Captura de pantalla]
+
+![Edición del archivo component-models.json para definir el modelo del bloque de comillas](assets/create-block/component-models.png)
+
+>[!ENDTABS]
 
 1. Edite el archivo `component-filters.json` en la raíz del proyecto y añada el bloque de comillas a la [definición de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) para permitir que el bloque se añada a cualquier sección y guardar el archivo.
 
-   ```json
-   {
-     "id": "section",
-     "components": [
-       "text",
-       "image",
-       "button",
-       "title",
-       "hero",
-       "cards",
-       "columns",
-       "quote"
-      ]
-   }
-   ```
+>[!BEGINTABS]
 
-   ![Edición del archivo component-filters.json para definir los filtros del bloque de comillas](assets/create-block/component-filters.png)
+>[!TAB Ejemplo de JSON]
+
+```json
+{
+  "id": "section",
+  "components": [
+    "text",
+    "image",
+    "button",
+    "title",
+    "hero",
+    "cards",
+    "columns",
+    "quote"
+   ]
+}
+```
+
+>[!TAB Captura de pantalla]
+
+![Edición del archivo component-filters.json para definir los filtros del bloque de comillas](assets/create-block/component-filters.png)
+
+>[!ENDTABS]
 
 1. Con git, confirme estos cambios en su rama `main`.
 
@@ -174,55 +198,70 @@ Ahora que tiene un bloque de cita de trabajo, puede aplicarle estilo.
 
 1. En la nueva carpeta `quote`, añada un archivo `quote.js` para implementar la decoración de bloques añadiendo el siguiente JavaScript y guarde el archivo.
 
-   ```javascript
-   export default function decorate(block) {
-     const [quoteWrapper] = block.children;
-   
-     const blockquote = document.createElement('blockquote');
-     blockquote.textContent = quoteWrapper.textContent.trim();
-     quoteWrapper.replaceChildren(blockquote);
-   }
-   ```
+>[!BEGINTABS]
 
-   ![Añadir JavaScript para decorar el bloque](assets/create-block/quote-js.png)
+>[!TAB Ejemplo de JavaScript]
 
+```javascript
+export default function decorate(block) {
+  const [quoteWrapper] = block.children;
+
+  const blockquote = document.createElement('blockquote');
+  blockquote.textContent = quoteWrapper.textContent.trim();
+  quoteWrapper.replaceChildren(blockquote);
+}
+```
+
+>[!TAB Captura de pantalla]
+
+![Añadir JavaScript para decorar el bloque](assets/create-block/quote-js.png)
+
+>[!ENDTABS]
 
 1. En la carpeta `quote`, añada un archivo `quote.css` para definir el estilo del bloque añadiendo el siguiente código CSS y guarde el archivo.
 
-   ```css
-   .block.quote {
-       background-color: #ccc;
-       padding: 0 0 24px;
-       display: flex;
-       flex-direction: column;
-       margin: 1rem 0;
-   }
-   
-   .block.quote blockquote {
-       margin: 16px;
-       text-indent: 0;
-   }
-   
-   .block.quote > div:last-child > div {
-       margin: 0 16px;
-       font-size: small;
-       font-style: italic;
-       position: relative;
-   }
-   
-   .block.quote > div:last-child > div::after {
-       content: "";
-       display: block;
-       position: absolute;
-       left: 0;
-       bottom: -8px;
-       height: 5px;
-       width: 30px;
-       background-color: darkgray;
-   }
-   ```
+>[!BEGINTABS]
 
-   ![Añadir CSS para definir el estilo del bloque](assets/create-block/quote-css.png)
+>[!TAB Ejemplo de CSS]
+
+```css
+.block.quote {
+    background-color: #ccc;
+    padding: 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.block.quote blockquote {
+    margin: 16px;
+    text-indent: 0;
+}
+
+.block.quote > div:last-child > div {
+    margin: 0 16px;
+    font-size: small;
+    font-style: italic;
+    position: relative;
+}
+
+.block.quote > div:last-child > div::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    height: 5px;
+    width: 30px;
+    background-color: darkgray;
+}
+```
+
+>[!TAB Captura de pantalla]
+
+![Añadir CSS para definir el estilo del bloque](assets/create-block/quote-css.png)
+
+>[!ENDTABS]
 
 1. Con Git, confirme estos cambios en su rama `main`.
 
@@ -239,6 +278,50 @@ Ahora que tiene un bloque de cita de trabajo, puede aplicarle estilo.
    ![El bloque de cita publicado y con estilo](assets/create-block/quote-styled-published.png)
 
 Enhorabuena. Ahora tiene un bloque de cita completamente funcional y con estilo. Puede utilizar este ejemplo como base para diseñar sus propios bloques específicos de proyectos.
+
+### Opciones de bloque {#block-options}
+
+Si necesita que un bloque tenga un aspecto o un comportamiento ligeramente diferente en función de determinadas circunstancias, pero no lo suficientemente diferente como para convertirse en un nuevo bloque en sí mismo, puede permitir que los autores elijan entre [opciones de bloque.](content-modeling.md#type-inference)
+
+Añadiendo un `classes` propiedad al bloque, la propiedad se representa en el encabezado de tabla para bloques simples o como lista de valores para elementos en un bloque contenedor.
+
+```json
+{
+  "id": "simpleMarquee",
+  "fields": [
+    {
+      "component": "text",
+      "valueType": "string",
+      "name": "marqueeText",
+      "value": "",
+      "label": "Marquee text",
+      "description": "The text you want shown in your marquee"
+    },
+    {
+      "component": "select",
+      "name": "classes",
+      "value": "",
+      "label": "Background Color",
+      "description": "The marquee background color",
+      "valueType": "string",
+      "options": [
+        {
+          "name": "Red",
+          "value": "bg-red"
+        },
+        {
+          "name": "Green",
+          "value": "bg-green"
+        },
+        {
+          "name": "Blue",
+          "value": "bg-blue"
+        }
+      ]
+    }
+  ]
+}
+```
 
 ## Uso de otras ramas de trabajo {#other-branches}
 

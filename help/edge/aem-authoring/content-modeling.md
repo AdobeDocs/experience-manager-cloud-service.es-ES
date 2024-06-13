@@ -4,10 +4,10 @@ description: Aprenda cómo funciona el modelado de contenido para la creación d
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: ff4a8caf1f4d32bae4e8c776bfcad21a665936d4
+workflow-type: tm+mt
 source-wordcount: '2233'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -345,7 +345,7 @@ Para algunos valores podemos inferir el significado semántico a partir de los v
 * **Imágenes**: si una referencia a un recurso en AEM es un recurso con un tipo MIME que comience por `image/`, la referencia se representa como `<picture><img src="${reference}"></picture>`.
 * **Vínculos**: si una referencia existe en AEM y no es una imagen, o si el valor empieza por `https?://`  o `#`, la referencia se representa como `<a href="${reference}">${reference}</a>` .
 * **Texto enriquecido**: si un valor recortado comienza con un párrafo (`p`, `ul`, `ol`, `h1`-`h6`, etc.), el valor se representa como texto enriquecido.
-* **Nombres de clase**: la propiedad `classes` se trata como opciones de bloque y se representa en el encabezado de tabla de [bloques simples,](#simple) o como lista de valores para elementos en un [bloque de contenedor.](#container)
+* **Nombres de clase** - El `classes` La propiedad se trata como [bloquear opciones](/help/edge/developer/markup-sections-blocks.md#block-options) y se representan en el encabezado de tabla para [bloques simples,](#simple) o como lista de valores para elementos en una [bloque de contenedor.](#container)
 * **Listas de valores**: si un valor es una propiedad de varios valores y el primer valor no es ninguno de los anteriores, todos los valores se concatenan como una lista separada por comas.
 
 Todo lo demás se procesará como texto sin formato.
