@@ -4,9 +4,9 @@ description: Aprenda a utilizar entornos de desarrollo rápido para iteraciones 
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c3d16e82702efd73accd1fffdfc4957ceb4509ec
+source-git-commit: 3577db15a276bed253c8fa51cbd100e90ec5ef45
 workflow-type: tm+mt
-source-wordcount: '4220'
+source-wordcount: '4244'
 ht-degree: 4%
 
 ---
@@ -472,11 +472,6 @@ Para obtener más información y demostración, consulte el tutorial en vídeo [
 
 ## Registros {#rde-logging}
 
->[!NOTE]
->
-> Esta función aún no está disponible. Se lanzará en algún momento en junio.
-> 
-
 Al igual que otros tipos de entornos, los niveles de registro se pueden establecer modificando las configuraciones de OSGi, aunque, como se ha descrito anteriormente, el modelo de implementación para RDE implica una línea de comandos en lugar de una implementación de Cloud Manager. Compruebe la [documentación de registro](/help/implementing/developing/introduction/logging.md) para obtener más información sobre cómo ver, descargar e interpretar los registros.
 
 La CLI de RDE también tiene su propio comando de registro que se puede utilizar para configurar rápidamente qué clases y paquetes deben registrarse y en qué nivel de registro. Estas configuraciones pueden verse como efímeras, ya que no modifican las propiedades OSGI en el control de versiones. Esta función se centra en rastrear registros en tiempo real, en lugar de buscar registros del pasado distante.
@@ -484,6 +479,14 @@ La CLI de RDE también tiene su propio comando de registro que se puede utilizar
 El siguiente ejemplo ilustra cómo rastrear el nivel de creación, con un paquete establecido en un nivel de registro de depuración y dos paquetes (separados por espacios) establecidos en un nivel de depuración de información. Salida que incluye un **autorización** El paquete está resaltado.
 
 `aio aem:rde:logs --target=author --debug=org.apache.sling --info=org.apache.sling.commons.threads.impl org.apache.sling.jcr.resource.internal.helper.jcr -H .auth.`
+
+>[!TIP]
+>
+>Si ve el error `RDECLI:UNEXPECTED_API_ERROR` al jugar con los comandos de registros para el servicio de creación, restablezca el entorno e inténtelo de nuevo. Este error se producirá si la operación de restablecimiento más reciente se realizó antes de finales de mayo de 2024.
+>
+```
+>aio aem:rde:reset
+>```
 
 Consulte `aio aem:rde:logs --help` para obtener el conjunto completo de opciones de línea de comandos.
 
