@@ -4,10 +4,10 @@ description: Aprenda cómo funciona el modelado de contenido para la creación d
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: ff4a8caf1f4d32bae4e8c776bfcad21a665936d4
+source-git-commit: 39ac520de1d9e93b0025315005219352d4e87575
 workflow-type: tm+mt
-source-wordcount: '2233'
-ht-degree: 98%
+source-wordcount: '2253'
+ht-degree: 97%
 
 ---
 
@@ -345,7 +345,7 @@ Para algunos valores podemos inferir el significado semántico a partir de los v
 * **Imágenes**: si una referencia a un recurso en AEM es un recurso con un tipo MIME que comience por `image/`, la referencia se representa como `<picture><img src="${reference}"></picture>`.
 * **Vínculos**: si una referencia existe en AEM y no es una imagen, o si el valor empieza por `https?://`  o `#`, la referencia se representa como `<a href="${reference}">${reference}</a>` .
 * **Texto enriquecido**: si un valor recortado comienza con un párrafo (`p`, `ul`, `ol`, `h1`-`h6`, etc.), el valor se representa como texto enriquecido.
-* **Nombres de clase** - El `classes` La propiedad se trata como [bloquear opciones](/help/edge/developer/markup-sections-blocks.md#block-options) y se representan en el encabezado de tabla para [bloques simples,](#simple) o como lista de valores para elementos en una [bloque de contenedor.](#container)
+* **Nombres de clase** - El `classes` La propiedad se trata como [bloquear opciones](/help/edge/developer/markup-sections-blocks.md#block-options) y se representan en el encabezado de tabla para [bloques simples,](#simple) o como lista de valores para elementos en una [bloque de contenedor.](#container) Es útil si desea lo siguiente [aplicar un estilo diferente a un bloque,](/help/edge/aem-authoring/create-block.md#block-options) pero no es necesario crear un bloque completamente nuevo.
 * **Listas de valores**: si un valor es una propiedad de varios valores y el primer valor no es ninguno de los anteriores, todos los valores se concatenan como una lista separada por comas.
 
 Todo lo demás se procesará como texto sin formato.

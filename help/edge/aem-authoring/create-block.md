@@ -4,7 +4,7 @@ description: Aprenda a crear bloques instrumentados para utilizarlos con el edit
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 72949b36e7e7f8689365e7cb76a8c491edf23825
+source-git-commit: e0b4eafaa9fdc496362f90e6da14b4b198b4ea3e
 workflow-type: tm+mt
 source-wordcount: '1375'
 ht-degree: 94%
@@ -22,7 +22,7 @@ Esta guía proporciona instrucciones paso a paso para crear bloques instrumentad
 
 Esta guía requiere necesariamente conocimientos existentes sobre la creación de AEM con proyectos de Edge Delivery Services, así como con el editor universal. Antes de comenzar esta guía, ya debería tener acceso a Edge Delivery Services y estar familiarizado con sus conceptos básicos, incluidos los siguientes:
 
-Ha completado el [Tutorial del servicio de envío de Edge.](/help/edge/developer/tutorial.md)
+* Ha completado el [Tutorial del servicio de envío de Edge.](/help/edge/developer/tutorial.md)
 * Tiene acceso a una [Zona protegida de AEM Cloud Service.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * Ha [habilitado el Editor universal en el mismo entorno de zona protegida.](/help/implementing/universal-editor/getting-started.md)
 * Ha completado la [Guía de introducción para desarrolladores para la creación de contenido con Edge Delivery Services de AEM](/help/edge/aem-authoring/edge-dev-getting-started.md).
@@ -205,7 +205,7 @@ Ahora que tiene un bloque de cita de trabajo, puede aplicarle estilo.
 ```javascript
 export default function decorate(block) {
   const [quoteWrapper] = block.children;
-
+ 
   const blockquote = document.createElement('blockquote');
   blockquote.textContent = quoteWrapper.textContent.trim();
   quoteWrapper.replaceChildren(blockquote);
@@ -232,19 +232,19 @@ export default function decorate(block) {
     flex-direction: column;
     margin: 1rem 0;
 }
-
+ 
 .block.quote blockquote {
     margin: 16px;
     text-indent: 0;
 }
-
+ 
 .block.quote > div:last-child > div {
     margin: 0 16px;
     font-size: small;
     font-style: italic;
     position: relative;
 }
-
+ 
 .block.quote > div:last-child > div::after {
     content: "";
     display: block;
@@ -340,4 +340,3 @@ Consulte el documento [Modelado de contenido para la creación de AEM con proyec
 >[!TIP]
 >
 >Para obtener una guía completa sobre la creación de un nuevo proyecto de Edge Delivery Services que está habilitado para la creación de contenido de AEM con AEM as a Cloud Service como un origen de contenido, consulte [este seminario web de GEM de AEM.](https://experienceleague.adobe.com/es/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
-
