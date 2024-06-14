@@ -3,10 +3,10 @@ title: Edición de vídeos
 description: Editar vídeos con [!DNL Adobe Express] opciones de y guardar vídeos actualizados como versiones de.
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
-source-git-commit: ff201051a70862e7597cf36f70a0e7225178f1fa
+source-git-commit: afdab9a7b449673ecf15bc9ab31307388da7b64e
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 18%
+ht-degree: 17%
 
 ---
 
@@ -83,7 +83,7 @@ El vídeo está disponible en formato GIF para su descarga. Puede guardar el rec
 
 * Solo se admiten vídeos en formato MP4 para su edición.
 
-* El tamaño máximo de archivo de origen admitido es de 200 MB.
+* El tamaño máximo de archivo de origen admitido es de 1 GB.
 
 * Los vídeos compatibles tienen más de 46 píxeles y menos de 3840 píxeles en cualquier lado.
 
@@ -93,11 +93,11 @@ El vídeo está disponible en formato GIF para su descarga. Puede guardar el rec
 
 ### Siguientes pasos {#next-steps}
 
-* Realice comentarios del producto mediante la opción [!UICONTROL Comentarios] disponible en la interfaz de usuario de la vista Recursos
+* Proporcione comentarios sobre productos usando [!UICONTROL Comentarios] opción disponible en la interfaz de usuario de la vista Recursos.
 
-* Proporcione comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar una incidencia] ![crear una incidencia de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha
+* Facilite comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar un problema] ![crear un problema de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha.
 
-* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General#support)
+* Contacte con el [Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General#support).
 
 >[!MORELIKETHIS]
 >
