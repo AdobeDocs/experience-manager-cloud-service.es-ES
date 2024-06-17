@@ -4,10 +4,10 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c969b78f5e93e15d1f8f57dd409e58a6275069ce
-workflow-type: ht
-source-wordcount: '422'
-ht-degree: 100%
+source-git-commit: 339dd64c602b2eed163f36f70089a50dd0d4a11c
+workflow-type: tm+mt
+source-wordcount: '521'
+ht-degree: 80%
 
 ---
 
@@ -49,6 +49,11 @@ Para obtener más información sobre las funciones nuevas y mejoradas y los prob
 ### Problemas conocidos {#known-issues-16544}
 
 * GRANITE-52573: las solicitudes que contienen una barra doble `//` se rechazan con el código de estado 400. Este comportamiento se revertirá en una versión de mantenimiento posterior.
+
+>[!NOTE]
+> AEM AEM El departamento de ingeniería ha identificado una regresión para la funcionalidad de los lanzamientos que afecta a las versiones actuales de los lanzamientos de la, empezando por 16461. Debido a esta regresión, los nuevos lanzamientos (creados después de aplicar nuevas versiones) que incluyen páginas no profundas no se promocionarán correctamente debido a la falta de configuraciones.
+> En caso de que sus entornos se vean afectados, encontrará un script shell disponible para identificar y actualizar las configuraciones que faltan a través de la asistencia al cliente (referencia interna SITES-22457).
+> Se pondrá a disposición una corrección a más largo plazo que garantizará que se creen nuevos lanzamientos con todas las configuraciones correctas. Hasta entonces, también está disponible una versión de parche interna bajo demanda.
 
 ### Aviso de cambio {#change-notice-16544}
 
