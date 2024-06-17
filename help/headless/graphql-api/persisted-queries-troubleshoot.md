@@ -3,7 +3,7 @@ title: Solución de problemas de consultas persistentes de GraphQL
 description: Obtenga información sobre cómo solucionar problemas con consultas de GraphQL persistentes en Adobe Experience Manager as a Cloud Service.
 feature: Content Fragments,GraphQL API
 exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
-source-git-commit: 09ef5fb49ba638f888c9c101760ffa3c7d258fda
+source-git-commit: 736fbc28c800c1c181721df7e0d7feed143642d9
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Para ayudarle a solucionar y resolver estos problemas, esta página cubre lo sig
 
 Una consulta persistente de GraphQL puede fallar cuando se basa en tipos de GraphQL obsoletos, a menudo debido a un cambio en los modelos de fragmento de contenido subyacentes.
 
-Estos errores pueden ocurrir por diversas razones. Por ejemplo, cuando el autor de un modelo de fragmento de contenido (la lista no es exhaustiva):
+Estos errores pueden ocurrir por diversas razones. Algunos ejemplos son (la lista no es exhaustiva), cuando el autor de un modelo de fragmento de contenido:
 
 * quita un campo o cambia su nombre
 * actualiza el **Tipo de modelo** que define los modelos permitidos para la referencia de fragmento
