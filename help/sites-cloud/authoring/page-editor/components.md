@@ -5,10 +5,10 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '335'
-ht-degree: 84%
+ht-degree: 79%
 
 ---
 
@@ -44,7 +44,7 @@ La [consola Componentes](/help/sites-cloud/authoring/components-console.md) le p
 
 Los [componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) ofrecen funciones flexibles y personalizables de creación de contenido, que proporcionan tipos de contenido esenciales para crear páginas.
 
-Se crean utilizando las prácticas recomendadas de AEM y constituyen la base de la experiencia de creación de AEM. Los desarrolladores pueden ampliar fácilmente los componentes principales para satisfacer necesidades específicas del proyecto.
+AEM AEM Se crean utilizando las prácticas recomendadas de la y constituyen la base de la experiencia de creación de contenido. Los desarrolladores pueden ampliar fácilmente los componentes principales para satisfacer necesidades específicas del proyecto.
 
 Junto con los componentes principales de WCM, también puede utilizar [Componentes principales de formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es#features). Estos componentes principales proporcionan métodos estándar y más sencillos para [crear o añadir formularios a una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
 

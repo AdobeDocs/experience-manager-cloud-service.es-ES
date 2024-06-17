@@ -1,7 +1,7 @@
 ---
 title: Compatibilidad con Edge Delivery Services en Cloud Manager
 description: Obtenga información sobre cómo entregar sus proyectos de Cloud Manager con Edge Delivery Services.
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 28%
@@ -24,7 +24,7 @@ Edge Delivery Services es un conjunto de servicios componibles que permite un al
 * Cree sitios rápidos con una puntuación de Lighthouse perfecta y monitorice continuamente el rendimiento a través de la monitorización de uso real (RUM).
 * Aumente la eficacia de la creación desacoplando las fuentes de contenido.
 
-AEM AEM Puede utilizar tanto la administración de contenido de la como la creación basada en la documentación mediante el Editor universal, así como la creación basada en documentos.
+AEM Puede utilizar tanto la administración de contenido de como la creación WYSIWYG mediante el Editor universal, así como la creación basada en documentos.
 
 AEM Cloud Manager en el as a Cloud Service de la le permite habilitar el servicio de envío de Edge para su proyecto.
 

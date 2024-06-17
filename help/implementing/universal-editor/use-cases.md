@@ -4,7 +4,7 @@ description: Conozca los principales casos de uso del editor universal y cómo o
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 0%
@@ -29,10 +29,10 @@ Este documento explica en detalle estos dos casos de uso y le muestra cómo pued
 
 El editor universal presenta un editor visual cómodo e intuitivo a los autores de contenido, independientemente del tipo de contenido que creen. Los dos casos de uso principales son:
 
-* [AEM Creación basada en la](#aem-authoring) : utilice la consola de AEM Sites AEM para administrar el contenido y las páginas de autor dentro de las páginas de creación mediante el uso del Editor universal (Universal Editor).
+* [Creación WYSIWYG](#wysiwyg-authoring) : utilice la consola de AEM Sites AEM para administrar el contenido y las páginas de autor dentro de las páginas de creación mediante el uso del Editor universal (Universal Editor).
 * [Creación sin encabezado](#headless-authoring) : Cree contenido en su propia aplicación sin encabezado personalizada mediante el editor universal.
 
-### AEM Creación basada en la {#aem-authoring}
+### Creación WYSIWYG {#wysiwyg-authoring}
 
 AEM Si ya está familiarizado con la administración de páginas, puede utilizar la consola Sitios para crear y administrar sus páginas y, a continuación, editarlas con el Editor universal.
 
@@ -40,9 +40,9 @@ De este modo, puede beneficiarse de las herramientas disponibles en la consola S
 
 AEM Si este es su caso de uso, como paso siguiente inmediato, consulte los siguientes documentos para obtener una descripción general completa de cómo ponerse en marcha con el editor universal en la documentación de la aplicación de la.
 
-1. [AEM Guía de introducción para desarrolladores para la creación de contenido con Edge Delivery Services en la creación de](/help/edge/aem-authoring/edge-dev-getting-started.md) AEM - Empiece con su primer proyecto de Universal Editor en el año
-1. [Creación de bloques instrumentados para su uso con el editor universal](/help/edge/aem-authoring/create-block.md) - Aprenda a instrumentar bloques para que su contenido se pueda editar en el editor universal
-1. [AEM Modelado de contenido para la creación de con proyectos de Edge Delivery Services](/help/edge/aem-authoring/content-modeling.md) : Conozca los detalles de cómo se estructuran los bloques para modelar de forma eficaz el contenido para utilizarlo con el editor universal.
+1. [Guía de introducción para desarrolladores para la creación WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) AEM - Empiece con su primer proyecto de Universal Editor en el año
+1. [Creación de bloques instrumentados para su uso con el editor universal](/help/edge/wysiwyg-authoring/create-block.md) - Aprenda a instrumentar bloques para que su contenido se pueda editar en el editor universal
+1. [Modelado de contenido para la creación WYSIWYG con proyectos de Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) : Conozca los detalles de cómo se estructuran los bloques para modelar de forma eficaz el contenido para utilizarlo con el editor universal.
 
 Una vez que haya leído esos documentos, puede volver a esta página para conocer el caso de uso de la creación sin encabezado y cómo funciona el Editor universal en general.
 
@@ -54,7 +54,7 @@ Si este es su caso de uso, como paso siguiente inmediato, consulte el siguiente 
 
 * [Aplicación de ejemplo de SecurBank para el editor universal](/help/implementing/universal-editor/securbank.md)
 
-AEM Una vez que haya leído ese documento, puede volver a esta página para conocer el caso de uso de la creación de la creación de páginas y cómo funciona el editor universal en general.
+Una vez que haya leído ese documento, puede volver a esta página para conocer el caso de uso de la creación WYSIWYG y cómo funciona el Editor universal en general.
 
 ## Cómo funciona el editor universal {#how-ue-works}
 
@@ -63,7 +63,7 @@ El poder del editor universal es su capacidad para crear cualquier contenido in 
 El editor universal funciona de la siguiente manera.
 
 1. Un desarrollador instrumenta la aplicación o página para utilizar el Editor universal. Esta instrumentación indica al editor qué contenido se puede editar y cómo conservarlo.
-   * AEM Para la creación basada en la creación de plantillas, las páginas creadas con la plantilla de plantillas se instrumentan automáticamente.
+   * Para la creación WYSIWYG, las páginas creadas con la plantilla de plantillas se instrumentan automáticamente.
    * Para la creación sin encabezado, la aplicación se puede instrumentar fácilmente.
 1. El autor del contenido carga el editor universal, que a su vez carga la página para editarla. Como está instrumentado, sabe qué contenido es editable y cómo se representará y persistirá.
 1. El autor del contenido edita el contenido de la página en una interfaz WYSIWYG intuitiva y realiza la edición in situ.

@@ -5,7 +5,7 @@ feature: Authoring
 exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 solution: Experience Manager Sites
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 0%
@@ -20,8 +20,8 @@ AEM Conozca las diferentes formas en que puede crear contenido en las listas, en
 
 AEM as a Cloud Service ofrece varios editores diferentes para editar diferentes tipos de contenido y admitir diferentes casos de uso de creación.
 
-* [AEM Creación basada en el uso de la página mediante el Editor de páginas](#page-editor) AEM - El editor de páginas es el editor clásico para la creación de contenido en el mundo de la creación, probado y confiable para miles y miles de sitios web.
-* [AEM Creación basada en el uso del editor universal de](#universal-editor) AEM AEM : el editor universal es una interfaz de usuario moderna que le permite crear contenido de la aplicación de forma independiente del contenido y está disponible para proyectos de la aplicación que aprovechen los Edge Delivery Services de los proyectos de la.
+* [Creación WYSIWYG con el editor de páginas](#page-editor) AEM - El editor de páginas es el editor clásico para la creación de contenido en el mundo de la creación, probado y confiable para miles y miles de sitios web.
+* [Creación WYSIWYG con el editor universal](#universal-editor) AEM AEM : el editor universal es una interfaz de usuario moderna que le permite crear contenido de la aplicación de forma independiente del contenido y está disponible para proyectos de la aplicación que aprovechen los Edge Delivery Services de los proyectos de la.
 * [Creación basada en documentos](#document-based) : Si utiliza los servicios de envío perimetral, puede elegir crear el contenido como documentos convencionales, como Microsoft Word o Google AEM Docs, completamente fuera de las consolas de.
 * [AEM Editor de fragmentos de contenido](#cf-editor) : Este es el editor que mejor se adapte para crear contenido sin encabezado.
 
@@ -29,7 +29,7 @@ AEM Debido a la naturaleza integrada y escalable de los métodos, estos se puede
 
 Consulte con el administrador del sistema o el administrador del proyecto si no está seguro de qué opciones de creación están disponibles para usted o si desea explorar nuevas opciones para crear contenido.
 
-## AEM Creación basada en el uso de la página mediante el Editor de páginas {#page-editor}
+## Creación WYSIWYG con el editor de páginas {#page-editor}
 
 AEM Este es el editor clásico para la creación de contenido en el que se ha intentado y en el que se confía desde hace miles y miles de sitios web.
 
@@ -39,7 +39,7 @@ AEM El editor de páginas de presenta un entorno integrado para crear contenido 
 
 AEM Para obtener más información sobre el editor de páginas de la página de la, consulte el documento [AEM Editor de página de la.](/help/sites-cloud/authoring/page-editor/introduction.md)
 
-## AEM Creación basada en el uso del editor universal de {#universal-editor}
+## Creación WYSIWYG con el editor universal {#universal-editor}
 
 AEM AEM El editor universal es una interfaz de usuario moderna que le permite crear contenido de manera independiente del contenido, y es la primera opción para crear proyectos que aprovechen los Edge Delivery Services de la aplicación de manera independiente del contenido.
 
