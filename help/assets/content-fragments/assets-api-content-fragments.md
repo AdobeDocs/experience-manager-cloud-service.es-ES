@@ -1,12 +1,13 @@
 ---
 title: Compatibilidad con fragmentos de contenido de Adobe Experience Manager as a Cloud Service en la API HTTP de Assets
 description: Obtenga información acerca de la compatibilidad con fragmentos de contenido en la API HTTP de Assets, una parte importante de la función de entrega sin encabezado de Adobe Experience Manager.
-feature: Content Fragments,Assets HTTP API
+feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+role: User, Admin
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1804'
-ht-degree: 11%
+ht-degree: 14%
 
 ---
 
@@ -23,7 +24,7 @@ Obtenga información acerca de la compatibilidad con fragmentos de contenido en 
 
 >[!NOTE]
 >
->El [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) también están disponibles.
+>Las [OpenAPI de fragmento de contenido y modelo de fragmento de contenidos](/help/headless/content-fragment-openapis.md) también están disponibles.
 
 >[!NOTE]
 >
@@ -98,7 +99,7 @@ El formato exacto de las solicitudes admitidas se define en la variable [Referen
 
 >[!NOTE]
 >
->El [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) también están disponibles.
+>Las [OpenAPI de fragmento de contenido y modelo de fragmento de contenidos](/help/headless/content-fragment-openapis.md) también están disponibles.
 
 ### Comportamiento transaccional {#transactional-behavior}
 
@@ -178,7 +179,7 @@ Para obtener más información sobre las funciones disponibles a través de la A
 
 >[!NOTE]
 >
->El [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) también están disponibles.
+>Las [OpenAPI de fragmento de contenido y modelo de fragmento de contenidos](/help/headless/content-fragment-openapis.md) también están disponibles.
 
 ### Paginación {#paging}
 
@@ -223,7 +224,7 @@ La API de REST de Assets expone el acceso a las propiedades de una carpeta. Por 
 >
 >Según el tipo de recurso de los recursos y carpetas secundarios, la lista de entidades secundarias puede contener ya el conjunto completo de propiedades que define la entidad secundaria correspondiente. Alternativamente, solo se puede exponer un conjunto reducido de propiedades para una entidad de esta lista de entidades secundarias.
 
-### Assets {#assets}
+### Recursos {#assets}
 
 Si se solicita un recurso, la respuesta devolverá sus metadatos, como el título, el nombre y otra información tal como se define en el esquema de recursos correspondiente.
 
@@ -275,7 +276,7 @@ AEM El uso puede variar en función de si utiliza un entorno de autor o publicac
 >
 >Consulte la [Referencia de API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). En particular, la [API de Adobe Experience Manager Assets: fragmentos de contenido](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 >
->El [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) también están disponibles.
+>Las [OpenAPI de fragmento de contenido y modelo de fragmento de contenidos](/help/headless/content-fragment-openapis.md) también están disponibles.
 
 ## Restricciones {#limitations}
 
@@ -367,7 +368,7 @@ Consulte aquí las referencias detalladas de la API:
 
    * [Funciones disponibles](/help/assets/mac-api-assets.md#available-features)
 
-* El [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) también están disponibles.
+* Las [OpenAPI de fragmento de contenido y modelo de fragmento de contenidos](/help/headless/content-fragment-openapis.md) también están disponibles.
 
 ## Recursos adicionales {#additional-resources}
 

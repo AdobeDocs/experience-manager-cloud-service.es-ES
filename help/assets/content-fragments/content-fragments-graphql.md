@@ -1,12 +1,13 @@
 ---
-title: 'Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL (Recursos: fragmentos de contenido)'
+title: Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL (Recursos - Fragmentos de contenido)
 description: Aprenda los conceptos básicos de realización de un CMS sin encabezado AEM utilizando fragmentos de contenido con GraphQL para la entrega de contenido sin encabezado.
-feature: Content Fragments, GraphQL API
+feature: Content Fragments
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+role: User
+source-git-commit: 1e206a33ef03edfa1af3c0d95f3665b5604f22f3
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 84%
+source-wordcount: '719'
+ht-degree: 87%
 
 ---
 
@@ -109,4 +110,4 @@ Consulte [Aprender a utilizar GraphQL con AEM: contenido de muestra y consultas]
 
 ## Tutorial: Introducción a AEM Headless y GraphQL
 
-¿Busca un tutorial práctico? Desproteger [AEM Introducción a las soluciones sin encabezado y de GraphQL de](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es) AEM Tutorial completo que ilustra cómo crear y exponer contenido mediante las API de GraphQL de la interfaz de usuario de, y consumido por una aplicación externa, en un escenario de CMS sin encabezado.
+¿Busca un tutorial práctico? Consulte el tutorial completo [Introducción a AEM Headless y GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es), que ilustra cómo crear y exponer contenido mediante las API de GraphQL de AEM y consumido por una aplicación externa, en un escenario de CMS sin encabezado.

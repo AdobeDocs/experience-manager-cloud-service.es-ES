@@ -1,13 +1,14 @@
 ---
 title: Administración de recursos digitales
 description: Mueva, elimine, copie, cambie de nombre, actualice y convierta en versión los recursos en [!DNL Assets view].
-role: User,Leader
+role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
-source-git-commit: 3912f52112b3d9dcb568e477c33d3f4b28064b66
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1177'
-ht-degree: 89%
+ht-degree: 93%
 
 ---
 
@@ -46,7 +47,7 @@ Use [!DNL Assets view] para llevar a cabo las siguientes tareas de administraci�
 * ![icono de movimiento](assets/do-not-localize/move-icon.png) Mueva el recurso o la carpeta seleccionados a una ubicación diferente en la jerarquía del repositorio.
 
 * ![icono de cambio de nombre](assets/do-not-localize/rename-icon.png) Cambie el nombre del recurso o la carpeta seleccionados. Utilice un nombre único, si no, el cambio de nombre producirá un error con una advertencia. Puede intentarlo de nuevo con un nombre nuevo.
-Además, puede hacer clic en el título de un recurso o de una carpeta para cambiarle el nombre. Mencione el nuevo texto en la **Cambiar nombre de recurso** y haga clic en **Guardar**. Esta funcionalidad está disponible en las vistas Cuadrícula, Galería, Cascada y Lista.
+Además, puede hacer clic en el título de un recurso o de una carpeta para cambiarle el nombre. Mencione el nuevo texto en el cuadro de texto **Cambiar nombre de recurso** y haga clic en **Guardar**. Esta funcionalidad está disponible en las vistas Cuadrícula, Galería, Cascada y Lista.
 
 * ![icono de vista de cascada](assets/do-not-localize/waterfall-view.png) [!UICONTROL Vista de cascada].
 
@@ -166,11 +167,11 @@ Para añadir el campo de metadatos Fecha de caducidad al formulario, arrastre el
 
 ## Siguientes pasos {#next-steps}
 
-* [Vea un vídeo para administrar recursos en la vista Recursos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html?lang=es)
+* [Vea un vídeo para administrar recursos en la vista Recursos](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets-essentials/basics/managing)
 
 * Realice comentarios del producto mediante la opción [!UICONTROL Comentarios] disponible en la interfaz de usuario de la vista Recursos
 
 * Proporcione comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar una incidencia] ![crear una incidencia de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha
 
-* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General&amp;lang=es#support)
+* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General#support)
 

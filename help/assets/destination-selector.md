@@ -2,12 +2,13 @@
 title: AEM Selector de destino para la as a Cloud Service
 description: AEM Utilice el Selector de destino de la para mostrar y seleccionar recursos que puede utilizar como copia del recurso original.
 contentOwner: Adobe
-role: Admin,User
+role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
-source-git-commit: 96a82439c51c22125c206b4e912e85e0bf603498
+feature: Selectors
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
-source-wordcount: '1904'
-ht-degree: 36%
+source-wordcount: '1887'
+ht-degree: 35%
 
 ---
 
@@ -140,7 +141,7 @@ En la tabla siguiente se describen algunas de las propiedades importantes del de
 | *repo:modifiedBy* | cadena | Usuario o sistema que modificó el recurso por última vez. |
 | *repo:modifyDate* | cadena | La fecha y la hora en que se modificó el recurso por última vez. |
 | *dc:format* | cadena | El formato del recurso. |
-| *_página* | orderBy: string; count: number; | Incluye el número de página del documento. |
+| *_page* | orderBy: string; count: number; | Incluye el número de página del documento. |
 
 Para obtener una lista completa de las propiedades y un ejemplo detallado, visite [Ejemplo de código de selector de destino](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 

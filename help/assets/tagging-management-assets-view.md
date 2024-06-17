@@ -2,10 +2,12 @@
 title: ¿Cómo se administran las etiquetas en la vista Recursos?
 description: Obtenga información sobre cómo administrar las etiquetas en la vista Recursos. Las etiquetas le ayudan a categorizar los archivos que se pueden examinar y buscar de forma más eficaz.
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
-source-git-commit: cadf0e383608a39200d716cc698ad1979f24fd1d
+feature: Smart Tags
+role: User, Admin, Developer
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1739'
-ht-degree: 71%
+ht-degree: 98%
 
 ---
 
@@ -63,7 +65,7 @@ Siga estos pasos para crear un área de nombres:
 
 Ejecute los siguientes pasos para añadir etiquetas a un área de nombres:
 
-1. Ir a **[!UICONTROL Administración de taxonomía]**.
+1. Vaya a **[!UICONTROL Administración de taxonomía]**.
 1. Seleccione el área de nombres y haga clic en `Create` para crear la etiqueta en el nivel superior bajo el área de nombres. Si necesita crear una subetiqueta en una etiqueta que exista en un área de nombres, seleccione la etiqueta y haga clic en `Create`.
    ![Jerarquía de etiquetas](assets/hierarchy-of-tags.png)
 
@@ -129,14 +131,14 @@ Realice los siguientes pasos para eliminar etiquetas:
 
 ## Añadir el componente Etiquetas al formulario de metadatos {#add-tags-to-metadata-form}
 
-El componente de etiquetas se añade al formulario de metadatos `default` automáticamente. Puede diseñar un [formulario de metadatos](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=es#metadata-forms) mediante una plantilla o desde cero. Si no utiliza una plantilla de formulario de metadatos existente, puede modificar el formulario de metadatos y añadir el componente de etiquetas. La asignación de propiedades de metadatos se rellena automáticamente y no se puede modificar en este momento. [!DNL Assets as a Cloud Service] los usuarios pueden actualizar la asignación para almacenar valores de etiquetas utilizando áreas de nombres personalizadas y exponer únicamente subconjuntos de jerarquías mediante rutas raíz.
+El componente de etiquetas se añade al formulario de metadatos `default` automáticamente. Puede diseñar un [formulario de metadatos](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=es#metadata-forms) mediante una plantilla o desde cero. Si no utiliza una plantilla de formulario de metadatos existente, puede modificar el formulario de metadatos y añadir el componente de etiquetas. La asignación de propiedades de metadatos se rellena automáticamente y no se puede modificar en este momento. Los usuarios de [!DNL Assets as a Cloud Service] pueden actualizar la asignación para almacenar valores de etiquetas utilizando áreas de nombres personalizadas, y exponer solo subconjuntos de jerarquías mediante rutas raíz.
 
 Vea este vídeo rápido para ver cómo añadir el componente Etiquetas al formulario de metadatos:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420452)
 
 
-### Añadir etiquetas a los recursos {#add-tags-to-assets}
+### Añadir etiquetas a recursos {#add-tags-to-assets}
 
 1. Vaya a la página de detalles del recurso y navegue hasta la sección `Tags` del formulario de metadatos.
 1. Seleccione el icono del selector de etiquetas que está junto al campo Etiquetas o empiece a escribir un nombre de etiqueta para ver los resultados sugeridos.
@@ -148,7 +150,7 @@ Las etiquetas modificadas en Assets Essentials se aplican también en Assets as 
 
 ## Añadir etiquetas a la lista de bloqueados {#blocklist-essentials}
 
-[!DNL Assets view] le permite configurar una lista de bloqueados que incluya palabras que no deban agregarse como etiquetas inteligentes a los recursos cuando se carguen en el repositorio. Esta posibilidad le ayuda a mantener el cumplimiento de la marca y reduce el esfuerzo por moderar las etiquetas inteligentes.
+[!DNL Assets view] le permite definir una lista de bloqueados compuesta por palabras que no deben añadirse como etiquetas inteligentes a los recursos cuando se cargan en el repositorio. Esta posibilidad le ayuda a mantener el cumplimiento de la marca y reduce el esfuerzo por moderar las etiquetas inteligentes.
 <!--
 ### Block smart tags for single asset {#block-smart-tags-for-single-asset}
 ![block smart tags](assets/block-smart-tags.png)
@@ -159,21 +161,21 @@ Las etiquetas modificadas en Assets Essentials se aplican también en Assets as 
 [!DNL Assets view] permite a un administrador bloquear las etiquetas inteligentes de los recursos existentes y los recién añadidos. Para bloquear etiquetas, ejecute los siguientes pasos:
 
 1. Vaya a **[!UICONTROL Etiquetas bloqueadas]** bajo **[!UICONTROL Configuración]**.
-1. Clic **[!UICONTROL Añadir etiqueta bloqueada]**.
+1. Haga clic en **[!UICONTROL Añadir etiqueta bloqueada]**.
 1. Escriba las etiquetas en el cuadro de texto que debe bloquear y haga clic en **[!UICONTROL Entrar]**.
-1. Una vez que haya terminado de agregar etiquetas, haga clic en **[!UICONTROL Añadir]**. Las etiquetas introducidas aparecen en la lista de etiquetas bloqueadas.
+1. Una vez que haya terminado de añadir etiquetas, haga clic en **[!UICONTROL Añadir]**. Las etiquetas introducidas aparecen en la lista de etiquetas bloqueadas.
 
    >[!NOTE]
    >
-   >Puede agregar un máximo de 25 etiquetas a la lista a la vez. Repita los pasos para agregar más etiquetas a la lista de bloqueados.
+   >Puede añadir un máximo de 25 etiquetas a la lista a la vez. Repita los pasos para añadir más etiquetas a la lista de bloqueados.
 
-También puede bloquear las etiquetas inteligentes de un solo recurso. Vaya a los detalles de un recurso. En **[!UICONTROL Etiquetas]** , elimine las etiquetas inteligentes no deseadas y haga clic en **[!UICONTROL Guardar]**. Las etiquetas se muestran en la lista de bloqueados del recurso seleccionado.
+También puede bloquear las etiquetas inteligentes de un solo recurso. Vaya a los detalles de un recurso. En la pestaña **[!UICONTROL Etiquetas]**, quite las etiquetas inteligentes no deseadas y haga clic en **[!UICONTROL Guardar]**. Las etiquetas se muestran en la lista de bloqueados del recurso seleccionado.
 
 ### Acciones realizadas en la lista de bloqueados {#blocklist-actions}
 
-* **Quitar etiquetas:** También puede quitar las etiquetas de la lista de bloqueados. Para ello, seleccione una o varias etiquetas que desee eliminar. Clic **[!UICONTROL Eliminar]**. Puede quitar un máximo de 25 etiquetas de la lista a la vez.
-* **Seleccionar todo:** Seleccione la casilla junto a **Nombre de etiqueta** para seleccionar todas las etiquetas de la lista de bloqueados.
-* **Ordenando:** Puede ordenar la lista de bloqueados en orden ascendente o descendente. Para ello, haga clic en la flecha situada junto a **Nombre de etiqueta**.
+* **Quitar etiquetas:** También puede quitar las etiquetas de la lista de bloqueados. Para ello, seleccione una o varias etiquetas que desee quitar. Haga clic en **[!UICONTROL Quitar]**. Puede quitar un máximo de 25 etiquetas de la lista a la vez.
+* **Seleccionar todo:** Seleccione la casilla de verificación junto a **Nombre de etiqueta** para seleccionar todas las etiquetas de la lista de bloqueados.
+* **Ordenación:** Puede ordenar la lista de bloqueados en orden ascendente o descendente. Para ello, haga clic en la flecha situada junto a **Nombre de etiqueta**.
 
   ![bloquear etiquetas](assets/blocklist.gif)
 
@@ -185,7 +187,7 @@ También puede bloquear las etiquetas inteligentes de un solo recurso. Vaya a lo
 
 La vista Recursos permite exportar las etiquetas bloqueadas enumeradas al formato CSV. Para exportar la lista de bloqueados, ejecute los pasos siguientes:
 
-1. Clic **[!UICONTROL Exportar como CSV]**.
+1. Haga clic en **[!UICONTROL Exportar como CSV.]**
 1. Elija la ubicación adecuada para guardar el archivo CSV. También puede cambiar el nombre del archivo según los requisitos.
 1. Haga clic en **[!UICONTROL Guardar]**. La lista exportada en formato CSV se descargará en la ubicación seleccionada.
 
@@ -193,14 +195,14 @@ La vista Recursos permite exportar las etiquetas bloqueadas enumeradas al format
 
 La vista Recursos permite importar etiquetas bloqueadas desde una fuente de datos (CSV). Para importar lista de bloqueados, ejecute los pasos siguientes:
 
-1. Clic **[!UICONTROL Importar como CSV]**.
-1. Elija el archivo CSV en el dispositivo. Clic **[!UICONTROL seleccionar un archivo]** para desplazarse al archivo desde el dispositivo. También puede arrastrar y soltar el archivo CSV desde su dispositivo.
+1. Haga clic en **[!UICONTROL Importar como CSV]**.
+1. Elija el archivo CSV en su dispositivo. Haga clic en **[!UICONTROL seleccionar un archivo]** para desplazarse al archivo desde su dispositivo. También puede arrastrar y soltar el archivo CSV desde su dispositivo.
 1. Haga clic en **[!UICONTROL Cargar]**. Las etiquetas del archivo CSV se enumeran en la lista de etiquetas bloqueadas.
 
    ![Importar lista de etiquetas bloqueadas](assets/import-blocked-tags.png)
 
-Si desea descargar una plantilla de etiquetas bloqueada, siga los pasos a continuación:
+Si desea descargar una plantilla de etiquetas bloqueadas, siga estos pasos:
 
-1. Clic **[!UICONTROL Descargar plantilla]**.
+1. Haga clic en **[!UICONTROL Descargar plantilla]**.
 1. Elija la ubicación adecuada para guardar el archivo CSV. También puede cambiar el nombre del archivo según los requisitos.
 1. Haga clic en **[!UICONTROL Guardar]**. La plantilla de etiquetas de bloque en formato CSV se descarga en la ubicación seleccionada.

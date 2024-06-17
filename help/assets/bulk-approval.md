@@ -2,10 +2,10 @@
 title: Revisión de recursos en carpetas y colecciones
 description: Configure flujos de trabajo de revisión para los recursos de una carpeta o una colección y compártala con revisores o socios creativos para buscar comentarios.
 contentOwner: AG
-feature: Collections,Collaboration
+feature: Collections, Collaboration
 role: User
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 10%

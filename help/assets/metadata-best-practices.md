@@ -3,10 +3,11 @@ title: Administración de metadatos y prácticas recomendadas
 description: Conozca las prácticas recomendadas sobre metadatos para administrar sus recursos digitales de forma eficaz.
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
-source-git-commit: 2526bc491f079d0dfafaa7aad0d240ff64109591
+feature: Metadata, Best Practices
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1384'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -30,7 +31,7 @@ En función de los distintos aspectos de los datos, los metadatos se clasifican 
 Los metadatos técnicos comprenden los aspectos técnicos de un recurso. Este tipo de metadatos es crucial para que los usuarios comprendan las características inherentes de los recursos digitales, lo que facilita un procesamiento y una utilización eficientes.
 Incluye detalles como:
 
-* Tamaño de archivo
+* Tamaño del archivo
 * Formato
 * Resolución
 * Dimensiones

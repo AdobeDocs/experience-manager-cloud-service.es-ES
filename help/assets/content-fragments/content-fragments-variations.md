@@ -2,7 +2,9 @@
 title: 'Variaciones: Creación de contenido de fragmentos (Recursos: fragmentos de contenido)'
 description: Comprenda cómo las variaciones de fragmentos de contenido le permiten crear contenido para el fragmento y luego crear variaciones de ese contenido según el propósito, aumentando así la flexibilidad.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: a213d94b6c5bd4eaaf78b8384b96e1d99104874d
+feature: Content Fragments
+role: User
+source-git-commit: 763ef950ffa7642a345977485f56c1187f6ecc0a
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 52%
@@ -17,9 +19,9 @@ ht-degree: 52%
 >
 >Los fragmentos de contenido son una función de Sites, pero se almacenan como **Assets**.
 >
->Existen dos editores para crear fragmentos de contenido. Esta sección cubre el editor original, al que se accede principalmente desde la consola Assets ****. Consulte la documentación [de Sites, Fragmentos de contenido - Creación](/help/sites-cloud/administering/content-fragments/authoring.md), para obtener detalles sobre la nueva editor (a la que se accede principalmente desde la **consola de fragmentos de** contenido).
+>Existen dos editores para crear fragmentos de contenido. Esta sección trata sobre el editor original, al que se accede principalmente desde el **Assets** consola. Consulte la documentación de Sites, [Fragmentos de contenido: creación](/help/sites-cloud/administering/content-fragments/authoring.md), para obtener más información sobre el nuevo editor (al que se accede principalmente desde el **Fragmentos de contenido** consola).
 
-Desde el **pestaña de variaciones** puede hacer lo siguiente:
+Desde el **Variaciones** puede hacer lo siguiente:
 
 * [Introducir el contenido](#authoring-your-content) para el fragmento,
 * [Crear y administrar variaciones](#managing-variations) del contenido **Principal**,
@@ -28,7 +30,7 @@ Realizar una serie de otras acciones en función del tipo de datos que se esté 
 
 * [Insertar recursos visuales en el fragmento](#inserting-assets-into-your-fragment) (imágenes)
 
-* Seleccione entre [texto enriquecido, [texto](#rich-text) sin formato](#plain-text) y [Markdown](#markdown) para editar
+* Seleccionar entre [Texto enriquecido](#rich-text), [Texto sin formato](#plain-text), y [Markdown](#markdown) para edición
 
 * [Cargar contenido](#uploading-content)
 
@@ -91,7 +93,7 @@ Se abrirá el editor de texto de pantalla completa:
 
 ![editor de pantalla completa](assets/cfm-variations-fullscreentexteditor.png)
 
-La editor de texto en pantalla completa proporciona:
+El editor de texto de pantalla completa proporciona lo siguiente:
 
 * Acceso a varias [acciones](#actions)
 * Según el [formato](#formats), opciones de formato adicionales ([Texto enriquecido](#rich-text))
@@ -188,9 +190,9 @@ Si el modelo de fragmento de contenido contiene referencias a fragmento, es posi
 
 #### Editar fragmento de contenido {#fragment-references-edit-content-fragment}
 
-La opción **Editar fragmento de contenido abre ese fragmento** en una nueva editor pestaña (dentro del mismo explorador pestaña).
+La opción **Editar fragmento de contenido** abre ese fragmento en una nueva pestaña del editor (en la misma pestaña del explorador).
 
-Si se selecciona de nuevo el pestaña original (por ejemplo, Little Pony Inc.)**se cierra este pestaña secundario (en este caso,****Adam Smith**).
+Volver a seleccionar la pestaña original (por ejemplo, **Little Pony Inc.**) cierra esta pestaña secundaria (en este caso, **Adam Smith**).
 
 ![Referencias a fragmento](assets/cfm-variations-editreference.png)
 
@@ -202,7 +204,7 @@ La opción **Fragmento de contenido nuevo** permite crear un fragmento. Para con
 
 1. Ir a y seleccionar la carpeta requerida.
 1. Seleccionar **Siguiente**.
-1. Especificación de propiedades; Por ejemplo, **Título**.
+1. Especificación de propiedades; por ejemplo, **Título**.
 1. Selección **Crear**.
 1. Finalmente:
    1. **Listo**:
@@ -222,7 +224,7 @@ Por ejemplo:
 
 ### Carga de contenido {#uploading-content}
 
-Para facilitar el proceso de creación de fragmentos contenido, puede cargar texto, preparado en un editor externo, y agregarlo directamente al fragmento.
+Para facilitar el proceso de creación de fragmentos de contenido, puede cargar texto preparado en un editor externo y añadirlo directamente al fragmento.
 
 ### Texto de resumen {#summarizing-text}
 
@@ -271,8 +273,8 @@ El texto de resumen está diseñado para ayudar a los usuarios a reducir la long
 1. El texto original se muestra en paralelo con el resumen propuesto:
 
    * Las frases que se eliminen se resaltan en rojo y se tachan.
-   * Haga clic en una frase resaltada para mantenerla en el contenido resumido.
-   * Haga clic en cualquier oración que no esté resaltada para poder eliminarla.
+   * Haga clic en cualquier frase resaltada para mantenerla en el contenido resumido.
+   * Haga clic en cualquier frase no resaltada para que pueda eliminarla.
    * Se muestran las estadísticas de resumen: **Real** y **Objetivo**-
    * Puede **Previsualizar** los cambios.
 
@@ -298,15 +300,15 @@ Para realizar anotaciones en un fragmento:
 
    ![anotar](assets/cfm-variations-annotations-apply-icon.png)
 
-   Si el anotación se aplicó al texto seleccionado, ese texto permanece resaltado.
+   Si la anotación se aplicó al texto seleccionado, ese texto permanece resaltado.
 
    ![anotar](assets/cfm-variations-07b.png)
 
-1. Cierre el editor de pantalla completa y las anotaciones se seguirán resaltando. Si se selecciona esta opción, se abre un cuadro de diálogo para que pueda seguir editando la anotación.
+1. Cierre el editor de pantalla completa y las anotaciones se seguirán resaltando. Si se selecciona, se abre un cuadro de diálogo para que pueda editar la anotación más adelante.
 
 1. Seleccione **Guardar**.
 
-1. Cierre el editor de pantalla completa y las anotaciones se seguirán resaltando. Si se selecciona esta opción, se abre un cuadro de diálogo para que pueda seguir editando la anotación.
+1. Cierre el editor de pantalla completa y las anotaciones se seguirán resaltando. Si se selecciona, se abre un cuadro de diálogo para que pueda editar la anotación más adelante.
 
    ![anotar](assets/cfm-variations-07c.png)
 
@@ -349,7 +351,7 @@ Se agregan a la secuencia de párrafo del fragmento sin ningún formato; el form
 
    ![insertar icono de recurso](assets/cfm-variations-09.png)
 
-1. En el cuadro de diálogo, puede desplazarse hasta la recurso necesaria en DAM o búsqueda para la recurso en DAM.
+1. En el cuadro de diálogo, puede desplazarse hasta el recurso necesario en DAM o buscarlo en DAM.
 
    Cuando se encuentre, seleccione el recurso necesario haciendo clic en la miniatura.
 
@@ -387,9 +389,9 @@ Se añaden como referencia en la ubicación actual en el fragmento.
 
    ![Icono Insertar fragmento de contenido](assets/cfm-variations-13.png)
 
-1. En el cuadro de diálogo, puede desplazarse hasta el fragmento necesario en la carpeta Assets o búsqueda para el fragmento.
+1. En el cuadro de diálogo, puede desplazarse hasta el fragmento requerido en la carpeta Recursos o buscar el fragmento.
 
-   Cuando esté localizado, seleccione el fragmento necesario haciendo clic en la miniatura.
+   Cuando se encuentre, seleccione el fragmento requerido haciendo clic en la miniatura.
 
 1. Use **Seleccionar** para agregar una referencia al fragmento de contenido seleccionado al fragmento de contenido actual (en la ubicación actual).
 
@@ -428,19 +430,19 @@ Por ejemplo:
 
 ### Creación de una variación {#creating-a-variation}
 
-Las variaciones le permiten tomar la **contenido maestra** y variarla según el propósito (si es necesario).
+Las variaciones permiten tomar la **Principal** contenido y puede variar según el propósito (si es necesario).
 
 **Para crear una variación:**
 
 1. Abra el fragmento y asegúrese de que el panel lateral esté visible.
 1. Seleccione **Variaciones** en la barra de iconos del panel lateral.
 1. Seleccione **Crear variación**.
-1. Se abrirá un cuadro de diálogo para que pueda especificar el Título **y** el **Descripción** para la nueva variación.
+1. Se abre un cuadro de diálogo para que pueda especificar el **Título** y **Descripción** para la nueva variación.
 1. Seleccione **Agregar**; el fragmento **Principal** se copia en la nueva variación, que ahora está abierta para [editar](#editing-a-variation).
 
    >[!NOTE]
    >
-   >Cuando se crea una variación, siempre se copia la variación principal **, no la** que está abierta.
+   >Al crear una variación, siempre es el **Principal** que se copia, no la variación que está abierta.
 
    >[!NOTE]
    >
@@ -511,8 +513,8 @@ Al editar una variación, tiene acceso a la acción para sincronizar el elemento
 
 1. Principal y la variación se muestran en paralelo:
 
-   * El verde indica que se agregó contenido (a la variación)
-   * El rojo indica que se ha eliminado contenido (de la variación)
+   * verde indica que se ha añadido contenido (a la variación)
+   * rojo indica que el contenido se eliminó (de la variación)
    * azul indica texto reemplazado
 
    ![sincronización con principal](assets/cfm-variations-11c.png)

@@ -1,13 +1,14 @@
 ---
 title: ¿Cómo se administran los metadatos en la vista de recursos?
 description: Obtenga información sobre cómo administrar metadatos en la vista de recursos. Una mejor administración de los metadatos hace que un recurso sea más accesible, fácil de administrar y completo.
-role: User,Leader,Admin,Architect,Developer
+role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
-source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
+feature: Metadata
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1783'
-ht-degree: 81%
+ht-degree: 87%
 
 ---
 
@@ -153,21 +154,21 @@ Para asignar un formulario de metadatos a una carpeta:
 
    ![Metadatos de formulario de propiedades de carpeta](assets/metadata-from-folder-props.png)
 
-### Quitar formulario de metadatos de las carpetas {#remove-metadata-form-folder}
+### Quitar formularios de metadatos de las carpetas {#remove-metadata-form-folder}
 
 Después de asignar un formulario de metadatos a una o varias carpetas, Experience Manager Assets también permite quitar formularios de metadatos de las carpetas seleccionadas.
 
-Para quitar un formulario de metadatos de una carpeta:
+Para asignar un formulario de metadatos a una carpeta:
 
 1. Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Formularios de metadatos]** y seleccione un formulario de metadatos.
 
-1. Clic **[!UICONTROL Eliminar de las carpetas]**. Se muestra la lista de carpetas asignadas para el formulario de metadatos.
+1. Haga clic en **[!UICONTROL Quitar de las carpetas]**. Se muestra la lista de carpetas asignadas para el formulario de metadatos.
 
-1. Seleccione la carpeta y haga clic en **[!UICONTROL Eliminar]**. También puede seleccionar varias carpetas de la lista.
+1. Seleccione la carpeta y haga clic en **[!UICONTROL Quitar]**. También puede seleccionar varias carpetas de la lista.
 
-También puede navegar a la página de detalles de la carpeta y seleccionar **[!UICONTROL Formulario de metadatos asignado al sistema]** desde el **[!UICONTROL Metadatos de Forms]** para quitar el formulario de metadatos asignado de una carpeta.
+También puede ir hasta la página de detalles de la carpeta y seleccionar **[!UICONTROL Formulario de metadatos asignado al sistema]** en **[!UICONTROL Formularios de metadatos]** para quitar el formulario de metadatos asignado de una carpeta.
 
-## Pasos siguientes {#next-steps}
+## Siguientes pasos {#next-steps}
 
 * [Vea un vídeo para administrar formularios de metadatos en la vista Recursos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=es)
 

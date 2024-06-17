@@ -2,12 +2,12 @@
 title: Instalar [!DNL Workfront for Experience Manager enhanced connector]
 description: Instalar [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
-feature: Integrations
+feature: Workfront Integrations and Apps
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 393ec79e820632e879a377e697ecd09f4571c0b7
+source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 2%
+source-wordcount: '765'
+ht-degree: 1%
 
 ---
 
@@ -15,14 +15,14 @@ ht-degree: 2%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html) |
 | AEM as a Cloud Service | Este artículo |
 
 Un usuario con acceso de administrador en [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] instala el conector mejorado. Antes de realizar la instalación, revise la compatibilidad con la plataforma y otros [requisitos previos del conector](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
 >[!IMPORTANT]
 >
->A partir de junio de 2022, Adobe lanzó una nueva integración nativa para conectar Workfront con Adobe Experience Manager Assets as a Cloud Service. Esta integración se ha convertido en el método requerido para conectar estas dos soluciones. Cualquier nueva implementación futura del conector mejorado (1.9.8 y posterior) para conectar Workfront con AEM Assets as a Cloud Service está bloqueada. Para obtener más información sobre cómo configurar esta integración, consulte [Configuración de la integración as a Cloud Service de Experience Manager Assets](workfront-connector-configure.md).
+>En junio de 2022, Adobe lanzó una nueva integración nativa para conectar Workfront con Adobe Experience Manager Assets as a Cloud Service. Esta integración se ha convertido en el método requerido para conectar estas dos soluciones. Cualquier nueva implementación futura del conector mejorado (1.9.8 y posterior) para conectar Workfront con AEM Assets as a Cloud Service está bloqueada. Para obtener más información sobre cómo configurar esta integración, consulte [Configuración de la integración as a Cloud Service de Experience Manager Assets](workfront-connector-configure.md).
 
 >[!IMPORTANT]
 >
@@ -67,7 +67,7 @@ Antes de instalar el conector, siga estos pasos previos a la instalación:
 1. Esta instalación requiere conocimientos para establecer un proyecto Maven en [!DNL Experience Manager] as a [!DNL Cloud Service]. Utilice los siguientes recursos para comprender cómo incluir un paquete de terceros en su proyecto Maven:
 
    * [Incluir paquetes de terceros en el proyecto Maven](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#including-third-party).
-   * [Implementación con [!DNL Cloud Manager]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=es).
+   * [Implementación con [!DNL Cloud Manager]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html).
 
 Para instalar el complemento en [!DNL Experience Manager] as a [!DNL Cloud Service], siga estos pasos:
 
@@ -146,7 +146,7 @@ Para obtener información sobre cómo actualizar la [!DNL Workfront for Experien
 
 Para crear una conexión con [!DNL Workfront], siga estos pasos:
 
-1. Entrada [!DNL Experience Manager], seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuración de herramientas de Workfront]**.
+1. Entrada [!DNL Experience Manager], seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configuración de herramientas de Workfront]**.
 
 1. Seleccionar `workfront-tools` en el panel izquierdo y seleccione **[!UICONTROL Crear]** en el área superior derecha de la página.
 

@@ -2,7 +2,9 @@
 title: Configurar restricciones de carga de recursos
 description: Configure Adobe Experience Manager Assets para restringir el tipo de recursos que los usuarios pueden cargar en función del tipo MIME. Ayuda a evitar cargas accidentales de archivos malintencionados y formatos no deseados.
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+feature: Upload, Asset Ingestion
+role: User, Admin, Developer
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 12%

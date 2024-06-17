@@ -3,10 +3,11 @@ title: Edición de imágenes
 description: Edite imágenes mediante opciones que se sirven de [!DNL Adobe Express] y guarde imágenes actualizadas como versiones.
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
-source-git-commit: 42d3751a4a29149f3b31dbc28555b81aa7ed43cc
+feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 70%
+ht-degree: 72%
 
 ---
 
@@ -84,7 +85,7 @@ Puede convertir rápidamente una imagen PNG a un formato de JPEG mediante el Ado
 
 ### Restricciones {#limitations-adobe-express}
 
-* Resolución de imagen admitida: mínimo: 50 píxeles, máximo: 6000 píxeles por dimensión.
+* Resolución de imagen admitida: mínimo de 50 píxeles, máximo de 6000 píxeles por dimensión.
 
 * Tamaño máximo de archivo admitido: 17 MB.
 

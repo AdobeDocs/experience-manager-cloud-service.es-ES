@@ -2,10 +2,10 @@
 title: Assets Insights
 description: Rastree las clasificaciones de los usuarios y las estadísticas de uso de las imágenes que se utilizan en sitios web de terceros, campañas de marketing y soluciones creativas de Adobe.
 contentOwner: AG
-feature: Asset Insights,Asset Reports
-role: User,Leader
+feature: Asset Insights, Asset Reports
+role: User, Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 12%

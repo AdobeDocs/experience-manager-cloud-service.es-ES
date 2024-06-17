@@ -3,10 +3,12 @@ title: AEM ¿En qué le beneficia la vista de Assets en el caso de los?
 description: AEM Obtenga más información acerca de las ventajas clave de la vista de Assets en la. Adobe, con su experiencia en el empoderamiento de los profesionales creativos y de marketing, presenta una nueva experiencia de usuario que cambia el juego.
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
-source-git-commit: 408a691de8a6fe2801a9907308db43f2050528c3
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+role: User
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
-source-wordcount: '1079'
-ht-degree: 74%
+source-wordcount: '972'
+ht-degree: 69%
 
 ---
 
@@ -121,7 +123,7 @@ Además de estas funciones, la vista Recursos también permite realizar las sigu
 
 * Cambie el nombre de los recursos y las carpetas disponibles en el repositorio.
 
-La vista Recursos está diseñada para optimizar los flujos de trabajo, fomentar la colaboración y acelerar la entrega de recursos. Al adoptar la velocidad del contenido, los especialistas en marketing pueden aprovechar todo el potencial de sus recursos digitales y dar rienda suelta a la creatividad como nunca antes.
+La vista Recursos está diseñada para optimizar los flujos de trabajo, fomentar la colaboración y acelerar la entrega de recursos. Al adoptar la velocidad del contenido, los especialistas en marketing pueden desbloquear todo el potencial de sus recursos digitales y dar rienda suelta a la creatividad como nunca antes.
 
 
 Utilice estos vínculos para empezar rápidamente a usar la vista Recursos:

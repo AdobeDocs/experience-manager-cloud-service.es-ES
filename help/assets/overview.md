@@ -3,10 +3,10 @@ title: Administración de activos digitales (DAM) de Adobe mediante AEM
 description: Obtenga información sobre cómo utilizar y administrar la administración de activos digitales (DAM) de Adobe mediante Experience Manager Assets as a Cloud Service.
 contentOwner: AK
 feature: Asset Management
-role: User,Leader,Architect
+role: User, Leader, Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
-workflow-type: ht
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 100%
 

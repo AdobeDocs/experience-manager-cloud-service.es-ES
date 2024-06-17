@@ -2,10 +2,12 @@
 title: Contenido asociado (recursos - fragmentos de contenido)
 description: AEM Comprenda cómo la función de contenido asociada para los fragmentos de contenido de proporciona la conexión para que los recursos se puedan utilizar de forma opcional con el fragmento.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+feature: Content Fragments
+role: User
+source-git-commit: 763ef950ffa7642a345977485f56c1187f6ecc0a
 workflow-type: tm+mt
 source-wordcount: '281'
-ht-degree: 41%
+ht-degree: 45%
 
 ---
 

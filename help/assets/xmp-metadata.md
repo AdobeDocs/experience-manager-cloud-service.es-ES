@@ -3,9 +3,9 @@ title: Metadatos XMP
 description: XMP Obtenga información acerca del estándar de metadatos de la plataforma de metadatos extensible (EXTENSIBLE Metadata Platform) para la administración de metadatos. Experience Manager la utiliza como formato estandarizado para la creación, el procesamiento y el intercambio de metadatos.
 contentOwner: AG
 feature: Metadata
-role: User,Admin
+role: Admin, User
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 17%
