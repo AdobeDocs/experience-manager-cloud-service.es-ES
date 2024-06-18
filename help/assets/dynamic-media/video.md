@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+source-git-commit: 03799545e29489a20e71e588f0a9bfac92e753db
 workflow-type: tm+mt
 source-wordcount: '9357'
 ht-degree: 2%
@@ -569,7 +569,7 @@ Al mismo tiempo que crea un caso de Soporte de Adobe para tener DASH habilitado 
 
 Con la capacidad de varios subtítulos y pistas de audio de Dynamic Media, puede añadir fácilmente varios subtítulos y pistas de audio a un vídeo principal. Esta posibilidad significa que los vídeos son accesibles para todo el público global. Puede personalizar un solo vídeo principal publicado para un público global en varios idiomas y seguir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
 
-![Pestaña Pistas de subtítulos y pistas de audio en Dynamic Media junto con una tabla que muestra los archivos de subtítulos .VTT cargados y los archivos de pistas de audio .MP3 cargados para un vídeo.](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab.png)
+![Pestaña Pistas de subtítulos y pistas de audio en Dynamic Media junto con una tabla que muestra los archivos de subtítulos .VTT cargados y los archivos de pistas de audio .MP3 cargados para un vídeo.](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab2.png)
 
 Algunos de los casos de uso que se deben tener en cuenta para agregar varios subtítulos y pistas de audio al vídeo principal son los siguientes:
 
@@ -616,7 +616,7 @@ Los subtítulos y subtítulos añadidos son compatibles con los formatos WebVTT 
    >
    >Cuando haya completado cualquiera de las tareas anteriores, vuelva a estos pasos.
 
-   ![Ficha Subtítulos y pistas de audio de la página Propiedades.](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Pestaña Subtítulos y pistas de audio de la página Propiedades del vídeo.*
+   ![Ficha Subtítulos y pistas de audio de la página Propiedades.](/help/assets/dynamic-media/assets/msma-audiotracks2.png)*Pestaña Subtítulos y pistas de audio de la página Propiedades del vídeo.*
 
 1. (Opcional) Para agregar uno o más archivos de subtítulos a un vídeo, haga lo siguiente:
    * Seleccionar **[!UICONTROL Cargar subtítulos]**.
@@ -627,8 +627,8 @@ Los subtítulos y subtítulos añadidos son compatibles con los formatos WebVTT 
      |--- |--- |
      | Nombre de archivo | El nombre de archivo predeterminado se deriva del nombre de archivo original. El nombre de archivo solo se puede cambiar durante la carga y no se puede cambiar más adelante. Los requisitos de caracteres de nombre de archivo son los mismos que para AEM Assets.<br>No se puede utilizar el mismo nombre de archivo para archivos de rótulo y de pista de audio adicionales. |
      | Idioma | Seleccione el idioma del pie de ilustración. |
-     | Tipo | Seleccione el tipo de rótulo que está utilizando.<br>**Rótulo** : Texto del pie de ilustración que se muestra con el vídeo que traduce o transcribe el cuadro de diálogo.<br>**Rótulo** - El texto del pie de ilustración también incluye ruidos de fondo, diferenciación del orador y otra información relevante, junto con la traducción o transcripción del diálogo, lo que hace que el contenido sea más accesible para las personas sordas o con dificultades auditivas. |
-     | Etiqueta | El texto que se muestra para el nombre del pie de ilustración en la **[!UICONTROL Seleccionar audio o pie de ilustración]** lista emergente en el reproductor de contenido. La etiqueta es lo que ve un cliente y que corresponde a un pie de ilustración o seguimiento de pie de ilustración. Por ejemplo, `English (CC)`. |
+     | Tipo | Seleccione el tipo de rótulo que está utilizando.<br>**Subtítulo** : Texto del pie de ilustración que se muestra con el vídeo que traduce o transcribe el cuadro de diálogo.<br>**Rótulo** - El texto del pie de ilustración también incluye ruidos de fondo, diferenciación del orador y otra información relevante, junto con la traducción o transcripción del diálogo, lo que hace que el contenido sea más accesible para las personas sordas o con dificultades auditivas. |
+     | Etiqueta | El texto que se muestra para el nombre del pie de ilustración en la **[!UICONTROL Seleccionar audio o pie de ilustración]** lista emergente en el reproductor de contenido. La etiqueta es lo que ve un cliente y que corresponde a un subtítulo o pista de rótulo. Por ejemplo, `English (CC)`. |
 
      Si es necesario, puede cambiar o editar los metadatos de los subtítulos más adelante. Cuando se publica el vídeo, estos detalles se reflejan en las direcciones URL públicas de los vídeos publicados.
 
@@ -704,7 +704,7 @@ Puede observar el estado del ciclo vital de cualquier subtítulo o archivo de pi
 | Error | El estado &quot;failed&quot; significa que no se ha completado el procesamiento de un subtítulo o archivo de pista de audio. Elimine el pie de ilustración o el archivo de pista de audio y vuelva a cargarlo. |
 | Una página sin publicar   | Cuando se cancela la publicación explícita de un vídeo principal publicado, también se cancela la publicación de cualquier subtítulo o archivo de pista de audio que haya agregado al vídeo. |
 
-![Columna de estado resaltada para los campos Subtítulos y Pistas de audio.](/help/assets/dynamic-media/assets/msma-lifecycle-status.png)*Estado del ciclo vital de cada subtítulo cargado y archivo de seguimiento de audio.*
+![Columna de estado resaltada para los campos Subtítulos y Pistas de audio.](/help/assets/dynamic-media/assets/msma-lifecycle-status2.png)*Estado del ciclo vital de cada subtítulo cargado y archivo de seguimiento de audio.*
 
 ### Establecer el audio predeterminado para un vídeo que tiene varias pistas de audio
 
@@ -729,7 +729,7 @@ Sin embargo, cualquier archivo de pista de audio cargado puede establecerse como
 1. Seleccionar **[!UICONTROL Establecer como predeterminado]**.
 En el **Establecer como predeterminado** , seleccione **[!UICONTROL Reemplazar]**.
 
-   ![El encabezado Pistas de audio con un nombre de archivo de pista de audio seleccionado y resaltado el botón &quot;Establecer como predeterminado&quot;.](/help/assets/dynamic-media/assets/msma-defaultaudiotrack.png)*Configuración de la pista de audio predeterminada para un vídeo.*
+   ![El encabezado Pistas de audio con un nombre de archivo de pista de audio seleccionado y resaltado el botón &quot;Establecer como predeterminado&quot;.](/help/assets/dynamic-media/assets/msma-defaultaudiotrack2.png)*Configuración de la pista de audio predeterminada para un vídeo.*
 
 1. En la esquina superior derecha, seleccione **[!UICONTROL Guardar y cerrar]**.
 1. Publique el vídeo. Consulte [Publicar recursos](publishing-dynamicmedia-assets.md).
