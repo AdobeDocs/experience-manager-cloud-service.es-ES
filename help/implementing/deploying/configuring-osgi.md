@@ -3,9 +3,9 @@ title: Configurar OSGi para Adobe Experience Manager as a Cloud Service
 description: Configuración de OSGi con valores secretos y valores específicos del entorno
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
+source-git-commit: b4c87b79c714c408daea08e81fbe719bc9f5adf0
 workflow-type: tm+mt
-source-wordcount: '3269'
+source-wordcount: '3302'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ AEM Puede administrar las opciones de configuración de los componentes de OSGi 
 
 ## Archivos de configuración de OSGi {#osgi-configuration-files}
 
-AEM Los cambios de configuración se definen en los paquetes de código del proyecto de la (`ui.apps`) como archivos de configuración (`.cfg.json`) en las carpetas de configuración específicas del modo de ejecución:
+AEM Los cambios de configuración se definen en los paquetes de código del proyecto de la (`ui.config`) como archivos de configuración (`.cfg.json`) en las carpetas de configuración específicas del modo de ejecución:
 
 `/apps/example/config.<runmode>`
 
@@ -44,6 +44,10 @@ siguiendo los `cfg.json` Formato de configuración OSGi.
 >[!NOTE]
 >
 >AEM Versiones anteriores de archivos de configuración OSGi compatibles con el uso de diferentes formatos de archivo, como `.cfg`, `.config` y como XML `sling:OsgiConfig` definiciones de recursos. Estos formatos están reemplazados por el `.cfg.json` Formato de configuración OSGi.
+
+>[!NOTE]
+>
+>AEM Las configuraciones de OSGi no se almacenan en /apps como las instancias de típicas en la nube, sino en una ubicación externa. Proteger Cloud Manager [Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) para ver las configuraciones de OSGi.
 
 ## Resolución de modo de ejecución {#runmode-resolution}
 
@@ -324,7 +328,7 @@ Si una propiedad OSGi requiere valores diferentes para autor y para publicación
 
 En los ejemplos siguientes, se supone que hay tres entornos de desarrollo, además de los entornos de ensayo y producción.
 
-**Ejemplo: 1**
+**Ejemplo 1**
 
 La intención es para el valor de la propiedad OSGi `my_var1` debe ser el mismo para stage y prod, pero diferente para cada uno de los tres entornos de desarrollo.
 
@@ -359,7 +363,7 @@ config.dev
 </tr>
 </table>
 
-**Ejemplo: 2**
+**Ejemplo 2**
 
 La intención es para el valor de la propiedad OSGi `my_var1` para diferir para stage, prod y para cada uno de los tres entornos de desarrollo. Por lo tanto, se debe llamar a la API de Cloud Manager para establecer el valor de `my_var1` para cada entorno de desarrollo.
 
@@ -404,7 +408,7 @@ config.dev
 </tr>
 </table>
 
-**Ejemplo: 3**
+**Ejemplo 3**
 
 La intención es para el valor de la propiedad OSGi `my_var1` que sea lo mismo para la fase, la producción y solo uno de los entornos de desarrollo, pero que difiera para los otros dos entornos de desarrollo. En este caso, se debe llamar a la API de Cloud Manager para establecer el valor de `my_var1` para cada uno de los entornos de desarrollo, incluido el entorno de desarrollo, que debe tener el mismo valor que fase y producción. No heredará el valor establecido en la carpeta **config**.
 
