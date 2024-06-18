@@ -4,10 +4,10 @@ description: Aprenda a configurar funciones de redes avanzadas como una VPN o un
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
-source-wordcount: '5332'
-ht-degree: 100%
+source-git-commit: a21a0cda116077a3752f33aaff6dc6c180b855aa
+workflow-type: tm+mt
+source-wordcount: '5744'
+ht-degree: 92%
 
 ---
 
@@ -238,7 +238,7 @@ La configuración de la dirección IP de salida dedicada es idéntica a la [sali
 
 >[!INFO]
 >
->La capacidad de reenvío de Splunk no es posible desde una dirección IP de salida dedicada.
+>Si se configura una IP de salida dedicada, el reenvío de Splunk seguirá utilizando los intervalos de salida dinámicos. El reenvío de Splunk no se puede configurar para usar una IP de salida dedicada.
 
 ### Configuración de la IU {#configuring-dedicated-egress-provision-ui}
 
@@ -806,3 +806,49 @@ La agrupación de conexiones es una técnica adaptada para crear y mantener un r
 La implementación de una estrategia adecuada de agrupación de conexiones es una medida proactiva para corregir una supervisión común en la configuración del sistema, que a menudo conduce a un rendimiento subóptimo. Al establecer correctamente un grupo de conexiones, Adobe Experience Manager (AEM) puede mejorar la eficacia de las llamadas externas. Esto no solo reduce el consumo de recursos, sino que también mitiga el riesgo de interrupciones en el servicio y disminuye la probabilidad de se produzcan errores en las solicitudes al comunicarse con servidores de flujo ascendente.
 
 A la luz de esta información, Adobe recomienda revaluar la configuración actual de AEM y considerar la incorporación deliberada de la agrupación de conexiones junto con la configuración de redes avanzadas. Al administrar el número de conexiones paralelas y minimizar la posibilidad de conexiones obsoletas, estas medidas reducen el riesgo de que los servidores proxy alcancen sus límites de conexión. Por lo tanto, esta implementación estratégica está diseñada para reducir la probabilidad de que las solicitudes no lleguen a los puntos finales externos.
+
+#### Preguntas frecuentes sobre límites de conexión
+
+Cuando se utiliza la red avanzada, el número de conexiones es limitado para garantizar la estabilidad entre entornos y evitar que los entornos más bajos agoten las conexiones disponibles.
+
+AEM Las conexiones tienen un límite de 1000 por instancia de y las alertas se envían a los clientes cuando el número alcanza los 750.
+
+##### ¿El límite de conexión se aplica solamente al tráfico saliente desde puertos no estándar o a todo el tráfico saliente?
+
+El límite solo es para conexiones que utilizan redes avanzadas (salida en puertos no estándar, con IP de salida dedicada o VPN).
+
+##### No vemos una diferencia significativa en el número de conexiones salientes. ¿Por qué recibimos la notificación ahora?
+
+Si el cliente crea conexiones dinámicamente (por ejemplo, una o más para cada solicitud), un aumento en el tráfico puede provocar que las conexiones se disparen.
+
+##### ¿Es posible que experimentáramos una situación similar en el pasado sin ser alertados?
+
+Las alertas solo se envían cuando se alcanza el límite temporal.
+
+##### ¿Qué sucede si se alcanza el límite máximo?
+
+AEM Cuando se alcanza el límite estricto, se descartan nuevas conexiones de salida desde la red avanzada (salida en puertos no estándar, mediante IP de salida dedicada o VPN) para protegerse contra un ataque DoS.
+
+##### ¿Se puede aumentar el límite?
+
+No, tener un gran número de conexiones puede causar un impacto significativo en el rendimiento y un DoS en todos los pods y entornos.
+
+##### AEM ¿El sistema cierra automáticamente las conexiones después de un periodo determinado
+
+Sí, las conexiones se cierran en el nivel de JVM y en diferentes puntos de la infraestructura de red. Sin embargo, será demasiado tarde para cualquier servicio de producción. Las conexiones deben cerrarse explícitamente cuando ya no sean necesarias o devolverse al grupo al utilizar la agrupación de conexiones. De lo contrario, el consumo de recursos será demasiado alto y puede causar el agotamiento de los recursos.
+
+##### Si se alcanza el límite máximo de conexión, ¿afecta a las licencias y conlleva costes adicionales?
+
+No, no hay ninguna licencia o coste asociado a este límite. Es un límite técnico.
+
+##### ¿Qué tan cerca estamos del límite? ¿Cuál es el límite máximo?
+
+La alerta se activa cuando las conexiones superan los 750. AEM El límite máximo es de 1000 conexiones por instancia de.
+
+##### ¿Este límite se aplica a las VPN?
+
+Sí, el límite se aplica a las conexiones que usan redes avanzadas, incluidas las VPN.
+
+##### Si utilizamos una IP de salida dedicada, ¿seguirá siendo aplicable este límite?
+
+Sí, el límite sigue siendo aplicable si se utiliza una IP de salida dedicada.
