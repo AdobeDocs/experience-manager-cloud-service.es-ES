@@ -3,7 +3,7 @@ title: Introducción a Edge Delivery Services de AEM Forms. Creación de un form
 description: 'Elabore formularios perfectos, ¡y rápido! ⚡ Creación de documentos en Edge Delivery Services de AEM Forms: velocidad increíble, formularios compatibles con SEO y motores de búsqueda para usuarios más satisfechos.'
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
+source-git-commit: f69336073addb106cde01d72c921f3b98ff6337a
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 99%
