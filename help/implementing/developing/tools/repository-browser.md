@@ -6,9 +6,9 @@ seo-description: The repository browser provides a read-only view into the repos
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 9d1b51b465a148551de93f8180b056b8e7752db5
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '871'
 ht-degree: 1%
 
 ---
@@ -33,15 +33,13 @@ Accesible desde el [AEM Consola de desarrollador as a Cloud Service](/help/imple
 
 AEM Se deben cumplir las siguientes condiciones para acceder a la Consola de desarrollador as a Cloud Service o al Explorador de repositorios de la aplicación
 
-AEM Para acceder a la consola de desarrollador as a Cloud Service de la:
+AEM Para acceder a la consola de desarrollador as a Cloud Service de la, consulte [Acceso a Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
 
-* Para los programas de producción, los usuarios deben tener **Cloud Manager: función de desarrollador** en Adobe Admin Console
-* AEM Para los programas de zonas protegidas, está disponible para cualquier usuario con un perfil de producto que les permita acceder a las zonas as a Cloud Service de la.
+AEM Para acceder al Explorador de repositorios, los requisitos son los mismos que para la Consola de desarrollador as a Cloud Service de la (especificada arriba). Para ver el contenido del Explorador de repositorios de una instancia concreta:
 
-Para acceder al Explorador de repositorios:
+* AEM Instancias de autor: usuarios con el perfil de producto de usuarios de para **Instancia de autor** Puede ver el explorador del repositorio con un acceso de lectura mínimo; los permisos del usuario se respetan al examinar el repositorio. AEM Los usuarios con el Perfil de producto de los administradores de la pueden ver el explorador del repositorio con acceso de lectura completo.
 
-* Los usuarios deben tener el **Cloud Manager: Desarrollador** AEM Función en la consola de desarrollador as a Cloud Service de la para ver instancias de autor y publicación.
-* AEM Además, para el autor, los usuarios con el Perfil de producto de usuarios de la aplicación pueden ver el explorador del repositorio con un acceso de lectura mínimo; los permisos del usuario se respetan al examinar el repositorio. AEM Los usuarios con el Perfil de producto de los administradores de la pueden ver el explorador del repositorio con acceso de lectura completo.
+* AEM Instancias de publicación: usuarios con el Perfil de producto de usuarios de la aplicación para usuarios de la página de inicio de sesión de la página de **Instancia de publicación** Puede ver el explorador del repositorio con un acceso de lectura mínimo. Sin ese conjunto de perfiles de producto, los usuarios navegarán como usuarios anónimos y algunas rutas no aparecerán debido a permisos limitados.
 
 Para obtener más información sobre la configuración de permisos de usuario, consulte la [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
 

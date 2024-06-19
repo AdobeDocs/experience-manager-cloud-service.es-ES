@@ -4,7 +4,7 @@ description: Los proyectos de Maven en Adobe Experience Manager as a Cloud Servi
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 520ab0229b4f00a1de981209bf26059b0d00c3da
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 2%
@@ -164,7 +164,7 @@ Por ejemplo:
 + Paquete de código A implementado en `/apps/a`
 + El paquete de código B se implementa en `/apps/a/b`
 
-Si no se establece una dependencia de nivel de paquete a partir del paquete de código B en el paquete de código A, el paquete de código B puede implementarse primero en `/apps/a`. Luego iría seguido del paquete de código B, que se implementa en `/apps/a`. El resultado es la eliminación del instalado anteriormente `/apps/a/b`.
+Si no se establece una dependencia de nivel de paquete a partir del paquete de código B en el paquete de código A, el paquete de código B puede implementarse primero en `/apps/a`. Si, va seguido del paquete de código A, que se implementa en `/apps/a`, el resultado es la eliminación del instalado anteriormente `/apps/a/b`.
 
 En este caso:
 
