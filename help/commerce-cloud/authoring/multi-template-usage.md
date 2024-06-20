@@ -9,11 +9,12 @@ audience: marketer
 feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
-exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 49%
+source-wordcount: '178'
+ht-degree: 45%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 49%
 
 >[!NOTE]
 >
-> Esta funcionalidad solo funciona para tiendas basadas en CIF (por ejemplo, Venia).
+> CIF Esta funcionalidad solo funciona para escaparates basados en la distribución de tiendas (por ejemplo, Venia), según el tipo de tienda que haya en el mercado (por ejemplo, Venia).
 
 Los [componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components) ofrecen a los autores de contenido la capacidad de crear categorías y páginas de productos adicionales. Estas páginas pueden enriquecerse con contenido de marketing adicional y configurarse para dirigirse a categorías y productos específicos. El siguiente vídeo describe la configuración de esta función.
 
@@ -34,6 +35,6 @@ Puede encontrar más información sobre este tema en los siguientes recursos:
 - [Configuraciones de URL avanzadas](../configuring/advanced-url-configuration.md)
 - [Componentes principales del CIF de AEM: configuración de página de varios catálogos](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
 
-## Medios relacionados {#related}
+## Recursos relacionados {#related}
 
 También es posible segmentar dinámicamente regiones específicas de una página y reutilizar la misma plantilla. Obtenga información sobre cómo [AEM enriquecer datos de productos con contenido asociado de la](./enrich-product-associated-content.md).

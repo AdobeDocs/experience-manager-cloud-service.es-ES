@@ -2,9 +2,11 @@
 title: Primer inicio de sesión en Screens as a Cloud Service
 description: En esta página se describen los primeros pasos para empezar a utilizar Screens as a Cloud Service.
 exl-id: d3a6aa5d-226b-484d-97ea-0b8312c7a0fd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Screens Deployments
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '196'
 ht-degree: 1%
 
 ---
@@ -14,7 +16,7 @@ ht-degree: 1%
 
 ## El proceso de incorporación {#onboarding-process}
 
-Después de firmar el contrato, Adobe Managed Services (AMS) inicia la incorporación del cliente. Durante la fase de aprovisionamiento, cuando AMS aprovisiona la instancia de AMS después del contrato, se instala el paquete de funciones de AMS-Screens-Cloud. El paquete de funciones permite al proveedor de servicios de Screens conectarse a la instancia de AMS o al proveedor de contenido de Screens.
+Después de firmar el contrato, el Adobe de Managed Services (AMS) inicia la incorporación del cliente. Durante la fase de aprovisionamiento, cuando AMS aprovisiona la instancia de AMS después del contrato, se instala el paquete de funciones de AMS-Screens-Cloud. El paquete de funciones permite al proveedor de servicios de Screens conectarse a la instancia de AMS o al proveedor de contenido de Screens.
 
 ## Adición de usuarios a Adobe Admin Console {#admin-console}
 

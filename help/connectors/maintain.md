@@ -2,7 +2,9 @@
 title: Mantenimiento de un conector de AEM
 description: AEM Obtenga información sobre cómo mantener y actualizar el conector de la después del envío inicial.
 exl-id: 8122a8c8-6577-4907-8f6e-52711eed3970
-source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 92%

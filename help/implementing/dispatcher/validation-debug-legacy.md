@@ -4,9 +4,10 @@ description: Validación y depuración mediante herramientas de Dispatcher (here
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2337'
 ht-degree: 1%
 
 ---
@@ -252,7 +253,7 @@ Hay dos secciones en la configuración de su granja de servidores que **debe** i
 }
 ```
 
-And:
+Y:
 
 ```
 /allowedClients {

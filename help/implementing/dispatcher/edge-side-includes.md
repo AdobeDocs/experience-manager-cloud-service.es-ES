@@ -1,15 +1,17 @@
 ---
-title: Edge Side Includes
+title: Edge Side incluye
 description: La CDN administrada por Adobe ahora es compatible con Edge Side Includes (ESI), un lenguaje de marcado para el ensamblado de contenido web dinámico a nivel de Edge.
 feature: Dispatcher
-source-git-commit: 8f9173e45dd802ecced21531dfa161890e4a8af1
+exl-id: 35093477-2788-4f69-80a9-899f43567cae
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '541'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-# Edge Side Includes {#edge-side-includes}
+# Edge Side incluye {#edge-side-includes}
 
 >[!NOTE]
 >Esta función aún no está disponible de forma general. Para unirse al programa de adopción anticipada, envíe un correo electrónico a `aemcs-cdn-config-adopter@adobe.com` y describa su caso de uso.

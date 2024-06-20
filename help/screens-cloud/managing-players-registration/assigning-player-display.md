@@ -2,10 +2,12 @@
 title: Asignación del reproductor a una pantalla en Pantallas as a Cloud Service
 description: Aprenda a asignar un reproductor a una pantalla en Pantallas as a Cloud Service.
 exl-id: d5f5b087-d17a-427f-9bf2-7451eb4e1df6
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+feature: Developing Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -35,6 +37,6 @@ Siga los pasos a continuación para asignar un reproductor a una pantalla:
 
 Después de asignar una pantalla a un reproductor, como se muestra en la sección anterior, verá la pantalla asignada debajo de **PANTALLA ASIGNADA** panel.
 
-Ahora, la pantalla se asigna al reproductor y el canal comienza a reproducir el contenido. El reproductor debe descargar y comenzar a reproducir el contenido. **Enhorabuena.**
+Ahora, la pantalla se asigna al reproductor y el canal comienza a reproducir el contenido. El reproductor debe descargar y comenzar a reproducir el contenido. **¡Felicitaciones!**
 
 ![imagen](/help/screens-cloud/assets/player/output.gif)

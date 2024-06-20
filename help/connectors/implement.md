@@ -2,7 +2,9 @@
 title: Implementación de un conector de AEM
 description: Obtenga información sobre los conectores, lo que pueden hacer y cómo implementar estas valiosas herramientas en Experience Manager.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 96%
@@ -15,7 +17,7 @@ Implementación de un conector de AEM
 
 A continuación se proporcionan referencias útiles para la creación de [Conectores AEM](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html) y deben leerse junto con directrices sobre el [envío](submit.md) y el [mantenimiento](maintain.md) de los conectores.
 
-AEM Se puede obtener una licencia de desarrollador para la licencia de desarrollador de para el mediante la variable [Programa de intercambio de Adobe](https://partners.adobe.com/exchangeprogram/experiencecloud).
+AEM Se puede obtener una licencia de desarrollador para la licencia de desarrollador de para el mediante la variable [Programa de Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
 Patrones de integración comunes
 ---------------------------

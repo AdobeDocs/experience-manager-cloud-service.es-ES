@@ -3,7 +3,9 @@ title: AEM Integración de Adobe Commerce y de con Commerce integration framewor
 description: AEM Las soluciones de Adobe Commerce y de se integran perfectamente con el Commerce integration framework CIF (). CIF AEM La permite a los usuarios acceder a una instancia de Adobe Commerce y comunicarse con Adobe Commerce a través de GraphQL. AEM También permite a los autores de la utilizar los seleccionadores de productos y categorías, así como la consola de productos para examinar los datos de productos y categorías que se obtienen a petición de Adobe Commerce. Además, CIF ofrece una tienda predeterminada que puede acelerar los proyectos de comercio.
 thumbnail: aem-magento-architecture.jpg
 exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b
-source-git-commit: 6d63328ca17a00e0369c57714409f3f448cb311f
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 22%
@@ -40,7 +42,7 @@ Para los componentes del lado del cliente, que se crean mediante [Reaccionar](ht
 
 ![Arquitectura de los componentes principales del CIF de AEM](../assets/cif-component-architecture.jpg)
 
-[AEM Componentes principales de CIF](https://github.com/adobe/aem-core-cif-components) siga patrones de diseño y prácticas recomendadas muy similares a los de la [AEM Componentes principales de WCM](https://github.com/adobe/aem-core-wcm-components).
+[AEM CIF Componentes principales de](https://github.com/adobe/aem-core-cif-components) siga patrones de diseño y prácticas recomendadas muy similares a los de la [AEM Componentes principales de WCM](https://github.com/adobe/aem-core-wcm-components).
 
 La lógica empresarial y la comunicación back-end con Adobe Commerce AEM CIF para los componentes principales de la se implementan en los modelos Sling. En caso de que sea necesario personalizar esta lógica para cumplir los requisitos específicos del proyecto, se puede utilizar el patrón de delegación para modelos Sling.
 
@@ -52,5 +54,5 @@ AEM CIF Dentro de los proyectos, los componentes principales de la y los compone
 
 ## Búsqueda {#search}
 
-CIF La aplicación proporciona una lista para usar de forma predeterminada, [Componente principal de búsqueda](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) es una experiencia de búsqueda procesada en el servidor basada en [API de Commerce GraphQL](https://developer.adobe.com/commerce/webapi/graphql/). Los clientes de Commerce tienen la opción de usar [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=en) en su lugar. Seguir esto [vincular](/help/commerce-cloud/integrating/live-search-plp.md) CIF para obtener más información acerca de la integración de la búsqueda en directo de.
+CIF La aplicación proporciona una lista para usar de forma predeterminada, [Componente principal de búsqueda](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) es una experiencia de búsqueda procesada en el servidor basada en [API de Commerce GraphQL](https://developer.adobe.com/commerce/webapi/graphql/). Los clientes de Commerce pueden usar [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=en) en su lugar. Seguir esto [vincular](/help/commerce-cloud/integrating/live-search-plp.md) CIF para obtener más información acerca de la integración de la búsqueda en directo de.
 

@@ -2,7 +2,9 @@
 title: Encabezados HTTP personalizados
 description: CIF Obtenga información sobre cómo configurar encabezados HTTP personalizados que se envían al motor de comercio, junto con los que ya envía el administrador de la aplicación de correo electrónico de.
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 3%

@@ -2,10 +2,12 @@
 title: Recorrido del autor de contenido de AEM Commerce
 description: Comience aquí para obtener un recorrido guiado a través de la creación de AEM Commerce
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 81%
+ht-degree: 95%
 
 ---
 
@@ -25,7 +27,7 @@ Esta guía le guiará por los temas de creación de contenidos de Commerce y AEM
 
 ## Recorridos de documentación de AEM {#documentation-journeys}
 
-[Un Recorrido de documentación](/help/journey-documentation/documentation-journeys.md) AEM AEM une muchos temas y características diferentes y complicados al proporcionar una narrativa que ayuda al lector, que puede ser nuevo en la comprensión, comprensión y solución de un problema empresarial de principio a fin, mientras que asume un conocimiento previo mínimo de la materia o el conocimiento.
+[Un recorrido de documentación](/help/journey-documentation/documentation-journeys.md) une muchos temas y características diferentes y complicados. Proporciona una narrativa que ayuda al lector (que puede ser nuevo en AEM) a entender y resolver un problema empresarial de principio a fin, mientras asume que se tiene un conocimiento previo mínimo de AEM.
 
 Los recorridos de documentación están diseñados en torno a los principios de las prácticas recomendadas, basados en las últimas investigaciones de Adobe, la experiencia de implementación comprobada de los consultores de Adobe y los comentarios sobre los proyectos de los clientes.
 
@@ -35,13 +37,13 @@ Si desea saber cómo recomienda Adobe resolver los casos de sitios comerciales c
 
 Este recorrido está diseñado para el autor de contenido de AEM Commerce. Este recorrido describe los requisitos, pasos y enfoques para la introducción y la gestión de las páginas del catálogo, las plantillas y las experiencias de producto completas.
 
-La información de este recorrido puede ser útil para otras personas, pero parte de la información es superflua para ciertas funciones. Manténgase atento a recorridos futuros que cubran funciones adicionales.
+Por supuesto, la información de este recorrido puede ser útil para otras personas, pero parte de la información puede ser superflua para otras en diferentes funciones. Manténgase atento a recorridos futuros que cubran funciones adicionales.
 
 ## El recorrido {#the-journey}
 
 Explorará muchos temas en este recorrido. Los siguientes artículos le proporcionarán conocimientos básicos y le permitirán acceder a documentación técnica detallada.
 
-Aunque puede ir directamente a una parte concreta del recorrido, muchos conceptos se basan en los de artículos anteriores. AEM Por lo tanto, si es nuevo en el sector de Contenido y comercio de la, Adobe recomienda empezar por el principio y avanzar de forma secuencial.
+Aunque puede ir directamente a una parte concreta del recorrido, muchos conceptos se basan en los de artículos anteriores. AEM Por lo tanto, si es nuevo en la creación de contenido y Commerce, Adobe recomienda comenzar por el principio y avanzar secuencialmente.
 
 | # | Artículo | Descripción |
 |---|---|---|

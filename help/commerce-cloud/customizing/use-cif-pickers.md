@@ -8,16 +8,17 @@ activity: develop
 audience: developer
 feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
-source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 0%
 
 ---
 
-# AEM Seleccionadores de creación de contenido y comercio de {#cif-pickers}
+# AEM Selector de creación de contenido y Commerce {#cif-pickers}
 
-AEM AEM La creación de contenido y comercio proporciona un conjunto de herramientas de creación para ayudar a los autores y especialistas en marketing a trabajar de forma eficaz con los datos y catálogos de productos de comercio. CIF CIF El Selector de productos y el Selector de categorías forman parte de los complementos de productos y son utilizados por los componentes principales de la. Los proyectos pueden utilizar estos selectores en cualquier cuadro de diálogo de componente para seleccionar productos o categorías.
+AEM La creación de contenido y Commerce AEM proporciona un conjunto de herramientas de creación para ayudar a los autores y especialistas en marketing a trabajar de forma eficaz con los datos y los catálogos de productos de comercio. CIF CIF El Selector de productos y el Selector de categorías forman parte de los complementos de productos y son utilizados por los componentes principales de la. Los proyectos pueden utilizar estos selectores en cualquier cuadro de diálogo de componente para seleccionar productos o categorías.
 
 ## Selector de productos {#product-picker}
 

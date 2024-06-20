@@ -3,8 +3,9 @@ title: Cargar opciones de lista desplegable desde una dirección URL u otra hoja
 description: Las opciones de la lista desplegable se incluyen en una hoja de cálculo distinta y luego se importan a la hoja de cálculo principal a través de la dirección URL proporcionada.
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
-source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 100%
 

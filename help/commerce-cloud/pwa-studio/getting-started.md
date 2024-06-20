@@ -1,11 +1,12 @@
 ---
 title: AEM Introducción a la extensión de para PWA Studio
-description: AEM Obtenga información sobre cómo implementar un proyecto de comercio y contenido sin encabezado de con PWA Studio.
+description: AEM Obtenga información sobre cómo implementar un proyecto de Commerce y contenido sin encabezado de con PWA Studio.
 topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%
@@ -62,7 +63,7 @@ Para conectar el PWA Studio con el extremo de GraphQL AEM de la, puede utilizar 
 
    Puede encontrar más detalles sobre la personalización del componente Navegación en [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) y en el [Marco de extensibilidad](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) documentación del PWA Studio.
 
-1. AEM El cliente Apollo espera el punto final de GraphQL de la en `<https://pwa-studio/endpoint.js>`. Para asignar el extremo a esta ubicación, personalice la configuración UPWARD de la aplicación PWA Studio: a. AEM Añada la variable_CFM_GRAPHQL AEM a pwa-root/.env y adáptela para que apunte a su punto final de GraphQL Fragmentos de contenido de.
+1. AEM El cliente Apollo espera el punto final de GraphQL de la en `<https://pwa-studio/endpoint.js>`. Para asignar el punto de conexión a esta ubicación, personalice la configuración UPWARD de la aplicación de PWA Studio AEM: a. Agregue la variable_CFM_GRAPHQL AEM a pwa-root/.env y adáptela para que apunte a su punto de conexión de GraphQL Fragmentos de contenido.
 
    Ejemplo: `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
 

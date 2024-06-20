@@ -2,9 +2,11 @@
 title: Creación de experiencias de producto
 description: Aprenda a crear contenido de producto que luego se pueda utilizar en varios canales para crear una experiencia de compra envolvente.
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '1157'
 ht-degree: 2%
 
 ---
@@ -15,7 +17,7 @@ Obtenga información sobre cómo administrar las experiencias de producto.
 
 ## La historia hasta ahora {#story-so-far}
 
-En el documento anterior del recorrido de contenido y comercio de Adobe Experience Manager AEM (), [Administrar experiencias del catálogo de productos clasificados](staged-catalog.md), ha aprendido a administrar las experiencias del catálogo de productos clasificados.
+En el documento anterior del Contenido de Adobe Experience Manager AEM () y del recorrido de Commerce, [Administrar experiencias del catálogo de productos clasificados](staged-catalog.md), ha aprendido a administrar las experiencias del catálogo de productos clasificados.
 
 ## Objetivo {#objective}
 
@@ -27,7 +29,7 @@ AEM La administración de experiencias de producto es la disciplina para decorar
 
 AEM En la documentación de, puede crear varios tipos de contenido y vincularlos al catálogo de productos. El contenido asociado se puede descubrir y utilizar fácilmente, lo que conlleva una alta productividad.
 
-### Assets {#assets}
+### Recursos {#assets}
 
 En un nivel superior, hay dos tipos de activos relacionados con los productos: producto y marketing. Los comerciantes administran los recursos del producto y se centran en mostrar el producto (principalmente delante de un fondo neutro). Los recursos se administran en la solución de comercio o en AEM Assets (con una integración de recursos a la solución de comercio/pim).
 
@@ -97,22 +99,22 @@ En primer lugar, arrastre y suelte un componente de detalles del producto en la 
 
 ![página de producto de pem](assets/pem-page-product.png)
 
-Si ha creado contenido asociado para ese producto, cambie en la barra lateral de Recursos a **Contenido de comercio asociado**. AEM Esta pestaña le muestra todo el contenido de la que estaba asociado a este producto. Esto le permite ahora embellecer rápidamente las páginas con cualquier contenido asociado.
+Si ha creado contenido asociado para ese producto, cambie en la barra lateral de Recursos a **Contenido de Commerce asociado**. AEM Esta pestaña le muestra todo el contenido de la que estaba asociado a este producto. Esto le permite ahora embellecer rápidamente las páginas con cualquier contenido asociado.
 
 ![página enriquecida pem](assets/pem-page-enriched.png)
 
 ## ¿Fin del recorrido? {#end-of-journey}
 
-¡Enhorabuena! AEM ¡Ha completado el recorrido para desarrolladores de contenido y comercio de! Ahora debería hacer lo siguiente:
+Felicitaciones. AEM ¡Ha completado el recorrido para desarrolladores de contenido y Commerce de! Ahora debería hacer lo siguiente:
 
 * AEM descubra cómo puede asociar cualquier contenido de la a objetos del catálogo de productos
 * utilice marcadores de posición para enriquecer individualmente las páginas de productos y categorías
 * Obtenga información sobre cómo hacer que el contenido se pueda comprar y utilice la pestaña de contenido asociada
 
-AEM Ya está listo para administrar las experiencias de producto mediante Contenido y comercio de. AEM Sin embargo, Contenido y comercio de la tienen muchas opciones adicionales disponibles. Consulte algunos de los recursos adicionales disponibles en la [Sección Recursos adicionales](#additional-resources) donde puede obtener más información sobre las funciones que ha visto en este recorrido.
+AEM Ya está listo para administrar las experiencias del producto mediante Contenido de la y Commerce. AEM Sin embargo, Contenido de la aplicación y Commerce tienen muchas opciones adicionales disponibles. Consulte algunos de los recursos adicionales disponibles en la [Sección Recursos adicionales](#additional-resources) donde puede obtener más información sobre las funciones que ha visto en este recorrido.
 
 ## Recursos adicionales {#additional-resources}
 
-* [Creación de experiencias comerciales](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
+* [Creación de experiencias de Commerce](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
 * [Product Cockpit](/help/commerce-cloud/authoring/product-cockpit.md)
 * [Componente Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)

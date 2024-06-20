@@ -2,10 +2,12 @@
 title: Registro de reproductores en pantallas as a Cloud Service
 description: En esta página se describe cómo registrar reproductores en Screens as a Cloud Service.
 exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+feature: Developing Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 1%
+source-wordcount: '500'
+ht-degree: 13%
 
 ---
 

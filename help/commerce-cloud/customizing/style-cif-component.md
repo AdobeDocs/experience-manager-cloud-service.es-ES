@@ -11,7 +11,8 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '2342'
 ht-degree: 14%
@@ -87,7 +88,7 @@ A continuación, realice un pequeño cambio en el estilo Teaser para ver cómo s
 
    ![carpeta de comercio ui.frontend](../assets/style-cif-component/ui-frontend-commerce-folder.png)
 
-   Observe que hay varios Sass (`.scss`) archivos debajo de la carpeta. Estos archivos son los estilos específicos de Commerce para cada uno de los componentes de Commerce.
+   Observe que hay varios Sass (`.scss`) archivos debajo de la carpeta. Estos archivos son estilos específicos de Commerce para cada uno de los componentes de Commerce.
 
 1. Abra el archivo `_productteaser.scss`.
 
@@ -459,7 +460,7 @@ AEM Una vez que el código del proyecto se haya implementado para su uso en la a
 
    ![Varios teasers de producto](../assets/style-cif-component/multiple-teasers-final.png)
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
 Puede verificarlo en [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp) Compruebe que se ha implementado el archivo CSS actualizado: [http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css](http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css)
 

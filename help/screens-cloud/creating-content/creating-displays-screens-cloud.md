@@ -2,7 +2,9 @@
 title: Creación y administración de pantallas en pantallas as a Cloud Service
 description: En esta página se describe cómo crear y administrar pantallas en Pantallas as a Cloud Service.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Authoring Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 3%

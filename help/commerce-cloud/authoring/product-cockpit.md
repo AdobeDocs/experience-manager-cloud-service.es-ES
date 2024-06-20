@@ -2,9 +2,11 @@
 title: Product Cockpit
 description: Aprenda a trabajar con la cabina de productos, que proporciona una visión general unificada de los catálogos de productos vinculados y el contenido asociado.
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '433'
 ht-degree: 1%
 
 ---
@@ -33,7 +35,7 @@ La activación de las funciones de catálogo organizadas requiere autenticación
 
 ## Apertura de la cabina de productos {#opening-product-cockpit}
 
-AEM La forma más fácil de acceder a la cabina del producto es a través del menú &quot;Comercio&quot; en el menú principal de la barra de productos de la barra de herramientas, en el menú principal de la barra de herramientas. También es posible utilizar Omnisearch (búsqueda de Commerce) o abrir `https://<yourAEMInstance>/commerce.html`.
+La forma más fácil de acceder al Product Cockpit es a través del menú &quot;Commerce AEM&quot; en el menú principal de la barra de herramientas de la consola de producto, que se encuentra en el menú principal de la barra de herramientas. También es posible utilizar Omnisearch (buscar Commerce) o abrir `https://<yourAEMInstance>/commerce.html`.
 
 ![AEM menú de](../assets/aem-menu.png)
 
@@ -59,7 +61,7 @@ Al hacer clic en un producto, se cargan variaciones de productos si están dispo
 
 Se proporciona una búsqueda de texto completo sobre el catálogo de productos completo en la pestaña del filtro izquierdo para encontrar productos rápidamente.
 
-![buscar](../assets/search-cockpit.png)
+![búsqueda](../assets/search-cockpit.png)
 
 ## Exploración del catálogo de productos escalonado {#staged-product-catalogs}
 
@@ -71,7 +73,7 @@ De forma predeterminada, la cabina de productos muestra los datos del catálogo 
 
 Al hacer clic en el icono de propiedades de un producto o categoría, se abre la vista de propiedades del objeto seleccionado. Las propiedades abiertas de una variante de producto son iguales para abrir las propiedades de producto principales.
 
-### Fichas de comercio {#tabs}
+### Fichas de Commerce {#tabs}
 
 Las pestañas general y de variante muestran propiedades de comercio predefinidas que provienen del backend del comercio. Estos datos (incl. AEM variantes) son datos de solo lectura en el caso de los datos, ya que el sistema de registro es el back-end de comercio. La pestaña variante solo aparece para productos con variantes y muestra una lista de todas las variantes.
 
@@ -79,6 +81,6 @@ Las pestañas general y de variante muestran propiedades de comercio predefinida
 
 ### AEM Pestañas de contenido {#content-tabs}
 
-AEM AEM Estas pestañas, agrupadas por tipos de contenido de (Fragmentos de experiencias, Fragmentos de contenido, Recursos asociados), muestran contenido de la lista de contenido asociado con el objeto de comercio, que se encuentra asociado con el contenido de la lista. La acción &quot;Ver detalles&quot; abre una nueva pestaña del explorador con el contenido seleccionado.
+AEM AEM Estas pestañas, agrupadas por tipos de contenido de (Fragmentos de experiencias, Fragmentos de contenido, Recursos asociados), muestran contenido de la lista de contenido asociado con el objeto de comercio, que se encuentra asociado con el contenido de la lista de distribución de contenido. La acción &quot;Ver detalles&quot; abre una nueva pestaña del explorador con el contenido seleccionado.
 
 ![propiedades de contenido](../assets/content-properties.png)

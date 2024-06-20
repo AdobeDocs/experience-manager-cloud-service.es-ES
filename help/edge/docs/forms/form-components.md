@@ -3,8 +3,9 @@ title: Componentes de bloque de formulario adaptable y sus propiedades
 description: Este documento proporciona información general sobre los componentes de formulario y sus propiedades disponibles en Edge Delivery Services de AEM Forms.
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 703a48903c44678f6fe311de740b7c767c886ba5
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '1006'
 ht-degree: 100%
 

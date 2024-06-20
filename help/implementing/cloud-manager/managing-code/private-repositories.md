@@ -1,17 +1,19 @@
 ---
 title: Adición de repositorios privados en Cloud Manager
 description: Obtenga información sobre cómo configurar Cloud Manager para que funcione con sus propios repositorios privados de GitHub.
-source-git-commit: 7f598a623c3003b20a074c31749382df7f5f5ca6
+exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 48%
+ht-degree: 77%
 
 ---
 
-
 # Adición de repositorios privados en Cloud Manager {#private-repositories}
 
-Al configurar Cloud Manager para que funcione con sus propios repositorios privados de GitHub, puede validar su código directamente en el repositorio de GitHub a través de Cloud Manager, lo que elimina la necesidad de sincronizar su código de forma coherente con el repositorio de Adobe.
+Al configurar Cloud Manager para que funcione con sus propios repositorios privados de GitHub, puede validar el código directamente en su repositorio de GitHub a través de Cloud Manager, lo que elimina la necesidad de sincronizar de forma sistemática el código con el repositorio de Adobe.
 
 >[!NOTE]
 >
@@ -100,7 +102,7 @@ Cuando se cierra o se combina la solicitud de extracción, la canalización de c
 
 >[!TIP]
 >
->Ver el documento [Anotaciones de comprobación de GitHub](github-annotations.md) para obtener más información sobre la información proporcionada a través de GitHub cuando se ejecutan las comprobaciones de solicitudes de extracción.
+>Consulte el documento [Anotaciones de comprobación de GitHub](github-annotations.md) para obtener más información sobre la información proporcionada a través de GitHub cuando se ejecutan comprobaciones de solicitudes de extracción.
 
 >[!TIP]
 >
@@ -108,20 +110,20 @@ Cuando se cierra o se combina la solicitud de extracción, la canalización de c
 
 ## Asociación de repositorios privados con canalizaciones {#pipelines}
 
-Los repositorios privados validados se pueden asociar con [canalizaciones full-stack y frontend.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+Los repositorios privados validados se pueden asociar con [canalizaciones de pila completa y front-end.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
 
 >[!NOTE]
 >
->Las canalizaciones de nivel web y configuración no son compatibles con los repositorios privados.
+>Las canalizaciones de configuración de nivel web no son compatibles con los repositorios privados.
 
 ## Restricciones {#limitations}
 
-Se aplican ciertas limitaciones al usar repositorios privados con Cloud Manager.
+Se aplican ciertas restricciones al usar repositorios privados con Cloud Manager.
 
 * No puede pausar la validación de la solicitud de extracción mediante la comprobación de GitHub desde Cloud Manager.
    * Si el repositorio de GitHub se valida en Cloud Manager, Cloud Manager siempre intentará validar las solicitudes de extracción creadas para ese repositorio.
-* Si la aplicación de GitHub de Adobe se quita de su organización de GitHub, se eliminará la función de validación de solicitudes de extracción de todos los repositorios.
-* Las canalizaciones de nivel web y configuración no son compatibles con los repositorios privados.
-* No se creará ni insertará ninguna etiqueta de Git al utilizar repositorios privados en canalizaciones de pila completa de producción.
-* Las canalizaciones que utilizan repositorios privados y el déclencheur de compilación en la confirmación no se inician automáticamente cuando se inserta una nueva confirmación en la rama seleccionada.
-* [Funcionalidad de reutilización de artefactos](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) no se aplica a repositorios privados.
+* Si la aplicación de GitHub de Adobe se quita de su organización de GitHub, se quitará la función de validación de solicitudes de extracción de todos los repositorios.
+* Las canalizaciones de configuración de nivel web no son compatibles con los repositorios privados.
+* No se creará ni insertará ninguna etiqueta de Git al utilizar repositorios privados en canalizaciones de producción de pila completa.
+* Las canalizaciones que utilizan repositorios privados y el activador de compilación de compromiso no se inician automáticamente cuando se inserta un nuevo compromiso en la rama seleccionada.
+* La [funcionalidad de reutilización de artefactos](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) no se aplica a repositorios privados.

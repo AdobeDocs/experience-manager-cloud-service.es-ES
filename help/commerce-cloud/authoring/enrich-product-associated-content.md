@@ -10,10 +10,11 @@ feature: Commerce Integration Framework
 kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
-source-git-commit: d1fa9824375ef739e2fdb90e8fd625b43fbca77b
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '396'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -44,6 +45,6 @@ Los fragmentos de contenido son una función de Adobe Experience Manager que per
 Las páginas de contenido pueden asociarse con uno o más SKU de producto. Una vez asociada, la página se puede descubrir con búsquedas de palabras clave basadas en el SKU. Las páginas de contenido también se pueden incluir dinámicamente en una página de catálogo de productos mediante el uso de un marcador de posición y una asociación.
 
 
-## Medios relacionados {#related}
+## Recursos relacionados {#related}
 
 También es posible personalizar una plantilla completa para un conjunto específico de productos o categorías. Descubra cómo por [creación de varias categorías y páginas de producto](./multi-template-usage.md).

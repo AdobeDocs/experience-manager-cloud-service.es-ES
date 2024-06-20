@@ -3,7 +3,8 @@ title: Migración de la configuración de Dispatcher de AMS a AEM as a Cloud Ser
 description: Migración de la configuración de Dispatcher de AMS a AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 6023a13eb4ea0533ba2f6cd00fb9f824b08a3f4a
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '1499'
 ht-degree: 7%
@@ -258,6 +259,6 @@ Esto inicia el contenedor y expone a Apache en el puerto local 8080.
 
 ### Utilice la nueva configuración de Dispatcher
 
-Felicitaciones. Si el validador ya no informa ningún problema y el contenedor de docker se inicia sin errores ni advertencias, está listo para mover la configuración a una `dispatcher/src` subdirectorio del repositorio de Git.
+Enhorabuena. Si el validador ya no informa ningún problema y el contenedor de docker se inicia sin errores ni advertencias, está listo para mover la configuración a una `dispatcher/src` subdirectorio del repositorio de Git.
 
 **Los clientes que utilizan la versión 1 de configuración de AMS Dispatcher deben ponerse en contacto con el servicio de atención al cliente para ayudarles a migrar de la versión 1 a la versión 2 y así poder seguir las instrucciones anteriores.**

@@ -3,8 +3,9 @@ title: Uso de reCAPTCHA con Edge Delivery Services para AEM Forms as a Cloud Ser
 description: Uso de Google reCAPTCHA en un formulario EDS
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
-source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 100%
 
