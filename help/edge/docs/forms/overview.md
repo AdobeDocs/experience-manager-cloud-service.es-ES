@@ -4,10 +4,10 @@ description: Edge Delivery Services de AEM Forms está diseñado para ofrecer un
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: f69336073addb106cde01d72c921f3b98ff6337a
+source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 78%
+source-wordcount: '1043'
+ht-degree: 73%
 
 ---
 
@@ -17,7 +17,7 @@ Edge Delivery Services de AEM Forms es una combinación de servicios que permite
 
 Estos servicios le permiten:
 
-* **Crear experiencias de inscripción con las herramientas que elija:** aumente la eficacia de la creación desacoplando las fuentes de contenido. De forma predeterminada, puede utilizar la creación basada en documentos (Microsoft SharePoint o Google Drive) y la creación WYSIWYG (Editor de Forms adaptable). Puede trabajar con varios orígenes de contenido en el mismo sitio de formularios y utilizar sus herramientas de creación preferidas, como Microsoft Excel, Google Sheets o Editor de formularios adaptables.
+* **Crear experiencias de inscripción con las herramientas que elija:** aumente la eficacia de la creación desacoplando las fuentes de contenido. De forma predeterminada, puede utilizar la creación basada en documentos (Microsoft SharePoint o Google Drive), la creación WYSIWYG (editor universal o editor de Forms adaptable). Puede trabajar con varios orígenes de contenido en el mismo sitio de formularios y utilizar sus herramientas de creación preferidas, como Microsoft Excel, Hojas de cálculo de Google, Editor universal o Editor de Forms adaptable.
 
 * **Ofrezca experiencias excepcionales de inscripción digital:** ofrezca experiencias del tipo que se carguen y procesen de forma rápida y continua para supervisar el rendimiento de los formularios mediante la monitorización de usuarios reales (RUM). Los tiempos de carga más rápidos y la experiencia del usuario optimizada contribuyen a que las tasas de finalización y conversión de formularios sean más altas.
 
@@ -29,7 +29,7 @@ Edge Delivery Services de AEM Forms ofrece un alto grado de flexibilidad en la 
 
 Por ejemplo, los formularios se crean directamente en Microsoft Excel o en Google Sheets y estas hojas de cálculo se transforman en formularios para su sitio web. Cualquier formulario o contenido nuevo, como un campo de formulario nuevo, estará disponible instantáneamente en su sitio web sin necesidad de volver a compilar el proceso.
 
-En el diagrama siguiente se ilustra cómo puede editar formularios en Microsoft Excel o Google Sheets (creación basada en documentos) y publicarlos en Edge Delivery Services. AEM También muestra el método de publicación de la mediante el Editor de Forms adaptable (WYSIWYG Authoring).
+En el diagrama siguiente se ilustra cómo puede editar formularios en Microsoft Excel o Google Sheets (creación basada en documentos) y publicarlos en Edge Delivery Services. AEM También muestra el método de publicación de la mediante la creación WYSIWYG (editor universal o editor de Forms adaptable).
 
 ![Publicación en Edge Delivery Services y AEM](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
@@ -65,7 +65,7 @@ La creación basada en documentos permite crear formularios utilizando herramien
 
 #### Funciones de creación WYSIWYG
 
-Creación WYSIWYG proporciona una interfaz WYSIWYG (editor adaptable de Forms) para crear formularios y ofrece todas las capacidades de la creación basada en documentos, además de una amplia gama de funciones adicionales:
+La creación de WYSIWYG proporciona interfaces WYSIWYG (editor universal y editor de Forms adaptable) para crear formularios y ofrece todas las capacidades de la creación basada en documentos, además de una amplia gama de funciones adicionales:
 
 * Editor de reglas avanzado para crear lógica compleja.
 * Extensibilidad del lado del servidor para funcionalidades personalizadas.
@@ -77,7 +77,9 @@ Creación WYSIWYG proporciona una interfaz WYSIWYG (editor adaptable de Forms) p
 * El modelo de datos de formulario sirve para definir la estructura de datos y las interacciones con varias fuentes de datos.
 * Capacidad para elegir entre varias acciones de envío para administrar los envíos de formularios, incluido el envío de datos a Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics y muchas más fuentes de datos.
 
-En esencia, [Creación WYSIWYG](/help/forms/creating-adaptive-form-core-components.md) se basa en los fundamentos de [Creación basada en documentos](/help/edge/docs/forms/create-forms.md), que proporciona un kit de herramientas más avanzado para crear y administrar formularios complejos.
+Todas las funciones anteriores también están disponibles a través del Editor de Forms adaptable.
+
+En esencia, WYSIWYG Authoring (editor universal) y [Editor de Forms adaptable](/help/forms/creating-adaptive-form-core-components.md)) se basa en los fundamentos de [Creación basada en documentos](/help/edge/docs/forms/create-forms.md), que proporciona un kit de herramientas más avanzado para crear y administrar formularios complejos.
 
 >[!NOTE]
 >
