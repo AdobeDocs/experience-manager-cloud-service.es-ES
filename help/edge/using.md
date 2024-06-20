@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 role: Admin, Architect, Developer
 source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '389'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ El principio rector del Adobe es la simplicidad.  Empiece por la creación basa
 
 ## Creación {#authoring-edge}
 
-Con Edge Delivery Services, la creación es fácil, rápida y flexible.  Puede elegir crear mediante la creación basada en documentos o la creación WYSIWYG mediante el Editor universal.
+Con Edge Delivery Services, la creación es fácil, rápida y flexible.  Puede optar por crear utilizando la creación basada en documentos o la creación WYSIWYG con el editor universal.
 
 Consulte el documento [Creación de contenido para Edge Delivery Services](/help/edge/wysiwyg-authoring/authoring.md) para obtener más información.
 
@@ -44,7 +44,7 @@ Consulte el documento [Publicación de contenido para Edge Delivery Services](/
 
 Edge Delivery Services se basa en el concepto de bloques. AEM incluye una completa biblioteca de bloques predefinidos, que se puede ampliar para satisfacer las necesidades de cada proyecto.  El código de los proyectos de Edge Delivery Services se administra en GitHub.
 
-Consulte el documento [Guía de introducción para desarrolladores para la creación WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para obtener más información.
+Consulte el documento [Guía de introducción del desarrollador para la creación WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para obtener más información.
 
 ## Proyectos AEM existentes {#existing-projects}
 
