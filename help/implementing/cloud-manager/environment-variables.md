@@ -5,10 +5,10 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: ed166aa753d4fb5c6fb1573032186e3e14f375df
 workflow-type: tm+mt
 source-wordcount: '986'
-ht-degree: 79%
+ht-degree: 77%
 
 ---
 
@@ -50,7 +50,7 @@ Los casos de uso habituales para usar variables de entorno incluyen:
 1. Introduzca los detalles de la variable.
    * **Nombre**
    * **Valor**
-   * **Servicio aplicado**: Define para qué servicio (autor/publicación/vista previa) se aplica la variable o si se aplica a todos los servicios
+   * **Servicio aplicado** : define para qué servicio (autor/Publish/vista previa) se aplica la variable o si se aplica a todos los servicios
    * **Tipo**: Define si la variable es una variable normal o un secreto
 
    ![Agregar una variable](assets/add-variable.png)
