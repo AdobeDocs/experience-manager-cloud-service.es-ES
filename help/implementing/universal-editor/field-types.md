@@ -4,10 +4,10 @@ description: Obtenga información acerca de los campos y los tipos de componente
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6886d3e669b06b63d2225348e95e00806db1b8f5
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -103,7 +103,7 @@ A continuación se indican los tipos de componentes que se pueden utilizar para 
 | [Número](#number) | `number` |
 | [Grupo de radio](#radio-group) | `radio-group` |
 | [Referencia](#reference) | `reference` |
-| [Texto enriquecido](#rich-text) | `rich-text` |
+| [Texto enriquecido](#rich-text) | `richtext` |
 | [Seleccionar](#select) | `select` |
 | [Ficha](#tab) | `tab` |
 | [Texto](#text) | `text` |
