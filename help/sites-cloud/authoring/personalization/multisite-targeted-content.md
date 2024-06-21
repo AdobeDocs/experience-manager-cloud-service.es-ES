@@ -3,9 +3,9 @@ title: Uso del contenido de destino de varios sitios
 description: Si necesita administrar contenido de destino, como actividades, experiencias y ofertas, entre sus sitios, puede aprovechar el soporte integrado con varios sitios para el contenido de destino
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
 solution: Experience Manager Sites
-feature: Authoring
+feature: Authoring, Personalization
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '2844'
 ht-degree: 89%

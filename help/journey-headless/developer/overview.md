@@ -4,10 +4,10 @@ description: Obtenga información sobre el desarrollo sin encabezado mediante Ad
 landing-page-description: Obtenga información sobre la entrega e implementación del contenido sin encabezado. Obtenga más información sobre el desarrollo de su estrategia dentro de su empresa.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 100%
 

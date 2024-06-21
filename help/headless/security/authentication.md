@@ -1,10 +1,11 @@
 ---
 title: Autenticación para consultas de AEM de GraphQL remotas en fragmentos de contenido
 description: Comprenda la autenticación necesaria para las consultas de Adobe Experience Manager GraphQL remotas a fin de proteger la entrega de contenido sin encabezado.
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 100%
 

@@ -2,10 +2,12 @@
 title: AEM Prácticas recomendadas para la configuración y el uso de GraphQL con fragmentos de contenido para la administración de contenido
 description: AEM Conozca las Prácticas recomendadas para la configuración y el uso de GraphQL con fragmentos de contenido de la aplicación.
 exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Headless
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 34%
+source-wordcount: '702'
+ht-degree: 24%
 
 ---
 
@@ -61,14 +63,14 @@ El almacenamiento en caché de consultas persistentes no está habilitado de for
 
 Dispatcher suele estar configurado para lo siguiente:
 
-* Publicar: producción
+* Publish: production
 
 ### Configuración de CORS {#cors-setup}
 
 >[!NOTE]
 >Si se almacena en caché en [AEM Dispatcher](#dispatcher-caching) está activada, la configuración de CORS no es necesaria y por lo tanto esta sección se puede ignorar.
 
-Para acceder al punto de conexión de GraphQL, se debe configurar una política CORS y añadirla a un proyecto de AEM que está implementado en AEM mediante Cloud Manager. Para ello, añada un archivo de configuración OSGi CORS apropiado para los puntos de conexión deseados. 
+Para acceder al punto de conexión de GraphQL AEM AEM, se debe configurar una política CORS y añadirla a un proyecto de que se implemente en Cloud Manager para su implementación en la nube mediante Cloud Manager. Para ello, añada un archivo de configuración OSGi CORS apropiado para los puntos de conexión deseados.
 
 #### Detalles {#details-cors-setup}
 
@@ -78,11 +80,11 @@ Para acceder al punto de conexión de GraphQL, se debe configurar una política 
 
 CORS suele estar configurado para:
 
-* Publicar: producción
+* Publish: production
 
 ### Autenticación {#authentication}
 
-Un caso de uso principal para la API de Adobe Experience Manager as a Cloud Service (AEM) de GraphQL para la entrega de fragmentos de contenido es aceptar consultas remotas desde aplicaciones o servicios de terceros. Estas consultas remotas pueden requerir acceso a una API autenticada para asegurar la entrega de contenido sin encabezado.
+Un caso de uso principal para la API de Adobe Experience Manager as a Cloud Service AEM () GraphQL para la entrega de fragmentos de contenido es aceptar consultas remotas desde aplicaciones o servicios de terceros. Estas consultas remotas pueden requerir acceso a una API autenticada para asegurar la entrega de contenido sin encabezado.
 
 #### Detalles {#details-authentication}
 
@@ -135,7 +137,7 @@ Las consultas GraphQL y sus respuestas JSON se pueden almacenar en caché si est
 
 Una CDN suele configurarse para lo siguiente:
 
-* Publicar: producción
+* Publish: production
 
 ### Configurar y crear fragmentos de contenido {#cconfigure-create-content-fragments}
 

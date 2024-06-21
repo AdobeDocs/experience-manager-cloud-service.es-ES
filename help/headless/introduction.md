@@ -3,10 +3,12 @@ title: Introducción a sin encabezado para AEM
 description: Obtenga información acerca de Sin encabezado en Adobe Experience Manager (AEM) con una combinación de documentación detallada y recorridos sin encabezado. Descubra cómo se utilizan funciones como los modelos de fragmento de contenido, los fragmentos de contenido y la API de GraphQL para potenciar las experiencias sin encabezado.
 landing-page-description: Obtenga información sobre cómo usar y administrar Sin encabezado en Adobe Experience Manager as a Cloud Service.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+feature: Headless
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 98%
+source-wordcount: '694'
+ht-degree: 97%
 
 ---
 

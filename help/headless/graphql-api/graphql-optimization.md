@@ -2,10 +2,12 @@
 title: Optimización de consultas de GraphQL
 description: Aprenda a optimizar las consultas de GraphQL al filtrar, paginar y ordenar los fragmentos de contenido en Adobe Experience Manager as a Cloud Service para la entrega de contenido sin encabezado.
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
-source-wordcount: '1877'
-ht-degree: 65%
+source-wordcount: '1874'
+ht-degree: 64%
 
 ---
 
@@ -35,7 +37,7 @@ Las consultas persistentes de GraphQL ayudan a reducir el rendimiento de la ejec
 
 Consulte:
 
-* [Consultas persistentes de GraphQL](/help/headless/graphql-api/persisted-queries.md).
+* [Consultas de GraphQL persistentes](/help/headless/graphql-api/persisted-queries.md).
 * [Formación para utilizar GraphQL con AEM: contenido y consultas de muestra](/help/headless/graphql-api/sample-queries.md)
 
 ### Estrategia de caché {#cache-strategy}

@@ -2,9 +2,9 @@
 title: Diagnóstico de ContextHub
 description: ContextHub proporciona una página de diagnóstico en la que puede ver una descripción general del marco de trabajo de ContextHub
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
-feature: Developing
+feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 1%

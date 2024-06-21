@@ -1,9 +1,10 @@
 ---
 title: Consideraciones de permisos para contenido sin encabezado
 description: Obtenga información acerca de diferentes consideraciones de permisos y ACL para una implementación sin encabezado con Adobe Experience Manager. Comprenda los diferentes perfiles y los niveles de permisos potenciales necesarios para los entornos de creación y publicación.
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 96%

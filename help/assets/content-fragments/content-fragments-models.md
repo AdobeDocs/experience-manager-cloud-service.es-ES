@@ -3,8 +3,9 @@ title: Modelos de fragmentos de contenido (recursos - fragmentos de contenido)
 description: AEM Descubra cómo los modelos de fragmentos de contenido sirven de base para su contenido sin encabezado en las, lo que le permite crear fragmentos de contenido con contenido estructurado.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
-role: User, Admin
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+role: User, Admin, Architect
+solution: Experience Manager Sites
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '3011'
 ht-degree: 86%

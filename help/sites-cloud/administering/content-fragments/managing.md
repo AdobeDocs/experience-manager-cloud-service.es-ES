@@ -4,7 +4,8 @@ description: AEM Obtenga información sobre cómo administrar los fragmentos de 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: a9a2362903e8eec25393e2ceb307814e1a21f142
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '2628'
 ht-degree: 45%
@@ -156,7 +157,7 @@ Al seleccionar un fragmento específico, se abre una barra de herramientas centr
 
 >[!NOTE]
 >
->Acciones como Publicar, Cancelar la publicación, Eliminar, Mover, Cambiar el nombre y Copiar cada déclencheur en un trabajo asincrónico. El progreso de ese trabajo se puede monitorizar a través de la interfaz de usuario de trabajos asincrónicos de AEM.
+>Acciones como Publish, Cancelar publicación, Eliminar, Mover, Cambiar nombre y Copiar cada déclencheur en un trabajo asincrónico. El progreso de ese trabajo se puede monitorizar a través de la interfaz de usuario de trabajos asincrónicos de AEM.
 
 ### La información proporcionada sobre sus fragmentos de contenido {#information-content-fragments}
 

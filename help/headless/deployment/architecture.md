@@ -1,9 +1,10 @@
 ---
 title: Arquitectura de AEM Headless
 description: Obtenga información acerca de la arquitectura de alto nivel para Adobe Experience Manager en relación con una implementación sin encabezado. Comprenda la función de los servicios de AEM de creación, de previsualización y de publicación y el patrón de implementación recomendado para aplicaciones sin encabezado.
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 100%

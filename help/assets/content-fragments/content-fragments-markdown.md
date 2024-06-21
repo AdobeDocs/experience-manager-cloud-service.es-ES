@@ -4,10 +4,11 @@ description: Comprenda cómo el editor de fragmentos de contenido utiliza la sin
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '586'
-ht-degree: 78%
+ht-degree: 80%
 
 ---
 

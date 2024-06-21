@@ -4,10 +4,11 @@ description: Revise estas consideraciones importantes antes de definir las polí
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: d1726bff-3aa8-4758-bee7-0cacea1f660a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 57%
+ht-degree: 46%
 
 ---
 
@@ -24,7 +25,7 @@ En relación con los permisos de eliminación, los fragmentos de contenido deben
 1. **El fragmento de contenido como una sola entidad.**
 
    * **Caso de uso**: un usuario que debe editar/actualizar un fragmento de contenido - **y eliminar un fragmento completo**.
-   * **Permisos**: el permiso Eliminar se puede asignar a través de Administración de usuarios o grupos.
+   * **Permisos**: el permiso Eliminar se puede asignar mediante Administración de usuarios o grupos.
 
 2. **Las varias subentidades que conforman un fragmento de contenido; por ejemplo, variaciones, subnodos.**
 
@@ -35,7 +36,7 @@ En relación con los permisos de eliminación, los fragmentos de contenido deben
 
 >[!NOTE]
 >
->Consulte también Cómo auditar las operaciones de administración de usuarios en AEM.
+>AEM Consulte también Cómo auditar las operaciones de administración de usuarios en la sección de administración de usuarios de la.
 
 ## Permisos necesarios para la funcionalidad del editor únicamente {#permissions-required-for-editor-functionality-only}
 

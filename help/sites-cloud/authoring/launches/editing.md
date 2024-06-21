@@ -3,9 +3,9 @@ title: Edición de lanzamientos
 description: Después de crear un lanzamiento para la página (o conjunto de páginas), puede editar el contenido en la copia de lanzamiento de las páginas.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
 solution: Experience Manager Sites
-feature: Authoring
+feature: Authoring, Launches
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 87%

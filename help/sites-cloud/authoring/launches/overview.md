@@ -3,9 +3,9 @@ title: Lanzamientos
 description: Los lanzamientos le permiten desarrollar contenido con eficacia para una versión futura. También permiten realizar los cambios para una publicación en el futuro, a la vez que se mantienen las páginas actuales
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
-feature: Authoring
+feature: Authoring, Launches
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 94%

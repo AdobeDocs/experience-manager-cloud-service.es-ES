@@ -2,10 +2,12 @@
 title: 'Creación de una solicitud de API: configuración sin encabezado'
 description: Aprenda a utilizar la API de GraphQL para la entrega sin encabezado de contenido de fragmentos de contenido y la API de REST de Assets de AEM para administrar fragmentos de contenido.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '674'
-ht-degree: 90%
+ht-degree: 93%
 
 ---
 
@@ -23,7 +25,7 @@ Aprenda a utilizar la API de GraphQL para la entrega sin encabezado de contenido
 
 >[!NOTE]
 >
->El [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) también están disponibles.
+>Las [OpenAPI de fragmento de contenido y modelo de fragmento de contenidos](/help/headless/content-fragment-openapis.md) también están disponibles.
 
 El resto de esta guía se centra en el acceso a GraphQL y la entrega de fragmentos de contenido.
 
@@ -106,4 +108,4 @@ GraphQL puede evitar las solicitudes de API iterativas y el exceso de entrega, y
 
 >[!NOTE]
 >
->El [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) también están disponibles.
+>Las [OpenAPI de fragmento de contenido y modelo de fragmento de contenidos](/help/headless/content-fragment-openapis.md) también están disponibles.

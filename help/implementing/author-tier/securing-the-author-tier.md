@@ -2,7 +2,9 @@
 title: Protección del nivel de Author
 description: Obtenga información sobre cómo configurar las directivas de red para proteger el acceso a su nivel de Author.
 exl-id: f5be90a4-266a-4d23-8e8b-94156f0264d5
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Configuring
+role: Admin
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 31%
