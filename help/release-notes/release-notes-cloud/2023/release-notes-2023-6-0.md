@@ -4,10 +4,10 @@ description: Notas de la versión 2023.6.0 de la versión de  [!DNL Adobe Experi
 exl-id: 29cf9548-e413-4e4f-b233-d6bb04918b22
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
+source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
+workflow-type: tm+mt
 source-wordcount: '1322'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -128,7 +128,7 @@ La vista de recursos ahora le permite [añadir texto de varios valores y compone
 
 * [Métodos de autenticación mejorados para el modelo de datos de formulario](/help/forms/configure-data-sources.md): disfrute de una mayor seguridad con la introducción de la autenticación basada en credenciales de cliente para conectar AEM Forms con fuentes de datos compatibles. Esta mejora elimina la necesidad de suplantación o inicio de sesión del usuario, lo que refuerza la protección de los datos.
 
-* [Formularios adaptables con secciones repetibles](/help/forms/create-forms-repeatable-sections.md): ahora puede hacer que los componentes [Acordeón](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms//adaptive-forms-components/accordion.html?lang=es), [Asistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=es), [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=es) y [Pestañas horizontales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=es) en un formulario adaptable basado en componentes principales para crear secciones repetibles.
+* [Formularios adaptables con secciones repetibles](/help/forms/create-forms-repeatable-sections.md): ahora puede hacer que los componentes [Acordeón](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms//adaptive-forms-components/accordion.html?lang=es), [Asistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=es), [Panel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) y [Pestañas horizontales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=es) en un formulario adaptable basado en componentes principales para crear secciones repetibles.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
