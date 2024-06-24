@@ -4,9 +4,9 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 53b692b9f668387c889c28498bb20c67149e36be
+source-git-commit: fd687498a8c72bf5d47b7b97aadf22d7d1e8dd2b
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '649'
 ht-degree: 30%
 
 ---
@@ -62,7 +62,7 @@ La activación de funcionalidades 2024.6.0 proporcionará el conjunto completo d
 
 #### Formularios
 
-1. Si un usuario descarga el SDK de AEM Forms más reciente (`AEM Forms add-on v2024.05.04.00-240400`), el archivo por lotes no puede iniciar el servicio Docker. Para resolver este problema:
+1. Si un usuario descarga la versión del SDK de AEM Forms mayor que `AEM Forms add-on v2024.05.04.00-240400`Sin embargo, el archivo por lotes no puede iniciar el servicio Docker. Para resolver este problema:
    1. Descargue la [carpeta](/help/forms/assets/sdk_hotfix.zip).
    1. Extraiga el contenido de la carpeta descargada y copie el `sdk.sh` y `sdk.bat` archivos.
    1. Reemplazar el existente `sdk.sh` y `sdk.bat` archivos en el SDK de AEM Forms con los nuevos archivos.
