@@ -5,7 +5,7 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 3a5451020b8f76f95bcd8bff7b6eabd06be00f31
 workflow-type: tm+mt
 source-wordcount: '1197'
 ht-degree: 80%
@@ -90,7 +90,7 @@ La fase de **prueba** incluye los siguientes pasos.
 
 ![Fase de prueba](assets/stage-testing.png)
 
-## Fase de implementación de producción {#deployment-production}
+## Fase de implementación de producción {#production-deployment}
 
 El proceso de implementación en topologías de producción difiere ligeramente para minimizar el impacto de los visitantes a un sitio AEM.
 
