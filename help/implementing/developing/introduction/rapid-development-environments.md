@@ -4,9 +4,9 @@ description: Aprenda a utilizar entornos de desarrollo rápido para iteraciones 
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3577db15a276bed253c8fa51cbd100e90ec5ef45
+source-git-commit: 85dc92e1adc11a2ee513b7a43e0945b18b2f4790
 workflow-type: tm+mt
-source-wordcount: '4244'
+source-wordcount: '4215'
 ht-degree: 4%
 
 ---
@@ -223,11 +223,6 @@ Sin embargo, con una coordinación cuidadosa, es posible que más de un desarrol
 
 
 ### Indicadores globales {#global-flags}
-
->[!NOTE]
->
-> Estos indicadores globales aún no están disponibles. Se lanzarán en algún momento en junio.
-> 
 
 * Para una salida menos detallada, utilice el indicador quiet:
 
@@ -565,11 +560,6 @@ También puede restablecer el RDE utilizando el botón de puntos suspensivos dir
 Para obtener más información sobre cómo utilizar Cloud Manager para administrar los entornos, consulte [la documentación de Cloud Manager](/help/implementing/cloud-manager/manage-environments.md).
 
 ## Comandos compatibles con la salida JSON {#json-commands}
-
->[!NOTE]
->
-> Estos comandos aún no están disponibles. Se lanzarán en algún momento en junio.
-> 
 
 La mayoría de los comandos admiten el global ```--json``` indicador que suprime la salida de la consola y devuelve un json válido para procesar en scripts. A continuación se muestran algunos comandos admitidos, con ejemplos de la salida json.
 
