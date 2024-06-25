@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
 source-git-commit: f6a320b0f3960ae789559b837995986bf0a4bbad
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '805'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Edge Delivery Services de AEM Forms proporciona un bloque de formularios adaptab
 
 Estos formularios envían datos directamente a un archivo de Microsoft Excel o Google Sheets, lo que le permite utilizar un ecosistema dinámico y API sólidas de Google Sheets, Microsoft Excel y Microsoft SharePoint para procesar fácilmente los datos enviados o iniciar un flujo de trabajo empresarial existente.
 
-![Ecosistema de creación basado en documentos](/help/edge/assets/document-based-authoring-workflow-create-form.png)
+![Ecosistema de creación basada en documentos](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
 
 ## Requisitos previos
