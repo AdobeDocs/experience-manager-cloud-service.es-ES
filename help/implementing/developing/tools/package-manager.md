@@ -4,9 +4,9 @@ description: Conozca los conceptos básicos de AEM; administración de paquetes 
 feature: Administering, Developing
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7fdb4e3da7172e3a94f105c8b2a46ef77a565532
 workflow-type: tm+mt
-source-wordcount: '3769'
+source-wordcount: '3772'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ Un paquete también contiene metainformación de Vault, incluidas las definicion
 >
 >Los paquetes representan la versión actual del contenido en el momento en que se crea el paquete. AEM No incluyen ninguna versión anterior del contenido que se mantiene en el repositorio de la que se haya hecho clic en el botón de la barra de herramientas de la aplicación de la aplicación de la aplicación de la.
 
-## AEM Paquetes en as a Cloud Service {#aemaacs-packages}
+## Paquetes en AEM as a Cloud Service {#aemaacs-packages}
 
 AEM Los paquetes de contenido creados para aplicaciones as a Cloud Service de la deben tener una separación limpia entre el contenido inmutable y el mutable. Por lo tanto, el Administrador de paquetes solo se puede utilizar para administrar paquetes que contengan contenido. Cualquier código debe implementarse mediante Cloud Manager.
 
@@ -190,18 +190,22 @@ Puede definir una o más definiciones de filtro para un paquete. Utilice más de
 
 ![Pestaña Filtros](assets/edit-filter.png)
 
-Al crear filtros, puede definir una ruta o utilizar una expresión regular para especificar todos los nodos que desee incluir o excluir.
+Al crear reglas, defina una expresión regular (también conocida como regex, regexp o expresión racional) para especificar todos los nodos que desee incluir o excluir.
 
 | Tipo de regla | Descripción |
 |---|---|
-| include | Si se incluye un directorio, se incluirá ese directorio y todos los archivos y carpetas de ese directorio (es decir, todo el subárbol), pero **no** incluir otros archivos o carpetas de la ruta raíz especificada. |
-| excluir | Excluir un directorio excluirá ese directorio y todos los archivos y carpetas de ese directorio (es decir, todo el subárbol). |
+| include | Include incluirá todos los archivos y carpetas del directorio especificado que coincidan con la expresión regular. Incluir **no** incluir otros archivos o carpetas de la ruta raíz especificada. |
+| excluir | Excluir excluirá todos los archivos y carpetas que coincidan con la expresión regular. |
 
 Los filtros de paquetes se definen con mayor frecuencia la primera vez que [cree el paquete.](#creating-a-new-package) Sin embargo, también se pueden editar más adelante, después de lo cual el paquete debe volver a crearse para actualizar su contenido en función de las nuevas definiciones de filtro.
 
 >[!TIP]
 >
 >Un paquete puede contener varias definiciones de filtros para que los nodos de diferentes ubicaciones se puedan combinar fácilmente en un paquete.
+
+>[!TIP]
+>
+>Para obtener información general, consulte [Apache Jackrabbit: filtro de Workspace](https://jackrabbit.apache.org/filevault/filter.html) documentación.
 
 ### Dependencias {#dependencies}
 
