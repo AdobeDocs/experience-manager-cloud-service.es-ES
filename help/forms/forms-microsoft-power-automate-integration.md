@@ -3,8 +3,10 @@ title: Integrar un formulario adaptable con Microsoft® Power Automate
 description: Integrar un formulario adaptable con Microsoft® Power Automate.
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: conectar AEM Forms a Power Automate, automatización de Power Automate AEM Forms, Integrar Power Automate con Formularios adaptables, enviar datos de Formularios adaptables a Power Automate
-source-git-commit: fa9254a3290a7628c4d058a6e8cc010789bd30f9
-workflow-type: ht
+feature: Adaptive Forms
+role: Admin, User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 100%
 

@@ -3,14 +3,16 @@ title: Comparar dos formularios adaptables distintos.
 description: Compare dos formularios distintos en función de los campos, el contenido y los componentes del formulario.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
-source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
+exl-id: ce4ad231-a766-4ab0-8649-20cf16bf54ce
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '153'
-ht-degree: 9%
+ht-degree: 11%
 
 ---
 
-# Comparar Forms adaptable {#compare-two-forms}
+# Comparar formularios adaptables {#compare-two-forms}
 
 <span class="preview"> Esta es una función previa al lanzamiento y se puede acceder a ella a través de nuestro [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features). </span>
 
@@ -27,4 +29,3 @@ Cuando los autores de formularios necesitan comparar dos formularios distintos b
 ## Consulte también {#see-also}
 
 {{see-also}}
-

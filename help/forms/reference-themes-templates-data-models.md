@@ -3,10 +3,11 @@ title: ¿Cómo obtener temáticas de referencia y plantillas para AEM Forms?
 description: AEM Forms proporciona temáticas de formularios adaptables de muestra, plantillas y modelos de datos de formularios adaptables para ayudarle a crear formularios rápidamente.
 feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '778'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -20,9 +21,9 @@ ht-degree: 89%
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Formularios adaptables](/help/forms/creating-adaptive-form-core-components.md) o [adición de Formularios adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
-AEM Forms as a Cloud Service proporciona varias temáticas de referencia, plantillas y modelos de datos de formulario (FDM) para ayudarle a empezar a crear Forms adaptables de forma rápida. Puede descargar el [paquete de contenido de referencia del portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/es/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) y usar el [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) para instalar el [paquete de contenido de referencia](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/es/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) en su entorno de producción, desarrollo o desarrollo local. Así, podrá conseguir estos activos de referencia.
+AEM Forms as a Cloud Service proporciona varias temáticas, plantillas y modelos de datos de formulario (FDM) de referencia para ayudarle a empezar rápidamente a crear formularios adaptables. Puede descargar el [paquete de contenido de referencia del portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/es/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) y usar el [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) para instalar el [paquete de contenido de referencia](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/es/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) en su entorno de producción, desarrollo o desarrollo local. Así, podrá conseguir estos recursos de referencia.
 
-Las temáticas, plantillas y modelos de datos de formulario (FDM) incluidos en el paquete de contenido de referencia son:
+Las temáticas, las plantillas y los modelos de datos de formulario (FDM) incluidos en el paquete de contenido de referencia son los siguientes:
 
 
 | Temáticas | Plantillas | Modelo de datos de formulario (FDM) |
@@ -117,11 +118,11 @@ La plantilla básica le ayuda a crear rápidamente un formulario de inscripción
 Después, los formularios adaptables pueden interactuar con los servidores de Microsoft Dynamics 365 y Salesforce para habilitar los flujos de trabajo empresariales. Por ejemplo:
 
 * Escriba datos en Microsoft Dynamics 365 y Salesforce al enviar formularios adaptables.
-* escribir datos en Microsoft Dynamics 365 y Salesforce a través de entidades personalizadas definidas en el modelo de datos de formulario (FDM) y a la inversa;
+* Escriba datos en Microsoft Dynamics 365 y Salesforce a través de entidades personalizadas definidas en el modelo de datos de formulario (FDM) y viceversa.
 * Consulte el servidor de Microsoft Dynamics 365 y Salesforce para obtener datos y rellenar previamente formularios adaptables.
 * Lea los datos del servidor de Microsoft Dynamics 365 y Salesforce.
 
-Puede obtener el siguiente modelo de datos de formulario (FDM) instalando el [Paquete de contenido de referencia](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/es/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
+Puede obtener los siguientes modelos de datos de formulario (FDM) instalando el [Paquete de contenido de referencia](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/es/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
 
 * Microsoft® Dynamics 365
 * Salesforce
@@ -129,6 +130,6 @@ Puede obtener el siguiente modelo de datos de formulario (FDM) instalando el [Pa
 Para obtener información sobre el uso de estos modelos, consulte [Configuración de los servicios en la nube de Microsoft Dynamics 365 y Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=es#configure-dynamics-cloud-service)
 
 
-## Consulte también {#see-also}
+## Ver también {#see-also}
 
 {{see-also}}

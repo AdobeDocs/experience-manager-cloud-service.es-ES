@@ -1,11 +1,11 @@
 ---
 title: Creación masiva de PDF sin esfuerzo; domine el arte con el procesamiento por lotes, su guía de autoayuda para generar millones de documentos PDF.
 description: Crear comunicaciones personalizadas y orientadas a la marca
-feature: Adaptive Forms, APIs
+feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
-workflow-type: ht
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '1706'
 ht-degree: 100%
 

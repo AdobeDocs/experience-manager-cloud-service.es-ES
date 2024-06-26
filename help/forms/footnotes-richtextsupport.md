@@ -3,8 +3,9 @@ title: Cómo agregar una nota al pie a un formulario adaptable
 description: Utilizar el editor de texto enriquecido (RTE) para notas al pie de página en un formulario adaptable.
 feature: Adaptive Forms, Foundation Components
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 100%
 

@@ -5,10 +5,12 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
 hide: true
 hidefromtoc: true
-source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '950'
-ht-degree: 24%
+ht-degree: 26%
 
 ---
 
@@ -18,9 +20,9 @@ CAPTCHA (prueba de Turing completamente automática y pública para diferenciar 
 
 AEM Forms as a Cloud Service es compatible con las siguientes soluciones CAPTCHA:
 
-* [Torniquete de Nubes](#integrate-aem-forms-environment-with-turnstile-captcha)
+* [Cloudflare Turnstile](#integrate-aem-forms-environment-with-turnstile-captcha)
 * [Google reCAPTCHA](/help/forms/captcha-adaptive-forms.md)
-* [Chcaptcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)
+* [hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)
 
 ## Integración del entorno de AEM Forms con Turnstile Captcha
 
@@ -62,7 +64,7 @@ Para configurar el torniquete para los componentes principales de AEM Forms, deb
 
 Una vez configurado el servicio Turnstile Captcha, está disponible para su uso en un formulario adaptable.
 
-## Uso del torniquete en un formulario adaptable{#using-turnstile-foundation-components}
+## Utilice Turnstile en un formulario adaptable{#using-turnstile-foundation-components}
 
 1. Abra la instancia AEM Forms as a Cloud Service.
 1. Vaya a **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
@@ -108,6 +110,6 @@ Ahora, solo se permiten para el envío del formulario los formularios legítimos
 * **P: ¿Puedo usar más de un componente Captcha en un formulario adaptable?**
 * **R:** No se puede usar más de un componente Captcha en un formulario adaptable. Además, no se recomienda utilizar un componente Captcha en un fragmento o panel marcado para la carga diferida.
 
-## Ver también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}

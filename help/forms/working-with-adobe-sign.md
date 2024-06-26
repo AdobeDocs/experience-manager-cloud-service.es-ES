@@ -3,13 +3,13 @@ title: ¿Cómo se puede usar Adobe Sign en un formulario adaptable?
 description: Utilice Adobe Sign en un formulario adaptable para permitir que los destinatarios de formularios firmen electrónicamente un formulario desde el dispositivo y el lugar de su elección.
 topic-tags: develop
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '3243'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -184,7 +184,7 @@ Para seleccionar un servicio de Cloud Service y la petición de firma:
 
    >[!NOTE]
    >
-   > Si se crea un formulario adaptable con un modelo de datos de formulario (FDM), el campo ID de acuerdo se vuelve visible en el cuadro de diálogo.
+   > Si se crea un formulario adaptable mediante un modelo de datos de formulario, el campo ID del acuerdo se vuelve visible en el cuadro de diálogo.
 
 1. [Agregue destinatarios a un formulario adaptable](working-with-adobe-sign.md#addsignerstoanadaptiveform) y seleccione el icono Listo ![Guardar](assets/save_icon.svg) para guardar los cambios.
 
@@ -375,6 +375,6 @@ Cuando el servicio de [!DNL Adobe Sign] está configurado para un formulario ada
 >* [Prácticas recomendadas para usar  [!DNL Adobe Sign]  con formularios adaptables](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
 
 
-## Consulte también {#see-also}
+## Ver también {#see-also}
 
 {{see-also}}

@@ -3,7 +3,9 @@ title: Agregar versiones, comentarios y anotaciones a un formulario.
 description: Utilice los componentes principales del formulario adaptable para agregar comentarios, anotaciones y versiones a un formulario adaptable.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
-source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
+exl-id: 84b95a19-c804-41ad-8f4b-5868c8444cc0
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 2%

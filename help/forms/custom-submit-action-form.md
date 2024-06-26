@@ -2,11 +2,11 @@
 title: Crear una acción de envío personalizada para un formulario adaptable
 description: Obtenga información sobre cómo crear una acción de envío personalizada para un formulario adaptable para retrasar el envío y procesar los datos antes de enviarlos a un punto final REST, guardar en un almacén de datos y realizar otras funciones personalizadas.
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
-workflow-type: ht
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '1669'
 ht-degree: 100%
 

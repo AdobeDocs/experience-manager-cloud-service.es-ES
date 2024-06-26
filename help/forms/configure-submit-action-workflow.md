@@ -3,13 +3,15 @@ Title: How to integrate AEM workflow with an Adaptive Form?
 Description: Explore the process of automated workflow initiation with AEM Forms Submit Action.
 keywords: Flujo de trabajo de AEM, Integración del formulario adaptable con el flujo de trabajo de AEM, Invocar la acción de envío del flujo de trabajo de AEM
 feature: Adaptive Forms, Core Components
-source-git-commit: 95af49839d206f67ac02116730229f5b0531c5bb
-workflow-type: ht
-source-wordcount: '647'
-ht-degree: 100%
+exl-id: b7788e3d-acd8-4867-b232-f9767cf6b2f5
+title: "¿Cómo configurar una acción de envío para un formulario adaptable?"
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
+source-wordcount: '657'
+ht-degree: 98%
 
 ---
-
 
 # Integración del formulario adaptable de AEM con el flujo de trabajo de AEM: optimización de los procesos empresariales
 

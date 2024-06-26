@@ -1,17 +1,17 @@
 ---
-title: AEM Forms as a Cloud Service admite fuentes integradas para la generación de PDF.
+title: AEM Forms as a Cloud Service admite fuentes integradas para la generación en PDF.
 description: AEM Forms as a Cloud Service admite fuentes predeterminadas para documentos de registro y PDF.
-feature: Adaptive Forms, APIs
+feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 67b07bf6-a45c-4a74-8b24-cb2e26c55bc9
-source-git-commit: e8e00d85e5526a3de3a210ee72df07d85bb7d1db
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 0%
 
 ---
 
-# Fuentes admitidas de forma predeterminada (OOTB) para la generación de PDF en Forms as a Cloud Service  {#ootb-supported-fonts-overview}
+# Fuentes compatibles de serie (OOTB) para la generación de PDF en Forms as a Cloud Service  {#ootb-supported-fonts-overview}
 
 AEM Forms as a Cloud Service ofrece varias fuentes compatibles con OOTB integradas que se pueden utilizar sin problemas dentro de [API de comunicación](/help/forms/aem-forms-cloud-service-communications-introduction.md), [Documento de registro para componentes principales](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record), y [Documento de registro para componentes de base](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record).
 

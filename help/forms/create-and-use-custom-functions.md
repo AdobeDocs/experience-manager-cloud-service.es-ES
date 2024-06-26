@@ -6,7 +6,8 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '4351'
 ht-degree: 4%
@@ -39,11 +40,11 @@ Las ventajas de utilizar funciones personalizadas en Forms adaptable son:
 * **Comportamiento dinámico**: las funciones personalizadas le permiten controlar el comportamiento dinámico de los formularios en función de condiciones específicas. Por ejemplo, puede mostrar u ocultar campos, modificar valores de campos o ajustar la lógica del formulario de forma dinámica.
 * **Integración**: Puede utilizar funciones personalizadas para integrarse con API o servicios externos. Ayuda a recuperar datos de fuentes externas, enviar datos a extremos REST externos o realizar acciones personalizadas basadas en eventos externos.
 
-Las funciones personalizadas son esencialmente bibliotecas de cliente que se agregan en el archivo JavaScript. Una vez creada una función personalizada, esta estará disponible en el editor de reglas para que la seleccione el usuario en un formulario adaptable. Las funciones personalizadas se identifican mediante anotaciones JavaScript en el editor de reglas.
+Las funciones personalizadas son esencialmente bibliotecas de cliente que se agregan en el archivo JavaScript. Una vez creada una función personalizada, esta estará disponible en el editor de reglas para que la seleccione el usuario en un formulario adaptable. Las funciones personalizadas se identifican mediante las anotaciones de JavaScript en el editor de reglas.
 
-### Anotaciones JavaScript compatibles con la función personalizada {#js-annotations}
+### Anotaciones de JavaScript compatibles con funciones personalizadas {#js-annotations}
 
-Las anotaciones de JavaScript se utilizan para proporcionar metadatos para el código JavaScript. Incluye comentarios que comienzan con símbolos específicos, por ejemplo, /** y @. Las anotaciones proporcionan información importante sobre funciones, variables y otros elementos del código. El formulario adaptable admite las siguientes anotaciones de JavaScript para funciones personalizadas:
+Las anotaciones de JavaScript se utilizan para proporcionar metadatos para el código de JavaScript. Incluye comentarios que comienzan con símbolos específicos, por ejemplo, /** y @. Las anotaciones proporcionan información importante sobre funciones, variables y otros elementos del código. El formulario adaptable admite las siguientes anotaciones de JavaScript para funciones personalizadas:
 
 #### Nombre
 
@@ -75,14 +76,14 @@ El parámetro es una lista de argumentos que utilizan las funciones personalizad
    * fecha[]: representa una matriz de valores de fecha.
    * array: representa una matriz genérica que contiene valores de varios tipos.
    * object: representa un objeto de formulario pasado a una función personalizada en lugar de pasar su valor directamente.
-   * ámbito: representa el objeto global, que contiene variables de solo lectura como instancias de formulario, instancias de campo de destino y métodos para realizar modificaciones de formulario dentro de funciones personalizadas. Se declara como el último parámetro en anotaciones de JavaScript y no es visible en el editor de reglas de un formulario adaptable. El parámetro scope accede al objeto del formulario o componente para almacenar en déclencheur la regla o el evento necesarios para el procesamiento del formulario. Para obtener más información sobre el objeto Globals y cómo utilizarlo, [haga clic aquí](/help/forms/create-and-use-custom-functions.md#support-field-and-global-objects).
+   * ámbito: representa el objeto global, que contiene variables de solo lectura como instancias de formulario, instancias de campo de destino y métodos para realizar modificaciones de formulario dentro de funciones personalizadas. Se declara como el último parámetro en las anotaciones de JavaScript y no es visible en el editor de reglas de un formulario adaptable. El parámetro scope accede al objeto del formulario o componente para almacenar en déclencheur la regla o el evento necesarios para el procesamiento del formulario. Para obtener más información sobre el objeto Globals y cómo utilizarlo, [haga clic aquí](/help/forms/create-and-use-custom-functions.md#support-field-and-global-objects).
 
 El tipo de parámetro no distingue entre mayúsculas y minúsculas y no se permiten espacios en el nombre del parámetro.
 
 `<Parameter Description>` contiene detalles sobre el propósito del parámetro. Puede tener varias palabras.
 
 **Parámetros opcionales**
-De forma predeterminada, todos los parámetros son obligatorios. Puede definir un parámetro como opcional añadiendo `=` después del tipo de parámetro o de incluir el nombre del parámetro en  `[]`. Los parámetros definidos como opcionales en anotaciones de JavaScript se muestran como opcionales en el editor de reglas.
+De forma predeterminada, todos los parámetros son obligatorios. Puede definir un parámetro como opcional añadiendo `=` después del tipo de parámetro o de incluir el nombre del parámetro en  `[]`. Los parámetros definidos como opcionales en las anotaciones de JavaScript se muestran como opcionales en el editor de reglas.
 Para definir una variable como parámetro opcional, puede utilizar cualquiera de las siguientes sintaxis:
 
 * `@param {type=} Input1`
@@ -170,7 +171,7 @@ Puede crear una función personalizada con o sin comentarios jsdoc.
             // code to be executed
         }
 ```
-Si el usuario no agrega anotaciones JavaScript a la función personalizada, aparece en el editor de reglas por su nombre de función. Sin embargo, se recomienda incluir anotaciones de JavaScript para mejorar la legibilidad de las funciones personalizadas.
+Si el usuario no agrega ninguna anotación de JavaScript a la función personalizada, se muestra en el editor de reglas por su nombre de función. Sin embargo, se recomienda incluir anotaciones de JavaScript para mejorar la legibilidad de las funciones personalizadas.
 
 ### Función de flecha con anotaciones o comentarios JavaScript obligatorios
 
@@ -194,7 +195,7 @@ Puede crear una función personalizada con una sintaxis de función de flecha:
     
 ```
 
-Si el usuario no agrega anotaciones JavaScript a la función personalizada, esta no aparece en la lista del editor de reglas de un formulario adaptable.
+Si el usuario no agrega ninguna anotación de JavaScript a la función personalizada, la función personalizada no aparece en la lista del editor de reglas de un formulario adaptable.
 
 ### Expresión de función con anotaciones o comentarios JavaScript obligatorios
 
@@ -214,7 +215,7 @@ Para enumerar funciones personalizadas en el editor de reglas de un formulario a
         }
 ```
 
-Si el usuario no agrega anotaciones JavaScript a la función personalizada, esta no aparece en la lista del editor de reglas de un formulario adaptable.
+Si el usuario no agrega ninguna anotación de JavaScript a la función personalizada, la función personalizada no aparece en la lista del editor de reglas de un formulario adaptable.
 
 ## Creación de una función personalizada {#create-custom-function}
 
@@ -241,7 +242,7 @@ Puede agregar funciones personalizadas agregando una biblioteca de cliente. Para
 
 **Clonar el repositorio**
 
-Clone su [Repositorio as a Cloud Service de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#accessing-git):
+Clone su [Repositorio as a Cloud Service AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#accessing-git):
 
 1. Abra la línea de comandos o la ventana de terminal.
 
@@ -378,7 +379,7 @@ Puede utilizar la función personalizada en la variable [Editor de reglas de un 
 
 ## Usar una función personalizada en un formulario adaptable
 
-En un formulario adaptable, puede utilizar [funciones personalizadas dentro del editor de reglas](/help/forms/rule-editor-core-components.md). Agregue el siguiente código al archivo JavaScript (`Function.js` file) para calcular la edad en función de la fecha de nacimiento (AAAA-MM-DD). Crear una función personalizada como `calculateAge()` que toma la fecha de nacimiento como entrada y devuelve la edad:
+En un formulario adaptable, puede utilizar [funciones personalizadas dentro del editor de reglas](/help/forms/rule-editor-core-components.md). Añadamos el siguiente código al archivo JavaScript (`Function.js` file) para calcular la edad en función de la fecha de nacimiento (AAAA-MM-DD). Crear una función personalizada como `calculateAge()` que toma la fecha de nacimiento como entrada y devuelve la edad:
 
 ```javascript
     /**
@@ -831,7 +832,7 @@ function showModal(type, message) {
 }
 ```
 
-En este ejemplo, cuando el usuario utiliza el `customSubmitSuccessHandler` y `customSubmitErrorHandler` funciones personalizadas, los mensajes de éxito y error se muestran en un modal. La función de JavaScript `showModal(type, message)` se utiliza para crear y mostrar dinámicamente un cuadro de diálogo modal en una pantalla.
+En este ejemplo, cuando el usuario utiliza el `customSubmitSuccessHandler` y `customSubmitErrorHandler` funciones personalizadas, los mensajes de éxito y error se muestran en un modal. La función JavaScript `showModal(type, message)` se utiliza para crear y mostrar dinámicamente un cuadro de diálogo modal en una pantalla.
 
 Ahora, cree una regla para el envío correcto de formularios:
 
@@ -1036,7 +1037,7 @@ En caso de que se modifiquen las funciones personalizadas, el almacenamiento en 
    * Parámetros predeterminados
    * Parámetros REST
 
-## Ver también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}
 

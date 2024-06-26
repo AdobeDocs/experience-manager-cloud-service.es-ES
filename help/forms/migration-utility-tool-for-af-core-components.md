@@ -6,13 +6,14 @@ role: User, Developer, Admin
 features: core components
 hide: true
 hidefromtoc: true
-source-git-commit: cc1f3e2f0ddaed67de541c730c0b97f68c1e0d02
+exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
+feature: Adaptive Forms, Core Components
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 4%
 
 ---
-
 
 # Introducción
 
@@ -117,9 +118,9 @@ AEM AEM Para habilitar y utilizar las herramientas de modernización de la para 
    * **Ninguno** : seleccione la opción si no desea crear una copia de los formularios basados en el componente Base antes de iniciar la conversión del formulario.
    * **Restaurar** : seleccione la opción para restaurar el formulario al estado en el que se encontraba antes de iniciar la conversión del formulario.
    * **Copiar en destino**: seleccione la opción para crear una copia de los formularios basados en el componente Base antes de iniciar la conversión del formulario.
-En nuestro caso, la variable **Copiar en destino** La opción está seleccionada. Si la variable **Copiar en destino** está seleccionada, la opción **[!UICONTROL Ruta de origen]** y **[!UICONTROL Ruta de destino]** opciones se vuelven visibles.
+En nuestro caso, la variable **Copiar en destino** La opción está seleccionada. Si la variable **Copiar en destino** está seleccionada, la opción **[!UICONTROL Ruta de Source]** y **[!UICONTROL Ruta de destino]** opciones se vuelven visibles.
 
-1. Especifique el `source folder` nombre en el **[!UICONTROL Ruta de origen]**.
+1. Especifique el `source folder` nombre en el **[!UICONTROL Ruta de Source]**.
 1. Especifique el `target folder` nombre en el **[!UICONTROL Ruta de destino]**.
 1. Seleccione **[!UICONTROL Siguiente]**.
 1. Haga clic en **[!UICONTROL Añadir Forms]**. Todos los formularios del `source folder` aparece en la pantalla.
@@ -149,6 +150,3 @@ Ahora puede ver que el formulario adaptable creado en los componentes de base se
 
 * Asegúrese de que los formularios basados en componentes de base utilizan solo los componentes que tienen un equivalente [Componentes principales](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) disponible. En los casos en los que se utilizan componentes de base que no tienen un componente principal equivalente, el componente de base no se convierte. Como resultado, no funciona correctamente al crear un formulario
 * Asegúrese de que las reglas para convertir los componentes de base en componentes principales tengan formato XML.
-
-
-

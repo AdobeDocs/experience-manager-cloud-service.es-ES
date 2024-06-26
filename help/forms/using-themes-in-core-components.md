@@ -4,8 +4,9 @@ description: Puede utilizar temáticas para aplicar estilo y proporcionar una id
 keywords: formularios adaptables que aplican estilo a los componentes principales uso de la temática en los componentes principales, aplicación de estilos a un formulario adaptable, personalización de temáticas
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: aca3508d85a0382f679a8fa0ca986cfd13ee793b
-workflow-type: ht
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '2879'
 ht-degree: 100%
 

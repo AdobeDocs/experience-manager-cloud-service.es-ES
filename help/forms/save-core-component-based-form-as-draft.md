@@ -2,13 +2,14 @@
 title: Cómo guardar el formulario adaptable basado en componentes principales como borrador
 description: Aprenda a guardar formularios adaptables basados en componentes principales como borrador, a crear un portal de Forms y a utilizar componentes principales listos para usar en una página de AEM Sites.
 feature: Adaptive Forms, Core Components
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1072'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
-
 
 <span class="preview"> Este artículo incluye contenido para la función previa al lanzamiento. Solo se puede acceder a las funciones previas al lanzamiento a través de nuestra [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features).
 
@@ -211,7 +212,7 @@ You can configure the auto-save feature for an adaptive form as follows:
 * In [!UICONTROL Trigger], configure to trigger auto-save based on the occurrence of an event or after a specific interval of time.
 -->
 
-## Ver también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}
 

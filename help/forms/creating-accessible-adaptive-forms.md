@@ -4,8 +4,10 @@ description: AEM Forms tiene herramientas que permiten crear formularios adaptab
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms, Foundation Components
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
-workflow-type: ht
+exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '2018'
 ht-degree: 100%
 

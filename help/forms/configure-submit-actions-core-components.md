@@ -1,13 +1,14 @@
 ---
 title: ¿Configurar una acción de envío para un formulario adaptable?
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesará un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias
-keywords: Obtenga información sobre cómo seleccionar la acción de envío para un formulario adaptable, conectar un formulario adaptable a una lista de sharepoint, conectar un formulario adaptable a una biblioteca de documentos de sharepoint, conectar un formulario adaptable al modelo de datos de formulario (FDM)
+keywords: Cómo seleccionar la acción de envío para un formulario adaptable, conectar un formulario adaptable a una lista de SharePoint, conectar un formulario adaptable a una biblioteca de documentos de SharePoint, conectar un formulario adaptable al modelo de datos de formulario (FDM)
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 520d07cbb4566f9d39a95ac890a9cd572114d710
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '678'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +28,7 @@ Una acción de envío permite elegir el destino de los datos capturados mediante
 * Enviar datos de formulario por correo electrónico sin esfuerzo.
 * Iniciar flujos de Microsoft® Power Automate o flujos de trabajo de AEM al transmitir los datos.
 * Transmitir directamente los datos del formulario al servidor de Microsoft® SharePoint, a Microsoft Azure Blob Storage o a Microsoft® OneDrive.
-* Envíe sin problemas los datos a una fuente de datos configurada mediante el modelo de datos de formulario (FDM).
+* Enviar los datos sin problemas a una fuente de datos configurada mediante el modelo de datos de formulario (FDM).
 * Enviar cómodamente los datos a un punto final REST.
 
 Puede [ampliar las acciones de envío predeterminadas](custom-submit-action-form.md). También puede personalizar Enviar acciones para requisitos específicos de la organización.
@@ -62,7 +63,7 @@ Para obtener información detallada sobre las acciones de envío siguientes, con
 * [Invocar un flujo de Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Enviar a SharePoint](/help/forms/configure-submit-action-sharepoint.md)
 * [Invocar un Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Enviar mediante modelo de datos de formulario (FDM)](/help/forms/using-form-data-model.md)
+* [Enviar mediante el modelo de datos de formulario (FDM)](/help/forms/using-form-data-model.md)
 * [Enviar a Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Enviar al punto final REST](/help/forms/configure-submit-action-restpoint.md)
 * [Enviar a OneDrive](/help/forms/configure-submit-action-onedrive.md)
@@ -212,7 +213,7 @@ If end-user bypass those validations and submit the forms, the server again perf
 
 Como parte de las directrices de seguridad y endurecimiento de AEM, configure las páginas de error personalizadas como 400.jsp, 404.jsp y 500.jsp. Se llama a estos controladores cuando aparecen errores 400, 404 o 500 al enviar un formulario. También se llama a los controladores cuando estos códigos de error se activan en el nodo Publish. También puede crear páginas JSP para otros códigos de error HTTP.
 
-Cuando rellena previamente un modelo de datos de formulario (FDM) o un formulario adaptable basado en esquemas con datos XML o JSON que se ajustan a un esquema que no contiene datos `<afData>`, `<afBoundData>`, y `</afUnboundData>` , se perderán los datos de los campos ilimitados del formulario adaptable. El esquema puede ser un esquema XML, JSON o un modelo de datos de formulario (FDM). Los campos sin límites son campos de formulario adaptable sin la propiedad `bindref`.
+Cuando rellena previamente un modelo de datos de formulario (FDM) o un formulario adaptable basado en un esquema, con datos XML o JSON que se ajustan a un esquema que no contiene las etiquetas `<afData>`, `<afBoundData>` y `</afUnboundData>`, los datos de los campos ilimitados del formulario adaptable se perderán. El esquema puede ser un esquema XML, JSON o un modelo de datos de formulario (FDM). Los campos sin límites son campos del formulario adaptable sin la propiedad `bindref`.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 
@@ -226,7 +227,7 @@ Cuando rellena previamente un modelo de datos de formulario (FDM) o un formulari
 
 -->
 
-## Consulte también {#see-also}
+## Ver también {#see-also}
 
 {{see-also}}
 

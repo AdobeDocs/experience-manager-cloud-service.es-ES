@@ -6,10 +6,11 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2378'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -179,7 +180,7 @@ Utilizando la acción del [Servicio de invocación del editor de reglas](https:/
 
 >[!NOTE]
 >
-> * Para utilizar controladores de error con la acción Invocar servicio del Editor de reglas, configure Forms adaptable con un modelo de datos de formulario (FDM).
+> * Para utilizar los controladores de errores con la acción Invocar servicio del Editor de reglas, configure los formularios adaptables con un modelo de datos de formulario.
 > * De forma predeterminada, se proporciona el controlador de errores para mostrar los mensajes de error en los campos si la respuesta de error está en el esquema estándar. También puede llamar al controlador de error predeterminado desde la función del controlador de error personalizado.
 
 Con el editor de reglas, se puede hacer lo siguiente:
@@ -403,7 +404,7 @@ Using this custom error handler, the adaptive form converts the fields listed in
  -->
 
 
-## Consulte también {#see-also}
+## Ver también {#see-also}
 
 {{see-also}}
 * [Crear y usar controladores de error personalizados en Formularios adaptables (componentes principales)](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)

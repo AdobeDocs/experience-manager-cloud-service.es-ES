@@ -1,15 +1,17 @@
 ---
 title: AEM ¿Cómo se utiliza hCaptcha&reg; en un formulario adaptable principal de componentes de formulario adaptable de la?
-description: Mejore la seguridad de los formularios con el servicio hCaptcha&reg; sin esfuerzo. Guía paso a paso en el interior
+description: Mejore la seguridad sin esfuerzo con el servicio hCaptcha&reg;. Guía paso a paso en el interior
 topic-tags: Adaptive Forms, author
 keywords: Captcha&reg; servicio, Forms adaptable, desafío CAPTCHA, prevención de bots, componentes principales, seguridad de envío de formularios, prevención de spam de formularios
 feature: Adaptive Forms, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+exl-id: 6c559df2-7b6a-42fe-b44c-29a782570a0c
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '962'
-ht-degree: 29%
+ht-degree: 41%
 
 ---
 
@@ -22,12 +24,12 @@ CAPTCHA (prueba de Turing completamente automática y pública para diferenciar 
 AEM Forms as a Cloud Service es compatible con las siguientes soluciones CAPTCHA:
 
 * [Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
-* [Torniquete de Nubes](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
-* [Chcaptcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+* [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+* [hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
 
 ## Integración del entorno de AEM Forms con Captcha Captcha
 
-El servicio Captcha® protege sus formularios de bots, spam y abusos automatizados. Plantea un desafío de widget de casilla de verificación y evalúa la respuesta del usuario para determinar si es un humano o un bot que interactúa con el formulario. Evita que el usuario continúe si la prueba falla y ayuda a que las transacciones en línea sean seguras al impedir que los bots publiquen contenido no deseado o actividades malintencionadas.
+El servicio hCaptcha® protege sus formularios de bots, correos no deseados y abusos automatizados. Plantea un desafío tipo Widget de la casilla de verificación y evalúa la respuesta del usuario para determinar si es un humano o un bot el que interactúa con el formulario. Evita que el usuario continúe si la prueba falla y ayuda a que las transacciones en línea sean seguras al impedir que los bots publiquen contenido no deseado o actividades maliciosas.
 
 AEM Forms as a Cloud Service es compatible con hCaptcha® en los componentes principales de Forms adaptable. Puede utilizarlo para presentar un desafío de widget de casilla de verificación al enviar el formulario.
 
@@ -88,10 +90,10 @@ Para integrar AEM Forms con el servicio hCaptcha®, realice los siguientes pasos
 
    * **[!UICONTROL Nombre]:** Especifique el nombre del componente Captcha, puede identificar fácilmente un componente del formulario con su nombre único tanto en el formulario como en el editor de reglas.
    * **[!UICONTROL Título]:** Especifique el título del componente Captcha.
-   * **[!UICONTROL Ajustes de configuración]:** Seleccione una Configuración de nube configurada para Chcaptcha®.
-   * **Tamaño de Captcha:** Puede seleccionar el tamaño de visualización del cuadro de diálogo de desafío hCaptcha®. Utilice el **[!UICONTROL Compacto]** opción para mostrar un tamaño pequeño y el **[!UICONTROL Normal]** opción para mostrar un cuadro de diálogo de desafío hCaptcha® de tamaño relativamente grande.<!-- or **[!UICONTROL Invisible]** to validate hCaptcha&reg; without explicitly rendering the checkbox widget on the user interface. -->
+   * **[!UICONTROL Ajustes de configuración]:** seleccione una configuración de nube configurada para hCaptcha®.
+   * **Tamaño de Captcha:** Puede seleccionar el tamaño de visualización del cuadro de diálogo de desafío hCaptcha®. Utilice la opción **[!UICONTROL Compacto]** para mostrar un tamaño pequeño y la opción **[!UICONTROL Normal]** para mostrar un cuadro de diálogo de desafío de hCaptcha® de tamaño relativamente grande.<!-- or **[!UICONTROL Invisible]** to validate hCaptcha&reg; without explicitly rendering the checkbox widget on the user interface. -->
    * **[!UICONTROL Mensaje de validación]:** Proporcione un mensaje de validación para la validación de Captcha al enviar el formulario.
-   * **[!UICONTROL Mensaje de validación de secuencia de comandos]**: esta opción le permite introducir un mensaje que se mostrará si la validación de la secuencia de comandos falla.
+   * **[!UICONTROL Mensaje de validación de la secuencia de comandos]**: esta opción permite introducir un mensaje que se mostrará si la validación de la secuencia de comandos falla.
      >[!NOTE]
      >Puede tener varias configuraciones en la nube en su entorno para un propósito similar. Por lo tanto, elija el servicio con cuidado. Si no aparece ningún servicio, consulte [Conecte su entorno AEM Forms con Chcaptcha®](#connect-your-forms-environment-with-hcaptcha-service) para aprender a crear un Cloud Service que conecte su entorno de AEM Forms con el servicio hCaptcha®.
      <!--* **Error Message:** Provide the error message to display to the user when the Captcha submission fails.-->
@@ -101,7 +103,7 @@ Para integrar AEM Forms con el servicio hCaptcha®, realice los siguientes pasos
 
 Ahora, solo se permiten para el envío del formulario los formularios legítimos, en los que el usuario que rellena el formulario borra correctamente el desafío planteado por el servicio hCaptcha®. hCaptcha®
 
-**Captcha® es una marca comercial registrada de Intuition Machines, Inc.**
+**hCaptcha® es una marca comercial registrada de Intuition Machines, Inc.**
 
 
 ## Preguntas frecuentes
@@ -109,6 +111,6 @@ Ahora, solo se permiten para el envío del formulario los formularios legítimos
 * **P: ¿Puedo usar más de un componente Captcha en un formulario adaptable?**
 * **R:** No se puede usar más de un componente Captcha en un formulario adaptable. Además, no se recomienda utilizar un componente Captcha en un fragmento o panel marcado para la carga diferida.
 
-## Ver también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}

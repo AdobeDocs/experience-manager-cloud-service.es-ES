@@ -1,12 +1,12 @@
 ---
 title: Cómo crear una secuencia de formularios de varios pasos
 description: Con  [!DNL Experience Manager Forms], puede definir una secuencia de paneles de formulario para que los usuarios se desplacen por un formulario adaptable y lo rellenen.
-role: User
+role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: 0eac90a8f120a9c7655e68533d4b0a32292621e1
-workflow-type: ht
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 100%
 

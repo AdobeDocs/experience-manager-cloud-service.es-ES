@@ -1,18 +1,19 @@
 ---
 title: AEM ¿Cómo se utiliza hCaptcha&reg; en un formulario adaptable con un tipo de datos de la aplicación?
-description: Mejore la seguridad de los formularios con el servicio hCaptcha&reg; sin esfuerzo. Guía paso a paso en el interior
+description: Mejore la seguridad sin esfuerzo con el servicio hCaptcha&reg;. Guía paso a paso en el interior
 topic-tags: Adaptive Forms, author
 keywords: Captcha&reg; servicio, Forms adaptable, desafío CAPTCHA, prevención de bots, seguridad de envío de formularios, prevención de spam de formularios
 feature: Adaptive Forms, Foundation Components
 hide: true
 hidefromtoc: true
-source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+exl-id: dc7ca723-1008-472a-b6eb-8e9ed6332a16
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '983'
-ht-degree: 23%
+ht-degree: 33%
 
 ---
-
 
 # Conecte su entorno AEM Forms con Chcaptcha® {#connect-your-forms-environment-with-hcaptcha-service}
 
@@ -22,13 +23,13 @@ CAPTCHA (prueba de Turing completamente automática y pública para diferenciar 
 
 AEM Forms as a Cloud Service es compatible con las siguientes soluciones CAPTCHA:
 
-* [Chcaptcha](#integrate-aem-forms-environment-with-hcaptcha-captcha)
-* [Torniquete de Nubes](/help/forms/integrate-adaptive-forms-turnstile.md)
+* [hCaptcha](#integrate-aem-forms-environment-with-hcaptcha-captcha)
+* [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile.md)
 * [Google reCAPTCHA](/help/forms/captcha-adaptive-forms.md)
 
 ## Integración del entorno de AEM Forms con Captcha Captcha
 
-El servicio Captcha® protege sus formularios de bots, spam y abusos automatizados. Plantea un desafío de widget de casilla de verificación y evalúa la respuesta del usuario para determinar si es un humano o un bot que interactúa con el formulario. Evita que el usuario continúe si la prueba falla y ayuda a que las transacciones en línea sean seguras al impedir que los bots publiquen contenido no deseado o actividades malintencionadas.
+El servicio hCaptcha® protege sus formularios de bots, correos no deseados y abusos automatizados. Plantea un desafío tipo Widget de la casilla de verificación y evalúa la respuesta del usuario para determinar si es un humano o un bot el que interactúa con el formulario. Evita que el usuario continúe si la prueba falla y ayuda a que las transacciones en línea sean seguras al impedir que los bots publiquen contenido no deseado o actividades maliciosas.
 
 AEM Forms as a Cloud Service es compatible con hCaptcha® en los componentes principales de Forms adaptable. Puede utilizarlo para presentar un desafío de widget de casilla de verificación al enviar el formulario.
 
@@ -103,13 +104,13 @@ Una vez configurado el servicio hCAPTCHA, estará disponible para su uso en un f
 
 Ahora, solo se permiten para el envío del formulario los formularios legítimos, en los que el usuario que rellena el formulario borra correctamente el desafío planteado por el servicio hCaptcha®.
 
-**Captcha® es una marca comercial registrada de Intuition Machines, Inc.**
+**hCaptcha® es una marca comercial registrada de Intuition Machines, Inc.**
 
 ## Preguntas frecuentes
 
 * **P: ¿Puedo usar más de un componente Captcha en un formulario adaptable?**
 * **R:** No se puede usar más de un componente Captcha en un formulario adaptable. Además, no se recomienda utilizar un componente Captcha en un fragmento o panel marcado para la carga diferida.
 
-## Ver también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}

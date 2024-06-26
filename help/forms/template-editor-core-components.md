@@ -4,10 +4,11 @@ description: Cree plantillas de formularios adaptables basadas en el componente 
 feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1962'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -164,7 +165,7 @@ Los autores pueden asociar un [!UICONTROL Esquema de modelo de datos de formular
 1. Seleccione **[!UICONTROL Explorador de contenido]**, situado en el lado izquierdo.
 1. Vaya a la **[!UICONTROL Configuración]** del contenedor del formulario.
 1. Seleccione **[!UICONTROL Modelo de datos]**.
-1. Elija su modelo de datos de formulario (FDM) mediante **[!UICONTROL Seleccionar modelo de datos de formulario]** y guarde la configuración.
+1. Elija el modelo de datos de formulario mediante **[!UICONTROL Seleccionar modelo de datos de formulario]** y guarde la configuración.
 
 ![Form-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img-core-component.png)
 
@@ -291,7 +292,7 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 
 -->
 
-## Consulte también {#see-also}
+## Ver también {#see-also}
 
 {{see-also}}
 * [Creación de estilos o temáticas para los formularios](using-themes-in-core-components.md)

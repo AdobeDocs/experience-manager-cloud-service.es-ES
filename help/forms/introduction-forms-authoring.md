@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2468'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +29,7 @@ ht-degree: 97%
 Los formularios adaptables le permiten crear formularios atractivos, interactivos, dinámicos y adaptables. [!DNL AEM Forms] proporciona una interfaz de usuario intuitiva y componentes predeterminados para crear y trabajar con formularios adaptables. Puede elegir crear un formulario adaptable en base a un modelo o esquema de formulario o sin un modelo de formulario. Es importante elegir cuidadosamente un modelo del formulario que no solo se adapte a sus necesidades, sino que amplíe sus inversiones y activos de infraestructura existentes. Puede elegir entre las siguientes opciones para crear un formulario adaptable:
 
 * **Uso de un modelo de datos de formulario (FDM)**
-  [Integración de datos](data-integration.md) permite integrar entidades y servicios de distintas fuentes de datos en un modelo de datos de formulario (FDM) que se puede utilizar para crear Forms adaptable. Elija Modelo de datos de formulario (FDM) si el formulario adaptable que está creando implica recuperar y escribir datos desde y hacia varias fuentes de datos.
+  La [integración de datos](data-integration.md) le permite integrar entidades y servicios de distintos orígenes de datos en un modelo de datos de formulario (FDM) que se puede utilizar para crear formularios adaptables. Seleccione un modelo de datos de formulario si el formulario adaptable que está creando implica recuperar y escribir datos desde y hacia varias fuentes de datos.
 
 * **Usar una plantilla de formulario XDP**
 Es un modelo de formulario ideal si tiene inversiones en formularios XFA o XDP. Proporciona una forma directa de convertir los formularios basados en XFA en formularios adaptables. Cualquier regla XFA existente se conservará en el formulario adaptable asociado. El formulario adaptable resultante admitirá construcciones XFA, como validaciones, eventos, propiedades y patrones.
@@ -362,6 +363,6 @@ La estructura del contenido suele contener los siguientes componentes principale
 
 * **activos:** Este nodo contiene información adicional utilizada para la creación de formularios. Por ejemplo, detalles del modelo del formulario, detalles de localización, etc.
 
-## Consulte también {#see-also}
+## Ver también {#see-also}
 
 {{see-also}}
