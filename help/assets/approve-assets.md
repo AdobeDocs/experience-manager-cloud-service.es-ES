@@ -2,9 +2,9 @@
 title: Aprobar recursos en el Experience Manager
 description: Obtenga información sobre cómo aprobar recursos en [!DNL Experience Manager].
 role: User
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '683'
 ht-degree: 1%
 
 ---
@@ -17,17 +17,18 @@ Puede aprobar recursos en AEM Assets para optimizar la administración de recurs
 
 ## Antes de empezar {#pre-requisites}
 
-Debe tener acceso a AEM Assets as a Cloud Service y permisos para editar el **[!UICONTROL Estado de revisión]** propiedad para un recurso.
+Debe tener acceso al as a Cloud Service de AEM Assets y permisos para editar el **[!UICONTROL Estado de revisión]** propiedad para un recurso.
 
 ## Configuración
 
-Debe realizar una actualización única del esquema de metadatos aplicable en la [!DNL Experience Manager] antes de aprobar un recurso. Puede omitir esta configuración para [!DNL Experience Manager Assets]. Siga estos pasos para configurar el esquema de metadatos:
+Debe realizar una actualización única del esquema de metadatos aplicable en la vista de administrador para poder aprobar un recurso. Puede omitir esta configuración para la vista de Assets. Siga estos pasos para configurar el esquema de metadatos:
 
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos]**.
 1. Seleccione el esquema de metadatos aplicable y haga clic en **[!UICONTROL Editar]**. <br>El **[!UICONTROL Editor de formularios de esquemas de metadatos]** se abre con el **[!UICONTROL Básico]** pestaña resaltada.
 1. Desplácese hacia abajo y haga clic **[!UICONTROL Estado de revisión]**.
 1. Haga clic en **[!UICONTROL Reglas]** en el panel lateral derecho.
 1. Desmarcar **[!UICONTROL Deshabilitar edición]** y haga clic en **[!UICONTROL Guardar]**.
+Si necesita ver la propiedad que el **[!UICONTROL Estado de revisión]** el campo está asignado a, navegue hasta **[!UICONTROL Configuración]** y vea la pestaña `./jcr:content/metadata/dam:status` valor en **[!UICONTROL Asignar a la propiedad]** field.
 
 >[!NOTE]
 >
@@ -45,7 +46,7 @@ Puede aprobar recursos en ambos [!DNL Experience Manager] y [!DNL Experience Man
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427430)
 
-   Del mismo modo, puede aprobar recursos mediante el [nueva vista de recursos](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-organize.html?lang=en#manage-asset-status).
+   Del mismo modo, puede aprobar recursos mediante el [nueva vista de Assets](/help/assets/manage-organize-assets-view.md).
 
 ## Aprobar recursos de forma masiva {#bulk-approve-assets}
 
@@ -59,7 +60,7 @@ Optimice su flujo de trabajo aprobando rápidamente varios recursos a la vez. Pu
 1. Seleccione el perfil de metadatos recién creado y haga clic en **[!UICONTROL Editar _(e)_]**. <br>El **[!UICONTROL Editar perfil de metadatos]**El formulario se abre con la variable **[!UICONTROL Básico]**pestaña resaltada.
 1. Arrastrar y soltar una **[!UICONTROL Campo de texto de línea única]** desde el **[!UICONTROL Generar formulario]** en el lado derecho a la sección Metadatos del formulario.
 1. Haga clic en el campo recién agregado y, a continuación, realice las siguientes actualizaciones en la **[!UICONTROL Configuración]** panel:
-   1. Cambie el **[!UICONTROL Etiqueta de campo]** hasta _Recursos aprobados_.
+   1. Cambie el **[!UICONTROL Etiqueta de campo]** hasta _Assets aprobado_.
    1. Actualice el **[!UICONTROL Asignar a la propiedad]** hasta _./jcr:content/metadata/dam:status_.
    1. Cambie el valor predeterminado a _aprobado_.
 
@@ -74,3 +75,31 @@ Optimice su flujo de trabajo aprobando rápidamente varios recursos a la vez. Pu
 >[!NOTE]
 > 
 >Este método aprueba los recursos recién creados en la carpeta. Para los recursos existentes en la carpeta, debe seleccionarlos y aprobarlos manualmente. <br> Como alternativa, puede utilizar la variable **[!UICONTROL Reprocesar]** para aplicar los cambios del perfil de metadatos a los recursos más antiguos.
+
+Del mismo modo, para aprobar recursos de forma masiva dentro de una carpeta en la vista Assets:
+
+1. Seleccione los recursos y haga clic en **[!UICONTROL Edición masiva de metadatos]**.
+
+1. Seleccionar **[!UICONTROL Aprobado]** en el **[!UICONTROL Estado]** disponible en el campo [!UICONTROL Propiedades] en el panel derecho.
+
+1. Haga clic en **[!UICONTROL Guardar]**.
+
+## Copiar la URL de envío para los recursos aprobados {#copy-delivery-url-approved-assets}
+
+La URL de entrega de todos los recursos aprobados del repositorio está disponible si tiene [!UICONTROL Dynamic Media con funciones de OpenAPI] habilitado en la instancia de AEM as a Cloud Service.
+
+Para copiar la URL de envío de un recurso aprobado dentro del repositorio:
+
+1. Seleccione el recurso y haga clic en **[!UICONTROL Detalles]**.
+
+1. Haga clic en el icono Representaciones disponible en el panel derecho.
+
+1. Seleccionar **[!UICONTROL Dynamic Media con OpenAPI]** disponible en el **[!UICONTROL Dinámico]** sección.
+
+1. Clic **[!UICONTROL Copiar URL]** para copiar la dirección URL de envío del recurso.
+   ![copiar URL de envío](/help/assets/assets/copy-delivery-url.png)
+
+   >[!NOTE]
+   >
+   >La opción para copiar la URL de envío para los recursos aprobados solo está disponible en la vista de Assets.
+

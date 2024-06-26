@@ -2,16 +2,16 @@
 title: Integración de AEM Assets con aplicaciones de flujo descendente
 description: Integración de AEM Assets con aplicaciones de flujo descendente
 role: User
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%
 
 ---
 
-# Integración de AEM Assets con aplicaciones de flujo descendente {#integrate-new-dynamic-media-apis}
+# Integración de AEM Assets con aplicaciones de flujo descendente {#integrate-dynamic-media-open-apis}
 
-Todo [recursos aprobados](approved-assets.md) Los recursos disponibles en el repositorio de recursos de Experience Manager están disponibles para su envío a aplicaciones de flujo descendente.
+Todo [recursos aprobados](approve-assets.md) Los recursos disponibles en el repositorio de recursos de Experience Manager están disponibles para su envío a aplicaciones de flujo descendente.
 
 Puede integrar su propia interfaz de usuario personalizada con el repositorio de Experience Manager Assets mediante las API de búsqueda y envío o utilizar el selector de recursos de Micro-FrontEnd de Adobe.
 
