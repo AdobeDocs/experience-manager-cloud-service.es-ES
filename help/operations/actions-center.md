@@ -4,10 +4,10 @@ description: Aproveche el Centro de Acciones para actuar convenientemente sobre 
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 7630481aab89b31057509f23aab334e17c537257
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 64%
+source-wordcount: '988'
+ht-degree: 55%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 64%
 
 AEM as Cloud Service envía notificaciones al Centro de acciones por correo electrónico cuando se producen incidentes críticos que requieren una acción inmediata y recomendaciones proactivas para optimizaciones. Algunos ejemplos incluyen una cola bloqueada o un conjunto de credenciales que caducan; el conjunto completo de tipos de notificación el Centro de acciones se puede ver en la [tabla siguiente](#supported-notification-types), que se ampliará con el tiempo.
 
-AEM Cuando se recibe una notificación por correo electrónico del Centro de acciones, se puede hacer clic en ella para abrir el Centro de acciones de un as a Cloud Service, con una ventana emergente que muestra un contexto adicional que explica la acción que debe realizar un cliente.
+Cuando se recibe una notificación por correo electrónico del Centro de acciones, se puede hacer clic en ella para abrir el Centro de acciones de AEM as a Cloud Service, con una ventana emergente que muestra un contexto adicional que explica la acción que debe realizar un cliente.
 
 Además de mostrar información sobre la notificación de correo electrónico a la que se acaba de hacer clic, el Centro de acciones sirve como un lugar centralizado en el que se pueden ver y administrar el conjunto de notificaciones actuales y antiguas. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
@@ -76,6 +76,12 @@ En la tabla siguiente se enumeran los tipos de notificación admitidos actualmen
 | Cola de replicación bloqueada | Problema | Desbloquear la cola siguiendo las instrucciones de la [Documentación de replicación](/help/operations/replication.md#troubleshooting) |
 | Consulta GraphQL persistente no válida | Problema | Corrija la consulta de GraphQL no válida haciendo referencia a la variable [Documentación de solución de problemas de consultas persistentes de GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
 | Pico de tráfico en origen | Problema | Protect define su origen mediante la configuración de reglas de filtro de tráfico de límite de velocidad que aplican umbrales inferiores a los del pico de tráfico predeterminado en la alerta de déclencheur.  Consulte la [Bloqueo de ataques DoS y DDoS mediante reglas de tráfico](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) de la documentación de Reglas del filtro de tráfico, que hace referencia a un tutorial. |
+| Las páginas contienen un gran número de nodos | Proactivo | Reduzca el número total de nodos dentro de una página. Consulte [Documentación de complejidad de página](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | |
+| Gran número de instancias de flujo de trabajo en ejecución | Proactivo | Finalice los flujos de trabajo en ejecución que ya no sean necesarios. Obtenga información sobre cómo [configuración de un trabajo de depuración](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance) |               |
 | Certificado S2S caducado | Proactivo | Obtenga información sobre cómo actualizar una credencial en la [documentación de Generación de tokens de acceso para las API del lado del servidor](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) | Recuento alto de conexiones | Proactivo | Obtenga información acerca de la agrupación de conexiones en [Agrupación de conexiones junto con documentación de redes avanzadas](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
 | Asignación de usuarios de servicio obsoleta | Proactivo | Aprenda a utilizar el formato más reciente de asignación de usuarios de Sling Service, como se indica en [Prácticas recomendadas para la asignación de usuarios al servicio Sling y la definición de usuarios del servicio](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
-| Recuento alto de conexiones | Proactivo | Obtenga información acerca de la agrupación de conexiones en [Documentación de redes avanzadas](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
+| Recuento alto de conexiones | Proactivo | Obtenga información acerca de la agrupación de conexiones en [Documentación de redes avanzadas](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |  |
+| Usuarios añadidos directamente al grupo personalizado | Proactivo | AEM Los usuarios deben añadirse a los grupos de IMS relevantes y estos grupos de IMS deben añadirse como miembros de grupos de. Alinear con [Prácticas recomendadas de IMS](/help/security/ims-support.md) | |
+| Contenido JCR faltante | Proactivo | Añada el nodo de contenido JCR que falta. Consulte [Documentación del Validador de contenido de Assets](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
+| Flujos de trabajo completados no depurados | Proactivo | Minimice el número de instancias del flujo de trabajo y mejore el rendimiento depurando las instancias del flujo de trabajo con más de 90 días de antigüedad. Obtenga información sobre cómo [configuración de tareas de mantenimiento](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance) | |
+| Falta el tipo de recurso de Sling en la página | Proactivo | Añada el nodo de tipo de recurso Sling que falta. Consulte [Documentación del Validador de contenido de Assets](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) |
