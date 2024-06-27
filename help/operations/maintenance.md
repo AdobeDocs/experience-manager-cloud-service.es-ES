@@ -1,13 +1,13 @@
 ---
 title: Tareas de mantenimiento en AEM as a Cloud Service
-description: AEM Obtenga información acerca de las tareas de mantenimiento en los as a Cloud Service de la y cómo configurarlas.
+description: Obtenga información sobre las tareas de mantenimiento en AEM as a Cloud Service y cómo configurarlas.
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: c7488b9a10704570c64eccb85b34f61664738b4e
+source-git-commit: 4113bb47dee5f3a2c7743f9a79c60654e58cb6bd
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 59%
+source-wordcount: '2106'
+ht-degree: 30%
 
 ---
 
@@ -28,7 +28,7 @@ En versiones anteriores de AEM, se podían configurar tareas de mantenimiento me
 >
 >Adobe se reserva el derecho de anular los ajustes de configuración de tareas de mantenimiento de un cliente para mitigar problemas como la degradación del rendimiento.
 
-La siguiente tabla ilustra las tareas de mantenimiento disponibles en el momento de la publicación de AEM as a Cloud Service.
+En la tabla siguiente se ilustran las tareas de mantenimiento disponibles.
 
 <table style="table-layout:auto">
  <tbody>
@@ -45,26 +45,16 @@ La siguiente tabla ilustra las tareas de mantenimiento disponibles en el momento
   </tr>
   <tr>
     <td>Depuración de la versión</td>
-    <td>Adobe</td>
-    <td>Para los entornos existentes (los creados antes de una fecha aún por determinar en 2024), la depuración está deshabilitada y se habilitará en el futuro con un valor predeterminado de 7 años; los clientes podrán configurarla con valores personalizados más bajos (como 30 días).<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->Los nuevos entornos (los creados a partir de una fecha aún por determinar en 2024) tendrán la depuración habilitada de forma predeterminada con los valores siguientes, y los clientes podrán configurarla con valores personalizados.
-     <ol>
-       <li>Se eliminan las versiones con más de 30 días</li>
-       <li>Se conservan las cinco versiones más recientes de los últimos 30 días</li>
-       <li>Independientemente de las reglas anteriores, se conserva la versión más reciente.</li>
-       <br>Se recomienda que los clientes que tengan requisitos regulatorios para procesar páginas de sitio exactamente como aparecieron en una fecha específica, se integren con servicios externos especializados.
-     </ol></td>
+    <td>Cliente</td>
+    <td>La depuración de versiones está deshabilitada de forma predeterminada, pero la directiva se puede configurar, tal como se describe en la sección <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tareas de mantenimiento de purga de versiones y depuración de registros de auditoría</a> sección.<br/><br/>La depuración estará habilitada pronto de forma predeterminada, con esos valores reemplazables.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+   </td>
   </td>
   </tr>
   <tr>
     <td>Purga del registro de auditoría</td>
-    <td>Adobe</td>
-    <td>Para los entornos existentes (los creados antes de una fecha aún por determinar en 2024), la depuración está deshabilitada y se habilitará en el futuro con un valor predeterminado de 7 años; los clientes podrán configurarla con valores personalizados más bajos (como 30 días).<br><br> <!-- See above for the two line breaks -->Los nuevos entornos (los creados a partir de una fecha aún por determinar en 2024) tendrán la depuración habilitada de forma predeterminada en <code>/content</code> del repositorio según el siguiente comportamiento:
-     <ol>
-       <li>Para la auditoría de replicación, se eliminan los registros de auditoría con más de tres días</li>
-       <li>Para la auditoría de DAM (Assets), se eliminan los registros de auditoría con más de 30 días</li>
-       <li>Para la auditoría de páginas, se eliminan los registros con más de tres días.</li>
-       <br>Se recomienda que los clientes que tengan requisitos regulatorios para producir registros de auditoría no editables se integren con servicios externos especializados.
-     </ol></td>
+    <td>Cliente</td>
+    <td>La depuración del registro de auditoría está deshabilitada de forma predeterminada, pero la directiva se puede configurar, tal como se describe en la sección <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tareas de mantenimiento de purga de versiones y depuración de registros de auditoría</a> sección.<br/><br/>La depuración estará habilitada pronto de forma predeterminada, con esos valores reemplazables.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+   </td>
    </td>
   </tr>
   <tr>
@@ -200,3 +190,197 @@ Muestra de código 3 (mensual)
    windowScheduleWeekdays="[5,5]"
    windowStartTime="14:30"/>
 ```
+
+## Tareas de mantenimiento de purga de versiones y depuración de registros de auditoría {#purge-tasks}
+
+La depuración de versiones y del registro de auditoría reduce el tamaño del repositorio y, en algunos casos, puede mejorar el rendimiento.
+
+>[!NOTE]
+>
+>El Adobe recomienda que los clientes no configuren la depuración de versiones.
+
+### Valores predeterminados {#defaults}
+
+Actualmente, la depuración no está habilitada de forma predeterminada, pero esto cambiará en el futuro. Los entornos que se crearon antes de habilitar la depuración predeterminada tendrán un umbral más conservador para que la depuración no se produzca de forma inesperada. Consulte las secciones Depuración de versiones y Depuración del registro de auditoría a continuación para obtener más detalles sobre la política de depuración predeterminada.
+<!-- Version purging and audit log purging are on by default, with different default values for environments with ids higher than **TBD** versus those with ids lower than that value. -->
+
+<!-- ### Overriding the default values with a new configuration {#override} -->
+
+Los valores de depuración predeterminados se pueden sobrescribir declarando un archivo de configuración e implementándolo como se describe a continuación.
+
+<!-- The reason for this behavior is to clarify the ambiguity over whether the default purge values would take effect once you remove the declaration. -->
+
+### Aplicación de una configuración {#configure-purge}
+
+Declare un archivo de configuración e impleméntelo como se describe en los pasos siguientes.
+
+>[!NOTE]
+>Una vez implementado el nodo de depuración de versiones en el archivo de configuración, debe mantenerlo declarado y no eliminarlo. La canalización de configuración fallará si intenta hacerlo.
+> 
+>Del mismo modo, una vez que implemente el nodo de depuración del registro de auditoría en el archivo de configuración, debe mantenerlo declarado y no eliminarlo.
+
+**1** : cree la siguiente estructura de carpetas y archivos en la carpeta de nivel superior del proyecto en Git:
+
+```
+config/
+     mt.yaml
+```
+
+**2** - Declare las propiedades en el archivo de configuración, que incluyen:
+
+* una propiedad &quot;kind&quot; con el valor &quot;MaintenanceTasks&quot;.
+* una propiedad &quot;version&quot; (actualmente estamos en la versión 1).
+* un objeto &quot;metadata&quot; opcional con la propiedad `envTypes` con una lista separada por comas del tipo de entorno (dev, stage, prod) para el que esta configuración es válida. Si no se declara ningún objeto de metadatos, la configuración es válida para todos los tipos de entorno.
+* Crear un objeto de datos con `versionPurge` y `auditLogPurge` objetos.
+
+Consulte las definiciones y sintaxis de la `versionPurge` y `auditLogPurge` objetos debajo de.
+
+La configuración debe estructurarse de forma similar al siguiente ejemplo:
+
+```
+kind: "MaintenanceTasks"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  versionPurge:
+    maximumVersions: 15
+    maximumAgeDays: 20
+    paths: ["/content"]
+    minimumVersions: 1
+    retainLabelledVersions: false
+  auditLogPurge:
+    rules:
+      - replication:
+          maximumAgeDays: 15
+          contentPath: "/content"
+          types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
+      - pages:
+          maximumAgeDays: 15
+          contentPath: "/content"
+          types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
+      - dam:
+          maximumAgeDays: 15
+          contentPath: "/content"
+          types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
+```
+
+Tenga en cuenta que para que la configuración sea válida:
+
+* todas las propiedades deben estar definidas. No hay valores predeterminados heredados.
+* se deben respetar los tipos (enteros, cadenas, booleanos, etc.) de las tablas de propiedades siguientes.
+
+>[!NOTE]
+>Puede utilizar `yq` para validar localmente el formato YAML del archivo de configuración (por ejemplo, `yq mt.yaml`).
+
+**3** : configure las canalizaciones de configuración de producción y que no sean de producción.
+
+Los entornos de desarrollo rápido (RDE) no admiten la depuración. Para otros tipos de entornos en programas de producción (que no sean de zona protegida), cree una canalización de configuración de implementación de destino en Cloud Manager.
+
+Consulte [configuración de canalizaciones de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) y [configuración de canalizaciones que no son de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) para obtener más información.
+
+### Depuración de la versión {#version-purge}
+
+>[!NOTE]
+>
+>El Adobe recomienda que los clientes no configuren la depuración de versiones.
+
+#### Valores predeterminados de depuración de versión {#version-purge-defaults}
+
+<!-- For version purging, environments with an id higher than **TBD** have the following default values: -->
+
+Actualmente, la depuración no está habilitada de forma predeterminada, pero esto cambiará en el futuro.
+
+Los entornos que se crearon después de habilitar la depuración predeterminada tendrán los siguientes valores predeterminados:
+
+* Se eliminan las versiones con más de 30 días.
+* Se conservan las cinco versiones más recientes de los últimos 30 días.
+* Independientemente de las reglas anteriores, se conserva la versión más reciente (además del archivo actual).
+
+<!-- Environments with an id equal or lower than **TBD** will have the following default values: -->
+
+Los entornos que se crearon antes de habilitar la depuración predeterminada tendrán los valores predeterminados que se enumeran a continuación, pero se recomienda reducir esos valores para optimizar el rendimiento.
+
+* Se eliminan las versiones anteriores a 7 años.
+* Se conservan todas las versiones de los últimos 7 años.
+* Después de 7 años, se eliminan otras versiones que no sean la más reciente (además del archivo actual).
+
+#### Propiedades de purga de versiones {#version-purge-properties}
+
+Las propiedades permitidas se enumeran a continuación.
+
+Las columnas que indican *predeterminado* indicar los valores predeterminados en el futuro, cuando se apliquen los valores predeterminados; *TBD* refleja un id de entorno que aún no se ha determinado.
+
+| Propiedades | valor predeterminado futuro para envs>TBD | valor predeterminado futuro para envs&lt;=TBD | Requerido | tipo | Valores |
+|-----------|--------------------------|-------------|-----------|---------------------|-------------|
+| rutas | [&quot;/content&quot;] | [&quot;/content&quot;] | Sí | matriz de cadenas | Especifica en qué rutas purgar versiones cuando se crean nuevas versiones.  Los clientes deben declarar esta propiedad, pero el único valor permitido es &quot;/content&quot;. |
+| maximumAgeDays | 30 | 2557 (7 años + 2 días bisiestos) | Sí | Entero | Se elimina cualquier versión anterior al valor configurado. Si el valor es 0, la depuración no se realiza según la antigüedad de la versión. |
+| maximumVersions | 5 | 0 (sin límite) | Sí | Entero | Se elimina cualquier versión anterior a la n-ª versión más reciente. Si el valor es 0, la depuración no se realiza según el número de versiones. |
+| minimumVersions | 1 | 1 | Sí | Entero | El número mínimo de versiones que se conservan independientemente de la edad. Tenga en cuenta que siempre se conserva al menos 1 versión; su valor debe ser 1 o superior. |
+| keepLabelsVersioned | false | false | Sí | booleano | Determina si se excluirán de la depuración las versiones etiquetadas explícitamente. Para mejorar la optimización del repositorio, se recomienda establecer este valor en false. |
+
+
+**Interacciones de propiedad**
+
+Los siguientes ejemplos ilustran cómo interactúan las propiedades al combinarse.
+
+Ejemplo:
+
+```
+maximumAgeDays = 30
+maximumVersions = 10
+minimumVersions = 2
+```
+
+Si hay 11 versiones en el día 23, la versión más antigua se depurará la próxima vez que se ejecute la tarea de mantenimiento de depuración, ya que la variable `maximumVersions` se establece en 10.
+
+Si hay 5 versiones en el día 31, solo 3 se purgarán desde el `minimumVersions` se establece en 2.
+
+Ejemplo:
+
+```
+maximumAgeDays = 30
+maximumVersions = 0
+minimumVersions = 1
+```
+
+No se purgarán versiones de más de 30 días desde el `maximumVersions` se establece en 0.
+
+Se conservará una versión con más de 30 días.
+
+### Purga del registro de auditoría {#audit-purge}
+
+#### Valores predeterminados de purga del registro de auditoría {#audit-purge-defaults}
+
+<!-- For audit log purging, environments with an id higher than **TBD** have the following default values: -->
+
+Actualmente, la depuración no está habilitada de forma predeterminada, pero esto cambiará en el futuro.
+
+Los entornos que se crearon después de habilitar la depuración predeterminada tendrán los siguientes valores predeterminados:
+
+* Se eliminan los registros de replicación, DAM y auditoría de página anteriores a 7 días.
+* Se registran todos los eventos posibles.
+
+<!-- Environments with an id equal or lower than **TBD** will have the following default values: -->
+
+Los entornos que se crearon antes de habilitar la depuración predeterminada tendrán los valores predeterminados que se enumeran a continuación, pero se recomienda reducir esos valores para optimizar el rendimiento.
+
+* Se eliminan los registros de replicación, DAM y auditoría de página anteriores a 7 años.
+* Se registran todos los eventos posibles.
+
+>[!NOTE]
+>Se recomienda que los clientes, que tienen requisitos regulatorios para producir registros de auditoría no editables, se integren con servicios externos especializados.
+
+#### Propiedades de purga del registro de auditoría {#audit-purge-properties}
+
+Las propiedades permitidas se enumeran a continuación.
+
+Las columnas que indican *predeterminado* indicar los valores predeterminados en el futuro, cuando se apliquen los valores predeterminados; *TBD* refleja un id de entorno que aún no se ha determinado.
+
+
+| Propiedades | valor predeterminado futuro para envs>TBD | valor predeterminado futuro para envs&lt;=TBD | Requerido | tipo | Valores |
+|-----------|--------------------------|-------------|-----------|---------------------|-------------|
+| reglas | - | - | Sí | Objeto | Uno o más de los siguientes nodos: replicación, páginas, DAM. Cada uno de estos nodos define reglas, con las propiedades a continuación. Todas las propiedades deben declararse. |
+| maximumAgeDays | 7 días | para todos, 2557 (7 años + 2 días bisiestos) | Sí | integer | Para replicación, páginas o dam: número de días que se guardan los registros de auditoría. Los registros de auditoría anteriores al valor configurado se depuran. |
+| contentPath | &quot;/content&quot; | &quot;/content&quot; | Sí | Cadena | Ruta de acceso en la que se purgarán los registros de auditoría, para el tipo relacionado. Debe establecerse en &quot;/content&quot;. |
+| tipos | todos los valores | todos los valores | Sí | Matriz de enumeración | Para **réplica**, los valores enumerados son: Activate, Deactivate, Delete, Test, Reverse, Internal Poll. Para **páginas** Sin embargo, los valores enumerados son: PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestored, PageRolled Out, PageValid, PageInvalid. Para **presa**, los valores enumerados son: ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET_UPDATED, SUBASSET_REMOVED ED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJECTED. |
