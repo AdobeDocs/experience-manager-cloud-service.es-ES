@@ -4,7 +4,7 @@ description: Utilice el selector de recursos para buscar y recuperar metadatos y
 contentOwner: KK
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: 60c94071332003312ed9e963bc50e35d3c29baf0
+source-git-commit: 3f2fbdc1fd4087ea4c90b9bbe11aa37a11237ae5
 workflow-type: tm+mt
 source-wordcount: '4725'
 ht-degree: 36%
@@ -404,8 +404,8 @@ Utilice los siguientes requisitos previos si integra el Selector de recursos con
 
 * [Métodos de comunicación](#prereqs)
 * Para acceder a Dynamic Media con las funciones de OpenAPI, debe tener licencias para:
-   * Repositorio de Assets (por ejemplo, Experience Manager Assets as a Cloud Service)
-   * AEM Dynamic Media
+   * Repositorio de Assets (por ejemplo, Experience Manager Assets as a Cloud Service).
+   * AEM Dynamic Media.
 * Solo [recursos aprobados](#approved-assets.md) están disponibles para su uso para garantizar la coherencia de la marca.
 
 ### Integración de Dynamic Media con funciones de OpenAPI{#adobe-app-integration-polaris}
