@@ -4,7 +4,7 @@ description: Obtenga información sobre las tareas de mantenimiento en AEM as a 
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 4113bb47dee5f3a2c7743f9a79c60654e58cb6bd
+source-git-commit: f8ef7e36ad602af96c3a6055db31ac328da808e6
 workflow-type: tm+mt
 source-wordcount: '2106'
 ht-degree: 30%
@@ -46,14 +46,14 @@ En la tabla siguiente se ilustran las tareas de mantenimiento disponibles.
   <tr>
     <td>Depuración de la versión</td>
     <td>Cliente</td>
-    <td>La depuración de versiones está deshabilitada de forma predeterminada, pero la directiva se puede configurar, tal como se describe en la sección <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tareas de mantenimiento de purga de versiones y depuración de registros de auditoría</a> sección.<br/><br/>La depuración estará habilitada pronto de forma predeterminada, con esos valores reemplazables.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>La depuración de versiones está deshabilitada de forma predeterminada, pero la directiva se puede configurar, tal como se describe en la sección <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tareas de mantenimiento de purga de versiones y depuración de registros de auditoría</a> sección.<br/><br/>La depuración estará habilitada pronto de forma predeterminada, con esos valores reemplazables.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Purga del registro de auditoría</td>
     <td>Cliente</td>
-    <td>La depuración del registro de auditoría está deshabilitada de forma predeterminada, pero la directiva se puede configurar, tal como se describe en la sección <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tareas de mantenimiento de purga de versiones y depuración de registros de auditoría</a> sección.<br/><br/>La depuración estará habilitada pronto de forma predeterminada, con esos valores reemplazables.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>La depuración del registro de auditoría está deshabilitada de forma predeterminada, pero la directiva se puede configurar, tal como se describe en la sección <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tareas de mantenimiento de purga de versiones y depuración de registros de auditoría</a> sección.<br/><br/>La depuración estará habilitada pronto de forma predeterminada, con esos valores reemplazables.<br>
    </td>
    </td>
   </tr>
@@ -197,7 +197,7 @@ La depuración de versiones y del registro de auditoría reduce el tamaño del r
 
 >[!NOTE]
 >
->El Adobe recomienda que los clientes no configuren la depuración de versiones.
+>Los clientes de AEM Guides no deben configurar la depuración de versiones.
 
 ### Valores predeterminados {#defaults}
 
@@ -283,7 +283,7 @@ Consulte [configuración de canalizaciones de producción](/help/implementing/cl
 
 >[!NOTE]
 >
->El Adobe recomienda que los clientes no configuren la depuración de versiones.
+>Los clientes de AEM Guides no deben configurar la depuración de versiones.
 
 #### Valores predeterminados de depuración de versión {#version-purge-defaults}
 
