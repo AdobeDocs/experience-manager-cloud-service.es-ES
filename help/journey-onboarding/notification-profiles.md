@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
 source-git-commit: 53a3a4c47becf58f8874083e2878fa3458d6cad7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1130'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -23,11 +23,11 @@ De vez en cuando, Adobe se pone en contacto con los usuarios en relación con su
 * **Notificación de incidente**: estas notificaciones se envían durante un incidente o cuando Adobe ha identificado un posible problema de disponibilidad con su entorno AEM as a Cloud Service.
 * **Notificación proactiva**: estas notificaciones se envían cuando un miembro del equipo de asistencia de Adobe desea proporcionar orientación sobre una posible optimización o recomendación que pueda beneficiar a su entorno AEM as a Cloud Service.
 
-Los usuarios también pueden recibir estas notificaciones para programas específicos en función de su [permisos de grupo personalizados.](/help/implementing/cloud-manager/custom-permissions.md)
+Los usuarios también pueden recibir estas notificaciones para programas específicos en función de sus [permisos de grupo personalizados.](/help/implementing/cloud-manager/custom-permissions.md)
 
-Además, se admite la asignación de grupos a notificaciones dinámicas, y los usuarios y grupos pueden asignarse directamente a los perfiles de producto.
+Además, se admite la asignación de grupos a notificación proactiva y los usuarios y grupos pueden asignarse directamente a los perfiles de producto.
 
-* Los usuarios de los grupos de incidentes y notificaciones dinámicas recibirán notificaciones para todos los programas de forma predeterminada.
+* Los usuarios de los grupos de notificación de incidentes y notificación proactiva recibirán notificaciones para todos los programas de forma predeterminada.
 * Sin embargo, si los usuarios no desean recibir todas las notificaciones, pueden utilizar permisos de LECTURA personalizados para especificar qué notificaciones de programas desean recibir.
 
 Para que reciban estas notificaciones los usuarios correctos, debe configurar y asignar los perfiles de usuario como se describe en este documento.
@@ -63,7 +63,7 @@ Para configurar correctamente la recepción de notificaciones, cree dos perfiles
 
    * **Nombre del perfil del producto**: `Incident Notification - Cloud Service`
    * **Nombre para mostrar**: `Incident Notification - Cloud Service`
-   * **Descripción**: perfil de Cloud Manager para los usuarios que recibirán notificaciones durante un incidente o cuando el Adobe AEM haya identificado un posible problema de disponibilidad con su entorno as a Cloud Service de.
+   * **Descripción**: perfil de Cloud Manager para los usuarios que recibirán notificaciones durante un incidente o cuando Adobe haya identificado un posible problema de disponibilidad con su entorno AEM as a Cloud Service.
       * Los usuarios con permisos de LECTURA personalizados en programas específicos solo recibirán notificaciones para esos programas si eligen utilizar permisos personalizados.
 
 1. Haga clic en **Guardar**.
@@ -91,9 +91,9 @@ Ahora que se han creado los perfiles, debe asignar los usuarios adecuados. Puede
 
 ### Agregar usuarios nuevos a los perfiles {#new-user}
 
-Siga estos pasos para agregar usuarios para los que aún no se han configurado los Federated ID.
+Siga estos pasos para añadir usuarios para los que aún no se han configurado los Federated ID.
 
-1. Identifique al usuario o a los grupos que deben recibir notificaciones de incidente o dinámicas.
+1. Identifique a los usuarios o grupos que deben recibir notificaciones de incidentes o proactivas.
 
 1. Inicie sesión en Admin Console en [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) si todavía no ha iniciado sesión.
 
@@ -124,9 +124,9 @@ Repita estos pasos para los usuarios de su equipo que desee que reciban notifica
 
 ### Agregar usuarios existentes a perfiles {#existing-user}
 
-Siga estos pasos para agregar usuarios para los que ya existen Federated ID.
+Siga estos pasos para añadir usuarios para los que ya existen Federated ID.
 
-1. Identifique al usuario o a los grupos que deben recibir notificaciones de incidente o dinámicas.
+1. Identifique a los usuarios o grupos que deben recibir notificaciones de incidentes o proactivas.
 
 1. Inicie sesión en Admin Console en [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) si todavía no ha iniciado sesión.
 
