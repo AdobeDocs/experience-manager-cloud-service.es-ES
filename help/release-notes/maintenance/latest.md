@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: fd687498a8c72bf5d47b7b97aadf22d7d1e8dd2b
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 30%
+ht-degree: 91%
 
 ---
 
@@ -17,48 +17,48 @@ En la siguiente sección se describen las notas de la versión técnicas actuale
 
 ## Versión 16799 {#release-16799}
 
-A continuación, se resumen las mejoras continuas para la versión de mantenimiento 16799, que se publicó el miércoles, 18 de junio de 2024. La versión de mantenimiento anterior fue la 16544.
+A continuación, se resumen las mejoras continuas para la versión de mantenimiento 16799, que se publicó el 18 de junio de 2024. La versión de mantenimiento anterior fue la 16544.
 
 La activación de funcionalidades 2024.6.0 proporcionará el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
 ### Mejoras {#enhancements-16799}
 
-* ASSETS-31977: operaciones mejoradas de movimiento, copia y eliminación de recursos.
-* ASSETS-33618: transcripción y traducción automáticas para vídeos en Dynamic Media.
-* ASSETS-35185: Acción de aprobación para ContentHub y DM y añadir propiedades a las propiedades damAssetLucene.
-* ASSETS-35533: agregue propiedades DRM y CAI al índice damAssetLucene.
-* ASSETS-37280: Gestión secuencial de trabajos de traducción cuando el subtítulo de origen (vtt) aún se está procesando.
-* ASSETS-37559: evento de eliminación de recursos mejorado.
-* ASSETS-37723: Implementar el evento de publicación de recursos.
-* ASSETS-37724: Implementar el evento de cancelación de publicación de recursos.
-* ASSETS-38614: mejoras en la IU de Vínculo compartido.
-* ASSETS-39601: aplique la regex de validación automáticamente al nombre de LiveCopy del recurso.
-* ASSETS-39454: Actualice a la versión 2024.5.0 de visores en Quickstart.
-* CNTBF-184: Rutas de soporte debajo `/conf` en Reflujo de contenido.
+* ASSETS-31977: operaciones mejoradas de mover, copiar y eliminar recursos.
+* ASSETS-33618: capacidad de transcripción y traducción automáticas para vídeos en Dynamic Media.
+* ASSETS-35185: acción de aprobación para ContentHub y DM, y añadir propiedades a las propiedades damAssetLucene.
+* ASSETS-35533: adición de propiedades DRM y CAI al índice damAssetLucene.
+* ASSETS-37280: administración secuencial de trabajos de traducción cuando el subtítulo de origen (vtt) aún se está procesando.
+* ASSETS-37559: evento de recurso eliminado mejorado.
+* ASSETS-37723: implementar evento de publicación de recurso.
+* ASSETS-37724: implementar evento de recurso sin publicar.
+* ASSETS-38614: mejoras en la IU de Compartir vínculo.
+* ASSETS-39601: aplicar automáticamente la expresión regular de validación al nombre de LiveCopy del recurso.
+* ASSETS-39454: actualizar a visores de la versión 2024.5.0 en Quickstart.
+* CNTBF-184: Rutas de soporte bajo `/conf` en Reflujo de contenido.
 
 ### Problemas solucionados {#fixed-issues-16799}
 
-* ASSETS-37335: Al Editar El Panel Buscar En El Filtro, Se Desactivan Todas Las Casillas.
-* AEM ASSETS-38069: Problema de vista previa del PDF de DAM en la selección de filtros de la cronología.
-* ASSETS-38215: el botón de licencia de Adobe Stock AEM aparece atenuado en la as a Cloud Service para la suscripción de empresa de la.
-* ASSETS-38578: hipervínculos incorrectos en el informe de uso compartido de vínculos de Assets.
-* ASSETS-38678: vea la configuración dañada en los detalles de la colección.
-* ASSETS-39071: La entrega optimizada para la web puede producir una excepción si el tipo MIME de la representación original es nulo.
-* ASSETS-39316: La ordenación por nombre no funciona en Colecciones.
-* ASSETS-39377: La importación masiva desde OneDrive puede fallar al recibir contrapresión desde la API remota.
-* ASSETS-39428: Problemas de procesamiento en la IU de Administración de derechos de autor.
+* ASSETS-37335: al editar el panel de búsqueda en el filtro, se desmarcan todas las casillas.
+* ASSETS-38069: problema de vista previa del PDF de AEM DAM en la selección de filtros de la cronología.
+* ASSETS-38215: el botón de licencia de Adobe Stock aparece atenuado en AEM as a Cloud Service para la suscripción de empresa.
+* ASSETS-38578: hipervínculos incorrectos en el informe de Vínculos compartidos de Assets.
+* ASSETS-38678: ver la configuración dañada en Detalles de la colección.
+* ASSETS-39071: la entrega optimizada para la web puede producir una excepción si el tipo MIME de la representación original es nulo.
+* ASSETS-39316: la ordenación por nombre no funciona en Colecciones.
+* ASSETS-39377: la importación masiva desde OneDrive puede fallar al recibir contrapresión desde la API remota.
+* ASSETS-39428: problemas de representación en la IU de Administración de copyright.
 * CQ-4357150: Guava en el paquete cq-content-sync.
-* GRANITE-52573: Solicitudes que contienen una barra doble `//` se rechazan con el código de estado 400.
-* SCRNS-4194: Elimine la dependencia de las API de Google Guava.
-* SCRNS-4360: falta el botón Administrar publicación y publicación rápida para usuarios no administradores en el proveedor de contenido para canales.
-* SCRNS-4323: Ocultar/deshabilitar inicios desde screens.html.
+* GRANITE-52573: las solicitudes que contienen una barra doble `//` se rechazan con el código de estado 400.
+* SCRNS-4194: quitar la dependencia de las API de Google Guava.
+* SCRNS-4360: falta el botón Administrar publicación y Publicación rápida para usuarios no administradores en el proveedor de contenido para canales.
+* SCRNS-4323: ocultar/deshabilitar inicios desde screens.html.
 
 ### Problemas conocidos {#known-issues-16799}
 
 >[!NOTE]
-> AEM AEM El departamento de ingeniería ha identificado una regresión para la funcionalidad de los lanzamientos que afecta a las versiones actuales de los lanzamientos de la, empezando por 16461. Debido a esta regresión, los nuevos lanzamientos (creados después de aplicar nuevas versiones) que incluyen páginas no profundas no se promocionarán correctamente debido a la falta de configuraciones.
-> En caso de que sus entornos se vean afectados, encontrará un script shell disponible para identificar y actualizar las configuraciones que faltan a través de la asistencia al cliente (referencia interna SITES-22457).
-> Se pondrá a disposición una corrección a más largo plazo que garantizará que se creen nuevos lanzamientos con todas las configuraciones correctas. Hasta entonces, también está disponible una versión de parche interna bajo demanda.
+> El departamento de AEM Engineering ha identificado una regresión para la funcionalidad de inicios que afecta a las versiones actuales de AEM a partir de la versión 16461. Debido a esta regresión, los nuevos inicios (creados después de la implementación de las nuevas versiones) que incluyan páginas no profundas, no se promocionarán correctamente debido a la falta de configuraciones.
+> En caso de que sus entornos se vean afectados, tiene un script shell a su disposición para identificar y actualizar las configuraciones que faltan a través del servicio de asistencia al cliente (referencia interna SITES-22457).
+> Más adelante, habrá disponible una solución a más largo plazo que garantizará que los inicios nuevos se crean con todas las configuraciones correctas. Hasta entonces, también hay disponible una versión de parche interna bajo demanda.
 
 #### Formularios
 
@@ -71,9 +71,9 @@ La activación de funcionalidades 2024.6.0 proporcionará el conjunto completo d
 
 * Esta versión incluye las siguientes versiones nuevas del índice de productos:
    * **damAssetLucene-11**
-   * **fragmentos-11**
+   * **fragments-11**
 
-  Las versiones personalizadas de las versiones de índice anteriores se combinarán automáticamente con la nueva versión del índice del producto. Aplique más actualizaciones personalizadas a la versión combinada.
+  Las versiones personalizadas de las versiones de índice anteriores se combinarán automáticamente con la nueva versión del índice de productos. Aplique otras actualizaciones personalizadas a la versión combinada.
 
 * A partir de septiembre de 2024, AEM as a Cloud Service deshabilitará la serialización de los solucionadores de recursos a través del marco de trabajo Exportador de modelos Sling. Consulte la [documentación](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) para obtener más información.
 
