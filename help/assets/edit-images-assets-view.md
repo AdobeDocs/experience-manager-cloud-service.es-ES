@@ -4,7 +4,7 @@ description: Edite imágenes mediante opciones que se sirven de [!DNL Adobe Expr
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: 9a21c9218e45bb6ce91263c9798e3b1c99f369b4
+source-git-commit: 23b43f22b62451c9d0a5460999fcd43479438d7e
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 33%
@@ -13,7 +13,7 @@ ht-degree: 33%
 
 # Edición de imágenes en [!DNL Assets view] {#edit-images-in-assets-view}
 
-La vista de recursos permite la edición básica de imágenes, como el cambio de tamaño, la eliminación de fondo, el recorte y la conversión entre los formatos JPEG y PNG. Además, permite realizar ediciones avanzadas integrándolas con el Adobe Express. Después de editar una imagen, puede guardar la nueva como una nueva versión. El uso de versiones le ayuda a volver al recurso original más adelante si es necesario. Para editar una imagen, [abra su previsualización](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) y haga clic en **Editar imagen**.
+La vista de Assets permite la edición básica de imágenes, como el cambio de tamaño, la eliminación de fondo, el recorte y la conversión entre los formatos JPEG y PNG. Además, permite realizar ediciones avanzadas integrándolas con el Adobe Express. Después de editar una imagen, puede guardar la nueva como una nueva versión. El uso de versiones le ayuda a volver al recurso original más adelante si es necesario. Para editar una imagen, [abra su previsualización](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) y haga clic en **Editar imagen**.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ La vista de recursos permite la edición básica de imágenes, como el cambio de
 
 ## Editar imagen {#edit-image}
 
-Aterrizar en la vista de activos, utilizando el vínculo - [Vista de recursos](https://experience.adobe.com/#/assets) y seleccionando el repositorio adecuado. Para obtener acceso, póngase en contacto con el administrador de su organización.
+Aterrizar en la vista de Assets mediante el vínculo - [Vista de Assets](https://experience.adobe.com/#/assets) y seleccionando el repositorio adecuado. Para obtener acceso, póngase en contacto con el administrador de su organización.
 Para cualquier información de referencia adicional, consulte [Introducción a la vista de Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Explicación de la interfaz de usuario de vistas de Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation), y [Casos de uso de vista de Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
@@ -88,11 +88,11 @@ Los usuarios con derechos de acceso rápido pueden utilizar el editor Express in
 ![express en la IU de essentials](/help/assets/assets/express-in-essentials-ui.jpg)
 Para editar imágenes con [!DNL Adobe Express] editor incrustado, siga los pasos a continuación:
 
-1. Aterrizar en la vista de AEM Assets mediante el vínculo: [AEM Vista de recursos de](https://experience.adobe.com/#/assets) y seleccione el repositorio adecuado.
+1. Aterrizar en la vista de AEM Assets mediante el vínculo: [Vista de AEM Assets](https://experience.adobe.com/#/assets) y seleccione el repositorio adecuado.
 1. Clic **Assets**, introduzca una carpeta y seleccione una imagen.
 1. Clic **Abrir en Adobe Express**. La imagen se abre en un lienzo rápido.
 1. Realice los cambios necesarios en la imagen.
-1. Si el proyecto requiere que agregue más páginas, haga clic en **Añadir**, seleccione Assets, introduzca una carpeta, seleccione una imagen para llevarla a la página de lienzo y, a continuación, realice las ediciones necesarias en la imagen.
+1. Si el proyecto requiere que agregue más páginas, haga clic en **Añadir**, seleccione recursos, introduzca una carpeta, seleccione una imagen para llevarla a la página de lienzo y, a continuación, realice las ediciones necesarias en la imagen.
 1. Para guardar las imágenes, haga clic en **Guardar**. Aparece el cuadro de diálogo Guardar.
 
    >[!NOTE]
@@ -197,7 +197,7 @@ TBD: Insert a video of the available social media options.
 
 * Proporcione comentarios sobre productos usando [!UICONTROL Comentarios] opción disponible en la interfaz de usuario de la vista Assets.
 
-* Proporcione comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar una incidencia] ![crear una incidencia de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha
+* Facilite comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar un problema] ![crear un problema de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha.
 
 * Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General#support)
 
