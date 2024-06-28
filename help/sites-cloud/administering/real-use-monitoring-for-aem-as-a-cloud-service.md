@@ -4,14 +4,14 @@ description: Aprenda a utilizar Real Use Monitoring (RUM) para capturar y analiz
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 12e37d6d0a8674dd4329200322e2f959cc6dd787
+source-git-commit: 19b52f733a592c7e84ba2e9d83d37e5e181f21ab
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1313'
 ht-degree: 0%
 
 ---
 
-# AEM Servicio de Monitorización de Uso Real para el uso as a Cloud Service de la {#real-use-monitoring-service-for-aem-as-a-cloud-service}
+# Servicio de monitorización de uso real para AEM as a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!NOTE]
 >
@@ -33,8 +33,6 @@ El servicio de Monitorización de Uso Real es beneficioso para todos los cliente
 
 Para todos los clientes de Adobe, este servicio proporciona información valiosa sobre las interacciones del usuario. Los clientes que utilizan su propia CDN pueden beneficiarse de la creación de informes de tráfico simplificados, ya que Adobe ahora integra directamente la recopilación de datos, lo que elimina la necesidad de crear informes separados durante los ciclos de renovación.
 
-¿Le gustaría desbloquear todo el potencial de su sitio web, utilizando la herramienta de visualización Early Adopter RUM Explorer de Adobe para obtener información útil sobre la participación en su sitio web? Esta herramienta puede proporcionar información sobre el rendimiento de su página, incluidas métricas sobre el número de clics, los elementos vitales de la web principales (CWV), las conversiones y los mapas de recorrido de los clientes. Al utilizar estas potentes perspectivas, puede ajustar las experiencias digitales para satisfacer las necesidades de los usuarios de forma más eficaz. Si desea obtener más información y acceso, envíenos un correo electrónico a `rum-explorer@adobe.com`.
-
 ## Comprender el funcionamiento del servicio de monitorización de uso real {#understand-how-the-rum-service-works}
 
 Adobe Experience Manager AEM () utiliza la Monitorización de uso real (RUM) para ayudar a los clientes y al Adobe AEM a comprender cómo los visitantes interactúan con los sitios de la. Les ayuda a diagnosticar problemas de rendimiento y a medir la eficacia de los experimentos. RUM preserva la privacidad de los visitantes a través del muestreo (solo se supervisa una pequeña parte de todas las vistas de página) y no se recopila información de identificación personal (PII).
@@ -47,7 +45,7 @@ Como operador de sitio, no se requiere ninguna opción de inclusión adicional p
 
 ## Muestreo de datos del servicio de monitorización de uso real {#rum-service-data-sampling}
 
-Las soluciones tradicionales de análisis web intentan recopilar datos de cada visitante. AEM El servicio RUM solo captura información de una pequeña fracción de las vistas de página. El servicio está diseñado para ser muestreado y anonimizado, en lugar de un reemplazo para el análisis. De forma predeterminada, las páginas tienen una proporción de muestreo de 1:100. Los operadores de sitio no pueden aumentar ni disminuir la tasa de muestreo en este momento. Para calcular el tráfico total con precisión, por cada 100 vistas de página, se recopilan datos de 1, lo que le proporciona una aproximación fiable del tráfico general.
+Las soluciones tradicionales de análisis web intentan recopilar datos de cada visitante. AEM El servicio de RUM de solo captura información de una pequeña fracción de las vistas de página. El servicio está diseñado para ser muestreado y anonimizado, en lugar de un reemplazo para el análisis. De forma predeterminada, las páginas tienen una proporción de muestreo de 1:100. Los operadores de sitio no pueden aumentar ni disminuir la tasa de muestreo en este momento. Para calcular el tráfico total con precisión, por cada 100 vistas de página, se recopilan datos de 1, lo que le proporciona una aproximación fiable del tráfico general.
 
 A medida que se decide si los datos se recopilan, se toman por vista de página por vista de página, y resulta prácticamente imposible rastrear las interacciones en varias páginas. Por diseño, RUM no tiene concepto de visitantes o sesiones, solo de vistas de página.
 
@@ -108,11 +106,11 @@ A medida que analiza los datos de RUM, puede haber variaciones en las vistas de 
 
 1. **El `/.rum` La ruta está bloqueada en mi sitio, ¿cómo debo corregirla?**
 
-   El `/.rum` La ruta es necesaria para que funcione la colección RUM. Si tiene una CDN delante de lo que proporciona el Adobe AEM como parte de la red de distribución de contenido (CDN), asegúrese de que la red de distribución de contenido (CDN) de forma as a Cloud Service incluya el elemento de configuración de la red de distribución de contenido (CDN) en la lista de permitidos `/.rum` AEM AEM ruta se reenvía al mismo origen de que el resto del contenido de la. Y asegúrese de que no se ajuste de ninguna manera.
+   El `/.rum` La ruta es necesaria para que funcione la colección RUM. Si tiene una CDN delante de lo que proporciona el Adobe como parte de AEM as a Cloud Service, asegúrese de que la variable `/.rum` AEM AEM ruta se reenvía al mismo origen de que el resto del contenido de la. Y asegúrese de que no se ajuste de ninguna manera.
 
 1. **¿La recopilación de RUM cuenta para las solicitudes de contenido con fines contractuales?**
 
-   La biblioteca RUM y la colección RUM no cuentan como solicitudes de contenido y no aumentan el número informado de vistas de página o llamadas a la API. AEM Además, para los clientes que utilizan CDN lista para usar con as a Cloud Service de la, [colección del lado del servidor](#serverside-collection) es la base de las solicitudes de contenido.
+   La biblioteca RUM y la colección RUM no cuentan como solicitudes de contenido y no aumentan el número informado de vistas de página o llamadas a la API. Además, para los clientes que utilizan la CDN predeterminada con AEM as a Cloud Service, [colección del lado del servidor](#serverside-collection) es la base de las solicitudes de contenido.
 
 1. **¿Cómo puedo optar por no participar?**
 
