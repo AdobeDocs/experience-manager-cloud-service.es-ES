@@ -3,10 +3,10 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 19b52f733a592c7e84ba2e9d83d37e5e181f21ab
+source-git-commit: 1e5a32625377cb564c859a6fdaf1ecef6ebebe9e
 workflow-type: tm+mt
-source-wordcount: '1805'
-ht-degree: 60%
+source-wordcount: '1865'
+ht-degree: 45%
 
 ---
 
@@ -42,6 +42,12 @@ Have a look at the June 2024 Release Overview video for a summary of the feature
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
+### Nueva función en Experience Manager Sites {#new-feature-sites}
+
+**Servicio de datos de Real Use Monitoring (RUM)** {#real-use-monitoring}
+
+El [Servicio de datos de Real Use Monitoring (RUM)](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/shwetad-patch-1/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service) ya está disponible de forma general, lo que permite la recopilación de datos del lado del cliente para AEM as a Cloud Service. Este servicio ofrece un reflejo más preciso de las interacciones del usuario, lo que garantiza una medida fiable de la participación en el sitio web. Ofrece a los clientes una perspectiva avanzada del tráfico y el rendimiento de sus páginas, lo que representa una valiosa oportunidad para comprender y mejorar el rendimiento de las páginas.
+
 ### Programa para primeros usuarios {#sites-early-adopter}
 
 **Generar variaciones**
@@ -60,6 +66,8 @@ Los autores de contenido ahora pueden examinar, ver y realizar acciones en imág
 
 ### Nuevas funciones de Experience Manager Assets {#new-features-assets}
 
+
+
 **Content Hub**
 
 Content Hub está disponible como parte del as a Cloud Service de Experience Manager Assets para democratizar el acceso al contenido en la marca para las organizaciones y sus socios comerciales. Con Content Hub, puede encontrar y distribuir recursos fácilmente, reutilizar y crear nuevas variaciones de marca y acelerar la activación a escala.
@@ -75,9 +83,9 @@ Dynamic Media con funciones OpenAPI amplía el DAM a través de aplicaciones de 
 
 ### Nuevas funcionalidades de la vista Recursos {#assets-view-new-features}
 
-**Más opciones disponibles en el panel de perspectivas de Assets**
+**Hay más opciones disponibles en el panel de información de Assets**
 
-El recuento de recursos por tipo y tamaño de recurso ya está disponible en el panel de información de Assets. Estas opciones proporcionan datos en tiempo real en el entorno de vista de Assets sobre el recuento y el porcentaje de recursos por intervalo de tamaño y tipo de recurso.
+El recuento de recursos por tipo y tamaño de recurso ya está disponible en el panel de información de Assets. Estas opciones ofrecen datos en tiempo real en el entorno de vista de Assets. Detallan el recuento y el porcentaje de recursos por intervalo de tamaño y tipo de recurso.
 
 <!--
 
@@ -104,15 +112,15 @@ When looking at the asset details, any image with content credentials added, suc
 
 #### Editor de reglas visuales mejorado para formularios adaptables basado en componentes principales
 
-Esta versión aporta una actualización significativa al editor de reglas visuales para formularios adaptables basados en componentes principales. Ahora puede:
+Esta versión supone una actualización significativa del Editor de reglas visuales para formularios adaptables basados en componentes principales. Ahora puede:
 
-* Cree reglas en el Editor de reglas visuales para [omitir los mensajes de éxito/error predeterminados para el envío del formulario](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
+* Cree reglas en el Editor visual de reglas para [omitir los mensajes de éxito/error predeterminados para el envío del formulario](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
 
 * En el Editor de reglas de formularios adaptables, se ha añadido la posibilidad de [seleccionar diferentes tipos de campos para la operación WHEN](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when).
 
 * Un autor de formularios ahora puede aplicar funciones personalizadas para [preprocesar datos antes del envío](/help/forms/create-and-use-custom-functions.md#use-case-submit-altered-data-to-the-server).
 
-* Utilice la funcionalidad [**Guardar como borrador**](/help/forms/save-core-component-based-form-as-draft.md) para guardar formularios parcialmente completados para su envío posterior. Esto resulta útil en situaciones en las que los usuarios tienen que interrumpir la cumplimentación de un formulario y volver a él más tarde.
+* Utilice la funcionalidad [**Guardar como borrador**](/help/forms/save-core-component-based-form-as-draft.md) para guardar formularios parcialmente completados para su envío posterior. Esta funcionalidad es útil en situaciones en las que los usuarios tienen que interrumpir la cumplimentación de un formulario y volver más tarde.
 
 ### Funciones de acceso anticipado en AEM Forms {#forms-new-early-access-features}
 
@@ -122,35 +130,35 @@ En estas notas de la versión se enumeran las innovaciones de la versión actual
 
 #### Métodos mejorados de protección de bots
 
-AEM Forms ha mejorado sus funciones de seguridad al agregar compatibilidad con dos populares soluciones de CAPTCHA: Cloudflare Turnstile y hCaptcha. Esto se suma al reCAPTCHA de Google ya disponible, lo que proporciona a los usuarios más opciones y flexibilidad para proteger sus formularios de bots y envíos de correo no deseado.
+AEM Forms ha mejorado sus funciones de seguridad al agregar compatibilidad con dos populares soluciones de CAPTCHA: Cloudflare Turnstile y hCaptcha. Esta funcionalidad complementa la versión existente de Google reCAPTCHA, ofreciendo a los usuarios opciones adicionales. Mejora la flexibilidad para proteger sus formularios de bots y envíos de correo no deseado.
 
-* **Cloudflare Turnstile**: este CAPTCHA sin fricción verifica a los usuarios a través de un desafío simple que no requiere interacción explícita. Se integra perfectamente en sus formularios, lo que mejora la experiencia del usuario.
+* **Torniquete de Nubes**: este CAPTCHA sin fricción verifica a los usuarios a través de un desafío simple que no requiere interacción explícita. Se integra perfectamente en sus formularios, lo que mejora la experiencia del usuario.
 * **hCaptcha**: este CAPTCHA centrado en la privacidad ofrece una alternativa fácil de usar con un enfoque en la privacidad de datos. Su objetivo es encontrar un equilibrio entre la seguridad y la experiencia del usuario.
 * **Google reCAPTCHA**: AEM Forms sigue siendo compatible con reCAPTCHA v2 y reCAPTCHA Enterprise, lo que ofrece una solución fiable y bien establecida.
 
 Al ofrecer varias opciones de CAPTCHA, AEM Forms le ha permitido seleccionar la solución que mejor se adapta a sus necesidades específicas.
 
-¿Está listo para integrar cualquiera de estas soluciones CAPTCHA con sus formularios adaptables? Nuestra documentación proporciona instrucciones detalladas para cada uno: [Cloudflare Turnstile](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) y [Google reCAPTCHA](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+¿Está listo para integrar cualquiera de estas soluciones CAPTCHA con su Forms adaptable? La documentación del Adobe proporciona instrucciones detalladas para cada uno de ellos: [Torniquete de Nubes](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [Chcaptcha](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), y [Google reCAPTCHA](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 
 ### Servicio de Forms
 
-El servicio Forms genera PDF forms interactivos para la captura de datos. También se puede utilizar para importar o exportar datos desde y hacia un formulario de PDF interactivo existente y validar los datos enviados. A continuación se muestra un desglose de sus funcionalidades:
+El servicio Forms genera PDF forms interactivos para la captura de datos. También se puede utilizar para importar o exportar datos hacia y desde un formulario de PDF interactivo existente y validar los datos enviados. A continuación se muestra un desglose de sus funcionalidades:
 
-* **Representación de formularios**: genera un formulario de PDF interactivo a partir de una plantilla creada con AEM Forms Designer y, opcionalmente, datos XML. Básicamente, esto genera un formulario PDF rellenable que, opcionalmente, está rellenado previamente con datos.
+* **Representación de formularios**: genera un formulario de PDF interactivo a partir de una plantilla creada con AEM Forms Designer y, opcionalmente, datos XML. Esta funcionalidad produce un formulario de PDF rellenables que, opcionalmente, se rellenan previamente con datos.
 * **Extracción e importación de datos**: importe datos a un formulario de PDF existente y extraiga datos de un formulario de PDF rellenado. Se admiten los formatos de datos XDP y XML y la importación a PDF forms que no sean XFA (también conocidos como AcroForms) admite además datos FDF y XFDF.
 * **Validación de datos**: valide los datos enviados, en formato XDP o XML con una plantilla creada con AEM Forms Designer.
 
 >[!IMPORTANT]
 >
-> Si está interesado en unirse a nuestro Programa de Acceso Anticipado para cualquier innovación de acceso anticipado, simplemente envíe un correo electrónico desde su dirección oficial a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) para solicitar acceso. Puede solicitar acceso a todas las innovaciones o a cualquier innovación específica.
+> Si está interesado en unirse al Programa de Acceso Anticipado de Adobe para cualquier innovación de acceso anticipado, simplemente envíe un correo electrónico desde su dirección oficial a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) para solicitar acceso. Puede solicitar acceso a todas las innovaciones o a cualquier innovación específica.
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Programa de adopción temprana de notificaciones del Centro de acciones relacionadas con la salud de contenido {#actions-center-notifications}
 
-El [Centro de acciones](/help/operations/actions-center.md) envía notificaciones por correo electrónico cuando se producen incidentes importantes o si observamos algo en su código o configuración que le aconseje tomar medidas proactivas. Ahora hemos introducido varios tipos nuevos de notificaciones asociadas con el estado del contenido. Esto está disponible a través de un programa de usuarios pioneros. Para participar, póngase en contacto con el Servicio de atención al cliente de Adobe.
+[Centro de acciones](/help/operations/actions-center.md) envía notificaciones por correo electrónico cuando se producen incidentes importantes o si se observa algo sobre el código o la configuración en el que debe realizar una acción proactiva. El Adobe de ha introducido varios tipos nuevos de notificaciones asociadas con el estado del contenido. Esta función está disponible a través de un programa de usuarios pioneros. Para participar, póngase en contacto con el Servicio de atención al cliente de Adobe.
 
 #### Las páginas contienen un gran número de nodos {#page-nodes}
 
@@ -158,23 +166,23 @@ Un gran número de nodos puede degradar el rendimiento de procesamiento y reduci
 
 #### Gran número de instancias de flujo de trabajo en ejecución {#running-workflows}
 
-El rendimiento del motor de flujo de trabajo se ve afectado cuando hay un gran número de flujos de trabajo en ejecución en el entorno de creación. Reciba una notificación proactiva a través del Centro de acciones cuando se detecte un gran número de instancias de flujo de trabajo en ejecución, lo que le permitirá configurar un trabajo de depuración para finalizar los flujos de trabajo en ejecución que no sean necesarios.
+El rendimiento del motor de flujo de trabajo se ve afectado cuando hay un gran número de flujos de trabajo en ejecución en el entorno de creación. Recibirá una notificación proactiva a través del Centro de acciones cuando se detecte un gran número de instancias de flujo de trabajo en ejecución. Este proceso permite configurar un trabajo de depuración para finalizar flujos de trabajo en ejecución innecesarios.
 
 #### Usuarios añadidos directamente a grupos personalizados {#users-customgroups}
 
-AEM Reciba una notificación proactiva a través del Centro de acciones cuando los usuarios se añadan directamente a grupos personalizados, lo que le permite seguir las prácticas recomendadas de IMS para añadir usuarios a grupos de IMS relevantes y luego añadir los grupos de IMS como miembros de grupos de.
+Recibirá una notificación proactiva a través del Centro de acciones cuando los usuarios se agreguen directamente a grupos personalizados. AEM Este proceso le permite seguir las prácticas recomendadas de IMS añadiendo usuarios a grupos de IMS relevantes y luego incluyendo esos grupos de IMS como miembros de grupos de.
 
 #### Contenido JCR faltante {#jcr-content}
 
-Reciba una notificación proactiva a través del Centro de acciones cuando se detecte contenido JCR que falte, lo que le permitirá añadir el contenido JCR que falta y evitar fallos en ciertas funciones de AEM Assets.
+El Centro de acciones le notifica de forma proactiva cuando se detecta contenido JCR que falta. Este método permite añadir el contenido que falta y evitar el fallo de determinadas funciones de AEM Assets.
 
 #### Flujos de trabajo completados no depurados {#workflows}
 
-Reciba una notificación proactiva a través del Centro de acciones cuando no se hayan purgado los flujos de trabajo completados durante 90 días, lo que le permite mejorar el rendimiento del motor de flujo de trabajo minimizando el número de instancias de flujos de trabajo.
+El Centro de acciones le notifica de forma proactiva cuando no se han purgado los flujos de trabajo completados de más de 90 días. Este método ayuda a mejorar el rendimiento del motor de flujo de trabajo al reducir el número de instancias de flujo de trabajo.
 
 #### Falta el medio de Sling {#sling-resource}
 
-Reciba una notificación proactiva a través del Centro de acciones cuando se detecte un recurso Sling que falte, lo que le permitirá añadir el recurso Sling que falta y evitar errores en ciertas funciones de AEM Assets.
+El Centro de acciones le notifica de forma proactiva cuando se detecta un recurso Sling que falta. Este método permite añadir el recurso que falta y evitar el fallo de determinadas funciones de AEM Assets.
 
 ### Programas de adopción temprana relacionados con la entrega de contenido {#foundation-early-adopter}
 
@@ -182,7 +190,7 @@ Correo electrónico **<aemcs-cdn-config-adopter@adobe.com>**, indicando cuál de
 
 #### Autenticación básica en CDN (programa de adopción anticipada) {#basicauth-cdn}
 
-Protect utiliza ciertos recursos de contenido mostrando un cuadro de diálogo de autenticación básico que requiere un nombre de usuario y una contraseña. Esta función está diseñada principalmente para casos de uso de autenticación ligera, como la revisión del contenido por parte de las partes interesadas empresariales, en lugar de como una solución completa para los derechos de acceso del usuario final. La lista de nombre de usuario y contraseñas se administra mediante un archivo de configuración en Git que se implementa mediante la canalización de configuración, con una referencia a variables de entorno de Cloud Manager de tipo secreto. [Más información](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
+Protect utiliza ciertos recursos de contenido mostrando un cuadro de diálogo de autenticación básico que requiere un nombre de usuario y una contraseña. Esta función se dirige principalmente a casos de uso de autenticación ligera, como las partes interesadas de la empresa que revisan el contenido, en lugar de servir como una solución completa para los derechos de acceso del usuario final. La lista de nombre de usuario y contraseñas se administra mediante un archivo de configuración en Git que se implementa mediante la canalización de configuración, con una referencia a variables de entorno de Cloud Manager de tipo secreto. [Más información](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
 #### Purga de contenido en la CDN con una clave de API de autoservicio (programa para usuarios que adoptan por anticipado) {#purge-cdn}
 
@@ -192,7 +200,7 @@ Registre una clave de API de depuración de CDN en forma autoservicio y utilíce
 
 #### AEM Creación de autoservicio de la clave de X--Edge para CDN administrada por el cliente (BYOCDN) (programa de adopción anticipada) {#byocdn-keys}
 
-Anteriormente, se necesitaba un ticket de asistencia para generar la clave X--Edge-Key necesaria para la configuración de una CDN administrada por el cliente. Esto ahora se puede lograr con el autoservicio a través de un archivo de configuración que se implementa mediante la canalización de configuración, lo que elimina cualquier retraso en la incorporación de un nuevo entorno. [Más información](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
+Anteriormente, se necesitaba un ticket de asistencia para generar la clave X--Edge-Key necesaria para la configuración de una CDN administrada por el cliente. Este resultado ahora se puede lograr en modo de autoservicio a través de un archivo de configuración que se implementa mediante la canalización de configuración, lo que elimina cualquier retraso en la incorporación de un nuevo entorno. [Más información](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
@@ -204,11 +212,11 @@ Configure las redirecciones del lado del cliente 301/302 en el control de códig
 
 Las [Reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md) recientemente publicadas, que incluyen las reglas del firewall de aplicaciones web ((Web Application Firewall, WAF) con licencia opcional, le permiten configurar qué tráfico se debe permitir o denegar.
 
-Únase al programa para primeros usuarios para poder recibir alertas cada vez que se activen las reglas de filtro de tráfico. Las notificaciones por correo electrónico del Centro de acciones le mantendrán informado cuando se produzcan determinadas condiciones de tráfico para que pueda tomar las medidas adecuadas.
+Únase al programa para primeros usuarios para poder recibir alertas cada vez que se activen las reglas de filtro de tráfico. Las notificaciones por correo electrónico del Centro de acciones le mantienen informado cuando se producen determinadas condiciones de tráfico para que pueda tomar las medidas adecuadas.
 
 #### Los usuarios empresariales pueden declarar redirecciones fuera de Git (programa para pioneros) {#apache-rewritemaps-early-adopter}
 
-De forma similar a la versión AEM 6.5, Apache/Dispatcher introducirá mapas de reescritura colocados en una ubicación específica del repositorio de publicación y los cargará, sin requerir la ejecución de una canalización de niveles web. Esto abre oportunidades para que un usuario empresarial declare redirecciones mediante una hoja de cálculo o una interfaz de usuario, como la que ofrece el administrador de mapas de redirección de ACS Commons o creada como parte de una aplicación de cliente. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
+AEM De forma similar a la versión 6.5, Apache/dispatcher ingiere mapas de reescritura colocados en una ubicación específica del repositorio de publicación y los carga, sin requerir la ejecución de una canalización de niveles web. Este método permite a los usuarios empresariales declarar redirecciones mediante una hoja de cálculo o una interfaz de usuario, como el Administrador de mapas de redirección de ACS Commons o una aplicación personalizada. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
 
 #### Edge Side Includes (ESI) para cargar contenido dinámico (programa para primeros usuarios) {#esi-early-adopter}
 
