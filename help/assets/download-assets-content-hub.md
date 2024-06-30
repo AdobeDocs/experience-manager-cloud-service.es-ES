@@ -2,9 +2,9 @@
 title: Descarga de recursos desde Content Hub
 description: Obtenga información sobre cómo descargar recursos desde el portal de Content Hub
 role: User
-source-git-commit: e590c34c177e6b45b6a52370caa88da54b61ebc0
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '114'
+source-wordcount: '125'
 ht-degree: 5%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 5%
 Content Hub le permite descargar y compartir sus recursos. Estos recursos pueden incluir imágenes, vídeos o cualquier otro contenido digital. Content Hub mejora la accesibilidad y la adaptabilidad para una distribución eficaz de los recursos.
 
 Puede descargar uno o varios recursos mediante Content Hub. Se descargan las versiones originales del recurso.
+
+## Requisitos previos {#prerequisites}
+
+[Usuarios de Content Hub](deploy-content-hub.md#onboard-content-hub-users) puede realizar las acciones mencionadas en este artículo.
 
 ## Descargar recurso {#download-single-asset}
 

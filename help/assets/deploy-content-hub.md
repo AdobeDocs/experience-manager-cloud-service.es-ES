@@ -2,9 +2,9 @@
 title: Implementar [!DNL Content Hub]
 description: Obtenga información sobre cómo implementar y activar Content Hub y proporcionar acceso a usuarios con diferentes tipos de privilegios (cargar recursos, usuarios de Adobe Express) y cómo proporcionar privilegios de administrador a usuarios.
 role: Admin
-source-git-commit: 56af07a198e1350282f5d3f771c1c29db318b90e
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1229'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,15 @@ Este artículo proporciona un flujo de trabajo completo para proporcionar acceso
 
 Las variaciones de privilegios en Content Hub incluyen:
 
-* [Consumidores de activos](#onboard-content-hub-consumer-users): Acceda a los recursos aprobados por la marca en el portal de Content Hub.
+* [Usuarios de Content Hub](#onboard-content-hub-users): Acceda a los recursos aprobados por la marca en el portal de Content Hub.
 
-* [Administradores](#onboard-content-hub-administrator): acceso a la [Interfaz de usuario de configuración](/help/assets/configure-content-hub-ui-options.md) en Content Hub, además de Consumidor de recursos con derechos de envío.
+* [Administradores de Content Hub](#onboard-content-hub-administrator): acceso a la [Interfaz de usuario de configuración](/help/assets/configure-content-hub-ui-options.md) en Content Hub, además de acceder a recursos aprobados por la marca, cargar recursos en Content Hub, Adobe Express la integración para editar imágenes (si tiene derechos de Adobe Express).
 
-* [Consumidores de recursos con derechos de envío](#onboard-content-hub-consumer-users-submission-rights): capacidad para [cargar recursos en Content Hub](/help/assets/upload-brand-approved-assets.md) y [Integración de Adobe Express](/help/assets/edit-images-content-hub.md) además de acceder a los recursos aprobados por la marca en el portal de Content Hub.
+* [Usuarios de Content Hub con derechos para añadir recursos](#onboard-content-hub-users-add-assets): capacidad para [cargar recursos en Content Hub](/help/assets/upload-brand-approved-assets.md) además de acceder a los recursos aprobados por la marca en el portal de Content Hub.
 
-* [Distribuidores de activos](#content-hub-asset-distributors): capacidad para aprobar recursos en Experience Manager Assets as a Cloud Service para que estén disponibles en Content Hub.
+* [Usuarios de Content Hub con derechos para remezclar recursos con nuevas variaciones](#onboard-content-hub-users-remix-assets): [Integración de Adobe Express](/help/assets/edit-images-content-hub.md) (si tiene derechos de Adobe Express) además de acceder a los recursos aprobados por la marca en el portal de Content Hub.
+
+* [Usuarios de Experience Manager Assets](#experience-manager-assets-users): capacidad para aprobar recursos en Experience Manager Assets as a Cloud Service para que estén disponibles en Content Hub.
 
 ## Paso 1: Habilitar Content Hub para Experience Manager Assets con Cloud Manager {#enable-content-hub}
 
@@ -65,7 +67,7 @@ Haga clic en el nombre de la instancia para ver el perfil de producto de Content
 
 ## Paso 2: Incorporar un administrador de Content Hub {#onboard-content-hub-administrator}
 
-Los administradores de Content Hub pueden añadir recursos a Content Hub y también pueden configurar el [Opciones de configuración](/help/assets/configure-content-hub-ui-options.md) para otros usuarios de su organización.
+Los administradores de Content Hub pueden acceder a [Interfaz de usuario de configuración](/help/assets/configure-content-hub-ui-options.md) en Content Hub, además de acceder a recursos aprobados por la marca, cargar recursos en Content Hub, Adobe Express la integración para editar imágenes (si tiene derechos de Adobe Express).
 
 Para incorporar al administrador de Content Hub:
 
@@ -86,11 +88,11 @@ Para incorporar al administrador de Content Hub:
 
 1. Clic **[!UICONTROL Guardar]** para guardar los cambios.
 
-## Paso 3: Incorporar usuarios consumidores de recursos de Content Hub {#onboard-content-hub-consumer-users}
+## Paso 3: Incorporar usuarios de Content Hub {#onboard-content-hub-users}
 
-Los usuarios consumidores de Content Hub pueden acceder a los recursos disponibles en el portal, pero no pueden añadir nuevos recursos ni modificar los existentes.
+Los usuarios de Content Hub pueden acceder a los recursos disponibles en el portal, pero no pueden añadir nuevos recursos ni modificar los existentes.
 
-Para incorporar usuarios consumidores a Content Hub:
+Para incorporar usuarios de Content Hub:
 
 1. [Acceda al perfil de producto de usuario de Content Hub y haga clic en él](#content-hub-instance-product-profile).
 
@@ -117,17 +119,13 @@ Haga clic en el icono de búsqueda junto al nombre del perfil del producto y des
 ![Deshabilitar notificaciones por correo electrónico](assets/disable-email-notifications.png)
 
 
-## Paso 4: Incorporar usuarios consumidores de recursos de Content Hub con permisos de envío (opcional) {#onboard-content-hub-consumer-users-submission-rights}
+## Paso 4: Incorporar usuarios de Content Hub con derechos para agregar recursos (opcional) {#onboard-content-hub-users-add-assets}
 
-Los usuarios consumidores de recursos de Content Hub con permisos de envío pueden:
+Los usuarios de Content Hub con derechos para agregar recursos pueden [cargar nuevos recursos aprobados por la marca en Content Hub](/help/assets/upload-brand-approved-assets.md).
 
-* [Cargar nuevos recursos aprobados por la marca en Content Hub](/help/assets/upload-brand-approved-assets.md).
+Para incorporar usuarios de Content Hub con derechos para agregar usuarios:
 
-* [Modifique los recursos existentes mediante el Adobe Express y guarde el recurso en el repositorio](/help/assets/edit-images-content-hub.md). La edición de recursos mediante Adobe Express solo está disponible si el usuario tiene derechos de Adobe Express.
-
-Para incorporar un usuario consumidor de Content Hub con derechos de envío:
-
-1. [Después de agregar el usuario al perfil de producto de Content Hub](#onboard-content-hub-consumer-users), acceda a los perfiles de producto de Experience Manager Assets haciendo clic en el nombre del producto de AEM as a Cloud Service en la lista de productos en el Admin Console.
+1. [Después de agregar el usuario al perfil de producto de Content Hub](#onboard-content-hub-users), acceda a los perfiles de producto de Experience Manager Assets haciendo clic en el nombre del producto de AEM as a Cloud Service en la lista de productos en el Admin Console.
 
 1. Haga clic en la instancia de autor de producción para AEM as a Cloud Service:
    ![Perfiles de producto para AEM as a Cloud Service](assets/aem-cloud-service-instances.png)
@@ -138,11 +136,28 @@ Para incorporar un usuario consumidor de Content Hub con derechos de envío:
 
 1. Clic **[!UICONTROL Guardar]** para guardar los cambios.
 
-## Distribuidores de recursos de Content Hub {#content-hub-asset-distributors}
+## Paso 4: Incorporar usuarios de Content Hub con derechos para remezclar recursos con nuevas variaciones (opcional) {#onboard-content-hub-users-remix-assets}
 
-Los distribuidores de recursos pueden aprobar los recursos en AEM as a Cloud Service para que estén disponibles en Content Hub.
+Los usuarios de Content Hub con derechos para remezclar recursos con nuevas variaciones pueden [modifique los recursos existentes mediante Adobe Express y guárdelo en el repositorio](/help/assets/edit-images-content-hub.md). La edición de recursos mediante Adobe Express solo está disponible si el usuario tiene derechos de Adobe Express.
 
-Para configurar la función de distribuidor de recursos:
+Para incorporar usuarios de Content Hub con derechos para remezclar recursos con nuevas variaciones:
+
+1. [Después de agregar el usuario al perfil de producto de Content Hub](#onboard-content-hub-users), acceda a los perfiles de producto de Experience Manager Assets haciendo clic en el nombre del producto de AEM as a Cloud Service en la lista de productos en el Admin Console.
+
+1. Haga clic en la instancia de autor de producción para AEM as a Cloud Service:
+   ![Perfiles de producto para AEM as a Cloud Service](assets/aem-cloud-service-instances.png)
+
+   Admin Console muestra dos perfiles de producto para AEM as a Cloud Service: administradores y usuarios.
+1. Haga clic en el perfil de producto Usuarios y en **[!UICONTROL Adición de usuarios]** para añadir al usuario al perfil de producto.
+   ![Perfil de producto del usuario](assets/aem-cs-user-product-profile.png)
+
+1. Clic **[!UICONTROL Guardar]** para guardar los cambios.
+
+## Usuarios de Experience Manager Assets {#experience-manager-assets-users}
+
+Los usuarios de Experience Manager Assets pueden aprobar los recursos en AEM as a Cloud Service para que estén disponibles en Content Hub.
+
+Para configurar usuarios de Experience Manager Assets:
 
 1. Acceda a los perfiles de producto de Experience Manager Assets haciendo clic en el nombre del producto de AEM as a Cloud Service en la lista de productos en el Admin Console.
 
@@ -157,7 +172,7 @@ Para configurar la función de distribuidor de recursos:
 
    >[!NOTE]
    >
-   > No es necesario que se le añada al [Perfil de producto de Content Hub](#onboard-content-hub-consumer-users) para el rol de distribución de recursos.
+   > No es necesario que se le añada al [Perfil de producto de Content Hub](#onboard-content-hub-users) para los usuarios de Experience Manager Assets.
 
 
 

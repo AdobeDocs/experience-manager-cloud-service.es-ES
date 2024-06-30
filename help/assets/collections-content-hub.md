@@ -2,9 +2,9 @@
 title: Administrar colecciones en Content Hub
 description: Obtenga información sobre cómo administrar colecciones en Content Hub
 role: User
-source-git-commit: 92c4cd64503653c5d9248c2c3f6952100b03ff86
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '617'
 ht-degree: 3%
 
 ---
@@ -26,6 +26,10 @@ Una colección hace referencia a un conjunto de recursos que se pueden compartir
 * **Eliminar**: elimine toda la colección.
 
 Ayuda a los usuarios a acceder y administrar fácilmente los distintos recursos disponibles en [!DNL Content Hub].
+
+## Requisitos previos {#prerequisites}
+
+[Usuarios de Content Hub](deploy-content-hub.md#onboard-content-hub-users) puede realizar las acciones mencionadas en este artículo.
 
 ## Crear colecciones{#create-collections}
 

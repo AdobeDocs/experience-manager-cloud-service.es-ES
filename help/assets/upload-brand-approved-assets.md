@@ -2,7 +2,7 @@
 title: Cargar los recursos aprobados por la marca a [!DNL Content Hub]
 description: Obtenga información sobre cómo cargar los recursos aprobados por la marca en Content Hub
 role: User
-source-git-commit: 92c4cd64503653c5d9248c2c3f6952100b03ff86
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Asegúrese de cargar únicamente los [recursos aprobados por la marca para Conte
 
 ## Requisitos previos {#prerequisites-add-assets}
 
-[Usuarios consumidores de recursos de Content Hub con permisos de envío](/help/assets/deploy-content-hub.md#onboard-content-hub-consumer-users-submission-rights) Puede cargar recursos en Content Hub.
+[Usuarios de Content Hub con derechos para añadir recursos](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) Puede cargar recursos en Content Hub.
 
 ## Agregar recursos a Content Hub desde el sistema de archivos local {#add-assets-local-file-system}
 

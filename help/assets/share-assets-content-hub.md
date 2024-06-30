@@ -2,9 +2,9 @@
 title: Uso compartido de Assets en [!DNL the Content Hub]
 description: Uso compartido de Assets en [!DNL the Content Hub]
 role: User
-source-git-commit: e20556531a82e42354b642955488bf14b83dab5e
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '454'
 ht-degree: 1%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 1%
 ![Compartir recursos con la imagen del titular](assets/share-assets-banner.png)
 
 Compartir recursos a través de un vínculo es una forma cómoda de poner los recursos a disposición de los usuarios [!DNL the Content Hub] usuarios. La funcionalidad permite a los usuarios autorizados acceder y descargar los recursos compartidos con ellos. Al descargar recursos desde un vínculo compartido, [!DNL the Content Hub] utiliza un servicio asincrónico que ofrece una descarga más rápida e ininterrumpida.
+
+## Requisitos previos {#prerequisites}
+
+[Usuarios de Content Hub](deploy-content-hub.md#onboard-content-hub-users) puede realizar las acciones mencionadas en este artículo.
 
 ## Compartir un solo recurso {#share-a-single-asset}
 

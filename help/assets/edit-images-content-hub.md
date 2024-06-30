@@ -1,9 +1,9 @@
 ---
 title: Edición de imágenes en Content Hub mediante el Adobe Express
 description: Edición de imágenes en Content Hub mediante el Adobe Express
-source-git-commit: 52166c1983218d619c416b4c095e8954e3010dc5
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '390'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ Content Hub le permite crear contenido nuevo con Adobe Express. Puede editar el 
 
 ## Requisitos previos {#prereqs-edit-image-content-hub}
 
-Derechos de acceso al Adobe Express y [Usuarios consumidores de recursos de Content Hub con permisos de envío](/help/assets/deploy-content-hub.md#onboard-content-hub-consumer-users-submission-rights) Puede editar imágenes con Content Hub.
+Derechos de acceso al Adobe Express y [Usuarios de Content Hub con derechos para remezclar recursos con nuevas variaciones](/help/assets/deploy-content-hub.md#onboard-content-hub-users-remix-assets) Puede editar imágenes con Content Hub.
 
 >[!NOTE]
 >

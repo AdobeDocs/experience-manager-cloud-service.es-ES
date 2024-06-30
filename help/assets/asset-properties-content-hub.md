@@ -2,9 +2,9 @@
 title: Propiedades del recurso en [!DNL the Content Hub]
 description: Obtenga información sobre cómo ver y administrar propiedades de recursos en [!DNL Content Hub]
 role: User
-source-git-commit: e590c34c177e6b45b6a52370caa88da54b61ebc0
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '599'
 ht-degree: 8%
 
 ---
@@ -21,6 +21,10 @@ La visualización de las propiedades de los recursos le ayuda a categorizar los 
 * Más accesible: los sistemas y los usuarios pueden encontrarlo fácilmente.
 * Más fácil de administrar: puede encontrar recursos con el mismo conjunto de propiedades fácilmente y aplicarles cambios.
 * Completado: el recurso lleva más información y contexto.
+
+## Requisitos previos {#prerequisites}
+
+[Usuarios de Content Hub](deploy-content-hub.md#onboard-content-hub-users) puede realizar las acciones mencionadas en este artículo.
 
 ## Ver las propiedades de un recurso {#properties-ui}
 

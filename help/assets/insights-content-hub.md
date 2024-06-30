@@ -2,9 +2,9 @@
 title: Ver las perspectivas de recursos en Content Hub
 description: Obtenga información sobre cómo ver las perspectivas de recursos en [!DNL Content Hub]
 role: User
-source-git-commit: 788ed1189b21392bd399f7bdee888a3b5e1da117
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 ![Datos de Assets](assets/asset-insights-banner.jpg)
 
 [!DNL Content Hub] proporciona perspectivas valiosas sobre los recursos, abordando un desafío común que las partes interesadas en el marketing suelen encontrar: las estadísticas de uso de recursos utilizadas en campañas de marketing, canales y diferentes regiones. Al comprender claramente el rendimiento y la popularidad de los recursos, ofrece perspectivas procesables esenciales para mejorar la experiencia del usuario.
+
+## Requisitos previos {#prerequisites}
+
+[Usuarios de Content Hub](deploy-content-hub.md#onboard-content-hub-users) puede realizar las acciones mencionadas en este artículo.
 
 ## Ver estadísticas de activos cargados{#view-statistics-for-uploaded-assets}
 
