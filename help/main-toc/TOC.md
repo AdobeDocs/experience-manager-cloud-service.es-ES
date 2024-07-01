@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1989b546c495307440690f7e3510619112bdcc29
+source-git-commit: 379e5230d27be135b5862cdbfa35abc612f5ca57
 workflow-type: tm+mt
-source-wordcount: '5132'
+source-wordcount: '5143'
 ht-degree: 98%
 
 ---
@@ -182,7 +182,9 @@ ht-degree: 98%
    + Notas de la versión de Workfront para el conector mejorado de Experience Manager{#workfront}
       + [Notas de la versión de Workfront para el conector mejorado de Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
    + Notas de la versión para generar variaciones {#generate-variations}
-      + [Notas de la versión actual para generar variaciones](/help/generative-ai/release-notes-generate-variations.md)
+      + [Notas de la versión actuales de Generar variaciones](/help/generative-ai/release-notes-generate-variations.md)
+   + Notas de la versión del editor universal {#univeral-editor}
+      + [Notas de la versión actuales del editor universal](/help/release-notes/universal-editor/current.md)
    + [¿Qué hay de nuevo?](/help/release-notes/what-is-new.md)
    + [Cambios importantes en AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
    + [Funciones y API obsoletas y eliminadas](/help/release-notes/deprecated-removed-features.md)
@@ -892,7 +894,7 @@ ht-degree: 98%
          + [Agregar validaciones a los campos de formulario](/help/edge/docs/forms/validate-forms.md)
          + [Cargar opciones desde la URL en un formulario](/help/edge/docs/forms/load-options-from-url.md)
          + [Personalizar el aspecto de los formularios](/help/edge/docs/forms/style-theme-forms.md)
-         + [Usar reglas para agregar un comportamiento dinámico a un formulario](/help/edge/docs/forms/rules-forms.md)
+         + [Usar reglas para añadir un comportamiento dinámico a un formulario](/help/edge/docs/forms/rules-forms.md)
          + [Mostrar un mensaje de agradecimiento personalizado después del envío del formulario](/help/edge/docs/forms/thank-you-page-form.md)
       + Funciones {#advanced-features-edge-delivery-services-forms}
          + [Usar fragmentos de formulario](/help/edge/docs/forms/form-fragments.md)
