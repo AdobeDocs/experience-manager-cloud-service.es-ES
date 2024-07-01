@@ -4,12 +4,12 @@ Description: Discover the steps to set up Rest Endpoint when submitting an Adapt
 keywords: Punto final REST de AEM Forms, Enviar a punto final REST, Publicar datos en URL REST, Configurar acción de punto final REST
 feature: Adaptive Forms, Core Components
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-title: "¿Cómo configurar una acción de envío para un formulario adaptable?"
+title: “¿Cómo configurar una acción de envío para un formulario adaptable?”
 role: User, Developer
 source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '560'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

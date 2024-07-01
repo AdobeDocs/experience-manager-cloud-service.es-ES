@@ -4,12 +4,12 @@ Description: Explore the process to set up email notifications when submitting a
 keywords: cómo enviar un correo electrónico para un formulario adaptable, acción de envío de correo electrónico, correo electrónico del formulario adaptable, correo electrónico de envío de formulario, guía para enviar correo electrónico
 feature: Adaptive Forms, Core Components
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
-title: "¿Cómo configurar una acción de envío para un formulario adaptable?"
+title: “¿Cómo configurar una acción de envío para un formulario adaptable?”
 role: User, Developer
 source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '447'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
