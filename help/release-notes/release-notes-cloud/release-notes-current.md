@@ -3,10 +3,10 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 1e5a32625377cb564c859a6fdaf1ecef6ebebe9e
+source-git-commit: 9d0ef963dfe2d81da09a7195540de87245e71a67
 workflow-type: tm+mt
-source-wordcount: '1865'
-ht-degree: 45%
+source-wordcount: '1932'
+ht-degree: 43%
 
 ---
 
@@ -86,6 +86,14 @@ Dynamic Media con funciones OpenAPI amplía el DAM a través de aplicaciones de 
 **Hay más opciones disponibles en el panel de información de Assets**
 
 El recuento de recursos por tipo y tamaño de recurso ya está disponible en el panel de información de Assets. Estas opciones ofrecen datos en tiempo real en el entorno de vista de Assets. Detallan el recuento y el porcentaje de recursos por intervalo de tamaño y tipo de recurso.
+
+**Actualizaciones del editor de Adobes Express incrustado**
+
+* Se ha mejorado la experiencia del usuario para guardar como un nuevo recurso en lugar de guardarla como una nueva versión.
+
+* Exportación de documentos Express de varias páginas (anteriormente solo se admitía una página) tanto en formato de PDF de varias páginas como de imagen. Al seleccionar formatos de imagen, se guarda cada página como un recurso distinto en DAM para su distribución descendente.
+
+* Compatibilidad para agregar metadatos en el cuadro de diálogo Guardar mientras se guarda un recurso.
 
 <!--
 
