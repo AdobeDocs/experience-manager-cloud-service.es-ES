@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 379e5230d27be135b5862cdbfa35abc612f5ca57
 workflow-type: tm+mt
 source-wordcount: '5143'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -564,14 +564,14 @@ ht-degree: 98%
       + [Fin de vida útil de los visualizadores DHTML](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
       + Dynamic Media con funciones de OpenAPI {#dynamic-media-open-apis}
          + [Información general](/help/assets/dynamic-media-open-apis-overview.md)
-         + [Aprobar recursos](/help/assets/approve-assets.md)
-         + [Integración con aplicaciones posteriores](/help/assets/integrate-dynamic-media-open-apis.md)
-         + [API de búsqueda de recursos](/help/assets/search-assets-api.md)
+         + [Aprobación de recursos](/help/assets/approve-assets.md)
+         + [Integración con aplicaciones descendentes](/help/assets/integrate-dynamic-media-open-apis.md)
+         + [Búsqueda de API de recursos](/help/assets/search-assets-api.md)
          + [API de envío](/help/assets/deliver-assets-apis.md)
-         + [Restringir la entrega de recursos](/help/assets/restrict-assets-delivery.md)
+         + [Restricción del envío de recursos](/help/assets/restrict-assets-delivery.md)
          + [Integración de AEM Assets remoto con AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md)
          + [Preguntas frecuentes](/help/assets/dynamic-media-open-apis-faqs.md)
-         + [Configurar dominio personalizado](/help/assets/configure-custom-domain.md)
+         + [Configuración del dominio personalizado](/help/assets/configure-custom-domain.md)
    + Trabajo con la vista Recursos {#assets-view}
       + [Introducción](/help/assets/assets-view-introduction.md)
       + [Introducción](/help/assets/get-started-assets-view.md)
@@ -597,14 +597,14 @@ ht-degree: 98%
       + [Información general](/help/assets/product-overview.md)
       + [Implementación de Content Hub](/help/assets/deploy-content-hub.md)
       + [Configuración de la interfaz de usuario de Content Hub](/help/assets/configure-content-hub-ui-options.md)
-      + [Cargar o importar recursos aprobados por la marca en Content Hub](/help/assets/upload-brand-approved-assets.md)
+      + [Carga o importación de recursos aprobados por la marca en Content Hub](/help/assets/upload-brand-approved-assets.md)
       + [Búsqueda de recursos en Content Hub](/help/assets/search-assets-content-hub.md)
       + [Propiedades del recurso](/help/assets/asset-properties-content-hub.md)
       + [Uso compartido de recursos en Content Hub](/help/assets/share-assets-content-hub.md)
       + [Descarga de recursos mediante Content Hub](/help/assets/download-assets-content-hub.md)
       + [Administración de colecciones en Content Hub](/help/assets/collections-content-hub.md)
-      + [Edición de imágenes con el Adobe Express en Content Hub](/help/assets/edit-images-content-hub.md)
-      + [Asset Insights en Content Hub](/help/assets/insights-content-hub.md)
+      + [Edición de imágenes con Adobe Express en Content Hub](/help/assets/edit-images-content-hub.md)
+      + [Perspectivas de recursos en Content Hub](/help/assets/insights-content-hub.md)
    + Prácticas recomendadas{#best-practices}
       + [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md)
       + [Administración de metadatos y prácticas recomendadas](/help/assets/metadata-best-practices.md)
