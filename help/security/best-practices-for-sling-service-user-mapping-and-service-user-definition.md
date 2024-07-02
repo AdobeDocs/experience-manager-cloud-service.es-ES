@@ -5,9 +5,9 @@ exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
 feature: Security
 role: Admin
 source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1884'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -189,7 +189,7 @@ Ejemplos de `userproperties-copy-service`:
 * Reducir ámbito
 
    * Situar directivas de control de acceso en subárboles específicos de la función
-   * En el caso de los artículos distribuidos: utilice restricciones para limitar el ámbito (consulte [la documentación](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) para la lista de restricciones integradas).
+   * En el caso de los artículos distribuidos: utilice restricciones para limitar el ámbito (consulte [la documentación](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html?lang=es) para la lista de restricciones integradas).
 
 * Garantizar la coherencia
 
