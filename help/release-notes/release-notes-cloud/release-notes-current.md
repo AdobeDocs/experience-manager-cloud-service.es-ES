@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 379e5230d27be135b5862cdbfa35abc612f5ca57
 workflow-type: tm+mt
 source-wordcount: '1958'
-ht-degree: 43%
+ht-degree: 44%
 
 ---
 
@@ -130,11 +130,11 @@ Esta versión supone una actualización significativa del Editor de reglas visua
 
 * Utilice la funcionalidad [**Guardar como borrador**](/help/forms/save-core-component-based-form-as-draft.md) para guardar formularios parcialmente completados para su envío posterior. Esta funcionalidad es útil en situaciones en las que los usuarios tienen que interrumpir la cumplimentación de un formulario y volver más tarde.
 
-### Funciones de acceso anticipado en AEM Forms {#forms-new-early-access-features}
+### Funciones de acceso rápido de AEM Forms {#forms-new-early-access-features}
 
 El programa AEM Forms Early Access ofrece una oportunidad única para que obtenga acceso exclusivo a innovaciones de vanguardia antes que nadie y le ayude a dar forma a su desarrollo. El programa ofrece acceso a múltiples innovaciones.
 
-En estas notas de la versión se enumeran las innovaciones de la versión actual. Para obtener la lista completa de las innovaciones disponibles en el Programa de acceso anticipado, consulte [Documentación del programa de acceso anticipado de AEM Forms](/help/forms/early-access-ea-features.md).
+En estas notas de la versión se enumeran las innovaciones de la versión actual. Para ver la lista completa de innovaciones disponibles en el programa para acceso rápido, consulte la [documentación del programa de acceso rápido de AEM Forms](/help/forms/early-access-ea-features.md).
 
 #### Métodos mejorados de protección de bots
 
