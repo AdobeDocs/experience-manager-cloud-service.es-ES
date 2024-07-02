@@ -4,10 +4,10 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: fd687498a8c72bf5d47b7b97aadf22d7d1e8dd2b
-workflow-type: ht
-source-wordcount: '649'
-ht-degree: 100%
+source-git-commit: 90b4cf269fc8be36d90f398d1696fc40f89f5142
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 87%
 
 ---
 
@@ -52,6 +52,15 @@ La activación de funcionalidades 2024.6.0 proporcionará el conjunto completo d
 * SCRNS-4194: quitar la dependencia de las API de Google Guava.
 * SCRNS-4360: falta el botón Administrar publicación y Publicación rápida para usuarios no administradores en el proveedor de contenido para canales.
 * SCRNS-4323: ocultar/deshabilitar inicios desde screens.html.
+
+#### Formularios
+
+* FORMS-14844: Forms adaptable permite el envío de formularios a pesar de la verificación reCAPTCHA fallida.
+* FORMS-14984: Forms con CAPTCHA omite la validación si &quot;submitMetaData&quot; no está presente en los datos enviados.
+* FORMS-14477: Las opciones &quot;Después de&quot; e &quot;Antes de&quot; del editor de reglas no funcionan correctamente en la validación del selector de fechas.
+* FORMS-14019: La funcionalidad &quot;Invocar servicio&quot; del editor de reglas no funciona en el editor universal.
+* FORMS-14336: cuando no se selecciona ningún campo de formulario, el editor debe abrirse enfocado en todo el elemento del formulario.
+* FORMS-15061: El círculo de carga persiste indefinidamente al utilizar la opción de invocación de servicio en el editor de reglas.
 
 ### Problemas conocidos {#known-issues-16799}
 
