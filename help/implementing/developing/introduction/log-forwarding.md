@@ -1,12 +1,12 @@
 ---
-title: AEM Reenvío de registros para la as a Cloud Service
-description: AEM Obtenga información acerca del reenvío de registros a Splunk y otros proveedores de registro en as a Cloud Service
+title: Reenvío de registros para AEM as a Cloud Service
+description: Obtenga información acerca del reenvío de registros a Splunk y otros proveedores de registro en AEM as a Cloud Service
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e007f2e3713d334787446305872020367169e6a2
+source-git-commit: 29d2a759f5b3fdbccfa6a219eebebe2b0443d02e
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1278'
 ht-degree: 1%
 
 ---
@@ -25,9 +25,9 @@ AEM Los clientes que tengan una licencia para un proveedor de registro o alojen 
 * HTTPS
 * Splunk
 
-El reenvío de registros se configura en forma de autoservicio declarando una configuración en Git e implementándola a través de la canalización de configuración de Cloud Manager para los tipos de entorno de desarrollo, fase y producción en programas de producción (que no sean de zona protegida).
+El reenvío de registros se configura en modo de autoservicio declarando una configuración en Git e implementándola a través de la canalización de configuración de Cloud Manager para los tipos de entorno de desarrollo, fase y producción en programas de producción (que no sean de zona protegida).
 
-AEM AEM Hay una opción para que los registros de la y de Apache/Dispatcher se enruten a través de infraestructuras de red avanzadas, como la IP de salida dedicada.
+AEM Hay una opción para que los registros de la y de Apache/Dispatcher AEM se enruten a través de infraestructuras de red avanzadas de la interfaz de usuario, como la IP de salida dedicada.
 
 Tenga en cuenta que el ancho de banda de red asociado con los registros enviados al destino de registro se consideran parte del uso de E/S de red de su organización.
 
@@ -199,12 +199,16 @@ data:
       enabled: true       
       host: "http-intake.logs.datadoghq.eu"
       token: "${{DATADOG_API_KEY}}"
+      tags:
+         tag1: value1
+         tag2: value2
       
 ```
 
 Consideraciones:
 
 * Cree una clave de API sin ninguna integración con un proveedor de nube específico.
+* la propiedad tags es opcional
 
 
 ### Elasticsearch y OpenSearch {#elastic}
@@ -221,6 +225,7 @@ data:
       host: "example.com"
       user: "${{ELASTICSEARCH_USER}}"
       password: "${{ELASTICSEARCH_PASSWORD}}"
+      pipeline: "ingest pipeline name"
 ```
 
 Consideraciones:
@@ -228,6 +233,15 @@ Consideraciones:
 * Para las credenciales, asegúrese de utilizar credenciales de implementación en lugar de credenciales de cuenta. Estas son las credenciales que se generan en una pantalla que puede parecerse a esta imagen:
 
 ![Credenciales de implementación elásticas](/help/implementing/developing/introduction/assets/ec-creds.png)
+
+* La propiedad de canalización opcional debe establecerse en el nombre de la canalización de ingesta de Elasticsearch o OpenSearch, que puede configurarse para enrutar la entrada de registro al índice adecuado. El tipo de procesador de la canalización debe establecerse en *script* y el lenguaje de script debe establecerse en *indoloro*. Este es un ejemplo de fragmento de script para enrutar las entradas de registro a un índice como aemaccess_dev_26_06_2024:
+
+```
+def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
+def sourceType = ctx._index;
+def date = new SimpleDateFormat('dd_MM_yyyy').format(new Date());
+ctx._index = sourceType + "_" + envType + "_" + date;
+```
 
 ### HTTPS {#https}
 
@@ -304,7 +318,7 @@ data:
 
 ## Formatos de entrada de registro {#log-formats}
 
-Consulte la información general [artículo de registro](/help/implementing/developing/introduction/logging.md) AEM para el formato de cada tipo de registro respectivo (registros de CDN y registros de, incluidos Apache/Dispatcher).
+Consulte la información general [artículo de registro](/help/implementing/developing/introduction/logging.md) AEM para el formato de cada tipo de registro respectivo (registros de CDN y registros de, incluido Apache/Dispatcher).
 
 Dado que los registros de varios programas y entornos se pueden reenviar al mismo destino de registro, además de la salida descrita en el artículo de registro, se incluirán las siguientes propiedades en cada entrada de registro:
 
