@@ -2,9 +2,9 @@
 title: Implementar [!DNL Content Hub]
 description: Obtenga información sobre cómo implementar y activar Content Hub y proporcionar acceso a usuarios con diferentes tipos de privilegios (cargar recursos, usuarios de Adobe Express) y cómo proporcionar privilegios de administrador a usuarios.
 role: Admin
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+source-git-commit: 0d340508823be6a2c6c2beb28c17ddfb2bf6b790
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
@@ -50,6 +50,11 @@ Para acceder al portal de Content Hub, los administradores primero deben habilit
 1. Haga clic en **[!UICONTROL Actualizar]**.
 
 Content Hub ahora está habilitado para Experience Manager Assets as a Cloud Service.
+
+>[!NOTE]
+>
+>Puede acceder a Content Hub y utilizarlo con hasta 250 usuarios de Content Hub. Si tiene más preguntas, póngase en contacto con el representante del Adobe.
+
 
 Si es su primera vez en Experience Manager Assets, haga clic en **[!UICONTROL Agregar programa]** y, a continuación, proporcione los detalles del programa (Nombre del programa, configurado para la producción) y haga clic en **[!UICONTROL Continuar]**. A continuación, puede seleccionar **[!UICONTROL Assets]** y **[!UICONTROL Content Hub]** en el **[!UICONTROL Soluciones y complementos]** pestaña.
 
