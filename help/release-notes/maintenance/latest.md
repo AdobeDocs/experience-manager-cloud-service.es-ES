@@ -4,9 +4,9 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 3a4dd9f1d769a9c9da12fdd8febfef481112d18c
+source-git-commit: f4b2ea5dac880738e6412541f06b85a6a83ccf40
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '752'
 ht-degree: 79%
 
 ---
@@ -52,9 +52,6 @@ La activación de funcionalidades 2024.6.0 proporcionará el conjunto completo d
 * SCRNS-4194: quitar la dependencia de las API de Google Guava.
 * SCRNS-4360: falta el botón Administrar publicación y Publicación rápida para usuarios no administradores en el proveedor de contenido para canales.
 * SCRNS-4323: ocultar/deshabilitar inicios desde screens.html.
-
-#### Formularios
-
 * FORMS-14844: Forms adaptable permite el envío de formularios a pesar de la verificación reCAPTCHA fallida.
 * FORMS-14984: Forms con CAPTCHA omite la validación si &quot;submitMetaData&quot; no está presente en los datos enviados.
 * FORMS-14477: Las opciones &quot;Después de&quot; e &quot;Antes de&quot; del editor de reglas no funcionan correctamente en la validación del selector de fechas.
