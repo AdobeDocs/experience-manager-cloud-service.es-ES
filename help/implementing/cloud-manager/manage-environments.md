@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 9defb49b2639aa8945d1fed0332400b8ab5ced8c
 workflow-type: tm+mt
-source-wordcount: '2365'
+source-wordcount: '2377'
 ht-degree: 70%
 
 ---
@@ -61,6 +61,7 @@ Para agregar o editar un entorno, un usuario debe ser miembro del **Propietario 
    * Seleccione un [**tipo de entorno**.](#environment-types)
       * El número de entornos disponibles/utilizados se muestra entre paréntesis detrás del nombre de tipo de entorno.
    * Proporcione un **Nombre** del entorno.
+      * El nombre del entorno no se puede cambiar una vez creado el entorno.
    * Proporcione una **Descripción** del entorno.
    * Si va a agregar un entorno de **Producción + Fase**, debe proporcionar un nombre de entorno y una descripción tanto para los entornos de producción como de ensayo.
    * Seleccione una **Región principal** de la lista desplegable.
@@ -178,7 +179,7 @@ Una vez activado, puede publicar contenido en el servicio de vista previa median
 >
 >Su entorno debe estar en la versión `2021.05.5368.20210529T101701Z` de AEM o más reciente para utilizar el servicio de vista previa. Asegúrese de que la canalización de actualización se haya ejecutado correctamente en su entorno para que pueda utilizar el servicio de vista previa.
 
-### Estado de las regiones de publicación adicionales {#additional-region-status}
+### Estado de regiones de Publish adicionales {#additional-region-status}
 
 Si ha activado regiones de publicación adicionales, puede comprobar el estado de estas regiones desde el **Entornos** Tarjeta de.
 
