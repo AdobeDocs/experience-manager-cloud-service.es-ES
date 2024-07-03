@@ -7,9 +7,9 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 379e5230d27be135b5862cdbfa35abc612f5ca57
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5143'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -182,9 +182,9 @@ ht-degree: 99%
    + Notas de la versión de Workfront para el conector mejorado de Experience Manager{#workfront}
       + [Notas de la versión de Workfront para el conector mejorado de Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
    + Notas de la versión para generar variaciones {#generate-variations}
-      + [Notas de la versión actuales de Generar variaciones](/help/generative-ai/release-notes-generate-variations.md)
+      + [Notas de la versión actual para generar variaciones](/help/generative-ai/release-notes-generate-variations.md)
    + Notas de la versión del editor universal {#univeral-editor}
-      + [Notas de la versión actuales del editor universal](/help/release-notes/universal-editor/current.md)
+      + [Notas de la versión actual del editor universal](/help/release-notes/universal-editor/current.md)
    + [¿Qué hay de nuevo?](/help/release-notes/what-is-new.md)
    + [Cambios importantes en AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
    + [Funciones y API obsoletas y eliminadas](/help/release-notes/deprecated-removed-features.md)
@@ -593,7 +593,7 @@ ht-degree: 99%
       + [Administrar etiquetas](/help/assets/tagging-management-assets-view.md)
       + [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
-   + Content Hub {#content-hub}
+   + Centro de contenido {#content-hub}
       + [Información general](/help/assets/product-overview.md)
       + [Implementación de Content Hub](/help/assets/deploy-content-hub.md)
       + [Configuración de la interfaz de usuario de Content Hub](/help/assets/configure-content-hub-ui-options.md)
