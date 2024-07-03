@@ -1,18 +1,10 @@
 ---
 title: Personalice los componentes principales de CIF
 description: AEM CIF Obtenga información sobre cómo personalizar los componentes principales de la. CIF El tutorial explica cómo ampliar de forma segura un componente principal de la para satisfacer los requisitos específicos de la empresa. Obtenga información sobre cómo ampliar una consulta de GraphQL CIF para devolver un atributo personalizado y mostrar el nuevo atributo en un componente principal de la.
-sub-product: Commerce
-topics: Development
-version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
 feature: Commerce Integration Framework
-kt: 4279
-thumbnail: customize-aem-cif-core-component.jpg
-exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
+source-git-commit: ef58cf5b216ef308cc65436f2eed2e500fb2bd96
 workflow-type: tm+mt
 source-wordcount: '2298'
 ht-degree: 9%
@@ -35,7 +27,7 @@ La marca Venia ha empezado recientemente a fabricar algunos productos con materi
 
 ## Requisitos previos {#prerequisites}
 
-Se requiere un entorno de desarrollo local para completar este tutorial. AEM Este entorno incluye una instancia en ejecución de la configurada y conectada a una instancia de Adobe Commerce. Revise los requisitos y pasos para [AEM configuración de un desarrollo local con SDK as a Cloud Service](../develop.md). Para seguir el tutorial por completo, necesita permiso para agregar [Atributos para un producto](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) en Adobe Commerce.
+Se requiere un entorno de desarrollo local para completar este tutorial. AEM Este entorno incluye una instancia en ejecución de la configurada y conectada a una instancia de Adobe Commerce. Revise los requisitos y pasos para [configuración de un desarrollo local con el SDK de AEM as a Cloud Service](../develop.md). Para seguir el tutorial por completo, necesita permiso para agregar [Atributos para un producto](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) en Adobe Commerce.
 
 También necesita el IDE de GraphQL, como [GraphiQL](https://github.com/graphql/graphiql) o una extensión del explorador para ejecutar los ejemplos de código y los tutoriales. Si instala una extensión de explorador, asegúrese de que puede establecer encabezados de solicitud. En Google Chrome, _Cliente de Altair GraphQL_ es una extensión que puede realizar el trabajo.
 
