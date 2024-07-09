@@ -6,9 +6,9 @@ role: Admin, User
 feature: Adaptive Forms
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
 source-git-commit: 6f547bd743932d45e45e0a3c47ff5eb2129cb664
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1073'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -16,14 +16,14 @@ ht-degree: 53%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
 | AEM as a Cloud Service | Este artículo |
 
 # Importar o exportar formularios adaptables y recursos de AEM Forms {#importing-and-exporting-assets-to-aem-forms}
 
-Puede mover Forms adaptable y recursos relacionados, como temáticas de formulario adaptable, modelos de datos de formulario (FDM), plantillas de formulario adaptable, fragmentos y PDF forms, entre [!DNL AEM Forms] instancias.
+Puede mover formularios adaptables y recursos relacionados, como temáticas de formulario adaptable, modelo de datos de formulario (FDM), plantillas de formularios adaptables, fragmentos y PDF forms, entre las instancias de [!DNL AEM Forms].
 
-## Descargar Forms adaptable, PDF forms o recursos relacionados {#download-forms-amp-documents-assets}
+## Descargar formularios adaptables, PDF forms o recursos relacionados {#download-forms-amp-documents-assets}
 
 Para descargar formularios o recursos relacionados:
 
@@ -32,21 +32,21 @@ Para descargar formularios o recursos relacionados:
 
    ![Seleccionar Forms](/help/forms/assets/select-forms.png)
 
-1. Seleccione los recursos y haga clic en **[!UICONTROL Descargar]** del carril superior.
+1. Seleccione los recursos y haga clic en el icono **[!UICONTROL Descargar]** del carril superior.
 
    ![Descargar Forms](/help/forms/assets/download-form.png)
 
-   Cuando descargue el formulario, la variable **[!UICONTROL Descargar recursos]** aparece el cuadro de diálogo.
+   Cuando descargue el formulario, se abre el cuadro de diálogo **[!UICONTROL Descargar recursos]**.
 
-   ![Descargar recursos de formularios](/help/forms/assets/download-form-assets.png)
+   ![Descargar recursos de Forms](/help/forms/assets/download-form-assets.png)
 
 1. Haga clic en **[!UICONTROL Descargar]**.
 
 Los recursos seleccionados se descargan como un archivo (archivo .zip).
 
-## Cargar Forms adaptable, PDF forms o recursos relacionados {#upload-forms-amp-documents-assets}
+## Cargar formularios adaptables, PDF forms o recursos relacionados {#upload-forms-amp-documents-assets}
 
-Puede cargar los tipos de recursos compatibles de forma individual o como archivo ZIP. Para un archivo ZIP, se muestran las rutas relativas de todos los recursos compatibles. Los recursos que no sean compatibles dentro del ZIP se ignoran y no aparecen en la lista. Sin embargo, si el archivo ZIP contiene solo los recursos no compatibles, se muestra un mensaje de error en lugar del cuadro de diálogo emergente. 
+Puede cargar los tipos de recursos compatibles de forma individual o como archivo ZIP. Para un archivo ZIP, se muestran las rutas relativas de todos los recursos compatibles. Los recursos que no sean compatibles dentro del ZIP se ignoran y no aparecen en la lista. Sin embargo, si el archivo ZIP contiene solo los recursos no compatibles, se muestra un mensaje de error en lugar del cuadro de diálogo emergente.
 Para cargar un formulario o un recurso relacionado:
 
 1. Inicie sesión en su instancia de [!DNL Experience Manager Forms].
@@ -66,23 +66,23 @@ Para cargar un formulario o un recurso relacionado:
 
    >[!NOTE]
    >
-   > Cuando un nombre entra en conflicto con diferentes tipos de recursos, la carga de un paquete no reemplaza la jerarquía de carpetas existente. Por ejemplo, si tiene un formulario adaptable llamado &quot;Aprendizaje&quot; en la ubicación `/content/dam/formsanddocuments` en un servidor. Puede descargar el formulario adaptable y cargarlo en otro servidor. El segundo servidor también tiene una carpeta llamada &quot;Aprendizaje&quot; en la misma ubicación `/content/dam/formsanddocuments`. La carga falla.
+   > Cuando un nombre entra en conflicto con diferentes tipos de recursos, la carga de un paquete no reemplaza la jerarquía de carpetas existente. Por ejemplo, si tiene un formulario adaptable llamado “Formación” en la ubicación `/content/dam/formsanddocuments` en un servidor. Se puede descargar el formulario adaptable y cargarlo en otro servidor. El segundo servidor también tiene una carpeta llamada “Formación” en la misma ubicación `/content/dam/formsanddocuments`. La carga falla.
 
 ## Descargar una temática
 
 Puede exportar temáticas en [!DNL AEM Forms], que puede utilizar en otros proyectos o instancias. AEM le permite descargar temáticas como archivo zip, que puede cargar en la instancia.
 Para descargar una temática:
 
-1. Inicie sesión en su [!DNL Experience Manager Forms] Instancia de autor.
-1. Seleccionar **[!UICONTROL Forms]** > **[!UICONTROL Temas]**.
+1. Inicie sesión en la instancia de autor de [!DNL Experience Manager Forms].
+1. Seleccione **[!UICONTROL Formularios]** > **[!UICONTROL Temáticas]**.
 
    ![Seleccionar tema](/help/forms/assets/select-theme.png)
 
-1. En la página Temáticas, seleccione la temática y haga clic en **[!UICONTROL Descargar]** del carril superior.
+1. En la página Temáticas, seleccione el tema y haga clic en el icono **[!UICONTROL Descargar]** del carril superior.
 
    ![Descargar tema](/help/forms/assets/download-theme.png)
 
-   Cuando descargue la temática, la variable **[!UICONTROL Descargar recursos]** aparece el cuadro de diálogo.
+   Cuando descargue el tema, se abre el cuadro de diálogo **[!UICONTROL Descargar recursos]**.
 
    ![Descargar recursos del tema](/help/forms/assets/download-theme-asset.png)
 
@@ -92,7 +92,7 @@ Los recursos seleccionados se descargan como un archivo (archivo .zip).
 
 ## Cargar una temática {#uploading-a-theme}
 
-Puede cargar y utilizar temáticas que otros creen en sus formularios.
+Se pueden cargar y usar las temáticas que otras personas hayan creado en sus formularios.
 Para cargar una temática:
 
 1. Inicie sesión en su instancia de [!DNL Experience Manager Forms].
@@ -104,7 +104,7 @@ Para cargar una temática:
 
    ![Cargar tema](/help/forms/assets/theme-upload.png)
 
-1. Examine y seleccione un paquete de temáticas en el equipo y haga clic en **[!UICONTROL Cargar]**. La temática cargada está disponible en la página Temáticas.
+1. Examine y seleccione un paquete de temas del equipo y haga clic en **[!UICONTROL Cargar]**. El tema cargado estará disponible en la página Temáticas.
 
 ## Utilizar carpetas para organizar formularios adaptables, PDF forms y otros recursos relacionados  {#folders-and-organizing-assets}
 
@@ -123,8 +123,8 @@ Para crear una carpeta:
 
    ![Crear carpeta](/help/forms/assets/create-folder.png)
 
-   El **[!UICONTROL Añadir carpeta]** aparece el cuadro de diálogo.
-1. Introduzca el **[!UICONTROL Título]**. El **[!UICONTROL Nombre]** se rellena automáticamente a medida que escribe **[!UICONTROL Título]**.
+   Se abre el cuadro de diálogo **[!UICONTROL Añadir carpeta]**.
+1. Escriba el **[!UICONTROL Título]**. El **[!UICONTROL Nombre]** se rellena automáticamente a medida que escribe el **[!UICONTROL Título]**.
 
    ![Añadir carpeta](/help/forms/assets/add-folder.png)
 
@@ -138,48 +138,48 @@ Se muestra una nueva carpeta con el título que haya definido en la ubicación a
 
 Si existe una carpeta con el nombre especificado, el envío falla con un error. Puede ver el mensaje de error pasando el puntero sobre el icono de error ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) que aparece junto al campo de nombre.
 
-Puede seleccionar la carpeta creada para entrar en ella y crear recursos o carpetas dentro de la carpeta.  Además, puede seleccionar una carpeta y elegir colocarla en la cola para descargarla, eliminarla o editar su nombre.
+Puede seleccionar la carpeta creada para entrar en ella y crear recursos o carpetas dentro de la carpeta. Además, puede seleccionar una carpeta y elegir colocarla en la cola para descargarla, eliminarla o editar su nombre.
 
 ### Crear copias de uno o varios recursos {#create-copies-of-one-or-more-assets-or-letters}
 
-Puede utilizar recursos existentes para crear rápidamente un recurso con propiedades, contenido y recursos heredados similares.
+Puede utilizar los recursos existentes para crear rápidamente un recurso con propiedades, contenido y recursos heredados similares.
 
 Para crear copias de recursos:
 
 1. Inicie sesión en su instancia de [!DNL Experience Manager Forms].
-1. En la página de recursos correspondiente, seleccione uno o varios recursos. La interfaz de usuario muestra las **[!UICONTROL Copiar]** icono.
-1. Seleccionar **[!UICONTROL Copiar]**. La interfaz de usuario muestra las ![Icono Pegar](/help/forms/assets/Smock_Paste_18_N.svg) icono.
+1. En la página de recursos correspondiente, seleccione uno o varios recursos. La interfaz de usuario muestra el icono **[!UICONTROL Copiar]**.
+1. Seleccione **[!UICONTROL Copiar]**. La interfaz de usuario muestra el icono ![Pegar](/help/forms/assets/Smock_Paste_18_N.svg).
 
-   ![Copiar recurso](/help/forms/assets/copy-asset.png)
+   ![Copiar recursos](/help/forms/assets/copy-asset.png)
 
-   También puede ir a una carpeta o navegar por ella antes de pegar elementos en ella. Las carpetas pueden contener recursos con los mismos nombres. Para obtener más información sobre las carpetas, consulte [Carpetas y organización de recursos](#folders-and-organizing-assets).
-1. Seleccionar **[!UICONTROL Pegar]**.
+   También puede ir a una carpeta o navegar por ella antes de pegar elementos en ella. Las distintas carpetas pueden contener recursos con los mismos nombres. Para obtener más información sobre las carpetas, consulte [Carpetas y organización de recursos](#folders-and-organizing-assets).
+1. Seleccione **[!UICONTROL Pegar]**.
 
    ![Pegar recurso](/help/forms/assets/paste-asset.png)
 
-1. El **[!UICONTROL Pegar]** aparece el cuadro de diálogo. El sistema genera automáticamente nombres y títulos para las nuevas copias de los recursos, pero puede editar tanto los títulos como los nombres.
+1. Aparecerá el cuadro de diálogo **[!UICONTROL Pegar]**. El sistema genera automáticamente nombres y títulos para las nuevas copias de los recursos, pero puede editar tanto los títulos como los nombres.
 
-   Si está copiando y pegando los recursos en el mismo lugar, se agrega el sufijo &quot;-CopyXX&quot; al nombre existente del `asset`. Si no existe ningún título para el recurso copiado, el campo de título generado automáticamente permanece en blanco.
+   Si está copiando y pegando los recursos en el mismo sitio, se añade el sufijo “-CopyXX” al nombre existente del `asset`. Si no existe ningún título para el recurso copiado, el campo de título generado automáticamente permanece en blanco.
 
    ![Pegar recurso en una nueva ubicación](/help/forms/assets/paste-click-asset.png)
 
    Si es necesario, edite el **[!UICONTROL Título]** con el que desea guardar la copia del recurso. El **[!UICONTROL Nombre]** se rellena automáticamente a medida que escribe **[!UICONTROL Título]**.
-1. Seleccionar **[!UICONTROL Pegar]**. Se crean nuevas copias de los recursos copiados.
+1. Seleccione **[!UICONTROL Pegar]**. Se crean nuevas copias de los recursos copiados.
 
 ## Búsqueda {#search-forms}
 
-Cuando tiene un gran número de recursos, la búsqueda del recurso adecuado requiere tiempo. Puede realizar una búsqueda basada en texto de un recurso específico en la página de recursos.
+Cuando hay un número elevado de recursos, la búsqueda del recurso adecuado puede tardar bastante tiempo. Puede realizar una búsqueda basada en texto de un recurso específico en la página de recursos.
 
 Para buscar el recurso:
 
 1. Inicie sesión en su instancia de [!DNL Experience Manager Forms].
-1. Haga clic en ![icono de búsqueda](assets/folder-search-icon.svg) icono de búsqueda.
+1. Haga clic en el icono de búsqueda ![icono de búsqueda](assets/folder-search-icon.svg).
 
-   ![Formulario de búsqueda](/help/forms/assets/search-form.png)
+   ![Buscar formulario](/help/forms/assets/search-form.png)
 
-1. Introduzca el nombre del recurso que desea buscar en la barra de búsqueda.
+1. Escriba el nombre del recurso que desea buscar en la barra de búsqueda.
 
-1. Aparecerá una lista de recursos relacionados. Seleccione el recurso que desee en la lista de recursos mostrada.
+1. Aparece una lista de los recursos relacionados. Seleccione el recurso que desee en la lista de recursos mostrada.
 
    ![Buscar recursos](/help/forms/assets/search-bar.png)
 
