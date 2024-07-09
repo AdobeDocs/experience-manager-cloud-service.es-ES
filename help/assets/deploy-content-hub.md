@@ -2,9 +2,9 @@
 title: Implementar [!DNL Content Hub]
 description: Obtenga información sobre cómo implementar y activar Content Hub y proporcionar acceso a usuarios con diferentes tipos de privilegios (cargar recursos, usuarios de Adobe Express) y cómo proporcionar privilegios de administrador a usuarios.
 role: Admin
-source-git-commit: 0d340508823be6a2c6c2beb28c17ddfb2bf6b790
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1316'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,10 @@ Para acceder al portal de Content Hub, los administradores primero deben habilit
 
 1. Expandir **[!UICONTROL Assets]** y seleccione **[!UICONTROL Content Hub]**.
    ![Seleccione Content Hub en Cloud Manager](assets/edit-program-cloud-manager-content-hub.png)
+
+   >[!NOTE]
+   >
+   >If **[!UICONTROL Actualizar]** no está habilitado después de seleccionar Content Hub. Asegúrese de haber especificado la configuración de Go-Live para el programa.
 
 1. Haga clic en **[!UICONTROL Actualizar]**.
 
@@ -111,9 +115,19 @@ Estos usuarios ahora pueden acceder a los recursos disponibles en el portal de C
 >
 >Puede utilizar todas las funciones empresariales avanzadas, como la sincronización con proveedores de identidad externos.
 
-Después de agregar los usuarios adecuados mediante Admin Console, los usuarios pueden acceder a Content Hub mediante el siguiente vínculo:
+### ¿Cómo acceder a Content Hub? {#access-content-hub}
 
-`https://experience.adobe.com/#/assets/contenthub`
+Se puede acceder a Content Hub de las siguientes maneras:
+
+* Acceda a Content Hub mediante el siguiente vínculo:
+
+  `https://experience.adobe.com/#/assets/contenthub`
+
+* Iniciar sesión en `experience.adobe com` y haga clic en **[!UICONTROL Experience Manager Assets Content Hub]** disponible en el **[!UICONTROL Acceso rápido]** sección:
+  ![Acceso a Content Hub](assets/access-content-hub.png)
+
+* Iniciar sesión en `experience.adobe com` y haga clic en **[!UICONTROL Experience Manager Assets Content Hub]** disponible en el conmutador de productos:
+  ![Método de acceso de Content Hub 3](assets/access-content-hub-alternate.png)
 
 ### Deshabilitar notificaciones por correo electrónico a usuarios {#disable-email-notifications}
 

@@ -1,10 +1,10 @@
 ---
 title: Información general de Content Hub
 description: Obtenga más información sobre Content Hub, sus ventajas clave, cómo acceder a él y cómo proporcionar comentarios sobre las opciones disponibles en Content Hub.
-source-git-commit: b29641286919b5becc3982400ea160836531fdc5
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
 source-wordcount: '660'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ![Información general de Content Hub](assets/content-hub-overview.png)
 
-Content Hub está disponible como parte del as a Cloud Service de Experience Manager Assets para democratizar el acceso al contenido en la marca para las organizaciones y sus socios comerciales. Se centra en la distribución de recursos para su activación a escala y la creación de variantes de contenido en la marca para mejorar la agilidad del marketing.
+Centro de contenido está disponible como parte de Experience Manager Assets as a Cloud Service para democratizar el acceso al contenido sobre la marca por parte de las organizaciones y sus socios comerciales. Se centra en la distribución de recursos para su activación a escala y la creación de variantes de contenido en la marca para mejorar la agilidad del marketing.
 
 ## ¿Por qué Content Hub?
 
@@ -41,7 +41,7 @@ Content Hub requiere un entorno de creación de producción de Experience Manage
 
 ## ¿Cómo acceder a Content Hub? {#access-content-hub}
 
-[Después de configurar Content Hub](#deploy-content-hub) y agregar un usuario a [Perfil de producto de Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), se puede acceder a Content Hub de las siguientes maneras:
+[Después de configurar Content Hub](/help/assets/deploy-content-hub.md) y agregar un usuario a [Perfil de producto de Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), se puede acceder a Content Hub de las siguientes maneras:
 
 * Acceda a Content Hub mediante el siguiente vínculo:
 

@@ -1,10 +1,10 @@
 ---
 title: Configuración de la interfaz de usuario de Content Hub
 description: Configuración de la interfaz de usuario de Content Hub
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 4%
+source-wordcount: '1119'
+ht-degree: 5%
 
 ---
 
@@ -97,6 +97,10 @@ Content Hub permite a los administradores configurar filtros que se muestran al 
 1. Clic **[!UICONTROL Confirmar]**. El nuevo filtro se muestra en la lista de los filtros existentes.
 
 1. Clic **[!UICONTROL Guardar]** para aplicar los cambios de modo que el nuevo filtro se muestre en la página Buscar al filtrar los recursos.
+
+   >[!NOTE]
+   >
+   >El nuevo filtro se muestra en la página Buscar solo si hay al menos un recurso en el repositorio que coincida con los criterios de filtro.
 
 Igualmente, puede hacer clic en ![Icono Editar](assets/do-not-localize/edit_icon.svg), disponible junto a cada filtro disponible, para editar las etiquetas o haga clic en el icono eliminar para eliminar cualquier filtro existente. Clic **[!UICONTROL Guardar]** después de realizar todas las modificaciones para aplicar los cambios.
 
