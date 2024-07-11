@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo actualizar los fragmentos de conte
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 66d44481fa7e58b23e0381bfebb997acbedecfb7
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 59%
+source-wordcount: '867'
+ht-degree: 57%
 
 ---
 
@@ -28,7 +28,7 @@ Hay requisitos previos para esta tarea:
 
 1. Asegúrese de que el usuario que realiza la tarea tiene los permisos necesarios:
 
-   * como mínimo, la variable `Deployment Manager` Se requiere la función en Cloud Manager.
+   * como mínimo, la variable `Deployment Manager` se requiere la función en Cloud Manager.
 
 ## Actualización de los fragmentos de contenido {#updating-content-fragments}
 
@@ -38,71 +38,81 @@ Hay requisitos previos para esta tarea:
 
    Las variables disponibles son las siguientes:
 
+   | | Nombre | Value | Valor predeterminado | Servicio | Aplicado | Tipo | Notas |
+   |---|---|---|---|---|---|---|---|
+   | 1 | `CF_MIGRATION_ENABLED` | `1` | `0` | Todos | | Variable | Habilita (!=0) o deshabilita (0) la activación del trabajo de migración de fragmentos de contenido. |
+   | 2 | `CF_MIGRATION_ENFORCE` | `1` | `0` | Todos | | Variable | Aplica (!=0) remigración de fragmentos de contenido. Al establecer este indicador en 0 se realiza una migración incremental de los CF. Esto significa que, si el trabajo se finaliza por cualquier motivo, la siguiente ejecución del trabajo inicia la migración desde el punto en el que se finalizó. Se recomienda realizar la primera migración para la aplicación (valor=1). |
+   | 3 | `CF_MIGRATION_BATCH` | `50` | `50` | Todos | | Variable | Tamaño del lote para guardar el número de fragmentos de contenido después de la migración. Esto es relevante para cuántos CF se guardan en el repositorio en un lote y se puede utilizar para optimizar el número de escrituras en el repositorio. |
+   | 4 | `CF_MIGRATION_LIMIT` | `1000` | `1000` | Todos | | Variable | Número máximo de fragmentos de contenido para procesar a la vez. Consulte también las notas para `CF_MIGRATION_INTERVAL`. |
+   | 5 | `CF_MIGRATION_INTERVAL` | `60` | `600` | Todos | | Variable | Intervalo (segundos) para procesar los fragmentos de contenido restantes hasta el siguiente límite. Este intervalo también se considera como un tiempo de espera antes de iniciar el trabajo y un retraso entre el procesamiento de cada número CF_MIGRATION_LIMIT posterior de CF. (*) |
+
+   <!--
    <table style="table-layout:auto">
     <tbody>
      <tr>
-      <th> </th>
-      <th>Nombre</th>
+      <th>&nbsp;</th>
+      <th>Name</th>
       <th>Value</th>
-      <th>Valor predeterminado</th>
-      <th>Servicio</th>
-      <th>Aplicado</th>
-      <th>Tipo</th>
-      <th>Notas</th>
+      <th>Default Value</th>
+      <th>Service</th>
+      <th>Applied</th>
+      <th>Type</th>
+      <th>Notes</th>
      </tr>
 
-   <tr>
+     <tr>
       <td>1</td>
       <td>`CF_MIGRATION_ENABLED` </td>
       <td>`1` </td>
       <td>`0` </td>
-      <td>Todos </td>
+      <td>All </td>
       <td> </td>
       <td>Variable </td>
-      <td>Habilita (!=0) o deshabilita (0) la activación del trabajo de migración de fragmentos de contenido. </td>
+      <td>Enables(!=0) or disables(0) triggering of Content Fragment migration job. </td>
      </tr>
      <tr>
       <td>2</td>
       <td>`CF_MIGRATION_ENFORCE` </td>
       <td>`1` </td>
       <td>`0` </td>
-      <td>Todos </td>
+      <td>All </td>
       <td> </td>
       <td>Variable </td>
-      <td>Aplica (!=0) remigración de fragmentos de contenido.<br>Al establecer este indicador en 0 se realiza una migración incremental de los CF. Esto significa que, si el trabajo se finaliza por cualquier motivo, la siguiente ejecución del trabajo inicia la migración desde el punto en el que se finalizó. Se recomienda realizar la primera migración para la aplicación (valor=1). </td>
+      <td>Enforce (!=0) remigration of Content Fragments.<br>Setting this flag to 0 does an incremental migration of CFs. This means, if the job is terminated for any reason, then the next run of the job starts migration from the point where it got terminated. The first migration is recommended for enforcement (value=1). </td>
      </tr>
      <tr>
       <td>3</td>
       <td>`CF_MIGRATION_BATCH` </td>
       <td>`50` </td>
       <td>`50` </td>
-      <td>Todos </td>
+      <td>All </td>
       <td> </td>
       <td>Variable </td>
-      <td>Tamaño del lote para guardar el número de fragmentos de contenido después de la migración.<br>Esto es relevante para cuántos CF se guardan en el repositorio en un lote y se puede utilizar para optimizar el número de escrituras en el repositorio. </td>
+      <td>Size of the batch for saving the number of Content Fragments after migration.<br>This is relevant to how many CFs are saved to the repository in one batch, and can be used to optimize the number of writes to the repository. </td>
      </tr>
      <tr>
       <td>4</td>
       <td>`CF_MIGRATION_LIMIT` </td>
       <td>`1000` </td>
       <td>`1000` </td>
-      <td>Todos </td>
+      <td>All </td>
       <td> </td>
       <td>Variable </td>
-      <td>Número máximo de fragmentos de contenido para procesar a la vez.<br>Consulte también las notas de `CF_MIGRATION_INTERVAL`. </td>
+      <td>Max number of Content Fragments to process at a time.<br>See also notes for `CF_MIGRATION_INTERVAL`. </td>
      </tr>
      <tr>
       <td>5</td>
       <td>`CF_MIGRATION_INTERVAL` </td>
       <td>`60` </td>
       <td>`600` </td>
-      <td>Todos </td>
+      <td>All </td>
       <td> </td>
       <td>Variable </td>
-      <td>Intervalo (segundos) para procesar los fragmentos de contenido restantes hasta el siguiente límite<br>Este intervalo también se considera como un tiempo de espera antes de iniciar el trabajo y un retraso entre el procesamiento de cada número CF_MIGRATION_LIMIT posterior de CF.<br>(*)</td>
+      <td>Interval (seconds) to process the remaining Content Fragments up until the next Limit<br>This interval is also considered as both a wait-time before starting the job, and a delay between processing of each subsequent CF_MIGRATION_LIMIT number of CFs.<br>(*)</td>
      </tr>
     </tbody>
    </table>
+   -->
 
    >[!NOTE]
    >
@@ -193,30 +203,36 @@ Hay requisitos previos para esta tarea:
 
    Una vez ejecutado el procedimiento de actualización, restablezca la variable de entorno de la nube `CF_MIGRATION_ENABLED` a “0” para activar el reciclaje de todos los pods.
 
+   | | Nombre | Value | Valor predeterminado | Servicio | Aplicado | Tipo | Notas |
+   |---|---|---|---|---|---|---|---|
+   | | `CF_MIGRATION_ENABLED` | `0` | `0` | Todos | | Variable | Deshabilita (0) [o habilita (!=0)] activando el trabajo de migración de fragmentos de contenido. |
+
+   <!--
    <table style="table-layout:auto">
     <tbody>
      <tr>
-      <th> </th>
-      <th>Nombre</th>
+      <th>&nbsp;</th>
+      <th>Name</th>
       <th>Value</th>
-      <th>Valor predeterminado</th>
-      <th>Servicio</th>
-      <th>Aplicado</th>
-      <th>Tipo</th>
-      <th>Notas</th>
+      <th>Default Value</th>
+      <th>Service</th>
+      <th>Applied</th>
+      <th>Type</th>
+      <th>Notes</th>
      </tr>
      <tr>
       <td></td>
       <td>`CF_MIGRATION_ENABLED` </td>
       <td>`0` </td>
       <td>`0` </td>
-      <td>Todos </td>
+      <td>All </td>
       <td> </td>
       <td>Variable </td>
-      <td>Deshabilita (0) [o habilita (!=0)] activando el trabajo de migración de fragmentos de contenido. </td>
+      <td>Disables(0) (or Enables(!=0)) triggering of Content Fragment migration job. </td>
      </tr>
     </tbody>
    </table>
+   -->
 
    >[!NOTE]
    >
@@ -240,7 +256,7 @@ Por lo tanto, la presencia de esta propiedad en el nodo JCR `/content/dam` con u
      >
      >Por lo tanto, Adobe recomienda realizar la verificación mediante el explorador del repositorio para *al menos* un autor *y* una instancia de Publish.
 
-## Restricciones {#limitations}
+## Limitaciones {#limitations}
 
 Tenga en cuenta las siguientes limitaciones:
 
