@@ -58,7 +58,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
 >title="Duración media de la generación de formularios"
->abstract="El gráfico ilustra el tiempo medio necesario para crear un formulario. Cada barra del gráfico representa un formulario específico y la altura de la barra indica la duración media de creación del formulario durante ese lapso de tiempo. "
+>abstract="El gráfico ilustra el tiempo medio necesario para crear un formulario. Cada barra del gráfico representa un formulario específico y la altura de la barra indica la duración media de creación del formulario durante ese lapso de tiempo."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"

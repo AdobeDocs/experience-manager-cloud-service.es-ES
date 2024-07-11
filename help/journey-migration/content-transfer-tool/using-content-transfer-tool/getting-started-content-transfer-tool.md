@@ -30,7 +30,7 @@ Solo se admite la versión 2.0.0 y posteriores, y es aconsejable utilizar la ver
 >[!NOTE]
 >Descargue Content Transfer Tool desde el portal de [distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html).
 
-## Conectividad del entorno de origen {#source-environment-connectivity}
+## Conectividad del entorno de Source {#source-environment-connectivity}
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ A veces, es difícil comprender los problemas de conexión SSL/TLS. AEM Para sol
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Consulte la demostración"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=es#migration" text="Tutorial: uso de la herramienta de transferencia de contenido"
 
-La siguiente sección se aplica a la nueva versión de la herramienta de transferencia de contenido. Siga esta sección para aprender a utilizar la herramienta de transferencia de contenido para migrar contenido a la herramienta de transferencia de contenido as a Cloud Service de la red de distribución de contenido (CDN) de la red de distribución de contenido (CDN) para la migración de contenido a la red de distribución de contenido AEM:
+La siguiente sección se aplica a la nueva versión de la herramienta de transferencia de contenido. Siga esta sección para aprender a utilizar la herramienta de transferencia de contenido para migrar contenido a AEM as a Cloud Service:
 
 ### Fase de configuración de la extracción {#extraction-setup-phase}
 
@@ -78,7 +78,7 @@ La siguiente sección se aplica a la nueva versión de la herramienta de transfe
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" must be added here -->
 
-1. AEM Inicie sesión en Cloud Acceleration Manager (CAM) y haga clic en el proyecto CAM que había creado anteriormente para evaluar su preparación para pasar a la fase as a Cloud Service de la. Si no ha creado ningún proyecto CAM, consulte Creación y gestión de un proyecto en CAM.
+1. Inicie sesión en Cloud Acceleration Manager (CAM) y haga clic en el proyecto CAM que había creado anteriormente para evaluar su preparación para pasar a AEM as a Cloud Service. Si no ha creado ningún proyecto CAM, consulte Creación y gestión de un proyecto en CAM.
 
 1. Haga clic en **Transferencia de contenido** para abrir la vista Lista del conjunto de migraciones.
 
@@ -128,7 +128,7 @@ Para rellenar el conjunto de migración que ha creado en Cloud Acceleration Mana
 
    >[!NOTE]
    >
-   >Asegúrese de que la clave de extracción sea válida y no esté cerca de su caducidad. Puede obtener esta información en la **Crear conjunto de migración** después de pegar la clave de extracción. Si aparece un error de conexión, consulte [Conectividad del entorno de origen](#source-environment-connectivity) para obtener más información.
+   >Asegúrese de que la clave de extracción sea válida y no esté cerca de su caducidad. Puede obtener esta información en la **Crear conjunto de migración** después de pegar la clave de extracción. Si aparece un error de conexión, consulte [Conectividad del entorno de Source](#source-environment-connectivity) para obtener más información.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
 
@@ -204,4 +204,4 @@ Siga los pasos a continuación para ejecutar una comprobación de tamaño:
 
 ## Siguientes pasos {#whats-next}
 
-Una vez que haya aprendido a crear un conjunto de migración, ya puede obtener información sobre los procesos de extracción e ingesta en la herramienta de transferencia de contenido. Antes de aprender estos procesos, debe revisar [Gestión de repositorios de contenido grandes](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) AEM para acelerar de forma significativa las fases de extracción e ingesta de la actividad de transferencia de contenido y mover el contenido a la posición as a Cloud Service.
+Una vez que haya aprendido a crear un conjunto de migración, ya puede obtener información sobre los procesos de extracción e ingesta en la herramienta de transferencia de contenido. Antes de aprender estos procesos, debe revisar [Gestión de repositorios de contenido grandes](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) para acelerar de forma significativa las fases de extracción e ingesta de la actividad de transferencia de contenido y mover contenido a AEM as a Cloud Service.
