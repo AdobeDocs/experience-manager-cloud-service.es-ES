@@ -4,27 +4,27 @@ description: Obtenga información sobre cómo configurar el tráfico de CDN decl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 1b4297c36995be7a4d305c3eddbabfef24e91559
+source-git-commit: c34aa4ad34d3d22e1e09e9026e471244ca36e260
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1326'
 ht-degree: 3%
 
 ---
 
 # Configuración del tráfico en la CDN {#cdn-configuring-cloud}
 
-AEM as a Cloud Service ofrece una colección de funciones configurables en [CDN administrado por Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) que modifican la naturaleza de las solicitudes entrantes o de las respuestas salientes. Se pueden declarar las siguientes reglas, descritas en detalle en esta página, para lograr el siguiente comportamiento:
+AEM as a Cloud Service ofrece una colección de características configurables en el nivel [CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) administrado por Adobe que modifican la naturaleza de las solicitudes entrantes o de las respuestas salientes. Se pueden declarar las siguientes reglas, descritas en detalle en esta página, para lograr el siguiente comportamiento:
 
-* [Solicitar transformaciones](#request-transformations) : modifique aspectos de las solicitudes entrantes, incluidos encabezados, rutas y parámetros.
-* [Transformaciones de respuesta](#response-transformations) : modifique los encabezados que están en camino de regreso al cliente (por ejemplo, un explorador web).
-* [Redirecciones del lado del cliente](#client-side-redirectors) - déclencheur un redireccionamiento del explorador. Esta función aún no es de GA, pero está disponible para los primeros usuarios que la adoptaron.
-* [Selectores de origen](#origin-selectors) : proxy a un servidor de origen diferente.
+* [Transformaciones de solicitudes](#request-transformations): modifique aspectos de las solicitudes entrantes, incluidos los encabezados, las rutas y los parámetros.
+* [Transformaciones de respuesta](#response-transformations): modifique los encabezados que están en camino de regreso al cliente (por ejemplo, un explorador web).
+* [Redirecciones del lado del cliente](#client-side-redirectors): déclencheur una redirección del explorador. Esta función aún no es de GA, pero está disponible para los primeros usuarios que la adoptaron.
+* [Selectores de origen](#origin-selectors): proxy a un backend de origen diferente.
 
-También se pueden configurar en la CDN las reglas de filtro de tráfico (incluido WAF), que controlan qué tráfico permite o rechaza la CDN. Esta función ya está disponible y puede obtener más información al respecto en la [Reglas de filtro de tráfico, incluidas las reglas WAF](/help/security/traffic-filter-rules-including-waf.md) página.
+También se pueden configurar en la CDN las reglas de filtro de tráfico (incluido WAF), que controlan qué tráfico permite o rechaza la CDN. Esta característica ya se ha lanzado y puede obtener más información al respecto en la página [Reglas de filtro de tráfico, incluidas las reglas WAF](/help/security/traffic-filter-rules-including-waf.md).
 
-Además, si la CDN no puede ponerse en contacto con su origen, puede escribir una regla que haga referencia a una página de error personalizada autoalojada (que luego se procesará). Para obtener más información, lea la [Configuración de páginas de error de CDN](/help/implementing/dispatcher/cdn-error-pages.md) artículo.
+Además, si la CDN no puede ponerse en contacto con su origen, puede escribir una regla que haga referencia a una página de error personalizada autoalojada (que luego se procesará). Obtenga más información al leer el artículo [Configuración de páginas de error de CDN](/help/implementing/dispatcher/cdn-error-pages.md).
 
-Todas estas reglas, declaradas en un archivo de configuración del control de código fuente, se implementan mediante [Canalización de configuración de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Tenga en cuenta que el tamaño acumulado del archivo de configuración, incluidas las reglas de filtro de tráfico, no puede superar los 100 KB.
+Todas estas reglas, declaradas en un archivo de configuración en el control de código fuente, se implementan mediante [la canalización de configuración de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Tenga en cuenta que el tamaño acumulado del archivo de configuración, incluidas las reglas de filtro de tráfico, no puede superar los 100 KB.
 
 ## Orden de evaluación {#order-of-evaluation}
 
@@ -43,7 +43,7 @@ config/
      cdn.yaml
 ```
 
-* El `cdn.yaml` El archivo de configuración debe contener metadatos y las reglas que se describen en los ejemplos siguientes. El `kind` el parámetro debe establecerse en `CDN` y la versión debe establecerse en la versión de esquema, que actualmente es `1`.
+* El archivo de configuración `cdn.yaml` debe contener metadatos y las reglas descritas en los ejemplos siguientes. El parámetro `kind` debe establecerse en `CDN` y la versión debe establecerse en la versión de esquema, que actualmente es `1`.
 
 * Cree una canalización de configuración de implementación de destino en Cloud Manager. Consulte [configuración de canalizaciones de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) y [configuración de canalizaciones que no son de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
@@ -58,7 +58,7 @@ Los tipos de reglas de las secciones siguientes comparten una sintaxis común.
 
 Se hace referencia a una regla mediante un nombre, una cláusula when condicional y acciones.
 
-La cláusula when determina si se evaluará una regla en función de propiedades como dominio, ruta, cadenas de consulta, encabezados y cookies. La sintaxis es la misma en todos los tipos de reglas; para obtener más información, consulte la [Sección Estructura de condición](/help/security/traffic-filter-rules-including-waf.md#condition-structure) en el artículo Reglas del filtro de tráfico.
+La cláusula when determina si se evaluará una regla en función de propiedades como dominio, ruta, cadenas de consulta, encabezados y cookies. La sintaxis es la misma en todos los tipos de reglas; para obtener más información, consulte la [sección Estructura de condiciones](/help/security/traffic-filter-rules-including-waf.md#condition-structure) en el artículo Reglas de filtro de tráfico.
 
 Los detalles del nodo de acciones difieren según el tipo de regla y se describen en las secciones individuales siguientes.
 
@@ -68,7 +68,7 @@ Las reglas de transformación de solicitudes permiten modificar las solicitudes 
 
 Los casos de uso son variados e incluyen reescrituras de URL para la simplificación de la aplicación o la asignación de URL heredadas.
 
-Como se ha mencionado anteriormente, existe un límite de tamaño para el archivo de configuración, por lo que las organizaciones con requisitos más grandes deben definir reglas en la `apache/dispatcher` capa.
+Como se mencionó anteriormente, hay un límite de tamaño para el archivo de configuración, por lo que las organizaciones con requisitos más grandes deben definir reglas en la capa `apache/dispatcher`.
 
 Ejemplo de configuración:
 
@@ -144,7 +144,7 @@ En la tabla siguiente se explican las acciones disponibles.
 
 | Nombre | Propiedades | Significado |
 |-----------|--------------------------|-------------|
-| **set** | (reqProperty o reqHeader o queryParam o reqCookie), valor | Establece un parámetro de solicitud especificado (solo se admite la propiedad &quot;path&quot;), un encabezado de solicitud, un parámetro de consulta o una cookie, en un valor determinado. |
+| **conjunto** | (reqProperty o reqHeader o queryParam o reqCookie), valor | Establece un parámetro de solicitud especificado (solo se admite la propiedad &quot;path&quot;), un encabezado de solicitud, un parámetro de consulta o una cookie, en un valor determinado. |
 |     | var, valor | Establece una propiedad de solicitud especificada en un valor determinado. |
 | **anular** | reqProperty | Quita un parámetro de solicitud especificado (solo se admite la propiedad &quot;path&quot;), un encabezado de solicitud, un parámetro de consulta o una cookie, de un valor determinado. |
 |         | var | Quita una variable especificada. |
@@ -168,7 +168,7 @@ actions:
 
 ### Variables {#variables}
 
-Puede establecer variables durante la transformación de la solicitud y luego hacer referencia a ellas más adelante en la secuencia de evaluación. Consulte la [orden de evaluación](#order-of-evaluation) diagrama para obtener más información.
+Puede establecer variables durante la transformación de la solicitud y luego hacer referencia a ellas más adelante en la secuencia de evaluación. Consulte el diagrama [orden de evaluación](#order-of-evaluation) para obtener más información.
 
 Ejemplo de configuración:
 
@@ -252,7 +252,7 @@ En la tabla siguiente se explican las acciones disponibles.
 
 | Nombre | Propiedades | Significado |
 |-----------|--------------------------|-------------|
-| **set** | reqHeader, valor | Establece un encabezado especificado en un valor determinado de la respuesta. |
+| **conjunto** | reqHeader, valor | Establece un encabezado especificado en un valor determinado de la respuesta. |
 | **anular** | respHeader | Quita un encabezado especificado de la respuesta. |
 
 ## Selectores de origen {#origin-selectors}
@@ -274,7 +274,7 @@ data:
         action:
           type: selectOrigin
           originName: example-com
-          # useCache: false
+          # skpCache: true
     origins:
       - name: example-com
         domain: www.example.com
@@ -292,7 +292,7 @@ La acción disponible se explica en la tabla siguiente.
 | Nombre | Propiedades | Significado |
 |-----------|--------------------------|-------------|
 | **selectOrigin** | originName | Nombre de uno de los orígenes definidos. |
-|     | useCache (opcional, el valor predeterminado es true) | Indicar si se debe utilizar el almacenamiento en caché para las solicitudes que coinciden con esta regla. |
+|     | skipCache (opcional, el valor predeterminado es false) | Indicar si se debe utilizar el almacenamiento en caché para las solicitudes que coinciden con esta regla. De forma predeterminada, las respuestas se almacenan en caché según el encabezado de almacenamiento en caché de respuestas (por ejemplo, Cache-Control o Expires) |
 
 **Orígenes**
 
@@ -300,13 +300,13 @@ Las conexiones a orígenes son solo SSL y utilizan el puerto 443.
 
 | Propiedad | Significado |
 |------------------|--------------------------------------|
-| **name** | Nombre al que se puede hacer referencia mediante &quot;action.originName&quot;. |
-| **sector** | Nombre de dominio utilizado para conectarse al backend personalizado. También se utiliza para el SNI y la validación SSL. |
+| **nombre** | Nombre al que se puede hacer referencia mediante &quot;action.originName&quot;. |
+| **dominio** | Nombre de dominio utilizado para conectarse al backend personalizado. También se utiliza para el SNI y la validación SSL. |
 | **ip** (opcional, compatible con iv4 e ipv6) | Si se proporciona, se utiliza para conectarse al servidor en lugar de a &quot;dominio&quot;. Todavía se utiliza &quot;domain&quot; para el SNI y la validación SSL. |
-| **forwardHost** (opcional, el valor predeterminado es false) | Si se establece en true, el encabezado &quot;Host&quot; de la solicitud del cliente se pasará al backend; de lo contrario, el valor &quot;domain&quot; se pasará al encabezado &quot;Host&quot;. |
-| **forwardCookie** (opcional, el valor predeterminado es false) | Si se establece en true, el encabezado &quot;Cookie&quot; de la solicitud del cliente se pasará al servidor; de lo contrario, se eliminará el encabezado &quot;Cookie&quot;. |
-| **forwardAuthorization** (opcional, el valor predeterminado es false) | Si se establece en true, el encabezado &quot;Autorización&quot; de la solicitud del cliente se pasará al backend; de lo contrario, se eliminará el encabezado Autorización. |
-| **timeout** (opcional, en segundos, el valor predeterminado es 60) | Número de segundos que la CDN debe esperar para que un servidor back-end envíe el primer byte de un cuerpo de respuesta HTTP. Este valor también se utiliza como tiempo de espera entre bytes para el servidor back-end. |
+| **forwardHost** (opcional, el valor predeterminado es falso) | Si se establece en true, el encabezado &quot;Host&quot; de la solicitud del cliente se pasará al backend; de lo contrario, el valor &quot;domain&quot; se pasará al encabezado &quot;Host&quot;. |
+| **forwardCookie** (opcional, el valor predeterminado es falso) | Si se establece en true, el encabezado &quot;Cookie&quot; de la solicitud del cliente se pasará al servidor; de lo contrario, se eliminará el encabezado &quot;Cookie&quot;. |
+| **forwardAuthorization** (opcional, el valor predeterminado es falso) | Si se establece en true, el encabezado &quot;Autorización&quot; de la solicitud del cliente se pasará al backend; de lo contrario, se eliminará el encabezado Autorización. |
+| **tiempo de espera** (opcional; en segundos; el valor predeterminado es 60) | Número de segundos que la CDN debe esperar para que un servidor back-end envíe el primer byte de un cuerpo de respuesta HTTP. Este valor también se utiliza como tiempo de espera entre bytes para el servidor back-end. |
 
 ### Proxy a Edge Delivery Services {#proxying-to-edge-delivery}
 
@@ -341,7 +341,7 @@ data:
 ```
 
 >[!NOTE]
-> Dado que se utiliza la CDN administrada por Adobe, asegúrese de configurar la invalidación push en **administrado** modo, siguiendo los Edge Delivery Services [Configuración de la documentación de invalidación push](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+> Dado que se usa la CDN administrada de Adobe, asegúrese de configurar la invalidación push en el modo **administrado**, siguiendo la [documentación de invalidación push de configuración](https://www.aem.live/docs/byo-dns#setup-push-invalidation) de los Edge Delivery Services.
 
 
 ## Redirecciones del lado del cliente {#client-side-redirectors}
