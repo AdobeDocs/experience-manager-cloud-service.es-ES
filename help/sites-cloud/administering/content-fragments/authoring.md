@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: f81ea2b58cfa68542df957b54b1c0233b6096810
 workflow-type: tm+mt
-source-wordcount: '2668'
+source-wordcount: '2687'
 ht-degree: 7%
 
 ---
@@ -116,7 +116,7 @@ Con cada actualización que realice, el fragmento de contenido se guardará auto
 
 ## Variaciones {#variations}
 
-[Variaciones](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) AEM son una característica importante de los fragmentos de contenido de la. Permiten crear y editar copias del **Principal** contenido para su uso en canales y escenarios específicos, lo que hace que la entrega de contenido sin encabezado y la creación de páginas sean aún más flexibles.
+[Variaciones](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) AEM son una característica importante de los fragmentos de contenido que se utilizan para la. Permiten crear y editar copias del **Principal** contenido para su uso en canales y escenarios específicos, lo que hace que la entrega de contenido sin encabezado y la creación de páginas sean aún más flexibles.
 
 Desde el editor puede:
 
@@ -348,19 +348,26 @@ Entrada **Referencia de contenido** en los campos puede hacer lo siguiente:
 Para agregar un recurso, puede hacer lo siguiente:
 
 * arrastre y suelte el nuevo archivo de recursos directamente (por ejemplo, desde el sistema de archivos) en **Referencia de contenido** campo
-* use el **Añadir recurso** acción, luego seleccione **Examinar recursos** o **Cargar** para abrir el selector correspondiente para que lo utilice:
+* use el **Añadir recurso** acción, luego seleccione **Examinar Assets** o **Cargar** para abrir el selector correspondiente para que lo utilice:
 
   ![Editor de fragmentos de contenido: añadir opciones de recursos](assets/cf-authoring-add-asset-options.png)
 
 #### Páginas de referencia {#reference-pages}
 
-AEM Para agregar referencias a páginas de contenido, fragmentos de experiencias u otros tipos de contenido de la:
+AEM Para agregar referencias a páginas de contenido, fragmentos de experiencias u otros tipos de contenido de este tipo, haga lo siguiente:
 
 1. Seleccionar **Añadir ruta de contenido**.
 
 1. Añada la ruta requerida en el campo de entrada.
 
 1. Confirmar con **Añadir**.
+
+>[!NOTE]
+>
+>No debe utilizarse para referencias a:
+>
+>* Fragmentos de contenido: utilice una [Referencia a fragmento](#fragment-references)
+>* Imágenes: uso [Imágenes de referencia](#reference-images)
 
 ### Ver referencias principales {#view-parent-references}
 
@@ -470,12 +477,12 @@ Para utilizar esta función, primero debe:
 
 Cuando se haya definido la dirección URL, la variable **Previsualizar** El botón está activo. Puede seleccionar este botón para iniciar la aplicación externa (en una pestaña independiente) para procesar el fragmento de contenido.
 
-## Publicación del fragmento {#publish-content-fragment}
+## Publish su fragmento {#publish-content-fragment}
 
 Puede **Publish** el fragmento a su:
 
 * Previsualizar instancia
-* Instancia de publicación
+* Instancia de Publish
 
 Puede publicar el fragmento desde el editor o desde la consola. Consulte [Publicación y previsualización de un fragmento](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) para obtener información detallada.
 
@@ -484,7 +491,7 @@ Puede publicar el fragmento desde el editor o desde la consola. Consulte [Public
 También puede **Cancelar publicación** Seleccione el fragmento de su:
 
 * Previsualizar instancia
-* Instancia de publicación
+* Instancia de Publish
 
 Puede cancelar la publicación del fragmento desde el editor o desde la consola. Consulte [Cancelar la publicación de un fragmento](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) para obtener información detallada.
 
