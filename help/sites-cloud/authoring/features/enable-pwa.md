@@ -28,9 +28,9 @@ A través de una configuración sencilla, un autor de contenido ahora puede habi
 
 Las [Aplicaciones web progresivas (PWA)](https://developer.mozilla.org/es-ES/docs/Web/Progressive_web_apps) habilitan experiencias de aplicación inmersivas para AEM Sites, lo que les permite almacenarse localmente en el equipo de un usuario y estar accesibles sin conexión. Un usuario podría navegar por un sitio mientras está fuera de casa, incluso si pierde la conexión a Internet. Los PWA permiten una experiencia perfecta incluso si la red se pierde o es inestable.
 
-En lugar de requerir ninguna grabación del sitio, un autor de contenido puede configurar las propiedades del PWA como una pestaña adicional en el [propiedades de página](/help/sites-cloud/authoring/fundamentals/page-properties.md) de un sitio.
+En lugar de requerir la grabación del sitio, un autor de contenido puede configurar las propiedades del PWA como una ficha adicional en las [propiedades de página](/help/sites-cloud/authoring/fundamentals/page-properties.md) de un sitio.
 
-* Cuando se guarda o publica, esta configuración almacena en déclencheur un controlador de eventos que escribe el [archivos de manifiesto](https://developer.mozilla.org/es-ES/docs/Web/Manifest) y una [trabajador de servicios](https://developer.mozilla.org/es-ES/docs/Web/API/Service_Worker_API) que habilitan funciones de PWA en el sitio.
+* Cuando se guarda o publica, esta configuración almacena en déclencheur un controlador de eventos que escribe los [archivos de manifiesto](https://developer.mozilla.org/es-ES/docs/Web/Manifest) y un [service worker](https://developer.mozilla.org/es-ES/docs/Web/API/Service_Worker_API) que habilitan las características de PWA en el sitio.
 * Las asignaciones de Sling también se mantienen para garantizar que el trabajador de servicio se proporciona desde la raíz de la aplicación y habilita el contenido de proxy que permite las funciones sin conexión dentro de la aplicación.
 
 Con la PWA, el usuario tiene una copia local del sitio, lo que ofrece una experiencia similar a la de una aplicación incluso sin conexión a Internet.
@@ -44,7 +44,7 @@ Con la PWA, el usuario tiene una copia local del sitio, lo que ofrece una experi
 Para poder utilizar las funciones de PWA del sitio, existen dos requisitos para el entorno del proyecto:
 
 1. [Usar componentes principales](#adjust-components) para aprovechar esta función
-1. [Ajuste de Dispatcher](#adjust-dispatcher) reglas para exponer los archivos necesarios
+1. [Ajuste sus reglas de Dispatcher](#adjust-dispatcher) para exponer los archivos necesarios
 
 Estos son pasos técnicos que el autor debe coordinar con el equipo de desarrollo. Estos pasos solo son necesarios una vez por sitio.
 
@@ -82,7 +82,7 @@ The developer also adds the following link to the `customfooterlibs.html` file o
 
 ### Ajuste de Dispatcher {#adjust-dispatcher}
 
-La función de PWA genera y utiliza archivos `/content/<sitename>/manifest.webmanifest`. De forma predeterminada, [el Dispatcher](/help/implementing/dispatcher/overview.md) no expone dichos archivos. Para exponerlos, el desarrollador debe añadir la siguiente configuración al proyecto del sitio.
+La función de PWA genera y utiliza archivos `/content/<sitename>/manifest.webmanifest`. De manera predeterminada, [Dispatcher](/help/implementing/dispatcher/overview.md) no expone esos archivos. Para exponerlos, el desarrollador debe añadir la siguiente configuración al proyecto del sitio.
 
 ```text
 File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filters.any >
@@ -99,11 +99,11 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 ## Activación de la PWA para el sitio {#enabling-pwa-for-your-site}
 
-Con [los requisitos previos](#prerequisites) Cuando se cumple, es fácil para un autor de contenido habilitar las funciones de PWA en un sitio. A continuación se muestra una descripción básica de cómo hacerlo. Las opciones individuales se detallan en la sección [Opciones detalladas.](#detailed-options)
+Con [cumplidos los requisitos previos](#prerequisites), es fácil para un autor de contenido habilitar las características de PWA en un sitio. A continuación se muestra una descripción básica de cómo hacerlo. Las opciones individuales se detallan en la sección [Opciones detalladas.](#detailed-options)
 
 1. Inicie sesión en AEM.
-1. En el menú principal, seleccione **Navegación** > **Sites**.
-1. Seleccione el proyecto de sitios y seleccione [**Propiedades**](/help/sites-cloud/authoring/fundamentals/page-properties.md) o utilice la tecla de acceso directo `p`.
+1. En el menú principal, seleccione **Navegación** > **Sitios**.
+1. Seleccione el proyecto del sitio y seleccione [**Propiedades**](/help/sites-cloud/authoring/fundamentals/page-properties.md) o use la tecla de acceso directo `p`.
 1. Seleccione la pestaña **Aplicación web progresiva** y configure las propiedades aplicables. Como mínimo, desea:
    1. Seleccionar la opción **Habilitar PWA**.
    1. Definir la **URL de inicio**.
@@ -131,7 +131,7 @@ El sitio está configurado y puede [instalarlo como una aplicación local.](#usi
 
 Ahora que ha [configurado el sitio para admitir el PWA,](#enabling-pwa-for-your-site) puede experimentarlo usted mismo.
 
-1. Acceder al sitio en un [explorador admitido](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary).
+1. Acceda al sitio en un [navegador compatible](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary).
 1. Verá un nuevo icono en la barra de direcciones del explorador que indica que el sitio se puede instalar como aplicación local.
    * Según el explorador, el icono puede variar y el explorador también puede mostrar una notificación (como un titular o un cuadro de diálogo) que indique que es posible realizar la instalación como aplicación local.
 1. Instale la aplicación.
@@ -146,21 +146,21 @@ La siguiente sección proporciona más detalles sobre las opciones disponibles a
 
 Esta configuración permite que el sitio se comporte como una aplicación nativa permitiendo instalarlo en la pantalla de inicio del visitante y haciendo que esté disponible sin conexión.
 
-* **Habilitar PWA** : Esta es la opción principal para habilitar al PWA en el sitio.
-* **URL de inicio** - Este es el [URL de inicio preferida](https://developer.mozilla.org/en-US/docs/Web/Manifest/start_url) que la aplicación se abre cuando el usuario carga la aplicación instalada localmente.
+* **Habilitar PWA**: esta es la opción principal para habilitar el PWA en el sitio.
+* **URL de inicio**: esta es la [URL de inicio preferida](https://developer.mozilla.org/en-US/docs/Web/Manifest/start_url) que la aplicación abre cuando el usuario carga la aplicación instalada localmente.
    * Puede ser cualquier ruta en la estructura de contenido.
    * No tiene que ser la raíz, y a menudo se trata de una página de bienvenida dedicada para la aplicación.
    * Si esta URL es relativa, la URL de manifiesto se utiliza como URL base para resolverla.
    * Cuando se deja vacía, la función utiliza la dirección de la página web desde la que se instaló la aplicación.
    * Se recomienda configurar un valor.
 * **Modo de visualización**: una aplicación habilitada para PWA sigue siendo un sitio de AEM entregado a través de un explorador. [Estas opciones de visualización](https://developer.mozilla.org/en-US/docs/Web/Manifest/display) definen cómo se debe ocultar o presentar el explorador al usuario desde el dispositivo local.
-   * **Independiente** : El explorador está oculto para el usuario y parece una aplicación nativa. Este es el valor predeterminado.
+   * **Independiente**: el explorador está oculto para el usuario y parece una aplicación nativa. Este es el valor predeterminado.
       * Con esta opción, la navegación de la aplicación debe ser posible por completo a través del contenido mediante vínculos y componentes en las páginas del sitio, sin utilizar los controles de navegación del explorador.
    * **Explorador**: el explorador aparece como lo haría de normal al visitar el sitio.
    * **IU mínima**: el explorador está oculto, como una aplicación nativa, pero se exponen los controles básicos de navegación.
-   * **Pantalla completa** : El explorador está oculto, como una aplicación nativa, pero se procesa en modo de pantalla completa.
+   * **Pantalla completa**: el explorador está oculto, como una aplicación nativa, pero se representa en modo de pantalla completa.
       * Con esta opción, la navegación de la aplicación debe ser posible por completo a través del contenido mediante vínculos y componentes en las páginas del sitio, sin utilizar los controles de navegación del explorador.
-* **Orientación de pantalla** - Como aplicación local, el PWA debe saber cómo manejar [orientaciones del dispositivo](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation).
+* **Orientación de la pantalla**: como aplicación local, el PWA debe saber cómo manejar las [orientaciones del dispositivo](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation).
    * **Cualquiera**: la aplicación se ajusta a la orientación del dispositivo del usuario. Este es el valor predeterminado.
    * **Vertical**: esto fuerza a la aplicación a abrirse en formato vertical independientemente de la orientación del dispositivo del usuario.
    * **Horizontal**: esto fuerza a la aplicación a abrirse en formato horizontal independientemente de la orientación del dispositivo del usuario.
@@ -182,13 +182,13 @@ Esta configuración hace que partes de este sitio estén disponibles sin conexi�
 * **Estrategia de almacenamiento en caché y frecuencia de actualización del contenido**: esta opción define el modelo de almacenamiento en caché para la PWA.
    * **Moderadamente**: [esta configuración](https://web.dev/stale-while-revalidate/) es el caso de la mayoría de los sitios y el valor predeterminado.
       * Con esta configuración, el contenido que se ve por primera vez se carga desde la caché y mientras se consume, el resto del contenido de la caché se vuelve a validar.
-   * **Frecuentemente** - Este es el caso de los sitios que necesitan actualizaciones para ser rápidos, como las casas de subastas.
+   * **Frecuentemente**: este es el caso de los sitios que necesitan actualizaciones para ser rápidos, como las casas de subastas.
       * Con esta configuración, la aplicación busca primero el contenido más reciente a través de la red y, si no está disponible, vuelve a la caché local.
    * **Raramente**: este es el caso de los sitios que son casi estáticos, como las páginas de referencia.
       * Con esta configuración, la aplicación busca primero el contenido en la caché y, si no está disponible, vuelve a la red para recuperarlo.
 * **Almacenamiento previo de los archivos en la caché**: estos archivos alojados en AEM se guardan en la caché del explorador local cuando el trabajador de servicio se instale y antes de que se utilice. Esto garantiza que la aplicación web funcione completamente sin conexión.
 * **Inclusiones de rutas**: las solicitudes de red para las rutas definidas se interceptan y el contenido almacenado en caché se devuelve de acuerdo con la **Estrategia de almacenamiento en caché y frecuencia de actualización del contenido** configuradas.
-* **Exclusiones de caché** - Estos archivos nunca se almacenan en caché, independientemente de la configuración de **Almacenamiento en caché previo de archivos** y **Inclusiones de ruta**.
+* **Exclusiones de caché**: estos archivos nunca se almacenan en caché, independientemente de la configuración de **Almacenamiento en caché previo de archivos** y **Inclusiones de rutas**.
 
 >[!TIP]
 >
@@ -217,7 +217,7 @@ Las bibliotecas de cliente se entregan con la adición de un selector de caché 
 
 El componente de imagen de los componentes principales de AEM determina en el front-end la mejor representación que se debe recuperar. Este mecanismo también incluye una marca de tiempo que corresponde a la hora de la última modificación de ese recurso. Este mecanismo complica la configuración de la precaché de la PWA.
 
-Al configurar la precaché, el usuario debe enumerar todas las variaciones de ruta que se pueden recuperar. Estas variaciones están compuestas de parámetros como calidad y anchura. Se recomienda reducir el número de estas variaciones a un máximo de tres: pequeñas, medianas y grandes. Puede hacerlo mediante el cuadro de diálogo de política de contenido del [Componente de imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=es).
+Al configurar la precaché, el usuario debe enumerar todas las variaciones de ruta que se pueden recuperar. Estas variaciones están compuestas de parámetros como calidad y anchura. Se recomienda reducir el número de estas variaciones a un máximo de tres: pequeñas, medianas y grandes. Puede hacerlo a través del cuadro de diálogo de la directiva de contenido de [Componente de imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=es).
 
 Si no se configura con cuidado, la memoria y el consumo de red pueden afectar gravemente al rendimiento de su PWA. Además, si tiene intención de prealmacenar en caché, por ejemplo, 50 imágenes y tiene tres anchos por imagen, el usuario que mantenga el sitio deberá mantener una lista de hasta 150 entradas en la sección PWA de precaché de las propiedades de página.
 

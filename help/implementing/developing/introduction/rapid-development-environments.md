@@ -17,15 +17,15 @@ Para implementar cambios, los entornos de desarrollo de nube actuales requieren 
 
 Los RDE permiten a los desarrolladores implementar y revisar cambios rápidamente, minimizando la cantidad de tiempo necesario para probar características que han demostrado funcionar en un entorno de desarrollo local.
 
-Una vez que los cambios se han probado en un RDE, se pueden implementar en un entorno de desarrollo de nube normal a través de la canalización de Cloud Manager.
+Una vez que los cambios se han probado en un RDE, pueden implementarse en un entorno de desarrollo de nube normal a través de la canalización de Cloud Manager.
 
 >[!NOTE]
-> Póngase en contacto con los desarrolladores de RDE en nuestro [Canal de discordia](https://discord.com/channels/1131492224371277874/1245304281184079872). Siéntase libre de hacer cualquier pregunta o dar comentarios con respecto a los temas de RDE.
+> Póngase en contacto con los desarrolladores de RDE en nuestro [canal de Discord](https://discord.com/channels/1131492224371277874/1245304281184079872). Siéntase libre de hacer cualquier pregunta o dar comentarios con respecto a los temas de RDE.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-Puede ver más vídeos que muestran lo siguiente [cómo configurarlo.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html), [cómo se usa](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html), y el [ciclo de vida de desarrollo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html) usando RDE.
+Puede ver vídeos adicionales que muestran [cómo configurarlo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html), [cómo utilizarlo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html) y el [ciclo de vida de desarrollo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html) mediante RDE.
 
 ## Introducción {#introduction}
 
@@ -33,7 +33,7 @@ Los RDE se pueden utilizar para configuraciones de código, contenido y Apache o
 
 Cada programa está aprovisionado con un RDE. Si hay cuentas de zona protegida, hibernan después de unas horas de no uso.
 
-Una vez creados, los RDE se establecen en la versión de Adobe Experience Manager AEM () más reciente disponible. AEM Un restablecimiento de RDE, que se puede realizar mediante Cloud Manager, ciclos el RDE y lo establece en la versión de la versión de la aplicación más reciente que se encuentre disponible en el mercado de trabajo de la versión de la aplicación de datos de.
+Una vez creados, los RDE se establecen en la versión de Adobe Experience Manager AEM () más reciente disponible. Un restablecimiento de RDE, que se puede realizar con Cloud Manager AEM, ciclos el RDE y lo establece en la última versión disponible de la versión de la aplicación de la versión de la aplicación de la versión de la aplicación de la versión de la aplicación de datos (RDE).
 
 Normalmente, un solo desarrollador utilizaría un RDE en un momento determinado para probar y depurar una función específica. Cuando se completa la sesión de desarrollo, el RDE se puede restablecer a un estado predeterminado para el siguiente uso.
 
@@ -47,7 +47,7 @@ Siga estos pasos para poder usar Cloud Manager para crear un RDE para su program
 
 1. Haga clic en el programa al que desee agregar un RDE para mostrar sus detalles.
 
-   * Los RDE se pueden agregar a ambos [programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) y [programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
+   * Los RDE se pueden agregar a [programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) y a [programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
 
 1. En la página **Información general del programa**, haga clic en **Agregar entorno** en la tarjeta **Entornos** para agregar uno.
 
@@ -61,32 +61,32 @@ Siga estos pasos para poder usar Cloud Manager para crear un RDE para su program
 
 1. En el cuadro de diálogo **Agregar entorno** que aparece:
 
-   * Seleccionar **Desarrollo rápido** en el **Seleccionar tipo de entorno** encabezado.
+   * Seleccione **Desarrollo rápido** en el encabezado **Seleccionar tipo de entorno**.
       * El número de entornos disponibles/utilizados se muestra entre paréntesis detrás del tipo de entorno.
-   * Proporcione un **Nombre** para el medio ambiente.
-   * Proporcione un **Descripción** para el medio ambiente.
+   * Proporcione un **Nombre** para el entorno.
+   * Proporcione una **descripción** opcional para el entorno.
    * Seleccione una **Región de nube**.
 
    ![Cuadro de diálogo Agregar entorno](/help/implementing/cloud-manager/assets/add-environment-wizard.png)
 
 1. Haga clic en **Guardar** para agregar el entorno especificado.
 
-El **Información general** ahora muestra su nuevo entorno en la **Entornos** Tarjeta de.
+La pantalla **Información general** ahora muestra su nuevo entorno en la tarjeta **Entornos**.
 
-AEM Tras la creación, los RDE se establecen en la versión de la versión de la aplicación disponible más reciente AEM Un restablecimiento de RDE, que también se puede realizar mediante Cloud Manager, ciclo el RDE y lo establece en la versión de la versión de la aplicación más reciente que se encuentre disponible en el mercado de trabajo de la comunidad de datos de.
+AEM Tras la creación, los RDE se establecen en la versión de la versión de la aplicación disponible más reciente Un restablecimiento de RDE, que también se puede realizar con Cloud Manager AEM, ejecuta un ciclo de RDE y lo establece en la última versión disponible de la versión de la aplicación de la versión de la versión de la versión de la versión de la versión de la aplicación de datos (RDE).
 
-Para obtener más información sobre el uso de Cloud Manager para crear entornos, administrar quién tiene acceso a ellos y asignar dominios personalizados, consulte [la documentación de Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+Para obtener más información sobre cómo usar Cloud Manager para crear entornos, administrar quién tiene acceso a ellos y asignar dominios personalizados, consulte [la documentación de Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 ## Instalación de las herramientas de línea de comandos de RDE {#installing-the-rde-command-line-tools}
 
-Después de agregar un RDE para su programa mediante Cloud Manager, puede interactuar con él configurando las herramientas de línea de comandos como se describe en los siguientes pasos:
+Después de agregar un RDE para el programa mediante Cloud Manager, puede interactuar con él configurando las herramientas de línea de comandos como se describe en los pasos siguientes:
 
 >[!IMPORTANT]
 >
->Asegúrese de que tiene la versión 20 de [Nodo y NPM instalados](https://nodejs.org/es/download/) para que la CLI de Adobe I/O y los complementos relacionados funcionen correctamente.
+>Asegúrese de tener instalada la versión 20 de [Node y NPM](https://nodejs.org/es/download/) para CLI de Adobe I/O y los complementos relacionados para que funcionen correctamente.
 
 
-1. Instale las herramientas CLI de Adobe I/O según lo siguiente [procedimiento](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+1. Instale las herramientas CLI de Adobe I/O según este [procedimiento](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 1. Instale el complemento RDE de herramientas de CLI de Adobe I/O AEM:
 
    ```
@@ -101,7 +101,7 @@ Después de agregar un RDE para su programa mediante Cloud Manager, puede intera
    aio aem:rde:setup
    ```
 
-   El paso de configuración se puede omitir si se pretende utilizar un entorno con scripts, en cuyo caso se pueden incluir los valores de organización, programa y entorno en cada comando. [Consulte los comandos rojos a continuación para obtener más información](#rde-cli-commands).
+   El paso de configuración se puede omitir si se pretende utilizar un entorno con scripts, en cuyo caso se pueden incluir los valores de organización, programa y entorno en cada comando. [Vea los comandos rojos que aparecen a continuación para obtener más información](#rde-cli-commands).
 
 ### La configuración interactiva {#installing-the-rde-command-line-tools-interactive}
 
@@ -112,12 +112,12 @@ Setup the CLI configuration necessary to use the RDE commands.
 ? Do you want to store the information you enter in this setup procedure locally? (y/N)
 ```
 
-Elegir `no` hasta
+Elija `no` para
 * almacene la organización, el programa y el entorno globalmente en su configuración de aio.
 * trabajar sólo con un único RDE.
 
-Elegir `yes` hasta
-* almacene la organización, el programa y el entorno localmente en el directorio actual, en un `.aio` archivo. Esto resulta práctico si desea enviar el archivo al control de versiones para que otros usuarios que clonen el repositorio de Git puedan utilizarlo.
+Elija `yes` para
+* almacene la organización, el programa y el entorno localmente en el directorio actual, en un archivo de `.aio`. Esto resulta práctico si desea enviar el archivo al control de versiones para que otros usuarios que clonen el repositorio de Git puedan utilizarlo.
 * trabaje con muchos RDE, de modo que cambiar a otro directorio use esa configuración en su lugar.
 * utilice la configuración de en un contexto de programación como un script, que puede hacer referencia a ella.
 
@@ -153,7 +153,7 @@ En los entornos en los que ningún usuario puede ejecutar de forma interactiva e
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * Se puede buscar su propio ID de organización con el método [documentado aquí.](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)
+   * Su propio identificador de organización se puede buscar mediante el método [documentado aquí.](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)
 
 1. A continuación, configure su ID de programa:
 
@@ -167,7 +167,7 @@ En los entornos en los que ningún usuario puede ejecutar de forma interactiva e
 
    `aio login`
 
-   Estos pasos requieren que sea miembro de Cloud Manager **Desarrollador - Cloud Service** Perfil del producto. Consulte [esta página](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) para obtener más información.
+   Estos pasos requieren que sea miembro del perfil de producto **Desarrollador - Cloud Service** de Cloud Manager. Consulte [esta página](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) para obtener más información.
 
 Para obtener más información y demostración, vea el tutorial en vídeo [cómo configurar un RDE (06:24)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html).
 </details>
@@ -176,24 +176,24 @@ Para obtener más información y demostración, vea el tutorial en vídeo [cómo
 
 Adobe recomienda el siguiente flujo de trabajo para desarrollar una nueva función:
 
-* AEM Cuando se alcance un hito intermedio y se valide localmente correctamente con el SDK as a Cloud Service de la, confirme el código a una rama de características de Git. La rama aún no debe formar parte de la línea principal, aunque comprometerse con Git es opcional. Lo que constituye un &quot;hito intermedio&quot; varía en función de los hábitos del equipo. Algunos ejemplos son unas pocas líneas de código nuevas, medio día de trabajo o completar una subfunción.
+* Cuando se alcance un hito intermedio y se valide correctamente localmente con el SDK de AEM as a Cloud Service, confirme el código a una rama de características de Git. La rama aún no debe formar parte de la línea principal, aunque comprometerse con Git es opcional. Lo que constituye un &quot;hito intermedio&quot; varía en función de los hábitos del equipo. Algunos ejemplos son unas pocas líneas de código nuevas, medio día de trabajo o completar una subfunción.
 
-* Restablezca el RDE si lo ha utilizado otra función y desea [restablecer a un estado predeterminado](#reset-rde). <!-- Alexandru: hiding for now, do not delete This can be done by way of [Cloud Manager](#reset-the-rde-cloud-manager) or by way of the [command line](#reset-the-rde-command-line). -->El restablecimiento tarda unos minutos y se elimina todo el contenido y el código existentes. Puede utilizar el comando Estado de RDE para confirmar que el RDE está listo. AEM El RDE vuelve con la versión de lanzamiento más reciente de la versión de la.
+* Restablezca el RDE si lo ha utilizado otra característica y desea [restablecerlo a un estado predeterminado](#reset-rde). <!-- Alexandru: hiding for now, do not delete This can be done by way of [Cloud Manager](#reset-the-rde-cloud-manager) or by way of the [command line](#reset-the-rde-command-line). -->El restablecimiento tarda unos minutos y se elimina todo el contenido y código existentes. Puede utilizar el comando Estado de RDE para confirmar que el RDE está listo. AEM El RDE vuelve con la versión de lanzamiento más reciente de la versión de la.
 
   >[!IMPORTANT]
   >
   > AEM AEM Si los entornos de ensayo y producción no reciben actualizaciones automáticas de versiones de la versión de la versión y están detrás de la versión de la versión de la versión más reciente de la versión, es posible que el código que se ejecuta en el RDE no coincida con el modo en que funciona en el ensayo y la producción. En ese caso, es especialmente importante realizar pruebas exhaustivas del código en el ensayo antes de implementarlo en la producción.
 
 
-* Mediante la interfaz de línea de comandos de RDE, sincronice el código local con RDE. Las opciones incluyen instalar un paquete de contenido, un paquete específico, un archivo de configuración OSGI, un archivo de contenido y un archivo zip de una configuración de Apache/Dispatcher. También es posible hacer referencia a un paquete de contenido remoto. Consulte [Herramientas de línea de comandos de RDE](/help/implementing/developing/introduction/rapid-development-environments.md#rde-cli-commands) para obtener más información. Puede utilizar el comando status para validar que la implementación se realizó correctamente. De forma opcional, utilice el Administrador de paquetes para instalar paquetes de contenido.
+* Mediante la interfaz de línea de comandos de RDE, sincronice el código local con RDE. Las opciones incluyen instalar un paquete de contenido, un paquete específico, un archivo de configuración OSGI, un archivo de contenido y un archivo zip de una configuración de Apache/Dispatcher. También es posible hacer referencia a un paquete de contenido remoto. Consulte [Herramientas de línea de comandos RDE](/help/implementing/developing/introduction/rapid-development-environments.md#rde-cli-commands) para obtener más información. Puede utilizar el comando status para validar que la implementación se realizó correctamente. De forma opcional, utilice el Administrador de paquetes para instalar paquetes de contenido.
 
-* Pruebe el código en el RDE. Las direcciones URL de autor y publicación están disponibles en Cloud Manager.
+* Pruebe el código en el RDE. Las direcciones URL de autor y Publish están disponibles en Cloud Manager.
 
 * Si el código no se comporta como se espera, utilice técnicas de depuración estándar para comprender el problema y realizar los cambios correspondientes. Sin confirmar las modificaciones de código en Git (ya que no se han validado), utilice la CLI local para sincronizar el código con RDE. Siga iterando hasta que se resuelva el problema.
 
 * Una vez que el código se comporte según lo esperado, confírmelo en la rama de características de Git.
 
-* El código sincronizado con RDE no utiliza una canalización de Cloud Manager, por lo que ahora debe utilizar una canalización que no sea de producción de Cloud Manager para implementar la rama de funciones de Git en el entorno de desarrollo de Cloud. Esto valida que el código pasa las puertas de calidad de Cloud Manager y le permite confiar en que el código se implemente correctamente más adelante mediante la canalización de producción de Cloud Manager.
+* El código sincronizado con RDE no utiliza una canalización de Cloud Manager, por lo que ahora debe utilizar una canalización que no sea de producción de Cloud Manager para implementar la rama de características de Git en el entorno de desarrollo de la nube. Esto valida que el código pasa las puertas de calidad de Cloud Manager y le permite estar seguro de que el código se implementará correctamente más adelante mediante la canalización de producción de Cloud Manager.
 
 * Repita los pasos anteriores para cada hito intermedio hasta que todo el código de la función esté listo y se ejecute correctamente en el entorno de RDE y de desarrollo en la nube.
 
@@ -240,7 +240,7 @@ Sin embargo, con una coordinación cuidadosa, es posible que más de un desarrol
 
   `aio aem rde <command> --organizationId=<value> --programId=<value> --environmentId=<value>`
 
-  Esto aún requiere un ```aio login``` que se va a realizar.
+  Esto todavía requiere que se realice un ```aio login```.
 
 ### Implementación en RDE {#deploying-to-rde}
 
@@ -267,13 +267,13 @@ Opcionalmente, puede hacer referencia a un repositorio remoto:
 
 De forma predeterminada, los artefactos se implementan en los niveles de creación y publicación, pero el indicador &quot;-s&quot; se puede utilizar para dirigirse a un nivel específico.
 
-AEM Se puede implementar cualquier paquete de, como paquetes con código, contenido o un [paquete de contenedor](/help/implementing/developing/introduction/aem-project-content-package-structure.md#container-packages) (también llamado paquete &quot;todo&quot;).
+AEM Se puede implementar cualquier paquete de datos, como paquetes con código, contenido o un [paquete de contenedor](/help/implementing/developing/introduction/aem-project-content-package-structure.md#container-packages) (también denominado paquete &quot;todo&quot;).
 
 >[!IMPORTANT]
 >
 >La configuración de Dispatcher para el proyecto WKND no se implementa mediante la instalación del paquete de contenido anterior. Impleméntelo por separado siguiendo los pasos de &quot;Implementación de una configuración de Apache/Dispatcher&quot;.
 
-<u>Implementación de una configuración OSGI</u>
+<u>Implementando una configuración OSGI</u>
 
 `aio aem:rde:install com.adobe.granite.demo.MyServlet.cfg.json`
 
@@ -284,7 +284,7 @@ Donde la respuesta para una implementación correcta es similar a la siguiente:
 #2: deploy completed for osgi-config com.adobe.granite.demo.MyServlet.cfg.json on author,publish - done by 9E0725C05D54FE1A0B49431C@AdobeID at 2022-09-13T11:54:36.390Z
 ```
 
-<u>Implementación de un paquete</u>
+<u>Implementando un paquete</u>
 
 Para implementar un paquete, utilice:
 
@@ -297,7 +297,7 @@ Donde la respuesta para una implementación correcta es similar a la siguiente:
 #3: deploy staged for osgi-bundle org.apache.felix.gogo.jline-1.1.8.jar on author,publish - done by 9E0725C05D53BE1A0B49431C@AdobeID at 2022-09-14T07:54:28.882Z
 ```
 
-<u>Implementación de un archivo de contenido</u>
+<u>Implementando un archivo de contenido</u>
 
 Para implementar un archivo de contenido, utilice:
 
@@ -310,15 +310,15 @@ Donde la respuesta para una implementación correcta es similar a la siguiente:
 #4: deploy completed for content-file world.txt on author,publish - done by 9E0729C05C54FE1A0B49431C@AdobeID at 2022-09-14T07:49:30.644Z
 ```
 
-<u>Implementación de una configuración de Apache/Dispatcher</u>
+<u>Implementando una configuración de Apache/Dispatcher</u>
 
 Toda la estructura de carpetas debe estar en forma de archivo zip para este tipo de configuración.
 
-Desde el `dispatcher` AEM de un proyecto de, puede comprimir la configuración de Dispatcher ejecutando el siguiente comando de maven:
+AEM Desde el módulo `dispatcher` de un proyecto de, puede comprimir la configuración de Dispatcher ejecutando el siguiente comando de Maven:
 
 `mvn clean package`
 
-O utilizando el siguiente comando zip desde el `src` directorio de la `dispatcher` módulo:
+O utilizando el siguiente comando zip del directorio `src` del módulo `dispatcher`:
 
 `zip -y -r dispatcher.zip .`
 
@@ -328,11 +328,11 @@ A continuación, implemente la configuración mediante este comando:
 
 >[!TIP]
 >
->El comando anterior supone que está implementando el [WKND](https://github.com/adobe/aem-guides-wknd) configuraciones de Dispatcher del proyecto. Cerciórese de reemplazar el `X.X.X` con el número de versión del proyecto WKND correspondiente o el número de versión específico del proyecto al implementar la configuración de Dispatcher del proyecto.
+>El comando anterior supone que está implementando las configuraciones de Dispatcher del proyecto [WKND](https://github.com/adobe/aem-guides-wknd). Asegúrese de reemplazar `X.X.X` con el número de versión del proyecto WKND correspondiente o el número de versión específico del proyecto al implementar la configuración de Dispatcher del proyecto.
 
 >[!NOTE]
 >
->RDE admite la configuración de Dispatcher en &quot;modo flexible&quot;, pero no en &quot;modo heredado&quot;. Consulte [Documentación de Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) para obtener información sobre los dos modos. También puede consultar la documentación de [migración al modo flexible](/help/implementing/dispatcher/validation-debug.md#migrating), si aún no lo ha hecho.
+>RDE admite la configuración de Dispatcher en &quot;modo flexible&quot;, pero no la configuración de Dispatcher en &quot;modo heredado&quot;. Consulte [Documentación de Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) para obtener información sobre los dos modos. También puede consultar la documentación sobre [la migración al modo flexible](/help/implementing/dispatcher/validation-debug.md#migrating), si aún no lo ha hecho.
 
 Una implementación correcta genera una respuesta similar a la siguiente:
 
@@ -364,13 +364,13 @@ El ejemplo de código anterior ilustra el comportamiento si un paquete no se res
 
 ### Implementación de código front-end basado en temas de sitio y plantillas de sitio {#deploying-themes-to-rde}
 
-Los RDE admiten código front-end basado en [temas del sitio](/help/sites-cloud/administering/site-creation/site-themes.md) y [plantillas del sitio](/help/sites-cloud/administering/site-creation/site-templates.md). Con RDE, esto se hace utilizando una directiva de línea de comandos para implementar paquetes front-end, en lugar de Cloud Manager [Canalización front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) se utiliza para otros tipos de entornos.
+Los RDE admiten código front-end basado en [temas del sitio](/help/sites-cloud/administering/site-creation/site-themes.md) y [plantillas de sitio](/help/sites-cloud/administering/site-creation/site-templates.md). Con RDE, esto se hace usando una directiva de línea de comandos para implementar paquetes front-end, en lugar de la [canalización front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) de Cloud Manager que se usa para otros tipos de entornos.
 
 Como de costumbre, cree su paquete front-end utilizando npm:
 
 `npm run build`
 
-Debe generar un `dist/` carpeta, de modo que la carpeta del paquete front-end debe contener un `package.json` archivo y `dist` carpeta:
+Debe generar una carpeta `dist/`, de modo que la carpeta del paquete front-end debe contener un archivo `package.json` y una carpeta `dist`:
 
 ```
 ls ./path-to-frontend-pkg-folder/
@@ -389,7 +389,7 @@ Logs:
 > with workspace hash 692021864642a20d6d298044a927d66c0d9cf2adf42d4cca0c800a378ac3f8d3
 ```
 
-También puede comprimir el `package.json` archivo y `dist` e implemente ese archivo zip:
+También puede comprimir el archivo `package.json` y la carpeta `dist` e implementar ese archivo zip:
 
 `zip -r frontend-pkg.zip ./path-to-frontend-pkg-folder/dist ./path-to-frontend-pkg-folder/package.json`
 
@@ -449,9 +449,9 @@ Que devuelve una respuesta en forma de:
 
 ### Eliminando de RDE {#deleting-from-rde}
 
-Puede eliminar configuraciones y paquetes que se hayan implementado previamente en RDE mediante la herramienta CLI. Utilice el `status` para obtener una lista de lo que se puede eliminar, que incluye el comando `bsn` para paquetes y `pid` para que las configuraciones hagan referencia al comando delete.
+Puede eliminar configuraciones y paquetes que se hayan implementado previamente en RDE mediante la herramienta CLI. Utilice el comando `status` para obtener una lista de lo que se puede eliminar, que incluye `bsn` para paquetes y `pid` para configuraciones a las que se hace referencia en el comando eliminar.
 
-Por ejemplo, si `com.adobe.granite.demo.MyServlet.cfg.json` se ha instalado, el `bsn` es solo `com.adobe.granite.demo.MyServlet`, sin el **cfg.json** sufijo.
+Por ejemplo, si se ha instalado `com.adobe.granite.demo.MyServlet.cfg.json`, `bsn` es solo `com.adobe.granite.demo.MyServlet`, sin el sufijo **cfg.json**.
 
 No se admite la eliminación de paquetes de contenido o archivos de contenido. Para eliminarlos, el RDE debe restablecerse, lo que lo devuelve a un estado predeterminado.
 
@@ -463,27 +463,27 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-Para obtener más información y demostración, consulte el tutorial en vídeo [Cómo usar comandos RDE (10:01)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html).
+Para obtener más información y demostración, vea el tutorial en vídeo [cómo usar comandos RDE (10:01)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html).
 
 ## Registros {#rde-logging}
 
-Al igual que otros tipos de entornos, los niveles de registro se pueden establecer modificando las configuraciones de OSGi, aunque, como se ha descrito anteriormente, el modelo de implementación para RDE implica una línea de comandos en lugar de una implementación de Cloud Manager. Compruebe la [documentación de registro](/help/implementing/developing/introduction/logging.md) para obtener más información sobre cómo ver, descargar e interpretar los registros.
+Al igual que otros tipos de entornos, los niveles de registro se pueden establecer modificando las configuraciones de OSGi, aunque, como se ha descrito anteriormente, el modelo de implementación para RDE implica una línea de comandos en lugar de una implementación de Cloud Manager. Consulte la [documentación de registro](/help/implementing/developing/introduction/logging.md) para obtener más información sobre cómo ver, descargar e interpretar los registros.
 
 La CLI de RDE también tiene su propio comando de registro que se puede utilizar para configurar rápidamente qué clases y paquetes deben registrarse y en qué nivel de registro. Estas configuraciones pueden verse como efímeras, ya que no modifican las propiedades OSGI en el control de versiones. Esta función se centra en rastrear registros en tiempo real, en lugar de buscar registros del pasado distante.
 
-El siguiente ejemplo ilustra cómo rastrear el nivel de creación, con un paquete establecido en un nivel de registro de depuración y dos paquetes (separados por espacios) establecidos en un nivel de depuración de información. Salida que incluye un **autorización** El paquete está resaltado.
+El siguiente ejemplo ilustra cómo rastrear el nivel de creación, con un paquete establecido en un nivel de registro de depuración y dos paquetes (separados por espacios) establecidos en un nivel de depuración de información. La salida que incluye un paquete **auth** está resaltada.
 
 `aio aem:rde:logs --target=author --debug=org.apache.sling --info=org.apache.sling.commons.threads.impl org.apache.sling.jcr.resource.internal.helper.jcr -H .auth.`
 
 >[!TIP]
 >
->Si ve el error `RDECLI:UNEXPECTED_API_ERROR` al jugar con los comandos de registros para el servicio de creación, restablezca el entorno e inténtelo de nuevo. Este error se producirá si la operación de restablecimiento más reciente se realizó antes de finales de mayo de 2024.
+>Si ve el error `RDECLI:UNEXPECTED_API_ERROR` al reproducir con los comandos de registro para el servicio de creación, restablezca el entorno e inténtelo de nuevo. Este error se producirá si la operación de restablecimiento más reciente se realizó antes de finales de mayo de 2024.
 >
 ```
 >aio aem:rde:reset
 >```
 
-Consulte `aio aem:rde:logs --help` para obtener el conjunto completo de opciones de línea de comandos.
+Consulte `aio aem:rde:logs --help` para ver el conjunto completo de opciones de línea de comandos.
 
 Las funciones incluyen:
 
@@ -533,11 +533,11 @@ Puede utilizar Cloud Manager para restablecer su RDE siguiendo los pasos siguien
 
      ![Mostrar todas las opciones](/help/implementing/cloud-manager/assets/environment-showall.png)
 
-1. El **Entornos** se abre la ventana y enumera todos los entornos del programa.
+1. Se abre la ventana **Entornos** y se enumeran todos los entornos del programa.
 
    ![La pestaña de entornos](/help/implementing/cloud-manager/assets/environments-tab-populated.png)
 
-1. Haga clic en el botón de los tres puntos del editor de texto enriquecido que desee restablecer y, a continuación, seleccione **Restablecer**.
+1. Haga clic en el botón de los tres puntos del RDE que desee restablecer y, a continuación, seleccione **Restablecer**.
 
    ![Ver detalles del entorno](/help/implementing/cloud-manager/assets/rde-reset.png)
 
@@ -549,19 +549,19 @@ Puede utilizar Cloud Manager para restablecer su RDE siguiendo los pasos siguien
 
    ![Restablecer notificación de banner](/help/implementing/cloud-manager/assets/rde-reset-banner.png)
 
-Una vez iniciado el proceso de restablecimiento de RDE, normalmente se tarda unos minutos en completar y devolver el entorno a su estado predeterminado. El estado del proceso de restablecimiento puede verse en cualquier momento en el **Estado** de la columna **Entornos** o en el **Entornos** ventana.
+Una vez iniciado el proceso de restablecimiento de RDE, normalmente se tarda unos minutos en completar y devolver el entorno a su estado predeterminado. El estado del proceso de restablecimiento se puede ver en cualquier momento en la columna **Status** de la tarjeta **Environments** o en la ventana **Environments**.
 
 ![Estado de restablecimiento de RDE](/help/implementing/cloud-manager/assets/rde-reset-status-environments-card.png)
 
-También puede restablecer el RDE utilizando el botón de puntos suspensivos directamente desde el **Entornos** Tarjeta de en **Información general** página.
+También puede restablecer el RDE usando el botón de puntos suspensivos directamente desde la tarjeta **Entornos** en la página **Información general**.
 
 ![Restablecer RDE desde la tarjeta Entornos](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
-Para obtener más información sobre cómo utilizar Cloud Manager para administrar los entornos, consulte [la documentación de Cloud Manager](/help/implementing/cloud-manager/manage-environments.md).
+Para obtener más información sobre cómo usar Cloud Manager para administrar sus entornos, consulte [la documentación de Cloud Manager](/help/implementing/cloud-manager/manage-environments.md).
 
 ## Comandos compatibles con la salida JSON {#json-commands}
 
-La mayoría de los comandos admiten el global ```--json``` indicador que suprime la salida de la consola y devuelve un json válido para procesar en scripts. A continuación se muestran algunos comandos admitidos, con ejemplos de la salida json.
+La mayoría de los comandos admiten el indicador global ```--json```, que suprime la salida de la consola y devuelve un json válido para procesarlo en los scripts. A continuación se muestran algunos comandos admitidos, con ejemplos de la salida json.
 
 ### Estado {#status}
 
@@ -930,11 +930,11 @@ La configuración OSGI específica de RDE se puede aplicar utilizando sufijos en
 * `config.author.rde`
 * `config.publish.rde`
 
-Consulte la [documentación del modo de ejecución](/help/implementing/deploying/overview.md#runmodes) para obtener información general sobre los modos de ejecución.
+Consulte la [documentación sobre el modo de ejecución](/help/implementing/deploying/overview.md#runmodes) para obtener información general sobre los modos de ejecución.
 
 >[!NOTE]
 >
->La configuración OSGI de RDE es única, ya que hereda los valores de cualquier propiedad OSGI declarada por el paquete `dev` modo de ejecución.
+>La configuración OSGI de RDE es única, ya que hereda los valores de cualquier propiedad OSGI declarada por el modo de ejecución `dev` del paquete.
 
 Los RDE son distintos de otros entornos en los que el contenido se puede instalar en una carpeta install.rde (o install.author.rde o install.publish.rde) en /apps. Esto permite enviar contenido a Git y enviarlo al editor de texto enriquecido (RDE) mediante las herramientas de la línea de comandos.
 
@@ -946,7 +946,7 @@ Cuando se restablece un RDE, se elimina todo el contenido y, por lo tanto, si lo
 
 1. Coloque y confirme el contenido de muestra en Git dentro de una carpeta install.rde en /apps y, a continuación, sincronice el paquete de contenido general con RDE mediante las herramientas de la línea de comandos.
 
-1. Utilice el [herramienta de copia de contenido](/help/implementing/developing/tools/content-copy.md) para copiar un conjunto de contenido definido desde entornos prod, stage o dev, o desde otro RDE.
+1. Use la [herramienta de copia de contenido](/help/implementing/developing/tools/content-copy.md) para copiar un conjunto de contenido definido desde entornos de producción, ensayo o desarrollo, o desde otro RDE.
 
 1. Uso del Administrador de paquetes
 
@@ -955,7 +955,7 @@ Se encuentra limitado a 1 GB al sincronizar paquetes de contenido.
 
 ## ¿En qué se diferencian los RDE de los entornos de desarrollo en la nube? {#how-are-rds-different-from-cloud-development-environments}
 
-Aunque el RDE es similar en muchos aspectos a un entorno de desarrollo en la nube, existen algunas diferencias arquitectónicas menores que permiten una sincronización rápida del código. El mecanismo para obtener código en RDE es diferente: para RDE, se sincroniza código de un entorno de desarrollo local, mientras que para los entornos de desarrollo en la nube, se implementa código mediante Cloud Manager.
+Aunque el RDE es similar en muchos aspectos a un entorno de desarrollo en la nube, existen algunas diferencias arquitectónicas menores que permiten una sincronización rápida del código. El mecanismo para obtener código en RDE es diferente: para RDE, se sincroniza código de un entorno de desarrollo local, mientras que para los entornos de desarrollo en la nube, se implementa código a través de Cloud Manager.
 
 Por estos motivos, se recomienda que, después de validar el código en un entorno RDE, implemente el código en un entorno de desarrollo de nube mediante la canalización que no sea de producción. Finalmente, pruebe el código antes de implementarlo con la canalización de producción.
 
@@ -991,7 +991,7 @@ Los desarrolladores de Forms pueden utilizar el entorno de desarrollo rápido de
 
 ## Tutorial de RDE
 
-AEM Para obtener más información sobre RDE en el as a Cloud Service de la, consulte el tutorial en vídeo que muestra [cómo configurarlo, cómo utilizarlo y el ciclo de vida de desarrollo (1:25)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html).
+Para obtener más información sobre RDE en AEM as a Cloud Service, vea el tutorial en vídeo que muestra [cómo configurarlo, cómo utilizarlo y el ciclo de vida de desarrollo (01:25)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html).
 
 # Resolución de problemas {#troubleshooting}
 
@@ -999,13 +999,13 @@ AEM Para obtener más información sobre RDE en el as a Cloud Service de la, con
 
 ### AEM Cómo obtener la versión más reciente de un RDE existente. {#get-latest-aem-version}
 
-Una vez creados, los RDE se establecen en la versión de Adobe Experience Manager AEM () más reciente disponible. Un [RDE restablecido,](#reset-rde) que se puede realizar con Cloud Manager o la variable `aio aem:rde:reset` AEM , ejecuta un ciclo en RDE y lo establece en la última versión disponible de la versión de la versión de la versión de la versión de la versión de la versión de la versión de la versión de la versión más reciente.
+Una vez creados, los RDE se establecen en la versión de Adobe Experience Manager AEM () más reciente disponible. Un [restablecimiento de RDE,](#reset-rde) que se puede realizar mediante Cloud Manager AEM o el comando `aio aem:rde:reset`, ciclos el RDE y lo establece en la última versión de la versión de la aplicación disponible en el mercado de trabajo de la versión más reciente de la versión de la aplicación de la aplicación de la aplicación de la aplicación de datos ().
 
 ## solución de problemas del complemento aio RDE {#aio-rde-plugin-troubleshooting}
 
 ### Errores relacionados con permisos insuficientes {#insufficient-permissions}
 
-Para utilizar el complemento RDE, es necesario que sea miembro de Cloud Manager **Desarrollador - Cloud Service** Perfil del producto. Consulte [esta página](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) para obtener más información.
+Para usar el complemento RDE, se requiere que sea miembro del perfil de producto de **Desarrollador - Cloud Service** de Cloud Manager. Consulte [esta página](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) para obtener más información.
 
 También puede confirmar que tiene esta función de desarrollador si puede iniciar sesión en la consola de desarrollador ejecutando este comando:
 
@@ -1013,7 +1013,7 @@ También puede confirmar que tiene esta función de desarrollador si puede inici
 
 >[!TIP]
 >
->Si ve el `Warning: cloudmanager:* is not a aio command.` error, debe instalar el [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) ejecutando el siguiente comando:
+>Si ve el error `Warning: cloudmanager:* is not a aio command.`, debe instalar [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) ejecutando el siguiente comando:
 >
 >```
 >aio plugins:install @adobe/aio-cli-plugin-cloudmanager

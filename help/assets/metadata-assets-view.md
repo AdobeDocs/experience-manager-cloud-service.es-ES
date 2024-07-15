@@ -1,6 +1,6 @@
 ---
-title: ¿Cómo se administran los metadatos en la vista de recursos?
-description: Obtenga información sobre cómo administrar metadatos en la vista de recursos. Una mejor administración de los metadatos hace que un recurso sea más accesible, fácil de administrar y completo.
+title: ¿Cómo se administran los metadatos en la vista Assets?
+description: Obtenga información sobre cómo administrar metadatos en la vista de Assets. Una mejor administración de los metadatos hace que un recurso sea más accesible, fácil de administrar y completo.
 role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
@@ -69,18 +69,18 @@ Las etiquetas también se pueden anidar en una jerarquía para admitir relacione
 >title="Formularios de metadatos"
 >abstract="[!DNL Experience Manager Assets] proporciona muchos campos de metadatos estándar de forma predeterminada. Las organizaciones tienen requisitos de metadatos adicionales, y necesitan más campos para agregar los metadatos específicos de su empresa. Los formularios de metadatos permiten a las empresas añadir campos de metadatos personalizados a la página Detalles de un recurso. Los metadatos específicos de la empresa mejoran el control y el descubrimiento de sus recursos."
 
-La vista de recursos proporciona muchos campos de metadatos estándar de forma predeterminada. Las organizaciones tienen requisitos de metadatos adicionales y necesitan más campos para agregar los específicos de su empresa. Los formularios de metadatos permiten a las empresas añadir campos de metadatos personalizados a la página [!UICONTROL Detalles] de un recurso. Los metadatos específicos de la empresa mejoran el control y el descubrimiento de sus recursos. Puede crear formularios desde cero o reutilizar uno existente.
+La vista de Assets proporciona muchos campos de metadatos estándar de forma predeterminada. Las organizaciones tienen requisitos de metadatos adicionales y necesitan más campos para agregar los específicos de su empresa. Los formularios de metadatos permiten a las empresas añadir campos de metadatos personalizados a la página [!UICONTROL Detalles] de un recurso. Los metadatos específicos de la empresa mejoran el control y el descubrimiento de sus recursos. Puede crear formularios desde cero o reutilizar uno existente.
 
-Puede configurar formularios de metadatos para diferentes tipos de recursos (diferentes tipos de MIME). Utilice el mismo nombre de formulario que el tipo MIME del archivo. La vista Recursos coincide automáticamente con el tipo MIME de los recursos cargados al nombre del formulario y actualiza los metadatos de los recursos cargados en función de los campos del formulario.
+Puede configurar formularios de metadatos para diferentes tipos de recursos (diferentes tipos de MIME). Utilice el mismo nombre de formulario que el tipo MIME del archivo. La vista de Assets hace coincidir automáticamente el tipo MIME de los recursos cargados con el nombre del formulario y actualiza los metadatos de los recursos cargados en función de los campos del formulario.
 <!--
 For example, if a metadata form by the name `PDF` or `pdf` exists, then the uploaded PDF documents contain metadata fields as defined in the form.
 -->
-La vista Recursos utiliza la siguiente secuencia para buscar nombres de formularios de metadatos existentes y aplicar los campos de metadatos a los recursos cargados de un tipo concreto:
+La vista de Assets utiliza la siguiente secuencia para buscar nombres de formularios de metadatos existentes y aplicar los campos de metadatos a los recursos cargados de un tipo concreto:
 
 Subtipo MIME > Tipo MIME > `default` formulario > Formulario predeterminado
 
-Por ejemplo, si existe un formulario de metadatos con el nombre `PDF` o `pdf`, los documentos PDF cargados contienen campos de metadatos tal como se definen en el formulario. Si un formulario de metadatos con el nombre `PDF` o `pdf` no existe, la vista de recursos coincidirá si hay un formulario de metadatos con el nombre `application`. Si hay un formulario de metadatos con el nombre `application`, los documentos PDF cargados contienen campos de metadatos tal como se definen en el formulario. Si la vista Recursos sigue sin encontrar un formulario de metadatos coincidente, busca el `default` metadata form para aplicar campos de metadatos definidos en el formulario a los documentos de PDF cargados. Si ninguno de estos pasos funciona, la vista Recursos aplica campos de metadatos definidos en el formulario predeterminado a todos los documentos de PDF cargados.
-Sin embargo, si desea asignar un formulario de metadatos a una carpeta [consulte](#assign-metadata-form-folder).
+Por ejemplo, si existe un formulario de metadatos con el nombre `PDF` o `pdf`, los documentos PDF cargados contienen campos de metadatos tal como se definen en el formulario. Si no existe un formulario de metadatos con el nombre `PDF` o `pdf`, la vista Assets coincidirá si hay un formulario de metadatos con el nombre `application`. Si hay un formulario de metadatos con el nombre `application`, los documentos PDF cargados contienen campos de metadatos tal como se definen en el formulario. Si la vista de Assets sigue sin encontrar un formulario de metadatos coincidente, busca el formulario de metadatos `default` para aplicar campos de metadatos definidos en el formulario a los documentos de PDF cargados. Si ninguno de estos pasos funciona, la vista de Assets aplica campos de metadatos definidos en el formulario predeterminado a todos los documentos de PDF cargados.
+Aunque si desea asignar un formulario de metadatos a una carpeta [vea](#assign-metadata-form-folder).
 
 >[!IMPORTANT]
 >
@@ -138,7 +138,7 @@ A continuación se ofrece una descripción general de cada tipo de propiedad y d
 
 ### Asignar un formulario de metadatos a una carpeta {#assign-metadata-form-folder}
 
-También puede asignar un formulario de metadatos a una carpeta dentro de la implementación de la vista Recursos. El formulario de metadatos asignado a una carpeta según el tipo MIME se sobrescribe cuando se aplica un formulario de metadatos a una carpeta manualmente. Todos los recursos de la carpeta, incluidos los de las subcarpetas, muestran las propiedades definidas en el formulario de metadatos.
+También puede asignar un formulario de metadatos a una carpeta dentro de su implementación de vista de Assets. El formulario de metadatos asignado a una carpeta según el tipo MIME se sobrescribe cuando se aplica un formulario de metadatos a una carpeta manualmente. Todos los recursos de la carpeta, incluidos los de las subcarpetas, muestran las propiedades definidas en el formulario de metadatos.
 
 Para asignar un formulario de metadatos a una carpeta:
 
@@ -152,7 +152,7 @@ Para asignar un formulario de metadatos a una carpeta:
 
    También puede navegar a la página de detalles de la carpeta y seleccionar un formulario de metadatos de las propiedades de carpeta disponibles en el panel derecho para asignar el formulario de metadatos a la carpeta.
 
-   ![Metadatos de formulario de propiedades de carpeta](assets/metadata-from-folder-props.png)
+   ![Formulario de metadatos de propiedades de carpeta](assets/metadata-from-folder-props.png)
 
 ### Quitar formularios de metadatos de las carpetas {#remove-metadata-form-folder}
 
@@ -170,7 +170,7 @@ También puede ir hasta la página de detalles de la carpeta y seleccionar **[!U
 
 ## Siguientes pasos {#next-steps}
 
-* [Vea un vídeo para administrar formularios de metadatos en la vista Recursos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=es)
+* [Vea un vídeo para administrar formularios de metadatos en la vista de Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=es)
 
 * Realice comentarios del producto mediante la opción [!UICONTROL Comentarios] disponible en la interfaz de usuario de la vista Recursos
 

@@ -73,7 +73,7 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
 
    ![Sistema de estilos para el autor](/help/sites-cloud/authoring/assets/style-system-author1.png)
 
-1. Seleccione el **Estilos** en la barra de herramientas del **Lista** para abrir el menú Estilo y cambiar el aspecto del componente.
+1. Seleccione el botón **Estilos** de la barra de herramientas del componente **Lista** para abrir el menú de estilo y cambiar el aspecto del componente.
 
    ![Seleccionar estilos](/help/sites-cloud/authoring/assets/style-system-author2.png)
 
@@ -83,7 +83,7 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
 
 ### Como autor de plantillas    {#as-a-template-author}
 
-1. Mientras edita la página de inicio maestra en inglés de WKND en `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edite la plantilla de la página mediante **Información de página > Editar plantilla**.
+1. Mientras edita la página de inicio maestra en inglés de WKND en `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edite la plantilla de la página a través de **Información de la página > Editar plantilla**.
 
    ![Editar plantilla](/help/sites-cloud/authoring/assets/style-system-edit-template.png)
 

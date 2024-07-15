@@ -43,7 +43,8 @@ AEM Se puede escribir un código de registro personalizado que contenga, como m�
 
 **Requisito previo:**
 
-Para que la lógica descrita funcione correctamente, habilite [sincronización de datos](#data-synchronization-data-synchronization) enviando una solicitud al Servicio de atención al cliente indicando el programa y los entornos adecuados.
+Para que la lógica descrita funcione correctamente, habilita la [sincronización de datos](#data-synchronization-data-synchronization) enviando
+una solicitud al Servicio de atención al cliente indicando el programa y los entornos adecuados.
 
 ### Externo {#external-managed-registration}
 
@@ -66,7 +67,8 @@ Los clientes pueden escribir sus propios componentes personalizados. Para obtene
 
 **Requisito previo:**
 
-Para que la lógica descrita funcione correctamente, habilite [sincronización de datos](#data-synchronization-data-synchronization) enviando una solicitud al Servicio de atención al cliente indicando el programa y los entornos adecuados.
+Para que la lógica descrita funcione correctamente, habilita la [sincronización de datos](#data-synchronization-data-synchronization) enviando
+una solicitud al Servicio de atención al cliente indicando el programa y los entornos adecuados.
 
 ### Integración con un proveedor de identidad {#integration-with-an-idp}
 
@@ -90,13 +92,13 @@ La interfaz `com.adobe.granite.auth.oauth.provider` se puede implementar con el 
 
 **Requisito previo:**
 
-Como práctica recomendada, confíe siempre en el idP (proveedor de identidad) como único punto de verdad al almacenar datos específicos del usuario. Si la información adicional del usuario se almacena en el repositorio local, que no forma parte del idP, habilite [sincronización de datos](#data-synchronization-data-synchronization) enviando una solicitud al Servicio de atención al cliente indicando el programa y los entornos adecuados. Además de [sincronización de datos](#data-synchronization-data-synchronization), en el caso del proveedor de autenticación SAML, asegúrese de que [pertenencia a grupo dinámico](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) está activada.
+Como práctica recomendada, confíe siempre en el idP (proveedor de identidad) como único punto de verdad al almacenar datos específicos del usuario. Si la información adicional del usuario se almacena en el repositorio local, que no forma parte del idP, habilite la [sincronización de datos](#data-synchronization-data-synchronization) enviando una solicitud al Servicio de atención al cliente indicando el programa y los entornos adecuados. Además de la [sincronización de datos](#data-synchronization-data-synchronization), en el caso del proveedor de autenticación SAML, asegúrese de que la [pertenencia al grupo dinámico](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) esté habilitada.
 
 ### Sesiones de persistencia y tokens encapsulados {#sticky-sessions-and-encapsulated-tokens}
 
-AEM as a Cloud Service habilita las sesiones fijas basadas en cookies, lo que garantiza que un usuario final se enrute al mismo nodo de publicación en cada solicitud. En casos particulares, como los picos de tráfico de usuario, la función de token encapsulado puede aumentar el rendimiento, por lo que no es necesario hacer referencia al registro de usuario en el repositorio en cada solicitud. Si se reemplaza el nodo de publicación al que un usuario final tiene afinidad, su registro de ID de usuario estará disponible en el nuevo nodo de publicación, tal como se describe en la sección [sincronización de datos](#data-synchronization-data-synchronization) más abajo.
+AEM as a Cloud Service habilita las sesiones fijas basadas en cookies, lo que garantiza que un usuario final se enrute al mismo nodo de publicación en cada solicitud. En casos particulares, como los picos de tráfico de usuario, la función de token encapsulado puede aumentar el rendimiento, por lo que no es necesario hacer referencia al registro de usuario en el repositorio en cada solicitud. Si se reemplaza el nodo de publicación al que un usuario final tiene afinidad, su registro de ID de usuario estará disponible en el nuevo nodo de publicación, tal como se describe en la sección [sincronización de datos](#data-synchronization-data-synchronization) a continuación.
 
-Para aprovechar la función de token encapsulado, envíe una solicitud al Servicio de atención al cliente indicando el programa y los entornos adecuados. Y lo que es más importante, el token encapsulado no se puede habilitar sin [sincronización de datos](#data-synchronization-data-synchronization) y deben habilitarse juntos. Por lo tanto, revise cuidadosamente el caso de uso antes de habilitar y asegurarse de que la función es esencial.
+Para aprovechar la función de token encapsulado, envíe una solicitud al Servicio de atención al cliente indicando el programa y los entornos adecuados. Lo que es más importante, el token encapsulado no se puede habilitar sin [sincronización de datos](#data-synchronization-data-synchronization) y deben habilitarse juntos. Por lo tanto, revise cuidadosamente el caso de uso antes de habilitar y asegurarse de que la función es esencial.
 
 ## Perfil de usuario {#user-profile}
 
@@ -111,7 +113,8 @@ La información de perfil del usuario se puede escribir y leer de dos maneras:
 
 **Requisito previo:**
 
-Para que la lógica de persistencia del perfil de usuario del lado del servidor funcione correctamente, habilite [sincronización de datos](#data-synchronization-data-synchronization) enviando una solicitud al Servicio de atención al cliente indicando el programa y los entornos adecuados.
+Para que la lógica de persistencia de perfiles de usuario del lado del servidor funcione correctamente, habilite la [sincronización de datos](#data-synchronization-data-synchronization) enviando
+una solicitud al Servicio de atención al cliente indicando el programa y los entornos adecuados.
 
 ### Almacenes de datos de terceros {#third-party-data-stores}
 
@@ -121,7 +124,8 @@ El acceso en tiempo real a servicios de terceros para recuperar atributos de per
 
 **Requisito previo:**
 
-Para que la lógica descrita funcione correctamente, habilite [sincronización de datos](#data-synchronization-data-synchronization) enviando una solicitud al Servicio de atención al cliente indicando el programa y los entornos adecuados.
+Para que la lógica descrita funcione correctamente, habilita la [sincronización de datos](#data-synchronization-data-synchronization) enviando
+una solicitud al Servicio de atención al cliente indicando el programa y los entornos adecuados.
 
 ## Permisos (grupos de usuarios cerrados) {#permissions-closed-user-groups}
 
@@ -134,7 +138,7 @@ Independientemente del inicio de sesión, el código personalizado también pued
 
 ## Sincronización de datos {#data-synchronization}
 
-Los usuarios finales de sitios web esperan una experiencia coherente en cada solicitud de página web o incluso cuando inician sesión con un explorador diferente, aunque no sean conscientes de que se los lleva a diferentes nodos de servidor de la infraestructura del nivel de publicación. AEM as a Cloud Service lo consigue sincronizando rápidamente el `/home` jerarquía de carpetas (información de perfil de usuario, pertenencia a grupos, etc.) en todos los nodos del nivel de publicación.
+Los usuarios finales de sitios web esperan una experiencia coherente en cada solicitud de página web o incluso cuando inician sesión con un explorador diferente, aunque no sean conscientes de que se los lleva a diferentes nodos de servidor de la infraestructura del nivel de publicación. AEM as a Cloud Service lo consigue sincronizando rápidamente la jerarquía de carpetas `/home` (información de perfil de usuario, pertenencia a grupos, etc.) en todos los nodos del nivel de publicación.
 
 A diferencia de otras soluciones de AEM, la sincronización de usuarios y la pertenencia a grupos en AEM as a Cloud Service no utiliza un enfoque de mensajería de extremo a extremo, sino que implementa un enfoque de publicación-suscripción que no requiere la configuración del cliente.
 

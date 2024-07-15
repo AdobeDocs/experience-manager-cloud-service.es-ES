@@ -27,7 +27,7 @@ Estos son algunos casos de uso para los que puede definir metadatos en cascada:
 * Cambie las opciones mostradas para un campo en particular en función del valor especificado en otro campo.
 * Establezca el valor de metadatos predeterminado en un campo concreto en función del valor especificado en otro campo.
 
-## Configuración de metadatos en cascada en [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
+## Configurar metadatos en cascada en [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
 
 Imagine un escenario en el que desee mostrar metadatos en cascada en función del tipo de recurso seleccionado. Algunos ejemplos
 
@@ -36,26 +36,26 @@ Imagine un escenario en el que desee mostrar metadatos en cascada en función de
 
 Independientemente del tipo de recurso elegido, muestre la información de copyright como un campo obligatorio.
 
-1. Seleccione el [!DNL Experience Manager] y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos]**.
-1. En el **[!UICONTROL Esquema Forms]** , seleccione un formulario de esquema y, a continuación, seleccione **[!UICONTROL Editar]** en la barra de herramientas para editar el esquema.
+1. Seleccione el logotipo de [!DNL Experience Manager] y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos]**.
+1. En la página **[!UICONTROL Esquema Forms]**, seleccione un formulario de esquema y, a continuación, seleccione **[!UICONTROL Editar]** en la barra de herramientas para editar el esquema.
 
    ![select_form](assets/select_form.png)
 
-1. (Opcional) En el editor de esquemas de metadatos, cree un campo para condicionalizar. Especifique un nombre y una ruta de propiedad en la **[!UICONTROL Configuración]** pestaña.
+1. (Opcional) En el editor de esquemas de metadatos, cree un campo para condicionalizar. Especifique un nombre y una ruta de acceso de propiedad en la ficha **[!UICONTROL Configuración]**.
 
-   Para crear una pestaña, seleccione `+` para agregar una pestaña y luego agregar un campo de metadatos.
+   Para crear una ficha, seleccione `+` para agregar una ficha y luego agregue un campo de metadatos.
 
    ![add_tab](assets/add_tab.png)
 
-1. Agregue un campo desplegable para el tipo de recurso. Especifique un nombre y una ruta de propiedad en la **[!UICONTROL Configuración]** pestaña. Añada una descripción opcional.
+1. Agregue un campo desplegable para el tipo de recurso. Especifique un nombre y una ruta de acceso de propiedad en la ficha **[!UICONTROL Configuración]**. Añada una descripción opcional.
 
-   ![asset_type_field](assets/asset_type_field.png)
+   ![campo_tipo_recurso](assets/asset_type_field.png)
 
 1. Los pares clave-valor son las opciones proporcionadas para un usuario de formulario. Puede proporcionar los pares clave-valor manualmente o desde un archivo JSON.
 
-   * Para especificar los valores manualmente, seleccione **[!UICONTROL Añadir manualmente]** y seleccione **[!UICONTROL Agregar opción]** y especifique el texto y el valor de la opción. Por ejemplo, especifique los tipos de recursos Vídeo, PDF, Word e Imagen.
+   * Para especificar los valores manualmente, seleccione **[!UICONTROL Agregar manualmente]**, seleccione **[!UICONTROL Agregar opción]** y especifique el texto y el valor de la opción. Por ejemplo, especifique los tipos de recursos Vídeo, PDF, Word e Imagen.
 
-   * Para recuperar los valores de un archivo JSON de forma dinámica, seleccione **[!UICONTROL Añadir mediante ruta de JSON]** y proporcione la ruta del archivo JSON. [!DNL Experience Manager] recupera los pares clave-valor en tiempo real cuando se presenta el formulario al usuario.
+   * Para recuperar los valores de un archivo JSON de forma dinámica, seleccione **[!UICONTROL Agregar mediante la ruta de acceso JSON]** y proporcione la ruta de acceso del archivo JSON. [!DNL Experience Manager] recupera los pares clave-valor en tiempo real cuando se presenta el formulario al usuario.
 
    Ambas opciones son mutuamente excluyentes. No puede importar las opciones de un archivo JSON y editarlas manualmente.
 
@@ -73,14 +73,14 @@ Independientemente del tipo de recurso elegido, muestre la información de copyr
 
    Del mismo modo, agregue campos dependientes para otros tipos de recursos. Por ejemplo, agregue campos, recuento de páginas y autor para los recursos del documento, como archivos de PDF y Word.
 
-   ![video_dependencies_fields](assets/video_dependent_fields.png)
+   ![campos_dependientes_de_vídeo](assets/video_dependent_fields.png)
 
-1. Para crear una dependencia entre el campo de tipo de recurso y otros campos, seleccione el campo dependiente y abra el **[!UICONTROL Reglas]** pestaña.
+1. Para crear una dependencia entre el campo de tipo de recurso y otros campos, elija el campo dependiente y abra la pestaña **[!UICONTROL Reglas]**.
 
    ![select_depenentfield](assets/select_dependentfield.png)
 
-1. En **[!UICONTROL Requisito]**, elija la **[!UICONTROL Necesario, según nueva regla]** opción.
-1. Seleccionar **[!UICONTROL Agregar regla]** y elija la **[!UICONTROL Tipo de recurso]** para crear una dependencia. Elija también el valor del campo en el que desea crear la dependencia. En este caso, seleccione **[!UICONTROL Vídeo]**. Seleccionar **[!UICONTROL Listo]** para guardar los cambios.
+1. En **[!UICONTROL Requisito]**, elija la opción **[!UICONTROL Requerido, según la nueva regla]**.
+1. Seleccione **[!UICONTROL Agregar regla]** y elija el campo **[!UICONTROL Tipo de recurso]** para crear una dependencia. Elija también el valor del campo en el que desea crear la dependencia. En este caso, seleccione **[!UICONTROL Vídeo]**. Seleccione **[!UICONTROL Listo]** para guardar los cambios.
 
    ![define_rule](assets/define_rule.png)
 
@@ -90,7 +90,7 @@ Independientemente del tipo de recurso elegido, muestre la información de copyr
 
 1. En **[!UICONTROL Visibilidad]**, seleccione la opción **[!UICONTROL Visible, según la nueva regla]**.
 
-1. Seleccionar **[!UICONTROL Agregar regla]** y elija la **[!UICONTROL Tipo de recurso]** para crear una dependencia. También elija el valor del campo en el que desea crear la dependencia. En este caso, seleccione **[!UICONTROL Vídeo]**. Seleccionar **[!UICONTROL Listo]** para guardar los cambios.
+1. Seleccione **[!UICONTROL Agregar regla]** y elija el campo **[!UICONTROL Tipo de recurso]** para crear una dependencia. También elija el valor del campo en el que desea crear la dependencia. En este caso, seleccione **[!UICONTROL Vídeo]**. Seleccione **[!UICONTROL Listo]** para guardar los cambios.
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
@@ -103,7 +103,7 @@ Independientemente del tipo de recurso elegido, muestre la información de copyr
    >Puede aplicar condiciones de **[!UICONTROL requisito]** y **[!UICONTROL visibilidad]** independientes entre sí.
 
 1. Del mismo modo, cree una dependencia entre el valor Vídeo en el campo Tipo de recurso y otros campos, como Códec y Duración.
-1. Repita los pasos para crear dependencia entre los recursos del documento (PDF y Word) en [!UICONTROL Tipo de recurso] campos y campos como [!UICONTROL Recuento de páginas] y [!UICONTROL Autor].
+1. Repita los pasos para crear dependencia entre los recursos de documento (PDF y Word) en el campo [!UICONTROL Tipo de recurso] y campos como [!UICONTROL Recuento de páginas] y [!UICONTROL Autor].
 1. Haga clic en **[!UICONTROL Guardar]**. Aplicar el esquema de metadatos a una carpeta.
 
 1. Vaya a la carpeta en la que aplicó el esquema de metadatos y abra la página de propiedades de un recurso. Según su elección en el campo Tipo de recurso, se muestran los campos de metadatos en cascada correspondientes.

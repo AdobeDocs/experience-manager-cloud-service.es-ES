@@ -1,6 +1,6 @@
 ---
-title: Administración de fragmentos de contenido (recursos - fragmentos de contenido)
-description: AEM Aprenda a utilizar la consola Recursos para administrar los fragmentos de contenido de la, como base del contenido sin encabezado o para la creación de páginas.
+title: 'Administración de fragmentos de contenido (Assets: fragmentos de contenido)'
+description: Aprenda a utilizar la consola de Assets AEM para administrar los fragmentos de contenido de la, como base del contenido sin encabezado o para la creación de páginas.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
@@ -14,7 +14,7 @@ ht-degree: 66%
 
 # Administración de los fragmentos de contenido {#managing-content-fragments}
 
-AEM Aprenda a utilizar la consola Recursos para administrar los fragmentos de contenido de la, como base del contenido sin encabezado o para la creación de páginas.
+Aprenda a utilizar la consola de Assets AEM para administrar los fragmentos de contenido de la, como base del contenido sin encabezado o para la creación de páginas.
 
 Después de definir los [Modelos de fragmento de contenido](#creating-a-content-model) puede utilizarlas para [crear los fragmentos de contenido](#creating-a-content-fragment).
 
@@ -39,9 +39,9 @@ El [Editor de fragmentos de contenido](#opening-the-fragment-editor) proporciona
 >
 >Los fragmentos de contenido son una función de Sites, pero se almacenan como **Assets**.
 >
->Ahora se administran principalmente con **[Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** consola, aunque se pueden seguir administrando desde el **Assets** consola. Esta sección trata la administración desde el **Assets** consola.
+>Ahora se administran principalmente con la consola **[Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**, aunque aún se pueden administrar desde la consola **Assets**. Esta sección cubre la administración desde la consola **Assets**.
 >
->Existen dos editores para crear fragmentos de contenido. Esta sección trata sobre el editor original, al que se accede principalmente desde el **Assets** consola. Consulte la documentación de Sites, [Fragmentos de contenido: creación](/help/sites-cloud/administering/content-fragments/authoring.md), para obtener más información sobre el nuevo editor (al que se accede principalmente desde el **Fragmentos de contenido** consola). Ambos editores tienen un conmutador en la barra de herramientas superior para proporcionar acceso rápido al otro editor.
+>Existen dos editores para crear fragmentos de contenido. Esta sección trata sobre el editor original, al que se accede principalmente desde la consola **Assets**. Consulte la documentación de Sites, [Fragmentos de contenido: creación](/help/sites-cloud/administering/content-fragments/authoring.md), para obtener detalles del nuevo editor (al que se accede principalmente desde la consola **Fragmentos de contenido**). Ambos editores tienen un conmutador en la barra de herramientas superior para proporcionar acceso rápido al otro editor.
 
 ## Creación de fragmentos de contenido {#creating-content-fragments}
 
@@ -57,11 +57,11 @@ El método para crear un fragmento de contenido es el siguiente:
 1. Seleccione **Crear** y, a continuación, **Fragmento de contenido** para abrir el asistente.
 1. El primer paso del asistente requiere que especifique la base del nuevo fragmento.
 
-   * [Modelo](/help/assets/content-fragments/content-fragments-models.md) : se utiliza para crear un fragmento que requiere contenido estructurado; por ejemplo, la variable **Aventura** model
+   * [Modelo](/help/assets/content-fragments/content-fragments-models.md): se usa para crear un fragmento que requiere contenido estructurado; por ejemplo, el modelo **Aventura**
 
       * Se muestran todos los modelos disponibles.
 
-   Después de la selección, utilice **Siguiente** para continuar.
+   Después de la selección, usa **Siguiente** para continuar.
 
    ![Selección del modelo de fragmentos de contenido](assets/cfm-managing-01.png)
 
@@ -90,11 +90,11 @@ El método para crear un fragmento de contenido es el siguiente:
 1. Seleccione **Crear** para completar la acción y, a continuación, **Abra** el fragmento para editarlo o vuelva a la consola pulsando **Listo**.
 
    >[!NOTE]
-   >Entrada **Lista** modo de la consola puede actualizar el **Configuración de vista** para habilitar el **Modelo de fragmento de contenido** columna.
+   >En el modo **Lista** de la consola, puede actualizar **Ver configuración** para habilitar la columna **Modelo de fragmento de contenido**.
 
-## Acciones para un fragmento de contenido en la consola Recursos {#actions-for-a-content-fragment-assets-console}
+## Acciones para un fragmento de contenido en la consola de Assets {#actions-for-a-content-fragment-assets-console}
 
-En el **Assets** consola hay una serie de acciones disponibles para sus fragmentos de contenido, ya sea:
+En la consola **Assets** hay una serie de acciones disponibles para sus fragmentos de contenido:
 
 * En la barra de herramientas; después de seleccionar el fragmento, están disponibles todas las acciones adecuadas.
 * Como [acciones rápidas](/help/sites-cloud/authoring/basic-handling.md#quick-actions); un subconjunto de acciones disponibles para las tarjetas de fragmento individuales.
@@ -103,13 +103,13 @@ En el **Assets** consola hay una serie de acciones disponibles para sus fragment
 
 Seleccione el fragmento para mostrar la barra de herramientas con las acciones aplicables:
 
-* **Volver a procesar recursos**
+* **Volver a procesar Assets**
 * **Crear**
 * **Descargar**
 
    * Guarde el fragmento como archivo ZIP; puede definir si desea incluir elementos, variaciones o metadatos.
 
-* **Finalizar compra**
+* **Cierre de compra**
 * **Propiedades**
 
    * Permite ver, editar o ambos metadatos del fragmento.
@@ -128,7 +128,7 @@ Seleccione el fragmento para mostrar la barra de herramientas con las acciones a
 
 >[!NOTE]
 >
->Muchos de ellos son [acciones estándar para Assets](/help/assets/manage-digital-assets.md) y/o el [AEM aplicación de escritorio de](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es).
+>Muchas de estas son [acciones estándar para Assets AEM](/help/assets/manage-digital-assets.md) y/o la [aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es) de la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de la aplicación .
 
 ## Apertura del editor de fragmentos {#opening-the-fragment-editor}
 
@@ -138,11 +138,11 @@ Abra el fragmento para su edición:
 >
 >Para editar un fragmento de contenido, son necesarios [los permisos adecuados](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si tiene algún problema, póngase en contacto con el administrador del sistema.
 
-1. Utilice el **Assets** para desplazarse a la ubicación del fragmento de contenido.
+1. Utilice la consola **Assets** para desplazarse a la ubicación del fragmento de contenido.
 1. Abra el fragmento para editarlo, haciendo lo siguiente:
 
    * Tocando o haciendo clic en el fragmento o en el vínculo del fragmento (depende de la vista de la consola).
-   * Seleccionar el fragmento y, a continuación, **Editar** en la barra de herramientas.
+   * Seleccionando el fragmento y, a continuación, **Editar** desde la barra de herramientas.
 
 1. Se abrirá el editor de fragmentos. Realice los cambios según sea necesario:
 
@@ -152,7 +152,7 @@ Abra el fragmento para su edición:
 
    >[!NOTE]
    >
-   >**Guardar y cerrar** está disponible a través de la **Guardar** lista desplegable.
+   >**Guardar y cerrar** está disponible mediante la lista desplegable **Guardar**.
 
    >[!NOTE]
    >
@@ -198,7 +198,7 @@ Algunas funciones de la barra de herramientas superior están disponibles en var
    * **Modificado**: naranja
    * **Desactivado**: rojo
 
-* Un botón le permite **Pruebe el nuevo editor**, abriendo directamente el *nuevo* [Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md) que es accesible a través de la [Consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+* Un botón le permite **Probar nuevo editor**, abriendo directamente el *nuevo* [Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md) al que se puede acceder a través de la [consola de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
 
   >[!WARNING]
   >
@@ -240,7 +240,7 @@ El editor tiene varias opciones:
   >
   >Además de guardar los cambios, las acciones actualizan también las referencias y garantizan que Dispatcher se vacíe según sea necesario. Estos cambios pueden tardar un tiempo en procesarse. Debido a este tiempo, puede haber un impacto en el rendimiento de un sistema grande/complejo/con gran carga.
   >
-  >Tenga en cuenta este proceso al utilizar **Guardar y cerrar** y, a continuación, reintroduciendo rápidamente el editor de fragmentos para realizar y guardar más cambios.
+  >Tenga este proceso en cuenta al usar **Guardar y cerrar** y, a continuación, reintroduciendo rápidamente el editor de fragmentos para realizar y guardar más cambios.
 
 * **Cerrar**
 
@@ -344,7 +344,7 @@ Se muestran una al lado de la otra, donde:
 >
 >No se puede editar el contenido del fragmento al comparar fragmentos.
 
-![Comparación de variaciones](assets/cfm-managing-06.png)
+![Comparando variaciones](assets/cfm-managing-06.png)
 
 ## Reversión a una versión  {#reverting-to-a-version}
 
@@ -364,17 +364,17 @@ Puede volver a una versión específica del fragmento:
 >
 >Si publica un fragmento de contenido para el que el modelo aún no se ha publicado, la lista de selección lo indicará y el modelo se publicará con el fragmento.
 
-Los fragmentos de contenido deben publicarse para su uso en el entorno de publicación. Esto se realiza mediante la funcionalidad estándar de Recursos:
+Los fragmentos de contenido deben publicarse para su uso en el entorno de publicación. Esto se realiza mediante la funcionalidad estándar de Assets:
 
 * [Publicación rápida](/help/assets/manage-publication.md#quick-publish)
 * [Administrar publicación](/help/assets/manage-publication.md#manage-publication)
 
 Se puede acceder a esto:
 
-* Después de la creación; usando [acciones disponibles en la consola Recursos](#actions-for-a-content-fragment-assets-console).
+* Después de la creación; usando [acciones disponibles en la consola de Assets](#actions-for-a-content-fragment-assets-console).
 * Desde el [Editor de fragmentos de contenido](#toolbar-actions-in-the-content-fragment-editor).
 
-Además, cuando [publicar una página que use el fragmento](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing); el fragmento se enumera en las referencias de página.
+Además, al [publicar una página que usa el fragmento](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing); el fragmento se enumera en las referencias de página.
 
 >[!CAUTION]
 >

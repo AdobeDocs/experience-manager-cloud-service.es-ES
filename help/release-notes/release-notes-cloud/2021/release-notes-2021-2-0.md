@@ -1,6 +1,6 @@
 ---
 title: Notas de la versión 2021.2.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2021.2.0."
+description: "[!DNL Adobe Experience Manager] notas de la versión as a Cloud Service para 2021.2.0."
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
 feature: Release Information
 role: Admin
@@ -12,26 +12,26 @@ ht-degree: 34%
 ---
 
 
-# Notas de la versión para [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notas de la versión de [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-En la siguiente sección se describen las notas de la versión generales de [!DNL Experience Manager] as a Cloud Service.
+En la siguiente sección se describen las notas de la versión generales del as a Cloud Service [!DNL Experience Manager].
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de [!DNL Adobe Experience Manager] La versión 2021.2.0 as a Cloud Service es el 25 de febrero de 2021.
+La fecha de versión de [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 es el 25 de febrero de 2021.
 La de la siguiente versión (2021.3.0) será el 25 de marzo de 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 ### Administración de contenido sin encabezado {#headless}
 
-* **[API de GraphQL para la entrega de fragmentos de contenido](/help/headless/graphql-api/content-fragments.md)**: capacidad para consultar fragmentos de contenido utilizando sintaxis de GraphQL y esquemas basados en modelos de fragmentos de contenido para su salida en formato JSON.
+* **[API de GraphQL para la entrega de fragmentos de contenido](/help/headless/graphql-api/content-fragments.md)**: capacidad de consulta de fragmentos de contenido mediante la sintaxis de GraphQL y esquemas basados en modelos de fragmentos de contenido para su salida en formato JSON.
 
-* **[Compatibilidad de autenticación para solicitudes de API de GraphQL](/help/headless/security/authentication.md)**: Capacidad para autenticar solicitudes de API de GraphQL con tokens de acceso para API del lado del servidor.
+* **[Compatibilidad de autenticación para solicitudes de API de GraphQL](/help/headless/security/authentication.md)**: capacidad para autenticar solicitudes de API de GraphQL con tokens de acceso para las API del lado del servidor.
 
-* **[El componente RemotePage](/help/implementing/developing/hybrid/remote-page.md)** SPA AEM : Se ha añadido compatibilidad para ver y editar externos en el uso de la.
+* SPA AEM **[Componente RemotePage](/help/implementing/developing/hybrid/remote-page.md)**: se ha agregado compatibilidad para ver y editar los elementos externos de las páginas de la página de acceso a la página de acceso a la página de acceso a la página de destino.
 
-* **[SPA AEM Edición de una externa dentro de un grupo de informes](/help/implementing/developing/hybrid/editing-external-spa.md)** AEM : Se ha añadido la capacidad de cargar una aplicación independiente de una sola página en una instancia de, añadir secciones de contenido editables y activar la función de creación.
+* SPA AEM AEM **[Edición de un recurso externo en el espacio de trabajo de la página de la aplicación](/help/implementing/developing/hybrid/editing-external-spa.md)**: se ha agregado la capacidad de cargar una aplicación independiente de una sola página en una instancia de la aplicación de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la aplicación, agregar secciones de contenido editables y habilitar la creación.
 
 * Salida JSON mejorada con la API de GraphQL, incluida la capacidad de generar texto enriquecido en formato JSON y configuraciones regionales.
 
@@ -55,34 +55,34 @@ La de la siguiente versión (2021.3.0) será el 25 de marzo de 2021.
 
 ## Novedades de [!DNL Assets] {#what-is-new-assets}
 
-* Los recursos se pueden obtener utilizando [!DNL Experience Manager Assets Brand Portal]. Ayuda a obtener activos de los usuarios de la agencia para nuevas campañas de marketing, fotos y proyectos.
+* Assets puede obtenerse usando [!DNL Experience Manager Assets Brand Portal]. Ayuda a obtener activos de los usuarios de la agencia para nuevas campañas de marketing, fotos y proyectos.
 
-* [!DNL Experience Manager Assets] as a [!DNL Cloud Service] tiene derecho a tener una configuración previa [!DNL Brand Portal] ejemplo. El [!DNL Cloud Manager] el usuario puede activar [!DNL Brand Portal] el [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. Consulte [activar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
+* [!DNL Experience Manager Assets] como [!DNL Cloud Service] tiene derecho a tener una instancia preconfigurada de [!DNL Brand Portal]. El usuario [!DNL Cloud Manager] puede activar [!DNL Brand Portal] en [!DNL Experience Manager Assets] como [!DNL Cloud Service]. Consulte [activar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
 
-* Las empresas ahora pueden obtener recursos mediante [!DNL Brand Portal]. La función de obtención de recursos utiliza [!DNL Brand Portal] para ayudar a los clientes a interactuar con los usuarios de la agencia a fin de que obtengan activos para nuevas campañas de marketing, fotos y proyectos. Consulte [abastecimiento de recursos en [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=es).
+* Las empresas ahora pueden obtener recursos mediante [!DNL Brand Portal]. La función de obtención de recursos usa [!DNL Brand Portal] para ayudar a los clientes a interactuar con los usuarios de la agencia a fin de que obtengan recursos para nuevas campañas de marketing, fotos y proyectos. Ver [abastecimiento de recursos en [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=es).
 
-* El [!DNL Brand Portal] el informe de uso ahora solo muestra los usuarios activos. Los usuarios inactivos no se muestran ahora. Los usuarios activos son aquellos cuya cuenta se asigna a un perfil de producto en [!DNL Admin Console]. Consulte [[!DNL Brand Portal] informes](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
+* El informe de uso de [!DNL Brand Portal] ahora muestra solamente los usuarios activos. Los usuarios inactivos no se muestran ahora. Los usuarios activos son aquellos cuya cuenta se ha asignado a un perfil de producto en [!DNL Admin Console]. Ver [[!DNL Brand Portal] informes](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
 
-* Entrada [!DNL Brand Portal], se introduce una nueva configuración de descarga que permite crear carpetas independientes para cada recurso al descargar carpetas, colecciones, etc. Consulte [configuración de descarga](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
+* En [!DNL Brand Portal], hay una nueva configuración de descarga que permite crear carpetas independientes para cada recurso al descargar carpetas, colecciones, etc. Ver [configuración de descarga](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
 
 ## Correcciones de errores en [!DNL Assets] {#bug-fixes-assets}
 
 * Cuando se seleccionan varios recursos para actualizar las propiedades, a veces se produce un error o se actualizan las propiedades de un recurso no seleccionado. (CQ-4316532)
-* Al intentar abrir [!UICONTROL Carril de búsqueda de administración de Assets], la página permanece en blanco y haciendo clic en [!UICONTROL Editar] > [!UICONTROL Configuración] genera un error. (CQ-4315079)
+* Al intentar abrir [!UICONTROL Carril de búsqueda de administración de Assets], la página permanece en blanco y al hacer clic en [!UICONTROL Editar] > [!UICONTROL Configuración] se genera un error. (CQ-4315079)
 * Cuando se crea una nueva versión de un recurso existente después de resolver el conflicto de nomenclatura, los metadatos del recurso original se sobrescriben. (CQ-4313594)
 * Cuando se imprime un recurso con texto de anotación largo, el texto de la anotación se recorta, incluso si hay espacio disponible. (CQ-4314101)
 
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+## as a Cloud Service de Adobe Experience Manager Commerce {#cloud-services-commerce}
 
 ### Novedades {#what-is-new-commerce}
 
 * Administración de experiencias de producto: enriquezca las páginas del catálogo de productos individualmente con fragmentos de experiencias.
 
-* Se han ampliado las propiedades de la consola del producto para mostrar los recursos vinculados y los fragmentos de experiencias, incluida la acción para navegar rápidamente al contenido asociado.
+* Se han ampliado las propiedades de la consola del producto para mostrar los fragmentos de experiencias y Assets vinculados, incluida la acción para navegar rápidamente al contenido asociado.
 
-* CIF CIF Lanzamiento del sitio de referencia de Venia el 24 de febrero de 2021, que incluye la versión más reciente de componentes principales (v1.8.0) de la versión de Venia. Consulte [CIF Sitio de referencia de Venia en](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) para obtener más información.
+* CIF CIF Lanzamiento del sitio de referencia de Venia el 24 de febrero de 2021, que incluye la versión más reciente de componentes principales (v1.8.0) de la versión de Venia. CIF Consulte [Sitio de referencia de Venia en el que se hace referencia a Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) para obtener más información.
 
-* CIF Lanzamiento de los componentes principales de la versión 1.8.0 de. Consulte [CIF Componentes principales](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) para obtener más información.
+* CIF Lanzamiento de los componentes principales de la versión 1.8.0 de. CIF Consulte [Componentes principales](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) para obtener más información.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -140,7 +140,7 @@ La fecha de lanzamiento de la herramienta de transferencia de contenido v1.2.2 e
 * Nueva capacidad e IU agregada a la herramienta de transferencia de contenido: herramienta de asignación de usuarios. Esta función asigna automáticamente los usuarios y grupos existentes a sus ID de sistema de Identity Management de Adobe como parte de la actividad de migración de contenido.
 Consulte [Uso de la herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) para obtener más información.
 * La herramienta de transferencia de contenido ahora migra todos los grupos y usuarios a los que se hace referencia en el conjunto de migración, incluidos los elementos secundarios.
-* Los usuarios pueden seleccionar determinadas rutas en `/etc` al crear conjuntos de migración.
+* Los usuarios pueden seleccionar ciertas rutas en `/etc` al crear conjuntos de migración.
 
 ## Analizador de prácticas recomendadas {#best-practices-analyzer}
 
@@ -150,7 +150,7 @@ La fecha de lanzamiento del Analizador de prácticas recomendadas v2.1.2 es el 1
 
 ### Novedades del Analizador de prácticas recomendadas {#what-is-new-bpa}
 
-* Capacidad para detectar el uso de la implementación de AEM Forms y AEM Forms e indicar las áreas relevantes para migrar a AEM Forms as a Cloud Service.
+* Capacidad para detectar el uso de la implementación de AEM Forms y AEM Forms e indicar las áreas que son relevantes para migrar al as a Cloud Service de AEM Forms.
 * Capacidad para detectar e informar sobre el uso y recuento de componentes y plantillas personalizadas.
 * Capacidad para detectar el tipo de almacén de nodos y almacén de datos utilizado.
 * Capacidad para detectar el uso de Dynamic Media.

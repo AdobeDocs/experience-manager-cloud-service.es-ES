@@ -7,7 +7,7 @@ exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
 source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
 source-wordcount: '550'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Si bien un sistema modular y distribuido tiene sus propias ventajas, el desafío
 
 ![aem-forms-data-integration](assets/aem-forms-data-integeration.png)
 
-La integración de datos de [!DNL AEM Forms] permite configurar y conectar diferentes fuentes de datos con [!DNL AEM Forms]. Proporciona una interfaz de usuario intuitiva para crear un esquema de representación de datos unificado de entidades y servicios empresariales a través de fuentes de datos conectadas. La representación unificada se conoce como modelo de datos de formulario (FDM), una extensión del esquema JSON. Las entidades de un modelo de datos de formulario (FDM) se denominan objetos de modelo de datos. Un modelo de datos de formulario (FDM) le permite:
+La integración de datos de [!DNL AEM Forms] permite configurar y conectar diferentes fuentes de datos con [!DNL AEM Forms]. Proporciona una interfaz de usuario intuitiva para crear un esquema de representación de datos unificado de entidades y servicios empresariales a través de fuentes de datos conectadas. La representación unificada se conoce como modelo de datos de formulario (FDM), una extensión del esquema JSON. Las entidades de un modelo de datos de formulario (FDM) se denominan objetos de modelo de datos. Un modelo de datos de formulario (FDM) le permite hacer lo siguiente:
 
 * acceder a los objetos, las propiedades y los servicios de modelo de datos desde las fuentes de datos conectadas;
 * crear objetos y propiedades personalizadas para el modelo de datos;
@@ -41,24 +41,24 @@ La integración de datos de [!DNL AEM Forms] permite configurar y conectar difer
 
 Una vez creado un modelo de datos de formulario (FDM), puede utilizarlo para lo siguiente:
 
-* Crear Forms adaptable basado en un modelo de datos de formulario (FDM)
+* Crear formularios adaptables basados en un modelo de datos de formulario (FDM)
 * Rellenar previamente los formularios adaptables desde fuentes de datos configuradas
 * invocar servicios u operaciones de fuentes de datos mediante las reglas de los formularios adaptables;
 * escribir los datos de los formularios adaptables enviados en fuentes de datos.
 
 ## Introducción a la integración de datos {#get-started-with-data-integration}
 
-El primer paso para implementar la integración de datos para enviar el formulario adaptable a una base de datos es identificar y configurar las fuentes de datos que almacenan la información que desea utilizar en Formularios adaptables. A continuación, se crea un modelo de datos de formulario (FDM) que utiliza objetos, propiedades y servicios del modelo de datos de una o varias fuentes de datos. Puede crear un Forms adaptable basado en un modelo de datos de formulario (FDM) donde los campos de los formularios adaptables están enlazados a las propiedades de sus respectivas fuentes de datos.
+El primer paso para implementar la integración de datos para enviar el formulario adaptable a una base de datos es identificar y configurar las fuentes de datos que almacenan la información que desea utilizar en Formularios adaptables. A continuación, se crea un modelo de datos de formulario que utiliza los objetos, las propiedades y los servicios de modelo de datos de una o varias fuentes de datos. Puede crear formularios adaptables basados en un modelo de datos de formulario en el que los campos de los formularios adaptables están enlazados a las propiedades de sus respectivas fuentes de datos.
 
 [!DNL AEM Forms] también permite crear un modelo de datos de formulario (FDM) independiente de las fuentes de datos y asociar o enlazar objetos y propiedades de modelo de datos en el modelo de datos de formulario (FDM) con la fuente de datos más adelante. Esto elimina la dependencia de las fuentes de datos mientras trabaja en un modelo de datos de formulario (FDM).
 
 Revise la siguiente información para iniciar, entender e implementar la integración de datos:
 
 * [Configuración de las fuentes de datos](configure-data-sources.md)
-* [Crear un modelo de datos de formulario (FDM)](create-form-data-models.md)
-* [Trabajo con el modelo de datos de formulario (FDM)](work-with-form-data-model.md)
+* [Crear modelo de datos de formulario (FDM)](create-form-data-models.md)
+* [Trabajar con el modelo de datos de formulario (FDM)](work-with-form-data-model.md)
 * [Uso del modelo de datos de formulario (FDM)](using-form-data-model.md)
 
 >[!NOTE]
 >
->[!UICONTROL Experience Manager Forms] no es compatible con bases de datos relacionales.
+>[!UICONTROL Experience Manager Forms] no es compatible con las bases de datos relacionales.

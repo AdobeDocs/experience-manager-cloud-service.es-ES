@@ -323,7 +323,7 @@ Para exportar un fragmento de contenido de AEM a Target (después de especificar
 1. Vaya al fragmento de contenido en la consola **Recursos**.
 1. Seleccione el fragmento de contenido que desea exportar a Target.
 
-1. Seleccionar **Exportar a ofertas de Adobe Target**.
+1. Seleccione **Exportar a ofertas de Adobe Target**.
 
    ![Exportar a Adobe Target](assets/cfm-export-target-01.png)
 
@@ -337,7 +337,7 @@ Para exportar un fragmento de contenido de AEM a Target (después de especificar
    
    -->
 
-1. Seleccionar **Exportar sin publicar** o **Publish** según sea necesario.
+1. Seleccione **Exportar sin publicar** o **Publish** según sea necesario.
 
    >[!NOTE]
    >
@@ -349,7 +349,7 @@ Para exportar un fragmento de contenido de AEM a Target (después de especificar
    >
    >Si selecciona **Publicar**, el fragmento de contenido se publicará de inmediato y se enviará a Target.
 
-1. Seleccionar **OK** en el cuadro de diálogo de confirmación.
+1. Seleccione **Aceptar** en el cuadro de diálogo de confirmación.
 
    El fragmento de contenido debería estar ahora en Target.
 

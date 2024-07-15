@@ -18,7 +18,7 @@ El Editor de texto enriquecido (RTE) es componente básico para agregar contenid
 
 ## Edición in-situ {#in-place-editing}
 
-Seleccionar un componente basado en texto con un solo clic para mostrar el [barra de herramientas de componentes](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+Seleccionar un componente basado en texto con un solo clic para mostrar la barra de herramientas [componente.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
 
 ![La barra de herramientas de componentes](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 

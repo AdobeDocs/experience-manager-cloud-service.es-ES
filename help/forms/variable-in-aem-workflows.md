@@ -7,7 +7,7 @@ role: Admin, User
 source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
 source-wordcount: '1930'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ Para crear una variable, haga lo siguiente:
 
    * Tipo de datos primitivo: especifique un valor predeterminado opcional para la variable.
    * JSON o XML: especifique una ruta de esquema JSON o XML opcional. El sistema valida la ruta del esquema al asignar y almacenar las propiedades disponibles en este esquema para otra variable.
-   * Modelo de datos de formulario (FDM): especifique una ruta del modelo de datos de formulario.
+   * Modelo de datos de formulario (Form Data Model, FDM): especifique una ruta para el modelo de datos de formulario.
    * ArrayList: especifique un subtipo para la colección.
 
 1. Especifique una descripción opcional para la variable y seleccione ![done_icon](assets/Smock_Checkmark_18_N.svg) para guardar los cambios. La variable se muestra en la lista disponible en el panel izquierdo.

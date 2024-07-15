@@ -73,7 +73,7 @@ Al crear una plantilla editable, debe hacer lo siguiente:
    * O directamente en: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
 * Puede [crear una carpeta para las plantillas](#creating-a-template-folder-admin), si lo necesita.
 * [Crea una plantilla nueva](#creating-a-new-template-template-author), que inicialmente estará vacía.
-* [Definición de propiedades adicionales](#defining-template-properties-template-author) para la plantilla si es necesario
+* [Defina propiedades adicionales](#defining-template-properties-template-author) para la plantilla si es necesario
 * [Editar la plantilla](#editing-templates-template-authors) para definir lo siguiente:
    * [Estructura](#editing-a-template-structure-template-author): contenido predefinido que no se puede cambiar en las páginas creadas con la plantilla.
    * [Contenido inicial](#editing-a-template-initial-content-author): contenido predefinido que se puede cambiar en las páginas creadas con la plantilla.
@@ -95,11 +95,11 @@ Al crear una plantilla editable, debe hacer lo siguiente:
 
 ### Creación de una carpeta de plantillas: administrador {#creating-a-template-folder-admin}
 
-Se debe crear una carpeta de plantillas para su proyecto que contenga las plantillas específicas del proyecto. Es una tarea de administración que se describe en el documento [Plantillas de página](/help/implementing/developing/components/templates.md#template-folders).
+Se debe crear una carpeta de plantillas para su proyecto que contenga las plantillas específicas del proyecto. Esta es una tarea de administración y se describe en el documento [Plantillas de página](/help/implementing/developing/components/templates.md#template-folders).
 
 ### Creación de una plantilla nueva: autor de plantillas {#creating-a-new-template-template-author}
 
-1. Abra el **Consola de plantillas** (a través de **Herramientas >** **General**) y luego vaya a la carpeta requerida.
+1. Abra la **Consola de plantillas** (mediante **Herramientas >** **General**) y desplácese hasta la carpeta requerida.
 
    >[!NOTE]
    >
@@ -143,7 +143,7 @@ Una plantilla puede tener las siguientes propiedades:
 * Título
    * Un título utilizado para identificar la plantilla, como en el asistente **Crear página**.
 * Descripción
-   * Una descripción opcional para proporcionar más información acerca de la plantilla y su uso, que se puede ver, por ejemplo, en la **Crear página** asistente.
+   * Una descripción opcional para proporcionar más información sobre la plantilla y su uso, que se puede ver, por ejemplo, en el asistente **Crear página**.
 
 Para ver o editar las propiedades:
 
@@ -162,9 +162,9 @@ Para definir la miniatura de la plantilla, haga lo siguiente:
 1. Editar las propiedades de la plantilla.
 1. Seleccione si desea cargar una miniatura o hacer que se genere a partir del contenido de la plantilla.
    * Si desea cargar una miniatura, seleccione **Cargar imagen**
-   * Si desea generar una miniatura, seleccione **Generar previsualización**
+   * Si desea generar una miniatura, seleccione **Generar vista previa**
 1. Para ambos métodos se muestra una previsualización de la miniatura.
-   * Si no es satisfactorio, seleccione **Borrar** para cargar otra imagen o volver a generar la miniatura.
+   * Si no es satisfactorio, selecciona **Borrar** para cargar otra imagen o volver a generar la miniatura.
 1. Cuando esté satisfecho con la miniatura, seleccione **Guardar y cerrar**.
 
 ### Activación y autorización de una plantilla: autor de plantillas   {#enabling-and-allowing-a-template-template-author}
@@ -184,7 +184,7 @@ Una plantilla se puede habilitar o deshabilitar para que esté disponible o no e
 
 1. En la **Consola de plantillas**, seleccione la plantilla.
 1. Seleccione **Activar** o **Desactivar** en la barra de herramientas y, de nuevo, en el cuadro de diálogo de confirmación.
-1. Ahora puede utilizar la plantilla cuando [creación de una página](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), aunque es probable que desee [editar la plantilla](#editing-templates-template-authors) según sus necesidades.
+1. Ahora puedes usar tu plantilla al [crear una página](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), aunque probablemente quieras [editar la plantilla](#editing-templates-template-authors) según tus necesidades.
 
 >[!NOTE]
 >
@@ -230,7 +230,7 @@ Como la plantilla se toma como referencia cuando se representa la página, la pl
 
 Al crear o editar una plantilla, hay distintos aspectos que el autor de plantillas pueden definir. Editar plantillas es similar a crear páginas.
 
-El **Modo** selector de en la barra de herramientas permite seleccionar y editar la proporción adecuada de la plantilla:
+El selector **Modo** de la barra de herramientas le permite seleccionar y editar el aspecto apropiado de la plantilla:
 
 * [Estructura](#editing-a-template-structure-template-author)
 * [Contenido inicial](#editing-a-template-initial-content-author)
@@ -238,7 +238,7 @@ El **Modo** selector de en la barra de herramientas permite seleccionar y editar
 
 ![Selector de modo Editor de plantillas](/help/sites-cloud/authoring/assets/templates-mode.png)
 
-Mientras que el **Política de página** opción en la **Información de página** El menú permite [seleccionar las directivas de página requeridas](#page-policies):
+Mientras que la opción **Política de página** del menú **Información de página** le permite [seleccionar las políticas de página requeridas](#page-policies):
 
 ![Información de la página Editor de plantillas](/help/sites-cloud/authoring/assets/templates-page-information.png)
 
@@ -293,7 +293,7 @@ En el modo de **Estructura**, puede definir los componentes y el contenido de la
 
 ![Estructura de la página Editor de plantillas](/help/sites-cloud/authoring/assets/templates-page-structure.png)
 
-Hay varias acciones que puede realizar en la **Estructura** del editor de plantillas y varias funciones que le ayudarán a:
+Hay varias acciones que puede realizar en el modo **Structure** del editor de plantillas y varias funciones que le ayudarán a:
 
 #### Añadir componentes {#add-components}
 
@@ -351,8 +351,8 @@ Esto permite definir los detalles del diseño.
 
 La ventana de configuración se divide en dos.
 
-* En el lado izquierdo del cuadro de diálogo, debajo de **Política**, puede seleccionar una directiva existente o seleccionar una existente.
-* En el lado derecho del cuadro de diálogo, debajo de **Propiedades**, puede establecer las propiedades específicas del tipo de componente.
+* En el lado izquierdo del cuadro de diálogo, debajo de **Directiva**, puede seleccionar una directiva existente o seleccionar una existente.
+* En el lado derecho del cuadro de diálogo, en **Propiedades**, puede establecer las propiedades específicas del tipo de componente.
 
 Las propiedades disponibles dependen del componente seleccionado. Por ejemplo, para un componente de texto, las propiedades definen las opciones de copiar y pegar, las opciones de formato y el estilo de párrafo, entre otras opciones.
 
@@ -360,21 +360,21 @@ Las propiedades disponibles dependen del componente seleccionado. Por ejemplo, p
 
 Las políticas de contenido (o diseño) definen las propiedades de diseño de un componente. Por ejemplo, los componentes disponibles o las dimensiones mínimas/máximas. Se aplican a la plantilla (y a las páginas creadas con la plantilla).
 
-En **Política** puede seleccionar una política existente para aplicarla al componente mediante la lista desplegable.
+En **Directiva**, puede seleccionar una directiva existente para aplicarla al componente mediante la lista desplegable.
 
 ![Seleccionar política](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-Para añadir una directiva nueva, seleccione el botón Añadir situado junto a la **Seleccionar política** menú desplegable. Asigne un nuevo título en la **Título de política** field.
+Se puede agregar una directiva nueva seleccionando el botón Agregar junto a la lista desplegable **Seleccionar directiva**. Asigne un nuevo título en el campo **Título de la directiva**.
 
 ![Botón Añadir política](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-La política existente seleccionada en la **Seleccionar política** la lista desplegable se puede copiar como una directiva nueva mediante el botón copiar situado junto a la lista desplegable. Asigne un nuevo título en la **Título de política** field. De forma predeterminada, la política copiada tiene como título **Copia de X**, donde X es el título de la política copiada.
+La directiva existente seleccionada en la lista desplegable **Seleccionar directiva** se puede copiar como una directiva nueva mediante el botón Copiar situado junto a la lista desplegable. Asigne un nuevo título en el campo **Título de la directiva**. De forma predeterminada, la política copiada tiene como título **Copia de X**, donde X es el título de la política copiada.
 
 ![Botón Copiar política](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
 En el campo **Descripción de la política**, se ofrece de manera opcional una descripción de la política.
 
-En el **Otras plantillas que también usan la política seleccionada** , puede ver fácilmente qué otras plantillas utilizan la directiva seleccionada en la sección **Seleccionar política** lista desplegable.
+En la sección **Otras plantillas que también usan la directiva seleccionada**, puede ver fácilmente qué otras plantillas usan la directiva seleccionada en la lista desplegable **Seleccionar directiva**.
 
 ![Uso de una política existente](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
@@ -395,19 +395,19 @@ En la pestaña **Principal**, se definen las opciones de configuración más imp
 
 Por ejemplo, para un componente de imagen, las anchuras permitidas se pueden definir junto con la activación de la carga diferida.
 
-Si una configuración permite varias configuraciones, seleccione la opción **Añadir** para añadir otra configuración.
+Si una configuración permite varias configuraciones, selecciona el botón **Agregar** para agregar otra configuración.
 
 ![Botón Añadir](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
-Para quitar una configuración, seleccione la **Eliminar** situado a la derecha de la configuración.
+Para quitar una configuración, seleccione el botón **Eliminar** situado a la derecha de la configuración.
 
-Para quitar una configuración, seleccione la **Eliminar** botón.
+Para quitar una configuración, selecciona el botón **Eliminar**.
 
 ![Botón Eliminar](/help/sites-cloud/authoring/assets/templates-delete-button.png)
 
 ###### Características {#features}
 
-El **Funciones** La pestaña permite activar o desactivar funciones adicionales del componente.
+La pestaña **Características** le permite habilitar o deshabilitar características adicionales del componente.
 
 Por ejemplo, para un componente de imagen, puede definir la proporción del recorte, las orientaciones de imagen permitidas y si se permiten las cargas.
 
@@ -415,7 +415,7 @@ Por ejemplo, para un componente de imagen, puede definir la proporción del reco
 
 >[!CAUTION]
 >
->AEM En las proporciones de recorte se definen como **alto/ancho**. Esto es distinto de la definición convencional de anchura/altura y se realiza por motivos de compatibilidad con sistemas anteriores. Los usuarios de creación de páginas no notarán ninguna diferencia siempre que defina claramente el **Nombre**, ya que esto es lo que se muestra en la interfaz de usuario.
+>AEM En las proporciones de recorte se definen como **height/width**. Esto es distinto de la definición convencional de anchura/altura y se realiza por motivos de compatibilidad con sistemas anteriores. Los usuarios de creación de páginas no notarán ninguna diferencia siempre que defina claramente el **Nombre**, ya que esto es lo que se muestra en la interfaz de usuario.
 
 >[!NOTE]
 >
@@ -461,9 +461,9 @@ En la pestaña **Componentes permitidos**, defina los componentes disponibles pa
 
 En la pestaña **Componentes predeterminados**, puede definir qué componentes se asocian automáticamente a determinados tipos de medios, de modo que cuando un autor arrastre un recurso desde el navegador de recursos, AEM sabe a qué componente debe asociarlo. Solo están disponibles para esta configuración los componentes con zonas de colocación.
 
-Seleccionar **Agregar asignación** para agregar un componente completamente nuevo y una asignación de tipo MIME.
+Seleccione **Agregar asignación** para agregar un componente y una asignación de tipo MIME completamente nuevos.
 
-Seleccione un componente de la lista y seleccione **Añadir tipo** para agregar un tipo MIME adicional a un componente ya asignado. Haga clic en el icono **Eliminar** para quitar un tipo MIME.
+Seleccione un componente en la lista y seleccione **Agregar tipo** para agregar un tipo MIME adicional a un componente ya asignado. Haga clic en el icono **Eliminar** para quitar un tipo MIME.
 
 ![Pestaña Componentes predeterminados](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
@@ -568,20 +568,20 @@ Puede aplicar una política de contenido a la plantilla o a las páginas resulta
 
   ![Selector de políticas](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-  Para añadir una directiva nueva, seleccione el botón Añadir situado junto a la **Seleccionar política** lista desplegable. Asigne un nuevo título en la **Título de política** field.
+  Se puede agregar una directiva nueva seleccionando el botón Agregar junto a la lista desplegable **Seleccionar directiva**. Asigne un nuevo título en el campo **Título de la directiva**.
 
   ![Botón Añadir política](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-  La política existente seleccionada en la **Seleccionar política** la lista desplegable se puede copiar como una directiva nueva mediante el botón copiar situado junto a la lista desplegable. Asigne un nuevo título en la **Título de política** field. De forma predeterminada, la política copiada tiene como título **Copia de X**, donde X es el título de la política copiada.
+  La directiva existente seleccionada en la lista desplegable **Seleccionar directiva** se puede copiar como una directiva nueva mediante el botón Copiar situado junto a la lista desplegable. Asigne un nuevo título en el campo **Título de la directiva**. De forma predeterminada, la política copiada tiene como título **Copia de X**, donde X es el título de la política copiada.
 
   ![Botón Copiar política](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
-* Defina un título para la política en el campo **Título de la política**. Es necesario que una directiva tenga un título para que se pueda seleccionar fácilmente en la **Seleccionar política** lista desplegable.
+* Defina un título para la política en el campo **Título de la política**. Se requiere que una directiva tenga un título para que se pueda seleccionar fácilmente en la lista desplegable **Seleccionar directiva**.
 
   ![Título de la política](/help/sites-cloud/authoring/assets/templates-policy-title.png)
 
 * En el campo **Descripción de la política**, se ofrece de manera opcional una descripción de la política.
-* En el **Otras plantillas que también usan la política seleccionada** , puede ver fácilmente qué otras plantillas utilizan la directiva seleccionada en la sección **Seleccionar política** lista desplegable.
+* En la sección **Otras plantillas que también usan la directiva seleccionada**, puede ver fácilmente qué otras plantillas usan la directiva seleccionada en la lista desplegable **Seleccionar directiva**.
 
   ![Uso de políticas](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 

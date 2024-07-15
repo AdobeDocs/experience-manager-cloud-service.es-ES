@@ -19,7 +19,7 @@ El complemento de AEM Assets para Adobe Express le permite acceder directamente 
 
 ## Requisitos previos {#prerequisites}
 
-Derechos para acceder al Adobe Express y al menos a un entorno dentro de AEM Assets. El entorno puede ser cualquiera de los repositorios de Assets as a Cloud Service o Assets Essentials.
+Derechos para acceder al Adobe Express y al menos a un entorno dentro de AEM Assets. El entorno puede ser cualquiera de los repositorios de los Assets Essentials as a Cloud Service de Assets.
 
 
 ## Añadir el complemento de AEM Assets al Adobe Express {#access-assets-addon}
@@ -30,13 +30,13 @@ Siga estos pasos para agregar el complemento de AEM Assets al Adobe Express:
 
 1. Abra un nuevo lienzo en blanco cargando una nueva plantilla o proyecto, o creando un recurso.
 
-1. Clic **[!UICONTROL Complementos]** disponible en el panel de navegación izquierdo.
+1. Haga clic en **[!UICONTROL Complementos]** disponibles en el panel de navegación izquierdo.
 
-1. Especificar **[!UICONTROL AEM Assets]** en la barra de búsqueda, disponible en la parte superior de la [!UICONTROL Complementos] y haga clic en el complemento de AEM Assets.
+1. Especifique **[!UICONTROL AEM Assets]** en la barra de búsqueda disponible en la parte superior de la sección [!UICONTROL Complementos] y haga clic en el complemento de AEM Assets.
 
    ![Complemento de AEM Assets](assets/aem-assets-add-on.png)
 
-1. Clic **[!UICONTROL Añadir]**. El complemento se muestra en la lista de **[!UICONTROL Sus complementos de]** sección. Vuelva a hacer clic en el complemento para mostrar el contenido en el panel de navegación derecho. El complemento muestra la lista de repositorios a los que puede acceder junto con la lista de recursos y carpetas disponibles en el nivel raíz.
+1. Haga clic en **[!UICONTROL Agregar]**. El complemento se muestra en la lista de la sección **[!UICONTROL Sus complementos]**. Vuelva a hacer clic en el complemento para mostrar el contenido en el panel de navegación derecho. El complemento muestra la lista de repositorios a los que puede acceder junto con la lista de recursos y carpetas disponibles en el nivel raíz.
 
    Utilice la barra de búsqueda para buscar los recursos que debe utilizar en el lienzo.
 
@@ -57,11 +57,11 @@ Después de agregar el complemento de AEM Assets al Adobe Express, puede empezar
 
 Después de incorporar las modificaciones adecuadas en el lienzo Express, puede guardarlo en el repositorio de AEM Assets.
 
-1. Clic **[!UICONTROL Guardar]** para abrir **[!UICONTROL Cargar]** diálogo.
+1. Haga clic en **[!UICONTROL Guardar]** para abrir el cuadro de diálogo **[!UICONTROL Cargar]**.
 1. Especifique un nombre y un formato para el recurso. Puede guardar el contenido del lienzo en formato PNG o en formato de JPEG.
 
-1. Haga clic en el icono de carpeta junto al **[!UICONTROL Ubicación]** , vaya a la ubicación donde debe guardar el recurso y haga clic en **[!UICONTROL Seleccionar]**. El nombre de la carpeta se muestra en la **[!UICONTROL Ubicación]** field.
+1. Haga clic en el icono de carpeta junto al campo **[!UICONTROL Ubicación]**, navegue hasta la ubicación donde necesite guardar el recurso y haga clic en **[!UICONTROL Seleccionar]**. El nombre de la carpeta se muestra en el campo **[!UICONTROL Ubicación]**.
 
-1. Clic **[!UICONTROL Cargar]** para cargar el recurso en AEM Assets.
+1. Haga clic en **[!UICONTROL Cargar]** para cargar el recurso en AEM Assets.
 
-   ![AEM Guardado de recursos en el](assets/aem-assets-add-on-save.png)
+   AEM ![Guardar recursos en el archivo de recursos](assets/aem-assets-add-on-save.png)

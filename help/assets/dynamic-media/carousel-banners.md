@@ -18,7 +18,7 @@ Los titulares de carrusel permiten a los especialistas en marketing impulsar la 
 
 Crear y modificar contenido destacado en titulares promocionales puede llevar mucho tiempo, lo que limita la capacidad de publicar rápidamente contenido nuevo o de segmentarlo. Los titulares de carrusel permiten crear o modificar rápidamente titulares giratorios y añadir interactividad, como la vinculación de puntos interactivos a detalles del producto o recursos relacionados. Puede enviarlos a cualquier pantalla, lo que permite introducir más rápidamente nuevos contenidos promocionales en el mercado.
 
-Los titulares de carrusel se designan mediante un titular con la palabra **[!UICONTROL CONJUNTO DE CARRUSEL]**:
+Los titulares de carrusel se designan mediante un titular con la palabra **[!UICONTROL CAROUSELSET]**:
 
 ![chlimage_1-438](assets/chlimage_1-438.png)
 
@@ -34,17 +34,17 @@ En este ejemplo, un usuario ha seleccionado un mapa de imagen y ha accedido a la
 
 ## Vea cómo se crean los titulares de carrusel {#watch-how-carousel-banners-are-created}
 
-Vea un tutorial sobre [cómo se crean los titulares del carrusel](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (Duración: 10 minutos y 33 segundos). También aprenderá a obtener una vista previa, editar y distribuir titulares de carrusel.
+Vea un tutorial sobre [cómo se crean los titulares de carrusel](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (Duración: 10 minutos y 33 segundos). También aprenderá a obtener una vista previa, editar y distribuir titulares de carrusel.
 
 >[!NOTE]
 >
->Los usuarios no administrativos deben agregarse al **[!UICONTROL dam-users]** para poder crear o editar titulares de carrusel. Si tiene problemas para crear o editar, consulte con el administrador del sistema, que puede agregarle al **d[!UICONTROL am-users]** grupo.
+>Los usuarios que no son administradores deben agregarse al grupo **[!UICONTROL dam-users]** para poder crear o editar titulares de carrusel. Si tiene problemas para crear o editar, consulte con el administrador del sistema, que puede agregarlo al grupo **d[!UICONTROL am-users]**.
 
 ## Inicio rápido: Banners de carrusel {#quick-start-carousel-banners}
 
 Para ponerse en marcha rápidamente:
 
-1. [Identificación de variables de puntos interactivos y mapas de imagen](#identifying-hotspot-and-image-map-variables) (solo para clientes que utilizan Adobe Experience Manager Assets + Dynamic Media)
+1. [Identificar variables de puntos interactivos y mapas de imagen](#identifying-hotspot-and-image-map-variables) (solo para clientes que usan Adobe Experience Manager Assets + Dynamic Media)
 
    Comience identificando las variables dinámicas utilizadas por la implementación de vista rápida existente. Al hacerlo, puede introducir correctamente los puntos interactivos y los datos de mapa de imagen durante el proceso de creación del banner de carrusel en Experience Manager Assets.
 
@@ -71,27 +71,27 @@ Para ponerse en marcha rápidamente:
 
    En los conjuntos de carruseles, los usuarios navegan por las imágenes del titular y seleccionan zonas interactivas o mapas de imagen para acceder al contenido relevante.
 
-   Para crear un conjunto de carrusel en Assets, seleccione **[!UICONTROL Crear]**, luego seleccione **[!UICONTROL Conjuntos de carrusel]**. Añada recursos a las diapositivas y seleccione **[!UICONTROL Guardar]**. También puede editar el aspecto y el comportamiento del carrusel directamente en el editor.
+   Para crear un conjunto de carrusel en Assets, seleccione **[!UICONTROL Crear]** y luego **[!UICONTROL Conjuntos de carrusel]**. Agregue recursos a las diapositivas y seleccione **[!UICONTROL Guardar]**. También puede editar el aspecto y el comportamiento del carrusel directamente en el editor.
 
-1. [Añadir puntos interactivos o mapas de imagen a un titular de imagen](#adding-hotspots-or-image-maps-to-an-image-banner).
+1. [Agregar puntos interactivos o mapas de imagen a un titular de imagen](#adding-hotspots-or-image-maps-to-an-image-banner).
 
    Añada una o más zonas interactivas o mapas de imagen a un titular de imagen. A continuación, asocie cada uno con una acción como un vínculo, una vista rápida o un fragmento de experiencia. Después de agregar puntos interactivos o mapas de imagen, finalice esta tarea publicando el conjunto de carrusel. La publicación crea el código incrustado que puede utilizar para copiar y aplicar en la página de aterrizaje del sitio web.
 
-   Consulte [(Opcional) Previsualizar titulares de carrusel](#optional-previewing-carousel-banners) - Opcional. Si lo desea, puede ver una representación del conjunto de carrusel y probar su interactividad.
+   Consulte [ (Opcional) Banners de carrusel de vista previa](#optional-previewing-carousel-banners) - Opcional. Si lo desea, puede ver una representación del conjunto de carrusel y probar su interactividad.
 
-1. [Publicar titulares de carrusel](#publishing-carousel-banners).
+1. [Banners de carrusel de Publish](#publishing-carousel-banners).
 
    Publica un conjunto de carrusel como lo haría con cualquier recurso. En Assets, vaya al conjunto de carrusel, selecciónelo y seleccione **[!UICONTROL Publish]**. La publicación de un conjunto de carrusel activa la URL y la cadena de incrustación.
 
 1. Realice una de las siguientes acciones:
 
-   * [Añadir un banner de carrusel a la página del sitio web](#adding-a-carousel-banner-to-your-website-page)Puede añadir la URL del banner de carrusel o el código incrustado que ha copiado en la página del sitio web.
+   * [Agregue un banner de carrusel a la página de su sitio web](#adding-a-carousel-banner-to-your-website-page)Puede agregar la URL del banner de carrusel o el código incrustado que ha copiado en la página del sitio web.
 
-      * [Integración del titular del carrusel con una vista rápida existente](#integrating-the-carousel-banner-with-an-existing-quickview). Si utiliza un sistema de administración de contenido web de terceros, debe integrar el nuevo banner de carrusel con la implementación de vista rápida existente en el sitio web.
+      * [Integrar el titular del carrusel con una vista rápida existente](#integrating-the-carousel-banner-with-an-existing-quickview). Si utiliza un sistema de administración de contenido web de terceros, debe integrar el nuevo banner de carrusel con la implementación de vista rápida existente en el sitio web.
 
-   * [Añada un banner de carrusel al sitio web en Experience Manager.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md). Si es cliente de Experience Manager Sites, puede agregar el conjunto de carrusel directamente a la página mediante el componente de medios interactivos.
+   * [Agregue un banner de carrusel al sitio web en Experience Manager](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md). Si es cliente de Experience Manager Sites, puede agregar el conjunto de carrusel directamente a la página mediante el componente de medios interactivos.
 
-Si debe editar Conjuntos de carrusel, consulte [Editar conjuntos de carrusel](#editing-carousel-sets). Además, puede ver y editar [Propiedades del conjunto de carrusel](/help/assets/manage-digital-assets.md#editing-properties).
+Si necesita editar los conjuntos de carrusel, consulte [Editar conjuntos de carrusel](#editing-carousel-sets). Además, puede ver y editar [propiedades del conjunto de carrusel](/help/assets/manage-digital-assets.md#editing-properties).
 
 ## Identificación de variables de puntos interactivos y mapas de imagen {#identifying-hotspot-and-image-map-variables}
 
@@ -117,7 +117,7 @@ A veces basta con consultar con los especialistas de TI responsables de la imple
 
 La mayoría de las implementaciones de Quickview utilizan el siguiente paradigma:
 
-* El usuario activa un elemento de interfaz de usuario en el sitio web. Por ejemplo, al seleccionar una **[!UICONTROL Quickview]** botón.
+* El usuario activa un elemento de interfaz de usuario en el sitio web. Por ejemplo, si selecciona un botón **[!UICONTROL Vista rápida]**.
 * El sitio web envía una solicitud Ajax al back end para cargar los datos o el contenido de Quickview, si es necesario.
 * Los datos de vista rápida se traducen al contenido como preparación para su representación en la página web.
 * Finalmente, el código front-end procesa visualmente dicho contenido en la pantalla.
@@ -126,12 +126,12 @@ A continuación, el método consiste en visitar diferentes áreas del sitio web 
 
 Normalmente no es necesario utilizar herramientas de depuración especializadas. Los navegadores web modernos cuentan con inspectores web que hacen un trabajo adecuado. A continuación se muestran algunos ejemplos de exploradores web que incluyen inspectores web:
 
-* Para ver todas las solicitudes HTTP salientes en Google Chrome, pulse F12 (Windows®) o Comando-Opción-I (Mac) para abrir el panel Herramientas para desarrolladores. Seleccione la pestaña Network.
+* Para ver todas las solicitudes HTTP salientes en Google Chrome, pulse F12 (Windows®) o Comando-Opción-I (Mac) para abrir el panel Herramienta de desarrollo. Seleccione la pestaña Network.
 * En Firefox, puede activar el complemento Firebug pulsando F12 (Windows®) o Comando-Opción-I (Mac). Utilice la ficha Red o la herramienta Inspector integrada y la ficha Red.
 
 Cuando la monitorización de red está activada en el navegador, almacene en déclencheur la vista rápida en la página.
 
-Ahora busque la URL de Ajax de vista rápida en el registro de red y copie la URL grabada para un análisis futuro. Normalmente, cuando se almacena en déclencheur la vista rápida, hay numerosas solicitudes que se envían al servidor. Normalmente, la URL de Ajax de vista rápida es una de las primeras en la lista. Tiene una parte de cadena de consulta o una ruta compleja y su tipo MIME de respuesta es `text/html`, `text/xml`, o `text/javascript`.
+Ahora busque la URL de Ajax de vista rápida en el registro de red y copie la URL grabada para un análisis futuro. Normalmente, cuando se almacena en déclencheur la vista rápida, hay numerosas solicitudes que se envían al servidor. Normalmente, la URL de Ajax de vista rápida es una de las primeras en la lista. Tiene una parte de cadena de consulta o una ruta de acceso compleja y su tipo MIME de respuesta es `text/html`, `text/xml` o `text/javascript`.
 
 Durante este proceso, es importante visitar diferentes áreas del sitio web, con diferentes categorías y tipos de productos. El motivo es que las direcciones URL de vista rápida tienen partes que son comunes para una categoría de sitio web determinada, pero que solo cambian si visita una zona diferente del sitio web.
 
@@ -151,7 +151,7 @@ Considere los siguientes ejemplos de direcciones URL de vista rápida y las vari
      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
-    </ul> <p>La única parte de la variable en la URL es el valor de <code>productId=</code> parámetro de cadena de consulta y es claramente un valor SKU. Por lo tanto, las zonas interactivas o los mapas de imagen solo necesitan campos SKU con valores como <code>866558,</code> <code>1196184,</code> <code>1081492,</code> <code>1898294.</code></p> </td>
+    </ul> <p>La única parte de la variable en la dirección URL es el valor del parámetro de cadena de consulta <code>productId=</code> y es claramente un valor SKU. Por lo tanto, las zonas interactivas o los mapas de imagen solo necesitan campos SKU con valores como <code>866558,</code> <code>1196184,</code> <code>1081492,</code> <code>1898294.</code></p> </td>
   </tr>
   <tr>
    <td>SKU único, encontrado en la ruta URL.</td>
@@ -160,7 +160,7 @@ Considere los siguientes ejemplos de direcciones URL de vista rápida y las vari
      <li><p><code>https://server/product/6422350843</code></p> </li>
      <li><p><code>https://server/product/1607745002</code></p> </li>
      <li><p><code>https://server/product/0086724882</code></p> </li>
-    </ul> <p>La parte variable se encuentra en la última parte de la ruta y se convierte en el valor SKU de los puntos interactivos/mapas de imagen:<strong><code>6422350843</code>, <code>1607745002,</code> </strong><code>0086724882.</code></p> </td>
+    </ul> <p>La parte de la variable se encuentra en la última parte de la ruta y se convierte en el valor SKU de los puntos interactivos o los mapas de imagen: <strong><code>6422350843</code>, <code>1607745002,</code> </strong><code>0086724882.</code></p> </td>
   </tr>
   <tr>
    <td>SKU e ID de categoría en la cadena de consulta.</td>
@@ -169,7 +169,7 @@ Considere los siguientes ejemplos de direcciones URL de vista rápida y las vari
      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
-    </ul> <p>En este caso, la dirección URL consta de dos partes diferentes. El SKU se almacena en <code>prodId</code> y el ID de categoría se almacena en la variable <code>category=</code>parámetro.</p> <p>Como tal, las definiciones de mapa de imagen/punto interactivo son pares. Es decir, un valor SKU y una variable adicional llamada <code>categoryId</code>. Los pares resultantes son los siguientes:</p>
+    </ul> <p>En este caso, la dirección URL consta de dos partes diferentes. El SKU se almacena en el parámetro <code>prodId</code> y el ID de categoría en el parámetro <code>category=</code>.</p> <p>Como tal, las definiciones de mapa de imagen/punto interactivo son pares. Es decir, un valor SKU y una variable adicional llamada <code>categoryId</code>. Los pares resultantes son los siguientes:</p>
     <ul>
      <li><p>El SKU es <strong><code>305466</code></strong> y <code>categoryId</code> es <code>1100004</code>.</p> </li>
      <li><p>El SKU es <strong><code>310181</code></strong> y <code>categoryId</code> es <strong><code>1100004</code></strong>.</p> </li>
@@ -181,45 +181,45 @@ Considere los siguientes ejemplos de direcciones URL de vista rápida y las vari
 
 ## Cargar titulares de imagen {#uploading-image-banners}
 
-Si ya ha cargado las imágenes que desea utilizar, avance al siguiente paso, [Crear conjuntos de carrusel](#creating-carousel-sets). Las imágenes utilizadas en el carrusel deben cargarse una vez habilitado Dynamic Media.
+Si ya has subido las imágenes que quieres usar, avanza al siguiente paso: [Crear conjuntos de carrusel](#creating-carousel-sets). Las imágenes utilizadas en el carrusel deben cargarse una vez habilitado Dynamic Media.
 
-Para cargar titulares de imágenes, consulte [Cargar recursos](/help/assets/manage-digital-assets.md).
+Para cargar titulares de imagen, consulte [Cargar recursos](/help/assets/manage-digital-assets.md).
 
 ## Crear conjuntos de carrusel {#creating-carousel-sets}
 
 >[!NOTE]
 >
->Los usuarios no administrativos deben agregarse al **[!UICONTROL dam-users]** para poder crear o editar titulares de carrusel. Si tiene problemas para crear o editar, consulte con el administrador del sistema, que puede agregarle al **[!UICONTROL dam-users]** grupo.
+>Los usuarios que no son administradores deben agregarse al grupo **[!UICONTROL dam-users]** para poder crear o editar titulares de carrusel. Si tiene problemas para crear o editar, consulte con el administrador del sistema, que puede agregarle al grupo **[!UICONTROL dam-users]**.
 
 **Para crear conjuntos de carrusel:**
 
-1. En Assets, vaya a la carpeta en la que desea crear el conjunto de carrusel y vaya a **[!UICONTROL Crear > Conjunto de carrusel]**.
-1. En la página Editor de titulares de carrusel, seleccione **[!UICONTROL Pulse para abrir el Selector de recursos]** para seleccionar la imagen de la primera diapositiva.
+1. En Assets, vaya a la carpeta donde desee crear el conjunto de carrusel y vaya a **[!UICONTROL Crear > Conjunto de carrusel]**.
+1. En la página Editor de titulares de carrusel, seleccione **[!UICONTROL Pulse para abrir el Selector de recursos]** y seleccionar la imagen de la primera diapositiva.
 
    En la página Editor de titulares de carrusel, realice una de las acciones siguientes:
 
-   * Cerca de la esquina superior izquierda de la página, seleccione **[!UICONTROL Agregar diapositiva]** icono.
+   * Cerca de la esquina superior izquierda de la página, seleccione **[!UICONTROL Agregar diapositiva]**.
 
-   * Cerca del centro de la página, seleccione **[!UICONTROL Pulse para abrir el Selector de recursos]**.
+   * Cerca de la mitad de la página, seleccione **[!UICONTROL Puntee para abrir el Selector de recursos]**.
 
    Seleccione para seleccionar los recursos que desea incluir en el conjunto de carrusel. Los recursos seleccionados tienen un icono de marca de verificación sobre ellos. Cuando haya terminado, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Seleccionar]**.
 
-   Con el Selector de recursos, puede buscar recursos escribiendo una palabra clave y seleccionando **[!UICONTROL Volver]**. También puede aplicar filtros para restringir los resultados de búsqueda. Puede filtrar por ruta, colección, tipo de archivo y etiqueta. Seleccione el filtro y, a continuación, seleccione el **[!UICONTROL Filtrar]** en la barra de herramientas. Para cambiar la vista, seleccione el icono Ver y haga clic en **[!UICONTROL Vista de columna]**, **[!UICONTROL Vista de tarjeta]**, o **[!UICONTROL Vista de lista]**.
+   Con el Selector de recursos, puede buscar recursos escribiendo una palabra clave y seleccionando **[!UICONTROL Retorno]**. También puede aplicar filtros para restringir los resultados de búsqueda. Puede filtrar por ruta, colección, tipo de archivo y etiqueta. Seleccione el filtro y, a continuación, seleccione el icono **[!UICONTROL Filtro]** en la barra de herramientas. Para cambiar la vista, selecciona el icono Ver y selecciona **[!UICONTROL Vista de columna]**, **[!UICONTROL Vista de tarjeta]** o **[!UICONTROL Vista de lista]**.
 
-   Consulte [Trabajo con selectores](/help/assets/dynamic-media/working-with-selectors.md) para obtener más información.
+   Consulte [Trabajar con selectores](/help/assets/dynamic-media/working-with-selectors.md) para obtener más información.
 
 1. Siga agregando diapositivas hasta que haya agregado todas las imágenes por las que desea girar en el conjunto de carrusel.
 1. (Opcional) Realice una de las siguientes acciones:
 
    * Si es necesario, arrastre la diapositiva para reorganizar las imágenes en la lista establecida.
-   * Para eliminar una imagen, seleccione la imagen y, a continuación, seleccione **[!UICONTROL Eliminar diapositiva]** en la barra de herramientas.
+   * Para eliminar una imagen, selecciónela y, a continuación, seleccione **[!UICONTROL Eliminar diapositiva]** en la barra de herramientas.
 
    * Para aplicar un ajuste preestablecido, cerca de la esquina superior derecha de la página, seleccione la lista desplegable de ajustes preestablecidos y, a continuación, seleccione un ajuste preestablecido para aplicarlo a la vez.
 
    Para eliminar una diapositiva, seleccione la diapositiva. En la barra de herramientas, seleccione **[!UICONTROL Eliminar diapositiva]** en la barra de herramientas. Para mover una diapositiva, seleccione el icono de reordenar y desplácese a la ubicación deseada.
 
-1. Después de agregar las imágenes en las diapositivas, puede agregar un punto interactivo, un mapa de imagen o ambos a la imagen. Consulte [Añadir puntos interactivos o mapas de imagen a un titular de imagen](#adding-hotspots-or-image-maps-to-an-image-banner).
-1. Puede cambiar el diseño visual y el comportamiento de los conjuntos de carrusel. Seleccione el **[!UICONTROL Comportamiento]** y **[!UICONTROL Aspecto]** pestañas si desea ajustar el aspecto del titular del carrusel o el comportamiento de los componentes específicos. Consulte [Administrar ajustes preestablecidos de visor](/help/assets/dynamic-media/viewer-presets.md) para obtener más información sobre cómo utilizar el editor de visualizadores.
+1. Después de agregar las imágenes en las diapositivas, puede agregar un punto interactivo, un mapa de imagen o ambos a la imagen. Ver [Agregar puntos interactivos o mapas de imagen a un titular de imagen](#adding-hotspots-or-image-maps-to-an-image-banner).
+1. Puede cambiar el diseño visual y el comportamiento de los conjuntos de carrusel. Seleccione las pestañas **[!UICONTROL Comportamiento]** y **[!UICONTROL Apariencia]** si desea ajustar el aspecto del titular del carrusel o el comportamiento de los componentes específicos. Consulte [Administrar ajustes preestablecidos de visor](/help/assets/dynamic-media/viewer-presets.md) para obtener más información sobre cómo usar el editor de visor.
 
    >[!NOTE]
    >
@@ -231,9 +231,9 @@ Para cargar titulares de imágenes, consulte [Cargar recursos](/help/assets/mana
    >* Cambie el estilo de resaltado de un mapa de imagen o el icono utilizado para las zonas interactivas.
    >* Antes de editar un ajuste preestablecido de visualizador, elija el estilo en el que desea basarlo. Si no elige un estilo, cuando empiece a editar el ajuste preestablecido de visualizador, perderá todos los cambios si cambia a un ajuste preestablecido diferente.
 
-   También puede obtener una vista previa del aspecto del titular del carrusel. Consulte [(Opcional) Previsualizar titulares de carrusel](#optional-previewing-carousel-banners).
+   También puede obtener una vista previa del aspecto del titular del carrusel. Consulte [ (Opcional) Vista previa de titulares de carrusel](#optional-previewing-carousel-banners).
 
-1. Seleccionar **[!UICONTROL Guardar]** cuando termine.
+1. Seleccione **[!UICONTROL Guardar]** cuando termine.
 
 ## Añadir puntos interactivos o mapas de imagen a un titular de imagen {#adding-hotspots-or-image-maps-to-an-image-banner}
 
@@ -241,7 +241,7 @@ Puede añadir zonas interactivas o mapas de imagen a un titular mediante el edit
 
 Al agregar zonas interactivas o mapas de imagen, puede definirlos como una visualización emergente de Vista rápida, como un hipervínculo o como un Fragmento de experiencia.
 
-Consulte [Fragmento de experiencia](/help/sites-cloud/authoring/fragments/content-fragments.md).
+Ver [Fragmento de experiencia](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
@@ -253,7 +253,7 @@ Recuerde guardar su trabajo a medida que añada puntos interactivos o mapas de i
 
 Cuando termine de crear el titular del carrusel, puede utilizar la opción Previsualizar para ver una representación de cómo se muestra el titular del carrusel a los clientes.
 
-Consulte [(Opcional) Previsualizar titulares de carrusel](#optional-previewing-carousel-banners).
+Consulte [ (Opcional) Vista previa de titulares de carrusel](#optional-previewing-carousel-banners).
 
 >[!NOTE]
 >
@@ -267,12 +267,12 @@ Consulte [(Opcional) Previsualizar titulares de carrusel](#optional-previewing-c
 
 <!-- See also [Adding Image Maps](/help/assets/image-maps.md). -->
 
-**Para añadir puntos interactivos o mapas de imagen a un titular de imagen:**
+**Para agregar puntos interactivos o mapas de imagen a un titular de imagen:**
 
-1. En Recursos, vaya al conjunto de carrusel que desee hacer interactivo.
+1. En Assets, vaya al conjunto de carrusel que desee hacer interactivo.
 1. Seleccione el conjunto de carrusel y seleccione **[!UICONTROL Editar]**. Se abre el Editor del visor de carrusel.
 1. Seleccione la diapositiva que desea convertir en interactiva.
-1. Cerca de la esquina superior izquierda de la página, seleccione **[!UICONTROL Punto interactivo]** o **[!UICONTROL Mapa de imagen]**.
+1. Cerca de la esquina superior izquierda de la página, seleccione **[!UICONTROL punto interactivo]** o **[!UICONTROL mapa de imagen]**.
 1. Realice una de las acciones siguientes:
 
    * Para zonas interactivas: en la imagen, seleccione una ubicación en la que desee que aparezca la zona interactiva.
@@ -280,23 +280,23 @@ Consulte [(Opcional) Previsualizar titulares de carrusel](#optional-previewing-c
 
    Si es necesario, arrastre el punto interactivo o el mapa de imagen a una nueva ubicación. O bien, utilice las teclas de flecha del teclado para controlar la posición de una zona interactiva seleccionada. Añada más puntos interactivos o mapas de imagen según sea necesario.
 
-   Para eliminar un punto interactivo o un mapa de imagen, seleccione la **[!UICONTROL Acciones]** pestaña. En el **[!UICONTROL Puntos interactivos y mapas]** encabezado, desde el **[!UICONTROL Tipo seleccionado]** , seleccione el nombre del punto interactivo o del mapa de imagen que desea eliminar. Seleccione el **[!UICONTROL Papelera]** junto al menú y, a continuación, seleccione **[!UICONTROL Eliminar]**.
+   Para eliminar un punto interactivo o un mapa de imagen, seleccione la pestaña **[!UICONTROL Acciones]**. Bajo el encabezado **[!UICONTROL Mapas y puntos interactivos]**, en la lista desplegable **[!UICONTROL Tipo seleccionado]**, seleccione el nombre del punto interactivo o del mapa de imagen que desee eliminar. Seleccione el icono **[!UICONTROL Papelera]** junto al menú y, a continuación, seleccione **[!UICONTROL Eliminar]**.
 
-1. En el campo de texto Nombre, escriba el nombre del punto interactivo o del mapa de imagen. Este nombre también aparece en la **[!UICONTROL Mapas y puntos interactivos]** lista desplegable. Proporcionar un nombre facilita la identificación del punto interactivo o el mapa de imagen si decide cambiarlo en el futuro.
-1. Realice una de las siguientes acciones en la **[!UICONTROL Acciones]** pestaña:
+1. En el campo de texto Nombre, escriba el nombre del punto interactivo o del mapa de imagen. Este nombre también aparece en la lista desplegable **[!UICONTROL Mapas y puntos interactivos]**. Proporcionar un nombre facilita la identificación del punto interactivo o el mapa de imagen si decide cambiarlo en el futuro.
+1. Realice una de las siguientes acciones en la ficha **[!UICONTROL Acciones]**:
 
-   * Seleccionar **[!UICONTROL Quickview]**.
+   * Seleccione **[!UICONTROL Quickview]**.
 
-      * Si es un Experience Manager Sites <!-- and Ecommerce--> Para abrir la página Seleccionar producto, seleccione el icono Selector de productos (lupa). Para volver al Editor de titulares de carrusel, seleccione el producto que desee utilizar y, a continuación, seleccione la marca de verificación en la esquina superior derecha de la página.
-      * Si no es un Experience Manager Sites <!-- or Ecommerce --> cliente:
+      * Si es cliente de Experience Manager Sites <!-- and Ecommerce-->, seleccione el icono Selector de productos (lupa) para abrir la página Seleccionar producto. Para volver al Editor de titulares de carrusel, seleccione el producto que desee utilizar y, a continuación, seleccione la marca de verificación en la esquina superior derecha de la página.
+      * Si no es cliente de Experience Manager Sites <!-- or Ecommerce -->:
 
-         * Defina las variables. Consulte [Identificación de variables de punto interactivo](#identifying-hotspot-and-image-map-variables).
+         * Defina las variables. Consulte [Identificar variables de puntos interactivos](#identifying-hotspot-and-image-map-variables).
          * A continuación, introduzca manualmente el valor SKU. En el campo de texto Valor de SKU, escriba la SKU del producto (unidad de stock), que es un identificador único para cada producto o servicio distinto que ofrece. El valor SKU introducido rellena automáticamente la parte variable de la plantilla de vista rápida. El sistema ahora sabe que debe asociar el punto interactivo seleccionado con la vista rápida de un SKU en particular.
-         * (Opcional) Si hay otras variables dentro de la vista rápida que debe utilizar para identificar un producto con más detalle, seleccione **[!UICONTROL Añadir variable genérica]**. En el campo de texto, especifique una variable adicional. Por ejemplo, category=Mens es una variable agregada.
+         * (Opcional) Si la vista rápida contiene otras variables que debe usar para identificar un producto con más detalle, seleccione **[!UICONTROL Agregar variable genérica]**. En el campo de texto, especifique una variable adicional. Por ejemplo, category=Mens es una variable agregada.
 
-         * Consulte [Trabajo con selectores](/help/assets/dynamic-media/working-with-selectors.md) para obtener más información.
+         * Consulte [Trabajar con selectores](/help/assets/dynamic-media/working-with-selectors.md) para obtener más información.
 
-   * Seleccionar **[!UICONTROL Hipervínculo]**.
+   * Seleccione **[!UICONTROL Hipervínculo]**.
 
       * Si es cliente de Experience Manager Sites, seleccione el icono Selector de sitio (carpeta) para ir a una dirección URL.
 
@@ -308,12 +308,12 @@ Consulte [(Opcional) Previsualizar titulares de carrusel](#optional-previewing-c
 
    Asegúrese de especificar si desea abrir el vínculo en una nueva pestaña del explorador (opción predeterminada recomendada) o en la misma pestaña.
 
-   Consulte [Trabajo con selectores](/help/assets/dynamic-media/working-with-selectors.md) para obtener más información.
+   Consulte [Trabajar con selectores](/help/assets/dynamic-media/working-with-selectors.md) para obtener más información.
 
-   * Seleccionar **[!UICONTROL Fragmento de experiencia]**.
+   * Seleccione **[!UICONTROL Fragmento de experiencia]**.
 
-      * Si es cliente de Experience Manager Sites, seleccione el icono Buscar (lupa) para abrir la página Fragmento de experiencia. Para volver a la página de administración de puntos interactivos, seleccione el fragmento de experiencia que desee utilizar y, en la esquina superior derecha de la página, seleccione **[!UICONTROL Seleccionar]**.
-Consulte [Fragmentos de experiencias](/help/sites-cloud/authoring/fragments/content-fragments.md).
+      * Si es cliente de Experience Manager Sites, seleccione el icono Buscar (lupa) para abrir la página Fragmento de experiencia. Para volver a la página de administración de puntos interactivos, seleccione el fragmento de experiencia que desee usar y, en la esquina superior derecha de la página, seleccione **[!UICONTROL Seleccionar]**.
+Ver [Fragmentos de experiencias](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
       * Especifique la anchura y altura del fragmento de experiencia tal como aparece en el banner.
 
@@ -325,20 +325,20 @@ Consulte [Fragmentos de experiencias](/help/sites-cloud/authoring/fragments/cont
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
-   También puede obtener una vista previa del aspecto del titular del carrusel. Consulte [(Opcional) Previsualizar titulares de carrusel](#optional-previewing-carousel-banners).
+   También puede obtener una vista previa del aspecto del titular del carrusel. Consulte [ (Opcional) Vista previa de titulares de carrusel](#optional-previewing-carousel-banners).
 
 1. Seleccione **[!UICONTROL Guardar]**.
-1. Publique el conjunto de carrusel. Al publicar, se crea el código incrustado o la dirección URL que puede utilizar en la página del sitio web. Si es cliente de Experience Manager Sites, agregue el conjunto de carrusel directamente a la página web.
+1. Publish el conjunto de carrusel. Al publicar, se crea el código incrustado o la dirección URL que puede utilizar en la página del sitio web. Si es cliente de Experience Manager Sites, agregue el conjunto de carrusel directamente a la página web.
 
-   Consulte [Publicar recursos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+   Consulte [recursos de Publish](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-   Consulte [Añadir un conjunto de carrusel a la página de aterrizaje del sitio web](#adding-a-carousel-banner-to-your-website-page)
+   Ver [Agregar un conjunto de carrusel a la página de aterrizaje del sitio web](#adding-a-carousel-banner-to-your-website-page)
 
 ## Editar conjuntos de carrusel {#editing-carousel-sets}
 
 >[!NOTE]
 >
->Los usuarios no administrativos deben agregarse al **[!UICONTROL dam-users]** para poder crear o editar titulares de carrusel. Si tiene problemas para crear o editar, consulte con el administrador del sistema, que puede agregarle al **[!UICONTROL dam-users]** grupo.
+>Los usuarios que no son administradores deben agregarse al grupo **[!UICONTROL dam-users]** para poder crear o editar titulares de carrusel. Si tiene problemas para crear o editar, consulte con el administrador del sistema, que puede agregarle al grupo **[!UICONTROL dam-users]**.
 
 Puede realizar varias tareas de edición en los conjuntos de carrusel, como las siguientes:
 
@@ -353,21 +353,21 @@ Puede realizar varias tareas de edición en los conjuntos de carrusel, como las 
 
 1. Realice una de las siguientes acciones:
 
-   * Pase el ratón sobre un recurso de conjunto de carrusel y seleccione **[!UICONTROL Editar]** (icono de lápiz).
-   * Pase el ratón sobre un recurso de conjunto de carrusel y seleccione **[!UICONTROL Seleccionar]** (icono de marca de verificación) y, en la barra de herramientas, seleccione **[!UICONTROL Editar]**.
+   * Pase el ratón sobre un recurso de conjunto de carrusel y luego seleccione **[!UICONTROL Editar]** (icono de lápiz).
+   * Pase el ratón sobre un recurso de conjunto de carrusel, seleccione **[!UICONTROL Seleccionar]** (icono de marca de verificación) y, en la barra de herramientas, seleccione **[!UICONTROL Editar]**.
 
-   * Seleccione un recurso de conjunto de carrusel y, en la esquina superior izquierda de la página, seleccione **[!UICONTROL Editar]** (icono de lápiz).
+   * Seleccione un recurso de conjunto de carrusel y, a continuación, en la esquina superior izquierda de la página, seleccione **[!UICONTROL Editar]** (icono de lápiz).
 
 1. Para editar el conjunto de carrusel, realice una de las siguientes acciones:
 
-   * Para añadir una diapositiva, seleccione la **[!UICONTROL Agregar diapositiva]** icono. Vaya al recurso que desee agregar a esa diapositiva y, a continuación, active la marca de verificación.
+   * Para agregar una diapositiva, seleccione el icono **[!UICONTROL Agregar diapositiva]**. Vaya al recurso que desee agregar a esa diapositiva y, a continuación, active la marca de verificación.
    * Para reordenar las diapositivas, arrastre una diapositiva a una nueva ubicación (seleccione el icono de reordenar para mover los elementos).
-   * Para añadir un punto interactivo o un mapa de imagen, seleccione los iconos del punto interactivo o del mapa de imagen y consulte [Añadir puntos interactivos y mapas de imagen a un titular de imagen](#adding-hotspots-or-image-maps-to-an-image-banner).
-   * Para editar el aspecto o el comportamiento del conjunto de carrusel, seleccione la **[!UICONTROL Aspecto]** pestaña o **[!UICONTROL Comportamiento]** y, a continuación, defina las opciones que desee.
-   * Para editar puntos interactivos o mapas de imagen, seleccione un punto interactivo o mapa de imagen en la diapositiva correspondiente. En el **[!UICONTROL Acciones]** pestaña, realice los cambios.
+   * Para agregar un punto interactivo o un mapa de imagen, seleccione los iconos del punto interactivo o del mapa de imagen y vea [Agregar puntos interactivos y mapas de imagen a un titular de imagen](#adding-hotspots-or-image-maps-to-an-image-banner).
+   * Para editar el aspecto o el comportamiento del conjunto de carrusel, seleccione la ficha **[!UICONTROL Aspecto]** o **[!UICONTROL Comportamiento]** y, a continuación, defina las opciones que desee.
+   * Para editar puntos interactivos o mapas de imagen, seleccione un punto interactivo o mapa de imagen en la diapositiva correspondiente. En la ficha **[!UICONTROL Acciones]**, realice los cambios.
    * Para eliminar una diapositiva, selecciónela y, a continuación, seleccione **[!UICONTROL Eliminar diapositiva]** en la barra de herramientas.
-   * Para aplicar un ajuste preestablecido, cerca de la esquina superior derecha de la página, seleccione la **[!UICONTROL Preestablecido]** y, a continuación, seleccione un ajuste preestablecido de visualizador.
-   * Para eliminar un conjunto de carrusel completo, vaya al conjunto de carrusel, selecciónelo y, a continuación, seleccione **[!UICONTROL Eliminar]**.
+   * Para aplicar un ajuste preestablecido, cerca de la esquina superior derecha de la página, seleccione la lista desplegable **[!UICONTROL Ajuste preestablecido]** y, a continuación, seleccione un ajuste preestablecido de visualizador.
+   * Para eliminar un conjunto de carrusel completo, ve al conjunto de carrusel, selecciónalo y, a continuación, selecciona **[!UICONTROL Eliminar]**.
 
    >[!NOTE]
    >
@@ -378,31 +378,31 @@ Puede realizar varias tareas de edición en los conjuntos de carrusel, como las 
 Puede usar Vista previa para ver cómo se muestra el banner del carrusel a los clientes. El uso de la vista previa también permite probar los puntos interactivos y los mapas de imagen del titular del carrusel para asegurarse de que se comportan según lo esperado.
 
 Cuando esté satisfecho con el titular del carrusel, puede publicarlo.
-Consulte [Incrustar el visor de vídeo o de imágenes en una página web](/help/assets/dynamic-media/embed-code.md).
-Consulte [Vinculación de URL en la aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
-Consulte [Añadir recursos de Dynamic Media a las páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Ver [Incrustar el visor de vídeo o de imágenes en una página web](/help/assets/dynamic-media/embed-code.md).
+Ver [URL de vínculo a su aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
+Consulte [Agregar Dynamic Media Assets a las páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
-Puede previsualizar los titulares del carrusel desde el Editor de carrusel (método preferido) o desde el **[!UICONTROL Espectadores]** lista.
+Puede obtener una vista previa de los titulares de carrusel desde el Editor de carrusel (método preferido) o desde la lista **[!UICONTROL Visores]**.
 
-**Para previsualizar los titulares del carrusel:**
+**Para previsualizar opcionalmente los titulares del carrusel:**
 
-1. Entrada **[!UICONTROL Assets]**, navegue hasta un banner de carrusel existente que haya creado y seleccione para abrirlo.
+1. En **[!UICONTROL Assets]**, navegue hasta un banner de carrusel existente que haya creado y seleccione para abrirlo.
 1. Seleccione **[!UICONTROL Editar]**.
 1. En la lista de ajustes preestablecidos de visualizador, en la esquina derecha de la barra de herramientas, seleccione un visualizador para previsualizar el titular del carrusel.
 
    ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. Seleccionar **[!UICONTROL Previsualizar]**.
+1. Seleccionar **[!UICONTROL vista previa]**.
 1. Para probar las acciones asociadas, seleccione las zonas interactivas o los mapas de imagen de la imagen.
 
-**Para previsualizar titulares de carrusel desde la lista Visualizadores:**
+**Para obtener una vista previa de los titulares de carrusel de la lista de visores:**
 
-1. Entrada **[!UICONTROL Assets]**, navegue hasta un banner de carrusel existente que haya creado y seleccione para abrirlo.
+1. En **[!UICONTROL Assets]**, navegue hasta un banner de carrusel existente que haya creado y seleccione para abrirlo.
 1. Cerca de la esquina superior izquierda de la página Vista previa, seleccione el icono Contenido.
-1. En el **[!UICONTROL Espectadores]** en el panel de la izquierda de la página, seleccione el nombre del ajuste preestablecido del visualizador de banners de carrusel que desee utilizar.
+1. En la lista **[!UICONTROL Visualizadores]** del panel de la izquierda de la página, seleccione el nombre del ajuste preestablecido del visualizador de banners de carrusel que desee utilizar.
 1. Para probar las acciones asociadas, seleccione las zonas interactivas o los mapas de imagen de la imagen.
 
-## Publicar titulares de carrusel {#publishing-carousel-banners}
+## Titulares del carrusel de Publish {#publishing-carousel-banners}
 
 Para utilizar el carrusel, debe publicarlo. La publicación de un conjunto de carrusel activa la URL y el código de incrustación. También publica el carrusel en la nube de Dynamic Media, que está integrado con una CDN para una entrega escalable y con rendimiento.
 
@@ -412,7 +412,7 @@ Para utilizar el carrusel, debe publicarlo. La publicación de un conjunto de ca
 >
 >Además, si modifica una imagen interactiva publicada preexistente que utiliza en un titular de carrusel, publique la imagen interactiva para que esos cambios se reflejen en el titular del carrusel.
 
-Consulte [Publicar recursos de Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obtener información sobre cómo publicar titulares de carrusel.
+Consulte [Publish Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obtener información sobre cómo publicar titulares de carrusel.
 
 ## Añadir un titular de carrusel a la página del sitio web {#adding-a-carousel-banner-to-your-website-page}
 
@@ -420,12 +420,12 @@ Después de haber cargado imágenes de titular para crear un carrusel, ha agrega
 
 >[!NOTE]
 >
->Si es cliente de Experience Manager Sites, puede agregar el titular del carrusel directamente a la página arrastrando el componente Medios interactivos a la página. Consulte [Añadir recursos de Dynamic Media a las páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+>Si es cliente de Experience Manager Sites, puede agregar el titular del carrusel directamente a la página arrastrando el componente Medios interactivos a la página. Consulte [Agregar Dynamic Media Assets a las páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 Sin embargo, si es cliente independiente de Experience Manager Assets, puede añadir manualmente el banner de carrusel a la página de aterrizaje del sitio web.
 
 1. Copie el código incrustado del conjunto de carrusel publicado.
-Consulte [Incrustar el visor de vídeo o de imágenes en una página web](/help/assets/dynamic-media/embed-code.md).
+Ver [Incrustar el visor de vídeo o de imágenes en una página web](/help/assets/dynamic-media/embed-code.md).
 
 1. Añada el código incrustado que ha copiado de Experience Manager Assets a su página web.
 El código incrustado copiado es adaptable, por lo que se ajusta automáticamente al área de incrustación de la página.
@@ -462,10 +462,10 @@ Por lo tanto, solo es necesario descomentar el código y reemplazar el cuerpo de
 
 El proceso de construir la URL de vista rápida es opuesto al proceso utilizado para identificar las variables de punto interactivo y mapa de imagen que se trataron anteriormente.
 
-Consulte [Identificación de variables de puntos interactivos y mapas de imagen](#identifying-hotspot-and-image-map-variables).
+Ver [Identificar variables de puntos interactivos y mapas de imagen](#identifying-hotspot-and-image-map-variables).
 
 El último paso para almacenar en déclencheur la URL de vista rápida y activar el panel de vista rápida muy probablemente requiera la asistencia de una persona de TI front-end de su departamento de TI. Tienen los conocimientos necesarios para saber cómo almacenar en déclencheur con precisión la implementación de vista rápida desde el paso adecuado, teniendo una URL de vista rápida lista para usar.
 
 ## Crear una ventana emergente personalizada con Windows® mediante Quickview {#using-quickviews-to-create-custom-pop-ups}
 
-Consulte [Crear una ventana emergente personalizada con Windows® mediante Quickview](/help/assets/dynamic-media/custom-pop-ups.md).
+Consulte [Crear ventanas emergentes personalizadas® con Quickview](/help/assets/dynamic-media/custom-pop-ups.md).

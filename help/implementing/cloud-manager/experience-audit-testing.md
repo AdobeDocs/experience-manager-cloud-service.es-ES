@@ -47,7 +47,7 @@ La auditoría de experiencias está disponible para Cloud Manager:
 * Canalizaciones de producción de Sites, de forma predeterminada.
 * Canalizaciones de desarrollo front-end, opcionalmente.
 
-Consulte la [Sección Configuración](#configuration) para obtener más información sobre cómo configurar la auditoría para los entornos opcionales.
+Consulte la [sección Configuración](#configuration) para obtener más información sobre cómo configurar la auditoría para los entornos opcionales.
 
 ## Configuración {#configuration}
 
@@ -57,25 +57,25 @@ Puede configurar qué páginas se incluyen en la auditoría de experiencias al c
 
 1. Según el tipo de canalización que desee configurar, siga las instrucciones para:
 
-   * Añadir un nuevo [canalización de producción,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) si desea definir las rutas que debe evaluar la auditoría.
-   * Añadir un nuevo [canalización que no sea de producción,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) si desea habilitar la auditoría en una canalización front-end o de full-stack de desarrollo.
-   * O puedes [editar una canalización existente,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) y actualizar las opciones existentes.
+   * Agregue una nueva [canalización de producción,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) si desea definir las rutas que evaluará la auditoría.
+   * Agregue una nueva canalización [que no sea de producción,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) si desea habilitar la auditoría en una canalización front-end o de desarrollo de pila completa.
+   * O puede [editar una canalización existente,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) y actualizar las opciones existentes.
 
-1. Si está agregando o editando una canalización que no es de producción para la que desea utilizar la auditoría de experiencias, debe seleccionar la **Auditoría de experiencias** de la casilla de verificación **Código fuente** pestaña.
+1. Si está agregando o editando una canalización que no es de producción para la que desea usar la auditoría de experiencias, debe seleccionar la casilla de verificación **Auditoría de experiencias** en la pestaña **Código Source**.
 
-   ![Habilitar la auditoría de experiencias](assets/experience-audit-enable.jpg)
+   ![Habilitando auditoría de experiencias](assets/experience-audit-enable.jpg)
 
    * Esto solo es necesario para canalizaciones que no sean de producción.
-   * El **Auditoría de experiencias** aparece cuando se selecciona la casilla de verificación.
+   * La ficha **Auditoría de experiencias** aparece cuando se selecciona la casilla de verificación.
 
-1. Tanto para las canalizaciones de producción como para las que no son de producción, debe definir las rutas que deben incluirse en la auditoría de experiencias en la **Auditoría de experiencias** pestaña.
+1. Tanto para las canalizaciones de producción como para las que no son de producción, usted define las rutas que deben incluirse en la auditoría de experiencias en la pestaña **Auditoría de experiencias**.
 
-   * Las rutas de página deben comenzar con `/` y son relativos al sitio.
-   * Por ejemplo, si el sitio es `wknd.site` y desea incluir `https://wknd.site/us/en/about-us.html` en la auditoría de experiencias, introduzca la ruta `/us/en/about-us.html`.
+   * Las rutas de acceso a la página deben comenzar por `/` y son relativas al sitio.
+   * Por ejemplo, si el sitio es `wknd.site` y desea incluir a `https://wknd.site/us/en/about-us.html` en la auditoría de experiencias, escriba la ruta de acceso `/us/en/about-us.html`.
 
    ![Definición de una ruta para la auditoría de experiencias](assets/experience-audit-add-page.png)
 
-1. Haga clic o pulse **Agregar página** y la ruta se completa automáticamente con la dirección de su entorno y se agrega a la tabla de rutas.
+1. Pulse o haga clic en **Agregar página**, y la ruta se completará automáticamente con la dirección de su entorno y se agregará a la tabla de rutas.
 
    ![Guardar ruta de acceso a la tabla](assets/experience-audit-page-added.png)
 
@@ -103,11 +103,11 @@ Hay una puntuación a nivel agregado para cada tipo de prueba, como rendimiento,
 
 La métrica de cambios puede tener uno de los siguientes valores.
 
-* **Valor positivo** : Las páginas han mejorado en la prueba seleccionada desde que se ejecutó la última canalización de producción.
+* **Valor positivo**: las páginas han mejorado en la prueba seleccionada desde que se ejecutó la última canalización de producción.
 
-* **Valor negativo** : las páginas han retrocedido en la prueba seleccionada desde que se ejecutó la última canalización de producción.
+* **Valor negativo**: las páginas han retrocedido en la prueba seleccionada desde que se ejecutó la última canalización de producción.
 
-* **Sin cambios** : Las páginas tienen la misma puntuación desde que se ejecutó la última canalización de producción.
+* **Sin cambio**: las páginas tienen la misma puntuación desde que se ejecutó la última canalización de producción.
 
 * **N/D**: No había ninguna puntuación disponible para comparar.
 

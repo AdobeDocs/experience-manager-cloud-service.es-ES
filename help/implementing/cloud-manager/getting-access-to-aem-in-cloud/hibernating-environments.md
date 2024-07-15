@@ -34,7 +34,7 @@ Siga estos pasos para hibernar manualmente los entornos de programa de zona prot
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. En el **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)** , toque o haga clic en el programa que desea hibernar para mostrar sus detalles.
+1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, toque o haga clic en el programa que desea hibernar para mostrar sus detalles.
 
 1. En la tarjeta **Entornos**, haga clic en el botón de los tres puntos y seleccione **Developer Console**.
 
@@ -50,11 +50,11 @@ Siga estos pasos para hibernar manualmente los entornos de programa de zona prot
 
    ![Confirmar hibernación](assets/hibernate-2.png)
 
-Cuando la hibernación se realice correctamente, verá la notificación de finalización del proceso de hibernación para su entorno en el **Developer Console** pantalla.
+Cuando la hibernación se realice correctamente, verá la notificación de finalización del proceso de hibernación para su entorno en la pantalla **Developer Console**.
 
 ![Confirmación de hibernación](assets/hibernate-4.png)
 
-En Developer Console también puede hacer clic en **Entornos** en las rutas de exploración encima de **Pod** lista desplegable para obtener una lista de entornos para hibernar.
+En Developer Console también puede hacer clic en el vínculo **Entornos** en las rutas de exploración que se encuentran encima de la lista desplegable **Pod** para ver una lista de entornos para hibernar.
 
 ![Lista de entornos para hibernar](assets/hibernate-1b.png)
 
@@ -68,13 +68,13 @@ Puede hibernar manualmente el programa de zona protegida desde Developer Console
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. En el **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)** , toque o haga clic en el programa que desea anular la hibernación para mostrar sus detalles.
+1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, toque o haga clic en el programa que desea anular la hibernación para mostrar sus detalles.
 
 1. En la tarjeta **Entornos**, haga clic en el botón de los tres puntos y seleccione **Developer Console**.
 
    * Consulte [Acceso a Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) para obtener más información sobre Developer Console.
 
-1. Clic **Anular la hibernación**.
+1. Haga clic en **Deshibernar**.
 
    ![Botón Deshibernar](assets/de-hibernation-img1.png)
 
@@ -91,7 +91,7 @@ Puede hibernar manualmente el programa de zona protegida desde Developer Console
    ![Finalización de la hibernación](assets/de-hibernation-img4.png)
 
 
-En Developer Console también puede hacer clic en **Entornos** en las rutas de exploración encima de **Pod** lista desplegable para ver una lista de entornos para anular la hibernación.
+En Developer Console también puede hacer clic en el vínculo **Entornos** en las rutas de exploración que se encuentran encima de la lista desplegable **Pod** para ver una lista de entornos para anular la hibernación.
 
 ![Lista de pods hibernados](assets/de-hibernate-1b.png)
 

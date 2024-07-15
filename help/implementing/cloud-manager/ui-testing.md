@@ -26,7 +26,7 @@ La prueba de IU personalizada es una característica opcional que le permite cre
 
 AEM ofrece un conjunto integrado de [Puertas de calidad de Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) para garantizar actualizaciones sin problemas en las aplicaciones personalizadas. En concreto, las puertas de pruebas de TI ya admiten la creación y automatización de pruebas personalizadas mediante las API de AEM.
 
-Las pruebas de IU se empaquetan en una imagen Docker para permitir una amplia variedad de lenguajes y marcos de trabajo (como Cypress, Selenium, Java y Maven, y JavaScript). Además, se puede generar fácilmente un proyecto de pruebas de interfaz de usuario utilizando [AEM El arquetipo del proyecto de la.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
+Las pruebas de IU se empaquetan en una imagen Docker para permitir una amplia variedad de lenguajes y marcos de trabajo (como Cypress, Selenium, Java y Maven, y JavaScript). AEM Además, se puede generar fácilmente un proyecto de pruebas de interfaz de usuario utilizando [el arquetipo del proyecto de la interfaz de usuario de la interfaz de usuario.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
 
 El Adobe fomenta el uso de Cypress, ya que ofrece recarga en tiempo real y espera automática, lo que ayuda a ahorrar tiempo y mejora la productividad durante las pruebas. Cypress también proporciona una sintaxis sencilla e intuitiva, lo que facilita el aprendizaje y el uso, incluso para aquellos que son nuevos en las pruebas.
 
@@ -48,7 +48,7 @@ En esta sección se describen los pasos necesarios para configurar las pruebas d
 
    * Para Cypress, utilice el código de muestra del [Repositorio de ejemplos de pruebas de AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress).
 
-   * Para JavaScript y WDIO, utilice el código de ejemplo que se genera automáticamente en la `ui.tests` de su repositorio de Cloud Manager.
+   * Para JavaScript y WDIO, use el código de ejemplo que se genera automáticamente en la carpeta `ui.tests` de su repositorio de Cloud Manager.
 
      >[!NOTE]
      >
@@ -235,8 +235,8 @@ Las siguientes variables de entorno se pasan a la imagen de Docker en tiempo de 
 Las muestras de prueba de Adobe proporcionan funciones de ayuda para acceder a los parámetros de configuración:
 
 * Cypress: utilizar la función estándar `Cypress.env('VARIABLE_NAME')`
-* JavaScript: consulte la [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) módulo
-* Java: Consulte la [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) clase
+* JavaScript: Ver el módulo [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js)
+* Java: vea la clase [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java)
 
 ### Generar informes de prueba {#generate-test-reports}
 
@@ -250,7 +250,7 @@ Si la imagen Docker está implementada con otros lenguajes de programación o ej
 >
 >Utilice aserciones en lugar de registrar un error en STDERR o devolver un código de salida distinto de cero; para que la canalización de implementación pueda continuar normalmente.
 >
->Si se ha utilizado un proxy HTTP durante la ejecución de las pruebas, los resultados incluirán un `request.log` archivo.
+>Si se utilizó un proxy HTTP durante la ejecución de pruebas, los resultados incluirán un archivo `request.log`.
 
 ### Requisitos previos {#prerequisites}
 
@@ -327,20 +327,20 @@ Las pruebas a veces deben cargar archivos en la aplicación que se está proband
 
 ### Configuración del proxy HTTP
 
-El punto de entrada del contenedor Docker debe comprobar el valor del `PROXY_HOST` variable de entorno.
+El punto de entrada del contenedor Docker debe comprobar el valor de la variable de entorno `PROXY_HOST`.
 
 Si este valor está vacío, no se requieren pasos adicionales y las pruebas deben ejecutarse sin utilizar el proxy HTTP.
 
 Si no está vacío, el script de punto de entrada debe hacer lo siguiente:
 
-1. Configure una conexión proxy HTTP para ejecutar pruebas de interfaz de usuario. Esto se puede lograr exportando el `HTTP_PROXY` variable de entorno creada con los siguientes valores:
-   * Host de proxy proporcionado por `PROXY_HOST` variable
-   * Puerto Proxy, proporcionado por `PROXY_HTTPS_PORT` o `PROXY_HTTP_PORT` (se utilizará la variable con un valor que no esté vacío)
-2. Establezca el certificado de CA que se utilizará al conectarse al proxy HTTP. Su ubicación la proporciona `PROXY_CA_PATH` variable.
+1. Configure una conexión proxy HTTP para ejecutar pruebas de interfaz de usuario. Esto se puede lograr exportando la variable de entorno `HTTP_PROXY` que se creó con los siguientes valores:
+   * Host de proxy proporcionado por la variable `PROXY_HOST`
+   * Puerto de proxy proporcionado por la variable `PROXY_HTTPS_PORT` o `PROXY_HTTP_PORT` (se utilizará la variable con un valor que no esté vacío)
+2. Establezca el certificado de CA que se utilizará al conectarse al proxy HTTP. Su ubicación la proporciona la variable `PROXY_CA_PATH`.
    * Esto se puede lograr exportando `NODE_EXTRA_CA_CERTS` variable de entorno.
 3. Espere hasta que el proxy HTTP esté listo.
-   * Para comprobar la preparación, las variables de entorno `PROXY_HOST`, `PROXY_OBSERVABILITY_PORT`, `PROXY_RETRY_ATTEMPTS` y `PROXY_RETRY_DELAY` se puede utilizar.
-   * Puede comprobarlo utilizando una solicitud cURL, asegurándose de instalar cURL en su `Dockerfile`.
+   * Para comprobar la preparación, se pueden utilizar las variables de entorno `PROXY_HOST`, `PROXY_OBSERVABILITY_PORT`, `PROXY_RETRY_ATTEMPTS` y `PROXY_RETRY_DELAY`.
+   * Puede comprobarlo usando una solicitud cURL, asegurándose de instalar cURL en su `Dockerfile`.
 
 Se puede encontrar una implementación de ejemplo en el punto de entrada del módulo de prueba de muestra de Cypress en [GitHub.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh)
 
@@ -356,13 +356,13 @@ Se puede encontrar una implementación de ejemplo en el punto de entrada del mó
 >
 > En los ejemplos presentados, suponemos que Chrome se está utilizando como explorador de proyectos.
 
-Al igual que Cypress, las pruebas deben utilizar el proxy HTTP si no está vacío `PROXY_HOST` se proporciona la variable de entorno.
+De forma similar a Cypress, las pruebas deben utilizar el proxy HTTP si se proporciona una variable de entorno `PROXY_HOST` que no esté vacía.
 
 Para ello, es necesario realizar las siguientes modificaciones.
 
 #### Dockerfile
 
-Instalar cURL y `libnss3-tools`, que proporciona `certutil.`
+Instale cURL y `libnss3-tools`, que proporciona `certutil.`
 
 ```dockerfile
 RUN apt -y update \
@@ -372,10 +372,10 @@ RUN apt -y update \
 
 #### Script Entrypoint
 
-Incluir un script bash que, en caso de `PROXY_HOST` Cuando se proporciona una variable de entorno, hace lo siguiente:
+Incluya un script bash que, en caso de que se proporcione la variable de entorno `PROXY_HOST`, haga lo siguiente:
 
 1. Exportar variables relacionadas con proxy como `HTTP_PROXY` y `NODE_EXTRA_CA_CERTS`
-2. Uso `certutil` para instalar el certificado de CA proxy para chromium
+2. Usar `certutil` para instalar el certificado de CA proxy para Chromium
 3. Espere hasta que el proxy HTTP esté listo (o salga si hay algún error).
 
 Ejemplo de implementación:
@@ -409,7 +409,7 @@ fi
 
 #### Configuración del dramaturgo
 
-Modifique la configuración del autor (por ejemplo, en `playwright.config.js`) para utilizar un proxy en caso de que el `HTTP_PROXY` variable de entorno está configurada.
+Modifique la configuración del dramaturgo (por ejemplo, en `playwright.config.js`) para utilizar un proxy en caso de que se establezca la variable de entorno `HTTP_PROXY`.
 
 Ejemplo de implementación:
 

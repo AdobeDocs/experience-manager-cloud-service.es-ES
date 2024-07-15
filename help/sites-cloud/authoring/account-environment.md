@@ -27,7 +27,7 @@ El cuadro de diálogo de configuración **Usuario** le da acceso a lo siguiente:
 * Suplantar como
    * Con la función Suplantar como, un usuario puede trabajar en nombre de otro usuario. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
 * Perfil
-   * Ofrece un práctico vínculo a la configuración del usuario <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
+   * Ofrece un práctico vínculo a la configuración de usuario <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
 * [Mis preferencias](#my-preferences)
    * Especifique las distintas preferencias exclusivas al usuario 
 
@@ -35,7 +35,7 @@ El cuadro de diálogo de configuración **Usuario** le da acceso a lo siguiente:
 
 ### Mis preferencias {#my-preferences}
 
-El **Mis preferencias** se accede al cuadro de diálogo a través del [Usuario](#user-settings) en el encabezado.
+Se accede al cuadro de diálogo **Mis preferencias** mediante la opción [Usuario](#user-settings) del encabezado.
 
 Cada usuario puede establecer sus propias propiedades preferidas.
 
@@ -92,8 +92,8 @@ Cada usuario puede establecer sus propias propiedades preferidas.
 
 * **Activar la página principal de los recursos**
 
-  Esta opción solo está disponible si el administrador del sistema ha habilitado la experiencia de la página principal de los recursos para toda la organización.
+  Esta opción solo está disponible si el administrador del sistema ha habilitado la experiencia de la página principal de Assets para toda la organización.
 
 * **Configuración de Stock**
 
-  Esta opción le permite especificar la configuración preferida de Adobe Stock y solo está disponible si el administrador del sistema ha activado [Integración de Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
+  Esta opción le permite especificar la configuración de Adobe Stock preferida y solo está disponible si el administrador del sistema ha habilitado la [integración de Adobe Stock](/help/assets/aem-assets-adobe-stock.md).

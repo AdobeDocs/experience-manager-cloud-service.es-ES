@@ -7,7 +7,7 @@ role: User
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
 source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '303'
 ht-degree: 5%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 Los ajustes preestablecidos de imagen permiten que los recursos entreguen imágenes de forma dinámica en diferentes tamaños, en diferentes formatos o con otras propiedades de imagen que se generan dinámicamente. Puede elegir un ajuste preestablecido al exportar para cambiar el formato de las imágenes a las especificaciones que haya descrito el administrador.
 
-Además, puede elegir un ajuste preestablecido de imagen que sea interactivo (designado por el **[!UICONTROL RESS]** después de seleccionarlo).
+Además, puede elegir un ajuste preestablecido de imagen que sea interactivo (designado por el botón **[!UICONTROL RESS]** después de seleccionarlo).
 
 [Los administradores pueden crear y configurar ajustes preestablecidos de imagen](managing-image-presets.md).
 
@@ -32,20 +32,19 @@ Puede aplicar un ajuste preestablecido de imagen a una imagen cada vez que la pr
 
    >[!NOTE]
    >
-   >* Las representaciones estáticas aparecen en la mitad superior del panel. Las representaciones dinámicas aparecen en la mitad inferior. Solo con las representaciones dinámicas, puede utilizar la dirección URL para mostrar la imagen. El **[!UICONTROL URL]** El botón sólo aparece si selecciona una representación dinámica. El **[!UICONTROL RESS]** El botón solo aparece si selecciona un ajuste preestablecido de imagen interactivo.
+   >* Las representaciones estáticas aparecen en la mitad superior del panel. Las representaciones dinámicas aparecen en la mitad inferior. Solo con las representaciones dinámicas, puede utilizar la dirección URL para mostrar la imagen. El botón **[!UICONTROL URL]** solo aparece si selecciona una representación dinámica. El botón **[!UICONTROL RESS]** solo aparece si selecciona un ajuste preestablecido de imagen interactivo.
    >
-   >* El sistema muestra numerosas representaciones al seleccionar **[!UICONTROL Representaciones]** en la Vista de detalles de un recurso. Puede aumentar el número de ajustes preestablecidos vistos. Consulte [Aumento del número de ajustes preestablecidos de imagen que se muestran](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
-
+   >* El sistema muestra numerosas representaciones cuando selecciona **[!UICONTROL Representaciones]** en la vista de detalles de un recurso. Puede aumentar el número de ajustes preestablecidos vistos. Ver [Aumento del número de ajustes preestablecidos de imagen que se muestran](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
    ![chlimage_1-208](assets/chlimage_1-208.png)
 
 1. Realice una de las siguientes acciones:
 
    * Para previsualizar el ajuste preestablecido de imagen, seleccione una representación dinámica.
-   * Para mostrar la ventana emergente, seleccione **[!UICONTROL URL]**, **[!UICONTROL Incrustar]**, o **[!UICONTROL RESS]**.
+   * Para mostrar la ventana emergente, seleccione **[!UICONTROL URL]**, **[!UICONTROL Incrustar]** o **[!UICONTROL RESS]**.
 
    >[!NOTE]
    >
-   >Si el recurso *y* Si los ajustes preestablecidos de imagen aún no se han publicado, la variable **[!UICONTROL URL]** (o los botones URL y RESS, si corresponde) no está disponible.
+   >Si el recurso *y* el ajuste preestablecido de imagen aún no se han publicado, el botón **[!UICONTROL URL]** (o los botones URL y RESS, si corresponde) no están disponibles.
    >
    >Tenga en cuenta también que los ajustes preestablecidos de imagen se publican automáticamente en un servidor de Dynamic Media S7.

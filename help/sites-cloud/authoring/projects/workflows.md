@@ -16,7 +16,7 @@ ht-degree: 96%
 
 Los flujos de trabajo de proyecto disponibles de forma predeterminada incluyen lo siguiente:
 
-* **Flujo de trabajo de aprobación** : Este flujo de trabajo permite asignar contenido a un usuario, revisarlo y aprobarlo.
+* **Flujo de trabajo de aprobación del proyecto**: este flujo de trabajo le permite asignar contenido a un usuario, revisarlo y aprobarlo.
 * **Solicitar lanzamiento**: un flujo de trabajo solicita un lanzamiento.
 * **Solicitar página de aterrizaje**: este flujo de trabajo solicita una página de aterrizaje.
 * **Solicitar correo electrónico**: flujo de trabajo para solicitar un correo electrónico.

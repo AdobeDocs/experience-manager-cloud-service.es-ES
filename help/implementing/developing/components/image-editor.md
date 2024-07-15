@@ -21,7 +21,7 @@ El Editor de imágenes mantiene las áreas de mapa de imagen como unidades absol
 
 ### Propiedad imageMap {#imagemap-property}
 
-Las coordenadas de mapa de imagen se conservan en el JCR como un `imageMap` por el Editor de imágenes. Tiene el siguiente formato.
+El Editor de imágenes mantiene las coordenadas del mapa de imagen en el JCR como propiedad `imageMap`. Tiene el siguiente formato.
 
 La propiedad almacena las áreas de mapas de la siguiente manera:
 
@@ -46,13 +46,13 @@ Los gráficos vectoriales escalables (SVG) son compatibles con el editor de imá
 
 En determinadas situaciones, las acciones de creación deben restringirse para determinados tipos MIME, debido a la falta de compatibilidad en el procesamiento del lado del servidor. Por ejemplo, es posible que no se permita editar imágenes de SVG.
 
-Los complementos del Editor de imágenes se pueden habilitar selectivamente por tipo MIME estableciendo un `supportedMimeTypes` en el nodo de configuración del complemento individual.
+Los complementos del Editor de imágenes se pueden habilitar selectivamente por tipo MIME al establecer una propiedad `supportedMimeTypes` en el nodo de configuración del complemento individual.
 
 ### Ejemplos {#example}
 
 Por ejemplo, supongamos que la capacidad de recorte solo debe permitirse para imágenes de GIF, JPEG, PNG, WEBP y TIFF.
 
-El `supportedMimeTypes` La propiedad debe establecerse como una cadena de los tipos MIME permitidos en el nodo de configuración del complemento en el `cq:editConfig` del componente de imagen.
+La propiedad `supportedMimeTypes` debe establecerse como una cadena de los tipos MIME permitidos en el nodo de configuración del complemento en el nodo `cq:editConfig` del componente de imagen.
 
 `/apps/core/wcm/components/image/v2/image/cq:editConfig`
 

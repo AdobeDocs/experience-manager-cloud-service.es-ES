@@ -23,7 +23,7 @@ Estas operaciones incluyen:
 * Recuperar recursos que estén por encima del umbral establecido, desde una implementación remota de Experience Manager
 * Desplegar Live Copies
 
-Puede ver el estado de los trabajos asincrónicos desde el **[!UICONTROL Operaciones en segundo plano]** panel en **Navegación global** > **Herramientas** > **General** > **Trabajos**.
+Puede ver el estado de los trabajos asincrónicos desde el panel de **[!UICONTROL Operaciones en segundo plano]** en **Navegación global** > **Herramientas** > **General** > **Trabajos**.
 
 >[!NOTE]
 >
@@ -35,11 +35,11 @@ Puede ver el estado de los trabajos asincrónicos desde el **[!UICONTROL Operaci
 
 Siempre que AEM procese una operación de manera asincrónica, recibirá una notificación en la [bandeja de entrada](/help/sites-cloud/authoring/inbox.md) y por correo electrónico (si está activada).
 
-Para ver en detalle el estado de las operaciones asincrónicas, vaya a la **[!UICONTROL Operaciones en segundo plano]** página.
+Para ver en detalle el estado de las operaciones asincrónicas, vaya a la página **[!UICONTROL Operaciones en segundo plano]**.
 
 1. En la interfaz del Experience Manager, seleccione **Navegación global** > **Herramientas** > **General** > **Trabajos**.
 
-1. En el **[!UICONTROL Operaciones en segundo plano]** , revise los detalles de las operaciones.
+1. En la página **[!UICONTROL Operaciones en segundo plano]**, revise los detalles de las operaciones.
 
    ![Estado y detalles de las operaciones asincrónicas](assets/async-operation-status.png)
 
@@ -77,7 +77,7 @@ Se pueden configurar varias opciones en torno a los trabajos asincrónicos. Los 
 
 >[!NOTE]
 >
->[Configuraciones de OSGi](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) se consideran contenido mutable y cualquier configuración de este tipo debe implementarse como paquete de contenido para un entorno de producción.
+>[Las configuraciones de OSGi](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) se consideran contenido mutable y cualquier configuración de este tipo debe implementarse como un paquete de contenido para un entorno de producción.
 
 ### Purgar trabajos completados {#purging-completed-jobs}
 
@@ -85,7 +85,7 @@ AEM ejecuta un trabajo de depuración todos los días a la 01:00 para eliminar l
 
 Puede modificar la programación del trabajo de depuración y la duración por la cual se conservan los detalles de los trabajos completados antes de que se eliminen. También puede configurar el número máximo de trabajos completados para los que se conservan los detalles en cualquier momento.
 
-1. AEM AEM Inicie sesión en la consola web de inicio rápido de Jar de la aplicación de inicio de sesión de la aplicación de en `https://<host>:<port>/system/console` como usuario administrador.
+1. AEM AEM Inicie sesión en la consola web de inicio rápido del Jar de inicio rápido del SDK de la en `https://<host>:<port>/system/console` como usuario administrador.
 1. Vaya a **OSGi** > **Configuración**
 1. Abra el trabajo **[!UICONTROL Trabajo programado de depuración de trabajos asincrónicos de Adobe Granite]**.
 1. Especifique:
@@ -101,7 +101,7 @@ Puede modificar la programación del trabajo de depuración y la duración por l
 
 Si el número de recursos o carpetas que se van a eliminar supera el número de umbral, la operación de eliminación se realiza de manera asincrónica.
 
-1. AEM AEM Inicie sesión en la consola web de inicio rápido de Jar de la aplicación de inicio de sesión de la aplicación de en `https://<host>:<port>/system/console` como usuario administrador.
+1. AEM AEM Inicie sesión en la consola web de inicio rápido del Jar de inicio rápido del SDK de la en `https://<host>:<port>/system/console` como usuario administrador.
 1. Vaya a **OSGi** > **Configuración**
 1. En la consola web, abra la  **[!UICONTROL Configuración de cola predeterminada del proceso asincrónico.]**
 1. En el cuadro **[!UICONTROL Umbral de número de recursos]**, especifique el número de umbral de recursos o carpetas para el procesamiento asincrónico de las operaciones de eliminación.
@@ -115,7 +115,7 @@ Si el número de recursos o carpetas que se van a eliminar supera el número de 
 
 Si el número de recursos, carpetas o referencias que se van a mover supera el número de umbral, la operación de movimiento se realiza de manera asincrónica.
 
-1. AEM AEM Inicie sesión en la consola web de inicio rápido de Jar de la aplicación de inicio de sesión de la aplicación de en `https://<host>:<port>/system/console` como usuario administrador.
+1. AEM AEM Inicie sesión en la consola web de inicio rápido del Jar de inicio rápido del SDK de la en `https://<host>:<port>/system/console` como usuario administrador.
 1. Vaya a **OSGi** > **Configuración**
 1. En la consola web, abra la **[!UICONTROL Configuración de procesamiento asincrónico de trabajos de operación de movimiento.]**
 1. En el cuadro **[!UICONTROL Número de umbral de recursos/referencias]**, especifique el número de umbral de recursos, carpetas o referencias para el procesamiento asincrónico de operaciones de movimiento.
@@ -127,7 +127,7 @@ Si el número de recursos, carpetas o referencias que se van a mover supera el n
 
 ### Configurar operaciones asincrónicas de MSM {#configuring-asynchronous-msm-operations}
 
-1. AEM AEM Inicie sesión en la consola web de inicio rápido de Jar de la aplicación de inicio de sesión de la aplicación de en `https://<host>:<port>/system/console` como usuario administrador.
+1. AEM AEM Inicie sesión en la consola web de inicio rápido del Jar de inicio rápido del SDK de la en `https://<host>:<port>/system/console` como usuario administrador.
 1. Vaya a **OSGi** > **Configuración**
 1. En la consola web, abra la **[!UICONTROL Configuración de procesamiento asincrónico de trabajo de operación de movimiento de página.]**
 1. Marque la opción **Habilitar notificación por correo electrónico** para recibir notificaciones por correo electrónico para este estado del trabajo. Por ejemplo, éxito, error.
@@ -138,6 +138,6 @@ Si el número de recursos, carpetas o referencias que se van a mover supera el n
 
 >[!MORELIKETHIS]
 >
->* [Administración de páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+>* [Administrar páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md)
 >* [Importe y exporte metadatos de recursos de manera masiva](/help/assets/metadata-import-export.md).
 >* [Utilice Recursos conectados para compartir recursos DAM desde implementaciones remotas](/help/assets/use-assets-across-connected-assets-instances.md).

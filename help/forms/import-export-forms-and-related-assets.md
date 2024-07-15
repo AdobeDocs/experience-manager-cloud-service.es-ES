@@ -2,7 +2,7 @@
 title: Cómo importar y exportar recursos a  [!DNL AEM Forms]
 description: Aprenda a utilizar DocuSign con un Formulario adaptable para recopilar firmas electrónicas.
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1313'
 ht-degree: 100%
 
@@ -200,7 +200,7 @@ Para crear una carpeta, complete los siguientes pasos:
 
    Si existe una carpeta con el nombre especificado, el envío falla con un error. Puede ver el mensaje de error pasando el puntero sobre el icono de error ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) que aparece junto al campo de nombre.
 
-   Puede seleccionar la carpeta creada para entrar en ella y crear recursos o carpetas dentro de la carpeta.  Además, puede seleccionar una carpeta y elegir colocarla en la cola para descargarla, eliminarla o editar su nombre.
+   Puede seleccionar la carpeta creada para entrar en ella y crear recursos o carpetas dentro de la carpeta. Además, puede seleccionar una carpeta y elegir colocarla en la cola para descargarla, eliminarla o editar su nombre.
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}
 

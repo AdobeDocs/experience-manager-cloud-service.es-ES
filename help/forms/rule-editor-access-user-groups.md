@@ -6,7 +6,7 @@ role: User
 level: Beginner, Intermediate
 source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '320'
 ht-degree: 91%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 91%
 
 Existen diferentes tipos de usuarios con diversas habilidades que trabajan con formularios adaptables. Aunque es posible que los usuarios expertos tengan los conocimientos necesarios para trabajar con scripts y reglas complejas, puede haber usuarios de nivel básico que únicamente necesiten trabajar con el diseño y las propiedades básicas de los formularios adaptables.
 
-[!DNL Experience Manager Forms] permite limitar el acceso de los usuarios al Editor de reglas en función de su rol o función. En los ajustes del servicio de configuración de los formularios adaptables, puede especificar los [grupos de usuarios](forms-groups-privileges-tasks.md) que pueden ver y acceder al Editor de reglas.
+[!DNL Experience Manager Forms] le permite limitar el acceso de los usuarios al Editor de reglas en función de su rol o función. En los ajustes del servicio de configuración de los formularios adaptables, puede especificar los [grupos de usuarios](forms-groups-privileges-tasks.md) que pueden ver y acceder al Editor de reglas.
 
 ## Especificar qué grupos de usuarios pueden acceder al Editor de reglas {#specify-user-groups-that-can-access-rule-editor}
 

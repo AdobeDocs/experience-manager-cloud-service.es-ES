@@ -13,9 +13,9 @@ ht-degree: 2%
 
 # Fase de lanzamiento en Cloud Acceleration Manager {#golive-phase-cam}
 
-AEM La tarjeta Publicar proporciona todo el contenido relevante que resalta la preparación, las acciones específicas que se deben tomar y una consideración minuciosa para garantizar un lanzamiento fluido y exitoso de la aplicación de la as a Cloud Service de la.
+La tarjeta Publicar proporciona todo el contenido relevante que resalta la preparación, las acciones específicas que se deben tomar y una consideración exhaustiva para garantizar un lanzamiento fluido y exitoso en AEM as a Cloud Service.
 
-Haga clic en la tarjeta del proyecto para abrir la página de aterrizaje del proyecto y navegar hasta el **Go Live** , como se muestra en la figura siguiente.
+Haga clic en la tarjeta del proyecto para abrir la página de aterrizaje del proyecto y navegar hasta la sección **Publicar**, como se muestra en la figura siguiente.
 
 ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
@@ -27,7 +27,7 @@ Haga clic en la tarjeta del proyecto para abrir la página de aterrizaje del pro
 
 Siga esta sección para explorar la tarjeta de actividad de lanzamiento:
 
-1. Haga clic en **Ver** del menú contextual **Go Live** Tarjeta de.
+1. Haga clic en el botón **Ver** de la tarjeta **Activar**.
 
    ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 

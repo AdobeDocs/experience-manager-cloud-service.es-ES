@@ -56,7 +56,7 @@ Una canalización que no es de producción sirve principalmente para ejecutar an
 Además de la producción y la no producción, las canalizaciones pueden diferenciarse por el tipo de código que implementan.
 
 * **[Canalizaciones de pila completa](#full-stack-pipeline)**: Implementan simultáneamente generaciones de código back-end y front-end que contienen una o más aplicaciones de servidor de AEM junto con configuraciones de HTTPD/Dispatcher
-* **[Configurar canalizaciones](#config-deployment-pipeline)** - Configurar e implementar reglas de filtro de tráfico, incluidas las reglas WAF, en cuestión de minutos
+* **[Canalizaciones de configuración](#config-deployment-pipeline)**: configure e implemente reglas de filtro de tráfico, incluidas las reglas WAF, en cuestión de minutos
 * **[Canalizaciones front-end](#front-end)**: Implementan generaciones de código front-end que contienen una o más aplicaciones de interfaz de usuario del lado del cliente.
 * **[Canalizaciones de configuración de nivel web](#web-tier-config-pipelines)**: Implementan las configuraciones de HTTPD/Dispatcher
 
@@ -118,7 +118,7 @@ Para aprender a configurar canalizaciones de pila completa, consulte los siguien
 
 Con una canalización de configuración, puede configurar e implementar reglas de filtro de tráfico, incluidas las reglas WAF, en cuestión de minutos.
 
-Consulte [Reglas de filtro de tráfico, incluidas las reglas WAF](/help/security/traffic-filter-rules-including-waf.md) para obtener información sobre cómo administrar las configuraciones en el repositorio de modo que se implementen correctamente.
+Consulte [Reglas de filtro de tráfico, incluidas las reglas WAF](/help/security/traffic-filter-rules-including-waf.md), para obtener información sobre cómo administrar las configuraciones en el repositorio de modo que se implementen correctamente.
 
 ### Configuración de canalizaciones de configuración {#configure-config-deployment}
 

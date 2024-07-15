@@ -27,7 +27,7 @@ En la siguiente sección se describen las notas de la versión de funciones de l
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] (2023.11.0) es el viernes, 30 de noviembre de 2023. La siguiente versión con funcionalidades (2023.12.0) está planificada para el viernes, 14 de diciembre de 2023.
+La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] (2023.11.0) fue el viernes, 30 de noviembre de 2023. La siguiente versión con funcionalidades (2023.12.0) está planificada para el viernes, 14 de diciembre de 2023.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
@@ -43,7 +43,7 @@ Eche un vistazo al vídeo Información general sobre la versión de noviembre de
 
 ### Programa para primeros usuarios {#sites-early-adopter}
 
-**[Buscar y reemplazar cadenas en fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**: la consola Fragmento de contenido proporciona a los usuarios una forma fácil e intuitiva de reemplazar una cadena que aparece en varios fragmentos de contenido a la vez para acelerar la velocidad del contenido.
+**[Buscar y reemplazar cadenas en fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**: La consola de fragmentos de contenido proporciona a los usuarios una forma fácil e intuitiva de reemplazar una cadena que aparece en varios fragmentos de contenido a la vez para acelerar la velocidad de contenido.
 
 ![Buscar y reemplazar](/help/sites-cloud/administering/content-fragments/assets/cf-managing-find-replace.png)
 
@@ -51,9 +51,9 @@ Eche un vistazo al vídeo Información general sobre la versión de noviembre de
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nuevas funciones en la vista Recursos {#assets-view-features}
+### Nuevas funciones en la vista de Assets {#assets-view-features}
 
-* **Editor de Adobes Express incrustados en AEM Assets**: Los usuarios con acceso a Express ahora tienen herramientas integradas de edición y creación de imágenes desde Adobe Express y Adobe Firefly disponibles directamente en AEM Assets para mejorar la reutilización del contenido y acelerar la velocidad de contenido.
+* **Editor de Adobes Express incrustado en AEM Assets**: Los usuarios con acceso a Express ahora tienen herramientas integradas de edición y creación de imágenes desde el Adobe Express y el Adobe Firefly disponibles directamente en AEM Assets para mejorar la reutilización del contenido y acelerar la velocidad de contenido.
 
   ![asignar formulario de metadatos a una carpeta](/help/assets/assets/adobe-express-aem-assets.png)
 
@@ -66,35 +66,35 @@ Eche un vistazo al vídeo Información general sobre la versión de noviembre de
 -->
 
 
-* **Informes de uso del almacenamiento en Insights**: los administradores ahora tienen la capacidad de ver los informes de uso del almacenamiento disponibles como parte de Insights.
+* **Informes de uso del almacenamiento en Insights**: Los administradores ahora tienen la capacidad de ver los informes de uso del almacenamiento disponibles como parte de Insights.
 
   ![uso de almacenamiento en Insights](/help/assets/assets/storage-usage-insights.png)
 
-* **Configuración de la primera página principal de búsqueda**: Experience Manager Assets ahora le permite configurar la experiencia de página principal para su organización. Si selecciona Buscar primero como página principal, puede configurar la alineación de la barra de búsqueda, la imagen de fondo y el logotipo de su organización.
+* **Buscar en la primera configuración de página principal**: Experience Manager Assets ahora le permite configurar la experiencia de página principal para su organización. Si selecciona Buscar primero como página principal, puede configurar la alineación de la barra de búsqueda, la imagen de fondo y el logotipo de su organización.
 
   ![configuración de Buscar primero](/help/assets/assets/search-first-configuration.png)
 
 ### Nuevas funciones del prelanzamiento para la vista de administrador {#admin-view-features-prerelease}
 
-**Previsualización de vídeo**: AEM Assets ahora genera de forma predeterminada representaciones de previsualización de todos los formatos de vídeo admitidos, sin necesidad de configurar un perfil de procesamiento.
+**Vista previa de vídeo**: AEM Assets ahora genera representaciones de vista previa de todos los formatos de vídeo admitidos de forma predeterminada, sin necesidad de configurar un perfil de procesamiento.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Nuevas funciones de [!DNL Experience Manager Forms] {#forms-features}
+### Nuevas características de [!DNL Experience Manager Forms] {#forms-features}
 
-* **[Componente Casilla](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: el Forms adaptable basado en componentes principales ahora puede incluir un componente de casilla de verificación. Permite a los usuarios realizar elecciones binarias, seleccionando o anulando la selección de una opción en particular. Normalmente aparece como un pequeño cuadro en el que se puede hacer clic o pulsar para alternar entre dos estados: activado y desactivado. La casilla de verificación es un elemento de formulario común que se utiliza para presentar una opción sí/no o verdadero/falso.
+* **[Componente de casilla de verificación](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: los Forms adaptables basados en componentes principales ahora pueden incluir un componente de casilla de verificación. Permite a los usuarios realizar elecciones binarias, seleccionando o anulando la selección de una opción en particular. Normalmente aparece como un pequeño cuadro en el que se puede hacer clic o pulsar para alternar entre dos estados: activado y desactivado. La casilla de verificación es un elemento de formulario común que se utiliza para presentar una opción sí/no o verdadero/falso.
 
-* **[Componente Términos y condiciones](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: Forms adaptable basado en componentes principales ahora puede incluir un componente Términos y condiciones. Permite a los autores de formularios introducir una sección específica dentro del formulario en la que se presentan a los usuarios los términos, condiciones o acuerdos legales asociados al uso de un servicio, producto o plataforma. Este componente está diseñado para informar a los usuarios sobre las reglas, regulaciones y obligaciones que aceptan enviando el formulario.
+* **[Componente Términos y condiciones](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: el Forms adaptable basado en componentes principales ahora puede incluir un componente Términos y condiciones. Permite a los autores de formularios introducir una sección específica dentro del formulario en la que se presentan a los usuarios los términos, condiciones o acuerdos legales asociados al uso de un servicio, producto o plataforma. Este componente está diseñado para informar a los usuarios sobre las reglas, regulaciones y obligaciones que aceptan enviando el formulario.
 
-  ![Componentes de casilla de verificación, términos y condiciones y pestaña vertical](/help/forms/assets/forms-components.png)
+  ![Casilla de verificación, Términos y condiciones y componentes de ficha Vertical](/help/forms/assets/forms-components.png)
 
-* **[Componente de pestañas verticales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: Forms adaptable basado en componentes principales ahora puede organizar el contenido del formulario en una lista vertical de pestañas, lo que proporciona un diseño estructurado y navegable. El uso de pestañas verticales en un formulario puede mejorar la experiencia general del usuario al simplificar la navegación y mejorar la organización del contenido del formulario, especialmente en situaciones en que un formulario contiene varias secciones o información compleja.
+* **[Componente de pestañas verticales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: los Forms adaptables basados en componentes principales ahora pueden organizar el contenido del formulario en una lista vertical de pestañas, lo que proporciona un diseño estructurado y navegable. El uso de pestañas verticales en un formulario puede mejorar la experiencia general del usuario al simplificar la navegación y mejorar la organización del contenido del formulario, especialmente en situaciones en que un formulario contiene varias secciones o información compleja.
 
 
 
-### Nuevas funciones de [!DNL Forms] Versión preliminar {#prerelease-features-forms}
+### Nuevas funciones en el prelanzamiento de [!DNL Forms] {#prerelease-features-forms}
 
-* **[Conectar un Forms adaptable con Microsoft® SharePoint List](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: AEM Forms proporciona una integración OOTB para enviar datos de formulario directamente a SharePoint List, lo que le permite aprovechar las capacidades de Listas de SharePoint. Puede configurar Microsoft SharePoint List como fuente de datos para un modelo de datos de formulario y utilizar el **Enviar mediante modelo de datos de formulario** Enviar acción para conectar un formulario adaptable con una lista de SharePoint.
+* **[Conectar un Forms adaptable con Microsoft® SharePoint List](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: AEM Forms proporciona una integración OOTB para enviar datos de formularios directamente a SharePoint List, lo que le permite aprovechar las capacidades de Listas de SharePoint. Puede configurar Microsoft SharePoint List como fuente de datos para un modelo de datos de formulario y utilizar la acción de envío **Enviar mediante el modelo de datos de formulario** para conectar un formulario adaptable con SharePoint List.
 
 <!-- 
 
@@ -122,11 +122,11 @@ Las reglas de filtro de tráfico se publicaron en octubre e incluían una nota e
 
 Una vez adquirida la licencia, estas reglas WAF avanzadas se pueden implementar en la CDN mediante la canalización de configuración de Cloud Manager para añadir una capa adicional de protección contra ataques web.
 
-Más información [Reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md), incluido WAF. AEM Hable con el equipo de su cuenta de sobre la licencia de Protección WAF-DDoS o Seguridad mejorada.
+Lea acerca de [Reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md), incluyendo WAF. AEM Hable con el equipo de su cuenta de sobre la licencia de Protección WAF-DDoS o Seguridad mejorada.
 
 ### Programa para primeros usuarios de configuración de CDN {#cdn-config-early-adopter}
 
-Además de los lanzamientos recientes [Reglas de filtro de tráfico (incluido WAF)](/help/security/traffic-filter-rules-including-waf.md)Además, existe la oportunidad de utilizar la canalización de configuración para declarar e implementar otros tipos de configuración de CDN. Nos encantaría conocer sus casos de uso, incluidos los siguientes:
+Además de las [reglas de filtro de tráfico (incluido WAF)](/help/security/traffic-filter-rules-including-waf.md) publicadas recientemente, existe la oportunidad de usar la canalización de configuración para declarar e implementar otros tipos de configuración de CDN. Nos encantaría conocer sus casos de uso, incluidos los siguientes:
 * Redirecciones del lado del cliente 301/302
 * solicitudes de proxy en el perímetro a orígenes arbitrarios
 * transformaciones de URL
@@ -149,4 +149,4 @@ Puede encontrar una lista completa de las versiones de las herramientas de migra
 
 * No se puede enviar el Forms adaptable basado en los componentes principales. El problema se produce para Forms adaptable creado con las versiones 2.0.38 - 2.0.60 de los componentes principales.
 
-  Para resolver el problema. Puede pasar a la versión 2.0.62 o posterior de los componentes principales del formulario adaptable. Para establecer una versión de los componentes principales de Forms adaptables para su entorno, [establecer versiones de los componentes core.forms.components.version, core.forms.components.af.version y core.wcm.components.version](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) dependencias en el repositorio as a Cloud Service AEM de Forms o en el proyecto basado en el tipo de archivo y [implementar los cambios en el entorno as a Cloud Service de Forms](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). Puede encontrar la versión más reciente de las dependencias de los componentes principales de Forms adaptable en [Repositorio de Git de componentes principales de Forms adaptable](https://github.com/adobe/aem-core-forms-components#system-requirements).
+  Para resolver el problema. Puede pasar a la versión 2.0.62 o posterior de los componentes principales del formulario adaptable. Para establecer una versión de los componentes principales adaptables de Forms para su entorno, [establezca versiones de las dependencias core.forms.components.version, core.forms.components.af.version y core.wcm.components.version](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) en su repositorio as a Cloud Service AEM de Forms o proyecto basado en el tipo de archivo e [implemente los cambios en su entorno as a Cloud Service de Forms](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). Puede encontrar la versión más reciente de las dependencias de los componentes principales de Forms adaptable en [Repositorio de Git de componentes principales de Forms adaptable](https://github.com/adobe/aem-core-forms-components#system-requirements).

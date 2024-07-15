@@ -1,5 +1,5 @@
 ---
-title: Entrega de recursos de Dynamic Media
+title: Entrega de Dynamic Media Assets
 description: Obtenga información sobre cómo enviar recursos de Dynamic Media a sus páginas web a través de imágenes y vídeos incrustados, o vinculando direcciones URL a su aplicación web.
 contentOwner: Rick Brough
 feature: Asset Management
@@ -7,12 +7,12 @@ role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 9%
+source-wordcount: '339'
+ht-degree: 7%
 
 ---
 
-# Entrega de recursos de Dynamic Media{#delivering-dynamic-media-assets}
+# Entrega de Dynamic Media Assets{#delivering-dynamic-media-assets}
 
 La forma de distribuir los recursos de Dynamic Media, tanto de vídeo como de imágenes, depende de la implementación del sitio web.
 
@@ -22,8 +22,8 @@ Con Dynamic Media, tiene varias opciones:
 * Si el sitio web no está en el Experience Manager, puede elegir una de estas opciones:
 
    * Incrustar el vídeo o la imagen en el sitio web.
-   * Vinculación de URL en la aplicación web. Utilice la vinculación cuando desee distribuir un reproductor de vídeo como ventana emergente o modal.
-   * Si su sitio es adaptable, puede hacer lo siguiente [ofrecer imágenes optimizadas](/help/assets/dynamic-media/responsive-site.md).
+   * Vincule las URL a la aplicación web. Utilice la vinculación cuando desee distribuir un reproductor de vídeo como ventana emergente o modal.
+   * Si tu sitio es interactivo, puedes [ofrecer imágenes optimizadas](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Con Dynamic Media, tiene varias opciones:
 
 Para obtener más información, consulte los temas siguientes:
 
-* [Agregar recursos de Dynamic Media a páginas web](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+* [Agregar Dynamic Media Assets a páginas web](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 * [Incrustar el visor de vídeo o de imágenes en una página web](/help/assets/dynamic-media/embed-code.md)
 * [Activación de la protección de enlaces interactivos en Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
 * [Vinculación de URL en la aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
@@ -45,4 +45,4 @@ Para obtener más información, consulte los temas siguientes:
 
 Experience Manager ahora admite la entrega de todo el contenido de Dynamic Media (imágenes y vídeo) a través de HTTP/2. Es decir, hay disponible una URL publicada o código incrustado para la imagen o el vídeo que se va a integrar con cualquier aplicación que acepte un recurso alojado. Ese recurso publicado se entrega mediante el protocolo HTTP/2. Este método de entrega mejora la forma en que los navegadores y servidores se comunican, lo que permite una mejor respuesta y tiempos de carga de todos los recursos de Dynamic Media.
 
-Para obtener más información, consulte [Entrega HTTP/2 de preguntas más frecuentes sobre contenido](/help/assets/dynamic-media/http2faq.md).
+Para obtener más información, consulte [Preguntas más frecuentes sobre la entrega de contenido HTTP/2](/help/assets/dynamic-media/http2faq.md).

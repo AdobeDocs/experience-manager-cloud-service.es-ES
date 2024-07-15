@@ -36,7 +36,7 @@ Si el proveedor de servicios de traducción no proporciona un conector para la i
 
 >[!NOTE]
 >
->El usuario debe ser miembro de `project-administrators` para utilizar las funciones de copia de idioma.
+>El usuario debe ser miembro del grupo `project-administrators` para utilizar las características de copia de idioma.
 
 ## Prácticas recomendadas   {#best-practices}
 

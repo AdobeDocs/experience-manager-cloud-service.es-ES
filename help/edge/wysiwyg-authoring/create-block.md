@@ -25,9 +25,9 @@ Esta guía requiere necesariamente conocimientos existentes de creación WYSIWYG
 * Ha completado el [Tutorial del servicio de envío de Edge.](/help/edge/developer/tutorial.md)
 * Tiene acceso a una [Zona protegida de AEM Cloud Service.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * Ha [habilitado el Editor universal en el mismo entorno de zona protegida.](/help/implementing/universal-editor/getting-started.md)
-* Ha completado la [Guía de introducción para desarrolladores para la creación WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) guía.
+* Ha completado la guía de introducción para desarrolladores de [para la creación de WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 
-Esta guía se basa en el trabajo realizado en [Guía de introducción para desarrolladores para la creación WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) guía.
+Esta guía se basa en el trabajo realizado en la guía de introducción para desarrolladores de [para la creación de WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 
 ## Adición de un nuevo bloque al proyecto {#add-block}
 
@@ -45,13 +45,13 @@ El siguiente ejemplo de bloque de comillas sigue este enfoque.
 
 ### Crear la definición y el modelo del bloque {#create-block-model}
 
-1&amp;period; Clone el proyecto de GitHub localmente que ha creado en [Guía de introducción para desarrolladores para la creación WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) y ábrala en un editor de su elección.
+1&amp;period; Clone el proyecto de GitHub localmente que creó en la guía de [Guía de introducción para desarrolladores para la creación WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) y ábralo en un editor de su elección.
 
 * El código Microsoft se utiliza aquí con fines ilustrativos.
 
 ![Clonación del proyecto](assets/create-block/clone.png)
 
-2&amp;period; Editar `component-definition.json` en la raíz del proyecto, agregue la siguiente definición para el nuevo bloque de comillas y guarde el archivo.
+2&amp;period; Edite el archivo `component-definition.json` en la raíz del proyecto, agregue la siguiente definición para el nuevo bloque de comillas y guarde el archivo.
 
 >[!BEGINTABS]
 
@@ -83,7 +83,7 @@ El siguiente ejemplo de bloque de comillas sigue este enfoque.
 
 >[!ENDTABS]
 
-3&amp;period; Editar `component-models.json` en la raíz del proyecto y agregue lo siguiente [definición de modelo](/help/implementing/universal-editor/field-types.md#model-structure) para el nuevo bloque de presupuesto y guarde el archivo.
+3&amp;period; Edite el archivo `component-models.json` en la raíz del proyecto y agregue la siguiente [definición de modelo](/help/implementing/universal-editor/field-types.md#model-structure) para su nuevo bloque de comillas y guarde el archivo.
 
 * Consulte el documento [Modelado de contenido para la creación WYSIWYG con proyectos de Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) para obtener más información acerca de lo que es importante tener en cuenta al crear modelos de contenido.
 
@@ -119,7 +119,7 @@ El siguiente ejemplo de bloque de comillas sigue este enfoque.
 
 >[!ENDTABS]
 
-4&amp;period; Editar `component-filters.json` en la raíz del proyecto y añada el bloque de comillas al [definición de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) para permitir que el bloque se añada a cualquier sección y guardar el archivo.
+4&amp;period; Edite el archivo `component-filters.json` en la raíz del proyecto y agregue el bloque de comillas a la [definición de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) para permitir que el bloque se agregue a cualquier sección y guarde el archivo.
 
 >[!BEGINTABS]
 
@@ -147,7 +147,7 @@ El siguiente ejemplo de bloque de comillas sigue este enfoque.
 
 >[!ENDTABS]
 
-5 y punto; Con Git, confirme estos cambios a su `main` Rama.
+5&amp;period; Con Git, confirme estos cambios en su rama `main`.
 
 * El compromiso con `main` sólo tiene fines ilustrativos. [Siga las prácticas recomendadas](https://www.aem.live/docs/dev-collab-and-good-practices) y utilice una solicitud de extracción para el trabajo real del proyecto.
 
@@ -155,7 +155,7 @@ El siguiente ejemplo de bloque de comillas sigue este enfoque.
 
 Ahora que el bloque de comillas básico está definido y comprometido con el proyecto de muestra, puede agregar un bloque de comillas a una página existente.
 
-1. En un explorador, inicie sesión en AEM as a Cloud Service. [Mediante la consola Sitios,](/help/sites-cloud/authoring/basic-handling.md) vaya al sitio que creó en la [Guía de introducción para desarrolladores para la creación WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) y seleccione una página.
+1. En un explorador, inicie sesión en AEM as a Cloud Service. [Con la consola Sites,](/help/sites-cloud/authoring/basic-handling.md) vaya al sitio que creó en la guía de introducción para desarrolladores de [para la creación WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) y seleccione una página.
 
    * En este caso, `index` se utiliza con fines ilustrativos.
 
@@ -192,11 +192,11 @@ Ahora que tiene un bloque de cita de trabajo, puede aplicarle estilo.
 
 1&amp;period; Vuelva al editor de su proyecto.
 
-2&amp;period; Crear un `quote` en la carpeta `blocks` carpeta.
+2&amp;period; Crear una carpeta `quote` en la carpeta `blocks`.
 
 ![Creación de una carpeta de cita](assets/create-block/new-folder.png)
 
-3&amp;period; En el nuevo `quote` carpeta, añadir una `quote.js` para implementar la decoración de bloques, agregue el siguiente JavaScript y guarde el archivo.
+3&amp;period; En la nueva carpeta `quote`, agregue un archivo `quote.js` para implementar la decoración de bloques agregando la siguiente JavaScript y guarde el archivo.
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-4&amp;period; En el `quote` carpeta, añadir una `quote.css` para definir el estilo del bloque añadiendo el siguiente código CSS y guardando el archivo.
+4&amp;period; En la carpeta `quote`, agregue un archivo `quote.css` para definir el estilo del bloque, agregue el siguiente código CSS y guarde el archivo.
 
 >[!BEGINTABS]
 
@@ -263,13 +263,13 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-5 y punto; Con Git, confirme estos cambios a su `main` Rama.
+5&amp;period; Con Git, confirme estos cambios en su rama `main`.
 
 * El compromiso con `main` sólo tiene fines ilustrativos. [Siga las prácticas recomendadas](https://www.aem.live/docs/dev-collab-and-good-practices) y utilice una solicitud de extracción para el trabajo real del proyecto.
 
-6&amp;period; Vuelva a la pestaña del explorador del editor universal donde estaba editando la página del proyecto y vuelva a cargar la página para ver el bloque con estilo.
+6&amp;period; Vuelva a la pestaña de su navegador del editor universal donde estaba editando la página de su proyecto y vuelva a cargar la página para ver el bloque con estilo.
 
-7 y punto; Consulte el bloque de comillas ahora diseñado en la página.
+7&amp;period; Consulte el bloque de comillas ahora diseñado en la página.
 
 ![El bloque de cita con estilo en el editor universal](assets/create-block/quote-styled.png)
 
@@ -335,9 +335,9 @@ La publicación de contenido con un nuevo modelo solo se admite cuando el modelo
 
 Ahora que sabe cómo crear bloques, es esencial comprender cómo modelar contenido de una manera semántica para lograr una experiencia de desarrollador ágil.
 
-Consulte el documento [Modelado de contenido para la creación WYSIWYG con proyectos de Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) para conocer cómo funciona el modelado de contenido para la creación WYSIWYG con proyectos de Edge Delivery Services.
+Consulte el documento [Modelado de contenido para la creación de WYSIWYG con proyectos de Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) para conocer cómo funciona el modelado de contenido para la creación de WYSIWYG con proyectos de Edge Delivery Services.
 
 >[!TIP]
 >
->Para ver una guía completa sobre la creación de un nuevo proyecto de Edge Delivery Services AEM habilitado para la creación WYSIWYG con as a Cloud Service como origen de contenido, consulte [AEM Este seminario web de GEM de la.](https://experienceleague.adobe.com/es/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Para ver un tutorial completo sobre la creación de un nuevo proyecto de Edge Delivery Services habilitado para la creación WYSIWYG con AEM as a Cloud Service AEM como fuente de contenido, visite [este seminario web de GEMs de.](https://experienceleague.adobe.com/es/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 

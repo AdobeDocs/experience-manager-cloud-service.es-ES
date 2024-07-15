@@ -13,9 +13,9 @@ ht-degree: 5%
 
 # Fragmentos de contenido Configurar componentes para procesamiento{#content-fragments-configuring-components-for-rendering}
 
-Hay varios [servicios avanzados](#definition-of-advanced-services-that-need-configuration) relacionado con la renderización de fragmentos de contenido. Para utilizar estos servicios, los tipos de recurso de dichos componentes deben darse a conocer al marco de trabajo de fragmentos de contenido.
+Hay varios [servicios avanzados](#definition-of-advanced-services-that-need-configuration) relacionados con la representación de fragmentos de contenido. Para utilizar estos servicios, los tipos de recurso de dichos componentes deben darse a conocer al marco de trabajo de fragmentos de contenido.
 
-Esto se hace configurando la variable [Servicio OSGi: configuración del componente Fragmento de contenido](#osgi-service-content-fragment-component-configuration).
+Para ello, configure el [servicio OSGi - Configuración del componente Fragmento de contenido](#osgi-service-content-fragment-component-configuration).
 
 Esta información es necesaria cuando:
 
@@ -26,11 +26,11 @@ El Adobe recomienda utilizar los componentes principales.
 
 >[!CAUTION]
 >
->* **Si no necesita el [servicios avanzados](#definition-of-advanced-services-that-need-configuration)** Como se describe a continuación, puede ignorar esta configuración.
+>* **Si no necesita los [servicios avanzados](#definition-of-advanced-services-that-need-configuration)** que se describen a continuación, puede ignorar esta configuración.
 >
->* **Al ampliar o utilizar los componentes predeterminados de la aplicación** Sin embargo, no se recomienda cambiar la configuración de OSGi.
+>* **Cuando amplía o utiliza los componentes predeterminados**, no se recomienda cambiar la configuración de OSGi.
 >
->* **Puede escribir un componente desde cero que utilice solo la API de fragmentos de contenido, sin servicios avanzados**. Sin embargo, en tal caso, deberá desarrollar el componente para que se ocupe del procesamiento adecuado.
+>* **Puede escribir un componente desde cero que utilice solamente la API de fragmentos de contenido sin servicios avanzados**. Sin embargo, en tal caso, deberá desarrollar el componente para que se ocupe del procesamiento adecuado.
 >
 >Por lo tanto, se recomienda utilizar los componentes principales.
 
@@ -40,8 +40,8 @@ Los servicios que requieren el registro de un componente son:
 
 * Determinar correctamente las dependencias durante la publicación (es decir, asegurarse de que los fragmentos y modelos se puedan publicar automáticamente con una página si han cambiado desde la última publicación).
 * Compatibilidad con fragmentos de contenido en la búsqueda de texto completo.
-* La gestión/gestión de *contenido intermedio.*
-* La gestión/gestión de *recursos de medios mixtos.*
+* Administración/administración de *contenido intermedio.*
+* Administración de *recursos de medios mixtos.*
 * Vaciar Dispatcher para fragmentos a los que se hace referencia (si se vuelve a publicar una página que contiene un fragmento).
 * Uso de la renderización basada en párrafos.
 
@@ -59,7 +59,7 @@ La configuración debe estar enlazada al servicio OSGi **Configuración del comp
 
 Por ejemplo:
 
-![Configuración de OSGi Configuración del componente de fragmento de contenido](assets/cf-component-configuration-osgi.png)
+![Configuración de OSGi: configuración del componente de fragmento de contenido](assets/cf-component-configuration-osgi.png)
 
 La configuración de OSGi es:
 
@@ -95,7 +95,7 @@ La configuración de OSGi es:
  </tbody>
 </table>
 
-Para algunas funciones, el componente deberá adherirse a las convenciones predefinidas. La siguiente tabla detalla las propiedades que debe definir el componente para cada párrafo (es decir, `jcr:paragraph` para cada instancia de componente) para que los servicios puedan detectarlos y procesarlos correctamente.
+Para algunas funciones, el componente deberá adherirse a las convenciones predefinidas. La siguiente tabla detalla las propiedades que debe definir el componente para cada párrafo (es decir, `jcr:paragraph` para cada instancia de componente) para que los servicios puedan detectarlas y procesarlas correctamente.
 
 <table>
  <thead>
@@ -107,7 +107,7 @@ Para algunas funciones, el componente deberá adherirse a las convenciones prede
  <tbody>
   <tr>
    <td><code>paragraphScope</code></td>
-   <td><p>Una propiedad de cadena que define cómo se van a generar los párrafos si en <em>modo de procesamiento de elemento único</em>.</p> <p>Valores:</p>
+   <td><p>Propiedad de cadena que define cómo se generarán los párrafos en <em>modo de representación de elemento único</em>.</p> <p>Valores:</p>
     <ul>
      <li><code>all</code> : para procesar todos los párrafos</li>
      <li><code>range</code> : para representar el intervalo de párrafos proporcionado por <code>paragraphRange</code></li>
@@ -115,7 +115,7 @@ Para algunas funciones, el componente deberá adherirse a las convenciones prede
   </tr>
   <tr>
    <td><code>paragraphRange</code></td>
-   <td><p>Una propiedad de cadena que define el intervalo de párrafos de salida si en <em>modo de procesamiento de elemento único</em>.</p> <p>Formato:</p>
+   <td><p>Propiedad de cadena que define el intervalo de párrafos que se generará si se encuentra en <em>modo de representación de un solo elemento</em>.</p> <p>Formato:</p>
     <ul>
      <li><code>1</code> o <code>1-3</code> o <code>1-3;6;7-8</code> o <code>*-3;5-*</code>
      <ul>

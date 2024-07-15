@@ -1,5 +1,5 @@
 ---
-title: AEM Configuración de extremo de Dispatcher con sin encabezado
+title: Configuración de extremo de Dispatcher AEM con acceso sin encabezado
 description: Dispatcher es una capa de almacenamiento en caché y seguridad situada frente a los entornos de publicación de Adobe Experience Manager. Se utilizan varias configuraciones para abrir puntos de conexión de GraphQL en aplicaciones sin encabezado.
 feature: Headless, Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
@@ -12,7 +12,7 @@ ht-degree: 94%
 ---
 
 
-# AEM Dispatcher: configuración de extremo con encabezado sin encabezado de
+# Dispatcher AEM: Configuración de extremo con configuración sin encabezado
 
 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) es una capa de almacenamiento en caché y seguridad delante de los entornos de publicación de Adobe Experience Manager. De forma predeterminada, se incluyen varias configuraciones para abrir los puntos de conexión de GraphQL en aplicaciones sin encabezado.
 

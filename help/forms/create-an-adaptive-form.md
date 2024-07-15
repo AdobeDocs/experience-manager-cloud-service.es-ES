@@ -11,11 +11,11 @@ exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
 source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
 source-wordcount: '2687'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
-# Crear un formulario adaptable {#creating-an-adaptive-form}
+# Creación de un formulario adaptable {#creating-an-adaptive-form}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -53,7 +53,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 * **Permisos**: añada sus usuarios al grupo [!DNL forms-users]. Los miembros del grupo [!DNL forms-users] tienen permisos para crear un formulario adaptable. Para obtener una lista detallada de los formularios y grupos de usuarios específicos, consulte [Grupos y permisos](forms-groups-privileges-tasks.md).
 
 
-## Crear un formulario adaptable {#create-an-adaptive-form-core-components}
+## Creación de un formulario adaptable {#create-an-adaptive-form-core-components}
 
 1. Inicie sesión en la instancia de autor de [!DNL Experience Manager Forms]. Puede ser una instancia de nube o una instancia de desarrollo local.
 
@@ -78,7 +78,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 
 1. (Opcional) En la pestaña Datos, seleccione un modelo de datos:
 
-   * **Modelo de datos de formulario**: A [Modelo de datos de formulario (FDM)](data-integration.md) permite integrar entidades y servicios de distintas fuentes de datos en un formulario adaptable. Elija Modelo de datos de formulario (FDM) si el formulario adaptable que está creando implica recuperar y escribir datos desde y hacia varias fuentes de datos.
+   * **Modelo de datos de formulario**: un [Modelo de datos de formulario (FDM)](data-integration.md) le permite integrar entidades y servicios de distintas fuentes de datos en un formulario adaptable. Elija el modelo de datos de formulario (FDM) si el formulario adaptable que está creando implica recuperar y escribir datos desde y hacia varias fuentes de datos.
 
    * **Esquema JSON**: [Esquema JSON](adaptive-form-json-schema-form-model.md) Nuestro formulario adaptable basado en componentes principales permite una integración optimizada con el sistema back-end de su organización al proporcionar la capacidad de asociar un esquema JSON, que representa la estructura de los datos que se producen o consumen. Esta asociación permite a los autores añadir contenido de forma dinámica al formulario adaptable mediante los elementos del esquema. Los elementos del esquema son fácilmente accesibles en la pestaña Objetos del modelo de datos del Explorador de contenido durante el proceso de creación y todos los campos se añaden automáticamente a cualquier formulario adaptable recién creado.
 
@@ -98,7 +98,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
    * **[!UICONTROL Nombre:]** Especifica el nombre del formulario. Se crea un nodo con el nombre especificado en el repositorio. A medida que empieza a escribir un título, el valor del campo de nombre se genera automáticamente. Puede cambiar el valor sugerido. El campo de nombre solo puede incluir caracteres alfanuméricos, guiones y guiones bajos. Todas las entradas no válidas se sustituyen por guiones.
    * **[!UICONTROL Ruta:]** Especifica la ubicación en la que se va a guardar el formulario adaptable. Puede guardar el Formulario adaptable directamente en `/content/dam/formsanddocuments` o crear una carpeta como `/content/dam/formsanddocuments/adaptiveforms` para guardar un Formulario adaptable. Asegúrese de crear la carpeta antes de utilizarla en la ruta. El campo **[!UICONTROL Ruta]** no crea una carpeta automáticamente.
 
-1. Seleccione **[!UICONTROL Crear]**. Se crea un formulario adaptable que se abre en el editor de formularios adaptables. El editor muestra el contenido disponible en la plantilla.  En función del tipo de formulario adaptable, los elementos del formulario presentes en el formulario asociado <!--XFA form template, XML schema or --> El esquema JSON o el modelo de datos de formulario (FDM) se muestran en la variable **[!UICONTROL Objetos del modelo de datos]** de la pestaña **[!UICONTROL Explorador de contenido]** en la barra lateral.
+1. Seleccione **[!UICONTROL Crear]**. Se crea un formulario adaptable que se abre en el editor de formularios adaptables. El editor muestra el contenido disponible en la plantilla.  En función del tipo de formulario adaptable, los elementos del formulario presentes en el <!--XFA form template, XML schema or --> esquema JSON o modelo de datos de formulario (FDM) asociado se muestran en la pestaña **[!UICONTROL Objetos del modelo de datos]** del **[!UICONTROL Explorador de contenido]** en la barra lateral.
 
 Ahora puede arrastrar y soltar los [Componentes principales de formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es#components) o los elementos de esquema para crear el formulario adaptable.
 
@@ -107,7 +107,7 @@ Ahora puede arrastrar y soltar los [Componentes principales de formularios adapt
 
 1. Seleccione el formulario adaptable e ![Información de página](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Abrir propiedades]**. Se abre la página Propiedades del formulario.
 
-1. Vaya a la pestaña **[!UICONTROL Modelo de formulario]** y elija un modelo de formulario. Si el formulario adaptable no cuenta con un modelo de formulario, puede elegir entre un esquema JSON o un modelo de datos de formulario (FDM). Por otro lado, si el formulario adaptable ya se basa en un modelo de formulario, tiene la opción de cambiar a otro modelo de formulario del mismo tipo. Por ejemplo, si el formulario utiliza un esquema JSON, puede cambiar fácilmente a otro esquema JSON y, del mismo modo, si el formulario utiliza un modelo de datos de formulario (FDM), puede cambiar a otro modelo de datos de formulario (FDM).
+1. Vaya a la pestaña **[!UICONTROL Modelo de formulario]** y elija un modelo de formulario. Si el formulario adaptable no cuenta con un modelo de formulario, tiene la posibilidad de elegir un esquema JSON o un modelo de datos de formulario (FDM). Por otro lado, si el formulario adaptable ya se basa en un modelo de formulario, tiene la opción de cambiar a otro modelo de formulario del mismo tipo. Por ejemplo, si el formulario utiliza un esquema JSON, puede cambiar fácilmente a otro esquema JSON y, asimismo, si el formulario utiliza un modelo de datos de formulario (FDM), puede cambiar a otro modelo de datos de formulario (FDM).
 
 1. Seleccione **[!UICONTROL Guardar]** para guardar las propiedades.
 
@@ -126,7 +126,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
    * **Plantilla estática**: estas son plantillas heredadas y solo se recomiendan para los clientes que migran de Adobe Managed Services (AMS) e instalaciones locales de AEM Forms (AEM Forms 6.5 o anteriores). Esto le permite seguir utilizando su inversión existente en plantillas estáticas. Cuando cree un formulario adaptable, utilice una Plantilla editable.
 
 
-## Crear un formulario adaptable {#create-an-adaptive-form-foundation-components}
+## Creación de un formulario adaptable {#create-an-adaptive-form-foundation-components}
 
 1. Acceda a la instancia de autor de [!DNL Experience Manager Forms]. Puede ser una instancia de nube o una instancia de desarrollo local.
 
@@ -152,7 +152,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 
 1. (Opcional) En la pestaña **[!UICONTROL Datos]**, seleccione un modelo de datos:
 
-   * **Modelo de datos de formulario**: A [Modelo de datos de formulario (FDM)](data-integration.md) permite integrar entidades y servicios de distintas fuentes de datos en un formulario adaptable. Elija Modelo de datos de formulario (FDM) si el formulario adaptable que está creando implica recuperar y escribir datos desde y hacia varias fuentes de datos.
+   * **Modelo de datos de formulario**: el [modelo de datos de formulario (FDM)](data-integration.md) permite integrar entidades y servicios de distintas fuentes de datos en un formulario adaptable. Elija el modelo de datos de formulario (FDM) si el formulario adaptable que está creando implica recuperar y escribir datos desde y hacia varias fuentes de datos.
 
    * **Esquema JSON**: [El esquema JSON](adaptive-form-json-schema-form-model.md) representa la estructura en la que el sistema back-end de su organización produce o consume datos. Puede asociar el esquema a un formulario adaptable y utilizar sus elementos para agregarle contenido dinámico. Los elementos del esquema están disponibles para su uso en la pestaña Objetos del modelo de datos del explorador de contenido al crear formularios adaptables y todos los campos también se añaden al formulario adaptable creado.
 
@@ -180,7 +180,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 
 1. Seleccione **[!UICONTROL Crear]**. Se crea un formulario adaptable que se abre en el editor de formularios adaptables. El editor muestra el contenido disponible en la plantilla. También muestra la barra lateral para personalizar el formulario recién creado según las necesidades.
 
-   En función del tipo de formulario adaptable, los elementos del formulario presentes en el formulario asociado <!--XFA form template, XML schema or --> El esquema JSON o el modelo de datos de formulario (FDM) se muestran en la variable **[!UICONTROL Objetos del modelo de datos]** de la pestaña **[!UICONTROL Explorador de contenido]** en la barra lateral. También puede arrastrar y soltar estos elementos para crear su formulario adaptable.
+   En relación con el tipo de formulario adaptable, los elementos del formulario presentes en el esquema JSON <!--XFA form template, XML schema or --> o el modelo de datos de formulario (FDM) asociados se muestran en la pestaña **[!UICONTROL Objetos del modelo de datos]** del **[!UICONTROL Explorador de contenido]** en la barra lateral. También puede arrastrar y soltar estos elementos para crear su formulario adaptable.
 
 <!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
@@ -238,8 +238,8 @@ Puede cambiar el modelo de formulario para un formulario adaptable (basado en JS
 1. Seleccione el formulario adaptable y seleccione el icono **Propiedades**.
 1. Abra la pestaña **[!UICONTROL Modelo de formulario]** y haga una de las siguientes acciones.
 
-   * Si el formulario adaptable no cuenta con un modelo de formulario, puede elegir otro modelo de formulario y, en consecuencia, seleccionar <!-- a form template, --> Esquema XML o JSON o modelo de datos de formulario (FDM).
-   * Si el formulario adaptable se basa en un modelo de formulario, puede elegir otro <!-- form template, --> Esquema XML o JSON o modelo de datos de formulario (FDM) para el mismo modelo de formulario.
+   * Si el formulario adaptable no cuenta con un modelo de formulario, puede elegir otro modelo de formulario y, en consecuencia, seleccionar un esquema XML o JSON <!-- a form template, --> o un modelo de datos de formulario (FDM).
+   * Si el formulario adaptable se basa en un modelo de formulario, puede elegir otro esquema XML o JSON <!-- form template, --> o modelo de datos de formulario (FDM) para el mismo modelo de formulario.
 
 1. Seleccione **[!UICONTROL Guardar]** para guardar las propiedades.
 
@@ -249,8 +249,8 @@ También puede modificar las propiedades del modelo del formulario desde el edit
 1. Haga clic en el ![Icono Configurar](/help/forms/assets/configure-icon.svg) para abrir **[!UICONTROL Propiedades]** del contenedor del Formulario adaptable.
 1. Seleccione la pestaña **[!UICONTROL Modelo de datos]** y realice una de las siguientes acciones:
 
-   * Si el formulario adaptable no cuenta con un modelo de formulario, puede elegir un modelo de formulario y seleccionar lo siguiente <!-- a form template, --> Esquema XML o JSON o modelo de datos de formulario (FDM).
-   * Si el formulario adaptable se basa en un modelo de formulario, no se puede cambiar el modelo de formulario. Puede elegir otra <!-- form template, --> Esquema XML o JSON o modelo de datos de formulario (FDM) para el mismo modelo de formulario, según corresponda.
+   * Si el formulario adaptable no posee un modelo de formulario, puede elegir un modelo de formulario y seleccionar un esquema XML o JSON <!-- a form template, -->, o un modelo de datos de formulario (FDM), según corresponda.
+   * Si el formulario adaptable se basa en un modelo de formulario, no se puede cambiar el modelo de formulario. Puede elegir otro esquema XML o JSON <!-- form template, -->, o un modelo de datos de formulario (FDM) para el mismo modelo de formulario, según corresponda.
 1. Seleccione ![Guardar](/help/forms/assets/check-button.png) para guardar las propiedades.
 
 ![Compatibilidad con FDM-Esquema](/help/forms/assets/fdmsupport.png){width="100%" align="center"}

@@ -6,7 +6,7 @@ contentOwner: vishgupt
 topic-tags: document_services, publish
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 100%
 

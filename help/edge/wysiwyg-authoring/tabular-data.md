@@ -44,7 +44,7 @@ Este documento utiliza el ejemplo de los redireccionamientos para ilustrar cómo
 
 Para crear asignaciones con hojas de cálculo en su proyecto de AEM con Edge Delivery Services, debe haber creado el sitio con la última plantilla del sitio.
 
-Consulte el documento [Guía de introducción para desarrolladores para la creación WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para obtener más información.
+Consulte el documento [Guía de introducción para desarrolladores para la creación de WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para obtener más información.
 
 ## Creación de una hoja de cálculo {#spreadsheet}
 

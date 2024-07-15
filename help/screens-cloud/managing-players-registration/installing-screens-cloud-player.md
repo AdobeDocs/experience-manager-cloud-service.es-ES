@@ -1,5 +1,5 @@
 ---
-title: Instalación y configuración de reproductores en pantallas as a Cloud Service
+title: Instalación y configuración de reproductores en Screens as a Cloud Service
 description: En esta página se describe cómo instalar y configurar reproductores en Screens as a Cloud Service.
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 feature: Developing Screens
@@ -11,9 +11,9 @@ ht-degree: 1%
 
 ---
 
-# Instalación y configuración de reproductores en pantallas as a Cloud Service {#installing-players-screens-cloud}
+# Instalación y configuración de reproductores en Screens as a Cloud Service {#installing-players-screens-cloud}
 
-En esta sección se describe cómo instalar reproductores de AEM Screens AEM registrados en instancias de on-premise. Además, debe realizar un restablecimiento de fábrica del reproductor existente y luego registrar el nuevo reproductor con AEM Screens as a Cloud Service.
+En esta sección se describe cómo instalar reproductores de AEM Screens AEM registrados en instancias de on-premise. Además, debe hacer un restablecimiento de fábrica del reproductor existente y luego registrar el nuevo reproductor contra AEM Screens as a Cloud Service.
 
 ## Objetivo {#objective}
 
@@ -24,7 +24,7 @@ Este documento le ayuda a comprender cómo configurar el reproductor antes de re
 
 ## Pasos para establecer el reproductor en modo de nube {#cloud-mode-setup}
 
-Después de descargar el último reproductor de [Descargas del reproductor AEM Screens](https://download.macromedia.com/screens/), ya está listo para actualizar el reproductor al modo de nube.
+Después de descargar el reproductor más reciente de [Descargas del reproductor AEM Screens](https://download.macromedia.com/screens/), ya puede actualizar el reproductor al modo de nube.
 
 Siga los pasos a continuación para actualizar el reproductor:
 
@@ -33,21 +33,21 @@ Siga los pasos a continuación para actualizar el reproductor:
    >[!NOTE]
    >Puede elegir realizar pruebas con dispositivos de hardware dedicados o con una extensión web en su propio reproductor.
 
-1. Haga clic en **Configuración** y haga clic en **A Fábrica** botón debajo de **Restablecer** opción.
+1. Haga clic en la ficha **Configuración** y luego en el botón **Para usar la fábrica** en la opción **Restablecer**.
 
    ![imagen](/help/screens-cloud/assets/player/installplayer-2.png)
 
-1. Clic **Confirmar** para restablecer el reproductor.
+1. Haz clic en **Confirmar** para restablecer el reproductor.
 
-1. Otra vez desde el **Configuración** y haga clic en **Cambiar a modo de nube** botón debajo de **Alternar modo de ejecución** opción.
+1. Vuelva a la pestaña **Configuración** y haga clic en el botón **Cambiar al modo de nube** en la opción **Alternar modo de ejecución**.
 
    ![imagen](/help/screens-cloud/assets/player/installplayer-1.png)
 
-1. Clic **Confirmar** este mensaje aparece cuando se cambia al modo de nube y se cancela el registro del reproductor.
+1. Haga clic en **Confirmar** que le avise cuando se cambie al modo de nube para anular el registro del reproductor.
 
 ## Monitorización de reproducción básica {#playback-monitoring}
 
-El reproductor informa de varias métricas de reproducción con cada una `ping` el valor predeterminado es de 30 segundos. En función de estas métricas, el Adobe puede detectar varios casos extremos, como experiencias atascadas, pantallas en blanco y problemas de programación. Esta detección nos permite comprender y solucionar problemas en el dispositivo y, por lo tanto, acelera una investigación y medidas correctivas con usted.
+El reproductor informa de varias métricas de reproducción con cada `ping` cuyo valor predeterminado es de 30 segundos. En función de estas métricas, el Adobe puede detectar varios casos extremos, como experiencias atascadas, pantallas en blanco y problemas de programación. Esta detección nos permite comprender y solucionar problemas en el dispositivo y, por lo tanto, acelera una investigación y medidas correctivas con usted.
 
 La monitorización de la reproducción básica en un reproductor AEM Screens nos permite:
 
@@ -59,7 +59,7 @@ La monitorización de la reproducción básica en un reproductor AEM Screens nos
 
 ### Explicación de propiedades {#understand-properties}
 
-Las siguientes propiedades se incluyen en cada `ping`:
+En cada `ping` se incluyen las siguientes propiedades:
 
 | Propiedad | Descripción |
 |---|---|
@@ -76,13 +76,13 @@ Las siguientes propiedades se incluyen en cada `ping`:
 >|—|—|
 >|isContentRendering {boolean}|true si la GPU puede confirmar que está reproduciendo contenido real (según el análisis de píxeles)|
 
-### Restricciones {#limitations}
+### Limitaciones {#limitations}
 
 A continuación se enumeran algunas limitaciones de la monitorización básica de la reproducción:
 
 * El reproductor informa de su propio estado de reproducción al servidor, por lo que requiere una conexión activa.
 
-* El `isContentRendering` La propiedad de que comprueba la GPU consume demasiados recursos para estar habilitada de forma predeterminada y requiere la inclusión explícita en las preferencias del reproductor. Se recomienda no utilizarlo con vídeos en producción.
+* La propiedad `isContentRendering` que comprueba la GPU consume demasiados recursos para habilitarse de forma predeterminada y requiere la inclusión explícita en las preferencias del reproductor. Se recomienda no utilizarlo con vídeos en producción.
 
 * SPA Esta función solo se admite para canales de secuencia y aún no cubre el caso de uso de canales interactivos ().
 
@@ -90,4 +90,4 @@ A continuación se enumeran algunas limitaciones de la monitorización básica d
 
 ## Siguientes pasos {#whats-next}
 
-Ahora que ha instalado y configurado el reproductor en el modo de nube, continúe con el recorrido as a Cloud Service de Screens. Consulte [Registro de reproductores en pantallas as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) del proveedor de servicios de Screens.
+Ahora que ha instalado y configurado el reproductor en el modo de nube, continúe con el as a Cloud Service recorrido de Screens. Consulte [Registro de reproductores en Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) del proveedor de servicios de Screens.

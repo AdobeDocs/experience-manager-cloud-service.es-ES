@@ -6,8 +6,8 @@ feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 6886d3e669b06b63d2225348e95e00806db1b8f5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1146'
+ht-degree: 12%
 
 ---
 
@@ -24,7 +24,7 @@ Este documento proporciona información general sobre la definición de un model
 
 >[!TIP]
 >
->Si no conoce cómo instrumentar la aplicación para el editor universal, consulte el documento [AEM Información general del editor universal para desarrolladores de.](/help/implementing/universal-editor/developer-overview.md)
+>AEM Si no está familiarizado con la instrumentación de la aplicación para el editor universal, consulte el documento [Información general del editor universal para desarrolladores de.](/help/implementing/universal-editor/developer-overview.md)
 
 ## Estructura de definición de modelo {#model-structure}
 
@@ -41,9 +41,9 @@ La definición del modelo es una estructura JSON que comienza con una matriz de 
 ]
 ```
 
-Consulte la **[Campos](#fields)** de este documento para obtener más información sobre cómo definir su `fields` matriz.
+Consulte la sección **[Campos](#fields)** de este documento para obtener más información sobre cómo definir la matriz `fields`.
 
-Para utilizar la definición del modelo con un componente, la variable `data-aue-model` se puede utilizar el atributo.
+Para usar la definición del modelo con un componente, se puede usar el atributo `data-aue-model`.
 
 ```html
 <div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
@@ -81,7 +81,7 @@ Un objeto de campo tiene la siguiente definición de tipo.
 | `required` | `boolean` | ¿El campo es obligatorio? | No |
 | `readOnly` | `boolean` | Es el campo de solo lectura | No |
 | `hidden` | `boolean` | El campo está oculto de forma predeterminada | No |
-| `condition` | `RulesLogic` | Regla para mostrar u ocultar el campo en función de una [condición](/help/implementing/universal-editor/customizing.md#conditionally-hide) | No |
+| `condition` | `RulesLogic` | Regla para mostrar u ocultar el campo según una [condición](/help/implementing/universal-editor/customizing.md#conditionally-hide) | No |
 | `multi` | `boolean` | ¿El campo es un campo múltiple? | No |
 | `validation` | `ValidationType` | Regla o reglas de validación para el campo | No |
 | `raw` | `unknown` | Datos sin procesar que el componente puede utilizar | No |
@@ -92,14 +92,14 @@ A continuación se indican los tipos de componentes que se pueden utilizar para 
 
 | Descripción | Tipo de componente |
 |---|---|
-| [AEM Etiqueta de](#aem-tag) | `aem-tag` |
-| [AEM Contenido de](#aem-content) | `aem-content` |
+| AEM [Etiqueta de](#aem-tag) | `aem-tag` |
+| AEM [Contenido de la](#aem-content) | `aem-content` |
 | [Booleana](#boolean) | `boolean` |
-| [Grupo de casillas](#checkbox-group) | `checkbox-group` |
+| [Grupo de casillas de verificación](#checkbox-group) | `checkbox-group` |
 | [Contenedor](#container) | `container` |
 | [Fragmento de contenido](#content-fragment) | `aem-content-fragment` |
 | [Fecha y hora](#date-time) | `date-time` |
-| [Multiselect](#multiselect) | `multiselect` |
+| [Selección múltiple](#multiselect) | `multiselect` |
 | [Número](#number) | `number` |
 | [Grupo de radio](#radio-group) | `radio-group` |
 | [Referencia](#reference) | `reference` |
@@ -132,7 +132,7 @@ AEM AEM Un tipo de componente de etiqueta de habilita un selector de etiquetas d
 
 >[!TAB Captura de pantalla]
 
-![AEM Captura de pantalla del tipo de componente de etiqueta de](assets/component-types/aem-tag-picker.png)
+AEM ![Captura de pantalla del tipo de componente de etiqueta de](assets/component-types/aem-tag-picker.png)
 
 >[!ENDTABS]
 
@@ -161,7 +161,7 @@ AEM AEM Un tipo de componente de contenido de habilita un selector de contenido 
 
 >[!TAB Captura de pantalla]
 
-![AEM Captura de pantalla del tipo de componente de contenido de la](assets/component-types/aem-content-picker.png)
+AEM ![Captura de pantalla del tipo de componente de contenido de la](assets/component-types/aem-content-picker.png)
 
 >[!ENDTABS]
 
@@ -244,7 +244,7 @@ Similar a un booleano, un tipo de componente de grupo de casillas de verificaci�
 
 >[!TAB Captura de pantalla]
 
-![Captura de pantalla del tipo de componente del grupo de casillas de verificación](assets/component-types/checkbox-group.png)
+![Captura de pantalla del tipo de componente del grupo de casillas](assets/component-types/checkbox-group.png)
 
 >[!ENDTABS]
 
@@ -297,7 +297,7 @@ Un tipo de componente contenedor permite agrupar componentes. Ofrece una configu
 
 #### Fragmento de contenido {#content-fragment}
 
-El selector de fragmentos de contenido se puede utilizar para seleccionar un [Fragmento de contenido](/help/sites-cloud/authoring/fragments/content-fragments.md) y sus variaciones (si es necesario). Ofrece una configuración adicional.
+El selector de fragmentos de contenido se puede usar para seleccionar un [fragmento de contenido](/help/sites-cloud/authoring/fragments/content-fragments.md) y sus variaciones (si es necesario). Ofrece una configuración adicional.
 
 | Configuración | Tipo de valor | Descripción | Requerido |
 |---|---|---|---|
@@ -343,7 +343,7 @@ También ofrece un tipo de validación adicional.
 
 | Tipo de validación | Tipo de valor | Descripción | Requerido |
 |---|---|---|---|
-| `customErrorMsg` | `string` | Mensaje que se mostrará si `valueFormat` no se cumple | No |
+| `customErrorMsg` | `string` | Mensaje que se mostrará si no se cumple `valueFormat` | No |
 
 >[!BEGINTABS]
 
@@ -423,7 +423,7 @@ También ofrece un tipo de validación adicional.
 
 #### Fragmento de experiencias {#experience-fragment}
 
-El selector de Fragmento de experiencia se puede utilizar para seleccionar una [Fragmento de experiencia](/help/sites-cloud/authoring/fragments/experience-fragments.md) y sus variaciones (si es necesario). Ofrece una configuración adicional.
+El selector Fragmento de experiencia se puede usar para seleccionar un [Fragmento de experiencia](/help/sites-cloud/authoring/fragments/experience-fragments.md) y sus variaciones (si es necesario). Ofrece una configuración adicional.
 
 | Configuración | Tipo de valor | Descripción | Requerido |
 |---|---|---|---|
@@ -452,7 +452,7 @@ El selector de Fragmento de experiencia se puede utilizar para seleccionar una [
 
 >[!TAB Captura de pantalla]
 
-![Captura de pantalla del selector de Fragmentos de experiencias](assets/component-types/aem-experience-fragment.png)
+![Captura de pantalla del selector de Fragmento de experiencia](assets/component-types/aem-experience-fragment.png)
 
 >[!ENDTABS]
 
@@ -520,8 +520,8 @@ Un tipo de componente de selección múltiple presenta varios elementos para su 
 
 >[!TAB Capturas de pantalla]
 
-![Captura de pantalla del tipo de componente multiselección](assets/component-types/multiselect.png)
-![Captura de pantalla del tipo de componente multiselección con agrupación](assets/component-types/multiselect-group.png)
+![Captura de pantalla del tipo de componente multiselect](assets/component-types/multiselect.png)
+![Captura de pantalla de tipo de componente multiselección con agrupación](assets/component-types/multiselect-group.png)
 
 >[!ENDTABS]
 
@@ -533,7 +533,7 @@ Un tipo de componente numérico permite introducir un número. Ofrece tipos de v
 |---|---|---|---|
 | `numberMin` | `number` | Número mínimo permitido | No |
 | `numberMax` | `number` | Número máximo permitido | No |
-| `customErrorMsg` | `string` | Mensaje que se mostrará si `numberMin` o `numberMax` no se cumple | No |
+| `customErrorMsg` | `string` | Mensaje que se mostrará si `numberMin` o `numberMax` no se cumplen | No |
 
 >[!BEGINTABS]
 
@@ -580,7 +580,7 @@ Un tipo de componente numérico permite introducir un número. Ofrece tipos de v
 
 >[!TAB Captura de pantalla]
 
-![Captura de pantalla del tipo de componente Número](assets/component-types/number.png)
+![Captura de pantalla del tipo de componente numérico](assets/component-types/number.png)
 
 >[!ENDTABS]
 
@@ -651,7 +651,7 @@ El texto enriquecido permite la entrada de texto enriquecido multilínea. Ofrece
 | Tipo de validación | Tipo de valor | Descripción | Requerido |
 |---|---|---|---|
 | `maxSize` | `number` | Número máximo de caracteres permitidos | No |
-| `customErrorMsg` | `string` | Mensaje que se mostrará si `maxSize` se ha superado | No |
+| `customErrorMsg` | `string` | Mensaje que se mostrará si se supera `maxSize` | No |
 
 >[!BEGINTABS]
 
@@ -693,7 +693,7 @@ El texto enriquecido permite la entrada de texto enriquecido multilínea. Ofrece
 
 >[!TAB Captura de pantalla]
 
-![Captura de pantalla del tipo de componente del área de texto](assets/component-types/richtext.png)
+![Captura de pantalla del tipo de componente de área de texto](assets/component-types/richtext.png)
 
 >[!ENDTABS]
 
@@ -725,7 +725,7 @@ Un tipo de componente Seleccionar permite seleccionar una sola opción de una li
 
 >[!TAB Captura de pantalla]
 
-![Captura de pantalla de un tipo de componente seleccionado](assets/component-types/select.png)
+![Captura de pantalla de un componente seleccionado](assets/component-types/select.png)
 
 >[!ENDTABS]
 
@@ -733,7 +733,7 @@ Un tipo de componente Seleccionar permite seleccionar una sola opción de una li
 
 Un tipo de componente de pestaña le permite agrupar otros campos de entrada en varias pestañas para mejorar la organización del diseño para los autores.
 
-A `tab` definición se puede considerar como un separador en la matriz de `fields`. Todo lo que viene después de un `tab` se colocará en esa pestaña hasta que se cree un nuevo `tab` se encuentra, después de lo cual los siguientes elementos se colocarán en la nueva pestaña.
+Una definición de `tab` se puede considerar como un separador en la matriz de `fields`. Todo lo que venga después de `tab` se colocará en esa ficha hasta que se encuentre un nuevo(a) `tab`, después de lo cual se colocarán los siguientes elementos en la nueva ficha.
 
 Si desea que los elementos aparezcan encima de todas las pestañas, deben definirse antes que las pestañas.
 
@@ -773,7 +773,7 @@ Si desea que los elementos aparezcan encima de todas las pestañas, deben defini
 
 >[!TAB Captura de pantalla]
 
-![Captura de pantalla del tipo de componente de pestaña](assets/component-types/tab.png)
+![Captura de pantalla del tipo de componente de ficha](assets/component-types/tab.png)
 
 >[!ENDTABS]
 
@@ -786,7 +786,7 @@ El texto permite introducir una sola línea de texto.  Incluye tipos de validaci
 | `minLength` | `number` | Número mínimo de caracteres permitidos | No |
 | `maxLength` | `number` | Número máximo de caracteres permitidos | No |
 | `regExp` | `string` | Expresión regular con la que debe coincidir el texto de entrada | No |
-| `customErrorMsg` | `string` | Mensaje que se mostrará si `minLength`, `maxLength`, y/o `regExp` es/son violados | No |
+| `customErrorMsg` | `string` | Mensaje que se mostrará si se infringen `minLength`, `maxLength` o `regExp` | No |
 
 >[!BEGINTABS]
 
@@ -832,6 +832,6 @@ El texto permite introducir una sola línea de texto.  Incluye tipos de validaci
 
 >[!TAB Captura de pantalla]
 
-![Captura de pantalla del tipo de componente Texto](assets/component-types/simpletext.png)
+![Captura de pantalla del tipo de componente de texto](assets/component-types/simpletext.png)
 
 >[!ENDTABS]

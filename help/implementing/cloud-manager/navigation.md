@@ -23,7 +23,7 @@ La IU de Cloud Manager está compuesta principalmente por dos interfaces gráfic
 
 >[!TIP]
 >
->Consulte también la [recorrido de documentación de incorporación](/help/journey-onboarding/overview.md) AEM para obtener una descripción general completa de cómo ponerse en marcha con las funciones as a Cloud Service de los mediante Cloud Manager.
+>Consulte también el [recorrido de documentación de incorporación](/help/journey-onboarding/overview.md) para obtener una descripción general completa de cómo ponerse en marcha con AEM as a Cloud Service mediante Cloud Manager.
 
 ## Consola Mis programas {#my-programs}
 
@@ -106,7 +106,7 @@ Cada programa está representado por una tarjeta (o fila en una tabla), que prop
 
 * Imagen del programa (si está configurada)
 * Nombre del programa
-* Tipo de servicio: **Experience Manager Cloud** AEM para programas de Cloud Service de as a * o [**Experience Manager** para programas de AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+* Tipo de servicio: **Nube de Experience Manager AEM** para programas de Cloud Service de as a * o [**Experience Manager** para programas de AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [Tipo de programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md): zona protegida o producción
 * Estado
 * Soluciones configuradas
@@ -116,15 +116,15 @@ Según las opciones elegidas al crear el programa, un programa de producción po
 
 * [HIPAA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
-  ![Distintivo HIPAA](assets/hipaa.png)
+  ![distintivo HIPAA](assets/hipaa.png)
 
 * [Protección WAF-DDOS](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
-  ![Distintivo WAF-DDOS](assets/waf-ddos-protection.png)
+  ![Insignia WAF-DDOS](assets/waf-ddos-protection.png)
 
 * [SLA de 99,99 %](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
 
-  ![99,99 % Distintivo de SLA](assets/9999-sla.png)
+  ![99,99% de insignia de SLA](assets/9999-sla.png)
 
 El icono de información también permite acceder rápidamente a la información adicional sobre el programa (útil en la vista de listas).
 
@@ -144,12 +144,12 @@ El icono de puntos suspensivos le permite acceder a acciones adicionales a reali
 >Para obtener más información sobre los programas y la creación y administración de programas, consulte los siguientes documentos.
 >
 >* [Programas y tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
->* [Creación de programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
->* [Creación de programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+>* [Creando programas de espacio aislado](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+>* [Creando programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 
 #### Pestaña Licencia {#license-tab}
 
-El **Licencia** le permite acceder rápidamente a la pestaña [Tablero de licencias.](/help/implementing/cloud-manager/license-dashboard.md)
+La ficha **Licencia** le proporciona acceso rápido al [Tablero de licencias.](/help/implementing/cloud-manager/license-dashboard.md)
 
 ### Vínculos rápidos {#quick-links}
 
@@ -168,7 +168,7 @@ La descripción general del programa le permite acceder a todos los detalles de 
 1. Una [llamada a la acción](#cta) basada en las últimas acciones del programa
 1. Una [descripción general de los entornos](#environments) del programa
 1. Una [descripción general de las canalizaciones](#pipelines) del programa
-1. Un [descripción general del rendimiento](#performance) del programa
+1. Una [descripción general del rendimiento](#performance) del programa
 1. Vínculos a [recursos útiles](#useful-resources)
 
 ### Barras de herramientas {#program-overview-toolbar}
@@ -237,7 +237,7 @@ Consulte el documento [Administración de canalizaciones](/help/implementing/clo
 
 ### Tarjeta de rendimiento {#performance}
 
-El **Rendimiento** ofrece una descripción general de la **[Panel de CDN.](/help/implementing/cloud-manager/cdn-performance.md)**
+La tarjeta **Rendimiento** proporciona información general sobre el **[panel de CDN.](/help/implementing/cloud-manager/cdn-performance.md)**
 
 ![Tarjeta de rendimiento](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
 

@@ -19,7 +19,7 @@ Conozca las potentes funciones del panel del sitio para ayudarle a personalizar 
 
 ## Información general {#overview}
 
-El panel Sitio permite administrar los recursos de tema y plantilla del sitio. [Como otros paneles](/help/sites-cloud/authoring/sites-console/console-side-panel.md) como los paneles Árbol de contenido, Referencias o Línea de tiempo, el panel Sitio se muestra como el panel situado más a la izquierda en la consola Sitios y muestra información sobre el elemento seleccionado. A diferencia de otros paneles, el panel Sitio solo se aplica a las raíces del sitio.
+El panel Sitio permite administrar los recursos de tema y plantilla del sitio. [Al igual que otros paneles](/help/sites-cloud/authoring/sites-console/console-side-panel.md), como el Árbol de contenido, Referencias o Línea de tiempo, el panel Sitio se muestra como el panel situado más a la izquierda en la consola Sitios y muestra información sobre el elemento seleccionado. A diferencia de otros paneles, el panel Sitio solo se aplica a las raíces del sitio.
 
 El panel Sitio se utiliza para administrar la información relacionada con el tema y la plantilla para el sitio, que incluye:
 
@@ -34,13 +34,13 @@ El panel Sitio se utiliza para administrar la información relacionada con el te
 
 ## Descarga de fuentes de temas {#downloading-theme-sources}
 
-AEM Cuando crea un sitio en basado en un elemento de la lista de direcciones [plantilla del sitio,](site-templates.md) puede descargar su [tema del sitio](site-themes.md) mediante el panel Sitio.
+AEM Cuando crea un sitio en base a una plantilla de sitio [en el sitio,](site-templates.md) puede descargar el [tema del sitio](site-themes.md) mediante el panel Sitio.
 
 Con el panel Sitio en la consola Sitios, seleccione la raíz del sitio para mostrar la información del tema sobre el sitio.
 
 ![Descarga de fuentes de temas](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-Seleccionar **Descargar fuentes de temas** para descargar una copia local del tema del sitio como `.zip` para fines de personalización.
+Seleccione **Descargar fuentes de temas** para descargar una copia local del tema del sitio como archivo `.zip` con fines de personalización.
 
 ## Descarga de recursos de plantilla {#downloading-template-resources}
 
@@ -62,7 +62,7 @@ Con el panel Sitio en la consola Sitios, seleccione la raíz del sitio para most
 
 La versión actual del tema se muestra con su hash de compromiso junto con la marca de tiempo de su última actualización del estado.
 
-Seleccionar **Seleccionar versión** para ver las versiones anteriores de la temática.
+Seleccione **Seleccionar versión** para ver las versiones anteriores del tema.
 
 ![Seleccionar la versión del tema](/help/sites-cloud/administering/assets/select-theme-versions.png)
 

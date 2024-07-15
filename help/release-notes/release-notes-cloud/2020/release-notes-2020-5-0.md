@@ -1,6 +1,6 @@
 ---
 title: Notas de la versión de Adobe Experience Manager as a Cloud Service para 2020.5.0
-description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.5.0."
+description: "[!DNL Adobe Experience Manager] notas de la versión as a Cloud Service para 2020.5.0."
 exl-id: 8570d2c3-6d55-4914-94b2-f5d162e0c285
 feature: Release Information
 role: Admin
@@ -11,7 +11,7 @@ ht-degree: 92%
 
 ---
 
-# AEM Notas de la versión de as a Cloud Service 2020.5.0 {#release-notes}
+# Notas de la versión de AEM as a Cloud Service 2020.5.0 {#release-notes}
 
 Esta página describe las notas de la versión generales de Experience Manager as a Cloud Service 2020.5.0.
 
@@ -30,7 +30,7 @@ Siga esta sección para conocer las novedades y las actualizaciones de AEM Sites
 * MSM: ahora se cambia el nombre de los componentes de Live Copy a *_msm_move* después del mismo despliegue de componente desde el origen de Live Copy.
 
 
-## Novedades de Cloud Manager {#cloud-manager}
+## Novedades de Cloud Manager. {#cloud-manager}
 
 Siga esta sección para conocer las novedades y las actualizaciones de Cloud Manager en AEM as a Cloud Service versión 2020.5.0.
 

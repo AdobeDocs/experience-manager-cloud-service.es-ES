@@ -14,7 +14,7 @@ ht-degree: 8%
 
 # Configuración de Dynamic Media {#setting-up-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) le ayuda a administrar recursos mediante la entrega de recursos enriquecidos de comercialización y comercialización visuales bajo demanda, escalados automáticamente para el consumo en sitios web, móviles y sociales. Con un conjunto de recursos de origen primarios, Dynamic Media genera y ofrece varias variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) le ayuda a administrar sus recursos al ofrecerle recursos de mercadotecnia y comercialización visuales enriquecidos a petición, escalados automáticamente para su consumo en sitios web, móviles y sociales. Con un conjunto de recursos de origen primarios, Dynamic Media genera y ofrece varias variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -40,6 +40,6 @@ Consulte también los temas siguientes:
 
 >[!NOTE]
 >
->**Si va a realizar la actualización:**
+>**Si está actualizando:**
 >
->* Después de tomar el Adobe [!DNL Experience Manager] en funcionamiento, cualquier recurso que cargue tendrá Dynamic Media habilitado automáticamente (a menos que el administrador del sistema lo haya deshabilitado explícitamente). Si se encuentra en una instancia actualizada de [!DNL Experience Manager] y como nuevo usuario de Dynamic Media, es probable que deba volver a procesar los recursos para que tengan Dynamic Media habilitado. Consulte [Volver a procesar recursos en una carpeta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>* Una vez que el Adobe [!DNL Experience Manager] esté en funcionamiento, cualquier recurso que cargue tendrá Dynamic Media habilitado automáticamente (a menos que el administrador del sistema lo haya deshabilitado explícitamente). Si se encuentra en una instancia actualizada de [!DNL Experience Manager] y es nuevo en Dynamic Media, es probable que deba volver a procesar los recursos para que estén habilitados para Dynamic Media. Ver [Volver a procesar recursos en una carpeta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).

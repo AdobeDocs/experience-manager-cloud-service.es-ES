@@ -118,8 +118,8 @@ Consulte el [`aem-testing-clients`repositorio de GitHub](https://github.com/adob
 
 * aem-cloud-testing-customers:
 
-Los próximos cambios en la infraestructura en contenedores utilizada para ejecutar pruebas funcionales requerirán la biblioteca [aem-cloud-testing-customers](https://github.com/adobe/aem-testing-clients) se utiliza en la prueba funcional personalizada para actualizarse al menos a la versión **1.2.1**
-Asegúrese de que la dependencia de en `it.tests/pom.xml` se ha actualizado.
+Los próximos cambios en la infraestructura en contenedores usada para ejecutar pruebas funcionales requerirán que la biblioteca [aem-cloud-testing-customers](https://github.com/adobe/aem-testing-clients) usada en su prueba funcional personalizada se actualice al menos a la versión **1.2.1**
+Asegúrese de que se ha actualizado su dependencia en `it.tests/pom.xml`.
 
 ```
 <dependency>

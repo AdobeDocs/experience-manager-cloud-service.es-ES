@@ -31,12 +31,12 @@ Este documento describe cada uno de estos bloques de creación básicos y cómo 
 
 >[!TIP]
 >
->Para ver el Editor universal y su arquitectura en acción, consulte [AEM Introducción al editor universal en el entorno de trabajo de la aplicación de](getting-started.md) AEM para obtener información sobre cómo acceder al editor universal y cómo empezar a instrumentar la primera aplicación de la que se utiliza la aplicación de la.
+>AEM AEM Para ver el editor universal y su arquitectura en acción, consulta [Introducción al editor universal en el editor universal](getting-started.md) para obtener información sobre cómo obtener acceso al editor universal y cómo empezar a instrumentar tu primera aplicación de la para que la uses.
 
 ### Editores {#editors}
 
 * **Editor universal**: el editor universal utiliza un DOM instrumentado para permitir la edición in situ del contenido. Consulte el documento [Atributos y tipos](attributes-types.md) para obtener más información sobre los metadatos necesarios. Consulte el documento [Introducción al editor universal en AEM](getting-started.md) para ver un ejemplo de la instrumentación en AEM.
-* **Carril de propiedades** - Algunas propiedades de los componentes no se pueden editar en contexto, por ejemplo, el tiempo de rotación de un carrusel o qué pestaña de acordeón se abrirá o cerrará siempre. Para permitir la edición de dicha información de componentes, se proporciona un editor basado en formularios en el carril lateral.
+* **Carril de propiedades**: algunas propiedades de los componentes no se pueden editar en contexto; por ejemplo, el tiempo de rotación de un carrusel o qué pestaña de acordeón se debe abrir o cerrar siempre. Para permitir la edición de dicha información de componentes, se proporciona un editor basado en formularios en el carril lateral.
 
 ### Aplicación remota {#remote-app}
 
@@ -52,7 +52,7 @@ El editor universal se esfuerza por conseguir un SDK mínimo, por lo que la inst
 ### Capa de persistencia {#persistence-layer}
 
 * **Modelo de fragmento de contenido**: para admitir el carril para editar las propiedades del Fragmento de contenido, el editor de Fragmentos de contenido y los editores basados en formularios, se requieren modelos por componente y por fragmento de contenido.
-* **Contenido** AEM - El contenido se puede almacenar en cualquier lugar, como en el caso de la, el Magento, etc.
+* AEM **Contenido**: el contenido se puede almacenar en cualquier lugar, como en el sitio de trabajo, el Magento, el, etc.
 
 ![Capa de persistencia](assets/persistence-layer.png)
 

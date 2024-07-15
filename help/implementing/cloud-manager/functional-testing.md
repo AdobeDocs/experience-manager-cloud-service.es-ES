@@ -20,13 +20,13 @@ ht-degree: 9%
 >title="Pruebas funcionales"
 >abstract="Obtenga información sobre los tres tipos diferentes de pruebas funcionales integradas en el proceso de implementación de AEM as a Cloud Service para garantizar la calidad y fiabilidad de su código."
 
-Obtenga información acerca de las puertas de calidad disponibles en la [AEM proceso de implementación as a Cloud Service de](/help/implementing/cloud-manager/deploy-code.md), los diferentes tipos de pruebas funcionales integradas, cómo puede contribuir y cómo puede aprovecharlas al máximo en el contexto de una estrategia general de pruebas.
+Obtenga información sobre las puertas de calidad disponibles en el [proceso de implementación de AEM as a Cloud Service](/help/implementing/cloud-manager/deploy-code.md), los diferentes tipos de pruebas funcionales integradas, cómo puede contribuir y cómo puede aprovecharlas al máximo en el contexto de una estrategia de pruebas general.
 
 ## Información general
 
-En el siguiente diagrama se proporciona una amplia descripción general de las canalizaciones disponibles en el contexto de una estrategia general de pruebas y del [AEM proceso de implementación as a Cloud Service de](/help/implementing/cloud-manager/deploy-code.md).
+El diagrama siguiente proporciona información general de alto nivel sobre las canalizaciones disponibles en el contexto de una estrategia general de pruebas y el [proceso de implementación de AEM as a Cloud Service](/help/implementing/cloud-manager/deploy-code.md).
 
-![Puertas de calidad de implementación de AEM Cloud Service](assets/functional-testing/quality-gates-compact.svg)
+![Puertas de calidad para la implementación de AEM Cloud Service](assets/functional-testing/quality-gates-compact.svg)
 
 ## Función
 
@@ -40,25 +40,25 @@ Es importante tener en cuenta que estas puertas de calidad no están pensadas pa
 
 ## Puertas de calidad
 
-El siguiente diagrama proporciona una vista detallada de las puertas de calidad disponibles y su uso en la estrategia general de pruebas y la [AEM proceso de implementación as a Cloud Service de](/help/implementing/cloud-manager/deploy-code.md).
+El diagrama siguiente proporciona una vista detallada de las puertas de calidad disponibles y su uso en la estrategia general de pruebas y el [proceso de implementación de AEM as a Cloud Service](/help/implementing/cloud-manager/deploy-code.md).
 
-![Puertas de calidad de implementación de AEM Cloud Service](assets/functional-testing/quality-gates-overview.svg)
+![Puertas de calidad para la implementación de AEM Cloud Service](assets/functional-testing/quality-gates-overview.svg)
 
 ### Puertas de calidad proporcionadas por el cliente
 
-|                               | Pruebas de unidad | Personalizado<br/> Pruebas funcionales | Personalizado<br/> Pruebas de IU | Cliente<br/> Validaciones | Manual<br/> Pruebas |
+|                               | Pruebas de unidad | Pruebas funcionales <br/> personalizadas | Pruebas de IU <br/> personalizadas | Validaciones del cliente <br/> | Pruebas <br/> manuales |
 |:------------------------------|:---------------------:|:-----------------------------------:|:-----------------------------------:|:-------------------------:|:-------------------:|
-| **Canalización de producción** | Sí<br/>Bloqueo<br/> | Sí<br/>Bloqueo<br/>Tiempo de espera de 60 m | Sí<br/>Bloqueo<br/>Tiempo de espera de 30 m | No | No |
-| **Canalización que no es de producción** | Sí<br/>Bloqueo<br/> | Opt-in<br/>Bloqueo<br/>Tiempo de espera de 60 m | Opt-in<br/>Bloqueo<br/>Tiempo de espera de 30 m | No | No |
-| **Validación interna de Adobe** | Sí<br/>Bloqueo<br/> | Sí<br/>Bloqueo<br/>Tiempo de espera de 60 m | Sí<br/>Bloqueo<br/>Tiempo de espera de 30 m | No | No |
-| **CI/CD del cliente** | Sí | Sí | Sí | Sí | Sí |
+| **Canalización de producción** | Sí<br/>bloqueo<br/> | Sí<br/>bloqueo<br/>tiempo de espera de 60 m | Sí<br/>bloqueo<br/>tiempo de espera de 30 m | No | No |
+| **Canalización que no es de producción** | Sí<br/>bloqueo<br/> | Tiempo de espera de inclusión <br/>bloqueo<br/>60m | Tiempo de espera de inclusión <br/>bloqueo<br/>30m | No | No |
+| **Validación interna de Adobe** | Sí<br/>bloqueo<br/> | Sí<br/>bloqueo<br/>tiempo de espera de 60 m | Sí<br/>bloqueo<br/>tiempo de espera de 30 m | No | No |
+| **CD/CI del cliente** | Sí | Sí | Sí | Sí | Sí |
 | **Desarrollador local del cliente** | Sí | Sí | Sí | Sí | Sí |
 
 ### Prueba unitaria
 
 AEM Se le recomienda que proporcione las pruebas unitarias para su aplicación de, que son la base de cada estrategia de prueba. Están pensados para correr rápido y a menudo y dar una respuesta temprana y rápida. AEM Están totalmente integradas en los flujos de trabajo de los desarrolladores, en sus propias canalizaciones de implementación de CI/CD y el servicio en la nube de la.
 
-Se implementan mediante JUnit y se ejecutan con Maven. Consulte [AEM Módulo principal del tipo de archivo del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html#unit-tests) AEM para ver un ejemplo de prueba unitaria para obtener y empezar a utilizar la prueba de la forma de inicio de la.
+Se implementan mediante JUnit y se ejecutan con Maven. AEM AEM Consulte [módulo principal del tipo de archivo del proyecto de la](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html#unit-tests) para ver un ejemplo de prueba unitaria para obtener información sobre la configuración y la introducción a la creación de proyectos de la.
 
 ### Calidad del código
 
@@ -70,11 +70,12 @@ Consulte [Prueba de calidad de código](/help/implementing/cloud-manager/code-qu
 
 Las pruebas funcionales del producto son un conjunto de pruebas de integración (TI) HTTP estables de funcionalidad central en AEM como las tareas de creación y replicación. Adobe los proporciona y los mantiene de forma predeterminada. AEM Su objetivo es evitar que se implementen cambios en el código de aplicación personalizado si rompen la funcionalidad principal del producto de la aplicación de la aplicación de la que se ha hecho el uso
 
-Se implementan utilizando Junit, se ejecutan utilizando Maven y utilizan el [AEM Cliente de prueba de](https://github.com/adobe/aem-testing-clients). El grupo de pruebas del producto se mantiene como [proyecto de código abierto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke), sigue las prácticas recomendadas y se puede considerar un buen punto de partida para la implementación de pruebas.
+AEM Se implementan mediante Junit, se ejecutan mediante Maven y utilizan los [clientes de prueba oficiales](https://github.com/adobe/aem-testing-clients) de la aplicación de prueba de la aplicación de la prueba de. El grupo de pruebas del producto se mantiene como
+un [proyecto de código abierto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke), sigue las prácticas recomendadas y puede considerarse un buen punto de partida para la implementación de pruebas.
 
 ### Pruebas funcionales personalizadas
 
-Al igual que las pruebas de producto, las pruebas funcionales de cliente son pruebas de integración HTTP (TI) y también se implementan mediante Junit, se ejecutan mediante Maven y se basan en el [AEM Cliente de prueba de](https://github.com/adobe/aem-testing-clients).
+AEM Al igual que las pruebas de producto, las pruebas funcionales de cliente son pruebas de integración (TI) HTTP que también se implementan mediante Junit, se ejecutan mediante Maven y se basan en los [clientes de prueba de oficiales](https://github.com/adobe/aem-testing-clients).
 
 >[!NOTE]
 >
@@ -82,7 +83,7 @@ Al igual que las pruebas de producto, las pruebas funcionales de cliente son pru
 
 Para que las ejecuciones de canalización sean eficientes, recomendamos centrarse en las funciones clave y en los flujos de interacción del usuario principal. Se recomienda un tiempo de ejecución de ~15 minutos o menos para las pruebas funcionales. Se recomienda ejecutar grupos de pruebas funcionales completos que no caben en esta puerta de calidad como parte de las canalizaciones generales de validación del cliente durante el flujo de desarrollo del cliente.
 
-Consulte [pruebas de productos de código abierto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) o el [AEM Módulo it.tests del tipo de archivo de los proyectos de](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/ittests.html) para ver ejemplos.
+AEM Consulte [pruebas de productos de código abierto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) o el módulo [it.tests del Arquetipo de proyectos de la comunidad de trabajo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/ittests.html) para ver ejemplos.
 
 Consulte [Pruebas funcionales de Java](/help/implementing/cloud-manager/java-functional-testing.md) para obtener más información.
 
@@ -96,19 +97,19 @@ Las pruebas se empaquetan en una imagen Docker diseñada para ser lo más volát
 >
 >AEM AEM Las pruebas de IU personalizadas se ejecutan en las canalizaciones de producción y de no producción (inclusión) que utiliza la aplicación de los cambios de las implementaciones de la aplicación y las actualizaciones push del producto, por lo que son una contribución clave para garantizar el funcionamiento adecuado de la aplicación y aumentar la seguridad de la versión. Las pruebas de interfaz de usuario del cliente también se ejecutan en canalizaciones de validación internas previas al lanzamiento para cada cliente, lo que ayuda a proporcionar comentarios tempranos.
 >
->Los contenedores que no son de Selenium deben ejecutar pruebas utilizando un proxy HTTP basado en las variables de entorno del [Sección Pruebas de IU.](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
+>Los contenedores que no son de Selenium deben ejecutar pruebas utilizando un proxy HTTP basado en las variables de entorno de la sección de pruebas de la interfaz de usuario [UI.](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
 
 Para mantener la eficiencia de las ejecuciones de canalización, recomendamos centrarse en las funciones clave y en los flujos de interacción principales del usuario. Se recomienda ejecutar los grupos de pruebas de IU completa que no caben en esta puerta de calidad como parte de las canalizaciones generales de validación de clientes durante el flujo de desarrollo del cliente.
 
-Consulte [pruebas de ejemplo de código abierto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/) o el [AEM Módulo ui.tests del tipo de archivo de los proyectos de](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uitests.html) para ver ejemplos.
+AEM Consulte [pruebas de ejemplo de código abierto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/) o el módulo [ui.tests del Arquetipo de proyectos de la comunidad de trabajo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uitests.html) para ver ejemplos.
 
 Consulte [Pruebas de IU personalizadas](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) para obtener más información.
 
 ### Auditoría de experiencias
 
-La puerta de calidad de auditoría de experiencias está funcionando [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) audita la página web del cliente.
+La puerta de calidad de auditoría de experiencias está realizando [auditorías de Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) en la página web del cliente.
 
-AEM Esta puerta de calidad la proporciona la aplicación de forma predeterminada, pero no bloquea las canalizaciones de implementación. De forma predeterminada, una auditoría contra la página raíz (`/`) de la instancia de publicación. Puede contribuir configurando hasta 25 rutas personalizadas que se tienen en cuenta en las auditorías.
+AEM Esta puerta de calidad la proporciona la aplicación de forma predeterminada, pero no bloquea las canalizaciones de implementación. De manera predeterminada, se realiza una auditoría en la página raíz (`/`) de la instancia de publicación. Puede contribuir configurando hasta 25 rutas personalizadas que se tienen en cuenta en las auditorías.
 
 Consulte [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md) para obtener más información.
 
@@ -116,9 +117,9 @@ Consulte [Pruebas de auditoría de experiencias](/help/implementing/cloud-manage
 
 AEM La puerta de calidad de las validaciones del cliente es un marcador de posición para la estrategia y el esfuerzo de prueba propios del cliente, ejecutados antes de que los cambios de la aplicación del cliente lleguen a las canalizaciones de implementación en la nube de la.
 
-Aquí puede elegir las herramientas y los marcos que prefiera. AEM A diferencia de las pruebas de funciones de cliente y las pruebas de IU personalizadas, no existen límites relacionados con la as a Cloud Service y, por lo tanto, recomendamos realizar pruebas funcionales y de interfaz de usuario de larga duración aquí.
+Aquí puede elegir las herramientas y los marcos que prefiera. A diferencia de las pruebas de funciones de cliente y las pruebas de IU personalizadas, no hay límites relacionados con AEM as a Cloud Service y, por lo tanto, recomendamos realizar pruebas funcionales y de IU de larga duración aquí.
 
-Aunque puede elegir cualquier herramienta y marco de trabajo, le recomendamos que alinee las pruebas de integración basadas en HTTP y las pruebas de interfaz de usuario con las herramientas y los marcos disponibles en las pruebas funcionales personalizadas y las puertas de calidad de las pruebas de IU personalizadas. Se recomienda integrar [Entornos de desarrollo rápido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) AEM en su estrategia de pruebas local para realizar pruebas lo más cerca posible de los entornos de nube de la.
+Aunque puede elegir cualquier herramienta y marco de trabajo, le recomendamos que alinee las pruebas de integración basadas en HTTP y las pruebas de interfaz de usuario con las herramientas y los marcos disponibles en las pruebas funcionales personalizadas y las puertas de calidad de las pruebas de IU personalizadas. AEM Recomendamos la integración de [Entornos de desarrollo rápido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) en su estrategia de pruebas local para probar lo más cerca posible de los entornos de nube de la nube de la.
 
 ### Pruebas manuales
 

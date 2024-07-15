@@ -16,7 +16,7 @@ ht-degree: 88%
 
 Hay una selección de métodos abreviados de teclado disponibles para su uso en la consola Fragmentos de contenido.
 
-Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se aplican cuando [edición de páginas](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), otros al [uso general de las consolas](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
+Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se aplican cuando [edita páginas](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), otros al [uso general de las consolas](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 >[!NOTE]
 >

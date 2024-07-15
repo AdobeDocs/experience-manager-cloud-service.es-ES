@@ -17,7 +17,7 @@ ht-degree: 12%
 
 La creación de contenido es un proceso iterativo. La creación con eficiencia de contenido requiere poder ver qué ha cambiado de una iteración a otra. Visualizar la versión de la página y luego otra es un proceso poco eficaz y propenso a errores. Un autor desea poder comparar la página actual con una versión anterior en paralelo con las diferencias resaltadas.
 
-La diferencia de página permite al usuario comparar la página actual con lanzamientos, versiones anteriores, etc. Para obtener más información sobre esta función de usuario, consulte [Diferencias de página](/help/sites-cloud/authoring/sites-console/page-diff.md).
+La diferencia de página permite al usuario comparar la página actual con lanzamientos, versiones anteriores, etc. Para obtener detalles sobre esta característica de usuario, consulte [Diferencias de página](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## Detalles de operación {#operation-details}
 
@@ -31,7 +31,7 @@ Cuando se compara contenido, todo el árbol hasta la página para comparar se vu
 
 Se ejecuta automáticamente una tarea de limpieza para limpiar este contenido temporal.
 
-## Restricciones {#limitations}
+## Limitaciones {#limitations}
 
 La diferencia se produce en el lado del cliente mediante la comparación DOM, lo que simplifica el proceso de diferencia. Sin embargo, el desarrollador debe tener en cuenta varias limitaciones.
 

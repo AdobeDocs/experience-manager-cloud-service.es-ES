@@ -29,11 +29,11 @@ Para acceder al tablero de licencias, siga estos pasos.
 
 >[!NOTE]
 >
->Un usuario en la **Propietario del negocio** La función debe haber iniciado sesión para ver el Tablero de licencias.
+>Un usuario con el rol **Propietario del negocio** debe iniciar sesión para ver el tablero de licencias.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. En el **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)** consola, cambie a la **Licencia** pestaña.
+1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, cambie a la ficha **Licencia**.
 
 ![Tablero de licencias](assets/license-dashboard.png)
 
@@ -45,14 +45,14 @@ El tablero se divide en tres secciones que le muestran lo siguiente:
 
 Cada sección resume lo que está disponible y cómo se utiliza, si es que lo está. Actualmente solo se muestran las soluciones de Sites, aunque existan otras soluciones en el inquilino.
 
-* El **Estado** La columna muestra el número de derechos no utilizados frente al total disponible para el inquilino.
+* La columna **Estado** muestra el número de derechos no utilizados en comparación con el total disponible para el inquilino.
 * La columna **Configurado en** indica los programas en los que se ha aplicado la asignación de derechos de solución.
    * Una asignación de derechos se considera utilizada solo cuando se ha creado un entorno de producción o, si existe, si se ha ejecutado una canalización de actualización en él.
 * La columna **Uso** muestra un gráfico de las solicitudes de contenido consumidas en los últimos 12 meses cuando se hace clic sobre ellas.
 
 >[!TIP]
 >
->Para obtener información sobre cómo administrar los derechos de Adobe en toda la organización desde Admin Console, consulte la [Introducción al Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html).
+>Para obtener información sobre cómo administrar los derechos de Adobe en toda la organización desde Admin Console, consulte la [descripción general del Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html).
 
 ## Preguntas frecuentes  {#faq}
 

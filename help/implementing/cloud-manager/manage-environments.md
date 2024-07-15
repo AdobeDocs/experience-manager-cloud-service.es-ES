@@ -21,9 +21,9 @@ Obtenga información sobre los tipos de entornos que puede crear y cómo para su
 
 Un usuario con los permisos necesarios puede crear los siguientes tipos de entornos (dentro de los límites de lo que está disponible para el inquilino específico).
 
-* **Producción + Fase** - Los entornos de producción y ensayo están disponibles en pareja y se utilizan para fines de producción y prueba, respectivamente. Realizar pruebas de rendimiento y seguridad en el entorno de ensayo. Tiene el mismo tamaño que la producción.
+* **Producción + Fase**: los entornos de producción y ensayo están disponibles en pareja y se utilizan para fines de producción y prueba, respectivamente. Realizar pruebas de rendimiento y seguridad en el entorno de ensayo. Tiene el mismo tamaño que la producción.
 
-* **Desarrollo** : se puede crear un entorno de desarrollo con fines de desarrollo y prueba y solo se puede asociar con canalizaciones que no sean de producción.  Los entornos de desarrollo no tienen el mismo tamaño que los de fase y producción, y no deben utilizarse para realizar pruebas de rendimiento y seguridad.
+* **Desarrollo**: se puede crear un entorno de desarrollo con fines de desarrollo y prueba, y solo se puede asociar con canalizaciones que no sean de producción.  Los entornos de desarrollo no tienen el mismo tamaño que los de fase y producción, y no deben utilizarse para realizar pruebas de rendimiento y seguridad.
 
 * **Desarrollo rápido**: un entorno de desarrollo rápido (RDE) permite al desarrollador implementar y revisar cambios rápidamente, minimizando la cantidad de tiempo necesario para probar funciones que han demostrado su eficacia en un entorno de desarrollo local. Consulte [la documentación del entorno de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md) para obtener detalles acerca de cómo utilizar un RDE.
 
@@ -40,13 +40,13 @@ Las funcionalidades de los entornos individuales dependen de las soluciones habi
 
 ## Agregar un entorno {#adding-environments}
 
-Para agregar o editar un entorno, un usuario debe ser miembro del **Propietario del negocio** función.
+Para agregar o editar un entorno, un usuario debe ser miembro del rol **Propietario del negocio**.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. En el **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)** consola, toque o haga clic en el programa para el que desea agregar un entorno.
+1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, toque o haga clic en el programa para el que desea agregar un entorno.
 
-1. En el **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)** consola, haga clic en **Agregar entorno** en el **Entornos** para añadir un entorno.
+1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, haga clic en **Agregar entorno** en la tarjeta **Entornos** para agregar un entorno.
 
    ![Tarjeta Entornos](assets/no-environments.png)
 
@@ -91,9 +91,9 @@ Al añadir un entorno nuevo, puede elegir configurar regiones adicionales ademá
 1. Seleccione la opción **Agregar regiones de publicación adicionales** y aparecerá una nueva **lista desplegable de Regiones de publicación adicionales**. 
 1. En el menú desplegable **Regiones de publicación adicionales**, seleccione una región adicional.
 1. La región seleccionada se añade debajo del menú desplegable para indicar su selección.
-   * Seleccione el `X` situado junto a la región seleccionada para que pueda anular su selección.
+   * Seleccione el(la) `X` que se encuentra junto a la región seleccionada para que pueda anular su selección.
 1. Seleccione otra región en el menú desplegable **Regiones de publicación adicionales** para añadir otra región.
-1. Seleccionar **Guardar** cuando esté listo para crear su entorno.
+1. Seleccione **Guardar** cuando esté listo para crear su entorno.
 
 ![Selección de varias regiones](assets/select-multiple-regions.png)
 
@@ -119,7 +119,7 @@ También puede quitar regiones de publicación adicionales. Sin embargo, solo pu
 
    ![Editar entorno](assets/edit-environment.png)
 
-1. Seleccionar **Guardar** para guardar los cambios.
+1. Seleccione **Guardar** para guardar los cambios.
 
 Los cambios realizados en el entorno de producción se aplican tanto a los entornos de producción como a los de ensayo. Los cambios en varias regiones de publicación solo se pueden editar en el entorno de producción.
 
@@ -127,9 +127,9 @@ Si desea proporcionar [redes avanzadas](/help/security/configuring-advanced-netw
 
 ## Detalles del entorno {#viewing-environment}
 
-Desde el **Información general** , puede acceder a los detalles de un entorno de dos formas.
+Desde la página **Información general**, puede acceder a los detalles de un entorno de dos formas.
 
-1. Desde el **Información general** , haga clic en **Entornos** en el panel de navegación lateral.
+1. En la página **Información general**, haga clic en la ficha **Entornos** del panel de navegación lateral.
 
    ![Pestaña Entornos](assets/environments-tab2.png)
 
@@ -181,26 +181,26 @@ Una vez activado, puede publicar contenido en el servicio de vista previa median
 
 ### Estado de regiones de Publish adicionales {#additional-region-status}
 
-Si ha activado regiones de publicación adicionales, puede comprobar el estado de estas regiones desde el **Entornos** Tarjeta de.
+Si ha activado regiones de publicación adicionales, puede comprobar el estado de estas regiones desde la tarjeta **Entornos**.
 
-1. En el **Información general** , busque la **Entornos** Tarjeta de.
+1. En la página **Información general**, busque la tarjeta **Entornos**.
 
-1. En el **Entornos** Tarjeta de, la **Estado** reflejará si hay algún problema con las regiones de publicación adicionales configuradas. Haga clic en **Información** para obtener más información sobre las regiones.
+1. En la tarjeta **Entornos**, la columna **Estado** se reflejará si hay algún problema con las regiones de publicación adicionales configuradas. Haga clic en el icono **Información** para ver los detalles de las regiones.
 
    ![Información adicional del estado de las regiones de publicación en la tarjeta Entornos](assets/additional-publish-region-status-environments-card.png)
 
-También puede acceder a la misma información desde el **Entornos** pestaña.
+También puede obtener acceso a la misma información desde la ficha **Entornos**.
 
-1. En el **Información general** , seleccione la **Entornos** pestaña.
+1. En la página **Información general**, seleccione la pestaña **Entornos**.
 
-1. En el **Entornos** , seleccione el entorno que desea consultar en el panel de navegación izquierdo.
+1. En la ficha **Entornos**, seleccione el entorno que desee consultar en el panel de navegación izquierdo.
 
 1. Una vez seleccionado un entorno:
 
-   * El **Información del entorno** La tabla muestra qué regiones están configuradas para el entorno seleccionado.
-   * El **Estado** de la columna **Segmentos de entorno** reflejará si hay algún problema con las regiones de publicación adicionales configuradas. Pase el ratón sobre el estado para ver los detalles de cualquier problema.
+   * La tabla **Información del entorno** mostrará qué regiones están configuradas para el entorno seleccionado.
+   * La columna **Estado** de la tabla **Segmentos de entorno** reflejará si hay algún problema con las regiones de publicación adicionales configuradas. Pase el ratón sobre el estado para ver los detalles de cualquier problema.
 
-   ![Información adicional del estado de las regiones de publicación en la pestaña Entornos](assets/additional-publish-region-status-environments-tab.png)
+   ![Información adicional del estado de las regiones de publicación en la ficha Entornos](assets/additional-publish-region-status-environments-tab.png)
 
 Si hay algún problema con regiones de publicación adicionales:
 
@@ -209,7 +209,7 @@ Si hay algún problema con regiones de publicación adicionales:
 
 El tiempo que espera a que el sistema se recupere por sí solo antes de realizar acciones adicionales depende del impacto que el fallo de esa región tenga en sus sistemas.
 
-En cualquier caso, [el tráfico siempre se dirige a la otra región más cercana que está en línea.](/help/operations/additional-publish-regions.md) Si sigue teniendo problemas, póngase en contacto con el Servicio de atención al cliente de Adobe.
+En cualquier caso, el tráfico de [ siempre se dirige a la otra región más cercana que está en línea.](/help/operations/additional-publish-regions.md) Si sigues teniendo problemas, ponte en contacto con el Servicio de atención al cliente de Adobe.
 
 ## Actualizar entornos {#updating-dev-environment}
 
@@ -233,9 +233,9 @@ Por lo tanto, el proceso de actualización consta de dos pasos:
 ### Actualizar entornos {#updating-your-environments}
 
 >[!NOTE]
-> A partir de 2024, las instancias de desarrollo y algunos programas de zonas protegidas ya se actualizan automáticamente, por lo que no es necesario administrar las actualizaciones para ellos manualmente. Como resultado de esta transición, es posible que la opción Actualizar el entorno manualmente para instancias de desarrollo no esté disponible para _algunos_ de sus programas.
+> A partir de 2024, las instancias de desarrollo y algunos programas de zonas protegidas ya se actualizan automáticamente, por lo que no es necesario administrar las actualizaciones para ellos manualmente. Como resultado de esta transición, es posible que la opción de Actualizar el entorno manualmente para instancias de desarrollo no esté disponible para _algunos_ de sus programas.
 
-El **Actualizar** La opción está disponible en **Entornos** para algunos entornos de desarrollo y entornos de programas de zona protegida al hacer clic en el botón de los tres puntos del entorno.
+La opción **Actualizar** está disponible en la tarjeta **Entornos** para algunos entornos de desarrollo en programas de zonas protegidas al hacer clic en el botón de los tres puntos del entorno.
 
 ![Opción Actualizar de la tarjeta Entornos](assets/environ-update2.png)
 
@@ -243,7 +243,7 @@ Esta opción también está disponible si hace clic en la pestaña **Entornos** 
 
 ![Opción Actualizar de la pestaña Entornos](assets/environ-update3.png)
 
-Un usuario con **Administrador de implementación** o **Propietario del negocio** AEM Esta función puede utilizar esta opción para actualizar la canalización asociada con este entorno a la última versión de la versión de la.
+AEM Un usuario con el rol **Administrador de implementación** o **Propietario del negocio** puede usar esta opción para actualizar la canalización asociada con este entorno a la última versión de la.
 
 Una vez que la versión de la canalización se actualice a la última versión de AEM disponible públicamente, se solicitará al usuario que ejecute la canalización asociada para implementar la última versión en el entorno.
 
@@ -253,11 +253,11 @@ El comportamiento de la opción **Actualizar** varía según la configuración y
 
 * Si la canalización ya se ha actualizado, la opción **Actualizar** solicitará al usuario que ejecute la canalización.
 * Si la canalización ya se está actualizando, la opción **Actualizar** informará al usuario de que ya se está ejecutando una actualización.
-* Si no existe una canalización adecuada, la variable **Actualizar** pide al usuario que cree una.
+* Si no existe una canalización adecuada, la opción **Actualizar** solicitará al usuario que cree una.
 
 ## Eliminar entornos de desarrollo {#deleting-environment}
 
-Un usuario con **Administrador de implementación** o **Propietario del negocio** La función puede eliminar un entorno de desarrollo.
+Un usuario con el rol **Administrador de implementación** o **Propietario del negocio** puede eliminar un entorno de desarrollo.
 
 En la pantalla **Información general** del programa, en la tarjeta **Entornos**, haga clic en el botón de los tres puntos del entorno de desarrollo que desee eliminar.
 
@@ -296,7 +296,7 @@ Esta opción también está disponible en la pestaña **Entorno** de la ventana 
 
 ## Iniciar sesión localmente {#login-locally}
 
-Seleccionar **Inicio de sesión local** en el menú de los tres puntos del entorno en la **Entornos** para iniciar sesión localmente en Adobe Experience Manager.
+Seleccione **Inicio de sesión local** del menú de los tres puntos del entorno en la tarjeta **Entornos** para iniciar sesión localmente en Adobe Experience Manager.
 
 ![Iniciar sesión localmente](assets/environ-login-locally.png)
 

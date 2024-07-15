@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # Configuración de páginas de error de CDN {#cdn-error-pages}
 
-En el improbable caso de que la [CDN administrado por Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) AEM no puede alcanzar el origen de la, la CDN muestra de forma predeterminada una página de error genérica sin marca que indica que no se puede acceder al servidor. Puede anular la página de error predeterminada alojando archivos estáticos en un almacenamiento autoalojado como Amazon S3 o Azure Blob Storage, y haciendo referencia a ellos en un archivo de configuración que se implementa mediante [Canalización de configuración de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
+En el improbable caso de que [CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) administrado por el Adobe AEM no pueda alcanzar el origen de la, la CDN proporciona de forma predeterminada una página de error genérica sin marca que indica que no se puede llegar al servidor. Puede anular la página de error predeterminada alojando archivos estáticos en un almacenamiento autoalojado como Amazon S3 o Azure Blob Storage y haciendo referencia a ellos en un archivo de configuración que se implementa mediante [la canalización de configuración de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
 
 ## Configuración {#setup}
 
@@ -26,7 +26,7 @@ config/
      cdn.yaml
 ```
 
-* El `cdn.yaml` El archivo de configuración debe contener metadatos y las reglas que se describen en los ejemplos siguientes. El `kind` el parámetro debe establecerse en `CDN` y la versión debe establecerse en la versión de esquema, que actualmente es `1`.
+* El archivo de configuración `cdn.yaml` debe contener metadatos y las reglas descritas en los ejemplos siguientes. El parámetro `kind` debe establecerse en `CDN` y la versión debe establecerse en la versión de esquema, que actualmente es `1`.
 
 * Cree una canalización de configuración de implementación de destino en Cloud Manager. Consulte [configuración de canalizaciones de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) y [configuración de canalizaciones que no son de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
@@ -57,7 +57,7 @@ data:
 
 | Nombre | Propiedades permitidas | Significado |
 |-----------|--------------------------|-------------|
-| **balneario** | Título | Título de la página de error. |
+| **spa** | Título | Título de la página de error. |
 |     | icoUrl | URL de un archivo de icono. |
 |     | cssUrl | URL de un archivo CSS. |
 |     | jsUrl | URL de un archivo JavaScript. |

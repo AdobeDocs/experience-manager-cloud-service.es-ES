@@ -26,7 +26,7 @@ Las reglas de traducción descritas en este documento solo se aplican a los frag
 
 Si la opción **Habilitar campos de modelo de contenido para la traducción** está activa, AEM usará el campo **Traducible** en [Modelos de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) para determinar si el campo se va a traducir y crea automáticamente reglas de traducción según corresponda. Esta opción reemplaza las reglas de traducción que haya creado y no requiere intervención ni pasos adicionales.
 
-Si desea utilizar reglas de traducción para traducir los fragmentos de contenido, la variable **Habilitar los campos de modelo de contenido para la traducción** La opción de configuración del marco de trabajo de integración de traducciones debe estar desactivada y debe seguir los pasos descritos a continuación para crear las reglas.
+Si desea utilizar reglas de traducción para traducir los fragmentos de contenido, la opción **Habilitar campos de modelo de contenido para la traducción** en la configuración del marco de trabajo de integración de traducción debe estar deshabilitada y debe seguir los pasos descritos a continuación para crear las reglas.
 
 ## Información general {#overview}
 
@@ -168,7 +168,7 @@ En la IU de las reglas de traducción puede:
 
    ![Agregar contexto de traducción](../assets/add-translation-context.png)
 
-1. Utilice el navegador de rutas para seleccionar el contexto necesario y seleccione **Confirmar** botón para guardar.
+1. Use el explorador de rutas para seleccionar el contexto necesario y seleccione el botón **Confirmar** que desea guardar.
 
    ![Seleccionar contexto](../assets/select-context.png)
 
@@ -215,7 +215,7 @@ En la IU, puede marcar o desmarcar **Traducir** en la pestaña **Propiedades**.
 
 ### updateDestinationLanguage {#updatedestinationlanguage}
 
-**`updateDestinationLanguage`** se utiliza para propiedades que no tienen texto, sino códigos de idioma, por ejemplo, `jcr:language`. El usuario no traduce texto sino la configuración regional del idioma de origen a destino. Estas propiedades no se envían para su traducción.
+**`updateDestinationLanguage`** se usa para propiedades que no tienen texto, sino códigos de idioma, por ejemplo, `jcr:language`. El usuario no traduce texto sino la configuración regional del idioma de origen a destino. Estas propiedades no se envían para su traducción.
 
 En la IU, puede marcar o desmarcar **Traducir** en la pestaña **Propiedades** para modificar este valor, pero para las propiedades específicas que tienen códigos de idioma como valor.
 

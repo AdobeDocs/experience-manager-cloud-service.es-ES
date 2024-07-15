@@ -1,6 +1,6 @@
 ---
-title: Configurar las fuentes de datos
-description: Obtenga información sobre cómo configurar servicios web RESTful, servicios web basados en SOAP y servicios OData como fuentes de datos para un modelo de datos de formulario (FDM).
+title: Configuración de las fuentes de datos?
+description: Aprenda a configurar los servicios web RESTful, los servicios web basados en SOAP y los servicios OData como fuentes de datos para un modelo de datos de formulario (FDM).
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
 source-wordcount: '2129'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -178,13 +178,13 @@ Algunas de las operaciones no admitidas por los servicios de la especificación 
 
 Consulte [Especificación de OpenAPI 3.0](https://swagger.io/specification/v3/) para obtener información detallada.
 
-### Configuración del cliente HTTP del modelo de datos de formulario (FDM) para optimizar el rendimiento {#fdm-http-client-configuration}
+### Configuración del cliente HTTP del modelo de datos del formulario (FDM) para optimizar el rendimiento {#fdm-http-client-configuration}
 
 Modelo de datos del formulario [!DNL Experience Manager Forms] al integrarse con los servicios web RESTful, ya que la fuente de datos incluye configuraciones de cliente HTTP para la optimización del rendimiento.
 
-Establezca las siguientes propiedades de la configuración **[!UICONTROL Configuración del cliente HTTP del modelo de datos del formulario para fuente de datos de REST]** para especificar la expresión regular:
+Establezca las siguientes propiedades de la **[!UICONTROL Configuración del cliente HTTP del modelo de datos del formulario para fuente de datos de REST]** para especificar la expresión regular:
 
-* Utilice el `http.connection.max.per.route` para establecer el número máximo de conexiones permitidas entre el modelo de datos de formulario (FDM) y los servicios web RESTful. El valor predeterminado es 20 conexiones.
+* Utilice la propiedad `http.connection.max.per.route` para establecer el número máximo de conexiones permitidas entre el modelo de datos de formulario (FDM) y los servicios web RESTful. El valor predeterminado es 20 conexiones.
 
 * Utilice la propiedad `http.connection.max` para especificar el número máximo de conexiones permitidas para cada ruta. El valor predeterminado es 40 conexiones.
 
@@ -212,7 +212,7 @@ El siguiente archivo JSON muestra un ejemplo:
 
 1. En el diálogo [!UICONTROL Configuración del cliente HTTP del modelo de datos del formulario para fuente de datos de REST]:
 
-   * Especifique el número máximo de conexiones permitidas entre el modelo de datos de formulario (FDM) y los servicios web RESTful en **[!UICONTROL Límite de conexión en total]** field. El valor predeterminado es 20 conexiones.
+   * Especifique el número máximo de conexiones permitidas entre el modelo de datos de formulario (FDM) y los servicios web RESTful en el campo **[!UICONTROL Límite de conexión en total]**. El valor predeterminado es 20 conexiones.
 
    * Especifique el número máximo de conexiones permitidas para cada ruta en el campo **[!UICONTROL Límite de conexión por ruta]**. El valor predeterminado son dos conexiones.
 
@@ -266,7 +266,7 @@ Un servicio OData se identifica mediante su URL raíz de servicio. Para configur
 
 >[!NOTE]
 >
-> Compatibilidad con el modelo de datos de formulario (FDM) [OData versión 4](https://www.odata.org/documentation/).
+> El modelo de datos de formulario (FDM) es compatible con la [versión 4 de OData](https://www.odata.org/documentation/).
 >Para obtener una guía paso a paso sobre la configuración de [!DNL Microsoft®® Dynamics 365], en línea o de forma local, consulte [[!DNL Microsoft® Dynamics] Configuración de OData](ms-dynamics-odata-configuration.md).
 
 1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Seleccione para elegir la carpeta en la que desea crear una configuración de nube.
@@ -328,7 +328,7 @@ When you enable mutual authentication for form data model (FDM), both the data s
 
 ## Pasos siguientes {#next-steps}
 
-Ha configurado las fuentes de datos. A continuación, puede crear un modelo de datos de formulario (FDM) o, si ya ha creado un modelo de datos de formulario (FDM) sin una fuente de datos, puede asociarlo a las fuentes de datos configuradas. Consulte [Crear un modelo de datos de formulario](create-form-data-models.md) para obtener más información.
+Ha configurado las fuentes de datos. A continuación, puede crear un modelo de datos de formulario (FDM) o, si ya ha creado uno sin fuente de datos, puede asociarlo a la fuente de datos que acaba de configurar. Consulte [Crear un modelo de datos de formulario](create-form-data-models.md) para obtener más información.
 
 
 <!--

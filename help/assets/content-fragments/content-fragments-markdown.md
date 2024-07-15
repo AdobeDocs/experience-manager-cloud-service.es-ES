@@ -1,5 +1,5 @@
 ---
-title: Markdown (Recursos - Fragmentos de contenido)
+title: 'Markdown (Assets: fragmentos de contenido)'
 description: Comprenda cómo el editor de fragmentos de contenido utiliza la sintaxis Markdown para permitirle crear fácilmente contenido sin encabezado.
 feature: Content Fragments
 role: User
@@ -14,13 +14,13 @@ ht-degree: 80%
 
 # Markdown {#markdown}
 
-Cuando usted es [creación](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), el editor de fragmentos de contenido utiliza *markdown* sintaxis para permitirle escribir fácilmente contenido para una entrega sin encabezado o para la creación de páginas:
+Cuando está [creando](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), el editor de fragmentos de contenido usa la sintaxis *markdown* para permitirle escribir fácilmente contenido para la entrega sin encabezado o para la creación de páginas:
 
 >[!NOTE]
 >
 >Los fragmentos de contenido son una función de Sites, pero se almacenan como **Assets**.
 >
->Existen dos editores para crear fragmentos de contenido. Esta sección trata sobre el editor original, al que se accede principalmente desde el **Assets** consola. Consulte la documentación de Sites, [Fragmentos de contenido: creación](/help/sites-cloud/administering/content-fragments/authoring.md), para obtener más información sobre el nuevo editor (al que se accede principalmente desde el **Fragmentos de contenido** consola).
+>Existen dos editores para crear fragmentos de contenido. Esta sección trata sobre el editor original, al que se accede principalmente desde la consola **Assets**. Consulte la documentación de Sites, [Fragmentos de contenido: creación](/help/sites-cloud/administering/content-fragments/authoring.md), para obtener detalles del nuevo editor (al que se accede principalmente desde la consola **Fragmentos de contenido**).
 
 ![Editor de Markdown](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

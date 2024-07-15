@@ -21,7 +21,7 @@ Aprenda a utilizar la API de GraphQL para la entrega sin encabezado de contenido
 
 * [La API de GraphQL](/help/headless/graphql-api/content-fragments.md) permite crear solicitudes para acceder a fragmentos de contenido y enviarlos. Esta API ofrece el conjunto más sólido de funciones para consultar y consumir contenido de fragmentos de contenido.
    * Para utilizar la API, [defina y habilite puntos finales en AEM](/help/headless/graphql-api/graphql-endpoint.md) y, si es necesario, la [interfaz de GraphiQL instalada](/help/headless/graphql-api/graphiql-ide.md).
-* [La API de REST de Assets](/help/assets/content-fragments/assets-api-content-fragments.md) permite crear y modificar fragmentos de contenido (y otros recursos).
+* [La API de REST de Assets](/help/assets/content-fragments/assets-api-content-fragments.md) le permite crear y modificar fragmentos de contenido (y otros recursos).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Antes de poder utilizar las API de GraphQL, se debe crear un punto de conexión 
 1. Seleccione **Crear**.
 1. Se abre el cuadro de diálogo **Crear nuevo punto final de GraphQL**. Aquí puede especificar lo siguiente:
    * **Nombre**: nombre del punto de conexión; puede escribir cualquier texto.
-   * **Usar esquema de GraphQL proporcionado por**: utilice la lista desplegable para seleccionar la configuración requerida.
+   * **Usar esquema de GraphQL proporcionado por**: use la lista desplegable para seleccionar la configuración requerida.
 1. Confirme con **Crear**.
 1. En la consola, ahora se muestra una **Ruta** en función de la configuración creada anteriormente. Esta ruta se utiliza para ejecutar consultas de GraphQL.
 

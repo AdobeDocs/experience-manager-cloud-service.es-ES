@@ -114,7 +114,7 @@ También puede crear versiones a partir de la cronología de las versiones. Sele
 
 **Permisos necesarios:**  `Can Edit`, `Owner` o permisos de administrador en un recurso.
 
-La vista Recursos permite establecer el estado en los recursos disponibles en el repositorio. Establezca un estado de activo para gobernar y administrar mejor el consumo descendente de recursos digitales.
+La vista Assets permite establecer el estado en los recursos disponibles en el repositorio. Establezca un estado de activo para gobernar y administrar mejor el consumo descendente de recursos digitales.
 
 Puede establecer el siguiente estado en los recursos:
 
@@ -130,14 +130,14 @@ Para establecer el estado del activo:
 
 1. Seleccione el recurso y haga clic en **[!UICONTROL Detalles]** en la barra de herramientas.
 
-1. En el **[!UICONTROL Básico]** pestaña, seleccione el estado del recurso en **[!UICONTROL Estado]** lista desplegable. Los valores posibles incluyen Aprobado, Rechazado y Sin estado (predeterminado).
+1. En la ficha **[!UICONTROL Básico]**, seleccione el estado del recurso en la lista desplegable **[!UICONTROL Estado]**. Los valores posibles incluyen Aprobado, Rechazado y Sin estado (predeterminado).
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
 
 ### Configuración de la fecha de caducidad del recurso {#set-asset-expiration-date}
 
-La vista Recursos también permite establecer una fecha de caducidad para los recursos disponibles en el repositorio. Entonces puede [filtrar los resultados de búsqueda](search-assets-view.md#refine-search-results) basados en un `Expired` estado del activo. Además, puede especificar un intervalo de fechas de caducidad para los recursos para filtrar aún más los resultados de búsqueda.
+La vista Assets también permite establecer una fecha de caducidad para los recursos disponibles en el repositorio. Entonces puede [filtrar los resultados de búsqueda](search-assets-view.md#refine-search-results) basados en un `Expired` estado del activo. Además, puede especificar un intervalo de fechas de caducidad para los recursos para filtrar aún más los resultados de búsqueda.
 
 Para establecer la fecha de caducidad del recurso, haga lo siguiente:
 
@@ -147,13 +147,13 @@ Para establecer la fecha de caducidad del recurso, haga lo siguiente:
 
 El indicador de la tarjeta de recursos `Expired` anula los indicadores `Approved` o `Rejected` definidos para un recurso.
 
-También puede filtrar recursos en función de un estado de recurso. Para obtener más información, consulte [Buscar recursos en la vista Recursos](search-assets-view.md).
+También puede filtrar recursos según un estado de recurso. Para obtener más información, consulte [Buscar recursos en la vista de Assets](search-assets-view.md).
 
 ## Personalización de formularios de metadatos para incluir el campo de estado del activo {#customize-asset-status-metadata-form}
 
 **Permisos necesarios:** Administrador
 
-La vista de recursos proporciona muchos campos de metadatos estándar de forma predeterminada. Las organizaciones tienen requisitos de metadatos adicionales y necesitan más campos para agregar los específicos de su empresa. Los formularios de metadatos permiten a las empresas añadir campos de metadatos personalizados a la página [!UICONTROL Detalles] de un recurso. Los metadatos específicos de la empresa mejoran el control y el descubrimiento de sus recursos.
+La vista de Assets proporciona muchos campos de metadatos estándar de forma predeterminada. Las organizaciones tienen requisitos de metadatos adicionales y necesitan más campos para agregar los específicos de su empresa. Los formularios de metadatos permiten a las empresas añadir campos de metadatos personalizados a la página [!UICONTROL Detalles] de un recurso. Los metadatos específicos de la empresa mejoran el control y el descubrimiento de sus recursos.
 
 Para obtener más información sobre cómo agregar campos de metadatos adicionales al formulario de metadatos, consulte [Formularios de metadatos](metadata-assets-view.md#metadata-forms).
 
@@ -167,7 +167,7 @@ Para añadir el campo de metadatos Fecha de caducidad al formulario, arrastre el
 
 ## Siguientes pasos {#next-steps}
 
-* [Vea un vídeo para administrar recursos en la vista Recursos](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets-essentials/basics/managing)
+* [Vea un vídeo para administrar recursos en la vista de Assets](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets-essentials/basics/managing)
 
 * Realice comentarios del producto mediante la opción [!UICONTROL Comentarios] disponible en la interfaz de usuario de la vista Recursos
 

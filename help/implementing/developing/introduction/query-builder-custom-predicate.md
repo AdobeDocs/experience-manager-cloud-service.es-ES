@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Implementación de un evaluador de predicados personalizado para el Generador de consultas {#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
-Este documento describe cómo ampliar el [Generador de consultas](query-builder-api.md) implementando un evaluador de predicados personalizado.
+Este documento describe cómo ampliar [Query Builder](query-builder-api.md) implementando un evaluador de predicados personalizado.
 
 ## Información general {#overview}
 
-El [Generador de consultas](query-builder-api.md) ofrece una forma sencilla de consultar el repositorio de contenido. AEM viene con [un conjunto de evaluadores de predicados](#query-builder-predicates.md) que le ayudan a consultar sus datos.
+[Query Builder](query-builder-api.md) es una forma sencilla de consultar el repositorio de contenido. AEM viene con [un conjunto de evaluadores de predicados](#query-builder-predicates.md) que le ayudarán a realizar consultas en los datos.
 
 Sin embargo, es posible que desee simplificar las consultas implementando un evaluador de predicados personalizado que oculte cierta complejidad y garantice una mejor semántica.
 
@@ -32,14 +32,14 @@ Un predicado personalizado también podría realizar otras acciones que no son d
 
 >[!TIP]
 >
->Puede encontrar ejemplos de consultas en la [Generador de consultas](query-builder-api.md) documento.
+>Puede encontrar ejemplos de consultas en el documento [Query Builder](query-builder-api.md).
 
 >[!TIP]
 >
 >Puede encontrar el código de esta página en GitHub
 >
->* [Abra el proyecto aem-search-custom-predicate-evaluator en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
->* Descargue el proyecto como [un archivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)
+>* [Abrir proyecto aem-search-custom-predicate-evaluator en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
+>* Descargar el proyecto como [archivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)
 
 >[!NOTE]
 >
@@ -49,23 +49,23 @@ Un predicado personalizado también podría realizar otras acciones que no son d
 
 Un evaluador de predicados administra la evaluación de ciertos predicados, que son las restricciones de definición de una consulta.
 
-Asigna una restricción de búsqueda de nivel superior (por ejemplo, `width>200`) a una consulta JCR específica que se ajuste al modelo de contenido real (por ejemplo, `metadata/@width > 200`). O puede filtrar manualmente nodos y comprobar sus restricciones.
+Asigna una restricción de búsqueda de nivel superior (como `width>200`) a una consulta JCR específica que se ajusta al modelo de contenido real (por ejemplo, `metadata/@width > 200`). O puede filtrar manualmente nodos y comprobar sus restricciones.
 
 >[!TIP]
 >
->Para obtener más información sobre `PredicateEvaluator` y el `com.day.cq.search` consulte el [Documentación de Java](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html?com/day/cq/search/package-summary.html).
+>Para obtener más información sobre `PredicateEvaluator` y el paquete `com.day.cq.search`, consulte la [documentación de Java](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html?com/day/cq/search/package-summary.html).
 
 ### Implementación de un evaluador de predicados personalizado para metadatos de replicación {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
 Como ejemplo, esta sección describe cómo crear un evaluador de predicados personalizado que ayude a los datos en función de los metadatos de replicación:
 
 * `cq:lastReplicated` que almacena la fecha de la última acción de replicación
-* `cq:lastReplicatedBy` que almacena el id del usuario que activó la última acción de replicación
+* `cq:lastReplicatedBy` que almacena el identificador del usuario que activó la última acción de replicación
 * `cq:lastReplicationAction` que almacena la última acción de replicación (por ejemplo, Activación, Desactivación)
 
 #### Consulta de metadatos de replicación con evaluadores de predicado predeterminados {#querying-replication-metadata-with-default-predicate-evaluators}
 
-La siguiente consulta recupera la lista de nodos en `/content` rama que ha activado: `admin` desde el comienzo del año.
+La siguiente consulta recupera la lista de nodos de la rama `/content` que han sido activados por `admin` desde el comienzo del año.
 
 ```xml
 path=/content
@@ -85,7 +85,7 @@ Esta consulta es válida, pero difícil de leer y no resalta la relación entre 
 
 #### Objetivos {#objectives}
 
-El objetivo del `ReplicationPredicateEvaluator` es admitir la consulta anterior mediante la siguiente sintaxis.
+El objetivo de `ReplicationPredicateEvaluator` es admitir la consulta anterior mediante la siguiente sintaxis.
 
 ```xml
 path=/content
@@ -101,15 +101,15 @@ Agrupar predicados de metadatos de replicación con un evaluador de predicados p
 
 >[!TIP]
 >
->AEM La configuración de nuevos proyectos de, incluido el uso de maven, se explica en detalle por [el tutorial de WKND.](develop-wknd-tutorial.md)
+>AEM [el tutorial de WKND explica en detalle la configuración de nuevos proyectos de, incluido el uso de maven.](develop-wknd-tutorial.md)
 
-En primer lugar, debe actualizar las dependencias Maven del proyecto. El `PredicateEvaluator` forma parte de `cq-search` por lo que debe añadirse a su archivo pom de Maven.
+En primer lugar, debe actualizar las dependencias Maven del proyecto. El objeto `PredicateEvaluator` forma parte del artefacto `cq-search`, por lo que debe agregarse al archivo Pom de Maven.
 
 >[!NOTE]
 >
->El ámbito de la `cq-search` la dependencia se establece en `provided` porque `cq-search` es proporcionada por el `OSGi` contenedor.
+>El ámbito de la dependencia `cq-search` se ha establecido en `provided` porque el contenedor `OSGi` ha proporcionado `cq-search`.
 
-El siguiente fragmento muestra las diferencias en la variable `pom.xml` archivo, en [formato de diferencia unificado](https://en.wikipedia.org/wiki/Diff#Unified_format)
+El siguiente fragmento muestra las diferencias en el archivo `pom.xml`, en [formato de diferencia unificado](https://en.wikipedia.org/wiki/Diff#Unified_format)
 
 ```text
 @@ -120,6 +120,12 @@
@@ -128,14 +128,14 @@ El siguiente fragmento muestra las diferencias en la variable `pom.xml` archivo,
 
 #### Escritura De ReplicationPredicateEvaluator {#writing-the-replicationpredicateevaluator}
 
-El `cq-search` El proyecto contiene el `AbstractPredicateEvaluator` clase abstracta. Esto se puede ampliar con algunos pasos para implementar su propio evaluador de predicados personalizado `(PredicateEvaluator`).
+El proyecto `cq-search` contiene la clase abstracta `AbstractPredicateEvaluator`. Esto se puede ampliar con algunos pasos para implementar su propio evaluador de predicados personalizado `(PredicateEvaluator`).
 
 >[!NOTE]
 >
->El siguiente procedimiento explica cómo generar un `Xpath` expresión para filtrar datos. Otra opción sería implementar el `includes` que selecciona los datos en base a filas. Consulte la [Documentación de Java](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html) para obtener más información.
+>El siguiente procedimiento explica cómo generar una expresión `Xpath` para filtrar datos. Otra opción sería implementar el método `includes` que selecciona los datos en base a filas. Consulte la [Documentación de Java](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html) para obtener más información.
 
 1. Cree una nueva clase Java que extienda `com.day.cq.search.eval.AbstractPredicateEvaluator`
-1. Anote su clase con un `@Component` como muestra un fragmento en [formato de diferencia unificado](https://en.wikipedia.org/wiki/Diff#Unified_format)
+1. Anotar su clase con un `@Component` como muestra un fragmento en [formato de diferencia unificado](https://en.wikipedia.org/wiki/Diff#Unified_format)
 
    ```text
    @@ -19,8 +19,11 @@
@@ -153,11 +153,11 @@ El `cq-search` El proyecto contiene el `AbstractPredicateEvaluator` clase abstra
 
    >[!NOTE]
    >
-   >El `factory`debe ser una cadena única que comience por `com.day.cq.search.eval.PredicateEvaluator/`y terminan con el nombre de su personalizado `PredicateEvaluator`.
+   >`factory` debe ser una cadena única que comience por `com.day.cq.search.eval.PredicateEvaluator/` y termine con el nombre de su `PredicateEvaluator` personalizado.
 
    >[!NOTE]
    >
-   >El nombre del `PredicateEvaluator` es el nombre del predicado que se utiliza para crear consultas.
+   >El nombre de `PredicateEvaluator` es el nombre del predicado, que se utiliza al crear consultas.
 
 1. Anular:
 
@@ -165,11 +165,11 @@ El `cq-search` El proyecto contiene el `AbstractPredicateEvaluator` clase abstra
    public String getXPathExpression(Predicate predicate, EvaluationContext context)
    ```
 
-   En el método override se genera un `Xpath` expresión basada en la variable `Predicate` dado en el argumento.
+   En el método de invalidación se genera una expresión `Xpath` basada en el argumento `Predicate` dado en.
 
 ### Ejemplo de un evaluador de predicados personalizado para metadatos de replicación {#example-of-a-custom-predicate-evaluator-for-replication-metadata}
 
-La implementación completa de esto `PredicateEvaluator` puede ser similar a la siguiente clase.
+La implementación completa de este(a) `PredicateEvaluator` puede ser similar a la siguiente clase.
 
 ```java
 /*

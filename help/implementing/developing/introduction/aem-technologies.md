@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Fundamentos técnicos de AEM {#aem-technical-foundations}
 
-AEM es una plataforma sólida basada en tecnologías probadas, escalables y flexibles. AEM AEM Este documento ofrece una descripción detallada de las distintas partes que componen la y está diseñado como un apéndice técnico para un desarrollador de paquetes de pila completa. No pretende ser una guía de introducción. AEM Si es nuevo en el desarrollo de la, consulte [Introducción al desarrollo de AEM Sites: Tutorial de WKND](develop-wknd-tutorial.md) como primer paso.
+AEM es una plataforma sólida basada en tecnologías probadas, escalables y flexibles. AEM AEM Este documento ofrece una descripción detallada de las distintas partes que componen la y está diseñado como un apéndice técnico para un desarrollador de paquetes de pila completa. No pretende ser una guía de introducción. AEM Si es nuevo en el desarrollo de la, consulte [Introducción al desarrollo de AEM Sites - Tutorial de WKND](develop-wknd-tutorial.md) como primer paso.
 
 >[!TIP]
 >
->AEM Antes de sumergirse en las tecnologías básicas de la, Adobe recomienda completar la [Introducción al desarrollo de AEM Sites: Tutorial de WKND.](develop-wknd-tutorial.md)
+>AEM Antes de sumergirse en las tecnologías principales de la, Adobe recomienda completar el [Tutorial de WKND de Introducción al desarrollo de AEM Sites.](develop-wknd-tutorial.md)
 
 ## Aspectos básicos {#fundamentals}
 
@@ -36,21 +36,21 @@ El repositorio de contenido subyacente y las capas de lógica empresarial se bas
 
 ## Repositorio de contenido de Java™ {#java-content-repository}
 
-El estándar Java™ Content Repository (JCR), [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html), especifica una forma independiente del proveedor y de la implementación de acceder al contenido bidireccionalmente en un nivel granular dentro de un repositorio de contenido. El responsable de la especificación es Adobe Research (Suiza) AG.
+El estándar del repositorio de contenido Java™ (JCR), [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html), especifica una forma independiente del proveedor e independiente de la implementación para acceder al contenido bidireccionalmente en un nivel granular dentro de un repositorio de contenido. El responsable de la especificación es Adobe Research (Suiza) AG.
 
-El [API JCR 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) paquete, `javax.jcr.*` se utiliza para el acceso directo y la manipulación del contenido del repositorio.
+El paquete [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), `javax.jcr.*`, se usa para el acceso directo y la manipulación del contenido del repositorio.
 
 AEM La se basa en un JCR.
 
 ## Apache Jackrabbit Oak {#jackrabbit-oak}
 
-[Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/) es una implementación de un repositorio de contenido jerárquico escalable y de alto rendimiento que se utiliza como base de sitios web modernos de primera clase y otras aplicaciones de contenido exigentes, conforme al estándar JCR.
+[Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/) es una implementación de un repositorio de contenido jerárquico escalable y de alto rendimiento que se usará como base de sitios web modernos de primera clase y otras aplicaciones de contenido exigentes, de conformidad con el estándar JCR.
 
-AEM Jackrabbit Oak (también conocido como Oak) es la implementación del estándar JCR sobre el que se construye el.
+Jackrabbit Oak (también denominado simplemente Oak AEM) es la implementación del estándar JCR en el que se basa la creación de la.
 
 ## Procesamiento de solicitudes de Sling {#sling-request-processing}
 
-AEM se crea usando el [Sling](https://sling.apache.org/index.html), un marco de trabajo de aplicaciones web basado en principios REST que proporciona un fácil desarrollo de aplicaciones orientadas a contenido. Sling utiliza un repositorio JCR, como Apache Jackrabbit Oak, como almacén de datos. Sling ha sido colaborador de Apache Software Foundation; puede encontrar más información en Apache.
+AEM Se ha creado usando [Sling](https://sling.apache.org/index.html), un marco de aplicación web basado en principios REST que proporciona un fácil desarrollo de aplicaciones orientadas a contenido. Sling utiliza un repositorio JCR, como Apache Jackrabbit Oak, como almacén de datos. Sling ha sido colaborador de Apache Software Foundation; puede encontrar más información en Apache.
 
 ### Introducción a Sling {#introduction-to-sling}
 
@@ -58,19 +58,19 @@ Con Sling, el tipo de contenido que se procesará no es la primera consideració
 
 Las ventajas de esta flexibilidad son evidentes en aplicaciones con una amplia gama de elementos de contenido diferentes o cuando necesita páginas que se puedan personalizar fácilmente. AEM En concreto, al implementar un sistema de administración de contenido web como, por ejemplo, la administración de contenido web, se puede hacer lo siguiente
 
-Consulte [Descubra Sling en 15 minutos](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) para conocer los primeros pasos para desarrollar con Sling.
+Consulte [Discover Sling en 15 minutos](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) para conocer los primeros pasos para desarrollar con Sling.
 
 El diagrama siguiente explica la resolución de scripts de Sling. Muestra cómo pasar de una solicitud HTTP al nodo de contenido, de un nodo de contenido al tipo de recurso, de un tipo de recurso al script y qué variables de script están disponibles.
 
 ![Explicación de la resolución de scripts de Apache Sling](assets/sling-cheatsheet-01.png)
 
-En el diagrama siguiente se explican los parámetros de solicitud ocultos, pero útiles, que se pueden utilizar con `SlingPostServlet`, el controlador predeterminado para todas las solicitudes de POST. El controlador le ofrece un sinfín de opciones para crear, modificar, eliminar, copiar y mover nodos en el repositorio.
+En el diagrama siguiente se explican los parámetros de solicitud ocultos pero eficaces que se pueden usar con `SlingPostServlet`, el controlador predeterminado para todas las solicitudes de POST. El controlador le ofrece un sinfín de opciones para crear, modificar, eliminar, copiar y mover nodos en el repositorio.
 
-![Uso de SlingPostServlet](assets/sling-cheatsheet-02.png)
+![Usando SlingPostServlet](assets/sling-cheatsheet-02.png)
 
 ### Sling se centra en el contenido {#sling-is-content-centric}
 
-Sling es *centrado en el contenido*. Significa que el procesamiento se centra en el contenido, ya que cada solicitud (HTTP) se asigna al contenido en forma de recurso JCR (un nodo de repositorio):
+Sling está *centrado en contenido*. Significa que el procesamiento se centra en el contenido, ya que cada solicitud (HTTP) se asigna al contenido en forma de recurso JCR (un nodo de repositorio):
 
 * El primer destino es el recurso (nodo JCR) que contiene el contenido
 * En segundo lugar, la representación o script se encuentra en las propiedades del recurso con determinadas partes de la solicitud (por ejemplo, los selectores o la extensión)
@@ -102,11 +102,11 @@ Puede dividirlo en sus partes compuestas:
 
 * **protocolo** - HTTPS
 * **host** - Dominio del sitio
-* **ruta de contenido** - Ruta que especifica el contenido que se va a procesar y que se utiliza con la extensión. En este ejemplo, se traduce como `tools/spy.html`
-* **selectores** - Se utiliza para métodos alternativos de representación del contenido; en este ejemplo, una versión compatible con la impresora en formato A4
-* **extensión** - Formato del contenido; también especifica el script que se utilizará para el procesamiento
-* **sufijo** - Se puede utilizar para especificar información adicional
-* **parámetros** - Cualquier parámetro necesario para el contenido dinámico.
+* **ruta de contenido**: ruta que especifica el contenido que se procesará y que se utilizará con la extensión. En este ejemplo, se traduce como `tools/spy.html`
+* **selectores**: se utilizan para métodos alternativos de representación del contenido; en este ejemplo, una versión compatible con la impresora en formato A4
+* **extensión** - Formato de contenido; también especifica el script que se utilizará para la representación
+* **sufijo** - Se puede usar para especificar información adicional
+* **params**: cualquier parámetro necesario para el contenido dinámico
 
 #### De la URL al contenido y los scripts {#from-url-to-content-and-scripts}
 
@@ -119,23 +119,23 @@ La siguiente figura ilustra el mecanismo utilizado, que se analiza con más deta
 
 ![Mecanismo de asignación de URL](assets/url-mapping.png)
 
-Con Sling, puede especificar qué secuencia de comandos procesa una entidad determinada (configurando la variable `sling:resourceType` en el nodo JCR). Este mecanismo ofrece más libertad que una en la que el script accede a las entidades de datos (como lo haría una instrucción SQL en un script PHP), ya que un recurso puede tener varias representaciones.
+Con Sling, puede especificar qué script procesa una entidad determinada (estableciendo la propiedad `sling:resourceType` en el nodo JCR). Este mecanismo ofrece más libertad que una en la que el script accede a las entidades de datos (como lo haría una instrucción SQL en un script PHP), ya que un recurso puede tener varias representaciones.
 
 #### Asignación de solicitudes a los recursos {#mapping-requests-to-resources}
 
 La solicitud se desglosa y se extrae la información necesaria. Se busca el recurso solicitado en el repositorio (nodo de contenido):
 
 * Primer Sling comprueba si existe un nodo en la ubicación especificada en la solicitud; por ejemplo, `../content/corporate/jobs/developer.html`
-* Si no se encuentra ningún nodo, la extensión se suelta y la búsqueda se repite; por ejemplo, `../content/corporate/jobs/developer`
+* Si no se encuentra ningún nodo, se quitará la extensión y se repetirá la búsqueda; por ejemplo, `../content/corporate/jobs/developer`
 * Si no se encuentra ningún nodo, Sling devuelve el código http 404 (no encontrado).
 
 Sling también permite que otros nodos que no sean nodos JCR sean recursos, pero esta funcionalidad es avanzada.
 
 ### Localización del script {#locating-the-script}
 
-Cuando se encuentra el recurso adecuado (nodo de contenido), la variable **tipo de recurso de sling** se ha extraído. Esta ruta localiza el script que se utilizará para procesar el contenido.
+Cuando se encuentra el recurso apropiado (nodo de contenido), se extrae **sling resource type**. Esta ruta localiza el script que se utilizará para procesar el contenido.
 
-La ruta especificada por el `sling:resourceType` puede ser:
+La ruta especificada por `sling:resourceType` puede ser:
 
 * Absoluto
 * Relativo a un parámetro de configuración
@@ -144,37 +144,37 @@ La ruta especificada por el `sling:resourceType` puede ser:
 >
 >El Adobe recomienda las rutas relativas a medida que aumentan la portabilidad.
 
-Todos los scripts de Sling se almacenan en subcarpetas de `/apps` (mutable, scripts de usuario) o `/libs` (inmutable, scripts del sistema), que se busca en este orden.
+Todos los scripts de Sling se almacenan en subcarpetas de `/apps` (scripts mutables, de usuario) o `/libs` (scripts inmutables, del sistema), en las que se busca en este orden.
 
 Otros puntos que hay que tener en cuenta son:
 
-* Cuando se requiere el método (GET, POST), se especifica en mayúsculas como según la especificación HTTP, por ejemplo, `jobs.POST.esp`
+* Cuando se requiere el método (GET, POST), se especifica en mayúsculas según la especificación HTTP, por ejemplo, `jobs.POST.esp`
 * Se admiten varios motores de scripts, pero los scripts comunes recomendados son HTL y JavaScript.
 
-AEM La lista de motores de scripts admitidos por la instancia determinada de se enumera en la consola de administración de Felix ( ). `http://<host>:<port>/system/console/slingscripting`).
+AEM La lista de motores de scripts admitidos por la instancia determinada de se enumera en la consola de administración de Felix ( `http://<host>:<port>/system/console/slingscripting`).
 
-En el ejemplo anterior, si la variable `sling:resourceType` es `hr/jobs` y luego para:
+En el ejemplo anterior, si `sling:resourceType` es `hr/jobs`, para:
 
 * Solicitudes y direcciones URL de GET/HEAD que terminan en `.html` (tipos de solicitud predeterminados, formato predeterminado)
-   * El script es `/apps/hr/jobs/jobs.esp`; la última sección de la `sling:resourceType` forma el nombre del archivo.
+   * El script es `/apps/hr/jobs/jobs.esp`; la última sección de `sling:resourceType` forma el nombre del archivo.
 * Solicitudes de POST (todos los tipos de solicitud excepto GET/HEAD, el nombre del método debe estar en mayúsculas)
    * Se utiliza el POST en el nombre del script.
    * El script es `/apps/hr/jobs/jobs.POST.esp`.
-* URL con otros formatos que no terminan con `.html`
+* Direcciones URL en otros formatos, que no terminan con `.html`
    * Por ejemplo, `../content/corporate/jobs/developer.pdf`
    * El script es `/apps/hr/jobs/jobs.pdf.esp`; el sufijo se agrega al nombre del script.
 * URL con selectores
    * Los selectores se pueden utilizar para mostrar el mismo contenido en un formato alternativo. Por ejemplo, una versión compatible con una impresora, una fuente RSS o un resumen.
-   * Si observa una versión compatible con la impresora en la que el selector podría ser `print`; como en `../content/corporate/jobs/developer.print.html`
-   * El script es `/apps/hr/jobs/jobs.print.esp`; el selector se añade al nombre del script.
-* Si no, `sling:resourceType` se define entonces:
-   * La ruta de contenido se utiliza para buscar un script adecuado (si la ruta está basada en `ResourceTypeProvider` está activo).
-   * Por ejemplo, la secuencia de comandos para `../content/corporate/jobs/developer.html` generaría una búsqueda en `/apps/content/corporate/jobs/`.
+   * Si observa una versión compatible con la impresora donde el selector podría ser `print`; como en `../content/corporate/jobs/developer.print.html`
+   * El script es `/apps/hr/jobs/jobs.print.esp`; el selector se agrega al nombre del script.
+* Si no, se define `sling:resourceType`, entonces:
+   * La ruta de contenido se usa para buscar un script apropiado (si está activo el script basado en rutas `ResourceTypeProvider`).
+   * Por ejemplo, el script de `../content/corporate/jobs/developer.html` generaría una búsqueda en `/apps/content/corporate/jobs/`.
    * Se utiliza el tipo de nodo principal.
 * Si no se encuentra ninguna secuencia de comandos, se utiliza la predeterminada.
-   * La representación predeterminada se admite como texto sin formato (`.txt`), HTML (`.html`) y JSON (`.json`), todas las cuales enumeran las propiedades del nodo (con el formato adecuado). Representación predeterminada de la extensión. `.res`, o solicitudes sin una extensión de solicitud, es para poner en cola el recurso (cuando sea posible).
+   * La representación predeterminada se admite como texto sin formato (`.txt`), HTML (`.html`) y JSON (`.json`), todos los cuales enumeran las propiedades del nodo (con el formato adecuado). La representación predeterminada para la extensión `.res`, o solicitudes sin una extensión de solicitud, es poner en cola el recurso (cuando sea posible).
 * Para la administración de errores de http (códigos 403 o 404), Sling busca una secuencia de comandos en:
-   * La ubicación. `/apps/sling/servlet/errorhandler` para scripts personalizados
+   * La ubicación `/apps/sling/servlet/errorhandler` para los scripts personalizados
    * O la ubicación del script estándar `/libs/sling/servlet/errorhandler/404.jsp`
 
 Si se aplican varios scripts a una solicitud determinada, se selecciona el script con la mejor coincidencia. Cuanto más específica sea una coincidencia, mejor será; es decir, cuanto más coincida el selector, mejor, independientemente de la coincidencia de cualquier extensión de solicitud o nombre de método.
@@ -200,12 +200,12 @@ Suponiendo que tiene la siguiente lista de scripts en la ubicación correcta:
 
 Entonces el orden de preferencia sería (8) - (7) - (6) - (5) - (4) - (3) - (2) - (1).
 
-Además de los tipos de recursos (definidos principalmente por el `sling:resourceType` propiedad), también está el supertipo de recurso. Este tipo se indica mediante la variable `sling:resourceSuperType` propiedad. Estos supertipos también se tienen en cuenta al intentar encontrar una secuencia de comandos. La ventaja de los supertipos de recursos es que pueden formar una jerarquía de recursos donde el tipo de recurso predeterminado es `sling/servlet/default` (utilizado por los servlets predeterminados) es en realidad la raíz.
+Además de los tipos de recursos (definidos principalmente por la propiedad `sling:resourceType`), también está el supertipo de recursos. Este tipo se indica mediante la propiedad `sling:resourceSuperType`. Estos supertipos también se tienen en cuenta al intentar encontrar una secuencia de comandos. La ventaja de los supertipos de recursos es que pueden formar una jerarquía de recursos en la que el tipo de recurso predeterminado `sling/servlet/default` (utilizado por los servlets predeterminados) sea en realidad la raíz.
 
 El supertipo de recurso de un recurso se puede definir de dos maneras:
 
-* por el `sling:resourceSuperType` propiedad del recurso.
-* por el `sling:resourceSuperType` propiedad del nodo al que se va a `sling:resourceType` puntos.
+* por la propiedad `sling:resourceSuperType` del recurso.
+* por la propiedad `sling:resourceSuperType` del nodo al que señala `sling:resourceType`.
 
 Por ejemplo:
 
@@ -228,7 +228,7 @@ La jerarquía de tipo de:
 * Mientras que para `/y`
    * La jerarquía es `[ c, a, <default>]`
 
-La razón es porque `/y` tiene el `sling:resourceSuperType` mientras que `/x` no y, por lo tanto, su supertipo se toma de su tipo de recurso.
+El motivo se debe a que `/y` tiene la propiedad `sling:resourceSuperType`, mientras que `/x` no la tiene y, por lo tanto, su supertipo se toma de su tipo de recurso.
 
 #### Los scripts de Sling no se pueden llamar directamente {#sling-scripts-cannot-be-called-directly}
 
@@ -238,20 +238,20 @@ Si llama a la representación (la secuencia de comandos) directamente, oculta el
 
 * Gestión automática de métodos http distintos de la GET, incluidos:
    * POST, PUT, DELETE que se gestiona con una implementación predeterminada de sling
-   * El `POST.jsp` script en su `sling:resourceType` ubicación
+   * El script `POST.jsp` en su ubicación `sling:resourceType`
 * Su arquitectura de código ya no es tan limpia ni está tan claramente estructurada como debería ser; es de suma importancia para el desarrollo a gran escala
 
 ### API de Sling {#sling-api}
 
-Utiliza el paquete de API de Sling, `org.apache.sling.*`, y bibliotecas de etiquetas.
+Utiliza el paquete de API de Sling, `org.apache.sling.*` y las bibliotecas de etiquetas.
 
 ### Hacer referencia a elementos existentes mediante sling:include {#referencing-existing-elements-using-sling-include}
 
 Una consideración final es la necesidad de hacer referencia a los elementos existentes dentro de los guiones.
 
-Los scripts más complejos (scripts de agregación) acceden a varios recursos (por ejemplo, navegación, barra lateral, pie de página, elementos de una lista) y lo hacen incluyendo el *resource*.
+Los scripts más complejos (agregar scripts) tienen acceso a varios recursos (por ejemplo, navegación, barra lateral, pie de página y elementos de una lista) y lo hacen incluyendo el *recurso*.
 
-En este caso, puede utilizar la variable `sling:include("/<path>/<resource>")` comando. Incluye efectivamente la definición del recurso al que se hace referencia.
+En este caso, puede utilizar el comando `sling:include("/<path>/<resource>")`. Incluye efectivamente la definición del recurso al que se hace referencia.
 
 ## OSGi {#osgi}
 
@@ -266,11 +266,11 @@ A continuación, un marco OSGi le ofrece carga/descarga dinámica, configuració
 
 >[!NOTE]
 >
->Puede encontrar información completa sobre la tecnología OSGi en el [Sitio web de OSGi](https://www.osgi.org).
+>Encontrará información completa sobre la tecnología OSGi en el [sitio web de OSGi](https://www.osgi.org).
 >
 >En particular, su página de Educación Básica contiene una colección de presentaciones y tutoriales.
 
-Esta arquitectura le permite ampliar Sling con módulos específicos de la aplicación. AEM Sling y, por lo tanto, el uso de la función de la interfaz de usuario de, [Apache Felix](https://felix.apache.org/documentation/index.html) implementación de OSGi. Ambas son colecciones de paquetes OSGi que se ejecutan dentro de un marco OSGi.
+Esta arquitectura le permite ampliar Sling con módulos específicos de la aplicación. AEM Sling y, por lo tanto, la implementación de OSGi utiliza la implementación [Apache Felix](https://felix.apache.org/documentation/index.html). Ambas son colecciones de paquetes OSGi que se ejecutan dentro de un marco OSGi.
 
 Esta funcionalidad permite realizar las siguientes acciones en cualquiera de los paquetes de la instalación:
 
@@ -282,22 +282,22 @@ Esta funcionalidad permite realizar las siguientes acciones en cualquiera de los
 * Ver estado más reciente
 * Acceda a información más detallada sobre paquetes específicos, por ejemplo, nombre simbólico, versión y ubicación
 
-Consulte [AEM Configuración de OSGi para la as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) para obtener más información.
+Consulte [Configuración de OSGi para AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) para obtener más información.
 
 ## Estructura dentro del repositorio {#structure-within-the-repository}
 
 La siguiente lista ofrece información general sobre la estructura que se ve dentro del repositorio.
 
 * `/apps` - Relacionado con la aplicación; incluye definiciones de componentes específicas del sitio web. Los componentes que desarrolle se pueden basar en los componentes predeterminados disponibles en `/libs/core/wcm/components`.
-* `/content` : contenido creado para su sitio web.
+* `/content`: contenido creado para su sitio web.
 * `/etc`
-* `/home` : información de usuario y grupo.
-* `/libs` AEM - Bibliotecas y definiciones que pertenecen al núcleo de la. Las subcarpetas de `/libs` AEM representan las funciones de la aplicación listas para usar de la serie de la aplicación de la. El contenido de `/libs` no se puede modificar. Las funciones específicas del sitio web deben realizarse en `/apps`.
-* `/tmp` - Zona de trabajo temporal.
-* `/var` : archivos que cambian y son actualizados por el sistema; como registros de auditoría, estadísticas y administración de eventos.
+* `/home` - Información de usuario y grupo.
+* AEM `/libs` - Bibliotecas y definiciones que pertenecen al núcleo de la. AEM Las subcarpetas de `/libs` representan las características de la aplicación listas para usar No se puede modificar el contenido de `/libs`. Las características específicas del sitio web deben realizarse en `/apps`.
+* `/tmp` - Área de trabajo temporal.
+* `/var`: archivos que cambian y son actualizados por el sistema; como registros de auditoría, estadísticas y control de eventos.
 
 >[!CAUTION]
 >
 >Los cambios en esta estructura, o en los archivos que contiene, deben realizarse con cuidado. Asegúrese de comprender completamente las implicaciones de cualquier cambio que realice.
 >
->No cambie nada en el `/libs` ruta. Para cambios de configuración y de otro tipo, copie el elemento de `/libs` hasta `/apps` y realice cualquier cambio en `/apps`.
+>No cambie nada en la ruta de acceso `/libs`. Para cambios de configuración y de otro tipo, copie el elemento de `/libs` a `/apps` y realice los cambios que desee en `/apps`.

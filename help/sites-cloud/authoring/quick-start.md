@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # Guía rápida de introducción para la creación {#quick-guide-to-authoring}
 
-Comience aquí para obtener una guía rápida y de alto nivel para empezar a crear contenido con el **Sites** consola.
+Comience aquí para obtener una guía rápida y de alto nivel que le ayudará a empezar a crear contenido con la consola **Sites**.
 
 >[!TIP]
 >
@@ -23,21 +23,21 @@ Comience aquí para obtener una guía rápida y de alto nivel para empezar a cre
 
 ## Todo comienza en la consola Sitios. {#sites-console}
 
-Tanto si desea crear contenido nuevo como si desea ver y administrar el contenido existente, la descripción general central es la siguiente **Sites** consola.
+Tanto si desea crear contenido nuevo como ver y administrar el contenido existente, la descripción general central es la consola **Sites**.
 
-AEM Cuando inicie sesión por primera vez en el servicio de asistencia de, llegará a la pantalla de navegación global de. Simplemente toque o haga clic en **Sites** para abrir **Sites** consola.
+AEM Cuando inicie sesión por primera vez en el servicio de asistencia de, llegará a la pantalla de navegación global de. Simplemente toque o haga clic en **Sitios** para abrir la consola **Sitios**.
 
 ![Navegación global](assets/getting-started-global-navigation.png)
 
-AEM Para acceder a la navegación global desde cualquier otra ubicación de la red de distribución, pulse o haga clic en el botón **Adobe Experience Manager** AEM en la parte superior izquierda de cualquier pantalla de la pantalla del sistema de navegación, lo que abre una superposición desplegable de la pantalla de navegación global.
+AEM Para acceder a la navegación global desde cualquier otra ubicación de la red de navegación global, pulse o haga clic en el vínculo **Adobe Experience Manager AEM** en la parte superior izquierda de cualquier pantalla de la red de navegación global, lo que abre una superposición desplegable de la navegación global.
 
-Una vez en el **Sites** , el contenido es fácil de navegar y se presenta en una vista de columna de forma predeterminada.
+Una vez que estés en la consola **Sites**, el contenido será fácil de navegar y se presentará en una vista de columna de forma predeterminada.
 
 ![La consola Sitios](assets/getting-started-sites-console.png)
 
 ## Vistas {#views}
 
-De forma predeterminada, la variable **Sites** La consola de se abre en **Columna** vista. Cada nivel de jerarquía se muestra como una columna, que se presta bien para contenido organizado jerárquicamente basado en la web.
+De manera predeterminada, la consola **Sites** se abre en la vista **Column**. Cada nivel de jerarquía se muestra como una columna, que se presta bien para contenido organizado jerárquicamente basado en la web.
 
 ![Vista de columnas](assets/getting-started-column-view.png)
 
@@ -45,14 +45,14 @@ Toque o haga clic en una entrada de una columna para seleccionarla o abrir el si
 
 Hay dos vistas adicionales disponibles:
 
-* **Vista de tarjeta** : Esta vista presenta cada entrada como una tarjeta fácilmente manipulable, lo que facilita el acceso a opciones adicionales.
-* **Vista de lista** : Presenta un solo nivel de una jerarquía como una lista única, que proporciona más detalles sobre los elementos individuales.
+* **Vista de tarjeta**: esta vista presenta cada entrada como una tarjeta fácil de manipular, lo que facilita el acceso a opciones adicionales.
+* **Vista de lista**: presenta un solo nivel de una jerarquía como una sola lista, que proporciona más detalles sobre los elementos individuales.
 
 Utilice el conmutador de vistas de la parte superior izquierda de la pantalla para cambiar entre vistas. Este documento utiliza la vista de columnas predeterminada.
 
 ## Navegación por contenido {#navigating}
 
-**Vista de columna** presenta el contenido como una serie de columnas en cascada. Al seleccionar un elemento en la columna actual, se muestran los detalles en la siguiente columna a la derecha, si se trata de un documento, o el contenido del siguiente nivel de jerarquía, si se trata de una carpeta.
+**Vista de columna** le presenta el contenido como una serie de columnas en cascada. Al seleccionar un elemento en la columna actual, se muestran los detalles en la siguiente columna a la derecha, si se trata de un documento, o el contenido del siguiente nivel de jerarquía, si se trata de una carpeta.
 
 ![Vista de columnas en detalle](assets/getting-started-column-detail.png)
 
@@ -70,7 +70,7 @@ La búsqueda aparece como una superposición desplegable sobre toda la consola. 
 
 ## Creación de contenido {#creating}
 
-Para crear una página nueva, simplemente vaya a donde desee que esté en la jerarquía de contenido y, a continuación, toque o haga clic en **Crear** en la barra de herramientas.
+Para crear una página nueva, simplemente navegue hasta donde desee que esté en la jerarquía de contenido y, a continuación, toque o haga clic en el botón **Crear** de la barra de herramientas.
 
 ![Crear](assets/getting-started-create.png)
 
@@ -80,23 +80,23 @@ Según lo que seleccione para crear, el asistente adecuado comenzará a guiarle 
 
 ## Editar contenido {#editing}
 
-Para editar una página, toque o haga clic para seleccionarla en la **Sites** consola. A continuación, en la barra de herramientas que aparece, toque o haga clic en **Editar** icono.
+Para editar una página, toque o haga clic para seleccionar la página en la consola **Sitios**. A continuación, en la barra de herramientas que aparece, toque o haga clic en el icono **Editar**.
 
-![Selección de contenido para editar](assets/getting-started-edit.png)
+![Seleccionar contenido para editar](assets/getting-started-edit.png)
 
 Se abrirá la página en el editor correspondiente al contenido.
 
-Si simplemente desea actualizar las propiedades de una página, como las etiquetas o su nombre, puede tocar o hacer clic en **Propiedades** en la barra de herramientas.
+Si simplemente desea actualizar las propiedades de una página, como las etiquetas o su nombre, puede tocar o hacer clic en el icono **Propiedades** de la barra de herramientas.
 
 ## Organización del contenido {#organizing}
 
-Para mover o copiar una página, selecciónela en la consola y, en la barra de herramientas, toque o haga clic en **Mover** o **Copiar**. Esto inicia un asistente para guiarle a través de los pasos para mover o copiar, definiendo el nombre y la ubicación de la página resultante.
+Para mover o copiar una página, selecciónela en la consola y, a continuación, en la barra de herramientas, toque o haga clic en **Mover** o **Copiar**. Esto inicia un asistente para guiarle a través de los pasos para mover o copiar, definiendo el nombre y la ubicación de la página resultante.
 
 ![Asistente para mover páginas](assets/getting-started-move-page.png)
 
 ## Publicación de contenido {#publishing}
 
-Cuando haya terminado de realizar los cambios deseados en el contenido utilizando **Sites** , puede publicar el contenido. Seleccione el contenido que desea publicar y toque o haga clic en **Publicación rápida** en la barra de herramientas.
+Cuando haya terminado de realizar los cambios que desea realizar en el contenido mediante la consola **Sitios**, podrá publicar el contenido. Seleccione el contenido que desea publicar y toque o haga clic en el icono **Quick Publish** de la barra de herramientas.
 
 ![Publicación rápida](assets/getting-started-quick-publish.png)
 

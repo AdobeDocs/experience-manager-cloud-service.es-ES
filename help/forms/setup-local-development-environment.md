@@ -7,7 +7,7 @@ exl-id: 12877a77-094f-492a-af58-cffafecf79ae
 source-git-commit: a070e945f23641cfdfd71511366e5b2c16ec22e8
 workflow-type: tm+mt
 source-wordcount: '2762'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ Para descargar la última versión del SDK de Adobe Experience Manager as a Clou
 
    >[!NOTE]
    >
-   > Se recomienda descargar la última versión del archivo de características de Experience Manager Forms (complemento de AEM Forms), los recursos de referencia de formularios o Forms Designer para lograr una compatibilidad perfecta con el SDK de Adobe Experience Manager as a Cloud Service.
+   > Le recomendamos que se descargue la última versión del archivo de características de Experience Manager Forms (complemento de AEM Forms), los recursos de referencia de formularios o Forms Designer para lograr una compatibilidad perfecta con el SDK de Adobe Experience Manager as a Cloud Service.
 
 1. Revise y acepte el EULA. Seleccione el botón **[!UICONTROL Descargar]**.
 
@@ -271,7 +271,7 @@ Utilice este proyecto para crear formularios adaptables, implementar actualizaci
 
 >[!NOTE]
 >
-> AEM Configure la versión 30 o posterior del tipo de archivo para obtener y utilizar el modelo de datos de formulario (FDM) de Microsoft® Dynamics 365 y Salesforce con AEM Forms as a Cloud Service.
+> Configure la versión 30 o posterior del tipo de archivo del proyecto AEM para poder utilizar el modelo de datos de formulario (Form Data Model, FDM) de Microsoft® Dynamics 365 y Salesforce con AEM Forms as a Cloud Service.
 > Configure la versión 32 o posterior de AEM Archetype para obtener y utilizar los temas Tranquil, Urbane y Ultramarine con AEM Forms as a Cloud Service.
 
 Para configurar el proyecto, haga lo siguiente:
@@ -411,7 +411,7 @@ Para realizar una copia de seguridad y mover activos del SDK existente a un ento
 
 ### Crear una copia de seguridad del contenido existente {#create-backup-of-your-existing-content}
 
-Haga una copia de seguridad de su Forms adaptable, plantillas, modelos de datos de formulario (FDM), temáticas, configuraciones y códigos personalizados. Puede realizar la siguiente acción para crear una copia de seguridad:
+Haga una copia de seguridad de los formularios adaptables, plantillas, modelo de datos de formulario (FDM), tema, configuraciones y código personalizado. Puede realizar la siguiente acción para crear una copia de seguridad:
 
 1. [Descargar](import-export-forms-templates.md#manage-forms-and-related-assets) formularios adaptables, temáticas y PDF forms.
 1. Exportar plantillas de formularios adaptables.

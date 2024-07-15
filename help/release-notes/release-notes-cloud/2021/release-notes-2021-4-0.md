@@ -24,14 +24,14 @@ En la siguiente sección se describen las notas de la versión generales de la v
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 es el 6 de mayo de 2021.
+La fecha de versión de [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 es el 6 de mayo de 2021.
 La de la siguiente versión (2021.5.0) será el 27 de mayo de 2021.
 
-## AEM Base as a Cloud Service{#aem-as-a-cloud-service-foundation}
+## AEM as a Cloud Service Foundation{#aem-as-a-cloud-service-foundation}
 
 ### Novedades {#what-is-new-foundation}
 
-* [Flujo de trabajo Publicar árbol de contenido](/help/operations/replication.md#publish-content-tree-workflow) : Un nuevo modelo y paso de flujo de trabajo proporciona un mayor rendimiento al publicar jerarquías profundas de contenido.
+* [Flujo de trabajo del árbol de contenido de Publish](/help/operations/replication.md#publish-content-tree-workflow): un nuevo modelo y paso de flujo de trabajo proporciona un mayor rendimiento al publicar jerarquías profundas de contenido.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -55,11 +55,11 @@ La de la siguiente versión (2021.5.0) será el 27 de mayo de 2021.
 
 ### Novedades de [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Experience Manager] no archiva descargas de recursos individuales en las que se haya descargado el archivo original. Esta mejora permite descargas más rápidas.
+* [!DNL Experience Manager] no archiva descargas de recursos individuales donde se haya descargado el archivo original. Esta mejora permite descargas más rápidas.
 
 * Cuando se descarga un recurso mediante la opción linkshare, ahora puede elegir descargar o no descargar las representaciones. Anteriormente, se descargaban todas las representaciones de recursos.
 
-* Los administradores pueden configurar [!DNL Experience Manager] para eliminar el origen de los recursos después de realizar una ingesta masiva. Consulte [ingesta masiva de recursos](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Los administradores pueden configurar [!DNL Experience Manager] para que elimine el origen de los recursos después de realizar ingestas masivas de recursos. Consulte [ingesta masiva de recursos](/help/assets/add-assets.md#asset-bulk-ingestor).
 
 * Al ejecutar una comprobación de estado para importar recursos de forma masiva, Experience Manager ahora proporciona más información sobre los motivos de los errores. Consulte [ingesta masiva de recursos](/help/assets/add-assets.md#asset-bulk-ingestor).
 
@@ -69,7 +69,7 @@ La de la siguiente versión (2021.5.0) será el 27 de mayo de 2021.
 
 * Al editar un esquema de metadatos, se añade un tipo de datos que proporciona un área de texto de forma libre en el editor de metadatos. Los usuarios pueden utilizar esta área de texto para introducir texto de forma libre como metadatos de un recurso. Consulte [editor de esquemas de metadatos](/help/assets/metadata-schemas.md).
 
-* Los metadatos de muchos recursos se pueden importar de forma masiva mediante un archivo CSV y se pueden exportar a un CSV también. El formato de fecha predeterminado es ahora `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Los usuarios pueden utilizar un formato diferente actualizando el encabezado de la columna. Por ejemplo, añada `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` como encabezado de columna en el archivo CSV en lugar de la palabra `Date`.
+* Los metadatos de muchos recursos se pueden importar de forma masiva mediante un archivo CSV y se pueden exportar a un CSV también. El formato de fecha predeterminado ahora es `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Los usuarios pueden utilizar un formato diferente actualizando el encabezado de la columna. Por ejemplo, agregue `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` como encabezado de columna en el archivo CSV en lugar de la palabra `Date`.
 
 * Al examinar los recursos en la vista Columna, un indicador visual muestra el estado aprobado o rechazado de cada uno.
 
@@ -126,7 +126,7 @@ La de la siguiente versión (2021.5.0) será el 27 de mayo de 2021.
 * Para facilitar el reconocimiento del contenido, el servicio ahora genera miniaturas en directo para los archivos XDP, PDF dinámico y Esquema.
 * Añada la capacidad de mover un archivo de PDF a una carpeta colocada en la interfaz de usuario de AEM Forms.
 
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+## as a Cloud Service de Adobe Experience Manager Commerce {#cloud-services-commerce}
 
 ### Novedades {#what-is-new-commerce}
 
@@ -138,7 +138,7 @@ La de la siguiente versión (2021.5.0) será el 27 de mayo de 2021.
 
 * AEM Indicador visual para datos de catálogo clasificados en tienda de
 
-* El punto de conexión de Commerce ahora se puede configurar mediante la IU de Cloud Manager
+* El extremo de Commerce ahora se puede configurar mediante la IU de Cloud Manager
 
 ### Correcciones de errores {#bug-fixes-commerce}
 

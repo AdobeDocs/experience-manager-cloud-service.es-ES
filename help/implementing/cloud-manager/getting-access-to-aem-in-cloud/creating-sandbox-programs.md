@@ -22,7 +22,7 @@ Obtenga más información sobre los tipos de programas en el documento [Explicac
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. En el **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)** consola, toque o haga clic en **Agregar programa** cerca de la esquina superior derecha de la pantalla.
+1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, toque o haga clic en **Agregar programa** cerca de la esquina superior derecha de la pantalla.
 
    ![Página de aterrizaje de Cloud Manager](assets/log-in.png)
 
@@ -34,7 +34,7 @@ Obtenga más información sobre los tipos de programas en el documento [Explicac
 
    * La imagen solo sirve como mosaico en la ventana de información general del programa y ayuda a identificar el programa.
 
-1. En el **Configurar la zona protegida** , seleccione las soluciones que desea habilitar en el programa de zona protegida marcando las opciones en la **Soluciones y complementos** tabla.
+1. En el cuadro de diálogo **Configurar la zona protegida**, elija qué soluciones desea habilitar en el programa de zona protegida marcando las opciones en la tabla **Soluciones y complementos**.
 
    * Utilice las comillas angulares que aparecen junto a los nombres de las soluciones para mostrar complementos opcionales adicionales para las soluciones.
 
@@ -74,4 +74,4 @@ Puede ver los detalles de la configuración de la zona protegida, así como acce
 
 >[!TIP]
 >
->Consulte el documento [Navegación por la IU de Cloud Manager](/help/implementing/cloud-manager/navigation.md) para obtener más información sobre cómo navegar por Cloud Manager y comprender el **Mis programas** consola.
+>Consulte el documento [Navegación por la interfaz de usuario de Cloud Manager](/help/implementing/cloud-manager/navigation.md) para obtener más información sobre cómo navegar por Cloud Manager y comprender la consola **Mis programas**.

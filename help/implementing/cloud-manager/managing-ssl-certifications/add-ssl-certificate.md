@@ -22,7 +22,7 @@ Aprenda a agregar su propio certificado SSL con las herramientas de autoservicio
 
 ## Requisitos de certificado {#certificate-requirements}
 
-Revise la sección **Requisitos de certificado** del documento [Introducción a la administración de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) AEM para asegurarse de que el certificado que desea agregar es compatible con el as a Cloud Service de la.
+Revise la sección **Requisitos de certificado** del documento [Introducción a la administración de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) para asegurarse de que el certificado que desea agregar sea compatible con AEM as a Cloud Service.
 
 ## Agregar un certificado {#adding-a-cert}
 
@@ -34,11 +34,11 @@ Siga estos pasos para agregar un certificado mediante Cloud Manager.
 
 1. Vaya a la pantalla **Entornos** de la página **Información general**.
 
-1. Clic **Certificados SSL** en el panel de navegación izquierdo. Se muestra en la pantalla principal una tabla con detalles de cualquier certificado SSL existente.
+1. Haga clic en **Certificados SSL** en el panel de navegación izquierdo. Se muestra en la pantalla principal una tabla con detalles de cualquier certificado SSL existente.
 
    ![Agregar un certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. Clic **Agregar certificado SSL** para abrir **Agregar certificado SSL** Cuadro de diálogo.
+1. Haga clic en **Agregar certificado SSL** para abrir el cuadro de diálogo **Agregar certificado SSL**.
 
    * Escriba un nombre para el certificado en **Nombre del certificado**.
       * Esto es solo para fines informativos y puede ser cualquier nombre que le ayude a hacer referencia al certificado fácilmente.
@@ -63,7 +63,7 @@ Una vez guardado, verá el certificado como una fila nueva en la tabla.
 
 >[!NOTE]
 >
->Si recibe un error similar al siguiente `The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.`, es probable que haya incluido el certificado de cliente en la cadena de certificados. Asegúrese de que la cadena no incluya el certificado de cliente e inténtelo de nuevo.
+>Si recibe un error similar a `The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.`, es probable que haya incluido el certificado de cliente en la cadena de certificados. Asegúrese de que la cadena no incluya el certificado de cliente e inténtelo de nuevo.
 
 ## Errores de certificado {#certificate-errors}
 
@@ -143,7 +143,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 >[!NOTE]
 >
->El resultado de estos dos comandos debe ser exactamente el mismo. Si no encuentra una clave privada que coincida con su `main/server` certificado, es necesario volver a escribir el certificado generando un nuevo CSR o solicitando un certificado actualizado a su proveedor SSL.
+>El resultado de estos dos comandos debe ser exactamente el mismo. Si no encuentra una clave privada que coincida con su certificado `main/server`, deberá volver a escribir el certificado y generar un CSR nuevo o solicitar un certificado actualizado a su proveedor SSL.
 
 ### Fechas de validez del certificado {#certificate-validity-dates}
 

@@ -19,7 +19,7 @@ ht-degree: 93%
 
 Para generar un vínculo para un recurso o una carpeta que contenga recursos:
 
-1. Seleccione los recursos, las carpetas o ambos que contienen recursos y haga clic en **[!UICONTROL Compartir vínculo]**.
+1. Seleccione los recursos, carpetas o ambos que contienen recursos y haga clic en **[!UICONTROL Compartir vínculo]**.
 
 1. Si desea ajustarlo, haga clic en el icono del calendario para definir una fecha de caducidad para el vínculo mediante el campo **[!UICONTROL Fecha de caducidad]**. También puede especificar una fecha directamente, en formato `yyyy-mm-dd`. De forma predeterminada, la fecha de caducidad de un vínculo se establece en dos semanas a partir de la fecha en que se compartió.
 
@@ -45,7 +45,7 @@ Para descargar todos los recursos a la vez, cambie a la **[!UICONTROL Vista de l
 
 ## Siguientes pasos {#next-steps}
 
-* [Vea un vídeo para compartir vínculos para recursos en la vista Recursos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html?lang=es)
+* [Vea un vídeo para compartir vínculos de recursos en la vista de Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html?lang=es)
 
 * Realice comentarios del producto mediante la opción [!UICONTROL Comentarios] disponible en la interfaz de usuario de la vista Recursos
 

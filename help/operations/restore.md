@@ -43,10 +43,10 @@ AEM En ambos casos, la versión del código personalizado y la versión de la pe
 
 Antes de restaurar a una restauración de contenido completa, tenga en cuenta estas opciones para restaurar el contenido con mayor facilidad.
 
-* Si hay un paquete disponible para la ruta eliminada, instale de nuevo el paquete con la variable [Administrador de paquetes.](/help/implementing/developing/tools/package-manager.md)
-* Si la ruta eliminada era una página de Sites, use [Función Restaurar árbol.](/help/sites-cloud/authoring/sites-console/page-versions.md)
-* Si la ruta eliminada era una carpeta de recursos y los archivos originales están disponibles, vuelva a cargarlos mediante [la consola Recursos.](/help/assets/add-assets.md)
-* Si la eliminación de contenido era recursos, considere lo siguiente [restaurar versiones anteriores de los recursos.](/help/assets/manage-digital-assets.md)
+* Si hay disponible un paquete para la ruta eliminada, instale de nuevo el paquete con el [Administrador de paquetes.](/help/implementing/developing/tools/package-manager.md)
+* Si la ruta eliminada era una página de Sites, use la función [Restaurar árbol.](/help/sites-cloud/authoring/sites-console/page-versions.md)
+* Si la ruta eliminada era una carpeta de recursos y los archivos originales están disponibles, vuelva a cargarlos a través de [la consola de Assets.](/help/assets/add-assets.md)
+* Si el contenido eliminado eran recursos, considere [restaurar versiones anteriores de los recursos.](/help/assets/manage-digital-assets.md)
 
 Si ninguna de las opciones anteriores funciona y el contenido de la ruta eliminada es significativo, realice una restauración de contenido como se detalla en las secciones siguientes.
 
@@ -55,11 +55,11 @@ Si ninguna de las opciones anteriores funciona y el contenido de la ruta elimina
 De forma predeterminada, ningún usuario tendrá permiso para ejecutar restauraciones de contenido en entornos de desarrollo, producción o ensayo. Para delegar este permiso a usuarios o grupos específicos, siga estos pasos generales.
 
 1. Cree un perfil de producto con un nombre expresivo que haga referencia a la restauración de contenido.
-1. Proporcione el **Acceso al programa** en el programa requerido.
-1. Proporcione el **Restauración de contenido** permiso en el entorno requerido para todos los entornos del programa, según el caso de uso.
+1. Proporcione el permiso **Acceso al programa** en el programa requerido.
+1. Proporcione el permiso **Restauración de contenido** en el entorno necesario o en todos los entornos del programa, según el caso de uso.
 1. Asigne usuarios a ese perfil.
 
-Para obtener más información sobre la administración de permisos, consulte [Permisos personalizados](/help/implementing/cloud-manager/custom-permissions.md) documentación.
+Para obtener más información sobre la administración de permisos, consulte la documentación de [Permisos personalizados](/help/implementing/cloud-manager/custom-permissions.md).
 
 ## Restauración de contenido {#restoring-content}
 
@@ -67,25 +67,25 @@ En primer lugar, determine el lapso de tiempo del contenido que desea restaurar.
 
 >[!NOTE]
 >
->Un usuario debe tener [permisos adecuados](#user-role) para iniciar una operación de restauración.
+>Un usuario debe tener [permisos apropiados](#user-role) para iniciar una operación de restauración.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
 1. Haga clic en el programa para el que desea iniciar una restauración.
 
-1. Desde el **Resumen del programa** , en la **Entornos** , haga clic en el botón de los tres puntos situado junto al entorno para el que desea iniciar una restauración y seleccione **Restaurar contenido**.
+1. En la página **Información general del programa**, en la tarjeta **Entornos**, haga clic en el botón de puntos suspensivos situado junto al entorno para el que desea iniciar una restauración y seleccione **Restaurar contenido**.
 
    ![Opción Restaurar](assets/backup-option.png)
 
    * También puede navegar directamente a la pestaña **Restaurar contenido** de la página de detalles de un entorno específico.
 
-1. En el **Restaurar contenido** de la página de detalles del entorno, seleccione primero el lapso de tiempo de la restauración en la pestaña **Tiempo para la restauración** lista desplegable.
+1. En la ficha **Restaurar contenido** de la página de detalles del entorno, seleccione primero el lapso de tiempo de la restauración en la lista desplegable **Tiempo para la restauración**.
 
-   1. Si selecciona **Últimas 24 horas** la vecina **Hora** El campo permite especificar el tiempo exacto dentro de las últimas 24 horas para la restauración.
+   1. Si selecciona **Últimas 24 horas**, el campo vecino **Hora** le permite especificar el tiempo exacto dentro de las últimas 24 horas para la restauración.
 
       ![Últimas 24 horas](assets/backup-time.png)
 
-   1. Si selecciona **Última semana** la vecina **Día** El campo permite seleccionar una fecha en los últimos siete días, excluidas las 24 horas anteriores.
+   1. Si selecciona **Última semana**, el campo vecino **Día** le permite seleccionar una fecha en los últimos siete días, excluidas las 24 horas anteriores.
 
       ![Última semana](assets/backup-date.png)
 
@@ -93,19 +93,19 @@ En primer lugar, determine el lapso de tiempo del contenido que desea restaurar.
 
    ![Copias de seguridad disponibles](assets/backup-available.png)
 
-1. AEM Busque la copia de seguridad que desea restaurar mediante el icono de información para ver información sobre la versión del código y la versión incluidos en dicha copia de seguridad y tenga en cuenta las implicaciones de una restauración cuando [elegir la copia de seguridad.](#choosing-the-right-backup)
+1. AEM Busque la copia de seguridad que desea restaurar mediante el icono de información para ver información relativa a la versión del código y la versión incluidos en dicha copia de seguridad y tenga en cuenta las implicaciones de una restauración cuando [elija la copia de seguridad.](#choosing-the-right-backup)
 
    ![Información de copia de seguridad](assets/backup-info.png)
 
    * La marca de tiempo mostrada para las opciones de restauración se basa en la zona horaria del equipo del usuario.
 
-1. Haga clic en **Restaurar** en el extremo derecho de la fila que representa la copia de seguridad que desea restaurar para iniciar el proceso de restauración.
+1. Haga clic en el icono **Restaurar** en el extremo derecho de la fila que representa la copia de seguridad que desea restaurar para iniciar el proceso de restauración.
 
 1. Consulte los detalles en el cuadro de diálogo **Restaurar contenido** antes de confirmar la solicitud haciendo clic en **Restaurar**.
 
    ![Confirmar restauración](assets/backup-restore.png)
 
-El proceso de copia de seguridad se inicia y puede ver su estado en la **[Actividad de restauración](#restore-activity)** lista. El tiempo necesario para completar una operación de restauración depende del tamaño y el perfil del contenido que se está restaurando.
+El proceso de copia de seguridad se ha iniciado y puede ver su estado en la lista **[Actividad de restauración](#restore-activity)**. El tiempo necesario para completar una operación de restauración depende del tamaño y el perfil del contenido que se está restaurando.
 
 Cuando la restauración se complete correctamente, el entorno hará lo siguiente:
 
@@ -114,7 +114,7 @@ Cuando la restauración se complete correctamente, el entorno hará lo siguiente
 
 ## Elección de la copia de seguridad adecuada {#choosing-backup}
 
-AEM El proceso de restauración de autoservicio de Cloud Manager solo restaura el contenido a los recursos de la. Por este motivo, debe tener en cuenta cuidadosamente los cambios que se hayan realizado en el código entre el punto de restauración deseado y el momento actual revisando el historial de compromiso entre el ID de compromiso actual y el que se está restaurando.
+El proceso de restauración de autoservicio de Cloud Manager AEM solo restaura el contenido a los recursos de la. Por este motivo, debe tener en cuenta cuidadosamente los cambios que se hayan realizado en el código entre el punto de restauración deseado y el momento actual revisando el historial de compromiso entre el ID de compromiso actual y el que se está restaurando.
 
 Existen varios escenarios.
 
@@ -128,7 +128,7 @@ Además, tenga en cuenta que una restauración puede provocar que los entornos d
 
 ## Actividad de restauración {#restore-activity}
 
-El **Actividad de restauración** La lista muestra el estado de las diez solicitudes de restauración más recientes, incluidas las operaciones de restauración activas.
+La lista **Actividad de restauración** muestra el estado de las diez solicitudes de restauración más recientes, incluidas las operaciones de restauración activas.
 
 ![Actividad de restauración](assets/backup-activity.png)
 

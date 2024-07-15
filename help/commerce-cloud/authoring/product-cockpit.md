@@ -25,9 +25,9 @@ Los datos de productos clasificados incluyen cualquier mutación futura, como nu
 
 ## Configuración {#configuration}
 
-AEM Los catálogos de productos deben configurarse en la opción de configuración de la. Consulte [configuración de tiendas y catálogos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog) para obtener más información.
+AEM Los catálogos de productos deben configurarse en la opción de configuración de la. Consulte [configurar el almacén y los catálogos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog) para obtener más información.
 
-La activación de las funciones de catálogo organizadas requiere autenticación. Consulte [Primeros pasos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html) para obtener más información.
+La activación de las funciones de catálogo organizadas requiere autenticación. Consulte [Introducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html) para obtener más información.
 
 >[!NOTE]
 >
@@ -35,9 +35,9 @@ La activación de las funciones de catálogo organizadas requiere autenticación
 
 ## Apertura de la cabina de productos {#opening-product-cockpit}
 
-La forma más fácil de acceder al Product Cockpit es a través del menú &quot;Commerce AEM&quot; en el menú principal de la barra de herramientas de la consola de producto, que se encuentra en el menú principal de la barra de herramientas. También es posible utilizar Omnisearch (buscar Commerce) o abrir `https://<yourAEMInstance>/commerce.html`.
+La forma más fácil de acceder al Product Cockpit es a través del menú &quot;Commerce AEM&quot; en el menú principal de. También es posible usar Omnisearch (buscar Commerce) o abrir `https://<yourAEMInstance>/commerce.html`.
 
-![AEM menú de](../assets/aem-menu.png)
+AEM ![menú de la](../assets/aem-menu.png)
 
 ## Exploración de catálogos de productos {#browsing-product-catalogs}
 
@@ -67,7 +67,7 @@ Se proporciona una búsqueda de texto completo sobre el catálogo de productos c
 
 De forma predeterminada, la cabina de productos muestra los datos del catálogo de productos en directo. El uso del &quot;CATÁLOGO CLASIFICADO&quot; en la pestaña del filtro izquierdo carga el catálogo de productos para cualquier fecha seleccionada.
 
-![catálogo preconfigurado](../assets/staged-cockpit.png)
+![catálogo ensayado](../assets/staged-cockpit.png)
 
 ## Propiedades del catálogo de productos {#catalog-properties}
 
@@ -77,10 +77,10 @@ Al hacer clic en el icono de propiedades de un producto o categoría, se abre la
 
 Las pestañas general y de variante muestran propiedades de comercio predefinidas que provienen del backend del comercio. Estos datos (incl. AEM variantes) son datos de solo lectura en el caso de los datos, ya que el sistema de registro es el back-end de comercio. La pestaña variante solo aparece para productos con variantes y muestra una lista de todas las variantes.
 
-![propiedades del catálogo](../assets/catalog-properties.png)
+![propiedades de catálogo](../assets/catalog-properties.png)
 
 ### AEM Pestañas de contenido {#content-tabs}
 
-AEM AEM Estas pestañas, agrupadas por tipos de contenido de (Fragmentos de experiencias, Fragmentos de contenido, Recursos asociados), muestran contenido de la lista de contenido asociado con el objeto de comercio, que se encuentra asociado con el contenido de la lista de distribución de contenido. La acción &quot;Ver detalles&quot; abre una nueva pestaña del explorador con el contenido seleccionado.
+AEM Estas pestañas, agrupadas por tipos de contenido de (Fragmentos de experiencias, Fragmentos de contenido, Assets AEM asociado), muestran contenido de la lista de contenido asociado con el objeto de comercio, que está asociado con el contenido de la lista de distribución de contenido. La acción &quot;Ver detalles&quot; abre una nueva pestaña del explorador con el contenido seleccionado.
 
 ![propiedades de contenido](../assets/content-properties.png)

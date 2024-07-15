@@ -1,11 +1,11 @@
 ---
-title: Uso compartido de Assets en [!DNL the Content Hub]
-description: Uso compartido de Assets en [!DNL the Content Hub]
+title: Compartir Assets en  [!DNL the Content Hub]
+description: Compartir Assets en  [!DNL the Content Hub]
 role: User
 source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -14,43 +14,43 @@ ht-degree: 1%
 
 ![Compartir recursos con la imagen del titular](assets/share-assets-banner.png)
 
-Compartir recursos a través de un vínculo es una forma cómoda de poner los recursos a disposición de los usuarios [!DNL the Content Hub] usuarios. La funcionalidad permite a los usuarios autorizados acceder y descargar los recursos compartidos con ellos. Al descargar recursos desde un vínculo compartido, [!DNL the Content Hub] utiliza un servicio asincrónico que ofrece una descarga más rápida e ininterrumpida.
+Compartir recursos a través de un vínculo es una manera cómoda de poner los recursos a disposición de [!DNL the Content Hub] usuarios. La funcionalidad permite a los usuarios autorizados acceder y descargar los recursos compartidos con ellos. Al descargar recursos desde un vínculo compartido, [!DNL the Content Hub] utiliza un servicio asincrónico que ofrece una descarga más rápida e ininterrumpida.
 
 ## Requisitos previos {#prerequisites}
 
-[Usuarios de Content Hub](deploy-content-hub.md#onboard-content-hub-users) puede realizar las acciones mencionadas en este artículo.
+[Usuarios de Content Hub](deploy-content-hub.md#onboard-content-hub-users) pueden realizar las acciones mencionadas en este artículo.
 
 ## Compartir un solo recurso {#share-a-single-asset}
 
 Puede compartir un solo recurso ejecutando los siguientes pasos:
 
-1. Seleccione un recurso y haga clic en ![compartir icono](assets/share.svg) para compartir un recurso.
+1. Seleccione un recurso y haga clic en el icono ![compartir icono](assets/share.svg) para compartir un recurso.
 
    ![Compartiendo un solo recurso](assets/sharing-single-asset.png)
 
-1. Utilice el **[!UICONTROL Caducidad]** para especificar una fecha de caducidad para el vínculo. Seleccione una de las opciones disponibles, como, 24 horas, 1 semana, 30 días, 90 días, 1 año o especifique una fecha personalizada.
+1. Utilice el campo **[!UICONTROL Caducidad]** para especificar una fecha de vencimiento para el vínculo. Seleccione una de las opciones disponibles, como, 24 horas, 1 semana, 30 días, 90 días, 1 año o especifique una fecha personalizada.
 
-1. Clic **[!UICONTROL Copiar vínculo compartido]**. A continuación, puede compartir el vínculo copiado con el destinatario.
+1. Haga clic en **[!UICONTROL Copiar vínculo compartido]**. A continuación, puede compartir el vínculo copiado con el destinatario.
 
 ## Compartir varios recursos {#share-multiple-assets}
 
-[!DNL The Content Hub] permite compartir varios recursos a través de un vínculo compartido. Ejecute los siguientes pasos:
+[!DNL The Content Hub] le permite compartir varios recursos mediante un vínculo compartido. Ejecute los siguientes pasos:
 
-1. Seleccione los recursos que debe compartir con el destinatario autorizado. Puede seleccionar varios recursos uno por uno o hacer clic en ellos **[!UICONTROL Seleccionar todo]** para seleccionar todos los recursos disponibles a la vez. El **[!UICONTROL Seleccionar todo]** Esta opción solo se muestra al seleccionar al menos un recurso.
+1. Seleccione los recursos que debe compartir con el destinatario autorizado. Puede seleccionar varios recursos uno por uno o hacer clic en **[!UICONTROL Seleccionar todo]** para seleccionar todos los recursos disponibles a la vez. La opción **[!UICONTROL Seleccionar todo]** solo se muestra al seleccionar al menos un recurso.
 
-1. Haga clic en ![compartir icono](assets/share.svg) icono.
+1. Haga clic en el icono ![compartir icono](assets/share.svg).
 
-   ![Uso compartido de varios recursos](assets/sharing-multiple-assets.png)
+   ![Compartir varios recursos](assets/sharing-multiple-assets.png)
 
-1. En la sección Vista previa, también puede eliminar recursos según sus necesidades. Utilice el **[!UICONTROL Caducidad]** para especificar una fecha de caducidad para el vínculo. Seleccione una de las opciones disponibles, como, 24 horas, 1 semana, 30 días, 90 días, 1 año o especifique una fecha personalizada.
+1. En la sección Vista previa, también puede eliminar recursos según sus necesidades. Utilice el campo **[!UICONTROL Caducidad]** para especificar una fecha de vencimiento para el vínculo. Seleccione una de las opciones disponibles, como, 24 horas, 1 semana, 30 días, 90 días, 1 año o especifique una fecha personalizada.
 
-1. Clic **[!UICONTROL Copiar vínculo compartido]**. A continuación, puede compartir el vínculo copiado con el destinatario.
+1. Haga clic en **[!UICONTROL Copiar vínculo compartido]**. A continuación, puede compartir el vínculo copiado con el destinatario.
 
 ## Previsualización y uso compartido de recursos {#preview-assets}
 
-Puede obtener una vista previa del aspecto de un recurso digital que va a compartir antes de compartirlo con un destinatario del vínculo. Haga clic en el recurso que necesita previsualizar. El [!DNL Content Hub] muestra el [vista detallada del recurso](asset-properties-content-hub.md).
+Puede obtener una vista previa del aspecto de un recurso digital que va a compartir antes de compartirlo con un destinatario del vínculo. Haga clic en el recurso que necesita previsualizar. [!DNL Content Hub] muestra la [vista detallada del recurso](asset-properties-content-hub.md).
 
-Haga clic en ![compartir icono](assets/share.svg) para compartir un recurso. Utilice el **[!UICONTROL Caducidad]** para especificar una fecha de caducidad para el vínculo. Seleccione una de las opciones disponibles, como, 24 horas, 1 semana, 30 días, 90 días, 1 año o especifique una fecha personalizada. Clic **[!UICONTROL Copiar vínculo compartido]**. A continuación, puede compartir el vínculo copiado con el destinatario.
+Haga clic en el icono ![compartir icono](assets/share.svg) para compartir un recurso. Utilice el campo **[!UICONTROL Caducidad]** para especificar una fecha de vencimiento para el vínculo. Seleccione una de las opciones disponibles, como, 24 horas, 1 semana, 30 días, 90 días, 1 año o especifique una fecha personalizada. Haga clic en **[!UICONTROL Copiar vínculo compartido]**. A continuación, puede compartir el vínculo copiado con el destinatario.
 
 ![Vista previa de recursos en Content Hub](assets/preview-assets-content-hub.png)
 

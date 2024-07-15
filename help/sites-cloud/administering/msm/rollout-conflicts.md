@@ -32,7 +32,7 @@ Además de la funcionalidad estándar, se pueden agregar controladores de confli
 
 ### Escenario de ejemplo {#example-scenario}
 
-En las secciones siguientes, se muestra un ejemplo de una página nueva `b` se utiliza, creado tanto en el modelo como en la rama de Live Copy (creada manualmente), para ilustrar los distintos métodos de resolución de conflictos:
+En las secciones siguientes, se utiliza un ejemplo de una nueva página `b`, creada tanto en el modelo como en la rama de Live Copy (creada manualmente), para ilustrar los distintos métodos de resolución de conflictos:
 
 * modelo: `/b`
 
@@ -78,7 +78,7 @@ AEM proporciona lo siguiente:
 El controlador de conflictos predeterminado es `ResourceNameRolloutConflictHandler`
 
 * Con este controlador, la página de modelo tiene prioridad.
-* La clasificación de servicio de este controlador se ha establecido en un nivel bajo. Es decir, por debajo del valor predeterminado para `service.ranking` porque se supone que los controladores personalizados necesitan una clasificación más alta. Sin embargo, la clasificación no está al nivel mínimo absoluto para garantizar la flexibilidad cuando sea necesario.
+* La clasificación de servicio de este controlador se ha establecido en un nivel bajo. Es decir, por debajo del valor predeterminado para la propiedad `service.ranking` porque se supone que los controladores personalizados necesitan una clasificación más alta. Sin embargo, la clasificación no está al nivel mínimo absoluto para garantizar la flexibilidad cuando sea necesario.
 
 Este controlador de conflictos da prioridad al modelo. Por ejemplo, la página Live Copy `/b` se mueve dentro de la rama de Live Copy a `/b_msm_moved`.
 
@@ -112,7 +112,7 @@ Los controladores de conflictos personalizados pueden hacer lo siguiente:
 * Nombrarse según sus necesidades.
 * Desarrollarse/configurarse según sus necesidades.
    * Por ejemplo, puede desarrollar un controlador para que la página Live Copy tenga prioridad.
-* Se puede configurar utilizando la variable [Configuración de OSGi](/help/implementing/deploying/configuring-osgi.md). En particular:
+* Se puede configurar usando la [configuración OSGi](/help/implementing/deploying/configuring-osgi.md). En particular:
    * La **clasificación de servicios** define el orden relacionado con otros controladores de conflictos (`service.ranking`).
       * El valor predeterminado es `0`.
 

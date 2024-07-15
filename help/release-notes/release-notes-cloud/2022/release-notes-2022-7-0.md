@@ -39,9 +39,9 @@ Eche un vistazo al vídeo Información general sobre la versión de julio de 202
 
 ### Nuevas funciones de [!DNL Sites] {#sites-features}
 
-* El [Consola de fragmento de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) ahora admite [métodos abreviados del teclado](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
+* La [consola de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) ahora admite [métodos abreviados de teclado](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
-* AEM como Cloud Service de la [entrega de imágenes optimizadas para la web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=es) permite mejorar significativamente la velocidad de la página al ofrecer formatos como WebP. Este nuevo servicio también ofrece opciones más flexibles de cambio de tamaño y transformación de imágenes. Todas las versiones de [Componente Imagen principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=es) permite utilizar este servicio y enviar imágenes como WebP haciendo clic en una opción de la directiva del componente de imagen.
+* AEM ya que la [entrega de imágenes optimizadas para la web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=es) de Cloud Service permite mejorar significativamente la velocidad de la página al ofrecer formatos como WebP. Este nuevo servicio también ofrece opciones más flexibles de cambio de tamaño y transformación de imágenes. Todas las versiones del [Componente de imagen principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=es) le permiten utilizar este servicio y enviar imágenes como WebP haciendo clic en una opción de la directiva del componente de imagen.
 
 * AEM Ahora, las actividades de personalización de pueden utilizar fragmentos de experiencias en lugar de nuestras ofertas heredadas. Esta función:
    * AEM habilita una ruta de migración en la que el contenido de la promocionaría ofertas de fragmentos de experiencias en lugar de ofertas de bibliotecas heredadas para proporcionar contenido con un estilo adecuado que se ajuste a la personalización a escala en el futuro.
@@ -56,7 +56,7 @@ Eche un vistazo al vídeo Información general sobre la versión de julio de 202
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Assets] {#prerelease-features-assets}
 
-Ahora puede configurar Adobe Experience Manager Assets para que [restringir el tipo de recursos que los usuarios pueden cargar en función del tipo MIME](/help/assets/configure-asset-upload-restrictions.md).
+Ahora puede configurar Adobe Experience Manager Assets para [restringir el tipo de recursos que los usuarios pueden cargar según el tipo MIME](/help/assets/configure-asset-upload-restrictions.md).
 
 ![Restricciones de carga de recursos](/help/assets/assets/asset-upload-restrictions.png)
 
@@ -64,11 +64,11 @@ Ahora puede configurar Adobe Experience Manager Assets para que [restringir el t
 
 ### Nuevas funciones de [!DNL Forms] {#forms-features}
 
-* **[Compatibilidad de entrada de teclado con firmas Scribble](/help/forms/signing-forms-using-scribble.md)**: Los Forms adaptables se utilizan cada vez más en dispositivos táctiles y uno de los requisitos comunes es ser compatibles con firmas. La firma de documentos en dispositivos táctiles se ha convertido en una forma aceptada para firmar formularios. Adaptive Forms es compatible de forma nativa con firmas de Scribble y con Adobe Sign en estos casos de uso. Ahora, junto con otras opciones ya compatibles, también puede utilizar el teclado para crear firmas de Scribble en un formulario adaptable. También ayuda a mejorar el cumplimiento de la accesibilidad.
+* **[Compatibilidad de entrada de teclado con firmas Scribble](/help/forms/signing-forms-using-scribble.md)**: los Forms adaptables se utilizan cada vez más en dispositivos táctiles, y uno de los requisitos comunes es ser compatibles con firmas. La firma de documentos en dispositivos táctiles se ha convertido en una forma aceptada para firmar formularios. Adaptive Forms es compatible de forma nativa con firmas de Scribble y con Adobe Sign en estos casos de uso. Ahora, junto con otras opciones ya compatibles, también puede utilizar el teclado para crear firmas de Scribble en un formulario adaptable. También ayuda a mejorar el cumplimiento de la accesibilidad.
 
-![Compatibilidad de entrada de teclado con firmas Scribble en iPhone](/help/release-notes/assets/scribble-keyboard-mobile.png)
+![Compatibilidad de entrada de teclado con firmas manuscritas en el iphone](/help/release-notes/assets/scribble-keyboard-mobile.png)
 
-* **Uso del asistente de Forms adaptable en idioma local**: puede utilizar el asistente en el idioma que prefiera. Ahora es compatible con todos los idiomas admitidos por Adobe Experience Manager.
+* **Usar el asistente de Forms adaptable en idioma local**: puede usar el asistente en el idioma que prefiera. Ahora es compatible con todos los idiomas admitidos por Adobe Experience Manager.
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Forms] {#prerelease-features-forms}
 
@@ -80,9 +80,9 @@ Ahora puede configurar Adobe Experience Manager Assets para que [restringir el t
 
 -->
 
-* **[AEM Invocar DDX: un paso de flujo de trabajo de](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**: Document Description XML (DDX) es un lenguaje de marcado declarativo cuyos elementos representan componentes básicos de documentos. Estos componentes básicos incluyen documentos PDF y XDP, y otros elementos como comentarios, marcadores y texto con estilo. Los documentos DDX son plantillas para los documentos y describen las características deseadas de los documentos de origen que deben aparecer en los resultantes. Se puede utilizar un solo DDX con una amplia gama de documentos de origen. AEM Puede utilizar el paso Invocar y el flujo de trabajo de la para realizar varias operaciones, como montar documentos separados, crear y modificar Acrobat y XFA Forms, y otras operaciones descritas en [Referencia DDX](https://helpx.adobe.com/content/dam/help/es/experience-manager/forms-cloud-service/ddxRef.pdf) documentación.
+* AEM **[Invocar DDX - Un paso del flujo de trabajo de](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**: Document Description XML (DDX) es un lenguaje de marcado declarativo cuyos elementos representan componentes básicos de documentos. Estos componentes básicos incluyen documentos PDF y XDP, y otros elementos como comentarios, marcadores y texto con estilo. Los documentos DDX son plantillas para los documentos y describen las características deseadas de los documentos de origen que deben aparecer en los resultantes. Se puede utilizar un solo DDX con una amplia gama de documentos de origen. AEM Puede usar el paso Invocar y el flujo de trabajo de la para realizar varias operaciones, como ensamblar documentos separados, crear y modificar Acrobat y XFA Forms, y otras operaciones descritas en la documentación de [DDX Reference](https://helpx.adobe.com/content/dam/help/es/experience-manager/forms-cloud-service/ddxRef.pdf).
 
-* **[Convertir en PDF AEM/A: paso de un flujo de trabajo de](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**: PDF/A es un formato de archivo para la preservación a largo plazo del contenido del documento, todas las fuentes están incrustadas y el archivo no está comprimido. Ahora, puede utilizar el paso Convertir en PDF AEM/A y el flujo de trabajo de para convertir los documentos o archivos en cualquier formato al formato PDF/A.
+* **[Convertir en PDF AEM/A - Un paso del flujo de trabajo de](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**: PDF/A es un formato de archivo para la preservación a largo plazo del contenido del documento, todas las fuentes están incrustadas y el archivo no está comprimido. Ahora, puede utilizar el paso Convertir en PDF AEM/A y el flujo de trabajo de para convertir los documentos o archivos en cualquier formato al formato PDF/A.
 
 
 ## Complemento CIF {#cloud-services-cif}
@@ -104,12 +104,12 @@ Ahora puede configurar Adobe Experience Manager Assets para que [restringir el t
 ### Novedades {#what-is-new-foundation}
 
 * El [Explorador del repositorio](/help/implementing/developing/tools/repository-browser.md) ahora tiene un campo de entrada de ruta, lo que permite saltar directamente a una carpeta específica en la jerarquía del repositorio
-* Sling Content Distribution (SCD) ahora admite una acción explícita de &quot;invalidación&quot; para invalidar contenido sin que se publique. Consulte [AEM Almacenamiento en caché en as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) para obtener más información.
-* AEM mod_macro ya está disponible en as a Cloud Service. Consulte [esta tabla](/help/implementing/dispatcher/disp-overview.md) para obtener una lista de los módulos Apache compatibles.
+* Sling Content Distribution (SCD) ahora admite una acción explícita de &quot;invalidación&quot; para invalidar contenido sin que se publique. Consulte la página [Almacenamiento en caché en AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) para obtener más información.
+* mod_macro ya está disponible en AEM as a Cloud Service. Consulte [esta tabla](/help/implementing/dispatcher/disp-overview.md) para obtener una lista de los módulos Apache admitidos.
 
-### AEM Mejoras en las herramientas de Dispatcher del SDK as a Cloud Service {#dispatcher-tools-enhancements}
+### Mejoras en las herramientas Dispatcher del SDK de AEM as a Cloud Service {#dispatcher-tools-enhancements}
 
-* Apache puede iniciarse con `docker_run_hot_reload.sh` , que cargará y validará automáticamente cualquier cambio posterior en la configuración de apache y dispatcher, mejorando así la velocidad del desarrollador. Solo se admite en el modo flexible de las herramientas de Dispatcher. Consulte también [Depuración de la configuración de Apache y Dispatcher](/help/implementing/dispatcher/validation-debug.md#automatic-reloading) para obtener más información sobre la recarga y validación automáticas.
+* Apache puede iniciarse con el script `docker_run_hot_reload.sh`, que cargará y validará automáticamente cualquier cambio posterior en la configuración de Apache y Dispatcher, y así mejorará la velocidad del desarrollador. Solo se admite en el modo flexible de las herramientas de Dispatcher. Además, consulte [Depuración de la configuración de Apache y Dispatcher](/help/implementing/dispatcher/validation-debug.md#automatic-reloading) para obtener más información sobre la recarga y validación automáticas.
 * La configuración local de Apache/Dispatcher rastreará más de cerca los cambios en los entornos de la nube, aumentando la paridad entre los dos entornos.
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Experience Manager] {#prerelease-features-foundation}

@@ -47,7 +47,7 @@ Antes de comenzar la guía de inicio rápido, aquí hay una pequeña colección 
       * [Modo de vista previa](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
       * [Ver como aparece publicado](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 
-* Las versiones no se inician ni se crean desde el editor de páginas. Esto se hace ahora desde el **Sites** consola (a través de **Crear** o [Cronología](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) para un recurso seleccionado).
+* Las versiones no se inician ni se crean desde el editor de páginas. Esto ahora se hace desde la consola **Sitios** (a través de **Crear** o [Cronología](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) para un recurso seleccionado).
 
 >[!NOTE]
 >
@@ -62,11 +62,11 @@ Existen varios aspectos para encontrar una página; puede navegar o buscar:
 
 1. Abra la consola **Sites** (utilizando la opción **Sites** de la [Navegación global](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation): esto se activa (menú desplegable) al seleccionar el vínculo de Adobe Experience Manager (parte superior izquierda).
 
-1. Desplácese hacia abajo en el árbol tocando o haciendo clic en la página correspondiente. La forma en que se representan los recursos de la página depende de la vista que utilice: [Tarjeta, lista o columna](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources):
+1. Desplácese hacia abajo en el árbol tocando o haciendo clic en la página correspondiente. La manera en que se representan los recursos de la página depende de la vista que utilice: [Tarjeta, Lista o Columna](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources):
 
    ![Ver lista desplegable de selección](/help/sites-cloud/authoring/assets/views.png)
 
-1. Desplácese hacia arriba en el árbol mediante [la ruta de exploración en el encabezado](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header), que permite volver a la ubicación seleccionada:
+1. Desplácese hacia arriba del árbol mediante [la ruta de exploración del encabezado](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header), que le permite volver a la ubicación seleccionada:
 
    ![Lista desplegable de ruta de exploración](/help/sites-cloud/authoring/assets/breadcrumb.png)
 
@@ -76,7 +76,7 @@ Existen varios aspectos para encontrar una página; puede navegar o buscar:
 
 ### Creación de una nueva página {#creating-a-new-page}
 
-Hasta [crear una página](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
+Para [crear una página](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
 
 1. [Desplácese hasta la ubicación en la que desee crear la nueva página.](#finding-your-page)
 1. Utilice el icono **Crear** y luego seleccione **Página** en la lista:
@@ -114,7 +114,7 @@ La forma de seleccionar una página depende de la vista que utilice en la consol
 
 Hay [acciones rápidas](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) disponibles:
 
-1. [Navegue hasta la página](#finding-your-page) desea seguir actuando.
+1. [Vaya a la página](#finding-your-page) en la que desee actuar.
 1. Pase el puntero del ratón sobre la tarjeta que representa el recurso requerido. Se muestran las acciones rápidas:
 
    ![Acciones de tarjeta](/help/sites-cloud/authoring/assets/card-actions.png)
@@ -160,11 +160,11 @@ Para editar la página:
    * [Desplazar un componente](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component) mediante las siguientes opciones:
 
       * Arrastre el componente en cuestión a la ubicación nueva.
-      * Abra la barra de herramientas de componentes seleccionando. Utilice el **Cortar** entonces **Pegar** iconos donde sea necesario.
+      * Abra la barra de herramientas de componentes seleccionando. Use los iconos **Cortar** y **Pegar** donde sea necesario.
 
    * [Copiar (y pegar)](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) un componente:
 
-      * Abra la barra de herramientas de componentes seleccionando. Utilice el **Copiar** entonces **Pegar** iconos según sea necesario.
+      * Abra la barra de herramientas de componentes seleccionando. Use los iconos **Copiar** y **Pegar** según sea necesario.
 
    >[!NOTE]
    >
@@ -172,7 +172,7 @@ Para editar la página:
 
    * [Eliminar](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) un componente:
 
-      * Abra la barra de herramientas de componentes seleccionando y, a continuación, utilice la **Eliminar** icono.
+      * Abra la barra de herramientas de componentes con cualquiera de las opciones seleccionadas y, a continuación, utilice el icono **Eliminar**.
 
    * [Añadir anotaciones](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations) a la página:
 

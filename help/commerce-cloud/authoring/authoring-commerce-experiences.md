@@ -31,9 +31,9 @@ Al hacer clic en la categoría principal, el autor vuelve al nivel de producto.
 
 ![Selector de productos](../assets/authoring/product-picker-variation.png)
 
-**Teaser del producto de ejemplo**
+**Teaser de producto de ejemplo**
 
-![Componente Teaser sin selección](../assets/authoring/teaser_component_without_selection.png)
+![Componente teaser sin selección](../assets/authoring/teaser_component_without_selection.png)
 
 El cuadro de diálogo de configuración de este componente requiere un producto. CIF utiliza el SKU de como identificador de producto. Los autores pueden introducir el SKU a mano o hacer clic en el icono de la carpeta para abrir el selector de productos. Después de seleccionar y cerrar el selector, el cuadro de diálogo del componente muestra el nombre del producto seleccionado
 
@@ -59,7 +59,7 @@ AEM El Editor de páginas de se ha ampliado con funciones para acceder a los dat
 
 ### Acceso a datos del producto {#access-product-data}
 
-La pestaña &quot;Recursos&quot; del panel lateral del editor ofrece acceso a los datos del producto seleccionando el tipo &quot;Productos&quot;. Los datos se recuperan activos desde el extremo de comercio configurado. El filtro es una búsqueda de texto completo en el extremo de comercio para encontrar productos específicos.
+La pestaña &quot;Assets&quot; del panel lateral del editor ofrece acceso a los datos del producto seleccionando el tipo &quot;Productos&quot;. Los datos se recuperan activos desde el extremo de comercio configurado. El filtro es una búsqueda de texto completo en el extremo de comercio para encontrar productos específicos.
 
 ![Panel lateral de datos del producto](../assets/authoring/products-side-panel.png)
 
@@ -71,7 +71,7 @@ CIF Las páginas de catálogo de productos de son páginas virtuales que se proc
 
 ![RTE](../assets/authoring/RTE.png)
 
-    >[!NOTA]
+    >[!NOTE]
     >
     > Si se seleccionan tanto la categoría como el producto, se toma el producto.
 
@@ -79,7 +79,7 @@ Esto crea un vínculo de marcador de posición que se sustituye por un vínculo 
 
 ### Acceso al contenido del producto asociado {#associated-content}
 
-Si el editor reconoce productos 1:n en una página, el panel lateral mostrará automáticamente la pestaña &quot;Contenido de Commerce asociado&quot;. AEM Esta pestaña permite a los autores acceder rápidamente al contenido de la documentación que se ha etiquetado con el producto (consulte ). [AEM enriquecer datos de productos con contenido asociado de la](./enrich-product-associated-content.md) para obtener más información). Esta pestaña ofrece listas desplegables para filtrar por tipo de contenido y productos específicos si hay varios productos en la página. El uso del contenido funciona exactamente igual que el uso de contenido de la pestaña Recursos.
+Si el editor reconoce productos 1:n en una página, el panel lateral mostrará automáticamente la pestaña &quot;Contenido de Commerce asociado&quot;. AEM AEM Esta ficha permite a los autores acceder rápidamente a contenido de la etiqueta que se ha etiquetado con el producto (vea [enriquecer datos de producto con contenido de la etiqueta asociado](./enrich-product-associated-content.md) para obtener más información). Esta pestaña ofrece listas desplegables para filtrar por tipo de contenido y productos específicos si hay varios productos en la página. El uso del contenido funciona exactamente igual que el uso de la pestaña &quot;Assets&quot;.
 
 ![Panel lateral de datos del producto](../assets/authoring/associated-commerce-content-tab.png)
 

@@ -25,42 +25,42 @@ Vuelva a procesar los recursos en una carpeta si se da cualquiera de las dos sit
 
 Para volver a procesar recursos en una carpeta:
 
-1. Entrada [!DNL Experience Manager], en la página Recursos, seleccione los recursos recién agregados o los recursos que desea volver a procesar.
+1. En [!DNL Experience Manager], en la página Assets, seleccione los recursos agregados recientemente o los recursos que desee volver a procesar.
 En caso de que seleccione una carpeta:
 
    * El flujo de trabajo considera recursivamente todos los archivos de la carpeta seleccionada.
    * Si hay una o más subcarpetas con recursos en la carpeta principal seleccionada, el flujo de trabajo vuelve a procesar cada recurso en la jerarquía de carpetas.
    * Como práctica recomendada, evite ejecutar este flujo de trabajo en una jerarquía de carpetas que tenga más de 1000 recursos.
 
-1. Seleccionar **[!UICONTROL Volver a procesar recursos]**. Elija entre las dos opciones:
+1. Seleccione **[!UICONTROL Volver a procesar Assets]**. Elija entre las dos opciones:
 
-   ![Opciones de reprocesamiento de recursos](assets/reprocessing-assets-options.png)
+   ![Opciones de reprocesamiento de Assets](assets/reprocessing-assets-options.png)
 
    * **[!UICONTROL Proceso completo]:** Seleccione esta opción cuando desee ejecutar el proceso general, incluidos el perfil predeterminado, el perfil personalizado, el procesamiento dinámico (si está configurado) y los flujos de trabajo posteriores al procesamiento.
-   * **[!UICONTROL Avanzadas]:** Seleccione esta opción para elegir el reprocesamiento avanzado.
+   * **[!UICONTROL Avanzado]:** Seleccione esta opción para elegir el reprocesamiento avanzado.
 
-     ![Opciones avanzadas de reprocesamiento de recursos](assets/reprocessing-assets-options-advanced.png)
+     ![Opciones avanzadas de reprocesamiento de Assets](assets/reprocessing-assets-options-advanced.png)
 
      Seleccione entre las siguientes opciones avanzadas:
 
-      * **[!UICONTROL Representaciones de previsualización predeterminadas]:** Elija esta opción cuando desee volver a procesar las representaciones que se previsualizan de forma predeterminada.
+      * **[!UICONTROL Representaciones de vista previa predeterminadas]:** Elija esta opción cuando desee volver a procesar las representaciones de vista previa de forma predeterminada.
 
       * **[!UICONTROL Metadatos]:** Elija esta opción cuando desee extraer información de metadatos y etiquetas inteligentes para los recursos seleccionados.
 
-      * **[!UICONTROL Perfiles de procesamiento]:** Elija esta opción cuando desee volver a procesar un perfil seleccionado. Puede elegir **[!UICONTROL Proceso completo]** opción para incluir el procesamiento predeterminado y el perfil personalizado asignado en el nivel de carpeta.
+      * **[!UICONTROL Perfiles de procesamiento]:** Elija esta opción cuando desee volver a procesar un perfil seleccionado. Puede elegir la opción **[!UICONTROL Proceso completo]** para incluir el procesamiento predeterminado y el perfil personalizado asignado en el nivel de carpeta.
         <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
-      * **[!UICONTROL Flujo de trabajo de posprocesamiento]:** Elija esta opción donde se requiera un procesamiento adicional de recursos que no se pueda lograr con los perfiles de procesamiento. Se pueden añadir a la configuración flujos de trabajo posteriores al procesamiento adicionales. El posprocesamiento le permite agregar un procesamiento completamente personalizado sobre el procesamiento configurable mediante microservicios de recursos.
+      * **[!UICONTROL Flujo de trabajo de procesamiento de Post]:** Elija esta opción cuando se requiera un procesamiento adicional de recursos que no se pueda lograr mediante los perfiles de procesamiento. Se pueden añadir a la configuración flujos de trabajo posteriores al procesamiento adicionales. El procesamiento de Post le permite agregar un procesamiento completamente personalizado sobre el procesamiento configurable mediante microservicios de recursos.
 
-Consulte [uso de microservicios de recursos y perfiles de procesamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en) para obtener más información sobre los perfiles de procesamiento y el flujo de trabajo posterior al procesamiento.
+Consulte [usar microservicios de recursos y perfiles de procesamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en) para obtener más información sobre los perfiles de procesamiento y el flujo de trabajo posterior al procesamiento.
 
-![Opciones avanzadas de reprocesamiento de recursos2](assets/reprocessing-assets-options-advanced-2.png)
+![Opciones avanzadas de reprocesamiento de Assets2](assets/reprocessing-assets-options-advanced-2.png)
 
-Después de seleccionar las opciones adecuadas, haga clic en **[!UICONTROL Reprocesar]**. Aparece el mensaje de éxito.
+Después de seleccionar las opciones apropiadas, haga clic en **[!UICONTROL Volver a procesar]**. Aparece el mensaje de éxito.
 
 ## Escenarios para reprocesar recursos digitales {#scenarios-reprocessing}
 
-[!DNL Experience Manager] permite reprocesar recursos digitales para los siguientes componentes.
+[!DNL Experience Manager] permite el reprocesamiento de recursos digitales para los siguientes componentes.
 
 ### Etiquetas inteligentes {#reprocessing-smart-tags}
 
@@ -74,23 +74,23 @@ Más información sobre [Reprocesar etiquetas de color para imágenes existentes
 
 ### Recorte inteligente {#reprocessing-smart-crop}
 
-Más información sobre [Recorte inteligente de Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en) que permite aplicar un recorte específico (**[!UICONTROL Recorte inteligente]** y recorte de píxeles) y ajuste de la configuración a los recursos cargados.
+Obtenga más información sobre [recorte inteligente de Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en) que le permite aplicar un recorte específico (**[!UICONTROL recorte inteligente]** y recorte de píxeles) y una configuración perfeccionada a los recursos cargados.
 
 ### Metadatos {#reprocessing-metadata}
 
-[!DNL Adobe Experience Manager Assets] mantiene los metadatos de cada recurso. Permite una categorización y organización más sencillas de los recursos y ayuda a las personas que buscan un recurso específico. Con la capacidad de extraer metadatos de archivos cargados en Experience Manager Assets, la administración de metadatos se integra con el flujo de trabajo creativo. Con la capacidad de mantener y administrar metadatos con sus recursos, puede organizar y procesar recursos automáticamente en función de sus metadatos.
+[!DNL Adobe Experience Manager Assets] guarda los metadatos de cada recurso. Permite una categorización y organización más sencillas de los recursos y ayuda a las personas que buscan un recurso específico. Con la capacidad de extraer metadatos de archivos cargados en Experience Manager Assets, la administración de metadatos se integra con el flujo de trabajo creativo. Con la capacidad de mantener y administrar metadatos con sus recursos, puede organizar y procesar recursos automáticamente en función de sus metadatos.
 
-Más información sobre [Reprocesamiento de perfiles de metadatos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en).
+Más información sobre [Reprocesando perfiles de metadatos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en).
 
 ### Volver a procesar los recursos de Dynamic Media en una carpeta {#reprocessing-dynamic-media}
 
-Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de imagen de Dynamic Media o un perfil de vídeo de Dynamic Media que haya cambiado posteriormente. Para obtener más información, visite [vuelva a procesar los recursos de Dynamic Media en una carpeta.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)
+Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de imagen de Dynamic Media o un perfil de vídeo de Dynamic Media que haya cambiado posteriormente. Para obtener más información, visite [reprocesar recursos de Dynamic Media en una carpeta.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)
 
 >[!NOTE]
 >
->Debe configurar lo siguiente [!DNL Dynamic Media] en el entorno para habilitar el cuadro de diálogo Dynamic Media.
+>Debe configurar [!DNL Dynamic Media] en el entorno para habilitar el cuadro de diálogo de Dynamic Media.
 >
 
 ### Flujos de trabajo
 
-Más información sobre [perfiles de procesamiento y flujos de trabajo posteriores al procesamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en).
+Obtenga más información sobre [perfiles de procesamiento y flujos de trabajo posteriores al procesamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en).

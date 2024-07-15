@@ -67,7 +67,7 @@ Tenga en cuenta que AEM tiene dos enfoques principales para crear Live Copies:
 
 A continuación se indican algunas consideraciones que se deben tener en cuenta al crear un sitio:
 
-* Para crear un sitio, necesita un [configuración de modelo](creating-live-copies.md#managing-blueprint-configurations).
+* Para crear un sitio, necesita una [configuración de modelo](creating-live-copies.md#managing-blueprint-configurations).
 * Para permitir la selección de rutas de idioma a crear en un sitio nuevo, las raíces de idioma correspondientes deben existir en el modelo (fuente).
 * Una vez [se ha creado un nuevo sitio como Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (mediante **Crear**, luego **Sitio**), los dos primeros niveles de esta Live Copy son *superficiales*. Los elementos secundarios de la página no pertenecen a la relación dinámica, pero se desplegará si se encuentra una relación dinámica que coincida con el activador.
 
@@ -141,7 +141,7 @@ Por lo tanto, se recomienda usar únicamente activadores `onModify` si los benef
 
 ### Tipos de nodo/Propiedades {#node-types-properties}
 
-Además de personalizar las acciones de despliegue, MSM también le permite personalizar las propiedades de los nodos que se están desplegando. El [La configuración OSGi de MSM le permite excluir tipos de nodos](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) de copiarse del origen a la Live Copy.
+Además de personalizar las acciones de despliegue, MSM también le permite personalizar las propiedades de los nodos que se están desplegando. La configuración OSGi de [MSM le permite excluir tipos de nodo](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) de copiarse del origen a Live Copy.
 
 ## Información adicional {#further-information}
 

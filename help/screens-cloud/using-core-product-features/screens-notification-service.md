@@ -1,6 +1,6 @@
 ---
 title: Servicio de notificación de Screens en Screens as a Cloud Service
-description: En esta página se describe cómo configurar el servicio de notificaciones en Pantallas as a Cloud Service.
+description: En esta página se describe cómo configurar el servicio de notificaciones en Screens as a Cloud Service.
 index: true
 exl-id: 74215a70-45c8-4b7f-ba30-60c332de07e9
 feature: Developing Screens

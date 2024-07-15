@@ -17,7 +17,7 @@ Implementación de un conector de AEM
 
 A continuación se proporcionan referencias útiles para la creación de [Conectores AEM](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html) y deben leerse junto con directrices sobre el [envío](submit.md) y el [mantenimiento](maintain.md) de los conectores.
 
-AEM Se puede obtener una licencia de desarrollador para la licencia de desarrollador de para el mediante la variable [Programa de Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
+AEM Se puede obtener una licencia de desarrollador para la a través del [Programa de Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
 Patrones de integración comunes
 ---------------------------
@@ -66,7 +66,7 @@ Además, solo Adobe debe escribir código en `/libs`, y los clientes y socios en
 
 Es posible que también sea necesario refactorizar los conectores existentes para mover cualquier configuración que se haya colocado una vez `/etc` en otras carpetas de nivel superior, como `/conf`. Esta reestructuración se llevó a cabo como parte de AEM 6.5 y se describe en la [Documentación de AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=es).
 
-Se recomienda colocar la mayoría del código del conector en `/apps/connectors/<vendor>` para promocionar una estructura de repositorio limpia para los clientes que tienen varios conectores.
+Se recomienda colocar la mayoría del código del conector en `/apps/connectors/<vendor>` para promover una estructura de repositorio limpia en los clientes que tienen varios conectores.
 
 Configuración de servicios de nube
 -----------------------------

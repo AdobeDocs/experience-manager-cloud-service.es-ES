@@ -1,5 +1,5 @@
 ---
-title: 'Fragmentos de contenido: Eliminar consideraciones (Recursos: fragmentos de contenido)'
+title: 'Fragmentos de contenido: Eliminar consideraciones (Assets: fragmentos de contenido)'
 description: Revise estas consideraciones importantes antes de definir las políticas de eliminación de fragmentos de contenido en AEM. Los fragmentos de contenido son una potente herramienta para ofrecer contenido sin encabezado, y las implicaciones de eliminarlos deben examinarse detenidamente.
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
 feature: Content Fragments
@@ -24,14 +24,14 @@ En relación con los permisos de eliminación, los fragmentos de contenido deben
 
 1. **El fragmento de contenido como una sola entidad.**
 
-   * **Caso de uso**: un usuario que debe editar/actualizar un fragmento de contenido - **y eliminar un fragmento completo**.
+   * **Caso de uso**: Un usuario que debe editar/actualizar un fragmento de contenido - **y eliminar un fragmento completo**.
    * **Permisos**: el permiso Eliminar se puede asignar a través de Administración de usuarios o grupos. <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
 2. **Las diversas subentidades que conforman un fragmento de contenido; por ejemplo, variaciones, subnodos.**
 
    La operación básica del editor de fragmentos de contenido requiere que se puedan eliminar estos subelementos transitorios. Por ejemplo, al manipular variaciones; también al editar metadatos o administrar contenido asociado.
 
-   * **Caso de uso**: un usuario que debe editar/actualizar un fragmento de contenido - **sin permitir eliminar un fragmento completo**.
+   * **Caso de uso**: Un usuario que debe editar o actualizar un fragmento de contenido: **sin que se le permita eliminar un fragmento completo**.
    * **Permisos**: consulte [Permisos necesarios para la funcionalidad del editor únicamente](#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]

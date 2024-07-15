@@ -15,17 +15,17 @@ ht-degree: 0%
 
 # Modo de desarrollador {#developer-mode}
 
-AEM Al editar páginas en la lista de direcciones, se muestran varias: [modos](/help/sites-cloud/authoring/sites-console/introduction.md#page-modes) están disponibles, incluido el modo de desarrollador. El modo de desarrollador abre un panel lateral con varias pestañas que proporcionan al desarrollador información técnica sobre la página actual.
+AEM Al editar páginas en la lista de distribución, hay varios [modos](/help/sites-cloud/authoring/sites-console/introduction.md#page-modes) disponibles, incluido el modo de desarrollador. El modo de desarrollador abre un panel lateral con varias pestañas que proporcionan al desarrollador información técnica sobre la página actual.
 
 Hay dos pestañas:
 
 * **[Componentes](#components)** para ver información de estructura y rendimiento.
-* **[Errores](#errors)** para ver si se producen problemas.
+* **[Errores](#errors)** para ver los problemas que se producen.
 
 Esto ayuda a un desarrollador a lo siguiente:
 
-* **Discover** cómo están compuestas las páginas.
-* **Depurar:** qué está ocurriendo dónde y cuándo, lo que a su vez ayuda a resolver los problemas.
+* **Descubra** cómo están compuestas las páginas.
+* **Depuración:** qué está sucediendo dónde y cuándo, lo que a su vez ayuda a resolver problemas.
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Esto ayuda a un desarrollador a lo siguiente:
 >
 >* No está disponible en dispositivos móviles ni en ventanas pequeñas en equipos de escritorio (debido a restricciones de espacio).
 >  * Esto ocurre cuando la anchura es inferior a 1024 píxeles.
->* Solo está disponible para los usuarios que son miembros de `administrators` grupo.
+>* Solo está disponible para los usuarios que sean miembros del grupo `administrators`.
 
 ## Abriendo modo de desarrollador {#opening-developer-mode}
 
@@ -43,8 +43,8 @@ El modo de desarrollador se implementa como panel lateral en el editor de págin
 
 El panel se divide en dos pestañas:
 
-* **[Componentes](#components)** - Muestra un árbol de componentes, similar al [árbol de contenido](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#content-tree) para autores
-* **[Errores](#errors)** - Cuando se producen problemas, se muestran los detalles de cada componente.
+* **[Componentes](#components)**: muestra un árbol de componentes, similar al [árbol de contenido](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#content-tree) para autores
+* **[Errores](#errors)**: cuando se producen problemas, se muestran los detalles de cada componente.
 
 ### Pestaña Componentes {#components}
 
@@ -57,7 +57,7 @@ Muestra un árbol de componentes que:
 * Permite expandir el árbol y seleccionar componentes específicos dentro de él. La selección proporciona acceso a los detalles del componente, como:
    * Ruta del repositorio
    * Vínculos a scripts (a los que se accede en el CRXDE Lite)
-   * Detalles del componente, tal como se ve en la [Consola Componentes](/help/sites-cloud/authoring/components-console.md)
+   * Detalles del componente tal como se ve en la [consola Componentes](/help/sites-cloud/authoring/components-console.md)
 * Los componentes seleccionados en el árbol se indican mediante un borde azul en el editor.
 
 Esta pestaña de componentes le ayuda a:
@@ -68,7 +68,7 @@ Esta pestaña de componentes le ayuda a:
 
 Cada entrada de componente puede tener las siguientes opciones:
 
-![Ejemplo de componente de modo de desarrollador](assets/developer-mode-component-example.png)
+![Ejemplo de componente en modo de desarrollador](assets/developer-mode-component-example.png)
 
 * **Ver detalles:** Un vínculo a una lista que muestra:
    * Todos los scripts de componente utilizados para procesar el componente.
@@ -76,9 +76,9 @@ Cada entrada de componente puede tener las siguientes opciones:
 
      ![Ver detalles](assets/developer-mode-view-details.png)
 
-* **Editar script:** Un vínculo que abre el script del componente en CRXDE Lite.
+* **Editar script:** Un vínculo que abre el script del componente en el CRXDE Lite.
 
-* **Ver detalles del componente:** Abre los detalles del componente en la [Consola Componentes](/help/sites-cloud/authoring/components-console.md).
+* **Ver detalles del componente:** Abre los detalles del componente en la [consola Componentes](/help/sites-cloud/authoring/components-console.md).
 
 La expansión de una entrada de componente al tocar o hacer clic en las comillas angulares también puede mostrar:
 
@@ -87,11 +87,11 @@ La expansión de una entrada de componente al tocar o hacer clic en las comillas
 
 ### Pestaña Errores {#errors}
 
-![La pestaña de errores](assets/developer-mode-errors-tab.png)
+![Ficha de errores](assets/developer-mode-errors-tab.png)
 
-Espero que el **Errores** La pestaña siempre estará vacía (como se muestra arriba), pero cuando se producen problemas, pueden mostrarse los siguientes detalles para cada componente:
+Esperamos que la ficha **Errores** esté siempre vacía (como se ha indicado anteriormente), pero cuando se produzcan problemas, se mostrarán los siguientes detalles para cada componente:
 
 * Una advertencia si el componente escribe una entrada en el registro de errores, junto con detalles del error y vínculos directos al código adecuado dentro de CRXDE Lite.
 * Advertencia si el componente abre una sesión de administración.
 
-Por ejemplo, si se llama a un método indefinido, el error resultante se muestra en la variable **Errores** y la entrada de componente en el árbol del **Componentes** La pestaña también se marca con un indicador cuando se produce un error.
+Por ejemplo, si se llama a un método indefinido, el error resultante se muestra en la ficha **Errores** y la entrada del componente en el árbol de la ficha **Componentes** también se marcará con un indicador cuando se produzca un error.

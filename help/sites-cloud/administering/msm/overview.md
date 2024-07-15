@@ -33,7 +33,7 @@ Esta página proporciona información general sobre cómo reutilizar contenido c
 
 >[!NOTE]
 >
->MSM también se puede utilizar para Assets, incluidos los Fragmentos de contenido. Consulte [Reutilización de fragmentos de contenido mediante MSM para recursos](/help/assets/reuse-assets-using-msm.md) (solo disponible a través de la consola Recursos ).
+>MSM también se puede utilizar para Assets, incluidos los Fragmentos de contenido. Ver [Reutilizar fragmentos de contenido usando MSM para Assets](/help/assets/reuse-assets-using-msm.md) (solo disponible a través de la consola de Assets).
 
 ## Posibles escenarios {#possible-scenarios}
 
@@ -115,7 +115,7 @@ Se puede acceder directamente a MSM desde la IU mediante diversas opciones desde
 
 * **Crear sitio** (**Sitios**)
 
-   * MSM le ayuda a administrar varios sitios web que comparten contenido común. Por ejemplo: los sitios web suelen estar destinados a audiencias internacionales, de modo que la mayor parte del contenido es común en todos los países, con un subconjunto del contenido específico de cada país. MSM le permite [crear Live Copies que actualicen automáticamente uno o varios sitios en función del sitio de origen](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Esto también le ayuda a aplicar una estructura base común, utilizar el contenido general en varios sitios, mantener un aspecto y un enfoque comunes y enfocar los esfuerzos en administrar el contenido que difiere entre los sitios. Crear un sitio de esta manera:
+   * MSM le ayuda a administrar varios sitios web que comparten contenido común. Por ejemplo: los sitios web suelen estar destinados a audiencias internacionales, de modo que la mayor parte del contenido es común en todos los países, con un subconjunto del contenido específico de cada país. MSM le permite [crear Live Copies que actualicen automáticamente uno o más sitios basados en su sitio de origen](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Esto también le ayuda a aplicar una estructura base común, utilizar el contenido general en varios sitios, mantener un aspecto y un enfoque comunes y enfocar los esfuerzos en administrar el contenido que difiere entre los sitios. Crear un sitio de esta manera:
       * Requiere una configuración de modelo predefinida para especificar el origen.
       * Crea una Live Copy del origen (predefinido).
       * Proporciona al usuario el botón **Despliegue**.
@@ -137,15 +137,15 @@ Se puede acceder directamente a MSM desde la IU mediante diversas opciones desde
 
 * **Información general de Live Copy** (**Sites**)
 
-   * Esta consola le permite [vea y administre su modelo y sus Live Copies.](live-copy-overview.md)
+   * Esta consola le permite [ver y administrar su modelo y sus Live Copies.](live-copy-overview.md)
 
 * **Modelos** (**Herramientas** - **Sites**)
 
-   * Esta consola le permite [cree y administre sus configuraciones de modelo.](creating-live-copies.md#creating-a-blueprint-configuration)
+   * Esta consola le permite [crear y administrar las configuraciones de modelo.](creating-live-copies.md#creating-a-blueprint-configuration)
 
 >[!NOTE]
 >
->MSM se puede utilizar con ambas páginas y [Fragmentos de experiencias](/help/sites-cloud/authoring/fragments/experience-fragments.md) ya que estos fragmentos forman parte de una experiencia (página).
+>MSM se puede usar con ambas páginas y [Fragmentos de experiencias](/help/sites-cloud/authoring/fragments/experience-fragments.md), ya que estos fragmentos son parte de una experiencia (página).
 
 >[!NOTE]
 >
@@ -177,7 +177,7 @@ Como introducción, la siguiente tabla proporciona una descripción general de l
 
 >[!TIP]
 >
->Consulte [Ampliación del Administrador de varios sitios](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) para los nombres de objeto.
+>Consulte [Ampliación del Administrador de varios sitios](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) para ver los nombres de los objetos.
 
 ## Live Copies {#live-copies}
 
@@ -194,7 +194,7 @@ En el ejemplo anterior, `/content/wknd/language-masters/en` es la ubicación mae
 
 * El contenido siguiente `/content/wknd/language-masters/en` es el origen.
 * El contenido siguiente `/content/wknd/language-masters/en` se copia debajo de `/content/wknd/us/en/` y `/content/wknd/ca/en` nodos. Estas son Live Copies.
-* Los autores cambian las páginas a continuación `/content/wknd/language-masters/en`.
+* Los autores cambian de página por debajo de `/content/wknd/language-masters/en`.
 * Cuando se activa, MSM sincroniza estos cambios con Live Copies.
 
 ### Live Copies: composición {#live-copies-composition}
@@ -325,10 +325,10 @@ Los siguientes pasos describen el procedimiento estándar de uso de MSM para reu
 1. Determine la configuración de despliegue que desea utilizar.
 
    1. MSM [instala varias configuraciones de despliegue](live-copy-sync-config.md#installed-rollout-configurations) que pueden satisfacer varios casos de uso.
-   1. Opcionalmente, puede [creación de una configuración de despliegue](live-copy-sync-config.md#creating-a-rollout-configuration) si es necesario.
+   1. Opcionalmente, puede [crear una configuración de despliegue](live-copy-sync-config.md#creating-a-rollout-configuration) si es necesario.
 
 1. Determine dónde debe [especificar las configuraciones de despliegue que se van a utilizar](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) y configúrelas según sea necesario.
-1. Si es necesario, [crear una configuración de modelo](creating-live-copies.md#creating-a-blueprint-configuration) que identifica el contenido de origen de Live Copy.
+1. Si es necesario, [cree una configuración de modelo](creating-live-copies.md#creating-a-blueprint-configuration) que identifique el contenido de origen de Live Copy.
 1. [Cree una Live Copy.](creating-live-copies.md#creating-a-live-copy)
 1. Realice los cambios necesarios en el contenido de origen. Debe utilizar el proceso normal de revisión y aprobación de contenido que ha establecido su organización.
 1. [Despliegue](creating-live-copies.md#rolling-out-a-blueprint) el modelo o [sincronice la Live Copy](creating-live-copies.md#synchronizing-a-live-copy) con los cambios.

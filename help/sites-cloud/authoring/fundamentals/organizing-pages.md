@@ -26,7 +26,7 @@ En este documento se describe cómo crear y administrar páginas con Adobe Exper
 
 >[!TIP]
 >
->Hay varios [métodos abreviados del teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) que puede utilizar desde la consola sitios web para organizar las páginas de forma más eficaz.
+>Hay varios [métodos abreviados de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) que puede usar desde la consola de sitios web para organizar las páginas de forma más eficaz.
 
 {{edge-delivery-authoring}}
 
@@ -95,7 +95,7 @@ El **título** y el **nombre** de la página se pueden crear por separado, pero 
 >
 >Además, recuerde que algunos exploradores (por ejemplo, las versiones anteriores de IE) solo aceptan URL con una longitud determinada, por lo que también existen motivos técnicos para mantener los nombres de las páginas cortos. 
 
-AEM Al crear una página, se debe hacer lo siguiente [valida el nombre de página según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) AEM impuesta por el y el JCR.
+AEM AEM Al crear una página, [valida el nombre de la página según las convenciones ](/help/implementing/developing/introduction/naming-conventions.md) impuestas por el JCR y la aplicación de validación de datos (JCR) de la página de inicio de sesión (JCR) y de la página de inicio de sesión (JCR) de la página de inicio de sesión 1.
 
 El mínimo permitido de caracteres es:
 
@@ -113,7 +113,7 @@ Para obtener toda la información sobre los caracteres permitidos, consulte las 
 
 #### Título {#title}
 
-Si proporciona solo una página **Título** AEM al crear una página, se deriva la página de forma de **Nombre** de esta cadena y [valide el nombre según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) AEM impuesta por el y el JCR.
+AEM AEM Si proporciona solamente una página **Title** al crear una página, deriva la página **Name** de esta cadena y [valida el nombre según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) impuestas por los criterios de y JCR. En el caso de que la página se haya creado, la página se convierte en una página con el nombre Name de esta cadena y se define como {JCR}.
 
 Se acepta un campo de **Título** con caracteres no válidos, pero los caracteres no válidos se sustituirán en el nombre derivado. Por ejemplo:
 
@@ -124,7 +124,7 @@ Se acepta un campo de **Título** con caracteres no válidos, pero los caractere
 
 #### Nombre {#name}
 
-Cuando se proporciona una página **Nombre** AEM al crear una página, se debe hacer lo siguiente [valida el nombre según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) AEM impuesta por el y el JCR. No se pueden enviar caracteres no válidos desde el campo **Nombre**. Cuando detecta caracteres no válidos, el campo se resalta con un mensaje explicativo.
+AEM AEM Cuando se proporciona una página **Name** al crear una página, [valida el nombre según las convenciones ](/help/implementing/developing/introduction/naming-conventions.md) impuestas por las normas de privacidad y JCR, y el nombre de la página se valida a través de las convenciones  impuestas por las normas de privacidad de la página y el JCR. No se pueden enviar caracteres no válidos desde el campo **Nombre**. Cuando detecta caracteres no válidos, el campo se resalta con un mensaje explicativo.
 
 ![Ejemplo de introducción de un nombre de página no válido](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -182,7 +182,7 @@ A menos que se hayan creado todas las páginas por adelantado, debe crear una p�
 
 1. En el primer paso del asistente puede realizar una de las acciones siguientes:
 
-   * Seleccione la plantilla que desee utilizar para crear la nueva página y, a continuación, seleccione **Siguiente** para continuar.
+   * Seleccione la plantilla que desea usar para crear la nueva página y, a continuación, seleccione **Siguiente** para continuar.
 
    * **Haga clic en Cancelar** para anular el proceso.
 
@@ -190,7 +190,7 @@ A menos que se hayan creado todas las páginas por adelantado, debe crear una p�
 
 1. En el último paso del asistente puede realizar una de las acciones siguientes:
 
-   * Utilice las tres pestañas para introducir la variable [propiedades de página](/help/sites-cloud/authoring/fundamentals/page-properties.md) Si desea asignar a la nueva página, seleccione **Crear** para crear la página.
+   * Use las tres fichas para escribir las [propiedades de página](/help/sites-cloud/authoring/fundamentals/page-properties.md) que desee asignar a la nueva página y, a continuación, seleccione **Crear** para crear realmente la página.
 
    * Utilice **Atrás** para volver a la selección de plantilla.
 
@@ -203,14 +203,14 @@ A menos que se hayan creado todas las páginas por adelantado, debe crear una p�
    * **Nombre**:
 
       * Se usa para generar la URI. Si no se especifica, el nombre se obtiene a partir del título.
-      * Si proporciona una página **Nombre** AEM al crear una página, se debe hacer lo siguiente [valida el nombre según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) AEM impuesta por el y el JCR.
+      * AEM AEM Si proporciona una página **Name** al crear una página, [valida el nombre según las convenciones ](/help/implementing/developing/introduction/naming-conventions.md) impuestas por el JCR y el.
       * **No se pueden enviar caracteres no válidos** desde el campo **Nombre**. Cuando AEM detecta caracteres no válidos, se resalta el campo y se muestra un mensaje explicativo para indicar los caracteres que deben eliminarse o reemplazarse.
 
    >[!TIP]
    >
    >Consulte [Convenciones de asignación de nombres a páginas](#page-naming-conventions).
 
-   La información mínima necesaria para crear una página es la siguiente **Título**.
+   La información mínima requerida para crear una página es **Title**.
 
    ![Proporcionar título de página](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 
@@ -266,7 +266,7 @@ Puede copiar una página y todas sus páginas secundarias en una nueva ubicació
    ![Copiar](/help/sites-cloud/authoring/assets/copy.png)
 
 1. Desplácese hasta la ubicación de la copia nueva de la página.
-1. Seleccione el **Pegar** icono que se ha puesto a disposición.
+1. Seleccione el icono **Pegar** que se ha puesto a disposición.
 
    ![Pegar](/help/sites-cloud/authoring/assets/paste.png)
 
@@ -276,7 +276,7 @@ Puede copiar una página y todas sus páginas secundarias en una nueva ubicació
 
    ![Cuadro de diálogo de pegado](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-1. Seleccione el **Pegar** para confirmar la operación de pegado y crear las páginas nuevas.
+1. Seleccione el botón **Pegar** para confirmar la operación de pegado y crear las páginas nuevas.
 
 >[!NOTE]
 >
@@ -310,7 +310,7 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 
 1. En el paso **Cambiar nombre** del asistente puede realizar una de las acciones siguientes:
 
-   * Especifique el nombre que desea que tenga la página después de moverla y seleccione **Siguiente** para continuar.
+   * Especifique el nombre que desea que tenga la página cuando se haya movido y, a continuación, seleccione **Siguiente** para continuar.
    * **Haga clic en Cancelar** para anular el proceso.
 
    ![Mover y cambiar el nombre de la página](/help/sites-cloud/authoring/assets/move-page-rename.png)
@@ -380,7 +380,7 @@ Las acciones de movimiento de página siempre se procesan asincrónicamente, lo 
   ![Asynchronous page move](assets/asynchronous-page-move.png)
 -->
 
-El estado de los trabajos asincrónicos se puede comprobar en la [**Estado de trabajos asincrónicos** tablero](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) en **Navegación global** > **Herramientas** > **Operaciones** > **Trabajos**
+El estado de los trabajos asincrónicos se puede comprobar en [**Estado de los trabajos asincrónicos** panel](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) en **Navegación global** > **Herramientas** > **Operaciones** > **Trabajos**
 
 >[!NOTE]
 >
@@ -408,7 +408,7 @@ El estado de los trabajos asincrónicos se puede comprobar en la [**Estado de tr
    * **Eliminar** para confirmar la acción:
 
       * Si la página no tiene referencias, se elimina la página.
-      * Si la página tiene referencias, un cuadro de mensaje le informará de que **Se hace referencia a una o varias páginas.** Puede seleccionar **Forzar eliminación** o **Cancelar**.
+      * Si la página tiene referencias, un cuadro de mensaje le informará de que se hace referencia a **Una o varias páginas.** Puede seleccionar **Forzar eliminación** o **Cancelar**.
 
 >[!NOTE]
 >

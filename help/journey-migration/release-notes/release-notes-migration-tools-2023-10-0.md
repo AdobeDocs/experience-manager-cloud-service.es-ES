@@ -1,6 +1,6 @@
 ---
-title: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2023.10.0 de
-description: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2022.10.0 de
+title: Notas de la versión de las herramientas de migración en la versión 2023.10.0 de AEM as a Cloud Service
+description: Notas de la versión de las herramientas de migración de la versión 2022.10.0 de AEM as a Cloud Service
 feature: Release Information
 exl-id: e5250b5b-a56c-4bf0-8510-2334a12e36b6
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 4%
 
 ---
 
-# AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2023.10.0 de {#release-notes}
+# Notas de la versión de las herramientas de migración en la versión 2023.10.0 de AEM as a Cloud Service {#release-notes}
 
-AEM Esta página describe las notas de la versión de las herramientas de migración de as a Cloud Service 2023.10.0.
+Esta página describe las notas de la versión de las herramientas de migración de AEM as a Cloud Service 2023.10.0.
 
 ## Herramienta de transferencia de contenido {#ctt-release}
 
@@ -23,5 +23,5 @@ La fecha de versión de la herramienta de transferencia de contenido v3.0.4 es e
 
 ### Novedades {#what-is-new-ctt}
 
-* AEM Se han realizado cambios en el proceso de ingesta de contenido: ya no es necesario enviar un ticket de servicio de atención al cliente/asistencia para deshabilitar las actualizaciones de la versión de la en el entorno de destino. Este proceso está ahora automatizado. Para obtener más información, consulte [AEM Actualizaciones e ingestas de versiones de](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#aem-version-updates-and-ingestions)
-* La concurrencia dinámica se utilizará durante el [copia previa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) paso en las fases de extracción y de ingesta, lo que reduce significativamente el tiempo de migración de contenido.
+* AEM Se han realizado cambios en el proceso de ingesta de contenido: ya no es necesario enviar un ticket de servicio de atención al cliente/asistencia para deshabilitar las actualizaciones de la versión de la en el entorno de destino. Este proceso está ahora automatizado. AEM Para obtener más información, consulte [Actualizaciones e ingestas de versiones](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#aem-version-updates-and-ingestions)
+* La concurrencia dinámica se utilizará durante el paso [previo a la copia](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) tanto en las fases de extracción como de ingesta, lo que reducirá significativamente el tiempo de migración del contenido.

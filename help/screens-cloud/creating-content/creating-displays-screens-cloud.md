@@ -1,6 +1,6 @@
 ---
-title: Creación y administración de pantallas en pantallas as a Cloud Service
-description: En esta página se describe cómo crear y administrar pantallas en Pantallas as a Cloud Service.
+title: Creación y administración de pantallas en Screens as a Cloud Service
+description: En esta página se describe cómo crear y administrar pantallas en Screens as a Cloud Service.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
 feature: Authoring Screens
 role: Admin, Developer, User
@@ -11,9 +11,9 @@ ht-degree: 3%
 
 ---
 
-# Creación y administración de pantallas en pantallas as a Cloud Service {#create-displays-screens-cloud}
+# Creación y administración de pantallas en Screens as a Cloud Service {#create-displays-screens-cloud}
 
-Una vez publicado el canal, es el momento de crear la visualización en el proveedor de servicios de Screens.
+Una vez publicado el canal, es hora de crear la visualización en el proveedor de servicios de Screens.
 
 Una pantalla es una agrupación virtual de pantallas que normalmente se colocan una al lado de la otra. La pantalla suele ser permanente con respecto a una instalación. Este contenido de objeto es con lo que los autores trabajan y siempre se refieren como visualización lógica en lugar de sus partes de contador físicas.
 
@@ -29,19 +29,19 @@ Este documento le ayuda a comprender cómo crear y administrar pantallas en el p
 Siga los pasos a continuación para crear la visualización desde el proveedor de servicios de Screens:
 
 1. Vaya al proveedor de servicios de Screens desde la instancia de AEM Cloud Service.
-1. Seleccionar **Visualizaciones** en el panel de navegación izquierdo y haga clic en **Crear** desde la esquina superior derecha de la pantalla.
+1. Seleccione **Pantallas** en el panel de navegación izquierdo y haga clic en **Crear** en la esquina superior derecha de la pantalla.
 
    ![imagen](/help/screens-cloud/assets/display/disp-1.png)
 
-1. Seleccionar **Mostrar** de la barra de acciones.
+1. Seleccione **Mostrar** en la barra de acciones.
 
    ![imagen](/help/screens-cloud/assets/display/disp-2.png)
 
-1. Escriba el título como **BucleCanalMostrar** in **Nombre para mostrar** y haga clic en **Crear**.
+1. Escriba el título como **LoopingChannelDisplay** en **Display Name** y haga clic en **Crear**.
 
    ![imagen](/help/screens-cloud/assets/display/disp3.png)
 
-1. La pantalla titulada **BucleCanalMostrar** ahora estará visible en la lista de visualización.
+1. La pantalla con el título **LoopingChannelDisplay** ahora estará visible en la lista de visualización.
 
    ![imagen](/help/screens-cloud/assets/display/disp-4.png)
 
@@ -67,7 +67,7 @@ Puede cambiar el carril de la carpeta para que no muestre todas las carpetas a c
 
    ![imagen](/help/screens-cloud/assets/display/toggle-rail.png)
 
-1. Seleccionar **Ocultar carpetas** para cerrarlo de nuevo.
+1. Seleccione **Ocultar carpetas** para cerrarlo de nuevo.
 
 ## Cómo crear una carpeta {#create-folder}
 
@@ -78,9 +78,9 @@ Puede crear carpetas para organizar mejor las pantallas.
 
    ![imagen](/help/screens-cloud/assets/display/verify-view.png)
 
-   Nota: **Todas las pantallas** debe estar seleccionado en el carril lateral de la carpeta y la navegación por la ruta de exploración solo debe mostrar **Visualizaciones**.
+   Nota: **Todas las pantallas** deben estar seleccionadas en el carril lateral de la carpeta y la navegación por la ruta de exploración solo debe mostrar **Pantallas**.
 
-1. Haga clic en el botón &quot;Crear&quot; en la parte superior derecha y seleccione la **Carpeta** opción.
+1. Haga clic en el botón &quot;Crear&quot; en la parte superior derecha y seleccione la opción **Carpeta**.
 
    ![imagen](/help/screens-cloud/assets/display/Createfolder.png)
 
@@ -98,9 +98,9 @@ Puede crear carpetas para organizar mejor las pantallas.
    ![imagen](/help/screens-cloud/assets/display/Nestedview.png)
 
    * La carpeta debe estar seleccionada en el carril lateral de la carpeta.
-   * La exploración de la ruta de exploración debe mostrar el nombre de la carpeta actual junto a **Visualizaciones**.
+   * La navegación de ruta de exploración debería mostrar el nombre de la carpeta actual junto a **Pantallas**.
 
-1. Clic  **Crear**  en la parte superior derecha y seleccione **Carpeta** opción.
+1. Haga clic en **Crear** en la parte superior derecha y seleccione la opción **Carpeta**.
 
    ![imagen](/help/screens-cloud/assets/display/Createfolder.png)
 
@@ -120,7 +120,7 @@ Puede mover contenido a sus nuevas carpetas para organizar mejor las pantallas.
 
 ![imagen](/help/screens-cloud/assets/display/movetofolder.png)
 
-**Nota**: la carpeta debe seleccionarse en el carril lateral de la carpeta. Además, la navegación por la ruta de exploración debe mostrar el nombre de la carpeta actual junto a **Visualizaciones**.
+**Nota**: la carpeta debe estar seleccionada en el carril lateral de la carpeta. Además, la exploración de la ruta de exploración debe mostrar el nombre de la carpeta actual junto a **Pantallas**.
 
 ## Eliminación de contenido de una carpeta {#delete-folder}
 
@@ -130,9 +130,9 @@ Se puede acceder a todas las operaciones de carpeta a través de la barra de acc
 
 1. En la vista de inventario, seleccione la carpeta secundaria que desee eliminar y asegúrese de que esté vacía.
 
-1. Clic **Eliminar** acción en la barra de acciones de selección. La acción se desactiva si la carpeta no está vacía.
+1. Haga clic en la acción **Eliminar** en la barra de acciones de selección. La acción se desactiva si la carpeta no está vacía.
 
 
 ## Siguientes pasos {#whats-next}
 
-Ahora que ha aprendido a crear y administrar pantallas para su proyecto, debe continuar con el recorrido as a Cloud Service de Screens revisando el documento a continuación [Asignación de canales a una pantalla en Pantallas as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html).
+Ahora que ha aprendido a crear y administrar pantallas para su proyecto, debe continuar con su as a Cloud Service recorrido de Screens revisando el documento [Asignación de canales a una pantalla en Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html).

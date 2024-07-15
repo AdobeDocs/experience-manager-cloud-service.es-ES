@@ -21,27 +21,27 @@ ht-degree: 1%
 
 >[!INFO]
 >
->También puede ver [este clip](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) AEM para obtener una introducción rápida en vídeo sobre cómo utilizar el Explorador de repositorios para depurar los recursos as a Cloud Service de la.
+>También puede ver [este clip](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) para ver un vídeo introductorio rápido sobre cómo usar el Explorador de repositorios para depurar AEM as a Cloud Service.
 
 ## Introducción {#introduction}
 
 El explorador del repositorio es una herramienta para desarrolladores que proporciona una vista de solo lectura del repositorio para todos los entornos en los niveles de creación, publicación y vista previa. Está diseñado para facilitar la visualización de la estructura de contenido y facilitar la visualización o depuración del contenido.
 
-Accesible desde el [AEM Consola de desarrollador as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console), se puede utilizar para examinar el repositorio de una instancia de autor o publicación para un entorno seleccionado.
+Se puede acceder a ella desde [AEM as a Cloud Service Developer Console](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) y se puede usar para examinar el repositorio de una instancia de autor o publicación para un entorno seleccionado.
 
 ### Requisitos previos de acceso {#access-prerequisites}
 
-AEM Se deben cumplir las siguientes condiciones para acceder a la Consola de desarrollador as a Cloud Service o al Explorador de repositorios de la aplicación
+Se deben cumplir las siguientes condiciones para acceder a AEM as a Cloud Service Developer Console o al Explorador de repositorios
 
-AEM Para acceder a la consola de desarrollador as a Cloud Service de la, consulte [Acceso a Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
+Para obtener acceso a AEM as a Cloud Service Developer Console, consulte [Acceso a Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
 
-AEM Para acceder al Explorador de repositorios, los requisitos son los mismos que para la Consola de desarrollador as a Cloud Service de la (especificada arriba). Para ver el contenido del Explorador de repositorios de una instancia concreta:
+Para acceder al Explorador de repositorios, los requisitos son los mismos que para AEM as a Cloud Service Developer Console (especificado anteriormente). Para ver el contenido del Explorador de repositorios de una instancia concreta:
 
-* AEM Instancias de autor: usuarios con el perfil de producto de usuarios de para **Instancia de autor** Puede ver el explorador del repositorio con un acceso de lectura mínimo; los permisos del usuario se respetan al examinar el repositorio. AEM Los usuarios con el Perfil de producto de los administradores de la pueden ver el explorador del repositorio con acceso de lectura completo.
+* AEM Instancias de autor: Los usuarios con el Perfil de producto de usuarios de para la **instancia de autor** pueden ver el explorador del repositorio con un acceso de lectura mínimo; los permisos del usuario se respetan al examinar el repositorio. AEM Los usuarios con el Perfil de producto de los administradores de la pueden ver el explorador del repositorio con acceso de lectura completo.
 
-* AEM Instancias de publicación: usuarios con el Perfil de producto de usuarios de la aplicación para usuarios de la página de inicio de sesión de la página de **Instancia de publicación** Puede ver el explorador del repositorio con un acceso de lectura mínimo. Sin ese conjunto de perfiles de producto, los usuarios navegarán como usuarios anónimos y algunas rutas no aparecerán debido a permisos limitados.
+* Instancias de Publish AEM: los usuarios con el perfil de producto Usuarios de la para la **instancia de Publish** pueden ver el explorador del repositorio con un acceso de lectura mínimo. Sin ese conjunto de perfiles de producto, los usuarios navegarán como usuarios anónimos y algunas rutas no aparecerán debido a permisos limitados.
 
-Para obtener más información sobre la configuración de permisos de usuario, consulte la [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
+Para obtener más información sobre cómo configurar permisos de usuario, consulte la [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
 
 ### Inicio del Explorador de repositorios {#launching-the-repository-browser}
 
@@ -51,12 +51,12 @@ El explorador del repositorio se puede iniciar siguiendo los pasos a continuaci�
 
    ![repobrowser1](/help/implementing/developing/tools/assets/repobrowser1.png)
 
-1. Haga clic en el botón **Explorador del repositorio** pestaña
-1. Seleccione cualquier pod correspondiente a autor, publicación o vista previa haciendo clic en el **Pod** lista desplegable.
+1. A continuación, haga clic en la ficha **Explorador de repositorios**
+1. Elija cualquier pod que corresponda a autor, publicación o vista previa haciendo clic en la lista desplegable **Pod**.
 
    ![repobrowser2](/help/implementing/developing/tools/assets/repobrowser2.png)
 
-1. Inicie el explorador del repositorio haciendo clic en **Abrir el Explorador del repositorio** vínculo más abajo. Se inicia el explorador correspondiente a una instancia representativa (pod) del nivel elegido. No puede controlar el pod específico para ese nivel que se inicia.
+1. Inicie el explorador del repositorio haciendo clic en el vínculo **Abrir explorador del repositorio** que hay más abajo. Se inicia el explorador correspondiente a una instancia representativa (pod) del nivel elegido. No puede controlar el pod específico para ese nivel que se inicia.
 
 ## Características {#features}
 
@@ -66,7 +66,7 @@ Puede utilizar el panel de navegación de la izquierda para navegar por la jerar
 
 ![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
 
-También puede navegar directamente a una ruta introduciéndola en el **Ruta** , como se muestra a continuación. Esta ruta también expande su ubicación en la vista de jerarquía de contenido de la izquierda.
+También puede navegar directamente a una ruta de acceso si la escribe en el campo **Ruta**, como se muestra a continuación. Esta ruta también expande su ubicación en la vista de jerarquía de contenido de la izquierda.
 
 ![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
 
@@ -74,11 +74,11 @@ Al hacer clic en una carpeta de la izquierda, el campo Ruta se rellena automáti
 
 Además, al hacer clic en una carpeta, la dirección URL se modifica dinámicamente para incluir la ruta a esa carpeta. Esta funcionalidad permite direcciones URL marcables.
 
-Para la publicación, de forma predeterminada, el Explorador de repositorios solo muestra contenido público, por lo que algunas carpetas como `/conf` o `/home` no son visibles.
+Para la publicación, de forma predeterminada, el Explorador de repositorios solo muestra contenido público, por lo que ciertas carpetas como `/conf` o `/home` no están visibles.
 
 Para que esas ubicaciones sean visibles, haga lo siguiente.
 
-1. Haga clic en los tres puntos junto al entorno que desee y seleccione **Administrar acceso**
+1. Haga clic en los tres puntos junto al entorno que elija y seleccione **Administrar acceso**
 
    ![repobrowser7](/help/implementing/developing/tools/assets/repobrowser7.png)
 
@@ -86,7 +86,7 @@ Para que esas ubicaciones sean visibles, haga lo siguiente.
 
    ![repobrowser8](/help/implementing/developing/tools/assets/repobrowser8.png)
 
-1. Cree un perfil de producto para administradores de publicación. En el ejemplo siguiente, se llama **AEM DEV - Publicación de administradores de**
+1. Cree un perfil de producto para administradores de publicación. AEM En el ejemplo siguiente, se llama **DEV - Publish para administradores de**
 
    ![repobrowser9](/help/implementing/developing/tools/assets/repobrowser9.png)
 
@@ -94,24 +94,24 @@ Para que esas ubicaciones sean visibles, haga lo siguiente.
 
    ![repobrowser10](/help/implementing/developing/tools/assets/repobrowser10.png)
 
-1. Espere unos minutos y, a continuación, abra **AEM autor de la** consolar
-1. Añada el grupo correspondiente al nuevo perfil de producto como miembro del grupo del administrador haciendo clic en **Herramientas - Seguridad - Grupos de autor**, luego haciendo clic en **administradores** grupo. A continuación, añada el grupo como se muestra a continuación
+1. AEM Espere unos minutos y, a continuación, abra la consola **author**
+1. Agregue el grupo correspondiente al nuevo perfil de producto como miembro del grupo del administrador haciendo clic en **Herramientas - Seguridad - Grupos en autor** y, a continuación, haciendo clic en el grupo **administradores**. A continuación, añada el grupo como se muestra a continuación
 
    ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
 
-1. Activar el **administradores** y el nuevo **AEM DEV - Publicación de administradores de** para que estén disponibles durante la publicación
+1. AEM Active los **administradores** y el nuevo grupo **DEV - Administradores Publish** de modo que estén disponibles para la publicación
 
    ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
 
-1. Como práctica de seguridad recomendada, elimine el nuevo **AEM DEV - Publicación de administradores de** grupo del grupo del administrador en **autor** por lo tanto, el nuevo grupo está aislado para publicarse
+1. AEM Como práctica de seguridad recomendada, quite el nuevo grupo **DEV - Administradores de la Publish** del grupo del administrador en **author** para que el nuevo grupo quede aislado para la publicación
 
    ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
 
-1. Al acceder al explorador de repositorios para una instancia de publicación, todas las carpetas son visibles, incluidas las siguientes `/home` y `/conf`.
+1. Al acceder al explorador del repositorio para una instancia de publicación, todas las carpetas son visibles, incluidas `/home` y `/conf`.
 
 ### Ver propiedades JCR {#view-jcr-properties}
 
-Al hacer clic en un nodo, se muestran sus propiedades JCR en el panel derecho del explorador de navegación. A continuación se muestra un ejemplo para la `experience-fragments` nodo.
+Al hacer clic en un nodo, se muestran sus propiedades JCR en el panel derecho del explorador de navegación. A continuación se muestra un ejemplo para el nodo `experience-fragments`.
 
 ![repobrowser4](/help/implementing/developing/tools/assets/repobrowser41.png)
 
@@ -143,6 +143,6 @@ Y para los siguientes tipos MIME basados en texto:
 
 ### Descargar contenido {#download-content}
 
-También puede utilizar el explorador del repositorio para descargar contenido. En el ejemplo siguiente, puede pulsar el botón **descargar** para descargar el `jcr:data` asociado con el nodo seleccionado. Esta función está disponible para todas las propiedades binarias navegando hasta el nodo que contiene la definición de la propiedad.
+También puede utilizar el explorador del repositorio para descargar contenido. En el ejemplo siguiente, puede pulsar el vínculo **descargar** para descargar `jcr:data` asociado al nodo seleccionado. Esta función está disponible para todas las propiedades binarias navegando hasta el nodo que contiene la definición de la propiedad.
 
 ![repobrowser5](/help/implementing/developing/tools/assets/repobrowser52.png)

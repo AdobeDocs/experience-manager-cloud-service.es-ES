@@ -1,6 +1,6 @@
 ---
-title: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2023.07.0 de
-description: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2023.07.0 de
+title: Notas de la versión de las herramientas de migración de la versión 2023.07.0 de AEM as a Cloud Service
+description: Notas de la versión de las herramientas de migración de la versión 2023.07.0 de AEM as a Cloud Service
 feature: Release Information
 exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 6%
 
 ---
 
-# AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2023.07.0 de {#release-notes}
+# Notas de la versión de las herramientas de migración de la versión 2023.07.0 de AEM as a Cloud Service {#release-notes}
 
-AEM Esta página describe las notas de la versión de las herramientas de migración en la versión as a Cloud Service 2023.07.0 de.
+Esta página describe las notas de la versión de las herramientas de migración de AEM as a Cloud Service 2023.07.0.
 
 ## Analizador de prácticas recomendadas {#bpa-release}
 
@@ -33,4 +33,4 @@ La fecha de lanzamiento del Analizador de prácticas recomendadas v2.1.42 es el 
 ### Correcciones de errores {#bug-fixes-bpa}
 
 * Se mejoró el BPA para evitar errores de generación de informes sin memoria para informes con un número elevado de resultados.
-* AEM Se mejoró el BPA para detectar caracteres de escape en las rutas a fin de evitar errores de ingesta de contenido al migrar contenido a las rutas de acceso as a Cloud Service.
+* Se mejoró BPA para detectar caracteres de escape en las rutas a fin de evitar errores de ingesta de contenido al migrar contenido a AEM as a Cloud Service.

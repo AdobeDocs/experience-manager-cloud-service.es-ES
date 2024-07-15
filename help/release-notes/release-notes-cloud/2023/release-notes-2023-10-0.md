@@ -43,7 +43,7 @@ Eche un vistazo al vídeo Información general sobre la versión de octubre de 2
 
 ### Nuevas funciones {#assets-features}
 
-**Complemento de AEM Assets para Adobe Express**: Experience Manager Assets ahora proporciona un complemento para el Adobe Express. El complemento le permite acceder directamente a los recursos almacenados en Experience Manager Assets desde la interfaz de usuario de Adobe Express. Puede colocar contenido administrado en AEM Assets en el lienzo Express y, a continuación, guardar contenido nuevo o editado en un repositorio de AEM Assets. El complemento ofrece las siguientes ventajas clave:
+**Complemento de AEM Assets para el Adobe Express**: Experience Manager Assets ahora proporciona un complemento para el Adobe Express. El complemento le permite acceder directamente a los recursos almacenados en Experience Manager Assets desde la interfaz de usuario de Adobe Express. Puede colocar contenido administrado en AEM Assets en el lienzo Express y, a continuación, guardar contenido nuevo o editado en un repositorio de AEM Assets. El complemento ofrece las siguientes ventajas clave:
 
 * Mayor reutilización del contenido editando y guardando nuevos recursos en AEM
 

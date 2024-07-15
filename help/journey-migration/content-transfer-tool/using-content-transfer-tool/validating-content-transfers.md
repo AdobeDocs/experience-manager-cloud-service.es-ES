@@ -19,14 +19,14 @@ Los usuarios pueden determinar de forma fiable si todo el contenido extraído po
 
 >[!INFO]
 >
->Esta función estará disponible a partir de la versión de la herramienta de transferencia de contenido (CTT) 1.8.x. El entorno de destino de AEM Cloud Service debe ejecutar al menos la versión 6158 o superior. También requiere que se configure el entorno de origen para ejecutarse [copia previa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). La función de validación busca el archivo azcopy.config en el origen. Si no encuentra este archivo, no se ejecutará la validación. Para obtener más información sobre cómo configurar un archivo azcopy.config, consulte [esta página](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
+>Esta función estará disponible a partir de la versión de la herramienta de transferencia de contenido (CTT) 1.8.x. El entorno de destino de AEM Cloud Service debe ejecutar al menos la versión 6158 o superior. También requiere que se configure el entorno de origen para ejecutar [la copia previa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). La función de validación busca el archivo azcopy.config en el origen. Si no encuentra este archivo, no se ejecutará la validación. Para obtener más información sobre cómo configurar un archivo azcopy.config, consulte [esta página](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
 La validación de una transferencia de contenido es una función opcional. Al habilitar esta función, se aumentará el tiempo necesario para realizar una extracción y una ingesta. AEM Para utilizar la función, habilítela en la consola del sistema del entorno de origen de la siguiendo estos pasos:
 
 1. Vaya a la consola web de Adobe Experience Manager en la instancia de origen, en **Herramientas - Operaciones - Consola web** o directamente a la dirección URL en *https://serveraddress:serverport/system/console/configMgr*
-1. Buscar por **Configuración del servicio de extracción de herramienta de transferencia de contenido**
+1. Buscar **Configuración del servicio de extracción de herramienta de transferencia de contenido**
 1. Utilice el botón del icono de lápiz para editar sus valores de configuración
-1. Habilite la **Habilitar validación de migración durante la extracción** configuración, luego pulse **Guardar**:
+1. Habilite la opción **Habilitar validación de migración durante la extracción** y, a continuación, presione **Guardar**:
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets/CTTvalidation1.png)
 
@@ -38,7 +38,7 @@ Para obtener más información sobre cómo instalar la herramienta de transferen
 
 AEM Con la validación de migración habilitada en el entorno de origen de la, inicie una extracción.
 
-If **Sobrescribir contenedor de almacenamiento provisional durante la extracción** está activada, todos los nodos implicados en la extracción se registran en el resumen de la ruta de extracción. Cuando se utiliza esta configuración, es importante habilitar la variable **Borrar contenido existente en la instancia de Cloud antes de la ingesta** configuración durante la ingesta; de lo contrario, puede parecer que faltan nodos en el compendio de ingesta. Estos son los nodos que ya están presentes en el destino desde ingestas anteriores.
+Si **Sobrescribir contenedor de almacenamiento provisional durante la extracción** está habilitado, todos los nodos involucrados con la extracción se registrarán en el resumen de la ruta de extracción. Cuando se usa esta configuración, es importante habilitar la opción **Borrar el contenido existente en la instancia de Cloud antes de la ingesta** durante la ingesta; de lo contrario, puede que parezca que faltan nodos en el resumen de la ingesta. Estos son los nodos que ya están presentes en el destino desde ingestas anteriores.
 
 Para ver una ilustración gráfica de esto, consulte los siguientes ejemplos:
 
@@ -74,7 +74,7 @@ Para ver una ilustración gráfica de esto, consulte los siguientes ejemplos:
 
 Una vez finalizada la extracción, comience la ingesta.
 
-La parte superior del registro de ingesta contendrá una entrada, similar a `aem-ethos/tools:1.2.438`. Asegúrese de que este número de versión sea **1,2,438** AEM o superior, de lo contrario, la validación no es compatible con la versión de la as a Cloud Service de la que está utilizando la.
+La parte superior del registro de ingesta contendrá una entrada, similar a `aem-ethos/tools:1.2.438`. Asegúrese de que este número de versión sea **1.2.438** o superior; de lo contrario, la versión de AEM as a Cloud Service que esté utilizando no admitirá validación.
 
 Una vez finalizada la ingesta y iniciada la validación, se anota la siguiente entrada de registro en el &quot;log&quot; de ingesta:
 
@@ -129,22 +129,22 @@ Migration validation took 0 minutes
 
 El ejemplo de error anterior se obtuvo ejecutando una ingesta y volviendo a ejecutar la misma ingesta con la opción Borrar deshabilitada, de modo que no había nodos involucrados durante la ingesta; todo estaba presente en el destino.
 
-Además de incluirse en el registro de ingesta, también se puede acceder al informe de validación desde el **Trabajos de ingesta** interfaz de usuario en Cloud Acceleration Manager. Para ello, haga clic en los tres puntos (**...**) y haga clic en **Informe de validación** en la lista desplegable para ver el informe de validación.
+Además de incluirse en el registro de ingesta, también se puede acceder al informe de validación desde la interfaz de usuario de **Trabajos de ingesta** en Cloud Acceleration Manager. Para ello, haga clic en los tres puntos (**...**) y luego haga clic en **Informe de validación** en la lista desplegable para ver el informe de validación.
 
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
 
 ## Validación de la migración de entidades principales {#how-to-validate-principal-migration}
 
-Consulte [Asignación de usuarios y migración de principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) para leer los detalles de las migraciones principales y por qué es necesario.
+Consulte [Asignación de usuarios y migración de entidades principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) para leer los detalles de las migraciones principales y por qué es necesario.
 
 Una vez que la extracción y la ingesta se hayan completado correctamente, estará disponible un resumen y un informe de la migración principal. Esta información se puede utilizar para validar qué usuarios y grupos se migraron correctamente y, quizás, para determinar por qué no se migraron algunos.
 
-Para ver esta información, vaya a Cloud Acceleration Manager. Haga clic en la tarjeta del proyecto y en la tarjeta Transferencia de contenido. Vaya a **Trabajos de ingesta** y busque la ingesta que desea comprobar. Haga clic en los tres puntos (**...**) para esa ingesta y haga clic en **Ver resumen principal** en la lista desplegable.
+Para ver esta información, vaya a Cloud Acceleration Manager. Haga clic en la tarjeta del proyecto y en la tarjeta Transferencia de contenido. Vaya a **Trabajos de ingesta** y busque la ingesta que desea comprobar. Haga clic en los tres puntos (**...**) para esa ingesta y, a continuación, haga clic en **Ver resumen principal** en la lista desplegable.
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-Verá un cuadro de diálogo con la información de resumen. Utilice los iconos de ayuda para leer una descripción más completa. Haga clic en **Descargar informe** para descargar el informe completo separado por comas (CSV).
+Verá un cuadro de diálogo con la información de resumen. Utilice los iconos de ayuda para leer una descripción más completa. Haga clic en el botón **Descargar informe** para descargar el informe completo separado por comas (CSV).
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
@@ -156,7 +156,7 @@ Verá un cuadro de diálogo con la información de resumen. Utilice los iconos d
 
 ### Error de validación. ¿Y ahora qué? {#validation-fail}
 
-El primer paso es determinar si la ingesta falló realmente o si el contenido extraído ya está presente en el entorno de destino. Esto puede ocurrir si se repite una ingesta con el **Borrar contenido existente en la instancia de Cloud antes de la ingesta** opción desactivada.
+El primer paso es determinar si la ingesta falló realmente o si el contenido extraído ya está presente en el entorno de destino. Esto puede ocurrir si se repite una ingesta con la opción **Borrar contenido existente en la instancia de Cloud antes de la ingesta** deshabilitada.
 
 Para verificarla, elija una ruta en el informe de validación y compruebe si está presente en el entorno de destino. Si es un entorno de publicación, puede limitarse a comprobar páginas y recursos directamente. Abra un ticket con el Servicio de atención al cliente si necesita ayuda con este paso.
 
@@ -164,8 +164,8 @@ Para verificarla, elija una ruta en el informe de validación y compruebe si est
 
 Algunas rutas de los resúmenes de extracción e ingesta se excluyen a propósito para mantener el tamaño de estos archivos manejable, con el objetivo de poder calcular el resultado de validación de migración en un plazo de dos horas desde que se completó la ingesta.
 
-Las rutas que excluimos actualmente de los resúmenes incluyen: `cqdam.text.txt` representaciones, nodos dentro de `/home`y nodos dentro de `/jcr:system`.
+Las rutas de acceso que excluimos actualmente de los resúmenes incluyen: `cqdam.text.txt` representaciones, nodos dentro de `/home` y nodos dentro de `/jcr:system`.
 
 ### Los grupos de usuarios cerrados no funcionan {#validating-cugs}
 
-Consulte [Migración de grupos de usuarios cerrados](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) por consideraciones adicionales al utilizar una directiva de grupo de usuarios cerrado (CUG).
+Consulte [Migración de grupos de usuarios cerrados](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) para obtener consideraciones adicionales al utilizar una directiva de grupo de usuarios cerrados (CUG).

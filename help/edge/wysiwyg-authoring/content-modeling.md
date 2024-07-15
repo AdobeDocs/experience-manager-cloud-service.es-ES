@@ -18,7 +18,7 @@ Descubra cómo funciona el modelado de contenido para la creación WYSIWYG con p
 
 ## Requisitos previos {#prerequisites}
 
-Los proyectos que utilizan la creación WYSIWYG con Edge Delivery Services heredan la mayoría de la mecánica de cualquier otro proyecto de Edge Delivery Services, independientemente de la fuente de contenido o [método de creación.](/help/edge/wysiwyg-authoring/authoring.md)
+Los proyectos que usan la creación WYSIWYG con Edge Delivery Services heredan la mayor parte de la mecánica de cualquier otro proyecto de Edge Delivery Services, independientemente del origen de contenido o del método de creación [.](/help/edge/wysiwyg-authoring/authoring.md)
 
 Antes de empezar a modelar el contenido de su proyecto, asegúrese de leer primero la siguiente documentación.
 
@@ -39,7 +39,7 @@ En AEM, este contenido se implementa como componentes con modelos muy simples y 
 * **Imagen**: origen, descripción
 * **Botón**: texto, título, dirección URL, tipo (predeterminado, principal, secundario)
 
-El modelo de estos componentes forma parte del [Plantilla para la creación WYSIWYG con Edge Delivery Services.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
+El modelo de estos componentes forma parte de [Boilerplate para la creación WYSIWYG con Edge Delivery Services.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
 
 ## Bloques {#blocks}
 
@@ -345,7 +345,7 @@ Para algunos valores podemos inferir el significado semántico a partir de los v
 * **Imágenes**: si una referencia a un recurso en AEM es un recurso con un tipo MIME que comience por `image/`, la referencia se representa como `<picture><img src="${reference}"></picture>`.
 * **Vínculos**: si una referencia existe en AEM y no es una imagen, o si el valor empieza por `https?://`  o `#`, la referencia se representa como `<a href="${reference}">${reference}</a>` .
 * **Texto enriquecido**: si un valor recortado comienza con un párrafo (`p`, `ul`, `ol`, `h1`-`h6`, etc.), el valor se representa como texto enriquecido.
-* **Nombres de clase** - El `classes` La propiedad se trata como [bloquear opciones](/help/edge/developer/markup-sections-blocks.md#block-options) y se representan en el encabezado de tabla para [bloques simples,](#simple) o como lista de valores para elementos en una [bloque de contenedor.](#container) Es útil si desea lo siguiente [aplicar un estilo diferente a un bloque,](/help/edge/wysiwyg-authoring/create-block.md#block-options) pero no es necesario crear un bloque completamente nuevo.
+* **Nombres de clase** - La propiedad `classes` se trata como [opciones de bloque](/help/edge/developer/markup-sections-blocks.md#block-options) y se representa en el encabezado de tabla para [bloques simples,](#simple) o como lista de valores para los elementos de un bloque [contenedor.](#container) Resulta útil si desea [aplicar un estilo a un bloque de forma diferente,](/help/edge/wysiwyg-authoring/create-block.md#block-options) pero no necesita crear un bloque completamente nuevo.
 * **Listas de valores**: si un valor es una propiedad de varios valores y el primer valor no es ninguno de los anteriores, todos los valores se concatenan como una lista separada por comas.
 
 Todo lo demás se procesará como texto sin formato.
@@ -652,11 +652,11 @@ Para ello, cree un modelo de componentes con el ID `page-metadata`.
 
 Ahora que sabe cómo modelar contenido, puede crear bloques para sus propios Edge Delivery Services con el proyecto de creación WYSIWYG.
 
-Ver el documento [Creación de bloques instrumentados para su uso con el editor universal](/help/edge/wysiwyg-authoring/create-block.md) para aprender a crear bloques instrumentados para su uso con el editor universal en la creación WYSIWYG con proyectos de Edge Delivery Services.
+Consulte el documento [Creación de bloques instrumentados para su uso con el editor universal](/help/edge/wysiwyg-authoring/create-block.md) para obtener información sobre cómo crear bloques instrumentados para su uso con el editor universal en la creación WYSIWYG con proyectos de Edge Delivery Services.
 
-Si ya está familiarizado con la creación de bloques, consulte el documento [Guía de introducción para desarrolladores para la creación WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para ayudarle a poner en marcha un nuevo sitio de Adobe Experience Manager con Edge Delivery Services y el editor universal para la creación de contenido.
+Si ya está familiarizado con la creación de bloques, consulte el documento [Guía de introducción para desarrolladores para la creación WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para ponerse en marcha con un nuevo sitio de Adobe Experience Manager que utilice Edge Delivery Services y el Editor universal para la creación de contenido.
 
 >[!TIP]
 >
->Para ver una guía completa sobre la creación de un nuevo proyecto de Edge Delivery Services AEM habilitado para la creación WYSIWYG con as a Cloud Service como origen de contenido, consulte [AEM Este seminario web de GEM de la.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)
+>Para ver un tutorial completo sobre la creación de un nuevo proyecto de Edge Delivery Services habilitado para la creación WYSIWYG con AEM as a Cloud Service AEM como fuente de contenido, visite [este seminario web de GEMs de.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)
 

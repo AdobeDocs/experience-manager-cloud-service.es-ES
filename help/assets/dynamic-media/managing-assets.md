@@ -18,11 +18,11 @@ La administración de recursos de Dynamic Media (imágenes, vídeo y recursos in
 
 Al obtener una vista previa, también puede aplicar ajustes preestablecidos de imagen (solo para imágenes) o ajustes preestablecidos de visualizador (para vídeo e imágenes). No puede aplicar ambas a un recurso. Consulte [Aplicar ajustes preestablecidos de visor](viewer-presets.md) y [Aplicar ajustes preestablecidos de imagen](image-presets.md).
 
-Encontrará información general sobre la administración de recursos en [Administración de recursos con la IU táctil](/help/assets/manage-digital-assets.md).
+Encontrará información general sobre la administración de recursos en [Administrar Assets con la IU táctil](/help/assets/manage-digital-assets.md).
 
 En los temas siguientes se describe lo que puede hacer para administrar los recursos de Dynamic Media:
 
 * [Práctica recomendada para optimizar la calidad de las imágenes](best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Previsualización de recursos de Dynamic Media](previewing-assets.md)
-* [Publicar recursos de Dynamic Media](publishing-dynamicmedia-assets.md)
+* [Publish Dynamic Media Assets](publishing-dynamicmedia-assets.md)
 * [Trabajo con selectores](working-with-selectors.md)

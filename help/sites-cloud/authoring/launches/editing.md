@@ -21,7 +21,7 @@ Cuando se ha creado un lanzamiento para una página (o conjunto de páginas), pu
 1. Acceda a [Lanzamiento desde las referencias (consola Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar las acciones disponibles.
 1. Seleccione **Ir a la página** para abrir la página y editarla.
 
-Al editar la página, puede ver una indicación en la barra de herramientas superior, junto con el **Salir** y **Navegar** opciones:
+Al editar la página, puede ver una indicación en la barra de herramientas superior, junto con las opciones **Salir** y **Navegar**:
 
 ![Salir y navegar por el lanzamiento desde el editor de páginas](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 

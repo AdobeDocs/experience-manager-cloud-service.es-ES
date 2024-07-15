@@ -20,11 +20,11 @@ Puede descargar uno o varios recursos mediante Content Hub. Se descargan las ver
 
 ## Requisitos previos {#prerequisites}
 
-[Usuarios de Content Hub](deploy-content-hub.md#onboard-content-hub-users) puede realizar las acciones mencionadas en este artículo.
+[Usuarios de Content Hub](deploy-content-hub.md#onboard-content-hub-users) pueden realizar las acciones mencionadas en este artículo.
 
 ## Descargar recurso {#download-single-asset}
 
 1. Seleccione los recursos que debe descargar.
-   ![Descargar recurso único](assets/download-assets-new.jpg)
+   ![Descargar solo recurso](assets/download-assets-new.jpg)
 1. Haga clic en **[!UICONTROL Descargar]**. <br> También puede hacer clic en el icono de descarga disponible en la tarjeta de recursos para descargar un recurso.
 Todos los recursos se descargan en su representación original.

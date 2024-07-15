@@ -15,11 +15,11 @@ ht-degree: 0%
 
 SPA SPA Sumérjase en el desarrollo de la con este tutorial de varias partes que le guiará a través de la configuración del proyecto, la asignación de componentes, las herramientas de desarrollo front-end y el enrutamiento de aplicaciones para implementar su propia aplicación.
 
-![SPA Proyecto de WKND](assets/wknd-spa-project.png)
+SPA ![Proyecto de WKND de](assets/wknd-spa-project.png)
 
 AEM SPA AEM Similar al Tutorial de WKND de, este homólogo centrado en la aplicación ofrece un ejemplo completo de creación de su propia aplicación de una sola página que se puede editar empezando por la configuración del proyecto a través del enrutamiento de aplicaciones.
 
-* [Creación de su primer Angular SPA AEM de en la](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
-* [SPA AEM Creación de su primer React en el](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
+* [Cree su primer Angular SPA AEM de trabajo en el](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
+* SPA AEM [Cree su primer grupo de informes de React en el](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
 
-SPA AEM Sin embargo, antes de comenzar su propio proyecto de para la administración de la información, es posible que también desee revisar la [SPA AEM Desarrollo de la](developing.md) documento.
+SPA AEM SPA AEM Sin embargo, antes de comenzar su propio proyecto de para el trabajo, es posible que también desee revisar el documento [Desarrollo de la para el documento de ](developing.md).

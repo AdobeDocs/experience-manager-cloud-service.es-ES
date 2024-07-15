@@ -37,7 +37,7 @@ Consulte los siguientes temas para obtener información sobre la implementación
 * [Rejillas fluidas](#developing-a-fluid-grid)
 * [Imágenes adaptables](#using-adaptive-images)
 
-A medida que diseñe, utilice el **Emulador** para obtener una vista previa de las páginas para varios tamaños de pantalla.
+A medida que diseñe, use el **Emulador** de la barra de herramientas para obtener una vista previa de las páginas para diferentes tamaños de pantalla.
 
 ## Antes de desarrollar {#before-you-develop}
 
@@ -51,29 +51,29 @@ AEM Antes de desarrollar la aplicación que admite sus páginas web, se deben to
 
 AEM La estructura típica de la aplicación de la comunidad admite todas las implementaciones de diseño interactivo:
 
-* Los componentes de página se encuentran debajo `/apps/<application_name>/components`
-* Las plantillas se encuentran debajo `/apps/<application_name>/templates`
+* Los componentes de página residen debajo de `/apps/<application_name>/components`
+* Las plantillas residen debajo de `/apps/<application_name>/templates`
 
 ## Uso de consultas de medios {#using-media-queries}
 
 Las consultas de medios permiten el uso selectivo de estilos CSS para el procesamiento de páginas. AEM Las herramientas y características de desarrollo de la le permiten implementar de forma eficaz y eficiente las consultas de medios en sus aplicaciones.
 
-El grupo W3C proporciona el [Consultas de medios](https://www.w3.org/TR/css3-mediaqueries/) recomendación que describe esta función de CSS3 y la sintaxis.
+El grupo W3C proporciona la recomendación [Consultas de medios](https://www.w3.org/TR/css3-mediaqueries/) que describe esta característica CSS3 y la sintaxis.
 
 ### Creación del archivo CSS {#creating-the-css-file}
 
 En el archivo CSS, defina consultas de medios basadas en las propiedades de los dispositivos a los que está dirigiendo. La siguiente estrategia de implementación es eficaz para administrar estilos para cada consulta de medios:
 
-* Utilice un [Carpeta de biblioteca de cliente](clientlibs.md) para definir el CSS que se monta cuando se procesa la página.
+* Use una [carpeta de la biblioteca de cliente](clientlibs.md) para definir el CSS que se ensamblará cuando se represente la página.
 * Defina cada consulta de medios y los estilos asociados en archivos CSS independientes. Es útil utilizar nombres de archivo que representen las características del dispositivo de la consulta de medios.
 * Defina estilos que sean comunes a todos los dispositivos en un archivo CSS independiente.
 * En el archivo css.txt de la carpeta Biblioteca de cliente, ordene los archivos CSS de lista como se requiere en el archivo CSS ensamblado.
 
-El [Tutorial de WKND](develop-wknd-tutorial.md) utiliza esta estrategia para definir estilos en el diseño del sitio. El archivo CSS utilizado por WKND se encuentra en `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`.
+El [tutorial de WKND](develop-wknd-tutorial.md) utiliza esta estrategia para definir estilos en el diseño del sitio. El archivo CSS utilizado por WKND se encuentra en `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`.
 
 ### AEM Uso de consultas de medios con páginas de {#using-media-queries-with-aem-pages}
 
-[El proyecto de muestra WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) y [AEM Tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) use el [Componente principal de página,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html) que incluye los clientlibs a través de la directiva de página.
+AEM [El proyecto de ejemplo WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) y [Arquetipo de proyecto de la](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) utilizan el [Componente principal de página,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html), que incluye los clientlibs a través de la directiva de página.
 
 Si su propio componente de página no se basa en el componente principal de página, también puede incluir la carpeta de biblioteca de cliente en el script HTL o JSP del mismo. Al hacerlo, se genera y se hace referencia al archivo CSS con las consultas de medios necesarias para que funcione la cuadrícula adaptable.
 
@@ -99,37 +99,37 @@ El script JSP genera el siguiente código de HTML que hace referencia a las hoja
 
 ## Vista previa para dispositivos específicos {#previewing-for-specific-devices}
 
-El emulador permite obtener una vista previa de las páginas en diferentes tamaños de ventanilla móvil para poder probar el comportamiento del diseño interactivo. Al editar una página en la consola Sitios, puede tocar o hacer clic en **Emulador** para mostrar el emulador.
+El emulador permite obtener una vista previa de las páginas en diferentes tamaños de ventanilla móvil para poder probar el comportamiento del diseño interactivo. Al editar una página en la consola Sites, puede tocar o hacer clic en el icono **Emulador** para mostrar el emulador.
 
-![Icono de emulador en la barra de herramientas](assets/emulator-icon.png)
+![Icono del emulador en la barra de herramientas](assets/emulator-icon.png)
 
-En la barra de herramientas del emulador puede tocar o hacer clic en **Dispositivos** para mostrar un menú desplegable en el que puede seleccionar un dispositivo. Al seleccionar un dispositivo, la página cambia para adaptarse al tamaño de la ventanilla móvil.
+En la barra de herramientas del emulador, puede tocar o hacer clic en el icono **Dispositivos** para mostrar un menú desplegable en el que puede seleccionar un dispositivo. Al seleccionar un dispositivo, la página cambia para adaptarse al tamaño de la ventanilla móvil.
 
 ![Barra de herramientas del emulador](assets/emulator.png)
 
 ### Especificar grupos de dispositivos {#specifying-device-groups}
 
-Para especificar los grupos de dispositivos que aparecen en **Dispositivos** lista, añadir una `cq:deviceGroups` a la propiedad `jcr:content` de la página de plantilla del sitio. El valor de la propiedad es una matriz de rutas a los nodos del grupo de dispositivos.
+Para especificar los grupos de dispositivos que aparecen en la lista **Dispositivos**, agregue una propiedad `cq:deviceGroups` al nodo `jcr:content` de la página de plantilla del sitio. El valor de la propiedad es una matriz de rutas a los nodos del grupo de dispositivos.
 
-Por ejemplo, la página de plantilla del sitio WKND es `/conf/wknd/settings/wcm/template-types/empty-page/structure`. Y el `jcr:content` debajo incluye la siguiente propiedad:
+Por ejemplo, la página de plantilla del sitio WKND es `/conf/wknd/settings/wcm/template-types/empty-page/structure`. Y el nodo `jcr:content` que se encuentra debajo de él incluye la siguiente propiedad:
 
 * Nombre: `cq:deviceGroups`
 * Tipo: `String[]`
 * Valor: `mobile/groups/responsive`
 
-Los nodos del grupo de dispositivos se encuentran en la `/etc/mobile/groups` carpeta.
+Los nodos del grupo de dispositivos se encuentran en la carpeta `/etc/mobile/groups`.
 
 ## Imágenes interactivas {#responsive-images}
 
 Las páginas adaptables se adaptarán dinámicamente al dispositivo en el que se procesan, lo que ofrece una mejor experiencia al usuario. Sin embargo, también es importante que los recursos estén optimizados para el punto de interrupción y el dispositivo para minimizar el tiempo de carga de la página.
 
-[El componente principal Imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=es) funciones como la selección de imágenes adaptables.
+[El componente de imagen del componente principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=es) incluye características como la selección de imágenes adaptables.
 
-* De forma predeterminada, el componente de imagen utiliza la variable [Servlet de imagen adaptable](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) para entregar la representación adecuada.
-* [Entrega de imágenes optimizadas para la web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=es) también está disponible a través de una sencilla casilla de verificación en su directiva, que ofrece recursos de imagen de DAM en formato WebP y puede reducir el tamaño de descarga de una imagen en aproximadamente un 25 % de media.
+* De manera predeterminada, el componente de imagen usa el [servlet de imagen adaptable](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) para entregar la representación adecuada.
+* [Entrega de imágenes optimizadas para la web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=es) también está disponible a través de una sencilla casilla de verificación en su directiva, que ofrece recursos de imagen de DAM en formato WebP y puede reducir el tamaño de descarga de una imagen en aproximadamente un 25 % en promedio.
 
 ## El contenedor de diseño {#layout-container}
 
-AEM El contenedor de diseño le permite implementar de forma eficiente y eficaz el diseño adaptable para adaptar las dimensiones de la página a la ventanilla del cliente.
+AEM contenedor de diseño le permite implementar de forma eficiente y eficaz el diseño adaptable para adaptar las dimensiones de la página a la ventanilla del cliente.
 
-Consulte el documento [Configuración del contenedor y el modo de diseño](/help/sites-cloud/administering/responsive-layout.md) para obtener más información sobre cómo funciona el contenedor de diseños y cómo habilitar los diseños adaptables para el contenido.
+Consulte el documento [Configuración del contenedor de diseño y el modo de diseño](/help/sites-cloud/administering/responsive-layout.md) para obtener más información sobre cómo funciona el contenedor de diseño y cómo habilitar los diseños adaptables para el contenido.

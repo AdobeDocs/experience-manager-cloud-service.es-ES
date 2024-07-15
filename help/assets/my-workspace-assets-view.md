@@ -1,5 +1,5 @@
 ---
-title: Mi espacio de trabajo para la vista Recursos
+title: Vista de Mi Workspace para Assets
 description: Mi espacio de trabajo es una página que proporciona módulos visuales personalizables para acceder fácilmente a las áreas clave de la interfaz de usuario de Assets y a la información más relevante para el usuario.
 exl-id: 4ffba974-6e8e-48e2-aa57-7d4041032226
 feature: Asset Management, Publishing, Collaboration, Asset Processing
@@ -46,7 +46,7 @@ Para fijar un recurso, una carpeta o una colección, haga lo siguiente:
 
 1. Seleccione el elemento y haga clic en **[!UICONTROL fijar a Acceso rápido]**.
 
-1. Seleccione si necesita fijar el elemento solo para usted, para toda la organización o para los grupos seleccionados. Si selecciona **[!UICONTROL Para grupos]**, elija un nombre de grupo existente en la **[!UICONTROL Fijar para grupos]** field.
+1. Seleccione si necesita fijar el elemento solo para usted, para toda la organización o para los grupos seleccionados. Si selecciona **[!UICONTROL Para grupos]**, elija un nombre de grupo existente en el campo **[!UICONTROL Anclar para grupos]**.
 
    ![Fijar elementos para grupos](assets/pin-items-for-groups.png)
 1. Haga clic en **[!UICONTROL Fijar]**.
@@ -58,13 +58,13 @@ Para fijar un recurso, una carpeta o una colección, haga lo siguiente:
 
 Los administradores pueden ver un resumen del número de descargas y cargas realizadas en el entorno de Assets durante los últimos 30 días. Puede hacer clic en **[!UICONTROL Ver todo]** para acceder rápidamente a la página de perspectivas para ver paneles más detallados.
 
-También puede ver los términos más buscados junto con el número de veces que se buscan esos términos en la implementación de la vista de recursos mediante **Insights** de Mi espacio de trabajo. También puede navegar hasta Insights detallados para ver las búsquedas principales durante los últimos 30 días o 12 meses.
+También puede ver los términos más buscados junto con la cantidad de veces que se buscarán en su implementación de vista de Assets usando la sección **Insights** de Mi Workspace. También puede navegar hasta Insights detallados para ver las búsquedas principales durante los últimos 30 días o 12 meses.
 
 ![Insights en el espacio de trabajo](assets/insights.png)
 
 **Tareas**
 
-Muestra la lista de tareas asignadas actualmente en la **[!UICONTROL Mis tareas]** , creado por usted en la **[!UICONTROL Tareas asignadas]** y las tareas que ya haya completado en la pestaña **[!UICONTROL Tareas completadas]** pestaña. Puede seleccionar una tarea y hacer clic en **[!UICONTROL Completar tarea]** para aprobar o rechazar una tarea. También puede seleccionar una tarea y hacer clic en **[!UICONTROL Abrir detalles de tarea]** para ver la tarea y aprobarla, rechazarla, editarla o eliminarla.
+Muestra la lista de tareas que tiene asignadas actualmente en la ficha **[!UICONTROL Mis tareas]**, que creó en la ficha **[!UICONTROL Tareas asignadas]**, y las tareas que ya ha completado en la ficha **[!UICONTROL Tareas completadas]**. Puede seleccionar una tarea y hacer clic en **[!UICONTROL Completar tarea]** para aprobar o rechazar una tarea. También puede seleccionar una tarea y hacer clic en **[!UICONTROL Abrir detalles de tarea]** para ver la tarea y aprobarla, rechazarla, editarla o eliminarla.
 
 ![Tareas en el espacio de trabajo](assets/tasks-workspace.png)
 
@@ -76,7 +76,7 @@ Muestra la lista de tareas asignadas actualmente en la **[!UICONTROL Mis tareas]
 
 Muestra una serie de vistas de los archivos, incluida la lista de archivos que ha visto recientemente. Puede seleccionar mostrar los archivos en el widget en una vista de lista, vista de cuadrícula, vista de galería o vista de cascada, y ordenarlos por nombre, tamaño y fecha de modificación. También puede seleccionar un recurso para ver los detalles del recurso o eliminarlo de la lista de archivos visualizados recientemente.
 
-El **[!UICONTROL Descargas principales]** La pestaña muestra los diez recursos más descargados disponibles en el entorno de vista Recursos. Puede seleccionar mostrar los recursos en la vista de lista o en la vista de cuadrícula. Ambas vistas muestran el tipo de formato y el número de descargas de cada recurso. También puede seleccionar un recurso y hacer clic en **[!UICONTROL Detalles]** para ver sus propiedades.
+La pestaña **[!UICONTROL Descargas principales]** muestra los diez recursos más descargados disponibles en el entorno de vista de Assets. Puede seleccionar mostrar los recursos en la vista de lista o en la vista de cuadrícula. Ambas vistas muestran el tipo de formato y el número de descargas de cada recurso. También puede seleccionar un recurso y hacer clic en **[!UICONTROL Detalles]** para ver sus propiedades.
 
 ![Widget de contenido en el espacio de trabajo](assets/workspace-content.png)
 

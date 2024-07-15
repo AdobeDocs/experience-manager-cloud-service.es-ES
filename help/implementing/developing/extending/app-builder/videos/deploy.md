@@ -1,6 +1,6 @@
 ---
 title: Implementación de aplicaciones de App Builder
-description: Obtenga información sobre cómo implementar aplicaciones de App Builder para Adobe Experience Manager AEM () as a Cloud Service.
+description: Obtenga información sobre cómo implementar aplicaciones de App Builder para el as a Cloud Service de Adobe Experience Manager AEM ().
 version: Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Implementación de aplicaciones de App Builder
 
-Descubra qué significa implementar para el Generador de aplicaciones y cómo implementar su aplicación de Generador de aplicaciones mediante la CLI de Adobe I/O.
+Descubra qué significa implementar para App Builder y cómo implementar su aplicación de App Builder mediante la CLI de Adobe I/O.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339250/?quality=12&learn=on)

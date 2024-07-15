@@ -17,7 +17,7 @@ Obtenga información sobre cómo administrar las experiencias de catálogo de pr
 
 ## La historia hasta ahora {#story-so-far}
 
-AEM En el documento anterior del recorrido Contenido y Commerce de la, [Administrar páginas y plantillas del catálogo de productos](catalog-templates.md), ha aprendido a administrar y crear experiencias de catálogo de productos basadas en plantillas.
+AEM En el documento anterior del recorrido de trabajo de contenido y Commerce de la, [Administrar páginas y plantillas de catálogo de productos](catalog-templates.md), ha aprendido a administrar y generar experiencias de catálogo de productos basadas en plantillas.
 
 Este artículo se basa en estos aspectos básicos.
 
@@ -25,9 +25,9 @@ Este artículo se basa en estos aspectos básicos.
 
 AEM Este documento le ayuda a comprender cómo administrar la experiencia del catálogo de productos en función de los datos de los productos clasificados y los lanzamientos de la. Muchas veces, los autores tienen que preparar en paralelo un próximo lanzamiento de producto (como una nueva colección de ropa). Esto requiere acceso a los datos del producto clasificados (aún no están activos) y la capacidad de preparar el contenido. Este nuevo contenido se publicará con el lanzamiento del producto.
 
-    >[!NOTA]
+    >[!NOTE]
     >
-    >Esta función solo está disponible con Adobe Commerce o Cloud Edition y conectores de terceros que admiten la autenticación basada en tokens. Consulte [Introducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html) para obtener más información.
+    >Esta característica solo está disponible con Adobe Commerce o Cloud Edition y conectores de terceros que admiten la autenticación basada en tokens. Consulte [Introducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html) para obtener más información.
 
 CIF En primer lugar, vamos a ver cómo los autores pueden acceder a los datos de productos clasificados con el método de la.
 
@@ -35,7 +35,7 @@ CIF En primer lugar, vamos a ver cómo los autores pueden acceder a los datos de
 
 Una forma de acceder a los datos de productos clasificados es utilizar la cabina de productos. Abra el catálogo de productos haciendo clic en el icono Commerce AEM en el menú principal de la. Esto le proporciona acceso a los datos del producto en directo. Abra la pestaña de filtro a la izquierda y expanda **CATÁLOGO CLASIFICADO**. Con los datos de vista previa, ahora puede acceder a los datos de productos clasificados en cualquier momento. Los datos clasificados incluyen nuevas categorías, productos o campos actualizados como el precio.
 
-![cabina de pilotos](assets/staged-cockpit.png)
+![cabina de pilotaje](assets/staged-cockpit.png)
 
 Es posible obtener una vista previa de una tienda con datos clasificados mediante la vista Deformación de tiempo. Abra el editor y cambie el modo a Deformación de tiempo. Seleccione cualquier fecha futura. Observe que, sobre el editor, la información indica que está viendo la página durante una fecha determinada.
 
@@ -43,21 +43,21 @@ Es posible obtener una vista previa de una tienda con datos clasificados mediant
 
 Ahora puede examinar el catálogo con los datos clasificados. Si abre una categoría o una página de producto clasificados, el editor mostrará un indicador visual.
 
-![fase plp](assets/staged-plp.png)
+![plp de fase](assets/staged-plp.png)
 
-    >[!NOTA]
+    >[!NOTE]
     >
-    >Omnisearch no tiene contexto y, por lo tanto, solo devuelve datos del catálogo de productos activo
+    >Omnisearch no tiene contexto y, por lo tanto, solo devolverá datos del catálogo de productos activo
 
 ## Lanzamientos de AEM {#launches}
 
-AEM Los lanzamientos de le permiten crear contenido para los datos de productos clasificados. Si no está familiarizado con los lanzamientos, siga el vínculo de documentación debajo de [Sección Recursos adicionales](#additional-resources). A continuación, la fecha de lanzamiento se utiliza para acceder a los datos de productos clasificados.
+AEM Los lanzamientos de le permiten crear contenido para los datos de productos clasificados. Si no está familiarizado con los lanzamientos, siga el vínculo de documentación en la [sección Recursos adicionales](#additional-resources). A continuación, la fecha de lanzamiento se utiliza para acceder a los datos de productos clasificados.
 
-![fase de lanzamiento](assets/staged-launch.png)
+![lanzamiento de fase](assets/staged-launch.png)
 
 Observe que los selectores respetan la fecha de lanzamiento con el indicador de ensayo a la derecha.
 
-![selector de escenarios](assets/staged-picker.png)
+![selector de etapas](assets/staged-picker.png)
 
 ## Siguientes pasos {#what-is-next}
 

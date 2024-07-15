@@ -41,21 +41,21 @@ La vista Recursos le permite ver datos en tiempo real de su entorno de la vista 
 
 Haga clic en **[!UICONTROL Insights]** en el panel de navegación izquierdo para ver los siguientes gráficos generados automáticamente:
 
-* **Descargas**: el número de recursos descargados del entorno de vista de recursos en los últimos 30 días o 12 meses representados mediante un gráfico de líneas.
-  ![insights-downloads](/help/assets/assets/insights-downloads2341.svg)
+* **Descargas**: el número de recursos descargados del entorno de vista de Assets en los últimos 30 días o 12 meses representados mediante un gráfico de líneas.
+  ![descargas de información](/help/assets/assets/insights-downloads2341.svg)
 
-* **Cargas**: el número de recursos cargados en el entorno de vista de recursos en los últimos 30 días o 12 meses representados mediante un gráfico de líneas.
-  ![insights-uploads](/help/assets/assets/insights-uplods2.svg)
+* **Cargas**: el número de recursos cargados en el entorno de vista de Assets en los últimos 30 días o 12 meses representados mediante un gráfico de líneas.
+  ![cargas de información](/help/assets/assets/insights-uplods2.svg)
   <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
-* **Uso de almacenamiento**: el uso del almacenamiento, en bytes, para el entorno de vista de recursos representado mediante un gráfico de barras.
-  ![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
+* **Uso del almacenamiento**: El uso del almacenamiento, en bytes, para el entorno de vista de Assets representado mediante un gráfico de barras.
+  ![cargas de información](/help/assets/assets/insights-storage-usage1.svg)
   <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **Búsquedas principales**: vea los términos más buscados junto con el número de veces que se buscan en el entorno de vista Recursos en los últimos 30 días o 12 meses representados en formato tabular.
-  ![insights-uploads](/help/assets/assets/insights-top-search.svg)
+  ![cargas de información](/help/assets/assets/insights-top-search.svg)
   <!--
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)

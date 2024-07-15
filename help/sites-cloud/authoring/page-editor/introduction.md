@@ -14,11 +14,11 @@ ht-degree: 39%
 
 # AEM Editor de página de {#editing-page-content}
 
-Una vez creada la página en el [**Sites** consola,](/help/sites-cloud/authoring/sites-console/introduction.md) AEM puede editar el contenido de la página mediante el editor de páginas de la página de la, una potente herramienta para crear el contenido.
+AEM Una vez creada la página en la consola [**Sitios**,](/help/sites-cloud/authoring/sites-console/introduction.md) podrá editar el contenido de la página mediante el editor de páginas de la página de la página de la página, una herramienta eficaz para crear contenido.
 
 >[!NOTE]
 >
->Al editar una página en [**Sites** consola,](/help/sites-cloud/authoring/sites-console/introduction.md) la consola abrirá el editor correspondiente a la página de [plantilla:](/help/sites-cloud/authoring/sites-console/templates.md) el editor de páginas descrito en este documento o la variable [Editor universal.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+>Al editar una página en la consola [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) la consola abrirá el editor correspondiente a la [plantilla:](/help/sites-cloud/authoring/sites-console/templates.md) del editor de páginas descrito en este documento o del [editor universal.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 >[!NOTE]
 >
@@ -28,9 +28,9 @@ Una vez creada la página en el [**Sites** consola,](/help/sites-cloud/authoring
 
 AEM El editor de páginas de la consta principalmente de tres secciones:
 
-1. [La barra de herramientas](#toolbar) : La barra de herramientas le permite acceder rápidamente al modo de cambio de página y a ajustes de página adicionales.
-1. [El panel lateral](#side-panel) : el panel lateral le permite acceder a los componentes y recursos de la página, así como a otras herramientas de creación.
-1. [El editor](#editor) : El editor es donde realiza cambios en el contenido y lo previsualiza.
+1. [Barra de herramientas](#toolbar): La barra de herramientas le permite cambiar rápidamente el modo de página y obtener acceso a la configuración de página adicional.
+1. [Panel lateral](#side-panel): el panel lateral le proporciona acceso a los componentes y recursos de la página, así como a otras herramientas de creación.
+1. [Editor](#editor): el editor es el lugar donde se realizan los cambios en el contenido y se obtiene la vista previa.
 
 ![Diseño del editor de páginas](assets/page-editor-layout.png)
 
@@ -44,7 +44,7 @@ La barra de herramientas de la página ofrece acceso a la funcionalidad adecuada
 
 #### Panel lateral {#side-panel-button}
 
-Esto abre o cierra el [panel lateral,](/help/sites-cloud/authoring/page-editor/editor-side-panel.md) que contiene el Explorador de recursos, el Explorador de componentes y el Árbol de contenido.
+Se abrirá o cerrará el panel lateral [, ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md), que contiene el Explorador de recursos, el Explorador de componentes y el Árbol de contenido.
 
 ![Alternar panel lateral](assets/page-editor-side-panel-toggle.png)
 
@@ -72,13 +72,13 @@ Además, **Información de página** puede proporcionar acceso a análisis y rec
 
 #### Emulador {#emulator}
 
-Esto activa y desactiva la opción [barra de herramientas del emulador](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate), que se utiliza para emular el aspecto de la página en otro dispositivo. Esto se activa automáticamente en el modo de diseño.
+Esto activa o desactiva la barra de herramientas del emulador [1}, que se usa para emular el aspecto de la página en otro dispositivo. ](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate) Esto se activa automáticamente en el modo de diseño.
 
 ![Botón Emulador](assets/page-editor-emulator.png)
 
 #### ContextHub {#context-hub}
 
-Esto abre el [ContextHub.](/help/sites-cloud/authoring/personalization/contexthub.md) Solo está disponible en **Previsualizar** modo.
+Se abrirá [ContextHub.](/help/sites-cloud/authoring/personalization/contexthub.md) Solo está disponible en el modo **Vista previa**.
 
 ![Botón Context Hub](assets/page-editor-context-hub.png)
 
@@ -90,19 +90,19 @@ Este es el título de la página, en mayúsculas como información.
 
 #### Selector de modo {#mode-selector}
 
-El selector de modo muestra el [modo](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) y permite seleccionar otro modo, como edición, diseño, deformación de tiempo o segmentación.
+El selector de modo muestra el [modo](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) actual y le permite seleccionar otro modo, como edición, diseño, deformación de tiempo o segmentación.
 
 ![Botón Selector de modo](assets/page-editor-mode-selector.png)
 
 Al editar una página existen varios modos que permiten realizar diferentes acciones:
 
-* [Editar](/help/sites-cloud/authoring/page-editor/edit-content.md) - El modo que se utilizará al editar el contenido de la página
-* [Diseño](/help/sites-cloud/authoring/page-editor/responsive-layout.md) : Permite crear y editar un diseño interactivo en función del dispositivo (si la página está basada en un contenedor de diseños).
-* [Segmentación](/help/sites-cloud/authoring/personalization/targeted-content.md) : Mejora la relevancia del contenido mediante la segmentación y efectuando mediciones en todos los canales.
-* [Deformación de tiempo](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) - Ver el estado de una página en un momento determinado
-* [Estado de Live Copy](/help/sites-cloud/authoring/page-editor/introduction.md#live-copy-status) : permite obtener una descripción general rápida del estado de la Live Copy y de los componentes que se heredan o no
+* [Editar](/help/sites-cloud/authoring/page-editor/edit-content.md): modo que se utilizará al editar el contenido de la página
+* [Diseño](/help/sites-cloud/authoring/page-editor/responsive-layout.md): le permite crear y editar su diseño interactivo en función del dispositivo (si la página está basada en un contenedor de diseños)
+* [Segmentación](/help/sites-cloud/authoring/personalization/targeted-content.md): mejora la relevancia del contenido mediante la segmentación y efectuando mediciones en todos los canales
+* [Deformación de tiempo](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp): ver el estado de una página en un momento determinado
+* [Estado de Live Copy](/help/sites-cloud/authoring/page-editor/introduction.md#live-copy-status): permite obtener una descripción general rápida del estado de Live Copy y de los componentes que se heredan o no
 * [Modo de desarrollador](/help/implementing/developing/tools/developer-mode.md)
-* [Previsualizar](/help/sites-cloud/authoring/page-editor/introduction.md#previewing-pages) : vea la página tal como se muestra en el entorno de publicación o para navegar mediante vínculos en el contenido
+* [Vista previa](/help/sites-cloud/authoring/page-editor/introduction.md#previewing-pages): vea la página tal como se muestra en el entorno de publicación; o para navegar mediante vínculos en el contenido
 * [Anotar](/help/sites-cloud/authoring/page-editor/annotations.md) - Agregar o ver anotaciones en la página
 
 >[!NOTE]
@@ -110,17 +110,17 @@ Al editar una página existen varios modos que permiten realizar diferentes acci
 >* Según las características de la página, es posible que algunos modos no estén disponibles.
 >* El acceso a algunos modos requiere los permisos o privilegios adecuados.
 >* El modo de desarrollador no está disponible en dispositivos móviles debido a las restricciones de espacio.
->* Hay un [atajo de teclado](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) para alternar entre **Previsualizar** y el modo seleccionado actualmente (por ejemplo, **Editar**, **Diseño**, etc.).
+>* Hay un [método abreviado de teclado](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) (`Ctrl-Shift-M`) para alternar entre **Vista previa** y el modo seleccionado actualmente (por ejemplo, **Editar**, **Diseño**, etc.).
 
 #### Vista previa {#preview}
 
-El **Previsualizar** El botón habilita [modo de vista previa.](#preview-mode), mostrando la página tal como aparecerá cuando se publique.
+El botón **Vista previa** habilita el modo de vista previa [1.](#preview-mode), mostrando la página tal como aparecerá cuando se publique.
 
 ![Botón Vista previa](assets/page-editor-preview.png)
 
 #### Anotar {#annotate}
 
-**Anotar** El modo permite añadir [anotaciones](/help/sites-cloud/authoring/page-editor/annotations.md) a la página cuando revise una página. Después de la primera anotación, el icono cambia a un número que indica el número de anotaciones que tiene la página.
+El modo **Anotar** le permite agregar [anotaciones](/help/sites-cloud/authoring/page-editor/annotations.md) a la página al revisar una página. Después de la primera anotación, el icono cambia a un número que indica el número de anotaciones que tiene la página.
 
 ![Botón Anotación](assets/page-editor-annotations.png)
 
@@ -132,7 +132,7 @@ El panel lateral proporciona acceso a tres pestañas diferentes.
 * Explorador de recursos para agregar nuevos recursos a la página
 * El árbol de contenido para examinar la estructura de la página
 
-![El panel lateral del editor de páginas](assets/page-editor-side-panel.png)
+![Panel lateral del editor de páginas](assets/page-editor-side-panel.png)
 
 Consulte el documento [Panel lateral del editor de páginas](/help/sites-cloud/authoring/page-editor/editor-side-panel.md) para obtener más información.
 
@@ -140,17 +140,17 @@ Consulte el documento [Panel lateral del editor de páginas](/help/sites-cloud/a
 
 En el editor es donde se realizan los cambios directamente en el contenido de la página. La página se procesa como lo vería y puede arrastrar y soltar contenido nuevo mediante los exploradores de recursos o componentes del panel lateral, así como editar contenido in situ.
 
-![El editor del editor de páginas](assets/page-editor-editor.png)
+![Editor del editor de páginas](assets/page-editor-editor.png)
 
 ## Edición de contenido {#editing-content}
 
 Ahora que comprende el editor de páginas, está listo para editar su contenido.
 
-Consulte el documento [AEM Edición de contenido con el editor de páginas de la](/help/sites-cloud/authoring/page-editor/edit-content.md) para obtener más información.
+AEM Consulte el documento [Edición de contenido con el editor de páginas de](/help/sites-cloud/authoring/page-editor/edit-content.md) para obtener más información.
 
 ## Notificación de estado {#status-notification}
 
-Si una página forma parte de un [workflow](/help/sites-cloud/authoring/workflows/overview.md) Para varios flujos de trabajo, esta información se muestra en una barra de notificación debajo de la barra de herramientas al editar la página.
+Si una página forma parte de [flujo de trabajo](/help/sites-cloud/authoring/workflows/overview.md) o de varios flujos de trabajo, esta información se muestra en una barra de notificación debajo de la barra de herramientas al editar la página.
 
 ![Notificaciones del flujo de trabajo](assets/page-editor-editing-workflow-notification.png)
 
@@ -172,7 +172,7 @@ Si la página está sujeta a varios flujos de trabajo, el número de los mismos 
 
 ## Estado de Live Copy   {#live-copy-status}
 
-El **Estado de Live Copy** el modo de página le ofrece una visión general rápida del estado de live copy y de los componentes que se heredan o no:
+El modo de página **Estado de Live Copy** le proporciona una visión general rápida del estado de Live Copy y de los componentes que se heredan o no:
 
 * Borde verde: heredado
 * Borde rosa: se ha cancelado la herencia
@@ -185,12 +185,12 @@ Por ejemplo:
 
 Existen dos métodos para visualizar la vista previa de una página:
 
-* [Modo de previsualización](#preview-mode) - Una vista previa rápida y en el sitio
-* [Ver como aparece publicado](#view-as-published) : una vista previa completa que abre la página en una nueva pestaña
+* [Modo de vista previa](#preview-mode): una vista previa rápida in situ
+* [Ver como publicado](#view-as-published): vista previa completa que abre la página en una nueva pestaña
 
 >[!TIP]
 >
->* Los vínculos del contenido son visibles, pero no accesibles en **Editar** modo.
+>* Los vínculos del contenido son visibles, pero no se puede obtener acceso a ellos desde el modo **Editar**.
 >* Utilice cualquiera de las opciones de vista previa si desea navegar mediante sus vínculos.
 >* Utilice el [atajo de teclado](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `Ctrl-Shift-M` para cambiar entre la vista previa y el último modo seleccionado.
 
@@ -246,4 +246,4 @@ Los iconos siguientes le permiten deshacer o rehacer una acción. Se muestran en
 
 >[!NOTE]
 >
->Consulte el documento [Limitaciones de Deshacer y Rehacer](/help/sites-cloud/authoring/page-editor/undo-redo.md) para ver todos los detalles de las posibilidades de deshacer y rehacer ediciones de página.
+>Consulte el documento [Limitaciones de deshacer y rehacer](/help/sites-cloud/authoring/page-editor/undo-redo.md) para obtener todos los detalles de las posibilidades de deshacer y rehacer ediciones de página.

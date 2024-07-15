@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # Externalización de direcciones URL {#externalizing-urls}
 
-AEM En el caso de los **Externalizador** es un servicio OSGi que permite transformar mediante programación una ruta de recursos (por ejemplo, `/path/to/my/page`) en una dirección URL externa y absoluta (por ejemplo, `https://www.mycompany.com/path/to/my/page`) prefijando la ruta con un DNS preconfigurado.
+AEM En la práctica, **Externalizer** es un servicio OSGi que le permite transformar mediante programación una ruta de acceso de recursos (por ejemplo, `/path/to/my/page`) en una dirección URL externa y absoluta (por ejemplo, `https://www.mycompany.com/path/to/my/page`) al anteponer a la ruta de acceso un DNS preconfigurado.
 
-AEM Debido a que una instancia as a Cloud Service de la aplicación no puede conocer su dirección URL visible externamente y a que a veces se debe crear un vínculo fuera del ámbito de la solicitud, este servicio proporciona un lugar central para configurar esas direcciones URL externas y crearlas.
+Dado que una instancia de AEM as a Cloud Service no puede conocer su dirección URL visible externamente y que a veces debe crearse un vínculo fuera del ámbito de la solicitud, este servicio proporciona un lugar central para configurar esas direcciones URL externas y crearlas.
 
 Este artículo explica cómo configurar el servicio Externalizer y cómo utilizarlo. Para obtener detalles técnicos del servicio, consulte [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Comportamiento predeterminado del externalizador y cómo anularlo {#default-behavior}
 
-AEM De forma predeterminada, el servicio externalizador asigna un puñado de identificadores de dominio a prefijos de URL absolutos que coinciden con las URL de servicio de que se han generado para el entorno, como `author https://author-p12345-e6789.adobeaemcloud.com` y `publish https://publish-p12345-e6789.adobeaemcloud.com`. Las direcciones URL base para cada uno de estos dominios predeterminados se leen desde variables de entorno definidas por Cloud Manager.
+AEM De forma predeterminada, el servicio externalizador asigna un puñado de identificadores de dominio a prefijos de URL absolutos que coinciden con las URL del servicio de que se han generado para el entorno, como `author https://author-p12345-e6789.adobeaemcloud.com` y `publish https://publish-p12345-e6789.adobeaemcloud.com`. Las direcciones URL base para cada uno de estos dominios predeterminados se leen desde variables de entorno definidas por Cloud Manager.
 
-Como referencia, la configuración OSGi predeterminada para `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` es efectivamente:
+Como referencia, la configuración predeterminada de OSGi para `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` es efectivamente:
 
 ```json
 {
@@ -38,11 +38,11 @@ Como referencia, la configuración OSGi predeterminada para `com.day.cq.commons.
 
 >[!CAUTION]
 >
->El valor predeterminado `local`, `author`, `preview`, y `publish` Las asignaciones de dominio externalizador en la configuración OSGi deben conservarse con el original `$[env:...]` valores enumerados anteriormente.
+>Las asignaciones de dominio del externalizador `local`, `author`, `preview` y `publish` predeterminadas en la configuración OSGi deben conservarse con los valores `$[env:...]` originales enumerados arriba.
 >
->Implementación de un `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` AEM archivo a la que se va a crear un as a Cloud Service que omita cualquiera de estas asignaciones de dominio predeterminadas, lo que puede provocar un comportamiento impredecible en la aplicación.
+>La implementación de un archivo personalizado `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` en AEM as a Cloud Service que omita cualquiera de estas asignaciones de dominio predeterminadas puede dar como resultado un comportamiento de aplicación impredecible.
 
-Para anular la variable `preview` y `publish` Utilice las variables de entorno de Cloud Manager como se describe en el artículo [AEM Configuración de OSGi para la as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) y establecer el predefinido `AEM_CDN_DOMAIN_PUBLISH` y `AEM_CDN_DOMAIN_PREVIEW` variables.
+Para anular los valores `preview` y `publish`, use las variables de entorno de Cloud Manager como se describe en el artículo [Configuración de OSGi para AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) y configuración de las variables predefinidas `AEM_CDN_DOMAIN_PUBLISH` y `AEM_CDN_DOMAIN_PREVIEW`.
 
 ## Configuración del servicio externalizador {#configuring-the-externalizer-service}
 
@@ -50,7 +50,7 @@ El servicio externalizador permite definir de forma centralizada el dominio que 
 
 >[!NOTE]
 >
->Al igual que al aplicar cualquiera [AEM Configuraciones de OSGi para el as a Cloud Service de la,](/help/implementing/deploying/overview.md#osgi-configuration) los siguientes pasos deben realizarse en una instancia de desarrollador local y luego comprometerse con el código del proyecto para su implementación.
+>Al igual que al aplicar cualquier configuración de [OSGi para AEM as a Cloud Service,](/help/implementing/deploying/overview.md#osgi-configuration) los siguientes pasos deben realizarse en una instancia de desarrollador local y luego comprometerse con el código del proyecto para su implementación.
 
 Para definir una asignación de dominio para el servicio externalizador:
 
@@ -58,7 +58,7 @@ Para definir una asignación de dominio para el servicio externalizador:
 
    `https://<host>:<port>/system/console/configMgr`
 
-1. Clic **Externalizador de vínculos CQ de día** para abrir el cuadro de diálogo de configuración.
+1. Haga clic en **Externalizador de vínculos CQ de día** para abrir el cuadro de diálogo de configuración.
 
    ![La configuración OSGi del externalizador](./assets/externalizer-osgi.png)
 
@@ -66,7 +66,7 @@ Para definir una asignación de dominio para el servicio externalizador:
    >
    >El vínculo directo a la configuración es `https://<host>:<port>/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl`
 
-1. Defina un **Domains** asignación. Una asignación consta de un nombre único que se puede utilizar en el código para hacer referencia al dominio, a un espacio y al dominio:
+1. Defina una asignación de **dominios**. Una asignación consta de un nombre único que se puede utilizar en el código para hacer referencia al dominio, a un espacio y al dominio:
 
    `<unique-name> [scheme://]server[:port][/contextpath]`
 
@@ -79,21 +79,21 @@ Para definir una asignación de dominio para el servicio externalizador:
 
    * **`server`** es el nombre de host (un nombre de dominio o una dirección ip).
    * **`port`** (opcional) es el número de puerto.
-   * **`contextpath`** AEM (opcional) solo se establece si se instala la aplicación web como una aplicación web en una ruta de contexto diferente.
+   * AEM **`contextpath`** (opcional) solo se establece si se instala la aplicación web como una aplicación web en una ruta de contexto diferente.
 
    Por ejemplo: `production https://my.production.instance`
 
    AEM Los siguientes nombres de asignación están predefinidos y siempre deben configurarse, ya que se basa en ellos:
 
-   * `local` - la instancia local
-   * `author` - el sistema de creación DNS
-   * `publish` - el sitio web público DNS
+   * `local`: la instancia local
+   * `author`: DNS del sistema de creación
+   * `publish`: DNS del sitio web público
 
    >[!NOTE]
    >
-   >Una configuración personalizada le permite agregar una nueva categoría, como `production`, `staging` AEM o incluso sistemas externos no relacionados con el uso de la, como `my-internal-webservice`. Es útil evitar codificar estas URL en diferentes lugares del código base de un proyecto.
+   >AEM Una configuración personalizada le permite agregar una nueva categoría, como `production`, `staging` o incluso sistemas externos que no son de tipo de sistema, como `my-internal-webservice`, que no son de tipo de sistema (no de tipo de sistema), como . Es útil evitar codificar estas URL en diferentes lugares del código base de un proyecto.
 
-1. Clic **Guardar** para guardar los cambios.
+1. Haga clic en **Guardar** para guardar los cambios.
 
 ### Uso del servicio externalizador {#using-the-externalizer-service}
 
@@ -103,7 +103,7 @@ Esta sección muestra algunos ejemplos de cómo se puede utilizar el servicio Ex
 >
 >No se deben crear vínculos absolutos en el contexto de HTML. Por lo tanto, no utilice esta utilidad en estos casos.
 
-* **Para externalizar una ruta con el dominio &quot;publicar&quot;:**
+* **Para externalizar una ruta de acceso con el dominio &#39;publicar&#39;:**
 
   ```java
   String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
@@ -117,7 +117,7 @@ Esta sección muestra algunos ejemplos de cómo se puede utilizar el servicio Ex
 
    * `https://www.website.com/contextpath/my/page.html`
 
-* **Para externalizar una ruta con el dominio &quot;author&quot;:**
+* **Para externalizar una ruta de acceso con el dominio &#39;author&#39;:**
 
   ```java
   String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
@@ -131,7 +131,7 @@ Esta sección muestra algunos ejemplos de cómo se puede utilizar el servicio Ex
 
    * `https://author.website.com/contextpath/my/page.html`
 
-* **Para externalizar una ruta con el dominio &quot;local&quot;:**
+* **Para externalizar una ruta de acceso con el dominio &#39;local&#39;:**
 
   ```java
   String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
@@ -147,4 +147,4 @@ Esta sección muestra algunos ejemplos de cómo se puede utilizar el servicio Ex
 
 >[!TIP]
 >
->Puede encontrar más ejemplos en la [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
+>Puede encontrar más ejemplos en [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).

@@ -52,7 +52,7 @@ En función de su ubicación, puede publicar lo siguiente:
 
 >[!NOTE]
 >
->Si desea conservar el orden de la página, debe utilizar [Administrar publicación](#manage-publication) para publicar la página principal junto con cualquier página secundaria, en una sola acción.
+>Si desea conservar el orden de las páginas, debe usar [Administrar publicación](#manage-publication) para publicar la página principal junto con las páginas secundarias, en una sola acción.
 >
 >No se garantiza el orden de las páginas:
 >* si solo se seleccionan páginas secundarias para la publicación (ya que la información de pedido se mantiene en la página principal)
@@ -74,7 +74,7 @@ Si está editando una página, puede publicarla directamente desde el editor.
 
    * La página se publica directamente si no hay ninguna referencia por publicar.
    * Si la página tiene referencias que es necesario publicar, se enumeran en el asistente **Publicar**, donde puede:
-      * Especifique qué recurso, o etiquetas, etc. desea publicar junto con la página y, a continuación, utilice **Publish** para completar el proceso.
+      * Especifique cuál de los recursos, o etiquetas, etc., desea publicar junto con la página y, a continuación, utilice **Publish** para completar el proceso.
       * Utilizar **Cancelar** para anular la acción.
 
    ![Publicación de referencias con la página](/help/sites-cloud/authoring/assets/publishing-references.png)
@@ -93,7 +93,7 @@ Si está editando una página, puede publicarla directamente desde el editor.
 
 >[!NOTE]
 >
->Páginas a las que accede [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) en el editor no se puede publicar. Las opciones de publicación del editor solo están disponibles para las páginas a las que se accede mediante sus rutas reales.
+>No se pueden publicar las páginas a las que se tiene acceso mediante [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) en el editor. Las opciones de publicación del editor solo están disponibles para las páginas a las que se accede mediante sus rutas reales.
 
 ### Publicar desde la consola {#publishing-from-the-console}
 
@@ -108,7 +108,7 @@ En la consola Sitios hay dos opciones para la publicación:
 
 Para publicar una página con Publicación rápida:
 
-1. Seleccione la página o páginas en la consola Sitios y haga clic en **Publicación rápida** botón.
+1. Seleccione la página o páginas en la consola Sitios y haga clic en el botón **Quick Publish**.
 
    ![Selección de páginas para publicación](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -128,7 +128,7 @@ Para publicar una página con Publicación rápida:
 
 >[!NOTE]
 >
->Si desea conservar el orden de la página, debe utilizar **Administrar publicación** para publicar la página principal junto con las páginas secundarias en una sola acción.
+>Si desea conservar el orden de las páginas, debe usar **Administrar publicación** para publicar la página principal junto con las páginas secundarias en una sola acción.
 >
 >No se garantiza el orden de las páginas:
 >* si solo se seleccionan páginas secundarias para la publicación (ya que la información de pedido se mantiene en la página principal)
@@ -136,7 +136,7 @@ Para publicar una página con Publicación rápida:
 
 Para publicar o cancelar la publicación de una página con Administrar publicación:
 
-1. Seleccione la página o páginas en la consola Sitios y haga clic en **Administrar publicación** botón.
+1. Seleccione la página o páginas en la consola Sitios y haga clic en el botón **Administrar publicación**.
 
    ![Selección de páginas para publicación](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -240,17 +240,17 @@ De [forma similar a la publicación](#publishing-pages), se puede cancelar la p
 
 ### Cancelación de la publicación desde el editor     {#unpublishing-from-the-editor}
 
-Al editar una página, si desea cancelar la publicación de esa página, seleccione **Cancelar publicación de página** en el **Información de página** menú, tanto como lo haría [publicar la página](#publishing-from-the-editor).
+Al editar una página, si desea cancelar la publicación de esa página, seleccione **Cancelar la publicación de la página** en el menú **Información de la página**, de forma parecida a como lo haría [publicar la página](#publishing-from-the-editor).
 
 >[!NOTE]
 >
->Páginas a las que accede [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) en el editor no se puede cancelar la publicación. Las opciones de publicación del editor solo están disponibles para las páginas a las que se accede mediante sus rutas reales.
+>No se puede cancelar la publicación de las páginas a las que se accede mediante [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) en el editor. Las opciones de publicación del editor solo están disponibles para las páginas a las que se accede mediante sus rutas reales.
 
 ### Cancelación de la publicación desde la consola     {#unpublishing-from-the-console}
 
 Al igual que [utiliza la opción Administrar publicación para publicar](#manage-publication), puede usarla para cancelar la publicación.
 
-1. Seleccione la página o páginas en la consola Sitios y haga clic en **Administrar publicación** botón.
+1. Seleccione la página o páginas en la consola Sitios y haga clic en el botón **Administrar publicación**.
 1. Se inicia el asistente **Administrar publicación**. En el primer paso, **Opciones**, seleccione **Cancelar publicación** en lugar de la opción predeterminada **Publicar**.
 
    ![Cancelación de la publicación: opciones](/help/sites-cloud/authoring/assets/publishing-unpublish.png)

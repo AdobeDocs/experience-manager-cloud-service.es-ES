@@ -14,19 +14,19 @@ ht-degree: 45%
 
 # La Consola Sites {#sites-console}
 
-Aprenda a utilizar el **Sites** AEM para administrar y organizar las páginas de la.
+AEM Aprenda a utilizar la consola **Sitios** para administrar y organizar sus páginas de la lista de distribución de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de su lista de elementos de página.
 
 ## Orientación {#orientation}
 
-El **Sites** La consola de le permite ver la jerarquía de páginas.
+La consola **Sites** le permite ver la jerarquía de páginas.
 
 ![Vista de columna de la consola Sitios con un elemento seleccionado](assets/sites-console-column-view-selected.png)
 
 Ofrece diferentes vistas y barras de herramientas para ayudarle a administrar y organizar las páginas.
 
 * [La barra de herramientas de la consola](#toolbar) siempre está presente para ayudarle a navegar.
-* [Tres vistas diferentes](#views) le permite localizar y seleccionar fácilmente su página.
-* [Barra de herramientas de acciones](#action-toolbar) aparece cuando ha seleccionado un elemento para realizar una acción en él.
+* [Tres vistas diferentes](#views) le permiten localizar y seleccionar fácilmente su página.
+* [La barra de herramientas de acciones](#action-toolbar) aparece cuando ha seleccionado un elemento para realizar acciones en él.
 * [El panel lateral](#side-panel) tiene varias opciones para mostrar información detallada en una página seleccionada.
 
 ## Barra de herramientas de consola {#console-toolbar}
@@ -45,7 +45,7 @@ Las opciones presentadas dependen de la consola actual. Por ejemplo, en **Sitios
 
 ![Ejemplo de selector de panel lateral](assets/sites-console-side-panel-selector.png)
 
-Para obtener más información sobre el panel lateral, consulte el documento [Panel lateral de la consola Sites.](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
+Para obtener más información acerca del panel lateral, consulte el documento [Panel lateral de la consola Sites.](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
 
 ### Rutas de exploración {#breadcrumbs}
 
@@ -60,22 +60,22 @@ Toque o haga clic en el texto de la ruta de exploración para mostrar una lista 
 
 ### Seleccionar todo {#select-all}
 
-Toque o haga clic en **Seleccionar todo** selecciona todos los elementos de la vista actual de la consola.
+Al tocar o hacer clic en el botón **Seleccionar todo** se seleccionan todos los elementos de la vista actual de la consola.
 
-![Botón Seleccionar todo](assets/sites-console-select-all.png)
+![Seleccionar todos los botones](assets/sites-console-select-all.png)
 
-Cuando haya seleccionado todos los elementos, el recuento de los elementos seleccionados se mostrará en la parte superior derecha de la barra de herramientas, donde aparece el **Seleccionar todo** aparece el botón.
+Cuando haya seleccionado todos los elementos, el recuento de los elementos seleccionados se mostrará en la parte superior derecha de la barra de herramientas donde apareció el botón **Seleccionar todo**.
 
 Para anular la selección de todos los elementos y salir del modo de selección:
 
 * Tocando o haciendo clic en **X** junto al recuento.
-* Uso del **escapar** clave.
+* Usando la clave **escape**.
 
 ![Anular todas las selecciones](assets/sites-console-deselect-all.png)
 
 ### Botón Crear {#create-button}
 
-El **Crear** Este botón le permite agregar nuevas páginas al sitio, así como crear objetos de sitio adicionales como Live Copies o Lanzamientos.
+El botón **Crear** le permite agregar nuevas páginas a su sitio, así como crear objetos de sitios adicionales como Live Copies o Lanzamientos.
 
 ![Botón Crear](assets/sites-console-create.png)
 
@@ -85,20 +85,20 @@ Una vez que se ha hecho clic, las opciones mostradas son apropiadas para la cons
 * [Sitio](/help/sites-cloud/administering/site-creation/create-site.md)
 * [Live Copy](/help/sites-cloud/administering/msm/overview.md)
 * [Iniciar](/help/sites-cloud/authoring/launches/overview.md)
-* [Copiar idioma](/help/sites-cloud/administering/translation/overview.md)
+* [Copia de idioma](/help/sites-cloud/administering/translation/overview.md)
 * [Informe CSV](/help/sites-cloud/authoring/sites-console/csv-export.md)
 
 Consulte los vínculos a estas funciones para obtener más información sobre cómo funcionan.
 
 ## Vistas y selección de páginas {#views}
 
-El **Sites** La consola de ofrece tres vistas diferentes de la jerarquía de contenido. Puede ver, navegar y seleccionar sus recursos (para realizar más acciones) con cualquiera de las vistas disponibles.
+La consola **Sites** ofrece tres vistas diferentes de la jerarquía de contenido. Puede ver, navegar y seleccionar sus recursos (para realizar más acciones) con cualquiera de las vistas disponibles.
 
 * [Vista de columna](#column-view)
 * [Vista de tarjeta](#card-view)
 * [Vista de lista   ](#list-view)
 
-El **Ver** AEM situado en el extremo derecho de la barra de herramientas de la barra de herramientas de la, indica la vista actual seleccionada.
+AEM El icono **Ver** situado en el extremo derecho de la barra de herramientas de la barra de herramientas de la indica la vista actual seleccionada.
 
 Tocar o hacer clic en ella le permite seleccionar una vista diferente.
 
@@ -185,7 +185,7 @@ La vista de tarjeta también ofrece [acciones rápidas](#quick-actions) para ele
 
 ![Acciones rápidas](assets/sites-console-quick-actions.png)
 
-Puede navegar hacia abajo en el árbol tocando o haciendo clic en las tarjetas (con cuidado de evitar tocar las acciones rápidas), o hacia arriba de nuevo mediante el icono [rutas de exploración en el encabezado](#the-header).
+Puede navegar hacia abajo en el árbol tocando o haciendo clic en las tarjetas (con cuidado de evitar tocar las acciones rápidas), o hacia arriba de nuevo utilizando las [rutas de exploración en el encabezado](#the-header).
 
 ### Vista de lista    {#list-view}
 
@@ -194,7 +194,7 @@ La vista de lista proporciona información para cada recurso del nivel actual de
 ![Vista de lista](assets/sites-console-list-view.png)
 
 * Puede navegar hacia abajo en el árbol tocando o haciendo clic en el nombre del recurso, y hacia arriba utilizando las [rutas de exploración en el encabezado](#the-header).
-* Para seleccionar fácilmente todos los elementos de la lista, utilice el [**Seleccionar todo** de la barra de herramientas.](#select-all)
+* Para seleccionar fácilmente todos los elementos de la lista, use la casilla de verificación [**Seleccionar todo** de la barra de herramientas.](#select-all)
 
 * Seleccione las columnas a mostrar mediante la opción **Ajustes de visualización**, que se encuentra debajo del botón Vistas. Las siguientes columnas están disponibles para su visualización:
 
@@ -230,30 +230,30 @@ Seleccione la barra de selección vertical y arrastre el elemento a una nueva po
 
 Siempre que se selecciona un recurso, se pueden realizar varias acciones en el elemento seleccionado. Estas acciones se muestran en la barra de herramientas de acciones.
 
-![Barra Acciones](assets/introduction-actions-toolbar.png)
+![Barra de herramientas de acciones](assets/introduction-actions-toolbar.png)
 
 La barra de herramientas de acciones solo aparece cuando se selecciona un recurso en la consola. La acción disponible en la barra de herramientas de acciones cambia para reflejar las acciones que puede realizar en los elementos específicos seleccionados. Las acciones más comunes son:
 
-* [**Crear**](#create-action) : cree nuevo contenido o acciones relacionadas con el contenido
-* **Editar** : Según cómo se haya creado la página seleccionada, la variable **Editar** La acción abrirá el editor correspondiente.
-   * [Editor de página](/help/sites-cloud/authoring/page-editor/introduction.md) AEM - Para páginas creadas con el Editor de páginas de la
-   * [Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md) - Para páginas creadas con el editor universal
-* [**Propiedades**](/help/sites-cloud/authoring/sites-console/page-properties.md) - Abre la ventana de propiedades de la página
-* [**Bloquear**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - Bloquear una página para evitar que otros la cambien
+* [**Crear**](#create-action) - Crear nuevo contenido o acciones relacionadas con contenido
+* **Editar**: según cómo se haya creado la página seleccionada, la acción **Editar** abrirá el editor correspondiente.
+   * AEM [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md) - Para páginas creadas con el Editor de páginas de la página de la
+   * [Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md) - Para páginas creadas con el Editor universal
+* [**Propiedades**](/help/sites-cloud/authoring/sites-console/page-properties.md): abre la ventana de propiedades de la página
+* [**Bloquear**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page): bloquea una página para evitar que otros la cambien
 * [**Copiar**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - Copiar una página
-* [**Mover**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - Mover una página o cambiarle el nombre
-* [**Publicación rápida**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Publicar una página o páginas inmediatamente
+* [**Mover**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page): mover o cambiar el nombre de una página
+* [**Publish rápido**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish): Publish crea una página o páginas inmediatamente
 * [**Administrar publicación**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - Programar una o varias páginas para su publicación
 * [**Restaurar**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - Restaurar una versión de una página o árbol de páginas
 * [**Eliminar**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - Eliminar una o varias páginas
 
-Debido a las restricciones de espacio en algunas ventanas, es posible que la barra de herramientas supere rápidamente la longitud disponible. Cuando esto ocurre, aparecen opciones adicionales. Tocando o haciendo clic en los puntos suspensivos (los tres puntos o **...**) abre un selector desplegable que contiene todas las acciones restantes.
+Debido a las restricciones de espacio en algunas ventanas, es posible que la barra de herramientas supere rápidamente la longitud disponible. Cuando esto ocurre, aparecen opciones adicionales. Al tocar o hacer clic en los puntos suspensivos (los tres puntos o **...**), se abre un selector desplegable que contiene todas las acciones restantes.
 
 ![Opciones adicionales](assets/sites-console-additional-options.png)
 
 ### Crear acción {#create-action}
 
-La acción crear ofrece opciones similares a las de [**Crear** botón barra de herramientas](#create-button) para crear páginas nuevas y elementos similares.
+La acción Crear ofrece opciones similares al botón [**Crear** de la barra de herramientas](#create-button) para crear páginas nuevas y elementos similares.
 
 Además, ofrece la capacidad de crear acciones relacionadas con la página.
 

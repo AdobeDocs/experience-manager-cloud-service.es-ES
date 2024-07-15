@@ -19,19 +19,19 @@ ht-degree: 16%
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html) |
 | AEM as a Cloud Service | Este artículo |
 
-[!DNL Adobe Experience Manager Assets] permite agregar una marca de agua digital a imágenes y vídeos. [!DNL Assets] admite la aplicación de una imagen como marca de agua a otros archivos de imagen. Las marcas de agua pueden ayudar a los usuarios a verificar la autenticidad y la propiedad de los derechos de autor de los recursos. Además, se puede utilizar una marca de agua para indicar el estado de un documento como confidencial, borrador, validez, etc.
+[!DNL Adobe Experience Manager Assets] le permite agregar una marca de agua digital a imágenes y vídeos. [!DNL Assets] admite la aplicación de una imagen como marca de agua a otros archivos de imagen. Las marcas de agua pueden ayudar a los usuarios a verificar la autenticidad y la propiedad de los derechos de autor de los recursos. Además, se puede utilizar una marca de agua para indicar el estado de un documento como confidencial, borrador, validez, etc.
 
-Para configurar [!DNL Experience Manager] a los recursos de marca de agua:
+Para configurar [!DNL Experience Manager] en los recursos de marca de agua:
 
 1. Un archivo PNG se aplica como marca de agua. Cargue este archivo en su repositorio DAM.
 
-1. Vaya a **[!UICONTROL Herramientas > Recursos > Configuraciones de recursos]**.
+1. Vaya a **[!UICONTROL Herramientas > Assets > Configuraciones de Assets]**.
 
-1. Clic **[!UICONTROL Perfil de marca de agua del sistema]**.
+1. Haga clic en **[!UICONTROL Perfil de marca de agua del sistema]**.
 
-1. En el [!UICONTROL Página Perfil de Filigrana del Sistema], especifique la ruta de la imagen cargada en el repositorio de DAM en el paso 1.
+1. En la [!UICONTROL página Perfil de marca de agua del sistema], especifique la ruta de acceso de la imagen cargada en el repositorio DAM en el paso 1.
 
-1. Especifique la escala de la marca de agua, de 0,0 a 1,0, en relación con la anchura de la representación, en la **[!UICONTROL Escala]** field.
+1. Especifique la escala de la marca de agua, de 0,0 a 1,0, en relación con la anchura de la representación, en el campo **[!UICONTROL Escala]**.
 
 1. Haga clic en **[!UICONTROL Guardar]**.
 
@@ -39,16 +39,16 @@ Para configurar [!DNL Experience Manager] a los recursos de marca de agua:
 
    >[!NOTE]
    >
-   >Si ha configurado el perfil de marca de agua del sistema con `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` archivo de configuración (configuración OSGi), puede seguir utilizándolo, sin embargo, Adobe recomienda utilizar el nuevo método.
+   >Si ha configurado el perfil de marca de agua del sistema usando el archivo de configuración `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` (configuración OSGi), puede seguir usándolo; sin embargo, Adobe recomienda usar el nuevo método.
 
 
-1. [Creación de un perfil de procesamiento](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) para utilizar microservicios de recursos para aplicar la marca de agua.
+1. [Cree un perfil de procesamiento](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) para usar microservicios de recursos y aplicar la marca de agua.
 
    ![Perfil de procesamiento de recursos para crear una marca de agua](assets/watermark-processing-profile.png)
 
-   Asegúrese de habilitar la variable **[!UICONTROL Filigrana]** al crear el perfil de procesamiento.
+   Asegúrese de habilitar la opción **[!UICONTROL Marca de agua]** al crear el perfil de procesamiento.
 
-1. [Aplicación de los perfiles de procesamiento a una carpeta](/help/assets/asset-microservices-configure-and-use.md#use-profiles) para crear recursos con marca de agua.
+1. [Aplique los perfiles de procesamiento a una carpeta](/help/assets/asset-microservices-configure-and-use.md#use-profiles) para crear recursos con marca de agua.
 
 ## Sugerencias y limitaciones {#tips-limitations-bestpractices}
 
@@ -74,5 +74,5 @@ Para configurar [!DNL Experience Manager] a los recursos de marca de agua:
 
 >[!MORELIKETHIS]
 >
->* [Información general sobre microservicios de recursos](/help/assets/asset-microservices-overview.md).
->* [Uso de microservicios de recursos con perfiles de procesamiento](/help/assets/asset-microservices-configure-and-use.md).
+>* [Resumen de microservicios de recursos](/help/assets/asset-microservices-overview.md).
+>* [Usar microservicios de recursos con perfiles de procesamiento](/help/assets/asset-microservices-configure-and-use.md).

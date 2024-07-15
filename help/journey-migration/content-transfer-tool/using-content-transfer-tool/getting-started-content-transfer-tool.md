@@ -23,7 +23,7 @@ ht-degree: 16%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=es" text="Notas de la versión"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html" text="Portal de distribución de software"
 
-La herramienta de transferencia de contenido se puede descargar como un archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante las siguientes opciones [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en la instancia de origen de Adobe Experience Manager AEM (). Asegúrese de descargar la versión más reciente. Para obtener más información sobre la versión más reciente, consulte [Notas de versión](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=es).
+La herramienta de transferencia de contenido se puede descargar como un archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en la instancia de Adobe Experience Manager AEM () de origen. Asegúrese de descargar la versión más reciente. Para obtener más información sobre la versión más reciente, consulte [Notas de la versión](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=es).
 
 Solo se admite la versión 2.0.0 y posteriores, y es aconsejable utilizar la versión más reciente.
 
@@ -38,7 +38,7 @@ Solo se admite la versión 2.0.0 y posteriores, y es aconsejable utilizar la ver
 
 AEM La instancia de origen puede estar ejecutándose detrás de un cortafuegos donde solo puede llegar a ciertos hosts que se han añadido a una Lista de permitidos. AEM Para ejecutar correctamente una extracción, es necesario poder acceder a los siguientes puntos finales desde la instancia que se está ejecutando
 
-* El servicio Azure Blob Storage: `casstorageprod.blob.core.windows.net`
+* El servicio de almacenamiento del blob de Azure: `casstorageprod.blob.core.windows.net`
 
 >[!NOTE]
 >Si la extracción falla debido al siguiente error : &quot;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: Error al crear la ruta PKIX: sun.security.provider.certpath.SunCertPathBuilderException: no se puede encontrar la ruta de certificación válida al destino solicitado&quot;, esto se puede resolver importando el certificado de CA correspondiente.
@@ -48,9 +48,9 @@ AEM La instancia de origen puede estar ejecutándose detrás de un cortafuegos d
 A veces, es difícil comprender los problemas de conexión SSL/TLS. AEM Para solucionar los problemas de conexión durante un proceso de extracción, puede habilitar el registro SSL a través de la consola del sistema del entorno de origen de la aplicación de origen siguiendo estos pasos:
 
 1. Vaya a la consola web de Adobe Experience Manager en la instancia de origen, en **Herramientas > Operaciones > Consola web** o directamente a la dirección URL en *https://serveraddress:serverport/system/console/configMgr*
-1. Buscar por **Configuración del servicio de extracción de herramienta de transferencia de contenido**
+1. Buscar **Configuración del servicio de extracción de herramienta de transferencia de contenido**
 1. Utilice el botón del icono de lápiz para editar sus valores de configuración
-1. Habilite la **Habilitar el registro SSL para la extracción** configuración, luego pulse **Guardar**:
+1. Habilite la opción **Habilitar el registro ssl para la extracción** y, a continuación, presione **Guardar**:
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
 
@@ -80,7 +80,7 @@ La siguiente sección se aplica a la nueva versión de la herramienta de transfe
 
 1. Inicie sesión en Cloud Acceleration Manager (CAM) y haga clic en el proyecto CAM que había creado anteriormente para evaluar su preparación para pasar a AEM as a Cloud Service. Si no ha creado ningún proyecto CAM, consulte Creación y gestión de un proyecto en CAM.
 
-1. Haga clic en **Transferencia de contenido** para abrir la vista Lista del conjunto de migraciones.
+1. Haga clic en la tarjeta **Transferencia de contenido** para abrir la vista Lista de conjuntos de migración.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
@@ -92,15 +92,15 @@ La siguiente sección se aplica a la nueva versión de la herramienta de transfe
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
-   Se muestra el siguiente cuadro de diálogo. Tenga en cuenta que un conjunto de migración caducará después de un período prolongado de inactividad. Después de mostrar advertencias en la tarjeta de proyecto y en las filas de la tabla de trabajos de migración durante un período de tiempo, el conjunto de migración caducará y sus datos dejarán de estar disponibles. Revisar [Caducidad del conjunto de migración](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) para obtener más información.
+   Se muestra el siguiente cuadro de diálogo. Tenga en cuenta que un conjunto de migración caducará después de un período prolongado de inactividad. Después de mostrar advertencias en la tarjeta de proyecto y en las filas de la tabla de trabajos de migración durante un período de tiempo, el conjunto de migración caducará y sus datos dejarán de estar disponibles. Revise [Expiración del conjunto de migración](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) para obtener detalles.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
    >[!NOTE]
    >
-   >AEM El nombre debe seguir las mismas convenciones de un nodo de, por lo que no puede contener ninguno de estos caracteres: . / : [ ] | *
+   >AEM El nombre debe seguir las mismas convenciones de un nodo de la, por lo que no puede contener ninguno de estos caracteres: . / : [ ] | *
 
-1. Ahora debería ver la lista de migración en la vista de lista. Seleccione el símbolo de tres puntos (**...**) para abrir la lista desplegable y seleccionar **Copiar clave de extracción**. Necesita esta clave durante la fase de extracción. Copie esta clave de extracción.
+1. Ahora debería ver la lista de migración en la vista de lista. Seleccione el símbolo de tres puntos (**...**) para abrir la lista desplegable y seleccione **Copiar clave de extracción**. Necesita esta clave durante la fase de extracción. Copie esta clave de extracción.
 
    >[!NOTE]
    >
@@ -118,40 +118,40 @@ La siguiente sección se aplica a la nueva versión de la herramienta de transfe
 
 Para rellenar el conjunto de migración que ha creado en Cloud Acceleration Manager, instale la versión más reciente de la herramienta de transferencia de contenido en la instancia de origen de Adobe Experience Manager AEM (). Para obtener información sobre cómo rellenar el conjunto de migración, siga esta sección.
 
-1. Después de instalar la versión más reciente de la herramienta de transferencia de contenido en la instancia de Adobe Experience Manager de origen, vaya a **Operaciones: migración de contenido**
+1. Después de instalar la versión más reciente de la herramienta de transferencia de contenido en la instancia de Adobe Experience Manager de origen, vaya a **Operaciones - Migración de contenido**
 
-1. Clic **Crear conjunto de migración**.
+1. Haga clic en **Crear conjunto de migración**.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
-1. Pegue la clave de extracción que se copió de CAM anteriormente en el campo de entrada de la clave de extracción de **Crear conjunto de migración** formulario. Después de hacer esto, los campos Nombre del conjunto de migración y Nombre del proyecto de Cloud Acceleration Manager (CAM) se rellenan automáticamente. Deben coincidir con el nombre del conjunto de migración de CAM y el nombre del proyecto de CAM que ha creado. Ahora puede añadir rutas de contenido. Después de agregar las rutas de contenido, guarde el conjunto de migración. Puede ejecutar la extracción con cualquiera de las versiones incluidas o excluidas.
+1. Pegue la clave de extracción que copió de CAM anteriormente en el campo de entrada de la clave de extracción del formulario **Crear conjunto de migración**. Después de hacer esto, los campos Nombre del conjunto de migración y Nombre del proyecto de Cloud Acceleration Manager (CAM) se rellenan automáticamente. Deben coincidir con el nombre del conjunto de migración de CAM y el nombre del proyecto de CAM que ha creado. Ahora puede añadir rutas de contenido. Después de agregar las rutas de contenido, guarde el conjunto de migración. Puede ejecutar la extracción con cualquiera de las versiones incluidas o excluidas.
 
    >[!NOTE]
    >
-   >Asegúrese de que la clave de extracción sea válida y no esté cerca de su caducidad. Puede obtener esta información en la **Crear conjunto de migración** después de pegar la clave de extracción. Si aparece un error de conexión, consulte [Conectividad del entorno de Source](#source-environment-connectivity) para obtener más información.
+   >Asegúrese de que la clave de extracción sea válida y no esté cerca de su caducidad. Puede obtener esta información en el cuadro de diálogo **Crear conjunto de migración** después de pegar la clave de extracción. Si se produce un error de conexión, consulte [Conectividad del entorno de Source](#source-environment-connectivity) para obtener más información.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
 
 1. A continuación, seleccione los siguientes parámetros para crear un conjunto de migración:
 
-   1. **Incluir versión**: seleccione según sea necesario. Cuando se incluyen versiones, la ruta `/var/audit` para migrar eventos de auditoría.
+   1. **Incluir versión**: seleccione según sea necesario. Cuando se incluyen versiones, la ruta `/var/audit` se incluye automáticamente para migrar eventos de auditoría.
 
       ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam7.png)
 
       >[!NOTE]
-      >Si tiene intención de incluir versiones como parte de un conjunto de migración y realiza recargas con `wipe=false`, debe deshabilitar la depuración de versiones debido a una limitación actual en la herramienta de transferencia de contenido. Si prefiere mantener habilitada la depuración de versiones y realiza recargas en un conjunto de migración, debe realizar la ingesta como `wipe=true`.
+      >Si tiene intención de incluir versiones como parte de un conjunto de migración y está realizando recargas con `wipe=false`, debe deshabilitar la depuración de versiones debido a una limitación actual en la herramienta de transferencia de contenido. Si prefiere mantener habilitada la depuración de versiones y realiza recargas en un conjunto de migración, debe realizar la ingesta como `wipe=true`.
 
 
-   1. **Rutas que se incluirán**: utilice el explorador de rutas para seleccionar las rutas que deben migrarse. El selector de rutas acepta entradas escribiendo o seleccionando.
+   1. **Rutas que se incluirán**: use el explorador de rutas para seleccionar las rutas que deben migrarse. El selector de rutas acepta entradas escribiendo o seleccionando.
 
       >[!IMPORTANT]
       >Las siguientes rutas están restringidas al crear un conjunto de migración:
       >* `/apps`
       >* `/libs`
       >* `/home`
-      >* `/etc` (algunos `/etc` se permite seleccionar las rutas en CTT)
+      >* `/etc` (se permite seleccionar algunas `/etc` rutas en CTT)
 
-1. Clic **Guardar** después de rellenar todos los campos en la variable **Crear conjunto de migración** pantalla de detalles.
+1. Haga clic en **Guardar** después de rellenar todos los campos en la pantalla de detalles de **Crear conjunto de migración**.
 
 <!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
 
@@ -172,7 +172,7 @@ Para rellenar el conjunto de migración que ha creado en Cloud Acceleration Mana
 Después de crear un conjunto de migración, es muy recomendable ejecutar una comprobación de tamaño en el conjunto antes de iniciar un proceso de extracción.
 Al realizar una comprobación de tamaño en el conjunto de migración, puede:
 
-* Determine si hay suficiente espacio en disco en la `crx-quickstart` subdirectorio para completar la extracción correctamente.
+* Determine si hay suficiente espacio en disco en el subdirectorio `crx-quickstart` para completar la extracción correctamente.
 * Determine si el tamaño del conjunto de migración se encuentra dentro de los límites del producto admitido y evite las ingestas de contenido fallidas.
 
 Siga los pasos a continuación para ejecutar una comprobación de tamaño:
@@ -181,19 +181,19 @@ Siga los pasos a continuación para ejecutar una comprobación de tamaño:
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam8.png)
 
-1. Esto abre el **Comprobar tamaño** diálogo.
+1. Esto abre el cuadro de diálogo **Comprobar tamaño**.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
-1. Clic **Comprobar tamaño** para iniciar el proceso. Volverá a la vista de lista del conjunto de migración y verá un mensaje que indica que **Comprobar tamaño** se está ejecutando.
+1. Haga clic en **Comprobar tamaño** para iniciar el proceso. Volverá a la vista de lista del conjunto de migración y verá un mensaje que indica que **Comprobar tamaño** se está ejecutando.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
-1. Después **Comprobar tamaño** el proceso se ha completado, el estado cambia a **FINALIZADO**. Seleccione el mismo conjunto de migración y haga clic en **Comprobar tamaño** para ver los resultados. A continuación se muestra un ejemplo de **Comprobar tamaño** resultados sin advertencias.
+1. Una vez completado el proceso **Comprobar tamaño**, el estado cambia a **FINALIZADO**. Seleccione el mismo conjunto de migración y haga clic en **Comprobar tamaño** para ver los resultados. A continuación se muestra un ejemplo de **Comprobar tamaño** resultados sin advertencias.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
 
-1. Si la variable **Comprobar tamaño** los resultados indican que no hay suficiente espacio en disco o que el conjunto de migración supera los límites del producto, o ambos, un **ADVERTENCIA** se muestra el estado.
+1. Si los resultados de **Comprobar tamaño** indican que no hay suficiente espacio en disco o que el conjunto de migración supera los límites del producto, o ambos, se muestra un estado **ADVERTENCIA**.
 
 <!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
    
@@ -204,4 +204,4 @@ Siga los pasos a continuación para ejecutar una comprobación de tamaño:
 
 ## Siguientes pasos {#whats-next}
 
-Una vez que haya aprendido a crear un conjunto de migración, ya puede obtener información sobre los procesos de extracción e ingesta en la herramienta de transferencia de contenido. Antes de aprender estos procesos, debe revisar [Gestión de repositorios de contenido grandes](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) para acelerar de forma significativa las fases de extracción e ingesta de la actividad de transferencia de contenido y mover contenido a AEM as a Cloud Service.
+Una vez que haya aprendido a crear un conjunto de migración, ya puede obtener información sobre los procesos de extracción e ingesta en la herramienta de transferencia de contenido. Antes de aprender estos procesos, debe revisar [Gestión de repositorios de contenido grandes](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) para acelerar de manera significativa las fases de extracción e ingesta de la actividad de transferencia de contenido y mover contenido a AEM as a Cloud Service.

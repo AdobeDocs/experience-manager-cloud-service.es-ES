@@ -13,21 +13,21 @@ ht-degree: 5%
 
 # Problema al publicar formularios{#form-creation-fails}
 
-Después de que los usuarios actualicen a la versión as a Cloud Service de AEM Forms `2024.5.16461`:
+Después de que los usuarios actualicen a AEM Forms as a Cloud Service version `2024.5.16461`:
 
-**Algunos usuarios** puede tener problemas al crear formularios, de modo que cuando un usuario crea un formulario, aparece el siguiente mensaje de error en el cuadro de diálogo de creación:
+**Algunos usuarios** pueden tener problemas al crear formularios; el problema es tal que cuando un usuario crea un formulario, aparece el siguiente mensaje de error en el cuadro de diálogo de creación:
 
 `A server error occurred. Try again after sometime.`
 
 ## Causa {#cause-form-creation-fails}
 
-El problema se produce porque el autor publica el formulario sin **primero, publicar la plantilla** se usa en él. Esto resulta en la adición de la variable `jcr:uuid` y otras propiedades protegidas y generadas por el sistema a `<template-path>/initial/jcr:content` , lo que provoca errores en la creación posterior de formularios.
+El problema se debe a que el autor publica el formulario sin **publicar primero la plantilla** usada en él. Esto provoca la adición de `jcr:uuid` y otras propiedades protegidas y generadas por el sistema al nodo `<template-path>/initial/jcr:content`, lo que provoca errores en la creación posterior de formularios.
 
 ## Solución alternativa {#resolution-form-creation-fails}
 
 Para resolver el problema, realice los siguientes pasos:
 
-1. Asegúrese de que la plantilla utilizada en el formulario no tenga el `jcr:uuid` y otras propiedades protegidas generadas por el sistema en la ruta `<template-path>/initial/jcr:content node`.
+1. Asegúrese de que la plantilla utilizada en el formulario no tenga `jcr:uuid` ni otras propiedades protegidas generadas por el sistema en la ruta de acceso `<template-path>/initial/jcr:content node`.
 1. Publish la plantilla de forma explícita mediante la consola de plantillas.
 1. Ahora, cuando se publique la plantilla, intente crear nuevos formularios con la plantilla.
 1. Si la plantilla utilizada se actualiza en futuras versiones, Publish la vuelve a utilizar (como se indica en el paso 2) para evitar problemas de error al crear el formulario.

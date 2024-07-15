@@ -1,6 +1,6 @@
 ---
 title: API HTTP de recursos
-description: Cree, lea, actualice, elimine y administre recursos digitales mediante la API HTTP en [!DNL Experience Manager Assets].
+description: Cree, lea, actualice, elimine y administre recursos digitales mediante la API HTTP en  [!DNL Experience Manager Assets].
 contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
@@ -12,7 +12,7 @@ ht-degree: 5%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] API HTTP {#assets-http-api}
+# API HTTP [!DNL Adobe Experience Manager Assets] {#assets-http-api}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -21,28 +21,28 @@ ht-degree: 5%
 
 ## Información general {#overview}
 
-El [!DNL Assets] La API HTTP permite realizar operaciones de creación, lectura, actualización y eliminación (CRUD) en recursos digitales, incluidos metadatos, representaciones y comentarios, así como contenido estructurado mediante [!DNL Experience Manager] Fragmentos de contenido. Se expone en `/api/assets` y se implementa como API de REST. Incluye [compatibilidad con fragmentos de contenido](/help/assets/content-fragments/assets-api-content-fragments.md).
+La API HTTP [!DNL Assets] permite realizar operaciones de creación, lectura, actualización y eliminación (CRUD) en recursos digitales, incluidos metadatos, representaciones y comentarios, así como contenido estructurado mediante [!DNL Experience Manager] fragmentos de contenido. Se expone en `/api/assets` y se implementa como API de REST. Incluye [compatibilidad con fragmentos de contenido](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 >[!NOTE]
 >
-> Hay disponible una implementación modernizada de OpenAPI de la API de administración de fragmentos de contenido. Para obtener toda la documentación, consulte [API de administración de fragmentos de contenido](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). Se recomienda utilizar la nueva implementación de OpenAPI. El uso existente de la API HTTP de Assets para fragmentos de contenido debe migrarse a la nueva API abierta de administración de fragmentos de contenido.
+> Hay disponible una implementación modernizada de OpenAPI de la API de administración de fragmentos de contenido. Para obtener documentación completa, consulte [API de administración de fragmentos de contenido](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). Se recomienda utilizar la nueva implementación de OpenAPI. El uso existente de la API HTTP de Assets para fragmentos de contenido debe migrarse a la nueva API abierta de administración de fragmentos de contenido.
 
 Para acceder a la API:
 
 1. Abra el documento de servicio de API en `https://[hostname]:[port]/api.json`.
-1. Siga las [!DNL Assets] vínculo de servicio que lleva a `https://[hostname]:[server]/api/assets.json`.
+1. Seguir el vínculo de servicio [!DNL Assets] que lleva a `https://[hostname]:[server]/api/assets.json`.
 
 La respuesta de la API es un archivo JSON para algunos tipos de MIME y un código de respuesta para todos los tipos de MIME. La respuesta JSON es opcional y es posible que no esté disponible, por ejemplo, para archivos de PDF. Confíe en el código de respuesta para realizar más análisis o acciones.
 
 >[!NOTE]
 >
->Todas las llamadas de la API relacionadas con la carga o actualización de recursos o binarios en general (como representaciones) están en desuso para [!DNL Experience Manager] as a [!DNL Cloud Service] implementación. Para cargar binarios, utilice [API de carga binaria directa](developer-reference-material-apis.md#asset-upload) en su lugar.
+>Todas las llamadas de API relacionadas con la carga o actualización de recursos o binarios en general (como representaciones) están en desuso para [!DNL Experience Manager] como una implementación de [!DNL Cloud Service]. Para cargar binarios, usa [API de carga binaria directa](developer-reference-material-apis.md#asset-upload).
 
 ## Fragmentos de contenido {#content-fragments}
 
-A [Fragmento de contenido](/help/assets/content-fragments/content-fragments.md) es un tipo especial de recurso. Se puede utilizar para acceder a datos estructurados, como textos, números, fechas, entre otros. Dado que existen varias diferencias con `standard` Recursos (como imágenes o documentos), algunas reglas adicionales se aplican a la gestión de fragmentos de contenido.
+Un [fragmento de contenido](/help/assets/content-fragments/content-fragments.md) es un tipo especial de recurso. Se puede utilizar para acceder a datos estructurados, como textos, números, fechas, entre otros. Dado que existen varias diferencias entre los recursos de `standard` (como imágenes o documentos), algunas reglas adicionales se aplican al manejo de fragmentos de contenido.
 
-Para obtener más información, consulte [Compatibilidad con fragmentos de contenido en [!DNL Experience Manager Assets] API HTTP](/help/assets/content-fragments/assets-api-content-fragments.md).
+Para obtener más información, consulte [Compatibilidad con fragmentos de contenido en la [!DNL Experience Manager Assets] API HTTP](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Para obtener más información, consulte [Compatibilidad con fragmentos de conte
 
 ## Modelo de datos {#data-model}
 
-El [!DNL Assets] La API HTTP expone dos elementos principales, carpetas y recursos (para recursos estándar). Además, expone elementos más detallados para los modelos de datos personalizados que describen el contenido estructurado en Fragmentos de contenido. Consulte [Modelos de datos de fragmentos de contenido](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) para obtener más información.
+La API HTTP [!DNL Assets] expone dos elementos, carpetas y recursos principales (para recursos estándar). Además, expone elementos más detallados para los modelos de datos personalizados que describen el contenido estructurado en Fragmentos de contenido. Consulte [Modelos de datos de fragmentos de contenido](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) para obtener más información.
 
 >[!NOTE]
 >
@@ -69,21 +69,21 @@ Las carpetas son como los directorios, como en los sistemas de archivos tradicio
 
 >[!NOTE]
 >
->Algunas propiedades de la carpeta o el recurso se asignan a un prefijo diferente. El `jcr` prefijo de `jcr:title`, `jcr:description`, y `jcr:language` se han reemplazado por `dc` prefijo. Por lo tanto, en el JSON devuelto, `dc:title` y `dc:description` contiene los valores de `jcr:title` y `jcr:description`, respectivamente.
+>Algunas propiedades de la carpeta o el recurso se asignan a un prefijo diferente. El prefijo `jcr` de `jcr:title`, `jcr:description` y `jcr:language` se reemplaza por el prefijo `dc`. Por lo tanto, en el JSON devuelto, `dc:title` y `dc:description` contienen los valores de `jcr:title` y `jcr:description`, respectivamente.
 
 **Vínculos** Las carpetas muestran tres vínculos:
 
-* `self`: vínculo a sí mismo.
+* `self`: vínculo consigo mismo.
 * `parent`: vínculo a la carpeta principal.
-* `thumbnail`: (Opcional) vínculo a una imagen en miniatura de la carpeta.
+* `thumbnail`: (Opcional) vínculo a una imagen en miniatura de carpeta.
 
 ### Recursos {#assets}
 
-Entrada [!DNL Experience Manager] un recurso contiene los siguientes elementos:
+En [!DNL Experience Manager], un recurso contiene los siguientes elementos:
 
 * Las propiedades y los metadatos del recurso.
 * Archivo binario cargado originalmente del recurso.
-* Varias representaciones según la configuración. Pueden ser imágenes de diferentes tamaños, vídeos de diferentes codificaciones o páginas extraídas de PDF o [!DNL Adobe InDesign] archivos.
+* Varias representaciones según la configuración. Pueden ser imágenes de diferentes tamaños, vídeos de diferentes codificaciones o páginas extraídas de archivos del PDF o [!DNL Adobe InDesign].
 * Comentarios opcionales.
 
 Para obtener información sobre los elementos de los fragmentos de contenido, consulte [Compatibilidad con fragmentos de contenido en la API HTTP de Experience Manager Assets](/help/assets/content-fragments/assets-api-content-fragments.md).
@@ -92,7 +92,7 @@ Para obtener información sobre los elementos de los fragmentos de contenido, co
 >
 >Las [OpenAPI de fragmento de contenido y modelo de fragmento de contenidos](/help/headless/content-fragment-openapis.md) también están disponibles.
 
-Entrada [!DNL Experience Manager] una carpeta tiene los siguientes componentes:
+En [!DNL Experience Manager], una carpeta tiene los siguientes componentes:
 
 * Entidades: las representaciones secundarias de los recursos.
 * Propiedades.
@@ -100,23 +100,23 @@ Entrada [!DNL Experience Manager] una carpeta tiene los siguientes componentes:
 
 ## Funciones disponibles {#available-features}
 
-El [!DNL Assets] La API HTTP incluye las siguientes funciones:
+La API HTTP [!DNL Assets] incluye las siguientes características:
 
-* [Recuperar una lista de carpetas](#retrieve-a-folder-listing).
+* [Recuperar un listado de carpetas](#retrieve-a-folder-listing).
 * [Crear una carpeta](#create-a-folder).
 * [Crear un recurso (obsoleto)](#create-an-asset)
 * [Actualizar binario de recursos (obsoleto)](#update-asset-binary).
-* [Actualizar metadatos del recurso](#update-asset-metadata).
+* [Actualizar metadatos de recursos](#update-asset-metadata).
 * [Crear una representación de recursos](#create-an-asset-rendition).
 * [Actualizar una representación de recursos](#update-an-asset-rendition).
 * [Crear un comentario de recurso](#create-an-asset-comment).
 * [Copiar una carpeta o un recurso](#copy-a-folder-or-asset).
 * [Mover una carpeta o un recurso](#move-a-folder-or-asset).
-* [Eliminar una carpeta, un recurso o una representación](#delete-a-folder-asset-or-rendition).
+* [Eliminar una carpeta, recurso o representación](#delete-a-folder-asset-or-rendition).
 
 >[!NOTE]
 >
->Para facilitar la legibilidad, los siguientes ejemplos omiten las notaciones cURL completas. La notación se correlaciona con [Resty](https://github.com/micha/resty) que es un contenedor de scripts para cURL.
+>Para facilitar la legibilidad, los siguientes ejemplos omiten las notaciones cURL completas. La notación se correlaciona con [Resty](https://github.com/micha/resty), que es un contenedor de scripts para cURL.
 
 <!-- TBD: The Console Manager is not available now. So how to configure the below? 
 
@@ -139,18 +139,18 @@ Recupera una representación de sirena de una carpeta existente y de sus entidad
 * 404 - NO ENCONTRADO: la carpeta no existe o no se puede acceder a ella.
 * 500 - ERROR INTERNO DEL SERVIDOR - si algo más sale mal.
 
-**Respuesta**: la clase de la entidad devuelta es un recurso o una carpeta. Las propiedades de las entidades contenidas son un subconjunto del conjunto completo de propiedades de cada entidad. Para obtener una representación completa de la entidad, los clientes deben recuperar el contenido de la dirección URL a la que apunta el vínculo con una `rel` de `self`.
+**Respuesta**: La clase de la entidad devuelta es un recurso o una carpeta. Las propiedades de las entidades contenidas son un subconjunto del conjunto completo de propiedades de cada entidad. Para obtener una representación completa de la entidad, los clientes deben recuperar el contenido de la dirección URL a la que apunta el vínculo con un `rel` de `self`.
 
 ## Crear una carpeta. {#create-a-folder}
 
-Crea un `sling`: `OrderedFolder` en la ruta determinada. If `*` se proporciona en lugar de un nombre de nodo, el servlet utiliza el nombre del parámetro como nombre de nodo. La solicitud acepta cualquiera de las siguientes opciones:
+Crea un(a) `sling`: `OrderedFolder` en la ruta dada. Si se proporciona `*` en lugar de un nombre de nodo, el servlet utiliza el nombre del parámetro como nombre de nodo. La solicitud acepta cualquiera de las siguientes opciones:
 
 * Una representación de sirena de la nueva carpeta
-* Un conjunto de pares de nombre-valor, codificados como `application/www-form-urlencoded` o `multipart`/ `form`- `data`. Son útiles para crear una carpeta directamente desde un formulario de HTML.
+* Un conjunto de pares nombre-valor, codificados como `application/www-form-urlencoded` o `multipart`/ `form`- `data`. Son útiles para crear una carpeta directamente desde un formulario de HTML.
 
 Además, las propiedades de la carpeta se pueden especificar como parámetros de consulta de URL.
 
-Una llamada de API falla con un `500` código de respuesta si el nodo principal de la ruta proporcionada no existe. Una llamada a devuelve un código de respuesta `409` si la carpeta existe.
+Una llamada de API produce un error con un código de respuesta `500` si el nodo principal de la ruta de acceso proporcionada no existe. Una llamada devuelve un código de respuesta `409` si la carpeta existe.
 
 **Parámetros**: `name` es el nombre de la carpeta.
 
@@ -176,7 +176,7 @@ Consulte [carga de recursos](developer-reference-material-apis.md) para obtener 
 
 ## Actualización de metadatos de un recurso {#update-asset-metadata}
 
-Actualiza las propiedades de los metadatos del recurso. Si actualiza cualquier propiedad en la variable `dc:` , la API actualiza la misma propiedad en el `jcr` namespace. La API no sincroniza las propiedades en las dos áreas de nombres.
+Actualiza las propiedades de los metadatos del recurso. Si actualiza cualquier propiedad en el espacio de nombres `dc:`, la API actualiza la misma propiedad en el espacio de nombres `jcr`. La API no sincroniza las propiedades en las dos áreas de nombres.
 
 **Solicitud**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
 
@@ -237,9 +237,9 @@ Copia una carpeta o un recurso disponible en la ruta proporcionada a un nuevo de
 
 **Encabezados de solicitud**: Los parámetros son:
 
-* `X-Destination` : un nuevo URI de destino dentro del ámbito de la solución API en el que copiar el recurso.
-* `X-Depth` - bien `infinity` o `0`. Uso de `0` solo copia el recurso y sus propiedades y no sus elementos secundarios.
-* `X-Overwrite` - Uso `F` para evitar sobrescribir un recurso en el destino existente.
+* `X-Destination`: un nuevo URI de destino dentro del ámbito de la solución API en el que copiar el recurso.
+* `X-Depth` - `infinity` o `0`. Al usar `0` solo se copia el recurso y sus propiedades, y no sus elementos secundarios.
+* `X-Overwrite` - Use `F` para evitar que se sobrescriba un recurso en el destino existente.
 
 **Solicitud**: `COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
 
@@ -256,9 +256,9 @@ Mueve una carpeta o un recurso en la ruta determinada a un nuevo destino.
 
 **Encabezados de solicitud**: Los parámetros son:
 
-* `X-Destination` : un nuevo URI de destino dentro del ámbito de la solución API en el que copiar el recurso.
-* `X-Depth` - bien `infinity` o `0`. Uso de `0` solo copia el recurso y sus propiedades y no sus elementos secundarios.
-* `X-Overwrite` - Utilice una de estas opciones `T` para eliminar por la fuerza recursos existentes o `F` para evitar sobrescribir un recurso existente.
+* `X-Destination`: un nuevo URI de destino dentro del ámbito de la solución API en el que copiar el recurso.
+* `X-Depth` - `infinity` o `0`. Al usar `0` solo se copia el recurso y sus propiedades, y no sus elementos secundarios.
+* `X-Overwrite` - Use `T` para eliminar a la fuerza un recurso existente o `F` para evitar sobrescribir un recurso existente.
 
 **Solicitud**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
@@ -287,11 +287,11 @@ Elimina un recurso (-tree) en la ruta proporcionada.
 
 ## Sugerencias, prácticas recomendadas y limitaciones {#tips-limitations}
 
-* Después del [!UICONTROL Tiempo de inactividad], un recurso y sus representaciones no están disponibles a través del [!DNL Assets] y a través de la API HTTP. La API devuelve el mensaje de error 404 si la variable [!UICONTROL Tiempo de activación] es en el futuro o [!UICONTROL Tiempo de inactividad] está en el pasado.
+* Transcurrido el [!UICONTROL tiempo de inactividad], un recurso y sus representaciones no estarán disponibles a través de la interfaz web [!DNL Assets] ni a través de la API HTTP. La API devuelve el mensaje de error 404 si el [!UICONTROL Tiempo de activación] es futuro o el [!UICONTROL Tiempo de inactividad] es anterior.
 
-* La API HTTP de Assets no devuelve los metadatos completos. Las áreas de nombres están codificadas y solo se devuelven esas áreas de nombres. Para ver los metadatos completos, consulte la ruta del recurso `/jcr_content/metadata.json`.
+* La API HTTP de Assets no devuelve los metadatos completos. Las áreas de nombres están codificadas y solo se devuelven esas áreas de nombres. Para ver los metadatos completos, consulte la ruta de recursos `/jcr_content/metadata.json`.
 
-* Algunas propiedades de la carpeta o el recurso se asignan a un prefijo diferente al actualizarse mediante las API. El `jcr` prefijo de `jcr:title`, `jcr:description`, y `jcr:language` se han reemplazado por `dc` prefijo. Por lo tanto, en el JSON devuelto, `dc:title` y `dc:description` contiene los valores de `jcr:title` y `jcr:description`, respectivamente.
+* Algunas propiedades de la carpeta o el recurso se asignan a un prefijo diferente al actualizarse mediante las API. El prefijo `jcr` de `jcr:title`, `jcr:description` y `jcr:language` se reemplaza por el prefijo `dc`. Por lo tanto, en el JSON devuelto, `dc:title` y `dc:description` contienen los valores de `jcr:title` y `jcr:description`, respectivamente.
 
 **Consulte también**
 
@@ -310,4 +310,4 @@ Elimina un recurso (-tree) en la ruta proporcionada.
 
 >[!MORELIKETHIS]
 >
->* [Documentos de referencia del desarrollador para [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
+>* [Documentos de referencia para desarrolladores para [!DNL Assets]](/help/assets/developer-reference-material-apis.md)

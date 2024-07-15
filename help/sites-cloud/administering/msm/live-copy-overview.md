@@ -95,7 +95,7 @@ Cuando selecciona una página de Live Copy, están disponibles las siguientes ac
 * **[Sincronizar](overview.md#rollout-and-synchronize)**: sincronice una Live Copy para extraer cambios del origen a la Live Copy.
 * **[Restablecer](creating-live-copies.md#resetting-a-live-copy-page)**: restablezca una página de Live Copy para eliminar todas las cancelaciones de herencia y devuélvala al mismo estado que la de origen.
 * **[Suspender](overview.md#suspending-and-cancelling-inheritance-and-synchronization)**: desactiva temporalmente la relación activa entre una Live Copy y su página de modelo.
-* **[Reanudar](creating-live-copies.md#resuming-inheritance-for-a-page)** : Reanudar permite restablecer una relación suspendida.
+* **[Reanudar](creating-live-copies.md#resuming-inheritance-for-a-page)** - Reanudar le permite restablecer una relación suspendida.
 * **[Desasociar](overview.md#detaching-a-live-copy)**: elimina de forma permanente la relación activa entre una Live Copy y su página de modelo.
 
 ## Estado de la relación {#relationship-status}

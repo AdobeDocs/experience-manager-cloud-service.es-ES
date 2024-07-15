@@ -27,8 +27,8 @@ Las carpetas de recursos se utilizan para [organizar los recursos de contenido t
 
 Un administrador solo tendría que crear carpetas ocasionalmente para organizar el contenido a medida que se crea. Para los fines de esta guía de introducción, solo necesitamos crear una carpeta.
 
-1. AEM Inicie sesión en el as a Cloud Service y, en el menú principal, seleccione **Navegación > Recursos > Archivos**.
-1. Seleccionar **Crear > Carpeta**.
+1. Inicie sesión en AEM as a Cloud Service y, en el menú principal, seleccione **Navegación > Assets > Archivos**.
+1. Seleccione **Crear > Carpeta**.
 1. Proporcione un **Título** y **Nombre** para su carpeta.
    * El **Título** debe ser descriptivo.
    * El **nombre** se convierte en el nombre de nodo del repositorio.
@@ -41,7 +41,7 @@ Un administrador solo tendría que crear carpetas ocasionalmente para organizar 
 1. Para la **Configuración de nube**, seleccione la [configuración que creó anteriormente.](create-configuration.md)
    ![Configurar la carpeta de recursos](../assets/assets-folder-configure.png)
 1. Seleccione **Guardar y cerrar**.
-1. Seleccionar **OK** en la ventana de confirmación.
+1. Seleccione **Aceptar** en la ventana de confirmación.
 
    ![Ventana de confirmación](../assets/assets-folder-confirmation.png)
 

@@ -113,7 +113,7 @@ Y también debe hacerlo si desea enviar un mensaje simple solo cuando la generac
 
 >[!NOTE]
 >
->Los artefactos de un repositorio Maven protegido por contraseña deben utilizarse con precaución porque el código implementado mediante este mecanismo actualmente no se ejecuta a través de [reglas de calidad de código](/help/implementing/cloud-manager/custom-code-quality-rules.md) implementado en las puertas de calidad de Cloud Manager. Por lo tanto, solo debe utilizarse en casos excepcionales y para código no vinculado a AEM. También se recomienda implementar las fuentes Java, así como todo el código fuente del proyecto junto con el binario.
+>Los artefactos de un repositorio Maven protegido por contraseña deben usarse con precaución porque el código implementado a través de este mecanismo actualmente no se ejecuta a través de [reglas de calidad de código](/help/implementing/cloud-manager/custom-code-quality-rules.md) implementadas en las puertas de calidad de Cloud Manager. Por lo tanto, solo debe utilizarse en casos excepcionales y para código no vinculado a AEM. También se recomienda implementar las fuentes Java, así como todo el código fuente del proyecto junto con el binario.
 
 Para utilizar un repositorio de Maven protegido por contraseña en Cloud Manager, haga lo siguiente:
 
@@ -123,7 +123,7 @@ Para utilizar un repositorio de Maven protegido por contraseña en Cloud Manager
 Cuando se inicia el proceso de generación de Cloud Manager:
 
 * El elemento `<servers>` de este archivo se combina con el archivo predeterminado `settings.xml` proporcionado por Cloud Manager.
-   * ID de servidor que empiezan por `adobe` y `cloud-manager` se consideran reservados. No los utilice en servidores personalizados.
+   * Los identificadores de servidor que empiecen por `adobe` y `cloud-manager` se consideran reservados. No los utilice en servidores personalizados.
    * Los Id. de servidor que no coinciden con uno de estos prefijos o con el Id. predeterminado `central` nunca se reflejarán en Cloud Manager.
 * Con este archivo en su lugar, se hará referencia al Id. del servidor desde un `<repository>` y/o un elemento `<pluginRepository>` dentro del archivo `pom.xml`.
 * Generalmente, estos `<repository>` y/o elementos `<pluginRepository>` están dentro de un [perfil específico de Cloud Manager](#activating-maven-profiles-in-cloud-manager), aunque no es estrictamente necesario.

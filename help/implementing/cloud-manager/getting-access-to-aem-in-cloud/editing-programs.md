@@ -15,9 +15,9 @@ ht-degree: 30%
 
 # Editar programas {#editing-programs}
 
-Para administrar y editar programas, comience por la [**Mis programas** consola.](/help/implementing/cloud-manager/navigation.md) El **Mis programas** Esta página proporciona información general de todos los programas a los que tiene acceso. Al seleccionar un programa individual, la variable **Resumen del programa** Esta página proporciona detalles del programa de un vistazo.
+Para administrar y editar programas, empieza en la consola [**Mis programas**.](/help/implementing/cloud-manager/navigation.md) La página **Mis programas** proporciona una descripción general de todos los programas a los que tiene acceso. Al seleccionar un programa individual, la página **Resumen del programa** proporciona detalles del programa de un vistazo.
 
-Desde el **Resumen del programa**, los usuarios con los permisos necesarios pueden editar [programas de producción creados en su organización](creating-production-programs.md) y [programas de zona protegida creados en su organización.](creating-sandbox-programs.md) Al editar un programa, puede:
+Desde la **Descripción general del programa**, los usuarios con los permisos necesarios pueden editar [programas de producción creados en su organización](creating-production-programs.md) y [programas de zonas protegidas creados en su organización.](creating-sandbox-programs.md) Al editar un programa, puede:
 
 * Agregar la solución Sites a un programa existente con Assets y a la inversa.
 * Eliminar Sites o Assets de un programa existente que incluya ambos.
@@ -26,27 +26,27 @@ Desde el **Resumen del programa**, los usuarios con los permisos necesarios pued
 
 ## Permisos {#permissions}
 
-Debe ser miembro de la **Propietario del negocio** función para editar programas o eliminar programas de zona protegida, así como para acceder al Tablero de licencias.
+Debe ser miembro del rol **Propietario del negocio** para editar programas o eliminar programas de zonas protegidas, así como para acceder al tablero de licencias.
 
 ## Edición de un programa {#editing}
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. En el **[Mis programas](#my-programs)** , haga clic en el programa que desee editar para mostrar sus detalles.
+1. En la página **[Mis programas](#my-programs)**, haga clic en el programa que desee editar para mostrar sus detalles.
 
 1. Haga clic en el nombre del programa en la parte superior izquierda de la página y seleccione **Editar programa**.
 
    ![Opción Editar programa](assets/edit-program-overview.png)
 
-1. El **Editar programa** página se abre para la **General** pestaña.
+1. La página **Editar programa** se abre en la ficha **General**.
 
    ![Pestaña General](assets/edit-program-prod1.png)
 
 1. Las opciones disponibles para editar el programa son las mismas que al crearlo.
-   * Consulte los documentos [Creación de programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) y [Creación de programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) para obtener más información sobre las opciones individuales.
-   * [Opciones adicionales](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) puede estar disponible para su programa de producción en función de los derechos de su organización.
+   * Consulte los documentos [Creación de programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) y [Creación de programas de espacio aislado](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) para obtener más información sobre las opciones individuales.
+   * [Puede haber opciones adicionales](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) disponibles para su programa de producción en función de los derechos de su organización.
 
-1. Clic **Actualizar** para guardar los cambios en el programa.
+1. Haga clic en **Actualizar** para guardar los cambios en el programa.
 
 Se guardarán los cambios realizados en el programa.
 
@@ -66,7 +66,7 @@ Para eliminar un programa de zona protegida, haga lo siguiente.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. En el **[Mis programas](#my-programs)** , haga clic en el programa que desee editar para mostrar sus detalles.
+1. En la página **[Mis programas](#my-programs)**, haga clic en el programa que desee editar para mostrar sus detalles.
 
 1. Haga clic en el nombre del programa en la parte superior izquierda de la página y seleccione **Eliminar programa**.
 

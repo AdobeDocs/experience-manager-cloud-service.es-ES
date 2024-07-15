@@ -2,7 +2,7 @@
 title: ¿Qué son las expresiones de formulario adaptable?
 description: Utilice expresiones de formularios adaptables para agregar validación automática, cálculo y activar o desactivar la visibilidad de una sección.
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2686'
 ht-degree: 100%
 

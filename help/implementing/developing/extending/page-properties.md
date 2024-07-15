@@ -17,46 +17,46 @@ Cada página tiene un conjunto de [propiedades](/help/sites-cloud/authoring/site
 
 El estado predeterminado de cada propiedad de página es:
 
-* Oculto en la vista Crear (por ejemplo, **Crear página** wizard)
+* Oculto en la vista de creación (por ejemplo, **Asistente para crear página**)
 
 * Disponible en la vista de edición (por ejemplo, **Ver propiedades**)
 
 Los campos deben configurarse específicamente si se requiere algún cambio. Esto se realiza mediante las propiedades de nodo adecuadas:
 
-* Propiedad de página que estará disponible en la vista de creación (por ejemplo, **Crear página** asistente):
+* Propiedad de página que estará disponible en la vista de creación (por ejemplo, **Asistente para crear página**):
 
    * Nombre: `cq:showOnCreate`
    * Tipo: `Boolean`
 
-* La propiedad Page estará disponible en la vista de edición, como **Ver**/**Editar**  **Propiedades** opción:
+* La propiedad de página estará disponible en la vista de edición, como la opción **Ver**/**Editar** **Propiedades**:
 
    * Nombre: `cq:hideOnEdit`
    * Tipo: `Boolean`
 
 >[!TIP]
 >
->Consulte la [Tutorial sobre Ampliación de propiedades de página](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) para obtener una guía para personalizar las propiedades de la página.
+>Consulte el tutorial [Ampliación de propiedades de página](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) para obtener una guía sobre cómo personalizar las propiedades de página.
 
 ## Configuración de las propiedades de página {#configuring-your-page-properties}
 
 También puede configurar los campos disponibles configurando el cuadro de diálogo del componente de página y aplicando las propiedades de nodo adecuadas.
 
-Por ejemplo, de forma predeterminada la variable [**Crear página** asistente](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) muestra los campos agrupados bajo **Más títulos y descripciones**. Para ocultarlos, configure lo siguiente:
+Por ejemplo, de forma predeterminada, el asistente [**Crear página**](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) muestra los campos agrupados en **Más títulos y descripción**. Para ocultarlos, configure lo siguiente:
 
 1. Cree su componente de página en `/apps`.
-1. Creación de una anulación (mediante *diff de diálogo* proporcionadas por el [Fusión de recursos de Sling](/help/implementing/developing/introduction/sling-resource-merger.md)) para el `basic` de su componente de página; por ejemplo:
+1. Cree una anulación (usando *dialog diff* proporcionada por la [Fusión de recursos de Sling](/help/implementing/developing/introduction/sling-resource-merger.md)) para la sección `basic` del componente de su página; por ejemplo:
 
    ```xml
    <your-page-component>/cq:dialog/content/items/tabs/items/basic
    ```
 
-1. Configure las variables `path` propiedad en `basic` para señalar a la anulación de la pestaña básica (consulte el paso siguiente también). Por ejemplo:
+1. Establezca la propiedad `path` en `basic` para que apunte a la anulación de la ficha básica (vea también el paso siguiente). Por ejemplo:
 
    ```xml
    /apps/demos/components/page/tabs/basic
    ```
 
-1. Cree una anulación de `basic` - `moretitles` en la ruta correspondiente; por ejemplo:
+1. Cree una anulación de la sección `basic` - `moretitles` en la ruta de acceso correspondiente; por ejemplo:
 
    ```xml
    /apps/demos/components/page/tabs/basic/items/column/items/moretitles
@@ -68,7 +68,7 @@ Por ejemplo, de forma predeterminada la variable [**Crear página** asistente](/
    * **Tipo**: `Boolean`
    * **Valor**: `false`
 
-   El **Más títulos y descripciones** ya no se mostrará en la sección **Crear página** asistente.
+   La sección **Más títulos y descripciones** ya no se mostrará en el asistente **Crear página**.
 
 >[!NOTE]
 >
@@ -76,6 +76,6 @@ Por ejemplo, de forma predeterminada la variable [**Crear página** asistente](/
 
 ## Configuración de muestra de las propiedades de página {#sample-configuration-of-page-properties}
 
-Este ejemplo muestra la técnica de diferencia de diálogo del [Fusión de recursos de Sling](/help/implementing/developing/introduction/sling-resource-merger.md) incluido el uso de [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties). También ilustra el uso de ambos `cq:showOnCreate` y `cq:hideOnEdit`.
+Este ejemplo muestra la técnica de diferencia de diálogo de la [fusión de recursos de Sling](/help/implementing/developing/introduction/sling-resource-merger.md), incluido el uso de [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties). También ilustra el uso de `cq:showOnCreate` y `cq:hideOnEdit`.
 
-Puede encontrar el código de esta página en [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog).
+Puedes encontrar el código de esta página en [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog).

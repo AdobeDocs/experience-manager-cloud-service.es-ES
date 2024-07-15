@@ -1,6 +1,6 @@
 ---
-title: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2022.12.0 de
-description: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2022.12.0 de
+title: Notas de la versión de las herramientas de migración de la versión 2022.12.0 de AEM as a Cloud Service
+description: Notas de la versión de las herramientas de migración de la versión 2022.12.0 de AEM as a Cloud Service
 feature: Release Information
 exl-id: e4b6795b-6999-451b-b51f-056a9d2ea652
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 8%
 
 ---
 
-# AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2022.12.0 de {#release-notes}
+# Notas de la versión de las herramientas de migración de la versión 2022.12.0 de AEM as a Cloud Service {#release-notes}
 
-AEM Esta página describe las notas de la versión de las herramientas de migración de as a Cloud Service 2022.12.0.
+Esta página describe las notas de la versión de las herramientas de migración de AEM as a Cloud Service 2022.12.0.
 
 ## Analizador de prácticas recomendadas {#bpa-release}
 

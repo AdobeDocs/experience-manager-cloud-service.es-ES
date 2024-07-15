@@ -14,7 +14,7 @@ ht-degree: 54%
 
 # Modelos de fragmento de contenido {#content-fragment-models}
 
-Los modelos de fragmentos de contenido en Adobe Experience Manager AEM () as a Cloud Service definen la estructura del contenido de su [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md). Estos fragmentos se pueden utilizar para la creación de páginas o como base para el contenido sin encabezado.
+Los modelos de fragmentos de contenido de Adobe Experience Manager AEM () as a Cloud Service definen la estructura del contenido de sus [fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md). Estos fragmentos se pueden utilizar para la creación de páginas o como base para el contenido sin encabezado.
 
 Para usar modelos de fragmentos de contenido, haga lo siguiente:
 
@@ -31,11 +31,11 @@ Para usar modelos de fragmentos de contenido, haga lo siguiente:
 
    >[!CAUTION]
    >
-   >Si la variable [No se ha habilitado el uso de modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/setup.md), el **Crear** Esta opción no estará disponible.
+   >Si no se ha habilitado el uso de [modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/setup.md), la opción **Crear** no estará disponible.
 
-1. Especifique el **Título de modelo**.
-También puede definir varias propiedades; por ejemplo, agregar **Etiquetas**, a **Descripción**, seleccione **Habilitar modelo** hasta [habilitar el modelo](#enabling-disabling-a-content-fragment-model) si es necesario, y defina la
-   **Patrón de URL de previsualización predeterminado**.
+1. Especifique **Título de modelo**.
+También puede definir varias propiedades; por ejemplo, agregar **Etiquetas**, una **Descripción**, seleccionar **Habilitar modelo** para [habilitar el modelo](#enabling-disabling-a-content-fragment-model) si es necesario y definir el
+   **Patrón de URL de vista previa predeterminado**.
 
    >[!NOTE]
    >
@@ -43,25 +43,25 @@ También puede definir varias propiedades; por ejemplo, agregar **Etiquetas**, a
 
    ![Título y descripción](assets/cf-cfmodels-create.png)
 
-1. Use **Crear** para guardar el modelo vacío. Un mensaje indica el éxito de la acción. Puede seleccionar **Abrir** para editar inmediatamente el modelo, o **Listo** para volver a la consola.
+1. Use **Crear** para guardar el modelo vacío. Un mensaje indica el éxito de la acción. Puede seleccionar **Abrir** para editar inmediatamente el modelo o **Listo** para volver a la consola.
 
 >[!CAUTION]
 >
 >Si va a consultar varios fragmentos a los que se hace referencia, no se recomienda que los distintos modelos de fragmento tengan nombres de campo con el mismo nombre, pero con tipos diferentes.
 >
->Para obtener más información, consulte [AEM API de GraphQL para el uso con fragmentos de contenido: limitaciones](/help/headless/graphql-api/content-fragments.md#limitations)
+>AEM Para obtener más información, consulte la [API de GraphQL para usar con fragmentos de contenido: limitaciones](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### Modelo de fragmento de contenido: propiedades {#content-fragment-model-properties}
 
-Estas propiedades se definen al crear un modelo y se pueden editar posteriormente con la variable **Propiedades** para el modelo de fragmento de contenido:
+Estas propiedades se definen al crear un modelo y se pueden editar más adelante con la opción **Propiedades** para el modelo de fragmento de contenido:
 
 * **Básico**
    * **Título de modelo**
    * **Etiquetas**
    * **Descripción**
    * **Habilitar modelo**
-   * **Patrón de URL de previsualización predeterminado**
-El editor de fragmentos de contenido permite a los autores **Previsualizar** su contenido en una aplicación de front-end externa. Una vez que **Servicio de previsualización** , añada la URL para la aplicación de front-end.
+   * **Patrón de URL de vista previa predeterminado**
+El editor de fragmentos de contenido permite a los autores **previsualizar** su contenido en una aplicación de front-end externa. Una vez configurado el **servicio de vista previa**, agregue la dirección URL de la aplicación de front-end.
 
      La URL de vista previa debe seguir este patrón:
     `https://<preview_url>?param=${expression}`
@@ -91,7 +91,7 @@ El editor de fragmentos de contenido permite a los autores **Previsualizar** su 
 
 ## Definición del modelo de fragmento de contenido {#defining-your-content-fragment-model}
 
-El modelo de fragmento de contenido define de forma efectiva la estructura de los fragmentos de contenido resultantes mediante una selección de **[Tipos de datos](#data-types)**. Con el editor de modelos puede añadir instancias de los tipos de datos y, a continuación, configurarlos para crear los campos obligatorios.
+El modelo de fragmento de contenido define de forma efectiva la estructura de los fragmentos de contenido resultantes mediante una selección de **[tipos de datos](#data-types)**. Con el editor de modelos puede añadir instancias de los tipos de datos y, a continuación, configurarlos para crear los campos obligatorios.
 
 >[!CAUTION]
 >
@@ -109,7 +109,7 @@ El modelo de fragmento de contenido define de forma efectiva la estructura de lo
 
    >[!NOTE]
    >
-   >Cuando un campo se define como **Requerido**, el **Etiqueta** indicado en el panel izquierdo está marcado con un asterisco (**&#42;**).
+   >Cuando un campo se define como **Obligatorio**, la **Etiqueta** indicada en el panel izquierdo se marca con un asterisco (**&#42;**).
 
 ![Propiedades](assets/cf-cfmodels-empty-model.png)
 
@@ -117,28 +117,28 @@ El modelo de fragmento de contenido define de forma efectiva la estructura de lo
 
    * Arrastre un tipo de datos requerido a la ubicación requerida para un campo.
 
-     ![Arrastrar tipo de datos para crear un campo](assets/cf-cfmodels-create-field.png)
+     ![Arrastrar tipo de datos para crear el campo](assets/cf-cfmodels-create-field.png)
 
-   * Una vez añadido un campo al modelo, el panel derecho muestra el campo **Propiedades** que se puede definir para ese tipo de datos en particular. Aquí puede definir lo que se requiere para ese campo.
+   * Una vez agregado un campo al modelo, el panel derecho muestra las **Propiedades** que se pueden definir para ese tipo de datos en particular. Aquí puede definir lo que se requiere para ese campo.
 
       * Muchas propiedades se explican por sí mismas; para obtener más información, consulte [Propiedades](#properties).
-      * Escritura de una **Etiqueta de campo** completa automáticamente el **Nombre de propiedad**  : si está vacío, y se puede actualizar manualmente más tarde.
+      * Escribir una **Etiqueta de campo** autocompleta **Nombre de propiedad**, si está vacío, y se puede actualizar de forma manual posteriormente.
 
         >[!CAUTION]
         >
-        Al actualizar manualmente la propiedad **Nombre de propiedad** para un tipo de datos, los nombres deben contener *solamente* A-Z, a-z, 0-9 y el carácter de subrayado es &quot;_&quot;.
+        Al actualizar manualmente la propiedad **Nombre de propiedad** para un tipo de datos, los nombres deben contener *solamente* caracteres latinos, dígitos numéricos y guiones bajos &quot;_&quot; como carácter especial.
         >
         Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimínelos o actualícelos.
 
      Por ejemplo:
 
-     ![Propiedades del campo](assets/cf-cfmodels-field-properties.png)
+     ![Propiedades de campo](assets/cf-cfmodels-field-properties.png)
 
 1. **Eliminación de un campo**
 
    Seleccione el campo requerido y, a continuación, seleccione el icono de la papelera. Se le solicitará que confirme la acción.
 
-   ![Eliminar](assets/cf-cfmodels-remove-icon.png)
+   ![Quitar](assets/cf-cfmodels-remove-icon.png)
 
 1. Añada todos los campos obligatorios y defina las propiedades relacionadas, según sea necesario. Por ejemplo:
 
@@ -157,9 +157,9 @@ Hay disponible una selección de tipos de datos para definir el modelo:
 
   >[!NOTE]
   >
-  La propiedad define en el modelo si el área de texto es Texto enriquecido, Texto sin formato o Markdown **Tipo predeterminado**.
+  Si el área de texto es Texto enriquecido, Texto sin formato o Markdown, se define en el modelo mediante la propiedad **Tipo predeterminado**.
   >
-  Este formato no se puede cambiar desde el [Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md), pero solo desde el modelo.
+  Este formato no se puede cambiar desde el [editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md), sino solamente desde el modelo.
 
 * **Número**
    * Adición de uno o más campos numéricos
@@ -175,7 +175,7 @@ Hay disponible una selección de tipos de datos para definir el modelo:
    * Referencias a otros contenidos, de cualquier tipo; se pueden usar para [crear contenido anidado](#using-references-to-form-nested-content)
    * Si se hace referencia a una imagen, puede optar por mostrar una miniatura
 * **Referencia a fragmento**
-   * Referencias a otros fragmentos de contenido; se pueden usar para lo siguiente [crear contenido anidado](#using-references-to-form-nested-content)
+   * Referencias a otros fragmentos de contenido; se pueden usar para [crear contenido anidado](#using-references-to-form-nested-content)
    * El tipo de datos se puede configurar para que los autores de fragmentos puedan hacer lo siguiente:
       * Editar directamente el fragmento al que se hace referencia.
       * Crear un nuevo fragmento de contenido basado en el modelo adecuado
@@ -199,18 +199,18 @@ Muchas propiedades se explican por sí mismas; para otras, a continuación se pr
 
 * **Nombre de propiedad**
 
-  Al actualizar manualmente esta propiedad para un tipo de datos, los nombres **debe** contain *solamente* A-Z, a-z, 0-9 y el carácter de subrayado es &quot;_&quot;.
+  Al actualizar manualmente esta propiedad para un tipo de datos, los nombres **debe** contener *solamente* caracteres latinos, dígitos numéricos y guiones bajos &quot;_&quot; como carácter especial.
 
   >[!CAUTION]
   >
   Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimínelos o actualícelos.
 
-* **Procesar como**
+* **Procesar Como**
 
-  Las distintas opciones para realizar/procesar el campo en un fragmento. A menudo, esto le permite definir si el autor verá una sola instancia del campo o si se le permitirá crear varias instancias. Cuándo **Campo múltiple** se utiliza. puede definir el número mínimo y máximo de elementos: consulte [Validación](#validation) para obtener más información.
+  Las distintas opciones para realizar/procesar el campo en un fragmento. A menudo, esto le permite definir si el autor verá una sola instancia del campo o si se le permitirá crear varias instancias. Cuando se usa **Campo múltiple**, puede definir el número mínimo y máximo de elementos; consulte [Validación](#validation) para obtener más información.
 
 * **Etiqueta de campo**
-Introducción de una **Etiqueta de campo** genera automáticamente un **Nombre de propiedad**, que se puede actualizar de forma manual si es necesario.
+La introducción de **Etiqueta de campo** genera automáticamente un **Nombre de propiedad**, que se puede actualizar de forma manual si es necesario.
 
 * **Validación**
 La validación básica está disponible mediante mecanismos como la propiedad **Requerido**. Algunos tipos de datos tienen campos de validación adicionales. Consulte [Validación](#validation) para obtener más información.
@@ -223,7 +223,7 @@ La validación básica está disponible mediante mecanismos como la propiedad **
 
   Si no se especifica, el valor predeterminado **Texto enriquecido** es el empleado para este campo.
 
-  Cambio de la **Tipo predeterminado** en un modelo de fragmento de contenido solo surtirá efecto en un fragmento de contenido existente relacionado después de que dicho fragmento se abra en el editor y se guarde.
+  Cambiar el **tipo predeterminado** en un modelo de fragmento de contenido solo surtirá efecto en un fragmento de contenido existente relacionado después de que dicho fragmento se abra en el editor y se guarde.
 
 * **Único**
 El contenido (para el campo específico) debe ser único en todos los fragmentos de contenido creados a partir del modelo actual.
@@ -267,12 +267,12 @@ Varios tipos de datos ahora incluyen la posibilidad de definir los requisitos de
    * Pruebe un modelo de fragmento de contenido específico.
 * **Número mínimo de elementos** / **Número máximo de elementos**
 
-  Campos que se han definido como **Campo múltiple** (configurado con **Procesar como**) tiene las siguientes opciones:
+  Los campos que se han definido como un **campo múltiple** (configurado con **Procesar como**) tienen las opciones:
 
    * **Número mínimo de elementos**
    * **Número máximo de elementos**
 
-  Se validan en la [Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md).
+  Se validan en el [Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## Uso de referencias para formar contenido anidado {#using-references-to-form-nested-content}
 
@@ -287,22 +287,24 @@ Los fragmentos de contenido pueden formar contenido anidado mediante cualquiera 
    * Permite incluir o recuperar datos estructurados.
      >[!NOTE]
      >
-     Este método es de especial interés cuando se utiliza [Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+     Este método es de particular interés cuando se usa [Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
    * Se puede configurar para una o varias referencias (en el fragmento resultante).
 
 >[!NOTE]
 >
 AEM tiene protección contra recurrencias para:
 >
-* Referencias de contenido Esto evita que el usuario agregue una referencia al fragmento actual y puede provocar un cuadro de diálogo vacío del selector de referencias a fragmento.
+* Referencias de contenido
+Esto evita que el usuario agregue una referencia al fragmento actual y puede provocar un cuadro de diálogo vacío del selector de referencia a fragmento.
 >
-* Referencias a fragmento en GraphQL Si crea una consulta profunda que devuelve varios fragmentos de contenido referenciados entre sí, devolverá un valor nulo en la primera ocurrencia.
+* Referencias a fragmento en GraphQL
+Si crea una consulta profunda que devuelve varios fragmentos de contenido referenciados entre sí, devolverá un valor nulo en la primera ocurrencia.
 
 >[!CAUTION]
 >
 Si va a consultar varios fragmentos a los que se hace referencia, no se recomienda que los distintos modelos de fragmento tengan nombres de campo con el mismo nombre, pero con tipos diferentes.
 >
-Para obtener más información, consulte [AEM API de GraphQL para el uso con fragmentos de contenido: limitaciones](/help/headless/graphql-api/content-fragments.md#limitations)
+AEM Para obtener más información, consulte la [API de GraphQL para usar con fragmentos de contenido: limitaciones](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### Referencia de contenido {#content-reference}
 
@@ -310,7 +312,7 @@ La referencia de contenido le permite procesar contenido de otra fuente; por eje
 
 Además de las propiedades estándar, puede especificar las siguentes:
 
-* El **Ruta raíz**, que especifica dónde almacenar el contenido referenciado
+* La **ruta raíz**, que especifica dónde almacenar el contenido referenciado
   >[!NOTE]
   >
   Esto es obligatorio si desea cargar directamente y hacer referencia a imágenes en este campo al utilizar el editor de fragmentos de contenido.
@@ -320,7 +322,7 @@ Además de las propiedades estándar, puede especificar las siguentes:
 * Los tipos de contenido a los que se puede hacer referencia
   >[!NOTE]
   >
-  Estos deben incluir **Imagen** si desea cargar directamente y hacer referencia a imágenes en este campo al utilizar el editor de fragmentos de contenido.
+  Deben incluir **Image** si desea cargar directamente y hacer referencia a las imágenes de este campo al utilizar el editor de fragmentos de contenido.
   >
   Consulte [Imágenes de referencia](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) para obtener más información.
 
@@ -356,7 +358,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
-Las referencias a fragmento son de especial interés para [Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+Las referencias a fragmento son de particular interés para [Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
 
 Además de las propiedades estándar, puede definir las siguientes:
 
@@ -388,7 +390,7 @@ También hay protección contra recurrencias para las referencias a fragmento en
 
 ## Activación o desactivación de un modelo de fragmento de contenido {#enabling-disabling-a-content-fragment-model}
 
-Puede hacer lo siguiente **Activar** o **Deshabilitar** Seleccione los modelos de fragmentos de contenido para tener un control total sobre su uso.
+Puede **Habilitar** o **Deshabilitar** sus modelos de fragmentos de contenido para tener un control total sobre su uso.
 
 ### Activación de un modelo de fragmento de contenido {#enabling-a-content-fragment-model}
 
@@ -420,7 +422,7 @@ Un modelo también se puede desactivar para que:
    * Cualquier fragmento de contenido basado en el modelo se puede consultar y devolver desde el extremo de GraphQL.
 * Ya no se puede hacer referencia al modelo, pero las referencias existentes no se tocan y aún se pueden consultar y devolver desde el extremo GraphQL.
 
-Para deshabilitar un modelo marcado como **Habilitado**, se usa la variable **Deshabilitar** opción de:
+Para deshabilitar un modelo marcado como **Habilitado**, use la opción **Deshabilitar** desde:
 
 * La barra de herramientas superior, cuando se selecciona el Modelo requerido.
 * La Acción rápida correspondiente (pase el ratón sobre el Modelo requerido).
@@ -512,7 +514,7 @@ Si intenta cancelar la publicación de un modelo que actualmente utiliza uno o v
 
 ![Mensaje de error del modelo de fragmento de contenido al cancelar la publicación de un modelo que está en uso](assets/cf-cfmodels-unpublish-error.png)
 
-El mensaje sugiere que compruebe la [Referencias](/help/sites-cloud/authoring/basic-handling.md#references) Panel para investigar más a fondo:
+El mensaje sugiere que verifique el panel [Referencias](/help/sites-cloud/authoring/basic-handling.md#references) para investigar más a fondo:
 
 ![Modelo de fragmento de contenido en referencias](assets/cf-cfmodels-references.png)
 
@@ -542,7 +544,7 @@ Cualquiera de estos criterios podría generar consultas si se vuelven a publicar
 
 ### Solución {#the-solution}
 
-Para solucionar estos problemas, los modelos de fragmentos de contenido son *bloqueados* en modo de SOLO LECTURA en el autor, tan pronto como se hayan publicado. Este estado se indica mediante **Bloqueado**:
+Para solucionar estos problemas, los modelos de fragmentos de contenido son *bloqueados* en modo de SOLO LECTURA en el autor, tan pronto como se hayan publicado. Este estado está indicado por **Bloqueado**:
 
 ![Tarjeta del modelo de fragmento de contenido bloqueado](assets/cf-cfmodels-locked.png)
 
@@ -558,13 +560,13 @@ Puede administrar modelos **Bloqueados** desde la consola o desde el editor de m
 
    * Puede **Desbloquear** un modelo para activar las ediciones.
 
-     Si selecciona **Desbloquear** se muestra una advertencia y debe confirmar la **Desbloquear** acción:
+     Si selecciona **Desbloquear**, se mostrará una advertencia y deberá confirmar la acción **Desbloquear**:
      ![Mensaje al desbloquear el modelo de fragmento de contenido](assets/cf-cfmodels-unlock-message.png)
 
      A continuación, puede abrir el modelo para editarlo.
 
    * También puede **Bloquear** el modelo después.
-   * Volver a publicar el modelo inmediatamente lo devuelve a **Bloqueado** Modo (SOLO LECTURA).
+   * Volver a publicar el modelo inmediatamente lo devuelve al modo **Bloqueado** (SOLO LECTURA).
 
 * Editor de modelo
 
@@ -572,11 +574,11 @@ Puede administrar modelos **Bloqueados** desde la consola o desde el editor de m
 
      ![Mensaje al ver un modelo de fragmento de contenido bloqueado](assets/cf-cfmodels-editor-lock-message.png)
 
-   * Si selecciona **Ver solo lectura**, puede ver el contenido y la estructura del modelo:
+   * Si selecciona **Ver solo lectura**, podrá ver el contenido y la estructura del modelo:
 
      ![Ver solo lectura: modelo de fragmento de contenido bloqueado](assets/cf-cfmodels-editor-locked-view-only.png)
 
-   * Si selecciona **Editar**, puede editar y guardar las actualizaciones:
+   * Si seleccionas **Editar**, puedes editar y guardar tus actualizaciones:
 
      ![Editar: modelo de fragmento de contenido bloqueado](assets/cf-cfmodels-editor-locked-edit.png)
 

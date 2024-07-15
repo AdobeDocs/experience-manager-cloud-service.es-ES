@@ -24,7 +24,7 @@ Hay una implementación del IDE de [GraphiQL](https://graphql.org/learn/serving-
 >[!NOTE]
 >Debe tener [configurados los puntos de conexión](/help/headless/graphql-api/graphql-endpoint.md) en el [explorador de configuración](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) antes de utilizar el IDE de GraphiQL.
 
-El **GraphiQL** Esta herramienta permite probar y depurar las consultas de GraphQL permitiéndole lo siguiente:
+La herramienta **GraphiQL** le permite probar y depurar sus consultas de GraphQL permitiéndole lo siguiente:
 * seleccionar el **punto de conexión** adecuado para la configuración de sitios que desee utilizar en sus consultas
 * introducir directamente nuevas consultas
 * crear y acceder a **[consultas persistentes](/help/headless/graphql-api/persisted-queries.md)**
@@ -83,12 +83,12 @@ Puede ejecutar una nueva consulta inmediatamente, o bien puede cargar y ejecutar
 
 En cualquier caso, la consulta que se muestra en el panel Editor es la que se ejecuta cuando ocurre lo siguiente:
 
-* seleccione en la **Ejecutar consulta** icono
+* seleccione en el icono **Ejecutar consulta**
 * use la combinación de teclas `Control-Enter`
 
 ## Variables de consulta {#query-variables}
 
-El IDE de GraphiQL también le permite administrar sus [Variables de consulta](/help/headless/graphql-api/content-fragments.md#graphql-variables).
+El IDE de GraphiQL también le permite administrar sus [variables de consulta](/help/headless/graphql-api/content-fragments.md#graphql-variables).
 
 Por ejemplo:
 
@@ -100,13 +100,13 @@ Se recomiendan las [Consultas persistentes](/help/headless/graphql-api/persisted
 
 >[!NOTE]
 >
->Consulte [Almacenamiento en caché de consultas persistentes](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
+>Ver [Almacenamiento en caché de las consultas persistentes](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
 
 >[!NOTE]
 >
 >Las reglas de reescritura personalizadas en Dispatcher pueden anular los valores predeterminados de publicación de AEM.
 >
->En el caso de que esté enviando encabezados de control de caché basados en TTL desde Dispatcher, según un patrón de coincidencia de ubicación, si es necesario, es posible que desee excluir `/graphql/execute.json/*` de los partidos.
+>En caso de que esté enviando encabezados de control de caché basados en TTL desde Dispatcher, según un patrón de coincidencia de ubicación, si es necesario, es posible que desee excluir `/graphql/execute.json/*` de las coincidencias.
 
 Con GraphQL puede configurar los encabezados de caché HTTP para controlar estos parámetros para la consulta persistente individual.
 
@@ -114,7 +114,7 @@ Con GraphQL puede configurar los encabezados de caché HTTP para controlar estos
 
    ![Encabezados de caché HTTP de consulta persistentes](assets/cfm-graphqlapi-headers-01.png "Encabezados de caché HTTP de consulta persistentes")
 
-1. Al seleccionar esta opción, se abre **Configuración de caché** Cuadro de diálogo:
+1. Al seleccionar esta opción, se abre el cuadro de diálogo **Configuración de caché**:
 
    ![Configuración de encabezado de caché HTTP de consulta persistente](assets/cfm-graphqlapi-headers-02.png "Configuración de encabezado de caché HTTP de consulta persistente")
 
@@ -155,7 +155,7 @@ Esto desactivará la consulta del entorno que seleccione; o bien su entorno **Pu
 
 ## Copia de una URL para acceder directamente a la consulta {#copy-url}
 
-El **Copiar URL** Esta opción permite simular una consulta copiando la URL utilizada para acceder directamente a la consulta persistente y ver los resultados. Esto se puede utilizar para hacer pruebas; por ejemplo, accediendo en un explorador:
+La opción **Copiar URL** le permite simular una consulta copiando la URL utilizada para acceder directamente a la consulta persistente y ver los resultados. Esto se puede utilizar para hacer pruebas; por ejemplo, accediendo en un explorador:
 
 <!--
   >[!NOTE]

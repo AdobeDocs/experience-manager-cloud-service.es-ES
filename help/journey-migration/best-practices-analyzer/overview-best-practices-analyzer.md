@@ -37,6 +37,6 @@ El informe del Analizador de prácticas recomendadas incluye las siguientes cate
 Se proporciona información adicional sobre las categorías y posibles implicaciones y soluciones asociadas con dichas categorías mediante vínculos desde el Informe del analizador de prácticas recomendadas.
 
 >[!NOTE]
->AEM El informe del Analizador de prácticas recomendadas acelera el proceso de estimación del tiempo y el coste necesarios para realizar la transición a la as a Cloud Service, al proporcionar información que, de lo contrario, tendría que recopilarse y evaluarse manualmente.
+>El informe del Analizador de prácticas recomendadas acelera el proceso de estimación del tiempo y el coste necesarios para realizar la transición a AEM as a Cloud Service al proporcionar información que, de lo contrario, tendría que recopilarse y evaluarse manualmente.
 
 AEM También puede descargar el informe del Analizador de prácticas recomendadas desde la instancia de la instancia de la. Consulte [Visualización del informe del Analizador de prácticas recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) para obtener más información.

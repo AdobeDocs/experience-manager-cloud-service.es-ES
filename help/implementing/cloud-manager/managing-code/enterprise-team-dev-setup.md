@@ -44,7 +44,7 @@ Cloud Manager admite configuraciones flexibles de varios equipos que se pueden a
 
 Cada empresa tiene diferentes requisitos, incluida la configuración de equipos, los procesos y los flujos de trabajo de desarrollo. Adobe utiliza la configuración que se describe a continuación para varios proyectos que ofrecen experiencias además de AEM as a Cloud Service.
 
-Por ejemplo, las aplicaciones de Adobe Creative Cloud, como Adobe Photoshop o Adobe Illustrator, incluyen recursos de contenido como tutoriales, ejemplos y guías para los usuarios finales. AEM Este contenido lo consumen las aplicaciones cliente mediante el uso de as a Cloud Service AEM de forma directa, realizan llamadas de API al nivel de publicación de la nube de la para recuperar el contenido estructurado como flujos JSON y utilizan el [AEM Red de entrega de contenido (CDN) en as a Cloud Service](/help/implementing/dispatcher/cdn.md#content-delivery) para ofrecer contenido estructurado y no estructurado con un rendimiento óptimo.
+Por ejemplo, las aplicaciones de Adobe Creative Cloud, como Adobe Photoshop o Adobe Illustrator, incluyen recursos de contenido como tutoriales, ejemplos y guías para los usuarios finales. Este contenido lo consumen las aplicaciones cliente mediante AEM as a Cloud Service AEM de forma directa, realizan llamadas de API al nivel de publicación de nube de para recuperar el contenido estructurado como flujos JSON y usan la [red de distribución de contenido (CDN) en AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#content-delivery) para ofrecer contenido estructurado y no estructurado con un rendimiento óptimo.
 
 Los equipos que contribuyen a este proyecto se adhieren al siguiente proceso.
 

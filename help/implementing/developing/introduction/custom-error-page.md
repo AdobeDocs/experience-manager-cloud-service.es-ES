@@ -17,21 +17,21 @@ AEM viene con un controlador de error estándar para la administración de error
 
 ![Mensaje de error estándar](assets/error-message-standard.png)
 
-AEM Para responder a los errores, proporciona un valor de tipo `404.jsp` script en `/libs/sling/servlet/errorhandler`.
+AEM Para responder a los errores, proporciona un script de `404.jsp` en `/libs/sling/servlet/errorhandler`.
 
 >[!TIP]
 >
->AEM Debido a que se basa en Apache Sling, hay disponible más información [en la documentación de gestión de errores de Apache.](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html)
+>AEM Debido a que se basa en Apache Sling, hay más información disponible [en la documentación de administración de errores de Apache.](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html)
 
 >[!NOTE]
 >
->En una instancia de autor, [Filtro de depuración de CQ WCM](/help/implementing/deploying/configuring-osgi.md) está activada de forma predeterminada. Esto siempre resulta en el código de respuesta 200. El controlador de error predeterminado responde escribiendo el seguimiento de pila completo en la respuesta.
+>En una instancia de autor, [Filtro de depuración de CQ WCM](/help/implementing/deploying/configuring-osgi.md) está habilitado de manera predeterminada. Esto siempre resulta en el código de respuesta 200. El controlador de error predeterminado responde escribiendo el seguimiento de pila completo en la respuesta.
 >
->En una instancia de publicación, el filtro de depuración de CQ WCM es **siempre** desactivado (incluso si está configurado como activado).
+>En una instancia de publicación, el filtro de depuración de CQ WCM está **siempre** deshabilitado (incluso si está configurado como habilitado).
 
 ## Personalizar páginas mostradas por el controlador de error {#how-to-customize-pages-shown-by-the-error-handler}
 
-Puede desarrollar sus propias secuencias de comandos para personalizar las páginas que muestra el controlador de errores cuando se produce un error. Para ello, utilice [AEM mecanismo de superposición estándar de la](/help/implementing/developing/introduction/overlays.md) para que las páginas personalizadas se creen en `/apps` y superponer las páginas predeterminadas que se encuentran en `/libs`.
+Puede desarrollar sus propias secuencias de comandos para personalizar las páginas que muestra el controlador de errores cuando se produce un error. AEM Para ello, usa [el mecanismo de superposición estándar ](/help/implementing/developing/introduction/overlays.md) de para que las páginas personalizadas se creen en `/apps` y se superpongan las páginas predeterminadas que se encuentran en `/libs`.
 
 1. En el repositorio, copie los scripts predeterminados:
 
@@ -49,13 +49,13 @@ Puede desarrollar sus propias secuencias de comandos para personalizar las pági
 
 >[!CAUTION]
 >
->El `404.jsp` AEM La secuencia de comandos se ha diseñado específicamente para permitir la autenticación de los usuarios; en particular, para permitir el inicio de sesión en el sistema en caso de errores.
+>AEM El script `404.jsp` se ha diseñado específicamente para permitir la autenticación de la; en particular, para permitir el inicio de sesión del sistema en caso de que se produzcan estos errores.
 >
 >Por lo tanto, la sustitución de esta secuencia de comandos debe realizarse con mucho cuidado.
 
 ### Personalización de la Respuesta a Errores HTTP 500 {#customizing-the-response-to-http-errors}
 
-El HTTP [500 Error interno del servidor](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) indica un error del lado del servidor como que el servidor encontró una condición inesperada que le impidió cumplir la solicitud.
+El error interno del servidor HTTP [500](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) indica un error del lado del servidor, como que el servidor encontró una condición inesperada que le impidió cumplir la solicitud.
 
 AEM Cuando el procesamiento de solicitudes resulta en una excepción, el marco de trabajo de Apache Sling (en el que se basa el procesamiento de la):
 
@@ -64,21 +64,21 @@ AEM Cuando el procesamiento de solicitudes resulta en una excepción, el marco d
    * El código de respuesta HTTP 500
    * El seguimiento de pila de excepciones
 
-Por [personalización de las páginas mostradas por el controlador de error](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` se puede crear el script. Sin embargo, solo se utiliza si `HttpServletResponse.sendError(500)` se ejecuta explícitamente; es decir, desde un receptor de excepciones.
+Si [personaliza las páginas mostradas por el controlador de error](#how-to-customize-pages-shown-by-the-error-handler), se puede crear un script `500.jsp`. Sin embargo, solo se usa si `HttpServletResponse.sendError(500)` se ejecuta explícitamente; es decir, desde un receptor de excepciones.
 
-De lo contrario, el código de respuesta se establece en 500, pero la variable `500.jsp` no se ejecuta el script.
+De lo contrario, el código de respuesta se establece en 500, pero no se ejecuta el script `500.jsp`.
 
-Para controlar 500 errores, el nombre de archivo de la secuencia de comandos del controlador de errores debe ser el mismo que la clase de excepción (o superclase). Para gestionar todas estas excepciones, puede crear un script `/apps/sling/servlet/errorhandler/Throwable.jsp` o `/apps/sling/servlet/errorhandler/Exception.jsp`.
+Para controlar 500 errores, el nombre de archivo de la secuencia de comandos del controlador de errores debe ser el mismo que la clase de excepción (o superclase). Para controlar todas estas excepciones, puede crear un script `/apps/sling/servlet/errorhandler/Throwable.jsp` o `/apps/sling/servlet/errorhandler/Exception.jsp`.
 
 >[!NOTE]
 >
->AEM En calidad de Cloud Service, la red de distribución de contenido (CDN) proporciona una página de error genérica cuando se recibe un error de 5XX desde el servidor. Para permitir que la respuesta real del backend pase, debe agregar el siguiente encabezado a la respuesta: `x-aem-error-pass: true`.
+>AEM En calidad de Cloud Service, la red de distribución de contenido (CDN) proporciona una página de error genérica cuando se recibe un error de 5XX desde el servidor. Para permitir que pase la respuesta real del servidor, debe agregar el siguiente encabezado a la respuesta: `x-aem-error-pass: true`.
 >AEM Esto solo funciona para respuestas procedentes de la capa de o de Apache/Dispatcher. Otros errores inesperados procedentes de capas de infraestructura intermedias seguirán mostrando la página de error genérica.
 
 >[!CAUTION]
 >
->En una instancia de autor, [Filtro de depuración de CQ WCM](/help/implementing/deploying/configuring-osgi.md) está activada de forma predeterminada. Esto siempre resulta en el código de respuesta 200. El controlador de error predeterminado responde escribiendo el seguimiento de pila completo en la respuesta.
+>En una instancia de autor, [Filtro de depuración de CQ WCM](/help/implementing/deploying/configuring-osgi.md) está habilitado de manera predeterminada. Esto siempre resulta en el código de respuesta 200. El controlador de error predeterminado responde escribiendo el seguimiento de pila completo en la respuesta.
 >
->Para un controlador de error personalizado, se necesitan respuestas con código 500, por lo que la variable [El filtro de depuración de CQ WCM debe estar desactivado](/help/implementing/deploying/configuring-osgi.md). Esto garantiza que se devuelva el código de respuesta 500, lo que a su vez déclencheur el controlador de error de Sling correcto.
+>Para un controlador de error personalizado, se necesitan respuestas con código 500, por lo que el filtro de depuración de [CQ WCM debe deshabilitarse](/help/implementing/deploying/configuring-osgi.md). Esto garantiza que se devuelva el código de respuesta 500, lo que a su vez déclencheur el controlador de error de Sling correcto.
 >
->En una instancia de publicación, el filtro de depuración de CQ WCM es **siempre** desactivado (incluso si está configurado como activado).
+>En una instancia de publicación, el filtro de depuración de CQ WCM está **siempre** deshabilitado (incluso si está configurado como habilitado).

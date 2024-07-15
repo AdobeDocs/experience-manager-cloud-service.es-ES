@@ -7,7 +7,7 @@ exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
 source-wordcount: '610'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 97%
 
 * **Diseñador de experiencia del usuario (UX)**: un Diseñador de experiencia del usuario (UX) define el estilo, el diseño y la marca de los recursos de [!DNL AEM Forms].
 
-* **Profesional de Forms**: un profesional de Forms crea formularios adaptables, temáticas y plantillas según el estilo, el diseño y la promoción de la marca que proporcione el Diseñador de experiencias de usuario. AEM El profesional también crea e integra formularios adaptables con un modelo de datos de formulario (FDM) y flujos de trabajo de. También suele realizar tareas relacionadas con el front-end.
+* **Profesional de Forms**: un profesional de Forms crea formularios adaptables, temáticas y plantillas según el estilo, el diseño y la promoción de la marca que proporcione el Diseñador de experiencias de usuario. El profesional también crea e integra formularios adaptables con un modelo de datos de formulario (FDM) y flujos de trabajo de AEM. También suele realizar tareas relacionadas con el front-end.
 
 * **Desarrollador de Forms**: un desarrollador de Forms desarrolla una solución de formularios personalizada. Normalmente, se encarga del desarrollo back-end, como el desarrollo de componentes personalizados, flujos de trabajo de AEM, el servicio de prerrellenado y mucho más.
 

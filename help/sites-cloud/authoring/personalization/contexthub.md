@@ -21,7 +21,7 @@ La barra de herramientas consta de una serie de modos de interfaz de usuario que
 * Los modos de interfaz de usuario son iconos que aparecen en la parte izquierda de la barra de herramientas. Al seleccionar un icono, la barra de herramientas muestra los módulos de interfaz de usuario que contiene.
 * Los módulos de IU muestran datos de uno o más almacenes de ContextHub. Algunos módulos de IU también permiten manipular los datos de almacenamiento.
 
-ContextHub instala varios modos de interfaz de usuario y módulos de IU. Es posible que el administrador tenga [ContextHub configurado](/help/implementing/developing/personalization/configuring-contexthub.md) para mostrar diferentes.
+ContextHub instala varios modos de interfaz de usuario y módulos de IU. Es posible que el administrador haya [configurado ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) para que muestre otros.
 
 ## Mostrar la barra de herramientas de ContextHub {#revealing-the-contexthub-toolbar}
 

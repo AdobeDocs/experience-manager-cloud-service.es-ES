@@ -18,7 +18,7 @@ El entorno de creación AEM ofrece varios mecanismos para organizar y editar el 
 
 ## Administración del sitio {#managing-your-site}
 
-El **Sites** La consola de le permite desplazarse por su sitio web y administrarlo mediante la barra de encabezado, la barra de herramientas, los iconos de acción (aplicables al recurso seleccionado), las rutas de exploración y, cuando se seleccionan, los carriles secundarios (por ejemplo, la cronología y las referencias).
+La consola **Sites** le permite navegar y administrar su sitio web mediante la barra de encabezado, la barra de herramientas, los iconos de acción (aplicables al recurso seleccionado), las rutas de exploración y, cuando se seleccionan, los carriles secundarios (por ejemplo, referencias y cronología).
 
 Por ejemplo, la vista de columna:
 
@@ -90,7 +90,7 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
    * Filtrar componentes por su nombre.
    * Restringir la visualización a un grupo específico mediante la selección desplegable.
 
-  Para obtener una descripción más detallada del componente, puede seleccionar el icono de información junto al componente en la **Componentes** explorador (si está disponible). Por ejemplo, para el **fragmento de contenido**:
+  Para obtener una descripción más detallada del componente, puede seleccionar el icono de información junto al componente en el explorador **Componentes** (si está disponible). Por ejemplo, para el **fragmento de contenido**:
 
   ![Información del explorador de componentes](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
@@ -108,7 +108,7 @@ El explorador de recursos es una pestaña del panel lateral que está situada ju
 
 ![Alternar panel lateral](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-Cuando abra el panel lateral, se deslizará para abrirse de izquierda a derecha. Seleccione el **Assets** pestaña si es necesario.
+Cuando abra el panel lateral, se deslizará para abrirse de izquierda a derecha. Seleccione la ficha **Assets** si es necesario.
 
 ![Botón Explorador de recursos](/help/sites-cloud/authoring/assets/assets-browser-button.png)
 
@@ -120,7 +120,7 @@ Para añadir un recurso a la página, selecciónelo y arrástrelo a la ubicació
 
 * Un componente existente del tipo adecuado.
    * Por ejemplo, puede arrastrar un recurso de tipo imagen hacia un componente de imagen.
-* A [placeholder](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) en el sistema de párrafos para crear un componente del tipo adecuado.
+* Un [marcador de posición](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) en el sistema de párrafos para crear un componente del tipo apropiado.
    * Por ejemplo, puede arrastrar un recurso de tipo imagen al sistema de párrafos para crear un componente de imagen.
 
 >[!NOTE]
@@ -163,7 +163,7 @@ Si necesita realizar rápidamente un cambio en un recurso, puede iniciar el [edi
 
 ## Árbol de contenido {#content-tree}
 
-El **Árbol de contenido** ofrece información general de todos los componentes de la página en una jerarquía, para que pueda ver de un vistazo cómo está compuesta la página.
+El **Árbol de contenido** proporciona una descripción general de todos los componentes de la página en una jerarquía para que pueda ver de un vistazo cómo está compuesta la página.
 
 El árbol de contenido es una pestaña del panel lateral (junto con el explorador de recursos y componentes). Para abrir (o cerrar) el panel lateral, utilice el icono de la parte superior izquierda de la barra de herramientas:
 
@@ -224,7 +224,7 @@ Abra la consola en cuestión, desplácese hasta el recurso y abra **Referencias*
 
 Seleccione el tipo de referencia adecuado para obtener más información. En determinadas situaciones, hay disponibles acciones adicionales al seleccionar una referencia específica, como las siguientes:
 
-* **Vínculos entrantes**, proporciona una lista de páginas que hacen referencia a la página, así como acceso directo a **Editar** Seleccione una de esas páginas cuando seleccione un vínculo específico.
+* **Vínculos entrantes**, proporciona una lista de páginas que hacen referencia a la página, así como acceso directo a **Editar** una de esas páginas cuando selecciona un vínculo específico.
 
    * Esto solo puede mostrar vínculos estáticos, no vínculos generados dinámicamente; por ejemplo, desde el componente Lista.
 
@@ -271,9 +271,9 @@ Además, **Información de página** puede proporcionar acceso a análisis y rec
 Al editar una página existen varios modos que permiten realizar diferentes acciones:
 
 * [Editar](/help/sites-cloud/authoring/fundamentals/editing-content.md): el modo que se debe emplear al editar el contenido de la página.
-* [Diseño](/help/sites-cloud/authoring/features/responsive-layout.md) : permite crear y editar un diseño interactivo en función del dispositivo (si la página está basada en un contenedor de diseños).
+* [Diseño](/help/sites-cloud/authoring/features/responsive-layout.md): permite crear y editar su diseño interactivo en función del dispositivo (si la página está basada en un contenedor de diseños)
 * [Segmentación:](/help/sites-cloud/authoring/personalization/targeted-content.md) aumente la relevancia del contenido mediante la segmentación y efectuando mediciones en todos los canales.
-* [Deformación de tiempo](/help/sites-cloud/authoring/features/page-versions.md#timewarp) : permite ver el estado de una página en un momento determinado.
+* [Deformación de tiempo](/help/sites-cloud/authoring/features/page-versions.md#timewarp): le permite ver el estado de una página en un momento determinado.
 * [Estado de Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status): permite echar un vistazo rápido al estado de la Live Copy y de los componentes que se han heredado o no.
 * [Modo de desarrollador](/help/implementing/developing/tools/developer-mode.md)
 * [Vista previa](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages): se utiliza para ver la página tal como se muestra en el entorno de publicación o para navegar mediante vínculos en el contenido. 
@@ -288,7 +288,7 @@ Puede acceder a estas opciones a través de los iconos de la esquina superior de
 >* Según las características de la página, es posible que algunos modos no estén disponibles.
 >* El acceso a algunos modos requiere los permisos o privilegios adecuados.
 >* El modo de desarrollador no está disponible en dispositivos móviles debido a las restricciones de espacio.
->* Hay un [atajo de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) para alternar entre **Previsualizar** y el modo seleccionado actualmente (por ejemplo, **Editar**, **Diseño**, etc.).
+>* Hay un [método abreviado de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) para alternar entre **Vista previa** y el modo seleccionado actualmente (por ejemplo, **Editar**, **Diseño**, etc.).
 >
 
 ## Selección de la ruta {#path-selection}
@@ -315,7 +315,7 @@ El navegador de rutas está organizado como la [vista de columna](/help/sites-cl
 
 ![Navegador de rutas](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* Una vez seleccionado un recurso, la variable **Seleccionar** en la parte superior derecha del cuadro de diálogo se activa. Seleccione para confirmar la selección o **Cancelar** para cancelar.
+* Una vez seleccionado un recurso, se activa el botón **Seleccionar** en la parte superior derecha del cuadro de diálogo. Seleccione para confirmar la selección o **Cancelar** para anular.
 * Si el contexto permite la selección de varios recursos, al seleccionar un recurso también se activa el botón **Seleccionar**, pero también se agrega un recuento del número de recursos seleccionados a la esquina superior derecha de la ventana. Haga clic en la **X** junto al número para anular toda la selección.
 * Al navegar por el árbol, su ubicación se refleja en las rutas de exploración en la parte superior del cuadro de diálogo. Estas rutas de exploración también se pueden utilizar para saltar rápidamente dentro de la jerarquía de recursos.
 * Puede utilizar en cualquier momento el campo de búsqueda situado en la parte superior del cuadro de diálogo. Haga clic en **X** en el campo de búsqueda para borrar la búsqueda.

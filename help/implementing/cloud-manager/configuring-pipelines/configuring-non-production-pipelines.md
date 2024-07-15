@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '1400'
-ht-degree: 73%
+ht-degree: 75%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 73%
 
 Obtenga información sobre cómo configurar canalizaciones que no sean de producción para probar la calidad del código antes de implementarlas en entornos de producción.
 
-Un usuario debe tener **[Administrador de implementación](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** función para configurar canalizaciones que no sean de producción.
+Un usuario debe tener la función **[Administrador de implementación](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** para configurar canalizaciones que no sean de producción.
 
 ## Canalizaciones que no son de producción {#non-production-pipelines}
 
@@ -70,7 +70,7 @@ Una vez que haya configurado el programa y tenga al menos un entorno utilizando 
 1. En la pestaña **Código fuente** del cuadro de diálogo **Agregar canalización que no sea de producción**, debe seleccionar qué tipo de código debe procesar la canalización.
 
    * **[Código de pila completa](#full-stack-code)**
-   * **[Implementación dirigida](#targeted-deployment)**
+   * **[Implementación de destino](#targeted-deployment)**
 
 Consulte [Canalizaciones de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) para obtener más información sobre los tipos de canalizaciones.
 
@@ -113,35 +113,35 @@ La canalización se guarda y ahora puede [administrar las canalizaciones](managi
 
 ### Implementación dirigida {#targeted-deployment}
 
-AEM Una implementación de destino implementa el código únicamente para partes seleccionadas de la aplicación de. En una implementación de este tipo puede elegir **Incluir** uno de los siguientes tipos de código:
+AEM Una implementación de destino implementa el código únicamente para partes seleccionadas de la aplicación de. En una implementación de este tipo, puede elegir **Incluir** uno de los siguientes tipos de código:
 
-* **Configuración** AEM : configure las reglas de filtro de tráfico en su entorno de.
-   * Ver el documento [Reglas de filtro de tráfico, incluidas las reglas WAF](/help/security/traffic-filter-rules-including-waf.md) para obtener información sobre cómo administrar las reglas de filtro de tráfico en el repositorio para que se implementen correctamente.
-   * Al ejecutar una canalización de implementación de destino, las configuraciones [como las configuraciones de WAF](/help/security/traffic-filter-rules-including-waf.md) se implementarán, siempre que se guarden en el entorno, el repositorio y la rama que haya definido en la canalización.
+* AEM **Configuración**: configure las opciones de las reglas de filtro de tráfico en su entorno de la.
+   * Consulte el documento [Reglas de filtro de tráfico, incluidas las reglas WAF](/help/security/traffic-filter-rules-including-waf.md), para obtener información sobre cómo administrar las reglas de filtro de tráfico en el repositorio de modo que se implementen correctamente.
+   * Al ejecutar una canalización de implementación de destino, se implementarán las configuraciones [tales como las configuraciones WAF](/help/security/traffic-filter-rules-including-waf.md), siempre que se guarden en el entorno, el repositorio y la rama que haya definido en la canalización.
    * En cualquier momento, solo puede haber una canalización de configuración por entorno.
-* **Código front-end** AEM - Configure JavaScript y CSS para el front-end de su aplicación de la.
+* **Código front-end**: configure JavaScript AEM y CSS para el front-end de la aplicación.
    * Con las canalizaciones front-end, se da más independencia a los desarrolladores de front-end y el proceso de desarrollo se puede acelerar.
    * Consulte el documento [Desarrollo de sitios con la canalización front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber cómo funciona este proceso, así como algunas consideraciones que deben tenerse en cuenta para aprovechar al máximo este proceso.
-* **Configuración de nivel web** : configure las propiedades de Dispatcher para almacenar, procesar y enviar páginas web al cliente.
-   * Ver el documento [Canalizaciones de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) para obtener más información.
+* **Configuración de nivel web**: configure las propiedades de Dispatcher para almacenar, procesar y enviar páginas web al cliente.
+   * Consulte el documento [Canalizaciones de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) para obtener más información.
    * Si existe una canalización de código de nivel web para el entorno seleccionado, esta selección está deshabilitada.
    * Si tiene una canalización de pila completa existente implementando en un entorno, al crear una canalización de configuración de capa web para el mismo entorno, se omitirá la configuración de capa web existente en la canalización de pila completa.
 
 >[!NOTE]
 >
->Las canalizaciones de nivel web y configuración no son compatibles con los repositorios privados. Consulte el documento [Adición de repositorios privados en Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) para obtener más información y la lista completa de limitaciones.
+>Las canalizaciones de configuración de nivel web no son compatibles con los repositorios privados. Consulte el documento [Adición de repositorios privados en Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) para obtener más información y la lista completa de limitaciones.
 
 Los pasos para completar la creación de la canalización de implementación de destino que no sea de producción son los mismos una vez que elija un tipo de implementación.
 
 1. Elija el tipo de implementación que necesita.
 
-![Opciones de implementación objetivo](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-targeted-deployment.png)
+![Opciones de implementación de destino](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-targeted-deployment.png)
 
-1. Defina el **Entornos de implementación aptos**.
+1. Defina los **Entornos de implementación aptos**.
 
    * Si la canalización es una canalización de implementación, debe seleccionar a qué entornos debe implementar.
 
-1. En **Código fuente**, defina las siguientes opciones:
+1. En **Código Source**, defina las siguientes opciones:
 
    * **Repositorio**: esta opción define desde qué repositorio de Git la canalización debe recuperar el código.
 
@@ -152,13 +152,13 @@ Los pasos para completar la creación de la canalización de implementación de 
    * **Rama de Git**: esta opción define desde qué rama de la canalización seleccionada debe recuperar el código.
       * Introduzca los primeros caracteres del nombre de la rama y la función de autocompletar de este campo. Encuentra las ramas coincidentes que puede seleccionar.
    * **Ubicación del código**: esta opción define la ruta en la rama de la repo seleccionada desde la que la canalización debe recuperar el código.
-   * **Canalización** : Para las canalizaciones front-end que no sean de producción, tiene la opción de habilitar **[Auditoría de experiencias.](/help/implementing/cloud-manager/experience-audit-testing.md)**
+   * **Canalización**: para las canalizaciones front-end que no sean de producción, tiene la opción de habilitar **[Auditoría de experiencias.](/help/implementing/cloud-manager/experience-audit-testing.md)**
 
-   ![Configurar canalización](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
+   ![Canalización de configuración](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. Si habilitó la auditoría de experiencias, toque o haga clic en **Continuar** para avanzar a la **Auditoría de experiencias** donde puede definir las rutas que siempre deben incluirse en la auditoría de experiencias.
+1. Si habilitaste la auditoría de experiencias, toca o haz clic en **Continuar** para avanzar a la pestaña **Auditoría de experiencias**, donde puedes definir las rutas que siempre se deben incluir en la auditoría de experiencias.
 
-   * Si ha activado **Auditoría de experiencias**, consulte el documento [Auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) para obtener más información sobre cómo configurar.
+   * Si habilitaste **Auditoría de experiencias**, consulta el documento [Auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) para obtener detalles sobre cómo configurarla.
    * Si no lo ha hecho, omita este paso.
 
 1. Toque o haga clic en **Guardar** para guardar la canalización.

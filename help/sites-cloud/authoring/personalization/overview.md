@@ -27,7 +27,7 @@ AEM proporciona un marco de herramientas para:
 * Definir las reglas utilizadas para determinar la información de usuario conocida con respecto a la definición de una audiencia.
 * Configurar las páginas para presentar experiencias personalizadas segmentadas, para procesar el contenido específico aplicable al usuario final actual.
 
-AEM En la siguiente descripción general se presentan algunos de los términos utilizados para la personalización en el as a Cloud Service de la, seguidos de un orden de acción recomendado.
+En la siguiente descripción general se presentan algunos de los términos utilizados para la personalización en AEM as a Cloud Service, seguidos de un orden de acción recomendado.
 
 ## Experiencia {#experience}
 
@@ -91,7 +91,7 @@ Puede [Crear contenido segmentado](/help/sites-cloud/authoring/personalization/t
 
 Un conjunto agrupado de componentes que constituyen una experiencia.
 
-[Fragmentos de experiencias](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) están formadas por contenido e información (estilo, etc.) para crear una experiencia; se pueden utilizar directamente al crear páginas. Pueden considerarse como un subconjunto de una página AEM. Permiten a los autores de contenido reutilizar contenido en varios canales, incluyendo las páginas de Sites y sistemas de terceros.
+[Los fragmentos de experiencias](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) están hechos de contenido e información (estilo, etc.) para crear una experiencia; se pueden usar directamente al crear páginas. Pueden considerarse como un subconjunto de una página AEM. Permiten a los autores de contenido reutilizar contenido en varios canales, incluyendo las páginas de Sites y sistemas de terceros.
 
 Para un ejemplo de personalización, se puede combinar un título, una imagen, una descripción y un botón de llamada a la acción para formar una experiencia de teaser. El uso de fragmentos de experiencias es una parte fundamental del uso de la personalización de Adobe Target.
 

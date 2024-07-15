@@ -20,7 +20,7 @@ En Cloud Manager puede determinar si su nombre de dominio se resuelve correctame
 
 1. Vaya a la pantalla **Entornos** de la página **Información general**.
 
-1. Clic **Configuración de dominio** en el panel de navegación izquierdo.
+1. Haga clic en **Configuración de dominio** en el panel de navegación izquierdo.
 
 1. Haga clic en el icono **Estado** del nombre de dominio.
 

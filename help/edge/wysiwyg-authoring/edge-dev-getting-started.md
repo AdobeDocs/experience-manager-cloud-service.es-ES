@@ -131,7 +131,7 @@ Ahora que tiene un proyecto de GitHub, debe crear un nuevo sitio que el proyecto
 >
 >Para editar el sitio con el editor universal, debe utilizar un explorador basado en Chromium.
 
-1. Descargue la última plantilla del sitio WYSIWYG con Edge Delivery Services de GitHub en [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
+1. Descargue la última creación WYSIWYG con la plantilla del sitio de Edge Delivery Services desde GitHub en [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 
 1. Inicie sesión en la instancia de creación de AEM as a Cloud Service, vaya a la consola Sitios y pulse o haga clic en **Crear** -> **Sitio a partir de una plantilla**.
 
@@ -199,4 +199,4 @@ Consulte la guía [Creación de bloques instrumentados para su uso con el editor
 
 >[!TIP]
 >
->Para ver una guía completa sobre la creación de un nuevo proyecto de Edge Delivery Services AEM habilitado para la creación WYSIWYG con as a Cloud Service como origen de contenido, consulte [AEM Este seminario web de GEM de la.](https://experienceleague.adobe.com/es/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Para ver un tutorial completo sobre la creación de un nuevo proyecto de Edge Delivery Services habilitado para la creación WYSIWYG con AEM as a Cloud Service AEM como fuente de contenido, visite [este seminario web de GEMs de.](https://experienceleague.adobe.com/es/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)

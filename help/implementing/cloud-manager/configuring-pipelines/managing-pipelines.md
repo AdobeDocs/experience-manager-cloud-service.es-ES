@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
 workflow-type: tm+mt
 source-wordcount: '1119'
-ht-degree: 48%
+ht-degree: 57%
 
 ---
 
@@ -46,37 +46,37 @@ La ventana **Canalizaciones** muestra una lista completa de todas las canalizaci
 
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
 
-1. Desde el **Resumen del programa** , seleccione la **Canalizaciones** para cambiar a la pestaña **Canalizaciones** ventana.
+1. En la página **Resumen del programa**, seleccione la pestaña **Canalizaciones** para cambiar a la ventana **Canalizaciones**.
 
-1. Aquí puede ver una lista de todas las canalizaciones para el programa y comenzar y detener la ejecución de la canalización como lo haría en el **Tarjeta de canalizaciones**.
+1. Aquí puede ver una lista de todas las canalizaciones para el programa y comenzar y detener la ejecución de la canalización como lo haría en la **Tarjeta de canalizaciones**.
 
-Si se está ejecutando una canalización, pulse el icono de información en la **Estado** La columna revelará detalles sobre la ejecución.
+Si se está ejecutando una canalización, al pulsar el icono de información en la columna **Estado** se mostrarán los detalles de la ejecución.
 
 ![Detalles de ejecución de canalización](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
 Pulsar o hacer clic en **Ver detalles** le llevará a los [detalles de la ejecución de la canalización.](#view-details)
 
-También puede tocar o hacer clic en el botón de los tres puntos de la canalización para realizar acciones adicionales apropiadas para el estado de la canalización, como [edición](#editing-pipelines) it o [cancelando la ejecución.](#cancel)
+También puede tocar o hacer clic en el botón de los tres puntos de la canalización para realizar acciones adicionales apropiadas para el estado de la canalización, como [editarla](#editing-pipelines) o [cancelar la ejecución.](#cancel)
 
 ![Acciones de canalización](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
 
 ## Ventana de actividad {#activity}
 
-El **Actividad** La ventana muestra una lista completa de todas las ejecuciones de canalizaciones para el programa seleccionado, así como otros eventos de programa importantes.
+La ventana **Activity** muestra una lista completa de todas las ejecuciones de canalizaciones para el programa seleccionado, así como otros eventos de programa importantes.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Desde el **Resumen del programa** , seleccione la **Actividad** para cambiar a la pestaña **Actividad** ventana.
+1. En la página **Información general del programa**, seleccione la pestaña **Actividad** para cambiar a la ventana **Actividad**.
 
 1. Aquí puede ver una lista de todas las ejecuciones de canalización del programa, incluidas las ejecuciones actuales e históricas.
 
-Si se está ejecutando una canalización, pulse el icono de información en la **Estado** La columna revelará detalles sobre la ejecución.
+Si se está ejecutando una canalización, al pulsar el icono de información en la columna **Estado** se mostrarán los detalles de la ejecución.
 
 ![Detalles de ejecución de canalización](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
-Al tocar o hacer clic en la fila que representa la ejecución de la canalización, se abre el [detalles de la ejecución de la canalización.](#view-details)
+Si toca o hace clic en la fila que representa la ejecución de la canalización, se le dirigirán a los [detalles de la ejecución de la canalización.](#view-details)
 
-También puede tocar o hacer clic en el botón de los tres puntos para realizar más acciones en la ejecución de la canalización, como ver sus detalles o descargar el registro, que le lleva al [página de detalles de canalización.](#view-details)
+También puede tocar o hacer clic en el botón de puntos suspensivos para tomar más medidas sobre la ejecución de la canalización, como ver sus detalles o descargar el registro, que lo lleva a la [página de detalles de la canalización.](#view-details)
 
 ![Acciones de ejecución de canalización](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-execution-actions.png)
 
@@ -84,7 +84,7 @@ También puede tocar o hacer clic en el botón de los tres puntos para realizar 
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Vaya a **Canalizaciones** de la tarjeta de **Resumen del programa** y haga clic en el botón de los tres puntos situado junto a la canalización que ejecute, seleccione **Ejecutar** en el menú.
+1. Vaya a la tarjeta **Canalizaciones** de la página **Resumen del programa** y haga clic en el botón de puntos suspensivos situado junto a la canalización que ejecuta. Seleccione **Ejecutar** en el menú.
 
 1. La ejecución de la canalización comienza y se indica con la columna **Estado**.
 
@@ -96,7 +96,7 @@ Según el tipo de canalización, puede cancelar la ejecución si hace clic de nu
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Vaya a **Canalizaciones** de la tarjeta de **Resumen del programa** y haga clic en el botón de los tres puntos situado junto a la canalización que desee editar y, a continuación, seleccione **Editar** en el menú.
+1. Vaya a la tarjeta **Canalizaciones** de la página **Información general del programa**, haga clic en el botón de los tres puntos situado junto a la canalización que desee editar y, a continuación, seleccione **Editar** en el menú.
 
 1. El cuadro de diálogo **Editar canalización de producción** o **Editar canalización que no sea de producción** se mostrará y le permitirá editar los mismos detalles introducidos al crear la canalización.
 
@@ -104,7 +104,7 @@ Según el tipo de canalización, puede cancelar la ejecución si hace clic de nu
       * [Configurar canalizaciones de producción](configuring-production-pipelines.md)
       * [Configurar canalizaciones que no sean de producción](configuring-non-production-pipelines.md)
 
-1. Clic **Actualizar** una vez que haya terminado de editar la canalización.
+1. Haga clic en **Actualizar** cuando haya terminado de editar la canalización.
 
 >[!NOTE]
 >
@@ -112,13 +112,13 @@ Según el tipo de canalización, puede cancelar la ejecución si hace clic de nu
 
 >[!NOTE]
 >
->Las canalizaciones de nivel web y configuración no son compatibles con los repositorios privados. Consulte el documento [Adición de repositorios privados en Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) para obtener más información y la lista completa de limitaciones.
+>Las canalizaciones de configuración de nivel web no son compatibles con los repositorios privados. Consulte el documento [Adición de repositorios privados en Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) para obtener más información y la lista completa de limitaciones.
 
 ## Eliminar canalizaciones {#deleting-pipelines}
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Vaya a **Canalizaciones** de la tarjeta de **Resumen del programa** y haga clic en el botón de los tres puntos situado junto a la canalización que ejecute, seleccione **Eliminar** en el menú.
+1. Vaya a la tarjeta **Canalizaciones** de la página **Resumen del programa** y haga clic en el botón de puntos suspensivos situado junto a la canalización que ejecute, seleccione **Eliminar** en el menú.
 
 >[!NOTE]
 >
@@ -130,13 +130,13 @@ Puede ver los detalles de una canalización para ver el estado y los registros d
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Vaya a **Canalizaciones** de la tarjeta de **Resumen del programa** y haga clic en el botón de los tres puntos situado junto a la canalización que ejecute, seleccione **Ver detalles** en el menú.
+1. Vaya a la tarjeta **Canalizaciones** de la página **Resumen del programa** y haga clic en el botón de puntos suspensivos situado junto a la canalización que ejecute. Seleccione **Ver detalles** en el menú.
 
 1. Se le redirigirá a la página de detalles de la canalización en ejecución.
 
 ![Detalles de canalización](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-running-details.png)
 
-Desde aquí puede ver el estado de los distintos pasos de la canalización y recuperar los registros de generación con fines diagnósticos. Ver el documento [Implementar el código](/help/implementing/cloud-manager/deploy-code.md) para obtener más información sobre la implementación del código y la ejecución de pruebas.
+Desde aquí puede ver el estado de los distintos pasos de la canalización y recuperar los registros de generación con fines diagnósticos. Consulte el documento [Implementación del código](/help/implementing/cloud-manager/deploy-code.md) para obtener más información sobre la implementación del código y la ejecución de pruebas.
 
 Todos los pasos de la ejecución de una canalización se muestran con los que aún no se han iniciado en gris. Los pasos finalizados muestran su duración.
 
@@ -144,17 +144,17 @@ Una vez completado el paso de una canalización, se presenta un resumen.
 
 ![Resumen del paso](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-step.png)
 
-Seleccione el **Ver detalles** vínculo para mostrar el **Duración** sección. Esto incluye la duración promedio de la canalización en función de la tendencia histórica para ese programa.
+Seleccione el vínculo **Ver detalles** para mostrar la sección **Duración**. Esto incluye la duración promedio de la canalización en función de la tendencia histórica para ese programa.
 
 ![Duración](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
 
-Si la canalización contenía un **Escaneado de códigos** , que ha planteado problemas, puede tocar o hacer clic en el **Descargar detalles** para ver una lista de [pruebas de calidad del código](/help/implementing/cloud-manager/code-quality-testing.md) que no pasó.
+Si la canalización contenía un paso **Escaneado de códigos** que ha planteado problemas, puede pulsar o hacer clic en el botón **Descargar detalles** para ver una lista de las [pruebas de calidad del código](/help/implementing/cloud-manager/code-quality-testing.md) que no se han superado.
 
 ![Problemas de calidad del código](assets/managing-pipelines-code-quality-issues.png)
 
-A **Ubicación del archivo del proyecto** está disponible en el archivo CSV para indicar la ubicación del código infractor. Esta columna es la ruta relativa al proyecto, mientras que la variable **Ubicación del archivo** es generada por Maven.
+La columna de **Ubicación de archivos del proyecto** está disponible en el archivo CSV para indicar la ubicación del código infractor. Esta columna es la ruta relativa al proyecto, mientras que la columna **Ubicación del archivo** es generada por Maven.
 
-![Detalles del problema de análisis de código de proyecto](assets/managing-pipelines-code-quality-details.png)
+![Detalles del problema de análisis de código del proyecto](assets/managing-pipelines-code-quality-details.png)
 
 >[!NOTE]
 >
@@ -166,20 +166,20 @@ Si una canalización se encuentra en la fase de validación o compilación de im
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. En la página de información general del programa, haga clic en el botón de puntos suspensivos de la canalización que desee cancelar en **Canalizaciones** Tarjeta de.
+1. En la página de información general del programa, haga clic en el botón de puntos suspensivos de la canalización que desee cancelar en la tarjeta **Canalizaciones**.
 
-   ![Cancelar una canalización](/help/implementing/cloud-manager/assets/cancel-pipeline.png)
+   ![Cancelando una canalización](/help/implementing/cloud-manager/assets/cancel-pipeline.png)
 
-1. Seleccionar **Cancelar**.
+1. Seleccione **Cancelar**.
 
 También puede cancelar una canalización desde la página de detalles de la canalización.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Vaya a **Canalizaciones** de la pestaña **Resumen del programa** y seleccione la canalización que desee cancelar.
+1. Vaya a la pestaña **Canalizaciones** de la página **Resumen del programa** y seleccione la canalización que desee cancelar.
 
 1. Se le redirigirá a la página de detalles de la canalización en ejecución.
 
    ![Cancelar detalles de canalización](/help/implementing/cloud-manager/assets/cancel-pipeline-details.png)
 
-1. Seleccionar **Cancelar**.
+1. Seleccione **Cancelar**.

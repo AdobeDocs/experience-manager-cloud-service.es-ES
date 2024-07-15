@@ -16,7 +16,7 @@ ht-degree: 35%
 
 # Ver registros de operaciones de recursos en el flujo de actividades {#activity-stream-in-timeline}
 
-Esta función muestra los registros de actividad de los recursos en la cronología. Si realiza cualquiera de las siguientes operaciones relacionadas con recursos en [!DNL Experience Manager Assets], la función Flujo de actividad actualiza la cronología para reflejar la actividad.
+Esta función muestra los registros de actividad de los recursos en la cronología. Si realiza cualquiera de las siguientes operaciones relacionadas con recursos en [!DNL Experience Manager Assets], la característica Secuencia de actividades actualiza la cronología para reflejar la actividad.
 
 Las siguientes operaciones se registran en el flujo de actividad:
 
@@ -29,13 +29,13 @@ Las siguientes operaciones se registran en el flujo de actividad:
 * Rechazar
 * Mover
 
-Los registros de actividad que se mostrarán en la cronología se recuperan de la ubicación `/var/audit/com.day.cq.dam/content/dam` en CRX, donde se almacenan los archivos de registro. Además, la actividad de la cronología se registra cuando se cargan nuevos recursos o cuando se modifican y se registran los recursos existentes [!DNL Experience Manager] mediante [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html) o [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+Los registros de actividad que se mostrarán en la cronología se recuperan de la ubicación `/var/audit/com.day.cq.dam/content/dam` en CRX, donde se almacenan los archivos de registro. Además, la actividad de la cronología se registra cuando se cargan nuevos recursos o cuando se modifican y se registran los recursos existentes en [!DNL Experience Manager] mediante [Vínculo de recursos de Adobe](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html) o [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
 >[!NOTE]
 >
 >Los flujos de trabajo transitorios no se muestran en la cronología porque no se guarda información del historial para estos flujos de trabajo.
 
-Para ver el flujo de actividad, realice una o varias de las operaciones en el recurso, selecciónelo y, a continuación, elija **[!UICONTROL Cronología]** de la lista GlobalNav.
+Para ver el flujo de actividad, realice una o más de las operaciones en el recurso, selecciónelo y elija **[!UICONTROL Cronología]** en la lista GlobalNav.
 
 <!-- ![timeline-2](assets/timeline-2.png) -->
 

@@ -1,5 +1,5 @@
 ---
-title: 'Variaciones: Creación de contenido de fragmentos (Recursos: fragmentos de contenido)'
+title: 'Variaciones: Creación de contenido de fragmentos (Assets: fragmentos de contenido)'
 description: Comprenda cómo las variaciones de fragmentos de contenido le permiten crear contenido para el fragmento y luego crear variaciones de ese contenido según el propósito, aumentando así la flexibilidad.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
@@ -14,15 +14,15 @@ ht-degree: 52%
 
 # Variaciones: Crear contenido de fragmentos{#variations-authoring-fragment-content}
 
-[Variaciones](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) son una función significativa de los fragmentos de contenido en Adobe AEM Experience Manager () as a Cloud Service. Esto se debe a que le permiten crear y editar copias del **Principal** contenido para su uso en canales y escenarios específicos. En particular, esto hace que la entrega de contenido sin encabezado sea aún más flexible.
+Las [variaciones](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) son una característica importante de los fragmentos de contenido en el as a Cloud Service de Adobe AEM Experience Manager (). Esto se debe a que le permiten crear y editar copias del contenido de **Master** para usarlas en canales y escenarios específicos. En particular, esto hace que la entrega de contenido sin encabezado sea aún más flexible.
 
 >[!NOTE]
 >
 >Los fragmentos de contenido son una función de Sites, pero se almacenan como **Assets**.
 >
->Existen dos editores para crear fragmentos de contenido. Esta sección trata sobre el editor original, al que se accede principalmente desde el **Assets** consola. Consulte la documentación de Sites, [Fragmentos de contenido: creación](/help/sites-cloud/administering/content-fragments/authoring.md), para obtener más información sobre el nuevo editor (al que se accede principalmente desde el **Fragmentos de contenido** consola).
+>Existen dos editores para crear fragmentos de contenido. Esta sección trata sobre el editor original, al que se accede principalmente desde la consola **Assets**. Consulte la documentación de Sites, [Fragmentos de contenido: creación](/help/sites-cloud/administering/content-fragments/authoring.md), para obtener detalles del nuevo editor (al que se accede principalmente desde la consola **Fragmentos de contenido**).
 
-Desde el **Variaciones** puede hacer lo siguiente:
+Desde la ficha **Variaciones**, puede hacer lo siguiente:
 
 * [Introducir el contenido](#authoring-your-content) para el fragmento,
 * [Crear y administrar variaciones](#managing-variations) del contenido **Principal**,
@@ -31,7 +31,7 @@ Realizar una serie de otras acciones en función del tipo de datos que se esté 
 
 * [Insertar recursos visuales en el fragmento](#inserting-assets-into-your-fragment) (imágenes)
 
-* Seleccionar entre [Texto enriquecido](#rich-text), [Texto sin formato](#plain-text), y [Markdown](#markdown) para edición
+* Seleccione entre [Texto enriquecido](#rich-text), [Texto sin formato](#plain-text) y [Markdown](#markdown) para editarlo
 
 * [Cargar contenido](#uploading-content)
 
@@ -47,7 +47,7 @@ Realizar una serie de otras acciones en función del tipo de datos que se esté 
 
 ## Creación de contenido {#authoring-your-content}
 
-Cuando abra el fragmento de contenido para editarlo, la variable **Variaciones** está abierta de forma predeterminada. Aquí puede crear el contenido, para Principal o cualquier variación que tenga. El fragmento estructurado contiene campos de varios tipos de datos definidos en el modelo de contenido.
+Cuando abra el fragmento de contenido para editarlo, la pestaña **Variaciones** se abrirá de forma predeterminada. Aquí puede crear el contenido, para Principal o cualquier variación que tenga. El fragmento estructurado contiene campos de varios tipos de datos definidos en el modelo de contenido.
 
 Por ejemplo:
 
@@ -57,17 +57,17 @@ Puede hacer lo siguiente:
 
 * Edite el contenido directamente en la pestaña de **Variaciones**; cada tipo de datos proporciona diferentes opciones de edición, por ejemplo:
 
-   * para **Texto de varias líneas** , también puede abrir los campos [editor de pantalla completa](#full-screen-editor) hasta:
+   * para los campos **Texto multilínea**, también puede abrir el [editor de pantalla completa](#full-screen-editor) para:
 
       * seleccione el [Formato](#formats)
       * consulte más opciones de edición (para formato de [Texto enriquecido](#rich-text))
       * acceder a una amplia gama de [acciones](#actions)
 
-   * Para **Referencia a fragmento** , los campos [Editar fragmento de contenido](#fragment-references-edit-content-fragment) La opción puede estar disponible, según la definición del modelo.
+   * Para los campos **Referencia de fragmento**, la opción [Editar fragmento de contenido](#fragment-references-edit-content-fragment) puede estar disponible, según la definición del modelo.
 
-* Asignar **Etiquetas** a la variación actual; las etiquetas se pueden añadir, actualizar y eliminar.
+* Asigne **Etiquetas** a la variación actual; las etiquetas se pueden agregar, actualizar y eliminar.
 
-   * [Etiquetas](/help/sites-cloud/authoring/sites-console/tags.md) son útiles a la hora de organizar los fragmentos, ya que se pueden utilizar para la clasificación de contenido y la taxonomía. Las etiquetas se pueden utilizar para buscar contenido (mediante etiquetas) y aplicar operaciones por lotes.
+   * Las [etiquetas](/help/sites-cloud/authoring/sites-console/tags.md) son útiles a la hora de organizar los fragmentos, ya que se pueden usar para la clasificación de contenido y la taxonomía. Las etiquetas se pueden utilizar para buscar contenido (mediante etiquetas) y aplicar operaciones por lotes.
 
       * La búsqueda de una etiqueta devuelve el fragmento, con la variación de etiqueta resaltada.
       * Las etiquetas de variación también se pueden utilizar para agrupar variaciones para un perfil específico de la red de distribución de contenido (CDN) (para el almacenamiento en caché de CDN), en lugar de utilizar el nombre de variación.
@@ -144,7 +144,7 @@ La edición de texto enriquecido le permite dar formato:
    * Buscar/Reemplazar
    * Corrector ortográfico
    * [Anotaciones](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-* [Insertar fragmento de contenido](#inserting-content-fragment-into-your-fragment); disponible cuando su **Texto de varias líneas** el campo está configurado con **Permitir referencia a fragmento**.
+* [Insertar fragmento de contenido](#inserting-content-fragment-into-your-fragment); disponible cuando su campo **Texto multilínea** está configurado con **Permitir referencia a fragmento**.
 
 Las [acciones](#actions) también son accesibles desde el editor de pantalla completa.
 
@@ -154,13 +154,13 @@ El texto sin formato permite introducir rápidamente el contenido sin aplicar fo
 
 >[!CAUTION]
 >
->Si selecciona **Texto sin formato**, puede perder cualquier formato, marca o recurso insertado en **Texto enriquecido** o **Markdown**.
+>Si selecciona **Texto sin formato**, podría perder cualquier formato, marca o recurso que insertó en **Texto enriquecido** o **Marcado**.
 
 ### Markdown {#markdown}
 
 >[!NOTE]
 >
->Para obtener información completa, consulte la [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) documentación.
+>Para obtener información completa, consulte la documentación de [Markdown](/help/assets/content-fragments/content-fragments-markdown.md).
 
 Esto permite dar formato al texto mediante markdown. Puede definir lo siguiente:
 
@@ -193,19 +193,19 @@ Si el modelo de fragmento de contenido contiene referencias a fragmento, es posi
 
 La opción **Editar fragmento de contenido** abre ese fragmento en una nueva pestaña del editor (en la misma pestaña del explorador).
 
-Volver a seleccionar la pestaña original (por ejemplo, **Little Pony Inc.**) cierra esta pestaña secundaria (en este caso, **Adam Smith**).
+Volver a seleccionar la ficha original (por ejemplo, **Little Pony Inc.**) cierra esta ficha secundaria (en este caso, **Adam Smith**).
 
 ![Referencias a fragmento](assets/cfm-variations-editreference.png)
 
 #### Fragmento de contenido nuevo {#fragment-references-new-content-fragment}
 
-La opción **Fragmento de contenido nuevo** permite crear un fragmento. Para conseguirlo, se abre en el editor una variación del asistente para crear fragmentos de contenido.
+La opción **Nuevo fragmento de contenido** le permite crear un fragmento. Para conseguirlo, se abre en el editor una variación del asistente para crear fragmentos de contenido.
 
 **Para crear un fragmento de contenido:**
 
 1. Ir a y seleccionar la carpeta requerida.
 1. Seleccionar **Siguiente**.
-1. Especificación de propiedades; por ejemplo, **Título**.
+1. Especificando propiedades; por ejemplo, **Title**.
 1. Selección **Crear**.
 1. Finalmente:
    1. **Listo**:
@@ -217,7 +217,7 @@ La opción **Fragmento de contenido nuevo** permite crear un fragmento. Para con
 
 ### Visualización de estadísticas clave {#viewing-key-statistics}
 
-Cuando el editor de pantalla completa está abierto, la acción **Estadísticas de texto** muestra un rango de información acerca del texto.
+Cuando el editor de pantalla completa está abierto, la acción **Estadísticas de texto** muestra un rango de información sobre el texto.
 
 Por ejemplo:
 
@@ -233,7 +233,7 @@ El texto de resumen está diseñado para ayudar a los usuarios a reducir la long
 
 >[!NOTE]
 >
->En un nivel más técnico, el sistema mantiene las frases que califica como que proporcionan el *mejor relación entre densidad y singularidad de la información* según algoritmos específicos.
+>A un nivel más técnico, el sistema mantiene las frases que califica como que proporcionan la *mejor relación entre densidad y singularidad de la información* según algoritmos específicos.
 
 >[!CAUTION]
 >
@@ -325,15 +325,15 @@ Anotaciones:
 
 * Cuando se elimina todo el texto al que se aplicó la anotación, también se elimina la anotación.
 
-* Se puede enumerar y eliminar seleccionando la opción **Anotaciones** en el editor de fragmentos.
+* Se puede enumerar y eliminar seleccionando la pestaña **Anotaciones** en el editor de fragmentos.
 
   ![anotaciones](assets/cfm-variations-08.png)
 
-* Se puede ver y eliminar en el [Cronología](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) para el fragmento seleccionado.
+* Se puede ver y eliminar en la [cronología](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) del fragmento seleccionado.
 
 ### Inserción de recursos en el fragmento {#inserting-assets-into-your-fragment}
 
-Para facilitar el proceso de creación de fragmentos de contenido, puede agregar lo siguiente [Assets](/help/assets/manage-digital-assets.md) (imágenes) directamente al fragmento.
+Para facilitar el proceso de creación de fragmentos de contenido, puede agregar [Assets](/help/assets/manage-digital-assets.md) (imágenes) directamente al fragmento.
 
 Se agregan a la secuencia de párrafo del fragmento sin ningún formato; el formato se puede realizar cuando [se utiliza/se hace referencia al fragmento en una página](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
@@ -373,7 +373,7 @@ Se añaden como referencia en la ubicación actual en el fragmento.
 
 >[!NOTE]
 >
->Esta opción está disponible cuando su **Texto de varias líneas** está configurado con **Permitir referencia a fragmento**.
+>Esta opción está disponible cuando el **texto multilínea** está configurado con **Permitir referencia a fragmento**.
 
 >[!CAUTION]
 >
@@ -390,7 +390,7 @@ Se añaden como referencia en la ubicación actual en el fragmento.
 
    ![Icono Insertar fragmento de contenido](assets/cfm-variations-13.png)
 
-1. En el cuadro de diálogo, puede desplazarse hasta el fragmento requerido en la carpeta Recursos o buscar el fragmento.
+1. En el cuadro de diálogo, puede desplazarse hasta el fragmento requerido en la carpeta Assets o buscar el fragmento.
 
    Cuando se encuentre, seleccione el fragmento requerido haciendo clic en la miniatura.
 
@@ -405,7 +405,7 @@ Se añaden como referencia en la ubicación actual en el fragmento.
 
 ## Herencia {#inheritance}
 
-La herencia es el mecanismo por el que el contenido se puede insertar automáticamente de un fragmento a otro. Los campos heredados y las variaciones pueden ser el producto de [Administración de varios sitios](/help/assets/content-fragments/content-fragments-msm.md).
+La herencia es el mecanismo por el que el contenido se puede insertar automáticamente de un fragmento a otro. Los campos heredados y las variaciones pueden ser el producto de [Multi-Site Management](/help/assets/content-fragments/content-fragments-msm.md).
 
 Puede cancelar (y volver a habilitar) la herencia. Según el contexto, esto puede estar disponible para una variación o un campo individual, si el fragmento forma parte de una Live Copy.
 
@@ -431,23 +431,23 @@ Por ejemplo:
 
 ### Creación de una variación {#creating-a-variation}
 
-Las variaciones permiten tomar la **Principal** contenido y puede variar según el propósito (si es necesario).
+Las variaciones le permiten tomar el contenido **Principal** y variar según el propósito (si es necesario).
 
 **Para crear una variación:**
 
 1. Abra el fragmento y asegúrese de que el panel lateral esté visible.
 1. Seleccione **Variaciones** en la barra de iconos del panel lateral.
 1. Seleccione **Crear variación**.
-1. Se abre un cuadro de diálogo para que pueda especificar el **Título** y **Descripción** para la nueva variación.
+1. Se abre un cuadro de diálogo para que pueda especificar **Title** y **Description** para la nueva variación.
 1. Seleccione **Agregar**; el fragmento **Principal** se copia en la nueva variación, que ahora está abierta para [editar](#editing-a-variation).
 
    >[!NOTE]
    >
-   >Al crear una variación, siempre es el **Principal** que se copia, no la variación que está abierta.
+   >Al crear una variación, siempre se copia **Principal**, no la variación que está abierta.
 
    >[!NOTE]
    >
-   >Al crear una variación, todas las variables **Etiquetas** asignado actualmente a **Principal** se copian en la nueva variación.
+   >Cuando crea una variación, todas las **Etiquetas** asignadas actualmente a la variación **Principal** se copian en la nueva variación.
 
 ### Edición de una variación {#editing-a-variation}
 
@@ -486,7 +486,7 @@ Puede cambiar el contenido de la variación después de lo siguiente:
 
 ### Sincronización con Principal {#synchronizing-with-master}
 
-**Principal** forma parte de un fragmento de contenido y, por definición, contiene la copia maestra del contenido. Mientras que las variaciones contienen versiones individuales actualizadas y adaptadas de ese contenido. Cuando se actualiza el Principal, es posible que estos cambios también sean relevantes para las variaciones y, por lo tanto, deban propagarse a ellas.
+**Principal** es parte de un fragmento de contenido y, por definición, contiene la copia principal del contenido. Mientras que las variaciones contienen versiones individuales actualizadas y adaptadas de ese contenido. Cuando se actualiza el Principal, es posible que estos cambios también sean relevantes para las variaciones y, por lo tanto, deban propagarse a ellas.
 
 Al editar una variación, tiene acceso a la acción para sincronizar el elemento actual de la variación con Principal. Esto permite copiar automáticamente los cambios realizados en Principal en la variación requerida.
 
@@ -496,7 +496,7 @@ Al editar una variación, tiene acceso a la acción para sincronizar el elemento
 >
 >Solo se sincroniza el elemento actual de la variación.
 >
->La sincronización solo funciona en **Texto de varias líneas** tipo de datos.
+>La sincronización solo funciona en el tipo de datos **Texto multilínea**.
 >
 >No está disponible como opción la transferencia de cambios *de una variación **a Principal***.
 

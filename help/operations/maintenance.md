@@ -46,14 +46,14 @@ En la tabla siguiente se ilustran las tareas de mantenimiento disponibles.
   <tr>
     <td>Depuración de la versión</td>
     <td>Cliente</td>
-    <td>La depuración de versiones está deshabilitada de forma predeterminada, pero la directiva se puede configurar, tal como se describe en la sección <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tareas de mantenimiento de purga de versiones y depuración de registros de auditoría</a> sección.<br/><br/>La depuración estará habilitada pronto de forma predeterminada, con esos valores reemplazables.<br>
+    <td>La depuración de versiones está deshabilitada de manera predeterminada, pero la directiva se puede configurar, tal como se describe en la sección <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tareas de mantenimiento de purga de versiones y depuración de registros de auditoría</a>.<br/><br/>La depuración se habilitará pronto de manera predeterminada, con estos valores reemplazables.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Purga del registro de auditoría</td>
     <td>Cliente</td>
-    <td>La depuración del registro de auditoría está deshabilitada de forma predeterminada, pero la directiva se puede configurar, tal como se describe en la sección <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tareas de mantenimiento de purga de versiones y depuración de registros de auditoría</a> sección.<br/><br/>La depuración estará habilitada pronto de forma predeterminada, con esos valores reemplazables.<br>
+    <td>La depuración del registro de auditoría está deshabilitada de manera predeterminada, pero la directiva se puede configurar, tal como se describe en la sección <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tareas de mantenimiento de purga de versiones y depuración del registro de auditoría</a>.<br/><br/>La depuración se habilitará pronto de manera predeterminada, con estos valores reemplazables.<br>
    </td>
    </td>
   </tr>
@@ -68,7 +68,7 @@ En la tabla siguiente se ilustran las tareas de mantenimiento disponibles.
     <td>Cliente</td>
     <td>
     <p>Debe hacerse en Git. Anule el nodo de configuración de la ventana de mantenimiento predeterminado en <code>/libs</code> creando propiedades en la carpeta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> o <code>granite_monthly</code>.</p>
-    <p>Consulte la tabla Ventana de mantenimiento a continuación para obtener más información sobre la configuración. Habilite la tarea de mantenimiento añadiendo otro nodo bajo el nodo de arriba. Asígnele un nombre <code>granite_TaskPurgeTask</code>, con atributo <code>sling:resourceType</code> establezca en <code>granite/operations/components/maintenance/task</code> Atributo y <code>granite.maintenance.name</code> establezca en <code>TaskPurge</code>. Configure las propiedades de OSGI, consulte <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> para obtener la lista de propiedades.</p>
+    <p>Consulte la tabla Ventana de mantenimiento a continuación para obtener más información sobre la configuración. Habilite la tarea de mantenimiento añadiendo otro nodo bajo el nodo de arriba. Asígnele el nombre <code>granite_TaskPurgeTask</code>, con el atributo <code>sling:resourceType</code> establecido en <code>granite/operations/components/maintenance/task</code> y el atributo <code>granite.maintenance.name</code> establecido en <code>TaskPurge</code>. Configure las propiedades de OSGI; consulte <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> para ver la lista de propiedades.</p>
   </td>
   </tr>
     <tr>
@@ -118,7 +118,7 @@ En la tabla siguiente se ilustran las tareas de mantenimiento disponibles.
     <p><strong>windowStartTime=HH:MM</strong> como reloj de 24 horas. Define cuándo deben comenzar a ejecutarse las tareas de mantenimiento asociadas con la ventana de mantenimiento semanal.</p>
     <p><strong>windowEndTime=HH:MM</strong> como reloj de 24 horas. Define cuándo deben dejar de ejecutarse las tareas de mantenimiento asociadas con la ventana de mantenimiento semanal si aún no se han completado.</p>
     <p>Una tarea de mantenimiento no se puede ejecutar más de una vez durante este periodo de tiempo.</p>
-    <p><strong>windowScheduleWeekdays= Matriz de dos valores entre 1 y 7 (por ejemplo, [5,5])</strong> El primer valor de la matriz es el día de inicio cuando se programa el trabajo y el segundo valor es el día de finalización cuando se detiene el trabajo. La hora exacta del inicio y la finalización se rige por windowStartTime y windowEndTime respectivamente.</p>
+    <p><strong>windowScheduleWeekdays= Matriz de dos valores entre 1 y 7 (por ejemplo, [5,5])</strong> El primer valor de la matriz es el día de inicio, cuando se programa el trabajo, y el segundo es el día de finalización, cuando se detiene el trabajo. La hora exacta del inicio y la finalización se rige por windowStartTime y windowEndTime respectivamente.</p>
     </td>
   </tr>
   <tr>
@@ -130,7 +130,7 @@ En la tabla siguiente se ilustran las tareas de mantenimiento disponibles.
     <p><strong>windowStartTime=HH:MM</strong> como reloj de 24 horas. Define cuándo deben comenzar a ejecutarse las tareas de mantenimiento asociadas con la ventana de mantenimiento mensual.</p>
     <p><strong>windowEndTime=HH:MM</strong> como reloj de 24 horas. Define cuándo deben dejar de ejecutarse las tareas de mantenimiento asociadas con la ventana de mantenimiento mensual si aún no se han completado.</p>
     <p>Una tarea de mantenimiento no se puede ejecutar más de una vez durante este periodo de tiempo.</p>
-    <p><strong>windowScheduleWeekdays=Matriz de dos valores entre 1 y 7 (por ejemplo, [5,5])</strong> El primer valor de la matriz es el día de inicio cuando se programa el trabajo y el segundo valor es el día de finalización cuando se detiene el trabajo. La hora exacta del inicio y la finalización se rige por windowStartTime y windowEndTime respectivamente.</p>
+    <p><strong>windowScheduleWeekdays=Matriz de dos valores entre 1 y 7 (por ejemplo, [5,5])</strong> El primer valor de la matriz es el día de inicio, cuando se programa el trabajo, y el segundo es el día de finalización, cuando se detiene el trabajo. La hora exacta del inicio y la finalización se rige por windowStartTime y windowEndTime respectivamente.</p>
     <p><strong>windowFirstLastStartDay= 0/1</strong> 0 para programar en la primera semana del mes o 1 para programar en la última semana del mes. La ausencia de un valor programaría los trabajos en el día regido por windowScheduleWeekdays (cada mes).</p>
     </td>
     </tr>
@@ -219,21 +219,21 @@ Declare un archivo de configuración e impleméntelo como se describe en los pas
 > 
 >Del mismo modo, una vez que implemente el nodo de depuración del registro de auditoría en el archivo de configuración, debe mantenerlo declarado y no eliminarlo.
 
-**1** : cree la siguiente estructura de carpetas y archivos en la carpeta de nivel superior del proyecto en Git:
+**1** - cree la siguiente carpeta y estructura de archivos en la carpeta de nivel superior de su proyecto en Git:
 
 ```
 config/
      mt.yaml
 ```
 
-**2** - Declare las propiedades en el archivo de configuración, que incluyen:
+**2** - Declarar propiedades en el archivo de configuración, que incluyen:
 
 * una propiedad &quot;kind&quot; con el valor &quot;MaintenanceTasks&quot;.
 * una propiedad &quot;version&quot; (actualmente estamos en la versión 1).
-* un objeto &quot;metadata&quot; opcional con la propiedad `envTypes` con una lista separada por comas del tipo de entorno (dev, stage, prod) para el que esta configuración es válida. Si no se declara ningún objeto de metadatos, la configuración es válida para todos los tipos de entorno.
-* Crear un objeto de datos con `versionPurge` y `auditLogPurge` objetos.
+* un objeto &quot;metadata&quot; opcional con la propiedad `envTypes` con una lista separada por comas del tipo de entorno (dev, stage, prod) para el cual esta configuración es válida. Si no se declara ningún objeto de metadatos, la configuración es válida para todos los tipos de entorno.
+* un objeto de datos con `versionPurge` y `auditLogPurge` objetos.
 
-Consulte las definiciones y sintaxis de la `versionPurge` y `auditLogPurge` objetos debajo de.
+Vea las definiciones y sintaxis de los objetos `versionPurge` y `auditLogPurge` a continuación.
 
 La configuración debe estructurarse de forma similar al siguiente ejemplo:
 
@@ -271,9 +271,9 @@ Tenga en cuenta que para que la configuración sea válida:
 * se deben respetar los tipos (enteros, cadenas, booleanos, etc.) de las tablas de propiedades siguientes.
 
 >[!NOTE]
->Puede utilizar `yq` para validar localmente el formato YAML del archivo de configuración (por ejemplo, `yq mt.yaml`).
+>Puede usar `yq` para validar localmente el formato YAML del archivo de configuración (por ejemplo, `yq mt.yaml`).
 
-**3** : configure las canalizaciones de configuración de producción y que no sean de producción.
+**3**: configure las canalizaciones de configuración de no producción y producción.
 
 Los entornos de desarrollo rápido (RDE) no admiten la depuración. Para otros tipos de entornos en programas de producción (que no sean de zona protegida), cree una canalización de configuración de implementación de destino en Cloud Manager.
 
@@ -309,7 +309,7 @@ Los entornos que se crearon antes de habilitar la depuración predeterminada ten
 
 Las propiedades permitidas se enumeran a continuación.
 
-Las columnas que indican *predeterminado* indicar los valores predeterminados en el futuro, cuando se apliquen los valores predeterminados; *TBD* refleja un id de entorno que aún no se ha determinado.
+Las columnas que indican *default* indican los valores predeterminados en el futuro, cuando se apliquen los valores predeterminados; *TBD* refleja un identificador de entorno que aún no se ha determinado.
 
 | Propiedades | valor predeterminado futuro para envs>TBD | valor predeterminado futuro para envs&lt;=TBD | Requerido | tipo | Valores |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
@@ -320,7 +320,7 @@ Las columnas que indican *predeterminado* indicar los valores predeterminados en
 | keepLabelsVersioned | false | false | Sí | booleano | Determina si se excluirán de la depuración las versiones etiquetadas explícitamente. Para mejorar la optimización del repositorio, se recomienda establecer este valor en false. |
 
 
-**Interacciones de propiedad**
+**Interacciones de propiedades**
 
 Los siguientes ejemplos ilustran cómo interactúan las propiedades al combinarse.
 
@@ -332,9 +332,9 @@ maximumVersions = 10
 minimumVersions = 2
 ```
 
-Si hay 11 versiones en el día 23, la versión más antigua se depurará la próxima vez que se ejecute la tarea de mantenimiento de depuración, ya que la variable `maximumVersions` se establece en 10.
+Si hay 11 versiones el día 23, la versión más antigua se purgará la próxima vez que se ejecute la tarea de mantenimiento de purga, ya que la propiedad `maximumVersions` está establecida en 10.
 
-Si hay 5 versiones en el día 31, solo 3 se purgarán desde el `minimumVersions` se establece en 2.
+Si hay 5 versiones en el día 31, solo se purgarán 3, ya que la propiedad `minimumVersions` está establecida en 2.
 
 Ejemplo:
 
@@ -344,7 +344,7 @@ maximumVersions = 0
 minimumVersions = 1
 ```
 
-No se purgarán versiones de más de 30 días desde el `maximumVersions` se establece en 0.
+No se purgarán versiones posteriores a los 30 días debido a que la propiedad `maximumVersions` está establecida en 0.
 
 Se conservará una versión con más de 30 días.
 
@@ -375,7 +375,7 @@ Los entornos que se crearon antes de habilitar la depuración predeterminada ten
 
 Las propiedades permitidas se enumeran a continuación.
 
-Las columnas que indican *predeterminado* indicar los valores predeterminados en el futuro, cuando se apliquen los valores predeterminados; *TBD* refleja un id de entorno que aún no se ha determinado.
+Las columnas que indican *default* indican los valores predeterminados en el futuro, cuando se apliquen los valores predeterminados; *TBD* refleja un identificador de entorno que aún no se ha determinado.
 
 
 | Propiedades | valor predeterminado futuro para envs>TBD | valor predeterminado futuro para envs&lt;=TBD | Requerido | tipo | Valores |
@@ -383,4 +383,4 @@ Las columnas que indican *predeterminado* indicar los valores predeterminados en
 | reglas | - | - | Sí | Objeto | Uno o más de los siguientes nodos: replicación, páginas, DAM. Cada uno de estos nodos define reglas, con las propiedades a continuación. Todas las propiedades deben declararse. |
 | maximumAgeDays | 7 días | para todos, 2557 (7 años + 2 días bisiestos) | Sí | integer | Para replicación, páginas o dam: número de días que se guardan los registros de auditoría. Los registros de auditoría anteriores al valor configurado se depuran. |
 | contentPath | &quot;/content&quot; | &quot;/content&quot; | Sí | Cadena | Ruta de acceso en la que se purgarán los registros de auditoría, para el tipo relacionado. Debe establecerse en &quot;/content&quot;. |
-| tipos | todos los valores | todos los valores | Sí | Matriz de enumeración | Para **réplica**, los valores enumerados son: Activate, Deactivate, Delete, Test, Reverse, Internal Poll. Para **páginas** Sin embargo, los valores enumerados son: PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestored, PageRolled Out, PageValid, PageInvalid. Para **presa**, los valores enumerados son: ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET_UPDATED, SUBASSET_REMOVED ED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJECTED. |
+| tipos | todos los valores | todos los valores | Sí | Matriz de enumeración | Para **replication**, los valores enumerados son: Activate, Deactivate, Delete, Test, Reverse, Internal Poll. Para **páginas**, los valores enumerados son: PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestored, PageRolled Out, PageValid, PageInvalid. Para **dam**, los valores enumerados son: ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET_UPDATED , SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJECTED. |

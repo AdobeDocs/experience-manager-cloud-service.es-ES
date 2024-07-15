@@ -14,11 +14,11 @@ ht-degree: 29%
 
 # Creación de páginas {#creating-pages}
 
-Obtenga información sobre cómo crear nuevas páginas para el sitio web mediante el **Sites** consola.
+Aprenda a crear páginas nuevas para el sitio web mediante la consola **Sitios**.
 
 >[!TIP]
 >
->Antes de empezar a crear páginas nuevas, familiarícese con [AEM cómo se organizan las páginas en las páginas de la página de.](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+>AEM Antes de empezar a crear páginas nuevas, familiarícese con [cómo se organizan las páginas en los elementos de la vista de la página de la página de la página de inicio de la página de inicio de la página de inicio](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
 
 ## Privilegios de acceso {#access-privileges}
 
@@ -30,7 +30,7 @@ Si tiene algún problema, póngase en contacto con el administrador del sistema.
 
 A menos que se hayan creado todas las páginas por adelantado, debe crear una página para poder empezar a crear contenido:
 
-1. Abrir [el **Sites** consola.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Abra [la consola **Sitios**.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Desplácese hasta la ubicación en la que desee crear la nueva página.
 1. Abra el selector desplegable con **Crear** en la barra de herramientas y, a continuación, seleccione **Página** en la lista:
 
@@ -38,7 +38,7 @@ A menos que se hayan creado todas las páginas por adelantado, debe crear una p�
 
 1. En el primer paso del asistente, puede hacer lo siguiente:
 
-   * Seleccione la plantilla que desee utilizar para crear la nueva página y, a continuación, seleccione **Siguiente** para continuar.
+   * Seleccione la plantilla que desee usar para crear la nueva página y, a continuación, seleccione **Siguiente** para continuar.
 
    * **Haga clic en Cancelar** para anular el proceso.
 
@@ -46,7 +46,7 @@ A menos que se hayan creado todas las páginas por adelantado, debe crear una p�
 
 1. En el último paso del asistente, puede hacer lo siguiente:
 
-   * Utilice las tres pestañas para introducir la variable [propiedades de página](/help/sites-cloud/authoring/sites-console/page-properties.md) Si desea asignar a la nueva página, seleccione **Crear** para crear la página.
+   * Use las tres fichas para escribir las [propiedades de página](/help/sites-cloud/authoring/sites-console/page-properties.md) que desee asignar a la nueva página y, a continuación, seleccione **Crear** para crear realmente la página.
 
    * Utilice **Atrás** para volver a la selección de plantilla.
 
@@ -59,22 +59,22 @@ A menos que se hayan creado todas las páginas por adelantado, debe crear una p�
    * **Nombre**:
 
       * Se usa para generar la URI. Si no se especifica, el nombre se obtiene a partir del título.
-      * Si proporciona una página **Nombre** AEM al crear una página, se debe hacer lo siguiente [valida el nombre según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) AEM impuesta por el y el JCR.
+      * AEM AEM Si proporciona una página **Name** al crear una página, [valida el nombre según las convenciones ](/help/implementing/developing/introduction/naming-conventions.md) impuestas por el JCR y el.
       * **No se pueden enviar caracteres no válidos** desde el campo **Nombre**. AEM Cuando detecta caracteres no válidos, se resalta el campo y se muestra un mensaje explicativo para indicar los caracteres que deben eliminarse o reemplazarse.
 
    >[!TIP]
    >
    >Consulte [Convenciones de asignación de nombres a páginas](#page-naming-conventions).
 
-   La información mínima necesaria para crear una página es la siguiente **Título**.
+   La información mínima requerida para crear una página es **Title**.
 
    ![Proporcionar título de página](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 
-1. Haga clic o pulse **Crear** para completar el proceso y crear la nueva página. El cuadro de diálogo de confirmación le preguntará si desea **Abrir** la página inmediatamente o vuelva a la consola (**Listo**). Seleccione uno para finalizar el proceso de creación de página.
+1. Pulse o haga clic en **Crear** para completar el proceso y crear su nueva página. El cuadro de diálogo de confirmación le pregunta si desea **abrir** la página inmediatamente o volver a la consola (**Listo**). Seleccione uno para finalizar el proceso de creación de página.
 
    ![Éxito en la creación de páginas](/help/sites-cloud/authoring/assets/organizing-create-page-success.png)
 
-   * Si elige **Abrir**, el **Sites** La consola de abre el editor adecuado basado en la plantilla de la nueva página, ya sea:
+   * Si elige **Abrir**, la consola **Sitios** abre el editor correspondiente basado en la plantilla de la nueva página, ya sea:
       * [El Editor de página](/help/sites-cloud/authoring/page-editor/introduction.md)
       * [El editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
@@ -88,4 +88,4 @@ Si vuelve a la consola, podrá ver la nueva página:
 
 >[!CAUTION]
 >
->Una vez creada una página, su plantilla no se puede cambiar a menos que [creación de un lanzamiento con una plantilla nueva](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template), aunque esto perderá cualquier contenido existente.
+>Una vez creada una página, su plantilla no se puede cambiar a menos que [cree un lanzamiento con una nueva plantilla](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template), aunque así se perderá el contenido existente.

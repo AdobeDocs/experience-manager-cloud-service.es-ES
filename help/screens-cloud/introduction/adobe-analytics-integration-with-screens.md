@@ -26,7 +26,7 @@ Esta sección trata los siguientes temas:
 
 ## Información general {#overview}
 
-***AEM Screens*** aprovecha Adobe Analytics y, con él, puede lograr algo único en el mercado: análisis en canales múltiples que ayudan a correlacionar el contenido que se muestra en la ubicación con otras fuentes de datos.
+***AEM Screens*** aprovecha Adobe Analytics y con él puede lograr algo único en el mercado: análisis en canales múltiples que ayudan a correlacionar el contenido que se muestra en una ubicación con otras fuentes de datos.
 
 AEM Screens ofrece una integración predeterminada con Adobe Analytics y le ofrece una prueba de reproducción.
 
@@ -39,7 +39,7 @@ En esta sección se describe la siguiente funcionalidad relacionada con la conex
 * Permite crear bucles de comentarios para rastrear eventos de reproducción a lo largo del tiempo
 * Permite al sistema modificar el contenido y los diseños en función de los criterios de éxito definidos por el autor del contenido
 
-Por lo tanto, la integración de Adobe Analytics con AEM Screens aplica lo siguiente *objetivos*:
+Por lo tanto, la integración de Adobe Analytics con AEM Screens exige los *objetivos* siguientes:
 
 * Activación del ROI desde implementaciones de señalización digital
 * Integre Analytics como base para la futura habilitación de la recopilación y el análisis de información de uso
@@ -54,7 +54,7 @@ En el siguiente diagrama de arquitectura se explica la integración de Adobe Ana
 
 ## Habilitar Adobe Analytics en AEM Screens Cloud {#enabling-adobe-analytics-in-aem-screens-cloud}
 
-Póngase en contacto con el Gestor de relaciones de Adobe para habilitar el análisis de Adobe en Screens Cloud.
+Póngase en contacto con el Administrador de relaciones de Adobe para habilitar el análisis de Adobe en Screens Cloud.
 
 ## Uso del servicio de Adobe Analytics en AEM Screens Cloud {#using-adobe-analytics-service-in-aem-screens}
 
@@ -63,4 +63,4 @@ Este escenario invoca la API de Analytics a través de llamadas REST desde un se
 Los eventos de Analytics se almacenan sin conexión en indexedDB y luego se fragmentan y se envían a la nube.
 
 >[!NOTE]
->Para obtener más información sobre la secuenciación y el modelo de datos estándar para eventos, consulte [Configuración de Adobe Analytics para AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html) para obtener más información.
+>Para obtener más información sobre la secuenciación y el modelo de datos estándar para eventos, consulta [Configuración de Adobe Analytics para AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html) para obtener más información.

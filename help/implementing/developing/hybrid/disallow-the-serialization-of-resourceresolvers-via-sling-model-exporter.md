@@ -15,30 +15,30 @@ ht-degree: 5%
 
 La función Exportador de modelos Sling permite serializar objetos de modelos Sling en formato JSON. SPA AEM Esta función se utiliza ampliamente, ya que permite a los usuarios de (aplicaciones de una sola página) acceder fácilmente a los datos de los usuarios de la página de inicio de sesión de la página de la página de inicio de sesión. En el lado de la implementación, la biblioteca Jacson Databind se utiliza para serializar estos objetos.
 
-La serialización es una operación recursiva. Partiendo de un &quot;objeto raíz&quot;, se repite recursivamente a través de todos los objetos aptos y los serializa a ellos y a sus elementos secundarios. Puede encontrar una descripción de los campos en los que se serializan [este artículo](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not).
+La serialización es una operación recursiva. Partiendo de un &quot;objeto raíz&quot;, se repite recursivamente a través de todos los objetos aptos y los serializa a ellos y a sus elementos secundarios. Puede encontrar una descripción de los campos serializados en [este artículo](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not).
 
-Este método serializa todo tipo de objetos en JSON y, naturalmente, también puede serializar un Sling `ResourceResolver` objeto, si está cubierto por las reglas de serialización. Esto resulta problemático, ya que `ResourceResolver` El servicio (y, por lo tanto, también el objeto de servicio que lo representa) contiene información potencialmente sensible, que no debe ser revelada. Por ejemplo:
+Este método serializa todos los tipos de objetos en JSON y, naturalmente, también puede serializar un objeto Sling `ResourceResolver`, si está cubierto por las reglas de serialización. Esto resulta problemático, ya que el servicio `ResourceResolver` (y, por lo tanto, también el objeto de servicio que lo representa) contiene información potencialmente confidencial, que no debería revelarse. Por ejemplo:
 
 * El ID de usuario
 * Las rutas de búsqueda para resolver las rutas relativas
 * El `propertyMap`.
 
-Especialmente sensible es el `propertyMap` (consulte la documentación de API de [`getPropertyMap`](https://sling.apache.org/apidocs/sling12/org/apache/sling/api/resource/ResourceResolver.html#getPropertyMap--)), ya que es una estructura de datos interna, que puede utilizarse para muchos fines, por ejemplo, para almacenar en caché objetos que comparten el mismo ciclo de vida que `ResourceResolver`. La serialización de estos datos puede filtrar detalles de implementación y tener un impacto potencial en la seguridad, ya que se exponen datos que no deberían ser legibles y accesibles para un usuario final. Por esa razón `ResourceResolvers` no se debe serializar en JSON.
+Especialmente importante es `propertyMap` (consulte la documentación de la API de [`getPropertyMap`](https://sling.apache.org/apidocs/sling12/org/apache/sling/api/resource/ResourceResolver.html#getPropertyMap--)), ya que es una estructura de datos interna que se puede usar para muchos fines, por ejemplo, para almacenar en caché objetos que comparten el mismo ciclo de vida que `ResourceResolver`. La serialización de estos datos puede filtrar detalles de implementación y tener un impacto potencial en la seguridad, ya que se exponen datos que no deberían ser legibles y accesibles para un usuario final. Por ese motivo `ResourceResolvers` no debe serializarse en JSON.
 
 Adobe planea deshabilitar la serialización de `ResourceResolvers` en un enfoque de 2 pasos:
 
-1. AEM Comenzando por la 14697 de liberación as a Cloud Service de la, siempre que `ResourceResolver` AEM está serializado registrará un mensaje de advertencia. Se recomienda a todos los clientes que comprueben los registros de sus aplicaciones para ver si hay estas instrucciones de registro y adapten el código base en consecuencia.
+1. A partir del 14697 de la versión de AEM as a Cloud Service AEM, cada vez que se serialice un `ResourceResolver`, se registrará un mensaje de advertencia. Se recomienda a todos los clientes que comprueben los registros de sus aplicaciones para ver si hay estas instrucciones de registro y adapten el código base en consecuencia.
 1. En un momento posterior, el Adobe deshabilitará la serialización de ResourceResolvers como JSON.
 
 ## Implementación {#implementation}
 
-AEM El mensaje ADVERTENCIA se registra tanto en instancias de SDK as a Cloud Service AEM como en instancias de SDK de la local y tiene el siguiente aspecto:
+El mensaje ADVERTENCIA se registra en las instancias de AEM as a Cloud Service AEM y del SDK local de la aplicación y tiene el siguiente aspecto:
 
 ```
 [127.0.0.1 [1705061734620] GET /content/../page.model.json HTTP/1.1] org.apache.sling.models.jacksonexporter.impl.JacksonExporter A ResourceResolver is serialized with all its private fields containing implementation details you should not disclose. Please review your Sling Model implementation(s) and remove all public accessors to a ResourceResolver.
 ```
 
-Este mensaje de registro significa que durante el proceso de serialización del `/content/…/page` en JSON a `ResourceResolver` ya se ha serializado. Mediante solicitud `/content/../page.model.json` puede comprobar dónde están exactamente los campos del `ResourceResolver` se están mostrando y utilícelo para identificar la clase de modelo de Sling que realmente activa este comportamiento.
+Este mensaje de registro significa que durante el proceso de serialización de `/content/…/page` en JSON, `ResourceResolver` ya se ha serializado. Al solicitar `/content/../page.model.json`, puede comprobar dónde se muestran exactamente los campos de `ResourceResolver` y utilizarlos para identificar la clase del modelo Sling que activa este comportamiento.
 
 
 >[!NOTE]
@@ -49,6 +49,6 @@ Este mensaje de registro significa que durante el proceso de serialización del 
 
 Adobe solicita a todos sus clientes que comprueben los registros de sus aplicaciones y las bases de código para ver si se ven afectados por este problema y cambien la aplicación personalizada donde sea necesario, de modo que este mensaje ADVERTENCIA ya no aparezca.
 
-Se da por hecho que, en la mayoría de los casos, estos cambios necesarios son directos, ya que `ResourceResolver` Los objetos de no son necesarios en la salida JSON, ya que la información contenida allí normalmente no es necesaria para las aplicaciones de front-end. Esto significa que, en la mayoría de los casos, debería ser suficiente excluir la `ResourceResolver` objeto de ser considerado por Jackson (consulte la [reglas](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)).
+Se supone que en la mayoría de los casos estos cambios requeridos son directos, ya que los objetos `ResourceResolver` no son necesarios en la salida JSON, ya que la información contenida allí normalmente no es requerida por las aplicaciones de front-end. Esto significa que, en la mayoría de los casos, debería ser suficiente excluir que Jackson considere el objeto `ResourceResolver` (consulte las [reglas](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)).
 
-En caso de que un modelo Sling se vea afectado por este problema pero no se cambie, la deshabilitación explícita de la serialización del `ResourceResolver` (ejecutado por el Adobe como segundo paso) aplicará un cambio en la salida JSON.
+En caso de que el modelo Sling se vea afectado por este problema pero no se cambie, la deshabilitación explícita de la serialización del objeto `ResourceResolver` (ejecutado por el Adobe como segundo paso) aplicará un cambio en la salida JSON.

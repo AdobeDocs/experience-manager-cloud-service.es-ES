@@ -6,8 +6,8 @@ contentOwner: AG
 exl-id: bc44e98d-446e-41ff-b5b4-9dc324834630
 source-git-commit: b4b397a09960f507df1daa0cf6f5dc49d6b286c6
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 96%
+source-wordcount: '515'
+ht-degree: 100%
 
 ---
 
@@ -122,7 +122,7 @@ Los usuarios de [!DNL Adobe Asset Link] pueden cargar y registrar archivos (carg
 
 ## Siguientes pasos {#next-steps}
 
-* Proporcione comentarios sobre productos usando [!UICONTROL Comentarios] opción disponible en la interfaz de usuario de Vista de recursos
+* Proporcione comentarios del producto mediante la opción [!UICONTROL Comentarios] disponible en la interfaz de usuario de la vista de recursos
 
 * Proporcione comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar una incidencia] ![crear una incidencia de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha
 

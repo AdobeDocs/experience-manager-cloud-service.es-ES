@@ -3,7 +3,7 @@ title: 'AEM Forms as a Cloud Service: notas de la versión'
 description: Obtenga información sobre las nuevas funciones, versiones beta, información previa al lanzamiento y mucho más de AEM Forms as a Cloud Service.
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2003'
 ht-degree: 100%
 

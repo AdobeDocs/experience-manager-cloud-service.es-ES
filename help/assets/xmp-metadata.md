@@ -21,13 +21,13 @@ ht-degree: 17%
 
 XMP (Plataforma de metadatos extensible) es el estándar de metadatos utilizado por Experience Manager Assets para la administración de todos los metadatos. XMP proporciona un formato estándar para la creación, el procesamiento y el intercambio de metadatos para una amplia variedad de aplicaciones.
 
-XMP Además de ofrecer una codificación de metadatos universal que se puede incrustar en todos los formatos de archivo, proporciona un formato de archivo enriquecido, lo que permite [modelo de contenido](#xmp-core-concepts) y es [compatible con el Adobe](#advantages-of-xmp) XMP y otras empresas, de modo que los usuarios de la red de la red de la red de la red de la red de la red de la red en combinación con [!DNL Assets] tener una plataforma potente sobre la que construir.
+XMP Además de ofrecer codificación de metadatos universal que se puede incrustar en todos los formatos de archivo, proporciona un modelo de contenido enriquecido de [y es [compatible con Adobe XMP](#advantages-of-xmp) y otras compañías, de modo que los usuarios de en combinación con [!DNL Assets] tienen una plataforma potente sobre la que construir.](#xmp-core-concepts)
 
 ## XMP Información general y ecosistema de la {#xmp-ecosystem}
 
-[!DNL Assets] XMP Admite de forma nativa el estándar de metadatos de. XMP es un estándar para procesar y almacenar metadatos estandarizados y propios en recursos digitales. XMP está diseñado para ser el estándar común que permita que varias aplicaciones funcionen de forma eficaz con los metadatos.
+XMP [!DNL Assets] admite de forma nativa el estándar de metadatos de la. XMP es un estándar para procesar y almacenar metadatos estandarizados y propios en recursos digitales. XMP está diseñado para ser el estándar común que permita que varias aplicaciones funcionen de forma eficaz con los metadatos.
 
-XMP Los profesionales de la producción, por ejemplo, utilizan la compatibilidad integrada con las aplicaciones de Adobe para pasar información a través de varios formatos de archivo. El [!DNL Assets] XMP El repositorio extrae los metadatos de la y los utiliza para administrar el ciclo de vida del contenido y ofrece la capacidad de crear flujos de trabajo de automatización.
+XMP Los profesionales de la producción, por ejemplo, utilizan la compatibilidad integrada con las aplicaciones de Adobe para pasar información a través de varios formatos de archivo. XMP El repositorio [!DNL Assets] extrae los metadatos de la y los utiliza para administrar el ciclo de vida del contenido, además de ofrecer la capacidad de crear flujos de trabajo de automatización.
 
 XMP La estandarización estandariza la forma en que se definen, crean y procesan los metadatos mediante un modelo de datos, un modelo de almacenamiento y esquemas. Todos estos conceptos se tratan en esta sección.
 
@@ -52,64 +52,65 @@ XMP XMP El estándar de datos está diseñado para que sea ampliable, lo que le 
 
 >[!NOTE]
 >
->XMP Por lo general, no se permite incrustar tipos de datos binarios. XMP Para transportar datos binarios en imágenes en miniatura, por ejemplo, en el caso de las imágenes en miniatura, se deben codificar en un formato compatible con XML, como `Base64`.
+>XMP Por lo general, no se permite incrustar tipos de datos binarios. XMP Para transportar datos binarios en imágenes en miniatura, por ejemplo, en el caso de las imágenes, deben estar codificados en un formato compatible con XML, como `Base64`.
 
 ### XMP conceptos principales de la {#xmp-core-concepts}
 
 **Espacios de nombres y esquemas**
 
-XMP Un esquema de datos es un conjunto de nombres de propiedades en un espacio de nombres XML común que incluye el tipo de datos y la información descriptiva. XMP Un esquema de datos se identifica mediante su URI de área de nombres XML. El uso de áreas de nombres evita conflictos entre propiedades en esquemas diferentes que tienen el mismo nombre pero un significado diferente.
+XMP Un esquema de datos es un conjunto de nombres de propiedad en un área de nombres XML común que incluye
+el tipo de datos y la información descriptiva. XMP Un esquema de datos se identifica mediante su URI de área de nombres XML. El uso de áreas de nombres evita conflictos entre propiedades en esquemas diferentes que tienen el mismo nombre pero un significado diferente.
 
-Por ejemplo, la variable **Creador** propiedad en dos esquemas diseñados de forma independiente puede significar la persona que creó el recurso o puede significar la aplicación que creó el recurso (por ejemplo, Adobe Photoshop).
+Por ejemplo, la propiedad **Creator** en dos esquemas diseñados de forma independiente podría significar la persona que creó el recurso o podría significar la aplicación que creó el recurso (por ejemplo, Adobe Photoshop).
 
-**XMP Propiedades y valores de la**
+XMP **propiedades y valores de la**
 
 XMP Puede incluir propiedades de uno o más de los esquemas. Por ejemplo, un subconjunto típico utilizado por muchas aplicaciones de Adobe puede incluir lo siguiente:
 
 * Esquema principal de Dublín: `dc:title`, `dc:creator`, `dc:subject`, `dc:format`, `dc:rights`
-* XMP esquema básico de: `xmp:CreateDate`, `xmp:CreatorTool`, `xmp:ModifyDate`, `xmp:metadataDate`
-* XMP Esquema de administración de derechos de: `xmpRights:WebStatement`, `xmpRights:Marked`
-* XMP esquema de gestión de medios de comunicación: `xmpMM:DocumentID`
+* XMP esquema básico: `xmp:CreateDate`, `xmp:CreatorTool`, `xmp:ModifyDate`, `xmp:metadataDate`
+* XMP Esquema de administración de derechos de la: `xmpRights:WebStatement`, `xmpRights:Marked`
+* XMP esquema de administración de medios de comunicación: `xmpMM:DocumentID`
 
-**Alternativas lingüísticas**
+**Alternativas de idioma**
 
-XMP le ofrece la posibilidad de agregar una `xml:lang` propiedad a propiedades de texto para especificar el idioma del texto.
+XMP le ofrece la posibilidad de agregar una propiedad `xml:lang` a las propiedades de texto para especificar el idioma del texto.
 
 ## XMP respuesta de escritura a las representaciones de {#xmp-writeback-to-renditions}
 
-XMP Esta función de reescritura de la en [!DNL Adobe Experience Manager Assets] replica los cambios de metadatos en las representaciones del recurso original.
-Cuando cambia los metadatos de un recurso desde [!DNL Assets] o al cargar el recurso, los cambios se almacenan inicialmente en el nodo de metadatos de la jerarquía de recursos. La función de reescritura permite propagar los cambios de metadatos a todas las representaciones del recurso o a algunas específicas. La función solo vuelve a escribir las propiedades de metadatos que utilizan `jcr` namespace, es decir, una propiedad denominada `dc:title` se vuelve a escribir, pero una propiedad denominada `mytitle` no es.
+XMP Esta característica de reescritura de la [!DNL Adobe Experience Manager Assets] replica los cambios de metadatos en las representaciones del recurso original.
+Cuando cambia los metadatos de un recurso desde [!DNL Assets] o mientras lo carga, los cambios se almacenan inicialmente en el nodo de metadatos de la jerarquía de recursos. La función de reescritura permite propagar los cambios de metadatos a todas las representaciones del recurso o a algunas específicas. La característica sólo devuelve las propiedades de metadatos que utilizan el espacio de nombres `jcr`, es decir, se devuelve una propiedad denominada `dc:title`, pero no una propiedad denominada `mytitle`.
 
-Por ejemplo, considere un escenario en el que modifique la variable [!UICONTROL Título] propiedad del recurso con título `Classic Leather` hasta `Nylon`.
+Por ejemplo, imagine un escenario en el que modifica la propiedad [!UICONTROL Title] del recurso con título `Classic Leather` a `Nylon`.
 
 ![metadatos](assets/metadata.png)
 
-En este caso, [!DNL Assets] guarda los cambios en el **[!UICONTROL Título]** propiedad en el `dc:title` para los metadatos de recurso almacenados en la jerarquía de recursos.
+En este caso, [!DNL Assets] guarda los cambios realizados en la propiedad **[!UICONTROL Title]** en el parámetro `dc:title` para los metadatos de recursos almacenados en la jerarquía de recursos.
 
 ![metadatos almacenados en el nodo de recursos en el repositorio](assets/metadata_stored.png)
 
 >[!IMPORTANT]
 >
->La función de reescritura no está activada de forma predeterminada en [!DNL Assets]. Consulte cómo [habilitar reescritura de metadatos](#enable-xmp-writeback). MSM para recursos digitales no funciona con la reescritura de metadatos habilitada. Tras la reescritura, la herencia se interrumpe.
+>La característica de reescritura no está habilitada de manera predeterminada en [!DNL Assets]. Consulte cómo [habilitar la reescritura de metadatos](#enable-xmp-writeback). MSM para recursos digitales no funciona con la reescritura de metadatos habilitada. Tras la reescritura, la herencia se interrumpe.
 
 ### XMP Habilitar reescritura de la {#enable-xmp-writeback}
 
-[!UICONTROL Reescritura de metadatos DAM] flujo de trabajo se utiliza para escribir de nuevo los metadatos de un recurso. Para habilitar la reescritura, siga uno de los tres métodos siguientes:
+El flujo de trabajo [!UICONTROL DAM Metadata Writeback] se usa para escribir de nuevo los metadatos de un recurso. Para habilitar la reescritura, siga uno de los tres métodos siguientes:
 
 * Utilice los lanzadores.
-* Inicio manual `DAM MetaData Writeback` flujo de trabajo.
+* Iniciar manualmente `DAM MetaData Writeback` flujo de trabajo.
 * Configure el flujo de trabajo para que forme parte del posprocesamiento.
 
 Para utilizar los lanzadores, siga estos pasos:
 
 1. Como administrador, acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Lanzadores]**.
-1. Seleccione el [!UICONTROL Lanzador] para la cual el **[!UICONTROL Flujo de trabajo]** se muestra la columna **[!UICONTROL Reescritura de metadatos DAM]**. Clic **[!UICONTROL Propiedades]** en la barra de herramientas.
+1. Seleccione el [!UICONTROL lanzador] para el cual la columna **[!UICONTROL Flujo de trabajo]** muestra **[!UICONTROL reescritura de metadatos DAM]**. Haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas.
 
    ![Seleccione el lanzador de reescritura de metadatos DAM para modificar sus propiedades y activarlo](assets/launcher-properties-metadata-writeback1.png)
 
-1. Seleccionar **[!UICONTROL Activar]** en el **[!UICONTROL Propiedades del lanzador]** página. Haga clic en **[!UICONTROL Guardar y cerrar]**.
+1. Seleccione **[!UICONTROL Activar]** en la página **[!UICONTROL Propiedades del lanzador]**. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 
-Para aplicar manualmente el flujo de trabajo a un recurso una sola vez, aplique [!UICONTROL Reescritura de metadatos DAM] flujo de trabajo desde el carril izquierdo.
+Para aplicar manualmente el flujo de trabajo a un recurso una sola vez, aplique el flujo de trabajo [!UICONTROL reescritura de metadatos DAM] desde el carril izquierdo.
 
 Para aplicar el flujo de trabajo a todos los recursos cargados, añada el flujo de trabajo a un perfil de posprocesamiento.
 

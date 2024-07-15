@@ -22,19 +22,19 @@ El Asistente para copia de idioma es una experiencia guiada para crear e instrum
 
 >[!NOTE]
 >
->El usuario debe ser miembro de `project-administrators` para crear una copia de idioma de un sitio.
+>El usuario debe ser miembro del grupo `project-administrators` para crear una copia de idioma de un sitio.
 
 Para acceder al asistente:
 
-1. En la consola Sitios, seleccione una página y seleccione **Crear** y seleccione **Copia de idioma**.
+1. En la consola Sitios, seleccione una página, seleccione **Crear** y seleccione **Copia de idioma**.
 
    ![Crear copia de idioma desde el asistente](../assets/language-copy-wizard.png)
 
-1. El asistente se abre para **Seleccionar origen** paso que permite añadir o eliminar páginas. También tiene la opción de incluir o excluir las subpáginas. Seleccione las páginas que desee incluir y seleccione **Siguiente**.
+1. El asistente se abre para el paso **Seleccionar Source** que le permite agregar o quitar páginas. También tiene la opción de incluir o excluir las subpáginas. Seleccione las páginas que desee incluir y seleccione **Siguiente**.
 
    ![Adición de páginas con el asistente](../assets/language-copy-wizard-add-pages.png)
 
-1. El **Configurar** El paso del asistente le permite añadir o quitar idiomas y seleccionar el método de traducción. Seleccione **Siguiente**.
+1. El paso **Configurar** del asistente le permite agregar o quitar idiomas y seleccionar el método de traducción. Seleccione **Siguiente**.
 
    ![Configuración del paso del asistente](../assets/language-copy-wizard-configure.png)
 
@@ -42,7 +42,7 @@ Para acceder al asistente:
    >
    >De forma predeterminada, solo hay una configuración de traducción. Para poder seleccionar otra configuración, primero debe configurar las configuraciones de nube. Consulte [Configuración del marco de trabajo de integración de traducción](integration-framework.md)
 
-1. En el **Traducir** Paso del asistente: puede elegir entre crear solo la estructura, crear un proyecto de traducción o agregar a un proyecto de traducción existente.
+1. En el paso **Traducir** del asistente puede elegir entre crear solo la estructura, crear un proyecto de traducción o agregar a un proyecto de traducción existente.
 
    >[!NOTE]
    >
@@ -50,6 +50,6 @@ Para acceder al asistente:
 
    ![Paso de traducción del asistente](../assets/language-copy-wizard-translate.png)
 
-1. El botón **Crear** finaliza el asistente. Seleccionar **Listo** para cerrar el asistente o **Abrir** para ver el proyecto de traducción resultante.
+1. El botón **Crear** finaliza el asistente. Seleccione **Listo** para cerrar el asistente o **Abrir** para ver el proyecto de traducción resultante.
 
    ![Finalizar asistente](../assets/language-copy-wizard-done.png)

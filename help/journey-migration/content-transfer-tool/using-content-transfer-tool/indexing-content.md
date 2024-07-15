@@ -20,13 +20,13 @@ ht-degree: 9%
 >title="Indexación de contenido"
 >abstract="La indexación de AEM hace referencia a la indexación del contenido en la instancia de Cloud Service después de migrar el contenido a ella. La indexación es necesaria para permitir la búsqueda de contenido en esa instancia."
 
-Una vez que Cloud Acceleration Manager complete la ingesta de contenido en la instancia de Cloud Service, estará listo para utilizarse. Inicialmente, el contenido no se indexa, lo que probablemente resulte en un entorno inestable en el que se pueden esperar problemas como contenido inexplorable y rendimiento degradado. Para obtener un rendimiento óptimo en la instancia, el proceso de migración iniciará automáticamente la indexación del contenido. No hay nada que hacer, excepto monitorizar el progreso de indexación.
+Una vez que Cloud Acceleration Manager haya completado la ingesta de contenido en la instancia de Cloud Service, estará listo para utilizarse. Inicialmente, el contenido no se indexa, lo que probablemente resulte en un entorno inestable en el que se pueden esperar problemas como contenido inexplorable y rendimiento degradado. Para obtener un rendimiento óptimo en la instancia, el proceso de migración iniciará automáticamente la indexación del contenido. No hay nada que hacer, excepto monitorizar el progreso de indexación.
 
-> Para obtener información sobre cómo iniciar una ingesta, consulte [Ingesta de contenido en Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md).
+> Para obtener información sobre cómo iniciar una ingesta, consulte [Ingesta de contenido en el Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md).
 
 Los siguientes pasos muestran el flujo general que puede esperar ver en la interfaz de usuario durante la indexación. Algunas etiquetas proporcionan un contexto útil en la información sobre herramientas, por lo que asegúrese de pasar el ratón por encima de los elementos para obtener más información sobre el estado de indexación actual.
 
-Para empezar, vaya a Cloud Acceleration Manager. Haga clic en la tarjeta del proyecto y, a continuación, en la tarjeta Transferencia de contenido. Vaya a **Trabajos de ingesta** y ver los trabajos enumerados.
+Para empezar, vaya a Cloud Acceleration Manager. Haga clic en la tarjeta del proyecto y, a continuación, en la tarjeta Transferencia de contenido. Vaya a **Trabajos de ingesta** y vea los trabajos enumerados.
 
 >[!NOTE]
 >Puede ver o descargar los registros de indexación mediante las acciones del trabajo de ingesta, utilizando la lista desplegable ... . Los registros estarán disponibles en el
@@ -56,7 +56,7 @@ La indexación de la instancia del Cloud Service de destino muy probablemente se
 
 >[!TIP]
 >
-> Si el trabajo de indexación parece estar ejecutándose demasiado tiempo, asegúrese de que [No se ha aplicado la Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) a través de Cloud Manager, ya que impide que Cloud Acceleration Manager llegue al servicio de migración.
+> Si el trabajo de indexación parece estar ejecutándose demasiado tiempo, asegúrese de que no se haya aplicado una Lista de permitidos [IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) a través de Cloud Manager, ya que impide que Cloud Acceleration Manager llegue al servicio de migración.
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-indexing/failed.png)
 

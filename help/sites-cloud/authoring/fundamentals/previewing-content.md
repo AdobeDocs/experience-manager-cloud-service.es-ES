@@ -18,7 +18,7 @@ Facilita la previsualización de experiencias de página que, de otra manera, no
 
 >[!NOTE]
 >
->Tal como está el contenido *publicado* AEM Al entorno de vista previa, se puede acceder mediante una dirección URL (por lo que no necesita acceder a la dirección URL de la página de acceso a la página de acceso a la página).
+>AEM Como el contenido está *publicado* en el entorno de vista previa, se puede acceder a él mediante una dirección URL (por lo que no necesita acceso a la dirección URL).
 
 Para obtener más información acerca de los entornos de vista previa, consulte el documento [Administración de entornos](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
@@ -26,8 +26,8 @@ Para obtener más información acerca de los entornos de vista previa, consulte 
 
 Puede publicar contenido en el servicio de vista previa utilizando la IU **Publicación administrada**.
 
-1. En la consola Sitios, seleccione la página o páginas que desee enviar para obtener una vista previa y haga clic en **Administrar publicación** botón.
-1. En el asistente siguiente, seleccione **Previsualizar** como destino.
+1. En la consola Sitios, seleccione la página o páginas que desee enviar para obtener una vista previa y haga clic en el botón **Administrar publicación**.
+1. En el asistente siguiente, seleccione **Vista previa** como destino.
 
    ![publicación administrada](/help/sites-cloud/authoring/assets/previewmanagedpublication.png)
 
@@ -37,7 +37,7 @@ Puede publicar contenido en el servicio de vista previa utilizando la IU **Publi
 
    >[!NOTE]
    >
-   >Tal como está el contenido *publicado* AEM Al entorno de vista previa, se puede acceder mediante una dirección URL (por lo que no necesita acceder a la dirección URL de la página de acceso a la página de acceso a la página).
+   >AEM Como el contenido está *publicado* en el entorno de vista previa, se puede acceder a él mediante una dirección URL (por lo que no necesita acceso a la dirección URL).
 
 Como alternativa, para usar las direcciones URL mostradas en el asistente para ver el contenido de vista previa, también puede anteponer `preview-` a la URL de publicación de la instancia de producción.
 

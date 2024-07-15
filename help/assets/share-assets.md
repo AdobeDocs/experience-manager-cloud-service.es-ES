@@ -1,6 +1,6 @@
 ---
 title: Distribuir y compartir recursos, carpetas y colecciones
-description: Distribuya sus recursos digitales mediante métodos como compartir como vínculo, descargar y a través de [!DNL Brand Portal], [!DNL desktop app], y [!DNL Asset Link].
+description: Distribuya sus recursos digitales mediante métodos como compartir como vínculo, descargar y a través de  [!DNL Brand Portal], [!DNL desktop app] y [!DNL Asset Link].
 feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
@@ -11,44 +11,44 @@ ht-degree: 3%
 
 ---
 
-# Uso compartido y distribución de recursos administrados en [!DNL Experience Manager] {#share-assets-from-aem}
+# Compartir y distribuir recursos administrados en [!DNL Experience Manager] {#share-assets-from-aem}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
-[!DNL Adobe Experience Manager Assets] permite compartir recursos, carpetas y colecciones con miembros de la organización y entidades externas, incluidos socios y proveedores. Utilice los siguientes métodos para compartir recursos de [!DNL Experience Manager Assets] as a [!DNL Cloud Service]:
+[!DNL Adobe Experience Manager Assets] le permite compartir recursos, carpetas y colecciones con miembros de su organización y entidades externas, incluidos socios y proveedores. Utilice los siguientes métodos para compartir recursos de [!DNL Experience Manager Assets] como [!DNL Cloud Service]:
 
 * [Compartir como vínculo](#sharelink).
-* [Descarga de recursos](/help/assets/download-assets-from-aem.md) y comparta por separado.
+* [Descargue recursos](/help/assets/download-assets-from-aem.md) y compártalos por separado.
 * Compartir usando [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=es).
 * Compartir usando [[!DNL Adobe Asset Link]](https://www.adobe.com/es/creativecloud/business/enterprise/adobe-asset-link.html).
 * Compartir usando [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
 
 ## Requisitos previos {#prerequisites}
 
-Necesita privilegios de administrador para [configure las opciones para compartir recursos como vínculo](#config-link-share-settings).
+Necesita privilegios de administrador para [configurar opciones para compartir recursos como vínculo](#config-link-share-settings).
 
 ## Configuración del uso compartido de vínculos {#config-link-share-settings}
 
-[!DNL Experience Manager Assets] permite establecer la configuración predeterminada del recurso compartido de vínculos.
+[!DNL Experience Manager Assets] le permite establecer la configuración predeterminada del recurso compartido de vínculos.
 
-1. Haga clic en [!DNL Experience Manager] y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Configuración de recursos]** > **[!UICONTROL Vínculos compartidos]**.
+1. Haga clic en el logotipo de [!DNL Experience Manager] y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Configuración de Assets]** > **[!UICONTROL Vínculo compartido]**.
 1. Configuración inicial:
 
    * **Incluir originales:**
 
-      * Seleccionar `Select Include Originals` para seleccionar `Include Originals` opción predeterminada en el cuadro de diálogo compartir vínculo.
-      * Seleccione cómo desea que `Include Originals` se presenta en el cuadro de diálogo Compartir vínculos. [!UICONTROL Editable] permite al usuario cambiar la configuración definida aquí en la Configuración inicial. Con `Read-only` el ajuste se muestra, pero no se puede modificar. `Hidden` oculta la configuración y utiliza el valor configurado aquí en la configuración inicial.
+      * Seleccione `Select Include Originals` para seleccionar la opción `Include Originals` de forma predeterminada en el cuadro de diálogo de uso compartido de vínculos.
+      * Seleccione cómo se le presenta la opción `Include Originals` en el cuadro de diálogo Compartir vínculos. [!UICONTROL Editable] permite al usuario cambiar la configuración definida aquí en la Configuración inicial. Con `Read-only` se muestra la configuración, pero no se puede modificar. `Hidden` oculta la configuración y usa el valor configurado aquí en la configuración inicial.
    * **Incluir representaciones:**
-      * Seleccionar `Select Include Renditions` para seleccionar la opción `Include Renditions` opción predeterminada en el cuadro de diálogo compartir vínculo.
-      * Seleccione cómo desea que `Include Renditions` se presenta en el cuadro de diálogo Compartir vínculos. [!UICONTROL Editable] permite al usuario cambiar la configuración definida aquí en la Configuración inicial. Con `Read-only` el ajuste se muestra, pero no se puede modificar. `Hidden` oculta la configuración y utiliza el valor configurado aquí en la configuración inicial.
+      * Seleccione la opción `Select Include Renditions` para seleccionar la opción `Include Renditions` de forma predeterminada en el cuadro de diálogo de uso compartido de vínculos.
+      * Seleccione cómo se le presenta la opción `Include Renditions` en el cuadro de diálogo Compartir vínculos. [!UICONTROL Editable] permite al usuario cambiar la configuración definida aquí en la Configuración inicial. Con `Read-only` se muestra la configuración, pero no se puede modificar. `Hidden` oculta la configuración y usa el valor configurado aquí en la configuración inicial.
 
-1. Especifique el periodo de validez predeterminado para el vínculo en la `Validity Period` en el campo `Expiration date` sección.
+1. Especifique el período de validez predeterminado para el vínculo en el campo `Validity Period` de la sección `Expiration date`.
 
-1. **[!UICONTROL Vínculos compartidos]** en la barra de acciones:
-   * Todos los usuarios con `jcr:modifyAccessControl` Los permisos de pueden ver las [!UICONTROL Vínculos compartidos] opción. De forma predeterminada, está visible para todos los administradores. El [!UICONTROL Vínculos compartidos] es visible para todos de forma predeterminada. Puede configurar para que muestre esta opción solo para los grupos definidos o también puede denegar esta opción a grupos específicos. Seleccionar `Allow only for groups` si desea permitir que grupos específicos vean la variable `Share Link` opción. Seleccionar `Deny from groups` para denegar la `Share Link` opción de grupos específicos. Una vez seleccionadas cualquiera de estas opciones, especifique los nombres de grupo mediante `Select Groups` para añadir los nombres de grupo que debe permitir o denegar.
+1. Botón **[!UICONTROL Compartir vínculo]** en la barra de acciones:
+   * Todos los usuarios con permisos para `jcr:modifyAccessControl` pueden ver la opción [!UICONTROL Compartir vínculos]. De forma predeterminada, está visible para todos los administradores. El botón [!UICONTROL Vínculo compartido] es visible para todos de forma predeterminada. Puede configurar para que muestre esta opción solo para los grupos definidos o también puede denegar esta opción a grupos específicos. Seleccione `Allow only for groups` si desea permitir que grupos específicos vean la opción `Share Link`. Seleccione `Deny from groups` para denegar la opción `Share Link` a grupos específicos. Una vez que seleccione cualquiera de estas opciones, especifique los nombres de grupo con el campo `Select Groups` para agregar los nombres de grupo que necesita permitir o denegar.
 
 Para ver las opciones relacionadas con la configuración de correo electrónico, visite [Documentación del servicio de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=es)
 
@@ -56,7 +56,7 @@ Para ver las opciones relacionadas con la configuración de correo electrónico,
 
 ## Uso compartido de recursos como vínculo {#sharelink}
 
-Compartir recursos a través de un vínculo es una forma cómoda de poner los recursos a disposición de terceros externos, especialistas en marketing y otros [!DNL Experience Manager] usuarios. La funcionalidad permite a los usuarios anónimos acceder y descargar los recursos compartidos con ellos. Al descargar recursos desde un vínculo compartido, [!DNL Experience Manager Assets] utiliza un servicio asincrónico que ofrece una descarga más rápida e ininterrumpida. Los recursos que se van a descargar se colocan en segundo plano en archivos ZIP de un tamaño de archivo manejable. Para las descargas grandes, la descarga está agrupada en varios archivos de 100 GB por tamaño de archivo.
+Compartir recursos a través de un vínculo es una manera cómoda de poner los recursos a disposición de terceros externos, especialistas en marketing y otros usuarios de [!DNL Experience Manager]. La funcionalidad permite a los usuarios anónimos acceder y descargar los recursos compartidos con ellos. Al descargar recursos desde un vínculo compartido, [!DNL Experience Manager Assets] utiliza un servicio asincrónico que ofrece una descarga más rápida e ininterrumpida. Los recursos que se van a descargar se colocan en segundo plano en archivos ZIP de un tamaño de archivo manejable. Para las descargas grandes, la descarga está agrupada en varios archivos de 100 GB por tamaño de archivo.
 
 <!--
 Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
@@ -65,14 +65,14 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 >[!NOTE]
 >
 >* Necesita el permiso Editar ACL en la carpeta o el recurso que desea compartir como vínculo.
->* [Habilitar correos electrónicos salientes](/help/implementing/developing/introduction/development-guidelines.md#sending-email) antes de compartir un vínculo con los usuarios.
+>* [Habilite los correos electrónicos salientes](/help/implementing/developing/introduction/development-guidelines.md#sending-email) antes de compartir un vínculo con los usuarios.
 
 Existen dos formas de compartir los recursos mediante la funcionalidad de uso compartido de vínculos:
 
-1. Generar un vínculo compartido, [copie y comparta el vínculo del recurso](#copy-and-share-assets-link) con otros usuarios.
-1. Generar un vínculo compartido y [compartir el vínculo del recurso por correo electrónico](#share-assets-link-through-email). Puede modificar los valores predeterminados, como la fecha y la hora de caducidad, y permitir la descarga de los recursos originales y sus representaciones. Puede enviar correos electrónicos a varios usuarios añadiendo sus direcciones de correo electrónico.
+1. Genere un vínculo compartido, [copie y comparta el vínculo del recurso](#copy-and-share-assets-link) con otros usuarios.
+1. Genere un vínculo compartido y [comparta el vínculo del recurso por correo electrónico](#share-assets-link-through-email). Puede modificar los valores predeterminados, como la fecha y la hora de caducidad, y permitir la descarga de los recursos originales y sus representaciones. Puede enviar correos electrónicos a varios usuarios añadiendo sus direcciones de correo electrónico.
 
-   ![Cuadro de diálogo Compartir vínculos](assets/share-link.png)
+   ![Cuadro de diálogo para compartir vínculos](assets/share-link.png)
 
 En ambos casos, puede modificar los valores predeterminados, como la fecha y la hora de caducidad, y permitir la descarga de los recursos originales y sus representaciones.
 
@@ -80,12 +80,12 @@ En ambos casos, puede modificar los valores predeterminados, como la fecha y la 
 
 Para compartir recursos como una URL pública:
 
-1. Iniciar sesión en [!DNL Experience Manager Assets] y vaya a **[!UICONTROL Archivos]**.
+1. Inicie sesión en [!DNL Experience Manager Assets] y vaya a **[!UICONTROL Archivos]**.
 1. Seleccione los recursos o la carpeta que contienen los recursos. En la barra de herramientas, haga clic en **[!UICONTROL Compartir vínculo]**.
-1. El **[!UICONTROL Vínculos compartidos]** aparece un cuadro de diálogo que contiene un vínculo de recurso generado automáticamente en **[!UICONTROL Compartir vínculo]** field.
+1. Aparecerá el cuadro de diálogo **[!UICONTROL Vínculo compartido]** que contiene un vínculo de recurso generado automáticamente en el campo **[!UICONTROL Compartir vínculo]**.
 1. Establezca la fecha de caducidad del vínculo compartido según sea necesario.
-1. En **[!UICONTROL Configuración de vínculos]**, marque o desmarque `Include Originals` o `Include Renditions` para incluir o excluir cualquiera de los dos. Es obligatorio elegir al menos una opción.
-1. Los nombres de los recursos seleccionados aparecen en la columna derecha de la [!DNL Share Link] Cuadro de diálogo.
+1. En **[!UICONTROL Configuración del vínculo]**, marque o desmarque `Include Originals` o `Include Renditions` para incluir o excluir cualquiera de los dos. Es obligatorio elegir al menos una opción.
+1. Los nombres de los Assets seleccionados aparecen en la columna derecha del cuadro de diálogo [!DNL Share Link].
 1. Copie el vínculo del recurso y compártalo con los usuarios.
 
 ### Compartir vínculo de recurso mediante notificación por correo electrónico {#share-assets-link-through-email}
@@ -93,22 +93,22 @@ Para compartir recursos como una URL pública:
 Para compartir recursos por correo electrónico:
 
 1. Seleccione los recursos o la carpeta que contienen los recursos. En la barra de herramientas, haga clic en **[!UICONTROL Compartir vínculo]**.
-1. El **[!UICONTROL Vínculos compartidos]** aparece un cuadro de diálogo que contiene un vínculo de recurso generado automáticamente en **[!UICONTROL Compartir vínculo]** field.
+1. Aparecerá el cuadro de diálogo **[!UICONTROL Vínculo compartido]** que contiene un vínculo de recurso generado automáticamente en el campo **[!UICONTROL Compartir vínculo]**.
 
-   * En el cuadro Dirección de correo electrónico, escriba la dirección de correo electrónico del usuario con el que desea compartir el vínculo. Puede compartir el vínculo con varios usuarios. Si el usuario es miembro de su organización, seleccione su dirección de correo electrónico de entre las sugerencias que aparecen en la lista desplegable. En el campo de texto Dirección de correo electrónico, escriba la dirección de correo electrónico del usuario con el que desea compartir el vínculo y haga clic en [!UICONTROL Entrar]. Puede compartir el vínculo con varios usuarios.
+   * En el cuadro Dirección de correo electrónico, escriba la dirección de correo electrónico del usuario con el que desea compartir el vínculo. Puede compartir el vínculo con varios usuarios. Si el usuario es miembro de su organización, seleccione su dirección de correo electrónico de entre las sugerencias que aparecen en la lista desplegable. En el campo de texto de la dirección de correo electrónico, escriba la dirección de correo electrónico del usuario con el que desea compartir el vínculo y haga clic en [!UICONTROL Escribir]. Puede compartir el vínculo con varios usuarios.
 
-   * En el **[!UICONTROL Asunto]** , escriba un asunto para especificar el propósito de los recursos compartidos.
-   * En el **[!UICONTROL Mensaje]** , escriba un mensaje si es necesario.
-   * En el **[!UICONTROL Caducidad]** , utilice el selector de fechas para especificar una fecha y hora de caducidad para el vínculo.
-   * Habilite la **[!UICONTROL Permitir la descarga del archivo original]** para permitir que los destinatarios descarguen la representación original.
+   * En el cuadro **[!UICONTROL Asunto]**, escriba un asunto para especificar el propósito de los recursos compartidos.
+   * En el cuadro **[!UICONTROL Mensaje]**, escriba un mensaje si es necesario.
+   * En el campo **[!UICONTROL Caducidad]**, use el selector de fechas para especificar la fecha y hora de caducidad del vínculo.
+   * Habilite la casilla de verificación **[!UICONTROL Permitir la descarga del archivo original]** para permitir que los destinatarios descarguen la representación original.
 
-1. Clic **[!UICONTROL Compartir]**. Un mensaje confirma que el vínculo se comparte con los usuarios. Los usuarios reciben un correo electrónico con el vínculo compartido.
+1. Haga clic en **[!UICONTROL Compartir]**. Un mensaje confirma que el vínculo se comparte con los usuarios. Los usuarios reciben un correo electrónico con el vínculo compartido.
 
-   ![Correo electrónico de uso compartido de vínculos](assets/link-sharing-email-notification.png)
+   ![Correo electrónico para compartir vínculos](assets/link-sharing-email-notification.png)
 
 ### Personalizar plantilla de correo electrónico {#customize-email-template}
 
-Una plantilla bien diseñada transmite profesionalidad y competencia, mejorando la credibilidad de su mensaje y su organización. El [!DNL Adobe Experience Manager] permite personalizar la plantilla de correo electrónico, que se envía a los destinatarios que reciben el correo electrónico que contiene el vínculo compartido. Además, las plantillas de correo electrónico personalizadas permiten personalizar el contenido del correo electrónico al dirigirse a los destinatarios con un nombre y hacer referencia a detalles específicos relevantes para ellos. Este contacto personal puede hacer que el destinatario se sienta valorado y aumentar la participación. Además, una plantilla personalizada garantiza que los correos electrónicos sean coherentes con la identidad de su marca, incluidos los logotipos, los colores y las fuentes. La coherencia refuerza el reconocimiento de la marca y la confianza entre los destinatarios.
+Una plantilla bien diseñada transmite profesionalidad y competencia, mejorando la credibilidad de su mensaje y su organización. El [!DNL Adobe Experience Manager] le permite personalizar la plantilla de correo electrónico, que se envía a los destinatarios que reciben el correo electrónico que contiene el vínculo compartido. Además, las plantillas de correo electrónico personalizadas permiten personalizar el contenido del correo electrónico al dirigirse a los destinatarios con un nombre y hacer referencia a detalles específicos relevantes para ellos. Este contacto personal puede hacer que el destinatario se sienta valorado y aumentar la participación. Además, una plantilla personalizada garantiza que los correos electrónicos sean coherentes con la identidad de su marca, incluidos los logotipos, los colores y las fuentes. La coherencia refuerza el reconocimiento de la marca y la confianza entre los destinatarios.
 
 #### Formato de una plantilla de correo electrónico personalizada {#format-of-custom-email-template}
 
@@ -146,21 +146,21 @@ subject: ${emailSubject}
 
 Cualquier usuario que tenga acceso al vínculo de recursos compartidos puede descargar los recursos agrupados en una carpeta zip. El proceso de descarga es el mismo, tanto si un usuario accede al vínculo de recurso copiado como si utiliza el vínculo de recurso compartido a través del correo electrónico.
 
-* Haga clic en el vínculo del recurso o pegue la dirección URL en el explorador. El [!UICONTROL Vínculos compartidos] se abre la interfaz, en la que puede cambiar al [!UICONTROL Vista de tarjeta] o [!UICONTROL Vista de lista].
+* Haga clic en el vínculo del recurso o pegue la dirección URL en el explorador. Se abre la interfaz de [!UICONTROL Vínculo compartido], en la que puede cambiar a [!UICONTROL Vista de tarjeta] o a [!UICONTROL Vista de lista].
 
-* En el [!UICONTROL Vista de tarjeta], puede situar el ratón sobre el recurso compartido o la carpeta de recursos compartidos para seleccionarlos o colocarlos en la cola de descarga.
+* En la [!UICONTROL vista de tarjeta], puede pasar el ratón sobre el recurso compartido o la carpeta de recursos compartidos para seleccionarlos o colocarlos en la cola de descarga.
 
-* De forma predeterminada, la interfaz de usuario muestra **[!UICONTROL Descargar bandeja de entrada]** opción. Refleja la lista de todos los recursos o carpetas compartidos que se ponen en cola para su descarga junto con su estado.
+* De forma predeterminada, la interfaz de usuario muestra la opción **[!UICONTROL Descargar bandeja de entrada]**. Refleja la lista de todos los recursos o carpetas compartidos que se ponen en cola para su descarga junto con su estado.
 
-* Al seleccionar los recursos o la carpeta, aparece un **[!UICONTROL Descarga de cola]** opción aparece en la pantalla. Haga clic en **[!UICONTROL Descarga de cola]** para iniciar el proceso de descarga.
+* Al seleccionar los recursos o la carpeta, aparece la opción **[!UICONTROL Descarga de cola]** en la pantalla. Haga clic en la opción **[!UICONTROL Descarga de cola]** para iniciar el proceso de descarga.
 
   ![Descarga de cola](assets/queue-download.png)
 
-* Mientras se prepara el archivo de descarga, haga clic en **[!UICONTROL Descargar bandeja de entrada]** para ver el estado de la descarga. Para descargas grandes, haga clic en **[!UICONTROL Actualizar]** para actualizar el estado.
+* Mientras se prepara el archivo de descarga, haga clic en la opción **[!UICONTROL Descargar bandeja de entrada]** para ver el estado de la descarga. Para las descargas grandes, haz clic en el botón **[!UICONTROL Actualizar]** para actualizar el estado.
 
   ![Descargar bandeja de entrada](assets/link-sharing-download-inbox.png)
 
-* Una vez completado el procesamiento, haga clic en **[!UICONTROL Descargar]** para descargar el archivo zip.
+* Una vez completado el procesamiento, haga clic en el botón **[!UICONTROL Descargar]** para descargar el archivo zip.
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
@@ -240,15 +240,15 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 ## Descargar recursos y compartirlos por separado {#download-and-share-assets}
 
-Los usuarios pueden descargar los recursos necesarios y compartirlos fuera de [!DNL Experience Manager]. Para obtener más información, consulte [cómo buscar recursos](/help/assets/search-assets.md), [cómo descargar recursos](/help/assets/download-assets-from-aem.md), y [cómo descargar colecciones](manage-collections.md#download-a-collection)
+Los usuarios pueden descargar los recursos necesarios y compartirlos fuera de [!DNL Experience Manager]. Para obtener más información, consulte [cómo buscar recursos](/help/assets/search-assets.md), [cómo descargar recursos](/help/assets/download-assets-from-aem.md) y [cómo descargar colecciones](manage-collections.md#download-a-collection)
 
 ## Comparta recursos con profesionales creativos {#share-with-creatives}
 
 Los especialistas en marketing y los usuarios de la línea de negocios pueden compartir fácilmente recursos aprobados con sus profesionales creativos mediante,
 
-* **aplicación de escritorio de Experience Manager**: la aplicación funciona en Windows y Mac. Consulte [información general de aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=es). Para saber cómo cualquier usuario de escritorio autorizado puede acceder fácilmente a los recursos compartidos, consulte [examinar, buscar y previsualizar recursos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Los usuarios de escritorio pueden crear recursos y volver a compartirlos con sus homólogos que sean usuarios Experience Manager, por ejemplo, cargando nuevas imágenes. Consulte [carga de recursos mediante una aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **aplicación de escritorio de Experience Manager**: la aplicación funciona en Windows y Mac. Ver [descripción general de la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=es). Para saber cómo cualquier usuario de escritorio autorizado puede acceder fácilmente a los recursos compartidos, consulte [examinar, buscar y previsualizar recursos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Los usuarios de escritorio pueden crear recursos y volver a compartirlos con sus homólogos que sean usuarios Experience Manager, por ejemplo, cargando nuevas imágenes. Ver [cargar recursos mediante una aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
-* **Adobe Asset Link**: los profesionales creativos pueden buscar y utilizar recursos directamente desde [!DNL Adobe InDesign], [!DNL Adobe Illustrator], y [!DNL Adobe Photoshop].
+* **Vínculo de recursos de Adobe**: Los profesionales creativos pueden buscar y usar recursos directamente desde [!DNL Adobe InDesign], [!DNL Adobe Illustrator] y [!DNL Adobe Photoshop].
 
 ## Configurar el uso compartido de recursos {#configure-sharing}
 
@@ -258,11 +258,11 @@ Las distintas opciones para compartir los recursos requieren una configuración 
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-Para generar la dirección URL de los recursos que desea compartir con los usuarios, utilice el cuadro de diálogo Uso compartido de vínculos. Usuarios con privilegios de administrador o con permisos de lectura en `/var/dam/share` Las ubicaciones de pueden ver los vínculos compartidos con ellas. Compartir recursos a través de un vínculo es una forma cómoda de poner los recursos a disposición de terceros sin que tengan que iniciar sesión primero en [!DNL Assets].
+Para generar la dirección URL de los recursos que desea compartir con los usuarios, utilice el cuadro de diálogo Uso compartido de vínculos. Los usuarios con privilegios de administrador o con permisos de lectura en la ubicación `/var/dam/share` pueden ver los vínculos compartidos con ellos. Compartir recursos a través de un vínculo es una manera cómoda de poner los recursos a disposición de terceros externos sin que tengan que iniciar sesión primero en [!DNL Assets].
 
 >[!NOTE]
 >
->Si desea compartir vínculos de la instancia de autor a entidades externas, asegúrese de exponer solo las siguientes URL para `GET` solicitudes. Bloquee otras direcciones URL para asegurarse de que la instancia de autor sea segura.
+>Si desea compartir vínculos de la instancia de autor a entidades externas, asegúrese de exponer solo las siguientes direcciones URL para `GET` solicitudes. Bloquee otras direcciones URL para asegurarse de que la instancia de autor sea segura.
 >
 >* `[aem_server]:[port]/linkshare.html`
 >* `[aem_server]:[port]/linksharepreview.html`
@@ -295,22 +295,22 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Habilitar las acciones de escritorio para usarlas con la aplicación de escritorio {#desktop-actions}
 
-Desde dentro de [!DNL Assets] interfaz de usuario en un explorador, puede explorar las ubicaciones de los recursos o retirarlos y abrirlos para editarlos en la aplicación de escritorio. Estas opciones se denominan acciones de escritorio y, para habilitarlas, consulte [habilitar acciones de escritorio en [!DNL Assets] interfaz web](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2).
+Desde la interfaz de usuario de [!DNL Assets] en un explorador, puede explorar las ubicaciones de los recursos o retirarlos y abrirlos para editarlos en la aplicación de escritorio. Estas opciones se denominan acciones de escritorio y, para habilitarlas, consulte [habilitar acciones de escritorio en [!DNL Assets] interfaz web](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2).
 
-![Habilitar las acciones de escritorio para usarlas como acceso directo al trabajar con la aplicación de escritorio](assets/enable_desktop_actions.png)
+![Habilite las acciones de escritorio para usarlas como acceso directo al trabajar con la aplicación de escritorio](assets/enable_desktop_actions.png)
 
-### Configuraciones para utilizar [!DNL Adobe Asset Link] {#configure-asset-link}
+### Configuraciones para usar [!DNL Adobe Asset Link] {#configure-asset-link}
 
-Adobe Asset Link optimiza la colaboración entre creativos y especialistas en marketing en el proceso de creación de contenido. Se conecta [!DNL Adobe Experience Manager Assets] con [!DNL Creative Cloud] aplicaciones de escritorio, [!DNL Adobe InDesign], [!DNL Adobe Photoshop], y [!DNL Adobe Illustrator]. El [!DNL Adobe Asset Link] El panel permite a los creativos acceder y modificar el contenido almacenado en [!DNL Assets] sin salir de las aplicaciones creativas con las que están más familiarizados.
+Adobe Asset Link optimiza la colaboración entre creativos y especialistas en marketing en el proceso de creación de contenido. Conecta [!DNL Adobe Experience Manager Assets] con [!DNL Creative Cloud] aplicaciones de escritorio, [!DNL Adobe InDesign], [!DNL Adobe Photoshop] y [!DNL Adobe Illustrator]. El panel [!DNL Adobe Asset Link] permite a los creativos acceder al contenido almacenado en [!DNL Assets] y modificarlo sin salir de las aplicaciones creativas con las que están más familiarizados.
 
-Consulte [cómo configurar [!DNL Assets] para utilizarlo con [!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
+Ver [cómo configurar [!DNL Assets] para utilizarlo con [!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
 
 ## Prácticas recomendadas y solución de problemas {#bestpractices}
 
 * Es posible que las carpetas de recursos o las colecciones que contienen un espacio en blanco en su nombre no se compartan.
 * Si los usuarios no pueden descargar los recursos compartidos, consulte con el administrador del Experience Manager cuáles son los límites de descarga. El valor predeterminado es 100 MB.
-* Para que un usuario obtenga una vista previa de un vídeo compartido mediante el uso compartido de vínculos, el vídeo debe tener una representación de vídeo estática disponible en `/jcr:content/renditions` ubicación en el nodo del vídeo en el repositorio. La vista previa no depende de la disponibilidad de un [!DNL Dynamic Media] representación.
-* Al descargar un recurso de vídeo mediante el uso compartido de vínculos, la variable [!DNL Dynamic Media] las representaciones no se incluyen en el archivo descargado.
+* Para que un usuario obtenga una vista previa de un vídeo compartido mediante el uso compartido de vínculos, el vídeo debe tener una representación de vídeo estática disponible en la ubicación `/jcr:content/renditions` en el nodo del vídeo en el repositorio. La vista previa no depende de la disponibilidad de una representación de [!DNL Dynamic Media].
+* Al descargar un recurso de vídeo mediante el uso compartido de vínculos, las representaciones de [!DNL Dynamic Media] no se incluyen en el archivo descargado.
 
 <!--
 * If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your Experience Manager administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 

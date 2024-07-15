@@ -46,7 +46,7 @@ Cada configuración de lanzamiento utiliza un activador de lanzamiento que hace 
 
 En la siguiente tabla, se enumeran las opciones de configuración de despliegue listas para usarse de AEM. La tabla incluye las acciones de activación y sincronización de cada configuración de lanzamiento.
 
-Si las acciones de configuración de lanzamiento instaladas no cumplen con sus requisitos, puede [cree una configuración de despliegue.](#creating-a-rollout-configuration)
+Si las acciones de configuración de despliegue instaladas no cumplen con sus requisitos, puede [crear una configuración de despliegue.](#creating-a-rollout-configuration)
 
 | Nombre | Descripción | Activador | [Acciones de sincronización](#synchronization-actions) |
 |---|---|---|---|
@@ -61,7 +61,7 @@ Si las acciones de configuración de lanzamiento instaladas no cumplen con sus r
 
 En la siguiente tabla, se enumeran las opciones de sincronización listas para usarse de AEM.
 
-Si las acciones instaladas no cumplen con sus requisitos, puede [Cree una nueva acción de sincronización.](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
+Si las acciones instaladas no cumplen con sus requisitos, puede [Crear una nueva acción de sincronización.](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
 
 | Nombre de la acción | Descripción | Propiedades |
 |---|---|---|
@@ -85,7 +85,7 @@ Si las acciones instaladas no cumplen con sus requisitos, puede [Cree una nueva 
 
 ### Creación de una configuración de despliegue {#creating-a-rollout-configuration}
 
-Puede [creación de una configuración de despliegue](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) cuando las configuraciones de despliegue instaladas no cumplen los requisitos de la aplicación, siga estos pasos.
+Puede [crear una configuración de despliegue](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) cuando las configuraciones de despliegue instaladas no cumplan con los requisitos de su aplicación realizando los siguientes pasos.
 
 1. [Creación de la configuración de despliegue:](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
 1. [Añada acciones de sincronización a la configuración de lanzamiento.](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
@@ -96,7 +96,7 @@ La nueva configuración de despliegue está disponible al configurar opciones de
 
 Puede configurar varios servicios de OSGi que admitan las acciones de sincronización correspondientes para que no afecten a los tipos de nodos y propiedades específicos. Por ejemplo, muchas propiedades y subnodos relacionados con el trabajo interno de AEM no deben incluirse en una Live Copy. Solo se debe copiar el contenido relevante para el usuario de la página.
 
-AEM Al trabajar con los servicios de configuración, existen varios métodos para administrar los parámetros de configuración de dichos servicios. Consulte [Configurar OSGi](/help/implementing/deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
+AEM Al trabajar con los servicios de configuración, existen varios métodos para administrar los parámetros de configuración de dichos servicios. Consulte [Configuración de OSGi](/help/implementing/deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
 En la tabla siguiente se enumeran las acciones de sincronización para las que se pueden especificar los nodos que se excluirán. La tabla proporciona los nombres de los servicios que se van a configurar mediante la consola web y el PID para configurar mediante un nodo del repositorio.
 
@@ -135,7 +135,7 @@ Por ejemplo, si quiere que el **título** de la página se incluya en los cambio
 
 Puede configurar varios servicios de OSGi que admitan las acciones de sincronización correspondientes relacionadas con la actualización de referencias.
 
-AEM Al trabajar con los servicios de configuración, existen varios métodos para administrar los parámetros de configuración de dichos servicios. Consulte [Configurar OSGi](/help/implementing/deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
+AEM Al trabajar con los servicios de configuración, existen varios métodos para administrar los parámetros de configuración de dichos servicios. Consulte [Configuración de OSGi](/help/implementing/deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
 En la siguiente tabla se enumeran las acciones de sincronización para las que se puede especificar la actualización de referencia. La tabla proporciona los nombres de los servicios que se van a configurar mediante la consola web y el PID para configurar mediante un nodo del repositorio.
 
@@ -175,7 +175,7 @@ También puede configurar las opciones de configuración de despliegue para una 
 
    ![Herencia de Live Copy de la página principal](../assets/live-copy-inherit.png)
 
-1. Si es necesario, ajuste el **Herencia de Live Copy** Indicador. Si se selecciona, la configuración de Live Copy es eficaz en todas las páginas secundarias.
+1. Si es necesario, ajuste el indicador **Herencia de Live Copy**. Si se selecciona, la configuración de Live Copy es eficaz en todas las páginas secundarias.
 
 1. Borre la propiedad **Heredar configuración de despliegue del elemento principal** y, a continuación, seleccione una o varias opciones de configuración de despliegue de la lista.
 

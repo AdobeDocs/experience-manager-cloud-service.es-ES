@@ -8,7 +8,7 @@ docset: aem65s
 source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
 source-wordcount: '1328'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Al seleccionar un formulario y publicarlo, también se publican sus recursos y r
 Sus formularios adaptables pueden utilizar algunas configuraciones, ajustes y personalizaciones que no se publican automáticamente. Se recomienda publicar o activar estos recursos antes de publicar un formulario adaptable.
 
 * Plantillas de formulario adaptable editables
-* Configuraciones del Cloud Service para Adobe Sign, Typekit, reCAPTCHA y el modelo de datos de formulario (FDM)
+* Configuraciones de Cloud Service para Adobe Sign, Typekit, reCAPTCHA y el modelo de datos de formulario (FDM)
 * Otras configuraciones de Cloud Services solo se activan si el usuario tiene permisos de administrador.
 * Personalizaciones. Entre ellas se incluyen, entre otras:
 

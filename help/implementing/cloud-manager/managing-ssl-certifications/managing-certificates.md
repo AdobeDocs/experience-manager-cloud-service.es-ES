@@ -70,7 +70,7 @@ Siga estos pasos para eliminar un certificado SSL.
 
 ## Configuraciones de CDN preexistentes {#pre-existing-cdn}
 
-Si tiene una configuración de CDN preexistente para su certificado SSL, hay un mensaje informativo en la variable **Certificados SSL** , lo que le anima a añadir estas configuraciones a través de la interfaz de usuario para que sean visibles y configurables en Cloud Manager.
+Si tiene una configuración de CDN preexistente para su certificado SSL, hay un mensaje informativo en la página **Certificados SSL** que le anima a agregar estas configuraciones a través de la interfaz de usuario para que sean visibles y configurables en Cloud Manager.
 
 El mensaje desaparece una vez que se migran todas las configuraciones de entorno preexistentes mediante la interfaz de usuario. El mensaje puede tardar entre 1 y 2 días hábiles en desaparecer.
 

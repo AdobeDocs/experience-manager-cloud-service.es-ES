@@ -1,6 +1,6 @@
 ---
-title: Adición del complemento Screens a un nuevo programa en Cloud Manager
-description: Obtenga información sobre cómo agregar un complemento de Pantallas a un nuevo programa en Cloud Manager para Pantallas as a Cloud Service.
+title: Adición del complemento de Screens a un nuevo programa en Cloud Manager
+description: Obtenga información sobre cómo agregar un complemento de Screens a un nuevo programa en Cloud Manager para Screens as a Cloud Service.
 exl-id: 36d1e1e9-5272-4138-9e0d-8476edc729f0
 feature: Screens Deployments
 role: Admin, Developer, User
@@ -11,7 +11,7 @@ ht-degree: 3%
 
 ---
 
-# Añadir Screens como complemento a un nuevo programa en Cloud Manager {#create-programs-screens-cloud}
+# Adición de Screens como complemento a un nuevo programa en Cloud Manager {#create-programs-screens-cloud}
 
 En esta sección se describe cómo agregar Screens como complemento a un nuevo programa en Cloud Manager.
 
@@ -31,22 +31,22 @@ Siga los pasos a continuación para agregar Screens como complemento a un nuevo 
    >[!NOTE]
    >Consulte [Introducción a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=es) para obtener más información sobre Cloud Manager.
 
-1. Clic **Agregar programa** desde la página de aterrizaje de Cloud Manager.
+1. Haga clic en **Agregar programa** desde la página de aterrizaje de Cloud Manager.
 
    ![imagen](/help/screens-cloud/assets/onboarding/onboard-screens-addon1.png)
 
-1. Seleccionar **Configurado para producción** en el asistente Crear programa para crear un programa de producción. El usuario puede aceptar el nombre de programa predeterminado o editarlo antes de seleccionar **Continuar**.
+1. Seleccione **Configurar para producción** en el asistente Crear programa para crear un programa de producción. El usuario puede aceptar el nombre de programa predeterminado o editarlo antes de seleccionar **Continuar**.
 
    ![imagen](/help/screens-cloud/assets/onboarding/onboard-screens-addon2.png)
 
-1. Seleccionar **Screens** como complemento de la **Configurado para producción** en este paso del asistente y haga clic en **Crear**.
+1. Seleccione **Screens** como complemento en la pantalla **Configurar para producción** de este paso del asistente y haga clic en **Crear**.
 
    ![imagen](/help/screens-cloud/assets/onboarding/onboard-screens-addon3.png)
 
-1. Una vez completada la configuración de creación del programa, podrá ver el programa de Cloud Manager. Por ejemplo, la variable **Programa de demostración de ScreensCloud**, como se muestra en la figura siguiente, con Screens como complemento en su programa.
+1. Una vez completada la configuración de creación del programa, podrá ver el programa de Cloud Manager. Por ejemplo, el **Programa de demostración de ScreensCloud**, como se muestra en la figura siguiente, con Screens como complemento en su programa.
 
    ![imagen](/help/screens-cloud/assets/onboarding/onboard-screens-addon4.png)
 
 ## Siguientes pasos {#whats-next}
 
-Cuando haya aprendido a añadir Screens como complemento a un programa existente de Cloud Manager y vea su programa en Programas y productos de Cloud Manager, estará listo para continuar. El siguiente paso en el proceso de incorporación es [Creación de una rama para el proyecto en Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).
+Cuando haya aprendido a agregar Screens como complemento a un programa de Cloud Manager existente y vea el programa en Programas y productos de Cloud Manager, estará listo para continuar. El siguiente paso en el proceso de incorporación es [Crear una rama para su proyecto en Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).

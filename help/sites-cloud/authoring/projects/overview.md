@@ -40,7 +40,7 @@ La consola Proyectos es donde se accede a los proyectos y se administran dentro 
 ![La consola Proyectos](/help/sites-cloud/authoring/assets/projects-console.png)
 
 * Seleccione **Cronología** y luego un proyecto para ver su cronología.
-* Seleccionar **Seleccionar** para entrar en el modo de selección.
+* Seleccione **Select** para ingresar al modo de selección.
 * Haga clic en **Crear** para añadir proyectos.
 * **Alternar proyectos activos** permite cambiar entre todos los proyectos y solamente los que están activos.
 * **Mostrar vista de estadísticas** permite ver las estadísticas del proyecto relativas a las finalizaciones de tareas.
@@ -181,4 +181,4 @@ Todos los proyectos admiten las siguientes funciones predeterminadas para permit
 
 >[!NOTE]
 >
->Al crear el proyecto y agregar usuarios a las distintas funciones, los grupos asociados con el proyecto se crean automáticamente para administrar los permisos asociados. Por ejemplo, un proyecto llamado Myproject tendría tres grupos: **Propietarios de Myproject**, **Editores de Myproject**, **Observadores de Myproject**. Sin embargo, si se elimina el proyecto, esos grupos no se eliminarán automáticamente. Un administrador debe eliminar manualmente los grupos en **Herramientas** > **Seguridad** > **Grupos**.
+>Al crear el proyecto y agregar usuarios a las distintas funciones, los grupos asociados con el proyecto se crean automáticamente para administrar los permisos asociados. Por ejemplo, un proyecto llamado Myproject tendría tres grupos: **Propietarios de Myproject**, **Editores de Myproject**, **Observadores de Myproject**. Sin embargo, si se elimina el proyecto, esos grupos no se eliminarán automáticamente. Un administrador debe eliminar manualmente los grupos de **Herramientas** > **Seguridad** > **Grupos**.

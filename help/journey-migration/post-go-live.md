@@ -24,11 +24,11 @@ Este recorrido es la última parte, por lo que aprenderá a monitorizar los prob
 
 ## La historia hasta ahora {#story-so-far}
 
-En el paso anterior del recorrido, ha aprendido a realizar la migración y [Go-live](/help/journey-migration/go-live.md) AEM una vez que el código y el contenido estuvieran listos para pasarse a la as a Cloud Service de la.
+En el paso anterior del recorrido, aprendió a realizar la migración y [Go-live](/help/journey-migration/go-live.md) una vez que el código y el contenido estaban listos para moverse a AEM as a Cloud Service.
 
 ## Objetivo {#objective}
 
-AEM En este documento se describen las herramientas disponibles para solucionar problemas de entornos as a Cloud Service de la:
+En este documento se describen las herramientas disponibles para solucionar problemas de entornos de AEM as a Cloud Service:
 
 * **Developer Console**
 * **CRXDE Lite**
@@ -36,9 +36,9 @@ AEM En este documento se describen las herramientas disponibles para solucionar 
 
 ## Consola de desarrollador {#developer-console}
 
-AEM La depuración de entornos de desarrollador as a Cloud Service está disponible en Developer Console para entornos de desarrollo, fase y producción.
+La depuración de los entornos de desarrollador de AEM as a Cloud Service está disponible en Developer Console para los entornos de desarrollo, fase y producción.
 
-Consulte [AEM Implementación de para el as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) para obtener más información sobre las herramientas de desarrollo.
+Consulte [Implementación para AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) para obtener más información sobre las herramientas de desarrollo.
 
 ## CRXDE Lite {#crxde-lite}
 
@@ -47,7 +47,7 @@ Como usuario, puede acceder a CRXDE Lite en el entorno de desarrollo, pero no en
 >[!IMPORTANT]
 >Escribir en repositorios inmutables como `/libs` y `/apps` en tiempo de ejecución genera errores. Además, no tiene acceso a las herramientas para desarrolladores para entornos de ensayo y producción.
 
-Consulte [Desarrollo con CRXDE Lite](/help/implementing/developing/tools/crxde.md) AEM para obtener más información sobre cómo desarrollar la aplicación de con CRXDE Lite.
+Consulte [Desarrollo con CRXDE Lite AEM](/help/implementing/developing/tools/crxde.md) para obtener más información sobre cómo desarrollar su aplicación de forma que utilice el CRXDE Lite de la aplicación de la aplicación de la aplicación.
 
 ## Administración de registros {#managing-logs}
 
@@ -63,7 +63,7 @@ Consulte [Acceso y administración de registros](/help/implementing/cloud-manage
 >abstract="Póngase en contacto con el equipo de Soporte AEM de Adobe para obtener aclaraciones o solucionar cualquier problema."
 >additional-url="https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html" text="Compatibilidad con Experience Cloud"
 
-Si tiene preguntas sobre el acceso a Cloud Service, póngase en contacto con su representante de Adobe o [Asistencia para el Experience Cloud](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para obtener más información.
+Si tienes preguntas sobre el acceso a Cloud Service, ponte en contacto con el Adobe o con [Soporte técnico para Experience Cloud](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para obtener más información.
 
 ## Aprendizajes de documentos {#document-learnings}
 
@@ -77,10 +77,10 @@ Comparta estos conocimientos posteriores a la migración con las partes interesa
 
 ## El recorrido ha terminado, ¿o no? {#journey-ends}
 
-Felicitaciones. AEM ¡Ha completado el Recorrido de migración as a Cloud Service de la! Debe tener conocimientos de cómo hacer lo siguiente:
+Felicitaciones. Ha completado el Recorrido de migración de AEM as a Cloud Service. Debe tener conocimientos de cómo hacer lo siguiente:
 
-* AEM Introducción a la migración a la as a Cloud Service de la
-* AEM Determine si la implementación está lista para moverse a la as a Cloud Service de la
+* Introducción al paso a AEM as a Cloud Service
+* Determine si la implementación está lista para moverse a AEM as a Cloud Service
 * Preparar el código y la nube de contenido
 * Realizar la migración
 * Supervisar problemas y mejorar el rendimiento

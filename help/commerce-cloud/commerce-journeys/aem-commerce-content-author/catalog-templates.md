@@ -17,7 +17,7 @@ Obtenga información sobre cómo administrar páginas y plantillas de catálogo 
 
 ## La historia hasta ahora {#story-so-far}
 
-AEM En el documento anterior del recorrido de trabajo de creación de Contenido y Commerce de la, [AEM CIF Introducción a los conceptos básicos de creación de la](getting-started.md)CIF , ha aprendido los conceptos básicos de la creación de la.
+En el documento anterior del recorrido de trabajo de creación de contenido y Commerce de la, [Introducción a los conceptos básicos de creación de contenido y AEM](getting-started.md), ha aprendido los conceptos básicos de la creación de contenido y de AEM CIF CIF, y ha aprendido los conceptos básicos de la creación de contenido de la.
 
 Este artículo se basa en estos aspectos básicos.
 
@@ -34,10 +34,10 @@ Este documento le ayuda a comprender cómo administrar las páginas y plantillas
 La tienda Venia incluye una experiencia típica de catálogo de productos con navegación y aterrizaje, categoría (PLP) y páginas de detalles de producto (PDP).
 
 AEM CIF Las páginas de catálogo se crean dinámicamente mediante una plantilla de catálogo de de datos y datos de producto en tiempo real que se recuperan del extremo de comercio cuando es necesario. Cada catálogo tiene una plantilla genérica para páginas de productos y categorías.
-![estructura del catálogo](assets/catalog-structure.png)
+![estructura de catálogo](assets/catalog-structure.png)
 
 El componente de navegación muestra el contenido y las páginas del catálogo. Es posible mostrar la página de aterrizaje del catálogo o las categorías de primer nivel en la navegación. Al pasar el ratón por encima de una categoría, se mostrarán las categorías de segundo nivel como una segunda línea.
-![navegación por catálogo](assets/catalog-navigation.png)
+![navegación por el catálogo](assets/catalog-navigation.png)
 
 Al hacer clic en una categoría, se abre la página de categoría (o la página de lista de productos).
 
@@ -63,7 +63,7 @@ Las plantillas se pueden editar abriendo directamente la página de la plantilla
 
 ### Plantillas específicas de categoría o producto {#specific}
 
-CIF La aplicación admite varias plantillas en solo unos clics. Para crear otra plantilla, seleccione la plantilla genérica de la categoría correspondiente y cree una página utilizando **Crear** acción.
+CIF La aplicación admite varias plantillas en solo unos clics. Para crear otra plantilla, seleccione la plantilla genérica de la categoría correspondiente y cree una página con la acción **Crear**.
 
 ![crear página de plantilla](assets/create-template-page.png)
 
@@ -73,11 +73,11 @@ Seleccione la plantilla de producto o categoría correspondiente.
 
 Introduzca el título y cree la página.
 
-![crear entrada de plantilla](assets/create-template-enter.png)
+![crear el centro de plantilla](assets/create-template-enter.png)
 
 Observe que ahora tiene una plantilla específica debajo de la genérica.
 
-![crear jerarquía de plantillas](assets/create-template-hierachry.png)
+![crear jerarquía de plantilla](assets/create-template-hierachry.png)
 
 Abra la plantilla. Se parece exactamente a la plantilla de categoría genérica.
 
@@ -87,15 +87,15 @@ Añada cualquier imagen en la parte superior de la página.
 
 ![crear actualización de plantilla](assets/create-template-update.png)
 
-La plantilla se puede previsualizar con cualquier categoría o producto. Abrir **Información de página** y luego seleccione **Ver con categoría / producto**. Seleccione el producto/categoría del selector para obtener una vista previa de este producto/categoría. Seleccionar **Compra El Look** para obtener una vista previa de la plantilla actualizada.
+La plantilla se puede previsualizar con cualquier categoría o producto. Abra **Información de la página** y seleccione **Ver con categoría / producto**. Seleccione el producto/categoría del selector para obtener una vista previa de este producto/categoría. Seleccione la categoría **Ver el aspecto** para obtener una vista previa de la plantilla actualizada.
 
 ![crear plantilla ](assets/create-template-picker.png)
 
-Ahora tiene que asignar esta plantilla a la categoría específica. Abra las propiedades en **Información de página** y cambie a la pestaña commerce. Haga clic en el icono de la carpeta para seleccionar **Compra El Look** del selector de categorías. Es posible asignar varias categorías a una plantilla e incluir también subcategorías activando la casilla de verificación.
+Ahora tiene que asignar esta plantilla a la categoría específica. Abra las propiedades en el menú **Información de la página** y cambie a la pestaña de comercio. Haga clic en el icono de la carpeta para seleccionar la categoría **Ver el aspecto** del selector de categorías. Es posible asignar varias categorías a una plantilla e incluir también subcategorías activando la casilla de verificación.
 
-![crear plantilla asociada](assets/create-template-associate.png)
+![crear asociado de plantilla](assets/create-template-associate.png)
 
-Vuelva a la página principal y haga clic en **Compra El Look** para ver la plantilla específica. Todas las demás categorías seguirán utilizando la plantilla genérica.
+Vuelva a la página principal y haga clic en **Ver la categoría Look** para ver la plantilla específica. Todas las demás categorías seguirán utilizando la plantilla genérica.
 
 ![crear resultado de plantilla](assets/create-template-result.png)
 
@@ -109,11 +109,11 @@ Ahora que ha completado esta parte del recorrido, debe:
 * cómo funcionan las plantillas genéricas
 * ha creado una plantilla individual
 
-Aproveche este conocimiento y continúe con su recorrido revisando el documento a continuación [Administrar experiencias del catálogo de productos clasificados](staged-catalog.md)AEM , donde aprenderá a trabajar con los datos de los productos clasificados y los lanzamientos de la.
+Aproveche este conocimiento y continúe con su recorrido AEM revisando el documento [Administrar experiencias de catálogo de productos clasificados](staged-catalog.md), donde aprenderá a trabajar con datos de productos clasificados y lanzamientos de productos en fase de ejecución ().
 
 ## Recursos adicionales {#additional-resources}
 
-Aunque se recomienda pasar a la siguiente parte del recorrido revisando el documento [Administrar experiencias del catálogo de productos clasificados](staged-catalog.md)Sin embargo, los siguientes son algunos recursos opcionales extra. Profundizan en varios conceptos mencionados en este documento, pero no son necesarios para continuar con el recorrido sin encabezado:
+Aunque se recomienda pasar a la siguiente parte del recorrido revisando el documento [Administrar experiencias del catálogo de productos clasificados](staged-catalog.md), los siguientes son algunos recursos opcionales extra. Profundizan en varios conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido sin encabezado:
 
 * [Creación de páginas de múltiples productos y categorías](/help/commerce-cloud/authoring/multi-template-usage.md)
-* [Guía de migración para el Experience Manager Cloud Service](/help/commerce-cloud/migration.md) AEM - Cómo migrar al complemento de Commerce integration framework CIF de () desde una versión antigua
+* [Guía de migración para el Experience Manager Cloud Service AEM](/help/commerce-cloud/migration.md) - Cómo migrar al complemento Commerce integration framework CIF de la () desde una versión antigua

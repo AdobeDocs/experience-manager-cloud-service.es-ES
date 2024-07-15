@@ -41,7 +41,7 @@ Sin fragmentos de experiencias, el creador tendría que copiar y pegar ese fragm
 Los fragmentos de experiencias eliminan la necesidad de copiar y pegar.
 * Para admitir el caso práctico de CMS descentralizado.
 Los autores quieren utilizar AEM solo para la creación, pero no para la entrega al cliente. Un sistema o punto de contacto de terceros consumiría esa experiencia y la entregaría al usuario.
-* Con [Administración de varios sitios (MSM)](/help/sites-cloud/administering/msm/overview.md); como fragmento de experiencia forma parte de una página. Esto se aplica tanto a los fragmentos individuales como a las carpetas en las que residen.
+* Con [Multi Site Management (MSM)](/help/sites-cloud/administering/msm/overview.md); como fragmento de experiencia forma parte de una página. Esto se aplica tanto a los fragmentos individuales como a las carpetas en las que residen.
 
 >[!NOTE]
 >
@@ -236,14 +236,14 @@ Puede crear varias variaciones para este fragmento de experiencia en función de
 
    ![Creación de una variación de fragmento de experiencia](/help/sites-cloud/authoring/assets/xf-06.png)
 
-1. **Crear** permite crear:
+1. **Crear** le permite crear:
 
    * **Variación**
    * **Variación como Live Copy**.
 
      >[!NOTE]
      >
-     >Al crear una variación inicial como Live Copy, se heredará el título utilizando el origen de Live Copy como variación principal.
+     >Al crear una variación inicial como Live Copy, se heredará el título mediante Live Copy Source como variación principal.
 
 1. Defina las propiedades necesarias:
 
@@ -373,7 +373,7 @@ Para personalizar el fragmento, haga lo siguiente:
    >
    >* una ruta que contiene un subconjunto de los almacenes definidos en ContextHub configurados para la página
    >
-   >El **Ruta de segmentos** seleccionados en la **Personalización** La pestaña debe ser:
+   >La ruta de acceso de **segmentos** seleccionados en la ficha **Personalization** debe ser:
    >
    >* la misma ruta que la configurada para la página en la que se procesa el fragmento
    >

@@ -1,6 +1,6 @@
 ---
 title: Información general sobre la herramienta de transferencia de contenido
-description: AEM AEM Aprenda a utilizar la herramienta de transferencia de contenido para transferir contenido de una instancia de transferencia de contenido local a una instancia de as a Cloud Service
+description: AEM Aprenda a utilizar la herramienta de transferencia de contenido para transferir contenido de una instancia de local a AEM as a Cloud Service
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
@@ -21,7 +21,7 @@ ht-degree: 52%
 
 La herramienta de transferencia de contenido es una herramienta desarrollada por Adobe AEM que se puede utilizar para iniciar la migración del contenido existente de una instancia de origen de la aplicación (On-Premise o AMS) a una instancia de AEM Cloud Service de destino.
 
-Esta herramienta también transfiere entidades principales (usuarios o grupos) automáticamente.  Consulte [Asignación de usuarios y migración de principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) para obtener más información.
+Esta herramienta también transfiere entidades principales (usuarios o grupos) automáticamente.  Consulte [Asignación de usuarios y migración de entidades principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) para obtener más información.
 
 La herramienta de transferencia de contenido integra el proceso de transferencia de contenido con Cloud Acceleration Manager. Esto otorga al usuario todos los beneficios que proporciona:
 
@@ -36,10 +36,10 @@ Existen dos fases asociadas con la transferencia de contenido:
 
 1. **Extracción**: hace referencia a la extracción de contenido de la instancia de AEM de origen en un área temporal denominada *conjunto de migración*. El conjunto *de* migración es un área de almacenamiento en la nube proporcionada por Adobe para almacenar temporalmente el contenido transferido entre la instancia de AEM de origen y la instancia de AEM de Cloud Service.
 
-   Consulte [Proceso de Extracción en transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) para obtener más información.
+   Consulte [Proceso de extracción en transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) para obtener más información.
 
    >[!NOTE]
-   >La asignación de usuarios ahora se ejecuta automáticamente como parte de la fase de extracción en el autor (pero se puede deshabilitar en el autor o habilitar en la publicación). Consulte [Asignación de usuarios y migración de principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) para obtener más información.
+   >La asignación de usuarios ahora se ejecuta automáticamente como parte de la fase de extracción en el autor (pero se puede deshabilitar en el autor o habilitar en la publicación). Consulte [Asignación de usuarios y migración de entidades principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) para obtener más información.
 
 1. **Ingesta**: hace referencia a la ingesta de contenido del *conjunto de migración* en la instancia de Cloud Service del destinatario.
 
@@ -59,7 +59,7 @@ La herramienta de transferencia de contenido tiene una función que permite agre
 
 En la fase de extracción, para ***completar*** un conjunto de migración existente, se debe desactivar la opción de *sobrescritura*. Consulte [Extracción Superior](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) para obtener más información.
 
-En la fase de ingesta, para aplicar el contenido delta sobre el contenido actual, se debe desactivar la opción de *borrado*. Consulte [Completar la ingesta](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) para obtener más información.
+En la fase de ingesta, para aplicar el contenido delta sobre el contenido actual, se debe desactivar la opción de *borrado*. Consulte [Ingesta Superior](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) para obtener más información.
 
 ## Caducidad del conjunto de migración {#migration-set-expiry}
 

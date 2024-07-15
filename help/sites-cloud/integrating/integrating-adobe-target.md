@@ -1,6 +1,6 @@
 ---
 title: Integración con Adobe Target
-description: Obtenga información sobre cómo integrar Adobe Target AEM con el as a Cloud Service de la mediante la interfaz de usuario táctil y Adobe Launch.
+description: Obtenga información sobre cómo integrar Adobe Target con AEM as a Cloud Service mediante la IU táctil y Launch de Adobe.
 feature: Integration
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
@@ -21,7 +21,7 @@ Como parte de Adobe Marketing Cloud, Adobe Target le permite aumentar la relevan
 
 Adobe Launch es necesario para administrar las propiedades del lado del cliente tanto para Analytics como para Target en páginas AEM (bibliotecas/etiquetas JS). Dicho esto, la integración con Launch es necesaria para la “segmentación de experiencias”.
 
-Para la exportación de fragmentos de experiencias o de contenido a Target, necesita el [Configuración de Adobe Target](#create-configuration), incluido el [Integración de IMS](#ims-configuration).
+Para exportar fragmentos de experiencias o de contenido a Target, necesita la [configuración de Adobe Target](#create-configuration), incluida la [integración de IMS](#ims-configuration).
 
 >[!NOTE]
 >
@@ -39,13 +39,13 @@ Para la exportación de fragmentos de experiencias o de contenido a Target, nece
 
 ### Configuración de IMS {#ims-configuration}
 
-La integración de AEM con Adobe Target mediante la API de Target Standard requiere la configuración de Adobe IMS (Identity Management System). Se debe crear la configuración de IMS de Target (una vez aprovisionado Target). Consulte [AEM as a Cloud Service Configuración de integraciones de IMS para la creación de](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) y el vídeo [Integración de Experience Platform Launch AEM y](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/experience-platform-data-collection-tags/overview.html?lang=es) para aprender a crear la configuración de IMS de Target.
+La integración de AEM con Adobe Target mediante la API de Target Standard requiere la configuración de Adobe IMS (Identity Management System). Se debe crear la configuración de IMS de Target (una vez aprovisionado Target). Consulte [Configuración de integraciones de IMS para AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) y el vídeo [Integración de Experience Platform Launch AEM y](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/experience-platform-data-collection-tags/overview.html?lang=es) para aprender a crear la configuración de IMS de Target.
 
 >[!NOTE]
 >
->[Las integraciones de IMS ahora están configuradas con S2S OAuth](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>[Las integraciones de IMS ya están configuradas con S2S OAuth](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
 >
->Las configuraciones anteriores se realizaban con [Las credenciales de JWT ahora están sujetas a desaprobación en la consola de Adobe Developer](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
+>Las configuraciones anteriores se realizaron con [credenciales de JWT que ahora están sujetas a desaprobación en Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 >[!NOTE]
 >
@@ -121,7 +121,7 @@ Una propiedad es un contenedor que se rellena con extensiones, reglas y elemento
 **Extensiones** es el contenedor que administra la configuración de la biblioteca principal. La extensión de Adobe Target es compatible con implementaciones del lado del cliente mediante el uso del SDK de JavaScript de Target para la web moderna, at.js. Debe añadir ambas extensiones **Adobe Target** y **ContextHub de Adobe**.
 
 1. Seleccione la opción Catálogo de extensiones y busque Target en el filtro.
-2. Seleccionar **Adobe Target** at.js y haga clic en la opción Instalar.
+2. Seleccione **Adobe Target** at.js y haga clic en la opción Instalar.
    ![Búsqueda de Target](assets/search_ext1.png "Búsqueda de Target")
 3. Seleccione el botón **Configurar**. Observe la ventana de configuración con las credenciales de la cuenta de Target importadas y la versión de at.js para esta extensión.
 4. Seleccione **Guardar** para añadir la extensión de Target a la propiedad de Launch. Debería poder ver la extensión de Target en la lista **Extensiones instaladas**.

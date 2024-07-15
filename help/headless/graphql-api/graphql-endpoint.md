@@ -63,9 +63,9 @@ Para habilitar el punto de conexión correspondiente:
 
 1. Vaya a **Herramientas**, **General** y, a continuación, seleccione **GraphQL**.
 1. Seleccione **Crear**.
-1. El **Crear nuevo extremo de GraphQL** se abre. Aquí puede especificar lo siguiente:
+1. Se abre el cuadro de diálogo **Crear nuevo extremo de GraphQL**. Aquí puede especificar lo siguiente:
    * **Nombre**: nombre del punto de conexión; puede escribir cualquier texto.
-   * **Usar esquema de GraphQL proporcionado por**: utilice la lista desplegable para seleccionar el sitio o proyecto requerido.
+   * **Usar esquema de GraphQL proporcionado por**: use la lista desplegable para seleccionar el sitio o proyecto requerido.
 
    >[!NOTE]
    >
@@ -74,7 +74,7 @@ Para habilitar el punto de conexión correspondiente:
    >* *Los puntos finales de GraphQL pueden introducir problemas de rendimiento y seguridad de datos si no se administran con cuidado. Asegúrese de que se han establecido los permisos adecuados después de crear un punto final.*
 
 1. Confirme con **Crear**.
-1. El **Pasos siguientes** proporcionará un vínculo directo a la consola de seguridad para que pueda asegurarse de que el extremo creado tenga los permisos adecuados.
+1. El cuadro de diálogo **Pasos siguientes** proporcionará un vínculo directo a la consola de seguridad para que pueda asegurarse de que el extremo creado tenga los permisos adecuados.
 
    >[!CAUTION]
    >
@@ -92,4 +92,4 @@ Seleccione el nuevo punto de conexión y **Publicación** para que esté totalme
 >
 >En instancias de publicación esto puede suponer un problema de seguridad, ya que las consultas de GraphQL pueden imponer una carga pesada en el servidor.
 >
->Configuración de [ACL adecuados para su caso de uso](/help/headless/security/permissions.md) en el extremo.
+>Configure [ACL apropiados para su caso de uso](/help/headless/security/permissions.md) en el punto de conexión.

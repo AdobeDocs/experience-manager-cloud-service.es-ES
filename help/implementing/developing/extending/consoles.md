@@ -13,25 +13,25 @@ ht-degree: 0%
 
 # Personalización de consolas {#customizing-consoles}
 
-AEM proporciona opciones para personalizar las consolas (y la variable [funcionalidad de creación de páginas](/help/implementing/developing/extending/page-authoring.md)) de la instancia de creación.
+AEM proporciona opciones para personalizar las consolas (y la [funcionalidad de creación de páginas](/help/implementing/developing/extending/page-authoring.md)) de la instancia de creación.
 
 ## Clientlibs {#clientlibs}
 
-Clientlibs le permite ampliar la implementación predeterminada para ofrecer nuevas funcionalidades, mientras reutiliza funciones, objetos y métodos estándar. Al personalizar con clientlibs, puede crear su propia clientlib en `/apps.` Por ejemplo, puede contener el código necesario para el componente personalizado.
+Clientlibs le permite ampliar la implementación predeterminada para ofrecer nuevas funcionalidades, mientras reutiliza funciones, objetos y métodos estándar. Al personalizar con clientlibs, puede crear su propia clientlib en `/apps.`. Por ejemplo, puede contener el código necesario para el componente personalizado.
 
-Consulte [AEM as a Cloud Service Uso de bibliotecas del lado del cliente en el uso de](/help/implementing/developing/introduction/clientlibs.md).
+Ver [Uso de bibliotecas del lado del cliente en AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Superposiciones {#overlays}
 
-Las superposiciones se basan en definiciones de nodos y permiten superponer la funcionalidad estándar que se encuentra en `/libs` con su propia funcionalidad personalizada en `/apps`. Al crear una superposición, no se requiere una copia 1:1 del original, ya que [Fusión de recursos de Sling](/help/implementing/developing/introduction/sling-resource-merger.md) permite la herencia.
+Las superposiciones se basan en definiciones de nodo y le permiten superponer la funcionalidad estándar que se encuentra en `/libs` con su propia funcionalidad personalizada en `/apps`. Al crear una superposición, no se requiere una copia individual del original, ya que [la fusión de recursos Sling](/help/implementing/developing/introduction/sling-resource-merger.md) permite la herencia.
 
 AEM Las superposiciones se pueden utilizar de muchas maneras para ampliar las consolas de la. En las secciones siguientes se proporcionan varios ejemplos.
 
-Consulte también [Superposiciones para Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
+Ver también [Superposiciones para Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 
 >[!TIP]
 >
->Si le interesan las opciones para personalizar la experiencia de creación, consulte [Personalización de la creación de páginas](/help/implementing/developing/extending/page-authoring.md).
+>Si está interesado en opciones para personalizar la experiencia de creación, consulte [Personalización de la creación de páginas](/help/implementing/developing/extending/page-authoring.md).
 
 ## Personalización de la Vista Predeterminada para una Consola {#customizing-the-default-view-for-a-console}
 
@@ -63,7 +63,7 @@ Puede personalizar la vista predeterminada (columna, tarjeta, lista) de una cons
 
 Puede crear sus propios componentes e incluir las bibliotecas de cliente correspondientes para las acciones personalizadas.
 
-* Por ejemplo, es posible que desee crear un **Promocionar en medios sociales** acción en:
+* Por ejemplo, es posible que desee crear una acción **Promocionar a medios sociales** en:
 
    * `/apps/wcm/core/clientlibs/sites/js/socialmedia.js`
 
@@ -83,7 +83,7 @@ Por ejemplo, puede que desee crear un componente para controlar las condiciones 
 
 * `/apps/myapp/components/renderconditions/group`
 
-Para aplicarlos a **Crear sitio** acción en la consola sitios:
+Para aplicar esto a la acción **Crear sitio** en la consola Sitios:
 
 * `/libs/wcm/core/content/sites`
 
@@ -95,7 +95,7 @@ Para aplicarlos a **Crear sitio** acción en la consola sitios:
 
    * `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-Con las propiedades de este nodo puede definir la variable `groups` puede realizar la acción específica; por ejemplo, `administrators`
+Con las propiedades de este nodo puede definir `groups` que tiene permiso para realizar la acción específica; por ejemplo, `administrators`
 
 ### Personalización de columnas en la vista de lista {#customizing-columns-in-list-view}
 
@@ -109,11 +109,11 @@ Para personalizar las columnas en la vista de lista:
 
 1. Añada las columnas nuevas o elimine las existentes.
 
-Si desea insertar datos adicionales, debe escribir un [PageInfoProvider](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) con un `pageInfoProviderType` propiedad.
+Si desea insertar datos adicionales, debe escribir [PageInfoProvider](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) con una propiedad `pageInfoProviderType`.
 
 >[!NOTE]
 >
->Esta función está optimizada para columnas de campos de texto. Para otros tipos de datos es posible superponer `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
+>Esta función está optimizada para columnas de campos de texto. Para otros tipos de datos es posible superponer `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` en `/apps`.
 
 ### Filtrado de recursos {#filtering-resources}
 

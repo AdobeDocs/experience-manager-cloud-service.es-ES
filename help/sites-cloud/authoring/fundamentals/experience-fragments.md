@@ -232,7 +232,7 @@ Puede crear varias variaciones para este fragmento de experiencia en función de
 
    ![Creación de una variación de fragmento de experiencia](/help/sites-cloud/authoring/assets/xf-06.png)
 
-1. **Crear** permite crear:
+1. **Crear** le permite crear:
 
    * **Variación**
    * **Variación como Live Copy**.
@@ -361,7 +361,7 @@ Para personalizar el fragmento, haga lo siguiente:
    >
    >* una ruta que contiene un subconjunto de los almacenes definidos en ContextHub configurados para la página
    >
-   >El **Ruta de segmentos** seleccionados en la **Personalización** La pestaña debe ser:
+   >La ruta de acceso de **segmentos** seleccionados en la ficha **Personalization** debe ser:
    >
    >* la misma ruta que la configurada para la página en la que se procesa el fragmento
    >

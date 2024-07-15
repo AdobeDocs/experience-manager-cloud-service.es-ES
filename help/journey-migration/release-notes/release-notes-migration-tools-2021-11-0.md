@@ -1,6 +1,6 @@
 ---
-title: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2021.11.0 de
-description: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2021.11.0 de
+title: Notas de la versión para las herramientas de migración en la versión 2021.11.0 de AEM as a Cloud Service
+description: Notas de la versión para las herramientas de migración en la versión 2021.11.0 de AEM as a Cloud Service
 feature: Release Information
 exl-id: 668c0c66-88f5-4d74-9a2a-3bdc63b0bba7
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 16%
 
 ---
 
-# AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2021.11.0 de {#release-notes}
+# Notas de la versión para las herramientas de migración en la versión 2021.11.0 de AEM as a Cloud Service {#release-notes}
 
-AEM Esta página describe las notas de la versión de las herramientas de migración de as a Cloud Service 2021.11.0.
+Esta página describe las notas de la versión de las herramientas de migración de AEM as a Cloud Service 2021.11.0.
 
 >[!NOTE]
 >Para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service, haga clic [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es).
@@ -26,6 +26,6 @@ La fecha de lanzamiento de la herramienta de transferencia de contenido v1.7.2 e
 
 ### Novedades {#what-is-new-ctt}
 
-* Compatibilidad con un [copia previa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) AEM Se ha añadido un paso para utilizarlo con la herramienta de transferencia de contenido cuando la instancia de origen está configurada para utilizar el almacén de datos de archivos para acelerar de forma significativa la fase de extracción.
+* AEM Se agregó compatibilidad con un paso [previo a la copia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) opcional para utilizarlo con la herramienta de transferencia de contenido cuando la instancia de origen está configurada para usar el almacén de datos de archivo a fin de acelerar en gran medida la fase de extracción.
 
 * Se han agregado mensajes descriptivos adicionales a la fase de ingesta en la IU de la herramienta de transferencia de contenido para indicar cuándo están en curso los pasos de indexación y recuperación de mongo.

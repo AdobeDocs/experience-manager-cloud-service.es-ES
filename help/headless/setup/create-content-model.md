@@ -33,7 +33,7 @@ Un arquitecto de la información realizaría estas tareas solo de forma esporád
 1. Proporcione un **Título de modelo**, **Etiquetas** y una **Descripción**. También puede seleccionar o anular la selección de **Habilitar modelo** para controlar si el modelo se activa inmediatamente tras la creación.
 
    ![Creación de un modelo](../assets/models-create.png)
-1. En la ventana de confirmación, seleccione **Abrir** para configurar el modelo.
+1. En la ventana de confirmación, selecciona **Abrir** para configurar el modelo.
 
    ![Ventana de confirmación](../assets/models-confirmation.png)
 1. Con el **Editor del modelo de fragmento de contenido**, cree su modelo de fragmento de contenido arrastrando y soltando campos de la columna **Tipos de datos**.
@@ -44,14 +44,14 @@ Un arquitecto de la información realizaría estas tareas solo de forma esporád
 
    ![Configure las propiedades](../assets/models-configure-properties.png)
 
-1. Cuando haya terminado de crear el modelo, seleccione **Guardar**.
+1. Cuando termine de crear el modelo, seleccione **Guardar**.
 
-1. El modo del modelo creado depende de si ha seleccionado o no **Habilitar modelo** al crear el modelo:
+1. El modo del modelo creado depende de si seleccionó **Habilitar modelo** al crear el modelo:
    * Seleccionado: el nuevo modelo ya estará **Habilitado**
    * No seleccionado: el nuevo modelo se crea en modo **Borrador**
 
 1. Si aún no lo está, el modelo debe estar **Habilitado** para utilizarlo.
-   1. Seleccione el modelo que ha creado y, a continuación, seleccione **Activar**.
+   1. Seleccione el modelo que creó y luego seleccione **Habilitar**.
 
       ![Activación del modelo](../assets/models-enable.png)
    1. Confirme la activación del modelo tocando o haciendo clic en **Habilitar** en el cuadro de diálogo de confirmación.

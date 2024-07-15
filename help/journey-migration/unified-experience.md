@@ -19,7 +19,7 @@ Adobe ha desarrollado herramientas para automatizar algunas de las tareas de ref
 
 El complemento de experiencia unificada ofrece las siguientes ventajas:
 
-* Unifica las herramientas que funcionan en el código fuente en una sola `node.js` aplicación expuesta como `aio-cli ` para proporcionar una experiencia de usuario coherente al usuario.
+* Unifica las herramientas que funcionan en el código fuente en una aplicación `node.js` expuesta como complemento `aio-cli ` para proporcionar una experiencia de usuario coherente al usuario.
 
 * Ejecuta todas las herramientas mediante un único comando, a la vez que proporciona la flexibilidad para ejecutar herramientas específicas según sea necesario.
 
@@ -27,14 +27,14 @@ El complemento de experiencia unificada ofrece las siguientes ventajas:
 
 ## Explicación del complemento {#understanding-plugin}
 
-El `aio-cli-plugin-aem-cloud-service-migration` El complemento consta de dos partes principales:
+El complemento `aio-cli-plugin-aem-cloud-service-migration` consta de dos partes principales:
 
 * **Interfaz de usuario**
 
    * `aio-cli` comandos para ejecutar una o más herramientas de refactorización de código (encadenando las herramientas que se van a ejecutar secuencialmente).
-   * `config.yaml` que incorpora los parámetros de entrada necesarios.
+   * `config.yaml` que toma los parámetros de entrada requeridos.
 
-* **Conjunto de herramientas de refactorización de código subyacente**
+* **Grupo de herramientas de refactorización de código subyacente**
 
   Las herramientas de refactorización de código ejecutan sus funcionalidades mediante:
 
@@ -44,7 +44,7 @@ El `aio-cli-plugin-aem-cloud-service-migration` El complemento consta de dos par
 
 ## Disponibilidad {#availability}
 
-Consulte [Recurso de Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) donde puede obtener información sobre el uso y cómo puede contribuir al código de este complemento de código abierto en GitHub.
+Consulte [Recurso de Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration), donde podrá obtener información sobre el uso y la forma de contribuir al código de este complemento de código abierto en GitHub.
 
 >[!NOTE]
->AEM Actualmente, el complemento está integrado con Dispatcher Converter y el Modernizador de repositorios de Dispatcher.
+>AEM Actualmente, el complemento está integrado con el convertidor de Dispatcher y el modernizador de repositorios de la aplicación de manera independiente

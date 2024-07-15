@@ -8,7 +8,7 @@ exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
 source-git-commit: 619cf91e3d1cc5504d8de0e70eb88e9ae7285af9
 workflow-type: tm+mt
 source-wordcount: '1560'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -98,7 +98,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 
 1. (Opcional) En la pestaña **[!UICONTROL Datos]**, seleccione un modelo de datos:
 
-   * **Modelo de datos de formulario**: A [El modelo de datos de formulario](data-integration.md) permite integrar entidades y servicios de distintas fuentes de datos en un formulario adaptable. Elija Modelo de datos de formulario (FDM) si el formulario adaptable que está creando implica recuperar y escribir datos desde y hacia varias fuentes de datos.
+   * **Modelo de datos de formulario**: A [El modelo de datos de formulario](data-integration.md) permite integrar entidades y servicios de distintas fuentes de datos en un formulario adaptable. Elija el modelo de datos de formulario (FDM) si el formulario adaptable que está creando implica recuperar y escribir datos desde y hacia varias fuentes de datos.
 
    * **Esquema JSON**: [El esquema JSON](adaptive-form-json-schema-form-model.md) representa la estructura en la que el sistema back-end de su organización produce o consume datos. Puede asociar el esquema a un formulario adaptable y utilizar sus elementos para agregarle contenido dinámico. Los elementos del esquema están disponibles para su uso en la pestaña Objetos del modelo de datos del explorador de contenido al crear formularios adaptables y todos los campos también se añaden al formulario adaptable creado.
 
@@ -126,7 +126,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 
 1. Seleccione **[!UICONTROL Crear]**. Se crea un formulario adaptable que se abre en el editor de formularios adaptables. El editor muestra el contenido disponible en la plantilla. También muestra la barra lateral para personalizar el formulario recién creado según las necesidades.
 
-   En función del tipo de formulario adaptable, los elementos del formulario presentes en el formulario asociado <!--XFA form template, XML schema or --> El esquema JSON o el modelo de datos de formulario (FDM) se muestran en la variable **[!UICONTROL Objetos del modelo de datos]** de la pestaña **[!UICONTROL Explorador de contenido]** en la barra lateral. También puede arrastrar y soltar estos elementos para crear su formulario adaptable.
+   En relación con el tipo de formulario adaptable, los elementos del formulario presentes en el esquema JSON <!--XFA form template, XML schema or --> o el modelo de datos de formulario (FDM) asociados se muestran en la pestaña **[!UICONTROL Objetos del modelo de datos]** del **[!UICONTROL Explorador de contenido]** en la barra lateral. También puede arrastrar y soltar estos elementos para crear su formulario adaptable.
 
 <!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
@@ -184,8 +184,8 @@ Puede cambiar el modelo de formulario para un formulario adaptable (basado en JS
 1. Seleccione el formulario adaptable y seleccione el icono **Propiedades**.
 1. Abra la pestaña **[!UICONTROL Modelo de formulario]** y haga una de las siguientes acciones.
 
-   * Si el formulario adaptable no cuenta con un modelo de formulario, puede elegir otro modelo de formulario y, en consecuencia, seleccionar <!-- a form template, --> Esquema XML o JSON o modelo de datos de formulario (FDM).
-   * Si el formulario adaptable se basa en un modelo de formulario, puede elegir otro <!-- form template, --> Esquema XML o JSON o modelo de datos de formulario (FDM) para el mismo modelo de formulario.
+   * Si el formulario adaptable no cuenta con un modelo de formulario, puede elegir otro modelo de formulario y, en consecuencia, seleccionar un esquema XML o JSON <!-- a form template, --> o un modelo de datos de formulario (FDM).
+   * Si el formulario adaptable se basa en un modelo de formulario, puede elegir otro esquema XML o JSON <!-- form template, --> o modelo de datos de formulario (FDM) para el mismo modelo de formulario.
 
 1. Seleccione **[!UICONTROL Guardar]** para guardar las propiedades.
 
@@ -195,8 +195,8 @@ También puede modificar las propiedades del modelo del formulario desde el edit
 1. Haga clic en el ![Icono Configurar](/help/forms/assets/configure-icon.svg) para abrir **[!UICONTROL Propiedades]** del contenedor del Formulario adaptable.
 1. Seleccione la pestaña **[!UICONTROL Modelo de datos]** y realice una de las siguientes acciones:
 
-   * Si el formulario adaptable no cuenta con un modelo de formulario, puede elegir un modelo de formulario y seleccionar lo siguiente <!-- a form template, --> Esquema XML o JSON o modelo de datos de formulario (FDM).
-   * Si el formulario adaptable se basa en un modelo de formulario, no se puede cambiar el modelo de formulario. Puede elegir otra <!-- form template, --> Esquema XML o JSON o modelo de datos de formulario (FDM) para el mismo modelo de formulario, según corresponda.
+   * Si el formulario adaptable no posee un modelo de formulario, puede elegir un modelo de formulario y seleccionar un esquema XML o JSON <!-- a form template, -->, o un modelo de datos de formulario (FDM), según corresponda.
+   * Si el formulario adaptable se basa en un modelo de formulario, no se puede cambiar el modelo de formulario. Puede elegir otro esquema XML o JSON <!-- form template, -->, o un modelo de datos de formulario (FDM) para el mismo modelo de formulario, según corresponda.
 1. Seleccione ![Guardar](/help/forms/assets/check-button.png) para guardar las propiedades.
 
 ![Compatibilidad con FDM-Esquema](/help/forms/assets/fdmsupport.png)
@@ -205,17 +205,17 @@ También puede modificar las propiedades del modelo del formulario desde el edit
 >
 > También puede guardar un formulario adaptable como plantilla. Para obtener más información, consulte [Creación de una plantilla con un formulario adaptable](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template).
 
-## AEM ¿Cómo se cambia el nombre de un formulario adaptable de? {#rename-an-AEM-Adaptive-Form}
+## ¿Cómo se cambia el nombre a un formulario adaptable de AEM? {#rename-an-AEM-Adaptive-Form}
 
 Para cambiar el nombre de un formulario adaptable, realice los siguientes pasos:
 
 1. Seleccione un formulario adaptable en la interfaz de usuario de AEM Forms.
 1. Haga clic en **Propiedades** situado en el carril superior.
-1. Cambie el nombre del formulario en la **Título** , como se muestra en la siguiente imagen.
-1. Clic **Guardar y cerrar**.
+1. Cambie el nombre del formulario en la pestaña **Título**, como se muestra en la siguiente imagen.
+1. Haga clic en **Guardar y cerrar**.
 
-![AEM Cambiar el nombre de un formulario adaptable](/help/forms/assets/change-af-name.png)
+![Cambiar el nombre de un formulario adaptable de AEM](/help/forms/assets/change-af-name.png)
 
-## Consulte también {#see-also}
+## Ver también {#see-also}
 
 {{see-also}}

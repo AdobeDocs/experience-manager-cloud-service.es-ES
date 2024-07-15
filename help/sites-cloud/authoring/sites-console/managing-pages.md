@@ -18,11 +18,11 @@ AEM Obtenga información sobre cómo administrar las páginas de su sitio web en
 
 >[!TIP]
 >
->Antes de empezar a administrar páginas, familiarícese con [AEM cómo se organizan las páginas en las páginas de la página de.](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+>AEM Antes de empezar a administrar las páginas, familiarícese con [cómo se organizan las páginas en la.](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
 
 >[!TIP]
 >
->Hay varios [métodos abreviados del teclado](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) que puede utilizar desde la consola sitios web para organizar las páginas de forma más eficaz.
+>Hay varios [métodos abreviados de teclado](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) que puede usar desde la consola de sitios web para organizar las páginas de forma más eficaz.
 
 ## Privilegios de acceso {#access-privileges}
 
@@ -32,40 +32,40 @@ Si se producen problemas, le sugerimos que se ponga en contacto con el administr
 
 ## Abrir una página para su edición {#opening-a-page-for-editing}
 
-Después [creación de una página](/help/sites-cloud/authoring/sites-console/creating-pages.md) o navegación a una página existente mediante [el **Sites** consola,](/help/sites-cloud/authoring/sites-console/introduction.md) puede abrirlo para editarlo.
+Después de [crear una página](/help/sites-cloud/authoring/sites-console/creating-pages.md) o de navegar a una página existente usando [la consola de **Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) puede abrirla para editarla.
 
-1. Abrir [el **Sites** consola.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Abra [la consola **Sitios**.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Desplácese hasta encontrar la página que desea editar.
 1. Seleccione la página mediante:
 
    * [Acciones rápidas](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
    * [El modo de selección](/help/sites-cloud/authoring/basic-handling.md#selecting-resources) y la barra de herramientas
 
-1. Haga clic o pulse en **Editar** icono.
+1. Toque o haga clic en el icono **Editar**.
 
    Botón ![Editar](/help/sites-cloud/authoring/assets/edit.png)
 
-1. La página se abre y puede editarla según sea necesario. En función de cómo se haya creado la página seleccionada, la variable **Editar** La acción abrirá el editor correspondiente.
-   * [Editor de página](/help/sites-cloud/authoring/page-editor/introduction.md) AEM - Para páginas creadas con el Editor de páginas de la
-   * [Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md) - Para páginas creadas con el editor universal
+1. La página se abre y puede editarla según sea necesario. Dependiendo de cómo se haya creado la página seleccionada, la acción **Editar** abrirá el editor correspondiente.
+   * AEM [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md) - Para páginas creadas con el Editor de páginas de la página de la
+   * [Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md) - Para páginas creadas con el Editor universal
 
 ## Copiar y pegar una página    {#copying-and-pasting-a-page}
 
 Puede copiar una página y todas sus páginas secundarias en una nueva ubicación:
 
-1. Abrir [el **Sites** consola.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Abra [la consola **Sitios**.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Desplácese hasta encontrar la página que desea copiar.
 1. Seleccione la página mediante lo siguiente:
 
    * [Acciones rápidas](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
    * [El modo de selección](/help/sites-cloud/authoring/basic-handling.md#selecting-resources) y la barra de herramientas
 
-1. Haga clic o pulse en **Copiar** icono de página.
+1. Toque o haga clic en el icono de página **Copiar**.
 
    ![Copiar](/help/sites-cloud/authoring/assets/copy.png)
 
 1. Desplácese hasta la ubicación de la copia nueva de la página.
-1. Seleccione el **Pegar** icono que se ha puesto a disposición.
+1. Seleccione el icono **Pegar** que se ha puesto a disposición.
 
    ![Pegar](/help/sites-cloud/authoring/assets/paste.png)
 
@@ -75,7 +75,7 @@ Puede copiar una página y todas sus páginas secundarias en una nueva ubicació
 
    ![Cuadro de diálogo de pegado](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-1. Seleccione el **Pegar** para confirmar la operación de pegado y crear las páginas nuevas.
+1. Seleccione el botón **Pegar** para confirmar la operación de pegado y crear las páginas nuevas.
 
 >[!NOTE]
 >
@@ -95,20 +95,20 @@ El procedimiento para mover o cambiar el nombre de una página es básicamente e
 
 AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga referencia a la página que se está moviendo o cambiando de nombre. Esto se puede hacer página por página para proporcionar una flexibilidad total.
 
-1. Abrir [el **Sites** consola.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Abra [la consola **Sitios**.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Desplácese hasta encontrar la página que desea mover.
 1. Seleccione la página mediante lo siguiente:
 
    * [Acciones rápidas](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
    * [El modo de selección](/help/sites-cloud/authoring/basic-handling.md#selecting-resources) y la barra de herramientas
 
-1. Haga clic o pulse en **Mover** icono de página para abrir el asistente para mover páginas.
+1. Pulse o haga clic en el icono de página **Mover** para abrir el asistente para mover páginas.
 
    ![Botón Mover](/help/sites-cloud/authoring/assets/move.png)
 
-1. Desde el **Cambiar nombre** del asistente puede realizar una de estas acciones:
+1. En el paso **Rename** del asistente puede:
 
-   * Especifique el nombre que desea que tenga la página después de moverla y seleccione **Siguiente** para continuar.
+   * Especifique el nombre que desea que tenga la página cuando se haya movido y, a continuación, seleccione **Siguiente** para continuar.
    * **Haga clic en Cancelar** para anular el proceso.
 
    ![Mover y cambiar el nombre de la página](/help/sites-cloud/authoring/assets/move-page-rename.png)
@@ -119,7 +119,7 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
    >
    >Si mueve una página a una ubicación en la que ya existe una página con el mismo nombre, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `beach` ya existe, una nueva página con el nombre `beach` se convierte en `beach1`.
 
-1. Desde el **Seleccionar destino** del asistente puede realizar una de estas acciones:
+1. En el paso **Seleccionar destino** del asistente puede:
 
    * Utilice la [vista de columna](/help/sites-cloud/authoring/basic-handling.md#column-view) para desplazarse a la nueva ubicación de la página:
 
@@ -148,14 +148,14 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 
    ![Volver a publicar la página al moverla](/help/sites-cloud/authoring/assets/move-page-republish.png)
 
-1. Haga clic o pulse **Mover** para definir cuándo se debe producir la acción de mover.
+1. Pulse o haga clic en **Mover** para definir cuándo se debe producir la acción de mover.
 
    * **Ahora** almacenará en déclencheur un [trabajo asincrónico](#asynchronous-actions) para mover la página inmediatamente.
-   * **Más tarde** le permitirá programar una fecha para que se procese el movimiento.
+   * **Más tarde** le permitirá programar una fecha para que se procese el traslado.
 
-   ![Definición de cuándo se debe mover](assets/managing-pages-move-page-now-later.png)
+   ![Definir cuándo mover](assets/managing-pages-move-page-now-later.png)
 
-1. Haga clic o pulse **Continuar** para completar el movimiento de página.
+1. Pulse o haga clic en **Continuar** para completar el movimiento de página.
 
 >[!NOTE]
 >
@@ -173,7 +173,7 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 
 Las acciones de movimiento de página siempre se procesan asincrónicamente, lo que permite al usuario continuar la creación en la IU sin impedimentos.
 
-El estado de los trabajos asincrónicos se puede comprobar en la [**Estado de trabajos asincrónicos** tablero](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) en **Navegación global** > **Herramientas** > **Operaciones** > **Trabajos**
+El estado de los trabajos asincrónicos se puede comprobar en [**Estado de los trabajos asincrónicos** panel](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) en **Navegación global** > **Herramientas** > **Operaciones** > **Trabajos**
 
 >[!TIP]
 >
@@ -181,7 +181,7 @@ El estado de los trabajos asincrónicos se puede comprobar en la [**Estado de tr
 
 ### Eliminar una página {#deleting-a-page}
 
-1. Abrir [el **Sites** consola.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Abra [la consola **Sitios**.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Desplácese hasta la página que desee eliminar.
 1. Uso [modo de selección](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) para seleccionar la página requerida, luego utilice **Eliminar** en la barra de herramientas:
 
@@ -194,9 +194,9 @@ El estado de los trabajos asincrónicos se puede comprobar en la [**Estado de tr
    * **¿Quiere archivar las páginas antes de la eliminación?** Si se selecciona, las versiones de las páginas seleccionadas para su eliminación se crearán al eliminarlas.
       * [Las versiones se pueden restaurar más adelante](/help/sites-cloud/authoring/sites-console/page-versions.md).
       * Las páginas eliminadas sin versiones anteriores no se pueden restaurar.
-1. Haga clic o pulse **Cancelar** para anular la acción o **Eliminar** para confirmar la acción.
+1. Pulse o haga clic en **Cancelar** para anular la acción o en **Eliminar** para confirmar la acción.
    * Si la página no tiene referencias, se elimina la página.
-   * Si la página tiene referencias, un cuadro de mensaje le informará de que **Se hace referencia a una o varias páginas.** Puede seleccionar **Forzar eliminación** o **Cancelar**.
+   * Si la página tiene referencias, un cuadro de mensaje le informará de que se hace referencia a **Una o varias páginas.** Puede seleccionar **Forzar eliminación** o **Cancelar**.
 
 >[!NOTE]
 >
@@ -213,7 +213,7 @@ Puede [bloquear/desbloquear una página](/help/sites-cloud/authoring/page-editor
 
 Puede crear carpetas para organizar archivos y páginas.
 
-1. Abrir [el **Sites** consola.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Abra [la consola **Sitios**.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Vaya a la ubicación requerida.
 1. Para abrir la lista de opciones, seleccione **Crear** en la barra de herramientas
 1. Seleccione **Carpeta** para abrir el cuadro de diálogo. Aquí puede indicar el **Nombre** y el **Título**:

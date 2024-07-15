@@ -28,11 +28,11 @@ El panel CDN está disponible en la página de información general de cada prog
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. En el **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)** , pulse o haga clic en el programa cuyo panel CDN desee ver.
+1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, toque o haga clic en el programa cuyo panel de CDN desee ver.
 
-   ![Página Mis programas](assets/my-programs.png)
+   ![Página de mis programas](assets/my-programs.png)
 
-1. En el **Resumen del programa** de su programa, desplácese hacia abajo por debajo de la **Entornos** y **Canalizaciones** para ver las **Rendimiento** Tarjeta de.
+1. En la página **Resumen del programa** de tu programa, desplázate hacia abajo por debajo de las tarjetas de **Entornos** y **Canalizaciones** para ver la tarjeta de **Rendimiento**.
 
    ![Rendimiento](assets/cdn-performance-overview.png)
 
@@ -42,15 +42,15 @@ El panel presenta una puntuación general para el rendimiento de la CDN junto co
 
 ![Panel de rendimiento de CDN](assets/cdn-performance-dashboard.png)
 
-Para obtener más información sobre el rendimiento de su CDN, así como sugerencias sobre cómo mejorarlo, toque o haga clic en **Ver tendencia**.
+Para obtener más información sobre el rendimiento de su CDN y sugerencias sobre cómo mejorarlo, toque o haga clic en **Ver tendencia**.
 
 ![Tendencia de rendimiento](assets/cdn-performance-trend.png)
 
-Haga clic o pulse **Ver** debajo del gráfico para cambiar el lapso de tiempo del gráfico.
+Pulse o haga clic en **Ver** debajo del gráfico para cambiar el lapso de tiempo del gráfico.
 
-Para obtener sugerencias sobre cómo mejorar el rendimiento de la CDN, seleccione la **Recommendations** pestaña.
+Para obtener sugerencias sobre cómo mejorar el rendimiento de su CDN, seleccione la pestaña **Recommendations**.
 
-![Recomendaciones de CDN](assets/cdn-performance-recommendations.png)
+![recomendaciones de CDN](assets/cdn-performance-recommendations.png)
 
 Toque o haga clic en las comillas angulares junto a cualquier recomendación de la lista para ver detalles acerca de los pasos que debe seguir para mejorar y la causa del problema.
 
@@ -66,13 +66,13 @@ La proporción de visitas de caché mide cuántas solicitudes de contenido puede
 Cache Hit Ratio = Cache Hits / (Hits + Misses + Passes + Other)
 ```
 
-* **Visita** : se solicitan los datos de la caché y se encuentran.
-* **Señorita** - Se solicitan datos de la caché y no se encuentran.
-* **Aprobado** - Se solicitan datos de la caché y se establece que no se almacenarán en caché estos datos en ningún caso.
-* **Otros** : Todas las solicitudes de datos de la caché que no coinciden con ningún otro caso.
+* **Visita**: se han solicitado datos de la caché y se han encontrado.
+* **Faltante**: se han solicitado datos de la caché y no se han encontrado.
+* **Paso**: se solicitan datos de la caché y se establece que no se almacenarán en caché estos datos en ningún caso.
+* **Otro**: todas las solicitudes de datos de la caché que no coinciden con ningún otro caso.
 
 Las métricas de caché se actualizan cada 24 horas.
 
 >[!TIP]
 >
->Para obtener más información sobre cómo Cloud Manager y la CDN interactúan con Dispatcher, consulte el documento [AEM Almacenamiento en caché en as a Cloud Service de.](/help/implementing/dispatcher/caching.md)
+>Para obtener más información sobre cómo Cloud Manager y la CDN interactúan con Dispatcher, consulte el documento [Almacenamiento en caché en AEM as a Cloud Service.](/help/implementing/dispatcher/caching.md)

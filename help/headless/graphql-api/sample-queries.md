@@ -1796,7 +1796,7 @@ Esta consulta busca lo siguiente:
 } 
 ```
 
-## Consultas de muestra para el envío de recursos DAM y Dynamic Media {#sample-queries-delivery-DAM-DM}
+## Consultas de muestra para la entrega de DAM y Dynamic Media Assets {#sample-queries-delivery-DAM-DM}
 
 Para la entrega de imágenes optimizadas para la web (de recursos DAM):
 
@@ -1806,9 +1806,9 @@ Para la entrega de imágenes optimizadas para la web (de recursos DAM):
 
 Para la entrega de la URL a un recurso de Dynamic Media
 
-* Consulte [Consulta de muestra para la entrega de recursos de Dynamic Media por dirección URL: referencia de imagen](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+* Ver [Consulta de muestra para la entrega de recursos de Dynamic Media por dirección URL: referencia de imagen](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
-* Consulte [Consulta de muestra para la entrega de recursos de Dynamic Media por dirección URL: varias referencias](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+* Ver [Consulta de muestra para la entrega de recursos de Dynamic Media por dirección URL: varias referencias](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
 ## La estructura del fragmento de contenido de muestra (utilizada con GraphQL) {#content-fragment-structure-graphql}
 

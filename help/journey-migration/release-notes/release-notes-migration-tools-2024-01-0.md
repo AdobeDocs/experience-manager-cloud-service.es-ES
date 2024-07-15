@@ -1,6 +1,6 @@
 ---
-title: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2024.01.0 de
-description: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2024.01.0 de
+title: Notas de la versión de las herramientas de migración de la versión 2024.01.0 de AEM as a Cloud Service
+description: Notas de la versión de las herramientas de migración de la versión 2024.01.0 de AEM as a Cloud Service
 feature: Release Information
 source-git-commit: 77da30bab941e7274c82ea5ce55a3f9c65608f49
 workflow-type: tm+mt
@@ -9,9 +9,9 @@ ht-degree: 7%
 
 ---
 
-# AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2024.01.0 de {#release-notes}
+# Notas de la versión de las herramientas de migración de la versión 2024.01.0 de AEM as a Cloud Service {#release-notes}
 
-AEM Esta página describe las notas de la versión de las herramientas de migración en la versión as a Cloud Service 2024.01.0 de la versión de.
+Esta página describe las notas de la versión de las herramientas de migración de AEM as a Cloud Service 2024.01.0.
 
 ## Herramienta de transferencia de contenido {#ctt-release}
 

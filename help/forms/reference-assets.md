@@ -1,18 +1,18 @@
 ---
-title: Obtener temáticas de referencia y plantillas para formularios adaptables
-description: Utilice la referencia a las temáticas de formularios adaptables, las plantillas y los modelos de datos de formulario que se proporcionan para empezar rápidamente.
+title: ¿Cómo obtener temáticas de referencia y plantillas para formularios adaptables?
+description: Utilice las temáticas de los formularios adaptables de referencia, las plantillas y los modelos de datos de formulario suministrados para empezar rápidamente.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 92870b32-e0d5-4cb4-9b88-81f88ca8ff64
 source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Activos de referencia para Forms como Cloud Service {#reference-themes}
+# Recursos de referencia para Forms as a Cloud Service {#reference-themes}
 
-Puede obtener las temáticas de referencia, las plantillas y el modelo de datos de formulario (FDM) instalando el [Paquete de activos de referencia](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Ayuda a iniciar y acelerar rápidamente su desarrollo de formularios adaptables. Puede usar [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=es) para implementar este paquete en su entorno as a Cloud Service de Forms.
+Puede obtener las temáticas de referencia, plantillas y modelo de datos de formulario (FDM) instalando el [paquete de recursos de referencia](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Ayuda a iniciar y acelerar rápidamente su desarrollo de formularios adaptables. Puede usar [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=es) para implementar este paquete en su entorno as a Cloud Service de Forms.
 Los activos de referencia incluidos en el paquete son:
 
 ## Temáticas {#themes}

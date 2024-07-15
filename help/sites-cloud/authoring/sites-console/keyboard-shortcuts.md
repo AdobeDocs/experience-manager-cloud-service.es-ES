@@ -83,7 +83,7 @@ Puede desactivar los métodos abreviados del teclado en dos ubicaciones:
 
 ## Atajos de teclado para el editor de páginas {#keyboard-shortcuts-for-the-page-editor}
 
-Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se refieren al uso de las consolas, otros, a [edición de páginas](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
+Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos hacen referencia al uso de las consolas y otros, a la [edición de páginas](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
 
 ## Métodos abreviados de teclado para la consola Fragmentos de contenido {#keyboard-shortcuts-for-the-content-fragments-console}
 

@@ -16,7 +16,7 @@ ht-degree: 82%
 
 La consola **Ofertas** quedará obsoleta en el futuro. Así que, a partir de ahora, es:
 
-* Solo disponible para clientes que tengan *legacy* ofertas ya definidas (es decir, preexistentes)
+* Solo está disponible para los clientes que tienen *ofertas heredadas* ya definidas (es decir, preexistentes)
 * Se recomienda convertir estas ofertas heredadas en ofertas de Fragmento de experiencia
    * Tan pronto como se convierta/elimine la última oferta heredada, la consola **Ofertas** ya no estará disponible.
 
@@ -89,7 +89,7 @@ Añada etiquetas, si es necesario.
 
 1. Confirme con **Listo**.
 
-   Si ahora va a la **Ofertas de fragmentos de experiencias** , puede ver el nuevo fragmento de experiencia, junto con sus variaciones asociadas.
+   Si ahora va a la consola **Ofertas de fragmentos de experiencias**, podrá ver el nuevo fragmento de experiencias, junto con sus variaciones asociadas.
 
 ### Segmentación con la plantilla de ofertas {#targeting-offers-template}
 
@@ -129,11 +129,11 @@ Cree una marca con la que se asocien sus ofertas. Abra una marca en la consola d
 
 Cuando crea una marca mediante la consola Ofertas, también aparece en la [Consola Actividades](/help/sites-cloud/authoring/personalization/activities.md) donde puede añadir y administrar actividades para la marca.
 
-1. En la consola de navegación, seleccione **Personalización** > **Ofertas**.
+1. En la consola de navegación, seleccione **Personalization** > **Ofertas**.
 
    ![Navegación a la consola Ofertas](/help/sites-cloud/authoring/assets/offers-navigation.png)
 
-1. Seleccionar **Crear** y luego **Crear** **Marca**.
+1. Seleccione **Crear** y luego **Crear** **Marca**.
 1. Seleccione la plantilla de marca y seleccione **Siguiente**.
 1. Escriba un título para la marca tal como desea que aparezca en las consolas Ofertas y Actividades. De forma opcional, escriba o seleccione una o varias etiquetas para asociarlas a la marca.
 1. Seleccione **Crear**.
@@ -143,7 +143,7 @@ Cuando crea una marca mediante la consola Ofertas, también aparece en la [Conso
 Añada una carpeta a la biblioteca de ofertas de una marca para organizar y almacenar las ofertas. Puede crear una carpeta debajo de la marca o de otras carpetas.
 
 1. En la consola Ofertas, abra la ubicación en la que desea crear la carpeta. Por ejemplo, abra la marca para crear una carpeta de nivel superior o abra otra carpeta de la biblioteca.
-1. Seleccionar **Crear** > **Crear carpeta u oferta**.
+1. Seleccione **Crear** > **Crear carpeta u oferta**.
 
    ![Creación de la carpeta de ofertas](/help/sites-cloud/authoring/assets/offers-create-folder.png)
 
@@ -161,12 +161,12 @@ Añada una oferta a la biblioteca de ofertas de una marca para que se pueda aña
 Después de crear la oferta, puede abrirla para crear el contenido.
 
 1. En la consola Ofertas, abra la ubicación donde desea crear la oferta. Por ejemplo, abra la marca para crear una oferta de nivel superior o abra una carpeta en la biblioteca.
-1. Seleccionar **Crear** > **Crear carpeta u oferta**.
+1. Seleccione **Crear** > **Crear carpeta u oferta**.
 
    ![Creación de la carpeta de ofertas](/help/sites-cloud/authoring/assets/offers-create-folder.png)
 
-1. Seleccione el **Página de oferta** y, a continuación, seleccione **Siguiente**.
-1. Escriba un título para la oferta y, opcionalmente, seleccione o escriba una o más etiquetas para asociarlas a la oferta y, a continuación, seleccione **Crear**.
+1. Seleccione la plantilla **Página de ofertas** y, a continuación, seleccione **Siguiente**.
+1. Escriba un título para la oferta y, opcionalmente, seleccione o escriba una o más etiquetas para asociarlas a la oferta. Luego, seleccione **Crear**.
 1. En el cuadro de diálogo de confirmación, para abrir la oferta y editarla, seleccione **Abrir página**.
 
 ### Edición de una oferta {#editing-an-offer}
@@ -175,7 +175,7 @@ Abra una oferta y edite el contenido tal como desea que aparezca en las experien
 
 Puede abrir una oferta desde una carpeta de una biblioteca de ofertas o desde los resultados de búsqueda. También puede abrir una oferta desde una experiencia que utilice la oferta.
 
-1. En la consola Ofertas, seleccione el icono situado junto a la oferta y seleccione **Editar**.
+1. En la consola Ofertas, seleccione el icono que hay junto a la oferta y seleccione **Editar**.
 1. Añada los componentes a la oferta y edite el contenido como de costumbre.
 
 ### Eliminación de una oferta {#deleting-an-offer}
@@ -184,14 +184,14 @@ Elimine una oferta cuando ya no la necesite. Cuando intente eliminar una oferta 
 
 Puede eliminar una oferta mientras ve el contenido de cualquiera de las carpetas en una biblioteca de ofertas o los resultados de búsqueda.
 
-1. En la consola Ofertas, seleccione el icono situado junto a la oferta y seleccione **Eliminar**.
+1. En la consola de Ofertas, seleccione el icono situado junto a la oferta y seleccione **Eliminar**.
 
    Seleccione la oferta y seleccione **Eliminar**.
 
 1. En el cuadro de diálogo que aparece, seleccione **Eliminar** para confirmar la eliminación.
 1. Si la oferta se utiliza en una o más experiencias, aparece un cuadro de diálogo para indicar que se hace referencia a la oferta:
 
-   * Para eliminar la oferta y eliminarla de las experiencias, seleccione **Forzar eliminación**.
+   * Para eliminar la oferta y quitarla de las experiencias, seleccione **Forzar eliminación**.
    * Para conservar la oferta, seleccione **Cancelar**.
 
 ### Búsqueda de ofertas {#searching-for-offers}

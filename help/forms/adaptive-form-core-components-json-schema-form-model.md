@@ -8,7 +8,7 @@ exl-id: 185b12bc-cea9-45c8-9b57-dc313bd0cfaa
 source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
 source-wordcount: '1347'
-ht-degree: 82%
+ht-degree: 86%
 
 ---
 
@@ -37,7 +37,7 @@ Las funciones principales del uso de un esquema JSON son:
 * La estructura del JSON se muestra como un árbol en la pestaña Buscador de contenido en el modo de creación de un formulario adaptable. Puede arrastrar y agregar un elemento de la jerarquía JSON al formulario adaptable en función de los componentes principales.
 * Puede rellenar previamente el formulario utilizando un JSON que cumpla con el esquema asociado.
 * En el envío, los datos especificados por el usuario se envían como JSON, que se adhiere al esquema asociado.
-* También puede crear el formulario basado en el esquema JSON según las especificaciones del [Versión 2012-20](https://json-schema.org/draft/2020-12/release-notes).
+* También puede crear el formulario basado en el esquema JSON según las especificaciones de la [versión 2012-20](https://json-schema.org/draft/2020-12/release-notes).
 
 Un esquema JSON consta de tipos de elementos simples y complejos. Los elementos tienen atributos que agregan reglas al elemento. Cuando estos elementos y atributos se arrastran a un formulario adaptable, se asignan automáticamente a los componentes del formulario adaptable correspondientes.
 
@@ -430,7 +430,7 @@ El formulario adaptable utiliza la información disponible en el esquema JSON pa
 
 Los cambios clave de las especificaciones del esquema JSON V4 a la versión 2020-12 son los siguientes:
 * El ID se ha declarado como `$id`
-* se declara como `$defs`
+* las definiciones se han declarado como `$defs`
 
 ### Definiciones de esquema reutilizables {#reusable-schema-definitions}
 
@@ -893,11 +893,11 @@ Tiene dos opciones:
 
 La extensión del archivo de esquema JSON debe ser .schema.json. Por ejemplo, &lt;filename>.schema.json.
 
-**Es `aem:afProperties` ¿es compatible como parte del esquema JSON en Forms adaptable basado en componentes principales?**
+**¿Se admite `aem:afProperties` como parte del esquema JSON en Forms adaptable basado en componentes principales?**
 
 No, `aem:afProperties` no es compatible con los componentes principales. Esta propiedad solo se admite para componentes de base.
 
-## Ver también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}
 

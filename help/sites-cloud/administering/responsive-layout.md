@@ -14,20 +14,20 @@ ht-degree: 3%
 
 # Configuración del contenedor y el modo de diseño {#configuring-layout-container-and-layout-mode}
 
-[Diseño interactivo](/help/sites-cloud/authoring/page-editor/responsive-layout.md) es un mecanismo para realizar [diseño web adaptable.](https://en.wikipedia.org/wiki/Responsive_web_design) Esto permite al autor del contenido crear páginas web con un diseño y dimensiones dependientes de los dispositivos que utilizan los usuarios.
+[Diseño adaptable](/help/sites-cloud/authoring/page-editor/responsive-layout.md) es un mecanismo para realizar [diseño web adaptable.](https://en.wikipedia.org/wiki/Responsive_web_design): esto permite al autor del contenido crear páginas web con un diseño y dimensiones dependientes de los dispositivos que utilizan sus usuarios.
 
 AEM realiza un diseño interactivo para sus páginas mediante una combinación de diferentes mecanismos:
 
-* **[Contenedor de diseño](/help/sites-cloud/authoring/page-editor/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** : Este componente proporciona un sistema de párrafos de cuadrícula que le permite agregar y colocar componentes dentro de una cuadrícula adaptable.
+* **[Contenedor de diseño](/help/sites-cloud/authoring/page-editor/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)**: este componente proporciona un sistema de párrafos de cuadrícula que le permite agregar y colocar componentes en una cuadrícula adaptable.
    * Se puede utilizar como parsys predeterminado para la página o estar disponible para los autores en el explorador de componentes.
-   * El valor predeterminado **Contenedor de diseño** el componente se define en `/libs/wcm/foundation/components/responsivegrid`.
+   * El componente **Contenedor de diseño** predeterminado se define en `/libs/wcm/foundation/components/responsivegrid`.
    * Puede definir contenedores de diseño:
       * Como un componente que el usuario puede agregar a una página.
       * Como parsys predeterminado para la página.
       * Como componente y como parsys predeterminado.
          * Puede tener el contenedor de diseño como estándar para la página, a la vez que permite al usuario agregar más contenedores de diseño dentro de esta página; por ejemplo, para lograr el control de columna.
-* **[Modo de diseño](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)** : Una vez que el contenedor de diseño esté colocado en la página, puede utilizar el **Diseño** modo para colocar contenido en la cuadrícula adaptable.
-* **[Emulador](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)** - Esto le permite crear y editar sitios web adaptables que reorganizan el diseño según el tamaño del dispositivo o la ventana mediante el cambio de tamaño de los componentes de forma interactiva. A continuación, el usuario puede ver cómo se representa el contenido mediante el emulador.
+* **[Modo de diseño](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)**: una vez que el contenedor de diseño esté colocado en la página, puede usar el modo **Diseño** para colocar el contenido en la cuadrícula adaptable.
+* **[Emulador](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)**: esto le permite crear y editar sitios web interactivos que reorganizan el diseño según el tamaño del dispositivo o la ventana, mediante el redimensionado activo de los componentes. A continuación, el usuario puede ver cómo se representa el contenido mediante el emulador.
 
 Con estos mecanismos de cuadrícula adaptable puede hacer lo siguiente:
 
@@ -38,19 +38,19 @@ Con estos mecanismos de cuadrícula adaptable puede hacer lo siguiente:
 
 >[!NOTE]
 >
->Al crear un sitio desde el [Arquetipo de proyecto](#addlink) o desde el [Plantilla de sitio estándar](#addlink), el diseño interactivo suele estar configurado. De lo contrario, debe [activar el componente Contenedor de diseño](#enable-the-layout-container-component-for-page) para sus páginas.
+>Al crear un sitio a partir del [Tipo de archivo del proyecto](#addlink) o de la [Plantilla de sitio estándar](#addlink), el diseño interactivo suele estar configurado. De lo contrario, debe [activar el componente Contenedor de diseño](#enable-the-layout-container-component-for-page) para sus páginas.
 
 ## Activación del emulador {#enabling-emulator}
 
-El [Arquetipo de proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) y el [Plantilla de sitio estándar](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template) ya están habilitados para utilizar el emulador. Si ha desarrollado su propio contenido no basado en los componentes principales o el tipo de archivo, consulte el documento [Diseño interactivo](/help/implementing/developing/introduction/responsive-design.md) para obtener más información sobre cómo desarrollar los componentes mientras se aprovechan estas funciones.
+El [tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) y la [plantilla de sitio estándar](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template) ya están habilitados para usar el emulador. Si ha desarrollado su propio contenido no basado en los componentes principales o el tipo de archivo, consulte el documento [Diseño interactivo](/help/implementing/developing/introduction/responsive-design.md) para obtener detalles sobre cómo desarrollar los componentes mientras aprovecha estas funciones.
 
 ## Activar el modo Diseño para su sitio {#activate-layout-mode-for-your-site}
 
-**Diseño** El modo permite utilizar el emulador para ajustar el diseño del contenido para diferentes dispositivos. El sitio de muestra WKND ya está habilitado para **Diseño** modo. Siga estos pasos para habilitar su propio sitio.
+El modo **Diseño** le permite usar el emulador para ajustar el diseño del contenido para diferentes dispositivos. El sitio de muestra WKND ya está habilitado para el modo **Diseño**. Siga estos pasos para habilitar su propio sitio.
 
 ### Configurar puntos de interrupción {#configure-breakpoints}
 
-Los puntos de interrupción son vitales para un diseño interactivo y definen cómo y cuándo se ajusta el contenido al dispositivo de destino. Sin embargo, tenga cuidado, ya que cada punto de interrupción que introduzca generará trabajo adicional para que los autores se adapten al contenido. Muchas veces, dos puntos de interrupción pueden ser suficientes, incluido el punto de interrupción predeterminado, que siempre está ahí. El Adobe recomienda no crear más de tres puntos de interrupción incluidos los predeterminados, es decir, no más de dos nodos por debajo `cq:responsive/breakpoint`.
+Los puntos de interrupción son vitales para un diseño interactivo y definen cómo y cuándo se ajusta el contenido al dispositivo de destino. Sin embargo, tenga cuidado, ya que cada punto de interrupción que introduzca generará trabajo adicional para que los autores se adapten al contenido. Muchas veces, dos puntos de interrupción pueden ser suficientes, incluido el punto de interrupción predeterminado, que siempre está ahí. El Adobe recomienda no crear más de tres puntos de interrupción, incluido el predeterminado, es decir, no más de dos nodos por debajo de `cq:responsive/breakpoint`.
 
 * Los puntos de interrupción tienen un título y un ancho:
    * El título describe la agrupación de dispositivos genéricos, con orientación si es necesario.
@@ -79,9 +79,9 @@ Debido a la herencia, solo debe hacerlo para la página raíz del contenido.
 1. Con el CRXDE Lite, vaya a:
 
    * Definición de la plantilla.
-   * El `jcr:content` de la página.
+   * El nodo `jcr:content` de su página.
 
-1. En `jcr:content` cree el nodo:
+1. En `jcr:content`, cree el nodo:
 
    * Nombre: `cq:responsive`
    * Tipo: `nt:unstructured`
@@ -100,7 +100,7 @@ Debido a la herencia, solo debe hacerlo para la página raíz del contenido.
 
 #### Configurar puntos de interrupción mediante XML {#configuring-breakpoints-using-xml}
 
-Los puntos de interrupción se encuentran dentro de `<jcr:content>` de la sección `.context.html` en la carpeta de plantilla (o contenido) adecuada.
+Los puntos de interrupción se encuentran dentro de la sección `<jcr:content>` de `.context.html` en la carpeta de plantilla (o contenido) adecuada.
 
 Una definición de ejemplo:
 
@@ -115,7 +115,7 @@ Una definición de ejemplo:
 
 ## Habilitar el cambio de tamaño del componente para la página {#enable-component-resizing-for-the-page}
 
-Cambio de tamaño de componentes en **Diseño** El modo es una parte importante del diseño interactivo, que se puede utilizar en el sitio de muestra de WKND. Siga estos pasos para habilitar su propio sitio.
+Cambiar el tamaño de los componentes en el modo **Layout** es una parte importante del diseño interactivo que se puede utilizar en el sitio de muestra WKND. Siga estos pasos para habilitar su propio sitio.
 
 ### Definir contenedor de diseño como parsys principal {#set-layout-container-as-main-parsys}
 
@@ -148,7 +148,7 @@ Los dos ejemplos siguientes ilustran la definición:
 
 AEM Utiliza LESS para generar partes del CSS necesario, que deben incluirse para los proyectos.
 
-Debe crear un [biblioteca de cliente](/help/implementing/developing/introduction/clientlibs.md) para proporcionar llamadas de función y configuración adicionales. El siguiente extracto LESS es un ejemplo del mínimo que debe agregar al proyecto:
+Debe crear una [biblioteca de cliente](/help/implementing/developing/introduction/clientlibs.md) para proporcionar configuraciones y llamadas a funciones adicionales. El siguiente extracto LESS es un ejemplo del mínimo que debe agregar al proyecto:
 
 ```java
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
@@ -203,7 +203,7 @@ Cualquier cambio de tamaño de un componente dentro de la cuadrícula almacenar�
 * `afteredit`
 * `afterchildedit`
 
-Para cambiar el tamaño y actualizar correctamente el contenido de una imagen adaptable incluida en una cuadrícula adaptable, debe agregar una `afterEdit` establezca en `REFRESH_PAGE` escucha en el `EditConfig` de cada componente contenido.
+Para cambiar el tamaño y actualizar correctamente el contenido de una imagen adaptable incluida en una cuadrícula adaptable, debe agregar un objeto de escucha `afterEdit` establecido en `REFRESH_PAGE` al archivo `EditConfig` de cada componente contenido.
 
 Por ejemplo:
 
@@ -224,7 +224,7 @@ Para que el diseño sea eficaz, el autor del contenido debe poder arrastrar inst
 Para permitir que los autores agreguen más cuadrículas adaptables a las páginas de contenido, debe habilitar el componente Contenedor de diseño para su página. Para ello, utilice uno de los métodos siguientes:
 
 * **A través del entorno de creación** - [Edite las plantillas de página](/help/sites-cloud/authoring/sites-console/templates.md) para habilitar el contenedor de diseño para una página.
-* **Definición del componente** - Uso `allowedComponent` o una inclusión estática al definir el componente.
+* **Definición del componente** - Use `allowedComponent` o una inclusión estática al definir el componente.
 
 ### Configuración de la cuadrícula del contenedor de diseño {#configure-the-grid-of-the-layout-container}
 

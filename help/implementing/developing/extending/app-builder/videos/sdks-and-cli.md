@@ -26,6 +26,6 @@ Obtenga información acerca del SDK de Adobe I/O y cómo se utiliza para desarro
 
 ## CLI
 
-Obtenga información acerca de la CLI de Adobe I/O y cómo utilizarla para el desarrollo del Generador de aplicaciones.
+Obtenga información acerca de la CLI de Adobe I/O y cómo utilizarla para el desarrollo de App Builder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339167/?quality=12&learn=on)

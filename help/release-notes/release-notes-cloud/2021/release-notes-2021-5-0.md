@@ -24,24 +24,24 @@ En la siguiente sección se describen las notas de la versión generales de la v
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 es el 27 de mayo de 2021.
+La fecha de versión de [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 es el 27 de mayo de 2021.
 La de la siguiente versión (2021.6.0) será el 28 de junio de 2021.
 
-## AEM Base as a Cloud Service {#foundation}
+## AEM as a Cloud Service Foundation {#foundation}
 
-### AEM Novedades en la Fundación as a Cloud Service de la {#what-is-new-foundation}
+### Novedades de AEM as a Cloud Service Foundation {#what-is-new-foundation}
 
 * [Canal de prelanzamiento](/help/release-notes/prerelease.md): Previsualice las próximas funciones durante un mes completo antes de que se activen en la producción.
 
-* [Desaprobación de API](/help/release-notes/deprecated-removed-features.md)AEM : hay disponible una lista de las API obsoletas más recientes para el as a Cloud Service de la.
+* [Desaprobación de API](/help/release-notes/deprecated-removed-features.md): hay disponible una lista de las API obsoletas más recientes para AEM as a Cloud Service.
 
-* [AEM Complemento Maven de SDK Build Analyzer as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=es): Actualice sus proyectos de Maven a la versión más reciente, que incluye una comprobación de API de Java en desuso y otras mejoras.
+* [Complemento Maven del analizador de compilaciones de SDK de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=es): Actualice sus proyectos maven a la versión más reciente, que incluye una comprobación de API de Java obsoletas y otras mejoras.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Novedades de [!DNL Sites] {#what-is-new-sites}
 
-* Próximamente podrá verificar el contenido de una nueva [Previsualizar nivel](/help/sites-cloud/authoring/sites-console/previewing-content.md) para simular la apariencia final de la experiencia como lo haría en el nivel de publicación. Esto se habilita mediante el asistente de publicación administrada de AEM Sites, que ahora le permite elegir un destino de publicación entre Publicar o Vista previa. Se puede acceder a las experiencias en Vista previa a través de una dirección URL dedicada. Después de la validación en Vista previa, el contenido se puede publicar de Autor a Publicar como de costumbre. AEM La activación del servicio Vista previa en entornos as a Cloud Service de la se implementará de forma gradual en las próximas semanas.
+* Pronto podrá verificar el contenido en un nuevo [nivel de vista previa](/help/sites-cloud/authoring/sites-console/previewing-content.md) para simular la apariencia final de la experiencia como lo haría en el nivel de Publish. Esto se habilita mediante el asistente de publicación administrada de AEM Sites, que ahora le permite elegir un destino de publicación entre Publish o Vista previa. Se puede acceder a las experiencias en Vista previa a través de una dirección URL dedicada. Después de la validación en Vista previa, el contenido se puede publicar de Autor a Publish como de costumbre. La activación del servicio Vista previa en entornos de AEM as a Cloud Service se implementará gradualmente en las próximas semanas.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -55,17 +55,17 @@ La de la siguiente versión (2021.6.0) será el 28 de junio de 2021.
 
 * Los esquemas de metadatos se pueden aplicar directamente a las propiedades de la carpeta.
 
-  ![Añadir esquema de metadatos de las propiedades de carpeta](/help/assets/assets/metadata-schema-folder-properties.png)
+  ![Agregar esquema de metadatos desde las propiedades de la carpeta](/help/assets/assets/metadata-schema-folder-properties.png)
 
 * La herramienta Ingestor masivo de datos permite añadir metadatos durante una ingesta masiva.
 
-* Las mejoras en la experiencia del usuario muestran el número de recursos presentes en una carpeta. Para más de 1000 recursos en una carpeta, [!DNL Assets] muestra más de 1000.
+* Las mejoras en la experiencia del usuario muestran el número de recursos presentes en una carpeta. Para más de 1000 recursos en una carpeta, [!DNL Assets] muestra 1000+.
 
   ![El número de recursos de una carpeta se muestra en la interfaz](/help/assets/assets/browse-folder-number-of-assets.png)
 
 ### Errores corregidos en [!DNL Assets] {#assets-bugs-fixed}
 
-* Al cargar archivos muy grandes, se bloquea el [!DNL Experience Manager desktop app]. (CQ-4320942)
+* Si se cargan archivos muy grandes, se bloqueará [!DNL Experience Manager desktop app]. (CQ-4320942)
 * Las opciones de la barra de herramientas son diferentes cuando se selecciona la misma colección desde una carpeta y cuando se selecciona desde un resultado de búsqueda. (CQ-4321406)
 
 #### Novedades de Dynamic Media {#what-is-new-dm}
@@ -103,7 +103,7 @@ Esta sección describe las notas de la versión para Cloud Manager en AEM as a C
 
 ### Fecha de lanzamiento {#release-date-cm-may}
 
-AEM La fecha de lanzamiento de Cloud Manager en la as a Cloud Service 2021.5.0 de es el 6 de mayo de 2021.
+La fecha de lanzamiento de Cloud Manager en AEM as a Cloud Service 2021.5.0 es el 6 de mayo de 2021.
 La próxima versión está planificada para el viernes, 03 de junio de 2021.
 
 ### Novedades {#what-is-new-may}
@@ -150,7 +150,7 @@ La fecha de lanzamiento de la herramienta de transferencia de contenido v1.4.6 e
 
 * Se agregó una nueva instrucción de registro al registro de errores de inicio rápido si el usuario no tiene permiso de ejecución en el ejecutable Java.
 
-* Cuando un usuario elimina un conjunto de migración de la interfaz de usuario de CTT, donde se realizó una extracción, la variable `tmp` La carpeta asociada con ese conjunto de migración se elimina para ahorrar espacio.
+* Cuando un usuario elimina un conjunto de migración de la interfaz de usuario de CTT, donde se realizó una extracción, la carpeta `tmp` asociada con ese conjunto de migración se elimina para ahorrar espacio.
 
 ### Correcciones de errores {#bug-fixes-ctt-latest}
 
@@ -170,7 +170,7 @@ La fecha de lanzamiento de la herramienta de transferencia de contenido v1.4.0 e
 ### Correcciones de errores {#bug-fixes-ctt-may}
 
 * Varias correcciones de errores relacionadas con la función de actualización automática en la interfaz de usuario de la herramienta de transferencia de contenido.
-* Herramienta de transferencia de contenido con `wipe=true` generó un índice de contador incorrecto en el destino. Esto se ha corregido.
+* La herramienta de transferencia de contenido con `wipe=true` generó un índice de contador incorrecto en el destino. Esto se ha corregido.
 
 ## Complemento de Commerce {#cloud-services-commerce}
 

@@ -11,7 +11,7 @@ exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
 source-git-commit: 973cec704b5e8f34e3b2c448fc10e09226ffa933
 workflow-type: tm+mt
 source-wordcount: '308'
-ht-degree: 2%
+ht-degree: 12%
 
 ---
 
@@ -30,11 +30,11 @@ Al crear un conjunto de giros o de imágenes, o al cargar PDF para la extracció
 
 | Recurso: tipo de límite | Práctica recomendada | Límite impuesto |
 | --- | --- | --- |
-| **Imagen** - Número de recortes inteligentes por imagen | 5 | 100 |
-| **Todos los conjuntos** - Número de recursos duplicados por conjunto | No hay duplicados | 20 |
-| **Todos los conjuntos** - Número máximo de recursos por conjunto | 5-10 imágenes por conjunto | 1000 |
-| **Conjunto de giros** - Número máximo de filas/columnas por conjunto 2D | 12 a 18 imágenes por conjunto | 1000 |
-| **PDF** - Número máximo de páginas para que un PDF se considere para la extracción |  | 100 (para todos los PDF) |
+| **Imagen** - Cantidad de recortes inteligentes por imagen | 5 | 100 |
+| **Todos los conjuntos**: número de recursos duplicados por conjunto | No hay duplicados | 20 |
+| **Todos los conjuntos**: número máximo de recursos por conjunto | 5-10 imágenes por conjunto | 1000 |
+| **Conjunto de giros**: número máximo de filas/columnas por conjunto 2D | 12 a 18 imágenes por conjunto | 1000 |
+| **PDF**: número máximo de páginas para que un PDF se considere para la extracción |  | 100 (para todos los PDF) |
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
@@ -57,7 +57,7 @@ Dynamic Media no admite las siguientes combinaciones de explorador web y sistema
 <!-- CQDOC-19433 (original ticket)
 and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
 
-A partir del 30 de abril de 2024, Adobe Dynamic Media dejará de ofrecer asistencia para lo siguiente:
+A partir del miércoles, 30 de abril de 2024, Adobe Dynamic Media deja de ofrecer asistencia para lo siguiente:
 
 * SSL (Secure Socket Layer) 2.0
 * SSL 3.0

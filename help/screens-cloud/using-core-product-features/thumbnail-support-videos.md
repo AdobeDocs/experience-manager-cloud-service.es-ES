@@ -1,6 +1,6 @@
 ---
-title: Compatibilidad con miniaturas para vídeos en pantallas as a Cloud Service
-description: En esta página se describe cómo añadir compatibilidad con miniaturas para vídeos en Pantallas as a Cloud Service.
+title: Compatibilidad con miniaturas para vídeos en Screens as a Cloud Service
+description: En esta página se describe cómo agregar compatibilidad con miniaturas para vídeos en Screens as a Cloud Service.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
 feature: Developing Screens
@@ -33,19 +33,19 @@ La compatibilidad con miniaturas permite hacer lo siguiente:
 
 >[!IMPORTANT]
 >**Requisitos previos**
->Antes de aprender a utilizar miniaturas para vídeos, asegúrese de aprender a crear representaciones de vídeo para canales en proyectos as a Cloud Service de Screens. Consulte [Creación de representaciones de vídeo en Screens as a Cloud Service](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md).
+>Antes de aprender a utilizar miniaturas para vídeos, asegúrese de aprender a crear representaciones de vídeo para canales en Screens as a Cloud Service project. Consulte [Creación de representaciones de vídeo en Screens as a Cloud Service](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md).
 
 Siga los pasos a continuación para utilizar las miniaturas en los vídeos:
 
 1. Vaya a un canal de Screens existente o cree un canal.
 
    >[!NOTE]
-   >Para obtener información sobre cómo crear un canal y añadir contenido a un canal, consulte [Creación y administración de un canal en Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html).
+   >Para obtener información sobre cómo crear un canal y agregar contenido a un canal, consulte [Creación y administración de un canal en Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html).
 
 1. Seleccione el canal. En la barra de acciones, haga clic en **Editar** para abrir el editor.
 
 
-   ![Botón Editar de la barra de acciones](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png).
+   ![Botón Editar en la barra de acciones](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png).
 
 1. Añada o edite un componente de vídeo existente, como se muestra en la figura siguiente.
 
@@ -53,17 +53,17 @@ Siga los pasos a continuación para utilizar las miniaturas en los vídeos:
 
 1. Añada o edite un componente de vídeo existente, como se muestra en la figura siguiente.
 
-1. Seleccione el vídeo y haga clic en Configurar (*llave*) icono para abrir las propiedades de vídeo.
+1. Seleccione el vídeo y haga clic en el icono Configurar (*wrench*) para abrir las propiedades del vídeo.
 
-   ![Imagen del recurso de vídeo seleccionado con una flecha que señala al icono Configurar, representada como una llave inglesa. en la barra de herramientas](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png).
+   ![Imagen del recurso de vídeo seleccionado con una flecha que señala al icono Configurar y que se representa como una llave inglesa. en la barra de herramientas ](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png).
 
-1. El **Vídeo** se abrirá un cuadro de diálogo en el que podrá ver la **Miniatura** zona de colocación.
+1. Se abre el cuadro de diálogo **Vídeo** en el que puede ver la zona de colocación de **Miniatura**.
 
    ![Cuadro de diálogo de vídeo que muestra la imagen del recurso de vídeo y el cuadro desplegable Miniatura](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png).
 
-1. Arrastre y suelte una imagen desde el selector de recursos hasta el **Miniatura** zona de colocación y haga clic en **Listo**.
+1. Arrastre y suelte una imagen del selector de recursos en la zona de colocación de **Miniatura** y haga clic en **Listo**.
 
-   ![Selector de imagen de recurso que se muestra detrás del cuadro de diálogo Vídeo con el recurso de imagen en el cuadro desplegable Miniatura](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png).
+   ![Selector de imagen de recurso mostrado detrás del cuadro de diálogo Vídeo con recurso de imagen mostrado en el cuadro desplegable Miniatura](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png).
 
 1. Haga clic en **Vista previa**.
 

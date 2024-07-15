@@ -7,7 +7,7 @@ exl-id: 9d677bee-50ca-460e-b503-6b7799900735
 source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Adobe’s PDF Services API lets create, combine, export, and extract data from P
 
 Forms as a Cloud Service proporciona opciones para almacenar contenido en un sistema de almacenamiento externo como un almacenamiento de blobs, Database o un servicio de almacenamiento. También puede almacenar datos de flujos de trabajo en proceso (datos de variables de flujos de trabajo de AEM) que contengan elementos de datos personales confidenciales (SPD) en un repositorio administrado por el cliente para un procesamiento seguro. Adobe recomienda almacenar los datos confidenciales únicamente en un almacenamiento administrado por el cliente.
 
-Puede usar el complemento **Conector de almacenamiento unificado** para conectarse a Blob Storage y **Modelo de datos de formulario (FDM)** para conectarse a bases de datos o servicios back-end (RESTful, SOAP, Azure Blob Storage y más).
+Puede usar el **conector de almacenamiento unificado** para conectarse a Blob Storage y el **modelo de datos de formulario (FDM)** para conectarse a bases de datos o a servicios back-end (RESTful, SOAP, Azure Blob Storage, etc.).
 
 ### Servicios de documentos
 

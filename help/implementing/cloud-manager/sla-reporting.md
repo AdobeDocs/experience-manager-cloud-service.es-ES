@@ -25,7 +25,7 @@ Los datos de informes de SLA están disponibles para cada programa de producció
 
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
 
-1. Con el panel de navegación lateral, vaya al **Informes** de la pestaña **Información general** página.
+1. Con el panel de navegación lateral, vaya a la pestaña **Informes** desde la página **Información general**.
 
 1. Haga clic en el año deseado para ver los datos de SLA en gráficos.
 

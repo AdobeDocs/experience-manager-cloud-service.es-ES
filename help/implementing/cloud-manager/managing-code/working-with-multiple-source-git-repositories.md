@@ -22,7 +22,7 @@ En lugar de trabajar directamente con el repositorio de Git de Cloud Manager, [l
 
 Dependiendo de dónde esté alojado el repositorio de Git del cliente, se podría utilizar una acción de GitHub o una solución de integración continua como Jenkins para configurar la automatización. Con la automatización configurada, cada inserción en un repositorio de Git propiedad del cliente se puede reenviar automáticamente al repositorio de Git de Cloud Manager.
 
-Aunque esta automatización para un único repositorio de Git propiedad del cliente es sencilla, la configuración de este repositorio para varios repositorios requiere una configuración inicial. El contenido de varios repositorios de Git debe asignarse a distintos directorios dentro del repositorio de Git de Cloud Manager único. El repositorio de Git de Cloud Manager debe aprovisionarse con una raíz de Maven `pom.xml`, enumerando los diferentes subproyectos en la sección de módulos.
+Aunque esta automatización para un único repositorio de Git propiedad del cliente es sencilla, la configuración de este repositorio para varios repositorios requiere una configuración inicial. El contenido de varios repositorios de Git debe asignarse a distintos directorios dentro del repositorio de Git de Cloud Manager único. El repositorio de Git de Cloud Manager debe aprovisionarse con un Maven raíz `pom.xml`, que enumere los diferentes subproyectos en la sección de módulos.
 
 El siguiente es un ejemplo `pom.xml` para dos repositorios de Git propiedad del cliente.
 
@@ -48,21 +48,21 @@ El siguiente es un ejemplo `pom.xml` para dos repositorios de Git propiedad del 
 </project>
 ```
 
-Tal raíz `pom.xml` se inserta en una rama del repositorio de Git de Cloud Manager. A continuación, los dos proyectos deben configurarse para que reenvíen automáticamente los cambios al repositorio de Git de Cloud Manager.
+Tal raíz `pom.xml` se inserta en una rama del repositorio de Git de Cloud Manager. A continuación, se deben configurar los dos proyectos para que reenvíen automáticamente los cambios al repositorio de Git de Cloud Manager.
 
 Una posible solución sería la siguiente:
 
 1. Una acción de GitHub se puede activar si se inserta una rama en el proyecto A.
-1. La acción extrae el proyecto A y el repositorio de Git de Cloud Manager y copia todo el contenido del proyecto A en el directorio `project-a` en el repositorio de Git de Cloud Manager.
+1. La acción extrae el proyecto A y el repositorio de Git de Cloud Manager y copia todo el contenido del proyecto A en el directorio `project-a` del repositorio de Git de Cloud Manager.
 1. A continuación, la acción confirma e inserta el cambio.
 
-Por ejemplo, un cambio en la rama principal del proyecto A se inserta automáticamente en la rama principal del repositorio de Git de Cloud Manager. Podría haber una asignación entre ramas, como una inserción, a una rama llamada `dev` en el proyecto A se inserta una rama denominada `development` en el repositorio de Git de Cloud Manager. Se requieren pasos similares para el proyecto B.
+Por ejemplo, un cambio en la rama principal del proyecto A se inserta automáticamente en la rama principal del repositorio de Git de Cloud Manager. Podría haber una asignación entre ramas, como si una inserción en una rama denominada `dev` del proyecto A se inserta una rama denominada `development` en el repositorio de Git de Cloud Manager. Se requieren pasos similares para el proyecto B.
 
 Según la estrategia de ramificación y los flujos de trabajo, la sincronización se puede configurar para diferentes ramas. Si el repositorio de Git utilizado no proporciona un concepto similar a las acciones de GitHub, también es posible una integración mediante Jenkins (o similar). En este caso, un enlace web activa un trabajo Jenkins que hace el trabajo.
 
 Siga estos pasos para poder agregar un tercer origen o repositorio nuevo.
 
-1. Agregue una acción de GitHub al nuevo repositorio que inserta cambios de ese repositorio en el repositorio de Git de Cloud Manager.
+1. Agregue una acción de GitHub al nuevo repositorio que inserte cambios de ese repositorio en el repositorio de Git de Cloud Manager.
 1. Realice esa acción al menos una vez para asegurarse de que el código del proyecto está en el repositorio de Git de Cloud Manager.
 1. Agregue una referencia al nuevo directorio en la raíz de Maven `pom.xml` en el repositorio de Git de Cloud Manager.
 
@@ -140,7 +140,7 @@ Este es un script de ejemplo que se puede utilizar en un trabajo de Jenkins o si
 1. A continuación, el trabajo activa ese script.
 1. A su vez, esta extrae el repositorio de Git de Cloud Manager y confirma el código del proyecto en un subdirectorio.
 
-El trabajo de Jenkins debe tener dos secretos, `MAIN_USER` y `MAIN_PASSWORD`, para poder conectarse y enviar al repositorio de Git de Cloud Manager.
+Se debe proporcionar al trabajo de Jenkins dos secretos, `MAIN_USER` y `MAIN_PASSWORD`, para poder conectarse y enviar al repositorio de Git de Cloud Manager.
 
 ```java
 # Username/email used to commit to Cloud Manager's Git repository

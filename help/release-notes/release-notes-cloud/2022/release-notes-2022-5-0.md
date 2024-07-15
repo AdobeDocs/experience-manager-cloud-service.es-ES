@@ -47,7 +47,7 @@ Eche un vistazo al vídeo Información general sobre la versión de mayo de 2022
 
 * [Imágenes inteligentes de Dynamic Media](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f) ahora es compatible con el formato de archivo AVIF: mejore aún más Google Core Web Vital (Pintado de contenido más grande), con AVIF proporcionando una reducción de tamaño adicional del 20 % con respecto a WebP. En total, AVIF proporciona una reducción de tamaño promedio de hasta el 41 % con respecto al JPEG (en algunas imágenes incluso de hasta el 76 %).
 
-* [!UICONTROL Experience Manager Assets Brand Portal] ahora ejecuta trabajos automáticos cada 12 horas para eliminar todos los recursos de Brand Portal AEM que se publican en el sitio de trabajo de la aplicación de la. Como resultado, no es necesario eliminar manualmente los recursos de la carpeta Contribution para mantener el tamaño de la carpeta por debajo del límite de umbral. Consulte [Novedades de Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=es).
+* [!UICONTROL Experience Manager Assets Brand Portal] ahora ejecuta trabajos automáticos cada 12 horas para eliminar todos los recursos de Brand Portal AEM que se han publicado en el sitio de trabajo de la. Como resultado, no es necesario eliminar manualmente los recursos de la carpeta Contribution para mantener el tamaño de la carpeta por debajo del límite de umbral. Consulte [Novedades de Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=es).
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Assets] {#prerelease-features-assets}
 
@@ -60,7 +60,7 @@ Experience Manager Assets utiliza las funcionalidades de Adobe Sensei AI para ah
 
 * **Integración de formularios adaptables con Microsoft® Power Automate**: ahora puede configurar un formulario adaptable para ejecutar un flujo de nube Microsoft® Power Automate en el envío. El formulario adaptable configurado envía los datos capturados, los archivos adjuntos y el documento de registro al flujo de Power Automate Cloud para su procesamiento. Le ayuda a crear una experiencia de captura de datos personalizada mientras aprovecha el poder de Microsoft® Power Automate para crear lógicas empresariales en torno a los datos capturados y automatizar los flujos de trabajo de los clientes.
 
-* **Asistente para crear un formulario adaptable**: puede utilizar el asistente fácil de usar para empresas con el fin de crear Forms adaptable rápidamente. El asistente proporciona una navegación rápida por las pestañas para seleccionar fácilmente la plantilla preconfigurada, el estilo, los campos y las opciones de envío para crear un formulario adaptable.
+* **Asistente para crear un formulario adaptable**: puede usar el asistente para usuarios empresariales con el fin de crear Forms adaptable rápidamente. El asistente proporciona una navegación rápida por las pestañas para seleccionar fácilmente la plantilla preconfigurada, el estilo, los campos y las opciones de envío para crear un formulario adaptable.
 
   ![Asistente para crear un formulario adaptable](/help/release-notes/assets/wizard.png)
 
@@ -81,9 +81,9 @@ Experience Manager Assets utiliza las funcionalidades de Adobe Sensei AI para ah
 
 ### Novedades {#what-is-new-foundation}
 
-* La opción &quot;Agregar árbol&quot; en la pantalla de administración del agente de replicación **Pestaña Distribuir**, que se anunció anteriormente como obsoleto, se eliminó el 20 de junio de 2022 o poco después. Los paquetes con una jerarquía de contenido de árbol deben replicarse usando [Administrar publicación](/help/operations/replication.md#manage-publication) o [Flujo de trabajo Publicar árbol de contenido](/help/operations/replication.md#publish-content-tree-workflow).
+* La opción &quot;Agregar árbol&quot; en la pantalla del administrador del agente de replicación **Distribuir pestaña**, que se anunció anteriormente como obsoleta, se eliminó el 20 de junio de 2022 o poco después. Los paquetes con una jerarquía de contenido de árbol deben replicarse usando [Administrar publicación](/help/operations/replication.md#manage-publication) o [Flujo de trabajo Publicar árbol de contenido](/help/operations/replication.md#publish-content-tree-workflow).
 
-* El uso de la pantalla de administración del agente de replicación o la API de replicación para distribuir paquetes de contenido de más de 10 MB (nodos con propiedades, sin incluir binarios) está en desuso y se aplica el 12 de septiembre de 2022 o poco después. En su lugar, [Administrar publicación](/help/operations/replication.md#manage-publication) o [Flujo de trabajo Publicar árbol de contenido](/help/operations/replication.md#publish-content-tree-workflow) debe utilizarse para replicar estos paquetes de contenido de gran tamaño. En julio, aparecerá un mensaje de advertencia en la pantalla del administrador del agente de replicación **Pestaña Distribuir** AEM si se intenta replicar estos paquetes de contenido grande y también en el registro de errores de siempre que la API de replicación se utilice para replicar estos paquetes de contenido grande. En septiembre, las advertencias se sustituyeron por errores. Ajuste los procesos según corresponda.
+* El uso de la pantalla de administración del agente de replicación o la API de replicación para distribuir paquetes de contenido de más de 10 MB (nodos con propiedades, sin incluir binarios) está en desuso y se aplica el 12 de septiembre de 2022 o poco después. En su lugar, [Administrar publicación](/help/operations/replication.md#manage-publication) o [Flujo de trabajo Publicar árbol de contenido](/help/operations/replication.md#publish-content-tree-workflow) debe utilizarse para replicar estos paquetes de contenido de gran tamaño. AEM En julio, aparecerá un mensaje de advertencia en la pantalla del administrador del agente de replicación **Pestaña Distribuir** si intenta replicar estos paquetes de contenido grande y también en el registro de errores de siempre que la API de replicación se utilice para replicar estos paquetes de contenido grande. En septiembre, las advertencias se sustituyeron por errores. Ajuste los procesos según corresponda.
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Experience Manager] {#prerelease-features-foundation}
 
@@ -93,7 +93,7 @@ Experience Manager Assets utiliza las funcionalidades de Adobe Sensei AI para ah
 
 ### Finalización del soporte para TLS 1.0 y 1.1
 
-A partir del 30 de junio de 2022, Experience Manager as a Cloud Service necesitará una comunicación de red más segura y un intercambio de datos con los sistemas de los usuarios. AEM usará exclusivamente Transport Layer Security (TLS), protocolo 1.2. Las versiones anteriores de TLS 1.0 y 1.1 ya no se utilizan.
+A partir del 30 de junio de 2022, el Experience Manager as a Cloud Service necesitará una comunicación de red más segura y un intercambio de datos con los sistemas de los usuarios. AEM usará exclusivamente Transport Layer Security (TLS), protocolo 1.2. Las versiones anteriores de TLS 1.0 y 1.1 ya no se utilizan.
 
 Si sigue utilizando versiones anteriores de TLS como 1.0, 1.1, podría perder el acceso al Experience Manager as a Cloud Service.
 

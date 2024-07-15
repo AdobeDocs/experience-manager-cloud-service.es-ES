@@ -21,7 +21,7 @@ AEM La asignación de recursos se utiliza para definir redirecciones, URL de van
 Por ejemplo, puede utilizar estas asignaciones para lo siguiente:
 
 * Agregue a todas las solicitudes el prefijo `/content` para que la estructura interna se oculte a los visitantes del sitio web.
-* Defina una redirección para que todas las solicitudes a `/content/en/gateway` de su sitio web se redirigen a `https://gbiv.com/`.
+* Defina una redirección para que todas las solicitudes a la página `/content/en/gateway` de su sitio web se redirijan a `https://gbiv.com/`.
 
 Una posible asignación HTTP prefija todas las solicitudes a `localhost:4503` con `/content`. Una asignación como esta podría utilizarse para ocultar la estructura interna de los visitantes del sitio web, ya que permite lo siguiente:
 
@@ -31,7 +31,7 @@ Para acceder a él, utilice:
 
 `localhost:4503/we-retail/en/products.html`
 
-Como la asignación añade automáticamente el prefijo `/content` hasta `/we-retail/en/products.html`.
+Como la asignación agrega automáticamente el prefijo `/content` a `/we-retail/en/products.html`.
 
 >[!CAUTION]
 >
@@ -45,21 +45,23 @@ Como la asignación añade automáticamente el prefijo `/content` hasta `/we-ret
 
 Las asignaciones de dos listas que evalúa el JCR Resource Resolver (de arriba a abajo) para encontrar una coincidencia.
 
-Estas listas se pueden ver (junto con la información de configuración) en la **ResourceResolver de JCR** de la consola Felix; por ejemplo, `https://<*host*>:<*port*>/system/console/jcrresolver`:
+Estas listas se pueden ver (junto con información de configuración) en la opción **JCR ResourceResolver** de la consola Felix; por ejemplo, `https://<*host*>:<*port*>/system/console/jcrresolver`:
 
-* Configuración Muestra la configuración actual (tal como se define para la variable [Apache Sling Resource Resolver](/help/overview/seo-and-url-management.md#etc-map)).
+* Configuración
+Muestra la configuración actual (tal como se definió para [Apache Sling Resource Resolver](/help/overview/seo-and-url-management.md#etc-map)).
 
-* Prueba de configuración Permite introducir una dirección URL o una ruta de recurso. Clic **Resolver** o **Mapa** para confirmar cómo el sistema transforma la entrada.
+* Prueba de configuración
+Esto permite introducir una dirección URL o una ruta de recurso. Haga clic en **Resolver** o **Mapa** para confirmar cómo el sistema transforma la entrada.
 
 * **Entradas de mapa de resolución**
 La lista de entradas utilizadas por los métodos ResourceResolver.resolve para asignar direcciones URL a recursos.
 
-* **Entradas de mapa de asignación**
+* **Entradas de asignación de asignaciones**
 La lista de entradas utilizadas por los métodos ResourceResolver.map para asignar rutas de recursos a las direcciones URL.
 
 Las dos listas muestran varias entradas, incluidas las entradas definidas como predeterminadas por las aplicaciones. Estas entradas suelen tener como objetivo simplificar las direcciones URL del usuario.
 
-El par de listas a **Patrón**, una expresión regular coincidente con la solicitud, con un **Sustitución** que define la redirección que se va a imponer.
+Las listas emparejan un **Pattern**, una expresión regular que coincide con la solicitud, con un **Replacement** que define la redirección que se va a imponer.
 
 Por ejemplo, el:
 
@@ -67,7 +69,7 @@ Por ejemplo, el:
 
 Déclencheur el:
 
-**Sustitución** `/libs/cq/core/content/welcome.html`.
+**Reemplazo** `/libs/cq/core/content/welcome.html`.
 
 Para redirigir una solicitud:
 
@@ -89,13 +91,13 @@ AEM En una instalación estándar de la carpeta de carpetas, puede encontrar la 
 
 `/etc/map/http`
 
-Esta carpeta es la estructura utilizada al definir asignaciones para el protocolo HTTP. Otras carpetas ( `sling:Folder`) se puede crear en `/etc/map` para cualquier otro protocolo que desee asignar.
+Esta carpeta es la estructura utilizada al definir asignaciones para el protocolo HTTP. Se pueden crear otras carpetas ( `sling:Folder`) en `/etc/map` para cualquier otro protocolo que desee asignar.
 
 #### Configuración de una redirección interna a /content {#configuring-an-internal-redirect-to-content}
 
 Para crear la asignación que prefija cualquier solicitud a https://localhost:4503/ con `/content`:
 
-1. Uso de CRXDE para desplazarse a `/etc/map/http`.
+1. Usando CRXDE, vaya a `/etc/map/http`.
 
 1. Cree un nodo:
 
@@ -105,7 +107,7 @@ Este tipo de nodo está diseñado para este tipo de asignaciones, aunque su uso 
    * **Nombre** `localhost_any`
 
 1. Haga clic en **Guardar todo**.
-1. **Añadir** Agregue las siguientes propiedades a este nodo:
+1. **Agregar** las siguientes propiedades a este nodo:
 
    * **Nombre** `sling:match`
 
@@ -129,9 +131,9 @@ se ha solicitado.
 
 >[!NOTE]
 >
->Consulte [Recursos](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) en la Documentación de Sling para obtener más información sobre las propiedades de Sling disponibles y cómo se pueden configurar.
->Por ejemplo, [Interpolación de cadenas](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#string-interpolation-for-etcmap) es útil porque permite configurar una asignación que obtiene valores por entorno a través de variables de entorno.
+>Consulte [Recursos](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) en la documentación de Sling para obtener más información sobre las propiedades de Sling disponibles y cómo se pueden configurar.
+>Por ejemplo, [Interpolación de cadenas](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#string-interpolation-for-etcmap) es útil porque le permite configurar una asignación que obtiene valores por entorno a través de variables de entorno.
 
 >[!NOTE]
 >
->Puede utilizar `/etc/map.publish` para guardar las configuraciones del entorno de publicación. Estas configuraciones deben replicarse y la nueva ubicación ( `/etc/map.publish`) configurado para **Ubicación de asignación** de la [Apache Sling Resource Resolver](/help/overview/seo-and-url-management.md#etc-map) del entorno de publicación
+>Puede usar `/etc/map.publish` para guardar las configuraciones del entorno de publicación. Estas configuraciones deben replicarse y la nueva ubicación (`/etc/map.publish`) debe configurarse para la **ubicación de asignación** del [Apache Sling Resource Resolver](/help/overview/seo-and-url-management.md#etc-map) del entorno de publicación.

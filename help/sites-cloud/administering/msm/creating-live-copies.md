@@ -170,9 +170,9 @@ Para crear una Live Copy de un sitio a partir de una configuración de modelo:
 
    ![Crear sitio a partir de modelo](../assets/create-site-from-blueprint.png)
 
-1. Utilice el **Idiomas iniciales** selector para especificar los idiomas del sitio del modelo que se utilizarán para Live Copy.
+1. Utilice el selector **Idiomas iniciales** para especificar los idiomas del sitio del modelo que se usarán para Live Copy.
 
-   Todos los idiomas disponibles están seleccionados de forma predeterminada. Para eliminar un idioma, seleccione la **X** que aparece junto al idioma.
+   Todos los idiomas disponibles están seleccionados de forma predeterminada. Para quitar un idioma, seleccione el **X** que aparece junto al idioma.
 
    Por ejemplo:
 
@@ -306,7 +306,7 @@ Sincronice una Live Copy para extraer cambios del origen a la Live Copy.
 
 1. En la consola **Sitios**, seleccione la página Live Copy y abra las propiedades.
 1. Abra la pestaña **Live Copy**.
-1. Seleccionar **Sincronizar**.
+1. Seleccione **Sincronizar**.
 
    ![Botón Sincronizar](../assets/synchronize.png)
 
@@ -464,7 +464,7 @@ Para especificar o cambiar la profundidad:
    >
    >Consulte [Live Copies: composición](overview.md#live-copies-composition) para obtener más información.
 
-1. Seleccionar **Guardar** para mantener las actualizaciones.
+1. Seleccione **Guardar** para mantener las actualizaciones.
 
 ### Cancelación de la herencia de un componente {#cancelling-inheritance-for-a-component}
 
@@ -480,7 +480,7 @@ Cancele la herencia para cambiar el contenido del componente o eliminarlo:
 
    ![Herencia en la barra de herramientas de componentes](../assets/inheritance-toolbar.png)
 
-1. En la barra de herramientas de componentes, seleccione **Cancelar herencia** icono.
+1. En la barra de herramientas de componentes, seleccione el icono **Cancelar herencia**.
 
    ![Icono Cancelar herencia](../assets/cancel-inheritance-icon.png)
 
@@ -490,7 +490,7 @@ Cancele la herencia para cambiar el contenido del componente o eliminarlo:
 
 ### Reactivación de la herencia para un componente {#re-enabling-inheritance-for-a-component}
 
-Para habilitar la herencia para un componente, seleccione la **Volver a habilitar la herencia** en la barra de herramientas de componentes.
+Para habilitar la herencia para un componente, seleccione el icono **Volver a habilitar la herencia** en la barra de herramientas de componentes.
 
 ![Icono Reactivar herencia](../assets/re-enable-inheritance-icon.png)
 
@@ -535,11 +535,11 @@ Puede volver a habilitar la herencia para una propiedad más tarde si es necesar
 
    ![Botón Cancelar herencia](../assets/cancel-inheritance-button.png)
 
-1. En el **Cancelar herencia** cuadro de diálogo de confirmación, seleccione **Sí**.
+1. En el diálogo de confirmación **Cancelar herencia**, seleccione **Sí**.
 
 ### Revertir propiedades de una página de Live Copy {#revert-properties-of-a-live-copy-page}
 
-Para habilitar la herencia para una propiedad, seleccione la **Revertir herencia** que aparece junto a la propiedad.
+Para habilitar la herencia para una propiedad, seleccione el icono **Revertir herencia** que aparece junto a la propiedad.
 
 ![Botón Revertir herencia](../assets/revert-inheritance-button.png)
 

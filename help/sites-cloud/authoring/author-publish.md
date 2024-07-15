@@ -15,11 +15,11 @@ ht-degree: 29%
 
 # Conceptos de creación y publicación {#authoring-publishing}
 
-AEM Para un autor de contenido, una instalación as a Cloud Service se puede considerar como tres niveles principales en su nivel más básico
+Para un autor de contenido, una instalación de AEM as a Cloud Service se puede considerar como tres niveles principales en su nivel más básico
 
 * Nivel de Author
 * Previsualizar nivel
-* Publicar nivel
+* Nivel de Publish
 
 Estos niveles interactúan para permitirle ofrecer contenido en su sitio web para que los visitantes puedan acceder a él. El flujo de trabajo básico es:
 
@@ -31,7 +31,7 @@ El contenido puede ser de muchos tipos diferentes, incluidas páginas, recursos 
 
 ![Diagrama del creador, el editor y los distribuidores](assets/author-publish.jpg)
 
-AEM as a Cloud Service Para obtener más información sobre la arquitectura técnica de la, consulte el documento [Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service.](/help/overview/architecture.md)
+Para obtener más información acerca de la arquitectura técnica de AEM as a Cloud Service, consulte el documento [Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service.](/help/overview/architecture.md)
 
 {{edge-delivery-authoring}}
 
@@ -54,7 +54,7 @@ Además, hay tareas administrativas que le ayudan a administrar su contenido:
 
 AEM también se administra desde el entorno de creación.
 
-Consulte el documento [Guía rápida de introducción para la creación](/help/sites-cloud/authoring/quick-start.md) para obtener una descripción general del proceso de creación.
+Consulte el documento [Guía de inicio rápido para la creación](/help/sites-cloud/authoring/quick-start.md) para obtener una descripción general del proceso de creación.
 
 ## Vista previa del contenido {#previewing-content}
 
@@ -70,4 +70,4 @@ Consulte el documento [Publicación de páginas](/help/sites-cloud/authoring/sit
 
 ## Dispatcher {#dispatcher}
 
-Para optimizar el rendimiento de los visitantes del sitio web, **[Dispatcher](/help/implementing/dispatcher/overview.md)** implementa almacenamiento en caché y equilibrio de carga para los niveles de publicación y vista previa.
+Para optimizar el rendimiento de los visitantes de tu sitio web, **[Dispatcher](/help/implementing/dispatcher/overview.md)** implementa almacenamiento en caché y equilibrio de carga para los niveles de publicación y vista previa.

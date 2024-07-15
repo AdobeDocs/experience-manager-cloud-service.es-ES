@@ -13,7 +13,7 @@ ht-degree: 78%
 
 # Notas de la versión 2022.10.0 para [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-En la siguiente sección se describen las notas de la versión de la función para la versión 2022.10.0 de [!DNL Experience Manager] as a Cloud Service.
+En la siguiente sección se describen las notas de la versión de la característica para la versión 2022.10.0 de [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Eche un vistazo al vídeo Información general sobre la versión de octubre de 2
 
 ### Nuevas funciones de [!DNL Sites] {#sites-features}
 
-* El [Pestaña Personalización para fragmentos de experiencias](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) permite al editor de fragmentos de experiencias las funciones de especificación de segmentación y la flexibilidad para crear fragmentos de experiencias anidados, mediante la cual se pueden crear variaciones de encabezados y pies de página para varios segmentos. Antes del lanzamiento de esta funcionalidad, la personalización que ofrece AEM solo está disponible para páginas de sitio, pero no para Fragmentos de experiencias
+* La [Pestaña Personalization para fragmentos de experiencias](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) permite al editor de fragmentos de experiencias capacidades de especificación de segmentación y la flexibilidad para crear fragmentos de experiencias anidados, mediante los cuales se pueden crear variaciones de encabezados y pies de página para varios segmentos. Antes del lanzamiento de esta funcionalidad, la personalización que ofrece AEM solo está disponible para páginas de sitio, pero no para Fragmentos de experiencias
 
 * La variable [Consola de fragmento de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) ahora permite a los usuarios administrar de forma eficaz los fragmentos de contenido traducidos. Se ha proporcionado un acceso de 1 clic para ver todas las copias de idioma. Los usuarios también pueden filtrar la vista de tabla según la configuración regional de su interés.
 
@@ -50,7 +50,7 @@ Eche un vistazo al vídeo Información general sobre la versión de octubre de 2
 
 ### Nuevas funciones de [!DNL Assets] {#assets-features}
 
-* Experience Manager Assets ahora permite cargar documentos en otros tipos de formato compatibles y[previsualizarlos con el visualizador de Document Cloud incluido](/help/assets/manage-pdf-documents.md). Los tipos de formato admitidos son TXT, RTF, DOC, DOCX, PPT, PPTX, XLS y XLSX.
+* Experience Manager Assets ahora le permite cargar documentos en otros tipos de formato compatibles y[previsualizarlos con el visor de Document Cloud incluido](/help/assets/manage-pdf-documents.md). Los tipos de formato admitidos son TXT, RTF, DOC, DOCX, PPT, PPTX, XLS y XLSX.
 
   ![Representación del PDF para otros formatos](/help/release-notes/assets/multi-page-other-formats.png)
 
@@ -67,7 +67,7 @@ Eche un vistazo al vídeo Información general sobre la versión de octubre de 2
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Forms] {#prerelease-features-forms}
 
-* **Editor de plantillas de Forms adaptable**: el editor de plantillas permite predefinir la estructura básica y el aspecto del Forms adaptable de una organización. Esta versión aporta las siguientes mejoras al editor de plantillas:
+* **Editor de plantillas de Forms adaptable**: El editor de plantillas le permite predefinir la estructura básica y el aspecto de Forms adaptable de una organización. Esta versión aporta las siguientes mejoras al editor de plantillas:
    * **[Modelo de datos de formulario en el editor de plantillas](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: puede asociar un esquema del Modelo de datos de formulario a una plantilla de Formulario adaptable en el editor de plantillas. Ayuda a reducir el tiempo necesario para crear un Formulario adaptable. La opción también se agrega al editor de Formularios adaptables para que los usuarios puedan seleccionar o cambiar el Modelo de datos de formulario para los formularios existentes.
    * **[Documento de registro en el editor de plantillas](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**: ahora puede estandarizar la generación de documentos de registros para todos los formularios creados con una plantilla. Esto ayuda a mejorar el cumplimiento de normas y la estandarización de los requisitos de organización.
 
@@ -87,11 +87,11 @@ Eche un vistazo al vídeo Información general sobre la versión de octubre de 2
 
 ### Novedades {#what-is-new-foundation}
 
-* AEM as a Cloud Service (Servicio de creación) está ahora integrado con Unified Shell para mejorar la experiencia del usuario y unificarlo con todas las demás aplicaciones de Experience Cloud. AEM Consulte como a. [Cloud Service en Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) para obtener más información.
+* AEM as a Cloud Service (Servicio de creación) está ahora integrado con Unified Shell para mejorar la experiencia del usuario y unificarlo con todas las demás aplicaciones de Experience Cloud. AEM Consulte la como Cloud Service de [en Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) para obtener más información.
 
-* Como se mencionó anteriormente en las notas de la versión, el uso de la pantalla de administración del agente de replicación o la API de replicación para distribuir paquetes de contenido de más de 10 MB (nodos con propiedades, sin incluir binarios) ya no se utiliza y se aplica. Consulte [Administrar publicación](/help/operations/replication.md#manage-publication) o el [Flujo de trabajo Publicar árbol de contenido](/help/operations/replication.md#publish-content-tree-workflow) para conocer los enfoques sugeridos para replicar estos paquetes de contenido grande.
+* Como se mencionó anteriormente en las notas de la versión, el uso de la pantalla de administración del agente de replicación o la API de replicación para distribuir paquetes de contenido de más de 10 MB (nodos con propiedades, sin incluir binarios) ya no se utiliza y se aplica. Consulte [Administrar publicación](/help/operations/replication.md#manage-publication) o [Flujo de trabajo del árbol de contenido de Publish](/help/operations/replication.md#publish-content-tree-workflow) para ver los enfoques sugeridos para replicar estos paquetes de contenido grande.
 
-* La configuración de Dispatcher ahora hace referencia a un archivo que enumera parámetros comunes de consulta de campañas de marketing. Los clientes pueden optar por descomentar los parámetros relevantes para ellos, lo que resulta en un mejor almacenamiento en caché. Consulte [Parámetros de campaña de marketing](/help/implementing/dispatcher/caching.md#marketing-parameters) para obtener más información.
+* La configuración de Dispatcher ahora hace referencia a un archivo que enumera parámetros comunes de consulta de campañas de marketing. Los clientes pueden optar por descomentar los parámetros relevantes para ellos, lo que resulta en un mejor almacenamiento en caché. Consulte [Parámetros de la campaña de marketing](/help/implementing/dispatcher/caching.md#marketing-parameters) para obtener más información.
 
 ## Cloud Manager {#cloud-manager}
 

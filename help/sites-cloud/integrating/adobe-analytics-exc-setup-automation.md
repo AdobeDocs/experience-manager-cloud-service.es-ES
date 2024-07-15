@@ -48,10 +48,10 @@ El entorno debe estar listo para la automatización de la configuración de Expe
 1. Expanda el menú del carril lateral y seleccione **Análisis de configuración**.
 
    Se trata de una nueva opción del carril lateral que abre un panel que proporciona controles y el estado para la automatización de la configuración del Experience Cloud.
-1. Seleccione el **Integrar Analytics** botón.
+1. Seleccione el botón **Integrar Analytics**.
 1. En el cuadro de diálogo resultante, proporcione un nombre para el **ID del grupo de informes**.
 
-   Esta cadena se utiliza para crear un [ID del grupo de informes](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=es) en Adobe Analytics AEM como almacén de datos para los datos de analytics del sitio de seleccionado. La cadena proporcionada se añade con identificadores de entorno y de nivel para garantizar la exclusividad.
+   Esta cadena se usa para crear un [Id. del grupo de informes](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=es) en Adobe Analytics AEM como almacén de datos para los datos de análisis del sitio seleccionado de la lista de distribución de datos La cadena proporcionada se añade con identificadores de entorno y de nivel para garantizar la exclusividad.
 
 1. Actualice la página y el panel y seleccione **Comprobar estado de integración** para comprobar el estado de la automatización.
 
@@ -76,7 +76,7 @@ A continuación, vaya a Adobe Analytics para ver los datos que llegan desde los 
 
 1. Vaya a Adobe Analytics en la misma organización de IMS que el sitio de AEM.
 1. Cree un nuevo informe general para AEM Sites navegando a **Informes** > **Participación** > **Adobe Experience Manager** > **Información general sobre el rendimiento del sitio**.
-1. Seleccionar **Abrir informe**.
+1. Seleccione **Abrir informe**.
 1. Seleccione el **ID del grupo de informes** que coincide con el nombre del grupo de informes utilizado en el ejercicio anterior.
 1. Vea el flujo de datos de análisis en la nueva plantilla a lo largo del tiempo.
 

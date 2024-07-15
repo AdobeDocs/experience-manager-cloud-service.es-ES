@@ -38,8 +38,8 @@ Los usuarios suelen pensar que una implementación sin encabezado limita a los a
 
 Los requisitos de una implementación para utilizar el editor universal son muy sencillos y compatibles con lo siguiente:
 
-* **Cualquier arquitectura** : Procesamiento del lado del servidor, procesamiento del lado del borde, procesamiento del lado del cliente, etc.
-* **Cualquier marco** AEM : Vainilla o cualquier marco de terceros como React, Next.js, Angular, etc.
+* **Cualquier arquitectura**: procesamiento del lado del servidor, procesamiento del lado del borde, procesamiento del lado del cliente, etc.
+* AEM **Cualquier módulo** - Vanilla o cualquier módulo de terceros como React, Next.js, Angular, etc.
 * **Cualquier alojamiento**: se puede alojar localmente en AEM o en un dominio remoto.
 
 ### Cualquier contenido {#any-content}
@@ -54,7 +54,7 @@ Un autor de contenido debe tener la misma experiencia de edición potente que of
 
 Para un autor de contenidos, estos no se limitan a la información que contienen, sino a cómo se presentan y reciben. El contenido viene con metadatos adicionales y reglas de instrumentación que el editor universal puede comprender y editar, como por ejemplo:
 
-* **Aplicar diseño y estilo** : Mediante un sistema de estilos, el profesional de marketing y el autor del contenido pueden aplicar diferentes estilos a su contenido y crear diferentes diseños para este, como columnas, carruseles, pestañas, acordeones, etc.
+* **Aplicación de diseño y estilo**: al utilizar un sistema de estilos, el profesional de marketing y el autor de contenido pueden aplicar diferentes estilos al contenido y crear diferentes diseños para el contenido, como columnas, carruseles, pestañas, acordeones, etc.
 
 ## Valor {#value}
 
@@ -82,16 +82,16 @@ Un profesional del marketing quiere crear contenido que esté adaptado al diseñ
 
 * El trabajo subyacente que hay que realizar es conectar de manera convincente con los lectores.
 
-## Restricciones {#limitations}
+## Limitaciones {#limitations}
 
 A medida que explore el editor universal y avance en la implementación de él en sus propios proyectos, tenga en cuenta las siguientes limitaciones.
 
-* AEM No más de 25 recursos de (fragmentos de contenido, páginas, fragmentos de experiencias, recursos, etc.) deben ser referencias como instrumentación en una sola página.
-* AEM El as a Cloud Service AEM es el único back-end de la compatible.
-* AEM Versión as a Cloud Service `2023.8.13099` Se requiere una versión o superior.
+* AEM No más de 25 recursos de (fragmentos de contenido, páginas, fragmentos de experiencias, Assets, etc.) deben ser referencias como instrumentación en una sola página.
+* AEM as a Cloud Service AEM es el único backend compatible con la interfaz de usuario de.
+* Se requiere la versión de AEM as a Cloud Service `2023.8.13099` o superior.
 * Los autores de contenido deben tener sus propias cuentas de Experience Cloud individuales.
 * Chrome y Edge son los exploradores admitidos
 
 ## Siguientes pasos {#next-steps}
 
-Consulte el documento [Casos de uso y rutas de aprendizaje del editor universal](/help/implementing/universal-editor/use-cases.md) para obtener más información sobre los casos de uso comunes del editor universal y descubrir los recursos de documentación adecuados para ayudarle en su proyecto.
+Consulte el documento [Casos de uso y rutas de aprendizaje del editor universal](/help/implementing/universal-editor/use-cases.md) para obtener más información sobre casos de uso comunes del editor universal y descubrir los recursos de documentación adecuados para ayudarle en su proyecto.

@@ -33,7 +33,7 @@ Para acceder a sus segmentos en la navegación global, seleccione **Navegación 
 ## Editor de segmentos {#segment-editor}
 
 <!--The **Segment Editor** lets you easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
-El **Editor de segmentos** permite modificar fácilmente un segmento. Para editar un segmento, seleccione uno en la lista de segmentos y haga clic en el botón **Editar**.
+El **Editor de segmentos** le permite modificar fácilmente un segmento. Para editar un segmento, seleccione uno en la lista de segmentos y haga clic en el botón **Editar**.
 
 ![Editor de segmentos](../assets/contexthub-segment-editor.png)
 
@@ -91,11 +91,11 @@ Para definir el nuevo segmento:
 
 1. Después de [acceder a los segmentos](#accessing-segments), [vaya a la carpeta](#organizing-segments) donde desea crear el segmento.
 
-1. Seleccione el **Crear** y seleccione **Crear segmento de ContextHub**.
+1. Seleccione el botón **Crear** y seleccione **Crear segmento de ContextHub**.
 
    ![Agregar segmento](../assets/contexthub-create-segment.png)
 
-1. En el **Nuevo segmento de ContextHub**, introduzca un título para el segmento y un valor de ampliación si es necesario y, a continuación, seleccione **Crear**.
+1. En el **Nuevo segmento de ContextHub**, escribe un título para el segmento y un valor de ampliación si es necesario y, a continuación, selecciona **Crear**.
 
    ![Nuevo segmento](../assets/contexthub-new-segment.png)
 
@@ -196,7 +196,7 @@ Si tiene muchos segmentos, puede que sea difícil administrarlos como una lista 
 
 ### Cree una nueva carpeta {#create-folder}
 
-1. Después [acceso a los segmentos](#accessing-segments), seleccione la **Crear** y seleccione **Carpeta**.
+1. Después de [acceder a los segmentos](#accessing-segments), selecciona el botón **Crear** y selecciona **Carpeta**.
 
    ![Agregar carpeta](../assets/contexthub-create-segment.png)
 
@@ -219,11 +219,11 @@ Si tiene muchos segmentos, puede que sea difícil administrarlos como una lista 
 
 ### Modificar carpetas existentes {#modify-folders}
 
-1. Después [acceso a los segmentos](#accessing-segments), seleccione la carpeta que desee modificar para seleccionarla.
+1. Después de [acceder a los segmentos](#accessing-segments), seleccione la carpeta que desee modificar para seleccionarla.
 
    ![Seleccionar carpeta](../assets/contexthub-select-folder.png)
 
-1. Seleccionar **Cambiar nombre** en la barra de herramientas para cambiar el nombre de la carpeta.
+1. Seleccione **Rename** en la barra de herramientas para cambiar el nombre de la carpeta.
 
 1. Proporcione un nuevo **Título de carpeta** y seleccione **Guardar**.
 
@@ -235,25 +235,25 @@ Si tiene muchos segmentos, puede que sea difícil administrarlos como una lista 
 
 ### Eliminar una carpeta
 
-1. Después [acceso a los segmentos](#accessing-segments), seleccione la carpeta que desee modificar para seleccionarla.
+1. Después de [acceder a los segmentos](#accessing-segments), seleccione la carpeta que desee modificar para seleccionarla.
 
    ![Seleccionar carpeta](../assets/contexthub-select-folder.png)
 
-1. Seleccionar **Eliminar** en la barra de herramientas para eliminar la carpeta.
+1. Seleccione **Eliminar** en la barra de herramientas para eliminar la carpeta.
 
 1. Un cuadro de diálogo presenta una lista de carpetas seleccionadas para su eliminación.
 
    ![Confirmar eliminación](../assets/contexthub-confirm-segment-delete.png)
 
-   * Seleccionar **Eliminar** para confirmar.
-   * Seleccionar **Cancelar** para cancelar.
+   * Seleccione **Eliminar** para confirmar.
+   * Seleccione **Cancelar** para anular la operación.
 
 1. Si alguna de las carpetas seleccionadas contiene subcarpetas o segmentos, su eliminación debe confirmarse.
 
    ![Confirmar la eliminación de tareas secundarias](../assets/contexthub-confirm-segment-child-delete.png)
 
-   * Seleccionar **Forzar eliminación** para confirmar.
-   * Seleccionar **Cancelar** para cancelar.
+   * Seleccione **Forzar eliminación** para confirmar.
+   * Seleccione **Cancelar** para anular la operación.
 
 >[!NOTE]
 >

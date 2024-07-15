@@ -47,7 +47,7 @@ Para abrir la bandeja de entrada de notificaciones AEM:
 
 1. Seleccione el indicador en la barra de herramientas.
 
-1. Seleccione **Ver todo**. El **AEM Bandeja de entrada de** abre. La bandeja de entrada muestra elementos de flujos de trabajo, proyectos y tareas.
+1. Seleccione **Ver todo**. AEM Se abre la **Bandeja de entrada de**. La bandeja de entrada muestra elementos de flujos de trabajo, proyectos y tareas.
 1. La vista predeterminada es [Vista de lista](#inbox-list-view), pero también puede cambiar a [Vista de calendario](#inbox-calendar-view). Esto se realiza con el selector de vistas (barra de herramientas, arriba a la derecha).
 
    Para ambas vistas también puede definir una [Configuración de vista](#inbox-view-settings). Las opciones disponibles dependen de la vista actual.

@@ -19,13 +19,13 @@ Los nodos del repositorio están sujetos a las convenciones de nomenclatura del 
 
 Estas convenciones de nomenclatura se implementan en varios niveles:
 
-* AEM JcrUtil: la implementación de la aplicación de la aplicación de la aplicación de la [Utilidades JCR](#jcr-utilities).
-* PageManager: el [Administrador de páginas](#page-manager) proporciona métodos para operaciones a nivel de página.
-* AEM Dentro de la IU de {#ui-behavior}
+* AEM JcrUtil: la implementación de la implementación de la implementación de la implementación de las [utilidades JCR](#jcr-utilities).
+* PageManager: [Page Manager](#page-manager) proporciona métodos para operaciones a nivel de página.
+* AEM Dentro de la interfaz de usuario de {#ui-behavior}
 
 ### Utilidades JCR {#jcr-utilities}
 
-[JcrUtil](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) AEM es la implementación de la implementación de la implementación de JCR. De especial interés para validar nombres son las asignaciones de caracteres que controla y las siguientes validaciones:
+AEM [JcrUtil](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) es la implementación de las utilidades JCR que se encuentra en el nivel de implementación de la. De especial interés para validar nombres son las asignaciones de caracteres que controla y las siguientes validaciones:
 
 * `isValidName`
    * Comprueba si el nombre no está vacío y contiene solo caracteres válidos.

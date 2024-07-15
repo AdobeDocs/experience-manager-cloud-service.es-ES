@@ -14,7 +14,7 @@ ht-degree: 37%
 
 # Fragmentos de contenido: configuración {#content-fragments-setup}
 
-Los fragmentos de contenido dentro de Adobe Experience Manager AEM () as a Cloud Service le permiten preparar contenido listo para usar en varias ubicaciones y en varios canales. Esto es ideal para la entrega sin encabezado y la creación de páginas.
+Los fragmentos de contenido dentro del as a Cloud Service de Adobe Experience Manager AEM () le permiten preparar contenido listo para usar en varias ubicaciones y en varios canales. Esto es ideal para la entrega sin encabezado y la creación de páginas.
 
 Para habilitar la instancia para la funcionalidad de fragmento de contenido, debe habilitar lo siguiente:
 
@@ -24,19 +24,19 @@ Para habilitar la instancia para la funcionalidad de fragmento de contenido, deb
   >
   >Si no habilita **Modelos de fragmentos de contenido**:
   >
-  >* el **Crear** La opción no estará disponible para crear modelos.
+  >* la opción **Crear** no estará disponible para crear modelos.
   >* no podrá [seleccionar la configuración de Sites para crear el punto de conexión relacionado](/help/headless/graphql-api/graphql-endpoint.md).
 
 * **Consultas persistentes de GraphQL**: opcional
 
 La configuración de la instancia ha finalizado:
 
-* por [habilitar la funcionalidad en el Explorador de configuración](#enable-content-fragment-functionality-configuration-browser)
-* entonces [aplicación de la configuración a sus carpetas de recursos individuales](#apply-the-configuration-to-your-folder)
+* al [habilitar la funcionalidad en el Explorador de configuración](#enable-content-fragment-functionality-configuration-browser)
+* a continuación, [aplicando la configuración a sus carpetas individuales de Assets](#apply-the-configuration-to-your-folder)
 
 ## Habilitar la funcionalidad de fragmento de contenido en el explorador de configuración {#enable-content-fragment-functionality-configuration-browser}
 
-Para utilizar la funcionalidad Fragmento de contenido, de Modelos de fragmento de contenido y Consultas persistentes de GraphQL, debe **debe** primero, actívelos a través de la **Explorador de configuración**:
+Para usar la funcionalidad de fragmento de contenido, de los modelos de fragmento de contenido y de las consultas persistentes de GraphQL, **debe** habilitarlos primero a través de **Explorador de configuración**:
 
 >[!NOTE]
 >
@@ -59,8 +59,8 @@ Para utilizar la funcionalidad Fragmento de contenido, de Modelos de fragmento d
 1. Use **Crear** para abrir el cuadro de diálogo, donde:
 
    1. Especifique un **Título**.
-   1. Tras la creación, la variable **Nombre** se convierte en el nombre de nodo del repositorio.
-Puede introducir un nombre. Si deja el campo en blanco, se genera automáticamente en función del título y, a continuación, se ajusta según lo siguiente [AEM Convenciones de nomenclatura de](/help/implementing/developing/introduction/naming-conventions.md); puede ajustar el resultado si es necesario.
+   1. Tras la creación, **Name** se convierte en el nombre de nodo en el repositorio.
+Puede introducir un nombre. AEM Si deja el campo en blanco, se generará automáticamente en función del título y, a continuación, se ajustará según [convenciones de nomenclatura de la lista de nombres](/help/implementing/developing/introduction/naming-conventions.md); puede ajustar el resultado si es necesario.
    1. Para habilitar su uso, seleccione
       * **Modelos de fragmentos de contenido**
       * **Consultas persistentes de GraphQL**
@@ -71,8 +71,8 @@ Puede introducir un nombre. Si deja el campo en blanco, se genera automáticamen
 
 ## Aplicar la configuración a la carpeta {#apply-the-configuration-to-your-folder}
 
-Cuando la configuración **global** está habilitado para la funcionalidad Fragmento de contenido y, a continuación, se aplica a cualquier carpeta de recursos, accesible a través de la **Assets** consola.
+Cuando la configuración **global** está habilitada para la funcionalidad de fragmento de contenido, se aplica a cualquier carpeta de Assets, accesible a través de la consola **Assets**.
 
-Para utilizar otras configuraciones (excluyendo, por lo tanto, las globales) con una carpeta de Assets comparable, debe definir la conexión. Para ello, seleccione la opción adecuada **Configuración** en el **Cloud Service** de la pestaña **Propiedades de carpeta** de la carpeta adecuada.
+Para utilizar otras configuraciones (excluyendo, por lo tanto, las globales) con una carpeta de Assets comparable, debe definir la conexión. Para ello, seleccione la **configuración** adecuada en la ficha **Cloud Service** de las **propiedades de carpeta** de la carpeta correspondiente.
 
 ![Aplicar configuración](assets/cf-setup-apply-conf.png)

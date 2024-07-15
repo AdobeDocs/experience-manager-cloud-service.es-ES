@@ -61,11 +61,11 @@ Cree una marca para la que desee administrar actividades de marketing.
 
 Cuando cree una marca mediante la consola Actividades, esta también aparecerá en la [consola Ofertas](/help/sites-cloud/authoring/personalization/offers.md), donde podrá crear ofertas para las experiencias de las actividades.
 
-1. En la consola de navegación, seleccione **Personalización**. Seleccionar **Actividades**.
+1. En la consola de navegación, seleccione **Personalization**. Seleccione **Actividades**.
 
    ![Navegación a actividades](/help/sites-cloud/authoring/assets/activities-navigation.png)
 
-1. En la consola Actividades, seleccione **Crear** entonces **Crear marca**.
+1. En la consola Actividades, seleccione **Crear** y luego **Crear marca**.
 1. Seleccione la plantilla de marca y seleccione **Siguiente**.
 1. Escriba un título para la marca tal como desea que aparezca en las consolas de actividades y de ofertas. De forma opcional, escriba o seleccione una o varias etiquetas para asociarlas a la marca.
 1. Seleccione **Crear**. La marca aparece en la consola de actividades.
@@ -97,21 +97,21 @@ Añada una actividad o edite una actividad existente para centrar sus esfuerzos 
 
 Para añadir una actividad, haga lo siguiente:
 
-1. Seleccione la marca para la que está creando la actividad y luego seleccione **Crear** entonces **Crear actividad**. Si está editando, seleccione la actividad en la pantalla Área maestra y pulse o haga clic en **Editar actividad**.
-1. Proporcione la siguiente información y seleccione **Siguiente**:
+1. Seleccione la marca para la que está creando la actividad y, a continuación, seleccione **Crear** y **Crear actividad**. Si está editando, seleccione la actividad en la pantalla Área maestra y pulse o haga clic en **Editar actividad**.
+1. Proporcione la siguiente información y luego seleccione **Siguiente**:
    * Un nombre para la actividad.
    * El motor de segmentación que se va a utilizar. ContextHub (AEM) está seleccionado de forma predeterminada. Si necesita utilizar Adobe Target, cree la actividad en el editor de contenido de destino.
    * Si seleccionó Adobe Target como motor de segmentación, seleccione o edite la configuración de la nube que se utiliza para conectar con Adobe Target. (Procure no seleccionar un marco que haya creado para la configuración de la nube).
    * (Opcional) El objetivo o la descripción de la actividad.
    * Seleccione el tipo de actividad.
-1. Agregue una o varias experiencias a la actividad. Seleccionar **Añadir experiencia**.
+1. Agregue una o varias experiencias a la actividad. Seleccione **Agregar experiencia**.
 1. Si utiliza la segmentación de AEM o la segmentación de experiencias de Adobe Target:
-   1. Seleccionar **Seleccionar audiencia** y seleccione el segmento de destino de la experiencia.
-   1. Seleccionar **Añadir experiencia**, escriba un nombre y seleccione **OK**.
-   1. Seleccionar **Siguiente**.
+   1. Seleccione **Seleccionar audiencia** y seleccione el segmento de destino de la experiencia.
+   1. Seleccione **Agregar experiencia**, escriba un nombre y seleccione **Aceptar**.
+   1. Seleccione **Siguiente**.
 Si utiliza las pruebas A/B de Adobe Target:
    1. Seleccione el lápiz en el cuadro audiencias para seleccionar una audiencia.
-   1. Seleccionar **Añadir experiencia**, escriba un nombre y seleccione **OK**.
+   1. Seleccione **Agregar experiencia**, escriba un nombre y seleccione **Aceptar**.
    1. Introduzca el porcentaje de tráfico que muestra cada experiencia.
    1. Seleccione **Siguiente**.
 1. Para especificar el momento en que la actividad comenzará, use el menú desplegable **Inicio** para seleccionar uno de los valores siguientes:
@@ -143,7 +143,7 @@ Para publicar o cancelar la publicación de actividades, haga lo siguiente:
 
    ![Publicación desde la consola de actividades](/help/sites-cloud/authoring/assets/activities-console.png)
 
-1. Para publicar, seleccione **Publish**. Para cancelar la publicación, seleccione **Cancelar publicación**. Las actividades se publican (o no) y su estado cambia en la consola de actividades (es posible que sea necesaria una actualización).
+1. Para publicar, seleccione **Publish**. Para cancelar la publicación, seleccione **Cancelar la publicación**. Las actividades se publican (o no) y su estado cambia en la consola de actividades (es posible que sea necesaria una actualización).
 
 ## Actividades en las instancias de autor y publicación {#activities-on-author-and-publish-instances}
 
@@ -158,13 +158,13 @@ Puede ver el rendimiento de cualquier actividad de Adobe Target (XT o A/B). Si u
 
 Para ver el rendimiento de las actividades y convertirlas en experiencias ganadoras:
 
-1. Entrada **Personalización**, seleccione **Actividades** para ir al **Actividades** consola.
+1. En **Personalization**, seleccione **Actividades** para ir a la consola **Actividades**.
 1. Seleccione la marca de la que desea ver actividades.
-1. Seleccione la actividad y seleccione **Ver propiedades** y haga clic en **Informes** y seleccione la actividad para la que desea ver el rendimiento o convertir las experiencias ganadoras. Se muestran los datos de rendimiento.
+1. Seleccione la actividad y seleccione **Ver propiedades**; haga clic en la ficha **Informes** y seleccione la actividad para la que desea ver el rendimiento o convertir las experiencias ganadoras. Se muestran los datos de rendimiento.
 
    ![Comprobación del rendimiento de la actividad](/help/sites-cloud/authoring/assets/activities-performance.png)
 
-1. Seleccione el **Insertar ganador** vínculo para insertar esa experiencia como la experiencia predeterminada.
+1. Seleccione el vínculo **Ganador de push** para que esa experiencia sea la experiencia predeterminada.
 
    Convertir al ganador hace lo siguiente:
 
@@ -175,7 +175,7 @@ Para ver el rendimiento de las actividades y convertirlas en experiencias ganado
 
    Una experiencia ganadora es la que más crece en los informes, y está basada en la tasa de conversión.
 
-1. Seleccionar **Sí** para confirmar que desea convertir al ganador, deshabilite la experiencia actual y reemplácela por el contenido de la experiencia ganadora.
+1. Seleccione **Sí** para confirmar que desea convertir al ganador, desactivando la experiencia actual y reemplazándola con el contenido de la experiencia ganadora.
 
 ## Sincronización de actividades con Adobe Target {#synchronizing-activities-with-adobe-target}
 

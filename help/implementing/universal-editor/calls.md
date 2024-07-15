@@ -20,24 +20,24 @@ Obtenga información sobre los distintos tipos de llamadas que el Editor univers
 
 El editor universal se comunica con la aplicación instrumentada a través de una serie de llamadas definidas. Esto es transparente para y no afecta a la experiencia del usuario final.
 
-Sin embargo, para el desarrollador, comprender estas llamadas y lo que hacen puede ser útil al depurar la aplicación cuando se utiliza el Editor universal. Si ha instrumentado la aplicación y no se comporta como se esperaba, puede resultar útil abrir **Red** de las herramientas para desarrolladores del navegador e inspeccione las llamadas a medida que edita el contenido de la aplicación.
+Sin embargo, para el desarrollador, comprender estas llamadas y lo que hacen puede ser útil al depurar la aplicación cuando se utiliza el Editor universal. Si has instrumentado tu aplicación y no se está comportando como se esperaba, puede ser útil abrir la pestaña **Red** de las herramientas para desarrolladores en tu navegador e inspeccionar las llamadas a medida que editas el contenido en tu aplicación.
 
-![Ejemplo de una llamada de detalles en la pestaña Red de las herramientas para desarrolladores del explorador](assets/calls-network-tab.png)
+![Ejemplo de una llamada de detalles en la ficha Red de las herramientas para desarrolladores del explorador](assets/calls-network-tab.png)
 
-* El **Carga útil** de la llamada contiene detalles de lo que el editor está actualizando, incluida la identificación de qué actualizar y cómo actualizarlo.
-* El **Respuesta** incluye detalles de qué ha actualizado exactamente el servicio de edición. Esto sirve para facilitar la actualización del contenido en el editor. En algunos casos, como un `move` Llamada de, se debe actualizar la página completa.
+* La **carga útil** de la llamada contiene detalles de lo que el editor está actualizando, incluida la identificación de qué actualizar y cómo actualizarlo.
+* La **respuesta** incluye detalles de qué ha actualizado exactamente el servicio de edición. Esto sirve para facilitar la actualización del contenido en el editor. En determinados casos, como una llamada de `move`, se debe actualizar la página completa.
 
-Una vez que una llamada se completa correctamente, se activan eventos que incluyen la carga útil de la solicitud y la respuesta, que se puede personalizar para su propia aplicación. Consulte el documento [Eventos del editor universal](/help/implementing/universal-editor/events.md) para obtener más información.
+Una vez que una llamada se completa correctamente, se activan eventos que incluyen la carga útil de la solicitud y la respuesta, que se puede personalizar para su propia aplicación. Consulte el documento [Eventos de editor universal](/help/implementing/universal-editor/events.md) para obtener más información.
 
 A continuación se muestra una lista de los tipos de llamadas que el editor universal realiza a su aplicación, así como cargas útiles y respuestas de ejemplo.
 
 ## Actualizar {#update}
 
-Un `update` Esta llamada se produce cuando edita contenido en la aplicación mediante el Editor universal. El `update` persistirá en los cambios.
+Se produce una llamada de `update` al editar contenido en la aplicación mediante el Editor universal. `update` mantiene los cambios.
 
 Su carga útil incluye detalles de lo que se debe escribir en el JCR.
 
-* `resource`: La ruta JCR que se va a actualizar
+* `resource`: la ruta JCR que se va a actualizar
 * `prop`: la propiedad JCR que se está actualizando
 * `type`: el tipo de valor JCR de la propiedad que se actualiza
 * `value`: los datos actualizados
@@ -82,12 +82,12 @@ Su carga útil incluye detalles de lo que se debe escribir en el JCR.
 
 ## Detalles {#details}
 
-A `details` Esta llamada se produce al cargar la aplicación en el editor universal para recuperar el contenido de la aplicación.
+Se produce una llamada de `details` al cargar la aplicación en el Editor universal para recuperar el contenido de la aplicación.
 
 Su carga útil incluye los datos que se van a procesar, así como detalles de lo que representan los datos (el esquema) para que se puedan procesar en el Editor universal.
 
-* Para un componente, el editor universal solo recupera un componente `data` , ya que el esquema de los datos se define en la aplicación.
-* Para los fragmentos de contenido, el editor universal también recupera un `schema` ya que el modelo de fragmento de contenido se define en el JCR.
+* Para un componente, el editor universal solo recupera un objeto `data`, ya que el esquema de los datos se define en la aplicación.
+* Para los fragmentos de contenido, el editor universal también recupera un objeto `schema`, ya que el modelo de fragmento de contenido se define en el JCR.
 
 >[!BEGINTABS]
 
@@ -146,11 +146,11 @@ Su carga útil incluye los datos que se van a procesar, así como detalles de lo
 
 ## Añadir {#add}
 
-Un `add` Esta llamada se produce cuando se coloca un componente nuevo en la aplicación mediante el Editor universal.
+Se produce una llamada a `add` cuando se coloca un componente nuevo en la aplicación mediante el Editor universal.
 
-Su carga útil incluye un `path` objeto que contiene dónde se debe añadir el contenido.
+Su carga útil incluye un objeto `path` que contiene dónde se debe agregar el contenido.
 
-También incluye una `content` con objetos adicionales para detalles específicos del extremo del contenido que se va a almacenar [para cada complemento.](/help/implementing/universal-editor/architecture.md) AEM Por ejemplo, si la aplicación se basa en el contenido de los Magento y de la aplicación, la carga útil contendría un objeto de datos para cada sistema.
+También incluye un objeto `content` con objetos adicionales para detalles específicos del extremo del contenido que se va a almacenar [ para cada complemento.AEM ](/help/implementing/universal-editor/architecture.md) Por ejemplo, si su aplicación se basa en contenido de los Magento y los usuarios de la aplicación, la carga útil contendría un objeto de datos para cada sistema.
 
 >[!BEGINTABS]
 
@@ -204,9 +204,9 @@ También incluye una `content` con objetos adicionales para detalles específico
 
 ## Mover {#move}
 
-A `move` Esta llamada se produce cuando se mueve un componente dentro de la aplicación mediante el Editor universal.
+Se produce una llamada a `move` cuando se mueve un componente dentro de la aplicación mediante el Editor universal.
 
-Su carga útil incluye un `from` que define dónde estaba el componente y un `to` que define dónde se movió.
+Su carga útil incluye un objeto `from` que define dónde estaba el componente y un objeto `to` que define dónde se movió.
 
 >[!BEGINTABS]
 
@@ -260,7 +260,7 @@ Su carga útil incluye un `from` que define dónde estaba el componente y un `to
 
 ## Quitar {#remove}
 
-A `remove` Esta llamada se produce cuando se elimina un componente de la aplicación mediante el Editor universal.
+Se produce una llamada a `remove` cuando se elimina un componente de la aplicación mediante el Editor universal.
 
 Su carga útil incluye la ruta del objeto que se elimina.
 
@@ -310,7 +310,7 @@ Su carga útil incluye la ruta del objeto que se elimina.
 
 ## Publicación {#publish}
 
-A `publish` La llamada de se produce al hacer clic en **Publish** en el Editor universal para publicar el contenido que ha editado.
+Se produce una llamada de `publish` al hacer clic en el botón **Publish** del Editor universal para publicar el contenido que ha editado.
 
 El editor universal repite el contenido y genera una lista de referencias que también deben publicarse.
 

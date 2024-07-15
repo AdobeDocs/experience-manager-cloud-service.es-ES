@@ -21,23 +21,23 @@ Adobe Experience Manager as a Cloud Service ofrece funciones de observación y m
 
 AEM as a Cloud Service utiliza cientos de monitores nativos de la nube para informar continuamente del estado de cada entorno (24/7) durante 365 días al año. Las definiciones de los monitores no son estáticas, sino que se revisan continuamente para mejorar la capacidad de detección precoz. Además, el Adobe tiene configurados procedimientos de atención continuada para responder a las alertas.
 
-Si necesita información sobre otros tipos de monitorización, como el registro o la monitorización a través de Cloud Manager, consulte [Recursos adicionales](#resources).
+Si necesita información sobre otros tipos de supervisión, como el registro o la supervisión a través de Cloud Manager, consulte [Recursos adicionales](#resources).
 
 ## Disponibilidad externa {#external-availability}
 
-La disponibilidad externa consta de dos partes: Service Edge y Supervisión personalizada.
+La disponibilidad externa consta de dos partes: Service Edge y Monitorización personalizada.
 
 ### Service Edge {#service-edge}
 
-AEM Se supervisa la disponibilidad de todos los entornos de los as a Cloud Service. Sin embargo, la monitorización perimetral de servicio solo está configurada para entornos de producción y las métricas se utilizan para calcular el SLA del cliente. AEM Tiene en cuenta el tiempo de ejecución del entorno y la CDN as a Cloud Service. La Monitorización perimetral de servicio emplea cinco ubicaciones distintas cercanas a la región elegida y comprueba periódicamente la disponibilidad. Déclencheur La indisponibilidad de un sitio avisa y pone en contacto a los equipos y procesos de asistencia a petición de los Adobes.
+La disponibilidad de todos los entornos de AEM as a Cloud Service se supervisa. Sin embargo, la monitorización de Service Edge solo se configura para entornos de producción y las métricas se utilizan para calcular el SLA del cliente. Tiene en cuenta el tiempo de ejecución del entorno y la CDN de AEM as a Cloud Service. Service Edge Monitoring emplea cinco ubicaciones distintas cercanas a la región elegida y comprueba periódicamente la disponibilidad. Déclencheur La indisponibilidad de un sitio avisa y pone en contacto a los equipos y procesos de asistencia a petición de los Adobes.
 
 ### Monitorización personalizada {#custom-monitoring}
 
-Con la Monitorización personalizada, los clientes pueden, opcionalmente, proporcionar hasta cinco direcciones URL de propiedad web distintas antes de que [puesta en marcha](/help/journey-migration/go-live.md). Estas direcciones URL deben ser válidas y devolver un código de respuesta HTTP 200. Estos monitores admiten clientes que [traer su propia CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) delante de la CDN de Adobe AEM y cualquier enrutamiento de tráfico externo empleado delante de la red as a Cloud Service que no esté bajo control del Adobe. Las alertas resultantes de las comprobaciones de Supervisión personalizada involucran a los equipos y procesos de asistencia de Adobe.
+Con la supervisión personalizada, los clientes pueden, opcionalmente, proporcionar hasta cinco direcciones URL de propiedades web distintas antes de [publicar](/help/journey-migration/go-live.md). Estas direcciones URL deben ser válidas y devolver un código de respuesta HTTP 200. Estos monitores admiten clientes que [traen su propia CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) delante de la CDN de Adobe y cualquier enrutamiento de tráfico externo empleado delante de AEM as a Cloud Service que no esté bajo el control de Adobe. Las alertas resultantes de las comprobaciones de Supervisión personalizada involucran a los equipos y procesos de asistencia de Adobe.
 
 >[!NOTE]
 >
-> Esta funcionalidad solo se ofrece para entornos de producción y clientes con [Soporte avanzado en la nube.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) Si tiene alguna pregunta, póngase en contacto con el equipo de su cuenta de Adobe.
+> Esta funcionalidad solo se ofrece para entornos de producción y clientes con [Soporte avanzado en la nube.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) Si tiene alguna pregunta, comuníquese con el equipo de la cuenta de Adobe.
 
 ## Monitorización del módulo interno {#module-monitoring}
 
@@ -55,10 +55,10 @@ Se añaden comprobaciones adicionales a los entornos aprovisionados para Forms. 
 
 ## Observabilidad del cliente {#customer-observability}
 
-Los clientes pueden utilizar el [Monitorización del rendimiento de aplicaciones New Relic](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) grupo que proporciona datos de rendimiento en tiempo real recopilados y representados para su análisis y solución de problemas. Mediante el grupo de monitorización, los clientes pueden observar directamente varias métricas, como: métricas de rendimiento de JVM, tiempo de transacción para Java™, llamadas externas en segundo plano y llamadas a bases de datos.
+Los clientes pueden usar el conjunto de aplicaciones [New Relic Application Performance Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) que proporciona datos de rendimiento en tiempo real recopilados y representados para su análisis y solución de problemas. Mediante el grupo de monitorización, los clientes pueden observar directamente varias métricas, como: métricas de rendimiento de JVM, tiempo de transacción para Java™, llamadas externas en segundo plano y llamadas a bases de datos.
 
 ## Recursos adicionales {#resources}
 
-* [Monitorización del rendimiento de aplicaciones New Relic](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html)
-* [AEM Registro para la as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html)
-* [Monitorización de entornos](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html)
+* [Supervisión del rendimiento de las aplicaciones New Relic](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html)
+* [Registrando para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html)
+* [Supervisar Entornos](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html)

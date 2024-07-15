@@ -15,10 +15,10 @@ ht-degree: 11%
 
 ## Introducción {#introduction}
 
-La herramienta de transferencia de contenido (CTT) no realiza ningún tipo de análisis de contenido antes de transferir contenido de la instancia de origen a la instancia de destino. Por ejemplo, CTT no diferencia entre contenido publicado y no publicado al ingerir contenido en un entorno de publicación. Independientemente del contenido especificado en el conjunto de migración, este se incorpora en la instancia de destino elegida. El usuario tiene la capacidad de introducir un conjunto de migración en una instancia de autor, una instancia de publicación o ambas.
+La herramienta de transferencia de contenido (CTT) no realiza ningún tipo de análisis de contenido antes de transferir contenido de la instancia de origen a la instancia de destino. Por ejemplo, CTT no diferencia entre contenido publicado y no publicado al introducir contenido en un entorno de Publish. Independientemente del contenido especificado en el conjunto de migración, este se incorpora en la instancia de destino elegida. El usuario tiene la capacidad de introducir un conjunto de migración en una instancia de autor, de Publish o en ambas.
 
 >[!NOTE]
->Se recomienda que, al mover contenido a una instancia de Producción, la herramienta de transferencia de contenido se instale en la instancia de autor de origen para mover contenido a la instancia de autor de destino y, de forma similar, instale la herramienta de transferencia de contenido en la instancia de publicación de origen para mover contenido a la instancia de publicación de destino. Consulte [Enfoque recomendado](#recommended-approach) para obtener más información.
+>Se recomienda que, al mover contenido a una instancia de producción, la herramienta de transferencia de contenido se instale en la instancia de autor de origen para mover contenido a la instancia de autor de destino y, de forma similar, instale la herramienta de transferencia de contenido en la instancia de Publish de origen para mover contenido a la instancia de Publish de destino. Consulte la sección [Enfoque recomendado](#recommended-approach) más abajo para obtener más detalles.
 
 ## Enfoque recomendado {#recommended-approach}
 
@@ -32,5 +32,5 @@ Siga el método recomendado como se describe a continuación:
 
   >[!IMPORTANT]
   >Como medida de precaución, evite cualquier operación de escritura iniciada por el usuario, como:
-  > * AEM La distribución de contenido desde autor as a Cloud Service a Publish en ese entorno
+  > * Distribución de contenido de AEM as a Cloud Service Author a Publish en ese entorno
   > * Sincronización de usuarios entre instancias de publicación

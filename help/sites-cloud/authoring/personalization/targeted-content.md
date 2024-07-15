@@ -75,7 +75,7 @@ Para cambiar al modo de segmentación, haga lo siguiente:
 
    ![Modo Targeting](../assets/targeted-mode.png)
 
-1. Seleccionar **Segmentación**. Las opciones de orientación se muestran en la parte superior de la página.
+1. Seleccione **Segmentación**. Las opciones de orientación se muestran en la parte superior de la página.
 
    ![Barra de herramientas de direccionamiento](../assets/targeted-toolbar.png)
 
@@ -100,7 +100,7 @@ Para añadir una actividad, haga lo siguiente:
    >
    >Si crea una marca de cualquier otra manera, asegúrese de que el nodo `/campaigns/<brand>/master` existe o se producirá un error al intentar crear una actividad.
 
-1. Seleccione + junto a **Actividad** menú desplegable.
+1. Seleccione + junto al menú desplegable **Actividad**.
 1. Escriba un nombre para la actividad.
 
    >[!NOTE]
@@ -136,7 +136,7 @@ Para añadir una actividad, haga lo siguiente:
 
 1. En el menú desplegable **Marca**, seleccione la marca que contiene la actividad en la que está trabajando.
 1. En el menú desplegable **Actividad**, seleccione la actividad para la que está creando contenido de destino.
-1. Para mostrar los controles que le guían a través del proceso de orientación, seleccione **Iniciar segmentación**.
+1. Para mostrar los controles que lo guían a través del proceso de segmentación, seleccione **Iniciar segmentación**.
 
    ![Iniciar direccionamiento](../assets/targeted-start-targeting.png)
 
@@ -194,8 +194,8 @@ Con el paso Crear del [proceso de orientación](#the-targeting-process-create-ta
 
 Para añadir una experiencia, haga lo siguiente:
 
-1. Para añadir una experiencia, seleccione **+** **Añadir segmentación de experiencias** que aparece debajo de las experiencias existentes en la **Audiencias** panel.
-1. Seleccione un público. De forma predeterminada, ese nombre es el nombre de la experiencia. Puede escribir otro nombre, si lo desea. Seleccionar **OK**.
+1. Para agregar una experiencia, seleccione **+** **Agregar segmentación de experiencias** que aparece debajo de las experiencias existentes en el panel **Audiencias**.
+1. Seleccione un público. De forma predeterminada, ese nombre es el nombre de la experiencia. Puede escribir otro nombre, si lo desea. Seleccione **Aceptar**.
 
 #### Eliminación de experiencias mediante el modo de segmentación {#removing-experiences-using-targeting-mode}
 
@@ -295,7 +295,7 @@ Al añadir un componente al componente Target, proporciona contenido para una ex
 
 Puede añadir un componente Target a la página en modo de Edición o en modo de Target. Puede añadir componentes al componente Target solo en modo de Target. El componente de Target pertenece al grupo de componentes Personalización.
 
-Si edita contenido de destino, debe seleccionar **Iniciar segmentación** antes de que pueda hacerlo.
+Si edita contenido de destino, debe seleccionar **Iniciar segmentación** para poder hacerlo.
 
 1. Arrastre el componente de Target a la página donde desea que aparezca la oferta.
 1. De forma predeterminada, no se establece ningún identificador de ubicación. Seleccione la rueda dentada de configuración para definir la posición.
@@ -356,11 +356,11 @@ No puede añadir ofertas de la biblioteca a la experiencia predeterminada.
 
    El selector de ofertas le permite examinar o filtrar las ofertas. Al examinar o filtrar, puede que también desee clasificar las ofertas y cambiar la manera de verlas. El número que aparece en la parte superior derecha indica cuántas ofertas hay disponibles en la biblioteca actual.
 
-   * Seleccionar **Examinar** para desplazarse a otra carpeta. Se abrirá el panel de navegación; haga clic en la flecha para navegar por las carpetas. Seleccionar **Examinar** de nuevo para cerrar el panel de navegación.
+   * Seleccione **Examinar** para navegar a otra carpeta. Se abrirá el panel de navegación; haga clic en la flecha para navegar por las carpetas. Vuelva a seleccionar **Examinar** para cerrar el panel de navegación.
 
    ![Examinar contenido](../assets/targeted-select-content-browse.png)
 
-   * Seleccionar **Filtrar** para filtrar las ofertas por palabras clave o etiquetas. Introduzca palabras clave y seleccione etiquetas en el menú desplegable. Seleccionar **Filtrar** para cerrar el panel de filtrado.
+   * Seleccione **Filter** para filtrar las ofertas por palabras clave o etiquetas. Introduzca palabras clave y seleccione etiquetas en el menú desplegable. Vuelva a seleccionar **Filtro** para cerrar el panel de filtrado.
 
    ![Filtrar contenido](../assets/targeted-filter.png)
 
@@ -368,7 +368,7 @@ No puede añadir ofertas de la biblioteca a la experiencia predeterminada.
 
    ![Filtrar orden](../assets/targeted-filter-sort.png)
 
-   Seleccione el icono situado junto a **Ver como** para ver ofertas como mosaicos o como una lista.
+   Seleccione el icono junto a **Ver como** para ver las ofertas como mosaicos o como una lista.
 
    ![Ver como botón](../assets/targeted-view-as-button.png)
 
@@ -379,7 +379,7 @@ Añada una oferta personalizada a la [biblioteca de ofertas](/help/sites-cloud/a
 Para obtener información sobre el uso de la consola Ofertas para crear una oferta reutilizable, consulte [Agregar una oferta a una biblioteca de ofertas](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library).
 
 1. Seleccione la experiencia para mostrar la oferta personalizada.
-1. Seleccione la oferta personalizada para mostrar el menú de oferta y, a continuación, seleccione **Guardar Oferta En La Biblioteca De Ofertas** icono.
+1. Seleccione la oferta personalizada para mostrar el menú de ofertas y, a continuación, seleccione el icono **Guardar oferta en la biblioteca de ofertas**.
 
    ![Guardar oferta en la biblioteca de ofertas](../assets/targeted-save-offer-library-button.png)
 
@@ -427,8 +427,8 @@ Una experiencia no debe utilizar más de un público. Aparece un símbolo de adv
 Utilice el siguiente procedimiento para asociar una experiencia con un público al usar la segmentación de experiencias de AEM (u segmentación de experiencias de Adobe Target):
 
 1. Seleccione la flecha desplegable situada junto en el cuadro de audiencia que está asignado a la experiencia.
-1. (Opcional) Seleccione **Editar** y, a continuación, escriba una palabra clave para buscar el segmento deseado.
-1. En la lista de audiencias, seleccione la audiencia y seleccione **OK**.
+1. (Opcional) Seleccione **Editar** y luego escriba una palabra clave para buscar el segmento deseado.
+1. En la lista de audiencias, seleccione la audiencia y seleccione **Aceptar**.
 
 ### Si utiliza la prueba A/B (Adobe Target)… {#if-you-are-using-a-b-testing-adobe-target}
 
@@ -442,7 +442,7 @@ Puede cambiar los porcentajes, siempre que sumen el cien por ciento. Varias expe
 
 1. Seleccione el cuadro desplegable situado junto a la audiencia asignada a la experiencia.
 1. De manera opcional, haga clic en **Editar** y, a continuación, escriba una palabra clave para buscar el segmento que desee.
-1. Seleccionar **OK.**
+1. Seleccionar **Aceptar.**
 1. Introduzca porcentajes para configurar la forma en que el tráfico del público se dirige a cada experiencia. El número total debe ser igual a 100.
 1. (Opcional) Edite el nombre de la experiencia haciendo clic en el menú desplegable situado junto al nombre de la experiencia.
 
@@ -549,7 +549,7 @@ Para establecer las metas y la configuración, si utiliza Adobe Target, haga lo 
    >
    >Para quitar los objetivos adicionales, toque o haga clic en los tres puntos y en **Eliminar**. AEM requiere que haya definido al menos una meta.
 
-1. Si desea controlar mejor cómo se cuentan las métricas de éxito, seleccione **Configuración avanzada** para acceder a ellas.
+1. Si desea tener más control sobre cómo se cuentan las métricas de éxito, seleccione **Configuración avanzada** para acceder a las mismas.
 1. Haga clic en **Guardar**.
 
 Una vez configuradas, puede [ver el rendimiento de las actividades](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test) que usan Adobe Target (orientación de la experiencia o de la prueba A/B). Además, con el direccionamiento de pruebas A/B, puede [convertir los ganadores](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test).
@@ -577,7 +577,7 @@ Si aparece contenido inesperado en la página al cargar un perfil, compruebe la 
 * La actividad Simulación en modo de Orientación: en la página se muestran las ofertas para el usuario seleccionado actualmente en ContextHub. Puede editar las ofertas dirigidas al usuario.
 * Modo de vista previa: utilice ContextHub para seleccionar a los usuarios y las ubicaciones que cumplen los criterios de los segmentos en que están basadas las experiencias. Cuando cambian las selecciones de Context Hub, el contenido de destino cambia en consecuencia.
 
-1. Para cambiar al modo de vista previa, en la barra de herramientas, seleccione **Previsualizar**.
+1. Para cambiar al modo de vista previa, en la barra de herramientas, seleccione **Vista previa**.
 1. En la barra de herramientas, seleccione el icono de Context Hub.
 
    ![Botón ContextHub](../assets/targeted-contexthub-button.png)

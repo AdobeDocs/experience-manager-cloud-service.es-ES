@@ -22,7 +22,7 @@ ht-degree: 83%
 >additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name" text="Añadir un nombre de dominio personalizado"
 >additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/managing-custom-domain-names" text="Ver y actualizar nombres de dominio personalizados"
 
-La interfaz de usuario de Cloud Manager le permite agregar un dominio personalizado para identificar su sitio con un nombre único de marca en forma de autoservicio. Adobe Experience Manager as a Cloud Service se aprovisiona con un nombre de dominio predeterminado que termina en `*.adobeaemcloud.com`. Este nombre de dominio predeterminado permanece, incluso después de asociar nombres de dominio personalizados al sitio web.
+La interfaz de usuario de Cloud Manager le permite agregar un dominio personalizado para identificar el sitio con un nombre único de marca en forma de autoservicio. Adobe Experience Manager as a Cloud Service se aprovisiona con un nombre de dominio predeterminado que termina en `*.adobeaemcloud.com`. Este nombre de dominio predeterminado permanece, incluso después de asociar nombres de dominio personalizados al sitio web.
 
 ## ¿Qué son los nombres de dominio personalizados? {#what-are-custom-domain-names}
 
@@ -38,7 +38,7 @@ Puede comprar un nombre de dominio a través de un registrador de nombres de dom
 
 ## Nombres de dominio personalizados y CDN de BYO {#byo-cdn}
 
-AEM as a Cloud Service AEM ofrece un servicio integrado de red de entrega de contenido (CDN), pero también le permite traer su propia CDN (BYO) para utilizarla con el servicio de distribución de contenido (CDN) de la red de distribución de contenido (CDN) de la red (CDN) para usar con la red de distribución de contenido (CDN) de la red de distribución de contenido (CDN), que también le permite usar con la red de distribución de contenido (CDN) de la red de. Los dominios personalizados pueden instalarse en la CDN administrada por AEM o en una CDN que administre usted.
+AEM as a Cloud Service AEM ofrece un servicio integrado de red de entrega de contenido (CDN), pero también le permite traer su propia CDN (BYO) para utilizarla con los servicios de red de distribución de contenido (CDN) de la red de distribución de contenido (CDN) para usar con los servicios de red de distribución de contenido (CDNs) y de red de distribución de contenido (CDNs) de la red de distribución de contenido (CDNs) para su uso con los servicios de red de. Los dominios personalizados pueden instalarse en la CDN administrada por AEM o en una CDN que administre usted.
 
 * Los nombres de dominio personalizados (y certificados) instalados en la CDN administrada por AEM se administran mediante Cloud Manager.
 * Los nombres de dominio personalizados (y certificados) instalados en su propia CDN se administran en esa CDN específica.
@@ -67,7 +67,7 @@ Para agregar un nombre de dominio personalizado es necesaria la interacción ent
 >
 >La configuración de nombres de dominio personalizados con AEM as a Cloud Service suele ser un proceso sencillo. Sin embargo, en ocasiones pueden producirse problemas de delegación de dominios que pueden tardar entre 1 y 2 días hábiles en resolverse. Por este motivo, es muy recomendable instalar los dominios mucho antes de la fecha de lanzamiento. Consulte el documento [Comprobación del estado del nombre de dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obtener más información.
 
-## Restricciones {#limitations}
+## Limitaciones {#limitations}
 
 El uso de nombres de dominio personalizados con AEMaaCS conlleva varias limitaciones.
 

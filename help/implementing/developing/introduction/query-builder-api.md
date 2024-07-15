@@ -1,6 +1,6 @@
 ---
 title: API del Generador de consultas
-description: La funcionalidad del Asset Share Query Builder se expone a través de una API de Java&trade; y una API de REST.
+description: La funcionalidad del Generador de consultas de uso compartido de recursos se expone a través de una API de Java& trade; y una API de REST.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 feature: Developing
 role: Admin, Architect, Developer
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 AEM El Generador de consultas es una forma sencilla de consultar el repositorio de contenido de las consultas de los recursos de la. La funcionalidad se expone a través de una API de Java™ y una API de REST. Este documento describe estas API.
 
-El generador de consultas del lado del servidor ([`QueryBuilder`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html)) acepta una descripción de la consulta, crea y ejecuta una consulta XPath, opcionalmente filtra el conjunto de resultados y también extrae facetas, si lo desea.
+El generador de consultas del lado del servidor ([`QueryBuilder`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html)) acepta una descripción de consulta, crea y ejecuta una consulta XPath, opcionalmente filtra el conjunto de resultados y también extrae facetas, si lo desea.
 
-La descripción de la consulta es simplemente un conjunto de predicados ([`Predicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/Predicate.html)). Algunos ejemplos son un predicado de texto completo, que corresponde a la variable `jcr:contains()` función en XPath.
+La descripción de la consulta es simplemente un conjunto de predicados ([`Predicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/Predicate.html)). Algunos ejemplos son un predicado de texto completo, que corresponde a la función `jcr:contains()` en XPath.
 
-Para cada tipo de predicado, hay un componente evaluador ([`PredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) que sabe cómo gestionar ese predicado específico para XPath, filtrado y extracción de facetas. Es fácil crear evaluadores personalizados, que están conectados a través del tiempo de ejecución del componente OSGi.
+Para cada tipo de predicado, hay un componente de evaluador ([`PredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) que sabe cómo controlar ese predicado específico para XPath, filtrado y extracción de facetas. Es fácil crear evaluadores personalizados, que están conectados a través del tiempo de ejecución del componente OSGi.
 
 La API de REST proporciona acceso a las mismas funciones a través de HTTP con respuestas enviadas en JSON.
 
@@ -29,15 +29,15 @@ La API de REST proporciona acceso a las mismas funciones a través de HTTP con r
 
 ## Sesión de Gem {#gem-session}
 
-[AEM Gems de](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html) es una serie de conocimientos técnicos en Adobe Experience Manager proporcionados por expertos en Adobe.
+AEM [Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html) es una serie de conocimientos técnicos sobre Adobe Experience Manager que ofrecen expertos en Adobe.
 
-Puede [revise la sesión dedicada al generador de consultas](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html) para obtener información general y utilizar la herramienta.
+Puede [revisar la sesión dedicada al generador de consultas](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html) para obtener información general y utilizar la herramienta.
 
 ## Consultas de muestra {#sample-queries}
 
-Estos ejemplos se proporcionan en notación de estilo de propiedades Java™. Para utilizarlos con la API de Java™, utilice un Java™ `HashMap` como en el ejemplo de API que sigue.
+Estos ejemplos se proporcionan en notación de estilo de propiedades Java™. Para usarlos con la API de Java™, use un Java™ `HashMap` como en el ejemplo de API que sigue.
 
-Para el `QueryBuilder` AEM Servlet JSON; cada ejemplo incluye un vínculo de ejemplo a una instalación de (en la ubicación predeterminada, `http://<host>:<port>`). AEM Inicie sesión en la instancia de antes de utilizar estos vínculos.
+AEM Para el servlet JSON `QueryBuilder`, cada ejemplo incluye un vínculo de muestra a una instalación de la (en la ubicación predeterminada, `http://<host>:<port>`). AEM Inicie sesión en la instancia de antes de utilizar estos vínculos.
 
 >[!CAUTION]
 >
@@ -53,7 +53,7 @@ Para el `QueryBuilder` AEM Servlet JSON; cada ejemplo incluye un vínculo de eje
 
 ### Devolver todos los resultados {#returning-all-results}
 
-La siguiente consulta **devuelve diez resultados** (o para ser precisos, un máximo de diez), pero le informa de la **Número de visitas:** que está disponible:
+La siguiente consulta **devuelve diez resultados** (o para ser precisos, un máximo de diez), pero le informa del **Número de visitas:** que está disponible:
 
 `http://<host>:<port>/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=wknd/components/structure/page&1_property.operation=like&orderby=path`
 
@@ -65,7 +65,7 @@ path=/content
 orderby=path
 ```
 
-La misma consulta (con el parámetro ) `p.limit=-1`) **devuelve todos los resultados** (puede ser un número alto según la instancia):
+La misma consulta (con el parámetro `p.limit=-1`) **devuelve todos los resultados** (puede ser un número alto dependiendo de su instancia):
 
 `http://<host>:<port>/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=wknd/components/structure/page&1_property.operation=like&orderby=path&p.limit=-1`
 
@@ -80,11 +80,11 @@ orderby=path
 
 ### Uso de p.guessTotal para devolver los resultados {#using-p-guesstotal-to-return-the-results}
 
-El propósito de la `p.guessTotal` es devolver el número adecuado de resultados que se pueden mostrar combinando el mínimo viable `p.offset` y `p.limit` valores. La ventaja de utilizar este parámetro es un rendimiento mejorado con grandes conjuntos de resultados. Este parámetro también evita calcular el total completo (por ejemplo, llamar a `result.getSize()`) y leer el conjunto de resultados completo, optimizado hasta el motor Oak y el índice. Este proceso puede ser una diferencia significativa cuando hay cientos de miles de resultados, tanto en tiempo de ejecución como en uso de memoria.
+El propósito del parámetro `p.guessTotal` es devolver el número adecuado de resultados que se pueden mostrar combinando los valores mínimos viables `p.offset` y `p.limit`. La ventaja de utilizar este parámetro es un rendimiento mejorado con grandes conjuntos de resultados. Este parámetro también evita calcular el total completo (por ejemplo, llamar a `result.getSize()`) y leer el conjunto de resultados completo, optimizado hasta el motor y el índice de Oak. Este proceso puede ser una diferencia significativa cuando hay cientos de miles de resultados, tanto en tiempo de ejecución como en uso de memoria.
 
-La desventaja del parámetro es que los usuarios no ven el total exacto. Pero puede establecer un número mínimo como `p.guessTotal=1000` así que siempre se lee hasta 1000. De este modo, se obtienen totales exactos para conjuntos de resultados más pequeños, pero si es más, solo se puede mostrar &quot;y más&quot;.
+La desventaja del parámetro es que los usuarios no ven el total exacto. Pero puede establecer un número mínimo como `p.guessTotal=1000` para que siempre se lea hasta 1000. De este modo, se obtienen totales exactos para conjuntos de resultados más pequeños, pero si es más, solo se puede mostrar &quot;y más&quot;.
 
-Añadir `p.guessTotal=true` Consulte la siguiente consulta para ver cómo funciona:
+Agregue `p.guessTotal=true` a la consulta siguiente para ver cómo funciona:
 
 `http://<host>:<port>/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=wknd/components/structure/page&1_property.operation=like&p.guessTotal=true&orderby=path`
 
@@ -97,7 +97,7 @@ p.guessTotal=true
 orderby=path
 ```
 
-La consulta devuelve el `p.limit` valor predeterminado de `10` resultados con a `0` desplazamiento:
+La consulta devuelve el valor predeterminado `p.limit` de `10` resultados con un desplazamiento de `0`:
 
 ```xml
 "success": true,
@@ -107,7 +107,7 @@ La consulta devuelve el `p.limit` valor predeterminado de `10` resultados con a 
 "offset": 0,
 ```
 
-También puede utilizar un valor numérico para contar hasta un número personalizado de resultados máximos. Utilice la misma consulta que la anterior, pero cambie el valor de `p.guessTotal` hasta `50`:
+También puede utilizar un valor numérico para contar hasta un número personalizado de resultados máximos. Utilice la misma consulta que la anterior, pero cambie el valor de `p.guessTotal` a `50`:
 
 `http://<host>:<port>/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=wknd/components/structure/page&1_property.operation=like&p.guessTotal=50&orderby=path`
 
@@ -127,15 +127,15 @@ De forma predeterminada, el Generador de consultas también proporcionaría el n
 
 Por ejemplo, la IU de puede adaptar el siguiente enfoque:
 
-* Obtenga y muestre el recuento preciso del número total de visitas ([SearchResult.getTotalMatches()](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) o total en el `querybuilder.json` Respuesta) son inferiores o iguales a 100;
-* Establecer `guessTotal` a 100 llamando al Generador de consultas.
+* Obtenga y muestre el recuento preciso del número total de visitas ([SearchResult.getTotalMatches()](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) o el total en la respuesta `querybuilder.json`) menores o iguales a 100;
+* Establezca `guessTotal` en 100 al llamar al Generador de consultas.
 
 * La respuesta puede tener el siguiente resultado:
 
-   * `total=43`, `more=false` - Indica que el número total de visitas es 43. La interfaz de usuario puede mostrar hasta diez resultados como parte de la primera página y proporcionar paginación para las tres páginas siguientes. También puede utilizar esta implementación para mostrar un texto descriptivo como **&quot;43 resultados encontrados&quot;**.
-   * `total=100`, `more=true` - Indica que el número total de visitas es mayor que 100 y que se desconoce el recuento exacto. La IU puede mostrarse hasta diez como parte de la primera página y proporcionar paginación para las siguientes diez páginas. También puede utilizar esta función para mostrar un texto como **&quot;se han encontrado más de 100 resultados&quot;**. A medida que el usuario va a las páginas siguientes, las llamadas realizadas al Generador de consultas aumentarían el límite de `guessTotal` y también del `offset` y `limit` parámetros.
+   * `total=43`, `more=false` - Indica que el número total de visitas es 43. La interfaz de usuario puede mostrar hasta diez resultados como parte de la primera página y proporcionar paginación para las tres páginas siguientes. También puede usar esta implementación para mostrar un texto descriptivo como **&quot;43 resultados encontrados&quot;**.
+   * `total=100`, `more=true` - Indica que el número total de visitas es mayor que 100 y que se desconoce el recuento exacto. La IU puede mostrarse hasta diez como parte de la primera página y proporcionar paginación para las siguientes diez páginas. También puede usar esta característica para mostrar un texto como **&quot;se encontraron más de 100 resultados&quot;**. A medida que el usuario va a las páginas siguientes, las llamadas realizadas al Generador de consultas aumentarían el límite de `guessTotal`, así como los parámetros `offset` y `limit`.
 
-Además, utilice `guessTotal` en casos en los que la interfaz de usuario debe utilizar desplazamiento infinito para evitar que el Generador de consultas determine el recuento exacto de visitas.
+Además, use `guessTotal` en casos en los que la interfaz de usuario debe utilizar desplazamiento infinito para evitar que el Generador de consultas determine el recuento exacto de visitas.
 
 ### Buscar archivos jar y pedirlos, primero el más reciente {#find-jar-files-and-order-them-newest-first}
 
@@ -187,11 +187,11 @@ tagid=wknd:activity/cycling
 tagid.property=jcr:content/cq:tags
 ```
 
-Utilice el `tagid` predicado como en el ejemplo si conoce el ID de etiqueta explícito.
+Utilice el predicado `tagid` como en el ejemplo si conoce el ID de etiqueta explícito.
 
-Utilice el `tag` predicado para la ruta del título de la etiqueta (sin espacios).
+Utilice el predicado `tag` para la ruta del título de la etiqueta (sin espacios).
 
-En el ejemplo anterior, porque está buscando páginas (`cq:Page` nodos), utilice la ruta relativa de ese nodo para el `tagid.property` predicado, que es `jcr:content/cq:tags`. De forma predeterminada, la variable `tagid.property` sería `cq:tags`.
+En el ejemplo anterior, ya que está buscando páginas (`cq:Page` nodos), utilice la ruta relativa de ese nodo para el predicado `tagid.property`, que es `jcr:content/cq:tags`. De manera predeterminada, `tagid.property` sería `cq:tags`.
 
 ### Buscar varias rutas (mediante grupos) {#search-under-multiple-paths-using-groups}
 
@@ -204,15 +204,15 @@ group.1_path=/content/wknd/us/en/magazine
 group.2_path=/content/wknd/us/en/adventures
 ```
 
-Esta consulta utiliza un *grupo* (denominado `group`), que actúa para delimitar subexpresiones dentro de una consulta, como lo hacen los paréntesis en las notaciones más estándar. Por ejemplo, la consulta anterior podría expresarse con un estilo más familiar como:
+Esta consulta usa un *grupo* (denominado `group`), que actúa para delimitar subexpresiones dentro de una consulta, como lo hacen los paréntesis en las anotaciones más estándar. Por ejemplo, la consulta anterior podría expresarse con un estilo más familiar como:
 
 `"Experience" and ("/content/wknd/us/en/magazine" or "/content/wknd/us/en/adventures")`
 
-Dentro del grupo del ejemplo, la variable `path` predicado se utiliza varias veces. Para diferenciar y ordenar las dos instancias del predicado (se requiere el orden para algunos predicados), debe incluir como prefijo los predicados `N_` donde `N` es el índice de ordenación. En el ejemplo anterior, los predicados resultantes son `1_path` y `2_path`.
+Dentro del grupo del ejemplo, el predicado `path` se utiliza varias veces. Para diferenciar y ordenar las dos instancias del predicado (el orden es necesario para algunos predicados), debe prefijar los predicados con `N_`, donde `N` es el índice de orden. En el ejemplo anterior, los predicados resultantes son `1_path` y `2_path`.
 
-El `p` in `p.or` es un delimitador especial que indica que lo que sigue (en este caso un `or`) es un *parámetro* del grupo, a diferencia de un subpredicado del grupo, como, por ejemplo, `1_path`.
+El `p` de `p.or` es un delimitador especial que indica que lo que sigue (en este caso un `or`) es un *parámetro* del grupo, a diferencia de un subpredicado del grupo, como `1_path`.
 
-Si no `p.or` se da, entonces todos los predicados se unen ANDed, es decir, cada resultado debe satisfacer todos los predicados.
+Si no se proporciona ningún `p.or`, todos los predicados se unen ANDed, es decir, cada resultado debe satisfacer todos los predicados.
 
 >[!NOTE]
 >
@@ -220,7 +220,7 @@ Si no `p.or` se da, entonces todos los predicados se unen ANDed, es decir, cada 
 
 ### Buscar propiedades {#search-for-properties}
 
-Aquí está buscando todas las páginas de una plantilla determinada, utilizando el `cq:template` propiedad:
+Aquí está buscando todas las páginas de una plantilla determinada, utilizando la propiedad `cq:template`:
 
 `http://<host>:<port>/bin/querybuilder.json?property=cq%3atemplate&property.value=%2fconf%2fwknd%2fsettings%2fwcm%2ftemplates%2fadventure-page-template&type=cq%3aPageContent`
 
@@ -230,7 +230,7 @@ property=cq:template
 property.value=/conf/wknd/settings/wcm/templates/adventure-page-template
 ```
 
-El inconveniente es que la `jcr:content` se devuelven los nodos de las páginas, no las páginas en sí. Para resolver este problema, puede buscar por ruta relativa:
+El inconveniente es que se devuelven los nodos `jcr:content` de las páginas, no las páginas en sí. Para resolver este problema, puede buscar por ruta relativa:
 
 `http://<host>:<port>/bin/querybuilder.json?property=jcr%3acontent%2fcq%3atemplate&property.value=%2fconf%2fwknd%2fsettings%2fwcm%2ftemplates%2fadventure-page-template&type=cq%3aPage`
 
@@ -256,7 +256,7 @@ type=cq:Page
 
 ### Buscar varios valores de propiedad {#search-for-multiple-property-values}
 
-Para evitar grupos grandes cuando desee buscar varios valores de una propiedad (`"A" or "B" or "C"`), puede proporcionar varios valores al `property` predicado:
+Para evitar grupos grandes cuando desee buscar varios valores de una propiedad (`"A" or "B" or "C"`), puede proporcionar varios valores al predicado `property`:
 
 `http://<host>:<port>/bin/querybuilder.json?property=jcr%3atitle&property.1_value=Cycling%20Tuscany&property.2_value=Ski%20Touring&property.3_value=Whistler%20Mountain%20Biking`
 
@@ -347,11 +347,11 @@ p.nodedepth=5
 
 ## Más predicados {#morepredicates}
 
-Para ver más predicados, consulte la [Página Generador de Consultas: Referencia de Predicados](query-builder-predicates.md).
+Para obtener más predicados, consulte la [página de referencia de predicados de Query Builder](query-builder-predicates.md).
 
-También puede consultar la [Javadoc para `PredicateEvaluator` clases](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). El Javadoc para estas clases contiene la lista de propiedades que puede utilizar.
+También puede comprobar el [Javadoc para las `PredicateEvaluator` clases](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). El Javadoc para estas clases contiene la lista de propiedades que puede utilizar.
 
-El prefijo del nombre de clase (por ejemplo, `similar` in [`SimilarityPredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) es el *propiedad principal* de la clase. Esta propiedad también es el nombre del predicado que se utilizará en la consulta (en minúsculas).
+El prefijo del nombre de clase (por ejemplo, `similar` en [`SimilarityPredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) es la *propiedad principal* de la clase. Esta propiedad también es el nombre del predicado que se utilizará en la consulta (en minúsculas).
 
 Para estas propiedades principales, puede acortar la consulta y utilizar `similar=/content/en` en lugar de la variante completa `similar.similar=/content/en`. El formulario completo debe utilizarse para todas las propiedades no principales de una clase.
 
@@ -417,25 +417,25 @@ La misma consulta ejecutada a través de HTTP mediante el servlet Query Builder 
 
 ## Almacenar y cargar consultas {#storing-and-loading-queries}
 
-Las consultas se pueden almacenar en el repositorio para poder utilizarlas más adelante. El `QueryBuilder` proporciona el `storeQuery` método con la siguiente firma:
+Las consultas se pueden almacenar en el repositorio para poder utilizarlas más adelante. El `QueryBuilder` proporciona el método `storeQuery` con la siguiente firma:
 
 ```java
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
 ```
 
-Al usar el [`QueryBuilder#storeQuery`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-) método, el determinado `Query` se almacena en el repositorio como un archivo o como una propiedad según el `createFile` valor de argumento. El siguiente ejemplo muestra cómo guardar un `Query` a la ruta `/mypath/getfiles` como archivo:
+Al utilizar el método [`QueryBuilder#storeQuery`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-), el elemento `Query` dado se almacena en el repositorio como un archivo o como una propiedad según el valor del argumento `createFile`. El siguiente ejemplo muestra cómo guardar un(a) `Query` en la ruta de acceso `/mypath/getfiles` como archivo:
 
 ```java
 builder.storeQuery(query, "/mypath/getfiles", true, session);
 ```
 
-Las consultas almacenadas anteriormente se pueden cargar desde el repositorio mediante la variable [`QueryBuilder#loadQuery`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#loadQuery-java.lang.String-javax.jcr.Session-) método:
+Se puede cargar cualquier consulta previamente almacenada desde el repositorio mediante el método [`QueryBuilder#loadQuery`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#loadQuery-java.lang.String-javax.jcr.Session-):
 
 ```java
 Query loadQuery(String path, Session session) throws RepositoryException, IOException
 ```
 
-Por ejemplo, una `Query` almacenado en la ruta `/mypath/getfiles` se puede cargar mediante el siguiente fragmento de código:
+Por ejemplo, un(a) `Query` almacenado(a) en la ruta de acceso `/mypath/getfiles` se puede cargar mediante el siguiente fragmento de código:
 
 ```java
 Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
@@ -451,16 +451,16 @@ O bien, el servlet JSON de Query Builder en
 
 `http://<host>:<port>/bin/querybuilder.json?path=/tmp`
 
-El `path=/tmp` es solo un ejemplo.
+`path=/tmp` es solo un ejemplo.
 
 ### Depuración general de Recommendations {#general-debugging-recommendations}
 
 ### Obtener XPath explicable mediante el registro {#obtain-explain-able-xpath-via-logging}
 
-Explicar **todo** consultas durante el ciclo de desarrollo en el conjunto de índices de target.
+Explicar **todas** las consultas durante el ciclo de desarrollo con respecto al conjunto de índices objetivo.
 
 1. Habilite los registros DEBUG para que QueryBuilder obtenga una consulta XPath subyacente y explicable
-   * Navegue hasta `https://<host>:<port>/system/console/slinglog`. Crear un registrador para `com.day.cq.search.impl.builder.QueryImpl` en **DEPURAR**.
+   * Navegue hasta `https://<host>:<port>/system/console/slinglog`. Cree un registrador para `com.day.cq.search.impl.builder.QueryImpl` en **DEBUG**.
 1. Después de habilitar DEBUG para la clase anterior, los registros muestran el XPath generado por el Generador de consultas.
 1. Copie la consulta XPath de la entrada de registro de la consulta asociada del Generador de consultas. Por ejemplo:
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]`
@@ -470,7 +470,7 @@ Explicar **todo** consultas durante el ciclo de desarrollo en el conjunto de ín
 
 AEM Use el depurador de Query Builder de la para generar una consulta XPath explicable.
 
-![Query Builder Debugger](assets/query-builder-debugger.png)
+![Depurador de Query Builder](assets/query-builder-debugger.png)
 
 1. Proporcione la consulta del Generador de consultas en el depurador de Query Builder
 1. Ejecución de la búsqueda
@@ -528,5 +528,5 @@ com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 | [com.day.cq.search.facets](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/package-summary.html) | Facetas |
 | [com.day.cq.search.facets.buckets](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Contenedores (incluidos en las facetas) |
 | [com.day.cq.search.eval](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/package-summary.html) | Evaluadores de predicados |
-| [com.day.cq.search.facets.extrators](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Extractores de facetas (para evaluadores) |
-| [com.day.cq.search.writer](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/writer/package-summary.html) | Editor de visitas de resultados JSON para el servlet de Query Builder (`/bin/querybuilder.json`) |
+| [com.day.cq.search.facets.extractores](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Extractores de facetas (para evaluadores) |
+| [com.day.cq.search.writer](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/writer/package-summary.html) | Escritor de visitas de resultados JSON para el servlet de Query Builder (`/bin/querybuilder.json`) |

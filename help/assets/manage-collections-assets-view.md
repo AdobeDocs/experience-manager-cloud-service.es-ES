@@ -96,7 +96,7 @@ Para quitar recursos de una colección:
 
 ## Administración de una colección inteligente {#manage-smart-collection}
 
-Guarde los resultados de búsqueda como una colección inteligente para actualizar dinámicamente el contenido de la colección. Si hay recursos agregados al repositorio de vista de recursos que se ajustan a los criterios de búsqueda definidos al crear la colección inteligente, el contenido de la colección inteligente se actualiza automáticamente al abrir una colección inteligente.
+Guarde los resultados de búsqueda como una colección inteligente para actualizar dinámicamente el contenido de la colección. Si hay recursos agregados al repositorio de vista de Assets que se ajustan a los criterios de búsqueda definidos al crear la colección inteligente, el contenido de la colección inteligente se actualiza automáticamente al abrir una colección inteligente.
 
 ### Crear una colección inteligente {#create-smart-collection}
 
@@ -166,7 +166,7 @@ Para ver y editar metadatos de colección:
 
 ![Compartir vínculo para recursos](assets/share-link-collections.png)
 
-Para obtener más información sobre cómo compartir vínculos de recopilación con partes interesadas externas, consulte [compartir vínculos para recursos](/help/assets/share-links-for-assets-view.md).
+Para obtener más información sobre cómo compartir vínculos de colección con partes interesadas externas, consulte [compartir vínculos para recursos](/help/assets/share-links-for-assets-view.md).
 
 ## Descargar una colección {#download-collection}
 

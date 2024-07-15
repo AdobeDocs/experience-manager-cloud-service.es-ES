@@ -23,8 +23,8 @@ La vista de Assets permite la edición básica de imágenes, como el cambio de t
 
 ## Editar imagen {#edit-image}
 
-Aterrizar en la vista de Assets mediante el vínculo - [Vista de Assets](https://experience.adobe.com/#/assets) y seleccionando el repositorio adecuado. Para obtener acceso, póngase en contacto con el administrador de su organización.
-Para cualquier información de referencia adicional, consulte [Introducción a la vista de Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Explicación de la interfaz de usuario de vistas de Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation), y [Casos de uso de vista de Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
+Aterriza en la vista Assets usando el vínculo [Vista Assets](https://experience.adobe.com/#/assets) y seleccionando el repositorio adecuado. Para obtener acceso, póngase en contacto con el administrador de su organización.
+Para obtener más información de referencia, consulte [Introducción a la vista de Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Comprender la interfaz de usuario de la vista de Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) y [Casos de uso de la vista de Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
@@ -33,7 +33,7 @@ Para cualquier información de referencia adicional, consulte [Introducción a l
 
 ### Editar imagen en la vista de Assets mediante el Adobe Express {#edit-image-on-assets-view-using-adobe-express}
 
-Después de aterrizar en la vista de Assets, haga clic en **Assets**, seleccione una imagen y haga clic en **Editar** desde el carril superior. La nueva pantalla muestra las opciones de edición disponibles, como cambiar el tamaño, quitar el fondo, realizar recortes y convertir entre los formatos JPEG y PNG.
+Después de aterrizar en la vista Assets, haz clic en **Assets**, selecciona una imagen y, a continuación, haz clic en **Editar** en el carril superior. La nueva pantalla muestra las opciones de edición disponibles, como cambiar el tamaño, quitar el fondo, realizar recortes y convertir entre los formatos JPEG y PNG.
 
 #### Cambiar tamaño de imagen {#resize-image-using-express}
 
@@ -85,10 +85,10 @@ Puede convertir rápidamente entre los formatos de imagen JPEG y PNG mediante Ad
 ### Edición de imágenes en el editor integrado de Adobe Express {#edit-images-in-adobe-express-embedded-editor}
 
 Los usuarios con derechos de acceso rápido pueden utilizar el editor Express integrado desde la vista de Assets para editar fácilmente el contenido y crear contenido nuevo con GenAI desde el Adobe Firefly. Esto mejora la reutilización de contenidos y acelera su velocidad. También puede utilizar elementos predefinidos para que su recurso tenga un aspecto impresionante o realizar acciones rápidas para editar la imagen con solo unos clics.
-![express en la IU de essentials](/help/assets/assets/express-in-essentials-ui.jpg)
-Para editar imágenes con [!DNL Adobe Express] editor incrustado, siga los pasos a continuación:
+![express en la interfaz de usuario de essentials](/help/assets/assets/express-in-essentials-ui.jpg)
+Para editar imágenes con el editor incrustado [!DNL Adobe Express], siga los pasos a continuación:
 
-1. Aterrizar en la vista de AEM Assets mediante el vínculo: [Vista de AEM Assets](https://experience.adobe.com/#/assets) y seleccione el repositorio adecuado.
+1. Vaya a la vista de AEM Assets mediante el vínculo [Vista de AEM Assets](https://experience.adobe.com/#/assets) y seleccione el repositorio adecuado.
 1. Haga clic en **Assets**, introduzca una carpeta y seleccione una imagen.
 1. Haga clic en **Abrir en Adobe Express**. La imagen se abre en un lienzo exprés.
 1. Realice los cambios necesarios en la imagen.
@@ -124,7 +124,7 @@ Para editar imágenes con [!DNL Adobe Express] editor incrustado, siga los pasos
 
 [!DNL Assets view] permite crear una nueva plantilla desde cero utilizando el editor integrado de [!DNL Adobe Express]. Para crear un nuevo recurso con [!DNL Adobe Express], ejecute los pasos siguientes:
 
-1. Vaya a **[!UICONTROL Mi Workspace]** y haga clic en **[!UICONTROL Crear]** dentro del titular del Adobe Express que se muestra en la parte superior. El lienzo blanco de [!DNL Adobe Express] se muestra dentro de la interfaz de usuario de [!DNL Assets view].
+1. Vaya a **[!UICONTROL Mi Workspace]** y haga clic en **[!UICONTROL Crear]** dentro del banner de Adobe Express que se muestra en la parte superior. El lienzo blanco de [!DNL Adobe Express] se muestra dentro de la interfaz de usuario de [!DNL Assets view].
 1. Cree su contenido mediante [Plantillas](https://helpx.adobe.com/es/express/using/work-with-templates.html). En caso contrario, vaya a **[!UICONTROL Sus cosas]** para modificar el contenido existente.
 1. Una vez completada la edición, haga clic en **[!UICONTROL Guardar]**.
 1. Especifique la ruta de destino del recurso creado y haga clic en **[!UICONTROL Guardar como nuevo recurso]**.
@@ -195,7 +195,7 @@ TBD: Insert a video of the available social media options.
 
 ### Siguientes pasos {#next-steps}
 
-* Proporcione comentarios sobre productos usando [!UICONTROL Comentarios] opción disponible en la interfaz de usuario de la vista Assets.
+* Proporcione comentarios sobre el producto mediante la opción [!UICONTROL Comentarios] disponible en la interfaz de usuario de la vista Assets.
 
 * Facilite comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar un problema] ![crear un problema de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha.
 

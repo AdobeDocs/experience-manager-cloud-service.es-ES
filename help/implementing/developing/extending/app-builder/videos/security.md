@@ -1,6 +1,6 @@
 ---
 title: Seguridad de App Builder
-description: AEM Obtenga información sobre la seguridad de la aplicación App Builder para la creación de aplicaciones as a Cloud Service.
+description: Obtenga información acerca de la seguridad de aplicaciones de App Builder para AEM as a Cloud Service.
 version: Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development

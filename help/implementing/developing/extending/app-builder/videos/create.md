@@ -38,6 +38,6 @@ Obtenga información sobre cómo inicializar un proyecto de App Builder.
 
 ## Genere, ejecute y pruebe su aplicación
 
-Obtenga información sobre cómo generar, ejecutar y probar su aplicación de App Builder.
+Obtenga información sobre cómo generar, ejecutar y probar la aplicación de App Builder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339171/?quality=12&learn=on)

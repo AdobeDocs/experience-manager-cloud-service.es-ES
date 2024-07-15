@@ -40,17 +40,17 @@ Los casos de uso habituales para usar variables de entorno incluyen:
 >Tiene que estar abonado a la función de [**Administrador de implementación**](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) para agregar o modificar las variables de entorno.
 
 1. Inicie sesión en Adobe Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
-1. En el **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)** , seleccione el que desee gestionar.
-1. En la barra de navegación lateral, seleccione **Entornos** para el programa elegido, seleccione el entorno para el que desea crear una variable de entorno.
+1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el que desee administrar.
+1. En la barra de navegación lateral, seleccione la ventana **Entornos** del programa elegido y, a continuación, seleccione el entorno para el que desea crear una variable de entorno.
 1. En los detalles del entorno, seleccione la pestaña **Configuración** y a continuación, seleccione **Agregar** para abrir el cuadro de diálogo **Configuración del entorno**.
-   * Si agrega una variable de entorno por primera vez, puede ver un **Agregar configuración** en el centro de la página. Puede utilizar este botón o **Agregar** para abrir el cuadro de diálogo **Configuración del entorno**.
+   * Si agrega una variable de entorno por primera vez, verá el botón **Agregar configuración** en el centro de la página. Puede utilizar este botón o **Agregar** para abrir el cuadro de diálogo **Configuración del entorno**.
 
    ![Pestaña Configuración](assets/configuration-tab.png)
 
 1. Introduzca los detalles de la variable.
    * **Nombre**
    * **Valor**
-   * **Servicio aplicado** : define para qué servicio (autor/Publish/vista previa) se aplica la variable o si se aplica a todos los servicios
+   * **Servicio aplicado**: define para qué servicio (autor/Publish/vista previa) se aplica la variable o si se aplica a todos los servicios
    * **Tipo**: Define si la variable es una variable normal o un secreto
 
    ![Agregar una variable](assets/add-variable.png)
@@ -68,7 +68,7 @@ Un indicador con el estado **Actualizando** se muestra en la parte superior de l
 
 >[!TIP]
 >
->Si desea agregar varias variables, se recomienda agregar la primera variable y luego usar el **Añadir** botón en el **Configuración del entorno** para añadir las variables adicionales. De este modo, puede agregarlas con una actualización al entorno.
+>Si desea agregar varias variables, se recomienda agregar la primera variable y luego usar el botón **Agregar** del cuadro de diálogo **Configuración del entorno** para agregar las variables adicionales. De este modo, puede agregarlas con una actualización al entorno.
 
 ## Actualizar variables de entorno {#update-variables}
 
@@ -76,7 +76,7 @@ Una vez creadas las variables de entorno, puede actualizarlas con el botón **Ag
 
 1. Inicie sesión en Adobe Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 1. Cloud Manager enumera los distintos programas disponibles. Seleccione el que desee administrar.
-1. En el panel de navegación, seleccione **Entornos** para el programa elegido, seleccione el entorno para el que desea modificar una variable de entorno.
+1. En el panel de navegación, seleccione la ventana **Entornos** del programa elegido y, a continuación, seleccione el entorno para el que desea modificar una variable de entorno.
 1. En los detalles del entorno, seleccione la pestaña **Configuración** a continuación, seleccione **Agregar/actualizar** en la parte superior derecha para abrir el cuadro de diálogo **Configuración del entorno**.
 1. Con el botón de los tres puntos de la última columna de la fila de la variable que desea modificar, seleccione **Editar** o **Eliminar**.
 
@@ -88,13 +88,13 @@ Una vez creadas las variables de entorno, puede actualizarlas con el botón **Ag
 
    ![Editar variable](assets/edit-variable.png)
 
-1. Después de realizar los cambios de configuración necesarios, seleccione **Guardar**.
+1. Después de hacer los cambios de configuración necesarios, selecciona **Guardar**.
 
 [Al igual que cuando se agregan variables,](#add-variables) se muestra un indicador con el estado **Actualizando** en la parte superior de la tabla y junto a las variables recién actualizadas para indicar que el entorno se está actualizando con la configuración. Una vez finalizadas, las variables de entorno actualizadas se pueden ver en la tabla.
 
 >[!TIP]
 >
->Si desea actualizar varias variables, se recomienda utilizar la variable **Configuración del entorno** para actualizar todas las variables necesarias a la vez antes de pulsar o hacer clic en **Guardar**. De este modo, puede agregarlas con una actualización al entorno.
+>Si desea actualizar varias variables, se recomienda usar el cuadro de diálogo **Configuración del entorno** para actualizar todas las variables necesarias a la vez antes de pulsar o hacer clic en **Guardar**. De este modo, puede agregarlas con una actualización al entorno.
 
 ## Utilizar variables de entorno {#using}
 
@@ -118,7 +118,7 @@ Tanto las variables de entorno normales como los secretos se pueden usar en los 
 
 ### Dispatcher {#dispatcher}
 
-Con [Dispatcher solo se pueden usar variables de entorno normales.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) Los secretos no se pueden usar.
+Con [Dispatcher solo se pueden usar variables de entorno normales.No se pueden usar los secretos ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es).
 
 Sin embargo, las variables de entorno no se pueden usar en `IfDefine` directivas.
 

@@ -14,7 +14,7 @@ ht-degree: 80%
 
 # Administrar los nombres de dominio personalizados {#managing-custom-domain-names}
 
-Cloud Manager le permite ver, actualizar, reemplazar y eliminar nombres de dominio personalizados.
+Cloud Manager permite ver, actualizar, reemplazar y eliminar nombres de dominio personalizados.
 
 ## Ver y actualizar {#view-and-update}
 
@@ -48,7 +48,7 @@ Un usuario con el rol de **Propietario del negocio** o **Administrador de implem
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Vaya a **Configuración de dominio** página desde el **Información general** pantalla.
+1. Vaya a la página **Configuración de dominio** desde la pantalla **Información general**.
 
 1. Identifique la fila del nombre de dominio personalizado que desee eliminar.
 

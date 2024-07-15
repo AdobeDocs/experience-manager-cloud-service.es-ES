@@ -21,7 +21,7 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
 * **Problema**:
    * Ha realizado cambios en una página y publicado la página en el sitio de publicación, pero la versión *antigua* de la página todavía se muestra en el sitio de publicación.
 * **Motivo**:
-   * Esto puede tener varias causas, la mayoría de las veces la caché (el explorador local o Dispatcher), aunque a veces puede ser un problema con la cola de replicación.
+   * Esto puede tener varias causas, la mayoría de las veces la memoria caché (el explorador local o el Dispatcher), aunque a veces puede ser un problema con la cola de replicación.
 * **Soluciones**:
    * Aquí hay varias posibilidades:
    * Confirme que la página se ha duplicado correctamente. Compruebe el estado de la página y, si es necesario, el estado de la cola de replicación.

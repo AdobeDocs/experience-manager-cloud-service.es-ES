@@ -1,5 +1,5 @@
 ---
-title: Cómo invocar el servicio del Modelo de datos de formulario (FDM) desde Forms adaptable mediante API
+title: ¿Cómo invocar el servicio del modelo de datos de formulario (FDM) desde formularios adaptables utilizando API?
 description: Explica la API de invokeWebServices que puede utilizar para invocar servicios web escritos en WSDL desde un campo de un formulario adaptable.
 uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 topic-tags: develop
@@ -7,12 +7,12 @@ discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
 source-wordcount: '488'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 
-# API para invocar el servicio del Modelo de datos de formulario (FDM) desde Forms adaptable {#api-to-invoke-form-data-model-service-from-adaptive-forms}
+# API para invocar el servicio del modelo de datos de formulario (FDM) desde formularios adaptables {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
 ## Información general {#overview}
 
@@ -87,7 +87,7 @@ La estructura de la API especifica los siguientes detalles sobre la operación d
 
 ## Script de ejemplo para invocar un servicio {#sample-script-to-invoke-a-service}
 
-El siguiente script de ejemplo utiliza la variable `guidelib.dataIntegrationUtils.executeOperation` API para invocar el `getAccountById` operación de servicio configurada en `employeeAccount` modelo de datos de formulario (FDM).
+El siguiente script de ejemplo utiliza la API `guidelib.dataIntegrationUtils.executeOperation` para invocar la operación de servicio `getAccountById` configurada en el modelo de datos de formulario (FDM) `employeeAccount`.
 
 La operación `getAccountById` toma el valor del campo del formulario `employeeID` como entrada para el argumento `empId` y devuelve el nombre del empleado y el número y el saldo de la cuenta del empleado correspondiente. Los valores de salida se rellenan en los campos del formulario especificados. Por ejemplo, el valor del argumento `name` se rellena en el elemento de formulario `fullName`, y el valor del argumento `accountNumber` argumento en el elemento de formulario `account`.
 
@@ -119,7 +119,7 @@ La función de devolución de llamada puede tener las funciones de devolución d
 
 ### Script de ejemplo con las funciones de devolución de llamada success y failure {#callback-function-success-failure}
 
-El siguiente script de ejemplo utiliza la variable `guidelib.dataIntegrationUtils.executeOperation` API para invocar el `GETOrder` operación de servicio configurada en `employeeOrder` modelo de datos de formulario (FDM).
+El siguiente script de ejemplo utiliza la API `guidelib.dataIntegrationUtils.executeOperation` para invocar la operación de servicio `GETOrder` configurada en el modelo de datos de formulario (FDM) `employeeOrder`.
 
 La operación `GETOrder` toma el valor del campo de formulario `Order ID` como entrada para el argumento `orderId` y devuelve el valor de la cantidad del pedido en la función de devolución de llamada `success`. Si la función de devolución de llamada `success` no devuelve la cantidad del pedido, la función de devolución de llamada `failure` muestra el mensaje `Error occured`.
 

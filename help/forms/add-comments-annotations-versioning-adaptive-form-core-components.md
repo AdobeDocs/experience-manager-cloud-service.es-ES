@@ -34,10 +34,10 @@ Las versiones de formularios adaptables ayudan a agregar versiones a un formular
 Para crear una versión de un formulario, siga los pasos a continuación:
 
 1. Cree un formulario o utilice un formulario existente.
-1. AEM En la interfaz de usuario de, navegue hasta **[!UICONTROL Form]**>>**[!UICONTROL Forms y documentos]** y seleccione su **Form**.
+1. AEM En la interfaz de usuario de, vaya a **[!UICONTROL Formulario]**>**[!UICONTROL Forms y documentos]** y seleccione su **Formulario**.
 1. En el menú desplegable de selección del panel izquierdo, seleccione **[!UICONTROL Versiones]**.
    ![Seleccionar un formulario](select-a-form.png)
-1. Haga clic en **tres puntos** situado en el panel inferior de la izquierda, haga clic en **[!UICONTROL Guardar como versión]**.
+1. Haga clic en **tres puntos** situados en el panel inferior de la izquierda y, a continuación, haga clic en **[!UICONTROL Guardar como versión]**.
 1. Ahora, proporcione una etiqueta a la versión del formulario y puede proporcionar información sobre el formulario a través del comentario.
    ![Crear una versión de formulario](create-a-form-version.png)
 
@@ -49,9 +49,9 @@ Al editar y actualizar el formulario adaptable, se agrega una nueva versión al 
 
 ### Revertir una versión de formulario {#revert-a-form-version}
 
-Para revertir una versión de formulario a la anterior, seleccione una versión de formulario y haga clic en **[!UICONTROL Volver a esta versión]**.
+Para revertir una versión de formulario a la anterior, seleccione una versión de formulario y haga clic en **[!UICONTROL Revertir a esta versión]**.
 
-![Revertir versión del formulario](revert-form-version.png)
+![Revertir versión de formulario](revert-form-version.png)
 
 ### Comparar versiones de formularios {#compare-form-versions}
 
@@ -61,10 +61,10 @@ Los autores de formularios pueden comparar dos versiones diferentes de un formul
 
 ## Agregar comentarios {#add-comments}
 
-Una revisión es un mecanismo que permite a uno o más revisores realizar comentarios sobre los formularios. Cualquier usuario de un formulario puede realizar comentarios en un formulario o revisarlo mediante comentarios. Para realizar comentarios sobre un formulario, seleccione una **[!UICONTROL Form]** y agregue una **[!UICONTROL Comentario]** al formulario.
+Una revisión es un mecanismo que permite a uno o más revisores realizar comentarios sobre los formularios. Cualquier usuario de un formulario puede realizar comentarios en un formulario o revisarlo mediante comentarios. Para realizar comentarios en un formulario, seleccione un **[!UICONTROL Formulario]** y agregue un **[!UICONTROL Comentario]** al formulario.
 
 >[!NOTE]
-> Cuando se utilizan comentarios en los componentes principales del formulario adaptable, como se ha indicado anteriormente, la funcionalidad del formulario [Crear y administrar revisiones en formularios](/help/forms/create-reviews-forms.md) está deshabilitada.
+> Cuando se usan comentarios en los componentes principales de los formularios adaptables, como se ha indicado anteriormente, la funcionalidad del formulario [Crear y administrar revisiones en formularios](/help/forms/create-reviews-forms.md) está deshabilitada.
 
 
 ![Agregar comentarios en un formulario](form-comments.png)
@@ -73,19 +73,19 @@ Una revisión es un mecanismo que permite a uno o más revisores realizar coment
 
 En muchos casos, los usuarios de grupos de formularios deben agregar anotaciones a un formulario con fines de revisión, por ejemplo, en una pestaña específica de un formulario o de sus componentes. En estos casos, los autores pueden utilizar anotaciones. Para agregar anotaciones a un formulario, realice los siguientes pasos:
 
-1. Abra un formulario en la **[!UICONTROL Editar]** modo.
+1. Abra un formulario en el modo **[!UICONTROL Editar]**.
 
-1. Haga clic en **añadir icono** situado en el carril superior derecho, tal como se indica en la imagen.
+1. Haga clic en el **icono de agregar** ubicado en el carril superior derecho como se indica en la imagen.
    ![Anotación](annotation.png)
 
-1. Haga clic en **añadir icono** situado en el carril superior izquierdo, tal como se indica en la imagen, para añadir la anotación.
-   ![Añadir anotación](add-annotation.png)
+1. Haga clic en el **icono de agregar** ubicado en el carril superior izquierdo tal como se indica en la imagen para agregar la anotación.
+   ![Agregar anotación](add-annotation.png)
 
 1. Ahora puede agregar comentarios y dibujar bocetos con varios colores para formar componentes.
 
 1. Para ver todas las anotaciones agregadas a un formulario, seleccione el formulario y verá las anotaciones agregadas en el panel izquierdo, como se muestra en la imagen.
 
-   ![Ver anotaciones añadidas](see-annotations.png)
+   ![Ver anotaciones agregadas](see-annotations.png)
 
 ## Consulte también {#see-also}
 

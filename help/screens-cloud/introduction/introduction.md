@@ -14,7 +14,7 @@ ht-degree: 59%
 
 # Introducción a AEM Screens as a Cloud Service {#introduction-screens-cloud}
 
-Con Pantallas Adobe Experience Manager AEM () as a Cloud Service, puede crear experiencias de señalización digital atractivas y dinámicas pensadas para consumirse en espacios públicos. Es la siguiente evolución del producto AEM Screens y representa un gran avance en la capacidad de uso y la escalabilidad.
+Con Adobe Experience Manager AEM () Screens as a Cloud Service, puede crear experiencias de señalización digital atractivas y dinámicas pensadas para consumirse en espacios públicos. Es la siguiente evolución del producto AEM Screens y representa un gran avance en la capacidad de uso y la escalabilidad.
 
 AEM Screens as a Cloud Service es una solución de señalización digital que permite a los especialistas en marketing crear y administrar experiencias digitales dinámicas a escala. Además, implica diferentes tipos de pantallas físicas como parte de una estrategia de marketing digital integral. Amplía la oferta omnicanal de Adobe más allá de los canales web y móviles habituales, para incluir también canales de señalización digital que nos rodean. AEM Screens as a Cloud Service permite experiencias de usuario más relevantes, contextuales, productivas y anticipadoras mediante una comprensión profunda de la creación y el ensamblado de contenido, la administración de eventos activada y la reproducción de contenido para todos los consumidores y visitantes de cualquier espacio público.
 
@@ -29,6 +29,6 @@ Screens as a Cloud Service tiene dos componentes principales:
 
 ## Información general de la arquitectura {#architectural-overview}
 
-Como usuario as a Cloud Service de AEM Screens, puede añadir y administrar contenido en los canales. Puede registrar y gestionar pantallas y reproductores desde las interfaces diseñadas específicamente para Screens as a Cloud Service, concretamente, **Proveedor de servicios de Screens** y **Proveedor de contenido de Screens**.
+Como usuario as a Cloud Service de AEM Screens, puede agregar y administrar contenido en canales. Puede registrar y administrar pantallas y reproductores desde las interfaces diseñadas específicamente para Screens as a Cloud Service, concretamente, **Screens Services Provider** y **Screens Content Provider**.
 
 ![imagen](/help/screens-cloud/assets/architecture-screenscloud.png)

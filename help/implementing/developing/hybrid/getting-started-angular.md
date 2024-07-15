@@ -19,7 +19,7 @@ SPA SPA AEM La función de creación de ofrece una solución completa para la as
 
 >[!NOTE]
 >
->Este artículo se basa en el marco de Angular de. Para ver el documento correspondiente al marco de React, consulte [SPA AEM Introducción a la administración de la en React](getting-started-react.md).
+>Este artículo se basa en el marco de Angular de. SPA AEM Para ver el documento correspondiente del marco de React, consulte [Introducción a la administración de datos en la - React](getting-started-react.md).
 
 ## Introducción {#introduction}
 
@@ -45,7 +45,7 @@ Además de la dependencia de Angular SPA SPA esperada, el ejemplo puede utilizar
 
 ### Dependencias {#dependencies}
 
-El `package.json` SPA define los requisitos del paquete de trabajo global de la. AEM Aquí se enumeran las dependencias mínimas requeridas de la.
+SPA El archivo `package.json` define los requisitos del paquete general de. AEM Aquí se enumeran las dependencias mínimas requeridas de la.
 
 ```
 "dependencies": {
@@ -55,13 +55,13 @@ El `package.json` SPA define los requisitos del paquete de trabajo global de la.
 }
 ```
 
-El `aem-clientlib-generator` se utiliza para hacer que la creación de bibliotecas de cliente sea automática como parte del proceso de compilación.
+`aem-clientlib-generator` se usa para hacer que la creación de bibliotecas de cliente sea automática como parte del proceso de compilación.
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-Se pueden encontrar más detalles al respecto [en GitHub aquí](https://github.com/wcm-io-frontend/aem-clientlib-generator).
+Encontrará más detalles al respecto [en GitHub aquí](https://github.com/wcm-io-frontend/aem-clientlib-generator).
 
-El `aem-clientlib-generator` está configurado en la `clientlib.config.js` como se indica a continuación.
+`aem-clientlib-generator` está configurado en el archivo `clientlib.config.js` de la siguiente manera.
 
 ```
 module.exports = {
@@ -92,7 +92,7 @@ module.exports = {
 
 ### Generación {#building}
 
-La creación de la aplicación utiliza [Webpack](https://webpack.js.org/) para la transpilación, además de aem-clientlib-generator para la creación automática de bibliotecas de cliente. Por lo tanto, el comando build será similar a:
+En realidad, al crear la aplicación se usa [Webpack](https://webpack.js.org/) para la transpilación, además de aem-clientlib-generator para la creación automática de bibliotecas de cliente. Por lo tanto, el comando build será similar a:
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 
@@ -112,7 +112,7 @@ Como ejemplo se utiliza un componente de imagen simplificado, pero todos los com
 
 ### app.module.ts {#app-module-ts}
 
-SPA El punto de entrada en la es el `app.module.ts` archivo que se muestra aquí simplificado para centrarse en el contenido importante.
+SPA El punto de entrada en la es el archivo `app.module.ts` que se muestra aquí simplificado para centrarse en el contenido importante.
 
 ```
 // app.module.ts
@@ -135,7 +135,7 @@ import { AppRoutingModule } from './app-routing.module';
 export class AppModule {}
 ```
 
-El `app.module.ts` es el punto de partida de la aplicación y contiene la configuración inicial del proyecto y utiliza `AppComponent` para arrancar la aplicación.
+El archivo `app.module.ts` es el punto de partida de la aplicación, contiene la configuración inicial del proyecto y usa `AppComponent` para arrancar la aplicación.
 
 #### Instanciación estática {#static-instantiation}
 
@@ -143,7 +143,7 @@ Cuando se crea una instancia del componente de forma estática mediante la plant
 
 ### app.component.ts {#app-component-ts}
 
-Una `app.module.ts` correas `AppComponent`A continuación, puede inicializar la aplicación, que se muestra aquí en una versión simplificada para centrarse en el contenido importante.
+Una vez que `app.module.ts` arranca `AppComponent`, puede inicializar la aplicación, que se muestra aquí en una versión simplificada para centrarse en el contenido importante.
 
 ```
 // app.component.ts
@@ -177,7 +177,7 @@ export class AppComponent {
 
 ### main-content.component.ts {#main-content-component-ts}
 
-Al procesar la página, `app.component.ts` llamadas `main-content.component.ts` se enumera aquí en una versión simplificada.
+Al procesar la página, `app.component.ts` llamadas `main-content.component.ts` se muestran aquí en una versión simplificada.
 
 ```
 import { Component } from '@angular/core';
@@ -208,11 +208,11 @@ export class MainContentComponent {
 }
 ```
 
-El `MainComponent` ingiere la representación JSON del modelo de página y procesa el contenido para envolver o decorar cada elemento de la página. Más información sobre la `Page` se puede encontrar en el documento [SPA Modelo de](blueprint.md).
+`MainComponent` ingiere la representación JSON del modelo de página y procesa el contenido para envolver o decorar cada elemento de la página. SPA Para obtener más información sobre `Page`, consulte el documento [Modelo de la aplicación de código ](blueprint.md) de la aplicación de código abierto .
 
 ### image.component.ts {#image-component-ts}
 
-El `Page` está compuesto por componentes. Con el JSON introducido, la variable `Page` puede procesar estos componentes, como `image.component.ts` como se muestra aquí.
+`Page` está compuesto por componentes. Con el JSON introducido, `Page` puede procesar esos componentes como `image.component.ts`, como se muestra aquí.
 
 ```
 /// image.component.ts
@@ -241,11 +241,11 @@ export class ImageComponent {
 MapTo('my-angular-app/components/image')(ImageComponent, ImageEditConfig);
 ```
 
-SPA AEM SPA AEM La idea central de la en la práctica es la idea de asignar componentes de la a componentes de la y actualizar el componente cuando se modifica el contenido (y a la inversa). Ver el documento [SPA Resumen del editor de](editor-overview.md) para obtener un resumen de este modelo de comunicación.
+SPA AEM SPA AEM La idea central de la en la práctica es la idea de asignar componentes de la a componentes de la y actualizar el componente cuando se modifica el contenido (y a la inversa). SPA Consulte el documento [Información general sobre el editor de](editor-overview.md) para obtener un resumen de este modelo de comunicación.
 
 `MapTo('my-angular-app/components/image')(Image, ImageEditConfig);`
 
-El `MapTo` SPA AEM El método asigna el componente de la al componente de la. Admite el uso de una sola cadena o matriz de cadenas.
+SPA AEM El método `MapTo` asigna el componente de la al componente de la. Admite el uso de una sola cadena o matriz de cadenas.
 
 `ImageEditConfig` es un objeto de configuración que contribuye a habilitar las capacidades de creación de un componente al proporcionar los metadatos necesarios para que el editor genere marcadores de posición
 
@@ -257,7 +257,7 @@ Los datos procedentes del modelo se pasan dinámicamente como propiedades del co
 
 ### image.component.html {#image-component-html}
 
-Finalmente, la imagen se puede representar en `image.component.html`.
+Finalmente, la imagen se puede procesar en `image.component.html`.
 
 ```
 // image.component.html
@@ -269,13 +269,13 @@ Finalmente, la imagen se puede representar en `image.component.html`.
 Normalmente, es necesario que los componentes de una aplicación de una sola página compartan información. Existen varias formas recomendadas de hacerlo, enumeradas de la siguiente manera en orden creciente de complejidad.
 
 * **Opción 1:** Centralice la lógica y difunda a los componentes necesarios, por ejemplo, utilizando una clase util como solución pura orientada a objetos.
-* **Opción 2:** Compartir estados de componentes mediante una biblioteca de estados como NgRx.
-* **Opción 3:** Aproveche la jerarquía de objetos personalizando y ampliando el componente contenedor.
+* **Opción 2:** Compartir estados de componentes mediante una biblioteca de estado como NgRx.
+* **Opción 3:** Aproveche la jerarquía de objetos personalizando y extendiendo el componente contenedor.
 
 ## Siguientes pasos {#next-steps}
 
-* [SPA AEM Introducción a la administración de la en React](getting-started-react.md) SPA SPA AEM muestra cómo se crea una básica para trabajar con el Editor de en el uso de React para el uso de la aplicación de react.
+* SPA AEM SPA SPA AEM [Introducción a la en el uso de React](getting-started-react.md) muestra cómo se crea un básico para trabajar con el Editor de la en el uso de React.
 * La [Información general del Editor de SPA](editor-overview.md) profundiza en el modelo de comunicación entre AEM y el SPA.
-* [SPA Proyecto de WKND](wknd-tutorial.md) SPA AEM es un tutorial paso a paso sobre la implementación de un proyecto de simple en el sector de la.
-* [SPA Asignación de modelos dinámicos a componentes para la creación de](model-to-component-mapping.md) SPA AEM explica el modelo dinámico para la asignación de componentes y cómo funciona dentro de la asignación de componentes de la interfaz de usuario de la aplicación de datos en la.
-* [SPA Modelo de](blueprint.md) SPA AEM SPA AEM ofrece una explicación detallada de cómo funciona el SDK de la para la creación de informes en caso de que desee implementar un entorno de trabajo que no sea React o Angular, o simplemente desee tener una comprensión más profunda de la aplicación.
+* SPA SPA AEM El [Proyecto de WKND de](wknd-tutorial.md) es un tutorial paso a paso para implementar un proyecto de simple en el área de trabajo de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de.
+* SPA SPA AEM [Asignación de modelos dinámicos a componentes para el modelo dinámico para el que se ha asignado el componente ](model-to-component-mapping.md) explica el modelo dinámico a la asignación de componentes y cómo funciona dentro de la asignación de componentes de la de trabajo de la.
+* [Modelo de](blueprint.md) ofrece una explicación detallada de cómo funciona el SDK de la para el trabajo en caso de que desee implementar un módulo de trabajo en el que no sea React o Angular, o simplemente desee tener una comprensión más detallada de cómo funciona el SDK de la para el trabajo en el caso de que desee implementar un módulo de trabajo en un entorno de trabajo que no sea React o SPA SPA AEM SPA AEM.

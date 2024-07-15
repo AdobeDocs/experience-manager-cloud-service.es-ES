@@ -1,5 +1,5 @@
 ---
-title: Aplicaciones de App Builder impulsadas por eventos
+title: Aplicaciones App Builder impulsadas por eventos
 description: Aprenda a crear aplicaciones de App Builder impulsadas por eventos.
 version: Cloud Service
 feature: App Builder, Developing
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# Aplicaciones de App Builder impulsadas por eventos
+# Aplicaciones App Builder impulsadas por eventos
 
 ## Introducción a las aplicaciones de App Builder impulsadas por eventos
 

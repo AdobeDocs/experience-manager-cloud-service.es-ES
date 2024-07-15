@@ -13,24 +13,24 @@ ht-degree: 0%
 
 # SPA Materiales de referencia {#spa-reference-materials}
 
-## SPA Referencias de la API de JavaScript de para módulos NMP {#api-references}
+## SPA Referencias de la API de JavaScript para módulos NMP {#api-references}
 
-AEM SPA A continuación, se muestran las referencias de la API de JavaScript disponibles de los módulos NPM para el marco del SDK del Editor de la versión de.
+A continuación, se muestran las referencias de la API de JavaScript AEM SPA disponibles de los módulos NPM para el marco del SDK del Editor de.
 
 * [Asignación de componentes](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [Administrador de modelos de página](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
-* [Reaccionar componentes editables](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
-* [Angular Componentes editables](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
+* [Componentes editables de React](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
+* [Componentes editables de Angular](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
-## Repositorios de GitHub de código abierto {#github-repositories}
+## Abrir repositorios de GitHub de Source {#github-repositories}
 
 SPA A continuación se muestran los repositorios de código abierto en GitHub para las bibliotecas de la.
 
 * [Asignación de componentes](https://github.com/adobe/aem-spa-component-mapping)
 * [Administrador de modelos de página](https://github.com/adobe/aem-spa-page-model-manager)
-* [Reaccionar componentes editables](https://github.com/adobe/aem-react-editable-components)
-* [Angular Componentes editables](https://github.com/adobe/aem-angular-editable-components)
-* [SPA Núcleo del proyecto](https://github.com/adobe/aem-spa-project-core)
+* [Componentes editables de React](https://github.com/adobe/aem-react-editable-components)
+* [Componentes editables de Angular](https://github.com/adobe/aem-angular-editable-components)
+* SPA [Núcleo de proyecto de](https://github.com/adobe/aem-spa-project-core)
 
 >[!TIP]
 >

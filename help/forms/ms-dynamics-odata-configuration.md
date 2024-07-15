@@ -1,6 +1,6 @@
 ---
 title: ¿Cómo configurar  [!DNL Microsoft Dynamics] OData para AEM Forms?
-description: Aprenda a crear un modelo de datos de formulario (FDM) basado en las entidades, atributos y servicios definidos en [!DNL Microsoft Dynamics] servicio.
+description: Obtenga información sobre cómo crear un modelo de datos de formulario (FDM) basado en las entidades, atributos y servicios definidos en el servicio  [!DNL Microsoft Dynamics] .
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
 source-wordcount: '1012'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 79%
 
 ![integración de datos](assets/data-integeration.png)
 
-[!DNL Microsoft Dynamics] es un software de administración de la relación con los clientes (CRM) y planificación de recursos empresariales (ERP) que proporciona soluciones empresariales para crear y administrar cuentas de clientes, contactos, posibles clientes, oportunidades y casos. La integración de datos de [[!DNL Experience Manager Forms] ](data-integration.md) proporciona una configuración de servicio en la nube de OData para integrar Forms con servidores de [!DNL Microsoft Dynamics] en línea y locales. Permite crear el modelo de datos de formulario (FDM) en función de las entidades, atributos y servicios definidos en [!DNL Microsoft Dynamics] servicio. El modelo de datos de formulario (FDM) se puede utilizar para crear Forms adaptable que interactúe con [!DNL Microsoft Dynamics] para activar flujos de trabajo empresariales. Por ejemplo:
+[!DNL Microsoft Dynamics] es un software de administración de la relación con los clientes (CRM) y planificación de recursos empresariales (ERP) que proporciona soluciones empresariales para crear y administrar cuentas de clientes, contactos, posibles clientes, oportunidades y casos. La integración de datos de [[!DNL Experience Manager Forms] ](data-integration.md) proporciona una configuración de servicio en la nube de OData para integrar Forms con servidores de [!DNL Microsoft Dynamics] en línea y locales. Esto permite crear el modelo de datos de formulario (FDM) en función de las entidades, atributos y servicios definidos en el servicio de [!DNL Microsoft Dynamics]. El modelo de datos de formulario se puede utilizar para crear formularios adaptables que interactúen con el servidor [!DNL Microsoft Dynamics] para habilitar los flujos de trabajo empresariales. Por ejemplo:
 
 * consultar datos en el servidor de [!DNL Microsoft Dynamics] y rellenar automáticamente formularios adaptables;
 * escribir datos en [!DNL Microsoft Dynamics] sobre el envío de formularios adaptables;
-* Escritura de datos en [!DNL Microsoft Dynamics] mediante entidades personalizadas definidas en el Modelo de datos de formulario (FDM) y a la inversa
+* Escribir datos en [!DNL Microsoft Dynamics] a través de entidades personalizadas definidas en el modelo de datos de formulario (FDM) y viceversa.
 
 <!--[!DNL Experience Manager Forms] add-on package also includes reference OData configuration that you can use to quickly integrate [!DNL Microsoft Dynamics] with [!DNL Experience Manager Forms].-->
 
@@ -136,20 +136,20 @@ En la pestaña **[!UICONTROL Configuración de autenticación]**:
 
    1. Seleccione **[!UICONTROL OAuth 2.0]** como el tipo de autenticación.
 
-   1. Reemplace los valores predeterminados en los campos **[!UICONTROL ID de cliente]** (también denominado **ID de aplicación**), **[!UICONTROL Secreto de cliente]**, **[!UICONTROL URL de OAuth]**, **[!UICONTROL Actualizar URL del token]**, **[!UICONTROL URL del token de acceso]** y **[!UICONTROL Recurso]** con los valores de su configuración del servicio de [!DNL Microsoft Dynamics]. Es obligatorio especificar la URL de la instancia de Dynamics en la **[!UICONTROL Recurso]** campo para configurar [!DNL Microsoft Dynamics] con un modelo de datos de formulario (FDM). Utilice la URL raíz del servicio para derivar la URL de la instancia de Dynamics. Por ejemplo, [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
+   1. Reemplace los valores predeterminados en los campos **[!UICONTROL ID de cliente]** (también denominado **ID de aplicación**), **[!UICONTROL Secreto de cliente]**, **[!UICONTROL URL de OAuth]**, **[!UICONTROL Actualizar URL del token]**, **[!UICONTROL URL del token de acceso]** y **[!UICONTROL Recurso]** con los valores de su configuración del servicio de [!DNL Microsoft Dynamics]. Es preciso especificar la URL de la instancia de Dynamics en el campo **[!UICONTROL Recurso]** para configurar [!DNL Microsoft Dynamics] con un modelo de datos de formulario (FDM). Utilice la URL raíz del servicio para derivar la URL de la instancia de Dynamics. Por ejemplo, [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
 
    1. Especifique **[!UICONTROL openid]** en el campo **[!UICONTROL Ámbito de autorización]** para el proceso de autorización de [!DNL Microsoft Dynamics].
 
       ![Configuración de autenticación](assets/dynamics_authentication_settings_new.png)
 Modelo de datos de formulario (FDM)
 1. Haga clic en **[!UICONTROL Conectarse a OAuth]**. Se le redirigirá a la página de inicio de sesión de [!DNL Microsoft Dynamics].
-1. Inicie sesión con sus credenciales de [!DNL Microsoft Dynamics] y haga clic en Aceptar para permitir que la configuración del servicio en la nube se conecte al servicio de [!DNL Microsoft Dynamics]. Solo es necesario establecer el modelo de datos de formulario (FDM) entre el servicio en la nube y el servicio.
+1. Inicie sesión con sus credenciales de [!DNL Microsoft Dynamics] y haga clic en Aceptar para permitir que la configuración del servicio en la nube se conecte al servicio de [!DNL Microsoft Dynamics]. Es una tarea que se realiza para establecer el modelo de datos de formulario (FDM) entre el servicio en la nube y el servicio.
 
    Este es el modelo de datos de formulario de la página de configuración del servicio en la nube, la cual muestra un mensaje que indica que la configuración de OData se ha guardado correctamente.
 
 El servicio en la nube MS Dynamics OData Cloud Service (servicio OData) está configurado y conectado con el servicio de Dynamics. Modelo de datos de formulario (FDM)
 
-## Crear un modelo de datos de formulario (FDM) {#create-form-data-model}
+## Crear modelo de datos de formulario (FDM) {#create-form-data-model}
 
 <!--When you install the [!DNL Experience Manager Forms] package, a form data model, **[!DNL Microsoft Dynamics] FDM**, is deployed on your [!DNL Experience Manager] instance. By default, the Form Data Model uses [!DNL Microsoft Dynamics] service configured in the MS Dynamics OData Cloud Service (OData Service) as its data source.
 
@@ -161,19 +161,19 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
  Form Data Model 
 ![default-fdm-1](assets/default-fdm-1.png)-->
 
-Después de configurar el servicio en la nube de OData de MS Dynamics, puede utilizarlo al crear el modelo de datos de formulario (FDM). Para obtener más información, consulte [Crear un modelo de datos de formulario (FDM)](create-form-data-models.md).
+Después de configurar el servicio en la nube de OData de MS Dynamics, puede utilizar el servicio mientras crea el modelo de datos de formulario (FDM). Para obtener más información, consulte [Crear modelo de datos de formulario (FDM)](create-form-data-models.md).
 
-A continuación, puede crear un modelo de datos de formulario basado en formulario adaptable (FDM) y utilizarlo en varios casos de uso de formularios adaptables, como los siguientes:
+A continuación, puede crear un formulario adaptable basado en el modelo de datos de formulario (FDM) y utilizarlo en varios casos de uso de formularios adaptables, como los siguientes:
 
-* prerrellenar formularios adaptables consultando la información de las entidades y servicios de [!DNL Microsoft Dynamics];
-* Invocar [!DNL Microsoft Dynamics] operaciones del servidor definidas en un modelo de datos de formulario (FDM) que utiliza reglas de formularios adaptables
-* escribir datos de formularios enviados en entidades de [!DNL Microsoft Dynamics].
+* Rellenado previo de los formularios adaptables consultando la información de las entidades y servicios de [!DNL Microsoft Dynamics]
+* invocar operaciones del servidor de [!DNL Microsoft Dynamics] definidas en un modelo de datos de formulario (FDM) que utiliza reglas de formularios adaptables;
+* Escribir datos de formularios enviados a las entidades de [!DNL Microsoft Dynamics].
 
 <!--It is recommended to create a copy of the Form Data Model provided with the [!DNL Experience Manager Forms] package and configure data models and services to suit your requirements. It will ensure that any future updates to the package do not override your form data model.-->
 
 Puede [configurar la acción de envío del modelo de datos de formulario](/help/forms/using-form-data-model.md) para que un formulario adaptable envíe datos a OData de Microsoft Dynamics.
 
-Para obtener más información sobre la creación y el uso del modelo de datos de formulario (FDM) en flujos de trabajo empresariales, consulte [Integración de datos](data-integration.md).
+Para obtener más información sobre la creación y el uso de modelos de datos de formulario en flujos de trabajo empresariales, consulte [Integración de datos](data-integration.md).
 
 ## Artículos relacionados
 

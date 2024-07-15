@@ -51,7 +51,7 @@ Consulte la sección [Configuración avanzada de redes para regiones de publicac
 
 ## Registro {#logging}
 
-Si se habilitan regiones de publicación adicionales, se habilitarán registros independientes para cada región a través de Cloud Manager. Para obtener más información, consulte [Acceso y administración de registros](/help/implementing/cloud-manager/manage-logs.md) y [Registros para regiones de publicación adicionales](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions).
+Si se habilitan regiones de publicación adicionales, se habilitarán registros independientes para cada región a través de Cloud Manager. Para obtener más información, vea [Obtener acceso y administrar registros](/help/implementing/cloud-manager/manage-logs.md) y [Registros para regiones de Publish adicionales](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions).
 
 ## Restricciones {#limitations}
 

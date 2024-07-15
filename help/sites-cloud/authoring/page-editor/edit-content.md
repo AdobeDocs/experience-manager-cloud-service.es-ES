@@ -20,9 +20,9 @@ AEM El editor de páginas de es una potente herramienta para crear el contenido 
 
 Hay tres acciones básicas que puede realizar en el editor de páginas para editar el contenido:
 
-1. [Adición de nuevos componentes](#adding-components) arrastrándolos y soltándolos en la página.
-1. [Adición de nuevos recursos](#adding-asset) arrastrándolos y soltándolos en la página.
-1. [Edición de componentes in situ](#edit-in-place) que ya existen en la página.
+1. [Agregando nuevos componentes](#adding-components) arrastrándolos y soltándolos en la página.
+1. [Agregando nuevos recursos](#adding-asset) arrastrándolos y soltándolos en la página.
+1. [Editando componentes in situ](#edit-in-place) que ya existen en la página.
 
 AEM El editor de páginas de proporciona una interfaz de usuario intuitiva para realizar estas tareas, además de proporcionar acceso a funciones más avanzadas.
 
@@ -34,7 +34,7 @@ Además, el editor le permite organizar el contenido existente en su página per
 
 ## Agregando componentes {#adding-components}
 
-Puede arrastrar y soltar nuevos componentes en la página seleccionándolos en el menú [navegador de componentes en el panel lateral](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) y soltarlos en un marcador de posición de componente.
+Puede arrastrar y soltar nuevos componentes en su página seleccionándolos en el [explorador de componentes del panel lateral](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) y soltándolos en un marcador de posición de componente.
 
 ### Marcador de posición de componente {#component-placeholder}
 
@@ -44,7 +44,7 @@ El marcador de posición de componente es un indicador que muestra dónde se col
 
   ![Marcador de posición al añadir un componente nuevo a una página](assets/edit-content-component-placeholder.png)
 
-* Cuándo [mover un componente existente,](#movging-components) aparecerá como un cuadrado azul.
+* Al [mover un componente existente,](#movging-components) aparecerá como un cuadrado azul.
 
   ![Marcador de posición al mover un componente ya existente en una página](assets/edit-content-move-placeholder.png)
 
@@ -54,9 +54,9 @@ En ambos casos, el destino seleccionado aparecerá como un contorno azul debajo 
 
 Puede seleccionar un componente nuevo mediante el [navegador de componentes](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). El [marcador de posición de componente](#component-placeholder) le muestra dónde está colocando el componente.
 
-1. Asegúrese de que el editor de páginas está en [**Editar** modo.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
-1. Abra el [navegador de componentes.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
-1. Arrastre el componente requerido a [posición requerida](#component-placeholder) y la versión.
+1. Asegúrese de que el editor de páginas esté en modo [**Editar**.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
+1. Abra el [explorador de componentes.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+1. Arrastre el componente requerido a la [posición requerida](#component-placeholder) y suéltelo.
 1. [Editar](#edit-content) el componente recién colocado.
 
 >[!NOTE]
@@ -65,18 +65,18 @@ Puede seleccionar un componente nuevo mediante el [navegador de componentes](/he
 
 ### Adición de un componente desde el sistema de párrafos {#adding-a-component-from-the-paragraph-system}
 
-Puede agregar un componente nuevo mediante el **Arrastre los componentes aquí** marcador de posición del sistema de párrafos:
+Puede agregar un componente nuevo mediante el marcador de posición **Arrastrar componentes aquí** del sistema de párrafos:
 
-1. Asegúrese de que el editor de páginas está en [**Editar** modo.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
+1. Asegúrese de que el editor de páginas esté en modo [**Editar**.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
 1. Existen dos formas de seleccionar y añadir un componente nuevo desde el sistema de párrafos:
 
    * Seleccione la opción **Insertar componente** (+) de la barra de herramientas de un componente existente o del cuadro **Arrastrar componentes aquí**.
 
      ![Insertar un componente](assets/edit-content-drag-components-here.png)
 
-   * Si está en un dispositivo de escritorio, puede hacer doble clic en el **Arrastre los componentes aquí** cuadro.
+   * Si está en un dispositivo de escritorio, puede hacer doble clic en el cuadro **Arrastrar componentes aquí**.
 
-1. El **Insertar nuevo componente** diálogo abierto para permitirle seleccionar el componente requerido. Toque o haga clic en el componente que desee añadir.
+1. Se abre el cuadro de diálogo **Insertar nuevo componente** para que pueda seleccionar el componente requerido. Toque o haga clic en el componente que desee añadir.
 
    * Utilice los filtros de búsqueda para encontrar el componente.
    * Utilice el icono de información situado junto a los nombres de los componentes para obtener más información sobre el componente.
@@ -87,17 +87,17 @@ Puede agregar un componente nuevo mediante el **Arrastre los componentes aquí**
 
 ## Agregar un recurso {#adding-asset}
 
-También puede agregar un componente nuevo a la página arrastrando un recurso desde el [explorador de recursos.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) Esto crea automáticamente un componente del tipo adecuado (y que contiene el recurso).
+También puede agregar un componente nuevo a la página arrastrando un recurso desde el explorador de recursos [.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser): esto crea automáticamente un componente del tipo apropiado (y que contiene el recurso).
 
 Puede configurar este comportamiento en su instalación. Consulte el documento [Guía de referencia de componentes](/help/implementing/developing/components/reference.md#component-placeholders) para obtener más información.
 
 Para crear un componente arrastrando uno de los tipos de activo anteriores:
 
-1. Asegúrese de que la página se encuentra en [**Editar** modo.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
+1. Asegúrese de que la página esté en modo [**Editar**.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
 1. Abra el [explorador de recursos](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser).
-1. Arrastre el recurso en cuestión hasta la posición deseada. El [marcador de posición de componente](#component-placeholder) muestra dónde se coloca el componente y un destino mostrará dónde se insertará.
+1. Arrastre el recurso en cuestión hasta la posición deseada. El [marcador de posición de componente](#component-placeholder) le muestra dónde está colocado el componente y un destino mostrará dónde se insertará.
 1. Libere el recurso en el destino. Se crea un componente, adecuado para el tipo de recurso, en la ubicación requerida que contiene el recurso seleccionado.
-1. [Editar](#edit-content) Seleccione el componente si es necesario.
+1. [Editar](#edit-content) el componente si es necesario.
 
 >[!NOTE]
 >
@@ -113,15 +113,15 @@ Al seleccionar un componente, se abre la barra de herramientas de componentes. E
 
 Las acciones disponibles en la barra de herramientas de componentes son apropiadas para el componente seleccionado. Puede ver más o menos en función del componente seleccionado y pueden describirse o no aquí.
 
-* **Editar** permite modificar el contenido del componente, a menudo in situ. Su comportamiento depende del componente.
+* **Editar** le permite modificar el contenido del componente, a menudo in situ. Su comportamiento depende del componente.
 
   Botón ![Editar](assets/edit-content-edit.png)
 
-* **Configurar** permite cambiar algunos parámetros del componente no relacionados directamente con su contenido, normalmente en un cuadro de diálogo. Su comportamiento depende del componente.
+* **Configurar** le permite cambiar algunos parámetros del componente que no están directamente relacionados con su contenido, normalmente en un cuadro de diálogo. Su comportamiento depende del componente.
 
   ![Botón Configurar](assets/edit-content-configure.png)
 
-* **Copiar** copia el componente en el portapapeles para pegarlo en otra parte. El componente original permanece sin cambios.
+* **Copiar** copia el componente en el portapapeles para pegarlo en otro lugar. El componente original permanece sin cambios.
 
   ![Botón Copiar](assets/edit-content-copy.png)
 
@@ -129,15 +129,15 @@ Las acciones disponibles en la barra de herramientas de componentes son apropiad
 
   ![Botón Cortar](assets/edit-content-cut.png)
 
-* **Eliminar** elimina el componente de la página con la confirmación.
+* **Eliminar** elimina el componente de la página con su confirmación.
 
   ![Botón Eliminar](assets/edit-content-delete.png)
 
-* **Insertar componente** abre el cuadro de diálogo en [añada un nuevo componente.](#adding-a-component-from-the-paragraph-system)
+* **Insertar componente** abre el cuadro de diálogo para [agregar un componente nuevo.](#adding-a-component-from-the-paragraph-system)
 
   ![Botón Insertar](assets/edit-content-insert-component.png)
 
-* **Pegar** pega el componente del portapapeles en la página. Si el original permanece, depende de si ha utilizado **Copiar** o **Cortar**.
+* **Pegar** pega el componente del portapapeles en la página. Si el original permanece, depende de si usó **Copiar** o **Cortar**.
 
    * Puede pegar componentes en la misma página o en otra distinta.
    * Si pega contenido en otra página que ya estaba abierta antes de la operación de cortar/pegar, debe actualizar la página para ver el contenido que se pegó.
@@ -146,7 +146,7 @@ Las acciones disponibles en la barra de herramientas de componentes son apropiad
 
   ![Botón Pegar](assets/edit-content-paste.png)
 
-* **Grupo** permite seleccionar varios componentes a la vez. En un dispositivo de escritorio puede conseguir lo mismo haciendo **Control + clic** o **Comando + clic**.
+* **Grupo** le permite seleccionar varios componentes a la vez. En un dispositivo de escritorio puede conseguir lo mismo haciendo **Control + clic** o **Comando + clic**.
 
   ![Botón Agrupar](assets/edit-content-group.png)
 
@@ -154,19 +154,19 @@ Las acciones disponibles en la barra de herramientas de componentes son apropiad
 
   ![Botón Principal](assets/edit-content-parent.png)
 
-* **Diseño** permite modificar la variable [layout](#editing-component-layout) del componente seleccionado.
+* **Diseño** le permite modificar el [diseño](#editing-component-layout) del componente seleccionado.
 
    * Esta opción se aplica únicamente al componente seleccionado y no activa el [modo de diseño](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) para toda la página.
 
   ![Botón Diseño](assets/edit-content-layout.png)
 
-* **Conversión en una variación de fragmento de experiencia** permite crear una [fragmento de experiencias](/help/sites-cloud/authoring/fragments/content-fragments.md) del componente seleccionado o añadirlo a un fragmento de experiencia existente.
+* **Convertir en una variación de fragmento de experiencia** le permite crear un [fragmento de experiencia](/help/sites-cloud/authoring/fragments/content-fragments.md) a partir del componente seleccionado o agregarlo a un fragmento de experiencia existente.
 
   ![Convertir para el botón Fragmentos de experiencias](assets/edit-content-convert.png)
 
 ### Cuadro de diálogo de edición de contenido   {#component-edit-dialog}
 
-Algunos componentes ofrecen opciones de edición adicionales más allá de lo que está disponible in situ. Puede abrir el cuadro de diálogo de edición de un componente en [Icono Editar (lápiz) de la barra de herramientas de componentes](#component-toolbar) para acceder a opciones de configuración adicionales.
+Algunos componentes ofrecen opciones de edición adicionales más allá de lo que está disponible in situ. Puede abrir el cuadro de diálogo de edición de un componente mediante el icono [Editar (lápiz) de la barra de herramientas del componente](#component-toolbar) para acceder a opciones de configuración adicionales.
 
 Las opciones de edición exactas dependerán del componente. Para algunos componentes [algunas acciones solo estarán disponibles en el modo de pantalla completa](#edit-content-full-screen-mode). Por ejemplo:
 
@@ -188,7 +188,7 @@ La edición de pantalla completa permite mostrar más opciones de edición que e
 
 ![Componente de imagen en pantalla completa](assets/edit-content-image-component-full-screen.png)
 
-Utilice el **Minimizar** para que exista el modo de pantalla completa.
+Use el botón **Minimizar** para salir del modo de pantalla completa.
 
 ![Botón Minimizar](assets/edit-content-minimize.png)
 
@@ -199,7 +199,7 @@ Para mover un componente:
 1. Seleccione el componente que desea mover pulsando y manteniendo pulsado o pulsando y manteniendo pulsado.
 1. Arrastre el componente a la nueva ubicación.
 
-   * El editor de páginas indica la posición del componente con un [placeholder](#component-placeholder) y dónde se puede soltar el párrafo con un destino.
+   * El editor de páginas indica la posición del componente con un [marcador de posición](#component-placeholder) y dónde se puede colocar el párrafo con un destino.
 
    ![Mover un componente](assets/edit-content-move-placeholder.png)
 
@@ -213,13 +213,13 @@ Para mover un componente:
 
 En vez de pasar repetidamente de la edición al [modo de diseño](/help/sites-cloud/authoring/page-editor/responsive-layout.md) para ajustar un componente, puede seleccionar la acción **Diseño** del mismo. Podrá cambiar su diseño sin tener que abandonar el modo de edición, por lo que ahorrará tiempo.
 
-1. En **Editar** en el modo de la consola sitios, seleccione un componente para mostrar la barra de herramientas del componente.
+1. En el modo **Editar** de la consola Sites, seleccione un componente para mostrar la barra de herramientas del componente.
 
-1. Seleccione el **Diseño** acción para ajustar el diseño del componente.
+1. Seleccione la acción **Diseño** para ajustar el diseño del componente.
 
    ![Botón Diseño de la barra de herramientas de componentes](assets/edit-content-layout.png)
 
-1. Una vez seleccionada la acción Diseño, puede modificar el diseño del componente como lo haría en [modo de diseño.](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode)
+1. Una vez seleccionada la acción Diseño, puede modificar el diseño del componente como lo haría en el [modo Diseño.](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode)
 
    * Se muestran los controles de cambio de tamaño del componente.
    * La barra de herramientas del emulador aparece en la parte superior de la pantalla.
@@ -227,7 +227,7 @@ En vez de pasar repetidamente de la edición al [modo de diseño](/help/sites-cl
 
    ![Un componente en modo de diseño](assets/edit-content-layout-mode.png)
 
-1. Después de realizar los cambios de diseño necesarios, toque o haga clic en **Cerrar** en el menú de acciones del componente para dejar de modificar el diseño del componente y la barra de herramientas del componente vuelve a su estado de edición normal.
+1. Después de realizar los cambios de diseño necesarios, toque o haga clic en el botón **Cerrar** del menú de acción del componente para detener la modificación del diseño y la barra de herramientas del componente vuelve a su estado de edición normal.
 
    ![La barra de herramientas de componentes de un componente de página](assets/edit-content-layout-close.png)
 
@@ -254,6 +254,6 @@ Puede cancelar y volver a habilitar la herencia. Según el componente, estas opc
 
   ![Botón Volver a activar herencia](assets/edit-content-re-enable-inheritance.png)
 
-* **Despliegue** también está disponible en el modelo o en el origen de Live Copy
+* **El despliegue** también está disponible en el modelo o en el origen de Live Copy
 
   ![Botón Desplegar](assets/edit-content-rollout.png)

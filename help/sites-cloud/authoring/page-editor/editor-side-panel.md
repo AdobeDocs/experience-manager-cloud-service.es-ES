@@ -18,23 +18,23 @@ AEM Aprenda a utilizar el panel lateral en el editor de sitios de para agregar c
 
 ## Modos del panel lateral {#modes}
 
-Siempre se puede acceder al panel lateral en el editor de páginas tocando o haciendo clic en **Alternar panel lateral** en la barra de herramientas del editor de páginas.
+Siempre se puede acceder al panel lateral en el editor de páginas tocando o haciendo clic en el icono **Alternar panel lateral** en la barra de herramientas del editor de páginas.
 
 ![Alternar panel lateral](assets/editor-side-panel-side-panel-toggle.png)
 
 Cuando abra el panel lateral, se deslizará para abrirse de izquierda a derecha y podrá seleccionar entre tres pestañas importantes:
 
-* [El explorador de componentes](#components-browser) para añadir contenido nuevo a su página
-* [El explorador de recursos](#assets-browser) para agregar nuevos recursos a su página
-* [El árbol de contenido](#content-tree) para examinar la estructura de la página
+* [Explorador de componentes](#components-browser) para agregar contenido nuevo a su página
+* [Explorador de recursos](#assets-browser) para agregar nuevos recursos a su página
+* [El árbol de contenido](#content-tree) para examinar la estructura de su página
 
 ## Navegador de componentes   {#components-browser}
 
-[Componentes](/help/implementing/developing/components/overview.md) AEM son los bloques de creación utilizados para crear contenido con el editor de páginas de. Puede colocar varios componentes en una página y configurar sus opciones para crear la página de contenido.
+AEM [Componentes](/help/implementing/developing/components/overview.md) son los componentes básicos que se usan para crear contenido con el editor de páginas de la página de la. Puede colocar varios componentes en una página y configurar sus opciones para crear la página de contenido.
 
 El navegador de componentes muestra todos los componentes que se pueden utilizar en la página actual. Se pueden arrastrar a la ubicación adecuada y editarse para añadir contenido.
 
-Haga clic o pulse en **Componentes** en el panel lateral para acceder a la pestaña **Componentes** explorador.
+Pulse o haga clic en la ficha **Componentes** del panel lateral para acceder al explorador **Componentes**.
 
 ![Icono del explorador de componentes en el panel lateral](assets/editor-side-panel-components-browser.png)
 
@@ -62,7 +62,7 @@ Para añadir un componente a la página, haga clic en el componente requerido y 
 
 ### Uso del navegador de componentes {#using-component-browser}
 
-Componentes en la **Componentes** Los navegadores están representados por:
+Los componentes del explorador **Components** están representados por:
 
 * Nombre del componente
 * Grupo de componentes (en gris)
@@ -75,17 +75,17 @@ Desde la barra de herramientas superior del explorador de **componentes**, puede
 * Filtrar componentes por su nombre.
 * Restringir la visualización a un grupo específico mediante la selección desplegable.
 
-Para obtener una descripción más detallada del componente, puede seleccionar el icono de información junto al componente en la **Componentes** explorador (si está disponible). Por ejemplo, para el **fragmento de contenido**:
+Para obtener una descripción más detallada del componente, puede seleccionar el icono de información junto al componente en el explorador **Componentes** (si está disponible). Por ejemplo, para el **fragmento de contenido**:
 
 ![Información del explorador de componentes](assets/editor-side-panel-component-description.png)
 
-Para obtener información más detallada sobre los componentes disponibles, consulte la [Consola de componente.](/help/sites-cloud/authoring/components-console.md)
+Para obtener información más detallada acerca de los componentes disponibles, consulte la [Consola de componentes.](/help/sites-cloud/authoring/components-console.md)
 
 ## Navegador de recursos {#assets-browser}
 
-El **Assets** el explorador muestra todo [activos](/help/assets/overview.md) que están disponibles para su uso en la página actual.
+El explorador **Assets** muestra todos los [recursos](/help/assets/overview.md) que se pueden usar en la página actual.
 
-Haga clic o pulse en **Assets** en el panel lateral para examinar los recursos.
+Toque o haga clic en la ficha **Assets** del panel lateral para examinar los recursos.
 
 ![Botón Explorador de recursos](assets/editor-side-panel-assets-browser-tab.png)
 
@@ -115,13 +115,13 @@ Para añadir un recurso a la página, seleccione el recurso necesario y arrástr
 
 ![Explorador de recursos en dispositivos de escritorio](assets/editor-side-panel-assets-browser-desktop.png)
 
-### Uso del explorador de recursos {#using-assets-browser}
+### Uso del explorador Assets {#using-assets-browser}
 
 Para añadir un recurso a la página, selecciónelo y arrástrelo a la ubicación deseada. Esto puede ser lo siguiente:
 
 * Un componente existente del tipo adecuado.
    * Por ejemplo, puede arrastrar un recurso de tipo imagen hacia un componente de imagen.
-* A [placeholder](/help/sites-cloud/authoring/page-editor/edit-content.md#component-placeholder) en el sistema de párrafos para crear un componente del tipo adecuado.
+* Un [marcador de posición](/help/sites-cloud/authoring/page-editor/edit-content.md#component-placeholder) en el sistema de párrafos para crear un componente del tipo apropiado.
    * Por ejemplo, puede arrastrar un recurso de tipo imagen al sistema de párrafos para crear un componente de imagen.
 
 >[!NOTE]
@@ -142,13 +142,13 @@ Si necesita realizar rápidamente un cambio en un recurso, puede iniciar el [edi
 
 ## Árbol de contenido {#content-tree}
 
-El **Árbol de contenido** ofrece información general de todos los componentes de la página en una jerarquía, para que pueda ver de un vistazo cómo está compuesta la página.
+El **Árbol de contenido** proporciona una descripción general de todos los componentes de la página en una jerarquía para que pueda ver de un vistazo cómo está compuesta la página.
 
 >[!NOTE]
 >
 >Si edita una página en un dispositivo móvil, el árbol de contenido no está disponible (si el valor de la anchura del explorador es inferior a 1024 píxeles).
 
-Haga clic o pulse en **Árbol de contenido** para acceder al árbol de contenido.
+Pulse o haga clic en la ficha **Árbol de contenido** para acceder al árbol de contenido.
 
 ![Botón Árbol de contenido](assets/editor-side-panel-content-tree-tab.png)
 
@@ -178,8 +178,8 @@ Si el componente en el que hace clic en el árbol se puede editar, aparecerá un
 
 ### Una Live Copy {#live-copy}
 
-Una página que forma parte de un [Live Copy](/help/sites-cloud/administering/msm/overview.md), donde los componentes se heredan de otra página, tendrá diferentes opciones.
+Una página que forma parte de [livecopy](/help/sites-cloud/administering/msm/overview.md), donde los componentes se heredan de otra página, tendrá opciones diferentes.
 
 ## Explorador de contenido asociado {#associated-content-browser}
 
-Si la página contiene fragmentos de contenido, también puede acceder a la variable [explorador de contenido asociado.](/help/sites-cloud/authoring/fragments/content-fragments.md#using-associated-content)
+Si su página contiene fragmentos de contenido, también tiene acceso al [explorador de contenido asociado.](/help/sites-cloud/authoring/fragments/content-fragments.md#using-associated-content)

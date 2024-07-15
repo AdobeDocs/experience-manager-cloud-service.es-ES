@@ -14,9 +14,9 @@ ht-degree: 78%
 
 # Diseño adaptable {#responsive-layout}
 
-AEM le permite tener un diseño adaptable para las páginas mediante el uso de la variable **Contenedor de diseño** componente.
+AEM le permite tener un diseño adaptable para sus páginas mediante el componente **Contenedor de diseño**.
 
-Proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula adaptable. Esta cuadrícula puede reorganizar el diseño según el tamaño y el formato del dispositivo o la ventana. El componente se utiliza junto con el [**Diseño** modo](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector), que le permite crear y editar su diseño interactivo en función del dispositivo.
+Proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula adaptable. Esta cuadrícula puede reorganizar el diseño según el tamaño y el formato del dispositivo o la ventana. El componente se usa junto con el modo [**Diseño**](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector), que le permite crear y editar su diseño interactivo en función del dispositivo.
 
 El contenedor de diseño:
 
@@ -52,7 +52,7 @@ Según el proyecto, el contenedor de diseño se puede utilizar como sistema de p
 
 >[!TIP]
 >
->El Adobe proporciona [Documentación de GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) AEM AEM del diseño interactivo como referencia que se puede dar a los desarrolladores de front-end para que puedan utilizar la cuadrícula de la fuera de la red de la interfaz de usuario de, por ejemplo, al crear maquetas de HTML AEM estáticos para un sitio futuro en el que se vaya a realizar un seguimiento de la interfaz de usuario de la interfaz de usuario de la aplicación de red.
+>El Adobe AEM AEM proporciona [documentación de GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) del diseño interactivo como referencia que se puede proporcionar a los desarrolladores de interfaces de usuario, lo que les permite usar la cuadrícula de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario de GitHub, por ejemplo, al crear maquetas de HTML AEM estáticos para un sitio de interfaz de usuario en el futuro. El diseño de la interfaz de usuario de GitHub se puede proporcionar a los desarrolladores de interfaces de usuario de usuario de GitHub como una referencia que les permita usar la cuadrícula de la interfaz de usuario de un sitio en el futuro.
 
 >[!NOTE]
 >
@@ -99,7 +99,7 @@ Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una an
 
    La barra de herramientas del emulador muestra opciones de diseño adicionales:
 
-   * **Rotar dispositivo** : Permite girar un dispositivo desde la orientación vertical (vertical) a la horizontal (horizontal) y a la inversa.
+   * **Rotar dispositivo**: permite girar un dispositivo desde la orientación vertical (vertical) a la horizontal (horizontal) y a la inversa.
 
    ![Botón Girar el dispositivo a horizontal](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
    ![Botón Girar el dispositivo a vertical](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)
@@ -137,16 +137,16 @@ Un **contenedor de diseño** es un sistema de párrafos que:
 
 >[!NOTE]
 >
->Si no está disponible, la variable **Contenedor de diseño** debe ser explícitamente [activado para un sistema de párrafos o una página.](/help/sites-cloud/administering/responsive-layout.md)
+>Si no está disponible, el **contenedor de diseño** debe estar [activado explícitamente para un sistema de párrafos o una página.](/help/sites-cloud/administering/responsive-layout.md)
 
-1. El **contenedor de diseño** está disponible como componente estándar en el [navegador de componentes](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). Desde aquí puede arrastrarlo a la ubicación requerida en la página después de la cual puede ver el **Arrastrar componentes aquí** marcador.
+1. El **contenedor de diseño** está disponible como componente estándar en el [navegador de componentes](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). Desde aquí puede arrastrarlo a la ubicación deseada en la página tras la cual podrá ver el marcador de posición **Arrastrar componentes aquí**.
 1. A continuación, puede agregar componentes al contenedor del diseño. Estos componentes contendrán el contenido real:
 
    ![Contenedor de diseño](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
 
 ## Selección y ejecución de una acción en un contenedor de diseños (modo de edición) {#selecting-and-taking-action-on-a-layout-container-edit-mode}
 
-Al igual que con otros componentes, puede seleccionar un contenedor de diseño (cuando se encuentra en ) y luego actuar en él (cuando se encuentra en **Editar** modo):
+Al igual que con otros componentes, puede seleccionar un contenedor de diseño (en modo **Editar**) y luego actuar en él (copiar, cortar, eliminar):
 
 >[!CAUTION]
 >
@@ -184,7 +184,7 @@ El modo **Diseño** puede iniciarse de dos formas.
 * Mediante el uso del [menú de modo de la barra de herramientas](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) y seleccionando el modo **Diseño**.
    * Seleccione el modo **Diseño** del mismo modo que si desea cambiar al modo **Editar** o **Segmentación**.
    * El modo **Diseño** se mantiene y no abandona el modo **Diseño** hasta que se selecciona otro modo a través del selector correspondiente.
-* Cuándo [edición de un componente individual.](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout)
+* Al [editar un componente individual.](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout)
    * Mediante la opción **Diseño** en el menú de acción rápida del componente, puede cambiar al modo **Diseño**.
    * El modo **Diseño** persiste mientras se edita el componente y vuelve al modo **Editar** en cuanto el enfoque cambia a otro componente.
 
@@ -199,13 +199,13 @@ En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
   >Se mantienen las proporciones y relaciones al cambiar el tamaño de componentes como **Imágenes**.
 
 * Seleccione un componente de contenido, la barra de herramientas le permite:
-   * **Principal** : permite seleccionar todo el componente del contenedor de diseños para realizar acciones en conjunto.
+   * **Principal**: le permite seleccionar todo el componente del contenedor de diseño para realizar acciones en conjunto.
    * **Flotar a una línea nueva**: se mueve el componente a una línea nueva, según el espacio disponible en la cuadrícula.
    * **Ocultar componente**: el componente se hace invisible (puede restaurarse desde la barra de herramientas del contenedor de diseños).
 
   ![Ocultar componente](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* Entrada **Diseño** modo puede seleccionar el **Arrastre los componentes aquí** para seleccionar todo el componente. La barra de herramientas se muestra para este modo.
+* En el modo **Diseño** puede seleccionar **Arrastrar componentes aquí** para seleccionar todo el componente. La barra de herramientas se muestra para este modo.
 
   La barra de herramientas tiene diferentes opciones en función del estado del componente de diseño y de los componentes que le pertenecen. Por ejemplo:
 

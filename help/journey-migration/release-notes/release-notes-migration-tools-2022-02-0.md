@@ -1,6 +1,6 @@
 ---
-title: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2022.2.0 de
-description: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2022.2.0 de
+title: Notas de la versión de las herramientas de migración de la versión 2022.2.0 de AEM as a Cloud Service
+description: Notas de la versión de las herramientas de migración de la versión 2022.2.0 de AEM as a Cloud Service
 feature: Release Information
 exl-id: b1cd871d-c71e-4902-a97e-2c859f6a4da4
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 55%
 
 ---
 
-# AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2022.2.0 de {#release-notes}
+# Notas de la versión de las herramientas de migración de la versión 2022.2.0 de AEM as a Cloud Service {#release-notes}
 
-AEM Esta página describe las notas de la versión para las herramientas de migración de as a Cloud Service 2022.2.0.
+Esta página describe las notas de la versión de las herramientas de migración de AEM as a Cloud Service 2022.2.0.
 
 ## Analizador de prácticas recomendadas {#bpa-release}
 
@@ -40,7 +40,7 @@ La fecha de versión de la herramienta de transferencia de contenido v1.8.6 es e
 
 ### Novedades {#what-is-new-ctt}
 
-* Validación de contenido: los usuarios pueden determinar de forma fiable si todo el contenido extraído por la herramienta de transferencia de contenido se ha introducido correctamente en la instancia de destino. Para utilizar esta función, actívela en la `System Console` AEM del entorno de origen de la. Consulte [Validación de transferencias de contenido: introducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html#getting-started) para obtener más información.
+* Validación de contenido: los usuarios pueden determinar de forma fiable si todo el contenido extraído por la herramienta de transferencia de contenido se ha introducido correctamente en la instancia de destino. AEM Para usar esta característica, habilítela en `System Console` del entorno de origen de la. Consulte [Validación de transferencias de contenido: introducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html#getting-started) para obtener más información.
 
 ### Correcciones de errores {#bug-fixes-ctt}
 

@@ -1,6 +1,6 @@
 ---
 title: Formatos de archivo y tipos MIME admitidos
-description: Formatos de archivo y tipos MIME admitidos por [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
+description: Formatos de archivo y tipos MIME admitidos por  [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
 contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
@@ -14,17 +14,17 @@ ht-degree: 34%
 
 # [!DNL Assets] formatos de archivo compatibles {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] admite funciones básicas de administración de contenido (almacenamiento, administración de metadatos en línea, versiones, carga y descarga, etc.) para cualquier archivo binario, independientemente de su formato. [!DNL Adobe Experience Manager Assets] admite una amplia gama de formatos de archivo y cada función del producto tiene compatibilidad variada con diferentes formatos.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] admite funciones básicas de administración de contenido (almacenamiento, administración de metadatos en línea, versiones, carga y descarga, etc.) para cualquier archivo binario, independientemente de su formato. [!DNL Adobe Experience Manager Assets] admite una amplia gama de formatos de archivo y cada característica del producto tiene compatibilidad variada con diferentes formatos.
 
-Además, [!DNL Experience Manager Assets] proporciona compatibilidad ampliada para generar vistas previas y representaciones, así como para extraer metadatos y texto para la indexación de texto completo. Esta compatibilidad ampliada se proporciona utilizando [microservicios de recursos](asset-microservices-configure-and-use.md).
+Además, [!DNL Experience Manager Assets] proporciona compatibilidad ampliada para generar vistas previas y representaciones, así como para extraer metadatos y texto para la indización de texto completo. Esta compatibilidad ampliada se proporciona mediante [microservicios de recursos](asset-microservices-configure-and-use.md).
 
 Los aspectos destacados de la conversión de recursos mediante microservicios de recursos son:
 
-* Clave [formatos de archivo de Adobe](#adobe-formats) producidas por aplicaciones y servicios de Adobe, incluidos [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], y [!DNL Adobe Acrobat] o PDF.
+* Formatos de archivo de Adobe [clave](#adobe-formats) producidos por aplicaciones y servicios de Adobe, incluidos [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] y [!DNL Adobe Acrobat] o PDF.
 * Clave [formatos de archivo de imagen](#image-formats).
-* [Formatos de archivo Camera Raw](#camera-raw-formats) para una amplia gama de cámaras, incluyendo Canon, Nikon, Fujifilm, Olympus y otros fabricantes (con tecnología Adobe Camera Raw).
-* Común [formatos de documento](#document-formats), incluidos los formatos Microsoft® Office y Open Document.
-* Amplia gama de [video](#video-formats) y [audio](#audio-formats) formatos.
+* [Formatos de archivo Camera Raw](#camera-raw-formats) para una amplia gama de cámaras, entre ellas Canon, Nikon, Fujifilm, Olympus y otros fabricantes (con tecnología Adobe Camera Raw).
+* [formatos de documento comunes](#document-formats), incluidos los formatos Microsoft® Office y Open Document.
+* Amplio rango de formatos de [vídeo](#video-formats) y [audio](#audio-formats).
 
 La siguiente leyenda describe el nivel de compatibilidad con cada formato.
 
@@ -51,7 +51,7 @@ La siguiente leyenda describe el nivel de compatibilidad con cada formato.
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\* Para [!DNL Adobe InDesign] archivos (INDD), el tamaño de las representaciones viene determinado por la previsualización incrustada en el archivo INDD. Configure las preferencias en [!DNL InDesign] (**[!UICONTROL Preferencias > Administración de archivos > Guardar siempre imágenes de vista previa con documentos, tamaño de vista previa]**) para poder incrustar representaciones más grandes.
+\* Para [!DNL Adobe InDesign] archivos (INDD), el tamaño de las representaciones viene determinado por la vista previa incrustada en el archivo INDD. Configure las preferencias en [!DNL InDesign] (**[!UICONTROL Preferencias > Administración de archivos > Guardar siempre imágenes de vista previa con documentos, Tamaño de vista previa]**) para que pueda incrustar representaciones más grandes.
 
 ## Formatos de imagen {#image-formats}
 
@@ -73,7 +73,7 @@ La siguiente leyenda describe el nivel de compatibilidad con cada formato.
 
 Se admiten los siguientes formatos 3D.
 
-Consulte también [Uso de recursos 3D en Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
+Consulte también [Trabajo con recursos 3D en Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 | Formato | Almacenamiento | Versiones | Flujo de trabajo | Publicación | Control de acceso | Vista previa de miniaturas | Previsualización 3D | Entrega de Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -175,7 +175,7 @@ Los formatos de documento admitidos para las funciones de administración de rec
 
 ## Formatos de audio {#audio-formats}
 
-[!DNL Assets] as a [!DNL Cloud Service] XMP proporciona compatibilidad de extracción de metadatos de la para los formatos de audio AIF, ASF, M4A, MP3, WAV y WMA.
+XMP [!DNL Assets] as a [!DNL Cloud Service] proporciona compatibilidad de extracción de metadatos de la para los formatos de audio AIF, ASF, M4A, MP3, WAV y WMA.
 
 ## Formatos de entrada compatibles para la transcripción de audio y vídeo {#audio-video-transcription-formats}
 
@@ -229,23 +229,23 @@ Los formatos de documento admitidos para las funciones de administración de rec
 | Formato | Cargar (formato de entrada) | Crear ajuste preestablecido de imagen (formato de salida) | Previsualizar representación dinámica | Ofrecer representación dinámica | Descargar representación dinámica | Establecer tipos compatibles con este formato |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
 | AVIF | − | − | − | ✓ | − | − |
-| BMP | ✓ | − | − | − | − | [Imagen](/help/assets/dynamic-media/image-sets.md), [Medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md), y [Giro](/help/assets/dynamic-media/spin-sets.md) |
+| BMP | ✓ | − | − | − | − | [Imagen](/help/assets/dynamic-media/image-sets.md), [Medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md) y [Giro](/help/assets/dynamic-media/spin-sets.md) |
 | [EPS](/help/assets/dynamic-media/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | HEIC | − | − | − | ✓ | − | − |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagen](/help/assets/dynamic-media/image-sets.md), [Medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md), y [Giro](/help/assets/dynamic-media/spin-sets.md) |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagen](/help/assets/dynamic-media/image-sets.md), [Medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md) y [Giro](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | ✓ | − | − | − | − | − |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagen](/help/assets/dynamic-media/image-sets.md), [Medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md), y [Giro](/help/assets/dynamic-media/spin-sets.md) |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagen](/help/assets/dynamic-media/image-sets.md), [Medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md) y [Giro](/help/assets/dynamic-media/spin-sets.md) |
 | PSD ‡ | ✓ | − | − | − | − | − |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagen](/help/assets/dynamic-media/image-sets.md), [Medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md), y [Giro](/help/assets/dynamic-media/spin-sets.md) |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagen](/help/assets/dynamic-media/image-sets.md), [Medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md) y [Giro](/help/assets/dynamic-media/spin-sets.md) |
 | WEBP | − | − | − | ✓ | − | − |
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
-‡ La imagen combinada se extrae del archivo del PSD. Es una imagen que genera el [!DNL Adobe Photoshop] y se incluye en el archivo del PSD. Según la configuración, la imagen combinada puede ser o no la imagen real.
+‡ La imagen combinada se extrae del archivo del PSD. Es una imagen generada por [!DNL Adobe Photoshop] y que se incluye en el archivo del PSD. Según la configuración, la imagen combinada puede ser o no la imagen real.
 
 ## Dynamic Media: formatos de imagen rasterizada no compatibles {#unsupported-raster-image-formats-dm}
 
-Los siguientes subtipos de formatos de archivo de imagen rasterizada son *no* admitido en [!DNL Dynamic Media]:
+Los siguientes subtipos de formatos de archivo de imagen rasterizada que *no* son compatibles con [!DNL Dynamic Media]:
 
 * Archivos PNG con un tamaño de fragmento IDAT superior a 100 MB.
 * Archivos PSB.
@@ -256,7 +256,7 @@ Los siguientes subtipos de formatos de archivo de imagen rasterizada son *no* ad
 
 ## Dynamic Media: Formatos de archivo 3D compatibles {#support-3d-formats-dynamic-media}
 
-Consulte también [Formatos 3D admitidos](/help/assets/file-format-support.md#support-3d-formats)
+Ver también [formatos 3D compatibles](/help/assets/file-format-support.md#support-3d-formats)
 
 | Extensión de archivo 3D | Formato del archivo | Tipo MIME | Notas |
 |---|---|---|---|

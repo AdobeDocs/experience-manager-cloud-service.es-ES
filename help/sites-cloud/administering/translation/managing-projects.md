@@ -82,7 +82,7 @@ Después de traducir, puede [revisar la traducción](#reviewing-and-promoting-up
    ![Referencias](../assets/references.png)
 
 1. Seleccione **Copias de idioma** y, a continuación, las copias de idioma para las que está traduciendo las páginas de origen.
-1. Seleccionar **Crear y traducir** y luego configure el trabajo de traducción:
+1. Seleccione **Crear y traducir** y luego configure el trabajo de traducción:
 
    * Utilice la lista desplegable **Idiomas** para seleccionar la copia de idioma que desea traducir. Seleccione otros idiomas según sea necesario. Los idiomas que aparecen en la lista se corresponden con las [raíces de idioma que ha creado](preparation.md#creating-a-language-root).
       * Al seleccionar varios idiomas, se crea un proyecto con un trabajo de traducción para cada uno.
@@ -104,7 +104,7 @@ Después de traducir, puede [revisar la traducción](#reviewing-and-promoting-up
    ![Referencias](../assets/references.png)
 
 1. Seleccione **Copias de idioma** y, a continuación, las copias de idioma para las que está traduciendo las páginas de origen.
-1. Seleccionar **Actualizar copias de idioma** y luego configure el trabajo de traducción:
+1. Seleccione **Actualizar copias de idioma** y, a continuación, configure el trabajo de traducción:
 
    * Para traducir la página seleccionada y todas las secundarias, escoja **Seleccionar todas las páginas secundarias**. Para traducir solo la página que ha seleccionado, desactive la opción.
    * En **Proyecto**, seleccione **Crear proyecto de traducción**.
@@ -133,7 +133,7 @@ Al igual que al crear un proyecto, al añadir páginas, se añaden copias de las
 
    ![Actualización de las copias de idiomas desde el carril de referencias](../assets/update-language-copies-references.png)
 
-1. Seleccionar **Actualizar copias de idioma** y, a continuación, configure las propiedades:
+1. Seleccione **Actualizar copias de idioma** y, a continuación, configure las propiedades:
 
    * Para traducir la página seleccionada y todas las secundarias, escoja **Seleccionar todas las páginas secundarias**. Para traducir solo la página que ha seleccionado, desactive la opción.
    * En **Proyecto**, seleccione **Añadir a un proyecto de traducción existente**.
@@ -160,7 +160,7 @@ Rellene la copia de idioma para que albergue contenido de la lengua principal qu
 
    ![Selección de copias de idioma](../assets/language-copy-structure-select.png)
 
-1. Seleccionar **Actualizar copias de idioma** para mostrar las herramientas de traducción y configurar las propiedades:
+1. Seleccione **Actualizar copias de idioma** para mostrar las herramientas de traducción y configurar las propiedades:
 
    * Seleccione la opción **Seleccionar todas las páginas secundarias**.
    * Para **Proyecto**, seleccione **Crear solo estructura**.
@@ -198,8 +198,8 @@ Las actualizaciones de la memoria de traducción se pueden interceptar y enviar 
 Se puede seleccionar una propiedad en la vista de lista de la consola Sites que muestre si una página se ha traducido, está en proceso de traducción o aún no se ha traducido.
 
 1. En la consola del sitio, cambie a la [vista de lista](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Seleccione, **Configuración de vista** en la lista desplegable de vista.
-1. En el cuadro de diálogo, marque la **Traducido** y seleccione **Actualizar**.
+1. Seleccione **Configuración de vista** en la lista desplegable de vista.
+1. En el cuadro de diálogo, compruebe la propiedad **Translated** y seleccione **Update**.
 
 La consola Sites ahora muestra la columna **Traducido** con el estado de traducción de las páginas enumeradas.
 
@@ -245,10 +245,10 @@ Cuando cree manualmente un proyecto de traducción, debe proporcionar valores pa
 * **Método de traducción:** seleccione **Traducción humana** para indicar que la traducción se debe llevar a cabo manualmente.
 
 1. En la barra de herramientas de la consola Proyectos, seleccione **Crear**.
-1. Seleccione el **Proyecto de traducción** y, a continuación, seleccione **Siguiente**.
+1. Seleccione la plantilla **Proyecto de traducción** y luego seleccione **Siguiente**.
 1. Introduzca valores en la pestaña de propiedades **Básicas**.
-1. Seleccionar **Avanzadas** y proporcionan valores para las propiedades relacionadas con la traducción.
-1. Seleccione **Crear**. En el cuadro de confirmación, seleccione **Listo** para volver a la consola proyectos o seleccione **Abrir proyecto** para abrir y comenzar a administrar el proyecto.
+1. Seleccione **Advanced** y proporcione valores para las propiedades relacionadas con la traducción.
+1. Seleccione **Crear**. En el cuadro de confirmación, selecciona **Listo** para volver a la consola de proyectos o selecciona **Abrir proyecto** para abrir y comenzar a administrar el proyecto.
 
 ### Adición de páginas y activos a un trabajo de traducción {#adding-pages-assets-to-a-translation-job}
 
@@ -258,7 +258,7 @@ Puede agregar páginas, activos o etiquetas al trabajo de su proyecto de traducc
 
    ![Mosaico de trabajo de traducción](../assets/translation-job.png)
 
-1. En la siguiente ventana, seleccione **Añadir** en la barra de herramientas y, a continuación, seleccione **Recursos/Páginas**.
+1. En la siguiente ventana, selecciona el botón **Agregar** en la barra de herramientas y luego selecciona **Assets/Páginas**.
 
    ![Agregar páginas](../assets/add-to-project.png)
 
@@ -270,7 +270,7 @@ Puede agregar páginas, activos o etiquetas al trabajo de su proyecto de traducc
 
    ![Buscar contenido](../assets/search-for-content.png)
 
-1. Una vez seleccionada, seleccione **Seleccionar**. Sus páginas o activos se añaden al trabajo de traducción.
+1. Una vez seleccionado, seleccione **Seleccionar**. Sus páginas o activos se añaden al trabajo de traducción.
 
 >[!TIP]
 >
@@ -356,8 +356,8 @@ Cuando se define un trabajo de traducción, el estado del trabajo es **Ámbito s
 El ámbito funciona correctamente solo cuando el proveedor de traducción que está utilizando admite esta función.
 
 1. En la consola de proyectos, abra el proyecto de traducción.
-1. En el título del trabajo de traducción, seleccione el menú de comandos y luego seleccione **Solicitar ámbito**.
-1. Cuando el estado del trabajo cambie a **Previsión finalizada**, seleccione el menú de comandos y, a continuación, seleccione **Mostrar ámbito**.
+1. En el título del trabajo de traducción, seleccione el menú de comandos y luego seleccione **Ámbito de la solicitud**.
+1. Cuando el estado del trabajo cambie a **Ámbito completado**, seleccione el menú de comandos y luego seleccione **Mostrar ámbito**.
 
 ### Inicio de trabajos de traducción {#starting-translation-jobs}
 
@@ -366,7 +366,7 @@ Inicie un trabajo de traducción para traducir las páginas de origen al idioma 
 Puede comenzar un trabajo individual desde el proyecto.
 
 1. En la consola de proyectos, abra el proyecto de traducción.
-1. En el mosaico del trabajo de traducción, seleccione el menú de comandos y luego seleccione **Inicio**.
+1. En el mosaico del trabajo de traducción, seleccione el menú de comandos y, a continuación, seleccione **Iniciar**.
 1. En el cuadro de diálogo de acción que confirma el inicio de la traducción, seleccione **Cerrar**.
 
 Después de iniciar el trabajo de traducción, el mosaico del trabajo de traducción muestra la traducción en estado **En progreso**.
@@ -374,7 +374,7 @@ Después de iniciar el trabajo de traducción, el mosaico del trabajo de traducc
 También puede iniciar todos los trabajos de traducción de un proyecto.
 
 1. En la consola del proyecto, seleccione el proyecto de traducción.
-1. En la barra de herramientas, seleccione **Iniciar trabajo(s) de traducción**.
+1. En la barra de herramientas, seleccione **Iniciar trabajos de traducción**.
 1. En el cuadro de diálogo, revise la lista de trabajos que se iniciarán y, a continuación, confirme con **Inicio** o cancele con **Cancelar**.
 
 ### Cancelación de un trabajo de traducción {#canceling-a-translation-job}
@@ -383,7 +383,7 @@ Cancelar un trabajo de traducción para detener el proceso de traducción e impe
 
 1. En la consola de proyectos, abra el proyecto de traducción.
 1. En el mosaico del trabajo de traducción, seleccione el menú de comandos y luego seleccione **Cancelar**.
-1. En el cuadro de diálogo de acción que confirma la cancelación de la traducción, seleccione **OK**.
+1. En el cuadro de diálogo de acción que confirma la cancelación de la traducción, seleccione **Aceptar**.
 
 ### Aceptar y rechazar flujo de trabajo {#accept-reject-workflow}
 
@@ -406,7 +406,7 @@ Para los flujos de trabajo de traducción humana, completar una traducción indi
 Archive el trabajo de traducción una vez completado para ya no ver los detalles del estado del trabajo.
 
 1. En la consola de proyectos, abra el proyecto de traducción.
-1. En el mosaico del trabajo de traducción, seleccione el menú de comandos y luego seleccione **Archivar**.
+1. En el mosaico del trabajo de traducción, seleccione el menú de comandos y, a continuación, seleccione **Archivo**.
 
 Al archivar el trabajo, el mosaico del trabajo de traducción se elimina del proyecto.
 
@@ -420,18 +420,18 @@ Cuando el contenido se traduce para una copia de idioma existente, revise las tr
 
 ![Trabajo listo para revisión](../assets/job-ready-for-review.png)
 
-1. Seleccione la página en el idioma principal, seleccione **Referencias**, luego seleccione **Copias de idioma**.
+1. Seleccione la página en el idioma principal, seleccione **Referencias** y, a continuación, seleccione **Copias de idioma**.
 1. Seleccione la copia de idioma que desea revisar.
 
    ![Copia de idioma lista para revisión](../assets/language-copy-ready-for-review.png)
 
-1. Seleccionar **Launch** para mostrar los comandos relacionados con launch.
+1. Seleccione **Launch** para mostrar los comandos relacionados con el lanzamiento.
 
    ![Lanzamiento](../assets/language-copy-launch.png)
 
 1. Para abrir la copia de lanzamiento de la página para revisar y editar el contenido, haga clic en **Abrir página**.
 1. Después de revisar el contenido y de realizar los cambios necesarios, para promocionar la copia de lanzamiento, haga clic en **Promocionar**.
-1. En el **Promocionar lanzamiento** , especifique qué páginas promocionar y, a continuación, seleccione **Promocionar**.
+1. En la página **Promocionar lanzamiento**, especifique qué páginas promocionar y luego seleccione **Promocionar**.
 
 ### Comparación de copias de idioma {#comparing-language-copies}
 
@@ -449,24 +449,24 @@ Para comparar las copias de idioma con el maestro de idioma:
 
 ## Mover una página de origen o cambiarle el nombre {#move-source}
 
-Si una página de origen ya traducida necesita ser [cambiado de nombre o movido](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page), volver a traducir la página después del traslado crea una copia de idioma basada en el nuevo nombre/ubicación de página. La copia de idioma antigua basada en el nombre/ubicación anterior sigue ahí. Para evitarlo, puede utilizar la funcionalidad de actualización de copia de idioma después del movimiento:
+Si una página de origen ya traducida necesita [cambiarle el nombre o moverla](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page), al volver a traducir la página después del traslado se creará una copia de idioma basada en el nuevo nombre/ubicación de la página. La copia de idioma antigua basada en el nombre/ubicación anterior sigue ahí. Para evitarlo, puede utilizar la funcionalidad de actualización de copia de idioma después del movimiento:
 
 1. Mueva una página que tenga una copia de idioma.
 1. Seleccione la raíz de la copia de idioma.
-1. Abra el **Referencias** panel.
-1. Seleccionar **Copias de idiomas**.
+1. Abra el panel **Referencias**.
+1. Seleccione **Copias de idiomas**.
 1. Seleccione los idiomas de destino que desee actualizar.
-1. Seleccionar **Actualizar copias de idioma**.
+1. Seleccione **Actualizar copias de idioma**.
 
-   ![update-language-copies](../assets/translation-move-to.png)
+   ![copias de idioma de actualización](../assets/translation-move-to.png)
 
-1. Clic **Actualizar**. A [Launch](/help/sites-cloud/authoring/launches/promoting.md) se creará.
+1. Haga clic en **Actualizar**. Se creará un [lanzamiento](/help/sites-cloud/authoring/launches/promoting.md).
 1. Vaya a la raíz de idioma necesaria y selecciónela.
-1. Uso del **Referencias** panel, seleccionar **Lanzamientos**.
+1. En el panel **Referencias**, seleccione **Inicios**.
 
    ![promote-launch-translation](../assets/promote-launch-translation.png)
 
-1. Haga clic en el lanzamiento creado y haga clic en **Promocionar lanzamiento**.
+1. Haga clic en el lanzamiento que creó y luego en **Promocionar lanzamiento**.
 
 Ahora se ha movido la página de origen y se ha copiado la copia de idioma asociada.
 

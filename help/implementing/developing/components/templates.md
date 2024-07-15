@@ -17,7 +17,7 @@ Al crear una página, debe seleccionar una plantilla. La plantilla de página se
 
 * Las plantillas de página permiten a los autores especializados [crear y editar plantillas](/help/sites-cloud/authoring/sites-console/templates.md).
    * Estos autores especializados se denominan **autores de plantillas**
-   * Los autores de plantillas deben ser miembros de `template-authors` grupo.
+   * Los autores de plantillas deben ser miembros del grupo `template-authors`.
 * Las plantillas de página conservan una conexión dinámica con cualquier página creada a partir de ellas. Esto garantiza que cualquier cambio en la plantilla se refleje en las propias páginas.
 * Las plantillas de página hacen que el componente de página sea más genérico, por lo que el componente de página principal se puede utilizar sin personalización.
 
@@ -36,20 +36,20 @@ Este documento:
 
 >[!TIP]
 >
->[El tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) profundiza en cómo utilizar las plantillas de página implementando un ejemplo y resulta bastante útil para comprender cómo configurar una plantilla en un nuevo proyecto
+>[El tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) profundiza en cómo usar las plantillas de página al implementar un ejemplo, y es muy útil para comprender cómo configurar una plantilla en un nuevo proyecto
 
 ## Creación de una nueva plantilla {#creating-a-new-template}
 
-La creación de plantillas de página se realiza principalmente con [consola de plantillas y editor de plantillas](/help/sites-cloud/authoring/sites-console/templates.md) por un autor de plantillas. En esta sección se ofrece una descripción general de este proceso y se incluye una descripción de lo que sucede a nivel técnico.
+La creación de plantillas de página se realiza principalmente con la [consola de plantillas y el editor de plantillas](/help/sites-cloud/authoring/sites-console/templates.md) por un autor de plantillas. En esta sección se ofrece una descripción general de este proceso y se incluye una descripción de lo que sucede a nivel técnico.
 
 Al crear una plantilla editable, debe hacer lo siguiente:
 
-1. Crear un [carpeta para las plantillas](#template-folders). Esto no es obligatorio, pero es una práctica recomendada.
-1. Seleccione una [tipo de plantilla](#template-type). Esto se copia para crear el [definición de plantilla](#template-definitions).
+1. Crear una [carpeta para las plantillas](#template-folders). Esto no es obligatorio, pero es una práctica recomendada.
+1. Seleccione un [tipo de plantilla](#template-type). Esto se ha copiado para crear la [definición de plantilla](#template-definitions).
 
    >[!NOTE]
    >
-   >Se proporciona una selección de tipos de plantillas listas para usarse. También puede [crear sus propios tipos de plantillas específicas del sitio](#creating-template-types) si es necesario.
+   >Se proporciona una selección de tipos de plantillas listas para usarse. También puede [crear sus propios tipos de plantilla específicos del sitio](#creating-template-types) si es necesario.
 
 1. Configure la estructura, las políticas de contenido, el contenido inicial y el diseño de la nueva plantilla.
 
@@ -92,7 +92,7 @@ Al crear una plantilla editable, debe hacer lo siguiente:
 
    Para obtener más información sobre cómo define el diseño de la plantilla un autor de plantillas, consulte [Creación de plantillas de página](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-layout-template-author).
 
-   Para obtener más información técnica sobre el diseño de la plantilla, consulte [Diseño](#layout) en este documento.
+   Para obtener detalles técnicos sobre el diseño de la plantilla, consulte [Diseño](#layout) en este documento.
 
 1. Habilite la plantilla y déjela para árboles de contenido específicos.
 
@@ -101,20 +101,20 @@ Al crear una plantilla editable, debe hacer lo siguiente:
 
    Para obtener más información sobre cómo un autor de plantillas habilita una plantilla, consulte [Creación de plantillas de página](/help/sites-cloud/authoring/sites-console/templates.md#enabling-and-allowing-a-template-template-author).
 
-   Para obtener detalles técnicos sobre la activación de una plantilla, consulte [Activación y autorización de una plantilla](#enabling-and-allowing-a-template-for-use)e en este documento
+   Para obtener detalles técnicos sobre cómo habilitar una plantilla, consulte [Habilitar y permitir una plantilla](#enabling-and-allowing-a-template-for-use)e en este documento
 
 1. Úselo para crear páginas de contenido.
 
    * Cuando se utiliza una plantilla para crear una página, no hay ninguna diferencia visible ni indicación entre las plantillas estáticas y editables.
    * Para el autor de la página, el proceso es transparente.
 
-   Para obtener más información sobre cómo un autor de páginas utiliza plantillas para crear una página, consulte [Crear y organizar páginas](/help/sites-cloud/authoring/sites-console/organizing-pages.md#templates).
+   Para obtener más información sobre cómo un autor de páginas usa plantillas para crear una página, consulte [Creación y organización de páginas](/help/sites-cloud/authoring/sites-console/organizing-pages.md#templates).
 
-   Para obtener más información técnica sobre la creación de páginas con plantillas editables, consulte [Páginas de contenido resultantes](#resultant-content-pages) en este documento.
+   Para obtener detalles técnicos sobre la creación de páginas con plantillas editables, consulte [Páginas de contenido resultante](#resultant-content-pages) en este documento.
 
 >[!TIP]
 >
->Nunca introduzca en una plantilla información que deba internacionalizarse. Para fines de internalización, la variable [Funciones de localización de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=es) se recomiendan.
+>Nunca introduzca en una plantilla información que deba internacionalizarse. Para fines de internalización, se recomiendan las [características de localización de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=es).
 
 >[!NOTE]
 >
@@ -124,9 +124,9 @@ Al crear una plantilla editable, debe hacer lo siguiente:
 
 >[!NOTE]
 >
->La biblioteca de cliente del editor supone la presencia de `cq.shared` en las páginas de contenido y, si no hay ningún error de JavaScript, `Uncaught TypeError: Cannot read property 'shared' of undefined` resultará.
+>La biblioteca de cliente del editor supone la presencia del área de nombres `cq.shared` en las páginas de contenido y, si no existe, se producirá el error de JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined`.
 >
->Todas las páginas de contenido de muestra contienen `cq.shared`, de modo que cualquier contenido basado en ellos incluye automáticamente `cq.shared`. Sin embargo, si decide crear sus propias páginas de contenido desde cero sin basarlas en contenido de ejemplo, debe asegurarse de incluir la variable `cq.shared` namespace.
+>Todas las páginas de contenido de muestra contienen `cq.shared`, por lo que cualquier contenido basado en ellas incluye automáticamente `cq.shared`. Sin embargo, si decide crear sus propias páginas de contenido desde cero sin basarlas en contenido de ejemplo, debe asegurarse de incluir el área de nombres `cq.shared`.
 >
 >Consulte [Uso de bibliotecas del lado del cliente](/help/implementing/developing/introduction/clientlibs.md) para obtener más información.
 
@@ -141,13 +141,13 @@ Para organizar las plantillas, puede utilizar las siguientes carpetas:
 
 >[!NOTE]
 >
->Aunque puede anidar las carpetas, cuando el usuario las vea en la **Plantillas** consola se presentan como una estructura plana.
+>Aunque puede anidar las carpetas, cuando el usuario las vea en la consola **Templates**, se presentarán como una estructura plana.
 
-AEM En una instancia estándar, la variable `global` ya existe una carpeta en la consola de plantillas. Contiene plantillas predeterminadas y actúa como alternativa en caso de que no se encuentre ninguna política ni ningún tipo de plantilla en la carpeta actual. Puede agregar las plantillas predeterminadas a esta carpeta o crear una carpeta (recomendado).
+AEM En una instancia estándar, la carpeta `global` ya existe en la consola de plantillas. Contiene plantillas predeterminadas y actúa como alternativa en caso de que no se encuentre ninguna política ni ningún tipo de plantilla en la carpeta actual. Puede agregar las plantillas predeterminadas a esta carpeta o crear una carpeta (recomendado).
 
 >[!NOTE]
 >
->Se recomienda crear una carpeta para guardar las plantillas personalizadas y no utilizar el `global` carpeta.
+>Se recomienda crear una carpeta que contenga las plantillas personalizadas y no utilizar la carpeta `global`.
 
 >[!CAUTION]
 >
@@ -166,7 +166,7 @@ Se crea una lista de todas las entradas permitidas. Si alguna configuración se 
 Para crear una carpeta, puede hacer lo siguiente:
 
 * Mediante programación o con el CRXDE Lite
-* Uso del [Explorador de configuración](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+* Usando el [Explorador de configuración](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 ## Uso del CRXDE Lite {#using-crxde-lite}
 
@@ -189,45 +189,45 @@ Para crear una carpeta, puede hacer lo siguiente:
 
    * Nombre: `jcr:title`
    * Tipo: `String`
-   * Valor: el título (de la carpeta) que desea que aparezca en la **Plantillas** consola.
+   * Valor: título (de la carpeta) que desea que aparezca en la consola **Plantillas**.
 
-1. Además de los permisos y privilegios estándar de creación (por ejemplo, `content-authors`Ahora debe asignar grupos y definir los derechos de acceso (ACL) necesarios para que los autores puedan crear plantillas en la nueva carpeta.
+1. Además de los permisos y privilegios de creación estándar (por ejemplo, `content-authors`), ahora debe asignar grupos y definir los derechos de acceso (ACL) necesarios para que los autores puedan crear plantillas en la nueva carpeta.
 
-   El `template-authors` group es el grupo predeterminado que se debe asignar. Consulte la sección [ACL y grupos](#acls-and-groups) para obtener más información.
+   El grupo `template-authors` es el grupo predeterminado que se debe asignar. Consulte la sección [ACL y grupos](#acls-and-groups) para obtener más información.
 
    <!--See [Access Right Management](/help/sites-administering/user-group-ac-admin.md#access-right-management) for full details on managing and assigning access rights.-->
 
 ### Uso del explorador de configuración {#using-the-configuration-browser}
 
-1. Ir a **Navegación global** > **Herramientas** > [**Explorador de configuración**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+1. Vaya a **Navegación global** > **Herramientas** > [**Explorador de configuración**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
-   Las carpetas existentes se muestran a la izquierda, incluida la `global` carpeta.
+   Las carpetas existentes se muestran a la izquierda, incluida la carpeta `global`.
 
 1. Haga clic en **Crear**.
-1. En el **Crear configuración** diálogo se deben configurar los siguientes campos:
+1. En el cuadro de diálogo **Crear configuración** deben configurarse los siguientes campos:
 
    * **Título**: proporcione un título para la carpeta de configuración
-   * **Plantillas editables**: Marque para permitir plantillas editables dentro de esta carpeta
+   * **Plantillas editables**: Marque esta opción para permitir plantillas editables dentro de esta carpeta
 
 1. Haga clic en **Crear**
 
 >[!NOTE]
 >
->En el [Explorador de configuración,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) puede editar la carpeta global y activar el **Plantillas editables** si desea crear plantillas dentro de esta carpeta, sin embargo, esta no es la práctica recomendada.
+>En el [Explorador de configuración,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) puede editar la carpeta global y activar la opción **Plantillas editables** si desea crear plantillas dentro de esta carpeta; sin embargo, esta no es una práctica recomendada.
 
 ### ACL y grupos {#acls-and-groups}
 
 Una vez creadas las carpetas de plantilla (ya sea mediante CRXDE o con el Explorador de configuración), se deben definir ACL para los grupos adecuados para las carpetas de plantilla para garantizar la seguridad adecuada.
 
-Las carpetas de plantilla para la [Tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) se puede utilizar como ejemplo.
+Las carpetas de plantillas para el [tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) se pueden usar como ejemplo.
 
 #### El grupo de autores de plantillas {#the-template-authors-group}
 
-El `template-authors` AEM group es el grupo que se utiliza para administrar el acceso a las plantillas y viene de serie con la opción de acceso a las plantillas, pero está vacío. Los usuarios deben agregarse al grupo para el proyecto o sitio.
+AEM El grupo `template-authors` es el grupo que se usa para administrar el acceso a las plantillas y viene de serie con las plantillas, pero está vacío. Los usuarios deben agregarse al grupo para el proyecto o sitio.
 
 >[!CAUTION]
 >
->El `template-authors` El grupo solo es para usuarios que deben poder crear nuevas plantillas.
+>El grupo `template-authors` es exclusivo para usuarios que deben poder crear nuevas plantillas.
 >
 >La edición de plantillas es muy potente y, si no se realiza correctamente, las plantillas existentes pueden romperse. Por lo tanto, esta función debe centrarse y solo incluir usuarios cualificados.
 
@@ -245,7 +245,7 @@ La siguiente tabla detalla los permisos necesarios para editar plantillas.
    <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/templates</code></td>
    <td>Autores de plantillas<br /> </td>
    <td>leer, escribir, replicar</td>
-   <td>Autores de plantillas que crean, leen, actualizan, eliminan y replican plantillas en sitios específicos <code>/conf</code> espacio</td>
+   <td>Autores de plantillas que crean, leen, actualizan, eliminan y replican plantillas en el espacio <code>/conf</code> específico del sitio</td>
   </tr>
   <tr>
    <td>Usuario web anónimo</td>
@@ -261,7 +261,7 @@ La siguiente tabla detalla los permisos necesarios para editar plantillas.
    <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/policies</code></td>
    <td><code>Template Author</code></td>
    <td>leer, escribir, replicar</td>
-   <td>Autores de plantillas que crean, leen, actualizan, eliminan y replican plantillas en sitios específicos <code>/conf</code> espacio</td>
+   <td>Autores de plantillas que crean, leen, actualizan, eliminan y replican plantillas en el espacio <code>/conf</code> específico del sitio</td>
   </tr>
   <tr>
    <td>Usuario web anónimo</td>
@@ -287,7 +287,7 @@ La siguiente tabla detalla los permisos necesarios para editar plantillas.
  </tbody>
 </table>
 
-Este valor predeterminado `template-authors` grupo solo abarca las configuraciones de proyecto, donde todas las `template-authors` los miembros pueden acceder a todas las plantillas y crearlas. Para configuraciones más complejas, donde se necesitan varios grupos de autores de plantillas para separar el acceso a las plantillas, se deben crear grupos de autores de plantillas más personalizados. Sin embargo, los permisos para los grupos de autores de plantillas seguirían siendo los mismos.
+Este grupo predeterminado de `template-authors` solo cubre las configuraciones de proyecto, en las que se permite a todos los miembros de `template-authors` acceder a todas las plantillas y crearlas. Para configuraciones más complejas, donde se necesitan varios grupos de autores de plantillas para separar el acceso a las plantillas, se deben crear grupos de autores de plantillas más personalizados. Sin embargo, los permisos para los grupos de autores de plantillas seguirían siendo los mismos.
 
 ## Tipo de plantilla {#template-type}
 
@@ -306,7 +306,7 @@ Al crear una plantilla, debe especificar un tipo de plantilla:
 
 * AEM proporciona una pequeña selección de tipos de plantillas listas para usar, como Página de HTML5 y Página de formulario adaptable.
 
-   * Se proporcionan ejemplos adicionales como parte de la variable [Tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+   * Se proporcionan ejemplos adicionales como parte del [tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 * Los desarrolladores suelen definir los tipos de plantillas.
 
@@ -316,7 +316,7 @@ Los tipos de plantilla predeterminados se almacenan en:
 
 >[!CAUTION]
 >
->No debe cambiar nada en el `/libs` ruta. Esto se debe al contenido de `/libs` AEM se puede sobrescribir en cualquier momento mediante una actualización de la dirección de correo electrónico de.
+>No debe cambiar nada en la ruta de acceso `/libs`. AEM Esto se debe a que el contenido de `/libs` se puede sobrescribir en cualquier momento mediante una actualización de la dirección de correo electrónico de la dirección de correo electrónico de.
 
 Los tipos de plantilla específicos del sitio deben almacenarse en la ubicación comparable de:
 
@@ -357,10 +357,10 @@ When creating an editable template, the value is copied from the template type t
 
 Si ha creado una plantilla que puede servir de base a otras plantillas, puede copiar esta plantilla como un tipo de plantilla.
 
-1. Cree una plantilla como lo haría con cualquier plantilla de página [como se documenta aquí](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author), que servirá de base para el tipo de plantilla.
-1. Con CRXDE Lite, copie la plantilla creada desde el `templates` nodo a `template-types` nodo bajo el [carpeta de plantillas](#template-folders).
-1. Elimine la plantilla del `templates` nodo bajo el [carpeta de plantillas](#template-folders).
-1. En la copia de la plantilla que se encuentra debajo de `template-types` nodo, eliminar todo `cq:template` y `cq:templateType` propiedades de todos `jcr:content` nodos.
+1. Cree una plantilla como lo haría con cualquier Plantilla de página [tal como se documenta aquí](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author), que servirá como base para su tipo de plantilla.
+1. Con el CRXDE Lite, copie la plantilla creada desde el nodo `templates` al nodo `template-types` en la [carpeta de plantillas](#template-folders).
+1. Elimine la plantilla del nodo `templates` en la [carpeta de plantillas](#template-folders).
+1. En la copia de la plantilla que se encuentra bajo el nodo `template-types`, elimine todas las propiedades `cq:template` y `cq:templateType` de todos los nodos `jcr:content`.
 
 También puede desarrollar su propio tipo de plantilla con una plantilla editable de ejemplo como base, disponible en GitHub.
 
@@ -368,18 +368,18 @@ CÓDIGO EN GITHUB
 
 Puede encontrar el código de esta página en GitHub
 
-* [Abra el proyecto aem-sites-example-custom-template-type en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
-* Descargue el proyecto como [un archivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/archive/master.zip)
+* [Abrir proyecto aem-sites-example-custom-template-type en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
+* Descargar el proyecto como [archivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/archive/master.zip)
 
 ## Definiciones de plantilla {#template-definitions}
 
-Se almacenan las definiciones de las plantillas editables [carpetas definidas por el usuario](#template-folders) (recomendado) o alternativamente en `global`. Por ejemplo:
+Las definiciones para plantillas editables se almacenan en [carpetas definidas por el usuario](#template-folders) (recomendado) o, alternativamente, en `global`. Por ejemplo:
 
 * `/conf/<my-folder>/settings/wcm/templates`
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/templates`
 * `/conf/global/settings/wcm/templates`
 
-El nodo raíz de la plantilla es del tipo `cq:Template` con una estructura esquemática de:
+El nodo raíz de la plantilla es del tipo `cq:Template` con una estructura básica de:
 
 ```xml
 <template-name>
@@ -434,28 +434,28 @@ Este nodo contiene propiedades para la plantilla:
 
 Define la estructura de la página resultante:
 
-* Se combina con el contenido inicial ( `/initial`) al crear una página.
+* Se combina con el contenido inicial (`/initial`) al crear una página.
 * Los cambios realizados en la estructura se reflejan en cualquier página creada con la plantilla.
-* El `root` ( `structure/jcr:content/root`) define la lista de componentes disponibles en la página resultante.
+* El nodo `root` ( `structure/jcr:content/root`) define la lista de componentes disponibles en la página resultante.
    * Los componentes definidos en la estructura de la plantilla no se pueden mover ni eliminar de ninguna página resultante.
-   * Después de desbloquear un componente, `editable` La propiedad se establece en `true`.
-   * Después de desbloquear un componente que ya contiene contenido, este se mueve a `initial` Rama.
+   * Después de desbloquear un componente, la propiedad `editable` se establece en `true`.
+   * Después de desbloquear un componente que ya contiene contenido, este contenido se mueve a la rama `initial`.
 
-* El `cq:responsive` El nodo contiene definiciones para el diseño interactivo.
+* El nodo `cq:responsive` contiene definiciones para el diseño interactivo.
 
 ### Contenido inicial {#initial-content}
 
 Define el contenido inicial que tendrá una nueva página al crearla:
 
-* Contiene un `jcr:content` que se copia en cualquier página nueva.
-* Se combina con la estructura ( `/structure`) al crear una página.
+* Contiene un nodo `jcr:content` que se copia en las páginas nuevas.
+* Se combina con la estructura (`/structure`) al crear una página.
 * Las páginas existentes no se actualizarán si el contenido inicial cambia después de la creación.
-* El `root` El nodo contiene una lista de componentes para definir qué está disponible en la página resultante.
+* El nodo `root` contiene una lista de componentes para definir lo que está disponible en la página resultante.
 * Si el contenido se añade a un componente en modo de estructura y dicho componente se desbloquea posteriormente (o a la inversa), este contenido se utiliza como contenido inicial.
 
 ### Diseño {#layout}
 
-Cuándo [edición de una plantilla puede definir el diseño](/help/sites-cloud/authoring/sites-console/templates.md), esto utiliza [diseño interactivo estándar](/help/sites-cloud/authoring/page-editor/responsive-layout.md).
+Al [editar una plantilla, puede definir el diseño](/help/sites-cloud/authoring/sites-console/templates.md), que usa [diseño interactivo estándar](/help/sites-cloud/authoring/page-editor/responsive-layout.md).
 
 <!-- that can also be [configured](/help/sites-administering/configuring-responsive-layout.md). -->
 
@@ -463,11 +463,11 @@ Cuándo [edición de una plantilla puede definir el diseño](/help/sites-cloud/a
 
 Las políticas de contenido definen las propiedades de diseño de un componente. Por ejemplo, los componentes disponibles o las dimensiones mínimas/máximas. Se aplican a la plantilla (y a las páginas creadas con la plantilla). Las políticas de contenido se pueden crear y seleccionar en el editor de plantillas.
 
-* La propiedad `cq:policy`, en el `root` nodo
+* La propiedad `cq:policy`, en el nodo `root`
   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 Proporciona una referencia relativa a la directiva de contenido para el sistema de párrafos de la página.
 
-* La propiedad `cq:policy`, en los nodos explícitos de componente en `root`, proporcione vínculos a las directivas para los componentes individuales.
+* La propiedad `cq:policy`, en los nodos explícitos de componente en `root`, proporciona vínculos a las directivas de los componentes individuales.
 
 * Las definiciones de directivas reales se almacenan en:
   `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
@@ -478,7 +478,7 @@ Proporciona una referencia relativa a la directiva de contenido para el sistema 
 
 ### Políticas de la página {#page-policies}
 
-Las políticas de página permiten definir la variable [política de contenido](#content-policies) para la página (parsys principal), en la plantilla o en las páginas resultantes.
+Las directivas de página le permiten definir la [directiva de contenido](#content-policies) para la página (parsys principal), en la plantilla o en las páginas resultantes.
 
 ### Habilitar y permitir el uso de una plantilla {#enabling-and-allowing-a-template-for-use}
 
@@ -486,9 +486,9 @@ Las políticas de página permiten definir la variable [política de contenido](
 
    Para poder utilizar una plantilla, debe habilitarse mediante lo siguiente:
 
-   * [Activación de la plantilla](/help/sites-cloud/authoring/sites-console/templates.md) desde el **Plantillas** consola.
+   * [Habilitando la plantilla](/help/sites-cloud/authoring/sites-console/templates.md) desde la consola **Plantillas**.
 
-   * Estableciendo la propiedad status en `jcr:content` nodo.
+   * Estableciendo la propiedad status en el nodo `jcr:content`.
 
       * Por ejemplo, en:
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
@@ -501,10 +501,10 @@ Las políticas de página permiten definir la variable [política de contenido](
 
 1. **Plantillas permitidas**
 
-   * [Defina las rutas de plantilla permitidas en la variable **Propiedades de página**](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) de la página adecuada o de la página raíz de una subrama.
+   * [Defina las rutas de plantilla permitidas en **Propiedades de página**](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) de la página o página raíz apropiada de una subrama.
    * Establezca la propiedad:
      `cq:allowedTemplates`
-En el `jcr:content` de la rama requerida.
+En el nodo `jcr:content` de la rama requerida.
 
    Por ejemplo, con un valor de:
 
@@ -514,64 +514,64 @@ En el `jcr:content` de la rama requerida.
 
 Páginas creadas a partir de plantillas editables:
 
-* Se crean con un subárbol que se combina con `structure` y `initial` en la plantilla
+* Se crean con un subárbol que se combina de `structure` y `initial` en la plantilla
 
-* Tener referencias a información contenida en la plantilla y el tipo de plantilla. Esto se logra con una `jcr:content` nodo con las propiedades:
+* Tener referencias a información contenida en la plantilla y el tipo de plantilla. Esto se logra con un nodo `jcr:content` con las propiedades:
 
-   * `cq:template` : Proporciona la referencia dinámica a la plantilla real; permite que los cambios realizados en la plantilla se reflejen en las páginas reales.
+   * `cq:template`: proporciona la referencia dinámica a la plantilla real; permite que los cambios realizados en la plantilla se reflejen en las páginas reales.
 
-   * `cq:templateType` : Proporciona una referencia al tipo de plantilla.
+   * `cq:templateType`: proporciona una referencia al tipo de plantilla.
 
-![Interrelación entre plantillas, contenido y componentes](assets/templates-content-components.png)
+![Cómo se interrelacionan las plantillas, el contenido y los componentes](assets/templates-content-components.png)
 
 El diagrama anterior muestra cómo se interrelacionan las plantillas, el contenido y los componentes:
 
-* Controlador - `/content/<my-site>/<my-page>` : La página resultante que hace referencia a la plantilla. El contenido controla todo el proceso. Según las definiciones, accede a la plantilla y a los componentes adecuados.
-* Configuración - `/conf/<my-folder>/settings/wcm/templates/<my-template>` - El [plantilla y políticas de contenido relacionadas](#template-definitions) defina la configuración de página.
-* Modelo - Paquetes OSGi - El [Paquetes OSGI](/help/implementing/deploying/configuring-osgi.md) implemente la funcionalidad.
-* Ver - `/apps/<my-site>/components` : Tanto en el entorno de creación como en el de publicación, el contenido se procesa mediante componentes.
+* Controlador - `/content/<my-site>/<my-page>` - La página resultante que hace referencia a la plantilla. El contenido controla todo el proceso. Según las definiciones, accede a la plantilla y a los componentes adecuados.
+* Configuración - `/conf/<my-folder>/settings/wcm/templates/<my-template>` - La plantilla [y las directivas de contenido relacionadas](#template-definitions) definen la configuración de la página.
+* Modelo - Paquetes OSGi - Los [paquetes OSGI](/help/implementing/deploying/configuring-osgi.md) implementan la funcionalidad.
+* Ver - `/apps/<my-site>/components` - Tanto en el entorno de creación como de publicación, los componentes procesan el contenido.
 
 Al procesar una página:
 
 * **Plantillas**:
 
-   * El `cq:template` propiedad de su `jcr:content` se hace referencia al nodo para acceder a la plantilla que corresponde a esa página.
+   * Se hace referencia a la propiedad `cq:template` de su nodo `jcr:content` para obtener acceso a la plantilla que corresponde a esa página.
 
 * **Componentes**:
 
-   * El componente de página combinará las variables `structure/jcr:content` árbol de la plantilla con el `jcr:content` árbol de la página.
+   * El componente de página combinará el árbol `structure/jcr:content` de la plantilla con el árbol `jcr:content` de la página.
       * El componente de página solo permitirá al autor editar los nodos de la estructura de la plantilla que se han marcado como editables (y los secundarios).
-      * Al procesar un componente en una página, la ruta relativa de ese componente se toma del `jcr:content` nodo; la misma ruta bajo el `policies/jcr:content` A continuación, se buscará en el nodo de la plantilla.
-         * El `cq:policy` La propiedad de este nodo señala a la directiva de contenido real (es decir, contiene la configuración de diseño para ese componente).
+      * Al procesar un componente en una página, la ruta relativa de ese componente se toma del nodo `jcr:content`; a continuación, se buscará la misma ruta de acceso en el nodo `policies/jcr:content` de la plantilla.
+         * La propiedad `cq:policy` de este nodo señala a la directiva de contenido real (es decir, contiene la configuración de diseño para ese componente).
             * Esto permite tener varias plantillas que reutilizan las mismas configuraciones de directiva de contenido.
 
 ### Disponibilidad de la plantilla {#template-availability}
 
 Al crear una página en la interfaz de administración del sitio, la lista de plantillas disponibles depende de la ubicación de la nueva página y de las restricciones de colocación especificadas en cada plantilla.
 
-Las siguientes propiedades determinan si una plantilla `T` se puede usar para que una nueva página se coloque como elemento secundario de la página `P`. Cada una de estas propiedades es una cadena de varios valores que contiene cero o más expresiones regulares que se utilizan para la coincidencia con rutas:
+Las siguientes propiedades determinan si se permite utilizar una plantilla `T` para colocar una nueva página como elemento secundario de la página `P`. Cada una de estas propiedades es una cadena de varios valores que contiene cero o más expresiones regulares que se utilizan para la coincidencia con rutas:
 
-* El `cq:allowedTemplates` propiedad del `jcr:content` subnodo de `P` o un antecesor de `P`.
+* La propiedad `cq:allowedTemplates` del subnodo `jcr:content` de `P` o un antecesor de `P`.
 
-* El `allowedPaths` propiedad de `T`.
+* La propiedad `allowedPaths` de `T`.
 
-* El `allowedParents` propiedad de `T`.
+* La propiedad `allowedParents` de `T`.
 
-* El `allowedChildren` propiedad de la plantilla de `P`.
+* La propiedad `allowedChildren` de la plantilla de `P`.
 
 La evaluación funciona de la siguiente manera:
 
-* La primera no vacía `cq:allowedTemplates` se encontró la propiedad al ascender la jerarquía de páginas que empieza por `P` se compara con la ruta de `T`. Si ninguno de los valores coincide, `T` se ha rechazado.
+* Se comparó la primera propiedad `cq:allowedTemplates` que no está vacía al ascender la jerarquía de páginas que comienza por `P` con la ruta de acceso de `T`. Si ninguno de los valores coincide, `T` se rechaza.
 
-* If `T` tiene un no vacío `allowedPaths` , pero ninguno de los valores coincide con la ruta de `P`, `T` se ha rechazado.
+* Si `T` tiene una propiedad `allowedPaths` que no está vacía, pero ninguno de los valores coincide con la ruta de acceso de `P`, se rechaza `T`.
 
-* Si ambas propiedades anteriores están vacías o no existen, `T` se rechaza a menos que pertenezca a la misma aplicación que `P`. `T` pertenece a la misma aplicación que `P` if y only si el nombre del segundo nivel de la ruta de `T` es el mismo que el nombre del segundo nivel de la ruta de `P`. Por ejemplo, la plantilla `/apps/wknd/templates/foo` pertenece a la misma aplicación que la página `/content/wknd`.
+* Si ambas propiedades están vacías o no existen, se rechaza `T` a menos que pertenezca a la misma aplicación que `P`. `T` pertenece a la misma aplicación que `P` solo si el nombre del segundo nivel de la ruta de acceso de `T` es el mismo que el nombre del segundo nivel de la ruta de acceso de `P`. Por ejemplo, la plantilla `/apps/wknd/templates/foo` pertenece a la misma aplicación que la página `/content/wknd`.
 
-* If `T` tiene un no vacío `allowedParents` , pero ninguno de los valores coincide con la ruta de `P`, `T` se ha rechazado.
+* Si `T` tiene una propiedad `allowedParents` que no está vacía, pero ninguno de los valores coincide con la ruta de acceso de `P`, se rechaza `T`.
 
-* Si la plantilla de `P` tiene un no vacío `allowedChildren` , pero ninguno de los valores coincide con la ruta de `T`, `T` se ha rechazado.
+* Si la plantilla de `P` tiene una propiedad `allowedChildren` que no está vacía, pero ninguno de los valores coincide con la ruta de acceso de `T`, se rechaza `T`.
 
-* En todos los demás casos, `T` está permitido.
+* En todos los demás casos, se permite `T`.
 
 El diagrama siguiente muestra el proceso de evaluación de la plantilla:
 
@@ -579,24 +579,24 @@ El diagrama siguiente muestra el proceso de evaluación de la plantilla:
 
 >[!CAUTION]
 >
->AEM ofrece varias propiedades para controlar las plantillas permitidas en **Sites**. Sin embargo, combinarlas puede dar lugar a reglas muy complejas difíciles de rastrear y administrar.
+>AEM ofrece varias propiedades para controlar las plantillas permitidas en **Sitios**. Sin embargo, combinarlas puede dar lugar a reglas muy complejas difíciles de rastrear y administrar.
 >
 >Por lo tanto, Adobe recomienda empezar de forma sencilla definiendo:
 >
->* solo el `cq:allowedTemplates` propiedad
+>* solo la propiedad `cq:allowedTemplates`
 >
 >* solo en la raíz del sitio
 >
->Para ver un ejemplo, consulte la [Tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) contenido: `/content/wknd/jcr:content`
+>Para ver un ejemplo, vea el contenido del [tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md): `/content/wknd/jcr:content`
 >
->Las propiedades `allowedPaths`, `allowedParents`, y `allowedChildren` también se puede colocar en las plantillas para definir reglas más sofisticadas. Sin embargo, cuando es posible, lo es *mucho* más fácil de definir `cq:allowedTemplates` propiedades en las subsecciones del sitio si es necesario restringir aún más las plantillas permitidas.
+>Las propiedades `allowedPaths`, `allowedParents` y `allowedChildren` también se pueden colocar en las plantillas para definir reglas más sofisticadas. Sin embargo, cuando es posible, es *mucho* más fácil definir más propiedades de `cq:allowedTemplates` en subsecciones del sitio si es necesario restringir aún más las plantillas permitidas.
 >
->Una ventaja adicional es que el `cq:allowedTemplates` Las propiedades puede actualizarlas un autor en el **Avanzadas** de la pestaña **Propiedades de página**. Las demás propiedades de la plantilla no se pueden actualizar mediante la interfaz de usuario (estándar), por lo que se necesitaría un desarrollador para mantener las reglas y una implementación de código para cada cambio.
+>Una ventaja adicional es que un autor puede actualizar las propiedades de `cq:allowedTemplates` en la ficha **Avanzadas** de **Propiedades de página**. Las demás propiedades de la plantilla no se pueden actualizar mediante la interfaz de usuario (estándar), por lo que se necesitaría un desarrollador para mantener las reglas y una implementación de código para cada cambio.
 
 #### Limitación de plantillas utilizadas en páginas secundarias {#limiting-templates-used-in-child-pages}
 
-Para limitar qué plantillas se pueden utilizar para crear páginas secundarias en una página determinada, utilice la variable `cq:allowedTemplates` propiedad de `jcr:content` de la página para especificar la lista de plantillas que pueden utilizarse como páginas secundarias. Cada valor de la lista debe ser una ruta absoluta a una plantilla para una página secundaria permitida, por ejemplo, `/apps/wknd/templates/page-content`.
+Para limitar qué plantillas se pueden usar para crear páginas secundarias en una página determinada, use la propiedad `cq:allowedTemplates` del nodo `jcr:content` de la página para especificar la lista de plantillas que se permitirán como secundarias. Cada valor de la lista debe ser una ruta absoluta a una plantilla para una página secundaria permitida, por ejemplo, `/apps/wknd/templates/page-content`.
 
-Puede usar el complemento `cq:allowedTemplates` propiedad en la plantilla  `jcr:content` para aplicar esta configuración a todas las páginas creadas que utilicen esta plantilla.
+Puede usar la propiedad `cq:allowedTemplates` en el nodo `jcr:content` de la plantilla para aplicar esta configuración a todas las páginas creadas que usen esta plantilla.
 
-Si desea agregar más restricciones, por ejemplo, con respecto a la jerarquía de plantillas, puede utilizar la variable `allowedParents/allowedChildren` propiedades en la plantilla. A continuación, puede especificar explícitamente que las páginas creadas a partir de una plantilla T tengan que ser páginas principales o secundarias de páginas creadas a partir de una plantilla T.
+Si desea agregar más restricciones, por ejemplo, con respecto a la jerarquía de plantillas, puede utilizar las propiedades `allowedParents/allowedChildren` en la plantilla. A continuación, puede especificar explícitamente que las páginas creadas a partir de una plantilla T tengan que ser páginas principales o secundarias de páginas creadas a partir de una plantilla T.

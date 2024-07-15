@@ -1,5 +1,5 @@
 ---
-title: 'Metadatos: Propiedades del fragmento (Recursos: fragmentos de contenido)'
+title: 'Metadatos: Propiedades del fragmento (Assets: fragmentos de contenido)'
 description: Consulte cómo puede ver y editar las propiedades de metadatos de los fragmentos de contenido.
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
 feature: Content Fragments
@@ -20,7 +20,7 @@ AEM Consulte cómo puede ver y editar las propiedades de los metadatos de los fr
 >
 >Los fragmentos de contenido son una función de Sites, pero se almacenan como **Assets**.
 >
->Existen dos editores para crear fragmentos de contenido. Esta sección trata sobre el editor original, al que se accede principalmente desde el **Assets** consola. Consulte la documentación de Sites, [Fragmentos de contenido: creación](/help/sites-cloud/administering/content-fragments/authoring.md), para obtener más información sobre el nuevo editor (al que se accede principalmente desde el **Fragmentos de contenido** consola).
+>Existen dos editores para crear fragmentos de contenido. Esta sección trata sobre el editor original, al que se accede principalmente desde la consola **Assets**. Consulte la documentación de Sites, [Fragmentos de contenido: creación](/help/sites-cloud/administering/content-fragments/authoring.md), para obtener detalles del nuevo editor (al que se accede principalmente desde la consola **Fragmentos de contenido**).
 
 ## Edición de propiedades/metadatos {#editing-properties-meta-data}
 

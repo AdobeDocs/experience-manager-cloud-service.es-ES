@@ -22,14 +22,14 @@ Junto con el exportador JSON actualizado, los fragmentos de contenido estructura
 
 >[!NOTE]
 >
->Los fragmentos de contenido son una **Sites** función, pero se almacenan como **Assets**.
+>Los fragmentos de contenido son una característica de **Sites**, pero se almacenan como **Assets**.
 >
->Ahora se administran principalmente con **[Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** consola, aunque se pueden seguir administrando desde el **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** consola.
+>Ahora se administran principalmente con la consola **[Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**, aunque aún se pueden administrar desde la consola **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**.
 >
 >Existen dos editores para crear fragmentos de contenido:
 >
->* El nuevo editor de [Fragmentos de contenido: creación](/help/sites-cloud/administering/content-fragments/authoring.md), se accede principalmente desde el **Fragmentos de contenido** consola.
->* El [editor original](/help/assets/content-fragments/content-fragments-variations.md) se accede principalmente desde el **Assets** consola.
+>* Se accede principalmente al nuevo editor de [Fragmentos de contenido - Creación](/help/sites-cloud/administering/content-fragments/authoring.md) desde la consola **Fragmentos de contenido**.
+>* Se accede principalmente al [editor original](/help/assets/content-fragments/content-fragments-variations.md) desde la consola **Assets**.
 
 >[!NOTE]
 >
@@ -129,12 +129,12 @@ Puede abrir el origen del fragmento para editarlo (el recurso) mediante el icono
 
 Cuando se agrega un fragmento de contenido específico a la página, aparece un marcador de posición **Arrastre los componentes aquí** entre cada párrafo HTML (y en la parte superior/inferior) del fragmento.
 
-Esto permite añadir contenido adicional [intermedio (es decir, contenido intermedio)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) el contenido del fragmento (en cualquiera de los puntos disponibles), sin tener que cambiar el fragmento raíz.
+Esto le permite agregar contenido adicional [intermedio (es decir, contenido intermedio)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) al contenido del fragmento (en cualquiera de los puntos disponibles), sin tener que cambiar el fragmento raíz.
 
 Para el contenido intermedio puede hacer lo siguiente:
 
-* Añadir componentes del [Explorador de componentes.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
-* Añadir recursos del [Explorador de recursos.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
+* Agregar componentes desde el explorador de [componentes.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+* Agregar recursos desde el [explorador Assets.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
 * Utilizar [contenido asociado](#using-associated-content) como fuente para el contenido intermedio.
 
 >[!CAUTION]

@@ -17,7 +17,7 @@ ht-degree: 21%
 
 >[!INFO]
 >
->Esta documentación hace referencia a una versión obsoleta de la herramienta. Para obtener más información sobre la versión más reciente, consulte [Asignación de usuarios y migración de principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>Esta documentación hace referencia a una versión obsoleta de la herramienta. Para obtener más información sobre la versión más reciente, consulte [Asignación de usuarios y migración de entidades de seguridad](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 <!-- Alexandru: drafting this for now
 
@@ -34,13 +34,13 @@ NOTE: "LEGACY" for user mapping includes everything before (that is, not includi
 
 ## Introducción {#introduction}
 
-Como parte del recorrido de transición a Adobe Experience Manager AEM () as a Cloud Service AEM AEM, debe mover usuarios y grupos de su sistema de existente a los de la red de usuarios de la red de trabajo de la red de trabajo de la red de trabajo de la red de la red de trabajo de la red de as a Cloud Service. Esta migración se realiza mediante la herramienta de transferencia de contenido.
+Como parte del recorrido de transición al as a Cloud Service AEM de Adobe Experience Manager AEM (), debe mover usuarios y grupos de su sistema de existente a AEM as a Cloud Service. Esta migración se realiza mediante la herramienta de transferencia de contenido.
 
-AEM Un cambio importante en la as a Cloud Service de la es el uso completamente integrado de los ID de Adobe para acceder al nivel de creación. Esta integración requiere el uso de [Adobe Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html) para administrar usuarios y grupos de usuarios. La información de perfil de usuario está centralizada en el sistema Identity Management de Adobe (IMS), que proporciona un inicio de sesión único en todas las aplicaciones de la nube de Adobe. Para obtener más información, consulte [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). Debido a este cambio, los usuarios y grupos existentes deben asignarse a sus ID de IMS para evitar usuarios y grupos duplicados en la instancia de autor de Cloud Service.
+Un cambio importante en AEM as a Cloud Service es el uso completamente integrado de los ID de Adobe para acceder al nivel de creación. Esta integración requiere el uso de [Adobe Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html) para administrar usuarios y grupos de usuarios. La información de perfil de usuario está centralizada en el sistema Identity Management de Adobe (IMS), que proporciona un inicio de sesión único en todas las aplicaciones de la nube de Adobe. Para obtener más información, consulte [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). Debido a este cambio, los usuarios y grupos existentes deben asignarse a sus ID de IMS para evitar usuarios y grupos duplicados en la instancia de autor de Cloud Service.
 
 ## Herramienta de asignación de usuarios {#mapping-tool}
 
-La herramienta de transferencia de contenido (sin asignación de usuarios) migra cualquier usuario y grupo asociado con el contenido que se migra. La herramienta de asignación de usuarios forma parte de la herramienta de transferencia de contenido. AEM Su único propósito es editar a los usuarios para que IMS, la funcionalidad de inicio de sesión único utilizada por as a Cloud Service, los reconozca correctamente. Una vez realizadas estas modificaciones, la herramienta de transferencia de contenido migra los usuarios y grupos del contenido especificado como de costumbre.
+La herramienta de transferencia de contenido (sin asignación de usuarios) migra cualquier usuario y grupo asociado con el contenido que se migra. La herramienta de asignación de usuarios forma parte de la herramienta de transferencia de contenido. Su único propósito es editar a los usuarios para que IMS, la funcionalidad de inicio de sesión único utilizada por AEM as a Cloud Service, los reconozca correctamente. Una vez realizadas estas modificaciones, la herramienta de transferencia de contenido migra los usuarios y grupos del contenido especificado como de costumbre.
 
 ### Siguientes pasos {#whats-next}
 

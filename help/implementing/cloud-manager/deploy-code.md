@@ -34,7 +34,7 @@ _Solo el tipo de canalización de código de pila completa admite la digitalizac
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. En el **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)** consola, toque o haga clic en el programa para el que desea implementar el código.
+1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, toque o haga clic en el programa para el que desea implementar código.
 
 1. Haga clic en **Implementar** en la llamada a la acción en la pantalla **Información general** para iniciar el proceso de implementación.
 
@@ -145,7 +145,7 @@ En estas circunstancias, cuando se puede volver a ejecutar, la página de estado
 >
 >En una nueva ejecución, el paso de compilación se etiqueta en la IU para reflejar que está copiando artefactos y no reconstruyendo.
 
-### Restricciones {#limitations}
+### Limitaciones {#limitations}
 
 * Volver a ejecutar el paso de implementación de producción solo estará disponible para la última ejecución.
 * Volver a ejecutar no está disponible para ejecuciones de actualización push.
@@ -154,7 +154,7 @@ En estas circunstancias, cuando se puede volver a ejecutar, la página de estado
 
 ### Volver a ejecutar la API {#reexecute-API}
 
-Además de estar disponible en la interfaz de usuario de, puede utilizar [la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) para almacenar en déclencheur las reejecuciones e identificar las que se activaron como reejecuciones.
+Además de estar disponible en la interfaz de usuario, puede usar [la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) para almacenar en déclencheur las nuevas ejecuciones e identificar las que se activaron como reejecuciones.
 
 #### Activación de una nueva ejecución {#reexecute-deployment-api}
 

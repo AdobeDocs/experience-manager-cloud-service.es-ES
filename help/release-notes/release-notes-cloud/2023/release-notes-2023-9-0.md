@@ -28,7 +28,7 @@ En la siguiente sección se describen las notas de la versión de funciones de l
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] (2023.9.0) es el viernes, 28 de septiembre de 2023. La siguiente versión con funcionalidades (2023.10.0) está planificada para el viernes, 26 de octubre de 2023.
+La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] (2023.9.0) fue el viernes, 28 de septiembre de 2023. La siguiente versión con funcionalidades (2023.10.0) está planificada para el viernes, 26 de octubre de 2023.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
@@ -58,9 +58,9 @@ Ahora puede asignar un formulario de metadatos a una carpeta específica dentro 
 
 ### Nuevas funciones de la vista Administrador {#admin-view-features}
 
-* **Integrar AEM Assets as a Cloud Service con la creación basada en documentos para Edge Delivery Services**: Integre AEM Assets con la creación basada en documentos para Edge Delivery Services para permitir que los autores de sitios web [utilizar imágenes disponibles en repositorios de AEM Assets al crear documentos en Microsoft Word o Google Docs](/help/edge/using.md#integrate-assets-edge).
+* **Integrar AEM Assets as a Cloud Service con la creación basada en documentos para Edge Delivery Services**: integre AEM Assets con la creación basada en documentos para Edge Delivery Services para permitir que los autores de sitios web [utilicen imágenes disponibles en repositorios de AEM Assets al crear documentos en documentos de Microsoft Word o Google](/help/edge/using.md#integrate-assets-edge).
 
-* **Extraer archivos .zip**: capacidad para seleccionar archivos ZIP administrados en Experience Manager y [extracción de los archivos directamente en el Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) sin descargarlos.
+* **Extraer archivos ZIP**: Posibilidad de seleccionar archivos ZIP que se administran en el Experience Manager y [extraer los archivos directamente en el Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) sin descargarlos.
 
   ![Fijar elementos para grupos](/help/release-notes/assets/extract-archive.png)
 
@@ -97,7 +97,7 @@ Ahora puede asignar un formulario de metadatos a una carpeta específica dentro 
 
 * **[Tratamiento de errores con controladores de error personalizados en el editor de reglas](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: ahora se puede invocar una función personalizada en respuesta a un error devuelto por un servicio externo y proporcionar una respuesta adaptada a los usuarios finales. Por ejemplo, puede invocar un flujo de trabajo personalizado en el back-end para códigos de error específicos o informar al cliente de que el servicio está inactivo.
 
-* **[Versión de 64 bits de AEM Forms Designer](/help/forms/installing-configuring-designer.md)**: la versión de 64 bits de AEM Forms Designer ofrece un rendimiento, una escalabilidad y una administración de memoria mejorados para potenciar su experiencia de creación de formularios. Con la arquitectura de 64 bits, puede abordar proyectos aún más grandes y complejos con facilidad, lo que garantiza flujos de trabajo de diseño sin problemas y eficiencia optimizada. Aumente sus capacidades de diseño de formularios y disfrute del futuro de AEM Forms Designer con esta versión de vanguardia.
+* **[Versión de 64 bits de AEM Forms Designer](/help/forms/installing-configuring-designer.md)**: La versión de 64 bits de AEM Forms Designer ofrece rendimiento, escalabilidad y administración de memoria mejorados para potenciar su experiencia de creación de formularios. Con la arquitectura de 64 bits, puede abordar proyectos aún más grandes y complejos con facilidad, lo que garantiza flujos de trabajo de diseño sin problemas y eficiencia optimizada. Aumente sus capacidades de diseño de formularios y disfrute del futuro de AEM Forms Designer con esta versión de vanguardia.
 
 ### Programa para primeros usuarios {#forms-early-adopter}
 
@@ -105,7 +105,7 @@ Ahora puede asignar un formulario de metadatos a una carpeta específica dentro 
 
   Puede escribir a `aem-forms-ea@adobe.com` desde su ID de correo electrónico oficial para unirse al programa de primeros usuarios y solicitar acceso a esta posibilidad.
 
-* **[Forms adaptable sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=es)**: utilice Forms adaptable sin encabezado para permitir que los desarrolladores creen, publiquen y administren formularios interactivos a los que se puede acceder e interactuar mediante API, en lugar de hacerlo a través de una interfaz gráfica de usuario tradicional. Los formularios adaptables sin encabezado le ayudan a:
+* **[Forms adaptable sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=es)**: use Forms adaptable sin encabezado para permitir que los desarrolladores creen, publiquen y administren formularios interactivos a los que se puede acceder e interactuar mediante API, en lugar de usar una interfaz gráfica de usuario tradicional. Los formularios adaptables sin encabezado le ayudan a:
 
    * crear formularios multicanal de alta calidad en el lenguaje de programación que desee
    * integrar formularios de forma nativa en sus aplicaciones móviles y de escritorio, sitios web y aplicaciones de chat

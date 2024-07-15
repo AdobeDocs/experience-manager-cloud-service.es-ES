@@ -29,7 +29,7 @@ WCAG 2.1 consiste en un conjunto de directrices tecnológicas independientes y c
 
 Por ejemplo, describir una imagen (o cualquier otro contenido no textual) mediante el uso del `alt` atributo en HTML beneficia en gran medida a las personas no videntes o con visión parcial. La descripción textual del `alt` atributo puede convertirse en salida de voz o transmitirse a pantallas de braille actualizables electrónicas.
 
-Además, WCAG 2.1 puede proporcionar ventajas para otros beneficiarios, incluidas las personas que se pueden considerar *con discapacidades de situación*. Las personas que, por circunstancias como la tecnología de navegación, la velocidad de conexión de red o el entorno de navegación, pueden experimentar barreras similares a las de las personas con discapacidad.
+Además, WCAG 2.1 puede proporcionar ventajas para otros beneficiarios, incluidas las personas que pueden considerarse *con discapacidades de situación*. Las personas que, por circunstancias como la tecnología de navegación, la velocidad de conexión de red o el entorno de navegación, pueden experimentar barreras similares a las de las personas con discapacidad.
 
 Con Adobe Experience Manager, los autores de contenido o los propietarios de sitios web pueden crear contenido web que cumpla los criterios de éxito relevantes de WCAG 2.1 de nivel A y de nivel AA.
 

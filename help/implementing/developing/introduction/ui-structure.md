@@ -23,17 +23,17 @@ AEM La interfaz de usuario se adapta tanto a los dispositivos móviles como de e
 
 Todos los módulos utilizan el mismo diseño básico:
 
-![consola AEM Sites](assets/ui-sites-console.png)
+![Consola AEM Sites](assets/ui-sites-console.png)
 
 El diseño se adhiere a un estilo de diseño interactivo y se adapta al tamaño del dispositivo, la ventana o ambos que esté utilizando.
 
 Por ejemplo, cuando la resolución es inferior a 1024 píxeles (como en un dispositivo móvil), la pantalla se ajusta en consecuencia:
 
-![Vista móvil de la consola Sitios](assets/ui-sites-mobile.png)
+![Vista móvil de la consola Sites](assets/ui-sites-mobile.png)
 
 ### Barra de encabezado {#header-bar}
 
-![AEM barra de encabezado de](assets/ui-header-bar.png)
+AEM ![barra de encabezado de la](assets/ui-header-bar.png)
 
 La barra de encabezado muestra elementos globales como:
 
@@ -50,11 +50,11 @@ La barra de herramientas es contextual para su ubicación y muestra las herramie
 
 En cualquier ubicación, la barra de herramientas muestra las acciones disponibles actualmente:
 
-![Barra de herramientas AEM Sites](assets/ui-sites-toolbar.png)
+![Barra de herramientas de AEM Sites](assets/ui-sites-toolbar.png)
 
 También depende de si se selecciona un recurso:
 
-![Barra de herramientas AEM Sites seleccionada](assets/ui-sites-toolbar-selected.png)
+![Barra de herramientas de AEM Sites seleccionada](assets/ui-sites-toolbar-selected.png)
 
 ### Carril izquierdo {#left-rail}
 
@@ -64,11 +64,11 @@ El carril izquierdo se puede abrir u ocultar según sea necesario para mostrar:
 * **Árbol de contenido**
 * **Cronología**
 * **Referencias**
-* **Filtrar**
+* **Filtro**
 
 El valor predeterminado es **Solo contenido** (carril oculto).
 
-![Carril izquierdo](assets/ui-left-rail.png)
+![Carril Izquierdo](assets/ui-left-rail.png)
 
 ## Creación de páginas {#page-authoring}
 
@@ -76,7 +76,7 @@ Al crear páginas, las áreas estructurales son las siguientes.
 
 ### Marco de contenido {#content-frame}
 
-El contenido de la página se representa en el marco de contenido. El marco de contenido es independiente del editor para garantizar que no haya conflictos debidos a CSS o JavaScript.
+El contenido de la página se representa en el marco de contenido. El marco de contenido es independiente del editor para garantizar que no haya conflictos debido a CSS o JavaScript.
 
 El marco de contenido se encuentra en la sección derecha de la ventana, debajo de la barra de herramientas.
 
@@ -97,21 +97,21 @@ El marco del editor es un contenedor (abstracto) para todos los elementos de cre
 
 ### Panel lateral {#side-panel}
 
-Contiene tres pestañas predeterminadas. El **Assets** y **Componentes** Las pestañas permiten seleccionar estos elementos, arrastrarlos desde el panel y colocarlos en la página. El **Árbol de contenido** permite inspeccionar la jerarquía del contenido de la página.
+Contiene tres pestañas predeterminadas. Las pestañas **Assets** y **Components** le permiten seleccionar estos elementos, arrastrarlos del panel y colocarlos en la página. La pestaña **Árbol de contenido** le permite inspeccionar la jerarquía de contenido de la página.
 
 El panel lateral está oculto de forma predeterminada. Cuando se selecciona, se muestra en el lado izquierdo o, cuando el ancho de la ventana es inferior a 1024 píxeles, se desliza para cubrir toda la ventana, como en un dispositivo móvil, por ejemplo.
 
 ![Panel lateral](assets/ui-side-panel.png)
 
-### Panel lateral: Recursos {#side-panel-assets}
+### Panel lateral: Assets {#side-panel-assets}
 
-En la pestaña Recursos, puede seleccionar entre el rango de recursos. Además, puede filtrar por un término específico o seleccionar un grupo.
+En la pestaña Assets, puede seleccionar entre el rango de recursos. Además, puede filtrar por un término específico o seleccionar un grupo.
 
-![Pestaña Recursos](assets/ui-side-panel-assets.png)
+![Ficha Assets](assets/ui-side-panel-assets.png)
 
 ### Panel lateral: Grupos de recursos {#side-panel-asset-groups}
 
-En la pestaña Recursos hay una lista desplegable que puede utilizar para seleccionar los grupos de recursos específicos.
+En la pestaña Assets, hay una lista desplegable que puede utilizar para seleccionar los grupos de recursos específicos.
 
 ![Grupos de recursos](assets/ui-side-panel-asset-groups.png)
 
@@ -129,7 +129,7 @@ En la pestaña Árbol de contenido, puede ver la jerarquía del contenido en la 
 
 ### Superposiciones {#overlays}
 
-Superpone el marco de contenido y lo utiliza el [capas](#layer) para comprender la mecánica de cómo puede interactuar de forma transparente con los componentes y su contenido.
+Superpone el marco de contenido y lo utilizan las [capas](#layer) para comprender la mecánica de cómo puede interactuar de forma transparente con los componentes y su contenido.
 
 Las superposiciones se encuentran en el marco del editor (con todos los demás elementos de creación de páginas), aunque en realidad se superponen a los componentes adecuados en el marco de contenido.
 
@@ -156,7 +156,7 @@ El selector de capas le permite elegir la capa que desea utilizar. Cuando se cie
 
 El selector de capas está disponible como una lista desplegable en la barra de herramientas (en la parte superior de la ventana, dentro del marco del editor).
 
-![Conmutador de capas](assets/ui-layer-switcher.png)
+![Conmutador de nivel](assets/ui-layer-switcher.png)
 
 ### Barra de herramientas del componente {#component-toolbar}
 
@@ -170,4 +170,4 @@ Según el espacio disponible, las barras de herramientas de los componentes se c
 
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
-Para obtener más información técnica, consulte la [Conjunto de documentación JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html) para el editor de páginas.
+Para obtener más información técnica, consulte [Conjunto de documentación de JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html) para el editor de páginas.

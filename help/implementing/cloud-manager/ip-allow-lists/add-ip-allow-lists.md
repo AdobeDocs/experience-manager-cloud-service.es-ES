@@ -23,15 +23,15 @@ Un usuario con la función de **Propietario del negocio** o **Administrador de i
 
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
 
-1. Desde el **Información general** , vaya a la página **LISTAS DE PERMITIDOS IP** página que utiliza la pestaña de navegación lateral.
+1. Desde la página **Información general**, vaya a la página **Listas de permitidos IP** con la pestaña de navegación lateral.
 
    ![Opción Listas de IP permitidas del panel lateral](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 
-1. Clic **Añadir Lista de permitidos IP**.
+1. Haga clic en **Agregar Lista de permitidos IP**.
 
    ![Cuadro de diálogo Añadir lista de IP permitidas](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create02.png)
 
-1. En el **Añadir Lista de permitidos IP** , escriba un nombre que desee utilizar para hacer referencia a la lista de permitidos en la **Nombre de Lista de permitidos IP** field.
+1. En el cuadro de diálogo **Agregar Lista de permitidos IP**, escriba un nombre que desee usar para hacer referencia a la lista de permitidos en el campo **Nombre de Lista de permitidos IP**.
 
    * Este nombre es solo informativo y debe ser descriptivo para ayudarle a identificar la lista.
 

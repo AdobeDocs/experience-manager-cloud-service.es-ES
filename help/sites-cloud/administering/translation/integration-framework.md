@@ -28,12 +28,12 @@ Para obtener una descripción general de las funciones de traducción de conteni
 
 ## Conexión a un proveedor de servicios de traducción {#connecting-to-a-translation-service-provider}
 
-Cree una configuración en la nube que conecte AEM con su proveedor de servicios de traducción. AEM incluye la capacidad de [conectarse a Microsoft® Translator](connect-ms-translator.md) de forma predeterminada.
+Cree una configuración en la nube que conecte AEM con su proveedor de servicios de traducción. AEM De forma predeterminada, incluye la capacidad de [conectar con Microsoft® Translator](connect-ms-translator.md).
 
 Los siguientes proveedores de traducción proporcionan una implementación de la API de AEM para proyectos de traducción.
 
 * [Microsoft](connect-ms-translator.md)
-* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)
+* [Traducciones.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)
 * [Clay Tablet Technologies](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
 * [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
@@ -44,7 +44,7 @@ Los siguientes proveedores de traducción proporcionan una implementación de la
 * [Smartling](https://www.smartling.com/software/integrations/adobe-experience-manager/)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 
-Después de instalar un paquete de conector, puede crear una configuración de la nube para él. Normalmente, debe proporcionar sus credenciales para autenticarse en el servicio de traducción. Para obtener información sobre cómo añadir una configuración de nube para el conector de Microsoft® Translator, consulte [Integración con Microsoft® Translator](connect-ms-translator.md).
+Después de instalar un paquete de conector, puede crear una configuración de la nube para él. Normalmente, debe proporcionar sus credenciales para autenticarse en el servicio de traducción. Para obtener información sobre cómo agregar una configuración de nube para el conector de Microsoft® Translator, consulte [Integración con Microsoft® Translator](connect-ms-translator.md).
 
 Si es necesario, puede crear varias configuraciones de nube para el mismo conector. Por ejemplo, cree una configuración para cada una de las cuentas o proyectos que tenga con el mismo proveedor.
 
@@ -70,13 +70,13 @@ Después de configurar un marco de trabajo de integración de traducciones, pued
 
 Una sola configuración del marco de trabajo controla cómo se traducen el contenido de la página y los recursos. Para crear una nueva configuración de traducción haga lo siguiente:
 
-1. En el [menú de navegación global,](/help/sites-cloud/authoring/basic-handling.md#global-navigation) select **Herramientas > Cloud Service y Cloud Service en traducción**.
+1. En el [menú de navegación global,](/help/sites-cloud/authoring/basic-handling.md#global-navigation) seleccione **Herramientas > Cloud Service y Cloud Service de traducción**.
 1. Desplácese hasta donde desee crear la configuración en la estructura de contenido. A menudo se basa en un sitio en particular, pero puede ser global.
 1. Proporcione la siguiente información en los campos y seleccione **Crear**.:
    1. Seleccione **Tipo de configuración** en la lista desplegable.
    1. Escriba un **Título** para su configuración. El **Título** identifica la configuración en la consola **Cloud Services**, así como en las listas desplegables de propiedad de página.
    1. Opcionalmente, escriba un **Nombre** para usar para el nodo del repositorio que almacena la configuración.
-1. En el **Editar configuración** , configure las propiedades en la **Sites** y **Assets** pestañas y, a continuación, seleccione **Guardar y cerrar**.
+1. En la ventana **Editar configuración**, configure las propiedades de las pestañas **Sitios** y **Assets**, y después seleccione **Guardar y cerrar**.
 
 ### Propiedades de configuración de sitios {#sites-configuration-properties}
 
@@ -110,7 +110,7 @@ Las propiedades de recursos controlan cómo se configuran los recursos. Para obt
 | Traducir etiquetas | Active esta propiedad para poder traducir las etiquetas asociadas al recurso. |
 | Ejecutar traducción automáticamente | Seleccione esta propiedad para poder ejecutar los trabajos de traducción automáticamente después de crear los proyectos. Cuando selecciona esta opción, no tiene la oportunidad de revisar o ampliar el ámbito del trabajo de traducción. |
 | Deshabilitar traducción de solo actualización | Cuando se activa esta opción, al actualizar el proyecto de traducción se envían todos los campos traducibles para su traducción, no solo los modificados desde la última traducción. |
-| Habilitar los campos de modelo de contenido para la traducción | Al habilitar esta opción, se utiliza la variable **Traducible** field on [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) para determinar si el campo está traducido y crea automáticamente [reglas de traducción](rules.md) en consecuencia. Esta opción reemplaza las reglas de traducción que haya creado. |
+| Habilitar los campos de modelo de contenido para la traducción | Al habilitar esta opción, se usa el campo **Traducible** en [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) para determinar si el campo está traducido y se crean automáticamente [reglas de traducción](rules.md) según corresponda. Esta opción reemplaza las reglas de traducción que haya creado. |
 
 ## Configuración de páginas para su traducción {#configuring-pages-for-translation}
 
@@ -121,7 +121,7 @@ Para configurar la traducción de las páginas de origen a otros idiomas, asóci
 
 La configuración de nube del marco de trabajo de integración de traducciones identifica la configuración de nube que se utilizará para la conexión con el proveedor de servicios. Cuando asocia una página de origen con una configuración de nube de marco de trabajo, la página debe asociarse a la configuración de nube del proveedor de servicios que utiliza la configuración de nube de marco trabajo.
 
-Cuando asocia una página con una configuración de nube, los descendientes de la página heredan la asociación. Por ejemplo, si asoció el `/content/wknd/language-masters/en/magazine` página con un marco de trabajo de integración de traducción, la `magazine` y las páginas secundarias inferiores se traducen según el marco de trabajo.
+Cuando asocia una página con una configuración de nube, los descendientes de la página heredan la asociación. Por ejemplo, si asoció la página `/content/wknd/language-masters/en/magazine` con un marco de trabajo de integración de traducción, la página `magazine` y las páginas secundarias inferiores se traducen según el marco de trabajo.
 
 Si es necesario, puede anular la asociación en una página descendiente. Por ejemplo, el contenido de un sitio web se refiere principalmente a viajes y estilo de vida. Sin embargo, una rama de páginas describe la compañía. En tal caso, la página raíz del sitio puede asociarse con un marco de trabajo de integración de traducciones que especifique la traducción automática con la categoría Estilo de vida. La rama que describe la compañía utilizará un marco de trabajo que realice la traducción automática mediante la categoría General.
 
@@ -131,7 +131,7 @@ Asocie una página al proveedor de traducción que esté utilizando para traduci
 
 1. En la consola Sitios, seleccione la página que desea configurar y seleccione **Ver propiedades**.
 1. Seleccione la pestaña **Cloud Services**.
-1. En el **Agregar configuración** , seleccione la configuración.
+1. En la lista desplegable **Agregar configuración**, seleccione la configuración.
 1. Seleccione **Guardar y cerrar**.
 
 ### Asociación de páginas a un marco de trabajo integración de traducción {#associating-pages-with-a-translation-integration-framework}
@@ -140,5 +140,5 @@ Asocie una página al marco de trabajo de integración de traducción que define
 
 1. En la consola Sitios, seleccione la página que desea configurar y seleccione **Ver propiedades**.
 1. Seleccione la pestaña **Cloud Services**.
-1. En el **Agregar configuración** , seleccione la configuración.
+1. En la lista desplegable **Agregar configuración**, seleccione la configuración.
 1. Seleccione **Guardar y cerrar**.

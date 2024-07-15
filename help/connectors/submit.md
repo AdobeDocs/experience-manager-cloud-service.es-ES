@@ -13,7 +13,7 @@ ht-degree: 32%
 
 # Envío de un conector de AEM
 
-La información que se proporciona a continuación es útil para enviar conectores de Adobe Experience Manager AEM () y debe leerse con artículos sobre [implementación](implement.md) y  [mantenimiento](maintain.md) conectores.
+La información que se proporciona a continuación es útil para enviar Conectores Adobe Experience Manager AEM () y se debe leer con artículos sobre [implementación](implement.md) y [mantenimiento de los conectores](maintain.md).
 
 Los conectores de AEM aparecen en la lista de [Adobe Exchange](https://partners.adobe.com/technologyprogram/experiencecloud.html).
 
@@ -38,7 +38,7 @@ Independientemente de dónde estén alojados, se debe hacer referencia a los paq
 </dependency>
 ```
 
-Si el socio de ISV aloja el conector en un repositorio Maven accesible por Internet (como accesible en Cloud Manager), el ISV debe proporcionar la configuración del repositorio en la que la variable `pom.xml` se puede colocar. El motivo es que las dependencias del conector (arriba) se pueden resolver en el momento de la compilación, tanto localmente como por Cloud Manager.
+Si el partner de ISV aloja el conector en un repositorio Maven accesible por Internet (como accesible por Cloud Manager), el ISV debe proporcionar la configuración del repositorio en la que se puede colocar `pom.xml`. El motivo es que las dependencias del conector (arriba) se pueden resolver en el momento de la compilación, tanto localmente como por Cloud Manager.
 
 ```xml
 <repository>

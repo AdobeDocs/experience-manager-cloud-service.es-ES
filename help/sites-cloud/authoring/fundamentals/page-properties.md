@@ -21,7 +21,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Título y etiquetas**
 
-   * **Título** - El título de la página se muestra en varias ubicaciones. Por ejemplo, la lista de la pestaña **Sitios web** y las vistas de lista o tarjeta **Sitios**.
+   * **Título**: el título de la página se muestra en varias ubicaciones. Por ejemplo, la lista de la pestaña **Sitios web** y las vistas de lista o tarjeta **Sitios**.
       * Este es un campo obligatorio.
    * **Etiquetas**: aquí puede agregar o quitar etiquetas de la página al actualizar la lista en el cuadro de diálogo de selección.
       * Después de seleccionar una etiqueta, aparece debajo del cuadro de selección. Puede quitar una etiqueta de esta lista utilizando la x.
@@ -52,7 +52,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
    * **Título de página**: un título que se usará en la página. Normalmente se utiliza en los componentes de título. Si está vacío, se utiliza **Título**.
    * **Título de navegación**: puede especificar un título independiente para utilizarlo en la navegación (por ejemplo, si desea algo más conciso). Si está vacío, se utiliza **Título**.
-   * **Rótulo** - Un subtítulo para usar en la página.
+   * **Título** - Un subtítulo para usar en la página.
    * **Descripción**: la descripción de la página, su propósito o cualquier otro detalle que quiera añadir.
 
 * **Tiempo de activación/desactivación**
@@ -87,9 +87,9 @@ Las propiedades se distribuyen entre varias pestañas.
   >* No admiten patrones regex.
   >* No debe configurarse en una página existente.
 
-   * **Añadir** : seleccione esta opción para mostrar un campo y definir una URL de vanidad para la página.
+   * **Agregar**: seleccione esta opción para mostrar un campo con el que definir una URL de vanidad para la página.
       * Seleccione de nuevo para añadir varias.
-      * Seleccione el **Eliminar** para eliminar la URL de vanidad.
+      * Seleccione el icono **Quitar** para eliminar la URL de vanidad.
    * **Redirigir URL de vanidad**: indica si desea que la página use la URL de vanidad.
 
 ### Avanzado  {#advanced}
@@ -98,14 +98,14 @@ Las propiedades se distribuyen entre varias pestañas.
 
    * **Idioma**: el idioma de la página
    * **Raíz del idioma**: si la página es la raíz de una copia en un idioma, es necesario marcar esta opción
-   * **Redirigir** - Indica la página a la que esta página debe redirigirse automáticamente con un HTML `302 Found` estado.
+   * **Redirigir**: indica la página a la que esta página debe redirigirse automáticamente con un estado de HTML `302 Found`.
       * **Redirección permanente**: cuando se selecciona, la página redirige a la ruta de destino proporcionada junto con un estado HTML `301 Moved Permanently`.
    * **Diseño**: indica si se muestra o se oculta la página en la navegación de páginas del sitio resultante
    * **Alias**: especifica un alias que se usará con esta página
       * Por ejemplo, si define un alias de `private` para la página `/content/wknd/us/en/magazine/members-only`, se puede acceder a esta página también mediante `/content/wknd/us/en/magazine/private`
       * La creación de un alias establece la propiedad `sling:alias` en el nodo de página, lo que solo afecta al recurso, no a la ruta del repositorio.
       * No se pueden publicar páginas a las que se accede mediante alias en el editor. Las [Opciones de publicación](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) del editor solo están disponibles para las páginas a las que se accede a través de sus rutas reales.
-      * Consulte [Nombres de páginas localizados bajo Prácticas recomendadas de administración de direcciones SEO y URL](/help/overview/seo-and-url-management.md#localized-page-names).
+      * Consulte [Nombres de páginas localizados en Procedimientos recomendados para la administración de direcciones URL y SEO](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Configuración**
 
@@ -237,7 +237,7 @@ A través de una configuración sencilla, el autor de contenido ahora puede habi
 
 >[!NOTE]
 >
->Consulte [Activación de funciones de aplicación web progresiva](/help/sites-cloud/authoring/features/enable-pwa.md).
+>Consulte [Habilitación de funciones de aplicación web progresiva](/help/sites-cloud/authoring/features/enable-pwa.md).
 
 * **Configurar la experiencia instalable**
 
@@ -286,7 +286,7 @@ Al editar una página puede, utilizar **Información de página** para definir l
 
 1. Abra la página para la que desee editar las propiedades.
 1. Seleccione el icono **Información de página** para abrir el menú de selección:
-1. Seleccionar **Abrir propiedades** y se abre un cuadro de diálogo que le permite editar las propiedades, ordenadas por la pestaña correspondiente. Los siguientes botones también están disponibles en la parte derecha de la barra de herramientas:
+1. Seleccione **Abrir propiedades** y se abrirá un cuadro de diálogo que le permitirá editar las propiedades, ordenadas por la ficha correspondiente. Los siguientes botones también están disponibles en la parte derecha de la barra de herramientas:
    * **Cancelar**
    * **Guardar y cerrar**
 1. Utilice el botón **Guardar y cerrar** para guardar los cambios. 
@@ -323,7 +323,7 @@ Cuando esté en la edición por lotes, podrá efectuar las siguientes acciones:
       * Si reduce la selección de páginas a una sola página, se verán todas las propiedades.
    * Propiedades comunes con un valor común
       * En el modo Ver solo se muestran las propiedades con un valor común.
-      * Cuando el campo tiene varios valores (por ejemplo, Etiquetas), los valores solo se mostrarán cuando *todo* son comunes. Si solo algunas son comunes, solo se mostrarán al editar.
+      * Cuando el campo tiene varios valores (por ejemplo, Etiquetas), los valores solo se mostrarán si *todos* son comunes. Si solo algunas son comunes, solo se mostrarán al editar.
       * Cuando no existen propiedades con un valor común, se muestra un mensaje. 
 
 * **Editar**

@@ -1,6 +1,6 @@
 ---
 title: Uso del transformador de contenido
-description: AEM Aprenda a transformar la estructura de contenido con el fin de prepararse para migrar a la as a Cloud Service.
+description: Aprenda a transformar la estructura de contenido como preparación para la migración a AEM as a Cloud Service.
 exl-id: 40516ff7-5686-42e6-bdd1-c9c6de432b09
 feature: Migration
 role: Admin
@@ -25,7 +25,7 @@ En la sección siguiente se comprenden las consideraciones importantes al utiliz
 
 ## Disponibilidad {#availability-ct}
 
-El transformador de contenido está empaquetado con la variable [Herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) que se puede descargar como archivo zip desde el Portal de distribución de software. AEM Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de la.
+El transformador de contenido está empaquetado con la [herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) que se puede descargar como archivo zip desde el portal de distribución de software. AEM Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de la.
 
 >[!NOTE]
 >El transformador de contenido está disponible con la herramienta de transferencia de contenido v2.0.20 o superior.
@@ -40,7 +40,7 @@ El transformador de contenido está empaquetado con la variable [Herramienta de 
    >[!NOTE]
    > Asegúrese de haber ejecutado el informe de BPA anteriormente y compruébelo con la URL http://host:port/apps/best-practices-analyzer/content/BestPracticesReport.html
 
-1. Haga clic en la tarjeta con título **Transformador de contenido para informe de BPA**
+1. Haga clic en la tarjeta con el título **Transformador de contenido para el informe de BPA**
 
    ![imagen](/help/journey-migration/content-transformer/assets/ct-2.png)
 
@@ -50,14 +50,14 @@ El transformador de contenido está empaquetado con la variable [Herramienta de 
 
    ![imagen](/help/journey-migration/content-transformer/assets/ct-3.png)
 
-1. Puede filtrar los problemas según `Pattern Code`, `Subtype`, `Importance`, y `Source`.
+1. Puede filtrar los problemas según `Pattern Code`, `Subtype`, `Importance` y `Source`.
 
    ![imagen](/help/journey-migration/content-transformer/assets/ct-4.png)
 
-1. Puede seleccionar todos los problemas o problemas específicos y moverlos, quitarlos o cambiarles el nombre para resolverlos. También se pueden añadir rutas personalizadas utilizando **Añadir rutas** botón en la esquina superior derecha.
+1. Puede seleccionar todos los problemas o problemas específicos y moverlos, quitarlos o cambiarles el nombre para resolverlos. También se pueden agregar rutas personalizadas usando el botón **Agregar rutas** de la esquina superior derecha.
 
    >[!NOTE]
-   > Al utilizar la operación de movimiento, se recomienda mover todas las rutas a una sola carpeta (por ejemplo, en `/etc/packages/content-transformation/paths`), de modo que cuando se instalen los paquetes de copia de seguridad para devolver la instancia al estado original, la carpeta (`/etc/packages/content-transformation/paths`) se puede eliminar mediante la operación de eliminación para reducir el tamaño del repositorio.
+   > Al utilizar la operación de mover, se recomienda mover todas las rutas a una sola carpeta (por ejemplo, en `/etc/packages/content-transformation/paths`), de modo que cuando se instalen los paquetes de copia de seguridad para devolver la instancia al estado original, se pueda eliminar la carpeta (`/etc/packages/content-transformation/paths`) mediante la operación de quitar para reducir el tamaño del repositorio.
 
    ![imagen](/help/journey-migration/content-transformer/assets/ct-5.png)
    ![imagen](/help/journey-migration/content-transformer/assets/ct-6.png)
@@ -65,10 +65,10 @@ El transformador de contenido está empaquetado con la variable [Herramienta de 
    >[!NOTE]
    > Cualquier operación que pueda cambiar el contenido de origen (`move`/`remove`/`rename`) creará de forma predeterminada un paquete de copia de seguridad de las rutas de origen en `/etc/packages/content-transformation` antes de la transformación. Aunque cada cuadro de diálogo de operación tiene una opción para deshabilitar/habilitar la creación de paquetes de copia de seguridad, se recomienda tener siempre seleccionada la opción para habilitar la creación de paquetes.
 
-1. A continuación, se muestra un ejemplo de un paquete de copia de seguridad creado para la operación de movimiento de las rutas, haga clic en Instalar para recuperar las rutas de origen. La instalación solo devuelve las rutas de origen a su ubicación original y no elimina las rutas a las que se movieron durante la transformación. Para eliminar las rutas en la ubicación desplazada, haga clic en **Añadir rutas** para añadir la ubicación (por ejemplo, `/etc/packages/content-transformation/paths`), seleccione la ubicación y haga clic en **Eliminar**.
+1. A continuación, se muestra un ejemplo de un paquete de copia de seguridad creado para la operación de movimiento de las rutas, haga clic en Instalar para recuperar las rutas de origen. La instalación solo devuelve las rutas de origen a su ubicación original y no elimina las rutas a las que se movieron durante la transformación. Para eliminar las rutas de acceso en la ubicación desplazada, haga clic en el botón **Agregar rutas** para agregar la ubicación (por ejemplo, `/etc/packages/content-transformation/paths`), seleccione la ubicación y haga clic en **Quitar**.
 
    >[!CAUTION]
-   > No eliminar `/etc/packages/content-transformation` ya que esta es la ubicación donde residen los paquetes de copia de seguridad. Solo cuando esté seguro de que ya no necesita estos paquetes, puede eliminar esta ubicación para reducir el tamaño del repositorio.
+   > No elimine `/etc/packages/content-transformation`, ya que es la ubicación donde residen los paquetes de copia de seguridad. Solo cuando esté seguro de que ya no necesita estos paquetes, puede eliminar esta ubicación para reducir el tamaño del repositorio.
 
    ![imagen](/help/journey-migration/content-transformer/assets/ct-7.png)
    ![imagen](/help/journey-migration/content-transformer/assets/ct-8.png)

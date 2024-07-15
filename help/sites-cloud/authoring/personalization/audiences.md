@@ -36,8 +36,8 @@ Puede crear un segmento de ContextHub en la consola de públicos o durante el pr
 
 Para crear un segmento de ContextHub en la consola de audiencias:
 
-1. En la consola de navegación, seleccione **Personalización**. Seleccionar **Audiencias**.
-1. Seleccionar **Crear segmento de ContextHub**.
+1. En la consola de navegación, seleccione **Personalization**. Seleccionar **audiencias**.
+1. Seleccione **Crear segmento de ContextHub**.
 
    ![Creación de segmentos](/help/sites-cloud/authoring/assets/audiences-create-segment.png)
 
@@ -63,19 +63,19 @@ Al utilizar más de una regla, estas reglas se combinan según el operador boole
 
 Para crear una audiencia de Adobe Target:
 
-1. En la consola de navegación, seleccione **Personalización**. Seleccionar **Audiencias**.
+1. En la consola de navegación, seleccione **Personalization**. Seleccionar **audiencias**.
 
    ![Navegación a audiencias](/help/sites-cloud/authoring/assets/audiences-navigation.png)
 
-1. En la consola Audiencias, seleccione **Crear** y luego **Crear audiencia de Target**.
+1. En la consola de audiencias, seleccione **Crear** y luego **Crear audiencia de destino**.
 
    ![Creación de una audiencia de Target](/help/sites-cloud/authoring/assets/audiences-create-target.png)
 
-1. En el **Configuración de Adobe Target** , seleccione la configuración de destino y seleccione **OK**.
+1. En el cuadro de diálogo **Configuración de Adobe Target**, seleccione la configuración de destino y seleccione **Aceptar**.
 1. En el área Rule#1, seleccione el tipo de atributo e introduzca la información de atributo en los campos disponibles. Cuando termine, seleccione la marca de verificación a la derecha del atributo para guardarlo. Consulte [Atributos y sus opciones](#attributes-and-their-options) para obtener información sobre todos los atributos.
 1. Haga clic en **Agregar regla** para añadir otra regla. Escriba tantas reglas como sea necesario. Las reglas se combinan con el operador boolean AND, lo que significa que la audiencia debe cumplir todos los requisitos de cada regla para poder optar a una actividad.
 1. Seleccione **Siguiente**.
-1. Introduzca un nombre para la audiencia y seleccione **Guardar**.
+1. Escriba un nombre para la audiencia y seleccione **Guardar**.
 1. Seleccione **Guardar**. El público se enumera en la lista de públicos.
 
 ### Atributos y sus opciones {#attributes-and-their-options}
@@ -100,6 +100,6 @@ Puede crear reglas de segmentación para cada uno de los atributos siguientes:
 
 Puede editar cualquier audiencia de ContextHub desde la consola Audiencias. Asimismo, también puede editar audiencias de Adobe Target, pero solo las que se hayan creado en AEM:
 
-1. En la consola de navegación, seleccione **Personalización**. Seleccionar **Audiencias**.
-1. Seleccione el icono situado junto al segmento de ContextHub que desea editar y seleccione **Editar**.
+1. En la consola de navegación, seleccione **Personalization**. Seleccionar **audiencias**.
+1. Seleccione el icono que está junto al segmento de ContextHub que desea editar y seleccione **Editar**.
 1. Haga los cambios necesarios en el editor de segmentos. Consulte la documentación de ContextHub para obtener más información. <!--See the [ContextHub](/help/sites-administering/contexthub-config.md) documentation for more information.-->

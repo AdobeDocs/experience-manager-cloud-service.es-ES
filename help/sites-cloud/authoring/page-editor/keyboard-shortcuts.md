@@ -24,7 +24,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos hac
 
 | Lugar de residencia | Atajo | Descripción |
 |---|---|---|
-| Cualquier modo de ventana de edición | `Ctrl-Shift-m` | Alternar entre **Previsualizar** y el seleccionado actualmente [modo](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) (por ejemplo, **Editar**, **Diseño**, etc.)* |
+| Cualquier modo de ventana de edición | `Ctrl-Shift-m` | Alternar entre **Vista previa** y el [modo](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) seleccionado actualmente (por ejemplo, **Editar**, **Diseño**, etc.)* |
 | Modo de **edición** | `Ctrl-z` | [Deshacer el último cambio](/help/sites-cloud/authoring/page-editor/edit-content.md) |
 |  | `Ctrl-y` | [Rehacer el último cambio](/help/sites-cloud/authoring/page-editor/edit-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Seleccionar varios párrafos |

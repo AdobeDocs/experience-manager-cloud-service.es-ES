@@ -69,18 +69,18 @@ Dynamic Media incorpora los flujos de trabajo de la solución de administración
 
 ### Un archivo con infinitas posibilidades
 
-Uno de los puntos principales que hay que comprender sobre Dynamic Media es el concepto de _Un archivo de recursos principal con infinitas posibilidades_.
+Uno de los puntos principales que hay que entender sobre Dynamic Media es el concepto de _un archivo de recursos principal con infinitas posibilidades_.
 
 Para comprender mejor este concepto, piense en la forma en que trabaja tradicionalmente con un solo recurso, como una imagen o un vídeo. Normalmente, se crea un recurso principal. A continuación, cree manualmente versiones de ese mismo recurso para cada experiencia, cada dispositivo que se necesite, cada página web y cada propiedad donde se utilice. Con el tiempo, ese recurso único puede crecer hasta 20, 30 o más versiones, sin que se les adjunte un historial de versiones. Ahora, imaginen hacer eso para cada imagen o video que tengan. El número de versiones de recursos se convertiría rápidamente en abrumador para mantener y actualizar, sin mencionar el aumento en los costes de almacenamiento.
 
-Sin embargo, Dynamic Media es fundamentalmente diferente de otros sistemas porque se utiliza para distribuir contenidos _dinámicamente_ desde recursos únicos, principales y desde llamadas de URL. Las rutas de URL de Dynamic Media que solicita incluyen instrucciones que indican al servidor de publicación de Adobe cómo mostrar el recurso cuando se envía a la pantalla de un cliente. Por ejemplo, con el mismo recurso principal, puede entregarlo instantáneamente en representaciones ilimitadas, cambiando el tamaño, el formato, la resolución, el peso, el color, el recorte y los efectos como una vista de zoom.
+Dynamic Media, sin embargo, es fundamentalmente diferente de otros sistemas porque lo usa para entregar sus medios _dinámicamente_ desde recursos únicos, principales y desde llamadas a URL. Las rutas de URL de Dynamic Media que solicita incluyen instrucciones que indican al servidor de publicación de Adobe cómo mostrar el recurso cuando se envía a la pantalla de un cliente. Por ejemplo, con el mismo recurso principal, puede entregarlo instantáneamente en representaciones ilimitadas, cambiando el tamaño, el formato, la resolución, el peso, el color, el recorte y los efectos como una vista de zoom.
 
 Este método de entrega único garantiza que las experiencias de calidad coherentes se envíen a cualquier pantalla, independientemente del tamaño o el ancho de banda. Los vídeos de tamaño completo también están optimizados para todos los tipos de pantalla y se transmiten de forma adaptativa para garantizar una experiencia de usuario uniforme y de calidad.
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![Adobe Dynamic Media ofrece la misma imagen principal a diferentes medios en diferentes tamaños y formatos](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
-_Adobe Dynamic Media garantiza que las experiencias coherentes y de calidad se entreguen a cualquier pantalla, independientemente del tamaño o el ancho de banda._
+![Dynamic Media de Adobe ofrece la misma imagen principal a diferentes medios en diferentes tamaños y formatos](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+_Dynamic Media de Adobe garantiza experiencias consistentes y de calidad en cualquier pantalla, independientemente del tamaño o ancho de banda._
 
 A medida que siga leyendo, aprenderá más sobre por qué este concepto de &quot;un archivo de recursos principal, posibilidades ilimitadas&quot; es importante.
 
@@ -92,13 +92,13 @@ En el sistema CDN, el contenido web se almacena en cachés web a través de Inte
 
 <!-- USE AN IMAGE HERE? ![Content delivery network](/help/assets/assets-dm/cdn.png) -->
 
-Históricamente, la CDN entrega 3,5 petabytes de tráfico a los clientes cada mes. El sistema puede entregar 52.000 millones de activos en un solo día. Ese número equivale a 864.000 imágenes y vídeos entregados con éxito a los clientes, _cada segundo_.
+Históricamente, la CDN entrega 3,5 petabytes de tráfico a los clientes cada mes. El sistema puede entregar 52.000 millones de activos en un solo día. Ese número equivale a 864.000 imágenes y vídeos que se entregaron correctamente a los clientes, _cada segundo_.
 
 ### Imágenes inteligentes
 
 Dynamic Media ya realiza un excelente trabajo de optimización de recursos y garantía de que cada recurso se cargue rápidamente en sistemas móviles y de escritorio, a través de la red de distribución de contenido (CDN). Para que esto suceda, se utilizan ajustes preestablecidos de imagen en Dynamic Media para definir la calidad de la imagen. También definen el tipo de imagen que está enviando, su nitidez y otras piezas para diversas partes de sus experiencias o páginas.
 
-Pero para añadir valor a Dynamic Media más allá de los ajustes preestablecidos de imagen, hay _Imágenes inteligentes_.
+Pero para agregar valor a Dynamic Media más allá de los ajustes preestablecidos de imagen, hay _Imágenes inteligentes_.
 
 Imágenes inteligentes proporciona un rendimiento de entrega de recursos de imagen aún mejor al optimizar automáticamente el formato y el tamaño de archivo de una imagen en función de la capacidad del explorador del cliente. Funciona con los ajustes preestablecidos de imagen existentes (los ajustes preestablecidos de imagen se tratan en la parte II de este recorrido) y utiliza inteligencia en la entrega.
 
@@ -111,7 +111,7 @@ Esta inteligencia reduce aún más el tamaño del archivo de imagen en función 
 En general, con imágenes inteligentes, se puede esperar una mejora del rendimiento del 22 % al 47 % en función de los ajustes preestablecidos de imagen existentes y las características específicas del usuario final. Todo manteniendo la calidad de imagen como si nunca se tocara.
 
 ![Imágenes inteligentes](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
-_Smart Imaging optimiza automáticamente el formato y el tamaño de archivo de una imagen en función de la capacidad del explorador y la velocidad de red del cliente._
+_Imágenes inteligentes optimiza automáticamente el formato y el tamaño de archivo de una imagen en función de la capacidad del explorador y la velocidad de red del cliente._
 
 Las imágenes inteligentes no están activadas de forma predeterminada porque requieren un esfuerzo coordinado entre usted y el servicio de asistencia técnica de Dynamic Media de Adobe. Además, para habilitar Imágenes inteligentes es necesario borrar completamente la caché de CDN, que luego se rellenará con el tiempo. Si está interesado en utilizar imágenes inteligentes, puede trabajar con Adobe para activarlo enviando un ticket de asistencia técnica. El soporte técnico le proporciona un parámetro de URL que le permite probar, de antemano, imágenes inteligentes. Puede probarlo en cualquiera de sus páginas web o imágenes para que pueda ver el rendimiento que obtiene y los ahorros. A continuación, puede activar las imágenes inteligentes para todo el sitio.
 
@@ -119,11 +119,11 @@ Las imágenes inteligentes no están activadas de forma predeterminada porque re
 
 Cuando hay un vídeo en una página o en una página principal, los clientes tienden a interactuar con ese contenido durante más tiempo y a permanecer en la página más tiempo, lo que generalmente es bueno. Este comportamiento se muestra a través de análisis que el Adobe ha realizado. Sin embargo, el vídeo puede ser complejo. Por un lado, a menudo tiene un archivo principal grande. Es complicado determinar el tamaño y la entrega del vídeo, todo para garantizar que la experiencia se ejecute sin problemas independientemente del dispositivo en el que se esté viendo e independientemente del ancho de banda.
 
-Para solucionar este problema, Dynamic Media le permite crear lo siguiente _Conjuntos de vídeos adaptables_.
+Para resolver este problema, Dynamic Media le ofrece la posibilidad de crear _conjuntos de vídeos adaptables_.
 
 Un conjunto de vídeos adaptable agrupa versiones del mismo vídeo que se codifican en diferentes velocidades de bits y formatos.
 
-Empiece con el vídeo original principal, que carga en el sistema. Dynamic Media cambia de tamaño automáticamente, o _transcodificar_, ese vídeo en varios vídeos. A continuación, en el momento de la entrega, determina de forma inteligente qué pantalla de vídeo, qué calidad y qué formato utilizar, y la envía al teléfono, a la tableta o al equipo de escritorio.
+Empiece con el vídeo original principal, que carga en el sistema. Dynamic Media cambia el tamaño de ese vídeo automáticamente o _transcodifica_ ese vídeo en varios vídeos. A continuación, en el momento de la entrega, determina de forma inteligente qué pantalla de vídeo, qué calidad y qué formato utilizar, y la envía al teléfono, a la tableta o al equipo de escritorio.
 
 Por ejemplo, en un dispositivo móvil iOS, detecta un ancho de banda como 4G, 5G o Wi-Fi. A continuación, selecciona automáticamente el vídeo codificado correcto entre las distintas velocidades de bits de vídeo dentro del conjunto de vídeos adaptables. El vídeo se transmite a dispositivos móviles, tabletas o equipos de escritorio.
 
@@ -144,9 +144,9 @@ A continuación se muestra una experiencia típica o una página web. Alrededor 
 ![Peso de página de contenido](/help/assets/dynamic-media/assets/dm-content-page-weight.png)
 _Peso de página de contenido de una página web típica._
 
-El 10 % restante es HTML, código CSS y etiquetas específicas. Desea optimizar el 90 % de peso de esa página y Dynamic Media le ayuda con ese esfuerzo. Antes, leíste sobre el concepto de _un archivo de recursos principal con infinitas posibilidades_. Este enfoque es significativo para reducir el peso total de la página. La capacidad de tomar un recurso principal y utilizarlo en una página de detalles del producto, una página de miniaturas, el carro de compras y la cuadrícula de búsqueda es un gran ahorro de tiempo. Además, garantiza la coherencia en todas las experiencias.
+El 10 % restante es HTML, código CSS y etiquetas específicas. Desea optimizar el 90 % de peso de esa página y Dynamic Media le ayuda con ese esfuerzo. Anteriormente, leyó acerca del concepto de _un archivo de recurso principal con infinitas posibilidades_. Este enfoque es significativo para reducir el peso total de la página. La capacidad de tomar un recurso principal y utilizarlo en una página de detalles del producto, una página de miniaturas, el carro de compras y la cuadrícula de búsqueda es un gran ahorro de tiempo. Además, garantiza la coherencia en todas las experiencias.
 
-![Método del archivo principal](/help/assets/dynamic-media/assets/dm-onefile.png)
+![Método de archivo principal](/help/assets/dynamic-media/assets/dm-onefile.png)
 _El reloj es un archivo de recursos principal, pero con varias representaciones (no copias) creadas sobre la marcha._
 
 Veamos más de cerca los problemas que Dynamic Media está resolviendo con el archivo y algunas de las soluciones a ese enfoque.
@@ -181,7 +181,7 @@ Otro caso de uso que Dynamic Media resuelve es el vídeo. El vídeo es complejo.
 
 Los clientes llegan a Dynamic Media con los siguientes problemas que esperan solucionar:
 
-&quot;_Mi negocio tiene el video, y el departamento gastó una gran cantidad de dinero creándolo, pero evitó colocarlo en páginas o entregarlo. La razón era que a partir de las pruebas, la calidad del vídeo no podía ser garantizada, o incluso si realmente iba a jugar. Y, en última instancia, eso afecta a la marca del negocio y potencialmente a su papel en la conversión._&quot;
+&quot;_Mi negocio tiene el video, y el departamento gastó una gran cantidad de dinero creándolo, pero evitó colocarlo en páginas o entregarlo. La razón era que a partir de las pruebas, la calidad del vídeo no podía ser garantizada, o incluso si realmente iba a jugar. Y, en última instancia, esto afecta la marca del negocio y potencialmente su papel en la conversión._&quot;
 
 La solución de Dynamic Media es tomar ese archivo de vídeo principal y dejar que Dynamic Media haga todos los tamaños a través de su proceso de transcodificación. A continuación, vincúlelo con el reproductor de vídeo inteligente de Dynamic Media. Este flujo de trabajo garantiza que, tanto si utiliza ese vídeo en la página de aterrizaje principal, como en una categoría o página de detalles del producto, será coherente en todo y se entregará con una alta calidad.
 
@@ -192,7 +192,7 @@ Estos son varios casos de uso más que hay que tener en cuenta.
 | **Problema** | **solución de Dynamic Media** |
 |---|---|
 | Recursos digitales repartidos por toda la organización, en silos en distintos equipos o unidades empresariales. | Almacene y administre todos los recursos digitales en una ubicación central. |
-| Los integrantes del equipo descargan y crean versiones locales. | Los integrantes del equipo utilizan un solo archivo principal para crear _y_ entregue todas las versiones necesarias en varios tamaños de pantalla y dispositivos. |
+| Los integrantes del equipo descargan y crean versiones locales. | Los integrantes del equipo utilizan un solo archivo principal para crear _y_ y entregar todas las versiones necesarias en varios dispositivos y tamaños de pantalla. |
 | Recursos de un solo uso creados para cada experiencia y dispositivo. | Elimina los activos de un solo uso, lo que ahorra tiempo y dinero al crearlos. |
 
 ### Caso de uso: Recorte inteligente con tecnología de IA para medios enriquecidos
@@ -215,7 +215,7 @@ Estos son varios casos de uso más que hay que tener en cuenta.
 A continuación se muestra un flujo de trabajo típico de Dynamic Media.
 
 ![Flujo de trabajo de Dynamic Media](/help/assets/dynamic-media/assets/dm-workflow.png)
-_Flujo de recursos a través del sistema de Dynamic Media._
+_Flujo de recursos a través del sistema Dynamic Media._
 
 Se comienza con la fase de creación con el objetivo principal de que el recurso principal finalice. Estos recursos principales podrían proceder de sesiones fotográficas, de proveedores de vídeo o podrían ser algunos archivos de audio que haya creado. Puede utilizar las aplicaciones de Creative Suite de Adobe, como Adobe InDesign, Adobe Photoshop o Adobe Illustrator, para ayudarle a trabajar con el contenido.
 
@@ -227,7 +227,7 @@ Y, en última instancia, optimiza todo ese contenido y lo publica en servidores 
 
 Cuando termine de crear un recurso principal, cárguelo en Dynamic Media. El tipo de archivo que carga y el formato y el tamaño del archivo son atributos importantes para Dynamic Media. Es en el momento de la carga que desea asegurarse de obtener el máximo valor de la compatibilidad con un archivo.
 
-Por ejemplo, la imagen del reloj siguiente es de 4560 x 3020 píxeles. Y aunque es posible que nunca use una imagen de ese tamaño, aún puede cargarla. Cuanto mayor sea la imagen, mejor será la calidad que Dynamic Media puede ofrecer, incluso en una representación de miniaturas. Recuerde: puede _disminuir_ la resolución de una imagen existente. Pero si intentas... _aumento_ Con la resolución de una imagen, es probable que el resultado sea insatisfactorio.
+Por ejemplo, la imagen del reloj siguiente es de 4560 x 3020 píxeles. Y aunque es posible que nunca use una imagen de ese tamaño, aún puede cargarla. Cuanto mayor sea la imagen, mejor será la calidad que Dynamic Media puede ofrecer, incluso en una representación de miniaturas. Recuerde: puede _disminuir_ fácilmente la resolución de una imagen existente. Pero si intenta _aumentar_ la resolución de una imagen, es probable que el resultado no sea satisfactorio.
 
 ![Formatos recomendados para cargar en Dynamic Media](/help/assets/dynamic-media/assets/dm-upload-formats.png)
 _Consideraciones para las cargas de recursos._
@@ -238,33 +238,33 @@ En cuanto al espacio de color, cuando se piensa en un canal digital o una vista 
 
 La mayoría nunca pensaría en entregar algo en CMYK o por qué podría incluso querer hacerlo en CMYK. El motivo es que ese espacio de color se utiliza con más frecuencia para enviar artículos impresos. Sin embargo, Dynamic Media puede ofrecer en ambos espacios de color.
 
-Hay muchos clientes que todavía imprimen, como los clubes de venta al por mayor de almacenes. Y hay tiendas de comestibles que a menudo imprimen volantes semanalmente. Estos clientes requieren que sus imágenes estén en ambos espacios de color. Tradicionalmente, eso requeriría dos imágenes diferentes: una en RGB y otra en CMYK. Sin embargo, puede cargar recursos CMYK directamente en Dynamic Media y hacer que Dynamic Media envíe recursos de RGB a través de un ajuste preestablecido de imagen o a través de un perfil de color automáticamente. No es necesario crear varias versiones de un archivo, manteniendo así el concepto de _un archivo de recursos principal con infinitas posibilidades_.
+Hay muchos clientes que todavía imprimen, como los clubes de venta al por mayor de almacenes. Y hay tiendas de comestibles que a menudo imprimen volantes semanalmente. Estos clientes requieren que sus imágenes estén en ambos espacios de color. Tradicionalmente, eso requeriría dos imágenes diferentes: una en RGB y otra en CMYK. Sin embargo, puede cargar recursos CMYK directamente en Dynamic Media y hacer que Dynamic Media envíe recursos de RGB a través de un ajuste preestablecido de imagen o a través de un perfil de color automáticamente. No es necesario crear varias versiones de un archivo, manteniendo así el concepto de _un archivo de recurso principal con un sinfín de posibilidades_.
 
 <!-- **The Value of Renditioning??? or Demo portion** -->
 
-### Publicación y previsualización de recursos
+### Publish y previsualización de recursos
 
-Una vez cargados los recursos en Dynamic Media, se recomienda hacer lo siguiente _publicar_ para ello, seleccione los recursos y haga clic en **[!UICONTROL Publish]** o **[!UICONTROL Publicación rápida]** en Dynamic Media. La publicación de recursos es necesaria si desea utilizarlos en cualquier experiencia. Una vez publicados, los recursos están disponibles para su inclusión en una página web mediante una URL generada por Dynamic Media que copia, o mediante la incrustación de código en la página.
+Después de cargar los recursos en Dynamic Media, se recomienda _publicarlos_; para ello, selecciónelos y haga clic en **[!UICONTROL Publish]** o **[!UICONTROL Quick Publish]** en Dynamic Media. La publicación de recursos es necesaria si desea utilizarlos en cualquier experiencia. Una vez publicados, los recursos están disponibles para su inclusión en una página web mediante una URL generada por Dynamic Media que copia, o mediante la incrustación de código en la página.
 
 Además de publicar recursos manualmente, puede configurar Dynamic Media para que publique recursos al instante, sin ninguna intervención del usuario, en el momento de la carga.
 
-Después de la carga, hay diferentes formas de previsualizar las representaciones de un recurso en Dynamic Media. La vista previa de representaciones puede ayudarle a hacerse una idea de lo que ve un cliente. Un método de previsualización común es seleccionar un recurso y luego ver sus representaciones seleccionando un _ajuste preestablecido de imagen_ como se ve a continuación.
+Después de la carga, hay diferentes formas de previsualizar las representaciones de un recurso en Dynamic Media. La vista previa de representaciones puede ayudarle a hacerse una idea de lo que ve un cliente. Un método común de vista previa es seleccionar un recurso y luego ver sus representaciones seleccionando un _ajuste preestablecido de imagen_, tal como se ve a continuación.
 
-![Vista previa de una representación de un recurso basada en el ajuste preestablecido de Imagen grande](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
-_Vista previa de una representación de un recurso en función del ajuste preestablecido de imagen &quot;grande&quot; seleccionado. Se hizo clic en el botón URL. La ruta URL resultante contiene el nombre del ajuste preestablecido de imagen &quot;Grande&quot; y se puede utilizar en una página web._
+![Vista previa de una representación de un recurso basada en el ajuste preestablecido de imagen grande](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
+_Vista previa de una representación de un recurso en función del ajuste preestablecido de imagen &quot;Grande&quot; seleccionado. Se hizo clic en el botón URL. La ruta de URL resultante contiene el nombre del ajuste preestablecido de imagen &quot;Grande&quot; y se puede utilizar en una página web._
 
-La URL anterior está activa. [Pruébelo.](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target="_blank"}.
+La URL anterior está activa. [Inténtelo](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target="_blank"}.
 
-Otro método para previsualizar un recurso es seleccionar el recurso de imagen y, a continuación, seleccionar un _Espectadores_ ajuste preestablecido como se ve en los siguientes.
+Otro método para obtener una vista previa de un recurso es seleccionar el recurso de imagen y, a continuación, seleccionar un ajuste preestablecido de _Visores_, tal como se ve a continuación.
 
-![Vista previa de un recurso basada en el ajuste preestablecido de visualizador de luz vertical de zoom](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
-_Vista previa de un recurso en función del ajuste preestablecido de visualizador &quot;ZoomVertical_light&quot; seleccionado. El puntero del mouse (`+`) se ha movido sobre el reloj para ampliar. Observe los botones URL e Incrustar._
+![Vista previa de un recurso basado en el ajuste preestablecido de visor de luz vertical de zoom](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
+_Vista previa de un recurso en función del ajuste preestablecido de visualizador &quot;ZoomVertical_light&quot; seleccionado. El puntero del mouse (`+`) se movió sobre el reloj para aumentar la vista. Observe los botones URL e Incrustar._
 
-La representación anterior está activa. [Pruébelo.](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target="_blank"}.
+La representación anterior está activa. [Inténtelo](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target="_blank"}.
 
 ## Opcional: Más información
 
-La parte I de este recorrido abarcó los conceptos básicos de varios temas de Dynamic Media. Si desea obtener más información sobre lo que lee, utilice los materiales a continuación para explorar conceptos con mayor detalle. De lo contrario, puede continuar con la Parte II de su recorrido. Consulte [Qué sigue en este Recorrido de Dynamic Media](#whats-next).
+La parte I de este recorrido abarcó los conceptos básicos de varios temas de Dynamic Media. Si desea obtener más información sobre lo que lee, utilice los materiales a continuación para explorar conceptos con mayor detalle. De lo contrario, puede continuar con la Parte II de su recorrido. Ver [Qué sigue en este Recorrido de Dynamic Media](#whats-next).
 
 _Temas de ayuda de Dynamic Media_
 
@@ -275,13 +275,13 @@ _Temas de ayuda de Dynamic Media_
 * [Cómo cargar recursos](/help/assets/add-assets.md#upload-assets)
 * [Previsualización de recursos](/help/assets/dynamic-media/previewing-assets.md)
 * [Previsualización de recursos 3D](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [Entrega de recursos de Dynamic Media](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+* [Cómo entregar Dynamic Media Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
 * [Cómo publicar recursos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 * [Trabajo con Publicación selectiva en Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)
 
 _Tutoriales de Dynamic Media_
 
-* [Uso de Dynamic Media con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Usar Dynamic Media con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
 * [Biblioteca de contenido de Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (buscar en _Dynamic Media_)
 
 _Visores de Dynamic Media_
@@ -292,6 +292,6 @@ _Visores de Dynamic Media_
 
 En la parte II de este recorrido, se examinan detenidamente las direcciones URL de Dynamic Media para comprender mejor qué sucede cuando se entrega un recurso. También obtendrá más información sobre los aspectos básicos de la creación de ajustes preestablecidos de imagen para procesar recursos, y sobre los conjuntos de imágenes, los conjuntos de giros y los conjuntos de medios mixtos y cómo se crean.
 
-Llévame a... [Recorrido de Dynamic Media: Conceptos básicos, parte II](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
+Lléveme al [Recorrido de Dynamic Media: Conceptos básicos, Parte II](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->

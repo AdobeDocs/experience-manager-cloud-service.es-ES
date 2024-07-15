@@ -1,5 +1,5 @@
 ---
-title: Obtenga información sobre cómo buscar y descubrir recursos en [!DNL Assets view]?
+title: ¿Desea saber cómo buscar y descubrir recursos en  [!DNL Assets view]?
 description: Obtenga información sobre cómo buscar y descubrir recursos en la vista de AEM Assets. La potente funcionalidad de búsqueda le permite descubrir rápidamente el recurso adecuado y ayudarle a mejorar la velocidad del contenido.
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
@@ -49,7 +49,7 @@ Puede filtrar los resultados de búsqueda según los parámetros siguientes.
 
 * Fecha de caducidad: filtre los resultados de búsqueda en función de un `Expired` estado del activo. Además, puede especificar un intervalo de fechas de caducidad para los recursos para filtrar aún más los resultados de búsqueda.
 
-* Filtros personalizados: [Añadir filtros personalizados](#custom-filters) Vaya a la interfaz de usuario de vista Recursos. Aplique esos filtros personalizados además de los filtros estándar para restringir los resultados de búsqueda.
+* Filtros personalizados: [Agregar filtros personalizados](#custom-filters) a la interfaz de usuario de la vista Assets. Aplique esos filtros personalizados además de los filtros estándar para restringir los resultados de búsqueda.
 
 Puede ordenar los recursos buscados en orden creciente o descendente de `Name`, `Relevancy`, `Size`, `Modified` y `Created`.
 
@@ -57,9 +57,9 @@ Puede ordenar los recursos buscados en orden creciente o descendente de `Name`, 
 
 **Permisos necesarios:** `Can Edit`, `Owner` o Administrador.
 
-La vista Recursos también permite agregar filtros personalizados a la interfaz de usuario. A continuación, puede aplicar esos filtros personalizados además de los [filtros estándar](#refine-search-results) para restringir los resultados de búsqueda.
+La vista Assets también permite agregar filtros personalizados a la interfaz de usuario. A continuación, puede aplicar esos filtros personalizados además de los [filtros estándar](#refine-search-results) para restringir los resultados de búsqueda.
 
-La vista Recursos proporciona los siguientes filtros personalizados:
+La vista Assets proporciona los siguientes filtros personalizados:
 
 <table>
     <tbody>
@@ -322,13 +322,13 @@ Los administradores también tienen la opción de deshabilitar la búsqueda cont
 
 ### Comentarios sobre la búsqueda contextual {#contextual-search-feedback}
 
-Si necesita proporcionar comentarios sobre la función de búsqueda contextual, haga clic en ![Icono de búsqueda contextual](assets/do-not-localize/Smock_Help_18_N.svg) y haga clic en el icono Comentarios. Seleccione el tipo de comentarios, especifique el asunto y la descripción y haga clic en **[!UICONTROL Enviar]**.
+Si necesita proporcionar comentarios sobre la función Búsqueda contextual, haga clic en ![Icono de Búsqueda contextual](assets/do-not-localize/Smock_Help_18_N.svg) y luego en el icono Comentarios. Seleccione el tipo de comentarios, especifique el asunto y la descripción y haga clic en **[!UICONTROL Enviar]**.
 
 ![Comentarios sobre la búsqueda contextual](assets/contextual-search-feedback.png)
 
 ## Siguientes pasos {#next-steps}
 
-* [Vea un vídeo para buscar recursos en la vista Recursos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=es)
+* [Vea un vídeo para buscar recursos en la vista de Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=es)
 
 * Realice comentarios del producto mediante la opción [!UICONTROL Comentarios] disponible en la interfaz de usuario de la vista Recursos
 

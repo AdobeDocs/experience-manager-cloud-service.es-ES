@@ -1,6 +1,6 @@
 ---
-title: Acciones del Generador de aplicaciones
-description: Obtenga información sobre las acciones de Adobe en tiempo de ejecución y cómo utilizarlas en las aplicaciones de App Builder.
+title: Acciones de App Builder
+description: Obtenga información sobre las acciones de Adobe en tiempo de ejecución y cómo utilizarlas en aplicaciones de App Builder.
 version: Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# Acciones del Generador de aplicaciones
+# Acciones de App Builder
 
 ## Introducción a las acciones
 
@@ -30,7 +30,7 @@ Obtenga información sobre cómo se relacionan las acciones con activaciones, ac
 
 >[!VIDEO](https://video.tv.adobe.com/v/339193/?quality=12&learn=on)
 
-## Acciones en aplicaciones del Generador de aplicaciones
+## Acciones en aplicaciones de App Builder
 
 Obtenga información sobre cómo crear acciones que se pueden utilizar como aplicaciones de App Builder.
 

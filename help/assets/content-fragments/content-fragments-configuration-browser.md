@@ -1,5 +1,5 @@
 ---
-title: 'Fragmentos de contenido: explorador de configuración (Recursos: fragmentos de contenido)'
+title: 'Fragmentos de contenido: explorador de configuración (Assets: fragmentos de contenido)'
 description: Obtenga información sobre cómo habilitar la funcionalidad de fragmento de contenido en el Explorador de configuración.
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 feature: Content Fragments
@@ -14,7 +14,7 @@ ht-degree: 80%
 
 # Fragmentos de contenido: explorador de configuración{#content-fragments-configuration-browser}
 
-AEM Obtenga información sobre cómo habilitar determinadas funcionalidades de fragmentos de contenido en el explorador de configuración para utilizar funcionalidades de entrega sin encabezado de.
+AEM Obtenga información sobre cómo habilitar determinadas funcionalidades de fragmentos de contenido en el explorador de configuración para utilizar las potentes funciones de envío sin encabezado de los que se dispone en la práctica para utilizar el contenido de forma predeterminada.
 
 ## Habilitación de la funcionalidad de fragmento de contenido para la instancia {#enable-content-fragment-functionality-instance}
 
@@ -77,7 +77,7 @@ Para utilizar determinadas [funcionalidades de fragmentos de contenido](#creatin
 
 ### Aplicación de la configuración a la carpeta Recursos {#apply-the-configuration-to-your-assets-folder}
 
-Cuando la configuración **global** está habilitado para la funcionalidad de fragmento de contenido y se aplica a cualquier carpeta de recursos.
+Cuando la configuración **global** está habilitada para la funcionalidad de fragmento de contenido, se aplica a cualquier carpeta de Assets.
 
 Para utilizar otras configuraciones (es decir, excluyendo la global) con una carpeta de Recursos comparable, debe definir la conexión. Para ello, seleccione la **configuración** adecuada en la pestaña **Cloud Services** de las **Propiedades de carpeta** de la carpeta correspondiente.
 

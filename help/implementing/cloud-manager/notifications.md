@@ -37,9 +37,9 @@ La pestaña **Anuncios** incluye anuncios de productos de Adobe. Los anuncios ha
 
 Haga clic en una notificación o anuncio para ver sus detalles. Las notificaciones vinculadas a actividades como las implementaciones de canalización le llevan a los detalles de esa actividad, como la ventana de ejecución de la canalización.
 
-Haga clic en **Ver todo** en la parte inferior del panel para ver todos los anuncios de la bandeja de entrada.
+Haga clic en la opción **Ver todos** en la parte inferior del panel para ver todos los anuncios de la bandeja de entrada.
 
-Haga clic en **Marcar todos como leídos** en la parte inferior del panel para marcar todas las notificaciones no leídas como leídas y borrar el distintivo del icono de la campana.
+Haga clic en la opción **Marcar todo como leído** en la parte inferior del panel para marcar todas las notificaciones no leídas como leídas y borrar el distintivo del icono de la campana.
 
 ## Configuración de notificaciones {#configuration}
 

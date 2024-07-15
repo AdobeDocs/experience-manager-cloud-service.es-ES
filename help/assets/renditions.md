@@ -22,7 +22,7 @@ Las representaciones se clasifican como estáticas y dinámicas; cada tipo prese
 ## Representaciones estáticas {#static-renditions}
 
 Las representaciones estáticas son versiones generadas previamente de recursos digitales, que generalmente se crean durante la ingesta o modificación de recursos. Estas representaciones están optimizadas para propósitos y plataformas específicos, como miniaturas web, formatos compatibles con dispositivos móviles para un diseño interactivo o versiones de alta resolución para la impresión, lo que garantiza una experiencia eficiente y coherente.
-Aprender [cómo ver y descargar](#view-dynamic-renditions) representaciones estáticas en [!DNL Experience Manager Assets].
+Obtenga información sobre [cómo ver y descargar](#view-dynamic-renditions) representaciones estáticas en [!DNL Experience Manager Assets].
 
 ## Representaciones dinámicas {#dynamic-renditions}
 
@@ -33,32 +33,32 @@ Estas representaciones permiten a las organizaciones ofrecer experiencias person
 
 * AEM Debe ser un usuario de Dynamic Media con licencia para la administración de licencias.
 
-* Uso [!UICONTROL Vista de administrador] para configurar:
+* Use [!UICONTROL vista de administrador] para configurar:
    * [Perfiles de imagen de recorte inteligente](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)
    * [Ajustes preestablecidos de imagen](/help/assets/dynamic-media/managing-image-presets.md)
 
-  Puede [cambiar la vista](/help/assets/assets-view-introduction.md#how-to-access-assets-view) más adelante para previsualizar representaciones dinámicas en la vista Recursos.
+  Puede [cambiar la vista](/help/assets/assets-view-introduction.md#how-to-access-assets-view) más adelante para obtener una vista previa de las representaciones dinámicas en la vista de Assets.
 
 ### Ver y descargar representaciones dinámicas {#view-renditions}
 
 Para ver o descargar representaciones dinámicas de imágenes en [!DNL Experience Manager Assets], siga estos pasos:
 
-1. Ir a **[!UICONTROL Administración de recursos]** > **[!UICONTROL Assets]**.
+1. Vaya a **[!UICONTROL Administración de Assets]** > **[!UICONTROL Assets]**.
 
 1. Vaya a la carpeta de recursos aplicable.
 
 1. Haga clic en la imagen que necesita ver y haga clic en **[!UICONTROL Detalles]**.
 
-1. En el menú derecho, haga clic en **[!UICONTROL Representaciones]**. <br> El **[!UICONTROL Representaciones]** el panel se abre con el disponible **[!UICONTROL Dinámico]** y **[!UICONTROL Recorte inteligente]** representaciones.
+1. En el menú derecho, haga clic en **[!UICONTROL Representaciones]**. <br> El panel **[!UICONTROL Representaciones]** se abre con las representaciones **[!UICONTROL Dinámicas]** y **[!UICONTROL Recorte inteligente]** disponibles.
 
    ![representaciones dinámicas](assets/preset_smart_crop.png)
    <!-- ![dynamic renditions](assets/preset_smart_crop_view.png) -->
 
 1. Haga clic en la representación que necesite ver o descargar.
 
-1. Haga clic en ![icono de descarga](assets/do-not-localize/download-icon.png) junto a la representación dinámica que debe descargar. <br> También puede seleccionar la representación de la imagen y hacer clic en **[!UICONTROL Descargar representación]** en la parte inferior.
+1. Haga clic en el icono ![descargar](assets/do-not-localize/download-icon.png) junto a la representación dinámica que debe descargar. <br> También puede seleccionar la representación de la imagen y hacer clic en la opción **[!UICONTROL Descargar representación]** en la parte inferior.
 
-   Puede hacer clic en ![icono de descarga](assets/do-not-localize/download-icon.png) disponible en la parte superior de **[!UICONTROL Recorte inteligente]** para descargar todas las representaciones de recortes inteligentes disponibles para ese recurso.
+   Puede hacer clic en el icono ![descargar](assets/do-not-localize/download-icon.png) que se encuentra disponible en la parte superior de la sección **[!UICONTROL Recorte inteligente]** de representaciones para descargar todas las representaciones de recorte inteligente disponibles para ese recurso.
 
 >[!NOTE]
 >

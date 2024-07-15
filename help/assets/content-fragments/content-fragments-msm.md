@@ -23,11 +23,11 @@ El Administrador de varios sitios (MSM) y la funcionalidad de Live Copy le permi
    * Al cambiar el contenido de origen, se sincronizan el origen y las Live Copies.
    * Puede hacer ajustes solo en el contenido de las Live Copies desconectando la relación activa para subpáginas o componentes individuales.
 
-Para obtener una descripción detallada de los conceptos de MSM, consulte [Reutilización del contenido: administrador de varios sitios y Live Copy](/help/sites-cloud/administering/msm/overview.md).
+Para obtener una descripción detallada de los conceptos de MSM, consulte [Reutilización del contenido: Administrador de varios sitios y Live Copy](/help/sites-cloud/administering/msm/overview.md).
 
 >[!NOTE]
 >
->[Administrador de varios sitios (MSM)](/help/sites-cloud/administering/msm/overview.md) La funcionalidad de Adobe Experience Manager permite a los usuarios reutilizar contenido creado una vez y reutilizado en varias ubicaciones web.
+>La funcionalidad [Administrador de varios sitios (MSM)](/help/sites-cloud/administering/msm/overview.md) de Adobe Experience Manager permite a los usuarios reutilizar contenido creado una vez y reutilizado en varias ubicaciones web.
 
 Con MSM para fragmentos de contenido puede:
 
@@ -39,31 +39,31 @@ MSM para fragmentos de contenido, combinado con la funcionalidad dentro del Edit
 
 >[!CAUTION]
 >
->MSM para fragmentos de contenido solo está disponible cuando se utilizan fragmentos de contenido a través de **Assets** consola.
+>MSM para fragmentos de contenido solo está disponible cuando se utilizan fragmentos de contenido a través de la consola **Assets**.
 >
->La funcionalidad de MSM es *no* disponible al usar el **Fragmentos de contenido** consola.
+>La funcionalidad de MSM *no está disponible* al usar la consola **Fragmentos de contenido**.
 
 ## Cómo. {#how-to}
 
-Consulte la siguiente documentación para obtener más información sobre el uso de MSM para fragmentos de contenido (también aplicable a Recursos):
+Consulte la siguiente documentación para obtener más información sobre el uso de MSM para fragmentos de contenido (también aplicable a Assets):
 
-* Cómo usar [MSM para fragmentos de contenido (y recursos)](/help/assets/reuse-assets-using-msm.md)
+* Cómo usar [MSM para fragmentos de contenido (y Assets)](/help/assets/reuse-assets-using-msm.md)
 
 * [Creación de una Live Copy](/help/assets/reuse-assets-using-msm.md)
 
   >[!CAUTION]
   >
-  >Si desea utilizar MSM para crear copias de Fragmentos de contenido), cualquier **Único** Las restricciones de deben eliminarse de cualquier tipo de datos utilizado en el [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md).
+  >Si desea usar MSM para crear copias de fragmentos de contenido), cualquier restricción **Unique** debe eliminarse de cualquier tipo de datos utilizado en los respectivos [modelos de fragmentos de contenido](/help/assets/content-fragments/content-fragments-models.md).
 
 * [Ver las propiedades y el estado del origen y la Live Copy](/help/assets/reuse-assets-using-msm.md#properties)
 * [Propagación de modificaciones desde el origen a Live Copy](/help/assets/reuse-assets-using-msm.md#rollout-sync)
 * Cancelar y restablecer la herencia para:
-   * campos y variaciones en el [Editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
+   * campos y variaciones en [Editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
    * [metadatos de recursos relacionados](/help/assets/content-fragments/content-fragments-variations.md#canceling-reenabling-inheritance-individual-items)
 * [Suspender y reanudar la relación](/help/assets/reuse-assets-using-msm.md#suspend-resume)
 * [Eliminar la relación activa](/help/assets/reuse-assets-using-msm.md#detach)
-* [Comparar MSM para fragmentos de contenido (y recursos) con MSM para sitios](/help/assets/reuse-assets-using-msm.md#comparison)
+* [Comparar MSM para fragmentos de contenido (y Assets) con MSM para sitios](/help/assets/reuse-assets-using-msm.md#comparison)
 
-## Restricciones {#limitations}
+## Limitaciones {#limitations}
 
 * Los déclencheur al modificar y la configuración de despliegue asociada no existen para los fragmentos de contenido.

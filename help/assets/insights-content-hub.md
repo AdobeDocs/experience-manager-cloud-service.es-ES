@@ -1,6 +1,6 @@
 ---
 title: Ver las perspectivas de recursos en Content Hub
-description: Obtenga información sobre cómo ver las perspectivas de recursos en [!DNL Content Hub]
+description: Obtenga información sobre cómo ver las perspectivas de recursos en  [!DNL Content Hub]
 role: User
 source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
@@ -9,21 +9,21 @@ ht-degree: 0%
 
 ---
 
-# Assets Insights en [!DNL Content Hub] {#assets-insights}
+# Perspectivas de Assets en [!DNL Content Hub] {#assets-insights}
 
-![Datos de Assets](assets/asset-insights-banner.jpg)
+![datos de Assets](assets/asset-insights-banner.jpg)
 
-[!DNL Content Hub] proporciona perspectivas valiosas sobre los recursos, abordando un desafío común que las partes interesadas en el marketing suelen encontrar: las estadísticas de uso de recursos utilizadas en campañas de marketing, canales y diferentes regiones. Al comprender claramente el rendimiento y la popularidad de los recursos, ofrece perspectivas procesables esenciales para mejorar la experiencia del usuario.
+[!DNL Content Hub] proporciona una valiosa perspectiva de los recursos y aborda un desafío común que los interesados en el marketing suelen encontrar: las estadísticas de uso de recursos utilizadas en las campañas de marketing, los canales y las diferentes regiones. Al comprender claramente el rendimiento y la popularidad de los recursos, ofrece perspectivas procesables esenciales para mejorar la experiencia del usuario.
 
 ## Requisitos previos {#prerequisites}
 
-[Usuarios de Content Hub](deploy-content-hub.md#onboard-content-hub-users) puede realizar las acciones mencionadas en este artículo.
+[Usuarios de Content Hub](deploy-content-hub.md#onboard-content-hub-users) pueden realizar las acciones mencionadas en este artículo.
 
 ## Ver estadísticas de activos cargados{#view-statistics-for-uploaded-assets}
 
-Puede ver las estadísticas de los recursos y las colecciones cargados navegando hasta **[!UICONTROL Insights]** pestaña. Rastree el historial de carga de sus recursos con la vista anual, mensual y diaria de cargas de recursos.
+Para ver las estadísticas de los recursos y las colecciones cargados, vaya a la pestaña **[!UICONTROL Perspectivas]**. Rastree el historial de carga de sus recursos con la vista anual, mensual y diaria de cargas de recursos.
 
-![Cargar estadísticas de activos](assets/assets-insights.jpg)
+![Cargar estadísticas de recursos](assets/assets-insights.jpg)
 
 <!-- You can track the upload history of your assets over the past 30 days or gain a more comprehensive view with data spanning the last 12 months. This feature enables you to evaluate the upload count of assets.  -->
 
@@ -45,8 +45,8 @@ El gráfico circular representa visualmente el recuento total de recursos por fo
 
 También puede ver:
 
-* **Usuarios activos por día y mes**: número de usuarios activos por día o por mes representados mediante un gráfico de líneas.
-* **[!UICONTROL Assets por campañas]**: Recuento de recursos y porcentaje respectivo basado en campañas.
-* **[!UICONTROL Assets por canales]**: Recuento de recursos y porcentaje respectivo basado en los canales utilizados.
-* **[!UICONTROL Assets por regiones]**: recuento de recursos y porcentaje respectivo basado en las regiones de uso de recursos.
+* **Usuarios activos por día y mes**: Número de usuarios activos por día o por mes representados mediante un gráfico de líneas.
+* **[!UICONTROL Assets by Campaigns]**: recuento de recursos y porcentaje respectivo basado en campañas.
+* **[!UICONTROL Assets por canales]**: recuento de recursos y porcentaje respectivo basado en los canales utilizados.
+* **[!UICONTROL Assets por regiones]**: recuento de recursos y porcentaje respectivo en función de las regiones de uso de recursos.
 

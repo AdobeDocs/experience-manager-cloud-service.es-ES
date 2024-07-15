@@ -17,7 +17,7 @@ Obtenga información acerca de Adobe Experience Manager AEM CIF () y la creació
 
 ## La historia hasta ahora {#story-so-far}
 
-AEM En el documento anterior de este recorrido de contenido y Commerce de la, [AEM Obtenga información sobre el contenido de la y Commerce](/help/commerce-cloud/introduction.md)AEM , ha aprendido la teoría básica y los conceptos de CMS sin encabezado, Contenido de la y Commerce.
+AEM En el documento anterior de este recorrido AEM de contenido y Commerce de la, [Información sobre el contenido y Commerce AEM](/help/commerce-cloud/introduction.md), aprendió la teoría básica y los conceptos de CMS sin encabezado y Contenido de la y Commerce.
 
 Este artículo se basa en estos aspectos básicos.
 
@@ -70,26 +70,26 @@ Examine la estructura del catálogo a la izquierda y seleccione la categoría.
 La cabina de productos es un lugar central para acceder rápidamente al catálogo de productos con todo su contenido enriquecido. En uno de los siguientes módulos aprenderá a enriquecer los datos de productos con contenido. Por ahora, vamos a centrarnos en acceder a los datos del producto.
 
 En el menú principal, haga clic en comercio para ver una lista de todos los catálogos de productos adjuntos.
-![elemento del menú de comercio](assets/commerce-menu-item.png)
+![elemento de menú de comercio](assets/commerce-menu-item.png)
 
 Esto muestra una lista de todos los catálogos de productos conectados.
-![catálogos integrados en cabina](assets/cockpit-Integrated-catalogs.png)
+![catálogos integrados en la cabina](assets/cockpit-Integrated-catalogs.png)
 
 El catálogo de productos muestra de forma predeterminada todas las categorías de primer nivel con todos los productos. Al hacer clic en una categoría, se abre esa categoría con todos los productos y subcategorías relacionados, incluidos sus productos.
 ![catálogo de productos cockpit](assets/cockpit-product-catalog.png)
 
 Puede abrir las propiedades del producto haciendo clic en el icono de propiedad. El icono aparece al pasar el ratón por encima de un mosaico de producto.
-![propiedades de producto de cabina](assets/cockpit-properties.png)
+![propiedades de productos en la cabina](assets/cockpit-properties.png)
 
-Todas las propiedades del producto son de solo lectura porque los datos se cargan en tiempo real desde el servidor conectado. El cambio de las propiedades del producto debe realizarse en el sistema back-end, que es el sistema de registro. La pestaña **Variantes** solo aparecen si el producto tiene variaciones. Al hacer clic en la pestaña, se muestran todas las variaciones con sus atributos.
-![variantes de producto de cabina](assets/cockpit-properties-variants.png)
+Todas las propiedades del producto son de solo lectura porque los datos se cargan en tiempo real desde el servidor conectado. El cambio de las propiedades del producto debe realizarse en el sistema back-end, que es el sistema de registro. La pestaña **Variants** solo aparece si el producto tiene variaciones. Al hacer clic en la pestaña, se muestran todas las variaciones con sus atributos.
+![variantes de productos en la cabina](assets/cockpit-properties-variants.png)
 
 AEM Las pestañas restantes muestran todo el contenido de la asociado con el producto. Estas pestañas se analizan en uno de los siguientes módulos.
 
 ## AEM Búsqueda de Omnisearch {#omnisearch}
 
 AEM El uso de Omnisearch es una manera fácil de encontrar contenido de la mediante la búsqueda de texto completo. CIF AEM Extendemos Omnisearch con la búsqueda de texto completo de catálogos de productos con su contenido asociado de la.
-![elemento del menú de comercio](assets/omnisearch.png)
+![elemento de menú de comercio](assets/omnisearch.png)
 
 Omnisearch ejecuta una búsqueda de texto completo en el backend del comercio para encontrar todos los productos relacionados. El resultado se enumera en **Ver todos los productos**. AEM Omnisearch también busca contenido asociado con el producto buscado en el menú de búsqueda de la página de la página de búsqueda. AEM Los resultados se enumeran en las respectivas categorías de. En este ejemplo, un fragmento de contenido está relacionado con el producto.
 
@@ -101,10 +101,10 @@ Ahora que ha completado esta parte del recorrido, debe:
 * AEM Cómo acceder al catálogo de productos en el uso de selectores de productos y categorías en el
 * AEM Cómo acceder a los datos de contenido y comercio mediante la cabina de productos y el acceso a la plataforma de datos de Omnisearch y el acceso a la plataforma de datos de Omnisearch
 
-Aproveche este conocimiento y continúe con su recorrido revisando el documento a continuación [Administrar páginas y plantillas del catálogo de productos](catalog-templates.md), donde aprenderá a crear y personalizar su primera experiencia con el catálogo de productos.
+Aproveche este conocimiento y continúe con su recorrido revisando el documento [Administrar páginas y plantillas de catálogo de productos](catalog-templates.md), donde aprenderá a crear y personalizar su primera experiencia con el catálogo de productos.
 
 ## Recursos adicionales {#additional-resources}
 
-Aunque se recomienda pasar a la siguiente parte del recorrido:[Administrar páginas y plantillas del catálogo de productos](catalog-templates.md)-los siguientes son algunos recursos opcionales que profundizan en algunos conceptos mencionados aquí. Sin embargo, estos recursos opcionales no son necesarios para continuar en el recorrido.
+Aunque se recomienda pasar a la siguiente parte del recorrido ([Administrar páginas y plantillas de catálogo de productos](catalog-templates.md)), los siguientes son algunos recursos opcionales que profundizan ciertos conceptos mencionados aquí. Sin embargo, estos recursos opcionales no son necesarios para continuar en el recorrido.
 
 * [Configuración de tiendas y catálogos](/help/commerce-cloud/getting-started.md#catalog)

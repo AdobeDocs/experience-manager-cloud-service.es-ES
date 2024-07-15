@@ -37,33 +37,33 @@ Estas son algunas recomendaciones generales sobre cuándo incluir el elemento en
 
 Se pueden aplicar las siguientes propiedades y nodos a los componentes para controlar el comportamiento de su etiqueta de decoración:
 
-* **`cq:noDecoration {boolean}`:** AEM Esta propiedad se puede añadir a un componente y un valor true obliga a los usuarios a no generar ningún elemento contenedor sobre el componente.
-* **`cq:htmlTag`nodo :** Este nodo se puede añadir bajo un componente y puede tener las siguientes propiedades:
-   * **`cq:tagName {String}`:** Se puede utilizar para especificar una etiqueta de HTML personalizada que se utilizará para ajustar los componentes en lugar del elemento DIV predeterminado.
-   * **`class {String}`:** Se puede utilizar para especificar los nombres de clase css que se agregarán al contenedor.
+* AEM **`cq:noDecoration {boolean}`:** Esta propiedad se puede agregar a un componente, y un valor true obliga a los usuarios a no generar ningún elemento contenedor sobre el componente.
+* **`cq:htmlTag`nodo :** Este nodo se puede agregar en un componente y puede tener las siguientes propiedades:
+   * **`cq:tagName {String}`:** Esto se puede usar para especificar una etiqueta de HTML personalizada que se usará para ajustar los componentes en lugar del elemento DIV predeterminado.
+   * **`class {String}`:** Esto se puede usar para especificar nombres de clase css que se agregarán al contenedor.
    * Otros nombres de propiedades se agregan como atributos de HTML con el mismo valor de cadena proporcionado.
 
 ## Controles de script {#script-controls}
 
 En general, el comportamiento del envoltorio en HTL se puede resumir de la siguiente manera:
 
-* No se procesa ningún DIV de contenedor de forma predeterminada (al hacer lo siguiente `data-sly-resource="foo"`).
+* No se representa ningún DIV de contenedor de forma predeterminada (al hacer `data-sly-resource="foo"`).
 * Todos los modos wcm (desactivados, de vista previa, de edición tanto en autor como en publicación) se representan de forma idéntica.
 
 El comportamiento del envoltorio también puede controlarse completamente.
 
 * La secuencia de comandos HTL tiene control total sobre el comportamiento resultante de la etiqueta envolvente.
-* Propiedades del componente (como `cq:noDecoration` y `cq:tagName`) también puede definir la etiqueta envolvente.
+* Las propiedades del componente (como `cq:noDecoration` y `cq:tagName`) también pueden definir la etiqueta envolvente.
 
 Es posible controlar completamente el comportamiento de las etiquetas envolventes desde los scripts HTL y su lógica asociada.
 
-Para obtener más información sobre el desarrollo en HTL, consulte la [Documentación de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=es).
+Para obtener más información sobre el desarrollo en HTL, consulte la [documentación de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=es).
 
 ### Árbol de decisión {#decision-tree}
 
 Este árbol de decisión resume la lógica que determina el comportamiento de las etiquetas envolventes.
 
-![Árbol de decisión](assets/decoration-tag-decision-tree.png)
+![Árbol de decisiones](assets/decoration-tag-decision-tree.png)
 
 ### Casos de uso {#use-cases}
 
@@ -91,7 +91,7 @@ Todos los ejemplos siguientes suponen la siguiente estructura de contenido y com
 
 #### Caso de uso 1: Incluir un componente para la reutilización de código {#use-case-include-a-component-for-code-reuse}
 
-El caso de uso más típico es cuando un componente incluye otro componente por motivos de reutilización del código. En ese caso, no se desea que el componente incluido pueda editarse con su propia barra de herramientas y cuadro de diálogo, por lo que no se necesita ningún contenedor, y el componente `cq:htmlTag` se ignora. Este puede considerarse el comportamiento predeterminado.
+El caso de uso más típico es cuando un componente incluye otro componente por motivos de reutilización del código. En ese caso, no se desea que el componente incluido pueda editarse con su propia barra de herramientas y cuadro de diálogo, por lo que no se necesita ningún contenedor y se omite `cq:htmlTag` del componente. Este puede considerarse el comportamiento predeterminado.
 
 `one.html: <sly data-sly-resource="child"></sly>`
 
@@ -105,9 +105,9 @@ Un ejemplo sería un componente que incluye un componente de imagen principal pa
 
 #### Caso de uso 2: Incluir un componente editable {#use-case-include-an-editable-component}
 
-Otro caso de uso común es cuando los componentes de contenedor incluyen componentes secundarios editables, como un contenedor de diseño. En este caso, cada elemento secundario incluido necesita imperativamente un contenedor para que funcione el editor (a menos que esté explícitamente deshabilitado con la variable `cq:noDecoration` property).
+Otro caso de uso común es cuando los componentes de contenedor incluyen componentes secundarios editables, como un contenedor de diseño. En este caso, cada elemento secundario incluido necesita imperativamente un contenedor para que funcione el editor (a menos que se deshabilite explícitamente con la propiedad `cq:noDecoration`).
 
-Dado que el componente incluido es, en este caso, un componente independiente, necesita un elemento envolvente para que funcione el editor y defina su diseño y estilo para aplicar. Para poner en déclencheur este comportamiento, está el `decoration=true` opción.
+Dado que el componente incluido es, en este caso, un componente independiente, necesita un elemento envolvente para que funcione el editor y defina su diseño y estilo para aplicar. Para almacenar en déclencheur este comportamiento, está la opción `decoration=true`.
 
 `one.html: <sly data-sly-resource="${'child' @ decoration=true}"></sly>`
 
@@ -121,7 +121,7 @@ Resultado en `/content/test.html`:
 
 Puede haber cualquier número de casos complejos, que se pueden lograr fácilmente con la posibilidad de que HTL proporcione explícitamente:
 
-* **`decorationTagName='ELEMENT_NAME'`** Para definir el nombre del elemento del envoltorio.
+* **`decorationTagName='ELEMENT_NAME'`** Para definir el nombre del elemento del contenedor.
 * **`cssClassName='CLASS_NAME'`** Para definir los nombres de clase CSS que se establecerán en ella.
 
 `one.html: <sly data-sly-resource="${'child' @ decorationTagName='aside', cssClassName='child'}"></sly>`

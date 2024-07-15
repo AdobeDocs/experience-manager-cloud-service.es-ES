@@ -56,7 +56,7 @@ La única diferencia es que el repositorio remoto de Git forma parte de Cloud Ma
 
 ## Tipos de programas {#program-types}
 
-Un usuario puede crear un **producción** programa o un **espacio aislado** programa.
+Un usuario puede crear un programa de **producción** o un programa de **espacio aislado**.
 
 * Un **programa de producción** se crea para habilitar el tráfico en directo para el sitio.
    * Consulte [Introducción a los programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) para obtener más información.

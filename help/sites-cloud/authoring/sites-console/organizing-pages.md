@@ -30,7 +30,7 @@ También puede usar [carpetas](#creating-a-new-folder) para organizar el conteni
 
 La estructura de un sitio web se puede considerar como un árbol que alberga las páginas de contenido. Los nombres de estas páginas de contenido se usan para formar las URL, y los títulos se muestran cuando se visualiza el contenido de la página.
 
-A continuación se muestra un ejemplo de la variable [Tutorial de WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es) sitio, donde un artículo sobre parques de patinaje (`la-skateparks`) se accede a:
+A continuación se muestra un ejemplo del sitio [WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es), donde se tiene acceso a un artículo sobre parques de patinaje (`la-skateparks`):
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -51,7 +51,7 @@ A continuación se muestra un ejemplo de la variable [Tutorial de WKND](https://
    /...
 ```
 
-Esta estructura se puede ver desde el [**Sites** consola,](/help/sites-cloud/authoring/sites-console/introduction.md) donde puede navegar por las páginas del sitio web y realizar acciones en las páginas.
+Esta estructura se puede ver desde la consola [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md), donde puede navegar por las páginas de su sitio web y realizar acciones en las páginas.
 
 ## Convenciones de nomenclatura de páginas {#page-naming-conventions}
 
@@ -77,7 +77,7 @@ El **título** y el **nombre** de la página se pueden crear por separado, pero 
 >
 >Además, recuerde que algunos exploradores (por ejemplo, las versiones anteriores de IE) solo aceptan URL con una longitud determinada, por lo que también existen motivos técnicos para mantener los nombres de las páginas cortos. 
 
-AEM Al crear una página, se debe hacer lo siguiente [valida el nombre de página según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) AEM impuesta por el y el JCR.
+AEM AEM Al crear una página, [valida el nombre de la página según las convenciones ](/help/implementing/developing/introduction/naming-conventions.md) impuestas por el JCR y la aplicación de validación de datos (JCR) de la página de inicio de sesión (JCR) y de la página de inicio de sesión (JCR) de la página de inicio de sesión 1.
 
 El mínimo permitido de caracteres es:
 
@@ -95,7 +95,7 @@ Para obtener toda la información sobre los caracteres permitidos, consulte las 
 
 ### Título {#title}
 
-Si proporciona solo una página **Título** AEM al crear una página, se deriva la página de forma de **Nombre** de esta cadena y [valide el nombre según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) AEM impuesta por el y el JCR.
+AEM AEM Si proporciona solamente una página **Title** al crear una página, deriva la página **Name** de esta cadena y [valida el nombre según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) impuestas por los criterios de y JCR. En el caso de que la página se haya creado, la página se convierte en una página con el nombre Name de esta cadena y se define como {JCR}.
 
 Se acepta un campo de **Título** con caracteres no válidos, pero los caracteres no válidos se sustituirán en el nombre derivado. Por ejemplo:
 
@@ -106,7 +106,7 @@ Se acepta un campo de **Título** con caracteres no válidos, pero los caractere
 
 ### Nombre {#name}
 
-Cuando se proporciona una página **Nombre** AEM al crear una página, se debe hacer lo siguiente [valida el nombre según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) AEM impuesta por el y el JCR. No se pueden enviar caracteres no válidos desde el campo **Nombre**. Cuando detecta caracteres no válidos, el campo se resalta con un mensaje explicativo.
+AEM AEM Cuando se proporciona una página **Name** al crear una página, [valida el nombre según las convenciones ](/help/implementing/developing/introduction/naming-conventions.md) impuestas por las normas de privacidad y JCR, y el nombre de la página se valida a través de las convenciones  impuestas por las normas de privacidad de la página y el JCR. No se pueden enviar caracteres no válidos desde el campo **Nombre**. Cuando detecta caracteres no válidos, el campo se resalta con un mensaje explicativo.
 
 ![Ejemplo de introducción de un nombre de página no válido](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -118,19 +118,19 @@ Cuando se proporciona una página **Nombre** AEM al crear una página, se debe h
 
 ## Plantillas {#templates}
 
-AEM En el, a [plantilla](/help/sites-cloud/authoring/sites-console/templates.md) es un tipo especializado de página que se utiliza como base para cualquier página nueva que se cree.
+AEM En la práctica, una [plantilla](/help/sites-cloud/authoring/sites-console/templates.md) es un tipo especializado de página que se usa como base para cualquier página nueva que se cree.
 
 La plantilla define la estructura de una página, incluida una imagen en miniatura y otras propiedades. Por ejemplo, puede tener plantillas independientes para páginas de productos, mapas del sitio e información de contacto. Las plantillas están formadas por [componentes](#components).
 
 AEM incluye varias plantillas listas para usar de forma predeterminada. Las plantillas disponibles dependen del sitio web individual. Los campos principales son:
 
-* **Título** - El título mostrado en la página web resultante
-* **Nombre** - Se utiliza al nombrar la página
-* **Plantilla** - Una lista de plantillas disponibles para usar al generar la nueva página
+* **Título**: el título mostrado en la página web resultante
+* **Nombre** - Se usa al nombrar la página
+* **Plantilla**: una lista de plantillas disponibles para usar al generar la nueva página
 
 ## Componentes {#components}
 
-[Componentes](/help/implementing/developing/components/overview.md) AEM son los elementos proporcionados por los elementos para que pueda agregar tipos específicos de contenido. AEM La serie incluye una serie de componentes listos para usar, llamados [los componentes principales,](/help/implementing/developing/components/overview.md#core-components) que proporcionan una funcionalidad completa. Algunos ejemplos de componentes son los siguientes:
+AEM [Componentes](/help/implementing/developing/components/overview.md) son los elementos proporcionados por los elementos para que pueda agregar tipos de contenido específicos. AEM El complemento incluye una serie de componentes predeterminados, denominados [componentes principales,](/help/implementing/developing/components/overview.md#core-components), que proporcionan una funcionalidad completa. Algunos ejemplos de componentes son los siguientes:
 
 * Texto
 * Imagen

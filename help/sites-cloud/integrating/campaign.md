@@ -15,7 +15,7 @@ ht-degree: 66%
 
 # Integración de AEM as a Cloud Service con Adobe Campaign {#integrating-campaign}
 
-AEM Obtenga información acerca de la compatibilidad de los as a Cloud Service con las integraciones con Adobe Campaign.
+Obtenga información sobre la compatibilidad de AEM as a Cloud Service con las integraciones con Adobe Campaign.
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ AEM Obtenga información acerca de la compatibilidad de los as a Cloud Service c
 
 ## Integración con las versiones 7 y 8 de Adobe Campaign {#acc}
 
-AEM La compatibilidad con la integración con as a Cloud Service depende de la versión de Campaign implementada.
+La compatibilidad con la integración con AEM as a Cloud Service depende de la versión de Campaign implementada.
 
 | Versión de campaña | Integración con AEMaaCS |
 |---|---|

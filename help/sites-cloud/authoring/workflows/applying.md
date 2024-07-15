@@ -55,7 +55,7 @@ Puede iniciar un flujo de trabajo desde las ubicaciones siguientes:
 * [la opción Crear de la barra de herramientas del sitio](#starting-a-workflow-from-the-sites-toolbar).
 * [el carril Escala de tiempo de la consola Sitios](#starting-a-workflow-from-the-timeline).
 
-En ambos casos, debe [Especifique los Detalles del flujo de trabajo en el Asistente de creación de flujos de trabajo](#specifying-workflow-details-in-the-create-workflow-wizard).
+En ambos casos, debe [especificar los detalles del flujo de trabajo en el Asistente para crear flujo de trabajo](#specifying-workflow-details-in-the-create-workflow-wizard).
 
 ### Inicio de un flujo de trabajo desde la barra de herramientas de Sites {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -119,7 +119,7 @@ Puede especificar los detalles:
 
 1. En la etapa **Ámbito**, puede seleccionar lo siguiente:
 
-   * **Añadir contenido** para abrir [explorador de rutas](/help/sites-cloud/authoring/path-selection.md) y seleccione recursos adicionales; en el explorador, seleccione **Seleccionar** para añadir el contenido a la instancia de flujo de trabajo.
+   * **Agregar contenido** para abrir el [explorador de rutas](/help/sites-cloud/authoring/path-selection.md) y seleccionar recursos adicionales; en el explorador, seleccione **Seleccionar** para agregar el contenido a la instancia de flujo de trabajo.
 
    * Un recurso existente para ver acciones adicionales:
 

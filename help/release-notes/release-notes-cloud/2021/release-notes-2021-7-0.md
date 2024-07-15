@@ -30,25 +30,25 @@ La de la siguiente versión (2021.8.0) es el viernes, 26 de agosto de 2021.
 
 ## Vídeo de la versión {#release-video}
 
-Eche un vistazo a la [Información general de la versión de julio de 2021](https://video.tv.adobe.com/v/335580) para ver un resumen de las funciones añadidas.
+Eche un vistazo al vídeo [Información general sobre la versión de julio de 2021](https://video.tv.adobe.com/v/335580) para ver un resumen de las funciones añadidas.
 
 ## Experience Manager Foundation as a Cloud Service {#foundation}
 
 ### Novedades {#what-is-new-foundation}
 
-* Configuración de Dispatcher más flexible: los proyectos se pueden organizar más fácilmente. Por ejemplo, ahora puede incluir varios archivos de reglas de reescritura que reflejen la estructura del sitio. [Más información](/help/implementing/dispatcher/disp-overview.md#validation-debug) Utilice este modo flexible, incluyendo cómo estructurar la configuración de Dispatcher para que pueda aprovecharla.
-* La IU de replicación de árbol en la pestaña Distribuir del agente de replicación debe considerarse obsoleta y se eliminó después del 30 de septiembre de 2021. [Más información](/help/operations/replication.md#tree-activation) estrategias de replicación alternativas.
-* Paquete `org.apache.sling.datasource-1.0.4.jar` para la compatibilidad con fuentes de datos Sling se ha eliminado, ya que su funcionalidad está obsoleta y los clientes no la utilizan.
+* Configuración de Dispatcher más flexible: los proyectos se pueden organizar más fácilmente. Por ejemplo, ahora puede incluir varios archivos de reglas de reescritura que reflejen la estructura del sitio. [Obtenga información acerca](/help/implementing/dispatcher/disp-overview.md#validation-debug) de este modo flexible, incluyendo cómo estructurar la configuración de Dispatcher para que pueda aprovecharla.
+* La IU de replicación de árbol en la pestaña Distribuir del agente de replicación debe considerarse obsoleta y se eliminó después del 30 de septiembre de 2021. [Más información acerca de](/help/operations/replication.md#tree-activation) estrategias de replicación alternativas.
+* Se ha eliminado el paquete `org.apache.sling.datasource-1.0.4.jar` para la compatibilidad con orígenes de datos de Sling, ya que su funcionalidad está obsoleta y los clientes no lo utilizan.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nuevas funciones de [!DNL Assets] {#assets-features}
 
-* La funcionalidad de automatización de contenido permite [!DNL Experience Manager Assets] use el [!DNL Adobe Creative Cloud] API para automatizar la producción de recursos a escala. Mejora la velocidad del contenido al reducir drásticamente el tiempo necesario y las iteraciones necesarias para crear variaciones del mismo recurso. La funcionalidad no requiere programación alguna y funciona desde DAM. Consulte [generación de variaciones de recursos mediante la integración de Creative Cloud](/help/assets/cc-api-integration.md).
+* La funcionalidad de automatización de contenido permite que [!DNL Experience Manager Assets] use las API [!DNL Adobe Creative Cloud] para automatizar la producción de recursos a escala. Mejora la velocidad del contenido al reducir drásticamente el tiempo necesario y las iteraciones necesarias para crear variaciones del mismo recurso. La funcionalidad no requiere programación alguna y funciona desde DAM. Consulte [generar variaciones de recursos mediante la integración de Creative Cloud](/help/assets/cc-api-integration.md).
 
-* [!DNL Experience Manager Assets] incluye el [!DNL Document Cloud] Visor de PDF para previsualizar documentos de PDF de forma nativa. Esta función permite a los usuarios previsualizar archivos de PDF de varias páginas sin ningún tipo de conversión o procesamiento de archivos. Esta función mejora la paridad con [!DNL Experience Manager] 6.5. Los controles disponibles en el visor incluyen zoom, navegación a páginas, controles de desacoplamiento y visualización en pantalla completa. Los usuarios también pueden obtener una vista previa y saltar a páginas y marcadores. Se admiten comentarios en el propio archivo. Los comentarios y anotaciones sobre el contenido del archivo del PDF están planificados para una versión futura.
+* [!DNL Experience Manager Assets] incluye el visor de PDF [!DNL Document Cloud] para previsualizar los documentos de PDF de forma nativa. Esta función permite a los usuarios previsualizar archivos de PDF de varias páginas sin ningún tipo de conversión o procesamiento de archivos. Esta característica mejora la paridad con [!DNL Experience Manager] 6.5. Los controles disponibles en el visor incluyen zoom, navegación a páginas, controles de desacoplamiento y para ver en pantalla completa. Los usuarios también pueden obtener una vista previa y saltar a páginas y marcadores. Se admiten comentarios en el propio archivo. Los comentarios y anotaciones sobre el contenido del archivo del PDF están planificados para una versión futura.
 
-  ![Previsualización de archivos de PDF en [!DNL Experience Manager] uso del Visor de PDF](/help/assets/assets/preview-pdf-file-viewer.png)
+  ![Vista previa de archivos de PDF en [!DNL Experience Manager] mediante el visor de PDF](/help/assets/assets/preview-pdf-file-viewer.png)
 
 * La funcionalidad de descarga de uso compartido de vínculos utiliza descargas asincrónicas que aumentan la velocidad de descarga. Para obtener más información, consulte [Descargar recursos compartidos mediante el uso compartido de vínculos](/help/assets/download-assets-from-aem.md#link-share-download).
 
@@ -60,9 +60,9 @@ Eche un vistazo a la [Información general de la versión de julio de 2021](http
 
 * Los usuarios pueden buscar y filtrar las carpetas en función de los predicados de propiedades.
 
-  ![Filtrado de carpetas de búsqueda mediante predicados de búsqueda](/help/assets/assets/search-folders-via-predicates.png)
+  ![Filtrar carpetas de búsqueda mediante predicados de búsqueda](/help/assets/assets/search-folders-via-predicates.png)
 
-### Nuevas funciones disponibles en la [!DNL Assets] canal de prelanzamiento {#assets-prerelease-features}
+### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Assets] {#assets-prerelease-features}
 
 <!-- TBD: Not sure about GA of these enh. Shall check with the team.
 
@@ -79,13 +79,13 @@ Eche un vistazo a la [Información general de la versión de julio de 2021](http
 
 ### Errores corregidos en [!DNL Assets] {#assets-bugs-fixed}
 
-La API `com.day.cq.dam.api.collection.SmartCollection` no está disponible en [!DNL Experience Manager] as a [!DNL Cloud Service]. (CQ-4326322)
+La API `com.day.cq.dam.api.collection.SmartCollection` no está disponible en [!DNL Experience Manager] como [!DNL Cloud Service]. (CQ-4326322)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Novedades de [!DNL Forms] {#what-is-new-forms}
 
-* Ahora puede utilizar el servicio de Automated forms conversion para lo siguiente [convertir PDF forms en francés, alemán y español](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=es#language-specific-meta-model) a los formularios adaptables.
+* Ahora puede usar el servicio de Automated forms conversion para [convertir PDF forms en francés, alemán y español](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=es#language-specific-meta-model) a formularios adaptables.
 * Se ha agregado un panel independiente al editor de plantillas para mostrar los errores relacionados con los componentes de los formularios adaptables. Ayuda a consolidar todos los errores de formularios adaptables en una ubicación y a reducir el tiempo de resolución.
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Forms] {#beta-features-forms}
@@ -110,7 +110,7 @@ La API `com.day.cq.dam.api.collection.SmartCollection` no está disponible en [!
    * Indicador visual para datos de productos clasificados en el modo de creación para una mejor visibilidad de los próximos cambios
    * Nuevo componente de mapa del sitio para páginas de contenido y comercio
 
-* Compatibilidad con [Adobe Commerce Sensei Product Recommendations, con tecnología de Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) AEM en el frente de la tienda de datos con recomendaciones predefinidas o creadas sobre la marcha
+* Compatibilidad con [Adobe Commerce Sensei Product Recommendations, con tecnología Adobe Sensei AEM](https://business.adobe.com/products/magento/product-recommendations.html) en la tienda mediante recomendaciones predefinidas o creadas sobre la marcha
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
@@ -122,17 +122,17 @@ La API `com.day.cq.dam.api.collection.SmartCollection` no está disponible en [!
 
 * Puede expandir Estructura de contenido de Screens.
 
-* `bulk-offline-update-service` faltaban todos los permisos para algunos entornos.
+* A `bulk-offline-update-service` le faltaban todos los permisos para algunos entornos.
 
 * Se ha actualizado el vínculo de Ayuda para que coincida con la nueva documentación de Screens Cloud.
 
 * Desasignar listas de reproducción y no permitir la eliminación de listas de reproducción con reproductores asignados, ahora funciona.
 
-* El reproductor ahora vuelve a descargar los recursos cuando se borra &quot;ALL&quot; Cache.
+* El reproductor ahora vuelve a descargar Assets cuando se borra &quot;ALL&quot; Cache.
 
-* La Programación repetida ahora funciona si la variable *Hora de finalización* se ha establecido para el día siguiente.
+* La programación de repetición ahora funciona si la *hora de finalización* está establecida para el día siguiente.
 
-* `Back&Forward` ahora funciona en la IU as a Cloud Service de Screens.
+* `Back&Forward` ahora funciona en la interfaz as a Cloud Service de Screens.
 
 * Anteriormente no se podían crear etiquetas con el mismo nombre pero con áreas de nombres diferentes.
 
@@ -140,7 +140,7 @@ La API `com.day.cq.dam.api.collection.SmartCollection` no está disponible en [!
 
 ### Novedades {#what-is-new-xml-documentation}
 
-XML Documentation para Experience Manager as a Cloud Service suele estar disponible. Permite a los clientes de Experience Manager as a Cloud Service a adquirir un complemento de XML Documentation para importar, crear, administrar y entregar contenido técnico en varios canales, incluido Experience Manager Sites.
+XML Documentation para as a Cloud Service en Experience Manager suele estar disponible. Permite a los clientes de Experience Manager as a Cloud Service adquirir un complemento de XML Documentation para importar, crear, administrar y entregar contenido técnico en varios canales, incluido Experience Manager Sites.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -148,22 +148,22 @@ Esta sección describe las notas de la versión para Cloud Manager en AEM as a C
 
 ### Fecha de lanzamiento {#release-cm-july}
 
-AEM La fecha de lanzamiento de Cloud Manager en la versión as a Cloud Service 2021.7.0 de es el 15 de julio de 2021.
+La fecha de lanzamiento de Cloud Manager en AEM as a Cloud Service 2021.7.0 es el 15 de julio de 2021.
 La próxima versión está planificada para el 12 de agosto de 2021.
 
 ### Novedades {#what-is-new-cm-july}
 
-* Los clientes ahora pueden utilizar Azul 8 y 11 JDK para sus procesos de generación de Cloud Manager y pueden seleccionar utilizar uno de estos JDK para complementos Maven compatibles con las cadenas de herramientas *o* la ejecución completa del proceso de Maven.
+* Los clientes ahora pueden usar Azul 8 y 11 JDK para sus procesos de compilación de Cloud Manager y pueden seleccionar usar uno de estos JDK para complementos Maven compatibles con las cadenas de herramientas *o* durante toda la ejecución del proceso de Maven.
 
 * La dirección IP de salida (saliente) ahora se registra en el archivo de registro del paso de compilación.
 
-* AEM Los entornos de fase y producción que ejecutan versiones antiguas de la aplicación ahora informan de un estado de **Actualización disponible**.
+* AEM Los entornos de fase y producción que ejecutan versiones antiguas de la ahora informan de que hay **Actualización disponible**.
 
 * El número máximo de certificados SSL admitidos ha aumentado a 20 por programa.
 
 * El número máximo de dominios que se pueden configurar ha aumentado a 500 por entorno.
 
-* El **Administrar Git** se ha cambiado a **Acceder a información de Git** y el cuadro de diálogo se ha actualizado visualmente.
+* El botón **Administrar Git** se ha cambiado a **Acceder a la información de Git** y el cuadro de diálogo se ha actualizado visualmente.
 
 * La versión del arquetipo del proyecto AEM que utiliza Cloud Manager se ha actualizado a la versión 28.
 
@@ -195,4 +195,4 @@ Cloud Acceleration Manager es una aplicación basada en la nube diseñada para g
 
 >[!NOTE]
 >
-> Consulte esto [Vídeo de demostración de Cloud Acceleration Manager](https://video.tv.adobe.com/v/335547).
+> Vea este [vídeo de demostración de Cloud Acceleration Manager](https://video.tv.adobe.com/v/335547).

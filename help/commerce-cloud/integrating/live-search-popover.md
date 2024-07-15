@@ -1,6 +1,6 @@
 ---
-title: '[!DNL Live Search] CIF Popover componente'
-description: CIF Uso de componentes de para habilitar [!DNL Live Search] AEM Componente de ventana emergente en un sitio de
+title: CIF '[!DNL Live Search] componente de la ventana emergente de'
+description: CIF AEM Uso de componentes de para habilitar el componente  [!DNL Live Search] Popover en un sitio de
 exl-id: 9dac6693-fe87-4a47-a920-2cf788933499
 feature: Commerce Integration Framework
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] CIF Componente de ventana emergente {#live-search-popover}
+# CIF [!DNL Live Search] Componente De Póver De {#live-search-popover}
 
-El [!DNL Live Search] La ventana emergente es el elemento que contiene la variable [!DNL Live Search] resultados a medida que escribe en el campo de búsqueda.
+La ventana emergente [!DNL Live Search] es el elemento que contiene los resultados [!DNL Live Search] mientras escribe en el campo de búsqueda.
 AEM En este tema se describe cómo integrar este componente en el sitio de.
 
 ## Estructura de archivos {#file-strucure}
@@ -22,7 +22,7 @@ CIF Para habilitar el componente de, los archivos deben editarse y crearse.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/.content.xml
 
-  Cree el `.content.xml` archivo:
+  Crear el archivo `.content.xml`:
 
   ```xml
   <?xml version="1.0" encoding="UTF-8"?>
@@ -35,7 +35,7 @@ CIF Para habilitar el componente de, los archivos deben editarse y crearse.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/css.txt
 
-  Cree el `css.txt` archivo:
+  Crear el archivo `css.txt`:
 
   ```text
   #base=css
@@ -45,7 +45,7 @@ CIF Para habilitar el componente de, los archivos deben editarse y crearse.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/css/searchbar.css
 
-  Cree el `searchbar.css` archivo:
+  Crear el archivo `searchbar.css`:
 
 
   ```css
@@ -140,7 +140,7 @@ CIF Para habilitar el componente de, los archivos deben editarse y crearse.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/js.txt
 
-  Cree el `js.txt` archivo:
+  Crear el archivo `js.txt`:
 
   ```text
   js/searchbar.js
@@ -148,7 +148,7 @@ CIF Para habilitar el componente de, los archivos deben editarse y crearse.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/js/searchbar.js
 
-  Cree el `searchbar.js` archivo:
+  Crear el archivo `searchbar.js`:
 
   ```javascript
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -494,7 +494,7 @@ CIF Para habilitar el componente de, los archivos deben editarse y crearse.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/searchbar.html
 
-  Cree el `searchbar.html` archivo:
+  Crear el archivo `searchbar.html`:
 
   ```html
   <!-- Livesearch popover -->
@@ -556,7 +556,7 @@ CIF Para habilitar el componente de, los archivos deben editarse y crearse.
 
 * ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.components.internal.servlets.ProductPageRedirectServlet.cfg.json
 
-  Cree el `com.adobe.cq.commerce.core.components.internal.servlets.ProductPageRedirectServlet.cfg.json` archivo:
+  Crear el archivo `com.adobe.cq.commerce.core.components.internal.servlets.ProductPageRedirectServlet.cfg.json`:
 
   ```json
   {
@@ -570,7 +570,7 @@ CIF Para habilitar el componente de, los archivos deben editarse y crearse.
 
    * ui.tests/test-module/specs/venia/searchbar.js
 
-     Edite el `searchbar.js` archivo, Línea 19-20, cambiar `describe` hasta `describe.skip`:
+     Edite el archivo `searchbar.js`, línea 19-20, cambiando `describe` a `describe.skip`:
 
      ```javascript
      describe.skip('Venia Searchbar Component', () => {

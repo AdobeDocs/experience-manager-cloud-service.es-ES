@@ -18,33 +18,33 @@ ht-degree: 3%
 >title="Preparación para el lanzamiento"
 >abstract="Para garantizar un lanzamiento con éxito y sin problemas en AEM as a Cloud Service, debe planificar los periodos de congelación de código y contenido, las iteraciones de prueba, las recargas de contenido, las pruebas de rendimiento, las pruebas de seguridad y mucho más."
 
-En esta parte del recorrido AEM, aprenderá a planificar y realizar la migración una vez que el código y el contenido estén listos para transferirse a la as a Cloud Service. Además, aprenderá cuáles son las prácticas recomendadas y las limitaciones conocidas al realizar la migración.
+En esta parte del recorrido, aprenderá a planificar y realizar la migración una vez que el código y el contenido estén listos para moverse a AEM as a Cloud Service. Además, aprenderá cuáles son las prácticas recomendadas y las limitaciones conocidas al realizar la migración.
 
 ## La historia hasta ahora {#story-so-far}
 
 En las fases anteriores del recorrido:
 
-* AEM Ha aprendido a empezar con el paso a la as a Cloud Service de la en [Primeros pasos](/help/journey-migration/getting-started.md) página.
-* Se ha determinado si la implementación está lista para moverse a la nube mediante la lectura del [Fase de preparación](/help/journey-migration/readiness.md)
-* Familiarícese con las herramientas y el proceso mediante los cuales puede preparar su código y nube de contenido con [Fase de implementación](/help/journey-migration/implementation.md).
+* Ha aprendido a empezar con el cambio a AEM as a Cloud Service en la página [Introducción](/help/journey-migration/getting-started.md).
+* Se determinó si la implementación está lista para moverse a la nube al leer la [fase de preparación](/help/journey-migration/readiness.md)
+* Familiarícese con las herramientas y el proceso mediante los cuales puede preparar su nube de contenido y código con la [fase de implementación](/help/journey-migration/implementation.md).
 
 ## Objetivo {#objective}
 
-AEM Este documento le ayuda a comprender cómo realizar la migración a as a Cloud Service una vez que esté familiarizado con los pasos anteriores del recorrido de trabajo. AEM Aprenderá a realizar la migración inicial de la producción y las prácticas recomendadas que debe seguir al migrar a la producción as a Cloud Service de.
+Este documento le ayuda a comprender cómo realizar la migración a AEM as a Cloud Service una vez que esté familiarizado con los pasos anteriores del recorrido. Aprenderá a realizar la migración de producción inicial y las prácticas recomendadas que debe seguir al migrar a AEM as a Cloud Service.
 
 ## Migración de producción inicial {#initial-migration}
 
-Antes de realizar la migración de producción, siga los pasos de ajuste y prueba de migración descritos en la sección [Estrategia y cronología de migración de contenido](/help/journey-migration/implementation.md##strategy-timeline) de la sección [Fase de implementación](/help/journey-migration/implementation.md).
+Antes de realizar la migración de producción, siga los pasos de ajuste y prueba de la migración descritos en la sección [Estrategia y cronología de la migración de contenido](/help/journey-migration/implementation.md##strategy-timeline) de la [fase de implementación](/help/journey-migration/implementation.md).
 
-* AEM Inicie la migración desde producción en función de la experiencia adquirida durante la migración en fase as a Cloud Service de la realizada en clones:
+* Inicie la migración desde producción en función de la experiencia adquirida durante la migración de fase de AEM as a Cloud Service realizada en clones:
    * Autor-Autor
    * Publish-Publish
 
-* AEM Valide el contenido introducido en los niveles de creación y publicación as a Cloud Service de la.
+* Valide el contenido introducido en los niveles de creación y publicación de AEM as a Cloud Service.
 * Indique al equipo de creación de contenido que evite mover contenido tanto en el origen como en el destino hasta que se complete la ingesta
 * Se puede añadir, editar o eliminar contenido nuevo, pero evite moverlo. Esto se aplica tanto al origen como al destino.
-* Registre el [tiempo empleado](/help/journey-migration/implementation.md#gathering-data) para que la extracción y la ingesta completas tengan una estimación de los plazos de migración adicionales futuros.
-* Crear un [planificador de migración](/help/journey-migration/implementation.md#migration-plan) para creación y publicación.
+* Registre el [tiempo que se tarda](/help/journey-migration/implementation.md#gathering-data) en la extracción e ingesta completas para obtener una estimación de los plazos futuros de migración de recarga.
+* Crear un [planificador de migración](/help/journey-migration/implementation.md#migration-plan) tanto para autor como para publicación.
 
 ## Superiores incrementales {#top-up}
 
@@ -69,7 +69,7 @@ Además, debe planificar la congelación de contenido cuando se programe la reca
 
 Al planificar o realizar la migración, debe tener en cuenta las siguientes directrices:
 
-* Migrar de Autor a Autor y Publicar para Publicar
+* Migrar de Autor a Autor y de Publish a Publish
 * Solicite un clon de producción que se pueda utilizar para lo siguiente:
    * Recopilar estadísticas del repositorio
    * Prueba de actividades de migración
@@ -79,20 +79,20 @@ Al planificar o realizar la migración, debe tener en cuenta las siguientes dire
 
 **Prácticas recomendadas de la herramienta de transferencia de contenido**
 
-Asegúrese de que, al lanzarse, ejecute la migración de contenido en producción en lugar de un clon. Un buen enfoque es utilizar [AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) AEM para la migración inicial y, a continuación, ejecute extracciones de recarga con frecuencia (incluso diariamente) para extraer fragmentos más pequeños y evitar cualquier carga a largo plazo en el origen de la.
+Asegúrese de que, al lanzarse, ejecute la migración de contenido en producción en lugar de un clon. AEM Un buen enfoque es usar [AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) para la migración inicial y luego ejecutar extracciones de recarga con frecuencia (incluso diariamente) para extraer fragmentos más pequeños y evitar cualquier carga a largo plazo en la fuente de los datos de origen.
 
 Al realizar la migración de producción, debe evitar ejecutar la herramienta de transferencia de contenido desde un clon porque:
 
 * Si un cliente requiere que se migren las versiones de contenido durante las migraciones superiores, la ejecución de la herramienta de transferencia de contenido desde un clon no migra las versiones. Incluso si el clon se vuelve a crear desde el autor activo con frecuencia, cada vez que se crea un clon, se restablecen los puntos de comprobación utilizados por la herramienta de transferencia de contenido para calcular los deltas.
-* Dado que un clon no se puede actualizar como un todo, el paquete de consulta ACL debe utilizarse para empaquetar e instalar el contenido que se agrega o edita de la producción al clon. El problema con este enfoque es que cualquier contenido eliminado en la instancia de origen nunca llegará al clon a menos que se elimine manualmente tanto del origen como del clon. AEM Esto introduce la posibilidad de que el contenido eliminado en la producción no se elimine en el clon y la as a Cloud Service.
+* Dado que un clon no se puede actualizar como un todo, el paquete de consulta ACL debe utilizarse para empaquetar e instalar el contenido que se agrega o edita de la producción al clon. El problema con este enfoque es que cualquier contenido eliminado en la instancia de origen nunca llegará al clon a menos que se elimine manualmente tanto del origen como del clon. Esto introduce la posibilidad de que el contenido eliminado en la producción no se elimine en el clon y en AEM as a Cloud Service.
 
-**AEM Optimización de la carga en el origen de la al realizar la migración de contenido**
+AEM **Optimizando la carga en el origen de su al realizar la migración de contenido**
 
 AEM Recuerde, la carga en el origen de la es mayor durante la fase de extracción. Tenga en cuenta lo siguiente:
 
 * La herramienta de transferencia de contenido es un proceso Java externo que utiliza un montón de JVM de 4 GB
 * AEM La versión que no es AzCopy descarga binarios, los almacena en un espacio temporal en el autor del origen, consumiendo E/S del disco y, a continuación, los carga en el contenedor de Azure, que consume ancho de banda de red
-* [AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) transfiere blobs directamente desde el almacén de blobs al contenedor de Azure, lo que ahorra ancho de banda de red y E/S de disco. La versión de AzCopy sigue utilizando el ancho de banda del disco y de la red para extraer y cargar los datos del almacén de segmentos en el contenedor de Azure
+* [AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) transfiere blobs directamente del almacén de blobs al contenedor de Azure, lo que ahorra ancho de banda de red y E/S de disco. La versión de AzCopy sigue utilizando el ancho de banda del disco y de la red para extraer y cargar los datos del almacén de segmentos en el contenedor de Azure
 * El proceso de la herramienta de transferencia de contenido es más ligero en los recursos del sistema durante la fase de ingesta, ya que solo transmite registros de ingesta y no hay mucha carga en la instancia de origen en lo que respecta a E/S de disco o ancho de banda de red.
 
 ## Limitaciones conocidas {#known-limitations}
@@ -101,22 +101,22 @@ Tenga en cuenta que toda la ingesta falla si se encuentra cualquiera de las sigu
 
 * Un nodo JCR que tiene un nombre de más de 150 caracteres
 * Un nodo JCR de más de 16 MB
-* Cualquier usuario/grupo con `rep:AuthorizableID` AEM está siendo ingerido que ya está presente en el as a Cloud Service
+* Cualquier usuario/grupo con `rep:AuthorizableID` en proceso de ingesta que ya esté presente en AEM as a Cloud Service
 * Si algún recurso extraído e introducido se mueve a una ruta diferente en origen o destino antes de la siguiente iteración de la migración.
 
 ## Estado de recursos {#asset-health}
 
-En comparación con la sección anterior a la ingesta **no tiene** se produce un error debido a los siguientes problemas de recursos. Sin embargo, es muy recomendable que realice los pasos adecuados en estos casos:
+En comparación con la sección anterior, la ingesta **no** produce errores debido a los siguientes problemas con los recursos. Sin embargo, es muy recomendable que realice los pasos adecuados en estos casos:
 
 * Falta cualquier recurso que tenga la representación original
-* Cualquier carpeta que tenga un `jcr:content` nodo.
+* Cualquier carpeta que tenga un nodo `jcr:content` ausente.
 
-Ambos elementos se identifican y se comunican en la variable [Analizador de prácticas recomendadas](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) informe.
+Ambos de los elementos anteriores se identifican y se incluyen en el informe [Analizador de prácticas recomendadas](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
 
 ## Lista de comprobación para el lanzamiento {#Go-Live-Checklist}
 
-Para obtener más información, consulte la [Lista de comprobación de lanzamiento](/help/journey-onboarding/go-live-checklist.md) documentación.
+Para obtener más información, consulte la [Lista de comprobación de lanzamiento](/help/journey-onboarding/go-live-checklist.md).
 
 ## Siguientes pasos {#what-is-next}
 
-AEM Una vez que sepa cómo llevar a cabo la migración a la as a Cloud Service, puede consultar la sección de [Post-Go-Live](/help/journey-migration/post-go-live.md) para que su instancia se ejecute sin problemas.
+Una vez que sepa cómo realizar la migración a AEM as a Cloud Service, puede consultar la página [Post-Go-Live](/help/journey-migration/post-go-live.md) para que la instancia se ejecute sin problemas.

@@ -1,6 +1,6 @@
 ---
 title: Notas de la versión de Adobe Experience Manager as a Cloud Service para 2020.6.0
-description: '"[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.6.0".'
+description: "[!DNL Adobe Experience Manager] notas de la versión as a Cloud Service para 2020.6.0."
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 feature: Release Information
 role: Admin
@@ -11,7 +11,7 @@ ht-degree: 92%
 
 ---
 
-# AEM Notas de la versión de as a Cloud Service 2020.6.0 {#release-notes}
+# Notas de la versión de AEM as a Cloud Service 2020.6.0 {#release-notes}
 
 Esta página describe las notas de la versión generales de Experience Manager as a Cloud Service 2020.6.0.
 
@@ -48,13 +48,13 @@ La versión 2.9.0 de los [componentes principales](https://experienceleague.adob
 
 * Mejoras en el lector de pantalla.
 
-## AEM Novedades de Foundations en as a Cloud Service {#foundations}
+## Novedades de Foundations en AEM as a Cloud Service {#foundations}
 
-AEM AEM los tiempos de creación de proyectos mejorarán si se eliminan todas las referencias del archivo pom.xml del proyecto de la aplicación al repositorio remoto. `https://downloads.experiencecloud.adobe.com/content/maven/public`.
+AEM AEM Los tiempos de generación de proyectos mejorarán si se eliminan todas las referencias del archivo pom.xml del proyecto de la al repositorio remoto `https://downloads.experiencecloud.adobe.com/content/maven/public`.
 
-AEM El Jar de API de SDK as a Cloud Service, que anteriormente estaba alojado en esa ubicación, ahora se encuentra en Maven Central, que es el repositorio de artefactos predeterminado de Maven.
+El Jar de API de SDK de AEM as a Cloud Service, que anteriormente estaba alojado en esa ubicación, ahora se encuentra en Maven Central, que es el repositorio de artefactos predeterminado de Maven.
 
-## Novedades de Cloud Manager {#cloud-manager}
+## Novedades de Cloud Manager. {#cloud-manager}
 
 Siga esta sección para conocer las novedades y las actualizaciones de Cloud Manager en AEM as a Cloud Service versión 2020.6.0.
 
@@ -104,14 +104,14 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 
 * El vínculo a Developer Console directamente desde Cloud Manager no mostrará la opción de anular la hibernación o hibernar el entorno de un programa de zona protegida para pruebas. Para solucionarlo, una vez en Developer Console, agregue el patrón `#release-cm-p1234-e5678` al final de la dirección URL, donde *1234* es el ID de Programa y *5678* es el ID del entorno. Esto se solucionará en una próxima versión.
 
-## Novedades de la versión de [!DNL Adobe Experience Manager Assets] {#aem-assets}
+## Novedades de [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
 **Experiencia del usuario guiada para etiquetas inteligentes mejoradas, con tecnología Adobe Sensei**
 
 Las etiquetas inteligentes mejoradas permiten a las organizaciones formar modelos de etiquetado inteligente para reconocer imágenes basadas en etiquetas comerciales específicas del cliente, además de las etiquetas inteligentes genéricas.
 
 Con esta versión, existe una experiencia del usuario nueva y guiada que configura la formación sobre etiquetas inteligentes para conjuntos de etiquetas específicas del cliente y a formarlas con recursos que se deben reconocer y etiquetar con ellas en el futuro. La experiencia es ahora más intuitiva.
-Capacite las etiquetas inteligentes mejoradas para obtener una formación más intuitiva sobre las etiquetas inteligentes. Consulte [cómo añadir etiquetas inteligentes a los recursos](/help/assets/smart-tags.md).
+Capacite las etiquetas inteligentes mejoradas para obtener una formación más intuitiva sobre las etiquetas inteligentes. Consulte [cómo agregar etiquetas inteligentes a los recursos](/help/assets/smart-tags.md).
 
 **Compatibilidad con la ingesta, previsualización y envío de contenido 3D**
 
@@ -178,7 +178,7 @@ La versión incorpora las siguientes mejoras adicionales:
 * Capacidad para volver a procesar recursos con perfiles de procesamiento de recursos, lo que permite que los usuarios tengan un control total del proceso (ejecute el procesamiento completo de recursos, aplique perfiles de procesamiento específicos y decida si se debe ejecutar el flujo de trabajo posterior al procesamiento).
 * Las consultas de búsqueda devuelven los resultados más rápido ahora que la instancia de clúster subyacente se ha reiniciado entre bastidores (la ejecución de búsqueda inicial podría durar más en un caso anterior).
 * Ordene por &quot;Nombre&quot; cuando visualice recursos en la vista de listas en la interfaz de recursos y en los resultados de búsqueda. Consulte [Búsqueda de recursos](/help/assets/search-assets.md#sort).
-* Ordene en &quot;Creado&quot; (Fecha) cuando visualice recursos en la vista de listas en la interfaz de recursos y en los resultados de búsqueda. Consulte [Búsqueda de recursos](/help/assets/search-assets.md#sort).
+* Ordene en &quot;Creado&quot; (Fecha) cuando visualice recursos en la vista de listas en la interfaz de Assets y en los resultados de búsqueda. Consulte [Búsqueda de recursos](/help/assets/search-assets.md#sort).
 * Compatibilidad para convertir archivos EPS en imágenes mediante microservicios de recursos.
 
 ### Correcciones de errores {#assets-bug-fixes}

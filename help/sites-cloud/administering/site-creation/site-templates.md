@@ -46,7 +46,7 @@ Puede agregar varias plantillas a AEM, que luego se pueden usar para [crear siti
 
    ![Asistente de creación de sitios](../assets/site-creation-wizard.png)
 
-1. En el explorador de archivos, busque la plantilla que desee utilizar y seleccione **Cargar**.
+1. En el explorador de archivos, busque la plantilla que desee usar y seleccione **Cargar**.
 
 1. Una vez cargado, aparece en la lista de plantillas disponibles.
 

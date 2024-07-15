@@ -1,6 +1,6 @@
 ---
-title: Digital Rights Management en [!DNL Assets]
-description: Obtenga información sobre cómo administrar los estados de caducidad de los recursos y la información de los recursos con licencia en [!DNL Experience Manager] as a [!DNL Cloud Service].
+title: Digital Rights Management en  [!DNL Assets]
+description: Aprenda a administrar los estados de caducidad de los recursos y la información de los recursos con licencia en  [!DNL Experience Manager] as a [!DNL Cloud Service].
 contentOwner: AG
 feature: Asset Management,DRM
 role: User, Admin
@@ -19,7 +19,7 @@ ht-degree: 6%
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
-Los recursos digitales suelen estar asociados a una licencia que especifica los términos y la duración de uso. Uso del [!DNL Experience Manager] puede administrar de forma eficaz la información de caducidad de recursos y la información de licencias.
+Los recursos digitales suelen estar asociados a una licencia que especifica los términos y la duración de uso. Con la plataforma [!DNL Experience Manager], puede administrar de manera eficaz la información de caducidad de recursos y la información de licencias.
 
 ## Caducidad de recursos {#asset-expiration}
 
@@ -28,36 +28,36 @@ Para aplicar los requisitos de licencia a los recursos, utilice la información 
 Puede ver el estado de caducidad de un recurso en los siguientes lugares:
 
 * **Vista de tarjeta**: Para un recurso caducado, un indicador en la tarjeta indica que ha caducado.
-* **Vista de lista**: Para un recurso caducado, la variable **[!UICONTROL Estado]** muestra la columna **[!UICONTROL Caducado]** Banner.
+* **Vista de lista**: Para un recurso caducado, la columna **[!UICONTROL Estado]** muestra el titular **[!UICONTROL Caducado]**.
 * **Cronología**: puede ver el estado de caducidad de un recurso en la cronología. Seleccione el recurso y elija Cronología.
-* **Carril de referencias**: También puede ver el estado de caducidad de los recursos en la **[!UICONTROL Referencias]** carril. Administra los estados de caducidad de los recursos y las relaciones entre los recursos compuestos y los recursos secundarios, las colecciones y los proyectos a los que se hace referencia.
+* **Carril de referencias**: también puede ver el estado de caducidad de los recursos en el carril **[!UICONTROL Referencias]**. Administra los estados de caducidad de los recursos y las relaciones entre los recursos compuestos y los recursos secundarios, las colecciones y los proyectos a los que se hace referencia.
 
 Para ver las páginas web de referencia y los recursos compuestos de un recurso, siga estos pasos:
 
 1. Vaya al recurso, selecciónelo y haga clic en ![icono de referencias de contenido del carril izquierdo](assets/do-not-localize/content-rail-icon.png). Se abrirá el carril izquierdo.
-1. Seleccionar **[!UICONTROL Referencias]** desde el carril izquierdo.
-1. Para los recursos caducados, la variable [!UICONTROL Referencias] muestra el estado de caducidad como **[!UICONTROL El recurso ha caducado]**. Si el recurso tiene recursos secundarios caducados, la variable [!UICONTROL Referencias] carril muestra el estado **[!UICONTROL El recurso tiene recursos secundarios caducados]**.
+1. Seleccione **[!UICONTROL Referencias]** del carril izquierdo.
+1. Para los recursos caducados, [!UICONTROL Referencias] muestra el estado de caducidad como **[!UICONTROL El recurso ha caducado]**. Assets Si el recurso tiene recursos secundarios caducados, el carril [!UICONTROL Referencias] muestra el estado **[!UICONTROL El recurso tiene un subrecurso caducado]**.
 
 ### Buscar recursos caducados {#search-expired-assets}
 
 Para buscar un recurso caducado, incluidos los subrecursos caducados, siga estos pasos:
 
-1. En el [!DNL Assets] consola, haga clic en **[!UICONTROL Buscar]** en la barra de herramientas y pulse `Enter`.
+1. En la consola [!DNL Assets], haga clic en **[!UICONTROL Buscar]** en la barra de herramientas y presione `Enter`.
 
-1. Haga clic en el icono GlobalNav y seleccione **[!UICONTROL Estado de caducidad]** opción.
+1. Haga clic en el icono GlobalNav y seleccione la opción **[!UICONTROL Estado de caducidad]**.
 
-1. Seleccionar **[!UICONTROL Caducado]**. Los resultados de la búsqueda muestran los recursos caducados.
+1. Seleccione **[!UICONTROL Caducado]**. Los resultados de la búsqueda muestran los recursos caducados.
 
-Al elegir la variable **[!UICONTROL Caducado]** , la opción [!DNL Assets] La consola solo muestra los recursos caducados y los subrecursos a los que hacen referencia los recursos compuestos. Los recursos compuestos que hacen referencia a subrecursos caducados no se muestran inmediatamente después de que caduquen los subrecursos. Alternativamente, se muestran después de [!DNL Experience Manager] detecta que hacen referencia a subrecursos caducados la próxima vez que se ejecute el planificador.
+Al elegir la opción **[!UICONTROL Caducado]**, la consola [!DNL Assets] solo muestra los recursos y subrecursos caducados a los que hacen referencia los recursos compuestos. Los recursos compuestos que hacen referencia a subrecursos caducados no se muestran inmediatamente después de que caduquen los subrecursos. En su lugar, se muestran después de que [!DNL Experience Manager] detecte que hacen referencia a recursos secundarios caducados la próxima vez que se ejecute el programador.
 
-Es posible modificar la fecha de caducidad de un recurso publicado a una fecha anterior al ciclo del programador actual. Sin embargo, la programación sigue detectando un recurso de este tipo como caducado cuando se ejecuta la próxima vez y [!DNL Experience Manager] refleja el estado en su informe. La fecha de caducidad de un recurso se muestra de forma diferente para los usuarios de diferentes zonas horarias.
+Es posible modificar la fecha de caducidad de un recurso publicado a una fecha anterior al ciclo del programador actual. Sin embargo, la programación sigue detectando un recurso de este tipo como un recurso caducado cuando se ejecute la próxima vez y [!DNL Experience Manager] refleja el estado en su informe. La fecha de caducidad de un recurso se muestra de forma diferente para los usuarios de diferentes zonas horarias.
 
 Además, si un error impide que el programador detecte los recursos caducados en el ciclo actual, vuelve a examinarlos en el ciclo siguiente y detecta su estado caducado.
 
-Para habilitar la variable [!DNL Assets] consola para mostrar los recursos compuestos de referencia junto con los subrecursos caducados, configure **[!UICONTROL Notificación de caducidad de Adobe CQ DAM]** flujo de trabajo en [!DNL Experience Manager]. El programador basado en tiempo programa una tarea para comprobar en un momento específico si un recurso tiene recursos secundarios caducados. Una vez finalizado el trabajo, los recursos que tienen recursos secundarios caducados y los recursos a los que se hace referencia se muestran como caducados en los resultados de búsqueda.
+Para permitir que la consola [!DNL Assets] muestre los recursos compuestos de referencia junto con los subrecursos caducados, configure el flujo de trabajo **[!UICONTROL Notificación de caducidad de Adobe CQ DAM]** en [!DNL Experience Manager]. El programador basado en tiempo programa una tarea para comprobar en un momento específico si un recurso tiene recursos secundarios caducados. Una vez finalizado el trabajo, los recursos que tienen recursos secundarios caducados y los recursos a los que se hace referencia se muestran como caducados en los resultados de búsqueda.
 
-1. Acceda a la [!DNL Cloud Manager] Repositorio de Git asociado con su entorno.
-1. Confirme un archivo llamado `com.day.cq.dam.core.impl.ExpiryNotificationJobImpl.cfg.json` en el repositorio con el siguiente contenido.
+1. Acceda al repositorio Git [!DNL Cloud Manager] asociado a su entorno.
+1. Confirme un archivo de nombre `com.day.cq.dam.core.impl.ExpiryNotificationJobImpl.cfg.json` en el repositorio con el siguiente contenido.
 
    ```json
    {
@@ -65,14 +65,14 @@ Para habilitar la variable [!DNL Assets] consola para mostrar los recursos compu
    }
    ```
 
-1. Siga las instrucciones de [Cómo configurar OSGi en [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md).
+1. Siga las instrucciones de [cómo hacer la configuración de OSGi en [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md).
 
 Puede configurar el planificador mediante las siguientes propiedades:
 
-* A `true` valor de la propiedad `cq.dam.expiry.notification.scheduler.istimebased` inicia el planificador. * El valor de la propiedad `cq.dam.expiry.notification.scheduler.timebased.rule` es la expresión regular para definir la hora. El ejemplo anterior inicia el trabajo del planificador a las 00 horas.
-* If `send_email` se establece en `true`, el creador de recursos (la persona que carga un recurso en particular en ) [!DNL Assets]) recibe un correo electrónico cuando caduca el recurso.
+* Un valor `true` de la propiedad `cq.dam.expiry.notification.scheduler.istimebased` inicia el programador. * El valor de la propiedad `cq.dam.expiry.notification.scheduler.timebased.rule` es la expresión regular para definir la hora. El ejemplo anterior inicia el trabajo del planificador a las 00 horas.
+* Si `send_email` se establece en `true`, el creador del recurso (la persona que carga un recurso en particular en [!DNL Assets]) recibe un mensaje de correo electrónico cuando caduca el recurso.
 * El número máximo de recursos caducados en una iteración del programador es el valor de la propiedad `asset_expired_limit`.
-* Para ejecutar el trabajo periódicamente, establezca el valor de la propiedad `cq.dam.expiry.notification.scheduler.istimebased` as `false` y establezca el valor de la propiedad `cq.dam.expiry.notification.scheduler.period.rule` con el tiempo en segundos.
+* Para ejecutar el trabajo periódicamente, establezca el valor de la propiedad `cq.dam.expiry.notification.scheduler.istimebased` como `false` y establezca el valor de la propiedad `cq.dam.expiry.notification.scheduler.period.rule` con el tiempo en segundos.
 
 <!-- TBD: Web Console not available in CS.
 
@@ -90,68 +90,68 @@ Puede configurar el planificador mediante las siguientes propiedades:
 
 ## Estados de los recursos {#asset-states}
 
-El [!DNL Assets] La consola de puede mostrar varios estados para los recursos. Según el estado actual de un recurso determinado, la vista de tarjeta muestra una etiqueta que describe su estado, por ejemplo, Caducado, Publicado, Aprobado, Rechazado, etc.
+La consola [!DNL Assets] puede mostrar varios estados para los recursos. Según el estado actual de un recurso determinado, la vista de tarjeta muestra una etiqueta que describe su estado, por ejemplo, Caducado, Publicado, Aprobado, Rechazado, etc.
 
-1. En el [!DNL Assets] interfaz de usuario, seleccione un recurso.
+1. En la interfaz de usuario [!DNL Assets], seleccione un recurso.
 
-1. Seleccionar **[!UICONTROL Publish]** en la barra de herramientas. Si no ve [!UICONTROL Publish] en la barra de herramientas, haga clic en **[!UICONTROL Más]** en la barra de herramientas y busque **[!UICONTROL Publish]** opción.
+1. Seleccione **[!UICONTROL Publish]** en la barra de herramientas. Si no ve la opción [!UICONTROL Publish] en la barra de herramientas, haga clic en **[!UICONTROL Más]** en la barra de herramientas y busque la opción **[!UICONTROL Publish]**.
 
-1. Elegir **[!UICONTROL Publish]** en el menú y cierre el cuadro de diálogo de confirmación.
+1. Elija **[!UICONTROL Publish]** en el menú y, a continuación, cierre el cuadro de diálogo de confirmación.
 
 1. Salga del modo de selección. El estado de publicación del recurso aparece en la parte inferior de la miniatura del recurso en la vista de tarjeta. En la vista de lista, la columna Publicado muestra la hora a la que se publicó el recurso.
 
-1. Para mostrar la página de detalles del recurso, en [!DNL Assets] , seleccione un recurso y haga clic en **[!UICONTROL Propiedades]**.
+1. Para mostrar la página de detalles del recurso, en la interfaz [!DNL Assets], seleccione un recurso y haga clic en **[!UICONTROL Propiedades]**.
 
-1. En el [!UICONTROL Avanzadas] pestaña, establezca una fecha de caducidad para el recurso desde la pestaña **[!UICONTROL Caduca]** field.
+1. En la ficha [!UICONTROL Avanzado], establezca una fecha de caducidad para el recurso en el campo **[!UICONTROL Caduca]**.
 
-1. Clic **[!UICONTROL Guardar]** y luego haga clic en **[!UICONTROL Cerrar]** para mostrar la consola Recursos.
+1. Haga clic en **[!UICONTROL Guardar]** y, a continuación, haga clic en **[!UICONTROL Cerrar]** para mostrar la consola Recursos.
 
 1. El estado de publicación del recurso indica un estado caducado en la parte inferior de la miniatura del recurso en la vista de tarjeta. En la vista de lista, el estado del recurso se muestra como **[!UICONTROL Caducado]**.
 
-1. En el [!DNL Assets] , seleccione una carpeta y cree una tarea de revisión en la carpeta.
+1. En la consola [!DNL Assets], seleccione una carpeta y cree una tarea de revisión en la carpeta.
 
-1. Revise y apruebe/rechace los recursos en la tarea de revisión y haga clic en **[!UICONTROL Completar]**.
+1. Revise y apruebe o rechace los recursos en la tarea de revisión y haga clic en **[!UICONTROL Completar]**.
 
 1. Vaya a la carpeta para la que creó la tarea de revisión. El estado de los recursos que aprobó o rechazó se muestra en la parte inferior de la vista de tarjeta. En la vista de lista, los estados de aprobación y caducidad se muestran en las columnas correspondientes.
 
-1. Para buscar recursos según su estado, haga clic en **[!UICONTROL Buscar]** para mostrar la barra de búsqueda.
+1. Para buscar recursos en función de su estado, haga clic en **[!UICONTROL Buscar]** para mostrar la barra de búsqueda.
 
-1. Seleccionar `Return` y haga clic en [!DNL Experience Manager].
+1. Seleccione `Return` y haga clic en [!DNL Experience Manager].
 
-1. En el panel de búsqueda, haga clic en **[!UICONTROL Estado de publicación]** y seleccione **[!UICONTROL Publicado]** para buscar recursos publicados en [!DNL Assets].
+1. En el panel de búsqueda, haga clic en **[!UICONTROL Estado de Publish]** y seleccione **[!UICONTROL Publicado]** para buscar recursos publicados en [!DNL Assets].
 
 1. Para buscar recursos aprobados o rechazados, seleccione **[!UICONTROL Estado de aprobación]** y seleccione la opción adecuada.
 
-1. Para buscar recursos en función de su estado de caducidad, seleccione **[!UICONTROL Estado de caducidad]** en el panel buscar y seleccione la opción adecuada.
+1. Para buscar recursos en función de su estado de caducidad, seleccione **[!UICONTROL Estado de caducidad]** en el panel de búsqueda y seleccione la opción adecuada.
 
 1. También puede buscar recursos en función de una combinación de estados en varias facetas de búsqueda. Por ejemplo, puede buscar recursos publicados que se hayan aprobado en una tarea de revisión y que no hayan caducado. Para buscar estos recursos, seleccione las opciones adecuadas en las facetas de búsqueda.
 
 ## Digital Rights Management en [!DNL Assets] {#digital-rights-management-in-assets-1}
 
-La funcionalidad DRM exige la aceptación del acuerdo de licencia antes de poder descargar un recurso con licencia desde [!DNL Assets].
+La funcionalidad DRM exige la aceptación del acuerdo de licencia para poder descargar un recurso con licencia de [!DNL Assets].
 
-Si selecciona un recurso protegido y hace clic en **[!UICONTROL Descargar]**, se le redirigirá a una página de licencia para aceptar el acuerdo de licencia. Si no acepta el acuerdo de licencia, la variable **[!UICONTROL Descargar]** La opción no está disponible.
+Si selecciona un recurso protegido y hace clic en **[!UICONTROL Descargar]**, se le redirigirá a una página de licencia para aceptar el acuerdo de licencia. Si no acepta el contrato de licencia, la opción **[!UICONTROL Descargar]** no estará disponible.
 
 Si la selección contiene varios recursos protegidos, seleccione un recurso a la vez, acepte el acuerdo de licencia y proceda a descargar el recurso.
 
 Un activo se considera protegido si se cumple cualquiera de estas condiciones:
 
-* La propiedad de metadatos del recurso `xmpRights:WebStatement` señala a la ruta de la página que contiene el acuerdo de licencia del recurso.
+* La propiedad de metadatos del recurso `xmpRights:WebStatement` señala a la ruta de acceso de la página que contiene el contrato de licencia del recurso.
 * El valor de la propiedad de metadatos del recurso `adobe_dam:restrictions` es un HTML sin procesar que especifica el acuerdo de licencia.
 
 >[!NOTE]
 >
->La ubicación. `/etc/dam/drm/licences` se utilizó para almacenar licencias en versiones anteriores de [!DNL Experience Manager]. La ubicación ya no se utiliza. Si crea o modifica páginas de licencias, o si transfiere las páginas de la versión anterior [!DNL Experience Manager] Versiones de, Adobe recomienda almacenar estos recursos en `/apps/settings/dam/drm/licenses` o `/conf/*/settings/dam/drm/licenses` ubicaciones.
+>La ubicación `/etc/dam/drm/licences` se usó para almacenar licencias en las versiones anteriores de [!DNL Experience Manager]. La ubicación ya no se utiliza. Si crea o modifica páginas de licencias o transfiere las páginas de versiones anteriores de [!DNL Experience Manager], Adobe recomienda almacenar dichos recursos en `/apps/settings/dam/drm/licenses` o `/conf/*/settings/dam/drm/licenses` ubicaciones.
 
 ### Descarga de recursos protegidos por DRM {#downloading-drm-assets}
 
 1. En la vista de tarjeta, seleccione los recursos que desee descargar y seleccione **[!UICONTROL Descargar]**.
 1. En la página **[!UICONTROL Administración de derechos de autor]**, seleccione el recurso que desee descargar de la lista.
-1. En el [!UICONTROL Licencia] panel, elija **[!UICONTROL Aceptar]**. Aparece una marca de verificación junto al recurso. Seleccione el **[!UICONTROL Descargar]** opción.
+1. En el panel [!UICONTROL Licencia], elija **[!UICONTROL Aceptar]**. Aparece una marca de verificación junto al recurso. Seleccione la opción **[!UICONTROL Descargar]**.
 
    >[!NOTE]
    >
-   >El **[!UICONTROL Descargar]** Esta opción solo se activa cuando se decide aceptar el contrato de licencia de un recurso protegido. Sin embargo, si la selección incluye recursos protegidos y no protegidos, solo los recursos protegidos aparecen en el panel y la variable **[!UICONTROL Descargar]** está disponible para descargar los recursos no protegidos. Para aceptar simultáneamente acuerdos de licencia para varios recursos protegidos, seleccione los recursos de la lista y, a continuación, elija **[!UICONTROL Aceptar]**.
+   >La opción **[!UICONTROL Descargar]** solo está habilitada cuando acepta el contrato de licencia de un recurso protegido. Sin embargo, si la selección incluye recursos protegidos y no protegidos, solo los recursos protegidos aparecen en el panel, y la opción **[!UICONTROL Descargar]** está disponible para descargar los recursos no protegidos. Para aceptar simultáneamente acuerdos de licencia para varios recursos protegidos, seleccione los recursos de la lista y, a continuación, elija **[!UICONTROL Aceptar]**.
 
 1. Para descargar el recurso o sus representaciones, seleccione **[!UICONTROL Descargar]** en el cuadro de diálogo.
 

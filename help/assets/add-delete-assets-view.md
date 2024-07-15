@@ -35,7 +35,7 @@ Una vez que todos los archivos estén en cola, haga clic en **[!UICONTROL Cargar
 
 >[!TIP]
 >
->Si carga una estructura de carpetas en la vista Recursos, no necesita crear un archivo .ZIP con la estructura de carpetas, puede cargar estructuras de carpetas directamente. Un archivo .ZIP cargado en la vista de recursos se almacena como un recurso ZIP y no se extrae automáticamente después de la carga.
+>Si carga una estructura de carpetas en la vista de Assets, no necesita crear un archivo .ZIP con la estructura de carpetas, puede cargar estructuras de carpetas directamente. Un archivo .ZIP cargado en la vista de Assets se almacena como un recurso ZIP y no se extrae automáticamente después de la carga.
 
 ## Visualización del progreso y estado de la carga {#upload-progress}
 
@@ -83,7 +83,7 @@ Si intenta cargar recursos duplicados, estos no se cargarán hasta que confirme 
 
 >[!TIP]
 >
->Puede cargar recursos en el repositorio de DAM directamente desde su [!DNL Creative Cloud] aplicaciones de escritorio.
+>Puede cargar recursos al repositorio de DAM directamente desde sus [!DNL Creative Cloud] aplicaciones de escritorio.
 <!--TBD
 See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
 -->
@@ -102,7 +102,7 @@ Los usuarios pueden eliminar recursos o carpetas individuales que ya no sean nec
 
 ## Siguientes pasos {#next-steps}
 
-* [Vea un vídeo para cargar recursos en la vista Recursos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html?lang=es)
+* [Vea un vídeo para cargar recursos en la vista de Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html?lang=es)
 
 * Realice comentarios del producto mediante la opción [!UICONTROL Comentarios] disponible en la interfaz de usuario de la vista Recursos
 

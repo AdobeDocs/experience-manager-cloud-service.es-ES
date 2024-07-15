@@ -30,11 +30,11 @@ Para que el editor universal pueda editar una aplicación, debe instrumentarse c
 |---|---|
 | `data-aue-resource` | Para el URN del recurso, consulte la sección [Instrumentación de la página del documento Introducción al editor universal en AEM](getting-started.md#instrument-thepage) |
 | `data-aue-prop` | Para el atributo del recurso, consulte la sección [Instrumentación de la página del documento Introducción al editor universal en AEM](getting-started.md#instrument-thepage) |
-| `data-aue-type` | [Tipo del elemento editable](#item-types) (por ejemplo, texto, imagen y referencia) |
+| `data-aue-type` | [Tipo de elemento editable](#item-types) (por ejemplo, texto, imagen y referencia) |
 | `data-aue-filter` | Define qué referencias se pueden utilizar |
 | `data-aue-label` | Define una etiqueta personalizada para un elemento seleccionable que se muestra en el editor. <br>Si `data-aue-model` está configurado, la etiqueta se recupera mediante el modelo |
 | `data-aue-model` | Define un modelo que se usa para la edición basada en formularios en el carril de propiedades |
-| `data-aue-behavior` | Define el [comportamiento de una instrumentación](#behaviors)Por ejemplo, el texto o la imagen independientes también pueden imitar un componente para hacerlo móvil o eliminable |
+| `data-aue-behavior` | Define el [comportamiento de una instrumentación](#behaviors); por ejemplo, el texto o la imagen independientes también pueden imitar un componente para hacerlo movible o eliminable |
 
 ## Tipos de elementos {#item-types}
 

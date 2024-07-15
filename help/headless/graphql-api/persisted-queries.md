@@ -264,29 +264,31 @@ La codificación UTF-8 `%3B` es para `;` y `%3D` es la codificación para `=`. L
 
 Al utilizar variables en las consultas, hay algunas prácticas recomendadas que se deben seguir:
 
-* Codificación Como enfoque general, siempre se recomienda codificar todos los caracteres especiales; por ejemplo, `;`, `=`, `?`, `&`, entre otros.
+* Codificación
+Como enfoque general, siempre se recomienda codificar todos los caracteres especiales; por ejemplo, `;`, `=`, `?`, `&`, entre otros.
 
-* Punto y coma Las consultas persistentes que utilizan varias variables (separadas por punto y coma) deben tener:
-   * el punto y coma codificado (`%3B`); la codificación de la dirección URL también lo conseguirá
+* Punto y coma
+Las consultas persistentes que utilizan varias variables (separadas por punto y coma) deben tener:
+   * el punto y coma codificado (`%3B`); codificar la dirección URL también lo conseguirá
    * o un punto y coma final agregado al final de la consulta
 
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
-Cuándo `CACHE_GRAPHQL_PERSISTED_QUERIES` está habilitado para Dispatcher y luego los parámetros que contienen el `/` o `\` caracteres en su valor, se codifican dos veces en el nivel de Dispatcher.
+Cuando `CACHE_GRAPHQL_PERSISTED_QUERIES` está habilitado para Dispatcher, los parámetros que contienen los caracteres `/` o `\` en su valor se codifican dos veces en Dispatcher.
 Para evitar esta situación:
 
-   * Activar `DispatcherNoCanonURL` en Dispatcher.
-AEM Esto indicará a Dispatcher que reenvíe la dirección URL original a la dirección URL, lo que evitará que se dupliquen las codificaciones.
-Sin embargo, esta configuración actualmente solo funciona en `vhost` nivel, de modo que si ya tiene configuraciones de Dispatcher para reescribir direcciones URL (por ejemplo, al utilizar direcciones URL abreviadas), puede necesitar un `vhost` para URL de consulta persistentes.
+   * Habilite `DispatcherNoCanonURL` en Dispatcher.
+Esto indicará a Dispatcher AEM que reenvíe la dirección URL original a la dirección URL, lo que evitará que se dupliquen las codificaciones.
+Sin embargo, esta configuración actualmente solo funciona en el nivel `vhost`, por lo que si ya tiene configuraciones de Dispatcher para reescribir direcciones URL (por ejemplo, al usar direcciones URL abreviadas), puede que necesite un `vhost` independiente para las direcciones URL de consultas persistentes.
 
    * Enviar `/` o `\` caracteres sin codificar.
-Al llamar a la URL de consulta persistente, asegúrese de que todas las `/` o `\` Los caracteres de permanecen sin codificar en el valor de las variables de consulta persistentes.
+Al llamar a la dirección URL de la consulta persistente, asegúrese de que todos los caracteres `/` o `\` permanezcan sin codificar en el valor de las variables de consulta persistentes.
      >[!NOTE]
      >
-     >Esta opción solo se recomienda cuando la variable `DispatcherNoCanonURL` no se puede implementar por ningún motivo.
+     >Esta opción solo se recomienda cuando la solución `DispatcherNoCanonURL` no se puede implementar por algún motivo.
 
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
 
-  Cuándo `CACHE_GRAPHQL_PERSISTED_QUERIES` está habilitado para Dispatcher y, a continuación, la variable `;` no se puede usar en el valor de una variable.
+  Cuando `CACHE_GRAPHQL_PERSISTED_QUERIES` está habilitado para Dispatcher, el carácter `;` no se puede usar en el valor de una variable.
 
 ## Almacenamiento en caché de las consultas persistentes {#caching-persisted-queries}
 
@@ -409,7 +411,7 @@ La configuración de OSGi predeterminada para instancias de publicación:
 
 De forma predeterminada, la `PersistedQueryServlet` envía una respuesta `200` cuando ejecuta una consulta, independientemente del resultado real.
 
-Puede [configuración de OSGi](/help/implementing/deploying/configuring-osgi.md) para el **Configuración del servicio de consultas persistentes** para controlar si la función devuelve códigos de estado más detallados `/execute.json/persisted-query` extremo, cuando hay un error en la consulta persistente.
+Puede [configurar la configuración de OSGi](/help/implementing/deploying/configuring-osgi.md) para la **configuración del servicio de consulta persistente** para controlar si el extremo `/execute.json/persisted-query` devuelve códigos de estado más detallados cuando hay un error en la consulta persistente.
 
 >[!NOTE]
 >
@@ -418,15 +420,16 @@ Puede [configuración de OSGi](/help/implementing/deploying/configuring-osgi.md)
 El campo `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) se puede definir según sea necesario:
 
 * `false` (valor predeterminado):
-No importa si la consulta persistente es correcta o no. El `Content-Type` el encabezado devuelto es `application/json`, y el `/execute.json/persisted-query` *siempre* devuelve el código de estado `200`.
+No importa si la consulta persistente es correcta o no. El encabezado `Content-Type` devuelto es `application/json`, y `/execute.json/persisted-query` *siempre* devuelve el código de estado `200`.
 
-* `true`: el devuelto `Content-Type` es `application/graphql-response+json`y el extremo devolverá el código de respuesta adecuado cuando haya alguna forma de error al ejecutar la consulta persistente:
+* `true`:
+El `Content-Type` devuelto es `application/graphql-response+json`, y el extremo devolverá el código de respuesta adecuado cuando haya algún tipo de error al ejecutar la consulta persistente:
 
   | Código | Descripción |
   |--- |--- |
   | 200 | Respuesta correcta |
-  | 400 | Indica que faltan encabezados o un problema con la ruta de consulta persistente. Por ejemplo, nombre de configuración no especificado, sufijo no especificado y otros.<br>Consulte [Solución de problemas: extremo de GraphQL no configurado](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url). |
-  | 404 | No se encuentra el recurso solicitado. Por ejemplo, el extremo de Graphql no está disponible en el servidor.<br>Consulte [Solución de problemas: falta la ruta en la URL de la consulta persistente de GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured). |
+  | 400 | Indica que faltan encabezados o un problema con la ruta de consulta persistente. Por ejemplo, nombre de configuración no especificado, sufijo no especificado y otros.<br>Ver [Solución de problemas - Extremo de GraphQL no configurado](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url). |
+  | 404 | No se encuentra el recurso solicitado. Por ejemplo, el extremo de Graphql no está disponible en el servidor.<br>Ver [Solución de problemas - Falta la ruta en la URL de la consulta persistente de GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured). |
   | 500 | Error interno del servidor. Por ejemplo, errores de validación, errores de persistencia y otros. |
 
   >[!NOTE]
@@ -478,8 +481,8 @@ Para crear un paquete, haga lo siguiente:
 1. En el cuadro de diálogo Definición de paquete, en **General** introduzca un **Nombre** como “wknd-persistent-queries”.
 1. Escriba un número de versión como “1.0”.
 1. En **Filtros**, agregue un nuevo **Filtro**. Utilice el Buscador de rutas para seleccionar la carpeta `persistentQueries` debajo de la configuración. Por ejemplo, para la configuración `wknd` la ruta completa es `/conf/wknd/settings/graphql/persistentQueries`.
-1. Seleccionar **Guardar** para guardar la nueva definición del paquete y cerrar el cuadro de diálogo.
-1. Seleccione el **Generar** en la definición del paquete creada.
+1. Seleccione **Guardar** para guardar la nueva definición del paquete y cerrar el cuadro de diálogo.
+1. Seleccione el botón **Generar** en la definición del paquete creada.
 
 Una vez creado el paquete, puede hacer lo siguiente:
 

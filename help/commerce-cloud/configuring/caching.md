@@ -30,7 +30,7 @@ No hay ninguna invalidación de caché, por lo que tenga cuidado al configurar l
 
 Al configurar el almacenamiento en caché para los componentes, el nombre de la caché debe ser el nombre de los componentes **proxy** que defina en el proyecto.
 
-Antes de que el cliente envíe una solicitud de GraphQL, comprueba si es así **exacto** La misma solicitud de GraphQL ya se ha almacenado en caché y es posible que devuelva la respuesta almacenada en caché. Para coincidir, la petición GraphQL _debe_ coincide exactamente. Es decir, la consulta, el nombre de la operación (si existe), las variables (si existe) _debe_ todos deben ser iguales a la solicitud almacenada en caché. Y todos los encabezados HTTP personalizados que se puedan configurar _debe_ también ser el mismo. Por ejemplo, Adobe Commerce `Store` encabezado _debe_ coincide.
+Antes de que el cliente envíe una solicitud de GraphQL, comprueba si esa **exacta** misma solicitud de GraphQL ya se ha almacenado en caché y posiblemente devuelva la respuesta almacenada en caché. Para coincidir, la solicitud de GraphQL _debe_ coincidir exactamente. Es decir, la consulta, el nombre de la operación (si existe), las variables (si las hay) _deben_ ser iguales a la solicitud en caché. Además, todos los encabezados HTTP personalizados que se establezcan _deben_ ser iguales. Por ejemplo, el encabezado _must_ de Adobe Commerce `Store` debe coincidir.
 
 ### Ejemplos {#examples}
 
@@ -48,23 +48,23 @@ Otro escenario de ejemplo en el que se recomienda utilizar la función de almace
 venia/components/structure/navigation:true:10:600
 ```
 
-Teniendo en cuenta que la variable [Tienda de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia) se utiliza. Tenga en cuenta el uso del nombre del proxy del componente `venia/components/structure/navigation`, y **no** el nombre del componente de navegación de CIF (`core/cif/components/structure/navigation/v1/navigation`).
+Teniendo en cuenta que se usa la [Tienda de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia). Tenga en cuenta el uso del nombre del proxy del componente `venia/components/structure/navigation`, y **no** el nombre del componente de navegación de CIF (`core/cif/components/structure/navigation/v1/navigation`).
 
 El almacenamiento en caché de otros componentes debe definirse sobre la base de un proyecto, normalmente en coordinación con el almacenamiento en caché configurado a nivel de Dispatcher. Recuerde que no hay ninguna invalidación activa de estas memorias caché, por lo que la duración del almacenamiento en caché debe configurarse cuidadosamente. No hay valores &quot;únicos&quot; que coincidan con todos los proyectos y casos de uso posibles. Asegúrese de definir una estrategia de almacenamiento en caché en el nivel de proyecto que se ajuste mejor a los requisitos del proyecto.
 
 ## Almacenamiento en caché de Dispatcher {#dispatcher}
 
-El almacenamiento en caché de páginas de AEM o fragmentos en [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) es una práctica recomendada para cualquier proyecto AEM. Generalmente, se basa en técnicas de invalidación que garantizan que cualquier cambio de contenido en AEM se actualice correctamente en Dispatcher. AEM Esta función es fundamental para la estrategia de almacenamiento en caché de Dispatcher de.
+El almacenamiento en caché de páginas de AEM o fragmentos en [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) es una práctica recomendada para cualquier proyecto AEM. Generalmente, se basa en técnicas de invalidación que garantizan que cualquier cambio de contenido en AEM se actualice correctamente en Dispatcher. AEM Esta función es fundamental para la estrategia de almacenamiento en caché de Dispatcher de la.
 
 AEM CIF Además de la gestión pura de contenido por parte de los usuarios, una página puede mostrar, por lo general, datos de comercio que se recuperan dinámicamente desde Adobe Commerce a través de GraphQL. Aunque la estructura de la página en sí podría no cambiar nunca, el contenido comercial podría cambiar. Por ejemplo, si los datos del producto, como el nombre y el precio, cambian en Adobe Commerce.
 
-CIF AEM Para asegurarse de que las páginas de la se almacenan en caché durante un tiempo limitado en Dispatcher, Adobe recomienda utilizar [Invalidación de caché basada en tiempo](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) CIF AEM (conocido como almacenamiento en caché basado en TTL) al almacenar en caché páginas de la de Dispatcher en el servidor de Dispatcher en caché. Esta función se puede configurar en AEM usando el paquete adicional [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/).
+CIF AEM Para asegurarse de que las páginas de la se almacenen en caché durante un tiempo limitado en el Dispatcher de la, la Adobe CIF AEM recomienda utilizar [Invalidación de caché basada en tiempo](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (conocida como caché basada en TTL) al almacenar en caché páginas de la en el Dispatcher. Esta función se puede configurar en AEM usando el paquete adicional [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/).
 
 Con el almacenamiento en caché basado en TTL, un desarrollador suele definir una o varias duraciones de almacenamiento en caché para páginas de AEM seleccionadas. CIF AEM Esta duración garantiza que las páginas de la solo se almacenen en caché en Dispatcher hasta la duración configurada y que el contenido se actualice con frecuencia.
 
 >[!NOTE]
 >
->AEM CIF Aunque Dispatcher puede almacenar en caché los datos del lado del servidor, algunos componentes del lado del servidor de Dispatcher de la, como el `product`, `productlist`, y `searchresults` normalmente, los componentes siempre recuperan los precios del producto en una solicitud del explorador del lado del cliente cuando se carga la página. Al hacerlo, se garantiza que el contenido dinámico crucial siempre se obtenga al cargar la página.
+>AEM Aunque Dispatcher CIF puede almacenar en caché los datos del lado del servidor, algunos componentes de la, como los componentes `product`, `productlist` y `searchresults`, generalmente recuperan los precios de los productos en una solicitud del explorador del lado del cliente cuando se carga la página. Al hacerlo, se garantiza que el contenido dinámico crucial siempre se obtenga al cargar la página.
 
 ## Recursos adicionales {#additional}
 

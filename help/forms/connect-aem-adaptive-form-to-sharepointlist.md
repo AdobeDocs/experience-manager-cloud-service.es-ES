@@ -1,6 +1,6 @@
 ---
 title: Conectar el formulario adaptable de AEM a la lista de Microsoft&reg; SharePoint
-description: Conectar un formulario adaptable a la lista de Microsoft&reg; SharePoint. Obtenga información sobre cómo configurar la lista de Microsoft&reg; SharePoint y crear un modelo de datos de formulario (FDM) con la configuración. Además, aprenderá a integrar el modelo de datos de formulario con su formulario adaptable.
+description: Conectar un formulario adaptable a la lista de Microsoft&reg; SharePoint. Obtenga información sobre cómo configurar la lista de Microsoft&reg; SharePoint y crear un modelo de datos de formulario (FDM) mediante la configuración. Además, aprenderá a integrar el modelo de datos de formulario con su formulario adaptable.
 role: User, Developer
 keywords: conecte el formulario adaptable de AEM a la lista de Microsoft SharePoint, conecte el formulario adaptable a la lista de Microsoft SharePoint, integre el formulario adaptable de AEM a la lista de Microsoft SharePoint, integre el formulario adaptable a la lista de Microsoft SharePoint, envíe datos de un formulario adaptable a la lista de SharePoint, envíe el flujo de trabajo de AEM a la lista de SharePoint.
 hide: true
@@ -8,7 +8,7 @@ hidefromToC: true
 source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
 source-wordcount: '525'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -31,9 +31,9 @@ Para obtener instrucciones sobre cómo integrar una **Biblioteca de documentos d
 Antes de conectar un formulario adaptable a la lista de Microsoft® SharePoint, realice los siguientes pasos:
 
 1. [Configuración de Microsoft](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
-1. [Crear un modelo de datos de formulario (FDM) con Microsoft](/help/forms/create-form-data-models.md)
-1. [Configurar el modelo de datos de formulario (FDM) para recuperar y enviar datos](/help/forms/work-with-form-data-model.md#configure-services)
-1. [Crear un formulario adaptable](/help/forms/creating-adaptive-form-core-components.md)
+1. [Cree un modelo de datos de formulario (FDM) con Microsoft](/help/forms/create-form-data-models.md)
+1. [Configure el modelo de datos de formulario (FDM) para recuperar y enviar datos](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Creación de un formulario adaptable](/help/forms/creating-adaptive-form-core-components.md)
 
 Ahora puede hacer lo siguiente:
 
@@ -42,12 +42,12 @@ Ahora puede hacer lo siguiente:
 
 ## Conectar un formulario adaptable a la lista de Microsoft® SharePoint {#connect-af-sharepoint-list}
 
-Para integrar Microsoft® SharePoint List en su formulario adaptable [configurar un formulario adaptable para utilizar un modelo de datos de formulario (FDM)](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
+Para integrar la lista de Microsoft® SharePoint en su formulario adaptable, [configure un formulario adaptable para utilizar un modelo de datos de formulario (FDM)](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
 
-Después de configurar un formulario adaptable para utilizar un modelo de datos de formulario (FDM), puede:
+Después de configurar un formulario adaptable para utilizar un modelo de datos de formulario, puede hacer lo siguiente:
 
-* [Configurar la acción de envío mediante un modelo de datos de formulario (FDM)](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
-* [Configurar el Editor de reglas para invocar un modelo de datos de formulario (FDM)](/help/forms/rule-editor.md#invoke-form-data-model-service-invoke)
+* [Configure la acción de envío mediante un modelo de datos de formulario (FDM)](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+* [Configure el Editor de reglas para invocar un modelo de datos de formulario (FDM)](/help/forms/rule-editor.md#invoke-form-data-model-service-invoke)
 
 ## Conexión de la lista de Microsoft® SharePoint a un flujo de trabajo de AEM {#connect-sharepoint-list-workflow}
 
@@ -80,11 +80,11 @@ Obtenga información sobre cómo [utilizar el flujo de trabajo de AEM](https://e
    * columna de persona
    * columna de datos externos
 
-## Vea también {#see-also}
+## Ver también {#see-also}
 
 * [Crear un formulario adaptable basado en componentes principales](/help/forms/creating-adaptive-form-core-components.md)
 * [Configuración de las fuentes de datos](/help/forms/configuring-submit-actions.md)
-* [Crear un modelo de datos de formulario (FDM)](/help/forms/create-form-data-models.md)
+* [Crear modelo de datos de formulario (FDM)](/help/forms/create-form-data-models.md)
 * [Uso de flujos de trabajo de AEM centrados en Forms: referencia de pasos para automatizar los procesos empresariales](/help/forms/aem-forms-workflow-step-reference.md)
 * [Crear una acción de envío personalizada para un formulario adaptable](/help/forms/custom-submit-action-form.md)
 * [Crear o agregar un formulario adaptable a una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

@@ -28,25 +28,25 @@ Edge Delivery Services es un conjunto de servicios componibles que permite un al
 
 AEM Puede utilizar tanto la administración de contenido de como la creación WYSIWYG mediante el Editor universal, así como la creación basada en documentos.
 
-AEM Cloud Manager en el as a Cloud Service de la le permite habilitar el servicio de envío de Edge para su proyecto.
+Cloud Manager en AEM as a Cloud Service le permite habilitar el servicio de Edge Delivery para su proyecto.
 
 >[!TIP]
 >
->Para obtener más información acerca de los Edge Delivery Services AEM y cómo se puede utilizar con la, consulte el documento [Información general de Edge Delivery Services.](/help/edge/overview.md)
+>Para obtener más información acerca de los Edge Delivery Services AEM y cómo se pueden usar con los, consulte el documento [Información general sobre los Edge Delivery Services.](/help/edge/overview.md)
 
 ## Edge Delivery Services en Cloud Manager {#edge-in-cloud-manager}
 
-Si tiene Edge Delivery Services con licencia como parte de Adobe Experience Manager Sites, puede incorporar el sitio con Edge Delivery Services directamente en Cloud Manager y activarlo [uso de una experiencia de autoservicio guiada.](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+Si tiene Edge Delivery Services con licencia como parte de Adobe Experience Manager Sites, puede incorporar su sitio con Edge Delivery Services directamente en Cloud Manager e iniciar sesión [con una experiencia de autoservicio guiada.](/help/implementing/cloud-manager/managing-code/private-repositories.md)
 
 Esto permite tener una experiencia unificada para todas las propiedades de AEM, lo que garantiza la coherencia con todos los flujos de trabajo críticos, incluida la administración de nombres de dominio, la administración de certificados SSL y las asignaciones de CDN.
 
-Edge Delivery Services está disponible para ambos [programas de producción y de zonas protegidas.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+Edge Delivery Services está disponible para [programas de producción y de zonas protegidas.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
 ## Activación de Edge Delivery Services {#enabling}
 
 Los Edge Delivery Services se pueden habilitar al agregar un nuevo programa.
 
-![Agregar un programa de producción con Edge Delivery Services](assets/add-production-program-with-edge.png)
+![Agregar programa de producción con Edge Delivery Services](assets/add-production-program-with-edge.png)
 
 Para obtener más información sobre cómo agregar programas, consulte los siguientes documentos.
 

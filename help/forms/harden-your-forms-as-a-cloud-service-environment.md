@@ -1,11 +1,11 @@
 ---
 title: ¿Cómo proteger o proteger su entorno as a Cloud Service de AEM Forms?
-description: Proteja su entorno de  [!DNL AEM Forms]  as a Cloud Service.
+description: Proteja su  [!DNL AEM Forms] entorno as a Cloud Service.
 contentOwner: khsingh
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '119'
-ht-degree: 89%
+ht-degree: 83%
 
 ---
 

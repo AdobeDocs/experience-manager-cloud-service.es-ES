@@ -27,7 +27,7 @@ Si está familiarizado con las [plantillas de página en una implementación de 
 
 Un administrador solo tendría que crear una configuración una vez, o poco a poco cuando se necesite un nuevo espacio de trabajo para organizar los modelos de contenido. Para los fines de esta guía de introducción, solo necesitamos crear una configuración.
 
-1. AEM Inicie sesión en el as a Cloud Service y, en el menú principal, seleccione **Herramientas > General > Explorador de configuración**.
+1. Inicie sesión en AEM as a Cloud Service y, en el menú principal, seleccione **Herramientas > General > Explorador de configuración**.
 1. Proporcione un **Título** y **Nombre** para su configuración.
    * El **Título** debe ser descriptivo.
    * El **nombre** se convierte en el nombre de nodo del repositorio.

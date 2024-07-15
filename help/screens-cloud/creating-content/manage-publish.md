@@ -27,28 +27,28 @@ Este documento le ayuda a comprender la publicación del contenido editado en el
 * saber cómo publicar un canal
 * administrar publicación, en términos de ámbito
 
-## Pasos para publicar un canal {#publish-channel}
+## Pasos para configurar Publish como canal {#publish-channel}
 
 Siga los pasos a continuación para publicar el canal:
 
-1. Desplácese y seleccione el canal del proyecto, por ejemplo, **FirstDigitalExperience** —> **Canales** —> **BucleCanalUno**.
+1. Desplácese y seleccione el canal de su proyecto, como **FirstDigitalExperience** —> **Canales** —> **LoopingChannelOne**.
 
    ![Seleccionar canal](/help/screens-cloud/assets/create-content/managepub-1.png)
 
-1. Clic **Administrar publicación** de la barra de acciones.
+1. Haga clic en **Administrar publicación** en la barra de acciones.
 
-1. Seleccione el **Acción** as **Publish** y **Programación** as **Ahora** desde el **Asistente Administrar publicación** y haga clic en **Siguiente**.
+1. Seleccione **Action** como **Publish** y **Scheduling** como **Now** del **asistente para administrar publicación** y haga clic en **Next**.
 
-   ![Seleccionar acción de publicación](/help/screens-cloud/assets/create-content/managepub-2.png)
+   ![Seleccionar acción de Publish](/help/screens-cloud/assets/create-content/managepub-2.png)
 
    >[!NOTE]
-   >Clic **Incluir elementos secundarios** en la barra de acciones, desmarque todas las opciones para publicar todos los módulos del proyecto y haga clic en Añadir para publicar. De forma predeterminada, todas las casillas están marcadas y debe desmarcar manualmente las casillas para publicar todos los módulos del proyecto.
+   >Haga clic en **Incluir elementos secundarios** en la barra de acciones, desmarque todas las opciones para publicar todos los módulos del proyecto y haga clic en Agregar para publicar. De forma predeterminada, todas las casillas están marcadas y debe desmarcar manualmente las casillas para publicar todos los módulos del proyecto.
 
-1. Después de seleccionar el canal en la **Administrar publicación** asistente, haga clic en **Publish** para publicar el canal.
+1. Después de seleccionar el canal en el asistente de **Administrar publicación**, haz clic en **Publish** para publicar el canal.
 
-   ![Publicación del canal](/help/screens-cloud/assets/create-content/managepub-3.png)
+   ![Publish en el canal](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
 ## Siguientes pasos {#whats-next}
 
-Ahora que ha publicado los canales en el proyecto, debe continuar con el recorrido as a Cloud Service de Screens revisando el documento a continuación, [Instalación y configuración de reproductores en pantallas as a Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
+Ahora que ha publicado sus canales en el proyecto, debería continuar con su as a Cloud Service recorrido de Screens revisando el documento [Instalación y configuración de reproductores en Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).

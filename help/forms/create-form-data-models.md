@@ -1,5 +1,5 @@
 ---
-title: Cómo crear el modelo de datos de formulario (FDM)
+title: Cómo crear un modelo de datos de formulario (FDM)?
 description: Aprenda a crear un modelo de datos de formulario (FDM) y a enviar o recuperar datos a una fuente de datos mediante un formulario adaptable o un flujo de trabajo de AEM.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
@@ -8,11 +8,11 @@ exl-id: b17b7441-912c-44c7-a835-809f014a8c86
 source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
 source-wordcount: '1543'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
-# Crear un modelo de datos de formulario (FDM) {#create-form-data-model}
+# Crear modelo de datos de formulario (FDM) {#create-form-data-model}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -24,24 +24,24 @@ ht-degree: 63%
 
 La integración de datos de [!DNL Experience Manager Forms] ofrece una interfaz de usuario intuitiva para crear y trabajar con modelos de datos de formulario. Un modelo de datos de formulario (FDM) se basa en fuentes de datos para el intercambio de datos; sin embargo, puede crear un modelo de datos de formulario (FDM) con o sin una fuente de datos. Existen dos métodos para crear un modelo de datos de formulario en función de si ha configurado fuentes de datos:
 
-* **Uso de fuentes de datos preconfiguradas**: si ha configurado las fuentes de datos como se describe en [Configuración de fuentes de datos](configure-data-sources.md), puede seleccionarlos al crear un modelo de datos de formulario (FDM). Incorpora todos los objetos, propiedades y servicios del modelo de datos de las fuentes de datos seleccionadas que se pueden utilizar en el modelo de datos de formulario (FDM).
+* **Utilizando fuentes de datos preconfiguradas**: si ha configurado las fuentes de datos tal como se describe en [Configurar fuentes de datos](configure-data-sources.md), puede seleccionarlas al crear un modelo de datos de formulario (FDM). Incorpora todos los objetos, propiedades y servicios del modelo de datos de las fuentes de datos seleccionadas que se pueden utilizar en el modelo de datos de formulario (FDM).
 
-* **Sin fuentes de datos**: si no ha configurado fuentes de datos para el modelo de datos de formulario (FDM), puede crearlos sin fuentes de datos. Puede utilizar el modelo de datos de formulario (FDM) para crear Forms adaptable <!--and interactive communication--> y probarlos con datos de ejemplo. Cuando hay fuentes de datos disponibles, puede enlazar el modelo de datos de formulario (FDM) con fuentes de datos, lo que se refleja automáticamente en el Forms adaptable asociado<!--and interactive communications-->.
+* **Sin fuentes de datos**: si no ha configurado fuentes de datos para su modelo de datos de formulario (FDM), puede crearlo sin fuentes de datos. Puede utilizar el modelo de datos de formulario (FDM) para crear formularios adaptables <!--and interactive communication--> y probarlos utilizando datos de muestra. Cuando hay fuentes de datos disponibles, puede vincular el modelo de datos de formulario (FDM) con fuentes de datos, lo que se refleja automáticamente en los formularios adaptables asociados<!--and interactive communications-->.
 
 >[!NOTE]
 >
->Debe ser miembro de ambos **fdm-author** y **forms-user** para poder crear y trabajar con el modelo de datos de formulario (FDM). Póngase en contacto con su [!DNL Experience Manager] administrador para convertirse en miembro de los grupos.
+>Debe ser miembro de los grupos **fdm-author** y **forms-user** para poder crear y trabajar con el modelo de datos de formulario (FDM). Póngase en contacto con su administrador de [!DNL Experience Manager] para convertirse en miembro de los grupos.
 
-## Crear un modelo de datos de formulario (FDM) {#data-sources}
+## Crear modelo de datos de formulario (FDM) {#data-sources}
 
-Asegúrese de haber configurado las fuentes de datos que desea utilizar en el modelo de datos de formulario (FDM) como se describe en [Configuración de fuentes de datos](configure-data-sources.md). Para crear un modelo de datos de formulario (FDM) basado en fuentes de datos configuradas, haga lo siguiente:
+Asegúrese de haber configurado las fuentes de datos que desea utilizar en el modelo de datos de formulario (FDM) como se describe en [Configurar fuentes de datos](configure-data-sources.md). Para crear un modelo de datos de formulario (FDM) basado en fuentes de datos configuradas, haga lo siguiente:
 
 1. En la instancia de autor de [!DNL Experience Manager], vaya a **[!UICONTROL Formularios > Integraciones de datos]**.
 1. Seleccione **[!UICONTROL Crear > Modelo de datos de formulario]**.
-1. En el cuadro de diálogo Crear un modelo de datos de formulario:
+1. En el cuadro de diálogo Crear un modelo de datos de formulario, haga lo siguiente:
 
-   * Especifique un nombre para el modelo de datos de formulario (FDM).
-   * (**Opcional**) Especifique el título, la descripción y las etiquetas del modelo de datos de formulario (FDM).
+   * Especifique un nombre para el modelo de datos del formulario (FDM).
+   * (**Opcional**) Especifique el título, la descripción y las etiquetas del modelo de datos del formulario (FDM).
    * (**Opcional y aplicable solo si se configuran fuentes de datos**) Seleccione el icono de verificación situado junto al campo **[!UICONTROL Configuración de la fuente de datos]** y seleccione el nodo de configuración donde residen los servicios en la nube para las fuentes de datos que desea utilizar. Restringe la lista de fuentes de datos disponibles para su selección en la página siguiente a las disponibles en el nodo de configuración seleccionado. Sin embargo, cualquier fuente de datos de perfil de usuario de [!DNL Experience Manager] se enumera de forma predeterminada. Si no selecciona un nodo de configuración, se enumeran las fuentes de datos de todos los nodos de configuración.
 
 1. Seleccione **[!UICONTROL Siguiente]**.
@@ -61,27 +61,27 @@ Asegúrese de haber configurado las fuentes de datos que desea utilizar en el mo
 
    D. **[!UICONTROL Servicios]** Área de contenido en la que aparecen las operaciones o los servicios de las fuentes de datos añadidas.
 
-   E. **[!UICONTROL Barra de herramientas]** Herramientas para trabajar con el modelo de datos de formulario (FDM) La barra de herramientas muestra más opciones en función del objeto seleccionado en el modelo de datos de formulario (FDM).
+   E. **[!UICONTROL Barra de herramientas]** Herramientas para trabajar con el modelo de datos de formulario (FDM). La barra de herramientas muestra más opciones en función del objeto seleccionado en el modelo de datos de formulario (FDM).
 
    F. **[!UICONTROL Añadir selección]** Añade objetos y servicios del modelo de datos seleccionado al modelo de datos de formulario.
 
-Para obtener más información sobre el editor del modelo de datos de formulario y cómo puede trabajar con él para editar y configurar el modelo de datos de formulario (FDM), consulte [Trabajo con el modelo de datos de formulario](work-with-form-data-model.md).
+Para obtener más información sobre el editor del modelo de datos de formulario y cómo puede trabajar con él para editar y configurar el modelo de datos de formulario (FDM), consulte [Trabajar con el modelo de datos de formulario](work-with-form-data-model.md).
 
 ## Actualizar fuentes de datos {#update}
 
-Para agregar o actualizar fuentes de datos a un modelo de datos de formulario (FDM) existente, haga lo siguiente.
+Haga lo siguiente para agregar o actualizar fuentes de datos en un modelo de datos de formulario existente (FDM).
 
-1. Ir a **[!UICONTROL Forms > Integraciones de datos]**, seleccione el Modelo de datos de formulario (FDM) en el que desea agregar o actualizar las fuentes de datos y seleccione **[!UICONTROL Propiedades]**.
+1. Vaya a **[!UICONTROL Formularios > Integraciones de datos]**, seleccione el modelo de datos de formulario (FDM) en el que desea agregar o actualizar las fuentes de datos y seleccione **[!UICONTROL Propiedades]**.
 1. En las propiedades del modelo de datos de formulario, vaya a la pestaña **[!UICONTROL Actualizar fuente]**.
 
    En la pestaña **[!UICONTROL Actualizar fuente]**:
 
    * Seleccione el icono Examinar en el campo **[!UICONTROL Configuración según el contexto]** y seleccione un nodo de configuración en el que reside la configuración de nube para la fuente de datos que desea agregar. Si no selecciona ningún nodo, solo se enumeran las configuraciones de nube que residen en el nodo `global` al seleccionar **[!UICONTROL Añadir fuentes]**.
 
-   * Para añadir una nueva fuente de datos, seleccione **[!UICONTROL Agregar orígenes]** y seleccione las fuentes de datos que desea añadir al modelo de datos de formulario (FDM). Se muestran todas las fuentes de datos configuradas en `global` y el nodo de configuración seleccionado, de haber.
+   * Para añadir una fuente de datos nueva, seleccione **[!UICONTROL Añadir fuentes]** y elija las fuentes de datos que desea añadir al modelo de datos de formulario. Se muestran todas las fuentes de datos configuradas en `global` y el nodo de configuración seleccionado, de haber.
 
    * Para reemplazar una fuente de datos existente por otra fuente de datos del mismo tipo, seleccione el icono **[!UICONTROL Editar]** para la fuente de datos y seleccione en la lista de fuentes de datos disponibles.
-   * Para eliminar una fuente de datos existente, seleccione el icono **[!UICONTROL Eliminar]** para la fuente de datos. El icono Eliminar está desactivado si se añade un objeto de modelo de datos en la fuente de datos en el modelo de datos de formulario (FDM).
+   * Para eliminar una fuente de datos existente, seleccione el icono **[!UICONTROL Eliminar]** para la fuente de datos. El icono Eliminar está deshabilitado si se añade un objeto de modelo de datos en la fuente de datos en el modelo de datos del formulario (FDM).
 
      ![fdm-properties](assets/fdm-properties.png)
 
@@ -89,17 +89,17 @@ Para agregar o actualizar fuentes de datos a un modelo de datos de formulario (F
 
 >[!NOTE]
 >
->Una vez que añada nuevas fuentes de datos o actualice las fuentes de datos existentes en un modelo de datos de formulario (FDM), asegúrese de actualizar las referencias de enlace, según corresponda, en Forms adaptable<!--and interactive communications--> que utilizan el modelo de datos de formulario (FDM) actualizado.
+>Una vez que añada nuevas fuentes de datos o actualice las existentes en un modelo de datos de formulario (FDM), asegúrese de actualizar las referencias de enlace, según corresponda, en los formularios adaptables<!--and interactive communications--> que utilizan el modelo de datos de formulario actualizado.
 
 ## Configuraciones según el contexto para modos de ejecución específicos {#runmode-specific-context-aware-config}
 
-[!UICONTROL Modelo de datos de formulario (FDM)] utiliza [Configuraciones según el contexto de Sling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html?lang=es) para admitir distintos parámetros de fuente de datos y conectarse con fuentes de datos para diferentes [!DNL Experience Manager] modos de ejecución.
+[!UICONTROL El modelo de datos de formulario (FDM)] utiliza [Configuraciones según el contexto de Sling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html?lang=es) para ser compatible con distintos parámetros de fuente de datos y conectarse con fuentes de datos para diferentes modos de ejecución de [!DNL Experience Manager].
 
-Cuándo [!UICONTROL Modelo de datos de formulario (FDM)] utiliza configuraciones de nube para almacenar parámetros, que cuando se registran e implementan mediante el control de fuente (repositorio GIT de Cloud Manager), crea una configuración de nube con los mismos parámetros para todos los modos de ejecución (desarrollo, fase y producción). Sin embargo, en los casos de uso en los que sea necesario tener diferentes conjuntos de datos para entornos de prueba y producción, se utilizan parámetros de fuente de datos (por ejemplo, la URL de la fuente de datos) para diferentes modos de ejecución de [!DNL Experience Manager].
+Cuando el [!UICONTROL modelo de datos de formulario (FDM)] utiliza configuraciones de nube para almacenar parámetros, que cuando se registran e implementan mediante el control de fuente (repositorio GIT de Cloud Manager) crea una configuración de nube con los mismos parámetros para todos los modos de ejecución (desarrollo, fase y producción). Sin embargo, en los casos de uso en los que sea necesario tener diferentes conjuntos de datos para entornos de prueba y producción, se utilizan parámetros de fuente de datos (por ejemplo, la URL de la fuente de datos) para diferentes modos de ejecución de [!DNL Experience Manager].
 
-Para conseguirlo, debe crear una configuración de OSGi que contenga pares de parámetros-valor de la fuente de datos. Esto anula el mismo par de [!UICONTROL Modelo de datos de formulario (FDM)] configuración de nube en tiempo de ejecución. Como las configuraciones de OSGi son compatibles con estos modos de ejecución de forma predeterminada, puede anular un parámetro de fuente de datos en diferentes valores según el modo de ejecución.
+Para conseguirlo, debe crear una configuración de OSGi que contenga pares de parámetros-valor de la fuente de datos. Esto anula el mismo par de la configuración de nube del [!UICONTROL modelo de datos de formulario (FDM)] en el momento de ejecución. Como las configuraciones de OSGi son compatibles con estos modos de ejecución de forma predeterminada, puede anular un parámetro de fuente de datos en diferentes valores según el modo de ejecución.
 
-Para habilitar las configuraciones de nube específicas de la implementación en [!UICONTROL Modelo de datos de formulario (FDM)]:
+Para habilitar las configuraciones de nube específicas de la implementación en el [!UICONTROL modelo de datos de formulario (FDM)]:
 
 1. Cree una configuración de nube en la instancia de desarrollo local. Para ver los pasos detallados, consulte [Cómo configurar las fuentes de datos](/help/forms/configure-data-sources.md).
 
@@ -136,7 +136,7 @@ Cuando este tipo de archivo del proyecto se implementa mediante la canalización
 
 ## Pasos siguientes {#next-steps}
 
-Ahora tiene un modelo de datos de formulario (FDM) con fuentes de datos agregadas. A continuación, puede editar el modelo de datos de formulario (FDM) para agregar y configurar objetos y servicios del modelo de datos, agregar asociaciones entre objetos del modelo de datos, editar propiedades, agregar objetos y propiedades del modelo de datos personalizado, generar datos de ejemplo, etc.
+Ahora tiene un modelo de datos de formulario (FDM) con fuentes de datos añadidas. A continuación, puede editar el modelo de datos de formulario para añadir y configurar objetos y servicios del modelo de datos, añadir asociaciones entre objetos del modelo de datos, editar propiedades, añadir objetos y propiedades del modelo de datos personalizado, generar datos de muestra, etc.
 
 Para obtener más información, consulte [Trabajo con el modelo de datos de formulario](work-with-form-data-model.md).
 

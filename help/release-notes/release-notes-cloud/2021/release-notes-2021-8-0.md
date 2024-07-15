@@ -30,7 +30,7 @@ La de la siguiente versión (2021.9.0) es el jueves, 06 de octubre de 2021.
 
 ## Vídeo de la versión {#release-video}
 
-Eche un vistazo a la [Información general de la versión de agosto de 2021](https://video.tv.adobe.com/v/336277) para ver un resumen de las funciones añadidas.
+Eche un vistazo al vídeo [Información general sobre la versión de agosto de 2021](https://video.tv.adobe.com/v/336277) para ver un resumen de las funciones añadidas.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -38,25 +38,25 @@ Eche un vistazo a la [Información general de la versión de agosto de 2021](htt
 
 * Al compartir recursos digitales como vínculo, el usuario puede copiar la URL en el portapapeles de inmediato. La mejora permite compartir recursos de una manera más rápida y práctica. Esta funcionalidad permite un uso compartido de recursos más rápido y conveniente.
 
-  ![Opción Copiar URL al compartir un recurso como vínculo](/help/assets/assets/link-share-copy-URL-option.png)
-  *Imagen: al compartir un recurso como vínculo, ahora puede copiar la URL para compartirlo por separado.*
+  ![Copiar opción de URL al compartir un recurso como vínculo](/help/assets/assets/link-share-copy-URL-option.png)
+  *Imagen: al compartir un recurso como vínculo, ahora puede copiar la dirección URL para compartirlo por separado.*
 
 * Al cargar archivos TXT, los microservicios de recursos generan automáticamente una miniatura. La miniatura en PNG es una representación de un archivo TXT que ayuda a los usuarios a identificar el contenido o los archivos en cierta medida, sin necesidad de abrir los archivos. Esta funcionalidad no requiere ninguna configuración y funciona de forma predeterminada.
 
-  ![Una representación de un archivo TXT se genera automáticamente mediante [!DNL Assets] en formato PNG](/help/assets/assets/thumbnail-rendition-txt-file.png)
-  *Imagen: se genera automáticamente una representación de un archivo TXT para ayudarle a identificar el archivo sin abrirlo.*
+  ![[!DNL Assets] genera automáticamente una representación de un archivo TXT en formato PNG](/help/assets/assets/thumbnail-rendition-txt-file.png)
+  *Imagen: se genera automáticamente una representación de un archivo TXT para ayudarle a identificar el archivo sin necesidad de abrirlo.*
 
-### Nueva función en la [!DNL Assets] canal de prelanzamiento {#assets-prerelease-features}
+### Nueva característica en el canal de prelanzamiento [!DNL Assets] {#assets-prerelease-features}
 
 * Ahora puede ordenar los recursos mostrados en los resultados de búsqueda en las vistas Columna y Tarjeta. El orden funciona en las columnas Nombre, Creada, Modificada o Ninguna.
 
   ![Ordenar los resultados de búsqueda en [!DNL Assets] en las vistas Columna y Tarjeta](/help/assets/assets/sort-searched-assets.png)
-  *Imagen: ordenación de los resultados de búsqueda en [!DNL Assets] en las vistas Columna y Tarjeta.*
+  *Imagen: ordena los resultados de búsqueda en [!DNL Assets] en las vistas Columna y Tarjeta.*
 
 ### Errores corregidos en [!DNL Assets] {#assets-bugs-fixed}
 
-* Cuando un miembro del grupo colaborador navega al [!DNL Assets] Consola, un extra `POST` Se ha generado una solicitud para crear una colección. Esta solicitud no es necesaria; falla debido a problemas de permisos y crea muchos errores en los registros. (CQ-4328856)
-* Cuando los usuarios vean un recurso y seleccionen [!UICONTROL Cronología] en el menú emergente del panel izquierdo, se muestra un error. En los registros, se registran muchas advertencias debido a una consulta incorrecta. (CQ-4328919)
+* Cuando un miembro del grupo colaborador navega a la consola [!DNL Assets], se genera una solicitud `POST` adicional para crear una colección. Esta solicitud no es necesaria; falla debido a problemas de permisos y crea muchos errores en los registros. (CQ-4328856)
+* Cuando los usuarios ven un recurso y seleccionan [!UICONTROL Cronología] en el menú emergente del panel izquierdo, se muestra un error. En los registros, se registran muchas advertencias debido a una consulta incorrecta. (CQ-4328919)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -70,11 +70,11 @@ Eche un vistazo a la [Información general de la versión de agosto de 2021](htt
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Forms] {#prerelease-features-forms}
 
-* **Uso de funciones de Adobe Sign en un formulario adaptable** : Adobe Sign para los niveles de servicio empresarial y para empresa puede, opcionalmente, ampliar las funciones de los destinatarios del acuerdo más allá del firmante para que coincidan mejor con sus requisitos de flujo de trabajo. Ahora puede permitir que cada destinatario del acuerdo configure su función en un formulario adaptable, siendo la de firmante la función predeterminada.
+* **Usar funciones de Adobe Sign en un formulario adaptable**: Adobe Sign para los niveles de servicio empresarial y empresarial puede, opcionalmente, expandir las funciones de los destinatarios del acuerdo más allá del firmante para que coincidan mejor con sus requisitos de flujo de trabajo. Ahora puede permitir que cada destinatario del acuerdo configure su función en un formulario adaptable, siendo la de firmante la función predeterminada.
 
-* **Analytics para Forms adaptable** : Ahora puede capturar y rastrear el comportamiento del usuario final mediante Adobe Analytics para Forms adaptable para recopilar las perspectivas del usuario final. Ayuda a tomar decisiones informadas basadas en datos para mejorar la experiencia del usuario final.
+* **Analytics para Forms adaptable**: ahora puede capturar y rastrear el comportamiento del usuario final mediante Adobe Analytics para Forms adaptable con el fin de recopilar información del usuario final. Ayuda a tomar decisiones informadas basadas en datos para mejorar la experiencia del usuario final.
 
-* **Conecte fácilmente AEM Forms con Microsoft® Dynamics y Salesforce.com** : El servicio proporciona la configuración de fuentes de datos y modelos de datos predeterminados para Microsoft® Dynamics y Salesforce.com. Esto hace que sea más rápido y fácil para los desarrolladores configurar Microsoft® Dynamics y Salesforce.com como fuentes de datos para un formulario adaptable.
+* **Conecte fácilmente AEM Forms con Microsoft® Dynamics y Salesforce.com**. El servicio proporciona la configuración de fuentes de datos y modelos de datos predeterminados para Microsoft® Dynamics y Salesforce.com. Esto hace que sea más rápido y fácil para los desarrolladores configurar Microsoft® Dynamics y Salesforce.com como fuentes de datos para un formulario adaptable.
 
 ## Complemento CIF {#cloud-services-cif}
 
@@ -82,17 +82,17 @@ Eche un vistazo a la [Información general de la versión de agosto de 2021](htt
 
 * Nueva interfaz de usuario del selector de categorías para mejorar la experiencia del usuario, aumentar la eficacia y ofrecer una mejor compatibilidad con catálogos de productos complejos
 
-  ![Selector de nueva categoría](/help/assets/CIF/category-picker.png)
+  ![Selector de categoría nueva](/help/assets/CIF/category-picker.png)
 
 * CIF Mejor compatibilidad con A11Y para los componentes principales de la
 
 ## Cloud Manager {#cloud-manager}
 
-AEM Esta sección describe las notas de la versión para Cloud Manager en las versiones 2021.8.0 y 2021.7.0 de as a Cloud Service.
+Esta sección describe las notas de la versión para Cloud Manager en AEM as a Cloud Service 2021.8.0 y 2021.7.0.
 
 ## Fecha de lanzamiento {#release-date-cm-aug}
 
-AEM La fecha de lanzamiento de Cloud Manager en la as a Cloud Service 2021.8.0 de es el 12 de agosto de 2021.
+La fecha de lanzamiento de Cloud Manager en AEM as a Cloud Service 2021.8.0 es el 12 de agosto de 2021.
 La próxima versión está planificada para el 9 de septiembre de 2021.
 
 ### Novedades {#what-is-new-aug}
@@ -100,7 +100,7 @@ La próxima versión está planificada para el 9 de septiembre de 2021.
 * Los clientes de Cloud Service ahora pueden ver los informes del Contrato de nivel de servicio (SLA) en Cloud Manager. Esto estará disponible de forma progresiva en los próximos meses.
 Consulte la [creación de informes de SLA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/sla-reporting.html?lang=es).
 
-* El tipo y la gravedad del IndexType y las reglas de calidad de `IndexDamAssetLucene` han cambiado. Estos son ahora errores de Blocker *gravedad*.
+* El tipo y la gravedad del IndexType y las reglas de calidad de `IndexDamAssetLucene` han cambiado. Estos son ahora errores del bloqueador *gravedad*.
 
 * Se han introducido nuevas reglas de calidad del índice Oak para cubrir configuraciones asincrónicas y Tika.
 
@@ -120,7 +120,7 @@ Consulte la [creación de informes de SLA](https://experienceleague.adobe.com/do
 
 * La incorporación inicial fallaba para nuevas organizaciones con nombres largos.
 
-* En ocasiones, cuando una canalización se activa dos veces por alguna razón, el resultado es que una de las ejecuciones falla con un *`cannot update pipeline execution status`* error.
+* En ocasiones, cuando una canalización se activa dos veces por alguna razón, el resultado es que una de las ejecuciones falla con un error *`cannot update pipeline execution status`*.
 
 ## Herramienta de transferencia de contenido {#content-transfer-tool}
 
@@ -130,8 +130,8 @@ La fecha de lanzamiento de la herramienta de transferencia de contenido v1.5.6 e
 
 ### Correcciones de errores {#bug-fixes-ctt}
 
-* En ocasiones, no todos los usuarios se migraban a la instancia de destino. AEM Para obtener esta corrección, se requiere CTT v1.5.6 junto con aem-ethos-tools 1.2.354 o una versión posterior en la instancia as a Cloud Service de Target.
+* En ocasiones, no todos los usuarios se migraban a la instancia de destino. Para obtener esta corrección, se requiere CTT v1.5.6 junto con aem-ethos-tools 1.2.354 o una versión posterior en la instancia de AEM as a Cloud Service de destino.
 
-* El **Detener ingesta** Se estaba desactivando el botón durante la ingesta en la instancia de publicación. Esto no es necesario porque no hay ningún paso de restauración durante la ingesta de Publish.
+* El botón **Detener ingesta** se estaba deshabilitando durante la ingesta en la instancia de Publish. Esto no es necesario porque no hay ningún paso de restauración durante la ingesta de Publish.
 
-* El CTT no limpió el `/tmp` después de una extracción correcta. Esto a veces provocaba problemas de espacio en disco.
+* CTT no limpió el directorio `/tmp` después de una extracción correcta. Esto a veces provocaba problemas de espacio en disco.

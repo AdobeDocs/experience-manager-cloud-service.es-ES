@@ -37,4 +37,4 @@ Puede encontrar más información sobre este tema en los siguientes recursos:
 
 ## Recursos relacionados {#related}
 
-También es posible segmentar dinámicamente regiones específicas de una página y reutilizar la misma plantilla. Obtenga información sobre cómo [AEM enriquecer datos de productos con contenido asociado de la](./enrich-product-associated-content.md).
+También es posible segmentar dinámicamente regiones específicas de una página y reutilizar la misma plantilla. AEM Obtenga información sobre cómo [enriquecer datos de productos con contenido de productos asociado](./enrich-product-associated-content.md) con el contenido de la.

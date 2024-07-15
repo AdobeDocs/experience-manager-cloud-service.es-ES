@@ -27,9 +27,9 @@ Los fragmentos de contenido contienen contenido estructurado y se pueden entrega
 
 Los autores de contenido generarán el número de fragmentos de contenido que corresponda para representar el contenido que crean. Esta será su tarea principal en AEM. Para los fines de esta guía de introducción, solo necesitamos crear una.
 
-1. AEM Inicie sesión en el as a Cloud Service y, en el menú principal, seleccione **Navegación** > **Fragmentos de contenido**.
+1. Inicie sesión en AEM as a Cloud Service y, en el menú principal, seleccione **Navegación** > **Fragmentos de contenido**.
 
-1. Seleccione el [carpeta creada anteriormente.](create-assets-folder.md)
+1. Seleccione la [carpeta que creó anteriormente.](create-assets-folder.md)
 1. Seleccione **Crear**.
 1. La creación de un fragmento de contenido se presenta como un cuadro de diálogo.
 Seleccione la ubicación y el modelo que desee utilizar para crear el fragmento de contenido.
@@ -41,7 +41,7 @@ Seleccione la ubicación y el modelo que desee utilizar para crear el fragmento 
 
    ![Cuadro de diálogo Crear fragmento de contenido nuevo](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
-1. Seleccionar **Crear** o  **Crear y abrir**.
+1. Seleccione **Crear** o **Crear y abrir**.
 
 Los fragmentos de contenido pueden hacer referencia a otros fragmentos de contenido, lo que permite anidar una estructura de contenido si es necesario.
 

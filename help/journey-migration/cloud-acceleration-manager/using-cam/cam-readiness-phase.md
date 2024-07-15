@@ -1,6 +1,6 @@
 ---
 title: Fase de preparación en Cloud Acceleration Manager
-description: Esta página proporciona información general sobre la fase de preparación en Cloud Acceleration Manager.
+description: Esta página proporciona información general sobre la fase de preparación de Cloud Acceleration Manager.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 feature: Migration
 role: Admin
@@ -26,7 +26,7 @@ Siga los pasos a continuación para ir a la fase de preparación:
 
    ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing1.png)
 
-1. En la página de aterrizaje del proyecto, vaya a **Preparación** , como se muestra en la figura siguiente.
+1. En la página de aterrizaje del proyecto, vaya a la sección **Preparación**, como se muestra en la figura siguiente.
 
    ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/readiness-1.png)
 
@@ -41,7 +41,7 @@ Siga los pasos a continuación para ir a la fase de preparación:
 >abstract="El informe de BPA puede cargarse en CAM para proporcionar un análisis del mismo con respecto a la migración a AEM as a Cloud Service."
 >additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="Uso del analizador de prácticas recomendadas"
 
-1. Clic **Revisar** desde el **Análisis de las prácticas recomendadas** Tarjeta de.
+1. Haga clic en **Revisar** en la tarjeta **Análisis de prácticas recomendadas**.
 
    ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/readiness-2.png)
 
@@ -50,12 +50,12 @@ Siga los pasos a continuación para ir a la fase de preparación:
    >[!NOTE]
    >Para evitar un impacto en las instancias críticas para el negocio, Adobe recomienda ejecutar BPA en un entorno de creación. El entorno debe estar lo más cerca posible del entorno de producción en las áreas de personalizaciones, configuraciones, contenido y aplicaciones de usuario. Como alternativa, se puede ejecutar en un clon del entorno de Author de producción.
 
-   1. Vaya a [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=best*) y descargue el Analizador de prácticas recomendadas como archivo zip.
+   1. Vaya al portal [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=best*) y descargue el Analizador de prácticas recomendadas como archivo zip.
 
       >[!NOTE]
-      >Revisar [Uso del analizador de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html#imp-considerations) para aprender a ejecutar BPA.
+      >Revise [Cómo usar el Analizador de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html#imp-considerations) para aprender a ejecutar BPA.
 
-1. En CAM, haga clic en **Obtener clave de carga**, para que pueda obtener la clave utilizada para configurar su sistema para que cargue automáticamente informes de BPA directamente a CAM.
+1. En CAM, haz clic en **Obtener clave de carga**, para que puedas obtener la clave que se usa para configurar tu sistema de modo que cargue automáticamente los informes de BPA directamente en CAM.
 
    ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
 
@@ -76,41 +76,41 @@ Siga los pasos a continuación para ir a la fase de preparación:
 
 ### Uso de la vista previa {#print-preview-cam}
 
-Puede seleccionar la opción de vista previa de impresión en Cloud Acceleration Manager para obtener una vista previa imprimible de los informes o para imprimir el informe en un formato de PDF para facilitar el uso compartido.
+Puede seleccionar la opción de vista previa de impresión en Cloud Acceleration Manager para obtener una vista previa imprimible de los informes o para imprimir el informe en un formato de PDF para compartirlo fácilmente.
 
 Complete los siguientes pasos:
 
-1. Haga clic en **Vista preliminar** acción.
+1. Haga clic en la acción **Vista preliminar**.
 
    ![imagen](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1b.png)
 
-1. En la nueva pestaña con el informe mostrado en una vista previa imprimible, haga clic en **Imprimir** para imprimir el informe en formato de PDF.
+1. En la nueva ficha con el informe mostrado en una vista previa imprimible, haga clic en **Imprimir** para imprimir el informe en formato de PDF.
 
    >[!IMPORTANT]
    >
-   >* La opción **Guardar como PDF** se recomienda y admite para la funcionalidad anterior.
+   >* Se recomienda y admite la opción **Guardar como PDF** para la funcionalidad anterior.
    >* Si se utiliza el botón Imprimir del explorador, se imprime sólo una página.
 
    ![imagen](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### Uso de Ver línea de tendencia {#trendline-view-cam}
 
-Cuando cargue más de un informe de Analizador de prácticas recomendadas (BPA) definido en un proyecto, podrá seleccionar el **Ver línea de tendencia** para ver y comparar los resultados de los informes históricos de BPA.
+Cuando carga más de un informe de Analizador de prácticas recomendadas (BPA) en un proyecto, puede seleccionar la opción **Ver línea de tendencia** para ver y comparar los resultados de los informes de BPA históricos.
 
 Siga los pasos a continuación para ver los informes de la opción de línea de tendencia:
 
 >[!NOTE]
->Cuando carga más de un informe de BPA distinto en un proyecto, verá el **...** icono. Los informes se consideran iguales (no distintos) si su host y la hora de creación son iguales.
+>Cuando carga más de un informe de BPA distinto en un proyecto, verá el icono **...**. Los informes se consideran iguales (no distintos) si su host y la hora de creación son iguales.
 
-1. Vaya al proyecto y haga clic en **Revisar** desde el **Análisis de las prácticas recomendadas** Tarjeta de en **Preparación** fase.
+1. Vaya al proyecto y haga clic en **Revisar** desde la tarjeta de **Análisis de prácticas recomendadas** en la fase de **Preparación**.
 
    ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. Desde el **Ver** , haga clic en **Informe de tendencias**, como se muestra en la figura siguiente.
+1. En la lista desplegable **Ver**, haga clic en **Informe de líneas de tendencia**, como se muestra en la figura siguiente.
 
    ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
 
-1. Clic **Informe de tendencias** abre la vista línea de tendencia del informe.
+1. Al hacer clic en **Informe de línea de tendencia**, se abre la vista de línea de tendencia del informe.
 
    ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
 
@@ -120,7 +120,7 @@ Siga los pasos a continuación para ver los informes de la opción de línea de 
    >
    >Verá dos gráficos que muestran la tendencia del:
    > 
-   >1. **Tendencia de conclusiones del informe**
+   >1. **Tendencia de conclusiones de informes**
    >1. **Componentes personalizados y tendencia de la plantilla**
    >
    >Puede añadir o cambiar la vista gráfica mediante la lista desplegable, como se muestra en la figura siguiente:
@@ -142,17 +142,17 @@ Explore las siguientes tarjetas, disponibles en la página Informe de análisis 
 
 #### Propiedades del informe {#report-properties}
 
-El **Propiedades del informe** proporciona información sobre las propiedades del informe, como la fecha, la duración, los filtros, la fecha de carga y los detalles de Adobe Experience Manager AEM ().
+La tarjeta **Propiedades del informe** proporciona información sobre las propiedades del informe, como la fecha del informe, la duración, los filtros, la fecha de carga y los detalles de Adobe Experience Manager AEM ().
 
 ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/report-properties.png)
 
 #### Resumen del informe {#report-overview}
 
-Esta **Resumen del informe** AEM La tarjeta de proporciona los resultados del informe y los niveles de gravedad que se aplican al evaluar la preparación para pasar a un estado de preparación as a Cloud Service, tal y como se muestra en la figura siguiente.
+Esta tarjeta **Información general del informe** proporciona los resultados del informe y los niveles de gravedad que se aplican cuando se evalúa la preparación para pasar a AEM as a Cloud Service, como se muestra en la figura siguiente.
 
 ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/report-overview.png)
 
-Al hacer clic en este informe se abre **Informe** pestaña.
+Al hacer clic en este informe, se abre la ficha **Informe**.
 
 ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/report-overview2.png)
 
@@ -161,7 +161,7 @@ Puede filtrar el informe en función de su importancia, subtipo o recuento.
 ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->Consulte [Interpretación del informe del Analizador de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html) para conocer las categorías de hallazgos y los niveles de importancia.
+>Consulte [Interpretación del informe del Analizador de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html) para obtener más información sobre las categorías de resultados y los niveles de importancia.
 
 #### Evaluación de las prácticas recomendadas {#best-practices-assessment}
 
@@ -175,7 +175,7 @@ AEM AEM La opción de Evaluación de las prácticas recomendadas proporciona una
 
 #### Evaluación de la complejidad de la migración {#migration-complexity-assessment}
 
-AEM AEM La opción Evaluación de la complejidad de la migración proporciona una evaluación de la complejidad para migrar la implementación de la existente a la implementación de la migración en as a Cloud Service.
+AEM La opción de evaluación de la complejidad de la migración proporciona una evaluación de la complejidad para migrar la implementación de la existente a AEM as a Cloud Service.
 
 Puede revisar la siguiente información en esta pestaña:
 
@@ -187,7 +187,7 @@ Puede revisar la siguiente información en esta pestaña:
 
 ## Uso de la tarjeta de planificación y configuración {#planning-setup}
 
-1. Clic **Ver** desde el **Planificación y configuración** Tarjeta de. AEM Esta tarjeta proporciona todo el contenido relevante que le ayuda a planificar y configurar su migración a la.
+1. Haga clic en **Ver** en la tarjeta **Planificación y configuración**. AEM Esta tarjeta proporciona todo el contenido relevante que le ayuda a planificar y configurar su migración a la.
 
    ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/readiness-view.png)
 
@@ -200,11 +200,11 @@ Puede revisar la siguiente información en esta pestaña:
 >[!IMPORTANT]
 >Un informe solo se puede eliminar cuando se ha cargado más de un informe en un proyecto.
 
-1. Vaya al proyecto y haga clic en **Revisar** desde el **Análisis de las prácticas recomendadas** Tarjeta de en **Preparación** fase.
+1. Vaya al proyecto y haga clic en **Revisar** desde la tarjeta de **Análisis de prácticas recomendadas** en la fase de **Preparación**.
 
    ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. Clic **...**.
+1. Haga clic en **...**.
 
    ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
@@ -212,14 +212,14 @@ Puede revisar la siguiente información en esta pestaña:
 
    ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
 
-1. Haga clic en el icono Eliminar de la **Informe de tendencias** pantalla.
+1. Haga clic en el icono Eliminar de la pantalla **Informe de líneas de tendencias**.
 
    ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view5a.png)
 
-1. Clic **Eliminar** para confirmar la eliminación.
+1. Haga clic en **Eliminar** para confirmar la eliminación.
 
    ![imagen](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view6a.png)
 
 ## Siguientes pasos {#whats-next}
 
-Una vez que haya aprendido a iniciar sesión en Cloud Acceleration Manager y a crear un proyecto, ya puede pasar a revisar el siguiente paso en la [Fase de implementación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html).
+Una vez que haya aprendido a iniciar sesión en Cloud Acceleration Manager y a crear un proyecto, ya puede pasar a revisar el siguiente paso en la [fase de implementación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html).

@@ -13,7 +13,7 @@ ht-degree: 93%
 
 Las etiquetas son un método rápido y sencillo de clasificar contenido dentro de un sitio web. Las etiquetas pueden considerarse como palabras clave o etiquetas que se pueden adjuntar a una página, un recurso o cualquier otro contenido para que con las búsquedas se encuentre ese contenido y el relacionado.
 
-* Consulte [Administración de etiquetas](/help/sites-cloud/administering/tags.md) para obtener información sobre cómo crear y administrar etiquetas, y a qué etiquetas de contenido se han aplicado.
+* Consulte [Administración de etiquetas](/help/sites-cloud/administering/tags.md) para obtener información sobre cómo crear y administrar etiquetas y a qué etiquetas de contenido se han aplicado.
 * Consulte [Etiquetado para desarrolladores](/help/implementing/developing/introduction/tagging-framework.md) para obtener información sobre el marco de trabajo de etiquetado, así como la forma de incluir y ampliar las etiquetas en aplicaciones personalizadas.
 
 ## Diez motivos para utilizar etiquetas {#ten-reasons-to-use-tagging}

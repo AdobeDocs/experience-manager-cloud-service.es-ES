@@ -1,6 +1,6 @@
 ---
 title: Navegación al proveedor de servicios de Screens
-description: En esta página se describe cómo navegar al proveedor de servicios de Screens.
+description: En esta página se describe cómo desplazarse a Screens Services Provider.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
@@ -15,18 +15,18 @@ ht-degree: 6%
 
 ## Introducción {#introduction}
 
-**Proveedor de servicios de Screens**, permite al autor, a los desarrolladores y a los administradores de contenido gestionar pantallas y reproductores para la reproducción de contenido una vez que este se añade a los canales. Una vez que los usuarios tengan acceso a AEM Cloud Service, deberán poder iniciar sesión en el proveedor de servicios de Screens.
+**Proveedor de servicios de Screens**, permite al autor, desarrolladores y administradores de contenido administrar pantallas y reproductores para la reproducción de contenido una vez que este se agrega a los canales. Una vez que los usuarios tengan acceso a AEM Cloud Service, deberán poder iniciar sesión en el Proveedor de servicios de Screens.
 
 Esta sección describe cómo configurar el proveedor de servicios de Screens.
 
 
 ## Objetivo {#objective}
 
-En la siguiente sección se muestra cómo configurar el proveedor de servicios de Screens.
+En la siguiente sección se muestra cómo configurar y configurar el proveedor de servicios de Screens.
 
 ## Pasos para configurar el proveedor de servicios de Screens {#screens-services-provider}
 
-Siga los pasos a continuación para configurar el proveedor de servicios de Screens:
+Siga los pasos a continuación para configurar Screens Services Provider:
 
 1. Vaya al proveedor de servicios de Screens desde [aquí](https://experience.adobe.com/screens).
 
@@ -38,17 +38,17 @@ Siga los pasos a continuación para configurar el proveedor de servicios de Scre
    ![imagen](/help/screens-cloud/assets/configure/configure-screens0.png)
 
 3. Introduzca los siguientes detalles en el cuadro de diálogo Editar configuración.
-   * **URL de publicación** AEM - URL de publicación de la aplicación (por ejemplo, `https://publish-p12345-e12345.adobeaemcloud.com`)
-   * **URL del autor** AEM - URL del autor de la (por ejemplo, `https://author-p12345-e12345.adobeaemcloud.com`)
+   * **URL de Publish AEM** - URL de publicación de la publicación de la aplicación (por ejemplo, `https://publish-p12345-e12345.adobeaemcloud.com`)
+   * AEM **URL del autor** - URL del autor de la (por ejemplo, `https://author-p12345-e12345.adobeaemcloud.com`)
 
    >[!NOTE]
-   >AEM AEM Asegúrese de crear y publicar al menos un canal de pantalla de antes de configurar la opción en el proveedor de servicios de pantalla de la sección de la. Para crear un canal, vaya a /screens.html en su proveedor de contenido.
+   >AEM AEM Asegúrese de crear y publicar al menos un canal de pantalla de antes de configurar el canal en el proveedor de servicios de Screens, según se indica a continuación Para crear un canal, vaya a /screens.html en su proveedor de contenido.
 
    ![imagen](/help/screens-cloud/assets/configure/configure-screens4.png)
 
-4. Clic **Guardar** para conectarse al proveedor de contenido de Screens
+4. Haga clic en **Guardar** para conectarse al proveedor de contenido de Screens
 
-5. Seleccionar **Canales** en la barra de navegación izquierda y haga clic en **abrir en el proveedor de contenido**.
+5. Seleccione **Canales** en la barra de navegación izquierda y haga clic en **abrir en el proveedor de contenido**.
 
    ![imagen](/help/screens-cloud/assets/configure/configure-screens1.png)
 
@@ -58,4 +58,4 @@ Siga los pasos a continuación para configurar el proveedor de servicios de Scre
 
 ## Siguientes pasos {#whats-next}
 
-Después de aprender a configurar el proveedor de servicios de Screens, vaya a [Uso del proveedor de contenido de Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html#screens-content-provider) para obtener más información.
+Después de haber aprendido a configurar el proveedor de servicios de Screens, vaya a [Usar el proveedor de contenido de Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html#screens-content-provider) para obtener más información.

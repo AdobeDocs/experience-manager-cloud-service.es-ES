@@ -12,7 +12,7 @@ ht-degree: 85%
 
 ---
 
-# Publicación de recursos en Brand Portal {#publish-assets-to-brand-portal}
+# Recursos de Publish a Brand Portal {#publish-assets-to-brand-portal}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -25,17 +25,17 @@ Sin embargo, primero debe configurar AEM Assets con Brand Portal. Para obtener m
 
 Si realiza las modificaciones posteriores al recurso, la carpeta o la colección originales en AEM Assets, los cambios no se reflejarán en Brand Portal hasta que vuelva a publicar desde AEM Assets. Esta función garantiza que los cambios en curso no estén disponibles en Brand Portal. Solo los cambios aprobados publicados por un administrador están disponibles en Brand Portal.
 
-* [Publicación de recursos en Brand Portal](#publish-assets-to-bp)
-* [Publicar carpetas en Brand Portal](#publish-folders-to-brand-portal)
-* [Publicación de colecciones en Brand Portal](#publish-collections-to-brand-portal)
+* [Recursos de Publish a Brand Portal](#publish-assets-to-bp)
+* [Carpetas de Publish a Brand Portal](#publish-folders-to-brand-portal)
+* [Colecciones de Publish a Brand Portal](#publish-collections-to-brand-portal)
 
 >[!NOTE]
 >
 >Adobe recomienda la publicación escalonada, de preferencia durante las horas no pico, para que el autor de AEM no ocupe recursos excesivos.
->Los recursos deben publicarse por lotes. La recomendación para el tamaño del lote es 15K.
-> Para [!DNL Experience Manager Assets] as a [!DNL Cloud Service], la tasa de transferencia observada en condiciones de laboratorio es de 1000 activos por hora. La tasa se observa con un tamaño promedio de recursos de 10 MB.
+>Assets debe publicarse por lotes. La recomendación para el tamaño del lote es 15K.
+> Para [!DNL Experience Manager Assets] como [!DNL Cloud Service], la tasa de transferencia observada en condiciones de laboratorio es de 1000 recursos por hora. La tasa se observa con un tamaño promedio de recursos de 10 MB.
 
-## Publicación de recursos en Brand Portal {#publish-assets-to-bp}
+## Recursos de Publish a Brand Portal {#publish-assets-to-bp}
 
 A continuación se indican los pasos para publicar recursos de AEM Assets en Brand Portal:
 
@@ -47,7 +47,7 @@ A continuación se indican los pasos para publicar recursos de AEM Assets en Bra
    * [Publicar ahora](#publish-to-bp-now) (Publica recursos inmediatamente)
    * [Publicar más tarde](#publish-to-bp-later) (Programa la publicación de recursos)
 
-### Publicar recursos ahora {#publish-to-bp-now}
+### Recursos de Publish ahora {#publish-to-bp-now}
 
 Para publicar los recursos seleccionados en Brand Portal, haga una de las acciones siguientes:
 
@@ -65,7 +65,7 @@ Para publicar los recursos seleccionados en Brand Portal, haga una de las accion
 
 Aparece un mensaje que indica que los recursos se han puesto en cola para su publicación en Brand Portal. Inicie sesión en la interfaz de Brand Portal para ver los recursos publicados.
 
-### Publicar recursos más tarde {#publish-to-bp-later}
+### Recursos de Publish más adelante {#publish-to-bp-later}
 
 Para programar la publicación de recursos en Brand Portal para una fecha u hora posterior:
 
@@ -100,11 +100,11 @@ Para programar la publicación de recursos en Brand Portal para una fecha u hora
 >`/content : jcr:read, crx:replicate`
 >`/content/dam/ : jcr:read,modify, crx:replicate`
 
-## Publicar carpetas en Brand Portal {#publish-folders-to-brand-portal}
+## Carpetas de Publish a Brand Portal {#publish-folders-to-brand-portal}
 
 Puede publicar o cancelar la publicación de las carpetas de recursos inmediatamente o programarlas para una fecha u hora posterior.
 
-### Publicar carpetas en Brand Portal {#publish-folders-to-bp}
+### Carpetas de Publish a Brand Portal {#publish-folders-to-bp}
 
 1. En la consola Assets, seleccione las carpetas que desee publicar y haga clic en la opción **[!UICONTROL Publicación rápida]** en la barra de herramientas.
 
@@ -130,7 +130,7 @@ Puede publicar o cancelar la publicación de las carpetas de recursos inmediatam
 
    Aparece un mensaje que indica que la carpeta se ha puesto en cola para su publicación en Brand Portal. Inicie sesión en la interfaz de Brand Portal para ver la carpeta publicada.
 
-1. **Publicar carpetas más tarde**
+1. **carpetas de Publish más tarde**
 Para programar la publicación de las carpetas de recursos para una fecha u hora posterior:
 
    1. Seleccione las carpetas que desea programar para la publicación, seleccione **[!UICONTROL Administrar publicación]** en la barra de herramientas de la parte superior.
@@ -158,7 +158,7 @@ Para programar la publicación de las carpetas de recursos para una fecha u hora
 
    ![bp_landingpage](assets/bp_landingpage.png)
 
-1. Cambiar a vista de lista ![Vista de lista](assets/list-view.svg) para ver el estado de publicación actual del recurso.
+1. Cambie a la vista de lista ![Vista de lista](assets/list-view.svg) para ver el estado de publicación actual del recurso.
 
 <!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
@@ -210,7 +210,7 @@ Para cancelar la publicación de carpetas de recursos desde Brand Portal:
 
       ![flujos de trabajo sin publicar](assets/unpublishworkflows.png)
 
-## Publicación de colecciones en Brand Portal {#publish-collections-to-brand-portal}
+## Colecciones de Publish a Brand Portal {#publish-collections-to-brand-portal}
 
 Puede publicar o cancelar la publicación de colecciones desde la instancia de nube de AEM Assets.
 
@@ -220,7 +220,7 @@ Puede publicar o cancelar la publicación de colecciones desde la instancia de n
 >
 >Si las colecciones que contienen fragmentos de contenido se publican desde AEM Assets a Brand Portal, todo el contenido de la carpeta, excepto los fragmentos de contenido, se replicará en la interfaz de Brand Portal.
 
-### Publicar colecciones {#publish-collections}
+### Colecciones de Publish {#publish-collections}
 
 A continuación se indican los pasos para publicar colecciones de AEM Assets en Brand Portal:
 

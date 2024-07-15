@@ -15,15 +15,15 @@ ht-degree: 12%
 
 >[!CAUTION]
 >
->Si el almacenamiento en caché en Dispatcher está habilitado, la variable [Filtro CORS](/help/headless/deployment/cross-origin-resource-sharing.md) no es necesario y, por lo tanto, esa sección se puede ignorar.
+>Si el almacenamiento en caché en Dispatcher está habilitado, el [filtro CORS](/help/headless/deployment/cross-origin-resource-sharing.md) no es necesario, y por lo tanto esa sección se puede ignorar.
 
-El almacenamiento en caché de consultas persistentes no está habilitado de forma predeterminada en Dispatcher. La activación predeterminada no es posible, ya que los clientes que utilizan CORS (Intercambio de recursos de origen cruzado) con varios orígenes deben revisar y posiblemente actualizar su configuración de Dispatcher.
+El almacenamiento en caché de consultas persistentes no está habilitado de forma predeterminada en Dispatcher. La activación predeterminada no es posible, ya que los clientes que utilizan CORS (Intercambio de recursos de origen cruzado) con varios orígenes deben revisar, y posiblemente actualizar, su configuración de Dispatcher.
 
 >[!NOTE]
 >
->Dispatcher no almacena en caché el `Vary` encabezado.
+>Dispatcher no almacena en caché el encabezado `Vary`.
 >
->El almacenamiento en caché de otros encabezados relacionados con CORS se puede habilitar en Dispatcher, pero puede ser insuficiente cuando hay varios orígenes CORS.
+>El almacenamiento en caché de otros encabezados relacionados con CORS se puede habilitar en Dispatcher, pero puede ser insuficiente cuando hay varios orígenes de CORS.
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ El almacenamiento en caché de consultas persistentes no está habilitado de for
 
 Para habilitar el almacenamiento en caché de consultas persistentes, defina la variable de Dispatcher `CACHE_GRAPHQL_PERSISTED_QUERIES`:
 
-1. Añada la variable al archivo de Dispatcher `global.vars`:
+1. Agregue la variable al archivo de Dispatcher `global.vars`:
 
    ```xml
    Define CACHE_GRAPHQL_PERSISTED_QUERIES
@@ -41,7 +41,7 @@ Para habilitar el almacenamiento en caché de consultas persistentes, defina la 
 
 >[!NOTE]
 >
->Para lograr objetivos individuales `ETag` cálculo del encabezado en las consultas persistentes en caché (para *cada* respuesta que es única) el `FileETag Digest` la configuración debe usarse en la configuración de dispatcher del host virtual (si no existe todavía):
+>Para lograr el cálculo del encabezado `ETag` individual en las consultas persistentes en caché (para *cada respuesta* que es única), se debe usar la configuración `FileETag Digest` en la configuración del host virtual de la instancia de Dispatcher (si aún no existe):
 >
 >```xml
 ><Directory />    
@@ -52,7 +52,7 @@ Para habilitar el almacenamiento en caché de consultas persistentes, defina la 
 
 >[!NOTE]
 >
->Para ajustarse a la [Requisitos de Dispatcher para documentos que se pueden almacenar en caché](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), Dispatcher agrega el sufijo `.json` a todas las direcciones URL de consulta persistentes, de modo que el resultado se pueda almacenar en caché.
+>Para cumplir con los requisitos de [Dispatcher para los documentos que se pueden almacenar en caché](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), Dispatcher agrega el sufijo `.json` a todas las direcciones URL de consultas persistentes, de modo que el resultado se pueda almacenar en caché.
 >
 >Este sufijo se agrega mediante una regla de reescritura, una vez habilitado el almacenamiento en caché de consultas persistentes.
 
@@ -60,10 +60,10 @@ Para habilitar el almacenamiento en caché de consultas persistentes, defina la 
 
 Es posible que los clientes que utilizan solicitudes CORS tengan que revisar y actualizar su configuración CORS en Dispatcher.
 
-* El `Origin` AEM no se debe pasar a la publicación mediante la interfaz de usuario de Dispatcher para que la publique:
-   * Compruebe la `clientheaders.any` archivo.
+* AEM No se debe pasar el encabezado `Origin` a la publicación de la a través de Dispatcher:
+   * Compruebe el archivo `clientheaders.any`.
 * En su lugar, las solicitudes CORS deben evaluarse para detectar orígenes permitidos en el nivel de Dispatcher. Este enfoque también garantiza que los encabezados relacionados con CORS se establezcan correctamente, en un solo lugar, en todos los casos.
-   * Esta configuración debe agregarse al `vhost` archivo. A continuación se muestra un ejemplo de configuración; para simplificar, solo se ha proporcionado la parte relacionada con CORS. Puede adaptarlo para sus casos de uso específicos.
+   * Esta configuración se debe agregar al archivo `vhost`. A continuación se muestra un ejemplo de configuración; para simplificar, solo se ha proporcionado la parte relacionada con CORS. Puede adaptarlo para sus casos de uso específicos.
 
   ```xml
   <VirtualHost *:80>

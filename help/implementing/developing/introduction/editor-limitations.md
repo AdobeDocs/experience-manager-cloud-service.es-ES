@@ -21,13 +21,13 @@ Un autor puede encontrar las siguientes limitaciones funcionales al utilizar el 
 
 ### Vínculos no activos {#links-not-active}
 
-Cuándo [edición de una página](/help/sites-cloud/authoring/page-editor/edit-content.md), los vínculos no están activos.
+Al [editar una página](/help/sites-cloud/authoring/page-editor/edit-content.md), los vínculos no están activos.
 
-* [Cambiar a **Previsualizar** modo](/help/sites-cloud/authoring/page-editor/introduction.md#preview-mode) para navegar mediante los vínculos del contenido.
+* [Cambie a **Vista previa** modo](/help/sites-cloud/authoring/page-editor/introduction.md#preview-mode) para navegar usando los vínculos de su contenido.
 
 ### Páginas de estructura {#structure-pages}
 
-No se puede nombrar las páginas `structure`. Páginas con nombre `structure` no se podrán editar en el editor de páginas.
+Las páginas no pueden tener el nombre `structure`. Las páginas con nombre `structure` no se podrán editar en el editor de páginas.
 
 ## Limitaciones de CSS {#css-limitations}
 
@@ -41,13 +41,13 @@ Los elementos con una posición absoluta pueden causar problemas en la posición
 
 ### Unidades vh {#vh-units}
 
-`vh` AEM las unidades no son compatibles porque la altura del iframe debe ajustarse automáticamente mediante la opción de configuración de la posición de la unidad de control de.
+AEM No se admiten `vh` unidades porque la altura del iframe debe ajustarse automáticamente mediante el ajuste de la posición de la unidad de área de trabajo de.
 
 ### Imágenes de fondo fijas {#fixed-background-images}
 
 Es posible que las imágenes de fondo fijas no se muestren como fijas al desplazarse debido al hecho de que están incrustadas en un iframe.
 
-* Seleccionar **Ver página publicada** en las acciones de la barra de encabezado muestra la página correctamente.
+* Si selecciona **Ver página como publicada** en las acciones de la barra de encabezado, se mostrará la página correctamente.
 
 ### Altura al 100% {#height}
 

@@ -19,34 +19,34 @@ ht-degree: 15%
 
 ## Objetivo {#objective}
 
-En la siguiente sección se describe cómo crear canales en el proveedor de contenido de Screens, una vez que haya configurado [Proveedor de servicios de Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en).
+En la sección siguiente se describe cómo crear canales en el proveedor de contenido de Screens, una vez que haya configurado [el proveedor de servicios de Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en).
 
 ## Uso del proveedor de contenido de Screens {#screens-content-provider}
 
 >[!NOTE]
 >**Requisitos previos**
->Antes de empezar a leer esta sección, consulte [Configuración del proveedor de servicios de Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html) para aprender a navegar a esta interfaz de usuario desde el proveedor de servicios de Screens.
+>Antes de comenzar a leer esta sección, consulte [Configuración del proveedor de servicios de Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html) para obtener información sobre cómo navegar a esta interfaz de usuario desde el proveedor de servicios de Screens.
 
-Siga los pasos a continuación para iniciar sesión en el proveedor de contenido de Screens:
+Siga los pasos a continuación para iniciar sesión en Screens Content Provider:
 
-1. Vaya a [Adobe Experience Cloud](https://experience.adobe.com) Página de inicio.
+1. Vaya a la página de inicio de [Adobe Experience Cloud](https://experience.adobe.com).
 
 1. Seleccione **Experience Manager**.
    ![Página de aterrizaje para acceder rápidamente a las áreas de Experience Manager.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
-1. Clic **Launch** desde la tarjeta de Cloud Manager. Cuando haya iniciado sesión correctamente en [!UICONTROL Cloud Manager], está listo para usar la interfaz de usuario (IU).
-   ![Cuatro áreas de Cloud Manager: Brand Portal, Cloud Manager, Cloud Acceleration Manager y Distribución de software; cada una muestra su propia botón de Launch.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+1. Haga clic en **Iniciar** desde la tarjeta de Cloud Manager. Una vez que haya iniciado sesión correctamente en [!UICONTROL Cloud Manager], ya puede usar la interfaz de usuario (IU).
+   ![Cuatro áreas de Cloud Manager (Brand Portal, Cloud Manager, Cloud Acceleration Manager y Distribución de software), cada una con su propia botón de Launch.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
-1. Seleccione el programa as a Cloud Service para Screens y haga clic en el icono, como se muestra a continuación, para abrir el de Cloud Manager **Información general** para ese programa específico.
+1. Seleccione el programa para Screens as a Cloud Service y haga clic en el icono, como se muestra a continuación, para abrir la página **Información general** de Cloud Manager para ese programa específico.
 
-   ![El icono de la página Información general de Cloud Manager se muestra en el extremo izquierdo de una barra de herramientas.](/help/screens-cloud/assets/configure/screens-cp-1.png)
+   ![El icono de la página Información general de Cloud Manager aparece en el extremo izquierdo de una barra de herramientas.](/help/screens-cloud/assets/configure/screens-cp-1.png)
 
    >[!NOTE]
-   >Si no ha creado ningún programa, consulte [Primer inicio de sesión en Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html). El tema le guía a través de la adición de un programa para Pantallas as a Cloud Service en Cloud Manager.
+   >Si no ha creado ningún programa, consulte [Primer inicio de sesión en Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html). El tema le guía a través del proceso de agregar un programa para Screens as a Cloud Service, en Cloud Manager.
 
-1. Seleccione el vínculo en la **Entornos** para poder acceder al proveedor de contenido de Screens.
+1. Seleccione el vínculo de la tarjeta **Entornos** para poder acceder al proveedor de contenido de Screens.
 
-   ![Vínculo resaltado desde la tarjeta Entornos que le permite acceder al proveedor de contenido de Screens.](/help/screens-cloud/assets/configure/screens-cp-2.png)
+   ![Vínculo resaltado de la tarjeta Entornos que le permite acceder al proveedor de contenido de Screens.](/help/screens-cloud/assets/configure/screens-cp-2.png)
 
    Una vez que haya iniciado sesión en el proveedor de contenido de Screens, vaya a Screens > Proveedor de contenido. Ahora está listo para crear su contenido para la reproducción de contenido.
 
@@ -58,4 +58,4 @@ Siga los pasos a continuación para iniciar sesión en el proveedor de contenido
 
 ## Siguientes pasos {#whats-next}
 
-Ahora que ha aprendido a navegar hasta el proveedor de contenido de Screens, continúe con su recorrido as a Cloud Service de Screens revisando el documento, [Creación y administración de un proyecto en Pantallas as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html).
+Ahora que ha aprendido a navegar al proveedor de contenido de Screens, continúe con su recorrido de as a Cloud Service de Screens revisando el documento [Creación y administración de un proyecto en Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html).

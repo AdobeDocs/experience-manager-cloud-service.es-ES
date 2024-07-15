@@ -44,7 +44,7 @@ Para buscar y filtrar sus recursos:
 1. Si es necesario, puede quitar el filtro de ubicación (seleccione **X** en el filtro que desea eliminar) para buscar en todas las consolas/tipos de recursos.
 1. Los resultados se muestran agrupados según la consola y el tipo de recurso relacionado.
 
-   Puede seleccionar un recurso específico (para realizar más acciones), o profundizar seleccionando el tipo de recurso necesario; por ejemplo, **Ver todos los sitios**:
+   Puede seleccionar un recurso específico (para realizar más acciones), o explorar en profundidad seleccionando el tipo de recurso necesario; por ejemplo, **Ver todos los sitios**:
 
    ![Resultados de la búsqueda](/help/sites-cloud/authoring/assets/search-results.png)
 
@@ -59,7 +59,7 @@ Para buscar y filtrar sus recursos:
    * Búsquedas guardadas
    * Directorio de búsqueda
    * Etiquetas
-   * Criterios de búsqueda; por ejemplo, fechas de modificación, estado de publicación o estado de Live Copy.
+   * Criterios de búsqueda; por ejemplo, fechas de modificación, estado de Publish o estado de Live Copy.
 
    >[!NOTE]
    >

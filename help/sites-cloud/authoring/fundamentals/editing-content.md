@@ -75,7 +75,7 @@ La barra de herramientas ofrece acceso a numerosas opciones. En función del con
 
 * **Selector de modo**
 
-  Muestra el actual [modo](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) y permite seleccionar otro modo, como edición, diseño, deformación de tiempo o segmentación.
+  Muestra el [modo](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) actual y le permite seleccionar otro modo, como edición, diseño, deformación de tiempo o segmentación.
 
   ![Botón Selector de modo](/help/sites-cloud/authoring/assets/mode-selector.png)
 
@@ -87,7 +87,7 @@ La barra de herramientas ofrece acceso a numerosas opciones. En función del con
 
 * **Anotar**
 
-  Le permite agregar [anotaciones](/help/sites-cloud/authoring/fundamentals/annotations.md) a la página cuando revise una página. Después de la primera anotación, el icono cambia a un número que indica el número de anotaciones que tiene la página.
+  Le permite agregar [anotaciones](/help/sites-cloud/authoring/fundamentals/annotations.md) a la página al revisar una página. Después de la primera anotación, el icono cambia a un número que indica el número de anotaciones que tiene la página.
 
   ![Botón Anotación](/help/sites-cloud/authoring/assets/annotations.png)
 
@@ -151,9 +151,9 @@ Puede agregar un componente nuevo mediante el cuadro **Arrastrar componentes aqu
 
      ![Insertar un componente](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
-   * Si está en un dispositivo de escritorio, puede hacer doble clic en el **Arrastre los componentes aquí** cuadro.
+   * Si está en un dispositivo de escritorio, puede hacer doble clic en el cuadro **Arrastrar componentes aquí**.
 
-   * El **Insertar nuevo componente** Abrir el cuadro de diálogo para seleccionar el componente requerido:
+   * Se abre el cuadro de diálogo **Insertar nuevo componente** para que pueda seleccionar el componente requerido:
 
      ![Cuadro de diálogo Insertar nuevo componente](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
@@ -173,7 +173,7 @@ Para crear un componente arrastrando uno de los tipos de activo anteriores:
 
    Se crea en la posición requerida un componente apropiado para el tipo de recurso y que contiene el recurso seleccionado.
 
-1. [Editar](#edit-content) Seleccione el componente si es necesario.
+1. [Editar](#edit-content) el componente si es necesario.
 
 >[!NOTE]
 >
@@ -255,13 +255,13 @@ Las acciones disponibles para el usuario se muestran según corresponda y es pos
 
 * **Diseño**
 
-  Esto permite modificar la variable [layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) del componente seleccionado. Esta opción se aplica únicamente al componente seleccionado y no activa el [modo de diseño](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) para toda la página.
+  Esto le permite modificar [el diseño](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) del componente seleccionado. Esta opción se aplica únicamente al componente seleccionado y no activa el [modo de diseño](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) para toda la página.
 
   ![Botón Diseño](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 * **Conversión en una variación de fragmento de experiencia**
 
-  Esto permite crear una [fragmento de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) del componente seleccionado o añadirlo a un fragmento de experiencia existente.
+  Esto le permite crear un [fragmento de experiencia](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) a partir del componente seleccionado o agregarlo a un fragmento de experiencia existente.
 
   ![Convertir para el botón Fragmentos de experiencias](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
@@ -341,7 +341,7 @@ En vez de pasar repetidamente de la edición al [modo de diseño](/help/sites-cl
 
    ![La barra de herramientas de componentes de un componente de página](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
 
-   Seleccione el **Diseño** acción para ajustar el diseño del componente.
+   Seleccione la acción **Diseño** para ajustar el diseño del componente.
 
    ![Botón Diseño de la barra de herramientas de componentes](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 

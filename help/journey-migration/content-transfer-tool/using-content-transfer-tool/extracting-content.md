@@ -27,7 +27,7 @@ Siga los pasos a continuación para extraer el conjunto de migración de la herr
 >[!NOTE]
 >Si se utiliza Amazon S3, el almacén de datos de Azure o el almacén de datos de archivos como tipo de almacén de datos, puede ejecutar el paso opcional previo a la copia para aumentar la velocidad de la fase de extracción. El paso previo a la copia es más eficaz para la primera extracción e ingesta completas. Consulte [Gestión de repositorios de contenido grandes](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) para obtener más información.
 
-1. Seleccione un conjunto de migración de la **Transferencia de contenido** y haga clic en **Extract** para iniciar la extracción.
+1. Seleccione un conjunto de migración del asistente **Transferencia de contenido** y haga clic en **Extraer** para iniciar la extracción.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
 
@@ -36,17 +36,17 @@ Siga los pasos a continuación para extraer el conjunto de migración de la herr
 
    >[!IMPORTANT]
    >
-   >Asegúrese de que la clave de extracción sea válida y no esté cerca de su caducidad. Si está cerca de su fecha de caducidad, puede renovar la clave de extracción seleccionando el conjunto de migración y haciendo clic en Propiedades. Clic **Renovar**. Esto le lleva a Cloud Acceleration Manager, donde puede hacer clic en **Copiar clave de extracción**. Cada vez que haga clic en **Copiar clave de extracción**, se genera una nueva clave de extracción que es válida durante 14 días desde el momento de la creación.
+   >Asegúrese de que la clave de extracción sea válida y no esté cerca de su caducidad. Si está cerca de su fecha de caducidad, puede renovar la clave de extracción seleccionando el conjunto de migración y haciendo clic en Propiedades. Haga clic en **Renovar**. Esto lo lleva a Cloud Acceleration Manager, donde puede hacer clic en **Copiar clave de extracción**. Cada vez que hace clic en **Copiar clave de extracción**, se genera una nueva clave de extracción que es válida durante 14 días desde el momento de la creación.
    >![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
 
-1. Esto abre el cuadro de diálogo Extracción. Clic **Extract** para iniciar la fase de extracción.
+1. Esto abre el cuadro de diálogo Extracción. Haga clic en **Extraer** para iniciar la fase de extracción.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
 
    >[!NOTE]
-   >Opcionalmente, puede sobrescribir el contenedor de ensayo durante la fase de extracción. If **Sobrescribir contenedor de almacenamiento provisional** está desactivado, puede acelerar las extracciones para migraciones posteriores en las que las rutas de contenido o la configuración de incluir versiones no han cambiado. Sin embargo, si las rutas de contenido o la configuración de incluir versiones han cambiado, **Sobrescribir contenedor de almacenamiento provisional** debe estar activado.
+   >Opcionalmente, puede sobrescribir el contenedor de ensayo durante la fase de extracción. Si **Sobrescribir contenedor de almacenamiento provisional** está deshabilitado, puede acelerar las extracciones en migraciones posteriores en las que las rutas de contenido o la configuración de las versiones de inclusión no hayan cambiado. Sin embargo, si la configuración de las rutas de contenido o las versiones de inclusión ha cambiado, **Sobrescribir contenedor de almacenamiento provisional** debe estar habilitado.
 
-1. El **Extracción** ahora muestra el campo **EN EJECUCIÓN** estado para indicar que la extracción está en curso.
+1. El campo **Extracción** ahora muestra el estado **EN EJECUCIÓN** para indicar que la extracción está en curso.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam15.png)
 
@@ -54,11 +54,11 @@ Siga los pasos a continuación para extraer el conjunto de migración de la herr
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
 
-   También puede monitorizar el progreso de la fase de extracción desde Cloud Acceleration Manager visitando la página de transferencia de contenido y verla con más detalle haciendo clic en **...** > **Ver detalles**.
+   También puede monitorizar el progreso de la fase de extracción desde Cloud Acceleration Manager. Para ello, visite la página de transferencia de contenido y véala con más detalle haciendo clic en **...** > **Ver detalles**.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
 
-1. Cuando finalice la extracción, revise las otras columnas como **Origen** y **Rutas** para obtener más información sobre el conjunto de migración que ha rellenado. Clic **...** > **Ver detalles** para ver los detalles, incluida la duración de cada paso de la extracción. Vea este cuadro de diálogo durante la extracción para poder ver cómo progresan los pasos.
+1. Cuando finalice la extracción, revise las otras columnas como **Source** y **Rutas** para obtener detalles del conjunto de migración que ha rellenado. Haciendo clic en **...** > **Ver detalles** para ver los detalles, incluida la duración de cada paso de la extracción. Vea este cuadro de diálogo durante la extracción para poder ver cómo progresan los pasos.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18b.png)
 
@@ -75,11 +75,11 @@ Una vez completado el proceso de extracción, se puede transferir contenido delt
 
 Complete los siguientes pasos:
 
-1. Vaya a **Transferencia de contenido** y seleccione el conjunto de migración para el que desea realizar la extracción superior. Haga clic en **Extracción** para iniciar la extracción superior.
+1. Vaya al asistente **Transferencia de contenido** y seleccione el conjunto de migración para el que desea realizar la extracción superior. Haga clic en **Extracción** para iniciar la extracción superior.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam19.png)
 
-1. El **Extracción del conjunto de migración** aparece el cuadro de diálogo. Clic **Extract**.
+1. Aparece el cuadro de diálogo **extracción de conjunto de migración**. Haga clic en **Extraer**.
 
    >[!IMPORTANT]
    >Se debe desactivar la opción **Sobrescribir el contenedor de ensayo durante la extracción** .
@@ -88,4 +88,4 @@ Complete los siguientes pasos:
 
 ## Siguientes pasos {#whats-next}
 
-Después de haber aprendido a extraer contenido del origen en la herramienta de transferencia de contenido, ahora está listo para aprender el proceso de ingesta en la herramienta de transferencia de contenido. Consulte [Ingesta de contenido en Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) donde puede aprender a ingerir el conjunto de migración desde la herramienta de transferencia de contenido.
+Después de haber aprendido a extraer contenido de Source en la herramienta de transferencia de contenido, ahora está listo para aprender el proceso de ingesta en la herramienta de transferencia de contenido. Consulte [Ingesta de contenido en Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md), donde podrá aprender a ingerir el conjunto de migración desde la herramienta de transferencia de contenido.

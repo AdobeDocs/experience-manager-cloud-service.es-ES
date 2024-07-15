@@ -60,11 +60,11 @@ El uso de una plantilla para crear un sitio es sencillo.
 
    ![Creación de un sitio a partir de una plantilla](../assets/create-site-from-template.png)
 
-1. En el asistente Crear sitio, seleccione una plantilla existente en el panel izquierdo o en **Importar** en la parte superior de la columna izquierda para importar una plantilla nueva.
+1. En el asistente Crear sitio, seleccione una plantilla existente en el panel izquierdo o en **Importar** en la parte superior de la columna izquierda para importar una nueva plantilla.
 
    ![Asistente de creación de sitios](../assets/site-creation-wizard.png)
 
-   1. Si elige importar, en el explorador de archivos, busque la plantilla que desee utilizar y seleccione **Cargar**.
+   1. Si elige importar, en el explorador de archivos, busque la plantilla que desee usar y seleccione **Cargar**.
 
    1. Una vez cargado, aparece en la lista de plantillas disponibles.
 
@@ -78,7 +78,7 @@ El uso de una plantilla para crear un sitio es sencillo.
    * El nombre del sitio forma parte de la dirección URL.
    * El nombre del sitio debe cumplir con las [convenciones de asignación de nombres de páginas de AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices).
 
-1. Seleccionar **Crear** y el sitio se crea a partir de la plantilla del sitio.
+1. Seleccione **Crear** y el sitio se creará a partir de la plantilla del sitio.
 
    ![Detalles del nuevo sitio](../assets/create-site-details.png)
 
@@ -96,8 +96,8 @@ El uso de una plantilla para crear un sitio es sencillo.
 
 Si su sitio requiere personalización más allá de las plantillas disponibles, tiene varias opciones.
 
-* Si se debe ajustar la estructura del sitio o el contenido inicial, [la plantilla del sitio se puede personalizar para satisfacer sus necesidades](site-templates.md).
-* Si se debe ajustar el estilo del sitio, [el tema del sitio se puede descargar y personalizar](/help/journey-sites/quick-site/overview.md).
-* Si es necesario ajustar la funcionalidad del sitio, [el sitio se puede personalizar completamente](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+* Si es necesario ajustar la estructura del sitio o el contenido inicial, [la plantilla del sitio se puede personalizar para satisfacer sus necesidades](site-templates.md).
+* Si es necesario ajustar el estilo del sitio, [el tema del sitio se puede descargar y personalizar](/help/journey-sites/quick-site/overview.md).
+* Si se debe ajustar la funcionalidad del sitio, [el sitio se puede personalizar completamente](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 Cualquier personalización debe realizarse con el apoyo de un equipo de desarrollo.

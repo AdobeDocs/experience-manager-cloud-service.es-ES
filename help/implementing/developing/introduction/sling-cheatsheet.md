@@ -15,4 +15,4 @@ ht-degree: 9%
 
 ![Explicación de la resolución de scripts de Apache Sling.](assets/sling-cheatsheet-01.png)
 
-![Uso de SlingPostServlet: este es el controlador predeterminado para las solicitudes de los POST; puede hacer casi cualquier cosa.](assets/sling-cheatsheet-02.png)
+![Uso de SlingPostServlet: este es el controlador predeterminado para sus solicitudes de POST; puede hacer casi cualquier cosa.](assets/sling-cheatsheet-02.png)

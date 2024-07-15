@@ -1,6 +1,6 @@
 ---
-title: Asignación de canales a una pantalla en Pantallas as a Cloud Service
-description: En esta página se describe cómo asignar un canal a una visualización en Pantallas as a Cloud Service.
+title: Asignación de canales a una pantalla en Screens as a Cloud Service
+description: En esta página se describe cómo asignar un canal a una visualización en Screens as a Cloud Service.
 exl-id: ba001c18-7b05-4ae2-aa7f-9ebb320fedd0
 feature: Authoring Screens
 role: Admin, Developer, User
@@ -11,7 +11,7 @@ ht-degree: 2%
 
 ---
 
-# Asignación de canales a una pantalla en Pantallas as a Cloud Service {#assign-channel-displays-screens-cloud}
+# Asignación de canales a una pantalla en Screens as a Cloud Service {#assign-channel-displays-screens-cloud}
 
 Una vez completada la configuración del proyecto, debe asignar el canal a una pantalla para ver el contenido.
 
@@ -30,13 +30,13 @@ Antes de realizar los pasos siguientes para asignar un canal a una pantalla, deb
 
 Siga los pasos a continuación para asignar un canal a una visualización:
 
-1. Vaya al proveedor de servicios de Screens y seleccione **Visualizaciones** en el panel de navegación izquierdo.
+1. Vaya al proveedor de servicios de Screens y seleccione **Pantallas** en el panel de navegación izquierdo.
 
-1. Clic **Asignar canal** a la pantalla.
+1. Haga clic en **Asignar canal** a la pantalla.
 
    ![imagen](/help/screens-cloud/assets/display/assignchannel-1.png)
 
-1. Rellene los campos siguientes desde **Asignar un canal** Cuadro de diálogo.
+1. Rellene los campos siguientes del cuadro de diálogo **Asignar un canal**.
 
    ![imagen](/help/screens-cloud/assets/display/assignchannel-2.png)
 
@@ -48,7 +48,7 @@ Siga los pasos a continuación para asignar un canal a una visualización:
 
    1. Seleccione la fecha de inicio y la fecha de finalización desde **Activation**.
 
-1. Clic **+ Agregar periodicidad** para añadir una programación de periodicidad para el canal.
+1. Haga clic en **+ Agregar periodicidad** para agregar una programación de periodicidad para su canal.
 
    ![imagen](/help/screens-cloud/assets/create-content/recurrence-1.png)
 
@@ -57,10 +57,10 @@ Siga los pasos a continuación para asignar un canal a una visualización:
 
    Puede establecer las siguientes opciones:
 
-   * **Nombre**: Título de la programación de periodicidad.
-   * **Repetir**: Seleccione si la programación se ejecuta diariamente, semanalmente, mensualmente o anualmente.
-   * **Inicio**: la hora de inicio de la programación.
-   * **Fin**: la hora de finalización de la programación. Puede establecerlo por tiempo o duración.
+   * **Nombre**: Título de su horario de periodicidad.
+   * **Repetir**: Elija si la programación se ejecuta diariamente, semanalmente, mensualmente o anualmente.
+   * **Inicio**: La hora de inicio de su programación.
+   * **Fin**: La hora de finalización de su programación. Puede establecerlo por tiempo o duración.
    * **Hora**: la programación finaliza a una hora especificada.
    * **Duración**: la programación se ejecuta durante un período de tiempo determinado en horas o minutos.
 
@@ -71,4 +71,4 @@ Siga los pasos a continuación para asignar un canal a una visualización:
 
 ## Siguientes pasos {#whats-next}
 
-Ahora que ha asignado el canal a una pantalla, debe continuar con el recorrido as a Cloud Service de Screens revisando el documento a continuación [AEM as a Cloud Service Instalación y configuración del reproductor de Screens para su uso en](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
+Ahora que ha asignado el canal a una pantalla, debe continuar con el as a Cloud Service recorrido de Screens revisando el documento [Instalación y configuración del reproductor de Screens para AEM as a Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).

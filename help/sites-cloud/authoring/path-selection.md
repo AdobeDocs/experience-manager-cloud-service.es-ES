@@ -18,7 +18,7 @@ A menudo, durante la creación es necesario seleccionar otro recurso, como cuand
 
 ## Campos de rutas   {#path-fields}
 
-El ejemplo que se utiliza aquí a modo de ilustración se corresponde con el componente de imagen. Para obtener más información sobre cómo utilizar y editar componentes, consulte [Componentes para la creación de páginas.](/help/sites-cloud/authoring/page-editor/components.md)
+El ejemplo que se utiliza aquí a modo de ilustración se corresponde con el componente de imagen. Para obtener más información acerca de cómo usar y editar componentes, vea [Componentes para la creación de páginas.](/help/sites-cloud/authoring/page-editor/components.md)
 
 Los campos de rutas de acceso disponen de las funciones de completado automático y de predicción de texto para que la localización de recursos resulte más sencilla.
 
@@ -32,13 +32,13 @@ También puede empezar a escribir en el campo de rutas, y AEM le ofrecerá rutas
 
 ## Navegador de rutas {#path-browser}
 
-El navegador de rutas está organizado como la variable [vista de columna](/help/sites-cloud/authoring/basic-handling.md#column-view) de la [**Sites** consola,](/help/sites-cloud/authoring/sites-console/introduction.md) , lo que permite una selección más detallada de los recursos.
+El explorador de rutas está organizado como la [vista de columna](/help/sites-cloud/authoring/basic-handling.md#column-view) de la consola [**Sitios**,](/help/sites-cloud/authoring/sites-console/introduction.md) lo que permite una selección más detallada de los recursos.
 
 ![Navegador de rutas](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* Una vez seleccionado un recurso, la variable **Seleccionar** en la parte superior derecha del cuadro de diálogo se activa.
-   * Seleccione para confirmar la selección o **Cancelar** para cancelar.
-* Si el contexto permite la selección de varios recursos, al seleccionar un recurso también se activa la variable **Seleccionar** , pero también añade un recuento del número de recursos seleccionados a la esquina superior derecha de la ventana.
+* Una vez seleccionado un recurso, se activa el botón **Seleccionar** en la parte superior derecha del cuadro de diálogo.
+   * Seleccione para confirmar la selección o **Cancelar** para anular.
+* Si el contexto permite la selección de varios recursos, al seleccionar un recurso también se activa el botón **Seleccionar**, pero también se agrega un recuento del número de recursos seleccionados a la esquina superior derecha de la ventana.
    * Haga clic en la **X** junto al número para anular toda la selección.
 * Cuando navega por el árbol, su ubicación se refleja en las rutas de exploración en la parte superior del cuadro de diálogo.
    * Estas rutas de exploración también se pueden utilizar para saltar rápidamente dentro de la jerarquía de recursos.

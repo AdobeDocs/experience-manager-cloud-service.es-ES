@@ -1,6 +1,6 @@
 ---
-title: '''[!DNL Live Search] CIF Página de lista de productosComponente de'
-description: CIF Uso de componentes de para habilitar [!DNL Live Search] AEM Componente de página de lista de productos en un sitio de
+title: CIF '[!DNL Live Search] componente de la página de lista de productos de la lista de productos'
+description: CIF AEM Uso de componentes de la lista de productos para habilitar el componente de página de lista de productos  [!DNL Live Search] en un sitio de la lista de productos de la lista de productos de la
 exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
 feature: Commerce Integration Framework
 role: Admin
@@ -11,21 +11,21 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] CIF Componente {#live-search-cif-component}
+# CIF [!DNL Live Search] Componente de {#live-search-cif-component}
 
 Live Search para Adobe Commerce ofrece una experiencia de búsqueda rápida, relevante e intuitiva sin coste adicional. Live Search con tecnología Adobe Sensei usa inteligencia artificial y algoritmos de aprendizaje automático para realizar un análisis profundo de los datos agregados del visitante. Cuando se combinan estos datos con su catálogo de Adobe Commerce, las experiencias de compra resultan relevantes y personalizadas.
 
-AEM CIF En este tema se describe cómo utilizar un componente de para implementar el [!DNL Live Search] AEM Widget de la página de lista de productos (PLP) en el sitio de la.
+AEM CIF AEM En este tema se describe cómo utilizar un componente de la lista de productos (PLP) de la clase de la página de la lista de productos () de la clase [!DNL Live Search] para implementar el widget de la página de lista de productos (PLP) en el sitio del usuario.
 
 ## Requisitos previos {#prerequisites}
 
-En este tema se da por hecho que tiene un [AEM entorno de](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=es) configurado.
+AEM En este tema se da por hecho que tiene configurado un [entorno de trabajo](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=es) local.
 
-El componente PLP requiere lo siguiente [[!DNL Live Search] CIF Popover componente](live-search-popover.md) para instalar. El widget PLP requiere una variable de sesión del explorador generada por la ventana emergente.
+CIF El componente PLP requiere que se instale [[!DNL Live Search] Popover componente de](live-search-popover.md). El widget PLP requiere una variable de sesión del explorador generada por la ventana emergente.
 
 ## Compositor de actualizaciones {#update-composer}
 
-Añadir módulos de eventos a `ui.frontend/package.json`.
+Agregar módulos de eventos a `ui.frontend/package.json`.
 
 En la línea 27, cambie:
 
@@ -54,11 +54,11 @@ hasta:
 
 ## Cambios de archivos {#files-changes}
 
-Se deben actualizar varios archivos para habilitar [!DNL Live Search] funcionalidad. Edite los siguientes archivos. Los números de línea pueden ser ligeramente diferentes a los que se muestran aquí.
+Se deben actualizar varios archivos para habilitar la funcionalidad [!DNL Live Search]. Edite los siguientes archivos. Los números de línea pueden ser ligeramente diferentes a los que se muestran aquí.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/clientlibs/clientlib-cif/.content.xml
 
-  Añadir `core.cif.productlist.v1` a la `embed` línea.
+  Anexe `core.cif.productlist.v1` a la línea `embed`.
 
   ```
   embed="[core.cif.components.common,core.cif.components.product.v3,core.cif.components.productcarousel.v1,core.cif.components.productcollection.v2,core.cif.components.productteaser.v1,core.cif.components.searchbar.v2,core.cif.components.header.v1,core.cif.components.carousel.v1,core.cif.components.categorycarousel.v1,core.cif.components.featuredcategorylist.v1,core.cif.components.storefront-events.v1,core.cif.components.extensions.product-recs.storefront-events-collector.v1,core.wcm.components.commons.site.link,core.cif.productlist.v1]"
@@ -66,7 +66,7 @@ Se deben actualizar varios archivos para habilitar [!DNL Live Search] funcionali
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/.content.xml
 
-  Creación de un archivo `.content.xml`:
+  Crear un archivo `.content.xml`:
 
   ```xml
   <?xml version="1.0" encoding="UTF-8"?>
@@ -79,7 +79,7 @@ Se deben actualizar varios archivos para habilitar [!DNL Live Search] funcionali
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/css.txt
 
-  Cree el archivo `css.txt`:
+  Crear el archivo `css.txt`:
 
   ```text
   #base=css
@@ -89,7 +89,7 @@ Se deben actualizar varios archivos para habilitar [!DNL Live Search] funcionali
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/css/productlist.css
 
-  Cree el archivo `productlist.css`
+  Crear el archivo `productlist.css`
 
   ```css
     /* #search-plp-root */
@@ -118,7 +118,7 @@ Se deben actualizar varios archivos para habilitar [!DNL Live Search] funcionali
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/js.txt
 
-  Cree el archivo `js.txt`:
+  Crear el archivo `js.txt`:
 
   ```text
   js/productlist.js
@@ -126,7 +126,7 @@ Se deben actualizar varios archivos para habilitar [!DNL Live Search] funcionali
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/js/productlist.js
 
-  Cree el archivo `productlist.js`:
+  Crear el archivo `productlist.js`:
 
   ```javascript
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -295,7 +295,7 @@ Se deben actualizar varios archivos para habilitar [!DNL Live Search] funcionali
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchresults/.content.xml
 
-  Editar `.content.xml` en la línea 6:
+  Editar `.content.xml` en línea 6:
 
   ```xml
   sling:resourceSuperType="venia/components/commerce/productlist"
@@ -311,7 +311,7 @@ Se deben actualizar varios archivos para habilitar [!DNL Live Search] funcionali
 
 * ui.content/src/main/content/jcr_root/content/venia/us/en/search/.content.xml
 
-  Editar `.content.xml` en la línea 26:
+  Editar `.content.xml` en línea 26:
 
   ```xml
   sling:resourceType="venia/components/commerce/productlist"
@@ -319,7 +319,7 @@ Se deben actualizar varios archivos para habilitar [!DNL Live Search] funcionali
 
 * ui.frontend/src/main/components/App/App.js
 
-  Editar `App.js` en la línea 47, justo encima del `../../site/main.scss`:
+  Editar `App.js` en la línea 47, justo encima de `../../site/main.scss`:
 
   ```javascript
   import '@adobe/magento-storefront-event-collector';
@@ -327,7 +327,7 @@ Se deben actualizar varios archivos para habilitar [!DNL Live Search] funcionali
 
 * ui.tests/test-module/specs/venia/productlist-dialog.js
 
-  Editar `productlist-dialog.js` y cambiar `describe` hasta `describe.skip` en la línea 20:
+  Editar `productlist-dialog.js` y cambiar `describe` a `describe.skip` en la línea 20:
 
   ```javascript
   describe.skip('Product List Component Dialog', function () {
@@ -337,11 +337,11 @@ Se deben actualizar varios archivos para habilitar [!DNL Live Search] funcionali
 
 Puede haber algunas categorías en las que se desee la categoría predeterminada o la página del catálogo en lugar de utilizar el widget PLP. AEM En la práctica, estas páginas de categoría deben configurarse manualmente.
 
-1. En la página Autor, seleccione una plantilla de página de categoría. _Tienda Venia - Inicio_ > _Página del catálogo_ > _Tienda Venia - Página de categoría_ y seleccione &quot;Ver el aspecto&quot; o cree una nueva plantilla de página.
+1. En la página Autor, seleccione una plantilla de página de categoría. _Tienda Venia - Inicio_ > _Página del catálogo_ > _Tienda Venia - Página de categoría_ y selecciona &quot;Ver el aspecto&quot; o crea una nueva plantilla de página.
 
 ![Seleccione la plantilla](../assets/cif-widget-1.jpg)
 
-1. Haga clic en _Propiedades_ y seleccione la sección _Comercio_ pestaña.
+1. Haga clic en la sección _Propiedades_ y seleccione la pestaña _Commerce_.
 
 ![Elegir propiedades](../assets/cif-widget-2.jpg)
 

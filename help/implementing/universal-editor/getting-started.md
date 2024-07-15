@@ -40,7 +40,7 @@ Para poder instrumentar la aplicación para su uso con el editor universal, debe
 @adobe/universal-editor-cors
 ```
 
-Para activar la instrumentación, se debe añadir la siguiente importación a su `index.js`.
+Para activar la instrumentación, se debe agregar la siguiente importación a su `index.js`.
 
 ```javascript
 import "@adobe/universal-editor-cors";
@@ -56,10 +56,10 @@ Si no va a implementar una aplicación React o requiere un procesamiento del lad
 
 Siempre se recomienda la versión más reciente, pero se puede hacer referencia a las versiones anteriores del servicio en caso de cambios importantes.
 
-* `https://universal-editor-service.experiencecloud.live/corslib/LATEST` - La última biblioteca UE CORS
-* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST` - La última biblioteca UE CORS en la versión 2.x
-* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST` - La última biblioteca UE CORS en la versión 2.1.x
-* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1`- La versión exacta UE CORS lib 2.1.1
+* `https://universal-editor-service.experiencecloud.live/corslib/LATEST`: la última biblioteca UE CORS
+* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST`: la última biblioteca UE CORS en la versión 2.x
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST`: la última biblioteca UE CORS en la versión 2.1.x
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1`: la versión 2.1.1 exacta de la biblioteca UE CORS
 
 ## Añada las configuraciones de OSGi necesarias {#osgi-configurations}
 
@@ -109,9 +109,9 @@ Las conexiones que se utilizan en la aplicación se almacenan como etiquetas `<m
 <meta name="urn:adobe:aue:<category>:<referenceName>" content="<protocol>:<url>">
 ```
 
-* `<category>` - Esta es una clasificación de la conexión con dos opciones.
+* `<category>`: esta es una clasificación de la conexión con dos opciones.
    * `system` - Para extremos de conexión
-   * `config` - Para [definir opciones de configuración opcionales](#configuration-settings)
+   * `config` - Para [definir la configuración opcional](#configuration-settings)
 * `<referenceName>`: se trata de un nombre corto que se reutiliza en el documento para identificar la conexión. P. ej., `aemconnection`
 * `<protocol>`: indica qué complemento de persistencia utilizar del servicio de persistencia del editor universal. P. ej., `aem`
 * `<url>`: esta es la URL del sistema en la que deben persistir los cambios. P. ej., `http://localhost:4502`
@@ -165,7 +165,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 ### Opciones de configuración {#configuration-settings}
 
-Puede usar el complemento `config` en el URN de la conexión para establecer los extremos de servicio y extensión si es necesario.
+Puede usar el prefijo `config` en el URN de conexión para establecer los extremos de servicio y extensión si es necesario.
 
 Si no desea utilizar el servicio de editor universal, que se aloja mediante Adobe, sino su propia versión alojada, puede establecerlo en una metaetiqueta. Para sobrescribir el extremo de servicio predeterminado que proporciona el Editor universal, establezca su propio extremo de servicio:
 
@@ -197,7 +197,7 @@ Para obtener más información acerca del editor universal, consulte estos docum
 
 * [Introducción al editor universal](introduction.md): descubra cómo el editor universal permite editar cualquier aspecto de los contenidos en varias implementaciones para ofrecer experiencias excepcionales, aumentar la velocidad de contenido y proporcionar una experiencia de desarrollador de última generación.
 * [Creación de contenido con el editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md): aprenda lo fácil e intuitivo que es para los autores de contenido crearlo con el editor universal.
-* [Publicación de contenido con el editor universal](/help/sites-cloud/authoring/universal-editor/publishing.md) - Descubra cómo el editor universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
+* [Publicación de contenido con el editor universal](/help/sites-cloud/authoring/universal-editor/publishing.md): aprenda cómo el editor universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
 * [Arquitectura del editor universal](architecture.md): obtenga información acerca de la arquitectura del editor universal y cómo fluyen los datos entre sus servicios y capas.
 * [Atributos y tipos](attributes-types.md): obtenga información acerca de los atributos y tipos de datos que requiere el editor universal.
 * [Autenticación del editor universal](authentication.md): obtenga información sobre cómo se autentica el editor universal.

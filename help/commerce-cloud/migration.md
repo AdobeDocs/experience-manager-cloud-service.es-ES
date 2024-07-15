@@ -17,19 +17,19 @@ Esta guía ayuda a identificar las áreas que debe actualizar para la migración
 
 ## CIF complemento de
 
-Para Experience Manager as a Cloud Service CIF, el complemento de integración de comercio de es la única solución de integración de comercio compatible para Adobe Commerce y soluciones de comercio de terceros. El complemento CIF se implementa automáticamente para los clientes de Experience Manager as a Cloud Service; no se necesita una implementación manual. Consulte [Introducción a AEM Commerce as a Cloud Service](getting-started.md).
+Para Experience Manager as a Cloud Service CIF, el complemento de integración de comercio es la única solución de integración de comercio compatible para Adobe Commerce y soluciones de comercio de terceros. El complemento CIF se implementa automáticamente para los clientes de Experience Manager as a Cloud Service; no se necesita una implementación manual. Consulte [Introducción a AEM Commerce as a Cloud Service](getting-started.md).
 
-CIF Para apoyar proyectos que implementen el Adobe de trabajo, proporcione [AEM CIF Componentes principales de](https://github.com/adobe/aem-core-cif-components).
+CIF Para admitir proyectos que implementen el Adobe AEM CIF de trabajo, proporcione [Componentes principales de la](https://github.com/adobe/aem-core-cif-components).
 
 El complemento CIF también está disponible para AEM 6.5 a través del [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html). Es compatible y proporciona las mismas características que el complemento CIF para Experience Manager as a Cloud Service: no se requieren ajustes.
 
-El CIF clásico con sus dependencias ya no está disponible. CIF El código que se basa en esta versión de utiliza `com.adobe.cq.commerce.api` CIF Las API de Java deben ajustarse al complemento de y a sus principios.
+El CIF clásico con sus dependencias ya no está disponible. CIF CIF El código que se basa en esta versión de la que usa `com.adobe.cq.commerce.api` API de Java debe ajustarse al complemento de la aplicación y a sus principios.
 
 CIF Ya no se puede instalar el conector de disponible anteriormente. CIF El código que se basa en este conector debe ajustarse al complemento de y a sus principios.
 
 ## Estructura del proyecto
 
-Conozca las [AEM Estructura del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=es) AEM y las características de los as a Cloud Service de la. Adapte la configuración del proyecto al diseño de AEM as a Cloud Service.
+AEM Conozca la [Estructura del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=es) y las características de AEM as a Cloud Service. Adapte la configuración del proyecto al diseño de AEM as a Cloud Service.
 AEM En comparación con las implementaciones de la versión 6.5 de, existen dos diferencias principales:
 
 * El paquete OSGI del cliente de GraphQL ya **no debe** incluirse en el proyecto AEM; se implementa mediante el complemento CIF
@@ -53,4 +53,4 @@ CIF Si utiliza el modelo de catálogo con la versión clásica de los productos,
 
 ## Interacción de compras y datos no almacenables en caché
 
-Las solicitudes del lado del cliente para datos e interacciones no almacenables en caché (por ejemplo, complementos al carro de compras, búsquedas) deben ir directamente al extremo de comercio (ya sea la solución de comercio o la capa de integración) a través de CDN/Dispatcher. AEM Elimine todas las llamadas en las que solo haya un proxy en el que se haya realizado la.
+Las solicitudes del lado del cliente para datos e interacciones no almacenables en caché (por ejemplo, complemento al carro, búsqueda) deben ir directamente al extremo de comercio (ya sea la solución de comercio o la capa de integración) a través de CDN/Dispatcher. AEM Elimine todas las llamadas en las que solo haya un proxy en el que se haya realizado la.

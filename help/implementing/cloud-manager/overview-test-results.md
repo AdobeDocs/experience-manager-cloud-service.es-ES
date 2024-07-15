@@ -29,7 +29,7 @@ Existen tres categorías de pruebas compatibles con las canalizaciones de Cloud 
 
 1. [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md)
 
-   * Las pruebas de auditoría de experiencia están habilitadas en todas las canalizaciones de producción de Cloud Manager y no se pueden omitir.
+   * Las pruebas de auditoría de experiencias están habilitadas en todas las canalizaciones de producción de Cloud Manager y no se pueden omitir.
 
 Estas pruebas pueden ser:
 

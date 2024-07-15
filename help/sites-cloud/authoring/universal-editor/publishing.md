@@ -31,7 +31,7 @@ Cuando se aloja de forma externa, la aplicación web debe garantizar que el cont
 
 La determinación de si el nivel de autor o publicación debe ser acceso se puede realizar mediante una simple afirmación condicional en la aplicación para elegir el autor apropiado o el punto final de publicación al detectar que se está abriendo en el editor.
 
-Otra opción es implementar la aplicación en dos entornos diferentes configurados de forma diferente, de modo que uno recupere su contenido del nivel de creación y otro que lo recupere del nivel de publicación. Para permitir que los autores abran la URL publicada en el Editor universal, se puede crear una pequeña secuencia de comandos para &quot;convertir&quot; la URL del lado de publicación a su equivalente en el entorno de creación (por ejemplo, anteponiendo una etiqueta `author` subdominio), de modo que los autores se redirijan automáticamente.
+Otra opción es implementar la aplicación en dos entornos diferentes configurados de forma diferente, de modo que uno recupere su contenido del nivel de creación y otro que lo recupere del nivel de publicación. Para permitir que los autores abran la dirección URL publicada en el Editor universal, se puede crear un pequeño script para &quot;convertir&quot; la dirección URL del lado de publicación a su equivalente en el entorno de creación (por ejemplo, anteponiendo un subdominio `author`), de modo que los autores se redirijan automáticamente.
 
 ## Resumen {#summary}
 

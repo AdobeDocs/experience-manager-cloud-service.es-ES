@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # Análisis de la estructura de fragmentos de contenido {#analyzing-content-fragments-structure}
 
-Los fragmentos de contenido están diseñados para [Envío sin encabezado mediante GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md). Esto significa que pueden tener una estructura de varias capas.
+Los fragmentos de contenido están diseñados para [entrega sin encabezado mediante GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md). Esto significa que pueden tener una estructura de varias capas.
 
 Experience Manager AEM () proporciona varios métodos para ver y analizar la estructura de los fragmentos.
 
@@ -29,7 +29,7 @@ La estructura de varias capas se crea mediante Referencias:
 
 ## Árbol de estructura {#structure-tree}
 
-Abra el **Árbol de estructura** de la barra de herramientas del editor para mostrar la estructura jerárquica del fragmento de contenido y sus referencias. Utilice el icono de vínculo para abrir las referencias.
+Abra la pestaña **Árbol de estructura** de la barra de herramientas del editor para mostrar la estructura jerárquica del fragmento de contenido y sus referencias. Utilice el icono de vínculo para abrir las referencias.
 
 Por ejemplo:
 

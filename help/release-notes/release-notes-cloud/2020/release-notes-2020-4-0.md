@@ -1,6 +1,6 @@
 ---
 title: Notas de la versión de Adobe Experience Manager as a Cloud Service para 2020.4.0
-description: "[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.4.0."
+description: "[!DNL Adobe Experience Manager] notas de la versión as a Cloud Service para 2020.4.0."
 exl-id: d98a3862-76fa-4b5b-b81a-333f5f532b67
 feature: Release Information
 role: Admin
@@ -19,7 +19,7 @@ Esta página describe las notas de la versión generales de [!DNL Experience Man
 
 La fecha de la versión de [!DNL Experience Manager] as a Cloud Service 2020.4.0 es el 9 de abril de 2020.
 
-## Novedades de los recursos de {#assets}
+## Novedades de Assets. {#assets}
 
 Obtenga información sobre las nuevas funciones, mejoras y correcciones de errores de [!DNL Experience Manager Assets] y [!DNL Dynamic Media] en la versión actual.
 
@@ -52,9 +52,9 @@ Obtenga información sobre las nuevas funciones, mejoras y correcciones de error
 >* [Acerca de Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Configurar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
 >* [Configurar Experience Manager para que funcione con Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
->* [Creación de un flujo de trabajo en Experience Manager mediante microservicios de recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+>* [Crear flujo de trabajo en Experience Manager mediante microservicios de recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
-## Novedades de Cloud Manager {#whats-new-cloud-manager}
+## Novedades de Cloud Manager. {#whats-new-cloud-manager}
 
 * Las URL de Publisher ya están disponibles en la página de Entorno de la interfaz de usuario de Cloud Manager.
 * Cambios en la navegación para permitir que el usuario edite, cambie o agregue un programa desde la página de información general de Cloud Manager.

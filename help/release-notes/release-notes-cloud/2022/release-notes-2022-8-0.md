@@ -39,15 +39,15 @@ Echa un vistazo al vídeo Información general sobre la versión de agosto de 20
 ### Nuevas funciones de [!DNL Sites] {#sites-features}
 
 * AEM El componente Correo electrónico permite la creación de contenido en el correo electrónico que luego se entrega como correo electrónico a través del Campaign Classic. El componente Correo electrónico principal:
-   * se basa en [Componente de Core WCM](https://github.com/adobe/aem-core-wcm-components) que admite plantillas editables y el sistema de estilos.
+   * se basa en el [componente principal de WCM](https://github.com/adobe/aem-core-wcm-components), que admite plantillas editables y el sistema de estilos.
    * proporciona 10 componentes listos para la producción optimizados para el correo electrónico (página, contenedor, título, texto, imagen, botón, teaser, fragmento de experiencia, fragmento de contenido, segmentación).
-   * proporciona una personalización y segmentación avanzadas, gracias a las [inserción de variables de Campaign](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) en la mayoría de los campos de diálogo, y a la [Componente Segmentación](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
-   * proporciona un resultado de HTML óptimo y fácil de usar gracias al [Inliner de estilos CSS](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), el [inliner de atributo de HTML](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), y el [desinfectante para HTML](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
+   * proporciona personalización y segmentación avanzadas, gracias a la [inserción de variables de Campaign](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) en la mayoría de los campos de diálogo y al flexible [componente Segmentación](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
+   * proporciona un resultado de HTML ideal para correo electrónico óptimo, gracias al [inliner de estilos CSS](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), el [inliner de atributos de HTML](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation) y el [desinfectante de HTML](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
    * permite la creación de los correos electrónicos en cualquier lugar.
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Sites] {#prerelease-features-sites}
 
-* El [Consola de fragmento de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) proporciona a los usuarios una opción para mostrar el número total de copias de idioma asociadas a un fragmento de contenido. Se ha proporcionado un acceso de 1 clic para ver todas las copias de idioma. Los usuarios también pueden filtrar la vista de tabla según la configuración regional de su interés.
+* La [Consola de fragmento de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) proporciona a los usuarios una opción para mostrar el número total de copias de idioma asociadas a un fragmento de contenido. Se ha proporcionado un acceso de 1 clic para ver todas las copias de idioma. Los usuarios también pueden filtrar la vista de tabla según la configuración regional de su interés.
 
 ![Idiomas de fragmentos de contenido](/help/release-notes/assets/cfconsole-languages.png)
 
@@ -55,7 +55,7 @@ Echa un vistazo al vídeo Información general sobre la versión de agosto de 20
 
 ### Nuevas funciones de [!DNL Assets] {#features-assets}
 
-* Ahora puede configurar Adobe Experience Manager Assets para que [restringir el tipo de recursos que los usuarios pueden cargar en función del tipo MIME](/help/assets/configure-asset-upload-restrictions.md).
+* Ahora puede configurar Adobe Experience Manager Assets para [restringir el tipo de recursos que los usuarios pueden cargar según el tipo MIME](/help/assets/configure-asset-upload-restrictions.md).
 
   ![Restricciones de carga de recursos](/help/assets/assets/asset-upload-restrictions.png)
 
@@ -76,7 +76,7 @@ Echa un vistazo al vídeo Información general sobre la versión de agosto de 20
 ### Novedades {#what-is-new-cif}
 
 * AEM AEM Asociación de páginas de productos a productos y categorías a través de las propiedades de página de la página de productos más información general en la cabina de productos
-  ![asociación de página de cabina de productos](/help/assets/CIF/product_cockpit_page_association.png)
+  ![asociación de páginas de la cabina de productos](/help/assets/CIF/product_cockpit_page_association.png)
 
 ## Cloud Manager {#cloud-manager}
 

@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Referencia de la API de JavaScript de ContextHub {#contexthub-javascript-api-reference}
 
-La API de JavaScript de ContextHub está disponible para los scripts cuando la variable [El componente ContextHub se ha añadido a la página](adding-contexthub.md).
+La API de JavaScript de ContextHub está disponible para los scripts cuando se agrega el componente [ContextHub a la página](adding-contexthub.md).
 
 ## Constantes de ContextHub {#contexthub-constants}
 
@@ -21,7 +21,7 @@ Valores constantes que define la API de JavaScript de ContextHub.
 
 ### Constantes de evento {#event-constants}
 
-En la tabla siguiente se enumeran los nombres y eventos que se producen en las tiendas de ContextHub. Consulte también [ContextHub.Utils.Eventing](#contexthub-utils-eventing).
+En la tabla siguiente se enumeran los nombres y eventos que se producen en las tiendas de ContextHub. Ver también [ContextHub.Utils.Eventing](#contexthub-utils-eventing).
 
 | Constante | Descripción | Valor |
 |---|---|---|
@@ -111,7 +111,7 @@ var geoloc = ContextHub.getStore("geolocation");
 
 ## ContextHub.SegmentEngine.Segment {#contexthub-segmentengine-segment}
 
-Representa un segmento de ContextHub. Utilice el `ContextHub.SegmentEngine.SegmentManager` para obtener segmentos.
+Representa un segmento de ContextHub. Use `ContextHub.SegmentEngine.SegmentManager` para obtener segmentos.
 
 ### Funciones (ContextHub.ContextEngine.Segment) {#functions-contexthub-contextengine-segment}
 
@@ -135,7 +135,7 @@ Devuelve los segmentos resueltos en el contexto actual. Esta función no tiene p
 
 ##### Devuelve {#returns-getresolvedsegments}
 
-Una matriz de `ContextHub.SegmentEngine.Segment` objetos.
+Matriz de `ContextHub.SegmentEngine.Segment` objetos.
 
 ## ContextHub.Store.Core {#contexthub-store-core}
 
@@ -145,7 +145,7 @@ La clase base para las tiendas de ContextHub.
 
 #### evento {#eventing}
 
-A [`ContextHub.Utils.Eventing`](#contexthub-utils-eventing) objeto. Utilice este objeto para enlazar funciones para almacenar eventos. Para obtener información sobre el valor predeterminado y la inicialización, consulte [`init(name,config)`](#init-name-config).
+Un objeto [`ContextHub.Utils.Eventing`](#contexthub-utils-eventing). Utilice este objeto para enlazar funciones para almacenar eventos. Para obtener información acerca del valor predeterminado y la inicialización, vea [`init(name,config)`](#init-name-config).
 
 #### name {#name}
 
@@ -153,30 +153,30 @@ El nombre de la tienda.
 
 #### persistencia {#persistence}
 
-A `ContextHub.Utils.Persistence` objeto. Para obtener información sobre el valor predeterminado y la inicialización, consulte [`init(name,config)`](#init-name-config).
+Un objeto `ContextHub.Utils.Persistence`. Para obtener información acerca del valor predeterminado y la inicialización, vea [`init(name,config)`](#init-name-config).
 
 ### Funciones (ContextHub.Store.Core) {#functions-contexthub-store-core}
 
 #### addAllItems(árbol, opciones) {#addallitems-tree-options}
 
-Combina un objeto de datos o una matriz con los datos almacenados. Cada par clave/valor del objeto o matriz se agrega al almacén (a través de la variable `setItem` función):
+Combina un objeto de datos o una matriz con los datos almacenados. Cada par clave/valor del objeto o matriz se agrega al almacén (mediante la función `setItem`):
 
 * **Objeto:** Las claves son los nombres de propiedad.
-* **Matriz:** Las claves son los índices de matriz.
+* **Matriz:** Las claves son los índices de la matriz.
 
 Los valores pueden ser objetos.
 
 ##### Parámetros {#parameters-addallitems}
 
-* **`tree`:** (Objeto o matriz) Los datos que se van a agregar al almacén.
-* **`options`:** (Objeto) Un objeto opcional de opciones que se pasa a la función setItem. Para obtener más información, consulte `options` parámetro de [`setItem(key,value,options)`](#setitem-key-value-options).
+* **`tree`:** (objeto o matriz) Los datos que se van a agregar al almacén.
+* **`options`:** (objeto) Un objeto opcional de opciones que se pasa a la función setItem. Para obtener más información, vea el parámetro `options` de [`setItem(key,value,options)`](#setitem-key-value-options).
 
 ##### Devuelve {#returns-addallitems}
 
-A `boolean` valor:
+Un valor `boolean`:
 
-* Un valor de `true` indica que el objeto de datos se ha almacenado.
-* Un valor de `false` indica que el almacén de datos no ha cambiado.
+* El valor `true` indica que se almacenó el objeto de datos.
+* El valor `false` indica que el almacén de datos no ha cambiado.
 
 #### addReference(key, otherKey) {#addreference-key-anotherkey}
 
@@ -190,14 +190,14 @@ Crea una referencia de una clave a otra. Una clave no puede hacer referencia a s
 
 ##### Devuelve {#returns-addreference}
 
-A `boolean` valor:
+Un valor `boolean`:
 
-* Un valor de `true` indica que se agregó la referencia.
-* Un valor de `false` indica que no se añadió ninguna referencia.
+* El valor `true` indica que se agregó la referencia.
+* El valor `false` indica que no se agregó ninguna referencia.
 
 #### announcementReadiness() {#announcereadiness}
 
-Déclencheur el `ready` para esta tienda. Esta función no tiene parámetros y no devuelve ningún valor.
+Almacena en déclencheur el evento `ready` para este almacén. Esta función no tiene parámetros y no devuelve ningún valor.
 
 #### clean() {#clean}
 
@@ -209,7 +209,7 @@ Devuelve el valor asociado a una clave.
 
 ##### Parámetros {#parameters-getitem}
 
-* **`key`:** (Cadena) Clave para la que se devuelve el valor.
+* **`key`:** (String) Clave para la que se devuelve el valor.
 
 ##### Devuelve {#returns-getitem}
 
@@ -221,11 +221,11 @@ Recupera las claves del almacén. Opcionalmente, puede recuperar las claves que 
 
 ##### Parámetros {#parameters-getkeys}
 
-* **`includeInternals`:** Un valor de `true` incluye las claves utilizadas internamente en los resultados. Estas claves comienzan por el guion bajo (`_`) carácter. El valor predeterminado es `false`.
+* **`includeInternals`:** Un valor de `true` incluye claves usadas internamente en los resultados. Estas claves comienzan por el carácter de subrayado (`_`). El valor predeterminado es `false`.
 
 ##### Devuelve {#returns-getkeys}
 
-Una matriz de nombres de clave ( `string` valores).
+Una matriz de nombres de claves (`string` valores).
 
 #### getReferences() {#getreferences}
 
@@ -235,8 +235,8 @@ Recupera las referencias del almacén.
 
 Matriz que utiliza claves de referencia como índices para las claves a las que se hace referencia:
 
-* Las claves de referencia se corresponden con `key` parámetro del `addReference` función.
-* Las claves a las que se hace referencia corresponden con `anotherKey` parámetro del `addReference` función.
+* Las claves de referencia corresponden al parámetro `key` de la función `addReference`.
+* Las claves a las que se hace referencia se corresponden con el parámetro `anotherKey` de la función `addReference`.
 
 #### getTree(includeInternals) {#gettree-includeinternals}
 
@@ -244,7 +244,7 @@ Recupera el árbol de datos del almacén. Opcionalmente, puede incluir los pares
 
 ##### Parámetros {#parameters-gettree}
 
-* `includeInternals:` Un valor de `true` incluye pares clave/valor utilizados internamente en los resultados. Las claves de estos datos comienzan por el guion bajo (`_`) carácter. El valor predeterminado es `false`.
+* `includeInternals:` Un valor de `true` incluye pares clave/valor usados internamente en los resultados. Las claves de estos datos comienzan con el carácter de subrayado (`_`). El valor predeterminado es `false`.
 
 ##### Devuelve {#returns-gettree}
 
@@ -256,16 +256,16 @@ Inicializa el almacén.
 
 * Establece los datos de almacén en un objeto vacío.
 * Establece las referencias de almacén en un objeto vacío.
-* El `eventChannel` es `data:<name>`, donde `<name>` es el nombre del almacén.
-* El `storeDataKey` es `/store/<name>`, donde `<name>` es el nombre del almacén.
+* `eventChannel` es `data:<name>`, donde `<name>` es el nombre del almacén.
+* `storeDataKey` es `/store/<name>`, donde `<name>` es el nombre del almacén.
 
 ##### Parámetros {#parameters-init}
 
-* **`name`:** El nombre de la tienda.
+* **`name`:** El nombre del almacén.
 * **`config`:** Un objeto que contiene propiedades de configuración:
    * `eventDeferring`: el valor predeterminado es 32.
-   * `eventing`: La [ContextHub.Utils.Eventing](#contexthub-utils-eventing) objeto para este almacén. El valor predeterminado es `ContextHub.eventing` El objeto utiliza.
-   * `persistence`: La `ContextHub.Utils.Persistence` objeto para este almacén. El valor predeterminado es `ContextHub.persistence` objeto.
+   * `eventing`: el objeto [ContextHub.Utils.Eventing](#contexthub-utils-eventing) para este almacén. El valor predeterminado es el objeto `ContextHub.eventing` que utiliza.
+   * `persistence`: el objeto `ContextHub.Utils.Persistence` para este almacén. El valor predeterminado es el objeto `ContextHub.persistence`.
 
 #### isEventingPaused() {#iseventingpaused}
 
@@ -275,7 +275,7 @@ Determina si el evento está en pausa para este almacén.
 
 Un valor booleano:
 
-* `true`: el evento se pone en pausa para que no se active ningún evento para este almacén.
+* `true`: el evento está en pausa para que no se desencadenen eventos para este almacén.
 * `false`: el evento no está en pausa para que se activen eventos para este almacén.
 
 #### pauseEventing() {#pauseeventing}
@@ -286,22 +286,22 @@ Pausa los eventos del almacén para que no se desencadene ningún evento. Esta f
 
 Quita un par clave/valor del almacén.
 
-Cuando se quita una clave, la función déclencheur el `data` evento. Los datos del evento incluyen el nombre del almacén, el nombre de la clave que se eliminó, el valor que se eliminó, el nuevo valor de la clave (nulo) y el tipo de acción &quot;quitar&quot;.
+Cuando se quita una clave, la función almacena en déclencheur el evento `data`. Los datos del evento incluyen el nombre del almacén, el nombre de la clave que se eliminó, el valor que se eliminó, el nuevo valor de la clave (nulo) y el tipo de acción &quot;quitar&quot;.
 
-De forma opcional, puede evitar que se active la variable `data` evento.
+Opcionalmente, puede evitar que se active el evento `data`.
 
 ##### Parámetros {#parameters-removeitem}
 
-* **`key`:** (Cadena) Nombre de la clave que se va a quitar.
-* **`options`:** (Objeto) Un objeto de opciones. Las siguientes propiedades de objeto son válidas:
-   * silencioso: un valor de `true` evita la activación de la `data` evento. El valor predeterminado es `false`.
+* **`key`:** (String) El nombre de la clave que se va a quitar.
+* **`options`:** (objeto) Un objeto de opciones. Las siguientes propiedades de objeto son válidas:
+   * silencioso: un valor de `true` impide que se active el evento `data`. El valor predeterminado es `false`.
 
 ##### Devuelve {#returns-removeitem}
 
-A `boolean` valor:
+Un valor `boolean`:
 
-* Un valor de `true` indica que se eliminó el par clave/valor.
-* Un valor de `false` indica que el almacén de datos no se ha modificado porque la clave no se encontró en el almacén.
+* El valor `true` indica que se quitó el par clave/valor.
+* El valor `false` indica que el almacén de datos no se ha modificado porque la clave no se encontró en el almacén.
 
 #### removeReference(key) {#removereference-key}
 
@@ -309,24 +309,24 @@ Quita una referencia del almacén.
 
 ##### Parámetros {#parameters-removereference}
 
-* **`key`:** La referencia clave que se va a quitar. Este parámetro corresponde a la variable `key` parámetro del `addReference` función.
+* **`key`:** La referencia de clave que se va a quitar. Este parámetro corresponde al parámetro `key` de la función `addReference`.
 
 ##### Devuelve {#returns-removereference}
 
-A `boolean` valor:
+Un valor `boolean`:
 
-* Un valor de `true` indica que la referencia se ha eliminado.
-* Un valor de `false` indica que la clave no era válida y que el almacén no se ha modificado.
+* El valor `true` indica que se quitó la referencia.
+* El valor `false` indica que la clave no era válida y que el almacén no se ha modificado.
 
 #### reset(keepRemainingData) {#reset-keepremainingdata}
 
 Restablece los valores iniciales de los datos persistentes del almacén. De forma opcional, puede eliminar todos los demás datos del almacén. El evento se detiene para este almacén mientras se restablece el almacén. Esta función no devuelve ningún valor.
 
-Los valores iniciales se proporcionan en `initialValues` propiedad del objeto config que se utiliza para crear una instancia del objeto store.
+Los valores iniciales se proporcionan en la propiedad `initialValues` del objeto de configuración que se utiliza para crear una instancia del objeto de almacén.
 
 ##### Parámetros {#parameters-reset}
 
-* **`keepRemainingData`**: (Booleano) Un valor de true hace que los datos no iniciales se mantengan. El valor false hace que se eliminen todos los datos excepto los valores iniciales.
+* **`keepRemainingData`**: (Booleano) Un valor de true hace que se mantengan los datos no iniciales. El valor false hace que se eliminen todos los datos excepto los valores iniciales.
 
 #### resolveReference(key, retry) {#resolvereference-key-retry}
 
@@ -334,12 +334,12 @@ Recupera una clave referenciada. De forma opcional, puede especificar el número
 
 ##### Parámetros {#parameters-resolvereference}
 
-* **`key`:** (Cadena) Clave para la que se va a resolver la referencia. Esta `key` El parámetro corresponde a la variable `key` parámetro del `addReference` función.
+* **`key`:** (String) Clave para la que se va a resolver la referencia. Este parámetro `key` corresponde al parámetro `key` de la función `addReference`.
 * **`retry`:** (Número) El número de iteraciones que se van a utilizar.
 
 ##### Devuelve {#returns-resolvereference}
 
-A `string` valor que representa la clave a la que se hace referencia. Si no se resuelve ninguna referencia, el valor de `key` se devuelve el parámetro.
+Un valor `string` que representa la clave a la que se hace referencia. Si no se resuelve ninguna referencia, se devuelve el valor del parámetro `key`.
 
 #### resumeEventing() {#resumeeventing}
 
@@ -349,31 +349,31 @@ Reanuda los eventos de este almacén para que se activen eventos. Esta función 
 
 Agrega un par clave/valor al almacén.
 
-Déclencheur el `data` solo si el valor de la clave es diferente del valor almacenado actualmente para la clave. Si lo desea, puede evitar que se active la variable `data` evento.
+Almacena en déclencheur el evento `data` solo si el valor de la clave es diferente del valor almacenado actualmente para la clave. Opcionalmente, puede evitar que se active el evento `data`.
 
 Los datos del evento incluyen el nombre del almacén, la clave, el valor anterior, el nuevo valor y el tipo de acción de `set`.
 
 ##### Parámetros {#parameters-setitem}
 
-* **`key`:** (Cadena) Nombre de la clave.
-* **`options`:** (Objeto) Un objeto de opciones. Las siguientes propiedades de objeto son válidas:
-   * `silent`: Un valor de `true` evita la activación de la `data` evento. El valor predeterminado es `false`.
-* **`value`:** (Objeto) Valor que se asocia a la clave.
+* **`key`:** (String) El nombre de la clave.
+* **`options`:** (objeto) Un objeto de opciones. Las siguientes propiedades de objeto son válidas:
+   * `silent`: un valor de `true` impide que se active el evento `data`. El valor predeterminado es `false`.
+* **`value`:** (objeto) valor que se va a asociar con la clave.
 
 ##### Devuelve {#returns-setitem}
 
-A `boolean` valor:
+Un valor `boolean`:
 
-* Un valor de `true` indica que el objeto de datos se ha almacenado.
-* Un valor de `false` indica que el almacén de datos no ha cambiado.
+* El valor `true` indica que se almacenó el objeto de datos.
+* El valor `false` indica que el almacén de datos no ha cambiado.
 
 ## ContextHub.Store.JSONPStore {#contexthub-store-jsonpstore}
 
-Un almacén que contiene datos JSON. Los datos se recuperan de un servicio JSONP externo o, opcionalmente, de un servicio que devuelve datos JSON. Especifique los detalles del servicio mediante la variable [`init`](#init-name-config) cuando se crea una instancia de esta clase.
+Un almacén que contiene datos JSON. Los datos se recuperan de un servicio JSONP externo o, opcionalmente, de un servicio que devuelve datos JSON. Especifique los detalles del servicio mediante la función [`init`](#init-name-config) al crear una instancia de esta clase.
 
-El almacén utiliza persistencia en memoria (variable JavaScript). Los datos de almacenamiento solo están disponibles durante la duración de la página.
+El almacén utiliza la persistencia en memoria (variable JavaScript). Los datos de almacenamiento solo están disponibles durante la duración de la página.
 
-ContextHub.Store.JSONPStore extiende [ContextHub.Store.Core](#contexthub-store-core) y hereda las funciones de esa clase.
+ContextHub.Store.JSONPStore amplía [ContextHub.Store.Core](#contexthub-store-core) y hereda las funciones de esa clase.
 
 ### Funciones (ContextHub.Store.JSONPStore) {#functions-contexthub-store-jsonpstore}
 
@@ -385,15 +385,15 @@ Configura los detalles para conectarse al servicio JSONP que utiliza este objeto
 
 * **`serviceConfig`:** Un objeto que contiene las siguientes propiedades:
    * `host`: (Cadena) El nombre del servidor o la dirección IP.
-   * `jsonp`: (Booleano) Un valor de true indica que el servicio es un servicio JSONP; en caso contrario, false. Cuando es true, la llamada de retorno {callback}: &quot;ContextHub.Callbacks.*Object.name* El objeto } se agrega al objeto service.params.
+   * `jsonp`: (Booleano) Un valor de true indica que el servicio es un servicio JSONP; en caso contrario, false. Cuando es true, la llamada de retorno {callback}: &quot;ContextHub.Callbacks.El objeto *Object.name*} se ha agregado al objeto service.params.
    * `params`: parámetros de URL (objeto) representados como propiedades de objeto. Los nombres de parámetro son nombres de propiedad y los valores de parámetro son valores de propiedad.
-   * `path`: (Cadena) Ruta al servicio.
-   * `port`: (Número) Número de puerto del servicio.
-   * `secure`: (cadena o booleano) determina el protocolo que se utiliza para la dirección URL del servicio:
+   * `path`: (Cadena) Ruta de acceso al servicio.
+   * `port`: (Número) El número de puerto del servicio.
+   * `secure`: (Cadena o Booleano) Determina el protocolo que se utilizará para la URL del servicio:
       * `auto`: //
       * `true`: https://
       * `false`: http://
-* **omitir:** (Boolean). Un valor de `true` hace que la configuración del servicio existente se reemplace por las propiedades de `serviceConfig`. Un valor de `false` hace que las propiedades de configuración del servicio existentes se combinen con las propiedades de `serviceConfig`.
+* **invalidación:** (booleano). Un valor de `true` hace que la configuración del servicio existente se reemplace por las propiedades de `serviceConfig`. Un valor de `false` hace que las propiedades de configuración del servicio existentes se combinen con las propiedades de `serviceConfig`.
 
 #### getRawResponse() {#getrawresponse}
 
@@ -411,12 +411,12 @@ Recupera el objeto de servicio para este objeto ContextHub.Store.JSONPStore. El 
 
 Un objeto con las siguientes propiedades:
 
-* **`host`:** (Cadena) El nombre del servidor o la dirección IP.
-* **`jsonp`:** (Booleano) Un valor de true indica que el servicio es un servicio JSONP; en caso contrario, false. Cuando es true, la llamada de retorno {callback}: &quot;ContextHub.Callbacks.*Object.name* El objeto } se agrega al objeto service.params.
-* **`params`:** Parámetros de URL (objeto) representados como propiedades de objeto. Los nombres de parámetro son nombres de propiedad y los valores de parámetro son valores de propiedad.
-* **`path`:** (Cadena) Ruta de acceso al servicio.
+* **`host`:** (String) El nombre del servidor o la dirección IP.
+* **`jsonp`:** (Booleano) Un valor de true indica que el servicio es un servicio JSONP, false en caso contrario. Cuando es true, la llamada de retorno {callback}: &quot;ContextHub.Callbacks.El objeto *Object.name*} se ha agregado al objeto service.params.
+* **`params`:** parámetros de URL (objeto) representados como propiedades de objeto. Los nombres de parámetro son nombres de propiedad y los valores de parámetro son valores de propiedad.
+* **`path`:** (String) La ruta de acceso al servicio.
 * **`port`:** (Número) El número de puerto del servicio.
-* **`secure`:** (Cadena o Booleano) Determina el protocolo que se utilizará para la URL del servicio:
+* **`secure`:** (cadena o booleano) Determina el protocolo que se utilizará para la URL del servicio:
    * `auto`: //
    * `true`: https://
    * `false`: http://
@@ -427,45 +427,45 @@ Recupera la dirección URL del servicio JSONP.
 
 ##### Parámetros {#parameters-getserviceurl}
 
-* **`resolve`:** (Booleano) Determina si se deben incluir los parámetros resueltos en la dirección URL. Un valor de `true` resuelve parámetros, y `false` no lo tiene.
+* **`resolve`:** (booleano) Determina si se deben incluir los parámetros resueltos en la dirección URL. Un valor de `true` resuelve los parámetros y `false` no.
 
 ##### Devuelve {#returns-getserviceurl}
 
-A `string` valor que representa la URL del servicio.
+Valor `string` que representa la dirección URL del servicio.
 
 #### init(nombre, configuración) {#init-name-config-1}
 
-inicializa el `ContextHub.Store.JSONPStore` objeto.
+inicializa el objeto `ContextHub.Store.JSONPStore`.
 
 ##### Parámetros {#parameters-init-1}
 
-* **`name`:** (Cadena) Nombre de la tienda.
-* **`config`:** (Objeto) Un objeto que contiene la propiedad de servicio. El objeto JSONPStore utiliza las propiedades del `service` para construir la URL del servicio JSONP:
+* **`name`:** (String) El nombre del almacén.
+* **`config`:** (objeto) Un objeto que contiene la propiedad del servicio. El objeto JSONPStore utiliza las propiedades del objeto `service` para construir la dirección URL del servicio JSONP:
    * `eventDeferring`: 32.
-   * `eventing`: el objeto ContextHub.Utils.Eventing de este almacén. El valor predeterminado es `ContextHub.eventing` objeto.
-   * `persistence`: el objeto ContextHub.Utils.Persistence para este almacén. De forma predeterminada, se utiliza la persistencia de la memoria (objeto JavaScript).
+   * `eventing`: el objeto ContextHub.Utils.Eventing de este almacén. El valor predeterminado es el objeto `ContextHub.eventing`.
+   * `persistence`: el objeto ContextHub.Utils.Persistence de este almacén. De forma predeterminada, se utiliza la persistencia de la memoria (objeto JavaScript).
    * `service`: (objeto)
       * `host`: (Cadena) El nombre del servidor o la dirección IP.
-      * `jsonp`: (Booleano) Un valor de true indica que el servicio es un servicio JSONP; en caso contrario, false. Si es true, la variable `{callback: "ContextHub.Callbacks.*Object.name*}`se agrega el objeto a `service.params`.
+      * `jsonp`: (Booleano) Un valor de true indica que el servicio es un servicio JSONP; en caso contrario, false. Cuando es verdadero, el objeto `{callback: "ContextHub.Callbacks.*Object.name*}` se agrega a `service.params`.
       * `params`: parámetros de URL (objeto) representados como propiedades de objeto. Los nombres y valores de parámetro son los nombres y valores de las propiedades de objeto, respectivamente.
-      * `path`: (Cadena) Ruta al servicio.
-      * `port`: (Número) Número de puerto del servicio.
-      * `secure`: (cadena o booleano) determina el protocolo que se utiliza para la dirección URL del servicio:
+      * `path`: (Cadena) Ruta de acceso al servicio.
+      * `port`: (Número) El número de puerto del servicio.
+      * `secure`: (Cadena o Booleano) Determina el protocolo que se utilizará para la URL del servicio:
          * `auto`: //
          * `true`: https://
          * `false`: http://
       * `timeout`: (Número) Cantidad de tiempo que se debe esperar para que el servicio JSONP responda antes de que se agote el tiempo de espera, en milisegundos.
-         * `ttl`: Cantidad mínima de tiempo en milisegundos que transcurre entre llamadas al servicio JSONP. (Consulte la [queryService](#queryservice-reload) función).
+         * `ttl`: cantidad mínima de tiempo en milisegundos que transcurre entre llamadas al servicio JSONP. (Consulte la función [queryService](#queryservice-reload)).
 
 #### queryService(reload) {#queryservice-reload}
 
-Consulta el servicio JSONP remoto y almacena en caché la respuesta. Si el tiempo desde la llamada anterior a esta función es menor que el valor de `config.service.ttl`No obstante, no se llama al servicio y la respuesta almacenada en caché no cambia. De forma opcional, puede forzar la llamada al servicio. El `config.service.ttl`se establece al llamar a la propiedad [init](#init-name-config) para inicializar el almacén.
+Consulta el servicio JSONP remoto y almacena en caché la respuesta. Si el tiempo desde la llamada anterior a esta función es menor que el valor de `config.service.ttl`, no se llama al servicio y la respuesta almacenada en caché no cambia. De forma opcional, puede forzar la llamada al servicio. La propiedad `config.service.ttl`se establece al llamar a la función [init](#init-name-config) para inicializar el almacén.
 
 Almacena en déclencheur el evento ready cuando finaliza la consulta. Si no se establece la dirección URL del servicio JSONP, la función no hace nada.
 
 ##### Parámetros {#parameters-queryservice}
 
-* **`reload`:** (Booleano) Un valor true elimina la respuesta almacenada en caché y fuerza la llamada al servicio JSONP.
+* **`reload`:** (Booleano) Un valor de true quita la respuesta almacenada en caché y fuerza la llamada al servicio JSONP.
 
 #### restablecer {#reset}
 
@@ -475,7 +475,7 @@ Los valores iniciales se proporcionan en la propiedad initialValues del objeto d
 
 ##### Parámetros {#parameters-reset-1}
 
-* **`keepRemainingData`:** (Booleano) Un valor true hace que los datos no iniciales se mantengan. El valor false hace que se eliminen todos los datos excepto los valores iniciales.
+* **`keepRemainingData`:** (Booleano) Un valor de true hace que persistan los datos no iniciales. El valor false hace que se eliminen todos los datos excepto los valores iniciales.
 
 #### resolveParameter(f) {#resolveparameter-f}
 
@@ -483,15 +483,15 @@ Resuelve el parámetro dado.
 
 ## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-`ContextHub.Store.PersistedJSONPStore` extiende [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) por lo tanto, hereda todas las funciones de esa clase. Sin embargo, los datos recuperados del servicio JSONP se conservan según la configuración de persistencia de ContextHub. (Consulte [Modos de persistencia:](adding-contexthub.md#persistence-modes))
+`ContextHub.Store.PersistedJSONPStore` amplía [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore), de modo que hereda todas las funciones de esa clase. Sin embargo, los datos recuperados del servicio JSONP se conservan según la configuración de persistencia de ContextHub. (Consulte [Modos de persistencia:](adding-contexthub.md#persistence-modes))
 
 ## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 
-`ContextHub.Store.PersistedStore` extiende [ContextHub.Store.Core](#contexthub-store-core) por lo tanto, hereda todas las funciones de esa clase. Los datos de este almacén se conservan según la configuración de persistencia de ContextHub.
+`ContextHub.Store.PersistedStore` amplía [ContextHub.Store.Core](#contexthub-store-core) de modo que hereda todas las funciones de esa clase. Los datos de este almacén se conservan según la configuración de persistencia de ContextHub.
 
 ## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
-`ContextHub.Store.SessionStore` extiende [ContextHub.Store.Core](#contexthub-store-core) por lo tanto, hereda todas las funciones de esa clase. Los datos de este almacén se conservan utilizando la persistencia en memoria (objeto JavaScript).
+`ContextHub.Store.SessionStore` amplía [ContextHub.Store.Core](#contexthub-store-core) de modo que hereda todas las funciones de esa clase. Los datos de este almacén se conservan utilizando la persistencia en memoria (objeto JavaScript).
 
 ## ContextHub.UI {#contexthub-ui}
 
@@ -501,17 +501,17 @@ Administra los módulos de IU y los procesadores de módulos de IU.
 
 #### registerRenderer(moduleType, renderer, dontRender) {#registerrenderer-moduletype-renderer-dontrender}
 
-Registra un procesador de módulos de IU con ContextHub. Una vez registrado el procesador, se puede utilizar para lo siguiente [crear módulos de IU](configuring-contexthub.md#adding-a-ui-module). Utilice esta función cuando esté [extensivo `ContextHub.UI.BaseModuleRenderer`](extending-contexthub.md#creating-contexthub-ui-module-types) para crear un procesador de módulos de IU personalizado.
+Registra un procesador de módulos de IU con ContextHub. Una vez registrado el procesador, se puede usar para [crear módulos de IU](configuring-contexthub.md#adding-a-ui-module). Utilice esta función cuando esté [ampliando `ContextHub.UI.BaseModuleRenderer`](extending-contexthub.md#creating-contexthub-ui-module-types) para crear un procesador de módulos de IU personalizado.
 
 ##### Parámetros {#parameters-registerrenderer}
 
 * **`moduleType`:** (Cadena) Identificador del procesador del módulo de interfaz de usuario. Si un procesador ya está registrado con el valor especificado, el procesador existente no estará registrado antes de que se registre este procesador.
-* **`renderer`:** (Cadena) Nombre de la clase que procesa el módulo de interfaz de usuario.
-* **`dontRender`:** (Booleano) Establezca en `true` para evitar que la interfaz de usuario de ContextHub se represente después de registrar el procesador. El valor predeterminado es `false`.
+* **`renderer`:** (String) Nombre de la clase que procesa el módulo de interfaz de usuario.
+* **`dontRender`:** (booleano) Se establece en `true` para evitar que la interfaz de usuario de ContextHub se represente después de registrar el procesador. El valor predeterminado es `false`.
 
 ##### Ejemplos {#example-registerrenderer}
 
-En el ejemplo siguiente se registra un procesador como `contexthub.browserinfo` tipo de módulo.
+En el ejemplo siguiente se registra un procesador como tipo de módulo `contexthub.browserinfo`.
 
 ```javascript
 ContextHub.UI.registerRenderer('contexthub.browserinfo', new SurferinfoRenderer());
@@ -529,11 +529,11 @@ Determina si existe una cookie.
 
 ##### Parámetros {#parameters-exists}
 
-* **`key`:** A `String` que contiene la clave de la cookie que está probando.
+* **`key`:** Un `String` que contiene la clave de la cookie que está probando.
 
 ##### Devuelve {#returns-exists}
 
-A `boolean` el valor true indica que la cookie existe.
+El valor `boolean` true indica que la cookie existe.
 
 ##### Ejemplos {#example-exists}
 
@@ -549,7 +549,7 @@ Devuelve todas las cookies que tienen claves que coinciden con un filtro.
 
 ##### Parámetros {#parameters-getallitems}
 
-* **`filter`:** (Opcional) Criterios para la coincidencia de claves de cookie. Para devolver todas las cookies, no especifique ningún valor. Se admiten los siguientes tipos:
+* **`filter`:** (opcional) criterios para claves de cookies coincidentes. Para devolver todas las cookies, no especifique ningún valor. Se admiten los siguientes tipos:
    * Cadena: La cadena se compara con la clave de la cookie.
    * Matriz: cada elemento de la matriz es un filtro.
    * Un objeto RegExp: la función de prueba del objeto se utiliza para hacer coincidir claves de cookie.
@@ -571,11 +571,11 @@ Devuelve un valor de cookie.
 
 ##### Parámetros {#parameters-getitem-1}
 
-* **`key`:** La clave de la cookie cuyo valor desea calcular.
+* **`key`:** La clave de la cookie para la que desea obtener el valor.
 
 ##### Devuelve {#returns-getitem-1}
 
-El valor de la cookie, o `null` si no se ha encontrado ninguna cookie para la clave.
+El valor de la cookie o `null` si no se encontró ninguna cookie para la clave.
 
 ##### Ejemplos {#example-getitem-1}
 
@@ -589,7 +589,7 @@ Devuelve una matriz de claves de cookies existentes que coinciden con un filtro.
 
 ##### Parámetros {#parameters-getkeys-1}
 
-* **`filter`:** Criterios para la coincidencia de claves de cookie. Se admiten los siguientes tipos:
+* **`filter`:** Criterios para claves de cookies coincidentes. Se admiten los siguientes tipos:
    * Cadena: La cadena se compara con la clave de la cookie.
    * Matriz: cada elemento de la matriz es un filtro.
    * Un objeto RegExp: la función de prueba del objeto se utiliza para hacer coincidir claves de cookie.
@@ -611,8 +611,8 @@ Quita una cookie. Para eliminar la cookie, el valor se establece en una cadena v
 
 ##### Parámetros {#parameters-removeitem-1}
 
-* **`key`:** A `String` valor que representa la clave de la cookie que se va a quitar.
-* **`options`:** Un objeto que contiene valores de propiedad para configurar los atributos de la cookie. Consulte la [`setItem`](#setitem-key-value-options) para obtener más información. El `expires` no tiene ningún efecto.
+* **`key`:** Un valor `String` que representa la clave de la cookie que se va a quitar.
+* **`options`:** Un objeto que contiene valores de propiedad para configurar los atributos de la cookie. Consulte la función [`setItem`](#setitem-key-value-options) para obtener información. La propiedad `expires` no tiene ningún efecto.
 
 ##### Devuelve {#returns-removeitem-1}
 
@@ -630,12 +630,12 @@ Crea una cookie de la clave y el valor dados y agrega la cookie al documento act
 
 ##### Parámetros {#parameters-setitem-1}
 
-* **`key`:** String que contiene la clave de la cookie.
-* **`value`:** String que contiene el valor de la cookie.
-* **`options`:** (Opcional) Un objeto que contiene cualquiera de las siguientes propiedades que configuran los atributos de la cookie:
-   * `expires`: A `date` o `number` valor que especifica cuándo caduca la cookie. Un valor de fecha especifica la hora absoluta de caducidad. Un número (en días) establece la hora de caducidad para la hora actual más el número. El valor predeterminado es `undefined`.
-   * `secure`: A `boolean` valor que especifica el `Secure` atributo de la cookie. El valor predeterminado es `false`.
-   * `path`: A `String` valor que se utilizará como `Path` atributo de la cookie. El valor predeterminado es `undefined`.
+* **`key`:** Una cadena que contiene la clave de la cookie.
+* **`value`:** Una cadena que contiene el valor de la cookie.
+* **`options`:** (opcional) un objeto que contiene cualquiera de las siguientes propiedades que configuran los atributos de la cookie:
+   * `expires`: un valor `date` o `number` que especifica cuándo caduca la cookie. Un valor de fecha especifica la hora absoluta de caducidad. Un número (en días) establece la hora de caducidad para la hora actual más el número. El valor predeterminado es `undefined`.
+   * `secure`: un valor `boolean` que especifica el atributo `Secure` de la cookie. El valor predeterminado es `false`.
+   * `path`: un valor `String` para usar como atributo `Path` de la cookie. El valor predeterminado es `undefined`.
 
 ##### Devuelve {#returns-setitem-1}
 
@@ -654,12 +654,12 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 #### desvanecer(filtro, opciones) {#vanish-filter-options}
 
-Elimina todas las cookies que coinciden con un filtro determinado. Las cookies se comparan mediante la variable `getKeys` y se elimina utilizando la función `removeItem` función.
+Elimina todas las cookies que coinciden con un filtro determinado. Las cookies se comparan mediante la función `getKeys` y se eliminan mediante la función `removeItem`.
 
 ##### Parámetros {#parameters-vanish}
 
-* **`filter`:** El `filter` argumento que se va a utilizar en la llamada a [`getKeys`](#getkeys-filter) función.
-* **`options`:** El `options` argumento que se va a utilizar en la llamada a [`removeItem`](#removeitem-key-options) función.
+* **`filter`:** Argumento `filter` que se va a usar en la llamada a la función [`getKeys`](#getkeys-filter).
+* **`options`:** Argumento `options` que se va a usar en la llamada a la función [`removeItem`](#removeitem-key-options).
 
 ##### Devuelve {#returns-vanish}
 
@@ -667,7 +667,7 @@ Esta función no devuelve un valor.
 
 ## ContextHub.Utils.Eventing {#contexthub-utils-eventing}
 
-Permite enlazar y desenlazar funciones a eventos de tienda de ContextHub. Acceso `ContextHub.Utils.Eventing` objetos para un almacén utilizando [evento](#eventing) propiedad del almacén.
+Permite enlazar y desenlazar funciones a eventos de tienda de ContextHub. Tener acceso a `ContextHub.Utils.Eventing` objetos de un almacén mediante la propiedad [eventing](#eventing) del almacén.
 
 ### Funciones (ContextHub.Utils.Eventing) {#functions-contexthub-utils-eventing}
 
@@ -677,8 +677,8 @@ Desenlaza una función de un evento.
 
 ##### Parámetros {#parameters-off}
 
-* **`name`:** El [nombre del evento](#contexthub-utils-eventing) para el que se desenlaza la función.
-* **`selector`:** El selector que identifica el enlace. (Consulte la `selector` parámetro para [`on`](#on-name-handler-selector-triggerforpastevents) y [`once`](#once-name-handler-selector-triggerforpastevents) funciones).
+* **`name`:** El [nombre del evento](#contexthub-utils-eventing) para el que está desenlazando la función.
+* **`selector`:** El selector que identifica el enlace. (Consulte el parámetro `selector` para las funciones [`on`](#on-name-handler-selector-triggerforpastevents) y [`once`](#once-name-handler-selector-triggerforpastevents)).
 
 ##### Devuelve {#returns-off}
 
@@ -690,19 +690,19 @@ Enlaza una función a un evento. Se llama a la función cada vez que se produce 
 
 ##### Parámetros {#parameters-on}
 
-* **`name`:** (Cadena) El [nombre del evento](#contexthub-utils-eventing) a la que está enlazando la función.
-* **`handler`:** (Función) La función que se va a enlazar al evento.
-* **`selector`:** (Cadena) Identificador único del enlace. Necesita el selector para identificar el enlace si desea utilizar el `off` para eliminar el enlace.
-* **`triggerForPastEvents`:** (Booleano) Indica si el controlador debe ejecutarse para los eventos que se produjeron en el pasado. Un valor de `true` llama al controlador para eventos anteriores. Un valor de `false` llama al controlador para eventos futuros. El valor predeterminado es `true`.
+* **`name`:** (String) El [nombre del evento](#contexthub-utils-eventing) al que está enlazando la función.
+* **`handler`:** (Función) La función para enlazar al evento.
+* **`selector`:** (String) Identificador único del enlace. Necesita el selector para identificar el enlace si desea utilizar la función `off` para quitar el enlace.
+* **`triggerForPastEvents`:** (booleano) indica si el controlador debe ejecutarse para los eventos que ocurrieron anteriormente. Un valor de `true` llama al controlador para eventos anteriores. Un valor de `false` llama al controlador para eventos futuros. El valor predeterminado es `true`.
 
 ##### Devuelve {#returns-on}
 
-Si la variable `triggerForPastEvents` el argumento es `true`, esta función devuelve un `boolean` valor que indica si el evento se produjo en el pasado:
+Cuando el argumento `triggerForPastEvents` es `true`, esta función devuelve un valor `boolean` que indica si el evento se produjo en el pasado:
 
-* `true`: el evento se produjo en el pasado y se llama al controlador.
-* `false`: el evento no se ha producido en el pasado.
+* `true`: el evento se produjo anteriormente y se llamó al controlador.
+* `false`: el evento no se ha producido anteriormente.
 
-If `triggerForPastEvents` es `false`, esta función no devuelve ningún valor.
+Si `triggerForPastEvents` es `false`, esta función no devuelve ningún valor.
 
 ##### Ejemplos {#example-on}
 
@@ -730,19 +730,19 @@ Enlaza una función a un evento. La función se llama solo una vez, para la prim
 
 ##### Parámetros {#parameters-once}
 
-* **`name`:** (Cadena) El [nombre del evento](#contexthub-utils-eventing) a la que está enlazando la función.
-* **`handler`:** (Función) La función que se va a enlazar al evento.
-* **`selector`:** (Cadena) Identificador único del enlace. Necesita el selector para identificar el enlace si desea utilizar el `off` para eliminar el enlace.
-* **`triggerForPastEvents`:** (Booleano) Indica si el controlador debe ejecutarse para los eventos que se produjeron en el pasado. Un valor de `true` llama al controlador para eventos anteriores. Un valor de `false` llama al controlador para eventos futuros. El valor predeterminado es `true`.
+* **`name`:** (String) El [nombre del evento](#contexthub-utils-eventing) al que está enlazando la función.
+* **`handler`:** (Función) La función para enlazar al evento.
+* **`selector`:** (String) Identificador único del enlace. Necesita el selector para identificar el enlace si desea utilizar la función `off` para quitar el enlace.
+* **`triggerForPastEvents`:** (booleano) indica si el controlador debe ejecutarse para los eventos que ocurrieron anteriormente. Un valor de `true` llama al controlador para eventos anteriores. Un valor de `false` llama al controlador para eventos futuros. El valor predeterminado es `true`.
 
 ##### Devuelve {#returns-once}
 
-Si la variable `triggerForPastEvents` el argumento es `true`, esta función devuelve un `boolean` valor que indica si el evento se produjo en el pasado:
+Cuando el argumento `triggerForPastEvents` es `true`, esta función devuelve un valor `boolean` que indica si el evento se produjo en el pasado:
 
-* `true`: el evento se produjo en el pasado y se llama al controlador.
-* `false`: el evento no se ha producido en el pasado.
+* `true`: el evento se produjo anteriormente y se llamó al controlador.
+* `false`: el evento no se ha producido anteriormente.
 
-If `triggerForPastEvents` es `false`, esta función no devuelve ningún valor.
+Si `triggerForPastEvents` es `false`, esta función no devuelve ningún valor.
 
 ## ContextHub.Utils.inheritance {#contexthub-utils-inheritance}
 
@@ -756,8 +756,8 @@ Hace que un objeto herede las propiedades y métodos de otro objeto.
 
 ##### Parámetros {#parameters-inherit}
 
-* **`child`:** (Objeto) El objeto que hereda.
-* **`parent`:** (Objeto) Objeto que define las propiedades y los métodos heredados.
+* **`child`:** (objeto) El objeto que hereda.
+* **`parent`:** (objeto) objeto que define las propiedades y los métodos heredados.
 
 ## ContextHub.Utils.JSON {#contexthub-utils-json}
 
@@ -805,7 +805,7 @@ Serializa valores y objetos JavaScript en valores de cadena en formato JSON.
 
 ##### Devuelve {#returns-stringify}
 
-El valor de cadena serializado. Cuándo `data` es una R `egExp` value, esta función devuelve un objeto vacío. Cuándo `data` es una función, devuelve `undefined`.
+El valor de cadena serializado. Cuando `data` es un valor R `egExp`, esta función devuelve un objeto vacío. Cuando `data` es una función, devuelve `undefined`.
 
 ##### Ejemplos {#example-stringify}
 
@@ -838,7 +838,7 @@ Crea una copia de un objeto de datos y le agrega el árbol de datos a partir de 
 ##### Parámetros {#parameters-addallitems-1}
 
 * **`tree`:** El objeto que se copia.
-* **`secondTree`:** El objeto que se combina con la copia del `tree` objeto.
+* **`secondTree`:** El objeto que se combina con la copia del objeto `tree`.
 
 ##### Devuelve {#returns-addallitems-1}
 
@@ -850,7 +850,7 @@ Crea una copia de un objeto, busca y quita elementos en el árbol de datos que n
 
 ##### Parámetros {#parameters-cleanup}
 
-* **`tree`:** Objeto que se va a limpiar.
+* **`tree`:** El objeto que se va a limpiar.
 
 ##### Devuelve {#returns-cleanup}
 
@@ -863,15 +863,15 @@ Recupera el valor de un objeto para la clave.
 ##### Parámetros {#parameters-getitem-2}
 
 * **`tree`:** El objeto de datos.
-* **`key`:** La clave del valor que desea recuperar.
+* **`key`:** Clave del valor que desea recuperar.
 
 ##### Devuelve {#returns-getitem-2}
 
-El valor que corresponde a la clave. Cuando la clave tiene claves secundarias, esta función devuelve un objeto complejo. Cuando el tipo del valor de la clave es `undefined`, `null` se devuelve.
+El valor que corresponde a la clave. Cuando la clave tiene claves secundarias, esta función devuelve un objeto complejo. Cuando el tipo del valor de la clave es `undefined`, se devuelve `null`.
 
 ##### Ejemplos {#example-getitem-2}
 
-Considere el siguiente objeto JavaScript:
+Considere el siguiente objeto de JavaScript:
 
 ```javascript
 myObject {
@@ -919,9 +919,9 @@ Recupera todas las claves del árbol de datos de un objeto. De forma opcional, p
 
 ##### Parámetros {#parameters-getkeys-2}
 
-* **`tree`:** Objeto del que se recuperan las claves del árbol de datos.
-* **`parent`:** (Opcional) Clave de un elemento del árbol de datos del que desea recuperar las claves de los elementos secundarios.
-* **`order`:** (Opcional) Una función que determina el orden de las claves devueltas. (Consulte [`Array.prototype.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) en Mozilla Developer Network).
+* **`tree`:** El objeto del que se recuperarán las claves del árbol de datos.
+* **`parent`:** (opcional) clave de un elemento del árbol de datos del que desea recuperar las claves de los elementos secundarios.
+* **`order`:** (opcional) una función que determina el orden de las claves devueltas. (Consulte [`Array.prototype.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) en Mozilla Developer Network).
 
 ##### Devuelve {#returns-getkeys-2}
 
@@ -948,7 +948,7 @@ myObject {
 }
 ```
 
-El `ContextHub.Utils.JSON.tree.getKeys(myObject);` script devuelve la siguiente matriz:
+El script `ContextHub.Utils.JSON.tree.getKeys(myObject);` devuelve la siguiente matriz:
 
 ```javascript
 ["/location", "/location/city", "/location/country", "/location/latitude", "/location/longitude", "/location/weather", "/location/weather/humidity", "/location/weather/precipitation", "/location/weather/temperature", "/location/weather/wind"]
@@ -1015,15 +1015,15 @@ Utilice la matriz resultante para crear una clave utilizable.
 
 ##### Parámetros {#parameters-sanitizekey}
 
-* **`key`:** El `string` para desinfectar.
+* **`key`:** `string` para sanear.
 
 ##### Devuelve {#returns-sanitizekey}
 
-Una matriz de `string` valores, donde cada cadena es la parte del `key` que fue demarcado por barras oblicuas. representa la clave saneada. Si la matriz saneada tiene una longitud de cero, esta función devuelve `null`.
+Matriz de `string` valores donde cada cadena es la parte de `key` que fue demarcada con barras oblicuas. representa la clave saneada. Si la matriz saneada tiene una longitud de cero, esta función devuelve `null`.
 
 ##### Ejemplos {#example-sanitizekey}
 
-El siguiente código sanea una cadena para producir la matriz `["this", "is", "a", "path"]`y, a continuación, genera la clave `"/this/is/a/path"` desde la matriz:
+El siguiente código sanea una cadena para producir la matriz `["this", "is", "a", "path"]` y, a continuación, genera la clave `"/this/is/a/path"` de la matriz:
 
 ```javascript
 var key = " / this////is/a/path ";
@@ -1033,17 +1033,17 @@ ContextHub.Utils.JSON.tree.sanitizeKey(key)
 
 #### setItem(árbol, clave, valor) {#setitem-tree-key-value}
 
-Agrega un par clave/valor al árbol de datos de una copia de un objeto. Para obtener información sobre los árboles de datos, consulte [Persistencia.](contexthub.md#persistence)
+Agrega un par clave/valor al árbol de datos de una copia de un objeto. Para obtener información acerca de los árboles de datos, vea [Persistencia.](contexthub.md#persistence)
 
 ##### Parámetros {#parameters-setitem-2}
 
 * **`tree`:** Un objeto de datos.
-* **`key`:** La clave que se asocia al valor que está agregando. La clave es la ruta al elemento en el árbol de datos. Esta función llama a `ContextHub.Utils.JSON.tree.sanitize` para sanear la clave antes de agregarla.
+* **`key`:** Clave que se va a asociar con el valor que está agregando. La clave es la ruta al elemento en el árbol de datos. Esta función llama a `ContextHub.Utils.JSON.tree.sanitize` para sanear la clave antes de agregarla.
 * **`value`:** Valor que se agregará al árbol de datos.
 
 ##### Devuelve {#returns-setitem-2}
 
-Una copia del `tree` que incluye el `key`/ `value` par.
+Una copia del objeto `tree` que incluye el par `key`/ `value`.
 
 ##### Ejemplos {#example-setitem-2}
 
@@ -1080,7 +1080,7 @@ Devuelve los tipos de almacén que están registrados como candidatos de almacé
 
 ##### Parámetros {#parameters-getregisteredcandidates}
 
-* **`storeType`:** (Cadena) Nombre del tipo de almacén. Consulte la `storeType` parámetro del [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#contexthub-utils-storecandidates) función.
+* **`storeType`:** (String) El nombre del tipo de almacén. Ver el parámetro `storeType` de la función [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#contexthub-utils-storecandidates).
 
 ##### Devuelve {#returns-getregisteredcandidates}
 
@@ -1092,7 +1092,7 @@ Devuelve un tipo de almacén de los candidatos registrados. Si se registra más 
 
 ##### Parámetros {#parameters-getstorefromcandidates}
 
-* `storeType`: (Cadena) Nombre del candidato a la tienda. Consulte la `storeType` parámetro del [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#registerstorecandidate-store-storetype-priority-applies) función.
+* `storeType`: (Cadena) Nombre del candidato de la tienda. Ver el parámetro `storeType` de la función [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#registerstorecandidate-store-storetype-priority-applies).
 
 ##### Devuelve {#returns-getstorefromcandidates}
 
@@ -1104,7 +1104,7 @@ Devuelve los nombres de los tipos de almacén que están registrados como candid
 
 ##### Devuelve {#returns-getsupportedstoretypes}
 
-Una matriz de valores de cadena, donde cada cadena es el tipo de tienda con el que se registró un candidato a tienda. Consulte la `storeType` parámetro del [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#contexthub-utils-storecandidates) función.
+Una matriz de valores de cadena, donde cada cadena es el tipo de tienda con el que se registró un candidato a tienda. Ver el parámetro `storeType` de la función [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#contexthub-utils-storecandidates).
 
 #### registerStoreCandidate(store, storeType, priority, applies) {#registerstorecandidate-store-storetype-priority-applies}
 
@@ -1114,10 +1114,10 @@ La prioridad es un número que indica la importancia de las tiendas con el mismo
 
 ##### Parámetros {#parameters-registerstorecandidate}
 
-* **`store`:** (Objeto) El objeto store que se va a registrar como candidato de store.
-* **`storeType`:** (Cadena) Nombre del candidato de la tienda. Este valor es necesario al crear una instancia del candidato de tienda.
-* **`priority`:** (Número) Prioridad del candidato a tienda.
-* **`applies`:** (Función) La función que se va a invocar que evalúa la aplicabilidad del almacén en el entorno actual. La función debe devolver `true` si el almacén es aplicable, y `false` de lo contrario. El valor predeterminado es una función que devuelve true: `function() {return true;}`
+* **`store`:** (objeto) El objeto de almacén que se va a registrar como candidato de almacén.
+* **`storeType`:** (String) El nombre del candidato de la tienda. Este valor es necesario al crear una instancia del candidato de tienda.
+* **`priority`:** (Número) Prioridad del candidato a almacén.
+* **`applies`:** (Función) La función a invocar que evalúa la aplicabilidad del almacén en el entorno actual. La función debe devolver `true` si el almacén es aplicable y `false` en caso contrario. El valor predeterminado es una función que devuelve true: `function() {return true;}`
 
 ##### Ejemplos {#example-registerstorecandidate}
 

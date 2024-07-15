@@ -50,7 +50,7 @@ Todos estos puntos de entrada abren el lanzamiento en la consola Sitios, donde p
 
 * Navegar,
 * **Crear** páginas nuevas,
-* Seleccione las páginas existentes y actúe; por ejemplo, **Editar**, abrir **Propiedades**, **Bloquear**, **Copiar**, **Pegar** y **Eliminar**
+* Seleccione las páginas existentes y actúe; por ejemplo, **Editar**, abra **Propiedades**, **Bloquear**, **Copiar**, **Pegar** y **Eliminar**
   ![Navegar por el lanzamiento en la consola Sites desde Administrar contenido](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
 * Utilice el carril **Referencias** para volver a las páginas **Origen de lanzamiento**:
   ![Consola de Sites: origen del lanzamiento](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)

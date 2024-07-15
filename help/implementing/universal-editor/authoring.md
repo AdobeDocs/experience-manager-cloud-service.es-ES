@@ -36,7 +36,7 @@ Para poder crear contenido para una aplicación con el editor universal, el desa
 
 ## Inicio de sesión {#sign-in}
 
-Una vez que la aplicación esté instrumentada para trabajar con el Editor universal, inicie sesión en el Editor universal. Necesita un Adobe ID para iniciar sesión y [tienen acceso al Editor universal.](getting-started.md#request-access)
+Una vez que la aplicación esté instrumentada para trabajar con el Editor universal, inicie sesión en el Editor universal. Necesita un Adobe ID para iniciar sesión y [tener acceso al Editor universal.](getting-started.md#request-access)
 
 Una vez que haya iniciado sesión, introduzca la URL de la página que desea editar en la [barra de ubicación.](#location-bar) para que pueda empezar a editar contenido como [contenido de texto](#text-mode) o [contenido multimedia.](#media-mode)
 
@@ -95,7 +95,7 @@ Seleccione el icono que representa a su usuario para acceder a la configuración
 
 ### Barra de herramientas del editor universal {#universal-editor-toolbar}
 
-La barra de herramientas del Editor universal siempre está presente en la parte superior de la pantalla, justo debajo [el encabezado Experience Cloud.](#experience-cloud-header) Le permite un acceso rápido a otra página para editarla y publicar la actual.
+La barra de herramientas del Editor universal siempre está presente en la parte superior de la pantalla, justo debajo de [ el encabezado del Experience Cloud.](#experience-cloud-header) Le permite un acceso rápido a otra página para editarla y publicar la actual.
 
 ![Barra de herramientas del Editor universal](assets/universal-editor-toolbar.png)
 
@@ -111,7 +111,7 @@ En la página de inicio puede introducir la dirección URL del sitio que desea e
 
 >[!NOTE]
 >
->Cualquier página que desee editar con el editor universal debe ser [instrumentado para admitir el editor universal.](getting-started.md)
+>Cualquier página que desee editar con el editor universal debe estar [instrumentada para admitir el editor universal.](getting-started.md)
 
 #### Barra de ubicación {#location-bar}
 
@@ -125,13 +125,13 @@ La barra de ubicación muestra la dirección de la página que está editando. S
 
 >[!NOTE]
 >
->Cualquier página que desee editar con el editor universal debe ser [instrumentado para admitir el editor universal.](getting-started.md)
+>Cualquier página que desee editar con el editor universal debe estar [instrumentada para admitir el editor universal.](getting-started.md)
 
 #### Configuración del encabezado de autenticación {#authentication-settings}
 
-Seleccione el icono de configuración del encabezado de autenticación si es necesario [establezca un encabezado de autenticación personalizado para el desarrollo local.](/help/implementing/universal-editor/developer-overview.md#auth-header)
+Seleccione el icono de configuración del encabezado de autenticación si necesita [establecer un encabezado de autenticación personalizado con fines de desarrollo local.](/help/implementing/universal-editor/developer-overview.md#auth-header)
 
-![Botón Configuración del encabezado de autenticación](assets/authentication-header-settings.png)
+![Botón de configuración del encabezado de autenticación](assets/authentication-header-settings.png)
 
 #### Configuración del emulador {#emulator}
 
@@ -159,7 +159,7 @@ En el modo de vista previa, la página se procesa en el editor tal como se verí
 
 >[!TIP]
 >
->Utilice la tecla de acceso directo `P` para cambiar al modo de vista previa y desde él.
+>Utilice la tecla de acceso directo `P` para alternar desde y hacia el modo de vista previa.
 
 #### Apertura de la vista previa de la aplicación {#open-app-preview}
 
@@ -179,7 +179,7 @@ Seleccione el botón Publicar para poder publicar los cambios en el contenido pu
 
 >[!TIP]
 >
->Ver el documento [Publicación de contenido con el editor universal](publishing.md) para obtener más información sobre cómo publicar con el editor universal.
+>Consulte el documento [Publicación de contenido con el editor universal](publishing.md) para obtener más información sobre cómo publicar con el editor universal.
 
 ### El Editor {#editor}
 
@@ -187,7 +187,7 @@ El editor ocupa la mayor parte de la ventana y es donde se procesa la página es
 
 ![Editor](assets/editor.png)
 
-Si el editor se encuentra en [modo de previsualización,](#preview-mode) el contenido es navegable y puede seguir los vínculos, pero no puede editar el contenido.
+Si el editor se encuentra en [modo de vista previa,](#preview-mode) el contenido se podrá navegar y podrá seguir los vínculos, pero no podrá editar el contenido.
 
 ### Carril de propiedades {#properties-rail}
 
@@ -231,7 +231,7 @@ Al editar, las opciones del componente seleccionado aparecen en el carril de pro
 
 ![Icono Editar](assets/edit.png)
 
-Al tocar o hacer clic en el botón Editar, se abre [Editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) en una pestaña nueva. Esto le permite acceder a toda la potencia del editor de fragmentos de contenido para editar el fragmento de contenido asociado.
+Al tocar o hacer clic en el botón Editar, se abre [Editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) en una nueva pestaña. Esto le permite acceder a toda la potencia del editor de fragmentos de contenido para editar el fragmento de contenido asociado.
 
 Según las necesidades del flujo de trabajo, es posible que desee editar el fragmento de contenido en el editor universal o directamente en el editor de fragmentos de contenido.
 
@@ -243,15 +243,15 @@ Según las necesidades del flujo de trabajo, es posible que desee editar el frag
 
 Si selecciona un componente de contenedor en el árbol de contenido o en el editor, la opción Añadir aparecerá en el carril de propiedades.
 
-![Icono Agregar](assets/ue-add-component-icon.png)
+![Agregar icono](assets/ue-add-component-icon.png)
 
-Al tocar o hacer clic en el botón Agregar, se abre un menú desplegable de componentes disponibles para [añadir al contenedor seleccionado.](#adding-components)
+Al tocar o hacer clic en el botón Agregar, se abre un menú desplegable de componentes disponibles para [agregar al contenedor seleccionado.](#adding-components)
 
 ![Agregar menú contextual](assets/add-context-menu.png)
 
 >[!TIP]
 >
->Utilice la tecla de acceso directo `A` para añadir un componente a un componente contenedor seleccionado.
+>Utilice la tecla de acceso directo `A` para agregar un componente a un componente contenedor seleccionado.
 
 ##### Eliminar {#delete}
 
@@ -259,7 +259,7 @@ Si selecciona un componente dentro de un componente contenedor en el árbol de c
 
 ![Icono Eliminar](assets/ue-delete-component-icon.png)
 
-Toque o haga clic en el botón Eliminar [elimina el componente.](#deleting-components)
+Al tocar o hacer clic en el botón Eliminar [se elimina el componente.](#deleting-components)
 
 >[!TIP]
 >
@@ -273,9 +273,9 @@ La edición de contenido es sencilla e intuitiva. Al pasar el ratón sobre el co
 
 >[!TIP]
 >
->De forma predeterminada, al tocar o hacer clic en el contenido, se selecciona para editarlo. Si desea navegar por el contenido mediante los siguientes vínculos, cambie a [modo de vista previa.](#preview-mode)
+>De forma predeterminada, al tocar o hacer clic en el contenido, se selecciona para editarlo. Si desea navegar por el contenido mediante los siguientes vínculos, cambie al [modo de vista previa.](#preview-mode)
 
-Según el contenido que seleccione, puede tener diferentes opciones de edición in situ, así como información y opciones adicionales para el contenido en la [carril de propiedades.](#properties-rail)
+Según el contenido que seleccione, es posible que tenga diferentes opciones de edición in situ, así como información y opciones adicionales para el contenido en el carril [properties.](#properties-rail)
 
 ### Edición de texto sin formato {#edit-plain-text}
 
@@ -299,7 +299,7 @@ Puede editar el texto en su lugar haciendo doble clic o pulsando dos veces el co
 
 Para su comodidad, las opciones de formato y los detalles del texto están disponibles en dos lugares.
 
-* El **menú contextual** se abre sobre el bloque de texto enriquecido y ofrece opciones básicas de formato en contexto. Debido a limitaciones de espacio, algunas opciones pueden estar ocultas detrás del botón de los tres puntos.
+* El **menú contextual** se abre sobre el bloque de texto enriquecido y ofrece opciones de formato básicas en contexto. Debido a limitaciones de espacio, algunas opciones pueden estar ocultas detrás del botón de los tres puntos.
 * El **carril de propiedades** muestra todas las opciones de formato disponibles junto con el texto.
 
 Los cambios se guardan automáticamente una vez que el enfoque abandona el campo editado.
@@ -308,18 +308,18 @@ Los cambios se guardan automáticamente una vez que el enfoque abandona el campo
 
 Puede ver sus detalles en el carril de propiedades.
 
-![Edición de medios](assets/ue-edit-media.png)
+![Editando medios](assets/ue-edit-media.png)
 
 1. Toque o haga clic en la previsualización de la imagen seleccionada en el carril de propiedades.
-1. El [selector de recursos](/help/assets/asset-selector.md#using-asset-selector) se abrirá una ventana para que pueda seleccionar un recurso.
+1. Se abre la ventana [selector de recursos](/help/assets/asset-selector.md#using-asset-selector) para que pueda seleccionar un recurso.
 1. Seleccione para seleccionar un nuevo recurso.
-1. Seleccionar **Seleccionar** para volver al carril de propiedades en el que se reemplazó el recurso.
+1. Seleccione **Select** para volver al carril de propiedades en el que se reemplazó el recurso.
 
 Los cambios se guardan automáticamente en el contenido.
 
 ### Edición de fragmentos de contenido {#edit-content-fragment}
 
-Si selecciona una [Fragmento de contenido,](/help/sites-cloud/administering/content-fragments/overview.md) puede editar sus detalles en el carril propiedades.
+Si selecciona un [fragmento de contenido](/help/sites-cloud/administering/content-fragments/overview.md), podrá editar sus detalles en el carril de propiedades.
 
 ![Edición de un fragmento de contenido](assets/ue-edit-cf.png)
 
@@ -329,7 +329,7 @@ Si selecciona un campo relacionado con un fragmento de contenido, el fragmento d
 
 Los cambios se guardan automáticamente una vez que el enfoque abandona el campo editado en el carril de propiedades.
 
-Si desea editar el fragmento de contenido en la [Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md) haga clic en el botón [botón editar](#edit) en el carril de modo.
+Si en su lugar desea editar el fragmento de contenido en [editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md), haga clic en el [botón de edición](#edit) en el carril de modo.
 
 Según las necesidades del flujo de trabajo, es posible que desee editar el fragmento de contenido en el editor universal o directamente en el editor de fragmentos de contenido.
 
@@ -338,13 +338,13 @@ Según las necesidades del flujo de trabajo, es posible que desee editar el frag
 1. Seleccione un componente de contenedor en el árbol de contenido o en el editor.
 1. A continuación, seleccione el icono de añadir en el carril de propiedades.
 
-   ![Selección de un componente para añadirlo a un contenedor](assets/ue-add-component.png)
+   ![Seleccionar un componente para agregarlo a un contenedor](assets/ue-add-component.png)
 
 El componente se inserta en el contenedor y se puede editar en el editor.
 
 >[!TIP]
 >
->Utilice la tecla de acceso directo `A` para añadir un componente al contenedor seleccionado.
+>Utilice la tecla de acceso directo `A` para agregar un componente al contenedor seleccionado.
 
 ### Eliminación de componentes de contenedores {#deleting-components}
 
@@ -353,7 +353,7 @@ El componente se inserta en el contenedor y se puede editar en el editor.
 1. A continuación, en el árbol de contenido, seleccione un componente dentro del contenedor.
 1. Seleccione el icono Eliminar en el carril de propiedades.
 
-   ![Eliminación de un componente](assets/ue-delete-component.png)
+   ![Eliminando un componente](assets/ue-delete-component.png)
 
 El componente seleccionado se ha eliminado.
 
@@ -364,7 +364,7 @@ El componente seleccionado se ha eliminado.
 ### Reordenación de componentes en contenedores {#reordering-components}
 
 1. Seleccione un componente de contenedor en el árbol de contenido o en el editor.
-1. Si no está ya en [modo de árbol de contenido,](#content-tree-mode) cambiar a él.
+1. Si aún no está en [modo de árbol de contenido,](#content-tree-mode) cambie a él.
 1. Seleccione el icono de cheurón del contenedor para expandir su contenido en el árbol de contenido.
 1. Arrastre los iconos de control junto a los componentes dentro del contenedor para mostrar que puede reorganizarlos. Arrastre los componentes para reordenarlos dentro del contenedor.
 
@@ -378,10 +378,10 @@ Los componentes se reordenan tanto en el árbol de contenido como en el editor
 
 Cuando haya terminado de editar el contenido, a menudo querrá navegar por él para ver cómo queda dentro del contenido de otras páginas. En el [modo de vista previa](#preview-mode), puede hacer clic en los vínculos para navegar por el contenido como lo haría un lector. El contenido se muestra en el editor tal y como se publicaría.
 
-En el modo de vista previa, tocar o hacer clic en el contenido reacciona como lo haría con un lector. Si desea seleccionar el contenido para editarlo, desactive [modo de vista previa.](#preview-mode)
+En el modo de vista previa, tocar o hacer clic en el contenido reacciona como lo haría con un lector. Si desea seleccionar el contenido para editarlo, salga del [modo de vista previa.](#preview-mode)
 
 ## Recursos adicionales {#additional-resources}
 
 Para obtener más información acerca del editor universal, consulte estos documentos.
 
-* [Publicación de contenido con el editor universal](publishing.md) - Descubra cómo el editor universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
+* [Publicación de contenido con el editor universal](publishing.md): aprenda cómo el editor universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.

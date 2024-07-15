@@ -17,25 +17,25 @@ ht-degree: 1%
 
 >[!INFO]
 >
->Esta documentación hace referencia a una versión obsoleta de la herramienta. Para obtener más información sobre la versión más reciente, consulte [Asignación de usuarios y migración de principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>Esta documentación hace referencia a una versión obsoleta de la herramienta. Para obtener más información sobre la versión más reciente, consulte [Asignación de usuarios y migración de entidades de seguridad](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 La herramienta de asignación de usuarios utiliza una API que le permite buscar usuarios de Adobe Identity Management System (IMS) por correo electrónico y devolver sus ID de IMS. Esta API requiere que el usuario cree un ID de cliente para su organización, un secreto de cliente y un token de acceso o portador.
 
 ## Configuración de la herramienta de asignación de usuarios {#setting-up-user-mapping}
 
-**Requisito previo:** AEM La asignación de usuarios requiere que cada usuario asignado a su ID de IMS tenga una dirección de correo electrónico en su perfil en, y en IMS. Incluso si el usuario utiliza una dirección de correo electrónico como ID de usuario para iniciar sesión, la asignación no funciona para ese usuario a menos que la dirección de correo electrónico también esté en el perfil y también en IMS.
+AEM **Requisito previo:** La asignación de usuarios requiere que cada usuario que se asigne a su ID de IMS tenga una dirección de correo electrónico en su perfil en y en IMS. Incluso si el usuario utiliza una dirección de correo electrónico como ID de usuario para iniciar sesión, la asignación no funciona para ese usuario a menos que la dirección de correo electrónico también esté en el perfil y también en IMS.
 
 Siga los pasos a continuación para configurar esto:
 
-1. Vaya a [Consola de Adobe Developer](https://developer.adobe.com/console/) con su Adobe ID.
+1. Vaya a [Adobe Developer Console](https://developer.adobe.com/console/) con su Adobe ID.
 1. Cree un proyecto o abra uno existente.
-1. Añadir una API: haga clic en **Agregar al proyecto** y seleccione **API**
+1. Agregar una API: haga clic en **Agregar al proyecto** y seleccione **API**
 1. Elija la API de administración de usuarios. Debe tener permisos de administrador del sistema para que esta opción esté disponible.
 1. Cree una credencial JWT.
-1. Genere un par de claves o cargue una clave pública (rsa no sirve). Hay un botón, **Generar un par de claves pública y privada** que crea este par de claves automáticamente. Asegúrese de guardar las claves pública y privada.
+1. Genere un par de claves o cargue una clave pública (rsa no sirve). Hay un botón **Generar un par de claves pública y privada** que crea este par de claves automáticamente. Asegúrese de guardar las claves pública y privada.
 1. Vaya a la API de administración de usuarios.
 1. Genere un token de acceso (o token de portador) pegando el contenido de su clave privada en el cuadro de texto y haciendo clic en **Generar token**.
-1. Guarde toda esta información, como **ID de cliente**, **Secreto del cliente**, **ID de cuenta técnica**, **Correo electrónico de cuenta técnica**, **ID de organización**, y **Token de acceso** de forma segura.
+1. Guarde toda esta información, como **ID de cliente**, **Secreto de cliente**, **ID de cuenta técnica**, **correo electrónico de cuenta técnica**, **ID de organización** y **token de acceso**, de forma segura.
 
 ## Acceso a la interfaz de usuario para la herramienta de asignación de usuarios {#user-interface}
 
@@ -45,35 +45,35 @@ La herramienta de asignación de usuarios está integrada en la herramienta de t
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access1.png)
 
-1. Haga clic en **Asignación de usuarios** Tarjeta de.
+1. Haga clic en la tarjeta **Asignación de usuarios**.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access2.png)
 
-1. Clic **Crear configuración de asignación de usuarios**.
+1. Haga clic en **Crear configuración de asignación de usuarios**.
 
    >[!NOTE]
    >Si omite este paso, la asignación de usuarios y grupos se omitirá durante la fase de extracción.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access5.png)
 
-   Rellene los campos en **Configuración de API de User Management**, como se describe a continuación.
+   Rellene los campos en **Configuración de la API de administración de usuarios**, tal como se describe a continuación.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access3.png)
 
 
-   * **ID de organización**: introduzca el ID de organización de Adobe Identity Management System (IMS) para la organización a la que se están migrando los usuarios.
+   * **Org ID**: escriba el identificador de organización de Adobe Identity Management System (IMS) para la organización a la que se están migrando los usuarios.
 
      >[!NOTE]
-     >Para obtener el ID de organización, inicie sesión en [Admin Console](https://adminconsole.adobe.com/) y elija su organización (en el área superior derecha) si pertenece a más de una. El ID de organización se encuentra en la dirección URL de esa página, con el formato siguiente `xx@AdobeOrg`, donde xx es el ID de organización de IMS. También puede encontrar el ID de organización en la variable [Consola de Adobe Developer](https://developer.adobe.com/console/) página donde se genera el token de acceso.
+     >Para obtener el identificador de organización, inicia sesión en [Admin Console](https://adminconsole.adobe.com/) y elige tu organización (en el área superior derecha) si perteneces a más de uno. El identificador de organización se encuentra en la dirección URL de esa página, con formato como `xx@AdobeOrg`, donde xx es el identificador de organización de IMS. También puede encontrar el identificador de organización en la página [Adobe Developer Console](https://developer.adobe.com/console/), donde genera el token de acceso.
 
-   * **ID de cliente**: introduzca el ID de cliente que guardó desde el paso de instalación.
+   * **ID de cliente**: escriba el ID de cliente que guardó desde el paso de instalación.
 
-   * **Token de acceso**: introduzca el token de acceso que guardó desde el paso Configuración.
+   * **Token de acceso**: escriba el token de acceso que guardó desde el paso de instalación.
 
      >[!NOTE]
-     >El token de acceso caduca cada 24 horas y se debe crear uno nuevo. Para crear un token, vuelva a [Consola de Adobe Developer](https://developer.adobe.com/console/), elija el proyecto y haga clic en **API de administración de usuarios** y pegue la misma clave privada en el cuadro.
+     >El token de acceso caduca cada 24 horas y se debe crear uno nuevo. Para crear un token, vuelve a [Adobe Developer Console](https://developer.adobe.com/console/), elige tu proyecto, haz clic en **API de administración de usuarios** y pega la misma clave privada en el cuadro.
 
-1. Después de rellenar los campos, haga clic en **Probar configuración** para probar la conexión al servicio de API de administración de usuarios. Si la conexión se ha realizado correctamente, puede hacer clic en **Guardar** para guardar la configuración.
+1. Después de rellenar los campos, haga clic en **Probar configuración** para probar la conexión con el servicio de API de administración de usuarios. Si la conexión se ha realizado correctamente, puede hacer clic en **Guardar** para guardar la configuración.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access4.png)
 
@@ -81,28 +81,28 @@ La herramienta de asignación de usuarios está integrada en la herramienta de t
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-landing4.png)
 
-1. Clic **Inicio** del cuadro de diálogo para iniciar el proceso Asignación de usuarios.
+1. Haga clic en **Iniciar** en el cuadro de diálogo para iniciar el proceso de asignación de usuarios.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
 
-   Muestra el **Estado** as **EN EJECUCIÓN**.
+   Muestra **Status** como **RUNNING**.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-start1.png)
 
 
-1. Una vez finalizada la asignación de usuarios, haga clic en **Resultados** para ver el resumen.
+1. Una vez completada la asignación de usuarios, haga clic en **Resultados** para ver el resumen.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
 
    >[!IMPORTANT]
    >
-   >* Una vez finalizada la asignación de usuarios, puede volver a la página Migración de contenido con la ruta de exploración. La tarjeta Asignación de usuarios muestra el estado y la marca de tiempo. Clic **Transferencia de contenido** para poder crear un conjunto de migración para ejecutar la extracción. Consulte [Ejecución de la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) para obtener más información.
+   >* Una vez finalizada la asignación de usuarios, puede volver a la página Migración de contenido con la ruta de exploración. La tarjeta Asignación de usuarios muestra el estado y la marca de tiempo. Haga clic en **Transferencia de contenido** para poder crear un conjunto de migración y ejecutar la extracción. Consulte [Ejecución de la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) para obtener más información.
 
 ### Reanudación del proceso de asignación de usuarios {#resume-user-mapping-process}
 
 Si el proceso de asignación de usuarios se detiene debido a cualquiera de las siguientes razones:
 
-* La opción **Detener asignación de usuarios** fue seleccionado por el usuario.
+* El usuario seleccionó la opción **Detener asignación de usuarios**.
 * El token de acceso caducó durante el proceso.
 * O por alguna otra razón.
 
@@ -111,21 +111,21 @@ Si el proceso de asignación de usuarios se detiene debido a cualquiera de las s
 
 Siga los pasos a continuación para reanudar el proceso de asignación de usuarios:
 
-1. Clic **Ver registro** para revisar el registro de asignación de usuarios y comprobar el progreso guardado.
+1. Haga clic en **Ver registro** para revisar el registro de asignación de usuarios y comprobar el progreso guardado.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping1.png)
 
-1. Clic **Iniciar asignación de usuarios** para reanudar desde donde lo dejó.
+1. Vuelva a hacer clic en el botón **Iniciar asignación de usuarios** para reanudarlo desde donde lo dejó.
 
    >[!NOTE]
    >Asegúrese de que el token de acceso sigue siendo válido o se ha actualizado antes de reiniciar.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping2.png)
 
-1. Clic **Inicio** del cuadro de diálogo para reanudar el proceso Asignación de usuarios.
+1. Haga clic en **Iniciar** en el cuadro de diálogo para reanudar el proceso de asignación de usuarios.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
 
-   Una vez completado el proceso de asignación de usuarios, puede ver el **Estado** as **FINALIZADO** para esa configuración específica.
+   Una vez completado el proceso de asignación de usuarios, puede ver el **estado** como **FINALIZADO** para esa configuración específica.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)

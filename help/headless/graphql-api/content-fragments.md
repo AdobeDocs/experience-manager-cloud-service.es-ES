@@ -33,7 +33,7 @@ El uso de la API de GraphQL en AEM permite la entrega eficiente de fragmentos de
 
 >[!NOTE]
 >
->Para obtener la información más reciente sobre las API de Experience Manager, visite también [API de Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+>Para obtener la información más reciente sobre las API de Experience Manager, visita también [API de Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 ## La API de GraphQL {#graphql-api}
 
@@ -167,7 +167,7 @@ Además, el usuario debe tener acceso a un extremo de GraphQL para poder ejecuta
 
 GraphQL es una API con establecimiento inflexible de tipos, lo que significa que los datos deben estar claramente estructurados y organizados por tipo.
 
-La especificación de GraphQL proporciona una serie de directrices sobre cómo crear una API robusta para buscar datos en una instancia determinada. Para ello, un cliente debe recuperar la variable [Esquema](#schema-generation), que contiene todos los tipos necesarios para una consulta.
+La especificación de GraphQL proporciona una serie de directrices sobre cómo crear una API robusta para buscar datos en una instancia determinada. Para ello, un cliente debe obtener el [Esquema](#schema-generation), que contiene todos los tipos necesarios para una consulta.
 
 Para los fragmentos de contenido, los esquemas (estructura y tipos) de GraphQL se basan en [Modelos de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) **habilitados** y sus tipos de datos.
 
@@ -240,9 +240,9 @@ Dentro del esquema hay campos individuales, de dos categorías básicas:
 
   Una selección de [Tipos de datos](#Data-types) se utiliza para crear campos en función de cómo configure el modelo de fragmentos de contenido. Los nombres de campo se toman del campo **Nombre de propiedad** de la pestaña **Tipo de datos**.
 
-   * También hay que tener en cuenta el ajuste **Procesar como**, ya que los usuarios pueden configurar determinados tipos de datos. Por ejemplo, un campo de texto de una sola línea se puede configurar para que contenga varios textos de una sola línea eligiendo `multifield` en la lista desplegable.
+   * También hay que tener en cuenta el ajuste **Procesar como**, ya que los usuarios pueden configurar determinados tipos de datos. Por ejemplo, se puede configurar un campo de texto de una sola línea para que contenga varios textos de una sola línea eligiendo `multifield` de la lista desplegable.
 
-* GraphQL AEM para la creación de informes también genera varios [campos de ayuda](#helper-fields).
+* GraphQL AEM para la también genera [campos de ayuda](#helper-fields).
 
 ### Tipos de datos {#data-types}
 
@@ -258,13 +258,13 @@ GraphQL para AEM admite una lista de tipos. Se representan todos los tipos de da
 | Lista desglosada | `String` | Se utiliza para mostrar una opción de una lista de opciones definidas en la creación del modelo |
 | Etiquetas | `[String]` | Se utiliza para mostrar una lista de cadenas que representan las etiquetas utilizadas en AEM |
 | Referencia de contenido | `String`, `[String]` | Se utiliza para mostrar la ruta hacia otro recurso en AEM |
-| Referencia al fragmento |  *Un tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo, referenciado directamente <br><br>Multicampo, con un tipo referenciado: `[Model]` - Matriz de tipo `Model`, referenciado directamente desde la matriz <br><br>Multicampo, con varios tipos referenciados: `[AllFragmentModels]` : matriz de todos los tipos de modelo, a la que se hace referencia desde matriz con tipo de unión |  Se utiliza para hacer referencia a uno o más fragmentos de contenido de ciertos tipos de modelo, definidos cuando se creó el modelo |
+| Referencia al fragmento |  *Un tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo, al que se hace referencia directamente <br><br>Multicampo, con un tipo al que se hace referencia: `[Model]` - Matriz de tipo `Model`, al que se hace referencia directamente desde la matriz <br><br>Multicampo, con varios tipos a los que se hace referencia: `[AllFragmentModels]` - Matriz de todos los tipos de modelo, a la que se hace referencia desde la matriz con tipo de unión |  Se utiliza para hacer referencia a uno o más fragmentos de contenido de ciertos tipos de modelo, definidos cuando se creó el modelo |
 
 {style="table-layout:auto"}
 
 ### Campos de ayuda {#helper-fields}
 
-Además de los tipos de datos de los campos generados por el usuario, GraphQL AEM para la también genera varios *ayudante* campos para ayudar a identificar un fragmento de contenido o para proporcionar información adicional acerca de un fragmento de contenido.
+Además de los tipos de datos de los campos generados por el usuario, GraphQL AEM para la distribución de contenido también genera varios campos *Helper* para ayudar a identificar un fragmento de contenido o para proporcionar información adicional acerca de un fragmento de contenido.
 
 Estos [campos de ayuda](#helper-fields) se marcan con un `_` que los precede para distinguir entre lo que ha definido el usuario y lo que se ha generado automáticamente.
 
@@ -370,7 +370,7 @@ El campo `_variations` se ha implementado para simplificar la consulta de las va
 
 >[!NOTE]
 >
->El `_variations` el campo no contiene un `master` variación, como técnicamente los datos originales (referenciados como *Principal* en la interfaz de usuario) no se considera una variación explícita.
+>El campo `_variations` no contiene una variación `master`, ya que técnicamente los datos originales (a los que se hace referencia como *Principal* en la interfaz de usuario) no se consideran una variación explícita.
 
 Consulte [Consulta de muestra: todas las ciudades con una variación con nombre](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation).
 
@@ -508,7 +508,7 @@ Algunos tipos también permiten especificar opciones adicionales que modifican c
 
 | Opción | Tipo(s) | Descripción |
 |--- |--- |--- |
-| `_ignoreCase` | `String` | Omite las mayúsculas y minúsculas de una cadena como, por ejemplo, un valor de `time` matches `TIME`, `time`, `tImE`, ... |
+| `_ignoreCase` | `String` | Omite las mayúsculas y minúsculas de una cadena; por ejemplo, un valor de `time` coincide con `TIME`, `time`, `tImE`, ... |
 | `_sensitiveness` | `Float` | Permite un cierto margen para que los valores `float` se consideren iguales (para sortear las limitaciones técnicas debidas a la representación interna de los valores `float`; debe evitarse, ya que esta opción podría repercutir negativamente en el rendimiento |
 
 Las expresiones se pueden combinar en un conjunto con la ayuda de un operador lógico (`_logOp`):
@@ -520,7 +520,7 @@ Cada campo se puede filtrar por su propio conjunto de expresiones. Los conjuntos
 
 Una definición de filtro (que se transfiere como el argumento `filter` a una consulta) contiene lo siguiente:
 
-* Una subdefinición para cada campo (se puede acceder al campo a través de su nombre, por ejemplo, hay un `lastName` en el filtro para el `lastName` campo en el Tipo de datos (campo)
+* Una subdefinición para cada campo (se puede acceder al campo a través de su nombre, por ejemplo, hay un campo `lastName` en el filtro para el campo `lastName` en el tipo de datos (campo))
 * Cada subdefinición contiene la matriz `_expressions`, que proporciona el conjunto de expresiones, y el campo `_logOp` que define el operador lógico con el que deben combinarse las expresiones
 * Cada expresión está definida por el valor (campo `value`) y el operador (campo `_operator`), el contenido de un campo debe compararse con
 
@@ -716,7 +716,7 @@ query {
 
 La entrega de imágenes optimizadas para la web permite utilizar una consulta de Graphql para lo siguiente:
 
-* Solicitar una URL a una imagen de recurso DAM (a la que hace referencia un **Referencia de contenido**)
+* Solicitar una URL a una imagen de recurso DAM (a la que hace referencia una **referencia de contenido**)
 
 * Pase parámetros con la consulta para que se genere y devuelva automáticamente una representación específica de la imagen
 
@@ -736,17 +736,17 @@ Esto permite crear de forma dinámica representaciones de imágenes para la entr
 
 La solución de GraphQL significa que puede hacer lo siguiente:
 
-* Solicite una URL: use `_dynamicUrl` en el `ImageRef` reference
+* Solicitar una dirección URL: usar `_dynamicUrl` en la referencia `ImageRef`
 
-* Pasar parámetros: añadir `_assetTransform` al encabezado de la lista donde se definen los filtros
+* Pasar parámetros: agregar `_assetTransform` al encabezado de la lista donde se definen los filtros
 
 >[!NOTE]
 >
->A **Referencia de contenido** se puede utilizar tanto para recursos DAM como para recursos Dynamic Media. Al recuperar la URL adecuada se utilizan parámetros diferentes:
+>Se puede usar una **referencia de contenido** tanto para los recursos DAM como para los Dynamic Media. Al recuperar la URL adecuada se utilizan parámetros diferentes:
 >* `_dynamicUrl` : un recurso DAM
 >* `_dmS7Url` : un recurso de Dynamic Media
 > 
->Si el recurso al que se hace referencia es un recurso DAM, el valor de `_dmS7Url` será `null`. Consulte [Entrega de recursos de Dynamic Media por dirección URL en consultas de GraphQL](#dynamic-media-asset-delivery-by-url).
+>Si el recurso al que se hace referencia es un recurso DAM, el valor de `_dmS7Url` será `null`. Ver [entrega de recursos de Dynamic Media por dirección URL en consultas de GraphQL](#dynamic-media-asset-delivery-by-url).
 
 ### Estructura de la solicitud de transformación {#structure-transformation-request}
 
@@ -924,7 +924,7 @@ Existen las siguientes limitaciones:
 
 ## Entrega de recursos de Dynamic Media por dirección URL en consultas de GraphQL{#dynamic-media-asset-delivery-by-url}
 
-Los fragmentos de contenido de GraphQL AEM AEM para la le permiten solicitar una URL a un recurso de Dynamic Media (Scene7) de la que se hace referencia mediante una URL **Referencia de contenido**).
+Los fragmentos de contenido de GraphQL AEM AEM para la le permiten solicitar una dirección URL a un recurso de Dynamic Media (Scene7) de la aplicación (al que hace referencia una **referencia de contenido**).
 
 La solución de GraphQL significa que puede hacer lo siguiente:
 
@@ -932,18 +932,18 @@ La solución de GraphQL significa que puede hacer lo siguiente:
 
 >[!NOTE]
 >
->Para ello, debe tener un [Configuración de nube de Dynamic Media](/help/assets/dynamic-media/config-dm.md).
+>Para ello, necesita tener una [configuración de nube de Dynamic Media](/help/assets/dynamic-media/config-dm.md).
 >
->Esto agrega el `dam:scene7File` y `dam:scene7Domain` atributos en los metadatos del recurso cuando se crea.
+>Esto agrega los atributos `dam:scene7File` y `dam:scene7Domain` a los metadatos del recurso cuando se crea.
 
 >[!NOTE]
 >
->A **Referencia de contenido** se puede utilizar tanto para recursos DAM como para recursos Dynamic Media. Al recuperar la URL adecuada se utilizan parámetros diferentes:
+>Se puede usar una **referencia de contenido** tanto para los recursos DAM como para los Dynamic Media. Al recuperar la URL adecuada se utilizan parámetros diferentes:
 >
 >* `_dmS7Url` : un recurso de Dynamic Media
 >* `_dynamicUrl` : un recurso DAM
 > 
->Si el recurso al que se hace referencia es un recurso de Dynamic Media, el valor de `_dynamicURL` será `null`. Consulte [entrega de imágenes optimizadas para la web en consultas de GraphQL](#web-optimized-image-delivery-in-graphql-queries).
+>Si el recurso al que se hace referencia es un recurso de Dynamic Media, el valor de `_dynamicURL` será `null`. Ver [entrega de imágenes optimizadas para la web en consultas de GraphQL](#web-optimized-image-delivery-in-graphql-queries).
 
 ### Consulta de muestra para la entrega de recursos de Dynamic Media por dirección URL: referencia de imagen{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
@@ -1087,18 +1087,18 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
 
    * Para la entrega de imágenes:
 
-      * `_authorURL`AEM : la dirección URL completa del recurso de imagen en el autor de la
-      * `_publishURL`AEM : la dirección URL completa del recurso de imagen en la publicación de la
+      * AEM `_authorURL`: la dirección URL completa del recurso de imagen en el autor de la
+      * AEM `_publishURL`: la dirección URL completa del recurso de imagen en Publish, en la que se ha producido la
 
       * Para [entrega de imágenes optimizadas para la web](#web-optimized-image-delivery-in-graphql-queries) (de recursos DAM):
 
-         * `_dynamicUrl`: la dirección URL completa del recurso DAM optimizado para la web en el `ImageRef` reference
+         * `_dynamicUrl`: la dirección URL completa del recurso DAM optimizado para la web en la referencia `ImageRef`
 
            >[!NOTE]
            >
-           >`_dynamicUrl` es la URL preferida para usar en recursos DAM optimizados para la web y debe reemplazar el uso de `_path`, `_authorUrl`, y `_publishUrl` siempre que sea posible.
+           >`_dynamicUrl` es la dirección URL preferida que se usa para los recursos DAM optimizados para la web y debe reemplazar el uso de `_path`, `_authorUrl` y `_publishUrl` siempre que sea posible.
 
-         * `_assetTransform`: para pasar parámetros en el encabezado de la lista donde se definen los filtros
+         * `_assetTransform`: para pasar parámetros en el encabezado de lista donde se definen los filtros
 
          * Consulte:
 
@@ -1106,13 +1106,13 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
 
             * [Consulta de muestra para entrega de imágenes optimizadas para la web con un solo parámetro especificado](#web-optimized-image-delivery-single-query-variable)
 
-      * `_dmS7Url`: en el `ImageRef` referencia para la entrega de la dirección URL a un [recurso de Dynamic Media](#dynamic-media-asset-delivery-by-url)
+      * `_dmS7Url`: en la referencia `ImageRef` para el envío de la URL a un [recurso de Dynamic Media](#dynamic-media-asset-delivery-by-url)
 
-         * Consulte [Consulta de muestra para la entrega de recursos de Dynamic Media por dirección URL: ImageRef](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+         * Ver [Consulta de muestra para la entrega de recursos de Dynamic Media por dirección URL: ImageRef](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
-         * Consulte [Consulta de muestra para la entrega de recursos de Dynamic Media por dirección URL: varias referencias](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+         * Ver [Consulta de muestra para la entrega de recursos de Dynamic Media por dirección URL: varias referencias](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
-   * `_tags`: para revelar los ID de los fragmentos de contenido o las variaciones que contienen etiquetas; se trata de una matriz de `cq:tags` identificadores.
+   * `_tags`: para revelar los identificadores de los fragmentos de contenido o las variaciones que contienen etiquetas; se trata de una matriz de identificadores `cq:tags`.
 
       * Consulte [Consulta de muestra: nombres de todas las ciudades etiquetadas como escapadas](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
       * Consulte [Consulta de muestra para variaciones de fragmentos de contenido de un modelo determinado que tienen una etiqueta específica adjunta](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
@@ -1155,7 +1155,7 @@ Para acceder al punto de conexión de GraphQL desde un sitio web externo, debe c
 
 Consulte [Autenticación para consultas de GraphQL de AEM remotas en fragmentos de contenido](/help/headless/security/authentication.md).
 
-## Restricciones {#limitations}
+## Limitaciones {#limitations}
 
 Para protegerse de posibles problemas, se han impuesto limitaciones predeterminadas a las consultas:
 
@@ -1169,7 +1169,7 @@ También debe tener en cuenta lo siguiente:
 
    * Entonces, ¿dónde?
 
-      * Dos (o más modelos) se utilizan como posibles referencias; cuando se definen como un permitido **Tipo de modelo** en la Referencia del fragmento de contenido.
+      * Dos (o más modelos) se usan como posibles referencias; cuando se definen como un **Tipo de modelo** permitido en la referencia de fragmento de contenido.
 
      y:
 
@@ -1181,12 +1181,12 @@ También debe tener en cuenta lo siguiente:
 
    * Por ejemplo:
 
-      * Cuando hay dos (o más) fragmentos con modelos diferentes (por ejemplo, `M1`, `M2`) se utilizan como posibles referencias (Referencia de contenido o Referencia de fragmento) de otro fragmento; por ejemplo, `Fragment1` `MultiField/List`
-      * Y estos dos fragmentos con diferentes modelos (`M1`, `M2`) tienen campos con el mismo nombre, pero de tipos diferentes.
+      * Cuando se usan dos (o más) fragmentos con modelos diferentes (por ejemplo, `M1`, `M2`) como posibles referencias (Referencia de contenido o Referencia de fragmento) de otro fragmento; por ejemplo, `Fragment1` `MultiField/List`
+      * Y estos dos fragmentos con diferentes modelos (`M1`, `M2`) tienen campos con el mismo nombre, pero de diferentes tipos.
 Como ejemplo:
-         * `M1.Title` as `Text`
-         * `M2.Title` as `Text/MultiField`
-      * Entonces, se producirá un error de conflicto de campos si la consulta de GraphQL contiene el `Title` field.
+         * `M1.Title` como `Text`
+         * `M2.Title` como `Text/MultiField`
+      * Entonces, se producirá un error de conflicto de campos si la consulta de GraphQL contiene el campo `Title`.
 
 ## Preguntas frecuentes {#faqs}
 

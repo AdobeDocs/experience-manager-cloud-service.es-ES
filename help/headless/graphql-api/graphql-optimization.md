@@ -37,7 +37,7 @@ Las consultas persistentes de GraphQL ayudan a reducir el rendimiento de la ejec
 
 Consulte:
 
-* [Consultas de GraphQL persistentes](/help/headless/graphql-api/persisted-queries.md).
+* [Consultas persistentes de GraphQL](/help/headless/graphql-api/persisted-queries.md).
 * [Formación para utilizar GraphQL con AEM: contenido y consultas de muestra](/help/headless/graphql-api/sample-queries.md)
 
 ### Estrategia de caché {#cache-strategy}
@@ -48,7 +48,7 @@ También se pueden utilizar varios métodos de almacenamiento en caché para la 
 
 **Recomendación**
 
-[AEM Dispatcher](/help/implementing/dispatcher/overview.md) AEM es la caché de primer nivel dentro del servicio de, antes de la caché de CDN.
+AEM [Dispatcher AEM](/help/implementing/dispatcher/overview.md) es la caché de primer nivel dentro del servicio de la, antes de la caché de la red de distribución de contenido (CDN).
 
 **Referencia adicional**
 
@@ -60,7 +60,7 @@ Consulte:
 
 **Recomendación**
 
-Las consultas GraphQL y sus respuestas JSON se pueden almacenar en caché si están dirigidas como `GET` solicitudes al utilizar una CDN. Por el contrario, las solicitudes sin almacenar en caché pueden ser muy (recursos) costosas y lentas de procesar, con el potencial de tener más efectos perjudiciales en los recursos del origen.
+Las consultas GraphQL y sus respuestas JSON se pueden almacenar en caché si se dirigen como `GET` solicitudes al utilizar una CDN. Por el contrario, las solicitudes sin almacenar en caché pueden ser muy (recursos) costosas y lentas de procesar, con el potencial de tener más efectos perjudiciales en los recursos del origen.
 
 **Referencia adicional**
 
@@ -74,7 +74,7 @@ Consulte:
 
 Cuando se utilizan consultas GraphQL persistentes con una CDN, se recomienda establecer los encabezados de control de caché HTTP adecuados.
 
-Cada consulta persistente puede tener su propio conjunto específico de encabezados de control de caché. Los encabezados se pueden configurar a través de [API de GraphQL](/help/headless/graphql-api/content-fragments.md) o el [AEM IDE de GraphiQL de](/help/headless/graphql-api/graphiql-ide.md).
+Cada consulta persistente puede tener su propio conjunto específico de encabezados de control de caché. Los encabezados se pueden establecer a través de la [API de GraphQL AEM](/help/headless/graphql-api/content-fragments.md) o el [IDE de GraphiQL de](/help/headless/graphql-api/graphiql-ide.md).
 
 **Referencia adicional**
 
@@ -146,7 +146,7 @@ El tiempo de respuesta de las consultas complejas, con grandes conjuntos de resu
 GraphQL en AEM ofrece compatibilidad con dos tipos de paginación:
 
 * [paginación basada en límite/desplazamiento](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
-Se utiliza para consultas de lista; terminan con `List`; por ejemplo, `articleList`.
+Se usa para consultas de lista; terminan con `List`; por ejemplo, `articleList`.
 Para utilizarlo, debe proporcionar la posición del primer elemento que se va a devolver (la variable `offset`) y el número de elementos que se van a devolver (la variable `limit`, o tamaño de página).
 
 * [paginación basada en cursor](/help/headless/graphql-api/content-fragments.md#paginated-first-after) (representada por `first`y `after`)
@@ -290,7 +290,7 @@ El anidamiento profundo también puede tener efectos adversos en la gobernanza d
 
 ### No generar todos los formatos (elementos de texto multilínea) {#do-not-output-all-formats}
 
-AEM GraphQL puede devolver texto creado en **[Texto de varias líneas](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** Tipo de datos, en varios formatos: Texto enriquecido, Texto simple y Markdown.
+AEM GraphQL puede devolver texto creado en el tipo de datos **[Texto de varias líneas](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** en varios formatos: Texto enriquecido, Texto simple y Markdown.
 
 La salida de los tres formatos aumenta el tamaño de la salida de texto en JSON en un factor de tres. Esto, combinado con conjuntos de resultados generalmente grandes de consultas muy amplias, puede producir respuestas JSON muy grandes que, por lo tanto, tardan mucho tiempo en calcularse. Es mejor limitar la salida solo a los formatos de texto necesarios para procesar el contenido.
 

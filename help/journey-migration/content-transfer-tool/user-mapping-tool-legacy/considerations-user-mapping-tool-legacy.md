@@ -17,13 +17,13 @@ ht-degree: 1%
 
 >[!INFO]
 >
->Esta documentación hace referencia a una versión obsoleta de la herramienta. Para obtener más información sobre la versión más reciente, consulte [Asignación de usuarios y migración de principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>Esta documentación hace referencia a una versión obsoleta de la herramienta. Para obtener más información sobre la versión más reciente, consulte [Asignación de usuarios y migración de entidades de seguridad](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 ## Casos excepcionales {#exceptional-cases}
 
 Se registran los siguientes casos específicos:
 
-1. Si un usuario no tiene dirección de correo electrónico en la `profile/email` campo de su *jcr* , el usuario o grupo en cuestión se migra pero no se asigna. Este es el caso incluso si la dirección de correo electrónico se utiliza como nombre de usuario para iniciar sesión.
+1. Si un usuario no tiene una dirección de correo electrónico en el campo `profile/email` de su nodo *jcr*, el usuario o grupo en cuestión se migra pero no se asigna. Este es el caso incluso si la dirección de correo electrónico se utiliza como nombre de usuario para iniciar sesión.
 
 1. Si no se encuentra un correo electrónico en el sistema Identity Management System (IMS) de Adobe para el ID de organización utilizado (o, si no se puede recuperar el ID de IMS), se migra el usuario o grupo, pero no se asigna.
 
@@ -35,7 +35,7 @@ Se registran los siguientes casos específicos:
 
 ## Consideraciones adicionales {#additional-considerations}
 
-* Si la configuración **Borrar contenido existente en la instancia de Cloud antes de la ingesta** se ha configurado, se eliminan los usuarios ya transferidos en la instancia de Cloud Service. También se elimina todo el repositorio existente y se crea un nuevo repositorio en el que se ingiere contenido. Esta acción también restablece todos los ajustes, incluidos los permisos, en la instancia del Cloud Service de destino y es verdadera para un usuario administrador añadido a **administradores** grupo. El usuario administrador debe leerse en el **administradores** para recuperar el token de acceso para CTT.
+* Si se establece la configuración **Borrar el contenido existente en la instancia de Cloud antes de la ingesta**, se eliminarán los usuarios ya transferidos en la instancia de Cloud Service. También se elimina todo el repositorio existente y se crea un nuevo repositorio en el que se ingiere contenido. Esta acción también restablece toda la configuración, incluidos los permisos, en la instancia del Cloud Service de destino y es verdadera para un usuario administrador agregado al grupo **administrators**. El usuario administrador debe leerse en el grupo **administradores** para recuperar el token de acceso para CTT.
 
 * El Adobe recomienda quitar cualquier usuario existente de la instancia de destino de Cloud Service AEM antes de ejecutar CTT con Asignación de usuarios. AEM AEM Esta acción es necesaria para evitar cualquier conflicto entre la migración de usuarios de la instancia de origen de los usuarios a la instancia de origen de los usuarios de la instancia de destino de los que se va a realizar la migración de la instancia de destino de los usuarios AEM AEM Pueden producirse conflictos durante la ingesta si el mismo usuario existe en la instancia de origen de los recursos y en la instancia de destino de los recursos de la.
 

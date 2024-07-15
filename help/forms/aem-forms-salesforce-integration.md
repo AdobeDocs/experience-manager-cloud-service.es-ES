@@ -8,11 +8,11 @@ exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
 source-git-commit: 9eb15dda5f56938d686d0b863cb1ffa841f8228b
 workflow-type: tm+mt
 source-wordcount: '552'
-ht-degree: 76%
+ht-degree: 79%
 
 ---
 
-# Integración de formularios adaptables con Salesforce {#configure-salesforce-with-ouath-2.0-client-credential}
+# Integrar formulario adaptable con Salesforce {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -76,7 +76,7 @@ Para conectar un formulario adaptable a la aplicación Salesforce mediante la co
 
 Después de configurar la aplicación Salesforce, puede usar la configuración al crear el modelo de datos de formulario (FDM). Para obtener más información, consulte [Crear un modelo de datos de formulario (FDM)](create-form-data-models.md). [Configure la acción de envío del modelo de datos de formulario](/help/forms/using-form-data-model.md) para que un formulario adaptable envíe datos a aplicaciones de Salesforce.
 
-Para obtener más información sobre la creación y el uso del modelo de datos de formulario (FDM) en flujos de trabajo empresariales, consulte [Integración de datos](data-integration.md).
+Para obtener más información sobre la creación y el uso de modelos de datos de formulario en flujos de trabajo empresariales, consulte [Integración de datos](data-integration.md).
 
 ## Artículos relacionados
 

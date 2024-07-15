@@ -25,16 +25,16 @@ Además de utilizar la función de previsualización dedicada para vídeos, conj
 
 >[!NOTE]
 >
->Cuando se encuentra en una página web (Sites) en Adobe Experience Manager, no puede obtener una vista previa de los recursos en **[!UICONTROL Editar]** modo. En su lugar, vaya al modo de previsualización seleccionando **[!UICONTROL Previsualizar]** en la esquina superior derecha de la página.
+>Cuando se encuentra en una página web (Sites) en Adobe Experience Manager, no puede obtener una vista previa de los recursos en el modo **[!UICONTROL Editar]**. En su lugar, ve al modo de vista previa seleccionando **[!UICONTROL Vista previa]** en la esquina superior derecha de la página.
 
-Para habilitar o deshabilitar los ajustes preestablecidos de visualizador en la interfaz de usuario, consulte [Administrar ajustes preestablecidos del visor](/help/assets/dynamic-media/managing-viewer-presets.md).
+Para habilitar o deshabilitar los ajustes preestablecidos de visor en la interfaz de usuario, consulte [Administrar ajustes preestablecidos de visor](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-**Para previsualizar recursos:**
+**Para obtener una vista previa de los recursos:**
 
-1. Desde **[!UICONTROL Experience Manager]**, en el **[!UICONTROL Navegación]** página, seleccione **[!UICONTROL Assets]**, entonces **[!UICONTROL Archivos]** para acceder a los recursos.
-1. Cerca de la esquina superior derecha de la página, desde el **[!UICONTROL Ver]** , seleccione la opción **[!UICONTROL Vista de lista]**.
-1. (Opcional) Utilice la variable **[!UICONTROL Tipo]** para ordenar los recursos por el tipo que desee previsualizar.
-1. En el **[!UICONTROL Título]** , seleccione el nombre del título (no la imagen en miniatura) del recurso que desea previsualizar.
+1. En **[!UICONTROL Experience Manager]**, en la página **[!UICONTROL Navegación]**, seleccione **[!UICONTROL Assets]** y, a continuación, **[!UICONTROL Archivos]** para acceder a los recursos.
+1. Cerca de la esquina superior derecha de la página, en la lista desplegable **[!UICONTROL Ver]**, seleccione **[!UICONTROL Vista de lista]**.
+1. (Opcional) Use la columna **[!UICONTROL Tipo]** para ordenar los recursos por el tipo que desee previsualizar.
+1. En la columna **[!UICONTROL Título]**, seleccione el nombre del título (no la imagen en miniatura) del recurso que desea previsualizar.
 1. Según el tipo de recurso seleccionado, realice una de las siguientes acciones:
 
    <table>
@@ -50,16 +50,16 @@ Para habilitar o deshabilitar los ajustes preestablecidos de visualizador en la 
       <td>Sí</td>
       <td><p><strong>Para obtener una vista previa de un recurso 3D en el visor dimensional</strong></p>
       <ul>
-      <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccionar <strong>Espectadores</strong> en la lista, seleccione el visualizador dimensional.</li>
-      <li>Para devolver la imagen al zoom original, seleccione <strong>Restablecer</strong>.</li>
+      <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccione <strong>Visualizadores</strong> de la lista y, a continuación, seleccione el visualizador dimensional.</li>
+      <li>Para devolver la imagen al mapa de zoom original, seleccione <strong>Restablecer</strong>.</li>
       <li>Para maximizar el visor en el dispositivo de visualización, seleccione <strong>Pantalla completa</strong>.</li>
       </ul>
       <p><strong>Navegación por la escena 3D</strong></p>
       <ul>
-      <li><p><strong>Convierta su cámara 3D</strong> - Orbita tu vista alrededor de la escena 3D y los objetos.</p> Mouse: haga clic con el botón izquierdo + arrastre.</p> Pantalla táctil: presione + arrastre.</p></li>
-      <li><p><strong>Panorámica de la cámara</strong> - Mueva la vista a la izquierda, a la derecha, arriba o abajo.</p> Ratón: haga clic con el botón derecho y arrastre.</p> Pantalla táctil: presionar dos dedos + arrastrar.</p></li>
-      <li><p><strong>Zoom de la cámara</strong> - Aplique el zoom de la cámara si desea moverse dentro y fuera de las áreas de la escena 3D.</p> Ratón: rueda de desplazamiento.</p> Pantalla táctil: Pellizco de dedo.</p></li>
-      <li><p><strong>Vuelva a centrar su cámara</strong> - Orbita tu vista alrededor de la escena 3D y los objetos.</p> Ratón: haga doble clic.</p> Pantalla táctil: seleccione dos veces.</li></ul></td>
+      <li><p><strong>Gira tu cámara 3D</strong> - Orbita tu vista alrededor de la escena 3D y los objetos.</p> Mouse: haga clic con el botón izquierdo + arrastre.</p> Pantalla táctil: presione + arrastre.</p></li>
+      <li><p><strong>Mueva la cámara</strong>: mueva la vista a la izquierda, a la derecha, arriba o abajo.</p> Ratón: haga clic con el botón derecho y arrastre.</p> Pantalla táctil: presionar dos dedos + arrastrar.</p></li>
+      <li><p><strong>Aplique el zoom a la cámara</strong>: si desea moverse dentro y fuera de las áreas de la escena 3D, haga zoom en la cámara.</p> Ratón: rueda de desplazamiento.</p> Pantalla táctil: Pellizco de dedo.</p></li>
+      <li><p><strong>Vuelva a centrar su cámara</strong> - Haga girar la vista alrededor de la escena y los objetos 3D.</p> Ratón: haga doble clic.</p> Pantalla táctil: seleccione dos veces.</li></ul></td>
       </tr>
       <tr>
       <td><p>Imagen</p> </td>
@@ -67,11 +67,11 @@ Para habilitar o deshabilitar los ajustes preestablecidos de visualizador en la 
       <td>Sí</td>
       <td><p><strong>Para obtener una vista previa del recurso en una representación concreta</strong></p>
         <ul>
-        <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccionar <strong>Representaciones</strong> en la lista, seleccione una representación concreta que desee previsualizar.</li>
+        <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccione <strong>Representaciones</strong> de la lista y, a continuación, seleccione una representación concreta que desee previsualizar.</li>
         </ul> <p><strong>Para obtener una vista previa del recurso en un visor concreto</strong></p>
         <ul>
-        <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccionar <strong>Espectadores</strong> en la lista, seleccione el visor que desee aplicar al recurso.</li>
-        </ul><p>Utilice el <strong>+</strong> y <strong>-</strong>para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Para devolver la imagen al zoom original, seleccione <strong>Restablecer</strong>.<br>Si está en una pantalla táctil, seleccione dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a seleccionar la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
+        <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccione <strong>Visualizadores</strong> de la lista y, a continuación, seleccione un visualizador que desee aplicar al recurso.</li>
+        </ul><p>Utilice los iconos <strong>+</strong> y <strong>-</strong>para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Para devolver la imagen al zoom original, seleccione <strong>Restablecer</strong>.<br>Si está en una pantalla táctil, seleccione dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a seleccionar la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
       </tr>
       <tr>
       <td>Multimedia</td>
@@ -79,10 +79,10 @@ Para habilitar o deshabilitar los ajustes preestablecidos de visualizador en la 
       <td>Sí</td>
       <td><p><strong>Para obtener una vista previa del recurso en una representación concreta</strong></p>
         <ul>
-        <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccionar <strong>Representaciones</strong> en la lista, seleccione una representación concreta que desee previsualizar.</li>
+        <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccione <strong>Representaciones</strong> de la lista y, a continuación, seleccione una representación concreta que desee previsualizar.</li>
         </ul><p>Si selecciona una representación de vídeo de mayor resolución para previsualizarla, el vídeo puede aparecer truncado. El motivo es que la vista previa de la representación muestra la resolución exacta que ven sus clientes, todo en el contexto del visor incrustado que se utiliza para la vista previa.</p><p>Cuando previsualiza un conjunto de vídeos adaptables en el nivel de recurso, las representaciones se agrupan en una experiencia de reproducción. Es decir, el vídeo adaptable tiene el tamaño adecuado para su visualización y reproducción con la mejor resolución en el contexto del dispositivo de visualización y la velocidad de conexión.<br /></p><p><strong>Para obtener una vista previa de un recurso en un visor concreto</strong></p>
         <ul>
-        <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccionar <strong>Espectadores</strong> en la lista, seleccione el visor que desee aplicar al recurso.</li>
+        <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccione <strong>Visualizadores</strong> de la lista y, a continuación, seleccione un visualizador que desee aplicar al recurso.</li>
         </ul> </td>
       </tr>
       <tr>
@@ -91,8 +91,8 @@ Para habilitar o deshabilitar los ajustes preestablecidos de visualizador en la 
       <td>Sí</td>
       <td><p><strong>Para obtener una vista previa de un recurso en un visor concreto</strong></p>
         <ul>
-        <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccionar <strong>Espectadores</strong> en la lista, seleccione el visor que desee aplicar al recurso.</li>
-        </ul> <p>Utilice el <strong>+</strong> y <strong>- </strong>para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Para devolver la imagen al zoom original, seleccione <strong>Restablecer</strong>.<br /> Si está en una pantalla táctil, seleccione dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a seleccionar la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p></td>
+        <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccione <strong>Visualizadores</strong> de la lista y, a continuación, seleccione un visualizador que desee aplicar al recurso.</li>
+        </ul> <p>Utilice los iconos <strong>+</strong> y <strong>- </strong>para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Para devolver la imagen al zoom original, seleccione <strong>Restablecer</strong>.<br /> Si se encuentra en una pantalla táctil, seleccione dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a seleccionar la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p></td>
       </tr>
       <tr>
       <td>Conjunto de giros</td>
@@ -100,8 +100,8 @@ Para habilitar o deshabilitar los ajustes preestablecidos de visualizador en la 
       <td>Sí</td>
       <td><p><strong>Para obtener una vista previa de un recurso en un visor concreto</strong></p>
         <ul>
-        <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccionar <strong>Espectadores</strong> en la lista, seleccione el visor que desee aplicar al recurso.</li>
-        </ul><p>Utilice el <strong>+</strong> y <strong>- </strong>para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Para devolver la imagen al zoom original, seleccione <strong>Restablecer</strong>.<br /> Si está en una pantalla táctil, seleccione dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a seleccionar la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
+        <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccione <strong>Visualizadores</strong> de la lista y, a continuación, seleccione un visualizador que desee aplicar al recurso.</li>
+        </ul><p>Utilice los iconos <strong>+</strong> y <strong>- </strong>para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Para devolver la imagen al zoom original, seleccione <strong>Restablecer</strong>.<br /> Si se encuentra en una pantalla táctil, seleccione dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a seleccionar la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
       </tr>
       <tr>
       <td>Conjunto de medios mixtos</td>
@@ -109,14 +109,14 @@ Para habilitar o deshabilitar los ajustes preestablecidos de visualizador en la 
       <td>Sí</td>
       <td><p><strong>Para obtener una vista previa de un recurso en un visor concreto</strong></p>
         <ul>
-        <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccionar <strong>Espectadores</strong> en la lista, seleccione el visor que desee aplicar al recurso.</li>
-        </ul> <p>Utilice el <strong>+</strong> y <strong>- </strong>para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Para devolver la imagen al zoom original, seleccione <strong>Restablecer</strong>.<br /> Si está en una pantalla táctil, seleccione dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a seleccionar la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
+        <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccione <strong>Visualizadores</strong> de la lista y, a continuación, seleccione un visualizador que desee aplicar al recurso.</li>
+        </ul> <p>Utilice los iconos <strong>+</strong> y <strong>- </strong>para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Para devolver la imagen al zoom original, seleccione <strong>Restablecer</strong>.<br /> Si se encuentra en una pantalla táctil, seleccione dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a seleccionar la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
       </tr>
       <tr>
       <td>Conjunto de carrusel</td>
       <td>No</td>
       <td>Sí</td>
-      <td><strong>Para obtener una vista previa de un recurso en un visor concreto</strong>
+      <td><strong>Para obtener una vista previa de un recurso en un visor en particular</strong>
         <ul>
         <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccione el visor que desee aplicar al recurso.</li>
         </ul> </td>
@@ -127,11 +127,11 @@ Para habilitar o deshabilitar los ajustes preestablecidos de visualizador en la 
       <td>Sí</td>
       <td><p><strong>Para obtener una vista previa del recurso en una representación concreta</strong></p>
         <ul>
-        <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccionar <strong>Representaciones</strong>, luego seleccione la representación que desee previsualizar.</li>
+        <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccione <strong>Representaciones</strong> y, a continuación, seleccione la representación que desee previsualizar.</li>
         </ul> <p><strong>Para obtener una vista previa del recurso en un visor concreto</strong></p>
         <ul>
-        <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccionar <strong>Espectadores</strong>, a continuación, seleccione un visor que desee aplicar al recurso.</li>
-        </ul> <p>Utilice el <strong>+</strong> y <strong>- </strong>para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Para devolver la imagen al zoom original, seleccione <strong>Restablecer</strong>.<br /> Si está en una pantalla táctil, seleccione dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a seleccionar la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
+        <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccione <strong>Visualizadores</strong> y, a continuación, seleccione el visualizador que desee aplicar al recurso.</li>
+        </ul> <p>Utilice los iconos <strong>+</strong> y <strong>- </strong>para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Para devolver la imagen al zoom original, seleccione <strong>Restablecer</strong>.<br /> Si se encuentra en una pantalla táctil, seleccione dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a seleccionar la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
       </tr>
     </tbody>
     </table>

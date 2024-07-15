@@ -1,6 +1,6 @@
 ---
 title: Dispatcher en la nube
-description: Obtenga información sobre las herramientas de Dispatcher, los módulos Apache compatibles y los modos heredados y flexibles.
+description: Obtenga información acerca de las herramientas de Dispatcher, los módulos Apache compatibles y los modos heredados y flexibles.
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 role: Admin

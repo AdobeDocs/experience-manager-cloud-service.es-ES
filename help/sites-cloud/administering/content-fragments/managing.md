@@ -14,16 +14,16 @@ ht-degree: 45%
 
 # Administración de los fragmentos de contenido {#managing-content-fragments}
 
-Obtenga información sobre cómo administrar su **Fragmentos de contenido** en Adobe Experience Manager AEM () as a Cloud Service, desde el [Consola Fragmentos de contenido](#content-fragments-console), y [Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor). Estos fragmentos de contenido se pueden utilizar como base del contenido sin encabezado o para la creación de páginas.
+Aprenda a administrar sus **Fragmentos de contenido** en Adobe Experience Manager AEM () as a Cloud Service, desde la [consola Fragmentos de contenido](#content-fragments-console) y el [Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor). Estos fragmentos de contenido se pueden utilizar como base del contenido sin encabezado o para la creación de páginas.
 
 >[!NOTE]
 >
 >El equipo del proyecto puede personalizar la consola y el editor si es necesario. Consulte [Personalización de la consola y el editor de fragmentos de contenido](/help/implementing/developing/extending/content-fragments-console-and-editor.md) para obtener más información.
 
-Después de definir su [Modelos de fragmento de contenido](#creating-a-content-model) puede utilizarlas para lo siguiente:
+Después de definir los [modelos de fragmentos de contenido](#creating-a-content-model), puede usarlos para lo siguiente:
 
-* [Creación de fragmentos de contenido](#creating-a-content-fragment).
-* A continuación, abra [Editor de fragmentos de contenido](#opening-the-fragment-editor) hasta [Crear el contenido y administrar las variaciones](#editing-the-content-of-your-fragment).
+* [Cree sus fragmentos de contenido](#creating-a-content-fragment).
+* A continuación, abra el [Editor de fragmentos de contenido](#opening-the-fragment-editor) para [crear su contenido y administrar sus variaciones](#editing-the-content-of-your-fragment).
 * [Administrar etiquetas](#manage-tags)
 * [Ver y editar las propiedades (metadatos)](#viewing-and-editing-properties)
 * [Ver el árbol de la estructura](/help/sites-cloud/administering/content-fragments/authoring.md#structure-tree)
@@ -59,7 +59,7 @@ Para obtener más información detallada, consulte:
 
 * [Buscar y filtrar en la consola Fragmentos de contenido](#filtering-fragments)
 
-* Una selección de [métodos abreviados del teclado](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) están disponibles para su uso en esta consola
+* Hay una selección de [métodos abreviados de teclado](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) disponibles para usar en esta consola
 
 >[!NOTE]
 >
@@ -67,11 +67,11 @@ Para obtener más información detallada, consulte:
 
 >[!CAUTION]
 >
->Esta consola es *solamente* disponible en el as a Cloud Service en línea de Adobe Experience Manager AEM ().
+>Esta consola está *solamente* disponible en el as a Cloud Service en línea de Adobe Experience Manager AEM ().
 
 ### Estructura y gestión básicas de la consola {#basic-structure-handling-content-fragments-console}
 
-Seleccionar **Fragmentos de contenido** abre la consola en una nueva pestaña.
+Al seleccionar **Fragmentos de contenido**, se abre la consola en una nueva pestaña.
 
 <!-- CQDOC-21349: screenshot -->
 
@@ -82,7 +82,7 @@ Aquí se pueden ver tres áreas principales:
 * La barra de herramientas superior
    * Proporciona funcionalidad AEM estándar
    * También muestra su organización IMS
-   * Proporciona varios [acciones](#actions-unselected)
+   * Proporciona varias [acciones](#actions-unselected)
 * El panel izquierdo
    * Aquí puede ocultar o mostrar el árbol de carpetas
    * Puede seleccionar una rama específica del árbol
@@ -98,16 +98,16 @@ Aquí se pueden ver tres áreas principales:
          * Abrir el fragmento correspondiente en el editor
          * Mostrar información sobre referencias
          * Mostrar información sobre las versiones de idioma del fragmento
-      * [Otros campos de información](#information-content-fragments) acerca de un fragmento de contenido se puede utilizar para lo siguiente: [Filtrado rápido](#fast-filtering):
+      * [Otros campos de información](#information-content-fragments) acerca de un fragmento de contenido se pueden usar para [Filtrado rápido](#fast-filtering):
          * Seleccione un valor en la columna y se aplique inmediatamente como filtro
-         * Se admite el filtrado rápido para **Modelo**, **Estado**, **Modificado por**, **Etiquetas** y **Publicado por** columnas.
+         * Se admite el filtrado rápido para las columnas **Modelo**, **Estado**, **Modificado por**, **Etiquetas** y **Publicado por**.
       * Al utilizar el ratón sobre los encabezados de columna, se mostrará un selector de acciones desplegable y controles deslizantes de anchura. Esto le permite lograr lo siguiente:
          * Ordenar: seleccione la acción adecuada, ya sea ascendente o descendente.
 Así se ordenará toda la tabla según esa columna. La ordenación solo está disponible en las columnas adecuadas.
          * Cambiar el tamaño de la columna: mediante los controles deslizantes de acción o de anchura
-      * Seleccione uno o varios fragmentos para obtener más información [acción](#actions-selected-content-fragment)
-   * Utilice el [Buscar](#searching-fragments) caja
-   * Abra el [Panel Filtro](#filtering-fragments)
+      * Seleccione uno o más fragmentos para realizar más [acción](#actions-selected-content-fragment)
+   * Usar el cuadro [Buscar](#searching-fragments)
+   * Abrir el [panel Filtro](#filtering-fragments)
 
 ### Acciones {#actions}
 
@@ -128,10 +128,10 @@ Algunas acciones están disponibles desde la consola, sin seleccionar un fragmen
 
   >[!NOTE]
   >
-  >El **Assets** La consola de se utiliza para acceder a recursos como imágenes, vídeos, etc.  Se puede acceder a esta consola:
+  >La consola **Assets** se usa para acceder a recursos como imágenes, vídeos, etc.  Se puede acceder a esta consola:
   >
   >* usando el vínculo **Abrir en Recursos** (en la consola Fragmentos de contenido)
-  >* directamente desde el global **Navegación** cristal
+  >* directamente desde el panel **Navegación** global
 
 #### Acciones para un fragmento de contenido (seleccionado) {#actions-selected-content-fragment}
 
@@ -153,7 +153,7 @@ Al seleccionar un fragmento específico, se abre una barra de herramientas centr
 
 >[!NOTE]
 >
->Uso **Abrir** para abrir el fragmento seleccionado en la *original* editor.
+>Use **Abrir** para abrir el fragmento seleccionado en el editor *original*.
 
 >[!NOTE]
 >
@@ -167,13 +167,13 @@ El panel principal/derecho (vista de tabla) de la consola proporciona una amplia
    * Proporciona un vínculo para abrir el fragmento en el editor.
 * **Modelo**
    * Solo información.
-   * Se puede utilizar para [Filtrado rápido](#fast-filtering)
+   * Se puede usar para [Filtrado rápido](#fast-filtering)
 * **Carpeta**
    * Proporciona un vínculo para abrir la carpeta en la consola.
 Al pasar el ratón por encima del nombre de la carpeta, se muestra la ruta JCR.
 * **Estado**
    * Solo información.
-   * Se puede utilizar para [Filtrado rápido](#fast-filtering)
+   * Se puede usar para [Filtrado rápido](#fast-filtering)
 * **Vista previa**
    * Solo información:
       * **Sincronizado**: el fragmento de contenido está sincronizado con los servicios de **Autor** y **Previsualización**.
@@ -183,24 +183,24 @@ Al pasar el ratón por encima del nombre de la carpeta, se muestra la ruta JCR.
    * Solo información.
 * **Modificado por**
    * Solo información.
-   * Se puede utilizar para [Filtrado rápido](#fast-filtering).
+   * Se puede usar para [Filtrado rápido](#fast-filtering).
 * **Etiquetas**
    * Solo información.
    * Muestra todas las etiquetas relacionadas con el fragmento de contenido; tanto Principal como cualquier variación.
-   * Se puede utilizar para [Filtrado rápido](#fast-filtering).
+   * Se puede usar para [Filtrado rápido](#fast-filtering).
 * **Publicado en**
    * Solo información.
 * **Publicado por**
    * Solo información.
-   * Se puede utilizar para [Filtrado rápido](#fast-filtering).
-* **Referido por**:
-   * Proporciona un vínculo que abre un cuadro de diálogo con todas las [referencias principales](#parent-references-fragment)  de ese fragmento; incluida la referencia a fragmentos de contenido, fragmentos de experiencias y páginas. Para abrir una referencia específica, haga clic en **Título** en el cuadro de diálogo.
+   * Se puede usar para [Filtrado rápido](#fast-filtering).
+* **Referido Por**:
+   * Proporciona un vínculo que abre un cuadro de diálogo con todas las [referencias principales](#parent-references-fragment) de ese fragmento; incluida la referencia a fragmentos de contenido, fragmentos de experiencias y páginas. Para abrir una referencia específica, haga clic en **Título** en el cuadro de diálogo.
 
      ![Consola Fragmentos de contenido: cuadro de diálogo Referencias](assets/cf-managing-console-references-dialog.png)
 
-* **Idioma**: indique cualquier [Idioma](#language-copies-fragment) Copias
+* **Idioma**: indique cualquier [idioma](#language-copies-fragment) copias
 
-   * Indica la configuración regional del fragmento de contenido, junto con el número total de eventos locales/[Idioma](#language-copies-fragment)  copias asociadas al fragmento de contenido.
+   * Indica la configuración regional del fragmento de contenido, junto con el número total de copias locales/[Idioma](#language-copies-fragment) asociadas con el fragmento de contenido.
 
      ![Consola Fragmentos de contenido: Indicador de idioma](assets/cf-managing-console-language-indicator.png)
 
@@ -215,7 +215,7 @@ Antes de crear el fragmento de contenido, se debe crear el modelo de fragmento d
 
 ### Creación de un modelo de contenido {#creating-a-content-model}
 
-[Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) debe habilitarse y crearse antes de crear fragmentos de contenido con contenido estructurado.
+[Los modelos de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) deben habilitarse y crearse antes de crear fragmentos de contenido con contenido estructurado.
 
 ### Creación de un fragmento de contenido {#creating-a-content-fragment}
 
@@ -227,12 +227,12 @@ Crear un fragmento de contenido:
    >
    >Para que la ubicación del nuevo fragmento esté predefinida, puede desplazarse a la carpeta en la que desee crear el fragmento o especificar la ubicación durante el proceso de creación.
 
-1. El **Fragmento de contenido nuevo** se abre, desde donde puede especificar lo siguiente:
+1. Se abre el cuadro de diálogo **Nuevo fragmento de contenido**, desde donde puede especificar lo siguiente:
 
-   * **Ubicación** - Completado automáticamente con la ubicación actual, pero puede seleccionar una ubicación diferente si es necesario.
-   * **Modelo de fragmento de contenido** : seleccione el modelo que desea utilizar como base del fragmento en la lista desplegable.
+   * **Ubicación**: completado automáticamente con la ubicación actual, pero puede seleccionar una ubicación diferente si es necesario.
+   * **Modelo de fragmento de contenido**: seleccione el modelo que se utilizará como base del fragmento en la lista desplegable.
    * **Título**
-   * **Nombre** - Completado automáticamente en función de **Título**, pero puede editarlo si es necesario.
+   * **Nombre** - Completado automáticamente según el **Título**, pero puede editarlo si es necesario.
    * **Descripción**
 
    ![Nuevo cuadro de diálogo Fragmento de contenido](assets/cf-managing-new-cf-dialog.png)
@@ -241,13 +241,18 @@ Crear un fragmento de contenido:
 
 ## Estados de los fragmentos de contenido {#statuses-content-fragments}
 
-Durante su existencia, un fragmento de contenido puede tener varios estados, como se muestra en la variable [Consola de fragmento de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) y [Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md):
+Durante su existencia, un fragmento de contenido puede tener varios estados, como se muestra en la [Consola de fragmento de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) y en el [Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md):
 
-* **Nuevo** (gris) Se ha creado un nuevo fragmento de contenido, pero no tiene contenido, ya que nunca se ha editado ni abierto en el editor de fragmentos de contenido.
-* **Borrador** (azul) Alguien ha editado o abierto el fragmento de contenido (nuevo) en el Editor de fragmentos de contenido, pero aún no se ha publicado.
-* **Publicado** (verde) El fragmento de contenido se ha publicado.
-* **Modificado** (naranja) El fragmento de contenido se ha editado después de publicarse (pero antes de publicar la modificación).
-* **Sin publicar** (rojo) Se ha cancelado la publicación del fragmento de contenido.
+* **Nuevo** (gris)
+Se ha creado un nuevo fragmento de contenido, pero no tiene contenido, ya que nunca se ha editado ni abierto en el editor de fragmentos de contenido.
+* **Borrador** (azul)
+Alguien ha editado o abierto el fragmento de contenido (nuevo) en el Editor de fragmentos de contenido, pero aún no se ha publicado.
+* **Publicado** (verde)
+El fragmento de contenido se ha publicado.
+* **Modificado** (naranja)
+El fragmento de contenido se ha editado después de publicarse (pero antes de publicar la modificación).
+* **Sin publicar** (rojo)
+Se ha cancelado la publicación del fragmento de contenido.
 
 ## Edición del contenido del fragmento (y variaciones) {#editing-the-content-of-your-fragment}
 
@@ -258,15 +263,15 @@ Durante su existencia, un fragmento de contenido puede tener varios estados, com
 Abra el fragmento para su edición:
 
 1. Utilice la consola **Fragmentos de contenido** para desplazarse a la ubicación del fragmento de contenido.
-1. Abra el fragmento para editarlo, seleccionando el fragmento y, a continuación, **Abrir en nuevo editor** en la barra de herramientas.
+1. Abra el fragmento para editarlo; para ello, seleccione el fragmento y **Abrir en nuevo editor** en la barra de herramientas.
 
-1. Se abrirá el editor de fragmentos. Seleccione el **Variación** puede realizar los cambios según sea necesario (se guardarán automáticamente):
+1. Se abrirá el editor de fragmentos. Seleccione la **variación** que necesite y realice los cambios según sea necesario (se guardarán automáticamente):
 
    ![Editor de fragmentos](assets/cf-managing-editor.png)
 
 ## Ver y administrar etiquetas {#manage-tags}
 
-Desde la consola Fragmentos de contenido puede ver cualquier etiqueta aplicada en la variable **Etiquetas** después de asegurarse de que [se muestra la columna](#select-columns-console).
+Desde la consola Fragmentos de contenido puede ver cualquier etiqueta aplicada en la columna **Etiquetas**; después de asegurarse de que [se muestre la columna](#select-columns-console).
 
 ### Administración de etiquetas (consola) {#manage-tags-console}
 
@@ -274,7 +279,7 @@ Para administrar las etiquetas:
 
 1. Vaya a la consola Fragmento de contenido.
 1. Seleccione un fragmento de contenido.
-1. Seleccionar **Administrar etiquetas** en la barra de herramientas.
+1. Seleccione **Administrar etiquetas** en la barra de herramientas.
 1. Utilice el selector de etiquetas para seleccionar las etiquetas que desea aplicar o quitar:
 
    ![Administrar etiquetas](assets/cf-managing-manage-tags.png)
@@ -283,11 +288,11 @@ Para administrar las etiquetas:
 
 ### Visualización y edición de etiquetas (editor) {#viewing-and-editing-tags}
 
-También puede ver y editar las etiquetas aplicadas a un fragmento utilizando [Propiedades](/help/sites-cloud/administering/content-fragments/authoring.md) pestaña del editor. La información mostrada difiere entre **Principal** y cualquiera **Variaciones**.
+También puede ver y editar las etiquetas aplicadas a un fragmento mediante la ficha [Propiedades](/help/sites-cloud/administering/content-fragments/authoring.md) del editor. La información mostrada difiere entre **Principal** y cualquier **variación**.
 
 ## Visualización y edición de propiedades (Editor) {#viewing-and-editing-properties}
 
-Puede ver y editar las propiedades (metadatos) de un fragmento utilizando [Propiedades](/help/sites-cloud/administering/content-fragments/authoring.md) pestaña del editor. La información mostrada difiere entre **Principal** y cualquiera **Variaciones**.
+Puede ver y editar las propiedades (metadatos) de un fragmento utilizando la pestaña [Propiedades](/help/sites-cloud/administering/content-fragments/authoring.md) del editor. La información mostrada difiere entre **Principal** y cualquier **variación**.
 
 ## Publicación y previsualización de un fragmento {#publishing-and-previewing-a-fragment}
 
@@ -299,11 +304,11 @@ Puede publicar los fragmentos de contenido en:
 
   >[!CAUTION]
   >
-  >Publicación de fragmentos de contenido en **Servicio de previsualización** solo está disponible desde la consola Fragmentos de contenido; se utiliza la variable **Publish** acción.
+  >La publicación de fragmentos de contenido en el **servicio de vista previa** solo está disponible desde la consola Fragmentos de contenido; se utilizará la acción **Publish**.
 
   >[!NOTE]
   >
-  >Para obtener más información sobre los entornos de vista previa, consulte [Administrar entornos](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+  >Para obtener más información acerca de los entornos de vista previa, vea [Administrar entornos](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 >[!CAUTION]
 >
@@ -313,15 +318,15 @@ Puede publicar los fragmentos de contenido en:
 
 ### Publicación {#publishing}
 
-Puede publicar los fragmentos de contenido mediante la variable **Publish** opción de:
+Puede publicar los fragmentos de contenido usando la opción **Publish** desde:
 
-* la barra de herramientas de [Consola Fragmentos de contenido](#actions-selected-content-fragment)
+* la barra de herramientas de la [consola Fragmentos de contenido](#actions-selected-content-fragment)
 
    * Seleccione uno o varios fragmentos de la lista.
 
-* la barra de herramientas de [Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)
+* la barra de herramientas del [editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)
 
-Después de seleccionar el **Publish** acción:
+Después de seleccionar la acción **Publish**:
 
 1. Seleccione cualquiera de las siguientes opciones para abrir el cuadro de diálogo correspondiente:
 
@@ -348,17 +353,17 @@ Después de la publicación, el estado del fragmento se actualiza y es visible e
 
 Puede cancelar la publicación de fragmentos de contenido:
 
-* la barra de herramientas de [Consola Fragmentos de contenido](#actions-selected-content-fragment)
+* la barra de herramientas de la [consola Fragmentos de contenido](#actions-selected-content-fragment)
 
    * Seleccione uno o varios fragmentos de la lista.
 
-* la barra de herramientas de [Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)
+* la barra de herramientas del [editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)
 
-En ambos casos, seleccione **Cancelar publicación** en la barra de herramientas, seguido de **Ahora** o **Programado**.
+En ambos casos, seleccione **Cancelar la publicación** en la barra de herramientas, seguido de **Ahora** o **Programado**.
 
 Cuando se abra el cuadro de diálogo correspondiente, puede seleccionar el servicio adecuado:
 
-![Cancelar publicación](assets/cf-managing-unpublish-dialog.png)
+![Cancelar publicación del cuadro de diálogo](assets/cf-managing-unpublish-dialog.png)
 
 >[!NOTE]
 >
@@ -372,7 +377,7 @@ Cuando se abra el cuadro de diálogo correspondiente, puede seleccionar el servi
 
 <!-- CQDOC-21349: screenshot -->
 
-El **Reemplazar** La acción está disponible (en la barra de herramientas superior) para buscar y reemplazar el texto especificado en los fragmentos de contenido seleccionados.
+La acción **Reemplazar** está disponible (en la barra de herramientas superior) para buscar y reemplazar el texto especificado en los fragmentos de contenido seleccionados.
 
 ![Buscar y reemplazar](assets/cf-managing-find-replace.png)
 
@@ -399,16 +404,16 @@ Para eliminar un fragmento:
 
 >[!NOTE]
 >
->El **Eliminar** no está disponible para fragmentos que se hayan publicado, primero se debe cancelar su publicación.
+>**Eliminar** no está disponible para los fragmentos que están publicados actualmente; primero se debe cancelar su publicación.
 
 ## Búsqueda de referencias principales de su fragmento {#parent-references-fragment}
 
 Se puede acceder a los detalles de las referencias principales desde el
 
-* **Referencias** de la consola Fragmentos de contenido
-* el [vínculo de referencias principales en la barra de herramientas superior del editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md#view-parent-references)
+* Columna **Referencias** de la consola Fragmentos de contenido
+* el vínculo [referencias principales en la barra de herramientas superior del editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md#view-parent-references)
 
-Ambos proporcionan un vínculo que abre un cuadro de diálogo con todas las referencias principales de ese fragmento; incluida la referencia a fragmentos de contenido, fragmentos de experiencias y páginas. Para abrir una referencia específica, haga clic en **Título**, o el icono de vínculo, en el cuadro de diálogo.
+Ambos proporcionan un vínculo que abre un cuadro de diálogo con todas las referencias principales de ese fragmento; incluida la referencia a fragmentos de contenido, fragmentos de experiencias y páginas. Para abrir una referencia específica, haga clic en **Título** o en el icono de vínculo del cuadro de diálogo.
 
 Por ejemplo:
 
@@ -418,8 +423,8 @@ Por ejemplo:
 
 Se puede acceder a los detalles de las copias de idioma desde:
 
-* el **Idioma** de la columna [Consola Fragmentos de contenido](#information-content-fragments)
-* el [Pestaña Copias de idioma del editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md#view-language-copies)
+* la columna **Idioma** de la consola [Fragmentos de contenido](#information-content-fragments)
+* la pestaña [Copias de idioma del editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md#view-language-copies)
 
 El icono indica la configuración regional del fragmento de contenido, junto con el número total de configuraciones regionales o copias de idioma asociadas al fragmento de contenido. Por ejemplo, desde la consola:
 
@@ -446,11 +451,11 @@ El panel Filtro ofrece lo siguiente:
 * una selección de predicados;
    * incluyendo modelos de fragmentos de contenido, localización, etiquetas, campos de estado, entre otros
    * se pueden seleccionar uno o más predicados y combinarlos para crear el filtro
-* **Excluir elementos de subcarpeta**, lo que le permite excluir fragmentos de contenido almacenados en subcarpetas
+* **Excluir elementos de subcarpeta**, lo que le ofrece la opción de excluir fragmentos de contenido almacenados en subcarpetas
 * la oportunidad de **Guardar** su configuración
 * la opción recuperar un filtro de búsqueda guardada para reutilizarlo
 
-Una vez seleccionada, la variable **Filtrado por** Las opciones de se muestran (debajo del cuadro Buscar ). Se pueden anular las selecciones desde allí. Por ejemplo:
+Una vez seleccionadas, se muestran las opciones **Filtrando por** (debajo del cuadro Buscar). Se pueden anular las selecciones desde allí. Por ejemplo:
 
 <!-- CQDOC-21349: screenshot -->
 
@@ -464,7 +469,7 @@ Por ejemplo, seleccione **Publicado** en la columna **Estado**:
 
 >[!NOTE]
 >
->El filtrado rápido solo es compatible con **Modelo**, **Estado**, **Modificado por**, **Etiquetas**, y **Publicado por** columnas.
+>El filtrado rápido solo es compatible con las columnas **Modelo**, **Estado**, **Modificado por**, **Etiquetas** y **Publicado por**.
 
 ![Consola Fragmentos de contenido: filtrado](assets/cf-managing-console-fast-filter-overview.png)
 

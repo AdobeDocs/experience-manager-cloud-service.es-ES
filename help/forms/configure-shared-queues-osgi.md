@@ -5,7 +5,7 @@ topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 100%
 
@@ -44,7 +44,7 @@ Siga estos pasos para compartir todos los elementos de una Bandeja de entrada co
 
 Realice los siguientes pasos para compartir un elemento de la Bandeja de entrada con otro usuario:
 
-1. Inicie sesión en la instancia de AEM. Seleccione el icono ![Bandeja de entrada](assets/bell.svg) y luego seleccione **[!UICONTROL Ver todo]**. Aparecerá una lista de los elementos de la Bandeja de entrada.
+1. Inicie sesión en la instancia de AEM. Seleccione el icono ![Bandeja de entrada](assets/bell.svg) y luego seleccione **[!UICONTROL Ver todo]**. Aparecerá una lista de los elementos de la Bandeja de entrada.
 1. Seleccione un elemento y seleccione **[!UICONTROL Compartir]**. Aparecerá un cuadro de diálogo.
 1. Escriba el nombre de un usuario en el cuadro de texto Agregar usuarios para compartir este elemento y seleccione **[!UICONTROL Agregar]**. Repita el paso para agregar más usuarios. Todos los usuarios con acceso a sus elementos aparecen en la sección **[!UICONTROL Nombre de usuario]**.
 1. Seleccione **[!UICONTROL Guardar]**.

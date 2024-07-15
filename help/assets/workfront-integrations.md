@@ -1,6 +1,6 @@
 ---
-title: '[!DNL Experience Manager Assets] integración con [!DNL Adobe Workfront]'
-description: Introducción a la integración entre [!DNL Assets] y [!DNL Workfront]
+title: Integración de '[!DNL Experience Manager Assets] con [!DNL Adobe Workfront]'
+description: Introducción a la integración entre  [!DNL Assets] y [!DNL Workfront]
 role: Admin, Leader, Architect
 feature: Workfront Integrations and Apps
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
@@ -11,16 +11,16 @@ ht-degree: 3%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] integración con [!DNL Adobe Workfront] {#assets-integration-overview}
+# [!DNL Adobe Experience Manager] como una integración de [!DNL Cloud Service] [!DNL Assets] con [!DNL Adobe Workfront] {#assets-integration-overview}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html) |
 | AEM as a Cloud Service | Este artículo |
 
-[!DNL Adobe Workfront] es una aplicación de administración de trabajo que le ayuda a administrar todo el ciclo de vida del trabajo en un solo lugar. La integración entre [!DNL Workfront] y [!DNL Adobe Experience Manager Assets] permite a las organizaciones mejorar la velocidad del contenido y el tiempo de salida al mercado conectando intrínsecamente el trabajo con la administración de recursos digitales. En el contexto de la administración de su trabajo en Workfront, los usuarios tienen acceso a los documentos e imágenes necesarios.
+[!DNL Adobe Workfront] es una aplicación de administración de trabajo que le ayuda a administrar todo el ciclo de vida del trabajo en un solo lugar. La integración entre [!DNL Workfront] y [!DNL Adobe Experience Manager Assets] permite a las organizaciones mejorar la velocidad del contenido y el tiempo de salida al mercado, conectando intrínsecamente el trabajo con la administración de recursos digitales. En el contexto de la administración de su trabajo en Workfront, los usuarios tienen acceso a los documentos e imágenes necesarios.
 
-ofertas de Adobe a [integrar [!DNL Workfront] y [!DNL Adobe Experience Manager Assets] De forma nativa (Assets Essentials de soporte y Recursos as a Cloud Service)](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html).
+Ofertas de Adobe para [integrar [!DNL Workfront] y [!DNL Adobe Experience Manager Assets] de forma nativa (Assets Essentials de soporte y Assets as a Cloud Service)](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html).
 
 Con la integración nativa de Experience Manager, puede:
 
@@ -38,15 +38,15 @@ Con la integración nativa de Experience Manager, puede:
 ## Conector mejorado de Adobe Workfront para Experience Manager {#enhanced-connector-information}
 
 
-En junio de 2022, Adobe lanzó una nueva integración nativa para conectar Workfront con Adobe Experience Manager Assets as a Cloud Service. Esta integración se ha convertido en el método requerido para conectar estas dos soluciones. Cualquier nueva implementación futura del conector mejorado (1.9.8 y posterior) para conectar Workfront con AEM Assets as a Cloud Service está bloqueada. Para obtener más información sobre cómo configurar esta integración, consulte [Configuración de la integración as a Cloud Service de Experience Manager Assets](workfront-connector-configure.md).
+A partir de junio de 2022, Adobe lanzó una nueva integración nativa para conectar Workfront con Adobe Experience Manager Assets as a Cloud Service. Esta integración se ha convertido en el método requerido para conectar estas dos soluciones. Cualquier nueva implementación futura del conector mejorado (1.9.8 y posterior) para conectar Workfront con AEM Assets as a Cloud Service está bloqueada. Para obtener más información sobre cómo configurar esta integración, consulte [Configuración de la as a Cloud Service de Experience Manager Assets](workfront-connector-configure.md).
 
 >[!NOTE]
 >
 >El Adobe no admite el uso del conector mejorado de Workfront para Experience Manager y la integración de Experience Manager en paralelo.
 
-Para las instalaciones anteriores a junio de 2022, los siguientes son algunos puntos a tener en cuenta para la implementación y configuración de [!DNL Adobe Workfront for Experience Manager enhanced connector]:
+Para instalaciones anteriores a junio de 2022, los siguientes son algunos puntos que hay que tener en cuenta para la implementación y configuración de [!DNL Adobe Workfront for Experience Manager enhanced connector]:
 
-* El Adobe requiere la implementación y la configuración de [!DNL Adobe Workfront for Experience Manager enhanced connector] solo a través de socios certificados o [!DNL Adobe Professional Services]. Si se implementa y configura sin un socio certificado o [!DNL Adobe Professional Services], no es compatible con el Adobe.
-* El Adobe puede publicar actualizaciones en [!DNL Adobe Workfront] y [!DNL Adobe Experience Manager] que hacen que este conector sea redundante; si esto sucede, es posible que los clientes deban realizar la transición desde el uso de este conector.
-* El Adobe admite las versiones de conector mejoradas 1.7.4 y posteriores. No se admiten versiones preliminares ni versiones personalizadas anteriores. Para comprobar la versión mejorada del conector, consulte el paso 5(a) de [instrucciones de instalación del conector mejorado](workfront-connector-install.md).
-* Consulte [Examen de certificación de socio para el conector mejorado de Workfront para Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Para obtener más información sobre el examen, consulte [Guía del examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
+* El Adobe requiere la implementación y configuración de [!DNL Adobe Workfront for Experience Manager enhanced connector] solamente a través de socios certificados o [!DNL Adobe Professional Services]. Si se implementa y se configura sin un socio certificado o [!DNL Adobe Professional Services], no se admite en el Adobe.
+* El Adobe puede publicar actualizaciones para [!DNL Adobe Workfront] y [!DNL Adobe Experience Manager] que hagan redundante este conector; si esto sucede, es posible que los clientes deban realizar la transición desde el uso de este conector.
+* El Adobe admite las versiones de conector mejoradas 1.7.4 y posteriores. No se admiten versiones preliminares ni versiones personalizadas anteriores. Para comprobar la versión mejorada del conector, consulte el paso 5(a) de [instrucciones mejoradas de instalación del conector](workfront-connector-install.md).
+* Consulte [Examen de certificación de socio para el conector mejorado de Workfront para Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Para obtener información sobre el examen, consulte [Guía para exámenes](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).

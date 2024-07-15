@@ -26,7 +26,7 @@ Esta página proporciona información general sobre los componentes de Adobe Exp
 * Disponen de una interfaz de usuario estandarizada.
 * Tienen un comportamiento de edición que se puede configurar.
 * Utilice cuadros de diálogo creados con subelementos basados en componentes de la interfaz de usuario de Granite.
-* Se desarrollan utilizando [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es).
+* Se han desarrollado con [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es).
 * Se pueden desarrollar para crear componentes personalizados que amplíen la funcionalidad predeterminada.
 
 Como los componentes son modulares, puede hacer lo siguiente:
@@ -44,13 +44,13 @@ Cada componente AEM:
 
 ## Los componentes principales de AEM {#aem-core-components}
 
-[AEM Los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) AEM son un conjunto de componentes estandarizados de gestión de contenido web (WCM) para la administración de contenido web con el fin de acelerar el tiempo de desarrollo y reducir el coste de mantenimiento de los sitios web.
+AEM AEM [Los componentes principales de la](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) son un conjunto de componentes estandarizados de administración de contenido web (WCM) para que los usuarios puedan acelerar el tiempo de desarrollo y reducir el costo de mantenimiento de los sitios web.
 
 Los componentes principales se proporcionan con AEM as a Cloud Service, y el [Tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) ilustra cómo implementar y utilizar los componentes. Los componentes se proporcionan con todo el código fuente y se pueden utilizar tal cual o como puntos de partida para los componentes modificados o ampliados.
 
 ### Visualización de componentes disponibles {#viewing-available-components}
 
-AEM Para obtener una descripción general de todos los componentes disponibles en la instancia de la, utilice el [Consola Componentes](/help/sites-cloud/authoring/components-console.md).
+AEM Para obtener una descripción general de todos los componentes disponibles en la instancia de la, use la [Consola de componentes](/help/sites-cloud/authoring/components-console.md).
 
 Como alternativa, también puede utilizar CRXDE Lite para obtener una lista de todos los componentes disponibles en el repositorio.
 
@@ -58,7 +58,7 @@ Como alternativa, también puede utilizar CRXDE Lite para obtener una lista de t
 
 1. En la pestaña **[!UICONTROL Consulta]**, seleccione `XPath` como **[!UICONTROL Tipo]**.
 
-1. En el **[!UICONTROL Consulta]** campo de entrada, introduzca la siguiente cadena:
+1. En el campo de entrada **[!UICONTROL Consulta]**, escriba la siguiente cadena:
 
    `//element(*, cq:Component)`
 

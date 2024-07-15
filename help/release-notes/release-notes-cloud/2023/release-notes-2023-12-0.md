@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
 workflow-type: tm+mt
 source-wordcount: '835'
-ht-degree: 72%
+ht-degree: 74%
 
 ---
 
@@ -27,7 +27,7 @@ En la siguiente sección se describen las notas de la versión de funciones de l
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] (2023.12.0) es el viernes, 14 de diciembre de 2023. La próxima versión con funcionalidades (2024.1.0) está planificada para el jueves, 25 de enero de 2023.
+La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] (2023.12.0) fue el viernes, 14 de diciembre de 2023. La siguiente versión con funcionalidades (2024.1.0) está planificada para el jueves, 25 de enero de 2023.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
@@ -47,16 +47,16 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ### Programa para primeros usuarios {#sites-early-adopter}
 
-**Puede aprovechar las [Servicio de datos de Real Use Monitoring (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** AEM para habilitar la recopilación del lado del cliente para el uso de la as a Cloud Service.
+**Puede aprovechar el [Servicio de datos de supervisión de uso real (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** para habilitar la recopilación del lado del cliente para AEM as a Cloud Service.
 
-El servicio de datos de Real Use Monitoring (RUM) ofrece una reflexión más precisa de las interacciones del usuario, lo que garantiza una medida fiable de la participación en el sitio web. Es una gran oportunidad para obtener perspectivas avanzadas sobre el rendimiento de su página. Es beneficioso para los clientes que utilizan CDN administrada por Adobe o CDN no administrada por Adobe. Además, para los clientes que utilizan una CDN no administrada por Adobe, ahora se pueden habilitar los informes de tráfico automatizados para ellos, lo que elimina la necesidad de compartir cualquier informe de tráfico con Adobe.
+El Servicio de datos de monitorización de usuarios reales (RUM) refleja de forma más precisa las interacciones de los usuarios, lo que garantiza una medida fiable de la participación en el sitio web. Es una gran oportunidad para obtener perspectivas avanzadas sobre el rendimiento de su página. Es beneficioso para los clientes que utilizan CDN administrada por Adobe o CDN no administrada por Adobe. Además, para los clientes que utilizan una CDN no administrada por Adobe, ahora se pueden habilitar los informes de tráfico automatizados para ellos, lo que elimina la necesidad de compartir cualquier informe de tráfico con Adobe.
 
-Si está interesado en probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a `aemcs-rum-adopter@adobe.com`, junto con su nombre de dominio para el entorno de producción, ensayo y desarrollo desde su dirección de correo electrónico asociada a su Adobe ID. El equipo de productos de Adobe habilitará entonces el servicio de datos de supervisión de uso real (RUM).
+Si está interesado en probar esta nueva característica y compartir sus comentarios, envíe un correo electrónico a `aemcs-rum-adopter@adobe.com`, junto con su nombre de dominio para el entorno de producción, ensayo y desarrollo desde su dirección de correo electrónico asociada a su Adobe ID. El equipo de productos de Adobe habilitará entonces el servicio de datos de supervisión de uso real (RUM).
 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nuevas funciones en la vista Recursos {#assets-view-features}
+### Nuevas funciones en la vista de Assets {#assets-view-features}
 
 **Crear imágenes GenAI con Adobe Firefly**
 
@@ -81,9 +81,9 @@ Ahora puede encontrar contenido fácilmente seleccionando una imagen y viendo im
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Nuevas funciones de [!DNL Experience Manager Forms] {#forms-features}
+### Nuevas características de [!DNL Experience Manager Forms] {#forms-features}
 
-* **[Conectar un Forms adaptable con Microsoft® SharePoint List](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: AEM Forms proporciona una integración OOTB para enviar datos de formulario directamente a la lista de SharePoint, lo que le permite utilizar las capacidades de Listas de SharePoint. Puede configurar Microsoft SharePoint List como fuente de datos para un modelo de datos de formulario y utilizar el **Enviar mediante modelo de datos de formulario** Enviar acción para conectar un formulario adaptable con una lista de SharePoint.
+* **[Conectar un Forms adaptable con Microsoft® SharePoint List](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: AEM Forms proporciona una integración OOTB para enviar datos de formularios directamente a SharePoint List, lo que le permite utilizar las capacidades de SharePoint Lists. Puede configurar Microsoft SharePoint List como fuente de datos para un modelo de datos de formulario y utilizar la acción de envío **Enviar mediante el modelo de datos de formulario** para conectar un formulario adaptable con SharePoint List.
 
 <!-- 
 
@@ -107,7 +107,7 @@ Ahora puede encontrar contenido fácilmente seleccionando una imagen y viendo im
 
 ### Programa para primeros usuarios de configuración de CDN {#cdn-config-early-adopter}
 
-Además de los lanzamientos recientes [Reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md), que incluye las reglas del cortafuegos de aplicaciones web (WAF) con licencia opcional, existe la oportunidad de utilizar la canalización de configuración para declarar e implementar otros tipos de configuración de CDN. Nos encantaría conocer sus casos de uso, incluidos los siguientes:
+Además de las [Reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md) publicadas recientemente, que incluyen las reglas de firewall de aplicaciones web (WAF) con licencia opcional, existe la oportunidad de usar la canalización de configuración para declarar e implementar otros tipos de configuración de CDN. Nos encantaría conocer sus casos de uso, incluidos los siguientes:
 * Redirecciones del lado del cliente 301/302
 * solicitudes de proxy en el perímetro a orígenes arbitrarios
 * transformaciones de URL

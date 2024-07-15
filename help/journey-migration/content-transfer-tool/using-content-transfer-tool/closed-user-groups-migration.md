@@ -31,15 +31,15 @@ Las entidades principales (incluidos los grupos) se incluyen automáticamente en
 
 La verificación de la existencia del grupo y sus miembros debe realizarse antes de activarse. El informe principal, descargado a través de la vista Trabajo de ingesta, se puede utilizar para ver si el grupo en cuestión se incluía o no porque no estaba en una ACL o en una directiva CUG.
 
-A continuación, se deben activar los procesos y se deben definir las propiedades para habilitar los CUG. Para ello, vuelva a publicar todas las páginas asociadas a una directiva CUG. Esto calibra la instancia de publicación para realizar un seguimiento de las directivas.
+A continuación, se deben activar los procesos y se deben definir las propiedades para habilitar los CUG. Para ello, vuelva a publicar todas las páginas asociadas a una directiva CUG. Esto calibra la instancia de Publish para realizar un seguimiento de las directivas.
 
-Esto habilita las políticas de CUG en Publicar y el contenido solo es accesible para los usuarios autenticados que son miembros del grupo asociado con las políticas.
+Esto habilita las políticas de CUG en Publish y el contenido solo es accesible para los usuarios autenticados que son miembros del grupo asociado con las políticas.
 
 ## Resumen
 
 En resumen, estos son los pasos para habilitar el CUG después de una migración:
 
-1. Asegúrese de que cada grupo utilizado en las políticas de CUG existe en Publicar después de la migración.
+1. Asegúrese de que cada grupo utilizado en las políticas de CUG existe en Publish después de la migración.
    - Puede existir un grupo si se incluye en la directiva CUG de un contenido migrado o en la ACL de ese contenido.
    - Si no es así, utilice Paquetes para instalarla en la instancia de destino (o crearla manualmente allí) y activarla junto con sus miembros. A continuación, compruebe que existe en Publish.
 1. Volver a publicar todas las páginas asociadas con una política de CUG, asegurándose de que se publique, por ejemplo, editando primero la página. Es importante volver a publicarlos todos.

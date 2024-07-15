@@ -185,7 +185,7 @@ También puede bloquear las etiquetas inteligentes de un solo recurso. Vaya a lo
 
 ### Exportar lista de bloqueados{#export-blocklist}
 
-La vista Recursos permite exportar las etiquetas bloqueadas enumeradas al formato CSV. Para exportar la lista de bloqueados, ejecute los pasos siguientes:
+La vista Assets permite exportar las etiquetas bloqueadas enumeradas al formato CSV. Para exportar la lista de bloqueados, ejecute los pasos siguientes:
 
 1. Haga clic en **[!UICONTROL Exportar como CSV.]**
 1. Elija la ubicación adecuada para guardar el archivo CSV. También puede cambiar el nombre del archivo según los requisitos.
@@ -193,7 +193,7 @@ La vista Recursos permite exportar las etiquetas bloqueadas enumeradas al format
 
 ### Importar lista de bloqueados{#import-blocklist}
 
-La vista Recursos permite importar etiquetas bloqueadas desde una fuente de datos (CSV). Para importar lista de bloqueados, ejecute los pasos siguientes:
+La vista de Assets permite importar etiquetas bloqueadas desde una fuente de datos (CSV). Para importar lista de bloqueados, ejecute los pasos siguientes:
 
 1. Haga clic en **[!UICONTROL Importar como CSV]**.
 1. Elija el archivo CSV en su dispositivo. Haga clic en **[!UICONTROL seleccionar un archivo]** para desplazarse al archivo desde su dispositivo. También puede arrastrar y soltar el archivo CSV desde su dispositivo.

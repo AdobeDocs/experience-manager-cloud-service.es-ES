@@ -27,9 +27,9 @@ El soporte de las SPA en AEM introduce una capa delgada de JS que interactúa co
 
 SPA AEM Para obtener más información acerca de la de en, consulte lo siguiente:
 
-* [SPA Modelo de](blueprint.md) SPA para los requisitos técnicos de una.
-* [SPA AEM Introducción a la administración de la en React](getting-started-react.md) SPA para un recorrido rápido por un sencillo sitio de la red de transporte que utiliza React.
-* [SPA AEM Introducción a la administración de la en el uso de Angular](getting-started-angular.md) SPA para un rápido recorrido por un sencillo y sencillo Angular de la mano de un sencillo.
+* SPA SPA [Modelo de](blueprint.md) para los requisitos técnicos de un elemento de diseño de la aplicación de la aplicación de la aplicación de la.
+* SPA AEM SPA [Introducción a la en el uso de React](getting-started-react.md) para un recorrido rápido por una sencilla aplicación de React para un recorrido en el que se utiliza la aplicación de React para un sencillo.
+* SPA AEM [Introducción a la en el uso del Angular SPA](getting-started-angular.md) para un recorrido rápido por una sencilla aplicación de Angular en un entorno de trabajo en el que se usa el.
 
 ## Diseño {#design}
 

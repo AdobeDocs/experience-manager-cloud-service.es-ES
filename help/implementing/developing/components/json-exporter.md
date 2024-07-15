@@ -27,7 +27,7 @@ AEM Con los fragmentos de contenido que utilizan contenido estructurado, puede p
 
 AEM AEM Con el exportador de JSON de puede enviar el contenido de una página de modelo de datos JSON en formato de modelo de datos JSON de y. Esto se puede consumir en sus propias aplicaciones.
 
-AEM Dentro de la entrega de datos se logra usando el selector de `model` y `.json` extensión.
+AEM Dentro de la entrega se logra el envío mediante el selector `model` y la extensión `.json`.
 
 `.model.json`
 
@@ -43,7 +43,7 @@ AEM Dentro de la entrega de datos se logra usando el selector de `model` y `.jso
 
 Como alternativa, puede entregar el contenido de un fragmento de contenido estructurado segmentándolo específicamente.
 
-Esto se realiza utilizando toda la ruta al fragmento (a través del `jcr:content`); por ejemplo, con un sufijo como.
+Esto se realiza utilizando toda la ruta al fragmento (a través de `jcr:content`); por ejemplo, con un sufijo como.
 
 `.../jcr:content/root/container/container/contentfragment.model.json`
 
@@ -61,18 +61,18 @@ La página puede contener un solo fragmento de contenido o varios componentes de
 
   >[!NOTE]
   >
-  >Puede [adaptar sus propios componentes](enabling-json-exporter.md) para acceder y utilizar estos datos.
+  >Puede [adaptar sus propios componentes](enabling-json-exporter.md) para acceder a estos datos y utilizarlos.
 
   >[!NOTE]
   >
-  >Aunque no es una implementación estándar, [se admiten varios selectores,](enabling-json-exporter.md#multiple-selectors) pero `model` debe ser el primero.
+  >Aunque no es una implementación estándar, se admiten [varios selectores,](enabling-json-exporter.md#multiple-selectors) pero `model` debe ser el primero.
 
 ### Información adicional {#further-information}
 
 * API HTTP de recursos
    * [API HTTP de recursos](/help/assets/developer-reference-material-apis.md)
 * Modelos Sling:
-   * [Modelos Sling: asociación de una clase de modelo con un tipo de recurso desde 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
+   * [Modelos Sling: asociando una clase de modelo con un tipo de recurso desde 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 * AEM con JSON:
    * [Activación de la exportación de JSON para un componente](enabling-json-exporter.md)
 
@@ -81,4 +81,4 @@ La página puede contener un solo fragmento de contenido o varios componentes de
 * [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md)
 * [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [Creación con fragmentos de contenido](/help/sites-cloud/authoring/fragments/content-fragments.md)
-* [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y el [Componente Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es)
+* [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y el [componente de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es)

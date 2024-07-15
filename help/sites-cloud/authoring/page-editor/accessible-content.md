@@ -101,7 +101,7 @@ Los tipos específicos de contenido no textual que requieren alternativas textua
 
 * Fotos ilustrativas: imágenes de personas, objetos o lugares. Es importante pensar en la función de la foto en la página, y la descripción recomendada del contenido de la imagen, ya que la tecnología de asistencia anuncia el tipo de elemento (por ejemplo, `graphic` o `image`). Puede aumentar la claridad usar `screenshot` o `illustration` en las descripciones de texto alternativas, pero esto depende del contexto. La coherencia es un factor importante, se debe tomar una decisión para todo el equipo de creación y esto se aplica en toda la experiencia del usuario.
 * Iconos: Pequeños pictogramas (gráficos) que transmiten información específica. Se deben utilizar de manera consistente en una página o sitio. Todos los ejemplos del icono en una página o sitio deben contener el mismo texto alternativo, corto y preciso, a menos que se duplique innecesariamente el texto adyacente.
-* Gráficos y diagramas: Normalmente representan datos numéricos. Por lo tanto, una opción para proporcionar una alternativa textual podría ser incluir un breve resumen de las principales tendencias que se muestran en el gráfico. Si es necesario, proporcione también una descripción más detallada en el texto utilizando la variable **Descripción** en el campo **Avanzadas** pestaña propiedades de la imagen. Además, puede proporcionar los datos de origen en formato tabulado en cualquier otra parte de la página o sitio.
+* Gráficos y diagramas: Normalmente representan datos numéricos. Por lo tanto, una opción para proporcionar una alternativa textual podría ser incluir un breve resumen de las principales tendencias que se muestran en el gráfico. Si es necesario, proporcione también una descripción más detallada en el texto con el campo **Descripción** en la pestaña de propiedades de imagen **Avanzadas**. Además, puede proporcionar los datos de origen en formato tabulado en cualquier otra parte de la página o sitio.
 * Mapas, diagramas, diagramas de flujo: para los gráficos que proporcionan datos espaciales (por ejemplo, para admitir la descripción de relaciones entre objetos o un proceso), asegúrese de que el mensaje clave se proporcione en formato de texto y de que esta información de texto se coloque cerca de cada punto de datos asociado. En el caso de los mapas, es probable que no sea práctico suministrar un equivalente textual completo. No obstante, si el mapa se proporciona como una forma de ayudar a las personas a encontrar su camino a una ubicación determinada, el texto alternativo de la imagen del mapa puede indicar brevemente *Mapa de X* y, a continuación, ofrecer indicaciones para llegar a esa ubicación en texto en cualquier parte de la página o a través del campo **Descripción** en la pestaña **Avanzado** del componente **Imagen**.
 * Captcha: un Captcha es una *prueba de Turing pública completamente automatizada para distinguir entre equipos y humanos*. Se trata de una comprobación de seguridad que se utiliza en las páginas web para distinguir a los seres humanos de software malintencionado, pero que puede instaurar barreras de accesibilidad. Son imágenes que requieren que se describa lo que se ve para pasar una prueba de seguridad. Como no es posible proporcionar una alternativa textual para la imagen, en lugar de ello tendrá que considerar una solución alternativa que no sea gráfica.‪ W3C ofrece varias sugerencias. Cada uno de estos enfoques tiene sus propios méritos e inconvenientes.
 
@@ -288,7 +288,7 @@ Siga las directrices que se proporcionan para la [Descripción del audio o medio
 
 ### Adaptable (1.3)     {#adaptable}
 
-[Directrices 1.3 Adaptable: Crear contenido que se pueda presentar de diferentes maneras (por ejemplo, con un diseño más sencillo) sin perder información o estructura.](https://www.w3.org/TR/WCAG/#adaptable)
+[Directriz 1.3 adaptable: cree contenido que se pueda presentar de diferentes maneras (por ejemplo, con un diseño más sencillo) sin perder información o estructura.](https://www.w3.org/TR/WCAG/#adaptable)
 
 Esta directriz cubre los requisitos necesarios para apoyar a las siguientes personas:
 
@@ -310,7 +310,7 @@ Este criterio de éxito existe para garantizar que esta información estructural
 
 #### Cómo cumplir: Información y relaciones (1.3.1)     {#how-to-meet-info-and-relationships}
 
-AEM facilita construir contenido web con sentido semántico utilizando los elementos HTML adecuados. Abra el contenido de su página en RTE (un componente Texto) y utilice el **Paraformato** (símbolo de párrafo) para especificar el elemento estructural adecuado (por ejemplo, párrafo, encabezado, etc.).
+AEM facilita construir contenido web con sentido semántico utilizando los elementos HTML adecuados. Abra el contenido de su página en RTE (un componente Texto) y utilice el menú **Paraformato** (símbolo de párrafo) para especificar el elemento estructural adecuado (por ejemplo, párrafo, encabezado, etc.).
 
 Puede garantizar que las páginas web tengan la estructura adecuada mediante los siguientes elementos, según corresponda:
 
@@ -349,7 +349,7 @@ Puede garantizar que las páginas web tengan la estructura adecuada mediante los
 
 * **Énfasis**: Utilice el elemento `<strong>` o `<em>` para dar énfasis. No utilice encabezados o texto enfatizado en los párrafos.
    * Enfatice el texto que quiera remarcar;
-   * Haga clic en **B** icono (para `<strong>`) o el **I** icono (para `<em>`) mostrado en el **Propiedades** panel (asegúrese de que el HTML está seleccionado).
+   * Haga clic en el icono **B** (para `<strong>`) o en el icono **I** (para `<em>`) que se muestra en el panel **Propiedades** (asegúrese de que el HTML está seleccionado).
 
      >[!NOTE]
      >
@@ -445,7 +445,7 @@ De la misma manera, la información que requiere distinguir entre sonidos distin
 
 Asegúrese de que cualquier información relativa a las características visuales del contenido de una página también se presente en un formato alternativo.
 
-* Es importante no basarse en la posición visual para dar información. Por ejemplo, si desea remitir a los usuarios a un menú situado en la parte derecha de la página para acceder a más información, no consulte *el menú de la derecha*; en su lugar, asigne un nombre al menú (por ejemplo, mediante un encabezado) y menciónelo en el texto.
+* Es importante no basarse en la posición visual para dar información. Por ejemplo, si desea remitir a los usuarios a un menú situado en el lado derecho de la página para obtener acceso a más información, no haga referencia a *el menú de la derecha*; en su lugar, asigne un nombre al menú (por ejemplo, mediante un encabezado) y mencione ese nombre en el texto.
 * También es importante no basarse en el estilo del texto (por ejemplo, si se trata de texto en negrita o en cursiva) como la única manera de transmitir la información.
 
 >[!NOTE]
@@ -479,7 +479,7 @@ Por ejemplo, una persona con una deficiencia en la percepción entre el color ro
 
 Además, las personas que utilizan exploradores de solo texto, dispositivos de pantallas monocromáticas o páginas en blanco y negro no pueden percibir el color.
 
-Otra consideración es la *seleccionado* estado de un elemento de interfaz (por ejemplo, pestañas, botones de alternar, entre otros), que debe transmitirse de alguna manera que no sea solo con el color y más allá de una presentación visual. Para estos elementos, el uso adicional de patrones, formas e información programática resulta útil a la hora de crear una experiencia de usuario totalmente inclusiva que no dependa de un sentido específico.
+Otra consideración es el estado *selected* de un elemento de interfaz (por ejemplo, pestañas, botones de alternar, entre otros), que debe transmitirse de alguna manera que no sea solo con el color y más allá de una presentación visual. Para estos elementos, el uso adicional de patrones, formas e información programática resulta útil a la hora de crear una experiencia de usuario totalmente inclusiva que no dependa de un sentido específico.
 
 #### Cómo cumplir: Uso del color (1.4.1)     {#how-to-meet-use-of-color}
 
@@ -845,7 +845,7 @@ Sobre todo, es importante asegurarse de que el objetivo de un vínculo se descri
    * Texto: Clases nocturnas de otoño de 2010, más información.
    * Motivo: ajustando ligeramente el texto y la posición del vínculo se puede mejorar el texto del vínculo.
 
-Los vínculos deben redactarse de forma coherente en todas las páginas, especialmente en las barras de navegación. Por ejemplo, si un vínculo a una página específica se denomina **Publicaciones** en una página, utilice ese texto en otras páginas para garantizar la coherencia.
+Los vínculos deben redactarse de forma coherente en todas las páginas, especialmente en las barras de navegación. Por ejemplo, si un vínculo a una página específica se denomina **Publicaciones** en una página, use ese texto en otras páginas para asegurar la coherencia.
 
 En el momento de escribir este artículo, existen algunos problemas relacionados con el uso de atributos de título para garantizar que vínculos similares presentados en una página proporcionen información única sobre el destino (por ejemplo, &quot;leer más&quot; se referirá a menudo a un rango de destinos diferentes):
 
@@ -855,7 +855,7 @@ En el momento de escribir este artículo, existen algunos problemas relacionados
 
 Por lo tanto, aunque el atributo del título se puede utilizar para proporcionar contexto adicional a un vínculo, tenga en cuenta sus limitaciones y no lo utilice como alternativa al vínculo de un texto.
 
-Cuando el vínculo esté formado por una imagen, asegúrese de que el texto alternativo de la imagen describa el destino del vínculo. Por ejemplo, si la imagen de una estantería es un vínculo a las publicaciones de una persona, el texto alternativo debería ser **Publicaciones de John Smith** y no **Estantería**.
+Cuando el vínculo esté formado por una imagen, asegúrese de que el texto alternativo de la imagen describa el destino del vínculo. Por ejemplo, si la imagen de una estantería se establece como vínculo a las publicaciones de una persona, el texto alternativo debería ser **Publicaciones de John Smith** y no **Estantería**.
 
 Alternativamente, si el anclaje del vínculo contiene texto que describe el objetivo del vínculo, además de la imagen (y por ello aparece junto a la imagen), utilice un atributo alternativo vacío para la imagen:
 
@@ -880,7 +880,7 @@ Aunque se recomienda proporcionar un texto para el vínculo que identifique su o
 
 En algunos casos en los que hay varios vínculos en una misma página (cada uno de los cuales proporciona la dirección de un vínculo con detalles complejos pero necesarios), puede resultar adecuado proporcionar una versión alternativa de la página web que muestre exactamente el mismo contenido pero donde el texto del vínculo no sea tan detallado.
 
-Alternativamente, los scripts se pueden utilizar para proporcionar una cantidad mínima de texto dentro del propio vínculo, pero al activar un control adecuado orientado hacia la parte superior de la página, el texto del vínculo es *expandido* más detalladamente. Un enfoque similar es utilizar CSS para lo siguiente *ocultar* el enlace completo de los usuarios con visión, pero aun así imprímalo en su totalidad a los usuarios del lector de pantalla. Esto no entra dentro del ámbito de este documento, pero puede encontrar más información sobre cómo conseguirlo en la [Más información: Objetivo del vínculo (en contexto) (2.4.4)](#more-information-link-purpose-in-context) sección.
+Alternativamente, los scripts se pueden usar para que se proporcione una cantidad mínima de texto dentro del vínculo, pero al activar un control apropiado colocado hacia la parte superior de la página, el texto del vínculo se *expande* hacia más detalles. Un enfoque similar es usar CSS para *ocultar* el vínculo completo de los usuarios con visión, pero aun así imprimirlo en su totalidad para los usuarios del lector de pantalla. Esto queda fuera del ámbito de este documento, pero puede encontrar más información sobre cómo se puede lograr en la sección [Más información: objetivo del vínculo (en contexto) (2.4.4)](#more-information-link-purpose-in-context).
 
 #### Más información: Objetivo del vínculo (en contexto) (2.4.4) {#more-information-link-purpose-in-context}
 
@@ -1213,7 +1213,7 @@ Las etiquetas se colocan inmediatamente a la derecha del campo.
 * Otros componentes del formulario (por ejemplo, cuadros de texto o cuadros combinados): 
 Las etiquetas se colocan inmediatamente encima o bien a la izquierda del campo.
 
-En formularios simples con funcionalidad limitada, etiquetar correctamente una `Submit` El botón puede actuar como una etiqueta para el campo adyacente (por ejemplo, `Search`). Resulta útil cuando puede ser difícil encontrar espacio para el texto de una etiqueta.
+En formularios simples con funcionalidad limitada, etiquetar correctamente un botón `Submit` puede actuar como una etiqueta para el campo adyacente (por ejemplo, `Search`). Resulta útil cuando puede ser difícil encontrar espacio para el texto de una etiqueta.
 
 #### Más información: Etiquetas o instrucciones (3.3.2)   {#more-information-labels-or-instructions}
 

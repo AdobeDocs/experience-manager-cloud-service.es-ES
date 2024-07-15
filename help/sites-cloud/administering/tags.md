@@ -19,13 +19,13 @@ Las etiquetas son un método intuitivo de clasificar el contenido. Se pueden con
 En Adobe Experience Manager AEM (), una etiqueta puede ser una propiedad de:
 
 * Un nodo de contenido para una página
-   * Ver el documento [Uso de etiquetas](/help/sites-cloud/authoring/sites-console/tags.md) para obtener más información.
+   * Consulte el documento [Uso de etiquetas](/help/sites-cloud/authoring/sites-console/tags.md) para obtener más información.
 * Un nodo de metadatos para un recurso
-   * Ver el documento [Administración de metadatos para recursos digitales](/help/assets/manage-metadata.md) para obtener más información.
+   * Consulte el documento [Administración de metadatos para Assets digital](/help/assets/manage-metadata.md) para obtener más información.
 
 >[!TIP]
 >
->Se recomienda minimizar el número de etiquetas relacionadas con las mismas ideas. Por ejemplo, si administra contenido de una tienda de suministros al aire libre, probablemente no necesite una etiqueta para ambas **calzado** y **zapatos**.
+>Se recomienda minimizar el número de etiquetas relacionadas con las mismas ideas. Por ejemplo, si estás administrando contenido para una tienda de suministros al aire libre, probablemente no necesites una etiqueta para **calzado** y **zapatos**.
 
 ## Características de etiquetas {#tag-features}
 
@@ -36,7 +36,7 @@ Las etiquetas ofrecen funciones sólidas para organizar y administrar el conteni
    * AEM Estas taxonomías son globales en todo el mundo
 * Los autores pueden aplicar las etiquetas y los visitantes del sitio pueden utilizarlas.
 * Independientemente de su creador, todas las formas de etiquetas están disponibles para su selección, tanto al asignarlas a una página como al buscar.
-* Las etiquetas son utilizadas por [Componente Lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) para generar listas dinámicas basadas en las etiquetas seleccionadas.
+* El [componente Lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) utiliza las etiquetas para generar listas dinámicas basadas en las etiquetas seleccionadas.
 
 ## Requisitos de etiquetas {#requirements}
 
@@ -44,15 +44,15 @@ Hay algunos detalles técnicos que se deben tener en cuenta al crear y administr
 
 * Las etiquetas deben ser únicas dentro de un área de nombres específica.
 * El nombre de una etiqueta no puede incluir delimitadores de etiqueta:
-   * Dos puntos (`:`): Delimita la etiqueta de área de nombres
-   * Barra diagonal (`/`): Delimita las subetiquetas
+   * Dos puntos (`:`): delimita la etiqueta de área de nombres
+   * Barra oblicua (`/`): Delimita las etiquetas secundarias
 * Si el título de una etiqueta incluye delimitadores de etiqueta, estos se suprimirán en la interfaz de usuario.
-* Las etiquetas se pueden crear y los miembros del grupo pueden modificar su taxonomía `tag-administrators` grupo y miembros que tienen derechos de modificación a `/content/cq:tags`.
+* Se pueden crear etiquetas y los miembros del grupo `tag-administrators` y los miembros que tienen derechos de modificación sobre `/content/cq:tags` pueden modificar su taxonomía.
    * Una etiqueta que contiene etiquetas secundarias se denomina etiqueta contenedora.
    * Una etiqueta que no es una etiqueta contenedora se denomina etiqueta de hoja.
    * Un área de nombres de etiqueta puede ser una etiqueta de hoja o una etiqueta contenedora.
 
-Para obtener más información técnica sobre cómo funcionan las etiquetas, consulte [AEM Marco de etiquetado de](/help/implementing/developing/introduction/tagging-framework.md).
+AEM Para obtener más información técnica sobre cómo funcionan las etiquetas, consulte [Marco de etiquetado de la](/help/implementing/developing/introduction/tagging-framework.md).
 
 ## Consola de etiquetado {#tagging-console}
 
@@ -68,54 +68,54 @@ Para acceder a la consola de etiquetado:
 1. En el menú de navegación global, seleccione **`Tools`** > **`General`** >
    **`Tagging`**.
 
-![AEM La consola de etiquetado en la](/help/sites-cloud/administering/assets/tagging-console.png)
+AEM ![La consola de etiquetado en el código de tiempo de trabajo](/help/sites-cloud/administering/assets/tagging-console.png)
 
 ## Creación de nuevas etiquetas {#creating-new-tags}
 
 Existen varios pasos para crear y utilizar etiquetas para organizar el contenido.
 
-1. [Cree un área de nombres para las etiquetas](#creating-namespaces) (o elija uno existente para reutilizarlo).
+1. [Cree un área de nombres para sus etiquetas](#creating-namespaces) (o elija una existente para reutilizarla).
 1. [Cree una etiqueta nueva.](#creating-tags)
-1. [Publique la etiqueta.](#publishing-tags)
+1. [Publish la etiqueta.](#publishing-tags)
 
 ### Creación de áreas de nombres {#creating-namespaces}
 
 Se utiliza un área de nombres para organizar otras etiquetas. Se puede considerar como la etiqueta de nivel inferior y se suele utilizar para agrupar otras etiquetas.
 
-1. Para crear un área de nombres, abra [consola de etiquetado](#tagging-console) y seleccione la **Crear** en la barra de herramientas y, a continuación, **Crear área de nombres**.
+1. Para crear un área de nombres, abra la [consola de etiquetado](#tagging-console), seleccione el botón **Crear** en la barra de herramientas y, a continuación, **Crear área de nombres**.
 
    ![Cuadro de diálogo Agregar área de nombres](/help/sites-cloud/administering/assets/add-namespace.png)
 
 1. Proporcione la información necesaria.
 
-   * **Título** : un título para el área de nombres mostrado al usuario en la interfaz de usuario (opcional)
-   * **Nombre** - Si no se especifica un nombre, se crea un nombre de nodo válido a partir del **Título**. Ver el documento [AEM Marco de etiquetado de](/help/implementing/developing/introduction/tagging-framework.md#tagid) para obtener más información.
-   * **Descripción** : descripción del área de nombres (opcional)
+   * **Título**: título del área de nombres mostrado al usuario en la interfaz de usuario (opcional)
+   * **Nombre**: si no se especifica un nombre, se crea un nombre de nodo válido a partir del **Título**. AEM Consulte el documento [Marco de etiquetado de ](/help/implementing/developing/introduction/tagging-framework.md#tagid)para obtener más información.
+   * **Descripción**: una descripción del área de nombres (opcional)
 
-1. Una vez introducida la información necesaria, seleccione **Crear**.
+1. Una vez que ingrese la información requerida, seleccione **Crear**.
 
 Se crea el área de nombres. En la consola de etiquetado, las áreas de nombres se encuentran en el nivel inferior (en la columna del extremo izquierdo de la consola) y se representan mediante iconos de carpeta, que reflejan su naturaleza como &quot;contenedor&quot; o agrupación de otras etiquetas.
 
-Ahora puede [crear nuevas etiquetas](#creating-tags) en esta área de nombres o [administrar etiquetas existentes.](#managing-tags)
+Ahora puede [crear nuevas etiquetas](#creating-tags) en este espacio de nombres o [administrar las etiquetas existentes.](#managing-tags)
 
-Un área de nombres no necesita contener subetiquetas. Como un área de nombres es en sí misma una etiqueta, se puede utilizar para organizar el contenido como cualquier otra etiqueta. Sin embargo, para seguir creando una taxonomía de etiquetado estructurada, puede [creación de subetiquetas](#creating-tags) dentro de ese área de nombres según los requisitos del proyecto.
+Un área de nombres no necesita contener subetiquetas. Como un área de nombres es en sí misma una etiqueta, se puede utilizar para organizar el contenido como cualquier otra etiqueta. Sin embargo, para continuar creando una taxonomía de etiquetado estructurada, puede [crear subetiquetas](#creating-tags) dentro de ese área de nombres en función de los requisitos de su proyecto.
 
 ### Creación de etiquetas {#creating-tags}
 
 Las etiquetas se suelen añadir a áreas de nombres.
 
-1. Para crear una etiqueta, abra el [consola de etiquetado.](#tagging-console)
+1. Para crear una etiqueta, abra la [consola de etiquetado.](#tagging-console)
 
 1. Seleccione el área de nombres donde desea crear la etiqueta. O seleccione otra etiqueta para crear una subetiqueta debajo de ella.
 
-1. Seleccione el **Crear** en la barra de herramientas y, a continuación, **Crear etiqueta**.
+1. Seleccione el botón **Crear** en la barra de herramientas y luego **Crear etiqueta**.
 
-1. El **Crear etiqueta** se abre. Proporcione la información necesaria para la nueva etiqueta.
+1. Se abre el cuadro de diálogo **Crear etiqueta**. Proporcione la información necesaria para la nueva etiqueta.
 
-   * **Título** - Un título para mostrar para la etiqueta (obligatorio)
+   * **Título**: un título para mostrar para la etiqueta (obligatorio)
    * **Nombre** - Un nombre para la etiqueta (obligatorio). Si no se especifica, se crea un nombre de nodo válido a partir del **Título**. Consulte [TagID](/help/implementing/developing/introduction/tagging-framework.md#tagid).
    * **Descripción** - Una descripción de la etiqueta
-   * **Ruta de etiqueta** : El valor predeterminado es el área de nombres (o etiqueta) seleccionada en la consola de etiquetado. Esto se puede actualizar manualmente tocando o haciendo clic en el icono del selector de rutas.
+   * **Ruta de etiqueta**: de forma predeterminada, el área de nombres (o etiqueta) que seleccionó en la consola de etiquetado. Esto se puede actualizar manualmente tocando o haciendo clic en el icono del selector de rutas.
 
    ![Cuadro de diálogo Crear etiqueta](assets/create-tag.png)
 
@@ -132,23 +132,23 @@ Las etiquetas permiten la creación flexible de su propia taxonomía en función
 
 AEM Al igual que con la creación de cualquier otro contenido en la, después de crear una etiqueta (o área de nombres), solo existe en el entorno de creación. Para que las etiquetas estén disponibles para los usuarios, debe publicarlas.
 
-1. Para publicar una etiqueta, abra el [consola de etiquetado.](#tagging-console)
+1. Para publicar una etiqueta, abra la [consola de etiquetado.](#tagging-console)
 
 1. Seleccione las etiquetas que desee publicar y, en la barra de herramientas, seleccione **Publish**.
 
-   ![Selección de etiquetas en la consola](assets/select-tags.png)
+   ![Seleccionar etiquetas en la consola](assets/select-tags.png)
 
-1. El **Publicar etiqueta** El cuadro de diálogo solicita una confirmación para publicar las etiquetas seleccionadas. Seleccione **Publicar**.
+1. El cuadro de diálogo **Etiqueta de Publish** solicita una confirmación para publicar las etiquetas seleccionadas. Seleccione **Publicar**.
 
-   ![El modal de confirmación Publicar etiqueta](assets/publish-tag.png)
+   ![Modo de confirmación de etiqueta Publish](assets/publish-tag.png)
 
-1. La acción de publicación se confirma con un **Correcto** diálogo.
+1. La acción de publicación se confirmó con un cuadro de diálogo **Éxito**.
 
-   ![Cuadro de diálogo Publicar etiqueta correcta](assets/publish-tag-success.png)
+   ![cuadro de diálogo de éxito de etiquetas Publish](assets/publish-tag-success.png)
 
 Las etiquetas seleccionadas se han puesto en la cola de publicación. Al igual que el contenido de la página, solo se publican las etiquetas seleccionadas, independientemente de si tienen o no subetiquetas.
 
-Para publicar una taxonomía completa (un área de nombres y subetiquetas), la práctica recomendada es crear una [paquete](/help/implementing/developing/tools/package-manager.md) del área de nombres (consulte [Nodo raíz de taxonomía](/help/implementing/developing/introduction/tagging-framework.md#taxonomy-root-node)).
+Para publicar una taxonomía completa (un área de nombres y subetiquetas), la práctica recomendada es crear un [paquete](/help/implementing/developing/tools/package-manager.md) del área de nombres (consulte [Nodo raíz de taxonomía](/help/implementing/developing/introduction/tagging-framework.md#taxonomy-root-node)).
 
 <!--
 Be sure to [apply permissions](#setting-tag-permissions) to the namespace before creating the package.
@@ -174,13 +174,13 @@ Cuando se selecciona una sola etiqueta, un área de nombres u otra etiqueta en l
 
 ![Columna de detalles de etiqueta](assets/tag-details-column.png)
 
-Puede ver más detalles acerca de la etiqueta, incluidos quién la publicó por última vez y cuándo cambió la consola a **Propiedades** vista.
+Puede ver más detalles sobre la etiqueta, incluidos quién la publicó por última vez y cuándo cambió la consola a la vista **Propiedades**.
 
-1. Para ver las propiedades de una etiqueta, abra el [consola de etiquetado.](#tagging-console)
+1. Para ver las propiedades de una etiqueta, abra la [consola de etiquetado.](#tagging-console)
 
 1. Seleccione la etiqueta cuyas propiedades desee ver y, en el carril izquierdo, seleccione **Propiedades**.
 
-   ![Selección de la vista Propiedades](assets/view-tag-properties.png)
+   ![Seleccionando vista de propiedades](assets/view-tag-properties.png)
 
 1. Las propiedades detalladas de la etiqueta seleccionada se muestran en el carril izquierdo.
 
@@ -192,7 +192,7 @@ Para obtener más información sobre la selección de los modos de visualizació
 
 Las etiquetas y los espacios de nombre se pueden editar después de la creación.
 
-1. Para editar una etiqueta, abra el [consola de etiquetado.](#tagging-console)
+1. Para editar una etiqueta, abra la [consola de etiquetado.](#tagging-console)
 
 1. Seleccione la etiqueta que desee editar y, en la barra de herramientas, seleccione **Editar**.
 
@@ -204,39 +204,39 @@ Las etiquetas y los espacios de nombre se pueden editar después de la creación
 
 1. Una vez realizadas las ediciones, seleccione **Enviar**.
 
-Para obtener más información sobre cómo añadir traducciones de idioma, consulte la sección sobre [Administración de etiquetas en diferentes idiomas](#managing-tags-in-different-languages).
+Para obtener más información sobre cómo agregar traducciones de idiomas, consulte la sección sobre [Administración de etiquetas en diferentes idiomas](#managing-tags-in-different-languages).
 
-Si los cambios que ha realizado son de una etiqueta ya publicada, es posible que desee [vuelva a publicarlo.](#publishing-tags)
+Si los cambios que realizó fueron a una etiqueta ya publicada, es posible que desee [volver a publicarla.](#publishing-tags)
 
 ### Cancelar publicación de etiquetas {#unpublishing-tags}
 
 Para desactivar la etiqueta en la instancia de autor y quitarla de la instancia de publicación, puede cancelar la publicación.
 
-1. Para cancelar la publicación de una etiqueta, abra el [consola de etiquetado.](#tagging-console)
+1. Para cancelar la publicación de una etiqueta, abra la [consola de etiquetado.](#tagging-console)
 
-1. Seleccione la etiqueta o etiquetas que desea cancelar la publicación y, en la barra de herramientas, seleccione **Cancelar publicación**.
+1. Seleccione la etiqueta o etiquetas cuya publicación desea cancelar y, en la barra de herramientas, seleccione **Cancelar publicación**.
 
-   ![Selección de etiquetas en la consola](assets/select-tags.png)
+   ![Seleccionar etiquetas en la consola](assets/select-tags.png)
 
-1. El **Cancelar publicación de etiqueta** El cuadro de diálogo solicita una confirmación para publicar las etiquetas seleccionadas. Seleccione **Publicar**.
+1. El cuadro de diálogo **Cancelar publicación de etiqueta** pide una confirmación para publicar las etiquetas seleccionadas. Seleccione **Publicar**.
 
-   ![El modal de confirmación Publicar etiqueta](assets/unpublish-tag.png)
+   ![Modo de confirmación de etiqueta Publish](assets/unpublish-tag.png)
 
-1. La acción de cancelación de publicación se confirma con un **Correcto** diálogo.
+1. La acción de cancelar la publicación se confirmó con un cuadro de diálogo **Éxito**.
 
-   ![Cuadro de diálogo Publicar etiqueta correcta](assets/unpublish-tag-success.png)
+   ![cuadro de diálogo de éxito de etiquetas Publish](assets/unpublish-tag-success.png)
 
 Las etiquetas seleccionadas se han puesto en la cola de cancelación de publicación. Si la etiqueta seleccionada es una etiqueta contenedora, todas sus etiquetas secundarias se desactivarán en el entorno de creación y se eliminarán del entorno de publicación.
 
 ### Visualización de referencias de etiqueta {#viewing-tag-references}
 
-Puede resultar útil ver a qué contenido se aplica una etiqueta en particular. Para ello, utilice el complemento **Referencias** en la consola de etiquetado.
+Puede resultar útil ver a qué contenido se aplica una etiqueta en particular. Puede hacerlo usando la vista **Referencias** de la consola de etiquetado.
 
-1. Para ver las referencias de una etiqueta, abra el [consola de etiquetado.](#tagging-console)
+1. Para ver las referencias de una etiqueta, abra la [consola de etiquetado.](#tagging-console)
 
 1. Seleccione la etiqueta cuyas referencias desee ver y, en el carril izquierdo, seleccione **Referencias**.
 
-   ![Selección de la vista Propiedades](assets/view-tag-references.png)
+   ![Seleccionando vista de propiedades](assets/view-tag-references.png)
 
 1. El número total de referencias para la etiqueta seleccionada se muestra en el carril izquierdo.
 
@@ -258,16 +258,16 @@ Puede ser necesario limpiar o reorganizar la taxonomía de etiquetado moviendo u
 >
 >Se recomienda que solo se permita a los administradores mover y cambiar el nombre de las etiquetas.
 
-1. Para mover o cambiar el nombre de una etiqueta, abra [consola de etiquetado.](#tagging-console)
+1. Para mover o cambiar el nombre de una etiqueta, abra la [consola de etiquetado.](#tagging-console)
 
-1. Seleccione la etiqueta que desee mover o cambiar el nombre y seleccione **Mover** en la barra de herramientas.
+1. Seleccione la etiqueta que quiera mover o cambiar de nombre y seleccione **Mover** en la barra de herramientas.
 
-1. En el **Mover etiqueta** , especifique qué propiedad desea cambiar.
+1. En el cuadro de diálogo **Mover etiqueta**, especifique qué propiedad desea cambiar.
 
-   * **Cambiar nombre a** - El nuevo nombre que desea dar a la etiqueta
+   * **Cambiar nombre a**: el nuevo nombre que desea dar a la etiqueta
       * Este campo se rellena previamente con el nombre actual de la etiqueta.
       * Deje sin modificar si sólo desea mover la etiqueta y no cambiarle el nombre.
-   * **Mover a** - Dónde desea mover la etiqueta
+   * **Mover a**: lugar donde desea mover la etiqueta
       * Este campo se rellena previamente con la ubicación actual de la etiqueta.
       * Deje sin modificar si sólo desea cambiar el nombre de la etiqueta y no moverla.
 
@@ -279,37 +279,37 @@ Se cambia el nombre de la etiqueta o se mueve a su nueva ubicación. Si la etiqu
 
 ### Combinación de etiquetas {#merging-tags}
 
-Si la taxonomía de etiquetado tiene duplicados o etiquetas similares, puede resultar útil combinar esas etiquetas. Etiqueta When `A` se combina en la etiqueta `B`, todas las páginas etiquetadas con la etiqueta `A` se etiquetan con etiqueta `B` Etiqueta y `A` ya no está disponible para los autores.
+Si la taxonomía de etiquetado tiene duplicados o etiquetas similares, puede resultar útil combinar esas etiquetas. Cuando la etiqueta `A` se combina con la etiqueta `B`, todas las páginas etiquetadas con la etiqueta `A` se etiquetarán con la etiqueta `B` y la etiqueta `A` ya no estará disponible para los autores.
 
-1. Para combinar dos etiquetas, abra [consola de etiquetado.](#tagging-console)
+1. Para combinar dos etiquetas, abra la [consola de etiquetado.](#tagging-console)
 
-1. Seleccione la etiqueta que desea combinar en otra etiqueta y, a continuación, seleccione **Combinar** en la barra de herramientas.
+1. Seleccione la etiqueta que desee combinar en otra etiqueta y, a continuación, seleccione **Combinar** en la barra de herramientas.
 
-1. En el **Combinar etiqueta** , seleccione la **Examinar** icono de la **Combinar en** para especificar en qué etiqueta desea combinar la etiqueta seleccionada.
+1. En el cuadro de diálogo **Combinar etiqueta**, seleccione el icono **Examinar** del campo **Combinar en** para especificar en qué etiqueta desea combinar la etiqueta seleccionada.
 
    ![Cuadro de diálogo Combinar etiqueta](assets/merge-tag.png)
 
 1. Seleccione **Enviar**.
 
-La etiqueta seleccionada en la consola se combina con la etiqueta especificada en el cuadro de diálogo. Cuando se mueve o combina una etiqueta a la que se hace referencia, la etiqueta no se elimina físicamente de modo que sea posible mantener referencias. Consulte [AEM Marco de etiquetado de](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags) para obtener más información.
+La etiqueta seleccionada en la consola se combina con la etiqueta especificada en el cuadro de diálogo. Cuando se mueve o combina una etiqueta a la que se hace referencia, la etiqueta no se elimina físicamente de modo que sea posible mantener referencias. AEM Consulte [Marco de etiquetado de](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags) para obtener más información.
 
 ### Eliminación de etiquetas {#deleting-tags}
 
 Si la taxonomía de etiquetado cambia y hace que una etiqueta o área de nombres sea innecesaria, se puede eliminar.
 
-1. Para eliminar una etiqueta, abra el [consola de etiquetado.](#tagging-console)
+1. Para eliminar una etiqueta, abra la [consola de etiquetado.](#tagging-console)
 
 1. Seleccione la etiqueta que desee eliminar y, a continuación, seleccione **Eliminar** en la barra de herramientas.
 
-1. El **Eliminar etiqueta** El cuadro de diálogo solicita una confirmación para eliminar las etiquetas seleccionadas. Seleccione **Eliminar**.
+1. El cuadro de diálogo **Eliminar etiqueta** solicita una confirmación para eliminar las etiquetas seleccionadas. Seleccione **Eliminar**.
 
-   ![El modal de confirmación Eliminar etiqueta](assets/delete-tag.png)
+   ![El modal de confirmación para eliminar etiqueta](assets/delete-tag.png)
 
 1. AEM Comprobaciones para asegurarse de que no se hace referencia a la etiqueta.
 
    1. AEM Si no se encuentran referencias, se solicita una confirmación final para eliminar el elemento de la lista de referencias. Seleccionar **Eliminar**
 
-      ![No se han encontrado referencias](assets/no-references-found.png)
+      ![No se encontraron referencias](assets/no-references-found.png)
 
    1. AEM Si se encuentran referencias, las presenta y solicita una confirmación final para su eliminación.
 
@@ -354,30 +354,30 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
 
 ## Administración de etiquetas en diferentes idiomas {#managing-tags-in-different-languages}
 
-El `title` La propiedad de una etiqueta se puede traducir a varios idiomas. Una vez traducido, el título de etiqueta adecuado se puede mostrar según el idioma del usuario o el contenido.
+La propiedad `title` de una etiqueta se puede traducir a varios idiomas. Una vez traducido, el título de etiqueta adecuado se puede mostrar según el idioma del usuario o el contenido.
 
-Supongamos que tenemos una etiqueta llamada.. `Animals` que queremos traducir al alemán y al francés.
+Supongamos que tenemos una etiqueta llamada `Animals` que queremos traducir al alemán y al francés.
 
-1. Abra el [consola de etiquetado.](#tagging-console)
+1. Abra la [consola de etiquetado.](#tagging-console)
 
 1. Seleccione la etiqueta que desee traducir y, a continuación, seleccione **Editar** en la barra de herramientas.
 
-1. En el **Editar etiqueta** diálogo, en el **Localización** , seleccione el idioma de destino, por ejemplo, alemán.
+1. En el cuadro de diálogo **Editar etiqueta**, en la columna **Localización**, seleccione el idioma de destino, por ejemplo, el alemán.
 
-1. En el **Alemán** que aparece, proporcione el título traducido.
+1. En el campo **Alemán** que aparece, proporcione el título traducido.
 
 1. Repita los dos pasos anteriores para francés.
 
-   ![Traducción de títulos de etiquetas](assets/translate-tag.png)
+   ![Traduciendo títulos de etiquetas](assets/translate-tag.png)
 
 1. Seleccione **Enviar**.
 
 Para las páginas de contenido, el idioma elegido para la etiqueta se toma del idioma de la página, cuando está disponible.
 
-AEM Sin embargo, en el entorno de creación de, utiliza la configuración de idioma del usuario. Por lo tanto, en la consola de etiquetado, para `Animals` etiqueta, `Animaux` se mostraría para un usuario que establece el idioma en francés en sus propiedades de usuario.
+AEM Sin embargo, en el entorno de creación de, utiliza la configuración de idioma del usuario. Por lo tanto, en la consola de etiquetado, para la etiqueta `Animals`, se mostraría `Animaux` para un usuario que establece el idioma en francés en sus propiedades de usuario.
 
-Para añadir un nuevo idioma al cuadro de diálogo, consulte el documento [AEM Creación de etiquetas en aplicaciones de](/help/implementing/developing/introduction/tagging-applications.md#adding-a-new-language-to-the-edit-tag-dialog)
+AEM Para agregar un nuevo idioma al cuadro de diálogo, consulte el documento [Generación de etiquetas en aplicaciones de la aplicación de la red 1}](/help/implementing/developing/introduction/tagging-applications.md#adding-a-new-language-to-the-edit-tag-dialog)
 
 >[!TIP]
 >
->AEM Si desea obtener más información acerca de las funciones de localización de la, consulte [Traducción Del Contenido Para Sitios Multilingües](/help/sites-cloud/administering/translation/overview.md).
+>AEM Si desea obtener más información acerca de las características de localización de la, consulte [Traducción del contenido para sitios multilingües](/help/sites-cloud/administering/translation/overview.md).

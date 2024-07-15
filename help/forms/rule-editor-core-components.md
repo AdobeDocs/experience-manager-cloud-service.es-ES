@@ -16,7 +16,7 @@ ht-degree: 86%
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (componentes principales) | Este artículo |
-| AEM as a Cloud Service (componentes base) | [Haga clic aquí](/help/forms/rule-editor.md) |
+| AEM as a Cloud Service (componentes de base) | [Haga clic aquí](/help/forms/rule-editor.md) |
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=es) |
 
 # Agregar reglas a un formulario adaptable (componentes principales) {#adaptive-forms-rule-editor}
@@ -43,7 +43,7 @@ Los usuarios que se agregan al grupo de usuarios avanzados de formularios pueden
 
 >[!NOTE]
 >
-> Para ver en detalle cómo crear y utilizar funciones personalizadas, consulte [Funciones personalizadas en Forms adaptable (componentes principales)](/help/forms/create-and-use-custom-functions.md) artículo.
+> Para ver en detalle cómo crear y usar funciones personalizadas, consulte [Funciones personalizadas en el artículo de Forms adaptable (componentes principales)](/help/forms/create-and-use-custom-functions.md).
 
 ## Explicación de una regla {#understanding-a-rule}
 
@@ -94,7 +94,7 @@ El editor de reglas proporciona los siguientes operadores lógicos y eventos med
 * **Starts With**
 * **Ends With**
 * **Contains**
-* **Does not contain**
+* **No contiene**
 * **Is Empty**
 * **Is Not Empty**
 * **Has Selected:** devuelve el valor True cuando el usuario selecciona una opción concreta para un botón de opción, un menú desplegable o una casilla de verificación.
@@ -148,9 +148,9 @@ Al escribir una regla When, puede activar la acción Clear Value Of. La acción 
 >
 > Cuando el tipo de regla solo admite instrucciones de un solo nivel then-else.
 
-#### Varios campos permitidos en [!UICONTROL Cuándo] {#allowed-multiple-fields}
+#### Varios campos permitidos en [!UICONTROL When] {#allowed-multiple-fields}
 
-En el **Cuándo** , tiene la opción de agregar otros campos aparte del campo al que se aplica la regla.
+En la condición **When**, tiene la opción de agregar otros campos aparte del campo al que se aplica la regla.
 
 Por ejemplo, con el tipo de regla When, puede evaluar una condición en diferentes objetos de formulario y realizar la acción:
 
@@ -168,11 +168,11 @@ Acción 1 en el objeto A
 
 _
 
-![Varios campos permitidos en Cuándo](/help/forms/assets/allowed-multiple-field-when.png)
+![Varios campos permitidos en When](/help/forms/assets/allowed-multiple-field-when.png)
 
 ##### Consideraciones al utilizar los campos múltiples permitidos en la función de condición When
 
-* Asegúrese de que la variable [El componente principal está configurado en la versión 3.0.14 o posterior](https://github.com/adobe/aem-core-forms-components) para utilizar esta función en el editor de reglas.
+* Asegúrese de que el componente principal [está configurado en la versión 3.0.14 o posterior](https://github.com/adobe/aem-core-forms-components) para usar esta característica en el editor de reglas.
 * Si las reglas se aplican a diferentes campos dentro de la condición When, la regla entra en déclencheur aunque solo se cambie uno de esos campos.
 
 
@@ -196,7 +196,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 Si los campos múltiples permitidos en la función de condición When encuentran algún problema, siga los pasos de solución de problemas como:
 
 1. Abra el formulario en modo de edición.
-1. Abra el Explorador de contenido y seleccione **[!UICONTROL Contenedor de guía]** del formulario adaptable.
+1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** de su formulario adaptable.
 1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
 1. Haga clic en Listo y vuelva a guardar el cuadro de diálogo.
 
@@ -230,7 +230,7 @@ El tipo de regla **[!UICONTROL Establecer propiedad]** permite establecer el val
 * válido (booleano)
 * errorMessage (Cadena)
 * predeterminado (número, cadena, fecha)
-* enumNames (cadena)[])
+* enumNames (String[])
 * chartType (Cadena)
 
 Por ejemplo, permite definir reglas para mostrar el cuadro de texto cuando se hace clic en un botón. Puede utilizar una función personalizada, un objeto de formulario, una propiedad de objeto o una salida de servicio para definir una regla.
@@ -255,17 +255,17 @@ En la siguiente figura se muestra un ejemplo de cómo habilitar dinámicamente l
 
 **[!UICONTROL Restablecer]** Restablece el formulario o el objeto especificado.
 
-**[!UICONTROL Validate]** Valida el formulario o el objeto especificado.
+**[!UICONTROL Validar]** Valida el formulario o el objeto especificado.
 
 **[!UICONTROL Add Instance]**. Agrega una instancia del panel repetible o fila de tabla especificados.
 
 **[!UICONTROL Remove Instance]**. Quita una instancia del panel repetible o fila de tabla especificados.
 
-**[!UICONTROL Salida de función]** Define una regla basada en funciones predefinidas o funciones personalizadas.
+**[!UICONTROL Salida de función]** Define una regla basada en funciones predefinidas o personalizadas.
 
 **[!UICONTROL Navigate to]**. Navega a otros formularios adaptables<!--Interactive Communications,-->, otros recursos, como imágenes o fragmentos de documento, o una URL externa. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
-**[!UICONTROL Evento de envío]** Déclencheur las acciones o comportamientos específicos en función de condiciones o eventos predefinidos.
+**[!UICONTROL Evento de envío]** almacena en Déclencheur las acciones o comportamientos específicos en función de condiciones o eventos predefinidos.
 
 
 ### [!UICONTROL Set Value Of] {#set-value-of}
@@ -276,13 +276,17 @@ El tipo de regla **Set Value Of** no está disponible para todos los objetos de 
 
 Set value of Objeto A to:
 
-(cadena ABC) O (propiedad de objeto X de objeto C) O (valor de una función) O (valor de una expresión matemática) O (valor de salida de un servicio del modelo de datos);
+(cadena ABC) O
+(propiedad de objeto X del objeto C) O
+(valor de una función) O
+(valor de una expresión matemática) O
+(valor de salida de un servicio del modelo de datos);
 
 When (opcional):
 
 (Condición 1 AND Condición 2 AND Condición 3) is TRUE;
 
-El siguiente ejemplo selecciona el valor de `Question2` as `True` y establece el valor de `Result` as `correct`.
+El ejemplo siguiente selecciona el valor de `Question2` como `True` y establece el valor de `Result` como `correct`.
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
@@ -464,7 +468,7 @@ El botón **[!UICONTROL Cancelar]** descarta los cambios realizados en una regla
 
 ## Escribir reglas {#write-rules}
 
-Puede escribir reglas mediante el editor visual de reglas <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
+Puede escribir reglas mediante el editor de reglas visual <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
 
 Veamos primero cómo escribir reglas utilizando el editor visual.
 
@@ -499,7 +503,7 @@ Para escribir las reglas, realice los siguientes pasos:
 
    ![Radio button values from rule editor](assets/radio-button-values.png)-->
 
-1. En el **[!UICONTROL Introduzca una cadena]** en la regla, seleccione **Casado** en el menú desplegable.
+1. En el campo **[!UICONTROL Escriba una cadena]** en la regla, seleccione **Casado** del menú desplegable.
 
    ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4-cc.png)
 
@@ -514,12 +518,12 @@ Para escribir las reglas, realice los siguientes pasos:
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6-cc.png)
 
    A continuación, defina la acción que se realizará si esta condición es False.
-1. Clic **[!UICONTROL Agregar otra sección]** para añadir otra condición para **[!UICONTROL Salario del cónyuge]** , en caso de que seleccione Marital Status como single.
+1. Haga clic en **[!UICONTROL Agregar otra sección]** para agregar otra condición para el campo **[!UICONTROL Salario del cónyuge]**, en caso de que seleccione Estado civil como soltero.
 
    ![when-else](assets/when-else.png)
 
 
-1. En la instrucción Else, seleccione **[!UICONTROL Hide]** desde el **[!UICONTROL Seleccionar acción]** menú desplegable.
+1. En la instrucción Else, seleccione **[!UICONTROL Hide]** de la lista desplegable **[!UICONTROL Select Action]**.
    ![when-else](assets/when-else-1.png)
 
 1. Arrastre y suelte el campo **[!UICONTROL Spouse Salary]** de la pestaña Objetos de formulario en el campo **[!UICONTROL Colocar objeto o seleccionar aquí]**. Como alternativa, seleccione el campo **[!UICONTROL Colocar objeto o seleccionar aquí]** y seleccionar el campo **[!UICONTROL Salario del cónyuge]** del menú emergente, que enumera todos los objetos del formulario.
@@ -632,7 +636,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### Funciones personalizadas en el editor de reglas {#custom-functions}
 
-Aparte de las funciones integradas, como *Suma de* que se enumeran en **Salida de funciones** Además, también puede utilizar funciones personalizadas en el editor de reglas. El editor de reglas admite la sintaxis de JavaScript ECMAScript 2019 para scripts y funciones personalizadas. Para obtener instrucciones sobre la creación de funciones personalizadas, consulte el artículo [Funciones personalizadas en Forms adaptable](/help/forms/create-and-use-custom-functions.md).
+Además de las funciones integradas, como *Sum of* que se enumeran en **Salida de funciones**, también puede usar funciones personalizadas en el editor de reglas. El editor de reglas admite la sintaxis de JavaScript ECMAScript 2019 para scripts y funciones personalizadas. Para obtener instrucciones sobre cómo crear funciones personalizadas, consulte el artículo [Funciones personalizadas en Forms adaptable](/help/forms/create-and-use-custom-functions.md).
 
 <!--
 

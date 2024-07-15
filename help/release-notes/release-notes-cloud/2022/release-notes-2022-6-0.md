@@ -39,7 +39,7 @@ Eche un vistazo al vídeo Información general sobre la versión de junio de 202
 
 ### Nuevas funciones de [!DNL Sites] {#sites-features}
 
-* Un nuevo [interfaz de usuario](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) ya está disponible para administradores y autores de contenido para administrar de forma eficaz (como publicar, cancelar la publicación, copiar, mover, etc.), buscar/filtrar y crear fragmentos de contenido para casos de uso sin encabezado.
+* Ahora hay disponible una nueva [interfaz de usuario](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) para autores y administradores de contenido que permite administrar de forma eficaz (como publicar, cancelar la publicación, copiar, mover, etc.), buscar/filtrar y crear fragmentos de contenido para casos de uso sin encabezado.
 
   ![Consola de fragmento de contenido](/help/release-notes/assets/cf-ui.png)
 
@@ -96,7 +96,7 @@ Experience Manager Assets utiliza las capacidades de Adobe Sensei AI para ahora 
 
 ### Novedades {#what-is-new-foundation}
 
-* Como se mencionó en las notas de la versión de mayo (2022.5.0), la opción &quot;Agregar árbol&quot; en la pantalla del administrador del agente de replicación **Distribuir** se ha eliminado la pestaña. Los paquetes con una jerarquía de contenido de árbol deben replicarse usando [Administrar publicación](/help/operations/replication.md#manage-publication) o el flujo de trabajo del [Árbol de contenido de publicación](/help/operations/replication.md#manage-publication#publish-content-tree-workflow).
+* Como se mencionó en las notas de la versión de mayo (2022.5.0), se eliminó la opción &quot;Agregar árbol&quot; en la pestaña **Distribuir** de la pantalla del administrador del agente de replicación. Los paquetes con una jerarquía de contenido de árbol deben replicarse usando [Administrar publicación](/help/operations/replication.md#manage-publication) o el flujo de trabajo del [Árbol de contenido de publicación](/help/operations/replication.md#manage-publication#publish-content-tree-workflow).
 
 ## Cloud Manager {#cloud-manager}
 

@@ -17,7 +17,7 @@ Este documento se ha diseñado para ofrecer una descripción general de la gesti
 >[!NOTE]
 >
 >* Algunas funcionalidades no están disponibles en todas las consolas y es posible que otras adicionales estén disponibles en algunas consolas. En otras páginas se ofrece información específica sobre las consolas individuales y su funcionalidad relacionada.
->* AEM Los métodos abreviados del teclado están disponibles en todo el mundo En particular, cuando [uso de consolas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) y [edición de páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+>* AEM Los métodos abreviados del teclado están disponibles en todo el mundo En particular cuando [usa las consolas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) y [edita páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
 {{edge-delivery-authoring}}
 
@@ -31,7 +31,7 @@ Inmediatamente después de iniciar sesión, llegará al [Panel de navegación](#
 
 ![Panel de navegación](/help/sites-cloud/authoring/assets/navigation.png)
 
-Para comprender bien el uso básico de AEM, este documento se basa en la consola **Sitios**. Seleccionar en **Sites** para empezar.
+Para comprender bien el uso básico de AEM, este documento se basa en la consola **Sitios**. Seleccione **Sitios** para comenzar.
 
 ## Navegación de productos    {#product-navigation}
 
@@ -39,7 +39,7 @@ Cada vez que se accede por primera vez a una consola, se inicia un tutorial de n
 
 ![Tutorial de navegación](/help/sites-cloud/authoring/assets/tutorial.png)
 
-Seleccionar **Siguiente** para avanzar a la siguiente página de la descripción general. Seleccionar **Cerrar** o seleccione fuera del cuadro de diálogo información general para cerrar.
+Seleccione **Siguiente** para avanzar a la siguiente página de la descripción general. Seleccione **Cerrar** o seleccione fuera del cuadro de diálogo de la descripción general para cerrar.
 
 La descripción general se reiniciará la próxima vez que acceda a una consola, a menos que vea todas las diapositivas o marque la opción **No volver a mostrar esto**.
 
@@ -53,7 +53,7 @@ Para volver a la ubicación anterior, puede cerrar el panel de navegación globa
 
 La navegación global dispone de dos paneles, representados por iconos en el lado izquierdo de la pantalla:
 
-* **[Navegación](#navigation-panel)** AEM - Se representa mediante una brújula y el panel predeterminado al iniciar sesión en la interfaz de usuario de la aplicación de la interfaz de usuario de la página de
+* AEM **[Navegación](#navigation-panel)**: representada por una brújula y el panel predeterminado al iniciar sesión en el sitio de trabajo de la cuenta de usuario de
 * **[Herramientas](#tools-panel)**: se representan con un martillo
 
 A continuación, se describen las opciones disponibles en estos paneles.
@@ -171,7 +171,7 @@ Hay varios medios de ayuda disponibles:
 
 * **Barra de herramientas de la consola**
 
-  Según su ubicación, la variable **Ayuda** abre los recursos adecuados:
+  Según su ubicación, el icono **Ayuda** abrirá los recursos apropiados:
 
   ![Icono de ayuda](/help/sites-cloud/authoring/assets/help-console.png)
 
@@ -475,6 +475,6 @@ Consulte el documento [Uso del carril del sitio para administrar el tema del sit
 
 ### Filter {#filter}
 
-Se abrirá un panel similar al siguiente: [búsqueda](/help/sites-cloud/authoring/getting-started/search.md) con los filtros de ubicación adecuados ya establecidos, lo que le permite filtrar aún más el contenido que desea ver.
+Esto abre un panel similar a [search](/help/sites-cloud/authoring/getting-started/search.md) con los filtros de ubicación apropiados ya establecidos, lo que le permite filtrar aún más el contenido que desea ver.
 
 ![Ejemplo de filtro](/help/sites-cloud/authoring/assets/filter.png)

@@ -3,13 +3,13 @@ title: AEM ¿Cómo reiniciar el SDK de la?
 description: AEM Prácticas recomendadas para reiniciar el SDK de la
 role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: a0e2c0e3020d48b171645818b8e02dc33b50c2d5
+exl-id: 5fec2a93-1dda-4240-8690-24a6afae5c2b
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
 workflow-type: tm+mt
 source-wordcount: '107'
-ht-degree: 14%
+ht-degree: 27%
 
 ---
-
 
 # AEM Reinicio del SDK de la
 
@@ -21,11 +21,11 @@ AEM AEM Si reinicia el SDK de la deteniendo los procesos de Java™, puede provo
 
 ## Solución
 
-AEM Para reiniciar el SDK de la, vaya a la ventana de comandos activa y pulse `Ctrl + C` para reiniciar el SDK.
+AEM Para reiniciar el SDK de la, vaya a la ventana de comandos activa y pulse el comando `Ctrl + C` para reiniciar el SDK.
 
 Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. AEM AEM El reinicio del SDK de la con métodos alternativos, como detener los procesos de Java™, puede generar incoherencias en el entorno de desarrollo de la.
 
-## Consulte también
+## Ver también
 
 * [Configurar un entorno de desarrollo local para AEM Forms](/help/forms/setup-local-development-environment.md)
 * [Habilitar los componentes principales de los formularios adaptables](/help/forms/enable-adaptive-forms-core-components.md)

@@ -23,14 +23,14 @@ Este documento explica en detalle estos dos casos de uso y le muestra cómo pued
 
 >[!TIP]
 >
->Si aún no lo ha hecho, revise el documento [Introducción al editor universal](/help/implementing/universal-editor/introduction.md) para obtener una descripción general y un valor completos del editor universal.
+>Si aún no lo ha hecho, revise el documento [Introducción al editor universal](/help/implementing/universal-editor/introduction.md) para obtener una descripción general completa y el valor del editor universal.
 
 ## Casos de uso {#use-cases}
 
 El editor universal presenta un editor visual cómodo e intuitivo a los autores de contenido, independientemente del tipo de contenido que creen. Los dos casos de uso principales son:
 
-* [Creación WYSIWYG](#wysiwyg-authoring) : utilice la consola de AEM Sites AEM para administrar el contenido y las páginas de autor dentro de las páginas de creación mediante el uso del Editor universal (Universal Editor).
-* [Creación sin encabezado](#headless-authoring) : Cree contenido en su propia aplicación sin encabezado personalizada mediante el editor universal.
+* [Creación WYSIWYG](#wysiwyg-authoring): use la consola de AEM Sites AEM para administrar el contenido y las páginas de creación dentro de las páginas de creación mediante el Editor universal (Universal Editor).
+* [Creación sin encabezado](#headless-authoring): Cree contenido en su propia aplicación sin encabezado personalizada mediante el Editor universal.
 
 ### Creación WYSIWYG {#wysiwyg-authoring}
 
@@ -40,9 +40,9 @@ De este modo, puede beneficiarse de las herramientas disponibles en la consola S
 
 AEM Si este es su caso de uso, como paso siguiente inmediato, consulte los siguientes documentos para obtener una descripción general completa de cómo ponerse en marcha con el editor universal en la documentación de la aplicación de la.
 
-1. [Guía de introducción para desarrolladores para la creación WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) AEM - Empiece con su primer proyecto de Universal Editor en el año
-1. [Creación de bloques instrumentados para su uso con el editor universal](/help/edge/wysiwyg-authoring/create-block.md) - Aprenda a instrumentar bloques para que su contenido se pueda editar en el editor universal
-1. [Modelado de contenido para la creación WYSIWYG con proyectos de Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) : Conozca los detalles de cómo se estructuran los bloques para modelar de forma eficaz el contenido para utilizarlo con el editor universal.
+1. [Guía de introducción para desarrolladores para la creación de WYSIWYG con Edge Delivery Services AEM](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md): Empiece con su primer proyecto de editor universal en la creación de archivos de tipo
+1. [Creación de bloques instrumentados para su uso con el editor universal](/help/edge/wysiwyg-authoring/create-block.md): aprenda a instrumentar bloques para poder editar su contenido en el editor universal
+1. [Modelado de contenido para la creación WYSIWYG con proyectos de Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md): aprenda los detalles de cómo los bloques están estructurados para modelar de forma eficaz su contenido para utilizarlo con el editor universal.
 
 Una vez que haya leído esos documentos, puede volver a esta página para conocer el caso de uso de la creación sin encabezado y cómo funciona el Editor universal en general.
 
@@ -75,7 +75,7 @@ Si desea obtener más información acerca de la arquitectura del editor universa
 
 Para que el editor universal pueda editar una página o aplicación, debe estar instrumentada correctamente. Una vez instrumentada, se puede adaptar a las necesidades de su proyecto.
 
-* [Atributos y tipos](/help/implementing/universal-editor/attributes-types.md) : Para que el editor universal pueda editar una aplicación o página, debe estar instrumentada correctamente. Esto incluye incluir los metadatos adecuados para que el editor pueda editar el contenido de la aplicación.
-* [Definiciones de modelo, campos y tipos de componentes](/help/implementing/universal-editor/field-types.md) : Una vez que los metadatos están presentes para permitir la edición de un componente, se definen qué campos y tipos de componentes pueden manipular en el carril de propiedades del editor. Para ello, cree un modelo y vincúlelo a él desde el componente.
-* [Personalización de la experiencia de creación del editor universal](/help/implementing/universal-editor/customizing.md) : Una vez que la aplicación o la página estén completamente instrumentadas, la experiencia del editor universal se puede adaptar aún más filtrando los componentes disponibles o ampliando la funcionalidad del editor.
-* [Eventos del editor universal](/help/implementing/universal-editor/events.md) : Puede personalizar aún más la aplicación reaccionando a los eventos estándar que el Universal envía cuando se producen cambios en el contenido y en la interfaz de usuario.
+* [Atributos y tipos](/help/implementing/universal-editor/attributes-types.md): para que el editor universal pueda editar una aplicación o página, debe estar instrumentada correctamente. Esto incluye incluir los metadatos adecuados para que el editor pueda editar el contenido de la aplicación.
+* [Definiciones de modelo, campos y tipos de componente](/help/implementing/universal-editor/field-types.md): una vez que los metadatos están presentes para permitir la edición de un componente, debe definir qué campos y tipos de componente pueden manipular en el carril de propiedades del editor. Para ello, cree un modelo y vincúlelo a él desde el componente.
+* [Personalización de la experiencia de creación del editor universal](/help/implementing/universal-editor/customizing.md): una vez que la aplicación o la página estén completamente instrumentadas, la experiencia del editor universal se puede adaptar aún más filtrando los componentes disponibles o ampliando la funcionalidad del editor.
+* [Eventos de editor universal](/help/implementing/universal-editor/events.md): puede personalizar aún más la aplicación si reacciona a los eventos estándar que envía el editor universal cuando cambia el contenido y la interfaz de usuario.

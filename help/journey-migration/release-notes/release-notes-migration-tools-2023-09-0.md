@@ -1,6 +1,6 @@
 ---
-title: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2023.09.0 de
-description: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2023.09.0 de
+title: Notas de la versión de las herramientas de migración de la versión 2023.09.0 de AEM as a Cloud Service
+description: Notas de la versión de las herramientas de migración de la versión 2023.09.0 de AEM as a Cloud Service
 feature: Release Information
 exl-id: 484a60d4-a439-43d6-a23e-4a3b45ef4160
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 4%
 
 ---
 
-# AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2023.09.0 de {#release-notes}
+# Notas de la versión de las herramientas de migración de la versión 2023.09.0 de AEM as a Cloud Service {#release-notes}
 
-AEM Esta página describe las notas de la versión de las herramientas de migración en la versión as a Cloud Service 2023.09.0 de la versión de.
+Esta página describe las notas de la versión de las herramientas de migración de AEM as a Cloud Service 2023.09.0.
 
 ## Herramienta de transferencia de contenido {#ctt-release}
 
@@ -26,5 +26,5 @@ La fecha de lanzamiento de la herramienta de transferencia de contenido v3.0.0 e
 La herramienta de transferencia de contenido se ha mejorado para proporcionar las siguientes ventajas:
 
 * Se ha reducido el tiempo de transferencia al migrar un subconjunto de un repositorio de contenido mediante AzCopy para copiar solo los ID de blob necesarios en lugar de copiar todos los ID de blob.
-* Reposiciones de contenido diferencial más rápidas con la actualización de Oak.
+* Reposiciones de contenido diferencial más rápidas con la actualización a Oak.
 * Se ha mejorado la solidez al separar el proceso de indexación del proceso de ingesta de contenido. Si se produce un error en la indexación, no es necesario volver a introducir el contenido. Solo la indexación se reinicia automáticamente, lo que ahorra un tiempo y esfuerzo significativos.

@@ -8,8 +8,8 @@ discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 docset: aem65
 source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 84%
+source-wordcount: '396'
+ht-degree: 82%
 
 ---
 
@@ -58,7 +58,7 @@ Incluye campos para capturar un número de teléfono y una dirección de correo 
 ## Información de la tarjeta de crédito {#credit-card-information}
 
 Incluye campos para capturar información de tarjetas de crédito que se puede utilizar para procesar pagos. 
-[![Fragmento Información de tarjeta de crédito](assets/cc-info.png)](assets/cc-info-1.png)
+[![Fragmento de información de tarjeta de crédito](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## Empleo actual {#current-employment}
 

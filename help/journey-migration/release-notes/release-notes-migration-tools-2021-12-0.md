@@ -1,6 +1,6 @@
 ---
-title: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2021.12.0 de
-description: AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2021.12.0 de
+title: Notas de la versión para las herramientas de migración en la versión 2021.12.0 de AEM as a Cloud Service
+description: Notas de la versión para las herramientas de migración en la versión 2021.12.0 de AEM as a Cloud Service
 feature: Release Information
 exl-id: 4155e1c0-cd40-4cbc-9d6c-b106d68a2db5
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 45%
 
 ---
 
-# AEM Notas de la versión de las herramientas de migración de la versión as a Cloud Service 2021.12.0 de {#release-notes}
+# Notas de la versión para las herramientas de migración en la versión 2021.12.0 de AEM as a Cloud Service {#release-notes}
 
-AEM Esta página describe las notas de la versión de las herramientas de migración de as a Cloud Service 2021.12.0.
+Esta página describe las notas de la versión de las herramientas de migración de AEM as a Cloud Service 2021.12.0.
 
 >[!NOTE]
 >Para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service, haga clic [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es).
@@ -44,5 +44,5 @@ La fecha de versión de la herramienta de transferencia de contenido v1.7.10 es 
 
 ### Novedades {#what-is-new-ctt}
 
-* Alternar añadido a la fase de ingesta en la herramienta de transferencia de contenido para permitir que los usuarios deshabiliten [copia previa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) durante la ingesta. Para obtener velocidades de ingesta óptimas, la copia previa durante la ingesta debe deshabilitarse para conjuntos de migración pequeños o si solo se agregaron unos pocos blobs desde la última ingesta.
+* Se agregó el conmutador a la fase de ingesta en la herramienta de transferencia de contenido para permitir que los usuarios deshabiliten la [copia previa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) durante la ingesta. Para obtener velocidades de ingesta óptimas, la copia previa durante la ingesta debe deshabilitarse para conjuntos de migración pequeños o si solo se agregaron unos pocos blobs desde la última ingesta.
 * La asignación de usuarios se ha actualizado para utilizar la API de administración de usuarios mejorada que le permite obtener 2000 usuarios a la vez, lo que mejora significativamente el rendimiento.

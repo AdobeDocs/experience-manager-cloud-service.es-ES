@@ -17,7 +17,7 @@ La importación masiva en la vista de AEM Assets permite a los administradores i
 
 >[!NOTE]
 >
->El importador en bloque de la vista Recursos utiliza el mismo backend que el del importador en bloque de la vista Administración. Sin embargo, ofrece más fuentes de datos para importar de y una experiencia de usuario más optimizada.
+>El importador por lotes de vista de Assets utiliza el mismo backend que el del importador por lotes de vista de administrador. Sin embargo, ofrece más fuentes de datos para importar de y una experiencia de usuario más optimizada.
 
 Puede importar recursos desde las siguientes fuentes de datos:
 
@@ -214,6 +214,6 @@ Haga clic en el ![icono Más](assets/do-not-localize/more-icon.svg) correspondie
 
 Para ver la ubicación de destino de los recursos donde se importan después de ejecutar el trabajo de importación masiva, haga clic en el ![icono Más](assets/do-not-localize/more-icon.svg) correspondiente al nombre de la configuración y, a continuación, haga clic en **[!UICONTROL Ver recursos]**.
 
-## Vídeo: Importación masiva de recursos mediante la vista de recursos
+## Vídeo: Importación masiva de recursos mediante la vista de Assets
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428012)

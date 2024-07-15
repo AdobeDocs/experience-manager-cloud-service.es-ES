@@ -1,6 +1,6 @@
 ---
 title: Búsqueda de contenido e indexación
-description: AEM Obtenga información acerca de la búsqueda de contenido y la indexación en as a Cloud Service.
+description: Obtenga información acerca de la búsqueda de contenido y la indexación en AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
@@ -26,30 +26,30 @@ A continuación se muestra una lista de los principales cambios en comparación 
 1. Los clientes pueden configurar alertas según sus necesidades.
 1. Los SRE supervisan el estado del sistema las 24 horas del día, los 7 días de la semana, y se toman medidas lo antes posible.
 1. La configuración del índice se cambia mediante implementaciones. Los cambios en la definición del índice se configuran como otros cambios en el contenido.
-1. AEM A un alto nivel sobre el as a Cloud Service de la, con la introducción de la [modelo de implementación móvil](#index-management-using-rolling-deployments)Sin embargo, existen dos conjuntos de índices: uno para la versión antigua y otro para la nueva.
-1. Los clientes pueden ver si el trabajo de indexación se ha completado en la página de creación de Cloud Manager y recibe una notificación cuando la nueva versión está lista para admitir tráfico.
+1. En un nivel superior en AEM as a Cloud Service, con la introducción del [modelo de implementación móvil](#index-management-using-rolling-deployments), existen dos conjuntos de índices: uno para la versión antigua y otro para la nueva.
+1. Los clientes pueden ver si el trabajo de indexación se ha completado en la página de creación de Cloud Manager y si recibe una notificación cuando la nueva versión está lista para admitir tráfico.
 
 Restricciones:
 
 * En la actualidad, la administración de índices en AEM as a Cloud Service solo se admite para índices de tipo `lucene`.
 * Solo se admiten analizadores estándar (es decir, aquellos analizadores que se envían con el producto). No se admiten analizadores personalizados.
-* Internamente, se pueden configurar y utilizar otros índices para las consultas. Por ejemplo, las consultas que se escriben en relación con el índice `damAssetLucene`, en Skyline, podrían ejecutarse con una versión Elasticsearch de este. Esta diferencia no suele ser visible para la aplicación y el usuario; sin embargo, algunas herramientas, como `explain` informe de funciones con un índice diferente. Para ver las diferencias entre los índices de Lucene y los de Elastic, consulte [la documentación de Elastic en Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Los clientes no necesitan ni pueden configurar índices de Elasticsearch directamente.
-* Buscar por vectores de funciones similares (`useInSimilarity = true`) no es compatible.
+* Internamente, se pueden configurar y utilizar otros índices para las consultas. Por ejemplo, las consultas que se escriben en relación con el índice `damAssetLucene`, en Skyline, podrían ejecutarse con una versión Elasticsearch de este. Esta diferencia no suele ser visible para la aplicación y el usuario; sin embargo, algunas herramientas, como la característica `explain`, informan de un índice diferente. Para ver las diferencias entre los índices de Lucene y los de Elastic, consulte [la documentación de Elastic en Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Los clientes no necesitan ni pueden configurar índices de Elasticsearch directamente.
+* No se admite la búsqueda por vectores de características similares (`useInSimilarity = true`).
 
 >[!TIP]
 >
->Para obtener más información sobre la indexación y las consultas de Oak, incluida una descripción detallada de las funciones de búsqueda avanzada e indexación, consulte la [Documentación de Apache Oak](https://jackrabbit.apache.org/oak/docs/query/query.html).
+>Para obtener más información sobre las consultas e indexación de Oak, incluida una descripción detallada de las funciones de búsqueda avanzada e indexación, consulte la [Documentación de Apache Oak](https://jackrabbit.apache.org/oak/docs/query/query.html).
 
 
 ## Usos {#how-to-use}
 
 Las definiciones de índice se pueden clasificar en tres casos de uso principales, como se indica a continuación:
 
-1. **Añadir** una nueva definición de índice personalizada.
-2. **Actualizar** Añada una definición de índice existente mediante la adición de una nueva versión.
-3. **Eliminar** una definición de índice que ya no es necesaria.
+1. **Agregar** una nueva definición de índice personalizada.
+2. **Actualice** una definición de índice existente agregando una nueva versión.
+3. **Quitar** una definición de índice que ya no es necesaria.
 
-Para los puntos 1 y 2 anteriores, debe crear una definición de índice como parte del código personalizado en la programación de versiones correspondiente de Cloud Manager. Para obtener más información, consulte la [AEM Implementación en el as a Cloud Service de](/help/implementing/deploying/overview.md) documentación.
+Para los puntos 1 y 2 anteriores, debe crear una definición de índice como parte del código personalizado en la programación de versiones correspondiente de Cloud Manager. Para obtener más información, consulte la [Implementación en AEM as a Cloud Service](/help/implementing/deploying/overview.md).
 
 ## Nombres de índice {#index-names}
 
@@ -57,19 +57,19 @@ Una definición de índice puede caer en una de las siguientes categorías:
 
 1. Índice listo para usar (OOTB). Por ejemplo: `/oak:index/cqPageLucene-2` o `/oak:index/damAssetLucene-8`.
 
-2. Personalizar un índice OOTB. Se indican añadiendo `-custom-` seguido de un identificador numérico para el nombre del índice original. Por ejemplo: `/oak:index/damAssetLucene-8-custom-1`.
+2. Personalizar un índice OOTB. Se indican adjuntando `-custom-` seguido de un identificador numérico al nombre de índice original. Por ejemplo: `/oak:index/damAssetLucene-8-custom-1`.
 
 3. Índice totalmente personalizado: Es posible crear un índice completamente nuevo desde cero. Su nombre debe tener un prefijo para evitar conflictos de nombres. Por ejemplo: `/oak:index/acme.product-1-custom-2`, donde el prefijo es `acme.`
 
 >[!NOTE]
 >
->Introducción de nuevos índices en la `dam:Asset` Se desaconseja el tipo de nodo (especialmente los índices de texto completo), ya que pueden entrar en conflicto con las funciones del producto OOTB, lo que provoca problemas funcionales y de rendimiento. En general, se añaden propiedades adicionales a la variable `damAssetLucene-*` La versión de índice es la forma más adecuada de indexar consultas en la `dam:Asset` tipo de nodo (estos cambios se combinarán automáticamente en una nueva versión del producto del índice si posteriormente se libera). Si tiene alguna duda, póngase en contacto con el Soporte de Adobe para obtener asesoramiento.
+>Se desaconseja la introducción de nuevos índices en el tipo de nodo `dam:Asset` (especialmente índices de texto completo), ya que pueden entrar en conflicto con las características del producto OOTB, lo que provoca problemas de funcionamiento y rendimiento. En general, agregar propiedades adicionales a la versión actual del índice `damAssetLucene-*` es la forma más adecuada de indexar consultas en el tipo de nodo `dam:Asset` (estos cambios se combinarán automáticamente en una nueva versión de producto del índice si posteriormente se libera). Si tiene alguna duda, póngase en contacto con el Soporte de Adobe para obtener asesoramiento.
 
 ## Preparación de la nueva definición de índice {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->Si personaliza un índice predeterminado, por ejemplo, `damAssetLucene-8`, copie la última definición de índice lista para usar de un *entorno Cloud Service* usar el Administrador de paquetes CRX DE (`/crx/packmgr/`). Cambiarle el nombre a `damAssetLucene-8-custom-1` (o superior) y agregue las personalizaciones dentro del archivo XML. Esto garantiza que las configuraciones necesarias no se eliminen de forma involuntaria. Por ejemplo, la variable `tika` nodo bajo `/oak:index/damAssetLucene-8/tika` es necesario en el índice personalizado implementado en un entorno de AEM Cloud Service AEM, pero no existe en el SDK de la aplicación local de la interfaz de usuario de.
+>Si personaliza un índice predeterminado, como `damAssetLucene-8`, copie la última definición de índice lista para usarse de un *entorno de Cloud Service* con el Administrador de paquetes CRX DE (`/crx/packmgr/`) Cambie el nombre a `damAssetLucene-8-custom-1` (o posterior) y agregue las personalizaciones dentro del archivo XML. Esto garantiza que las configuraciones necesarias no se eliminen de forma involuntaria. Por ejemplo, el nodo `tika` bajo `/oak:index/damAssetLucene-8/tika` es necesario en el índice personalizado implementado en un entorno de AEM Cloud Service AEM, pero no existe en el SDK de la local.
 
 Para las personalizaciones de un índice OOTB, prepare un nuevo paquete que contenga la definición del índice real que siga este patrón de nomenclatura:
 
@@ -85,7 +85,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!NOTE]
 >
->Cualquier paquete de contenido que contenga definiciones de índice debe tener las siguientes propiedades establecidas en la variable `properties.xml` del paquete de contenido. `properties.xml` se crea de forma predeterminada en un paquete nuevo y se encuentra en `<package_name>/META-INF/vault/properties.xml`:
+>Cualquier paquete de contenido que contenga definiciones de índice debe tener las siguientes propiedades establecidas en el archivo `properties.xml` del paquete de contenido. `properties.xml` se crea de manera predeterminada en un nuevo paquete y se encuentra en `<package_name>/META-INF/vault/properties.xml`:
 >
 > * `noIntermediateSaves=true`
 >
@@ -93,12 +93,13 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ## Implementación de definiciones de índice personalizadas {#deploying-custom-index-definitions}
 
-Para ilustrar la implementación de una versión personalizada del índice predeterminado `damAssetLucene-8`, le proporcionaremos una guía paso a paso. En este ejemplo, cambiaremos el nombre a `damAssetLucene-8-custom-1`. A continuación, el proceso es el siguiente:
+Para ilustrar la implementación de una versión personalizada del índice predeterminado `damAssetLucene-8`, proporcionaremos una guía paso a paso. En este ejemplo, se cambiará el nombre a `damAssetLucene-8-custom-1`. A continuación, el proceso es el siguiente:
 
-1. Cree una nueva carpeta con el nombre de índice actualizado en la `ui.apps` directorio:
+1. Cree una nueva carpeta con el nombre de índice actualizado en el directorio `ui.apps`:
    * Ejemplo: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
-2. Añadir un archivo de configuración `.content.xml` con las configuraciones personalizadas dentro de la carpeta creada. A continuación se muestra un ejemplo de personalización: Nombre de archivo: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
+2. Agregue un archivo de configuración `.content.xml` con las configuraciones personalizadas dentro de la carpeta creada. A continuación se muestra un ejemplo de personalización:
+Nombre de archivo: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -134,7 +135,7 @@ Para ilustrar la implementación de una versión personalizada del índice prede
    </jcr:root>
    ```
 
-3. Añada una entrada al filtro FileVault en `ui.apps/src/main/content/META-INF/vault/filter.xml`:
+3. Agregar una entrada al filtro FileVault en `ui.apps/src/main/content/META-INF/vault/filter.xml`:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -144,7 +145,7 @@ Para ilustrar la implementación de una versión personalizada del índice prede
    </workspaceFilter>
    ```
 
-4. Añada un archivo de configuración para Apache Tika en: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/tika/config.xml`:
+4. Agregar un archivo de configuración para Apache Tika en: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/tika/config.xml`:
 
    ```xml
    <properties>
@@ -160,13 +161,13 @@ Para ilustrar la implementación de una versión personalizada del índice prede
    </properties>
    ```
 
-5. Asegúrese de que la configuración de se ajusta a las directrices proporcionadas en la [Configuración del proyecto](#project-configuration) sección. Realice las adaptaciones necesarias según corresponda.
+5. Asegúrese de que la configuración cumpla las directrices proporcionadas en la sección [Configuración del proyecto](#project-configuration). Realice las adaptaciones necesarias según corresponda.
 
 ## Configuración del proyecto
 
-Se recomienda encarecidamente utilizar la versión >= `1.3.2` del Conejo `filevault-package-maven-plugin`. Los pasos para incorporarlo al proyecto son los siguientes:
+Recomendamos encarecidamente usar la versión >= `1.3.2` del Jackrabbit `filevault-package-maven-plugin`. Los pasos para incorporarlo al proyecto son los siguientes:
 
-1. Actualice la versión en el nivel superior `pom.xml`:
+1. Actualizar la versión en el nivel superior `pom.xml`:
 
    ```xml
    <plugin>
@@ -188,7 +189,7 @@ Se recomienda encarecidamente utilizar la versión >= `1.3.2` del Conejo `fileva
    </jackrabbit-packagetype>
    ```
 
-   Este es un ejemplo del nivel superior del proyecto `pom.xml` con las configuraciones mencionadas incluidas:
+   Este es un ejemplo del archivo `pom.xml` de nivel superior del proyecto con las configuraciones mencionadas anteriormente incluidas:
 
    Nombre de archivo: `pom.xml`
 
@@ -211,7 +212,7 @@ Se recomienda encarecidamente utilizar la versión >= `1.3.2` del Conejo `fileva
    </plugin>
    ```
 
-3. Entrada `ui.apps/pom.xml` y `ui.apps.structure/pom.xml` es necesario habilitar la variable `allowIndexDefinitions` y `noIntermediateSaves` opciones en la `filevault-package-maven-plugin`. Habilitando `allowIndexDefinitions` permite definiciones de índice personalizadas, mientras que `noIntermediateSaves` garantiza que las configuraciones se añadan automáticamente.
+3. En `ui.apps/pom.xml` y `ui.apps.structure/pom.xml` es necesario habilitar las opciones `allowIndexDefinitions` y `noIntermediateSaves` en `filevault-package-maven-plugin`. Habilitar `allowIndexDefinitions` permite definiciones de índice personalizadas, mientras que `noIntermediateSaves` garantiza que las configuraciones se agregan automáticamente.
 
    Nombres de archivo: `ui.apps/pom.xml` y `ui.apps.structure/pom.xml`
 
@@ -229,7 +230,7 @@ Se recomienda encarecidamente utilizar la versión >= `1.3.2` del Conejo `fileva
    </plugin>
    ```
 
-4. Añadir un filtro para `/oak:index` in `ui.apps.structure/pom.xml`:
+4. Agregar un filtro para `/oak:index` en `ui.apps.structure/pom.xml`:
 
    ```xml
    <filters>
@@ -242,7 +243,7 @@ Después de agregar la nueva definición de índice, implemente la nueva aplicac
 
 >[!TIP]
 >
->AEM Para obtener más información sobre la estructura de paquetes necesaria para el as a Cloud Service de la, consulte [AEM Estructura del proyecto de](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
+>Para obtener más información sobre la estructura de paquetes necesaria para AEM as a Cloud Service AEM, consulte [Estructura del proyecto de la aplicación ](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
 
 ## Administración de índices mediante implementaciones móviles {#index-management-using-rolling-deployments}
 
@@ -284,7 +285,7 @@ La tabla siguiente muestra cinco definiciones de índice: `cqPageLucene` se util
 
 >[!NOTE]
 >
->El `<indexName>-custom-<customerVersionNumber>` AEM es necesario para que el as a Cloud Service de la lo marque como reemplazo de un índice existente.
+>`<indexName>-custom-<customerVersionNumber>` es necesario para que AEM as a Cloud Service lo marque como reemplazo de un índice existente.
 
 | Índice | Índice predeterminado | Uso en la versión 1 | Uso en la versión 2 |
 |---|---|---|---|
@@ -298,7 +299,7 @@ El número de versión se incrementa cada vez que se cambia el índice. Para evi
 
 ### Cambios en los índices predeterminados {#changes-to-out-of-the-box-indexes}
 
-Después del Adobe, se cambia un índice predeterminado como &quot;damAssetLucene&quot; o &quot;cqPageLucene&quot;, un nuevo índice denominado `damAssetLucene-2` o `cqPageLucene-2` se ha creado. O bien, si el índice ya se ha personalizado, la definición del índice personalizado se combina con los cambios en el índice predeterminado, como se muestra a continuación. La fusión de los cambios se produce de forma automática. Esto significa que no tiene que hacer nada si cambia un índice predeterminado. Sin embargo, es posible volver a personalizar el índice más adelante.
+Después de que Adobe cambie un índice predeterminado como &quot;damAssetLucene&quot; o &quot;cqPageLucene&quot;, se crea un nuevo índice denominado `damAssetLucene-2` o `cqPageLucene-2`. O bien, si el índice ya se ha personalizado, la definición del índice personalizado se combina con los cambios en el índice predeterminado, como se muestra a continuación. La fusión de los cambios se produce de forma automática. Esto significa que no tiene que hacer nada si cambia un índice predeterminado. Sin embargo, es posible volver a personalizar el índice más adelante.
 
 | Índice | Índice predeterminado | Uso en la versión 2 | Uso en la versión 3 |
 |---|---|---|---|
@@ -309,15 +310,15 @@ Después del Adobe, se cambia un índice predeterminado como &quot;damAssetLucen
 
 ### Limitaciones actuales {#current-limitations}
 
-La administración de índices solo se admite para índices de tipo `lucene`, con `compatVersion` establezca en `2`. Internamente, se pueden configurar otros índices y utilizarse para consultas, por ejemplo, índices de Elasticsearch. Consultas que se escriben en relación con `damAssetLucene` AEM index podría, en el caso de que esté as a Cloud Service, ejecutarse con una versión Elasticsearch de este índice. Esta diferencia es invisible para el usuario de la aplicación, sin embargo, ciertas herramientas como la `explain` función informa de un índice diferente. Para ver las diferencias entre los índices de Lucene y Elasticsearch, consulte [la documentación del Elasticsearch en Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Los clientes no pueden y no necesitan configurar índices de Elasticsearch directamente.
+La administración de índices sólo se admite para índices de tipo `lucene`, con `compatVersion` establecido en `2`. Internamente, se pueden configurar otros índices y utilizarse para consultas, por ejemplo, índices de Elasticsearch. Las consultas que se escriben en el índice `damAssetLucene` podrían, en AEM as a Cloud Service, ejecutarse con una versión Elasticsearch de este índice. Esta diferencia es invisible para el usuario de la aplicación, aunque algunas herramientas, como la característica `explain`, informa de un índice diferente. Para ver las diferencias entre los índices de Lucene y Elasticsearch, consulte [la documentación del Elasticsearch en Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Los clientes no pueden y no necesitan configurar índices de Elasticsearch directamente.
 
 Solo se admiten analizadores integrados (es decir, aquellos analizadores que se envían con el producto). No se admiten analizadores personalizados.
 
-Para obtener el mejor rendimiento operativo, los índices no deben ser excesivamente grandes. El tamaño total de todos los índices puede utilizarse como guía. Si este tamaño aumenta más del 100 % después de agregar índices personalizados y de ajustar los índices estándar en un entorno de desarrollo, se deben ajustar las definiciones de índices personalizados. AEM Los as a Cloud Service pueden evitar la implementación de índices que afectarían negativamente a la estabilidad y el rendimiento del sistema.
+Para obtener el mejor rendimiento operativo, los índices no deben ser excesivamente grandes. El tamaño total de todos los índices puede utilizarse como guía. Si este tamaño aumenta más del 100 % después de agregar índices personalizados y de ajustar los índices estándar en un entorno de desarrollo, se deben ajustar las definiciones de índices personalizados. AEM as a Cloud Service puede evitar la implementación de índices que afectarían negativamente a la estabilidad y el rendimiento del sistema.
 
 ### Adición de un índice {#adding-an-index}
 
-Para agregar un índice totalmente personalizado denominado `/oak:index/acme.product-custom-1`, para su uso en una nueva versión de la aplicación y posterior, el índice debe configurarse de la siguiente manera:
+Para agregar un índice totalmente personalizado denominado `/oak:index/acme.product-custom-1`, para utilizarlo en una nueva versión de la aplicación y posteriormente, el índice debe configurarse de la siguiente manera:
 
 `acme.product-1-custom-1`
 
@@ -339,17 +340,17 @@ La nueva versión de la aplicación utiliza la siguiente configuración (modific
 
 >[!NOTE]
 >
->Es posible que las definiciones de índice de AEM as a Cloud Service no coincidan por completo con las de una instancia de desarrollo local. AEM La instancia de desarrollo no tiene una configuración de Tika, mientras que las instancias de as a Cloud Service, sí, tienen una. Si personaliza un índice con una configuración de Tika, manténgala.
+>Es posible que las definiciones de índice de AEM as a Cloud Service no coincidan por completo con las de una instancia de desarrollo local. La instancia de desarrollo no tiene una configuración de Tika, mientras que las instancias de AEM as a Cloud Service sí la tienen. Si personaliza un índice con una configuración de Tika, manténgala.
 
 ### Anulación de un cambio {#undoing-a-change}
 
-A veces, es necesario deshacer una modificación en una definición de índice. Esto puede deberse a un error involuntario o a que la modificación ya no es necesaria. Tomemos, por ejemplo, la definición del índice `damAssetLucene-8-custom-3,` que se creó por error y ya se ha implementado. Por lo tanto, desea volver a la definición de índice anterior, `damAssetLucene-8-custom-2.` Para ello, debe introducir un nuevo índice denominado `damAssetLucene-8-custom-4` que incorpora la definición del índice anterior, `damAssetLucene-8-custom-2.`
+A veces, es necesario deshacer una modificación en una definición de índice. Esto puede deberse a un error involuntario o a que la modificación ya no es necesaria. Tomemos, por ejemplo, la definición de índice `damAssetLucene-8-custom-3,` que se creó por error y ya se ha implementado. En consecuencia, desea volver a la definición de índice anterior, `damAssetLucene-8-custom-2.`. Para ello, debe introducir un nuevo índice denominado `damAssetLucene-8-custom-4` que incorpore la definición del índice anterior, `damAssetLucene-8-custom-2.`
 
 ### Eliminación de un índice {#removing-an-index}
 
 Lo siguiente solo se aplica a los índices personalizados. Los índices de productos no se pueden eliminar porque los utiliza AEM.
 
-Si se elimina un índice en una versión posterior de la aplicación, se puede definir un índice vacío (que no se utiliza nunca y que no contiene datos), con un nombre nuevo. Para este ejemplo, puede ponerle un nombre `/oak:index/acme.product-custom-3`. Este nombre reemplaza al índice `/oak:index/acme.product-custom-2`. Después `/oak:index/acme.product-custom-2` elimina el sistema, el índice vacío `/oak:index/acme.product-custom-3` a continuación, se puede eliminar. Un ejemplo de este índice vacío es el siguiente:
+Si se elimina un índice en una versión posterior de la aplicación, se puede definir un índice vacío (que no se utiliza nunca y que no contiene datos), con un nombre nuevo. Para este ejemplo, puede ponerle el nombre `/oak:index/acme.product-custom-3`. Este nombre reemplaza el índice `/oak:index/acme.product-custom-2`. Una vez que el sistema elimine `/oak:index/acme.product-custom-2`, se podrá quitar el índice vacío `/oak:index/acme.product-custom-3`. Un ejemplo de este índice vacío es el siguiente:
 
 ```xml
 <acme.product-custom-3

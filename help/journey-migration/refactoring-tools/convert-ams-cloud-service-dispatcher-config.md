@@ -3,8 +3,8 @@ title: Conversión de AMS a una configuración de Dispatcher de Adobe Experience
 description: Conversión de AMS a una configuración de Dispatcher de Adobe Experience Manager as a Cloud Service
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 39%
+source-wordcount: '1262'
+ht-degree: 37%
 
 ---
 
@@ -24,7 +24,7 @@ Esta sección proporciona instrucciones paso a paso sobre cómo convertir una co
 
    Extraiga el archivo en una carpeta y asegúrese de que las subcarpetas inmediatas comiencen con conf, conf.d, conf.dispatcher.d y conf.module.d. Si no lo hacen, muévalos hacia arriba en la jerarquía.
 
-1. **Elimine las subcarpetas y archivos que no utilice**
+1. **Elimine las subcarpetas y los archivos que no utilice**
 
    Elimine las subcarpetas conf y conf.module.d, y los archivos que contengan conf.d/*.conf.
 
@@ -89,7 +89,7 @@ Si se observan errores relacionados con la falta de archivos &quot;include&quot;
 
 1. **Cambiar el nombre de los archivos**
 
-   Se debe cambiar el nombre de todas las granjas en conf.dispatcher.d/enabled_farms para que coincidan con el patrón *.farm. Por ejemplo, cambie el nombre `customerX_farm.any` hasta `customerX.farm`.
+   Se debe cambiar el nombre de todas las granjas en conf.dispatcher.d/enabled_farms para que coincidan con el patrón *.farm. Por ejemplo, cambie el nombre de `customerX_farm.any` a `customerX.farm`.
 
 1. **Compruebe la caché**
 
@@ -97,9 +97,9 @@ Si se observan errores relacionados con la falta de archivos &quot;include&quot;
 
    Elimine cualquier archivo con el prefijo `ams_`.
 
-   Si conf.dispatcher.d/cache está ahora vacío, copie el archivo `conf.dispatcher.d/cache/rules.any` de la configuración estándar de Dispatcher a esta carpeta. La configuración estándar de Dispatcher se encuentra en la carpeta src de este SDK. No olvide adaptar las frases $include que hacen referencia a `ams_*_cache.any` archivos de reglas también en los archivos de granja.
+   Si conf.dispatcher.d/cache está ahora vacío, copie el archivo `conf.dispatcher.d/cache/rules.any` de la configuración estándar de Dispatcher a esta carpeta. La configuración estándar de Dispatcher se encuentra en la carpeta src de este SDK. No olvide adaptar también las frases $include que hacen referencia a los archivos de regla `ams_*_cache.any` en los archivos de granja.
 
-   Si en lugar de conf.dispatcher.d/cache contiene ahora un solo archivo con el sufijo `_cache.any`, debe cambiarse el nombre a `rules.any`. Recuerde adaptar también las frases $include que hacen referencia a ese archivo en los archivos de la granja.
+   Si en lugar de conf.dispatcher.d/cache contiene ahora un solo archivo con el sufijo `_cache.any`, debería ser renombrado a `rules.any`. Recuerde adaptar también las frases $include que hacen referencia a ese archivo en los archivos de la granja.
 
    Sin embargo, si la carpeta contiene varios archivos específicos de la granja con ese patrón, su contenido debe copiarse en la frase $include que se refiere a ellos en los archivos de la granja.
 
@@ -117,13 +117,13 @@ Si se observan errores relacionados con la falta de archivos &quot;include&quot;
 
    Elimine cualquier archivo con el prefijo `ams_`.
 
-   Si conf.dispatcher.d/clientheaders contiene un solo archivo con el sufijo `_clientheaders.any`, cambie el nombre a `clientheaders.any`. Recuerde adaptar también las frases $include que hacen referencia a ese archivo en los archivos de la granja.
+   Si conf.dispatcher.d/clientheaders contiene un solo archivo con el sufijo `_clientheaders.any`, renómbrelo a `clientheaders.any`. Recuerde adaptar también las frases $include que hacen referencia a ese archivo en los archivos de la granja.
 
    Sin embargo, si la carpeta contiene varios archivos específicos de la granja con ese patrón, su contenido debe copiarse en la frase $include que se refiere a ellos en los archivos de la granja.
 
    Copie el archivo `conf.dispatcher/clientheaders/default_clientheaders.any` de la configuración predeterminada de Dispatcher a esa ubicación.
 
-   En cada archivo de granja, reemplace cualquier `clientheader` Instrucciones &quot;include&quot; que aparecen de la siguiente manera:
+   En cada archivo de granja, reemplace cualquier instrucción &quot;include&quot; de `clientheader` que aparezca de la siguiente manera:
 
    `$include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_publish_clientheaders.any"`
 
@@ -204,14 +204,14 @@ con la frase:
 
 Con la secuencia de comandos `docker_run.sh` en el SDK de Dispatcher, se puede probar que la configuración no contiene ningún otro error que solo se mostraría en la implementación:
 
-1. Generación de la información de implementación con el validador.
+1. Genere la información de implementación con el validador.
 
    `validator full -d out`
 Valida la configuración completa y genera la información de implementación en su totalidad.
 
 1. Inicie Dispatcher en una imagen de docker con esa información de implementación.
 
-   AEM Con el servidor de publicación de la en ejecución en el equipo macOS, al escuchar el puerto 4503, se puede ejecutar el inicio de Dispatcher delante de ese servidor de la siguiente manera:
+   AEM Con el servidor de publicación de la en ejecución en el equipo macOS, al escuchar el puerto 4503, puede ejecutar el inicio de Dispatcher delante de ese servidor de la siguiente manera:
 
    `$ docker_run.sh out docker.for.mac.localhost:4503 8080`
 
