@@ -4,109 +4,58 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 9303ecadea38d83bd71ed0d440067bae5c419940
+source-git-commit: 573de431328650778b3ef0979a24190477382310
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 100%
+source-wordcount: '332'
+ht-degree: 47%
 
 ---
+
 
 # Notas de la versión de mantenimiento {#maintenance-release-notes}
 
 En la siguiente sección se describen las notas de la versión técnicas actuales sobre el mantenimiento de Experience Manager as a Cloud Service.
 
-## Versión 16971 {#release-16971}
+## Versión 17098 {#release-17098}
 
-A continuación se resumen las mejoras continuas para la versión de mantenimiento 16971, que se publicó el 3 de julio de 2024. La versión de mantenimiento anterior fue la 16799.
+A continuación se resumen las mejoras continuas para la versión de mantenimiento 17098, que se publicó el miércoles, 16 de julio de 2024. La versión de mantenimiento anterior fue la 16971.
 
-La activación de funcionalidades 2024.7.0 proporcionará el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
+La activación de funciones 2024.7.0 proporcionará el conjunto completo de funciones para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
-### Mejoras {#enhancements-16971}
+### Mejoras {#enhancements-17098}
 
-* SITES-22948: elimina las referencias de comercio en el contenido base para el CS de AEM.
-* SITES-22141: [Fragmentos de contenido] SegmentNotFoundException de CFM ModelChangeRepositoryImpl después de OnRC.
-* SITES-21893: problema con el recorte de imágenes en la instancia de autor.
-* SITES-21788: [Fragmentos de contenido] Mostrar NOTA en el editor de modelos CF y CF cuando uiSchema está habilitado para el modelo.
-* SITES-21688: El despliegue de MSM no actualiza la ruta del fragmento de experiencia (XF) en las páginas de Live Copy.
-* SITES-21659: Devolver el nombre completo del usuario que crea, modifica o replica un recurso de modelo.
-* SITES-21609: el punto final de OpenAPI para migrar fragmentos de contenido de un modelo a otro.
-* SITES-21598: [Abrir API] Crear CFM: error de devolución si la ruta de configuración dada no existe.
-* SITES-21491: [Abrir API] El punto final del PATCH de CF debe respetar las relaciones activas en el nivel de campo.
-* SITES-21434: [Abrir API] El punto final de la GET de CF debe respetar las relaciones activas en el campo.
-* SITES-21415: Editor de CF: admite referencias de UUID.
-* SITES-21326: [Abrir API] Proporcionar información sobre la presencia de referencias para un fragmento de contenido.
-* SITES-21310: [Abrir API] Añadir ID de fragmento de contenido en la respuesta de la API de traducciones.
-* SITES-20859: CF Abrir API: devuelve referencias al recuperar un fragmento por ruta.
-* SITES-20687: [Abrir API] Punto final para la recuperación del estado de procesamiento por lotes.
-* SITES-20657: [Abrir API] Proporcionar la opción para que coincida con la palabra completa al reemplazar una cadena mediante el punto final `FindAndReplace`.
-* SITES-20587: [Abrir API] Crear punto final `COPY` para fragmentos de contenido.
-* SITES-20584: [Abrir API] Optimizar la recuperación de referencias.
-* SITES-20308: [Abrir API] Habilitar el procesamiento por lotes en API.
-* SITES-19976: [Abrir API] Esquema genérico de interfaz de usuario para campos condicionales.
-* SITES-19556: [Fragmentos de contenido] Actualizar uiSchema si existe cuando se edita el modelo.
-* SITES-18056: [Abrir API] Al publicar un fragmento de contenido en Vista previa, incluir referencias.
-* SITES-16898: el punto final de OpenAPI de [esquema] para migrar fragmentos de contenido de un modelo a otro.
-* SITES-16609: La lista inicia el punto final.
-* SITES-16606: Crear inicio de punto final.
-* SITES-21617: [Xwalk] Hacer que las propiedades y los metadatos de la página sean editables en UE.
-* SITES-19614: [Xwalk] Paginación de editor de hoja de cálculo y desplazamiento infinito.
-* SITES-22163: [Xwalk] Se ha mejorado la compatibilidad con el contenido servido desde el nivel de publicación para Edge Delivery Sites.
-* SITES-22109: [Xwalk] Se ha mejorado el manejo del marcado de texto enriquecido después del procesamiento.
-* SITES-22035: [Xwalk] Se ha mejorado el manejo de MSM y los lanzamientos.
-* SITES-21839: [Xwalk] Se ha mejorado la asignación de rutas y el saneamiento del contenido no servido por Edge Delivery.
+- SKYOPS-79817: Habilitar la tarea del analizador de funciones de Sling para las asignaciones de usuarios de servicio
 
-### Problemas solucionados {#fixed-issues-16971}
+### Problemas solucionados {#fixed-issues-17098}
 
-* CQ-4356898: [Traducción] Error outOfMemory de CF, que contiene un número inusualmente alto de vínculos.
-* CQ-4357055: [Traducción] La traducción automática no funciona con la API Rest.
-* CQ-4353931: [Traducción] Añada jcr:uuid en la página de origen de la traducción/xf/asset cuando falte.
-* CQ-4357591: [Traducción] Modifique el flujo de trabajo &quot;Asociar JCR:UUID&quot; para que funcione para Pages/XF.
-* FORMS-14844: Formularios adaptables permite el envío de formularios a pesar de la verificación reCAPTCHA fallida.
-* FORMS-14984: Formularios con CAPTCHA omite la validación si &quot;submitMetaData&quot; no está presente en los datos enviados.
-* FORMS-14477: Las opciones &quot;está después de&quot; y &quot;está antes de&quot; del editor de reglas no funcionan correctamente en la validación del selector de fechas.
-* FORMS-14019: La funcionalidad &quot;Invocar servicio&quot; del editor de reglas no funciona en el editor universal.
-* FORMS-14336: Cuando no se selecciona ningún campo de formulario, el editor debe abrirse enfocado en todo el elemento del formulario.
-* FORMS-15061: El círculo de carga persiste indefinidamente al utilizar la opción de invocación del servicio en el editor de reglas.
-* SITES-22457: Promocionar un lanzamiento que no es profundo no actualiza el contenido de origen.
-* SITES-22748: [Fragmentos de contenido] Mejore la gestión de errores para el trabajo de actualización de fragmentos de contenido
-* SITES-22349: [Fragmentos de contenido] ContentType para elementos cf vacíos de varias líneas no se puede cambiar.
-* SITES-22343: [Fragmentos de contenido] La &quot;enumeración&quot; de tipo semántico está dañada.
-* SITES-22194: Después de configurar la redirección, model.json ya no funciona.
-* SITES-21953: [Abrir API] Etag cambia según el orden de validationStatus.
-* SITES-21894: [Abrir API] Mejore la validación de rutas principales al crear archivos CF.
-* SITES-21887: [Abrir API] ETag no válido devuelto por el punto final de variaciones de POST.
-* SITES-21657: [Abrir API] Mejore la validación en la propiedad de ruta de búsqueda CF.
-* SITES-21949: El cursor no válido de la API de búsqueda devuelve 500.
-* SITES-20927: Las API de búsqueda devuelven 500 cuando falta la consulta.
-* SITES-20544: [Abrir API] Cambie la generación de nombres de paquetes de publicación para evitar conflictos con oak.
-* SITES-19710: CVE-2022-47937: Elimine todos los usos de org.apache.sling.commons.json del Editor de páginas.
-* SITES-11992: [Accesibilidad] Falta un nombre accesible en el botón del selector de muestras de anotación.
-* SITES-10979: [Accesibilidad] La etiqueta no es persistente.
-* SITES-10962: [Accesibilidad] Botón: el botón no tiene una función.
-* SITES-10905: [Accesibilidad] El estado del componente activo carece de una relación de contraste de 3 a 1.
-* SITES-2974:  [Accesibilidad] - Desplazamiento horizontal en 320 píxeles de ancho.
-* SITES-22026: No se pueden mover fragmentos de experiencias entre carpetas en AEM
-* SITES-22106: problema de funcionalidad del cambio de idioma en el nuevo editor de fragmentos de contenido
-* SITES-21980: manejo incoherente de los tipos de referencia basados en UUID.
-* SITES-7257: NPE en ThumbnailServlet.
+- ASSETS-39665: la sincronización de recortes inteligentes no funciona después de migrar de 6.5 a AEM CS
+- FORMS-14993: la API de Forms devuelve 500 para el material colateral que funcionaba anteriormente
+- GRANITE-52120: CRXDE devuelve 500 al mostrar datos de control de acceso
+- GRANITE-52573: Solicitudes que devuelven 400 cuando se utiliza // en direcciones URL reescritas
+- GRANITE-52746: Todos los tipos de nodo no cargados en el cuadro de diálogo Crear nodo
+- GRANITE-52777: Manejo de 404s roto cuando se ajusta la solicitud
+- GRANITE-52871: Asegúrese de que publish-worker se sincronice con golden-publish y se complete antes de la compactación
+- SKYOPS-79173: El replicador no se replica en varios agentes que coinciden con un AgentIdFilter determinado
+- SKYOPS-80075: Problemas con los valores predeterminados en los nombres de los recursos que causan el bloqueo de las colas de publicación (Mac)
+- SKYOPS-81032: Filtre los registros generados por las solicitudes para obtener registros al utilizar el registro mejorado
 
-### Problemas conocidos {#known-issues-16971}
+### Problemas conocidos {#known-issues-17098}
 
-Ninguna.
+Ninguno
 
-### Aviso de cambio {#change-notice-16971}
+### Aviso de cambio {#change-notice-17098}
 
-* A partir de septiembre de 2024, AEM as a Cloud Service deshabilitará la serialización de los solucionadores de recursos a través del marco de trabajo Exportador de modelos Sling. Consulte la [documentación](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) para obtener más información.
+- A partir de septiembre de 2024, AEM as a Cloud Service deshabilitará la serialización de los solucionadores de recursos a través del marco de trabajo Exportador de modelos Sling. Consulte la [documentación](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) para obtener más información.
 
-### Características y API obsoletas {#deprecated-16971}
+### Características y API obsoletas {#deprecated-17098}
 
-Para saber qué es lo que está en desuso o se ha eliminado en AEM as a Cloud Service, consulte [Funciones y API obsoletas y eliminadas](/help/release-notes/deprecated-removed-features.md).
+Las funciones y API obsoletas y eliminadas de AEM as a Cloud Service se detallan en el documento [Funciones y API obsoletas y eliminadas](/help/release-notes/deprecated-removed-features.md).
 
-### Tecnologías integradas {#embedded-tech-16971}
+### Tecnologías integradas {#embedded-tech-17098}
 
 | Tecnología | Versión | Vínculo |
 |---|---|---|
-| AEM Oak | 1.64.0 | [API Oak 1.64.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.64.0/index.html) |
+| AEM Oak | 1.66.0 | [API Oak 1.66.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.66.0/index.html) |
 | API AEM SLING | 2.27.2 | [API de Apache Sling 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
-| AEM HTL | 1.4.22-1.4.0 | [Especificación de idioma de la plantilla HTML](https://github.com/adobe/htl-spec) |
+| AEM HTL | 1.4.24-1.4.0 | [Especificación de idioma de la plantilla HTML](https://github.com/adobe/htl-spec) |
 | Los componentes principales de AEM | 2.25.4 | [Componentes principales de WCM AEM](https://github.com/adobe/aem-core-wcm-components) |
