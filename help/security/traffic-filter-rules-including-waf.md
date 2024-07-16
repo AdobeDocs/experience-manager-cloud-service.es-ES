@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: 23d532f70e031608855bb9fc768aae5398c81e0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3938'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -247,8 +247,8 @@ Las acciones se priorizan según sus tipos en la siguiente tabla, que se ordena 
 | **Nombre** | **Propiedades permitidas** | **Significado** |
 |---|---|---|
 | **permitir** | `wafFlags` (opcional), `alert` (opcional) | si wafFlags no está presente, detiene el procesamiento posterior de la regla y procede a proporcionar la respuesta. Si wafFlags está presente, deshabilita las protecciones WAF especificadas y continúa con el procesamiento de la regla. <br>Si se especifica una alerta, se envía una notificación del Centro de acciones si la regla se activa 10 veces en un intervalo de 5 minutos. Una vez que se activa una alerta para una regla en particular, no se activará de nuevo hasta el día siguiente (UTC). |
-| **block** | `status, wafFlags` (opcional y mutuamente excluyente), `alert` (opcional) | si wafFlags no está presente, devuelve un error HTTP omitiendo todas las demás propiedades, el código de error se define mediante la propiedad estado o el valor predeterminado es 406. Si wafFlags está presente, permite protecciones WAF especificadas y continúa con el procesamiento de la regla. <br>Si se especifica una alerta, se envía una notificación del Centro de acciones si la regla se activa 10 veces en un intervalo de 5 minutos. Una vez que se activa una alerta para una regla en particular, no se activará de nuevo hasta el día siguiente (UTC). |
-| **log** | `wafFlags` (opcional), `alert` (opcional) | registra el hecho de que la regla se activó; de lo contrario, no afecta al procesamiento. wafFlags no tiene ningún efecto. <br>Si se especifica una alerta, se envía una notificación del Centro de acciones si la regla se activa 10 veces en un intervalo de 5 minutos. Una vez que se activa una alerta para una regla en particular, no se activará de nuevo hasta el día siguiente (UTC). |
+| **block** | `status, wafFlags` (opcional y mutuamente excluyente), `alert` (opcional) | si wafFlags no está presente, devuelve un error HTTP omitiendo todas las demás propiedades, el código de error se define mediante la propiedad estado o el valor predeterminado es 406. Si wafFlags está presente, permite protecciones WAF especificadas y continúa con el procesamiento de la regla. <br>Si se especifica una alerta, se envía una notificación del Centro de acciones si la regla se activa 10 veces en un intervalo de 5 minutos. Una vez que se activa una alerta para una regla en particular, no se activará de nuevo hasta el día siguiente (UTC). |
+| **registro** | `wafFlags` (opcional), `alert` (opcional) | registra el hecho de que la regla se activó; de lo contrario, no afecta al procesamiento. wafFlags no tiene ningún efecto. <br>Si se especifica una alerta, se envía una notificación del Centro de acciones si la regla se activa 10 veces en un intervalo de 5 minutos. Una vez que se activa una alerta para una regla en particular, no se activará de nuevo hasta el día siguiente (UTC). |
 
 ### Lista de indicadores WAF {#waf-flags-list}
 
@@ -501,7 +501,7 @@ Obtenga más información sobre el [Centro de acciones](/help/operations/actions
 ![Notificación del Centro de acciones](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
 
 
-La propiedad alert se puede aplicar al nodo de acción para todos los tipos de acción (permitir, bloquear, registrar).
+La propiedad alerta se puede aplicar al nodo de acción para todos los tipos de acción (allow, block, log).
 
 ```
 kind: "CDN"
@@ -531,7 +531,7 @@ Una notificación por correo electrónico del [Centro de acciones](/help/operati
 
 Si se cumple este umbral, Adobe bloqueará el tráfico de esa dirección IP, pero se recomienda tomar medidas adicionales para proteger el origen, incluida la configuración de reglas de filtro de tráfico de límite de velocidad para bloquear los picos de tráfico en umbrales más bajos. Consulte [Bloqueo de ataques DoS y DDoS mediante el tutorial de reglas de tráfico](#tutorial-blocking-DDoS-with-rules) para una visita guiada.
 
-Esta alerta está habilitada de manera predeterminada, pero se puede deshabilitar con la propiedad *enable_ddos_alerts*, establecida en false. Una vez activada la alerta, no se activará de nuevo hasta el día siguiente (UTC).
+Esta alerta está habilitada de forma predeterminada, pero se puede deshabilitar con la propiedad *enable_ddos_alerts* , establecida en falso. Una vez que se activa la alerta, no se activará de nuevo hasta el día siguiente (UTC).
 
 ```
 kind: "CDN"
