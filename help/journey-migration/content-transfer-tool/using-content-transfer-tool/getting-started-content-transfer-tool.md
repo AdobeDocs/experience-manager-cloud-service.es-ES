@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo empezar a utilizar la herramienta 
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 67bc538fe174034c05808d4a62c51c404dfaf38c
 workflow-type: tm+mt
 source-wordcount: '1362'
 ht-degree: 16%
@@ -88,7 +88,7 @@ La siguiente sección se aplica a la nueva versión de la herramienta de transfe
 
    >[!NOTE]
    >
-   >Se puede crear un máximo de 20 conjuntos de migración, incluidos conjuntos caducados, por proyecto en Cloud Acceleration Manager.
+   >Se puede crear un máximo de 10 conjuntos de migración, incluidos conjuntos caducados, por proyecto en Cloud Acceleration Manager.
 
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 

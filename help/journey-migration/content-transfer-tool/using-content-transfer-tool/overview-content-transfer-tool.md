@@ -4,7 +4,7 @@ description: AEM Aprenda a utilizar la herramienta de transferencia de contenido
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 67bc538fe174034c05808d4a62c51c404dfaf38c
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 52%
@@ -68,7 +68,7 @@ En la fase de ingesta, para aplicar el contenido delta sobre el contenido actual
 >title="Caducidad de un conjunto de migración"
 >abstract="Obtenga información sobre la caducidad de un conjunto de migración."
 
-Todos los conjuntos de migración caducarán finalmente después de un período prolongado de inactividad de aproximadamente 90 días. Una vez que los indicadores se muestren en la tarjeta de proyecto y en las filas de la tabla de trabajos de migración durante un período de tiempo, el conjunto de migración caducará y sus datos dejarán de estar disponibles. La hora de caducidad se puede ampliar fácilmente actuando en función del conjunto de migración de las siguientes formas:
+Todos los conjuntos de migración caducarán finalmente después de un período prolongado de inactividad de aproximadamente 45 días. Una vez que los indicadores se muestren en la tarjeta de proyecto y en las filas de la tabla de trabajos de migración durante un período de tiempo, el conjunto de migración caducará y sus datos dejarán de estar disponibles. La hora de caducidad se puede ampliar fácilmente actuando en función del conjunto de migración de las siguientes formas:
 
 * edición de su descripción
 * obteniendo su clave de extracción
