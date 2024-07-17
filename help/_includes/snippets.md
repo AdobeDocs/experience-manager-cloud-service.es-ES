@@ -1,8 +1,8 @@
 ---
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: 2acaafab86c0552e63e7b38b2a774c3c6afd6f9c
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 100%
+source-wordcount: '564'
+ht-degree: 86%
 
 ---
 # Fragmentos de código {#snippets}
@@ -87,8 +87,8 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
      </tr>
    <tr>
     <td>Realizar operaciones matemáticas en el campo de panel repetible </td>
-    <td>Las funciones matemáticas OOTB se pueden aplicar en campos del panel repetible para realizar funciones como suma o promedio. </td>
-    <td>Las operaciones matemáticas en el campo de panel repetible se pueden realizar mediante las funciones personalizadas.
+    <td>Las funciones matemáticas OOTB se pueden aplicar en campos de panel repetibles para realizar funciones como suma, promedio mediante el editor de reglas. Se deben proporcionar dos argumentos: el primero especifica el panel repetible que contiene el campo, mientras que el segundo especifica el campo dentro del panel repetible correspondiente. </td>
+    <td>Las operaciones matemáticas en el campo del panel repetible se pueden realizar mediante las funciones personalizadas. También puede aplicar las funciones matemáticas directamente a los campos del panel repetible mediante el editor de reglas.
    </td>
    </tr>
       <tr>

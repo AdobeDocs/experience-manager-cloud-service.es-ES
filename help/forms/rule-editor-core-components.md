@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+source-git-commit: cf69db380097992ba8adfe1ac07b3ffa26217a07
 workflow-type: tm+mt
-source-wordcount: '5627'
-ht-degree: 86%
+source-wordcount: '5735'
+ht-degree: 85%
 
 ---
 
@@ -900,6 +900,15 @@ In [!DNL Experience Manager Forms] versions prior to [!DNL Experience Manager 6.
 Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor. -->
 
 ## Reglas de ejemplo {#example}
+
+### Optimización de cálculos complejos en paneles repetibles con funciones integradas
+
+El editor de reglas permite utilizar funciones integradas, como Suma, Mín, Máx y Unir, directamente en los campos de los paneles repetibles. Esto desbloquea una potente automatización, lo que le permite implementar una lógica empresarial compleja sin código personalizado.
+Imagine un formulario con un panel repetible. Cada instancia del panel puede recopilar datos como cantidades de productos. Puede utilizar la función Suma para calcular automáticamente la cantidad total en todos los paneles, lo que elimina los cálculos manuales y los posibles errores.
+
+![Compatibilidad con campos de panel repetibles en funciones OOTB](/help/forms/assets/ootb-function-support-repeatable-panel.png)
+
+¡Este es solo un ejemplo! Explore las [funciones](#b-form-objects-and-functions-br) disponibles para simplificar los flujos de trabajo y mejorar la precisión de los datos en los formularios.
 
 ### Invocar servicio de modelo de datos de formulario {#invoke}
 
