@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 46a6f413be2ba41df8ca72bd7751ec453ae438ec
+source-git-commit: a9596774326d5756477c0a44c2715fc5c3561e2a
 workflow-type: tm+mt
-source-wordcount: '5735'
-ht-degree: 85%
+source-wordcount: '5787'
+ht-degree: 84%
 
 ---
 
@@ -904,9 +904,17 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 ### Optimización de cálculos complejos en paneles repetibles con funciones integradas
 
 El editor de reglas permite utilizar funciones integradas, como Suma, Mín, Máx y Unir, directamente en los campos de los paneles repetibles. Esto desbloquea una potente automatización, lo que le permite implementar una lógica empresarial compleja sin código personalizado.
-Imagine un formulario con un panel repetible. Cada instancia del panel puede recopilar datos como cantidades de productos. Puede utilizar la función Suma para calcular automáticamente la cantidad total en todos los paneles, lo que elimina los cálculos manuales y los posibles errores.
+Imagine un formulario con un panel repetible, donde cada instancia del panel recopila información sobre el valor declarado de los recursos.
+
+![Formulario repetible](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
+
+Puede usar la función `Sum` para calcular automáticamente el valor de los recursos totales en todos los paneles, lo que elimina la necesidad de realizar cálculos manuales y reduce la posibilidad de que se produzcan errores.
 
 ![Compatibilidad con campos de panel repetibles en funciones OOTB](/help/forms/assets/ootb-function-support-repeatable-panel.png)
+
+Cuando rellena un formulario y agrega instancias para declarar los valores de los recursos, el botón `Calculate Asset Value` calcula la suma total de todos los valores de recursos declarados y muestra el resultado en el cuadro de texto total de `assetvalue`.
+
+![Compatibilidad con campos de panel repetibles en funciones OOTB](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
 
 ¡Este es solo un ejemplo! Explore las [funciones](#b-form-objects-and-functions-br) disponibles para simplificar los flujos de trabajo y mejorar la precisión de los datos en los formularios.
 
