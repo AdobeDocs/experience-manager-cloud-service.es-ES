@@ -5,10 +5,10 @@ exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 98%
+source-wordcount: '488'
+ht-degree: 90%
 
 ---
 
@@ -48,7 +48,15 @@ Los entornos creados en un programa de zona protegida no están configurados par
 
 ### Sin dominios personalizados ni listas de IP permitidas {#ip-allow}
 
-Los dominios personalizados y las listas de IP permitidas no están disponibles en los programas de zonas protegidas.
+[Los dominios personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md) y [listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) no están disponibles en los programas de zonas protegidas.
+
+### No hay regiones de Publish adicionales {#additional-publish-regions}
+
+[Las regiones de publicación adicionales](/help/operations/additional-publish-regions.md) no están disponibles en los programas de zonas protegidas.
+
+### No 99,99% SLA {#999-sla}
+
+[99,99% de SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) no se aplica a los programas de zonas protegidas.
 
 ### Sin redes avanzadas {#advanced-networking}
 

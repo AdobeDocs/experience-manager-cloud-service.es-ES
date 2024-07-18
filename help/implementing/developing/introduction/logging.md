@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo utilizar el registro para AEM as a
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
 workflow-type: tm+mt
 source-wordcount: '2797'
 ht-degree: 8%
@@ -561,9 +561,9 @@ Se puede acceder a los registros de AEM as a Cloud Service para servicios en la 
 
 ### Registros para regiones de Publish adicionales {#logs-for-additional-publish-regions}
 
-Si hay regiones de Publish adicionales habilitadas para un entorno concreto, los registros de cada región estarán disponibles para su descarga desde Cloud Manager, como se ha mencionado anteriormente.
+Si hay habilitadas regiones de publicación adicionales para un entorno determinado, los registros de cada región estarán disponibles para su descarga desde Cloud Manager, como se mencionó anteriormente.
 
-AEM Los registros de envío y los registros de Dispatcher de las regiones de Publish AEM adicionales especificarán la región en las tres primeras letras después del ID de entorno, como se muestra en **nld2** en el ejemplo siguiente, que hace referencia a una instancia de publicación de adicional ubicada en los Países Bajos:
+AEM AEM Los registros de envío y los registros de Dispatcher de las regiones de publicación adicionales especificarán la región en las tres primeras letras después del ID de entorno, como se muestra en **nld2** en el ejemplo siguiente, que hace referencia a una instancia de publicación de publicación adicional ubicada en los Países Bajos:
 
 ```
 cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"

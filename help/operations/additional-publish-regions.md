@@ -4,12 +4,13 @@ description: Descubra cómo AEM as a Cloud Service admite regiones de publicaci�
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 78%
+source-wordcount: '663'
+ht-degree: 71%
 
 ---
+
 
 # Regiones de publicación adicionales {#additional-publish-regions}
 
@@ -22,7 +23,9 @@ Las organizaciones pueden autorizar hasta tres regiones de publicación adiciona
 
 >[!NOTE]
 >
->Actualmente, esta función solo está disponible para AEM Sites. Tampoco se puede aplicar a programas de zona protegida. AEM Además, la función de regiones de publicación adicional requiere que el programa se actualice a la versión de lanzamiento de la versión de la versión de la versión de la versión de la versión de la versión de la versión de o 12142.
+>* Esta función está disponible para las soluciones Sites y Forms.
+>* Esta característica no se puede aplicar a [programas de zona protegida.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+>* AEM Esta función requiere que el programa se actualice a la versión de lanzamiento de la versión de la versión de la versión de la versión de la versión de la versión de la versión de la versión de la versión de la versión de la aplicación o de la versión 12142.
 
 ## Casos de uso {#use-cases}
 
@@ -57,7 +60,9 @@ Si se habilitan regiones de publicación adicionales, se habilitarán registros 
 
 Tenga en cuenta las siguientes limitaciones cuando considere la posibilidad de utilizar regiones de publicación adicionales.
 
-* Solo se pueden añadir regiones de publicación adicionales a AEM Sites. AEM Las regiones de publicación adicionales no se extienden a otras soluciones de publicación o funcionalidades relacionadas implementadas en el mismo programa (por ejemplo, AEM Forms o Adobe Learning Manager).
+* Solo se pueden añadir regiones de publicación adicionales a AEM Sites o AEM Forms.
+   * AEM Las regiones de publicación adicionales no se extienden a otras soluciones de publicación o funcionalidades relacionadas implementadas en el mismo programa (por ejemplo, AEM Assets o Adobe Learning Manager).
+   * Sin embargo, estas soluciones se pueden agregar a un programa siempre y cuando tenga al menos una solución de Sites o Forms que se aplique a él.
 * Solo se pueden agregar regiones adicionales si los derechos asociados están disponibles y no se utilizan en el inquilino.
 * Se puede agregar un máximo de tres regiones de publicación adicionales a cualquier entorno individual.
 * Las regiones adicionales solo están disponibles en los programas de producción. La función no está disponible en programas de zona protegida.

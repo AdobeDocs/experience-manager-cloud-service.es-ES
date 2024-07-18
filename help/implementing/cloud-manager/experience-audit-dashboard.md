@@ -5,9 +5,9 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1995'
 ht-degree: 7%
 
 ---
@@ -112,7 +112,7 @@ Además del resumen presentado en los detalles de la ejecución de una canalizac
 
 Al tocar o hacer clic en **Ver páginas más lentas**, se abre el cuadro de diálogo **Más lentas 5 páginas**, que muestra las cinco páginas de menor rendimiento que [configuró para auditar.](#configuration)
 
-![Cinco más lentos](assets/experience-audit-slowest-five.jpg)
+![Cinco más lentos](assets/experience-audit-slowest-five.png)
 
 Las puntuaciones se desglosan por **Rendimiento**, **Accesibilidad**, **Prácticas recomendadas** y **SEO**, junto con la desviación de cada métrica de la última auditoría.
 
@@ -166,7 +166,7 @@ La sección **Recommendations** muestra un conjunto agregado de datos. De manera
 
 Pulse o haga clic en las comillas angulares de cualquier recomendación para mostrar detalles al respecto.
 
-![Detalles de la recomendación](assets/experience-audit-recommendation-details.png)
+![Detalles de la recomendación](assets/experience-audit-recommendations-details.png)
 
 Cuando están disponibles, los detalles ampliados de la recomendación también contienen el porcentaje de impacto de las recomendaciones, para ayudarle a centrarse en los cambios más impactantes.
 
@@ -184,7 +184,7 @@ Al tocar o hacer clic en el vínculo de una página en particular, se actualiza 
 
 ![Resultados de la página](assets/experience-audit-page-results.png)
 
-La ficha **Informes sin procesar** le proporciona puntuaciones para cada auditoría de la página. Toque o haga clic en el icono **Descargar** para recuperar un archivo JSON de los datos sin procesar.
+La ficha **Informes sin procesar** le proporciona puntuaciones para cada auditoría de la página. Pulse o haga clic en la fecha del informe en la columna **Informe de Lighthouse** para recuperar un archivo JSON de los datos sin procesar.
 
 ![Informe sin procesar](assets/experience-audit-raw-reports.png)
 
@@ -200,6 +200,10 @@ Para ejecutar un análisis bajo demanda, vaya a la ficha **Informes** para ver e
 
 ![Análisis bajo demanda](assets/experience-audit-on-demand.png)
 
+El botón **Ejecutar análisis** deja de estar disponible y aparece marcado con un icono de reloj cuando ya se está ejecutando un análisis bajo demanda.
+
+![Análisis bajo demanda en ejecución](assets/experience-audit-on-demand-running.png)
+
 Los análisis bajo demanda almacenan en déclencheur una auditoría de experiencias para las últimas 25 [páginas configuradas](#configuration) y, por lo general, finalizan en unos minutos.
 
 Una vez finalizado, el gráfico de puntuaciones se actualizará automáticamente y puede inspeccionar los resultados exactamente como para un análisis de ejecución de canalización.
@@ -214,15 +218,15 @@ Puede filtrar el gráfico de puntuaciones según el tipo de déclencheur usando 
 
 ## La auditoría de experiencias encuentra problemas {#issues}
 
-Si las [páginas que configuró](#configuration) para auditar no estaban disponibles, la auditoría de experiencias lo refleja.
+Si las [páginas que configuró](#configuration) para auditar no estaban disponibles o si había otros errores en la auditoría, la auditoría de experiencias lo refleja.
 
 La canalización muestra una sección de errores ampliable para ver las rutas URL relativas a las que no pudo acceder.
 
 ![Problemas detectados por la auditoría de experiencias](assets/experience-audit-issues.jpg)
 
-Si visualiza el informe completo, los detalles se muestran en la sección **[Resultados del análisis de auditoría de experiencias](#results)**.
+Si visualiza el informe completo, los detalles se muestran en la sección **[Resultados del análisis de auditoría de experiencias](#results)**, que también es ampliable.
 
-![Problemas completos con el informe](assets/experience-audit-issues-reports.jpeg)
+![Problemas completos con el informe](assets/experience-audit-issues-report.png)
 
 Algunas razones por las que las páginas podrían no estar disponibles son las siguientes:
 
@@ -253,8 +257,7 @@ Estas se pueden mejorar mediante:
 
 Los siguientes detalles proporcionan información adicional sobre cómo la auditoría de experiencias evalúa el sitio. No son necesarios para el uso general de la función y se proporcionan aquí para su integridad.
 
-* Aunque las [rutas configuradas de la página Auditoría de experiencias](#configuration) muestran el dominio `.com` del editor, la auditoría analiza el dominio de origen (`.net`) para garantizar que se detecten los problemas introducidos durante el desarrollo.
-   * El dominio `.com` usa una red de distribución de contenido (CDN) y podría arrojar mejores puntuaciones o contener resultados en caché.
+* La auditoría analiza el dominio de origen (`.com`) tal como se define en las [rutas configuradas de la página Auditoría de experiencias](#configuration) del editor para simular las experiencias reales del usuario con mayor precisión y le ayuda a tomar decisiones más informadas sobre la administración y la optimización de sus sitios web.
 * En las canalizaciones full-stack de producción, se analiza el entorno de ensayo.
    * Para garantizar que la auditoría proporcione los detalles relevantes durante la auditoría, el contenido del entorno de ensayo debe estar lo más cerca posible del entorno de producción.
 * Las páginas mostradas en el menú desplegable **Seleccionar** de la sección [**Puntuaciones de página - tendencia**](#trend) son todas páginas conocidas que la auditoría de experiencias analizó anteriormente.
