@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 573de431328650778b3ef0979a24190477382310
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '332'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
@@ -18,25 +18,25 @@ En la siguiente sección se describen las notas de la versión técnicas actuale
 
 ## Versión 17098 {#release-17098}
 
-A continuación se resumen las mejoras continuas para la versión de mantenimiento 17098, que se publicó el miércoles, 16 de julio de 2024. La versión de mantenimiento anterior fue la 16971.
+A continuación se resumen las mejoras continuas para la versión de mantenimiento 17098, que se publicó el 16 de julio de 2024. La versión de mantenimiento anterior fue la 16971.
 
-La activación de funciones 2024.7.0 proporcionará el conjunto completo de funciones para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
+La activación de funcionalidades 2024.7.0 proporcionará el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
 ### Mejoras {#enhancements-17098}
 
-- SKYOPS-79817: Habilitar la tarea del analizador de funciones de Sling para las asignaciones de usuarios de servicio
+- SKYOPS-79817: Habilite la tarea del analizador de funciones de Sling para las asignaciones de usuarios de servicio
 
 ### Problemas solucionados {#fixed-issues-17098}
 
-- ASSETS-39665: la sincronización de recortes inteligentes no funciona después de migrar de 6.5 a AEM CS
-- FORMS-14993: la API de Forms devuelve 500 para el material colateral que funcionaba anteriormente
+- ASSETS-39665: la sincronización de recortes inteligentes no funciona después de migrar de 6.5 a AEMCS
+- FORMS-14993: la API de Forms devuelve 500 para el colateral que funcionaba anteriormente
 - GRANITE-52120: CRXDE devuelve 500 al mostrar datos de control de acceso
-- GRANITE-52573: Solicitudes que devuelven 400 cuando se utiliza // en direcciones URL reescritas
-- GRANITE-52746: Todos los tipos de nodo no cargados en el cuadro de diálogo Crear nodo
-- GRANITE-52777: Manejo de 404s roto cuando se ajusta la solicitud
-- GRANITE-52871: Asegúrese de que publish-worker se sincronice con golden-publish y se complete antes de la compactación
-- SKYOPS-79173: El replicador no se replica en varios agentes que coinciden con un AgentIdFilter determinado
-- SKYOPS-80075: Problemas con los valores predeterminados en los nombres de los recursos que causan el bloqueo de las colas de publicación (Mac)
+- GRANITE-52573: solicitudes que devuelven 400 cuando se utiliza // en URL reescritas
+- GRANITE-52746: todos los tipos de nodo no cargados en el cuadro de diálogo Crear nodo
+- GRANITE-52777: manejo defectuoso de 404s cuando se ajusta la solicitud
+- GRANITE-52871: asegúrese de que publish-worker se sincronice con golden-publish y se complete antes de la compactación
+- SKYOPS-79173: el replicador no se replica en varios agentes que coinciden con un AgentIdFilter determinado
+- SKYOPS-80075: problemas con diéresis en los nombres de los recursos que causan el bloqueo de las colas de publicación (Mac)
 - SKYOPS-81032: Filtre los registros generados por las solicitudes para obtener registros al utilizar el registro mejorado
 
 ### Problemas conocidos {#known-issues-17098}
@@ -55,7 +55,7 @@ Las funciones y API obsoletas y eliminadas de AEM as a Cloud Service se detallan
 
 | Tecnología | Versión | Vínculo |
 |---|---|---|
-| AEM Oak | 1.66.0 | [API Oak 1.66.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.66.0/index.html) |
+| AEM Oak | 1.66.0 | [API Oak 1.66.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.66.0/index.html?lang=es) |
 | API AEM SLING | 2.27.2 | [API de Apache Sling 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.24-1.4.0 | [Especificación de idioma de la plantilla HTML](https://github.com/adobe/htl-spec) |
 | Los componentes principales de AEM | 2.25.4 | [Componentes principales de WCM AEM](https://github.com/adobe/aem-core-wcm-components) |
