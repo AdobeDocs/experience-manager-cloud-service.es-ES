@@ -3,8 +3,9 @@ title: Selector de recursos para [!DNL Adobe Experience Manager] como un [!DNL C
 description: Utilice el selector de recursos para buscar y recuperar metadatos y representaciones de recursos dentro de la aplicación.
 contentOwner: KK
 role: Admin,User
+feature: Selectors
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: 3f2fbdc1fd4087ea4c90b9bbe11aa37a11237ae5
+source-git-commit: d12aba19a8f166afcaa071478c1cb6d995010cd8
 workflow-type: tm+mt
 source-wordcount: '4725'
 ht-degree: 36%
