@@ -5,9 +5,9 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 35ac4cfb18e348281d2b126bdc3b292c84590f3a
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '649'
 ht-degree: 76%
 
 ---
@@ -39,7 +39,9 @@ Cuando un certificado caduca, cualquier dominio que esté en uso con el certific
 1. Navegue hasta la pantalla **Certificados SSL** de la pantalla **Entornos**.
 1. Puede ver una tabla con una fila para cada certificado SSL que se haya instalado correctamente en el programa. Haga clic en el botón de los tres puntos del extremo derecho de la fila del certificado que desea actualizar y seleccione **Ver y actualizar**.
 1. Los detalles del certificado se muestran y se pueden actualizar.
-1. Ejecute la canalización para implementar el certificado actualizado.
+1. Guarde los cambios.
+
+Una vez guardados los cambios, se aplican automáticamente.
 
 >[!NOTE]
 >
