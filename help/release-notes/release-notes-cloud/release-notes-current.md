@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: d76f27e2b85cefe5e83f790a91466e94a619a077
 workflow-type: tm+mt
 source-wordcount: '1965'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -252,4 +252,4 @@ Puede encontrar una lista completa de las versiones de generar variaciones [aqu�
 
 ## Notas de la versión de Experience Cloud {#experience-cloud}
 
-Puede encontrar información sobre versiones de otras aplicaciones de Experience Cloud [aquí](https://experienceleague.adobe.com/es/docs/release-notes/experience-cloud/current).
+Puede encontrar información sobre las versiones de otras aplicaciones de Experience Cloud [aquí](https://experienceleague.adobe.com/es/docs/release-notes/experience-cloud/current).
