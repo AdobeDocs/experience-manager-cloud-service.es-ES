@@ -5,10 +5,10 @@ contentOwner: KK
 role: Admin,User
 feature: Selectors
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: d12aba19a8f166afcaa071478c1cb6d995010cd8
+source-git-commit: 61647c0f190c7c71462f034a131f5a7c13fd7162
 workflow-type: tm+mt
-source-wordcount: '4725'
-ht-degree: 36%
+source-wordcount: '4871'
+ht-degree: 35%
 
 ---
 
@@ -812,6 +812,60 @@ En la tabla siguiente se describen algunas de las propiedades importantes del ob
 | *_vínculos.<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | número | Altura de la representación. |
 
 Para obtener una lista completa de las propiedades y un ejemplo detallado, visite [Ejemplo de código del selector de recursos](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+
+### Filtro de invocación contextual{#contextual-invocation-filter}
+
+El Selector de recursos le permite agregar un filtro de selector de etiquetas. Admite un grupo de etiquetas que combina todas las etiquetas relevantes con un grupo de etiquetado concreto. Además, le permite seleccionar etiquetas adicionales correspondientes al recurso que está buscando. Además, también puede establecer los grupos de etiquetas predeterminados en el filtro de invocación contextual que utiliza principalmente para que le sean accesibles en sus desplazamientos.
+
+> 
+>
+> * Se debe añadir un fragmento de código de invocación contextual para habilitar el filtro de etiquetado en la búsqueda.
+> * Es obligatorio usar la propiedad name correspondiente al tipo de grupo de etiquetas `(property=xcm:keywords.id=)`.
+
+Sintaxis:
+
+```
+const filterSchema=useMemo(() => {
+    return: [
+        {
+            element: 'taggroup',
+            name: 'property=xcm:keywords.id='
+        },
+    ];
+}, []);
+```
+
+Para agregar grupos de etiquetas en el panel Filtros, es obligatorio agregar al menos un grupo de etiquetas como predeterminado. Además, utilice el siguiente fragmento de código para añadir las etiquetas predeterminadas preseleccionadas del grupo de etiquetas.
+
+```
+export const WithAssetTags = (props) = {
+const [selectedTags, setSelectedTags] = useState (
+new Set(['orientation', 'color', 'facebook', 'experience-fragments:', 'dam', 'monochrome'])
+const handleSelectTags = (selected) => {
+setSelectedTags (new Set (selected)) ;
+};
+const filterSchema = useMemo ((); => {
+    return {
+        schema: [
+            ｛
+                fields: [
+                    {
+                    element: 'checkbox', 
+                    name: 'property=xcm:keywords=', 
+                    defaultValue: Array. from(selectedTags), 
+                    options: assetTags, 
+                    orientation: 'vertical',
+                    },
+                ],
+    header: 'Asset Tags', 
+    groupkey: 'AssetTagsGroup',
+        ],
+    },
+｝；
+}, [selectedTags]);
+```
+
+![filtro de grupo de etiquetas](assets/tag-group.gif)
 
 ## Gestión de la selección de recursos mediante el esquema de objetos {#handling-selection}
 
