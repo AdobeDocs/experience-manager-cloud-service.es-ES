@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: b8fc132e7871a488cad99440d320e72cd8c31972
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3938'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -531,7 +531,7 @@ Una notificación por correo electrónico del [Centro de acciones](/help/operati
 
 Si se cumple este umbral, Adobe bloqueará el tráfico de esa dirección IP, pero se recomienda tomar medidas adicionales para proteger el origen, incluida la configuración de reglas de filtro de tráfico de límite de velocidad para bloquear los picos de tráfico en umbrales más bajos. Consulte [Bloqueo de ataques DoS y DDoS mediante el tutorial de reglas de tráfico](#tutorial-blocking-DDoS-with-rules) para una visita guiada.
 
-Esta alerta está habilitada de manera predeterminada, pero se puede deshabilitar con la propiedad *defaultTrafficAlerts*, establecida en false. Una vez que se activa la alerta, no se activará de nuevo hasta el día siguiente (UTC).
+Esta alerta está habilitada de forma predeterminada, pero se puede deshabilitar con la propiedad *defaultTrafficAlerts*, establecida en falso. Una vez que se activa la alerta, no se activará de nuevo hasta el día siguiente (UTC).
 
 ```
 kind: "CDN"
