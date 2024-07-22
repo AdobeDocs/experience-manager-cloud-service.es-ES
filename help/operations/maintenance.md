@@ -4,9 +4,9 @@ description: Obtenga información sobre las tareas de mantenimiento en AEM as a 
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: f8ef7e36ad602af96c3a6055db31ac328da808e6
+source-git-commit: b8bed4acf895f1cf04ea92ae27b87c7bfb38863d
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2110'
 ht-degree: 30%
 
 ---
@@ -84,7 +84,7 @@ En la tabla siguiente se ilustran las tareas de mantenimiento disponibles.
     <td>Cliente</td>
     <td>
     <p>Debe hacerse en Git. Anule el nodo de configuración de la ventana de mantenimiento predeterminado en <code>/libs</code> creando propiedades en la carpeta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> o <code>granite_monthly</code>. Consulte la tabla Ventana de mantenimiento a continuación para obtener más información sobre la configuración.</p>
-    <p>Habilite la tarea de mantenimiento añadiendo otro nodo bajo el anterior (asígnele el nombre <code>granite_ProjectPurgeTask</code>) con las propiedades adecuadas. Consulte la lista de propiedades de OSGI en "Configuración de depuración de proyectos de Adobe".</p>
+    <p>Habilite la tarea de mantenimiento añadiendo otro nodo bajo el anterior (asígnele el nombre <code>granite_ProjectPurgeTask</code>) con las propiedades adecuadas. Consulte la lista de [propiedades OSGI](/help/implementing/deploying/configuring-osgi.md) en **Configuración de depuración de proyectos de Adobe ** .</p>
   </td>
   </tr>
   </tbody>
