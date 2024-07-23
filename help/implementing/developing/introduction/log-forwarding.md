@@ -4,9 +4,9 @@ description: Obtenga información acerca del reenvío de registros a Splunk y ot
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 4116f63c4a19b90849e4b55f0c10409530be7d3e
+source-git-commit: cb4299be4681b24852a7e991c123814d31f83cad
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1349'
 ht-degree: 1%
 
 ---
@@ -109,7 +109,7 @@ Este artículo está organizado de la siguiente manera:
             enabled: false
    ```
 
-1. Para tipos de entorno distintos de RDE (que actualmente no es compatible), cree una canalización de configuración de implementación de destino en Cloud Manager.
+1. Para tipos de entorno distintos de RDE (que actualmente no es compatible), cree una canalización de configuración de implementación de destino en Cloud Manager; tenga en cuenta que las canalizaciones de pila completa y de nivel web no implementan el archivo de configuración.
 
    * [Consulte Configuración de canalizaciones de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
    * [Consulte Configuración de canalizaciones que no son de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
@@ -254,10 +254,15 @@ data:
   https:
     default:
       enabled: true
-      url: "https://example.com/aem_logs/aem"
+      url: "https://example.com:8443/aem_logs/aem"
       authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
+
+Consideraciones:
+
+* La cadena de dirección URL debe incluir **https://**; de lo contrario, la validación fallará. Si no se incluye ningún puerto en la cadena URL, se asume el puerto 443 (el puerto HTTPS predeterminado).
+* Si desea utilizar un puerto diferente al 443, proporciónelo como parte de la dirección URL.
 
 #### Registros de CDN HTTPS {#https-cdn}
 
@@ -267,8 +272,7 @@ También debe haber una propiedad denominada `sourcetype`, que se ha establecido
 
 >[!NOTE]
 >
-> Antes de enviar la primera entrada de registro de CDN, el servidor HTTP debe completar correctamente un desafío único: una solicitud enviada a la ruta de acceso ``wellknownpath`` debe responder con ``*``.
-
+> Antes de enviar la primera entrada de registro de CDN, el servidor HTTP debe completar correctamente un desafío único: una solicitud enviada a la ruta de acceso ``/.well-known/fastly/logging/challenge`` debe responder con un asterisco ``*`` en el cuerpo y el código de estado 200.
 
 #### AEM Registros de HTTPS {#https-aem}
 
