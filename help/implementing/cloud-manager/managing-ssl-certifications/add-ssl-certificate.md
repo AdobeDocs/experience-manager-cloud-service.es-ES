@@ -5,10 +5,10 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 07696086644d52199bada102e9aee163d868c9c0
+source-git-commit: 83c9c6a974b427317aa2f83a3092d0775aac1d53
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 69%
+source-wordcount: '598'
+ht-degree: 76%
 
 ---
 
@@ -63,14 +63,6 @@ Una vez guardado, verá el certificado como una fila nueva en la tabla.
 ## Errores de certificado {#certificate-errors}
 
 Pueden surgir ciertos errores si un certificado no está instalado correctamente o si no cumple los requisitos de Cloud Manager.
-
-### Garantizar un formato de línea adecuado {#line-formatting}
-
-Al pegar valores para **Certificate**, **Private key** y **Certificate chain**, las nuevas líneas solo deben ser después de BEGIN CERTIFICATE y antes de END CERTIFICATE. Es decir, los valores pegados deben construirse de la siguiente manera:
-
-* `-----BEGIN CERTIFICATE-----` debe aparecer en su propia línea.
-* `-----END CERTIFICATE-----` debe aparecer en su propia línea.
-* El contenido del certificado debe aparecer en su propia línea como una cadena larga **sin nuevas líneas** entre `-----BEGIN CERTIFICATE-----` y `-----END CERTIFICATE-----`.
 
 ### Quitar certificados de cliente {#client-certificates}
 
