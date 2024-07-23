@@ -5,10 +5,10 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 07696086644d52199bada102e9aee163d868c9c0
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 75%
+source-wordcount: '665'
+ht-degree: 69%
 
 ---
 
@@ -43,7 +43,6 @@ Siga estos pasos para agregar un certificado mediante Cloud Manager.
    * Escriba un nombre para el certificado en **Nombre del certificado**.
       * Esto es solo para fines informativos y puede ser cualquier nombre que le ayude a hacer referencia al certificado fácilmente.
    * Pegue los valores **Certificado**, **Clave privada** y **Cadena de certificados** en sus respectivos campos. Los tres campos son obligatorios.
-   * En algunos casos, el certificado de usuario final puede incluirse en la cadena y debe eliminarse antes de pegar la cadena en el campo.
 
    ![Cuadro de diálogo Agregar certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
@@ -61,13 +60,27 @@ Una vez guardado, verá el certificado como una fila nueva en la tabla.
 >
 >El usuario debe ser miembro de la función **Propietario del negocio** o **Administrador de implementación** para instalar un certificado SSL en Cloud Manager.
 
->[!NOTE]
->
->Si recibe un error similar a `The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.`, es probable que haya incluido el certificado de cliente en la cadena de certificados. Asegúrese de que la cadena no incluya el certificado de cliente e inténtelo de nuevo.
-
 ## Errores de certificado {#certificate-errors}
 
 Pueden surgir ciertos errores si un certificado no está instalado correctamente o si no cumple los requisitos de Cloud Manager.
+
+### Garantizar un formato de línea adecuado {#line-formatting}
+
+Al pegar valores para **Certificate**, **Private key** y **Certificate chain**, las nuevas líneas solo deben ser después de BEGIN CERTIFICATE y antes de END CERTIFICATE. Es decir, los valores pegados deben construirse de la siguiente manera:
+
+* `-----BEGIN CERTIFICATE-----` debe aparecer en su propia línea.
+* `-----END CERTIFICATE-----` debe aparecer en su propia línea.
+* El contenido del certificado debe aparecer en su propia línea como una cadena larga **sin nuevas líneas** entre `-----BEGIN CERTIFICATE-----` y `-----END CERTIFICATE-----`.
+
+### Quitar certificados de cliente {#client-certificates}
+
+Al agregar un certificado, recibe un error similar al siguiente:
+
+```text
+The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
+```
+
+Es probable que haya incluido el certificado de cliente en la cadena de certificados. Asegúrese de que la cadena no incluya el certificado de cliente e inténtelo de nuevo.
 
 ### Directiva de certificados {#certificate-policy}
 
