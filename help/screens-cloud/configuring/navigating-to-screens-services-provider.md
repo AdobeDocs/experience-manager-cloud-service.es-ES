@@ -4,9 +4,9 @@ description: En esta página se describe cómo desplazarse a Screens Services Pr
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: 093cd62f282bd9842ad74124bb9bd4d5a33ef1c5
+source-git-commit: 5452a02ed20d70c09728b3e34f248c7d37fc4668
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '383'
 ht-degree: 4%
 
 ---
@@ -48,39 +48,41 @@ Siga los pasos a continuación para configurar Screens Services Provider:
 
 1. Haga clic en **Guardar** para conectarse al proveedor de contenido de Screens.
 
-1. AEM En caso de que haya configurado la instancia de publicación de para permitir el acceso solo a direcciones IP de confianza mediante la función de Lista de permitidos IP de Cloud Manager, deberá configurar un encabezado con un valor clave en el cuadro de diálogo de configuración, como se muestra a continuación.
+1. AEM Si ha configurado la instancia de publicación de la para permitir el acceso solo a direcciones IP de confianza mediante la función de Lista de permitidos IP de Cloud Manager, debe configurar un encabezado con un valor clave en el cuadro de diálogo de configuración, como se muestra a continuación.
 Las IP que necesitan quedar en la lista blanca también deben moverse al archivo de configuración y deben [desaplicarse](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list) de la configuración de Cloud Manager.
 
-   ![imagen](/help/screens-cloud/assets/configure/configure-screens20.png)
+   ![imagen](/help/screens-cloud/assets/configure/configure-screens20b.png)
 AEM La misma clave debe configurarse en la configuración de CDN de la.  Se recomienda no colocar el valor del encabezado directamente en GITHub y usar una [referencia secreta](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets).
 A continuación se muestra un ejemplo de [configuración de CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf):
-Tipo: &quot;CDN&quot;
-versión: &quot;1&quot;
-metadatos:
-envTypes: [&quot;dev&quot;, &quot;stage&quot;, &quot;prod&quot;]
-datos:
-trafficFilters:
-reglas:
-- nombre: &quot;block-request-from-not-allowed-ips&quot;
-cuando:
-allOf:
-- reqProperty: clientIp
-notIn: [&quot;101.41.112.0/24&quot;]
-reqProperty: tier
-igual a: publicar
-action: block
-- nombre: &quot;allow-requests-with-header&quot;
-cuando:
-allOf:
-- reqProperty: tier
-igual a: publicar
-- reqProperty: ruta
-igual a: /screens/channels.json
-- reqHeader: x-screens-lista de permitidos-key
-igual a: $\
-   {CDN_HEADER_KEY}
-acción:
-tipo: permitir
+
+   ```kind: "CDN"
+       version: "1"
+       metadata:
+         envTypes: ["dev", "stage", "prod"]
+       data:
+         trafficFilters:
+           rules:
+             - name: "block-request-from-not-allowed-ips"
+               when:
+                 allOf:
+                   - reqProperty: clientIp
+                     notIn: ["101.41.112.0/24"]
+                    reqProperty: tier
+                     equals: publish
+               action: block
+             - name: "allow-requests-with-header"
+               when:
+                 allOf:
+                   - reqProperty: tier
+                     equals: publish
+                   - reqProperty: path
+                     equals: /screens/channels.json
+                   - reqHeader: x-screens-allowlist-key
+                     equals: $\
+       {CDN_HEADER_KEY}
+               action:
+                 type: allow
+   ```
 
 1. Seleccione **Canales** en la barra de navegación izquierda y haga clic en **abrir en el proveedor de contenido**.
 
