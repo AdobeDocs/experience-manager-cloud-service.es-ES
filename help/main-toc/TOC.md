@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2814a61976d1815e0f0deff2e35ccad4731cfb09
-workflow-type: ht
-source-wordcount: '5160'
-ht-degree: 100%
+source-git-commit: 11624bc35020247494e3ae66c9601c1da505c8bf
+workflow-type: tm+mt
+source-wordcount: '5265'
+ht-degree: 97%
 
 ---
 
@@ -692,13 +692,21 @@ ht-degree: 100%
             + [Utilice Turnstile en un formulario adaptable](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [Agregar un controlador de error personalizado en un formulario adaptable](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Añadir una configuración regional para Formularios adaptables basada en componentes principales](/help/forms/supporting-new-language-localization-core-components.md)
-            + [Creación y uso de funciones personalizadas](/help/forms/create-and-use-custom-functions.md)
-            + [Añadir reglas a un formulario adaptable basado en componentes principales](/help/forms/rule-editor-core-components.md)
             + [Diseño de un esquema JSON para un formulario adaptable (componentes principales)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Añadir versiones, comentarios y anotaciones a un formulario adaptable](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Nuevos formularios adaptables](/help/forms/compare-forms.md)
             + [Convertir formularios adaptables basados en componentes de base a formularios basados en componentes principales mediante la herramienta de utilidad de migración](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [Guardar un formulario adaptable como borrador](/help/forms/save-core-component-based-form-as-draft.md)
+            + Introducción al Editor de reglas para Forms adaptable basado en componentes principales{#rule-editor-core-components}
+               + [Introducción al Editor de reglas para Forms adaptable basado en componentes principales](/help/forms/rule-editor-core-components.md)
+               + [Interfaz de usuario del editor de reglas para Forms adaptable basado en componentes principales](/help/forms/rule-editor-core-components-user-interface.md)
+               + [Diferencia entre el Editor de reglas de base y el Editor de reglas de componentes principales](/help/forms/rule-editor-core-components-difference-tables.md)
+               + [Tipos de operadores y eventos disponibles en el editor de reglas para un formulario adaptable basado en componentes principales](/help/forms/rule-editor-core-components-events-operators.md)
+               + [Ejemplos de un editor de reglas para un formulario adaptable basado en componentes principales](/help/forms/rule-editor-core-components-usecases.md)
+            + Introducción a las funciones personalizadas para Forms adaptable basadas en componentes principales{#create-and-use-custom-function-core-component}
+               + [Introducción a las funciones personalizadas para Forms adaptable basadas en componentes principales](/help/forms/create-and-use-custom-functions.md)
+               + [Crear y utilizar una función personalizada para un formulario adaptable basado en componentes principales](/help/forms/custom-function-core-component-create-function.md)
+               + [Ejemplos de funciones personalizadas para un formulario adaptable basadas en componentes principales](/help/forms/custom-function-core-components-use-cases.md)
       + Componentes de base {#authoring-adaptive-forms-foundation-components}
          + Convertir sus formularios PDF en formularios adaptables {#afcs}
             + [Introducción al servicio de conversión automatizada de formularios](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=es)

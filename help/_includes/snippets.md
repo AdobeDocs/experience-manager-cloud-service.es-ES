@@ -1,8 +1,8 @@
 ---
-source-git-commit: 2acaafab86c0552e63e7b38b2a774c3c6afd6f9c
-workflow-type: ht
-source-wordcount: '564'
-ht-degree: 100%
+source-git-commit: a35556164ace2245577c3e22da1bc276fc3d98d0
+workflow-type: tm+mt
+source-wordcount: '656'
+ht-degree: 85%
 
 ---
 # Fragmentos de código {#snippets}
@@ -117,3 +117,13 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
   <table>
   </tbody>
 
+## Editor de reglas Véase también {#see-also-rule-editor}
+
+* [Introducción al Editor de reglas para Forms adaptable basado en componentes principales](/help/forms/rule-editor-core-components.md)
+* [Tipos de operadores y eventos en el editor de reglas de un formulario adaptable basado en componentes principales](/help/forms/rule-editor-core-components-events-operators.md)
+* [Interfaz de usuario del editor de reglas para Forms adaptable basado en componentes principales](/help/forms/rule-editor-core-components-user-interface.md)
+* [Diferentes casos de uso del Editor de reglas para un formulario adaptable basado en componentes principales](/help/forms/rule-editor-core-components-user-interface.md)
+* [Diferencia en varias ediciones del editor de reglas](/help/forms/rule-editor-core-components-difference-tables.md)
+* [Introducción a las funciones personalizadas para Forms adaptable basadas en componentes principales](/help/forms/create-and-use-custom-functions.md)
+* [Crear una función personalizada para un formulario adaptable basado en componentes principales](/help/forms/custom-function-core-component-create-function.md)
+* [Ejemplos de desarrollo y uso de funciones personalizadas](/help/forms/custom-function-core-components-use-cases.md)
