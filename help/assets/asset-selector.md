@@ -4,7 +4,7 @@ description: Utilice el selector de recursos para buscar y recuperar metadatos y
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: e357dd0b9b2e67d4989a34054737a91743d0933a
+source-git-commit: a2646fa72788cb887066751efb171e92b597f4f5
 workflow-type: tm+mt
 source-wordcount: '4550'
 ht-degree: 36%
@@ -745,7 +745,7 @@ Utilice el siguiente fragmento de código para mostrar el mensaje de mensaje par
 
 El Selector de recursos le permite agregar un filtro de selector de etiquetas. Admite un grupo de etiquetas que combina todas las etiquetas relevantes con un grupo de etiquetado concreto. Además, le permite seleccionar etiquetas adicionales correspondientes al recurso que está buscando. Además, también puede establecer los grupos de etiquetas predeterminados en el filtro de invocación contextual que utiliza principalmente para que le sean accesibles en sus desplazamientos.
 
-> 
+>
 >
 > * Se debe añadir un fragmento de código de invocación contextual para habilitar el filtro de etiquetado en la búsqueda.
 > * Es obligatorio usar la propiedad name correspondiente al tipo de grupo de etiquetas `(property=xcm:keywords.id=)`.
