@@ -2,7 +2,8 @@
 title: Restringir la entrega de recursos en Experience Manager
 description: Obtenga información sobre cómo restringir la entrega de recursos en  [!DNL Experience Manager].
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
+source-git-commit: 16b313a4fb79f915613044d12d29e618209113ec
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 0%
@@ -19,7 +20,7 @@ Los usuarios [que buscan](search-assets-api.md) o que utilizan [URL de envío](d
 
 ## Envío restringido mediante un token de IMS {#restrict-delivery-ims-token}
 
-En Experience Manager, la entrega restringida a través de IMS implica dos etapas clave:
+En Experience Manager Assets, la entrega restringida a través de IMS implica dos etapas clave:
 
 * Creación
 * Entrega
@@ -43,7 +44,7 @@ Si el campo no está disponible, siga estos pasos para agregar el campo:
       1. Actualice el **[!UICONTROL mapa a la propiedad]** a _./jcr:content/metadata/dam:roles_.
 
 1. Obtenga los grupos de IMS que se agregarán en los metadatos de funciones del recurso. Para recuperar los grupos de IMS, siga estos pasos:
-   1. Inicie sesión en https://adminconsole.adobe.com/.
+   1. Iniciar sesión a las `https://adminconsole.adobe.com/.`
    1. Vaya a su organización respectiva y navegue hasta **[!UICONTROL Grupos de usuarios]**.
    1. Seleccione el **[!UICONTROL grupo de usuarios]** que necesita agregar y extraiga **[!UICONTROL orgID]** y **[!UICONTROL userGroupID]** de la URL o use su identificador de organización como `{orgID}@AdobeOrg:{usergroupID}`.
 
