@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 7a0e40f53eb3bb84c973ec3e28c7edcd8c847e25
 workflow-type: tm+mt
 source-wordcount: '5270'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -697,16 +697,16 @@ ht-degree: 97%
             + [Nuevos formularios adaptables](/help/forms/compare-forms.md)
             + [Convertir formularios adaptables basados en componentes de base a formularios basados en componentes principales mediante la herramienta de utilidad de migración](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [Guardar un formulario adaptable como borrador](/help/forms/save-core-component-based-form-as-draft.md)
-            + Introducción al Editor de reglas para Forms adaptable basado en componentes principales{#rule-editor-core-components}
-               + [Introducción al Editor de reglas para Forms adaptable basado en componentes principales](/help/forms/rule-editor-core-components.md)
-               + [Interfaz de usuario del editor de reglas para Forms adaptable basado en componentes principales](/help/forms/rule-editor-core-components-user-interface.md)
+            + Introducción al Editor de reglas para formularios adaptables basados en componentes principales{#rule-editor-core-components}
+               + [Introducción al Editor de reglas para formularios adaptables basados en componentes principales](/help/forms/rule-editor-core-components.md)
+               + [Interfaz de usuario del Editor de reglas para formularios adaptables basados en componentes principales](/help/forms/rule-editor-core-components-user-interface.md)
                + [Diferencia entre el Editor de reglas de base y el Editor de reglas de componentes principales](/help/forms/rule-editor-core-components-difference-tables.md)
                + [Tipos de operadores y eventos disponibles en el editor de reglas para un formulario adaptable basado en componentes principales](/help/forms/rule-editor-core-components-events-operators.md)
-               + [Ejemplos de un editor de reglas para un formulario adaptable basado en componentes principales](/help/forms/rule-editor-core-components-usecases.md)
-            + Introducción a las funciones personalizadas para Forms adaptable basadas en componentes principales{#create-and-use-custom-function-core-component}
-               + [Introducción a las funciones personalizadas para Forms adaptable basadas en componentes principales](/help/forms/create-and-use-custom-functions.md)
-               + [Crear y utilizar una función personalizada para un formulario adaptable basado en componentes principales](/help/forms/custom-function-core-component-create-function.md)
-               + [Ejemplos de funciones personalizadas para un formulario adaptable basadas en componentes principales](/help/forms/custom-function-core-components-use-cases.md)
+               + [Ejemplos de un Editor de reglas para un formulario adaptable basado en componentes principales](/help/forms/rule-editor-core-components-usecases.md)
+            + Introducción a las funciones personalizadas para formularios adaptables basados en componentes principales{#create-and-use-custom-function-core-component}
+               + [Introducción a las funciones personalizadas para formularios adaptables basados en componentes principales](/help/forms/create-and-use-custom-functions.md)
+               + [Crear y utilizar una función personalizada para un Formulario adaptable basado en componentes principales](/help/forms/custom-function-core-component-create-function.md)
+               + [Ejemplos de funciones personalizadas para un formulario adaptable basado en componentes principales](/help/forms/custom-function-core-components-use-cases.md)
       + Componentes de base {#authoring-adaptive-forms-foundation-components}
          + Convertir sus formularios PDF en formularios adaptables {#afcs}
             + [Introducción al servicio de conversión automatizada de formularios](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=es)
