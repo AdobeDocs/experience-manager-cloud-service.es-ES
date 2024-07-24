@@ -5,9 +5,9 @@ feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
 source-git-commit: 12e19fe771c0b70ec471949944141f4d6858cbfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '633'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -22,24 +22,24 @@ Esta página documenta las notas de la versión 2024.7.0 para Cloud Manager en A
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de Cloud Manager 2024.7.0 en AEM as a Cloud Service es el 18 de julio de 2024. La próxima versión está planificada para el 8 de agosto de 2024.
+La fecha de lanzamiento de Cloud Manager versión 2024.7.0 en AEM as a Cloud Service es el 18 de julio de 2024. La próxima versión está planificada para el 8 de agosto de 2024.
 
 ## Novedades {#what-is-new}
 
 * La [canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline) y la [canalización que no es de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline) activan **Cambios en Git** para iniciar la canalización en una confirmación y están disponibles para [repositorios privados.](/help/implementing/cloud-manager/managing-code/private-repositories.md)
    * Esto se implementará gradualmente y se completará a mediados de agosto.
-* Al agregar un certificado DV administrado por Adobe [1}, ahora puede agregar un único certificado que cubre varios dominios, en lugar de crear un certificado para cada dominio.](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)
-* Ahora se pueden agregar a un programa soluciones que no tengan [regiones de publicación adicionales](/help/operations/additional-publish-regions.md) siempre que el programa tenga al menos una solución de Sites o Forms que se aplique a él.
-* Las soluciones que no tienen [99,99% de SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) ahora se pueden agregar a un programa siempre y cuando el programa tenga al menos una solución de Sites o Forms que se aplique a él.
-* El [Panel de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-dashboard.md) se ha mejorado de varias maneras.
-   * Las auditorías ahora se ejecutan en `.com` extremos a través de CDN, reemplazando el enfoque `.net` anterior.
+* Al añadir un [certificado DV administrado por Adobe, ](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) ahora puede añadir un único certificado que cubre varios dominios, en lugar de crear un certificado para cada dominio.
+* Ahora se pueden añadir a un programa soluciones que no tengan [regiones de publicación adicionales](/help/operations/additional-publish-regions.md) siempre que el programa tenga al menos una solución de Sites o Forms que se aplique a él.
+* Las soluciones que no tienen [SLA al 99,99 %](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) se pueden añadir ahora a un programa siempre y cuando el programa tenga al menos una solución de Sites o Forms que se le aplique.
+* El [Tablero de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-dashboard.md) se ha mejorado de varias maneras.
+   * Las auditorías ahora se ejecutan en puntos finales `.com` a través de CDN, reemplazando el enfoque `.net` anterior.
       * Este cambio simula las experiencias de los usuarios reales de forma más precisa y le ayuda a tomar decisiones más informadas sobre la administración y la optimización de su sitio web.
    * Se han realizado varias mejoras en la IU de auditoría de experiencias, como las siguientes:
-      * Se ha añadido una vista de tendencias de rendimiento, prácticas recomendadas, SEO y accesibilidad.
-      * El vínculo Informe sin procesar de Lighthouse ahora está visible de forma más intuitiva, directamente en el panel de detalles de instantánea de análisis.
+      * Se ha añadido una vista de tendencias del rendimiento, prácticas recomendadas, SEO y accesibilidad.
+      * El vínculo del informe sin procesar de Lighthouse ahora está visible de forma más intuitiva, directamente en el panel de detalles de instantánea de análisis.
       * Se ha mejorado la sección de recomendaciones de Lighthouse.
-   * La métrica PWA se eliminó de acuerdo con la versión 12.0.0 de Lighthouse, que eliminó esta métrica.
-* AEM [El tipo de archivo del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) se ha actualizado a [versión 49.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
+   * La métrica PWA se ha eliminado de acuerdo con la versión 12.0.0 de Lighthouse, que eliminó esta métrica.
+* [El Arquetipo del proyecto de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) se ha actualizado a la [versión 49.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
 
 ## Programa para primeros usuarios {#early-adoption}
 
