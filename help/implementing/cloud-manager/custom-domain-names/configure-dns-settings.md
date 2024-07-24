@@ -1,30 +1,35 @@
 ---
 title: Configuración de DNS
-description: Obtenga información sobre cómo configurar DNS para los nombres de dominio personalizados.
+description: Obtenga información sobre cómo configurar DNS para que sus nombres de dominio personalizados permitan que su sitio sirva a los visitantes.
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 92%
+source-wordcount: '416'
+ht-degree: 49%
 
 ---
 
+
 # Configuración de DNS {#configure-dns}
 
-Una vez que el nombre de dominio personalizado se haya verificado e implementado correctamente, podrá actualizar los registros DNS del nombre de dominio personalizado con el proveedor DNS. Al hacerlo, el sitio puede servir a los visitantes. Por lo tanto, esta actividad se suele realizar antes de activarse.
+Una vez que el nombre de dominio personalizado se haya [verificado e implementado correctamente](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md), estará listo para actualizar los registros DNS del nombre de dominio personalizado con el proveedor DNS. Al hacerlo, el sitio puede servir a los visitantes. Por lo tanto, esta actividad se suele realizar antes de activarse.
 
 ## ¿Qué es la configuración de DNS? {#dns-settings}
 
 Un registro `CNAME` o A, una vez aprovisionado, enrutará todo el tráfico de Internet para el dominio a donde señale. Se produce una interrupción si esa ubicación no está preparada para abastecer el tráfico. Si no se ha probado, puede haber errores en el contenido. Esta es la razón por la que este paso siempre se realiza una vez finalizada la prueba y está listo para su lanzamiento.
 
-Para configurar estos ajustes, debe determinar si un registro `CNAME` o Apex debe configurarse para que apunte su nombre de dominio personalizado al nombre de dominio de Cloud Manager. Las siguientes secciones le ayudarán a determinar qué tipo de registro es apropiado para su configuración de DNS.
+Para establecer esta configuración, debe determinar si se debe configurar un registro `CNAME` o Apex para que apunte el nombre de dominio personalizado al nombre de dominio de Cloud Manager. Las siguientes secciones de este documento le ayudarán a determinar qué tipo de registro es apropiado para su configuración de DNS.
 
->[!NOTE]
->
->Usted o la persona adecuada de su organización deben poder iniciar sesión o ponerse en contacto con su proveedor de DNS (la empresa desde la que compró el dominio) y realizar actualizaciones en la configuración de DNS.
+## Requisitos  {#requirements}
+
+Debe cumplir estos requisitos antes de configurar los registros DNS.
+
+* Debe identificar su host de dominio o registrador si aún no lo conoce.
+* Debe poder editar los registros DNS del dominio de su organización o ponerse en contacto con la persona adecuada que pueda hacerlo.
+* Ya debe haber comprobado el nombre de dominio personalizado configurado tal como se describe en el documento [Comprobación del estado del nombre de dominio.](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
 
 ## Registro CNAME {#cname-record}
 
@@ -51,3 +56,7 @@ Agregue los siguientes `A` registros a la configuración DNS de su dominio a tra
 * `A record for domain @ pointing to IP 151.101.131.10`
 
 * `A record for domain @ pointing to IP 151.101.195.10`
+
+## Siguientes pasos {#next-steps}
+
+Una vez configurados los registros DNS para el nombre de dominio personalizado, deberá comprobar esa configuración en Cloud Manager. Continúe con el documento [Comprobando el estado del registro DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) para finalizar su nombre de dominio personalizado.
