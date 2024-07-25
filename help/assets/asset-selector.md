@@ -4,9 +4,9 @@ description: Utilice el selector de recursos para buscar y recuperar metadatos y
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: a2646fa72788cb887066751efb171e92b597f4f5
+source-git-commit: 04560cd5b15ceb79b6a480c60e78e061276a39eb
 workflow-type: tm+mt
-source-wordcount: '4550'
+source-wordcount: '4561'
 ht-degree: 36%
 
 ---
@@ -424,8 +424,7 @@ Puede utilizar las propiedades del Selector de recursos para personalizar la for
 | *dialogSize* | adquisición en pequeña, mediana, grande, pantalla completa o pantalla completa | Cadena | Opcional | Puede controlar el diseño especificando su tamaño con las opciones dadas. |
 | *colorScheme* | Claro u oscuro | No | | Esta propiedad se utiliza para establecer la temática de una aplicación Selector de recursos. Puede elegir entre tema claro u oscuro. |
 | *filterRepoList* | Función | No |  | Puede utilizar la función de devolución de llamada `filterRepoList` que llama al repositorio Experience Manager y devuelve una lista filtrada de repositorios. |
-| *getExpiryStatus* | Función | No | | Proporciona el estado de un recurso caducado. La función devuelve `EXPIRED`, `EXPIRING_SOON` o `NOT_EXPIRED` según la fecha de caducidad del recurso que proporcione. Consulte [personalizar recursos caducados](#customize-expired-assets). |
-| *allowSelectionAndDrag* | Booleano | No | Falso | El valor de la función puede ser `true` o `false`. Cuando el valor se establece en `false`, el recurso caducado no se puede seleccionar ni arrastrar al lienzo. |
+| *expiryOptions* | Función | | | Puede usar entre las dos propiedades siguientes: **getExpiryStatus**, que proporciona el estado de un recurso caducado. La función devuelve `EXPIRED`, `EXPIRING_SOON` o `NOT_EXPIRED` según la fecha de caducidad del recurso que proporcione. Consulte [personalizar recursos caducados](#customize-expired-assets). Además, puede usar **allowSelectionAndDrag**, en el que el valor de la función puede ser `true` o `false`. Cuando el valor se establece en `false`, el recurso caducado no se puede seleccionar ni arrastrar al lienzo. |
 | *showToast* | | No | | Permite que el Selector de recursos muestre un mensaje de mensaje personalizado para el recurso caducado. |
 <!--
 | *expirationDate* | Function | No | | This function is used to set the usability period of an asset. |
