@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 780c68f0c21ef94ff6a73ce991370100b1a88db9
+source-git-commit: 8585ec309b04e04b9a8dcaa43063369d1c9d5d24
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1174'
 ht-degree: 65%
 
 ---
@@ -91,8 +91,6 @@ Aunque puede lograr la mayoría de los casos de uso utilizando cualquier constru
 * Si una regla comprueba la existencia de una condición y realiza una acción inmediatamente al proporcionar un valor en un campo o al salir de un campo, se recomienda escribir una regla con una construcción condición-acción o el tipo de regla When en el campo en el que se evalúa la condición.
 * La condición de la regla When se evalúa cuando un usuario cambia el valor del objeto en el que se aplica dicha regla. Sin embargo, si desea que la acción se active cuando el valor cambia en el servidor, como para rellenar previamente el valor, se recomienda escribir una regla When que active la acción cuando el campo se inicialice.
 * Al escribir reglas para objetos de menús desplegables, botones de opción o casillas de verificación, las opciones o los valores de estos objetos de formulario en el mismo se rellenan previamente en el editor de reglas.
-
-## Siguiente paso
 
 Para comprender cómo usar la interfaz de usuario para escribir y administrar reglas en un editor de reglas, consulte el artículo [Interfaz de usuario del editor de reglas para Forms adaptable basado en componentes principales](/help/forms/rule-editor-core-components-user-interface.md).
 

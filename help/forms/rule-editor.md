@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
 workflow-type: tm+mt
 source-wordcount: '6492'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -561,7 +561,7 @@ Incluir una etiqueta `jsdoc` es obligatorio:
 * Si desea una configuración y descripción personalizadas.
 * Porque hay varias formas de declarar una función en `JavaScript,` y los comentarios permiten realizar un seguimiento de las funciones.
 
-El editor de reglas admite la sintaxis de JavaScript ES2015 para scripts y funciones personalizadas. 
+El editor de reglas admite la sintaxis de JavaScript ES5 para scripts y funciones personalizadas.
 Para obtener más información, consulte [jsdoc.app](https://jsdoc.app/).
 
 Etiquetas `jsdoc` compatibles:

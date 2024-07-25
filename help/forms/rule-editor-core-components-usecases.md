@@ -4,13 +4,13 @@ description: El artículo describe varios casos de uso para un editor de reglas 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: c600af3f2e866483cda2426e188dbc104b07688e
+exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
+source-git-commit: 34be2ca89433e36a68e7d8eae42c6bd9ad6e623f
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 61%
+source-wordcount: '1125'
+ht-degree: 58%
 
 ---
-
 
 # Diferentes casos de uso del Editor de reglas
 
@@ -18,9 +18,10 @@ El artículo proporciona ejemplos detallados del Editor de reglas para un formul
 Ahora, analicemos las diferentes implementaciones de un editor de reglas.
 
 
-## Optimización de cálculos complejos en paneles repetibles con funciones integradas
+## Optimización de cálculos complejos en paneles repetibles con funciones
 
-El editor de reglas permite utilizar funciones integradas, como Suma, Mín, Máx y Unir, directamente en los campos de los paneles repetibles. Esto desbloquea una potente automatización, lo que le permite implementar una lógica empresarial compleja sin código personalizado.
+El editor de reglas permite utilizar funciones integradas, como Suma, Mín, Máx y Unir, directamente en los campos de los paneles repetibles. También puede pasar un valor de campo de panel repetible a la función que acepte matriz de números, matriz de cadenas, matriz booleana, etc. Esto desbloquea una potente automatización, lo que le permite implementar una lógica empresarial compleja sin código personalizado.
+
 Imagine un formulario con un panel repetible, donde cada instancia del panel recopila información sobre el valor declarado de los recursos.
 
 ![Formulario repetible](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
@@ -32,6 +33,10 @@ Puede usar la función `Sum` para calcular automáticamente el valor de los recu
 Cuando rellena un formulario y agrega instancias para declarar los valores de los recursos, el botón `Calculate Asset Value` calcula la suma total de todos los valores de recursos declarados y muestra el resultado en el cuadro de texto total de `assetvalue`.
 
 ![Compatibilidad con campos de panel repetibles en funciones OOTB](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
+
+>[!NOTE]
+>
+> Si el valor del campo del panel repetible se pasa a una función que no acepta una matriz, el valor del campo de la última instancia del panel repetible se pasa a la función.
 
 ¡Este es solo un ejemplo! Explore las [funciones](#b-form-objects-and-functions-br) disponibles para simplificar los flujos de trabajo y mejorar la precisión de los datos en los formularios.
 

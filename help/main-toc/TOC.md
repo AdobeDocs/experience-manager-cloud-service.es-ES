@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 83cf953853c88c1f4b7149bc63c7f07b1e73faf3
+source-git-commit: f6b4ca55d69de3bb20e2232dbc29d1aadae2cd10
 workflow-type: tm+mt
-source-wordcount: '5283'
+source-wordcount: '5297'
 ht-degree: 99%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 99%
    + Notas de la versión de la funcionalidad AEMaaCS {#release-notes}
       + [Notas de la versión actual](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
+         + [Notas de la versión para 2024.6.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-6-0.md)
          + [Notas de la versión 2024.5.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-5-0.md)
          + [Notas de la versión 2024.4.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-4-0.md)
          + [Notas de la versión para 2024.3.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
@@ -686,6 +687,7 @@ ht-degree: 99%
             + [Envío de un formulario adaptable a Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Envío de un formulario adaptable a Microsoft](/help/forms/configure-submit-action-onedrive.md)
             + [Conectar un formulario adaptable a Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+            + [Configuración del sitio de SharePoint con acceso limitado mediante el ámbito de autorización](/help/forms/configure-sharepoint-site-limited-access.md)
             + [Integración del formulario adaptable de AEM con el flujo de trabajo de AEM](/help/forms/configure-submit-action-workflow.md)
             + [Configuración de la acción de envío Enviar a punto final REST para formularios adaptables](/help/forms/configure-submit-action-restpoint.md)
             + [Configuración de la acción de envío Enviar correo electrónico para un formulario adaptable](/help/forms/configure-submit-action-send-email.md)

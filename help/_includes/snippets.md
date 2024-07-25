@@ -1,8 +1,8 @@
 ---
-source-git-commit: a35556164ace2245577c3e22da1bc276fc3d98d0
-workflow-type: ht
-source-wordcount: '656'
-ht-degree: 100%
+source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
+workflow-type: tm+mt
+source-wordcount: '662'
+ht-degree: 98%
 
 ---
 # Fragmentos de código {#snippets}
@@ -100,7 +100,7 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
    </tr>
    <tr>
     <td>Compatibilidad con ES10 </td>
-    <td>ES10 aún no es compatible. </td>
+    <td>ES10 aún no es compatible. Solo admite funciones de JavaScript ES5. </td>
     <td>Compatibilidad con funciones modernas de JavaScript, como las funciones let y arrow (compatibilidad con ES10) dentro de funciones personalizadas. 
    </td>
    </tr>
