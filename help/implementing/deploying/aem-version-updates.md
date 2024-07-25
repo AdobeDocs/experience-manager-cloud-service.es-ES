@@ -4,10 +4,10 @@ description: Descubra cómo el as a Cloud Service de Adobe Experience Manager AE
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 73fac04561f43a4053e1694da9e096a2ecbc1484
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +33,7 @@ AEM A través de NIMU, el cliente puede utilizar la canalización en cualquier m
 #### Actualizar actividades
 
 AEM La versión actual de la interfaz de usuario aún se puede comprobar para cada entorno, como antes, mediante el panel Entornos de la interfaz de usuario de Cloud Manager. Las actualizaciones de mantenimiento no intrusivas utilizan las mismas puertas de calidad que se utilizan en la canalización, incluidas las pruebas escritas por el cliente.
-Se enviará una notificación de la interfaz de usuario de Cloud Manager cada vez que se aplique una actualización de mantenimiento no intrusiva a los entornos del programa. Puede configurarlo para que también se envíe a su correo electrónico.
+Se enviará una [notificación de la interfaz de usuario de Cloud Manager](/help/implementing/cloud-manager/notifications.md) cada vez que se aplique una actualización de mantenimiento no intrusiva a los entornos de su programa. Puede configurarlo para que también se envíe a su correo electrónico.
 
 >[!NOTE]
 >
@@ -102,3 +102,11 @@ Normalmente, las actualizaciones no implican ningún tiempo de inactividad, incl
 AEM Esta función permite a los usuarios hacer referencia a varios repositorios de forma simultánea. AEM En una [implementación móvil](/help/implementing/deploying/overview.md#how-rolling-deployments-work), la nueva versión de la aplicación contiene su propio `/libs` (el repositorio inmutable basado en TarMK). AEM Es distinto de la versión de la versión anterior, aunque ambos hacen referencia a un repositorio mutable compartido basado en DocumentMK que contiene áreas como `/content` , `/conf` , `/etc` y otras.
 
 Dado que tanto la versión antigua como la nueva tienen sus propias versiones de `/libs`, ambas pueden estar activas durante la actualización móvil. Y, ambos pueden asumir el tráfico hasta que el antiguo sea completamente reemplazado por el nuevo.
+
+## Información adicional {#further-information}
+
+Para obtener más información sobre temas relacionados:
+
+* [Canalizaciones de CI/CD de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+* [Notificación de IU de Cloud Manager](/help/implementing/cloud-manager/notifications.md)
+* [la arquitectura de Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md)
