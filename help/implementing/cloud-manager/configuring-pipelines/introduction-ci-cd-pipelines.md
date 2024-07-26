@@ -6,10 +6,10 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 585c934465215c48b9441a95c03e4c116859103e
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 89%
+source-wordcount: '1500'
+ht-degree: 84%
 
 ---
 
@@ -56,7 +56,8 @@ Una canalización que no es de producción sirve principalmente para ejecutar an
 Además de la producción y la no producción, las canalizaciones pueden diferenciarse por el tipo de código que implementan.
 
 * **[Canalizaciones de pila completa](#full-stack-pipeline)**: Implementan simultáneamente generaciones de código back-end y front-end que contienen una o más aplicaciones de servidor de AEM junto con configuraciones de HTTPD/Dispatcher
-* **[Canalizaciones de configuración](#config-deployment-pipeline)**: configure e implemente reglas de filtro de tráfico, incluidas las reglas WAF, en cuestión de minutos
+* **[Canalizaciones de configuración](#config-deployment-pipeline)**: Implemente rápidamente configuraciones para funciones como reenvío de registros, tareas de mantenimiento relacionadas con la depuración y varias configuraciones de CDN, como reglas de filtro de tráfico (incluidas las reglas de WAF), transformaciones de solicitud y respuesta, selectores de origen, redirecciones del lado del cliente, páginas de error, claves de CDN administradas por el cliente, claves de API de depuración y autenticación básica.
+   * Consulte el documento [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md) para obtener más información.
 * **[Canalizaciones front-end](#front-end)**: Implementan generaciones de código front-end que contienen una o más aplicaciones de interfaz de usuario del lado del cliente.
 * **[Canalizaciones de configuración de nivel web](#web-tier-config-pipelines)**: Implementan las configuraciones de HTTPD/Dispatcher
 
@@ -71,11 +72,10 @@ La siguiente tabla resume las canalizaciones disponibles en Cloud Manager y sus 
 | Producción o no producción | Implementación | De pila completa | Implementa simultáneamente generaciones de código de back-end y front-end junto con configuraciones de HTTPD/Dispatcher | Cuando el código front-end debe implementarse simultáneamente con el código de servidor de AEM.<br>Cuando todavía no se han adoptado canalizaciones front-end o canalizaciones de configuración de nivel web. |
 | Producción o no producción | Implementación | Front-End | Implementa la generación de código front-end que contiene una o más aplicaciones de interfaz de usuario del lado del cliente | Admite varias canalizaciones front-end simultáneas<br>Mucho más rápido que las implementaciones de pila completa |
 | Producción o no producción | Implementación | Configuración de nivel web | Implementa configuraciones de HTTPD/Dispatcher | Implementa en minutos |
-| Producción o no producción | Implementación | Configuración | Implementa reglas de filtrado de tráfico | Implementa en minutos |
+| Producción o no producción | Implementación | Configuración | Implementa la configuración [para una serie de características](/help/operations/config-pipeline.md) relacionadas con la red de distribución de contenido (CDN), el reenvío de registros y la depuración de tareas de mantenimiento | Implementa en minutos |
 | No producción | Calidad del código | De pila completa | Ejecuta el análisis de calidad del código en código de pila completa sin una implementación | Admite varias canalizaciones |
 | No producción | Calidad del código | Front-End | Ejecuta análisis de calidad del código en el código front-end sin una implementación | Admite varias canalizaciones |
 | No producción | Calidad del código | Configuración de nivel web | Ejecuta análisis de calidad del código en configuraciones de Dispatcher sin una implementación | Admite varias canalizaciones |
-| No producción | Calidad del código | Configuración | Implementa reglas de filtrado de tráfico |  |
 
 El siguiente diagrama ilustra las configuraciones de canalización de Cloud Manager con repositorios front-end tradicionales, únicos o independientes.
 
@@ -116,9 +116,9 @@ Para aprender a configurar canalizaciones de pila completa, consulte los siguien
 
 ## Configurar canalizaciones {#config-deployment-pipeline}
 
-Con una canalización de configuración, puede configurar e implementar reglas de filtro de tráfico, incluidas las reglas WAF, en cuestión de minutos.
+Con una canalización de configuración puede implementar rápidamente configuraciones para el reenvío de registros, tareas de mantenimiento relacionadas con la depuración y varias configuraciones de CDN, como reglas de filtro de tráfico (incluidas las reglas de WAF), transformaciones de solicitud y respuesta, selectores de origen, redirecciones del lado del cliente, páginas de error, claves CDN administradas por el cliente, claves API de depuración y autenticación básica.
 
-Consulte [Reglas de filtro de tráfico, incluidas las reglas WAF](/help/security/traffic-filter-rules-including-waf.md), para obtener información sobre cómo administrar las configuraciones en el repositorio de modo que se implementen correctamente.
+Consulte el documento [Uso de canalizaciones de configuración](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) para obtener una lista completa de las funciones admitidas y para aprender a administrar las configuraciones en el repositorio de modo que se implementen correctamente.
 
 ### Configuración de canalizaciones de configuración {#configure-config-deployment}
 

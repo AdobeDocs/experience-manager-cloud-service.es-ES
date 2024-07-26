@@ -4,10 +4,10 @@ description: Aproveche el Centro de Acciones para actuar convenientemente sobre 
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 7630481aab89b31057509f23aab334e17c537257
+source-git-commit: 22d5975a0c4ee180bbcda906b035d306a352b752
 workflow-type: tm+mt
-source-wordcount: '988'
-ht-degree: 55%
+source-wordcount: '1045'
+ht-degree: 53%
 
 ---
 
@@ -76,6 +76,7 @@ En la tabla siguiente se enumeran los tipos de notificación admitidos actualmen
 | Cola de replicación bloqueada | Problema | Desbloquear la cola siguiendo las instrucciones de la [Documentación de replicación](/help/operations/replication.md#troubleshooting) |
 | Consulta GraphQL persistente no válida | Problema | Corrija la consulta de GraphQL no válida haciendo referencia a la [documentación de solución de problemas de consultas de GraphQL persistentes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
 | Pico de tráfico en origen | Problema | Protect define su origen mediante la configuración de reglas de filtro de tráfico de límite de velocidad que aplican umbrales inferiores a los del pico de tráfico predeterminado en la alerta de déclencheur.  Consulte la sección [Bloqueo de ataques DoS y DDoS mediante reglas de tráfico](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) de la documentación Reglas de filtro de tráfico, que hace referencia a un tutorial. |
+| Reglas de filtros de tráfico de CDN activadas | Problema | Si la regla de filtro de tráfico coincidente refleja un ataque y el sitio no está bloqueando ese tráfico, proteja el sitio configurando una regla de filtro de tráfico en modo de bloqueo. Consulte la sección [Protección de sitios web con reglas de filtro de tráfico (incluidas las reglas de WAF)](/help/security/traffic-filter-rules-including-waf.md#tutorial-protecting-websites) de la documentación Reglas de filtro de tráfico, que hace referencia a un tutorial. |
 | Las páginas contienen un gran número de nodos | Proactivo | Reduzca el número total de nodos dentro de una página. Consulte [Documentación de complejidad de la página](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | |
 | Gran número de instancias de flujo de trabajo en ejecución | Proactivo | Finalice los flujos de trabajo en ejecución que ya no sean necesarios. Aprenda a [configurar un trabajo de depuración](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance) |               |
 | Certificado S2S caducado | Proactivo | Obtenga información sobre cómo actualizar una credencial en la [documentación de Generación de tokens de acceso para las API del lado del servidor](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) | Recuento alto de conexiones | Proactivo | Obtenga información acerca de la agrupación de conexiones en [agrupación de conexiones junto con la documentación de redes avanzadas](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |

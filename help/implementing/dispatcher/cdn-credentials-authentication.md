@@ -4,26 +4,25 @@ description: Obtenga información sobre cómo configurar las credenciales y la a
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 73d0a4a73a3e97a91b2276c86d3ed1324de8c361
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 4%
+source-wordcount: '1271'
+ht-degree: 2%
 
 ---
 
+
 # Configuración de las credenciales y la autenticación de CDN {#cdn-credentials-authentication}
 
->[!NOTE]
->Esta función aún no está disponible de forma general. Para unirse al programa de adopción anticipada, envíe un correo electrónico a `aemcs-cdn-config-adopter@adobe.com`.
+La CDN proporcionada por la Adobe tiene varias funciones y servicios, algunos de los cuales dependen de las credenciales y la autenticación para garantizar un nivel adecuado de seguridad empresarial. Al declarar reglas en un archivo de configuración implementado mediante la canalización de configuración [config de Cloud Manager,](/help/operations/config-pipeline.md) los clientes pueden configurar, en forma de autoservicio, lo siguiente:
 
-La CDN proporcionada por la Adobe tiene varias funciones y servicios, algunos de los cuales dependen de las credenciales y la autenticación para garantizar un nivel adecuado de seguridad empresarial. Al declarar reglas en un archivo de configuración implementado mediante la [Canalización de configuración de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline), los clientes pueden configurar, en forma de autoservicio, lo siguiente:
-
-* Valor del encabezado HTTP utilizado por la CDN de Adobe para validar solicitudes procedentes de una CDN administrada por el cliente.
+* AEM El valor del encabezado HTTP X--Edge-Key utilizado por la CDN de Adobe para validar solicitudes procedentes de una CDN administrada por el cliente.
 * El token de API utilizado para purgar recursos en la caché de CDN.
-* Una lista de combinaciones de nombre de usuario y contraseña que pueden acceder al contenido restringido enviando un formulario de autenticación básica.
+* Una lista de combinaciones de nombre de usuario y contraseña que pueden acceder al contenido restringido enviando un formulario de autenticación básica. [Esta característica está disponible para los usuarios que la adoptaron por primera vez.](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter)
 
+Cada uno de ellos, incluida la sintaxis de configuración, se describe en su propia sección a continuación.
 
-Cada uno de ellos, incluida la sintaxis de configuración, se describe en su propia sección a continuación. La sección [Configuración común](#common-setup) ilustra la configuración común a ambas, así como a la implementación. Finalmente, hay una sección sobre cómo [rotar claves](#rotating-secrets), lo cual se considera una buena práctica de seguridad.
+Hay una sección sobre cómo [rotar claves](#rotating-secrets), lo cual es una buena práctica de seguridad.
 
 ## Valor del encabezado HTTP de CDN administrado por el cliente {#CDN-HTTP-value}
 
@@ -31,7 +30,9 @@ Como se describe en la página [CDN en AEM as a Cloud Service](/help/implementin
 
 Como parte de la configuración, la CDN de Adobe y la CDN del cliente deben acordar un valor del encabezado HTTP `X-AEM-Edge-Key`. Este valor se establece en cada solicitud, en la red de distribución de contenido (CDN) del cliente, antes de enrutarse a la red de distribución de contenido (CDN) de Adobe AEM, la cual valida que el valor es el esperado, de modo que puede confiar en otros encabezados HTTP, incluidos los que ayudan a enrutar la solicitud a la red de distribución de contenido (CDN) adecuada.
 
-El valor `X-AEM-Edge-Key` se declara con la sintaxis siguiente, con los valores reales a los que hacen referencia las propiedades edgeKey1 y edgeKey2. Consulte la sección [Configuración común](#common-setup) para obtener información sobre cómo implementar la configuración.
+AEM Las propiedades `edgeKey1` y `edgeKey2` de un archivo con el nombre `cdn.yaml` o similar, en algún lugar de una carpeta de nivel superior `config`, hacen referencia al valor *X--Edge-Key*. Lea el [artículo de la canalización de configuración](/help/operations/config-pipeline.md#folder-structure) para obtener detalles acerca de la estructura de carpetas y cómo implementar la configuración.
+
+La sintaxis se describe a continuación:
 
 ```
 kind: "CDN"
@@ -39,7 +40,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_authentication:
+  authentication:
     authenticators:
       - name: edge-auth
         type: edge
@@ -53,15 +54,16 @@ data:
           authenticator: edge-auth
 ```
 
-La sintaxis del valor `X-AEM-Edge-Key` incluye:
+Consulte el [artículo de la canalización de configuración](/help/operations/config-pipeline.md#common-syntax) para obtener una descripción de las propiedades encima del nodo `data`. El valor de la propiedad `kind` debe ser *CDN* y la propiedad `version` debe establecerse en `1`.
 
-* Tipo, versión y metadatos.
-* Nodo de datos que contiene un nodo `experimental_authentication` secundario (el prefijo experimental se quitará cuando se libere la característica).
-* En `experimental_authentication`, un nodo `authenticators` y un nodo `rules`, ambos son matrices.
+Entre las propiedades adicionales se incluyen:
+
+* Nodo `Data` que contiene un nodo `authentication` secundario.
+* En `authentication`, un nodo `authenticators` y un nodo `rules`, ambos son matrices.
 * Autenticadores: Permite declarar un tipo de token o credencial, que en este caso es una clave perimetral. Incluye las siguientes propiedades:
    * name: una cadena descriptiva.
    * type: debe ser `edge`.
-   * AEM edgeKey1: el valor de *X--Edge-Key*, que debe hacer referencia a un token secreto, que no debería almacenarse en Git, sino que debería declararse como [variable de entorno de Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) de tipo secreto. En el campo Servicio aplicado, seleccione Todo. Se recomienda que el valor (por ejemplo,`${{CDN_EDGEKEY_052824}}`) refleje el día en que se agregó.
+   * AEM edgeKey1: el valor de *X--Edge-Key*, que debe hacer referencia a una [variable de entorno de tipo secreto Cloud Manager](/help/operations/config-pipeline.md#secret-env-vars). En el campo Servicio aplicado, seleccione Todo. Se recomienda que el valor (por ejemplo,`${{CDN_EDGEKEY_052824}}`) refleje el día en que se agregó.
    * edgeKey2: se usa para la rotación de secretos, que se describe en la [sección de rotación de secretos](#rotating-secrets) a continuación. Definirlo de manera similar a edgeKey1. Se debe declarar al menos uno de `edgeKey1` y `edgeKey2`.
 <!--   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration. -->
 * Reglas: le permite declarar cuál de los autenticadores debe utilizarse y si es para el nivel de publicación o vista previa.  Incluye:
@@ -70,11 +72,13 @@ La sintaxis del valor `X-AEM-Edge-Key` incluye:
    * action: debe especificar &quot;authentication&quot;, con referencia al autenticador deseado.
 
 >[!NOTE]
->La clave de Edge debe configurarse como una variable [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) de tipo `secret` (con *All* seleccionado para el servicio aplicado) antes de que se implemente la configuración que hace referencia a ella.
+>La clave de Edge debe configurarse como una [variable de entorno de Cloud Manager de tipo secreto](/help/operations/config-pipeline.md#secret-env-vars) antes de que se implemente la configuración que hace referencia a ella.
 
 ## Purgar token de API {#purge-API-token}
 
-Los clientes pueden [purgar la caché de CDN](/help/implementing/dispatcher/cdn-cache-purge.md) usando un token de API de purga declarado. El token se declara con la sintaxis siguiente.  Consulte la sección [Configuración común](#common-setup) para obtener información sobre cómo implementarla.
+Los clientes pueden [purgar la caché de CDN](/help/implementing/dispatcher/cdn-cache-purge.md) usando un token de API de purga declarado. El token se ha declarado en un archivo con el nombre `cdn.yaml` o similar, en algún lugar bajo una carpeta de nivel superior `config`. Lea el [artículo de la canalización de configuración](/help/operations/config-pipeline.md#folder-structure) para obtener detalles acerca de la estructura de carpetas y cómo implementar la configuración.
+
+La sintaxis se describe a continuación:
 
 ```
 kind: "CDN"
@@ -82,7 +86,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_authentication:
+  authentication:
     authenticators:
        - name: purge-auth
          type: purge
@@ -96,16 +100,16 @@ data:
            authenticator: purge-auth
 ```
 
-La sintaxis incluye lo siguiente:
+Consulte el artículo [canalización de configuración](/help/operations/config-pipeline.md#common-syntax) para obtener una descripción de las propiedades encima del nodo `data`. El valor de la propiedad `kind` debe ser *CDN* y la propiedad `version` debe establecerse en `1`.
 
-* tipo, versión y metadatos.
-* nodo de datos que contiene un nodo `experimental_authentication` secundario (el prefijo experimental se quitará cuando se libere la característica).
-* En `experimental_authentication`, un nodo `authenticators` y un nodo `rules`, ambos son matrices.
+Entre las propiedades adicionales se incluyen:
+
+* Nodo `data` que contiene un nodo `authentication` secundario.
+* En `authentication`, un nodo `authenticators` y un nodo `rules`, ambos son matrices.
 * Autenticadores: Permite declarar un tipo de token o credencial, que en este caso es una clave de depuración. Incluye las siguientes propiedades:
    * name: una cadena descriptiva.
    * type: debe ser purge.
-   * purgeKey1 - su valor debe hacer referencia a un token secreto, que no debería almacenarse en Git, sino declararse como [Variables de entorno de Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) de tipo `secret`.
-   * En el campo Servicio aplicado, seleccione Todo. Se recomienda que el valor (por ejemplo, `${{CDN_PURGEKEY_031224}}`) refleje el día en que se agregó.
+   * purgeKey1 - su valor debe hacer referencia a una [variable de entorno de tipo secreto Cloud Manager](/help/operations/config-pipeline.md#secret-env-vars). En el campo Servicio aplicado, seleccione Todo. Se recomienda que el valor (por ejemplo, `${{CDN_PURGEKEY_031224}}`) refleje el día en que se agregó.
    * purgeKey2 se usa para la rotación de secretos, que se describe en la sección [rotación de secretos](#rotating-secrets) a continuación. Se debe declarar al menos uno de `purgeKey1` y `purgeKey2`.
 * Reglas: le permite declarar cuál de los autenticadores debe utilizarse y si es para el nivel de publicación o vista previa.  Incluye:
    * nombre: una cadena descriptiva
@@ -113,9 +117,12 @@ La sintaxis incluye lo siguiente:
    * action: debe especificar &quot;authentication&quot;, con referencia al autenticador deseado.
 
 >[!NOTE]
->La clave de Edge debe configurarse como una variable de tipo [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) de tipo `secret` antes de que se implemente la configuración que hace referencia a ella.
+>La clave de purga debe configurarse como [secreto de tipo Cloud Manager Environment Variable](/help/operations/config-pipeline.md#secret-env-vars), antes de que se implemente la configuración que hace referencia a ella.
 
 ## Autenticación básica {#basic-auth}
+
+>[!NOTE]
+>Esta función aún no está disponible de forma general. Para unirse al programa de adopción anticipada, envíe un correo electrónico a `aemcs-cdn-config-adopter@adobe.com`.
 
 Proteja determinados recursos de contenido mostrando un cuadro de diálogo de autenticación básica que requiera un nombre de usuario y una contraseña. Esta función está diseñada principalmente para casos de uso de autenticación ligera, como la revisión del contenido por parte de las partes interesadas empresariales, en lugar de como una solución completa para los derechos de acceso del usuario final.
 
@@ -124,7 +131,7 @@ El usuario final verá aparecer un cuadro de diálogo de autenticación básico 
 ![basicauth-dialog](/help/implementing/dispatcher/assets/basic-auth-dialog.png)
 
 
-La sintaxis se declara tal como se describe a continuación. Consulte la sección [Configuración común](#common-setup) a continuación para obtener información sobre cómo implementarla.
+La sintaxis es la siguiente:
 
 ```
 kind: "CDN"
@@ -149,89 +156,69 @@ data:
            authenticator: my-basic-authenticator
 ```
 
-La sintaxis incluye lo siguiente:
+Consulte el artículo [canalización de configuración](/help/operations/config-pipeline.md#common-syntax) para obtener una descripción de las propiedades encima del nodo `data`. El valor de la propiedad `kind` debe ser *CDN* y la propiedad `version` debe establecerse en `1`.
 
-* tipo, versión y metadatos.
-* un nodo de datos que contenga un nodo `experimental_authentication` (el prefijo experimental se eliminará al lanzar la función).
+Además, la sintaxis incluye lo siguiente:
+
+* un nodo `data` que contiene un nodo `experimental_authentication` (el prefijo experimental se quitará cuando se libere la característica).
 * En `experimental_authentication`, un nodo `authenticators` y un nodo `rules`, ambos son matrices.
 * Autenticadores: en este caso, declare un autenticador básico, que tiene la siguiente estructura:
    * nombre: una cadena descriptiva
    * tipo: debe ser `basic`
    * una matriz de credenciales, cada una de las cuales incluye los siguientes pares de nombre/valor, que los usuarios finales pueden introducir en el cuadro de diálogo autenticación básica:
       * user: nombre del usuario
-      * password: su valor debe hacer referencia a un token secreto, que no debe almacenarse en Git, sino declararse como Variables de entorno de Cloud Manager de tipo secret (con **All** seleccionado como campo de servicio)
+      * password: su valor debe hacer referencia a una [variable de entorno de tipo secreto Cloud Manager](/help/operations/config-pipeline.md#secret-env-vars), con **All** seleccionado como campo de servicio.
 * Rules: permite declarar cuál de los autenticadores se debe utilizar y qué recursos se deben proteger. Cada regla incluye:
    * nombre: una cadena descriptiva
    * when: una condición que determina cuándo se debe evaluar la regla, según la sintaxis del artículo [Reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md). Normalmente, incluye una comparación del nivel de publicación o rutas específicas.
    * action: debe especificar &quot;authentication&quot;, con el autenticador deseado referenciado, que es basic-auth para este escenario
 
 >[!NOTE]
->La clave de Edge debe configurarse como una variable de tipo [Cloud Manager Environment Variable](/help/implementing/cloud-manager/environment-variables.md) de tipo `secret` antes de que se implemente la configuración que hace referencia a ella.
-
-## Configuración común {#common-setup}
-
-Todos los autenticadores se configuran de la siguiente manera:
-
-* En primer lugar, cree la siguiente estructura de carpetas y archivos en la carpeta de nivel superior del proyecto Git:
-
-```
-config/
-     cdn.yaml
-```
-
-* En segundo lugar, el archivo de configuración `cdn.yaml` debe contener los nodos descritos en los ejemplos siguientes. La propiedad `kind` debe establecerse en `CDN` y la versión debe establecerse en la versión de esquema, que actualmente es `1`. El nodo de metadatos tiene una propiedad &quot;envTypes&quot;, que indica en qué tipos de entorno (dev, stage, prod) se evaluará esta configuración.
-
-* Por último, cree una canalización de configuración de implementación de destino en Cloud Manager. Consulte [configuración de canalizaciones de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) y [configuración de canalizaciones que no son de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
-
-Tenga en cuenta que:
-
-* Actualmente, los RDE no admiten la canalización de configuración.
-* Puede utilizar `yq` para validar localmente el formato YAML del archivo de configuración (por ejemplo, `yq cdn.yaml`).
+>Las contraseñas deben configurarse como [variables de entorno Cloud Manager de tipo secreto](/help/operations/config-pipeline.md#secret-env-vars), antes de que se implemente la configuración que hace referencia a ellas.
 
 ## Rotación de secretos {#rotating-secrets}
 
-Es recomendable cambiar las credenciales de vez en cuando. Esto se puede lograr como se muestra a continuación, utilizando el ejemplo de una clave perimetral, aunque se utiliza la misma estrategia para depurar claves.
+1. Es recomendable cambiar las credenciales de vez en cuando. Esto se puede lograr como se muestra a continuación, utilizando el ejemplo de una clave perimetral, aunque se utiliza la misma estrategia para depurar claves.
 
-* Inicialmente solo se ha definido `edgeKey1`, en este caso se hace referencia a `${{CDN_EDGEKEY_052824}}`, que como convención recomendada, refleja la fecha en que se creó.
+1. Inicialmente solo se ha definido `edgeKey1`, en este caso se hace referencia a `${{CDN_EDGEKEY_052824}}`, que como convención recomendada, refleja la fecha en que se creó.
 
-```
-experimental_authentication:
-  authenticators:
-    - name: edge-auth
-      type: edge
-      edgeKey1: ${{CDN_EDGEKEY_052824}}
-```
+   ```
+   experimental_authentication:
+     authenticators:
+       - name: edge-auth
+         type: edge
+         edgeKey1: ${{CDN_EDGEKEY_052824}}
+   ```
+1. Cuando sea el momento de girar la clave, cree un nuevo secreto de Cloud Manager, por ejemplo `${{CDN_EDGEKEY_041425}}`.
+1. En la configuración, haga referencia a él desde `edgeKey2` e impleméntelo.
 
-* Cuando sea el momento de girar la clave, cree un nuevo secreto de Cloud Manager, por ejemplo `${{CDN_EDGEKEY_041425}}`.
-* En la configuración, haga referencia a él desde `edgeKey2` e impleméntelo.
+   ```
+   experimental_authentication:
+     authenticators:
+       - name: edge-auth
+         type: edge
+         edgeKey1: ${{CDN_EDGEKEY_052824}}
+         edgeKey2: ${{CDN_EDGEKEY_041425}}
+   ```
 
-```
-experimental_authentication:
-  authenticators:
-    - name: edge-auth
-      type: edge
-      edgeKey1: ${{CDN_EDGEKEY_052824}}
-      edgeKey2: ${{CDN_EDGEKEY_041425}}
-```
+1. Una vez que esté seguro de que la clave perimetral antigua ya no se usa, elimínela eliminando `edgeKey1` de la configuración.
 
-* Una vez que esté seguro de que la clave perimetral antigua ya no se usa, elimínela eliminando `edgeKey1` de la configuración.
+   ```
+   experimental_authentication:
+     authenticators:
+       - name: edge-auth
+         type: edge
+         edgeKey2: ${{CDN_EDGEKEY_041425}}
+   ```
+1. Elimine la referencia secreta antigua (`${{CDN_EDGEKEY_052824}}`) de Cloud Manager e implemente.
 
-```
-experimental_authentication:
-  authenticators:
-    - name: edge-auth
-      type: edge
-      edgeKey2: ${{CDN_EDGEKEY_041425}}
-```
+1. Cuando esté listo para la siguiente rotación, siga el mismo procedimiento, pero esta vez agregará `edgeKey1` a la configuración, haciendo referencia a un nuevo secreto de entorno de Cloud Manager llamado, por ejemplo, `${{CDN_EDGEKEY_031426}}`.
 
-* Elimine la referencia secreta antigua (`${{CDN_EDGEKEY_052824}}`) de Cloud Manager e implemente.
-* Cuando esté listo para la siguiente rotación, siga el mismo procedimiento, pero esta vez agregará `edgeKey1` a la configuración, haciendo referencia a un nuevo secreto de entorno de Cloud Manager llamado, por ejemplo, `${{CDN_EDGEKEY_031426}}`.
-
-```
-experimental_authentication:
-  authenticators:
-    - name: edge-auth
-      type: edge
-      edgeKey2: ${{CDN_EDGEKEY_041425}}
-      edgeKey1: ${{CDN_EDGEKEY_031426}}
-```
+   ```
+   experimental_authentication:
+     authenticators:
+       - name: edge-auth
+         type: edge
+         edgeKey2: ${{CDN_EDGEKEY_041425}}
+         edgeKey1: ${{CDN_EDGEKEY_031426}}
+   ```

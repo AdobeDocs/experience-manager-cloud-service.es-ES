@@ -4,12 +4,13 @@ description: Obtenga información sobre las tareas de mantenimiento en AEM as a 
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: b0e72f0eee0f20b19b0d9c4317a061855ffd4f62
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '2107'
+source-wordcount: '2055'
 ht-degree: 30%
 
 ---
+
 
 # Tareas de mantenimiento en AEM as a Cloud Service {#maintenance-tasks-in-aem-as-a-cloud-service}
 
@@ -219,23 +220,19 @@ Declare un archivo de configuración e impleméntelo como se describe en los pas
 > 
 >Del mismo modo, una vez que implemente el nodo de depuración del registro de auditoría en el archivo de configuración, debe mantenerlo declarado y no eliminarlo.
 
-**1** - cree la siguiente carpeta y estructura de archivos en la carpeta de nivel superior de su proyecto en Git:
+**1** Cree un archivo con el nombre `mt.yaml` o similar.
 
-```
-config/
-     mt.yaml
-```
+**2** Coloque el archivo en algún lugar bajo una carpeta de nivel superior llamada `config` o similar, como se describe en el artículo de la canalización [config.](/help/operations/config-pipeline.md#folder-structure)
 
-**2** - Declarar propiedades en el archivo de configuración, que incluyen:
+**3** - Declarar propiedades en el archivo de configuración, que incluyen:
 
-* una propiedad &quot;kind&quot; con el valor &quot;MaintenanceTasks&quot;.
-* una propiedad &quot;version&quot; (actualmente estamos en la versión 1).
-* un objeto &quot;metadata&quot; opcional con la propiedad `envTypes` con una lista separada por comas del tipo de entorno (dev, stage, prod) para el cual esta configuración es válida. Si no se declara ningún objeto de metadatos, la configuración es válida para todos los tipos de entorno.
+* algunas propiedades encima del nodo de datos: consulte el [artículo de la canalización de configuración](/help/operations/config-pipeline.md#common-syntax) para obtener una descripción. El valor de la propiedad `kind` debe ser *MaintenanceTasks* y la versión debe establecerse en *1*.
+
 * un objeto de datos con `versionPurge` y `auditLogPurge` objetos.
 
 Vea las definiciones y sintaxis de los objetos `versionPurge` y `auditLogPurge` a continuación.
 
-La configuración debe estructurarse de forma similar al siguiente ejemplo:
+La configuración es similar al siguiente ejemplo:
 
 ```
 kind: "MaintenanceTasks"
@@ -270,14 +267,7 @@ Tenga en cuenta que para que la configuración sea válida:
 * todas las propiedades deben estar definidas. No hay valores predeterminados heredados.
 * se deben respetar los tipos (enteros, cadenas, booleanos, etc.) de las tablas de propiedades siguientes.
 
->[!NOTE]
->Puede usar `yq` para validar localmente el formato YAML del archivo de configuración (por ejemplo, `yq mt.yaml`).
-
-**3**: configure las canalizaciones de configuración de no producción y producción.
-
-Los entornos de desarrollo rápido (RDE) no admiten la depuración. Para otros tipos de entornos en programas de producción (que no sean de zona protegida), cree una canalización de configuración de implementación de destino en Cloud Manager.
-
-Consulte [configuración de canalizaciones de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) y [configuración de canalizaciones que no son de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) para obtener más información.
+**4**: cree una canalización de configuración en Cloud Manager, tal como se describe en el artículo [canalización de configuración.](/help/operations/config-pipeline.md#managing-in-cloud-manager) Las zonas protegidas y los entornos de desarrollo rápido (RDE) no admiten la depuración.
 
 ### Depuración de la versión {#version-purge}
 

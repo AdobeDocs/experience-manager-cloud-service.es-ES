@@ -1,15 +1,16 @@
 ---
 title: Configuración del tráfico en la CDN
-description: Obtenga información sobre cómo configurar el tráfico de CDN declarando reglas y filtros en un archivo de configuración e implementándolos en CDN mediante la canalización de configuración de Cloud Manager.
+description: Obtenga información sobre cómo configurar el tráfico de CDN declarando reglas y filtros en un archivo de configuración e implementándolos en CDN mediante una canalización de configuración de Cloud Manager.
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: c34aa4ad34d3d22e1e09e9026e471244ca36e260
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 3%
+source-wordcount: '1319'
+ht-degree: 2%
 
 ---
+
 
 # Configuración del tráfico en la CDN {#cdn-configuring-cloud}
 
@@ -20,11 +21,11 @@ AEM as a Cloud Service ofrece una colección de características configurables e
 * [Redirecciones del lado del cliente](#client-side-redirectors): déclencheur una redirección del explorador. Esta función aún no es de GA, pero está disponible para los primeros usuarios que la adoptaron.
 * [Selectores de origen](#origin-selectors): proxy a un backend de origen diferente.
 
-También se pueden configurar en la CDN las reglas de filtro de tráfico (incluido WAF), que controlan qué tráfico permite o rechaza la CDN. Esta característica ya se ha lanzado y puede obtener más información al respecto en la página [Reglas de filtro de tráfico, incluidas las reglas WAF](/help/security/traffic-filter-rules-including-waf.md).
+También se pueden configurar en la CDN las reglas de filtro de tráfico (incluida WAF), que controlan qué tráfico permite o rechaza la CDN. Esta característica ya se ha lanzado y puede obtener más información al respecto en la página [Reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md), que incluye las reglas de WAF.
 
 Además, si la CDN no puede ponerse en contacto con su origen, puede escribir una regla que haga referencia a una página de error personalizada autoalojada (que luego se procesará). Obtenga más información al leer el artículo [Configuración de páginas de error de CDN](/help/implementing/dispatcher/cdn-error-pages.md).
 
-Todas estas reglas, declaradas en un archivo de configuración en el control de código fuente, se implementan mediante [la canalización de configuración de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Tenga en cuenta que el tamaño acumulado del archivo de configuración, incluidas las reglas de filtro de tráfico, no puede superar los 100 KB.
+Todas estas reglas, declaradas en un archivo de configuración en el control de código fuente, se implementan mediante la canalización [config de Cloud Manager.](/help/operations/config-pipeline.md) Tenga en cuenta que el tamaño acumulado del archivo de configuración, incluidas las reglas de filtro de tráfico, no puede exceder los 100 KB.
 
 ## Orden de evaluación {#order-of-evaluation}
 
@@ -36,23 +37,24 @@ Desde el punto de vista funcional, las distintas funciones mencionadas anteriorm
 
 Para poder configurar el tráfico en la CDN, debe hacer lo siguiente:
 
-* Cree esta carpeta y estructura de archivos en la carpeta de nivel superior del proyecto Git:
+1. Cree un archivo con el nombre `cdn.yaml` o similar, haciendo referencia a los distintos fragmentos de configuración en las secciones siguientes.
 
-```
-config/
-     cdn.yaml
-```
+   Todos los fragmentos de código tienen estas propiedades comunes, que se describen en el [artículo de la canalización de configuración](/help/operations/config-pipeline.md#common-syntax). El valor de la propiedad `kind` debe ser *CDN* y la propiedad `version` debe establecerse en *1*.
 
-* El archivo de configuración `cdn.yaml` debe contener metadatos y las reglas descritas en los ejemplos siguientes. El parámetro `kind` debe establecerse en `CDN` y la versión debe establecerse en la versión de esquema, que actualmente es `1`.
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   ```
 
-* Cree una canalización de configuración de implementación de destino en Cloud Manager. Consulte [configuración de canalizaciones de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) y [configuración de canalizaciones que no son de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+1. Coloque el archivo en algún lugar bajo una carpeta de nivel superior llamada *config* o similar, como se describe en [Artículo de canalización de configuración](/help/operations/config-pipeline.md#folder-structure).
 
-**Notas**
+1. Cree una canalización de configuración en Cloud Manager, tal como se describe en el [artículo Canalización de configuración](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
-* Actualmente, los RDE no admiten la canalización de configuración.
-* Puede utilizar `yq` para validar localmente el formato YAML del archivo de configuración (por ejemplo, `yq cdn.yaml`).
+1. Implemente la configuración de.
 
-## Sintaxis {#configuration-syntax}
+## Sintaxis de reglas {#configuration-syntax}
 
 Los tipos de reglas de las secciones siguientes comparten una sintaxis común.
 

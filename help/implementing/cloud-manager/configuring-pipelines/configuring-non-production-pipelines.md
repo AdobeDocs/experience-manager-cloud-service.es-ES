@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 75%
+source-wordcount: '1405'
+ht-degree: 74%
 
 ---
 
@@ -115,9 +115,9 @@ La canalización se guarda y ahora puede [administrar las canalizaciones](managi
 
 AEM Una implementación de destino implementa el código únicamente para partes seleccionadas de la aplicación de. En una implementación de este tipo, puede elegir **Incluir** uno de los siguientes tipos de código:
 
-* AEM **Configuración**: configure las opciones de las reglas de filtro de tráfico en su entorno de la.
-   * Consulte el documento [Reglas de filtro de tráfico, incluidas las reglas WAF](/help/security/traffic-filter-rules-including-waf.md), para obtener información sobre cómo administrar las reglas de filtro de tráfico en el repositorio de modo que se implementen correctamente.
-   * Al ejecutar una canalización de implementación de destino, se implementarán las configuraciones [tales como las configuraciones WAF](/help/security/traffic-filter-rules-including-waf.md), siempre que se guarden en el entorno, el repositorio y la rama que haya definido en la canalización.
+* AEM **Configuración**: configure las opciones para las distintas características de su entorno de.
+   * Consulte el artículo [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md) para obtener una lista de las configuraciones admitidas, que incluye el reenvío de registros, las tareas de mantenimiento relacionadas con la depuración y varias configuraciones de CDN, y para administrarlas en el repositorio de modo que se implementen correctamente.
+   * Al ejecutar una canalización de implementación de destino, se implementarán las configuraciones, siempre que se guarden en el entorno, el repositorio y la rama que haya definido en la canalización.
    * En cualquier momento, solo puede haber una canalización de configuración por entorno.
 * **Código front-end**: configure JavaScript AEM y CSS para el front-end de la aplicación.
    * Con las canalizaciones front-end, se da más independencia a los desarrolladores de front-end y el proceso de desarrollo se puede acelerar.
