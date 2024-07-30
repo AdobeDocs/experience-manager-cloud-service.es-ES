@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 06fc5cd31b07fcd8bf085b41bc5f39907d4f5a79
+source-git-commit: ae2805097007d3d056e30b9c8420b47027a3af0e
 workflow-type: tm+mt
-source-wordcount: '5299'
+source-wordcount: '5304'
 ht-degree: 99%
 
 ---
@@ -289,6 +289,7 @@ ht-degree: 99%
       + [Herramientas de modernización de AEM](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
    + [Cambios importantes en AEM Sites en AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+   + [Sitios y Edge Delivery Services](/help/sites-cloud/sites-and-edge.md)
    + Creación {#authoring}
       + [Guía rápida de introducción para la creación de páginas](/help/sites-cloud/authoring/quick-start.md)
       + [Gestión básica](/help/sites-cloud/authoring/basic-handling.md)
