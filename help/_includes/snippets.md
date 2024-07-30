@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
-workflow-type: tm+mt
+source-git-commit: 964d4a04c6c645a5cdab29218f93431649d41588
+workflow-type: ht
 source-wordcount: '662'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 # Fragmentos de código {#snippets}
@@ -122,7 +122,7 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 * [Introducción al Editor de reglas para formularios adaptables basados en componentes principales](/help/forms/rule-editor-core-components.md)
 * [Tipos de operadores y eventos en el editor de reglas de un formulario adaptable basado en componentes principales](/help/forms/rule-editor-core-components-events-operators.md)
 * [Interfaz de usuario del Editor de reglas para formularios adaptables basados en componentes principales](/help/forms/rule-editor-core-components-user-interface.md)
-* [Diferentes casos de uso del Editor de reglas para un formulario adaptable basado en componentes principales](/help/forms/rule-editor-core-components-user-interface.md)
+* [Diferentes casos de uso del Editor de reglas para un formulario adaptable basado en componentes principales](/help/forms/rule-editor-core-components-usecases.md)
 * [Diferencia en varias ediciones del editor de reglas](/help/forms/rule-editor-core-components-difference-tables.md)
 * [Introducción a las funciones personalizadas para formularios adaptables basados en componentes principales](/help/forms/create-and-use-custom-functions.md)
 * [Crear una función personalizada para un formulario adaptable basado en componentes principales](/help/forms/custom-function-core-component-create-function.md)
