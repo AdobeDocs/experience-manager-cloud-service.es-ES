@@ -4,20 +4,17 @@ description: Obtenga información sobre cómo quitar objetos en caché de la cac
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 3b55f3094b7154b7723ef7ae2230d7ae01eb4abc
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 3%
+source-wordcount: '437'
+ht-degree: 1%
 
 ---
 
 # Depuración de la caché de la CDN {#cdn-purge-cache}
 
->[!NOTE]
->Esta función aún no está disponible de forma general. Para unirse al programa de adopción anticipada, envíe un correo electrónico a `aemcs-cdn-config-adopter@adobe.com`.
-
 La depuración elimina un objeto de la caché de la CDN de Adobe, lo que da como resultado que las solicitudes futuras sigan al origen como una falta de caché, en lugar de servirse desde la caché.
-AEM as a Cloud Service le permite configurar un token de API de depuración, que luego se puede utilizar en llamadas a la API. Lea el artículo [Configuración de credenciales y autenticación de CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) para saber cómo configurar este token mediante las directivas de autenticación de canalización de configuración de Cloud Manager.
+AEM as a Cloud Service le permite configurar un token de API de depuración, que luego se puede utilizar en las llamadas de API de depuración. Lea el artículo [Configuración de credenciales y autenticación de CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) para saber cómo configurar este token mediante las directivas de autenticación de canalización de configuración de Cloud Manager.
 
 Existen tres variaciones de depuración admitidas:
 
