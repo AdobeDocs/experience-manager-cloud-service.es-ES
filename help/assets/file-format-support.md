@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
 workflow-type: tm+mt
 source-wordcount: '1423'
 ht-degree: 34%
@@ -239,6 +239,7 @@ XMP [!DNL Assets] as a [!DNL Cloud Service] proporciona compatibilidad de extrac
 | PSD ‡ | ✓ | − | − | − | − | − |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagen](/help/assets/dynamic-media/image-sets.md), [Medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md) y [Giro](/help/assets/dynamic-media/spin-sets.md) |
 | WEBP | − | − | − | ✓ | − | − |
+
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
 ‡ La imagen combinada se extrae del archivo del PSD. Es una imagen generada por [!DNL Adobe Photoshop] y que se incluye en el archivo del PSD. Según la configuración, la imagen combinada puede ser o no la imagen real.

@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 9a3678e8e28806c3c7574d2cfd047c30537d7f41
+source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
 workflow-type: tm+mt
 source-wordcount: '10491'
 ht-degree: 1%
@@ -909,6 +909,7 @@ No se puede descargar la pista de audio original extraída de un archivo de víd
    | Cree una carpeta independiente para cada recurso | Cree una carpeta para cada archivo de rótulo o de pista de audio que haya seleccionado para la descarga. |
    | Correo electrónico | Utilice su programa de correo electrónico predeterminado para enviar el archivo .zip a una dirección de correo electrónico especificada. |
    | Recursos | Especifica el número de archivos que está descargando y el tamaño total combinado de todos los archivos seleccionados. Al anular la selección de esta opción, se atenúa (desactiva) el botón **[!UICONTROL Descargar]**, lo que impide que se descargue ningún archivo. |
+
 1. Seleccione **[!UICONTROL Descargar]**.
 1. Publish el vídeo. Consulte [recursos de Publish](publishing-dynamicmedia-assets.md).
 

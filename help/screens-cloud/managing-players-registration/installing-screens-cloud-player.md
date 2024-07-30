@@ -4,7 +4,7 @@ description: En esta página se describe cómo instalar y configurar reproductor
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 1%
@@ -71,10 +71,12 @@ En cada `ping` se incluyen las siguientes propiedades:
 | lastContentChange {string} | marca de tiempo del último cambio de contenido |
 
 >[!NOTE]
+>
 >De forma opcional, puede activar una propiedad más avanzada desde las preferencias del reproductor (Activar monitorización de reproducción):
->|Propiedad|Descripción|
->|—|—|
->|isContentRendering {boolean}|true si la GPU puede confirmar que está reproduciendo contenido real (según el análisis de píxeles)|
+>
+>| Propiedad | Descripción |
+>|---|---|
+>| isContentRendering {boolean} | True si la GPU puede confirmar que está reproduciendo contenido real (según el análisis de píxeles). |
 
 ### Limitaciones {#limitations}
 
