@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: af2985f29cb867162061bbac465b19637aa0ecad
+source-git-commit: 5296d46658f591d7736587c98b112006d947321d
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1288'
 ht-degree: 10%
 
 ---
@@ -21,11 +21,6 @@ Las solicitudes de contenido son solicitudes que llegan a AEM Sites (incluidas l
 ## Explicación de las solicitudes de contenido de Cloud Service {#understanding-cloud-service-content-requests}
 
 Para los clientes que utilizan la CDN predeterminada, las solicitudes de contenido de los Cloud Service se miden mediante la recopilación de datos del lado del servidor. Esta colección se habilita mediante el análisis de registro de CDN. Las solicitudes de contenido se recopilan automáticamente en el servidor en el perímetro de Adobe Experience Manager as a Cloud Service, a través del análisis automatizado de los archivos de registro procedentes de CDN de AEM as a Cloud Service. Esto se realiza aislando las solicitudes que devuelven contenido de HTML `(text/html)` o JSON `(application/json)` de la CDN, y se basa en varias reglas de inclusión y exclusión detalladas a continuación. Una solicitud de contenido se produce de forma independiente del contenido devuelto que se sirve desde las cachés de CDN o del contenido que regresa al origen de CDN (Dispatchers de AEM).
-
-Para los clientes que utilizan su propia CDN, la recopilación del lado del cliente ofrece una reflexión más precisa de las interacciones, lo que garantiza una medida confiable de la participación del sitio web a través del servicio [Monitorización de uso real](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md). Esto proporciona a los clientes una información avanzada sobre el tráfico y el rendimiento de sus páginas. Aunque es beneficioso para todos los clientes, ofrece un reflejo representativo de las interacciones del usuario, lo que garantiza una medida fiable de la participación en el sitio web al capturar el número de vistas de página desde el lado del cliente.
-
-Para los clientes que traen su propia CDN además de AEM as a Cloud Service, los informes del lado del servidor arrojan números que no se pueden usar para comparar con las solicitudes de contenido con licencia. Con la [Monitorización de uso real](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), el Adobe puede reflejar una medida confiable de la participación en el sitio web.
-
 
 ### Variaciones de solicitudes de contenido de Cloud Service {#content-requests-variances}
 
