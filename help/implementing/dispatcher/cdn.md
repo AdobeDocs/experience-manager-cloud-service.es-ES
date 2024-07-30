@@ -4,10 +4,10 @@ description: AEM AEM Aprenda a utilizar la CDN administrada por el y a apuntar s
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 4c145559d1ad18d31947c0437d6d1d31fb3af1bb
+source-git-commit: 655b92f0fd3c6fb69bdd9343719537d6328fa7be
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 20%
+source-wordcount: '1552'
+ht-degree: 16%
 
 ---
 
@@ -44,7 +44,8 @@ Consulte [administración de listas de IP permitidas](/help/implementing/cloud-m
 
 ### Configuración del tráfico en la CDN {#cdn-configuring-cloud}
 
-Configure el tráfico en la CDN de varias formas, entre ellas:
+Puede configurar el tráfico en la CDN de varias formas, entre ellas:
+
 * bloquear tráfico malintencionado con [Reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md) (incluidas las reglas de WAF avanzadas con licencia opcional)
 * modificando la naturaleza de [solicitud y respuesta](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)
 * aplicando [redirecciones del lado del cliente](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) 301/302
@@ -64,7 +65,7 @@ Obtenga información sobre [configurar un token de API de depuración](/help/imp
 
 ### Autenticación básica en CDN {#basic-auth}
 
-Para casos de uso de autenticación ligera, incluidas las partes interesadas de la empresa que revisan el contenido, proteja el contenido mostrando un cuadro de diálogo de autenticación básico que requiere un nombre de usuario y una contraseña. [Más información](/help/implementing/dispatcher/cdn-credentials-authentication.md) y únete al programa de adopción anticipada.
+Para casos de uso de autenticación ligera, incluidas las partes interesadas de la empresa que revisan el contenido, proteja el contenido mostrando un cuadro de diálogo de autenticación básico que requiera un nombre de usuario y una contraseña. [Más información](/help/implementing/dispatcher/cdn-credentials-authentication.md) y únete al programa de adopción anticipada.
 
 ## AEM Puntos de CDN del cliente a CDN administrada por el {#point-to-point-CDN}
 
@@ -145,6 +146,26 @@ A continuación se presentan varios ejemplos de configuración de varios proveed
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
+
+### Errores comunes {#common-errors}
+
+Las configuraciones de ejemplo proporcionadas muestran la configuración base necesaria, pero una configuración de cliente puede tener otras reglas de impacto que quiten, modifiquen o reorganicen los encabezados necesarios para que AEM as a Cloud Service sirva al tráfico. A continuación, se muestran errores comunes que se producen al configurar una CDN administrada por el cliente para que apunte a AEM as a Cloud Service.
+
+**Redirección al extremo del servicio de Publish**
+
+Cuando una solicitud recibe una respuesta 403 prohibida, significa que a la solicitud le faltan algunos encabezados obligatorios. Una causa común de esto es que la red de distribución de contenido (CDN) está administrando el tráfico de dominio Apex y `www`, pero no está agregando el encabezado correcto para el dominio `www`. Este problema se puede solucionar comprobando los registros de CDN de AEM as a Cloud Service y los encabezados de solicitud necesarios.
+
+**Demasiadas redirecciones en bucle**
+
+Cuando una página recibe un bucle de &quot;Demasiadas redirecciones&quot;, se añade algún encabezado de solicitud en la CDN que coincide con una redirección que la obliga a volver a sí misma. A modo de ejemplo:
+
+* Se crea una regla de CDN para que coincida con el dominio Apex o con el dominio www y agrega el encabezado X-Forwarded-Host solo del dominio Apex.
+* Una solicitud de dominio Apex coincide con esta regla de CDN, que agrega el dominio Apex como encabezado X-Forwarded-Host.
+* Se envía una solicitud al origen donde una redirección coincide con el encabezado de host explícitamente para el dominio Apex (por ejemplo, ^example.com).
+* Se activa una regla de reescritura que reescribe la solicitud del dominio Apex en https con el subdominio www.
+* Esa redirección se envía entonces al perímetro del cliente, donde la regla de CDN se vuelve a activar y se vuelve a añadir el encabezado X-Forwarded-Host para el dominio Apex, no el subdominio www. A continuación, el proceso se inicia de nuevo hasta que falla la solicitud.
+
+Para resolver este problema, evalúe la estrategia de redireccionamiento SSL, las reglas de CDN y las combinaciones de reglas de redireccionamiento y reescritura.
 
 ## Encabezados de geolocalización {#geo-headers}
 
