@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: fca8b4b34718bd7d22186740fac383b87e968cdb
+source-git-commit: 57c5b886b5964e13219b2525c7ed0073292277a0
 workflow-type: tm+mt
 source-wordcount: '4105'
 ht-degree: 0%
@@ -76,15 +76,23 @@ Las prácticas recomendadas del visualizador de Dynamic Media son directrices es
 
 Si sigue estas prácticas recomendadas, podrá lograr una integración optimizada, una administración eficiente de los recursos y unas interacciones mejoradas con el visualizador. La sincronización de recursos, el uso del recorte inteligente y la adherencia a las directrices de inclusión de archivos de JavaScript son prácticas importantes. Estas recomendaciones ayudan a mantener la integridad y fiabilidad de la entrega de medios en varias plataformas y dispositivos.
 
-* **Sincronizar Assets del visor:** Asegúrese de que todos los recursos del visor estén sincronizados con Dynamic Media antes de usar el reproductor. Para ver la resolución de problemas, ve al artículo [Solucionar problemas de visualizadores de Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#viewers).
-* **Página Administrador de muestras:** Acceda a la página Administrador de muestras en `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`.
-* **Publish Assets:** Asegúrese de que los recursos se publiquen antes de visualizarlos en los visores de envío.
-* **Vídeos de reproducción automática silenciados:** Para la funcionalidad de reproducción automática de vídeos, usa la configuración de vídeo silenciada porque los navegadores restringen la reproducción de vídeos con volumen.
-* **Recorte inteligente:** Utilice el componente Image v3 para el recorte inteligente a fin de mejorar la presentación de los recursos de imagen.
-* **Inclusión de archivos JavaScript:** Incluya solamente el archivo JavaScript del visor principal en su página. Evite hacer referencia a archivos JavaScript adicionales que la lógica de tiempo de ejecución del visor pueda descargar. En concreto, no vincule directamente a la biblioteca `Utils.js` del SDK de HTML5 desde la ruta de contexto `/s7viewers` (conocida como inclusión de SDK consolidada). La lógica del visor administra la ubicación de `Utils.js` o bibliotecas de visor en tiempo de ejecución similares, que pueden cambiar entre versiones. El Adobe no conserva versiones anteriores de las inclusiones del visor secundario en el servidor, por lo que la referencia directa a ellas puede interrumpir la funcionalidad del visor en futuras actualizaciones.
-* **Directrices de incrustación:** Utilice la documentación para incrustar directrices específicas de cada visor.
+* **Sincronizar Assets del visor:**
+Asegúrese de que todos los recursos del visualizador estén sincronizados con Dynamic Media antes de utilizar el reproductor. Para ver la resolución de problemas, ve al artículo [Solucionar problemas de visualizadores de Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#viewers).
+* **Página Administrador de muestras:**
+Acceda a la página de administración de muestra en `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`.
+* **Publish Assets:**
+Asegúrese de que los recursos se publican antes de verlos en los visores de envío.
+* **Vídeos de reproducción automática silenciados:**
+Para la funcionalidad de reproducción automática de vídeos, utilice la configuración de vídeo en silencio porque los navegadores restringen la reproducción de vídeos con volumen.
+* **Recorte inteligente:**
+Utilice el componente Image v3 para el recorte inteligente a fin de mejorar la presentación de los recursos de imagen.
+* **Inclusión de archivo JavaScript:**
+Incluya solo el archivo JavaScript del visor principal en la página. Evite hacer referencia a archivos JavaScript adicionales que la lógica de tiempo de ejecución del visor pueda descargar. En concreto, no vincule directamente a la biblioteca `Utils.js` del SDK de HTML5 desde la ruta de contexto `/s7viewers` (conocida como inclusión de SDK consolidada). La lógica del visor administra la ubicación de `Utils.js` o bibliotecas de visor en tiempo de ejecución similares, que pueden cambiar entre versiones. El Adobe no conserva versiones anteriores de las inclusiones del visor secundario en el servidor, por lo que la referencia directa a ellas puede interrumpir la funcionalidad del visor en futuras actualizaciones.
+* **Directrices de incrustación:**
+Utilice la documentación para incrustar directrices específicas para cada visor.
 ¿Desea obtener más información? Vaya a [Visores de AEM Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
-* **Tutorial y ejemplos de SDK:** Consulte [Tutorial de SDK de visor](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) y [ejemplos de aplicaciones de SDK de HTML 5](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) para obtener información detallada sobre las API de componentes de SDK.
+* **Tutorial y ejemplos de SDK:**
+Consulte los ejemplos de [Tutorial del SDK de visualizadores](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) y [aplicación del SDK de HTML 5](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) para obtener información detallada sobre las API de componentes de SDK.
 
 
 ## Preparación de recursos para su entrega
