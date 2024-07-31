@@ -4,49 +4,113 @@ description: Aprenda a configurar las páginas de agradecimiento y la redirecci�
 feature: Edge Delivery Services
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 4356fcc73a9c33a11365b1eb3f2ebee5c9de24f0
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 100%
+source-wordcount: '559'
+ht-degree: 25%
 
 ---
 
 # Mostrar un mensaje de agradecimiento personalizado después del envío del formulario
 
-Una vez que un usuario envía un formulario, es crucial proporcionar una experiencia fluida a través de un mensaje de agradecimiento. Esto no solo confirma el envío correcto, sino que también aumenta la satisfacción del usuario y le guía en su recorrido.
+Una vez que un usuario envía un formulario, es crucial proporcionar una experiencia fluida a través de un mensaje de agradecimiento. No solo confirma el envío correcto, sino que también aumenta la satisfacción del usuario y lo guía en su recorrido.
 
-## Configuración de un mensaje de agradecimiento personalizado
+* **Mensaje de agradecimiento**: Un mensaje de agradecimiento es la piedra angular de la experiencia del usuario, ya que ofrece tranquilidad y transmite información importante a la vez que refuerza la identidad de la marca. Sirve como un reconocimiento directo de la acción del usuario, fomentando un sentido de finalización y satisfacción.
 
-El comportamiento predeterminado del bloque de Formularios adaptables es mostrar el siguiente mensaje de agradecimiento al enviarlo. El mensaje se muestra en la parte superior del formulario.
+* **Redireccionamiento**: una redirección desempeña un papel fundamental en la dirección de usuarios hacia destinos relevantes, la optimización de la participación y, en última instancia, el aumento de las tasas de conversión. Al guiar a los usuarios sin problemas al siguiente paso de su recorrido, una redirección garantiza una experiencia de navegación fluida. Por ejemplo, redirigir al usuario a la página de pagos después de recopilar los detalles iniciales.
+
+El comportamiento predeterminado del bloque de Formularios adaptables es mostrar el siguiente mensaje de agradecimiento al enviarlo. El mensaje se muestra en la parte superior del formulario cuando el envío del formulario se realiza correctamente.
 
 ![mensaje de agradecimiento predeterminado](/help/edge/assets/thank-you-message.png)
 
+Sin embargo, tiene la flexibilidad de adaptar esta experiencia para satisfacer sus necesidades específicas. Las opciones incluyen:
+
+* Mostrar un mensaje de agradecimiento personalizado después del envío del formulario
+* Redirija a los usuarios a otra página después del envío para realizar más acciones
+
+>[!NOTE]
+>
+> Puede consultar la siguiente [hoja de cálculo de consultas](/help/edge/docs/forms/assets/enquiry.xlsx) para personalizar el mensaje de agradecimiento según sus necesidades.
+
+## Configurar un mensaje de agradecimiento personalizado
+
+Si desea mostrar un mensaje de agradecimiento personalizado tras el envío correcto del formulario, puede configurar la hoja de cálculo para que se muestre.
 
 Siga los siguientes pasos para configurar un mensaje de agradecimiento personalizado para su bloque de Formularios adaptables:
 
-1. Acceda a su proyecto de AEM en su equipo local o repositorio de GitHub.
+1. Vaya a la carpeta del proyecto Edge Deliver en Microsoft SharePoint o Google Workspace y abra la hoja de cálculo.
+1. Agregue un mensaje de agradecimiento personalizado en la columna `value` para el tipo de campo `submit` en la hoja de cálculo.
 
-1. Vaya al archivo [Carpeta de proyecto de AEM]\blocks\form\submit.js para editarlo.
+   ![Mensaje de agradecimiento personalizado](/help/edge/docs/forms/assets/thankyou-custommessage.png)
 
-1. Busque el siguiente código
+   Por ejemplo, agregue el mensaje `Submission Successful!` en la columna `value` para el tipo de campo `submit`.
 
-   ```JavaScript
-       thankYouMessage.innerHTML = payload?.body?.thankYouMessage || 'Thanks for your submission';
-   ```
+1. Previsualice y publique la hoja usando [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
-1. Reemplace el mensaje predeterminado por el mensaje personalizado. Por ejemplo,
+   ![Mensaje de agradecimiento personalizado](/help/edge/docs/forms/assets/customized-thank-you-message.png)
+
+## Redirigir a los usuarios a otra página después del envío
+
+Redirigir a un usuario a otra página después del envío del formulario puede mejorar la experiencia del usuario al proporcionar información relevante, confirmar las acciones y guiar a los usuarios hacia los resultados deseados. Por ejemplo,
+
+* una vez que un usuario completa un formulario de compra, se le redirige a una página de pago para completar la transacción de forma segura.
+* al enviar un formulario de registro para un evento o seminario web, se redirige a los usuarios a una página de confirmación que muestra los detalles del evento, como la fecha, la hora y la ubicación.
+
+Siga los siguientes pasos para redirigir a los usuarios a otra página:
+
+1. Vaya a la carpeta del proyecto Edge Deliver en Microsoft SharePoint o Google Workspace y abra la hoja de cálculo.
+1. Pegue la dirección URL en la columna `value` para el tipo de campo `submit` en la hoja de cálculo para redirigir al usuario cuando el formulario se envíe correctamente.
+Para redirigir la página a otra diferente, usa la URL de la página [Documentación de Edge Delivery](https://www.aem.live/docs/).
+
+   ![URL de redireccionamiento de agradecimiento](/help/edge/docs/forms/assets/thankyou-redirecturl.png)
+
+1. Previsualice y publique la hoja usando [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+
+   ![Redirigir mensaje de agradecimiento](/help/edge/docs/forms/assets/thankyou-redirectpage.gif)
+
+También puede crear un nuevo archivo de documento y agregar su URL de vista previa en la columna `value` para el tipo de campo `submit`.
+
+Una vez que un usuario envía un formulario, es importante proporcionar un mensaje de agradecimiento claro. Confirma que el envío se ha realizado correctamente y mejora la satisfacción del usuario.
+
+## Ver también
+
+{{see-more-forms-eds}}
+
+<!--
+## Configuring a custom thank you message
+
+The default behavior of Adaptive Forms Block is to display the following thank you message on submission. The message is displayed on the top of the form. 
+
+![default thank you message](/help/edge/assets/thank-you-message.png)
 
 
-   ```JavaScript
-       thankYouMessage.innerHTML = payload?.body?.thankYouMessage || 'Your submission has been received and noted.';
-   ```
+Follow the below steps to configure a custom thank you message for your Adaptive Forms Block:
+
+1. Access your AEM Project on your local machine or GitHub repository.
+
+2. Navigate to [AEM Project Folder]\blocks\form\submit.js file for editing.
+
+3. Locate the following code 
+
+    ```JavaScript
+
+        thankYouMessage.innerHTML = payload?.body?.thankYouMessage || 'Thanks for your submission';
+
+    ```
+
+4. Replace the default message with your custom message. For example, 
 
 
-1. Guarde el archivo. Confirme el archivo actualizado en su repositorio GitHub. Ahora, al enviar un formulario, se muestra el mensaje de agradecimiento personalizado. Por ejemplo,
+    ```JavaScript
 
-![Mensaje de agradecimiento personalizado](/help/edge/assets/custom-thank-you-message.png)
+        thankYouMessage.innerHTML = payload?.body?.thankYouMessage || 'Your submission has been received and noted.';
 
-<!-- 
+    ```
+
+
+1. Save the file. Commit the updated file to your GitHub Repository. Now, when you submit a form, the custom thank you message is displayed. For example,
+
+![Custom thank you message](/help/edge/assets/custom-thank-you-message.png)
 
 * **Thank you message**: A thank you message is a cornerstone of user experience, offering reassurance and conveying important information while reinforcing brand identity. It serves as a direct acknowledgment of the user's action, fostering a sense of completion and satisfaction.
 
@@ -124,8 +188,8 @@ Redirecting a user to another page after form submission can enhance user experi
 
 To redirect the "thankyou" page to a different page, use the [website redirects](https://www.aem.live/docs/redirects) spreadsheet. 
 
--->
 
-## Consulte también
+
+## See also
 
 {{see-more-forms-eds}}
