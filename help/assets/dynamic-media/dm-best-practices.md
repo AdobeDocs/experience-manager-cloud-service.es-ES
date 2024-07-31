@@ -1,6 +1,6 @@
 ---
 title: Prácticas recomendadas de Dynamic Media
-description: Conozca las prácticas recomendadas en Dynamic Media a la hora de trabajar con imágenes y vídeo.
+description: Conozca las prácticas recomendadas en Dynamic Media a la hora de trabajar con imágenes y vídeo, y las prácticas recomendadas para los visualizadores de Dynamic Media.
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: de1116ee39024d30e14838f8b36f9ab087a45f85
+source-git-commit: fca8b4b34718bd7d22186740fac383b87e968cdb
 workflow-type: tm+mt
-source-wordcount: '3571'
+source-wordcount: '4105'
 ht-degree: 0%
 
 ---
@@ -68,6 +68,23 @@ Después de sincronizar los recursos, Selective Publish le permite controlar qu�
 Estas dos prácticas recomendadas le ayudan a lograr un mejor control, control y productividad sobre el contenido con medios enriquecidos.
 
 ¿Desea obtener más información? Vaya a [Configurar Publish selectivo en el nivel de carpeta en Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
+
+
+## Visores de Dynamic Media
+
+Las prácticas recomendadas del visualizador de Dynamic Media son directrices esenciales diseñadas para optimizar el rendimiento, la funcionalidad y la experiencia del usuario de los recursos de Dynamic Media AEM en los entornos de trabajo de los usuarios de los recursos de los que se dispone en el. Estas prácticas garantizan que los recursos se sincronicen, publiquen y configuren correctamente para utilizar todas las funcionalidades de Dynamic Media.
+
+Si sigue estas prácticas recomendadas, podrá lograr una integración optimizada, una administración eficiente de los recursos y unas interacciones mejoradas con el visualizador. La sincronización de recursos, el uso del recorte inteligente y la adherencia a las directrices de inclusión de archivos de JavaScript son prácticas importantes. Estas recomendaciones ayudan a mantener la integridad y fiabilidad de la entrega de medios en varias plataformas y dispositivos.
+
+* **Sincronizar Assets del visor:** Asegúrese de que todos los recursos del visor estén sincronizados con Dynamic Media antes de usar el reproductor. Para ver la resolución de problemas, ve al artículo [Solucionar problemas de visualizadores de Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#viewers).
+* **Página Administrador de muestras:** Acceda a la página Administrador de muestras en `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`.
+* **Publish Assets:** Asegúrese de que los recursos se publiquen antes de visualizarlos en los visores de envío.
+* **Vídeos de reproducción automática silenciados:** Para la funcionalidad de reproducción automática de vídeos, usa la configuración de vídeo silenciada porque los navegadores restringen la reproducción de vídeos con volumen.
+* **Recorte inteligente:** Utilice el componente Image v3 para el recorte inteligente a fin de mejorar la presentación de los recursos de imagen.
+* **Inclusión de archivos JavaScript:** Incluya solamente el archivo JavaScript del visor principal en su página. Evite hacer referencia a archivos JavaScript adicionales que la lógica de tiempo de ejecución del visor pueda descargar. En concreto, no vincule directamente a la biblioteca `Utils.js` del SDK de HTML5 desde la ruta de contexto `/s7viewers` (conocida como inclusión de SDK consolidada). La lógica del visor administra la ubicación de `Utils.js` o bibliotecas de visor en tiempo de ejecución similares, que pueden cambiar entre versiones. El Adobe no conserva versiones anteriores de las inclusiones del visor secundario en el servidor, por lo que la referencia directa a ellas puede interrumpir la funcionalidad del visor en futuras actualizaciones.
+* **Directrices de incrustación:** Utilice la documentación para incrustar directrices específicas de cada visor.
+¿Desea obtener más información? Vaya a [Visores de AEM Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
+* **Tutorial y ejemplos de SDK:** Consulte [Tutorial de SDK de visor](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) y [ejemplos de aplicaciones de SDK de HTML 5](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) para obtener información detallada sobre las API de componentes de SDK.
 
 
 ## Preparación de recursos para su entrega
@@ -156,7 +173,6 @@ Recuerde, estas prácticas recomendadas se alinean bien con las prácticas recom
 
 ¿Desea obtener más información? Vaya a [Prácticas recomendadas de estructura de URL para Google](https://developers.google.com/search/docs/crawling-indexing/url-structure) y [Prácticas recomendadas de SEO de imagen de Google](https://developers.google.com/search/docs/appearance/google-images)
 
-
 ### Mejorar dinámicamente las imágenes y crear efectos visuales mediante comandos
 
 **Caso comercial:** *Aplicar efectos visuales enriquecidos a las imágenes.*
@@ -191,7 +207,7 @@ Si desea superponer un logotipo o un icono en una imagen existente, Dynamic Medi
 | --- | --- |
 | **Cargar y publicar la imagen base** | En primer lugar, cargue y publique la imagen base sobre la que desee superponer el logotipo o el icono. Puede utilizar cualquier imagen como base.<br>Por ejemplo, aquí hay una imagen base:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa). |
 | **Cargar y publicar el logotipo o la imagen del icono** | A continuación, cargue y publique la imagen que desee superponer sobre la imagen base. Esta imagen debe ser un PNG transparente con el logotipo o el icono que desee superponer.<br>Esta es la imagen PNG transparente de un objeto de estrella con efectos de transparencia que se superpondrá:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
-| **Aplicar la URL de Dynamic Media** | Ahora cree una dirección URL de Dynamic Media que combine la imagen base y el logotipo o la imagen de icono. Puede utilizar comandos de URL para lograr este efecto.<br>La estructura de la dirección URL tiene este aspecto:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>donde<br>· `hotspotRetailBaseImage` es la imagen base.<br>· `starxp` es la imagen del logotipo/icono.<br>· `layer=1` especifica que el logotipo o icono se debe colocar en capas sobre la imagen base.<br>· `scale=1.25` ajusta el tamaño del logotipo/icono.<br>· `posN=0.33,-.25` determina la posición del logotipo/icono en relación con la imagen base.<br>· `fmt=png` garantiza que la salida esté en formato PNG. |
+| **Aplicar la URL de Dynamic Media** | Ahora cree una dirección URL de Dynamic Media que combine la imagen base y el logotipo o la imagen de icono. Puede utilizar comandos de URL para lograr este efecto.<br>La estructura de la dirección URL tiene este aspecto:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>donde el recurso<br>· `hotspotRetailBaseImage` es la imagen base.<br>· `starxp` es la imagen del logotipo/icono.<br>· `layer=1` especifica que el logotipo o icono se debe colocar en capas sobre la imagen base.<br>· `scale=1.25` ajusta el tamaño del logotipo/icono.<br>· `posN=0.33,-.25` determina la posición del logotipo/icono en relación con la imagen base.<br>· `fmt=png` garantiza que la salida esté en formato PNG. |
 
 ¿Qué desea saber más? Vaya a [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) para obtener más información sobre el comando `src` y otros comandos de URL de Dynamic Media.
 
@@ -246,6 +262,28 @@ Derivado de la imagen original, haciendo énfasis en la habitación.
 
 No dude en explorar estas variaciones para sus necesidades específicas.
 ¿Desea obtener más información sobre los comandos disponibles en una dirección URL? Vaya a [Referencia de comando](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
+
+### Distribución de imágenes de GIF
+
+**Caso comercial:** *GIF de secuencias que utilizan Dynamic Media*
+
+Puede cargar y enviar GIF mediante Dynamic Media. Para procesar un GIF animado, reemplace `is/image` por `is/content` en la dirección URL. Por ejemplo, si subió `abc.gif`, use lo siguiente:
+
+* Esta ruta de URL representa una vista estática del GIF:
+
+  ```
+  https://your.domain.com/is/image/yourfolder/abc
+  ```
+
+* Esta ruta URL representa la vista de animación del GIF:
+
+  ```
+  https://your.domain.com/is/content/yourfolder/abc
+  ```
+
+>[!NOTE]
+>
+>Al usar `is/content` en la ruta de acceso URL, los comandos de transformación de imágenes no se aplican al recurso.
 
 ### Publish muestra un vídeo para mi sitio web
 
@@ -349,3 +387,11 @@ Para garantizar el mejor formato optimizado para la web, puede confiar en Smart 
 Al utilizar imágenes inteligentes, puede asegurarse de que las imágenes se entreguen de la manera más eficiente posible, adaptadas al entorno de navegación de cada usuario. Este método simplifica el proceso y puede mejorar el rendimiento en términos de tiempos de carga de las imágenes y de la experiencia general del usuario.
 
 ¿Desea obtener más información? Vaya a [Imágenes inteligentes](/help/assets/dynamic-media/imaging-faq.md).
+
+### Entrega posterior de recursos a los clientes
+
+**Caso comercial:** *Después de publicar contenido nuevo o de sobrescribir contenido existente, ¿cómo se puede garantizar que los cambios aparezcan inmediatamente en la CDN?*
+
+La CDN (red de distribución de contenido) almacena en caché los recursos de Dynamic Media para enviarlos rápidamente a los clientes. Cuando se realizan actualizaciones en estos recursos, es importante que los cambios surtan efecto inmediatamente en el sitio web. Al purgar o invalidar la caché de la CDN, los recursos entregados por Dynamic Media se pueden actualizar rápidamente. Este método elimina la necesidad de esperar a que la caché caduque en función del valor TTL (Tiempo de vida), que normalmente se establece en diez horas. En su lugar, se puede enviar una solicitud desde la interfaz de usuario de Dynamic Media para que la caché caduque en cuestión de minutos.
+
+¿Desea obtener más información? Vaya a [Invalidar la caché de CDN mediante Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
