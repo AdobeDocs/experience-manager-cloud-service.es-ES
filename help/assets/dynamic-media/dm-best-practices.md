@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 57c5b886b5964e13219b2525c7ed0073292277a0
+source-git-commit: ce5f9fc101c86ffdfb685ff493e8f5e508f45e37
 workflow-type: tm+mt
-source-wordcount: '4105'
+source-wordcount: '4118'
 ht-degree: 0%
 
 ---
@@ -77,9 +77,11 @@ Las prácticas recomendadas del visualizador de Dynamic Media son directrices es
 Si sigue estas prácticas recomendadas, podrá lograr una integración optimizada, una administración eficiente de los recursos y unas interacciones mejoradas con el visualizador. La sincronización de recursos, el uso del recorte inteligente y la adherencia a las directrices de inclusión de archivos de JavaScript son prácticas importantes. Estas recomendaciones ayudan a mantener la integridad y fiabilidad de la entrega de medios en varias plataformas y dispositivos.
 
 * **Sincronizar Assets del visor:**
-Asegúrese de que todos los recursos del visualizador estén sincronizados con Dynamic Media antes de utilizar el reproductor. Para ver la resolución de problemas, ve al artículo [Solucionar problemas de visualizadores de Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#viewers).
-* **Página Administrador de muestras:**
-Acceda a la página de administración de muestra en `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`.
+Asegúrese de que todos los recursos del visualizador estén sincronizados con Dynamic Media antes de utilizar el reproductor.
+
+   * Acceda a la página de administrador de muestra en `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`. Esta página permite resincronizar los recursos de un visor, incluidos los iconos, los archivos CSS y los ajustes preestablecidos predeterminados.
+   * Si encuentra algún problema con el visor, vaya al artículo [Solucionar problemas de visualizadores de Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#viewers).
+
 * **Publish Assets:**
 Asegúrese de que los recursos se publican antes de verlos en los visores de envío.
 * **Vídeos de reproducción automática silenciados:**
@@ -400,6 +402,7 @@ Al utilizar imágenes inteligentes, puede asegurarse de que las imágenes se ent
 
 **Caso comercial:** *Después de publicar contenido nuevo o de sobrescribir contenido existente, ¿cómo se puede garantizar que los cambios aparezcan inmediatamente en la CDN?*
 
-La CDN (red de distribución de contenido) almacena en caché los recursos de Dynamic Media para enviarlos rápidamente a los clientes. Cuando se realizan actualizaciones en estos recursos, es importante que los cambios surtan efecto inmediatamente en el sitio web. Al purgar o invalidar la caché de la CDN, los recursos entregados por Dynamic Media se pueden actualizar rápidamente. Este método elimina la necesidad de esperar a que la caché caduque en función del valor TTL (Tiempo de vida), que normalmente se establece en diez horas. En su lugar, se puede enviar una solicitud desde la interfaz de usuario de Dynamic Media para que la caché caduque en cuestión de minutos.
+La CDN (red de distribución de contenido) almacena en caché los recursos de Dynamic Media para enviarlos rápidamente a los clientes. Cuando se realizan actualizaciones en estos recursos, es importante que los cambios surtan efecto inmediatamente en el sitio web. Al purgar o invalidar la caché de la CDN, los recursos entregados por Dynamic Media se pueden actualizar rápidamente. Este método elimina la necesidad de esperar a que la caché caduque en función del valor TTL (Tiempo de vida), que normalmente se establece en diez horas.
+Según el caso de uso específico, puede actualizar la configuración del TTL de CDN (Tiempo de vida) en consecuencia.
 
 ¿Desea obtener más información? Vaya a [Invalidar la caché de CDN mediante Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
