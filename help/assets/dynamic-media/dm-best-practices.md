@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: ce5f9fc101c86ffdfb685ff493e8f5e508f45e37
+source-git-commit: 5e028e99b472dc10ecd739ee5e5c70ea4daa2078
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 0%
@@ -162,14 +162,17 @@ Utilice las siguientes recomendaciones con regularidad para asegurarse de que la
 
 * **Nombres de archivos de imagen significativos:**
 Utilice nombres de archivo descriptivos que reflejen el contenido de la imagen. Por ejemplo,
+
    * use `myCompany-Silver-Wrist-Watch`
    * *evitar* `myCompany_Silver_Wrist_Watch` o `myCompanySilverWristWatch`
 
   Al hacerlo, los motores de búsqueda entienden el contexto de la imagen y mejoran la SEO. Google prefiere guiones en lugar de guiones bajos o espacios en el nombre de un archivo. Además, evite concatenar palabras en un nombre de archivo.
 * **Dominio personalizado:**
 Implemente un dominio personalizado que incluya su empresa o nombre de marca para reforzar el reconocimiento y la confianza de la marca. Por ejemplo,
+
    * use `http://images.mycompany.com/is/image/companyname/`
    * *evitar* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
+
 * **Estructura de carpetas compatible con SEO:**
 Organice las imágenes en una estructura de carpetas que incluya el nombre de su empresa o marca para mejorar la indexación, como `http://images.mycompany.com/is/image/companyname/`.
 * **Conjuntos de reglas de Dynamic Media:**
@@ -309,6 +312,7 @@ Cargue el archivo de vídeo original. Asegúrese de que sea un vídeo de alta re
 Previsualice el vídeo para asegurarse de que todo tiene el aspecto esperado. Una vez que esté satisfecho, continúe y publíquelo. Este paso hace que el vídeo sea accesible para la audiencia.
 * **Vincular o incrustar:**
 Después de la publicación, tiene dos opciones.
+
    * **Vínculo directamente:**
 Utilice la dirección URL proporcionada para vincular directamente al vídeo. Conéctelo correctamente a su sitio de marketing.
    * **Incrustar el vídeo:**
