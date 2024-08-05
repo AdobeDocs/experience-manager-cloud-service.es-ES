@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ae2805097007d3d056e30b9c8420b47027a3af0e
+source-git-commit: 4f01ca0076248442fe93161bbc8b98bffb64551b
 workflow-type: tm+mt
-source-wordcount: '5304'
-ht-degree: 99%
+source-wordcount: '5315'
+ht-degree: 100%
 
 ---
 
@@ -162,6 +162,9 @@ ht-degree: 99%
          + [Notas de la versión 2020.2.0](/help/implementing/cloud-manager/release-notes/2020/2020-2-0.md)
    + Notas de la versión de las herramientas de migración {#migration-tools}
       + [Notas de la versión actual](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+      + 2024 {#2024}
+         + [Notas de la versión 2024.01.0](/help/journey-migration/release-notes/release-notes-migration-tools-2024-01-0.md)
+         + [Notas de la versión 2024.05.0](/help/journey-migration/release-notes/release-notes-migration-tools-2024-05-0.md)
       + 2023 {#2023}
          + [Notas de la versión 2023.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-10-0.md)
          + [Notas de la versión 2023.9.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-09-0.md)
@@ -621,7 +624,7 @@ ht-degree: 99%
       + [Configuración de la asignación de metadatos de recursos](/help/assets/configure-asset-metadata-mapping.md)
       + [Instalación de [!DNL enhanced connector] para [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Eliminación de dependencias externas para instalaciones existentes](/help/assets/remove-external-dependencies.md)
-      + [Configuración de  [!DNL enhanced connector]  para  [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
+      + [Configuración de [!DNL enhanced connector] para  [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [Actualizar [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
    + Integración con Adobe Express {#integration-adobe-express}
