@@ -5,10 +5,10 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 7ec5d5e3ca487ff84bc0b1f7f040aec9475059e0
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 93%
+source-wordcount: '1204'
+ht-degree: 90%
 
 ---
 
@@ -131,6 +131,7 @@ Para establecer el estado del activo:
 1. Seleccione el recurso y haga clic en **[!UICONTROL Detalles]** en la barra de herramientas.
 
 1. En la ficha **[!UICONTROL Básico]**, seleccione el estado del recurso en la lista desplegable **[!UICONTROL Estado]**. Los valores posibles incluyen Aprobado, Rechazado y Sin estado (predeterminado).
+Si tiene Dynamic Media con capacidades OpenAPI proporcionadas para su entorno, Experience Manager Assets genera una URL pública en cuanto marca el recurso como `Approved`.
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
