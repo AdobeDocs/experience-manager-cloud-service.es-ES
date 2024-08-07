@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 655b92f0fd3c6fb69bdd9343719537d6328fa7be
 workflow-type: tm+mt
 source-wordcount: '1552'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
@@ -59,7 +59,7 @@ AEM Se puede configurar una página de error de CDN para anular la página prede
 
 ### Depuración de contenido en caché en la CDN {#purge-cdn}
 
-La configuración de TTL con el encabezado HTTP Cache-Control es un enfoque eficaz para equilibrar el rendimiento de la entrega de contenido y la actualización de este. Sin embargo, en situaciones en las que es esencial proporcionar inmediatamente contenido actualizado, puede resultar beneficioso depurar directamente la caché de CDN.
+La configuración de TTL con el encabezado de HTTP de control de caché es un enfoque eficaz para equilibrar el rendimiento de la entrega de contenido y la actualización del mismo. Sin embargo, en situaciones en las que es esencial proporcionar inmediatamente contenido actualizado, puede resultar beneficioso depurar directamente la caché de CDN.
 
 Obtenga información sobre [configurar un token de API de depuración](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token) y [purgar contenido de CDN en caché](/help/implementing/dispatcher/cdn-cache-purge.md).
 
@@ -67,7 +67,7 @@ Obtenga información sobre [configurar un token de API de depuración](/help/imp
 
 Para casos de uso de autenticación ligera, incluidas las partes interesadas de la empresa que revisan el contenido, proteja el contenido mostrando un cuadro de diálogo de autenticación básico que requiera un nombre de usuario y una contraseña. [Más información](/help/implementing/dispatcher/cdn-credentials-authentication.md) y únete al programa de adopción anticipada.
 
-## AEM Puntos de CDN del cliente a CDN administrada por el {#point-to-point-CDN}
+## La CDN del cliente apunta a la CDN administrada por AEM {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
