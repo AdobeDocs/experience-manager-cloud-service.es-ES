@@ -5,16 +5,23 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: eae5c75e1bf4f7201fe2c01d08737d36489ca3e4
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 58%
+source-wordcount: '1101'
+ht-degree: 31%
 
 ---
+
 
 # Tablero de licencias {#license-dashboard}
 
 Cloud Manager proporciona un tablero para facilitar la visualización de las autorizaciones de productos de AEMaaCS disponibles para su organización o inquilino.
+
+>[!IMPORTANT]
+>
+>El panel de licencias solo se aplica a los programas de AEM as a Cloud Service. [Los programas de AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) no se incluyen en el panel de licencias.
+>
+>Para determinar el tipo de servicio que tiene su programa (AMS o AEMaaCS), consulte el documento [Navegación por la interfaz de usuario de Cloud Manager.](/help/implementing/cloud-manager/navigation.md#program-cards)
 
 ## Información general {#overview}
 
@@ -32,8 +39,8 @@ Para acceder al tablero de licencias, siga estos pasos.
 >Un usuario con el rol **Propietario del negocio** debe iniciar sesión para ver el tablero de licencias.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
-
-1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, cambie a la ficha **Licencia**.
+1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, toque o haga clic en el botón de menú de hamburguesa en el encabezado de [Cloud Manager.](/help/implementing/cloud-manager/navigation.md#cloud-manager-header) Esto muestra las fichas.
+1. Toque o haga clic en la opción **Licencia** en la pestaña.
 
 ![Tablero de licencias](assets/license-dashboard.png)
 
@@ -41,18 +48,56 @@ El tablero se divide en tres secciones que le muestran lo siguiente:
 
 * **Soluciones**: Esta sección resume las soluciones para las que tiene licencia, como Sites o Assets.
 * **Complementos**: Esta sección resume qué complementos de las soluciones con licencia tiene disponibles.
-* **Entornos de zona protegida y desarrollo**: Esta sección resume qué entornos tiene disponibles.
+* **Otros derechos**: Esta sección resume qué zona protegida y entorno de desarrollo, así como otros derechos se pueden consumir dentro de su inquilino.
 
-Cada sección resume lo que está disponible y cómo se utiliza, si es que lo está. Actualmente solo se muestran las soluciones de Sites, aunque existan otras soluciones en el inquilino.
+Cada sección resume lo que está disponible y cómo se utiliza, si es que lo está. Actualmente solo se muestran las soluciones de Sites y Assets, aunque existan otras soluciones en el inquilino.
 
 * La columna **Estado** muestra el número de derechos no utilizados en comparación con el total disponible para el inquilino.
 * La columna **Configurado en** indica los programas en los que se ha aplicado la asignación de derechos de solución.
    * Una asignación de derechos se considera utilizada solo cuando se ha creado un entorno de producción o, si existe, si se ha ejecutado una canalización de actualización en él.
-* La columna **Uso** muestra un gráfico de las solicitudes de contenido consumidas en los últimos 12 meses cuando se hace clic sobre ellas.
+   * En la columna solo se enumera un número limitado de programas por separado; el resto se representa mediante una entrada `+x`.
+   * Pase el ratón sobre la entrada `+x` para ver una ventana emergente con los detalles de todos los programas.
+* La columna **Uso** muestra un botón **[Ver detalles de uso](#view-usage-details)** para mostrar las estadísticas de uso de la solución.
 
 >[!TIP]
 >
 >Para obtener información sobre cómo administrar los derechos de Adobe en toda la organización desde Admin Console, consulte la [descripción general del Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html).
+
+## Ver detalles de uso {#view-usage-details}
+
+El botón **Ver detalles de uso** proporciona acceso a la ventana **Detalles de uso** de la solución elegida. Esta ventana ofrece un desglose detallado, incluidos gráficos, para mostrar el uso de la solución. La forma en que se mide ese uso depende de la solución elegida.
+
+### Detalles de uso de sitios {#sites-usage-details}
+
+La ventana **Detalles de uso de sitios** presenta gráficos que ofrecen una descripción general del uso de las licencias de sitios en función de [solicitudes de contenido.](#what-is-a-content-request)
+
+![Ventana de detalles de uso de sitios](assets/sites-usage-details.png)
+
+La parte izquierda de la ventana presenta un gráfico circular que muestra el desglose del contrato para el año de contrato seleccionado en el menú desplegable **Ver año de contrato**.
+
+El lado derecho de la ventana presenta un gráfico de áreas que muestra el uso desglosado por programa a lo largo del tiempo para el año de contrato seleccionado. Al pasar el ratón por encima, aparece una ventana emergente con detalles por programa para el momento seleccionado.
+
+### Detalles de uso de Assets {#assets-usage-details}
+
+La ventana **Detalles de uso de Assets** presenta gráficos que ofrecen una descripción general del uso de sus licencias de Assets basadas en [almacenamiento](#storage) y [usuarios estándar.](#standard-users) Seleccione la ficha adecuada para alternar entre las vistas.
+
+Tanto para las vistas de almacenamiento como para las vistas de usuarios estándar, puede usar la lista desplegable **Tipo de entorno** para alternar la vista entre los entornos de producción, fase y desarrollo.
+
+#### Almacenamiento {#storage}
+
+![Ventana de detalles de uso de Assets para almacenamiento](assets/assets-usage-details-storage.png)
+
+La parte izquierda de la ventana presenta un gráfico circular que muestra el desglose del contrato para el año de contrato seleccionado en el menú desplegable **Ver año de contrato**.
+
+El lado derecho de la ventana presenta un gráfico de áreas que muestra el uso desglosado por programa a lo largo del tiempo para el año de contrato seleccionado. Al pasar el ratón por encima, aparece una ventana emergente con detalles por programa para el momento seleccionado.
+
+#### Usuarios estándar {#standard-users}
+
+![Ventana de detalles de uso de Assets para usuarios estándar](assets/assets-usage-details-standard-users.png)
+
+La parte izquierda de la ventana presenta un gráfico circular que muestra el desglose del contrato para el año de contrato seleccionado en el menú desplegable **Ver año de contrato**.
+
+El lado derecho de la ventana presenta un gráfico de áreas que muestra el uso desglosado por programa a lo largo del tiempo para el año de contrato seleccionado. Al pasar el ratón por encima, aparece una ventana emergente con detalles por programa para el momento seleccionado.
 
 ## Preguntas frecuentes  {#faq}
 
