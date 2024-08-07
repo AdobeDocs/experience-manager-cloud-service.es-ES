@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 96bf1d56d24da851ad4713e3cb0728fd7a18da18
+source-git-commit: f8b058549162b7ae3d57b1a7dd3461f738b75320
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 10%
+source-wordcount: '1269'
+ht-degree: 11%
 
 ---
 
@@ -28,7 +28,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 
 ### Variaciones de solicitudes de contenido de Cloud Service {#content-requests-variances}
 
-Las solicitudes de contenido pueden tener variaciones dentro de las herramientas de informes de Analytics de una organización, como se resume en la siguiente tabla. En general, *no* utiliza herramientas de análisis que recopilen datos mediante instrumentación del lado del cliente para informar sobre la cantidad de solicitudes de contenido de un sitio determinado, simplemente porque a menudo dependen del consentimiento del usuario para activarse, por lo que les falta una fracción significativa del tráfico. Las herramientas de Analytics que recopilan datos del lado del servidor en archivos de registro o informes de CDN para clientes que agregan su propia CDN además de AEM as a Cloud Service proporcionarán mejores recuentos. Para generar informes sobre las vistas de página y su rendimiento asociado, el [servicio de datos de Adobe RUM](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) es la opción recomendada por el Adobe.
+Las solicitudes de contenido pueden tener variaciones dentro de las herramientas de informes de Analytics de una organización, como se resume en la siguiente tabla. En general, *no* utiliza herramientas de análisis que recopilen datos mediante instrumentación del lado del cliente para informar sobre la cantidad de solicitudes de contenido de un sitio determinado, simplemente porque a menudo dependen del consentimiento del usuario para activarse, por lo que les falta una fracción significativa del tráfico. Las herramientas de Analytics que recopilan datos del lado del servidor en archivos de registro o informes de CDN para clientes que agregan su propia CDN además de AEM as a Cloud Service proporcionarán mejores recuentos.
 
 | Motivo de la variación | Explicación |
 |---|---|
