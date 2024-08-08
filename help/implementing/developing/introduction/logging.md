@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo utilizar el registro para AEM as a
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6cb2665f2a2e61216608dfe9c3444adeb472395f
+source-git-commit: 6f658c5e991c89ff4129352444ba9960d83c8884
 workflow-type: tm+mt
 source-wordcount: '2829'
 ht-degree: 8%
@@ -617,9 +617,9 @@ Los registros de CDN se reenviarán a Splunk para nuevas solicitudes de vale de 
 
 >[!NOTE]
 >
->No se pueden reenviar a Splunk registros específicos y registros de usuario específicos.
+>*Los registros específicos de* y *los registros específicos de* usuarios no se pueden reenviar a Splunk.
 >
->Todos los registros se reenviarán a Splunk, donde el cliente puede realizar cualquier otro filtrado en función de sus necesidades.
+>**Todos** los registros se reenviarán a Splunk, donde el cliente puede realizar cualquier otro filtrado según sus requisitos.
 
 ### Activación del reenvío de Splunk {#enabling-splunk-forwarding}
 
