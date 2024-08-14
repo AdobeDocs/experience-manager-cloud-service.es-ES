@@ -4,9 +4,9 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 8c1bad70a82775c1c99b0c35f07e0d1cae602230
+source-git-commit: 80edd0255b38beee93b3f9c779ae0f364500b4a5
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1176'
 ht-degree: 17%
 
 ---
@@ -93,7 +93,7 @@ La activación de funcionalidades 2024.8.0 proporcionará el conjunto completo d
 
 ### Problemas conocidos {#known-issues-17465}
 
-* ASSETS-40875: NullPointerException en AssetDeleteHandler y Handler se activa para las páginas.
+* ASSETS-40875: la clase AssetDeleteHandler escucha eventos de eliminación de recursos y realiza acciones específicas según el tipo de evento de eliminación (PRE_DELETE o POST_DELETE). En determinados casos, el tipo de evento POST_DELETE provoca una NullPointerException.
 * FORMS-14340: Error al crear una instancia de FormsAndDocumentOmniSearchHandler y CloudStorageSubmitActionInserter. Son instrucciones de registro inofensivas.
 * FORMS-15818: entrada de descriptor de componente &quot;OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml&#39; no se encontró en los registros del servidor. Son instrucciones de registro inofensivas.
 * 
