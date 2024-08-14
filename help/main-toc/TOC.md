@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a1baa7f29c6e15af11347debdd341f9972c06e83
-workflow-type: ht
-source-wordcount: '5315'
+source-git-commit: bd5f77e8e27b55c538bbe50d28ae56f6e983f541
+workflow-type: tm+mt
+source-wordcount: '5320'
 ht-degree: 100%
 
 ---
@@ -859,6 +859,7 @@ ht-degree: 100%
          + [Configuración de direcciones URL para SEO](/help/commerce-cloud/configuring/advanced-url-configuration.md)
          + [Opciones de almacenamiento en caché](/help/commerce-cloud/configuring/caching.md)
          + [Encabezados HTTP personalizados](/help/commerce-cloud/configuring/custom-http-headers.md)
+         + [Configuración del carro de compras y Dispatcher](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
       + Desarrollo de {#developing}
          + [Desarrollo con el SDK de AEM Cloud Service](/help/commerce-cloud/develop.md)
          + [Diseño de componentes del CIF](/help/commerce-cloud/customizing/style-cif-component.md)
