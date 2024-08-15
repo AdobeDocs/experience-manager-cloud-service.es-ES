@@ -4,9 +4,9 @@ description: En esta página se describe cómo crear y administrar canales en Sc
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 feature: Authoring Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1102'
 ht-degree: 1%
 
 ---
@@ -95,7 +95,7 @@ Las siguientes plantillas están disponibles mientras se usa el asistente para c
 
 Esta capacidad permite definir una programación de activación predeterminada para un canal y utilizarla de forma predeterminada para cada asignación de una visualización. Esto proporciona un método para que no sea necesario repetir la engorrosa definición de programación.
 
-1. Vaya al proveedor de servicios de Screens desde [aquí](https://experience.adobe.com/screens).
+1. Vaya a [Proveedor de servicios de Screens](https://experience.adobe.com/screens).
 
 ### Crear detalles de asignación predeterminados para un canal {#create-default}
 

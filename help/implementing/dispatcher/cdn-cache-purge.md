@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo quitar objetos en caché de la cac
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 3b55f3094b7154b7723ef7ae2230d7ae01eb4abc
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '433'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 # Depuración de la caché de la CDN {#cdn-purge-cache}
 
 La depuración elimina un objeto de la caché de la CDN de Adobe, lo que da como resultado que las solicitudes futuras sigan al origen como una falta de caché, en lugar de servirse desde la caché.
-AEM as a Cloud Service le permite configurar un token de API de depuración, que luego se puede utilizar en las llamadas de API de depuración. Lea el artículo [Configuración de credenciales y autenticación de CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) para saber cómo configurar este token mediante las directivas de autenticación de canalización de configuración de Cloud Manager.
+AEM as a Cloud Service le permite configurar un token de API de depuración, que luego se puede utilizar en las llamadas de API de depuración. Lea [Configuración de credenciales y autenticación de CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) para obtener información sobre cómo configurar este token mediante las directivas de autenticación de canalización de configuración de Cloud Manager.
 
 Existen tres variaciones de depuración admitidas:
 
@@ -75,4 +75,4 @@ Tenga en cuenta que el encabezado `X-AEM-Purge` debe incluir el valor &quot;todo
 
 ## Interacciones con la capa de Apache/Dispatcher {#apache-layer}
 
-Como se describe en el [artículo Flujo de distribución de contenido](/help/implementing/dispatcher/overview.md), la CDN recupera contenido de la capa Apache/Dispatcher si la caché ha caducado. Esto implica que antes de purgar un recurso en la CDN, debe asegurarse de que también hay una versión nueva del contenido disponible en Dispatcher. Para obtener más información, consulte [Invalidación de caché de Dispatcher](/help/implementing/dispatcher/caching.md#disp).
+Como se describe en [Flujo de distribución de contenido](/help/implementing/dispatcher/overview.md), la CDN recupera contenido de la capa Apache/Dispatcher si la caché ha caducado. Esto implica que antes de purgar un recurso en la CDN, debe asegurarse de que también hay una versión nueva del contenido disponible en Dispatcher. Para obtener más información, consulte [Invalidación de caché de Dispatcher](/help/implementing/dispatcher/caching.md#disp).

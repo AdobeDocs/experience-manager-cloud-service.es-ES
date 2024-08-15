@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo utilizar el registro para AEM as a
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6f658c5e991c89ff4129352444ba9960d83c8884
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '2829'
+source-wordcount: '2831'
 ht-degree: 8%
 
 ---
@@ -628,7 +628,7 @@ En la solicitud de soporte, los clientes deben indicar:
 * Dirección de extremo HEC de Splunk. Este extremo debe tener un certificado SSL válido y ser de acceso público.
 * El índice de Splunk
 * El puerto de Splunk
-* El token de HEC de Splunk. Consulte [esta página](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) para obtener más información.
+* El token de HEC de Splunk. Consulte [ejemplos del Recopilador de eventos HTTP](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) para obtener más información.
 
 Las propiedades anteriores deben especificarse para cada combinación de programa/tipo de entorno relevante. Por ejemplo, si un cliente desea entornos de desarrollo, ensayo y producción, debe proporcionar tres conjuntos de información, como se indica a continuación.
 

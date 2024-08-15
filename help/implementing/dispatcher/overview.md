@@ -4,10 +4,10 @@ description: Obtenga más información sobre el flujo de datos de entrega de con
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 feature: Dispatcher
 role: Admin
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 93%
+ht-degree: 87%
 
 ---
 
@@ -36,4 +36,4 @@ Las siguientes secciones proporcionan detalles sobre la distribución de conteni
 * [Almacenamiento en caché](/help/implementing/dispatcher/caching.md)
 
 
-Está disponible información sobre la replicación del servicio de autor al servicio de publicación [aquí](/help/operations/replication.md).
+Para obtener información acerca de la replicación del servicio de autor al servicio de publicación, vea [Replicación](/help/operations/replication.md).

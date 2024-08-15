@@ -4,9 +4,9 @@ description: SPA SPA Este artículo presenta una aplicación de ejemplo para la 
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1127'
 ht-degree: 6%
 
 ---
@@ -66,7 +66,7 @@ Dado que este ejemplo se basa en el marco de React, hay dos dependencias especí
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-Encontrará más detalles al respecto [en GitHub aquí](https://github.com/wcm-io-frontend/aem-clientlib-generator).
+Para obtener más información, consulte [aem-clientlib-generator en GitHub](https://github.com/wcm-io-frontend/aem-clientlib-generator).
 
 `aem-clientlib-generator` está configurado en el archivo `clientlib.config.js` de la siguiente manera.
 

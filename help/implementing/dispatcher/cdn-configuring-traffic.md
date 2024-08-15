@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo configurar el tráfico de CDN decl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 3c546a05cf91dd8dcba39e42cd0f19857713f130
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1314'
 ht-degree: 2%
 
 ---
@@ -39,7 +39,7 @@ Para poder configurar el tráfico en la CDN, debe hacer lo siguiente:
 
 1. Cree un archivo con el nombre `cdn.yaml` o similar, haciendo referencia a los distintos fragmentos de configuración en las secciones siguientes.
 
-   Todos los fragmentos de código tienen estas propiedades comunes, que se describen en el [artículo de la canalización de configuración](/help/operations/config-pipeline.md#common-syntax). El valor de la propiedad `kind` debe ser *CDN* y la propiedad `version` debe establecerse en *1*.
+   Todos los fragmentos de código tienen estas propiedades comunes, que se describen en [Configurar canalización](/help/operations/config-pipeline.md#common-syntax). El valor de la propiedad `kind` debe ser *CDN* y la propiedad `version` debe establecerse en *1*.
 
    ```
    kind: "CDN"
@@ -48,9 +48,9 @@ Para poder configurar el tráfico en la CDN, debe hacer lo siguiente:
      envTypes: ["dev"]
    ```
 
-1. Coloque el archivo en algún lugar bajo una carpeta de nivel superior llamada *config* o similar, como se describe en [Artículo de canalización de configuración](/help/operations/config-pipeline.md#folder-structure).
+1. Coloque el archivo en algún lugar bajo una carpeta de nivel superior llamada *config* o similar, como se describe en [Canalización de configuración](/help/operations/config-pipeline.md#folder-structure).
 
-1. Cree una canalización de configuración en Cloud Manager, tal como se describe en el [artículo Canalización de configuración](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+1. Cree una canalización de configuración en Cloud Manager, como se describe en [Canalización de configuración](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 1. Implemente la configuración de.
 

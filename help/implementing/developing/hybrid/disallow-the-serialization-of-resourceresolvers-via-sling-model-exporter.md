@@ -4,9 +4,9 @@ description: No permitir la serialización de ResourceResolvers mediante el expo
 exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '529'
 ht-degree: 5%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 La función Exportador de modelos Sling permite serializar objetos de modelos Sling en formato JSON. SPA AEM Esta función se utiliza ampliamente, ya que permite a los usuarios de (aplicaciones de una sola página) acceder fácilmente a los datos de los usuarios de la página de inicio de sesión de la página de la página de inicio de sesión. En el lado de la implementación, la biblioteca Jacson Databind se utiliza para serializar estos objetos.
 
-La serialización es una operación recursiva. Partiendo de un &quot;objeto raíz&quot;, se repite recursivamente a través de todos los objetos aptos y los serializa a ellos y a sus elementos secundarios. Puede encontrar una descripción de los campos serializados en [este artículo](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not).
+La serialización es una operación recursiva. Partiendo de un &quot;objeto raíz&quot;, se repite recursivamente a través de todos los objetos aptos y los serializa a ellos y a sus elementos secundarios. Puede encontrar una descripción de los campos que se serializan en el artículo [Jackson - Decidir qué campos se serializan/deserializan](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not).
 
 Este método serializa todos los tipos de objetos en JSON y, naturalmente, también puede serializar un objeto Sling `ResourceResolver`, si está cubierto por las reglas de serialización. Esto resulta problemático, ya que el servicio `ResourceResolver` (y, por lo tanto, también el objeto de servicio que lo representa) contiene información potencialmente confidencial, que no debería revelarse. Por ejemplo:
 

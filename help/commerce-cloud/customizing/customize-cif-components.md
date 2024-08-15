@@ -4,9 +4,9 @@ description: AEM CIF Obtenga información sobre cómo personalizar los component
 feature: Commerce Integration Framework
 role: Admin
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: ef58cf5b216ef308cc65436f2eed2e500fb2bd96
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '2298'
+source-wordcount: '2300'
 ht-degree: 9%
 
 ---
@@ -175,7 +175,7 @@ A continuación, utilice un IDE de GraphQL para comprobar que el atributo `eco_f
 
    >[!TIP]
    >
-   > Lea la documentación más detallada sobre [Adobe Commerce GraphQL aquí](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
+   > Para obtener más información, consulte [Adobe Commerce GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
 ## Actualización del modelo de Sling para el teaser de productos {#updating-sling-model-product-teaser}
 
@@ -385,7 +385,7 @@ En este caso, desea renderizar un titular sobre el teaser para indicar que el pr
 
    Al llamar a un método del modelo Sling en HTL, la parte `get` y `is` del método se borra y la primera letra se convierte a minúsculas. Así que `isShowBadge()` se convierte en `.showBadge` y `isEcoFriendly` se convierte en `.ecoFriendly`. En función del valor booleano devuelto por `.isEcoFriendly()`, determina si se muestra `<span>Eco Friendly</span>`.
 
-   Encontrará más información sobre `data-sly-test` y otras [instrucciones de bloque HTL aquí](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html).
+   Encontrará más información sobre `data-sly-test` y otras instrucciones de bloque HTL en [Especificación de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html).
 
 1. AEM Guarde los cambios e implemente las actualizaciones para que se puedan usar con sus habilidades con Maven, desde un terminal de línea de comandos:
 
@@ -479,7 +479,7 @@ En este punto está funcionando la lógica de cuándo mostrar el distintivo **Ec
 
 ## Felicitaciones {#congratulations}
 
-AEM CIF Ha personalizado su primer componente de la. Descargue los [archivos de solución finalizados aquí](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
+AEM CIF Ha personalizado su primer componente de la. Puede [descargar los archivos de la solución aquí](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
 
 ## Desafío de bonificación {#bonus-challenge}
 

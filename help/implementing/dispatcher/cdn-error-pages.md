@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo anular la página de error predete
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '364'
 ht-degree: 1%
 
 ---
@@ -22,9 +22,9 @@ Para poder anular la página de error predeterminada, debe hacer lo siguiente:
 
 1. Cree un archivo con el nombre `cdn.yaml` o similar, haciendo referencia a la sección de sintaxis siguiente.
 
-1. Coloque el archivo en algún lugar bajo una carpeta de nivel superior llamada *config* o similar, como se describe en [artículo de canalización de configuración](/help/operations/config-pipeline.md#folder-structure).
+1. Coloque el archivo en algún lugar bajo una carpeta de nivel superior llamada *config* o similar, como se describe en [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#folder-structure).
 
-1. Cree una canalización de configuración en Cloud Manager, tal como se describe en el [artículo de canalización de configuración](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+1. Cree una canalización de configuración en Cloud Manager, tal como se describe en [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 1. Implemente la configuración de.
 
@@ -47,7 +47,7 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
-Consulte el artículo [canalización de configuración](/help/operations/config-pipeline.md#common-syntax) para obtener una descripción de las propiedades encima del nodo de datos. El valor de la propiedad kind debe ser *CDN* y la propiedad `version` debe establecerse en *1*.
+Consulte [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#common-syntax) para obtener una descripción de las propiedades sobre el nodo de datos. El valor de la propiedad kind debe ser *CDN* y la propiedad `version` debe establecerse en *1*.
 
 
 | Nombre | Propiedades permitidas | Significado |

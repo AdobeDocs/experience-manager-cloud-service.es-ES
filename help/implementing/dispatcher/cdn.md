@@ -4,9 +4,9 @@ description: AEM AEM Aprenda a utilizar la CDN administrada por el y a apuntar s
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 655b92f0fd3c6fb69bdd9343719537d6328fa7be
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1555'
 ht-degree: 18%
 
 ---
@@ -178,7 +178,7 @@ AEM La CDN gestionada por el grupo de usuarios agrega encabezados a cada solicit
 >
 >Si hay una CDN administrada por el cliente, estas cabeceras reflejan la ubicación del servidor proxy CDN de los clientes en lugar del cliente real. Por lo tanto, para la CDN administrada por el cliente, la CDN de los clientes debe administrar los encabezados de geolocalización.
 
-Los valores de los códigos de país son los códigos Alpha-2 que se describen [aquí](https://en.wikipedia.org/wiki/ISO_3166-1).
+Los valores de los códigos de país son los códigos Alpha-2 que se describen en [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1).
 
 Los valores de los códigos de continente son:
 

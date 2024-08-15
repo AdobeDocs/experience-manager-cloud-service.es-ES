@@ -4,10 +4,10 @@ description: Obtenga información sobre los conectores, lo que pueden hacer y c�
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 96%
+source-wordcount: '936'
+ht-degree: 94%
 
 ---
 
@@ -60,7 +60,7 @@ Para admitir implementaciones móviles, los paquetes de AEM as a Cloud Service, 
 * `/apps`
 * `/content` y `/conf`
 
-Los conectores deben cumplir estas directrices de empaquetado, que se describen en [este artículo](/help/implementing/developing/introduction/aem-project-content-package-structure.md). Los conectores existentes también deben refactorizarse para ajustarse.
+AEM Los conectores deben cumplir estas directrices de empaquetado, que se describen en [Estructura del proyecto](/help/implementing/developing/introduction/aem-project-content-package-structure.md). Los conectores existentes también deben refactorizarse para ajustarse.
 
 Además, solo Adobe debe escribir código en `/libs`, y los clientes y socios en `/apps`.
 

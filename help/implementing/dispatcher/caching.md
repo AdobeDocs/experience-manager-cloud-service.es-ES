@@ -4,9 +4,9 @@ description: Obtenga información acerca de los conceptos básicos del almacenam
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '2894'
+source-wordcount: '2897'
 ht-degree: 1%
 
 ---
@@ -245,7 +245,7 @@ En el caso de los entornos creados en octubre de 2023 o posterior, para almacena
 
 Envíe un ticket de asistencia si desea deshabilitar este comportamiento.
 
-Para entornos creados antes de octubre de 2023, se recomienda configurar la propiedad `ignoreUrlParams` de la configuración de Dispatcher como [documentada aquí](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
+Para entornos creados antes de octubre de 2023, se recomienda configurar la propiedad `ignoreUrlParams` de la configuración de Dispatcher; consulte [Configuración de Dispatcher: omitiendo parámetros de URL](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
 
 Existen dos formas de ignorar los parámetros de marketing. (Donde se prefiere el primero para ignorar la eliminación de caché mediante parámetros de consulta):
 

@@ -5,10 +5,10 @@ feature: Integration
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 81%
+source-wordcount: '593'
+ht-degree: 75%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 81%
 La integración de Adobe Analytics y AEM as a Cloud Service permite rastrear la actividad de la página web. La integración requiere lo siguiente:
 
 * El uso de la interfaz de usuario táctil para crear una configuración de Analytics en AEM as a Cloud Service. Se requiere autenticación IMS para integrar Adobe Analytics con AEM as a Cloud Service.
-* adición y configuración de Adobe Analytics como extensión en [Adobe Launch](#analytics-launch). Para obtener más información sobre Adobe Launch, consulte [esta página](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=es).
+* adición y configuración de Adobe Analytics como extensión en [Adobe Launch](#analytics-launch). Para obtener más información sobre Adobe Launch, puede empezar con la [guía de inicio rápido](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=es).
 
 En comparación con las versiones anteriores de AEM, la configuración de Analytics en AEM as a Cloud Service no ofrece compatibilidad con el marco de trabajo. Ahora se realiza a través de Adobe Launch, que es la herramienta de facto para instrumentar un sitio AEM con capacidades de Analytics (bibliotecas JS). En Adobe Launch, se crea una propiedad donde se puede configurar la extensión de Adobe Analytics y se crean reglas para enviar datos a Adobe Analytics. Adobe Launch ha reemplazado la tarea de análisis proporcionada por SiteCatalyst.
 
@@ -43,7 +43,7 @@ Los campos presentes en la ventana de configuración son los siguientes:
 |---|---|
 | Título | El nombre de la configuración |
 | Configuración de IMS | Seleccione la configuración de IMS (consulte la sección siguiente) |
-| Segmento | Opción para usar un segmento de Analytics definido en el grupo de informes actual. Los informes de Analytics se filtran según el segmento. Consulte [esta página](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=es) para obtener más información. |
+| Segmento | Opción para usar un segmento de Analytics definido en el grupo de informes actual. Los informes de Analytics se filtran según el segmento. Consulte [Acerca de los segmentos](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=es) para obtener más información. |
 | Grupos de informes | Repositorio en el que se envían datos y se extraen informes. Los grupos de informes definen los informes completos e independientes de un sitio web concreto, de un conjunto de sitios web o de un subconjunto de páginas de sitios web. Puede ver los informes recuperados de un único grupo de informes y puede editar este campo en una configuración en cualquier momento según sus necesidades. |
 
 ### Adobe Analytics con autenticación IMS {#configuration-parameters-ims}
@@ -68,7 +68,7 @@ Adobe Analytics se puede añadir como extensión en la propiedad Launch. Se pued
 
 * Vea [este vídeo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html?lang=es) para aprender a configurar la extensión de Analytics en Launch para un sitio básico.
 
-* Consulte [esta página](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=es) para obtener más información sobre cómo crear reglas y enviar datos a Adobe Analytics.
+* Consulte [Agregar Adobe Analytics](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=es) para obtener detalles sobre cómo crear reglas y enviar datos a Adobe Analytics.
 
 >[!NOTE]
 >

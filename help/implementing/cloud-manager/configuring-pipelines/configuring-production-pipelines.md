@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 68%
+source-wordcount: '1374'
+ht-degree: 69%
 
 ---
 
@@ -115,7 +115,7 @@ La canalización se guarda y ahora puede [administrar las canalizaciones](managi
 AEM Una implementación de destino implementa el código únicamente para partes seleccionadas de la aplicación de. En una implementación de este tipo, puede elegir **Incluir** uno de los siguientes tipos de código:
 
 * AEM **Configuración**: configure las opciones para las distintas características de su entorno de.
-   * Consulte el artículo [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md) para obtener una lista de las configuraciones admitidas, que incluye el reenvío de registros, las tareas de mantenimiento relacionadas con la depuración y varias configuraciones de CDN, y para administrarlas en el repositorio de modo que se implementen correctamente.
+   * Consulte [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md) para obtener una lista de las configuraciones admitidas, que incluye el reenvío de registros, las tareas de mantenimiento relacionadas con la depuración y varias configuraciones de CDN, y para administrarlas en el repositorio de modo que se implementen correctamente.
    * Al ejecutar una canalización de implementación de destino, se implementarán las configuraciones, siempre que se guarden en el entorno, el repositorio y la rama que haya definido en la canalización.
    * En cualquier momento, solo puede haber una canalización de configuración por entorno.
 * **Código front-end**: configure JavaScript AEM y CSS para el front-end de la aplicación.

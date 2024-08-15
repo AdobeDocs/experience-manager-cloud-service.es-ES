@@ -4,10 +4,10 @@ description: Conozca los pasos para habilitar la experiencia completa de AEM Scr
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '2654'
-ht-degree: 100%
+source-wordcount: '2666'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ Conozca los pasos para habilitar la experiencia completa de AEM Screens as a Clo
 
 >[!NOTE]
 >
->La demostración de AEM Screens requiere que se agregue el complemento Screens al programa Cloud Manager. Descubra [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/adding-screens-addon/add-on-new-program-screens-cloud.html?lang=es) cómo se agrega.
+>La demostración de AEM Screens requiere que se agregue el complemento Screens al programa Cloud Manager. Aprenda a agregarlo con [Agregar Screens como complemento a un nuevo programa en Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md).
 
 ## La historia hasta ahora {#story-so-far}
 

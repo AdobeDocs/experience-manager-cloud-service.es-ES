@@ -4,10 +4,10 @@ description: Obtenga información acerca de diferentes consideraciones de permis
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 96%
+source-wordcount: '817'
+ht-degree: 93%
 
 ---
 
@@ -37,7 +37,7 @@ En un nivel superior, el proceso es el siguiente:
 
 >[!TIP]
 >
-> Encontrará una guía detallada en vídeo sobre la administración de usuarios y grupos de IMS y AEM [aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=es).
+>AEM Para ver un tutorial en vídeo detallado sobre la administración de usuarios y grupos de IMS y de los usuarios de la, consulte [Configuración del acceso a AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=es).
 
 Para administrar **grupos** en AEM, vaya a **Herramientas** > **Seguridad** > **Grupos**.
 

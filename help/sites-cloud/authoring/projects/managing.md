@@ -5,10 +5,10 @@ exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 82%
+source-wordcount: '876'
+ht-degree: 81%
 
 ---
 
@@ -92,7 +92,7 @@ Para añadir elementos a un mosaico, haga lo siguiente:
 
    ![Adición de un elemento a un mosaico](/help/sites-cloud/authoring/assets/project-workflows.png)
 
-1. Agregue un elemento al mosaico como lo haría al crear un mosaico. Los mosaicos del proyecto se describen [aquí](/help/sites-cloud/authoring/projects/overview.md#project-tiles). En este ejemplo, se ha añadido otro flujo de trabajo.
+1. Agregue un elemento al mosaico como lo haría al crear un mosaico. Consulte [Mosaicos del proyecto](/help/sites-cloud/authoring/projects/overview.md#project-tiles) para obtener más información. En este ejemplo, se ha añadido otro flujo de trabajo.
 
 ### Apertura de un mosaico {#opening-a-tile}
 

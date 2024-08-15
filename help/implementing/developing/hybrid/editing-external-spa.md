@@ -4,7 +4,7 @@ description: SPA AEM En este documento se describen los pasos recomendados para 
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '2374'
 ht-degree: 1%
@@ -362,7 +362,7 @@ AEM SPA Para habilitar la edición dentro de los parámetros para este ejemplo, 
 
 ## Limitaciones del marco {#framework-limitations}
 
-El componente RemotePage espera que la implementación proporcione un manifiesto de recurso como el que se encuentra [aquí](https://github.com/shellscape/webpack-manifest-plugin). Sin embargo, el componente RemotePage solo se ha probado para funcionar con el marco de React (y Next.js a través del componente remote-page-next) y, por lo tanto, no admite la carga remota de aplicaciones desde otros marcos, como Angular.
+El componente RemotePage espera que la implementación proporcione un manifiesto de recurso como [webpack-manifest-plugin en GitHub](https://github.com/shellscape/webpack-manifest-plugin). Sin embargo, el componente RemotePage solo se ha probado para funcionar con el marco de React (y Next.js a través del componente remote-page-next) y, por lo tanto, no admite la carga remota de aplicaciones desde otros marcos, como Angular.
 
 ## Recursos adicionales {#additional-resources}
 

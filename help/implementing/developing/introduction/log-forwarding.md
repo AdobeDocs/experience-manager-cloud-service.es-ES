@@ -4,9 +4,9 @@ description: Obtenga información acerca del reenvío de registros a Splunk y ot
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cb4299be4681b24852a7e991c123814d31f83cad
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1375'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Esta función aún no se ha lanzado y es posible que algunos destinos de registro no estén disponibles en el momento del lanzamiento. Mientras tanto, puede abrir un ticket de asistencia para reenviar registros a **Splunk**, tal como se describe en el [artículo de registro](/help/implementing/developing/introduction/logging.md).
+>Esta función aún no se ha lanzado y es posible que algunos destinos de registro no estén disponibles en el momento del lanzamiento. Mientras tanto, puede abrir un ticket de asistencia para reenviar registros a **Splunk**, tal como se describe en [Registro para AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md).
 
 AEM Los clientes que tengan una licencia para un proveedor de registro o alojen un producto de registro pueden tener registros de registro (incluidos los registros de Apache/Dispatcher) y registros de CDN reenviados a los destinos de registro asociados. AEM as a Cloud Service admite los siguientes destinos de registro:
 
@@ -169,7 +169,7 @@ aemcdn/
    2024-03-04T10:00:30.000-mno.log
 ```
 
-Cada archivo contiene varias entradas de registro json, cada una en una línea independiente. Los formatos de entrada de registro se describen en el [artículo de registro](/help/implementing/developing/introduction/logging.md), y cada entrada de registro también incluye las propiedades adicionales mencionadas en la sección [Formatos de entrada de registro](#log-format) a continuación.
+Cada archivo contiene varias entradas de registro json, cada una en una línea independiente. Los formatos de entrada de registro se describen en [Registro para AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md), y cada entrada de registro también incluye las propiedades adicionales que se mencionan en la sección [Formatos de entrada de registro](#log-format) a continuación.
 
 #### AEM Registros de Azure Blob Storage {#azureblob-aem}
 
@@ -183,7 +183,7 @@ AEM Los registros de datos (incluido Apache/Dispatcher) aparecen debajo de una c
 
 En cada carpeta, se crea un solo archivo y se anexa a. Los clientes son responsables de procesar y administrar este archivo para que no crezca demasiado.
 
-Consulte los formatos de entrada de registro en el [artículo de registro](/help/implementing/developing/introduction/logging.md). Las entradas de registro también incluirán las propiedades adicionales mencionadas en la sección [Formatos de entrada de registro](#log-formats) a continuación.
+Consulte los formatos de entrada de registro en [Registro para AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md). Las entradas de registro también incluirán las propiedades adicionales mencionadas en la sección [Formatos de entrada de registro](#log-formats) a continuación.
 
 
 ### Datadog {#datadog}
@@ -266,7 +266,7 @@ Consideraciones:
 
 #### Registros de CDN HTTPS {#https-cdn}
 
-Las solicitudes web (POST) se enviarán de manera continua, con una carga útil json que es una matriz de entradas de registro, con el formato de entrada de registro descrito en el [artículo de registro](/help/implementing/developing/introduction/logging.md#cdn-log). A continuación se mencionan propiedades adicionales en la sección [Formatos de entrada de registro](#log-formats).
+Las solicitudes web (POST) se enviarán de manera continua, con una carga útil json que es una matriz de entradas de registro, con el formato de entrada de registro descrito en [Registro para AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md#cdn-log). A continuación se mencionan propiedades adicionales en la sección [Formatos de entrada de registro](#log-formats).
 
 También debe haber una propiedad denominada `sourcetype`, que se ha establecido en el valor `aemcdn`.
 
@@ -276,7 +276,7 @@ También debe haber una propiedad denominada `sourcetype`, que se ha establecido
 
 #### AEM Registros de HTTPS {#https-aem}
 
-AEM Para los registros de datos (incluido apache/dispatcher), las solicitudes web (POST) se enviarán continuamente, con una carga útil json que es una matriz de entradas de registro, con los distintos formatos de entrada de registro como se describe en el [artículo de registro](/help/implementing/developing/introduction/logging.md). A continuación se mencionan propiedades adicionales en la sección [Formatos de entrada de registro](#log-format).
+AEM Para los registros de datos (incluido apache/dispatcher), las solicitudes web (POST) se enviarán continuamente, con una carga útil json que es una matriz de entradas de registro, con los distintos formatos de entrada de registro como se describe en [Registro para AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md). A continuación se mencionan propiedades adicionales en la sección [Formatos de entrada de registro](#log-format).
 
 También debe existir una propiedad denominada `sourcetype`, que se establezca en uno de estos valores:
 
@@ -323,7 +323,7 @@ data:
 
 ## Formatos de entrada de registro {#log-formats}
 
-AEM Consulte el [artículo de registro](/help/implementing/developing/introduction/logging.md) general para saber el formato de cada tipo de registro respectivo (registros de CDN y registros de, incluidos Apache/Dispatcher).
+Consulte [Registro para AEM as a Cloud Service AEM](/help/implementing/developing/introduction/logging.md) para ver el formato de cada tipo de registro respectivo (registros de CDN y registros de, incluidos Apache/Dispatcher).
 
 Dado que los registros de varios programas y entornos se pueden reenviar al mismo destino de registro, además de la salida descrita en el artículo de registro, se incluirán las siguientes propiedades en cada entrada de registro:
 
@@ -350,7 +350,7 @@ aem_tier: author
 
 Algunas organizaciones eligen restringir qué tráfico pueden recibir los destinos de registro.
 
-Para el registro de CDN, puede incluir en la lista de permitidos las direcciones IP, tal como se describe en [este artículo](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Si esa lista de direcciones IP compartidas es demasiado grande, considere la posibilidad de enviar tráfico a un almacén de blobs de Azure (que no sea de Adobe) donde se pueda escribir lógica para enviar los registros de una IP dedicada a su destino final.
+Para el registro de CDN, puede incluir en la lista de permitidos las direcciones IP, tal como se describe en [documentación de Fastly: Lista de IP públicas](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Si esa lista de direcciones IP compartidas es demasiado grande, considere la posibilidad de enviar tráfico a un almacén de blobs de Azure (que no sea de Adobe) donde se pueda escribir lógica para enviar los registros de una IP dedicada a su destino final.
 
 AEM Para los registros de datos (incluido Apache/Dispatcher), puede configurar el reenvío de registros para que pase por [redes avanzadas](/help/security/configuring-advanced-networking.md). Vea los patrones de los tres tipos de red avanzados siguientes, que utilizan un parámetro `port` opcional, junto con el parámetro `host`.
 

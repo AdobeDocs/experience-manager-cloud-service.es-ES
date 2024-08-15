@@ -4,10 +4,10 @@ description: Comprenda la autenticación necesaria para las consultas de Adobe E
 feature: Headless, Content Fragments,GraphQL API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 100%
+source-wordcount: '231'
+ht-degree: 96%
 
 ---
 
@@ -41,4 +41,4 @@ Todas las solicitudes realizadas con el token de acceso las realizará en realid
 
 Esto significa que debe comprobar que la cuenta tiene los permisos necesarios para ejecutar consultas de GraphQL.
 
-Puede comprobarlo utilizando GraphiQL en la instancia local. Más detalles acerca de [los permisos se pueden encontrar aquí](/help/headless/security/permissions.md).
+Puede comprobarlo utilizando GraphiQL en la instancia local. Para obtener más información, consulte [Consideraciones de permisos para contenido sin encabezado](/help/headless/security/permissions.md).

@@ -4,10 +4,10 @@ description: Obtenga información acerca de la arquitectura de alto nivel para A
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 100%
+source-wordcount: '552'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ Un entorno de AEM típico está formado por un servicio de creación, un servici
 
 * **Dispatcher** es un servidor web estático ampliado con el módulo Dispatcher de AEM. Proporciona capacidades de almacenamiento en caché y otra capa de seguridad. **Dispatcher** se encuentra delante de los servicios **Publicación** y **Previsualización**.
 
-Dentro de un programa de AEM as a Cloud Service puede tener varios entornos: Desarrollo, Ensayo y Producción. Cada entorno tendría su propio servicio de **creación**, **publicación** y **previsualización**. Puede obtener más información acerca de la administración de [entornos aquí](/help/implementing/cloud-manager/manage-environments.md).
+Dentro de un programa de AEM as a Cloud Service puede tener varios entornos: Desarrollo, Ensayo y Producción. Cada entorno tendría su propio servicio de **creación**, **publicación** y **previsualización**. Consulte [Administración de entornos](/help/implementing/cloud-manager/manage-environments.md) para obtener más información.
 
 ## Modelo de creación y publicación
 

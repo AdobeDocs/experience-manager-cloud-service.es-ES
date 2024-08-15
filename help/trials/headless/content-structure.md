@@ -6,10 +6,10 @@ index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: ht
-source-wordcount: '1002'
-ht-degree: 100%
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+workflow-type: tm+mt
+source-wordcount: '1003'
+ht-degree: 98%
 
 ---
 
@@ -82,7 +82,7 @@ Ya tiene un campo para el título de la aventura. Ahora debe añadir campos para
 
 >[!TIP]
 >
->El modelo **Aventura** se basa en el sitio de muestra de WKND para AEM. Puede [visitar el sitio aquí](https://wknd.site/us/en/adventures/yosemite-backpacking.html) para ver el contenido que utiliza el modelo **Aventura**.
+>El modelo **Aventura** se basa en el sitio de muestra de WKND para AEM. Puede [visitar el sitio WKND aquí](https://wknd.site/us/en/adventures/yosemite-backpacking.html) para ver contenido que usa el modelo **Adventure**.
 
 Siga los mismos pasos que se describen arriba para agregar estos campos adicionales. La única diferencia son las propiedades que debe establecer.
 

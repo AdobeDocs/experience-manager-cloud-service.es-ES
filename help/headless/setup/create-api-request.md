@@ -4,10 +4,10 @@ description: Aprenda a utilizar la API de GraphQL para la entrega sin encabezado
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 93%
+source-wordcount: '677'
+ht-degree: 91%
 
 ---
 
@@ -45,7 +45,7 @@ Antes de poder utilizar las API de GraphQL, se debe crear un punto de conexión 
    /content/cq:graphql/<configuration-name>/endpoint
    ```
 
-Se pueden encontrar más detalles acerca de la activación de los [puntos de conexión de GraphQL aquí](/help/headless/graphql-api/graphql-endpoint.md).
+Para obtener más información acerca de cómo habilitar los extremos de GraphQL, consulte [Administrar extremos de GraphQL en la lista de puntos de conexión de AEM en la lista de puntos de conexión de 1}.](/help/headless/graphql-api/graphql-endpoint.md)
 
 ## Consulta de contenido mediante GraphQL con GraphiQL
 

@@ -3,10 +3,10 @@ title: Notas de la versión de las herramientas de migración de la versión 202
 description: Notas de la versión de las herramientas de migración de la versión 2024.05.0 de AEM as a Cloud Service
 feature: Release Information
 role: Admin
-source-git-commit: 4f01ca0076248442fe93161bbc8b98bffb64551b
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 7%
+source-wordcount: '185'
+ht-degree: 6%
 
 ---
 
@@ -22,13 +22,12 @@ La fecha de lanzamiento del Analizador de prácticas recomendadas v2.1.48 es el 
 
 ### Novedades {#what-is-new-bpa}
 
-* El Analizador de prácticas recomendadas (BPA) ahora admite la carga automática de informes generados por BPA directamente en Cloud Acceleration Manager (CAM). Los usuarios ya no tendrán que descargar manualmente el informe y cargarlo en CAM. Más información [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer)
+* El Analizador de prácticas recomendadas (BPA) ahora admite la carga automática de informes generados por BPA directamente en Cloud Acceleration Manager (CAM). Los usuarios ya no tendrán que descargar manualmente el informe y cargarlo en CAM. Para obtener más información, consulte [Uso del Analizador de prácticas recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
 
 ## Cloud Acceleration Manager {#cam-release}
 
 ### Novedades {#what-is-new-cam}
 
-* Cloud Acceleration Manager (CAM) ahora admite la carga automática de informes generados por BPA directamente en CAM. Más información [aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase#best-practices-analysis)
+* Cloud Acceleration Manager (CAM) ahora admite la carga automática de informes generados por BPA directamente en CAM. Para obtener más información, consulte [Fase de preparación en Cloud Acceleration Manager - Uso de la tarjeta de análisis de prácticas recomendadas](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
-* Cloud Acceleration Manager ahora proporciona una estimación de cuánto tiempo puede tardar una ingesta, dados factores como el recuento de nodos, el tamaño del almacén de datos, etc. Más información [aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content)
-
+* Cloud Acceleration Manager ahora proporciona una estimación de cuánto tiempo puede tardar una ingesta, dados factores como el recuento de nodos, el tamaño del almacén de datos, etc. Más información con [Ingesta de contenido en el Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)

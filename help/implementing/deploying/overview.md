@@ -4,10 +4,10 @@ description: Obtenga información acerca de los aspectos básicos y las práctic
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '3429'
-ht-degree: 98%
+source-wordcount: '3441'
+ht-degree: 96%
 
 ---
 
@@ -37,7 +37,7 @@ Al igual que para las versiones de AEM existentes que no se basan en la nube, se
 >[!NOTE]
 >Existen diferencias operativas sutiles entre el comportamiento de la aplicación en un equipo local y el de Adobe Cloud. Estas diferencias arquitectónicas deben respetarse durante el desarrollo local y podrían dar lugar a un comportamiento diferente al implementarse en la infraestructura en la nube. Debido a estas diferencias, es importante realizar pruebas exhaustivas en entornos de desarrollo y fase antes de implementar un nuevo código personalizado en producción.
 
-Para desarrollar un código personalizado para una versión interna, debe descargarse e instalarse la versión correspondiente del [SDK de AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md). Para obtener información adicional sobre el uso de las herramientas de Dispatcher de AEM as a Cloud Service, consulte [esta página](/help/implementing/dispatcher/disp-overview.md).
+Para desarrollar un código personalizado para una versión interna, debe descargarse e instalarse la versión correspondiente del [SDK de AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md). Para obtener información adicional acerca del uso de las herramientas de Dispatcher de AEM as a Cloud Service, consulte [Dispatcher en la nube](/help/implementing/dispatcher/disp-overview.md).
 
 El siguiente vídeo proporciona información general de alto nivel sobre cómo implementar los códigos en AEM as a Cloud Service:
 
@@ -56,7 +56,8 @@ El siguiente vídeo proporciona información general de alto nivel sobre cómo i
 
 ![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
 
-Los clientes implementan código personalizado en entornos de nube a través de Cloud Manager. Cloud Manager transforma los paquetes de contenido ensamblados localmente en un artefacto que se ajusta al Modelo de funciones de Sling, que es el modo en que se describe una aplicación AEM as a Cloud Service al ejecutarse en un entorno de nube. Como resultado, al consultar los paquetes en [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en entornos de Cloud, el nombre incluye “cp2fm” y los paquetes transformados tienen todos los metadatos eliminados. No se puede interactuar con ellos, lo que significa que no se pueden descargar, replicar ni abrir. La documentación detallada sobre el convertidor se puede [encontrar aquí](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
+Los clientes implementan código personalizado en entornos de nube a través de Cloud Manager. Cloud Manager transforma los paquetes de contenido ensamblados localmente en un artefacto que se ajusta al Modelo de funciones de Sling, que es el modo en que se describe una aplicación AEM as a Cloud Service al ejecutarse en un entorno de nube. Como resultado, al consultar los paquetes en [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en entornos de Cloud, el nombre incluye “cp2fm” y los paquetes transformados tienen todos los metadatos eliminados. No se puede interactuar con ellos, lo que significa que no se pueden descargar, replicar ni abrir. Para obtener documentación detallada sobre el convertidor, consulte [
+sling-org-apache-sling-feature-cpconverter en GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 Los paquetes de contenido escritos para aplicaciones AEM as a Cloud Service deben tener una clara separación entre contenido inmutable y mutable. Cloud Manager solo instala el contenido mutable, lo que también genera el siguiente mensaje:
 
@@ -252,7 +253,7 @@ Al igual que las actualizaciones de AEM, las versiones de los clientes se implem
 
 ## Índices {#indexes}
 
-Los índices nuevos o modificados provocarán un paso adicional de indexación o reindexación antes de que la versión nueva pueda entrar en el tráfico. Los detalles sobre la administración de índices en AEM as a Cloud Service se pueden encontrar en [este artículo](/help/operations/indexing.md). Puede comprobar el estado de indexación de las páginas de compilación en Cloud Manager y recibir una notificación cuando la nueva versión esté lista para admitir tráfico.
+Los índices nuevos o modificados provocarán un paso adicional de indexación o reindexación antes de que la versión nueva pueda entrar en el tráfico. Encontrará detalles sobre la administración de índices en AEM as a Cloud Service en [Búsqueda de contenido e indexación](/help/operations/indexing.md). Puede comprobar el estado de indexación de las páginas de compilación en Cloud Manager y recibir una notificación cuando la nueva versión esté lista para admitir tráfico.
 
 >[!NOTE]
 >
@@ -278,7 +279,7 @@ Cambiar los usuarios del servicio o las ACL que acceden al contenido o al códig
 
 ### Cambios en el índice {#index-changes}
 
-Si se realizan cambios en los índices, es importante que la versión nueva siga utilizando sus índices hasta que finalice, mientras que la versión antigua utiliza su propio conjunto modificado de índices. El desarrollador debe seguir las técnicas de administración de índices descritas [en este artículo](/help/operations/indexing.md).
+Si se realizan cambios en los índices, es importante que la versión nueva siga utilizando sus índices hasta que finalice, mientras que la versión antigua utiliza su propio conjunto modificado de índices. El desarrollador debe seguir las técnicas de administración de índices descritas en [Búsqueda de contenido e indexación](/help/operations/indexing.md).
 
 ### Codificación conservadora para retrocesos {#conservative-coding-for-rollbacks}
 
@@ -333,4 +334,4 @@ Developers want to ensure that their custom code is performing well. For Cloud e
 
 ## Configuración de tareas de mantenimiento en el control de origen {#maintenance-tasks-configuration-in-source-control}
 
-Las configuraciones de la tarea de mantenimiento deben mantenerse en el control de origen, ya que la pantalla **Herramientas > Operaciones** no estará disponible en los entornos de Cloud. Esta ventaja garantiza la persistencia intencionada de los cambios en lugar de su aplicación reactiva y olvido. Consulte el [artículo Tarea de mantenimiento](/help/operations/maintenance.md) para obtener más información.
+Las configuraciones de la tarea de mantenimiento deben mantenerse en el control de origen, ya que la pantalla **Herramientas > Operaciones** no estará disponible en los entornos de Cloud. Esta ventaja garantiza la persistencia intencionada de los cambios en lugar de su aplicación reactiva y olvido. Consulte [Tareas de mantenimiento en AEM as a Cloud Service](/help/operations/maintenance.md) para obtener más información.

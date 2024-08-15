@@ -5,10 +5,10 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ed166aa753d4fb5c6fb1573032186e3e14f375df
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 77%
+source-wordcount: '988'
+ht-degree: 76%
 
 ---
 
@@ -132,4 +132,4 @@ Tanto las variables de entorno normales como los secretos se pueden utilizar en 
 
 ### Variables de canalización {#pipeline}
 
-Además de las variables de entorno, también hay variables de canalización que se exponen durante la fase de compilación. [Obtenga más información acerca de las variables de canalización aquí](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).
+Además de las variables de entorno, también hay variables de canalización que se exponen durante la fase de compilación. Obtenga más información acerca de las variables de canalización en [Entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).
