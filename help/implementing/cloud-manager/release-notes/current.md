@@ -3,7 +3,7 @@ title: Notas de la versión para Cloud Manager 2024.8.0 en Adobe Experience Mana
 description: Obtenga información acerca de las notas de la versión para Cloud Manager 2024.8.0 en AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: bf8bab5a195dde6cf15a2fd52e51d58c0215fdf3
+source-git-commit: a823bcd1461b847983d0243cd9abd59efd8d7b6f
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 30%
@@ -21,7 +21,7 @@ Esta página documenta las notas de la versión 2024.8.0 para Cloud Manager en A
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de Cloud Manager 2024.8.0 en AEM as a Cloud Service es el martes, 12 de agosto de 2024. La próxima versión está planificada para el 14 de septiembre de 2024.
+La fecha de lanzamiento de Cloud Manager 2024.8.0 en AEM as a Cloud Service es el jueves, 14 de agosto de 2024. La próxima versión está planificada para el 14 de septiembre de 2024.
 
 ## Novedades {#what-is-new}
 
