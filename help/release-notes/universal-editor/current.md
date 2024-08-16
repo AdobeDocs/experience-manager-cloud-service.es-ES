@@ -4,9 +4,9 @@ description: Estas son las notas de la versión de la versión 2024.08.13 del Ed
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: d71d3481004f2429c018c536b3e12784cf597f85
+source-git-commit: aad4d0353fb5e2eacb518b72e935def931d0798a
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -24,12 +24,12 @@ Estas son las notas de la versión del editor universal del 13 de agosto de 2024
 
 * **Tipos de datos personalizados**: adapte el editor a sus necesidades de datos únicas con la capacidad de crear campos personalizados dentro del panel de propiedades.
    * Tanto si va a desarrollar un selector de productos personalizado para casos de uso comerciales como si va a rellenar una lista desplegable con valores de sus backends, esta función le proporciona el control que necesita sobre los datos que los autores utilizan para componer contenido.
-* **Arrastrar y soltar en contenedores múltiples**: disfrute de una mayor flexibilidad en la composición del diseño con la capacidad de mover componentes entre contenedores diferentes mediante la función de arrastrar y soltar dentro del [panel Árbol de contenido.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* **Arrastrar y soltar contenedores**: disfruta de una mayor flexibilidad en la composición del diseño con la capacidad de [mover componentes entre diferentes contenedores mediante arrastrar y soltar](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) dentro del [panel Árbol de contenido.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
 * **Integración de GitHub optimizada**: se ha introducido el almacenamiento en caché para las respuestas de GitHub, lo que acelera considerablemente la recuperación de etiquetas y `universal-editor-cors-library`, lo que da como resultado una experiencia de usuario más rápida y fluida.
 * **Paquete RPM de Managed Services**: Adobe ahora ofrece un paquete RPM para optimizar la implementación y administración del servicio de editor universal, simplificar el mantenimiento y reducir la sobrecarga operativa de los servicios administrados.
 * **Validación de token de IMS configurable**: para aumentar la flexibilidad en la administración de tokens, la validación de tokens de IMS ahora es opcional.
    * Esta opción de configuración le permite deshabilitar la validación según sea necesario y simplificar las configuraciones de la puerta de enlace en la nube.
-* **Integración de Splunk**: el registro de Splunk se ha integrado en Universal Editor Service Express, lo que mejora la supervisión y el diagnóstico.
+* **Integración de Splunk**: el registro de Splunk se ha integrado en el [servicio de editor universal para el desarrollo local](/help/implementing/universal-editor/local-dev.md), lo que mejora la supervisión y el diagnóstico.
    * Esta integración garantiza un seguimiento eficiente del registro, operaciones más fluidas y una solución de problemas más rápida.
 
 ## Correcciones de errores {#bug-fixes}

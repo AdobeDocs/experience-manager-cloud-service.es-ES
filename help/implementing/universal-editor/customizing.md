@@ -4,9 +4,9 @@ description: Obtenga información acerca de los diferentes puntos de extensión 
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 34ae1d57e77e209e179aca5c556954dbfb170498
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '647'
 ht-degree: 1%
 
 ---
@@ -115,6 +115,18 @@ Las condiciones se pueden definir usando el esquema [JsonLogic.](https://jsonlog
 ![Campo de texto mostrado](assets/shown.png)
 
 >[!ENDTABS]
+
+### URL de vista previa personalizadas {#custom-preview-urls}
+
+Puede especificar una URL de vista previa personalizada mediante una metaconfiguración de `urn:adobe:aue:config:preview`, que se abrirá al hacer clic en el botón **Abrir página** en la barra de herramientas superior derecha del [editor.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
+
+Esto es especialmente útil para aplicaciones con requisitos de vista previa específicos, como las que [utilizan Edge Delivery Services con creación WYSIWYG.](/help/edge/wysiwyg-authoring/authoring.md)
+
+Para ello, simplemente incluya la URL de vista previa deseada en una metaetiqueta de la aplicación instrumentada como en el siguiente ejemplo.
+
+```html
+<meta name="urn:adobe:aue:config:preview" content="https://wknd.site"/>
+```
 
 ## Ampliación de la IU del editor universal {#extending}
 

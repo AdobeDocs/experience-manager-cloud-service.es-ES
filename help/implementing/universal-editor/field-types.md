@@ -4,9 +4,9 @@ description: Obtenga información acerca de los campos y los tipos de componente
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6886d3e669b06b63d2225348e95e00806db1b8f5
+source-git-commit: 9e808f2d4b57d6b1043f2e3e6300a1e37f3cbb35
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1183'
 ht-degree: 12%
 
 ---
@@ -302,6 +302,12 @@ El selector de fragmentos de contenido se puede usar para seleccionar un [fragme
 | Configuración | Tipo de valor | Descripción | Requerido |
 |---|---|---|---|
 | `variationName` | `string` | Nombre de variable para almacenar la variación seleccionada. Si no se define, no se muestra ningún selector de variaciones | No |
+
+>[!NOTE]
+>
+>El editor universal [valida los campos de fragmento de contenido según sus modelos](/help/assets/content-fragments/content-fragments-models.md#validation), lo que le permite aplicar reglas de integridad de datos como patrones regex y restricciones de exclusividad.
+>
+>Esto garantiza que el contenido cumpla con los requisitos comerciales específicos antes de publicarse.
 
 >[!BEGINTABS]
 

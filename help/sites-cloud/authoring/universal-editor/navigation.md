@@ -4,10 +4,10 @@ description: Conozca los conceptos básicos del acceso y la navegación por el E
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 58c58243dc98a21161afe0976da4dcdc235da0d3
+source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
 workflow-type: tm+mt
-source-wordcount: '1512'
-ht-degree: 40%
+source-wordcount: '1576'
+ht-degree: 36%
 
 ---
 
@@ -137,7 +137,7 @@ La barra de ubicación muestra la dirección de la página que está editando. S
 
 >[!TIP]
 >
->Utilice la tecla de acceso directo `L` para abrir la barra de direcciones.
+>Utilice la tecla de acceso directo `l` (la letra l) para abrir la barra de direcciones.
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ En el modo de vista previa, la página se procesa en el editor tal como se verí
 
 >[!TIP]
 >
->Utilice la tecla de acceso directo `P` para alternar desde y hacia el modo de vista previa.
+>Utilice la tecla de acceso directo `p` para alternar desde y hacia el modo de vista previa.
 
 #### Apertura de la vista previa de la aplicación {#open-app-preview}
 
@@ -185,7 +185,11 @@ Seleccione el icono de abrir vista previa de la aplicación para abrir la págin
 
 >[!TIP]
 >
->Utilice la tecla de acceso directo `O` (la letra O) para abrir la vista previa de la aplicación.
+>Utilice la tecla de acceso directo `o` (la letra o) para abrir la vista previa de la aplicación.
+
+>[!TIP]
+>
+>La URL de vista previa de su aplicación [ se puede personalizar.](/help/implementing/universal-editor/customizing.md#custom-preview-urls)
 
 #### Publicación {#publish}
 
@@ -196,6 +200,14 @@ Seleccione el botón Publicar para poder publicar los cambios en el contenido pu
 >[!TIP]
 >
 >Consulte el documento [Publicación de contenido con el editor universal](publishing.md) para obtener más información sobre cómo publicar con el editor universal.
+
+#### Puntos suspensivos {#ellipsis}
+
+Se puede acceder a las opciones adicionales y estándar mediante el botón de los tres puntos.
+
+![Botón de puntos suspensivos](assets/ellipsis.png)
+
+Por ejemplo, se puede cancelar la publicación de una página (es decir, invertir la acción del botón [**Publish**](#publish)) con el botón de los tres puntos.
 
 #### Botones adicionales {#additional-toolbar-buttons}
 
@@ -216,7 +228,7 @@ Si el editor se encuentra en [modo de vista previa,](#preview-mode) el contenido
 
 El carril de propiedades siempre está presente a la derecha del editor. Según su modo, puede mostrar detalles de un componente seleccionado en el contenido o la jerarquía del contenido de la página.
 
-![El carril de propiedades](assets/component-rail.png)
+![El carril de propiedades](assets/properties-rail.png)
 
 #### Modo propiedades {#properties-mode}
 
@@ -232,7 +244,7 @@ No todos los componentes tienen detalles que se puedan mostrar o editar.
 
 >[!TIP]
 >
->Utilice la tecla de acceso directo `D` para cambiar al modo de propiedades.
+>Utilice la tecla de acceso directo `d` para cambiar al modo de propiedades.
 
 #### Modo de árbol de contenido {#content-tree-mode}
 
@@ -246,21 +258,21 @@ Al seleccionar un elemento en el árbol de contenido, el editor se desplaza hast
 
 >[!TIP]
 >
->Utilice la tecla de acceso directo `F` para cambiar al modo de árbol de contenido.
+>Utilice la tecla de acceso directo `f` para cambiar al modo de árbol de contenido.
 
-##### Editar {#edit}
+##### Abrir en editor CF {#edit}
 
-Al editar, las opciones del componente seleccionado aparecen en el carril de propiedades, donde puede editar el componente seleccionado. Si el componente seleccionado es un fragmento de contenido, también puede seleccionar el botón Editar.
+Al editar, las opciones del componente seleccionado aparecen en el carril de propiedades, donde puede editar el componente seleccionado. Si el componente seleccionado es un fragmento de contenido, también puede seleccionar el botón **Abrir en el editor de CF**.
 
-![Icono Editar](assets/edit.png)
+![Icono de Abrir en el editor de CF](assets/open-in-cf-editor.png)
 
-Al tocar o hacer clic en el botón Editar, se abre [Editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) en una nueva pestaña. Esto le permite acceder a toda la potencia del editor de fragmentos de contenido para editar el fragmento de contenido asociado.
+Al tocar o hacer clic en el botón **Abrir en el editor de CF**, se abre el [editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) en una nueva pestaña. Esto le permite acceder a toda la potencia del editor de fragmentos de contenido para editar el fragmento de contenido asociado.
 
 Según las necesidades del flujo de trabajo, es posible que desee editar el fragmento de contenido en el editor universal o directamente en el editor de fragmentos de contenido.
 
 >[!TIP]
 >
->Utilice la tecla de acceso directo `E` para editar un componente seleccionado.
+>Utilice la tecla de acceso directo `e` para abrir un fragmento de contenido seleccionado en el editor de fragmentos de contenido.
 
 ##### Añadir {#add}
 
@@ -274,7 +286,7 @@ Al tocar o hacer clic en el botón Agregar, se abre un menú desplegable de comp
 
 >[!TIP]
 >
->Utilice la tecla de acceso directo `A` para agregar un componente a un componente contenedor seleccionado.
+>Utilice la tecla de acceso directo `a` para agregar un componente a un componente contenedor seleccionado.
 
 ##### Eliminar {#delete}
 

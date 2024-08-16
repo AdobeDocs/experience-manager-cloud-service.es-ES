@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3922375b52ae64d08cdc64d475a95e8bd240a587
+source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 26%
+source-wordcount: '1297'
+ht-degree: 24%
 
 ---
 
@@ -33,7 +33,7 @@ Para ello, se proporciona una IU intuitiva que requiere una formación mínima p
 
 ## Edición de contenido {#editing-content}
 
-La edición de contenido es sencilla e intuitiva. Al pasar el ratón sobre el contenido en el editor, el contenido editable se resalta con un cuadro azul.
+La edición de contenido es sencilla e intuitiva. Al pasar el ratón sobre el contenido en el editor, el contenido editable se resalta con un delgado contorno azul.
 
 ![El contenido editable se resalta con un cuadro azul](assets/editable-content.png)
 
@@ -49,7 +49,7 @@ Puede editar el texto en su lugar haciendo doble clic o pulsando dos veces el co
 
 ![Edición de contenido](assets/editing-content.png)
 
-Pulse Intro o Retorno o seleccione fuera del cuadro de texto para guardar los cambios.
+El contorno azul delgado se convierte en un contorno azul grueso para indicar que se ha seleccionado y aparece un cursor. Realice los cambios y, a continuación, pulse intro/retorno o seleccione fuera del cuadro de texto para guardar los cambios.
 
 Al seleccionar el componente de texto, sus detalles se muestran en el carril de propiedades [.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) También puede editar el texto en el carril.
 
@@ -65,10 +65,21 @@ Puede editar el texto en su lugar haciendo doble clic o pulsando dos veces el co
 
 Para su comodidad, las opciones de formato y los detalles del texto están disponibles en dos lugares.
 
-* El **menú contextual** se abre sobre el bloque de texto enriquecido y ofrece opciones de formato básicas en contexto. Debido a limitaciones de espacio, algunas opciones pueden estar ocultas detrás del botón de los tres puntos.
-* El **[carril de propiedades](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)** muestra todas las opciones de formato disponibles junto con el texto.
+#### El menú contextual {#context-menu}
+
+El menú contextual se abre encima del bloque de texto enriquecido y ofrece opciones de formato básicas en contexto. Debido a limitaciones de espacio, algunas opciones pueden estar ocultas detrás del botón de los tres puntos.
+
+![Menú contextual de texto enriquecido](assets/rich-text-context-menu.png)
 
 Los cambios se guardan automáticamente una vez que el enfoque abandona el campo editado.
+
+#### El carril Propiedades {#properties-rail}
+
+El [carril de propiedades](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) muestra un elemento para el texto seleccionado. Pulse la entrada para abrir un cuadro de diálogo que presente un lienzo más grande para editar el texto.
+
+![Cuadro de diálogo de edición de texto enriquecido](assets/rich-text-canvas.png)
+
+Pulse o haga clic en **Cancelar** o **Listo** para descartar o guardar los cambios, respectivamente.
 
 ### Edición de medios {#edit-media}
 
@@ -95,9 +106,19 @@ Si selecciona un campo relacionado con un fragmento de contenido, el fragmento d
 
 Los cambios se guardan automáticamente una vez que el enfoque abandona el campo editado en el carril de propiedades.
 
-Si en su lugar desea editar el fragmento de contenido en [editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md), haga clic en el [botón de edición](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) en el carril de propiedades.
+Si en su lugar desea editar el fragmento de contenido en [editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md), toque o haga clic en el botón [**Abrir en editor CF**](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) del carril de propiedades.
+
+>[!TIP]
+>
+>Utilice la tecla de acceso directo `e` para editar el fragmento de contenido seleccionado en el editor de fragmentos de contenido.
 
 Según las necesidades del flujo de trabajo, es posible que desee editar el fragmento de contenido en el editor universal o directamente en el editor de fragmentos de contenido.
+
+>[!NOTE]
+>
+>El editor universal [valida los campos de fragmento de contenido según sus modelos](/help/assets/content-fragments/content-fragments-models.md#validation), lo que le permite aplicar reglas de integridad de datos como patrones regex y restricciones de exclusividad.
+>
+>Esto garantiza que el contenido cumpla con los requisitos comerciales específicos antes de publicarse.
 
 ### Adición de componentes a contenedores {#adding-components}
 
@@ -110,7 +131,7 @@ El componente se inserta en el contenedor y se puede editar en el editor.
 
 >[!TIP]
 >
->Utilice la tecla de acceso directo `A` para agregar un componente al contenedor seleccionado.
+>Utilice la tecla de acceso directo `a` para agregar un componente al contenedor seleccionado.
 
 ### Eliminación de componentes de contenedores {#deleting-components}
 
