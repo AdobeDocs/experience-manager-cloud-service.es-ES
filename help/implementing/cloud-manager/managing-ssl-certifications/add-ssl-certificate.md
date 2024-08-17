@@ -5,15 +5,15 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 64aa010c3d840adad9e1ab6040a6d80c07cd8455
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 65%
+source-wordcount: '659'
+ht-degree: 45%
 
 ---
 
 
-# Agregar un certificado SSL {#adding-an-ssl-certificate}
+# Añadir un certificado SSL {#adding-an-ssl-certificate}
 
 Aprenda a agregar su propio certificado SSL con las herramientas de autoservicio de Cloud Manager.
 
@@ -23,11 +23,9 @@ Aprenda a agregar su propio certificado SSL con las herramientas de autoservicio
 
 ## Requisitos de certificado {#certificate-requirements}
 
-Revise la sección **Requisitos de certificado** del documento [Introducción a la administración de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) para asegurarse de que el certificado que desea agregar sea compatible con AEM as a Cloud Service.
+Revise **Requisitos de certificado** en [Introducción a la administración de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) para asegurarse de que AEM as a Cloud Service admite el certificado que desea agregar.
 
-## Agregar un certificado {#adding-a-cert}
-
-Siga estos pasos para agregar un certificado mediante Cloud Manager.
+## Añadir un certificado {#adding-a-cert}
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
@@ -35,28 +33,23 @@ Siga estos pasos para agregar un certificado mediante Cloud Manager.
 
 1. Vaya a la pantalla **Entornos** de la página **Información general**.
 
-1. Haga clic en **Certificados SSL** en el panel de navegación izquierdo. Se muestra en la pantalla principal una tabla con detalles de cualquier certificado SSL existente.
+1. En el panel de navegación izquierdo, en **Servicios**, haga clic en **Certificados SSL**. (Si es necesario, es posible que tenga que hacer clic en el icono de la hamburguesa en la esquina superior izquierda para necesitar el panel de navegación. Se muestra una tabla con detalles de cualquier certificado SSL existente.
 
-   ![Agregar un certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
+   ![Agregando un certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. Haga clic en **Agregar certificado SSL** para abrir el cuadro de diálogo **Agregar certificado SSL**.
+1. Haga clic en **Agregar certificado SSL** para abrir el **Agregar certificado SSL**.
 
-   * Escriba un nombre para el certificado en **Nombre del certificado**.
-      * Esto es solo para fines informativos y puede ser cualquier nombre que le ayude a hacer referencia al certificado fácilmente.
-   * Pegue los valores de **Certificado**, **Clave privada** y **Cadena de certificados** en sus respectivos campos.
-      * Los tres campos son obligatorios.
+   * Escriba un nombre para el certificado en **Nombre del certificado**. Este campo es solo informativo y puede ser cualquier nombre que le ayude a hacer referencia al certificado fácilmente.
+   * Pegue los valores **Certificado**, **Clave privada** y **Cadena de certificados** en sus respectivos campos. Los tres campos son obligatorios.
 
    ![Cuadro de diálogo Agregar certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
-   * Se muestran todos los errores detectados.
-      * Debe corregir todos los errores antes de guardar el certificado.
-      * Consulte la sección [Errores de certificado](#certificate-errors) para obtener más información sobre cómo solucionar errores comunes.
+   * Se muestran todos los errores detectados en los valores. Para poder guardar el certificado, debe corregir todos los errores.
+Consulte [Errores de certificado](#certificate-errors) para obtener más información sobre cómo solucionar errores comunes.
 
-1. Haga clic en **Guardar** para guardar el certificado.
+1. Haga clic en **Guardar**.
 
-Una vez guardado, verá el certificado como una fila nueva en la tabla.
-
-![Certificado SSL guardado](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
+![Certificado SSL guardado](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)Su certificado ahora se muestra como una nueva fila en la tabla, similar a la imagen anterior.
 
 >[!NOTE]
 >
@@ -110,7 +103,7 @@ Si ve el siguiente error, compruebe la directiva de su certificado.
 Certificate policy must conform with EV or OV, and not DV policy.
 ```
 
-Normalmente, las directivas de certificados se identifican mediante valores OID incrustados. Si se envía un certificado a texto y se busca el OID, se revelará la directiva del certificado.
+Los valores OID incrustados normalmente identifican directivas de certificado. Si se envía un certificado a texto y se busca el OID, se muestra la directiva del certificado.
 
 Puede incluir los detalles del certificado como texto si usa el siguiente ejemplo como guía.
 
@@ -154,11 +147,11 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 
 ### Fechas de validez del certificado {#certificate-validity-dates}
 
-Cloud Manager espera que el certificado SSL sea válido durante al menos 90 días desde la fecha actual. Debe comprobar la validez de la cadena de certificados.
+Cloud Manager espera que el certificado SSL sea válido durante al menos 90 días desde la fecha actual. Compruebe la validez de la cadena de certificados.
 
-## Siguientes pasos {#next-steps}
+## Pasos siguientes {#next-steps}
 
-Enhorabuena. Ahora tiene un certificado SSL en funcionamiento para el proyecto. A menudo, este es un primer paso para configurar un nombre de dominio personalizado.
+Enhorabuena. Ahora tiene un certificado SSL en funcionamiento para el proyecto. Este paso suele ser el primero en configurar un nombre de dominio personalizado.
 
-* Consulte el documento [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) para seguir configurando un nombre de dominio personalizado.
-* Consulte el documento [Administración de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) para obtener información sobre cómo actualizar y administrar los certificados SSL en Cloud Manager.
+* Para configurar un nombre de dominio personalizado, consulte [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+* Para obtener más información sobre cómo actualizar y administrar los certificados SSL en Cloud Manager, consulte [Administrar certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md).
