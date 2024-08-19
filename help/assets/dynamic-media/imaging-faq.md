@@ -6,9 +6,9 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 22de8ac77af27114099de2f6b4349232524cb94f
+source-git-commit: 1b985a83fd58522ee485c02b96bfb6a697da6ce0
 workflow-type: tm+mt
-source-wordcount: '3454'
+source-wordcount: '3455'
 ht-degree: 1%
 
 ---
@@ -63,7 +63,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 **Ventajas de las imágenes inteligentes**
 
-Imágenes inteligentes proporciona un mejor rendimiento de entrega de imágenes al optimizar automáticamente el tamaño del archivo de imagen en función del explorador del cliente en uso, la visualización del dispositivo y las condiciones de red. Dado que las imágenes constituyen la mayor parte del tiempo de carga de una página, cualquier mejora de rendimiento puede tener un profundo impacto en los KPI empresariales, como tasas de conversión más altas, tiempo invertido en un sitio y tasas de devolución del sitio más bajas.
+Imágenes inteligentes proporciona un mejor rendimiento de entrega de imágenes al optimizar automáticamente el tamaño del archivo de imagen en función del explorador del cliente en uso, la visualización del dispositivo y las condiciones de la red. Dado que las imágenes constituyen la mayor parte del tiempo de carga de una página, cualquier mejora de rendimiento puede tener un profundo impacto en los KPI empresariales, como tasas de conversión más altas, tiempo invertido en un sitio y tasas de devolución del sitio más bajas.
 
 Las ventajas clave más recientes de las imágenes inteligentes son las siguientes:
 
@@ -73,7 +73,7 @@ Las ventajas clave más recientes de las imágenes inteligentes son las siguient
 * [Proporción de píxeles del dispositivo](#dpr)
 * [Ancho de banda de red](#bandwidth)
 
-### Acerca de la conversión de formato de navegador {#bfc}
+### Acerca de la conversión de formato {#bfc}
 
 Activar la conversión de formato del explorador adjuntando `bfc=on` a la dirección URL de la imagen convierte automáticamente JPEG y PNG en AVIF con pérdida, WebP con pérdida, JPEGXR con pérdida y JPEG con pérdida para diferentes exploradores. Para los navegadores que no admiten estos formatos, Smart Imaging sigue sirviendo al JPEG o PNG. Junto con el formato, Smart Imaging vuelve a calcular la calidad del nuevo formato.
 
@@ -81,7 +81,7 @@ Las imágenes inteligentes también se pueden desactivar adjuntando `bfc=off` a 
 
 Consulte también [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) en la API de servicio y procesamiento de imágenes de Dynamic Media.
 
-### Acerca de la optimización de proporción de píxeles de dispositivo {#dpr}
+### Acerca de la optimización de proporción de píxeles del dispositivo {#dpr}
 
 La proporción de píxeles del dispositivo (DPR), también conocida como proporción de píxeles CSS, es la relación entre los píxeles físicos de un dispositivo y los píxeles lógicos. Especialmente con la llegada de las pantallas de retina, la resolución de píxeles de los dispositivos móviles modernos está creciendo a un ritmo rápido.
 
@@ -162,7 +162,7 @@ Para formatos de archivo de imagen compatibles con transparencias como PNG, pued
 
 No se admiten los comandos del servicio de imágenes `fmt` y `qlt`; se admiten todos los comandos restantes.
 
-## Preguntas más frecuentes sobre imágenes inteligentes{#smart-imaging-faq}
+## Preguntas frecuentes sobre imágenes inteligentes{#smart-imaging-faq}
 
 +++**¿Hay costos de licencia asociados con imágenes inteligentes?**
 
