@@ -1,6 +1,6 @@
 ---
 title: Edición en contexto con el editor universal
-description: Explora cómo puedes utilizar el editor universal para editar cualquier aspecto del contenido en contexto y en contexto en cualquier implementación.
+description: Explore cómo puede utilizar el editor universal para editar cualquier aspecto del contenido en el lugar y en contexto en cualquier implementación.
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
@@ -33,13 +33,13 @@ ht-degree: 100%
 
 ## Editar texto en contexto {#edit-text}
 
-Editar en contexto y en contexto suele ser mejor que editar contenido estructurado sin encabezado, como en el editor de fragmentos de contenido, que se vio en módulos anteriores.
+Editar en el lugar y en contexto suele ser mejor que editar contenido estructurado sin encabezado, como en el editor de fragmentos de contenido, que se vio en módulos anteriores.
 
 >[!NOTE]
 >
 >Para usar el editor universal en esta versión de prueba, debe usar Chrome como explorador y no en modo incógnito. Se trata de una limitación de la experiencia de la versión de prueba, no del editor universal.
 
-El editor universal es una forma ágil de editar el texto en contexto y en contexto, lo que permite crear contenido de forma sencilla e intuitiva.
+El editor universal es una forma ágil de editar el texto en contexto y en el lugar, lo que permite crear contenido de forma sencilla e intuitiva.
 
 1. Seleccione dos veces el título del artículo más reciente para editarlo.
 
@@ -63,7 +63,7 @@ También puede intercambiar imágenes mientras permanece en el contexto del cont
 
    ![Selección de una imagen para editarla](assets/do-not-localize/ue-edit-media.png)
 
-1. En **Seleccionar recursos**, desplácese hacia abajo y elija la `surfer-wave-02.JPG` imagen para seleccionarla.
+1. En **Seleccionar recursos**, desplácese hacia abajo y elija la imagen `surfer-wave-02.JPG` para seleccionarla.
 
 1. Elija **Seleccionar** en la ventana **Seleccionar recursos**.
 

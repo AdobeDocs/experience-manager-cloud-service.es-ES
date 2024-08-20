@@ -41,11 +41,11 @@ La consola Fragmento de contenido se utiliza para crear y editar contenido sin e
 
 1. Seleccione **Crear** en la parte superior derecha de la consola.
 
-1. Se abre el **cuadro de diálogo** Nuevo fragmento de contenido, en el que puede empezar a crearlo. **Ubicación** se rellena automáticamente con el lugar donde se guarda el nuevo contenido.
+1. Se abre el cuadro de diálogo **Nuevo fragmento de contenido**, en el que puede empezar a crearlo. **Ubicación** se rellena automáticamente con el lugar donde se guarda el nuevo contenido.
 
 1. En el desplegable **modelo de Fragmento de contenido**, seleccione el modelo de Fragmento de contenido **Aventura** que creó anteriormente.
 
-1. Agregue `Tuscany` como **Título** descriptivo para el Fragmento de contenido. Esto es para identificar el fragmento en la consola.
+1. Añada `Tuscany` como **Título** descriptivo para el Fragmento de contenido. Esto es para identificar el fragmento en la consola.
 
 1. Seleccione **Crear y abrir**.
 
@@ -71,7 +71,7 @@ Una vez guardado y abierto el nuevo fragmento de contenido, el editor de fragmen
 
 1. Proporcione un **Precio** para el fragmento introduciendo en `$700`.
 
-1. Proporcione una **Imagen** que sea representativa del viaje pulsando o haciendo clic en **Agregar recurso** en el  campo de **Imagen**.
+1. Proporcione una **Imagen** que sea representativa del viaje pulsando o haciendo clic en **Añadir recurso** en el  campo de **Imagen**.
 
 1. En la ventana emergente del recurso, seleccione **Examinar recursos** para seleccionar un recurso existente en la biblioteca de recursos.
 

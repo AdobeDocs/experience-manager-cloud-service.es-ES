@@ -24,7 +24,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide"
 >title="Lanzamiento de GraphQL Explorer"
->abstract="GraphQL proporciona una API basada en consultas que permite a las aplicaciones de cliente externas realizar consultas en AEM solo para el contenido que necesita, mediante una sola llamada de API. Siga este módulo para aprender a ejecutar dos tipos diferentes de consultas. A continuación, aprenda a recuperar el contenido del fragmento de contenido creado en el módulo anterior.<br><br>Inicie este módulo en una nueva pestaña haciendo clic abajo."
+>abstract="GraphQL proporciona una API basada en consultas que permite a las aplicaciones de cliente externas realizar consultas en AEM solo para el contenido que necesita, mediante una sola llamada de API. Siga este módulo para aprender a ejecutar dos tipos diferentes de consultas. A continuación, aprenda a recuperar el contenido del fragmento de contenido creado en el módulo anterior.<br><br>Inicie este módulo en una nueva pestaña haciendo clic a continuación."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide_footer"
@@ -111,7 +111,7 @@ Acaba de validar una consulta byPath para recuperar un fragmento de contenido es
 
 ## Consulta de su propio contenido {#own-queries}
 
-Ahora que ha ejecutado los dos tipos principales de consultas, está listo para consultar su propio contenido.
+Ahora que ha ejecutado los dos tipos principales de consultas, ya puede consultar su propio contenido.
 
 1. Para ejecutar consultas con sus propios fragmentos de contenido, cambie el punto final de la carpeta **Recursos de demostración de AEM** a la carpeta **Su proyecto**.
 
@@ -175,7 +175,7 @@ Puede crear una consulta persistente que incluya los datos que desee consumir de
 
    ![Crear una consulta propia](assets/do-not-localize/own-query.png)
 
-1. Cuando esté satisfecho con la consulta, haga clic en el botón **Guardar como** en la parte superior del editor de consultas para mantener la consulta.
+1. Cuando esté conforme con la consulta, haga clic en el botón **Guardar como** en la parte superior del editor de consultas para mantener la consulta.
 
 1. En el elemento emergente de **Nombre de la consulta**, asígnele el nombre a la consulta `adventure-list`.
 

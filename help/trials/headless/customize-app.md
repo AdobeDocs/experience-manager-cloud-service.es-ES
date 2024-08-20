@@ -77,7 +77,7 @@ Ahora que ha modificado un titular en la aplicación, intente cambiar una imagen
 
 1. Seleccione la capa de imagen **Ciclista de montaña: Ciclista**. Se abre el editor de fragmentos de contenido
 
-1. Seleccione la **X** para eliminar la imagen del motociclista. La imagen desaparece y el editor muestra un error, ya que la imagen son datos requeridos para este modelo de fragmento de contenido.
+1. Seleccione la **X** para eliminar la imagen del ciclista. La imagen desaparece y el editor muestra un error, ya que la imagen son datos requeridos para este modelo de fragmento de contenido.
 
    ![Quitar imagen del fragmento](assets/do-not-localize/swap-image-4.png)
 
@@ -132,4 +132,4 @@ Ahora que ha actualizado la imagen del ciclista, vamos a ver cómo añadir conte
 
    ![Vista previa](assets/do-not-localize/add-reference-10-11-12.png)
 
-Ahora ya entiende cómo crear contenido nuevo y hacer referencia a él como fragmento de contenido en la aplicación se puede lograr sin ciclos de desarrollo.
+Ahora ya sabe cómo crear contenido nuevo y hacer referencia a él como Fragmento de contenido en la aplicación sin necesidad de realizar ningún ciclo de desarrollo.
