@@ -70,7 +70,7 @@ El editor del modelo de fragmento de contenido es donde se configuran los tipos 
 
 1. Una vez definidas las propiedades del campo, puede volver a la pestaña **Tipos de datos** en el panel derecho y añadir campos adicionales arrastrando y soltando.
 
-De este modo, puede agregar tantos campos como sea necesario al modelo para admitir el tipo de estructura de datos que necesite. Los tipos de campos de datos varían, pero el proceso de agregarlos al modelo sigue siendo el mismo.
+De este modo, puede añadir tantos campos como sea necesario al modelo para admitir el tipo de estructura de datos que necesite. Los tipos de campos de datos varían, pero el proceso de añadirlos al modelo sigue siendo el mismo.
 
 Continúe en la siguiente sección para añadir los campos necesarios para completar y guardar el modelo **Aventura**
 
@@ -84,7 +84,7 @@ Ya tiene un campo para el título de la aventura. Ahora debe añadir campos para
 >
 >El modelo **Aventura** se basa en el sitio de muestra de WKND para AEM. Puede [visitar el sitio WKND aquí](https://wknd.site/us/en/adventures/yosemite-backpacking.html) para ver contenido que usa el modelo **Adventure**.
 
-Siga los mismos pasos que se describen arriba para agregar estos campos adicionales. La única diferencia son las propiedades que debe establecer.
+Siga los mismos pasos que se describen arriba para añadir estos campos adicionales. La única diferencia son las propiedades que debe establecer.
 
 1. Añada un campo para almacenar la descripción de la aventura arrastrando y soltando un campo de **Texto de varias líneas** e introduzca las siguientes propiedades:
 
@@ -96,12 +96,12 @@ Siga los mismos pasos que se describen arriba para agregar estos campos adiciona
    * **Procesar como:** **Campo de texto**. Cuando cree una aventura, este campo almacenará el precio del viaje.
    * **Etiqueta de campo:** `Price`. Esta es la etiqueta que se muestra para este campo al crear una nueva aventura.
 
-1. Agregue un campo para almacenar una imagen que represente el viaje. Las imágenes de AEM se almacenan como otro tipo de contenido denominado **Recursos**. Para crear un campo para ellos, debe arrastrar y soltar un campo de **Referencia de contenido** que haga referencia al recurso de la imagen.
+1. Añada un campo para almacenar una imagen que represente el viaje. Las imágenes de AEM se almacenan como otro tipo de contenido denominado **Recursos**. Para crear un campo para ellos, debe arrastrar y soltar un campo de **Referencia de contenido** que haga referencia al recurso de la imagen.
 
    * **Procesar como:** **Referencia de contenido**. Cuando cree una aventura, este campo señalará al recurso de imagen que represente este viaje.
    * **Etiqueta de campo:** `Image` esta es la etiqueta que se muestra para este campo al crear una nueva aventura.
    * **Ruta raíz:** `/content/dam/aem-demo-assets/en`: especifica una ruta de punto de partida al buscar recursos con el Selector de recursos.
 
-1. Después de agregar los campos necesarios para el modelo de fragmento de contenido, en la parte superior derecha de la ventana, haga clic en **Guardar**.
+1. Después de añadir los campos necesarios para el modelo de fragmento de contenido, en la parte superior derecha de la ventana, haga clic en **Guardar**.
 
 1. El modelo se guarda y se vuelve a la consola del modelo de fragmento de contenido.
