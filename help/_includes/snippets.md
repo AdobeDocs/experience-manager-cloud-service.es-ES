@@ -1,8 +1,8 @@
 ---
-source-git-commit: 964d4a04c6c645a5cdab29218f93431649d41588
+source-git-commit: 4eee52c28a57b466cfba52a99b832108b936a5d3
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 100%
+source-wordcount: '673'
+ht-degree: 95%
 
 ---
 # Fragmentos de código {#snippets}
@@ -80,7 +80,7 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
   </tr>
   <tr>
     <td>Establecer las opciones de la lista desplegable </td>
-    <td>Las opciones de la lista desplegable se establecen con la propiedad <b>Configurar opciones de</b> del Editor de reglas.</td>
+    <td>Las opciones de la lista desplegable se establecen mediante la propiedad <b>Set Options of</b> del Editor de reglas.</td>
     <td>Las opciones desplegables se establecen mediante las funciones personalizadas. 
    </td>
    </tr>
@@ -92,7 +92,7 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
    </td>
    </tr>
       <tr>
-    <td>Validar/restablecer campo/panel/regla de formulario en “Then” </td>
+    <td>Validar/restablecer campo/panel/regla de formulario en "Entonces" </td>
     <td>Las funciones Validar y Restablecer solo admiten objetos de formulario en el Editor de reglas. 
    </td>
     <td>Las funciones Validar y Restablecer admiten objetos de formulario, panel o campo en el Editor de reglas. 
@@ -127,3 +127,10 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 * [Introducción a las funciones personalizadas para formularios adaptables basados en componentes principales](/help/forms/create-and-use-custom-functions.md)
 * [Crear una función personalizada para un formulario adaptable basado en componentes principales](/help/forms/custom-function-core-component-create-function.md)
 * [Ejemplos de desarrollo y uso de funciones personalizadas](/help/forms/custom-function-core-components-use-cases.md)
+
+
+## LISTAS DE PERMITIDOS IP y canalizaciones front-end {#allowlist-frontend-pipeline}
+
+>[!IMPORTANT]
+>
+>Añada la nota importante aquí.
