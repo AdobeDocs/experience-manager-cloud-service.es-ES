@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4eee52c28a57b466cfba52a99b832108b936a5d3
+source-git-commit: 90bc7320899053b6b1d6cf0d1b06b193ad1c68f3
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 95%
+source-wordcount: '818'
+ht-degree: 78%
 
 ---
 # Fragmentos de código {#snippets}
@@ -129,8 +129,14 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 * [Ejemplos de desarrollo y uso de funciones personalizadas](/help/forms/custom-function-core-components-use-cases.md)
 
 
-## LISTAS DE PERMITIDOS IP y canalizaciones front-end {#allowlist-frontend-pipeline}
+## Lista de permitidos IP de Cloud Manager y canalizaciones front-end {#allowlist-frontend-pipeline}
 
 >[!IMPORTANT]
 >
->Añada la nota importante aquí.
+>La canalización front-end requiere que se agregue de antemano la siguiente Lista de permitidos IP a Cloud Manager.
+>Si es necesario, [agregue la Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) copiando el bloque de direcciones a continuación. Cada dirección está separada por una coma. Pegue el bloque en el campo **Dirección IP / CIDR** del cuadro de diálogo **Agregar Lista de permitidos IP**. Coloque el cursor justo después de la primera coma en la lista de direcciones y presione **Intro**. Guarde la lista.
+>Para evitar que se interrumpa la ejecución de la canalización front-end, asegúrese de agregar esta Lista de permitidos IP a Cloud Manager *antes de* de habilitar la canalización.
+>
+>**Lista de permitidos IP DE Cloud Manager**
+>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>   
