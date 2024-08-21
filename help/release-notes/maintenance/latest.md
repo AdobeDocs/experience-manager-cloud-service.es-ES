@@ -4,7 +4,7 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 80edd0255b38beee93b3f9c779ae0f364500b4a5
+source-git-commit: 1eeb15c16581c945beb90495801c525697a46710
 workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 81%
@@ -96,8 +96,7 @@ La activación de funcionalidades 2024.8.0 proporcionará el conjunto completo d
 * ASSETS-40875: la clase AssetDeleteHandler escucha eventos de eliminación de recursos y realiza acciones específicas según el tipo de evento de eliminación (PRE_DELETE o POST_DELETE). En determinados casos, el tipo de evento POST_DELETE provoca una NullPointerException.
 * FORMS-14340: Error al crear una instancia de FormsAndDocumentOmniSearchHandler y CloudStorageSubmitActionInserter. Son instrucciones de registro inofensivas.
 * FORMS-15818: entrada de descriptor de componente &quot;OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml&#39; no se encontró en los registros del servidor. Son instrucciones de registro inofensivas.
-* 
-   * SITES-23662: el usuario que almacena en déclencheur una publicación no se puede extraer de las sentencias de registro JCR en los registros del servidor. Se trata de una función en desarrollo que podría provocar errores intermitentes e inofensivos &quot;No se puede encontrar un ID de usuario válido en el lote de eventos OSGI&quot; en el registro.
+* SITES-23662: el usuario que almacena en déclencheur una publicación no se puede extraer de las sentencias de registro JCR en los registros del servidor. Se trata de una función en desarrollo que podría provocar errores intermitentes e inofensivos &quot;No se puede encontrar un ID de usuario válido en el lote de eventos OSGI&quot; en el registro.
 
 ### Aviso de cambio {#change-notice-17465}
 
