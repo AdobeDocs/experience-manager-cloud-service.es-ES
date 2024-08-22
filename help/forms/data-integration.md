@@ -4,10 +4,10 @@ description: Recupere y guarde datos en servicios web RESTful, servicios web bas
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 5ee37f59bb959e0549c0541c6568aa8c135c330e
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -59,6 +59,10 @@ Revise la siguiente información para iniciar, entender e implementar la integra
 * [Trabajar con el modelo de datos de formulario (FDM)](work-with-form-data-model.md)
 * [Uso del modelo de datos de formulario (FDM)](using-form-data-model.md)
 
+<!--
+
 >[!NOTE]
 >
->[!UICONTROL Experience Manager Forms] no es compatible con las bases de datos relacionales.
+>[!UICONTROL Experience Manager Forms] does not support relational database.
+
+-->
