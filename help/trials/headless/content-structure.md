@@ -1,5 +1,5 @@
 ---
-title: Creación de la estructura de contenidos de la aplicación
+title: Cree la estructura de contenido para la aplicación
 description: Aprenda a utilizar modelos de fragmentos de contenido de AEM para crear su estructura de contenido, que sirve como base para su contenido sin encabezado.
 hidefromtoc: true
 index: false
@@ -7,14 +7,14 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1003'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Creación de la estructura de contenidos de la aplicación {#content-structure}
+# Cree la estructura de contenido para la aplicación {#content-structure}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
@@ -82,7 +82,7 @@ Ya tiene un campo para el título de la aventura. Ahora debe añadir campos para
 
 >[!TIP]
 >
->El modelo **Aventura** se basa en el sitio de muestra de WKND para AEM. Puede [visitar el sitio WKND aquí](https://wknd.site/us/en/adventures/yosemite-backpacking.html) para ver contenido que usa el modelo **Adventure**.
+>El modelo **Aventura** se basa en el sitio de muestra de WKND para AEM. Puede [visitar el sitio WKND aquí](https://wknd.site/us/en/adventures/yosemite-backpacking.html) para ver el contenido que utiliza el modelo **Aventura**.
 
 Siga los mismos pasos que se describen arriba para añadir estos campos adicionales. La única diferencia son las propiedades que debe establecer.
 

@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '974'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Este documento proporciona respuestas a las preguntas más frecuentes sobre Clou
 
 Sí. Añada el `maven-toolchains-plugin` con la configuración adecuada para Java™ 11.
 
-El proceso está documentado. Consulte [Asistente para la creación de proyectos](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
+El proceso está documentado. Consulte el [Asistente para la creación de proyectos](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
 
 Por ejemplo, consulte el [código de ejemplo del proyecto wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
@@ -61,11 +61,11 @@ Este valor permite seguir instalando la implantación posterior cuando la versi�
 
 También puede establecer la versión a `-SNAPSHOT` para generaciones o implementaciones de fase y producción. Cloud Manager establece automáticamente un número de versión adecuado y crea una etiqueta en Git. Se puede hacer referencia a esta etiqueta más adelante, si es necesario.
 
-Para obtener más información acerca de la administración de versiones, consulte [Administración de versiones del proyecto Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
+Para obtener más información acerca de la administración de versiones, consulte [Administrar versiones del proyecto de Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 ## ¿Cómo funcionan las versiones de paquetes para las implementaciones de fase y producción? {#snapshot-version}
 
-En las implementaciones de fase y producción se genera una versión automática; consulte [Administración de versiones del proyecto de Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
+En las implementaciones de fase y producción, se genera una versión automática. Consulte [Administrar versiones del proyecto de Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 Para las versiones personalizadas en las implementaciones de fase y producción, establezca una versión de Maven adecuada como `1.0.0`. Actualice la versión cada vez que implemente en la producción.
 

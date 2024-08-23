@@ -6,9 +6,9 @@ recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1292'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 
 ## Introducción {#introduction}
 
-Adobe Experience Manager es un potente conjunto de servicios de contenido de composición que ofrece rápidamente experiencias personalizadas y de gran impacto en cualquier canal, desbloqueando contenido para todos.  **Edge Delivery Services** es la última innovación de Adobe Experience Manager que permite una velocidad de contenido extrema y ofrece experiencias excepcionales. Obtenga información sobre cómo empezar a trabajar con Edge Delivery Services, consultando [Información general de Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html). Para comprender cómo usar Edge Delivery Services, consulte la página [Tutorial para desarrolladores](https://www.hlx.live/developer/tutorial).
+Adobe Experience Manager es un potente conjunto de servicios de contenido de composición que ofrece rápidamente experiencias personalizadas y de gran impacto en cualquier canal, desbloqueando contenido para todos.  **Edge Delivery Services** es la última innovación de Adobe Experience Manager que permite una velocidad de contenido extrema y ofrece experiencias excepcionales. Obtenga información sobre cómo empezar a trabajar con Edge Delivery Services consultando [Información general de Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html). Para comprender cómo usar Edge Delivery Services, consulte la página [Tutorial para desarrolladores](https://www.hlx.live/developer/tutorial).
 
 La incorporación es el proceso durante el cual un administrador designado del sistema configura AEM as a Cloud Service para su organización. Esto incluye el aprovisionamiento inicial de recursos en la nube y la asignación de usuarios a funciones en función de sus responsabilidades laborales. Como resultado, cada miembro puede iniciar sesión y acceder a sus recursos de AEM as a Cloud Service.
 

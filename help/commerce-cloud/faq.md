@@ -5,9 +5,9 @@ exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 feature: Commerce Integration Framework
 role: Admin, Architect, User
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '965'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -77,4 +77,4 @@ Sí, el cuestionario de autoevaluación D y la certificación de conformidad est
 
 ## 16. ¿Cómo puedo solicitar una licencia de prueba de I/O Runtime?
 
-Consulte [Obtención de acceso](https://developer.adobe.com/runtime/docs/guides/overview/getting_access/) para obtener detalles sobre cómo solicitar una licencia de prueba para usar I/O Runtime.
+Consulte [Obtener acceso](https://developer.adobe.com/runtime/docs/guides/overview/getting_access/) para obtener detalles sobre cómo solicitar una licencia de prueba para usar I/O Runtime.

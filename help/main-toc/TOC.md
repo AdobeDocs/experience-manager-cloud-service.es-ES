@@ -7,7 +7,7 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 source-git-commit: a9b7e2fbafcfc4b5592cc95e6bbd1e8e0f631757
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5340'
 ht-degree: 100%
 
@@ -240,7 +240,7 @@ ht-degree: 100%
 + Pruebas de AEMaaCS {#trials}
    + Pruebas sin encabezado {#headless}
       + [Personalización de contenido en una aplicación de ejemplo en React](/help/trials/headless/customize-app.md)
-      + [Creación de la estructura de contenidos de la aplicación](/help/trials/headless/content-structure.md)
+      + [Cree la estructura de contenido para la aplicación](/help/trials/headless/content-structure.md)
       + [Creación de contenido sin encabezado](/help/trials/headless/create-content.md)
       + [Extracción de contenido mediante la API de GraphQL](/help/trials/headless/extract-content.md)
       + [Recuperar contenido JSON con JavaScript](/help/trials/headless/code-playground.md)
@@ -308,7 +308,7 @@ ht-degree: 100%
       + [Su bandeja de entrada](/help/sites-cloud/authoring/inbox.md)
       + [Consola Componentes](/help/sites-cloud/authoring/components-console.md)
       + [Selección de la ruta](/help/sites-cloud/authoring/path-selection.md)
-      + [Resolución de problemas](/help/sites-cloud/authoring/troubleshooting.md)
+      + [Solución de problemas](/help/sites-cloud/authoring/troubleshooting.md)
       + Consola Sites {#sites-console}
          + [La Consola Sites](/help/sites-cloud/authoring/sites-console/introduction.md)
          + [Panel lateral de la consola](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
@@ -997,7 +997,7 @@ ht-degree: 100%
          + [Cómo acceder al contenido a través de las API de entrega de AEM](/help/journey-headless/developer/access-your-content.md)
          + [Actualización del contenido mediante las API de AEM Assets](/help/journey-headless/developer/update-your-content.md)
          + [Cómo ponerlo todo junto](/help/journey-headless/developer/put-it-all-together.md)
-         + [Publicación de la aplicación sin encabezado](/help/journey-headless/developer/go-live.md)
+         + [Cómo hacer un lanzamiento con su aplicación sin encabezado](/help/journey-headless/developer/go-live.md)
          + [Opcional: cómo crear aplicaciones de una sola página con AEM](/help/journey-headless/developer/create-spa.md)
          + [Portal de desarrolladores (recursos adicionales)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
       + Recorrido de arquitecto de contenido sin encabezado {#architect}

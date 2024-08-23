@@ -5,9 +5,9 @@ exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2666'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Conozca los pasos para habilitar la experiencia completa de AEM Screens as a Clo
 
 >[!NOTE]
 >
->La demostración de AEM Screens requiere que se agregue el complemento Screens al programa Cloud Manager. Aprenda a agregarlo con [Agregar Screens como complemento a un nuevo programa en Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md).
+>La demostración de AEM Screens requiere que se agregue el complemento Screens al programa Cloud Manager. Aprenda cómo añadirlo con [Añadir pantallas como complemento a un nuevo programa en Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md).
 
 ## La historia hasta ahora {#story-so-far}
 

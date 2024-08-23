@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1071'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -113,7 +113,7 @@ Para registrar un error de forma eficaz con la asistencia técnica en caso de qu
 
 ## El recorrido ha terminado, ¿o no? {#journey-ends}
 
-Felicitaciones. Ha completado el recorrido para desarrolladores de AEM sin encabezado. Ahora debe comprender lo siguiente:
+¡Enhorabuena! Ha completado el recorrido para desarrolladores de AEM sin encabezado. Ahora debe comprender lo siguiente:
 
 * La diferencia entre la entrega de contenido sin encabezado y con encabezado.
 * Las características sin encabezado de AEM.
