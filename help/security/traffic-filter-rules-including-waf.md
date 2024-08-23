@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3937'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ A continuación, se presenta un proceso de extremo a extremo recomendado de alto
          action: block
    ```
 
-   Consulte [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#common-syntax) para obtener una descripción de las propiedades sobre el nodo `data`. El valor de la propiedad `kind` debe establecerse en *CDN* y la versión en `1`.
+   Consulte [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#common-syntax) para obtener una descripción de las propiedades que aparecen por encima del nodo `data`. El valor de la propiedad `kind` debe establecerse en *CDN* y la versión en `1`.
 
 
 1. Si las reglas WAF tienen licencia, debe habilitar la función en Cloud Manager, tal como se describe a continuación para los escenarios de programa nuevos y existentes.
@@ -110,7 +110,7 @@ A continuación, se presenta un proceso de extremo a extremo recomendado de alto
 
    1. Para configurar WAF en un programa existente, [edite el programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) y en la pestaña **Seguridad** desmarque o marque la opción **WAF-DDOS** en cualquier momento.
 
-1. Cree una canalización de configuración en Cloud Manager, tal como se describe en el [artículo sobre canalización de configuración.](/help/operations/config-pipeline.md#managing-in-cloud-manager) La canalización hará referencia a una carpeta de nivel superior `config` con el archivo `cdn.yaml` colocado en algún lugar por debajo. Consulte [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#folder-structure).
+1. Cree una canalización de configuración en Cloud Manager, tal como se describe en el [artículo sobre canalización de configuración.](/help/operations/config-pipeline.md#managing-in-cloud-manager) La canalización hará referencia a una carpeta `config` de nivel superior con el archivo `cdn.yaml` colocado en algún lugar por debajo; consulte [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#folder-structure).
 
 ## Sintaxis de reglas de filtro de tráfico {#rules-syntax}
 
@@ -215,7 +215,7 @@ when:
   in: [ "192.168.0.0/24" ]
 ```
 
-* Adobe recomienda el uso de [regex101](https://regex101.com/) y [Fastly Fiddle](https://fiddle.fastly.dev/) cuando se utiliza una expresión regular. También puede obtener más información sobre cómo administra Fastly la regex desde la documentación de [fastly: expresiones regulares en Fastly VCL](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
+* Adobe recomienda el uso de [regex101](https://regex101.com/) y [Fastly Fiddle](https://fiddle.fastly.dev/) cuando se utiliza una expresión regular. También puede obtener más información sobre cómo administra Fastly la expresión regular en [Documentación de fastly: expresiones regulares en Fastly VCL](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
 
 
 ### Estructura de acción {#action-structure}

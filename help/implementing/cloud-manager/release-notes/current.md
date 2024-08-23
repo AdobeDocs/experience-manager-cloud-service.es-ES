@@ -1,17 +1,17 @@
 ---
 title: Notas de la versión para Cloud Manager 2024.8.0 en Adobe Experience Manager as a Cloud Service
-description: Obtenga información acerca de las notas de la versión para Cloud Manager 2024.8.0 en AEM as a Cloud Service.
+description: Obtenga información sobre las notas de la versión para Cloud Manager 2024.8.0 en AEM as a Cloud Service.
 feature: Release Information
 role: Admin
 source-git-commit: a823bcd1461b847983d0243cd9abd59efd8d7b6f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '465'
-ht-degree: 30%
+ht-degree: 100%
 
 ---
 
 
-# Notas de la versión de Cloud Manager 2024.8.0 en Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notas de la versión para Cloud Manager 2024.8.0 en Adobe Experience Manager as a Cloud Service {#release-notes}
 
 Esta página documenta las notas de la versión 2024.8.0 para Cloud Manager en AEM as a Cloud Service.
 
@@ -21,38 +21,38 @@ Esta página documenta las notas de la versión 2024.8.0 para Cloud Manager en A
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de Cloud Manager 2024.8.0 en AEM as a Cloud Service es el jueves, 14 de agosto de 2024. La próxima versión está planificada para el 14 de septiembre de 2024.
+La fecha de lanzamiento de Cloud Manager 2024.8.0 en AEM as a Cloud Service es el 14 de agosto de 2024. La próxima versión está planificada para el 14 de septiembre de 2024.
 
 ## Novedades {#what-is-new}
 
-* [Ya hay disponibles [regiones de publicación adicionales](/help/operations/additional-publish-regions.md) y un {99,99% de SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) (contrato de nivel de servicio) para el as a Cloud Service de AEM Forms.
+* [Ya hay disponibles regiones de publicación adicionales](/help/operations/additional-publish-regions.md) y un [99,99 % de SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) (contrato de nivel de servicio) para AEM Forms as a Cloud Service.
    * Esta mejora le permite lograr mayores SLA con un mayor tiempo de actividad y una menor latencia, lo que garantiza las mejores experiencias de su clase para los usuarios distribuidos globalmente.
 
-## Programa de adopción temprana {#early-adoption}
+## Programa para primeros usuarios {#early-adoption}
 
 Para tener la oportunidad de probar algunas de las próximas funciones, forme parte del programa de adopción anticipada de Adobe.
 
 ### Compatibilidad con Edge Delivery Services en Cloud Manager {#edge-delivery-services}
 
-Si tiene Edge Delivery Services con licencia como parte de AEM Sites, [ahora puede incorporar su sitio con Edge Delivery Services directamente en Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md) e iniciar sesión con una experiencia guiada de autoservicio.
+Si tiene licencia para Edge Delivery Services como parte de AEM Sites, [ahora puede integrar su sitio con Edge Delivery Services directamente en Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md) y publicarlo con una experiencia de autoservicio guiada.
 
-AEM Esta capacidad proporciona una experiencia unificada para todas las propiedades de la. Garantiza la coherencia en flujos de trabajo críticos, como la administración de nombres de dominio, la administración de certificados SSL y las asignaciones de CDN.
+Esta capacidad proporciona una experiencia unificada para todas las propiedades de AEM. Garantiza la coherencia en flujos de trabajo críticos, como la administración de nombres de dominio, la administración de certificados SSL y las asignaciones de CDN.
 
-Si está interesado en probar esta nueva característica y compartir sus comentarios, envíe un mensaje de correo electrónico a `aemcs-cmedgedelsvs-program-adopter@adobe.com` desde la dirección de correo electrónico asociada a su Adobe ID.
+Si le interesa probar esta nueva funcionalidad y compartir sus comentarios, envíe un correo electrónico a `aemcs-cmedgedelsvs-program-adopter@adobe.com` desde su dirección de correo electrónico asociada a su Adobe ID. 
 
 ### Certificados validados por dominio (DV)
 
-Con Cloud Manager, ahora puede [generar y administrar certificados SSL validados por dominio (DV) de autoservicio](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md). Esta capacidad le ofrece la solución más rápida, sencilla y rentable para crear un sitio web seguro para su negocio en línea.
+Cloud Manager ahora le permite [generar y administrar certificados SSL validados por dominio (DV) de autoservicio](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md). Esto le proporciona la solución más rápida, sencilla y rentable para crear un sitio web seguro para su negocio en línea.
 
-Si desea probar esta nueva característica y proporcionar sus comentarios, envíe un mensaje de correo electrónico a `Grp-aemcs-dv-dert-adopter@adobe.com` utilizando la dirección de correo electrónico vinculada a su Adobe ID.
+Si le interesa probar esta nueva funcionalidad y compartir sus comentarios, envíe un correo electrónico a `Grp-aemcs-dv-dert-adopter@adobe.com` desde su dirección de correo electrónico asociada a su Adobe ID. 
 
 ### Tablero de auditoría de experiencias {#experience-audit-dashboard}
 
 [El tablero de auditoría de experiencias de Cloud Manager](/help/implementing/cloud-manager/experience-audit-dashboard.md) incluye una vista de tendencias de las puntuaciones de rendimiento de la página, junto con perspectivas y recomendaciones para ayudarle a mejorarlas. La auditoría de experiencias se incluye como paso en la canalización de producción de Cloud Manager.
 
-El tablero utiliza Google Lighthouse, una herramienta automatizada de código abierto para mejorar la calidad de sus aplicaciones web. Puede utilizarlo para auditar cualquier página web, ya sea pública o que requiera autenticación. Proporciona evaluaciones de rendimiento, accesibilidad, aplicaciones web progresivas, SEO y mucho más.
+El tablero utiliza Google Lighthouse, una herramienta automatizada de código abierto para mejorar la calidad de sus aplicaciones web. Puede ejecutarlo en cualquier página web, pública o que requiera autenticación. Proporciona evaluaciones de rendimiento, accesibilidad, aplicaciones web progresivas, SEO y más.
 
-¿Quiere probar el nuevo tablero? Para empezar, envíe un correo electrónico a `aem-lighthouse-pilot@adobe.com` usando el correo electrónico vinculado a su Adobe ID.
+¿Está interesado en probar el nuevo tablero? Para empezar, envíe un correo electrónico a `aem-lighthouse-pilot@adobe.com` usando el correo electrónico vinculado a su Adobe ID.
 
 ## Corrección de errores
 

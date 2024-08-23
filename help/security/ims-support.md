@@ -5,9 +5,9 @@ exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 feature: Security
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1941'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -60,9 +60,9 @@ Una vez que un cliente existe como una organización de IMS, debe configurar su 
 1. El administrador del sistema realiza la configuración de IDP en Admin Console para configurar el inicio de sesión único.
 1. El administrador de AEM gestiona los grupos locales, los permisos y los privilegios de la forma habitual.
 
-Los conceptos básicos de Identity Management de Adobe, incluida la configuración de IDP, se tratan en [Configurar identidad e inicio de sesión único](https://helpx.adobe.com/es/enterprise/using/set-up-identity.html).
+Los conceptos básicos de Identity Management de Adobe, incluida la configuración de IDP, se tratan en [Configuración de la identidad e inicio de sesión único](https://helpx.adobe.com/es/enterprise/using/set-up-identity.html).
 
-Administración empresarial y uso de Admin Console se tratan en [Bienvenido a la guía de administración de empresas y equipos](https://helpx.adobe.com/es/enterprise/admin-guide.html).
+La administración empresarial y el uso de Admin Console se tratan en [Bienvenido a la guía de administración de empresas y equipos](https://helpx.adobe.com/es/enterprise/admin-guide.html).
 
 ### Incorporación de usuarios en Admin Console {#onboarding-users-in-admin-console}
 
@@ -96,7 +96,7 @@ La herramienta de sincronización de usuarios se distribuye a través del reposi
 
 >[!NOTE]
 >
->Hay disponible una versión preliminar **2.4RC1** con compatibilidad para la creación de grupos dinámicos en [User Sync Tool v2.4rc1 en GitHub](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1).
+>Hay disponible una versión preliminar **2.4RC1** con compatibilidad para la creación de grupos dinámicos en [Herramienta de sincronización de usuarios v2.4rc1 en GitHub](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1).
 
 Las principales características de esta versión son la capacidad de asignar dinámicamente nuevos grupos LDAP para el abono de los usuarios en Admin Console, así como la creación dinámica de grupos de usuarios.
 
@@ -108,11 +108,11 @@ Consulte:
 
 * [Documentación de UST](https://adobe-apiplatform.github.io/user-sync.py/es/)
 
-* la herramienta de sincronización de usuarios debe registrarse como cliente de Adobe Developer UMAPI mediante el procedimiento de [Autenticación para acceso a API](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)
+* La herramienta de sincronización de usuarios debe registrarse como cliente UMAPI de Adobe Developer mediante el procedimiento en [Autenticación para el acceso de la API](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)
 
-* la [documentación de Adobe Developer Console](https://developer.adobe.com/developer-console/)
+* de la [documentación de Adobe Developer Console](https://developer.adobe.com/developer-console/)
 
-* la [API de administración de usuarios que usa la herramienta de sincronización de usuarios](https://adobe-apiplatform.github.io/user-sync.py/es/)
+* La [API de administración de usuarios que utiliza la herramienta de sincronización de usuarios](https://adobe-apiplatform.github.io/user-sync.py/es/)
 
 ## Configuración de Adobe Experience as a Cloud Service {#aem-configuration}
 

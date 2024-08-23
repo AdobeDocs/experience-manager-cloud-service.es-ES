@@ -5,9 +5,9 @@ exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 feature: Security
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '675'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -115,7 +115,7 @@ Antes de configurar OAuth en el lado de AEM, asegúrese de validar accessToken y
 >
 > Puede obtener la colección de la API Postman desde [esta ubicación](https://learn.microsoft.com/es-es/entra/identity-platform/v2-oauth2-auth-code-flow).
 >
-> Consulte la [documentación de MSFT OAuth](https://learn.microsoft.com/es-ES/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) para obtener más información.
+> Consulte la [documentación de MSFT OAuth ](https://learn.microsoft.com/es-ES/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth)para obtener más información.
 
 ### Integración con AEM as a Cloud Service {#integration-with-aem-as-a-cloud-service}
 
@@ -168,7 +168,7 @@ en `/apps/<my-project>/osgiconfig/config` con la siguiente sintaxis: `smtp.host`
    ```
 
 1. Para Outlook, el valor de configuración de `smtp.host` es `smtp.office365.com`
-1. En tiempo de ejecución, pase los secretos `refreshToken values` y `clientSecret` mediante la [API de variables de Cloud Manager](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) o mediante [Cloud Manager para agregar variables](/help/implementing/cloud-manager/environment-variables.md). Los valores de las variables `SECRET_SMTP_OAUTH_REFRESH_TOKEN` y `SECRET_SMTP_OAUTH_CLIENT_SECRET` deben definirse.
+1. Durante el tiempo de ejecución, pase los secretos `refreshToken values` y `clientSecret` mediante la [API de variables de Cloud Manager](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) o utilizando [Cloud Manager para añadir variables](/help/implementing/cloud-manager/environment-variables.md). Los valores de las variables `SECRET_SMTP_OAUTH_REFRESH_TOKEN` y `SECRET_SMTP_OAUTH_CLIENT_SECRET` deben definirse.
 
 ### Solución de problemas {#troubleshooting}
 
