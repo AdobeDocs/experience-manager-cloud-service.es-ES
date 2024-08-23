@@ -4,10 +4,10 @@ description: Obtenga información acerca de la búsqueda de contenido y la index
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: 65e67225a6a91d871218c12c4696dd281787cd58
+source-git-commit: 4de04b0a2c74406544757f9a92c061abfde5b615
 workflow-type: tm+mt
-source-wordcount: '2449'
-ht-degree: 29%
+source-wordcount: '2531'
+ht-degree: 25%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 29%
 
 ## Cambios en AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}
 
-Con AEM as a Cloud Service, Adobe se aleja de un modelo de AEM centrado en instancias y se acerca a una vista basada en servicios con contenedores de AEM n-x, impulsada por canalizaciones de CI/CD en Cloud Manager. En lugar de configurar y mantener los índices en instancias de AEM únicas, la configuración de Índice debe especificarse antes de una implementación. Los cambios de configuración en la producción están violando de forma clara las políticas CI/CD. Lo mismo ocurre con los cambios de índice, ya que pueden afectar a la estabilidad y al rendimiento del sistema si no se especifican, se prueban y se reindexan antes de llevarlos a la producción.
+Con AEM as a Cloud Service, Adobe se aleja de un modelo de AEM centrado en instancias y se acerca a una vista basada en servicios con contenedores de AEM n-x, impulsada por canalizaciones de CI/CD en Cloud Manager. En lugar de configurar y mantener los índices en instancias de AEM únicas, la configuración de Índice debe especificarse antes de una implementación. Los cambios de configuración en la producción están violando de forma clara las políticas CI/CD. Lo mismo ocurre con los cambios de índice, ya que pueden afectar a la estabilidad y al rendimiento del sistema si no se especifican, prueban y reindexan antes de llevarlos a la producción.
 
 A continuación se muestra una lista de los principales cambios en comparación con la versión 6.5 y versiones anteriores de AEM:
 
@@ -165,7 +165,7 @@ Nombre de archivo: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-
 
 ## Configuración del proyecto
 
-Recomendamos encarecidamente usar la versión >= `1.3.2` del Jackrabbit `filevault-package-maven-plugin`. Los pasos para incorporarlo al proyecto son los siguientes:
+Se recomienda encarecidamente utilizar la versión >= `1.3.2` del Jackrabbit `filevault-package-maven-plugin`. Los pasos para incorporarlo al proyecto son los siguientes:
 
 1. Actualizar la versión en el nivel superior `pom.xml`:
 
@@ -212,7 +212,7 @@ Recomendamos encarecidamente usar la versión >= `1.3.2` del Jackrabbit `filevau
    </plugin>
    ```
 
-3. En `ui.apps/pom.xml` y `ui.apps.structure/pom.xml` es necesario habilitar las opciones `allowIndexDefinitions` y `noIntermediateSaves` en `filevault-package-maven-plugin`. Habilitar `allowIndexDefinitions` permite definiciones de índice personalizadas, mientras que `noIntermediateSaves` garantiza que las configuraciones se agregan automáticamente.
+3. En `ui.apps/pom.xml` y `ui.apps.structure/pom.xml`, es necesario habilitar las opciones `allowIndexDefinitions` y `noIntermediateSaves` en `filevault-package-maven-plugin`. Habilitar `allowIndexDefinitions` permite definiciones de índice personalizadas, mientras que `noIntermediateSaves` garantiza que las configuraciones se agregan automáticamente.
 
    Nombres de archivo: `ui.apps/pom.xml` y `ui.apps.structure/pom.xml`
 
@@ -308,11 +308,22 @@ Después de que Adobe cambie un índice predeterminado como &quot;damAssetLucene
 | /oak:index/cqPageLucene | Sí | Sí | No |
 | /oak:index/cqPageLucene-2 | Sí | No | Sí |
 
+AEM Es importante tener en cuenta que los entornos pueden estar en diferentes versiones de la. Por ejemplo: el entorno `dev` está en la versión `X+1` mientras que stage y prod siguen en la versión `X` y esperan actualizarse a la versión `X+1` después de realizar las pruebas necesarias en `dev`. AEM Si la versión `X+1` viene con una versión más reciente de un índice de producto que se ha personalizado y se requiere una nueva personalización de ese índice, la siguiente tabla explicará qué versiones deben establecerse en entornos basados en la versión de la:
+
+| AEM Entorno (versión de la versión de) | Versión del índice del producto | Versión de índice personalizado existente | Nueva versión de índice personalizada |
+|-----------------------------------|-----------------------|-------------------------------|----------------------------|
+| Desarrollo (X+1) | damAssetLucene-11 | damAssetLucene-11-custom-1 | damAssetLucene-11-custom-2 |
+| Fase (X) | damAssetLucene-10 | damAssetLucene-10-custom-1 | damAssetLucene-10-custom-2 |
+| Producción (X) | damAssetLucene-10 | damAssetLucene-10-custom-1 | damAssetLucene-10-custom-2 |
+
+
 ### Limitaciones actuales {#current-limitations}
 
 La administración de índices sólo se admite para índices de tipo `lucene`, con `compatVersion` establecido en `2`. Internamente, se pueden configurar otros índices y utilizarse para consultas, por ejemplo, índices de Elasticsearch. Las consultas que se escriben en el índice `damAssetLucene` podrían, en AEM as a Cloud Service, ejecutarse con una versión Elasticsearch de este índice. Esta diferencia es invisible para el usuario de la aplicación, aunque algunas herramientas, como la característica `explain`, informa de un índice diferente. Para ver las diferencias entre los índices de Lucene y Elasticsearch, consulte [la documentación del Elasticsearch en Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Los clientes no pueden y no necesitan configurar índices de Elasticsearch directamente.
 
 Solo se admiten analizadores integrados (es decir, aquellos analizadores que se envían con el producto). No se admiten analizadores personalizados.
+
+Actualmente no se admite la indexación del contenido de `/oak:index`.
 
 Para obtener el mejor rendimiento operativo, los índices no deben ser excesivamente grandes. El tamaño total de todos los índices puede utilizarse como guía. Si este tamaño aumenta más del 100 % después de agregar índices personalizados y de ajustar los índices estándar en un entorno de desarrollo, se deben ajustar las definiciones de índices personalizados. AEM as a Cloud Service puede evitar la implementación de índices que afectarían negativamente a la estabilidad y el rendimiento del sistema.
 
@@ -350,30 +361,7 @@ A veces, es necesario deshacer una modificación en una definición de índice. 
 
 Lo siguiente solo se aplica a los índices personalizados. Los índices de productos no se pueden eliminar porque los utiliza AEM.
 
-Si se elimina un índice en una versión posterior de la aplicación, se puede definir un índice vacío (que no se utiliza nunca y que no contiene datos), con un nombre nuevo. Para este ejemplo, puede ponerle el nombre `/oak:index/acme.product-custom-3`. Este nombre reemplaza el índice `/oak:index/acme.product-custom-2`. Una vez que el sistema elimine `/oak:index/acme.product-custom-2`, se podrá quitar el índice vacío `/oak:index/acme.product-custom-3`. Un ejemplo de este índice vacío es el siguiente:
-
-```xml
-<acme.product-custom-3
-        jcr:primaryType="oak:QueryIndexDefinition"
-        async="async"
-        compatVersion="2"
-        includedPaths="/dummy"
-        queryPaths="/dummy"
-        type="lucene">
-        <indexRules jcr:primaryType="nt:unstructured">
-            <rep:root jcr:primaryType="nt:unstructured">
-                <properties jcr:primaryType="nt:unstructured">
-                    <dummy
-                        jcr:primaryType="nt:unstructured"
-                        name="dummy"
-                        propertyIndex="{Boolean}true"/>
-                </properties>
-            </rep:root>
-        </indexRules>
-</acme.product-custom-3>
-```
-
-Si ya no es necesario tener una personalización de un índice predeterminado, debe copiar la definición de índice predeterminada. Por ejemplo, si ya ha implementado `damAssetLucene-8-custom-3`, pero ya no necesita las personalizaciones y desea volver al índice `damAssetLucene-8` predeterminado, debe añadir un índice `damAssetLucene-8-custom-4` que contenga la definición de índice de `damAssetLucene-8`.
+Un índice personalizado se puede eliminar en una versión posterior de la aplicación del cliente eliminándolo del repositorio del cliente. AEM Un índice que se elimina del repositorio no se utiliza para consultas en el repositorio, aunque podría seguir presente en las instancias durante un tiempo. Existe un mecanismo de limpieza que se ejecuta periódicamente y que limpia las versiones anteriores de los índices de las instancias.
 
 ## Optimizaciones de índice y consulta {#index-query-optimizations}
 
