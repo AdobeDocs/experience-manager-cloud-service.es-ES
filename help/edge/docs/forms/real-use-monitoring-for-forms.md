@@ -1,12 +1,11 @@
 ---
-title: Monitorización del usuario en tiempo real (RUM) de Edge Delivery Services para AEM Forms as a Cloud Service
+title: Monitorización de uso real (RUM) de Edge Delivery Services para AEM Forms as a Cloud Service
 description: La Monitorización de uso real (RUM) de Edge Delivery Services para AEM Forms as a Cloud Service implica el seguimiento y análisis continuos de las interacciones del usuario con los formularios.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: b078edeb9da059d3c39ac33ece5ce17b60793a24
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 100%
