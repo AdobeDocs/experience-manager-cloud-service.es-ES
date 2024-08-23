@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 1eeb15c16581c945beb90495801c525697a46710
 workflow-type: tm+mt
 source-wordcount: '1176'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ En la siguiente sección se describen las notas de la versión técnicas actuale
 
 ## Versión 17465 {#release-17465}
 
-A continuación se resumen las mejoras continuas para la versión de mantenimiento 17465, que se publicó el jueves, 14 de agosto de 2024. La versión de mantenimiento anterior fue la 17258.
+A continuación se resumen las mejoras continuas para la versión de mantenimiento 17465, que se publicó el 14 de agosto de 2024. La versión de mantenimiento anterior fue la 17258.
 
 La activación de funcionalidades 2024.8.0 proporcionará el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
@@ -45,7 +45,7 @@ La activación de funcionalidades 2024.8.0 proporcionará el conjunto completo d
 * SITES-22813: API de REST de fragmentos de contenido: defina las propiedades mín./máx. para los campos de enumeración.
 * SITES-22031: API de REST de fragmentos de contenido: obtenga modelos de fragmentos de contenido permitidos para la carpeta de un fragmento.
 * SITES-17640: API de REST de fragmentos de contenido: validación de la operación de publicación de fragmentos de contenido.
-* SITES-22677: API de REST de fragmentos de contenido: recupera una lista plana de referencias descendientes.
+* SITES-22677: API de REST de fragmentos de contenido: recupere una lista plana de referencias descendientes.
 * SITES-22207: modelo duplicado en la creación de fragmentos de contenido.
 * SITES-23093 - Eventos: añada etiquetas a las cargas útiles para eventos de modelos de fragmentos de contenido.
 * SITES-23092 - Eventos: añada etiquetas a las cargas útiles para eventos de fragmentos de contenido.
@@ -94,9 +94,9 @@ La activación de funcionalidades 2024.8.0 proporcionará el conjunto completo d
 ### Problemas conocidos {#known-issues-17465}
 
 * ASSETS-40875: la clase AssetDeleteHandler escucha eventos de eliminación de recursos y realiza acciones específicas según el tipo de evento de eliminación (PRE_DELETE o POST_DELETE). En determinados casos, el tipo de evento POST_DELETE provoca una NullPointerException.
-* FORMS-14340: Error al crear una instancia de FormsAndDocumentOmniSearchHandler y CloudStorageSubmitActionInserter. Son instrucciones de registro inofensivas.
-* FORMS-15818: entrada de descriptor de componente &quot;OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml&#39; no se encontró en los registros del servidor. Son instrucciones de registro inofensivas.
-* SITES-23662: el usuario que almacena en déclencheur una publicación no se puede extraer de las sentencias de registro JCR en los registros del servidor. Se trata de una función en desarrollo que podría provocar errores intermitentes e inofensivos &quot;No se puede encontrar un ID de usuario válido en el lote de eventos OSGI&quot; en el registro.
+* FORMS-14340: error al crear una instancia de FormsAndDocumentOmniSearchHandler y CloudStorageSubmitActionInserter. Son instrucciones de registro inofensivas.
+* FORMS-15818: entrada de descriptor de componente &quot;OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml&#39; no se ha encontrado en los registros del servidor. Son instrucciones de registro inofensivas.
+* SITES-23662: el usuario que activa una publicación no se puede extraer de las sentencias de registro JCR en los registros del servidor. Se trata de una función en desarrollo que podría provocar errores intermitentes e inofensivos &quot;No se puede encontrar un id de usuario válido en el lote de eventos OSGI&quot; en el registro.
 
 ### Aviso de cambio {#change-notice-17465}
 
@@ -104,7 +104,7 @@ La activación de funcionalidades 2024.8.0 proporcionará el conjunto completo d
 
 ### Características y API obsoletas {#deprecated-17465}
 
-Tenga en cuenta que estamos en proceso de actualizar `com.day.cq.wcm.api` y con la versión actual, hemos marcado como `@Deprecated` algunos de sus métodos y clases. Estas se eliminarán en futuras versiones, por lo que considere la posibilidad de cambiar a las alternativas sugeridas si utiliza alguna de ellas.
+Tenga en cuenta que estamos en proceso de actualizar `com.day.cq.wcm.api` y con la versión actual, hemos marcado como `@Deprecated` algunos de sus métodos y clases. Estos se eliminarán en futuras versiones, por lo que considere la posibilidad de cambiar a las alternativas sugeridas si utiliza alguna de ellas.
 
 Las funciones y API obsoletas y eliminadas de AEM as a Cloud Service se detallan en el documento [Funciones y API obsoletas y eliminadas](/help/release-notes/deprecated-removed-features.md).
 
