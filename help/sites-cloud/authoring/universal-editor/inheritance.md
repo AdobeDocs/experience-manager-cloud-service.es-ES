@@ -4,10 +4,10 @@ description: Descubra cómo el Editor universal admite la herencia de contenido 
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 58c58243dc98a21161afe0976da4dcdc235da0d3
+source-git-commit: 773ce75975f4dcc2c5310422bcc377b487ebec25
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 3%
+source-wordcount: '474'
+ht-degree: 4%
 
 ---
 
@@ -15,6 +15,10 @@ ht-degree: 3%
 # Herencia de contenido en el editor universal {#inheritance}
 
 Descubra cómo el Editor universal admite la herencia de contenido para la administración de varios sitios y los lanzamientos para admitir la reutilización y localización de contenido.
+
+>[!NOTE]
+>
+>AEM Esta función solo está disponible para el contenido almacenado en el repositorio de.
 
 ## Caso práctico {#use-case}
 
@@ -24,16 +28,13 @@ AEM Para muchos usuarios de la aplicación, crear una página es solo el comienz
 1. **Localice la página** usando Multi Site Management para desplegar la página traducida en diferentes mercados.
 1. **Crear nuevas versiones** utilizando Lanzamientos para preparar futuras iteraciones de la página y aplicar esos cambios.
 
-Estos pasos pueden acelerar la velocidad del contenido y garantizar su coherencia. El editor universal admite la herencia de contenido, que es el mecanismo en el que se basan estos pasos.
+Estos pasos pueden acelerar la velocidad del contenido y garantizar su coherencia. El editor universal admite la herencia de contenido, que es el mecanismo en el que se basan las copias de idioma, la administración de varios sitios y los lanzamientos.
 
 ## Herencia {#what-is-inheritance}
 
-La herencia es el mecanismo por el que el contenido se puede vincular de modo que, al cambiar uno, se cambia automáticamente el otro. Los componentes heredados pueden ser el producto de distintos escenarios, como por ejemplo:
+La herencia es el mecanismo por el que el contenido se puede vincular de modo que, al cambiar uno, se cambia automáticamente el otro.
 
-* [Administración de varios sitios (MSM)](/help/sites-cloud/administering/msm/overview.md)
-* [Lanzamientos](/help/sites-cloud/authoring/launches/overview.md)
-
-MSM y los lanzamientos son herramientas potentes que le ayudan a reutilizar el contenido. Las páginas se pueden copiar desde una fuente central (el modelo) para permitir a los autores realizar cambios específicos del contexto de esas copias, mientras que el resto del contenido permanece heredado del modelo. Esto resulta extremadamente útil a la hora de localizar sitios.
+MSM y los lanzamientos son herramientas útiles para ayudarle a reutilizar el contenido mediante la herencia. Las páginas se pueden copiar desde una fuente central (el modelo) para permitir a los autores realizar cambios específicos del contexto de esas copias, mientras que el resto del contenido permanece heredado del modelo. Esto resulta extremadamente útil a la hora de localizar sitios.
 
 Para modificar parte del contenido de las copias, los autores rompen la herencia en los componentes afectados para garantizar que sus cambios locales no se sobrescriban cuando las copias se sincronizan desde el modelo.
 
@@ -43,9 +44,17 @@ Cuando una página forma parte de MSM o de un lanzamiento y el contenido se edit
 
 El autor no necesita hacer clic en un botón ni realizar ningún otro paso para deshabilitar la herencia antes de realizar modificaciones locales. Tan pronto como se realiza un cambio, la herencia se cancela implícitamente. Esto contrasta con el [Editor de páginas.](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components)
 
+El editor universal no afecta al mecanismo subyacente de herencia. Para obtener más información sobre cómo funciona la herencia, consulte la siguiente documentación.
+
+* [Administración de varios sitios (MSM)](/help/sites-cloud/administering/msm/overview.md)
+* [Lanzamientos](/help/sites-cloud/authoring/launches/overview.md)
+
 ## Limitaciones {#limitations}
 
 * Los autores no pueden revertir la herencia para componentes únicos.
-   * La herencia solo se puede revertir para toda la página a través de la [Consola de información general de Live Copy](/help/sites-cloud/administering/msm/live-copy-overview.md) o la [Consola de inicios.](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+   * La herencia solo se puede revertir para toda la página mediante el
+      * [Consola de información general de Live Copy](/help/sites-cloud/administering/msm/live-copy-overview.md)
+      * [Consola de lanzamiento](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+      * Usando el botón **Restablecer** en la ficha **Live Copy** de la ventana de propiedades de [página.](/help/sites-cloud/authoring/sites-console/page-properties.md)
 * Los autores no tienen comentarios visuales para ver qué componentes tienen deshabilitada la herencia y cuáles aún la conservan.
 * Actualmente, estas características están limitadas a los componentes de las páginas y aún no se aplican a [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md), a pesar de que también tienen capacidades de MSM y Launch.

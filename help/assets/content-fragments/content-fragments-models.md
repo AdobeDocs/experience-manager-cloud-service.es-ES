@@ -5,7 +5,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '3011'
 ht-degree: 86%
@@ -386,7 +386,7 @@ Para implementar el control de contenido, puede configurar las **Directivas** en
 
 >[!NOTE]
 >
-El mecanismo es similar a [permitir plantillas de página](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) para una página, y sus elementos secundarios, en propiedades avanzadas de una página.
+El mecanismo es similar a [permitir plantillas de página](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) para una página, y sus elementos secundarios, en propiedades avanzadas de una página.
 
 Para configurar las **Directivas** para **Modelos de fragmento de contenido permitidos**:
 

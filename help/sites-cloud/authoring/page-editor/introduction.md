@@ -5,7 +5,7 @@ exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 39%
@@ -18,7 +18,7 @@ AEM Una vez creada la página en la consola [**Sitios**,](/help/sites-cloud/auth
 
 >[!NOTE]
 >
->Al editar una página en la consola [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) la consola abrirá el editor correspondiente a la [plantilla:](/help/sites-cloud/authoring/sites-console/templates.md) del editor de páginas descrito en este documento o del [editor universal.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+>Al editar una página en la consola [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) la consola abrirá el editor correspondiente a la [plantilla:](/help/sites-cloud/authoring/page-editor/templates.md) del editor de páginas descrito en este documento o del [editor universal.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Esto proporciona acceso a información detallada de la página, incluidos detall
 * [Bloquear página](/help/sites-cloud/authoring/page-editor/introduction.md#locking-unlocking)
 * [Publicar página](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-pages-1)
 * [Cancelar la publicación de la página](/help/sites-cloud/authoring/sites-console/publishing-pages.md#unpublishing-pages)
-* [Editar plantilla](/help/sites-cloud/authoring/sites-console/templates.md)
+* [Editar plantilla](/help/sites-cloud/authoring/page-editor/templates.md)
 * [Ver como aparece publicado](/help/sites-cloud/authoring/page-editor/introduction.md#view-as-published)
 * [Ver en administración](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Ayuda](/help/sites-cloud/authoring/basic-handling.md#accessing-help)

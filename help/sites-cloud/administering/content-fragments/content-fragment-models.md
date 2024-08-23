@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '3209'
 ht-degree: 54%
@@ -435,7 +435,7 @@ Para implementar el control de contenido, puede configurar las **Directivas** en
 
 >[!NOTE]
 >
-El mecanismo es similar a [permitir plantillas de página](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) para una página, y sus elementos secundarios, en propiedades avanzadas de una página.
+El mecanismo es similar a [permitir plantillas de página](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) para una página, y sus elementos secundarios, en propiedades avanzadas de una página.
 
 Para configurar las **Directivas** para **Modelos de fragmento de contenido permitidos**:
 

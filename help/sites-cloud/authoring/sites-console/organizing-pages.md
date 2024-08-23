@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 67%
@@ -118,7 +118,7 @@ AEM AEM Cuando se proporciona una página **Name** al crear una página, [valida
 
 ## Plantillas {#templates}
 
-AEM En la práctica, una [plantilla](/help/sites-cloud/authoring/sites-console/templates.md) es un tipo especializado de página que se usa como base para cualquier página nueva que se cree.
+AEM En la práctica, una [plantilla](/help/sites-cloud/authoring/page-editor/templates.md) es un tipo especializado de página que se usa como base para cualquier página nueva que se cree.
 
 La plantilla define la estructura de una página, incluida una imagen en miniatura y otras propiedades. Por ejemplo, puede tener plantillas independientes para páginas de productos, mapas del sitio e información de contacto. Las plantillas están formadas por [componentes](#components).
 

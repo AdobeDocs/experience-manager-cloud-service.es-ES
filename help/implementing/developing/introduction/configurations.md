@@ -4,7 +4,7 @@ description: Comprenda las configuraciones de Adobe Experience Manager AEM AEM (
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 4%
@@ -37,7 +37,7 @@ AEM Se pueden crear configuraciones para muchas funciones diferentes dentro de l
 
 * [Segmentos de Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-* [Plantillas editables](/help/sites-cloud/authoring/sites-console/templates.md)
+* [Plantillas editables](/help/sites-cloud/authoring/page-editor/templates.md)
 * varias configuraciones de nube
 
 ### Ejemplos {#administrator-example}
@@ -83,7 +83,7 @@ AEM Es sencillo crear una configuración en mediante el Explorador de configurac
 1. Compruebe el tipo de configuraciones que desea permitir.
    * [Segmentos de Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
    * [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-   * [Plantillas editables](/help/sites-cloud/authoring/sites-console/templates.md)
+   * [Plantillas editables](/help/sites-cloud/authoring/page-editor/templates.md)
    * varias configuraciones de nube
 1. Seleccione **Crear**.
 

@@ -4,7 +4,7 @@ description: Una guía de referencia para desarrolladores para los detalles de l
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '3481'
 ht-degree: 1%
@@ -223,9 +223,9 @@ En el cuadro de diálogo, se definen campos individuales:
 
 ### Cuadros de diálogo de diseño {#design-dialogs}
 
-Los cuadros de diálogo de diseño son similares a los utilizados para editar y configurar contenido, pero proporcionan la interfaz para que los autores de plantillas preconfiguren y proporcionen detalles de diseño para ese componente en una plantilla de página. Los autores de contenido utilizan las plantillas de página para crear páginas de contenido. Consulte la [documentación de la plantilla](/help/sites-cloud/authoring/sites-console/templates.md) para obtener detalles sobre cómo se crean las plantillas.
+Los cuadros de diálogo de diseño son similares a los utilizados para editar y configurar contenido, pero proporcionan la interfaz para que los autores de plantillas preconfiguren y proporcionen detalles de diseño para ese componente en una plantilla de página. Los autores de contenido utilizan las plantillas de página para crear páginas de contenido. Consulte la [documentación de la plantilla](/help/sites-cloud/authoring/page-editor/templates.md) para obtener detalles sobre cómo se crean las plantillas.
 
-[Los cuadros de diálogo de diseño se utilizan al editar una plantilla de página](/help/sites-cloud/authoring/sites-console/templates.md), aunque no son necesarios para todos los componentes. Por ejemplo, los **componentes Título** e **Imagen** tienen cuadros de diálogo de diseño, mientras que el **componente Compartir en redes sociales** no.
+[Los cuadros de diálogo de diseño se utilizan al editar una plantilla de página](/help/sites-cloud/authoring/page-editor/templates.md), aunque no son necesarios para todos los componentes. Por ejemplo, los **componentes Título** e **Imagen** tienen cuadros de diálogo de diseño, mientras que el **componente Compartir en redes sociales** no.
 
 ### IU de Coral e IU de Granite {#coral-and-granite}
 
@@ -280,7 +280,7 @@ Una vez creado un componente, debe habilitarlo para utilizarlo. Su uso muestra c
 
 Una vez definido un componente, debe estar disponible para su uso. Para que un componente esté disponible para utilizarlo en una plantilla, debe habilitarlo en la directiva del contenedor de diseño de la plantilla.
 
-Consulte la [documentación de la plantilla](/help/sites-cloud/authoring/sites-console/templates.md) para obtener detalles sobre cómo se crean las plantillas.
+Consulte la [documentación de la plantilla](/help/sites-cloud/authoring/page-editor/templates.md) para obtener detalles sobre cómo se crean las plantillas.
 
 ### Componentes y el contenido que crean {#components-and-the-content-they-create}
 

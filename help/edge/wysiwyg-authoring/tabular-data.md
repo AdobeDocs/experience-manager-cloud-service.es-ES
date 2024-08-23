@@ -4,10 +4,10 @@ description: Aprenda a utilizar hojas de cálculo para administrar los datos tab
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: f8e305f636c7a7247d2a41f6ed25b1715bd8837c
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 98%
+source-wordcount: '970'
+ht-degree: 97%
 
 ---
 
@@ -130,6 +130,7 @@ Ahora que sabe cómo crear una hoja de cálculo de redirecciones, puede crear cu
 * Metadatos
 * Encabezados
 * Configuración
+* [Taxonomía](/help/edge/wysiwyg-authoring/taxonomy.md)
 
 Simplemente, siga los mismos pasos en las secciones [Crear hoja de cálculo](#spreadsheet) y [Actualizar paths.json](#paths-json), elija la plantilla adecuada y actualice el archivo `paths.json` correctamente.
 
@@ -138,6 +139,7 @@ Para [Configuración](https://www.aem.live/docs/configuration), [Encabezados](ht
 * Configuración: `/.helix/config.json`
 * Encabezados: `/.helix/headers.json`
 * Metadatos: `/metadata.json`
+* Taxonomía: consulte el documento [Administración de datos de taxonomía](/help/edge/wysiwyg-authoring/taxonomy.md) para obtener más información.
 
 Además, puede [crear su propia hoja de cálculo](#own-spreadsheet) con columnas arbitrarias para su propio uso.
 

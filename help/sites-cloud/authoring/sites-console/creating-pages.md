@@ -5,12 +5,13 @@ exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6e13244d7ba7bb6e7a51525b66274427fe21d664
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 29%
+source-wordcount: '477'
+ht-degree: 27%
 
 ---
+
 
 # Creación de páginas {#creating-pages}
 
@@ -38,9 +39,8 @@ A menos que se hayan creado todas las páginas por adelantado, debe crear una p�
 
 1. En el primer paso del asistente, puede hacer lo siguiente:
 
-   * Seleccione la plantilla que desee usar para crear la nueva página y, a continuación, seleccione **Siguiente** para continuar.
-
-   * **Haga clic en Cancelar** para anular el proceso.
+   * Seleccione la plantilla que desee usar para crear la nueva página y, a continuación, seleccione **Siguiente** para continuar o **Cancelar** para anular el proceso.
+   * Las plantillas son compatibles tanto con el [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md) como con el [Editor universal.](/help/edge/wysiwyg-authoring/templates.md)
 
    ![Selección de una plantilla para una nueva página](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 

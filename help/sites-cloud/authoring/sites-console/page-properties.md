@@ -5,7 +5,7 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '2268'
 ht-degree: 90%
@@ -118,7 +118,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Configuración de plantilla**
 
-   * **Plantillas permitidas**: [define la lista de plantillas que están disponibles](/help/sites-cloud/authoring/sites-console/templates.md#enabling-and-allowing-a-template-template-author) dentro de esta rama secundaria
+   * **Plantillas permitidas**: [define la lista de plantillas que están disponibles](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author) dentro de esta rama secundaria
 
 * **Requisito de autenticación**
 

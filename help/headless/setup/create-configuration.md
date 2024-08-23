@@ -4,7 +4,7 @@ description: Cree una configuración como primer paso para empezar a utilizar si
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 92%
@@ -21,7 +21,7 @@ El explorador de configuración proporciona una API de configuración genérica,
 
 En el contexto de la administración de contenido sin encabezado en AEM, piense en una configuración como lugar de trabajo dentro de AEM donde puede crear los modelos de contenido, que definen la estructura de su contenido futuro y los fragmentos de contenido. Puede tener varias configuraciones para separar estos modelos.
 
-Si está familiarizado con las [plantillas de página en una implementación de AEM e de pila completa](/help/sites-cloud/authoring/sites-console/templates.md), el uso de configuraciones para la administración de modelos de contenido es similar.
+Si está familiarizado con las [plantillas de página en una implementación de AEM e de pila completa](/help/sites-cloud/authoring/page-editor/templates.md), el uso de configuraciones para la administración de modelos de contenido es similar.
 
 ## Cómo crear una configuración {#how-to-create-a-configuration}
 

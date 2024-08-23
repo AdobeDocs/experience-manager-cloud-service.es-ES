@@ -4,7 +4,7 @@ description: Las plantillas de página se utilizan para crear una página que se
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '3268'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Al crear una página, debe seleccionar una plantilla. La plantilla de página se utiliza como base para la nueva página. La plantilla define la estructura de la página resultante, cualquier contenido inicial y los componentes que se pueden utilizar (propiedades de diseño). Esto tiene varias ventajas:
 
-* Las plantillas de página permiten a los autores especializados [crear y editar plantillas](/help/sites-cloud/authoring/sites-console/templates.md).
+* Las plantillas de página permiten a los autores especializados [crear y editar plantillas](/help/sites-cloud/authoring/page-editor/templates.md).
    * Estos autores especializados se denominan **autores de plantillas**
    * Los autores de plantillas deben ser miembros del grupo `template-authors`.
 * Las plantillas de página conservan una conexión dinámica con cualquier página creada a partir de ellas. Esto garantiza que cualquier cambio en la plantilla se refleje en las propias páginas.
@@ -32,7 +32,7 @@ Este documento:
 
 >[!NOTE]
 >
->Este documento supone que ya está familiarizado con la creación y edición de plantillas. Consulte el documento de creación [Creación de plantillas de página](/help/sites-cloud/authoring/sites-console/templates.md), que detalla las capacidades de las plantillas editables tal como se exponen al autor de la plantilla.
+>Este documento supone que ya está familiarizado con la creación y edición de plantillas. Consulte el documento de creación [Creación de plantillas de página](/help/sites-cloud/authoring/page-editor/templates.md), que detalla las capacidades de las plantillas editables tal como se exponen al autor de la plantilla.
 
 >[!TIP]
 >
@@ -40,7 +40,7 @@ Este documento:
 
 ## Creación de una nueva plantilla {#creating-a-new-template}
 
-La creación de plantillas de página se realiza principalmente con la [consola de plantillas y el editor de plantillas](/help/sites-cloud/authoring/sites-console/templates.md) por un autor de plantillas. En esta sección se ofrece una descripción general de este proceso y se incluye una descripción de lo que sucede a nivel técnico.
+La creación de plantillas de página se realiza principalmente con la [consola de plantillas y el editor de plantillas](/help/sites-cloud/authoring/page-editor/templates.md) por un autor de plantillas. En esta sección se ofrece una descripción general de este proceso y se incluye una descripción de lo que sucede a nivel técnico.
 
 Al crear una plantilla editable, debe hacer lo siguiente:
 
@@ -60,7 +60,7 @@ Al crear una plantilla editable, debe hacer lo siguiente:
    * Si desea que los autores de páginas puedan añadir y quitar componentes, agregue un sistema de párrafos a la plantilla.
    * Los componentes se pueden volver a desbloquear y bloquear para permitirle definir el contenido inicial.
 
-   Para obtener más información sobre cómo define la estructura un autor de plantillas, consulte [Creación de plantillas de página](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-structure-template-author).
+   Para obtener más información sobre cómo define la estructura un autor de plantillas, consulte [Creación de plantillas de página](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author).
 
    Para obtener detalles técnicos de la estructura, consulte [Estructura](#structure) en este documento.
 
@@ -72,7 +72,7 @@ Al crear una plantilla editable, debe hacer lo siguiente:
 
    * Se aplican a la plantilla (y a las páginas creadas con la plantilla).
 
-   Para obtener más información sobre cómo define las directivas un autor de plantillas, consulte [Creación de plantillas de página](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-structure-template-author).
+   Para obtener más información sobre cómo define las directivas un autor de plantillas, consulte [Creación de plantillas de página](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author).
 
    Para obtener detalles técnicos de las directivas, consulte [Políticas de contenido](#content-policies) en este documento.
 
@@ -81,7 +81,7 @@ Al crear una plantilla editable, debe hacer lo siguiente:
    * El contenido inicial define el contenido que aparecerá cuando se cree una página por primera vez en función de la plantilla.
    * Los autores de la página pueden editar el contenido inicial.
 
-   Para obtener más información sobre cómo define la estructura un autor de plantillas, consulte [Creación de plantillas de página](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-initial-content-author).
+   Para obtener más información sobre cómo define la estructura un autor de plantillas, consulte [Creación de plantillas de página](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-initial-content-author).
 
    Para obtener detalles técnicos sobre el contenido inicial, consulte [Contenido inicial](#initial-content) en este documento.
 
@@ -90,7 +90,7 @@ Al crear una plantilla editable, debe hacer lo siguiente:
    * Puede definir el diseño de la plantilla para una amplia gama de dispositivos.
    * El diseño interactivo para las plantillas funciona igual que para la creación de páginas.
 
-   Para obtener más información sobre cómo define el diseño de la plantilla un autor de plantillas, consulte [Creación de plantillas de página](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-layout-template-author).
+   Para obtener más información sobre cómo define el diseño de la plantilla un autor de plantillas, consulte [Creación de plantillas de página](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-layout-template-author).
 
    Para obtener detalles técnicos sobre el diseño de la plantilla, consulte [Diseño](#layout) en este documento.
 
@@ -99,7 +99,7 @@ Al crear una plantilla editable, debe hacer lo siguiente:
    * Una plantilla se puede habilitar o deshabilitar para que esté disponible o no disponible para los autores de páginas.
    * Una plantilla puede estar disponible o no disponible para determinadas ramas de la página.
 
-   Para obtener más información sobre cómo un autor de plantillas habilita una plantilla, consulte [Creación de plantillas de página](/help/sites-cloud/authoring/sites-console/templates.md#enabling-and-allowing-a-template-template-author).
+   Para obtener más información sobre cómo un autor de plantillas habilita una plantilla, consulte [Creación de plantillas de página](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author).
 
    Para obtener detalles técnicos sobre cómo habilitar una plantilla, consulte [Habilitar y permitir una plantilla](#enabling-and-allowing-a-template-for-use)e en este documento
 
@@ -357,7 +357,7 @@ When creating an editable template, the value is copied from the template type t
 
 Si ha creado una plantilla que puede servir de base a otras plantillas, puede copiar esta plantilla como un tipo de plantilla.
 
-1. Cree una plantilla como lo haría con cualquier plantilla de página. Consulte [Creación de plantillas de página](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author). Esto servirá de base para el tipo de plantilla.
+1. Cree una plantilla como lo haría con cualquier plantilla de página. Consulte [Creación de plantillas de página](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author). Esto servirá de base para el tipo de plantilla.
 1. Con el CRXDE Lite, copie la plantilla creada desde el nodo `templates` al nodo `template-types` en la [carpeta de plantillas](#template-folders).
 1. Elimine la plantilla del nodo `templates` en la [carpeta de plantillas](#template-folders).
 1. En la copia de la plantilla que se encuentra bajo el nodo `template-types`, elimine todas las propiedades `cq:template` y `cq:templateType` de todos los nodos `jcr:content`.
@@ -455,7 +455,7 @@ Define el contenido inicial que tendrá una nueva página al crearla:
 
 ### Diseño {#layout}
 
-Al [editar una plantilla, puede definir el diseño](/help/sites-cloud/authoring/sites-console/templates.md), que usa [diseño interactivo estándar](/help/sites-cloud/authoring/page-editor/responsive-layout.md).
+Al [editar una plantilla, puede definir el diseño](/help/sites-cloud/authoring/page-editor/templates.md), que usa [diseño interactivo estándar](/help/sites-cloud/authoring/page-editor/responsive-layout.md).
 
 <!-- that can also be [configured](/help/sites-administering/configuring-responsive-layout.md). -->
 
@@ -486,7 +486,7 @@ Las directivas de página le permiten definir la [directiva de contenido](#conte
 
    Para poder utilizar una plantilla, debe habilitarse mediante lo siguiente:
 
-   * [Habilitando la plantilla](/help/sites-cloud/authoring/sites-console/templates.md) desde la consola **Plantillas**.
+   * [Habilitando la plantilla](/help/sites-cloud/authoring/page-editor/templates.md) desde la consola **Plantillas**.
 
    * Estableciendo la propiedad status en el nodo `jcr:content`.
 
@@ -501,7 +501,7 @@ Las directivas de página le permiten definir la [directiva de contenido](#conte
 
 1. **Plantillas permitidas**
 
-   * [Defina las rutas de plantilla permitidas en **Propiedades de página**](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) de la página o página raíz apropiada de una subrama.
+   * [Defina las rutas de plantilla permitidas en **Propiedades de página**](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) de la página o página raíz apropiada de una subrama.
    * Establezca la propiedad:
      `cq:allowedTemplates`
 En el nodo `jcr:content` de la rama requerida.

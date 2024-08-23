@@ -5,7 +5,7 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 3%
@@ -223,9 +223,9 @@ Para que el diseño sea eficaz, el autor del contenido debe poder arrastrar inst
 
 Para permitir que los autores agreguen más cuadrículas adaptables a las páginas de contenido, debe habilitar el componente Contenedor de diseño para su página. Para ello, utilice uno de los métodos siguientes:
 
-* **A través del entorno de creación** - [Edite las plantillas de página](/help/sites-cloud/authoring/sites-console/templates.md) para habilitar el contenedor de diseño para una página.
+* **A través del entorno de creación** - [Edite las plantillas de página](/help/sites-cloud/authoring/page-editor/templates.md) para habilitar el contenedor de diseño para una página.
 * **Definición del componente** - Use `allowedComponent` o una inclusión estática al definir el componente.
 
 ### Configuración de la cuadrícula del contenedor de diseño {#configure-the-grid-of-the-layout-container}
 
-Puede configurar el número de columnas disponibles para cada instancia específica del contenedor de diseño [editando las plantillas de página.](/help/sites-cloud/authoring/sites-console/templates.md)
+Puede configurar el número de columnas disponibles para cada instancia específica del contenedor de diseño [editando las plantillas de página.](/help/sites-cloud/authoring/page-editor/templates.md)

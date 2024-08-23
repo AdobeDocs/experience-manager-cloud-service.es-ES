@@ -2,9 +2,12 @@
 title: Creación de plantillas de página
 description: La plantilla define la estructura de la página resultante y, con el editor de plantillas, la creación y el mantenimiento de plantillas ya no son tareas exclusivas de los desarrolladores
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: c79aeaab9d33f1c2a15f93d58847798c6caff31c
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
-source-wordcount: '4522'
+source-wordcount: '4524'
 ht-degree: 84%
 
 ---
@@ -13,7 +16,7 @@ ht-degree: 84%
 
 Al crear una página, debe seleccionar una plantilla, que se utiliza como base para crear la nueva página. La plantilla define la estructura de la página resultante, cualquier contenido inicial y los componentes que se pueden utilizar.
 
-Con el **Editor de plantillas**, la creación y el mantenimiento de plantillas no es una tarea exclusiva para desarrolladores. También puede participar un tipo de usuario avanzado, que se denomina **autor de la plantilla**. Los desarrolladores siguen necesitando configurar el entorno, crear bibliotecas de clientes y crear los componentes que se van a utilizar, pero una vez que estos conceptos básicos están establecidos, el **autor de la plantilla** tiene la flexibilidad de crear y configurar plantillas sin un proyecto de desarrollo.
+Con el **Editor de plantillas**, la creación y el mantenimiento de plantillas ya no es una tarea exclusiva para desarrolladores. También puede participar un tipo de usuario avanzado, que se denomina **autor de la plantilla**. Los desarrolladores siguen necesitando configurar el entorno, crear bibliotecas de clientes y crear los componentes que se van a utilizar, pero una vez que estos conceptos básicos están establecidos, el **autor de la plantilla** tiene la flexibilidad de crear y configurar plantillas sin un proyecto de desarrollo.
 
 La **consola de plantillas** permite a los autores de plantillas lo siguiente:
 
@@ -78,7 +81,7 @@ Al crear una plantilla editable, debe hacer lo siguiente:
    * [Estructura](#editing-a-template-structure-template-author): contenido predefinido que no se puede cambiar en las páginas creadas con la plantilla.
    * [Contenido inicial](#editing-a-template-initial-content-author): contenido predefinido que se puede cambiar en las páginas creadas con la plantilla.
    * [Diseño](#editing-a-template-layout-template-author): para una amplia gama de dispositivos.
-   * [Estilos](/help/sites-cloud/authoring/features/style-system.md): defina los estilos que se van a utilizar con la plantilla y sus componentes.
+   * [Estilos](/help/sites-cloud/authoring/page-editor/style-system.md): defina los estilos que se van a utilizar con la plantilla y sus componentes.
 * [Habilitar la plantilla](#enabling-a-template-template-author) para usarla al crear una página
 * [Permitir el uso de la plantilla](#allowing-a-template-author) para la página o rama requerida del sitio web
 * [Publicar la plantilla](#publishing-a-template-template-author) para que esté disponible en el entorno de publicación
@@ -184,7 +187,7 @@ Una plantilla se puede habilitar o deshabilitar para que esté disponible o no e
 
 1. En la **Consola de plantillas**, seleccione la plantilla.
 1. Seleccione **Activar** o **Desactivar** en la barra de herramientas y, de nuevo, en el cuadro de diálogo de confirmación.
-1. Ahora puedes usar tu plantilla al [crear una página](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), aunque probablemente quieras [editar la plantilla](#editing-templates-template-authors) según tus necesidades.
+1. Ahora puedes usar tu plantilla al [crear una página](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page), aunque probablemente quieras [editar la plantilla](#editing-templates-template-authors) según tus necesidades.
 
 >[!NOTE]
 >
@@ -194,7 +197,7 @@ Una plantilla se puede habilitar o deshabilitar para que esté disponible o no e
 
 Una plantilla puede estar disponible o no disponible para determinadas ramas de la página.
 
-1. Abra [Propiedades de la página](/help/sites-cloud/authoring/fundamentals/page-properties.md) para la página raíz de la rama en que desea que la plantilla esté disponible.
+1. Abra [Propiedades de la página](/help/sites-cloud/authoring/sites-console/page-properties.md) para la página raíz de la rama en que desea que la plantilla esté disponible.
 1. Abra la pestaña **Avanzadas**.
 1. En **Configuración de la plantilla**, utilice **Agregar campo** para especificar la(s) ruta(s) a su(s) plantilla(s).
 
@@ -270,7 +273,7 @@ Cuando un componente se ha desbloqueado, puede definir el [contenido inicial](#e
 
 #### Diseño {#template-layout}
 
-En [diseño](#editing-a-template-layout-template-author) puede predefinir el diseño de la plantilla para los formatos de dispositivo requeridos. El modo de **Diseño** para la creación de plantillas tiene la misma funcionalidad que el modo de [**Diseño** para la creación de páginas](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
+En [diseño](#editing-a-template-layout-template-author) puede predefinir el diseño de la plantilla para los formatos de dispositivo requeridos. El modo de **Diseño** para la creación de plantillas tiene la misma funcionalidad que el modo de [**Diseño** para la creación de páginas](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode).
 
 #### Políticas de la página {#template-page-policies}
 
@@ -278,9 +281,9 @@ En las [políticas de la página](#page-policies), puede conectar las políticas
 
 #### Estilos {#template-styles}
 
-El [sistema de estilos](/help/sites-cloud/authoring/features/style-system.md) permite a un autor de plantillas definir clases de estilos en la política de contenido de un componente, de modo que un autor de contenido puede seleccionarlos al editar el componente en una página. Estos estilos pueden ser variaciones visuales alternativas de un componente, lo que hacen que este sea más flexible.
+El sistema de estilos permite a un autor de plantillas definir clases de estilos en la política de contenido de un componente, de modo que un autor de contenido puede seleccionarlos al editar el componente en una página. Estos estilos pueden ser variaciones visuales alternativas de un componente, lo que hacen que este sea más flexible.
 
-Consulte la [documentación del sistema de estilos](/help/sites-cloud/authoring/features/style-system.md) para obtener más información.
+Consulte la [documentación del sistema de estilos](/help/sites-cloud/authoring/page-editor/style-system.md) para obtener más información.
 
 ### Edición de una plantilla: estructura, autor de plantillas {#editing-a-template-structure-template-author}
 
@@ -319,7 +322,7 @@ Una vez añadido, cada componente se marca con lo siguiente:
 
 >[!NOTE]
 >
->Aunque no sea una operación idéntica, la adición de componentes y recursos a una plantilla tiene muchas similitudes con acciones similares que se llevan a cabo al [crear páginas](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+>Aunque no sea una operación idéntica, la adición de componentes y recursos a una plantilla tiene muchas similitudes con acciones similares que se llevan a cabo al [crear páginas.](/help/sites-cloud/authoring/page-editor/edit-content.md)
 
 #### Acciones de componente {#component-actions}
 
@@ -536,7 +539,7 @@ Aunque todo el contenido creado en el modo de **Estructura** sea visible en el *
 
 ### Edición de una plantilla: diseño, autor de plantillas {#editing-a-template-layout-template-author}
 
-Puede definir el diseño de la plantilla para una amplia gama de dispositivos. El [diseño interactivo](/help/sites-cloud/authoring/features/responsive-layout.md) para las plantillas funciona tal como lo hace para la creación de páginas.
+Puede definir el diseño de la plantilla para una amplia gama de dispositivos. El [diseño interactivo](/help/sites-cloud/authoring/page-editor/responsive-layout.md) para las plantillas funciona tal como lo hace para la creación de páginas.
 
 >[!NOTE]
 >
@@ -611,7 +614,7 @@ Con las propiedades de página, puede definir las bibliotecas del cliente necesa
 
 ### Edición de una plantilla: propiedades de la página inicial, autor {#editing-a-template-initial-page-properties-author}
 
-Con la opción **Propiedades de la página inicial**, puede definir las [propiedades de la página](/help/sites-cloud/authoring/fundamentals/page-properties.md) inicial que se deben utilizar al crear páginas resultantes.
+Con la opción **Propiedades de la página inicial**, puede definir las [propiedades de la página](/help/sites-cloud/authoring/sites-console/page-properties.md) inicial que se deben utilizar al crear páginas resultantes.
 
 1. En el editor de plantillas, seleccione **Información de página** en la barra de herramientas y, luego, **Propiedades de la página inicial** para abrir el cuadro de diálogo.
 

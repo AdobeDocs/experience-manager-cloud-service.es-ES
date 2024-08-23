@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 94%
@@ -26,7 +26,7 @@ Las plantillas son eficaces, ya que se pueden reutilizar y personalizar. Y como 
 
 >[!NOTE]
 >
->Las plantillas de sitio de AEM no deben confundirse con las [plantillas de página](/help/sites-cloud/authoring/sites-console/templates.md). Las plantillas de sitio definen la estructura general de un sitio. Una plantilla de página define la estructura y el contenido inicial de una página individual.
+>Las plantillas de sitio de AEM no deben confundirse con las [plantillas de página](/help/sites-cloud/authoring/page-editor/templates.md). Las plantillas de sitio definen la estructura general de un sitio. Una plantilla de página define la estructura y el contenido inicial de una página individual.
 >
 >Las plantillas de sitio de AEM no deben confundirse con los [temas de sitio de AEM](site-themes.md). Los temas del sitio de AEM solo contienen la información de estilo de un sitio de AEM. Las plantillas del sitio de AEM definen la estructura del sitio y el contenido inicial. Además, contienen un tema del sitio de AEM para permitir una [rápida creación del sitio](create-site.md).
 
