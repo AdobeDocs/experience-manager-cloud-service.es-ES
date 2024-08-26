@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f4c6331491bb08e81964476ad58065c1ee022967
+source-git-commit: 1415d07235641262814e81362c806572bcf582ba
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 20%
+source-wordcount: '421'
+ht-degree: 15%
 
 ---
 
@@ -24,13 +24,53 @@ ht-degree: 20%
 
 AEM as a cloud service es accesible de forma predeterminada a través de Internet. Mientras que la seguridad se gestiona mediante la autenticación y autorización de usuarios, la inclusión en las listas de IP permitidas es una forma de limitar el acceso solo a direcciones IP de confianza.
 
-Las Listas de permitidos IP de Cloud Manager se pueden utilizar para limitar y controlar el acceso a solo aquellas direcciones IP de confianza. Los usuarios de Cloud Manager con los permisos adecuados pueden [crear Lista de permitidos AEM IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) de direcciones IP de confianza desde las que los usuarios de su sitio pueden acceder a sus dominios de la red de confianza.
+Las Listas de permitidos IP de Cloud Manager se pueden utilizar para limitar y controlar el acceso a solo aquellas direcciones IP de confianza. Los usuarios de Cloud Manager con los permisos adecuados pueden [crear y agregar Lista de permitidos AEM IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) de direcciones IP de confianza desde las que los usuarios de su sitio pueden obtener acceso a sus dominios de.
 
 Después de agregar, [las Listas de permitidos IP se pueden aplicar o dejar de aplicar](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) varias veces como unidad o entidad a un servicio de autor, de editor o a ambos en un entorno.
 
 >[!NOTE]
 >
 >Si no se aplica ninguna Lista de permitidos IP, de forma predeterminada se permiten todas las direcciones IP. Cuando se aplica una Lista de permitidos IP, no se permiten direcciones IP, excepto direcciones en la Lista de permitidos IP.
+
+## Uso de la Lista de permitidos IP de Cloud Manager con la canalización front-end {#allowlists-frontend-pipeline}
+
+Si usa (o pretende usar) la canalización [front-end para desarrollar sitios](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md), se debe agregar de antemano la siguiente Lista de permitidos IP de Cloud Manager.
+
+Cuando [agregue la Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md#add-cm-allowlist), asígnele el nombre *`Cloud Manager`* y, a continuación, copie la lista de direcciones que aparece a continuación y péguela en el cuadro de diálogo Lista de permitidos IP.
+
+**Lista de permitidos IP DE Cloud Manager**
+
+```text
+52.254.106.192/28
+20.186.185.181
+52.254.106.240/28
+52.254.107.128/28
+52.254.105.192/28
+52.254.106.176/28
+20.186.185.227
+52.254.106.144/28
+52.254.107.64/28
+20.186.185.239
+20.22.83.112
+52.254.107.80/28
+52.254.107.144/28
+52.254.106.224/28
+20.14.241.153
+52.254.107.0/28
+52.254.107.32/28
+52.254.106.208/28
+40.70.154.136/29
+52.254.106.160/28
+52.254.107.16/28
+52.254.106.0/28
+4.152.211.251
+```
+
+Para evitar interrupciones en la ejecución de la canalización front-end, asegúrese de añadir esta Lista de permitidos IP de Cloud Manager. A continuación, aplique la lista al entorno de creación *antes de* de habilitar la canalización.
+
+Consulte [Aplicar Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md).
+Consulte [Habilitar canalización front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
+
 
 ## Limitaciones {#limitations}
 
