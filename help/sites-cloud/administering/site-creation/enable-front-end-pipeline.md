@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: 1415d07235641262814e81362c806572bcf582ba
+source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
 workflow-type: tm+mt
 source-wordcount: '544'
-ht-degree: 47%
+ht-degree: 45%
 
 ---
 
@@ -50,7 +50,7 @@ AEM puede adaptar automáticamente el sitio existente para utilizar la canalizac
 
 {{add-cm-allowlist-frontend-pipeline}}
 
-La activación del sitio se realiza desde la consola Sitios mediante el [carril del sitio.](site-rail.md)
+La activación del sitio se realiza desde la consola Sitios mediante el [carril del sitio](site-rail.md).
 
 1. Inicie sesión en AEM y navegue hasta su sitio a través de **Navegación global** > **Sitios**.
 1. Seleccione el sitio en la consola. Seleccione la raíz del sitio y no cualquier página secundaria.
