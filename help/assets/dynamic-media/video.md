@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: f41e2f6ce39fff9615e35928d3f569e9254325d0
+source-git-commit: e3667a6172447072d7c528213826fd0171e9acc2
 workflow-type: tm+mt
 source-wordcount: '9406'
 ht-degree: 2%
@@ -143,7 +143,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 * Configure reproductores de vídeo para satisfacer sus necesidades de marca.
 * Integre vídeo en su sitio web, sitio móvil o aplicación móvil con una URL simple o código incrustado.
 
-Ver [ejemplo de reproducción dinámica de vídeo](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480).
+<!-- GIVES a 404 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
 Consulte también [Visualizadores solo para Experience Manager Assets y Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) y [Visualizadores solo para Experience Manager Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) en la [Guía de referencia de visualizadores de Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources).
 
@@ -562,7 +562,7 @@ Al habilitar cualquiera de las tres capacidades anteriores, se habilitan todas. 
 
 ## Acerca de la compatibilidad con varios subtítulos y pistas de audio para vídeos en Dynamic Media{#about-msma}
 
-Con la capacidad de varios subtítulos y pistas de audio de Dynamic Media, puede añadir fácilmente varios subtítulos y pistas de audio a un vídeo principal. Esta posibilidad significa que los vídeos son accesibles para todo el público global. Puede personalizar un solo vídeo principal publicado para un público global en varios idiomas y seguir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
+Con la capacidad de varios subtítulos y pistas de audio de Dynamic Media, puede añadir fácilmente varios subtítulos y pistas de audio a un vídeo principal. Esta capacidad significa que los vídeos son accesibles para una audiencia global. Puede personalizar un solo vídeo principal publicado para un público global en varios idiomas y seguir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
 
 ![Pestaña Pistas de subtítulos y pistas de audio en Dynamic Media junto con una tabla que muestra los archivos de subtítulos .VTT cargados y los archivos de pistas de audio .MP3 cargados para un vídeo.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
 
@@ -613,12 +613,12 @@ Los subtítulos y subtítulos añadidos son compatibles con los formatos WebVTT 
 
    Cuando haya completado cualquiera de las tareas anteriores, vuelva a estos pasos.
 
-   ![Propiedades del recurso ](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Pestaña Subtítulos y pistas de audio en la página Propiedades del vídeo.*
+   ![Propiedades del recurso ](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Pestaña Pistas de subtítulos y audio en la página Propiedades del vídeo.*
 
 1. (Opcional) Para agregar uno o más archivos de subtítulos a un vídeo, haga lo siguiente:
 
    * Seleccionar **[!UICONTROL subtítulos]**.
-   * Desplácese hasta uno o varios archivos .vtt (pistas de texto de vídeo) y selecciónelos y ábralos.
+   * Desplácese hasta uno o más `.vtt` archivos (pistas de texto de vídeo) y selecciónelos y ábralos.
    * Para que los subtítulos sean visibles en el reproductor de contenido, debe añadir los detalles necesarios (metadatos) sobre cada archivo de subtítulos que haya cargado. Seleccione el icono de lápiz a la derecha del nombre de un archivo de rótulo. En el cuadro de diálogo Editar pie de ilustración, escriba los siguientes detalles necesarios sobre el archivo y, a continuación, seleccione **[!UICONTROL Guardar]**. Repita este proceso para cada archivo de rótulo que haya cargado:
 
 
@@ -626,7 +626,7 @@ Los subtítulos y subtítulos añadidos son compatibles con los formatos WebVTT 
    | --- | --- | 
    | Nombre de archivo | El nombre de archivo predeterminado se deriva del nombre de archivo original. El nombre de archivo solo se puede cambiar durante la carga y no se puede cambiar más adelante. Los requisitos de caracteres de nombre de archivo son los mismos que para AEM Assets.<br>No se puede usar el mismo nombre de archivo para archivos de subtítulos y de pistas de audio adicionales. |
    | Idioma | Seleccione el idioma del pie de ilustración. |
-   | Tipo | Seleccione el tipo de rótulo que está utilizando.<br>**Subtítulo**: el texto del título que se muestra con el vídeo que traduce o transcribe el cuadro de diálogo.<br>**Pie de ilustración**: el texto del pie de ilustración también incluye ruidos de fondo, diferenciación del orador y otra información relevante, junto con la traducción o transcripción del cuadro de diálogo, lo que hace que el contenido sea más accesible para las personas sordas o con dificultades auditivas. |
+   | Tipo | Seleccione el tipo de rótulo que está utilizando.<br>**Subtítulo**: el texto del título que se muestra con el vídeo que traduce o transcribe el cuadro de diálogo.<br>**Pie de ilustración**: el texto del pie de ilustración incluye ruidos de fondo e identificación del altavoz. También incluye otros detalles relevantes junto con la traducción o transcripción del diálogo. Esta funcionalidad hace que el contenido sea más accesible para personas sordas o con dificultades auditivas. |
    | Etiqueta | Texto que se muestra para el nombre del pie de ilustración en la lista emergente **[!UICONTROL Seleccionar audio o pie de ilustración]** del reproductor multimedia. La etiqueta es lo que ve un cliente y que corresponde a un subtítulo o pista de rótulo. Por ejemplo, inglés (CC). |
 
    Si es necesario, puede cambiar o editar los metadatos de los subtítulos más adelante. Cuando se publica el vídeo, estos detalles se reflejan en las direcciones URL públicas de los vídeos publicados.
@@ -635,7 +635,7 @@ Los subtítulos y subtítulos añadidos son compatibles con los formatos WebVTT 
 
    * Seleccione **[!UICONTROL Cargar pistas de audio]**.
    * Desplácese hasta uno o varios archivos .mp3, ábralos y selecciónelos.
-   * Para que las pistas de audio estén visibles en la lista emergente **[!UICONTROL Seleccionar audio o rótulo]** del reproductor multimedia, debe agregar los detalles necesarios sobre cada archivo de pista de audio que agregó. Seleccione el icono de lápiz a la derecha del nombre de un archivo de pista de audio. En el cuadro de diálogo Editar pista de audio, escriba los siguientes detalles necesarios y, a continuación, seleccione **[!UICONTROL Guardar]**. Repita este proceso para cada archivo de pista de audio que haya cargado.
+   * Para que las pistas de audio estén visibles en la lista emergente **[!UICONTROL Seleccionar audio o pie de ilustración]** del reproductor multimedia, agregue los detalles necesarios para cada archivo de pista de audio. Asegúrese de incluir toda la información necesaria para una visualización adecuada. Seleccione el icono de lápiz a la derecha del nombre de un archivo de pista de audio. En el cuadro de diálogo Editar pista de audio, escriba los siguientes detalles necesarios y, a continuación, seleccione **[!UICONTROL Guardar]**. Repita este proceso para cada archivo de pista de audio que haya cargado.
 
    | Metadatos de pista de audio | Descripción |
    | --- | --- |
@@ -931,7 +931,7 @@ En el cuadro de diálogo **Establecer como predeterminado**, seleccione **[!UICO
 1. En la esquina superior derecha, seleccione **[!UICONTROL Guardar y cerrar]**.
 1. Publish el vídeo. Consulte [recursos de Publish](publishing-dynamicmedia-assets.md).
 
-### Vista previa de un vídeo con varios subtítulos y pistas de audio{#preview-video-audio-subtitle}
+### Vista previa de un vídeo con varios subtítulos y pistas de audio {#preview-video-audio-subtitle}
 
 Una vez que los archivos de subtítulos y de pistas de audio se hayan cargado a un vídeo y procesado, puede utilizar el visor de vídeo de Dynamic Media para previsualizar todas las pistas. Al hacerlo, puede ver el aspecto y el sonido que tiene el vídeo para los clientes y garantizar que se comporte según lo esperado.
 
@@ -993,7 +993,7 @@ No se puede descargar la pista de audio original extraída de un archivo de víd
 
 **Caso de uso:** La descarga de un archivo de subtítulos podría ser necesaria si encuentra un error en un archivo de `.vtt`. Simplemente descargue el archivo `.vtt` incorrecto, ábralo en un editor de texto sin formato y realice las correcciones pertinentes. Después de guardar el archivo de `.vtt`, cárguelo de nuevo. A continuación, use la opción **[!UICONTROL Traducir subtítulos]** para volver a traducir el archivo `.vtt` corregido.
 
-**Para descargar archivos de subtítulos o pistas de audio de un vídeo:**
+**Para descargar los archivos de subtítulos o de pistas de audio que se cargaron en un vídeo:**
 
 1. Vaya al recurso de vídeo cuya pista de audio predeterminada desee establecer.
 1. En el modo de selección de recursos, ya sea en la vista de lista o en la vista de tarjeta, seleccione el recurso de vídeo.
@@ -1182,7 +1182,7 @@ Cuando se cambia la miniatura de un vídeo, se omite la generación de miniatura
 
 La capacidad de personalizar una miniatura de vídeo solo está disponible después de haber aplicado un perfil de vídeo a la carpeta en la que se encuentra el vídeo.
 
-### Adición de una miniatura de vídeo personalizada {#adding-a-custom-video-thumbnail}
+### Añadir una miniatura de vídeo personalizada {#adding-a-custom-video-thumbnail}
 
 1. Asegúrese de haber realizado ya lo siguiente:
 
