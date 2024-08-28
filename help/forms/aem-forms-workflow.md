@@ -4,10 +4,14 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: Utilice el flujo de trabajo de AEM Forms para automatizar y crear rápidamente flujos de trabajo de procesos empresariales. Por ejemplo, revisión y aprobación, generación de PDF, flujos de trabajo de Adobe Sign.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+feature: Adaptive Forms
+role: User, Developer
+hide: true
+hidefromtoc: true
+source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
 workflow-type: tm+mt
-source-wordcount: '2373'
-ht-degree: 100%
+source-wordcount: '2335'
+ht-degree: 99%
 
 ---
 
@@ -197,7 +201,7 @@ Puede iniciar o habilitar un flujo de trabajo centrado en Forms mediante:
 
 ### El envío de una solicitud desde la bandeja de entrada AEM {#inbox}
 
-La solicitud de flujo de trabajo que ha creado está disponible como solicitud en la bandeja de entrada. Los usuarios que sean miembros de [!DNL workflow-users] pueden rellenar y enviar la solicitud que activa el flujo de trabajo asociado. Para obtener información sobre el uso de la bandeja de entrada AEM para enviar solicitudes y administrar tareas, consulte [Administrar solicitudes y tareas de Forms en la bandeja de entrada AEM](manage-applications-/help/sites-cloud/authoring/inbox.md).
+La solicitud de flujo de trabajo que ha creado está disponible como solicitud en la bandeja de entrada. Los usuarios que sean miembros del grupo [!DNL workflow-users] pueden rellenar y enviar la solicitud que almacena en déclencheur el flujo de trabajo asociado.
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 
@@ -270,9 +274,3 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 ### Purgar instancias del flujo de trabajo {#purge-workflow-instances}
 
 Al minimizar el número de instancias del flujo de trabajo, aumenta el rendimiento del motor de flujos de trabajo, por lo que puede depurar con regularidad las instancias del flujo de trabajo completadas o en ejecución desde el repositorio. Para obtener información detallada, consulte [Depuración regular de instancias del flujo de trabajo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/maintenance.html?lang=es) para depurar instancias del flujo de trabajo
-
-
->[!MORELIKETHIS]
->
->* [Usar el flujo de trabajo de traducción de AEM para localizar formularios adaptables y documentos de registro](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
->* [Variables en flujos de trabajo de AEM centrados en Forms](/help/forms/variable-in-aem-workflows.md)

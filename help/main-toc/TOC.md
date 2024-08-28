@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 773ce75975f4dcc2c5310422bcc377b487ebec25
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
-source-wordcount: '5348'
+source-wordcount: '5478'
 ht-degree: 99%
 
 ---
@@ -681,6 +681,7 @@ ht-degree: 99%
          + [Crear modelo de datos de formulario](/help/forms/create-form-data-models.md)
          + [Trabajo con el modelo de datos de formulario](/help/forms/work-with-form-data-model.md)
          + [Uso del modelo de datos de formulario](/help/forms/using-form-data-model.md)
+         + [Diseño de un esquema XML para un formulario adaptable](/help/forms/adaptive-form-xml-schema-form-model.md)
    + Formularios adaptables {#adaptive-forms-authoring}
       + [Creación de un formulario adaptable](/help/forms/create-an-adaptive-form.md)
       + [Crear fragmento de formulario adaptable](/help/forms/adaptive-form-fragments.md)
@@ -730,12 +731,17 @@ ht-degree: 99%
             + [Revisar y corregir formularios convertidos](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=es#welcome-to-review-and-correct-editor)
          + Crear un formulario adaptable {#create-an-adaptive-form-on-forms-cs}
             + [Introducción a la creación de un formulario adaptable](/help/forms/introduction-forms-authoring.md)
+            + [Crear ayuda en contexto para campos de formulario](/help/forms/authoring-in-field-help.md)
             + [Creación de un formulario adaptable](/help/forms/creating-adaptive-form.md)
             + [Temáticas de referencia, plantillas y modelos de datos](/help/forms/reference-themes-templates-data-models.md)
             + [Creación de una plantilla](/help/forms/template-editor.md)
             + [Crear una temática](/help/forms/themes.md)
+            + [Fragmentos de formulario adaptable de referencia](/help/forms/reference-adaptive-form-fragments.md)
+            + [Sincronizar formularios adaptables con plantillas de formularios XFA](/help/forms/synchronizing-adaptive-forms-xfa.md)
+            + [Compatibilidad con XFA en formularios adaptables basados en XDP](/help/forms/xfa-api-supported-in-adaptive-form.md)
             + [Diseño de un esquema JSON para un formulario adaptable](/help/forms/adaptive-form-json-schema-form-model.md)
-            + [Mejora del rendimiento de los formularios grandes con carga lenta](/help/forms/lazy-loading-adaptive-forms.md)
+            + [Mejorar el rendimiento de los formularios grandes mediante la carga diferida](/help/forms/lazy-loading-adaptive-forms.md)
+            + [Publicar y cancelar la publicación de formularios y documentos](/help/forms/publishing-unpublishing-forms.md)
          + Adición de componentes a un formulario adaptable {#add-components-to-an-adaptive-form}
             + [Uso de CAPTCHA en un formulario adaptable](/help/forms/captcha-adaptive-forms.md)
             + [Utilice hCaptcha en un formulario adaptable](/help/forms/integrate-adaptive-forms-hcaptcha.md)
@@ -748,10 +754,15 @@ ht-degree: 99%
             + [Definición del diseño de un formulario adaptable](/help/forms/layout-capabilities-adaptive-forms.md)
             + [Uso del modo Diseño para cambiar el tamaño de los componentes](/help/forms/resize-using-layout-mode.md)
             + [Creación de una experiencia de captura de datos en varios pasos](/help/forms/introduction-form-sequence.md)
+            + [Construcciones de estilo para formularios adaptables](/help/forms/styling-constructs-adaptive-forms.md)
             + [Aplicación de estilos CSS en línea a componentes de formulario adaptable individuales](/help/forms/inline-style-adaptive-forms.md)
+            + [Cómo utilizar el componente Separador en Forms adaptable](/help/forms/separator-component-in-adaptive-forms.md)
          + Adición de reglas y uso de expresiones en un formulario adaptable {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [Adición de reglas a un formulario adaptable](/help/forms/rule-editor.md)
             + [Agregar un controlador de error personalizado mediante el servicio Invocar del editor de reglas](/help/forms/add-custom-error-handler-adaptive-forms.md)
+            + [Conceder acceso al Editor de reglas a determinados grupos de usuarios](/help/forms/rule-editor-access-user-groups.md)
+            + [Uso de expresiones SOM en formularios adaptables](/help/forms/using-som-expressions-adaptive-forms.md)
+            + [Expresiones de formularios adaptables](/help/forms/adaptive-form-expressions.md)
          + Uso [!DNL Adobe Sign] {#use-adobe-sign}
             + [Uso de Adobe Sign para firmar electrónicamente un formulario adaptable](/help/forms/working-with-adobe-sign.md)
          + Configuración de envío de acciones y envío de metadatos {#configure-submit-actions-and-metadata-submission}
@@ -759,6 +770,8 @@ ht-degree: 99%
             + [Configuración de la página de redirección](/help/forms/configuring-redirect-page.md)
             + [Configuración del envío asincrónico para un formulario adaptable](/help/forms/asynchronous-submissions-adaptive-forms.md)
             + [Creación de una acción de envío personalizada](/help/forms/custom-submit-action-form.md)
+            + [Agregar información de datos de usuario a los metadatos de envío de formularios](/help/forms/form-submission-metadata.md)
+            + [API para invocar el servicio del modelo de datos de formulario (FDM) desde formularios adaptables](/help/forms/invoke-form-data-model-services.md)
          + [Rellene previamente los campos del formulario adaptable](/help/forms/prepopulate-adaptive-form-fields.md)
          + [Generar documento de registro](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
          + [Agregar la compatibilidad con nuevas configuraciones regionales a un formulario adaptable](/help/forms/supporting-new-language-localization.md)
@@ -769,11 +782,16 @@ ht-degree: 99%
             + [Creación de un formulario adaptable accesible](/help/forms/creating-accessible-adaptive-forms.md)
          + [Configuración del portal de Forms](/help/forms/configure-forms-portal.md)
          + [Crear y administrar revisiones](/help/forms/create-reviews-forms.md)
+         + [Asociar revisores de envío con un formulario](/help/forms/adding-reviewers-form.md)
+         + [Creación y administración de revisiones para un formulario adaptable](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [Palabras clave en formularios adaptables](/help/forms/adaptive-forms-keywords.md)
       + [Vista previa de un formulario](/help/forms/previewing-forms.md)
    + Flujos de trabajo centrados en formularios {#create-form-centric-workflows}
+      + [Introducción al flujo de trabajo centrado en Forms](/help/forms/aem-forms-workflow.md)
       + [Uso de pasos centrados en Forms en un flujo de trabajo + referencia de paso](/help/forms/aem-forms-workflow-step-reference.md)
       + [Uso de variables en un flujo de trabajo centrado en Forms](/help/forms/variable-in-aem-workflows.md)
+      + [Selección dinámica de usuarios o grupos en el flujo de trabajo de AEM](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
+      + [Administrar aplicaciones y tareas de Forms en Bandeja de entrada de AEM](/help/forms/manage-applications-inbox.md)
       + [Usar la opción Fuera de la oficina](/help/forms/configure-out-of-office-settings.md)
    + API de comunicaciones {#using-communications}
       + [Introducción a las API de comunicaciones](/help/forms/aem-forms-cloud-service-communications-introduction.md)
@@ -781,6 +799,7 @@ ht-degree: 99%
       + [API de comunicaciones: procesamiento por lotes](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [Instalación y configuración de Forms Designer](/help/forms/installing-configuring-designer.md)
       + [Uso de Forms Designer para crear plantillas](/help/forms/use-forms-designer.md)
+      + [Cambiar el contenido de la página cero en Designer](/help/forms/changing-page-zero-content-designer.md)
       + [Uso de fuentes personalizadas en documentos PDF](/help/forms/use-custom-fonts.md)
       + [Lista de fuentes admitidas en los documentos PDF](/help/forms/supported-out-of-the-box-fonts.md)
       + [Problemas conocidos, prácticas recomendadas y preguntas más frecuentes](/help/forms/communications-known-issues-limitations.md)
@@ -926,6 +945,7 @@ ht-degree: 99%
          + [Cargar opciones desde la URL en un formulario](/help/edge/docs/forms/load-options-from-url.md)
          + [Personalizar el aspecto de los formularios](/help/edge/docs/forms/style-theme-forms.md)
          + [Usar reglas para añadir un comportamiento dinámico a un formulario](/help/edge/docs/forms/rules-forms.md)
+         + [Expresiones regex para validaciones](/help/edge/docs/forms/regex-forms.md)
          + [Mostrar un mensaje de agradecimiento personalizado después del envío del formulario](/help/edge/docs/forms/thank-you-page-form.md)
       + Funciones {#advanced-features-edge-delivery-services-forms}
          + [Usar fragmentos de formulario](/help/edge/docs/forms/form-fragments.md)

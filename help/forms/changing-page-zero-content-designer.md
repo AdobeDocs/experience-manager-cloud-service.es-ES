@@ -3,8 +3,9 @@ title: Cambiar el contenido de la página cero en Designer
 description: Cambie el mensaje que se muestra en la página cero de un PDF de XFA para los visualizadores PDF que no son de Adobe.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-docset: aem65
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Adaptive Forms
+role: User
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 100%

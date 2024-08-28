@@ -1,12 +1,9 @@
 ---
 title: Personalizar el aspecto de los formularios adaptables
 description: Utilice el marco de trabajo LESS para Formularios adaptables para personalizar el aspecto de los formularios adaptables.
-uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: develop
-discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
-docset: aem65
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Adaptive Forms, Foundation Components
+role: User
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
 source-wordcount: '2307'
 ht-degree: 100%
