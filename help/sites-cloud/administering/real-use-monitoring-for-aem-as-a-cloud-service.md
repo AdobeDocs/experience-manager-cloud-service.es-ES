@@ -4,10 +4,10 @@ description: Aprenda a utilizar Real Use Monitoring (RUM) para capturar y analiz
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 8ccef0103ae7fb75171431eeb36f7352f6467d56
+source-git-commit: ae9951fa89edeab5f34ae3506cf8a4864201c93e
 workflow-type: tm+mt
-source-wordcount: '1302'
-ht-degree: 0%
+source-wordcount: '1282'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 >[!INFO]
 >
->La supervisión del lado del cliente solo funciona para clientes con la versión de AEM Cloud Service **2024.5.16461** y superior.
+>AEM La monitorización del lado del cliente solo funciona para clientes con la versión de Cloud Service **2024.5.16461** o superior de (Adobe Experience Manager).
 
 ## Información general {#overview}
 
-El servicio Real Use Monitoring (RUM) es una tecnología de monitorización del rendimiento que captura y analiza las experiencias de los usuarios digitales de un sitio web o aplicación en tiempo real. Proporciona visibilidad del rendimiento en tiempo real de una aplicación web y proporciona una perspectiva más detallada de la experiencia del usuario final. El servicio se centra en optimizar el rendimiento mediante la supervisión de las participaciones en sitios web, en lugar de en los propios usuarios.
+El servicio RUM (Real Use Monitoring) es una tecnología de monitorización del rendimiento que captura y analiza las experiencias de los usuarios digitales de un sitio web o aplicación en tiempo real. Proporciona visibilidad del rendimiento en tiempo real de una aplicación web y proporciona una perspectiva más detallada de la experiencia del usuario final. El servicio se centra en optimizar el rendimiento mediante la supervisión de las participaciones en sitios web, en lugar de en los propios usuarios.
 
 Con RUM, las métricas de rendimiento clave se rastrean desde el inicio de la dirección URL hasta que la solicitud se devuelve al explorador. Ayuda a los desarrolladores a mejorar la aplicación para facilitar su uso a los usuarios finales.
 
@@ -33,9 +33,8 @@ Con RUM, las métricas de rendimiento clave se rastrean desde el inicio de la di
 
 ## ¿Quién puede beneficiarse de un servicio de monitorización de uso real? {#who-can-benefit-from-rum-service}
 
-El servicio de Monitorización de Uso Real es beneficioso para todos los clientes. Ofrece un reflejo representativo de las interacciones del usuario, lo que garantiza una medida fiable de la participación del sitio web al capturar el número de vistas de página del lado del cliente.
+AEM El ha desarrollado RUM para ayudar a los clientes y al Adobe AEM a comprender cómo los visitantes interactúan con los sitios de la. El RUM se puede utilizar para ayudar a diagnosticar problemas de rendimiento y medir la eficacia de los experimentos. RUM preserva la privacidad de los visitantes a través del muestreo (solo se supervisa una pequeña parte de todas las vistas de página) y no se recopila información de identificación personal (PII).
 
-Para todos los clientes de Adobe, este servicio proporciona información valiosa sobre las interacciones del usuario. Los clientes que utilizan su propia CDN pueden beneficiarse de la creación de informes de tráfico simplificados, ya que Adobe ahora integra directamente la recopilación de datos, lo que elimina la necesidad de crear informes separados durante los ciclos de renovación.
 
 ## Comprender el funcionamiento del servicio de monitorización de uso real {#understand-how-the-rum-service-works}
 
@@ -110,7 +109,7 @@ A medida que analiza los datos de RUM, puede haber variaciones en las vistas de 
 
 1. **La ruta de acceso `/.rum` está bloqueada en mi sitio, ¿cómo debo corregirla?**
 
-   La ruta de acceso `/.rum` es necesaria para que funcione la colección RUM. Si tiene una CDN delante de lo que proporciona el Adobe como parte de AEM as a Cloud Service AEM AEM, asegúrese de que la ruta `/.rum` se reenvíe al mismo origen de la que el resto del contenido. Y asegúrese de que no se ajuste de ninguna manera.
+   La ruta de acceso `/.rum` es necesaria para que funcione la colección RUM. Si utiliza una CDN delante de AEM as a Cloud Service AEM AEM de Adobe, asegúrese de que la ruta de `/.rum` se reenvíe al mismo origen de que el resto de su contenido de la red de distribución de contenido (CDN) de la red de distribución de contenido (). Y asegúrese de que no se ajuste de ninguna manera.
 
 1. **¿La colección RUM cuenta para las solicitudes de contenido por motivos contractuales?**
 
