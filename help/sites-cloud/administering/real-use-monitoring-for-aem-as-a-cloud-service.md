@@ -4,9 +4,9 @@ description: Aprenda a utilizar Real Use Monitoring (RUM) para capturar y analiz
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: ae9951fa89edeab5f34ae3506cf8a4864201c93e
+source-git-commit: 2515bc51fd54b014ffb701a8aef38cd08d6725b3
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1274'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ AEM El ha desarrollado RUM para ayudar a los clientes y al Adobe AEM a comprende
 
 ## Comprender el funcionamiento del servicio de monitorización de uso real {#understand-how-the-rum-service-works}
 
-Adobe Experience Manager AEM () utiliza la Monitorización de uso real (RUM) para ayudar a los clientes y al Adobe AEM a comprender cómo los visitantes interactúan con los sitios de la. Les ayuda a diagnosticar problemas de rendimiento y a medir la eficacia de los experimentos. RUM preserva la privacidad de los visitantes a través del muestreo (solo se supervisa una pequeña parte de todas las vistas de página) y no se recopila información de identificación personal (PII).
+AEM El usuario utiliza RUM para ayudar a los clientes y al Adobe AEM a comprender cómo los visitantes interactúan con los sitios de la. Les ayuda a diagnosticar problemas de rendimiento y a medir la eficacia de los experimentos. RUM preserva la privacidad de los visitantes a través del muestreo (solo se supervisa una pequeña parte de todas las vistas de página) y no se recopila información de identificación personal (PII).
 
 ## Servicio de monitoreo de uso real y privacidad {#rum-service-and-privacy}
 
@@ -46,13 +46,13 @@ AEM El servicio de Monitorización de uso real de la aplicación está diseñado
 
 Como operador de sitio, no se requiere ninguna opción de inclusión adicional para habilitar la monitorización a través de esta función. No hay ningún formulario emergente o de consentimiento adicional que los usuarios finales deban aceptar para habilitar RUM.
 
-## Muestreo de datos del servicio de monitorización de uso real {#rum-service-data-sampling}
+## Muestreo de datos del servicio de Monitorización de uso real {#rum-service-data-sampling}
 
 Las soluciones tradicionales de análisis web intentan recopilar datos de cada visitante. AEM El servicio de RUM de solo captura información de una pequeña fracción de las vistas de página. El servicio está diseñado para ser muestreado y anonimizado, en lugar de un reemplazo para el análisis. De forma predeterminada, las páginas tienen una proporción de muestreo de 1:100. Los operadores de sitio no pueden aumentar ni disminuir la tasa de muestreo en este momento. Para calcular el tráfico total con precisión, por cada 100 vistas de página, se recopilan datos de 1, lo que le proporciona una aproximación fiable del tráfico general.
 
 A medida que se decide si los datos se recopilan, se toman por vista de página por vista de página, y resulta prácticamente imposible rastrear las interacciones en varias páginas. Por diseño, RUM no tiene concepto de visitantes o sesiones, solo de vistas de página.
 
-## Qué datos se recopilan {#what-data-is-being-collected}
+## ¿Qué datos se recopilan? {#what-data-is-being-collected}
 
 El servicio de Monitoreo de Uso Real está diseñado para evitar la recopilación de información personal. El conjunto completo de información recopilada por RUM se enumera a continuación:
 
@@ -68,7 +68,7 @@ El servicio de Monitoreo de Uso Real está diseñado para evitar la recopilació
 * El objetivo o vínculo a una página o recurso externo con el que el usuario interactúa para el punto de comprobación mencionado anteriormente. Por ejemplo: `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
 * Las métricas de rendimiento de elementos vitales de la web (CWV) principales, como Pintado de contenido más grande (LCP), Primer retraso de entrada (FID), Cambio de diseño acumulativo (CLS) y Tiempo hasta el primer byte (TTFB), que describen la calidad de experiencia del visitante.
 
-## Funcionamiento de la monitorización de uso real para un cliente {#how-rum-works-for-a-customer}
+## Cómo funciona la Monitorización de uso real para un cliente {#how-rum-works-for-a-customer}
 
 Real Use Monitoring supervisa automáticamente el tráfico del lado del cliente para proporcionarle información valiosa. Como cliente de Adobe, no necesita realizar ningún paso adicional, ya que este servicio está perfectamente integrado en su configuración existente. Con el despliegue de General Availability (GA), se beneficia automáticamente de esta nueva función.
 
@@ -76,7 +76,7 @@ Real Use Monitoring supervisa automáticamente el tráfico del lado del cliente 
 
 If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99). -->
 
-## Cómo se utilizan los datos del servicio de monitorización de uso real {#how-rum-service-data-is-being-used}
+## Uso de los datos del servicio de monitorización de uso real {#how-rum-service-data-is-being-used}
 
 Los datos de RUM son beneficiosos para los siguientes propósitos:
 
@@ -88,7 +88,7 @@ Los datos de RUM son beneficiosos para los siguientes propósitos:
 
 A medida que analiza los datos de RUM, puede haber variaciones en las vistas de página y otras métricas de rendimiento. Estas variaciones pueden atribuirse a varios factores inherentes a la monitorización en tiempo real del lado del cliente. Estas son las consideraciones clave que los clientes deben tener en cuenta al interpretar sus datos de RUM:
 
-1. **Bloqueadores de rastreadores**
+1. **Bloqueadores de seguimiento**
 
    * Los usuarios finales que utilizan bloqueadores de rastreadores o extensiones de privacidad pueden impedir la recopilación de datos de RUM, ya que estas herramientas restringen la ejecución de los scripts de seguimiento. Esta restricción puede provocar que no se informe lo suficiente sobre las vistas de páginas y las interacciones del usuario, lo que crea una discrepancia entre la actividad real del sitio y los datos capturados por RUM.
 
