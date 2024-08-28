@@ -4,24 +4,25 @@ description: AEM Aprenda a utilizar la herramienta de transferencia de contenido
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
-source-git-commit: d9565e86c4b7e513cb1a95ecbe7a30c9586d9fb1
+source-git-commit: e73933acc3ff23d1456f03b288f2f842a6289ace
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 52%
+source-wordcount: '612'
+ht-degree: 55%
 
 ---
+
 
 # Información general {#overview-content-transfer-tool}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="Información general"
->abstract="La herramienta de transferencia de contenido es una herramienta desarrollada por Adobe que se puede utilizar para iniciar la migración de contenido existente de una instancia de AEM de origen (On-Premise o AMS) a la instancia de AEM Cloud Service de destinatario. Esta herramienta también transfiere las entidades principales (usuarios o grupos) automáticamente."
+>abstract="La herramienta de transferencia de contenido es una herramienta desarrollada por Adobe que se puede utilizar para iniciar la migración de contenido existente de una instancia de AEM de origen (On-Premise o AMS) a la instancia de AEM Cloud Service de destinatario. Esta herramienta también transfiere grupos automáticamente."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=es" text="Directrices y prácticas recomendadas"
 
 La herramienta de transferencia de contenido es una herramienta desarrollada por Adobe AEM que se puede utilizar para iniciar la migración del contenido existente de una instancia de origen de la aplicación (On-Premise o AMS) a una instancia de AEM Cloud Service de destino.
 
-Esta herramienta también transfiere entidades principales (usuarios o grupos) automáticamente.  Consulte [Asignación de usuarios y migración de entidades principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) para obtener más información.
+Esta herramienta también transfiere grupos automáticamente.  Consulte [Migración de grupos](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) para obtener más información.
 
 La herramienta de transferencia de contenido integra el proceso de transferencia de contenido con Cloud Acceleration Manager. Esto otorga al usuario todos los beneficios que proporciona:
 
@@ -37,9 +38,6 @@ Existen dos fases asociadas con la transferencia de contenido:
 1. **Extracción**: hace referencia a la extracción de contenido de la instancia de AEM de origen en un área temporal denominada *conjunto de migración*. El conjunto *de* migración es un área de almacenamiento en la nube proporcionada por Adobe para almacenar temporalmente el contenido transferido entre la instancia de AEM de origen y la instancia de AEM de Cloud Service.
 
    Consulte [Proceso de extracción en transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) para obtener más información.
-
-   >[!NOTE]
-   >La asignación de usuarios ahora se ejecuta automáticamente como parte de la fase de extracción en el autor (pero se puede deshabilitar en el autor o habilitar en la publicación). Consulte [Asignación de usuarios y migración de entidades principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) para obtener más información.
 
 1. **Ingesta**: hace referencia a la ingesta de contenido del *conjunto de migración* en la instancia de Cloud Service del destinatario.
 
@@ -78,7 +76,6 @@ Todos los conjuntos de migración caducarán finalmente después de un período 
 La caducidad de un conjunto de migración se puede supervisar en la fila Conjunto de migración. Un indicador visual útil de que un conjunto de migración se está acercando a su fecha de caducidad también agregó la tarjeta del proyecto.
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
-
 
 ## Siguientes pasos {#whats-next}
 

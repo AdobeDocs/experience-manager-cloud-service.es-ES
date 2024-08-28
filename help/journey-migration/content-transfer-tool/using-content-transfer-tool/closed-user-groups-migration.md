@@ -6,12 +6,13 @@ hidefromtoc: true
 exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 10%
+source-wordcount: '287'
+ht-degree: 12%
 
 ---
+
 
 # Migración de grupos de usuarios cerrados {#migrating-closed-user-groups}
 
@@ -23,24 +24,15 @@ ht-degree: 10%
 
 Actualmente, los grupos de usuarios cerrados (CUG) necesitan algunos pasos adicionales para funcionar en el entorno de destino de una migración. En este documento se explica el escenario y los pasos necesarios para que protejan los nodos de la forma prevista.
 
-## Migración de grupos
+## Migración de grupos de usuarios cerrados (CUG)
 
-Las entidades principales (incluidos los grupos) se incluyen automáticamente en una migración a Adobe Experience Manager as a Cloud Service si están asociadas al contenido migrado a través de la ACL de ese contenido, y también se incluyen si se hace referencia a ellas en una directiva CUG sobre ese contenido.
+Los grupos se incluyen automáticamente en una migración CTT/CAM a Adobe Experience Manager as a Cloud Service si están asociados al contenido migrado a través de la ACL de ese contenido o su nodo de política de CUG. La comprobación de la existencia del grupo y sus miembros debe realizarse antes de activarlo. Los grupos a los que se hace referencia en una política de CUG se denominan aquí &quot;grupos de CUG&quot;.
 
-## Grupos de usuarios cerrados en la migración
+Para utilizar CUG en AEM as a Cloud Service, los usuarios deben estar presentes en la instancia de autor y ser miembros de los grupos de CUG relevantes.  Esto se puede realizar mediante paquetes o si los usuarios de CUG son usuarios de IMS, es posible que ya estén presentes.  AEM Los usuarios de CUG deben convertirse en miembros de los grupos de CUG de la.
 
-La verificación de la existencia del grupo y sus miembros debe realizarse antes de activarse. El informe principal, descargado a través de la vista Trabajo de ingesta, se puede utilizar para ver si el grupo en cuestión se incluía o no porque no estaba en una ACL o en una directiva CUG.
+Para habilitar el comportamiento de los CUG en la instancia de Publish,
+1. Los grupos de CUG deben activarse (lo que los duplica a ellos y a sus miembros en la instancia de Publish) y
+1. Las páginas protegidas con políticas de CUG deben publicarse (lo que permite a la instancia de Publish y realizar un seguimiento de las políticas).
+1. Una vez publicadas todas las páginas, compruebe la funcionalidad de cada página protegida con CUG.
 
-A continuación, se deben activar los procesos y se deben definir las propiedades para habilitar los CUG. Para ello, vuelva a publicar todas las páginas asociadas a una directiva CUG. Esto calibra la instancia de Publish para realizar un seguimiento de las directivas.
-
-Esto habilita las políticas de CUG en Publish y el contenido solo es accesible para los usuarios autenticados que son miembros del grupo asociado con las políticas.
-
-## Resumen
-
-En resumen, estos son los pasos para habilitar el CUG después de una migración:
-
-1. Asegúrese de que cada grupo utilizado en las políticas de CUG existe en Publish después de la migración.
-   - Puede existir un grupo si se incluye en la directiva CUG de un contenido migrado o en la ACL de ese contenido.
-   - Si no es así, utilice Paquetes para instalarla en la instancia de destino (o crearla manualmente allí) y activarla junto con sus miembros. A continuación, compruebe que existe en Publish.
-1. Volver a publicar todas las páginas asociadas con una política de CUG, asegurándose de que se publique, por ejemplo, editando primero la página. Es importante volver a publicarlos todos.
-   - Una vez que se hayan vuelto a publicar todas las páginas, compruebe la funcionalidad de cada página protegida por CUG.
+Para obtener más información, consulte [Grupos de usuarios cerrados](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html?lang=es).

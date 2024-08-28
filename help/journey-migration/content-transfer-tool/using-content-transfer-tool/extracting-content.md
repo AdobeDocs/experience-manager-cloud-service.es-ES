@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo extraer contenido de una instancia
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4408f15ef85d0fc2c6a0e2b45038dc900d212187
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 19%
@@ -41,7 +41,7 @@ Siga los pasos a continuación para extraer el conjunto de migración de la herr
 
 1. Esto abre el cuadro de diálogo Extracción. Haga clic en **Extraer** para iniciar la fase de extracción.
 
-   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14c.png)
 
    >[!NOTE]
    >Opcionalmente, puede sobrescribir el contenedor de ensayo durante la fase de extracción. Si **Sobrescribir contenedor de almacenamiento provisional** está deshabilitado, puede acelerar las extracciones en migraciones posteriores en las que las rutas de contenido o la configuración de las versiones de inclusión no hayan cambiado. Sin embargo, si la configuración de las rutas de contenido o las versiones de inclusión ha cambiado, **Sobrescribir contenedor de almacenamiento provisional** debe estar habilitado.

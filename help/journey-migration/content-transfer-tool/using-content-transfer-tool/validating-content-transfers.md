@@ -4,12 +4,13 @@ description: Utilice la herramienta de transferencia de contenido para validar l
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: b7e485e3b7ce6f2d2fa7fe9b2953d2296186871d
 workflow-type: tm+mt
-source-wordcount: '1080'
-ht-degree: 2%
+source-wordcount: '1189'
+ht-degree: 1%
 
 ---
+
 
 # Validación de transferencias de contenido {#validating-content-transfers}
 
@@ -134,25 +135,30 @@ Además de incluirse en el registro de ingesta, también se puede acceder al inf
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
 
-## Validación de la migración de entidades principales {#how-to-validate-principal-migration}
+## Validación de la migración de entidades principales {#how-to-validate-group-migration}
 
-Consulte [Asignación de usuarios y migración de entidades principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) para leer los detalles de las migraciones principales y por qué es necesario.
+Consulte [Migración de grupos](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) para leer los detalles principales de la migración y por qué es necesaria.
 
-Una vez que la extracción y la ingesta se hayan completado correctamente, estará disponible un resumen y un informe de la migración principal. Esta información se puede utilizar para validar qué usuarios y grupos se migraron correctamente y, quizás, para determinar por qué no se migraron algunos.
+Una vez que la extracción y la ingesta se hayan completado correctamente, estará disponible un resumen y un informe de la migración principal. Esta información se puede utilizar para validar qué grupos se migraron correctamente y, quizás, para determinar por qué no se migraron algunos.
 
 Para ver esta información, vaya a Cloud Acceleration Manager. Haga clic en la tarjeta del proyecto y en la tarjeta Transferencia de contenido. Vaya a **Trabajos de ingesta** y busque la ingesta que desea comprobar. Haga clic en los tres puntos (**...**) para esa ingesta y, a continuación, haga clic en **Ver resumen principal** en la lista desplegable.
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-Verá un cuadro de diálogo con la información de resumen. Utilice los iconos de ayuda para leer una descripción más completa. Haga clic en el botón **Descargar informe** para descargar el informe completo separado por comas (CSV).
+Verá un cuadro de diálogo con la información de resumen. Utilice los iconos de ayuda para leer una descripción más completa. Haga clic en el botón **Descargar informe** para descargar el informe completo separado por comas (CSV).  Tenga en cuenta también que al final de este informe se encuentra el Informe de usuarios, que puede utilizarse para la administración de usuarios después de la migración.
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
->[!NOTE]
->
->Si la asignación de usuarios está deshabilitada, se muestra otra variante de este cuadro de diálogo. Indicará que la asignación de usuarios estaba deshabilitada y no mostrará los 3 campos que proporcionan valores de asignación de usuarios.
+El informe Migración principal informa de lo siguiente:
 
-## Resolución de problemas {#troubleshooting}
+* Cada grupo migró y la primera ruta de contenido que activó la migración de ese grupo; el grupo también podría estar en otras rutas, pero solo se informa de la primera que se encuentra para un grupo determinado. También informa de si se ha encontrado en una directiva ACL o CUG.
+* No se migraron todos los grupos y el motivo por el que no se migraron.  Por lo general, será por uno de estos motivos:
+   * Es un grupo integrado
+   * Ya está en el sistema de destino
+   * No está en una directiva ACL o CUG en el contenido que se migra
+   * Tiene un campo único duplicado (uno de rep:principalName, rep:authorizableId, jcr:uuid o rep:externalId ya está en el destino, pero todos deben ser únicos)
+
+## Solución de problemas {#troubleshooting}
 
 ### Error de validación. ¿Y ahora qué? {#validation-fail}
 
@@ -166,6 +172,6 @@ Algunas rutas de los resúmenes de extracción e ingesta se excluyen a propósit
 
 Las rutas de acceso que excluimos actualmente de los resúmenes incluyen: `cqdam.text.txt` representaciones, nodos dentro de `/home` y nodos dentro de `/jcr:system`.
 
-### Los grupos de usuarios cerrados no funcionan {#validating-cugs}
+### Grupos de usuarios cerrados {#validating-cugs}
 
 Consulte [Migración de grupos de usuarios cerrados](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) para obtener consideraciones adicionales al utilizar una directiva de grupo de usuarios cerrados (CUG).

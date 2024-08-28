@@ -4,9 +4,9 @@ description: Ejecución de la herramienta de transferencia de contenido en una i
 exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4408f15ef85d0fc2c6a0e2b45038dc900d212187
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '251'
 ht-degree: 11%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 11%
 
 ## Introducción {#introduction}
 
-La herramienta de transferencia de contenido (CTT) no realiza ningún tipo de análisis de contenido antes de transferir contenido de la instancia de origen a la instancia de destino. Por ejemplo, CTT no diferencia entre contenido publicado y no publicado al introducir contenido en un entorno de Publish. Independientemente del contenido especificado en el conjunto de migración, este se incorpora en la instancia de destino elegida. El usuario tiene la capacidad de introducir un conjunto de migración en una instancia de autor, de Publish o en ambas.
+La herramienta de transferencia de contenido (CTT) no realiza ningún tipo de análisis de contenido antes de transferir contenido de la instancia de origen a la instancia de destino. Por ejemplo, CTT no diferencia entre contenido publicado y no publicado al introducir contenido en un entorno de Publish. Independientemente del contenido especificado en el conjunto de migración, este se incorpora en la instancia de destino elegida. Un usuario tiene la capacidad de introducir un conjunto de migración en una instancia de autor, de Publish o ambas.
 
 >[!NOTE]
 >Se recomienda que, al mover contenido a una instancia de producción, la herramienta de transferencia de contenido se instale en la instancia de autor de origen para mover contenido a la instancia de autor de destino y, de forma similar, instale la herramienta de transferencia de contenido en la instancia de Publish de origen para mover contenido a la instancia de Publish de destino. Consulte la sección [Enfoque recomendado](#recommended-approach) más abajo para obtener más detalles.

@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo supervisar problemas y mejorar el 
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 13a2386c099624a46e84126a939a9470e9b3a5f2
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 22%
+ht-degree: 16%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 22%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
 >title="Solución de problemas de AEM"
->abstract="Revise las prácticas recomendadas para el desarrollo continuo y administre los registros junto con herramientas como Developer Console y CRXDE Lite para ayudar a solucionar problemas con AEM"
+>abstract="Revise las prácticas recomendadas para el desarrollo continuo y administre los registros junto con herramientas como Consola de desarrollador y CRXDE Lite AEM para ayudar a solucionar problemas con las soluciones de problemas de la aplicación de la solución de problemas de la forma más rápida y eficaz. Para obtener más información, consulte a su"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html?lang=es" text="Acceder y administrar registros"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=es#aem-as-a-cloud-service-development-tools" text="Herramientas de desarrollo de AEM as a Cloud Service"
 
@@ -77,7 +77,7 @@ Comparta estos conocimientos posteriores a la migración con las partes interesa
 
 ## El recorrido ha terminado, ¿o no? {#journey-ends}
 
-Felicitaciones. Ha completado el Recorrido de migración de AEM as a Cloud Service. Debe tener conocimientos de cómo hacer lo siguiente:
+¡Enhorabuena! Ha completado el Recorrido de migración de AEM as a Cloud Service. Debe tener conocimientos de cómo hacer lo siguiente:
 
 * Introducción al paso a AEM as a Cloud Service
 * Determine si la implementación está lista para moverse a AEM as a Cloud Service
