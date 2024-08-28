@@ -2,7 +2,7 @@
 source-git-commit: 7a1181a372928602b8fd0eb4699789217473a94c
 workflow-type: tm+mt
 source-wordcount: '711'
-ht-degree: 73%
+ht-degree: 75%
 
 ---
 # Fragmentos de código {#snippets}
@@ -92,7 +92,7 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
    </td>
    </tr>
       <tr>
-    <td>Validar/restablecer campo/panel/regla de formulario en "Entonces" </td>
+    <td>Validar/restablecer campo/panel/regla de formulario en “Then” </td>
     <td>Las funciones Validar y Restablecer solo admiten objetos de formulario en el Editor de reglas. 
    </td>
     <td>Las funciones Validar y Restablecer admiten objetos de formulario, panel o campo en el Editor de reglas. 
