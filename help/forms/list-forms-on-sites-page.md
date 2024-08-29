@@ -3,7 +3,7 @@ title: ¿Cómo se enumeran los formularios en una página de Adobe Experience Ma
 description: Obtenga información sobre cómo enumerar formularios en una página de AEM Sites.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 58533d9a950fa4dc0e043ef8cb935d65fc68d233
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 14%
@@ -17,7 +17,7 @@ Imagine que un usuario visita el sitio web del banco en busca de un formulario d
 
 El componente **Buscar y listar** del portal de Forms le permite mostrar y listar formularios en una página de Sites. Los usuarios pueden configurar y presentar una lista completa de formularios basados en criterios específicos para satisfacer los requisitos de la organización. Los usuarios anónimos pueden visitar la página de Sites para ver y examinar los formularios disponibles. Los formularios enumerados se pueden ordenar en orden ascendente o descendente mediante la opción desplegable **Ordenar por** ubicada en la esquina superior derecha de la pantalla.
 
-![Icono Buscar y listar](assets/search-and-lister-component.png){width="250" align="center"}
+![Icono Buscar y listar](assets/search-and-lister-component.png)
 
 ## Requisito previo
 
@@ -58,11 +58,11 @@ Para agregar el componente de portal **Buscar y listar** a su página de Sites, 
 
 1. Abra la página de AEM Sites en modo **Editar**.
 1. Vaya a la **[!UICONTROL Información de la página]** > **[!UICONTROL Editar plantilla]**
-   ![Editar directiva de plantilla](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"}
+   ![Editar directiva de plantilla](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. AEM Haga clic en la **[!UICONTROL directiva]** y seleccione la casilla de verificación **[!UICONTROL Buscar y listar]** bajo el **[Nombre de proyecto de tipo de archivo] - Forms y el portal de comunicaciones**.
 
-   ![Selección de directiva](/help/forms/assets/search-lister-enable-policy.png){width="250" align="center"}
+   ![Selección de directiva](/help/forms/assets/search-lister-enable-policy.png)
 
 1. Haga clic en **[!UICONTROL Listo]**.
 1. A continuación, vuelva a abrir la página de AEM Sites en el modo Autor.
@@ -78,7 +78,7 @@ Para agregar el componente de portal **Buscar y listar** a su página de Sites, 
 
 1. Examine los componentes disponibles en el cuadro de diálogo y seleccione el componente que desee en la lista. Por ejemplo, seleccione el componente **Buscar y listar** de la lista para agregar el componente **Buscar y listar** del portal de Forms.
 
-   ![Componente Buscar y listar](/help/forms/assets/add-search-lister.png){width="250" align="center"}
+   ![Componente Buscar y listar](/help/forms/assets/add-search-lister.png)
 
 Ahora, configure las propiedades del componente **Buscar y listar**.
 
@@ -88,7 +88,7 @@ Puede personalizar fácilmente las propiedades del componente **Buscar y listar*
 
 ### Pestaña Mostrar
 
-![Ficha de visualización](/help/forms/assets/search-and-lister-display-tab.png){width="250" align="center"}
+![Ficha de visualización](/help/forms/assets/search-and-lister-display-tab.png)
 
 1. En **[!UICONTROL Título]**, especifique el título del componente Buscar y listar. Un título indicativo permite a los usuarios realizar una búsqueda rápida en toda la lista de formularios.
 1. En la lista **[!UICONTROL Diseño]**, seleccione el diseño para representar los formularios en formato de tarjeta o lista.
@@ -97,14 +97,14 @@ Puede personalizar fácilmente las propiedades del componente **Buscar y listar*
 
 ### Pestaña Recurso
 
-![Pestaña de recursos](/help/forms/assets/search-and-lister-asset-tab.png){width="250" align="center"}
+![Pestaña de recursos](/help/forms/assets/search-and-lister-asset-tab.png)
 
 1. En la ficha **[!UICONTROL Carpeta de recursos]**, especifique la ubicación desde la que se extraen los formularios y se enumeran en la página.
 1. Con **[!UICONTROL Agregar otra ubicación]**, puede configurar varias ubicaciones de carpetas.
 
 ### Pestaña Resultados
 
-![Ficha de visualización](/help/forms/assets/search-and-lister-result-tab.png){width="250" align="center"}
+![Ficha de visualización](/help/forms/assets/search-and-lister-result-tab.png)
 
 En la pestaña **[!UICONTROL Resultados]** configure el número máximo de formularios que se mostrarán por página. El valor predeterminado es de ocho formularios por página.
 
@@ -112,7 +112,7 @@ En la pestaña **[!UICONTROL Resultados]** configure el número máximo de formu
 
 Para ver la lista de formularios, use el componente **Buscar y listar** del portal de Forms. Previsualice la página de AEM Sites para ver la lista de formularios de la carpeta **Assets** en la pantalla. También puede buscar un formulario específico mediante la barra de búsqueda.
 
-![Icono Buscar y listar](assets/search-and-lister-component.png){width="250" align="center"}
+![Icono Buscar y listar](assets/search-and-lister-component.png)
 
 <!--
 ## Configure Azure Storage for Adaptive Forms {#configure-azure-storage-adaptive-forms}

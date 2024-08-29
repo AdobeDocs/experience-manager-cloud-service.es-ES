@@ -3,7 +3,7 @@ title: ¿Cómo se agregan vínculos de formularios en la página de AEM Sites me
 description: Obtenga información sobre cómo agregar vínculos de formularios a la página de AEM Sites.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
-source-git-commit: 58533d9a950fa4dc0e043ef8cb935d65fc68d233
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 16%
@@ -15,7 +15,7 @@ ht-degree: 16%
 
 En el escenario del sitio web del banco, el componente **Vínculo** del portal de Forms mejora la navegación al guiar a los usuarios a formularios específicos en varias secciones del sitio. Proporciona referencias directas a formularios como solicitudes de préstamos, formularios de apertura de cuentas o encuestas de comentarios, ubicados estratégicamente en todo el sitio web. El componente **Link** inserta vínculos que dirigen a los usuarios a Forms adaptables específicos dentro de la página de Sites. Por ejemplo, en el sitio web del banco, los usuarios anónimos pueden acceder a un formulario de consulta general, mientras que los usuarios conectados pueden acceder directamente a formularios más seguros, como solicitudes de préstamos o formularios de autorización de transacciones.
 
-![Icono de vínculo](/help/forms/assets/link-forms.png){width="250" align="center"}
+![Icono de vínculo](/help/forms/assets/link-forms.png)
 
 ## Requisito previo
 
@@ -29,11 +29,11 @@ Para agregar el componente de portal **Link** a su página de Sites, realice los
 
 1. Abra la página de AEM Sites en modo **Editar**.
 1. Vaya a la **[!UICONTROL Información de la página]** > **[!UICONTROL Editar plantilla]**
-   ![Editar directiva de plantilla](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"}
+   ![Editar directiva de plantilla](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. AEM Haga clic en la **[!UICONTROL directiva]** y seleccione la casilla de verificación **[!UICONTROL Vínculo]** bajo el **[Nombre de proyecto de tipo de archivo de] - Portal de Forms y comunicaciones**.
 
-   ![Selección de directiva](/help/forms/assets/add-link.png){width="250" align="center"}
+   ![Selección de directiva](/help/forms/assets/add-link.png)
 
 1. Haga clic en **[!UICONTROL Listo]**.
 1. A continuación, vuelva a abrir la página de AEM Sites en el modo Autor.
@@ -49,7 +49,7 @@ Para agregar el componente de portal **Link** a su página de Sites, realice los
 
 1. Examine los componentes disponibles en el cuadro de diálogo y seleccione el componente que desee en la lista. Por ejemplo, seleccione el componente **Link** de la lista para agregar el componente **Link** Forms Portal.
 
-   ![Componente de vínculo](/help/forms/assets/add-link-in-sites.png){width="250" align="center"}
+   ![Componente de vínculo](/help/forms/assets/add-link-in-sites.png)
 
 Ahora, configure las propiedades del componente **Link**.
 
@@ -59,19 +59,19 @@ Puede personalizar fácilmente las propiedades del componente **Link** mediante 
 
 ### Pestaña Mostrar
 
-![Ficha de visualización](/help/forms/assets/link-asset-tab.png){width="250" align="center"}
+![Ficha de visualización](/help/forms/assets/link-asset-tab.png)
 
 En la pestaña **[!UICONTROL Mostrar]**, proporcione el pie de ilustración del vínculo y la información del objeto para facilitar la identificación de los formularios representados por el vínculo.
 
 ### Pestaña Información del recurso
 
-![Ficha Información de Assets](/help/forms/assets/link-asset-info.png){width="250" align="center"}
+![Ficha Información de Assets](/help/forms/assets/link-asset-info.png)
 
 En la pestaña **[!UICONTROL Información del activo]**, especifique la ruta del repositorio donde se almacena el activo.
 
 ### Pestaña Parámetros de consulta
 
-![Ficha Parámetros de consulta](/help/forms/assets/link-query-tab.png){width="250" align="center"}
+![Ficha Parámetros de consulta](/help/forms/assets/link-query-tab.png)
 
 En la pestaña **[!UICONTROL Parámetros de consulta]**, especifique los parámetros adicionales en el formato de par clave-valor. Cuando se hace clic en el vínculo, estos parámetros adicionales se pasan junto con el formulario.
 
@@ -79,7 +79,7 @@ En la pestaña **[!UICONTROL Parámetros de consulta]**, especifique los paráme
 
 Obtenga una vista previa de la página de Sites para ver el vínculo a un formulario adaptable, que se especifica en la pestaña de propiedades de **Información de Assets** del componente **Vínculo**. Al hacer clic en el vínculo, se muestra el formulario en pantalla para los usuarios, que pueden acceder a él en función de los permisos.
 
-![Ficha Parámetros de consulta](/help/forms/assets/link-forms.png){width="250" align="center"}
+![Ficha Parámetros de consulta](/help/forms/assets/link-forms.png)
 
 ## Artículos relacionados
 

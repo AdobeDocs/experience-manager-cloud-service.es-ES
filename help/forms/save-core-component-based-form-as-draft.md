@@ -4,19 +4,21 @@ description: Aprenda a guardar formularios adaptables basados en componentes pri
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer, Admin
-source-git-commit: 72e8223c91e5722e27ebd6853b8b75a7415f3e4d
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1376'
 ht-degree: 8%
 
 ---
 
 
-# Guardar y enumerar formularios como borradores en la página de Sites
+# Guardar formularios como borradores y mostrarlos en la página de Sites
+
+<span class="preview"> Este artículo contiene contenido sobre la característica **Guardar automáticamente**, una característica previa al lanzamiento. Solo se puede acceder a la función previa al lanzamiento mediante nuestro [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features).</span>
 
 Considere a un usuario que comienza a rellenar un formulario pero necesita pausar y volver más tarde. AEM ofrece la opción `save-as-draft`, que permite al usuario guardar el formulario como borrador para una finalización futura. AEM Para facilitarle este proceso, proporciona de forma predeterminada el componente **Borradores y envíos** del portal de formularios, que muestra borradores y envíos en páginas de AEM Sites. El componente enumera los formularios que se han guardado como borradores para su posterior finalización, así como los que se han enviado. Solo los usuarios que inicien sesión pueden editar sus borradores o ver los formularios enviados. Sin embargo, si un usuario anónimo navega por la lista de formularios usando el componente **Buscar y listar** y guarda un formulario como borrador, ese borrador no aparecerá en la lista del componente **Borradores y envíos**. Para ver los borradores y los envíos, los usuarios deben haber iniciado sesión en el momento del envío del formulario.
 
-![Icono Borradores](assets/drafts-component.png){width="250" align="center"}
+![Icono Borradores](assets/drafts-component.png)
 
 ## Requisitos previos
 
@@ -32,16 +34,16 @@ El componente **Borradores y envíos** necesita una configuración de almacenami
 
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Almacenamiento de Azure]**.
 
-   ![Selección de tarjeta de almacenamiento de Azure](/help/forms/assets/save-form-as-draft-azure-card.png){width="250" align="center"}
+   ![Selección de tarjeta de almacenamiento de Azure](/help/forms/assets/save-form-as-draft-azure-card.png)
 
 1. Seleccione una carpeta de configuración para crear la configuración y seleccione **[!UICONTROL Crear]**.
 
-   ![Seleccionar carpeta de configuración de almacenamiento de Azure](/help/forms/assets/save-form-as-draft-select-config-folder.png){width="250" align="center"}
+   ![Seleccionar carpeta de configuración de almacenamiento de Azure](/help/forms/assets/save-form-as-draft-select-config-folder.png)
 
 1. Especifique un título para la configuración en el campo **[!UICONTROL Título]**.
 1. Especifique el nombre de la cuenta de almacenamiento [!DNL Azure] en los campos **[!UICONTROL Cuenta de almacenamiento de Azure]** y **[!UICONTROL Clave de acceso de Azure]**.
 
-   ![Configuración de almacenamiento de Azure](/help/forms/assets/save-form-as-draft-azure-storage.png){width="250" align="center"}
+   ![Configuración de almacenamiento de Azure](/help/forms/assets/save-form-as-draft-azure-storage.png)
 
 1. Haga clic en **Guardar**.
 
@@ -53,12 +55,12 @@ El componente **Borradores y envíos** necesita una configuración de almacenami
 
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Formularios]** > **[!UICONTROL Conector de almacenamiento unificado]**.
 
-   ![Almacenamiento de conector unificado](/help/forms/assets/save-form-as-draft-unified-connector.png){width="250" align="center"}
+   ![Almacenamiento de conector unificado](/help/forms/assets/save-form-as-draft-unified-connector.png)
 
 1. En el **[!UICONTROL portal de Forms]**, seleccione **[!UICONTROL Azure]** de la lista desplegable **[!UICONTROL Almacenamiento]**.
 1. Especifique la ruta de configuración para la configuración del almacenamiento de Azure en el campo **[!UICONTROL Ruta de configuración del almacenamiento]**.
 
-   ![Configuración de almacenamiento del conector unificado](/help/forms/assets/save-form-as-draft-unified-connector-storage.png){width="250" align="center"}
+   ![Configuración de almacenamiento del conector unificado](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
 
 1. Seleccione **[!UICONTROL Guardar]**.
 
@@ -74,11 +76,11 @@ Puede utilizar los componentes listos para usar del portal de Forms para enumera
 
 1. Abra la página de AEM Sites en modo **Editar**.
 1. Vaya a la **[!UICONTROL Información de la página]** > **[!UICONTROL Editar plantilla]**
-   ![Editar directiva de plantilla](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"}
+   ![Editar directiva de plantilla](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. AEM Haga clic en la **[!UICONTROL directiva]** y seleccione la casilla de verificación **[!UICONTROL Borradores y envíos]** bajo el **[Nombre de proyecto de tipo de archivo] - Forms y el portal de comunicaciones**.
 
-   ![Selección de directiva](/help/forms/assets/save-form-as-draft-enable-policy.png){width="250" align="center"}
+   ![Selección de directiva](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
 1. Haga clic en **[!UICONTROL Listo]**.
 1. A continuación, vuelva a abrir la página de AEM Sites en el modo Autor.
@@ -93,7 +95,7 @@ Puede utilizar los componentes listos para usar del portal de Forms para enumera
 
 1. Examine los componentes disponibles en el cuadro de diálogo y seleccione el componente que desee en la lista. Por ejemplo, seleccione el componente **Borradores y envíos** de la lista para agregar el componente **Borradores y envíos** del portal de Forms.
 
-   ![Agregar componente de borrador y envío](/help/forms/assets/save-form-as-draft-add-dns.png){width="250" align="center"}
+   ![Agregar componente de borrador y envío](/help/forms/assets/save-form-as-draft-add-dns.png)
 
 Ahora, configure las propiedades del componente **Borradores y envíos** según los requisitos.
 
@@ -107,7 +109,7 @@ Puede configurar las propiedades de **Borradores y envíos**:
    * **Seleccionar tipo**: para indicar la lista de formularios como formularios en borrador o enviados. Si elige **Borrador de Forms**, se mostrarán los formularios guardados como borradores. Como alternativa, al seleccionar **Forms enviado** se muestran los formularios enviados por los usuarios que iniciaron sesión.
    * **Diseño**: para mostrar una lista de formularios en borrador o enviados en formato de tarjeta o lista.
 
-   ![Propiedades del componente Borradores y envíos](/help/forms/assets/save-form-as-draft-dns-properties.png){width="250" align="center"}
+   ![Propiedades del componente Borradores y envíos](/help/forms/assets/save-form-as-draft-dns-properties.png)
 
 ## Configurar formularios para guardarlos como borradores
 
@@ -129,13 +131,11 @@ Para guardar un formulario como borrador, cree una regla **Guardar formulario** 
 1. En la sección **[!UICONTROL Cuándo]**, seleccione **se hace clic** y en la sección **[!UICONTROL Entonces]**, seleccione la opción **Guardar formulario**.
 1. Seleccione **[!UICONTROL Listo]** para guardar la regla.
 
-   ![Crear regla para el botón](/help/forms/assets/save-form-as-drfat-create-rule.png){width="250" align="center"}
+   ![Crear regla para el botón](/help/forms/assets/save-form-as-drfat-create-rule.png)
 
 Cuando obtiene una vista previa de un formulario adaptable, lo rellena y hace clic en el botón **Guardar formulario**, el formulario se guarda como borrador.
 
 ### Guardar automáticamente
-
-<span class="preview"> Este artículo contiene contenido sobre la característica **Guardar automáticamente**, una característica previa al lanzamiento. Solo se puede acceder a la función previa al lanzamiento mediante nuestro [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features).</span>
 
 >[!NOTE]
 >
@@ -147,7 +147,7 @@ También puede configurar un formulario adaptable para que se guarde automática
 1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
 1. Haga clic en el icono de las propiedades del contenedor de la guía ![Propiedades de la guía](/help/forms/assets/configure-icon.svg) y abra la pestaña **[!UICONTROL Guardar automáticamente]**.
 
-   ![Guardar automáticamente](/help/forms/assets/auto-save.png){width="250" align="center"}
+   ![Guardar automáticamente](/help/forms/assets/auto-save.png)
 
 1. Seleccione la casilla de verificación **[!UICONTROL Habilitar]** para habilitar el guardado automático del formulario.
 1. Configure **[!UICONTROL Déclencheur]** como **Basado en tiempo**, para guardar automáticamente el formulario <!--based on the occurrence of an event or--> después de un intervalo de tiempo específico.
@@ -159,11 +159,11 @@ También puede configurar un formulario adaptable para que se guarde automática
 Para ver los borradores guardados o los formularios enviados, usa el componente **Borradores y envíos** del portal de Forms.
 Cuando **[!UICONTROL Seleccionar tipo]** se selecciona como **Borrador de Forms** en el cuadro de diálogo [configurar del componente Borradores y envíos](#configure-properties-of-the-drafts--submissions-component), los formularios guardados como borradores aparecerán en la página Sitios. Puede abrir los borradores haciendo clic en los puntos suspensivos (...) para completar el formulario.
 
-![Icono Borradores](assets/drafts-component.png){width="250" align="center"}
+![Icono Borradores](assets/drafts-component.png)
 
 Cuando se selecciona **[!UICONTROL Seleccionar tipo]** como **Forms enviado** en el cuadro de diálogo [configurar del componente Borradores y envíos](#configure-properties-of-the-drafts--submissions-component), aparecen los formularios enviados. Puede ver los formularios enviados, pero no puede editarlos.
 
-![Icono Envíos](assets/submission-listing.png){width="250" align="center"}
+![Icono Envíos](assets/submission-listing.png)
 
 También puede descartar los formularios haciendo clic en los puntos suspensivos (...) que aparecen en la esquina inferior derecha del formulario.
 

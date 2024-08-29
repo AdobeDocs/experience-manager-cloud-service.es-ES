@@ -4,7 +4,7 @@ description: El diseño y el aspecto visual de los formularios adaptables en dif
 feature: Adaptive Forms, Core Components
 keywords: AEM Diseño de un formulario adaptable basado en componentes principales, diferentes diseños para formularios, diseños de formularios dinámicos, diseños de formularios de AEM Cloud Service AEM, tipos de diseños de formulario en componentes principales, diseños de formularios adaptables, diseños de formularios adaptables, etc., y diseños de formularios adaptables, entre otros.
 role: User, Developer, Admin
-source-git-commit: b06d86ffc620327a744f53733e3bf84fe8c03f2f
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 3%
@@ -44,7 +44,7 @@ El formulario adaptable basado en componentes principales admite los siguientes 
 
 El diseño del panel es útil para organizar los campos relacionados de una manera que facilite la navegación y la búsqueda del contenido correspondiente. El diseño del panel organiza los componentes del formulario en secciones o paneles distintos de un formulario adaptable.
 
-![Diseño de panel](/help/forms/assets/panel-layout.png){width="250" align="center"}
+![Diseño de panel](/help/forms/assets/panel-layout.png)
 
 Diseño de panel
 
@@ -54,7 +54,7 @@ Puede usar [componente de panel](https://experienceleague.adobe.com/es/docs/expe
 
 El diseño del asistente ayuda a simplificar un formulario complejo dividiéndolo en pasos distintos. Cada paso representa una parte diferente del proceso y los usuarios navegan por los pasos secuencialmente, a menudo con los botones **Siguiente** y **Anterior**. Puede utilizar el diseño de asistente para crear un formulario que incluya varias secciones o pasos.
 
-![Diseño del asistente](/help/forms/assets/wizard-layout-compare.gif){width="250" align="center"}
+![Diseño del asistente](/help/forms/assets/wizard-layout-compare.gif)
 
 Diseño del asistente
 
@@ -64,7 +64,7 @@ Puede usar el [componente de asistente](https://experienceleague.adobe.com/en/do
 
 El diseño de pestañas verticales también se conoce como pestañas en el diseño izquierdo. El diseño de pestañas verticales organiza los paneles o las secciones a lo largo del lado izquierdo de un formulario. Es un diseño común para los formularios en los que los paneles/secciones se apilan verticalmente para facilitar la lectura y la navegación.
 
-![Diseño vertical](/help/forms/assets/vertical-tab.gif){width="250" align="center"}
+![Diseño vertical](/help/forms/assets/vertical-tab.gif)
 
 Diseño de pestañas verticales
 
@@ -76,7 +76,7 @@ Puede usar el componente [fichas verticales](https://experienceleague.adobe.com/
 El diseño de pestañas horizontales también se conoce como Tabulaciones en el diseño superior. El diseño de pestañas horizontales organiza los paneles o las secciones en paralelo en una fila. Este diseño presenta las secciones del formulario de forma lineal en toda la anchura del formulario o panel.
 
 
-![Diseño horizontal](/help/forms/assets/horizontal-layout.gif){width="250" align="center"}
+![Diseño horizontal](/help/forms/assets/horizontal-layout.gif)
 
 Diseño de pestañas horizontales
 
@@ -87,7 +87,7 @@ Puede usar el componente [pestañas horizontales](https://experienceleague.adobe
 
 El diseño de acordeón muestra el contenido en secciones o paneles contraíbles de un formulario adaptable. Cuando se expande una sección, muestra el contenido dentro de, mientras que otras secciones permanecen contraídas. Este diseño es ideal para mostrar grandes cantidades de información en un formulario compacto.
 
-![Diseño de acordeón](/help/forms/assets/accordion-layout-compare.gif){width="250" align="center"}
+![Diseño de acordeón](/help/forms/assets/accordion-layout-compare.gif)
 
 Diseño de acordeón
 
@@ -132,7 +132,7 @@ Exploremos el proceso paso a paso para insertar un diseño y agregarle component
 1. En la esquina superior izquierda, seleccione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms y documentos]**.
 1. Abra un formulario adaptable existente en modo de edición si ya se ha creado.
 
-   ![Abrir un formulario adaptable](/help/forms/assets/insert-layout.png){width="250" align="center"}
+   ![Abrir un formulario adaptable](/help/forms/assets/insert-layout.png)
 
    También puede [crear un nuevo formulario adaptable](/help/forms/creating-adaptive-form-core-components.md).
 
@@ -176,13 +176,13 @@ Agregar un nuevo panel al componente de pestañas horizontales:
 
    ![Ficha de elementos para fichas horizontales](/help/forms/assets/tabs-on-top-items-tab.png){width="200" align="center"}
 
-2. Haga clic en el icono **Agregar** para agregar un panel nuevo.
+1. Haga clic en el icono **Agregar** para agregar un panel nuevo.
 
    ![Agregar nuevo panel](/help/forms/assets/tabs-on-top-add-panel.png){width="200" align="center"}
 
    Al hacer clic en el icono **Agregar**, aparece el cuadro de diálogo **Insertar nuevo componente**.
 
-3. Seleccione el componente del panel.
+1. Seleccione el componente del panel.
 
    ![Agregar nuevo panel](/help/forms/assets/tabs-on-top-new-panel.png){width="200" align="center"}
 
@@ -192,11 +192,11 @@ Agregar un nuevo panel al componente de pestañas horizontales:
 
    Proporcione un nombre para el nuevo panel; de lo contrario, no podrá guardar las propiedades del componente de pestañas horizontales.
 
-4. Especifique los nombres de los paneles como se muestra en la figura siguiente:
+1. Especifique los nombres de los paneles como se muestra en la figura siguiente:
 
    ![Nombres de panel](/help/forms/assets/tabs-on-tops-panel-name.png){width="200" align="center"}
 
-5. Haga clic en **Listo**.
+1. Haga clic en **Listo**.
 
    Una vez que haga clic en **Listo**, los tres paneles aparecerán uno al lado del otro en una fila. Los nombres de panel se muestran como encabezados para cada panel y puede agregar componentes de formulario a cada panel.
 
@@ -204,15 +204,15 @@ Agregar un nuevo panel al componente de pestañas horizontales:
 
    Puede configurar las propiedades del componente del panel. Por ejemplo, el formulario de solicitud de TI no incluye títulos de panel. A continuación se indican los pasos para configurar las propiedades del componente de panel.
 
-6. Abra las propiedades del primer panel.
+1. Abra las propiedades del primer panel.
 
    ![Propiedades del panel 1](/help/forms/assets/tabs-on-tops-panel1-properties.png){width="200" align="center"}
 
-7. Seleccione la casilla de verificación **Ocultar título** de la ficha **Básico**.
+1. Seleccione la casilla de verificación **Ocultar título** de la ficha **Básico**.
 
    ![Ocultar título](/help/forms/assets/tabs-on-top-hide-panel.png){width="200" align="center"}
 
-8. Haga clic en **Listo**.
+1. Haga clic en **Listo**.
 
 Del mismo modo, también puede ocultar los títulos de los otros dos paneles. Una vez finalizado, puede continuar agregando componentes de formulario a cada panel.
 
@@ -262,7 +262,7 @@ Del mismo modo, también puede ocultar los títulos de los otros dos paneles. Un
 
 1. Haga clic en **[!UICONTROL Vista previa]** en la esquina superior derecha del entorno de creación.
 
-   ![Diseño horizontal](/help/forms/assets/horizontal-layout.gif){width="250" align="center"}
+   ![Diseño horizontal](/help/forms/assets/horizontal-layout.gif)
 
 También puede [arrastrar y soltar los componentes](#extra-bytes) para agregar los componentes del formulario a cada panel.
 
@@ -341,7 +341,7 @@ Siga estos pasos para reemplazar la presentación existente de un formulario:
 
    Después de seleccionar el diseño, la disposición de los componentes dentro del diseño cambia en consecuencia. Por ejemplo, seleccione el componente de fichas verticales del cuadro de diálogo **[!UICONTROL Reemplazar componente]**; la disposición del panel cambiará a fichas a la izquierda:
 
-   ![Diseño vertical](/help/forms/assets/vertical-tab.gif){width="250" align="center"}
+   ![Diseño vertical](/help/forms/assets/vertical-tab.gif)
 
 ## Bytes adicionales
 
