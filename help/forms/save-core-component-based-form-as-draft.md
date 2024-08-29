@@ -3,8 +3,8 @@ title: Guardar el formulario adaptable basado en componentes principales como bo
 description: Aprenda a guardar formularios adaptables basados en componentes principales como borrador. ¿También comprende cómo utilizar el componente Borradores y envíos para enumerar borradores y envíos para los usuarios que iniciaron sesión?
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
-role: User, Developer, Admin
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+role: User, Developer
+source-git-commit: 2561145c37fe2ba6a38482fb2d1be614a971b418
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 8%
@@ -83,7 +83,7 @@ Puede utilizar los componentes listos para usar del portal de Forms para enumera
    ![Selección de directiva](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
 1. Haga clic en **[!UICONTROL Listo]**.
-1. A continuación, vuelva a abrir la página de AEM Sites en el modo Autor.
+1. Ahora vuelva a abrir la página de AEM Sites en el modo Autor.
 1. Busque la sección en el editor de páginas que le permite agregar el componente Portal de Forms.
 1. Haga clic en el icono **Agregar**. El icono es un signo más (+) que significa la opción de agregar nuevos componentes.
 
