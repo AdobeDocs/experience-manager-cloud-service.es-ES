@@ -1,228 +1,180 @@
 ---
-title: Cómo guardar el formulario adaptable basado en componentes principales como borrador
-description: Aprenda a guardar formularios adaptables basados en componentes principales como borrador, a crear un portal de Forms y a utilizar componentes principales listos para usar en una página de AEM Sites.
+title: Guardar el formulario adaptable basado en componentes principales como borrador y utilizar el componente Borradores y envíos para enumerar borradores y envíos.
+description: Aprenda a guardar formularios adaptables basados en componentes principales como borrador. ¿También comprende cómo utilizar el componente Borradores y envíos para enumerar borradores y envíos para los usuarios que iniciaron sesión?
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer, Admin
-source-git-commit: 52b87073cad84705b5dc0c6530aff44d1e686609
+source-git-commit: 72e8223c91e5722e27ebd6853b8b75a7415f3e4d
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 15%
+source-wordcount: '1375'
+ht-degree: 8%
 
 ---
 
 
-# Guardar formulario adaptable basado en componentes principales como borrador {#save-af-form}
+# Guardar y enumerar formularios como borradores en la página de Sites
 
-Guardar un formulario adaptable como borrador es una función esencial que mejora la eficacia y precisión del usuario. Esta funcionalidad permite a los usuarios guardar el progreso y volver para completar las tareas más adelante sin perder la información introducida. Proporcionar una opción `save-as-draft` garantiza flexibilidad para administrar el tiempo, reduce el riesgo de pérdida de datos y mantiene la precisión de los envíos. Puede guardar los formularios como borradores para completarlos más adelante.
+Considere a un usuario que comienza a rellenar un formulario pero necesita pausar y volver más tarde. AEM ofrece la opción `save-as-draft`, que permite al usuario guardar el formulario como borrador para una finalización futura. AEM Para facilitarle este proceso, proporciona de forma predeterminada el componente **Borradores y envíos** del portal de formularios, que muestra borradores y envíos en páginas de AEM Sites. El componente enumera los formularios que se han guardado como borradores para su posterior finalización, así como los que se han enviado. Solo los usuarios que inicien sesión pueden editar sus borradores o ver los formularios enviados. Sin embargo, si un usuario anónimo navega por la lista de formularios usando el componente **Buscar y listar** y guarda un formulario como borrador, ese borrador no aparecerá en la lista del componente **Borradores y envíos**. Para ver los borradores y los envíos, los usuarios deben haber iniciado sesión en el momento del envío del formulario.
 
-## Consideraciones
+![Icono Borradores](assets/drafts-component.png){width="250" align="center"}
 
-* [Habilite los componentes principales de Forms adaptable para su entorno.](/help/forms/enable-adaptive-forms-core-components.md)
+## Requisitos previos
 
-* Asegúrese de que el componente principal [está configurado en la versión 3.0.24 o posterior](https://github.com/adobe/aem-core-forms-components) para usar esta característica.
-* Asegúrese de tener una cuenta de [Azure Storage y una clave de acceso](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) para autorizar el acceso a la cuenta de Azure Storage.
+* [Habilite los componentes principales de Forms adaptables para su entorno.](/help/forms/enable-adaptive-forms-core-components.md)
 
-## Guardar un formulario adaptable como borrador
+  Después de implementar los componentes principales más recientes en su entorno, los componentes del portal de Forms pasan a ser accesibles en el entorno de creación.
 
-La integración de datos [!DNL Experience Manager Forms] (data-integration.md) proporciona la configuración de almacenamiento [!DNL Azure] para integrar formularios con los servicios de almacenamiento [!DNL Azure]. El modelo de datos de formulario (FDM) se puede usar para crear Forms adaptable que interactúe con el servidor [!DNL Azure] para habilitar los flujos de trabajo empresariales.
+* [Configurar el almacenamiento de Azure y el conector de almacenamiento unificado para el componente del portal de Forms Borradores y envíos](#configure-azure-storage-and-unified-storage-connector-for-drafts--submissions-forms-portal-component)
 
-Para guardar el formulario como borrador, asegúrese de que dispone de una cuenta de almacenamiento de Azure y una clave de acceso para autorizar el acceso a la cuenta de almacenamiento de [!DNL Azure]. Para guardar el formulario como borrador, realice los siguientes pasos:
+### Configuración del almacenamiento de Azure y el conector de almacenamiento unificado para el componente del portal de Forms Borradores y envíos
 
-1. [Crear configuración de almacenamiento de Azure](#create-azure-storage-configuration)
-1. [Configuración del conector de almacenamiento unificado para el portal de Forms](#configure-usc-forms-portal)
-1. [Crear una regla para guardar un formulario adaptable como borrador](#rule-to-save-adaptive-form-as-draft)
-
-
-### 1. Crear configuración de almacenamiento de Azure {#create-azure-storage-configuration}
-
-Una vez que tenga una cuenta de almacenamiento de Azure y una clave de acceso para autorizar el acceso a la cuenta de almacenamiento [!DNL Azure], realice los siguientes pasos para crear la configuración de almacenamiento de Azure:
+El componente **Borradores y envíos** necesita una configuración de almacenamiento para guardar y enumerar borradores en la página de AEM Sites. AEM El conector de almacenamiento unificado ofrece un marco para vincular el almacenamiento de datos con el almacenamiento externo. Para guardar el formulario como borrador, asegúrese de que dispone de una cuenta de almacenamiento de Azure y una clave de acceso para autorizar el acceso a la cuenta de almacenamiento de [!DNL Azure]. Una vez que tenga la cuenta de almacenamiento de Azure y la clave de acceso, realice los siguientes pasos para crear una configuración de almacenamiento de Azure:
 
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Almacenamiento de Azure]**.
 
-   ![Selección de tarjeta de almacenamiento de Azure](/help/forms/assets/save-form-as-draft-azure-card.png)
+   ![Selección de tarjeta de almacenamiento de Azure](/help/forms/assets/save-form-as-draft-azure-card.png){width="250" align="center"}
 
 1. Seleccione una carpeta de configuración para crear la configuración y seleccione **[!UICONTROL Crear]**.
 
-   ![Seleccionar carpeta de configuración de almacenamiento de Azure](/help/forms/assets/save-form-as-draft-select-config-folder.png)
+   ![Seleccionar carpeta de configuración de almacenamiento de Azure](/help/forms/assets/save-form-as-draft-select-config-folder.png){width="250" align="center"}
 
 1. Especifique un título para la configuración en el campo **[!UICONTROL Título]**.
 1. Especifique el nombre de la cuenta de almacenamiento [!DNL Azure] en los campos **[!UICONTROL Cuenta de almacenamiento de Azure]** y **[!UICONTROL Clave de acceso de Azure]**.
 
-   ![Configuración de almacenamiento de Azure](/help/forms/assets/save-form-as-draft-azure-storage.png)
+   ![Configuración de almacenamiento de Azure](/help/forms/assets/save-form-as-draft-azure-storage.png){width="250" align="center"}
 
 1. Haga clic en **Guardar**.
 
->[!NOTE]
->
-> Puede recuperar la **[!UICONTROL cuenta de almacenamiento de Azure]** y la **[!UICONTROL clave de acceso de Azure]** del [Portal de Microsoft Azure](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+   >[!NOTE]
+   >
+   > Puede recuperar la **[!UICONTROL cuenta de almacenamiento de Azure]** y la **[!UICONTROL clave de acceso de Azure]** del [Portal de Microsoft Azure](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
 
-
-### 2. Configurar el conector de almacenamiento unificado para el portal de Forms {#configure-usc-forms-portal}
-
-Después de crear correctamente la Configuración de almacenamiento de Azure, configure el Conector de almacenamiento unificado para el portal de Forms, para ello, siga estos pasos:
+   Después de crear correctamente la Configuración de almacenamiento de Azure, configure el Conector de almacenamiento unificado para el portal de Forms, para ello, siga los siguientes pasos:
 
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Formularios]** > **[!UICONTROL Conector de almacenamiento unificado]**.
 
-   ![Almacenamiento de conector unificado](/help/forms/assets/save-form-as-draft-unified-connector.png)
+   ![Almacenamiento de conector unificado](/help/forms/assets/save-form-as-draft-unified-connector.png){width="250" align="center"}
 
 1. En el **[!UICONTROL portal de Forms]**, seleccione **[!UICONTROL Azure]** de la lista desplegable **[!UICONTROL Almacenamiento]**.
-1. Especifique la ruta de configuración [para la configuración del almacenamiento de Azure](#create-azure-storage-configuration) en el campo **[!UICONTROL Ruta de configuración del almacenamiento]**.
+1. Especifique la ruta de configuración para la configuración del almacenamiento de Azure en el campo **[!UICONTROL Ruta de configuración del almacenamiento]**.
 
-   ![Configuración de almacenamiento del conector unificado](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
+   ![Configuración de almacenamiento del conector unificado](/help/forms/assets/save-form-as-draft-unified-connector-storage.png){width="250" align="center"}
 
-1. Seleccione **[!UICONTROL Guardar]** y, a continuación, seleccione **[!UICONTROL Publish]** para publicar la configuración.
+1. Seleccione **[!UICONTROL Guardar]**.
 
-### 3. Crear reglas para guardar un formulario adaptable como borrador {#rule-to-save-adaptive-form-as-draft}
+>[!NOTE]
+>
+> Si necesita configurar una opción de almacenamiento que no sea Azure, escriba a aem-forms-ea@adobe.com desde su dirección de correo electrónico oficial con sus requisitos detallados.
 
-Para guardar un formulario como borrador, cree una regla **Guardar formulario** en un componente de formulario, como un botón. Cuando se hace clic en el botón, la regla entra en déclencheur y el formulario se guarda como borrador. Realice los siguientes pasos para crear la regla **Guardar formulario** en un componente de botón:
+Una vez que haya configurado correctamente el almacenamiento de Azure y el conector de almacenamiento unificado para almacenar los borradores y los formularios enviados, agregue el componente **Borradores y envíos** en la página de AEM Sites.
 
-1. En la instancia Autor, abra un formulario adaptable en modo de edición.
-1. En el panel izquierdo, seleccione el icono ![Componentes](assets/components_icon.png) y arrastre el componente **[!UICONTROL Botón]** al formulario.
-1. Seleccione el componente **[!UICONTROL Botón]** y, a continuación, seleccione el icono ![Configurar](assets/configure_icon.png).
-1. Seleccione el icono **[!UICONTROL Editar reglas]** para abrir el Editor de reglas.
-1. Seleccione **[!UICONTROL Crear]** para configurar y crear la regla.
-1. En la sección **[!UICONTROL Cuándo]**, seleccione **se hace clic** y en la sección **[!UICONTROL Entonces]**, seleccione la opción **Guardar formulario**.
-1. Seleccione **[!UICONTROL Listo]** para guardar la regla.
+## ¿Cómo se agrega el componente Borradores y envíos a una página de AEM Sites?
 
-![Crear regla para el botón](/help/forms/assets/save-form-as-drfat-create-rule.png)
-
-Cuando obtiene una vista previa de un formulario adaptable, lo rellena y hace clic en el botón **Guardar formulario**, el formulario se guarda como borrador para su uso posterior.
-
-## Componente Borradores y envíos para enumerar borradores en la página de AEM Sites
-
-AEM Forms proporciona el componente de portal **Borradores y envíos** de forma predeterminada para mostrar los formularios guardados en las páginas de AEM Sites. El componente **Borradores y envíos** muestra los formularios guardados como borradores para su posterior finalización, así como los formularios enviados. Este componente ofrece una experiencia personalizada para cualquier usuario que haya iniciado sesión con una lista de los borradores y los envíos relacionados con el Forms adaptable creado por el usuario.
-
-Puede utilizar los componentes listos para usar del portal de Forms para enumerar borradores de formulario en la página de AEM Sites. Siga estos pasos para usar el componente de portal **Borradores y envíos**:
-
-1. [Habilitar borradores y envíos en el componente de portal de Forms](#enable-component)
-2. [Agregar el componente Borradores y envíos en la página de AEM Sites](#Add-drafts-submissions-component)
-3. [Configurar Borradores y envíos](#configure-drafts-submissions-component)
-
-### 1. Habilitar borradores y envíos en el componente del portal de Forms{#enable-component}
-
-Para habilitar el componente **[!UICONTROL Borradores y envíos]** en la directiva de plantillas, realice los siguientes pasos:
+Puede utilizar los componentes listos para usar del portal de Forms para enumerar borradores y envíos en la página de Sites. Realice los siguientes pasos para agregar el componente de portal **Borradores y envíos**:
 
 1. Abra la página de AEM Sites en modo **Editar**.
 1. Vaya a la **[!UICONTROL Información de la página]** > **[!UICONTROL Editar plantilla]**
-   ![Editar directiva de plantilla](/help/forms/assets/save-form-as-draft-edit-template.png)
+   ![Editar directiva de plantilla](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"}
 
 1. AEM Haga clic en la **[!UICONTROL directiva]** y seleccione la casilla de verificación **[!UICONTROL Borradores y envíos]** bajo el **[Nombre de proyecto de tipo de archivo] - Forms y el portal de comunicaciones**.
 
-   ![Selección de directiva](/help/forms/assets/save-form-as-draft-enable-policy.png)
+   ![Selección de directiva](/help/forms/assets/save-form-as-draft-enable-policy.png){width="250" align="center"}
 
 1. Haga clic en **[!UICONTROL Listo]**.
+1. A continuación, vuelva a abrir la página de AEM Sites en el modo Autor.
+1. Busque la sección en el editor de páginas que le permite agregar el componente Portal de Forms.
+1. Haga clic en el icono **Agregar**. El icono es un signo más (+) que significa la opción de agregar nuevos componentes.
 
-Una vez habilitado un componente del portal, puede utilizarlo en la instancia Autor de la página de AEM Sites.
+   Al hacer clic en el icono **Agregar**, se muestra un cuadro de diálogo **Insertar nuevo componente** que muestra varios componentes para su inserción.
 
-### 2. Agregar el componente Borradores y envíos en la página de AEM Sites{#Add-drafts-submissions-component}
+   >[!NOTE]
+   >
+   > También puede arrastrar y soltar el componente.
 
-Puede crear y personalizar el portal de Forms en sitios web creados mediante AEM si agrega y configura los componentes del portal. Asegúrese de que el componente [Borradores y envíos está habilitado](#enable-component) antes de usarlos en la página de AEM Sites.
+1. Examine los componentes disponibles en el cuadro de diálogo y seleccione el componente que desee en la lista. Por ejemplo, seleccione el componente **Borradores y envíos** de la lista para agregar el componente **Borradores y envíos** del portal de Forms.
 
-Para agregar un componente, arrástrelo y suéltelo desde el panel de componentes **Borradores y envíos** al contenedor de diseño de la página, o bien, seleccione el icono Agregar en el contenedor de diseño y agregue el componente desde el cuadro de diálogo **[!UICONTROL Insertar nuevo componente]**.
+   ![Agregar componente de borrador y envío](/help/forms/assets/save-form-as-draft-add-dns.png){width="250" align="center"}
 
-![Agregar componente de borrador y envío](/help/forms/assets/save-form-as-draft-add-dns.png)
+Ahora, configure las propiedades del componente **Borradores y envíos** según los requisitos.
 
-### 3. Configurar el componente Borradores y envíos {#configure-drafts-submissions-component}
+## Configurar propiedades del componente Borradores y envíos
 
-El componente **Borradores y envíos** muestra los formularios guardados como borrador para completarlos posteriormente y enviarlos. Para configurar **Borradores y envíos**, realice los siguientes pasos:
+Puede configurar las propiedades de **Borradores y envíos**:
 1. Seleccione el componente **Borradores y envíos**.
 1. Haga clic en el icono ![Configurar](assets/configure_icon.png) y aparecerá el cuadro de diálogo.
 1. En el cuadro de diálogo **[!UICONTROL Borradores y envíos]**, especifique lo siguiente:
    * **Título** Para identificar un componente en una página de Sites y de forma predeterminada, el título aparece en la parte superior del componente.
-   * **Tipo**: para indicar la lista de formularios como formularios en borrador o enviados.
+   * **Seleccionar tipo**: para indicar la lista de formularios como formularios en borrador o enviados. Si elige **Borrador de Forms**, se mostrarán los formularios guardados como borradores. Como alternativa, al seleccionar **Forms enviado** se muestran los formularios enviados por los usuarios que iniciaron sesión.
    * **Diseño**: para mostrar una lista de formularios en borrador o enviados en formato de tarjeta o lista.
 
-   ![Propiedades del componente Borradores y envíos](/help/forms/assets/save-form-as-draft-dns-properties.png)
+   ![Propiedades del componente Borradores y envíos](/help/forms/assets/save-form-as-draft-dns-properties.png){width="250" align="center"}
 
-1. Haga clic en **Listo**.
+## Configurar formularios para guardarlos como borradores
 
-Cuando se selecciona **[!UICONTROL Seleccionar tipo]** como **Borrador de Forms**, aparecen los formularios guardados como borradores:
-![Icono Borradores](assets/drafts-component.png)
+Puede configurar Forms adaptable de las dos formas siguientes para guardarlos como borradores para usarlos más adelante:
+* [Acción del usuario](#user-action)
+* [Guardar automáticamente](#auto-save)
 
-Cuando se selecciona **[!UICONTROL Seleccionar tipo]** como **Forms enviado**, aparecen los formularios enviados:
+### Acción del usuario
 
-![Icono Envíos](assets/submission-listing.png)
+>[!NOTE]
+>
+> Asegúrese de que la versión de [componentes principales esté establecida en 3.0.24 o posterior](https://github.com/adobe/aem-core-forms-components) para guardar formularios como borradores mediante la regla **Guardar formulario**.
 
-Puede abrir el formulario haciendo clic en el formulario correspondiente.
+Para guardar un formulario como borrador, cree una regla **Guardar formulario** en un componente de formulario, como un botón. Cuando se hace clic en el botón, la regla entra en déclencheur y el formulario se guarda como borrador. Realice los siguientes pasos para crear una regla **Guardar formulario** en un componente de botón:
 
-<!--
+1. Abra un formulario adaptable en modo de edición.
+1. Seleccione el icono **[!UICONTROL Editar reglas]** para abrir el Editor de reglas para el componente **Button**.
+1. Seleccione **[!UICONTROL Crear]** para configurar y crear la regla para el botón.
+1. En la sección **[!UICONTROL Cuándo]**, seleccione **se hace clic** y en la sección **[!UICONTROL Entonces]**, seleccione la opción **Guardar formulario**.
+1. Seleccione **[!UICONTROL Listo]** para guardar la regla.
 
-### Configure Search & Lister Component {#configure-search-lister-component}
+   ![Crear regla para el botón](/help/forms/assets/save-form-as-drfat-create-rule.png){width="250" align="center"}
 
-The Search & Lister component is used to list adaptive forms on a page and to implement search on the listed forms. 
+Cuando obtiene una vista previa de un formulario adaptable, lo rellena y hace clic en el botón **Guardar formulario**, el formulario se guarda como borrador.
 
-![Search and Lister icon](assets/search-and-lister-component.png)
+### Guardar automáticamente
 
-To configure, select the component and then select the ![Configure icon](assets/configure_icon.png). The [!UICONTROL Search and Lister] dialog opens.
+<span class="preview"> Este artículo contiene contenido sobre la característica **Guardar automáticamente**, una característica previa al lanzamiento. Solo se puede acceder a la función previa al lanzamiento mediante nuestro [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features).</span>
 
-1. In the [!UICONTROL Display] tab, configure the following:
-    * In **[!UICONTROL Title]**, specify the title for the Search & Lister component. An indicative title enables the users perform quick search across the list of forms.
-    * From the **[!UICONTROL Layout]** list, select the layout to represent the forms in card or list format.
-    * Select **[!UICONTROL Hide Search]** and **[!UICONTROL Hide Sorting]** to hide the search and sort by features.
-    * In **[!UICONTROL Tooltip]**, provide the tooltip that appears when you hover over the component. 
-1. In the [!UICONTROL Asset Folder] tab, specify the location from where the forms are pulled and listed on the page. You can configure multiple folder locations.
-1. In the [!UICONTROL Results] tab, configure the maximum number of forms to display per page. The default is eight forms per page.
+>[!NOTE]
+>
+> Asegúrese de que la versión de [componentes principales está establecida en 3.0.52 o posterior](https://github.com/adobe/aem-core-forms-components) para guardar formularios como borradores mediante la característica de guardado automático.
 
-### Configure Link Component {#configure-link-component}
+También puede configurar un formulario adaptable para que se guarde automáticamente en función de un evento basado en el tiempo, asegurándose de que el formulario se guarde después de la duración especificada. Cuando [habilita los componentes del portal de Forms para su entorno](/help/forms/list-forms-on-sites-page.md#enable-forms-portal-components-for-your-existing-environment), la pestaña **Guardar automáticamente** aparece en las propiedades del contenedor de Forms. Puede configurar la función de guardado automático para un formulario adaptable:
 
-The link component enables you to provide links to an adaptive form on the page. To configure, select the component and then select the ![Configure icon](assets/configure_icon.png). The [!UICONTROL Edit Link Component] dialog opens.
+1. En la instancia Autor, abra un formulario adaptable en modo de edición.
+1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
+1. Haga clic en el icono de las propiedades del contenedor de la guía ![Propiedades de la guía](/help/forms/assets/configure-icon.svg) y abra la pestaña **[!UICONTROL Guardar automáticamente]**.
 
-1. In the [!UICONTROL Display] tab, provide the link caption and tooltip to ease identification of the forms represented by the link.
-1. In the [!UICONTROL Asset Info] tab, specify the repository path where the asset is stored. 
-1. In the [!UICONTROL Query Params] tab, specify the additional parameters in the key-value pair format. When the link is clicked, these additional parameters and passed along with the form.
+   ![Guardar automáticamente](/help/forms/assets/auto-save.png){width="250" align="center"}
 
-## Configure Asynchronous Form Submission Using Adobe Sign {#configure-asynchronous-form-submission-using-adobe-sign}
+1. Seleccione la casilla de verificación **[!UICONTROL Habilitar]** para habilitar el guardado automático del formulario.
+1. Configure **[!UICONTROL Déclencheur]** como **Basado en tiempo**, para guardar automáticamente el formulario <!--based on the occurrence of an event or--> después de un intervalo de tiempo específico.
+1. Especifique el intervalo de tiempo en **[!UICONTROL Guardar automáticamente en este intervalo (en segundos)]** para establecer la duración que déclencheur el guardado automático del formulario en el intervalo definido.
+1. Haga clic en **[!UICONTROL Listo]**.
 
-You can configure to submit an adaptive form only when all the recipients have completed the signing ceremony. Follow the steps below to configure the setting using Adobe Sign.
+## Ver borradores/formularios enviados en la página de Sites mediante el componente Borradores y envíos
 
-1. In the author instance, open an Adaptive Form in the edit mode.
-1. From the left pane, select the Properties icon and expand the **[!UICONTROL ELECTRONIC SIGNTATURE]** option.
-1. Select **[!UICONTROL Enable Adobe Sign]**. Various configuration options display. 
-1. In the [!UICONTROL Submit the form] section, select the **[!UICONTROL after every recipient completes signing ceremony]** option to configure the Submit Form action, where the form is first sent to all the recipients for signing. Once all the recipients have signed the form, only then the form is submitted. 
+Para ver los borradores guardados o los formularios enviados, usa el componente **Borradores y envíos** del portal de Forms.
+Cuando **[!UICONTROL Seleccionar tipo]** se selecciona como **Borrador de Forms** en el cuadro de diálogo [configurar del componente Borradores y envíos](#configure-properties-of-the-drafts--submissions-component), los formularios guardados como borradores aparecerán en la página Sitios. Puede abrir los borradores haciendo clic en los puntos suspensivos (...) para completar el formulario.
 
-## Save Adaptive Forms As Drafts {#save-adaptive-forms-as-drafts}
+![Icono Borradores](assets/drafts-component.png){width="250" align="center"}
 
-You can save forms as Drafts for completing them later. There are two ways in which a form is saved as a draft:
+Cuando se selecciona **[!UICONTROL Seleccionar tipo]** como **Forms enviado** en el cuadro de diálogo [configurar del componente Borradores y envíos](#configure-properties-of-the-drafts--submissions-component), aparecen los formularios enviados. Puede ver los formularios enviados, pero no puede editarlos.
 
-* Create a "Save Form" rule on a form component, for example, a button. On clicking the button, the rule triggers and the form are saved a draft.
-* Enable Auto-Save feature, which saves the form as per the specified event or after a configured interval of time.
+![Icono Envíos](assets/submission-listing.png){width="250" align="center"}
 
-### Create Rules to Save an Adaptive Form as Draft {#rule-to-save-adaptive-form-as-draft}
+También puede descartar los formularios haciendo clic en los puntos suspensivos (...) que aparecen en la esquina inferior derecha del formulario.
 
-To create a "Save Form" rule on a form component, for example, a button, follow the steps below:
+## Siguientes pasos
 
-1. In the author instance, open an Adaptive Form in edit mode.
-1. From the left pane, select ![Components icon](assets/components_icon.png) and drag the [!UICONTROL Button] component to the form.
-1. Select the [!UICONTROL Button] component and then select the ![Configure icon](assets/configure_icon.png). 
-1. Select the [!UICONTROL Edit Rules] icon to open the Rule Editor. 
-1. Select **[!UICONTROL Create]** to configure and create the rule.
-1. In the [!UICONTROL When] section, select "is clicked" and in the [!UICONTROL Then] section, select the "Save Form" options.
-1. Select **[!UICONTROL Done]** to save the rule.
+En el artículo siguiente, aprenderemos [cómo agregar referencias a formularios en la página de Sites mediante el componente Vínculo al portal de Forms](/help/forms/add-form-link-to-aem-sites-page.md).
 
-### Enable Auto-save {#enable-auto-save}
+## Artículos relacionados
 
-You can configure the auto-save feature for an adaptive form as follows:
-
-1. In the author instance, open an Adaptive Form in edit mode.
-1. From the left pane, select the ![Properties icon](assets/configure_icon.png) and expand the [!UICONTROL AUTO-SAVE] option.
-1. Select the **[!UICONTROL Enable]** check box to enable auto-save of the form. You can configure the following:
-* By default, the [!UICONTROL Adaptive Form Event] is set to "true", which implies that the form is auto-saved after every event.
-* In [!UICONTROL Trigger], configure to trigger auto-save based on the occurrence of an event or after a specific interval of time.
--->
+{{forms-portal-see-also}}
 
 ## Consulte también {#see-also}
 
 {{see-also}}
-
-
-
-<!--
-
->[!MORELIKETHIS]
->
->* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
->* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
->* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
-
--->

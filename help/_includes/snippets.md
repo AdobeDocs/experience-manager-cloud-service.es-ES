@@ -1,8 +1,8 @@
 ---
-source-git-commit: 7a1181a372928602b8fd0eb4699789217473a94c
+source-git-commit: c7b78b5c4e4851d57314a437b3b7fa06c1f167d5
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 75%
+source-wordcount: '892'
+ht-degree: 77%
 
 ---
 # Fragmentos de código {#snippets}
@@ -128,6 +128,26 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 * [Crear una función personalizada para un formulario adaptable basado en componentes principales](/help/forms/custom-function-core-component-create-function.md)
 * [Ejemplos de desarrollo y uso de una función personalizada](/help/forms/custom-function-core-components-use-cases.md)
 
+
+## Portal de Forms {#forms-portal-see-also}
+
+* [Introducción a los componentes del portal de Forms](/help/forms/configure-forms-portal.md)
+* [Enumerar los formularios en la página de Sites](/help/forms/list-forms-on-sites-page.md)
+* [Guardar los formularios como borradores](/help/forms/save-core-component-based-form-as-draft.md)
+* [Adición de vínculos de formulario a una página de Sites](/help/forms/add-form-link-to-aem-sites-page.md)
+
+
+## Lista de IP permitidas de Cloud Manager y canalizaciones front-end {#allowlist-frontend-pipeline}
+
+>[!IMPORTANT]
+>
+>La canalización front-end requiere que se añada de antemano la siguiente Lista de IP permitidas a Cloud Manager.
+>Si es necesario, [añada la Lista de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) copiando el bloque de direcciones siguiente. Cada dirección está separada por una coma. Pegue el bloque en el campo **Dirección IP/CIDR** del cuadro de diálogo **Agregar lista de IP permitidas**. Coloque el cursor justo después de la primera coma en la lista de direcciones y presione **Intro**. Guarde la lista.
+>Para evitar que se interrumpa la ejecución de la canalización front-end, asegúrese de añadir esta Lista de IP permitidas a Cloud Manager *antes* de habilitar la canalización.
+>
+>**Lista de IP permitidas de Cloud Manager**
+>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>   
 
 ## Añadir una Lista de permitidos IP de Cloud Manager y canalizaciones front-end {#add-cm-allowlist-frontend-pipeline}
 
