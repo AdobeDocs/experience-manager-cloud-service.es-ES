@@ -4,7 +4,7 @@ description: El diseño y el aspecto visual de los formularios adaptables en dif
 feature: Adaptive Forms, Core Components
 keywords: AEM Diseño de un formulario adaptable basado en componentes principales, diferentes diseños para formularios, diseños de formularios dinámicos, diseños de formularios de AEM Cloud Service AEM, tipos de diseños de formulario en componentes principales, diseños de formularios adaptables, diseños de formularios adaptables, etc., y diseños de formularios adaptables, entre otros.
 role: User, Developer, Admin
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+source-git-commit: 0397e5ec20b48a45df74d7d1c03eaae3739000dd
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 3%
@@ -138,10 +138,10 @@ Exploremos el proceso paso a paso para insertar un diseño y agregarle component
 
 1. Busque la sección en el editor de formularios que le permite agregar un diseño.
 
-   ![Editor de formularios](/help/forms/assets/form-editor.png){width="200" align="center"}
+   ![Editor de formularios](/help/forms/assets/form-editor.png)
 1. Haga clic en el icono **Agregar**. El icono es un signo más (+) que significa la opción de agregar nuevos componentes.
 
-   ![Insertar diseño](/help/forms/assets/insert-layout-add-icon.png){width="200" align="center"}
+   ![Insertar diseño](/help/forms/assets/insert-layout-add-icon.png)
 
    Al hacer clic en el icono **Agregar**, se muestra un cuadro de diálogo **Insertar nuevo componente** que muestra varios componentes para su inserción.
 
@@ -151,20 +151,20 @@ Exploremos el proceso paso a paso para insertar un diseño y agregarle component
 
 1. Examine los componentes disponibles en el cuadro de diálogo y seleccione el diseño que desee en la lista. En nuestro caso, seleccionamos el componente Pestañas horizontales para insertar el diseño de pestañas horizontales.
 
-   ![Seleccionar fichas horizontales](/help/forms/assets/select-horizontal-tab.png){width="200" align="center"}
+   ![Seleccionar fichas horizontales](/help/forms/assets/select-horizontal-tab.png)
 
    Al agregar el componente de pestañas horizontales al formulario, inicialmente consta de dos paneles vacíos, llamados Item1 y Item2, de forma predeterminada. Debe agregar manualmente componentes de formulario a estos paneles.
 
-   ![Pestañas horizontales](/help/forms/assets/insert-tabs-on-top.png){width="200" align="center"}
+   ![Pestañas horizontales](/help/forms/assets/insert-tabs-on-top.png)
 
 1. Abra las propiedades del componente pestañas horizontales y especifique el nombre del componente.
 Por ejemplo, en este caso, agregamos el nombre del componente de pestañas horizontales como Formulario de solicitud de TI.
 
-   ![Agregar nombre para fichas horizontales](/help/forms/assets/change-name-of-horizontal-tabs.png){width="200" align="center"}
+   ![Agregar nombre para fichas horizontales](/help/forms/assets/change-name-of-horizontal-tabs.png)
 
 1. Haga clic en **Listo**.
 
-   ![Pestañas horizontales](/help/forms/assets/tabs-on-top-rename-component.png){width="200" align="center"}
+   ![Pestañas horizontales](/help/forms/assets/tabs-on-top-rename-component.png)
 
 Una vez añadido el componente de diseño en el formulario, modifique el número de paneles según los requisitos.
 
@@ -174,43 +174,43 @@ Agregar un nuevo panel al componente de pestañas horizontales:
 
 1. Abra las propiedades del componente de pestañas horizontales y haga clic en la pestaña **Elementos**.
 
-   ![Ficha de elementos para fichas horizontales](/help/forms/assets/tabs-on-top-items-tab.png){width="200" align="center"}
+   ![Ficha de elementos para fichas horizontales](/help/forms/assets/tabs-on-top-items-tab.png)
 
 1. Haga clic en el icono **Agregar** para agregar un panel nuevo.
 
-   ![Agregar nuevo panel](/help/forms/assets/tabs-on-top-add-panel.png){width="200" align="center"}
+   ![Agregar nuevo panel](/help/forms/assets/tabs-on-top-add-panel.png)
 
    Al hacer clic en el icono **Agregar**, aparece el cuadro de diálogo **Insertar nuevo componente**.
 
 1. Seleccione el componente del panel.
 
-   ![Agregar nuevo panel](/help/forms/assets/tabs-on-top-new-panel.png){width="200" align="center"}
+   ![Agregar nuevo panel](/help/forms/assets/tabs-on-top-new-panel.png)
 
    Al seleccionar el componente Panel, el nuevo panel se agrega al diseño horizontal.
 
-   ![Agregar nuevo panel](/help/forms/assets/tabs-on-top-add-new-panel.png){width="200" align="center"}
+   ![Agregar nuevo panel](/help/forms/assets/tabs-on-top-add-new-panel.png)
 
    Proporcione un nombre para el nuevo panel; de lo contrario, no podrá guardar las propiedades del componente de pestañas horizontales.
 
 1. Especifique los nombres de los paneles como se muestra en la figura siguiente:
 
-   ![Nombres de panel](/help/forms/assets/tabs-on-tops-panel-name.png){width="200" align="center"}
+   ![Nombres de panel](/help/forms/assets/tabs-on-tops-panel-name.png)
 
 1. Haga clic en **Listo**.
 
    Una vez que haga clic en **Listo**, los tres paneles aparecerán uno al lado del otro en una fila. Los nombres de panel se muestran como encabezados para cada panel y puede agregar componentes de formulario a cada panel.
 
-   ![Nombres de panel](/help/forms/assets/tabs-on-top-initial-view.png){width="200" align="center"}
+   ![Nombres de panel](/help/forms/assets/tabs-on-top-initial-view.png)
 
    Puede configurar las propiedades del componente del panel. Por ejemplo, el formulario de solicitud de TI no incluye títulos de panel. A continuación se indican los pasos para configurar las propiedades del componente de panel.
 
 1. Abra las propiedades del primer panel.
 
-   ![Propiedades del panel 1](/help/forms/assets/tabs-on-tops-panel1-properties.png){width="200" align="center"}
+   ![Propiedades del panel 1](/help/forms/assets/tabs-on-tops-panel1-properties.png)
 
 1. Seleccione la casilla de verificación **Ocultar título** de la ficha **Básico**.
 
-   ![Ocultar título](/help/forms/assets/tabs-on-top-hide-panel.png){width="200" align="center"}
+   ![Ocultar título](/help/forms/assets/tabs-on-top-hide-panel.png)
 
 1. Haga clic en **Listo**.
 
@@ -224,41 +224,41 @@ Del mismo modo, también puede ocultar los títulos de los otros dos paneles. Un
 
 1. Busque la sección dentro del panel que le permite agregar componentes.
 1. Haga clic en el icono **Agregar**. El icono es un signo más (+) que significa la opción de agregar nuevos componentes.
-   ![Insertar diseño](/help/forms/assets/tabs-on-top-add-component.png){width="200" align="center"}
+   ![Insertar diseño](/help/forms/assets/tabs-on-top-add-component.png)
 
    Al hacer clic en el icono **Agregar**, se muestra un cuadro de diálogo **Insertar nuevo componente** que muestra varios componentes para su inserción.
 
-   ![Insertar nuevo componente (Cuadro de diálogo)](/help/forms/assets/insert-new-component.png){width="200" align="center"}
+   ![Insertar nuevo componente (Cuadro de diálogo)](/help/forms/assets/insert-new-component.png)
 
 1. Examine los componentes disponibles en el cuadro de diálogo que aparece y seleccione el componente deseado. En este caso, seleccione el componente Cuadro de texto.
 1. Abra las propiedades del componente agregado y especifique su nombre. Permite editar las propiedades del componente Cuadro de texto agregado y especificar su nombre.
-   ![Insertar diseño](/help/forms/assets/tabs-on-top-textbox-component.png){width="200" align="center"}
+   ![Insertar diseño](/help/forms/assets/tabs-on-top-textbox-component.png)
 1. Del mismo modo, agregue dos componentes de cuadro de texto más y asigne un nombre a los componentes como ID de correo electrónico y Departamento.\
-   ![Primer panel](/help/forms/assets/tabs-on-tops-first-panel.png){width="200" align="center"}
+   ![Primer panel](/help/forms/assets/tabs-on-tops-first-panel.png)
 
    Ahora que se han agregado los componentes del primer panel, puede continuar agregando los componentes al segundo panel.
 
 1. Para cambiar el panel, haga clic en **Seleccionar panel** en la barra de herramientas.
 
-   ![Panel de conmutación](/help/forms/assets/tabs-on-top-select-panel.png){width="200" align="center"}
+   ![Panel de conmutación](/help/forms/assets/tabs-on-top-select-panel.png)
 
    Al hacer clic en **Seleccionar panel**, aparece la lista de los paneles agregados en el componente Pestañas horizontales.
 
-   ![Panel de conmutación](/help/forms/assets/tabs-on-tops-panel2.png){width="200" align="center"}
+   ![Panel de conmutación](/help/forms/assets/tabs-on-tops-panel2.png)
 
 1. Seleccione **2 panel** de la lista de paneles y la vista cambiará del primer panel al segundo.
 
-   ![Segundo panel](/help/forms/assets/tabs-on-top-panel2-component.png){width="200" align="center"}
+   ![Segundo panel](/help/forms/assets/tabs-on-top-panel2-component.png)
 
 1. Repita los pasos descritos del paso 2 al paso 4 para añadir los componentes deseados en el panel 2, como se muestra en la siguiente figura:
 
-   ![Componentes del segundo panel](/help/forms/assets/panel-2-components.png){width="200" align="center"}
+   ![Componentes del segundo panel](/help/forms/assets/panel-2-components.png)
 
 1. Cambie al panel **3** siguiendo los pasos descritos en los pasos 6 y 7.
 
 1. Repita los pasos descritos del paso 2 al paso 4 para agregar el componente deseado en el panel 3:
 
-   ![Componentes del tercer panel](/help/forms/assets/panel-3-component.png){width="200" align="center"}
+   ![Componentes del tercer panel](/help/forms/assets/panel-3-component.png)
 
 1. Haga clic en **[!UICONTROL Vista previa]** en la esquina superior derecha del entorno de creación.
 
@@ -319,7 +319,7 @@ También puede [arrastrar y soltar los componentes](#extra-bytes) para agregar l
 
 También puede eliminar el componente de formulario del panel mediante el icono ![Eliminar icono](/help/forms/assets/Smock_Delete_18_N.svg).
 
-![Eliminando un componente](/help/forms/assets/delete-component.png){width="200" align="center"}
+![Eliminando un componente](/help/forms/assets/delete-component.png)
 
 También puede añadir las validaciones necesarias para los componentes según sea necesario.
 
@@ -333,11 +333,11 @@ Siga estos pasos para reemplazar la presentación existente de un formulario:
 
 1. Haga clic en el icono Reemplazar de la barra de herramientas del componente de diseño y aparecerá el cuadro de diálogo **[!UICONTROL Reemplazar componente]**.
 
-   ![Reemplazar diseño](/help/forms/assets/replace-layout.png){width="200" align="center"}
+   ![Reemplazar diseño](/help/forms/assets/replace-layout.png)
 
 1. Seleccione el diseño que desee en el cuadro de diálogo **[!UICONTROL Reemplazar componente]**.
 
-   ![Cuadro de diálogo Reemplazar componente](/help/forms/assets/replace-component.png){width="200" align="center"}
+   ![Cuadro de diálogo Reemplazar componente](/help/forms/assets/replace-component.png)
 
    Después de seleccionar el diseño, la disposición de los componentes dentro del diseño cambia en consecuencia. Por ejemplo, seleccione el componente de fichas verticales del cuadro de diálogo **[!UICONTROL Reemplazar componente]**; la disposición del panel cambiará a fichas a la izquierda:
 
@@ -350,11 +350,11 @@ Para arrastrar y soltar componentes en el editor de formularios, realice los sig
 1. Busque la sección que le permite agregar componentes.
 1. Vaya al panel izquierdo del entorno de creación y haga clic en **Componentes**.
 
-   ![Panel de componentes](/help/forms/assets/add-new-component.png){width="200" align="center"}
+   ![Panel de componentes](/help/forms/assets/add-new-component.png)
 
    Al hacer clic en la opción **Componentes**, aparece la lista de los componentes disponibles.
 
-   ![Panel de componentes](/help/forms/assets/add-new-component2.png){width="200" align="center"}
+   ![Panel de componentes](/help/forms/assets/add-new-component2.png)
 
 1. Examine los componentes disponibles y seleccione el componente deseado.
 
