@@ -1,5 +1,5 @@
 ---
-title: Edición en contexto con el editor universal
+title: Editar en contexto con el editor universal
 description: Explore cómo puede utilizar el editor universal para editar cualquier aspecto del contenido en el lugar y en contexto en cualquier implementación.
 hidefromtoc: true
 index: false
@@ -14,16 +14,16 @@ ht-degree: 100%
 ---
 
 
-# Edición en contexto con el editor universal {#editing-in-context}
+# Editar en contexto con el editor universal {#editing-in-context}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="Edición en contexto con el editor universal"
+>title="Editar en contexto con el editor universal"
 >abstract="Vea cómo sus aplicaciones sin encabezado pueden incorporar el Editor universal para poner al alcance de sus autores la edición en contexto y sin complicaciones."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
->title="Inicio del editor universal"
+>title="Iniciar el editor universal"
 >abstract="En esta guía exploraremos el Editor universal y cómo permite a todo el mundo editar todos los aspectos del contenido en cualquier implementación, lo que permite mejorar la velocidad del contenido.<br><br>Inicie este módulo en una nueva pestaña haciendo clic abajo y, a continuación, siga esta guía."
 
 >[!CONTEXTUALHELP]
@@ -41,11 +41,11 @@ Editar en el lugar y en contexto suele ser mejor que editar contenido estructura
 
 El editor universal es una forma ágil de editar el texto en contexto y en el lugar, lo que permite crear contenido de forma sencilla e intuitiva.
 
-1. Seleccione dos veces el título del artículo más reciente para editarlo.
+1. Seleccione dos veces el título del artículo debajo de Latest article para editarlo.
 
    ![Editor universal](assets/do-not-localize/ue-component-mode.png)
 
-1. El componente se selecciona tal como indica un borde azul con una pestaña que indica que es un componente de texto. Un cursor se encuentra en el borde a la espera de una entrada de texto. Cambia el texto a `Aloha Spirit in Lofoten`.
+1. El componente se selecciona tal como indica un borde azul con una pestaña que indica que es un componente de texto. Un cursor se encuentra en el borde a la espera de una entrada de texto. Cambie el texto a `Aloha Spirit in Lofoten`.
 
    ![Edición de texto en el editor universal](assets/do-not-localize/ue-edit-text-2.png)
 
@@ -91,17 +91,17 @@ También puede especificar dimensiones exactas para el emulador y rotar el dispo
 
 ## Previsualización y publicación {#preview}
 
-Dado que es necesario seleccionar el contenido para modificarlo en el editor, este no permite seguir vínculos ni interactuar con el contenido tocando o haciendo clic.  Con el modo de vista previa, puede seguir los vínculos del contenido y experimentarlo como lo harían los usuarios antes de publicar.
+Dado que es necesario seleccionar el contenido para modificarlo en el editor, este no permite seguir vínculos ni interactuar con el contenido tocando o haciendo clic.  Con el modo de previsualización, puede seguir los vínculos del contenido y experimentarlo como lo harían los usuarios antes de publicar.
 
 1. En la barra de herramientas del Editor universal, seleccione **Previsualizar**.
 
-1. Ahora seleccione el vínculo **Leer más** para el artículo principal.
+1. Ahora seleccione el vínculo **Read more** para acceder al artículo principal.
 
-   ![Modo de vista previa](assets/do-not-localize/ue-preview-publish-1.png)
+   ![Modo de previsualización](assets/do-not-localize/ue-preview-publish-1.png)
 
-1. Examine el artículo y, a continuación, utilice el vínculo **Atrás** para volver a la página principal.
+1. Examine el artículo y, a continuación, utilice el vínculo **Back** para volver a la página principal.
 
-   ![Vuelva a la página principal mediante el vínculo Atrás](assets/do-not-localize/ue-preview-publish-3.png)
+   ![Vuelva a la página principal mediante el vínculo Back](assets/do-not-localize/ue-preview-publish-3.png)
 
 1. Ahora seleccione el botón **Publicar** en la parte superior derecha del editor para publicar el contenido.
 
@@ -113,11 +113,11 @@ Su contenido se ha publicado.
 
 Para acelerar su experiencia de creación de contenido, cuando la edición estructurada de contenido sin encabezado es más ventajosa que la edición in situ, el editor universal le permite acceder rápidamente al editor de fragmentos de contenido.
 
-1. Desactive el modo de vista previa tocando el botón **Previsualizar** de la barra de herramientas del Editor universal.
+1. Desactive el modo de previsualización tocando el botón **Previsualizar** de la barra de herramientas del Editor universal.
 
-   ![Desactivar el modo de vista previa](assets/do-not-localize/ue-toggle-off-preview.png)
+   ![Desactivar el modo de previsualización](assets/do-not-localize/ue-toggle-off-preview.png)
 
-1. Desplácese hacia abajo en la página hasta la sección **Aventuras**.
+1. Desplácese hacia abajo en la página hasta la sección **Adventures**.
 
 1. Seleccione una de las aventuras, como **Bali Surf Camp** para elegirla.
 

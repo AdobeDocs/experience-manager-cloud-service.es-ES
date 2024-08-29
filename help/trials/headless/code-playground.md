@@ -1,5 +1,5 @@
 ---
-title: Procesamiento del contenido en una aplicación sencilla
+title: Procesar el contenido en una aplicación sencilla
 description: Explore la recuperación de contenido JSON desde su entorno de prueba con una aplicación de ejemplo CodePen y el cliente sin encabezado de AEM para JavaScript.
 hidefromtoc: true
 index: false
@@ -14,11 +14,11 @@ ht-degree: 100%
 ---
 
 
-# Procesamiento del contenido en una aplicación sencilla {#render-content-simple-app}
+# Procesar el contenido en una aplicación sencilla {#render-content-simple-app}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript"
->title="Procesamiento del contenido en una aplicación sencilla"
+>title="Procesar el contenido en una aplicación sencilla"
 >abstract="Explore la recuperación de contenido JSON desde su entorno de prueba con una aplicación de ejemplo CodePen y el cliente sin encabezado de AEM para JavaScript."
 
 >[!CONTEXTUALHELP]

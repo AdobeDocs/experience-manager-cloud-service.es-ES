@@ -1,5 +1,5 @@
 ---
-title: Personalización de contenido en una aplicación de ejemplo en React
+title: Personalizar el contenido en una aplicación React de muestra
 description: Utilice una aplicación React de muestra para aprender a personalizar el contenido mediante la funcionalidad sin encabezado establecida en AEM as a Cloud Service.
 hidefromtoc: true
 index: false
@@ -14,16 +14,16 @@ ht-degree: 100%
 ---
 
 
-# Personalización de contenido en una aplicación de ejemplo en React {#customize-app}
+# Personalizar el contenido en una aplicación React de muestra {#customize-app}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app"
->title="Personalización del contenido en una aplicación React de muestra"
+>title="Personalizar el contenido en una aplicación React de muestra"
 >abstract="La versión de prueba de AEM sin encabezado viene con una aplicación React de muestra integrada, que puede personalizar."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
->title="Lanzamiento del editor de fragmentos de contenido"
+>title="Iniciar el editor de fragmentos de contenido"
 >abstract="Ahora analicemos cómo funciona la creación de contenido sin encabezado. La versión de prueba de AEM sin encabezado viene con una aplicación React de muestra integrada, para que pueda ver lo fácil que es para cualquiera administrar contenidos de forma independiente sin dedicar tiempo al desarrollo.<br><br>Inicie este módulo en una nueva pestaña haciendo clic abajo y, a continuación, siga esta guía."
 
 >[!CONTEXTUALHELP]
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 Empiece en el editor de fragmentos de contenido con la aplicación de muestra que se proporciona con la versión de prueba de AEM sin encabezado ya cargada. La aplicación de muestra cuenta con la tecnología de fragmentos de contenido que se entrega mediante GraphQL. Utilice el editor de fragmentos de contenido para familiarizarse con el editor previsualizando la aplicación de muestra.
 
-1. Haga clic o pulse en el botón **Vista previa** en la parte superior derecha de la pantalla del editor.
+1. Haga clic o pulse en el botón **Previsualizar** en la parte superior derecha de la pantalla del editor.
 
 1. La aplicación de muestra se abre en una nueva pestaña. La aplicación es para la marca ficticia de estilo de vida al aire libre WKND. Muévase hacia abajo por la página para desplazarse por el contenido de ejemplo.
 
@@ -59,7 +59,7 @@ El editor de fragmentos de contenido muestra el diseño básico de la aplicació
 
 1. Cambie el texto de `Your next great adventure is calling` a `Choose your own adventure`. El editor guarda automáticamente el cambio.
 
-1. Haga clic o pulse en **Vista previa** en la parte superior derecha de la ventana para ver los cambios. La vista previa de la aplicación de demostración se abre en una nueva pestaña.
+1. Haga clic o pulse en **Previsualizar** en la parte superior derecha de la ventana para ver los cambios. La vista previa de la aplicación de demostración se abre en una nueva pestaña.
 
    ![Vista previa de la aplicación de demostración](assets/do-not-localize/edit-header-5-6.png)
 
@@ -89,7 +89,7 @@ Ahora que ha modificado un titular en la aplicación, intente cambiar una imagen
 
 1. La imagen del ciclista se reemplaza por la seleccionada. El editor guarda automáticamente los cambios.
 
-1. Haga clic o pulse en **Vista previa** en la parte superior derecha de la ventana para ver los cambios. La vista previa de la aplicación de demostración se abre en una nueva pestaña. Haga clic en actualizar en el explorador y debería ver la nueva imagen del ciclista con pantalones cortos amarillos en la aplicación.
+1. Haga clic o pulse en **Previsualizar** en la parte superior derecha de la ventana para ver los cambios. La vista previa de la aplicación de demostración se abre en una nueva pestaña. Haga clic en actualizar en el explorador y debería ver la nueva imagen del ciclista con pantalones cortos amarillos en la aplicación.
 
 Es muy fácil actualizar imágenes y recursos en sus aplicaciones con el CMS de AEM sin encabezado.
 
@@ -128,8 +128,8 @@ Ahora que ha actualizado la imagen del ciclista, vamos a ver cómo añadir conte
    * **X**: `-5`
    * **Y**: `-10`
 
-1. Haga clic en **Vista previa** en la parte superior derecha de la ventana para ver los cambios. La vista previa de la aplicación de demostración se abre en una nueva pestaña. Haga clic en actualizar en el explorador para probar la posición y realizar los ajustes necesarios en el editor.
+1. Haga clic en **Previsualizar** en la parte superior derecha de la ventana para ver los cambios. La vista previa de la aplicación de demostración se abre en una nueva pestaña. Haga clic en actualizar en el explorador para probar la posición y realizar los ajustes necesarios en el editor.
 
-   ![Vista previa](assets/do-not-localize/add-reference-10-11-12.png)
+   ![Previsualizar](assets/do-not-localize/add-reference-10-11-12.png)
 
 Ahora ya sabe cómo crear contenido nuevo y hacer referencia a él como Fragmento de contenido en la aplicación sin necesidad de realizar ningún ciclo de desarrollo.
