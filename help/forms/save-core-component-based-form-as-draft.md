@@ -4,9 +4,9 @@ description: Aprenda a guardar formularios adaptables basados en componentes pri
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 2561145c37fe2ba6a38482fb2d1be614a971b418
+source-git-commit: 2933b3be569724800a77b4ea93e91441046746f6
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1384'
 ht-degree: 8%
 
 ---
@@ -44,6 +44,8 @@ El componente **Borradores y envíos** necesita una configuración de almacenami
 1. Especifique el nombre de la cuenta de almacenamiento [!DNL Azure] en los campos **[!UICONTROL Cuenta de almacenamiento de Azure]** y **[!UICONTROL Clave de acceso de Azure]**.
 
    ![Configuración de almacenamiento de Azure](/help/forms/assets/save-form-as-draft-azure-storage.png)
+
+   Escriba `Connection String` en el cuadro de texto `Azure Storage Account` y `Azure Key` en el cuadro de texto `Azure Access key`.
 
 1. Haga clic en **Guardar**.
 
