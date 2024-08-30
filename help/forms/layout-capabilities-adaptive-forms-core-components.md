@@ -4,7 +4,7 @@ description: El diseño y el aspecto visual de los formularios adaptables en dif
 feature: Adaptive Forms, Core Components
 keywords: AEM Diseño de un formulario adaptable basado en componentes principales, diferentes diseños para formularios, diseños de formularios dinámicos, diseños de formularios de AEM Cloud Service AEM, tipos de diseños de formulario en componentes principales, diseños de formularios adaptables, diseños de formularios adaptables, etc., y diseños de formularios adaptables, entre otros.
 role: User, Developer, Admin
-source-git-commit: 0397e5ec20b48a45df74d7d1c03eaae3739000dd
+source-git-commit: 9f14950170cc92d1ab433fdaa1a5d68b4dc53484
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 3%
@@ -326,8 +326,6 @@ También puede añadir las validaciones necesarias para los componentes según s
 ## ¿Cómo reemplazar un diseño existente por uno nuevo?
 
 Puede reemplazar la presentación de un formulario por una nueva presentación, que implica modificar cómo se organizan y muestran los componentes dentro de un formulario.
-
-
 
 Siga estos pasos para reemplazar la presentación existente de un formulario:
 
