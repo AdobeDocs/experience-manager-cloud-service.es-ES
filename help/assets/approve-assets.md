@@ -2,9 +2,10 @@
 title: Aprobar recursos en el Experience Manager
 description: Obtenga información sobre cómo aprobar recursos en  [!DNL Experience Manager].
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
+source-git-commit: 9b3b93100c45c7053549c3f9899a344ca7db104d
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '676'
 ht-degree: 2%
 
 ---
@@ -36,7 +37,7 @@ Si necesita ver la propiedad a la que está asignado el campo **[!UICONTROL Esta
 
 ## Aprobación de recursos {#approve-assets}
 
-Puede aprobar recursos en [!DNL Experience Manager] y [!DNL Experience Manager Assets]. Para aprobar recursos en [!DNL Experience Manager], siga estos pasos:
+Para aprobar recursos en [!DNL Experience Manager Admin view], siga estos pasos:
 
 1. Seleccione los recursos y haga clic en **[!UICONTROL Propiedades]** en el panel superior.
 1. En la ficha **[!UICONTROL Básico]**, desplácese hacia abajo hasta **[!UICONTROL Estado de revisión]**.
@@ -51,7 +52,7 @@ Puede aprobar recursos en [!DNL Experience Manager] y [!DNL Experience Manager A
 ## Aprobar recursos de forma masiva {#bulk-approve-assets}
 
 Optimice su flujo de trabajo aprobando rápidamente varios recursos a la vez. Puede aprobar recursos de forma masiva para acelerar el proceso de aprobación, lo que ahorra tiempo y mejora la productividad.
-<br>Siga estos pasos para aprobar recursos en bloque en [!DNL Experience Manager]:
+<br>Siga estos pasos para aprobar recursos en bloque en [!DNL Experience Manager Admin view]:
 
 1. Cree una carpeta en el entorno de creación (https://author-pXXX-eYYY.adobeaemcloud.com). Reemplace _XXX_ con su ID de programa y _AAAA_ con el ID de entorno del Experience Manager.
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfiles de metadatos]**.
@@ -102,4 +103,3 @@ Para copiar la URL de envío de un recurso aprobado dentro del repositorio:
    >[!NOTE]
    >
    >La opción para copiar la URL de envío para los recursos aprobados solo está disponible en la vista de Assets.
-
