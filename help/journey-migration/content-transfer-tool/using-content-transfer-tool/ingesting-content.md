@@ -4,9 +4,9 @@ description: Aprenda a utilizar Cloud Acceleration Manager para introducir conte
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4d34dc8464a51bcc11ee435de4d19183b2f3e3b2
 workflow-type: tm+mt
-source-wordcount: '2905'
+source-wordcount: '2982'
 ht-degree: 12%
 
 ---
@@ -107,7 +107,7 @@ Comience creando un trabajo de ingesta y asegúrese de que **Borrar** esté desh
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
-## Resolución de problemas {#troubleshooting}
+## Solución de problemas {#troubleshooting}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
@@ -214,11 +214,20 @@ Las prácticas recomendadas indican que si se debe ejecutar una ingesta de **Non
 >abstract="Una causa común de un error de ingesta es el exceso del tamaño máximo de los valores de propiedad del nodo. Consulte la documentación, incluida la relacionada con el informe de BPA, para solucionar esta situación."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=es" text="Requisitos previos de migración"
 
-Los valores de propiedad del nodo almacenados en MongoDB no pueden superar los 16 MB. Si un valor de nodo supera el tamaño admitido, la ingesta falla y el registro contendrá un error de `BSONObjectTooLarge` y especificará qué nodo superó el máximo. Esta es una restricción de MongoDB.
+Los valores de propiedad del nodo almacenados en MongoDB no pueden superar los 16 MB. Si el valor de un nodo supera el tamaño admitido, la ingesta falla y el registro contiene lo siguiente:
+
+* un error `BSONObjectTooLarge` y especifique qué nodo superó el máximo, o
+* error `BsonMaximumSizeExceededException`, que indica que es probable que haya un nodo que contenga caracteres unicode que exceda el tamaño máximo **
+
+Esta es una restricción de MongoDB.
 
 Consulte la nota `Node property value in MongoDB` en [Requisitos previos para la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) para obtener más información y un vínculo a una herramienta de Oak que pueda ayudar a encontrar todos los nodos grandes. Una vez corregidos todos los nodos con tamaños grandes, ejecute de nuevo la extracción y la ingesta.
 
 AEM Para evitar posiblemente esta restricción, ejecute el [Analizador de prácticas recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) en la instancia de origen y revise los resultados que presenta, en particular el patrón [&quot;Estructura de repositorio no admitida&quot; (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs).
+
+>[!NOTE]
+>
+>[Analizador de prácticas recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) versión 2.1.50+ informará sobre nodos grandes que contengan caracteres Unicode que superen el tamaño máximo. Asegúrese de que está ejecutando la versión más reciente. Las versiones de BPA anteriores a la 2.1.50 no identificarán estos nodos grandes ni generarán informes al respecto, por lo que deberán descubrirse por separado mediante la herramienta de Oak de requisitos previos mencionada anteriormente.
 
 ### Ingesta rescindida {#ingestion-rescinded}
 
