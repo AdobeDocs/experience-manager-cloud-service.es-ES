@@ -4,10 +4,10 @@ description: Obtenga información acerca de los aspectos básicos y las práctic
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 1ad144fb630eca51f2004300c71d75f627cf9977
 workflow-type: tm+mt
-source-wordcount: '3441'
-ht-degree: 96%
+source-wordcount: '3440'
+ht-degree: 95%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 Los fundamentos del desarrollo de código son similares en AEM as a Cloud Service en comparación con las soluciones AEM On Premise y Managed Services. Los desarrolladores escriben el código y lo prueban localmente, para a continuación enviarlo a entornos de AEM as a Cloud Service remotos. Se requiere Cloud Manager, que era una herramienta de entrega de contenido opcional para Managed Services. Esta herramienta de envío es ahora el único mecanismo para implementar código en entornos de desarrollo, fase y producción de AEM as a Cloud Service. Para ejecutar una validación y una depuración rápidas de las funcionalidades antes de implementar los entornos mencionados, el código se puede sincronizar de un entorno local a un [Entorno de desarrollo rápido](/help/implementing/developing/introduction/rapid-development-environments.md).
 
-La actualización de la [versión de AEM](/help/implementing/deploying/aem-version-updates.md) siempre es un evento de implementación independiente de la inserción de [código personalizado](#customer-releases). Visto de otra manera, las versiones de código personalizado deben probarse con la versión de AEM que está en producción, ya que es la que se implementa en primer lugar. Las actualizaciones de la versión de AEM que se produzcan después, que son frecuentes, se aplican automáticamente. Están pensadas para ser compatibles con el código de cliente ya implementado.
+La actualización de la [versión de AEM](/help/implementing/deploying/aem-version-updates.md) siempre es un evento de implementación independiente de la inserción de [código personalizado](#customer-releases). Visto de otra manera, las versiones de código personalizado deben probarse con la versión de AEM que está en producción, ya que es la que se implementa en primer lugar. AEM Las actualizaciones de versión que se producen posteriormente (que son frecuentes y se aplican automáticamente), están pensadas para ser compatibles con versiones anteriores del código de cliente ya implementado.
 
 El resto de este documento describe cómo los desarrolladores deben adaptar sus prácticas para que funcionen tanto con las actualizaciones de versiones de AEM as a Cloud Service como con las actualizaciones de clientes.
 
