@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo configurar las credenciales y la a
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: e8c40d6205bfa2de18374e5161fe0fea42c8ce32
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 2%
+source-wordcount: '1283'
+ht-degree: 5%
 
 ---
 
@@ -54,7 +54,7 @@ data:
           authenticator: edge-auth
 ```
 
-Consulte [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#common-syntax) para obtener una descripción de las propiedades sobre el nodo `data`. El valor de la propiedad `kind` debe ser *CDN* y la propiedad `version` debe establecerse en `1`.
+Consulte [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#common-syntax) para obtener una descripción de las propiedades que aparecen por encima del nodo `data`. El valor de la propiedad `kind` debe ser *CDN* y la propiedad `version` debe establecerse en `1`.
 
 Entre las propiedades adicionales se incluyen:
 
@@ -100,7 +100,7 @@ data:
            authenticator: purge-auth
 ```
 
-Consulte [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#common-syntax) para obtener una descripción de las propiedades sobre el nodo `data`. El valor de la propiedad `kind` debe ser *CDN* y la propiedad `version` debe establecerse en `1`.
+Consulte [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#common-syntax) para obtener una descripción de las propiedades que aparecen por encima del nodo `data`. El valor de la propiedad `kind` debe ser *CDN* y la propiedad `version` debe establecerse en `1`.
 
 Entre las propiedades adicionales se incluyen:
 
@@ -118,6 +118,8 @@ Entre las propiedades adicionales se incluyen:
 
 >[!NOTE]
 >La clave de purga debe configurarse como [secreto de tipo Cloud Manager Environment Variable](/help/operations/config-pipeline.md#secret-env-vars), antes de que se implemente la configuración que hace referencia a ella.
+
+Puede hacer referencia a [un tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) centrado en la configuración de claves de depuración y en la depuración de la caché de la CDN.
 
 ## Autenticación básica {#basic-auth}
 
@@ -156,7 +158,7 @@ data:
            authenticator: my-basic-authenticator
 ```
 
-Consulte [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#common-syntax) para obtener una descripción de las propiedades sobre el nodo `data`. El valor de la propiedad `kind` debe ser *CDN* y la propiedad `version` debe establecerse en `1`.
+Consulte [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#common-syntax) para obtener una descripción de las propiedades que aparecen por encima del nodo `data`. El valor de la propiedad `kind` debe ser *CDN* y la propiedad `version` debe establecerse en `1`.
 
 Además, la sintaxis incluye lo siguiente:
 

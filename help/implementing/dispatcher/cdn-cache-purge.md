@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo quitar objetos en caché de la cac
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 5b777171cb9246c2a0174985e060d7d1b6ed8591
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '450'
 ht-degree: 1%
 
 ---
@@ -30,6 +30,8 @@ Todas las variaciones de depuración comparten lo siguiente:
 
 >[!CAUTION]
 >La depuración de la caché de la CDN, especialmente con el indicador estricto, aumentará el tráfico en el origen y podría provocar una interrupción cuando no se ejecute correctamente.
+
+Puede hacer referencia a [un tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) centrado en la configuración de claves de depuración y en la depuración de la caché de la CDN.
 
 ## Purga de URL única {#single-purge}
 
