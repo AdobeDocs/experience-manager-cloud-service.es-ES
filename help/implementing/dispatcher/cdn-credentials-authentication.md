@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo configurar las credenciales y la a
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: e8c40d6205bfa2de18374e5161fe0fea42c8ce32
+source-git-commit: c8059260ab0ff13ed85f55eda2e09ca5cb678fa9
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1379'
 ht-degree: 5%
 
 ---
@@ -73,6 +73,29 @@ Entre las propiedades adicionales se incluyen:
 
 >[!NOTE]
 >La clave de Edge debe configurarse como una [variable de entorno de Cloud Manager de tipo secreto](/help/operations/config-pipeline.md#secret-env-vars) antes de que se implemente la configuración que hace referencia a ella.
+
+### Migración segura para reducir el riesgo de tráfico bloqueado {#migrating-safely}
+
+AEM Si su sitio ya está activo, tenga cuidado al migrar a CDN administrada por el cliente, ya que una configuración incorrecta puede bloquear el tráfico público; esto se debe a que solo la CDN de Adobe aceptará las solicitudes con el valor de encabezado X--Edge-Key esperado. Se recomienda un método cuando se incluya temporalmente una condición adicional en la regla de autenticación, lo que hace que solo evalúe la solicitud si se incluye un encabezado de prueba:
+
+```
+    - name: edge-auth-rule
+        when:
+          allOf:  
+            - { reqProperty: tier, equals: "publish" }
+            - { reqHeader: x-edge-test, equals: "test" }
+        action:
+          type: authenticate
+          authenticator: edge-auth
+```
+
+Se puede utilizar el siguiente patrón de solicitud `curl`:
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <CONFIGURED_EDGE_KEY>" -H "x-edge-test: test"
+```
+
+Después de realizar la prueba correctamente, se puede eliminar la condición adicional y volver a implementar la configuración.
 
 ## Purgar token de API {#purge-API-token}
 
