@@ -4,10 +4,10 @@ description: Notas de versión específicas de las funciones en desuso y elimina
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: d80872b1df4d31d784745dabeb0e1680fc921cb8
+source-git-commit: c5057120d68e1119211c7733a8eb0424590096bd
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2172'
+ht-degree: 98%
 
 ---
 
@@ -18,8 +18,7 @@ ht-degree: 0%
 >title="Funciones en desuso y eliminadas en AEM as a Cloud Service"
 >abstract="AEM as a Cloud Service tiene un modelo de implementación nativo de la nube. Algunas funciones y características se han reemplazado con homólogos nativos de la nube y esta pestaña muestra esas funciones."
 
-
-Adobe evalúa constantemente las capacidades de los productos para renovar o sustituir las funciones más antiguas con alternativas modernas que mejoren el valor general del cliente, siempre teniendo en cuenta la compatibilidad con versiones anteriores. Además, como [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] proporciona un modelo de implementación nativo de la nube, ciertas funciones y características se han reemplazado con homólogos nativos de la nube.
+El Adobe evalúa constantemente las capacidades de los productos para, con el tiempo, reinventar o reemplazar las funciones más antiguas con alternativas más modernas para mejorar el valor general del cliente, siempre teniendo en cuenta la compatibilidad con versiones anteriores. Además, como [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] proporciona un modelo de implementación nativo de la nube, ciertas funciones y características se han reemplazado con homólogos nativos de la nube.
 
 Para comunicar la eliminación o el reemplazo inminente de las capacidades de [!DNL Experience Manager], se aplican las siguientes reglas:
 
