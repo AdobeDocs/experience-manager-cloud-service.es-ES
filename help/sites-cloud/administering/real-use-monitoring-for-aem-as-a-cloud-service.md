@@ -4,9 +4,9 @@ description: Aprenda a utilizar Real Use Monitoring (RUM) para capturar y analiz
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 2515bc51fd54b014ffb701a8aef38cd08d6725b3
+source-git-commit: 1bb463fe59e89e6360dceefdaaec395084fc80c5
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1213'
 ht-degree: 1%
 
 ---
@@ -34,11 +34,6 @@ Con RUM, las métricas de rendimiento clave se rastrean desde el inicio de la di
 ## ¿Quién puede beneficiarse de un servicio de monitorización de uso real? {#who-can-benefit-from-rum-service}
 
 AEM El ha desarrollado RUM para ayudar a los clientes y al Adobe AEM a comprender cómo los visitantes interactúan con los sitios de la. El RUM se puede utilizar para ayudar a diagnosticar problemas de rendimiento y medir la eficacia de los experimentos. RUM preserva la privacidad de los visitantes a través del muestreo (solo se supervisa una pequeña parte de todas las vistas de página) y no se recopila información de identificación personal (PII).
-
-
-## Comprender el funcionamiento del servicio de monitorización de uso real {#understand-how-the-rum-service-works}
-
-AEM El usuario utiliza RUM para ayudar a los clientes y al Adobe AEM a comprender cómo los visitantes interactúan con los sitios de la. Les ayuda a diagnosticar problemas de rendimiento y a medir la eficacia de los experimentos. RUM preserva la privacidad de los visitantes a través del muestreo (solo se supervisa una pequeña parte de todas las vistas de página) y no se recopila información de identificación personal (PII).
 
 ## Servicio de monitoreo de uso real y privacidad {#rum-service-and-privacy}
 
