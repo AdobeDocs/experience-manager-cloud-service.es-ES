@@ -4,10 +4,10 @@ description: Notas de versión específicas de las funciones en desuso y elimina
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: d80872b1df4d31d784745dabeb0e1680fc921cb8
 workflow-type: tm+mt
-source-wordcount: '2193'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -95,12 +95,6 @@ A continuación se incluye una lista detallada de las API de AEM en desuso y su 
     <td>Uso de la API Discovery de Sling como alternativa</td>
     <td>2015</td>
     <td>eliminado</td>
-  </tr>
-  <tr>
-    <td>org.apache.sling.settings</td>
-    <td>AEM as a Cloud Service no admite los modos de ejecución ni el acceso al sistema de archivos en tiempo de ejecución. </td>
-    <td>10/5/20</td>
-    <td>Final de 2021</td>
   </tr>
   <tr>
     <td>org.apache.fop.apps</td>
