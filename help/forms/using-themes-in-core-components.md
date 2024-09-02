@@ -3,11 +3,10 @@ title: ¿Cómo se pueden crear y utilizar temáticas en los formularios adaptabl
 description: Puede utilizar temáticas para aplicar estilo y proporcionar una identidad visual a un formulario adaptable mediante los componentes principales. Puede compartir una temática en cualquier número de formularios adaptables.
 keywords: formularios adaptables que aplican estilo a los componentes principales uso de la temática en los componentes principales, aplicación de estilos a un formulario adaptable, personalización de temáticas
 feature: Adaptive Forms, Core Components
-exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 076ee3616ad56b4d463d93e407a9e7e67e54b4ac
 workflow-type: tm+mt
-source-wordcount: '2879'
+source-wordcount: '2816'
 ht-degree: 100%
 
 ---
@@ -428,11 +427,6 @@ Las temáticas se utilizan como parte de una plantilla de formulario adaptable p
 * **Cambio de la anchura de diseño del panel contenedor**
 
   No se recomienda cambiar la anchura del diseño del panel contenedor. Cuando se especifica la anchura de un panel contenedor, este se vuelve estático y no se adapta a distintas pantallas.
-
-* **Uso del editor de formularios o de temáticas para trabajar con el encabezado y el pie de página**
-
-  Utilice el editor de temáticas si desea aplicar estilo al encabezado y al pie de página mediante opciones de estilo como estilo de fuente, fondo y transparencia. 
-Si desea proporcionar información como una imagen de logotipo, el nombre de la compañía en el encabezado e información de copyright en el pie de página, utilice las opciones del editor de formularios.
 
 ## Preguntas frecuentes {#faq}
 
