@@ -3,10 +3,10 @@ title: Implementar  [!DNL Content Hub]
 description: Obtenga información sobre cómo implementar y activar Content Hub y proporcionar acceso a usuarios con diferentes tipos de privilegios (cargar recursos, usuarios de Adobe Express) y cómo proporcionar privilegios de administrador a usuarios.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 1cc17d10a687ede6b3b091578ed20a39414bb235
+source-git-commit: ea5ce2f443f1502a690b34cbf1b951ecf6aae9b2
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 0%
+source-wordcount: '1524'
+ht-degree: 1%
 
 ---
 
@@ -24,13 +24,29 @@ Las variaciones de privilegios en Content Hub incluyen:
 
 * [Usuarios de Content Hub](#onboard-content-hub-users): Acceda a los recursos aprobados por la marca en el portal de Content Hub.
 
-* [Administradores de Content Hub](#onboard-content-hub-administrator): acceso a la [interfaz de usuario de configuración](/help/assets/configure-content-hub-ui-options.md) en Content Hub, además de acceder a recursos aprobados por la marca, cargar recursos en Content Hub, integración de Adobe Express para editar imágenes (si tiene derechos de Adobe Express).
+* [Administradores de Content Hub](#onboard-content-hub-administrator): acceso a la [interfaz de usuario de configuración](/help/assets/configure-content-hub-ui-options.md) en Content Hub, además de acceder a recursos aprobados por la marca, cargar recursos en Content Hub e integrar el Adobe Express para editar imágenes (si tiene derechos de Adobe Express).
 
 * [Usuarios de Content Hub con derechos para agregar recursos](#onboard-content-hub-users-add-assets): capacidad para [cargar recursos en Content Hub](/help/assets/upload-brand-approved-assets.md), además de acceder a recursos aprobados por la marca en el portal de Content Hub.
 
 * [Usuarios de Content Hub con derechos para remezclar recursos con nuevas variaciones](#onboard-content-hub-users-remix-assets): [Integración de Adobe Express](/help/assets/edit-images-content-hub.md) (si tiene derechos de Adobe Express) además de acceder a recursos aprobados por la marca en el portal de Content Hub.
 
 * [Usuarios de Experience Manager Assets](#experience-manager-assets-users): capacidad para aprobar recursos en Experience Manager Assets as a Cloud Service para que estén disponibles en Content Hub.
+
+La siguiente tabla resume los tipos de usuarios de Content Hub disponibles, los privilegios que tienen y los perfiles de producto necesarios para obtener esos privilegios:
+
+| Función de usuario | Usuarios de Content Hub | Usuarios de Content Hub con derechos para añadir recursos | Usuarios de Content Hub con derechos para remezclar recursos | Administradores de Content Hub |
+|---------------|----------|----------|-------------------------|---|
+| **Capacidades** |
+| Acceso a los recursos aprobados por la marca en el portal de Content Hub | ✓ | ✓ | ✓ | ✓ |
+| Cargar recursos desde el portal de Content Hub | − | ✓ | ✓ | ✓ |
+| Uso de la integración de Adobe Express para editar imágenes | − | − | ✓ | − |
+| Acceso a la IU de configuración de Content Hub | − | − | − | ✓ |
+| **El usuario debe estar en estos perfiles de producto (Admin Console)** |
+| AEM > Instancia de envío > Usuarios limitados de AEM Assets | ✓ | ✓ | ✓ | ✓ |
+| AEM AEM > Instancia de autor de producción > Usuarios de la | − | ✓ | ✓ | − |
+| AEM AEM > Instancia de autor de producción > Administradores de | − | − | − | ✓ |
+| Adobe Express | − | − | ✓ | − |
+| **Más información** | Ver [usuarios de Content Hub](#onboard-content-hub-users) | Ver [usuarios de Content Hub con derechos para agregar recursos](#onboard-content-hub-users-add-assets) | Vea [usuarios de Content Hub con derechos para remezclar recursos con nuevas variaciones](#onboard-content-hub-users-remix-assets) | Ver [administradores de Content Hub](#onboard-content-hub-administrator) |
 
 ## Paso 1: Habilitar Content Hub para Experience Manager Assets con Cloud Manager {#enable-content-hub}
 
@@ -53,7 +69,7 @@ Para acceder al portal de Content Hub, los administradores primero deben habilit
 
 1. Haga clic en **[!UICONTROL Actualizar]**.
 
-Content Hub ahora está habilitado para Experience Manager Assets as a Cloud Service.
+Content Hub ahora está habilitado para Experience Manager Assets as a Cloud Service. Después de habilitar Content Hub en un entorno de producción, no puede deshabilitarlo en modo de autoservicio.
 
 >[!NOTE]
 >
