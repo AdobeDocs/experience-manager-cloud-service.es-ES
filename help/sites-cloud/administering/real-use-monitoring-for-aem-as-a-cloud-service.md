@@ -4,9 +4,9 @@ description: Aprenda a utilizar Real Use Monitoring (RUM) para capturar y analiz
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 1bb463fe59e89e6360dceefdaaec395084fc80c5
+source-git-commit: 917e9496dcbb8c6fe72b7a718211ee5bbecb3323
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1200'
 ht-degree: 1%
 
 ---
@@ -93,10 +93,11 @@ A medida que analiza los datos de RUM, puede haber variaciones en las vistas de 
 
 ## Preguntas más frecuentes {#faq}
 
+<!-- REMOVED THIS FAQ AS PER EMAIL REQUEST FROM SHWETA DUA, SEPTEMBER 4, 2024 TO THE DL-AEM-DOCS GROUP 
+1. **Can customers integrate the RUM service scripts with third-party systems like Dynatrace?**
 
-1. **¿Pueden los clientes integrar los scripts del servicio RUM con sistemas de terceros como Dynatrace?**
-
-   Sí.
+   Yes.
+-->
 
 1. **¿Se están recopilando las métricas de elementos vitales de Web &quot;Interacción con la siguiente pintura&quot;, &quot;Tiempo hasta el primer byte&quot; y &quot;Primera pintura de contenido&quot;?**
 
