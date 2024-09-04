@@ -1,15 +1,15 @@
 ---
-title: ¿Cómo se pueden usar las expresiones SOM en el Forms adaptable?
-description: Obtenga información sobre cómo extraer expresiones SOM de un panel en Forms adaptable.
+title: ¿Cómo se usan las expresiones SOM en formularios adaptables?
+description: Obtenga información sobre cómo extraer expresiones SOM de un panel de formularios adaptables.
 feature: Adaptive Forms, Foundation Components
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: 5c30d5ca-12b8-4cc6-aa95-bde562419827
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '344'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
-
 
 # Uso de expresiones SOM en formularios adaptables{#using-som-expressions-in-adaptive-forms}
 

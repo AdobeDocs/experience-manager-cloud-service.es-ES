@@ -7,13 +7,13 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: 597fa30c-6fb7-46c2-8ee1-2986c4860266
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '853'
 ht-degree: 100%
 
 ---
-
 
 # Selección dinámica de usuarios o grupos en el flujo de trabajo de AEM {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 

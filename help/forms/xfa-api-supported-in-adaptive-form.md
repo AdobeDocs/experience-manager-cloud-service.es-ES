@@ -8,13 +8,13 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: 59ae0eed-d832-4f46-9f99-7bcca9f82306
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '683'
 ht-degree: 100%
 
 ---
-
 
 # Compatibilidad con XFA en formularios adaptables basados en XDP{#xfa-support-in-xdp-based-adaptive-forms}
 
@@ -267,4 +267,3 @@ La siguiente tabla muestra cómo se asignan las validaciones XFA a las validacio
 >[!NOTE]
 >
 >No se puede anular la propiedad mandatory del grupo de botones de opción y de casillas de verificación del formulario adaptable enlazados a los botones de verificación XFA.
-

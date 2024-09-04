@@ -1,18 +1,18 @@
 ---
-title: ¿Cómo se proporciona acceso al editor de reglas de formularios adaptables de aem para seleccionar grupos de usuarios?
+title: ¿Cómo se proporciona acceso al editor de reglas de formularios adaptables de AEM a determinados grupos de usuarios?
 description: Existen diferentes tipos de usuarios con diversas habilidades que trabajan con formularios adaptables. Obtenga información sobre cómo limitar el acceso de los usuarios al Editor de reglas en función de su rol o función.
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: 2ef0e685-458b-4117-b02a-55dd3472577e
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '320'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
-
 
 # Conceder acceso al Editor de reglas a determinados grupos de usuarios {#grant-rule-editor-access-to-select-user-groups}
 
@@ -20,7 +20,7 @@ ht-degree: 91%
 
 Existen diferentes tipos de usuarios con diversas habilidades que trabajan con formularios adaptables. Aunque es posible que los usuarios expertos tengan los conocimientos necesarios para trabajar con scripts y reglas complejas, puede haber usuarios de nivel básico que únicamente necesiten trabajar con el diseño y las propiedades básicas de los formularios adaptables.
 
-[!DNL Experience Manager Forms] le permite limitar el acceso de los usuarios al Editor de reglas en función de su rol o función. En los ajustes del servicio de configuración de los formularios adaptables, puede especificar los [grupos de usuarios](forms-groups-privileges-tasks.md) que pueden ver y acceder al Editor de reglas.
+[!DNL Experience Manager Forms] permite limitar el acceso de los usuarios al editor de reglas según la función que desempeñan. En los ajustes del servicio de configuración de los formularios adaptables, puede especificar los [grupos de usuarios](forms-groups-privileges-tasks.md) que pueden ver y acceder al Editor de reglas.
 
 ## Especificar qué grupos de usuarios pueden acceder al Editor de reglas {#specify-user-groups-that-can-access-rule-editor}
 
@@ -55,4 +55,3 @@ Existen diferentes tipos de usuarios con diversas habilidades que trabajan con f
    Barra de herramientas de componentes visible para un usuario sin acceso al Editor de reglas
 
    Para obtener instrucciones sobre cómo agregar usuarios a grupos, consulte [Administración de usuarios y seguridad](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=es).
-

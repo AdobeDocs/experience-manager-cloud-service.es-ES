@@ -3,13 +3,13 @@ title: ¿Qué es el componente separador en el formulario adaptable?
 description: El componente separador de formularios adaptables ayuda a separar visualmente las secciones de un formulario.
 feature: Adaptive Forms, Foundation Components
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: 1b7857f9-b201-43ca-870d-42a09c441d9a
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '313'
 ht-degree: 100%
 
 ---
-
 
 # Componente Separador en formularios adaptables{#separator-component-in-adaptive-forms}
 
@@ -35,4 +35,3 @@ Para especificar las propiedades de un componente separador:
 1. Realice una de las siguientes acciones:
    * Confirme los cambios haciendo clic en **OK**
    * Salga del cuadro de diálogo sin ningún cambio haciendo clic en **Cancelar**.
-

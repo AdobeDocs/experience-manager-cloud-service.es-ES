@@ -1,5 +1,5 @@
 ---
-title: ¿Cómo se puede sincronizar Forms adaptable con plantillas de formulario XFA?
+title: ¿Cómo se sincronizan los formularios adaptables con las plantillas de formulario XFA?
 description: Sincronizar formularios adaptables con archivos XFA/XDP.
 uuid: 92818132-1ae0-4576-84f2-ece485a34457
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,19 +9,19 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: f19b7e4f-d4aa-45da-b0dd-7ae8d119da74
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '1146'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
-
 
 # Sincronizar formularios adaptables con plantillas de formularios XFA{#synchronizing-adaptive-forms-with-xfa-form-templates}
 
 ## Introducción {#introduction}
 
-Puede crear un formulario adaptable basado en una plantilla de formulario XFA (archivo `*.XDP`). Esta reutilización le permite conservar su inversión en formularios XFA existentes. Para obtener información sobre cómo utilizar una plantilla de formulario XFA para crear un formulario adaptable, consulte [Crear un formulario adaptable basado en una plantilla](creating-adaptive-form.md).
+Puede crear un formulario adaptable basado en una plantilla de formulario XFA (archivo `*.XDP`). Esta reutilización le permite conservar su inversión en los formularios XFA existentes. Para obtener información sobre cómo utilizar una plantilla de formulario XFA para crear un formulario adaptable, consulte [Crear un formulario adaptable basado en una plantilla](creating-adaptive-form.md).
 
 Puede reutilizar campos del archivo XDP en su formulario adaptable. Estos campos se denominan campos enlazados. Las propiedades de los campos enlazados (como scripts, etiquetas y formato de visualización) se copian del archivo XDP. También puede optar por anular el valor de algunas de estas propiedades.
 
@@ -134,7 +134,7 @@ El campo que se ha eliminado también se marca con un icono para indicar un erro
 
 >[!NOTE]
 >
->Los campos del formulario adaptable que tienen un enlace incorrecto (un valor `bindRef` no válido en el cuadro de diálogo de edición) también se consideran campos eliminados. Si el autor no corrige estos errores y publica el formulario adaptable, el campo se trata como un campo de formulario adaptable independiente normal y se incluye en la sección independiente del archivo XML de salida.
+>Los campos del formulario adaptable que tienen un enlace incorrecto (un valor `bindRef` no válido en el cuadro de diálogo de edición) también se consideran campos eliminados. Si el autor no corrige estos errores y publica el formulario adaptable, el campo se trata como un campo de formulario adaptable no enlazado normal y se incluye en la sección Sin enlazar del archivo XML de salida.
 
 ## Descargas {#downloads}
 

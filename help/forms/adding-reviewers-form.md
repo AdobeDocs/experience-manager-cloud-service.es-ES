@@ -9,13 +9,13 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
-workflow-type: tm+mt
+exl-id: 27c52969-1213-4fd3-8e16-988caafb4ad6
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '493'
 ht-degree: 100%
 
 ---
-
 
 # Asociar revisores de envío con un formulario {#associating-submission-reviewers-with-a-form}
 

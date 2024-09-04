@@ -8,13 +8,13 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
-workflow-type: tm+mt
+exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
+source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
+workflow-type: ht
 source-wordcount: '2335'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
-
 
 # Flujo de trabajo centrado en Forms en OSGi {#forms-centric-workflow-on-osgi}
 
@@ -201,7 +201,7 @@ Puede iniciar o habilitar un flujo de trabajo centrado en Forms mediante:
 
 ### El envío de una solicitud desde la bandeja de entrada AEM {#inbox}
 
-La solicitud de flujo de trabajo que ha creado está disponible como solicitud en la bandeja de entrada. Los usuarios que sean miembros del grupo [!DNL workflow-users] pueden rellenar y enviar la solicitud que almacena en déclencheur el flujo de trabajo asociado.
+La solicitud de flujo de trabajo que ha creado está disponible como solicitud en la bandeja de entrada. Los usuarios que sean integrantes del grupo [!DNL workflow-users] pueden rellenar y enviar la solicitud que activa el flujo de trabajo asociado. 
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 
