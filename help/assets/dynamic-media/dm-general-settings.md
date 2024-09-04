@@ -9,7 +9,7 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: ccd52d147b1739330c3cb5a7d1952a7e9eec71ad
+source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
 workflow-type: tm+mt
 source-wordcount: '2525'
 ht-degree: 0%
@@ -20,6 +20,8 @@ ht-degree: 0%
 
 <!-- hide: yes
 hidefromtoc: yes -->
+
+{{work-with-dynamic-media}}
 
 La configuración de **[!UICONTROL Configuración general de Dynamic Media]** solo está disponible si:
 
@@ -101,7 +103,7 @@ El efecto Máscara de enfoque utiliza las mismas opciones que el filtro Máscara
 | --- | --- |
 | **[!UICONTROL Importe]** | Requerido.<br>Controla la cantidad de contraste que se aplica a los píxeles del borde.<br>Considérelo como la intensidad del efecto. La principal diferencia entre los valores de cantidad de Máscara de enfoque en Adobe Dynamic Media y los valores de cantidad en Adobe Photoshop es que Photoshop tiene un rango de cantidad del 1 % al 500 %. Mientras que en Adobe Dynamic Media, el intervalo de valores es de `0.0` a `5.0`. Un valor de 5,0 en Adobe Dynamic Media es el equivalente aproximado de 500 % en Photoshop; un valor de 0,9 es el equivalente de 90 %, y así sucesivamente. |
 | **[!UICONTROL Radio]** | Requerido.<br>Controla el radio del efecto.<br>El intervalo de valores es de `0` a `250`. El efecto se ejecuta en todos los píxeles de una imagen y se irradia desde todos los píxeles en todas las direcciones. El radio se mide en píxeles. Por ejemplo, para obtener un efecto de enfoque similar para una imagen de 2000 x 2000 píxeles e imagen de 500 x 500 píxeles, debe establecer un radio de dos píxeles en la imagen de 2000 x 2000 píxeles. A continuación, defina un valor de radio de un píxel en la imagen de 500 x 500 píxeles. Se utiliza un valor mayor para una imagen que tiene más píxeles. |
-| **[!UICONTROL Umbral]** | Requerido.<br>El umbral es un rango de contraste que se ignora cuando se aplica el filtro Máscara de enfoque. Este efecto es importante para que no se introduzca ningún &quot;ruido&quot; en una imagen cuando se utilice este filtro. El intervalo de valores es de `0` a `255`, que es el número de pasos de brillo de una imagen en escala de grises. `0`=negro, `128`=50% gris y `255`=blanco.<br>Un valor de umbral de `12` ignora las ligeras variaciones en el brillo del tono de la piel para evitar agregar ruido, pero agrega contraste al borde de las áreas de contrastes, como cuando las pestañas tocan la piel.<br>Si tiene una foto de la cara de alguien, la máscara de enfoque afecta a las partes de contraste de la imagen. Por ejemplo, donde las pestañas y la piel se juntan para crear una zona obvia de contraste, y la piel lisa en sí misma. Incluso la piel más suave muestra cambios sutiles en los valores de brillo. Si no utiliza un valor de umbral, el filtro acentúa estos cambios sutiles en los píxeles de la piel. A su vez, se crea un efecto ruidoso e indeseable mientras que el contraste en las pestañas aumenta, lo que aumenta la nitidez.<br>Para evitar este problema, se introduce un valor de umbral que indica al filtro que ignore los píxeles que no cambian drásticamente el contraste, como la apariencia suave.<br>En el gráfico de cremallera mostrado anteriormente, observe la textura junto a las cremalleras. El ruido de la imagen se muestra porque los valores de umbral eran demasiado bajos para suprimir el ruido. |
+| **[!UICONTROL Umbral]** | Requerido.<br>El umbral es un rango de contraste que se ignora cuando se aplica el filtro Máscara de enfoque. Este efecto es importante para que no se introduzca ningún &quot;ruido&quot; en una imagen cuando se utilice este filtro. El intervalo de valores es de `0` a `255`, que es el número de pasos de brillo de una imagen en escala de grises. `0`=negro, `128`=50% gris y `255`=blanco.<br>Un valor de umbral de `12` ignora las ligeras variaciones en el brillo del tono de la piel para evitar agregar ruido, pero agrega contraste al borde de las áreas de contrastes, como cuando las pestañas tocan la piel.<br>Si tienes una foto de la cara de alguien, la máscara de enfoque afecta a las partes contrastadas de la imagen. Por ejemplo, donde las pestañas y la piel se juntan para crear una zona obvia de contraste, y la piel lisa en sí misma. Incluso la piel más suave muestra cambios sutiles en los valores de brillo. Si no utiliza un valor de umbral, el filtro acentúa estos cambios sutiles en los píxeles de la piel. A su vez, se crea un efecto ruidoso e indeseable mientras que el contraste en las pestañas aumenta, lo que aumenta la nitidez.<br>Para evitar este problema, se introduce un valor de umbral que indica al filtro que ignore los píxeles que no cambian drásticamente el contraste, como la apariencia suave.<br>En el gráfico de cremallera mostrado anteriormente, observe la textura junto a las cremalleras. El ruido de la imagen se muestra porque los valores de umbral eran demasiado bajos para suprimir el ruido. |
 | **[!UICONTROL Monocromo]** | Seleccione esta opción para resaltar el brillo (intensidad) de la imagen con máscara de enfoque.<br>Anule la selección para aplicar máscara de enfoque a cada componente de color por separado. |
 
 Vea también [Enfoque de imágenes en Adobe Dynamic Media y en Image Server](https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=en).

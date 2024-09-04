@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Configuration,Viewer Presets,Image Presets,Dynamic Media
 role: Admin,User
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 8%
@@ -13,6 +13,8 @@ ht-degree: 8%
 ---
 
 # Configuración de Dynamic Media {#setting-up-dynamic-media}
+
+{{work-with-dynamic-media}}
 
 [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) le ayuda a administrar sus recursos al ofrecerle recursos de mercadotecnia y comercialización visuales enriquecidos a petición, escalados automáticamente para su consumo en sitios web, móviles y sociales. Con un conjunto de recursos de origen primarios, Dynamic Media genera y ofrece varias variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
 

@@ -1,8 +1,8 @@
 ---
-source-git-commit: c7b78b5c4e4851d57314a437b3b7fa06c1f167d5
+source-git-commit: 57fb7a011cb2da853cdca4f3233cd56775f4a459
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 97%
+source-wordcount: '914'
+ht-degree: 95%
 
 ---
 # Fragmentos de código {#snippets}
@@ -155,3 +155,9 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 >
 >Si utiliza (o tiene intención de utilizar) la canalización front-end para desarrollar sitios, debe añadir de antemano la Lista de IP permitidas de Cloud Manager.
 >Consulte [Uso de la Lista de IP permitidas de Cloud Manager con la canalización front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+
+## Trabajo con Dynamic Media {#work-with-dynamic-media}
+
+>[!TIP]
+>
+>¿Es su primera vez en Dynamic Media? Para obtener información general rápida y de alto nivel sobre Dynamic Media, consulte [Trabajar con Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).

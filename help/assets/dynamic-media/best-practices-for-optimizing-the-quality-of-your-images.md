@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management, Best Practices
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: 62af768370ee0affa4003a7ae0c520ad1a065e8c
+source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
 workflow-type: tm+mt
 source-wordcount: '1648'
 ht-degree: 1%
@@ -13,6 +13,8 @@ ht-degree: 1%
 ---
 
 # Práctica recomendada para optimizar la calidad de las imágenes {#best-practices-for-optimizing-the-quality-of-your-images}
+
+{{work-with-dynamic-media}}
 
 La optimización de la calidad de la imagen puede ser un proceso laborioso, ya que muchos factores contribuyen a obtener resultados aceptables. El resultado es en parte subjetivo porque los individuos perciben la calidad de la imagen de manera diferente. La experimentación estructurada es clave.
 
