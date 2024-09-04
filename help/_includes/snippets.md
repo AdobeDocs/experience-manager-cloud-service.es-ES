@@ -2,7 +2,7 @@
 source-git-commit: c7b78b5c4e4851d57314a437b3b7fa06c1f167d5
 workflow-type: tm+mt
 source-wordcount: '892'
-ht-degree: 77%
+ht-degree: 97%
 
 ---
 # Fragmentos de código {#snippets}
@@ -18,11 +18,11 @@ ht-degree: 77%
 ## Consulte también {#see-also}
 
 * [Crear un formulario adaptable de AEM](/help/forms/creating-adaptive-form-core-components.md)
-* [AEM Agregar un formulario adaptable de la a la página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Añadir un formulario adaptable de AEM a la página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Aplicar temáticas a un formulario adaptable de AEM](/help/forms/using-themes-in-core-components.md)
-* [Añadir componentes a un formulario adaptable de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
+* [Añadir componentes a un formulario adaptable de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
 * [Usar el servicio Captcha en un formulario adaptable de AEM](/help/forms/captcha-adaptive-forms-core-components.md)
-* [Generar una versión de PDF AEM (DoR) de un formulario adaptable de la aplicación de datos de la aplicación de datos de](/help/forms/generate-document-of-record-core-components.md)
+* [Generar la versión en PDF (DoR) de un formulario adaptable de AEM](/help/forms/generate-document-of-record-core-components.md)
 * [Traducir un formulario adaptable de AEM](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [Habilitar Adobe Analytics para un formulario adaptable con el fin de hacer un seguimiento del uso del formulario](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
 * [Conectar el formulario adaptable a Microsoft SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
@@ -32,7 +32,7 @@ ht-degree: 77%
 * [Conectar el formulario adaptable a Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Uso de Adobe Sign en un formulario adaptable de AEM](/help/forms/working-with-adobe-sign.md)
 * [Agregar una nueva configuración regional para un formulario adaptable](/help/forms/supporting-new-language-localization-core-components.md)
-* [Enviar datos de formulario adaptable a una base de datos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
+* [Enviar datos de formulario adaptable a una base de datos](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
 * [Enviar datos de formulario adaptable a un punto final REST](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [Enviar datos de formulario adaptable al flujo de trabajo de AEM](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [Utilizar el portal de Forms para ver una lista de Formularios adaptables de AEM en un sitio web de AEM](/help/forms/configure-forms-portal.md)
@@ -66,7 +66,7 @@ ht-degree: 77%
 * [Componentes de bloque de formulario adaptable y sus propiedades](/help/edge/docs/forms/form-components.md)
 
 
-## Diferencia entre el editor de reglas en los componentes principales y el editor de reglas en los componentes básicos {#rule-editor-diff}
+## Diferencia entre el editor de reglas en los componentes principales y el editor de reglas en los componentes de base {#rule-editor-diff}
 
 En la tabla siguiente se muestra la diferencia entre las funciones disponibles en los componentes principales del editor de reglas y los componentes de base del editor de reglas:
 
@@ -74,28 +74,28 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
   <tbody>
   <tr>
     <td><strong>Características</strong></td>
-    <td><strong>Componentes de base de formulario adaptable</strong></td>
+    <td><strong>Componentes de base de formularios adaptables</strong></td>
     <td><strong>Componentes principales de formularios adaptables</strong></td>   
     </tr>
   </tr>
   <tr>
-    <td>Establecer la lista desplegable de opciones </td>
-    <td>La lista desplegable de opciones se establece mediante la propiedad <b>Set Options of</b> del Editor de reglas.</td>
+    <td>Establecer las opciones de la lista desplegable </td>
+    <td>Las opciones de la lista desplegable se establecen con la propiedad <b>Configurar opciones de</b> del editor de reglas.</td>
     <td>Las opciones desplegables se establecen mediante las funciones personalizadas. 
    </td>
    </tr>
      </tr>
    <tr>
     <td>Realizar operaciones matemáticas en el campo de panel repetible </td>
-    <td>Las funciones matemáticas OOTB se pueden aplicar en campos de panel repetibles para realizar funciones como suma, promedio usando el Editor de reglas. Se deben proporcionar dos argumentos: el primero especifica el panel repetible que contiene el campo, mientras que el segundo especifica el campo dentro del panel repetible correspondiente. </td>
-    <td>Las operaciones matemáticas en el campo de panel repetible se pueden realizar mediante las funciones personalizadas. También puede aplicar las funciones matemáticas directamente a los campos del panel repetible en el Editor de reglas.
+    <td>Las funciones matemáticas OOTB se pueden aplicar en campos del panel repetible para realizar funciones como suma o promedio mediante el editor de reglas. Se deben proporcionar dos argumentos: el primero especifica el panel repetible que contiene el campo, mientras que el segundo especifica el campo dentro del panel repetible correspondiente. </td>
+    <td>Las operaciones matemáticas en el campo de panel repetible se pueden realizar mediante las funciones personalizadas. También puede aplicar las funciones matemáticas directamente a los campos del panel repetible en el editor de reglas.
    </td>
    </tr>
       <tr>
     <td>Validar/restablecer campo/panel/regla de formulario en “Then” </td>
-    <td>Las funciones Validar y Restablecer solo admiten objetos de formulario en el Editor de reglas. 
+    <td>Las funciones Validar y Restablecer solo admiten objetos de formulario en el editor de reglas. 
    </td>
-    <td>Las funciones Validar y Restablecer admiten objetos de formulario, panel o campo en el Editor de reglas. 
+    <td>Las funciones Validar y Restablecer admiten objetos de formulario, panel o campo en el editor de reglas. 
    </td>
    </tr>
    <tr>
@@ -126,7 +126,7 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 * [Diferencia en varias ediciones del editor de reglas](/help/forms/rule-editor-core-components-difference-tables.md)
 * [Introducción a las funciones personalizadas para formularios adaptables basados en componentes principales](/help/forms/create-and-use-custom-functions.md)
 * [Crear una función personalizada para un formulario adaptable basado en componentes principales](/help/forms/custom-function-core-component-create-function.md)
-* [Ejemplos de desarrollo y uso de una función personalizada](/help/forms/custom-function-core-components-use-cases.md)
+* [Ejemplos de desarrollo y uso de funciones personalizadas](/help/forms/custom-function-core-components-use-cases.md)
 
 
 ## Portal de Forms {#forms-portal-see-also}
@@ -149,9 +149,9 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 >52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
-## Añadir una Lista de permitidos IP de Cloud Manager y canalizaciones front-end {#add-cm-allowlist-frontend-pipeline}
+## Añadir una Lista de IP permitidas de Cloud Manager y canalizaciones front-end {#add-cm-allowlist-frontend-pipeline}
 
 >[!IMPORTANT]
 >
->Si utiliza (o tiene intención de utilizar) la canalización front-end para desarrollar sitios, se debe agregar de antemano la Lista de permitidos IP de Cloud Manager.
->Consulte [Uso de la Lista de permitidos IP de Cloud Manager con la canalización front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+>Si utiliza (o tiene intención de utilizar) la canalización front-end para desarrollar sitios, debe añadir de antemano la Lista de IP permitidas de Cloud Manager.
+>Consulte [Uso de la Lista de IP permitidas de Cloud Manager con la canalización front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).

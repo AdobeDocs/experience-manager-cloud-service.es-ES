@@ -225,7 +225,7 @@ ht-degree: 98%
       + [Crear entornos](/help/journey-onboarding/create-environments.md)
       + [Asignar perfiles de producto de AEM](/help/journey-onboarding/assign-profiles-aem.md)
       + [Tareas del desarrollador y del administrador de implementación](/help/journey-onboarding/developers.md)
-      + [Administración de identidades](/help/journey-migration/managing-principals.md)
+      + [Administración de principales](/help/journey-migration/managing-principals.md)
       + [Tareas del usuario de AEM](/help/journey-onboarding/aem-users.md)
       + [Lista de comprobación para el lanzamiento](/help/journey-onboarding/go-live-checklist.md)
    + Recorrido del complemento de demostraciones de referencia de AEM {#demo-add-on}
@@ -285,7 +285,7 @@ ht-degree: 98%
          + [Visualización de registros del conjunto de migraciones](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [Eliminación de un conjunto de migraciones](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [Ejecución de la herramienta de transferencia de contenido en una instancia de publicación](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
-         + [Administración de identidades después de la migración](/help/journey-migration/managing-principals-after-migration.md)
+         + [Administración de principales después de la migración](/help/journey-migration/managing-principals-after-migration.md)
          + [Resolución de problemas de la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + Herramienta de asignación de usuarios heredados (heredado){#legacy-user-mapping-tool}
             + [Información general](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
@@ -765,7 +765,7 @@ ht-degree: 98%
             + [Creación de una experiencia de captura de datos en varios pasos](/help/forms/introduction-form-sequence.md)
             + [Construcciones de estilo para formularios adaptables](/help/forms/styling-constructs-adaptive-forms.md)
             + [Aplicación de estilos CSS en línea a componentes de formulario adaptable individuales](/help/forms/inline-style-adaptive-forms.md)
-            + [Cómo utilizar el componente Separador en Forms adaptable](/help/forms/separator-component-in-adaptive-forms.md)
+            + [¿Cómo se usa el componente separador en los formularios adaptables?](/help/forms/separator-component-in-adaptive-forms.md)
          + Adición de reglas y uso de expresiones en un formulario adaptable {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [Adición de reglas a un formulario adaptable](/help/forms/rule-editor.md)
             + [Agregar un controlador de error personalizado mediante el servicio Invocar del editor de reglas](/help/forms/add-custom-error-handler-adaptive-forms.md)
@@ -779,7 +779,7 @@ ht-degree: 98%
             + [Configuración de la página de redirección](/help/forms/configuring-redirect-page.md)
             + [Configuración del envío asincrónico para un formulario adaptable](/help/forms/asynchronous-submissions-adaptive-forms.md)
             + [Creación de una acción de envío personalizada](/help/forms/custom-submit-action-form.md)
-            + [Agregar información de datos de usuario a los metadatos de envío de formularios](/help/forms/form-submission-metadata.md)
+            + [Añadir información de datos de usuario a los metadatos de envío de formularios](/help/forms/form-submission-metadata.md)
             + [API para invocar el servicio del modelo de datos de formulario (FDM) desde formularios adaptables](/help/forms/invoke-form-data-model-services.md)
          + [Rellene previamente los campos del formulario adaptable](/help/forms/prepopulate-adaptive-form-fields.md)
          + [Generar documento de registro](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
@@ -795,7 +795,7 @@ ht-degree: 98%
       + [Palabras clave en formularios adaptables](/help/forms/adaptive-forms-keywords.md)
       + [Vista previa de un formulario](/help/forms/previewing-forms.md)
    + Flujos de trabajo centrados en formularios {#create-form-centric-workflows}
-      + [Introducción al flujo de trabajo centrado en Forms](/help/forms/aem-forms-workflow.md)
+      + [Introducción a los flujos de trabajo centrados en formularios](/help/forms/aem-forms-workflow.md)
       + [Uso de pasos centrados en Forms en un flujo de trabajo + referencia de paso](/help/forms/aem-forms-workflow-step-reference.md)
       + [Uso de variables en un flujo de trabajo centrado en Forms](/help/forms/variable-in-aem-workflows.md)
       + [Selección dinámica de usuarios o grupos en el flujo de trabajo de AEM](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
@@ -915,7 +915,7 @@ ht-degree: 98%
       + [Datos tabulares y hojas de cálculo](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [Proyectos existentes y Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
       + [Administración de datos de taxonomía](/help/edge/wysiwyg-authoring/taxonomy.md)
-      + [Funciones de sitios WIP](/help/edge/wysiwyg-authoring/wip-features.md)
+      + [Funciones de sitios de trabajo en curso](/help/edge/wysiwyg-authoring/wip-features.md)
    + Creación basada en documentos {#document-authoring}
       + [Creación](/help/edge/docs/authoring.md)
       + [Metadatos por lotes](/help/edge/docs/bulk-metadata.md)
