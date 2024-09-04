@@ -3,9 +3,9 @@ title: Implementar  [!DNL Content Hub]
 description: Obtenga información sobre cómo implementar y activar Content Hub y proporcionar acceso a usuarios con diferentes tipos de privilegios (cargar recursos, usuarios de Adobe Express) y cómo proporcionar privilegios de administrador a usuarios.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 9ac22ebcca619d91a38111bd706986b8d4a4d189
+source-git-commit: 3bb3920d043c83dac6f8e566761b626236bd2a04
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1569'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ La siguiente tabla resume los tipos de usuarios de Content Hub disponibles, los 
 
 >[!NOTE]
 >
->[Los usuarios de Experience Manager Assets](#experience-manager-assets-users) tienen la capacidad de aprobar recursos en Experience Manager Assets as a Cloud Service para que esos recursos estén disponibles en Content Hub. AEM AEM Estos usuarios deben añadirse al perfil de producto de Usuarios de producción > Instancia de autor de producción > Usuarios de la mediante Admin Console.
+>[Los usuarios de Experience Manager Assets](#experience-manager-assets-users) tienen la capacidad de aprobar recursos en un entorno as a Cloud Service de Experience Manager Assets para que esos recursos estén disponibles en Content Hub. AEM AEM Estos usuarios deben añadirse al perfil de producto de Usuarios de producción > Instancia de autor de producción > Usuarios de la mediante Admin Console.
 
 ## Paso 1: Habilitar Content Hub para Experience Manager Assets con Cloud Manager {#enable-content-hub}
 
