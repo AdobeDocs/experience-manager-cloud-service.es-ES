@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo configurar las credenciales y la a
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: c8059260ab0ff13ed85f55eda2e09ca5cb678fa9
+source-git-commit: 5d51ff056d4e4f0fdbb3004cbac55803ac91f8ca
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1443'
 ht-degree: 5%
 
 ---
@@ -72,7 +72,7 @@ Entre las propiedades adicionales se incluyen:
    * action: debe especificar &quot;authentication&quot;, con referencia al autenticador deseado.
 
 >[!NOTE]
->La clave de Edge debe configurarse como una [variable de entorno de Cloud Manager de tipo secreto](/help/operations/config-pipeline.md#secret-env-vars) antes de que se implemente la configuración que hace referencia a ella.
+>La clave de Edge debe configurarse como una [variable de entorno de Cloud Manager de tipo secreto](/help/operations/config-pipeline.md#secret-env-vars) antes de que se implemente la configuración que hace referencia a ella. Se recomienda utilizar una clave aleatoria única de una longitud mínima de 32 bytes; por ejemplo, la biblioteca criptográfica Open SSL puede generar una clave aleatoria ejecutando el comando `openssl rand -hex 32`.
 
 ### Migración segura para reducir el riesgo de tráfico bloqueado {#migrating-safely}
 
@@ -140,7 +140,7 @@ Entre las propiedades adicionales se incluyen:
    * action: debe especificar &quot;authentication&quot;, con referencia al autenticador deseado.
 
 >[!NOTE]
->La clave de purga debe configurarse como [secreto de tipo Cloud Manager Environment Variable](/help/operations/config-pipeline.md#secret-env-vars), antes de que se implemente la configuración que hace referencia a ella.
+>La clave de purga debe configurarse como [secreto de tipo Cloud Manager Environment Variable](/help/operations/config-pipeline.md#secret-env-vars), antes de que se implemente la configuración que hace referencia a ella. Se recomienda utilizar una clave aleatoria única de al menos 32 bytes de longitud; por ejemplo, la biblioteca criptográfica Open SSL puede generar una clave aleatoria ejecutando el comando openssl rand -hex 32
 
 Puede hacer referencia a [un tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) centrado en la configuración de claves de depuración y en la depuración de la caché de la CDN.
 
