@@ -1,20 +1,20 @@
 ---
-title: Guía de introducción para desarrolladores para la creación WYSIWYG con Edge Delivery Services
-description: Esta guía le ayudará a ponerse en marcha con un nuevo sitio de Adobe Experience Manager que utiliza Edge Delivery Services y el editor universal para la creación de contenido WYSIWYG.
+title: Guía de introducción para desarrolladores para la creación de WYSIWYG con Edge Delivery Services
+description: Esta guía le ayudará a ponerse en marcha con un nuevo sitio de Adobe Experience Manager que utiliza Edge Delivery Services y el editor universal para la creación de contenido de WYSIWYG.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 87%
+source-wordcount: '1207'
+ht-degree: 86%
 
 ---
 
 
-# Guía de introducción para desarrolladores para la creación WYSIWYG con Edge Delivery Services {#edge-dev-getting-started}
+# Guía de introducción para desarrolladores para la creación de WYSIWYG con Edge Delivery Services {#edge-dev-getting-started}
 
-Esta guía le ayudará a ponerse en marcha con un nuevo sitio de Adobe Experience Manager que utiliza Edge Delivery Services y el editor universal para la creación de contenido WYSIWYG.
+Esta guía le ayudará a ponerse en marcha con un nuevo sitio de Adobe Experience Manager que utiliza Edge Delivery Services y el editor universal para la creación de contenido de WYSIWYG.
 
 ## Requisitos previos {#prerequisites}
 
@@ -23,15 +23,6 @@ Antes de comenzar esta guía, debe estar familiarizado con los conceptos básico
 * Ha completado el [Tutorial del servicio de envío de Edge.](/help/edge/developer/tutorial.md)
 * Tiene acceso a una [Zona protegida de AEM Cloud Service.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * Ha [habilitado el Editor universal en el mismo entorno de zona protegida.](/help/implementing/universal-editor/getting-started.md)
-
-## Elija el editor adecuado {#editor-choice}
-
-AEM ofrece dos editores de contenido diferentes y la elección de cuál utilizar depende de su situación.
-
-* **Editor universal**: Esta debe ser la opción predeterminada para los nuevos sitios.
-* **Editor de página de AEM**: debe elegirse para una migración de AEM Sites existente a Edge Delivery Services.
-
-Esta guía se centra en los proyectos AEM en Edge Delivery Services que utilizan el Editor universal. Consulte el documento [Uso de Edge Delivery Services](/help/edge/using.md) para obtener más información sobre cómo elegir el editor adecuado y la migración de los AEM Sites existentes a Edge Delivery Services.
 
 ## Conceptos principales al desarrollar para Edge Delivery Services {#core-concepts}
 
@@ -59,7 +50,7 @@ Los sitios web se crean automáticamente para cada una de las ramas, desde la pr
 >
 >Consulte la documentación de la [sección Versión](/help/edge/developer/block-collection.md) de Edge Delivery Services para obtener más información sobre los bloques y cómo desarrollar para los servicios de Edge Delivery.
 
-## Introducción a la creación y Edge Delivery Services WYSIWYG {#getting-started}
+## Introducción a la creación y Edge Delivery Services de WYSIWYG {#getting-started}
 
 Una vez que haya completado [los requisitos previos](#prerequisites) y haya hecho [la elección de utilizar el Editor universal,](#editor-choice) puede empezar con su propio proyecto.
 
@@ -131,7 +122,7 @@ Ahora que tiene un proyecto de GitHub, debe crear un nuevo sitio que el proyecto
 >
 >Para editar el sitio con el editor universal, debe utilizar un explorador basado en Chromium.
 
-1. Descargue la última creación WYSIWYG con la plantilla del sitio de Edge Delivery Services desde GitHub en [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
+1. Descargue la última creación de WYSIWYG con la plantilla del sitio de Edge Delivery Services desde GitHub en [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 
 1. Inicie sesión en la instancia de creación de AEM as a Cloud Service, vaya a la consola Sitios y pulse o haga clic en **Crear** -> **Sitio a partir de una plantilla**.
 
@@ -141,7 +132,7 @@ Ahora que tiene un proyecto de GitHub, debe crear un nuevo sitio que el proyecto
 
    ![Importación de plantillas](assets/edge-dev-getting-started/site-templates.png)
 
-1. Cargue la plantilla del sitio de creación WYSIWYG con Edge Delivery Services que descargó de GitHub.
+1. Cargue la plantilla de sitio WYSIWYG authoring with Edge Delivery Services que descargó de GitHub.
 
    * La plantilla solo debe cargarse una vez. Una vez cargada, puede reutilizarse para crear sitios adicionales.
 
@@ -193,10 +184,10 @@ Una vez que haya terminado de editar el nuevo sitio con el editor universal, pue
 
 ## Siguientes pasos {#next-steps}
 
-Ahora que tiene un proyecto de creación WYSIWYG en funcionamiento con Edge Delivery Services, puede empezar a crear y diseñar sus propios bloques.
+Ahora que tiene un proyecto de WYSIWYG Authoring with Edge Delivery Services en funcionamiento, puede empezar a crear y diseñar sus propios bloques.
 
 Consulte la guía [Creación de bloques instrumentados para su uso con el editor universal](/help/edge/wysiwyg-authoring/create-block.md) para obtener más información.
 
 >[!TIP]
 >
->Para ver un tutorial completo sobre la creación de un nuevo proyecto de Edge Delivery Services habilitado para la creación WYSIWYG con AEM as a Cloud Service AEM como fuente de contenido, visite [este seminario web de GEMs de.](https://experienceleague.adobe.com/es/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Para ver un tutorial completo sobre la creación de un nuevo proyecto de Edge Delivery Services habilitado para la creación de WYSIWYG con AEM as a Cloud Service AEM como fuente de contenido, visite [este seminario web de GEMs de la red de trabajo de administración de contenido (GEMs) ](https://experienceleague.adobe.com/es/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).
