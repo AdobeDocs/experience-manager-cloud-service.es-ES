@@ -2,7 +2,8 @@
 title: Selector de recursos para [!DNL Adobe Experience Manager] como un [!DNL Cloud Service]
 description: Utilice el Selector de recursos para buscar, buscar y recuperar metadatos y representaciones de recursos en la aplicación.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 35%
@@ -19,7 +20,7 @@ La interfaz de usuario de Micro-Frontend está disponible en la experiencia de s
 
 El Selector de recursos ofrece muchas ventajas, como las siguientes:
 
-* Facilidad de integración con cualquiera de las aplicaciones de [Adobe](#integrate-asset-selector-adobe-app.md) o [que no son de Adobe](#integrate-asset-selector.md) que usan la biblioteca JavaScript de Vanilla.
+* Facilidad de integración con cualquiera de las aplicaciones de [Adobe](/help/assets/integrate-asset-selector-adobe-app.md) o [que no son de Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md) que usan la biblioteca JavaScript de Vanilla.
 * Son fáciles de mantener, ya que las actualizaciones del paquete del Selector de recursos se implementan automáticamente en el Selector de recursos disponible para su aplicación. No se requieren actualizaciones dentro de la aplicación para cargar las modificaciones más recientes.
 * Facilidad de personalización, ya que hay propiedades disponibles que controlan la visualización del Selector de recursos en la aplicación.
 * Filtros personalizados, de búsqueda de texto completo y listos para usar para navegar rápidamente a los recursos y utilizarlos en la experiencia de creación.
@@ -51,8 +52,8 @@ Utilice los requisitos previos anteriores si necesita el flujo de trabajo de aut
 
 **Ver más**
 
-* [Integración del Selector de recursos con una aplicación de Adobe](#integrate-asset-selector-adobe-app.md)
-* [Integración del Selector de recursos con una aplicación que no sea de Adobe](#integrate-asset-selector-non-adobe-app.md)
+* [Integración del Selector de recursos con una aplicación de Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
+* [Integración del Selector de recursos con una aplicación que no sea de Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
 * [Integrar las API de apertura de Dynamic Media Selector de recursos](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
@@ -124,7 +125,7 @@ El Selector de recursos también proporciona opciones de filtro listas para usar
 
 * **[!UICONTROL Estado]:** incluye el estado actual del recurso entre `all`, `approved`, `rejected` o `no status`.
 * **[!UICONTROL Tipo de archivo]:** incluye `folder`, `file`, `images`, `documents` o `video`.
-* **[!UICONTROL Estado de caducidad]:** menciona los recursos en función de su duración de caducidad. Puede marcar la casilla de verificación `[!UICONTROL Expired]` para filtrar los recursos que han caducado o establecer `[!UICONTROL Expiration Duration]` de un recurso para mostrar los recursos en función de su duración de caducidad. Cuando un recurso ya ha caducado o está a punto de caducar, aparece un distintivo que muestra lo mismo. Además, puede controlar si desea permitir el uso (o arrastrar y soltar) de un recurso caducado. Ver más sobre [personalizar recursos caducados](#asset-selector-customization.md#customize-expired-assets). De manera predeterminada, se muestra el distintivo **Vence pronto** para los recursos que caduquen en los próximos 30 días. Sin embargo, puede configurar la caducidad mediante la propiedad `expirationDate`.
+* **[!UICONTROL Estado de caducidad]:** menciona los recursos en función de su duración de caducidad. Puede marcar la casilla de verificación `[!UICONTROL Expired]` para filtrar los recursos que han caducado o establecer `[!UICONTROL Expiration Duration]` de un recurso para mostrar los recursos en función de su duración de caducidad. Cuando un recurso ya ha caducado o está a punto de caducar, aparece un distintivo que muestra lo mismo. Además, puede controlar si desea permitir el uso (o arrastrar y soltar) de un recurso caducado. Ver más sobre [personalizar recursos caducados](/help/assets/asset-selector-customization.md#customize-expired-assets). De manera predeterminada, se muestra el distintivo **Vence pronto** para los recursos que caduquen en los próximos 30 días. Sin embargo, puede configurar la caducidad mediante la propiedad `expirationDate`.
 
   >[!TIP]
   >

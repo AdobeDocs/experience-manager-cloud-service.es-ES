@@ -2,7 +2,8 @@
 title: Selector de recursos para [!DNL Adobe Experience Manager] como un [!DNL Cloud Service]
 description: Integre el selector de recursos con varias aplicaciones de Adobe, que no sean de Adobe y de terceros.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 3%
@@ -18,11 +19,11 @@ El Selector de recursos le permite integrarse utilizando varias aplicaciones de 
 
 Utilice los siguientes requisitos previos si integra el Selector de recursos con Dynamic Media con las funciones de OpenAPI:
 
-* [Métodos de comunicación](#overview-asset-selector.md#prereqs)
+* [Métodos de comunicación](/help/assets/overview-asset-selector.md#prereqs)
 * Para acceder a Dynamic Media con las funciones de OpenAPI, debe tener licencias para:
    * Repositorio de Assets (por ejemplo, Experience Manager Assets as a Cloud Service).
    * AEM Dynamic Media.
-* Solo hay [recursos aprobados](#approved-assets.md) disponibles para usar, lo que garantiza la coherencia de la marca.
+* Solo hay [recursos aprobados](/help/assets/approve-assets.md) disponibles para usar, lo que garantiza la coherencia de la marca.
 
 ## Integración de Dynamic Media con funciones de OpenAPI {#adobe-app-integration-polaris}
 
@@ -36,7 +37,7 @@ Las propiedades `rootPath` y `path` no deben formar parte de Dynamic Media con c
 aemTierType:[1: "delivery"]
 ```
 
-Esta configuración le permite ver todos los recursos aprobados sin carpetas o como una estructura plana. Para obtener más información, vaya a la propiedad `aemTierType` en [Propiedades del selector de recursos](#asset-selector-properties.md).
+Esta configuración le permite ver todos los recursos aprobados sin carpetas o como una estructura plana. Para obtener más información, vaya a la propiedad `aemTierType` en [Propiedades del selector de recursos](/help/assets/asset-selector-properties.md).
 
 
 ### Creación de una URL de envío dinámico a partir de recursos aprobados {#create-dynamic-media-url}

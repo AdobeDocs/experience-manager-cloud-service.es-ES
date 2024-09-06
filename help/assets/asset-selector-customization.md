@@ -2,13 +2,13 @@
 title: Selector de recursos para [!DNL Adobe Experience Manager] como un [!DNL Cloud Service]
 description: Utilice funciones para personalizar el selector de recursos en la aplicación.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1241'
 ht-degree: 24%
 
 ---
-
 
 # Personalizaciones del Selector de recursos {#asset-selector-customization}
 
@@ -21,7 +21,7 @@ El Selector de recursos le permite personalizar varios componentes según sus pr
 * [Personalizar recursos caducados](#customize-expired-assets)
 * [Filtro de invocación contextual](#contextual-invocation-filter)
 
-Debe definir los requisitos previos del archivo `index.html` o un archivo similar dentro de la implementación de la aplicación para definir los detalles de autenticación para acceder al repositorio [!DNL Experience Manager Assets]. Una vez finalizado, puede agregar fragmentos de código según sus necesidades.
+Debe definir los requisitos previos del archivo **index.html** o un archivo similar dentro de la implementación de la aplicación para definir los detalles de autenticación para acceder al repositorio [!DNL Experience Manager Assets]. Una vez finalizado, puede agregar fragmentos de código según sus necesidades.
 
 ## Personalizar panel de filtro {#customize-filter-panel}
 
@@ -186,12 +186,12 @@ En la tabla siguiente se describen algunas de las propiedades importantes del ob
 | *tiff:imageLength* | número | Altura de un recurso. |
 | *computedMetadata* | `Record<string, any>` | Un objeto que representa un cubo para todos los metadatos del recurso de todo tipo (repositorio, aplicación o metadatos incrustados). |
 | *_links* | `Record<string, any>` | Vínculos de hipermedia para el recurso asociado. Incluye vínculos para recursos como metadatos y representaciones. |
-| *_vínculos.<https://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | Matriz de objetos que contiene información sobre las representaciones del recurso. |
-| *_vínculos.<https://ns.adobe.com/adobecloud/rel/rendition[].href>* | cadena | URI de la representación. |
-| *_vínculos.<https://ns.adobe.com/adobecloud/rel/rendition[].type>* | cadena | Tipo MIME de la representación. |
-| *_vínculos.<https://ns.adobe.com/adobecloud/rel/rendition[].repo:size>&#39;* | número | El tamaño de la representación en bytes. |
-| *_vínculos.<https://ns.adobe.com/adobecloud/rel/rendition[].width>* | número | La anchura de la representación. |
-| *_vínculos.<https://ns.adobe.com/adobecloud/rel/rendition[].height>* | número | Altura de la representación. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition>`* | `Array<Object>` | Matriz de objetos que contiene información sobre las representaciones del recurso. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>`* | cadena | URI de la representación. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>`* | cadena | Tipo MIME de la representación. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].repo:size>`* | número | El tamaño de la representación en bytes. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>`* | número | La anchura de la representación. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>`* | número | Altura de la representación. |
 
 ### Gestión de la selección de recursos mediante el esquema de objetos {#handling-selection}
 

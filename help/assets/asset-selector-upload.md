@@ -2,13 +2,13 @@
 title: Selector de recursos para [!DNL Adobe Experience Manager] como un [!DNL Cloud Service]
 description: Utilice el selector de recursos para buscar, buscar y recuperar metadatos y representaciones de recursos en la aplicación.
 role: Admin,User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 1%
 
 ---
-
 
 # Cargar archivos y carpetas al Selector de recursos {#upload-files-folders}
 
@@ -28,13 +28,13 @@ Para agregar recursos al Selector de recursos, realice los siguientes pasos:
 
    También puede obtener una vista previa de las imágenes seleccionadas mediante las miniaturas y hacer clic en el icono X para eliminar cualquier imagen concreta de la lista. El icono X solo se muestra cuando pasa el ratón sobre el nombre o el tamaño de la imagen. También puede hacer clic en **[!UICONTROL Quitar todo]** para eliminar todos los elementos de la lista de carga.
 
-1. Para finalizar el proceso de carga, haz clic en **[!UICONTROL Cargar]**. Aparecerán los recursos cargados. Consulte [carga básica](asset-selector-customization.md#basic-upload) para ver el código que se puede configurar.
+1. Para finalizar el proceso de carga, haz clic en **[!UICONTROL Cargar]**. Aparecerán los recursos cargados. Consulte [carga básica](/help/assets/asset-selector-customization.md#basic-upload) para ver el código que se puede configurar.
 
 ## Carga de recursos con metadatos {#upload-assets-with-metadata}
 
-Puede añadir metadatos a los recursos mientras los carga inmediatamente en la aplicación. Los metadatos incluyen varios campos, como línea de asunto empresarial, detalles del producto, campaña, etc. Para ello, se utiliza la propiedad `metadataSchema`. Vaya a [propiedades del selector de recursos](asset-selector-properties.md) para obtener más información acerca de la propiedad `metadataSchema`.
+Puede añadir metadatos a los recursos mientras los carga inmediatamente en la aplicación. Los metadatos incluyen varios campos, como línea de asunto empresarial, detalles del producto, campaña, etc. Para ello, se utiliza la propiedad `metadataSchema`. Vaya a [propiedades del selector de recursos](/help/assets/asset-selector-properties.md) para obtener más información acerca de la propiedad `metadataSchema`.
 
-Consulte [cargar con metadatos](#upload-with-metadata) para ver el fragmento de código necesario para la configuración.
+Consulte [cargar con metadatos](/help/assets/asset-selector-customization.md#upload-with-metadata) para ver el fragmento de código necesario para la configuración.
 
 ![cargar recursos con metadatos](assets/upload-with-metadata.png)
 
@@ -51,7 +51,6 @@ Consulte [cargar con metadatos](#upload-with-metadata) para ver el fragmento de 
 
 ## Carga personalizada {#customize-upload}
 
-El Selector de recursos le permite agregar un formulario de carga personalizado. Hay varias personalizaciones disponibles. Por ejemplo, la propiedad [hideUploadButton](#asset-selector-properties.md) le permite ocultar el botón de carga que se muestra de forma predeterminada en la aplicación. En su lugar, puede personalizarlo para que se procese fuera de la aplicación MFE según sea necesario. Consulte [carga personalizada](#asset-selector-customization.md#customized-upload) para ver la configuración.
+El Selector de recursos le permite agregar un formulario de carga personalizado. Hay varias personalizaciones disponibles. Por ejemplo, la propiedad [hideUploadButton](/help/assets/asset-selector-properties.md) le permite ocultar el botón de carga que se muestra de forma predeterminada en la aplicación. En su lugar, puede personalizarlo para que se procese fuera de la aplicación MFE según sea necesario. Consulte [carga personalizada](/help/assets/asset-selector-customization.md#customized-upload) para ver la configuración.
 
 ![Carga personalizada](assets/customized-upload.png)
-
