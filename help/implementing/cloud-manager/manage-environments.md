@@ -1,23 +1,23 @@
 ---
-title: Administración de entornos
+title: Administrar entornos
 description: Obtenga información sobre los tipos de entornos que puede crear y cómo para su proyecto de Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9defb49b2639aa8945d1fed0332400b8ab5ced8c
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '2377'
-ht-degree: 70%
+source-wordcount: '2375'
+ht-degree: 65%
 
 ---
 
 
-# Administración de entornos {#managing-environments}
+# Administrar entornos {#managing-environments}
 
 Obtenga información sobre los tipos de entornos que puede crear y cómo para su proyecto de Cloud Manager.
 
-## Tipos de entornos {#environment-types}
+## Tipos de entorno {#environment-types}
 
 Un usuario con los permisos necesarios puede crear los siguientes tipos de entornos (dentro de los límites de lo que está disponible para el inquilino específico).
 
@@ -44,7 +44,7 @@ Para agregar o editar un entorno, un usuario debe ser miembro del rol **Propieta
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, toque o haga clic en el programa para el que desea agregar un entorno.
+1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, haga clic en el programa para el que desea agregar un entorno.
 
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, haga clic en **Agregar entorno** en la tarjeta **Entornos** para agregar un entorno.
 
@@ -58,7 +58,7 @@ Para agregar o editar un entorno, un usuario debe ser miembro del rol **Propieta
 
 1. En el cuadro de diálogo **Agregar entorno** que aparece:
 
-   * Seleccione un [**tipo de entorno**.](#environment-types)
+   * Seleccione un [**tipo de entorno**](#environment-types).
       * El número de entornos disponibles/utilizados se muestra entre paréntesis detrás del nombre de tipo de entorno.
    * Proporcione un **Nombre** del entorno.
       * El nombre del entorno no se puede cambiar una vez creado el entorno.
@@ -82,7 +82,7 @@ Un usuario con la función de **Propietario de empresa** puede configurar entorn
 >
 >Puede usar el complemento [API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) para consultar una lista actual de regiones disponibles.
 
-### Adición de varias regiones de publicación en un entorno nuevo {#add-regions}
+### Agregar varias regiones de publicación a un entorno nuevo {#add-regions}
 
 Al añadir un entorno nuevo, puede elegir configurar regiones adicionales además de la principal.
 
@@ -99,11 +99,11 @@ Al añadir un entorno nuevo, puede elegir configurar regiones adicionales ademá
 
 Las regiones seleccionadas se aplican a los entornos de producción y ensayo.
 
-Si no especifica ninguna región adicional, [puede hacerlo más adelante después de crear los entornos.](#edit-regions)
+Si no especifica ninguna región adicional, [puede hacerlo más tarde después de crear los entornos](#edit-regions).
 
 Si desea proporcionar [redes avanzadas](/help/security/configuring-advanced-networking.md) para el programa, se recomienda hacerlo antes de añadir regiones de publicación adicionales a los entornos mediante la API de Cloud Manager. De lo contrario, el tráfico de las regiones de publicación adicionales pasará a través del proxy de la región principal.
 
-### Edición de varias regiones de publicación {#edit-regions}
+### Editar varias regiones de publicación {#edit-regions}
 
 Si no ha especificado ninguna región adicional inicialmente, puede hacerlo después de crear los entornos si tiene los derechos necesarios.
 
@@ -153,7 +153,7 @@ También puede hacer clic en el botón de los tres puntos del entorno que desee 
 >
 >La tarjeta **Entornos** solo enumera tres entornos. Haga clic en el botón **Mostrar todo** como se describió anteriormente para ver todos los entornos del programa.
 
-### Acceso al servicio Vista previa {#access-preview-service}
+### Acceso al servicio de vista previa {#access-preview-service}
 
 Cloud Manager proporciona un servicio de vista previa (ofrecido como un servicio de publicación adicional) para cada entorno de AEM as a Cloud Service.
 
@@ -179,7 +179,7 @@ Una vez activado, puede publicar contenido en el servicio de vista previa median
 >
 >Su entorno debe estar en la versión `2021.05.5368.20210529T101701Z` de AEM o más reciente para utilizar el servicio de vista previa. Asegúrese de que la canalización de actualización se haya ejecutado correctamente en su entorno para que pueda utilizar el servicio de vista previa.
 
-### Estado de regiones de Publish adicionales {#additional-region-status}
+### Estado de las regiones de publicación adicionales {#additional-region-status}
 
 Si ha activado regiones de publicación adicionales, puede comprobar el estado de estas regiones desde la tarjeta **Entornos**.
 
@@ -209,7 +209,7 @@ Si hay algún problema con regiones de publicación adicionales:
 
 El tiempo que espera a que el sistema se recupere por sí solo antes de realizar acciones adicionales depende del impacto que el fallo de esa región tenga en sus sistemas.
 
-En cualquier caso, el tráfico de [ siempre se dirige a la otra región más cercana que está en línea.](/help/operations/additional-publish-regions.md) Si sigues teniendo problemas, ponte en contacto con el Servicio de atención al cliente de Adobe.
+En cualquier caso, el tráfico de [siempre se redirige a la otra región más cercana que está en línea](/help/operations/additional-publish-regions.md). Si sigue teniendo problemas, póngase en contacto con el Servicio de atención al cliente de Adobe.
 
 ## Actualizar entornos {#updating-dev-environment}
 
@@ -221,7 +221,7 @@ Sin embargo, las actualizaciones de los entornos de los programas de zonas prote
 
 ### Actualizaciones y canalizaciones {#updates-pipelines}
 
-Las canalizaciones son la única manera de [implementar código en los entornos de AEM as a Cloud Service.](deploy-code.md) Por este motivo, cada canalización está asociada a una versión de AEM particular.
+Las canalizaciones son la única manera de [implementar código en los entornos de AEM as a Cloud Service](deploy-code.md). AEM Por este motivo, cada canalización está asociada a una versión en particular de la.
 
 Si Cloud Manager detecta que hay una versión de AEM disponible más reciente que la implementada por última vez con la canalización, muestra el estado **Actualización disponible** para el entorno.
 
@@ -230,7 +230,7 @@ Por lo tanto, el proceso de actualización consta de dos pasos:
 1. Actualización de la canalización con la última versión AEM
 1. Ejecución de la canalización para implementar la nueva versión de AEM en un entorno
 
-### Actualizar entornos {#updating-your-environments}
+### Actualizar los entornos {#updating-your-environments}
 
 >[!NOTE]
 > A partir de 2024, las instancias de desarrollo y algunos programas de zonas protegidas ya se actualizan automáticamente, por lo que no es necesario administrar las actualizaciones para ellos manualmente. Como resultado de esta transición, es posible que la opción de Actualizar el entorno manualmente para instancias de desarrollo no esté disponible para _algunos_ de sus programas.
@@ -255,7 +255,7 @@ El comportamiento de la opción **Actualizar** varía según la configuración y
 * Si la canalización ya se está actualizando, la opción **Actualizar** informará al usuario de que ya se está ejecutando una actualización.
 * Si no existe una canalización adecuada, la opción **Actualizar** solicitará al usuario que cree una.
 
-## Eliminar entornos de desarrollo {#deleting-environment}
+## Eliminación de entornos de desarrollo {#deleting-environment}
 
 Un usuario con el rol **Administrador de implementación** o **Propietario del negocio** puede eliminar un entorno de desarrollo.
 
@@ -272,7 +272,7 @@ La opción Eliminar también está disponible en la pestaña **Entornos** de la 
 >* Los entornos de producción y ensayo creados en un programa de producción no se pueden eliminar.
 >* Se pueden eliminar los entornos de producción y ensayo de un programa de zona protegida.
 
-## Administrar el acceso {#managing-access}
+## Administrar acceso {#managing-access}
 
 Seleccione **Administrar el acceso** del menú de los tres puntos del entorno en la tarjeta **Entornos**. Puede navegar hasta la instancia de autor directamente y administrar el acceso para su entorno.
 
@@ -282,7 +282,7 @@ Seleccione **Administrar el acceso** del menú de los tres puntos del entorno en
 >
 >[Perfiles de producto y equipo de AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md): aprenda cómo los perfiles de producto y el equipo de AEM as a Cloud Service pueden conceder y limitar el acceso a sus soluciones con la licencia de Adobe.
 
-## Acceder a la consola de desarrollador {#accessing-developer-console}
+## Acceso a la consola de desarrollador {#accessing-developer-console}
 
 Seleccione **Consola de desarrollador** del menú de los tres puntos del entorno en la tarjeta **Entornos**. Se abre una nueva pestaña en el explorador con la página de inicio de sesión en **Developer Console**.
 
@@ -304,13 +304,13 @@ Además, puede iniciar sesión localmente desde la pestaña **Entornos** de la p
 
 ![Iniciar sesión localmente desde la pestaña Entornos](assets/environ-login-locally-2.png)
 
-## Administrar los nombres de dominio personalizados {#manage-cdn}
+## Administrar nombres de dominio personalizados {#manage-cdn}
 
 Los nombres de dominio personalizados se admiten en los programas de Cloud Manager para Sites tanto para los servicios de publicación como de vista previa.
 
 >[!TIP]
 >
->Para obtener más información, consulte el documento [Introducción a los nombres de dominio personalizados.](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+>Para obtener más información, consulte el documento [Introducción a los nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
 ## Administrar listas de IP permitidas {#manage-ip-allow-lists}
 
@@ -318,10 +318,10 @@ Las listas de IP permitidas son compatibles con Cloud Manager para los servicios
 
 Para administrar las listas de IP permitidas, navegue hasta la pestaña **Entornos** de la página **Información general** del programa. Haga clic en un entorno individual para poder administrar sus detalles.
 
-### Aplicar una lista de IP permitidas {#apply-ip-allow-list}
+### Aplicar una Lista de permitidos IP {#apply-ip-allow-list}
 
 La aplicación de una lista de permitidos IP asocia todos los rangos de IP incluidos en la definición de la lista de permitidos con un servicio de autor o publicación en un entorno.
 
 >[!TIP]
 >
->Para obtener más información, consulte el documento [Introducción a las Listas de permitidos IP.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>Para obtener más información, consulte el documento [Introducción a las Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).

@@ -4,10 +4,10 @@ description: AEM AEM Aprenda a utilizar la CDN administrada por el y a apuntar s
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
 workflow-type: tm+mt
-source-wordcount: '1555'
-ht-degree: 18%
+source-wordcount: '1603'
+ht-degree: 11%
 
 ---
 
@@ -19,18 +19,24 @@ ht-degree: 18%
 >title="CDN en AEM as a Cloud Service"
 >abstract="AEM as a Cloud Service se envía con una CDN integrada. Su objetivo principal es reducir la latencia mediante la entrega de contenido procesable desde los nodos de CDN en el extremo, cerca del explorador. Está completamente administrado y configurado para un rendimiento óptimo de las aplicaciones AEM."
 
-AEM as a Cloud Service se envía con una CDN integrada. Su objetivo principal es reducir la latencia mediante la entrega de contenido procesable desde los nodos de CDN en el extremo, cerca del explorador. Está completamente administrado y configurado para un rendimiento óptimo de las aplicaciones AEM.
+AEM as a Cloud Service viene con una CDN integrada, diseñada para reducir la latencia al ofrecer contenido almacenable en caché de nodos Edge cerca del explorador del usuario. AEM Esta CDN completamente administrada está optimizada para un rendimiento de aplicación de la.
 
-AEM La CDN administrada por el cliente satisface la mayoría de los requisitos de rendimiento y seguridad. Para el nivel de publicación, los clientes pueden apuntar opcionalmente a él desde su propia CDN, que deben administrar. Este escenario se permite caso por caso, en función del cumplimiento de ciertos requisitos previos que incluyen, entre otros, que el cliente tenga una integración heredada con su proveedor de CDN que sea difícil de abandonar.
+AEM La red de distribución de contenido (CDN) gestionada por el cliente satisface las necesidades de rendimiento y seguridad de la mayoría. Para el nivel de publicación, los clientes pueden elegir enrutar el tráfico a través de su propia CDN, que deben administrar. Esta opción está disponible caso por caso, especialmente cuando los clientes tienen integraciones heredadas existentes con un proveedor de CDN que son difíciles de reemplazar.
+
+Los clientes que deseen publicar en el nivel de Edge Delivery Services pueden aprovechar la CDN administrada de Adobe. Ver [CDN administrado por Adobe](#aem-managed-cdn). <!-- CQDOC-21758, 5b -->
+
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
-## AEM CDN administrado por el usuario  {#aem-managed-cdn}
+## CDN administrada por Adobe {#aem-managed-cdn}
 
-Siga las secciones a continuación para utilizar la interfaz de usuario de autoservicio de Cloud Manager AEM con el fin de prepararse para la entrega de contenido mediante el uso de CDN de forma predeterminada para el uso de la red de distribución de contenido (CDN) que se utiliza de forma predeterminada:
+<!-- CQDOC-21758, 5a -->
 
-1. [Administración de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-1. [Administrar los nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+AEM Con el fin de prepararse para la entrega de contenido mediante el uso de CDN integrada de Cloud Manager mediante el uso de la interfaz de usuario de autoservicio, puede aprovechar las funciones de CDN administradas por Adobe. Esta funcionalidad le permite gestionar la administración de CDN de autoservicio, incluida la configuración e instalación de certificados SSL como certificados DV (validación de dominio) o EV/OV (validación extendida/de organización). Para obtener más información sobre estos métodos, consulte lo siguiente:
+
+* [Administrar certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+* [Administrar nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+* [Compatibilidad con Edge Delivery Services en Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md)
 
 **Restricción de tráfico**
 
@@ -40,7 +46,7 @@ Consulte [administración de listas de IP permitidas](/help/implementing/cloud-m
 
 >[!CAUTION]
 >
->AEM Solo se atienden las solicitudes de las IP permitidas mediante CDN administradas administradas por la administración de la red de distribución de contenido (CDN) de la. AEM Si dirige su propia CDN a la CDN administrada por la CDN, asegúrese de que las IP de su CDN estén incluidas en la lista de permitidos.
+>AEM CDN administrada solo atiende solicitudes de direcciones IP permitidas. AEM Si dirige su propia CDN a la CDN administrada por la CDN, asegúrese de que las IP de su CDN estén incluidas en la Lista de permitidos IP.
 
 ### Configuración del tráfico en la CDN {#cdn-configuring-cloud}
 
@@ -51,15 +57,15 @@ Puede configurar el tráfico en la CDN de varias formas, entre ellas:
 * aplicando [redirecciones del lado del cliente](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) 301/302
 * AEM declarando [selectores de origen](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) para revertir el proxy de una solicitud a backends que no son de tipo de servidor
 
-Obtenga información sobre cómo configurar estas características mediante el uso de archivos YAML en Git y su implementación mediante la canalización [Config de Cloud Manager](/help/implementing/dispatcher/cdn-configuring-traffic.md).
+Utilice archivos YAML en Git para configurar estas funciones. Y use la [Canalización de configuración](/help/implementing/dispatcher/cdn-configuring-traffic.md) de Cloud Manager para implementarlos.
 
-### Configuración de páginas de error de CDN {#cdn-error-pages}
+### Configurar páginas de error de CDN {#cdn-error-pages}
 
-AEM Se puede configurar una página de error de CDN para anular la página predeterminada sin marca que se proporciona al explorador en el improbable evento de que no se pueda acceder a la página de error de CDNo. Para obtener más información, consulte [Configuración de páginas de error de CDN](/help/implementing/dispatcher/cdn-error-pages.md).
+Puede configurar una página de error de CDN para reemplazar la página predeterminada sin marca. AEM Esta página personalizada se muestra en el raro evento de que no esté disponible el servicio de correo electrónico de la página de inicio de sesión de. Para obtener más información, consulte [Configuración de páginas de error de CDN](/help/implementing/dispatcher/cdn-error-pages.md).
 
-### Depuración de contenido en caché en la CDN {#purge-cdn}
+### Purga del contenido en caché en la CDN {#purge-cdn}
 
-La configuración de TTL con el encabezado de HTTP de control de caché es un enfoque eficaz para equilibrar el rendimiento de la entrega de contenido y la actualización del mismo. Sin embargo, en situaciones en las que es esencial proporcionar inmediatamente contenido actualizado, puede resultar beneficioso depurar directamente la caché de CDN.
+La configuración de TTL con el encabezado de HTTP de control de caché es un enfoque eficaz para equilibrar el rendimiento de la entrega de contenido y la actualización del mismo. Sin embargo, en situaciones en las que es fundamental ofrecer contenido actualizado inmediatamente, puede resultar beneficioso depurar directamente la caché de CDN.
 
 Obtenga información sobre [configurar un token de API de depuración](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token) y [purgar contenido de CDN en caché](/help/implementing/dispatcher/cdn-cache-purge.md).
 
@@ -67,20 +73,20 @@ Obtenga información sobre [configurar un token de API de depuración](/help/imp
 
 Para casos de uso de autenticación ligera, incluidas las partes interesadas de la empresa que revisan el contenido, proteja el contenido mostrando un cuadro de diálogo de autenticación básico que requiera un nombre de usuario y una contraseña. [Más información](/help/implementing/dispatcher/cdn-credentials-authentication.md) y únete al programa de adopción anticipada.
 
-## La CDN del cliente apunta a la CDN administrada por AEM {#point-to-point-CDN}
+## AEM Los puntos de CDN administrados por el cliente a CDN administrada por el {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
 >title="La CDN del cliente apunta a una CDN administrada de AEM"
 >abstract="AEM as a Cloud Service ofrece una opción para que los clientes utilicen su CDN existente. Para el nivel de publicación, los clientes pueden apuntar opcionalmente a él desde su propia CDN, que deben administrar. Este escenario se permite caso por caso, en función del cumplimiento de ciertos requisitos previos que incluyen, entre otros, que el cliente tenga una integración heredada con su proveedor de CDN que sea difícil de abandonar."
 
-AEM Si un cliente debe utilizar su CDN existente, puede administrarla y dirigirla a la CDN administrada por el cliente, siempre que se cumplan las condiciones siguientes:
+AEM Si un cliente debe utilizar su CDN existente, puede administrarla y dirigirla a la CDN administrada por el administrador de la red de distribución de contenido (CDN), siempre que se cumplan las condiciones siguientes:
 
 * El cliente debe tener una CDN existente que sería oneroso reemplazar.
 * El cliente debe administrarlo.
 * El cliente debe poder configurar la CDN para que funcione con AEM as a Cloud Service; consulte las instrucciones de configuración que se presentan a continuación.
-* El cliente debe tener expertos en CDN de ingeniería que estén disponibles en caso de que surjan problemas relacionados.
-* El cliente debe realizar y superar correctamente una prueba de carga antes de ir a producción.
+* El cliente debe tener expertos en CDN de ingeniería que estén de guardia en caso de que surjan problemas relacionados.
+* El cliente debe realizar y aprobar correctamente una prueba de carga antes de ir a producción.
 
 Instrucciones de configuración:
 
@@ -88,9 +94,9 @@ Instrucciones de configuración:
 1. Configure SNI para la entrada de CDN de Adobe.
 1. Configure el encabezado Host en el dominio de origen. Por ejemplo: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. AEM Establezca el encabezado `X-Forwarded-Host` con el nombre de dominio para que pueda determinar el encabezado de host. Por ejemplo: `X-Forwarded-Host:example.com`.
-1. Establezca `X-AEM-Edge-Key`. El valor debe configurarse mediante una canalización de configuración de Cloud Manager, como se describe en [este artículo.](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)
+1. Establezca `X-AEM-Edge-Key`. El valor debe configurarse mediante una canalización de configuración de Cloud Manager, como se describe en [este artículo](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
-   * Necesario para que la CDN de Adobe AEM pueda validar el origen de las solicitudes y pasar los encabezados `X-Forwarded-*` a la aplicación de. Por ejemplo, `X-Forwarded-For` se usa para determinar la dirección IP del cliente. Por lo tanto, es responsabilidad del llamador de confianza (es decir, la CDN administrada por el cliente) garantizar la corrección de los encabezados `X-Forwarded-*` (consulte la nota a continuación).
+   * Necesario para que la CDN de Adobe AEM pueda validar el origen de las solicitudes y pasar los encabezados `X-Forwarded-*` a la aplicación de. Por ejemplo, `X-Forwarded-For` se usa para determinar la dirección IP del cliente. Por lo tanto, es responsabilidad del llamador de confianza (es decir, de la CDN administrada por el cliente) garantizar la corrección de los encabezados de `X-Forwarded-*` (consulte la nota a continuación).
    * Opcionalmente, el acceso a la entrada de CDN de Adobe se puede bloquear cuando `X-AEM-Edge-Key` no está presente. Informe al Adobe de si necesita acceso directo a la entrada de CDN de Adobe (que se debe bloquear).
 
 Consulte la sección [Configuraciones de proveedor de CDN de muestra](#sample-configurations) para ver ejemplos de configuración de los principales proveedores de CDN.
@@ -113,8 +119,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->Al utilizar su propia CDN, no es necesario instalar dominios y certificados en Cloud Manager. El enrutamiento en la CDN de Adobe se realiza utilizando el dominio predeterminado `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`, que debe enviarse en el encabezado de la solicitud `Host`. Si se sobrescribe el encabezado de la solicitud `Host` con un nombre de dominio personalizado, la CDN de Adobe puede enrutar la solicitud incorrectamente.
-
+>Al utilizar su propia CDN, no es necesario instalar dominios y certificados en Cloud Manager. El enrutamiento en la CDN de Adobe se realiza utilizando el dominio predeterminado `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`, que debe enviarse en el encabezado de la solicitud `Host`. Si se sobrescribe el encabezado de solicitud `Host` con un nombre de dominio personalizado, es posible que la solicitud se enrute incorrectamente a través de la CDN de Adobe.
 
 >[!NOTE]
 >
@@ -149,9 +154,9 @@ A continuación se presentan varios ejemplos de configuración de varios proveed
 
 ### Errores comunes {#common-errors}
 
-Las configuraciones de ejemplo proporcionadas muestran la configuración base necesaria, pero una configuración de cliente puede tener otras reglas de impacto que quiten, modifiquen o reorganicen los encabezados necesarios para que AEM as a Cloud Service sirva al tráfico. A continuación, se muestran errores comunes que se producen al configurar una CDN administrada por el cliente para que apunte a AEM as a Cloud Service.
+Las configuraciones de muestra proporcionadas muestran la configuración base necesaria. Sin embargo, una configuración de cliente puede tener otras reglas de impacto que quitan, editan o reorganizan los encabezados necesarios para que AEM as a Cloud Service sirva al tráfico. A continuación, se muestran errores comunes que se producen al configurar una CDN administrada por el cliente para que apunte a AEM as a Cloud Service.
 
-**Redirección al extremo del servicio de Publish**
+**Redirección al extremo del servicio de publicación**
 
 Cuando una solicitud recibe una respuesta 403 prohibida, significa que a la solicitud le faltan algunos encabezados obligatorios. Una causa común de esto es que la red de distribución de contenido (CDN) está administrando el tráfico de dominio Apex y `www`, pero no está agregando el encabezado correcto para el dominio `www`. Este problema se puede solucionar comprobando los registros de CDN de AEM as a Cloud Service y los encabezados de solicitud necesarios.
 
@@ -169,14 +174,14 @@ Para resolver este problema, evalúe la estrategia de redireccionamiento SSL, la
 
 ## Encabezados de geolocalización {#geo-headers}
 
-AEM La CDN gestionada por el grupo de usuarios agrega encabezados a cada solicitud con lo siguiente:
+AEM La CDN gestionada por el administrador agrega encabezados a cada solicitud con:
 
 * código de país: `x-aem-client-country`
 * código de continente: `x-aem-client-continent`
 
 >[!NOTE]
 >
->Si hay una CDN administrada por el cliente, estas cabeceras reflejan la ubicación del servidor proxy CDN de los clientes en lugar del cliente real. Por lo tanto, para la CDN administrada por el cliente, la CDN de los clientes debe administrar los encabezados de geolocalización.
+>Si hay una CDN administrada por el cliente, estas cabeceras reflejan la ubicación del servidor proxy CDN del cliente en lugar del cliente real. Los clientes deben administrar los encabezados de geolocalización a través de su propia CDN al utilizar una CDN administrada por el cliente.
 
 Los valores de los códigos de país son los códigos Alpha-2 que se describen en [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1).
 
@@ -190,4 +195,4 @@ Los valores de los códigos de continente son:
 * OC Oceanía
 * SA América del Sur
 
-Esta información puede resultar útil para casos de uso, como redirigir a una dirección URL diferente en función del origen (país) de la solicitud. Utilice el encabezado Vary para almacenar en caché las respuestas que dependen de la información geográfica. Por ejemplo, las redirecciones a una página de aterrizaje de un país específico siempre deben contener `Vary: x-aem-client-country`. Si es necesario, puede usar `Cache-Control: private` para evitar el almacenamiento en caché. Consulte también [Almacenamiento en caché](/help/implementing/dispatcher/caching.md#html-text).
+Esta información resulta útil para redirigir a una dirección URL diferente en función del país de origen de la solicitud. Utilice el encabezado Vary para almacenar en caché las respuestas que dependen de la información geográfica. Por ejemplo, las redirecciones a una página de aterrizaje de un país específico siempre deben contener `Vary: x-aem-client-country`. Si es necesario, puede usar `Cache-Control: private` para evitar el almacenamiento en caché. Consulte también [Almacenamiento en caché](/help/implementing/dispatcher/caching.md#html-text).

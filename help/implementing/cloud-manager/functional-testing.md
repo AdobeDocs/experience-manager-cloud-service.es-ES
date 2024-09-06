@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1373'
 ht-degree: 9%
@@ -97,7 +97,7 @@ Las pruebas se empaquetan en una imagen Docker diseñada para ser lo más volát
 >
 >AEM AEM Las pruebas de IU personalizadas se ejecutan en las canalizaciones de producción y de no producción (inclusión) que utiliza la aplicación de los cambios de las implementaciones de la aplicación y las actualizaciones push del producto, por lo que son una contribución clave para garantizar el funcionamiento adecuado de la aplicación y aumentar la seguridad de la versión. Las pruebas de interfaz de usuario del cliente también se ejecutan en canalizaciones de validación internas previas al lanzamiento para cada cliente, lo que ayuda a proporcionar comentarios tempranos.
 >
->Los contenedores que no son de Selenium deben ejecutar pruebas utilizando un proxy HTTP basado en las variables de entorno de la sección de pruebas de la interfaz de usuario [UI.](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
+>Los contenedores que no son de Selenium deben ejecutar pruebas utilizando un proxy HTTP basado en las variables de entorno de la [Sección de pruebas de interfaz de usuario](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing).
 
 Para mantener la eficiencia de las ejecuciones de canalización, recomendamos centrarse en las funciones clave y en los flujos de interacción principales del usuario. Se recomienda ejecutar los grupos de pruebas de IU completa que no caben en esta puerta de calidad como parte de las canalizaciones generales de validación de clientes durante el flujo de desarrollo del cliente.
 
@@ -111,7 +111,7 @@ La puerta de calidad de auditoría de experiencias está realizando [auditorías
 
 AEM Esta puerta de calidad la proporciona la aplicación de forma predeterminada, pero no bloquea las canalizaciones de implementación. De manera predeterminada, se realiza una auditoría en la página raíz (`/`) de la instancia de publicación. Puede contribuir configurando hasta 25 rutas personalizadas que se tienen en cuenta en las auditorías.
 
-Consulte [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md) para obtener más información.
+Consulte [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-dashboard.md) para obtener más información.
 
 ### Validaciones de clientes
 

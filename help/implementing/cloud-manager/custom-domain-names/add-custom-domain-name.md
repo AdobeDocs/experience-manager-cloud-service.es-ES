@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 35%
+source-wordcount: '702'
+ht-degree: 27%
 
 ---
 
@@ -19,11 +19,11 @@ Obtenga información sobre cómo agregar un nombre de dominio personalizado medi
 
 ## Requisitos  {#requirements}
 
-Debe cumplir estos requisitos antes de agregar un nombre de dominio personalizado en Cloud Manager.
+Complete estos requisitos antes de agregar un nombre de dominio personalizado en Cloud Manager.
 
-* Debe haber agregado un certificado SSL de dominio para el dominio que desea agregar antes de agregar un nombre de dominio personalizado como se describe en el documento [Agregar un certificado SSL.](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+* Debe haber agregado un certificado SSL de dominio para el dominio que desea agregar antes de agregar un nombre de dominio personalizado como se describe en el documento [Agregar un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 * Debe tener la función **Propietario del negocio** o **Administrador de implementación** para agregar un nombre de dominio personalizado en Cloud Manager.
-* Debe utilizar la CDN de Fastly.
+* Utilice la CDN de Fastly.
 
 ## Dónde agregar nombres de dominio personalizados {#where}
 
@@ -32,11 +32,11 @@ Puede agregar un nombre de dominio personalizado desde dos ubicaciones en Cloud 
 * [Desde la página Configuración de dominio](#adding-cdn-settings)
 * [Desde la página Entornos](#adding-cdn-environments)
 
-Al agregar un nombre de dominio personalizado, el dominio se proporcionará utilizando el certificado válido y más específico. Si varios certificados tienen el mismo dominio, se elige el actualizado más recientemente. El Adobe recomienda administrar los certificados de modo que no haya dominios superpuestos.
+Al agregar un nombre de dominio personalizado, el dominio se proporciona utilizando el certificado más específico y válido. Si varios certificados tienen el mismo dominio, se elige el actualizado más recientemente. El Adobe recomienda administrar los certificados de modo que no haya dominios superpuestos.
 
-Los pasos descritos en este documento se basan en Fastly. Si utiliza una CDN diferente, debe configurar el dominio con la CDN que ha elegido utilizar.
+Los pasos descritos en este documento se basan en Fastly. Si ha utilizado una CDN diferente, configure el dominio con la CDN que ha elegido utilizar.
 
-## Adición de un nombre de dominio personalizado desde la página Configuración de dominio {#adding-cdn-settings}
+## Agregar un nombre de dominio personalizado desde la página Configuración de dominio {#adding-cdn-settings}
 
 Siga estos pasos para agregar un nombre de dominio personalizado desde la página **Configuración de dominio**.
 
@@ -69,29 +69,29 @@ Siga estos pasos para agregar un nombre de dominio personalizado desde la págin
    ![Verificación del nombre del dominio](/help/implementing/cloud-manager/assets/cdn/cdn-create6.png)
 
    * La ficha **Verificación** describe los pasos siguientes para configurar el nombre de dominio personalizado, que está creando un registro TXT necesario.
-   * Puede hacerlo inmediatamente (antes de pulsar o hacer clic en **Crear** en el cuadro de diálogo) o después de pulsar o hacer clic en **Crear** en el cuadro de diálogo.
+   * Puede realizar este paso inmediatamente (antes de hacer clic en **Crear** en el cuadro de diálogo) o después de hacer clic en **Crear** en el cuadro de diálogo.
    * A continuación se describen las opciones y los pasos siguientes.
 
-1. Pulse o haga clic en **Crear** para guardar el nombre de dominio personalizado en Cloud Manager.
+1. Haga clic en **Crear** para guardar el nombre de dominio personalizado en Cloud Manager.
 
-Cloud Manager almacenará automáticamente en déclencheur una verificación TXT al seleccionar **Crear** en el paso de verificación del asistente **Agregar dominio personalizado**, por lo que se recomienda crear el registro TXT al crear el nombre de dominio personalizado en Cloud Manager. Sin embargo, esto no es obligatorio. Para las verificaciones posteriores, debe seleccionar el icono Verificar de nuevo situado junto al estado.
+Cuando selecciona **Crear** en el asistente **Agregar dominio personalizado**, Cloud Manager déclencheur una verificación TXT. Cree el registro TXT al configurar el nombre de dominio personalizado en Cloud Manager. Sin embargo, este paso no es obligatorio. Para las verificaciones posteriores, debe seleccionar el icono **Verificar de nuevo** junto al estado.
 
-El nombre no estará activo hasta que se añada la entrada TXT y Cloud Manager lo compruebe. La verificación TXT correcta se indica con el estado **Verificado e implementado**.
+El nombre no estará activo hasta que Cloud Manager verifique que se ha añadido y verificado la entrada TXT. El estado de **Verificado e implementado** indica que la verificación TXT se realizó correctamente.
 
-* Consulte [Añadir un registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) para obtener más información sobre los registros TXT.
-* Consulte [Comprobación del estado del nombre de dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obtener más información sobre cómo Cloud Manager verifica el nombre de dominio personalizado y su entrada TXT.
+* Consulte [Agregar un registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) para obtener más información sobre los registros TXT.
+* Consulte [Comprobar el estado del nombre de dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obtener más información sobre cómo Cloud Manager verifica el nombre de dominio personalizado y su entrada TXT.
 
-## Siguientes pasos {#next-steps}
+## Pasos siguientes {#next-steps}
 
-Una vez creado el nombre de dominio personalizado en Cloud Manager, debe agregar una entrada TXT para comprobar la propiedad del dominio. Continúe con el documento [Agregar un registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) para continuar configurando el nombre de dominio personalizado.
+Después de crear el nombre de dominio personalizado en Cloud Manager, agregue una entrada TXT para comprobar la propiedad del dominio. Continúe con el documento [Agregar un registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) para continuar configurando el nombre de dominio personalizado.
 
 ## Agregar un nombre de dominio personalizado desde la página Entornos {#adding-cdn-environments}
 
-Los pasos para agregar un nombre de dominio personalizado desde la página **Entornos** son los mismos que cuando [agrega un nombre de dominio personalizado desde la página Configuración de dominio,](#adding-cdn-settings), pero el punto de entrada difiere. Siga estos pasos para agregar un nombre de dominio personalizado desde la página **Entornos**.
+Los pasos para agregar un nombre de dominio personalizado desde la página **Entornos** son los mismos que cuando [agrega un nombre de dominio personalizado desde la página Configuración de dominio](#adding-cdn-settings), pero el punto de entrada difiere. Siga estos pasos para agregar un nombre de dominio personalizado desde la página **Entornos**.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
-1. Vaya a **Detalle de entornos** para el entorno de interés.
+1. Vaya a la página **Detalles de entornos** para el entorno de interés.
 
    ![Introducción del nombre de dominio en la página Detalles del entorno](/help/implementing/cloud-manager/assets/cdn/cdn-create4.png)
 
@@ -101,6 +101,6 @@ Los pasos para agregar un nombre de dominio personalizado desde la página **Ent
    1. Seleccione el certificado SSL asociado a este nombre en la lista desplegable.
    1. Haga clic en **+Agregar**.
 
-   ![Añadir nombre de dominio personalizado](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
+   ![Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
-1. Se abre el cuadro de diálogo **Agregar nombre de dominio** a la ficha **Nombre de dominio**. Continúe como lo haría para [agregar un nombre de dominio personalizado desde la página Configuración de dominio.](#adding-cdn-settings)
+1. El cuadro de diálogo **Agregar nombre de dominio** se abre a la ficha **Nombre de dominio**. Continúe como lo haría para [agregar un nombre de dominio personalizado desde la página Configuración de dominio](#adding-cdn-settings).

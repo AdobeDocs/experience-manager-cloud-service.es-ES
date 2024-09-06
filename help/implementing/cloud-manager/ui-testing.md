@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '2610'
 ht-degree: 79%
@@ -26,7 +26,7 @@ La prueba de IU personalizada es una característica opcional que le permite cre
 
 AEM ofrece un conjunto integrado de [Puertas de calidad de Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) para garantizar actualizaciones sin problemas en las aplicaciones personalizadas. En concreto, las puertas de pruebas de TI ya admiten la creación y automatización de pruebas personalizadas mediante las API de AEM.
 
-Las pruebas de IU se empaquetan en una imagen Docker para permitir una amplia variedad de lenguajes y marcos de trabajo (como Cypress, Selenium, Java y Maven, y JavaScript). AEM Además, se puede generar fácilmente un proyecto de pruebas de interfaz de usuario utilizando [el arquetipo del proyecto de la interfaz de usuario de la interfaz de usuario.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
+Las pruebas de IU se empaquetan en una imagen Docker para permitir una amplia variedad de lenguajes y marcos de trabajo (como Cypress, Selenium, Java y Maven, y JavaScript). AEM Además, se puede generar fácilmente un proyecto de pruebas de interfaz de usuario utilizando [el tipo de archivo del proyecto de la interfaz de usuario ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es).
 
 El Adobe fomenta el uso de Cypress, ya que ofrece recarga en tiempo real y espera automática, lo que ayuda a ahorrar tiempo y mejora la productividad durante las pruebas. Cypress también proporciona una sintaxis sencilla e intuitiva, lo que facilita el aprendizaje y el uso, incluso para aquellos que son nuevos en las pruebas.
 
@@ -342,7 +342,7 @@ Si no está vacío, el script de punto de entrada debe hacer lo siguiente:
    * Para comprobar la preparación, se pueden utilizar las variables de entorno `PROXY_HOST`, `PROXY_OBSERVABILITY_PORT`, `PROXY_RETRY_ATTEMPTS` y `PROXY_RETRY_DELAY`.
    * Puede comprobarlo usando una solicitud cURL, asegurándose de instalar cURL en su `Dockerfile`.
 
-Se puede encontrar una implementación de ejemplo en el punto de entrada del módulo de prueba de muestra de Cypress en [GitHub.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh)
+Se puede encontrar una implementación de ejemplo en el punto de entrada del módulo de prueba de muestra de Cypress en [GitHub](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh).
 
 ## Detalles específicos del dramaturgo
 

@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b2950c62c55942614e23d08b3bb96864d4112e8c
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 80%
+source-wordcount: '1499'
+ht-degree: 75%
 
 ---
 
@@ -37,8 +37,8 @@ La consola Mis programas proporciona información general de todos los programas
 1. [Barras de herramientas](#toolbars-my-programs-toolbars) para la selección de organizaciones, alertas y configuración de la cuenta.
 1. Pestañas que permiten alternar la vista actual de los programas.
    * Vista **Inicio** (predeterminada) que selecciona la vista **Mis programas** con información general de todos los programas
-   * **Licencia** que accede al [Tablero de licencias.](/help/implementing/cloud-manager/license-dashboard.md)
-   * Tenga en cuenta que las pestañas se cierran de forma predeterminada y se pueden mostrar mediante el menú de hamburguesa del [encabezado de Cloud Manager.](#cloud-manager-header)
+   * **Licencia** que accede al [Panel de licencias](/help/implementing/cloud-manager/license-dashboard.md).
+   * Tenga en cuenta que las pestañas se cierran de forma predeterminada y se pueden mostrar mediante el menú de hamburguesa del [encabezado de Cloud Manager](#cloud-manager-header).
 1. [Estadísticas y llamada a la acción](#statistics) para obtener una descripción general de su actividad reciente
 1. [**Sección Mis programas**](#my-programs-section) con información general de todos sus programas
 1. [Vínculos rápidos](#quick-links-section) para acceder fácilmente a los recursos relacionados
@@ -63,7 +63,7 @@ El primero es el encabezado de Cloud Manager, que es persistente mientras navega
 1. El selector de organización muestra la organización en la que está conectado actualmente (en este ejemplo, Foundation Internal). Toque o haga clic para cambiar a otra organización si su Adobe ID está asociado a varias.
 1. Al tocar o hacer clic en el conmutador de soluciones, puede ir rápidamente a otras soluciones de Experience Cloud.
 1. El icono de ayuda proporciona acceso rápido a los recursos de aprendizaje y asistencia.
-1. El icono de notificaciones se muestra con la cantidad de [notificaciones](/help/implementing/cloud-manager/notifications.md) incompletas asignadas actualmente.
+1. El icono de notificaciones está marcado con el número de [notificaciones](/help/implementing/cloud-manager/notifications.md) incompletas asignadas actualmente.
 1. Seleccione el icono que representa a su usuario para acceder a la configuración. Si no tiene una imagen de usuario configurada, se le asigna un icono de forma aleatoria.
 
 #### Barra de herramientas del programa {#program-toolbar}
@@ -183,7 +183,7 @@ La descripción general del programa le permite acceder a todos los detalles de 
 
 ### Barras de herramientas {#program-overview-toolbar}
 
-Las barras de herramientas para la información general del programa son muy similares a las de la [consola Mis programas.](#my-programs-toolbars) Aquí solo se ilustran las diferencias.
+Las barras de herramientas de la descripción general del programa son similares a las de la consola [Mis programas](#my-programs-toolbars). Aquí solo se ilustran las diferencias.
 
 #### Encabezado de Cloud Manager {#cloud-manager-header-2}
 
@@ -225,7 +225,7 @@ Utilice el menú de hamburguesa de la [Encabezado de Cloud Manager](#cloud-manag
 
 ### Llamada a la acción {#cta}
 
-La sección de llamada a la acción le proporcionará información útil según el estado del programa. Para un programa nuevo, puede ver los pasos siguientes ofrecidos, así como un recordatorio de una fecha de lanzamiento, [se configura durante la creación del programa.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+La sección de llamada a la acción le proporcionará información útil según el estado del programa. Para un programa nuevo, es posible que vea los pasos siguientes que se ofrecen, así como un recordatorio de una fecha de lanzamiento, [establecida durante la creación del programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
 ![Llamada a acción para un nuevo programa](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
@@ -251,7 +251,7 @@ Consulte el documento [Administración de canalizaciones](/help/implementing/clo
 
 ### Tarjeta de rendimiento {#performance}
 
-La tarjeta **Rendimiento** proporciona información general sobre el **[panel de CDN.](/help/implementing/cloud-manager/cdn-performance.md)**
+La tarjeta **Rendimiento** proporciona información general sobre el **[panel de CDN](/help/implementing/cloud-manager/cdn-performance.md)**.
 
 ![Tarjeta de rendimiento](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
 

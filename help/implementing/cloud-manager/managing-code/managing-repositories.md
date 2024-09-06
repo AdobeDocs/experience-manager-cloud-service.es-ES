@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo crear, ver y eliminar repositorios
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 100%
+source-wordcount: '621'
+ht-degree: 92%
 
 ---
 
@@ -71,17 +71,17 @@ Cloud Manager admite ambos repositorios administrados por Adobe (**Repositorio d
 
 ## Acceder a la info del repositorio {#repo-info}
 
-Cuando vea sus repositorios en la ventana **Repositorios**, puede ver los detalles sobre cómo acceder programáticamente a los repositorios administrados por Adobe pulsando o haciendo clic en el botón **Acceder a la info del repositorio** en la barra de herramientas.
+Al ver los repositorios en la ventana **Repositorios**, puede ver los detalles sobre cómo acceder mediante programación a los repositorios administrados por Adobe haciendo clic en el botón **Acceder a la info del repositorio** de la barra de herramientas.
 
 ![Información del repositorio](assets/repo-info.png)
 
-La ventana **Información del repositorio** se abre con los detalles. Para obtener más información sobre el acceso a la información del repositorio, consulte el documento [Acceso a la información del repositorio.](accessing-repos.md)
+La ventana **Información del repositorio** se abre con los detalles. Para obtener más información sobre el acceso a la información del repositorio, consulte el documento [Acceso a la información del repositorio](accessing-repos.md).
 
 ## Comprobar ramas/Crear proyecto {#check-branches}
 
 La acción **Comprobar ramas/Crear proyecto** realiza dos funciones según el estado del repositorio.
 
-* Si el repositorio es de nueva creación, la acción crea un proyecto de ejemplo basado en [el tipo de archivo del proyecto de AEM.](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/overview)
+* Si el repositorio es de nueva creación, la acción crea un proyecto de ejemplo basado en [el tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/overview).
 * Si al repositorio ya se le ha creado el proyecto de muestra, compruebe el estado del repositorio y sus ramas e informes de nuevo si el proyecto de muestra ya existe.
 
 ![Acción Comprobar ramas](assets/check-branches.png)

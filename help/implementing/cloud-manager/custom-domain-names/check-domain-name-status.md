@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0c9328dc5be8f0a5e0924d0fc2ec59c9fce4141b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '826'
-ht-degree: 62%
+ht-degree: 64%
 
 ---
 
@@ -21,7 +21,7 @@ Obtenga información sobre cómo determinar si Cloud Manager ha verificado corre
 
 Debe cumplir estos requisitos antes de comprobar el estado de su nombre de dominio en Cloud Manager.
 
-* Primero debe agregar un registro TXT para el dominio personalizado como se describe en el documento [Agregar un registro TXT.](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
+* Primero debe agregar un registro TXT para su dominio personalizado como se describe en el documento [Agregar un registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md).
 
 ## Cómo comprobar el estado del nombre de dominio personalizado {#how-to}
 
@@ -41,7 +41,7 @@ Se muestra el detalle del estado. Su dominio personalizado está listo para usar
 
 >[!NOTE]
 >
->Cloud Manager guardará automáticamente en déclencheur la verificación cuando seleccione **Crear** en el paso de verificación del asistente **Agregar dominio personalizado** al [agregar un nuevo nombre de dominio personalizado a Cloud Manager.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) Para las verificaciones subsiguientes, debe seleccionar el icono Verificar de nuevo situado junto al estado.
+>Cloud Manager guardará automáticamente en déclencheur la verificación cuando seleccione **Crear** en el paso de verificación del asistente **Agregar dominio personalizado** al [agregar un nuevo nombre de dominio personalizado a Cloud Manager](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). Para las verificaciones posteriores, debe seleccionar el icono Verificar de nuevo situado junto al estado.
 
 ## Explicación de los estados de verificación {#statuses}
 

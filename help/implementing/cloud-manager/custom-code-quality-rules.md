@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 51fa6e0fe56b1d5f0d8ada6bd2335175d603bc8c
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '4513'
-ht-degree: 87%
+ht-degree: 84%
 
 ---
 
@@ -645,7 +645,7 @@ Consulte la [documentación de indexación](/help/operations/indexing.md#prepari
 * **Gravedad**: Bloqueador
 * **Desde**: 2021.8.0
 
-Los índices Oak del tipo `lucene` siempre deben estar indexado asincrónicamente. Si no es así, puede causar inestabilidad en el sistema. Puede encontrar más información sobre la estructura de los índices de Lucene en la [Documentación de Oak.](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition)
+Los índices Oak del tipo `lucene` siempre deben estar indexado asincrónicamente. Si no es así, puede causar inestabilidad en el sistema. Encontrará más información sobre la estructura de los índices Lucene en la [documentación de Oak](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition).
 
 #### Código no conforme {#non-compliant-code-indexasync}
 
@@ -897,7 +897,7 @@ La herramienta de migración en el [Repositorio de GitHub de Experience Manager 
 
 Si bien el uso de plantillas estáticas siempre ha sido muy común en proyectos de Experience Manager, Adobe recomienda el uso de plantillas editables, ya que proporcionan la mayor flexibilidad y admiten funciones adicionales que no están presentes en las estáticas. Encontrará más información en el documento [Plantillas de páginas](/help/implementing/developing/components/templates.md).
 
-La migración de plantillas estáticas a editables se puede automatizar en gran medida mediante las [Herramientas de modernización de Experience Manager.](https://opensource.adobe.com/aem-modernize-tools/)
+La migración de plantillas estáticas a editables se puede automatizar en gran medida mediante [Herramientas de modernización de Experience Manager](https://opensource.adobe.com/aem-modernize-tools/).
 
 ### Se desaconseja el uso de componentes de base heredados {#oakpal-usage-legacy}
 
@@ -908,7 +908,7 @@ La migración de plantillas estáticas a editables se puede automatizar en gran 
 
 Los componentes de base heredados (es decir, los componentes de `/libs/foundation`) se han quedado obsoletos para varias versiones de Experience Manager en favor de los componentes principales. Se desaconseja el uso de los componentes de base como base para los componentes personalizados (ya sea por superposición o por herencia) y se debe convertir a los componentes principales correspondientes.
 
-Esta conversión se puede facilitar mediante las [Herramientas de modernización de Experience Manager.](https://opensource.adobe.com/aem-modernize-tools/)
+Esta conversión se puede facilitar mediante las [Herramientas de modernización del Experience Manager](https://opensource.adobe.com/aem-modernize-tools/).
 
 ### Usar solo nombres y órdenes de modo de ejecución admitidos {#oakpal-supported-runmodes}
 
@@ -953,7 +953,7 @@ Pueden producirse problemas difíciles de solucionar cuando un nodo de definici�
 * **Gravedad**: Menor
 * **Desde**: Versión 2021.2.0
 
-Un nodo de definición de índice de búsqueda personalizada definido correctamente debe contener un nodo secundario denominado `indexRules` que, a su vez, debe tener al menos un secundario. Puede encontrar más información en la [documentación de Oak.](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+Un nodo de definición de índice de búsqueda personalizada definido correctamente debe contener un nodo secundario denominado `indexRules` que, a su vez, debe tener al menos un secundario. Puede encontrar más información en la [documentación de Oak](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
 ### Los nodos de definición de índices de búsqueda personalizada deben seguir las convenciones de nombres {#oakpal-custom-search-definitions}
 
@@ -1207,7 +1207,7 @@ AEM Cloud Service prohíbe que las definiciones de índice de búsqueda personal
 
 >[!WARNING]
 >
->Se le insta a abordar este asunto lo antes posible, ya que hará que las canalizaciones fallen a partir de la [versión de agosto de 2024 de Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+>Se le recomienda encarecidamente que resuelva esto lo antes posible, ya que provocará errores en las canalizaciones a partir de la [versión de Cloud Manager de agosto de 2024](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### La definición de índice de texto completo personalizada del tipo damAssetLucene debe llevar correctamente el prefijo “damAssetLucene” {#oakpal-dam-asset-lucene}
 
@@ -1220,7 +1220,7 @@ AEM Cloud Service prohíbe que las definiciones de índice de texto completo per
 
 >[!WARNING]
 >
->Se le insta a abordar este asunto lo antes posible, ya que hará que las canalizaciones fallen a partir de la [versión de agosto de 2024 de Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+>Se le recomienda encarecidamente que resuelva esto lo antes posible, ya que provocará errores en las canalizaciones a partir de la [versión de Cloud Manager de agosto de 2024](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### Los nodos de definición de índice no deben contener propiedades con el mismo nombre {#oakpal-index-property-name}
 
@@ -1233,7 +1233,7 @@ AEM Cloud Service prohíbe que las definiciones de índice de búsqueda personal
 
 >[!WARNING]
 >
->Se le insta a abordar este asunto lo antes posible, ya que hará que las canalizaciones fallen a partir de la [versión de agosto de 2024 de Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+>Se le recomienda encarecidamente que resuelva esto lo antes posible, ya que provocará errores en las canalizaciones a partir de la [versión de Cloud Manager de agosto de 2024](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### Está prohibido personalizar ciertas definiciones de índice OOTB {#oakpal-customizing-ootb-index}
 
@@ -1253,7 +1253,7 @@ AEM Cloud Service prohíbe las modificaciones no autorizadas de los siguientes �
 
 >[!WARNING]
 >
->Se le insta a abordar este asunto lo antes posible, ya que hará que las canalizaciones fallen a partir de la [versión de agosto de 2024 de Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+>Se le recomienda encarecidamente que resuelva esto lo antes posible, ya que provocará errores en las canalizaciones a partir de la [versión de Cloud Manager de agosto de 2024](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### La configuración de los tokenizadores en los analizadores debe crearse con el nombre “tokenizador” {#oakpal-tokenizer}
 
@@ -1266,9 +1266,9 @@ AEM Cloud Service prohíbe la creación de tokenizers con nombres incorrectos en
 
 >[!WARNING]
 >
->Se le insta a abordar este asunto lo antes posible, ya que hará que las canalizaciones fallen a partir de la [versión de agosto de 2024 de Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+>Se le recomienda encarecidamente que resuelva esto lo antes posible, ya que provocará errores en las canalizaciones a partir de la [versión de Cloud Manager de agosto de 2024](/help/implementing/cloud-manager/release-notes/current.md).
 
-### La Configuración De Las Definiciones De Indexación No Debe Contener Espacios {#oakpal-indexing-definitions-spaces}
+### La configuración de las definiciones de indexación no debe contener espacios {#oakpal-indexing-definitions-spaces}
 
 * **Clave**: PathSpacesCheck
 * **Tipo**: mejora

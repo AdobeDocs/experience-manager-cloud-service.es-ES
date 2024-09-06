@@ -1,60 +1,52 @@
 ---
-title: Notas de la versión para Cloud Manager 2024.8.0 en Adobe Experience Manager as a Cloud Service
-description: Obtenga información sobre las notas de la versión para Cloud Manager 2024.8.0 en AEM as a Cloud Service.
+title: Notas de la versión para Cloud Manager 2024.9.0 en Adobe Experience Manager as a Cloud Service
+description: Obtenga información acerca de las notas de la versión para Cloud Manager 2024.9.0 en AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: a823bcd1461b847983d0243cd9abd59efd8d7b6f
-workflow-type: ht
-source-wordcount: '465'
-ht-degree: 100%
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+workflow-type: tm+mt
+source-wordcount: '332'
+ht-degree: 22%
 
 ---
 
+# Notas de la versión para Cloud Manager 2024.9.0 en Adobe Experience Manager as a Cloud Service {#release-notes}
 
-# Notas de la versión para Cloud Manager 2024.8.0 en Adobe Experience Manager as a Cloud Service {#release-notes}
-
-Esta página documenta las notas de la versión 2024.8.0 para Cloud Manager en AEM as a Cloud Service.
+Esta página documenta las notas de la versión 2024.9.0 para Cloud Manager en AEM as a Cloud Service.
 
 >[!NOTE]
 >
->Consulte [esta página](/help/release-notes/release-notes-cloud/release-notes-current.md) para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service.
+>Ver las [notas de la versión actual de Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de Cloud Manager 2024.8.0 en AEM as a Cloud Service es el 14 de agosto de 2024. La próxima versión está planificada para el 14 de septiembre de 2024.
+La fecha de lanzamiento de Cloud Manager 2024.9.0 en AEM as a Cloud Service es el viernes, 05 de septiembre de 2024. La próxima versión está planificada para el viernes, 03 de octubre de 2024.
 
 ## Novedades {#what-is-new}
 
-* [Ya hay disponibles regiones de publicación adicionales](/help/operations/additional-publish-regions.md) y un [99,99 % de SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) (contrato de nivel de servicio) para AEM Forms as a Cloud Service.
-   * Esta mejora le permite lograr mayores SLA con un mayor tiempo de actividad y una menor latencia, lo que garantiza las mejores experiencias de su clase para los usuarios distribuidos globalmente.
+* **Panel de auditoría de experiencias:**
 
-## Programa para primeros usuarios {#early-adoption}
+  Adobe El [tablero mejorado de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-dashboard.md) de Cloud Manager, con tecnología Google Lighthouse, proporciona información sobre la calidad y el rendimiento de AEM Sites mediante la evaluación de los elementos vitales de la web, la optimización de los motores de búsqueda y las métricas de accesibilidad. Ayuda a los usuarios a identificar áreas para mejorar mediante la oferta de recomendaciones procesables, lo que permite a los equipos mejorar la experiencia del usuario, los tiempos de carga de las páginas y el cumplimiento del sitio. AEM Este tablero simplifica la monitorización de las métricas críticas del sitio y garantiza que las aplicaciones de la cumplan con los estándares de alto rendimiento y accesibilidad.
 
-Para tener la oportunidad de probar algunas de las próximas funciones, forme parte del programa de adopción anticipada de Adobe.
+* **Certificados de validación de dominio administrados y generados por el Adobe:**
 
-### Compatibilidad con Edge Delivery Services en Cloud Manager {#edge-delivery-services}
+  Con Cloud Manager, ahora puede [generar y administrar certificados SSL DV (validación de dominio) de Adobe de autoservicio](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). Esta capacidad le ofrece la solución más rápida, sencilla y rentable para crear un sitio web seguro para su organización o negocio en línea. <!-- CMGR-52403 -->
 
-Si tiene licencia para Edge Delivery Services como parte de AEM Sites, [ahora puede integrar su sitio con Edge Delivery Services directamente en Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md) y publicarlo con una experiencia de autoservicio guiada.
+* **Compatibilidad con Edge Delivery Services en Cloud Manager:**
 
-Esta capacidad proporciona una experiencia unificada para todas las propiedades de AEM. Garantiza la coherencia en flujos de trabajo críticos, como la administración de nombres de dominio, la administración de certificados SSL y las asignaciones de CDN.
+  Si tienes licencia de Edge Delivery Services como parte de AEM Sites, [ahora puedes incorporar tu sitio con Edge Delivery Services directamente a través de Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md). Esta función permite una experiencia de autoservicio y guiada en el lanzamiento. AEM También unifica los flujos de trabajo esenciales, como la administración de nombres de dominio, los certificados SSL y las asignaciones de CDN en todas las propiedades de la, lo que garantiza la coherencia y la eficacia. <!-- CMGR-49859 -->
 
-Si le interesa probar esta nueva funcionalidad y compartir sus comentarios, envíe un correo electrónico a `aemcs-cmedgedelsvs-program-adopter@adobe.com` desde su dirección de correo electrónico asociada a su Adobe ID. 
+* Los clientes que utilizan repositorios de GitHub ahora tienen la capacidad de crear y utilizar canalizaciones de configuración de nivel web. <!--( KEEP IN? SP: YES CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 ) -->
 
-### Certificados validados por dominio (DV)
+<!--
+## Early adoption program {#early-adoption}
 
-Cloud Manager ahora le permite [generar y administrar certificados SSL validados por dominio (DV) de autoservicio](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md). Esto le proporciona la solución más rápida, sencilla y rentable para crear un sitio web seguro para su negocio en línea.
+For a chance to test some upcoming features, be a part of Adobe's early adoption program. -->
 
-Si le interesa probar esta nueva funcionalidad y compartir sus comentarios, envíe un correo electrónico a `Grp-aemcs-dv-dert-adopter@adobe.com` desde su dirección de correo electrónico asociada a su Adobe ID. 
-
-### Tablero de auditoría de experiencias {#experience-audit-dashboard}
-
-[El tablero de auditoría de experiencias de Cloud Manager](/help/implementing/cloud-manager/experience-audit-dashboard.md) incluye una vista de tendencias de las puntuaciones de rendimiento de la página, junto con perspectivas y recomendaciones para ayudarle a mejorarlas. La auditoría de experiencias se incluye como paso en la canalización de producción de Cloud Manager.
-
-El tablero utiliza Google Lighthouse, una herramienta automatizada de código abierto para mejorar la calidad de sus aplicaciones web. Puede ejecutarlo en cualquier página web, pública o que requiera autenticación. Proporciona evaluaciones de rendimiento, accesibilidad, aplicaciones web progresivas, SEO y más.
-
-¿Está interesado en probar el nuevo tablero? Para empezar, envíe un correo electrónico a `aem-lighthouse-pilot@adobe.com` usando el correo electrónico vinculado a su Adobe ID.
 
 ## Corrección de errores
 
-* Se ha corregido un problema poco habitual en el que los pasos de la canalización se ejecutaban después de eliminarse.
-* Se ha corregido un problema con las canalizaciones de configuración que mostraban incorrectamente un estado `FAILED` en casos excepcionales.
+* La paginación de la vista de tabla de certificados SSL ahora funciona según lo esperado. <!-- (CMGR-60804 - [UI] Pagination doesn't work for ssl certificates) -->
+* Se promocionó una versión incorrecta del artefacto al usar el botón **Promocionar compilación** de una ejecución. <!-- ( KEEP IN? SP: YES CMGR-59519 and Slack https://cq-dev.slack.com/archives/C07LFPN2R08/p1725408253474129 ) -->
+
+<!-- * Slack message says next release? SP: REMOVE (Leave in for now) SSL Certificates table in Cloud Manager now enables pagination in the user experience. ( https://jira.corp.adobe.com/browse/CMGR-61041 and Slack https://cq-dev.slack.com/archives/C07LFRE9QJU/p1725408553760009 ) --<>

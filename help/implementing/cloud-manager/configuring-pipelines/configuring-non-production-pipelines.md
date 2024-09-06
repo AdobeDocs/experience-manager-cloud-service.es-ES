@@ -6,9 +6,9 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1402'
 ht-degree: 75%
 
 ---
@@ -103,7 +103,7 @@ Para finalizar la configuración de la canalización de no producción de códig
       * **Prueba funcional del producto**: ejecutar [pruebas funcionales del producto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) contra el entorno de desarrollo.
       * **Pruebas funcionales personalizadas**: ejecutar [pruebas funcionales personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) contra el entorno de desarrollo.
       * **Pruebas de IU personalizadas**: ejecutar [pruebas de IU personalizadas](/help/implementing/cloud-manager/ui-testing.md) para aplicaciones personalizadas.
-      * **Auditoría de experiencias** - Ejecutar [Auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md)
+      * **Auditoría de experiencias** - Ejecutar [Auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-dashboard.md)
 
    ![Canalización de pila completa](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
@@ -152,13 +152,13 @@ Los pasos para completar la creación de la canalización de implementación de 
    * **Rama de Git**: esta opción define desde qué rama de la canalización seleccionada debe recuperar el código.
       * Introduzca los primeros caracteres del nombre de la rama y la función de autocompletar de este campo. Encuentra las ramas coincidentes que puede seleccionar.
    * **Ubicación del código**: esta opción define la ruta en la rama de la repo seleccionada desde la que la canalización debe recuperar el código.
-   * **Canalización**: para las canalizaciones front-end que no sean de producción, tiene la opción de habilitar **[Auditoría de experiencias.](/help/implementing/cloud-manager/experience-audit-testing.md)**
+   * **Canalización**: para las canalizaciones front-end que no sean de producción, tiene la opción de habilitar **[Auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-dashboard.md)**.
 
    ![Canalización de configuración](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
 1. Si habilitaste la auditoría de experiencias, toca o haz clic en **Continuar** para avanzar a la pestaña **Auditoría de experiencias**, donde puedes definir las rutas que siempre se deben incluir en la auditoría de experiencias.
 
-   * Si habilitaste **Auditoría de experiencias**, consulta el documento [Auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) para obtener detalles sobre cómo configurarla.
+   * Si habilitó **Auditoría de experiencias**, consulte el documento [Auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-dashboard.md) para obtener detalles sobre cómo configurar.
    * Si no lo ha hecho, omita este paso.
 
 1. Toque o haga clic en **Guardar** para guardar la canalización.

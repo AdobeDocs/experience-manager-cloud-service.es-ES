@@ -5,25 +5,25 @@ exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
-workflow-type: ht
-source-wordcount: '1292'
-ht-degree: 100%
+source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
+workflow-type: tm+mt
+source-wordcount: '1295'
+ht-degree: 75%
 
 ---
 
 
 # Recorrido de la incorporación {#onboarding-journey}
 
-¡Felicidades por elegir AEM as a Cloud Service! Este documento es el punto de partida para un recorrido guiado a través del proceso de incorporación. Tanto si va a implementar una aplicación nueva como si va a migrar una existente, este recorrido de incorporación garantiza que sus equipos estén configurados y tengan acceso a AEM as a Cloud Service.
+¡Felicidades por elegir AEM as a Cloud Service! Este documento es el punto de partida para un recorrido guiado a través del proceso de incorporación. Tanto si va a implementar una aplicación nueva como si va a migrar una existente, este recorrido de incorporación configura los equipos. Esto garantiza que tengan acceso a AEM as a Cloud Service.
 
 ## Introducción {#introduction}
 
-Adobe Experience Manager es un potente conjunto de servicios de contenido de composición que ofrece rápidamente experiencias personalizadas y de gran impacto en cualquier canal, desbloqueando contenido para todos.  **Edge Delivery Services** es la última innovación de Adobe Experience Manager que permite una velocidad de contenido extrema y ofrece experiencias excepcionales. Obtenga información sobre cómo empezar a trabajar con Edge Delivery Services consultando [Información general de Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html). Para comprender cómo usar Edge Delivery Services, consulte la página [Tutorial para desarrolladores](https://www.hlx.live/developer/tutorial).
+Adobe Experience Manager es un potente conjunto de servicios de contenido de composición que ofrece rápidamente experiencias personalizadas y de gran impacto en cualquier canal, desbloqueando contenido para todos.  **Edge Delivery Services** es la última innovación de Adobe Experience Manager que permite una velocidad de contenido extrema y ofrece experiencias excepcionales. Obtenga información sobre cómo empezar a trabajar con Edge Delivery Services consultando [Información general de Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview). Para comprender cómo usar Edge Delivery Services, consulte la página [Tutorial para desarrolladores](https://www.aem.live/developer/tutorial).
 
 La incorporación es el proceso durante el cual un administrador designado del sistema configura AEM as a Cloud Service para su organización. Esto incluye el aprovisionamiento inicial de recursos en la nube y la asignación de usuarios a funciones en función de sus responsabilidades laborales. Como resultado, cada miembro puede iniciar sesión y acceder a sus recursos de AEM as a Cloud Service.
 
-![El recorrido de incorporación](/help/journey-onboarding/assets/onboarding-journey.png)
+![El recorrido de incorporación](/help/journey-onboarding/assets/onboarding-journey.png).
 
 Esta guía le llevará por los temas más importantes de la incorporación para que, al completarla, tenga lo siguiente:
 
@@ -44,38 +44,38 @@ Aunque puede parecer que hay mucho que aprender cuando se empieza con AEM as a C
 * **Admin Console**: aquí es donde se administran los usuarios y se asignan las funciones.
 * **Cloud Manager**: esta es la herramienta para configurar recursos como programas y entornos. También es donde puede acceder a Git y crear canalizaciones para administrar e implementar su código personalizado.
 
-Estos conceptos se detallarán en este recorrido de incorporación. El objetivo es que al final del recorrido haya conseguido lo siguiente:
+Estos conceptos se detallarán en este recorrido de incorporación. El objetivo es que al final del recorrido, pueda hacer lo siguiente:
 
-* Ha concedido el acceso necesario al usuario para que pueda acceder a AEM as a Cloud Service.
-* Haya configurado los primeros recursos de nube para su proyecto.
+* Conceder acceso al usuario necesario a AEM as a Cloud Service.
+* Configure los primeros recursos de la nube para su proyecto.
 * Sepa cómo implementar su primer código y crear su primer contenido.
 
 Básicamente, empezará ejecutando su nuevo proyecto AEM as a Cloud Service.
 
 ## Audiencia {#audience}
 
-El recorrido de incorporación está escrito específicamente para el **administrador del sistema** de los clientes nuevos de AEM as a Cloud Service y de AEM en general. El administrador del sistema es la primera persona con la que Adobe contacta después de que se firme su contrato de AEM as a Cloud Service. Normalmente, es la primera persona en acceder a sus recursos y configurarlos en AEM as a Cloud Service. Si está leyendo este tema, es probable que usted sea el administrador del sistema.
+El recorrido de incorporación está escrito específicamente para el **administrador del sistema** de los clientes que son nuevos en AEM as a Cloud Service AEM y en general en el mundo de la. El administrador del sistema es la persona que se pone en contacto con el Adobe primero después de firmar el contrato de AEM as a Cloud Service. Normalmente, es la primera persona en acceder a sus recursos y configurarlos en AEM as a Cloud Service. Si está leyendo este tema, es probable que usted sea el administrador del sistema.
 
 El administrador del sistema administra todos los aspectos de los usuarios de AEMaaCS de su organización, desde el acceso a los permisos. Sin embargo, el administrador del sistema debe interactuar con otras personas a lo largo del camino.
 
 | Grupo de usuarios | Descripción | Rol en el recorrido |
 |---|---|---|
-| Administrador del sistema | Es el destinatario de este recorrido, proporciona un aprovisionamiento inicial de recursos en la nube y asigna usuarios a roles adecuados en base a sus responsabilidades laborales. | Administra todos los aspectos de sus usuarios desde el acceso a los permisos |
-| Autor de contenido | Crea y revisa el contenido en AEM | Una vez que el administrador del sistema ha concedido los permisos, los autores pueden iniciar su propio recorrido y crear contenido |
-| Desarrollador | Desarrolla aplicaciones de AEM que consumen contenido de diferentes fuentes | Una vez que el administrador del sistema ha concedido los permisos, los desarrolladores pueden iniciar su propio recorrido y desarrollar soluciones |
+| Administrador del sistema | El objetivo de este recorrido es proporcionar un aprovisionamiento inicial de recursos en la nube y asignar usuarios a roles adecuados en función de sus responsabilidades laborales | Administra todos los aspectos de sus usuarios desde el acceso a los permisos |
+| Autor de contenido | Crea y revisa el contenido en AEM | Una vez que el administrador del sistema ha concedido los permisos, los autores pueden iniciar su propio recorrido en la creación de contenido |
+| Desarrollador | AEM Desarrolla aplicaciones de que consumen contenido de diferentes fuentes | Una vez que el administrador del sistema ha concedido los permisos, los desarrolladores pueden empezar su propio recorrido en el desarrollo de soluciones |
 | Administrador de implementación | Agrega o actualiza un entorno, ejecuta la canalización e implementa un código para un entorno de AEM o con fines de calidad del código. | Una vez que el administrador del sistema haya concedido los permisos, los administradores de implementación pueden iniciar su propio recorrido y administrar las implementaciones |
 
 Esta guía de incorporación ilustra el proceso completo de incorporación como administrador del sistema. Los roles de los usuarios, desarrolladores y administradores de implementación de AEM se exploran brevemente como partes adicionales y opcionales del recorrido.
 
 >[!TIP]
 >
->Si es nuevo en AEM as a Cloud Service, pero ya está familiarizado con AEM y está migrando desde el modo on-premise o desde Adobe Managed Services, asegúrese de consultar el [Recorrido de migración de AEM as a Cloud Service](/help/journey-migration/getting-started.md).
+>Si es nuevo en AEM as a Cloud Service AEM, está familiarizado con la migración de datos y está migrando desde Managed Services local o de Adobe, consulte el [Recorrido de migración de AEM as a Cloud Service](/help/journey-migration/getting-started.md).
 
 ## Información general sobre el recorrido de incorporación {#overview}
 
 Los siguientes artículos describen en detalle los conceptos básicos de incorporación y le proporcionan conocimientos básicos de AEM as a Cloud Service. Aunque puede ir directamente a una parte concreta del recorrido, muchos conceptos se basan en los de artículos anteriores. Por lo tanto, si es nuevo en la incorporación, Adobe le recomienda que comience por el principio y avance en orden consecutivo.
 
-| # | Artículo | Descripción | Audiencia |
+| | Artículo | Descripción | Audiencia |
 |---|---|---|---|
 | 0 | Recorrido de la incorporación | Este documento | Administrador del sistema |
 | 1 | [Preparación de la incorporación](preparation.md) | Antes de iniciar el proceso de incorporación, hay que realizar una serie de pasos preparatorios que el administrador del sistema debe conocer antes de iniciar sesión en el sistema. | Administrador del sistema |
@@ -89,20 +89,20 @@ Los siguientes artículos describen en detalle los conceptos básicos de incorpo
 | 9 | [Tareas del desarrollador y del administrador de implementación](developers.md) | Opcional: Aprenda, como Desarrollador, cómo puede acceder a Git de Cloud Manager y administrarlo y, como Administrador de implementación, cómo puede configurar canalizaciones e implementar código en Cloud Manager. | Desarrolladores y administradores de implementación |
 | 10 | [Tareas del usuario de AEM](aem-users.md) | Opcional: Aprenda, como autor de AEM, cómo puede acceder a la instancia de AEM as a Cloud Service y familiarizarse con la creación de contenido para AEM as a Cloud Service. | Usuarios de AEM  |
 
-## Siguientes pasos {#what-is-next}
+## ¿Qué sigue? {#what-is-next}
 
 Ya está listo para iniciar su recorrido de incorporación de AEM as a Cloud Service. Le animamos a que continúe con la siguiente parte del recorrido y lea el artículo [Preparar la incorporación](preparation.md)
 
-## Recorridos de documentación de AEM {#documentation-journeys}
+## AEM recorridos de documentación de {#documentation-journeys}
 
-[Un recorrido de documentación](/help/journey-documentation/documentation-journeys.md) une muchos temas y características diferentes y complicados. Proporciona una narrativa que ayuda a un lector nuevo en AEM a comprender y resolver un problema empresarial de principio a fin, mientras asume un conocimiento previo mínimo de la materia o de AEM.
+[Un recorrido de documentación](/help/journey-documentation/documentation-journeys.md) vincula muchos temas y características diferentes y complicados. Proporciona una narrativa que ayuda a un lector nuevo en AEM a comprender y resolver un problema empresarial de principio a fin, mientras asume un conocimiento previo mínimo de la materia o de AEM.
 
-Los recorridos de documentación están diseñados en torno a los principios de las prácticas recomendadas, basados en las últimas investigaciones de Adobe, la experiencia de implementación comprobada de los consultores de Adobe y los comentarios sobre los proyectos de los clientes.
+Los Recorridos de documentación están diseñados en torno a los principios de las prácticas recomendadas. Se les informa utilizando las últimas investigaciones de Adobe, la experiencia de implementación comprobada de los consultores de Adobe y los comentarios sobre los proyectos de los clientes.
 
-Si quiere saber cómo recomienda Adobe que su equipo se incorpore a su nueva aplicación de AEM as a Cloud Service, aquí es donde debe empezar.
+Si desea saber qué recomienda el Adobe para que su equipo se incorpore a su nueva aplicación de AEM as a Cloud Service, comience aquí.
 
 ## Recursos adicionales {#additional-resources}
 
 Los siguientes son recursos opcionales adicionales si desea ir más allá del contenido del recorrido de incorporación.
 
-* [Incorporación en AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding.html?lang=es): en este breve vídeo se ofrece información general del proceso de incorporación de Cloud Service para AEM.
+* [Incorporación en AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding): en este breve vídeo se ofrece información general del proceso de incorporación de Cloud Service para AEM.

@@ -5,7 +5,7 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 20%
@@ -51,7 +51,7 @@ Si se está ejecutando una canalización, la administración de variables está 
 
 1. Se abre la ventana **Configuración de variables**. Escriba los detalles de la variable en la primera fila de la tabla y toque o haga clic en **Agregar**.
 
-   * **Nombre de configuración** es un identificador único para su variable, que debe encabezar [convenciones de nomenclatura de variables de canalización.](#naming-conventions)
+   * **Nombre de configuración** es un identificador único para su variable, que debe encabezar [convenciones de nomenclatura de variables de canalización](#naming-conventions).
    * **Valor** es el valor que contiene la variable.
    * **Paso aplicado** es el paso en la canalización al que se aplica la variable. Es obligatorio.
       * **Compilación**

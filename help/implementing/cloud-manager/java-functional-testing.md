@@ -5,10 +5,10 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -22,12 +22,12 @@ Al crear un nuevo repositorio de código en Cloud Manager, se crea una carpeta `
 
 >[!NOTE]
 >
->Si el repositorio se creó antes de que Cloud Manager creara automáticamente carpetas `it.tests`, usted también puede generar la última versión utilizando el [Arquetipo de proyecto de AEM.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+>Si el repositorio se creó antes de que Cloud Manager creara automáticamente carpetas `it.tests`, también puede generar la última versión utilizando el [Arquetipo de proyecto de AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
 
 Una vez que tenga el contenido de la carpeta `it.tests`, puede utilizarlo como base para sus propias pruebas y, a continuación:
 
-1. [Desarrolle sus casos de prueba.](#writing-functional-tests)
-1. [Ejecute las pruebas localmente.](#local-test-execution)
+1. [Desarrolle sus casos de prueba](#writing-functional-tests).
+1. [Ejecute las pruebas localmente](#local-test-execution).
 1. Confirme su código en el repositorio de Cloud Manager y ejecute una canalización de Cloud Manager.
 
 ## Escribir pruebas funcionales personalizadas {#writing-functional-tests}

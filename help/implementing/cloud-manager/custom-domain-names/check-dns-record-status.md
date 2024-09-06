@@ -5,7 +5,7 @@ exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 60%
@@ -25,7 +25,7 @@ Un nombre de dominio personalizado no puede servir tráfico en directo hasta que
 
 Debe cumplir estos requisitos antes de comprobar el estado de un registro DNS mediante Cloud Manager.
 
-* Ya debe haber configurado la configuración DNS para su nombre de dominio personalizado como se describe en el documento [Configuración de DNS.](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
+* Ya debe haber configurado la configuración DNS para su nombre de dominio personalizado como se describe en el documento [Configuración de DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md).
 
 ## Cómo comprobar el estado del registro DNS {#how-to}
 
@@ -37,7 +37,7 @@ Debe cumplir estos requisitos antes de comprobar el estado de un registro DNS me
 
 1. Haga clic en el icono **Estado** del nombre de dominio.
 
-Cloud Manager realiza una búsqueda DNS del nombre de dominio y lo muestra [estado actual.](#statuses)
+Cloud Manager realiza una búsqueda DNS del nombre de dominio y lo muestra [estado actual](#statuses).
 
 Cloud Manager activará automáticamente una búsqueda DNS cuando su nombre de dominio personalizado se verifique e implemente por primera vez correctamente. Para los intentos subsiguientes, debe seleccionar el icono **Resolver de nuevo** junto al estado.
 
@@ -64,4 +64,4 @@ Un dominio personalizado puede tener uno de los siguientes estados en Cloud Mana
 
 ## Siguientes pasos {#next-steps}
 
-Enhorabuena. Ha configurado correctamente su dominio personalizado para utilizarlo con Cloud Manager. Consulte el documento [Administración de nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) para obtener más información sobre cómo administrar los nombres de dominio personalizados mediante Cloud Manager.
+¡Enhorabuena! Ha configurado correctamente su dominio personalizado para utilizarlo con Cloud Manager. Consulte el documento [Administración de nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) para obtener más información sobre cómo administrar los nombres de dominio personalizados mediante Cloud Manager.

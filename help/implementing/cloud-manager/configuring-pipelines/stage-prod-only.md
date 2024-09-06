@@ -1,10 +1,10 @@
 ---
 title: Canalizaciones de solo fase y de producción
 description: Descubra cómo puede dividir las implementaciones de fase y producción mediante canalizaciones dedicadas.
-source-git-commit: 94e5ecb67212bcced45141cba3af8c830791473b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 92%
+source-wordcount: '942'
+ht-degree: 88%
 
 ---
 
@@ -15,7 +15,7 @@ Descubra cómo puede dividir las implementaciones de fase y producción mediante
 
 >[!NOTE]
 >
->Esta funcionalidad solo está disponible para [el programa de clientes pioneros.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
+>Esta funcionalidad solo está disponible para [el programa de clientes pioneros](/help/implementing/cloud-manager/release-notes/current.md#early-adoption).
 
 ## Información general {#overview}
 
@@ -54,9 +54,9 @@ Tenga en cuenta también los siguientes problemas conocidos antes de comenzar a 
 
 ## Creación de canalizaciones {#pipeline-creation}
 
-Las canalizaciones de solo producción y fase se crean de forma similar a las [canalizaciones de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) asociadas estándar y las [canalizaciones que no sean de producción.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) Consulte estos documentos para obtener más información.
+Las canalizaciones de solo producción y fase se crean de forma similar a las [canalizaciones de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) asociadas estándar y las [canalizaciones que no sean de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Consulte estos documentos para obtener más información.
 
-1. En la ventana **Canalizaciones**, toque o haga clic en **Agregar canalización**.
+1. En la ventana **Canalizaciones**, haga clic en **Agregar canalización**.
 
    * Seleccione **Agregar canalización que no sea de producción** para crear una canalización de solo fase.
    * Seleccione **Añadir una canalización de solo producción** para crear una canalización de solo producción.
@@ -74,7 +74,7 @@ Las canalizaciones de solo producción y fase se crean de forma similar a las [c
 ### Canalizaciones de solo fase {#stage-only}
 
 1. Una vez seleccionada la opción **Agregar canalización que no sea de producción** se abre el cuadro de diálogo **Agregar canalización que no sea de producción**.
-1. Para crear una canalización de solo fase, seleccione el entorno de fase en el campo **Entornos de implementación aptos** para la canalización. Complete los campos restantes y toque o haga clic en **Continuar**.
+1. Para crear una canalización de solo fase, seleccione el entorno de fase en el campo **Entornos de implementación aptos** para la canalización. Complete los campos restantes y haga clic en **Continuar**.
 
    ![Creación de una canalización de solo fase](assets/stage-only.png)
 
@@ -82,12 +82,12 @@ Las canalizaciones de solo producción y fase se crean de forma similar a las [c
 
 ### Canalizaciones de solo producción {#prod-only}
 
-1. Una vez seleccionada la opción **Añadir una canalización de solo producción**, se abre el cuadro de diálogo **Añadir una canalización de solo producción**.
-1. Proporcione un **nombre para la canalización**. Las opciones y funcionalidades restantes del cuadro de diálogo funcionan igual que las del cuadro de diálogo de creación de canalización asociada estándar. Toque o haga clic en **Guardar** para guardar la canalización.
+1. Al seleccionar la opción **Agregar canalización solo de producción**, se abre el cuadro de diálogo **Agregar canalización solo de producción**.
+1. Proporcione un **nombre para la canalización**. Las opciones y funcionalidades restantes del cuadro de diálogo funcionan igual que las del cuadro de diálogo de creación de canalización asociada estándar. Haga clic en **Guardar** para guardar la canalización.
 
 ## Ejecución de canalizaciones de solo producción y de solo fase {#running}
 
-Las canalizaciones de solo producción y de solo fase se ejecutan del mismo modo que [se ejecutan todas las demás canalizaciones.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) Consulte esa documentación para obtener más información.
+Las canalizaciones de solo producción y de solo fase se ejecutan del mismo modo que [se ejecutan todas las demás canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines). Consulte la documentación para obtener más detalles.
 
 Además, la ejecución de una canalización de solo producción se puede activar directamente desde los detalles de ejecución de una canalización de solo fase.
 
@@ -97,7 +97,7 @@ Una canalización de solo fase se ejecuta casi del mismo modo que las canalizaci
 
 ![Ejecución de canalización de solo fase](assets/stage-only-pipeline-run.png)
 
-El botón **Promocionar versión** solo aparece si se encuentra en la última ejecución correcta de canalización de solo fase. Una vez que lo toque o haga clic en él, se le pedirá que confirme la ejecución de la canalización de solo producción o que cree una canalización de solo producción si aún no existe ninguna.
+El botón **Promocionar versión** solo aparece si se encuentra en la última ejecución correcta de canalización de solo fase. Al hacer clic en esta opción, se le pedirá que confirme la ejecución de la canalización de solo producción o que cree una canalización de solo producción si aún no existe ninguna.
 
 ### Canalizaciones de solo producción {#prod-only-run}
 

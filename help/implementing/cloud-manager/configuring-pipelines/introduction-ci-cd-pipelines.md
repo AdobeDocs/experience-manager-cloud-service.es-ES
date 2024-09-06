@@ -6,10 +6,10 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f4c6331491bb08e81964476ad58065c1ee022967
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1482'
-ht-degree: 36%
+ht-degree: 35%
 
 ---
 
@@ -99,7 +99,7 @@ Se aplican las siguientes restricciones.
 * Un usuario debe registrarse con la función de **Administrador de implementación** para configurar o ejecutar canalizaciones.
 * En cualquier momento, solo puede haber una canalización de pila completa por entorno.
 
-Además, tenga en cuenta cómo se comporta la canalización de pila completa si elige introducir una [canalización de configuración del nivel web.](#web-tier-config-pipelines)
+Además, tenga en cuenta cómo se comporta la canalización de pila completa si elige introducir una [canalización de configuración de nivel web](#web-tier-config-pipelines).
 
 * La canalización de pila completa para un entorno ignora la configuración de Dispatcher si existe la canalización de configuración de nivel web correspondiente.
 * Si la canalización de configuración del nivel web correspondiente para el entorno no existe, el usuario puede configurar la canalización de pila completa incluir o ignorar la configuración de Dispatcher.

@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 77%
@@ -23,7 +23,7 @@ Cloud Manager crea y prueba su código mediante un entorno de compilación espec
 
 * El entorno de compilación está basado en Linux, derivado de Ubuntu 22.04.
 * Apache Maven 3.9.4 está instalado.
-   * Adobe recomienda [actualizar los repositorios de Maven para que utilicen HTTPS en lugar de HTTP.](#https-maven)
+   * Adobe recomienda [actualizar los repositorios de Maven para que utilicen HTTPS en lugar de HTTP](#https-maven).
 * Las versiones de Java instaladas son Oracle JDK 11.0.22 y Oracle JDK 8u401.
 * **IMPORTANT**: De forma predeterminada, la variable de entorno `JAVA_HOME` está configurada en `/usr/lib/jvm/jdk1.8.0_401`, que contiene el JDK de Oracle 8u401. AEM *_Este valor predeterminado debe anularse para que los proyectos de nube de utilicen JDK 11_*. Consulte la sección [Configuración de la versión del JDK de Maven](#alternate-maven-jdk-version) para obtener más información.
 * Hay algunos paquetes de sistema adicionales instalados que son necesarios.
@@ -32,7 +32,7 @@ Cloud Manager crea y prueba su código mediante un entorno de compilación espec
    * `libpng`
    * `imagemagick`
    * `graphicsmagick`
-* Se pueden instalar otros paquetes en el momento de la compilación, tal como se describe en la sección [Instalación de paquetes de sistema adicionales.](#installing-additional-system-packages)
+* Se pueden instalar otros paquetes en el momento de la compilación, tal como se describe en la sección [Instalación de paquetes de sistema adicionales](#installing-additional-system-packages).
 * Cada compilación se realiza en un entorno prístino; el contenedor de compilación no mantiene ningún estado entre ejecuciones.
 * Maven siempre se ejecuta con los tres comandos siguientes.
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
@@ -46,7 +46,7 @@ Cloud Manager crea y prueba su código mediante un entorno de compilación espec
 
 ## Repositorios de Maven HTTPS {#https-maven}
 
-Cloud Manager [versión 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) inició una actualización móvil del entorno de compilación (que finalizó con la versión 2023.12.0), que incluía una actualización a Maven 3.8.8. Un cambio significativo introducido en Maven 3.8.1 ha sido una mejora de la seguridad destinada a mitigar posibles vulnerabilidades. En concreto, Maven ahora deshabilita de forma predeterminada todas las duplicaciones de `http://*` inseguras, tal como se describe en las [Notas de la versión de Maven.](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+Cloud Manager [versión 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) inició una actualización móvil del entorno de compilación (que finalizó con la versión 2023.12.0), que incluía una actualización a Maven 3.8.8. Un cambio significativo introducido en Maven 3.8.1 ha sido una mejora de la seguridad destinada a mitigar posibles vulnerabilidades. En concreto, Maven ahora deshabilita de forma predeterminada todas las duplicaciones de `http://*` inseguras, tal como se describe en las [Notas de la versión de Maven](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291).
 
 Como resultado de esta mejora de seguridad, algunas personas pueden tener problemas durante el paso de compilación, especialmente al descargar artefactos de repositorios Maven que utilizan conexiones HTTP no seguras.
 

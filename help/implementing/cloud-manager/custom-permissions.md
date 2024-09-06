@@ -5,10 +5,10 @@ exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1515'
-ht-degree: 41%
+ht-degree: 46%
 
 ---
 
@@ -36,11 +36,11 @@ Los permisos personalizados permiten a los usuarios crear perfiles de permisos p
 
 Para crear y utilizar sus propios permisos personalizados, se requieren tres pasos:
 
-1. [Cree un perfil de producto.](#create)
-1. [Asigne permisos personalizados al perfil del producto.](#assign-permissions)
-1. [Asigne usuarios al perfil de producto.](#assign-users)
+1. [Crear un perfil de producto](#create).
+1. [Asignar permisos personalizados al perfil del producto](#assign-permissions).
+1. [Asignar usuarios al perfil del producto](#assign-users).
 
-Esta sección detalla estos pasos. Puede que le resulte útil ver las secciones [Términos](#terms) y [Permisos configurables](#configurable-permissions) a medida que crea sus propios permisos personalizados.
+En esta sección se detallan estos pasos. Puede que le resulte útil ver las secciones [Términos](#terms) y [Permisos configurables](#configurable-permissions) a medida que crea sus propios permisos personalizados.
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ El nuevo perfil de producto se guarda ahora con sus permisos personalizados.
 
 Ahora puede asignar usuarios al nuevo perfil de producto que ha creado con permisos personalizados.
 
-1. En el Admin Console, seleccione el nombre del [nuevo perfil de producto al que asignó permisos personalizados.](#assign-permissions)
+1. En el Admin Console, seleccione el nombre del [nuevo perfil de producto al que asignó permisos personalizados](#assign-permissions).
 
 1. En la ventana que se abre, seleccione la pestaña **Usuarios**.
 
@@ -164,17 +164,17 @@ Los siguientes términos se utilizan para crear y administrar permisos personali
 
 | Término | Descripción |
 |---|---|
-| Permisos predefinidos | Funciones predefinidas como **Propietario empresarial** y **Administrador de implementación** para regular varias funciones de Cloud Manager. Para obtener más información sobre las funciones predefinidas, consulte [Perfiles de equipo y producto de AEM as a Cloud Service.](/help/onboarding/aem-cs-team-product-profiles.md) |
+| Permisos predefinidos | Funciones predefinidas como **Propietario empresarial** y **Administrador de implementación** para regular varias funciones de Cloud Manager. Para obtener más información sobre las funciones predefinidas, consulte [Perfiles de equipo y producto de AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md). |
 | Permisos personalizados | Las funciones de Cloud Manager permiten a los usuarios crear perfiles de permisos para definir funciones que rigen las funciones compatibles con Cloud Manager |
-| Perfil del producto | Se crea en el Admin Console para administrar los permisos configurables que se aplican a los usuarios que forman parte del perfil de permisos |
+| Perfil del producto | Se crea en Admin Console para administrar permisos configurables que se aplicarán a los usuarios que forman parte del perfil de permisos |
 | Permiso configurable | Permisos de Cloud Manager que se pueden configurar en el perfil de permisos |
 | Elemento de permiso | Un programa, entorno o recurso de canalización en el que se puede aplicar un permiso |
 
-Los elementos de permisos hacen referencia al ámbito donde se aplica el permiso. Normalmente, es una de las siguientes:
+Los elementos de permisos hacen referencia al ámbito donde se aplica el permiso. Normalmente, será uno de los siguientes:
 
 | Tipo de elemento de permiso | Ejemplos | Descripción |
 |---|---|---|
-| Organización | organization:companyA | Todos los recursos aplicables de una organización. Un recurso puede ser un programa, un entorno o una canalización. Si el usuario agrega una organización para cualquier permiso, todos los recursos nuevos de esa organización también tendrán ese permiso. |
+| Organización | organization:companyA | Todos los recursos aplicables de una organización. Un recurso puede ser un programa, un entorno o una canalización. Si el usuario añade una organización para cualquier permiso, todos los recursos nuevos de esa organización también tendrán ese permiso. |
 | Programa | Programa A | Todos los recursos aplicables de un programa |
 | Entorno | Programa A: entorno | Aplicable en un entorno específico |
 | Canalización | Programa A: canalización | Aplicable en una canalización específica |
@@ -196,7 +196,7 @@ Tenga en cuenta las siguientes limitaciones al utilizar permisos personalizados.
 * Administrador de implementación
 * Desarrollador
 
-Para obtener más información sobre las funciones predefinidas, consulte [Perfiles de equipo y producto de AEM as a Cloud Service.](/help/onboarding/aem-cs-team-product-profiles.md)
+Para obtener más información sobre las funciones predefinidas, consulte [Perfiles de equipo y producto de AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ### ¿Qué les sucede a los perfiles de permiso predefinidos con introducción a los perfiles personalizados?
 

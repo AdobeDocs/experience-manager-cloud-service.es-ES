@@ -4,7 +4,7 @@ description: "[!DNL Adobe Experience Manager] notas de la versión as a Cloud Se
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 35%
@@ -84,7 +84,7 @@ La fecha de versión de [!UICONTROL Cloud Manager] versión 2020.8.0 es viernes,
   >[!NOTE]
   >Se ha cambiado el nombre de Auditoría de contenido a Auditoría de experiencias.
 
-  Consulte [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md) para obtener más información.
+  Consulte [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-dashboard.md) para obtener más información.
 
 * Los entornos recién creados en los programas de Assets ahora se configurarán automáticamente con Smart Content Services.
 

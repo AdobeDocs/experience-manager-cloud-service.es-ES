@@ -5,10 +5,10 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3a5451020b8f76f95bcd8bff7b6eabd06be00f31
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1197'
-ht-degree: 80%
+ht-degree: 81%
 
 ---
 
@@ -64,7 +64,7 @@ La fase **Implementación de fase** fase consiste en estos pasos.
 * **Escanear código**: este paso evalúa la calidad del código de la aplicación.
    * Consulte el documento [Prueba de calidad del código](/help/implementing/cloud-manager/code-quality-testing.md) para obtener más información sobre el proceso de prueba.
 * **Crear imágenes**: Este proceso es responsable de transformar el contenido y los paquetes de Dispatcher producidos por el paso de generación en imágenes Docker y configuraciones de Kubernetes.
-* **Implementar en fase**: La imagen se implementa en el entorno de ensayo como preparación para la [Fase de prueba.](#stage-testing)
+* **Implementar en fase**: La imagen se implementa en el entorno de ensayo como preparación para la [fase de prueba](#stage-testing).
 
 ![Fase de implementación](assets/stage-deployment.png)
 
@@ -86,7 +86,7 @@ La fase de **prueba** incluye los siguientes pasos.
    * Las páginas configuradas se envían al servicio y se evalúan.
    * Los resultados son informativos y muestran las puntuaciones y el cambio entre la puntuación actual y la anterior.
    * Este conocimiento es importante para determinar si hay una regresión que se introduce con la implementación actual.
-   * Consulte [Comprender los resultados de la auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md) para obtener más información.
+   * Consulte [Comprender los resultados de la auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-dashboard.md) para obtener más información.
 
 ![Fase de prueba](assets/stage-testing.png)
 
@@ -154,14 +154,14 @@ En estas circunstancias, cuando se puede volver a ejecutar, la página de estado
 
 ### Volver a ejecutar la API {#reexecute-API}
 
-Además de estar disponible en la interfaz de usuario, puede usar [la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) para almacenar en déclencheur las nuevas ejecuciones e identificar las que se activaron como reejecuciones.
+Además de estar disponible en IU, puede utilizar [la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) para activar las nuevas ejecuciones, así como identificar las que se activaron como ejecuciones nuevas.
 
 #### Activación de una nueva ejecución {#reexecute-deployment-api}
 
 Para almacenar en déclencheur una nueva ejecución, realice una solicitud de PUT al vínculo HAL `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` en el estado del paso de implementación de producción.
 
 * Si este vínculo está presente, la ejecución se puede reiniciar desde ese paso.
-* Si está ausente, la ejecución no se puede reiniciar desde ese paso.
+* Si está ausente, la ejecución no se puede reiniciar desde ese paso. 
 
 Este vínculo solo está disponible para el paso de implementación de producción.
 

@@ -5,10 +5,10 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 100%
+source-wordcount: '399'
+ht-degree: 93%
 
 ---
 
@@ -59,10 +59,10 @@ Con estas credenciales, puede clonar una copia local del repositorio, realizar c
 
 ## Información de acceso al repositorio desde la ventana Repositorios {#repositories-window}
 
-El botón **Información de acceso al repositorio** también está disponible en la barra de herramientas de la ventana [**Repositorios**.](managing-repositories.md) muestra la misma información sobre el acceso a los repositorios administrados por Adobe.
+También hay disponible un botón **Acceder a la info del repositorio** en la barra de herramientas de la ventana [**Repositorios**](managing-repositories.md). Muestra la misma información sobre el acceso a repositorios administrados por Adobe.
 
 ## Revocar una contraseña de acceso {#revoke-password}
 
-Puede revocar una contraseña de acceso en cualquier momento. Para ello, [cree un ticket de asistencia para esta solicitud.](https://experienceleague.adobe.com/es?support-solution=Experience+Manager&amp;support-tab=home&amp;lang=es#support)
+Puede revocar una contraseña de acceso en cualquier momento. Para ello, [cree un ticket de asistencia para esta solicitud](https://experienceleague.adobe.com/es?support-solution=Experience+Manager&amp;support-tab=home&amp;lang=es#support).
 
-El ticket tiene prioridad y debería revocarse en un día.
+El ticket tiene prioridad alta y debería revocarse en un día.

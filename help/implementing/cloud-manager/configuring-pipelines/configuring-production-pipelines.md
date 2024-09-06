@@ -6,7 +6,7 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 69%
@@ -102,11 +102,11 @@ Para finalizar la configuración de la canalización de producción de código d
 
 1. Proporcione las rutas que se incluirán en la auditoría de experiencias.
 
-   * Consulte el documento [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) para obtener más información.
+   * Consulte el documento [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-dashboard.md#configuration) para obtener más información.
 
 1. Haga clic en **Guardar** para guardar la canalización.
 
-Las rutas configuradas para la auditoría de experiencias se envían al servicio y se evalúan según las pruebas de rendimiento, accesibilidad, SEO (optimización del motor de búsqueda), prácticas recomendadas y PWA (aplicación web progresiva) cuando se ejecuta la canalización. Consulte [Comprender los resultados de la auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md) para obtener más información.
+Las rutas configuradas para la auditoría de experiencias se envían al servicio y se evalúan según las pruebas de rendimiento, accesibilidad, SEO (optimización del motor de búsqueda), prácticas recomendadas y PWA (aplicación web progresiva) cuando se ejecuta la canalización. Consulte [Comprender los resultados de la auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-dashboard.md) para obtener más información.
 
 La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en la tarjeta **Canalizaciones** en la página **Información general del programa**.
 

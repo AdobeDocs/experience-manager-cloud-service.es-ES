@@ -5,19 +5,19 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 30%
+source-wordcount: '429'
+ht-degree: 29%
 
 ---
 
 
 # Editar programas {#editing-programs}
 
-Para administrar y editar programas, empieza en la consola [**Mis programas**.](/help/implementing/cloud-manager/navigation.md) La página **Mis programas** proporciona una descripción general de todos los programas a los que tiene acceso. Al seleccionar un programa individual, la página **Resumen del programa** proporciona detalles del programa de un vistazo.
+Para administrar y editar programas, empieza en la consola [**Mis programas**](/help/implementing/cloud-manager/navigation.md). La página **Mis programas** proporciona una descripción general de todos los programas a los que tiene acceso. Al seleccionar un programa individual, la página **Resumen del programa** proporciona detalles del programa de un vistazo.
 
-Desde la **Descripción general del programa**, los usuarios con los permisos necesarios pueden editar [programas de producción creados en su organización](creating-production-programs.md) y [programas de zonas protegidas creados en su organización.](creating-sandbox-programs.md) Al editar un programa, puede:
+Desde la **Descripción general del programa**, los usuarios con los permisos necesarios pueden editar [programas de producción creados en su organización](creating-production-programs.md) y [programas de zonas protegidas creados en su organización](creating-sandbox-programs.md). Al editar un programa, puede:
 
 * Agregar la solución Sites a un programa existente con Assets y a la inversa.
 * Eliminar Sites o Assets de un programa existente que incluya ambos.
@@ -26,9 +26,13 @@ Desde la **Descripción general del programa**, los usuarios con los permisos ne
 
 ## Permisos {#permissions}
 
-Debe ser miembro del rol **Propietario del negocio** para editar programas o eliminar programas de zonas protegidas, así como para acceder al tablero de licencias.
+Debe ser miembro del rol **Propietario del negocio** para editar programas o eliminar programas de zonas protegidas y para acceder al tablero de licencias.
 
-## Edición de un programa {#editing}
+## Editar un programa {#editing}
+
+Cada vez que se edita un programa, incluida la adición o eliminación de una solución o complemento, esos cambios surten efecto después de la siguiente implementación.
+
+**Para editar un programa:**
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
@@ -43,18 +47,12 @@ Debe ser miembro del rol **Propietario del negocio** para editar programas o eli
    ![Pestaña General](assets/edit-program-prod1.png)
 
 1. Las opciones disponibles para editar el programa son las mismas que al crearlo.
-   * Consulte los documentos [Creación de programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) y [Creación de programas de espacio aislado](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) para obtener más información sobre las opciones individuales.
+   * Consulte [Crear programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) y [Crear programas de espacio aislado](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) para obtener más información sobre las opciones individuales.
    * [Puede haber opciones adicionales](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) disponibles para su programa de producción en función de los derechos de su organización.
 
 1. Haga clic en **Actualizar** para guardar los cambios en el programa.
 
-Se guardarán los cambios realizados en el programa.
-
->[!NOTE]
->
->Cada vez que se edita un programa, incluida la adición o eliminación de una solución o complemento, esos cambios surten efecto después de la siguiente implementación.
-
-## Eliminar programas de zona protegida {#delete-sandbox-program}
+## Eliminar un programa de zona protegida {#delete-sandbox-program}
 
 Al eliminar un programa de zona protegida se eliminan todos los entornos y canalizaciones asociados a él.
 
@@ -62,7 +60,7 @@ Al eliminar un programa de zona protegida se eliminan todos los entornos y canal
 >
 >Los usuarios con el rol de **Propietario del negocio** o **Administrador de implementación** pueden eliminar sus entornos de producción y ensayo en lugar de todo el programa de zona protegida.
 
-Para eliminar un programa de zona protegida, haga lo siguiente.
+**Para eliminar un programa de zona protegida:**
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 

@@ -5,10 +5,10 @@ exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 91%
+source-wordcount: '521'
+ht-degree: 79%
 
 ---
 
@@ -20,7 +20,7 @@ Cloud Manager se basa en una jerarquía de entidades. Los detalles de esto no so
 ![Jerarquía de Cloud Manager](assets/program-types1.png)
 
 * **INQUILINO**: Esta es la parte superior de la jerarquía. Cada cliente está aprovisionado con un inquilino.
-* **PROGRAMAS**: Cada inquilino tiene uno o más programas, [que a menudo reflejan las soluciones con licencia del cliente.](introduction-production-programs.md)
+* **PROGRAMAS**: cada inquilino tiene uno o más programas, [que a menudo reflejan las soluciones con licencia del cliente](introduction-production-programs.md).
 * **ENTORNOS**: Cada programa tiene múltiples entornos, como producción para contenido en directo, uno para ensayo y otro para desarrollo.
    * Cada programa puede tener un solo entorno de producción, pero varios entornos que no sean de producción.
 * **REPOSITORIO**: Los programas tienen repositorios de Git donde el código de la aplicación y del front-end se mantiene para los entornos.
@@ -61,6 +61,6 @@ Un usuario puede crear un programa de **producción** o un programa de **espacio
 * Un **programa de producción** se crea para habilitar el tráfico en directo para el sitio.
    * Consulte [Introducción a los programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) para obtener más información.
 * Un **programa de zona protegida** normalmente se crea para servir los propósitos de formación, ejecución de demostraciones, habilitación, POC o documentación.
-   * Una zona protegida no está diseñada para transportar tráfico en directo y tiene restricciones que un programa de producción no.
-   * Incluye Sites y Assets y se entrega rellenado automáticamente con una rama de Git que incluye código de muestra, un entorno de desarrollo y una canalización que no es de producción.
+   * Un entorno de zona protegida no está diseñado para transportar tráfico en directo y tiene restricciones que un programa de producción no.
+   * Incluye Sites, Assets y Edge Delivery Services, y se entrega rellenado automáticamente con una rama de Git que incluye código de muestra, un entorno de desarrollo y una canalización que no es de producción.
    * Consulte [Introducción a los programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) para obtener más información.

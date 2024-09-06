@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo configurar Cloud Manager para que 
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 77%
@@ -44,7 +44,7 @@ La configuración consta de dos pasos principales:
 
 >[!TIP]
 >
->Para obtener más información sobre la administración de repositorios en Cloud Manager, consulte [Repositorios de Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
+>Para obtener más información sobre la administración de repositorios en Cloud Manager, consulte el documento [Repositorios de Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
 
 ### Validación de propiedad de repositorio privado {#validate-ownership}
 
@@ -110,7 +110,7 @@ Cuando se cierra o se combina la solicitud de extracción, la canalización de c
 
 ## Asociación de repositorios privados con canalizaciones {#pipelines}
 
-Los repositorios privados validados se pueden asociar con [canalizaciones de pila completa y front-end.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+Los repositorios privados validados se pueden asociar con [canalizaciones full-stack y front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 >[!NOTE]
 >
