@@ -3,7 +3,7 @@ title: Selector de recursos para [!DNL Adobe Experience Manager] como un [!DNL C
 description: Integre el selector de recursos con varias aplicaciones de Adobe, que no sean de Adobe y de terceros.
 role: Admin, User
 exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: b85363b0a284929a2308ebee24888937f7c32841
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 47%
@@ -29,9 +29,9 @@ Puede realizar la autenticación sin definir algunas de las propiedades de IMS, 
 
 Puede integrar el Selector de recursos con varias aplicaciones, como:
 
-* [Integrar el Selector de recursos con una aplicación  [!DNL Adobe] ](#integrate-asset-selector.md)
-* [Integración del Selector de recursos con una aplicación que no sea de Adobe](#integrate-asset-selector-non-adobe.md)
-* [Integración de Dynamic Media con funciones de OpenAPI](#integrate-asset-selector-dynamic-media-open-api.md)
+* [Integrar el Selector de recursos con una aplicación  [!DNL Adobe] ](/help/assets/integrate-asset-selector-adobe-app.md)
+* [Integración del Selector de recursos con una aplicación que no sea de Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
+* [Integración de Dynamic Media con funciones de OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
 >[!MORELIKETHIS]
