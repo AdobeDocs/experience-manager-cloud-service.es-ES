@@ -5,10 +5,10 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 72868ab808ebbd99c5e81805e7669083c5c754fb
+source-git-commit: 505e0887124472693216fee2f0a3e960591b5ae5
 workflow-type: tm+mt
-source-wordcount: '1927'
-ht-degree: 7%
+source-wordcount: '1950'
+ht-degree: 6%
 
 ---
 
@@ -17,17 +17,11 @@ ht-degree: 7%
 
 Descubra cómo la auditoría de experiencias valida el proceso de implementación y garantiza que los cambios cumplan los estándares de línea de base para el rendimiento, la accesibilidad, las prácticas recomendadas y la SEO. Proporciona una interfaz de panel clara e informativa para rastrear estas métricas.
 
->[!NOTE]
->
->Esta característica solo está disponible para [el programa que la adoptó por primera vez](/help/implementing/cloud-manager/release-notes/current.md#early-adoption).
->
->Para obtener más información sobre la característica de auditoría de experiencias para AEM as a Cloud Service, consulte [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md).
-
 ## Información general {#overview}
 
 La auditoría de experiencias valida el proceso de implementación y ayuda a garantizar que se implementen los cambios:
 
-1. Cumplan los estándares de línea de base para el rendimiento, la accesibilidad, las prácticas recomendadas, la SEO (optimización de motores de búsqueda) y la PWA (aplicación web progresiva).
+1. Cumplan los estándares de línea de base para el rendimiento, la accesibilidad, las prácticas recomendadas y la SEO (optimización del motor de búsqueda).
 
 1. No introduzcan regresiones.
 
@@ -88,7 +82,7 @@ La auditoría de experiencias está disponible de forma predeterminada para las 
 
 Los resultados de la auditoría de experiencias se presentan en la fase **Prueba de fase** de la canalización de producción a través de la [página de ejecución de la canalización de producción](/help/implementing/cloud-manager/deploy-code.md).
 
-![Panel en la canalización](assets/experience-audit-dashboard.jpg)
+![Panel en la canalización](assets/experience-audit-dashboard.png)
 
 La auditoría de experiencias proporciona la mediana de las puntuaciones de Google Lighthouse para las [páginas configuradas](#configuration) y la diferencia de puntuación con respecto al análisis anterior.
 
@@ -139,9 +133,17 @@ El informe se divide en dos áreas:
 
 #### Puntuaciones de página: tendencia {#trend}
 
-De manera predeterminada, la vista seleccionada para **puntuaciones de página — tendencia** es **puntuaciones medias** para los **últimos 6 meses**.
+De manera predeterminada, la vista seleccionada para **puntuaciones de página — tendencia** es **puntuaciones medias** para **el año pasado**.
 
-Utilice los menús desplegables **Seleccionar** y **Ver** de la parte superior e inferior del botón del gráfico para seleccionar detalles específicos de la página y diferentes lapsos de tiempo, respectivamente. Haga clic en **actualizar tendencia** en la parte superior del gráfico para aplicar las selecciones y actualizar el gráfico.
+Puede elegir ver las tendencias de categorías específicas de Faro haciendo clic en el nombre de la categoría en la leyenda.
+
+![Tendencia seleccionable](assets/experience-audit-trend-selectable.png)
+
+Utilice la lista desplegable **Seleccionar** de la parte superior del gráfico para seleccionar detalles específicos de la página, y las listas desplegables **Ver** y **Déclencheur** de la parte inferior para elegir diferentes lapsos de tiempo y el tipo de déclencheur, respectivamente.
+
+La lista desplegable **Vista** ofrece la posibilidad de seleccionar un lapso de tiempo preestablecido o un intervalo personalizado para una vista más específica.
+
+![Vista de tendencia](assets/experience-audit-trend-view.png)
 
 Al mover el ratón sobre el gráfico, la información sobre herramientas muestra los valores de las categorías de Google Lighthouse en puntos específicos del tiempo.
 
@@ -164,11 +166,11 @@ La sección **Recommendations** muestra un conjunto agregado de datos. De manera
 
 ![Recommendations](assets/experience-audit-recommendations.png)
 
-Haga clic en las comillas angulares de cualquier recomendación para mostrar detalles al respecto.
+Haga clic en cualquier recomendación para mostrar los detalles al respecto.
 
 ![Detalles de la recomendación](assets/experience-audit-recommendations-details.png)
 
-Cuando están disponibles, los detalles ampliados de la recomendación también contienen el porcentaje de impacto de las recomendaciones, para ayudarle a centrarse en los cambios más impactantes.
+Cuando están disponibles, los detalles ampliados de la recomendación también contienen el porcentaje de impacto de las recomendaciones, para ayudarle a centrarse en los cambios más impactantes. AEM Además de esto, las recomendaciones ampliadas pueden incluir vínculos y sugerencias relevantes de documentación de que pueden guiarle a través de la implementación de las correcciones sugeridas.
 
 Haga clic en el vínculo **ver páginas** de la vista de detalles para ver las páginas a las que se aplica la recomendación.
 
@@ -222,7 +224,7 @@ Si las [páginas que configuró](#configuration) para auditar no estaban disponi
 
 La canalización muestra una sección de errores ampliable para ver las rutas URL relativas a las que no pudo acceder.
 
-![Problemas detectados por la auditoría de experiencias](assets/experience-audit-issues.jpg)
+![Problemas detectados por la auditoría de experiencias](assets/experience-audit-issues.png)
 
 Si visualiza el informe completo, los detalles se muestran en la sección **[Resultados del análisis de auditoría de experiencias](#results)**, que también es ampliable.
 
