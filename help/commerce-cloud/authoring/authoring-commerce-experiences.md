@@ -4,9 +4,9 @@ description: Aprenda a crear y a crear experiencias relacionadas con el comercio
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: dbf5c47f6d66b1ce35536b0762556511386a7e38
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '720'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Este selector ofrece la posibilidad de explorar la estructura del catálogo para
 
 ![Componente de carrusel sin selección](../assets/authoring/carousel_component_without_selection.png)
 
-El cuadro de diálogo de configuración de este componente requiere 1 : n categorías. CIF utiliza el UUID/ID como identificador de categoría. Los autores pueden introducir el UID manualmente o hacer clic en el icono de carpeta para abrir el selector de categorías. Después de seleccionar y cerrar el selector, el cuadro de diálogo del componente muestra el nombre de la categoría seleccionada.
+El cuadro de diálogo de configuración de este componente requiere 1 : n categorías. CIF utiliza el UID/ID como identificador de categoría. Los autores pueden introducir el UID a mano o hacer clic en el icono de carpeta para abrir el selector de categorías. Después de seleccionar y cerrar el selector, el cuadro de diálogo del componente muestra el nombre de la categoría seleccionada.
 
 ![Componente de carrusel con selección](../assets/authoring/carousel_component_with_selection.png)
 
@@ -71,9 +71,9 @@ CIF Las páginas de catálogo de productos de son páginas virtuales que se proc
 
 ![RTE](../assets/authoring/RTE.png)
 
-    >[!NOTE]
-    >
-    > Si se seleccionan tanto la categoría como el producto, se toma el producto.
+>[!NOTE]
+>
+> Si se seleccionan tanto la categoría como el producto, se toma el producto.
 
 Esto crea un vínculo de marcador de posición que se sustituye por un vínculo real cuando se representa la página.
 
