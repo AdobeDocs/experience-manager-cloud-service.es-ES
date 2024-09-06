@@ -1,19 +1,19 @@
 ---
-title: Administración de identidades
+title: Administración de principales
 description: Administración de identidades para la migración, con Admin Console
-source-git-commit: 5bf497fb2122cc3d3ff0903aeb680a35e90f33b0
+exl-id: a75598d0-8f59-466b-984e-dfe527388c2a
+source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
-# Administración de identidades {#managing-principals}
+# Administración de principales {#managing-principals}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_managingprincipals"
->title="Administración de identidades"
+>title="Administración de principales"
 >abstract="Descubra qué se debe hacer para administrar usuarios durante o después de una migración de contenido"
 
 Antes de transferir contenido al entorno de nube de AEM as a Cloud Service, hay algunas tareas que se pueden llevar a cabo en el Admin Console.  Son: crear usuarios, crear grupos y asignar usuarios a grupos; estos usuarios y grupos existirán en IMS, el servicio Identity Management de Adobe, que se utiliza para administrar usuarios y grupos para todos los servicios basados en la nube de Adobe.
