@@ -2,7 +2,8 @@
 title: Dynamic Media con funciones de OpenAPI
 description: Conozca conceptos clave como por qué utilizar Dynamic Media con las capacidades de OpenAPI y cómo habilitarlo.
 role: User
-source-git-commit: 8cd8eb834b548a52d6a9e094cb2c4447f228ab0d
+exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
+source-git-commit: 1041769d4c1efa4465745a85df65c803939b472b
 workflow-type: tm+mt
 source-wordcount: '1061'
 ht-degree: 1%
@@ -19,7 +20,7 @@ Dynamic Media con capacidades OpenAPI coloca a DAM en el centro de un ecosistema
 
 Dynamic Media con funciones de OpenAPI ofrece las siguientes ventajas clave:
 
-* **Integraciones perfectas**: Dynamic Media con capacidades OpenAPI ofrece un conjunto completo de API de búsqueda y entrega. Permite a los desarrolladores [integrar fácilmente la entrega de recursos con sus aplicaciones](/help/assets/integrate-dynamic-media-open-apis.md). Las aplicaciones incluyen aplicaciones de Adobe y de terceros. Proporciona una [interfaz de usuario del selector de recursos de Micro Frontend](/help/assets/asset-selector.md) para buscar y seleccionar recursos aprobados. El selector se puede integrar fácilmente con cualquier aplicación basada en marcos de trabajo de JavaScript como React JS, Angular JS y Vanilla JS.
+* **Integraciones perfectas**: Dynamic Media con capacidades OpenAPI ofrece un conjunto completo de API de búsqueda y entrega. Permite a los desarrolladores [integrar fácilmente la entrega de recursos con sus aplicaciones](/help/assets/integrate-dynamic-media-open-apis.md). Las aplicaciones incluyen aplicaciones de Adobe y de terceros. Proporciona una [interfaz de usuario del selector de recursos de Micro Frontend](/help/assets/overview-asset-selector.md) para buscar y seleccionar recursos aprobados. El selector se puede integrar fácilmente con cualquier aplicación basada en marcos de trabajo de JavaScript como React JS, Angular JS y Vanilla JS.
 
 * **Administración centralizada de recursos digitales**: DAM es la única fuente fiable para todos los recursos digitales. Los recursos digitales se administran de forma centralizada en AEM Assets y se entregan a las aplicaciones consumidoras por referencia mediante direcciones URL de entrega, sin copiar los binarios de recursos.
 
@@ -103,11 +104,11 @@ Una vez enviado el vale de soporte, el Adobe permite a Dynamic Media usar las fu
    </p>
 </td>
 <td>
-   <a href="/help/assets/asset-selector.md">
+   <a href="/help/assets/overview-asset-selector.md">
    <img alt="Selector de recursos de Adobe" src="./assets/asset-selector-prereqs.png" />
    </a>
    <div>
-      <a href="/help/assets/asset-selector.md">
+      <a href="/help/assets/overview-asset-selector.md">
       <strong>Selector de recursos de Micro-Frontend de Adobe</strong>
       </a>
    </div>
@@ -204,4 +205,3 @@ Una vez enviado el vale de soporte, el Adobe permite a Dynamic Media usar las fu
 </td>
 
 </table>
-

@@ -2,9 +2,10 @@
 title: Preguntas frecuentes sobre Dynamic Media con funciones de OpenAPI
 description: Preguntas frecuentes sobre Dynamic Media con funciones de OpenAPI
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
+source-git-commit: dcc233be4d1bb84534aaef64316406bb960ce51d
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '1494'
 ht-degree: 0%
 
 ---
@@ -108,14 +109,14 @@ A continuación se indican algunas de las diferencias clave entre Dynamic Media 
 | [Disponible solo con Assets as a Cloud Service](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | También disponible con Managed Services On-Premise o de Adobe con pasos de configuración y aprovisionamiento adicionales. |
 | [Conjunto limitado de modificadores de imagen admitidos, como ancho, alto, giro, voltear, calidad y formato](/help/assets/deliver-assets-apis.md) | Conjunto enriquecido de modificadores de imagen disponibles |
 | [Entrega de recursos restringida en función de los usuarios, las funciones, la fecha y la hora](/help/assets/restrict-assets-delivery.md) | Todos los usuarios pueden acceder a los Assets publicados en Dynamic Media |
-| La mayoría de los desarrolladores están familiarizados con las especificaciones de OpenAPI. La extensibilidad de AEM Assets se vuelve muy sencilla con [Micro Frontend Asset Selector](/help/assets/asset-selector.md). | SOAP Las API basadas en, que se convierten en una barrera al desarrollar personalizaciones de integración. |
+| La mayoría de los desarrolladores están familiarizados con las especificaciones de OpenAPI. La extensibilidad de AEM Assets se vuelve muy sencilla con [Micro-Frontend Asset Selector](/help/assets/overview-asset-selector.md). | SOAP Las API basadas en, que se convierten en una barrera al desarrollar personalizaciones de integración. |
 | Cualquier cambio realizado en los recursos aprobados en DAM, incluidas las actualizaciones de la versión y las modificaciones de metadatos, se refleja automáticamente en las direcciones URL de entrega. Con un valor corto de tiempo de vida (TTL) de 10 minutos configurado para Dynamic Media con funciones de OpenAPI a través de CDN, las actualizaciones se pueden ver en todas las interfaces de creación y publicación en menos de 10 minutos. | TTL de CDN recomendado de 10 horas. Puede anular el valor TTL mediante la acción de invalidación de la caché. |
 | Solo los recursos aprobados están disponibles para su entrega a aplicaciones posteriores, lo que permite utilizar recursos aprobados por la marca en experiencias digitales. | Las actualizaciones de un recurso publicado en Dynamic Media se publican automáticamente sin ningún flujo de trabajo de aprobación, lo que no garantiza que no haya recursos aprobados por la marca en las experiencias digitales. |
 | Informes de uso basados en el número de recursos entregados. Esta función estará disponible próximamente. | Los informes de uso no están disponibles. Esta función estará disponible próximamente. |
 | Las Assets marcadas como Caducadas en el repositorio as a Cloud Service de Assets ya no están disponibles para las aplicaciones posteriores. | No hay caducidad de recursos inherente. Un recurso permanece público hasta que se elimina del repositorio de AEM as a Cloud Service. |
 | No admite ajustes preestablecidos de imagen ni funciones de recorte inteligente de vídeo. | Admite ajustes preestablecidos de imagen y funciones de recorte inteligente de vídeo. |
 | Codifica vídeo dinámico, que garantiza que se proporcionen las mejores codificaciones en función del vídeo de entrada. No se requiere ninguna configuración para la entrega de vídeo nativo. | Estándar 3 codifica independientemente del vídeo de entrada (puede afectar al rendimiento de entrega de vídeo). Debe configurar manualmente diferentes codificaciones para diferentes tasas de bits de vídeo. |
-| Es difícil adivinar las URL basadas en UID de recursos (permite la ofuscación de URL), pero se ha optimizado la SEO. | La ofuscación de URL solo está disponible para parámetros de consulta de URL. Los ID de Assets (nombres de recursos) en las direcciones URL son reconocibles. |
+| Es difícil adivinar las URL basadas en UID de recursos (permite la ofuscación de URL), pero se optimizó la SEO. | La ofuscación de URL solo está disponible para parámetros de consulta de URL. Los ID de Assets (nombres de recursos) en las direcciones URL son reconocibles. |
 
 +++
 
@@ -135,6 +136,3 @@ En la tabla siguiente se describen las principales diferencias entre las dos sol
 | Los metadatos de recursos en DAM remoto también están disponibles en la instancia de AEM Sites. | Los metadatos de recursos en DAM remoto no están disponibles en la instancia de AEM Sites. |
 
 +++
-
-
-

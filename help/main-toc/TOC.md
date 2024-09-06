@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 503c6712aeea33fc093dbaec780e50c1e72579cd
 workflow-type: tm+mt
-source-wordcount: '5533'
+source-wordcount: '5578'
 ht-degree: 98%
 
 ---
@@ -456,7 +456,17 @@ ht-degree: 98%
    + [Información general sobre los microservicios de recursos](/help/assets/asset-microservices-overview.md)
    + [Accesibilidad en [!DNL Assets]](/help/assets/accessibility.md)
    + Administre recursos digitales {#manage}
-      + [Selector de recursos de Micro-Frontend](/help/assets/asset-selector.md)
+      + Selector de recursos de Micro-FrontEnd {#asset-selector}
+         + [Resumen del Selector de recursos](/help/assets/overview-asset-selector.md)
+         + Integraciones del Selector de recursos {#asset-selector-integration}
+            + [Resumen de integraciones del Selector de recursos](/help/assets/integrate-asset-selector.md)
+            + [Integración del Selector de recursos con una aplicación de Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
+            + [Integración del Selector de recursos con una aplicación que no sea de Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
+            + [Integración del Selector de recursos para Dynamic Media con las funciones de OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+         + [Propiedades del Selector de recursos](/help/assets/asset-selector-properties.md)
+         + [Ejemplos del Selector de recursos](/help/assets/asset-selector-examples.md)
+         + [Personalizaciones del Selector de recursos](/help/assets/asset-selector-customization.md)
+         + [Carga del selector de recursos](/help/assets/asset-selector-upload.md)
       + [Selector de destino de Micro-Frontend](/help/assets/destination-selector.md)
       + [Compartir recursos](/help/assets/share-assets.md)
       + [Reprocesamiento de recursos](/help/assets/reprocessing.md)

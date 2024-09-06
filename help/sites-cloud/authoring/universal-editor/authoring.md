@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
+source-git-commit: ffe90d3919c0f0c1a1c60efccc0191118dfaa84a
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 24%
@@ -88,7 +88,7 @@ Puede ver sus detalles en el carril [properties.](/help/sites-cloud/authoring/un
 ![Editando medios](assets/ue-edit-media.png)
 
 1. Toque o haga clic en la previsualización de la imagen seleccionada en el carril de propiedades.
-1. Se abre la ventana [selector de recursos](/help/assets/asset-selector.md#using-asset-selector) para que pueda seleccionar un recurso.
+1. Se abre la ventana [selector de recursos](/help/assets/overview-asset-selector.md#using-asset-selector) para que pueda seleccionar un recurso.
 1. Seleccione para seleccionar un nuevo recurso.
 1. Seleccione **Select** para volver al carril de propiedades en el que se reemplazó el recurso.
 
