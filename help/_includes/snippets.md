@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 11368914a78c1f47c2f341a112bf981545cf6203
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 94%
+source-wordcount: '993'
+ht-degree: 87%
 
 ---
 # Fragmentos de código {#snippets}
@@ -161,3 +161,23 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 >[!TIP]
 >
 >¿Es su primera vez en Dynamic Media? Para obtener información general rápida y de alto nivel sobre Dynamic Media, consulte [Trabajar con Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+
+## Consulte también para Dynamic Media {#see-also-dm}
+
+>[!NOTE]
+>
+>* ¿Es su primera vez en Dynamic Media? Para obtener información general rápida y de alto nivel sobre Dynamic Media, consulte [Trabajar con Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+>
+>* Siga [Prácticas recomendadas de Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md) para obtener el máximo valor.
+>
+>* Pruebe funciones de imagen de Dynamic Media con [herramienta de instantáneas](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+>
+>* Garantiza una reproducción de vídeo sin problemas con [vídeo adaptable](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
+>
+>* Automatice el recorte de [imágenes con recorte inteligente](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+>
+>* Automatice el recorte de [vídeos con recorte inteligente](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
+>
+>* Ofrecer [experiencia interactiva con tecnología 3D](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
+>* Otro [banco de recursos de Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
+
