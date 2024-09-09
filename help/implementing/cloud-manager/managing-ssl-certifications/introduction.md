@@ -5,9 +5,9 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fcde1f323392362d826f9b4a775e468de9550716
+source-git-commit: a9bcbae1317d95e3710a19a79115f1437b418e41
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '745'
 ht-degree: 42%
 
 ---
@@ -27,12 +27,14 @@ Cloud Manager ofrece herramientas de autoservicio para instalar y administrar ce
 
 <!-- CQDOC-21758, #1 -->
 
-* **Caso de uso 1:** Cloud Manager usa un servicio TLS (Seguridad de capa de transporte) de plataforma para administrar certificados SSL de propiedad del cliente y claves privadas de autoridades de certificación de terceros, como *Let&#39;s Encrypt*.
-* **Caso de uso 2:** Cloud Manager permite a los usuarios configurar un certificado DV (validación de dominio) que proviene del Adobe para configurar rápidamente el dominio. Los certificados DV son el nivel más básico de certificación SSL y se utilizan a menudo para fines de prueba o para proteger sitios web con cifrado básico. Los certificados DV están disponibles en [programas de producción y de zonas protegidas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+| | Caso de uso | Descripción |
+| --- | --- | --- |
+| 1 | **Certificado administrado por el Adobe (DV)** | Cloud Manager permite a los usuarios configurar un certificado DV (validación de dominio) que proviene del Adobe para configurar dominios rápidamente. Los certificados DV son el nivel más básico de certificación SSL y se utilizan a menudo para fines de prueba o para proteger sitios web con cifrado básico. Los certificados DV están disponibles en [programas de producción y de zonas protegidas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md). |
+| 2 | **Certificado administrado por el cliente (OV/EV)** | Cloud Manager usa un servicio TLS (Transport Layer Security) de plataforma para administrar certificados SSL de propiedad del cliente y claves privadas de autoridades de certificación de terceros, como *Let&#39;s Encrypt*. |
 
-  >
-  >
-  >Los clientes no pueden cargar certificados DV (validación de dominio).
+>[!NOTE]
+>
+>Los clientes no pueden cargar certificados DV (validación de dominio).
 
 
 ## Introducción a los certificados {#certificates}
