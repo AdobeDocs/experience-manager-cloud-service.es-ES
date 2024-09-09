@@ -1,19 +1,19 @@
 ---
-title: Introducción a Edge Delivery Services de AEM Forms, Tutorial para desarrolladores
+title: 'Introducción a Edge Delivery Services para AEM Forms: Tutorial para desarrolladores'
 description: Este tutorial le ayudará a ponerse en marcha con un nuevo proyecto de Adobe Experience Manager Forms (AEM). En diez a veinte minutos, habrá creado sus propios formularios.
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '1848'
-ht-degree: 100%
+source-wordcount: '1850'
+ht-degree: 98%
 
 ---
 
 # Introducción: Tutorial para desarrolladores
 
-En la era digital de hoy en día, la creación de formularios fáciles de usar es esencial para cualquier organización. Edge Delivery Services de AEM Forms (EDS) le permite crear formularios utilizando herramientas conocidas como Google Docs y Microsoft Office.
+En la era digital de hoy en día, la creación de formularios fáciles de usar es esencial para cualquier organización. Edge Delivery Services para AEM Forms (EDS) le permite crear formularios con herramientas conocidas como Google Docs y Microsoft Office.
 
 Estos formularios envían datos directamente a un archivo de Microsoft Excel o Google Sheets, lo que le permite utilizar un ecosistema dinámico y API sólidas de Google Sheets, Microsoft Excel y Microsoft SharePoint para procesar fácilmente los datos enviados o iniciar un flujo de trabajo empresarial existente.
 

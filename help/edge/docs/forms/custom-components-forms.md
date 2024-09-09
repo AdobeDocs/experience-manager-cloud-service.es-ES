@@ -6,28 +6,28 @@ hide: true
 hidefromtoc: true
 exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
 role: Admin, Architect, Developer
-source-git-commit: 4356fcc73a9c33a11365b1eb3f2ebee5c9de24f0
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 4%
+source-wordcount: '665'
+ht-degree: 96%
 
 ---
 
 # Crear componentes personalizados
 
-Los Edge Delivery Services de AEM Forms le permiten personalizar [los componentes de formulario nativos para HTML](/help/edge/docs/forms/form-components.md) y crear formularios interactivos y de fácil manejo. Permite modificar los componentes del formulario con marcado predefinido, tal como se explica en [Estilo de los campos de formulario](/help/edge/docs/forms/style-theme-forms.md) mediante CSS personalizado (hojas de estilo en cascada) y código personalizado para decorar el componente, lo que mejora el aspecto de los campos de formulario dentro de un bloque de Forms adaptable.
+Edge Delivery Services para AEM Forms le permite personalizar los [componentes de formulario nativos para HTML](/help/edge/docs/forms/form-components.md) y crear formularios interactivos y de fácil uso. Permite modificar los componentes del formulario con marcado predefinido, tal como se explica en [Estilo de los campos del formulario](/help/edge/docs/forms/style-theme-forms.md) mediante CSS (hojas de estilo en cascada) personalizadas y código personalizado para decorar el componente, lo que mejora la apariencia de los campos del formulario dentro de un bloque de formularios adaptables.
 
 ![Componente personalizado](/help/edge/assets/custom-component-image.png)
 
-Este documento describe los pasos para crear componentes personalizados al aplicar estilo a los componentes de formulario HTML nativos para mejorar la experiencia del usuario y aumentar el atractivo visual del formulario.
+Este documento describe los pasos para crear componentes personalizados mediante la aplicación de estilos a los componentes de formulario HTML nativos para mejorar la experiencia del usuario y aumentar el atractivo visual del formulario.
 
-Veamos un ejemplo de un componente `range` que muestra `Estimated trip cost` en un formulario. El componente `range` aparece como una línea recta, sin mostrar valores como el valor mínimo, máximo o seleccionado.
+Veamos un ejemplo de un componente `range` que muestra el `Estimated trip cost` en un formulario. El componente `range` aparece como una línea recta, sin mostrar valores como el valor mínimo, máximo o seleccionado.
 
-![Componente de intervalo nativo](/help/edge/assets/native-range-component.png)
+![Componente Intervalo nativo](/help/edge/assets/native-range-component.png)
 
-Vamos a empezar a personalizar el campo `range` para mostrar los valores mínimo, máximo y seleccionado en la línea agregando estilo con CSS y agregando una función personalizada para decorar un componente.
+Empecemos por personalizar el campo `range` para que muestre los valores mínimo, máximo y seleccionado en la línea añadiendo un estilo con CSS y añadiendo una función personalizada para decorar un componente.
 
-![Componente de intervalo personalizado](/help/edge/assets/custom-range-component.png)
+![Componente Intervalo personalizado](/help/edge/assets/custom-range-component.png)
 
 Al final de este artículo, aprenderá a crear componentes personalizados añadiendo estilos al archivo CSS y a la función personalizada.
 
@@ -35,32 +35,32 @@ Al final de este artículo, aprenderá a crear componentes personalizados añadi
 
 Antes de empezar a crear el componente personalizado, debe:
 
-* Tiene conocimientos básicos de [componentes HTML nativos](/help/edge/docs/forms/form-components.md).
-* Obtenga información sobre cómo [aplicar estilo a campos de formulario basados en el tipo de campo mediante selectores CSS](/help/edge/docs/forms/style-theme-forms.md)
+* Tener conocimientos básicos sobre los [componentes HTML nativos](/help/edge/docs/forms/form-components.md).
+* Saber cómo [aplicar estilos a los campos del formulario basados en el tipo de campo mediante selectores CSS](/help/edge/docs/forms/style-theme-forms.md)
 
 
-## Crear un componente personalizado
+## Creación de un componente personalizado
 
 
 ![pasos para crear un componente personalizado](/help/edge/docs/forms/assets/steps-to-create-custom-component.png)
 
-Ahora vamos a entender cada paso en detalle.
+Analicemos ahora cada paso en detalle.
 
 Consulte la [hoja de cálculo de consulta](/help/edge/docs/forms/assets/enquiry.xlsx) para personalizar el componente `range`, siguiendo los pasos que se explican a continuación.
 
 ### Añadir una función personalizada para decorar el componente
 
-La función personalizada agregada en `[../Form Block/components]` consiste en:
+La función personalizada añadida en `[../Form Block/components]` consta de:
 
-* **Declaración de función**: defina el nombre de función y sus parámetros.
-* **Implementación lógica**: escriba la lógica para agregar el comportamiento personalizado para el componente.
+* **Declaración de función**: defina el nombre de la función y sus parámetros.
+* **Implementación lógica**: escriba la lógica para añadir el comportamiento personalizado para el componente.
 * **Exportación de funciones**: haga accesible la función en `[Form Block]`.
 
-Vamos a crear un archivo de JavaScript denominado `range.js` para aplicar estilo al componente de intervalo. Para agregar una función personalizada:
+Ahora vamos a crear un archivo JavaScript con el nombre `range.js` para aplicar un estilo al componente Intervalo. Para añadir una función personalizada:
 
-1. AEM Vaya a la carpeta Proyecto de la carpeta de la carpeta de la carpeta de la unidad de Google o de SharePoint.
-1. Vaya a `[../Form Block/components]`.
-1. Agregue un nuevo archivo de nombre `range.js`.
+1. Vaya a la carpeta Proyectos AEM de Google Drive o SharePoint.
+1. Navegue hasta `[../Form Block/components]`.
+1. Añada un nuevo archivo con el nombre `range.js`.
 1. Añada la siguiente línea de código:
 
    ```javascript
@@ -120,13 +120,13 @@ Vamos a crear un archivo de JavaScript denominado `range.js` para aplicar estilo
 
 1. Guarde los cambios.
 
-### Inyectar el decorador en el bloque de formulario
+### Insertar el decorador en el bloque de formularios
 
-`[Form Block]` utiliza un HTML semántico para procesar campos de formulario, incluidos campos de entrada, rótulos y texto de ayuda, con atributos estándar para la accesibilidad. Para que `[Form Block]` use un decorador personalizado para un componente especificado, defina el componente en el archivo `mappings.js`. El archivo `mappings.js` importa una función que devuelve el módulo responsable de decorar un componente en particular. La función toma las propiedades del campo y devuelve una función decoradora para el campo de formulario.
+`[Form Block]` utiliza un HTML semántico para procesar los campos del formulario, incluidos los campos de entrada, etiquetas y texto de ayuda, con atributos estándar para accesibilidad. Para que `[Form Block]` use un decorador personalizado para el componente especificado, defínalo en el archivo `mappings.js`. El archivo `mappings.js` importa una función que devuelve el módulo responsable de decorar un componente en particular. La función toma las propiedades del campo y devuelve la función de decorador para el campo del formulario.
 
 En nuestro caso, la función comprueba la propiedad `fieldType` del campo y devuelve el decorador de intervalo personalizado del archivo `range.js` presente en `[../Form Block/components]`.
 
-Para insertar el decorador en el bloque de formulario:
+Para insertar el decorador en el bloque de formularios:
 
 1. Vaya a `[../Form Block/]` y abra `mapping.js`.
 1. Añada la siguiente línea de código:
@@ -147,11 +147,11 @@ Para insertar el decorador en el bloque de formulario:
 
 ### Añadir estilo para el componente en el archivo CSS
 
-Puede cambiar el aspecto de los campos de formulario en función del tipo de campo y los nombres de campo mediante selectores CSS, lo que permite aplicar un estilo coherente o único en función de los requisitos. Para aplicar estilo al componente, agregue código al archivo `form.css` para modificar el aspecto del componente del formulario.
+Puede cambiar la apariencia de los campos del formulario según el tipo de campo y los nombres de campo mediante selectores CSS, lo que permitirá aplicar un estilo coherente o único en función de los requisitos. Para aplicar estilo al componente, añada código al archivo `form.css` para modificar la apariencia del componente del formulario.
 
-Para personalizar el estilo del componente `range`, incluya un fragmento de código CSS que aplique estilo a un elemento de entrada `range` y a sus componentes asociados dentro de un formulario. Esto supone un diseño de HTML estructurado con clases como `.form` y `.range-wrapper`.
+Para personalizar el estilo del componente `range`, incluya un fragmento de código CSS que aplique estilos a un elemento de entrada `range` y a sus componentes asociados dentro de un formulario. Esto supone un diseño de HTML estructurado con clases como `.form` y `.range-wrapper`.
 
-Para añadir estilo a un componente en el archivo CSS:
+Para añadir estilos a un componente en el archivo CSS:
 1. Vaya a `[../Form Block/]` y abra `form.css`.
 1. Añada la siguiente línea de código:
 
@@ -212,18 +212,18 @@ Para añadir estilo a un componente en el archivo CSS:
 
 ### Implemente los archivos y genere el proyecto
 
-Implemente los archivos actualizados `range.js`, `mapping.css` y `form.css` en su proyecto de GitHub y verifique que la compilación se haya realizado correctamente.
+Implemente los archivos `range.js`, `mapping.css` y `form.css` actualizados en el proyecto de GitHub y compruebe que la compilación se ha realizado correctamente.
 
-### AEM Vista previa del formulario con la barra de tareas de la
+### Vista previa del formulario con AEM Sidekick
 
-Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para obtener una vista previa del formulario con la función recién implementada que aplica estilo al componente `range`.
+Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para obtener una vista previa del formulario con la función recién implementada que aplica estilos al componente `range`.
 
 ![Formulario de componente personalizado](/help/edge/assets/custom-componet-form.png)
 
-El nuevo estilo del componente `range` muestra los valores mínimo, máximo y seleccionado en la línea al agregar estilos mediante CSS y una función personalizada que incluye un decorador para el componente.
+El nuevo estilo del componente `range` muestra los valores mínimo, máximo y seleccionado en la línea mediante la adición de estilos con CSS y una función personalizada que incluye un decorador para el componente.
 
 
-## Ver también
+## Consulte también
 
 {{see-more-forms-eds}}
 

@@ -1,19 +1,19 @@
 ---
 title: Componentes de bloque de formulario adaptable y sus propiedades
-description: Este documento proporciona información general sobre los componentes de formulario y sus propiedades disponibles en Edge Delivery Services de AEM Forms.
+description: Este documento proporciona información general sobre los componentes del formulario y sus propiedades disponibles en Edge Delivery Services para AEM Forms.
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '1006'
-ht-degree: 100%
+source-wordcount: '1009'
+ht-degree: 96%
 
 ---
 
 # Componentes de bloque de formulario adaptable y sus propiedades
 
-Edge Delivery Services de AEM Forms permite crear formularios interactivos y fáciles de usar con varios componentes. Estos componentes se adaptan a diferentes tipos de recopilación de datos y se pueden personalizar fácilmente para adaptarlos a sus necesidades específicas.
+Edge Delivery Services para AEM Forms permite crear formularios interactivos y de fácil manejo utilizando varios componentes. Estos componentes se adaptan a diferentes tipos de recopilación de datos y se pueden personalizar fácilmente para adaptarlos a sus necesidades específicas.
 
 
 ![Una hoja de cálculo de ejemplo con algunos componentes y propiedades](/help/edge/assets/sample-form-in-spreadsheet.png)

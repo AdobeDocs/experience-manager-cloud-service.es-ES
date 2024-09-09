@@ -6,11 +6,11 @@ hide: true
 hidefromtoc: true
 exl-id: ba8c7220-55b3-4731-9e40-ce0c360c508d
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '27'
-ht-degree: 100%
+source-wordcount: '28'
+ht-degree: 64%
 
 ---
 
-# Perfeccionamiento de los fragmentos de formulario de Edge Delivery Services de AEM Forms
+# Dominio de fragmentos de formulario para Edge Delivery Services para AEM Forms
