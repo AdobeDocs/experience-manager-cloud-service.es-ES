@@ -3,10 +3,11 @@ title: Notas de la versión para Cloud Manager 2024.9.0 en Adobe Experience Mana
 description: Obtenga información acerca de las notas de la versión para Cloud Manager 2024.9.0 en AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
+source-git-commit: 610ae004b6da2f7fc0dae2baa613cb363fe9fb00
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 22%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,9 +33,17 @@ La fecha de lanzamiento de Cloud Manager 2024.9.0 en AEM as a Cloud Service es e
 
   Con Cloud Manager, ahora puede [generar y administrar certificados SSL DV (validación de dominio) de Adobe de autoservicio](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). Esta capacidad le ofrece la solución más rápida, sencilla y rentable para crear un sitio web seguro para su organización o negocio en línea. <!-- CMGR-52403 -->
 
+  >[!NOTE]
+  >
+  >Los clientes de [Content Hub](/help/assets/product-overview.md) tienen planeado recibir esta función por fases como parte de un despliegue gradual.
+
 * **Compatibilidad con Edge Delivery Services en Cloud Manager:**
 
-  Si tienes licencia de Edge Delivery Services como parte de AEM Sites, [ahora puedes incorporar tu sitio con Edge Delivery Services directamente a través de Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md). Esta función permite una experiencia de autoservicio y guiada en el lanzamiento. AEM También unifica los flujos de trabajo esenciales, como la administración de nombres de dominio, los certificados SSL y las asignaciones de CDN en todas las propiedades de la, lo que garantiza la coherencia y la eficacia. <!-- CMGR-49859 -->
+  Si tienes una licencia de Edge Delivery Services como parte de AEM Sites, [ahora puedes incorporar tu sitio con Edge Delivery Services directamente a través de Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md). Esta función permite una experiencia de autoservicio y guiada en el lanzamiento. AEM También unifica los flujos de trabajo esenciales, como la administración de nombres de dominio, los certificados SSL y las asignaciones de CDN en todas las propiedades de la, lo que garantiza la coherencia y la eficacia. <!-- CMGR-49859 -->
+
+  >[!NOTE]
+  >
+  >Los clientes de [Content Hub](/help/assets/product-overview.md) tienen planeado recibir esta función por fases como parte de un despliegue gradual.
 
 * Los clientes que utilizan repositorios de GitHub ahora tienen la capacidad de crear y utilizar canalizaciones de configuración de nivel web. <!--( KEEP IN? SP: YES CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 ) -->
 
