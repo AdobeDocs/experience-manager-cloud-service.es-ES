@@ -3,7 +3,7 @@ title: Selector de recursos para [!DNL Adobe Experience Manager] como un [!DNL C
 description: Utilice el Selector de recursos para buscar, buscar y recuperar metadatos y representaciones de recursos en la aplicación.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
+source-git-commit: 0b8c345efa4c8f59b423644944ca2a6f8d54cbb4
 workflow-type: tm+mt
 source-wordcount: '1295'
 ht-degree: 34%
@@ -221,7 +221,7 @@ El Selector de recursos le permite ver el recurso en cuatro vistas diferentes:
     </td>
     <td>
         <img src="assets/asset-selector-upload.gif" width="70px" height="70px" alt="Gráfico de carga del selector de recursos"><br/>
-        <a href="asset-selector-upload.md">Personalizaciones del selector de recursos</a>
+        <a href="asset-selector-upload.md">Carga del selector de recursos</a>
         <p>
         <em>Aprenda a cargar archivos o carpetas en el Selector de recursos desde su sistema de archivos local o de terceros. </em>
         </p>
