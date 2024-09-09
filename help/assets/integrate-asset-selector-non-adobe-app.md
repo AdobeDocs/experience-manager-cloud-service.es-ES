@@ -3,10 +3,10 @@ title: Selector de recursos para [!DNL Adobe Experience Manager] como un [!DNL C
 description: Integre el selector de recursos con varias aplicaciones de Adobe, que no sean de Adobe y de terceros.
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 6%
+source-wordcount: '424'
+ht-degree: 5%
 
 ---
 
@@ -141,3 +141,9 @@ El selector de recursos se procesa en el elemento contenedor `<div>`, como se me
 >
 >Si ha integrado el Selector de recursos mediante el flujo de trabajo de registro de inicio de sesión, pero sigue sin poder acceder al repositorio de envío, asegúrese de que las cookies del explorador se limpien. De lo contrario, obtendrá el error `invalid_credentials All session cookies are empty` en la consola.
 
+>[!MORELIKETHIS]
+>
+>* [Integrar el Selector de recursos con varias aplicaciones](/help/assets/integrate-asset-selector.md)
+>* [Propiedades del selector de recursos](/help/assets/asset-selector-properties.md)
+>* [Integrar el Selector de recursos con Dynamic Media con capacidades OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Personalizaciones del Selector de recursos](/help/assets/asset-selector-customization.md)

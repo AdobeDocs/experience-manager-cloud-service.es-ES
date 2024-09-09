@@ -3,9 +3,9 @@ title: Selector de recursos para [!DNL Adobe Experience Manager] como un [!DNL C
 description: Utilice funciones para personalizar el selector de recursos en la aplicación.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1243'
 ht-degree: 24%
 
 ---
@@ -611,4 +611,4 @@ const ControlledUploadExample = () => {
 >* [Propiedades del selector de recursos](/help/assets/asset-selector-properties.md)
 >* [Integrar el Selector de recursos con varias aplicaciones](/help/assets/integrate-asset-selector.md)
 >* [Propiedades del selector de recursos](/help/assets/asset-selector-properties.md)
->* [API abiertas de medios dinámicos del Selector de recursos integrado](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Integrar el Selector de recursos con Dynamic Media con capacidades OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

@@ -3,10 +3,10 @@ title: Selector de recursos para [!DNL Adobe Experience Manager] como un [!DNL C
 description: Integre el selector de recursos con varias aplicaciones de Adobe, que no sean de Adobe y de terceros.
 role: Admin, User
 exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
-source-git-commit: b85363b0a284929a2308ebee24888937f7c32841
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 47%
+source-wordcount: '178'
+ht-degree: 46%
 
 ---
 
@@ -36,6 +36,6 @@ Puede integrar el Selector de recursos con varias aplicaciones, como:
 
 >[!MORELIKETHIS]
 >
->* [Personalización del selector de recursos](/help/assets/asset-selector-customization.md)
+>* [Personalizaciones del Selector de recursos](/help/assets/asset-selector-customization.md)
 >* [Propiedades del selector de recursos](/help/assets/asset-selector-properties.md)
->* [API abiertas de medios dinámicos del Selector de recursos integrado](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Integrar el Selector de recursos con Dynamic Media con capacidades OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
