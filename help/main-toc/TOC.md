@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2bf129d763fcad024eb3799cdf2a97bdbc2472c5
+source-git-commit: bd6106256cf812d4420f1f9d84ec008d9cd18a46
 workflow-type: tm+mt
-source-wordcount: '5586'
-ht-degree: 97%
+source-wordcount: '5592'
+ht-degree: 98%
 
 ---
 
@@ -85,6 +85,7 @@ ht-degree: 97%
    + Notas de la versión de mantenimiento de AEMaaCS {#maintenance}
       + [Notas de la versión actuales sobre el mantenimiento](/help/release-notes/maintenance/latest.md)
       + 2024 {#2024}
+         + [Notas de la versión de mantenimiento de 2024.9.0](/help/release-notes/maintenance/2024/2024-9-0.md)
          + [Notas de la versión de mantenimiento de 2024.8.0](/help/release-notes/maintenance/2024/2024-8-0.md)
          + [Notas de la versión de mantenimiento de 2024.7.0](/help/release-notes/maintenance/2024/2024-7-0.md)
          + [Notas de la versión de mantenimiento de 2024.6.0](/help/release-notes/maintenance/2024/2024-6-0.md)
@@ -629,7 +630,7 @@ ht-degree: 97%
       + [Implementación de Content Hub](/help/assets/deploy-content-hub.md)
       + [Configuración de la interfaz de usuario de Content Hub](/help/assets/configure-content-hub-ui-options.md)
       + [Carga o importación de recursos aprobados por la marca en Content Hub](/help/assets/upload-brand-approved-assets.md)
-      + [Aprobar recursos para Content Hub](/help/assets/approve-assets-content-hub.md)
+      + [Aprobación de recursos para Content Hub](/help/assets/approve-assets-content-hub.md)
       + [Búsqueda de recursos en Content Hub](/help/assets/search-assets-content-hub.md)
       + [Propiedades del recurso](/help/assets/asset-properties-content-hub.md)
       + [Uso compartido de recursos en Content Hub](/help/assets/share-assets-content-hub.md)
@@ -739,11 +740,11 @@ ht-degree: 97%
                + [Introducción a las funciones personalizadas para formularios adaptables basados en componentes principales](/help/forms/create-and-use-custom-functions.md)
                + [Crear y utilizar una función personalizada para un Formulario adaptable basado en componentes principales](/help/forms/custom-function-core-component-create-function.md)
                + [Ejemplos de funciones personalizadas para un formulario adaptable basado en componentes principales](/help/forms/custom-function-core-components-use-cases.md)
-            + Introducción al portal de Forms y sus componentes {#introduction-to-forms-portal}
+            + Introducción al portal de Forms y sus componentes{#introduction-to-forms-portal}
                + [Introducción al componente Portal de Forms](/help/forms/configure-forms-portal.md)
-               + [Enumerar formularios en la página de Sites mediante el componente Buscar y listar](/help/forms/list-forms-on-sites-page.md)
-               + [Guardar y mostrar formularios como borradores en la página de Sites mediante el componente Borradores y envíos](/help/forms/save-core-component-based-form-as-draft.md)
-               + [Adición de vínculos de formulario a la página de Sites mediante el componente Vínculo](/help/forms/add-form-link-to-aem-sites-page.md)
+               + [Mostrar formularios en la página de Sites mediante el componente Buscar y listador](/help/forms/list-forms-on-sites-page.md)
+               + [Guardar y mostrar los formularios como borradores en la página de Sites mediante el componente Borradores y envíos](/help/forms/save-core-component-based-form-as-draft.md)
+               + [Adición de vínculos de formulario a la página de Sites mediante el componente Víncular](/help/forms/add-form-link-to-aem-sites-page.md)
       + Componentes de base {#authoring-adaptive-forms-foundation-components}
          + Convertir sus formularios PDF en formularios adaptables {#afcs}
             + [Introducción al servicio de conversión automatizada de formularios](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=es)

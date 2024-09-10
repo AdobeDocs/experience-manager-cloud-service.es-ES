@@ -2,7 +2,7 @@
 source-git-commit: 11368914a78c1f47c2f341a112bf981545cf6203
 workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 87%
+ht-degree: 89%
 
 ---
 # Fragmentos de código {#snippets}
@@ -131,10 +131,10 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 
 ## Portal de Forms {#forms-portal-see-also}
 
-* [Introducción a los componentes del portal de Forms](/help/forms/configure-forms-portal.md)
-* [Enumerar los formularios en la página de Sites](/help/forms/list-forms-on-sites-page.md)
+* [Introducción a los componentes del Portal de Forms](/help/forms/configure-forms-portal.md)
+* [Mostrar los formularios en la página de Sites](/help/forms/list-forms-on-sites-page.md)
 * [Guardar los formularios como borradores](/help/forms/save-core-component-based-form-as-draft.md)
-* [Adición de vínculos de formulario a una página de Sites](/help/forms/add-form-link-to-aem-sites-page.md)
+* [Añadir vínculos de formularios a una página de AEM Sites](/help/forms/add-form-link-to-aem-sites-page.md)
 
 
 ## Lista de IP permitidas de Cloud Manager y canalizaciones front-end {#allowlist-frontend-pipeline}
