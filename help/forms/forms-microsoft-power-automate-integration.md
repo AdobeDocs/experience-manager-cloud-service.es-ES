@@ -6,9 +6,9 @@ keywords: conectar AEM Forms a Power Automate, automatización de Power Automate
 feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: ae2815a49a674521344ded8da009290c4d999fdf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1209'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -74,10 +74,10 @@ Realice las siguientes acciones para conectar su instancia de Forms as a Cloud S
 
 1. En la página Permisos de API, haga clic en `Add a permission`.
 
-1. En las API de Microsoft®, seleccione `Power Automate` y los siguientes permisos.
+1. En las API de Microsoft®, seleccione `Power Automate` y selecione los siguientes permisos.
    * Flows.Manage.All
    * Flows.Read.All
-   * Permiso GCC (opcional si desea conectarse a un inquilino de GCC (Government Cloud Computing))
+   * Permiso GCC (opcional si desea conectarse a un inquilino de GCC [Government Cloud Computing])
 Haga clic en `Add permissions` para guardar los permisos.
 1. En la página Permisos de API, haga clic en `Add a permission`. Seleccione las API que utiliza mi organización y busque `DataVerse` y habilite `user_impersonation`. Haga clic en `Add` permisos.
 1. (Opcional) En la página Certificados y secretos, haga clic en Nuevo secreto de cliente. En la pantalla Añadir un secreto de cliente, aporte una descripción y un período de tiempo para que el secreto caduque y haga clic en Añadir. Se genera una cadena secreta.
@@ -117,10 +117,10 @@ Haga clic en `Add permissions` para guardar los permisos.
 
    >[!NOTE]
    >
-   > Si desea conectarse a un inquilino de GCC (Government Cloud Computing), seleccione el permiso GCC en Microsoft Azure Portal.
+   > Si desea conectarse a un inquilino GCC (Government Cloud Computing), seleccione el permiso GCC en Microsoft Azure Portal.
 
 
-   ![Configuración de nube de Power Automate](/help/forms/assets/power-automate.png)
+   ![Configuración de la nube de Power Automate](/help/forms/assets/power-automate.png)
 
 1. En la página **[!UICONTROL Configurar Dataverse para Microsoft® Power Automate]**, especifique el **[!UICONTROL ID del cliente]** (también denominado ID de aplicación), el **[!UICONTROL secreto del cliente]**, la **[!UICONTROL URL de OAuth]** y la **[!UICONTROL URL del entorno de Dynamics]**. Utilice el ID del cliente, el secreto del cliente, la URL de OAuth y el ID del entorno de Dynamics. Utilice la opción Puntos finales en la interfaz de usuario de la aplicación de Microsoft® Azure Active Directory para encontrar la URL de OAuth. Abra el vínculo [Mis flujos](https://us.flow.microsoft.com) y seleccione Mis flujos para usar el ID indicado en la URL como ID del entorno de Dynamics.
 
