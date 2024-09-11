@@ -4,7 +4,7 @@ description: Conozca las directrices para el desarrollo en AEM as a Cloud Servic
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: ea631743af99879d2a76d3a4a78ecf5883f39c69
+source-git-commit: 16379d9cb7cdf876502205c12a233a95b410a67a
 workflow-type: tm+mt
 source-wordcount: '2770'
 ht-degree: 4%
@@ -183,7 +183,7 @@ En el desarrollo local (mediante el SDK), `/apps` y `/libs` se pueden escribir d
 >
 
 >[!NOTE]
->Algunos clientes tendrán la opción de probar una experiencia renovada para AEM Cloud Service Developer Console. Consulte [este artículo](/help/implementing/developing/introduction/developer-console.md) para obtener más información.]
+>Algunos clientes tendrán la opción de probar una experiencia renovada para AEM Cloud Service Developer Console. Consulte [este artículo](/help/implementing/developing/introduction/aem-developer-console.md) para obtener más información.]
 
 Los clientes pueden acceder a la lista CRXDE en el entorno de desarrollo del nivel de creación, pero no en la fase o en la producción. El repositorio inmutable (`/libs`, `/apps`) no se puede escribir en el tiempo de ejecución, por lo que al intentar hacerlo se producirán errores.
 
