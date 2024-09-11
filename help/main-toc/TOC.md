@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 16379d9cb7cdf876502205c12a233a95b410a67a
+source-git-commit: 26225938ff525a782314820f32f28c5af98c3669
 workflow-type: tm+mt
-source-wordcount: '5593'
+source-wordcount: '5598'
 ht-degree: 98%
 
 ---
@@ -121,7 +121,7 @@ ht-degree: 98%
          + [Notas de la versión 2023.9.0](/help/implementing/cloud-manager/release-notes/2023/2023-9-0.md)
          + [Notas de la versión 2023.8.0](/help/implementing/cloud-manager/release-notes/2023/2023-8-0.md)
          + [Notas de la versión 2023.7.0](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
-         + [Notas de la versión 2023.6.0](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
+         + [Notas de la versión de 2023.6.0](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
          + [Notas de la versión 2023.5.0](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
          + [Notas de la versión 2023.4.0](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
          + [Notas de la versión 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
@@ -129,8 +129,8 @@ ht-degree: 98%
          + [Notas de la versión 2023.1.0](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
       + 2022 {#2022}
          + [Notas de la versión 2022.12.0](/help/implementing/cloud-manager/release-notes/2022/2022-12-0.md)
-         + [Notas de la versión 2022.11.0](/help/implementing/cloud-manager/release-notes/2022/2022-11-0.md)
-         + [Notas de la versión 2022.10.0](/help/implementing/cloud-manager/release-notes/2022/2022-10-0.md)
+         + [Notas de la versión de 2022.11.0](/help/implementing/cloud-manager/release-notes/2022/2022-11-0.md)
+         + [Notas de la versión de 2022.10.0](/help/implementing/cloud-manager/release-notes/2022/2022-10-0.md)
          + [Notas de la versión 2022.9.0](/help/implementing/cloud-manager/release-notes/2022/2022-9-0.md)
          + [Notas de la versión 2022.8.0](/help/implementing/cloud-manager/release-notes/2022/2022-8-0.md)
          + [Notas de la versión 2022.7.0](/help/implementing/cloud-manager/release-notes/2022/2022-7-0.md)
@@ -170,6 +170,7 @@ ht-degree: 98%
       + 2024 {#2024}
          + [Notas de la versión 2024.01.0](/help/journey-migration/release-notes/release-notes-migration-tools-2024-01-0.md)
          + [Notas de la versión 2024.05.0](/help/journey-migration/release-notes/release-notes-migration-tools-2024-05-0.md)
+         + [Notas de la versión 2024.07.0](/help/journey-migration/release-notes/release-notes-migration-tools-2024-07-0.md)
       + 2023 {#2023}
          + [Notas de la versión 2023.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-10-0.md)
          + [Notas de la versión 2023.9.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-09-0.md)

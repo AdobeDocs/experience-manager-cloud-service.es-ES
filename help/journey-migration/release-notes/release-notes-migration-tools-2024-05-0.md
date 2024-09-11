@@ -3,9 +3,10 @@ title: Notas de la versión de las herramientas de migración de la versión 202
 description: Notas de la versión de las herramientas de migración de la versión 2024.05.0 de AEM as a Cloud Service
 feature: Release Information
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+exl-id: f50a74fa-ad7d-4837-b0a1-9945c32af02f
+source-git-commit: 3b2ed44b438fe8587a9b9603ddfacc41111fb903
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '208'
 ht-degree: 6%
 
 ---
@@ -18,11 +19,16 @@ Esta página describe las notas de la versión de las herramientas de migración
 
 ### Fecha de la versión {#release-date-bpa}
 
-La fecha de lanzamiento del Analizador de prácticas recomendadas v2.1.48 es el 9 de mayo de 2024.
+La fecha de lanzamiento del Analizador de prácticas recomendadas v2.1.50 es mayo de 2024.
 
 ### Novedades {#what-is-new-bpa}
 
 * El Analizador de prácticas recomendadas (BPA) ahora admite la carga automática de informes generados por BPA directamente en Cloud Acceleration Manager (CAM). Los usuarios ya no tendrán que descargar manualmente el informe y cargarlo en CAM. Para obtener más información, consulte [Uso del Analizador de prácticas recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
+
+### Corrección de errores {#bug-fixes-bpa}
+
+* El Analizador de prácticas recomendadas ahora detecta todos los nodos de más de 16 MB
+* Condición de la carrera que causa ocurrencias esporádicas de hallazgos del NCC corregidos.
 
 ## Cloud Acceleration Manager {#cam-release}
 
