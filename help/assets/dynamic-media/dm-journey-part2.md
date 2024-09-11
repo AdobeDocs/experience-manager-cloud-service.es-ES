@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
+source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
 workflow-type: tm+mt
 source-wordcount: '2621'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Recorrido de Dynamic Media: Conceptos básicos, parte II  {#dm-journey-part2}
 
-{{work-with-dynamic-media}}
+{{see-also-dm}}
 
 Bienvenido al Recorrido de Dynamic Media: Conceptos básicos, parte II, donde aprenderá lo siguiente:
 
@@ -211,8 +211,6 @@ Acaba de leer acerca de los conjuntos de imágenes y visores. Veamos un par de o
 ## Opcional: Más información
 
 Si desea obtener más información sobre lo que acaba de leer, utilice los materiales siguientes para explorar los conceptos con mayor detalle. De lo contrario, el Recorrido de Dynamic Media se habrá completado.
-
-{{see-also-dm}}
 
 <!--
 _Dynamic Media Help topics_

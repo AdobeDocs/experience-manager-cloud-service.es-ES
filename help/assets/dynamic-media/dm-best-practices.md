@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
+source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 0%
@@ -33,7 +33,7 @@ In the accompanying guide, you'll find a comprehensive list of best practices fo
 
 Stage Business Problem Best Practice Recommendation: This section will outline specific business challenges and provide targeted best practices and recommendations to address them effectively. -->
 
-{{work-with-dynamic-media}}
+{{see-also-dm}}
 
 Las organizaciones se enfrentan a una explosión de canales y dispositivos para interactuar con los usuarios. El recorrido del cliente abarca tiendas físicas, web, móviles, medios sociales, correos electrónicos y comercio. Para satisfacer esta demanda, Dynamic Media en Adobe Experience Manager AEM () ofrece una solución completa. Optimiza la entrega de recursos, gestiona la personalización y garantiza experiencias coherentes, de rendimiento y alineadas con la marca en todos los canales y dispositivos.
 
@@ -412,4 +412,3 @@ La CDN (red de distribución de contenido) almacena en caché los recursos de Dy
 
 ¿Desea obtener más información? Vaya a [Invalidar la caché de CDN mediante Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
-{{see-also-dm}}

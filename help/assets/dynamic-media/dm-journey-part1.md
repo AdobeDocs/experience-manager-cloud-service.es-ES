@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
+source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
 workflow-type: tm+mt
 source-wordcount: '3615'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Recorrido de Dynamic Media: Conceptos básicos, parte I {#dm-journey-part1}
 
-{{work-with-dynamic-media}}
+{{see-also-dm}}
 
 Bienvenido al Recorrido de Dynamic Media.
 
@@ -268,7 +268,6 @@ La representación anterior está activa. [Inténtelo](https://s7d1.scene7.com/s
 
 La parte I de este recorrido abarcó los conceptos básicos de varios temas de Dynamic Media. Si desea obtener más información sobre lo que lee, utilice los materiales a continuación para explorar conceptos con mayor detalle. De lo contrario, puede continuar con la Parte II de su recorrido. Ver [Qué sigue en este Recorrido de Dynamic Media](#whats-next).
 
-{{see-also-dm}}
 <!--
 _Dynamic Media Help topics_
 
