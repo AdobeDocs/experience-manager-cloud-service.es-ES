@@ -5,14 +5,14 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '384'
 ht-degree: 4%
 
 ---
 
-# Tablero de rendimiento de CDN {#cdn-performance}
+# Panel de rendimiento de CDN {#cdn-performance}
 
 Comprenda cómo Cloud Manager evalúa el rendimiento de la red de entrega de contenido (CDN) y lo que puede aprender del tablero.
 
@@ -22,7 +22,7 @@ Cada programa de Cloud Manager tiene un panel de rendimiento de CDN. Este panel 
 
 ![Panel de rendimiento de CDN](assets/cdn-performance-dashboard.png)
 
-## Acceso al panel {#accessing}
+## Acceso al tablero {#accessing}
 
 El panel CDN está disponible en la página de información general de cada programa.
 
@@ -36,7 +36,7 @@ El panel CDN está disponible en la página de información general de cada prog
 
    ![Rendimiento](assets/cdn-performance-overview.png)
 
-## Uso del panel {#using}
+## Uso del tablero {#using}
 
 El panel presenta una puntuación general para el rendimiento de la CDN junto con tendencias, alertas y sugerencias para la mejora, según sea necesario.
 
@@ -75,4 +75,4 @@ Las métricas de caché se actualizan cada 24 horas.
 
 >[!TIP]
 >
->Para obtener más información sobre cómo Cloud Manager y la CDN interactúan con Dispatcher, consulte el documento [Almacenamiento en caché en AEM as a Cloud Service](/help/implementing/dispatcher/caching.md).
+>Para obtener más información sobre cómo Cloud Manager y la red de distribución de contenido (CDN) interactúan con Dispatcher, consulte [Almacenamiento en caché en AEM as a Cloud Service](/help/implementing/dispatcher/caching.md).

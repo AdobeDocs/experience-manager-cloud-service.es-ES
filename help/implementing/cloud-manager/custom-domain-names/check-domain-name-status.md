@@ -1,29 +1,29 @@
 ---
 title: Comprobar el estado del nombre de dominio
-description: Obtenga información sobre cómo determinar si Cloud Manager ha verificado correctamente su nombre de dominio personalizado.
+description: Obtenga información sobre cómo comprobar que Cloud Manager ha confirmado correctamente su nombre de dominio personalizado.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 3ff7b76f7892269f6ca001ff2c079bc693c06d93
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 64%
+source-wordcount: '822'
+ht-degree: 28%
 
 ---
 
 
-# Comprobar el estado del nombre de dominio {#check-status}
+# Comprobar estado del nombre de dominio {#check-status}
 
-Obtenga información sobre cómo determinar si Cloud Manager ha verificado correctamente su nombre de dominio personalizado.
+Obtenga información sobre cómo comprobar que Cloud Manager ha confirmado correctamente su nombre de dominio personalizado.
 
 ## Requisitos  {#requirements}
 
-Debe cumplir estos requisitos antes de comprobar el estado de su nombre de dominio en Cloud Manager.
+Complete estos requisitos antes de comprobar el estado de su nombre de dominio en Cloud Manager.
 
-* Primero debe agregar un registro TXT para su dominio personalizado como se describe en el documento [Agregar un registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md).
+* Primero agregue un registro TXT para su dominio personalizado como se describe en el documento [Agregue un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
-## Cómo comprobar el estado del nombre de dominio personalizado {#how-to}
+## Comprobar el estado del nombre de dominio personalizado {#how-to}
 
 Puede determinar el estado del nombre de dominio personalizado en Cloud Manager.
 
@@ -41,36 +41,21 @@ Se muestra el detalle del estado. Su dominio personalizado está listo para usar
 
 >[!NOTE]
 >
->Cloud Manager guardará automáticamente en déclencheur la verificación cuando seleccione **Crear** en el paso de verificación del asistente **Agregar dominio personalizado** al [agregar un nuevo nombre de dominio personalizado a Cloud Manager](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). Para las verificaciones posteriores, debe seleccionar el icono Verificar de nuevo situado junto al estado.
+>Cloud Manager déclencheur automáticamente la verificación al seleccionar **Crear** en el paso de verificación del asistente **Agregar dominio personalizado** al [agregar un nuevo nombre de dominio personalizado a Cloud Manager](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). Para las verificaciones posteriores, debe seleccionar el icono Verificar de nuevo situado junto al estado.
 
-## Explicación de los estados de verificación {#statuses}
+## Estados de verificación {#statuses}
 
-Cloud Manager comprobará la propiedad del dominio mediante el [valor TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) y mostrará uno de los siguientes mensajes de estado.
+Cloud Manager comprueba la propiedad del dominio mediante el [valor TXT](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) y muestra uno de los siguientes mensajes de estado.
 
-* **Error en la comprobación del dominio**: falta el valor TXT o se detecta con errores.
+| Estado | Descripción |
+| --- | --- |
+| Error de verificación de dominio | Falta el valor TXT o se detecta con errores.<br> Siga las instrucciones proporcionadas en el mensaje de estado para resolver el problema. Cuando esté listo, debe seleccionar el icono **Verificar de nuevo** junto al estado. |
+| Verificación del dominio en curso | La verificación está en curso.<br>Este estado suele verse después de seleccionar el icono **Verificar de nuevo** junto al estado. La verificación del DNS puede tardar unas horas en procesarse debido a los retrasos de propagación del DNS. |
+| Verificado: error de implementación | La verificación TXT se realizó correctamente, pero la implementación de CDN falló.<br>En tales casos, comuníquese con el representante del Adobe. |
+| Dominio verificado e implementado | Este estado indica que el nombre de dominio personalizado está listo para utilizarse.<br>En este momento, su nombre de dominio personalizado está listo para la prueba y se dirigirá al nombre de dominio de Cloud Manager. Consulte [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) para obtener más información. |
+| Eliminando | La eliminación de un nombre de dominio personalizado está en curso. |
+| Error de eliminación | Error al eliminar un nombre de dominio personalizado y se debe volver a intentar.<br>Vea [Administrar nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) para obtener más información. |
 
-   * Siga las instrucciones proporcionadas en el mensaje de estado para resolver el problema.
-   * Cuando esté listo, debe seleccionar el icono **Verificar de nuevo** junto al estado.
-
-* **Verificación de dominio en curso**: la verificación está en curso.
-
-   * Este estado suele verse después de seleccionar el icono **Verificar de nuevo** junto al estado.
-   * La verificación del DNS puede tardar unas horas en procesarse debido a los retrasos de propagación del DNS.
-
-* **Verificado, Error De Implementación**: la verificación TXT se realizó correctamente, pero la implementación de CDN falló.
-
-   * En tales casos, póngase en contacto con su representante de Adobe.
-
-* **Dominio verificado e implementado**: este estado indica que el nombre de dominio personalizado está listo para utilizarse.
-
-   * En este punto, su nombre de dominio personalizado está listo para la prueba y se dirigirá al nombre de dominio de Cloud Manager.
-   * Consulte [Configuración de DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) para obtener más información.
-
-* **Eliminando**: la eliminación de un nombre de dominio personalizado está en curso.
-
-* **Error de eliminación**: error al eliminar el nombre de dominio personalizado y se debe volver a intentar.
-
-   * Consulte [Administración de nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) para obtener más información.
 
 ## Errores de nombre de dominio {#domain-error}
 
@@ -82,7 +67,7 @@ Este error puede ocurrir durante la validación del dominio del registro TXT, in
 
 #### Causa de error {#cause}
 
-Fastly fija un dominio a la cuenta inicial que lo registró y ninguna otra cuenta puede registrar un subdominio sin solicitar permiso. Además, solo Fastly le permite asignar un dominio Apex y subdominios asociados a un servicio y una cuenta de Fastly. Si tiene una cuenta existente de Facebook que vincula los mismos Apex y subdominios utilizados para sus dominios de AEM Cloud Service, verá este error.
+Fastly fija un dominio a la cuenta que lo registra primero, y otras cuentas deben solicitar permiso para registrar un subdominio. Además, solo Fastly le permite asignar un dominio Apex y subdominios asociados a un servicio y una cuenta de Fastly. Si tiene una cuenta existente de Facebook que vincula los mismos Apex y subdominios utilizados para sus dominios de AEM Cloud Service, verá este error.
 
 #### Resolución de errores {#resolution}
 
@@ -92,7 +77,7 @@ El error se corrige de la siguiente manera:
 
 * Utilice esta opción para vincular el dominio Apex y todos los subdominios a la cuenta de AEM as a Cloud Service de Fastly. Consulte [Uso de dominios en la documentación de Fastly](https://docs.fastly.com/en/guides/working-with-domains) para obtener más información.
 
-* Si el dominio de Apex tiene varios subdominios para páginas tanto AEM as a Cloud Service como no AEM que desee vincular a distintas cuentas de Fastly, intente instalar el dominio en Cloud Manager. Si la instalación del dominio falla, cree un ticket de asistencia al cliente con Fastly para que Adobe pueda seguir con Fastly en su nombre.
+* Si el dominio Apex tiene varios subdominios para AEM as a Cloud Service AEM y sitios que no sean de la red y que necesitan vincularse a distintas cuentas de Fastly, intente instalar el dominio en Cloud Manager. Este proceso ayuda a administrar las conexiones de subdominios en diferentes cuentas de Fastly. Si la instalación del dominio falla, cree un ticket de asistencia al cliente con Fastly para que el Adobe pueda seguir con Fastly en su nombre.
 
 >[!TIP]
 >
@@ -104,12 +89,12 @@ El error se corrige de la siguiente manera:
 
 ## Configuraciones preexistentes de CDN para nombres de dominio personalizados {#pre-existing-cdn}
 
-Si tiene una configuración de CDN preexistente para sus nombres de dominio personalizados, hay un mensaje informativo en las páginas **Nombres de dominio personalizados** y **Entorno**, que le anima a agregar estas configuraciones a través de la interfaz de usuario para que sean visibles y configurables en Cloud Manager.
+Si ya tiene una configuración de CDN para sus nombres de dominio personalizados, aparecerá un mensaje informativo en las páginas **Nombres de dominio personalizados** y **Entorno**. Le anima a añadir estas configuraciones a través de la interfaz de usuario para que se puedan administrar y ver en Cloud Manager.
 
-El mensaje desaparece una vez que se migran todas las configuraciones de entorno preexistentes mediante la interfaz de usuario. El mensaje puede tardar entre 1 y 2 días hábiles en desaparecer.
+El mensaje desaparece después de migrar todas las configuraciones de entorno preexistentes mediante la interfaz de usuario. El mensaje puede tardar entre 1 y 2 días hábiles en desaparecer.
 
-Consulte [Adición de un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) para obtener más información.
+Consulte [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) para obtener más información.
 
-## Siguientes pasos {#next-steps}
+## Pasos siguientes {#next-steps}
 
-Una vez que haya comprobado el estado del dominio en Cloud Manager, deberá configurar los ajustes de DNS agregando registros CNAME o APEX DNS que apunten a AEM as a Cloud Service. Continúe con el documento [Configuración de DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) para seguir configurando el nombre de dominio personalizado.
+Después de comprobar el estado del dominio en Cloud Manager, configure las opciones de DNS agregando registros DNS, CNAME o APEX que apunten a AEM as a Cloud Service. Continúe con el documento [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) para continuar configurando el nombre de dominio personalizado.

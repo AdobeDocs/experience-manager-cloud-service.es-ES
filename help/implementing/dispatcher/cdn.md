@@ -4,9 +4,9 @@ description: AEM AEM Aprenda a utilizar la CDN administrada por el y a apuntar s
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
+source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1607'
 ht-degree: 11%
 
 ---
@@ -35,8 +35,10 @@ Los clientes que deseen publicar en el nivel de Edge Delivery Services pueden ap
 AEM Con el fin de prepararse para la entrega de contenido mediante el uso de CDN integrada de Cloud Manager mediante el uso de la interfaz de usuario de autoservicio, puede aprovechar las funciones de CDN administradas por Adobe. Esta funcionalidad le permite gestionar la administración de CDN de autoservicio, incluida la configuración e instalación de certificados SSL como certificados DV (validación de dominio) o EV/OV (validación extendida/de organización). Para obtener más información sobre estos métodos, consulte lo siguiente:
 
 * [Administrar certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+* [Agregar una configuración de CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
 * [Administrar nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 * [Compatibilidad con Edge Delivery Services en Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md)
+
 
 **Restricción de tráfico**
 

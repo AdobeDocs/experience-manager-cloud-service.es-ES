@@ -5,9 +5,9 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
+source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '705'
 ht-degree: 43%
 
 ---
@@ -38,7 +38,7 @@ Puede comprar un nombre de dominio a través de un registrador de nombres de dom
 
 ## Nombres de dominio personalizados y sus propias CDN {#byo-cdn}
 
-AEM as a Cloud Service AEM ofrece un servicio integrado de red de entrega de contenido (CDN), pero también le permite comprar y adquirir su propia CDN para utilizarla con los servicios de red de distribución de contenido (CDN) de la red de distribución de contenido (CDN) para hacer uso de la red de distribución de contenido (CDN) con los. Los dominios personalizados pueden instalarse en la CDN administrada por AEM o en una CDN que administre usted.
+AEM as a Cloud Service AEM ofrece un servicio integrado de CDN (red de distribución de contenido), pero también le permite comprar y traer su propia CDN para utilizarla con los servicios de red de distribución de contenido (CDN) de la red de distribución de contenido (CDN) para usar con los servicios de red de distribución de contenido (). Los dominios personalizados pueden instalarse en la CDN administrada por AEM o en una CDN que administre usted.
 
 * Cloud Manager AEM administra los nombres de dominio personalizados y los certificados instalados en la CDN administrada por la CDN que administra la.
 * Los nombres de dominio personalizados y los certificados instalados en una CDN BYO se administran directamente dentro de esa CDN.
@@ -52,13 +52,12 @@ AEM En un entorno, puede tener ambos dominios instalados en la CDN administrada 
 Para agregar un nombre de dominio personalizado es necesaria la interacción entre el servicio DNS y Cloud Manager. Debido a este flujo de trabajo, se requieren varios pasos para instalar, configurar y comprobar los nombres de dominio personalizados. En la tabla siguiente se ofrece una descripción general de los pasos necesarios, incluidos vínculos a recursos de documentación para completar esos pasos.
 
 | Paso | Descripción | Documentación |
-|---|---|---|
+| --- | --- | --- |
 | 1 | Agregar certificado SSL a Cloud Manager | [Agregar un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | Añadir dominio personalizado a Cloud Manager | [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 3 | Agregar registro TXT para verificar el dominio | [Agregar un registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
+| 3 | Configurar la configuración de DNS agregando registros CNAME o APEX DNS que apunten a AEM as a Cloud Service | [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
 | 4 | Revisar estado de verificación del dominio | [Comprobar el estado del nombre de dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 5 | Configurar la configuración de DNS agregando registros CNAME o APEX DNS que apunten a AEM as a Cloud Service | [Configurar la configuración de DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) |
-| 6 | Comprobar el estado del registro DNS | [Comprobar el estado del registro DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+| 5 | Comprobar el estado del registro DNS | [Comprobar el estado del registro DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
 >

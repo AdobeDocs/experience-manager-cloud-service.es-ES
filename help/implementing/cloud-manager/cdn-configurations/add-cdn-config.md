@@ -4,13 +4,13 @@ description: Obtenga información acerca de cómo añadir una configuración de 
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e57a6ceb2482e61acabe928da0f539d26989985c
+exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
+source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 8%
 
 ---
-
 
 # Añadir una configuración de CDN {#add-cdn}
 
@@ -41,7 +41,3 @@ Debe completar la adición de una configuración de CDN para configurar un domin
    * Seleccione el certificado SSL. Solo es necesario si ha seleccionado **CDN administrado por Adobe** como tipo de CDN.
 
 1. Haga clic en **Guardar**.
-
-
-
-
