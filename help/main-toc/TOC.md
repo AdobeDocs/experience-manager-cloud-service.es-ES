@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 26225938ff525a782314820f32f28c5af98c3669
+source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
 workflow-type: tm+mt
-source-wordcount: '5598'
-ht-degree: 98%
+source-wordcount: '5602'
+ht-degree: 97%
 
 ---
 
@@ -1066,6 +1066,8 @@ ht-degree: 98%
    + [Generar variaciones](/help/generative-ai/generate-variations.md)
 + Implementación {#implementing}
    + [Implementación de aplicaciones para AEM as a Cloud Service](/help/implementing/home.md)
+
+
    + Uso de Cloud Manager {#using-cloud-manager}
       + [Navegación](/help/implementing/cloud-manager/navigation.md)
       + Programas {#programs}
@@ -1073,21 +1075,21 @@ ht-degree: 98%
          + [Programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
          + [Creación de programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
          + [Programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-         + [Creación de programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-         + [Edición de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+         + [Crear programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+         + [Editar programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [Entornos en hibernación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + Creación de un proyecto de aplicación de AEM {#create-application-project}
          + [Asistente para la creación de proyectos](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [Configuración del proyecto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [Entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
-      + [Administración de entornos](/help/implementing/cloud-manager/manage-environments.md)
+      + [Administrar entornos](/help/implementing/cloud-manager/manage-environments.md)
       + Administrar el código {#managing-code}
          + [Administrar versiones del proyecto de Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Administración de repositorios en Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-         + [Adición de repositorios de Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
-         + [Adición de repositorios privados](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [Acceso a repositorios](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-         + [Compatibilidad con el submódulo Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
+         + [Añadir repositorios de Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [Añadir repositorios privados](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+         + [Acceder a repositorios](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+         + [Compatibilidad con los submódulos de Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Uso de Git con Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [Uso de varios repositorios](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [Configuración del equipo de desarrollo empresarial](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
@@ -1096,11 +1098,11 @@ ht-degree: 98%
       + [Variables de entorno](/help/implementing/cloud-manager/environment-variables.md)
       + Canalizaciones de CI-CD de Cloud Manager {#cicd-pipelines}
          + [Introducción](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
-         + [Configuración de una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-         + [Configuración de una canalización que no es de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-         + [Administración de canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
+         + [Configurar una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+         + [Configurar una canalización que no sea de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+         + [Administrar canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
          + [Variables de canalización](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
-      + [Implementación del código](/help/implementing/cloud-manager/deploy-code.md)
+      + [Implementar el código](/help/implementing/cloud-manager/deploy-code.md)
       + Comprender los resultados de la prueba {#test-results}
          + [Información general](/help/implementing/cloud-manager/overview-test-results.md)
          + [Prueba de calidad del código](/help/implementing/cloud-manager/code-quality-testing.md)
@@ -1121,25 +1123,28 @@ ht-degree: 98%
          + [Compatibilidad con Edge Delivery en Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md)
       + Configuración de dominio {#custom-domain-names}
          + [Introducción](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-         + [Añadir un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-         + [Comprobación del estado del nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
-         + [Comprobación del estado de registro DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
-         + [Administración de nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+         + [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+         + [Comprobar estado del nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
+         + [Comprobar estado de registro DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
+         + [Administrar los nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + Certificados SSL {#manage-ssl-certificates}
          + [Introducción](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-         + [Adición de un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-         + [Administración de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+         + [Agregar un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+         + [Solucionar errores de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
+         + [Administrar certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + Configuraciones de CDN {#cdn-configurations}
          + [Añadir una configuración de CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
       + Listas de permitidos de IP {#ip-allow-lists}
          + [Introducción](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
-         + [Adición de una lista de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-         + [Aplicación y cancelación de la aplicación de listas de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-         + [Administración de listas de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
+         + [Agregar una lista de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
+         + [Aplicar y dejar de aplicar Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+         + [Administrar listas de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [Tablero de licencias](/help/implementing/cloud-manager/license-dashboard.md)
-      + [Explicación de las solicitudes de contenido de Cloud Service](/help/implementing/cloud-manager/content-requests.md)
+      + [Comprender las solicitudes de contenido de Cloud Service](/help/implementing/cloud-manager/content-requests.md)
       + [Tablero de rendimiento de CDN](/help/implementing/cloud-manager/cdn-performance.md)
       + [Preguntas frecuentes sobre Cloud Manager](/help/implementing/cloud-manager/faqs.md)
+
+
    + Desarrollo para AEM as a Cloud Service {#developing}
       + [Estructura del proyecto AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [Paquete de estructura del repositorio de proyectos de AEM](/help/implementing/developing/introduction/repository-structure-package.md)

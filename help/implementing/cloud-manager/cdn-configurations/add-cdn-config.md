@@ -5,39 +5,47 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
+source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 8%
+source-wordcount: '343'
+ht-degree: 6%
 
 ---
 
+
 # Añadir una configuración de CDN {#add-cdn}
 
-Debe completar la adición de una configuración de CDN para configurar un dominio con un SSL.
+Para vincular un dominio con un certificado SSL en la CDN administrada por Adobe dentro del programa, debe agregar una configuración de CDN (red de distribución de contenido).
 
+En el caso de las CDN administradas por Adobe, al utilizar certificados DV, solo se permiten sitios con validación ACME.
+
+>[!IMPORTANT]
 >
->
->En el caso de las CDN administradas por Adobe, al utilizar certificados DV, solo se permiten sitios con validación ACME.
+>¿Ha [agregado un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) y [agregado un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md), respectivamente? Si no es así, debe completar estas dos tareas antes de agregar una configuración de CDN.
 
 **Para agregar una configuración de CDN:**
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. Haga clic en **Configuraciones de CDN**.
+1. En el panel de navegación izquierdo, en **Servicios**, haga clic en **Configuraciones de CDN**.
 
 1. Cerca de la esquina superior derecha de la página Configuraciones de CDN, haga clic en **Agregar**.
 
    ![Cuadro de diálogo Configurar CDN](/help/implementing/cloud-manager/assets/configure-cdn-dialog.png)
 
-1. En el cuadro de diálogo **Configurar CDN**, proporcione la información necesaria.
+1. En el cuadro de diálogo **Configurar CDN**, en la lista desplegable **Origen**, seleccione una de las siguientes opciones:
 
-   * En la lista desplegable **Origen**, realice una de las siguientes acciones:
-      * **Sitios:** Seleccione un sitio de Edge Delivery Services.
-      * **Entornos:** Seleccione un entorno de Cloud Service.
-         * **Nivel:** Seleccione un nivel web de **Publish** o **Vista previa** para el entorno seleccionado.
-   * Seleccione su tipo de CDN: **CDN administrado por Adobe** o **Otro proveedor de CDN**.
-   * Seleccione el dominio.
-   * Seleccione el certificado SSL. Solo es necesario si ha seleccionado **CDN administrado por Adobe** como tipo de CDN.
+   | Origen | Descripción |
+   | --- | --- |
+   | Sites | Seleccione un sitio de Edge Delivery. |
+   | Entorno | Seleccione un entorno de Cloud Service AEM específico que desee segmentar en la configuración de la.<br>En la lista desplegable **Nivel**, seleccione una de las siguientes opciones:<br>· Seleccione **Publish** para segmentar un entorno de producción activo en el que el contenido se entregue a los usuarios finales.<br>· Seleccione **Vista previa** para entornos de ensayo o de no producción donde pruebe los cambios antes de que se activen. |
+
+1. Seleccione el tipo de CDN seleccionando una de las siguientes opciones:
+
+   | Tipo de CDN | Descripción |
+   | --- | --- |
+   | CDN administrada por Adobe | a. En la lista desplegable **Dominio**, seleccione el nombre de dominio que desee usar.<br>No hay dominios comprobados disponibles en la lista desplegable? Consulte [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).<br>b. En la lista desplegable Certificado SSL, seleccione el certificado que desee utilizar.<br>No hay certificados SSL disponibles en la lista desplegable? Consulte [Agregar un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
+   | Otro proveedor de CDN. | Seleccione esta opción si utiliza su propio proveedor de CDN y no la CDN administrada por Adobe que está disponible.<br>En la lista desplegable **Dominio**, seleccione el nombre de dominio que desee usar.<br>No hay certificados SSL disponibles en la lista desplegable? Consulte [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
+
 
 1. Haga clic en **Guardar**.
