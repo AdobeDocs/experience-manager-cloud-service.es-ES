@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
+source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 6%
@@ -46,6 +46,5 @@ En el caso de las CDN administradas por Adobe, al utilizar certificados DV, solo
    | --- | --- |
    | CDN administrada por Adobe | a. En la lista desplegable **Dominio**, seleccione el nombre de dominio que desee usar.<br>No hay dominios comprobados disponibles en la lista desplegable? Consulte [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).<br>b. En la lista desplegable Certificado SSL, seleccione el certificado que desee utilizar.<br>No hay certificados SSL disponibles en la lista desplegable? Consulte [Agregar un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
    | Otro proveedor de CDN. | Seleccione esta opción si utiliza su propio proveedor de CDN y no la CDN administrada por Adobe que está disponible.<br>En la lista desplegable **Dominio**, seleccione el nombre de dominio que desee usar.<br>No hay certificados SSL disponibles en la lista desplegable? Consulte [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
-
 
 1. Haga clic en **Guardar**.

@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
+source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
 workflow-type: tm+mt
 source-wordcount: '722'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
@@ -25,15 +25,15 @@ El estado de sus certificados SSL se puede entender de un vistazo desde la pági
 | --- | --- |
 | Verde | El certificado es válido durante al menos 14 días desde la fecha actual. |
 | Naranja | El certificado caducará en menos de 14 días.<br>· Asegúrese de que tiene un plan para renovar su certificado y reemplazarlo mediante la interfaz de usuario de Cloud Manager para evitar posibles interrupciones o accesos al sitio.<br>· Cloud Manager envía notificaciones regulares en la interfaz de usuario para avisarle de una caducidad inminente del certificado. |
-| Rojo | El certificado SSL ha caducado.<br>Consulte [Actualizar un certificado SSL administrado por el cliente y caducado](#update-ssl-certificate) o [Eliminar un certificado SSL](#deleting-an-ssl-certificate). |
+| Rojo | El certificado SSL ha caducado.<br>Ver [Actualizar un certificado SSL administrado por un cliente caducado](#update-ssl-certificate) o [Eliminar un certificado SSL](#deleting-an-ssl-certificate). |
 
-## Actualizar un certificado SSL caducado y administrado por el cliente {#update-ssl-certificate}
+## Actualizar un certificado SSL administrado por el cliente caducado {#update-ssl-certificate}
 
 Cuando un certificado administrado por el cliente caduca, cualquier dominio que esté en uso con el certificado caducado ya no funciona. La actualización de los certificados garantiza que el dominio funcionará como se desea.
 
 Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrador de implementación** para completar esta tarea.
 
-**Para actualizar un certificado SSL caducado administrado por el cliente:**
+**Para actualizar un certificado SSL administrado por el cliente caducado:**
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
@@ -52,7 +52,7 @@ Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrado
 
 1. Haga clic en **Actualizar** para guardar los cambios y que se apliquen automáticamente.
 
-## Reemplazar un certificado SSL caducado y administrado por el cliente {#replace-ssl-certificate}
+## Reemplazar un certificado SSL administrado por el cliente caducado {#replace-ssl-certificate}
 
 Siga los mismos pasos que se describen en [Actualizar un certificado SSL caducado](#update-ssl-certificate) para reemplazar un certificado SSL caducado administrado por el cliente.
 
