@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a9bcbae1317d95e3710a19a79115f1437b418e41
+source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 42%
+source-wordcount: '763'
+ht-degree: 41%
 
 ---
 
@@ -29,7 +29,7 @@ Cloud Manager ofrece herramientas de autoservicio para instalar y administrar ce
 
 | | Caso de uso | Descripción |
 | --- | --- | --- |
-| 1 | **Certificado administrado por el Adobe (DV)** | Cloud Manager permite a los usuarios configurar un certificado DV (validación de dominio) que proviene del Adobe para configurar dominios rápidamente. Los certificados DV son el nivel más básico de certificación SSL y se utilizan a menudo para fines de prueba o para proteger sitios web con cifrado básico. Los certificados DV están disponibles en [programas de producción y de zonas protegidas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md). |
+| 1 | **Certificado administrado por el Adobe (DV)** | Cloud Manager permite a los usuarios configurar un certificado DV (validación de dominio) que proviene del Adobe para configurar dominios rápidamente. Los certificados DV son el nivel más básico de certificación SSL y se utilizan a menudo para fines de prueba o para proteger sitios web con cifrado básico. Los certificados DV están disponibles tanto en [programas de producción como en programas de zonas protegidas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md). Una vez creado el certificado DV, el Adobe lo renueva automáticamente cada tres meses, a menos que se elimine. |
 | 2 | **Certificado administrado por el cliente (OV/EV)** | Cloud Manager usa un servicio TLS (Transport Layer Security) de plataforma para administrar certificados SSL de propiedad del cliente y claves privadas de autoridades de certificación de terceros, como *Let&#39;s Encrypt*. |
 
 >[!NOTE]
@@ -41,7 +41,7 @@ Cloud Manager ofrece herramientas de autoservicio para instalar y administrar ce
 
 Las empresas y organizaciones utilizan certificados SSL para proteger sus sitios web y permitir a sus clientes confiar en ellos. Para utilizar el protocolo SSL, un servidor web requiere el uso de un certificado SSL.
 
-Cuando una entidad, como una organización o una empresa, solicita un certificado de una CA (entidad emisora de certificados), esta completa un proceso de verificación. Este proceso puede abarcar desde verificar el control de nombres de dominio hasta recopilar documentos de registro de empresas y acuerdos de suscriptores. Una vez verificada la información de una entidad, la CA firma su clave pública con la clave privada de la CA. Dado que todas las autoridades de certificación principales tienen certificados raíz en los exploradores web, el certificado de la entidad se vincula a través de una *cadena de confianza* y el explorador web lo reconoce como un certificado de confianza.
+Cuando una entidad, como una organización o una empresa, solicita un certificado de una entidad emisora de certificados (CA), esta completa un proceso de verificación. Este proceso puede abarcar desde verificar el control de nombres de dominio hasta recopilar documentos de registro de empresas y acuerdos de suscriptores. Una vez verificada la información de una entidad, la CA firma su clave pública con la clave privada de la CA. Dado que todas las autoridades de certificación principales tienen certificados raíz en los exploradores web, el certificado de la entidad se vincula a través de una *cadena de confianza* y el explorador web lo reconoce como un certificado de confianza.
 
 >[!IMPORTANT]
 >

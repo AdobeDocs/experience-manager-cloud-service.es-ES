@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo entregar sus proyectos de Cloud Ma
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: dda5444ccfced079125c358f65f0dae43293ae55
+source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1516'
 ht-degree: 5%
 
 ---
@@ -61,7 +61,7 @@ Según el caso de uso, realice una de las siguientes acciones:
 
 ## Ruta recomendada de Adobe para clientes contratados {#recommended-path-eds}
 
-Como cliente contratado, asegúrese de maximizar sus beneficios del Adobe accediendo y consumiendo su licencia de Edge Delivery Services a través de Cloud Manager. Este enfoque le permite usar [CDN administrada por Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) y aprovechar las ventajas clave como la administración de CDN de autoservicio, incluida la configuración e instalación de certificados DV o EV/OV. Si no tiene una licencia de Edge Delivery Services con Adobe y decide omitir esos beneficios, solo puede utilizar una CDN administrada por el cliente. Esta configuración debe estar en la plataforma aem.live.
+Como cliente contratado, asegúrese de maximizar sus beneficios del Adobe accediendo y consumiendo su licencia de Edge Delivery Services a través de Cloud Manager. Este enfoque le permite usar [CDN administrada por Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) y aprovechar ventajas clave como la administración de CDN de autoservicio, incluida la configuración y adición de certificados DV. Además, después de crear un certificado DV, Adobe lo renueva automáticamente cada tres meses, a menos que se elimine. Si no tiene una licencia de Edge Delivery Services con Adobe y decide omitir estos beneficios, solo puede utilizar una CDN administrada por el cliente. Esta configuración debe estar en la plataforma `aem.live`.
 
 Si tiene una licencia de Edge Delivery Services de AEM as a Cloud Service Sites contratada, inicie sesión en Cloud Manager para asegurarse de que puede hacer lo siguiente:
 
