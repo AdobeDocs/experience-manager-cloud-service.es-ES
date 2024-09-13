@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 99a36bab3ca8d5e6a64e1fdb9c179cf8a3190a14
+source-git-commit: fc578f35214327567aaa6f5d88a637df9428f87f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1245'
+ht-degree: 79%
 
 ---
 
@@ -65,7 +65,13 @@ Aproveche la GenAI mediante la nueva función de AEM, [generar variaciones](/hel
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nuevas funciones de la vista Recursos {#assets-view-new-features}
+### Función de acceso anticipado en Dynamic Media {#dm-early-access}
+
+**subtítulos de vídeo basados en IA**
+
+Los subtítulos de vídeo basados en IA en Adobe Dynamic Media usan la inteligencia artificial para generar subtítulos automáticamente para el contenido de vídeo. Esta función está diseñada para mejorar la accesibilidad y la experiencia del usuario al proporcionar subtítulos precisos en tiempo real. La IA analiza la pista de audio del vídeo para transcribir voz y crear subtítulos, que se pueden editar para mejorar la precisión o la personalización. Estos subtítulos ayudan a cumplir con los requisitos de accesibilidad y mejorar la participación en vídeo de las audiencias que dependen de la compatibilidad con vídeo basado en texto o prefieren hacerlo.
+
+### Nuevas funcionalidades de la vista Recursos {#assets-view-new-features}
 
 **Generación actualizada de imágenes de Adobe Firefly**
 
@@ -80,7 +86,7 @@ Assets as a Cloud Service ahora admite documentos grandes de Photoshop (archivos
 ### Nuevas mejoras en Content Hub {#content-hub-new-enhancements}
 
 * Mejor gestión de los nombres de archivo largos, fácil expansión del nombre completo a través de la ayuda contextual.
-* Se han mejorado las miniaturas para ajustarse mejor a la relación de aspecto del contenido y cubrir un área de contenido más grande.
+* Se han mejorado las miniaturas para ajustar mejor la proporción de aspecto del contenido y cubrir una zona más grande.
 * Content Hub admite la experiencia de miniaturas personalizadas de AEM.
 * Mejoras en la búsqueda de colores.
 * Las mejoras en la experiencia de guardar configuraciones.
@@ -93,7 +99,7 @@ Assets as a Cloud Service ahora admite documentos grandes de Photoshop (archivos
 
 #### Guardar automáticamente un borrador para los componentes principales basados en formularios adaptables
 
-Los usuarios ahora pueden beneficiarse de una función de guardado automático que, de manera automática, guarda como borrador un formulario parcialmente completado. Pueden volver más tarde para terminar de rellenarlo en el mismo dispositivo o en otro distinto. Esta función mejora las tasas de conversión para las organizaciones al reducir el abandono de formularios, ya que los usuarios no tienen que volver a empezar a rellenar el formulario desde el principio.
+Los usuarios ahora pueden beneficiarse de una función de guardado automático que, de manera automática, guarda como borrador un formulario parcialmente completado. Pueden volver más tarde para terminar de rellenarlo en el mismo dispositivo o en otro distinto. Esta función mejora las tasas de conversión para las organizaciones al reducir el abandono de formularios, ya que los usuarios no necesitan volver a empezar a rellenar los formularios desde el principio.
 
 
 ### Funciones de acceso rápido de AEM Forms {#forms-new-early-access-features}
@@ -112,17 +118,17 @@ Las funciones de IA generativa que se ofrecen son:
 
 * **Asistente de IA para consultas de productos**: obtenga respuestas instantáneas a sus preguntas relacionadas con AEM Forms. El asistente de IA actúa como su propia base de conocimiento personal, proporcionando orientación y recomendaciones reveladoras directamente dentro de la plataforma.
 
-* **Generación de formularios adaptables**: cree sin esfuerzo formularios completos con indicaciones de la IA generativa. Nuestra IA generativa genera automáticamente formularios fáciles de usar que reducen los abandonos y personalizan la experiencia.
+* **Generación de formularios adaptables**: cree formularios completos sin esfuerzo con generativas peticiones de IA. La IA generativa de Adobe genera automáticamente formularios fáciles de usar que reducen los abandonos y personalizan la experiencia.
 
 * **Generación de paneles para formularios**: genere secciones de formulario adaptadas a las necesidades específicas de recopilación de datos. Por ejemplo, generar secciones para recopilar información de pago, preferencias del cliente o detalles de viaje.
 
-* **Cambio de diseños de formulario**: experimente con diferentes presentaciones y diseños mediante las indicaciones de la IA generativa. Pruebe diferentes diseños, como las vistas del asistente o con pestañas, para encontrar la opción perfecta para su formulario. Utilice las indicaciones de la IA generativa para optimizar los formularios con capacidad de respuesta móvil y crear formularios atractivos visualmente que gusten a los usuarios.
+* **Cambio de diseños de formulario**: experimente con diferentes diseños y diseños mediante generativas indicaciones de IA. Pruebe diferentes diseños, como las vistas del asistente o con pestañas, para encontrar la opción perfecta para su formulario. Utilice las indicaciones de IA generativas para optimizar los formularios para la capacidad de respuesta móvil y crear formularios atractivos visualmente que encanten a los usuarios.
 
-* **Configurar la acción de envío**: utilice las indicaciones de la IA generativa para configurar sin esfuerzo una acción de envío para el formulario. Elija entre una biblioteca de acciones de envío creadas previamente o una lista de acciones de envío personalizadas, creadas e implementadas por su propio equipo de desarrollo.
+* **Configurar la acción de envío**: use las peticiones de IA generativas para configurar una acción de envío sin esfuerzo para el formulario. Elija entre una biblioteca de acciones de envío prediseñadas o acciones de envío personalizadas creadas e implementadas por su equipo de desarrollo.
 
 >[!IMPORTANT]
 >
-> Si está interesado en unirse al programa de acceso rápido para cualquier innovación, solo tiene que enviar un correo electrónico desde su dirección oficial a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) con la lista de funcionalidades que le interesan.
+> ¿Quiere unirse al programa de acceso anticipado para cualquier innovación de Forms? Envíe un correo electrónico desde su dirección oficial a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) con la lista de funcionalidades que le interesan.
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}

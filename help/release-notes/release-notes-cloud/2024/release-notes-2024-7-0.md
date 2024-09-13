@@ -3,10 +3,11 @@ title: Notas de la versión 2024.7.0 de la versión de  [!DNL Adobe Experience M
 description: Notas de la versión 2024.7.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 2edaca5637c735645e2b761377b9681d9b48daa1
+exl-id: 6194df9d-8c3c-4c7f-be59-099b970a565a
+source-git-commit: fc578f35214327567aaa6f5d88a637df9428f87f
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 100%
+source-wordcount: '1605'
+ht-degree: 77%
 
 ---
 
@@ -60,19 +61,25 @@ Los autores de contenido ahora pueden examinar, ver y realizar acciones en imág
 
 **Carga de recursos mediante el selector de recursos**
 
-El selector de recursos ahora permite a los autores de contenido cargar los recursos finales directamente desde el selector, ya sea arrastrando o explorando desde el sistema de archivos local. Esto permite cargar los recursos finales en DAM desde la aplicación que elija.
+El Selector de recursos ahora permite a los autores de contenido cargar recursos finales directamente desde el selector, arrastrándolos o explorando desde el sistema de archivos local. Esta funcionalidad permite cargar los recursos finales en DAM desde la aplicación de su elección.
+
+### Función de acceso anticipado en Dynamic Media {#dm-early-access}
+
+**subtítulos de vídeo basados en IA**
+
+Los subtítulos de vídeo basados en IA en Adobe Dynamic Media usan la inteligencia artificial para generar subtítulos automáticamente para el contenido de vídeo. Esta función está diseñada para mejorar la accesibilidad y la experiencia del usuario al proporcionar subtítulos precisos en tiempo real. La IA analiza la pista de audio del vídeo para transcribir voz y crear subtítulos, que se pueden editar para mejorar la precisión o la personalización. Estos subtítulos ayudan a cumplir con los requisitos de accesibilidad y mejorar la participación en vídeo de las audiencias que dependen de la compatibilidad con vídeo basado en texto o prefieren hacerlo.
 
 ### Nuevas funcionalidades de la vista Recursos {#assets-view-new-features}
 
 **Integración de credenciales de contenido**
 
-Experience Manager Assets ahora admite credenciales de contenido para los formatos de imagen admitidos. Proporciona información sobre el linaje del recurso y cómo se creó, incluido si se modificó con GenAI.
+Experience Manager Assets ahora admite credenciales de contenido para los formatos de imagen admitidos. Esta capacidad proporciona información sobre el linaje del recurso y cómo se creó, incluso si se modificó con GenAI.
 
 ![Credenciales de contenido](/help/assets/assets/content-credentials.png)
 
 **Vistas previas visuales del contenido de la carpeta**
 
-Experience Manager Assets ahora muestra vistas previas visuales del contenido de la carpeta en la miniatura de carpeta cuando se examina o busca contenido, lo que mejora la capacidad de detección de los recursos disponibles en el repositorio de AEM Assets.
+Experience Manager Assets ahora muestra previsualizaciones visuales del contenido de la carpeta en la miniatura de la carpeta al examinar o buscar contenido, lo que mejora la capacidad de detección de recursos disponibles en el repositorio de AEM Assets.
 
 <!--
 
@@ -93,7 +100,7 @@ When looking at the asset details, any image with content credentials added, suc
 
 #### Editor de reglas visuales mejorado para formularios adaptables basado en componentes principales
 
-Los autores de formularios adaptables pueden utilizar campos de formulario repetibles en las funciones predeterminadas disponibles en el editor de reglas visuales para que los componentes principales creen una lógica empresarial compleja en los formularios, sin requerir de personalización o asistencia del equipo de desarrollo.
+Los autores de formularios adaptables pueden utilizar campos de formulario repetibles y funciones de editor de reglas visuales integradas para crear lógicas empresariales complejas en formularios sin necesidad de personalización o asistencia del equipo de desarrollo.
 
 ### Funciones de acceso rápido de AEM Forms {#forms-new-early-access-features}
 
@@ -103,7 +110,7 @@ En estas notas de la versión se indican las innovaciones de la versión actual.
 
 #### Creación de formularios adaptables mediante el editor universal
 
-Aproveche el [editor universal](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) de Adobe Experience Manager para crear formularios adaptables con el método de creación WYSIWYG de arrastrar y colocar, tanto en experiencias de inscripción sin encabezado como con encabezado, ofrecidas mediante el servicio de Edge Delivery. Los autores de formularios adaptables pueden crear e iniciar fácilmente experimentos para diversas variaciones de los formularios en las páginas web, y determinar las experiencias con mejor rendimiento para los usuarios finales.
+Aproveche el [editor universal](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) de Adobe Experience Manager para crear formularios adaptables con el método de creación WYSIWYG de arrastrar y colocar, tanto en experiencias de inscripción sin encabezado como con encabezado, ofrecidas mediante el servicio de Edge Delivery. Los autores de formularios adaptables pueden crear e iniciar fácilmente experimentos para variaciones de los formularios en las páginas web. Esta capacidad les permite determinar las experiencias con mejor rendimiento para los usuarios finales.
 
 >[!IMPORTANT]
 >
@@ -113,22 +120,23 @@ Aproveche el [editor universal](https://experienceleague.adobe.com/es/docs/exper
 
 ### Depuración de contenido en la CDN con una clave de API de autoservicio {#purge-cdn}
 
-La configuración de TTL con el encabezado de HTTP de control de caché es un enfoque eficaz para equilibrar el rendimiento de la entrega de contenido y la actualización del mismo. Sin embargo, en situaciones en las que es fundamental ofrecer inmediatamente contenido actualizado, puede resultar beneficioso depurar directamente la caché de la CDN.
+La configuración de TTL con el encabezado de HTTP de control de caché es un enfoque eficaz para equilibrar el rendimiento de la entrega de contenido y la actualización del mismo. Sin embargo, en situaciones en las que es fundamental ofrecer contenido actualizado inmediatamente, puede resultar beneficioso depurar directamente la caché de CDN.
 
-[Aprenda](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) a configurar un token API de depuración mediante la canalización de configuración de Cloud Manager para poder [invocar las API de depuración](/help/implementing/dispatcher/cdn-cache-purge.md) con cualquiera de estas variaciones:
+[Aprenda](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) a autoabastecer la configuración de un token de API de purga mediante la canalización de configuración de Cloud Manager, para que pueda [invocar las API de purga](/help/implementing/dispatcher/cdn-cache-purge.md), con cualquiera de estas variaciones:
+
 * URL única
 * Varias direcciones URL con una etiqueta
 * Depuración de la caché de la CDN completa
 
 ### Configuración de autoservicio de la clave X-Edge-Key de AEM para la CDN administrada por el cliente {#customermanaged-keys}
 
-Anteriormente, se necesitaba un ticket de asistencia para generar la clave X--Edge-Key necesaria para la configuración de una CDN administrada por el cliente. Esto ahora es una operación de autoservicio a través de la declaración del valor clave de un archivo de configuración que se implementa mediante la canalización de configuración, lo que elimina cualquier retraso en la incorporación de un nuevo entorno. [Más información](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
+Anteriormente, se necesitaba un ticket de asistencia para generar la clave X--Edge-Key necesaria para la configuración de una CDN administrada por el cliente. Este flujo de trabajo ahora se autoservicio mediante la declaración del valor clave en un archivo de configuración que se implementa mediante la canalización de configuración, lo que elimina cualquier retraso en la incorporación de un nuevo entorno. [Más información](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
 ### Alertas de reglas de filtro de tráfico {#traffic-filter-rules-alerts}
 
-Las reglas de filtro de tráfico, que incluyen las reglas del cortafuegos de aplicaciones web (WAF) con licencia opcional, le permiten configurar qué tráfico se debe bloquear.
+Las reglas de filtro de tráfico, que incluyen las reglas de cortafuegos de aplicación web (WAF) con licencia opcional, le permiten configurar el tráfico que se debe bloquear.
 
-Ahora puede [suscribirse a las alertas](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) en el momento en que se activen sus reglas de filtro de tráfico. Las notificaciones por correo electrónico del Centro de acciones le mantendrán informado cuando se produzcan determinadas condiciones de tráfico para que pueda tomar las medidas adecuadas.
+Ahora, puedes [suscribirte a las alertas](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) siempre que se activen tus reglas de filtro de tráfico. Las notificaciones por correo electrónico del Centro de acciones le mantendrán informado cuando se produzcan determinadas condiciones de tráfico para que pueda tomar las medidas adecuadas.
 
 ### Programas para primeros usuarios relacionados con la distribución de contenido {#foundation-early-adopter}
 
