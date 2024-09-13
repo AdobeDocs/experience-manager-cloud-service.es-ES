@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
+source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
 workflow-type: tm+mt
 source-wordcount: '722'
-ht-degree: 17%
+ht-degree: 13%
 
 ---
 
@@ -41,7 +41,7 @@ Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrado
 1. Desde la pantalla **Entornos**, vaya a la pantalla **Certificados SSL**.
 1. En la fila del certificado administrado por el cliente caducado que desea actualizar, haga clic en los puntos suspensivos en el extremo derecho y, a continuación, seleccione **Ver y actualizar**.
 
-   ![Actualizar una certificación SSL caducada administrada por el cliente](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
+   ![Actualizar una certificación SSL administrada por el cliente caducada](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
 1. En el cuadro de diálogo **Ver y actualizar certificado SSL**, haga lo siguiente:
 
@@ -87,4 +87,4 @@ El mensaje desaparece después de migrar todas las configuraciones de entorno pr
 
 Consulte [Agregar un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) para obtener más información.
 
-También se proporciona un mensaje similar en las páginas **Lista de IP permitidas** y **Entornos** para entornos que tienen configuraciones de CDN preexistentes para listas de IP permitidas o nombres de dominio personalizados.
+También se ha proporcionado un mensaje similar en las páginas **Lista de permitidos IP** y **Entornos** para entornos que tienen configuraciones de CDN preexistentes para Listas de permitidos IP o nombres de dominio personalizados.

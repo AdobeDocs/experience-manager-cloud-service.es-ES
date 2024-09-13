@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
+source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
 workflow-type: tm+mt
-source-wordcount: '5605'
+source-wordcount: '5615'
 ht-degree: 97%
 
 ---
@@ -1123,13 +1123,13 @@ ht-degree: 97%
       + Sitios Edge Delivery {#edge-delivery-sites}
          + [Compatibilidad con Edge Delivery en Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md)
       + Configuración de dominio {#custom-domain-names}
-         + [Introducción](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+         + [Introducción a la configuración de dominio](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [Comprobar estado del nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
          + [Comprobar estado de registro DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [Administrar los nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + Certificados SSL {#manage-ssl-certificates}
-         + [Introducción](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         + [Introducción a los certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [Agregar un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [Solucionar errores de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [Administrar certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
@@ -1137,7 +1137,7 @@ ht-degree: 97%
          + [Añadir una configuración de CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
          + [Administrar configuraciones de CDN](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + Listas de permitidos de IP {#ip-allow-lists}
-         + [Introducción](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+         + [Introducción a las listas de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [Agregar una lista de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
          + [Aplicar y dejar de aplicar Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [Administrar listas de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
