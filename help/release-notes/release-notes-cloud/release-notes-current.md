@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: fc578f35214327567aaa6f5d88a637df9428f87f
+source-git-commit: 7c195e5640f828d2c59dbabd8f29127692788576
 workflow-type: tm+mt
-source-wordcount: '1245'
-ht-degree: 79%
+source-wordcount: '1266'
+ht-degree: 77%
 
 ---
 
@@ -67,9 +67,11 @@ Aproveche la GenAI mediante la nueva función de AEM, [generar variaciones](/hel
 
 ### Función de acceso anticipado en Dynamic Media {#dm-early-access}
 
-**subtítulos de vídeo basados en IA**
+**subtítulos de vídeo generados por IA**
 
-Los subtítulos de vídeo basados en IA en Adobe Dynamic Media usan la inteligencia artificial para generar subtítulos automáticamente para el contenido de vídeo. Esta función está diseñada para mejorar la accesibilidad y la experiencia del usuario al proporcionar subtítulos precisos en tiempo real. La IA analiza la pista de audio del vídeo para transcribir voz y crear subtítulos, que se pueden editar para mejorar la precisión o la personalización. Estos subtítulos ayudan a cumplir con los requisitos de accesibilidad y mejorar la participación en vídeo de las audiencias que dependen de la compatibilidad con vídeo basado en texto o prefieren hacerlo.
+Los subtítulos de vídeo generados por IA en Adobe Dynamic Media usan la inteligencia artificial para generar subtítulos automáticamente para el contenido de vídeo. Esta función está diseñada para mejorar la accesibilidad y la experiencia del usuario al proporcionar subtítulos precisos en tiempo real. La IA analiza la pista de audio del vídeo para transcribir voz y crear subtítulos, que se pueden editar para mejorar la precisión o la personalización. Estos subtítulos ayudan a cumplir con los requisitos de accesibilidad y mejorar la participación en vídeo de las audiencias que dependen de la compatibilidad con vídeo basado en texto o prefieren hacerlo.
+
+Para obtener acceso anticipado a la compatibilidad con subtítulos generados por IA en su cuenta de Dynamic Media, [cree y envíe un caso de asistencia al cliente de Adobe](/help/assets/dynamic-media/video.md##enable-dash).
 
 ### Nuevas funcionalidades de la vista Recursos {#assets-view-new-features}
 

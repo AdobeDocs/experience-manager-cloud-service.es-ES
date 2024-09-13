@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: e3667a6172447072d7c528213826fd0171e9acc2
+source-git-commit: 7c195e5640f828d2c59dbabd8f29127692788576
 workflow-type: tm+mt
-source-wordcount: '9406'
+source-wordcount: '9402'
 ht-degree: 2%
 
 ---
@@ -526,7 +526,7 @@ Puede habilitar la compatibilidad con en Dynamic Media para lo siguiente:
 * Subtítulos múltiples y pistas de audio
 * Subtítulos generados por IA (acceso anticipado)
 
-Mediante un caso de Asistencia al cliente de Adobe que cree y envíe.
+Al crear y enviar un caso de asistencia al cliente de Adobe.
 
 Al habilitar cualquiera de las tres capacidades anteriores, se habilitan todas. Por lo tanto, si solo desea habilitar DASH, en realidad está habilitando las tres funcionalidades enumeradas anteriormente.
 

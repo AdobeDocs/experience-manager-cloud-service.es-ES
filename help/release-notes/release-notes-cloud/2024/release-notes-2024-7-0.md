@@ -4,10 +4,10 @@ description: Notas de la versión 2024.7.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: 6194df9d-8c3c-4c7f-be59-099b970a565a
-source-git-commit: fc578f35214327567aaa6f5d88a637df9428f87f
+source-git-commit: 7c195e5640f828d2c59dbabd8f29127692788576
 workflow-type: tm+mt
-source-wordcount: '1605'
-ht-degree: 77%
+source-wordcount: '1626'
+ht-degree: 76%
 
 ---
 
@@ -65,9 +65,11 @@ El Selector de recursos ahora permite a los autores de contenido cargar recursos
 
 ### Función de acceso anticipado en Dynamic Media {#dm-early-access}
 
-**subtítulos de vídeo basados en IA**
+**subtítulos de vídeo generados por IA**
 
-Los subtítulos de vídeo basados en IA en Adobe Dynamic Media usan la inteligencia artificial para generar subtítulos automáticamente para el contenido de vídeo. Esta función está diseñada para mejorar la accesibilidad y la experiencia del usuario al proporcionar subtítulos precisos en tiempo real. La IA analiza la pista de audio del vídeo para transcribir voz y crear subtítulos, que se pueden editar para mejorar la precisión o la personalización. Estos subtítulos ayudan a cumplir con los requisitos de accesibilidad y mejorar la participación en vídeo de las audiencias que dependen de la compatibilidad con vídeo basado en texto o prefieren hacerlo.
+Los subtítulos de vídeo generados por IA en Adobe Dynamic Media usan la inteligencia artificial para generar subtítulos automáticamente para el contenido de vídeo. Esta función está diseñada para mejorar la accesibilidad y la experiencia del usuario al proporcionar subtítulos precisos en tiempo real. La IA analiza la pista de audio del vídeo para transcribir voz y crear subtítulos, que se pueden editar para mejorar la precisión o la personalización. Estos subtítulos ayudan a cumplir con los requisitos de accesibilidad y mejorar la participación en vídeo de las audiencias que dependen de la compatibilidad con vídeo basado en texto o prefieren hacerlo.
+
+Para obtener acceso anticipado a la compatibilidad con subtítulos generados por IA en su cuenta de Dynamic Media, [cree y envíe un caso de asistencia al cliente de Adobe](/help/assets/dynamic-media/video.md##enable-dash).
 
 ### Nuevas funcionalidades de la vista Recursos {#assets-view-new-features}
 
