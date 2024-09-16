@@ -1,12 +1,12 @@
 ---
 title: Publicar Go-Live
-description: Obtenga información sobre cómo supervisar problemas y mejorar el rendimiento
+description: Obtenga información sobre cómo supervisar problemas y mejorar el rendimiento.
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
-source-git-commit: 13a2386c099624a46e84126a939a9470e9b3a5f2
+source-git-commit: bb2688701b80a560ea9078c2b7b6594ff55ce824
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '458'
 ht-degree: 16%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
 >title="Solución de problemas de AEM"
->abstract="Revise las prácticas recomendadas para el desarrollo continuo y administre los registros junto con herramientas como Consola de desarrollador y CRXDE Lite AEM para ayudar a solucionar problemas con las soluciones de problemas de la aplicación de la solución de problemas de la forma más rápida y eficaz. Para obtener más información, consulte a su"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html?lang=es" text="Acceder y administrar registros"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=es#aem-as-a-cloud-service-development-tools" text="Herramientas de desarrollo de AEM as a Cloud Service"
+>abstract="Revise las prácticas recomendadas para el desarrollo y la administración continuos de los registros. Obtenga información acerca de herramientas como Developer Console y CRXDE Lite AEM para solucionar problemas con la solución de problemas con los."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Acceder y administrar registros"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="Herramientas de desarrollo de AEM as a Cloud Service"
 
-Este recorrido es la última parte, por lo que aprenderá a monitorizar los problemas y mejorar el rendimiento una vez completada la migración. Debe garantizar la limpieza de los archivos temporales, revisar las prácticas recomendadas para el desarrollo continuo y administrar los registros.
+Este recorrido es la última parte, por lo que aprenderá a monitorizar los problemas y mejorar el rendimiento una vez completada la migración. Asegúrese de limpiar los archivos temporales, revise las prácticas recomendadas para un desarrollo continuo y administre los registros.
 
 ## La historia hasta ahora {#story-so-far}
 
@@ -45,7 +45,7 @@ Consulte [Implementación para AEM as a Cloud Service](/help/implementing/develo
 Como usuario, puede acceder a CRXDE Lite en el entorno de desarrollo, pero no en la fase o en la producción.
 
 >[!IMPORTANT]
->Escribir en repositorios inmutables como `/libs` y `/apps` en tiempo de ejecución genera errores. Además, no tiene acceso a las herramientas para desarrolladores para entornos de ensayo y producción.
+>Si se escribe en repositorios inmutables, como `/libs` y `/apps` en tiempo de ejecución, se producirán errores. Además, no tiene acceso a las herramientas para desarrolladores para entornos de ensayo y producción.
 
 Consulte [Desarrollo con CRXDE Lite AEM](/help/implementing/developing/tools/crxde.md) para obtener más información sobre cómo desarrollar su aplicación de forma que utilice el CRXDE Lite de la aplicación de la aplicación de la aplicación.
 
