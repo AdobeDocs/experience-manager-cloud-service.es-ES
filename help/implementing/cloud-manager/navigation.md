@@ -1,14 +1,14 @@
 ---
-title: Navegación por la IU de Cloud Manager
+title: Navegar por la IU de Cloud Manager
 description: Descubra cómo está organizada la IU de Cloud Manager y cómo navegar para administrar sus programas y entornos.
 exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
-source-wordcount: '1499'
-ht-degree: 75%
+source-wordcount: '1518'
+ht-degree: 66%
 
 ---
 
@@ -19,8 +19,8 @@ Descubra cómo está organizada la IU de Cloud Manager y cómo navegar para admi
 
 La IU de Cloud Manager está compuesta principalmente por dos interfaces gráficas:
 
-* [La consola Mis programas](#my-programs-console) donde puede ver y administrar todos los programas.
-* [La ventana Información general del programa](#program-overview) donde puede ver los detalles de un programa individual y administrarlo.
+* [La consola Mis programas](#my-programs-console) es donde puede ver y administrar todos los programas.
+* [La ventana Información general del programa](#program-overview) es donde puede ver los detalles de un programa individual y administrarlo.
 
 >[!TIP]
 >
@@ -41,7 +41,7 @@ La consola Mis programas proporciona información general de todos los programas
    * Tenga en cuenta que las pestañas se cierran de forma predeterminada y se pueden mostrar mediante el menú de hamburguesa del [encabezado de Cloud Manager](#cloud-manager-header).
 1. [Estadísticas y llamada a la acción](#statistics) para obtener una descripción general de su actividad reciente
 1. [**Sección Mis programas**](#my-programs-section) con información general de todos sus programas
-1. [Vínculos rápidos](#quick-links-section) para acceder fácilmente a los recursos relacionados
+1. [Vínculos rápidos](#quick-links-section) para acceder fácilmente a recursos relacionados.
 
 >[!TIP]
 >
@@ -57,8 +57,8 @@ El primero es el encabezado de Cloud Manager, que es persistente mientras navega
 
 ![El encabezado de Experience Cloud](assets/experience-cloud-header.png)
 
-1. El menú de hamburguesa que da acceso a pestañas que pueden llevarte a partes específicas de un programa individual o cambiar entre el [Tablero de licencias](/help/implementing/cloud-manager/license-dashboard.md) y la consola **[Mis programas](#my-programs-console)** según el contexto.
-1. El botón Cloud Manager le devolverá a la consola Mis programas de Cloud Manager independientemente de dónde se encuentre en Cloud Manager.
+1. El menú de hamburguesa que da acceso a pestañas que pueden llevarle a partes específicas de un programa individual. O bien, puede cambiar entre el [Tablero de licencias](/help/implementing/cloud-manager/license-dashboard.md) y la consola **[Mis programas](#my-programs-console)** en función del contexto.
+1. El botón Cloud Manager le devuelve a la consola Mis programas de Cloud Manager independientemente de dónde se encuentre en Cloud Manager.
 1. Toque o haga clic en el botón Comentarios para proporcionar comentarios a Adobe sobre Cloud Manager.
 1. El selector de organización muestra la organización en la que está conectado actualmente (en este ejemplo, Foundation Internal). Toque o haga clic para cambiar a otra organización si su Adobe ID está asociado a varias.
 1. Al tocar o hacer clic en el conmutador de soluciones, puede ir rápidamente a otras soluciones de Experience Cloud.
@@ -96,7 +96,8 @@ La sección **Mis programas** enumera las tarjetas que representan cada programa
 >
 >Según sus privilegios, es posible que no pueda seleccionar determinados programas.
 
-Utilice las opciones de ordenación para encontrar el programa que necesita.
+
+Para encontrar el programa que necesita más fácilmente, utilice las opciones de clasificación.
 
 ![Opciones de ordenación](/help/implementing/cloud-manager/assets/my-programs-sorting.png)
 
@@ -110,7 +111,7 @@ Utilice las opciones de ordenación para encontrar el programa que necesita.
 
 #### Tarjetas de programa {#program-cards}
 
-Cada programa está representado por una tarjeta (o fila en una tabla), que proporciona información general del programa y vínculos rápidos para realizar acciones.
+Una tarjeta (o fila en una tabla) representa cada programa, lo que proporciona una descripción general del programa y vínculos rápidos para realizar acciones.
 
 ![Tarjeta de programa](assets/program-card.png)
 
@@ -158,16 +159,17 @@ El icono de puntos suspensivos le permite acceder a acciones adicionales a reali
 >Para obtener más información sobre los programas y la creación y administración de programas, consulte los siguientes documentos.
 >
 >* [Programas y tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
->* [Creando programas de espacio aislado](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
->* [Creando programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+>* [Crear programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+>* [Crear programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+
 
 ### Sección de vínculos rápidos {#quick-links-section}
 
-La sección de vínculos rápidos le permite acceder a los recursos relacionados de uso común.
+La sección de vínculos rápidos le permite acceder a recursos utilizados con frecuencia relacionados.
 
-## Ventana Información del programa {#program-overview}
+## Ventana de información general del programa {#program-overview}
 
-Una vez que seleccione un programa en la consola **[Mis programas](#my-programs-console)**, accederá a la ventana **Información general del programa**.
+Cuando se selecciona un programa en la consola **[Mis programas](#my-programs-console)**, se le redirige a la ventana **Información general del programa**.
 
 ![Información general del programa](assets/program-overview.png)
 
@@ -183,7 +185,7 @@ La descripción general del programa le permite acceder a todos los detalles de 
 
 ### Barras de herramientas {#program-overview-toolbar}
 
-Las barras de herramientas de la descripción general del programa son similares a las de la consola [Mis programas](#my-programs-toolbars). Aquí solo se ilustran las diferencias.
+Las barras de herramientas de la descripción general del programa son similares a las barras de herramientas de [Mis programas](#my-programs-toolbars). Aquí solo se ilustran las diferencias.
 
 #### Encabezado de Cloud Manager {#cloud-manager-header-2}
 
@@ -197,35 +199,45 @@ Toque o haga clic en el icono de menú de hamburguesa para ocultar las pestañas
 
 La barra de herramientas de programas le permite cambiar rápidamente a otros programas, pero además le da acceso a acciones apropiadas para el contexto, como agregar y editar el programa.
 
-![Barra de herramientas Programa](assets/cloud-manager-program-toolbar.png)
+![Barra de herramientas del programa](assets/cloud-manager-program-toolbar.png)
 
-Además, la barra de herramientas siempre indica en qué pestaña se encuentra si ha elegido ocultar las pestañas mediante el menú de hamburguesa.
+La barra de herramientas siempre muestra la pestaña en la que se encuentra, incluso si ha ocultado las pestañas mediante el menú de hamburguesa.
 
 ### Pestañas del programa {#program-tabs}
 
-Cada programa tiene muchas opciones y datos asociados. Estos datos se recopilan en pestañas para facilitar la navegación por el programa. Las pestañas le permiten acceder a lo siguiente:
+Cada programa tiene muchas opciones y datos asociados. Estas opciones y datos se recopilan en pestañas para facilitar la navegación por el programa. Las pestañas le permiten acceder a lo siguiente:
+
+**Programa**
 
 * Información general: la descripción general del programa tal como se describe en el documento actual
 * [Actividad](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity): el historial de ejecuciones de canalización del programa
 * [Canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines): todas las canalizaciones configuradas para el programa
 * [Repositorios](/help/implementing/cloud-manager/managing-code/managing-repositories.md): todos los repositorios configurados para el programa
 * [Informes](/help/implementing/cloud-manager/sla-reporting.md): métricas como datos de SLA
+
+**Servicios**
+
 * [Entornos](/help/implementing/cloud-manager/manage-environments.md): todos los entornos configurados para el programa
+* [Sitios Edge Delivery](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) - Administrar sitios Edge Delivery
 * [Configuración de dominio](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Administrar nombres de dominio personalizados para el programa
-* [Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) - Administrar certificados SSL para el programa
+* [Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - Administrar certificados SSL para el programa
+* [Configuraciones de CDN](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Administrar configuraciones de CDN
 * [Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md): defina listas de permitidos para determinadas direcciones IP
 * [Conjuntos de contenido](/help/implementing/developing/tools/content-copy.md): conjuntos de contenido creados con fines de copia
 * [Copiar actividad de contenido](/help/implementing/developing/tools/content-copy.md): actividades de copia de contenido
 * [Infraestructura de red](/help/security/configuring-advanced-networking.md): administre las opciones avanzadas de red del programa
+
+**Recursos**
+
 * Rutas de aprendizaje: recursos de aprendizaje adicionales sobre Cloud Manager
 
 De forma predeterminada, al abrir un programa, llega a la pestaña **Información general**. La pestaña actual está resaltada. Seleccione otra pestaña para mostrar sus detalles.
 
 Utilice el menú de hamburguesa de la [Encabezado de Cloud Manager](#cloud-manager-header-2) para ocultar las pestañas.
 
-### Llamada a la acción {#cta}
+### Llamada a la sección {#cta}
 
-La sección de llamada a la acción le proporcionará información útil según el estado del programa. Para un programa nuevo, es posible que vea los pasos siguientes que se ofrecen, así como un recordatorio de una fecha de lanzamiento, [establecida durante la creación del programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
+La sección de llamada a la acción le proporciona información útil según el estado del programa. Para un programa nuevo, es posible que vea los pasos siguientes dados y un recordatorio de una fecha de lanzamiento, [establecida durante la creación del programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
 ![Llamada a acción para un nuevo programa](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 

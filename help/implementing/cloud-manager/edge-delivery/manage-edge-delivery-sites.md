@@ -1,0 +1,39 @@
+---
+title: Administración de sitios de Edge Delivery en Cloud Manager
+description: Obtenga información sobre cómo añadir una configuración de CDN a un sitio de Edge Delivery o eliminar un sitio de Edge Delivery.
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
+workflow-type: tm+mt
+source-wordcount: '274'
+ht-degree: 0%
+
+---
+
+# Administración del sitio de Edge Delivery en Cloud Manager {#manage-edge-delivery-sites}
+
+Obtenga información sobre cómo administrar sitios de Edge Delivery en Cloud Manager agregando una configuración de CDN a un sitio existente. O bien, elimine un sitio de Edge Delivery.
+
+## Añadir una configuración de CDN a un sitio de Edge Delivery existente {#add-cdn-to-edge-delivery-site}
+
+Consulte [Agregar una configuración de CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md).
+
+## Eliminación de un sitio de Edge Delivery {#delete-edge-delivery-site}
+
+Si elimina un sitio de Edge Delivery Services, también se eliminarán todas las configuraciones de CDN asociadas. Esta acción interrumpe la conexión entre los dominios personalizados y el sitio. Para obtener más información, consulte Configuraciones de CDN. <!-- https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2024.9.0+Release -->
+
+**Para eliminar un sitio de Edge Delivery:**
+
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione el programa apropiado.
+1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa con Edge Delivery Services configurados, donde desee agregar un sitio de Edge Delivery.
+1. Realice una de las siguientes acciones:
+   * En la página **Resumen del programa**, haga clic en la ficha **Edge Delivery**. En la tabla del sitio de Edge Delivery, haga clic en los puntos suspensivos al final de una fila cuyo sitio desee quitar.
+Haga clic en **Eliminar** y, a continuación, haga clic en **Eliminar** de nuevo para confirmar la eliminación del sitio.
+
+     ![Agregar sitio Edge Delivery desde la ficha Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-delete1.png)
+
+   * En la esquina superior izquierda de la página, haga clic en el icono de hamburguesa para mostrar el menú de navegación izquierdo. Bajo el encabezado **Servicios**, haga clic en **Sitios Edge Delivery**.
+En la tabla del sitio de Edge Delivery, haga clic en los puntos suspensivos al final de una fila cuyo sitio desee quitar. Haga clic en **Eliminar** y, a continuación, haga clic en **Eliminar** de nuevo para confirmar la eliminación del sitio.
+
+
+     ![Agregar sitio Edge Delivery desde el botón Sitios Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)

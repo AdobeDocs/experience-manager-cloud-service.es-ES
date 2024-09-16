@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 7%
+source-wordcount: '445'
+ht-degree: 6%
 
 ---
 
@@ -27,13 +27,16 @@ En el caso de las CDN administradas por Adobe, al utilizar certificados DV, solo
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. En el panel de navegación izquierdo, en **Servicios**, haga clic en **Configuraciones de CDN**.
+1. Según el caso de uso, realice una de las siguientes acciones:
 
-1. Cerca de la esquina superior derecha de la página Configuraciones de CDN, haga clic en **Agregar**.
-
-   ![Cuadro de diálogo Configurar CDN](/help/implementing/cloud-manager/assets/configure-cdn-dialog.png)
+   | Caso de uso | Etapas |
+   | --- | --- |
+   | Quiero agregar una configuración de CDN a un *sitio Edge Delivery existente* en Cloud Manager | a. En el panel de navegación izquierdo, en **Servicios**, haga clic en **Sitios Edge Delivery**.<br>b. En la tabla de Edge Delivery, al final de una fila que no tiene un dominio asociado, haga clic en los puntos suspensivos.<br>c. Haga clic en **Configurar CDN**.  ![Haga clic en Configurar CDN para un sitio de Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-config-cdn.png) |
+   | Quiero añadir una configuración de CDN en Cloud Manager | a. En el panel de navegación izquierdo, en **Servicios**, haga clic en **Configuraciones de CDN**.<br>b. Cerca de la esquina superior derecha de la página Configuraciones de CDN, haga clic en **Agregar**. |
 
 1. En el cuadro de diálogo **Configurar CDN**, en la lista desplegable **Origen**, seleccione una de las siguientes opciones:
+
+   ![Cuadro de diálogo Configurar CDN](/help/implementing/cloud-manager/assets/configure-cdn-dialog.png)
 
    | Origen | Descripción |
    | --- | --- |

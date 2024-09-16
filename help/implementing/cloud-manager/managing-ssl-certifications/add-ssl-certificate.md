@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 9%
@@ -23,7 +23,7 @@ Consulte también [Solucionar errores de certificados SSL](/help/implementing/cl
 
 Un certificado puede tardar unos días en aprovisionarse. Por ello, el Adobe recomienda que el certificado se aprovisione con bastante antelación a cualquier fecha límite o de lanzamiento.
 
-Asegúrese de revisar **Requisitos de certificado** en [Introducción a la administración de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) para asegurarse de que AEM as a Cloud Service admite el certificado que desea agregar.
+Asegúrese de revisar **Requisitos de certificado** en [Introducción a la administración de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements) para asegurarse de que AEM as a Cloud Service admite el certificado que desea agregar.
 
 Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrador de implementación** para completar esta tarea.
 
@@ -45,7 +45,7 @@ Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrado
 
 1. Cerca de la esquina superior derecha de la página, haga clic en **Agregar certificado SSL**.
 
-1. En el cuadro de diálogo **Agregar certificado SSL**, en función de [su caso de uso particular](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md), realice una de las siguientes acciones:
+1. En el cuadro de diálogo **Agregar certificado SSL**, en función de [su caso de uso particular](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md), realice una de las siguientes acciones:
 
    | | Caso de uso | Etapas |
    | --- | --- | --- |

@@ -4,9 +4,9 @@ description: Obtenga información acerca de todos los elementos que deben estar 
 exl-id: b424a9db-0f3b-4a8d-be84-365d68df46ca
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
+source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '567'
 ht-degree: 56%
 
 ---
@@ -40,7 +40,7 @@ Revise esta lista de actividades para asegurarse de que el lanzamiento se realiz
       * Configure SSL y DNS según la documentación de su proveedor de CDN.
    * Si no utiliza una CDN adicional, administre SSL y DNS según la siguiente documentación:
       * Administración de certificados SSL
-         * [Introducción a la administración de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         * [Introducción a los certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
          * [Administrar certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * Administrar nombres de dominio personalizados (DNS)
          * Asegúrese de que la migración de DNS no presente problemas inesperados. Cree un subdominio de prueba al que conectar la instancia de producción antes de publicar y realice una ronda de pruebas UAT. Por lo tanto, si el dominio es example.com, puede crear un subdominio test.example.com y aplicarlo a la producción. Durante las pruebas UAT del dominio, busque elementos como la redirección de vínculos adecuada, el almacenamiento en caché y las configuraciones de Dispatcher.

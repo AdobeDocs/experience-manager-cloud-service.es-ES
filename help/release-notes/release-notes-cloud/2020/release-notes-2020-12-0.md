@@ -4,10 +4,10 @@ description: Notas de la versión 2020.12.0 de la versión de  [!DNL Adobe Exper
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 11%
+source-wordcount: '657'
+ht-degree: 9%
 
 ---
 
@@ -32,7 +32,7 @@ La de la siguiente versión (2021.1.0) es el 28 de enero de 2021.
 
 * AEM Ahora se puede acceder a las capacidades de [!DNL Dynamic Media] mediante los componentes principales basados en imágenes de [!DNL Sites] de la aplicación de datos. Los autores pueden configurar rápidamente los componentes para utilizar Ajustes preestablecidos de imagen, Recorte inteligente y Modificadores de imagen al crear páginas web. Consulte [Versión de componentes principales 2.13.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0).
 
-* La aplicación de escritorio [!DNL Experience Manager] permite a los usuarios cargar archivos y carpetas arrastrándolos desde el Explorador de Windows o el Buscador de Mac en la interfaz de la aplicación de escritorio. Ver [agregar recursos mediante la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* La aplicación de escritorio [!DNL Experience Manager] permite a los usuarios cargar archivos y carpetas arrastrándolos desde el Explorador de Windows o el Buscador de Mac en la interfaz de la aplicación de escritorio. Ver [agregar recursos mediante la aplicación de escritorio](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem).
 
 ## as a Cloud Service de Adobe Experience Manager Commerce {#cloud-services-commerce}
 
@@ -50,7 +50,7 @@ La fecha de lanzamiento de Cloud Manager en Adobe Experience Manager AEM () as a
 
 ### Novedades de [!DNL Cloud Manager] {#what-is-new-cm}
 
-* Administración del autoservicio de [Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) y [Nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+* Administración de autoservicio de [Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) e [Introducción a los nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
 * Administración de autoservicio de [Listas de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
@@ -66,7 +66,7 @@ La fecha de lanzamiento de Cloud Manager en Adobe Experience Manager AEM () as a
 
 ### Novedades de [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* Se ha lanzado la nueva versión del complemento AIO-CLI. AEM La versión más reciente de este plug-in incluye correcciones de errores para el convertidor de Dispatcher de la y el modernizador de repositorios, y también admite una nueva utilidad: Convertidor de índices. Consulte [Experiencia unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html#benefits) para obtener más información sobre este complemento.
+* Se ha lanzado la nueva versión del complemento AIO-CLI. AEM La versión más reciente de este plug-in incluye correcciones de errores para el convertidor de Dispatcher de la y el modernizador de repositorios, y también admite una nueva utilidad: Convertidor de índices. Consulte [Experiencia unificada](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits) para obtener más información sobre este complemento.
 
 * Index Converter es una utilidad que se puede utilizar para transformar las definiciones de índice de Oak personalizadas de un cliente para que sean compatibles con las definiciones de índice de Oak de AEM as a Cloud Service. Consulte [Conversor de índices](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) para obtener más información.
 
@@ -86,6 +86,6 @@ La fecha de lanzamiento de la herramienta de transferencia de contenido v1.1.20 
 
 ### Correcciones de errores {#ctt-bug-fixes}
 
-* El estado de la interfaz de usuario de la herramienta de transferencia de contenido (CTT) para un conjunto de migración no persistió y cambió tras un periodo de inactividad. Esto se ha corregido.
-* La opción para ver los registros se deshabilitaba si los registros no estaban disponibles. Esto se ha corregido y se ha agregado mensajería para notificar a los usuarios por qué faltan registros.
-* El estado de la interfaz de usuario de la herramienta de transferencia de contenido *ERROR* al detener la ingesta. Esto se ha corregido para mostrar *DETENIDO* en su lugar.
+* El estado de la interfaz de usuario de la herramienta de transferencia de contenido (CTT) para un conjunto de migración no persistió y cambió tras un periodo de inactividad. Este problema ya está solucionado.
+* La opción para ver los registros se deshabilitaba si los registros no estaban disponibles. Este problema ahora se ha corregido y se ha añadido mensajería para notificar a los usuarios por qué faltan registros.
+* El estado de la interfaz de usuario de la herramienta de transferencia de contenido *ERROR* al detener la ingesta. Este problema ahora se ha corregido para mostrar *DETENIDO*.

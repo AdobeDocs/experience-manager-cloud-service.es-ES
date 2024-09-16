@@ -4,7 +4,7 @@ description: Obtenga información sobre las notas de la versión para Cloud Mana
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 610ae004b6da2f7fc0dae2baa613cb363fe9fb00
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 83%
@@ -39,7 +39,7 @@ La fecha de lanzamiento de Cloud Manager 2024.9.0 en AEM as a Cloud Service es e
 
 * **Compatibilidad con Edge Delivery Services en Cloud Manager:**
 
-  Si tienes una licencia de Edge Delivery Services como parte de AEM Sites, [ahora puedes incorporar tu sitio con Edge Delivery Services directamente a través de Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md). Esta función permite una experiencia de autoservicio guiada en el lanzamiento. AEM También unifica los flujos de trabajo esenciales, como la administración de nombres de dominio, los certificados SSL y las asignaciones de CDN en todas las propiedades de AEM, lo que garantiza la coherencia y la eficacia. <!-- CMGR-49859 -->
+  Si tienes una licencia de Edge Delivery Services como parte de AEM Sites, [ahora puedes incorporar tu sitio con Edge Delivery Services directamente a través de Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Esta función permite una experiencia de autoservicio guiada en el lanzamiento. AEM También unifica los flujos de trabajo esenciales, como la administración de nombres de dominio, los certificados SSL y las asignaciones de CDN en todas las propiedades de AEM, lo que garantiza la coherencia y la eficacia. <!-- CMGR-49859 -->
 
   >[!NOTE]
   >
