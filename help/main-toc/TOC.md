@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '5638'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -230,7 +230,7 @@ ht-degree: 96%
       + [Tareas del desarrollador y del administrador de implementación](/help/journey-onboarding/developers.md)
       + [Administración de principales](/help/journey-migration/managing-principals.md)
       + [Tareas del usuario de AEM](/help/journey-onboarding/aem-users.md)
-      + [Lista de comprobación para el lanzamiento](/help/journey-onboarding/go-live-checklist.md)
+      + [Lista de comprobación del lanzamiento](/help/journey-onboarding/go-live-checklist.md)
    + Recorrido del complemento de demostraciones de referencia de AEM {#demo-add-on}
       + [Información general](/help/journey-sites/demos-add-on/overview.md)
       + [Instalación](/help/journey-sites/demos-add-on/installation.md)
@@ -459,13 +459,13 @@ ht-degree: 96%
    + [Información general sobre los microservicios de recursos](/help/assets/asset-microservices-overview.md)
    + [Accesibilidad en [!DNL Assets]](/help/assets/accessibility.md)
    + Administre recursos digitales {#manage}
-      + Selector de recursos de Micro-FrontEnd {#asset-selector}
-         + [Resumen del Selector de recursos](/help/assets/overview-asset-selector.md)
+      + Selector de recursos de Micro-Frontend {#asset-selector}
+         + [Información general del Selector de recursos](/help/assets/overview-asset-selector.md)
          + Integraciones del Selector de recursos {#asset-selector-integration}
-            + [Resumen de integraciones del Selector de recursos](/help/assets/integrate-asset-selector.md)
-            + [Integración del Selector de recursos con una aplicación de Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
-            + [Integración del Selector de recursos con una aplicación que no sea de Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
-            + [Integración del Selector de recursos para Dynamic Media con las funciones de OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+            + [Información general de integraciones del Selector de recursos](/help/assets/integrate-asset-selector.md)
+            + [Integre el Selector de recursos con una aplicación de Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
+            + [Integre el Selector de recursos con una aplicación que no sea de Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
+            + [Integre el Selector de recursos para Dynamic Media con las funciones de OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
          + [Propiedades del Selector de recursos](/help/assets/asset-selector-properties.md)
          + [Ejemplos del Selector de recursos](/help/assets/asset-selector-examples.md)
          + [Personalizaciones del Selector de recursos](/help/assets/asset-selector-customization.md)
@@ -545,7 +545,7 @@ ht-degree: 96%
          + [Prácticas recomendadas de Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md)
       + [Archivo de newsletters sobre Dynamic Media de Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Configuración de Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
-      + [Trabajo con Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
+      + [Trabajar con Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
       + [Configuración de Dynamic Media](/help/assets/dynamic-media/config-dm.md)
       + [Opcional: configuración de Dynamic Media, configuración general](/help/assets/dynamic-media/dm-general-settings.md)
       + [Opcional: configuración de Dynamic Media, configuración de publicaciones](/help/assets/dynamic-media/dm-publish-settings.md)
@@ -1121,11 +1121,11 @@ ht-degree: 96%
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Notificaciones](/help/implementing/cloud-manager/notifications.md)
       + [Redes avanzadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=es)
-      + Sitios Edge Delivery {#edge-delivery-sites}
+      + Sitios de Edge Delivery {#edge-delivery-sites}
          + [Introducción a los Edge Delivery Services en Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Añadir un sitio de Edge Delivery a Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
          + [Administración de sitios de Edge Delivery en Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
-      + Configuración de dominio {#custom-domain-names}
+      + Configuración del dominio {#custom-domain-names}
          + [Introducción a la configuración de dominio](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [Comprobar estado del nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)

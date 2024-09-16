@@ -1,17 +1,17 @@
 ---
-title: Lista de comprobación para el lanzamiento
-description: Obtenga información acerca de todos los elementos que deben estar en su lugar para que el lanzamiento de AEM as a Cloud Service se realice correctamente.
+title: Lista de comprobación del lanzamiento
+description: Obtenga información acerca de todos los elementos que deben estar presentes para que el lanzamiento de AEM as a Cloud Service sea un éxito.
 exl-id: b424a9db-0f3b-4a8d-be84-365d68df46ca
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 56%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Lista de comprobación para el lanzamiento {#Go-Live-Checklist}
+# Lista de comprobación del lanzamiento {#Go-Live-Checklist}
 
 Revise esta lista de actividades para asegurarse de que el lanzamiento se realiza correctamente y sin problemas.
 
@@ -26,10 +26,10 @@ Revise esta lista de actividades para asegurarse de que el lanzamiento se realiz
 * Realice una recarga de contenido final.
 * Valide las configuraciones de Dispatcher.
    * Utilice un validador de Dispatcher local que facilite la configuración, validación y simulación de Dispatcher localmente
-      * [Configurar las herramientas locales de Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools#prerequisites).
+      * [Configure las herramientas locales de Dispatcher](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools#prerequisites).
    * Revise detenidamente la configuración del host virtual.
-      * La solución más fácil (y predeterminada) es incluir `ServerAlias *` en el archivo host virtual en `/dispatcher/src/conf.d/available_vhostsfolder`. Al hacerlo, pueden funcionar los alias de host utilizados por las pruebas funcionales del producto, la invalidación de la caché de Dispatcher y los clones.
-      * Sin embargo, si `ServerAlias *` no es aceptable, como mínimo se deben permitir las siguientes `ServerAlias` entradas, además de los dominios personalizados:
+      * La solución más fácil (y predeterminada) es incluir `ServerAlias *` en el archivo de host virtual en `/dispatcher/src/conf.d/available_vhostsfolder`. Esto permitirá que funcionen los alias de host utilizados por las pruebas funcionales del producto, la invalidación de la caché de Dispatcher y los clones.
+      * Sin embargo, si `ServerAlias *` no es aceptable, como mínimo las siguientes entradas de `ServerAlias` se deben permitir además de los dominios personalizados:
          * `localhost`
          * `*.local`
          * `publish*.adobeaemcloud.net`
@@ -43,20 +43,20 @@ Revise esta lista de actividades para asegurarse de que el lanzamiento se realiz
          * [Introducción a los certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
          * [Administrar certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * Administrar nombres de dominio personalizados (DNS)
-         * Asegúrese de que la migración de DNS no presente problemas inesperados. Cree un subdominio de prueba al que conectar la instancia de producción antes de publicar y realice una ronda de pruebas UAT. Por lo tanto, si el dominio es example.com, puede crear un subdominio test.example.com y aplicarlo a la producción. Durante las pruebas UAT del dominio, busque elementos como la redirección de vínculos adecuada, el almacenamiento en caché y las configuraciones de Dispatcher.
+         * Asegúrese de que la migración de DNS no presente problemas inesperados. Cree un subdominio de prueba al que conectar la instancia de producción antes del lanzamiento y realice una ronda de pruebas UAT. Por lo tanto, si el dominio es example.com, puede crear un subdominio test.example.com y aplicarlo a la producción. Durante las pruebas UAT del dominio, busque elementos como la redirección de vínculos adecuada, el almacenamiento en caché y las configuraciones de Dispatcher.
          * [Introducción a los nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-         * [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-         * [Administrar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+         * [Añadir un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+         * [Administre un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
    * Recuerde validar el TTL establecido para el registro de DNS.
       * El TTL es la cantidad de tiempo que un registro de DNS permanece en una caché antes de solicitar una actualización al servidor.
-      * Si tiene un TTL muy alto, las actualizaciones del registro DNS tardan más en propagarse.
+      * Si tiene un TTL muy alto, las actualizaciones del registro de DNS tardarán más en propagarse.
 * Ejecute pruebas de rendimiento y seguridad que cumplan los requisitos y objetivos de su empresa.
-   * Realizar pruebas en un entorno de ensayo.  Tiene el mismo tamaño que la producción.
+   * Realice pruebas en el entorno de ensayo.  Tiene el mismo tamaño que la producción.
    * Los entornos de desarrollo no tienen el mismo tamaño que los de ensayo y producción.
 * Pase el ratón por encima y asegúrese de que el lanzamiento real se realice sin ninguna implementación nueva o actualización de contenido.
-* Crear perfiles de notificación de usuarios de Admin Console. Consulte [Perfiles de notificación](/help/journey-onboarding/notification-profiles.md)
+* Cree perfiles de notificación de usuario de Admin Console. Consulte [Perfiles de notificación](/help/journey-onboarding/notification-profiles.md)
 * Considere la posibilidad de configurar reglas de filtro de tráfico para controlar qué tráfico no debe permitirse en el sitio web.
-   * Las reglas de filtro de tráfico de límite de velocidad pueden ser una herramienta eficaz contra los ataques DDoS. Una categoría especial de reglas de filtro de tráfico, denominadas reglas de WAF (cortafuegos de aplicaciones web), requieren una licencia independiente.
+   * Las reglas de filtro de tráfico de límite de volumen pueden ser una herramienta eficaz contra ataques DDoS. Una categoría especial de reglas de filtro de tráfico, denominadas reglas WAF (Web Application Firewall), requieren una licencia independiente.
    * Consulte la documentación para ver algunas [reglas de inicio sugeridas](/help/security/traffic-filter-rules-including-waf.md#recommended-starter-rules).
 
 Siempre puede hacer referencia a la lista en caso de que necesite volver a calibrar las tareas durante el lanzamiento.
