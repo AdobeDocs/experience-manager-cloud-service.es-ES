@@ -1,8 +1,8 @@
 ---
 source-git-commit: 11368914a78c1f47c2f341a112bf981545cf6203
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '993'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 # Fragmentos de código {#snippets}
@@ -156,28 +156,28 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 >Si utiliza (o tiene intención de utilizar) la canalización front-end para desarrollar sitios, debe añadir de antemano la Lista de IP permitidas de Cloud Manager.
 >Consulte [Uso de la Lista de IP permitidas de Cloud Manager con la canalización front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
 
-## Trabajo con Dynamic Media {#work-with-dynamic-media}
+## Trabajar con Dynamic Media {#work-with-dynamic-media}
 
 >[!TIP]
 >
->¿Es su primera vez en Dynamic Media? Para obtener información general rápida y de alto nivel sobre Dynamic Media, consulte [Trabajar con Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+>¿Es su primera vez con Dynamic Media? Para obtener información general rápida y profesional sobre Dynamic Media, consulte [Trabajar con Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
 
-## Consulte también para Dynamic Media {#see-also-dm}
+## Realice su consulta también para Dynamic Media {#see-also-dm}
 
 >[!NOTE]
 >
->* ¿Es su primera vez en Dynamic Media? Para obtener información general rápida y de alto nivel sobre Dynamic Media, consulte [Trabajar con Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+>* ¿Es su primera vez con Dynamic Media? Para obtener información general rápida y profesional sobre Dynamic Media, consulte [Trabajar con Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
 >
->* Siga [Prácticas recomendadas de Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md) para obtener el máximo valor.
+>* Siga [Prácticas recomendadas de Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md) para sacarle el mayor rendimiento.
 >
->* Pruebe funciones de imagen de Dynamic Media con [herramienta de instantáneas](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+>* Pruebe funciones de imagen de Dynamic Media con la [herramienta Snapshot](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
 >
->* Garantiza una reproducción de vídeo sin problemas con [vídeo adaptable](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
+>* Garantiza una reproducción de vídeo fluida con [vídeo adaptable](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
 >
->* Automatice el recorte de [imágenes con recorte inteligente](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+>* Automatice el recorte de [imágenes con Recorte inteligente](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 >
->* Automatice el recorte de [vídeos con recorte inteligente](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
+>* Automatice el recorte de [vídeos con Recorte inteligente](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
 >
->* Ofrecer [experiencia interactiva con tecnología 3D](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
->* Otro [banco de recursos de Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
+>* Ofrezca una [experiencia interactiva con tecnología 3D](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
+>* Otro [banco de recursos de Dynamic Media](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
 

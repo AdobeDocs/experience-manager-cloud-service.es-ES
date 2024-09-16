@@ -1,20 +1,20 @@
 ---
 title: Uso de reCAPTCHA con Edge Delivery Services para AEM Forms as a Cloud Service
-description: Uso de Google reCAPTCHA en un formulario para Edge Delivery Services de AEM Forms
+description: Uso de Google reCAPTCHA en un formulario para Edge Delivery Services para AEM Forms
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '848'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
 # Uso de reCAPTCHA con Edge Delivery Services para AEM Forms as a Cloud Service
 
-<span>La función **reCAPTCHA** se encuentra en el programa de versión preliminar. Para solicitar acceso a la característica **reCAPTCHA** para Edge Delivery Services de AEM Forms, envíe un mensaje de correo electrónico desde su dirección de trabajo a mailto:aem-forms-ea@adobe.com.</span>
+<span>La función **reCAPTCHA** se encuentra en el programa de versión preliminar. Para solicitar acceso a la función **reCAPTCHA** para Edge Delivery Services para AEM Forms, envíe un correo electrónico desde su dirección de trabajo a mailto:aem-forms-ea@adobe.com.</span>
 
 reCAPTCHA es una herramienta popular que se utiliza para proteger los sitios web de actividades fraudulentas, correo no deseado y uso indebido. En Edge Delivery Services, el bloque de formularios adaptables ofrece la funcionalidad para añadir reCAPTCHA de Google para distinguir entre humanos y bots. Esta función permite a los usuarios proteger su sitio web del correo no deseado y del uso indebido.
 Por ejemplo, considere un formulario de consulta que recopile datos como las fechas de inicio y finalización de viaje, presupuesto de la habitación, coste estimado del viaje e información del viajero. En estos casos, existe el riesgo de que usuarios maliciosos exploten el formulario para enviar correos electrónicos de phishing o inundarlo con contenido irrelevante o dañino mediante bots de spam. La integración de reCAPTCHA ofrece una seguridad añadida al verificar que los envíos proceden de usuarios genuinos, lo que minimiza de forma eficaz las entradas de correo no deseado.
