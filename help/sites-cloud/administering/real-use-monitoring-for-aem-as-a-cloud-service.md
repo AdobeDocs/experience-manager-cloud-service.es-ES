@@ -4,9 +4,9 @@ description: Obtenga información acerca de Real Use Monitoring (RUM) , un servi
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: ed52bac52618e23b9bcbe7c6767501c6711aff00
+source-git-commit: fbc3358f1be3ae7ce3142cdc84815d304a2d6c38
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1009'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ El servicio RUM (Real Use Monitoring) es una tecnología de monitorización del 
 
 ## ¿Quién puede beneficiarse de un servicio de monitorización de uso real? {#who-can-benefit-from-rum-service}
 
-AEM La Monitorización de uso real de ha desarrollado una aplicación que ayuda a los clientes y al Adobe AEM a comprender cómo los usuarios finales interactúan con los sitios de la. La Monitorización de uso real diagnostica problemas de rendimiento y mide la eficacia de los experimentos. La Monitorización del uso real preserva la privacidad de los visitantes a través del muestreo (solo se monitoriza una pequeña parte de todas las vistas de página) y no se recopila información de identificación personal (PII).
+La Monitorización de uso real ayuda a los clientes y al Adobe AEM a comprender cómo los usuarios finales interactúan con los sitios de la. La Monitorización de uso real diagnostica problemas de rendimiento y mide la eficacia de los experimentos. La Monitorización del uso real preserva la privacidad de los visitantes a través del muestreo (solo se monitoriza una pequeña parte de todas las vistas de página) y no se recopila información de identificación personal (PII).
 
 ## Servicio de monitoreo de uso real y privacidad {#rum-service-and-privacy}
 
@@ -59,7 +59,7 @@ El servicio de Monitoreo de Uso Real está diseñado para evitar la recopilació
 
 ## Cómo funciona la Monitorización de uso real para un cliente {#how-rum-works-for-a-customer}
 
-Real Use Monitoring supervisa automáticamente el tráfico del lado del cliente. Como cliente de Adobe, no necesita realizar ningún paso adicional, ya que este servicio está perfectamente integrado en su configuración existente. Con Real Use Monitoring (RUM) como General Availability (GA) , se beneficia automáticamente de esta nueva función. El servicio de Monitorización de uso real no expone ninguna métrica hoy a través de una herramienta de visualización. Estamos trabajando para ofrecerle esta funcionalidad lo antes posible.
+Real Use Monitoring supervisa automáticamente el tráfico del lado del cliente. Como cliente de Adobe, no necesita realizar ningún paso adicional, ya que este servicio está perfectamente integrado en su configuración existente. Con el servicio de Monitorización de uso real (RUM) disponible de forma general, se beneficia automáticamente de esta nueva función. El servicio de Monitorización de uso real no expone ninguna métrica de cara al cliente hoy para monitorizarla. Estamos trabajando para ofrecerle esta funcionalidad lo antes posible.
 
 <!-- Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
 
