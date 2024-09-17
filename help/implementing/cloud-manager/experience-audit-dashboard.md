@@ -5,7 +5,7 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 505e0887124472693216fee2f0a3e960591b5ae5
+source-git-commit: 5dc3d571c553f2972295172c7a6d0249be3285b8
 workflow-type: tm+mt
 source-wordcount: '1950'
 ht-degree: 6%
@@ -47,11 +47,11 @@ Las auditorías se ejecutan como parte de la canalización. Las auditorías tamb
 
 La auditoría de experiencias está disponible de forma predeterminada para las canalizaciones de producción. Opcionalmente, se puede habilitar para el desarrollo de canalizaciones full-stack y front-end. En todos los casos, debe definir qué rutas de contenido se evalúan durante la ejecución de la canalización.
 
-1. Según el tipo de canalización que desee configurar, siga las instrucciones para:
+1. Según el tipo de canalización que desee configurar, realice una de las siguientes acciones:
 
    * Agregue una nueva [canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) para definir las rutas que desea que evalúe la auditoría.
-   * Agregue una nueva canalización [que no sea de producción,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) si desea habilitar la auditoría en una canalización front-end o de desarrollo de pila completa.
-   * O puede [editar una canalización existente,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) y actualizar las opciones existentes.
+   * Agregue una nueva [canalización que no sea de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md), si desea habilitar la auditoría en una canalización de pila completa de front-end o de desarrollo.
+   * O bien, puede [editar una canalización existente](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) y actualizar las opciones existentes.
 
 1. Para usar la auditoría de experiencias al agregar o editar una canalización que no sea de producción, marque la casilla de verificación **Auditoría de experiencias**. Puede encontrar esta opción en la ficha **Código Source**.
 
@@ -176,7 +176,7 @@ Haga clic en el vínculo **ver páginas** de la vista de detalles para ver las p
 
 ![Páginas para los detalles de la recomendación](assets/experience-audit-details-pages.png)
 
-##### Páginas digitalizadas {#scanned-pages}
+##### Páginas analizadas {#scanned-pages}
 
 La sección **Páginas digitalizadas** proporciona detalles de puntuaciones en todas las páginas digitalizadas. Use los botones **Anterior** y **Siguiente** para hojear los resultados y elegir cuántos elementos se deben paginar en la pantalla.
 
@@ -236,13 +236,12 @@ Algunas razones por las que las páginas podrían no estar disponibles son las s
 * La página no existe.
 * La página redirige los envíos que requieren una autenticación distinta de la básica.
 * Se ha producido un problema interno.
-* Etc
 
 >[!TIP]
 >
 >[Acceder a los informes sin procesar](#scanned-pages) de una página puede proporcionar detalles sobre por qué no se pudo auditar la página.
 
-## Consejos generales de rendimiento {#performance-tips}
+## Sugerencias generales de rendimiento {#performance-tips}
 
 Dos de los problemas de impacto más comunes y fáciles de solucionar están relacionados con los Cambios acumulativos de diseño (CLS) y la Pintura de contenido más grande (LCP).
 

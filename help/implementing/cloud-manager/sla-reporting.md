@@ -1,67 +1,72 @@
 ---
-title: Crear informes de SLA
-description: Aprenda cómo ver el rendimiento de su entorno de AEM de producción en relación con el contrato de nivel de servicio (SLA).
+title: Informes SLA
+description: AEM Aprenda a ver el rendimiento de su entorno de producción en relación con el contrato de nivel de servicio.
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: c46b6df488722fe750e524ad2bb383f25bf00b0f
 workflow-type: tm+mt
-source-wordcount: '405'
-ht-degree: 54%
+source-wordcount: '477'
+ht-degree: 13%
 
 ---
 
 
-# Crear informes de SLA {#sla-reporting}
+# Informes SLA {#sla-reporting}
 
-Aprenda cómo ver el rendimiento de su entorno de AEM de producción en relación con el contrato de nivel de servicio (SLA).
+AEM Aprenda a ver el rendimiento de su entorno de producción en relación con el SLA contratado (contrato de nivel de servicio).
 
-## Introducción {#introduction}
+## Ver un informe de SLA {#introduction}
 
-Los datos de informes de SLA están disponibles para cada programa de producción a través de la pestaña **Informes**. Siga estos pasos para acceder.
+Los datos del informe de SLA rastrean las métricas de rendimiento para dos niveles de producción: nivel de autor y nivel de Publish.
+
+El gráfico de líneas de un año seleccionado incluye puntos de datos para cada mes de enero a diciembre. Se realiza un seguimiento de las siguientes métricas.
+
+| Métrica rastreada | Color de línea | Descripción |
+| --- | --- | --- |
+| Nivel de autor real | Verde claro | El tiempo de actividad medido de los incidentes de factorización de nivel de creación de producción causados por los proveedores de Adobe o Adobe. |
+| Contrato de nivel de autor | Azul oscuro | El SLA definido en su contrato con Adobe para el nivel de Author. |
+| Publicar nivel real | Naranja | El tiempo de actividad medido del nivel de Publish de producción, los incidentes de factorización causados por los proveedores de Adobes o Adobes. |
+| Publicar contrato de nivel | Rojo | El SLA definido en su contrato con Adobe para el nivel Publish. |
+
+**Para ver un informe de SLA:**
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
 
-1. Con el panel de navegación lateral, vaya a la pestaña **Informes** desde la página **Información general**.
+1. En la página **Resumen del programa**, en el panel de navegación izquierdo, haga clic en **Informes**.
 
-1. Haga clic en el año deseado para ver los datos de SLA en gráficos.
+1. Haga clic en **Informes de SLA**.
 
-![Ejemplo de gráfico de SLA](assets/sla-reporting-1.png)
+   ![Gráfico de líneas de informe de SLA](/help/implementing/cloud-manager/assets/cm-sla-report.png)
 
-Desplace el cursor sobre un punto de datos para mostrar los valores específicos de ese punto.
+1. Haga clic en el año deseado para ver un gráfico de líneas de datos de SLA.
 
-![Visualizar datos detallados](assets/sla-reporting-b.png)
+1. (Opcional) Realice una de las siguientes acciones:
 
-## Métricas de SLA {#sla-metrics}
+   * Desplace el cursor sobre un punto de datos del gráfico de líneas para mostrar los valores específicos de ese punto.
+   * Debajo del año del gráfico de líneas, haga clic en el icono Descargar para guardar un archivo de imagen PNG del gráfico de líneas.
+   * Haga clic en el nombre de una métrica para ver únicamente los datos de esa métrica. O bien, presione `Shift` en el teclado mientras selecciona o anula la selección de uno o más nombres de métricas.
 
-El gráfico del año seleccionado incluye varios conjuntos de datos.
-
-* **Publicar contrato de nivel**: Este es el SLA definido en su contrato con Adobe para el nivel de publicación.
-
-* **Publicar nivel real**: Este es el tiempo de actividad medido de los incidentes de factorización del nivel de publicación de producción causados por los proveedores de Adobe o por Adobe.
-
-* **Contrato de nivel de autor**: Este es el SLA definido en su contrato con Adobe para el nivel de autor.
-
-* **Nivel de autor actual**: Este es el tiempo de actividad medido de los incidentes de factorización del nivel de autor de producción causados por los proveedores de Adobe o por Adobe.
+   ![Visualizar datos detallados](/help/implementing/cloud-manager/assets/cm-sla-download.png)
 
 ## Análisis de eventos {#event-analysis}
 
-La sección **Análisis de eventos** en el gráfico muestra el conjunto de incidentes ocurridos para el programa durante el año seleccionado.
+La sección **Análisis de eventos** en el gráfico muestra el conjunto de incidentes que ocurrieron para el programa durante el año seleccionado.
 
 Cada incidente tiene un intervalo de tiempo, una causa y un conjunto de comentarios.
 
 ![Ejemplo de análisis de eventos](assets/sla-reporting-c.png)
 
-## Actualizar intervalo {#refresh}
+## Actualizar el intervalo de los informes de SLA {#refresh}
 
-AEM La creación de informes de SLA le ofrecen una perspectiva del rendimiento de su entorno de producción de y está actualizado, pero no es instantánea. La generación de informes de SLA se produce mensualmente y se genera para nuevos programas marcados como Producción el mes anterior. No es instantáneo. Debido a este retraso, tenga en cuenta lo siguiente al revisar su informe de SLA:
+La creación de informes de SLA AEM le ofrece una perspectiva del rendimiento de su entorno de producción de y está actualizada, pero no es instantánea. La generación de informes de SLA se produce mensualmente y se genera para los nuevos programas que se han marcado como `Production previous month`. No es instantáneo. Debido a este retraso, tenga en cuenta lo siguiente al revisar el informe de SLA:
 
-* El SLA notificado será el que existió a principios de mes, incluso si el SLA cambió durante ese mes.
-* Si no había SLA a principios de mes porque el programa no existía en ese momento, se aplica el SLA que existía en la fecha de creación del programa.
+* El SLA del que se informa es el que existía a principios de mes, incluso si SLA había cambiado durante ese mes.
+* Si no había ningún SLA a principios de mes porque el programa no existía, se aplica el SLA que existía en la fecha de creación del programa.
 
 ## Previsualizar entornos {#preview}
 
-El entorno de vista previa está diseñado como una herramienta para que los autores de contenido comprueben la experiencia final del contenido antes de publicarlo. Debido a esto, los entornos de vista previa no están diseñados con alta disponibilidad y no tienen un SLA asociado.
+El entorno de vista previa está diseñado como una herramienta para que los autores de contenido comprueben la experiencia final del contenido antes de publicarlo. Debido a esta funcionalidad, los entornos de vista previa no están diseñados con alta disponibilidad y no tienen una SLA asociada.
