@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f8b058549162b7ae3d57b1a7dd3461f738b75320
+source-git-commit: 9b31ea4218ce6a3a0f2a53e28efec4d9b98f9b38
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 11%
+source-wordcount: '1303'
+ht-degree: 10%
 
 ---
 
@@ -55,7 +55,7 @@ Existen reglas para excluir bots conocidos, incluidos servicios bien conocidos q
 | Tipo de solicitud | Solicitud de contenido | Descripción |
 | --- | --- | --- |
 | Código HTTP 100-299 | Incluido | Son solicitudes regulares que entregan todo el contenido o parte del mismo. |
-| Bibliotecas HTTP para automatización | Incluido | Ejemplos:<br>· Amazon CloudFront<br>· Cliente Http Apache<br>· Cliente Http Asincrónico<br>· Axios<br>· Azureus<br>· Curl<br>· Recuperación del nodo GitHub<br>· Guzzle<br>· Cliente Go-http<br>· Chrome sin encabezado<br>· Cliente Java™<br>· Jersey<br>· Nodo Oembed<br>· okhttp<br>· Solicitudes Python<br>· Reactor Netty<br>· Wget<br>· WinHTTP |
+| Bibliotecas HTTP para automatización | Incluido | Ejemplos:<br>· Amazon CloudFront<br>· Cliente Http Apache<br>· Cliente Http Asincrónico<br>· Axios<br>· Azureus<br>· Curl<br>· Recuperación del nodo GitHub<br>· Guzzle<br>· Cliente Go-http<br>· Chrome sin encabezado<br>· Cliente Java™<br>· Jersey<br>· Nodo Oembed<br>· okhttp<br>· Solicitudes Python<br>· Reactor Netty<br>· Wget<br>· WinHTTP<br>· HTTP rápido<br>· Recuperación del nodo de GitHub<br>· Red de reactor |
 | Herramientas de monitorización y comprobación de estado | Incluido | El cliente las configura para monitorizar un determinado aspecto del sitio. Por ejemplo: disponibilidad o rendimiento del usuario en el mundo real. Si estos extremos están dirigidos a extremos específicos como /system/probes/health para comprobaciones de estado, recomendamos que utilice el extremo `/system/probes/health` y no las páginas del HTML real del sitio.[Ver más abajo](#excluded-content-request)<br>Ejemplos:<br>· Amazon-Route53-Health-Check-Service<br>· EyeMonIT_bot_version_0.1_[(https://www.eyemon.it/)](https://www.eyemon.it/)<br>· Investis-Site24x7<br>· Mozilla/5.0+(compatible; UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0 2}· WebMon/2.0.0<br> |
 | `<link rel="prefetch">` solicitudes | Incluido | Para aumentar la velocidad de carga de la página siguiente, los clientes pueden hacer que el explorador cargue un conjunto de páginas antes de que el usuario haga clic en el vínculo, por lo que ya están en la caché. *Mente: esto aumenta significativamente el tráfico*, dependiendo de cuántas de estas páginas se hayan recuperado previamente. |
 | Tráfico que bloquea los informes de Adobe Analytics o Google Analytics | Incluido | Es más común que los visitantes de los sitios tengan instalado software de privacidad (bloqueadores de anuncios, etc.) que afecta a la precisión de los Google Analytics o Adobe Analytics. AEM as a Cloud Service cuenta las solicitudes en el primer punto de entrada en la infraestructura operada por Adobe y no en el lado del cliente. |
@@ -75,7 +75,8 @@ Ver también [Tablero de licencias](/help/implementing/cloud-manager/license-das
 | URL para que los clientes supervisen su programa de Cloud Service | Excluido | Se recomienda usar la dirección URL para supervisar externamente la disponibilidad o la comprobación de estado.<br><br>`/system/probes/health` |
 | Servicio de calentamiento de AEM as a Cloud Service Pod | Excluido |
 | Agente: skyline-service-warmup/1.* |
-| Motores de búsqueda, redes sociales y bibliotecas HTTP conocidos (etiquetados por Fastly) | Excluido | Servicios conocidos que visitan el sitio regularmente para actualizar su índice de búsqueda o servicio:<br><br>Ejemplos:<br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Preguntar a Jeeves Corporate Spider<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuiltWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google AdsBot<br> · Google AdsBot Mobile<br>· Googlebot<br>· Googlebot Mobile<br>· lmspider<br>· LucidWorks<br>· MJ12bot<br>· PKingdom<br>· Pinterest<br>· SemrushBot<br>· SiteMejora<br>· StashBot<br>· StatusCake<br>· YandexBot |
+| Motores de búsqueda, redes sociales y bibliotecas HTTP conocidos (etiquetados por Fastly) | Excluido | Servicios conocidos que visitan el sitio regularmente para actualizar su índice de búsqueda o servicio:<br><br>Ejemplos:<br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Preguntar a Jeeves Corporate Spider<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuiltWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google AdsBot<br> · Google AdsBot Mobile<br>· Googlebot<br>· Googlebot Mobile<br>· lmspider<br>· LucidWorks<br>· MJ12bot<br>· Pinterest<br>· SemrushBot<br>· SiteMejora<br>· StashBot<br>· StatusCake<br>· YandexBot<br>· Claudebot |
 | Excluir llamadas al Commerce integration framework | Excluido | AEM Estas son solicitudes realizadas a los que se reenvían al Commerce integration framework (la dirección URL comienza con `/api/graphql`) para evitar el recuento doble, no son facturables para el Cloud Service. |
 | Excluir `manifest.json` | Excluido | El manifiesto no es una llamada de API y sirve para proporcionar información sobre cómo instalar sitios web en equipos de escritorio o teléfonos móviles. El Adobe no debe contar la solicitud JSON a `/etc.clientlibs/*/manifest.json` |
 | Excluir `favicon.ico` | Excluido | Aunque el contenido devuelto no debe ser HTML ni JSON, observamos que en algunos casos, como en los flujos de autenticación SAML, los iconos favoritos se pueden devolver como HTML y, por lo tanto, se excluyen explícitamente del recuento. |
+| Proxy de CDN a un servidor diferente | Excluido | AEM AEM Las solicitudes enrutadas a diferentes back-ends que no utilizan la técnica [Selectores de origen de CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) se excluyen ya que no llegan a los extremos de la página de inicio de la página de inicio de la página de inicio de la página de. |
