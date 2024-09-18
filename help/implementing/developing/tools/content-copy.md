@@ -4,10 +4,10 @@ description: La herramienta de copia de contenido permite a los usuarios copiar 
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: dfd44fc637e60f48c3d13430f1f4b9b7b9427d3d
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 33%
+source-wordcount: '1347'
+ht-degree: 34%
 
 ---
 
@@ -32,7 +32,7 @@ El contenido que se va a copiar se define mediante un conjunto de contenido. Un 
 Al copiar contenido, el entorno de origen es la fuente de información.
 
 * Si el contenido se ha modificado en el entorno de destino, el contenido del origen lo sobrescribe, si las rutas son iguales.
-* Si las rutas son diferentes, el contenido del origen se combina con el contenido del destino.
+* Si las rutas son diferentes, el contenido del origen se combinará con el contenido del destino.
 
 ## Permisos {#permissions}
 
@@ -64,7 +64,7 @@ Para poder copiar cualquier contenido, se debe definir un conjunto de contenido.
 1. En la pestaña **Rutas de contenido** del asistente, especifique las rutas del contenido mutable que se incluirán en el conjunto de contenido.
 
    1. Introduzca la ruta en el campo **Añadir ruta de inclusión**.
-   1. Haga clic en **Agregar ruta** para agregar la ruta al conjunto de contenido.
+   1. Haga clic en el botón **Añadir ruta** para agregar la ruta al conjunto de contenido.
    1. Vuelva a hacer clic en **Agregar ruta** según sea necesario.
       * Se permiten hasta 50 rutas.
 
@@ -187,7 +187,7 @@ Para ello, en la página **Copiar actividad de contenido**, seleccione la acció
 
 Los registros se descargan en el equipo local. Si la descarga no comienza, compruebe la configuración del bloqueador de ventanas emergentes.
 
-## Restricciones {#limitations}
+## Limitaciones {#limitations}
 
 La herramienta de copia de contenido tiene las siguientes limitaciones.
 
@@ -200,3 +200,10 @@ La herramienta de copia de contenido tiene las siguientes limitaciones.
 * La herramienta de copia de contenido no tiene capacidad de control de versiones y no puede detectar automáticamente el contenido modificado o creado en el entorno de origen en un conjunto de contenido desde la última operación de copia de contenido.
    * Si desea actualizar el entorno de destino solo con cambios de contenido, desde la última operación de copia de contenido, debe crear un conjunto de contenido. A continuación, especifique las rutas en la instancia de origen en las que se han realizado cambios desde la última operación de copia de contenido.
 * La información de la versión no se incluye en una copia de contenido.
+
+## Problemas conocidos {#known-issues}
+
+Tenga en cuenta el siguiente problema conocido al usar la funcionalidad [copia de contenido.](/help/implementing/developing/tools/content-copy.md)
+
+* Si se cambia el nombre de un recurso en el entorno de origen, puede provocar que la operación de copia de contenido falle debido a UUID en conflicto en el entorno de destino.
+   * Para evitar este error, en lugar de cambiar el nombre de los recursos, primero elimínelos y vuelva a crearlos con el nuevo nombre de recurso que desee.
