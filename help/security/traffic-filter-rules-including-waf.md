@@ -4,10 +4,10 @@ description: Configuración de las reglas de filtro de tráfico, incluidas las r
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: dee1a768c1cec6cf0e7c321d4d76a486db661d13
-workflow-type: ht
-source-wordcount: '3928'
-ht-degree: 100%
+source-git-commit: cf9e1b3c290d142095912c794de58547913faece
+workflow-type: tm+mt
+source-wordcount: '4012'
+ht-degree: 97%
 
 ---
 
@@ -55,8 +55,7 @@ Adobe le invita a que envíe sus comentarios o preguntas sobre las reglas de fil
 
 En el panorama digital actual, el tráfico malicioso es una amenaza constante. Adobe reconoce la gravedad del riesgo y ofrece varios enfoques para proteger las aplicaciones de los clientes y mitigar los ataques cuando se producen.
 
-En la periferia, la CDN administrada por Adobe absorbe los ataques DoS en el nivel de red 
-(capas 3 y 4), incluidos los ataques de inundación y reflexión/amplificación.
+En el límite, la CDN administrada por Adobe absorbe los ataques DoS en el nivel de red (capas 3 y 4), incluidos los ataques de inundación y reflexión/amplificación.
 
 De forma predeterminada, Adobe toma medidas para evitar la degradación del rendimiento debido a ráfagas de tráfico inesperadamente altas que superan un determinado umbral. Si hay un ataque de DoS que afecte a la disponibilidad del sitio, los equipos de operaciones de Adobe reciben una alerta y toman medidas para mitigarlo.
 
@@ -475,6 +474,14 @@ data:
           type: block
         rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
+
+## Reglas de CVE {#cve-rules}
+
+Si WAF tiene licencia, el Adobe aplica automáticamente reglas de bloqueo para protegerse contra muchas CVE conocidas (Vulnerabilidades y exposiciones comunes) y es posible que se añadan nuevas CVE poco después de descubrirse. Los clientes no deben ni deben configurar las reglas CVE por sí mismos.
+
+Si una solicitud de tráfico coincide con una CVE, aparecerá en la entrada de registro de CDN correspondiente.
+
+Póngase en contacto con el servicio de asistencia al Adobe si tiene preguntas sobre una CVE en particular o si hay una regla CVE en particular que su organización desee deshabilitar.
 
 ## Alertas de reglas de filtro de tráfico {#traffic-filter-rules-alerts}
 
