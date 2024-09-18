@@ -4,10 +4,10 @@ description: Descubra cómo AEM as a Cloud Service puede beneficiarse del rendim
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 6c7e704dff97e8549664618f879863c3ca0f8f86
-workflow-type: ht
-source-wordcount: '1356'
-ht-degree: 100%
+source-git-commit: fa50e661d05a5083be3605a8c6e26450357f4aec
+workflow-type: tm+mt
+source-wordcount: '1425'
+ht-degree: 93%
 
 ---
 
@@ -135,7 +135,11 @@ Puede interactuar con los equipos de productos de Adobe a través del canal de c
 
 ### Registro de un ticket de asistencia {#support-ticket}
 
-Si un problema de producto requiere una investigación y resolución de problemas adicionales y debe cumplir los SLT de respuesta, puede enviar un ticket de asistencia mediante Admin Console:
+Si un problema de producto necesita una investigación y una solución de problemas adicionales y debe cumplir los SLT de respuesta, puede enviar un ticket de asistencia.
+
+Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge Delivery en Cloud Manager. Se recomienda registrar su sitio web con Cloud Manager para todos los usuarios de AEM as a Cloud Service, y [esto ofrece una serie de ventajas.](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) Consulte [la documentación de Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) para obtener más información si aún no ha registrado el sitio.
+
+Una vez registrado el sitio web con Cloud Manager, siga este proceso con el Admin Console para enviar un ticket de asistencia:
 
 1. [Siga el proceso de asistencia estándar](https://experienceleague.adobe.com/?support-tab=home#support) y cree un ticket.
 1. Añada **Edge Delivery** en el título del ticket.

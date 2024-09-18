@@ -4,12 +4,13 @@ description: Obtenga información sobre cómo entregar sus proyectos de Cloud Ma
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5dc3d571c553f2972295172c7a6d0249be3285b8
+source-git-commit: a51e2cf3f91b3bc1fe1600024943f6bd95f78352
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '737'
 ht-degree: 6%
 
 ---
+
 
 # Introducción a los Edge Delivery Services en Cloud Manager {#edge-delivery-services}
 
@@ -27,12 +28,6 @@ Cloud Manager en AEM as a Cloud Service le permite habilitar el servicio de Edge
 >
 >Para obtener más información acerca de los Edge Delivery Services AEM y cómo se pueden usar con los, consulte [descripción general de los Edge Delivery Services](/help/edge/overview.md).
 
-<!-- RELEASED TO GA SEPTEMBER 5, 2024
->[!NOTE]
->
->This feature is only available to [the early adopter program](/help/implementing/cloud-manager/release-notes/current.md#early-adoption). -->
-
-
 ## Acerca de los Edge Delivery Services en Cloud Manager {#edge-in-cloud-manager}
 
 Si tiene Edge Delivery Services con licencia como parte de Adobe Experience Manager Sites, puede incorporar su sitio con Edge Delivery Services directamente en Cloud Manager e iniciar [con una experiencia guiada de autoservicio](/help/implementing/cloud-manager/managing-code/private-repositories.md).
@@ -41,15 +36,7 @@ AEM Además, puede acceder a una experiencia unificada para administrar todas la
 
 ## Adición de Edge Delivery Services a un programa de producción o de zona protegida
 
-Para agregar o editar programas, debe ser miembro del rol **Propietario del negocio** o tener permiso para hacerlo.
-
-Su organización debe tener una licencia de Edge Delivery Services no utilizada para poder aplicarla a un programa de producción.
-
->[!NOTE]
->
->Una vez que la licencia de Edge Delivery Services se aplica a un programa o se elimina de él, el cambio entra en vigor inmediatamente sin necesidad de ejecutar una canalización. <!-- https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2024.9.0+Release -->
-
-Según el caso de uso, realice una de las siguientes acciones:
+Se pueden agregar Edge Delivery Services de varias formas diferentes, en función de cómo haya iniciado el proyecto.
 
 | Caso de uso | Descripción |
 | --- | --- |
@@ -58,22 +45,27 @@ Según el caso de uso, realice una de las siguientes acciones:
 | Deseo agregar un sitio de Edge Delivery a Cloud Manager | Consulte [Agregar un sitio Edge Delivery](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md). |
 | Deseo agregar Edge Delivery Services a un programa de zona protegida nuevo o existente. | Consulte [Crear programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md).<br>Al crear un programa de zona protegida, los Edge Delivery Services se agregan al programa de forma predeterminada; no es necesario seleccionarlo.<br>Los programas de zonas protegidas existentes antes de la disponibilidad general de Edge Delivery, heredan los Edge Delivery Services automáticamente. |
 
-## Ruta recomendada de Adobe para clientes con licencia {#recommended-path-eds}
+>[!NOTE]
+>
+>* Para agregar o editar programas, debe ser miembro del rol **Propietario del negocio** o tener permiso para hacerlo.
+>* Su organización debe tener una licencia de Edge Delivery Services no utilizada para poder aplicarla a un programa de producción.
+>* Una vez que la licencia de Edge Delivery Services se aplica a un programa o se elimina de él, el cambio entra en vigor inmediatamente sin necesidad de ejecutar una canalización.
 
-Como cliente con licencia, asegúrese de maximizar sus beneficios del Adobe accediendo y consumiendo su licencia de Edge Delivery Services a través de Cloud Manager. Este enfoque le permite usar [CDN administrada por Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) y aprovechar ventajas clave como la administración de CDN de autoservicio, incluida la configuración y adición de certificados DV. Además, después de crear un certificado DV, Adobe lo renueva automáticamente cada tres meses, a menos que se elimine. Si no tiene una licencia de Edge Delivery Services con Adobe y decide omitir estos beneficios, solo puede utilizar una CDN administrada por el cliente. Esta configuración debe estar en la plataforma `aem.live`.
 
-Si tiene licencia con licencias de Edge Delivery Services de AEM as a Cloud Service Sites, inicie sesión en Cloud Manager para asegurarse de que puede hacer lo siguiente:
+## Ruta recomendada de Adobe para Edge Delivery Services {#recommended-path-eds}
 
-* Consuma la licencia en el programa elegido.
+Maximice sus beneficios con los Adobes al acceder a sus licencias de Edge Delivery Services y consumirlas a través de Cloud Manager. Al hacerlo, puede aprovechar varias ventajas clave.
+
+* [Consume tu licencia en el programa que hayas elegido](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) y/o [actualiza otros programas.](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
 * Aproveche los beneficios de [API-first](https://developer.adobe.com/experience-cloud/experience-manager-apis/) para realizar operaciones CRUD (crear, leer, actualizar, eliminar).
-<!-- REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+Self-service+access+to+Edge+Delivery+Services+and+Adobe+Managed+CDN * Access to license dashboard and reporting -->
-* Acceso a los informes de SLA (*próximamente*) <!-- ADD LINK TO IT WHEN FINALLY ADDED -->
-* Obtener soporte de Adobe. Asegúrese de que los sitios de Edge Delivery Services estén registrados a través de un programa de producción en Cloud Manager para que el Adobe los reconozca y admita correctamente.
+* [Informes de acceso a SLA](/help/implementing/cloud-manager/sla-reporting.md) (*próximamente*)
+* [Obtenga acceso a la compatibilidad con el Adobe](/help/edge/overview.md#support-ticket) para sus programas de producción registrados.
 
+Además, el uso de Cloud Manager le permite usar [CDN administrada por Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) para su sitio de Edge Delivery y aprovechar ventajas clave como la administración de CDN de autoservicio, incluida la configuración y adición de certificados DV. Además, después de crear un certificado DV, Adobe lo renueva automáticamente cada tres meses, a menos que se elimine. Si no tiene una licencia de Edge Delivery Services con Adobe y decide evitar estos beneficios, solo puede utilizar su propia CDN autoadministrada. Esta configuración debe estar en la plataforma [`aem.live`.](https://www.aem.live/docs/go-live-checklist#cdn-configuration)
 
 ## Acerca de la lista de tareas pendientes de Edge Delivery {#ed-todo-list}
 
-La **lista de tareas pendientes de Edge Delivery** es una lista de comprobación de tareas de incorporación diseñada para guiarle a través de la incorporación, y administrar su sitio de Edge Delivery hasta [Go-Live](/help/journey-onboarding/go-live-checklist.md).
+La **lista de tareas pendientes de Edge Delivery** es una lista de comprobación de tareas de incorporación diseñada para guiarle a través de la incorporación, y administrar su sitio Edge Delivery hasta [go-live](/help/journey-onboarding/go-live-checklist.md).
 
 ![Lista de tareas pendientes del sitio de Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
@@ -87,13 +79,3 @@ La **lista de tareas pendientes de Edge Delivery** es una lista de comprobación
 | 6 | Configuración de la CDN del sitio de Edge Delivery | Consulte [Agregar una configuración de CDN](#add-cdn). |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
-
-<!--
-Edge Delivery Services can be enabled when adding a new production program or editing an existing one.
-
-![Add production program with Edge Delivery Services](assets/add-production-program-with-edge.png)
-
-For more information about adding programs, see the following:
-
-* [Create Production programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-* [Create Sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) -->
