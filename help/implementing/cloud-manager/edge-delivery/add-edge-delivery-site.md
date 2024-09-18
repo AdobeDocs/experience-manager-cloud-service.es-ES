@@ -1,37 +1,32 @@
 ---
 title: Añadir un sitio de Edge Delivery a Cloud Manager
-description: Aprenda a añadir un sitio de Edge Delivery a su programa de producción o programa de zona protegida y las ventajas que aporta.
+description: Obtenga información sobre cómo agregar un sitio de Edge Delivery a su programa de producción o programa de zona protegida.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 68f05c49ebc3d46aa44b3998e6142ab8547e5455
+source-git-commit: c952e69aa637b30abec4deba0e643b4287d84330
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 2%
+source-wordcount: '446'
+ht-degree: 3%
 
 ---
 
 
-# Añadir un sitio de Edge Delivery a Cloud Manager {#eds-add-site}
+# Añadir un sitio de Edge Delivery a Cloud Manager {#adding}
 
-Aprenda a añadir un sitio de Edge Delivery a su programa de producción o programa de zona protegida y las ventajas que aporta.
+Puede agregar un sitio de Edge Delivery a su programa de producción o de zona protegida.
 
-## Introducción {#introduction}
+Se requiere agregar un sitio de Edge Delivery a Cloud Manager para [registrar un ticket de asistencia para su proyecto de Edge Delivery](/help/edge/overview.md##support-ticket).
 
-Como parte del proyecto de Edge Delivery Services con AEM as a Cloud Service, se le recomienda añadir su sitio de Edge Delivery a Cloud Manager. Añadir su sitio web de Edge Delivery a Cloud Manager le ofrece las siguientes ventajas.
+Vea también [Introducción a los Edge Delivery Services en Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md).
 
-* [Acceso a CDN administrada por Adobe](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-* [Acceso a los informes de SLA](/help/implementing/cloud-manager/sla-reporting.md)
-* [Acceso a informes de uso de licencias](/help/implementing/cloud-manager/license-dashboard.md)
-
-Tenga en cuenta que es necesario agregar el sitio de Edge Delivery a Cloud Manager para [registrar un ticket de asistencia para el proyecto de Edge Delivery.](/help/edge/overview.md##support-ticket)
-
-## Adición de un sitio de Edge Delivery a Cloud Manager {#adding}
+**Para agregar un sitio de Edge Delivery a Cloud Manager:**
 
 1. Inicie sesión en Cloud Manager en [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) y seleccione el programa apropiado.
 1. Realice una de las siguientes acciones:
+
    * En la página **Resumen del programa**, haga clic en la ficha **Edge Delivery**. A continuación, cerca de la esquina inferior derecha de la página, haga clic en **Agregar sitio de Edge Delivery**.
 
-     ![Agregar sitio Edge Delivery desde la ficha Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
+     ![Agregar sitio de Edge Delivery desde la ficha Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
 
    * En la esquina superior izquierda de la página, haga clic en el icono de hamburguesa para mostrar el menú de navegación izquierdo. Bajo el encabezado **Servicios**, haga clic en **Sitios Edge Delivery**. Cerca de la esquina superior derecha de la página, haga clic en **Agregar sitio**.
 
@@ -59,11 +54,3 @@ Tenga en cuenta que es necesario agregar el sitio de Edge Delivery a Cloud Manag
 1. Haga clic en **Verificar**.
 
 Una vez verificado el repositorio, su estado en la tabla Edge Deliver Sites cambia a un círculo verde con una marca de verificación blanca dentro de él.
-
-Una vez que añada Edge Delivery Services a un programa de producción, se le aplicará la licencia de Edge Delivery Services.
-
-Cada sitio de Edge Delivery tiene una **lista de tareas pendientes de Edge Delivery** que lo guiará a través de la creación de su sitio de Edge Delivery.
-
-![Aplicación pendiente de Edge Delivery](/help/implementing/cloud-manager/assets/edge-delivery-to-do-ist.png)
-
-Consulte el documento [Introducción a los Edge Delivery Services en Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list) para obtener más información sobre estos pasos.
