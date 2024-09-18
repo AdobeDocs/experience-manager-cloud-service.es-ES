@@ -2,7 +2,7 @@
 title: Selector de recursos para [!DNL Adobe Experience Manager] como un [!DNL Cloud Service]
 description: Utilice el selector de recursos para buscar y recuperar metadatos y representaciones de recursos dentro de la aplicación.
 role: Admin,User
-source-git-commit: 63174176c944195ed21e481264e0a50062fd34f3
+source-git-commit: 5c76b28726403a6b011a55add190e6e3a6d7a390
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 8%
@@ -59,7 +59,7 @@ El Selector de recursos le permite personalizar los componentes según los requi
 
 >[!MORELIKETHIS]
 >
->* [Personalización del selector de recursos](/help/assets/asset-selector-customization.md)
+>* [Personalizaciones del Selector de recursos](/help/assets/asset-selector-customization.md)
 >* [Integrar el Selector de recursos con varias aplicaciones](/help/assets/integrate-asset-selector.md)
 >* [Propiedades del selector de recursos](/help/assets/asset-selector-properties.md)
 
