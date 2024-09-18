@@ -3,9 +3,9 @@ title: Añadir un sitio de Edge Delivery a Cloud Manager
 description: Obtenga información sobre cómo agregar un sitio de Edge Delivery a su programa de producción o programa de zona protegida.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: c952e69aa637b30abec4deba0e643b4287d84330
+source-git-commit: ad6a0e13f27839b9900e440d60948158ddf75d99
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '461'
 ht-degree: 3%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Añadir un sitio de Edge Delivery a Cloud Manager {#adding}
 
-Puede agregar un sitio de Edge Delivery a su programa de producción o de zona protegida.
+Después de agregar un sitio de Edge Delivery al programa de producción, se le aplica la licencia de Edge Delivery Services.
 
 Se requiere agregar un sitio de Edge Delivery a Cloud Manager para [registrar un ticket de asistencia para su proyecto de Edge Delivery](/help/edge/overview.md##support-ticket).
 
@@ -34,22 +34,21 @@ Vea también [Introducción a los Edge Delivery Services en Cloud Manager](/help
 
 1. En el cuadro de diálogo **Agregar sitio Edge Delivery**, proporcione la siguiente información en los campos obligatorios:
 
-   | Campo de texto | Datos que proporcionar |
-   | --- | --- |
-   | Nombre del sitio | Escriba el nombre del sitio de Edge Delivery que está agregando. El nombre sirve como identificador único del sitio en Cloud Manager. |
-   | URL del repositorio | Este campo hace referencia al repositorio de Git donde se almacena el código del sitio web. Este campo permite a Cloud Manager extraer el código de ese repositorio durante el proceso de implementación. |
-   | Descripción del sitio (opcional) | Escriba una breve descripción del sitio de Edge Delivery que está agregando. Esta descripción ayuda a identificar y diferenciar el sitio, lo que facilita la administración y el reconocimiento, entre otros sitios que ha agregado. |
+   | Campo de texto | Descripción |
+   | - | --- |
+   | Nombre del sitio | Escriba el nombre del sitio de Edge Delivery que está agregando.<br>El nombre sirve como identificador único para el sitio dentro de Cloud Manager. |
+   | URL del repositorio | Introduzca el repositorio de Git donde se almacena el código del sitio web.<br>Este campo permite a Cloud Manager extraer el código de ese repositorio durante el proceso de implementación. |
+   | Descripción del sitio (opcional) | Escriba una breve descripción del sitio de Edge Delivery que está agregando.<br>Una descripción ayuda a identificar y diferenciar el sitio, lo que facilita la administración y el reconocimiento, entre otros sitios que ha agregado. |
 
 1. En la esquina inferior derecha del cuadro de diálogo, haga clic en **Agregar**.
 
-1. Se abre el cuadro de diálogo **Verificar propiedad del repositorio**. Con la aplicación abierta, realice los siguientes pasos:
+1. En el cuadro de diálogo **Verificar la propiedad del repositorio**, compruebe la propiedad del repositorio siguiendo estos pasos:
 
-   1. Agregue un archivo con la ruta de acceso y el nombre `well-known/adobe/cloudmanager-challenge.txt` a la rama `main` del repositorio Git que aparece en el campo **URL del repositorio**.
-      * Si es necesario, haga clic en el icono **Copiar** para copiar la ruta de acceso en el portapapeles.
-      * *no* agrega un punto al inicio de la ruta de ubicación.
-   1. Agregue el código del campo **Step &amp;num; 1** al archivo que creó en el paso anterior.
-      * Si es necesario, haga clic en el icono **Copiar** para copiar el código en el portapapeles.
-   1. En el repositorio Git, cree una solicitud de extracción para los cambios que acaba de crear y, a continuación, fusiónela a `main`.
+   | Número de paso | Descripción |
+   | - | - |
+   | **1** | Agregue un archivo con la ruta de acceso y el nombre `well-known/adobe/cloudmanager-challenge.txt` a la rama `main` del repositorio Git que aparece en el campo **URL del repositorio**. *no* agrega un punto al inicio de la ruta de ubicación.<br>Si es necesario, haga clic en el icono **Copiar** para copiar la ruta de acceso en el portapapeles. |
+   | **2** | Agregue el código visto en el campo de texto del paso 2 al archivo que acaba de crear en el paso 1.<br>Si es necesario, haga clic en el icono **Copiar** para copiar el código en el portapapeles. |
+   | **3** | Cree una solicitud de extracción en el repositorio de Git para los cambios que acaba de crear y, a continuación, fusiónela en `main` para confirmar el código. |
 
 1. Haga clic en **Verificar**.
 
