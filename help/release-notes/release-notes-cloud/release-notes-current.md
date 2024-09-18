@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 79bf9d669c1b8757f456b83aad87550df306c78b
 workflow-type: tm+mt
 source-wordcount: '1266'
-ht-degree: 77%
+ht-degree: 96%
 
 ---
 
@@ -65,11 +65,11 @@ Aproveche la GenAI mediante la nueva función de AEM, [generar variaciones](/hel
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Función de acceso anticipado en Dynamic Media {#dm-early-access}
+### Función de acceso rápido en Dynamic Media {#dm-early-access}
 
 **subtítulos de vídeo generados por IA**
 
-Los subtítulos de vídeo generados por IA en Adobe Dynamic Media usan la inteligencia artificial para generar subtítulos automáticamente para el contenido de vídeo. Esta función está diseñada para mejorar la accesibilidad y la experiencia del usuario al proporcionar subtítulos precisos en tiempo real. La IA analiza la pista de audio del vídeo para transcribir voz y crear subtítulos, que se pueden editar para mejorar la precisión o la personalización. Estos subtítulos ayudan a cumplir con los requisitos de accesibilidad y mejorar la participación en vídeo de las audiencias que dependen de la compatibilidad con vídeo basado en texto o prefieren hacerlo.
+Los subtítulos de vídeo generados por IA en Adobe Dynamic Media usan la inteligencia artificial para generar subtítulos automáticamente para el contenido de vídeo. Esta función está diseñada para mejorar la accesibilidad y la experiencia del usuario gracias a la provisión de subtítulos precisos en tiempo real. La IA analiza la pista de audio del vídeo para transcribir la voz y crear subtítulos, que se pueden editar para mejorar la precisión o la personalización. Estos subtítulos ayudan a cumplir con los requisitos de accesibilidad y mejorar la participación en vídeo de los públicos que dependen de la compatibilidad con vídeo basado en texto o la prefieren.
 
 Para obtener acceso anticipado a la compatibilidad con subtítulos generados por IA en su cuenta de Dynamic Media, [cree y envíe un caso de asistencia al cliente de Adobe](/help/assets/dynamic-media/video.md##enable-dash).
 
@@ -88,7 +88,7 @@ Assets as a Cloud Service ahora admite documentos grandes de Photoshop (archivos
 ### Nuevas mejoras en Content Hub {#content-hub-new-enhancements}
 
 * Mejor gestión de los nombres de archivo largos, fácil expansión del nombre completo a través de la ayuda contextual.
-* Se han mejorado las miniaturas para ajustar mejor la proporción de aspecto del contenido y cubrir una zona más grande.
+* Se han mejorado las miniaturas para ajustarlas mejor a la relación de aspecto del contenido y cubrir un área de contenido más grande.
 * Content Hub admite la experiencia de miniaturas personalizadas de AEM.
 * Mejoras en la búsqueda de colores.
 * Las mejoras en la experiencia de guardar configuraciones.
@@ -101,7 +101,7 @@ Assets as a Cloud Service ahora admite documentos grandes de Photoshop (archivos
 
 #### Guardar automáticamente un borrador para los componentes principales basados en formularios adaptables
 
-Los usuarios ahora pueden beneficiarse de una función de guardado automático que, de manera automática, guarda como borrador un formulario parcialmente completado. Pueden volver más tarde para terminar de rellenarlo en el mismo dispositivo o en otro distinto. Esta función mejora las tasas de conversión para las organizaciones al reducir el abandono de formularios, ya que los usuarios no necesitan volver a empezar a rellenar los formularios desde el principio.
+Los usuarios ahora pueden beneficiarse de una función de guardado automático que, de manera automática, guarda como borrador un formulario parcialmente completado. Pueden volver más tarde para terminar de rellenarlo en el mismo dispositivo o en otro distinto. Esta función mejora las tasas de conversión para las organizaciones al reducir el abandono de formularios, ya que los usuarios no tienen que volver a empezar a rellenar el formulario desde el principio.
 
 
 ### Funciones de acceso rápido de AEM Forms {#forms-new-early-access-features}
@@ -120,17 +120,17 @@ Las funciones de IA generativa que se ofrecen son:
 
 * **Asistente de IA para consultas de productos**: obtenga respuestas instantáneas a sus preguntas relacionadas con AEM Forms. El asistente de IA actúa como su propia base de conocimiento personal, proporcionando orientación y recomendaciones reveladoras directamente dentro de la plataforma.
 
-* **Generación de formularios adaptables**: cree formularios completos sin esfuerzo con generativas peticiones de IA. La IA generativa de Adobe genera automáticamente formularios fáciles de usar que reducen los abandonos y personalizan la experiencia.
+* **Generación de formularios adaptables**: cree sin esfuerzo formularios completos con indicaciones de la IA generativa. La IA generativa de Adobe genera automáticamente formularios fáciles de usar que reducen los abandonos y personalizan la experiencia.
 
 * **Generación de paneles para formularios**: genere secciones de formulario adaptadas a las necesidades específicas de recopilación de datos. Por ejemplo, generar secciones para recopilar información de pago, preferencias del cliente o detalles de viaje.
 
-* **Cambio de diseños de formulario**: experimente con diferentes diseños y diseños mediante generativas indicaciones de IA. Pruebe diferentes diseños, como las vistas del asistente o con pestañas, para encontrar la opción perfecta para su formulario. Utilice las indicaciones de IA generativas para optimizar los formularios para la capacidad de respuesta móvil y crear formularios atractivos visualmente que encanten a los usuarios.
+* **Cambio de diseños de formulario**: experimente con diferentes presentaciones y diseños mediante las indicaciones de la IA generativa. Pruebe diferentes diseños, como las vistas del asistente o con pestañas, para encontrar la opción perfecta para su formulario. Utilice las indicaciones de la IA generativa para optimizar los formularios con capacidad de respuesta móvil y crear formularios atractivos visualmente que gusten a los usuarios.
 
-* **Configurar la acción de envío**: use las peticiones de IA generativas para configurar una acción de envío sin esfuerzo para el formulario. Elija entre una biblioteca de acciones de envío prediseñadas o acciones de envío personalizadas creadas e implementadas por su equipo de desarrollo.
+* **Configurar la acción de envío**: utilice las indicaciones de la IA generativa para configurar sin esfuerzo una acción de envío para el formulario. Elija entre una biblioteca de acciones de envío creadas previamente o acciones de envío personalizadas, creadas e implementadas por el equipo de desarrollo.
 
 >[!IMPORTANT]
 >
-> ¿Quiere unirse al programa de acceso anticipado para cualquier innovación de Forms? Envíe un correo electrónico desde su dirección oficial a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) con la lista de funcionalidades que le interesan.
+> ¿Le interesa unirse al programa de acceso rápido para disponer de cualquier innovación de los formularios? Envíe un correo electrónico desde su dirección de correo electrónico oficial a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) con la lista de capacidades que le interesan.
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
