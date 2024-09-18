@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 9323464610b804ff407f5eedf404ab2cca93a8da
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '572'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
@@ -18,42 +18,42 @@ En la siguiente sección se describen las notas de la versión técnicas actuale
 
 ## Versión 17689 {#release-17689}
 
-A continuación se resumen las mejoras continuas para la versión de mantenimiento 17689, que se publicó el miércoles, 10 de septiembre de 2024. La versión de mantenimiento anterior fue la 17569.
+A continuación se resumen las mejoras continuas para la versión de mantenimiento 17689, que se publicó el 10 de septiembre de 2024. La versión de mantenimiento anterior fue la 17569.
 
 La activación de funcionalidades 2024.9.0 proporcionará el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
 ### Mejoras {#enhancements-17689}
 
-* ASSETS-41404: Cambios para admitir mejoras de DRM.
-* ASSETS-41621: Trabajo de copia asincrónica de recursos actualizado.
-* ASSETS-32166: Trabajo de movimiento asincrónico de recursos actualizado.
-* ASSETS-41429: Compatibilidad con ajustes preestablecidos de imagen en DM OpenAPI.
-* ASSETS-38968: Mejore la representación de las referencias de fragmentos de contenido.
-* ASSETS-41787, ASSETS-41183: Mejoras para el marco de trabajo de operaciones en lote de Assets.
-* GRANITE-52917: Optimizaciones para mejorar los tiempos de instalación del paquete de copia de contenido.
-* SCRNS-3980: Detecta la pantalla gris en reproductores que tienen subsecuencias sin recursos programados.
+* ASSETS-41404: cambios para admitir mejoras de DRM.
+* ASSETS-41621: se ha actualizado el trabajo de copia asíncrono de recursos.
+* ASSETS-32166: se ha actualizado el trabajo de movimiento asíncrono de recursos.
+* ASSETS-41429: compatibilidad con ajustes preestablecidos de imagen en DM OpenAPI.
+* ASSETS-38968: mejorar la representación de las referencias de fragmentos de contenido.
+* ASSETS-41787, ASSETS-41183: mejoras para el marco de trabajo de operaciones en lote de Assets.
+* GRANITE-52917: optimizaciones para mejorar los tiempos de instalación del paquete de copia de contenido.
+* SCRNS-3980: detectar la pantalla gris en reproductores que tienen subsecuencias sin recursos programados.
 
 ### Problemas solucionados {#fixed-issues-17689}
 
 * ASSETS-40875: NPE falso registrado por AssetDeleteHandler.
-* ASSETS-42422: evite activar un trabajo asincrónico en un solo movimiento de recurso.
-* ASSETS-41234: Unified Shell: la navegación global podría no funcionar si se abre cuando se abre la barra de búsqueda.
-* ASSETS-42256: Unified Shell: etiqueta/distintivo que indica que el entorno solo funciona de forma intermitente.
-* ASSETS-41271: Impida la republicación innecesaria de Assets durante las operaciones de movimiento.
-* ASSETS-38894: limitar reintentos procesando watchdog.
-* ASSETS-40815: utilice la representación del PDF de vista previa para mostrar el archivo PPT en la interfaz de usuario de Link Share
-* ASSETS-37123: No se puede cargar la previsualización de recursos en el cuadro de diálogo Compartir vínculos.
-* CQ-4358156: actualizar los backlinks de la etiqueta que se está eliminando.
-* SCRNS-4495: el botón Pegar corregido no funciona correctamente para diferentes grupos de usuarios.
-* SCRNS-4512: elimine componentes relacionados con el dispositivo de las pantallas de AEMaaCS.
-* SCRNS-4466: en el panel del canal, ocultar: ver manifiesto, generar contenido sin conexión, actualizar caché de manifiesto, mostrar panel.
-* SCRNS-4513: Agregar encabezados de columna para la página de resultados de búsqueda en la vista de lista.
+* ASSETS-42422: evitar activar un trabajo asíncrono para un solo movimiento de recurso.
+* ASSETS-41234: Shell unificado: la navegación global podría no funcionar si se abre cuando la barra de búsqueda está abierta.
+* ASSETS-42256: Shell unificado: etiqueta/insignia que indica que el entorno solo funciona de forma intermitente.
+* ASSETS-41271: impedir tener que volver a publicar innecesariamente los recursos durante las operaciones de movimiento.
+* ASSETS-38894: limitar los reintentos mediante guardián de procesamiento.
+* ASSETS-40815: utilizar la representación de vista previa de PDF para mostrar el archivo PPT en la interfaz de usuario de vínculo compartido.
+* ASSETS-37123: no se puede cargar la vista previa de recursos en el cuadro de diálogo Vínculo compartido.
+* CQ-4358156: actualizar los vínculos Atrás de la etiqueta que se está eliminando.
+* SCRNS-4495: se ha corregido el botón Pegar que no funcionaba correctamente para diferentes grupos de usuarios.
+* SCRNS-4512: quitar componentes relacionados con el dispositivo de las pantallas de AEMaaCS.
+* SCRNS-4466: en el panel de control de canal, ocultar: ver manifiesto, generar contenido sin conexión, actualizar manifiesto de caché, mostrar panel.
+* SCRNS-4513: añadir encabezados de columna para la página de resultados de búsqueda en la vista de lista.
 
 ### Problemas conocidos {#known-issues-17689}
 
-* FORMS-14340: Error al crear una instancia de FormsAndDocumentOmniSearchHandler y CloudStorageSubmitActionInserter. Son instrucciones de registro inofensivas.
-* FORMS-15818: entrada de descriptor de componente &quot;OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml&quot; no se encontró en los registros del servidor. Son instrucciones de registro inofensivas.
-* SITES-23662: el usuario que almacena en déclencheur una publicación no se puede extraer de las sentencias de registro JCR en los registros del servidor. Se trata de una función en desarrollo que podría provocar errores intermitentes e inofensivos &quot;No se puede encontrar un ID de usuario válido en el lote de eventos OSGI&quot; en el registro.
+* FORMS-14340: error al crear una instancia de FormsAndDocumentOmniSearchHandler y CloudStorageSubmitActionInserter. Son sentencias del registro inofensivas.
+* FORMS-15818: la entrada del descriptor de componente “OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml” no se ha encontrado en los registros del servidor. Son sentencias del registro inofensivas.
+* SITES-23662: el usuario que activa una publicación no se puede extraer de las sentencias del registro JCR en los registros del servidor. Se trata de una función en desarrollo que podría provocar errores intermitentes e inofensivos de tipo “No se puede encontrar un ID de usuario válido en el lote de eventos OSGI” en el registro.
 
 ### Aviso de cambio {#change-notice-17689}
 
