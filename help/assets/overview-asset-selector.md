@@ -3,9 +3,9 @@ title: Selector de recursos para [!DNL Adobe Experience Manager] como un [!DNL C
 description: Utilice el Selector de recursos para buscar, buscar y recuperar metadatos y representaciones de recursos en la aplicación.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 0b8c345efa4c8f59b423644944ca2a6f8d54cbb4
+source-git-commit: 027922c304be9c36b600b04b264d571ea8ed60d4
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1314'
 ht-degree: 34%
 
 ---
@@ -196,15 +196,15 @@ El Selector de recursos le permite ver el recurso en cuatro vistas diferentes:
         <em>Obtenga información sobre cómo integrar el Selector de recursos con las API abiertas de Dynamic Media.</em>
         </p>
      </td>
-</tr>
-<tr>
-    <td>
+     <td>
         <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Gráfico de propiedades del Selector de recursos"><br/>
         <a href="asset-selector-customization.md">Propiedades del selector de recursos</a>
         <p>
         <em>Conozca los conceptos básicos de la personalización de varios componentes del Selector de recursos, como filtros, selección de recursos, recursos caducados y mucho más. </em>
         </p>
     </td>
+</tr>
+<tr>
     <td>
         <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Gráfico de ejemplos del Selector de recursos"><br/>
         <a href="asset-selector-customization.md">Ejemplos de selector de recursos</a>
@@ -225,6 +225,15 @@ El Selector de recursos le permite ver el recurso en cuatro vistas diferentes:
         <p>
         <em>Aprenda a cargar archivos o carpetas en el Selector de recursos desde su sistema de archivos local o de terceros. </em>
         </p>
+    </td>
+     <td>
+        <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="Gráfico de colecciones Selector de recursos"><br/>
+        <a href="asset-selector-collections.md">Colecciones de selectores de recursos</a>
+        <p>
+        <em>Aprenda a utilizar colecciones dentro del Selector de recursos mediante el repositorio del Experience Manager. </em>
+        </p>
+    </td>
+    <td>
     </td>
 </tr>
 </table>
