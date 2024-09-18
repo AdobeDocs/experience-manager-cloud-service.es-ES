@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
+source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '548'
 ht-degree: 9%
 
 ---
@@ -49,7 +49,7 @@ Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrado
 
    | | Caso de uso | Etapas |
    | --- | --- | --- |
-   | 1 | **Agregar un certificado administrado por Adobe (DV)** | **Para agregar un certificado administrado por Adobe (DV):**<br> a. Seleccione el tipo de certificado **administrado por Adobe (DV)**.<br>![Agregar certificado DV](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b. En la lista desplegable **Seleccionar dominios**, seleccione uno o varios dominios que desee asociar con el certificado DV.<br>¿No hay dominios que seleccionar? Si es así, significa que debe agregar un dominio personalizado. Consulte [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). Cuando termine de agregar un nombre de dominio personalizado, vuelva a este tema y comience de nuevo en el paso 1.<br>d. Continúe con el paso 7. |
+   | 1 | **Agregar un certificado administrado por Adobe (DV)** | **Para agregar un certificado administrado por Adobe (DV):**<br> a. Seleccione el tipo de certificado **administrado por Adobe (DV)**.<br>![Agregar certificado DV](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b. En el campo **Nombre del certificado**, escriba un nombre que desee asociar con el certificado.<br>c. En la lista desplegable **Seleccionar dominios**, seleccione uno o varios dominios que desee asociar con el certificado DV.<br>¿No hay dominios que seleccionar? Si es así, significa que debe agregar un dominio personalizado. Consulte [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). Cuando termine de agregar un nombre de dominio personalizado, vuelva a este tema y comience de nuevo en el paso 1.<br>d. Continúe con el paso 7. |
    | 2 | **Agregar un certificado administrado por el cliente (OV/EV)** | **Para agregar un certificado administrado por el cliente (OV/EV):**<br> a. Seleccione el tipo de certificado **administrado por el cliente (OV/EV)**.<br>b. En el campo **Nombre del certificado**, escriba un nombre para el certificado. Este campo es solo informativo y puede ser cualquier nombre que le ayude a hacer referencia al certificado fácilmente.<br>c. En los campos **Certificado**, **Clave privada** y **Cadena de certificados**, pegue los valores necesarios en sus respectivos campos.<br>![Cuadro de diálogo Agregar certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br>Se muestran todos los errores detectados en los valores. Para poder guardar el certificado, debe corregir todos los errores. Consulte [Errores de certificado](#certificate-errors) para obtener más información sobre la solución de problemas de errores comunes.<br>d. Continúe con el paso 7. |
 
 <!--

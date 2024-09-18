@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
+source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 13%
+source-wordcount: '904'
+ht-degree: 11%
 
 ---
 
@@ -50,11 +50,30 @@ Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrado
    * En el campo **Clave privada**, actualice este campo solo si ha realizado cambios en el certificado.
    * En el campo **Cadena de certificados** (o cadena de confianza), pegue la cadena de certificados.
 
-1. Haga clic en **Actualizar** para guardar los cambios y que se apliquen automáticamente.
+1. Haga clic en **Actualizar** para guardar los cambios y que se apliquen automáticamente. —>
 
 ## Reemplazar un certificado SSL administrado por el cliente caducado {#replace-ssl-certificate}
 
 Siga los mismos pasos que se describen en [Actualizar un certificado SSL caducado](#update-ssl-certificate) para reemplazar un certificado SSL caducado administrado por el cliente.
+
+## Cambiar el nombre de un certificado SSL administrado por Adobe (#rename-an-ssl-certificate)
+
+A continuación se indican algunas razones por las que puede que desee cambiar el nombre de un certificado SSL:
+
+* **Organización mejorada**: Cambiar el nombre del certificado puede ayudar a aclarar su propósito, como identificar para qué entorno (por ejemplo, ensayo, producción) o dominio es.
+* **Evitar confusiones**: si administra varios certificados, un nombre descriptivo y claro puede ayudar a evitar errores, como aplicar el certificado incorrecto al dominio incorrecto.
+* **Cumplimiento y auditoría**: Puede que sea más fácil realizar el seguimiento de los certificados con nombres correctos por motivos de seguridad y auditoría.
+
+**Para cambiar el nombre de un certificado SSL administrado por el Adobe:**
+
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione el programa apropiado.
+1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
+1. En la esquina superior izquierda de la página, haga clic en el icono de hamburguesa para mostrar el menú de navegación izquierdo.
+1. Bajo el encabezado **Servicios**, haga clic en **Certificados SSL**.
+1. En la página **Certificados SSL**, haga clic en los puntos suspensivos al final de una fila cuyo certificado desee cambiar de nombre.
+1. Haga clic en **Cambiar nombre**.
+1. En el cuadro de diálogo **Cambiar nombre de certificado DV**, en el campo de texto **Nombre del certificado**, escriba el nuevo nombre del certificado.
+1. Haga clic en **Cambiar nombre**.
 
 ## Eliminar un certificado SSL {#deleting-an-ssl-certificate}
 
