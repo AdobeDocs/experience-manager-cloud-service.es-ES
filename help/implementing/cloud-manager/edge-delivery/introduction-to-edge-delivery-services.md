@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo entregar sus proyectos de Cloud Ma
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e28e4bf06c28f97d665e5fd86ab87d484116504f
+source-git-commit: 2b384a4233672d69de09b922fcdef6d0f84ff7df
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 8%
@@ -80,10 +80,11 @@ La **lista de tareas pendientes de Edge Delivery** es una lista de comprobación
 | 5 | Añadir certificado SSL | Consulte [Agregar certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
 | 6 | Configuración de la CDN del sitio de Edge Delivery | Consulte [Agregar una configuración de CDN](#add-cdn). |
 
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Registrar un ticket de asistencia {#eds-support-ticket}
 
 {{support-ticket}}
 
->[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
+
 
