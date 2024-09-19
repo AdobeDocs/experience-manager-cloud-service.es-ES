@@ -3,9 +3,9 @@ title: Administración de sitios de Edge Delivery en Cloud Manager
 description: Obtenga información sobre cómo añadir una configuración de CDN a un sitio de Edge Delivery o eliminar un sitio de Edge Delivery.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Consulte [Agregar una configuración de CDN](/help/implementing/cloud-manager/cd
 
 En Adobe Cloud Manager, es posible que desee cambiar el nombre de un sitio de Edge Delivery por varios motivos:
 
-* **Claridad y organización**: Para describir mejor el propósito del sitio o su entorno asociado (por ejemplo, producción, ensayo).
+* **Claridad y organización**: para describir mejor el propósito del sitio o su entorno asociado (por ejemplo, producción, ensayo).
 * **Evitar confusiones**: si se usan varios sitios, cambiar el nombre puede ayudar a diferenciar fácilmente entre ellos, lo que reduce la posibilidad de aplicar configuraciones o actualizaciones al sitio incorrecto.
 * **Estandarización**: Para seguir una convención de nombres coherente que se ajuste a las directrices de su organización para facilitar la administración y la auditoría.
 
@@ -61,3 +61,7 @@ En la tabla del sitio de Edge Delivery, haga clic en los puntos suspensivos al f
 
 
      ![Agregar sitio Edge Delivery desde el botón Sitios Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
+
+### Registrar un ticket de asistencia {#eds-support-ticket}
+
+{{support-ticket}}
