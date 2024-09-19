@@ -1,18 +1,18 @@
 ---
-title: Introducción a los Edge Delivery Services en Cloud Manager
+title: Introducción a Edge Delivery Services en Cloud Manager
 description: Obtenga información sobre cómo entregar sus proyectos de Cloud Manager con Edge Delivery Services.
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3db0b72a267a001b3fda5341a6c2c642babfb9eb
+source-git-commit: e28e4bf06c28f97d665e5fd86ab87d484116504f
 workflow-type: tm+mt
 source-wordcount: '746'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
 
-# Introducción a los Edge Delivery Services en Cloud Manager {#edge-delivery-services}
+# Introducción a Edge Delivery Services en Cloud Manager {#edge-delivery-services}
 
 Edge Delivery Services es un conjunto de servicios componibles que permite un alto grado de flexibilidad en la forma en que se crea contenido en su sitio web. Esta capacidad le permite hacer lo siguiente:
 
@@ -62,7 +62,10 @@ Se pueden agregar Edge Delivery Services de varias formas diferentes, en funció
 >* Su organización debe tener una licencia de Edge Delivery Services no utilizada para poder aplicarla a un programa de producción.
 >* Una vez que la licencia de Edge Delivery Services se aplica a un programa o se elimina de él, el cambio entra en vigor inmediatamente sin necesidad de ejecutar una canalización.
 
+
 ## Acerca de la lista de tareas pendientes de Edge Delivery {#ed-todo-list}
+
+<!-- &#x2460; for "1" inside circle -->
 
 La **lista de tareas pendientes de Edge Delivery** es una lista de comprobación de tareas de incorporación diseñada para guiarle a través de la incorporación, y administrar su sitio Edge Delivery hasta [go-live](/help/journey-onboarding/go-live-checklist.md).
 
@@ -77,7 +80,6 @@ La **lista de tareas pendientes de Edge Delivery** es una lista de comprobación
 | 5 | Añadir certificado SSL | Consulte [Agregar certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
 | 6 | Configuración de la CDN del sitio de Edge Delivery | Consulte [Agregar una configuración de CDN](#add-cdn). |
 
-<!-- &#x2460; for "1" inside circle -->
 
 ## Registrar un ticket de asistencia {#eds-support-ticket}
 

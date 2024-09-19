@@ -1,12 +1,12 @@
 ---
-title: Administración de sitios de Edge Delivery en Cloud Manager
+title: Compatibilidad con sitios de Edge Delivery en Cloud Manager
 description: Obtenga información sobre cómo añadir una configuración de CDN a un sitio de Edge Delivery o eliminar un sitio de Edge Delivery.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
+source-git-commit: e28e4bf06c28f97d665e5fd86ab87d484116504f
 workflow-type: tm+mt
 source-wordcount: '512'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -62,6 +62,8 @@ En la tabla del sitio de Edge Delivery, haga clic en los puntos suspensivos al f
 
      ![Agregar sitio Edge Delivery desde el botón Sitios Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
 
-### Registrar un ticket de asistencia {#eds-support-ticket}
+## Registrar un ticket de asistencia {#eds-support-ticket}
 
 {{support-ticket}}
+
+
