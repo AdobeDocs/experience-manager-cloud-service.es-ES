@@ -6,10 +6,10 @@ index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
-source-wordcount: '1003'
-ht-degree: 100%
+source-git-commit: c9cddf9f0e344a2a24ee1a608b3ea920e258f34a
+workflow-type: tm+mt
+source-wordcount: '1013'
+ht-degree: 99%
 
 ---
 
@@ -90,6 +90,7 @@ Siga los mismos pasos que se describen arriba para añadir estos campos adiciona
 
    * **Procesar como:** **Área de texto**. Cuando crea una aventura, este campo almacena una breve descripción del viaje.
    * **Etiqueta de campo:** `Description` esta es la etiqueta que se muestra para este campo al crear una nueva aventura.
+   * **Tipo predeterminado**: **Texto sin formato** - El formato requerido para este ejemplo.
 
 1. Añada un campo para almacenar el precio de la aventura arrastrando y soltando un campo de **Texto de una sola línea** e introduzca las siguientes propiedades:
 
