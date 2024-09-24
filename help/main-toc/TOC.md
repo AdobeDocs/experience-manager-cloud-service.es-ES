@@ -7,9 +7,9 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 8349f6d4d4f04d8609d5a5241b973201b54b2cd2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5651'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -470,7 +470,7 @@ ht-degree: 99%
          + [Ejemplos del Selector de recursos](/help/assets/asset-selector-examples.md)
          + [Personalizaciones del Selector de recursos](/help/assets/asset-selector-customization.md)
          + [Carga del selector de recursos](/help/assets/asset-selector-upload.md)
-         + [Colecciones del Selector de recursos](/help/assets/asset-selector-collections.md)
+         + [Colecciones del selector de recursos](/help/assets/asset-selector-collections.md)
       + [Selector de destino de Micro-Frontend](/help/assets/destination-selector.md)
       + [Compartir recursos](/help/assets/share-assets.md)
       + [Reprocesamiento de recursos](/help/assets/reprocessing.md)
@@ -1251,7 +1251,7 @@ ht-degree: 99%
       + [API de ContextHub](/help/implementing/developing/personalization/contexthub-api.md)
       + [Configuración de la segmentación con ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=es)
    + Configurar y ampliar AEM as a Cloud Service {#configuring-and-extending}
-      + AEM Ampliación de la con App Builder {#app-builder}
+      + Ampliar AEM con App Builder {#app-builder}
          + [Ampliación de AEM mediante el Generador de aplicaciones para desarrolladores de Adobe](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [Introducción al Generador de aplicaciones](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Adobe Developer Console](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)

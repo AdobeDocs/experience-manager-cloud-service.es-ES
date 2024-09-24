@@ -1,8 +1,8 @@
 ---
 source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1139'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 # Fragmentos de código {#snippets}
@@ -95,7 +95,7 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
     <td>Validar/restablecer campo/panel/regla de formulario en “Then” </td>
     <td>Las funciones Validar y Restablecer solo admiten objetos de formulario en el editor de reglas. 
    </td>
-    <td>Las funciones Validar y Restablecer admiten objetos de formulario, panel o campo en el Editor de reglas. 
+    <td>Las funciones Validar y Restablecer admiten objetos de formulario, panel o campo en el editor de reglas. 
    </td>
    </tr>
    <tr>
@@ -134,7 +134,7 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 * [Introducción a los componentes del Portal de Forms](/help/forms/configure-forms-portal.md)
 * [Mostrar los formularios en la página de Sites](/help/forms/list-forms-on-sites-page.md)
 * [Guardar los formularios como borradores](/help/forms/save-core-component-based-form-as-draft.md)
-* [Adición de vínculos de formulario a una página de Sites](/help/forms/add-form-link-to-aem-sites-page.md)
+* [Añadir vínculos de formularios a una página de Sites](/help/forms/add-form-link-to-aem-sites-page.md)
 
 
 ## Lista de IP permitidas de Cloud Manager y canalizaciones front-end {#allowlist-frontend-pipeline}
@@ -143,7 +143,7 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 >
 >La canalización front-end requiere que se añada de antemano la siguiente Lista de IP permitidas a Cloud Manager.
 >Si es necesario, [añada la Lista de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) copiando el bloque de direcciones siguiente. Cada dirección está separada por una coma. Pegue el bloque en el campo **Dirección IP/CIDR** del cuadro de diálogo **Agregar lista de IP permitidas**. Coloque el cursor justo después de la primera coma en la lista de direcciones y presione **Intro**. Guarde la lista.
->Para evitar que se interrumpa la ejecución de la canalización front-end, asegúrese de agregar esta Lista de permitidos IP a Cloud Manager *antes de* de habilitar la canalización.
+>Para evitar que se interrumpa la ejecución de la canalización front-end, asegúrese de añadir esta Lista de IP permitidas a Cloud Manager *antes* de habilitar la canalización.
 >
 >**Lista de IP permitidas de Cloud Manager**
 >52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
@@ -160,17 +160,17 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 
 >[!TIP]
 >
->¿Es su primera vez con Dynamic Media? Para obtener información general rápida y de alto nivel sobre Dynamic Media, consulte [Trabajar con Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+>¿Es su primera vez con Dynamic Media? Para obtener información general rápida y profesional sobre Dynamic Media, consulte [Trabajar con Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
 
 ## Realice su consulta también para Dynamic Media {#see-also-dm}
 
 >[!NOTE]
 >
->* ¿Es su primera vez con Dynamic Media? Para obtener información general rápida y de alto nivel sobre Dynamic Media, consulte [Trabajar con Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+>* ¿Es su primera vez con Dynamic Media? Para obtener información general rápida y profesional sobre Dynamic Media, consulte [Trabajar con Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
 >
 >* Siga [Prácticas recomendadas de Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md) para sacarle el mayor rendimiento.
 >
->* Pruebe las funcionalidades de la imagen de Dynamic Media con [Snapshot tool](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+>* Pruebe funcionalidades de imagen de Dynamic Media con la [herramienta Snapshot](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
 >
 >* Garantiza una reproducción de vídeo fluida con [vídeo adaptable](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
 >
@@ -178,18 +178,18 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 >
 >* Automatice el recorte de [vídeos con Recorte inteligente](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
 >
->* Ofrecer una [experiencia interactiva con tecnología 3D](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
+>* Ofrezca una [experiencia interactiva con tecnología 3D](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
 >* Otro [banco de recursos de Dynamic Media](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
 
 ## Registro de un ticket de asistencia {#support-ticket}
 
-Si un problema de producto necesita una investigación y una solución de problemas adicionales y debe cumplir los SLT de respuesta, puede enviar un ticket de asistencia.
+Si un problema del producto requiere una investigación y resolución de problemas adicionales y debe cumplir los SLT de respuesta, puede enviar un vale de asistencia.
 
-Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge Delivery en Cloud Manager. Se recomienda registrar su sitio web con Cloud Manager para todos los usuarios de AEM as a Cloud Service y [ofrece una serie de ventajas](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Consulte [la documentación de Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) para obtener más información si aún no ha registrado el sitio.
+Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge Delivery en Cloud Manager. Se recomienda registrar su sitio web con Cloud Manager para todos los usuarios de AEM as a Cloud Service y [esto aporta una serie de ventajas](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Consulte [la documentación de Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) para obtener más información si aún no ha registrado el sitio.
 
-Una vez registrado el sitio web con Cloud Manager, siga este proceso con el Admin Console para enviar un ticket de asistencia:
+Una vez registrado el sitio web con Cloud Manager, siga este proceso utilizando Admin Console para enviar un vale de asistencia:
 
-1. [Siga el proceso de soporte estándar](https://experienceleague.adobe.com/?support-tab=home#support) y cree un ticket.
+1. [Siga el proceso de asistencia estándar](https://experienceleague.adobe.com/?support-tab=home#support) y cree un vale.
 1. Añada **Edge Delivery** en el título del ticket.
 1. En la descripción, proporcione los siguientes detalles además de la descripción del problema:
 
