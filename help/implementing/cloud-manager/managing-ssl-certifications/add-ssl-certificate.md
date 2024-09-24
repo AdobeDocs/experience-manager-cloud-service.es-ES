@@ -1,14 +1,14 @@
 ---
-title: Agregar un certificado SSL
+title: Añadir un certificado SSL
 description: Aprenda a añadir su propio certificado SSL o certificado DV (validación de dominio) con las herramientas de autoservicio de Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 9%
+source-wordcount: '547'
+ht-degree: 6%
 
 ---
 
@@ -33,24 +33,21 @@ Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrado
 
 **Para agregar un certificado SSL:**
 
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
-
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione el programa apropiado.
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
-
-1. Desde la página **Información general**, vaya a la pantalla **Entornos**.
-
-1. En el panel de navegación izquierdo, en **Servicios**, haga clic en **Certificados SSL**. Si no ve el panel de navegación izquierdo como se ve en la siguiente imagen, es posible que tenga que hacer clic en el icono de hamburguesa en la esquina superior izquierda.
+1. En la esquina superior izquierda de la página, haga clic en ![Mostrar icono de menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para mostrar el menú lateral.
+1. Bajo el encabezado **Servicios**, haga clic en ![Icono de bloqueo cerrado](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificados SSL**.
 
    ![Agregando un certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-add.png)
 
-1. Cerca de la esquina superior derecha de la página, haga clic en **Agregar certificado SSL**.
+1. Cerca de la esquina superior derecha de la página Certificados SSL, haga clic en **Agregar certificado SSL**.
 
 1. En el cuadro de diálogo **Agregar certificado SSL**, en función de [su caso de uso particular](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md), realice una de las siguientes acciones:
 
    | | Caso de uso | Etapas |
    | --- | --- | --- |
-   | 1 | **Agregar un certificado administrado por Adobe (DV)** | **Para agregar un certificado administrado por Adobe (DV):**<br> a. Seleccione el tipo de certificado **administrado por Adobe (DV)**.<br>![Agregar certificado DV](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b. En el campo **Nombre del certificado**, escriba un nombre que desee asociar con el certificado.<br>c. En la lista desplegable **Seleccionar dominios**, seleccione uno o varios dominios que desee asociar con el certificado DV.<br>¿No hay dominios que seleccionar? Si es así, significa que debe agregar un dominio personalizado. Consulte [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). Cuando termine de agregar un nombre de dominio personalizado, vuelva a este tema y comience de nuevo en el paso 1.<br>d. Continúe con el paso 7. |
-   | 2 | **Agregar un certificado administrado por el cliente (OV/EV)** | **Para agregar un certificado administrado por el cliente (OV/EV):**<br> a. Seleccione el tipo de certificado **administrado por el cliente (OV/EV)**.<br>b. En el campo **Nombre del certificado**, escriba un nombre para el certificado. Este campo es solo informativo y puede ser cualquier nombre que le ayude a hacer referencia al certificado fácilmente.<br>c. En los campos **Certificado**, **Clave privada** y **Cadena de certificados**, pegue los valores necesarios en sus respectivos campos.<br>![Cuadro de diálogo Agregar certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br>Se muestran todos los errores detectados en los valores. Para poder guardar el certificado, debe corregir todos los errores. Consulte [Errores de certificado](#certificate-errors) para obtener más información sobre la solución de problemas de errores comunes.<br>d. Continúe con el paso 7. |
+   | 1 | **Agregar un certificado administrado por Adobe (DV)** | **Para agregar un certificado administrado por Adobe (DV):**<br> a. En el cuadro de diálogo **Agregar certificado SSL**, seleccione el tipo de certificado **Administrado por Adobe (DV)**.<br>![Agregar certificado DV](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b. En el campo **Nombre del certificado**, escriba un nombre que desee asociar con el certificado.<br>c. En la lista desplegable **Seleccionar dominios**, seleccione uno o varios dominios que desee asociar con el certificado DV.<br>¿No hay dominios que seleccionar? Si es así, significa que debe agregar un dominio personalizado. Consulte [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). Cuando termine de agregar un nombre de dominio personalizado, vuelva a este tema y comience de nuevo en el paso 1.<br>d. Continúe con el paso 7. |
+   | 2 | **Agregar un certificado administrado por el cliente (OV/EV)** | **Para agregar un certificado administrado por el cliente (OV/EV):**<br> a. En el cuadro de diálogo **Agregar certificado SSL**, seleccione el tipo de certificado **Administrado por el cliente (OV/EV)**.<br>b. En el campo **Nombre del certificado**, escriba un nombre para el certificado. Este campo es solo informativo y puede ser cualquier nombre que le ayude a hacer referencia al certificado fácilmente.<br>c. En los campos **Certificado**, **Clave privada** y **Cadena de certificados**, pegue los valores necesarios en sus respectivos campos.<br>![Cuadro de diálogo Agregar certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br>Se muestran todos los errores detectados en los valores. Para poder guardar el certificado, debe corregir todos los errores. Consulte [Errores de certificado](#certificate-errors) para obtener más información sobre la solución de problemas de errores comunes.<br>d. Continúe con el paso 7. |
 
 <!--
     **Add an SSL certificate:**
@@ -73,7 +70,7 @@ Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrado
 
 1. En la esquina inferior derecha del cuadro de diálogo, haga clic en **Guardar**.
 
-   Una vez emitido correctamente el certificado, muestra una marca de verificación verde en la tabla **Certificados SSL**.
+   Una vez emitido correctamente el certificado, muestra una marca de verificación verde (válida) en la tabla **Certificados SSL**.
 
 Ahora ha agregado un certificado SSL de trabajo para el proyecto. Este paso suele ser el primero en configurar un nombre de dominio personalizado.
 

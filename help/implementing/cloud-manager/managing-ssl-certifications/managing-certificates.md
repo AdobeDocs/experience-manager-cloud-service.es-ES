@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 11%
+source-wordcount: '949'
+ht-degree: 6%
 
 ---
 
@@ -35,10 +35,10 @@ Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrado
 
 **Para actualizar un certificado SSL administrado por el cliente caducado:**
 
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione el programa apropiado.
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
-1. Desde la página **Información general**, vaya a la pantalla **Entornos**.
-1. Desde la pantalla **Entornos**, vaya a la pantalla **Certificados SSL**.
+1. En la esquina superior izquierda de la página, haga clic en ![Mostrar icono de menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para mostrar el menú lateral.
+1. Bajo el encabezado **Servicios**, haga clic en ![Icono de bloqueo cerrado](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificados SSL**.
 1. En la fila del certificado administrado por el cliente caducado que desea actualizar, haga clic en los puntos suspensivos en el extremo derecho y, a continuación, seleccione **Ver y actualizar**.
 
    ![Actualizar una certificación SSL administrada por el cliente caducada](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
@@ -50,7 +50,7 @@ Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrado
    * En el campo **Clave privada**, actualice este campo solo si ha realizado cambios en el certificado.
    * En el campo **Cadena de certificados** (o cadena de confianza), pegue la cadena de certificados.
 
-1. Haga clic en **Actualizar** para guardar los cambios y que se apliquen automáticamente. —>
+1. Haga clic en **Actualizar** para guardar los cambios y que se apliquen automáticamente.
 
 ## Reemplazar un certificado SSL administrado por el cliente caducado {#replace-ssl-certificate}
 
@@ -68,10 +68,10 @@ A continuación se indican algunas razones por las que puede que desee cambiar e
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione el programa apropiado.
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
-1. En la esquina superior izquierda de la página, haga clic en el icono de hamburguesa para mostrar el menú de navegación izquierdo.
-1. Bajo el encabezado **Servicios**, haga clic en **Certificados SSL**.
-1. En la página **Certificados SSL**, haga clic en los puntos suspensivos al final de una fila cuyo certificado desee cambiar de nombre.
-1. Haga clic en **Cambiar nombre**.
+1. En la esquina superior izquierda de la página, haga clic en ![Mostrar icono de menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para mostrar el menú lateral.
+1. Bajo el encabezado **Servicios**, haga clic en ![Icono de bloqueo cerrado](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificados SSL**.
+1. En la página **Certificados SSL**, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) al final de una fila cuyo certificado *Administrado por Adobe* desea cambiar de nombre.
+1. En el menú desplegable, haga clic en **Cambiar nombre**.
 1. En el cuadro de diálogo **Cambiar nombre de certificado DV**, en el campo de texto **Nombre del certificado**, escriba el nuevo nombre del certificado.
 1. Haga clic en **Cambiar nombre**.
 
@@ -87,10 +87,12 @@ Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrado
 
 **Para eliminar un certificado SSL:**
 
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
-1. Desde la página **Información general**, vaya a la pantalla **Entornos**.
-1. Desde la pantalla **Entornos**, vaya a la pantalla **Certificados SSL**.
-1. En la fila del certificado que desea eliminar, haga clic en los puntos suspensivos en el extremo derecho y, a continuación, seleccione **Eliminar**.
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione el programa apropiado.
+1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
+1. En la esquina superior izquierda de la página, haga clic en ![Mostrar icono de menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para mostrar el menú lateral.
+1. Bajo el encabezado **Servicios**, haga clic en ![Icono de bloqueo cerrado](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificados SSL**.
+1. En la página Certificados SSL, en la fila de la tabla del certificado que desea eliminar, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)en el extremo derecho
+1. En el menú desplegable, haga clic en **Eliminar**.
 Si el botón Eliminar tiene un icono de información como se ve en la siguiente imagen, consulte la Nota anterior.
 
    ![Botón Eliminar con icono de información](/help/implementing/cloud-manager/assets/ssl/ssl-cert-delete-infoicon.png)
@@ -102,8 +104,9 @@ Si el botón Eliminar tiene un icono de información como se ve en la siguiente 
 
 Si ya tiene una configuración de CDN para su certificado SSL, la página **Certificados SSL** muestra un mensaje informativo. Le anima a añadir estas configuraciones a través de la interfaz de usuario para que sean visibles y manejables en Cloud Manager.
 
-El mensaje desaparece después de migrar todas las configuraciones de entorno preexistentes mediante la interfaz de usuario. El mensaje puede tardar entre 1 y 2 días hábiles en desaparecer.
+El mensaje desaparece después de migrar todas las configuraciones de entorno preexistentes mediante la interfaz de usuario. El mensaje puede tardar entre uno y dos días hábiles en desaparecer.
 
 Consulte [Agregar un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) para obtener más información.
 
 También se ha proporcionado un mensaje similar en las páginas **Lista de permitidos IP** y **Entornos** para entornos que tienen configuraciones de CDN preexistentes para Listas de permitidos IP o nombres de dominio personalizados.
+

@@ -5,9 +5,9 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '447'
 ht-degree: 34%
 
 ---
@@ -33,10 +33,10 @@ En Adobe Cloud Manager, es posible que desee editar una configuración de nombre
 
 1. En la esquina superior izquierda de la página, haga clic en el icono de hamburguesa para mostrar el menú de navegación izquierdo.
 1. Bajo el encabezado **Servicios**, haga clic en **Configuraciones de CDN**.
-1. En la página **Configuraciones de CDN**, haga clic en los puntos suspensivos al final de una fila cuya CDN desee editar.
+1. En la página **Configuraciones de CDN**, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) al final de una fila cuya CDN desee editar.
 1. Haga clic en **Editar**.
 1. En el cuadro de diálogo **Editar configuración de CDN**, haga lo siguiente:
-   * En la lista desplegable **Nivel**, seleccione el nivel (Autor o Publish) que desee usar.
+   * En la lista desplegable **Nivel**, seleccione el nivel (Publish o Vista previa) que desee usar.
    * En la lista desplegable **certificado SSL**, seleccione el certificado SSL que desee usar.
 1. Haga clic en **Actualizar**.
 
