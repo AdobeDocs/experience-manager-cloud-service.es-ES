@@ -5,10 +5,10 @@ exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
+source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 18%
+source-wordcount: '303'
+ht-degree: 11%
 
 ---
 
@@ -31,9 +31,9 @@ Un usuario con el rol **Propietario del negocio** o **Administrador de implement
 1. Desde la página **Información general**, vaya a la pantalla **Entornos**.
 1. En la pantalla **Entornos**, vaya a la página de detalles específicos del entorno.
 1. Vaya a la tabla **Lista de permitidos IP**.
-1. Utilice los campos de entrada de la parte superior de la tabla para poder seleccionar la Lista de permitidos IP y el servicio de autor o publicación al que desea aplicarla.
+1. Utilice los campos de entrada de la parte superior de la tabla para poder seleccionar la Lista de permitidos IP y el servicio de autor, Publish o vista previa al que desea aplicarla.
 La Lista de permitidos IP ya debe existir en Cloud Manager para aplicarla. Consulte [Agregar Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md).
-1. Haga clic en **Aplicar** y confirme el envío.
+1. Haga clic en ![Agregar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Aplicar** y confirme el envío.
 
 ## No aplicar Listas de permitidos IP {#un-applying}
 
@@ -44,8 +44,10 @@ Un usuario con el rol **Propietario del negocio** o **Administrador de implement
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 1. Seleccione la organización adecuada.
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
-1. Vaya a la pantalla **Entornos** de la página **Información general**.
-1. Vaya a la página de detalles específicos del entorno en la pantalla **Entornos**.1. Vaya a la tabla **Lista de permitidos IP**.
+1. Desde la página **Información general**, vaya a la página **Entornos**.
+1. Vaya a la página de detalles específicos del entorno.
+1. En la ficha General, desplácese hasta la tabla **Lista de permitidos IP**.
 1. Identifique la fila de la Lista de permitidos IP que desea anular.
-1. En el lado derecho de la fila identificada, haga clic en el botón de puntos suspensivos y, a continuación, seleccione **No aplicar**.
-1. Confirme el envío.
+1. En el lado derecho de la fila identificada, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
+1. Haga clic en **Anular la aplicación**.
+1. En el cuadro de diálogo **No aplicar Lista de permitidos IP**, haga clic en **No aplicar**.
