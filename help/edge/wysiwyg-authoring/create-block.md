@@ -1,26 +1,26 @@
 ---
 title: Creación de bloques instrumentados para su uso con el editor universal
-description: Aprenda a crear bloques instrumentados para su uso con el editor universal en la creación WYSIWYG con proyectos de Edge Delivery Services.
+description: Aprenda a crear bloques instrumentados para utilizarlos con el editor universal en la creación de WYSIWYG con proyectos de Edge Delivery Services.
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 772fcc2688edb57eca3b84689de1d1c47f87dcd0
+source-git-commit: 3419fa943eb865d87467443527ea97fcd64909c2
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 64%
+source-wordcount: '1445'
+ht-degree: 62%
 
 ---
 
 
 # Creación de bloques instrumentados para su uso con el editor universal {#create-block}
 
-Aprenda a crear bloques instrumentados para su uso con el editor universal en la creación WYSIWYG con proyectos de Edge Delivery Services.
+Aprenda a crear bloques instrumentados para utilizarlos con el editor universal en la creación de WYSIWYG con proyectos de Edge Delivery Services.
 
 ## Requisitos previos {#prerequisites}
 
-Esta guía proporciona instrucciones paso a paso para crear bloques instrumentados para el editor universal en la creación WYSIWYG con proyectos de Edge Delivery Services. Abarca la adición de componentes, la carga de definiciones de componentes en el editor universal, la publicación de páginas, la implementación de decoración y estilos de bloque, la introducción de los cambios en la producción y su verificación. Al completar esta guía, puede crear e implementar un nuevo bloque para su propio proyecto.
+Esta guía proporciona instrucciones paso a paso para crear bloques instrumentados para el editor universal en proyectos de WYSIWYG authoring with Edge Delivery Services. Abarca la adición de componentes, la carga de definiciones de componentes en el editor universal, la publicación de páginas, la implementación de decoración y estilos de bloque, la introducción de los cambios en la producción y su verificación. Al completar esta guía, puede crear e implementar un nuevo bloque para su propio proyecto.
 
-Esta guía requiere necesariamente conocimientos existentes de creación WYSIWYG con proyectos de Edge Delivery Services, así como del editor universal. Antes de comenzar esta guía, ya debería tener acceso a Edge Delivery Services y estar familiarizado con sus conceptos básicos, incluidos los siguientes:
+Esta guía requiere necesariamente conocimientos existentes sobre la creación de WYSIWYG con proyectos de Edge Delivery Services, así como del editor universal. Antes de comenzar esta guía, ya debería tener acceso a Edge Delivery Services y estar familiarizado con sus conceptos básicos, incluidos los siguientes:
 
 * Ha completado el [Tutorial del servicio de envío de Edge.](/help/edge/developer/tutorial.md)
 * Tiene acceso a una [Zona protegida de AEM Cloud Service.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
@@ -45,7 +45,7 @@ El siguiente ejemplo de bloque de comillas sigue este enfoque.
 
 ### Crear la definición y el modelo del bloque {#create-block-model}
 
-1&amp;period; Clone el proyecto de GitHub localmente que creó en la guía de [Guía de introducción para desarrolladores para la creación WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) y ábralo en un editor de su elección.
+1&amp;period; Clone el proyecto de GitHub localmente que creó en la guía de [Guía de introducción para desarrolladores para la creación de WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) y ábralo en un editor de su elección.
 
 * El código Microsoft se utiliza aquí con fines ilustrativos.
 
@@ -85,7 +85,7 @@ El siguiente ejemplo de bloque de comillas sigue este enfoque.
 
 3&amp;period; Edite el archivo `component-models.json` en la raíz del proyecto y agregue la siguiente [definición de modelo](/help/implementing/universal-editor/field-types.md#model-structure) para su nuevo bloque de comillas y guarde el archivo.
 
-* Consulte el documento [Modelado de contenido para la creación WYSIWYG con proyectos de Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) para obtener más información acerca de lo que es importante tener en cuenta al crear modelos de contenido.
+* Consulte el documento [Modelado de contenido para la creación de WYSIWYG con proyectos de Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) para obtener más información acerca de lo que es importante tener en cuenta al crear modelos de contenido.
 
 >[!BEGINTABS]
 
@@ -155,7 +155,7 @@ El siguiente ejemplo de bloque de comillas sigue este enfoque.
 
 Ahora que el bloque de comillas básico está definido y comprometido con el proyecto de muestra, puede agregar un bloque de comillas a una página existente.
 
-1. En un explorador, inicie sesión en AEM as a Cloud Service. [Con la consola Sites,](/help/sites-cloud/authoring/basic-handling.md) vaya al sitio que creó en la guía de introducción para desarrolladores de [para la creación WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) y seleccione una página.
+1. En un explorador, inicie sesión en AEM as a Cloud Service. [Con la consola Sites,](/help/sites-cloud/authoring/basic-handling.md) vaya al sitio que creó en la guía de [Guía de introducción para desarrolladores de WYSIWYG para la creación con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) y seleccione una página.
 
    * En este caso, `index` se utiliza con fines ilustrativos.
 
@@ -331,6 +331,12 @@ Cuando no esté desarrollando en la rama `main`, puede anexar `?ref=<branch>` en
 
 La publicación de contenido con un nuevo modelo solo se admite cuando el modelo se combina con la rama `main`.
 
+## Reutilización de bloques para la creación basada en documentos {#reusing-blocks}
+
+Puede utilizar los bloques que cree para la creación de WYSIWYG con el Editor universal para la creación basada en documentos si se adhiere al mismo modelo de contenido.
+
+Consulte el documento [Bloques para WYSIWYG y creación basada en documentos](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md) para obtener más información.
+
 ## Siguientes pasos {#next-steps}
 
 Ahora que sabe cómo crear bloques, es esencial comprender cómo modelar contenido de una manera semántica para lograr una experiencia de desarrollador ágil.
@@ -339,5 +345,5 @@ Consulte el documento [Modelado de contenido para la creación de WYSIWYG con pr
 
 >[!TIP]
 >
->Para ver un tutorial completo sobre la creación de un nuevo proyecto de Edge Delivery Services habilitado para la creación WYSIWYG con AEM as a Cloud Service AEM como fuente de contenido, visite [este seminario web de GEMs de.](https://experienceleague.adobe.com/es/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Para ver un tutorial completo sobre la creación de un nuevo proyecto de Edge Delivery Services habilitado para la creación de WYSIWYG con AEM as a Cloud Service AEM como fuente de contenido, visite [este seminario web de GEMs de la red de trabajo de administración de contenido (GEMs) ](https://experienceleague.adobe.com/es/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).
 
