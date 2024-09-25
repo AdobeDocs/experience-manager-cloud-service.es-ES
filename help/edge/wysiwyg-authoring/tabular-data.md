@@ -4,10 +4,10 @@ description: Aprenda a utilizar hojas de cálculo para administrar los datos tab
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: f8e305f636c7a7247d2a41f6ed25b1715bd8837c
+source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 97%
+source-wordcount: '986'
+ht-degree: 95%
 
 ---
 
@@ -121,6 +121,10 @@ Para que AEM pueda publicar los datos en la hoja de cálculo, también debe actu
    ![Confirmación de la publicación del banner](assets/tabular-data/tabular-data-publish-banner.png)
 
 La hoja de cálculo de redirecciones ahora está publicada y se puede acceder públicamente.
+
+>[!TIP]
+>
+>Para obtener más información acerca de las asignaciones de rutas, consulte el documento [Asignación de rutas para Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
 
 ## Otros tipos de hojas de cálculo {#other}
 

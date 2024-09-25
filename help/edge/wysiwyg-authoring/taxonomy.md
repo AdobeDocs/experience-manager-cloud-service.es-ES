@@ -3,13 +3,13 @@ title: Administración de datos de taxonomía
 description: AEM Obtenga información sobre cómo administrar los datos de taxonomía para usar etiquetas con sus sitios de con Edge Delivery Services.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
+exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
+source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '845'
 ht-degree: 7%
 
 ---
-
 
 # Administración de datos de taxonomía {#managing-taxonomy-data}
 
@@ -108,6 +108,10 @@ Al igual que cuando [administra y publica datos tabulares para el sitio de Edge 
    * Confirme con `main` o cree una solicitud de extracción de acuerdo con su proceso.
 
 Este proceso solo debe realizarse una vez por página de taxonomía. Una vez finalizado, puede publicar la taxonomía.
+
+>[!TIP]
+>
+>Para obtener más información acerca de las asignaciones de rutas, consulte el documento [Asignación de rutas para Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
 
 ## Publicación de una taxonomía {#publishing}
 

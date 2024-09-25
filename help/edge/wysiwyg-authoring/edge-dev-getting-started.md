@@ -4,10 +4,10 @@ description: Esta guía le ayudará a ponerse en marcha con un nuevo sitio de Ad
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
 workflow-type: tm+mt
-source-wordcount: '1207'
-ht-degree: 86%
+source-wordcount: '1223'
+ht-degree: 85%
 
 ---
 
@@ -113,6 +113,10 @@ En primer lugar, deberá crear un nuevo proyecto en GitHub, basado en la plantil
 1. Añada un mensaje de confirmación si lo desea y haga clic en **Confirmar cambios**, confirmándolos directamente en la rama `main`.
 
    ![Cambios en la confirmación](assets/edge-dev-getting-started/commit-paths-changes.png)
+
+>[!TIP]
+>
+>Para obtener más información acerca de las asignaciones de rutas, consulte el documento [Asignación de rutas para Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
 
 ### Crear y editar un nuevo sitio de AEM {#create-aem-site}
 
