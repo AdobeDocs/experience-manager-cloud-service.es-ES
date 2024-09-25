@@ -6,7 +6,7 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 7f6e8f91716b679f9715f9df33ae59aa5bf70751
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 35%
@@ -115,7 +115,7 @@ Consulte [Agregar una canalización que no sea de producción](/help/implementin
 
 Mediante una canalización de configuración, puede implementar rápidamente la configuración para el reenvío de registros, las tareas de mantenimiento relacionadas con la depuración y varias configuraciones de CDN, incluidas las reglas de filtro de tráfico (como las reglas de WAF (cortafuegos de aplicaciones web)). Además, puede administrar transformaciones de solicitud y respuesta, selectores de origen, redirecciones del lado del cliente, páginas de error, claves CDN administradas por el cliente, claves API de depuración y autenticación básica.
 
-Consulte [Usar canalizaciones de configuración](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) para obtener una lista completa de las funciones admitidas y para aprender a administrar las configuraciones en el repositorio de modo que se implementen correctamente.
+Consulte [Usar canalizaciones de configuración](/help/operations/config-pipeline.md) para obtener una lista completa de las funciones admitidas y para aprender a administrar las configuraciones en el repositorio de modo que se implementen correctamente.
 
 ### Configurar canalizaciones de configuración {#configure-config-deployment}
 
