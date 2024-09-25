@@ -3,7 +3,7 @@ title: Asignación de rutas para Edge Delivery Services
 description: AEM Obtenga información sobre cómo asignar las rutas de página utilizadas en la instancia de creación de a las rutas de página públicas utilizadas en el sitio web y controlar qué contenido se publica en los Edge Delivery Services.
 feature: Edge Delivery Services
 role: User
-source-git-commit: 51a2b453ccce39cb42c927a088bc088083545542
+source-git-commit: 2727744f276ee5facae718a987dcc6dc54d4e917
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
@@ -95,8 +95,8 @@ Las asignaciones de rutas se pueden configurar de una de las dos maneras siguien
    }'
    ```
 
-1. Si el proyecto no utiliza el servicio de configuración, la asignación de rutas se configura mediante un archivo paths.json en el repositorio de GitHub de sus proyectos.
+1. Si el proyecto no utiliza el servicio de configuración, la asignación de rutas se configura mediante un archivo de `paths.json` en el repositorio de GitHub de los proyectos.
 
-   * Vea [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json`](/https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json) para ver un ejemplo.
+   * Consulte [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json) para ver un ejemplo.
 
 En ambos casos, una vez configuradas las asignaciones de rutas, puede comprobar la configuración a través de la URL de configuración de acceso público `https://<branch>--<site>--<org>.aem.page/config.json`.
