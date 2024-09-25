@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
+source-git-commit: b5ae995623c41803f8704fa9699d3514c37e4550
 workflow-type: tm+mt
-source-wordcount: '1574'
-ht-degree: 51%
+source-wordcount: '1677'
+ht-degree: 41%
 
 ---
 
@@ -57,7 +57,7 @@ El primero es el encabezado de Cloud Manager, que es persistente mientras navega
 
 ![El encabezado de Experience Cloud](assets/experience-cloud-header.png)
 
-1. Haga clic en ![Mostrar icono de menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (mostrar/ocultar menú lateral) para que tenga acceso a una variedad de fichas que pueden llevarlo a partes específicas de un programa individual. O bien, puede cambiar entre el [Tablero de licencias](/help/implementing/cloud-manager/license-dashboard.md) y la consola **[Mis programas](#my-programs-console)** en función del contexto.
+1. Haga clic en ![Mostrar icono de menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (mostrar u ocultar menú lateral) para que tenga acceso a una variedad de fichas que pueden llevarlo a partes específicas de un programa individual. O bien, puede cambiar entre el [Tablero de licencias](/help/implementing/cloud-manager/license-dashboard.md) y la consola **[Mis programas](#my-programs-console)** en función del contexto.
 1. Haga clic en el Adobe El botón Cloud Manager le lleva de nuevo a la consola Mis programas de Cloud Manager, independientemente de dónde se encuentre en Cloud Manager.
 1. Haga clic en **Comentarios** para proporcionar comentarios al Adobe sobre Cloud Manager.
 1. Haga clic en el selector de organización para mostrar la organización en la que está conectado actualmente (en este ejemplo, Foundation Internal). Haga clic para cambiar a otra organización si su Adobe ID está asociado a varias.
@@ -101,13 +101,13 @@ Para encontrar el programa que necesita más fácilmente, utilice las opciones d
 
 ![Opciones de ordenación](/help/implementing/cloud-manager/assets/my-programs-sorting.png)
 
-* Ordenar por
-   * Fecha de creación (predeterminada)
-   * Nombre del programa
-   * Estado
-* De subida (predeterminado)/De bajada
-* Vista de cuadrícula (predeterminado)
-* Vista de lista   
+* Ordenar por:
+   * **Fecha de creación** (predeterminada)
+   * **Nombre de programa**
+   * **Estado**
+* ![Icono de orden descendente](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) ascendente (predeterminado) / ![Icono de orden ascendente](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderUp_18_N.svg) descendente
+* ![Icono de vista de cuadrícula clásica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ClassicGridView_18_N.svg) Vista de cuadrícula (predeterminado)
+* ![Icono de lista de vista](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) Vista de lista
 
 #### Tarjetas de programa {#program-cards}
 
@@ -115,48 +115,42 @@ Una tarjeta (o fila en una tabla) representa cada programa, lo que proporciona u
 
 ![Tarjeta de programa](assets/program-card.png)
 
-* Imagen del programa (si está configurada)
-* Nombre del programa
+* Imagen asociada al programa, si se ha configurado. La imagen de arriba es &quot;WKND&quot;.
+* Nombre asignado al programa. La imagen anterior muestra &quot;Ejemplo de SecurBank&quot; como nombre del programa.
 * Tipo de servicio:
-   * **Nube de Experience Manager** para programas de AEM as a Cloud Service
-   * **Experience Manager** para [programas de AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+   * **Nube de Experience Manager** — para programas de AEM as a Cloud Service
+   * **Experience Manager** — para [programas de AMS (Adobe Managed Services)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [Tipo de programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md):
    * Zona protegida
    * Producción
-* Estado
-* Soluciones configuradas
-* Fecha de creación
+* Estado. En la imagen anterior, el estado es Listo con una marca de verificación.
+* Soluciones configuradas. En la imagen anterior, Sites y Assets son las soluciones configuradas.
+* Fecha de creación.
 
-Según las opciones elegidas al crear el programa, un programa de producción podría tener distintivos para mostrar funciones adicionales.
+Un programa de producción puede tener un distintivo para mostrar las funciones adicionales que eligió en el momento en que lo agregó, como las siguientes:
 
-* [HIPAA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
+* ![Insignia de HIPAA](assets/hipaa.png) [HIPAA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
-  ![distintivo HIPAA](assets/hipaa.png)
+* ![Insignia WAF-DDOS](assets/waf-ddos-protection.png) [Protección WAF-DDOS](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
-* [Protección WAF-DDOS](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
-
-  ![Insignia WAF-DDOS](assets/waf-ddos-protection.png)
-
-* [SLA de 99,99 %](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
-
-  ![distintivo de SLA al 99,99 %](assets/9999-sla.png)
+* [99,99% SLA (contrato de nivel de servicio)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
 
 El icono de información también permite acceder rápidamente a la información adicional sobre el programa (útil en la vista de listas).
 
 ![Información](assets/information-list-view.png)
 
-El icono de puntos suspensivos le permite acceder a acciones adicionales a realizar en el programa.
+El icono ![Más](https://spectrum.adobe.com/static/icons/workflow_22/Smock_More_22_N.svg) te da acceso a acciones adicionales que puedes realizar en el programa.
 
 ![Botón de puntos suspensivos para programas](assets/program-ellipsis.png)
 
-* Navegue a un [entorno](/help/implementing/cloud-manager/manage-environments.md) particular del programa
-* Abra la [información general del programa](#program-overview)
-* [Edite el programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* [Eliminar un programa de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* Vaya a un ![icono de datos](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [Entorno](/help/implementing/cloud-manager/manage-environments.md) particular del programa
+* Abra el ![icono de información general del programa](/help/implementing/cloud-manager/assets/program-overview.svg) [Información general del programa](#program-overview)
+* ![Editar icono](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Editar el programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
+* ![Eliminar icono](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Eliminar un programa de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
->Para obtener más información sobre los programas y la creación y administración de programas, consulte los siguientes documentos.
+>Para obtener más información acerca de los programas y la adición y administración de programas, vea los temas siguientes:
 >
 >* [Programas y tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 >* [Crear programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
@@ -167,9 +161,9 @@ El icono de puntos suspensivos le permite acceder a acciones adicionales a reali
 
 La sección de vínculos rápidos le permite acceder a recursos utilizados con frecuencia relacionados.
 
-## Ventana de información general del programa {#program-overview}
+## Página de información general del programa {#program-overview}
 
-Cuando se selecciona un programa en la consola **[Mis programas](#my-programs-console)**, se le redirige a la ventana **Información general del programa**.
+Cuando se selecciona un programa en la consola **[Mis programas](#my-programs-console)**, se le redirige a la página **Información general del programa**.
 
 ![Información general del programa](assets/program-overview.png)
 
@@ -189,11 +183,11 @@ Las barras de herramientas de la descripción general del programa son similares
 
 #### Encabezado de Cloud Manager {#cloud-manager-header-2}
 
-El encabezado de Cloud Manager tiene un menú de hamburguesa que se abre automáticamente para mostrar las pestañas navegables de la información general del programa.
+En la esquina superior izquierda de la página se encuentra el encabezado Adobe de Cloud Manager. Puede hacer clic en ![Icono de menú lateral](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para mostrar u ocultar el menú lateral de pestañas a otras áreas del software.
 
 ![Menú de hamburguesa de Cloud Manager](assets/cloud-manager-hamburger.png)
 
-Toque o haga clic en el icono de menú de hamburguesa para ocultar las pestañas.
+Haga clic en Adobe Cloud Manager para volver a Inicio.
 
 #### Barra de herramientas del programa {#program-toolbar-2}
 
@@ -229,11 +223,11 @@ Cada programa tiene muchas opciones y datos asociados. Estas opciones y datos se
 
 **Recursos**
 
-* Rutas de aprendizaje: recursos de aprendizaje adicionales sobre Cloud Manager
+* ![Icono de libro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Book_18_N.svg) Rutas de aprendizaje - Recursos de aprendizaje adicionales acerca de Cloud Manager
 
 De forma predeterminada, al abrir un programa, llega a la pestaña **Información general**. La pestaña actual está resaltada. Seleccione otra pestaña para mostrar sus detalles.
 
-Utilice el menú de hamburguesa de la [Encabezado de Cloud Manager](#cloud-manager-header-2) para ocultar las pestañas.
+En la esquina superior izquierda del [encabezado de Cloud Manager](#cloud-manager-header-2), haga clic en ![Mostrar icono de menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para mostrar u ocultar el menú lateral de las pestañas.
 
 ### Llamada a la sección {#cta}
 
