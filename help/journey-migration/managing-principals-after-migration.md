@@ -1,24 +1,24 @@
 ---
-title: Administración de identidades tras la migración
-description: AEM Obtenga información sobre cómo configurar usuarios y grupos en IMS y
-source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
+title: Administración de principales después de la migración
+description: Obtenga información sobre cómo configurar usuarios y grupos en IMS y AEM
+exl-id: 46c4abfb-7e28-4f18-a6d4-f729dd42ea7b
+source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
 workflow-type: tm+mt
 source-wordcount: '773'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
-
-# Administración de identidades tras la migración {#managing-principals-after-migration}
+# Administración de principales después de la migración {#managing-principals-after-migration}
 
 >[!CONTEXTUALHELP]
 >id="managing-principals"
->title="Administración de identidades tras la migración"
->abstract="AEM Obtenga información sobre cómo configurar usuarios y grupos en IMS y"
+>title="Administración de principales después de la migración"
+>abstract="Obtenga información sobre cómo configurar usuarios y grupos en IMS y AEM"
 
 AEM En este documento se describen los pasos de alto nivel que los clientes deben realizar para configurar sus usuarios y grupos en IMS y para trabajar con su entorno de AEM as a Cloud Service en el que se encuentran.
 
-## Administración de identidades {#managing-principals}
+## Administración de principales {#managing-principals}
 
 Para AEM as a Cloud Service, los usuarios y grupos deben administrarse principalmente mediante el Admin Console.  Al considerar una migración, algunas de estas tareas se pueden llevar a cabo antes de que se produzca la migración de contenido.  Básicamente, uno de estos grupos de tareas principales
 
@@ -56,5 +56,3 @@ Dado que estos grupos no están en IMS, la herramienta de carga masiva no se pue
 * AEM Cuando el usuario inicia sesión por primera vez, su usuario de IMS se crea en y debe tener acceso a los grupos nuevos y, por lo tanto, a los grupos de recopilación originales.
 
 Nota: Para la asignación masiva de usuarios, se deben utilizar los pasos anteriores para crear los usuarios en IMS; los usuarios que ya existen en IMS no se pueden crear de nuevo mediante carga masiva.
-
-

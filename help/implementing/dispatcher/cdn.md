@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
 source-wordcount: '1608'
-ht-degree: 10%
+ht-degree: 12%
 
 ---
 
@@ -74,7 +74,7 @@ Obtenga información sobre [configurar un token de API de depuración](/help/imp
 
 Para casos de uso de autenticación ligera, incluidas las partes interesadas de la empresa que revisan el contenido, proteja el contenido mostrando un cuadro de diálogo de autenticación básico que requiera un nombre de usuario y una contraseña. [Más información](/help/implementing/dispatcher/cdn-credentials-authentication.md) y únete al programa de adopción anticipada.
 
-## AEM Los puntos de CDN administrados por el cliente a CDN administrada por el {#point-to-point-CDN}
+## La CDN administrada por el cliente apunta a una CDN administrada por AEM {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"

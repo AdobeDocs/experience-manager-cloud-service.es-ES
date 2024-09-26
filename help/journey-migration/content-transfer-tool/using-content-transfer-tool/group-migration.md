@@ -5,7 +5,7 @@ exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 source-git-commit: 1f9526f8e8aa6a070e95827fab16431b0ee7566b
 workflow-type: tm+mt
 source-wordcount: '1315'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_groupmigration"
 >title="Migración de grupos"
->abstract="La herramienta de transferencia de contenido le ayuda a copiar grupos de su sistema de Adobe Experience Manager AEM () existente en AEM as a Cloud Service."
+>abstract="La herramienta de transferencia de contenido le ayuda a copiar grupos de su sistema de Adobe Experience Manager (AEM) existente a AEM as a Cloud Service. "
 
 >[!NOTE]
 >Para ver las versiones anteriores de la herramienta de asignación de usuarios, consulte la [documentación heredada](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md).
@@ -24,10 +24,10 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermigration"
->title="Los usuarios no se han migrado"
->abstract="La herramienta de transferencia de contenido ya no migra usuarios. Los usuarios deben administrarse en el Admin Console."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="AEM Documentación del Admin Console de"
->additional-url="https://adminconsole.adobe.com/" text="AEM Admin Console de la"
+>title="Los usuarios no se migran"
+>abstract="La herramienta de transferencia de contenido ya no migra a los usuarios. Los usuarios deben administrarse en la Admin Console."
+>additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="Documentación del Admin Console de AEM"
+>additional-url="https://adminconsole.adobe.com/" text="Admin Console de AEM"
 
 Como parte del recorrido de transición al as a Cloud Service AEM de Adobe Experience Manager AEM (), los grupos deben migrarse de los sistemas de existentes a AEM as a Cloud Service. Esta tarea la realiza la herramienta de transferencia de contenido.
 
