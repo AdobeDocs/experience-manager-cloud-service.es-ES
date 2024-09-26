@@ -4,10 +4,10 @@ description: Obtenga información acerca de las ventajas de AEM as a Cloud Servi
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 55cf6a10c2cb4c62aa8f89fac7f9d1fb4c012d26
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 100%
+source-wordcount: '408'
+ht-degree: 95%
 
 ---
 
@@ -44,6 +44,10 @@ De forma predeterminada, AEM as a Cloud Service tiene habilitado el shell unific
 
    ![imagen](/help/overview/assets/unifiedshell3.png)
 
+>[!NOTE]
+>
+>Unified Shell también se puede deshabilitar desde el código del proyecto. AEM Consulte [Estructura de la interfaz de usuario de la: Unified Shell](/help/implementing/developing/introduction/ui-structure.md#unified-shell).
+
 ## Cambio a tema oscuro {#changing-to-dark-theme}
 
 Para cambiar al tema oscuro, haga clic en su icono de perfil. Esta acción muestra una ventana emergente como se muestra a continuación. Puede utilizar el conmutador para cambiar a un tema oscuro para el Unified Shell.
@@ -73,3 +77,4 @@ Se puede acceder a la Bandeja de entrada AEM haciendo clic en el icono de campan
 Haga clic en el botón Bandeja de entrada en la ventana emergente para poder ir a la Bandeja de entrada AEM:
 
 ![imagen](/help/overview/assets/unifiedshell6.png)
+

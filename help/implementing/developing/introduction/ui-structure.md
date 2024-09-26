@@ -4,10 +4,10 @@ description: AEM La interfaz de usuario de tiene varios principios subyacentes y
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 55cf6a10c2cb4c62aa8f89fac7f9d1fb4c012d26
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 4%
+source-wordcount: '935'
+ht-degree: 3%
 
 ---
 
@@ -171,3 +171,15 @@ Según el espacio disponible, las barras de herramientas de los componentes se c
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
 Para obtener más información técnica, consulte [Conjunto de documentación de JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html) para el editor de páginas.
+
+### Unified Shell {#unified-shell}
+
+Consulte [AEM as a Cloud Service AEM en Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) si utiliza Unified Shell como interfaz de usuario de la interfaz de usuario de la aplicación de la.
+
+Si necesita realizar (o ya ha realizado) personalizaciones, puede desactivarlas:
+
+* [desde la interfaz de usuario](/help/overview/aem-cloud-service-on-unified-shell.md#disabling-unified-shell)
+
+* desde el código del proyecto, estableciendo la propiedad `Boolean`:
+
+  `/conf/global/setting/unifiedshell` - `false`
