@@ -3,7 +3,7 @@ title: Selector de recursos para [!DNL Adobe Experience Manager] como un [!DNL C
 description: Integre el selector de recursos con varias aplicaciones de Adobe, que no sean de Adobe y de terceros.
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
-source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
+source-git-commit: 7590e0240f3f429831aee5d9620ea4fa6f32847b
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 5%
@@ -68,7 +68,7 @@ El selector de recursos se procesa en el elemento contenedor `<div>`, como se me
     <title>Asset Selectors</title>
     <link rel="stylesheet" href="index.css">
     <script id="asset-selector"
-        src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/asset-selectors.js"></script>
+        src="https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js"></script>
     <script>
 
         const imsProps = {
