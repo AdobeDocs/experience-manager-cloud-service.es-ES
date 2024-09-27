@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo configurar el tráfico de CDN decl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 35d3dcca6b08e42c0d2a97116d0628ac9bbb6a7c
+source-git-commit: c31441baa6952d92be4446f9035591b784091324
 workflow-type: tm+mt
-source-wordcount: '1350'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ AEM as a Cloud Service ofrece una colección de características configurables e
 
 * [Transformaciones de solicitudes](#request-transformations): modifique aspectos de las solicitudes entrantes, incluidos los encabezados, las rutas y los parámetros.
 * [Transformaciones de respuesta](#response-transformations): modifique los encabezados que están en camino de regreso al cliente (por ejemplo, un explorador web).
-* [Redirecciones del lado del cliente](#client-side-redirectors): déclencheur una redirección del explorador. Esta función aún no es de GA, pero está disponible para los primeros usuarios que la adoptaron.
+* [Redirecciones del lado del cliente](#client-side-redirectors): déclencheur una redirección del explorador.
 * [Selectores de origen](#origin-selectors): proxy a un backend de origen diferente.
 
 También se pueden configurar en la CDN las reglas de filtro de tráfico (incluida WAF), que controlan qué tráfico permite o rechaza la CDN. Esta característica ya se ha lanzado y puede obtener más información al respecto en la página [Reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md), que incluye las reglas de WAF.
@@ -363,9 +363,6 @@ data:
 
 ## Redirecciones del lado del cliente {#client-side-redirectors}
 
->[!NOTE]
->Esta función aún no está disponible de forma general. Para unirse al programa de adopción anticipada, envíe un correo electrónico a `aemcs-cdn-config-adopter@adobe.com` y describa su caso de uso.
-
 Puede utilizar reglas de redireccionamiento del lado del cliente para redirecciones del lado del cliente 301, 302 y similares. Si una regla coincide, la CDN responde con una línea de estado que incluye el código y el mensaje de estado (por ejemplo, HTTP/1.1 301 Movido permanentemente), así como el conjunto de encabezado de ubicación.
 
 Se permiten ubicaciones absolutas y relativas con valores fijos.
@@ -380,7 +377,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_redirects:
+  redirects:
     rules:
       - name: redirect-absolute
         when: { reqProperty: path, equals: "/page.html" }
