@@ -2,9 +2,9 @@
 title: Configuración de la interfaz de usuario de Content Hub
 description: Configuración de la interfaz de usuario de Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 96c50aad9368adc83f8698dc35266146b1883672
+source-git-commit: 0c31f83d3e115a676c7daa37f634e25d08f4d06c
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1374'
 ht-degree: 5%
 
 ---
@@ -60,6 +60,8 @@ Como administrador, administre las siguientes opciones de configuración para lo
 * [Búsqueda](#configure-metadata-search-content-hub)
 
 * [Personalización de marca](#configure-branding-content-hub)
+
+* [Recursos caducados](#expired-assets-content-hub)
 
 * [Vínculos personalizados](#configure-custom-links-content-hub)
 
@@ -168,6 +170,33 @@ Los administradores también pueden personalizar el título y el texto del cuerp
 Las actualizaciones de marca habilitadas en la interfaz de usuario de configuración se muestran en el banner del portal de Content Hub:
 
 ![Marca de la interfaz de usuario de configuración en Content Hub](assets/configuration-ui-branding-updates.png)
+
+### Recursos caducados {#expired-assets-content-hub}
+
+Los administradores pueden controlar si necesitan recursos caducados para que sean visibles en Content Hub. Si los recursos caducados se hacen visibles, también pueden definir si los usuarios pueden descargarlos.
+
+Los recursos caducados no se muestran en Content Hub de forma predeterminada.
+
+Para ello, ejecute los siguientes pasos:
+
+1. En la interfaz de usuario de [Configuraciones](#access-configuration-options-content-hub), haga clic en **[!UICONTROL Assets caducado]**.
+
+1. En la sección **[!UICONTROL Visible]**, habilite la opción **[!UICONTROL Permitir que los usuarios vean los recursos caducados]** para que todos los recursos caducados estén visibles en Content Hub.
+
+1. Después de habilitar la visibilidad de los recursos, puede habilitar o deshabilitar la capacidad de descargar recursos caducados mediante la opción **[!UICONTROL Permitir que los usuarios descarguen recursos caducados]**.
+
+1. Haga clic en **[!UICONTROL Guardar]** para aplicar los cambios.
+
+   ![Recursos caducados en Content Hub](assets/expired-assets-content-hub.png)
+
+Después de habilitar la visibilidad de los recursos, puede ver los recursos caducados en Content Hub, como se muestra en la siguiente imagen:
+
+![Recursos caducados en Content Hub](assets/view-download-expired-assets.png)
+
+Si el administrador ha activado la descarga, los usuarios de Content Hub también pueden descargarlos, tal como se indica en la imagen.
+
+Si la visibilidad de los recursos caducados está habilitada, Content Hub también resalta los recursos que caducan en los próximos 15 días mediante el mensaje `Expiring in n days` en la tarjeta de recursos.
+
 
 ### Vínculos personalizados {#configure-custom-links-content-hub}
 
