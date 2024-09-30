@@ -1,8 +1,8 @@
 ---
-source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
-workflow-type: ht
-source-wordcount: '1139'
-ht-degree: 100%
+source-git-commit: a77bff14b34f1e433ba185b19f0f0d61728b7c7a
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 # Fragmentos de código {#snippets}
@@ -155,6 +155,22 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 >
 >Si utiliza (o tiene intención de utilizar) la canalización front-end para desarrollar sitios, debe añadir de antemano la Lista de IP permitidas de Cloud Manager.
 >Consulte [Uso de la Lista de IP permitidas de Cloud Manager con la canalización front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+
+## LISTAS DE PERMITIDOS IP y el editor universal {#ip-allow-lists-ue}
+
+>[!IMPORTANT]
+>
+>[El editor universal](/help/implementing/universal-editor/introduction.md) no es compatible con listas de permitidos IP.
+>
+>Si desea utilizar el editor universal, las listas de permitidos IP no deben estar habilitadas.
+
+## Editor universal y Listas de permitidos IP {#ue-ip-allow-lists}
+
+>[!IMPORTANT]
+>
+>El editor universal no es compatible con [listas de permitidos IP.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>
+>Si desea utilizar el editor universal, las listas de permitidos IP no deben estar habilitadas.
 
 ## Trabajar con Dynamic Media {#work-with-dynamic-media}
 
