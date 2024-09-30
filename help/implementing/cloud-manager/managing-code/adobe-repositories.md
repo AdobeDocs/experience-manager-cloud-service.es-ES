@@ -1,37 +1,46 @@
 ---
-title: Adición de repositorios de Adobe en Cloud Manager
-description: Aprenda a crear repositorios administrados por Adobe en Cloud Manager.
+title: Añadir un repositorio de Adobe en Cloud Manager
+description: Obtenga información sobre cómo agregar un repositorio administrado por Adobe en Cloud Manager.
 exl-id: 6c32c4ae-f48d-4440-bfc2-cdc1a3d59599
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 100%
+source-wordcount: '235'
+ht-degree: 8%
 
 ---
 
-# Adición de repositorios de Adobe en Cloud Manager {#adobe-repositories}
+# Añadir un repositorio de Adobe en Cloud Manager {#adobe-repositories}
 
-Aprenda a crear repositorios administrados por Adobe en Cloud Manager.
+Obtenga información sobre cómo agregar un repositorio administrado por Adobe en Cloud Manager.
 
-## Adición de un repositorio administrado por Adobe {#add-adobe-repository}
+La página **Repositorios** facilita la adición de repositorios adicionales administrados por Adobe a un programa seleccionado.
 
-La ventana **Repositorios** facilita la adición de repositorios adicionales administrados por Adobe a su programa.
+**Para agregar un repositorio de Adobe en Cloud Manager:**
 
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y el programa adecuados al que desea agregar un repositorio administrado por Adobe.
 
-1. En la página **Información general del programa**, seleccione la pestaña **Repositorios** para pasar a la página **Repositorios**.
+1. En la página **Resumen del programa**, en el menú lateral, haga clic en la ficha ![Icono de carpeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **Repositorios**. para cambiar a la página **Repositorios**.
 
-1. Haga clic en **Añadir repositorio** en la barra de herramientas.
+1. En la página **Repositorios**, cerca de la esquina superior derecha, haga clic en **Agregar repositorio**.
 
    ![Botón Agregar repositorio](assets/add-repository.png)
 
-1. Introduzca el nombre y la descripción como se solicita y haga clic en **Guardar**.
+1. En el cuadro de diálogo **Agregar repositorio**, asegúrese de que **Repositorio de Adobe** está seleccionado como tipo de repositorio.
+
+1. En los campos de texto respectivos, introduzca lo siguiente:
+
+   * **Nombre del repositorio**: un nombre expresivo para su nuevo repositorio.
+   * **Vista previa de URL del repositorio**: no necesita introducir una ruta de URL ni editar la ruta existente porque la infraestructura ya está configurada y está totalmente integrada y administrada por el Adobe.
+   * **Descripción (opcional)**: una descripción detallada del repositorio.
 
    ![Cuadro de diálogo Agregar repositorio](assets/add-adobe-repository.png)
 
-Cuando se cierra el asistente, el nuevo repositorio se muestra en la tabla de la ventana **Repositorios**. Ahora puede asociar una [CI/CD Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) con este o administrarlo dentro de la ventana [**Repositorios**](managing-repositories.md).
+1. Haga clic en **Guardar**.
+El nuevo repositorio se muestra en la tabla de la página **Repositorios**.
+
+Ahora puede asociar una [canalización de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) con él o administrarla en la página [**Repositorios**](managing-repositories.md).
 
 >[!TIP]
 >

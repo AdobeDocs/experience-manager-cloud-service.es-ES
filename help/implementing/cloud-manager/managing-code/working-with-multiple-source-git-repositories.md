@@ -5,26 +5,26 @@ exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 56%
+source-wordcount: '740'
+ht-degree: 31%
 
 ---
 
-# Usar varios repositorios {#working-with-multiple-source-git-repos}
+# Uso de varios repositorios {#working-with-multiple-source-git-repos}
 
 Obtenga información sobre cómo administrar varios repositorios de Git al trabajar con Cloud Manager.
 
-## Sincronización de repositorios de Git administrados por el cliente {#syncing-customer-managed-git-repositories}
+## Sincronización de repositorios Git privados {#syncing-customer-managed-git-repositories}
 
-En lugar de trabajar directamente con el repositorio de Git de Cloud Manager, [los clientes pueden trabajar con su propio repositorio de Git](integrating-with-git.md) o varios repositorios de Git propios. En estos casos, se debe configurar un proceso de sincronización automatizado para garantizar que el repositorio de Git de Cloud Manager siempre se mantenga actualizado.
+En lugar de trabajar directamente con el repositorio Git de Cloud Manager, [los clientes pueden trabajar con su propio repositorio Git privado](integrating-with-git.md) o con varios repositorios Git propios. En estos casos, configure un proceso de sincronización automatizado para garantizar que el repositorio de Git en Cloud Manager siempre se mantenga actualizado.
 
-Dependiendo de dónde esté alojado el repositorio de Git del cliente, se podría utilizar una acción de GitHub o una solución de integración continua como Jenkins para configurar la automatización. Con la automatización configurada, cada inserción en un repositorio de Git propiedad del cliente se puede reenviar automáticamente al repositorio de Git de Cloud Manager.
+Dependiendo de dónde esté alojado el repositorio de Git del cliente, se podría utilizar una acción de GitHub o una solución de integración continua como Jenkins para configurar la automatización. Con la automatización configurada, cada inserción en un repositorio Git propiedad del cliente se puede reenviar automáticamente al repositorio Git de Cloud Manager.
 
-Aunque esta automatización para un único repositorio de Git propiedad del cliente es sencilla, la configuración de este repositorio para varios repositorios requiere una configuración inicial. El contenido de varios repositorios de Git debe asignarse a distintos directorios dentro del repositorio de Git de Cloud Manager único. El repositorio de Git de Cloud Manager debe aprovisionarse con un Maven raíz `pom.xml`, que enumere los diferentes subproyectos en la sección de módulos.
+Aunque esta automatización para un único repositorio de Git propiedad del cliente es sencilla, la configuración para varios repositorios requiere una configuración inicial. El contenido de varios repositorios de Git debe asignarse a distintos directorios dentro del repositorio de Git de Cloud Manager único. El repositorio Git de Cloud Manager debe aprovisionarse con un Maven raíz `pom.xml`, que enumere los diferentes subproyectos en la sección de módulos.
 
-El siguiente es un ejemplo `pom.xml` para dos repositorios de Git propiedad del cliente.
+El siguiente es un archivo de muestra `pom.xml` para dos repositorios Git propiedad del cliente.
 
 * El segundo proyecto se coloca en el directorio llamado `project-a`.
 * El segundo proyecto se colocará en el directorio llamado `project-b`.
@@ -48,27 +48,29 @@ El siguiente es un ejemplo `pom.xml` para dos repositorios de Git propiedad del 
 </project>
 ```
 
-Tal raíz `pom.xml` se inserta en una rama del repositorio de Git de Cloud Manager. A continuación, se deben configurar los dos proyectos para que reenvíen automáticamente los cambios al repositorio de Git de Cloud Manager.
+Un `pom.xml` raíz como este se inserta en una rama del repositorio de Git de Cloud Manager. A continuación, los dos proyectos deben configurarse para que reenvíen los cambios automáticamente al repositorio de Git de Cloud Manager.
 
 Una posible solución sería la siguiente:
 
-1. Una acción de GitHub se puede activar si se inserta una rama en el proyecto A.
-1. La acción extrae el proyecto A y el repositorio de Git de Cloud Manager y copia todo el contenido del proyecto A en el directorio `project-a` del repositorio de Git de Cloud Manager.
+1. Almacene en déclencheur una acción de GitHub insertándola en una rama del proyecto A.
+1. La acción extrae el proyecto A y el repositorio Git de Cloud Manager. A continuación, copia todo el contenido del proyecto A en el directorio `project-a` del repositorio Git de Cloud Manager.
 1. A continuación, la acción confirma e inserta el cambio.
 
-Por ejemplo, un cambio en la rama principal del proyecto A se inserta automáticamente en la rama principal del repositorio de Git de Cloud Manager. Podría haber una asignación entre ramas, como si una inserción en una rama denominada `dev` del proyecto A se inserta una rama denominada `development` en el repositorio de Git de Cloud Manager. Se requieren pasos similares para el proyecto B.
+Por ejemplo, un cambio en la rama principal del proyecto A se inserta automáticamente en la rama principal del repositorio de Git de Cloud Manager. Podría haber una asignación entre ramas, como si una inserción en una rama llamada `dev` del proyecto A se inserta una rama denominada `development` en el repositorio Git de Cloud Manager. Se requieren pasos similares para el proyecto B.
 
-Según la estrategia de ramificación y los flujos de trabajo, la sincronización se puede configurar para diferentes ramas. Si el repositorio de Git utilizado no proporciona un concepto similar a las acciones de GitHub, también es posible una integración mediante Jenkins (o similar). En este caso, un enlace web activa un trabajo Jenkins que hace el trabajo.
+Según la estrategia de ramificación y los flujos de trabajo, la sincronización se puede configurar para diferentes ramas. Si el repositorio de Git utilizado no proporciona un concepto similar a las acciones de GitHub, también es posible una integración a través de Jenkins (o similar). En este caso, un enlace web déclencheur un trabajo de Jenkins, que hace el trabajo.
 
 Siga estos pasos para poder agregar un tercer origen o repositorio nuevo.
 
-1. Agregue una acción de GitHub al nuevo repositorio que inserte cambios de ese repositorio en el repositorio de Git de Cloud Manager.
-1. Realice esa acción al menos una vez para asegurarse de que el código del proyecto está en el repositorio de Git de Cloud Manager.
-1. Agregue una referencia al nuevo directorio en la raíz de Maven `pom.xml` en el repositorio de Git de Cloud Manager.
+1. Agregue una acción de GitHub al nuevo repositorio, que inserta cambios de ese repositorio en el repositorio de Git de Cloud Manager.
+1. Realice esa acción al menos una vez para asegurarse de que el código del proyecto esté en el repositorio de Git de Cloud Manager.
+1. En el repositorio Git de Cloud Manager, agregue una referencia al nuevo directorio en el Maven raíz `pom.xml`.
 
-## Ejemplo de acción de GitHub {#sample-github-action}
 
-Esta es una acción de ejemplo de GitHub activada por una inserción en la rama principal y luego insertada en un subdirectorio del repositorio de Git de Cloud Manager. Las acciones de GitHub deben tener dos secretos, `MAIN_USER` y `MAIN_PASSWORD`, para poder conectarse y enviar al repositorio de Git de Cloud Manager.
+
+## Muestra de acción de GitHub {#sample-github-action}
+
+A continuación se muestra un ejemplo de acción de GitHub activada por una inserción en la rama principal. A continuación, inserte en un subdirectorio del repositorio de Git de Cloud Manager. Las acciones de GitHub deben tener dos secretos, `MAIN_USER` y `MAIN_PASSWORD`, para poder conectarse y enviar al repositorio de Git de Cloud Manager.
 
 ```java
 name: SYNC
@@ -129,18 +131,18 @@ El uso de una acción de GitHub es flexible. Se puede realizar cualquier asignac
 
 >[!NOTE]
 >
->El script de ejemplo utiliza `git add` para actualizar el repositorio. Esto supone que se incluyen las eliminaciones. Según la configuración predeterminada de Git, esto debe reemplazarse por `git add --all`.
+>El script de ejemplo utiliza `git add` para actualizar el repositorio. La secuencia de comandos supone que se incluyen las eliminaciones. Según la configuración predeterminada de Git, debe reemplazarse por `git add --all`.
 
-## Ejemplo de trabajo de Jenkins {#sample-jenkins-job}
+## Muestra de trabajo de Jenkins {#sample-jenkins-job}
 
-Este es un script de ejemplo que se puede utilizar en un trabajo de Jenkins o similar y que tiene el siguiente flujo:
+El siguiente es un script de ejemplo que se puede utilizar en un trabajo de Jenkins o similar y que tiene el siguiente flujo:
 
-1. Se activa mediante un cambio en un repositorio de Git.
+1. Se activa mediante un cambio en un repositorio Git.
 1. El trabajo de Jenkins comprueba el estado más reciente de ese proyecto o rama.
 1. A continuación, el trabajo activa ese script.
 1. A su vez, esta extrae el repositorio de Git de Cloud Manager y confirma el código del proyecto en un subdirectorio.
 
-Se debe proporcionar al trabajo de Jenkins dos secretos, `MAIN_USER` y `MAIN_PASSWORD`, para poder conectarse y enviar al repositorio de Git de Cloud Manager.
+Se debe proporcionar al trabajo de Jenkins dos secretos, `MAIN_USER` y `MAIN_PASSWORD`, para poder conectarse e insertarse en el repositorio Git de Cloud Manager.
 
 ```java
 # Username/email used to commit to Cloud Manager's Git repository
@@ -198,4 +200,4 @@ El uso de un trabajo de Jenkins es flexible. Se puede realizar cualquier asignac
 
 >[!NOTE]
 >
->El script de ejemplo utiliza `git add` para actualizar el repositorio. Esto supone que se incluyen las eliminaciones. Según la configuración predeterminada de Git, esto debe reemplazarse por `git add --all`.
+>El script de ejemplo utiliza `git add` para actualizar el repositorio. La secuencia de comandos supone que se incluyen las eliminaciones. Según la configuración predeterminada de Git, debe reemplazarse por `git add --all`.
