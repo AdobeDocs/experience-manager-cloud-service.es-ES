@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo anular la página de error predete
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 137ea509de353f9f800f0b64bb8f2f6375e7d83d
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '388'
 ht-degree: 1%
 
 ---
@@ -89,3 +89,9 @@ curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 Los códigos admitidos son: 403, 404, 406, 500 y 503.
 
 De este modo, se almacena directamente en déclencheur el controlador de error de CDN para probar la respuesta sintética de un código de error determinado.
+
+### Tutorial
+
+Consulte el tutorial [Páginas de error de CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) para obtener instrucciones paso a paso sobre cómo crear, implementar y probar las páginas de error del servidor CDN.
+
+
