@@ -5,9 +5,9 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
+source-git-commit: f2364de6237ca9f0285815b581bcf3881488188d
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '384'
 ht-degree: 44%
 
 ---
@@ -42,9 +42,9 @@ La característica **Acceder a la info del repositorio** es visible para los usu
 
    ![Acceder a la info del repositorio en la tarjeta de canalizaciones](assets/pipelines-card.png)
 
-1. Para acceder a la contraseña, debe generar una nueva. En el cuadro de diálogo Información del repositorio, haga clic en **`Generate password`**.
+1. Para acceder a la contraseña, debe generar una nueva. En el cuadro de diálogo **Información del repositorio**, seleccione **Generar contraseña**.
 
-1. En el cuadro de diálogo de confirmación, haga clic en **`Generate password`**.
+1. En el cuadro de diálogo de confirmación, seleccione **Generar contraseña**.
 
    ![Confirmar generación de contraseña](assets/confirm-generated-password.png)
 
