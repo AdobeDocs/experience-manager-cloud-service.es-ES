@@ -4,9 +4,9 @@ description: Obtenga información acerca del reenvío de registros a Splunk y ot
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 17d195f18055ebd3a1c4a8dfe1f9f6bc35ebaf37
+source-git-commit: 3aafe41554fd86637e34687660fc48ea817b01d7
 workflow-type: tm+mt
-source-wordcount: '1362'
+source-wordcount: '1603'
 ht-degree: 1%
 
 ---
@@ -40,6 +40,7 @@ Este artículo está organizado de la siguiente manera:
 * Registro de configuraciones de destino: cada destino tiene un formato ligeramente diferente
 * Formatos de entrada de registro: información sobre los formatos de entrada de registro
 * AEM Redes avanzadas: envío de registros de Apache/Dispatcher y de los recursos de red a través de una salida dedicada o a través de una VPN
+* Migración desde el reenvío de registros heredado: cómo pasar del reenvío de registros configurado anteriormente por Adobe al enfoque de autoservicio
 
 
 ## Configuración {#setup}
@@ -369,4 +370,23 @@ data:
     aem:
       advancedNetworking: true
 ```
+
+## Migración desde el reenvío de registros heredado {#legacy-migration}
+
+Antes de que se lograra la configuración del reenvío de registros mediante un modelo de autoservicio, se solicitaba a los clientes que abrieran vales de soporte, donde el Adobe iniciaría la integración.
+
+Los clientes que hayan sido configurados de esa manera por Adobe son bienvenidos a adaptarse al modelo de autoservicio según su conveniencia. Hay varias razones para realizar esta transición:
+
+* Se ha aprovisionado un nuevo entorno (por ejemplo, un nuevo entorno de desarrollo o RDE).
+* Cambios en las credenciales o el punto de conexión de Splunk existentes.
+* El Adobe ha configurado el reenvío de registros antes de que los registros de CDN estuvieran disponibles y desea recibir los registros de CDN.
+* Una decisión consciente de adaptarse proactivamente al modelo de autoservicio para que su organización tenga el conocimiento incluso antes de que sea necesario un cambio con distinción de tiempo.
+
+Cuando esté listo para migrar, simplemente configure el archivo YAML como se describe en las secciones anteriores. Utilice la canalización de configuración de Cloud Manager para implementar en cada uno de los entornos donde se debe aplicar la configuración.
+
+Se recomienda, pero no es obligatorio, que se implemente una configuración en todos los entornos para que todos estén bajo control de autoservicio. Si no es así, es posible que olvide qué entornos se han configurado mediante Adobe en comparación con los configurados de forma automática.
+
+>[!NOTE]
+>
+>Cuando se implementa el reenvío de registros en un entorno previamente configurado por la compatibilidad con el Adobe, es posible que reciba registros duplicados durante un máximo de unas horas. Esto finalmente se resolverá automáticamente.
 
