@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2ea7700107d3f0b73828ba07d5cefdec126e37b8
+source-git-commit: 0b69e7ff3b35685ff9ac899eb19c3b58d7f37b41
 workflow-type: tm+mt
-source-wordcount: '5662'
+source-wordcount: '5675'
 ht-degree: 99%
 
 ---
@@ -104,9 +104,11 @@ ht-degree: 99%
          + [Notas de la versión de mantenimiento de 2023.4.0](/help/release-notes/maintenance/2023/2023-4-0.md)
          + [Notas de la versión de mantenimiento de 2023.2.0](/help/release-notes/maintenance/2023/2023-2-0.md)
          + [Notas de la versión de mantenimiento de 2023.1.0](/help/release-notes/maintenance/2023/2023-1-0.md)
+
    + Notas de la versión de Cloud Manager {#cloud-manager}
       + [Notas de la versión actual](/help/implementing/cloud-manager/release-notes/current.md)
       + 2024 {#2024}
+         + [Notas de la versión 2024.9.0](/help/implementing/cloud-manager/release-notes/2024/2024-9-0.md)
          + [Notas de la versión 2024.8.0](/help/implementing/cloud-manager/release-notes/2024/2024-8-0.md)
          + [Notas de la versión 2024.7.0](/help/implementing/cloud-manager/release-notes/2024/2024-7-0.md)
          + [Notas de la versión para 2024.6.0](/help/implementing/cloud-manager/release-notes/2024/2024-6-0.md)
@@ -926,7 +928,7 @@ ht-degree: 99%
       + [Guía de introducción del desarrollador](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
       + [Creación de bloques](/help/edge/wysiwyg-authoring/create-block.md)
       + [Modelado de contenido](/help/edge/wysiwyg-authoring/content-modeling.md)
-      + [Asignación de rutas](/help/edge/wysiwyg-authoring/path-mapping.md)
+      + [Asignación de ruta](/help/edge/wysiwyg-authoring/path-mapping.md)
       + [Datos tabulares y hojas de cálculo](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [Administración de datos de taxonomía](/help/edge/wysiwyg-authoring/taxonomy.md)
       + [Bloques basados en WYSIWYG y Doc](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
@@ -1087,8 +1089,9 @@ ht-degree: 99%
       + Administrar el código {#managing-code}
          + [Administrar versiones del proyecto de Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Administración de repositorios en Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-         + [Añadir repositorio de Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
-         + [Añadir repositorios privados](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+         + [Añadir un repositorio de Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [Añadir un repositorio privado](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+         + [Añadir un repositorio externo (usuario que lo adoptó por primera vez)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [Acceder a repositorios](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Compatibilidad con los submódulos de Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Uso de Git con Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)

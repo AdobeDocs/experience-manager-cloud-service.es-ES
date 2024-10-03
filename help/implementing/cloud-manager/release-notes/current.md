@@ -1,19 +1,18 @@
 ---
-title: Notas de la versión para Cloud Manager 2024.9.0 en Adobe Experience Manager as a Cloud Service
-description: Obtenga información sobre las notas de la versión para Cloud Manager 2024.9.0 en AEM as a Cloud Service.
+title: Notas de la versión para Cloud Manager 2024.10.0 en Adobe Experience Manager as a Cloud Service
+description: Obtenga información acerca de las notas de la versión para Cloud Manager 2024.10.0 en AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
-workflow-type: ht
-source-wordcount: '367'
-ht-degree: 100%
+source-git-commit: b90ace2250277005d8ac250c841104c93298a605
+workflow-type: tm+mt
+source-wordcount: '472'
+ht-degree: 15%
 
 ---
 
-# Notas de la versión para Cloud Manager 2024.9.0 en Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notas de la versión para Cloud Manager 2024.10.0 en Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Esta página documenta las notas de la versión 2024.9.0 para Cloud Manager en AEM as a Cloud Service.
+Esta página documenta las notas de la versión 2024.10.0 para Cloud Manager en AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,41 +20,64 @@ Esta página documenta las notas de la versión 2024.9.0 para Cloud Manager en A
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de Cloud Manager 2024.9.0 en AEM as a Cloud Service es el 5 de septiembre de 2024. La próxima versión está planificada para el 3 de octubre de 2024.
+La fecha de lanzamiento de Cloud Manager 2024.10.0 en AEM as a Cloud Service es el 3 de octubre de 2024.
+
+La próxima versión está planificada para el viernes, 14 de noviembre de 2024.
 
 ## Novedades {#what-is-new}
 
-* **Tablero de auditoría de experiencias:**
+* <!-- BOTH CS & AMS --> AEM La versión del tipo de archivo utilizada en Cloud Manager ahora se actualiza a la versión 26. Ver [https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases)
 
-  El [tablero mejorado de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-dashboard.md) de Adobe Cloud Manager, con tecnología Google Lighthouse, proporciona información sobre la calidad y el rendimiento de AEM Sites mediante la evaluación de los elementos vitales de la web, la optimización de los motores de búsqueda y las métricas de accesibilidad. Ayuda a los usuarios a identificar áreas de mejora al ofrecer recomendaciones procesables, lo que permite a los equipos mejorar la experiencia del usuario, los tiempos de carga de las páginas y el cumplimiento del sitio. Este tablero simplifica la monitorización de las métricas esenciales del sitio y garantiza que las aplicaciones de AEM cumplan con los estándares de alto rendimiento y accesibilidad.
+<!-- (CMGR-59817) -->
 
-* **Certificados de validación de dominio administrados y generados por Adobe:**
+* <!-- CS ONLY --> Al agregar o editar la infraestructura de red, los valores de los campos Dirección IP y Máscara de red se validan según las siguientes reglas:
 
-  Cloud Manager ahora le permite [generar y administrar certificados SSL DV (validados por dominio) de autoservicio de Adobe](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). Esto le proporciona la solución más rápida, sencilla y rentable para crear un sitio web seguro para su organización o empresa en línea. <!-- CMGR-52403 -->
+   * El espacio de direcciones no debe superponerse a las direcciones definidas en el espacio de direcciones de conexión.
+   * Las direcciones DNS deben pertenecer a la máscara de red definida en el espacio de direcciones de conexión o ser públicas.
 
-  >[!NOTE]
-  >
-  >Los clientes de [Content Hub](/help/assets/product-overview.md) tienen planificado recibir esta función por fases como parte de un despliegue gradual.
+  ![Agregar cuadro de diálogo de infraestructura de red](/help/implementing/cloud-manager/release-notes/assets/network-infrastructure-add.png)
 
-* **Compatibilidad con Edge Delivery Services en Cloud Manager:**
-
-  Si tiene una licencia de Edge Delivery Services como parte de AEM Sites, [ahora puede incorporar su sitio con Edge Delivery Services directamente a través de Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Esta función permite una experiencia de autoservicio guiada en el lanzamiento. AEM También unifica los flujos de trabajo esenciales, como la administración de nombres de dominio, los certificados SSL y las asignaciones de CDN en todas las propiedades de AEM, lo que garantiza la coherencia y la eficacia. <!-- CMGR-49859 -->
+* <!-- CS ONLY --> Se están realizando cambios en el formato de los registros de implementación del entorno para la indexación, la instalación de contenido mutable y la transformación de trabajos.
 
   >[!NOTE]
   >
-  >Los clientes de [Content Hub](/help/assets/product-overview.md) tienen planificado recibir esta función por fases como parte de un despliegue gradual.
+  >Este cambio está planificado para su despliegue gradual, con una fecha de finalización prevista en diciembre de 2024.
 
-* Los clientes que utilizan repositorios de GitHub ahora tienen la capacidad de crear y utilizar canalizaciones de configuración de nivel web. <!--( KEEP IN? SP: YES CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 ) -->
+  ![Implementar en la tarjeta de producción](/help/implementing/cloud-manager/release-notes/assets/deploy-to-production-card.png)
 
-<!--
-## Early adoption program {#early-adoption}
+  El formato del registro va a cambiar de una entrada simple como la que se muestra a continuación:
 
-For a chance to test some upcoming features, be a part of Adobe's early adoption program. -->
+  ![Archivo de registro que muestra entradas simples](/help/implementing/cloud-manager/release-notes/assets/log-file-simple-entry.png)
+
+  Para ver una entrada JSON en lo siguiente:
+
+  ![Archivo de registro que muestra las entradas json](/help/implementing/cloud-manager/release-notes/assets/log-file-json-entry.png)
 
 
-## Corrección de errores
+## Programa para primeros usuarios {#early-adoption}
 
-* La paginación de la vista de tabla de certificados SSL ahora funciona según lo esperado. <!-- (CMGR-60804 - [UI] Pagination doesn't work for ssl certificates) -->
-* Se promocionó una versión incorrecta del artefacto al usar el botón **Promocionar versión** desde una ejecución. <!-- ( KEEP IN? SP: YES CMGR-59519 and Slack https://cq-dev.slack.com/archives/C07LFPN2R08/p1725408253474129 ) -->
+Forme parte del programa de adopción anticipada de Cloud Manager y tenga la oportunidad de probar las próximas funciones.
 
-<!-- * Slack message says next release? SP: REMOVE (Leave in for now) SSL Certificates table in Cloud Manager now enables pagination in the user experience. ( https://jira.corp.adobe.com/browse/CMGR-61041 and Slack https://cq-dev.slack.com/archives/C07LFRE9QJU/p1725408553760009 ) --<>
+### Traiga su propio Git: ahora con soporte para GitLab y Bitbucket {#gitlab-bitbucket}
+
+<!-- BOTH CS & AMS -->
+
+La función **Traer tu propio Git** se ha ampliado para incluir compatibilidad con repositorios externos como GitLab y Bitbucket. Esta nueva compatibilidad se suma a la compatibilidad ya existente con repositorios de GitHub privados y empresariales. Al añadir estos nuevos repositorios, también puede vincularlos directamente a sus canalizaciones. Puede alojar estos repositorios en plataformas de nube públicas o dentro de su infraestructura o nube privada. Esta integración también elimina la necesidad de una sincronización constante del código con el repositorio de Adobe y proporciona la capacidad de validar las solicitudes de extracción antes de combinarlas en una rama principal.
+
+Consulte [Agregar repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+
+![Cuadro de diálogo Agregar repositorio](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
+
+>[!NOTE]
+>
+>Actualmente, las comprobaciones de calidad del código de las solicitudes de extracción listas para usar son exclusivas de los repositorios alojados en GitHub, pero se está trabajando en una actualización para ampliar esta funcionalidad a otros proveedores de Git.
+
+Si está interesado en probar esta nueva característica y compartir sus comentarios, envíe un mensaje de correo electrónico a [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID. Asegúrese de incluir qué plataforma Git desea utilizar y si se encuentra en una estructura de repositorio privada/pública o empresarial.
+
+
+<!-- ## Bug fixes
+
+
+
+
+## Known Issues {#known-issues} -->

@@ -1,20 +1,20 @@
 ---
-title: Configurar canalizaciones de producción
-description: Aprenda a configurar canalizaciones de producción para crear e implementar su código en entornos de producción.
+title: Agregar una canalización de producción
+description: Aprenda a añadir una canalización de producción para crear e implementar su código en entornos de producción.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 69%
+source-wordcount: '1376'
+ht-degree: 67%
 
 ---
 
 
-# Configuración de una canalización de producción {#configure-production-pipeline}
+# Agregar una canalización de producción {#configure-production-pipeline}
 
 Aprenda a configurar canalizaciones de producción para crear e implementar su código en entornos de producción. Una canalización de producción implementa el código primero en el entorno de ensayo y, tras la aprobación, implementa el mismo código en el entorno de producción.
 

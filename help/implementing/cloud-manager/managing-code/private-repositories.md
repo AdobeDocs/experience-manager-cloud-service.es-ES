@@ -4,14 +4,14 @@ description: Obtenga información sobre cómo configurar Cloud Manager para que 
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: eb2e1555f684a68807b0b3764cd1be03c2d439ab
+source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 36%
+source-wordcount: '928'
+ht-degree: 33%
 
 ---
 
-# Adición de repositorios privados en Cloud Manager {#private-repositories}
+# Adición de repositorios privados de GitHub en Cloud Manager {#private-repositories}
 
 Al configurar Cloud Manager para que se integre con sus repositorios privados de GitHub, puede validar su código directamente en GitHub mediante Cloud Manager. Esta configuración elimina la necesidad de sincronizar regularmente el código con el repositorio de Adobe.
 
@@ -33,12 +33,12 @@ In essence, a "Build your own GitHub" in Adobe Cloud Manager empowers teams to m
 
 ## Configuración {#configuration}
 
-La configuración de un repositorio privado en Cloud Manager consta de dos pasos:
+La configuración de un repositorio privado de GitHub en Cloud Manager consta de dos pasos:
 
-1. [Agregar un repositorio privado](#add-repo) a un programa seleccionado.
-1. A continuación, [valide la propiedad del repositorio privado](#validate-ownership).
+1. [Agregar un repositorio privado de GitHub](#add-repo) a un programa seleccionado.
+1. A continuación, [valide la propiedad del repositorio privado de GitHub](#validate-ownership).
 
-### Añadir un repositorio privado a un programa {#add-repo}
+### Añadir un repositorio privado de GitHub a un programa {#add-repo}
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
@@ -69,11 +69,13 @@ Ahora puede [validar la propiedad del repositorio privado](#validate-ownership).
 >
 >Para obtener más información sobre la administración de repositorios en Cloud Manager, consulte el documento [Repositorios de Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
 
-### Validar la propiedad del repositorio privado {#validate-ownership}
+
+
+### Validar la propiedad de un repositorio privado de GitHub {#validate-ownership}
 
 Cloud Manager ahora conoce su repositorio de GitHub, pero aún necesita acceso. Para otorgar acceso, debe instalar la aplicación de GitHub de Adobe y comprobar que es el propietario del repositorio especificado.
 
-**Para validar la propiedad del repositorio privado:**
+**Para validar la propiedad de un repositorio privado de GitHub:**
 
 1. Después de agregar su propio repositorio, siga los pasos restantes del cuadro de diálogo **Validación de propiedad del repositorio privado**.
 
@@ -104,11 +106,13 @@ La columna **Tipo** de la tabla de la página **Repositorios** identifica los re
 
 Si necesita volver al repositorio más tarde para completar la validación, en la página **Repositorios**, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en la fila que representa el repositorio de GitHub que acaba de agregar. En la lista desplegable, seleccione **Validación de propiedad**.
 
-## Uso de repositorios privados con Cloud Manager {#using}
+
+
+## Uso de repositorios privados de GitHub con Cloud Manager {#using}
 
 Una vez validado el repositorio de GitHub en Cloud Manager, la integración se completa. Puede utilizar el repositorio con Cloud Manager.
 
-**Para usar un repositorio privado con Cloud Manager:**
+**Para usar repositorios privados con Cloud Manager:**
 
 1. Al crear una solicitud de extracción, se inicia automáticamente una comprobación de GitHub.
 
@@ -130,22 +134,22 @@ Cuando se combina o cierra la solicitud de extracción, la canalización de cali
 >
 >Puede controlar las canalizaciones que se crean automáticamente para validar cada solicitud de extracción en un repositorio privado. Consulte el documento [Configuración de comprobación de GitHub para repositorios privados](github-check-config.md) para obtener más información.
 
+
+
 ## Asociación de repositorios privados con canalizaciones {#pipelines}
 
 Los repositorios privados validados se pueden asociar con [canalizaciones full-stack y front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
->[!NOTE]
->
->Las canalizaciones de configuración de nivel web no son compatibles con los repositorios privados.
+
 
 ## Restricciones {#limitations}
 
 Se aplican ciertas restricciones al usar repositorios privados con Cloud Manager.
 
-* No puede pausar la validación de la solicitud de extracción utilizando la comprobación de GitHub desde Cloud Manager.
-Si el repositorio de GitHub se valida en Cloud Manager, Cloud Manager siempre intenta validar las solicitudes de extracción creadas para ese repositorio.
-* Si la aplicación de Adobe de GitHub se elimina de su organización de GitHub, se elimina la función de validación de solicitudes de extracción de todos los repositorios.
 * Las canalizaciones de configuración de nivel web no son compatibles con los repositorios privados.
 * No se creará ni insertará ninguna etiqueta de Git al utilizar repositorios privados en canalizaciones de producción de pila completa.
+* Si la aplicación de Adobe de GitHub se elimina de su organización de GitHub, se elimina la función de validación de solicitudes de extracción de todos los repositorios.
 * Las canalizaciones que utilizan repositorios privados y el activador de compilación de compromiso no se inician automáticamente cuando se inserta un nuevo compromiso en la rama seleccionada.
 * La [funcionalidad de reutilización de artefactos](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) no se aplica a repositorios privados.
+* No puede pausar la validación de la solicitud de extracción utilizando la comprobación de GitHub desde Cloud Manager.
+Si el repositorio de GitHub se valida en Cloud Manager, Cloud Manager siempre intenta validar las solicitudes de extracción creadas para ese repositorio.

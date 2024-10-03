@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
+source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
 workflow-type: tm+mt
-source-wordcount: '1509'
-ht-degree: 18%
+source-wordcount: '1000'
+ht-degree: 17%
 
 ---
 
@@ -68,8 +68,8 @@ No incluya `http://`, `https://` ni espacios al introducir el dominio.
 
    | Si seleccionó el tipo de certificado | Descripción |
    | --- | ---  |
-   | Certificado administrado por Adobe | Complete los [pasos del certificado administrado por el Adobe](#adobe-managed-cert-steps) antes de continuar con el siguiente paso. |
-   | Certificado administrado por el cliente | Complete los [pasos del certificado administrado por el cliente](#customer-managed-cert-steps) antes de continuar con el siguiente paso. |
+   | Certificado administrado por Adobe | Complete los [pasos del certificado administrado por el Adobe](#adobe-managed-cert-steps) antes de continuar con el paso 9. |
+   | Certificado administrado por el cliente | Complete los [pasos del certificado administrado por el cliente](#customer-managed-cert-steps) antes de continuar con el paso 9. |
 
 1. Haga clic en **Verificar**.
 
@@ -130,100 +130,95 @@ Agregue los siguientes `A` registros a la configuración DNS de su dominio a tra
 
 * `A record for domain @ pointing to IP 151.101.195.10`
 
+>[!TIP]
+>
+>El *CNAME* o *Registro A* se puede establecer en el servidor DNS de administración para ahorrarle tiempo.
+
 
 ### Pasos del certificado administrado por el cliente {#customer-managed-cert-steps}
 
-Si seleccionó el tipo de certificado *Certificado administrado por el cliente*, complete los siguientes pasos en el cuadro de diálogo **Verificar dominio**.
+Si seleccionó el tipo de certificado *Certificado administrado por el cliente*, complete los siguientes pasos.
 
-![Pasos de certificado administrado por el cliente](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)
+1. En el cuadro de diálogo **Verificar dominio**, cargue un nuevo certificado EV/OV que cubra el dominio seleccionado.
 
-Para comprobar el dominio en uso, es necesario agregar y comprobar un registro TXT.
+   ![Verificar el dominio de un certificado EV/OV administrado por el cliente](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
 
-Un registro de texto (también conocido como registro TXT) es un tipo de registro de recursos del Sistema de nombres de dominio (DNS). Permite asociar texto arbitrario con un nombre de host. Este texto puede incluir detalles legibles en lenguaje natural, como información del servidor o de la red.
+1. Haga clic en **OK**.
 
-Cloud Manager utiliza un registro TXT específico para autorizar a un dominio a alojarse en un servicio CDN. Cree un registro TXT DNS en la zona que autorice a Cloud Manager a implementar el servicio CDN con el dominio personalizado y asociarlo al servicio back-end. Esta asociación está totalmente bajo su control y autoriza a Cloud Manager a servir contenido desde el servicio a un dominio. Esta autorización podrá concederse y retirarse. El registro TXT es específico del dominio y del entorno de Cloud Manager.
+   Después de cargar un certificado EV/OV válido, el estado del dominio se marca como **Verificado** en la tabla **Configuración del dominio**.
 
-#### Requisitos  {#customer-managed-cert-requirements}
+   ![Tabla de configuración de dominio que muestra un estado verificado.](/help/implementing/cloud-manager/assets/domain-settings-verified.png)
 
-Complete estos requisitos antes de agregar un registro TXT.
+<!--
+![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)
 
-* Identifique el host de dominio o el registrador si aún no lo conoce.
-* Puede editar los registros DNS del dominio de su organización o ponerse en contacto con la persona adecuada que pueda hacerlo.
-* En primer lugar, agregue un nombre de dominio personalizado como se describió anteriormente en este artículo.
+To verify the domain in use, you are required to add and verify a TXT record.
 
-#### Agregar un registro TXT para la verificación {#customer-managed-cert-verification}
+A text record (also known as a TXT record) is a type of resource record in the Domain Name System (DNS). It lets you associate arbitrary text with a hostname. This text could include human-readable details like server or network information.
 
-1. En el cuadro de diálogo **Verificar dominio**, Cloud Manager muestra el nombre y el valor TXT que se utilizarán para la verificación. Copie este valor.
+Cloud Manager uses a specific TXT record to authorize a domain to be hosted in a CDN service. Create a DNS TXT record in the zone that authorizes Cloud Manager to deploy the CDN service with the custom domain and associate it with the backend service. This association is entirely under your control and authorizes Cloud Manager to serve content from the service to a domain. This authorization may be granted and withdrawn. The TXT record is specific to the domain and the Cloud Manager environment.
 
-1. Inicie sesión en el proveedor de servicios DNS y busque la sección Registros DNS.
+#### Requirements {#customer-managed-cert-requirements}
 
-1. Agregue `aemverification.[yourdomainname]` como **Nombre** del valor y agregue el valor TXT exactamente como aparece en el campo **Nombre de dominio**.
+Fulfill these requirements before adding a TXT record.
 
-   **ejemplos de registro TXT**
+* Identify your domain host or registrar if you do not know it already.
+* Be able to edit the DNS records for your organization's domain, or contact the appropriate person who can.
+* First, add a custom domain name as described earlier in this article.
 
-   | Dominio | Nombre | Valor TXT |
+#### Add a TXT record for verification {#customer-managed-cert-verification}
+
+1. In the **Verify domain** dialog box, Cloud Manager displays the name and TXT value to use for verification. Copy this value.
+
+1. Log in to your DNS service provider and find the DNS records section. 
+
+1. Add `aemverification.[yourdomainname]` as the **Name** of the value and add the TXT value exactly as it appears in the **Domain Name** field.
+
+   **TXT record examples**
+
+   | Domain | Name | TXT Value |
    | --- | --- | --- |
-   | `example.com` | `_aemverification.example.com` | Copie todo el valor que se muestra en la interfaz de usuario de Cloud Manager. Este valor es específico del dominio y del entorno. Por ejemplo:<br>`adobe-aem-verification=example.com/[program]/[env]/..*` |
-   | `www.example.com` | `_aemverification.www.example.com` | Copie todo el valor que se muestra en la interfaz de usuario de Cloud Manager. Este valor es específico del dominio y del entorno. Por ejemplo:<br>`adobe-aem-verification=www.example.com/[program]/[env]/..*` |
+   | `example.com` | `_aemverification.example.com` | Copy the entire value displayed in the Cloud Manager UI. This value is specific to the domain and the environment. For example:<br>`adobe-aem-verification=example.com/[program]/[env]/..*` |
+   | `www.example.com` | `_aemverification.www.example.com` | Copy the entire value displayed in the Cloud Manager UI. This value is specific to the domain and the environment. For example:<br>`adobe-aem-verification=www.example.com/[program]/[env]/..*` |
 
-1. Guarde el registro TXT en el host de dominio.
+1. Save the TXT record to your domain host.
 
-#### Verificar registro TXT {#customer-managed-cert-verify}
+#### Verify TXT record {#customer-managed-cert-verify}
 
-Cuando haya terminado, puede comprobar el resultado ejecutando el siguiente comando.
+When you are done, you can verify the result by running the following command.
 
 ```shell
 dig _aemverification.[yourdomainname] -t txt
 ```
 
-El resultado esperado debería mostrar el valor TXT proporcionado en la ficha **Verificación** del cuadro de diálogo **Agregar nombre de dominio** de la interfaz de usuario de Cloud Manager.
+The expected result should display the TXT value provided on the **Verification** tab of the **Add Domain Name** dialog of the Cloud Manager UI.
 
-Por ejemplo, si el dominio es `example.com`, ejecute:
+For example, if your domain is `example.com`, then run:
 
 ```shell
 dig TXT _aemverification.example.com -t txt
 ```
 
+
 >[!TIP]
 >
->Hay varias [herramientas de búsqueda DNS](https://www.ultratools.com/tools/dnsLookup) disponibles. Google DoH se puede utilizar para buscar entradas de registro TXT e identificar si el registro TXT falta o es erróneo.
+>There are several [DNS lookup tools](https://www.ultratools.com/tools/dnsLookup) available. Google DoH can be used to look up TXT record entries and identify if the TXT record is missing or erroneous.
+
+-->
 
 >[!NOTE]
 >
 >La verificación del DNS puede tardar unas horas en procesarse debido a los retrasos de propagación del DNS.
 >
->Cloud Manager comprueba la propiedad y actualiza el estado, que se puede ver en la tabla Configuración de dominio. Consulte [Comprobar el estado del nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obtener más información.
+>Cloud Manager comprueba la propiedad y actualiza el estado, que se puede ver en la tabla **Configuración de dominio**. Consulte [Comprobar el estado del nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obtener más información.
 
 <!--
 ## Next Steps {#next-steps}
 
 Now that you created your TXT entry, you can verify your domain name status. Proceed to the document [Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) to continue setting up your custom domain name. -->
 
->[!TIP]
->
->La entrada TXT y el CNAME o un registro se pueden configurar simultáneamente en el servidor DNS de control, lo que ahorra tiempo.
+
+><!-- The TXT entry and the CNAME or A Record can be set simultaneously on the governing DNS server, thus saving time. -->
 >
 ><!-- To do this, review the entire process of setting up a custom domain name as detailed in the document [Introduction to custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md) taking special note of the document [help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) and update your DNS settings appropriately. -->
 
-
-## Agregar un nombre de dominio personalizado desde la página Entornos {#adding-cdn-environments}
-
-<!-- I DON'T SEE THIS ABILITY ANYMORE IN THE UI -->
-
-Los pasos para agregar un nombre de dominio personalizado desde la página **Entornos** son los mismos que cuando [agrega un nombre de dominio personalizado desde la página Configuración de dominio](#adding-cdn-settings), pero el punto de entrada difiere. Siga estos pasos para agregar un nombre de dominio personalizado desde la página **Entornos**.
-
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
-
-1. Vaya a la página de detalles de **Entornos** para el entorno de interés.
-
-   ![Introducción del nombre de dominio en la página Detalles del entorno](/help/implementing/cloud-manager/assets/cdn/cdn-create4.png)
-
-1. Utilice la variable **Nombres de dominio** para enviar el nombre de dominio personalizado.
-
-   1. Introduzca el nombre de dominio personalizado.
-   1. Seleccione el certificado SSL asociado a este nombre en la lista desplegable.
-   1. Haga clic en ![Agregar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Agregar**.
-
-   ![Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
-
-1. El cuadro de diálogo **Agregar nombre de dominio** se abre a la ficha **Nombre de dominio**. Continúe como lo haría para [agregar un nombre de dominio personalizado desde la página Configuración de dominio](#adding-cdn-settings).

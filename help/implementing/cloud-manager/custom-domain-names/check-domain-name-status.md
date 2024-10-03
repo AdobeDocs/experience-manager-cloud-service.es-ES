@@ -1,14 +1,14 @@
 ---
-title: Comprobar el estado del nombre de dominio
+title: Comprobar estado del nombre de dominio
 description: Obtenga información sobre cómo comprobar que Cloud Manager ha confirmado correctamente su nombre de dominio personalizado.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3ff7b76f7892269f6ca001ff2c079bc693c06d93
+source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
 workflow-type: tm+mt
-source-wordcount: '822'
-ht-degree: 28%
+source-wordcount: '832'
+ht-degree: 24%
 
 ---
 
@@ -21,7 +21,7 @@ Obtenga información sobre cómo comprobar que Cloud Manager ha confirmado corre
 
 Complete estos requisitos antes de comprobar el estado de su nombre de dominio en Cloud Manager.
 
-* Primero agregue un registro TXT para su dominio personalizado como se describe en el documento [Agregue un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+* Primero agregue un certificado EV/OV para su dominio personalizado como se describe en el documento [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
 ## Comprobar el estado del nombre de dominio personalizado {#how-to}
 
@@ -45,13 +45,13 @@ Se muestra el detalle del estado. Su dominio personalizado está listo para usar
 
 ## Estados de verificación {#statuses}
 
-Cloud Manager comprueba la propiedad del dominio mediante el [valor TXT](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) y muestra uno de los siguientes mensajes de estado.
+Cloud Manager comprueba la propiedad del dominio a través del certificado administrado por el cliente. Cuando termina, muestra uno de los siguientes mensajes de estado:
 
 | Estado | Descripción |
 | --- | --- |
-| Error de verificación de dominio | Falta el valor TXT o se detecta con errores.<br> Siga las instrucciones proporcionadas en el mensaje de estado para resolver el problema. Cuando esté listo, debe seleccionar el icono **Verificar de nuevo** junto al estado. |
+| Error de verificación de dominio | Falta el certificado EV/OV administrado por el cliente o se detecta con errores.<br> Siga las instrucciones proporcionadas en el mensaje de estado para resolver el problema. Cuando esté listo, debe seleccionar el icono **Verificar de nuevo** junto al estado. |
 | Verificación del dominio en curso | La verificación está en curso.<br>Este estado suele verse después de seleccionar el icono **Verificar de nuevo** junto al estado. La verificación del DNS puede tardar unas horas en procesarse debido a los retrasos de propagación del DNS. |
-| Verificado: error de implementación | La verificación TXT se realizó correctamente, pero la implementación de CDN falló.<br>En tales casos, comuníquese con el representante del Adobe. |
+| Verificado: error de implementación | La verificación del certificado EV/OV se realizó correctamente, pero la implementación de CDN falló.<br>En tales casos, comuníquese con el representante del Adobe. |
 | Dominio verificado e implementado | Este estado indica que el nombre de dominio personalizado está listo para utilizarse.<br>En este momento, su nombre de dominio personalizado está listo para la prueba y se dirigirá al nombre de dominio de Cloud Manager. Consulte [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) para obtener más información. |
 | Eliminando | La eliminación de un nombre de dominio personalizado está en curso. |
 | Error de eliminación | Error al eliminar un nombre de dominio personalizado y se debe volver a intentar.<br>Vea [Administrar nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) para obtener más información. |
@@ -63,7 +63,7 @@ A continuación se indican algunos errores comunes de verificación de nombres d
 
 ### Error de dominio no instalado {#domain-not-installed}
 
-Este error puede ocurrir durante la validación del dominio del registro TXT, incluso después de comprobar que el registro se haya actualizado correctamente.
+Este error puede producirse durante la validación del dominio del certificado EV/OV incluso después de comprobar que el certificado se ha actualizado correctamente.
 
 #### Causa de error {#cause}
 

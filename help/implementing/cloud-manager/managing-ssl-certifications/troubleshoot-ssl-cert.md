@@ -1,13 +1,13 @@
 ---
-title: Solucionar errores de certificados SSL
+title: Solución de problemas de errores de certificados SSL
 description: Obtenga información sobre cómo solucionar errores de certificados SSL identificando causas comunes para que pueda mantener conexiones seguras.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
+source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 53%
+source-wordcount: '377'
+ht-degree: 48%
 
 ---
 
@@ -15,6 +15,18 @@ ht-degree: 53%
 # Solucionar errores de certificados SSL {#certificate-errors}
 
 Pueden surgir ciertos errores si un certificado no está instalado correctamente o no cumple los requisitos de Cloud Manager.
+
++++**Certificado no válido**
+
+Este error se produce porque el cliente agregó una clave privada cifrada y utilizó una clave privada con formato DER.
+
++++
+
++++**La clave privada debe tener el formato PKCS 8**
+
+Este error se produce porque el cliente agregó una clave privada cifrada y utilizó una clave privada con formato DER.
+
++++
 
 +++**Orden de certificado correcto**
 

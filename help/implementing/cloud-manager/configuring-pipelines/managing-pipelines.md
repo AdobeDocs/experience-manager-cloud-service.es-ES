@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
 workflow-type: tm+mt
-source-wordcount: '1110'
-ht-degree: 70%
+source-wordcount: '1111'
+ht-degree: 71%
 
 ---
 
@@ -92,7 +92,7 @@ Para ver los detalles de la ejecución, vuelva a hacer clic en el botón de los 
 
 Según el tipo de canalización, puede cancelar la ejecución si hace clic de nuevo en el botón de los tres puntos y selecciona **Cancelar**.
 
-## Editar canalizaciones {#editing-pipelines}
+## Edición de una canalización {#editing-pipelines}
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 

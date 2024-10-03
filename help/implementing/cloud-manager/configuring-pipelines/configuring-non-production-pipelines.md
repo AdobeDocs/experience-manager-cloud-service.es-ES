@@ -1,26 +1,26 @@
 ---
-title: Configurar canalizaciones que no sean de producción
-description: Obtenga información sobre cómo configurar canalizaciones que no sean de producción para probar la calidad del código antes de implementarlas en entornos de producción.
+title: Agregar una canalización que no sea de producción
+description: Obtenga información sobre cómo añadir una canalización que no sea de producción para probar la calidad del código antes de implementarla en entornos de producción.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 75%
+source-wordcount: '1405'
+ht-degree: 73%
 
 ---
 
 
-# Configurar canalizaciones que no sean de producción {#configuring-non-production-pipelines}
+# Adición de una canalización que no es de producción {#configuring-non-production-pipelines}
 
 Obtenga información sobre cómo configurar canalizaciones que no sean de producción para probar la calidad del código antes de implementarlas en entornos de producción.
 
 Un usuario debe tener la función **[Administrador de implementación](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** para configurar canalizaciones que no sean de producción.
 
-## Canalizaciones que no son de producción {#non-production-pipelines}
+## Canalizaciones que no sean de producción {#non-production-pipelines}
 
 Además de [canalizaciones de producción](#configuring-production-pipelines.md) que se implementan en entornos de ensayo y producción, también puede configurar canalizaciones que no sean de producción para validar el código.
 
@@ -33,7 +33,7 @@ Existen dos tipos de canalizaciones que no son de producción:
 >
 >Puede [editar la configuración de canalización](managing-pipelines.md) después de la configuración inicial.
 
-## Adición de una nueva canalización que no sea de producción {#adding-non-production-pipeline}
+## Agregar una nueva canalización que no sea de producción {#adding-non-production-pipeline}
 
 Una vez que haya configurado el programa y tenga al menos un entorno utilizando la interfaz de usuario de Cloud Manager, estará listo para agregar una canalización que no sea de producción siguiendo estos pasos.
 
