@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo configurar el tráfico de CDN decl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: c31441baa6952d92be4446f9035591b784091324
+source-git-commit: 7f7ecfcca77cc3a38f3a4517bf41c48565b9faea
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1339'
+ht-degree: 1%
 
 ---
 
@@ -91,7 +91,14 @@ data:
           - type: set
             reqHeader: x-some-header
             value: some value
-            
+      - name: set-header-with-reqproperty-rule
+        when:
+          reqProperty: path
+          like: /set-header
+        actions:
+          - type: set
+            reqHeader: x-some-header
+            value: {reqProperty: path}           
       - name: unset-header-rule
         when:
           reqProperty: path
@@ -146,9 +153,9 @@ En la tabla siguiente se explican las acciones disponibles.
 
 | Nombre | Propiedades | Significado |
 |-----------|--------------------------|-------------|
-| **conjunto** | (reqProperty o reqHeader o queryParam o reqCookie), valor | Establece un parámetro de solicitud especificado (solo se admite la propiedad &quot;path&quot;), un encabezado de solicitud, un parámetro de consulta o una cookie, en un valor determinado. |
+| **conjunto** | (reqProperty o reqHeader o queryParam o reqCookie), valor | Establece un parámetro de solicitud especificado (solo se admite la propiedad &quot;path&quot;), un encabezado de solicitud, un parámetro de consulta o una cookie, en un valor determinado, que puede ser un literal de cadena o un parámetro de solicitud. |
 |     | var, valor | Establece una propiedad de solicitud especificada en un valor determinado. |
-| **anular** | reqProperty | Quita un parámetro de solicitud especificado (solo se admite la propiedad &quot;path&quot;), un encabezado de solicitud, un parámetro de consulta o una cookie, de un valor determinado. |
+| **anular** | reqProperty | Quita un parámetro de solicitud especificado (solo se admite la propiedad &quot;path&quot;), un encabezado de solicitud, un parámetro de consulta o una cookie, de un valor determinado, que podría ser un literal de cadena o un parámetro de solicitud. |
 |         | var | Quita una variable especificada. |
 |         | queryParamMatch | Quita todos los parámetros de consulta que coinciden con una expresión regular especificada. |
 | **transformar** | op:replace, (reqProperty o reqHeader o queryParam o reqCookie), match, replace | Reemplaza parte del parámetro de solicitud (solo se admite la propiedad &quot;path&quot;) o el encabezado de solicitud, el parámetro de consulta o la cookie por un nuevo valor. |
