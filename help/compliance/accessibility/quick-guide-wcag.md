@@ -4,10 +4,10 @@ description: Guía rápida de las Directrices de accesibilidad del contenido web
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
 feature: Compliance
 role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: bffc743b2d28c4c4815a17df75c04c8bfdc90a1e
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 97%
+source-wordcount: '1749'
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,9 @@ Las [Directrices de accesibilidad al contenido web (WCAG) versión 2.1](https://
 
 >[!NOTE]
 >
->Actualmente se está desarrollando una [versión actualizada de las directrices, WCAG 2.2,](https://www.w3.org/TR/WCAG22/) pero no se examinará en este momento.
+>Dado que estos documentos se escribieron en la [versión actualizada de las directrices, WCAG 2.2](https://www.w3.org/TR/WCAG/) se publicó en octubre de 2023.
+>
+>Ver [Comparación con WCAG 2.1](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) y [Nuevas características de WCAG 2.2](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
 
 WCAG 2.1 consiste en un conjunto de directrices tecnológicas independientes y criterios de éxito para ayudar a crear contenido web accesible para, y utilizable por, personas con discapacidades. Brindan asesoramiento a autores, diseñadores y desarrolladores de contenido web para garantizar que los recursos que producen sean lo suficientemente accesibles para la mayor cantidad de personas, independientemente de cualquier discapacidad que tengan; por ejemplo, problemas visuales o auditivos, dificultades de aprendizaje, limitaciones relacionadas con la edad, entre otras.
 
