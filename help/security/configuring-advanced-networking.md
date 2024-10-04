@@ -4,10 +4,10 @@ description: Aprenda a configurar funciones de redes avanzadas como una VPN o un
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 09a1d6065c42406f1004eb1bdd7dbf902edb279f
+source-git-commit: fd6fb14bf3acdd30efb984e1666ed91a2327d810
 workflow-type: tm+mt
-source-wordcount: '5685'
-ht-degree: 100%
+source-wordcount: '5675'
+ht-degree: 99%
 
 ---
 
@@ -216,7 +216,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 Una dirección IP dedicada puede mejorar la seguridad al integrarse con proveedores de SaaS (como un proveedor CRM) u otras integraciones fuera de AEM as a Cloud Service que ofrecen una lista de permitidos de direcciones IP. Al añadir la dirección IP dedicada a la lista de permitidos, se garantiza que solo el tráfico de AEM Cloud Service pueda fluir al servicio externo. Esto se suma al tráfico de cualquier otra IP permitida.
 
-La misma IP dedicada se aplica a todos los programas en su organización de Adobe y a todos los entornos de cada uno de sus programas. Se aplica tanto a los servicios de creación como de publicación.
+La misma IP dedicada se aplica a todos los entornos de un programa y se aplica tanto a Author como a los servicios de Publish.
 
 Sin la función de dirección IP dedicada y habilitada, el tráfico proveniente de AEM as a Cloud Service fluye a través de un conjunto de IP compartidas con otros clientes de AEM as a Cloud Service.
 
