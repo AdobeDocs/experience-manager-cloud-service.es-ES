@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo importar recursos de forma masiva 
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 816bf0f93dd67f193f4e8a7c9bc4a7df29cb6cf5
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 93%
+source-wordcount: '1881'
+ht-degree: 87%
 
 ---
 
@@ -125,11 +125,23 @@ Siga estos pasos para crear una configuración de importación masiva en [!DNL E
    >* Si selecciona **Dropbox completo** al crear la aplicación Dropbox, y la carpeta que contiene los recursos existe en `https://www.dropbox.com/home/bulkimport-assets`, especifique `bulkimport-assets` en el campo **[!UICONTROL Carpeta de origen]**.
    >* Si selecciona **Carpeta de aplicación** al crear la aplicación Dropbox, y la carpeta que contiene los recursos existe en `https://www.dropbox.com/home/Apps/BulkImportAppFolderScope/bulkimport-assets`, especifique `bulkimport-assets` en el campo **[!UICONTROL Carpeta de origen]**, donde `BulkImportAppFolderScope` hace referencia al nombre de la aplicación. `Apps` se añade automáticamente después de `home` en este caso.
 
+   >[!NOTE]
+   >
+   >Si usa OneDrive como fuente de datos, especifique la ruta de la carpeta de origen en función de las siguientes reglas:
+   >* Especifique solo el nombre de la carpeta raíz, sin el dominio. Si la ruta de acceso de la dirección URL completa de la carpeta es `https://my.sharepoint.com/my?id=/personal/user/Documents/Importfolder/`, especifique `/Importfolder/` en el campo **[!UICONTROL Carpeta de Source]**.
+   >* Si el nombre de la carpeta contiene varias palabras separadas por espacios, especifique el nombre con los espacios en la configuración Importación masiva.
+   >* La carpeta de origen debe estar ubicada en la raíz del directorio. No se admiten rutas de carpeta.
+
 1. (Opcional) Seleccione la opción **[!UICONTROL Eliminar archivo de origen tras importar]** para eliminar los archivos originales del almacén de datos de origen después de importar los archivos en Experience Manager Assets.
 1. Seleccione el **[!UICONTROL Modo de importación]**. Seleccione **[!UICONTROL Omitir]**, **[!UICONTROL Reemplazar]** o **[!UICONTROL Crear versión]**. El modo de omisión es el predeterminado y, en este modo, el ingestor omite la importación de un recurso si ya existe.
    ![Importar detalles de origen](/help/assets/assets/bulk-import-source-details.png)
 
 1. (Opcional) Especifique el archivo de metadatos que desea importar, proporcionado en formato CSV, en el campo **[!UICONTROL Archivo de metadatos]**. El archivo fuente de metadatos debe estar en la carpeta de origen. Haga clic en **[!UICONTROL Siguiente]** para navegar a **[!UICONTROL Ubicación y filtros]**.
+
+   >[!NOTE]
+   >
+   >Según las reglas de seguridad de su organización, es posible que necesite el consentimiento del administrador para que esta aplicación se conecte a la herramienta Importación masiva. Si es necesario, el administrador debe proporcionar el consentimiento para poder guardar la configuración de importación masiva.
+
 1. Especifique una ruta para definir una ubicación en DAM en la que se importarán los recursos mediante **[!UICONTROL Carpeta de destino de recursos]**. Por ejemplo, `/content/dam/imported_assets`.
 1. (Opcional) En la sección **[!UICONTROL Elegir filtros]**, proporcione el tamaño mínimo de archivo de los recursos en MB para incluirlos en el proceso de ingesta en el campo **[!UICONTROL Filtrar por tamaño mínimo]**.
 1. (Opcional) Proporcione el tamaño máximo de archivo de los recursos en MB para incluirlos en el proceso de ingesta en **[!UICONTROL Filtrar por tamaño máximo]**.
