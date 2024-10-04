@@ -5,10 +5,10 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5dc3d571c553f2972295172c7a6d0249be3285b8
+source-git-commit: d4b579e817831945f46b06d9c271c8e671958bed
 workflow-type: tm+mt
-source-wordcount: '1950'
-ht-degree: 6%
+source-wordcount: '1534'
+ht-degree: 8%
 
 ---
 
@@ -100,7 +100,6 @@ Puede acceder a los resultados completos de la auditoría haciendo clic en la pe
 >* Para obtener más información sobre cómo funciona la auditoría, consulte [Detalles de evaluación de auditoría de experiencias](#details).
 >* Para saber cómo ejecutar una auditoría de experiencias bajo demanda, consulte [Informes de auditoría bajo demanda](#on-demand).
 >* Si tiene problemas con la auditoría, consulte [Problemas de contadores de auditoría de experiencias](#issues).
->* Para obtener sugerencias generales de rendimiento, consulte [Sugerencias generales de rendimiento](#performance-tips).
 
 ### Ver las páginas más lentas {#view-slowest-pages}
 
@@ -155,38 +154,11 @@ Si hace clic en el gráfico en un momento dado, se abre una ventana emergente co
 
 #### Resultados del análisis de auditoría de experiencias {#scan-results}
 
-La sección **Resultados del análisis de auditoría de experiencias** proporciona recomendaciones sobre cómo mejorar su puntuación y detalles de todas las páginas digitalizadas. Se divide en dos secciones:
-
-* **[Recommendations](#recommendations)**
-* **[Páginas digitalizadas](#scanned-pages)**
-
-##### Recomendaciones {#recommendations}
-
-La sección **Recommendations** muestra un conjunto agregado de datos. De manera predeterminada, se muestran las recomendaciones de **rendimiento**. Utilice la lista desplegable situada junto al encabezado **Recommendations** para cambiar a otra categoría.
-
-![Recommendations](assets/experience-audit-recommendations.png)
-
-Haga clic en cualquier recomendación para mostrar los detalles al respecto.
-
-![Detalles de la recomendación](assets/experience-audit-recommendations-details.png)
-
-Cuando están disponibles, los detalles ampliados de la recomendación también contienen el porcentaje de impacto de las recomendaciones, para ayudarle a centrarse en los cambios más impactantes. AEM Además de esto, las recomendaciones ampliadas pueden incluir vínculos y sugerencias relevantes de documentación de que pueden guiarle a través de la implementación de las correcciones sugeridas.
-
-Haga clic en el vínculo **ver páginas** de la vista de detalles para ver las páginas a las que se aplica la recomendación.
-
-![Páginas para los detalles de la recomendación](assets/experience-audit-details-pages.png)
-
-##### Páginas analizadas {#scanned-pages}
-
-La sección **Páginas digitalizadas** proporciona detalles de puntuaciones en todas las páginas digitalizadas. Use los botones **Anterior** y **Siguiente** para hojear los resultados y elegir cuántos elementos se deben paginar en la pantalla.
+La sección **Resultados del análisis de auditoría de experiencias** proporciona detalles de las puntuaciones de todas las páginas digitalizadas. Use los botones **Anterior** y **Siguiente** para hojear los resultados y elegir cuántos elementos se deben paginar en la pantalla.
 
 ![Páginas digitalizadas](assets/experience-audit-scanned-pages.png)
 
-Al hacer clic en el vínculo de una página en particular, se actualiza el filtro **Seleccionar** de la sección [**Puntuaciones de página: tendencia**](#trend) y se muestra la pestaña **Puntuaciones y recomendaciones** de la página seleccionada.
-
-![Resultados de la página](assets/experience-audit-page-results.png)
-
-La ficha **Informes sin procesar** le proporciona puntuaciones para cada auditoría de la página. Haga clic en la fecha del informe en la columna **Informe Lighthouse** para recuperar un archivo JSON de los datos sin procesar.
+Haga clic en el vínculo de una página concreta para actualizar el filtro **Select** de [**Puntuaciones de página — tendencia** sección](#trend) y mostrar la ficha **Informes sin procesar** que le proporciona puntuaciones para cada auditoría de la página. Haga clic en la fecha del informe en la columna **Informe Lighthouse** para recuperar un archivo JSON de los datos sin procesar.
 
 ![Informe sin procesar](assets/experience-audit-raw-reports.png)
 
@@ -239,20 +211,7 @@ Algunas razones por las que las páginas podrían no estar disponibles son las s
 
 >[!TIP]
 >
->[Acceder a los informes sin procesar](#scanned-pages) de una página puede proporcionar detalles sobre por qué no se pudo auditar la página.
-
-## Sugerencias generales de rendimiento {#performance-tips}
-
-Dos de los problemas de impacto más comunes y fáciles de solucionar están relacionados con los Cambios acumulativos de diseño (CLS) y la Pintura de contenido más grande (LCP).
-
-Puede mejorar estas áreas haciendo lo siguiente:
-
-* No es necesario cargar de forma diferida las imágenes encima del pliegue (el contenido que es visible en el explorador sin necesidad de desplazarse hacia abajo).
-* Priorizar correctamente cómo se cargan los recursos (por ejemplo, cargando asincrónicamente las imágenes debajo del pliegue después de cargar el documento).
-* Precarga de archivos JavaScript y CSS que se utilizan para representar contenido sobre el pliegue (si es necesario).
-* Reservar el espacio vertical asignando una relación de aspecto a los contenedores que se cargan lentamente o se procesan más adelante.
-* Convertir imágenes al formato WebP para reducir su tamaño.
-* Usar `<picture>` y la imagen `srcset` con diferentes tamaños de imagen para diferentes tamaños de ventanilla (y asegurarse de que funciona el cambio de tamaño).
+>[Acceder a los informes sin procesar](#scan-results) de una página puede proporcionar detalles sobre por qué no se pudo auditar la página.
 
 ## Detalles de evaluación de auditoría de experiencias {#details}
 
@@ -261,7 +220,3 @@ Los siguientes detalles proporcionan información adicional sobre cómo la audit
 * La auditoría explora el dominio de origen (`.com`) desde las [rutas configuradas de la página Auditoría de experiencias](#configuration) del editor para simular experiencias reales del usuario, lo que le ayuda a tomar mejores decisiones sobre la administración y optimización de sus sitios web.
 * En las canalizaciones full-stack de producción, se analiza el entorno de ensayo. Para garantizar que la auditoría proporcione los detalles relevantes durante la auditoría, el contenido del entorno de ensayo debe ser lo más parecido posible al entorno de producción.
 * Las páginas mostradas en el menú desplegable **Seleccionar** de la sección [**Puntuaciones de página — tendencia**](#trend) son todas páginas conocidas que la auditoría de experiencias ha analizado anteriormente.
-* [Una recomendación](#recommendations) puede tener una ganancia potencial y una diferencia con respecto al análisis anterior.
-* La auditoría de experiencias calcula las mejoras potenciales procesando el informe sin procesar de cada página. Correlaciona bytes o milisegundos desperdiciados con perspectivas, asignando un impacto ponderado en la puntuación de rendimiento. La auditoría proporciona esta información, y las páginas afectadas, para ayudar a decidir qué recomendación seguir.
-Consulte la sección [Consejos generales de rendimiento](#performance-tips) para obtener más información.
-* Una canalización front-end puede implementarse en un entorno existente, y varias canalizaciones front-end pueden segmentarse en el mismo entorno. Dado que los resultados del análisis se acumulan en el nivel de entorno, las puntuaciones, tendencias y recomendaciones son coherentes. Estos resultados se muestran en el entorno seleccionado, independientemente de la canalización que haya activado el análisis.
