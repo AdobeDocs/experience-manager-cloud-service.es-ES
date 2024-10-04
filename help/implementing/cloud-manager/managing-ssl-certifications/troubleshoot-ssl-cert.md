@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo solucionar errores de certificados
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
+source-git-commit: b387fee62500094d712f5e1f6025233c9397f8ec
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 48%
@@ -18,13 +18,13 @@ Pueden surgir ciertos errores si un certificado no está instalado correctamente
 
 +++**Certificado no válido**
 
-Este error se produce porque el cliente agregó una clave privada cifrada y utilizó una clave privada con formato DER.
+Este error se produce porque el cliente utilizó una clave privada cifrada y proporcionó la clave en formato DER.
 
 +++
 
 +++**La clave privada debe tener el formato PKCS 8**
 
-Este error se produce porque el cliente agregó una clave privada cifrada y utilizó una clave privada con formato DER.
+Este error se produce porque el cliente utilizó una clave privada cifrada y proporcionó la clave en formato DER.
 
 +++
 

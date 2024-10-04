@@ -3,10 +3,10 @@ title: Notas de la versión para Cloud Manager 2024.10.0 en Adobe Experience Man
 description: Obtenga información acerca de las notas de la versión para Cloud Manager 2024.10.0 en AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: b90ace2250277005d8ac250c841104c93298a605
+source-git-commit: aa8d4c8c69a96054492b886893414c3e82b2f4ad
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 15%
+source-wordcount: '569'
+ht-degree: 13%
 
 ---
 
@@ -29,6 +29,16 @@ La próxima versión está planificada para el viernes, 14 de noviembre de 2024.
 * <!-- BOTH CS & AMS --> AEM La versión del tipo de archivo utilizada en Cloud Manager ahora se actualiza a la versión 26. Ver [https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases)
 
 <!-- (CMGR-59817) -->
+
+* <!-- CS ONLY --> Al agregar un nuevo dominio personalizado, el método de verificación anterior implicaba un largo proceso de validación de DNS. El Adobe ha simplificado este proceso para los clientes de. Ahora, solo debe proporcionar un certificado SSL válido (EV u OV), que sirva como prueba de propiedad. Ya no es necesario actualizar los registros TXT en el DNS.
+
+  >[!NOTE]
+  >
+  >Esta función solo se aplica a los certificados EV y OV administrados por el cliente. Los certificados DV administrados por el Adobe siguen exigiendo la presencia de un registro CNAME.
+
+  Consulte [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+
+  ![Verificar el dominio de un certificado EV/OV administrado por el cliente](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
 
 * <!-- CS ONLY --> Al agregar o editar la infraestructura de red, los valores de los campos Dirección IP y Máscara de red se validan según las siguientes reglas:
 
