@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2371'
 ht-degree: 65%
 
 ---
@@ -38,7 +38,7 @@ Las funcionalidades de los entornos individuales dependen de las soluciones habi
 >
 >Los entornos de producción y ensayo solo se crean como un par. No puede crear solo un entorno de ensayo o de producción.
 
-## Agregar un entorno {#adding-environments}
+## Añadir un entorno {#adding-environments}
 
 Para agregar o editar un entorno, un usuario debe ser miembro del rol **Propietario del negocio**.
 
@@ -50,13 +50,13 @@ Para agregar o editar un entorno, un usuario debe ser miembro del rol **Propieta
 
    ![Tarjeta Entornos](assets/no-environments.png)
 
-   * La opción **Agregar entorno** también está disponible en la pestaña **Entornos**.
+   * La opción **Agregar entorno** también está disponible en la ficha ![Icono de datos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Entornos**.
 
      ![Pestaña Entornos](assets/environments-tab.png)
 
    * La opción **Agregar entorno** se puede desactivar debido a la falta de permisos o dependiendo de los recursos con licencia.
 
-1. En el cuadro de diálogo **Agregar entorno** que aparece:
+1. En el cuadro de diálogo **Agregar entorno**:
 
    * Seleccione un [**tipo de entorno**](#environment-types).
       * El número de entornos disponibles/utilizados se muestra entre paréntesis detrás del nombre de tipo de entorno.
@@ -255,7 +255,7 @@ El comportamiento de la opción **Actualizar** varía según la configuración y
 * Si la canalización ya se está actualizando, la opción **Actualizar** informará al usuario de que ya se está ejecutando una actualización.
 * Si no existe una canalización adecuada, la opción **Actualizar** solicitará al usuario que cree una.
 
-## Eliminación de entornos de desarrollo {#deleting-environment}
+## Eliminar entornos de desarrollo {#deleting-environment}
 
 Un usuario con el rol **Administrador de implementación** o **Propietario del negocio** puede eliminar un entorno de desarrollo.
 
@@ -310,7 +310,7 @@ Los nombres de dominio personalizados se admiten en los programas de Cloud Manag
 
 >[!TIP]
 >
->Para obtener más información, consulte el documento [Introducción a los nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+>Para obtener más información, vea [Introducción a los nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
 ## Administrar listas de IP permitidas {#manage-ip-allow-lists}
 
@@ -324,4 +324,4 @@ La aplicación de una lista de permitidos IP asocia todos los rangos de IP inclu
 
 >[!TIP]
 >
->Para obtener más información, consulte el documento [Introducción a las Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+>Para obtener más información, vea [Introducción a las Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).

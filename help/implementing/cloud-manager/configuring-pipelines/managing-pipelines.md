@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 71%
+source-wordcount: '1109'
+ht-degree: 70%
 
 ---
 
@@ -112,7 +112,7 @@ Según el tipo de canalización, puede cancelar la ejecución si hace clic de nu
 
 >[!NOTE]
 >
->Las canalizaciones de configuración de nivel web no son compatibles con los repositorios privados. Consulte el documento [Adición de repositorios privados en Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) para obtener más información y la lista completa de limitaciones.
+>Las canalizaciones de configuración de nivel web no son compatibles con los repositorios privados. Consulte [Agregar un repositorio privado en Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) para obtener detalles y la lista completa de limitaciones.
 
 ## Eliminar canalizaciones {#deleting-pipelines}
 

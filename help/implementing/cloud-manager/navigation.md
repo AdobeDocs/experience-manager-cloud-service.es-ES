@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: eb2e1555f684a68807b0b3764cd1be03c2d439ab
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1677'
-ht-degree: 41%
+source-wordcount: '1660'
+ht-degree: 39%
 
 ---
 
@@ -229,7 +229,7 @@ De forma predeterminada, al abrir un programa, llega a la pestaña **Informació
 
 En la esquina superior izquierda del [encabezado de Cloud Manager](#cloud-manager-header-2), haga clic en ![Mostrar icono de menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para mostrar u ocultar el menú lateral de las pestañas.
 
-### Llamada a la sección {#cta}
+### Llamada a la acción {#cta}
 
 La sección de llamada a la acción le proporciona información útil según el estado del programa. Para un programa nuevo, es posible que vea los pasos siguientes dados y un recordatorio de una fecha de lanzamiento, [establecida durante la creación del programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
@@ -245,7 +245,7 @@ La tarjeta **Entornos** le ofrece una descripción general de sus entornos, así
 
 La tarjeta **Entornos** solo enumera tres entornos. Haga clic en **Mostrar todo** para ver todos los entornos del programa.
 
-Consulte el documento [Administración de entornos](/help/implementing/cloud-manager/manage-environments.md) para obtener más información sobre cómo administrar los entornos.
+Consulte también [Administrar entornos](/help/implementing/cloud-manager/manage-environments.md).
 
 ### Tarjeta de canalizaciones {#pipelines}
 
@@ -253,7 +253,7 @@ La tarjeta de **Canalizaciones** le ofrece una descripción general de sus canal
 
 La tarjeta **Canalizaciones** solo enumera tres canalizaciones. Haga clic en **Mostrar todo** para ver todas las canalizaciones del programa.
 
-Consulte el documento [Administración de canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) para obtener más información sobre cómo administrar las canalizaciones.
+Consulte también [Administrar canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) para obtener detalles sobre cómo administrar sus canalizaciones.
 
 ### Tarjeta de rendimiento {#performance}
 

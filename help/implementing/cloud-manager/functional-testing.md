@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: b8b1748f9c50178fbcb167370c53285b55d809b1
 workflow-type: tm+mt
 source-wordcount: '1373'
 ht-degree: 9%
@@ -60,7 +60,7 @@ AEM Se le recomienda que proporcione las pruebas unitarias para su aplicación d
 
 Se implementan mediante JUnit y se ejecutan con Maven. AEM AEM Consulte [módulo principal del tipo de archivo del proyecto de la](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html#unit-tests) para ver un ejemplo de prueba unitaria para obtener información sobre la configuración y la introducción a la creación de proyectos de la.
 
-### Calidad del código
+### Calidad de código
 
 AEM Esta puerta de calidad está configurada de forma predeterminada y ejecuta un análisis de código estático en el código de la aplicación de la.
 

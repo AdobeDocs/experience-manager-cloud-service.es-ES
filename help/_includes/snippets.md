@@ -1,5 +1,5 @@
 ---
-source-git-commit: 075094f018ccf213cd8d1d69defdc390f0a90713
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 94%
@@ -170,7 +170,7 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 >
 >El editor universal no es compatible con [listas de permitidos IP.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 >
->Si desea utilizar el editor universal, las listas de permitidos IP no deben estar habilitadas.
+>Si desea utilizar el editor universal, las Listas de permitidos IP no deben estar habilitadas.
 
 ## Trabajar con Dynamic Media {#work-with-dynamic-media}
 

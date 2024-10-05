@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0edc6d2b32d06727c693d4630ce500e32aa336b4
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '452'
+ht-degree: 25%
 
 ---
 
@@ -38,7 +38,7 @@ Después de agregar, [las Listas de permitidos IP se pueden aplicar o dejar de a
 
 ## Limitaciones {#limitations}
 
-Antes de usar listas de permitidos IP, comprenda las siguientes limitaciones en su funcionalidad, uso y efecto en otras funciones.
+Antes de usar Listas de permitidos IP, es necesario que entienda las siguientes limitaciones en su funcionalidad, uso y efecto en otras características.
 
 ### Limitaciones generales de las Listas de permitidos IP {#general}
 
@@ -80,7 +80,7 @@ Cuando [agregue la Lista de permitidos IP](/help/implementing/cloud-manager/ip-a
 
 Para evitar interrupciones en la ejecución de la canalización front-end, asegúrese de añadir esta Lista de permitidos IP de Cloud Manager. A continuación, aplique la lista al entorno de creación *antes de* de habilitar la canalización.
 
-Consulte los documentos [Aplicar Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) y [Habilitar canalización front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) para obtener más información.
+Consulte [Aplicar Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) y [Habilitar canalización front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) para obtener más información.
 
 ### Editor universal y Listas de permitidos IP {#universal-editor}
 
