@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: ee3e1bedddddff0aa41665359a91a0de48fd19c8
 workflow-type: tm+mt
 source-wordcount: '1411'
-ht-degree: 89%
+ht-degree: 90%
 
 ---
 
@@ -18,7 +18,7 @@ En la siguiente sección se describen las notas de la versión técnicas actuale
 
 ## Versión 17964 {#release-17964}
 
-A continuación se resumen las mejoras continuas para la versión de mantenimiento 17964, que se publicó el 25 de septiembre de 2024. La versión de mantenimiento anterior era 17689. La 17882 de la versión se ha convertido en privada debido a un problema.
+A continuación se resumen las mejoras continuas para la versión de mantenimiento 17964, que se publicó el 25 de septiembre de 2024. La versión de mantenimiento anterior fue la 17689. La versión 17882 ahora es privada debido a un problema.
 
 La activación de funcionalidades 2024.10.0 proporcionará el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
