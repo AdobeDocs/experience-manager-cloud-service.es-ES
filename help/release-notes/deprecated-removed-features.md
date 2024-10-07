@@ -4,10 +4,10 @@ description: Notas de versión específicas de las funciones en desuso y elimina
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 0bcb769f0d8beb4b501646d82fa91bd9233a2173
+source-git-commit: 4e59095a47a919fd0b6acb868e27d71f9193c520
 workflow-type: tm+mt
-source-wordcount: '2496'
-ht-degree: 82%
+source-wordcount: '2504'
+ht-degree: 81%
 
 ---
 
@@ -35,6 +35,7 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 
 | Capacidades | Función en desuso | Reemplazo |
 | ------------ | ------------------ | ----------- |
+| [!DNL Sites] | [API de uso de JavaScript](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [API de uso de Java](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | Propiedades de Fragmentos de experiencias para **Estado de los medios sociales**. | La función se eliminará próximamente. |
 | [!DNL Sites] | Fragmentos de contenido simples basados en plantillas. | [Fragmentos de contenido estructurados basados en modelos](/help/assets/content-fragments/content-fragments-models.md) ahora. |
 | [!DNL Assets] | `DAM Asset Update` flujo de trabajo para procesar imágenes grabadas. | Ahora, el consumo de recursos utiliza [los microservicios](/help/assets/asset-microservices-overview.md) de recursos. |
