@@ -1,22 +1,24 @@
 ---
-title: Solución de problemas de errores de certificados SSL
-description: Obtenga información sobre cómo solucionar errores de certificados SSL identificando causas comunes para que pueda mantener conexiones seguras.
+title: Solucionar problemas de certificados SSL
+description: Obtenga información sobre cómo solucionar problemas de certificados SSL identificando causas comunes para que pueda mantener conexiones seguras.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b387fee62500094d712f5e1f6025233c9397f8ec
+source-git-commit: 1017f84564cedcef502b017915d370119cd5a241
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 48%
+source-wordcount: '556'
+ht-degree: 31%
 
 ---
 
 
-# Solucionar errores de certificados SSL {#certificate-errors}
+# Solucionar problemas de certificados SSL {#certificate-problems}
 
-Pueden surgir ciertos errores si un certificado no está instalado correctamente o no cumple los requisitos de Cloud Manager.
+Obtenga información sobre cómo solucionar problemas de certificados SSL identificando causas comunes para que pueda mantener conexiones seguras.
 
 +++**Certificado no válido**
+
+## Certificado no válido {#invalid-certificate}
 
 Este error se produce porque el cliente utilizó una clave privada cifrada y proporcionó la clave en formato DER.
 
@@ -24,11 +26,15 @@ Este error se produce porque el cliente utilizó una clave privada cifrada y pro
 
 +++**La clave privada debe tener el formato PKCS 8**
 
+## La clave privada debe tener el formato PKCS 8 {#pkcs-8}
+
 Este error se produce porque el cliente utilizó una clave privada cifrada y proporcionó la clave en formato DER.
 
 +++
 
 +++**Orden de certificado correcto**
+
+## Orden de certificados correcto {#certificate-order}
 
 El motivo más común para que una implementación de certificado falle es que los certificados intermedios o de cadena no están en el orden correcto.
 
@@ -58,6 +64,8 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 +++**Quitar certificados de cliente**
 
+## Quitar certificados de cliente {#client-certificates}
+
 Al agregar un certificado, recibe un error similar al siguiente:
 
 ```text
@@ -69,6 +77,8 @@ Es probable que haya incluido el certificado de cliente en la cadena de certific
 +++
 
 +++**Directiva de certificado**
+
+## Directiva de certificados {#policy}
 
 Si ve el siguiente error, compruebe la directiva de su certificado.
 
@@ -117,11 +127,26 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
 # "DV Policy - Not Accepted"
 openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 ```
++++
+
++++**Validez del certificado
+
+## Validez del certificado {#validity}
+
+Cloud Manager espera que el certificado SSL sea válido durante al menos 90 días desde la fecha actual. Compruebe la validez de la cadena de certificados.
 
 +++
 
-+++**Fechas de validez del certificado**
++++**Se ha aplicado un certificado SAN incorrecto a mi dominio
 
-Cloud Manager espera que el certificado SSL sea válido durante al menos 90 días desde la fecha actual. Compruebe la validez de la cadena de certificados.
+## Se ha aplicado un certificado SAN incorrecto a mi dominio {#wrong-san-cert}
+
+Supongamos que desea vincular `dev.yoursite.com` y `stage.yoursite.com` a su entorno que no sea de producción y a `prod.yoursite.com` a su entorno de producción.
+
+Para configurar la CDN para estos dominios, necesita instalar un certificado para cada uno, de modo que instale un certificado que cubra `*.yoursite.com` para los dominios que no sean de producción y otro que también cubra `*.yoursite.com` para los dominios de producción.
+
+Esta configuración es válida. Sin embargo, al actualizar uno de los certificados, ya que ambos cubren la misma entrada de SAN, la red de distribución de contenido (CDN) instalará el certificado más reciente en todos los dominios aplicables, lo que podría parecer inesperado.
+
+Aunque esto puede ser inesperado, no se trata de un error y es el comportamiento estándar de la CDN subyacente. Si tiene dos o más certificados SAN que cubren la misma entrada de dominio SAN, si ese dominio está cubierto por un certificado y el otro se actualiza, este último se instalará ahora para el dominio.
 
 +++
