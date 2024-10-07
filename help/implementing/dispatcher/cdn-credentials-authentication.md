@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo configurar las credenciales y la a
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 83efc7298bc8d211d1014e8d8be412c6826520b8
+source-git-commit: 37d399c63ae49ac201a01027069b25720b7550b9
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1486'
 ht-degree: 4%
 
 ---
@@ -30,9 +30,10 @@ Como se describe en la página [CDN en AEM as a Cloud Service](/help/implementin
 
 Como parte de la configuración, la CDN de Adobe y la CDN del cliente deben acordar un valor del encabezado HTTP `X-AEM-Edge-Key`. Este valor se establece en cada solicitud, en la red de distribución de contenido (CDN) del cliente, antes de enrutarse a la red de distribución de contenido (CDN) de Adobe AEM, la cual valida que el valor es el esperado, de modo que puede confiar en otros encabezados HTTP, incluidos los que ayudan a enrutar la solicitud a la red de distribución de contenido (CDN) adecuada.
 
-AEM Las propiedades `edgeKey1` y `edgeKey2` de un archivo con el nombre `cdn.yaml` o similar, en algún lugar de una carpeta de nivel superior `config`, hacen referencia al valor *X--Edge-Key*. Lea [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#folder-structure) para obtener detalles acerca de la estructura de carpetas y cómo implementar la configuración.
+AEM Las propiedades `edgeKey1` y `edgeKey2` de un archivo con el nombre `cdn.yaml` o similar, en algún lugar de una carpeta de nivel superior `config`, hacen referencia al valor *X--Edge-Key*. Lea [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#folder-structure) para obtener detalles acerca de la estructura de carpetas y cómo implementar la configuración.  La sintaxis se describe en el ejemplo siguiente.
 
-La sintaxis se describe a continuación:
+>[!WARNING]
+>AEM El acceso directo sin una X--Edge-Key correcta se denegará para todas las solicitudes que coincidan con la condición (en el ejemplo siguiente, esto significa todas las solicitudes al nivel de publicación). Si necesita introducir gradualmente la autenticación, consulte la sección [Migración segura para reducir el riesgo de tráfico bloqueado](#migrating-safely).
 
 ```
 kind: "CDN"
@@ -78,7 +79,7 @@ Entre las propiedades adicionales se incluyen:
 
 ### Migración segura para reducir el riesgo de tráfico bloqueado {#migrating-safely}
 
-AEM Si su sitio ya está activo, tenga cuidado al migrar a CDN administrada por el cliente, ya que una configuración incorrecta puede bloquear el tráfico público; esto se debe a que solo la CDN de Adobe aceptará las solicitudes con el valor de encabezado X--Edge-Key esperado. Se recomienda un método cuando se incluya temporalmente una condición adicional en la regla de autenticación, lo que hace que solo evalúe la solicitud si se incluye un encabezado de prueba:
+AEM Si su sitio ya está activo, tenga cuidado al migrar a CDN administrada por el cliente, ya que una configuración incorrecta puede bloquear el tráfico público; esto se debe a que solo la CDN de Adobe aceptará las solicitudes con el valor de encabezado X--Edge-Key esperado. Se recomienda un método cuando se incluya temporalmente una condición adicional en la regla de autenticación, lo que hace que bloquee la solicitud solo si se incluye un encabezado de prueba o si coincide una ruta:
 
 ```
     - name: edge-auth-rule
@@ -86,6 +87,17 @@ AEM Si su sitio ya está activo, tenga cuidado al migrar a CDN administrada por 
           allOf:  
             - { reqProperty: tier, equals: "publish" }
             - { reqHeader: x-edge-test, equals: "test" }
+        action:
+          type: authenticate
+          authenticator: edge-auth
+```
+
+```
+    - name: edge-auth-rule
+        when:
+          allOf:
+            - { reqProperty: tier, equals: "publish" }
+            - { reqProperty: path, like: "/test*" }
         action:
           type: authenticate
           authenticator: edge-auth
