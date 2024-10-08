@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 04ec933125da9ee3c84ffd948b144581d31763d6
 workflow-type: tm+mt
 source-wordcount: '2485'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
 >title="Funciones en desuso y eliminadas en AEM as a Cloud Service"
->abstract="AEM as a Cloud Service tiene un modelo de implementación nativo de la nube. Algunas funciones y características se han reemplazado con homólogos nativos de la nube y esta pestaña muestra esas funciones."
+>abstract="AEM as a Cloud Service tiene un modelo de implementación nativo de la nube. Algunas funciones y capacidades se han reemplazado con homólogos nativos de la nube y esta pestaña muestra esas funciones."
 
 Adobe evalúa constantemente las capacidades de los productos para renovar o sustituir las funciones más antiguas con alternativas más modernas que mejoren el valor general del cliente, siempre teniendo en cuenta la compatibilidad con versiones anteriores. Además, como [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] proporciona un modelo de implementación nativo de la nube, ciertas funciones y características se han reemplazado con homólogos nativos de la nube.
 
@@ -35,7 +35,7 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 
 | Capacidades | Función en desuso | Reemplazo |
 | ------------ | ------------------ | ----------- |
-| [!DNL Sites] | [API de uso de JavaScript](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [API de uso de Java](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api) |
+| [!DNL Sites] | [API de uso de JavaScript](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [API de uso de Java](https://experienceleague.adobe.com/es/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | Propiedades de Fragmentos de experiencias para **Estado de los medios sociales**. | La función se eliminará próximamente. |
 | [!DNL Sites] | Fragmentos de contenido simples basados en plantillas. | [Fragmentos de contenido estructurados basados en modelos](/help/assets/content-fragments/content-fragments-models.md) ahora. |
 | [!DNL Assets] | `DAM Asset Update` flujo de trabajo para procesar imágenes grabadas. | Ahora, el consumo de recursos utiliza [los microservicios](/help/assets/asset-microservices-overview.md) de recursos. |
@@ -203,7 +203,7 @@ A continuación se incluye una lista detallada de las API de AEM en desuso y su 
     <td>eliminado</td>
   <tr>
     <td>org.apache.sling.atom.taglib<br>org.apache.sling.atom.taglib.media</td>
-    <td>API heredada de AEM 6.x. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">Consulte las notas de eliminación a continuación.</a></td>
+    <td>API heredada AEM 6.x. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">Consulte las notas de eliminación a continuación.</a></td>
     <td>4/8/19</td>
     <td>09/29/21</td>
   </tr>
