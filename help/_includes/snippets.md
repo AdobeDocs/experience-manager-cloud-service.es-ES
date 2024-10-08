@@ -2,7 +2,7 @@
 source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
 source-wordcount: '1202'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 # Fragmentos de código {#snippets}
@@ -156,19 +156,19 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 >Si utiliza (o tiene intención de utilizar) la canalización front-end para desarrollar sitios, debe añadir de antemano la Lista de IP permitidas de Cloud Manager.
 >Consulte [Uso de la Lista de IP permitidas de Cloud Manager con la canalización front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
 
-## LISTAS DE PERMITIDOS IP y el editor universal {#ip-allow-lists-ue}
+## Listas de IP permitidas y el editor universal {#ip-allow-lists-ue}
 
 >[!IMPORTANT]
 >
->[El editor universal](/help/implementing/universal-editor/introduction.md) no es compatible con listas de permitidos IP.
+>[El editor universal](/help/implementing/universal-editor/introduction.md) no es compatible con las listas de IP permitidas.
 >
 >Si desea utilizar el editor universal, las listas de permitidos IP no deben estar habilitadas.
 
-## Editor universal y Listas de permitidos IP {#ue-ip-allow-lists}
+## Editor universal y Listas de IP permitidas {#ue-ip-allow-lists}
 
 >[!IMPORTANT]
 >
->El editor universal no es compatible con [listas de permitidos IP.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>El editor universal no es compatible con las [listas de IP permitidas.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 >
 >Si desea utilizar el editor universal, las Listas de permitidos IP no deben estar habilitadas.
 
