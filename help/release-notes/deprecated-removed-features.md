@@ -4,9 +4,9 @@ description: Notas de versión específicas de las funciones en desuso y elimina
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 4e59095a47a919fd0b6acb868e27d71f9193c520
+source-git-commit: b64c8f16976988d04840f1006afe4f7c9b28c705
 workflow-type: tm+mt
-source-wordcount: '2504'
+source-wordcount: '2488'
 ht-degree: 98%
 
 ---
@@ -325,14 +325,14 @@ Si utiliza cualquier elemento del paquete `org.eclipse.jetty` o de uno de sus su
 Lista de acciones:
 * Reemplazar el uso de paquetes de `org.eclipse.jetty` con otras bibliotecas de terceros/código propio o
 * Seleccionar los paquetes necesarios de esta lista y añadirlos al proyecto:
-   * org.eclipse.jetty:jetty-client:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-http:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-io:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-security:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-servlet:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-server:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-util:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-util-ajax:9.4.54.v20240208
+   * `org.eclipse.jetty:jetty-client:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-http:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-io:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-security:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-servlet:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-server:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-util:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-util-ajax:9.4.54.v20240208`
 
 ### Eliminación de `com.mongodb` {#com.mongodb}
 
