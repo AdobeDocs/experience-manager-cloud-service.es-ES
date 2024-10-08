@@ -4,9 +4,9 @@ description: Conozca las prácticas recomendadas sobre metadatos para administra
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1399'
 ht-degree: 1%
 
 ---
@@ -17,6 +17,9 @@ aem metadata
 experience manager metadata-->
 
 # Administración de metadatos y prácticas recomendadas {#metadata-best-practices}
+
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- |---------|----|-----|
 
 Para que su empresa destaque y atraiga a más clientes, es crucial utilizar imágenes de alta calidad, como imágenes, vídeos y otros recursos digitales. Para conseguirlo, necesita un proceso que le permita añadir metadatos a todos los recursos digitales, facilitando su búsqueda. Los metadatos son los datos que proporcionan detalles esenciales sobre los recursos digitales, como el nombre, el tipo, la ubicación dentro de un repositorio, la fecha de modificación y las etiquetas asociadas. Los metadatos optimizan la administración de recursos, mejoran la capacidad de búsqueda y accesibilidad, y garantizan un control de versiones eficaz.
 

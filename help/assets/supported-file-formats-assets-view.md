@@ -5,19 +5,22 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 7c8f54d7c1139485717cc42dafbc87be74fd5883
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 94%
+source-wordcount: '545'
+ht-degree: 97%
 
 ---
 
 # Compatibilidad de formatos de archivo en [!DNL Assets view] {#file-format-support}
 
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
+
 [!DNL Assets view] admite una amplia gama de formatos de archivo y cada funcionalidad tiene compatibilidad variada con distintos tipos de archivo.
 
 * ![icono de tipo de archivo de imagen](assets/image-icon.svg) Imágenes: JPG, PNG, GIF, TIFF y otros
-* ![icono de tipo Creative Cloud](assets/creative-cloud-files.svg) archivos de Creative Cloud: PSD, PSB, AI e INDD
+* ![icono de tipo Creative Cloud](assets/creative-cloud-files.svg) Archivos de Creative Cloud: PSD, IA e INDD
 * ![icono de tipo cámara](assets/camera-icon.svg) Archivos de Camera Raw: CR2/CR3, NEF, SRW/SRF y otros
 * ![icono de tipo de archivo de documento](assets/document-icon.svg) Documentos: DOCX, PDF, PPTX y XLSX
 * ![icono de tipo de archivo de vídeo](assets/video-icon.svg) Vídeos: MP4
@@ -46,7 +49,7 @@ Los distintos tipos de archivo tienen diferentes grados de compatibilidad con lo
 | Carpetas | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | − | − |
 | Vídeos MP4 | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
 | PDF | ✓ | ✓ | ✓ | − | ✓ | ✓ | − | ✓ |
-| PSD, PSB, AI e INDD | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
+| PSD, PSB, IA e INDD | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
 | Otros archivos binarios | ✓ | ✓ | ✓ | − | ✓ | ✓ | − | ✓ |
 
 <!-- Hiding CC Libraries (considered beta) as per PM feedback.
@@ -78,7 +81,7 @@ Los distintos tipos de archivo tienen diferentes grados de compatibilidad con lo
 | Vídeos | − | ✓ | ✓ |
 | Bibliotecas CC | − | − | − |
 | PDF | − | ✓ | ✓ |
-| PSD, PSB, AI e INDD | − | ✓ | ✓ |
+| PSD, PSB, IA e INDD | − | ✓ | ✓ |
 | Otros archivos binarios | − | ✓ | ✓ |
 | DOC | − | ✓ | ✓ |
 | DOCX | − | ✓ | ✓ |
@@ -128,4 +131,4 @@ Los usuarios de [!DNL Adobe Asset Link] pueden cargar y registrar archivos (carg
 
 * Proporcione comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar una incidencia] ![crear una incidencia de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha
 
-* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General&amp;lang=es#support)
+* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General#support)

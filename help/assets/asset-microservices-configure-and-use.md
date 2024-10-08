@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '2866'
+source-wordcount: '2884'
 ht-degree: 3%
 
 ---
 
 # Uso de microservicios de recursos y perfiles de procesamiento {#get-started-using-asset-microservices}
+
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Los microservicios de recursos proporcionan un procesamiento escalable y flexible de los recursos mediante aplicaciones nativas de la nube (también denominadas trabajadores). Adobe administra los servicios para un manejo óptimo de diferentes tipos de recursos y opciones de procesamiento.
 
@@ -181,11 +184,11 @@ Para comprobar que los recursos se procesan, obtenga una vista previa de las rep
 
 *Imagen: ejemplo de dos representaciones adicionales generadas por un perfil de procesamiento aplicado a la carpeta principal.*
 
-## Flujos de trabajo de procesamiento de Post {#post-processing-workflows}
+## Flujos de trabajo de posprocesamiento {#post-processing-workflows}
 
-En una situación en la que se requiera un procesamiento adicional de recursos que no se pueda lograr con los perfiles de procesamiento, se pueden agregar flujos de trabajo posteriores al procesamiento a la configuración. El procesamiento de Post le permite agregar un procesamiento completamente personalizado sobre el procesamiento configurable mediante microservicios de recursos.
+En una situación en la que se requiera un procesamiento adicional de recursos que no se pueda lograr con los perfiles de procesamiento, se pueden agregar flujos de trabajo posteriores al procesamiento a la configuración. El posprocesamiento le permite agregar un procesamiento completamente personalizado sobre el procesamiento configurable mediante microservicios de recursos.
 
-[!DNL Experience Manager] ejecuta automáticamente los flujos de trabajo de procesamiento de Post o el [flujo de trabajo de inicio automático](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html), si están configurados, una vez finalizado el procesamiento de los microservicios. No es necesario añadir manualmente iniciadores de flujo de trabajo para almacenar en déclencheur los flujos de trabajo. Los ejemplos incluyen:
+[!DNL Experience Manager] ejecuta automáticamente los flujos de trabajo de posprocesamiento o [flujo de trabajo de inicio automático](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html), si están configurados, una vez finalizado el procesamiento de los microservicios. No es necesario añadir manualmente iniciadores de flujo de trabajo para almacenar en déclencheur los flujos de trabajo. Los ejemplos incluyen:
 
 * Pasos personalizados del flujo de trabajo para procesar recursos.
 * Integraciones para añadir metadatos o propiedades a recursos de sistemas externos como, por ejemplo, información de productos o procesos.
@@ -202,7 +205,7 @@ Para obtener más información sobre qué paso de flujo de trabajo estándar se 
 
 ### Creación de modelos de flujo de trabajo de posprocesamiento {#create-post-processing-workflow-models}
 
-Los modelos de flujo de trabajo de procesamiento de Post son [!DNL Experience Manager] modelos de flujo de trabajo normales. Cree diferentes modelos si necesita un procesamiento diferente para diferentes ubicaciones de repositorios o tipos de recursos.
+Los modelos de flujo de trabajo de posprocesamiento son [!DNL Experience Manager] modelos de flujo de trabajo normales. Cree diferentes modelos si necesita un procesamiento diferente para diferentes ubicaciones de repositorios o tipos de recursos.
 
 Los pasos de procesamiento se añaden según sea necesario. Puede utilizar tanto los pasos compatibles disponibles como cualquier paso del flujo de trabajo implementado de forma personalizada.
 
@@ -229,8 +232,8 @@ Para los casos de uso habituales del posprocesamiento, considere la posibilidad 
 
 Puede configurar el servicio del ejecutor de flujo de trabajo personalizado para las configuraciones avanzadas que no se pueden completar fácilmente aplicando un flujo de trabajo a una carpeta. Por ejemplo, un flujo de trabajo que utiliza una expresión regular. El ejecutor de flujo de trabajo personalizado de Adobe CQ DAM (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) es un servicio OSGi. Proporciona las dos opciones de configuración siguientes:
 
-* Flujos de trabajo de procesamiento de Post por ruta de acceso (`postProcWorkflowsByPath`): se pueden enumerar varios modelos de flujo de trabajo según diferentes rutas de repositorio. Separe las rutas y los modelos con dos puntos. Se admiten rutas de repositorio simples. Asignarlos a un modelo de flujo de trabajo en la ruta de acceso `/var`. Por ejemplo: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
-* Flujos de trabajo de procesamiento de Post por expresión (`postProcWorkflowsByExpression`): se pueden enumerar varios modelos de flujo de trabajo basados en distintas expresiones regulares. Las expresiones y los modelos deben separarse con dos puntos. La expresión regular debe señalar directamente al nodo Asset y no a una de las representaciones o archivos. Por ejemplo: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
+* Flujos de trabajo de posprocesamiento por ruta (`postProcWorkflowsByPath`): se pueden enumerar varios modelos de flujo de trabajo, según diferentes rutas de repositorio. Separe las rutas y los modelos con dos puntos. Se admiten rutas de repositorio simples. Asignarlos a un modelo de flujo de trabajo en la ruta de acceso `/var`. Por ejemplo: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* Flujos de trabajo de posprocesamiento por expresión (`postProcWorkflowsByExpression`): se pueden enumerar varios modelos de flujo de trabajo según distintas expresiones regulares. Las expresiones y los modelos deben separarse con dos puntos. La expresión regular debe señalar directamente al nodo Asset y no a una de las representaciones o archivos. Por ejemplo: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 Para saber cómo implementar una configuración OSGi, consulte [implementar en [!DNL Experience Manager]](/help/implementing/deploying/overview.md).
 

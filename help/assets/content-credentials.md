@@ -1,23 +1,26 @@
 ---
-title: Integración de Content credentials
+title: Integración de Content Credentials
 description: Los contentes credentials, integrados en AEM Assets y presentados en la vista de Assets, pueden ofrecer contexto sobre el historial de un recurso, incluido cómo se creó y quién participó en su creación. Al igual que una etiqueta nutricional para el contenido digital, los Contentes credentials pueden ayudar a aumentar la transparencia y generar confianza con las audiencias.
 role: User
-source-git-commit: 1c0ffe9d6e45f1d6b3574d1ac5611b2c2e2d00e0
+exl-id: 27c25ae0-4477-40c3-85c8-3e0aa725aba7
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 0%
+source-wordcount: '480'
+ht-degree: 1%
 
 ---
 
-
 # Credenciales de contenido {#content-credentials}
+
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Las marcas están más preocupadas que nunca por la transparencia del contenido, la divulgación de la inteligencia artificial y la prevención de la manipulación de activos. La Iniciativa de autenticidad de contenido (CAI) del Adobe crea herramientas que cumplen con el estándar técnico de la [Coalición para la procedencia y autenticidad de contenido](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model) (C2PA). Los contentes credentials, que son un nuevo tipo de metadatos cifrados y a prueba de manipulaciones, pueden ayudar a los espectadores a comprender el linaje del contenido y garantizar la integridad de los recursos de la marca. Pueden incluir una amplia gama de datos de procedencia que ofrecen una perspectiva del historial de un recurso digital.
 
 Esta información puede incluir:
 
 * **Emisor o firmante:** Información acerca de la entidad o compañía que emitió la firma digital para certificar los certificados o firmas del recurso.
-* **Fecha del problema:** Fecha en la que se aplicó la credencial de contenido al recurso.
+* **Fecha del problema:** Fecha en la que se aplicó Content Credential al recurso.
 * **Crédito y uso:** Información sobre el productor del recurso, incluidos el nombre, los identificadores de medios sociales u otra información relacionada con la identidad.
 * **Proceso:** Registra las ediciones o modificaciones realizadas en el recurso.
 * **Detalles del dispositivo:** Información sobre la aplicación o el dispositivo usado para crear o editar el recurso.

@@ -3,14 +3,17 @@ title: Selector de recursos para [!DNL Adobe Experience Manager] como un [!DNL C
 description: Ejemplos de uso del Selector de recursos para personalizar según los requisitos.
 role: Admin, User
 exl-id: 7a393a96-f2a2-4a25-922c-577271cafc57
-source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 49%
+source-wordcount: '275'
+ht-degree: 46%
 
 ---
 
 # Ejemplos de uso de las propiedades del Selector de recursos {#usage-examples}
+
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Puede definir el Selector de recursos [properties](/help/assets/asset-selector-properties.md) en el archivo **index.html** para personalizar la visualización del Selector de recursos en su aplicación.
 

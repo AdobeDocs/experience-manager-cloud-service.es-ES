@@ -4,14 +4,17 @@ description: Asigne los campos de metadatos del recurso entre Adobe Workfront y 
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 feature: Metadata, Workfront Integrations and Apps
 role: User, Admin
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1030'
 ht-degree: 4%
 
 ---
 
 # Configuración de la asignación de metadatos de recursos entre Adobe Workfront y Experience Manager Assets {#asset-metadata-mapping-workfront-aem-assets}
+
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Puede asignar los campos de metadatos del recurso entre Adobe Workfront y las aplicaciones as a Cloud Service del Experience Manager. Como resultado de la asignación de campos de metadatos, cuando envía un recurso de Workfront a Experience Manager Assets, puede ver los metadatos del recurso asignado en Experience Manager Assets.
 

@@ -5,14 +5,17 @@ contentOwner: AK
 feature: Brand Portal, Asset Distribution, Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1766'
-ht-degree: 10%
+source-wordcount: '1784'
+ht-degree: 11%
 
 ---
 
-# Configuración de Experience Manager Assets con Brand Portal {#configure-aem-assets-with-brand-portal}
+# Configurar Experience Manager Assets con Brand Portal {#configure-aem-assets-with-brand-portal}
+
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |

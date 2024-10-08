@@ -4,14 +4,17 @@ description: Obtenga información sobre cómo importar recursos de forma masiva 
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 816bf0f93dd67f193f4e8a7c9bc4a7df29cb6cf5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1899'
 ht-degree: 87%
 
 ---
 
 # Importación masiva de recursos mediante la vista Recursos  {#bulk-import-assets-view}
+
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 La importación masiva en la vista de AEM Assets permite a los administradores importar un gran número de recursos desde una fuente de datos a AEM Assets. Los administradores ya no tienen que cargar archivos o carpetas individuales en Experience Manager Assets.
 

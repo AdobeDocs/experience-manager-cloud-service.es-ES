@@ -2,14 +2,17 @@
 title: Configuración de la interfaz de usuario de Content Hub
 description: Configuración de la interfaz de usuario de Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 0c31f83d3e115a676c7daa37f634e25d08f4d06c
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 5%
+source-wordcount: '1392'
+ht-degree: 14%
 
 ---
 
 # Configuración de la interfaz de usuario de Content Hub {#configure-content-hub-user-interface}
+
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
 >id="configure_content_hub"
@@ -173,7 +176,7 @@ Las actualizaciones de marca habilitadas en la interfaz de usuario de configurac
 
 ### Recursos caducados {#expired-assets-content-hub}
 
-Los administradores pueden controlar si necesitan recursos caducados para que sean visibles en Content Hub. Si los recursos caducados se hacen visibles, también pueden definir si los usuarios pueden descargarlos.
+Los administradores pueden controlar si necesitan recursos caducados para que sean visibles en Content Hub. Si los activos caducados están visibles, también se puede definir si los usuarios pueden descargarlos.
 
 Los recursos caducados no se muestran en Content Hub de forma predeterminada.
 
@@ -187,11 +190,11 @@ Para ello, ejecute los siguientes pasos:
 
 1. Haga clic en **[!UICONTROL Guardar]** para aplicar los cambios.
 
-   ![Recursos caducados en Content Hub](assets/expired-assets-content-hub.png)
+   ![Activos caducados en Content Hub](assets/expired-assets-content-hub.png)
 
 Después de habilitar la visibilidad de los recursos, puede ver los recursos caducados en Content Hub, como se muestra en la siguiente imagen:
 
-![Recursos caducados en Content Hub](assets/view-download-expired-assets.png)
+![Activos caducados en Content Hub](assets/view-download-expired-assets.png)
 
 Si el administrador ha activado la descarga, los usuarios de Content Hub también pueden descargarlos, tal como se indica en la imagen.
 

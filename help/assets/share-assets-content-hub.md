@@ -2,15 +2,18 @@
 title: Compartir Assets en  [!DNL the Content Hub]
 description: Compartir Assets en  [!DNL the Content Hub]
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '472'
 ht-degree: 3%
 
 ---
 
-
 # Uso compartido de recursos en Content Hub {#search-assets-as-a-link}
+
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![Compartir recursos con la imagen del titular](assets/share-assets-banner.png)
 
@@ -61,7 +64,3 @@ Después de compartir el vínculo de los recursos, los destinatarios autorizados
 Haga clic en el vínculo compartido y en el icono de descarga disponible en la tarjeta de recursos para descargar un recurso.  También puede seleccionar varios recursos y hacer clic en **[!UICONTROL Descargar]**. <!--You can either download original assets or Original+Renditions of an asset.--> [!DNL The Content Hub] descarga cada recurso uno por uno en el sistema de archivos local.
 
 ![Vínculos compartidos de acceso](assets/content-hub-access-shared-links.png)
-
-
-
-

@@ -2,14 +2,17 @@
 title: Integración de AEM Assets remoto con AEM Sites
 description: AEM Obtenga información sobre cómo configurar y conectar sitios de con AEM Assets aprobado.
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: e2c0c848c886dc770846d064e45dcc52523ed8e3
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '995'
 ht-degree: 14%
 
 ---
 
 # Integración de AEM Assets remoto con AEM Sites  {#integrate-approved-assets}
+
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 La administración eficaz de los recursos digitales es crucial para ofrecer experiencias de marca atractivas y coherentes en varias plataformas en línea. Dynamic Media con funciones OpenAPI mejora la administración de recursos digitales al permitir una integración perfecta entre AEM Sites y AEM Assets as a Cloud Service. AEM Esta innovadora función le permite compartir y administrar fácilmente diferentes tipos de recursos digitales aprobados en varios entornos de trabajo, lo que optimiza los flujos de trabajo para los autores de sitios y editores de contenido.
 

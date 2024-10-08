@@ -3,14 +3,17 @@ title: Restringir la entrega de recursos en Experience Manager
 description: Obtenga información sobre cómo restringir la entrega de recursos en  [!DNL Experience Manager].
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 65f0018a25c57189229fc56332ad874ebd0deef4
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 0%
+source-wordcount: '1148'
+ht-degree: 1%
 
 ---
 
 # Restringir el acceso a los recursos en [!DNL Experience Manager] {#restrict-access-to-assets}
+
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 La administración central de recursos en Experience Manager permite al administrador de DAM o a los administradores de marcas administrar el acceso a los recursos. Pueden restringir el acceso configurando funciones para los recursos aprobados en el lado de la creación, específicamente en la instancia de autor de AEM as a Cloud Service.
 

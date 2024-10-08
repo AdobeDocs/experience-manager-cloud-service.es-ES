@@ -5,14 +5,17 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 7ec5d5e3ca487ff84bc0b1f7f040aec9475059e0
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1204'
-ht-degree: 90%
+source-wordcount: '1222'
+ht-degree: 92%
 
 ---
 
 # Administración de recursos {#manage-assets}
+
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Puede realizar varias tareas de administración de activos digitales (DAM) fácilmente mediante la interfaz de usuario sencilla de usar de [!DNL Assets view]. Una vez añadidos los recursos, puede buscarlos, descargarlos, moverlos, copiarlos, cambiarles el nombre, eliminarlos, actualizarlos y editarlos.
 
@@ -131,7 +134,7 @@ Para establecer el estado del activo:
 1. Seleccione el recurso y haga clic en **[!UICONTROL Detalles]** en la barra de herramientas.
 
 1. En la ficha **[!UICONTROL Básico]**, seleccione el estado del recurso en la lista desplegable **[!UICONTROL Estado]**. Los valores posibles incluyen Aprobado, Rechazado y Sin estado (predeterminado).
-Si tiene Dynamic Media con capacidades OpenAPI proporcionadas para su entorno, Experience Manager Assets genera una URL pública en cuanto marca el recurso como `Approved`.
+Si tiene Dynamic Media con capacidades OpenAPI proporcionadas para su entorno, Experience Manager Assets genera una URL pública en cuanto marque el recurso como `Approved`.
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 

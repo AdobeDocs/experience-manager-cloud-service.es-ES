@@ -5,14 +5,17 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1536'
-ht-degree: 4%
+source-wordcount: '1554'
+ht-degree: 5%
 
 ---
 
 # Administrar publicación en Experience Manager Assets {#manage-publication-in-aem}
+
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Como administrador de [!DNL Adobe Experience Manager Assets], puede publicar recursos y carpetas que contengan recursos de su instancia de autor en [!DNL Experience Manager Assets], [!DNL Dynamic Media] y [!DNL Brand Portal]. Además, puede programar la publicación de un recurso o una carpeta en una fecha u hora posterior. Una vez publicados, los usuarios pueden acceder a los recursos y distribuirlos a otros usuarios. De manera predeterminada, puede publicar recursos y carpetas en [!DNL Experience Manager Assets]. Sin embargo, puede configurar [!DNL Experience Manager Assets] para habilitar la publicación en [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=es) y [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=es).
 

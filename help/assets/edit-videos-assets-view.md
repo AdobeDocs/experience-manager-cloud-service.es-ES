@@ -4,14 +4,17 @@ description: Edite vídeos con  [!DNL Adobe Express] opciones que se sirven de y
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
 feature: Best Practices, Video, Interactive Videos
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '797'
 ht-degree: 17%
 
 ---
 
 # Editar vídeos en [!DNL Assets view] {#edit-videos}
+
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Crear variaciones de contenido de vídeo es fácil para los usuarios de Assets con las acciones rápidas [!DNL Adobe Express] incrustadas para el vídeo. Acciones rápidas en [!DNL Assets view] con tecnología [!DNL Adobe Express] proporciona opciones de edición de vídeo fáciles de usar, como recortar vídeo, cambiar el tamaño del vídeo, recortar vídeo y convertirlo en GIF.
 
@@ -21,7 +24,7 @@ Para editar un video, ve a los detalles del video y haz clic en [!UICONTROL Edit
 
 Derechos para acceder a [!DNL Adobe Express] y al menos a un entorno en AEM Assets. El entorno puede ser cualquiera de los repositorios de [!DNL Assets as a Cloud Service] o [!DNL Assets view].
 
-## Editar vídeos con el Adobe Express {#edit-video-using-express}
+## Edición de imágenes mediante Adobe Express {#edit-video-using-express}
 
 Transformar un vídeo en un tamaño y orientación perfectos es fácil mediante [!DNL Adobe Express] acciones rápidas incrustadas.
 
@@ -98,7 +101,7 @@ El vídeo está disponible en formato GIF para su descarga. Puede guardar el rec
 
 * Facilite comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar un problema] ![crear un problema de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha.
 
-* Contacte con el [Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General#support).
+* Contacte con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General#support).
 
 >[!MORELIKETHIS]
 >

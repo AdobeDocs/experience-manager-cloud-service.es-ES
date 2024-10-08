@@ -4,14 +4,17 @@ description: Acceso, experiencia de inicio de sesión, casos de uso compatibles 
 role: User, Leader
 exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: d71107be2831bf00bff3856d7cd0e10818ec6be5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 89%
+source-wordcount: '376'
+ht-degree: 85%
 
 ---
 
 # Introducción a la vista de recursos {#assets-view-get-started}
+
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 <!-- TBD: Make links for these steps. -->
 

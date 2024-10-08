@@ -4,14 +4,17 @@ description: El Experience Manager agrega automáticamente etiquetas inteligente
 feature: Smart Tags
 role: Admin, User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1225'
-ht-degree: 3%
+source-wordcount: '1243'
+ht-degree: 4%
 
 ---
 
 # Etiquetado inteligente de activos de vídeo {#video-smart-tags}
+
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 La creciente necesidad de nuevo contenido requiere menos esfuerzos manuales para ofrecer experiencias digitales atractivas en poco tiempo. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] admite el etiquetado automático de recursos de vídeo mediante inteligencia artificial. Etiquetar los vídeos manualmente puede llevar mucho tiempo. Sin embargo, la función de etiquetado inteligente de vídeo de [!DNL Adobe Sensei] con tecnología utiliza modelos de inteligencia artificial para analizar el contenido de vídeo y agregar etiquetas a los recursos de vídeo. Esto reduce el tiempo para que los usuarios de DAM entreguen experiencias enriquecidas a sus clientes. El servicio de aprendizaje automático de Adobe genera dos conjuntos de etiquetas para un vídeo. Mientras que un conjunto corresponde a objetos, escenas y atributos de ese vídeo; el otro conjunto se relaciona con acciones como beber, correr y trotar.
 

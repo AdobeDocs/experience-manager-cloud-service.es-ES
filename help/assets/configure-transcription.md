@@ -9,14 +9,17 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 84%
+source-wordcount: '1686'
+ht-degree: 83%
 
 ---
 
 # Configuración de la transcripción en [!DNL Experience Manager Assets] {#configure-transcription-service}
+
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 La transcripción es el proceso de pasar el audio de un archivo de audio o vídeo a texto (voz a texto) utilizando la tecnología de reconocimiento de voz.
 [!DNL Adobe Experience Manager Assets] está configurado con [!DNL Azure Media Services], que genera automáticamente la transcripción textual del idioma hablado en un archivo de audio o vídeo compatible en formato WebVTT (.vtt). Cuando se procesa un recurso de audio o vídeo en [!DNL Experience Manager Assets], el servicio de transcripción genera automáticamente la representación de transcripción de texto del recurso de audio o vídeo y la almacena en la misma ubicación del repositorio de Assets en la que reside el recurso original. El servicio de transcripción [!DNL Experience Manager Assets] permite a los especialistas en marketing administrar de forma eficaz el contenido de audio y vídeo con una mayor capacidad de detección del contenido de texto y aumentar el retorno de la inversión de estos recursos al admitir la accesibilidad y la localización.

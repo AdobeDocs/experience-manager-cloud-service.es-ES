@@ -4,16 +4,19 @@ description: Edite imágenes mediante opciones que se sirven de [!DNL Adobe Expr
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: af5ca9c436dce1929f310d40369abf05e60836f8
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1127'
-ht-degree: 59%
+source-wordcount: '1145'
+ht-degree: 77%
 
 ---
 
 # Edición de imágenes en [!DNL Assets view] {#edit-images-in-assets-view}
 
-La IU de vista de Assets permite la edición básica de imágenes con tecnología de Adobe Express e integradas en la IU. Esta edición incluye cambiar el tamaño, eliminar el fondo, recortar y convertir entre los formatos JPEG y PNG. Además, permite realizar ediciones avanzadas a través de la interfaz de Adobe Express incrustada en la interfaz de usuario de la vista de Assets.
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
+
+La IU de vista de Assets permite la edición básica de imágenes con tecnología de Adobe Express e integradas en la IU. Esta edición incluye cambiar el tamaño, quitar el fondo, recortar y convertir formatos entre JPEG y PNG. Además, permite realizar ediciones avanzadas a través de la interfaz de Adobe Express incrustada en la interfaz de usuario de la vista de Assets.
 
 Después de editar una imagen, puede guardar la nueva como una nueva versión. El uso de versiones le ayuda a volver al recurso original más adelante, si es necesario. Para editar una imagen, [abra su previsualización](https://experienceleague.adobe.com/es/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) y haga clic en **Editar imagen**.
 
@@ -35,13 +38,13 @@ Para obtener más información de referencia, consulte [Introducción a la vista
 
 ### Editar imagen en la vista de Assets mediante el Adobe Express {#edit-image-on-assets-view-using-adobe-express}
 
-Después de ir a la vista Assets, haz clic en **Assets**, selecciona una imagen y, a continuación, haz clic en **Editar** en el carril superior. La nueva pantalla muestra las opciones de edición disponibles con Adobe Express, que incluyen el cambio de tamaño, la eliminación de fondo, el recorte y la conversión entre los formatos JPEG y PNG.
+Después de ir a la vista Assets, haz clic en **Assets**, selecciona una imagen y, a continuación, haz clic en **Editar** en el carril superior. La nueva pantalla muestra las opciones de edición disponibles con tecnología de Adobe Express, que incluye cambiar el tamaño, quitar el fondo, realizar recortes y convertir formatos entre JPEG y PNG.
 
 #### Cambiar tamaño de imagen {#resize-image-using-express}
 
 Cambiar el tamaño de una imagen a un tamaño específico es un caso de uso popular. La vista de Assets le permite cambiar rápidamente el tamaño de las imágenes para adaptarlas a los tamaños de foto comunes, ya que proporciona nuevas resoluciones calculadas previamente para tamaños de foto específicos. Para cambiar el tamaño de la imagen con la vista de Assets, siga los pasos a continuación:
 
-1. Haga clic en **Cambiar tamaño de imagen** en el panel izquierdo. Un cuadro de diálogo muestra las funcionalidades de cambio de tamaño de imagen impulsadas por el Adobe Express.
+1. Haga clic en **Cambiar tamaño de la imagen** en el panel izquierdo. Un cuadro de diálogo muestra las funciones de cambio de tamaño de imagen con tecnología de Adobe Express.
 1. Seleccione la plataforma de medios sociales adecuada en la lista desplegable Cambiar tamaño y el tamaño de la imagen en las opciones que se muestran.
 1. Escale la imagen, si es necesario, utilizando el campo **Escala de imagen**.
 1. Haga clic en **[!UICONTROL Aplicar]** para que tengan efecto los cambios.
@@ -85,7 +88,7 @@ Puede convertir rápidamente entre los formatos de imagen JPEG y PNG mediante Ad
 
 ### Edición de imágenes en el editor integrado de Adobe Express {#edit-images-in-adobe-express-embedded-editor}
 
-Los usuarios con derechos de acceso rápido pueden utilizar el editor Express integrado desde la vista de Assets para editar fácilmente el contenido y crear contenido nuevo con GenAI desde el Adobe Firefly. Esta función mejora la reutilización del contenido y acelera la velocidad de contenido. También puede utilizar elementos predefinidos para que su recurso tenga un aspecto impresionante o realizar acciones rápidas para editar la imagen con solo unos clics.
+Los usuarios con derechos de acceso rápido pueden utilizar el editor Express integrado desde la vista de Assets para editar fácilmente el contenido y crear contenido nuevo con GenAI desde el Adobe Firefly. Esta función mejora la reutilización de contenidos y acelera su velocidad. También puede utilizar elementos predefinidos para que su recurso tenga un aspecto impresionante o realizar acciones rápidas para editar la imagen con solo unos clics.
 
 ![express en la interfaz de usuario de essentials](/help/assets/assets/express-in-essentials-ui.jpg)
 Para editar imágenes con el editor incrustado [!DNL Adobe Express], siga los pasos a continuación:
@@ -95,8 +98,8 @@ Para editar imágenes con el editor incrustado [!DNL Adobe Express], siga los pa
 1. Haga clic en **Abrir en Adobe Express**. La imagen se abre en un lienzo exprés.
 1. Realice los cambios necesarios en la imagen.
 1. Si el proyecto requiere que se añadan más páginas, haga clic en **Añadir**, seleccione Assets, introduzca una carpeta, seleccione una imagen para llevarla a la página de lienzo y, a continuación, realice los cambios necesarios en la imagen.
-1. Para guardar uno o más recursos, haga clic en **Guardar**. El cuadro de diálogo Guardar muestra las opciones de guardado. Para seleccionar entre las opciones de guardado, siga una de las instrucciones a continuación que se ajuste a sus necesidades:
-   1. Para guardar una sola página, haga clic en **Guardar como versión** para exportar la imagen como una nueva versión (conservando el formato original) y guárdela en la misma carpeta.
+1. Para guardar uno o más recursos, haga clic en **Guardar**. El cuadro de diálogo Guardar muestra las opciones de guardado. Para seleccionar entre las opciones de guardado, de las distintas instrucciones indicadas a continuación, siga las que se ajusten a sus necesidades:
+   1. Para guardar una sola página, haga clic en **Guardar como versión** para exportar la imagen como una nueva versión (conservando el formato original) y guardarla en la misma carpeta.
 
    1. Para guardar una sola página, haga clic en **Guardar como nuevo recurso** para exportar el recurso a un formato diferente y guardarlo en cualquier carpeta como un nuevo recurso.
 
@@ -196,7 +199,7 @@ TBD: Insert a video of the available social media options.
 
 * Facilite comentarios sobre la documentación usando [!UICONTROL Editar esta página] ![editar la página](assets/do-not-localize/edit-page.png) o [!UICONTROL Registrar un problema] ![crear un problema de GitHub](assets/do-not-localize/github-issue.png), disponibles en la barra lateral derecha.
 
-* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General#support)
+* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General#support)
 
 >[!MORELIKETHIS]
 >

@@ -2,15 +2,18 @@
 title: Propiedades del recurso en  [!DNL the Content Hub]
 description: Obtenga información sobre cómo ver y administrar propiedades de recursos en  [!DNL Content Hub]
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 8%
+source-wordcount: '617'
+ht-degree: 9%
 
 ---
 
-
 # Administración de propiedades de recursos en Content Hub {#asset-properties}
+
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![Imagen del titular de metadatos](assets/metadata-banner-image.png)
 
@@ -126,4 +129,3 @@ Los administradores también pueden configurar las propiedades que se muestran p
 The date range allows you to select dates you want to see the assets. You can customize date range by choosing the start and end dates. 
 
 -->
-
