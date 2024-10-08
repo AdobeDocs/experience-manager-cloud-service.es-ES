@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: ee3e1bedddddff0aa41665359a91a0de48fd19c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1411'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ La activación de funcionalidades 2024.10.0 proporcionará el conjunto completo 
 * SITES - 24166: mitigación de recursos remotos para el editor de IU táctil.
 * SITES - 24409: registrar todos los procesadores de solicitudes en un único método HTTP.
 * SITES - 25008: mejorar el tratamiento de los problemas de PersistenceExceptions y de permisos.
-* SITIOS - 24821: haga que aem.page / aem.live sea el predeterminado.
+* SITES - 24821: hacer que aem.page / aem.live sea el predeterminado.
 
 ### Problemas solucionados {#fixed-issues-17964}
 
@@ -76,7 +76,7 @@ La activación de funcionalidades 2024.10.0 proporcionará el conjunto completo 
 * FORMS -14340: error al crear una instancia de FormsAndDocumentOmniSearchHandler y CloudStorageSubmitActionInserter.
 * FORMS - 15363: nombre mostrado en el Editor de reglas.
 * FORMS - 15381: mejora de la interfaz de usuario del mensaje de Ámbito de autorización.
-* FORMS - 15595: problema de salto de línea del texto de consentimiento del componente TnC del Formulario de AEM
+* FORMS - 15595: problema de salto de línea del texto de consentimiento del componente TnC del Formulario de AEM.
 * FORMS - 15623: AEMaaCS Forms: alternativas para actualizar varias tablas en Dynamics con un POST.
 * FORMS - 15682: AEM Forms: no se puede enlazar el documento de registro a Dynamics FDM.
 * FORMS - 15799: la página de firma de Adobe Sign GovCloud no se representa en iFrame.
@@ -107,7 +107,7 @@ La activación de funcionalidades 2024.10.0 proporcionará el conjunto completo 
 * SITES - 23899: eventos: los eventos de página se retrasan o no se generan en absoluto
 * SITES - 23961: eventos: la creación de modelos de fragmentos de contenido con referencias falla cuando la carpeta de configuración está presente
 * SITES - 23963: eventos: los eventos eliminados de la página a veces no llegan
-* SITES - 23443: GraphQL: El cursor de GraphQL consulta un comportamiento incoherente.
+* SITES - 23443: GraphQL: comportamiento incoherente de la consulta del cursor de GraphQL.
 * SITES - 10994: el orden de enfoque del teclado no es lógico.
 * SITES - 16357: el botón de configuración se trunca en la pestaña Análisis de configuración del menú de Sites.
 * SITES - 19836: el componente fantasma del contenedor se muestra en las instancias de publicación y vista previa.
@@ -123,7 +123,7 @@ La activación de funcionalidades 2024.10.0 proporcionará el conjunto completo 
 * SITES - 24025: 302 redirecciones en el encabezado de ubicación de devolución de AEM que utilizan DNS interno en lugar de DNS público
 * SITES - 24036: investigación necesaria para caracteres persistentes de RTE de AEM en formato ASCII
 * SITES - 24317: la configuración proxy no funciona con la autenticación básica
-* SITES - 24918: corrija los errores 504 que se devuelven ocasionalmente al utilizar una salida de IP dedicada.
+* SITES - 24918: corrige los errores 504 que se devuelven ocasionalmente al usar una salida de IP dedicada.
 
 ### Problemas conocidos {#known-issues-17964}
 
@@ -133,17 +133,17 @@ La activación de funcionalidades 2024.10.0 proporcionará el conjunto completo 
 
 Las funciones y API obsoletas y eliminadas de AEM as a Cloud Service se detallan en el documento [Funciones y API obsoletas y eliminadas](/help/release-notes/deprecated-removed-features.md).
 
-A continuación se muestra un resumen de las funciones recientemente obsoletas o de las que están en proceso de desaprobación.
+A continuación se muestra un resumen de las funciones que han quedado recientemente en desuso o de las que están en proceso de finalización de soporte.
 
 #### API de uso de JavaScript {#javascript-use-api}
 
 [La API de uso de JavaScript](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) está en desuso oficialmente debido a los desafíos que los usuarios tienen al depurar y mantener el código que aprovecha la API, así como las limitaciones de rendimiento en comparación con la alternativa de Java.
 
-Debería hacer la transición a [la API para uso de Java,](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api), que ofrece un mejor rendimiento, una depuración más sencilla y una mayor compatibilidad a largo plazo.
+Debería hacer la transición a [la API para uso de Java](https://experienceleague.adobe.com/es/docs/experience-manager-htl/content/java-use-api), que ofrece un mejor rendimiento, una depuración más sencilla y una mayor compatibilidad a largo plazo.
 
 #### com.day.cq.wcm.api {#com-day-cq-wcm-api}
 
-Tenga en cuenta que el Adobe está en proceso de actualizar `com.day.cq.wcm.api`. Algunos de sus métodos y clases se han marcado como `@Deprecated` en la versión actual. Se eliminarán en futuras versiones. Considere la posibilidad de cambiar a las alternativas sugeridas.
+Tenga en cuenta que Adobe está en proceso de actualizar `com.day.cq.wcm.api`. Algunos de sus métodos y clases se han marcado como `@Deprecated` en la versión actual. Se eliminarán en futuras versiones. Considere la posibilidad de cambiar a las alternativas sugeridas.
 
 ### Correcciones de seguridad {#security-17964}
 
