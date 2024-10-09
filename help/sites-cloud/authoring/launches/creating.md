@@ -5,10 +5,10 @@ exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 98%
+source-wordcount: '1077'
+ht-degree: 96%
 
 ---
 
@@ -153,7 +153,15 @@ Para crear un lanzamiento anidado desde la consola **Sites** basado en un lanzam
 
 Si selecciona **Listo**, volverá al carril **Referencias** de la **consola de Sites**, si selecciona la página adecuada en la que se muestra el nuevo lanzamiento.
 
-### Eliminación de un lanzamiento {#deleting-a-launch}
+### Clonación de un lanzamiento {#cloning-a-launch}
+
+Puede clonar un lanzamiento desde la [consola de lanzamientos](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
+
+* Para seleccionar el lanzamiento, toque o haga clic en la miniatura.
+* Aparecerá la barra de herramientas. Seleccione Clonar.
+   * El clon se mostrará en la consola.
+
+## Eliminación de un lanzamiento {#deleting-a-launch}
 
 Puede eliminar un lanzamiento desde la [consola de lanzamientos](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
 
