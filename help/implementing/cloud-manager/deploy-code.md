@@ -5,10 +5,10 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '1197'
-ht-degree: 81%
+source-wordcount: '1195'
+ht-degree: 79%
 
 ---
 
@@ -82,7 +82,7 @@ La fase de **prueba** incluye los siguientes pasos.
    * Las pruebas de interfaz de usuario son pruebas basadas en Selenium empaquetadas en una imagen Docker para permitir una amplia variedad de lenguajes y marcos de trabajo (como Java y Maven, Node y WebDriver.io, o cualquier otro marco de trabajo y tecnología creados en Selenium).
    * Consulte [Prueba de IU personalizada](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) para obtener más información.
 
-* **Auditoría de experiencias**: Este paso en la canalización siempre se ejecuta y no se puede omitir. A medida que se ejecuta una canalización de producción, se incluye un paso de auditoría de experiencias después de realizar pruebas funcionales personalizadas que ejecutarán las comprobaciones.
+* **Auditoría de experiencias**: Este paso en la canalización siempre se ejecuta y no se puede omitir. A medida que se ejecuta una canalización de producción, se incluye un paso de auditoría de experiencias después de realizar pruebas funcionales personalizadas que ejecutan las comprobaciones.
    * Las páginas configuradas se envían al servicio y se evalúan.
    * Los resultados son informativos y muestran las puntuaciones y el cambio entre la puntuación actual y la anterior.
    * Este conocimiento es importante para determinar si hay una regresión que se introduce con la implementación actual.
@@ -110,7 +110,7 @@ Este proceso continúa hasta que la implementación haya llegado a todos los edi
 
 ## Tiempos de espera {#timeouts}
 
-Los siguientes pasos agotarán el tiempo de espera si se deja a la espera de los comentarios del usuario:
+Los siguientes pasos agotan el tiempo de espera si se deja esperando los comentarios del usuario:
 
 | Paso | Tiempo de espera |
 |--- |--- |
@@ -147,7 +147,7 @@ En estas circunstancias, cuando se puede volver a ejecutar, la página de estado
 
 ### Limitaciones {#limitations}
 
-* Volver a ejecutar el paso de implementación de producción solo estará disponible para la última ejecución.
+* Volver a ejecutar el paso de implementación de producción solo está disponible para la última ejecución.
 * Volver a ejecutar no está disponible para ejecuciones de actualización push.
    * Si la última ejecución es una ejecución de actualización push, no será posible volver a ejecutarla.
 * Si la última ejecución ha fallado en cualquier momento antes del paso de implementación de producción, no será posible volver a ejecutarla.

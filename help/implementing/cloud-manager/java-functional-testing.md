@@ -1,14 +1,14 @@
 ---
-title: Pruebas funcionales Java&trade;
-description: Obtenga información sobre cómo escribir las pruebas funcionales Javaamp;amp;trade; para AEM as a Cloud Service
+title: Java &trade; Pruebas funcionales
+description: Aprenda a escribir pruebas funcionales de Java &trade; para AEM as a Cloud Service
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: f60dc00fc031fa7ef73a18daec9c6c0e5570b018
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 94%
+source-wordcount: '856'
+ht-degree: 78%
 
 ---
 
@@ -34,7 +34,7 @@ Una vez que tenga el contenido de la carpeta `it.tests`, puede utilizarlo como b
 
 Las mismas herramientas que utiliza Adobe para escribir pruebas funcionales de productos se pueden usar para escribir las pruebas funcionales personalizadas. Utilice las [pruebas funcionales del producto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) en GitHub como ejemplo de cómo escribir las pruebas.
 
-El código para la prueba funcional personalizada es el código Java™ ubicado en la carpeta `it.tests` del proyecto. Debe producir un único JAR con todas las pruebas funcionales. Si la generación produce más de un JAR de prueba, el JAR seleccionado no es determinista. Si no produce ningún JAR de prueba, el paso de prueba se aprueba de forma predeterminada. [Consulte el arquetipo del proyecto AEM](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) para pruebas de ejemplo.
+El código para la prueba funcional personalizada es el código Java™ ubicado en la carpeta `it.tests` del proyecto. Debe producir un único JAR con todas las pruebas funcionales. Si la generación produce más de un JAR de prueba, el JAR seleccionado no es determinista. Si no produce ningún JAR de prueba, el paso de prueba se aprueba de forma predeterminada. AEM Consulte [Tipo de archivo del proyecto de](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) para ver pruebas de ejemplo.
 
 Las pruebas se ejecutan en una infraestructura de pruebas mantenida por Adobe que incluye al menos dos instancias de autor, dos instancias de publicación y una configuración de Dispatcher. Esta configuración significa que las pruebas funcionales personalizadas se ejecutan con toda la pila de AEM.
 
@@ -106,9 +106,9 @@ Consulte el [`aem-testing-clients`repositorio de GitHub](https://github.com/adob
 | Tipo | Valor | Descripción |
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 0,5 | Cantidad de tiempo de CPU reservado por ejecución de prueba |
-| Memoria | 0,5Gi | Cantidad de memoria asignada a la prueba, valor en gibibytes |
-| Tiempo de espera | 30 m | La duración tras la cual se termina la prueba. |
-| Duración recomendada | 15 m | Adobe recomienda escribir las pruebas para que no tarden más de este tiempo. |
+| Memoria | 0,5Gi | Cantidad de memoria asignada a la prueba, valor en gibibytes. |
+| Tiempo de espera | 30 m | Límite de tiempo tras el cual se detiene la prueba. |
+| Duración recomendada | 15 m | El Adobe recomienda que las pruebas no tarden más de este tiempo. |
 
 >[!NOTE]
 >
@@ -118,8 +118,7 @@ Consulte el [`aem-testing-clients`repositorio de GitHub](https://github.com/adob
 
 * aem-cloud-testing-customers:
 
-Los próximos cambios en la infraestructura en contenedores usada para ejecutar pruebas funcionales requerirán que la biblioteca [aem-cloud-testing-customers](https://github.com/adobe/aem-testing-clients) usada en su prueba funcional personalizada se actualice al menos a la versión **1.2.1**
-Asegúrese de que se ha actualizado su dependencia en `it.tests/pom.xml`.
+Los próximos cambios en la infraestructura en contenedores para ejecutar pruebas funcionales requieren actualizar la biblioteca [aem-cloud-testing-customers](https://github.com/adobe/aem-testing-clients) en sus pruebas funcionales personalizadas a la versión **1.2.1** o superior. Asegúrese de que la dependencia del archivo `it.tests/pom.xml` se actualice en consecuencia.
 
 ```
 <dependency>
@@ -132,7 +131,7 @@ Asegúrese de que se ha actualizado su dependencia en `it.tests/pom.xml`.
 >[!NOTE]
 >
 >Este cambio debe realizarse antes del 6 de abril de 2024.
->Si no se actualiza la biblioteca de dependencias, se producirán errores de canalización en el paso &quot;Pruebas funcionales personalizadas&quot;.
+>No actualizar la biblioteca de dependencias puede provocar errores de canalización en el paso &quot;Pruebas funcionales personalizadas&quot;.
 
 ### Ejecución de pruebas locales {#local-test-execution}
 
@@ -140,7 +139,7 @@ Antes de activar pruebas funcionales en una canalización de Cloud Manager, se r
 
 #### Ejecutar en un IDE {#running-in-an-ide}
 
-Como las clases de prueba son pruebas JUnit, se pueden ejecutar desde IDE de Java™ convencionales como Eclipse, IntelliJ y NetBeans. Dado que tanto las pruebas funcionales de producto como las personalizadas se basan en la misma tecnología, ambas se pueden ejecutar localmente al copiar las pruebas de producto en las pruebas personalizadas.
+Como las clases de prueba son pruebas JUnit, se pueden ejecutar desde IDE de Java ™ convencionales como Eclipse, IntelliJ y NetBeans. Dado que tanto las pruebas funcionales de producto como las personalizadas se basan en la misma tecnología, ambas se pueden ejecutar localmente al copiar las pruebas de producto en las pruebas personalizadas.
 
 Sin embargo, al ejecutar estas pruebas, será necesario establecer una serie de propiedades del sistema que espera el `aem-testing-clients` (y la biblioteca de clientes de prueba de Sling subyacente).
 
@@ -148,15 +147,15 @@ Las propiedades del sistema son las siguientes:
 
 | Propiedad | Descripción | Ejemplos |
 |-------------------------------------|------------------------------------------------------------------|-------------------------|
-| `sling.it.instances` | cantidad de instancias, para que coincidan con el servicio en la nube debe establecerse en `2` | `2` |
-| `sling.it.instance.url.1` | debe establecerse en la URL de autor | `http://localhost:4502` |
-| `sling.it.instance.runmode.1` | el modo de ejecución de la primera instancia debe establecerse en `author` | `author` |
-| `sling.it.instance.adminUser.1` | debe establecerse en el usuario administrador del autor. | `admin` |
-| `sling.it.instance.adminPassword.1` | debe establecerse en la contraseña de administrador de autor. |                         |
-| `sling.it.instance.url.2` | debe establecerse en la URL de publicación | `http://localhost:4503` |
-| `sling.it.instance.runmode.2` | modo de ejecución de la segunda instancia, debe configurarse como `publish` | `publish` |
-| `sling.it.instance.adminUser.2` | debe establecerse en el usuario administrador de publicación. | `admin` |
-| `sling.it.instance.adminPassword.2` | debe establecerse en la contraseña de administrador de publicación. |                         |
+| `sling.it.instances` | El número de instancias que coinciden con el servicio en la nube debe establecerse en `2`. | `2` |
+| `sling.it.instance.url.1` | Se establece en URL del autor. | `http://localhost:4502` |
+| `sling.it.instance.runmode.1` | Modo de ejecución de la primera instancia. Establecido en `author`. | `author` |
+| `sling.it.instance.adminUser.1` | Se establece en usuario administrador de autor. | `admin` |
+| `sling.it.instance.adminPassword.1` | Establezca como contraseña de administrador de autor. |                         |
+| `sling.it.instance.url.2` | se establece en publicar URL. | `http://localhost:4503` |
+| `sling.it.instance.runmode.2` | Modo de ejecución de la segunda instancia. Establecido en `publish`. | `publish` |
+| `sling.it.instance.adminUser.2` | Configúrelo en usuario administrador de publicación. | `admin` |
+| `sling.it.instance.adminPassword.2` | Configúrelo en Contraseña de administrador de publicación. |                         |
 
 
 

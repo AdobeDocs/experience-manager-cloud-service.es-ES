@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '4513'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -794,7 +794,7 @@ Un problema común es el uso de nodos llamados `config` en los cuadros de diálo
 * **Gravedad**: Principal
 * **Desde**: Versión 2019.6.0
 
-Similar a la regla [Los paquetes no deben contener configuraciones OSGi duplicada,](#oakpal-package-osgi), este es un problema común en proyectos complejos en los que la misma ruta de nodo se escribe en varios paquetes de contenido independientes. Aunque el uso de dependencias de paquetes de contenido se puede utilizar para garantizar un resultado coherente, es mejor evitar las superposiciones por completo.
+Similar a la regla [Los paquetes no deben contener configuraciones OSGi duplicadas](#oakpal-package-osgi), este es un problema común en proyectos complejos en los que varios paquetes de contenido independientes escriben la misma ruta de acceso de nodo. Aunque el uso de dependencias de paquetes de contenido se puede utilizar para garantizar un resultado coherente, es mejor evitar las superposiciones por completo.
 
 ### El modo de creación predeterminado no debe ser la IU clásica {#oakpal-default-authoring}
 
@@ -853,7 +853,7 @@ Los clientes que utilizan la replicación inversa deben ponerse en contacto con 
 * **Gravedad**: Menor
 * **Desde**: Versión 2021.2.0
 
-Las bibliotecas de cliente de Experience Manager pueden contener recursos estáticos como imágenes y fuentes. Como se describe en el documento [Uso de preprocesadores,](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) al utilizar bibliotecas cliente proxy, estos recursos estáticos deben estar contenidos en una carpeta secundaria denominada `resources` para que se pueda consultar en las instancias de publicación.
+Las bibliotecas de cliente de Experience Manager pueden contener recursos estáticos como imágenes y fuentes. Como se describe en el documento [Uso de preprocesadores](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors), cuando se usan bibliotecas cliente proxy, estos recursos estáticos deben estar contenidos en una carpeta secundaria denominada `resources` para que se haga referencia de forma efectiva en las instancias de publicación.
 
 #### Código no conforme {#non-compliant-proxy-enabled}
 

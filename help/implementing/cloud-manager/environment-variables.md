@@ -5,10 +5,10 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 75%
+ht-degree: 71%
 
 ---
 
@@ -90,7 +90,7 @@ Una vez creadas las variables de entorno, puede actualizarlas con el botón **Ag
 
 1. Después de hacer los cambios de configuración necesarios, selecciona **Guardar**.
 
-[Al igual que cuando se agregan variables,](#add-variables) se muestra un indicador con el estado **Actualizando** en la parte superior de la tabla y junto a las variables recién actualizadas para indicar que el entorno se está actualizando con la configuración. Una vez finalizadas, las variables de entorno actualizadas se pueden ver en la tabla.
+[Al igual que cuando se agregan variables](#add-variables), se muestra un indicador con el estado **Actualizando** en la parte superior de la tabla y junto a las variables recién actualizadas para indicar que el entorno se está actualizando con la configuración. Una vez finalizadas, las variables de entorno actualizadas se pueden ver en la tabla.
 
 >[!TIP]
 >

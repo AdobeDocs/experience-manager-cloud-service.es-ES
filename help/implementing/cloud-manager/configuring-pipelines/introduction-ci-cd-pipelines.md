@@ -1,14 +1,14 @@
 ---
-title: Canalizaciones de CI/CD
+title: Introducción a las canalizaciones de CI/CD
 description: Obtenga información sobre las canalizaciones de CI/CD de Cloud Manager y cómo se pueden utilizar para implementar su código de forma eficaz.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7f6e8f91716b679f9715f9df33ae59aa5bf70751
+source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1488'
 ht-degree: 35%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 35%
 
 Obtenga información sobre las canalizaciones CI/CD (integración continua/entrega continua) de Cloud Manager y cómo se pueden utilizar para implementar su código de forma eficaz.
 
-## Introducción {#introduction}
+## Introducción a las canalizaciones de CI/CD {#introduction}
 
 Una canalización de CI/CD en Cloud Manager es un mecanismo para crear código desde un repositorio de origen e implementarlo en un entorno. Un evento almacena en déclencheur una canalización, como una solicitud de extracción de un repositorio de código fuente como Git (es decir, un cambio de código). O bien, se puede activar en una programación regular para que coincida con una cadencia de lanzamiento.
 

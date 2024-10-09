@@ -5,10 +5,10 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 20%
+source-wordcount: '551'
+ht-degree: 18%
 
 ---
 
@@ -28,7 +28,7 @@ Las variables pueden almacenarse como texto sin formato o cifrarse en reposo. En
 
 ### Convenciones de nomenclatura de variables de canalización {#naming-conventions}
 
-Los nombres de las variables deben cumplir las siguientes convenciones.
+Los nombres de las variables deben cumplir las siguientes convenciones:
 
 * Las variables solo pueden contener caracteres alfanuméricos y el guion bajo (`_`).
 * Los nombres deben estar en mayúsculas.
@@ -37,19 +37,19 @@ Los nombres de las variables deben cumplir las siguientes convenciones.
 * Cada `string` debe tener menos de 2048 caracteres.
 * Cada valor de la variable de tipo `secretString` debe tener 500 caracteres o menos.
 
-## Mediante la IU de Cloud Manager {#ui}
+## Mediante la interfaz de usuario de Cloud Manager {#ui}
 
-Las variables de canalización se pueden configurar y administrar a través de la interfaz de usuario de Cloud Manager. Debe tener permisos para editar la canalización a fin de agregar, editar y eliminar variables de canalización.
+Las variables de canalización se pueden configurar y administrar mediante la interfaz de usuario de Cloud Manager. Debe tener permisos para editar la canalización y agregar, editar y eliminar variables de canalización.
 
 Si se está ejecutando una canalización, la administración de variables está bloqueada.
 
 ### Agregar variables de canalización {#add-ui}
 
-1. Al [administrar sus canalizaciones,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) pulse o haga clic en el botón de los tres puntos de la canalización para la que desea crear variables de canalización y seleccione **Ver/editar variables** del menú contextual.
+1. Cuando [administre sus canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), haga clic en el botón de los tres puntos de la canalización para la que desea crear variables de canalización y seleccione **Ver/editar variables** del menú contextual.
 
    ![Ver/editar variables de canalización](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. Se abre la ventana **Configuración de variables**. Escriba los detalles de la variable en la primera fila de la tabla y toque o haga clic en **Agregar**.
+1. Se abre la ventana **Configuración de variables**. Escriba los detalles de la variable en la primera fila de la tabla y haga clic en **Agregar**.
 
    * **Nombre de configuración** es un identificador único para su variable, que debe encabezar [convenciones de nomenclatura de variables de canalización](#naming-conventions).
    * **Valor** es el valor que contiene la variable.
@@ -65,25 +65,25 @@ Si se está ejecutando una canalización, la administración de variables está 
 
 ### Edición de variables de canalización {#edit-ui}
 
-1. Al [administrar sus canalizaciones,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) pulse o haga clic en el botón de los tres puntos de la canalización para la que desea crear variables de canalización y seleccione **Ver/editar variables** del menú contextual.
+1. Cuando [administre sus canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), haga clic en el botón de los tres puntos de la canalización para la que desea crear variables de canalización y seleccione **Ver/editar variables** del menú contextual.
 
    ![Ver/editar variables de canalización](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. Se abre la ventana **Configuración de variables**. Pulse o haga clic en el botón de los tres puntos de la variable que desee editar y seleccione **Editar**.
+1. Se abre la ventana **Configuración de variables**. Haga clic en el botón de los tres puntos de la variable que desee editar y seleccione **Editar**.
 
    ![Editar variable](/help/implementing/cloud-manager/assets/pipeline-variables-edit.png)
 
-1. Actualice el valor de la variable según sea necesario y toque o haga clic en **Aplicar** (la marca de verificación al final de la fila) para aplicar el cambio o en **Descartar** (la flecha hacia atrás) para revertir el cambio.
+1. Actualice el valor de la variable según sea necesario y haga clic en **Aplicar** (la marca de verificación al final de la fila) para aplicar el cambio o en **Descartar** (la flecha hacia atrás) para revertir el cambio.
 
    * Solo se puede editar el valor de la variable.
 
    ![Editando una variable](/help/implementing/cloud-manager/assets/pipeline-variables-edit-save.png)
 
-1. Toque o haga clic en **Guardar** para guardar los cambios que hizo en las variables en la canalización.
+1. Haga clic en **Guardar**.
 
 Si desea eliminar una variable, seleccione **Eliminar** en lugar de **Editar** del menú de los tres puntos de la variable de canalización en la ventana **Configuración de variables**.
 
-## Uso de la CLI de Cloud Manager {#cli}
+## Utilizar la CLI de Cloud Manager {#cli}
 
 Este comando de CLI configura una variable.
 

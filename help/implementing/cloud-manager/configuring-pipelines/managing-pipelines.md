@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 70%
+source-wordcount: '1108'
+ht-degree: 68%
 
 ---
 
@@ -98,7 +98,7 @@ Según el tipo de canalización, puede cancelar la ejecución si hace clic de nu
 
 1. Vaya a la tarjeta **Canalizaciones** de la página **Resumen del programa** y haga clic en el botón de puntos suspensivos situado junto a la canalización que quiere editar y seleccione **Editar** en el menú.
 
-1. El cuadro de diálogo **Editar canalización de producción** o **Editar canalización que no sea de producción** se mostrará y le permitirá editar los mismos detalles introducidos al crear la canalización.
+1. Se muestra el cuadro de diálogo **Editar canalización de producción** o **Editar canalización que no es de producción**, que le permite editar los mismos detalles que introdujo al crear la canalización.
 
    * Consulte las siguientes páginas para obtener más información sobre los campos y las opciones de configuración disponibles para las canalizaciones.
       * [Configurar canalizaciones de producción](configuring-production-pipelines.md)

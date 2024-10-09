@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo controlar las canalizaciones que s
 exl-id: 3ae3c19e-2621-4073-ae17-32663ccf9e7b
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 6eabf593a7566129d32d9a5888cc480117bef51f
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 77%
+source-wordcount: '243'
+ht-degree: 63%
 
 ---
 
@@ -35,9 +35,9 @@ pipelines:
 
 | Parámetro | Valores posibles | Predeterminado | Descripción |
 |---|---|---|---|
-| `shouldDeletePreviousComment` | `true` o `false` | `false` | Si se conserva solo el último comentario con los resultados del escaneo de código de su solicitud de extracción de github o se conserva todo |
+| `shouldDeletePreviousComment` | `true` o `false` | `false` | Si se conserva solo el último comentario con los resultados del análisis de código de esta solicitud de extracción de GitHub o si se conserva todo |
 | `type` | `CI_CD` | N/D | Define el comportamiento de una CI/CD Pipeline |
-| `template.programID` | Entero | No se reutilizan variables de canalización | Se puede usar para reutilizar las [variables de canalización](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) establecidas en una de las canalizaciones existentes y creadas automáticamente por cada PR. |
-| `template.pipelineID` | Entero | No se reutilizan variables de canalización | Se puede usar para reutilizar las [variables de canalización](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) establecidas en una de las canalizaciones existentes y creadas automáticamente por cada PR. |
+| `template.programID` | Entero | No se reutilizan variables de canalización | Puede usarlo para reutilizar las [variables de canalización](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) establecidas en una canalización existente creada automáticamente por cada solicitud de extracción. |
+| `template.pipelineID` | Entero | No se reutilizan variables de canalización | Puede usarlo para reutilizar las [variables de canalización](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) establecidas en una canalización existente creada automáticamente por cada solicitud de extracción. |
 | `namePrefix` | Cadena | `Full Stack Code Quality Pipeline for PR` | Se utiliza para establecer el nombre de la canalización que se crea automáticamente |
-| `importantMetricsFailureBehavior` | `CONTINUE` o `FAIL` o `PAUSE` | `CONTINUE` | Establece el comportamiento de las métricas importantes de la canalización<br>`CONTINUE` = Si falla una métrica importante, la canalización avanzará automáticamente<br>`FAIL` = La canalización finalizará con el estado ERROR si falla una métrica importante<br>`PAUSE` = El paso de análisis de código recibirá un estado de ESPERA cuando falle una métrica importante y se deberá reanudar manualmente |
+| `importantMetricsFailureBehavior` | `CONTINUE` o `FAIL` o `PAUSE` | `CONTINUE` | Establece el comportamiento de la métrica importante de la canalización<br>`CONTINUE` = Si falla una métrica importante, la canalización avanza automáticamente<br>`FAIL` = La canalización termina con un estado FALLIDO si falla una métrica importante<br>`PAUSE` = El paso de análisis de código recibe un estado ESPERANDO cuando falla una métrica importante y debe reanudarse manualmente |

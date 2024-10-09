@@ -6,25 +6,29 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 66%
+source-wordcount: '1314'
+ht-degree: 39%
 
 ---
 
 
 # Agregar una canalización de producción {#configure-production-pipeline}
 
-Aprenda a configurar canalizaciones de producción para crear e implementar su código en entornos de producción. Una canalización de producción implementa el código primero en el entorno de ensayo y, tras la aprobación, implementa el mismo código en el entorno de producción.
+Obtenga información sobre cómo configurar canalizaciones de producción para crear e implementar su código en entornos de producción. Una canalización de producción implementa el código primero en el entorno de ensayo. En el momento de la aprobación, implementa el mismo código en el entorno de producción.
 
 Un usuario debe tener la función **[Administrador de implementación](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** para configurar las canalizaciones de producción.
 
 >[!NOTE]
 >
->No se puede configurar una canalización de producción hasta que se complete la creación del programa, un repositorio de Git tenga al menos una rama y se cree un conjunto de entornos de producción y ensayo.
+>No se puede configurar una canalización de producción hasta que se produzca lo siguiente:
+>
+>* Se crea el programa.
+>* El repositorio de Git tiene al menos una rama.
+>* Se crean los entornos de producción y ensayo.
 
-Antes de comenzar a implementar el código, debe configurar la configuración de la canalización desde [!UICONTROL Cloud Manager].
+Antes de comenzar a implementar el código, establece la configuración de la canalización desde [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >
@@ -36,7 +40,7 @@ Una vez que haya configurado el programa y tenga al menos un entorno usando la i
 
 >[!TIP]
 >
->Antes de configurar una canalización front-end, consulte [Recorrido de creación rápida de sitios de AEM](/help/journey-sites/quick-site/overview.md) para obtener una guía completa a través de la herramienta de creación rápida de sitios de AEM fácil de usar. Este recorrido le ayudará a optimizar el desarrollo front-end de su sitio de AEM, lo que le permitirá personalizar rápidamente su sitio sin conocimiento del back-end de AEM.
+>AEM Antes de configurar una canalización front-end, consulte el [Recorrido AEM de creación rápida de sitios](/help/journey-sites/quick-site/overview.md) de para obtener una guía completa a través de la herramienta de creación rápida de sitios de la aplicación de fácil uso de la herramienta de creación rápida de sitios de la interfaz de usuario de la interfaz de usuario de. Este recorrido AEM AEM puede ayudarle a optimizar el desarrollo front-end de su sitio de la, lo que le permite personalizar su sitio rápidamente sin conocimientos del back-end de la.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
@@ -50,27 +54,27 @@ Una vez que haya configurado el programa y tenga al menos un entorno usando la i
 
    **Activador de implementación**: dispone de las siguientes opciones al definir los activadores de implementación para iniciar la canalización.
 
-   * **Manual**: utilice esta opción para iniciar manualmente la canalización.
-   * **Cambios en Git**: esta opción inicia la canalización CI/CD cada vez que se añaden confirmaciones a la rama git configurada. Con esta opción, aún puede iniciar la canalización manualmente según sea necesario.
+   * **Manual**: inicie la canalización manualmente.
+   * **Cambios en Git**: inicia la canalización de CI/CD cada vez que se agregan confirmaciones a la rama Git configurada. Con esta opción, aún puede iniciar la canalización manualmente según sea necesario.
 
    **Comportamiento de errores de métricas importantes**: durante la configuración o edición de la canalización, el **Administrador de implementación** tiene la opción de definir el comportamiento de la canalización cuando se encuentra un error importante en cualquiera de las puertas de calidad. Las opciones disponibles son:
 
-   * **Preguntar cada vez**: esta es la configuración predeterminada y requiere intervención manual en caso de que se produzca algún error importante.
-   * **Fallo inmediatamente**: si se selecciona, la canalización se cancela siempre que se produzca un fallo importante. Básicamente, esto emula a un usuario rechazando manualmente cada error.
-   * **Continuar inmediatamente**: si se selecciona, la canalización se realizará automáticamente cada vez que se produzca un error importante. Básicamente, esto está emulando a un usuario que aprueba manualmente cada error.
+   * **Preguntar cada vez**: configuración predeterminada. Requiere intervención manual en cualquier fallo importante.
+   * **Fallo inmediatamente**: si se selecciona, la canalización se cancela siempre que se produzca un fallo importante. Básicamente, este proceso emula a un usuario rechazando manualmente cada error.
+   * **Continuar inmediatamente**: si se selecciona, la canalización se ejecuta automáticamente cada vez que se produce un error importante. Básicamente, este proceso emula al usuario que aprueba manualmente cada error.
 
    ![Configuración de canalización de producción](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
 
-1. En la ficha **Código Source** debe seleccionar qué tipo de código debe procesar la canalización.
+1. En la ficha **Código Source**, seleccione qué tipo de código debe procesar la canalización.
 
-   * **[Código de pila completa](#full-stack-code)**
-   * **[Implementación de destino](#targeted-deployment)**
+   * **[Configurar una canalización de código de pila completa](#full-stack-code)**
+   * **[Configurar una canalización de implementación de destino](#targeted-deployment)**
 
 Consulte [Canalizaciones de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) para obtener más información sobre los tipos de canalizaciones.
 
 Los pasos para completar la creación de la canalización de producción varían según el tipo de código fuente seleccionado. Siga los vínculos anteriores para ir a la siguiente sección de este documento para poder completar la configuración de la canalización.
 
-### Código de pila completa {#full-stack-code}
+### Configuración de una canalización de código de pila completa {#full-stack-code}
 
 AEM Una canalización de código de pila completa implementa simultáneamente compilaciones de código de back-end y front-end que contienen una o más aplicaciones de servidor de junto con la configuración HTTPD/Dispatcher.
 
@@ -78,45 +82,45 @@ AEM Una canalización de código de pila completa implementa simultáneamente co
 >
 >Si ya existe una canalización de código de pila completa para el entorno seleccionado, esta selección se desactiva.
 
-Para finalizar la configuración de la canalización de producción de código de pila completa, siga estos pasos.
+**Para configurar una canalización de código de pila completa:**
 
-1. En el **Código fuente**, debe definir las siguientes opciones.
+1. En la ficha **Código Source**, defina las siguientes opciones.
 
-   * **Repositorio**: esta opción define desde qué repositorio de Git la canalización debe recuperar el código.
+   * **Repositorio**: define desde qué repositorio de Git la canalización debe recuperar el código.
 
    >[!TIP]
    > 
-   >Consulte el documento [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/managing-repositories.md) para aprender a añadir y administrar repositorios en Cloud Manager.
+   >Consulte [Agregar y administrar repositorios](/help/implementing/cloud-manager/managing-code/managing-repositories.md) para obtener información sobre cómo agregar y administrar repositorios en Cloud Manager.
 
-   * **Rama de Git**: esta opción define desde qué rama de la canalización seleccionada debe recuperar el código.
-      * Introduzca los primeros caracteres del nombre de la rama y la función de autocompletar de este campo encontrará las ramas coincidentes que le ayudarán a seleccionar.
+   * **Rama de Git**: define desde qué rama la canalización seleccionada debe recuperar el código.
+Introduzca los primeros caracteres del nombre de la rama y la función de autocompletar de este campo encontrará las ramas coincidentes que le ayudarán a seleccionar.
    * **Ignorar configuración de nivel web**: cuando se selecciona, la canalización no implementa la configuración del nivel web.
-   * **Pausar antes de implementar en producción**: esta opción pone en pausa la canalización antes de implementarla en producción.
-   * **Programada**: esta opción permite al usuario activar la implementación de producción programada.
+   * **Pausar antes de implementar en producción**: pausa la canalización antes de implementarla en producción.
+   * **Programado**: permite al usuario habilitar la implementación de producción programada.
 
    ![Código de pila completa](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
-1. Pulse o haga clic en **Continuar** para avanzar a la pestaña **Auditoría de experiencias**, donde puede definir las rutas que siempre deben incluirse en la Auditoría de experiencias.
+1. Haga clic en **Continuar** para avanzar a la pestaña **Auditoría de experiencias**, donde puede definir las rutas que siempre deben incluirse en la auditoría de experiencias.
 
    ![Añadir auditoría de experiencias](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
 1. Proporcione las rutas que se incluirán en la auditoría de experiencias.
 
-   * Consulte el documento [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-dashboard.md#configuration) para obtener más información.
+   * Consulte [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-dashboard.md#configuration) para obtener más información.
 
 1. Haga clic en **Guardar** para guardar la canalización.
 
-Las rutas configuradas para la auditoría de experiencias se envían al servicio y se evalúan según las pruebas de rendimiento, accesibilidad, SEO (optimización del motor de búsqueda), prácticas recomendadas y PWA (aplicación web progresiva) cuando se ejecuta la canalización. Consulte [Comprender los resultados de la auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-dashboard.md) para obtener más información.
+Cuando se ejecuta la canalización, las rutas configuradas para la auditoría de experiencias se envían y evalúan en función del rendimiento, la accesibilidad, la SEO, las prácticas recomendadas y las pruebas del PWA. Para obtener más información, consulte [Comprender los resultados de la auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-dashboard.md).
 
 La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en la tarjeta **Canalizaciones** en la página **Información general del programa**.
 
-### Implementación dirigida {#targeted-deployment}
+### Configuración de una canalización de implementación de destino {#targeted-deployment}
 
 AEM Una implementación de destino implementa el código únicamente para partes seleccionadas de la aplicación de. En una implementación de este tipo, puede elegir **Incluir** uno de los siguientes tipos de código:
 
-* AEM **Configuración**: configure las opciones para las distintas características de su entorno de.
+* AEM **Configuración**: configure las opciones para varias características de su entorno de la.
    * Consulte [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md) para obtener una lista de las configuraciones admitidas, que incluye el reenvío de registros, las tareas de mantenimiento relacionadas con la depuración y varias configuraciones de CDN, y para administrarlas en el repositorio de modo que se implementen correctamente.
-   * Al ejecutar una canalización de implementación de destino, se implementarán las configuraciones, siempre que se guarden en el entorno, el repositorio y la rama que haya definido en la canalización.
+   * Al ejecutar una canalización de implementación de destino, se implementan las configuraciones, siempre que se hayan guardado en el entorno, el repositorio y la rama definidos en la canalización.
    * En cualquier momento, solo puede haber una canalización de configuración por entorno.
 * **Código front-end**: configure JavaScript AEM y CSS para el front-end de la aplicación.
    * Con las canalizaciones front-end, se da más independencia a los desarrolladores de front-end y el proceso de desarrollo se puede acelerar.
@@ -124,13 +128,13 @@ AEM Una implementación de destino implementa el código únicamente para partes
 * **Configuración de nivel web**: configure las propiedades de Dispatcher para almacenar, procesar y enviar páginas web al cliente.
    * Consulte el documento [Canalizaciones de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) para obtener más información.
    * Si existe una canalización de código de nivel web para el entorno seleccionado, esta selección está deshabilitada.
-   * Si tiene una canalización de pila completa existente implementando en un entorno, al crear una canalización de configuración de capa web para el mismo entorno, se omitirá la configuración de capa web existente en la canalización de pila completa.
+   * Si crea una canalización de configuración de nivel web para un entorno con una canalización de pila completa existente, se ignorará la configuración de nivel web en la canalización de pila completa. Este cambio solo afecta a la configuración del nivel web en ese entorno.
 
 >[!NOTE]
 >
->Las canalizaciones de configuración de nivel web no son compatibles con los repositorios privados. Consulte el documento [Agregar repositorios privados en Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) para obtener detalles y la lista completa de limitaciones.
+>Las canalizaciones de configuración de nivel web no son compatibles con los repositorios privados. Consulte [Agregar repositorios privados en Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) para obtener detalles y la lista completa de limitaciones.
 
-Los pasos para completar la creación de la canalización de implementación de producción y destino son los mismos una vez que elija un tipo de implementación.
+**Para configurar una canalización de implementación de destino:**
 
 1. Elija el tipo de implementación que necesita.
 
@@ -152,7 +156,7 @@ Los pasos para completar la creación de la canalización de implementación de 
       * Introduzca los primeros caracteres del nombre de la rama y la función de autocompletar de este campo. Encuentra las ramas coincidentes que puede seleccionar.
    * **Ubicación del código**: esta opción define la ruta en la rama de la repo seleccionada desde la que la canalización debe recuperar el código.
    * **Pausar antes de implementar en producción**: esta opción pone en pausa la canalización antes de implementarla en producción.
-   * **Programado**: esta opción permite al usuario habilitar la implementación de producción programada. Solo disponible para implementaciones de destino de nivel web.
+   * **Programado**: permite al usuario habilitar la implementación de producción programada. Solo disponible para implementaciones de destino de nivel web.
 
    ![Canalización de configuración](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
 
@@ -162,9 +166,9 @@ La canalización se guarda y ahora puede [administrar las canalizaciones](managi
 
 ## Omitir paquetes de Dispatcher {#skip-dispatcher-packages}
 
-Si desea que los paquetes de Dispatcher se creen como parte de la canalización, pero no desea que se publiquen para crear almacenamiento, puede desactivar la publicación, lo que puede reducir la duración de la ejecución de la canalización.
+Para crear paquetes de Dispatcher en la canalización sin publicarlos en el almacenamiento de compilación, puede desactivar la opción de publicación. Hacerlo puede ayudar a reducir el tiempo de ejecución de la canalización.
 
-La siguiente configuración para deshabilitar la publicación de paquetes de Dispatcher debe agregarse a través del archivo `pom.xml` del proyecto. Se basa en una variable de entorno, que sirve como un indicador que puede establecer en el contenedor de compilación de Cloud Manager para definir cuándo se deben ignorar los paquetes de Dispatcher.
+La siguiente configuración para deshabilitar la publicación de paquetes de Dispatcher debe agregarse a través del archivo `pom.xml` del proyecto. Una variable de entorno sirve como un indicador que se establece en el contenedor de compilación de Cloud Manager para determinar cuándo se deben ignorar los paquetes de Dispatcher.
 
 ```xml
 <profile>
