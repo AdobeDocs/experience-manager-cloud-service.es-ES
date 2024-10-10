@@ -4,7 +4,7 @@ description: Conozca las directrices y las prácticas recomendadas para utilizar
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 feature: Migration
 role: Admin
-source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
+source-git-commit: 208a4de5aab5326490908fade8f12f17b8f3c0d7
 workflow-type: tm+mt
 source-wordcount: '1368'
 ht-degree: 14%
@@ -52,7 +52,7 @@ La fórmula general para calcular el espacio libre necesario en disco es la sigu
 * *tamaño del almacén de nodos*: el tamaño del directorio del almacén de segmentos o el tamaño de la base de datos MongoDB.
 Por lo tanto, para un tamaño de almacén de segmentos de 20 GB, el espacio libre requerido en disco sería de 94 GB.
 
-* Se debe mantener un conjunto de migración a lo largo de la actividad de transferencia de contenido para admitir recargas de contenido. Se puede crear y mantener un máximo de 20 conjuntos de migración por proyecto en Cloud Acceleration Manager a la vez durante la actividad de transferencia de contenido. Si se necesitan más de 20 conjuntos de migración, cree un segundo proyecto en Cloud Acceleration Manager. Sin embargo, esto requiere administración de proyectos adicional y administración externa al producto para evitar que varios usuarios sobrescriban contenido en el destino.
+* Se debe mantener un conjunto de migración a lo largo de la actividad de transferencia de contenido para admitir recargas de contenido. Se puede crear y mantener un máximo de 10 conjuntos de migración por proyecto en Cloud Acceleration Manager a la vez durante la actividad de transferencia de contenido. Si se necesitan más de 10 conjuntos de migración, cree un segundo proyecto en Cloud Acceleration Manager. Sin embargo, esto requiere administración de proyectos adicional y administración externa al producto para evitar que varios usuarios sobrescriban contenido en el destino.
 
 * Evite alterar el directorio de instalación de la herramienta CTT. De forma predeterminada, la instalación se realiza en la ruta crx-quickstart/cloud-migration. Otras bibliotecas utilizan internamente esta ubicación específica. Modificar esta ruta puede provocar problemas de extracción.
 
