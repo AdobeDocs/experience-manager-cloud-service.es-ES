@@ -5,10 +5,10 @@ feature: Headless, GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
 solution: Experience Manager
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 3096436f8057833419249d51cb6c15e6c28e9e13
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 100%
+source-wordcount: '322'
+ht-degree: 55%
 
 ---
 
@@ -28,7 +28,13 @@ Para ello, añada una configuración OSGi adecuada para el filtro de referente q
 
 El nombre del archivo debe ser `org.apache.sling.security.impl.ReferrerFilter.cfg.json`.
 
+## Ejemplo de configuración {#example-configuration}
+
 Por ejemplo, para conceder acceso a solicitudes con el referente `my.domain` puede:
+
+>[!CAUTION]
+>
+>Este es un ejemplo básico que puede sobrescribir la configuración estándar. Debe asegurarse de que las actualizaciones de productos siempre se aplican a cualquier personalización.
 
 ```xml
 {
@@ -52,16 +58,28 @@ Por ejemplo, para conceder acceso a solicitudes con el referente `my.domain` pue
 }
 ```
 
->[!CAUTION]
->
->Sigue siendo responsabilidad del cliente:
->
->* solo conceder acceso a dominios de confianza
->* asegurarse de que no se expone ninguna información confidencial
->* no usar sintaxis de comodín [*]; esto deshabilitará el acceso autenticado al punto de conexión de GraphQL y también lo expondrá a todo el mundo.
+## Seguridad de datos {#data-security}
 
 >[!CAUTION]
 >
->Todos los [esquemas](#schema-generation) GraphQL (derivados de los modelos de fragmento de contenido que se han **habilitado**) se pueden leer a través del punto de conexión de GraphQL.
->
->Esto significa que debe asegurarse de que no hay datos confidenciales disponibles, ya que podrían filtrarse de esta manera; por ejemplo, esto incluye información que podría estar presente como nombres de campo en la definición del modelo.
+>Sigue siendo responsabilidad suya abordar plenamente los siguientes puntos.
+
+Para garantizar que sus datos siguen siendo seguros, debe asegurarse de que:
+
+* se ha concedido acceso de **solamente** a los dominios de confianza
+
+* se usó la sintaxis comodín [`*`] en **no**; esto deshabilita el acceso autenticado al extremo de GraphQL y también lo expone a todo el mundo
+
+* la información confidencial **nunca** se expone; ni directa ni indirectamente:
+
+   * Por ejemplo, todos los [esquemas de GraphQL](/help/headless/graphql-api/content-fragments.md#schema-generation) son:
+
+      * Derivado de modelos de fragmento de contenido que se han **habilitado**
+
+     **y**
+
+      * se pueden leer a través del extremo de GraphQL
+
+     Esto significa que la información presente como nombres de campo en la definición del modelo puede estar disponible.
+
+Debe asegurarse de que no haya datos confidenciales disponibles por ningún medio, por lo que dichos detalles deben considerarse cuidadosamente.
