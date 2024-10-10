@@ -4,10 +4,10 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 7bc6d9a947a5ce7c56481eaec8a2f186caf36c64
+source-git-commit: 6fa6fc9015624bec9113a198285531a3bdd7e29c
 workflow-type: tm+mt
 source-wordcount: '773'
-ht-degree: 41%
+ht-degree: 42%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 41%
 
 En la siguiente sección se describen las notas de la versión técnicas actuales sobre el mantenimiento de Experience Manager as a Cloud Service.
 
-## Versión 18099 {#release-18099}
+## Versión 18175 {#release-18175}
 
-A continuación se resumen las mejoras continuas para la versión de mantenimiento 18099, que se publicó el jueves, 09 de octubre de 2024. La versión de mantenimiento anterior fue la 17964.
+A continuación se resumen las mejoras continuas para la versión de mantenimiento 18175, que se publicó el viernes, 10 de octubre de 2024. La versión de mantenimiento anterior fue la 17964. La versión 18099 ahora es privada debido a un problema.
 
 La activación de funcionalidades 2024.10.0 proporcionará el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
-### Mejoras {#enhancements-18099}
+### Mejoras {#enhancements-18175}
 
 * ASSETS AEM-38322: Habilitando el evento de solicitud http para la.
 * ASSETS-41448: actualice el paquete auth.ims para admitir asignaciones de FI a grupos.
@@ -56,12 +56,11 @@ La activación de funcionalidades 2024.10.0 proporcionará el conjunto completo 
 * SKYOPS-85336: Actualice Sling Commons Threads a 3.3.0.
 * SKYOPS-86329: actualización de versiones de módulos de prueba de plataforma para admitir el sdk de java 21.
 
-### Problemas solucionados {#fixed-issues-18099}
+### Problemas solucionados {#fixed-issues-18175}
 
 * CNTBF-298: elimina jcr:uuid de los paquetes exportados por CC.
 * SKYOPS-83910: solucione los problemas de concurrencia que se encuentran en SKYOPS-82371.
 * GRANITE-52876: Actualización a com.adobe.granite.ui.content 0.8.1448.
-* GRANITE-53088: Regresión introducida por la corrección de SITES-11992.
 * GUIDES-14445: La generación del PDF nativo falla con un error relacionado con la obtención de dependencias para Node.js.
 * GUIDES-16961: el título de `<conref>` no se resuelve en los paneles Línea de base y Traducción del Editor Web.
 * GUIDES-17283: al seleccionar la opción **Usar metadatos agregados en topicmeta**, las propiedades de metadatos no se propagan en las propiedades de documento de la salida del PDF nativo.
@@ -69,11 +68,11 @@ La activación de funcionalidades 2024.10.0 proporcionará el conjunto completo 
 
 Para obtener más información sobre las características y los problemas nuevos y mejorados de las guías corregidos en la versión, consulte la [hoja de ruta de la versión de Experience Manager Guides](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
-### Problemas conocidos {#known-issues-18099}
+### Problemas conocidos {#known-issues-18175}
 
 * FORMS-15818: No se encontró la entrada de descriptor de componente `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` en los registros del servidor. Son sentencias del registro inofensivas.
 
-### Características y API obsoletas {#deprecated-18099}
+### Características y API obsoletas {#deprecated-18175}
 
 Las funciones y API obsoletas y eliminadas de AEM as a Cloud Service se detallan en el documento [Funciones y API obsoletas y eliminadas](/help/release-notes/deprecated-removed-features.md).
 
@@ -93,11 +92,11 @@ Tenga en cuenta que Adobe está en proceso de actualizar `com.day.cq.wcm.api`. A
 
 * GRANITE-54165: obsoleto org.apache.jackrabbit.oak.plugins.blob en la API pública.
 
-### Correcciones de seguridad {#security-18099}
+### Correcciones de seguridad {#security-18175}
 
 AEM as a Cloud Service se dedica a optimizar la seguridad y el rendimiento de su plataforma. Esta versión de mantenimiento aborda 2 vulnerabilidades identificadas, reforzando nuestro compromiso con una sólida protección del sistema.
 
-### Tecnologías integradas {#embedded-tech-18099}
+### Tecnologías integradas {#embedded-tech-18175}
 
 | Tecnología | Versión | Vínculo |
 |---|---|---|
