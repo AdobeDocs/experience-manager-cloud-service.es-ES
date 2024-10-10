@@ -1,19 +1,19 @@
 ---
-title: Adición de repositorios privados de GitHub en Cloud Manager
+title: Añadir un repositorio privado de GitHub en Cloud Manager
 description: Obtenga información sobre cómo configurar Cloud Manager para que funcione con sus propios repositorios privados de GitHub.
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+source-git-commit: 2fa4abca9823bbc62900023d637429f3fbfd894d
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 33%
+source-wordcount: '930'
+ht-degree: 34%
 
 ---
 
-# Adición de repositorios privados de GitHub en Cloud Manager {#private-repositories}
+# Adición de un repositorio privado de GitHub en Cloud Manager {#private-repositories}
 
-Al configurar Cloud Manager para que se integre con sus repositorios privados de GitHub, puede validar su código directamente en GitHub mediante Cloud Manager. Esta configuración elimina la necesidad de sincronizar regularmente el código con el repositorio de Adobe.
+Al configurar Cloud Manager para que se integre con sus repositorios privados de GitHub, puede validar su código directamente en GitHub mediante Cloud Manager. Esta configuración elimina la necesidad de sincronizar el código regularmente con el repositorio de Adobe.
 
 <!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 
@@ -58,12 +58,12 @@ La configuración de un repositorio privado de GitHub en Cloud Manager consta de
 
    | Campo | Descripción |
    | --- | --- |
-   | Nombre del repositorio | Un nombre expresivo para su nuevo repositorio. |
+   | Nombre del repositorio | Un nombre expresivo para el nuevo repositorio. |
    | URL del repositorio | La dirección URL del repositorio privado, que debe finalizar en `.git`.<br>Por ejemplo, *`https://github.com/org-name/repo-name.git`* (la ruta de URL es solo para fines ilustrativos). |
    | Descripción (opcional) | Una descripción detallada del repositorio. |
 
 1. Seleccione **Guardar**.
-Ahora puede [validar la propiedad del repositorio privado](#validate-ownership).
+Ahora, puede [validar la propiedad del repositorio privado](#validate-ownership).
 
 >[!TIP]
 >
