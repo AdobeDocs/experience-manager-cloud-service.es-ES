@@ -4,10 +4,10 @@ description: Aprenda a utilizar Cloud Acceleration Manager para introducir conte
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 4d34dc8464a51bcc11ee435de4d19183b2f3e3b2
+source-git-commit: 766573bfeb5190d212e87b18331e41820ddd3e32
 workflow-type: tm+mt
-source-wordcount: '2982'
-ht-degree: 12%
+source-wordcount: '3137'
+ht-degree: 11%
 
 ---
 
@@ -228,6 +228,20 @@ AEM Para evitar posiblemente esta restricción, ejecute el [Analizador de práct
 >[!NOTE]
 >
 >[Analizador de prácticas recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) versión 2.1.50+ informará sobre nodos grandes que contengan caracteres Unicode que superen el tamaño máximo. Asegúrese de que está ejecutando la versión más reciente. Las versiones de BPA anteriores a la 2.1.50 no identificarán estos nodos grandes ni generarán informes al respecto, por lo que deberán descubrirse por separado mediante la herramienta de Oak de requisitos previos mencionada anteriormente.
+
+### Error de ingesta debido a errores intermitentes inesperados {#ingestion-failure-due-to-unexpected-intermittent-errors}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_intermittent_errors"
+>title="Errores intermitentes inesperados"
+>abstract="A veces pueden producirse errores intermitentes inesperados en el servicio descendente y, por desgracia, el único recurso es simplemente reintentar la ingesta."
+
+A veces, problemas intermitentes inesperados podrían prestarse a ingestas fallidas donde, por desgracia, el único recurso es reintentar la ingesta. Investigue el registro de ingesta para descubrir la causa del error y ver si se ajusta a alguno de los errores enumerados a continuación, donde se debe intentar un reintento.
+
+## Problemas de MongoDB {#mongo-db-issues}
+
+* `Atlas prescale timeout error`: en la fase de ingesta se intentará escalar previamente la base de datos de la nube de Target a un tamaño adecuado que se ajuste al tamaño del contenido del conjunto de migración que se está ingiriendo. De forma poco frecuente, esta operación no se completa dentro del intervalo de tiempo esperado.
+* `Exhausted mongo restore retries`: se agotaron los intentos de restaurar un volcado local del contenido del conjunto de migración ingerido en la base de datos de la nube. Esto indica un problema general de salud/red con MongoDB, que a menudo se cura solo después de unos minutos.
 
 ### Ingesta rescindida {#ingestion-rescinded}
 
