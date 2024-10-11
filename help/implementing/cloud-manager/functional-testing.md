@@ -5,9 +5,9 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
+source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1321'
 ht-degree: 3%
 
 ---
@@ -22,13 +22,13 @@ ht-degree: 3%
 
 Descubra las puertas de calidad disponibles en el [proceso de implementación de AEM as a Cloud Service](/help/implementing/cloud-manager/deploy-code.md) y los diversos tipos de pruebas funcionales integradas. Descubra cómo puede contribuir y optimizar su uso en el marco de una estrategia de pruebas completa.
 
-## Información general
+## Acerca de las pruebas funcionales
 
 El diagrama siguiente proporciona información general de alto nivel sobre las canalizaciones disponibles en el contexto de una estrategia general de pruebas y el [proceso de implementación de AEM as a Cloud Service](/help/implementing/cloud-manager/deploy-code.md).
 
 ![Puertas de calidad para la implementación de AEM Cloud Service](assets/functional-testing/quality-gates-compact.svg)
 
-## Función
+## Finalidad de las pruebas funcionales
 
 El propósito de las canalizaciones de implementación de AEM Cloud Service AEM es facilitar implementaciones sólidas y seguras en varias etapas del ciclo de vida de su desarrollo y lanzamiento del producto. AEM AEM Estas canalizaciones incorporan varias puertas de calidad en diferentes niveles para garantizar la integridad y la seguridad de las implementaciones, tanto para los cambios de la aplicación de la como para las actualizaciones de productos.
 
@@ -38,7 +38,7 @@ AEM AEM Las puertas de calidad integradas validan principalmente la funcionalida
 
 Es importante tener en cuenta que estas puertas de calidad no están pensadas para ser un marco de prueba completo para toda la estrategia de prueba. AEM AEM El producto se somete a pruebas exhaustivas antes de entrar en el proceso de implementación del servicio en la nube de la. Del mismo modo, la aplicación ya debe ser de alta calidad antes de que llegue a la fase de implementación. Este enfoque garantiza que las puertas de calidad se centren en su objetivo principal de salvaguardar el proceso de despliegue, en lugar de ser un sustituto de un régimen de pruebas completo.
 
-## Puertas de calidad
+## Puertas de calidad en pruebas
 
 El diagrama siguiente proporciona una vista detallada de las puertas de calidad disponibles y su uso en la estrategia general de pruebas y el [proceso de implementación de AEM as a Cloud Service](/help/implementing/cloud-manager/deploy-code.md).
 

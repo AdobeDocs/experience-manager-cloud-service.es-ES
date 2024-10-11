@@ -1,22 +1,22 @@
 ---
-title: Configuración de variables de canalización
+title: Variables de canalización en Cloud Manager
 description: Descubra cómo puede utilizar variables de canalización en Cloud Manager para administrar variables de configuración específicas para su compilación.
 exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f7a8e823f058115f11241f0864517432a7dea5ab
+source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 15%
+source-wordcount: '621'
+ht-degree: 14%
 
 ---
 
-# Configuración de variables de canalización {#configuring-pipeline-variables}
+# Variables de canalización en Cloud Manager {#configuring-pipeline-variables}
 
 El proceso de compilación puede depender de variables de configuración específicas que no deben almacenarse en el repositorio de Git. O bien, es posible que tenga que ajustarlas entre ejecuciones de canalización en la misma rama. Cloud Manager permite administrar estas configuraciones como variables de canalización.
 
-## Variables de canalización {#pipeline-variables}
+## Acerca de las variables de canalización {#pipeline-variables}
 
 Con Cloud Manager puede configurar variables de canalización de varias formas diferentes.
 
@@ -26,7 +26,7 @@ Con Cloud Manager puede configurar variables de canalización de varias formas d
 
 Las variables pueden almacenarse como texto sin formato o cifrarse en reposo. En cualquier caso, las variables están disponibles en el entorno de compilación como una variable de entorno a la que se puede hacer referencia desde dentro del archivo `pom.xml` u otros scripts de compilación.
 
-## Adición de variables de canalización a través de Cloud Manager {#ui}
+## Adición de una variable de canalización a través de Cloud Manager {#ui}
 
 Las variables de canalización se pueden configurar y administrar a través de la interfaz de usuario de Cloud Manager. Ayudan a optimizar la administración de la canalización, especialmente cuando se requieren distintas configuraciones en diferentes pasos.
 
@@ -34,7 +34,7 @@ Debe tener permisos para editar la canalización y agregar, editar y eliminar va
 
 Si se está ejecutando una canalización, la administración de variables está bloqueada.
 
-### Agregar una variable de canalización {#add-ui}
+**Para agregar una variable de canalización mediante Cloud Manager:**
 
 1. Cuando [administre sus canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), haga clic en ![Puntos suspensivos - Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) de la canalización para la cual desea crear variables de canalización.
 
@@ -59,7 +59,7 @@ Si se está ejecutando una canalización, la administración de variables está 
 
 1. Haga clic en **Guardar**.
 
-### Editar una variable de canalización {#edit-ui}
+## Editar una variable de canalización {#edit-ui}
 
 1. Al [administrar sus canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), haga clic en ![Puntos suspensivos - Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) de la canalización para la cual desea editar las variables de canalización.
 
@@ -84,7 +84,7 @@ Si se está ejecutando una canalización, la administración de variables está 
 
 1. Haga clic en **Guardar**.
 
-### Eliminar una variable de canalización {#delete-ui}
+## Eliminar una variable de canalización {#delete-ui}
 
 1. Al [administrar sus canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), haga clic en ![Puntos suspensivos - Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) de la canalización para la cual desea eliminar variables de canalización.
 
