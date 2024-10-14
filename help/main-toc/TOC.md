@@ -1090,9 +1090,9 @@ ht-degree: 99%
       + Administrar su código {#managing-code}
          + [Administrar versiones del proyecto de Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Administración de repositorios en Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-         + [Añadir un repositorio de Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
-         + [Añadir un repositorio privado](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [Añadir un repositorio externo (usuario que lo adoptó por primera vez)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Adición de un repositorio de Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [Adición de un repositorio privado](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+         + [Adición de un repositorio externo (programa para primeros usuarios)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [Acceder a repositorios](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Compatibilidad con los submódulos de Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Uso de Git con Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
