@@ -6,9 +6,9 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1398'
 ht-degree: 71%
 
 ---
@@ -156,12 +156,12 @@ Los pasos para completar la creación de la canalización de implementación de 
 
    ![Canalización de configuración](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. Si habilitaste la auditoría de experiencias, toca o haz clic en **Continuar** para avanzar a la pestaña **Auditoría de experiencias**, donde puedes definir las rutas que siempre se deben incluir en la auditoría de experiencias.
+1. Si habilitó la auditoría de experiencias, haga clic en **Continuar** para avanzar a la pestaña **Auditoría de experiencias**, donde puede definir las rutas que siempre se deben incluir en la auditoría de experiencias.
 
    * Si habilitó **Auditoría de experiencias**, consulte el documento [Auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-dashboard.md) para obtener detalles sobre cómo configurar.
    * Si no lo ha hecho, omita este paso.
 
-1. Toque o haga clic en **Guardar** para guardar la canalización.
+1. Haga clic en **Guardar** para guardar la canalización.
 
 La canalización se guarda y ahora puede [administrar las canalizaciones](managing-pipelines.md) en la tarjeta **Canalizaciones** en la página **Información general del programa**.
 

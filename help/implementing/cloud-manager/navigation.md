@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1656'
 ht-degree: 39%
 
 ---
@@ -38,7 +38,7 @@ La consola Mis programas proporciona información general de todos los programas
 1. Pestañas que permiten alternar la vista actual de los programas.
    * Vista **Inicio** (predeterminada) que selecciona la vista **Mis programas** con información general de todos los programas
    * **Licencia** que accede al [Panel de licencias](/help/implementing/cloud-manager/license-dashboard.md).
-   * Tenga en cuenta que las pestañas se cierran de forma predeterminada y se pueden mostrar mediante el menú de hamburguesa del [encabezado de Cloud Manager](#cloud-manager-header).
+   * Tenga en cuenta que las pestañas se cierran de forma predeterminada y se pueden mostrar mediante https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg en el [encabezado de Cloud Manager](#cloud-manager-header).
 1. [Estadísticas y llamada a la acción](#statistics) para obtener una descripción general de su actividad reciente
 1. [**Sección Mis programas**](#my-programs-section) con información general de todos sus programas
 1. [Vínculos rápidos](#quick-links-section) para acceder fácilmente a recursos relacionados.
@@ -195,7 +195,7 @@ La barra de herramientas de programas le permite cambiar rápidamente a otros pr
 
 ![Barra de herramientas del programa](assets/cloud-manager-program-toolbar.png)
 
-La barra de herramientas siempre muestra la pestaña en la que se encuentra, incluso si ha ocultado las pestañas mediante el menú de hamburguesa.
+La barra de herramientas siempre muestra la ficha en la que se encuentra, aunque haya ocultado las fichas mediante https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg.
 
 ### Pestañas del programa {#program-tabs}
 

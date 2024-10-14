@@ -5,9 +5,9 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '376'
 ht-degree: 4%
 
 ---
@@ -42,17 +42,17 @@ El panel presenta una puntuación general para el rendimiento de la CDN junto co
 
 ![Panel de rendimiento de CDN](assets/cdn-performance-dashboard.png)
 
-Para obtener más información sobre el rendimiento de su CDN y sugerencias sobre cómo mejorarlo, toque o haga clic en **Ver tendencia**.
+Para obtener detalles sobre el rendimiento de su CDN, así como sugerencias sobre cómo mejorarlo, haga clic en **Ver tendencia**.
 
 ![Tendencia de rendimiento](assets/cdn-performance-trend.png)
 
-Pulse o haga clic en **Ver** debajo del gráfico para cambiar el lapso de tiempo del gráfico.
+Haga clic en **Ver** debajo del gráfico para cambiar el lapso de tiempo del gráfico.
 
 Para obtener sugerencias sobre cómo mejorar el rendimiento de su CDN, seleccione la pestaña **Recommendations**.
 
 ![recomendaciones de CDN](assets/cdn-performance-recommendations.png)
 
-Toque o haga clic en las comillas angulares junto a cualquier recomendación de la lista para ver detalles acerca de los pasos que debe seguir para mejorar y la causa del problema.
+Haga clic en comillas angulares junto a cualquier recomendación de la lista para ver detalles sobre los pasos que debe seguir para mejorar y la causa del problema.
 
 ## Definición de visita en caché {#cache-hit}
 

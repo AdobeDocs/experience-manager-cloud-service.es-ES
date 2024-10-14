@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
 workflow-type: tm+mt
-source-wordcount: '3744'
+source-wordcount: '3742'
 ht-degree: 6%
 
 ---
@@ -151,7 +151,7 @@ Consulte también [Prácticas recomendadas para la codificación de vídeo](/hel
 
 Para definir parámetros de procesamiento avanzados para otros tipos de recursos, consulte [Configurar el procesamiento de recursos](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
-**Para crear un perfil de vídeo para flujo de velocidad de bits adaptable**,
+**Para crear un perfil de vídeo para flujo de velocidad de bits adaptable:**
 
 1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfiles de vídeo]**.
 1. Seleccione **[!UICONTROL Crear]**.
@@ -192,7 +192,7 @@ Ahora puede aplicar el perfil a las carpetas que contienen vídeos. Ver [Aplicac
 
 Si decide no usar la opción **[!UICONTROL Codificar para flujo adaptable]**, todos los ajustes preestablecidos de codificación que agregue al perfil se tratarán como representaciones de vídeo individuales para flujo de una sola velocidad de bits o entrega de vídeo progresivo. Además, no hay ninguna validación para garantizar que todas las representaciones de vídeo tengan la misma proporción de aspecto.
 
-Los códecs de formato de vídeo admitidos son H.264 (.mp4) y WebM.
+El códec de formato de vídeo admitido es H.264 (.mp4). <!-- use to also include WebM but was requested for removal by Riya Midha in email dated October 14, 2024 -->
 
 Consulte también [Crear un perfil de codificación de vídeo para flujo de velocidad de bits adaptable](#creating-a-video-encoding-profile-for-adaptive-streaming).
 

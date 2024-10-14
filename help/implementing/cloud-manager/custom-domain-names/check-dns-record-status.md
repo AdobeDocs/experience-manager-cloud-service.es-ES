@@ -1,14 +1,14 @@
 ---
-title: Comprobar estado de registro DNS
+title: Comprobar el estado del registro DNS
 description: Obtenga información sobre cómo determinar si la configuración de DNS se resuelve correctamente con Cloud Manager.
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 24%
+ht-degree: 25%
 
 ---
 
@@ -33,7 +33,7 @@ Ya debe haber configurado la configuración DNS para su nombre de dominio person
 
 1. Vaya a la pantalla **Entornos** de la página **Información general**.
 
-1. Haga clic en **Configuración de dominio** en el panel de navegación izquierdo.
+1. Haga clic en **Configuración de dominio** en el menú del lado izquierdo.
 
 1. Haga clic en el icono **Estado** del nombre de dominio.
 

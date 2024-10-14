@@ -5,9 +5,9 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '618'
 ht-degree: 14%
 
 ---
@@ -84,6 +84,7 @@ Si se está ejecutando una canalización, la administración de variables está 
 
 1. Haga clic en **Guardar**.
 
+
 ## Eliminar una variable de canalización {#delete-ui}
 
 1. Al [administrar sus canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), haga clic en ![Puntos suspensivos - Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) de la canalización para la cual desea eliminar variables de canalización.
@@ -92,10 +93,7 @@ Si se está ejecutando una canalización, la administración de variables está 
 
    ![Ver/Editar variables de canalización](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. En el cuadro de diálogo **Configuración de variables**, haga clic en ![Puntos suspensivos - Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) de la variable que desea quitar.
-
-1. En el menú desplegable, haga clic en **Eliminar**.
-
+1. En el cuadro de diálogo **Configuración de variables**, haga clic en ![Puntos suspensivos - Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) de la variable que desea quitar y, a continuación, haga clic en **Eliminar**.
 
 ## Establecer variables de canalización mediante la CLI de Cloud Manager {#cli}
 

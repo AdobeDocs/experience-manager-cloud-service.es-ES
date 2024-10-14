@@ -5,9 +5,9 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f12392075b71b219bf449f585f63561167ddada9
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1029'
 ht-degree: 9%
 
 ---
@@ -46,7 +46,7 @@ Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrado
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
 1. En la esquina superior izquierda de la página, haga clic en ![Mostrar icono de menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para mostrar el menú lateral.
 1. Bajo el encabezado **Servicios**, haga clic en ![Icono de bloqueo cerrado](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificados SSL**.
-1. En la fila del certificado administrado por el cliente caducado que desea actualizar, haga clic en los puntos suspensivos en el extremo derecho y, a continuación, seleccione **Ver y actualizar**.
+1. En la fila del certificado administrado por el cliente caducado que desea actualizar, haga clic en https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg en el extremo derecho, luego haga clic en **Ver y actualizar**.
 
    ![Actualizar una certificación SSL administrada por el cliente caducada](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
@@ -117,9 +117,7 @@ Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrado
 
 1. Bajo el encabezado **Servicios**, haga clic en ![Icono de bloqueo cerrado](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificados SSL**.
 
-1. En la página Certificados SSL, en la fila de la tabla del certificado que desea eliminar, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en el extremo derecho.
-
-1. En el menú desplegable, haga clic en **Eliminar**.
+1. En la página Certificados SSL, en la fila de la tabla del certificado que desea eliminar, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en el extremo derecho y, a continuación, haga clic en **Eliminar**.
 
    Si **Delete** tiene un icono de información como se ve en la siguiente imagen, consulta la nota anterior.
 

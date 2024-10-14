@@ -5,7 +5,7 @@ exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: c46b6df488722fe750e524ad2bb383f25bf00b0f
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 13%
@@ -36,7 +36,7 @@ El gráfico de líneas de un año seleccionado incluye puntos de datos para cada
 
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
 
-1. En la página **Resumen del programa**, en el panel de navegación izquierdo, haga clic en **Informes**.
+1. En la página **Resumen del programa**, en el menú de la izquierda, haga clic en **Informes**.
 
 1. Haga clic en **Informes de SLA**.
 

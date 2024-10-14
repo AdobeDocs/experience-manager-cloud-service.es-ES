@@ -1,14 +1,14 @@
 ---
-title: Editar programas
+title: Edición de programas
 description: Obtenga información sobre cómo editar los programas de producción y de zonas protegidas para ajustar sus opciones después de crearlas.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 29%
+source-wordcount: '427'
+ht-degree: 24%
 
 ---
 
@@ -70,7 +70,7 @@ Al eliminar un programa de zona protegida se eliminan todos los entornos y canal
 
    ![Opción Eliminar programa](assets/delete-sandbox1.png)
 
-También puede hacer clic en el botón de los tres puntos de la tarjeta del programa desde la página de información general de Cloud Manager y seleccionar **Eliminar programa**.
+También puede hacer clic en https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg en la tarjeta de su programa desde la página de información general de Cloud Manager y seleccionar **Eliminar programa**.
 
 ![Eliminar zona protegida de la tarjeta de programa](assets/delete-sandbox2.png)
 

@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '2371'
-ht-degree: 65%
+source-wordcount: '2357'
+ht-degree: 62%
 
 ---
 
@@ -109,7 +109,7 @@ Si no ha especificado ninguna región adicional inicialmente, puede hacerlo desp
 
 También puede quitar regiones de publicación adicionales. Sin embargo, solo puede añadir o eliminar regiones en una transacción. Si necesita añadir una región y quitar una región, primero añádala, guarde el cambio y, a continuación, quítela (o viceversa).
 
-1. En la consola Información general del programa de su programa, haga clic en el botón de puntos suspensivos del entorno de producción y seleccione **Editar** en el menú.
+1. En la consola Información general del programa de su programa, haga clic en https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg para su entorno de producción y seleccione **Editar** en el menú.
 
    ![Editar entorno](assets/select-edit-environment.png)
 
@@ -129,7 +129,7 @@ Si desea proporcionar [redes avanzadas](/help/security/configuring-advanced-netw
 
 Desde la página **Información general**, puede acceder a los detalles de un entorno de dos formas.
 
-1. En la página **Información general**, haga clic en la ficha **Entornos** del panel de navegación lateral.
+1. En la página **Información general**, haga clic en la ficha **Entornos** del menú de la izquierda.
 
    ![Pestaña Entornos](assets/environments-tab2.png)
 
@@ -141,11 +141,11 @@ Desde la página **Información general**, puede acceder a los detalles de un en
 
    ![La pestaña de entornos](assets/environments-tab2.png)
 
-1. Toque o haga clic en un entorno de la lista para mostrar sus detalles.
+1. Haga clic en un entorno de la lista para mostrar sus detalles.
 
    ![Detalles del entorno](assets/environ-preview1.png)
 
-También puede hacer clic en el botón de los tres puntos del entorno que desee y seleccionar **Ver detalles**.
+También puede hacer clic en https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg del entorno que desee y seleccionar **Ver detalles**.
 
 ![Ver detalles del entorno](assets/view-environment-details.png)
 
@@ -193,7 +193,7 @@ También puede obtener acceso a la misma información desde la ficha **Entornos*
 
 1. En la página **Información general**, seleccione la pestaña **Entornos**.
 
-1. En la ficha **Entornos**, seleccione el entorno que desee consultar en el panel de navegación izquierdo.
+1. En la ficha **Entornos**, seleccione el entorno que desee consultar en el menú de la izquierda.
 
 1. Una vez seleccionado un entorno:
 
@@ -235,11 +235,11 @@ Por lo tanto, el proceso de actualización consta de dos pasos:
 >[!NOTE]
 > A partir de 2024, las instancias de desarrollo y algunos programas de zonas protegidas ya se actualizan automáticamente, por lo que no es necesario administrar las actualizaciones para ellos manualmente. Como resultado de esta transición, es posible que la opción de Actualizar el entorno manualmente para instancias de desarrollo no esté disponible para _algunos_ de sus programas.
 
-La opción **Actualizar** está disponible en la tarjeta **Entornos** para algunos entornos de desarrollo en programas de zonas protegidas al hacer clic en el botón de los tres puntos del entorno.
+La opción **Actualizar** está disponible en la tarjeta **Entornos** para algunos entornos de desarrollo en programas de zonas protegidas al hacer clic en https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg del entorno.
 
 ![Opción Actualizar de la tarjeta Entornos](assets/environ-update2.png)
 
-Esta opción también está disponible si hace clic en la pestaña **Entornos** del programa y, a continuación, selecciona el botón de los tres puntos del entorno.
+Esta opción también está disponible si hace clic en la ficha **Entornos** del programa y, a continuación, hace clic en https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg del entorno.
 
 ![Opción Actualizar de la pestaña Entornos](assets/environ-update3.png)
 
@@ -259,11 +259,11 @@ El comportamiento de la opción **Actualizar** varía según la configuración y
 
 Un usuario con el rol **Administrador de implementación** o **Propietario del negocio** puede eliminar un entorno de desarrollo.
 
-En la pantalla **Información general** del programa, en la tarjeta **Entornos**, haga clic en el botón de los tres puntos del entorno de desarrollo que desee eliminar.
+En la pantalla **Información general** del programa que se encuentra en la tarjeta **Entornos**, haga clic en https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg del entorno de desarrollo que desee eliminar.
 
 ![La opción Eliminar](assets/environ-delete.png)
 
-La opción Eliminar también está disponible en la pestaña **Entornos** de la ventana **Información general** del programa. Haga clic en el botón de los tres puntos del entorno y seleccione **Eliminar**.
+La opción Eliminar también está disponible en la pestaña **Entornos** de la ventana **Información general** del programa. Haga clic en https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg del entorno y seleccione **Eliminar**.
 
 ![La opción Eliminar de la pestaña Entornos](assets/environ-delete2.png)
 
