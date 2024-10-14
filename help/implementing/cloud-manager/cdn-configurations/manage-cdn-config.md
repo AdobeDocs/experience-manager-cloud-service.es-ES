@@ -4,21 +4,21 @@ description: Obtenga información sobre cómo utilizar Cloud Manager para editar
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 42b30c12f17106610cfb7f7b4c04c5ab703bab45
+source-git-commit: 02f9b035320bb4b6219d5ed4273554259fc09e59
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '802'
 ht-degree: 9%
 
 ---
 
 
-# Administrar las configuraciones de CDN (red de distribución de contenido) {#manage-cdn-configurations}
+# Administrar configuraciones de CDN {#manage-cdn-configurations}
 
-Obtenga información sobre cómo utilizar Cloud Manager para editar y actualizar o eliminar configuraciones de CDN para un sitio de Edge Delivery o un entorno de Cloud Manager.
+Obtenga información sobre cómo utilizar Cloud Manager para editar o eliminar configuraciones de CDN para un sitio de Edge Delivery o un entorno de Cloud Manager.
 
 ## Editar una configuración de CDN desde la página Configuraciones de CDN {#edit-cdn}
 
-En Adobe Cloud Manager, es posible que desee editar una configuración de CDN, incluido el nivel de entorno (Publish o Vista previa) y el certificado SSL, por varios motivos.
+En Adobe Cloud Manager, es posible que desee editar una configuración de CDN (red de distribución de contenido), incluido el nivel de entorno (Publish o Vista previa) y el certificado SSL, por varios motivos.
 
 * **Cambios de entorno**: el ajuste del nivel ayuda a hacer coincidir la configuración de CDN con el entorno correcto, ya sea para la producción en directo (Publish) o para las pruebas (vista previa).
 * **Mejoras de seguridad**: Puede que sea necesario seleccionar un certificado SSL diferente al actualizar certificados o al abordar las necesidades de cumplimiento y seguridad.
@@ -37,6 +37,7 @@ Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrado
    ![Editando una configuración de CDN](/help/implementing/cloud-manager/assets/cdn-config-edit.png)
 
 1. En el menú desplegable, haga clic en **Editar**.
+
 1. En el cuadro de diálogo **Editar configuración de CDN**, establezca una o más de las opciones en la lista desplegable correspondiente.
 
    Las opciones mostradas en el cuadro de diálogo dependen de si está usando una **CDN administrada por Adobe** o un **otro proveedor de CDN** (CDN administrada por el cliente).
@@ -44,6 +45,7 @@ Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrado
 1. Haga clic en **Actualizar**.
 
    El estado de la CDN editada se actualiza en la tabla **Configuraciones de CDN** para reflejar los cambios que ha realizado.
+
 
 ## Editar una configuración de CDN desde la página Entornos
 
@@ -63,7 +65,7 @@ Los pasos para editar una configuración de CDN desde la página **Entornos** so
 
 1. En el menú emergente, haga clic en **Editar**.
 
-1. En el cuadro de diálogo **Editar configuración**, defina una o más de las opciones de la lista desplegable correspondiente.
+1. En el cuadro de diálogo **Editar configuración de CDN**, establezca una o más de las opciones en la lista desplegable correspondiente.
 
 Las opciones mostradas en el cuadro de diálogo dependen de si está usando una **CDN administrada por Adobe** o un **otro proveedor de CDN** (CDN administrada por el cliente).
 
@@ -87,11 +89,36 @@ Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrado
 
 1. En el panel lateral izquierdo, en **Servicios**, haga clic en **Configuraciones de CDN**.
 
-1. En la tabla Configuraciones de CDN, haga clic en los puntos suspensivos al final de una fila cuya CDN desee eliminar.
+1. En la tabla Configuraciones de CDN, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) al final de la fila que corresponda a la CDN que desea eliminar.
 
    ![Eliminando una configuración de CDN](/help/implementing/cloud-manager/assets/cdn-config-delete.png)
 
-1. Haga clic en **Eliminar**.
+1. En el menú desplegable, haga clic en **Eliminar**.
+
+1. En el cuadro de diálogo **Eliminar configuración de CDN**, haga clic en **Eliminar**.
+
+1. Vuelva a hacer clic en **Eliminar** para confirmar la eliminación de la CDN del sitio.
+
+
+## Eliminar una configuración de CDN de la página Entornos
+
+Los pasos para eliminar una configuración de CDN de la página **Entornos** son casi los mismos que al [eliminar una configuración de CDN de la página Configuraciones de CDN](#edit-cdn), pero el punto de entrada difiere.
+
+**Para eliminar una configuración de CDN de la página Entornos:**
+
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
+
+1. En el menú del lado izquierdo, haga clic en **Entornos**.
+
+1. En la página **Entornos**, seleccione un entorno de interés.
+
+1. En la página de detalles del entorno, en la agrupación **Configuraciones de CDN**, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) que corresponde a la configuración de CDN que desea quitar.
+
+   ![Grupo de configuración de CDN en una página de detalles de entorno](/help/implementing/cloud-manager/assets/cdn/environments-cdn-config.png)
+
+1. En el menú desplegable, haga clic en **Eliminar**.
+
+1. En el cuadro de diálogo **Eliminar configuración de CDN**, haga clic en **Eliminar**.
 
 1. Vuelva a hacer clic en **Eliminar** para confirmar la eliminación de la CDN del sitio.
 

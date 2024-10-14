@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+source-git-commit: f12392075b71b219bf449f585f63561167ddada9
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 4%
@@ -69,7 +69,7 @@ Consulte también [Introducción a los certificados SSL](/help/implementing/clou
 
 1. Cerca de la esquina superior derecha de la página Certificados SSL, haga clic en **Agregar certificado SSL**.
 
-1. En el cuadro de diálogo **Agregar certificado SSL**, basado en [su caso de uso particular](#which-ssl-to-add), seleccione **Adobe administrado (DV)**.
+1. En el cuadro de diálogo **Agregar certificado SSL**, basado en [su caso de uso particular](#which-ssl-to-add), seleccione **Administrado por Adobe (DV)**.
 
    ![Agregar certificado DV](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)
 
@@ -90,13 +90,18 @@ Ya está listo para agregar una [configuración de CDN](/help/implementing/cloud
 
 ## Añadir un certificado SSL administrado por el cliente (OV/ED) {#add-customer-managed-ssl-cert}
 
+<!-- IF THIS TOPIC GET UPDATED, REMEMBER TO UPDATE THE STEPS ALSO IN THE "MANAGE SSL CERTIFICATES TOPIC TOO -->
+
 ¿Necesita ayuda para elegir si desea utilizar un certificado SSL administrado por Adobe (recomendado) o un certificado SSL administrado por el cliente con su dominio? Ver [Elección del certificado SSL que se agregará](#which-ssl-to-add)
 
 **Para agregar un certificado SSL administrado por el cliente (OV/EV):**
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione el programa apropiado.
+
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
+
 1. En la esquina superior izquierda de la página, haga clic en ![Mostrar icono de menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para mostrar el menú lateral.
+
 1. Bajo el encabezado **Servicios**, haga clic en ![Icono de bloqueo cerrado](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificados SSL**.
 
    ![Agregando un certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-add.png)
@@ -109,7 +114,8 @@ Ya está listo para agregar una [configuración de CDN](/help/implementing/cloud
 Este campo es solo informativo y puede ser cualquier nombre que le ayude a hacer referencia al certificado SSL fácilmente.
 
 1. En los campos **Certificado**, **Clave privada** y **Cadena de certificados**, copie los valores requeridos de su certificado SSL OV o EV y péguelos en sus respectivos campos en el cuadro de diálogo.
-Se muestran todos los errores detectados en los valores. Para poder guardar el certificado, debe corregir todos los errores. Consulte [Errores de certificado](#certificate-errors) para obtener más información sobre la solución de problemas de errores comunes.
+
+   Se muestran todos los errores detectados en los valores. Para poder guardar el certificado, debe corregir todos los errores. Consulte [Errores de certificado](#certificate-errors) para obtener más información sobre la solución de problemas de errores comunes.
 
    ![Agregar cuadro de diálogo de certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)|
 

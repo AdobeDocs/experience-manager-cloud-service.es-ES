@@ -5,9 +5,9 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b735c724bd8d68273b3c09a2dc53a13f5f6095ae
+source-git-commit: f12392075b71b219bf449f585f63561167ddada9
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1034'
 ht-degree: 9%
 
 ---
@@ -59,9 +59,10 @@ Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrado
 
 1. Haga clic en **Actualizar** para guardar los cambios y que se apliquen automáticamente.
 
+
 >[!NOTE]
 >
->Si tiene dos o más certificados SAN que cubren la misma entrada de dominio SAN, si ese dominio está cubierto por un certificado y el otro se actualiza, este último se instalará ahora para el dominio.
+>Si tiene dos o más certificados SAN que cubren la misma entrada de dominio SAN, si ese dominio está cubierto por un certificado y el otro se actualiza, este último se instala para el dominio.
 >
 >Consulte [Solucionar problemas de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert) para obtener más información.
 
@@ -80,13 +81,21 @@ A continuación se indican algunas razones por las que puede que desee cambiar e
 **Para cambiar el nombre de un certificado SSL administrado por el Adobe:**
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione el programa apropiado.
+
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
+
 1. En la esquina superior izquierda de la página, haga clic en ![Mostrar icono de menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para mostrar el menú lateral.
+
 1. Bajo el encabezado **Servicios**, haga clic en ![Icono de bloqueo cerrado](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificados SSL**.
-1. En la página **Certificados SSL**, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) al final de una fila cuyo certificado *Administrado por Adobe* desea cambiar de nombre.
+
+1. En la página **Certificados SSL**, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) al final de una fila cuyo certificado SSL **administrado por el Adobe** desea cambiar de nombre.
+
 1. En el menú desplegable, haga clic en **Cambiar nombre**.
+
 1. En el cuadro de diálogo **Cambiar nombre de certificado DV**, en el campo de texto **Nombre del certificado**, escriba el nuevo nombre del certificado.
+
 1. Haga clic en **Cambiar nombre**.
+
 
 ## Eliminar un certificado SSL {#deleting-an-ssl-certificate}
 
@@ -101,17 +110,25 @@ Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrado
 **Para eliminar un certificado SSL:**
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione el programa apropiado.
+
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
+
 1. En la esquina superior izquierda de la página, haga clic en ![Mostrar icono de menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para mostrar el menú lateral.
+
 1. Bajo el encabezado **Servicios**, haga clic en ![Icono de bloqueo cerrado](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificados SSL**.
-1. En la página Certificados SSL, en la fila de la tabla del certificado que desea eliminar, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)en el extremo derecho
+
+1. En la página Certificados SSL, en la fila de la tabla del certificado que desea eliminar, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en el extremo derecho.
+
 1. En el menú desplegable, haga clic en **Eliminar**.
-Si el botón Eliminar tiene un icono de información como se ve en la siguiente imagen, consulte la Nota anterior.
+
+   Si **Delete** tiene un icono de información como se ve en la siguiente imagen, consulta la nota anterior.
 
    ![Botón Eliminar con icono de información](/help/implementing/cloud-manager/assets/ssl/ssl-cert-delete-infoicon.png)
 
 1. En el cuadro de diálogo **Eliminar certificado SSL**, haga clic en **Eliminar** para confirmar la eliminación.
+
 1. Ejecute la canalización para anular la implementación del certificado eliminado.
+
 
 ## Configuraciones de CDN preexistentes {#pre-existing-cdn}
 
