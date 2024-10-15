@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 6fa6fc9015624bec9113a198285531a3bdd7e29c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '773'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -18,13 +18,13 @@ En la siguiente sección se describen las notas de la versión técnicas actuale
 
 ## Versión 18175 {#release-18175}
 
-A continuación se resumen las mejoras continuas para la versión de mantenimiento 18175, que se publicó el viernes, 10 de octubre de 2024. La versión de mantenimiento anterior fue la 17964. La versión 18099 ahora es privada debido a un problema.
+A continuación se resumen las mejoras continuas para la versión de mantenimiento 18175, que se publicó el 10 de octubre de 2024. La versión de mantenimiento anterior fue la 17964. La versión 18099 ahora es privada debido a un problema.
 
 La activación de funcionalidades 2024.10.0 proporcionará el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
 ### Mejoras {#enhancements-18175}
 
-* ASSETS-38322: habilitación del evento de petición http para AEM.
+* ASSETS-38322: habilitación del evento de petición HTTP para AEM.
 * ASSETS-41448: actualización del paquete auth.ims para admitir asignaciones de FI a grupo.
 * ASSETS-41684: adición de configuraciones OSGI de OOB para definir la asignación de FI a grupo para Assets, Foundation, Sites y Forms.
 * ASSETS-43015: actualización al último paquete auth.ims.
@@ -34,24 +34,24 @@ La activación de funcionalidades 2024.10.0 proporcionará el conjunto completo 
 * GRANITE-52454: actualización de compatibilidad del asistente GRANITE-52454: actualización de compatibilidad del asistente para utilizar la última versión para AEMaaCS.
 * GRANITE-53287: actualización de la versión de prueba de integración de privilegios de seguridad.
 * GRANITE-53485: autenticación principal del servicio de soporte para la replicación de Azure Blob Storage.
-* GRANITE-53514: Treeactivation actualizada a la versión 1.0.26.
+* GRANITE-53514: se ha actualizado la activación de árbol a la versión 1.0.26.
 * GRANITE-53870: creación de un mecanismo interno para omitir la comprobación de la versión máxima de JVM para el inicio rápido.
-* GRANITE-53914: Corrija los errores de prueba de la plataforma con Java 17 Versión de módulo actualizada.
+* GRANITE-53914: corrección de errores en la prueba de la plataforma con la versión actualizada del módulo Java 17.
 * GRANITE-53966: utilización de un grupo de hilos independiente para la distribución de contenido.
 * GRANITE-54006: actualización de Jackson a 2.17.2.
 * GRANITE-54038: adición del cliente IMS de Creative Cloud Enterprise a la lista de permitidos del cliente IMS de AEM.
 * GRANITE-54054: variable de entorno para com.adobe.granite.repository.impl.SystemUserValidation warnOnly.
 * GRANITE-54266: falta el servicio de sugerencia de búsqueda en el SDK de producción.
 * GRANITE-54274: aceptación del cliente IMS de Firefly.
-* GRANITE-54300: actualizar Oak a la última versión pública (1.70.0).
+* GRANITE-54300: actualización Oak a la última versión pública (1.70.0).
 * GUIDES-19069: adición de guidesPeerLinkIndex para el complemento de guías de aem.
-* SITES-23584: corrija la prueba con errores para el componente Foundation en Java 17.
+* SITES-23584: corrección de la prueba con errores para el componente Foundation en Java 17.
 * SKYOPS-69768: SlingModels no deserializa ResourceResolvers.
 * SKYOPS-76378: mejora de la seguridad de los hilos de registro/anulación de registro de ResourceBundle en i18n.
-* SKYOPS-79285: Actualice Sling XSS a 2.4.2.
+* SKYOPS-79285: actualización de Sling XSS a 2.4.2.
 * SKYOPS-82383: exposición del resultado de “helm-values” convert-merge-analyze en el descriptor de ejecución del comando.
 * SKYOPS-84810: omisión de la ejecución de “40-initialize-publish.sh” al iniciar RDE.
-* SKYOPS-84951: Corrija el código de generación de suma de comprobación de contenido mutable.
+* SKYOPS-84951: corrección del código de generación de suma de comprobación de contenido mutable.
 * SKYOPS-85335: actualización de org.apache.sling.jcr.repoinit a 1.1.52.
 * SKYOPS-85336: actualización de Sling Commons Threads a 3.3.0.
 * SKYOPS-86329: actualización de las versiones de los módulos de prueba de plataforma para compatibilidad con el sdk de java 21.
@@ -70,7 +70,7 @@ Para obtener más información sobre las funciones nuevas y mejoradas de las gu�
 
 ### Problemas conocidos {#known-issues-18175}
 
-* FORMS-15818: No se encontró la entrada de descriptor de componente `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` en los registros del servidor. Son sentencias del registro inofensivas.
+* FORMS-15818: no se ha encontrado la entrada del descriptor de componente `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` en los registros del servidor. Son sentencias del registro inofensivas.
 
 ### Características y API obsoletas {#deprecated-18175}
 
