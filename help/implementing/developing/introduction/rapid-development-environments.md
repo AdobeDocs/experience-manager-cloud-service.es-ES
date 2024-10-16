@@ -4,10 +4,10 @@ description: Aprenda a utilizar entornos de desarrollo rápido para iteraciones 
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: fd57437b16a87de2b279b0f8bc10c12a7d3f721a
 workflow-type: tm+mt
-source-wordcount: '4241'
-ht-degree: 4%
+source-wordcount: '4537'
+ht-degree: 3%
 
 ---
 
@@ -94,10 +94,38 @@ Después de agregar un RDE para el programa mediante Cloud Manager, puede intera
    aio plugins:update
    ```
 
-1. Configure el complemento RDE para utilizar su organización, programa y entorno. El siguiente comando setup proporcionará al usuario de forma interactiva una lista de los programas de su organización y mostrará los entornos RDE de ese programa para elegir.
+1. Inicie sesión con el cliente aio.
 
    ```
    aio login
+   ```
+   La información de inicio de sesión (token) se almacena en la configuración de aio global y, por lo tanto, solo admite un inicio de sesión y una organización. Si desea utilizar varios RDE que necesiten diferentes inicios de sesión u organizaciones, siga el siguiente ejemplo de introducción a contextos.
+
+   <details><summary>Siga este ejemplo para configurar un contexto local para uno de sus inicios de sesión de RDE</summary>
+   Para almacenar la información de inicio de sesión localmente en un archivo .aio en el directorio actual dentro de un contexto específico, siga estos pasos. Un contexto también es una forma inteligente de configurar un entorno o script de CI/CD.  Para utilizar esta función, asegúrese de utilizar al menos la versión 10.3.1 de aio-cli. Actualícelo con npm install -g @adobe/aio-cli
+
+   Vamos a crear un contexto llamado &quot;mycontext&quot; que luego establecemos como el contexto predeterminado usando el complemento auth antes de llamar al comando login.
+
+   ```
+   aio config set --json -l "ims.contexts.mycontext" "{ cli.bare-output: false }"
+   aio auth ctx -s mycontext
+   aio login --no-open
+   ```
+
+
+   >[!NOTE]
+   > El comando de inicio de sesión con la opción `--no-open` generará una dirección URL en el terminal en lugar de abrir el explorador predeterminado. Así podrás copiarlo y abrirlo con una ventana de **incógnito** de tu navegador. De este modo, la sesión que haya iniciado en la ventana normal del explorador permanecerá sin cambios y podrá asegurarse de utilizar el inicio de sesión y la organización específicos necesarios para su contexto.
+
+   El primer comando crea una nueva configuración de contexto de inicio de sesión, denominada `mycontext`, en el archivo de configuración `.aio` local (el archivo se crea si es necesario). El segundo comando establece el contexto `mycontext` como el contexto &quot;actual&quot;, es decir, el predeterminado.
+
+   Con esta configuración en su lugar, el comando login almacena automáticamente los tokens de inicio de sesión en el contexto `mycontext`, por lo que lo mantiene local.
+
+   Se pueden administrar varios contextos manteniendo las configuraciones locales en varias carpetas. Alternativamente, también es posible configurar varios contextos dentro de un solo archivo de configuración y cambiar entre ellos cambiando el contexto &quot;actual&quot;.
+   </details>
+
+1. Configure el complemento RDE para utilizar su organización, programa y entorno. El siguiente comando setup proporcionará al usuario de forma interactiva una lista de los programas de su organización y mostrará los entornos RDE de ese programa para elegir.
+
+   ```
    aio aem:rde:setup
    ```
 
@@ -993,7 +1021,7 @@ Los desarrolladores de Forms pueden utilizar el entorno de desarrollo rápido de
 
 Para obtener más información sobre RDE en AEM as a Cloud Service, vea el tutorial en vídeo que muestra [cómo configurarlo, cómo utilizarlo y el ciclo de vida de desarrollo (01:25)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html).
 
-# Resolución de problemas {#troubleshooting}
+# Solución de problemas {#troubleshooting}
 
 ## Localización de averías de RDE (#rde-troublehooting)
 
