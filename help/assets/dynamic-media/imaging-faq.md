@@ -1,25 +1,28 @@
 ---
 title: Imágenes inteligentes
-description: Descubra cómo Imágenes inteligentes con Adobe Sensei AI aplica las características de visualización únicas de cada usuario para ofrecer automáticamente las imágenes adecuadas y optimizadas para su experiencia, lo que resulta en un mejor rendimiento y participación.
+description: Descubra cómo Imágenes inteligentes con Adobe Sensei AI aplica las características de visualización únicas de cada usuario para ofrecer automáticamente las imágenes adecuadas optimizadas para su experiencia, lo que resulta en un mejor rendimiento y participación.
 contentOwner: Rick Brough
 feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 1b985a83fd58522ee485c02b96bfb6a697da6ce0
+source-git-commit: 0dbc3ae264f83672a212151d14011820aa5e3e78
 workflow-type: tm+mt
-source-wordcount: '3455'
+source-wordcount: '2840'
 ht-degree: 1%
 
 ---
 
 # Imágenes inteligentes {#smart-imaging}
 
-## Acerca de las imágenes inteligentes{#about-smart-imaging}
+Descubra cómo Imágenes inteligentes con Adobe Sensei AI aplica las características de visualización únicas de cada usuario para ofrecer automáticamente las imágenes adecuadas optimizadas para su experiencia, lo que resulta en un mejor rendimiento y participación.
+
+
+## Acerca de las imágenes inteligentes {#about-smart-imaging}
 
 La tecnología de imágenes inteligentes aplica las capacidades de IA de Adobe Sensei y funciona con los &quot;ajustes preestablecidos de imagen&quot; existentes. Funciona para mejorar el rendimiento de la entrega de imágenes al optimizar automáticamente el formato, el tamaño y la calidad de la imagen en función de las capacidades del explorador del cliente.
 
-Y ahora, obtenga una mejor puntuación de Google Core Web Vital para LCP (Pintado de contenido más grande) con imágenes inteligentes mejoradas que ahora vienen con soporte para AVIF y WebP.
+Y ahora, obtenga una mejor puntuación de Google Core Web Vital para LCP (Pintado de contenido más grande) con imágenes inteligentes mejoradas, que ahora viene con soporte para AVIF y WebP.
 
 >[!IMPORTANT]
 >
@@ -29,13 +32,13 @@ Y ahora, obtenga una mejor puntuación de Google Core Web Vital para LCP (Pintad
 >
 >Pruebe y descubra las ventajas de los modificadores de imagen de Dynamic Media y de las imágenes inteligentes con Dynamic Media [_Snapshot_](https://snapshot.scene7.com/).
 >
-> Snapshot es una herramienta de demostración visual diseñada para ilustrar la potencia de Dynamic Media para la entrega de imágenes optimizadas y dinámicas. Experimente con imágenes de prueba o direcciones URL de Dynamic Media para observar visualmente la salida de varios modificadores de imagen de Dynamic Media y optimizaciones de imágenes inteligentes para lo siguiente:
+> Snapshot es una herramienta de demostración visual diseñada para ilustrar la potencia de Dynamic Media para la entrega de imágenes optimizadas y dinámicas. Experimente con imágenes de prueba o direcciones URL de Dynamic Media para observar visualmente la salida de varios modificadores de imagen de Dynamic Media y optimizaciones de Imágenes inteligentes para lo siguiente:
 >
 >* Tamaño de archivo (con envío WebP y AVIF)
 >* Ancho de banda de red
 >* DPR (proporción de píxeles del dispositivo)
 >
->Para aprender lo fácil que es usar Snapshot, reproduzca el [vídeo de entrenamiento Snapshot](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=en) (3 minutos y 17 segundos).
+>Para aprender lo fácil que es usar Snapshot, reproduzca el [vídeo de entrenamiento Snapshot](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minutos y 17 segundos).
 
 Imágenes inteligentes se beneficia del aumento de rendimiento añadido de estar totalmente integrado con el mejor servicio de CDN (red de distribución de contenido) premium de Adobe. Este servicio encuentra la ruta de Internet óptima entre servidores, redes y puntos de intercambio entre iguales. Encuentra una ruta que tiene la latencia más baja y la tasa de pérdida de paquetes más baja en lugar de utilizar la ruta predeterminada de Internet.
 
@@ -63,11 +66,15 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 **Ventajas de las imágenes inteligentes**
 
-Imágenes inteligentes proporciona un mejor rendimiento de entrega de imágenes al optimizar automáticamente el tamaño del archivo de imagen en función del explorador del cliente en uso, la visualización del dispositivo y las condiciones de la red. Dado que las imágenes constituyen la mayor parte del tiempo de carga de una página, cualquier mejora de rendimiento puede tener un profundo impacto en los KPI empresariales, como tasas de conversión más altas, tiempo invertido en un sitio y tasas de devolución del sitio más bajas.
+Imágenes inteligentes mejora la entrega de imágenes al optimizar automáticamente el tamaño del archivo en función del explorador del usuario, la visualización del dispositivo y las condiciones de la red. Este enfoque garantiza tiempos de carga más rápidos y una mejor experiencia de visualización en diferentes entornos. Dado que las imágenes constituyen la mayor parte del tiempo de carga de una página, cualquier mejora de rendimiento puede tener un profundo impacto en los KPI empresariales, como los siguientes:
+
+* Tasas de conversión más altas.
+* Tiempo empleado en un sitio.
+* Tasas de devolución del sitio más bajas.
 
 Las ventajas clave más recientes de las imágenes inteligentes son las siguientes:
 
-* Ahora admite el formato AVIF de próxima generación.
+* Admite el formato AVIF de próxima generación.
 * Ahora, PNG a WebP y AVIF admiten la conversión con pérdidas. Como PNG es un formato sin pérdidas, las entregas anteriores de WebP y AVIF no sufrieron pérdidas.
 * [Conversión de formato del explorador](#bfc)
 * [Proporción de píxeles del dispositivo](#dpr)
@@ -75,15 +82,15 @@ Las ventajas clave más recientes de las imágenes inteligentes son las siguient
 
 ### Acerca de la conversión de formato {#bfc}
 
-Activar la conversión de formato del explorador adjuntando `bfc=on` a la dirección URL de la imagen convierte automáticamente JPEG y PNG en AVIF con pérdida, WebP con pérdida, JPEGXR con pérdida y JPEG con pérdida para diferentes exploradores. Para los navegadores que no admiten estos formatos, Smart Imaging sigue sirviendo al JPEG o PNG. Junto con el formato, Smart Imaging vuelve a calcular la calidad del nuevo formato.
+Activar la conversión de formato del explorador adjuntando `bfc=on` a la dirección URL de la imagen convierte automáticamente JPEG y PNG en AVIF con pérdida, WebP con pérdida, JPEGXR con pérdida y JPEG con pérdida para diferentes exploradores. Para los navegadores que no admiten estos formatos, Smart Imaging sigue sirviendo al JPEG o PNG. Imágenes inteligentes vuelve a calcular la calidad del nuevo formato junto con el cambio de formato.
 
-Las imágenes inteligentes también se pueden desactivar adjuntando `bfc=off` a la dirección URL de la imagen.
+Puede desactivar Imágenes inteligentes adjuntando `bfc=off` a la dirección URL de la imagen.
 
-Consulte también [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) en la API de servicio y procesamiento de imágenes de Dynamic Media.
+Consulte también [bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) en la API de servicio y procesamiento de imágenes de Dynamic Media.
 
 ### Acerca de la optimización de proporción de píxeles del dispositivo {#dpr}
 
-La proporción de píxeles del dispositivo (DPR), también conocida como proporción de píxeles CSS, es la relación entre los píxeles físicos de un dispositivo y los píxeles lógicos. Especialmente con la llegada de las pantallas de retina, la resolución de píxeles de los dispositivos móviles modernos está creciendo a un ritmo rápido.
+La proporción de píxeles del dispositivo (DPR), también denominada proporción de píxeles CSS, representa la relación entre los píxeles físicos y los píxeles lógicos de un dispositivo. Con el aumento de las pantallas de retina, la resolución de píxeles de los dispositivos móviles modernos ha ido aumentando rápidamente.
 
 Al habilitar la optimización de la proporción de píxeles del dispositivo, la imagen se procesa con la resolución nativa de la pantalla, lo que la hace nítida.
 
@@ -108,9 +115,9 @@ Vea también [Al trabajar con imágenes](/help/assets/dynamic-media/adding-dynam
 
 ### Acerca de la optimización del ancho de banda {#bandwidth}
 
-Al activar Ancho de banda de red, se ajusta automáticamente la calidad de imagen que se proporciona en función del ancho de banda real de la red. Para un ancho de banda de red deficiente, la optimización de la RGPD (proporción de píxeles del dispositivo) se desactiva automáticamente, incluso si ya está activada.
+Al activar el ancho de banda de la red, se ajusta automáticamente la calidad de imagen que se proporciona en función del ancho de banda real de la red. Para un ancho de banda de red deficiente, la optimización de la RGPD (proporción de píxeles del dispositivo) se desactiva automáticamente, incluso si ya está activada.
 
-Si lo desea, su empresa puede excluirse de la optimización del ancho de banda de la red en el nivel de imagen individual adjuntando `network=off` a la dirección URL de la imagen.
+Su compañía puede deshabilitar la optimización del ancho de banda de red para imágenes individuales adjuntando `network=off` a la dirección URL de la imagen.
 
 | Valor permitido en la dirección URL de una imagen | Descripción |
 |---|---|
@@ -124,15 +131,15 @@ Los valores de RGPD y ancho de banda de red se basan en los valores detectados d
 * Ofrece contenido optimizado inmediatamente (durante la ejecución).
 * Utiliza la tecnología Adobe Sensei para realizar conversiones de acuerdo con la calidad (`qlt`) especificada en la solicitud de imagen.
 * TTL (Tiempo de vida) independiente. Anteriormente, era obligatorio un TTL mínimo de 12 horas para que las imágenes inteligentes funcionaran.
-* Anteriormente, tanto las imágenes originales como las derivadas se almacenaban en caché y se trataba de un proceso de 2 pasos para invalidar la caché. En las últimas imágenes inteligentes, solo se almacenan en caché los derivados, lo que permite un proceso de invalidación de la caché de un solo paso.
-* Los clientes que utilizan encabezados personalizados en su conjunto de reglas se benefician de la última versión de imágenes inteligentes, ya que estos encabezados no están bloqueados, a diferencia de la versión anterior de imágenes inteligentes. Por ejemplo, &quot;Tiempo permitido para el origen&quot;, &quot;X-Robot&quot; como se sugiere en [Agregar un valor de encabezado personalizado a las respuestas de imágenes|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
+* Anteriormente, tanto las imágenes originales como las derivadas se almacenaban en caché y se realizó un proceso de 2 pasos para invalidar la caché. En la última versión de imágenes inteligentes, solo se almacenan en caché los derivados, lo que permite un proceso de invalidación de la caché de un solo paso.
+* Los clientes que utilizan encabezados personalizados en su conjunto de reglas se benefician de la última versión de imágenes inteligentes, ya que estos encabezados no están bloqueados, a diferencia de la versión anterior de imágenes inteligentes. Por ejemplo, &quot;Tiempo permitido para el origen&quot; y &quot;X-Robot&quot; como se sugiere en [Agregar un valor de encabezado personalizado a las respuestas de imagen|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
 ## Funcionamiento de las imágenes inteligentes{#how-smart-imaging-works}
 
-Cuando un consumidor solicita una imagen, Smart Imaging comprueba las características del usuario y la convierte al formato de imagen adecuado en función del explorador en uso. Estas conversiones de formato se realizan de una manera que no degrada la fidelidad visual. Las imágenes inteligentes convierten automáticamente las imágenes a diferentes formatos, según la capacidad del explorador, de la siguiente manera.
+Cuando un consumidor solicita una imagen, Smart Imaging analiza las características del usuario y la convierte al formato adecuado en función del explorador. Estas conversiones de formato se realizan de una manera que no degrada la fidelidad visual. Las imágenes inteligentes convierten automáticamente las imágenes a diferentes formatos, según la capacidad del explorador, de la siguiente manera.
 
 * Convertir automáticamente a AVIF si el explorador admite el formato
-* Convertir automáticamente a WebP si la conversión AVIF no fue beneficiosa o el explorador no admite AVIF
+* Convertir automáticamente a WebP si la conversión AVIF no fue beneficiosa o si el explorador no admite AVIF
 * Convertir automáticamente a JPEG 2000 si Safari no admite WebP
 * Convertir automáticamente a JPEGXR para IE 9+ o si Edge no admite WebP
 
@@ -154,7 +161,7 @@ Se admiten los siguientes formatos de imagen para imágenes inteligentes:
 * JPEG
 * PNG
 
-Para un formato de archivo de imagen JPEG, Smart Imaging vuelve a calcular la calidad del nuevo formato.
+Imágenes inteligentes vuelve a calcular la calidad de los formatos de archivo de imagen JPEG al convertirlos a un nuevo formato.
 
 Para formatos de archivo de imagen compatibles con transparencias como PNG, puede configurar Imágenes inteligentes para proporcionar AVIF y WebP con pérdidas. Para la conversión de formato con pérdida, Imágenes inteligentes utiliza la calidad mencionada en la dirección URL de la imagen o, de lo contrario, la calidad configurada en la cuenta de empresa de Dynamic Media.
 
@@ -164,7 +171,9 @@ No se admiten los comandos del servicio de imágenes `fmt` y `qlt`; se admiten t
 
 ## Preguntas frecuentes sobre imágenes inteligentes{#smart-imaging-faq}
 
-+++**¿Hay costos de licencia asociados con imágenes inteligentes?**
++++
+
+**¿Hay costos de licencia asociados con imágenes inteligentes?**
 
 No. Las imágenes inteligentes se incluyen con la licencia existente. Esta regla es verdadera para Dynamic Media Classic o para Experience Manager: Dynamic Media (local, AMS y as a Cloud Service en Experience Manager).
 
@@ -174,37 +183,49 @@ No. Las imágenes inteligentes se incluyen con la licencia existente. Esta regla
 
 +++
 
-+++**¿Es posible desactivar Imágenes inteligentes para cualquier solicitud?**
++++
+
+**¿Es posible desactivar Imágenes inteligentes para cualquier solicitud?**
 
 Sí. Puede desactivar Imágenes inteligentes si agrega cualquiera de los siguientes modificadores:
 
 * `bfc=off` para desactivar la conversión de formato del explorador. Consulte también [Conversión de formato de explorador](#bfc).
 * `dpr=off` para desactivar la proporción de píxeles del dispositivo. Consulte también [Proporción de píxeles del dispositivo](#dpr).
 * `network=off` para desactivar el ancho de banda de la red. Consulte también [Ancho de banda de red](#network).
++++
 
 +++
 
-+++**¿Es posible &quot;ajustar&quot; imágenes inteligentes?**
+**¿Es posible &quot;ajustar&quot; imágenes inteligentes?**
 
 Sí. Imágenes inteligentes tiene tres opciones que puede activar o desactivar.
 
 * [Conversión de formato del explorador](#bfc)
 * [Proporción de píxeles del dispositivo](#dpr)
 * [Ancho de banda de red](#network)
++++
 
 +++
 
-+++**¿Funcionan las imágenes inteligentes con mis ajustes preestablecidos de imagen existentes?**
+**¿Funcionan las imágenes inteligentes con mis ajustes preestablecidos de imagen existentes?**
 
-Sí. Imágenes inteligentes funciona con los ajustes preestablecidos de imagen existentes y observa todos los ajustes de imagen. Lo que cambia es el formato de imagen, la configuración de calidad o ambos. Para la conversión de formato, Imágenes inteligentes mantiene la fidelidad visual completa tal como se define en los ajustes preestablecidos de la imagen, pero a un tamaño de archivo más pequeño.
+Imágenes inteligentes se integra perfectamente con los ajustes preestablecidos de imagen existentes, respetando todos los ajustes de la imagen.
 
-Por ejemplo, supongamos que un ajuste preestablecido de imagen se define con formato JPEG, tamaño 500 x 500, calidad=85 y máscara de enfoque=0,1,1,5. Cuando Smart Imaging detecta que un usuario se encuentra en un navegador Chrome, la imagen se convierte al formato WebP, con un tamaño de 500 x 500. Y, unsharp mask=0.1,1,5 tiene una calidad WebP que coincide con una calidad JPEG de 85 tan cerca como sea posible. El espacio de esa conversión WebP se compara con el JPEG y se devuelve el más pequeño de los dos.
+Los únicos ajustes implican el formato de imagen, o la calidad, o ambos. Durante la conversión de formato, Imágenes inteligentes conserva la fidelidad visual completa según los ajustes preestablecidos, pero proporciona un tamaño de archivo más pequeño. Solo tiene que habilitarlo agregando `bfc=on`, `dpr=on,dprValue` o `network=on`, o los tres parámetros de configuración a sus direcciones URL o ajustes preestablecidos existentes.
 
+Por ejemplo, supongamos que un ajuste preestablecido de imagen especifica un formato de JPEG de 500 × 500 píxeles, con `quality=85` y `unsharp mask=0.1,1,5`. Imágenes inteligentes detecta si el usuario se encuentra en un navegador Chrome. A continuación, convierte la imagen a WebP con las mismas dimensiones (500 × 500) y una máscara de enfoque que coincide con la configuración del JPEG. A continuación, el sistema compara los tamaños de archivo de las versiones WebP y JPEG y sirve la más pequeña para el usuario.
 +++
 
-+++**¿Tengo que cambiar alguna URL, ajuste preestablecido de imagen o implementar código nuevo en mi sitio?**
+<!-- OLD VERSION BELOW AS PER CQDOC-22085>
+Yes. Smart Imaging works with your existing image presets and observes all your image settings. What changes is the image format, or the quality setting, or both. For format conversion, Smart Imaging maintains full visual fidelity as defined by your image preset settings, but at a smaller file size.
 
-No. Imágenes inteligentes funciona perfectamente con las direcciones URL de imagen y ajustes preestablecidos de imagen existentes. Además, Imágenes inteligentes no requiere que agregue código al sitio web para detectar el explorador de un usuario. Toda esta funcionalidad se gestiona automáticamente.
+For example, suppose that an image preset is defined with JPEG format, size 500 x 500, quality=85, and unsharp mask=0.1,1,5. When Smart Imaging detects that a user is on a Chrome browser, the image is converted to WebP format, with size 500 x 500. And, unsharp mask=0.1,1,5 is at a WebP quality that matches a JPEG quality of 85 as close as possible. The footprint of that WebP conversion is compared with the JPEG, and the smaller of the two is returned. -->
+
+<!-- QUESTION BELOW WAS REMOVED AS PER CQDOC-22085
+
++++**Do I have to change any URLs, image presets, or deploy new code on my site?**
+
+No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add code to your website to detect a user's browser. All of this functionality is handled automatically.
 
 <!-- Smart Imaging works seamlessly with your existing image URLs and image presets if you configure Smart Imaging on your existing custom domain. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. It is all handled automatically.
 
@@ -212,107 +233,108 @@ In case you must configure a new custom domain to use Smart Imaging, the URLs mu
 
 To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging) -->
 
-<!-- OLD As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
+<!-- OLD As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. 
+
+-->
 
 +++
 
-+++**¿Smart Imaging funciona con HTTPS? ¿Qué tal HTTP/2?**
+**¿Smart Imaging funciona con HTTPS? ¿Qué tal HTTP/2?**
 
 Sí, a ambas preguntas. Imágenes inteligentes funciona con imágenes entregadas a través de HTTP o HTTPS. Además, también funciona sobre HTTP/2.
++++
 
 +++
 
-+++**¿Cumplo los requisitos para usar imágenes inteligentes?**
+**¿Cumplo los requisitos para usar imágenes inteligentes?**
 
-Depende de ti. Para utilizar imágenes inteligentes, la cuenta de Experience Manager de Dynamic Media Classic o Dynamic Media de su empresa debe cumplir los siguientes requisitos:
+Imágenes inteligentes está listo para su uso inmediato para todos los clientes. Para comenzar a disfrutar de sus ventajas, simplemente agregue `bfc=on`, o `dpr=on,dprValue`, o `network=on`, o los tres parámetros de configuración a las direcciones URL o ajustes preestablecidos existentes.
 
-* Utilice la CDN (red de distribución de contenido) empaquetada en Adobe como parte de la licencia.
-* Use un dominio dedicado (por ejemplo, `images.company.com` o `mycompany.scene7.com`), no un dominio genérico (por ejemplo, `s7d1.scene7.com`, `s7d2.scene7.com` o `s7d13.scene7.com`).
-
-Para encontrar tus dominios, abre la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicia sesión en tu cuenta o cuentas de empresa.
-
-Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**. Busque el campo denominado **[!UICONTROL Nombre de servidor publicado]**. Si actualmente utiliza un dominio genérico, puede solicitar pasar a su propio dominio personalizado. Realice esta solicitud de transición cuando envíe un caso de asistencia.
-
-Su primer dominio personalizado no supone ningún coste adicional con una licencia de Dynamic Media.
-
+Para activar imágenes inteligentes, la cuenta de Experience Manager de Dynamic Media Classic o Dynamic Media de su empresa debe incluir la red de distribución de contenido (CDN) incluida en el Adobe como parte de la licencia.
 +++
 
-+++**¿Puedo habilitar imágenes inteligentes para mi cuenta?**
 
-No. Inicia una solicitud para utilizar imágenes inteligentes; no se activa automáticamente.
+<!-- QUESTIONS BELOW WERE REMOVED AS PER CQDOC-22085
 
-Cree un caso de soporte como se describe a continuación. En su caso de soporte, asegúrese de mencionar cuál de las siguientes capacidades de imágenes inteligentes (una o más) desea habilitar en su cuenta:
++++**Can I enable Smart Imaging for my account?**
+
+No. You initiate a request to use Smart Imaging; it is not automatically enabled.
+
+Create a support case as described below. In your support case, be sure you mention which of the following Smart Imaging capabilities (one or more) you want enabled on your account:
 
 * WebP
 * AVIF
-* Optimización del ancho de banda de red y DPR
-* PNG a AVIF con pérdida o WebP con pérdida
+* DPR and Network Bandwidth optimization
+* PNG to lossy AVIF or lossy WebP
 
-Si ya tiene habilitadas las imágenes inteligentes con WebP, pero desea otras nuevas funcionalidades como las enumeradas anteriormente, debe crear un caso de asistencia.
+If you already have Smart Imaging enabled with WebP, but desire other new capabilities as listed above, you must create a support case.
 
-**Para crear un caso de soporte para habilitar imágenes inteligentes en su cuenta:**
+**To create a support case to enable Smart Imaging on your account:**
 
-1. [Use el Admin Console para iniciar la creación de un nuevo caso de soporte](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
-1. Proporcione la siguiente información en su caso de asistencia:
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. Provide the following information in your support case:
 
-   * Nombre del contacto principal, correo electrónico, teléfono.
+    * Primary contact name, email, phone.
 
-   * Enumere cuál de las siguientes capacidades de imágenes inteligentes (una o más) desea habilitar en su cuenta:
+    * List which of the following Smart Imaging capabilities (one or more) you want enabled on your account:
       * WebP
       * AVIF
-      * Optimización del ancho de banda de red y DPR
-      * PNG a AVIF con pérdida o WebP con pérdida
+      * DPR and Network Bandwidth optimization
+      * PNG to lossy AVIF or lossy WebP
+    
+    * All domains to be enabled for Smart Imaging (that is, `images.company.com` or `mycompany.scene7.com`).
 
-   * Se habilitarán todos los dominios para imágenes inteligentes (es decir, `images.company.com` o `mycompany.scene7.com`).
+       To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts. 
 
-     Para encontrar tus dominios, abre la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicia sesión en tu cuenta o cuentas de empresa.
+       Go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.  
 
-     Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**.
+       Look for the field labeled **[!UICONTROL Published Server Name]**.
+    
+    * Verify that you are using the CDN through Adobe and not managed with a direct relationship.
 
-     Busque el campo denominado **[!UICONTROL Nombre de servidor publicado]**.
+    * Verify you are using a dedicated domain such as `images.company.com` or `mycompany.scene7.com`, and not a generic domain, such as `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.  
 
-   * Compruebe que está utilizando la red de distribución de contenido (CDN) a través del Adobe y que no está gestionada con una relación directa.
+       To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts.
 
-   * Compruebe que está usando un dominio dedicado como `images.company.com` o `mycompany.scene7.com`, y no un dominio genérico, como `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
+       Go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.  
 
-     Para encontrar tus dominios, abre la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicia sesión en tu cuenta o cuentas de empresa.
+       Look for the field labeled **[!UICONTROL Published Server Name]**. If you are currently using a generic Dynamic Media Classic domain, you can request moving over to your own custom domain as part of this transition.
 
-     Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**.
+    * Indicate if you want it to work over HTTP/2.
 
-     Busque el campo denominado **[!UICONTROL Nombre de servidor publicado]**. Si está utilizando un dominio de Dynamic Media Classic genérico, puede solicitar pasar a su propio dominio personalizado como parte de esta transición.
+1. Adobe Customer Support adds you to the Smart Imaging customer Wait List based on the order in which requests are submitted.
+1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date.
+1. **Optional**: You can optionally test Smart Imaging in Staging before Adobe pushes the new feature to production.
+1. You are notified after completion by Customer Support.
+1. To maximize the performance improvements of Smart Imaging, Adobe recommends setting the Time To Live (TTL) to 24 hours or longer. The TTL defines how long assets are cached by the CDN. To change this setting:
 
-   * Indique si desea que funcione sobre HTTP/2.
+    1. If you use Dynamic Media Classic, go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**. Set the **[!UICONTROL Default Client Cache Time To Live]** value to 24 or longer.
+    1. If you use Dynamic Media, follow [these instructions](config-dm.md). Set the **[!UICONTROL Expiration]** value 24 hours or longer.
 
-1. La Asistencia al cliente de Adobe le añade a la Lista de espera de clientes de imágenes inteligentes en función del orden en que se envían las solicitudes.
-1. Cuando el Adobe está listo para administrar su solicitud, el Servicio de atención al cliente se pone en contacto con usted para coordinar y establecer una fecha objetivo.
-1. **Opcional**: opcionalmente, puede probar las imágenes inteligentes en Ensayo antes de que el Adobe implemente la producción de la nueva característica.
-1. Se le notificará una vez que el Servicio de atención al cliente lo haya completado.
-1. Para maximizar las mejoras de rendimiento de las imágenes inteligentes, Adobe recomienda establecer el Tiempo de vida (TTL) en 24 horas o más. El TTL define cuánto tiempo la CDN almacena en caché los recursos. Para cambiar esta configuración:
 
-   1. Si usa Dynamic Media Classic, vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de aplicación]** > **[!UICONTROL Configuración de Publish]** > **[!UICONTROL Servidor de imágenes]**. Establezca el valor **[!UICONTROL Tiempo predeterminado de almacenamiento en caché del cliente para activo]** en 24 o más.
-   1. Si usa Dynamic Media, siga [estas instrucciones](config-dm.md). Establezca el valor **[!UICONTROL Expiration]** en 24 horas o más.
 
-+++
+**When is my account enabled with Smart Imaging?**
 
-+++**¿Cuándo se habilita mi cuenta con imágenes inteligentes?**
-
-Las solicitudes se procesan en el orden en que se reciben en Asistencia al cliente, según la Lista de espera.
+Requests are processed in the order in which they are received by Customer Support, according to the Wait List.
 
 >[!NOTE]
 >
->Puede haber un tiempo de espera largo porque habilitar imágenes inteligentes implica borrar la Adobe de la caché. Por lo tanto, solo se pueden gestionar unas pocas transiciones de clientes en un momento determinado.
+>There can be a long lead time because enabling Smart Imaging involves Adobe clearing the cache. Therefore, only a few customer transitions can be handled at any given time.
+
+-->
 
 +++
 
-+++**¿Hay riesgos con el uso de imágenes inteligentes?**
+**¿Hay riesgos con el uso de imágenes inteligentes?**
 
 No hay riesgo para una página web de cliente. Sin embargo, la transición a Imágenes inteligentes borra la caché de CDN. Esta operación implica pasar a una nueva configuración de Dynamic Media Classic o Dynamic Media en Experience Manager.
 
 Durante la transición inicial, las imágenes no almacenadas en caché acceden directamente a los servidores de origen de Adobe hasta que se vuelva a crear la . De este modo, Adobe tiene previsto gestionar varias transiciones de clientes a la vez, de modo que se mantenga un rendimiento aceptable al extraer solicitudes de su origen. Para la mayoría de los clientes, la caché se vuelve a crear por completo en la CDN en un plazo de uno a dos días.
++++
 
 +++
 
-+++**¿Puedo verificar si las imágenes inteligentes funcionan?**
+**¿Puedo verificar si las imágenes inteligentes funcionan?**
 
 Sí. Puede hacer lo siguiente:
 
@@ -322,7 +344,7 @@ Sí. Puede hacer lo siguiente:
 1. Asegúrese de que la caché esté deshabilitada cuando las herramientas para desarrolladores estén abiertas.
 
    * En Windows®, vaya a la configuración en el panel de herramientas para desarrolladores y, a continuación, active la casilla de verificación **[!UICONTROL Deshabilitar caché (mientras devtools esté abierto)]**.
-   * En macOS, en el panel del desarrollador, en la ficha **[!UICONTROL Red]**, seleccione **[!UICONTROL deshabilitar caché]**.
+   * En macOS, en el panel Desarrollador, en la ficha **[!UICONTROL Red]**, seleccione **[!UICONTROL deshabilitar caché]**.
 
 1. Observe cómo el Tipo de contenido se transforma al formato adecuado. La siguiente captura de pantalla muestra una imagen PNG convertida dinámicamente a WebP en Chrome. Si su dominio tiene habilitado AVIF, también puede esperar ver AVIF en el Tipo de contenido.
 1. Repita esta prueba en diferentes navegadores y condiciones de usuario.
@@ -332,10 +354,11 @@ Sí. Puede hacer lo siguiente:
 >No todas las imágenes se convierten. Imágenes inteligentes decide si la conversión puede mejorar el rendimiento. En ocasiones, cuando no se espera una ganancia de rendimiento o el formato no es JPEG ni PNG, la imagen no se convierte.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
++++
 
 +++
 
-+++**¿Hay alguna manera de conocer los beneficios de las imágenes inteligentes?**
+**¿Hay alguna manera de conocer los beneficios de las imágenes inteligentes?**
 
 Sí. El encabezado de imágenes inteligentes determina las ventajas de las imágenes inteligentes. Cuando se habilita Imágenes inteligentes, después de solicitar una imagen, bajo el encabezado **[!UICONTROL Encabezados de respuesta]**, puede ver `-X-Adobe-Smart-Imaging` como se ve en el siguiente ejemplo resaltado:
 
@@ -353,20 +376,23 @@ Este encabezado indica lo siguiente:
 >
 >**X-Adobe-Smart-Imaging = -1 con WebP siendo entregado**
 >
->Si el valor de `X-Adobe-Smart-Imaging` es -1 y WebP aún se está entregando, significa que Imágenes inteligentes funciona, pero no se calcularon los beneficios de tamaño debido a la caché antigua. Puede usar `cache=update` (solo una vez) en la dirección URL de la imagen para solucionar este problema.
+>Si el valor de `X-Adobe-Smart-Imaging` es -1 y WebP aún se está entregando, Imágenes inteligentes estará activo. Sin embargo, las ventajas de tamaño no se calcularon debido a que la caché no está actualizada. Puede usar `cache=update` (solo una vez) en la dirección URL de la imagen para solucionar este problema.
 >Ejemplo de uso del modificador:
 >`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
 >Para invalidar toda la caché, debe crear un caso de soporte.
 
 +++
 
-+++**¿Puedo deshabilitar la optimización de AVIF en imágenes inteligentes?**
++++
+
+**¿Puedo deshabilitar la optimización de AVIF en imágenes inteligentes?**
 
 Sí. Si desea volver a ofrecer WebP de forma predeterminada, cree un caso de soporte para el mismo. Como de costumbre, puede desactivar Imágenes inteligentes agregando el parámetro `bfc=off` a la dirección URL de la imagen. Sin embargo, no puede seleccionar WebP o AVIF en el modificador URL para Imágenes inteligentes. Esta capacidad se mantiene en el nivel de cuenta de la compañía.
++++
 
 +++
 
-+++**¿Por qué falla mi solicitud cuando tengo una URL con fmt=tif en el explorador web Chrome?**
+**¿Por qué falla mi solicitud cuando tengo una URL con fmt=tif en el explorador web Chrome?**
 
 Este error no se produce si Smart Imaging no está habilitado en su cuenta. Imágenes inteligentes funciona solo con formatos JPEG o PNG.
 
@@ -374,67 +400,76 @@ Para evitar este error, puede:
 
 * Especifique JPEG o PNG, o
 * No use el modificador `fmt`, o
-* Utilice un formato preferido por el explorador definido por Imágenes inteligentes. Por ejemplo, puede utilizar WebP para el explorador web Chrome.
+* Utilice un formato preferido por el explorador definido por Imágenes inteligentes. Por ejemplo, puede utilizar WebP para el explorador Web Chrome.
++++
 
 +++
 
-+++**¿Puedo descargar una imagen de TIFF desde la dirección URL de una imagen?**
+**¿Puedo descargar una imagen de TIFF desde la dirección URL de una imagen?**
 
 Sí. Agregue `fmt=tif` y `bfc=off` a la ruta URL de la imagen.
++++
 
 +++
 
-+++**¿Administra Smart Imaging el formato de imagen y la configuración de calidad de imagen?**
+**¿Administra Smart Imaging el formato de imagen y la configuración de calidad de imagen?**
 
 Sí. Imágenes inteligentes utiliza formato y calidad. El resto de los parámetros siguen siendo los mismos, si se solicitan en la dirección URL de la imagen.
++++
 
 +++
 
-+++**¿Puedo establecer una configuración de calidad mínima y máxima?**
+**¿Puedo establecer una configuración de calidad mínima y máxima?**
 
 No. Actualmente no existe ese aprovisionamiento.
++++
 
 +++
 
-+++**¿Smart Imaging ajusta la configuración de salida de calidad porcentual?**
+**¿Smart Imaging ajusta la configuración de salida de calidad porcentual?**
 
-Sí. Imágenes inteligentes ajusta automáticamente el porcentaje de calidad. Este porcentaje de calidad se determina mediante un algoritmo de aprendizaje automático desarrollado por Adobe. Este porcentaje no es específico del intervalo.
+Sí. Imágenes inteligentes ajusta automáticamente el porcentaje de calidad. Esta calidad se determina usando un algoritmo de aprendizaje automático desarrollado por Adobe. Este porcentaje no es específico del intervalo.
++++
 
 +++
 
-+++**¿Solo el JPEG y PNG son reemplazados por Imágenes inteligentes?**
+**¿Solo el JPEG y PNG son reemplazados por Imágenes inteligentes?**
 
 Sí. Esta funcionalidad solo funciona para JPEG y PNG.
++++
 
 +++
 
-+++**¿Por qué a veces se devuelve el JPEG a Chrome en lugar de a WebP?**
+**¿Por qué a veces se devuelve el JPEG a Chrome en lugar de a WebP?**
 
 Imágenes inteligentes determina si la conversión es beneficiosa o no. Devuelve la nueva imagen solo si la conversión es beneficiosa.
++++
 
 +++
 
-+++**¿Por qué la proporción de píxeles del dispositivo (dpr) no funciona con imágenes compuestas?**
+**¿Por qué la proporción de píxeles del dispositivo (dpr) no funciona con imágenes compuestas?**
 
 Si una imagen compuesta implica demasiadas capas, la funcionalidad de dpr puede verse afectada al utilizar un modificador de posición. Este problema se conoce y se solucionará en futuras versiones de Imágenes inteligentes. Si otras funcionalidades de imágenes inteligentes no funcionan según lo esperado, puede crear un caso de asistencia para informar del problema.
++++
 
 +++
 
-+++**¿Por qué el PNG de imágenes inteligentes se convierte en WebP/AVIF sin pérdidas?**
+**¿Por qué el PNG de imágenes inteligentes se convierte en WebP/AVIF sin pérdidas?**
 
-Como PNG es un formato sin pérdidas, las entregas anteriores de WebP y AVIF resultaron con pérdidas mayores de lo esperado. Imágenes inteligentes ahora admite la conversión con pérdida. Puede usar el modificador `cache=update` (solo una vez) en una solicitud de imagen para solucionar este problema. Ejemplo de uso de este modificador:
+Como PNG es un formato sin pérdidas, las entregas anteriores de WebP y AVIF no sufrieron pérdidas, lo que dio como resultado un tamaño mayor del esperado. Imágenes inteligentes ahora admite la conversión con pérdida. Puede usar el modificador `cache=update` (solo una vez) en una solicitud de imagen para solucionar este problema. Ejemplo de uso de este modificador:
 
 `https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
 
 Para invalidar toda la caché, debe crear un caso de soporte que solicite ese esfuerzo.
++++
 
 +++
 
-+++**¿Puedo seguir usando PNG para convertir sin pérdidas en imágenes inteligentes?**
+**¿Puedo seguir usando PNG para convertir sin pérdidas en imágenes inteligentes?**
 
-Sí. Imágenes inteligentes ahora admite la conversión con pérdida en función del nivel de calidad. Para seguir usando la conversión sin pérdidas, puede usar la calidad 100 que se establece mediante la configuración de su compañía o a través de la dirección URL de la imagen usando `qlt=100` en la ruta.
-
+Sí. Imágenes inteligentes ahora admite la conversión con pérdida en función del nivel de calidad. Puede seguir utilizando la conversión sin pérdidas estableciendo la calidad en 100, ya sea mediante la configuración de su empresa o agregando `qlt=100` a la ruta de acceso URL de la imagen.
 +++
+
 
 
 
