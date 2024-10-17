@@ -7,9 +7,9 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 2d41b880ec3988b72128c7aac8b619c337a89427
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5684'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -125,7 +125,7 @@ ht-degree: 99%
          + [Notas de la versión 2023.9.0](/help/implementing/cloud-manager/release-notes/2023/2023-9-0.md)
          + [Notas de la versión 2023.8.0](/help/implementing/cloud-manager/release-notes/2023/2023-8-0.md)
          + [Notas de la versión 2023.7.0](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
-         + [Notas de la versión de 2023.6.0](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
+         + [Notas de la versión 2023.6.0](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
          + [Notas de la versión 2023.5.0](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
          + [Notas de la versión 2023.4.0](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
          + [Notas de la versión 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
@@ -134,7 +134,7 @@ ht-degree: 99%
       + 2022 {#2022}
          + [Notas de la versión 2022.12.0](/help/implementing/cloud-manager/release-notes/2022/2022-12-0.md)
          + [Notas de la versión de 2022.11.0](/help/implementing/cloud-manager/release-notes/2022/2022-11-0.md)
-         + [Notas de la versión de 2022.10.0](/help/implementing/cloud-manager/release-notes/2022/2022-10-0.md)
+         + [Notas de la versión 2022.10.0](/help/implementing/cloud-manager/release-notes/2022/2022-10-0.md)
          + [Notas de la versión 2022.9.0](/help/implementing/cloud-manager/release-notes/2022/2022-9-0.md)
          + [Notas de la versión 2022.8.0](/help/implementing/cloud-manager/release-notes/2022/2022-8-0.md)
          + [Notas de la versión 2022.7.0](/help/implementing/cloud-manager/release-notes/2022/2022-7-0.md)
@@ -1082,12 +1082,12 @@ ht-degree: 99%
          + [Creación de programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [Edición de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [Hibernación de entornos](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-      + AEM Crear un proyecto de aplicación {#create-application-project} de la
+      + Crear un proyecto de aplicación de AEM {#create-application-project}
          + [Asistente para la creación de proyectos](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [Configuración del proyecto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [Entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [Administrar entornos](/help/implementing/cloud-manager/manage-environments.md)
-      + Administrar su código {#managing-code}
+      + Administrar el código {#managing-code}
          + [Administrar versiones del proyecto de Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Administración de repositorios en Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Adición de un repositorio de Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
@@ -1102,7 +1102,7 @@ ht-degree: 99%
          + [Anotaciones de comprobación de GitHub](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [Variables de entorno](/help/implementing/cloud-manager/environment-variables.md)
       + Canalizaciones de CI-CD de Cloud Manager {#cicd-pipelines}
-         + [Introducción a las canalizaciones de CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+         + [Introducción a canalizaciones de CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [Configuración de una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [Añadir una canalización que no es de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [Administrar canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
