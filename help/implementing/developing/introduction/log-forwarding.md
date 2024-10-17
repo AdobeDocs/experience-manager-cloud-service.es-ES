@@ -4,9 +4,9 @@ description: Obtenga información acerca del reenvío de registros a Splunk y ot
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3aafe41554fd86637e34687660fc48ea817b01d7
+source-git-commit: e450a58587ca4d7dff2ab229f522c7e7d4f3f20c
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1663'
 ht-degree: 1%
 
 ---
@@ -304,7 +304,13 @@ data:
 
 Consideraciones:
 
-* el puerto predeterminado es 443. Opcionalmente, se puede sobrescribir con una propiedad denominada `port`.
+* El puerto predeterminado es 443. Opcionalmente, se puede sobrescribir con una propiedad denominada `port`.
+* El campo sourcetype tendrá uno de los siguientes valores, según el registro específico: *aemaccess*, *aemerror*,
+  *aemrequest*, *aemdispatcher*, *aemhttpdaccess*, *aemhttpderror*, *aemcdn*
+
+>[!NOTE]
+>
+> [Si se migra](#legacy-migration) del reenvío de registro heredado a este modelo de autoservicio, es posible que los valores del campo `sourcetype` enviados a su índice de Splunk hayan cambiado, por lo que debe ajustarlos en consecuencia.
 
 
 <!--
@@ -385,6 +391,10 @@ Los clientes que hayan sido configurados de esa manera por Adobe son bienvenidos
 Cuando esté listo para migrar, simplemente configure el archivo YAML como se describe en las secciones anteriores. Utilice la canalización de configuración de Cloud Manager para implementar en cada uno de los entornos donde se debe aplicar la configuración.
 
 Se recomienda, pero no es obligatorio, que se implemente una configuración en todos los entornos para que todos estén bajo control de autoservicio. Si no es así, es posible que olvide qué entornos se han configurado mediante Adobe en comparación con los configurados de forma automática.
+
+>[!NOTE]
+>
+>Los valores del campo `sourcetype` enviados a su índice de Splunk pueden haber cambiado, así que ajústelos en consecuencia.
 
 >[!NOTE]
 >
