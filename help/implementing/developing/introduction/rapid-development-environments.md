@@ -4,9 +4,9 @@ description: Aprenda a utilizar entornos de desarrollo rápido para iteraciones 
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fd57437b16a87de2b279b0f8bc10c12a7d3f721a
+source-git-commit: 3c1cbf0930799c2919696465931bf7c1f76bf8bb
 workflow-type: tm+mt
-source-wordcount: '4537'
+source-wordcount: '4794'
 ht-degree: 3%
 
 ---
@@ -1052,3 +1052,17 @@ Compruebe que el inicio de sesión se haya completado correctamente ejecutando
 `aio cloudmanager:list-programs`
 
 Esto debería enumerar todos los programas de la organización configurada y confirmar que tiene asignada la función correcta.
+
+### Uso del contexto obsoleto &quot;aio-cli-plugin-cloudmanager&quot; {#aio-rde-plugin-troubleshooting-deprecatedcontext}
+
+Debido al historial de &quot;aio-cli-plugin-aem-rde&quot;, se utilizó el nombre de contexto &quot;aio-cli-plugin-cloudmanager&quot; durante un tiempo. El complemento rojo ahora utiliza la forma IMS de tratar con la información contextual, lo que significa que hay opciones para almacenar la información contextual global o localmente, así como para establecer de forma predeterminada todas las llamadas aio a un valor predeterminado configurado si así lo desea. El contexto predeterminado configurado se almacena localmente y permite a los desarrolladores realizar un seguimiento y utilizar contextos individuales y su información dentro de una carpeta. Para obtener más información, lea [el ejemplo anterior para configurar un contexto local](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools).
+
+Los desarrolladores que utilizan ambos complementos, el aio-cli-plugin-cloudmanager y el aio-cli-plugin-aem-red y desean mantener toda la información en el mismo contexto tienen dos opciones en este momento:
+
+#### Siga usando el contexto &quot;aio-cli-plugin-cloudmanager&quot;
+
+El contexto aún se puede utilizar, se mostrará una advertencia de obsolescencia en el complemento RDE. Esta advertencia se puede omitir usando el modo ```--quiet```. Las versiones más recientes del complemento RDE ya no ofrecerán la alternativa de leer el contexto &quot;aio-cli-plugin-cloudmanager&quot;. Para seguir usándolo, simplemente configure el contexto predeterminado en &quot;aio-cli-plugin-cloudmanager&quot;, vea [el ejemplo anterior para configurar un contexto local](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools).
+
+#### Utilice cualquier otro nombre de contexto también para el complemento Cloud Manager
+
+Los complementos de Cloud Manager ofrecen un parámetro para definir el contexto que se va a utilizar. Todavía no admite la configuración de contexto predeterminada de IMS. Para ello, configure el complemento RDE con [el ejemplo para configurar un contexto local](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) e indique al complemento de Cloud Manager que utilice &#39;myContext&#39; como ```--imsContextName=myContext``` en cada llamada a él.
