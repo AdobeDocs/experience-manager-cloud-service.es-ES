@@ -4,7 +4,7 @@ description: Aprenda a utilizar entornos de desarrollo rápido para iteraciones 
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3c1cbf0930799c2919696465931bf7c1f76bf8bb
+source-git-commit: e508ba2fcb709b1925b490bdb3e1a8774068927c
 workflow-type: tm+mt
 source-wordcount: '4794'
 ht-degree: 3%
@@ -99,6 +99,7 @@ Después de agregar un RDE para el programa mediante Cloud Manager, puede intera
    ```
    aio login
    ```
+
    La información de inicio de sesión (token) se almacena en la configuración de aio global y, por lo tanto, solo admite un inicio de sesión y una organización. Si desea utilizar varios RDE que necesiten diferentes inicios de sesión u organizaciones, siga el siguiente ejemplo de introducción a contextos.
 
    <details><summary>Siga este ejemplo para configurar un contexto local para uno de sus inicios de sesión de RDE</summary>
@@ -111,7 +112,6 @@ Después de agregar un RDE para el programa mediante Cloud Manager, puede intera
    aio auth ctx -s mycontext
    aio login --no-open
    ```
-
 
    >[!NOTE]
    > El comando de inicio de sesión con la opción `--no-open` generará una dirección URL en el terminal en lugar de abrir el explorador predeterminado. Así podrás copiarlo y abrirlo con una ventana de **incógnito** de tu navegador. De este modo, la sesión que haya iniciado en la ventana normal del explorador permanecerá sin cambios y podrá asegurarse de utilizar el inicio de sesión y la organización específicos necesarios para su contexto.
@@ -153,8 +153,8 @@ Elija `yes` para
 Una vez seleccionada la configuración local o global, el comando setup intentará leer el ID de organización de su inicio de sesión actual y, a continuación, leer los programas de la organización. Si no se encuentra la organización, puede introducirla manualmente junto con algunas directrices.
 
 ```
- Selected only organization: XYXYXYXYXYXYXYXXYY
- retrieving programs of your organization ...
+Selected only organization: XYXYXYXYXYXYXYXXYY
+retrieving programs of your organization ...
 ```
 
 Una vez recuperados los programas, el usuario puede seleccionar de la lista y también escribir para filtrar.
@@ -248,7 +248,6 @@ Sin embargo, con una coordinación cuidadosa, es posible que más de un desarrol
 * Para obtener ayuda detallada sobre un comando, escriba:
 
   `aio aem rde <command> --help`
-
 
 ### Indicadores globales {#global-flags}
 
@@ -507,7 +506,7 @@ El siguiente ejemplo ilustra cómo rastrear el nivel de creación, con un paquet
 >
 >Si ve el error `RDECLI:UNEXPECTED_API_ERROR` al reproducir con los comandos de registro para el servicio de creación, restablezca el entorno e inténtelo de nuevo. Este error se producirá si la operación de restablecimiento más reciente se realizó antes de finales de mayo de 2024.
 >
-```
+>```
 >aio aem:rde:reset
 >```
 
@@ -683,6 +682,7 @@ La mayoría de los comandos admiten el indicador global ```--json```, que suprim
   }
 }
 ```
+
 </details>
 
 ### Instalar {#install}
@@ -723,6 +723,7 @@ La mayoría de los comandos admiten el indicador global ```--json```, que suprim
   ]
 }
 ```
+
 </details>
 
 ### Eliminar {#delete}
@@ -901,6 +902,7 @@ La mayoría de los comandos admiten el indicador global ```--json```, que suprim
   ]
 }
 ```
+
 </details>
 
 ### Restablecer {#reset}
@@ -931,6 +933,7 @@ La mayoría de los comandos admiten el indicador global ```--json```, que suprim
   "status": "reset"
 }
 ```
+
 </details>
 
 ### Reiniciar {#restart}
