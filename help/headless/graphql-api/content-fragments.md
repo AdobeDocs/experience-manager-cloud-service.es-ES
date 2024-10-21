@@ -4,10 +4,10 @@ description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 4492536120989423b639bbb75105568a9c328507
+source-git-commit: 32803bc4304e55ccf0a618236e482cb42aa88e27
 workflow-type: tm+mt
-source-wordcount: '5469'
-ht-degree: 80%
+source-wordcount: '5557'
+ht-degree: 78%
 
 ---
 
@@ -929,6 +929,15 @@ Los fragmentos de contenido de GraphQL AEM AEM para la le permiten solicitar una
 La solución de GraphQL significa que puede hacer lo siguiente:
 
 * use `_dmS7Url` en la referencia de `ImageRef`
+   * consulte [Consulta de muestra para la entrega de recursos de Dynamic Media por dirección URL: referencia de imagen](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+* usar `_dmS7Url` en múltiples referencias; `ImageRef`, `MultimediaRef` y `DocumentRef`
+   * consulte [Consulta de muestra para la entrega de recursos de Dynamic Media por dirección URL: varias referencias](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+
+* usar `_dmS7Url` con funcionalidad de recorte inteligente
+
+   * La propiedad `_smartCrops` expone las configuraciones de recorte inteligente disponibles para un recurso específico
+
+   * consulte [Consulta de muestra para la entrega de recursos de Dynamic Media por dirección URL: con recorte inteligente](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
 
 >[!NOTE]
 >
@@ -1011,6 +1020,36 @@ query allTeams {
     }
   }
 }
+```
+
+### Consulta de muestra para la entrega de recursos de Dynamic Media por dirección URL: con recorte inteligente {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
+
+A continuación se muestra un ejemplo de consulta:
+
+* para exponer las configuraciones de recorte inteligente disponibles para los recursos solicitados
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      title
+      teamMembers {
+        profilePicture {
+          ... on ImageRef {
+            height
+            width
+            _dmS7Url
+            _smartCrops {
+              width
+              height
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+} 
 ```
 
 ## GraphQL para AEM: resumen de extensiones {#graphql-extensions}
