@@ -4,10 +4,10 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 6fa6fc9015624bec9113a198285531a3bdd7e29c
-workflow-type: ht
-source-wordcount: '773'
-ht-degree: 100%
+source-git-commit: 9278ec9bb5bccd7b40cd65a120f296faba454b9c
+workflow-type: tm+mt
+source-wordcount: '569'
+ht-degree: 38%
 
 ---
 
@@ -16,87 +16,61 @@ ht-degree: 100%
 
 En la siguiente sección se describen las notas de la versión técnicas actuales sobre el mantenimiento de Experience Manager as a Cloud Service.
 
-## Versión 18175 {#release-18175}
+## Versión 18311 {#18311}
 
-A continuación se resumen las mejoras continuas para la versión de mantenimiento 18175, que se publicó el 10 de octubre de 2024. La versión de mantenimiento anterior fue la 17964. La versión 18099 ahora es privada debido a un problema.
+A continuación se resumen las mejoras continuas para la versión de mantenimiento 18311, que se publicó el miércoles, 22 de octubre de 2024. La versión de mantenimiento anterior fue la 18175.
 
 La activación de funcionalidades 2024.10.0 proporcionará el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
-### Mejoras {#enhancements-18175}
+### Mejoras {#enhancements-18311}
 
-* ASSETS-38322: habilitación del evento de petición HTTP para AEM.
-* ASSETS-41448: actualización del paquete auth.ims para admitir asignaciones de FI a grupo.
-* ASSETS-41684: adición de configuraciones OSGI de OOB para definir la asignación de FI a grupo para Assets, Foundation, Sites y Forms.
-* ASSETS-43015: actualización al último paquete auth.ims.
-* CQ-4356633: adición de caracteres adicionales en la ayuda contextual “Solo contenido”.
-* GRANITE-50948: integración del servicio de repositorio en el servicio de compatibilidad de repositorio de AEM.
-* GRANITE-52454: adición de compatibilidad del asistente 0.1.2.
-* GRANITE-52454: actualización de compatibilidad del asistente GRANITE-52454: actualización de compatibilidad del asistente para utilizar la última versión para AEMaaCS.
-* GRANITE-53287: actualización de la versión de prueba de integración de privilegios de seguridad.
-* GRANITE-53485: autenticación principal del servicio de soporte para la replicación de Azure Blob Storage.
-* GRANITE-53514: se ha actualizado la activación de árbol a la versión 1.0.26.
-* GRANITE-53870: creación de un mecanismo interno para omitir la comprobación de la versión máxima de JVM para el inicio rápido.
-* GRANITE-53914: corrección de errores en la prueba de la plataforma con la versión actualizada del módulo Java 17.
-* GRANITE-53966: utilización de un grupo de hilos independiente para la distribución de contenido.
-* GRANITE-54006: actualización de Jackson a 2.17.2.
-* GRANITE-54038: adición del cliente IMS de Creative Cloud Enterprise a la lista de permitidos del cliente IMS de AEM.
-* GRANITE-54054: variable de entorno para com.adobe.granite.repository.impl.SystemUserValidation warnOnly.
-* GRANITE-54266: falta el servicio de sugerencia de búsqueda en el SDK de producción.
-* GRANITE-54274: aceptación del cliente IMS de Firefly.
-* GRANITE-54300: actualización Oak a la última versión pública (1.70.0).
-* GUIDES-19069: adición de guidesPeerLinkIndex para el complemento de guías de aem.
-* SITES-23584: corrección de la prueba con errores para el componente Foundation en Java 17.
-* SKYOPS-69768: SlingModels no deserializa ResourceResolvers.
-* SKYOPS-76378: mejora de la seguridad de los hilos de registro/anulación de registro de ResourceBundle en i18n.
-* SKYOPS-79285: actualización de Sling XSS a 2.4.2.
-* SKYOPS-82383: exposición del resultado de “helm-values” convert-merge-analyze en el descriptor de ejecución del comando.
-* SKYOPS-84810: omisión de la ejecución de “40-initialize-publish.sh” al iniciar RDE.
-* SKYOPS-84951: corrección del código de generación de suma de comprobación de contenido mutable.
-* SKYOPS-85335: actualización de org.apache.sling.jcr.repoinit a 1.1.52.
-* SKYOPS-85336: actualización de Sling Commons Threads a 3.3.0.
-* SKYOPS-86329: actualización de las versiones de los módulos de prueba de plataforma para compatibilidad con el sdk de java 21.
+* ASSETS-41820 : Mejoras en la indexación para el perro guardián de procesamiento.
+* ASSETS-43720 : Mejoras funcionales en el perro guardián de procesamiento.
+* ASSETS-42554 : Mejoras de rendimiento para carpetas grandes.
+* SKYOPS-77603 : Gestión de redirecciones por parte de usuarios empresariales.
 
-### Problemas solucionados {#fixed-issues-18175}
+### Problemas solucionados {#fixed-issues-18311}
 
-* CNTBF-298: elimina jcr:uuid de los paquetes exportadosde CC.
-* SKYOPS-83910: solución de los problemas de concurrencia encontrados en SKYOPS-82371.
-* GRANITE-52876: actualización a com.adobe.granite.ui.content 0.8.1448.
-* GUIDES-14445: la generación de PDF nativo falla con un error relacionado con la obtención de dependencias para Node.js.
-* GUIDES-16961: el título de `<conref>` no se resuelve en los paneles de control Línea de base y Traducción del Editor Web.
-* GUIDES-17283: al seleccionar la opción **Usar metadatos añadidos en topicmeta**, las propiedades de metadatos no se propagan en las propiedades del documento de la salida del PDF nativo.
-* GUIDES-17793: el PDF al que se hace referencia no se activa desde el **panel de control Publicación por lotes** durante la activación masiva del contenido publicado.
+* ASSETS-37534 : cambios en la búsqueda para no exponer la propiedad utilizada para el destino de aprobación.
+* ASSETS-38322 : Quitar configuración del proveedor de criterios de publicación Quitar función de evento de publicación.
+* ASSETS-40482 : Problema de accesibilidad en el botón de reproducción/pausa y silencio/reactivación en el reproductor de vídeo de Scene7.
+* ASSETS-40593 : La página de error se produce después de hacer clic en el botón &quot;Propiedades&quot; en Assets > Archivos.
+* ASSETS-40598 : la sincronización recorta cuando el recurso no sincronizado se mueve a una carpeta con sincronización habilitada.
+* ASSETS-40743 : Problemas al activar el cuadro de diálogo Reemplazar recurso cuando existen ciertos caracteres en el nombre del archivo.
+* ASSETS-40825 : Las Facetas De Búsqueda De Assets Desaparecen Después De Editar El Formulario De Búsqueda.
+* ASSETS AEM-41007 : La eliminación en el a veces deja Assets huérfano en el momento de la entrega.
+* ASSETS-41172 : el nombre no admite caracteres especiales de plantillas de Dynamic Media.
+* ASSETS-41896 : Assets mencionado en la propiedad cq:discarded de la carpeta NO debe publicarse en Brand Portal.
+* ASSETS-42067 : Plantillas Dynamic Media, la descarga genera un error.
+* ASSETS-42070 : Plantillas de Dynamic Media . Los usuarios no administradores deben tener acceso de creación/edición de plantillas.
+* ASSETS-42344 : Sincronización de Assets conectada desconectada: reconexión y consejos para el cliente.
+* ASSETS-42620 : Problema con la opción de previsualización de las versiones de los recursos . Muestra una previsualización en blanco cuando abrimos el recurso.
+* ASSETS-42701 : Problema de recorte y entrega de imágenes optimizadas para la web.
+* ASSETS-42966 : La barricada asíncrona puede desbloquearse por error si varios trabajos comparten la misma ruta.
+* ASSETS-43072 : Plantillas de Dynamic Media. La plantilla hace referencia a saltos de búsqueda en una referencia no válida.
+* ASSETS-43212 : Problemas de internacionalización en el editor de esquemas de metadatos.
+* ASSETS-43202 : Correcciones para seleccionar anotaciones para imprimirlas desde la cronología.
+* ASSETS AEM-43502 : El nombre de ajuste preestablecido de imagen existente de CS no se muestra en la página de edición.
+* ASSETS-43538 : El trabajo de copiar recursos asincrónicos utiliza una propiedad incorrecta para la ruta de origen.
+* ASSETS-43798 : Compruebe primero la ruta de destino antes de copiar los recursos.
+* ASSETS-43945 : aumentar el retraso de reintentos a 20 minutos para la cola de trabajos de recursos asincrónicos.
+* ASSETS-44025 : El trabajo de eliminación asíncrona de recursos falla cuando se seleccionan recursos individuales.
+* SITES-26128 : excepción de conversión de clases en CreateLiveCopyStep.
+* SCRNS-4551 : [SG Pools] El canal de Screens que contiene el componente de vídeo muestra &quot;Error general de página&quot; en la vista previa del navegador y el reproductor
 
-Para obtener más información sobre las funciones nuevas y mejoradas de las guías y los problemas corregidos en la versión, consulte la [hoja de ruta de versiones de Experience Manager Guides](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
-
-### Problemas conocidos {#known-issues-18175}
+### Problemas conocidos {#known-issues-18311}
 
 * FORMS-15818: no se ha encontrado la entrada del descriptor de componente `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` en los registros del servidor. Son sentencias del registro inofensivas.
 
-### Características y API obsoletas {#deprecated-18175}
+### Características y API obsoletas {#deprecated-18311}
 
 Las funciones y API obsoletas y eliminadas de AEM as a Cloud Service se detallan en el documento [Funciones y API obsoletas y eliminadas](/help/release-notes/deprecated-removed-features.md).
 
-A continuación se muestra un resumen de las funciones que han quedado recientemente en desuso o de las que están en proceso de finalización de soporte.
+### Correcciones de seguridad {#security-18311}
 
-#### API de uso de JavaScript {#javascript-use-api}
+AEM as a Cloud Service se dedica a optimizar la seguridad y el rendimiento de su plataforma. Esta versión de mantenimiento aborda 3 vulnerabilidades identificadas, reforzando nuestro compromiso con una sólida protección del sistema.
 
-[La API de uso de JavaScript](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) está en desuso oficialmente debido a los desafíos que los usuarios tienen al depurar y mantener el código que aprovecha la API, así como las limitaciones de rendimiento en comparación con la alternativa de Java.
-
-Debería hacer la transición a [la API para uso de Java](https://experienceleague.adobe.com/es/docs/experience-manager-htl/content/java-use-api), que ofrece un mejor rendimiento, una depuración más sencilla y una mayor compatibilidad a largo plazo.
-
-#### com.day.cq.wcm.api {#com-day-cq-wcm-api}
-
-Tenga en cuenta que Adobe está en proceso de actualizar `com.day.cq.wcm.api`. Algunos de sus métodos y clases se han marcado como `@Deprecated` en la versión actual. Se eliminarán en futuras versiones. Considere la posibilidad de cambiar a las alternativas sugeridas.
-
-#### org.apache.jackrabbit.oak.plugins.blob {#org.apache.jackrabbit.oak.plugins.blob}
-
-* GRANITE-54165: desuso de org.apache.jackrabbit.oak.plugins.blob en API pública.
-
-### Correcciones de seguridad {#security-18175}
-
-AEM as a Cloud Service se dedica a optimizar la seguridad y el rendimiento de su plataforma. Esta versión de mantenimiento aborda 2 vulnerabilidades identificadas, reforzando nuestro compromiso con una sólida protección del sistema.
-
-### Tecnologías integradas {#embedded-tech-18175}
+### Tecnologías integradas {#embedded-tech-18311}
 
 | Tecnología | Versión | Vínculo |
 |---|---|---|
