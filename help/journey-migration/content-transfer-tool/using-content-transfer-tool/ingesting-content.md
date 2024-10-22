@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: ec80660d45c69363690b653dd54634c74c3c9907
 workflow-type: tm+mt
 source-wordcount: '3137'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -234,7 +234,7 @@ AEM Para evitar posiblemente esta restricción, ejecute el [Analizador de práct
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_intermittent_errors"
 >title="Errores intermitentes inesperados"
->abstract="A veces pueden producirse errores intermitentes inesperados en el servicio descendente y, por desgracia, el único recurso es simplemente reintentar la ingesta."
+>abstract="A veces, pueden producirse errores intermitentes inesperados en el servicio descendente y, por desgracia, el único recurso es, simplemente, volver a intentar la ingesta."
 
 A veces, problemas intermitentes inesperados podrían prestarse a ingestas fallidas donde, por desgracia, el único recurso es reintentar la ingesta. Investigue el registro de ingesta para descubrir la causa del error y ver si se ajusta a alguno de los errores enumerados a continuación, donde se debe intentar un reintento.
 
