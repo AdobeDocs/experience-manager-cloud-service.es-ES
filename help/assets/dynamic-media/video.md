@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
+source-git-commit: c142ac7ad12179dd842ce6c81cc4d97ece36a197
 workflow-type: tm+mt
-source-wordcount: '10490'
+source-wordcount: '10543'
 ht-degree: 1%
 
 ---
@@ -440,7 +440,7 @@ Para que los informes de vídeo funcionen correctamente, se crea automáticament
 
 **Para ver informes de vídeo:**
 
-1. En la esquina superior izquierda de Experience Manager, seleccione el logotipo del Experience Manager. En el carril izquierdo, vaya a **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Assets]** > **[!UICONTROL Informes de vídeo]**.
+1. En la esquina superior izquierda de Experience Manager, seleccione el logotipo del Experience Manager. En el carril izquierdo, haga clic en ![Icono de martillo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) > **[!UICONTROL Assets]** > **[!UICONTROL Informes de vídeo]**.
 1. En la página Informes de vídeo, realice una de las siguientes acciones:
 
    * Cerca de la esquina superior derecha, selecciona el icono **[!UICONTROL Actualizar informe de vídeo]**.
@@ -532,7 +532,7 @@ Al habilitar cualquiera de las tres capacidades anteriores, se habilitan todas. 
 
 | Capacidad | Descripción |
 | --- | --- |
-| GUIÓN | DASH (Digital Adaptive Streaming over HTTP) es el estándar internacional para streaming de video y es ampliamente adoptado en diferentes visores de video. Cuando DASH está habilitado en su cuenta, tiene la opción de elegir entre DASH o HLS para flujo de vídeo adaptable. O bien, puede optar por ambos con el cambio automático entre reproductores cuando **[!UICONTROL auto]** está seleccionado como el tipo de reproducción en el ajuste preestablecido del visor.<br>Algunas ventajas clave de habilitar DASH en su cuenta son las siguientes:<br>·Empaquetar vídeo de flujo DASH para flujo de velocidad de bits adaptable. Este método aumenta la eficacia del envío. El streaming adaptable garantiza la mejor experiencia de visualización para sus clientes.<br>·La transmisión optimizada para el explorador con reproductores de Dynamic Media cambia entre la transmisión HLS y DASH para garantizar la mejor calidad de servicio. El reproductor de vídeo cambia automáticamente a HLS cuando se utiliza un explorador Safari.<br>·Puede configurar su método de transmisión preferido (HLS o DASH) editando el ajuste preestablecido del visor de vídeo.<br>·La codificación de vídeo optimizada garantiza que no se utilice almacenamiento adicional al habilitar la capacidad DASH. Se crea un único conjunto de codificaciones de vídeo para HLS y DASH para optimizar los costes de almacenamiento de vídeo.<br>·Ayuda a que la entrega de vídeo sea más accesible para los clientes.<br>·También puede obtener la URL de flujo continuo a través de las API. |
+| GUIÓN | DASH (Digital Adaptive Streaming over HTTP) es el estándar internacional para streaming de video y es ampliamente adoptado en diferentes visores de video. Cuando DASH está habilitado en su cuenta, tiene la opción de elegir entre DASH o HLS para flujo de vídeo adaptable. O bien, puede optar por ambos con el cambio automático entre reproductores cuando **[!UICONTROL auto]** está seleccionado como el tipo de reproducción en el ajuste preestablecido del visor.<br>Algunas ventajas clave de habilitar DASH en tu cuenta son las siguientes:<ul><li>Empaquete el vídeo de flujo DASH para la transmisión de velocidad de bits adaptable. Este método aumenta la eficacia del envío. El streaming adaptable garantiza la mejor experiencia de visualización para sus clientes.</li><li>El streaming optimizado para el navegador con reproductores Dynamic Media cambia entre el streaming HLS y DASH para garantizar la mejor calidad de servicio. El reproductor de vídeo cambia automáticamente a HLS cuando se utiliza un explorador Safari.</li><li>Puede configurar su método de flujo preferido (HLS o DASH) editando el ajuste preestablecido del visualizador de vídeo.</li><li>La codificación de vídeo optimizada garantiza que no se utilice almacenamiento adicional al habilitar la capacidad DASH. Se crea un único conjunto de codificaciones de vídeo para HLS y DASH para optimizar los costes de almacenamiento de vídeo.</li><li>Ayuda a que la entrega de vídeo sea más accesible para los clientes.</li><li>Obtenga también la URL de flujo continuo mediante API.</li></ul> |
 | Subtítulos múltiples y pistas de audio | Puede beneficiarse de tener habilitada automáticamente la compatibilidad con múltiples subtítulos y pistas de audio. Después de la activación, todos los vídeos posteriores que cargue se procesarán con una nueva arquitectura de back-end que incluya compatibilidad para agregar varios subtítulos y pistas de audio a los vídeos. |
 | Subtítulos generados por IA (disponibilidad limitada) | Cree subtítulos para sus vídeos con tecnología de IA. Con IA, crea la transcripción del vídeo y la convierte en subtítulos. Incluso la línea de tiempo está definida, también. |
 
@@ -554,7 +554,7 @@ Al habilitar cualquiera de las tres capacidades anteriores, se habilitan todas. 
 1. La Asistencia al cliente de Adobe lo agrega a la Lista de espera de clientes en función del orden en que se envían las solicitudes.
 1. Cuando el Adobe está listo para administrar su solicitud, el Servicio de atención al cliente se pone en contacto con usted para coordinar y establecer una fecha objetivo para la activación.
 1. Atención al cliente de Adobe le notificará una vez finalizado.
-1. Ahora, realice una de las acciones siguientes:
+1. Ahora, realice una o más de las siguientes acciones:
 
    * Cree su [ajuste preestablecido de visor de vídeo](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) como de costumbre.
    * Cree su [perfil de vídeo](/help/assets/dynamic-media/video-profiles.md) como de costumbre.
@@ -708,8 +708,8 @@ Los subtítulos añadidos son compatibles con los formatos WebVTT y VTT de Adobe
 
 1. [Cargue el vídeo principal en una carpeta](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) que ya tenga un perfil de vídeo asignado.
 1. Desplácese hasta el recurso de vídeo cargado al que desee agregar varias pistas de subtítulos y audio.
-1. En el modo de selección de recursos, ya sea en la vista de lista o en la vista de tarjeta, seleccione el recurso de vídeo.
-1. En la barra de herramientas, haga clic en el icono Propiedades (un círculo con una &quot;i&quot;).
+1. En el modo de selección de recursos, en ![Ver icono de tarjeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Vista de tarjeta) o en ![Ver icono de lista](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Vista de lista), seleccione el recurso de vídeo.
+1. En la barra de herramientas, haga clic en ![Icono de información](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Propiedades.
    ![Recurso de vídeo seleccionado con marca de verificación sobre la imagen en miniatura de vídeo y Propiedades de vista resaltadas en la barra de herramientas.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Recurso de vídeo seleccionado en la vista de tarjeta.*
 1. En la página Propiedades del vídeo, seleccione la ficha **[!UICONTROL Subtítulos y pistas de audio]**.
 
@@ -727,7 +727,7 @@ Los subtítulos añadidos son compatibles con los formatos WebVTT y VTT de Adobe
 1. Para agregar una o más pistas de audio a un vídeo, haga lo siguiente:
    1. Seleccione **[!UICONTROL Cargar pistas de audio]**.
    1. Desplácese hasta uno o varios archivos .mp3, ábralos y selecciónelos.
-   1. Para que las pistas de audio estén visibles en la lista emergente **[!UICONTROL Seleccionar audio o subtítulo]** del reproductor multimedia, debe agregar los detalles necesarios sobre cada archivo de pista de audio. Al hacerlo, se asegura de que todas las pistas de audio estén correctamente enumeradas y accesibles. Seleccione el icono de lápiz a la derecha del nombre de un archivo de pista de audio. En el cuadro de diálogo **Editar pista de audio**, escriba los siguientes detalles necesarios:
+   1. Para que las pistas de audio estén visibles en la lista emergente **[!UICONTROL Seleccionar audio o subtítulo]** del reproductor multimedia, debe agregar los detalles necesarios sobre cada archivo de pista de audio. Al hacerlo, se asegura de que todas las pistas de audio estén correctamente enumeradas y accesibles. Haga clic en ![Icono Dibujar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) a la derecha del nombre de un archivo de pista de audio. En el cuadro de diálogo **Editar pista de audio**, escriba los siguientes detalles necesarios:
 
       | Metadatos de pista de audio | Descripción |
       |--- |--- |
@@ -752,13 +752,13 @@ Los subtítulos añadidos son compatibles con los formatos WebVTT y VTT de Adobe
    | **Opción 3** | Es necesario corregir el texto de un archivo de subtítulos (`.vtt`), volver a cargarlo para reemplazar el archivo `.vtt` antiguo y, a continuación, hacer que AI traduzca el archivo corregido.<br>Ver **Opción 3** a continuación. | **[!UICONTROL Traducir pie de ilustración]** |
 
    ![Opciones para crear subtítulos.](/help/assets/dynamic-media/assets/msma-createcaption.png)
-   *El menú desplegable Crear subtítulos le ofrece tres opciones: Cargar archivos, Convertir pistas de audio y Traducir subtítulos.*
+   *El menú desplegable Crear pie de ilustración le ofrece tres opciones: Cargar archivos, Convertir pistas de audio y Traducir pie de ilustración.*
 
 +++**Opción 1:** *Tengo mis propios archivos de subtítulos preexistentes en los idiomas que deseo usar* (opción **[!UICONTROL Cargar archivos]**)
 
    1. Cerca de la parte superior derecha de la página, haz clic en **[!UICONTROL Crear pie de ilustración]** > **[!UICONTROL Cargar archivos]**.
    1. Vaya a uno o varios de los `.vtt` archivos preexistentes y selecciónelos, y ábralos.
-   1. Para que los subtítulos estén visibles en el reproductor multimedia, *debe* agregar los detalles necesarios sobre *cada* archivo de subtítulos que cargue. Seleccione el icono de lápiz a la derecha del nombre de un archivo de rótulo. En el cuadro de diálogo **Editar pie de ilustración**, escriba los siguientes detalles necesarios sobre el archivo:
+   1. Para que los subtítulos estén visibles en el reproductor multimedia, *debe* agregar los detalles necesarios sobre *cada* archivo de subtítulos que cargue. Haga clic en ![Dibujar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) a la derecha del nombre de archivo de rótulo. En el cuadro de diálogo **Editar pie de ilustración**, escriba los siguientes detalles necesarios sobre el archivo:
 
       | Metadatos de rótulo | Descripción |
       |--- |--- |
@@ -791,8 +791,8 @@ Los subtítulos añadidos son compatibles con los formatos WebVTT y VTT de Adobe
 
       | Opción | Descripción |
       |--- |--- |
-      | Pista de audio a convertir | En la lista desplegable, elija el archivo de pista de audio cargado desde el que desea que se generen subtítulos mediante IA. |
-      | Idiomas de salida | En la lista desplegable, seleccione uno o varios idiomas en los que desea que aparezca el archivo de rótulo.<br>Para quitar un idioma seleccionado, haga clic en **X**.<br>Durante la reproducción del vídeo, la lista de idiomas aparecerá en el reproductor de contenidos en el orden en que los seleccione aquí. |
+      | Pista de audio a convertir | Haga clic en ![Icono de cheurón descendente](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) y, a continuación, elija el archivo de pista de audio cargado desde el que desea que se generen subtítulos mediante IA. |
+      | Idiomas de salida | Haga clic en ![Icono de cheurón descendente](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) y, a continuación, seleccione uno o varios idiomas en los que desee que aparezca el archivo de rótulo.<br>Para quitar un idioma seleccionado, haga clic en ![Cerrar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg).<br>Durante la reproducción del vídeo, la lista de idiomas aparecerá en el reproductor de contenidos en el orden en que los seleccione aquí. |
 
    1. Haga clic en **[!UICONTROL Listo]**.
    1. Cerca de la esquina superior derecha de la página, en el menú desplegable **[!UICONTROL Guardar y cerrar]**, haga clic en **[!UICONTROL Guardar]**.
@@ -802,7 +802,7 @@ Los subtítulos añadidos son compatibles con los formatos WebVTT y VTT de Adobe
       >
       >En función de la configuración de almacenamiento en caché de la instancia, el procesamiento de metadatos puede tardar varios minutos en reflejarse en la vista previa y en las direcciones URL publicadas.
 
-   1. (Opcional) Seleccione el icono de lápiz a la derecha del nombre de un archivo de rótulo. En el cuadro de diálogo **Editar pie de ilustración**, puede editar los siguientes detalles sobre el archivo:
+   1. (Opcional) Haga clic en ![Dibujar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) a la derecha del nombre de un archivo de rótulo. En el cuadro de diálogo **Editar pie de ilustración**, puede editar los siguientes detalles sobre el archivo:
 
       | Metadatos de rótulo | Descripción |
       | --- | --- |
@@ -821,12 +821,12 @@ Los subtítulos añadidos son compatibles con los formatos WebVTT y VTT de Adobe
       ![Cuadro de diálogo Traducir subtítulos.](/help/assets/dynamic-media/assets/msma-translate-captions.png)
       *El cuadro de diálogo Traducir subtítulos le permite utilizar un archivo de subtítulos existente para que AI genere nuevos archivos de subtítulos en varios idiomas.*
 
-   1. En el cuadro de diálogo **Traducir pie de ilustración**, defina las siguientes opciones:
+   1. En el cuadro de diálogo **Traducir subtítulos**, defina las siguientes opciones:
 
       | Opción | Descripción |
       |--- |--- |
-      | Pie de ilustración para traducir | En la lista desplegable, elija un archivo de rótulo del que desee que se generen los rótulos mediante IA. |
-      | Idiomas de salida | En la lista desplegable, seleccione uno o varios idiomas en los que desea que aparezca el archivo de rótulo.<br>Para quitar un idioma seleccionado, haga clic en **X**.<br>Durante la reproducción del vídeo, la lista de idiomas aparecerá en el reproductor de contenidos en el orden en que los seleccione aquí. |
+      | Pie de ilustración para traducir | Haga clic en ![Icono de cheurón hacia abajo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) y, a continuación, elija un archivo de rótulo del que desee que se generen los rótulos mediante IA. |
+      | Idiomas de salida | Haga clic en ![Icono de cheurón descendente](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) y, a continuación, seleccione uno o varios idiomas en los que desee que aparezca el archivo de rótulo.<br>Para quitar un idioma seleccionado, haga clic en ![Cerrar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg).<br>Durante la reproducción del vídeo, la lista de idiomas aparecerá en el reproductor de contenidos en el orden en que los seleccione aquí. |
 
    1. Haga clic en **[!UICONTROL Listo]**.
    1. Cerca de la esquina superior derecha de la página, en el menú desplegable **[!UICONTROL Guardar y cerrar]**, haga clic en **[!UICONTROL Guardar]**.
@@ -836,7 +836,7 @@ Los subtítulos añadidos son compatibles con los formatos WebVTT y VTT de Adobe
       >
       >En función de la configuración de almacenamiento en caché de la instancia, el procesamiento de metadatos puede tardar varios minutos en reflejarse en la vista previa y en las direcciones URL publicadas.
 
-   1. (Opcional) Seleccione el icono de lápiz a la derecha del nombre de un archivo de rótulo. En el cuadro de diálogo **Editar pie de ilustración**, puede editar los siguientes detalles sobre el archivo:
+   1. (Opcional) Haga clic en ![Dibujar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) a la derecha del nombre de un archivo de rótulo. En el cuadro de diálogo **Editar pie de ilustración**, puede editar los siguientes detalles sobre el archivo:
 
       | Metadatos de rótulo | Descripción |
       | --- | --- |
@@ -888,11 +888,12 @@ Puede observar el estado del ciclo vital de cualquier subtítulo o archivo de pi
 **Para ver el estado del ciclo de vida de un vídeo:**
 
 1. Vaya al recurso de vídeo cuyo estado de ciclo vital desee ver.
-1. En el modo de selección de recursos, ya sea en la vista de lista o en la vista de tarjeta, seleccione el recurso de vídeo.
-1. En la barra de herramientas, seleccione el icono Propiedades (un círculo con una &quot;i&quot;).
-1. En la página Propiedades, seleccione la ficha **[!UICONTROL Subtítulos y pistas de audio]**. En la columna Estado, observe el estado de cada título o archivo de audio.
+1. En el modo de selección de recursos, en ![Ver icono de tarjeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Vista de tarjeta) o en ![Ver icono de lista](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Vista de lista), seleccione el recurso de vídeo.
+1. En la barra de herramientas, haga clic en ![Icono de información](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Propiedades.
+1. En la página **Propiedades**, seleccione la ficha **[!UICONTROL Subtítulos y pistas de audio]**.
+1. En la columna **[!UICONTROL Estado]**, anote el estado de cada título o archivo de audio.
 
-| Pie de ilustración o estado de pista de audio | Descripción |
+| Estado de los subtítulos y las pistas de audio | Descripción |
 | --- | --- |
 | Procesamiento | Cuando se añade y se guarda un nuevo pie de ilustración o archivo de pista de audio, pasa al estado &quot;Procesando&quot;. Dynamic Media procesa el archivo adjuntando el manifiesto de flujo continuo al vídeo principal. |
 | Procesado | Una vez completado el procesamiento, el pie de ilustración o el archivo de pista de audio, o la pista de audio original asociada al vídeo principal, aparecen en estado &quot;Procesado&quot;. Puede obtener una vista previa de los archivos de subtítulos y pistas de audio que aparecen como &quot;Procesado&quot; *antes de* publicar el vídeo en directo. |
@@ -900,7 +901,6 @@ Puede observar el estado del ciclo vital de cualquier subtítulo o archivo de pi
 | Error | El estado &quot;failed&quot; significa que no se ha completado el procesamiento de un subtítulo o archivo de pista de audio. Elimine el pie de ilustración o el archivo de pista de audio y vuelva a cargarlo. |
 | Una página sin publicar   | Cuando se cancela la publicación explícita de un vídeo principal publicado, también se cancela la publicación de cualquier subtítulo o archivo de pista de audio que haya agregado al vídeo. |
 
-![Columna de estado resaltada para los campos Subtítulos y Pistas de audio.](/help/assets/dynamic-media/assets/msma-lifecycle-status.png)*Estado del ciclo vital de cada subtítulo y archivo de pista de audio cargados.*
 
 ### Establecer el audio predeterminado para un vídeo que tiene varias pistas de audio
 
@@ -918,16 +918,16 @@ Sin embargo, cualquier archivo de pista de audio cargado puede establecerse como
 **Para establecer el audio predeterminado de un vídeo que tiene varias pistas de audio:**
 
 1. Vaya al recurso de vídeo cuya pista de audio predeterminada desee establecer.
-1. En el modo de selección de recursos, ya sea en la vista de lista o en la vista de tarjeta, seleccione el recurso de vídeo.
-1. En la barra de herramientas, seleccione el icono Propiedades (un círculo con una &quot;i&quot;).
+1. En el modo de selección de recursos, en ![Ver icono de tarjeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Vista de tarjeta) o en ![Ver icono de lista](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Vista de lista), seleccione el recurso de vídeo.
+1. En la barra de herramientas, haga clic en ![Icono de información](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Propiedades.
 1. En la página Propiedades, seleccione la ficha **[!UICONTROL Subtítulos y pistas de audio]**.
 1. Bajo el encabezado **Pistas de audio**, seleccione el archivo de pista de audio que desee establecer como predeterminado para el vídeo.
-1. Seleccione **[!UICONTROL Establecer como predeterminado]**.
-En el cuadro de diálogo **Establecer como predeterminado**, seleccione **[!UICONTROL Reemplazar]**.
+1. Haga clic en ![Icono de audio](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Audio_18_N.svg) **[!UICONTROL Establecer como predeterminado]**.
+1. En el cuadro de diálogo **Establecer como predeterminado**, haga clic en **[!UICONTROL Reemplazar]**.
 
    ![El encabezado Pistas de audio tiene un nombre de archivo de pista de audio seleccionado y se resaltó el botón &quot;Establecer como predeterminado&quot;.](/help/assets/dynamic-media/assets/msma-defaultaudiotrack.png)*Estableciendo la pista de audio predeterminada para un vídeo.*
 
-1. En la esquina superior derecha, seleccione **[!UICONTROL Guardar y cerrar]**.
+1. En la esquina superior derecha, haz clic en **[!UICONTROL Guardar y cerrar]**.
 1. Publish el vídeo. Consulte [recursos de Publish](publishing-dynamicmedia-assets.md).
 
 ### Vista previa de un vídeo con varios subtítulos y pistas de audio {#preview-video-audio-subtitle}
@@ -947,22 +947,21 @@ Consulte [Agregar Dynamic Media Assets a las páginas](/help/assets/dynamic-medi
 **Para obtener una vista previa de un vídeo que tiene varios subtítulos y pistas de audio:**
 
 1. En **[!UICONTROL Assets]**, desplácese a un vídeo existente en el que haya agregado varios subtítulos y pistas de audio.
-1. Haga clic en el recurso de vídeo para poder abrirlo en el modo de vista previa.
-1. En la página de vista previa, cerca de la esquina superior izquierda de la página, selecciona la lista desplegable y luego selecciona **[!UICONTROL Visualizadores]**.
+1. Haga clic en el recurso de vídeo para abrirlo en el modo de vista previa.
+1. En la página de vista previa, cerca de la esquina superior izquierda de la página, haz clic en ![Icono de carril izquierdo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) ![Icono de cheurón abajo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) y, a continuación, selecciona **[!UICONTROL Visualizadores]**.
 
    ![Lista desplegable que muestra la opción Visualizadores.](/help/assets/dynamic-media/assets/msma-selectviewers.png)
 
-1. En la lista Visualizadores, seleccione el visualizador que desee utilizar para la vista previa del vídeo. A modo de ejemplo, la siguiente captura de pantalla muestra el visor **[!UICONTROL Video]** que se está seleccionando.
+1. Cerca de la esquina superior izquierda de la página, haga clic en ![Icono de carril izquierdo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) Visualizadores ![Icono de cheurón hacia abajo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) y, a continuación, seleccione el visualizador que desee utilizar para la vista previa del vídeo.
 
-   ![Selección del visor de vídeo de la lista desplegable Visualizadores.](/help/assets/dynamic-media/assets/msma-dmviewerselected.png)
-
-1. Cerca de la esquina inferior derecha, a la izquierda del icono de volumen, seleccione el icono de burbuja de voz y, a continuación, seleccione el audio o el pie de ilustración que desee oír, o ver o ambos. Si lo desea, en Subtítulos, puede deshabilitar la visualización de cualquier subtítulo si hace clic en **[!UICONTROL Desactivar]**.
+1. Cerca de la esquina inferior derecha de la página, haga clic en el icono de la burbuja de voz y, a continuación, seleccione el audio o subtítulo/pie de ilustración que desee oír, ver o ambos.
 
    ![La lista emergente Audio y subtítulos en el visor de vídeo.](/help/assets/dynamic-media/assets/msma-selectaudiosubtitle.png)*Simulación de un usuario que selecciona el audio y el pie de ilustración para la reproducción de vídeo.*
 
-1. Para comenzar la reproducción, selecciona el botón **[!UICONTROL Reproducir]** del vídeo.
-Observe los botones **[!UICONTROL URL]** e **[!UICONTROL Incrustar]** en la esquina inferior izquierda. Use estos botones para [vincular la URL del vídeo a su aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) o para [incrustar el vídeo en una página web](/help/assets/dynamic-media/embed-code.md), respectivamente.
-1. Cerca de la esquina superior derecha de la página de vista previa, seleccione **[!UICONTROL Cerrar]**.
+1. Para comenzar la reproducción, haga clic en ![icono PLay](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg).
+Si lo desea, haga clic en ![Maximizar icono](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Maximize_22_N.svg) para maximizar la ventana de visualización.
+Observe los botones **[!UICONTROL URL]** e **[!UICONTROL Incrustar]** cerca de la esquina inferior izquierda de la página. Use estos botones para [vincular la URL del vídeo a su aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) o para [incrustar el vídeo en una página web](/help/assets/dynamic-media/embed-code.md), respectivamente.
+1. Cerca de la esquina superior derecha de la página de vista previa, haga clic en **[!UICONTROL Cerrar]**.
 
 ### Eliminar archivos de subtítulos o pistas de audio de un vídeo
 
@@ -973,13 +972,13 @@ La pista de audio original extraída de un vídeo principal no se puede eliminar
 **Para eliminar archivos de subtítulos o pistas de audio de un vídeo:**
 
 1. Vaya al recurso de vídeo cuya pista de audio predeterminada desee establecer.
-1. En el modo de selección de recursos, ya sea en la vista de lista o en la vista de tarjeta, seleccione el recurso de vídeo.
-1. En la barra de herramientas, seleccione el icono Propiedades (un círculo con una &quot;i&quot;).
+1. En el modo de selección de recursos, en ![Ver icono de tarjeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Vista de tarjeta) o en ![Ver icono de lista](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Vista de lista), seleccione el recurso de vídeo.
+1. En la barra de herramientas, haga clic en ![Icono de información](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Propiedades.
 1. En la página Propiedades, seleccione la ficha **[!UICONTROL Subtítulos y pistas de audio]**.
 1. Realice una de las siguientes acciones:
 
-   * Subtítulos: bajo el encabezado **Subtítulos**, seleccione uno o más archivos de subtítulos que desee eliminar del vídeo y, a continuación, haga clic en **[!UICONTROL Eliminar]**.
-   * Pistas de audio: en el encabezado **Pistas de audio**, seleccione uno o más archivos de pista de audio que desee eliminar del vídeo y, a continuación, haga clic en **[!UICONTROL Eliminar]**.
+   * Subtítulos: bajo el encabezado **Subtítulos**, seleccione uno o más archivos de subtítulos que desee eliminar del vídeo y, a continuación, haga clic en ![Eliminar icono](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL Eliminar]**.
+   * Pistas de audio: en el encabezado **Pistas de audio**, seleccione uno o más archivos de pista de audio que desee eliminar del vídeo y, a continuación, haga clic en ![Eliminar icono](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL Eliminar]**.
 
 1. En el cuadro de diálogo Eliminar, haga clic en **[!UICONTROL Aceptar]**.
 1. Publish el vídeo.
@@ -995,22 +994,23 @@ No se puede descargar la pista de audio original extraída de un archivo de víd
 **Para descargar los archivos de subtítulos o de pistas de audio que se cargaron en un vídeo:**
 
 1. Vaya al recurso de vídeo cuya pista de audio predeterminada desee establecer.
-1. En el modo de selección de recursos, ya sea en la vista de lista o en la vista de tarjeta, seleccione el recurso de vídeo.
-1. En la barra de herramientas, seleccione el icono Propiedades (un círculo con una &quot;i&quot;).
-1. En la página Propiedades, seleccione la ficha **[!UICONTROL Subtítulos y pistas de audio]**.
+1. En el modo de selección de recursos, en ![Ver icono de tarjeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Vista de tarjeta) o en ![Ver icono de lista](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Vista de lista), seleccione el recurso de vídeo.
+1. En la barra de herramientas, haga clic en ![Icono de información](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Propiedades.
+1. En la página **Propiedades**, seleccione la ficha **[!UICONTROL Subtítulos y pistas de audio]**.
 1. Realice una de las siguientes acciones:
 
-   * Subtítulos - Bajo el encabezado **Subtítulos**, seleccione uno o más archivos de subtítulos que desee descargar del vídeo y, a continuación, seleccione **[!UICONTROL Descargar]**.
-   * Pistas de audio: en el encabezado **Pistas de audio**, seleccione uno o más archivos de pista de audio que desee descargar del vídeo y, a continuación, seleccione **[!UICONTROL Descargar]**.
+   * Subtítulos - Bajo el encabezado **Subtítulos**, seleccione uno o más archivos de subtítulos que desee descargar del vídeo y, a continuación, haga clic en ![Icono de descarga](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL Descargar]**.
+   * Pistas de audio: en el encabezado **Pistas de audio**, seleccione uno o más archivos de pista de audio que desee descargar del vídeo y, a continuación, haga clic en ![Icono de descarga](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL Descargar]**.
 
 1. En el cuadro de diálogo Descargar, defina las siguientes opciones:
 
-   | Opción | Descripción |
+   | Opción Descargar | Descripción |
    |--- |--- |
    | Guardar como | Utilice el nombre de archivo predeterminado especificado en el campo de texto Guardar como o especifique su propio nombre. |
    | Cree una carpeta independiente para cada recurso | Cree una carpeta para cada archivo de rótulo o de pista de audio que haya seleccionado para la descarga. |
    | Correo electrónico | Utilice su programa de correo electrónico predeterminado para enviar el archivo .zip a una dirección de correo electrónico especificada. |
    | Recursos | Especifica el número de archivos que está descargando y el tamaño total combinado de todos los archivos seleccionados. Al anular la selección de esta opción, se atenúa (desactiva) el botón **[!UICONTROL Descargar]**, lo que impide que se descargue ningún archivo. |
+   | Representaciones | Una representación hace referencia a una versión alternativa o a una vista previa del archivo original, normalmente una versión más pequeña o de menor resolución. Si se muestra como 0 B, es probable que signifique que no hay ninguna versión alternativa disponible o que es demasiado pequeño para registrar un tamaño. |
 
 1. Seleccione **[!UICONTROL Descargar]**.
 1. Publish el vídeo. Consulte [recursos de Publish](publishing-dynamicmedia-assets.md).
@@ -1060,7 +1060,7 @@ Consulte [Servicio de contenido estático (que no es de imagen)](https://experie
 
    For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
 
-   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then select **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.-->
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then select **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video. -->
 
 Siga las instrucciones en pantalla de un sitio para crear y guardar el archivo WebVTT. Cuando haya terminado, copie el contenido del archivo de rótulo y péguelo en un editor de texto sin formato y guárdelo con la extensión de nombre de archivo VTT.
 
@@ -1085,7 +1085,7 @@ Por lo general, desea asignar el mismo nombre al archivo de rótulo `.vtt` que a
 
      Observe `,1` al final de la ruta de acceso del título. Inmediatamente después de la extensión de nombre de archivo VTT en la ruta, opcionalmente puede habilitar (activar) o deshabilitar (desactivar) el botón de subtítulos opcionales en la barra del reproductor de vídeo estableciendo en `,1` o `,0`, respectivamente.
 
-   * Para obtener una experiencia de visor de vídeo integrada, seleccione **[!UICONTROL Código incrustado]**. En el cuadro de diálogo Código incrustado, seleccione, copie el código incrustado en el Portapapeles y, a continuación, pegue el código en un editor de texto simple. Anexe el código incrustado copiado con la siguiente sintaxis:
+   * Para obtener una experiencia de visor de vídeo integrada, haga clic en **[!UICONTROL Código incrustado]**. En el cuadro de diálogo Código incrustado, seleccione, copie el código incrustado en el Portapapeles y, a continuación, pegue el código en un editor de texto simple. Anexe el código incrustado copiado con la siguiente sintaxis:
 
      `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
@@ -1170,7 +1170,6 @@ Ver [WebVTT: el formato de seguimiento de texto de vídeo web](https://w3c.githu
    </table>
 
 
-
 ## Acerca de las miniaturas {#about-video-thumbnails}
 
 Una miniatura de vídeo es una versión de tamaño reducido de un fotograma de vídeo o un recurso de imagen que representa el vídeo para el cliente. La miniatura debe servir para animar a un cliente a seleccionar el vídeo.
@@ -1190,26 +1189,28 @@ La capacidad de personalizar una miniatura de vídeo solo está disponible despu
 
    * [Cargó sus vídeos en la carpeta](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
+
 1. Vaya a un recurso de vídeo cargado cuya imagen en miniatura desee cambiar.
-1. En el modo de selección de recursos desde **[!UICONTROL Vista de lista]** o **[!UICONTROL Vista de tarjeta]**, seleccione el recurso de vídeo.
-1. En la barra de herramientas, seleccione el icono **[!UICONTROL Propiedades]** (un círculo con una &quot;i&quot;).
-1. En la página Propiedades del vídeo, seleccione **[!UICONTROL Cambiar miniatura]**.
-1. En la página Cambiar miniatura, realice una de las acciones siguientes:
+1. En el modo de selección de recursos, en ![Ver icono de tarjeta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Vista de tarjeta) o en ![Ver icono de lista](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Vista de lista), seleccione el recurso de vídeo.
+1. En la barra de herramientas, haga clic en ![Icono de información](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Propiedades.
+1. En la página Propiedades del vídeo, haga clic en **[!UICONTROL Cambiar miniatura]**.
+1. En el cuadro de diálogo Cambiar miniatura, siga uno de estos procedimientos:
 
    * Para utilizar un fotograma del vídeo como nueva miniatura:
 
-      * En la barra de herramientas, haga clic en la opción **[!UICONTROL Seleccionar fotograma del vídeo]**.
-      * Seleccione el botón Reproducir y, a continuación, el botón Pausa del fotograma que desea capturar como nueva miniatura del vídeo.
+      * En la barra de herramientas, haga clic en la ficha **[!UICONTROL Seleccionar fotograma del vídeo]**.
+      * Haga clic en ![icono de reproducción](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg).
+      * Haga clic en ![Icono de pausa](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PauseCircle_22_N.svg) en el fotograma que quiera capturar como nueva miniatura del vídeo.
 
    * Para utilizar un recurso de imagen como nueva miniatura:
 
-      * En la barra de herramientas, seleccione **[!UICONTROL Seleccionar miniatura de Assets]**.
-      * Seleccionar **[!UICONTROL Seleccionar miniatura]**.
+      * En la barra de herramientas, haga clic en la ficha **[!UICONTROL Seleccionar miniatura de Assets]**.
+      * Haga clic en el botón **[!UICONTROL Seleccionar miniatura]**.
       * Vaya a un recurso de imagen previamente cargado y publicado que desee utilizar. El recurso cambia de tamaño automáticamente para servir como imagen en miniatura del vídeo.
-      * Seleccione el recurso de imagen y luego seleccione **[!UICONTROL Seleccionar]**.
+      * Seleccione el recurso de imagen y, a continuación, haga clic en **[!UICONTROL Seleccionar]**.
 
-1. En la página Cambiar miniatura, seleccione **[!UICONTROL Guardar cambio]**.
-1. En la página Propiedades del vídeo, en la esquina superior derecha, selecciona **[!UICONTROL Guardar y cerrar]**.
+1. En el cuadro de diálogo Cambiar miniatura, haga clic en **[!UICONTROL Guardar cambio]**.
+1. En la página Propiedades del vídeo, en la esquina superior derecha, haz clic en **[!UICONTROL Guardar y cerrar]** o en **[!UICONTROL Guardar]**.
 
 
 
