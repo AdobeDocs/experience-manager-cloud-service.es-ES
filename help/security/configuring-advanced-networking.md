@@ -4,10 +4,10 @@ description: Aprenda a configurar funciones de redes avanzadas como una VPN o un
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 09cc9c65aff42c3a169791d32dfdbdbfb044aecb
-workflow-type: ht
-source-wordcount: '5676'
-ht-degree: 100%
+source-git-commit: 47d38589071bb7b51d43a2dbc65bbd169810f9ee
+workflow-type: tm+mt
+source-wordcount: '5657'
+ht-degree: 99%
 
 ---
 
@@ -563,9 +563,7 @@ La siguiente tabla describe el enrutamiento de tráfico.
 
 ### Dominios útiles para la configuración {#vpn-useful-domains-for-configuration}
 
-El diagrama siguiente proporciona una representación visual de un conjunto de dominios e IP asociadas que son útiles para la configuración y el desarrollo. La tabla siguiente debajo del diagrama describe esos dominios y direcciones IP.
-
-![Configuración del dominio VPN](/help/security/assets/AdvancedNetworking.jpg)
+La siguiente tabla describe un conjunto de dominios e IP que son útiles para la configuración y el desarrollo.
 
 <table>
 <thead>
