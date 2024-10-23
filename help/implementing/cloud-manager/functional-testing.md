@@ -5,10 +5,10 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+source-git-commit: 05531a5c1eca996bd3652d6ce6233b7a960d0bc9
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 3%
+source-wordcount: '1322'
+ht-degree: 7%
 
 ---
 
@@ -91,7 +91,7 @@ Consulte [Pruebas funcionales de Java](/help/implementing/cloud-manager/java-fun
 
 Para maximizar el control de riesgos para el desarrollo específico del cliente, el Adobe le anima a capturar pruebas de interfaz de usuario críticas en AEM as a Cloud Service. Manténgalos limitados, pero centrados en maximizar su impacto en la experiencia del cliente.
 
-Las pruebas se empaquetan en una imagen Docker diseñada para ser lo más volátil posible (con compatibilidad con Cypress, Selenium, Java y JavaScript). Siguen las mismas características y propósitos que las pruebas funcionales personalizadas.
+Las pruebas se empaquetan en una imagen Docker diseñada para ser lo más volátil posible (con soporte para Cypress, Playwright, Selenium, Java y JavaScript). Siguen las mismas características y propósitos que las pruebas funcionales personalizadas.
 
 >[!NOTE]
 >

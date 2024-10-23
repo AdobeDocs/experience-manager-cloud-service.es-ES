@@ -5,10 +5,10 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f504f622446f082c3662c39cc0a249b6f92a4b6e
+source-git-commit: 8703240a5b7b8ed751620f602470da45025f7b74
 workflow-type: tm+mt
-source-wordcount: '2630'
-ht-degree: 79%
+source-wordcount: '2698'
+ht-degree: 74%
 
 ---
 
@@ -26,7 +26,7 @@ La prueba de IU personalizada es una característica opcional que le permite cre
 
 AEM ofrece un conjunto integrado de [Puertas de calidad de Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) para garantizar actualizaciones sin problemas en las aplicaciones personalizadas. En concreto, las puertas de pruebas de TI ya admiten la creación y automatización de pruebas personalizadas mediante las API de AEM.
 
-Las pruebas de IU se empaquetan en una imagen Docker para permitir una amplia variedad de lenguajes y marcos de trabajo (como Cypress, Selenium, Java y Maven, y JavaScript). AEM Además, se puede generar fácilmente un proyecto de pruebas de interfaz de usuario utilizando [el tipo de archivo del proyecto de la interfaz de usuario ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es).
+Las pruebas de IU se empaquetan en una imagen Docker para permitir una amplia variedad de lenguajes y marcos de trabajo (como Cypress, Selenium, Java y Maven, y JavaScript). AEM Además, se puede generar fácilmente un proyecto de pruebas de interfaz de usuario utilizando [el tipo de archivo del proyecto de la interfaz de usuario ](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/overview).
 
 El Adobe fomenta el uso de Cypress, ya que ofrece recarga en tiempo real y espera automática, lo que ayuda a ahorrar tiempo y mejora la productividad durante las pruebas. Cypress también proporciona una sintaxis sencilla e intuitiva, lo que facilita el aprendizaje y el uso, incluso para aquellos que son nuevos en las pruebas.
 
@@ -44,17 +44,15 @@ A diferencia de las pruebas funcionales personalizadas, que son pruebas HTTP esc
 
 En esta sección se describen los pasos necesarios para configurar las pruebas de IU para la ejecución en Cloud Manager.
 
-1. Decida el lenguaje de programación que desea utilizar.
+1. Decida el marco de trabajo de prueba que desee utilizar.
 
-   * Para Cypress, utilice el código de muestra del [Repositorio de ejemplos de pruebas de AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress).
+   * AEM Para Cypress (predeterminado), use el código de ejemplo del [repositorio de muestras de prueba](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress) o use el código de muestra que se genera automáticamente en la carpeta `ui.tests` de su repositorio de Cloud Manager.
 
-   * Para JavaScript y WDIO, use el código de ejemplo que se genera automáticamente en la carpeta `ui.tests` de su repositorio de Cloud Manager.
+   * AEM Para Playwright, use el código de ejemplo del [repositorio de muestras de prueba de la prueba de la prueba de](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
 
-     >[!NOTE]
-     >
-     >Si el repositorio se creó antes de que Cloud Manager creara automáticamente carpetas `ui.tests`, también puede generar la última versión utilizando el [Arquetipo de proyecto de AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
+   * AEM Para Webdriver.IO, use el código de ejemplo del [Repositorio de muestras de prueba](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
 
-   * Para Java y WebDriver, utilice el código de muestra del [Repositorio de ejemplos de pruebas de AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
+   * AEM Para Selenium WebDriver, use el código de ejemplo del [Repositorio de muestras de prueba](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
    * Para otros lenguajes de programación, consulte la sección [Generación de pruebas de IU](#building-ui-tests) en este documento para configurar el proyecto de prueba.
 
@@ -432,6 +430,11 @@ if (proxyServer !== '') {
 }
 ```
 
+>[!NOTE]
+>
+> Se puede encontrar una implementación de ejemplo en el módulo de prueba de muestra del dramaturgo en [GitHub](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-playwright/).
+
+
 ## Ejecución de pruebas de IU locales {#run-ui-tests-locally}
 
 Antes de activar pruebas de IU en una canalización de Cloud Manager, se recomienda ejecutar las pruebas de IU localmente en el [SDK de AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) o en una instancia de AEM as a Cloud Service real.
@@ -494,7 +497,36 @@ Antes de activar pruebas de IU en una canalización de Cloud Manager, se recomie
 >* Los archivos de registro se almacenan en la carpeta `target/reports` de su repositorio
 >* Debe asegurarse de que tiene la última versión de Chrome, ya que la prueba descarga la última versión de ChromeDriver automáticamente para realizar pruebas.
 >
->Para obtener más información, consulte el [repositorio de Tipo de archivo del proyecto de AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
+>Para obtener más información, consulte el [repositorio de Muestras de pruebas de AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
+
+### Muestra de prueba de Playwright {#playwright-sample}
+
+1. Abra un elemento shell y vaya a la carpeta `ui.tests` de su repositorio
+
+1. Ejecute el siguiente comando para crear una imagen de docker con Maven
+
+   ```shell
+   mvn clean package -Pui-tests-docker-build
+   ```
+
+1. Ejecute el siguiente comando para iniciar las pruebas con Maven
+
+   ```shell
+   mvn verify -Pui-tests-docker-execution \
+    -DAEM_AUTHOR_URL=https://author-<program-id>-<environment-id>.adobeaemcloud.com \
+    -DAEM_AUTHOR_USERNAME=<user> \
+    -DAEM_AUTHOR_PASSWORD=<password> \
+    -DAEM_PUBLISH_URL=https://publish-<program-id>-<environment-id>.adobeaemcloud.com \
+    -DAEM_PUBLISH_USERNAME=<user> \
+    -DAEM_PUBLISH_PASSWORD=<password>
+   ```
+
+>[!NOTE]
+>
+>Los archivos de registro se almacenan en la carpeta `target/` del repositorio.
+>
+>Para obtener más información, consulte el [repositorio de Muestras de pruebas de AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
+
 
 ### Ejemplo de prueba de Java Selenium WebDriver {#java-sample}
 
