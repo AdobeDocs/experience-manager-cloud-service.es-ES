@@ -4,10 +4,10 @@ description: Aprenda a utilizar hojas de cálculo para administrar los datos tab
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
+source-git-commit: 69c8e54bde6c6047fdefbbbb1f166af690584f88
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 95%
+source-wordcount: '1014'
+ht-degree: 92%
 
 ---
 
@@ -101,6 +101,10 @@ Para que AEM pueda publicar los datos en la hoja de cálculo, también debe actu
      ]
    }
    ```
+
+   >[!NOTE]
+   >
+   >Esta entrada `paths.json` se basa en el ejemplo de creación de redirecciones con datos de tabla. Asegúrese de actualizar la ruta de acceso correspondiente al [tipo de hoja de cálculo que está creando.](#other)
 
 1. Haga clic en **Confirmar cambios…** para guardar los cambios en `main`.
 

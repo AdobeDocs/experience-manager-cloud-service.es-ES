@@ -4,10 +4,10 @@ description: Descubra cómo funciona el modelado de contenido para la creación 
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 058f3c24ac883315dfaa9206a8c2caa4bb005d07
 workflow-type: tm+mt
-source-wordcount: '2242'
-ht-degree: 83%
+source-wordcount: '2196'
+ht-degree: 80%
 
 ---
 
@@ -608,20 +608,7 @@ También es posible definir metadatos de página adicionales de dos formas.
 
 Es posible definir metadatos en función de una ruta o un patrón de ruta de una manera similar a una tabla en AEM as a Cloud Service. Hay disponible una interfaz de usuario de creación para datos de tabla similar a Excel o Google Sheets.
 
-Para crear dicha tabla, cree una página y utilice la plantilla Metadatos en la consola Sitios.
-
-En las propiedades de la página de la hoja de cálculo, defina los campos de metadatos que necesite junto con la dirección URL. A continuación, agregue metadatos por ruta de página o patrón de ruta de página.
-
-Asegúrese de que la hoja de cálculo también se añada a la asignación de ruta antes de publicarla.
-
-```json
-{
-  "mappings": [
-    "/content/site/:/",
-    "/content/site/metadata:/metadata.json"
-  ]
-}
-```
+Para obtener más información, consulte el documento [Uso de hojas de cálculo para administrar datos tabulares](/help/edge/wysiwyg-authoring/tabular-data.md).
 
 ### Propiedades de página {#page-properties}
 
@@ -631,7 +618,7 @@ Muchas de las propiedades de página predeterminadas disponibles en AEM se asign
 * La última vez que se publicó el documento como `published-time` en formato ISO8601
 * `cq:tags` como `cq-tags` como una lista separada por comas de los ID de etiqueta.
 
-También es posible definir un modelo de componente para los metadatos de página personalizada, que se pondrán a disposición del autor como pestaña del cuadro de diálogo de propiedades de la página de AEM Sites.
+También es posible definir un modelo de componentes para metadatos de página personalizados, que se pondrán a disposición del autor en el editor universal.
 
 Para ello, cree un modelo de componentes con el ID `page-metadata`.
 
