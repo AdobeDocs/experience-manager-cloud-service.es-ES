@@ -4,9 +4,9 @@ description: Aprenda a utilizar el Analizador de prácticas recomendadas para co
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 9998fb4bc4f9f4c0f4adf67fd1b378ae662c8f70
+source-git-commit: 9f5d7ee97da1c92d3a3d4573fa3ec737356f54a9
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2701'
 ht-degree: 39%
 
 ---
@@ -73,45 +73,43 @@ Siga esta sección para obtener información sobre la vista del informe Analizad
 
 1. Seleccione Adobe Experience Manager y vaya a herramientas > **Operaciones** > **Analizador de prácticas recomendadas**.
 
-   ![imagen](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
+   ![Analizador de prácticas recomendadas](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
 1. Haga clic en **Generar informe** para ejecutar el Analizador de prácticas recomendadas.
 
-   ![imagen](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
+   ![Generar informe](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
 1. Proporcione la clave de carga de BPA para cargar automáticamente el informe de BPA generado en [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). Para obtener la clave de carga, vaya al [Análisis de prácticas recomendadas en CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
-   ![imagen](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
+   ![Establecer clave de carga de BPA](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
 
 >[!NOTE]
 >Tiene la opción de omitir la carga automática a CAM al seleccionar **Omitir la carga automática de informe a CAM**. Si decide omitir, deberá descargar manualmente el informe de BPA como archivo de valor separado por comas y, a continuación, cargar el archivo en CAM. Se recomienda utilizar la opción de clave de carga, ya que optimiza la operación.
 
 1. El botón **Generate** se activa cuando se proporciona una clave válida. Haga clic en **Generar** para iniciar la generación del informe.
 
-   ![imagen](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
-
+   ![Generar informe](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
 
 1. Mientras el BPA genera el informe, puede ver el progreso realizado por la herramienta en la pantalla. Muestra el progreso en términos de porcentaje completado. También muestra el número de elementos analizados y el número de conclusiones encontradas.
 
-   ![imagen](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
+   ![Generando informe](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
 
 >[!NOTE]
 >La marca de tiempo de caducidad de la clave de carga de BPA se muestra en la esquina superior derecha. Debe renovar la clave de carga de BPA cuando esté cerca de expirar. Para renovar la clave, puede hacer clic en **Renovar** para ir a CAM y renovar la clave.
 
 1. Una vez generado el informe de BPA, muestra un resumen y la cantidad de conclusiones en un formato de tabla organizado por el tipo de búsqueda y el nivel de importancia. Para obtener más detalles sobre una búsqueda determinada, puede hacer clic en el número que corresponda al tipo de búsqueda de la tabla.
 
-   ![imagen](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
+   ![Resumen del informe](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
 1. Tiene la opción de descargar el informe en formato de valores separados por comas (CSV) haciendo clic en **Exportar a CSV**. También tiene la opción de ver el informe en CAM haciendo clic en **Ir a CAM**. Esto lo llevará a la página [Análisis de prácticas recomendadas](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) en CAM.
 
 Puede forzar al BPA a borrar su caché y regenerar el informe haciendo clic en **Actualizar informe**.
 
-![imagen](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
-
+![Actualizar informe](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
 1. Si la caché caduca, tiene la opción de ver el último informe generado en CAM haciendo clic en **Ver el último informe generado en CAM** o iniciar una nueva generación de informes haciendo clic en **Generar nuevo informe**.
 
-![imagen](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
+![Ningún informe](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
 
 
 #### Uso de filtros en el informe del Analizador de prácticas recomendadas {#bpa-filters}
@@ -120,14 +118,14 @@ Para filtrar los hallazgos relacionados con [ACS Commons](https://adobe-consulti
 
 1. Haga clic en el icono del carril izquierdo en el lado izquierdo de la página. Se mostrará el **filtro ACS Commons**. Haga clic en **ACS Commons Filter** para mostrar la casilla de verificación interactiva como se muestra en la imagen siguiente.
 
-   ![imagen](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
+   ![Filtro ACS Commons](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
    >El icono del carril izquierdo solo aparecerá si el BPA detecta el uso de ACS Commons.
 
 1. Anule la selección del cuadro para filtrar todos los resultados relacionados con ACS Commons. Debería ver **Recuento de búsquedas filtradas** en el informe como se muestra en la siguiente imagen. El filtro también se aplica al informe cuando se exporta en formato de valores separados por comas (CSV).
 
-   ![imagen](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
+   ![Recuento de búsquedas filtradas](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
    >No se deben ignorar los hallazgos de ACS Commons. Consulte [documentación](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) para determinar la compatibilidad con AEM as a Cloud Service.

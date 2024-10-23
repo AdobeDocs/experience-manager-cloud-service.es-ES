@@ -4,10 +4,10 @@ description: Inicie el recorrido de migración familiarizándose con los concept
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 22%
+source-wordcount: '579'
+ht-degree: 21%
 
 ---
 
@@ -35,15 +35,15 @@ El recorrido de migración a Cloud Service implica las siguientes fases:
 * Comience por determinar si la implementación está lista para moverse a AEM as a Cloud Service con la [Fase de preparación](/help/journey-migration/readiness.md). En esta fase, también debe familiarizarse con los cambios que AEM as a Cloud Service ha introducido.
 * A continuación, prepare su código y su nube de contenido con la [Fase de implementación](/help/journey-migration/implementation.md). En esta fase, se exploran las herramientas que proporciona el Adobe para facilitar el paso a la nube.
 * Cuando todo esté listo, podrá realizar la migración con la [fase de lanzamiento](/help/journey-migration/go-live.md).
-* Por último, asegúrese de supervisar los problemas y mejorar el rendimiento una vez completada la migración en la [fase de lanzamiento de Post](/help/journey-migration/post-go-live.md).
+* Por último, asegúrese de supervisar los problemas y mejorar el rendimiento una vez completada la migración en la [fase de Publicar Go-live](/help/journey-migration/post-go-live.md).
 
 La figura siguiente muestra una representación de alto nivel del recorrido de transición recomendado para AEM as a Cloud Service.
 
-![imagen](/help/journey-migration/assets/move-aemcloud-process.png)
+![Representación de alto nivel del recorrido de transición recomendado para AEM as a Cloud Service](/help/journey-migration/assets/move-aemcloud-process.png)
 
 También puede consultar el diagrama siguiente para obtener una vista más detallada y granular del recorrido de migración.
 
-![imagen](/help/journey-migration/assets/migration-process.png)
+![Vista detallada y granular del recorrido de migración](/help/journey-migration/assets/migration-process.png)
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}
 

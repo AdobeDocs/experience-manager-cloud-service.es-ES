@@ -4,9 +4,9 @@ description: Las API Java&trade; y JavaScript permiten internacionalizar cadenas
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a0afa0d733b8493883770d03fc1a55db247aaf71
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
@@ -174,7 +174,7 @@ Compruebe si ha internacionalizado todas las cadenas de la interfaz de usuario. 
 
 AEM La siguiente imagen muestra la traducción de código auxiliar de la página de inicio de la:
 
-![chlimage_1](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
+AEM ![Traducción de código auxiliar para la página de inicio de la](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
 
 Para establecer el idioma del usuario, configure la propiedad language del nodo de preferencias de la cuenta de usuario.
 

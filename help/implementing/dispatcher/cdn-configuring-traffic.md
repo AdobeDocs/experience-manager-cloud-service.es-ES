@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo configurar el tráfico de CDN decl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 6ea53e6b2b009895dccf99ac0265dc42b68db509
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1341'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Todas estas reglas, declaradas en un archivo de configuración en el control de 
 
 Desde el punto de vista funcional, las distintas funciones mencionadas anteriormente se evalúan en la siguiente secuencia:
 
-![imagen](/help/implementing/dispatcher/assets/order.png)
+![Orden de evaluación](/help/implementing/dispatcher/assets/order.png)
 
 ## Configuración {#initial-setup}
 
