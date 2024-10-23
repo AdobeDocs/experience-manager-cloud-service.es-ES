@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo configurar el tráfico de CDN decl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 198b3e29c3cd392db3ee42eeca22e3c8c414420f
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1351'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ kind: "CDN"
 version: "1"
 metadata:
   envTypes: ["dev", "stage", "prod"]
-data:  
+data:
   requestTransformations:
     removeMarketingParams: true
     rules:
@@ -98,7 +98,7 @@ data:
         actions:
           - type: set
             reqHeader: x-some-header
-            value: {reqProperty: path}           
+            value: {reqProperty: path}
       - name: unset-header-rule
         when:
           reqProperty: path
@@ -106,7 +106,7 @@ data:
         actions:
           - type: unset
             reqHeader: x-some-header
-            
+
       - name: unset-matching-query-params-rule
         when:
           reqProperty: path
@@ -114,7 +114,7 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^removeMe_.*$
-            
+
       - name: unset-all-query-params-except-exact-two-rule
         when:
           reqProperty: path
@@ -122,7 +122,7 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^(?!leaveMe$|leaveMeToo$).*$
-            
+
       - name: multi-action
         when:
           reqProperty: path
@@ -134,17 +134,17 @@ data:
           - type: set
             reqHeader: x-header2
             value: '201'
-            
+
       - name: replace-html
         when:
           reqProperty: path
           like: /mypath
         actions:
           - type: transform
-           reqProperty: path
-           op: replace
-           match: \.html$
-           replacement: ""
+            reqProperty: path
+            op: replace
+            match: \.html$
+            replacement: ""
 ```
 
 **Acciones**
@@ -158,22 +158,36 @@ En la tabla siguiente se explican las acciones disponibles.
 | **anular** | reqProperty | Quita un parámetro de solicitud especificado (solo se admite la propiedad &quot;path&quot;), un encabezado de solicitud, un parámetro de consulta o una cookie, de un valor determinado, que podría ser un literal de cadena o un parámetro de solicitud. |
 |         | var | Quita una variable especificada. |
 |         | queryParamMatch | Quita todos los parámetros de consulta que coinciden con una expresión regular especificada. |
-| **transformar** | op:replace, (reqProperty o reqHeader o queryParam o reqCookie), match, replace | Reemplaza parte del parámetro de solicitud (solo se admite la propiedad &quot;path&quot;) o el encabezado de solicitud, el parámetro de consulta o la cookie por un nuevo valor. |
-|              | op:tolower, (reqProperty o reqHeader o queryParam o reqCookie) | Establece el parámetro de solicitud (solo se admite la propiedad &quot;path&quot;) o el encabezado de solicitud, el parámetro de consulta o la cookie en su valor en minúsculas. |
+| **transformar** | op:replace, (reqProperty o reqHeader o queryParam o reqCookie o var), match, replace | Reemplaza parte del parámetro de solicitud (solo se admite la propiedad &quot;path&quot;), el encabezado de solicitud, el parámetro de consulta, la cookie o la variable por un nuevo valor. |
+|              | op:tolower, (reqProperty o reqHeader o queryParam o reqCookie o var) | Establece el parámetro de solicitud (solo se admite la propiedad &quot;path&quot;), el encabezado de solicitud, el parámetro de consulta, la cookie o la variable en minúsculas. |
 
 Las acciones de reemplazo admiten grupos de captura, como se muestra a continuación:
 
 ```
+      - name: extract-country-code-from-path
+        when:
+          reqProperty: path
+          matches: ^/([a-zA-Z]{2})(/.*|$)
+        actions:
+          - type: set
+            var: country-code
+            value:
+              reqProperty: path
+          - type: transform
+            var: country-code
+            op: replace
+            match: ^/([a-zA-Z]{2})(/.*|$)
+            replacement: \1
       - name: replace-jpg-with-jpeg
         when:
           reqProperty: path
-          like: /mypath          
+          like: /mypath
         actions:
           - type: transform
             reqProperty: path
             op: replace
             match: (.*)(\.jpg)$
-            replacement: "\1\.jpeg"          
+            replacement: "\1\.jpeg"
 ```
 
 Las acciones se pueden encadenar. Por ejemplo:
@@ -201,7 +215,7 @@ kind: "CDN"
 version: "1"
 metadata:
   envTypes: ["prod", "dev"]
-data:   
+data:
   requestTransformations:
     rules:
       - name: set-variable-rule
@@ -212,7 +226,7 @@ data:
           - type: set
             var: some_var_name
             value: some_value
- 
+
   responseTransformations:
     rules:
       - name: set-response-header-while-variable
@@ -247,7 +261,7 @@ data:
           - type: set
             value: value-set-by-resp-rule
             respHeader: x-resp-header
- 
+
       - name: unset-response-header-rule
         when:
           reqProperty: path
@@ -255,7 +269,7 @@ data:
         actions:
           - type: unset
             respHeader: x-header1
- 
+
       # Example: Multi-action on response header
       - name: multi-action-response-header-rule
         when:
@@ -304,7 +318,7 @@ data:
         domain: www.example.com
         # ip: '1.1.1.1'
         # forwardHost: true
-        # forwardCookie: true 
+        # forwardCookie: true
         # forwardAuthorization: true
         # timeout: 20
 ```
