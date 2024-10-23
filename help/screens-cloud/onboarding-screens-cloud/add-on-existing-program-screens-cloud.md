@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo agregar un complemento de Screens 
 exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
 feature: Screens Deployments
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '247'
 ht-degree: 3%
 
 ---
@@ -33,14 +33,14 @@ Siga los pasos a continuación para agregar Screens como complemento a un progra
 
 1. Vaya al proyecto y haga clic en la opción **Editar programa** de la página **Información general** de Cloud Manager.
 
-   ![imagen](/help/screens-cloud/assets/onboarding/add-onexisting1.png)
+   ![Editar programa](/help/screens-cloud/assets/onboarding/add-onexisting1.png)
 
    >[!NOTE]
    >La página **Editar programa** muestra dos fichas **General** y **Soluciones y complementos**.
 
 1. La pestaña **Soluciones y complementos** muestra opciones como Sites, Assets y Screens. Seleccione la opción de complemento **Screens**, como se muestra en la figura siguiente.
 
-   ![imagen](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
+   ![Opción de complemento de Screens](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
 
 1. Haga clic en **Actualizar**, una vez que haya seleccionado las opciones.
 
