@@ -6,10 +6,10 @@ hidefromtoc: true
 exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
 feature: Migration
 role: Admin
-source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
+source-git-commit: c721a8db801602389822222b08ca4ea1fd2293e4
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 12%
+source-wordcount: '303'
+ht-degree: 13%
 
 ---
 
@@ -31,7 +31,8 @@ Los grupos se incluyen automáticamente en una migración CTT/CAM a Adobe Experi
 Para utilizar CUG en AEM as a Cloud Service, los usuarios deben estar presentes en la instancia de autor y ser miembros de los grupos de CUG relevantes.  Esto se puede realizar mediante paquetes o si los usuarios de CUG son usuarios de IMS, es posible que ya estén presentes.  AEM Los usuarios de CUG deben convertirse en miembros de los grupos de CUG de la.
 
 Para habilitar el comportamiento de los CUG en la instancia de Publish,
-1. Los grupos de CUG deben activarse (lo que los duplica a ellos y a sus miembros en la instancia de Publish) y
+1. Los grupos CUG deben activarse (lo que los duplica a ellos y a sus miembros en la instancia de Publish).
+1. Se debe cancelar la publicación de *todas* las páginas protegidas con directivas CUG (para borrar el recuento global de CUG), y
 1. Las páginas protegidas con políticas de CUG deben publicarse (lo que permite a la instancia de Publish y realizar un seguimiento de las políticas).
 1. Una vez publicadas todas las páginas, compruebe la funcionalidad de cada página protegida con CUG.
 
