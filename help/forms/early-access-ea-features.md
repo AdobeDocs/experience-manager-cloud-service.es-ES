@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 681121c98f61f045702a7d9c2ffad1473d7f5b2a
+source-git-commit: 2c70f7aec042c384cd37985877954b627d95879e
 workflow-type: tm+mt
 source-wordcount: '1735'
-ht-degree: 25%
+ht-degree: 34%
 
 ---
 
@@ -27,23 +27,23 @@ Si está interesado en unirse a nuestro programa de acceso anticipado para cualq
 
 ## Innovaciones de acceso anticipado
 
-### IA generativa de AEM Forms (generación AI)
+### Asistente de AEM Forms AI (Gen AI)
 
-La IA generativa para Forms adaptable aporta un nuevo nivel de potencia y facilidad a los procesos de desarrollo de formularios. Con la ayuda de las funciones inteligentes de IA, puede crear mejores formularios más rápido que nunca.
+La IA generativa para los formularios adaptables aporta un nuevo nivel de potencia y facilidad a los procesos de desarrollo de formularios. Con la ayuda de las funciones inteligentes de IA, puede crear mejores formularios más rápido que nunca.
 
-![Asistente de IA generativa, Forms adaptable](/help/forms/assets/generative-ai-assistant.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3435527)
 
-Las funciones de IA generativa que se ofrecen son:
+Las funciones de IA generativa que se ofrecen a través del Asistente de IA de AEM Forms son las siguientes:
 
-* AEM **Asistente de IA para consultas de productos**: obtenga respuestas instantáneas a sus preguntas relacionadas con formularios de la forma de la aplicación de la forma de la aplicación de la manera más rápida. Nuestro asistente de IA actúa como su propia base de conocimiento personal, proporcionando orientación y recomendaciones reveladoras directamente dentro de la plataforma.
+* **Asistente de IA para consultas de productos**: obtenga respuestas instantáneas a sus preguntas relacionadas con AEM Forms. Nuestro asistente de IA actúa como su propia base de conocimiento personal, proporcionando orientación y recomendaciones reveladoras directamente dentro de la plataforma.
 
-* **Generación de formularios adaptables**: Cree sin esfuerzo formularios completos con peticiones de datos de IA generativas. Nuestra IA generativa genera automáticamente formularios fáciles de usar que reducen los abandonos y personalizan la experiencia.
+* **Generación de formularios adaptables**: cree sin esfuerzo formularios completos con indicaciones de la IA generativa. Nuestra IA generativa genera automáticamente formularios fáciles de usar que reducen los abandonos y personalizan la experiencia.
 
 * **Generación de paneles para Forms**: permita que AI realice el trabajo pesado. Genere paneles de formulario creados previamente y adaptados a las necesidades específicas de recopilación de datos. Por ejemplo, generar secciones para recopilar información de pago, preferencias del cliente o detalles de viaje. Ahorre tiempo y garantice la coherencia con diseños y funcionalidades predefinidos.
 
-* **Cambio de diseños de formulario**: experimente con diferentes diseños y diseños mediante peticiones de datos generativas de IA. Pruebe diferentes diseños, como las vistas de asistente o con pestañas, para encontrar la opción perfecta para su formulario. Utilice peticiones de datos generativas de IA para optimizar los formularios y crear formularios atractivos visualmente que gusten a los usuarios.
+* **Cambio de diseños de formulario**: experimente con diferentes presentaciones y diseños mediante las indicaciones de la IA generativa. Pruebe diferentes diseños, como las vistas del asistente o con pestañas, para encontrar la opción perfecta para su formulario. Utilice las indicaciones de la IA generativa para optimizar los formularios con capacidad de respuesta móvil y crear formularios atractivos visualmente que gusten a los usuarios.
 
-* **Configurar la acción de envío**: utilice las peticiones de datos de IA generativas para configurar sin esfuerzo una acción de envío para el formulario. Elija entre una biblioteca de acciones de envío prediseñadas o una lista de acciones de envío personalizadas, creadas e implementadas por su propio equipo de desarrollo.
+* **Configurar la acción de envío**: utilice las indicaciones de la IA generativa para configurar sin esfuerzo una acción de envío para el formulario. Elija entre una biblioteca de acciones de envío creadas previamente o una lista de acciones de envío personalizadas, creadas e implementadas por su propio equipo de desarrollo.
 
 
 ### Conector de AEM Forms Workfront Fusion
@@ -74,9 +74,9 @@ Esto es lo que más Conversational Forms trae:
 Los Forms de conversación son algo más que un nuevo aspecto: cambian el panorama de la experiencia del usuario.  Aumente la participación, reduzca el abandono de formularios y haga que la interacción con su sitio web sea una experiencia más agradable para todos.
 
 
-### Creación WYSIWYG para Edge Delivery Services
+### Creación de WYSIWYG para Edge Delivery Services
 
-La creación de WYSIWYG proporciona interfaces WYSIWYG (editor universal y editor de Forms adaptable) para crear y publicar formularios adaptables en los Edge Delivery Services. La creación WYSIWYG ofrece todas las capacidades de [creación basada en documentos](/help/edge/docs/forms/overview.md#document-based-authoring-features), además de una amplia gama de características adicionales:
+La creación de WYSIWYG proporciona interfaces de WYSIWYG (editor universal y editor de Forms adaptable) para crear y publicar formularios adaptables en los Edge Delivery Services. WYSIWYG Authoring ofrece todas las capacidades de [Creación basada en documentos](/help/edge/docs/forms/overview.md#document-based-authoring-features), además de una amplia gama de características adicionales:
 
 * Editor de reglas avanzado para crear lógica compleja.
 * Extensibilidad del lado del servidor para funcionalidades personalizadas.
@@ -85,7 +85,7 @@ La creación de WYSIWYG proporciona interfaces WYSIWYG (editor universal y edito
 * Integración con Adobe Sign para firmas electrónicas.
 * Integración con varias fuentes de datos para rellenar previamente formularios y enviar datos.
 * El modelo de datos de formulario sirve para definir la estructura de datos y las interacciones con varias fuentes de datos.
-* Capacidad para elegir entre varias acciones de envío para administrar los envíos de formularios, incluido el envío de datos a Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics y muchas fuentes de datos más.
+* Capacidad para elegir entre varias acciones de envío para administrar los envíos de formularios, incluido el envío de datos a Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics y muchas más fuentes de datos.
 
 
 ### Conector de AEM Forms a Marketo
@@ -138,7 +138,7 @@ Al ofrecer varias opciones de CAPTCHA, AEM Forms le ha permitido seleccionar la 
 ### API de Doc Assurance
 
 
-Las API de AEM Forms Doc Assurance son un conjunto de herramientas dentro de las API de comunicación del Cloud Service de AEM Forms que le permiten administrar la seguridad y la interacción del usuario con los documentos del PDF.
+Las API de Assurance de documentos de AEM Forms son un conjunto de herramientas dentro de las API de comunicación del Cloud Service de AEM Forms que le permiten administrar la seguridad y la interacción del usuario en los documentos de su PDF.
 
 Este es un desglose de lo que las API de Doc Assurance pueden hacer:
 
@@ -165,7 +165,7 @@ El servicio Forms genera PDF forms interactivos para la captura de datos. Tambi�
 
 * **Validación de datos**: valide los datos enviados, en formato XDP o XML con una plantilla creada con AEM Forms Designer.
 
-## Ver también
+## Consulte también
 
 * [Últimas innovaciones en AEM Forms](/help/forms/latest-innovations.md)
 
