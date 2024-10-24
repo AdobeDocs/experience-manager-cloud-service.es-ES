@@ -1,24 +1,24 @@
 ---
 title: Fragmentos de contenido
-description: Los fragmentos de contenido de Adobe Experience Manager as a Cloud Service le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas.
+description: Los fragmentos de contenido de Adobe Experience Manager as a Cloud Service le permiten diseñar, crear, depurar y utilizar contenido independiente del canal que también se puede utilizar al crear páginas.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: b2b38a3163925fdc2bd4c5f78aaddb44ae716601
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 91%
+source-wordcount: '1267'
+ht-degree: 83%
 
 ---
 
 # Fragmentos de contenido {#content-fragments}
 
-Los fragmentos de contenido de Adobe Experience Manager (AEM) as a Cloud Service se [crean y administran como recursos independientes de las páginas](/help/sites-cloud/administering/content-fragments/overview.md).
+Los fragmentos de contenido en Adobe Experience Manager AEM () as a Cloud Service [se han creado y administrado como recursos independientes de la página](/help/sites-cloud/administering/content-fragments/overview.md), lo que le permite crear contenido neutro con respecto al canal, así como variaciones (posiblemente específicas del canal). Puede utilizar estos fragmentos, y sus variaciones, al crear páginas de contenido.
 
-Permiten crear contenido neutro con respecto al canal, así como variaciones (posiblemente específicas del canal). Después se pueden usar estos fragmentos, y sus variaciones, al crear páginas de contenido.
-
-Junto con el exportador JSON actualizado, los fragmentos de contenido estructurados también se pueden utilizar para distribuir contenidos de AEM mediante servicios de contenido a canales en lugar de páginas de AEM.
+>[!CAUTION]
+>
+>AEM Esta página se debe leer junto con [Trabajo con fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md) (y las páginas relacionadas), ya que presenta terminología y conceptos básicos, junto con información sobre la creación y administración de fragmentos y la entrega de fragmentos de contenido estructurados a canales que no sean páginas de la lista de distribución de contenido.
 
 >[!NOTE]
 >
@@ -40,10 +40,6 @@ Junto con el exportador JSON actualizado, los fragmentos de contenido estructura
 >Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos, pero no lo contrario.
 >
 >Para obtener más información, consulte [Explicación de los fragmentos de contenido y de experiencias en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=es#content-fragments).
-
->[!CAUTION]
->
->Esta página se debe leer junto con [Trabajo con fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md) (y las páginas relacionadas), ya que introduce terminología y conceptos básicos, además de tratar la creación y gestión de fragmentos.
 
 Los fragmentos de contenido permiten lo siguiente:
 
