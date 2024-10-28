@@ -2,16 +2,16 @@
 title: Aprobación de recursos para Content Hub
 description: Obtenga información sobre cómo aprobar recursos en Assets as a Cloud Service para que estén disponibles en Content Hub.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 189fc257fed1115f66559d0f9063885ae527a0fa
 workflow-type: tm+mt
 source-wordcount: '746'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
 # Aprobación de recursos para Content Hub {#approve-assets-content-hub}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación de desarrollador de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Aprobar recursos para Content Hub](assets/content-hub-approve-assets.png)
@@ -28,7 +28,7 @@ Antes de empezar, debería tener:
 
 * Permisos de escritura para editar metadatos de recursos a fin de poder editar el campo **[!UICONTROL Estado]** disponible en [propiedades de recursos](/help/assets/manage-organize-assets-view.md##manage-asset-status) para un recurso.
 
-## Aprobación de recursos para Content Hub {#approve-assets-for-content-hub}
+## Aprobación de recursos para Content Hub{#approve-assets-for-content-hub}
 
 Los recursos marcados como `approved` en Assets as a Cloud Service están disponibles automáticamente en Content Hub.
 

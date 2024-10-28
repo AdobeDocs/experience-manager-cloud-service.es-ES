@@ -2,16 +2,16 @@
 title: Configuración de la interfaz de usuario de Content Hub
 description: Configuración de la interfaz de usuario de Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: b74067002a676a4d206dac170022ce0ec6d223de
 workflow-type: tm+mt
-source-wordcount: '1392'
-ht-degree: 14%
+source-wordcount: '1822'
+ht-degree: 12%
 
 ---
 
 # Configuración de la interfaz de usuario de Content Hub {#configure-content-hub-user-interface}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación de desarrollador de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
@@ -59,6 +59,7 @@ Como administrador, administre las siguientes opciones de configuración para lo
 * [Filtros](#configure-filters-content-hub)
 
 * [Detalles del recurso](#configure-asset-details-content-hub)
+* [Tarjeta de recursos](#asset-card)
 
 * [Búsqueda](#configure-metadata-search-content-hub)
 
@@ -143,6 +144,25 @@ Las propiedades activadas en la interfaz de usuario de configuración se muestra
 
 ![Propiedades del recurso en Content Hub](assets/config-ui-asset-properties.png)
 
+### Tarjeta de recursos {#asset-card}
+
+En la interfaz de usuario de Content Hub, la vista de nivel de recurso muestra la **tarjeta de recurso** de los recursos aprobados. La tarjeta de recursos muestra los detalles clave del recurso para los usuarios. La tarjeta de recursos tiene miniaturas de recursos, metadatos de recursos y otras opciones procesables. Los administradores de Content Hub agregan los campos de metadatos en el nivel de repositorio para mostrar el nombre de los metadatos y su valor en la tarjeta de recursos de todos los recursos a la vez. La tarjeta de recursos acepta seis campos de metadatos. El campo de metadatos incluye el nombre de los metadatos y la propiedad de metadatos. La tarjeta de recursos muestra los metadatos y su valor. El administrador especifica el nombre de los metadatos y los asigna a la propiedad de metadatos correcta. La propiedad metadata representa un valor de metadatos en la tarjeta de recursos. La propiedad de metadatos está vinculada a las propiedades del recurso, por lo que el valor de los metadatos representados varía en todas las tarjetas de recursos. Por ejemplo, los administradores agregan metadatos **Con licencia** en la tarjeta de recursos y asignan estos metadatos de **Con licencia** a la propiedad de metadatos correcta. Las tarjetas de recursos de la interfaz de usuario de Content Hub muestran estos metadatos de **Con licencia** y su valor de metadatos (**Sí** o **No**). En este ejemplo, Assets con una licencia muestra **Sí** en la tarjeta de recursos, mientras que los recursos sin licencia muestran **NO**.
+
+![Propiedades del recurso en Content Hub](/help/assets/assets/metadata-on-asset-card.png)
+
+#### Agregar, editar o eliminar metadatos en tarjeta de recursos {#add-edit-delete-metadata}
+
+Para agregar metadatos a un recurso, consulte las instrucciones siguientes:
+
+1. En la interfaz de usuario de [Configuraciones](#access-configuration-options-content-hub), haga clic en **Tarjeta de recursos**.
+2. Haga clic en **Agregar metadatos**. Se muestra el cuadro de diálogo **Agregar metadatos de tarjeta de recursos**.
+3. Especifique el nombre de los metadatos en el campo **Etiqueta** y seleccione una propiedad de metadatos en el campo **Metadatos**. Por ejemplo, asigne un nombre a los metadatos **Con licencia** y seleccione **dc:licencia** como propiedad de metadatos. La propiedad de metadatos seleccionada está asignada a un valor que se muestra con los metadatos en la interfaz de usuario de Content Hub. En este ejemplo, la propiedad **dc:license** está asignada al identificador de licencia. Esta propiedad sigue la ruta del recurso especificado (licencia de PDF) para localizar el recurso correspondiente y, en consecuencia, representa un valor booleano (**Sí** o **No**) en la interfaz de usuario en función de la presencia del recurso. Si se encuentra el PDF de licencias, se mostrará **Sí**. Si no, muestra **No**. Por lo tanto, en la interfaz de usuario de Content Hub, los recursos con un ID de licencia muestran **Sí**, mientras que los recursos sin un ID de licencia muestran **No**.
+4. Haga clic en **Confirmar** y, a continuación, en **Guardar** para aplicar los cambios y que la nueva propiedad se muestre en la página de detalles del recurso.
+   ![tarjeta de recursos](/help/assets/assets/asset-card.png)
+
+Del mismo modo, haga clic en ![editar](/help/assets/assets/edit-content-hub.svg), que está disponible junto a cada propiedad disponible, para realizar las modificaciones necesarias, o haga clic en ![eliminar](/help/assets/assets/delete-content-hub.svg) para eliminar cualquier propiedad de metadatos existente. Haga clic en **Guardar** después de realizar todas las modificaciones para aplicar los cambios.
+
+
 ### Búsqueda {#configure-metadata-search-content-hub}
 
 Los administradores pueden definir los campos de metadatos que se buscan cuando un usuario especifica criterios de búsqueda en Content Hub. Ejecute los siguientes pasos:
@@ -174,7 +194,7 @@ Las actualizaciones de marca habilitadas en la interfaz de usuario de configurac
 
 ![Marca de la interfaz de usuario de configuración en Content Hub](assets/configuration-ui-branding-updates.png)
 
-### Recursos caducados {#expired-assets-content-hub}
+### Recursos caducados{#expired-assets-content-hub}
 
 Los administradores pueden controlar si necesitan recursos caducados para que sean visibles en Content Hub. Si los activos caducados están visibles, también se puede definir si los usuarios pueden descargarlos.
 
@@ -198,7 +218,7 @@ Después de habilitar la visibilidad de los recursos, puede ver los recursos cad
 
 Si el administrador ha activado la descarga, los usuarios de Content Hub también pueden descargarlos, tal como se indica en la imagen.
 
-Si la visibilidad de los recursos caducados está habilitada, Content Hub también resalta los recursos que caducan en los próximos 15 días mediante el mensaje `Expiring in n days` en la tarjeta de recursos.
+Si la visibilidad de los recursos caducados está habilitada, Content Hub también resalta los recursos que caducan en los próximos 15 días mediante el mensaje `Expiring in n days` de la tarjeta de recursos.
 
 
 ### Vínculos personalizados {#configure-custom-links-content-hub}
