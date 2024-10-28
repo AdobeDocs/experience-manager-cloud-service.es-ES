@@ -2,9 +2,9 @@
 title: Migración de grupos
 description: Información general sobre la migración de grupos en AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 1f9526f8e8aa6a070e95827fab16431b0ee7566b
+source-git-commit: 7e7b311d425ae6cdee9eb9311c0a12af84f81096
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1447'
 ht-degree: 4%
 
 ---
@@ -46,6 +46,8 @@ Tenga en cuenta que la ruta registrada o registrada para un grupo es solo la pri
 
 La mayoría de los grupos migrados están configurados para ser administrados por IMS.  AEM AEM AEM Esto significa que un grupo en IMS con el mismo nombre se vinculará al grupo en el que se encuentra, y cualquier usuario de IMS en el grupo de IMS se convertirá en usuario y miembro del grupo en el que se encuentra el grupo en el que se encuentra el grupo en el que se encuentra el grupo en el que se encuentra el grupo en el que se encuentra el grupo en el que se encuentra el grupo en el que se encuentra el.  Esto permite a estos usuarios tener acceso al contenido según las directivas ACL o CUG para el grupo.
 
+AEM Tenga en cuenta que los grupos migrados ya no se consideran &quot;grupos locales&quot;; son grupos de IMS y deben volver a crearse en IMS para que se puedan sincronizar entre los grupos de y el IMS. Los grupos migrados deben volver a crearse en IMS para que se puedan sincronizar entre los grupos de y el IMS.  Los grupos se pueden crear en IMS mediante Admin Console, entre otros métodos, de forma individual o en lote.  Consulte [Administrar grupos de usuarios](https://helpx.adobe.com/ca/enterprise/using/user-groups.html) para obtener más información sobre cómo crear grupos de forma individual o en masa en el Admin Console.
+
 La excepción a esta configuración de IMS es con grupos creados por colecciones de Assets. AEM Cuando se crea una colección en la nube, se crean grupos para acceder a ella; estos grupos se migran al sistema en la nube, pero no se configuran para que los administre IMS.  Para agregar usuarios de IMS a estos grupos, deben agregarse en la página Propiedades del grupo de la interfaz de usuario de Assets, ya sea de forma individual o colectiva como parte de otro grupo de IMS.
 
 
@@ -53,7 +55,7 @@ La excepción a esta configuración de IMS es con grupos creados por colecciones
 
 La versión 3.0.20 y posteriores de CTT incluyen una opción para deshabilitar la migración de grupos.  Esto se configura en la consola OSGI de la siguiente manera:
 
-* Abrir la configuración de OSGI `(http://<server> /system/console/configMgr)`
+* Abrir la configuración de OSGI `(http://<server>/system/console/configMgr)`
 * Haga clic en la configuración llamada **Configuración del servicio de extracción de la herramienta de transferencia de contenido**
 * Desmarque **Incluir grupos en la migración** para deshabilitar las migraciones de grupos
 * Haga clic en **Guardar** para asegurarse de que la configuración esté guardada y activa en el servidor
@@ -73,7 +75,9 @@ Además de los grupos de cada usuario, hay un campo en el informe en el que se p
 
 Estos casos pueden ocurrir simultáneamente, y también al mismo tiempo que los casos anteriores.
 
-El informe del usuario se agrega al final del informe de migración principal (y, por lo tanto, forma parte de él) (consulte [Resumen final e informe](#final-summary-and-report) más abajo).
+El informe del usuario se agrega al final del informe de migración principal (y, por lo tanto, forma parte de él) (consulte [Resumen final e informe](#final-summary-and-report) más abajo).  La información de este informe, incluidos los grupos de informes de cada usuario, se puede utilizar para crear un archivo de carga masiva de usuarios, que se puede utilizar en Admin Console para crear muchos usuarios en IMS de forma masiva.  Los usuarios de IMS existentes también se pueden editar por lotes.
+
+Ver [Administrar varios usuarios | Carga masiva de CSV](https://helpx.adobe.com/ca/enterprise/using/bulk-upload-users.html) para obtener detalles acerca de la creación o edición de usuarios por lotes a través del Admin Console.
 
 ## Consideraciones adicionales {#additional-considerations}
 
