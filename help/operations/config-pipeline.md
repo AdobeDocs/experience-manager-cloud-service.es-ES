@@ -4,9 +4,9 @@ description: Descubra cómo puede utilizar las canalizaciones de configuración 
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 3d0abce117cf94d7bf521e78be2ec019f216aa08
+source-git-commit: 2247fdd919057703f1c35145ba2bc9c6ec47250b
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '1000'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Descubra cómo puede utilizar las canalizaciones de configuración para implemen
 
 Una canalización de configuración de Cloud Manager implementa archivos de configuración (creados en formato YAML) en un entorno de destino. Se pueden configurar varias funciones de AEM as a Cloud Service de esta manera, incluido el reenvío de registros, las tareas de mantenimiento relacionadas con la depuración y varias funciones de CDN.
 
-Las canalizaciones de configuración se pueden implementar mediante Cloud Manager para los tipos de entorno de desarrollo, ensayo y producción en programas de producción (que no sean de zonas protegidas). Los RDE no son compatibles.
+Las canalizaciones de configuración se pueden implementar mediante Cloud Manager para los tipos de entorno de desarrollo, ensayo y producción en programas de producción (que no sean de zonas protegidas). Los archivos de configuración se pueden implementar en entornos de desarrollo rápido (RDE) con [herramientas de línea de comandos](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
 
 Las siguientes secciones de este documento proporcionan información importante sobre cómo se pueden utilizar las canalizaciones de configuración y cómo se deben estructurar las configuraciones para ellas. Describe conceptos generales compartidos en todas las funciones o en un subconjunto de ellas compatibles con las canalizaciones de configuración.
 
@@ -53,6 +53,9 @@ La siguiente tabla ofrece una lista completa de estas configuraciones con víncu
 Para obtener información sobre cómo crear y configurar canalizaciones, consulte el documento [Canalizaciones de CI/CD.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)
 
 Al crear una canalización de configuración en Cloud Manager, asegúrese de seleccionar una **implementación dirigida** en lugar de **código de pila completa** al configurar la canalización.
+
+Como se mencionó anteriormente, la configuración para RDE se implementa usando [herramientas de línea de comandos](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) en lugar de una canalización.
+
 
 ## Sintaxis común {#common-syntax}
 

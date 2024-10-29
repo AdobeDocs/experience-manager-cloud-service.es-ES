@@ -4,7 +4,7 @@ description: Obtenga información acerca del reenvío de registros a Splunk y ot
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e450a58587ca4d7dff2ab229f522c7e7d4f3f20c
+source-git-commit: af7e94a5727608cd480b2b32cd097d347abb23d3
 workflow-type: tm+mt
 source-wordcount: '1663'
 ht-degree: 1%
@@ -63,7 +63,7 @@ Este artículo está organizado de la siguiente manera:
 
 1. Coloque el archivo en algún lugar bajo una carpeta de nivel superior llamada *config* o similar, como se describe en [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#folder-structure).
 
-1. Para tipos de entorno distintos de RDE (que actualmente no se admite), cree una canalización de configuración de implementación de destino en Cloud Manager, como se hace referencia en [esta sección](/help/operations/config-pipeline.md#creating-and-managing); tenga en cuenta que las canalizaciones de pila completa y de nivel web no implementan el archivo de configuración.
+1. Para tipos de entorno distintos de RDE (que usa herramientas de línea de comandos), cree una canalización de configuración de implementación de destino en Cloud Manager, como se indica en [esta sección](/help/operations/config-pipeline.md#creating-and-managing); tenga en cuenta que las canalizaciones de pila completa y las canalizaciones de nivel web no implementan el archivo de configuración.
 
 1. Implemente la configuración de.
 

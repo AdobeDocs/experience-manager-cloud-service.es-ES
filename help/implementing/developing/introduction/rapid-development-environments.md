@@ -4,9 +4,9 @@ description: Aprenda a utilizar entornos de desarrollo rápido para iteraciones 
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e508ba2fcb709b1925b490bdb3e1a8774068927c
+source-git-commit: 33a30ea29023f90cc6ce1c8b64ed4f9cfdd4f4a7
 workflow-type: tm+mt
-source-wordcount: '4794'
+source-wordcount: '4863'
 ht-degree: 3%
 
 ---
@@ -277,7 +277,7 @@ El patrón de uso general es `aio aem:rde:install <artifact>`.
 
 Puede encontrar algunos ejemplos a continuación:
 
-<u>Implementación de un paquete de contenido</u>
+#### Implementación de un paquete de contenido {#deploy-content-package}
 
 `aio aem:rde:install sample.demo.ui.apps.all-1.0.0-SNAPSHOT.zip`
 
@@ -300,7 +300,7 @@ AEM Se puede implementar cualquier paquete de datos, como paquetes con código, 
 >
 >La configuración de Dispatcher para el proyecto WKND no se implementa mediante la instalación del paquete de contenido anterior. Impleméntelo por separado siguiendo los pasos de &quot;Implementación de una configuración de Apache/Dispatcher&quot;.
 
-<u>Implementando una configuración OSGI</u>
+#### Implementación de una configuración OSGI {#deploy-OSGI-config}
 
 `aio aem:rde:install com.adobe.granite.demo.MyServlet.cfg.json`
 
@@ -311,7 +311,7 @@ Donde la respuesta para una implementación correcta es similar a la siguiente:
 #2: deploy completed for osgi-config com.adobe.granite.demo.MyServlet.cfg.json on author,publish - done by 9E0725C05D54FE1A0B49431C@AdobeID at 2022-09-13T11:54:36.390Z
 ```
 
-<u>Implementando un paquete</u>
+#### Implementación de un paquete {#deploy-bundle}
 
 Para implementar un paquete, utilice:
 
@@ -324,7 +324,7 @@ Donde la respuesta para una implementación correcta es similar a la siguiente:
 #3: deploy staged for osgi-bundle org.apache.felix.gogo.jline-1.1.8.jar on author,publish - done by 9E0725C05D53BE1A0B49431C@AdobeID at 2022-09-14T07:54:28.882Z
 ```
 
-<u>Implementando un archivo de contenido</u>
+#### Implementación de un archivo de contenido {#deploy-content-file}
 
 Para implementar un archivo de contenido, utilice:
 
@@ -337,7 +337,7 @@ Donde la respuesta para una implementación correcta es similar a la siguiente:
 #4: deploy completed for content-file world.txt on author,publish - done by 9E0729C05C54FE1A0B49431C@AdobeID at 2022-09-14T07:49:30.644Z
 ```
 
-<u>Implementando una configuración de Apache/Dispatcher</u>
+#### Implementación de una configuración de Apache/Dispatcher {#deploy-apache-config}
 
 Toda la estructura de carpetas debe estar en forma de archivo zip para este tipo de configuración.
 
@@ -388,6 +388,26 @@ The analyser found the following errors for publish :
 ```
 
 El ejemplo de código anterior ilustra el comportamiento si un paquete no se resuelve. En cuyo caso, se &quot;almacena en zona intermedia&quot; y solo se instala si sus requisitos (importaciones que faltan, en este caso) se satisfacen mediante la instalación de otro código.
+
+#### Implementación de la configuración relacionada con la canalización (configuraciones yaml) {#deploy-config-pipeline}
+
+Las configuraciones específicas del entorno (uno o más archivos yaml) descritas en el artículo [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md) se pueden implementar de la siguiente manera:
+
+`aio aem:rde:install -t env-config ./my-config-folder`
+donde my-config-folder es la carpeta principal que contiene las configuraciones de yaml.
+
+También es posible instalar un archivo zip que contenga el árbol de carpetas de configuración:
+
+`aio aem:rde:install -t env-config config.zip`
+
+Tenga en cuenta que la matriz envTypes del archivo yaml debe incluir el valor *red*, como en el ejemplo siguiente:
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["rde"]
+```
 
 ### Implementación de código front-end basado en temas de sitio y plantillas de sitio {#deploying-themes-to-rde}
 
