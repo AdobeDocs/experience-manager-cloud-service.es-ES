@@ -4,7 +4,7 @@ description: Obtenga más información sobre el flujo de datos de entrega de con
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 feature: Dispatcher
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: d58055cd0ed2451b5e8063fbb4e7269885d0787c
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 87%
@@ -34,6 +34,5 @@ De forma predeterminada, el tipo de contenido HTML/texto está configurado para 
 Las siguientes secciones proporcionan detalles sobre la distribución de contenido:
 * [Configuración de la CDN](/help/implementing/dispatcher/cdn.md)
 * [Almacenamiento en caché](/help/implementing/dispatcher/caching.md)
-
 
 Para obtener información acerca de la replicación del servicio de autor al servicio de publicación, vea [Replicación](/help/operations/replication.md).
