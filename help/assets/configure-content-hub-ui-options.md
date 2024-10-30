@@ -2,10 +2,10 @@
 title: Configuración de la interfaz de usuario de Content Hub
 description: Configuración de la interfaz de usuario de Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: b74067002a676a4d206dac170022ce0ec6d223de
+source-git-commit: 76337282b7d3008864763541a957c44327e1a5be
 workflow-type: tm+mt
-source-wordcount: '1822'
-ht-degree: 12%
+source-wordcount: '1526'
+ht-degree: 15%
 
 ---
 
@@ -146,18 +146,14 @@ Las propiedades activadas en la interfaz de usuario de configuración se muestra
 
 ### Tarjeta de recursos {#asset-card}
 
-En la interfaz de usuario de Content Hub, la vista de nivel de recurso muestra la **tarjeta de recurso** de los recursos aprobados. La tarjeta de recursos muestra los detalles clave del recurso para los usuarios. La tarjeta de recursos tiene miniaturas de recursos, metadatos de recursos y otras opciones procesables. Los administradores de Content Hub agregan los campos de metadatos en el nivel de repositorio para mostrar el nombre de los metadatos y su valor en la tarjeta de recursos de todos los recursos a la vez. La tarjeta de recursos acepta seis campos de metadatos. El campo de metadatos incluye el nombre de los metadatos y la propiedad de metadatos. La tarjeta de recursos muestra los metadatos y su valor. El administrador especifica el nombre de los metadatos y los asigna a la propiedad de metadatos correcta. La propiedad metadata representa un valor de metadatos en la tarjeta de recursos. La propiedad de metadatos está vinculada a las propiedades del recurso, por lo que el valor de los metadatos representados varía en todas las tarjetas de recursos. Por ejemplo, los administradores agregan metadatos **Con licencia** en la tarjeta de recursos y asignan estos metadatos de **Con licencia** a la propiedad de metadatos correcta. Las tarjetas de recursos de la interfaz de usuario de Content Hub muestran estos metadatos de **Con licencia** y su valor de metadatos (**Sí** o **No**). En este ejemplo, Assets con una licencia muestra **Sí** en la tarjeta de recursos, mientras que los recursos sin licencia muestran **NO**.
+También puede configurar los campos de metadatos clave que necesita mostrar en la **tarjeta de recursos** hasta un máximo de 6 campos. Para ello, ejecute los siguientes pasos:
 
-![Propiedades del recurso en Content Hub](/help/assets/assets/metadata-on-asset-card.png)
-
-#### Agregar, editar o eliminar metadatos en tarjeta de recursos {#add-edit-delete-metadata}
-
-Para agregar metadatos a un recurso, consulte las instrucciones siguientes:
+![metadatos de clave en la tarjeta de recursos](/help/assets/assets/asset-card-key-metadata.png)
 
 1. En la interfaz de usuario de [Configuraciones](#access-configuration-options-content-hub), haga clic en **Tarjeta de recursos**.
 2. Haga clic en **Agregar metadatos**. Se muestra el cuadro de diálogo **Agregar metadatos de tarjeta de recursos**.
-3. Especifique el nombre de los metadatos en el campo **Etiqueta** y seleccione una propiedad de metadatos en el campo **Metadatos**. Por ejemplo, asigne un nombre a los metadatos **Con licencia** y seleccione **dc:licencia** como propiedad de metadatos. La propiedad de metadatos seleccionada está asignada a un valor que se muestra con los metadatos en la interfaz de usuario de Content Hub. En este ejemplo, la propiedad **dc:license** está asignada al identificador de licencia. Esta propiedad sigue la ruta del recurso especificado (licencia de PDF) para localizar el recurso correspondiente y, en consecuencia, representa un valor booleano (**Sí** o **No**) en la interfaz de usuario en función de la presencia del recurso. Si se encuentra el PDF de licencias, se mostrará **Sí**. Si no, muestra **No**. Por lo tanto, en la interfaz de usuario de Content Hub, los recursos con un ID de licencia muestran **Sí**, mientras que los recursos sin un ID de licencia muestran **No**.
-4. Haga clic en **Confirmar** y, a continuación, en **Guardar** para aplicar los cambios y que la nueva propiedad se muestre en la página de detalles del recurso.
+3. Especifique el nombre de los metadatos en el campo **Etiqueta** y seleccione una propiedad de metadatos en el campo **Metadatos**.
+4. Haga clic en **Confirmar** y, a continuación, haga clic en **Guardar** para aplicar los cambios y que la nueva propiedad se muestre en la página de detalles del recurso.
    ![tarjeta de recursos](/help/assets/assets/asset-card.png)
 
 Del mismo modo, haga clic en ![editar](/help/assets/assets/edit-content-hub.svg), que está disponible junto a cada propiedad disponible, para realizar las modificaciones necesarias, o haga clic en ![eliminar](/help/assets/assets/delete-content-hub.svg) para eliminar cualquier propiedad de metadatos existente. Haga clic en **Guardar** después de realizar todas las modificaciones para aplicar los cambios.

@@ -3,10 +3,10 @@ title: Descarga de recursos desde Content Hub
 description: Obtenga información sobre cómo descargar recursos desde el portal de Content Hub
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 96b7b7fe32aefc81a9fde15d79e9089f71cb5d31
+source-git-commit: 76337282b7d3008864763541a957c44327e1a5be
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 4%
+source-wordcount: '526'
+ht-degree: 3%
 
 ---
 
@@ -22,20 +22,12 @@ Content Hub le permite descargar y compartir sus recursos. Estos recursos pueden
 
 Puede descargar un único recurso o varios mediante Content Hub. Se descargan las versiones originales del recurso.
 
-## Requisitos previos {#prerequisites}
-
-[Usuarios de Content Hub](deploy-content-hub.md#onboard-content-hub-users) pueden realizar las acciones mencionadas en este artículo.
-
-## Descargar recurso {#download-single-asset}
-
-[Apruebe la licencia del recurso](/help/assets/approve-assets-content-hub.md) antes de descargarlas.
-
-### Descarga única {#single-download-asset}
+## Descargar recurso con licencia única {#single-download-asset}
 
 Seleccione un recurso y haga clic en ![descargar](/help/assets/assets/download-icon.svg) en el carril superior. El cuadro de diálogo Descargar recurso muestra la licencia del recurso. Acepte los términos y condiciones de las licencias y haga clic en **Descargar**.
 También puede hacer clic en ![descargar](/help/assets/assets/download-icon.svg) en la tarjeta de recursos para descargar el recurso.
 
-#### Descarga de recurso único desde el cuadro de diálogo Recurso {#single-download-from-asset-dialog-box}
+### Descargar solo recurso con licencia del cuadro de diálogo Recurso {#single-download-from-asset-dialog-box}
 
 1. Haga clic en la miniatura del recurso. Se muestra el cuadro de diálogo Recurso.
 1. Haga clic en ![descargar](/help/assets/assets/download-icon.svg) en la barra de herramientas situada más a la derecha. El panel de descarga muestra las representaciones de recursos y la casilla de verificación de aceptación de los términos y condiciones de la licencia.
@@ -49,7 +41,7 @@ También puede hacer clic en ![descargar](/help/assets/assets/download-icon.svg)
    * Haga clic en **Cuadro de representación original** para volver a la representación del recurso original en el panel izquierdo.
 1. Acepte los términos y condiciones de la licencia (para el recurso con licencia) y haga clic en **Descargar** para descargar el recurso.
 
-### Descarga múltiple {#multi-download}
+## Descargar Assets con varias licencias{#multi-download}
 
 1. Seleccione los recursos y haga clic en ![descargar](/help/assets/assets/download-icon.svg) en el carril superior. El cuadro de diálogo que se muestra depende de si la lista de descarga incluye recursos caducados o solo recursos no caducados. <br/>
    **Descargar el cuadro de diálogo de recursos caducados:** Este cuadro de diálogo muestra la vista previa de los recursos caducados junto con su fecha de caducidad en el panel izquierdo. El recuento de recursos caducados del total seleccionado se muestra en el panel derecho. Haga clic en **Continuar con todos los recursos** para descargar los recursos caducados con otros recursos (si los hay). Aparece el cuadro de diálogo Descargar recursos. Consulte el [cuadro de diálogo Descargar recursos](#Download-asset-dialog-box) para continuar.
@@ -69,7 +61,7 @@ También puede hacer clic en ![descargar](/help/assets/assets/download-icon.svg)
 1. Acepte los términos y condiciones y, a continuación, haga clic en **Descargar** para descargar los recursos asociados con las licencias disponibles en el panel izquierdo.
    ![descargar-múltiples-licencias](/help/assets/assets/download-multiple-license.png)
 
-### Descargar recursos sin licencia {#download-non-licensed-assets}
+### Descargar Assets sin licencia {#download-non-licensed-assets}
 
 Para descargar recursos sin licencia, seleccione los recursos y haga clic en ![descargar](/help/assets/assets/download-icon.svg) en el carril superior.
 
