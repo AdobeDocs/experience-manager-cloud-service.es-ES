@@ -1,13 +1,13 @@
 ---
 title: Reenvío de registros para AEM as a Cloud Service
-description: Obtenga información acerca del reenvío de registros a Splunk y otros proveedores de registro en AEM as a Cloud Service
+description: Obtenga información acerca del reenvío de registros a proveedores de registro en AEM as a Cloud Service
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: af7e94a5727608cd480b2b32cd097d347abb23d3
+source-git-commit: f6de6b6636d171b6ab08fdf432249b52c2318c45
 workflow-type: tm+mt
-source-wordcount: '1663'
-ht-degree: 1%
+source-wordcount: '1781'
+ht-degree: 0%
 
 ---
 
@@ -15,17 +15,17 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Esta función aún no se ha lanzado y es posible que algunos destinos de registro no estén disponibles en el momento del lanzamiento. Mientras tanto, puede abrir un ticket de asistencia para reenviar registros a **Splunk**, tal como se describe en [Registro para AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md).
+>El reenvío de registros ahora se configura de forma de autoservicio, diferente del método heredado, que requería el envío de un ticket de asistencia de Adobe. Consulte la sección [Migración](#legacy-migration) si su reenvío de registro se configuró por Adobe.
 
-AEM Los clientes que tengan una licencia para un proveedor de registro o alojen un producto de registro pueden tener registros de registro (incluidos los registros de Apache/Dispatcher) y registros de CDN reenviados a los destinos de registro asociados. AEM as a Cloud Service admite los siguientes destinos de registro:
+AEM Los clientes con una licencia con un proveedor de registro o que alojen un producto de registro pueden tener registros de registro (incluidos los registros de Apache/Dispatcher) y registros de CDN reenviados al destino de registro asociado. AEM as a Cloud Service admite los siguientes destinos de registro:
 
 * Almacenamiento de Azure Blob
-* DataDog
+* Datadog
 * Elasticsearch o OpenSearch
 * HTTPS
 * Splunk
 
-El reenvío de registros se configura en modo de autoservicio declarando una configuración en Git e implementándola a través de la canalización de configuración de Cloud Manager para los tipos de entorno de desarrollo, fase y producción en programas de producción (que no sean de zona protegida).
+El reenvío de registros se configura en modo de autoservicio declarando una configuración en Git e implementándola a través de la canalización de configuración de Cloud Manager en los tipos de entorno de RDE, desarrollo, fase y producción en programas de producción (que no sean de zona protegida).
 
 AEM Hay una opción para que los registros de la y de Apache/Dispatcher AEM se enruten a través de infraestructuras de red avanzadas de la interfaz de usuario, como la IP de salida dedicada.
 
@@ -139,6 +139,8 @@ Esta es una captura de pantalla de un ejemplo de configuración de token SAS:
 
 ![Configuración del token SAS de Azure Blob](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
 
+Si los registros han dejado de entregarse después de funcionar correctamente anteriormente, compruebe si el token SAS que configuró sigue siendo válido, ya que puede haber caducado.
+
 #### Registros de CDN de almacenamiento de Azure Blob {#azureblob-cdn}
 
 Cada uno de los servidores de registro distribuidos globalmente producirá un nuevo archivo cada pocos segundos, en la carpeta `aemcdn`. Una vez creado, el archivo ya no se anexará a. El formato del nombre de archivo es AAAA-MM-DDThh:mm:ss.ss-uniqueid.log. Por ejemplo, 2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.
@@ -202,10 +204,12 @@ data:
 Consideraciones:
 
 * Cree una clave de API sin ninguna integración con un proveedor de nube específico.
-* la propiedad tags es opcional
+* La propiedad tags es opcional
 * AEM Para los registros de datos, la etiqueta de origen Datadog está establecida en `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess` o `aemhttpderror`
 * Para los registros de CDN, la etiqueta de origen Datadog está establecida en `aemcdn`
-* la etiqueta de servicio Datadog está establecida en `adobeaemcloud`, pero puede sobrescribirla en la sección de etiquetas
+* La etiqueta de servicio Datadog está establecida en `adobeaemcloud`, pero puede sobrescribirla en la sección de etiquetas
+* Si la canalización de ingesta utiliza etiquetas Datadog para determinar el índice adecuado para los registros de reenvío, compruebe que estas etiquetas estén correctamente configuradas en el archivo YAML de reenvío de registros. Las etiquetas que faltan pueden impedir la ingesta correcta del registro si la canalización depende de ellas.
+
 
 
 ### Elasticsearch y OpenSearch {#elastic}
@@ -307,6 +311,8 @@ Consideraciones:
 * El puerto predeterminado es 443. Opcionalmente, se puede sobrescribir con una propiedad denominada `port`.
 * El campo sourcetype tendrá uno de los siguientes valores, según el registro específico: *aemaccess*, *aemerror*,
   *aemrequest*, *aemdispatcher*, *aemhttpdaccess*, *aemhttpderror*, *aemcdn*
+* Si las IP requeridas se han incluido en la lista de permitidos y los registros siguen sin entregarse, compruebe que no haya reglas de firewall que apliquen la validación de tokens de Splunk. Realiza rápidamente un paso de validación inicial al enviar intencionadamente un token de Splunk no válido. Si el cortafuegos está configurado para finalizar conexiones con tokens de Splunk no válidos, el proceso de validación fallará, lo que impide que Fastly envíe registros a la instancia de Splunk.
+
 
 >[!NOTE]
 >

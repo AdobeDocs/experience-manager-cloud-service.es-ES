@@ -4,9 +4,9 @@ description: Aprenda a configurar funciones de redes avanzadas como una VPN o un
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 47d38589071bb7b51d43a2dbc65bbd169810f9ee
+source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
 workflow-type: tm+mt
-source-wordcount: '5657'
+source-wordcount: '5618'
 ht-degree: 99%
 
 ---
@@ -236,10 +236,6 @@ La configuración de la dirección IP de salida dedicada es idéntica a la [sali
 >
 >Una vez creada, no se pueden editar los tipos de infraestructura de direcciones IP de salida dedicadas. La única manera de cambiar los valores de configuración es eliminarlos y volver a crearlos.
 
->[!INFO]
->
->Si se configura una IP de salida dedicada, el reenvío de Splunk sigue utilizando los intervalos de salida dinámicos. El reenvío de Splunk no se puede configurar para usar una IP de salida dedicada.
-
 ### Configuración de la IU {#configuring-dedicated-egress-provision-ui}
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
@@ -411,7 +407,6 @@ La mayoría de los dispositivos VPN con tecnología IPSec son compatibles. Consu
 >Las siguientes limitaciones se aplican a una infraestructura de VPN:
 >
 >* La compatibilidad se limita a una única conexión VPN
->* La capacidad de reenvío de Splunk no es posible a través de una conexión VPN.
 >* Los solucionadores de DNS deben aparecer en el espacio de direcciones de puerta de enlace para resolver los nombres de host privados.
 
 ### Configuración de la IU {#configuring-vpn-ui}
