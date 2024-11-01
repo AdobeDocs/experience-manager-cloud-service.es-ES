@@ -3,17 +3,14 @@ title: Redirecciones de URL sin canalizaciones
 description: Aprenda a declarar redirecciones 301 o 302 sin acceso a canalizaciones Git o Cloud Manager.
 feature: Dispatcher
 role: Admin
-source-git-commit: 567c75f456f609dbc254753b439151d0f4100bc0
+source-git-commit: 4be9d99de2a8fbebc508419630ce254d2f9fd6dc
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
 
 # Redirecciones de URL sin canalizaciones {#pipeline-free-redirects}
-
->[!NOTE]
->Esta función aún no se ha lanzado.
 
 Por varios motivos, las organizaciones reescriben las direcciones URL de forma que provocan un redireccionamiento 301 (o 302), lo que significa que el explorador se redirige a una página diferente.
 
@@ -60,11 +57,11 @@ maps:
   path: /content/dam/redirectmaps/mysite-redirectmap.txt
 ```
 
-A continuación, en un archivo de configuración de apache como `rewrites/rewrite.rules` o `<yourfile>.vhost`, debe configurar el archivo de asignación al que hace referencia la propiedad name ( `my.map` en el ejemplo anterior).
+A continuación, en un archivo de configuración de Apache como `rewrites/rewrite.rules` o `<yourfile>.vhost`, debe configurar el archivo de asignación al que hace referencia la propiedad de nombre ( `my.map` en el ejemplo anterior).
 
 La directiva `RewriteMap` debe indicar que los datos están almacenados en un formato de archivo de administrador de base de datos (DBM) utilizando el formato `sdbm` (DBM simple).
 
-El resto de la configuración dependerá del formato de `redirectmap.txt`. El formato más sencillo, que se muestra en el ejemplo siguiente, es una asignación individual entre la dirección URL original y la asignada:
+El resto de la configuración depende del formato de `redirectmap.txt`. El formato más sencillo, que se muestra en el ejemplo siguiente, es una asignación individual entre la dirección URL original y la asignada:
 
 ```
 # RewriteMap from managed rewrite maps
@@ -78,6 +75,6 @@ RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 
 Tenga en cuenta lo siguiente:
 
-* De forma predeterminada, al cargar un mapa de reescritura, Apache se iniciará sin esperar a que se carguen los archivos de mapa completos y, por lo tanto, puede haber incoherencias temporales hasta que se carguen los mapas completos. Esta configuración se puede cambiar para que Apache espere a que se cargue todo el contenido del mapa, pero Apache tardará más en iniciarse. Para cambiar este comportamiento para que Apache espere, agregue `wait:true` al archivo `managed-rewrite-maps.yaml`.
-* Para cambiar la frecuencia entre cargas, agregue `ttl: <integer>` al archivo `managed-rewrite-maps.yaml`. Por ejemplo, `ttl: 120`.
+* De forma predeterminada, al cargar un mapa de reescritura, Apache se inicia sin esperar a que se carguen los archivos de mapa completos y, por lo tanto, puede haber incoherencias temporales hasta que se carguen los mapas completos. Esta configuración se puede cambiar para que Apache espere a que se cargue todo el contenido del mapa, pero Apache tardará más en iniciarse. Para cambiar este comportamiento para que Apache espere, agregue `wait:true` al archivo `managed-rewrite-maps.yaml`.
+* Para cambiar la frecuencia entre cargas, agregue `ttl: <integer>` al archivo `managed-rewrite-maps.yaml`. Por ejemplo: `ttl: 120`.
 * Apache tiene un límite de longitud de 1024 para las entradas únicas de RewriteMap.

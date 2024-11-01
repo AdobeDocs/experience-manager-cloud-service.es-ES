@@ -1,12 +1,12 @@
 ---
-title: Uso de canalizaciones de configuración
+title: Utilizando \s
 description: Descubra cómo puede utilizar las canalizaciones de configuración para implementar diferentes configuraciones en AEM as a Cloud Service, como la configuración de reenvío de registros, las tareas de mantenimiento relacionadas con la depuración y varias configuraciones de CDN.
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 2247fdd919057703f1c35145ba2bc9c6ec47250b
+source-git-commit: 4d8f6f37541c0d712019f21a5684ec4bd5133de3
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '997'
 ht-degree: 1%
 
 ---
@@ -43,10 +43,10 @@ La siguiente tabla ofrece una lista completa de estas configuraciones con víncu
 | [Páginas de error de CDN](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | AEM Anule la página de error predeterminada si no se puede alcanzar el origen de la, haciendo referencia a la ubicación del contenido estático autoalojado en el archivo de configuración |
 | [Purga de CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | Declare las claves API de depuración utilizadas para depurar la CDN |
 | [Token HTTP de CDN administrado por el cliente](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | AEM Declare el valor de la clave X--Edge necesaria para llamar a la CDN de Adobe desde una CDN de cliente |
-| [Autenticación básica](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Declare los nombres de usuario y contraseñas para un cuadro de diálogo de autenticación básico que proteja ciertas direcciones URL [ (solo disponible para los usuarios que las adoptaron por primera vez)](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter) |
+| [Autenticación básica](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Declare los nombres de usuario y contraseñas para un cuadro de diálogo de autenticación básico que proteja ciertas direcciones URL. |
 | [Tarea de mantenimiento de purga de versiones](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | AEM Optimice el repositorio de declarando reglas sobre cuándo se deben purgar las versiones de contenido |
 | [Tarea de mantenimiento de purga del registro de auditoría](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | AEM Optimizar el registro de auditoría de la para un mayor rendimiento declarando reglas sobre cuándo se deben purgar los registros |
-| [Reenvío de registros](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Aún no disponible: configure los puntos de conexión y las credenciales para reenviar registros a varios destinos (por ejemplo, Splunk, Datadog, HTTPS) |
+| [Reenvío de registros](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configure los extremos y las credenciales para reenviar registros a varios destinos, incluido Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk) |
 
 ## Creación y administración de canalizaciones de configuración {#creating-and-managing}
 
@@ -70,7 +70,7 @@ Cada archivo de configuración comienza con propiedades similares al siguiente f
 
 | Propiedad | Descripción | Predeterminado |
 |---|---|---|
-| `kind` | Una cadena que determina qué tipo de configuración, por ejemplo, reenvío de registros, reglas de filtro de tráfico o transformaciones de solicitud | Obligatorio, sin valor predeterminado |
+| `kind` | Una cadena que determina qué tipo de configuración, como reenvío de registros, reglas de filtro de tráfico o transformaciones de solicitud | Obligatorio, sin valor predeterminado |
 | `version` | Una cadena que representa la versión del esquema | Obligatorio, sin valor predeterminado |
 | `envTypes` | Esta matriz de cadenas es una propiedad secundaria del nodo `metadata`. Los valores posibles son dev, stage, prod o cualquier combinación, y determina para qué tipos de entorno se procesará la configuración. Por ejemplo, si la matriz solo incluye `dev`, la configuración no se cargará en entornos de ensayo o producción, aunque la configuración esté implementada allí. | Todos los tipos de entorno (dev, stage, prod) |
 

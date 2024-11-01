@@ -1,20 +1,18 @@
 ---
-title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: Notas de la versión 2024.9.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notas de la versión 2024.9.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 9b6cbe2d1a076b6c06fb3e9d55b79e124d4abc96
+source-git-commit: 0c4db1b70aa665e1802a316ece26db1e06f40b24
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 64%
+source-wordcount: '1324'
+ht-degree: 91%
 
 ---
 
-# Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notas de la versión 2024.9.0 para [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-En la siguiente sección se describen las notas de la versión de la funcionalidad actual (la más reciente) de [!DNL Experience Manager] as a Cloud Service.
+En la siguiente sección se describen las notas de la versión de funciones de la versión 2024.9.0 de [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -28,34 +26,32 @@ En la siguiente sección se describen las notas de la versión de la funcionalid
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de la versión de [!DNL Adobe Experience Manager] como versión de funcionalidad actual (2024.10.0) de [!DNL Cloud Service] es el viernes, 31 de octubre de 2024. La próxima versión de la funcionalidad (2024.11.0) está planificada para el viernes, 21 de noviembre de 2024.
+La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2024.9.0) fue el 26 de septiembre de 2024. La próxima versión con funcionalidades (2024.10.0) se planificó para el 31 de octubre de 2024.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
 Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help/release-notes/maintenance/latest.md).
 
-<!-- ## Release Video {#release-video}
+## Vídeo de la versión {#release-video}
 
-Have a look at the October 2024 Release Overview video for a summary of the features added in the 2024.10.0 release:
+Eche un vistazo al vídeo Información general sobre la versión de septiembre de 2024 para ver un resumen de las funciones añadidas en la versión 2024.9.0:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3434847?quality=12)
 
--->
-
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-**Eventos de página modernizada**
+### Nueva función de Experience Manager Sites {#new-feature-sites}
 
-Los siguientes eventos de página de AEM Sites ya están disponibles como eventos consumibles externos basados en AEM as a Cloud Service Eventing Platform. Los eventos se pueden procesar mediante un Adobe I/O para interactuar con procesos externos.
-* Página publicada
-* Página sin publicar
-* Página eliminada
+#### Administración de traducciones {#translation-management}
+
+Los flujos de trabajo de traducción de AEM y las acciones de API ahora activan ciertos eventos para proporcionar datos sobre los cambios de estado de los trabajos de traducción. Los usuarios pueden suscribirse a estos eventos a través de Adobe Developer Console. Consulte [aquí](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/) más información sobre la API de administración de traducciones de AEM.
 
 ### Programa para primeros usuarios {#sites-early-adopter}
 
 **Generar variaciones**
 
 Aproveche la GenAI mediante la nueva función de AEM, [generar variaciones](/help/generative-ai/generate-variations.md), accesible ahora en Cloud Service. Generar variaciones le ayuda a generar y escalar la creación de contenido mediante el uso de IA generativa. Póngase en contacto con el equipo de cuentas de Adobe para que lo considere en el programa.
+
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -67,33 +63,16 @@ Los subtítulos de vídeo generados por IA en Adobe Dynamic Media utilizan la in
 
 Para obtener acceso anticipado a la compatibilidad con subtítulos generados por IA en su cuenta de Dynamic Media, [cree y envíe un caso de asistencia al cliente de Adobe](/help/assets/dynamic-media/video.md##enable-dash).
 
-### Nuevas funcionalidades de la vista Recursos {#assets-view-new-features}
+### Nuevas funciones en el selector de recursos {#asset-selector-new-features}
 
-**Informes programados**
-
-Ahora los informes se pueden generar automáticamente en la vista de Assets con una programación recurrente o en una fecha futura, lo que reduce el esfuerzo por descubrir perspectivas basadas en datos.
-
-![Informes programados-](/help/assets/assets/scheduled-reports-tab.png)
+El selector de recursos ahora admite la exploración de las colecciones para encontrar el recurso deseado.
+![Colecciones del selector de recursos](/help/assets/assets/collections-rail-modal-view.png)
 
 ### Nuevas funciones en Content Hub {#content-hub-new-features}
 
-**Administración de derechos digitales para recursos con licencia**
-
-Las organizaciones ahora pueden aumentar el cumplimiento de las licencias y minimizar el riesgo de compartir recursos con términos de licencia aprovechando DRM para los recursos con licencia para los usuarios de Content Hub, lo que requiere que estos revisen y acepten los términos de licencia antes de poder iniciar la descarga de los recursos con licencia.
-
-![descargar-múltiples-licencias](/help/assets/assets/download-multiple-license.png)
-
-**Configuración de metadatos de tarjeta de recursos**
-
-Content Hub ahora le permite configurar los campos de metadatos clave que necesita mostrar en la tarjeta de recursos hasta un máximo de 6 campos.
-
-![metadatos de clave en la tarjeta de recursos](/help/assets/assets/asset-card-key-metadata.png)
-
-**Configurar la visibilidad y la descarga de recursos caducados**
-
 Los administradores ahora pueden controlar si necesitan que los activos caducados estén visibles en Content Hub. Si los activos caducados están visibles, también se puede definir si los usuarios pueden descargarlos.
 
-![Activos caducados en Content Hub](/help/assets/assets/expired-assets-content-hub.png)
+![Activos caducados en Content Hub](/help/assets/assets/view-download-expired-assets.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -102,6 +81,7 @@ Los administradores ahora pueden controlar si necesitan que los activos caducado
 #### Guardar automáticamente un borrador para los componentes principales basados en formularios adaptables
 
 Los usuarios ahora pueden beneficiarse de una función de guardado automático que, de manera automática, guarda como borrador un formulario parcialmente completado. Pueden volver más tarde para terminar de rellenarlo en el mismo dispositivo o en otro distinto. Esta función mejora las tasas de conversión para las organizaciones al reducir el abandono de formularios, ya que los usuarios no tienen que volver a empezar a rellenar el formulario desde el principio.
+
 
 ### Funciones de acceso rápido de AEM Forms {#forms-new-early-access-features}
 
@@ -133,34 +113,31 @@ Las funciones de IA generativa que se ofrecen son:
 
 ## Complemento CIF {#cloud-services-cif}
 
+### Mejoras {#improvements-fixes-cif}
+
+* Hacer personalizable el límite de categorías.
+
 ### Corrección de errores {#bug-fixes-cif}
 
-* CIF Se han corregido las pruebas de interfaz de usuario para que funcionen correctamente con los componentes principales de.
-* Se ha resuelto un problema con el formato de URL de categoría que no funcionaba como se esperaba en la instancia de nube.
+* Los campos de Commerce no se integran correctamente con el editor de esquemas de metadatos de Assets.
+* Problema con campos múltiples de productos del carrusel para arrastrar y soltar.
+* Problema con campos múltiples de categorías del carrusel para arrastrar y soltar.
+* Al hacer clic no funciona para los menús de la información de página en la página del editor de categorías y productos.
+* El número de pedido no está visible en la página de confirmación de pedido.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Reenvío de registros de autoservicio con opción de red avanzada {#log-forwarding}
+### Edge Side Includes (ESI) para cargar contenido dinámico {#esi}
 
-AEM Aunque los registros de (incluidos los de Apache/Dispatcher) y CDN se pueden descargar desde Cloud Manager, muchas organizaciones consideran beneficioso transmitir esos registros a un destino de registro preferido. AEM Ahora admite [reenvío de registro](/help/implementing/developing/introduction/log-forwarding.md) a Azure Blob Storage, Datadog, HTTPS, Elasticsearch (y OpenSearch) y Splunk. AEM De forma opcional, los registros se pueden reenviar a través de configuraciones de red avanzadas, como el uso de una dirección IP dedicada.
+La CDN administrada por Adobe es ahora compatible con [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md), un lenguaje de marcado para el ensamblado de contenido web dinámico a nivel de Edge. Al incluir fragmentos de ESI, puede almacenar en caché la página del HTML general en la CDN con TTL más altos, mientras que con mayor frecuencia se recuperan del origen las secciones más pequeñas que requieren actualizaciones de mayor cadencia (TTL menores). Esta función se implementará gradualmente.
 
-Los usuarios configuran esta característica en forma de autoservicio e implementan usando la [Canalización de configuración](/help/operations/config-pipeline.md).
+### Autenticación básica en CDN {#basicauth-cdn}
 
-### Redirecciones de URL sin canalizaciones para usuarios empresariales {#pipeline-free-redirects}
+Proteja determinados recursos de contenido mostrando un cuadro de diálogo de autenticación básica que requiera un nombre de usuario y una contraseña. Esta función se dirige principalmente a casos de uso de autenticación ligera, como el de las partes interesadas empresariales que revisan el contenido, en lugar de servir como solución completa para los derechos de acceso de usuarios finales. La lista de nombre de usuario y contraseñas se administra mediante un archivo de configuración en Git que se implementa mediante la canalización de configuración, con una referencia a variables de entorno de Cloud Manager de tipo secreto. [Más información](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
-Las redirecciones del lado del explorador son útiles cuando una página web se ha eliminado o se ha movido, u otros escenarios. AEM Con [Redirecciones de URL sin canalizaciones](/help/implementing/dispatcher/pipeline-free-url-redirects.md), puede colocar un archivo de mapa de reescritura de Apache en una ubicación de publicación de la, donde se carga automáticamente, sin necesidad de enviar el archivo al control de código fuente ni iniciar una canalización de Cloud Manager.
+### Redirecciones del lado del cliente {#client-side-redirects}
 
-Las opciones para publicar el archivo de reescritura incluyen cargarlo como un recurso, usar el Administrador de mapas de reescritura de ACS Commons o interactuar con una interfaz de usuario personalizada.
-
-### Configurar canalización para RDE {#config-pipeline-rdes}
-
-Los entornos de desarrollo rápido son una potente herramienta para implementar y probar rápidamente el código y la configuración en un entorno de nube. Los RDE ahora admiten la [sincronización de archivos YAML de configuración](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline), incluida la configuración de CDN, como las reglas de filtro de tráfico y las transformaciones de solicitud/respuesta, así como el reenvío de registros y otras opciones de configuración. [Consulte la lista completa](/help/operations/config-pipeline.md) de opciones de configuración admitidas para obtener más información.
-
-### Nuevos perfiles de producto {#new-product-profiles}
-
-AEM Cuando se crea un nuevo entorno de, los perfiles de producto aparecen automáticamente en Adobe Admin Console, lo que permite a los administradores asignar acceso a las soluciones y funciones con licencia.
-
-Los nuevos entornos ahora incluyen un conjunto actualizado de perfiles de producto, lo que los hace compatibles con las funciones futuras, incluida la generación de credenciales de API en Adobe Developer Console. Los entornos existentes podrán actualizar sus perfiles de producto en una versión futura. [Más información](/help/onboarding/aem-cs-team-product-profiles.md).
+Declare [redirecciones de explorador](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) en un archivo de configuración Git que se implementan y evalúan en la CDN. Esto puede resultar útil para escenarios como eliminar páginas, cambiar la estructura del sitio y optimizar la SEO.
 
 ### Nuevo AEM Developer Console (Beta pública) {#aem-developer-console-beta}
 
@@ -169,6 +146,14 @@ Pruebe la [AEM Developer Console](/help/implementing/developing/introduction/aem
 Cualquiera puede acceder a la versión beta pública haciendo clic en el botón *Nueva consola disponible* en la versión actual de AEM Developer Console. Adobe agradece los comentarios, que puede enviar por correo electrónico a **<aemcs-new-devconsole-ui-beta@adobe.com>**.
 
 ![Pantalla de paquetes OSGi en AEM Developer Console](/help/implementing/developing/introduction/assets/osgi-bundles.png)
+
+### Los usuarios empresariales pueden declarar redirecciones fuera de Git (programa para primeros usuarios) {#apache-rewritemaps-early-adopter}
+
+De forma similar a la versión AEM 6.5, Apache/Dispatcher introducirá mapas de reescritura colocados en una ubicación específica del repositorio de publicación y los cargará sin requerir la ejecución de una canalización de niveles web. Este método permite a los usuarios empresariales declarar redirecciones mediante una hoja de cálculo o una interfaz de usuario, como el administrador de mapas de redirección de ACS Commons o una aplicación personalizada. Únase al programa para primeros usuarios enviando un correo electrónico a **<aemcs-cdn-config-adopter@adobe.com>**.
+
+### Canalización de configuración para RDE (programa para primeros usuarios) {#config-pipeline-rdes-early-adopter}
+
+La [Canalización de configuración](/help/operations/config-pipeline.md) se usa para implementar configuraciones de archivo yaml, incluidas las opciones de CDN (reglas de filtro de tráfico, transformaciones de solicitud/respuesta, etc.). Únase al programa para primeros usuarios enviando un correo electrónico a **<aemcs-cdn-config-adopter@adobe.com>** y poder implementar estas mismas configuraciones en RDE (entornos de desarrollo rápido), que utilizan CLI.
 
 ## Guías de [!DNL Experience Manager] {#guides}
 
