@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: 8f3ceb5ebf348b5f3f496b1db04d7dd7c9a0ac5c
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 34%
+source-wordcount: '906'
+ht-degree: 25%
 
 ---
 
@@ -19,22 +19,22 @@ Cloud Manager proporciona un tablero para facilitar la visualización de las aut
 
 >[!IMPORTANT]
 >
->El panel de licencias solo se aplica a los programas de AEM as a Cloud Service. [Los programas de AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) no se incluyen en el panel de licencias.
+>El tablero de licencias solo se aplica a los programas de AEM as a Cloud Service. [Los programas de AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) no se incluyen en el panel de licencias.
 >
 >Para determinar el tipo de servicio que tiene su programa (AMS o AEMaaCS), consulte [Navegación por la interfaz de usuario de Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 
 ## Información general {#overview}
 
-El Tablero de licencias de Cloud Manager proporciona fácil acceso a las autorizaciones de la solución disponibles en todos sus programas, incluidos los que se utilizan y los que están disponibles. Además, las métricas de consumo de solicitud de contenido marcaron la tendencia por mes para la solución Sites.
+El panel de licencias de Cloud Manager proporciona un acceso fácil a las autorizaciones de la solución disponibles en todos sus programas, incluidos los que se utilizan y los que están disponibles. Además, las métricas de consumo de solicitud de contenido marcaron la tendencia por mes para la solución Sites.
 
 ## Acceso al tablero de licencias {#using-dashboard}
 
 >[!NOTE]
 >
->Un usuario con el rol **Propietario del negocio** debe iniciar sesión para ver el tablero de licencias.
+>Un usuario con el rol **Propietario del negocio** debe iniciar sesión para ver el panel de licencias.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
-1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, haga clic en https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg en el [encabezado de Cloud Manager](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). Esta acción revela las pestañas.
+1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, haga clic en ![Mostrar icono de menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) en el [encabezado de Cloud Manager](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). Esta acción revela las pestañas.
 1. Haga clic en la opción **Licencia** en la pestaña.
 
 ![Tablero de licencias](assets/license-dashboard.png)
@@ -49,9 +49,9 @@ Cada sección resume lo que está disponible y cómo se utiliza, si es que lo es
 
 * La columna **Estado** muestra el número de derechos no utilizados en comparación con el total disponible para el inquilino.
 * La columna **Configurado en** indica los programas en los que se ha aplicado la asignación de derechos de solución.
-   * Una asignación de derechos se considera utilizada solo cuando se ha creado un entorno de producción o, si existe, si se ha ejecutado una canalización de actualización en él.
+   * Una asignación de derechos se considera utilizada solo cuando se crea un entorno de producción. O, si existe, si se ha ejecutado una canalización de actualización en ella.
    * En la columna solo se enumera un número limitado de programas por separado; el resto se representa mediante una entrada `+x`.
-   * Pase el ratón sobre la entrada `+x` para ver una ventana emergente con los detalles de todos los programas.
+   * Pase el ratón sobre la entrada `+x` para ver una ventana emergente con detalles de todos los programas.
 * La columna **Uso** muestra un botón **[Ver detalles de uso](#view-usage-details)** para mostrar las estadísticas de uso de la solución.
 
 >[!TIP]
@@ -100,11 +100,9 @@ The right side of the window presents an area chart showing the usage broken dow
 
 ## Preguntas frecuentes {#faq}
 
-+++
++++**¿Qué es una solicitud de contenido?** {#what-is-a-content-request}
 
-### ¿Qué es una solicitud de contenido? {#what-is-a-content-request}
-
-Una solicitud de contenido es una solicitud que llega a AEM Sites o a cualquier sistema de almacenamiento en caché proporcionado por el cliente, como una red de entrega de contenido, para entregar contenido o datos en formato de HTML, como una vista de página, o en formato JSON, como una llamada de la API.
+Una solicitud de contenido es cualquier solicitud dirigida a AEM Sites o a un sistema de almacenamiento en caché proporcionado por el cliente, como una red de entrega de contenido. Recupera contenido o datos en formato de HTML para vistas de página. O bien, en formato JSON para llamadas a la API.
 
 Se cuenta una solicitud de contenido por cada vista de página o por cada cinco llamadas a la API, se miden a la entrada del primer sistema de almacenamiento en la memoria caché que recibe una solicitud de contenido. Las solicitudes de contenido se cuentan únicamente en los entornos de producción.
 
@@ -113,9 +111,7 @@ Las solicitudes de contenido excluyen las solicitudes o actividades iniciadas po
 Consulte también [Comprender las solicitudes de contenido de Cloud Service](/help/implementing/cloud-manager/content-requests.md).
 +++
 
-+++
-
-### ¿Cómo mide Adobe Experience Manager las solicitudes de contenido? {#how-are-content-requests-measured}
++++**¿Cómo mide Adobe Experience Manager las solicitudes de contenido?** {#how-are-content-requests-measured}
 
 Las solicitudes de contenido se rastrean en los servidores Edge de AEM as a Cloud Service. El tráfico de origen no se cuenta para las solicitudes de contenido. La red de distribución de contenido (CDN) integrada en AEM as a Cloud Service rastrea solicitudes de HTML y JSON válidas.
 
@@ -124,24 +120,18 @@ AEM también dispone de reglas para excluir bots conocidos, incluidos servicios 
 Consulte también [Explicación de las solicitudes de contenido de Cloud Service](/help/implementing/cloud-manager/content-requests.md).
 +++
 
-+++
-
-### ¿Por qué en mi informe de Analytics se muestran resultados diferentes a los de las solicitudes de contenido de AEM? {#why-are-reports-different}
++++AEM **¿Por qué en mi informe de Analytics se muestran resultados diferentes a los de las solicitudes de contenido de la?** {#why-are-reports-different}
 
 Las solicitudes de contenido pueden tener variaciones con las herramientas de informes de Analytics de una organización. Para obtener más información, consulte [Explicación de las solicitudes de contenido de Cloud Service](/help/implementing/cloud-manager/content-requests.md).
 +++
 
++++**¿Qué sucede si quisiera obtener más información acerca de mi volumen de solicitud de contenido?** {#current-request-volumes}
+
+Si desea obtener información adicional sobre el volumen de solicitud de contenido que se muestra en el panel de licencias, su equipo de Adobe puede proporcionarle un informe que muestre los controladores de mayor volumen de las solicitudes de contenido. Póngase en contacto con el equipo de Adobe o con Asistencia al cliente de Adobe para solicitar un informe de uso superior.
 +++
 
-### ¿Qué sucede si quisiera obtener más información sobre mi volumen de solicitudes de contenido? {#current-request-volumes}
++++**¿Qué sucede si utilizo mi propia CDN?** {#using-own-cdn}
 
-Si desea obtener información adicional sobre el volumen de solicitud de contenido que se muestra en el Tablero de licencias, su equipo de Adobe puede proporcionarle un informe que muestre los controladores de mayor volumen de las solicitudes de contenido. Póngase en contacto con el equipo de Adobe o con Asistencia al cliente de Adobe para solicitar un informe de uso superior.
-+++
-
-+++
-
-### ¿Qué sucede si utilizo mi propia CDN? {#using-own-cdn}
-
-El Tablero de licencias solo muestra los datos rastreados por la CDN del Cloud Service. Si opta por traer su propia CDN (BYOCDN), informará de su volumen de solicitud de contenido a los Adobes anualmente, tal y como se indica en su contrato.
+El panel de licencias solo muestra datos rastreados por la CDN del Cloud Service. Si opta por traer su propia CDN (BYOCDN), informará de su volumen de solicitud de contenido a los Adobes anualmente, tal y como se indica en su contrato.
 +++
 
