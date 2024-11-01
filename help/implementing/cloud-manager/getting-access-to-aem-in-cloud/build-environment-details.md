@@ -1,14 +1,14 @@
 ---
-title: Entorno de compilación
+title: Entorno de compilación de Cloud Manager
 description: Obtenga información sobre el entorno de compilación de Cloud Manager y cómo crea y prueba su código.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
+source-git-commit: f5f7830ac6d7f5b65203b12bb1775e64379c7d14
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 77%
+source-wordcount: '776'
+ht-degree: 58%
 
 ---
 
@@ -33,7 +33,7 @@ Cloud Manager crea y prueba su código mediante un entorno de compilación espec
    * `imagemagick`
    * `graphicsmagick`
 * Se pueden instalar otros paquetes en el momento de la compilación, tal como se describe en la sección [Instalación de paquetes de sistema adicionales](#installing-additional-system-packages).
-* Cada compilación se realiza en un entorno prístino; el contenedor de compilación no mantiene ningún estado entre ejecuciones.
+* Cada compilación se ejecuta en un entorno limpio, y el contenedor de compilación no mantiene ningún estado entre ejecuciones.
 * Maven siempre se ejecuta con los tres comandos siguientes.
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
@@ -52,23 +52,21 @@ Como resultado de esta mejora de seguridad, algunas personas pueden tener proble
 
 Para garantizar una experiencia sin problemas con la versión actualizada, Adobe recomienda actualizar los repositorios de Maven para que utilicen HTTPS en lugar de HTTP. Este ajuste se ha llevado a cabo para adaptarse a la adopción creciente de la industria de protocolos de comunicación seguros y ayuda a mantener un proceso de compilación seguro y fiable.
 
-### Uso de una versión de Java específica {#using-java-support}
+### Utilizar una versión de Java específica {#using-java-support}
 
-De forma predeterminada, los proyectos se crean mediante el proceso de compilación de Cloud Manager con el JDK de Oracle 8, pero se aconseja a los clientes de AEM Cloud Service que establezcan la versión del JDK utilizado para ejecutar Maven en `11`.
+El proceso de generación de Cloud Manager utiliza el JDK de Oracle 8 para generar proyectos de forma predeterminada, pero los clientes de AEM Cloud Service deben establecer la versión del JDK de ejecución de Maven en `11`.
 
-#### Configuración de la versión del JDK de Maven {#alternate-maven-jdk-version}
+#### Establezca la versión de Maven JDK {#alternate-maven-jdk-version}
 
-Se recomienda establecer la versión del JDK para toda la ejecución de Maven en `11` en un archivo `.cloudmanager/java-version`.
+El Adobe recomienda establecer la versión del JDK para toda la ejecución de Maven en `11` en un archivo de `.cloudmanager/java-version`.
 
 Para ello, cree un archivo con el nombre `.cloudmanager/java-version` en la rama del repositorio de Git utilizada por la canalización. Edite el archivo de modo que contenga únicamente el texto `11`. Aunque Cloud Manager también acepta un valor de `8`, esta versión ya no es compatible con los proyectos de AEM Cloud Service. Se ignora cualquier otro valor. Cuando se especifica `11`, se usa el Oracle 11 y la variable de entorno `JAVA_HOME` se establece en `/usr/lib/jvm/jdk-11.0.22`.
 
-## Variables de entorno {#environment-variables}
-
-### Variables de entorno estándar {#standard-environ-variables}
+## Variables de entorno: estándar {#environment-variables}
 
 Es posible que necesite variar el proceso de compilación en función de la información sobre el programa o la canalización.
 
-Por ejemplo, si la minificación de JavaScript en tiempo de compilación se realiza a través de una herramienta como gulp, puede haber un deseo de usar un nivel de minificación diferente al crear para un entorno de desarrollo en lugar de construir para ensayo y producción.
+Por ejemplo, si la minificación de JavaScript se produce en el momento de la compilación con una herramienta como gulp, se pueden preferir diferentes niveles de minificación para varios entornos. Una compilación de desarrollo podría utilizar un nivel de minificación más ligero en comparación con el ensayo y la producción.
 
 Para admitir esto, Cloud Manager agrega estas variables de entorno estándar al contenedor de compilación para cada ejecución.
 
@@ -83,15 +81,15 @@ Para admitir esto, Cloud Manager agrega estas variables de entorno estándar al 
 | `ARTIFACTS_VERSION` | Para una fase o canalización de producción, la versión sintética generada por Cloud Manager |
 | `CM_AEM_PRODUCT_VERSION` | La versión |
 
-### Variables de canalización {#pipeline-variables}
+## Variables de entorno: canalización {#pipeline-variables}
 
-El proceso de compilación puede depender de variables de configuración específicas que no deberían colocarse en el repositorio de Git o puede que necesite variarlas entre ejecuciones de canalización que usen la misma rama.
+El proceso de compilación puede requerir variables de configuración específicas que no deben almacenarse en el repositorio de Git. Además, es posible que tenga que ajustar estas variables entre ejecuciones de canalización que utilicen la misma rama.
 
-Consulte también [Configurar variables de canalización](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) para obtener más información
+Consulte también [Configurar variables de canalización](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) para obtener más información.
 
 ## Instalación de paquetes de sistema adicionales {#installing-additional-system-packages}
 
-Algunas compilaciones requieren que se instalen paquetes de sistema adicionales para funcionar completamente. Por ejemplo, una compilación puede invocar un script de Python o Ruby y debe tener instalado un intérprete de idioma adecuado. Esto se puede hacer llamando a la función [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) en su `pom.xml` para invocar APT. Esta ejecución debe envolverse generalmente en un perfil Maven específico de Cloud Manager. En este ejemplo se instala Python.
+Algunas compilaciones requieren paquetes de sistema adicionales para funcionar completamente. Por ejemplo, una compilación puede invocar un script de Python o Ruby y debe tener instalado un intérprete de idioma adecuado. Este proceso de instalación se puede administrar llamando a [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) en su `pom.xml` para invocar APT. Esta ejecución debe envolverse generalmente en un perfil Maven específico de Cloud Manager. En este ejemplo se instala Python.
 
 ```xml
         <profile>
