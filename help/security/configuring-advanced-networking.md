@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
 workflow-type: tm+mt
 source-wordcount: '5618'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -558,7 +558,7 @@ La siguiente tabla describe el enrutamiento de tráfico.
 
 ### Dominios útiles para la configuración {#vpn-useful-domains-for-configuration}
 
-La siguiente tabla describe un conjunto de dominios e IP que son útiles para la configuración y el desarrollo.
+La tabla siguiente describe un conjunto de dominios e IP que son útiles para la configuración y el desarrollo.
 
 <table>
 <thead>
