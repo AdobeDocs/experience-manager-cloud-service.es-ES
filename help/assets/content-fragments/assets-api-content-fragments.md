@@ -4,9 +4,9 @@ description: Obtenga información acerca de la compatibilidad con fragmentos de 
 feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 7386298ee83eef5693ce00077659bbc4a1a70d24
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1829'
 ht-degree: 14%
 
 ---
@@ -23,6 +23,8 @@ ht-degree: 14%
 Obtenga información acerca de la compatibilidad con fragmentos de contenido en la API HTTP de Assets, una parte importante de la función de entrega sin encabezado de Adobe Experience Manager AEM ().
 
 >[!NOTE]
+>
+>AEM Consulte [API de para la administración y entrega de contenido estructurado](/help/headless/apis-headless-and-content-fragments.md) para obtener una descripción general de las diversas API disponibles y una comparación de algunos de los conceptos involucrados.
 >
 >Las [OpenAPI de fragmento de contenido y modelo de fragmento de contenidos](/help/headless/content-fragment-openapis.md) también están disponibles.
 
@@ -41,7 +43,7 @@ Obtenga información acerca de la compatibilidad con fragmentos de contenido en 
 
 La [API de REST de Assets](/help/assets/mac-api-assets.md) permite a los desarrolladores que Adobe Experience Manager as a Cloud Service AEM accedan al contenido (almacenado en el archivo de comandos) directamente a través de la API HTTP, mediante las operaciones CRUD (Crear, Leer, Actualizar, Eliminar).
 
-La API le permite utilizar Adobe Experience Manager as a Cloud Service como un CMS (sistema de administración de contenido) sin encabezado proporcionando servicios de contenido a una aplicación front-end de JavaScript. O cualquier otra aplicación que pueda ejecutar solicitudes HTTP y gestionar respuestas JSON.
+La API le permite utilizar Adobe Experience Manager as a Cloud Service como CMS sin encabezado (sistema de administración de contenido) proporcionando servicios de contenido a una aplicación front-end de JavaScript. O cualquier otra aplicación que pueda ejecutar solicitudes HTTP y gestionar respuestas JSON.
 
 SPA Por ejemplo, [Aplicaciones de una sola página ()](/help/implementing/developing/hybrid/introduction.md), basadas en un marco de trabajo o personalizadas, requieren contenido proporcionado a través de la API HTTP, a menudo en formato JSON.
 

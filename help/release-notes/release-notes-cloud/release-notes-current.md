@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 9b6cbe2d1a076b6c06fb3e9d55b79e124d4abc96
+source-git-commit: d98aa9d206486022d465ca19c8888088562d56c3
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 64%
+source-wordcount: '1395'
+ht-degree: 63%
 
 ---
 
@@ -56,6 +56,10 @@ Los siguientes eventos de página de AEM Sites ya están disponibles como evento
 **Generar variaciones**
 
 Aproveche la GenAI mediante la nueva función de AEM, [generar variaciones](/help/generative-ai/generate-variations.md), accesible ahora en Cloud Service. Generar variaciones le ayuda a generar y escalar la creación de contenido mediante el uso de IA generativa. Póngase en contacto con el equipo de cuentas de Adobe para que lo considere en el programa.
+
+AEM **REST OpenAPI para la entrega de fragmentos de contenido**
+
+AEM La API abierta de [REST para la entrega de fragmentos de contenido](/help/headless/aem-rest-openapi-content-fragment-delivery.md), ya está disponible para AEM as a Cloud Service.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

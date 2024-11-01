@@ -4,9 +4,9 @@ description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 32803bc4304e55ccf0a618236e482cb42aa88e27
+source-git-commit: 575b626447f6b88c1be601fbbd4de7eeb0264019
 workflow-type: tm+mt
-source-wordcount: '5557'
+source-wordcount: '5582'
 ht-degree: 78%
 
 ---
@@ -30,6 +30,10 @@ El uso de la API de GraphQL en AEM permite la entrega eficiente de fragmentos de
 >
 >* [AEM Commerce consume datos de una plataforma de Commerce a través de GraphQL](/help/commerce-cloud/integrating/magento.md).
 >* Los fragmentos de contenido de AEM trabajan junto con la API de GraphQL de AEM (una implementación personalizada, basada en GraphQL estándar) para ofrecer contenido estructurado para su uso en aplicaciones.
+
+>[!NOTE]
+>
+>AEM Consulte [API de para la administración y entrega de contenido estructurado](/help/headless/apis-headless-and-content-fragments.md) para obtener una descripción general de las diversas API disponibles y una comparación de algunos de los conceptos involucrados.
 
 >[!NOTE]
 >

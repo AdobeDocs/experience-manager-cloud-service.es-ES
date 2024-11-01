@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 92392d3d57b40a423acc3e813e96ffb6f791ba4c
+source-git-commit: 0e7c58b2a4d0f0704f8693c0dddae0b1a033ec83
 workflow-type: tm+mt
-source-wordcount: '5714'
+source-wordcount: '5729'
 ht-degree: 99%
 
 ---
@@ -1021,6 +1021,7 @@ ht-degree: 99%
          + [Editor de Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=es)
       + [Árbol de estructura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=es)
       + [Vista previa de JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=es)
+   + [AEM API de para la entrega y administración de contenido estructurado](/help/headless/apis-headless-and-content-fragments.md)
    + API de GraphQL {#graphql-api}
       + [API de GraphQL para fragmentos de contenido](/help/headless/graphql-api/content-fragments.md)
       + [Administración de puntos de conexión de GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
@@ -1030,6 +1031,7 @@ ht-degree: 99%
       + [Actualización de los fragmentos de contenido para el filtrado optimizado de GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [Ejemplos de consultas de GraphQL](/help/headless/graphql-api/sample-queries.md)
       + [Resolución de problemas de consultas de GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
+   + [AEM API abierta de REST para la entrega de fragmentos de contenido](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
    + [OpenAPI de fragmentos de contenido y modelos](/help/headless/content-fragment-openapis.md)
    + [Compatibilidad con fragmentos de contenido en la API HTTP de Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=es)
    + Seguridad {#security}

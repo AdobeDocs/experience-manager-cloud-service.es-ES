@@ -5,10 +5,10 @@ landing-page-description: Obtenga información sobre cómo usar y administrar Si
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 feature: Headless
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 7386298ee83eef5693ce00077659bbc4a1a70d24
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 97%
+source-wordcount: '701'
+ht-degree: 94%
 
 ---
 
@@ -46,8 +46,8 @@ AEM as a Cloud Service es una herramienta flexible para el modelo de implementac
    * Los fragmentos de contenido los crean los autores de contenido mediante el editor de fragmentos de contenido de AEM.
    * Los fragmentos de contenido se almacenan como Recursos AEM, pero se pueden administrar mediante la consola Recursos o la [consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
 1. **API de contenido para entrega**
-   * La API de GraphQL de AEM es compatible con la entrega de fragmentos de contenido.
-   * La API de REST de AEM Assets es compatible con las operaciones de CRUD de fragmento de contenido.
+   * AEM Consulte [API de para la administración y entrega de contenido estructurado](/help/headless/apis-headless-and-content-fragments.md) para obtener una descripción general de las diversas API disponibles y una comparación de algunos de los conceptos involucrados.
+
    * La entrega de contenido directa también es posible con la [Exportación JSON del componente principal del fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es).
 
 ## Sus primeros pasos {#first-steps}
