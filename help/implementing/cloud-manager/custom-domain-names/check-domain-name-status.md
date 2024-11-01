@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 22%
+source-wordcount: '846'
+ht-degree: 20%
 
 ---
 
@@ -80,7 +80,7 @@ El error se corrige de la siguiente manera:
 
 >[!TIP]
 >
->La solución de los problemas de delegación de dominios con Fastly suele tardar entre 1 y 2 días hábiles. Por este motivo, es muy recomendable instalar los dominios mucho antes de la fecha de lanzamiento.
+>La solución de los problemas de delegación de dominios con Fastly suele tardar entre 1 y 2 días hábiles. Por este motivo, se recomienda instalar los dominios mucho antes de la fecha de lanzamiento.
 
 >[!NOTE]
 >
