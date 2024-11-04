@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: a5159f2ff49b8e216087df4206c14a9ccd89f336
+source-git-commit: 08b23f093e4362a9885919a3e3d87bdcaada8876
 workflow-type: tm+mt
-source-wordcount: '1395'
-ht-degree: 63%
+source-wordcount: '1480'
+ht-degree: 59%
 
 ---
 
@@ -143,6 +143,19 @@ Las funciones de IA generativa que se ofrecen son:
 * Se ha resuelto un problema con el formato de URL de categoría que no funcionaba como se esperaba en la instancia de nube.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+
+### Configuración para controlar los envíos de formularios {#configuration-submissions}
+
+AEM Para controlar los envíos de formularios de Coral o Foundation en ubicaciones específicas, ha introducido una nueva configuración: `com.adobe.granite.ui.components.FormRestrict`. Esta configuración consta de dos campos:
+
+1. **Agregar rutas permitidas**: Especifica las rutas en las que se permiten las acciones de formulario.
+1. **Restringir comportamiento**: Determina el comportamiento de las rutas restringidas (rutas no incluidas en la lista de permitidos). Puede elegir entre dos opciones:
+   * **Emergente** (predeterminado): muestra una notificación emergente.
+   * **Impedir**:Bloquea el envío de formularios.
+
+>[!NOTE]
+>
+>Esta configuración no es compatible con todos los formularios de Coral o Foundation ubicados en `/apps`, `/libs`, `/mnt/overlay` y `/mnt/override`.
 
 ### Reenvío de registros de autoservicio con opción de red avanzada {#log-forwarding}
 
