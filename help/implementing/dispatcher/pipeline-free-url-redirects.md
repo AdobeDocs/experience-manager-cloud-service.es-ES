@@ -3,10 +3,10 @@ title: Redirecciones de URL sin canalizaciones
 description: Aprenda a declarar redirecciones 301 o 302 sin acceso a canalizaciones Git o Cloud Manager.
 feature: Dispatcher
 role: Admin
-source-git-commit: 4be9d99de2a8fbebc508419630ce254d2f9fd6dc
+source-git-commit: 36b7d72f24bd60ad94762c9c9937105bea6e31b6
 workflow-type: tm+mt
 source-wordcount: '644'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -57,7 +57,7 @@ maps:
   path: /content/dam/redirectmaps/mysite-redirectmap.txt
 ```
 
-A continuación, en un archivo de configuración de Apache como `rewrites/rewrite.rules` o `<yourfile>.vhost`, debe configurar el archivo de asignación al que hace referencia la propiedad de nombre ( `my.map` en el ejemplo anterior).
+A continuación, en un archivo de configuración de Apache como `rewrites/rewrite.rules` o `<yourfile>.vhost`, debe configurar el archivo de asignación al que hace referencia la propiedad de nombre (`my.map` en el ejemplo anterior).
 
 La directiva `RewriteMap` debe indicar que los datos están almacenados en un formato de archivo de administrador de base de datos (DBM) utilizando el formato `sdbm` (DBM simple).
 
