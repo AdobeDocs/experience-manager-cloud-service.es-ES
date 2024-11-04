@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 08b23f093e4362a9885919a3e3d87bdcaada8876
+source-git-commit: 9bb2d38feea2690bc112611d429dad22e7bcd278
 workflow-type: tm+mt
-source-wordcount: '1480'
-ht-degree: 59%
+source-wordcount: '1514'
+ht-degree: 57%
 
 ---
 
@@ -83,19 +83,19 @@ Ahora los informes se pueden generar automáticamente en la vista de Assets con 
 
 **Administración de derechos digitales para recursos con licencia**
 
-Las organizaciones ahora pueden aumentar el cumplimiento de las licencias y minimizar el riesgo de compartir recursos con términos de licencia aprovechando DRM para los recursos con licencia para los usuarios de Content Hub, lo que requiere que estos revisen y acepten los términos de licencia antes de poder iniciar la descarga de los recursos con licencia.
+Las organizaciones ahora pueden aumentar el cumplimiento de las licencias y minimizar el riesgo de compartir recursos con términos de licencia aprovechando DRM para los recursos con licencia para los usuarios de Content Hub, lo que requiere que estos revisen y acepten los términos de licencia antes de poder iniciar la descarga de los recursos con licencia. Para obtener más información, consulte [Administrar recursos con licencia en Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 ![descargar-múltiples-licencias](/help/assets/assets/download-multiple-license.png)
 
 **Configuración de metadatos de tarjeta de recursos**
 
-Content Hub ahora le permite configurar los campos de metadatos clave que necesita mostrar en la tarjeta de recursos hasta un máximo de 6 campos.
+Content Hub ahora le permite configurar los campos de metadatos clave que necesita mostrar en la tarjeta de recursos hasta un máximo de 6 campos. Para obtener más información, consulte la sección Tarjeta de recursos en [Configurar Content Hub](/help/assets/configure-content-hub-ui-options.md#asset-card).
 
 ![metadatos de clave en la tarjeta de recursos](/help/assets/assets/asset-card-key-metadata.png)
 
 **Configurar la visibilidad y la descarga de recursos caducados**
 
-Los administradores ahora pueden controlar si necesitan que los activos caducados estén visibles en Content Hub. Si los activos caducados están visibles, también se puede definir si los usuarios pueden descargarlos.
+Los administradores ahora pueden controlar si necesitan que los activos caducados estén visibles en Content Hub. Si los recursos caducados se hacen visibles, también pueden definir si los usuarios pueden descargarlos. Para obtener más información, consulte la sección Assets caducado en [Configuración de Content Hub](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub).
 
 ![Activos caducados en Content Hub](/help/assets/assets/expired-assets-content-hub.png)
 
