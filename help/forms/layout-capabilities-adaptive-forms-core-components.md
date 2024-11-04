@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 keywords: AEM Diseño de un formulario adaptable basado en componentes principales, diferentes diseños para formularios, diseños de formularios dinámicos, diseños de formularios de AEM Cloud Service AEM, tipos de diseños de formulario en componentes principales, diseños de formularios adaptables, diseños de formularios adaptables, etc., y diseños de formularios adaptables, entre otros.
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 3ab7ff01201a7da790fe556bfe68c8c76aff9698
+source-git-commit: 7cb963794ca0d7a12d8007564c9fd6e49b53d5c4
 workflow-type: tm+mt
-source-wordcount: '2107'
+source-wordcount: '2104'
 ht-degree: 3%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 Adaptive Forms proporciona componentes de primera clase para diseñar y diseñar los formularios de forma eficaz. El diseño controla cómo se muestran los componentes en un formulario. Los Forms adaptables admiten varios diseños: panel, asistente, acordeón, pestañas en la parte superior/horizontal y pestañas en la parte izquierda/vertical.
 
-![Tipos de diseño](/help/forms/assets/generic-layout-hero-image.png){align="center"}
+<!-- ![Types of Layout](/help/forms/assets/generic-layout-hero-image.png){align="center"}-->
 
 ## Requisito previo
 
