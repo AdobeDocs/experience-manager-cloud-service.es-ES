@@ -1,8 +1,8 @@
 ---
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: d761370dcf6530bf557de6f8a0e7b6e111eb9e35
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 97%
+source-wordcount: '1260'
+ht-degree: 95%
 
 ---
 # Fragmentos de código {#snippets}
@@ -111,6 +111,12 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
    <td>La opción <b>Definir valor de</b> no admite la propiedad <b>Salida de servicio</b> para invocar las API en el Editor de reglas.
    </td>
    </tr>
+   <tr>
+   <td>Desplazamiento entre los paneles</td>
+   <td> Los componentes <b>Botón siguiente</b> y <b>Botón anterior</b> se proporcionan para desplazarse entre los paneles. Un botón de navegación colocado dentro del contenedor funciona en sus elementos secundarios</td>
+   <td> La regla <b>Navegación en el panel</b> está disponible en el editor de reglas, lo que permite a los usuarios crear reglas para navegar entre los elementos secundarios de los paneles.
+   </td>
+   </tr>
    </tr>
    </tr>
   </tbody>
@@ -126,6 +132,7 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 * [Diferencia en varias ediciones del editor de reglas](/help/forms/rule-editor-core-components-difference-tables.md)
 * [Introducción a las funciones personalizadas para formularios adaptables basados en componentes principales](/help/forms/create-and-use-custom-functions.md)
 * [Crear una función personalizada para un formulario adaptable basado en componentes principales](/help/forms/custom-function-core-component-create-function.md)
+* [Objeto Scope en funciones personalizadas](/help/forms/custom-function-core-component-scope-function.md)
 * [Ejemplos de desarrollo y uso de funciones personalizadas](/help/forms/custom-function-core-components-use-cases.md)
 
 
@@ -162,7 +169,7 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 >
 >[El editor universal](/help/implementing/universal-editor/introduction.md) no es compatible con las listas de IP permitidas.
 >
->Si desea utilizar el editor universal, las listas de permitidos IP no deben estar habilitadas.
+>Si desea utilizar el editor universal, las listas de IP permitidas no deben estar habilitadas.
 
 ## Editor universal y Listas de IP permitidas {#ue-ip-allow-lists}
 
@@ -170,7 +177,7 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 >
 >El editor universal no es compatible con las [listas de IP permitidas.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 >
->Si desea utilizar el editor universal, las Listas de permitidos IP no deben estar habilitadas.
+>Si desea utilizar el editor universal, las listas de IP permitidas no deben estar habilitadas.
 
 ## Trabajar con Dynamic Media {#work-with-dynamic-media}
 
@@ -197,7 +204,7 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 >* Ofrezca una [experiencia interactiva con tecnología 3D](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
 >* Otro [banco de recursos de Dynamic Media](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
 
-## Registrar un ticket de asistencia {#support-ticket}
+## Registro de un vale de asistencia {#support-ticket}
 
 Si un problema del producto requiere una investigación y resolución de problemas adicionales y debe cumplir los SLT de respuesta, puede enviar un vale de asistencia.
 

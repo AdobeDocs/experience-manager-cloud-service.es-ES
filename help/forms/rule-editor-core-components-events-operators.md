@@ -4,13 +4,13 @@ description: El editor de reglas de Forms adaptable admite varios tipos de opera
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 780c68f0c21ef94ff6a73ce991370100b1a88db9
+exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
+source-git-commit: f6e1de0c2cc2c056b3bfcea6ce5d7aaed041f6f8
 workflow-type: tm+mt
-source-wordcount: '1921'
-ht-degree: 53%
+source-wordcount: '2106'
+ht-degree: 50%
 
 ---
-
 
 # Tipos de operadores y eventos en el editor de reglas de un formulario adaptable basado en componentes principales
 
@@ -309,6 +309,50 @@ Una regla Validar típica se estructura de la siguiente manera:
 >Si el valor especificado no cumple la regla Validar, puede mostrar un mensaje de validación al usuario. Puede especificar la notificación en el **[!UICONTROL mensaje de validación del script]** en las propiedades del componente, en la barra lateral.
 
 ![Script-validation](assets/script-validation.png)
+
+#### [!UICONTROL Desplazarse entre los paneles]
+
+El tipo de regla **[!UICONTROL Desplazarse entre los paneles]** permite cambiar el enfoque entre los diferentes paneles de un formulario. Por ejemplo, puede crear una expresión para desplazar el enfoque al siguiente panel.
+
+Una regla típica de **navegar entre los paneles** para cambiar el enfoque al siguiente panel se estructura de la siguiente manera:
+
+`Navigate among the panels`
+
+`Shift focus to the next item Object A;`
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+Del mismo modo, puede escribir la regla **Desplazarse entre los paneles** para cambiar el enfoque al panel anterior:
+
+`Navigate among the panels`
+
+`Shift focus to the previous item Object A;`
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+Para obtener más información sobre cómo crear una regla para navegar en un panel, [haga clic aquí](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons).
+
+#### [!UICONTROL Llamada de función asincrónica]
+
+<span class="preview"> Esta es una función previa al lanzamiento y se puede acceder a ella a través de nuestro [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features). </span>
+
+El tipo de regla **[!UICONTROL Llamada de función asincrónica]** le permite ejecutar funciones asincrónicas. Permite iniciar una llamada a una función que funciona independientemente del subproceso de ejecución principal, lo que permite que otros procesos sigan ejecutándose sin esperar a que se complete la función asincrónica.
+
+Una regla de llamada de función asincrónica típica para ejecutar una función asincrónica se estructura de la siguiente manera:
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+`Async Function call`
+
+`[Callback Function];`
+
+Para obtener más información sobre cómo utilizar la llamada a la función asincrónica en el Editor de reglas visuales, consulte el artículo [Uso de llamadas a funciones asincrónicas en el editor de reglas](/help/forms/using-async-funct-in-rule-editor.md).
 
 <!--
 ### [!UICONTROL Set Options Of] {#setoptionsof}

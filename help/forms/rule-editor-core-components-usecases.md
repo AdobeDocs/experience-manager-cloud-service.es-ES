@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: 34be2ca89433e36a68e7d8eae42c6bd9ad6e623f
+source-git-commit: e5f22d925f9b9ec3a5f80f9506353e42e8879da3
 workflow-type: tm+mt
-source-wordcount: '1125'
-ht-degree: 58%
+source-wordcount: '1384'
+ht-degree: 47%
 
 ---
 
@@ -17,6 +17,26 @@ ht-degree: 58%
 El artículo proporciona ejemplos detallados del Editor de reglas para un formulario adaptable basado en componentes principales, y proporciona perspectivas sobre su implementación adecuada para diferentes escenarios. El editor de reglas permite a los desarrolladores definir y administrar la lógica que controla el comportamiento de los formularios.
 Ahora, analicemos las diferentes implementaciones de un editor de reglas.
 
+
+## Desplazamiento entre paneles mediante el botón
+
+El editor de reglas permite agregar botones de navegación a los diseños de panel, como pestañas horizontales, pestañas verticales, acordeones o asistente. Estos botones mejoran la experiencia del usuario al simplificar las transiciones entre los distintos paneles de un formulario, desplazando el enfoque al panel seleccionado.
+
+Imagine que está interactuando con la sección de configuración de perfil de una aplicación, donde la navegación se facilita mediante botones en lugar de pestañas. Al ingresar la configuración del perfil desde el panel principal, se encuentra con una serie de paneles dedicados a diferentes aspectos de su perfil: **Información personal**, **Seguridad de la cuenta** y **Preferencias de notificación**.
+
+Cada panel contiene campos y opciones relevantes para actualizar información específica. Los botones de navegación, como `Next` y `Back`, están colocados de forma destacada para permitirle moverse entre estos paneles. Haga clic en `Next` para avanzar al usuario al panel **Seguridad de la cuenta** y haga clic en `Back` para volver al panel **Información personal**. Este método de navegación garantiza una transición sin problemas entre secciones sin perder contexto, lo que proporciona una experiencia de usuario fluida e intuitiva. El uso de botones de navegación simplifica el proceso de administración de la configuración del perfil, lo que hace que la interacción sea más organizada y fácil de usar.
+
+Puede usar la regla `Navigate among the panels` para crear reglas de navegación para botones que permitan cambiar entre paneles diferentes.  Seleccione el atributo `Shift focus to the next item` para mover el enfoque al siguiente panel del diseño.
+
+![Regla del panel siguiente](/help/forms/assets/rule-editor-navigate-in-panel-next.png){width=50%}
+
+Cuando se hace clic en el botón `Next`, el enfoque se desplaza al panel siguiente del diseño.
+
+![Desplazarse por el panel utilizando el botón Siguiente](/help/forms/assets/navigate-in-panel.gif)
+
+Del mismo modo, puede crear una regla para el botón `Previous` para desplazar el enfoque al panel anterior.
+
+![Regla de panel anterior](/help/forms/assets/rule-editor-navigate-in-panel-previous.png){width=50%}
 
 ## Optimización de cálculos complejos en paneles repetibles con funciones
 

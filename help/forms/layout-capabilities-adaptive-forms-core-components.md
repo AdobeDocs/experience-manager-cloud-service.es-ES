@@ -4,13 +4,13 @@ description: El diseño y el aspecto visual de los formularios adaptables en dif
 feature: Adaptive Forms, Core Components
 keywords: AEM Diseño de un formulario adaptable basado en componentes principales, diferentes diseños para formularios, diseños de formularios dinámicos, diseños de formularios de AEM Cloud Service AEM, tipos de diseños de formulario en componentes principales, diseños de formularios adaptables, diseños de formularios adaptables, etc., y diseños de formularios adaptables, entre otros.
 role: User, Developer, Admin
-source-git-commit: 9f14950170cc92d1ab433fdaa1a5d68b4dc53484
+exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
+source-git-commit: 3ab7ff01201a7da790fe556bfe68c8c76aff9698
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 3%
 
 ---
-
 
 # Funciones de diseño de Forms adaptable basadas en componentes principales
 
@@ -261,7 +261,6 @@ Del mismo modo, también puede ocultar los títulos de los otros dos paneles. Un
    ![Componentes del tercer panel](/help/forms/assets/panel-3-component.png)
 
 1. Haga clic en **[!UICONTROL Vista previa]** en la esquina superior derecha del entorno de creación.
-
    ![Diseño horizontal](/help/forms/assets/horizontal-layout.gif)
 
 También puede [arrastrar y soltar los componentes](#extra-bytes) para agregar los componentes del formulario a cada panel.

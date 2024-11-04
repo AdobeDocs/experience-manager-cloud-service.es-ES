@@ -4,13 +4,13 @@ description: El artículo describe varios casos de uso para una función persona
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 580e206427f2205fa8ca537ab4988a90c988171b
+exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
 source-wordcount: '2108'
 ht-degree: 0%
 
 ---
-
 
 # Ejemplos de desarrollo y uso de funciones personalizadas
 
@@ -264,7 +264,7 @@ También puede inspeccionar la ventana de la consola para ver los datos enviados
 
 Vamos a aprender cómo las funciones personalizadas utilizan los objetos globales y de campo para anular los controladores de envío con la ayuda de un formulario `Contact Us`.
 
-Agregue la siguiente línea de código, tal como se explica en la sección [create-custom-function](/help/forms/custom-function-core-component-create-function.md), para personalizar el envío o el mensaje de error para los envíos de formularios y mostrar los mensajes de envío de formularios en un cuadro modal:
+Agregue la siguiente línea de código, tal como se explica en la sección [create-custom-functions](/help/forms/custom-function-core-component-create-function.md), para personalizar el envío o el mensaje de error para los envíos de formularios y mostrar los mensajes de envío de formularios en un cuadro modal:
 
 ```javascript
 /**
@@ -513,7 +513,7 @@ Consulte el archivo gif siguiente, que muestra que cuando se hace clic en el bot
 ![Eliminar panel](/help/forms/assets/custom-function-delete-panel.gif)
 
 
-## Resolución de problemas
+## Solución de problemas
 
 * AEM Si el controlador de envío personalizado no funciona como se espera en los formularios o proyectos existentes de la aplicación, realice los siguientes pasos:
    * Asegúrese de que la versión de los componentes principales [se haya actualizado a la versión 3.0.18 y posteriores](https://github.com/adobe/aem-core-forms-components). AEM Sin embargo, para los proyectos y formularios existentes de, hay que seguir algunos pasos adicionales:

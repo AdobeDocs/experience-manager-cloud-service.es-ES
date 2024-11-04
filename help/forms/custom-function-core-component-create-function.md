@@ -4,13 +4,13 @@ description: AEM Forms admite funciones personalizadas, que permiten a los usuar
 keywords: Agregar una función personalizada, utilizar una función personalizada, crear una función personalizada, utilizar una función personalizada en el editor de reglas.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: f5c17382052b4d116deaae564f1a2b9fdbb5ea0a
+exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 11%
+source-wordcount: '1340'
+ht-degree: 13%
 
 ---
-
 
 # Crear una función personalizada para un formulario adaptable basado en componentes principales
 
@@ -226,7 +226,7 @@ Vamos a previsualizar el formulario para observar cómo se implementan las funci
 
 >[!NOTE]
 >
-> Puede hacer referencia a la carpeta [función personalizada](/help/forms/assets//customfunctions.zip) siguiente. AEM Descargue e instale esta carpeta en su instancia de mediante el [Administrador de paquetes](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
+> Puede hacer referencia a la carpeta [función personalizada](/help/forms/assets//customfunctions.zip) siguiente. AEM Descargue e instale esta carpeta en su instancia de mediante el [Administrador de paquetes](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
 
 ## Características de las funciones personalizadas
 
@@ -238,49 +238,7 @@ Vamos a profundizar en las funciones personalizadas.
 
 ### Compatibilidad asíncrona en funciones personalizadas {#support-of-async-functions}
 
-Las funciones personalizadas asincrónicas no aparecen en la lista del editor de reglas. Sin embargo, es posible invocar funciones asincrónicas dentro de funciones personalizadas creadas mediante expresiones de función sincrónicas.
-
-![Función personalizada sincrónica y asincrónica](/help/forms/assets/workflow-for-sync-async-custom-fumction.png)
-
->[!NOTE]
->
-> La ventaja de llamar a funciones asincrónicas en funciones personalizadas es que las funciones asincrónicas permiten la ejecución simultánea de varias tareas, con el resultado de cada función utilizada dentro de las funciones personalizadas.
-
-Consulte el siguiente código para ver cómo se pueden invocar funciones asincrónicas mediante funciones personalizadas:
-
-```javascript
-    
-    async function asyncFunction() {
-    const response = await fetch('https://petstore.swagger.io/v2/store/inventory');
-    const data = await response.json();
-    return data;
-    }
-
-    /**
-    * callAsyncFunction
-    * @name callAsyncFunction callAsyncFunction
-    */
-    function callAsyncFunction() {
-    asyncFunction()
-        .then(responseData => {
-        console.log('Response data:', responseData);
-        })
-        .catch(error => {
-         console.error('Error:', error);
-    });
-}
-```
-
-En el ejemplo anterior, la función asyncFunction es un `asynchronous function`. Realiza una operación asincrónica realizando una solicitud `GET` a `https://petstore.swagger.io/v2/store/inventory`. Espera la respuesta con `await`, analiza el cuerpo de la respuesta como JSON con `response.json()` y, a continuación, devuelve los datos. La función `callAsyncFunction` es una función sincrónica personalizada que invoca la función `asyncFunction` y muestra los datos de respuesta en la consola. Aunque la función `callAsyncFunction` es sincrónica, llama a la función asyncFunction asincrónica y controla su resultado con instrucciones `then` y `catch`.
-
-Para ver cómo funciona, vamos a agregar un botón y crear una regla para el botón que invoca la función asincrónica al hacer clic en un botón.
-
-![creando regla para la función asincrónica](/help/forms/assets/rule-for-async-funct.png)
-
-Consulte la ilustración de la ventana de la consola siguiente para demostrar que cuando el usuario hace clic en el botón `Fetch`, se invoca la función personalizada `callAsyncFunction`, que a su vez llama a una función asincrónica `asyncFunction`. Inspect abre la ventana de la consola para ver la respuesta al botón y hacer clic en:
-
-![Ventana de consola](/help/forms/assets/async-custom-funct-console.png)
-
+Puede implementar funciones asincrónicas en el editor de reglas mediante funciones personalizadas. Para obtener instrucciones sobre cómo hacerlo, consulte el artículo [Uso de funciones asincrónicas en un formulario adaptable](/help/forms/using-async-funct-in-rule-editor.md).
 
 ### Compatibilidad con objetos de ámbito global y de campo en funciones personalizadas {#support-field-and-global-objects}
 
@@ -290,6 +248,8 @@ Los objetos de campo hacen referencia a los componentes o elementos individuales
 >
 > `param {scope} globals` debe ser el último parámetro y no se mostrará en el editor de reglas de un formulario adaptable.
 
+Para obtener más información sobre los objetos de ámbito, vea el artículo [Objetos de ámbito en funciones personalizadas](/help/forms/custom-function-core-component-scope-function.md).
+
 ### Compatibilidad con el almacenamiento en caché en función personalizada
 
 Los Forms adaptables implementan el almacenamiento en caché de funciones personalizadas para mejorar el tiempo de respuesta al recuperar la lista de funciones personalizadas en el editor de reglas. Aparece un mensaje como `Fetched following custom functions list from cache` en el archivo `error.log`.
@@ -298,7 +258,7 @@ Los Forms adaptables implementan el almacenamiento en caché de funciones person
 
 En caso de que se modifiquen las funciones personalizadas, el almacenamiento en caché se invalidará y se analizará.
 
-## Resolución de problemas
+## Solución de problemas
 
 * Si el archivo JavaScript que contiene código para funciones personalizadas tiene un error, las funciones personalizadas no aparecen en el editor de reglas de un formulario adaptable. Para comprobar la lista de funciones personalizadas, puede desplazarse al archivo `error.log` en busca del error. En caso de error, la lista de funciones personalizadas aparece vacía:
 
