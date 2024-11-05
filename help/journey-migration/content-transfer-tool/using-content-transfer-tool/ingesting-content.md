@@ -4,9 +4,9 @@ description: Aprenda a utilizar Cloud Acceleration Manager para introducir conte
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: ec80660d45c69363690b653dd54634c74c3c9907
+source-git-commit: 1add389e1bba181757229ca73252f1fcaa9d049a
 workflow-type: tm+mt
-source-wordcount: '3137'
+source-wordcount: '3187'
 ht-degree: 12%
 
 ---
@@ -52,6 +52,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración mediante C
    * **Borrar:** Elija el valor `Wipe`
       * La opción **Borrar** establece el punto de inicio de la ingesta en el destino. AEM Si **Borrar** está habilitado, el destino que incluye todo su contenido se restablecerá a la versión de que se especifica en Cloud Manager. Si no está habilitado, el destino mantiene su contenido actual como punto de partida.
       * Esta opción **NOT** afecta a la forma en que se realizará la ingesta de contenido. La ingesta siempre usa una estrategia de reemplazo de contenido y _no_ una estrategia de combinación de contenido, por lo que, en los casos de **borrado** y **sin borrado**, la ingesta de un conjunto de migración sobrescribirá el contenido en la misma ruta de acceso del destino. Por ejemplo, si el conjunto de migración contiene `/content/page1` y el destino ya contiene `/content/page1/product1`, la ingesta elimina toda la ruta de acceso de `page1` y sus subpáginas, incluida `product1`, y la reemplaza por el contenido del conjunto de migración. Esto significa que se debe realizar una planificación cuidadosa al realizar una ingesta de **Sin borrado** en un destino que contenga cualquier contenido que se deba mantener.
+      * Las ingestas sin borrado están diseñadas específicamente para el caso de uso de ingesta superior. Estas ingestas están pensadas para tener una cantidad incremental de contenido nuevo que ha cambiado desde la última ingesta en un conjunto de migración existente. La realización de ingestas sin borrado fuera de este caso de uso podría provocar tiempos de ingesta muy largos.
 
    >[!IMPORTANT]
    > Si el ajuste **Borrar** está habilitado para la ingesta, restablecerá todo el repositorio existente, incluidos los permisos de usuario en la instancia de Cloud Service de destino. Este restablecimiento también se aplica a un usuario administrador agregado al grupo de **administradores** y ese usuario debe agregarse de nuevo al grupo de administradores para iniciar una ingesta.
