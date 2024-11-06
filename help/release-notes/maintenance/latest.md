@@ -4,10 +4,10 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c638039ea957f5f7ae0dc64f49c3ace4381cb040
+source-git-commit: dc7f95ac98fd300a803e307ce11a51937d604a07
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 29%
+source-wordcount: '613'
+ht-degree: 32%
 
 ---
 
@@ -66,6 +66,10 @@ Ninguna.
 ### Características y API obsoletas {#deprecated-18459}
 
 Las funciones y API obsoletas y eliminadas de AEM as a Cloud Service se detallan en el documento [Funciones y API obsoletas y eliminadas](/help/release-notes/deprecated-removed-features.md).
+
+### Correcciones de seguridad {#security-18459}
+
+AEM as a Cloud Service se dedica a optimizar la seguridad y el rendimiento de su plataforma. Esta versión de mantenimiento aborda 21 vulnerabilidades identificadas, reforzando nuestro compromiso con una sólida protección del sistema.
 
 ### Tecnologías integradas {#embedded-tech-18459}
 
