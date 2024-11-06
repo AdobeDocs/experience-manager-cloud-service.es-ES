@@ -4,9 +4,9 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: dc7f95ac98fd300a803e307ce11a51937d604a07
+source-git-commit: 90e1ca38bd517215a631573987462a716bfed160
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '629'
 ht-degree: 32%
 
 ---
@@ -56,8 +56,11 @@ La activación de funcionalidades 2024.11.0 proporcionará el conjunto completo 
 * SITES-25456: Events: Al mover una página, se genera un evento eliminado por la página además del evento movido por la página.
 * SITES-25658: Events: el nivel y sourceUrl no se rellenan en los eventos de estado de contenido de la página.
 * SITES-6497: Lanzamientos: la página de creación del lanzamiento no funciona.
+* SITES-25938: Lanzamientos: eliminación inesperada después de traducir el proyecto.
 * SITES-25393: Edge Delivery con editor universal: nodos de texto que se pierden al procesar texto enriquecido con formato de párrafo único.
 * SITES-24643: Edge Delivery con el editor universal: los atributos de metadatos OpenGraph y twitter no funcionan en el modelo de metadatos de página.
+* SITES-25401: Fragmentos de experiencia: actualización de referencia de XF lenta
+
 
 ### Problemas conocidos {#known-issues-18459}
 
