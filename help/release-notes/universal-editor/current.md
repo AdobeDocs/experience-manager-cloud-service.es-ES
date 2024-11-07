@@ -1,20 +1,20 @@
 ---
-title: Notas de la versión de Universal Editor 2024.10.29
-description: Estas son las notas de la versión de la versión 2024.10.29 de Universal Editor.
+title: Notas de la versión de Universal Editor 2024.11.05
+description: Estas son las notas de la versión de la versión 2024.11.05 de Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 550a68ddaae9dee6ed56e238136595cb51d34b6c
+source-git-commit: 4bccfcb877c8b1a947b15935aa82ecb005e62213
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
 
 
-# Notas de la versión de Universal Editor 2024.10.29 {#release-notes}
+# Notas de la versión de Universal Editor 2024.11.05 {#release-notes}
 
-Estas son las notas de la versión del editor universal de 29 de octubre de 2024.
+Estas son las notas de la versión del 5 de noviembre de 2024 de Universal Editor.
 
 >[!TIP]
 >
@@ -22,16 +22,11 @@ Estas son las notas de la versión del editor universal de 29 de octubre de 2024
 
 ## Novedades de la aplicación {#what-is-new}
 
-* Ya está disponible el envío nativo de la biblioteca `universal-editor-cors` por el servicio de editor universal.
-* Se ha abordado la opción Publish to preview.
+* **Canalización de reversión para el servicio de editor universal:** Una canalización de reversión permite a los equipos de Adobe de guardia revertir rápidamente el servicio de editor universal a cualquier rama específica si es necesario, lo que garantiza una alta disponibilidad mediante una rápida recuperación en caso de problemas.
+* **Llamadas de API optimizadas para operaciones de contenido:** El servicio de editor universal ahora utiliza las API JSON en lugar de las API de HTML para crear, copiar y mover operaciones mediante SlingPostServlet, lo que optimiza el análisis de las respuestas.
 
 ## Programa de adopción anticipada para el soporte de 6.5 {#early-adoption}
 
 AEM El editor universal ya está disponible para casos de uso sin encabezado al utilizar la versión 6.5 de la aplicación como parte de un programa de adopción anticipada.
 
 Si está interesado en probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a su Adobe de Customer Success Manager desde la dirección de correo electrónico asociada a su Adobe ID.
-
-## Correcciones de errores {#bug-fixes}
-
-* Se ha eliminado el mecanismo del complemento remoto.
-* La versión ahora incluye el paquete CORS.
