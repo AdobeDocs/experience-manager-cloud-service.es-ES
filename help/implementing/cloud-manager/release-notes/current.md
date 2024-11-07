@@ -4,10 +4,10 @@ description: Obtenga información acerca del lanzamiento de Cloud Manager 2024.1
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: db661281831dcb07491dca16e73e835b487814a6
+source-git-commit: 87293526ca9c10a142bc1d1d3a35562b171da385
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 29%
+source-wordcount: '784'
+ht-degree: 30%
 
 ---
 
@@ -38,9 +38,9 @@ Participe en nuestro programa para primeros usuarios de Cloud Manager y tenga la
 
 ### AEM Página de inicio {#aem-home}
 
-AEM La página de inicio es un nuevo punto de partida centralizado para administrar el contenido, los recursos y los sitios en Adobe Experience Manager. AEM AEM Diseñado para proporcionar una experiencia personalizada, el Hogar de la aplicación ayuda a los usuarios a navegar sin problemas por el ecosistema en función de sus roles y objetivos. Está diseñado para servir de guía y ofrece perspectivas clave y acciones recomendadas para lograr los resultados deseados de forma eficaz. AEM AEM Al presentar una hoja de ruta clara y basada en el perfil del usuario, el Hogar de los usuarios garantiza que estos encuentren rápidamente lo que necesitan para lograr sus objetivos, lo que permite una experiencia más ágil y eficaz en todas las capacidades de la.
+AEM Inicio presenta un punto de partida centralizado para administrar contenido, recursos y sitios en Adobe Experience Manager. AEM AEM Diseñado para ofrecer una experiencia personalizada, el Hogar de la le permite navegar por el ecosistema de forma fluida según sus roles y objetivos. Como guía, proporciona perspectivas clave y acciones recomendadas para ayudarle a lograr sus objetivos de forma eficaz. AEM AEM Con un diseño claro y dirigido por el usuario, el hogar de la comunidad de usuarios garantiza un acceso rápido a las herramientas esenciales, lo que permite una experiencia ágil y eficaz en todas las funciones de la comunidad de usuarios de la red de área de trabajo de la comunidad de.
 
-AEM Disponible para los clientes que la adoptaron por primera vez, el Hogar de la ofrece una primera mirada a una experiencia mejorada que optimiza los flujos de trabajo, prioriza los objetivos e impulsa los resultados. AEM AEM Al optar por participar, tiene la oportunidad de dar forma al desarrollo de la página de inicio de la comunidad, proporcionando comentarios que influyen en su evolución para servir mejor a la comunidad de la.
+AEM Disponible para los primeros usuarios que lo adoptaron, el Hogar ofrece una experiencia optimizada centrada en mejorar los flujos de trabajo, priorizar los objetivos y ofrecer resultados. AEM AEM La inclusión le permite influir en el desarrollo de la página de inicio de la página de inicio al proporcionar comentarios que ayudan a dar forma a su futuro y mejorar su valor para toda la comunidad de la.
 
 Si está interesado en probar esta nueva funcionalidad y compartir sus comentarios, envíe un correo electrónico a [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID. Asegúrese de incluir la siguiente información:
 
