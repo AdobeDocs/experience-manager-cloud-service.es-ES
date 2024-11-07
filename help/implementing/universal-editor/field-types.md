@@ -1,10 +1,10 @@
 ---
 title: Definiciones del modelo, campos y tipos de componentes
-description: Obtenga información acerca de los campos y los tipos de componentes que el Editor universal puede editar en el carril de propiedades con ejemplos. Descubra cómo puede instrumentar su propia aplicación creando una definición de modelo y vinculándola al componente.
+description: Obtenga información acerca de los campos y los tipos de componentes que el Editor universal puede editar en el panel de propiedades con ejemplos. Descubra cómo puede instrumentar su propia aplicación creando una definición de modelo y vinculándola al componente.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 5153d18b6bb8934479a02cbaa5236acef7c80cd1
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 13%
@@ -14,11 +14,11 @@ ht-degree: 13%
 
 # Definiciones del modelo, campos y tipos de componentes {#field-types}
 
-Obtenga información acerca de los campos y los tipos de componentes que el Editor universal puede editar en el carril de propiedades con ejemplos. Descubra cómo puede instrumentar su propia aplicación creando una definición de modelo y vinculándola al componente.
+Obtenga información acerca de los campos y los tipos de componentes que el Editor universal puede editar en el panel de propiedades con ejemplos. Descubra cómo puede instrumentar su propia aplicación creando una definición de modelo y vinculándola al componente.
 
 ## Información general {#overview}
 
-Al adaptar sus propias aplicaciones para utilizarlas con el editor universal, debe instrumentar los componentes y definir qué campos y tipos de componentes pueden manipular en el carril de propiedades del editor. Para ello, cree un modelo y vincúlelo a él desde el componente.
+Al adaptar sus propias aplicaciones para utilizarlas con el editor universal, debe instrumentar los componentes y definir qué campos y tipos de componentes pueden manipular en el panel de propiedades del editor. Para ello, cree un modelo y vincúlelo a él desde el componente.
 
 Este documento proporciona información general sobre la definición de un modelo, los campos y los tipos de componentes disponibles, así como configuraciones de ejemplo.
 
@@ -28,7 +28,7 @@ Este documento proporciona información general sobre la definición de un model
 
 ## Estructura de definición de modelo {#model-structure}
 
-Para configurar un componente a través del carril de propiedades en el Editor universal, debe existir una definición de modelo y estar vinculada al componente.
+Para configurar un componente a través del panel de propiedades del Editor universal, debe existir una definición de modelo y vincularse al componente.
 
 La definición del modelo es una estructura JSON que comienza con una matriz de modelos.
 
@@ -36,7 +36,7 @@ La definición del modelo es una estructura JSON que comienza con una matriz de 
 [
   {
     "id": "model-id",        // must be unique
-    "fields": []             // array of fields which shall be rendered in the properties rail
+    "fields": []             // array of fields which shall be rendered in the properties panel
   }
 ]
 ```

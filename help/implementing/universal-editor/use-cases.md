@@ -4,7 +4,7 @@ description: Conozca los principales casos de uso del editor universal y cómo o
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2db4428065b3611a43137514864573947d32fff7
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Si desea obtener más información acerca de la arquitectura del editor universa
 Para que el editor universal pueda editar una página o aplicación, debe estar instrumentada correctamente.
 
 * [Atributos y tipos](/help/implementing/universal-editor/attributes-types.md): para que el editor universal pueda editar una aplicación o página, debe estar instrumentada correctamente. Esto incluye incluir los metadatos adecuados para que el editor pueda editar el contenido de la aplicación.
-* [Definiciones de modelo, campos y tipos de componente](/help/implementing/universal-editor/field-types.md): una vez que los metadatos están presentes para permitir la edición de un componente, debe definir qué campos y tipos de componente pueden manipular en el carril de propiedades del editor.
+* [Definiciones de modelo, campos y tipos de componente](/help/implementing/universal-editor/field-types.md): una vez que los metadatos estén presentes para habilitar la edición de un componente, defina qué campos y tipos de componente pueden manipular en el panel de propiedades del editor.
 * [Eventos del editor universal](/help/implementing/universal-editor/events.md): puede personalizar aún más la aplicación si mejora la experiencia de edición en la aplicación al consumir eventos que el editor universal emite en el contenido o en las interacciones de la interfaz de usuario.
 
 El editor universal también se puede adaptar a las necesidades de su proyecto.

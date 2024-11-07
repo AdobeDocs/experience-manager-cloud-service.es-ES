@@ -4,10 +4,10 @@ description: Obtenga información sobre la arquitectura del editor universal y c
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 83%
+ht-degree: 74%
 
 ---
 
@@ -36,7 +36,7 @@ Este documento describe cada uno de estos bloques de creación básicos y cómo 
 ### Editores {#editors}
 
 * **Editor universal**: el editor universal utiliza un DOM instrumentado para permitir la edición in situ del contenido. Consulte el documento [Atributos y tipos](attributes-types.md) para obtener más información sobre los metadatos necesarios. Consulte el documento [Introducción al editor universal en AEM](getting-started.md) para ver un ejemplo de la instrumentación en AEM.
-* **Carril de propiedades**: algunas propiedades de los componentes no se pueden editar en contexto; por ejemplo, el tiempo de rotación de un carrusel o qué pestaña de acordeón se debe abrir o cerrar siempre. Para permitir la edición de dicha información de componentes, se proporciona un editor basado en formularios en el carril lateral.
+* **Panel de propiedades**: algunas propiedades de los componentes no se pueden editar en contexto; por ejemplo, el tiempo de rotación de un carrusel o qué pestaña de acordeón se debe abrir o cerrar siempre. Para permitir la edición de esta información de componente, se proporciona un editor basado en formularios en el panel lateral del editor.
 
 ### Aplicación remota {#remote-app}
 
@@ -51,7 +51,7 @@ El editor universal se esfuerza por conseguir un SDK mínimo, por lo que la inst
 
 ### Capa de persistencia {#persistence-layer}
 
-* **Modelo de fragmento de contenido**: para admitir el carril para editar las propiedades del Fragmento de contenido, el editor de Fragmentos de contenido y los editores basados en formularios, se requieren modelos por componente y por fragmento de contenido.
+* **Modelo de fragmento de contenido**: para que el panel sea compatible con la edición de propiedades de fragmento de contenido, se requieren el Editor de fragmentos de contenido y los editores basados en formularios, modelos por componente y fragmento de contenido.
 * AEM **Contenido**: el contenido se puede almacenar en cualquier lugar, como en el sitio de trabajo, el Magento, el, etc.
 
 ![Capa de persistencia](assets/persistence-layer.png)

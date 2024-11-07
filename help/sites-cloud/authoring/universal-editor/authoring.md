@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1375'
 ht-degree: 22%
@@ -41,7 +41,7 @@ La edición de contenido es sencilla e intuitiva. Al pasar el ratón sobre el co
 >
 >De forma predeterminada, al tocar o hacer clic en el contenido, se selecciona para editarlo. Si desea navegar por el contenido mediante los siguientes vínculos, cambie al [modo de vista previa.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
-Según el contenido que seleccione, es posible que tenga diferentes opciones de edición in situ, así como información y opciones adicionales para el contenido en el carril [properties.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Según el contenido que seleccione, es posible que tenga diferentes opciones de edición in situ, así como información y opciones adicionales para el contenido en el panel [propiedades.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ### Edición de texto sin formato {#edit-plain-text}
 
@@ -51,11 +51,11 @@ Puede editar el texto en su lugar haciendo doble clic o pulsando dos veces el co
 
 El contorno azul delgado se convierte en un contorno azul grueso para indicar que se ha seleccionado y aparece un cursor. Realice los cambios y, a continuación, pulse intro/retorno o seleccione fuera del cuadro de texto para guardar los cambios.
 
-Al seleccionar el componente de texto, sus detalles se muestran en el carril de propiedades [.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) También puede editar el texto en el carril.
+Al seleccionar el componente de texto, sus detalles se muestran en el panel de propiedades [.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) También puede editar el texto en el panel.
 
-![Edición de texto en el carril de propiedades](assets/ue-editing-text-component-rail.png)
+![Edición de texto en el panel de propiedades](assets/ue-editing-text-component-rail.png)
 
-Además, los detalles del texto están disponibles en el carril de propiedades. Los cambios se guardan automáticamente una vez que el enfoque abandona el campo editado en el carril de propiedades.
+Además, los detalles del texto están disponibles en el panel de propiedades. Los cambios se guardan automáticamente una vez que el enfoque abandona el campo editado en el panel de propiedades.
 
 ### Edición de texto enriquecido {#edit-rich-text}
 
@@ -73,9 +73,9 @@ El menú contextual se abre encima del bloque de texto enriquecido y ofrece opci
 
 Los cambios se guardan automáticamente una vez que el enfoque abandona el campo editado.
 
-#### El carril Propiedades {#properties-rail}
+#### El panel Propiedades {#properties-rail}
 
-El [carril de propiedades](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) muestra un elemento para el texto seleccionado. Pulse la entrada para abrir un cuadro de diálogo que presente un lienzo más grande para editar el texto.
+El [panel de propiedades](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) muestra un elemento para el texto seleccionado. Pulse la entrada para abrir un cuadro de diálogo que presente un lienzo más grande para editar el texto.
 
 ![Cuadro de diálogo de edición de texto enriquecido](assets/rich-text-canvas.png)
 
@@ -83,30 +83,30 @@ Pulse o haga clic en **Cancelar** o **Listo** para descartar o guardar los cambi
 
 ### Edición de medios {#edit-media}
 
-Puede ver sus detalles en el carril [properties.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Puede ver sus detalles en el panel [propiedades.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Editando medios](assets/ue-edit-media.png)
 
-1. Toque o haga clic en la previsualización de la imagen seleccionada en el carril de propiedades.
+1. Toque o haga clic en la previsualización de la imagen seleccionada en el panel de propiedades.
 1. Se abre la ventana [selector de recursos](/help/assets/overview-asset-selector.md#using-asset-selector) para que pueda seleccionar un recurso.
 1. Seleccione para seleccionar un nuevo recurso.
-1. Seleccione **Select** para volver al carril de propiedades en el que se reemplazó el recurso.
+1. Seleccione **Select** para volver al panel de propiedades donde se reemplazó el recurso.
 
 Los cambios se guardan automáticamente en el contenido.
 
 ### Edición de fragmentos de contenido {#edit-content-fragment}
 
-Si selecciona un [fragmento de contenido,](/help/sites-cloud/administering/content-fragments/overview.md) podrá editar sus detalles en el carril [propiedades.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Si selecciona un [fragmento de contenido,](/help/sites-cloud/administering/content-fragments/overview.md) podrá editar sus detalles en el panel [propiedades.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Edición de un fragmento de contenido](assets/ue-edit-cf.png)
 
-Los campos definidos en el modelo de contenido del fragmento de contenido seleccionado se muestran y pueden editarse en el carril de propiedades.
+Los campos definidos en el modelo de contenido del fragmento de contenido seleccionado se muestran y pueden editarse en el panel de propiedades.
 
-Si selecciona un campo relacionado con un fragmento de contenido, el fragmento de contenido se carga en el carril de componentes y el campo se desplaza automáticamente a.
+Si selecciona un campo relacionado con un fragmento de contenido, el fragmento de contenido se carga en el panel Componentes y el campo se desplaza automáticamente a.
 
-Los cambios se guardan automáticamente una vez que el enfoque abandona el campo editado en el carril de propiedades.
+Los cambios se guardan automáticamente una vez que el enfoque abandona el campo editado en el panel de propiedades.
 
-Si en su lugar desea editar el fragmento de contenido en [editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md), toque o haga clic en el botón [**Abrir en editor CF**](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) del carril de propiedades.
+Si en su lugar desea editar el fragmento de contenido en [editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md), toque o haga clic en el botón [**Abrir en editor CF**](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) del panel de propiedades.
 
 >[!TIP]
 >
@@ -123,7 +123,7 @@ Según las necesidades del flujo de trabajo, es posible que desee editar el frag
 ### Adición de componentes a contenedores {#adding-components}
 
 1. Seleccione un componente contenedor en el [árbol de contenido](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) o en el editor.
-1. A continuación, seleccione el icono de añadir en el carril de propiedades.
+1. A continuación, seleccione el icono de añadir en el panel de propiedades.
 
    ![Seleccionar un componente para agregarlo a un contenedor](assets/ue-add-component.png)
 
@@ -136,7 +136,7 @@ El componente se inserta en el contenedor y se puede editar en el editor.
 ### Duplicación de componentes en contenedores {#duplicating-components}
 
 1. Seleccione un componente de un contenedor mediante [el árbol de contenido](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) o el editor.
-1. A continuación, seleccione el icono **Duplicate** en el carril de propiedades.
+1. A continuación, seleccione el icono **Duplicate** en el panel de propiedades.
 
    ![Seleccionar un componente para agregarlo a un contenedor](assets/ue-duplicate-component.png)
 1. El componente se duplica y se inserta debajo del componente seleccionado.
@@ -148,7 +148,7 @@ El componente se inserta en el contenedor y se puede editar en el editor.
 1. Seleccione un componente contenedor en el [árbol de contenido](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) o en el editor.
 1. Seleccione el icono de cheurón del contenedor para expandir su contenido en el árbol de contenido.
 1. A continuación, en el árbol de contenido, seleccione un componente dentro del contenedor.
-1. Seleccione el icono Eliminar en el carril de propiedades.
+1. Seleccione el icono Eliminar en el panel de propiedades.
 
    ![Eliminando un componente](assets/ue-delete-component.png)
 

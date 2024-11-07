@@ -4,7 +4,7 @@ description: Obtenga información sobre los diferentes eventos que envía el edi
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 2%
@@ -55,7 +55,7 @@ La carga útil es contenido del servicio Editor universal, con contenido de rese
 
 ### aue:content-details {#content-details}
 
-El evento `aue:content-details` se activa cuando se carga un componente en el carril de propiedades.
+El evento `aue:content-details` se activa cuando se carga un componente en el panel de propiedades.
 
 La carga útil es el contenido del componente y, opcionalmente, su esquema.
 
@@ -91,7 +91,7 @@ La carga útil es el componente, el contenedor de origen y el contenedor de dest
 
 ### aue:content-patch {#content-patch}
 
-El evento `aue:content-patch` se activa cuando los datos de un componente se actualizan en el carril de propiedades.
+El evento `aue:content-patch` se activa cuando los datos de un componente se actualizan en el panel de propiedades.
 
 La carga útil es un parche JSON de las propiedades actualizadas.
 

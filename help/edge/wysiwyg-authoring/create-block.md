@@ -4,10 +4,10 @@ description: Aprenda a crear bloques instrumentados para utilizarlos con el edit
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 3419fa943eb865d87467443527ea97fcd64909c2
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1445'
-ht-degree: 62%
+ht-degree: 59%
 
 ---
 
@@ -165,7 +165,7 @@ Ahora que el bloque de comillas básico está definido y comprometido con el pro
 
    * Para cargar la página, es posible que tenga que tocar o hacer clic en **Iniciar sesión con Adobe** para autenticarse en AEM en el editor universal.
 
-1. En el Editor universal, seleccione una sección. En el carril de propiedades, pulse o haga clic en **Añadir** y, a continuación, seleccione el nuevo bloque **Cita** del menú.
+1. En el Editor universal, seleccione una sección. En el panel de propiedades, toque o haga clic en el icono **Agregar** y, a continuación, seleccione el nuevo bloque **Citar** del menú.
 
    * El icono **Añadir** es un símbolo más.
    * Sabe que ha seleccionado una sección si el contorno azul del objeto seleccionado tiene una etiqueta **Sección**.
@@ -175,7 +175,7 @@ Ahora que el bloque de comillas básico está definido y comprometido con el pro
 
 1. La página se vuelve a cargar y el bloque de cita se añade al final de la sección seleccionada con el contenido predeterminado especificado en el archivo `component-definitions.json`.
 
-   * El bloque de cita se puede seleccionar y editar como cualquier otro bloque local o en el carril de propiedades.
+   * El bloque de comillas se puede seleccionar y editar como cualquier otro bloque local o en el panel de propiedades.
    * El estilo se aplicará en un paso posterior.
 
    ![La página con el nuevo bloque de cita de la sección seleccionada](assets/create-block/quote-added.png)

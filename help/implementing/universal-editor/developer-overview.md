@@ -4,7 +4,7 @@ description: AEM Si usted es un desarrollador de interesado en cómo funciona el
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '3139'
 ht-degree: 0%
@@ -240,7 +240,7 @@ Los componentes también deben estar instrumentados para poder editarlos con el 
 
 1. En el editor universal, haga clic en el componente teaser en la parte superior de la página y verá que ahora puede seleccionarlo.
 
-1. Si hace clic en el icono **Árbol de contenido** en el carril de propiedades del Editor universal, verá que el editor reconoce todos los teasers de la página ahora que la ha instrumentado. El teaser que seleccionó es el resaltado.
+1. Si hace clic en el icono **Árbol de contenido** en el panel de propiedades del Editor universal, verá que el editor reconoce todos los teasers de la página ahora que la ha instrumentado. El teaser que seleccionó es el resaltado.
 
    ![Selección del componente de teaser instrumentado](assets/dev-select-teaser.png)
 
@@ -355,13 +355,13 @@ Puede ver que el cambio persiste en el JCR.
 >
 >AEM El ejemplo del encabezado de autenticación básico `Basic YWRtaW46YWRtaW4=` es para la combinación de usuario y contraseña de `admin:admin`, como es común en el desarrollo de la local.
 
-## Instrumentación de la aplicación para el carril Propiedades {#properties-rail}
+## Instrumentación de la aplicación para el panel de propiedades {#properties-rail}
 
 Ahora tiene una aplicación instrumentada para poder editarla con el editor universal.
 
-Actualmente, la edición se limita a la edición en línea del título del teaser. Sin embargo, hay casos en los que la edición in situ no es suficiente. El texto, como el título del teaser, se puede editar donde está con la entrada de teclado. Sin embargo, los elementos más complicados deben poder mostrarse y permitir la edición de datos estructurados independientemente de cómo se representen en el explorador. Para esto sirve el carril de propiedades.
+Actualmente, la edición se limita a la edición en línea del título del teaser. Sin embargo, hay casos en los que la edición in situ no es suficiente. El texto, como el título del teaser, se puede editar donde está con la entrada de teclado. Sin embargo, los elementos más complicados deben poder mostrarse y permitir la edición de datos estructurados independientemente de cómo se representen en el explorador. Para esto sirve el panel de propiedades.
 
-Para actualizar la aplicación y utilizar el carril de propiedades para editarla, vuelva al archivo de encabezado del componente de página de la aplicación. AEM Aquí es donde ya ha establecido las conexiones con la instancia de desarrollo de la aplicación local y con el servicio de editor universal local. Aquí debe definir los componentes editables en la aplicación y sus modelos de datos.
+Para actualizar la aplicación y utilizar el panel de propiedades para editarla, vuelva al archivo de encabezado del componente de página de la aplicación. AEM Aquí es donde ya ha establecido las conexiones con la instancia de desarrollo de la aplicación local y con el servicio de editor universal local. Aquí debe definir los componentes editables en la aplicación y sus modelos de datos.
 
 1. Abra el CRXDE Lite.
 
@@ -462,7 +462,7 @@ Para actualizar la aplicación y utilizar el carril de propiedades para editarla
 
 ## ¿Qué significa todo esto? {#what-does-it-mean-2}
 
-Para poder editar con el carril de propiedades, los componentes deben asignarse a `groups`, de modo que cada definición comience como una lista de grupos que contengan los componentes.
+Para poder editar con el panel de propiedades, los componentes deben estar asignados a `groups`, de modo que cada definición comience como una lista de grupos que contengan los componentes.
 
 * `title` es el nombre del grupo.
 * `id` es el identificador único del grupo, en este caso componentes generales que componen el contenido de la página en lugar de componentes avanzados para el diseño de página, por ejemplo.
@@ -487,7 +487,7 @@ A continuación, cada componente debe asignarse a un `model` para definir los ca
 * `label` es la descripción del campo que aparece en la interfaz de usuario del editor.
 * `valueType` es el tipo de datos.
 
-## Instrumentación del componente para el carril de propiedades {#properties-rail-component}
+## Instrumentación del componente para el panel Propiedades {#properties-rail-component}
 
 También debe definir a nivel de componente qué modelo debe utilizar el componente.
 
@@ -509,17 +509,17 @@ También debe definir a nivel de componente qué modelo debe utilizar el compone
 
 1. Haga clic en **Guardar todo** en la barra de herramientas y vuelva a cargar el editor universal.
 
-Ahora está listo para probar el carril de propiedades instrumentado para su componente.
+Ahora está listo para probar el panel de propiedades instrumentado para su componente.
 
 1. En el editor universal, haga clic en el título del teaser para editarlo una vez más.
 
-1. Haga clic en el carril de propiedades para mostrar la pestaña de propiedades y ver los campos que acaba de instrumentar.
+1. Haga clic en el panel de propiedades para mostrar la pestaña de propiedades y ver los campos que acaba de instrumentar.
 
-   ![El carril de propiedades instrumentadas](assets/dev-properties-rail-instrumented.png)
+   ![Panel de propiedades instrumentadas](assets/dev-properties-rail-instrumented.png)
 
-Ahora puede editar el título del teaser en línea como lo había hecho anteriormente o en el carril de propiedades. AEM En ambos casos, los cambios se conservan en la instancia de desarrollo de la comunidad local de la que se haya realizado el.
+Ahora puede editar el título del teaser en línea como lo había hecho antes o en el panel de propiedades. AEM En ambos casos, los cambios se conservan en la instancia de desarrollo de la comunidad local de la que se haya realizado el.
 
-## Añadir campos adicionales al carril Propiedades {#add-fields}
+## Añadir campos adicionales al panel Propiedades {#add-fields}
 
 Con la estructura básica del modelo de datos para el componente que ya ha implementado, puede agregar campos adicionales siguiendo el mismo modelo.
 
@@ -555,15 +555,15 @@ Por ejemplo, puede añadir un campo para ajustar el estilo del componente.
 
 1. Haga clic en el título del teaser para editarlo una vez más.
 
-1. Haga clic en el carril de propiedades y verá que hay un nuevo campo para ajustar el estilo del componente.
+1. Haga clic en el panel de propiedades y compruebe que hay un nuevo campo para ajustar el estilo del componente.
 
-   ![El carril de propiedades instrumentadas con el campo de estilo](assets/dev-style-instrumented.png)
+   ![Panel de propiedades instrumentadas con el campo de estilo](assets/dev-style-instrumented.png)
 
 Cualquier campo del JCR del componente se puede exponer en el editor universal de esta manera.
 
 ## Resumen {#summary}
 
-Enhorabuena. AEM Ahora puede instrumentar sus propias aplicaciones de para que funcionen con el editor universal.
+¡Enhorabuena! AEM Ahora puede instrumentar sus propias aplicaciones de para que funcionen con el editor universal.
 
 Cuando empiece a instrumentar su propia aplicación, tenga en cuenta los pasos básicos que ha realizado en este ejemplo.
 
@@ -580,8 +580,8 @@ Cuando empiece a instrumentar su propia aplicación, tenga en cuenta los pasos b
 1. [Ha instrumentado el componente teaser.](#instrumenting-components)
 1. [Ha instrumentado los subcomponentes del teaser.](#subcomponents)
 1. [Ha definido un encabezado de autenticación personalizado para poder guardar los cambios mediante el servicio de editor universal local.](#auth-header)
-1. [Ha instrumentado la aplicación para que utilice el carril de propiedades.](#properties-rail)
-1. [Ha instrumentado el componente teaser para utilizar el carril de propiedades.](#properties-rail-component)
+1. [Ha instrumentado la aplicación para que utilice el panel de propiedades.](#properties-rail)
+1. [Ha instrumentado el componente teaser para utilizar el panel de propiedades.](#properties-rail-component)
 
 Puede seguir los mismos pasos para instrumentar su propia aplicación y utilizarla con el editor universal. Todas las propiedades del JCR se pueden exponer al editor universal.
 

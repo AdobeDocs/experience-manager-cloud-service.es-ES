@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1615'
-ht-degree: 35%
+ht-degree: 33%
 
 ---
 
@@ -63,7 +63,7 @@ La interfaz de usuario de se divide en estas áreas principales.
 * [El encabezado de Experience Cloud](#experience-cloud-header)
 * [Barra de herramientas del Editor universal](#universal-editor-toolbar)
 * [El editor](#editor)
-* [El carril de propiedades](#properties-rail)
+* [El panel Propiedades](#properties-rail)
 
 ![La IU del editor universal](assets/ui.png)
 
@@ -224,19 +224,19 @@ El editor ocupa la mayor parte de la ventana y es donde se procesa la página es
 
 Si el editor se encuentra en [modo de vista previa,](#preview-mode) el contenido se podrá navegar y podrá seguir los vínculos, pero no podrá editar el contenido.
 
-### Carril de propiedades {#properties-rail}
+### Panel Propiedades {#properties-rail}
 
-El carril de propiedades siempre está presente a la derecha del editor. Según su modo, puede mostrar detalles de un componente seleccionado en el contenido o la jerarquía del contenido de la página.
+El panel de propiedades siempre está presente a la derecha del editor. Según su modo, puede mostrar detalles de un componente seleccionado en el contenido o la jerarquía del contenido de la página.
 
-![El carril de propiedades](assets/properties-rail.png)
+![El panel de propiedades](assets/properties-rail.png)
 
 #### Modo propiedades {#properties-mode}
 
-En el modo propiedades, el carril muestra las propiedades del componente seleccionado actualmente en el editor. Este es el modo predeterminado del carril de propiedades cuando se carga una página.
+En el modo de propiedades, el panel muestra las propiedades del componente seleccionado actualmente en el editor. Este es el modo predeterminado del panel de propiedades cuando se carga una página.
 
 ![Modo propiedades](assets/properties-mode.png)
 
-Según el tipo de componente que seleccione, los detalles se pueden mostrar y modificar en el carril de propiedades.
+Según el tipo de componente que seleccione, los detalles se pueden mostrar y modificar en el panel de propiedades.
 
 ![Detalles de los componentes](assets/component-details.png)
 
@@ -248,7 +248,7 @@ No todos los componentes tienen detalles que se puedan mostrar o editar.
 
 #### Modo de árbol de contenido {#content-tree-mode}
 
-En el modo de árbol de contenido, el carril muestra la jerarquía del contenido de la página.
+En el modo de árbol de contenido, el panel muestra la jerarquía del contenido de la página.
 
 ![Modo de árbol de contenido](assets/content-tree-mode.png)
 
@@ -262,7 +262,7 @@ Al seleccionar un elemento en el árbol de contenido, el editor se desplaza hast
 
 ##### Abrir en editor CF {#edit}
 
-Al editar, las opciones del componente seleccionado aparecen en el carril de propiedades, donde puede editar el componente seleccionado. Si el componente seleccionado es un fragmento de contenido, también puede seleccionar el botón **Abrir en el editor de CF**.
+Al editar, las opciones del componente seleccionado aparecen en el panel de propiedades, donde puede editar el componente seleccionado. Si el componente seleccionado es un fragmento de contenido, también puede seleccionar el botón **Abrir en el editor de CF**.
 
 ![Icono de Abrir en el editor de CF](assets/open-in-cf-editor.png)
 
@@ -276,7 +276,7 @@ Según las necesidades del flujo de trabajo, es posible que desee editar el frag
 
 ##### Añadir {#add}
 
-Si selecciona un componente de contenedor en el árbol de contenido o en el editor, la opción Añadir aparecerá en el carril de propiedades.
+Si selecciona un componente contenedor en el árbol de contenido o en el editor, la opción Añadir aparecerá en el panel de propiedades.
 
 ![Agregar icono](assets/ue-add-component-icon.png)
 
@@ -290,7 +290,7 @@ Al tocar o hacer clic en el botón Agregar, se abre un menú desplegable de comp
 
 ##### Duplicado {#duplicate}
 
-Si selecciona un componente dentro de un componente contenedor en el árbol de contenido o en el editor, la opción duplicar aparece en el carril de propiedades.
+Si selecciona un componente dentro de un componente contenedor en el árbol de contenido o en el editor, la opción duplicar aparece en el panel de propiedades.
 
 ![Icono duplicado](assets/duplicate.png)
 
@@ -298,7 +298,7 @@ Al tocar o hacer clic en el botón duplicado [se duplica el componente seleccion
 
 ##### Eliminar {#delete}
 
-Si selecciona un componente dentro de un componente contenedor en el árbol de contenido o en el editor, la opción Eliminar aparece en el carril de propiedades.
+Si selecciona un componente dentro de un componente contenedor en el árbol de contenido o en el editor, la opción Eliminar aparece en el panel de propiedades.
 
 ![Icono Eliminar](assets/ue-delete-component-icon.png)
 
@@ -310,7 +310,7 @@ Al tocar o hacer clic en el botón Eliminar [se elimina el componente.](/help/si
 
 #### Botones adicionales {#additional-properties-rail-buttons}
 
-El editor universal ofrece una experiencia de creación personalizable y ampliable. Si ve botones adicionales en el carril de propiedades, se ha ampliado el editor universal.
+El editor universal ofrece una experiencia de creación personalizable y ampliable. Si ve botones adicionales en el panel de propiedades, se ha ampliado el editor universal.
 
 * Para obtener más información sobre las posibilidades de extensión, consulte [Personalización y ampliación del editor universal.](/help/implementing/universal-editor/customizing.md)
 * Para obtener información detallada sobre cómo funciona una extensión individual, consulte la [documentación del Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)

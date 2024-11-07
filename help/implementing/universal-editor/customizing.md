@@ -4,7 +4,7 @@ description: Obtenga información acerca de los diferentes puntos de extensión 
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6612abbd95599791ff9571b59154aa8ab34fb5f8
+source-git-commit: 732b0648e7114594cb8d35df03f83b842d62736e
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 1%
@@ -75,9 +75,9 @@ Al establecer el atributo `components` en una definición de filtro en `null`, s
 ]
 ```
 
-### Mostrar y ocultar condicionalmente componentes en el carril Propiedades {#conditionally-hide}
+### Mostrar y ocultar condicionalmente componentes en el panel Propiedades {#conditionally-hide}
 
-Aunque un componente o componentes suelen estar disponibles para los autores, puede haber ciertas situaciones en las que no tiene sentido. En estos casos, puede ocultar componentes en el carril de propiedades agregando un atributo `condition` a los [campos del modelo de componentes.](/help/implementing/universal-editor/field-types.md#fields)
+Aunque un componente o componentes suelen estar disponibles para los autores, puede haber ciertas situaciones en las que no tiene sentido. En estos casos, puede ocultar componentes en el panel de propiedades agregando un atributo `condition` a los [campos del modelo de componentes.](/help/implementing/universal-editor/field-types.md#fields)
 
 Las condiciones se pueden definir usando el esquema [JsonLogic.](https://jsonlogic.com/) Si la condición es verdadera, se mostrará el campo. Si la condición es falsa, el campo estará oculto.
 
@@ -132,7 +132,7 @@ Para ello, simplemente incluya la URL de vista previa deseada en una metaetiquet
 
 Como servicio de Adobe Experience Cloud, la interfaz de usuario del editor universal se puede ampliar con el Experience Manager y App Builder.
 
-Las extensiones de interfaz de usuario son aplicaciones de JavaScript creadas con Adobe App Builder que se pueden incrustar en aplicaciones de interfaz de usuario que se ejecutan en el shell unificado de Adobe Experience Cloud, como el editor universal. Puede agregar sus propios botones y acciones al menú de encabezado y al carril de propiedades, así como crear sus propios eventos para el editor universal.
+Las extensiones de interfaz de usuario son aplicaciones de JavaScript creadas con Adobe App Builder que se pueden incrustar en aplicaciones de interfaz de usuario que se ejecutan en el shell unificado de Adobe Experience Cloud, como el editor universal. Puede agregar sus propios botones y acciones al menú de encabezado y al panel de propiedades, así como crear sus propios eventos para el editor universal.
 
 Si desea explorar estas posibilidades, consulte los siguientes recursos:
 

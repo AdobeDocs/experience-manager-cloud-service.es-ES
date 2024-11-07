@@ -4,10 +4,10 @@ description: Descubra cómo funciona el modelado de contenido para la creación 
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 058f3c24ac883315dfaa9206a8c2caa4bb005d07
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '2196'
-ht-degree: 80%
+ht-degree: 79%
 
 ---
 
@@ -112,7 +112,7 @@ Para cada bloque, el desarrollador:
 * Debe definir el nombre del bloque, que se procesará en el encabezado de tabla del bloque.
    * El nombre del bloque se utiliza para recuperar el estilo y el script adecuados para decorar el bloque.
 * Puede definir un [ID de modelo.](/help/implementing/universal-editor/field-types.md#model-structure)
-   * El ID de modelo es una referencia al modelo del componente, que define los campos disponibles para el autor en el carril de propiedades.
+   * El ID de modelo es una referencia al modelo del componente, que define los campos disponibles para el autor en el panel de propiedades.
 * Puede definir un [ID de filtro.](/help/implementing/universal-editor/customizing.md#filtering-components)
    * El ID de filtro es una referencia al filtro del componente, que permite cambiar el comportamiento de creación, por ejemplo, al limitar qué elementos secundarios se pueden añadir al bloque o a la sección, o qué funciones RTE están habilitadas.
 

@@ -4,10 +4,10 @@ description: Obtenga información sobre los atributos de datos y los tipos de el
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '538'
-ht-degree: 72%
+ht-degree: 66%
 
 ---
 
@@ -33,7 +33,7 @@ Para que el editor universal pueda editar una aplicación, debe instrumentarse c
 | `data-aue-type` | [Tipo de elemento editable](#item-types) (por ejemplo, texto, imagen y referencia) |
 | `data-aue-filter` | Define qué referencias se pueden utilizar |
 | `data-aue-label` | Define una etiqueta personalizada para un elemento seleccionable que se muestra en el editor. <br>Si `data-aue-model` está configurado, la etiqueta se recupera mediante el modelo |
-| `data-aue-model` | Define un modelo que se usa para la edición basada en formularios en el carril de propiedades |
+| `data-aue-model` | Define un modelo que se utiliza para la edición basada en formularios en el panel de propiedades |
 | `data-aue-behavior` | Define el [comportamiento de una instrumentación](#behaviors); por ejemplo, el texto o la imagen independientes también pueden imitar un componente para hacerlo movible o eliminable |
 
 ## Tipos de elementos {#item-types}
@@ -44,7 +44,7 @@ Para que el editor universal pueda editar una aplicación, debe instrumentarse c
 | `richtext` | El texto se puede editar con capacidades de texto enriquecido completas. El RTE se muestra en el panel derecho | Opcional | Requerido | N/D | Opcional | N/D | Opcional |
 | `media` | El editable es un recurso, por ejemplo, una imagen o un vídeo | Opcional | Requerido | Opcional<br>lista de criterios de filtro de imagen o vídeo que se pasan al selector de recursos | Opcional | N/D | Opcional |
 | `container` | El comportamiento editable se comporta como un contenedor para componentes, también conocido como Sistema de párrafos. | Depende <br>consultar más abajo | Depende <br>consultar más abajo | Opcional<br>una lista de componentes permitidos | Opcional | N/D | N/D |
-| `component` | El componente editable es un componente. No añade ninguna funcionalidad adicional. Es necesario para indicar partes móviles o eliminables del DOM y para abrir el carril de propiedades y sus campos | Requerido | N/D | N/D | Opcional | Opcional | N/D |
+| `component` | El componente editable es un componente. No añade ninguna funcionalidad adicional. Es necesario indicar las partes móviles o eliminables del DOM y para abrir el panel de propiedades y sus campos | Requerido | N/D | N/D | Opcional | Opcional | N/D |
 | `reference` | El editable es una referencia, por ejemplo, un fragmento de contenido, un fragmento de experiencia o un producto | Depende <br>consultar más abajo | Depende <br>consultar más abajo | Opcional<br>lista de criterios de filtro de fragmento de contenido, producto o fragmento de experiencia que se pasan al selector de referencia | Opcional | Opcional | N/D |
 
 Dependiendo del caso de uso, `data-aue-prop` o `data-aue-resource` pueden no ser obligatorios. Por ejemplo:
