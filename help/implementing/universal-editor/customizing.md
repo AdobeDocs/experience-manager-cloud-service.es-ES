@@ -4,9 +4,9 @@ description: Obtenga información acerca de los diferentes puntos de extensión 
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 34ae1d57e77e209e179aca5c556954dbfb170498
+source-git-commit: 6612abbd95599791ff9571b59154aa8ab34fb5f8
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '646'
 ht-degree: 1%
 
 ---
@@ -120,7 +120,7 @@ Las condiciones se pueden definir usando el esquema [JsonLogic.](https://jsonlog
 
 Puede especificar una URL de vista previa personalizada mediante una metaconfiguración de `urn:adobe:aue:config:preview`, que se abrirá al hacer clic en el botón **Abrir página** en la barra de herramientas superior derecha del [editor.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
 
-Esto es especialmente útil para aplicaciones con requisitos de vista previa específicos, como las que [utilizan Edge Delivery Services con creación WYSIWYG.](/help/edge/wysiwyg-authoring/authoring.md)
+Esto es especialmente útil para aplicaciones con requisitos de vista previa específicos, como las que [utilizan Edge Delivery Services con la creación de WYSIWYG.](/help/edge/wysiwyg-authoring/authoring.md)
 
 Para ello, simplemente incluya la URL de vista previa deseada en una metaetiqueta de la aplicación instrumentada como en el siguiente ejemplo.
 
