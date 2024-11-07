@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
+source-git-commit: 88b9686a1ceec6729d9657d4bb6f458d9c411065
 workflow-type: tm+mt
-source-wordcount: '2108'
+source-wordcount: '2134'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,12 @@ ht-degree: 0%
 El artículo proporciona ejemplos detallados de funciones personalizadas para un formulario adaptable basadas en componentes principales, lo que ofrece información valiosa sobre su implementación eficaz en varios escenarios. Las funciones personalizadas se utilizan en el editor de reglas de una AEM Forms, lo que permite a los desarrolladores definir y controlar la lógica que rige el comportamiento del formulario.
 Este artículo explora diferentes implementaciones de funciones personalizadas, mostrando cómo se pueden utilizar para adaptar los formularios para satisfacer requisitos específicos y mejorar la funcionalidad general.
 
-## Establecer las opciones de la lista desplegable mediante funciones personalizadas
+## Rellenar las opciones de la lista desplegable con funciones personalizadas
 
-El editor de reglas de los componentes principales no admite la propiedad **Set Options of** para establecer las opciones de la lista desplegable durante la ejecución. Sin embargo, puede establecer las opciones de la lista desplegable mediante funciones personalizadas.
+El Editor de reglas de los componentes principales no admite la propiedad **Set Options** para rellenar opciones de lista desplegable de forma dinámica durante la ejecución. Sin embargo, puede rellenar las opciones de la lista desplegable con funciones personalizadas, que le permiten recuperar opciones basadas en una lógica específica. Las funciones personalizadas proporcionan una mayor flexibilidad y control sobre cómo y cuándo se rellenan las opciones desplegables, lo que mejora la experiencia del usuario.
 
-Agregue el siguiente código en la función personalizada como se explica en la sección [create-custom-function](/help/forms/custom-function-core-component-create-function.md) para establecer las opciones de la lista desplegable mediante funciones personalizadas:
+Para rellenar las opciones de la lista desplegable con una función personalizada, agregue el siguiente código como se describe en la sección [create-custom-function](/help/forms/custom-function-core-component-create-function.md):
+
 
 ```javascript
     /**
