@@ -4,13 +4,13 @@ description: Conozca los conceptos básicos del acceso y la navegación por el E
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
+source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 36%
+source-wordcount: '1615'
+ht-degree: 35%
 
 ---
-
 
 # Acceder y navegar por el editor universal {#navigating}
 
@@ -54,7 +54,7 @@ Una vez que la aplicación está instrumentada para trabajar con el Editor Unive
 
 1. Inicie sesión en el editor universal. Necesita un Adobe ID para iniciar sesión y [tener acceso al Editor universal.](/help/implementing/universal-editor/getting-started.md#request-access)
 
-1. Una vez que haya iniciado sesión, introduzca la URL de la página que desea editar en la [barra de ubicación.](#location-bar) para que pueda empezar a editar contenido como [contenido de texto](#text-mode) o [contenido multimedia.](#media-mode)
+1. Una vez que haya iniciado sesión, introduzca la URL de la página que desea editar en la [barra de ubicación.](#location-bar) para que pueda empezar a editar contenido, como contenido de texto o contenido multimedia.
 
 ## Comprensión de la IU {#ui}
 
@@ -171,7 +171,7 @@ En el editor universal, también puede emular un dispositivo móvil, además de 
 
 En el modo de vista previa, la página se procesa en el editor tal como se vería en el servicio publicado. Esto permite al autor del contenido navegar por el contenido haciendo clic en vínculos, etc.
 
-![Modo de vista previa](assets/preview-mode.png)
+![Modo de previsualización](assets/preview-mode.png)
 
 >[!TIP]
 >
@@ -280,7 +280,7 @@ Si selecciona un componente de contenedor en el árbol de contenido o en el edit
 
 ![Agregar icono](assets/ue-add-component-icon.png)
 
-Al tocar o hacer clic en el botón Agregar, se abre un menú desplegable de componentes disponibles para [agregar al contenedor seleccionado.](#adding-components)
+Al tocar o hacer clic en el botón Agregar, se abre un menú desplegable de componentes disponibles para [agregar al contenedor seleccionado.](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)
 
 ![Agregar menú contextual](assets/add-context-menu.png)
 
@@ -288,13 +288,21 @@ Al tocar o hacer clic en el botón Agregar, se abre un menú desplegable de comp
 >
 >Utilice la tecla de acceso directo `a` para agregar un componente a un componente contenedor seleccionado.
 
+##### Duplicado {#duplicate}
+
+Si selecciona un componente dentro de un componente contenedor en el árbol de contenido o en el editor, la opción duplicar aparece en el carril de propiedades.
+
+![Icono duplicado](assets/duplicate.png)
+
+Al tocar o hacer clic en el botón duplicado [se duplica el componente seleccionado.](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components)
+
 ##### Eliminar {#delete}
 
 Si selecciona un componente dentro de un componente contenedor en el árbol de contenido o en el editor, la opción Eliminar aparece en el carril de propiedades.
 
 ![Icono Eliminar](assets/ue-delete-component-icon.png)
 
-Al tocar o hacer clic en el botón Eliminar [se elimina el componente.](#deleting-components)
+Al tocar o hacer clic en el botón Eliminar [se elimina el componente.](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components)
 
 >[!TIP]
 >
