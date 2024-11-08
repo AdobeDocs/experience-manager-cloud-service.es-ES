@@ -4,10 +4,10 @@ description: Aprenda cómo los perfiles de equipo y de producto de AEM as a Clou
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 0ff50aa77711d70d372a1f43ad7336c39ab1167c
+source-git-commit: c8534ddf84998377ee63575403417165ccec2dbd
 workflow-type: tm+mt
-source-wordcount: '1821'
-ht-degree: 39%
+source-wordcount: '2059'
+ht-degree: 34%
 
 ---
 
@@ -139,8 +139,8 @@ En la siguiente tabla se describe una lista de los posibles perfiles de producto
     </tr>
     <tr>
         <td></td>
-        <td>Colaborador de AEM Assets - Autor - Programa <code>id</code> - Entorno <code>id</code></td>
-        <td>Usuarios de AEM Assets Collaborator</td>
+        <td>Colaborador de AEM Assets - autor - Programa <code>id</code> - Entorno <code>id</code></td>
+        <td>Usuarios de Collaborator de AEM Assets</td>
         <td>
         <ul>
                 <li>Está pensado para el acceso de solo lectura a DAM. AEM AEM Los usuarios de este perfil de producto serán miembros del grupo de usuarios "Colaboradores" creado automáticamente en el grupo de usuarios de.
@@ -275,6 +275,27 @@ AEM ![Asignación de grupo a servicio](/help/onboarding/assets/profile-to-servic
 >
 >* Para obtener más información acerca de los perfiles de producto de AEM, consulte [Asignación de perfiles de producto de AEM](/help/journey-onboarding/assign-profiles-aem.md).
 >* Para obtener más información sobre el proceso de incorporación, consulte [recorrido de incorporación](/help/journey-onboarding/overview.md).
+
+### Adición de perfiles de producto para entornos existentes {#adding-product-profiles-for-existing-environments}
+
+Es posible que a los entornos creados antes de principios de noviembre de 2024 les falte la instancia de producto de nivel de organización descrita en las secciones anteriores, así como ciertos perfiles de producto. A los perfiles de producto existentes también les faltarán los conmutadores de servicio. Se recomienda actualizar esos perfiles de producto, un requisito previo para acceder a algunas API futuras.
+
+Si uno o más entornos de un programa necesitan que se actualicen sus perfiles de producto, Cloud Manager mostrará el aviso a continuación. AEM Tenga en cuenta que un entorno debe estar en la última versión de la aplicación para que se puedan actualizar sus perfiles de producto.
+
+![Modernizar perfiles de producto](/help/onboarding/assets/modernize-product-profiles.png)
+
+Al hacer clic en el botón **Agregar perfiles de producto** se abrirá un menú que muestra las opciones para agregar nuevos perfiles de producto a todos los entornos disponibles en el programa o en entornos individuales.
+
+![Reemplazar entornos](/help/onboarding/assets/choose-env-r.png)
+
+Haga clic en **Todos los entornos** para agregar los nuevos perfiles de producto a todos los entornos del programa. También puede hacer clic en **Entornos individuales** para agregar los nuevos perfiles de producto a los entornos seleccionados; esto llevará al usuario a una página de lista de entornos, donde se puede seleccionar una acción **Agregar perfiles de producto** del icono **Más opciones**.
+
+![Entornos Individuales](/help/onboarding/assets/individual-environments.png)
+
+También puede agregar perfiles de producto a entornos seleccionados navegando a la sección Entornos de la página Información general del programa, haciendo clic en el icono Más opciones correspondiente a un entorno y seleccionando Agregar perfiles de producto.
+
+El estado del entorno muestra Añadir perfiles de producto mientras se agregan los nuevos perfiles de producto y, a continuación, muestra En ejecución cuando se completa el proceso.
+
 
 ## Perfiles de producto de Cloud Manager {#cloud-manager-product-profiles}
 
