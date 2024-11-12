@@ -1,27 +1,31 @@
 ---
-title: Creación de plantillas de página
-description: La plantilla define la estructura de la página resultante y, con el editor de plantillas, la creación y el mantenimiento de plantillas ya no son tareas exclusivas de los desarrolladores
+title: Plantillas para crear páginas editables con el editor de páginas
+description: Puede usar el Editor de plantillas para crear plantillas que los autores de contenido puedan usar para crear páginas que se puedan editar con el Editor de páginas.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 41abdfcf142a3f39854978c5acf0e5d28872b3c4
 workflow-type: tm+mt
-source-wordcount: '4524'
-ht-degree: 84%
+source-wordcount: '4415'
+ht-degree: 77%
 
 ---
 
-# Creación de plantillas de página   {#creating-page-templates}
 
-Al crear una página, debe seleccionar una plantilla, que se utiliza como base para crear la nueva página. La plantilla define la estructura de la página resultante, cualquier contenido inicial y los componentes que se pueden utilizar.
+# Plantillas para crear páginas editables con el editor de páginas {#creating-page-templates}
 
-Con el **Editor de plantillas**, la creación y el mantenimiento de plantillas ya no es una tarea exclusiva para desarrolladores. También puede participar un tipo de usuario avanzado, que se denomina **autor de la plantilla**. Los desarrolladores siguen necesitando configurar el entorno, crear bibliotecas de clientes y crear los componentes que se van a utilizar, pero una vez que estos conceptos básicos están establecidos, el **autor de la plantilla** tiene la flexibilidad de crear y configurar plantillas sin un proyecto de desarrollo.
+Puede usar el Editor de plantillas para crear plantillas que los autores de contenido puedan usar para crear páginas que se puedan editar con el Editor de páginas.
 
-La **consola de plantillas** permite a los autores de plantillas lo siguiente:
+## Información general {#overview}
 
-* Crear una plantilla nueva o copiar una plantilla existente.
-* Especifique el ciclo de vida de la plantilla.
+Cuando un autor crea una página, debe seleccionar una plantilla, que se utiliza como base para la nueva página. La plantilla define la estructura de la página resultante, cualquier contenido inicial y los componentes que se pueden utilizar al editar la página en el Editor de páginas.
+
+>[!NOTE]
+>
+>[Las plantillas también están disponibles para crear páginas que se pueden editar con el editor universal.](/help/sites-cloud/authoring/universal-editor/templates.md)
+
+Con el **Editor de plantillas**, la creación y el mantenimiento de plantillas no es una tarea exclusiva para desarrolladores. Un tipo de usuario avanzado, que se denomina **autor de plantillas**, puede crear plantillas. Los desarrolladores deben configurar el entorno, crear bibliotecas de cliente y crear los componentes que se van a utilizar, pero una vez que estos conceptos básicos están establecidos, el **autor de plantillas** tiene la flexibilidad de crear y configurar plantillas sin involucrar a un desarrollador.
 
 El **editor de plantillas** permite a los autores de plantillas:
 
@@ -29,9 +33,9 @@ El **editor de plantillas** permite a los autores de plantillas:
 * Preconfigurar los componentes. 
 * Defina qué componentes se pueden editar en las páginas creadas con la plantilla.
 
-Este documento explica cómo un **autor de plantillas** puede utilizar la consola y el editor de plantillas para crear y administrar plantillas editables.
+Este documento explica cómo un **autor de plantillas** puede usar el **Editor de plantillas** para crear y administrar plantillas editables.
 
-Para obtener información detallada acerca de cómo funcionan las plantillas editables en un nivel técnico, consulte el documento para desarrolladores [Plantillas de páginas](/help/implementing/developing/components/templates.md) para obtener más información.
+Para obtener información detallada sobre cómo funcionan las plantillas editables en un nivel técnico, consulte el documento para desarrolladores [Plantillas editables](/help/implementing/developing/components/templates.md) para obtener más información.
 
 >[!NOTE]
 >
@@ -39,15 +43,15 @@ Para obtener información detallada acerca de cómo funcionan las plantillas edi
 
 ## Antes de comenzar {#before-you-start}
 
+Antes de empezar, es importante tener en cuenta que la creación de una plantilla requiere colaboración. Por este motivo, para cada tarea se indica la [Función. ](#roles) Esto no afecta a cómo realmente utiliza una plantilla para crear una página, pero afecta al modo en que una página se relaciona con su plantilla.
+
 >[!NOTE]
 >
 >Un administrador debe configurar una carpeta de plantillas en el **Navegador de opciones de configuración** y aplicar los permisos adecuados para que un autor de una plantilla pueda crear una plantilla en esa carpeta.
 
-Antes de empezar, es importante tener en cuenta que la creación de una plantilla requiere colaboración. Por este motivo, para cada tarea se indica la [Función. ](#roles) Esto no afecta a cómo realmente utiliza una plantilla para crear una página, pero afecta al modo en que una página se relaciona con su plantilla.
-
 ### Funciones {#roles}
 
-La creación de una nueva plantilla mediante la **consola Plantillas** y el **Editor de plantillas** requiere la colaboración entre las siguientes funciones:
+La creación de una nueva plantilla requiere la colaboración entre las siguientes funciones:
 
 * **Administradores**:
    * Crea una nueva carpeta de plantillas y requiere derechos `admin` (de administración).
@@ -72,9 +76,6 @@ Las tareas detalladas en este documento se enumeran con la función de la person
 
 Al crear una plantilla editable, debe hacer lo siguiente:
 
-* Utilice la consola de **Plantilla**. Esta opción está disponible en la sección **General** de la consola de **Herramientas**.
-   * O directamente en: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
-* Puede [crear una carpeta para las plantillas](#creating-a-template-folder-admin), si lo necesita.
 * [Crea una plantilla nueva](#creating-a-new-template-template-author), que inicialmente estará vacía.
 * [Defina propiedades adicionales](#defining-template-properties-template-author) para la plantilla si es necesario
 * [Editar la plantilla](#editing-templates-template-authors) para definir lo siguiente:
@@ -92,7 +93,7 @@ Al crear una plantilla editable, debe hacer lo siguiente:
 
 >[!TIP]
 >
->Nunca introduzca en una plantilla información que deba internacionalizarse. <!-- Never enter any information that must be [internationalized](/help/sites-developing/i18n.md) into a template.-->
+>Nunca ingrese información que deba ser [internacionalizada](/help/implementing/developing/extending/i18n/dev.md) en una plantilla.
 >
 >Para los elementos de la plantilla como encabezados y pies de página que se deben localizar, aproveche las características de la [localización de los componentes principales.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=es)
 
@@ -102,7 +103,7 @@ Se debe crear una carpeta de plantillas para su proyecto que contenga las planti
 
 ### Creación de una plantilla nueva: autor de plantillas {#creating-a-new-template-template-author}
 
-1. Abra la **Consola de plantillas** (mediante **Herramientas >** **General**) y desplácese hasta la carpeta requerida.
+1. Abra la **[Consola de plantillas](/help/sites-cloud/administering/templates-console.md)** y navegue hasta la carpeta requerida.
 
    >[!NOTE]
    >
@@ -129,7 +130,7 @@ Se debe crear una carpeta de plantillas para su proyecto que contenga las planti
    >
    >Cuando se crea una plantilla nueva, se marca como **Borrador** en la consola; esto indica que aún no está disponible para que los autores de páginas la utilicen.
 
->[!NOTE]
+>[!TIP]
 >
 >Las plantillas son herramientas útiles para optimizar el flujo de trabajo de creación de páginas. Sin embargo, demasiadas plantillas pueden saturar a los autores y hacer que la creación de páginas sea confusa. Una buena regla general es mantener el número de plantillas por debajo de 100.
 >
@@ -148,15 +149,7 @@ Una plantilla puede tener las siguientes propiedades:
 * Descripción
    * Una descripción opcional para proporcionar más información sobre la plantilla y su uso, que se puede ver, por ejemplo, en el asistente **Crear página**.
 
-Para ver o editar las propiedades:
-
-1. En la **Consola de plantillas**, seleccione la plantilla.
-1. Para abrir el cuadro de diálogo, seleccione **Ver propiedades** en la barra de herramientas o en las opciones rápidas.
-1. Ahora puede ver o editar las propiedades de la plantilla.
-
->[!NOTE]
->
->El estado de una plantilla (borrador, activada o desactivada) se indica en la consola.
+Después de crear la plantilla, use la **[Consola de plantillas](/help/sites-cloud/administering/templates-console.md)** para ver o editar las propiedades de la plantilla.
 
 #### Imagen de miniatura de plantilla {#template-thumbnail-image}
 
@@ -181,17 +174,11 @@ Para poder utilizar una plantilla al crear una página, debe:
 
 Una plantilla se puede habilitar o deshabilitar para que esté disponible o no en el asistente **Crear página**.
 
+Use la **[Consola de plantillas](/help/sites-cloud/administering/templates-console.md)** para habilitar o deshabilitar una plantilla.
+
 >[!CAUTION]
 >
 >Después de habilitar una plantilla, se muestra una advertencia cuando el autor la actualiza. Se informa al usuario de que se puede hacer referencia a la plantilla, por lo que cualquier cambio puede afectar a las páginas que hacen referencia a la plantilla.
-
-1. En la **Consola de plantillas**, seleccione la plantilla.
-1. Seleccione **Activar** o **Desactivar** en la barra de herramientas y, de nuevo, en el cuadro de diálogo de confirmación.
-1. Ahora puedes usar tu plantilla al [crear una página](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page), aunque probablemente quieras [editar la plantilla](#editing-templates-template-authors) según tus necesidades.
-
->[!NOTE]
->
->El estado de una plantilla (borrador, activada o desactivada) se indica en la consola.
 
 #### Autorización de una plantilla: autor {#allowing-a-template-author}
 
@@ -211,7 +198,6 @@ Una plantilla puede estar disponible o no disponible para determinadas ramas de 
    >
    >Si la lista **Plantillas permitidas** queda vacía, se asciende por el árbol hasta encontrar un valor/lista.
    >
-   >
    >Consulte [Disponibilidad de plantillas](/help/implementing/developing/components/templates.md#template-availability): los principios para las plantillas permitidas siguen siendo los mismos.
 
 1. Haga clic en **Guardar** para guardar los cambios realizados en las propiedades de la página.
@@ -224,10 +210,7 @@ Una plantilla puede estar disponible o no disponible para determinadas ramas de 
 
 Como la plantilla se toma como referencia cuando se representa la página, la plantilla completamente configurada debe publicarse para que esté disponible en el entorno de publicación.
 
-1. En la **Consola de plantillas**, seleccione la plantilla.
-1. Seleccione **Publicar** en la barra de herramientas para abrir el asistente.
-1. Seleccione las **Políticas de contenido** que deben publicarse en combinación.
-1. Seleccione **Publicar** en la barra de herramientas para abrir el asistente.
+Plantillas de Publish usando la consola **[Plantillas.](/help/sites-cloud/administering/templates-console.md)**
 
 ## Edición de plantillas: autores de plantillas   {#editing-templates-template-authors}
 
@@ -664,4 +647,4 @@ Al crear plantillas, debe tener en cuenta lo siguiente:
    >AEM proporciona advertencias explícitas al cambiar el estado de bloqueo de los componentes de las plantillas que ya no son borradores.
 
 1. [Creación de sus propias carpetas](#creating-a-template-folder-admin) para las plantillas específicas del sitio.
-1. [Publicación de sus plantillas](#publishing-a-template-template-author) desde la consola **Plantillas**.
+1. [Publish usa tus plantillas](#publishing-a-template-template-author) desde la consola **[Plantillas.]**(/help/sites-cloud/administering/templates-console.md)

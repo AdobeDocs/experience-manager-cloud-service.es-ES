@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8406caedaec4236d9fb2a0ce3e97f96417186c45
+source-git-commit: 69428ec9709dae212e568e6100b4451ea3c67289
 workflow-type: tm+mt
-source-wordcount: '5780'
+source-wordcount: '5782'
 ht-degree: 98%
 
 ---
@@ -362,7 +362,7 @@ ht-degree: 98%
          + [Creación de contenido con el editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [Publicación de contenido con el editor universal](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [Herencia de contenido en el editor universal](/help/sites-cloud/authoring/universal-editor/inheritance.md)
-         + [Plantillas de página](/help/edge/wysiwyg-authoring/templates.md)
+         + [Plantillas de página](/help/sites-cloud/authoring/universal-editor/templates.md)
       + Fragmentos {#fragments}
          + [Fragmentos de contenido](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [Fragmentos de experiencias](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -454,6 +454,7 @@ ht-degree: 98%
             + [Prácticas recomendadas de traducción](/help/sites-cloud/administering/translation/best-practices.md)
       + [Administración de etiquetas](/help/sites-cloud/administering/tags.md)
       + [Administración de flujos de trabajo](/help/sites-cloud/administering/workflows-administering.md)
+      + [Consola de plantillas](/help/sites-cloud/administering/templates-console.md)
    + Integración con AEM as a Cloud Service {#integrations}
       + [Integración con Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Integración con la configuración automatizada de Adobe Analytics](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
@@ -1092,7 +1093,7 @@ ht-degree: 98%
    + [Implementación de aplicaciones para AEM as a Cloud Service](/help/implementing/home.md)
    + Usar Cloud Manager {#using-cloud-manager}
       + [Navegación](/help/implementing/cloud-manager/navigation.md)
-      + [AEM Página de inicio](/help/implementing/cloud-manager/aem-home.md)
+      + [Inicio de AEM](/help/implementing/cloud-manager/aem-home.md)
       + Programas {#programs}
          + [Programas y tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [Programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
