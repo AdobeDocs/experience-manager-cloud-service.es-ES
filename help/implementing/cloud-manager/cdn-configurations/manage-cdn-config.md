@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: cd15fd36b8baf8e693ae449031a51fa1febefaee
+source-git-commit: ea478d73307c3b57b0a12e35b247bb1c46b33595
 workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 8%
@@ -63,7 +63,7 @@ Los pasos para editar una configuración de CDN desde la página **Entornos** so
 
 1. En el cuadro de diálogo **Editar configuración de CDN**, establezca una o más de las opciones en la lista desplegable correspondiente.
 
-Las opciones mostradas en el cuadro de diálogo dependen de si está usando una **CDN administrada por Adobe** o un **otro proveedor de CDN** (CDN administrada por el cliente).
+   Las opciones mostradas en el cuadro de diálogo dependen de si está usando una **CDN administrada por Adobe** o un **otro proveedor de CDN** (CDN administrada por el cliente).
 
 1. Haga clic en **Actualizar**.
 

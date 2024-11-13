@@ -4,9 +4,10 @@ description: Obtenga información acerca de cómo configurar la invalidación pu
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
+exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
+source-git-commit: 0ac6856e8f3e664fcc7e3c08faac4c4f5c16af18
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '161'
 ht-degree: 2%
 
 ---
@@ -28,4 +29,4 @@ Las siguientes propiedades de configuración definen el nombre del host de produ
 
 Una vez que se realicen cambios en la hoja de configuración, los usuarios deben obtener una vista previa y activarla mediante la [herramienta de Sidekick](/help/edge/docs/sidekick.md) para aplicar las actualizaciones.
 
-Vea también [Introducción a los Edge Delivery Services en Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list).
+Ver también [Acerca de la lista de tareas pendientes de Edge Delivery en Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list).
