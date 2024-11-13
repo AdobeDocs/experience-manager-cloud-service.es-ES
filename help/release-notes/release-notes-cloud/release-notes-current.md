@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 9bb2d38feea2690bc112611d429dad22e7bcd278
+source-git-commit: 428942c8fd4a4b83dc5d226e48eda190165768d4
 workflow-type: tm+mt
-source-wordcount: '1514'
-ht-degree: 86%
+source-wordcount: '1670'
+ht-degree: 89%
 
 ---
 
@@ -83,29 +83,37 @@ Ahora los informes se pueden generar automáticamente en la vista de Assets con 
 
 **Digital Rights Management para recursos con licencia**
 
-Las organizaciones ahora pueden aumentar el cumplimiento de las licencias y minimizar el riesgo de compartir recursos con términos de licencia aprovechando DRM para los recursos con licencia para los usuarios de Content Hub, lo que requiere que estos revisen y acepten los términos de licencia antes de poder iniciar la descarga de los recursos con licencia. Para obtener más información, consulte [Administrar recursos con licencia en Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
+Las organizaciones ahora pueden aumentar el cumplimiento de las licencias y minimizar el riesgo de compartir recursos con términos y condiciones de la licencia aprovechando DRM para los recursos con licencia para los usuarios de Content Hub, exigiendo a los usuarios que revisen y acepten los términos y condiciones de la licencia para poder iniciar la descarga de los recursos con licencia. Para obtener más información, consulte [Administración de recursos con licencia en Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 ![descargar-múltiples-licencias](/help/assets/assets/download-multiple-license.png)
 
 **Configuración de metadatos de la tarjeta de recursos**
 
-Content Hub ahora le permite configurar los campos de metadatos clave que necesita mostrar en la tarjeta de recursos hasta un máximo de 6 campos. Para obtener más información, consulte la sección Tarjeta de recursos en [Configurar Content Hub](/help/assets/configure-content-hub-ui-options.md#asset-card).
+Content Hub ahora le permite configurar los campos de metadatos clave que necesita mostrar en la tarjeta de recursos hasta un máximo de 6 campos. Para obtener más información, consulte la sección Tarjeta de recursos en [Configuración de Content Hub](/help/assets/configure-content-hub-ui-options.md#asset-card).
 
 ![metadatos clave de la tarjeta de recursos](/help/assets/assets/asset-card-key-metadata.png)
 
 **Configurar la visibilidad y la descarga de los recursos caducados**
 
-Los administradores ahora pueden controlar si necesitan que los activos caducados estén visibles en Content Hub. Si los recursos caducados se hacen visibles, también pueden definir si los usuarios pueden descargarlos. Para obtener más información, consulte la sección Assets caducado en [Configuración de Content Hub](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub).
+Los administradores ahora pueden controlar si necesitan que los activos caducados estén visibles en Content Hub. Si los activos caducados están visibles, también se puede definir si los usuarios pueden descargarlos. Para obtener más información, consulte la sección Activos caducados en [Configuración de Content Hub](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub).
 
 ![Activos caducados en Content Hub](/help/assets/assets/expired-assets-content-hub.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
+### Nuevas funciones en AEM Forms {#forms-new-features}
+
+* **Mejorar la experiencia del usuario con botones de navegación en los diseños de panel**: ahora puede agregar botones de navegación a los diseños de panel, como fichas horizontales, fichas verticales, acordeones o asistente. Estos botones mejoran la experiencia del usuario al simplificar las transiciones entre paneles, centrándose en el panel seleccionado.
+
+* **Especificar estilos de visualización para componentes de documento de registro (DoR)**: en un archivo XFA, ahora puede especificar los estilos de visualización para componentes de documento de registro. Estos estilos se pueden aplicar posteriormente a los componentes correspondientes en el editor de Forms adaptable.
+
 ### Nuevas funciones en la versión preliminar de AEM Forms {#forms-new-prerelease-features}
 
-#### Guardar automáticamente un borrador para los componentes principales basados en formularios adaptables
+* **Guardar automáticamente un borrador para Forms adaptable basado en componentes principales**: los usuarios ahora pueden beneficiarse de una función de guardado automático que guarda automáticamente un formulario parcialmente completado como borrador. Pueden volver más tarde para terminar de rellenarlo en el mismo dispositivo o en otro distinto. Esta función mejora las tasas de conversión para las organizaciones al reducir el abandono de formularios, ya que los usuarios no tienen que volver a empezar a rellenar el formulario desde el principio.
 
-Los usuarios ahora pueden beneficiarse de una función de guardado automático que, de manera automática, guarda como borrador un formulario parcialmente completado. Pueden volver más tarde para terminar de rellenarlo en el mismo dispositivo o en otro distinto. Esta función mejora las tasas de conversión para las organizaciones al reducir el abandono de formularios, ya que los usuarios no tienen que volver a empezar a rellenar el formulario desde el principio.
+* **Actualizar los ámbitos de Adobe Sign fácilmente**: puede modificar los ámbitos de una configuración de Adobe Sign AEM directamente desde la página Configuraciones de nube de, lo que facilita y agiliza la actualización de las configuraciones existentes.
+
+* **Compatibilidad con funciones asincrónicas para Forms adaptable**: cuando el formulario adaptable requiera operaciones asincrónicas, como esperar procesos externos o recuperar datos, puede implementar estas operaciones con funciones personalizadas y configurarlas en el Editor de reglas.
 
 ### Funciones de acceso rápido de AEM Forms {#forms-new-early-access-features}
 
@@ -146,12 +154,12 @@ Las funciones de IA generativa que se ofrecen son:
 
 ### Configuración para controlar los envíos de formularios {#configuration-submissions}
 
-AEM Para controlar los envíos de formularios de Coral o Foundation en ubicaciones específicas, ha introducido una nueva configuración: `com.adobe.granite.ui.components.FormRestrict`. Esta configuración consta de dos campos:
+Para controlar los envíos de formularios de Coral o Foundation en ubicaciones específicas, AEM ha introducido una nueva configuración: `com.adobe.granite.ui.components.FormRestrict`. Esta configuración consta de dos campos:
 
-1. **Agregar rutas permitidas**: Especifica las rutas en las que se permiten las acciones de formulario.
-1. **Restringir comportamiento**: Determina el comportamiento de las rutas restringidas (rutas no incluidas en la lista de permitidos). Puede elegir entre dos opciones:
+1. **Adición de rutas permitidas**: especifica las rutas en las que se permiten las acciones de formulario.
+1. **Restricción de comportamiento**: determina el comportamiento de las rutas restringidas (rutas no incluidas en la lista de permitidos). Puede elegir entre dos opciones:
    * **Emergente** (predeterminado): muestra una notificación emergente.
-   * **Impedir**:Bloquea el envío de formularios.
+   * **Impedir**: bloquea el envío de formularios.
 
 >[!NOTE]
 >
@@ -189,7 +197,7 @@ Cualquiera puede acceder a la versión beta pública haciendo clic en el botón 
 
 ## Guías de [!DNL Experience Manager] {#guides}
 
-Puede encontrar una lista completa de las funciones nuevas y mejoradas de la última versión de Adobe Experience Manager Guides [aquí](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0).
+Puede encontrar una lista completa de las funciones nuevas y mejoradas de la última versión de Adobe Experience Manager Guides [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0).
 
 ## Cloud Manager {#cloud-manager}
 
