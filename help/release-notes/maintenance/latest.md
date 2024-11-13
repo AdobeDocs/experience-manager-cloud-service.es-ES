@@ -4,10 +4,10 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 90e1ca38bd517215a631573987462a716bfed160
+source-git-commit: eadb29c44dd57bda51f77a92a62016eae51dcc65
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 32%
+source-wordcount: '820'
+ht-degree: 76%
 
 ---
 
@@ -18,48 +18,57 @@ En la siguiente sección se describen las notas de la versión técnicas actuale
 
 ## Versión 18459 {#18459}
 
-A continuación se resumen las mejoras continuas de la versión de mantenimiento 18459, que se publicó el miércoles, 05 de noviembre de 2024. La versión de mantenimiento anterior fue la 18311.
+A continuación se resumen las mejoras continuas de la versión de mantenimiento 18459, que se publicó el 5 de noviembre de 2024. La versión de mantenimiento anterior fue la 18311.
 
 La activación de funcionalidades 2024.11.0 proporcionará el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
 ### Mejoras {#enhancements-18459}
 
-* CQ-4357471: Añada compatibilidad con la traducción de diccionarios i18n en AEMaaCS.
-* SITES-23591: Fragmentos de contenido: Actualización de fragmentos de contenido para admitir UUID.
-* SITES-25440: Fragmentos de contenido: la API de búsqueda de CFM para mostrar el estado de replicación.
+* CQ-4357471: Adición de compatibilidad con la traducción de diccionarios de i18n en AEMaaCS.
+* SITES-23591: Fragmentos de contenido: actualización de los fragmentos de contenido para admitir UUID.
+* SITES-25440: Fragmentos de contenido: API de búsqueda de CFM muestra el estado de replicación.
 * SITES-24369: Fragmentos de contenido: mejoras en la documentación de OpenAPI.
-* SITES-25478: Fragmentos de contenido: Agregue compatibilidad back-end para referencias de recursos externos.
-* SITES-26119: Fragmentos de contenido: Agregue compatibilidad con referencias de recursos externos en el tipo de referencia.
-* SITES-21199: Edge Delivery con editor universal: agregue compatibilidad con las plantillas creadas a partir de páginas.
-* SITES-20311: Edge Delivery con editor universal: agregue compatibilidad para importar CSV en hojas de cálculo.
-* SITES-24821: Edge Delivery con el editor universal: convierta aem.page/aem.live en el predeterminado para integrar con Edge Delivery.
+* SITES-25478: Fragmentos de contenido: adición de compatibilidad para referencias de recursos externos.
+* SITES-26119: Fragmentos de contenido: adición de compatibilidad con referencias de recursos externos en el tipo de referencia.
+* SITES-21199: Edge Delivery con editor universal: adición de compatibilidad con las plantillas creadas a partir de páginas.
+* SITES-20311: Edge Delivery con editor universal: adición de compatibilidad para importar CSV en hojas de cálculo.
+* SITES-24821: Edge Delivery con editor universal: conversión de aem.page/aem.live en el predeterminado para integrarse con Edge Delivery.
+* FORMS-11646: configuración de variables de contexto global para páginas relevantes de AEM Forms
+* FORMS-14833: AEM Forms ahora tiene la capacidad de incluir fragmentos de formulario adaptable en el documento de registro (DoR) final.
+* FORMS-14255: los usuarios ahora pueden beneficiarse de una función de guardado automático que guarda automáticamente un formulario parcialmente completado como borrador. Pueden volver más tarde para terminar de rellenarlo en el mismo u otro dispositivo.
+
 
 ### Problemas solucionados {#fixed-issues-18459}
 
 * CQ-4358730: CQPagePreviewGenerator falla cuando hay más de 10 claves por traducir.
-* FORMS-14978: Habilitando la carga de página para un formulario basado en componentes principales para el editor de temáticas.
-* FORMS-16596: Problema de accesibilidad: Botones desactivados no reconocidos por el Reader de pantalla.
+* FORMS-14978: Habilitación de la carga de página para un formulario basado en componentes principales para el editor de temáticas.
+* FORMS-16596: Problema de accesibilidad: el lector de pantalla no reconoce los botones desactivados.
 * SITES-10575: MSM: Blueprint Bloomfilter Loader intenta cargar >100 000 filas.
 * SITES-20755: Fragmentos de contenido: la referencia de recurso con actualización UUID no muestra la miniatura.
-* SITES-26253: Fragmentos de contenido: migración UUID: cambie el tema del trabajo de Sling para que sea genérico.
-* SITES-21338: Fragmentos de contenido: el extremo referencedBy no devuelve la referencia de página correcta.
-* SITES-24421: Fragmentos de contenido: Editar extremo CF no funciona para CF recuperado a través de GET CF.
-* SITES-25461: Fragmentos de contenido: el filtro por modelo en la búsqueda de CF debe distinguir entre mayúsculas y minúsculas.
-* SITES-25471: Fragmentos de contenido: corrige la validación de modelos globales en ModelValidatorServlet.
-* SITES-25795: Fragmentos de contenido: La API del modelo CF falla cuando no hay ninguna fecha cq establecida.
-* SITES-25817: Fragmentos de contenido: Mejorar promoteLaunch: actualizar la última promoción de lanzamientos CF.
-* SITES-26030: Fragmentos de contenido: El extremo /referencesTree no devuelve el encabezado necesario.
-* SITES-26031: Fragmentos de contenido: El estado de replicación no se devuelve en el extremo de búsqueda CFM.
+* SITES-26253: Fragmentos de contenido: migración UUID: cambio del tema del trabajo de Sling para que sea genérico.
+* SITES-21338: Fragmentos de contenido: el punto final referencedBy no devuelve la referencia de página correcta.
+* SITES-24421: Fragmentos de contenido: el punto final Editar CF no funciona para CF recuperado a través de GET CF.
+* SITES-25461: Fragmentos de contenido: el filtro por modelo en la búsqueda de CF no debe distinguir entre mayúsculas y minúsculas.
+* SITES-25471: Fragmentos de contenido: corrección de la validación de modelos globales en ModelValidatorServlet.
+* SITES-25795: Fragmentos de contenido: la API del modelo CF falla cuando no hay ninguna fecha cq establecida.
+* SITES-25817: Fragmentos de contenido: mejora de promoteLaunch: actualización de la última promoción de lanzamientos CF.
+* SITES-26030: Fragmentos de contenido: el punto final /referencesTree no devuelve el encabezado necesario.
+* SITES-26031: Fragmentos de contenido: el estado de replicación no se devuelve en el punto final de búsqueda CFM.
 * SITES-26213: Fragmentos de contenido: los fragmentos de contenido para cancelar la publicación solo deben validar las referencias publicadas.
-* SITES-26226: Fragmentos de contenido: inicia un problema del flujo de trabajo cuando ninguna de las rutas dadas es utilizable.
-* SITES-26238: Fragmentos de contenido: Las referencias de recurso devueltas por la API tienen un orden diferente al orden de JCR.
-* SITES-25456: Events: Al mover una página, se genera un evento eliminado por la página además del evento movido por la página.
-* SITES-25658: Events: el nivel y sourceUrl no se rellenan en los eventos de estado de contenido de la página.
-* SITES-6497: Lanzamientos: la página de creación del lanzamiento no funciona.
+* SITES-26226: Fragmentos de contenido: inicio de un problema del flujo de trabajo cuando ninguna de las rutas dadas es utilizable.
+* SITES-26238: Fragmentos de contenido: las referencias de recurso devueltas por la API tienen un orden diferente al orden de JCR.
+* SITES-25456: Eventos: al mover una página, se genera un evento eliminado por la página, además del evento movido por la página.
+* SITES-25658: Eventos: el nivel y sourceUrl no se rellenan en los eventos de estado de contenido de la página.
+* SITES-6497: Lanzamientos: crear página en lanzamiento no funciona.
 * SITES-25938: Lanzamientos: eliminación inesperada después de traducir el proyecto.
-* SITES-25393: Edge Delivery con editor universal: nodos de texto que se pierden al procesar texto enriquecido con formato de párrafo único.
-* SITES-24643: Edge Delivery con el editor universal: los atributos de metadatos OpenGraph y twitter no funcionan en el modelo de metadatos de página.
+* SITES-25393: Edge Delivery con editor universal: pérdida de nodos de texto al procesar texto enriquecido con formato de párrafo único.
+* SITES-24643: Edge Delivery con editor universal: los atributos de metadatos OpenGraph y twitter no funcionan en el modelo de metadatos de página.
 * SITES-25401: Fragmentos de experiencia: actualización de referencia de XF lenta
+* GRANITE-53907: No se puede identificar el usuario de servicio como superusuario del flujo de trabajo
+* AEM CQ-4358028: la creación del proyecto de la falla cuando un usuario con un grupo solo de administradores de proyectos carga una nueva miniatura en la página de creación del proyecto.
+* FORMS-15682: El problema implica la integración de AEM Forms y Dynamics FDM. Cuando un usuario envía un formulario, el documento de registro (DOR) no se envía como datos adjuntos del PDF al campo de entidad especificado.
+* FORMS-15799: La página de firma de Adobe Sign GovCloud no se representa en el iframe
+* FORMS-16113: Cuando un usuario, que es administrador de la cuenta de Adobe Sign, intenta acceder a un documento enviado por otro usuario (también administrador), la API de obtención de acuerdo puede devolver un ID de acuerdo diferente al generado inicialmente cuando se creó el acuerdo.
 
 
 ### Problemas conocidos {#known-issues-18459}
