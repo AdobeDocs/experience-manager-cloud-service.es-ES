@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2704'
 ht-degree: 7%
 
 ---
@@ -60,6 +60,7 @@ Cuando abra el Editor de fragmentos de contenido por primera vez, verá cuatro �
    * en **Propiedades** puede actualizar la pestaña **Título** y **Descripción** para el fragmento o **Variación**
 * panel central: muestra los campos y el contenido reales de la variación seleccionada
    * permite editar el contenido
+      * cuando se configura (como múltiple) en el modelo, varios tipos de datos le permiten **agregar** instancias del campo correspondiente
    * si los campos **Marcador de pestaña** se definen dentro del modelo, se mostrarán aquí y se podrán usar para navegar; se presentarán horizontalmente o como una lista desplegable.
 
   >[!NOTE]

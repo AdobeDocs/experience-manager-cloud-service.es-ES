@@ -5,10 +5,10 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 862a1f67782775cc1b2ee6e3d3d66ae5560a15ab
 workflow-type: tm+mt
-source-wordcount: '3011'
-ht-degree: 86%
+source-wordcount: '3120'
+ht-degree: 78%
 
 ---
 
@@ -106,36 +106,59 @@ El modelo de fragmento de contenido define de manera efectiva la estructura de l
 Hay disponible una selección de tipos de datos para definir el modelo:
 
 * **Texto de línea única**
-   * Añada uno o más campos de una sola línea de texto; se puede definir la longitud máxima
+   * Agregue un campo para una sola línea de texto; se puede definir la longitud máxima
+   * El campo se puede configurar para permitir que los autores de fragmentos creen nuevas instancias del campo
+
 * **Texto multilínea**
    * Un área de texto que puede ser Texto enriquecido, Texto sin formato o Markdown
+   * El campo se puede configurar para permitir que los autores de fragmentos creen nuevas instancias del campo
+
+  >[!NOTE]
+  >
+  Si el área de texto es Texto enriquecido, Texto sin formato o Markdown, se define en el modelo mediante la propiedad **Tipo predeterminado**.
+  >
+  Este formato no se puede cambiar desde el [editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md), sino solamente desde el modelo.
+
 * **Número**
-   * Adición de uno o más campos numéricos
+   * Añadir un campo numérico
+   * El campo se puede configurar para permitir que los autores de fragmentos creen nuevas instancias del campo
+
 * **Booleana**
    * Adición de una casilla de verificación booleana
+
 * **Fecha y hora**
-   * Adición de una fecha u hora
+   * Adición de un campo de fecha u hora
+
 * **Lista desglosada**
-   * Agregar un conjunto de casillas de verificación, botones de opción o campos de lista desplegable
+   * Agregar un conjunto de campos de casilla de verificación, botones de opción o desplegables
+      * Puede especificar las opciones disponibles para el autor del fragmento
+
 * **Etiquetas**
    * Permite a los autores de fragmentos acceder y seleccionar áreas de etiquetas
+
 * **Referencia de contenido**
    * Referencias a otros contenidos, de cualquier tipo; se pueden usar para [crear contenido anidado](#using-references-to-form-nested-content)
    * Si se hace referencia a una imagen, puede optar por mostrar una miniatura
+   * El campo se puede configurar para permitir que los autores de fragmentos creen nuevas instancias del campo
+
 * **Referencia a fragmento**
    * Referencias a otros fragmentos de contenido; se pueden usar para [crear contenido anidado](#using-references-to-form-nested-content)
-   * El tipo de datos se puede configurar para que los autores de fragmentos puedan hacer lo siguiente:
-      * Editar directamente el fragmento al que se hace referencia.
-      * Crear un nuevo fragmento de contenido basado en el modelo apropiado
+   * El campo se puede configurar para que los autores de fragmentos puedan hacer lo siguiente:
+      * Editar directamente el fragmento referenciado
+      * Crear un nuevo fragmento de contenido basado en el modelo adecuado
+      * Crear nuevas instancias del campo
+
 * **Objeto JSON**
    * Permite al autor del fragmento de contenido introducir la sintaxis JSON en los elementos correspondientes de un fragmento.
       * Para permitir que AEM almacene el JSON directo que ha copiado/pegado desde otro servicio.
       * El JSON se pasará y se emitirá como JSON en GraphQL.
       * Incluye resaltado de sintaxis JSON, autocompletado y resaltado de errores en el editor de fragmentos de contenido.
+
 * **Marcador de posición de pestaña**
    * Permite la introducción de pestañas para utilizarlas al editar el contenido del fragmento de contenido.
-Esto se muestra como un divisor en el editor de modelos, que separa las secciones de la lista de tipos de datos de contenido. Cada instancia representa el inicio de una nueva pestaña.
-En el editor de fragmentos, cada instancia aparecerá como una pestaña.
+      * Se muestran como divisores en el editor de modelos, que separan las secciones de la lista de tipos de datos de contenido. Cada instancia representa el inicio de una nueva pestaña.
+      * En el editor de fragmentos, cada instancia aparece como una pestaña.
+
      >[!NOTE]
      >
      Este tipo de datos se utiliza exclusivamente para dar formato; el esquema AEM GraphQL lo ignora.

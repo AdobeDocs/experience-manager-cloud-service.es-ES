@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 7afa76f62791cf7f34c39a09c5b80c6459028e5b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 40%
+source-wordcount: '1818'
+ht-degree: 39%
 
 ---
 
@@ -20,7 +20,7 @@ Con Adobe Experience Manager AEM () as a Cloud Service, los fragmentos de conten
 >
 >Se puede acceder a los fragmentos de contenido desde dos consolas: **Fragmentos de contenido** y **Assets**.
 >
->También hay dos editores disponibles para los fragmentos de contenido. (Se puede acceder a ambos editores desde ambas consolas).
+>También hay dos editores para crear fragmentos de contenido; aunque la funcionalidad básica es la misma, hay algunas diferencias. Ambos editores son accesibles desde ambas consolas.
 >
 >Esta sección trata sobre la consola **Fragmentos de contenido** y el *nuevo* editor de fragmentos de contenido. Se han desarrollado para la entrega de contenido sin encabezado (aunque se pueden utilizar en todos los casos)
 >
