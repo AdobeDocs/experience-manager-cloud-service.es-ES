@@ -1,8 +1,8 @@
 ---
-source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
+source-git-commit: f3502de1aebd44a056e1263b059e1588243f5845
 workflow-type: tm+mt
-source-wordcount: '1274'
-ht-degree: 93%
+source-wordcount: '1259'
+ht-degree: 92%
 
 ---
 # Fragmentos de código {#snippets}
@@ -214,7 +214,7 @@ Si un problema del producto requiere una investigación y resolución de problem
 
 Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge Delivery en Cloud Manager. Se recomienda registrar su sitio web con Cloud Manager para todos los usuarios de AEM as a Cloud Service y [esto aporta una serie de ventajas](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Consulte [la documentación de Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) para obtener más información si aún no ha registrado el sitio.
 
-Una vez registrado el sitio web con Cloud Manager, siga este proceso utilizando Admin Console para enviar un vale de asistencia:
+**Para registrar un vale de soporte técnico:**
 
 1. [Siga el proceso de asistencia estándar](https://experienceleague.adobe.com/?support-tab=home#support) y cree un vale.
 1. Añada **Edge Delivery** en el título del ticket.
