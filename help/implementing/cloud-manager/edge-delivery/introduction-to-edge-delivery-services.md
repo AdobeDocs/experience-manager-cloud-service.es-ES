@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo entregar sus proyectos de Cloud Ma
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: abd0fa0ea3e6e18187bcb60731ec6fe823a98e45
+source-git-commit: 0fb5476b4cff9e26971696bd8352181a71e7b3e4
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '766'
 ht-degree: 10%
 
 ---
@@ -63,13 +63,13 @@ Se pueden agregar Edge Delivery Services de varias formas diferentes, en funció
 >* Una vez que la licencia de Edge Delivery Services se aplica a un programa o se elimina de él, el cambio entra en vigor inmediatamente sin necesidad de ejecutar una canalización.
 
 
-## Acerca de la lista de tareas pendientes de Edge Delivery {#ed-todo-list}
+## Acerca de la lista de tareas pendientes de Edge Delivery en Cloud Manager {#ed-todo-list}
 
 <!-- &#x2460; for "1" inside circle -->
 
-La **lista de tareas pendientes de Edge Delivery** es una lista de comprobación de tareas de incorporación diseñada para guiarle a través de la incorporación, y administrar su sitio de Edge Delivery hasta [Go-Live](/help/journey-onboarding/go-live-checklist.md).
+La **lista de tareas pendientes de Edge Delivery** en Cloud Manager es una lista de comprobación de tareas de incorporación diseñada para guiarle a través de la incorporación y administrar su sitio de Edge Delivery hasta [Go-Live](/help/journey-onboarding/go-live-checklist.md).
 
-![Lista de tareas pendientes del sitio de Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+![Lista de tareas pendientes del sitio de Edge Delivery en Cloud Manager](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | Tarea | Descripción |
 | --- | --- | --- |

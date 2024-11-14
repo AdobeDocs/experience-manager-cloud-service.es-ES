@@ -1,13 +1,13 @@
 ---
-title: Configurar invalidación push
-description: Obtenga información acerca de cómo configurar la invalidación push para crear su propia CDN de producción.
+title: Configuración de la invalidación push para un sitio de Edge Delivery
+description: Descubra cómo configurar la invalidación push para un sitio de Edge Delivery a fin de garantizar actualizaciones de contenido y un control de almacenamiento en caché eficientes.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
-source-git-commit: abd0fa0ea3e6e18187bcb60731ec6fe823a98e45
+source-git-commit: 1a391837ded0af0c5bb436c34a5818f418436308
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '172'
 ht-degree: 2%
 
 ---
