@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 9a653fbe13b29fa60af7410fff178cbac6ca554d
 workflow-type: tm+mt
 source-wordcount: '842'
-ht-degree: 74%
+ht-degree: 93%
 
 ---
 
@@ -27,7 +27,7 @@ La activación de funcionalidades 2024.11.0 proporcionará el conjunto completo 
 * CQ-4357471: Adición de compatibilidad con la traducción de diccionarios de i18n en AEMaaCS.
 * FORMS-11646: configuración de variables de contexto global para páginas relevantes de AEM Forms.
 * FORMS-14833: AEM Forms ahora tiene la capacidad de incluir fragmentos de formulario adaptable en el documento de registro (DoR) final.
-* FORMS-14255: los usuarios ahora pueden beneficiarse de una función de guardado automático que guarda automáticamente un formulario parcialmente completado como borrador. Pueden volver más tarde para terminar de rellenarlo en el mismo u otro dispositivo.
+* FORMS-14255: los usuarios ahora pueden beneficiarse de una función de guardado automático que, de manera automática, guarda como borrador un formulario parcialmente completado. Pueden volver más tarde para terminar de rellenarlo en el mismo dispositivo o en otro distinto. 
 * SITES-23591: Fragmentos de contenido: actualización de los fragmentos de contenido para admitir UUID.
 * SITES-25440: Fragmentos de contenido: API de búsqueda de CFM muestra el estado de replicación.
 * SITES-24369: Fragmentos de contenido: mejoras en la documentación de OpenAPI.
@@ -40,11 +40,11 @@ La activación de funcionalidades 2024.11.0 proporcionará el conjunto completo 
 ### Problemas solucionados {#fixed-issues-18598}
 
 * CQ-4358730: CQPagePreviewGenerator falla cuando hay más de 10 claves por traducir.
-* AEM CQ-4358028: la creación del proyecto de la falla cuando un usuario con un grupo solo de administradores de proyectos carga una nueva miniatura en la página de creación del proyecto.
+* CQ-4358028: la creación del proyecto de AEM falla cuando un usuario con un grupo solo de administradores de proyectos carga una nueva miniatura en la página de creación del proyecto.
 * FORMS-14978: Habilitación de la carga de página para un formulario basado en componentes principales para el editor de temáticas.
-* FORMS-15682: El problema implica la integración de AEM Forms y Dynamics FDM. Cuando un usuario envía un formulario, el documento de registro (DOR) no se envía como datos adjuntos del PDF al campo de entidad especificado.
+* FORMS-15682: el problema implica la integración de AEM Forms y Dynamics FDM. Cuando un usuario envía un formulario, el documento de registro (DOR) no se envía como archivo adjunto del PDF al campo de entidad especificado.
 * FORMS-15799: La página de firma de Adobe Sign GovCloud no se representa en el iframe.
-* FORMS-16113: Cuando un usuario, que es administrador de la cuenta de Adobe Sign, intenta acceder a un documento enviado por otro usuario (también administrador), la API de obtención de acuerdo puede devolver un ID de acuerdo diferente al generado inicialmente cuando se creó el acuerdo.
+* FORMS-16113: Cuando un usuario, que es administrador de la cuenta de Adobe Sign, intenta acceder a un documento enviado por otro usuario (también administrador), la API de obtención de acuerdo puede devolver un ID de acuerdo diferente al generado en un inicio cuando se creó el acuerdo.
 * FORMS-16596: Problema de accesibilidad: el lector de pantalla no reconoce los botones desactivados.
 * GRANITE-53907: No se puede identificar el usuario de servicio como superusuario de flujo de trabajo.
 * SKYOPS-90560: La última versión del modelo Sling afecta al rendimiento de la exportación del modelo Sling.

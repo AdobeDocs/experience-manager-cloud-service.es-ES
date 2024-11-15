@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 2b34b23c05ff125a24fb0969d0239a384e773011
 workflow-type: tm+mt
 source-wordcount: '1633'
-ht-degree: 89%
+ht-degree: 98%
 
 ---
 
@@ -103,17 +103,17 @@ Los administradores ahora pueden controlar si necesitan que los activos caducado
 
 ### Nueva función en AEM Forms {#forms-new-features}
 
-* [Mejorar la experiencia del usuario con botones de navegación en los diseños de panel](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button): ahora puede agregar botones de navegación a los diseños de panel, como fichas horizontales, fichas verticales, acordeones o asistente. Estos botones mejoran la experiencia del usuario al simplificar las transiciones entre paneles, centrándose en el panel seleccionado.
+* [Mejorar la experiencia del usuario con botones de navegación en los diseños de panel](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button): ahora puede añadir botones de navegación a los diseños de panel, como Pestañas horizontales, Pestañas verticales, Acordeones o el Asistente. Estos botones mejoran la experiencia del usuario al simplificar las transiciones entre paneles y se centran en el panel seleccionado.
 
 <!--* **Specify Display Styles for Document of Record (DoR) Components**: In an XFA file, you can now specify the display styles for Document of Record components. These styles can later be applied to the corresponding components in Adaptive Forms Editor.-->
 
 ### Nuevas funciones en la versión preliminar de AEM Forms {#forms-new-prerelease-features}
 
-* [Guardar automáticamente un borrador para Forms adaptable basado en componentes principales](/help/forms/save-core-component-based-form-as-draft.md): los usuarios ahora pueden beneficiarse de una función de guardado automático que guarda automáticamente un formulario parcialmente completado como borrador. Pueden volver más tarde para terminar de rellenarlo en el mismo dispositivo o en otro distinto. Esta función mejora las tasas de conversión para las organizaciones al reducir el abandono de formularios, ya que los usuarios no tienen que volver a empezar a rellenar el formulario desde el principio.
+* [Guardar automáticamente un borrador para formularios adaptables basados en componentes principales](/help/forms/save-core-component-based-form-as-draft.md): los usuarios ahora pueden beneficiarse de una función de guardado automático que guarda automáticamente un formulario parcialmente completado como borrador. Pueden volver más tarde para terminar de rellenarlo en el mismo dispositivo o en otro distinto. Esta función mejora las tasas de conversión para las organizaciones al reducir el abandono de formularios, ya que los usuarios no tienen que volver a empezar a rellenar el formulario desde el principio.
 
-* [Actualizar los ámbitos de Adobe Sign fácilmente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms): puede modificar los ámbitos de una configuración de Adobe Sign AEM directamente desde la página Configuraciones de nube de, lo que facilita y agiliza la actualización de las configuraciones existentes.
+* [Actualizar los ámbitos de Adobe Sign fácilmente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms): puede modificar los ámbitos de una configuración de Adobe Sign directamente desde la página Configuraciones de nube de AEM, lo que facilita y agiliza la actualización de las configuraciones existentes.
 
-* [Compatibilidad con funciones asincrónicas para Forms adaptable](/help/forms/using-async-funct-in-rule-editor.md): cuando el formulario adaptable requiera operaciones asincrónicas, como esperar procesos externos o recuperar datos, puede implementar estas operaciones con funciones personalizadas y configurarlas en el Editor de reglas.
+* [Compatibilidad con funciones asincrónicas para formularios adaptables](/help/forms/using-async-funct-in-rule-editor.md): cuando el formulario adaptable requiera operaciones asincrónicas, como esperar procesos externos o recuperar datos, puede implementar estas operaciones con funciones personalizadas y configurarlas en el Editor de reglas.
 
 ### Funciones de acceso rápido de AEM Forms {#forms-new-early-access-features}
 
