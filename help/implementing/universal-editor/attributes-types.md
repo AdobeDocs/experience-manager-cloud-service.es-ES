@@ -4,10 +4,10 @@ description: Obtenga información sobre los atributos de datos y los tipos de el
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: edef86c67becf3b8094196d39baa9e69d6c81777
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 66%
+source-wordcount: '574'
+ht-degree: 46%
 
 ---
 
@@ -31,8 +31,8 @@ Para que el editor universal pueda editar una aplicación, debe instrumentarse c
 | `data-aue-resource` | Para el URN del recurso, consulte la sección [Instrumentación de la página del documento Introducción al editor universal en AEM](getting-started.md#instrument-thepage) |
 | `data-aue-prop` | Para el atributo del recurso, consulte la sección [Instrumentación de la página del documento Introducción al editor universal en AEM](getting-started.md#instrument-thepage) |
 | `data-aue-type` | [Tipo de elemento editable](#item-types) (por ejemplo, texto, imagen y referencia) |
-| `data-aue-filter` | Define qué referencias se pueden utilizar |
-| `data-aue-label` | Define una etiqueta personalizada para un elemento seleccionable que se muestra en el editor. <br>Si `data-aue-model` está configurado, la etiqueta se recupera mediante el modelo |
+| `data-aue-filter` | Define:<br>- Qué funcionalidades de RTE están habilitadas<br>- Qué componentes se pueden agregar a un contenedor<br>- Qué recursos se pueden agregar a un tipo de medios |
+| `data-aue-label` | Define una etiqueta personalizada para un elemento seleccionable que se muestra en el editor |
 | `data-aue-model` | Define un modelo que se utiliza para la edición basada en formularios en el panel de propiedades |
 | `data-aue-behavior` | Define el [comportamiento de una instrumentación](#behaviors); por ejemplo, el texto o la imagen independientes también pueden imitar un componente para hacerlo movible o eliminable |
 
@@ -47,10 +47,14 @@ Para que el editor universal pueda editar una aplicación, debe instrumentarse c
 | `component` | El componente editable es un componente. No añade ninguna funcionalidad adicional. Es necesario indicar las partes móviles o eliminables del DOM y para abrir el panel de propiedades y sus campos | Requerido | N/D | N/D | Opcional | Opcional | N/D |
 | `reference` | El editable es una referencia, por ejemplo, un fragmento de contenido, un fragmento de experiencia o un producto | Depende <br>consultar más abajo | Depende <br>consultar más abajo | Opcional<br>lista de criterios de filtro de fragmento de contenido, producto o fragmento de experiencia que se pasan al selector de referencia | Opcional | Opcional | N/D |
 
-Dependiendo del caso de uso, `data-aue-prop` o `data-aue-resource` pueden no ser obligatorios. Por ejemplo:
+`data-aue-resource` siempre es necesario, ya que es la clave principal que indica dónde se escriben los cambios de contenido.
 
-* `data-aue-resource` es necesario si consulta los fragmentos de contenido a través de GraphQL y desea que la lista sea editable en contexto.
-* `data-aue-prop` es necesario en caso de que tenga un componente que procese el contenido del fragmento de contenido al que se hace referencia y desee actualizar la referencia.
+* No se requiere directamente en la etiqueta donde está establecido `data-aue-type`.
+* En caso de que no se establezca, se utilizará el atributo `data-aue-resource` de como elemento principal más cercano.
+
+`data-aue-prop` es necesario siempre que desee editar en el contexto el, excepto para un contenedor en el que es opcional (si se establece, el contenedor es un fragmento de contenido y la prop apunta a un campo de referencias múltiples).
+
+* `data-aue-prop` es el atributo que se va a actualizar para la clave principal de `data-aue-resource`.
 
 ## Comportamientos {#behaviors}
 
