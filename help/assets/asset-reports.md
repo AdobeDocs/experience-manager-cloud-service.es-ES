@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 311230e2d6a395f9382af80df1cbe0fb25427874
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 9%
+source-wordcount: '991'
+ht-degree: 10%
 
 ---
 
 # Informes de recurso {#asset-reports}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación de desarrollador de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 | Versión | Vínculo del artículo |
@@ -26,7 +26,7 @@ Los informes de recursos le permiten evaluar la utilidad de su implementación d
 
 Utilice la información de los informes para derivar métricas de éxito clave para medir la adopción de [!DNL Assets] en su empresa y por parte de los clientes.
 
-El marco de informes [!DNL Assets] usa [!DNL Sling] trabajos para procesar de forma asincrónica las solicitudes de informes de forma ordenada. Es escalable para repositorios grandes. El procesamiento asincrónico de informes aumenta la eficacia y la velocidad con que se generan los informes.
+El marco de informes [!DNL Assets] usa [!DNL Sling] trabajos de forma asincrónica para procesar solicitudes de informes de forma ordenada. Es escalable para repositorios grandes. El procesamiento asincrónico de informes aumenta la eficacia y la velocidad con que se generan los informes.
 
 La interfaz de administración de informes es intuitiva e incluye opciones y controles específicos para acceder a informes archivados y ver los estados de ejecución de informes (correcto, fallido y en cola).
 
@@ -65,11 +65,11 @@ Los administradores de [!DNL Adobe Experience Manager] pueden generar y personal
    ![Página de herramientas para navegar por el informe de recursos](assets/navigation.png)
 
 1. En la página [!UICONTROL Informes de recursos], haga clic en **[!UICONTROL Crear]** en la barra de herramientas.
-1. En la página **[!UICONTROL Crear informe]**, elija el informe que desee crear y haga clic en **[!UICONTROL Siguiente]**.
+1. En la página **[!UICONTROL Crear informe]**, elija el informe que desee crear y haga clic en **[!UICONTROL Siguiente]**. AEM Asignarse a un **perfil de producto del administrador** para crear un informe de **Descarga**. AEM AEM Consulte [Asignación de perfiles de producto de](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) para obtener acceso a un perfil de producto de administrador de recursos de la aplicación de correo electrónico de la aplicación de correo electrónico.
 
    ![Seleccionar tipo de informe](assets/choose_report.png)
 
-1. Configure detalles del informe, como título, descripción, miniatura y ruta de la carpeta. De manera predeterminada, la ruta de la carpeta es `/content/dam`. Puede especificar una ruta diferente para ejecutar el informe en una carpeta específica.
+1. Configure los detalles del informe, como título, descripción, miniatura y ruta de la carpeta. De manera predeterminada, la ruta de la carpeta es `/content/dam`. Puede especificar una ruta diferente para ejecutar el informe en una carpeta específica.
 
    ![Página para agregar detalles del informe](assets/report_configuration.png)
 
@@ -103,7 +103,7 @@ Los administradores de [!DNL Adobe Experience Manager] pueden generar y personal
 
    ![Seleccionar o cancelar la selección de columnas del informe](assets/configure_columns.png)
 
-   Para mostrar un nombre de columna personalizado o una ruta de acceso a la propiedad, configure las propiedades del binario de recursos en el nodo `jcr:content` en CRX. Como alternativa, agréguela mediante el selector de rutas de propiedades.
+   Para mostrar un nombre de columna personalizado o una ruta de acceso a la propiedad, configure las propiedades del binario de recursos en el nodo `jcr:content` en CRX. También puede agregarlo a través de un selector de ruta de propiedad.
 
    ![Seleccionar o cancelar la selección de columnas del informe](assets/custom_columns.png)
 
