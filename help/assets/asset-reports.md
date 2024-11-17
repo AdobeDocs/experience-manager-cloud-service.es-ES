@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 311230e2d6a395f9382af80df1cbe0fb25427874
+source-git-commit: 6a03eb1a4ac8284299c1ffcf27d6a6c8a8b9abc4
 workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 10%
@@ -65,7 +65,11 @@ Los administradores de [!DNL Adobe Experience Manager] pueden generar y personal
    ![Página de herramientas para navegar por el informe de recursos](assets/navigation.png)
 
 1. En la página [!UICONTROL Informes de recursos], haga clic en **[!UICONTROL Crear]** en la barra de herramientas.
-1. En la página **[!UICONTROL Crear informe]**, elija el informe que desee crear y haga clic en **[!UICONTROL Siguiente]**. AEM Asignarse a un **perfil de producto del administrador** para crear un informe de **Descarga**. AEM AEM Consulte [Asignación de perfiles de producto de](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) para obtener acceso a un perfil de producto de administrador de recursos de la aplicación de correo electrónico de la aplicación de correo electrónico.
+1. En la página **[!UICONTROL Crear informe]**, elija el informe que desee crear y haga clic en **[!UICONTROL Siguiente]**.
+
+   >[!NOTE]
+   >
+   >AEM Asignarse a un **perfil de producto del administrador** para crear un informe de **Descarga**. AEM AEM Consulte [Asignación de perfiles de producto de](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) para obtener acceso a un perfil de producto de administrador de recursos de la aplicación de correo electrónico de la aplicación de correo electrónico.
 
    ![Seleccionar tipo de informe](assets/choose_report.png)
 
