@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: 33eb71b2828314ee2c75206ef7034313e2638360
+source-git-commit: 92da26452438f2b56cdec1aecc76587d4982f00e
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '763'
 ht-degree: 2%
 
 ---
@@ -16,10 +16,6 @@ ht-degree: 2%
 # Plantillas para crear páginas editables con el editor universal {#page-templates}
 
 Aprenda a crear plantillas que se puedan utilizar para crear páginas editables con el editor universal, lo que ahorra tiempo y garantiza una marca coherente.
-
->[!NOTE]
->
->Esta función estará disponible en una próxima versión de AEM as a Cloud Service.
 
 >[!NOTE]
 >

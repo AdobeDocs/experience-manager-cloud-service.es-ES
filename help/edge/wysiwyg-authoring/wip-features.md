@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Edge Delivery Services
 role: User
 exl-id: 21745f53-a7ef-4eec-9170-b267c2f4314e
-source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
+source-git-commit: 92da26452438f2b56cdec1aecc76587d4982f00e
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 4%
@@ -35,7 +35,7 @@ La siguiente lista presenta estas funciones de WIP y soluciones alternativas. Si
 | [Copia de idioma](/help/sites-cloud/administering/translation/overview.md) | Disponible parcialmente | Los componentes heredan el contenido, pero la herencia solo se puede revertir en el nivel de página | [Herencia de contenido en el editor universal](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
 | [Administración de varios sitios](/help/sites-cloud/administering/msm/overview.md) | Disponible parcialmente | Los componentes heredan el contenido, pero la herencia solo se puede revertir en el nivel de página | [Herencia de contenido en el editor universal](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
 | [Lanzamientos](/help/sites-cloud/authoring/launches/overview.md) | Disponible parcialmente | Los componentes heredan el contenido, pero la herencia solo se puede revertir en el nivel de página | [Herencia de contenido en el editor universal](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
-| [Plantillas de página](/help/sites-cloud/authoring/page-editor/templates.md) | ¡Muy pronto! | Las páginas creadas a partir de plantillas son copias independientes de la plantilla original. | [Uso de plantillas de página con el editor universal](/help/sites-cloud/authoring/universal-editor/templates.md) |
+| [Plantillas de página](/help/sites-cloud/authoring/page-editor/templates.md) | Disponible parcialmente | Las páginas creadas a partir de plantillas son copias independientes de la plantilla original. | [Uso de plantillas de página con el editor universal](/help/sites-cloud/authoring/universal-editor/templates.md) |
 | [Centro de contexto y destino](/help/sites-cloud/authoring/personalization/overview.md) | No disponible |  |  |
 | [Deformación de tiempo](/help/sites-cloud/authoring/launches/preview.md) | No disponible |  |  |
 | [Contenido asociado](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#associated-content-browser) | No disponible |  |  |
