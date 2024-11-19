@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo quitar objetos en caché de la cac
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 5b777171cb9246c2a0174985e060d7d1b6ed8591
+source-git-commit: e5e0606c83f144f92f9ae57e5380a30389e8df1b
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '469'
 ht-degree: 1%
 
 ---
@@ -74,6 +74,19 @@ curl
 ```
 
 Tenga en cuenta que el encabezado `X-AEM-Purge` debe incluir el valor &quot;todo&quot;.
+
+## Interacción con CDN administrado por el cliente
+
+En el caso de [CDN administrado por el cliente](/help/implementing/dispatcher/cdn.md#point-to-point-CDN), también se deben proporcionar `X-Forwarded-Host` y `X-AEM-Edge-Key`:
+
+```
+curl
+-X PURGE "https://publish-p1234-e5467.adobeaemcloud.com/resource-path" \
+-H 'X-AEM-Purge-Key: <my_purge_key>' \
+-H 'X-AEM-Edge-Key: <my_edge_key>' \
+-H 'X-Forwarded-Host: <my_forwarded_domain>'
+```
+
 
 ## Interacciones con la capa de Apache/Dispatcher {#apache-layer}
 
