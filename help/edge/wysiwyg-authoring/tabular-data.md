@@ -4,10 +4,10 @@ description: Aprenda a utilizar hojas de cálculo para administrar los datos tab
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 69c8e54bde6c6047fdefbbbb1f166af690584f88
+source-git-commit: 4e4234c1aaf0a410cb419140e9e353348ce118c1
 workflow-type: tm+mt
-source-wordcount: '1014'
-ht-degree: 92%
+source-wordcount: '1284'
+ht-degree: 73%
 
 ---
 
@@ -80,6 +80,52 @@ En este ejemplo, se crea una hoja de cálculo para administrar los redireccionam
    * Utilice la tecla de tabulación para desplazar el enfoque a la siguiente celda.
    * El editor añade nuevas filas a la hoja de cálculo según sea necesario.
    * Para eliminar o mover una fila, utilice el icono **Eliminar** al final de cada fila y los controladores de arrastre al principio de cada fila, respectivamente.
+
+## Importando datos de hoja de cálculo {#importing}
+
+AEM Además de editar las hojas de cálculo en el Editor de páginas de, también puede importar datos de un archivo CSV.
+
+1. AEM Al editar la hoja de cálculo en, pulse o haga clic en el botón **Cargar** en la parte superior izquierda de la pantalla.
+1. En la lista desplegable, seleccione cómo desea importar los datos.
+   * **Reemplazar documento** para reemplazar el contenido de toda la hoja de cálculo con el contenido del archivo CSV que va a cargar.
+   * **Anexar al documento** para anexar los datos del archivo CSV que cargará al contenido de la hoja de cálculo existente.
+1. En el cuadro de diálogo que se abre, seleccione el archivo CSV y, a continuación, toque o haga clic en **Abrir**.
+
+Se abre un cuadro de diálogo a medida que se procesa la importación. Una vez finalizado, los datos del archivo CSV se añaden o sustituyen al contenido de la hoja de cálculo. Si se encuentran errores como discrepancias en las columnas, se informa de ellos para que pueda corregir el archivo CSV.
+
+>[!NOTE]
+>
+>* Los encabezados del archivo CSV deben coincidir exactamente con las columnas de la hoja de cálculo.
+>* La importación de todo el CSV no modifica los encabezados de columna, solo las filas de contenido.
+>* AEM Si necesita actualizar las columnas, debe hacerlo en el Editor de páginas de la página de la antes de realizar la importación del CSV.
+>* Un archivo CSV no puede tener más de 10 MB para importar.
+
+Según su selección de `mode`, también puede `create`, `replace` o `append` a las hojas de cálculo utilizando un comando CSV y un comando cURL similar al siguiente.
+
+```text
+curl --request POST \
+  --url http://<aem-instance>/bin/asynccommand \
+  --header 'content-type: multipart/form-data' \
+  --form file=@/path/to/your.csv \
+  --form spreadsheetPath=/content/<your-site>/<your-spreadsheet> \
+  --form 'spreadsheetTitle=Your Spreadsheet' \
+  --form cmd=spreadsheetImport \
+  --form operation=asyncSpreadsheetImport \
+  --form _charset_=utf-8 \
+  --form mode=append
+```
+
+La llamada devuelve una página del HTML con información sobre el ID de trabajo.
+
+```text
+Message | Job(Id:2024/9/18/15/27/5cb0cacc-585d-4176-b018-b684ad2dfd02_90) created successfully. Please check status at Async Job Status Navigation.
+```
+
+[Puede usar la consola **Trabajos**](/help/operations/asynchronous-jobs.md) para ver el estado del trabajo o usar el identificador devuelto para consultarlo.
+
+```text
+https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da63f9e-066b-4134-95c9-21a9c57836a5_1
+```
 
 ## Publicación de un archivo path.json de una hoja de cálculo {#paths-json}
 
