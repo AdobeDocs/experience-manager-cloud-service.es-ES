@@ -4,9 +4,9 @@ description: Conozca las directrices y las prácticas recomendadas para utilizar
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 feature: Migration
 role: Admin
-source-git-commit: 208a4de5aab5326490908fade8f12f17b8f3c0d7
+source-git-commit: 943685ed9c33ba42c4dd1cb941b2eca1cce8bfe8
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1389'
 ht-degree: 14%
 
 ---
@@ -72,8 +72,6 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 
 * Si la opción **Borrar contenido existente en la instancia de Cloud antes de la ingesta** está habilitada, se eliminará todo el repositorio existente y se creará un nuevo repositorio en el que introducir contenido. Esto significa que restablece todos los ajustes, incluidos los permisos en la instancia del Cloud Service de destino. También es verdadero para un usuario administrador agregado al grupo **administradores**. Se debe leer al usuario en el grupo **administradores** para recuperar el token de acceso para la herramienta de transferencia de contenido.
 
-* Las ingestas no admiten la combinación de contenido de varias fuentes en la instancia del Cloud Service de destino si el contenido de las dos fuentes se mueve a las mismas rutas en el destino. Para mover contenido de varias fuentes a una sola instancia de Cloud Service de destino, asegúrese de que no haya superposición de las rutas de contenido de las fuentes.
-
 * La clave de extracción es válida durante 14 días desde el momento en que se creó o renovó. Se puede renovar en cualquier momento. Si la clave de extracción ha caducado, no se puede realizar una extracción.
 
 * La herramienta de transferencia de contenido (CTT) no realiza ningún tipo de análisis de contenido antes de transferir contenido de la instancia de origen a la instancia de destino. Por ejemplo, CTT no diferencia entre contenido publicado y no publicado al introducir contenido en un entorno de Publish. Independientemente del contenido especificado en el conjunto de migración, este se incorpora en la instancia de destino elegida. Un usuario puede ingerir un conjunto de migración en una instancia de autor, en una instancia de Publish o en ambas. El Adobe recomienda que, al mover contenido a una instancia de Production, CTT se instale en la instancia de Author de origen para mover contenido a la instancia de Author de destino. Del mismo modo, instale CTT en la instancia de Publish de origen para mover contenido a la instancia de Publish de destino. Consulte [Ejecución de la herramienta de transferencia de contenido en una instancia de Publish](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) para obtener más información.
@@ -91,6 +89,8 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 * Si tiene intención de realizar recargas, la estructura de contenido del contenido existente no debe cambiar desde el momento en que se realiza la extracción inicial hasta el momento en que se ejecuta la extracción superior. Las recargas no se pueden ejecutar en contenido cuya estructura se haya cambiado desde la extracción inicial. Asegúrese de restringir esto durante el proceso de migración.
 
 * Si tiene intención de incluir versiones como parte de un conjunto de migración y está realizando recargas con `wipe=false`, debe deshabilitar la depuración de versiones debido a una limitación actual en la herramienta de transferencia de contenido. Si prefiere mantener habilitada la depuración de versiones y realiza recargas en un conjunto de migración, debe realizar la ingesta como `wipe=true`.
+
+* La herramienta de transferencia de contenido (CTT) no admite las ingestas de combinación. Para consolidar contenido de varios sistemas en una única instancia de Cloud Service, solo se pueden migrar versiones de un sistema de origen. Este proceso requiere el uso de migraciones con el parámetro wipe=false, lo que puede resultar en tiempos de ingesta prolongados debido a la naturaleza incremental de la operación. Si es posible, consolide el contenido en un único sistema de origen antes de comenzar la migración para eliminar la necesidad de combinar contenido.
 
 * Un conjunto de migración caduca después de un período prolongado de inactividad, después del cual sus datos ya no están disponibles. Revise [Expiración del conjunto de migración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) para obtener más detalles.
 
