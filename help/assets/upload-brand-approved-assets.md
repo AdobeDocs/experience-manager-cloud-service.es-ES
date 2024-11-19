@@ -3,9 +3,9 @@ title: Cargue los recursos aprobados por la marca en  [!DNL Content Hub]
 description: Obtenga información sobre cómo cargar los recursos aprobados por la marca en Content Hub
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: 54300b9f27f1092a491820ab5279ee1633c6d53d
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '986'
 ht-degree: 7%
 
 ---
@@ -19,6 +19,12 @@ ht-degree: 7%
 
 | [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación de desarrollador de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>La guía de Content Hub ya está disponible en formato de PDF. Descargue toda la guía y utilice Adobe Acrobat AI Assistant para responder a sus consultas.
+>
+>[!BADGE PDF de guía de Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 [Los usuarios de Content Hub con derechos para agregar recursos](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) pueden agregarlos a Content Hub desde el sistema de archivos local o importarlos desde OneDrive o fuentes de datos de Dropbox. Todos los recursos se muestran en el nivel superior en Content Hub, independientemente de la estructura de carpetas disponible en el sistema de archivos local o en OneDrive y las fuentes de datos de Dropbox, para mejorar las funciones de búsqueda.
 

@@ -1,20 +1,26 @@
 ---
 title: Integración de AEM Assets remoto con AEM Sites
-description: AEM Obtenga información sobre cómo configurar y conectar sitios de con AEM Assets aprobado.
+description: AEM Obtenga información sobre cómo configurar y conectar sitios de con AEM Assets aprobados.
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 14%
+source-wordcount: '1029'
+ht-degree: 15%
 
 ---
 
 # Integración de AEM Assets remoto con AEM Sites  {#integrate-approved-assets}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación de desarrollador de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-La administración eficaz de los recursos digitales es crucial para ofrecer experiencias de marca atractivas y coherentes en varias plataformas en línea. Dynamic Media con funciones OpenAPI mejora la administración de recursos digitales al permitir una integración perfecta entre AEM Sites y AEM Assets as a Cloud Service. AEM Esta innovadora función le permite compartir y administrar fácilmente diferentes tipos de recursos digitales aprobados en varios entornos de trabajo, lo que optimiza los flujos de trabajo para los autores de sitios y editores de contenido.
+>[!AVAILABILITY]
+>
+>La guía de funciones de Dynamic Media con OpenAPI ya está disponible en formato de PDF. Descargue toda la guía y utilice Adobe Acrobat AI Assistant para responder a sus consultas.
+>
+>[!BADGE PDF de la Guía de Dynamic Media con funciones OpenAPI]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+
+La administración eficaz de los recursos digitales es crucial para ofrecer experiencias de marca atractivas y coherentes en varias plataformas en línea. Dynamic Media con funciones OpenAPI mejora la administración de recursos digitales al permitir una integración perfecta entre AEM Sites y los as a Cloud Service de los AEM Assets. AEM Esta innovadora función le permite compartir y administrar fácilmente diferentes tipos de recursos digitales aprobados en varios entornos de trabajo, lo que optimiza los flujos de trabajo para los autores de sitios y editores de contenido.
 
 Dynamic Media AEM con funciones OpenAPI permite a los autores de sitios utilizar recursos de DAM remoto directamente dentro del Editor de páginas de la y [Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html), lo que simplifica los procesos de creación y administración de contenido.
 
@@ -121,7 +127,7 @@ AEM Siga los siguientes pasos para utilizar recursos remotos dentro de un fragme
 
    >[!NOTE]
    >
-   >AEM Si no cuenta con el modelo de fragmento de contenido de, es posible que tenga que [crear uno](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en).
+   AEM Si no cuenta con el modelo de fragmento de contenido de, es posible que tenga que [crear uno](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en).
 
 1. Haga clic en el icono de ![marca de verificación](/help/assets/assets/do-not-localize/checkmark-icon.svg) junto al componente de texto.
 1. Seleccione **[!UICONTROL Remoto]** para recuperar el recurso del DAM remoto. <br>

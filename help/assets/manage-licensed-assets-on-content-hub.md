@@ -1,15 +1,21 @@
 ---
 title: Administración de Assets con licencia en Content Hub
 description: Obtenga información sobre cómo agregar un campo de licencia al formulario de metadatos del recurso, aplicar la propiedad Metadatos de licencia a las carpetas de recursos y aprobar recursos con licencias para su uso.
-source-git-commit: 9324faf8c93620f5fccb1476eb124f5e640f193e
+exl-id: ac3aad9f-c7b3-47a7-9314-a2f8277f0d3e
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '279'
 ht-degree: 1%
 
 ---
 
-
 # Administración de Assets con licencia en Content Hub {#manage-licensed-assets-on-content-hub}
+
+>[!AVAILABILITY]
+>
+>La guía de Content Hub ya está disponible en formato de PDF. Descargue toda la guía y utilice Adobe Acrobat AI Assistant para responder a sus consultas.
+>
+>[!BADGE PDF de guía de Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 AEM Como administrador, edite el formulario de metadatos para incluir el campo de licencia de recursos de modo que se muestre en las propiedades del recurso en el entorno de creación de recursos en el que se crea el. A continuación, puede aprobar el recurso y su licencia para que el recurso tenga licencia y esté disponible en Content Hub.
 
@@ -22,6 +28,3 @@ Ejecute los siguientes pasos:
 1. Seleccione el recurso y haga clic en **Detalles** para ver sus propiedades. En el campo de licencia añadido en el paso 1, defina la ruta absoluta para la licencia de recurso que se ha aprobado en el paso 3 o que ya se ha aprobado anteriormente. La ruta absoluta de Content Hub sigue este patrón estándar: `/content/dam/(The asset's folder hierarchy within the DAM repository)/(asset_name).(file_extension)`. Por ejemplo, /content/dam/teamA/projects/documents/file1.pdf
    ![ruta absoluta](/help/assets/assets/absolute-path.png)
 1. Apruebe el recurso para que esté disponible en Content Hub y haga clic en **Guardar**. Para obtener información sobre cómo aprobar un recurso, consulte [Establecer el estado del recurso](/help/assets/manage-organize-assets-view.md#set-asset-status).
-
-
-

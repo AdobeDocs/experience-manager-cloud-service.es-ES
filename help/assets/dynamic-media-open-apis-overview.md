@@ -3,17 +3,23 @@ title: Dynamic Media con funciones de OpenAPI
 description: Conozca conceptos clave como por qué utilizar Dynamic Media con las capacidades de OpenAPI y cómo habilitarlo.
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 1%
+source-wordcount: '1109'
+ht-degree: 2%
 
 ---
 
 # Dynamic Media con funciones de OpenAPI {#new-dynaminc-media-apis-overview}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Documentación de desarrollador de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|-----|
+
+>[!AVAILABILITY]
+>
+>La guía de funciones de Dynamic Media con OpenAPI ya está disponible en formato de PDF. Descargue toda la guía y utilice Adobe Acrobat AI Assistant para responder a sus consultas.
+>
+>[!BADGE PDF de la Guía de Dynamic Media con funciones OpenAPI]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 En el acelerado mundo digital actual, desbloquear todo el potencial de los activos digitales de su marca es crucial para mantenerse por delante de la competencia. Una solución integral de administración de Assets digital (DAM) facilita la administración de los recursos, promueve la coherencia de la marca y acelera la entrega de contenido a la vez que garantiza la integridad de la marca y experiencias de cliente excepcionales.
 
@@ -25,7 +31,7 @@ Dynamic Media con funciones de OpenAPI ofrece las siguientes ventajas clave:
 
 * **Integraciones perfectas**: Dynamic Media con capacidades OpenAPI ofrece un conjunto completo de API de búsqueda y entrega. Permite a los desarrolladores [integrar fácilmente la entrega de recursos con sus aplicaciones](/help/assets/integrate-dynamic-media-open-apis.md). Las aplicaciones incluyen aplicaciones de Adobe y de terceros. Proporciona una [interfaz de usuario del selector de recursos de Micro Frontend](/help/assets/overview-asset-selector.md) para buscar y seleccionar recursos aprobados. El selector se puede integrar fácilmente con cualquier aplicación basada en marcos de trabajo de JavaScript como React JS, Angular JS y Vanilla JS.
 
-* **Administración centralizada de recursos digitales**: DAM es la única fuente fiable para todos los recursos digitales. Los recursos digitales se administran de forma centralizada en AEM Assets y se entregan a las aplicaciones consumidoras por referencia mediante direcciones URL de entrega, sin copiar los binarios de recursos.
+* **Administración centralizada de recursos digitales**: DAM es la única fuente fiable para todos los recursos digitales. Los recursos digitales se administran de forma centralizada en los AEM Assets y se entregan a las aplicaciones consumidoras por referencia mediante direcciones URL de entrega, sin copiar los binarios de recursos.
 
 * **Actualizaciones en tiempo real**: Cualquier cambio realizado en los recursos aprobados en DAM, incluidas las actualizaciones de la versión y las modificaciones de metadatos, se refleja automáticamente en las direcciones URL de envío. Con un valor corto de tiempo de vida (TTL) de 10 minutos configurado para Dynamic Media con funciones de OpenAPI a través de CDN, las actualizaciones se pueden ver en todas las interfaces de creación y publicación en menos de 10 minutos.
 
@@ -65,7 +71,7 @@ Para habilitar Dynamic Media con las funcionalidades de OpenAPI en AEM as a Clou
 
   >[!NOTE]
   >
-  > Para integrarse con una aplicación que no sea de Adobe, proporcione nombres de dominio a la lista de permitidos donde se aloja la aplicación.
+  Para integrarse con una aplicación que no sea de Adobe, proporcione nombres de dominio a la lista de permitidos donde se aloja la aplicación.
 
 * Detalles de los contactos de cliente clave implicados en el proyecto de integración.
 
@@ -75,7 +81,7 @@ Una vez enviado el vale de soporte, el Adobe permite a Dynamic Media usar las fu
 
 >[!NOTE]
 >
->Excluya a `/conf/global/settings/dam/assets-configurations/assetdelivery` de cualquier paquete de contenido para evitar la desactivación de Dynamic Media con las capacidades de OpenAPI.
+Excluya a `/conf/global/settings/dam/assets-configurations/assetdelivery` de cualquier paquete de contenido para evitar la desactivación de Dynamic Media con las capacidades de OpenAPI.
 
 ## Profundizar más en las funcionalidades clave {#learn-more-key-capabilities}
 
@@ -90,7 +96,7 @@ Una vez enviado el vale de soporte, el Adobe permite a Dynamic Media usar las fu
       </a>
    </div>
    <p>
-      <em>Apruebe recursos en AEM Assets para optimizar la administración de recursos, lo que garantiza un proceso controlado y eficiente para administrar los recursos.</em>
+      <em>Apruebe recursos en AEM Assets para optimizar la administración de recursos, lo que garantiza un proceso controlado y eficiente para administrar recursos.</em>
    </p>
 </td>
 <td>
@@ -116,7 +122,7 @@ Una vez enviado el vale de soporte, el Adobe permite a Dynamic Media usar las fu
       </a>
    </div>
    <p>
-      <em>Interfaz de usuario que interactúa con el repositorio de AEM Assets para buscar recursos y utilizarlos en la experiencia de creación de aplicaciones.</em>
+      <em>Interfaz de usuario que interactúa con el repositorio de AEM Assets para buscar recursos y, a continuación, utilizarlos en la experiencia de creación de aplicaciones.</em>
    </p>
 </td>
 </table>
@@ -173,11 +179,11 @@ Una vez enviado el vale de soporte, el Adobe permite a Dynamic Media usar las fu
    </a>
    <div>
       <a href="/help/assets/integrate-remote-approved-assets-with-sites.md">
-      <strong>Integrar AEM Assets remoto con AEM Sites</strong>
+      <strong>Integrar AEM Assets remotos con AEM Sites</strong>
       </a>
    </div>
    <p>
-      <em>Aprenda a integrar AEM Assets remoto con el entorno de AEM Sites. </em>
+      <em>Aprenda a integrar AEM Assets remotos con el entorno de AEM Sites. </em>
    </p>
 </td>
 <td>

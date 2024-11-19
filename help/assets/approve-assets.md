@@ -3,9 +3,9 @@ title: Aprobar recursos en el Experience Manager
 description: Obtenga información sobre cómo aprobar recursos en  [!DNL Experience Manager].
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '747'
 ht-degree: 4%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 4%
 
 | [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación de desarrollador de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>La guía de funciones de Dynamic Media con OpenAPI ya está disponible en formato de PDF. Descargue toda la guía y utilice Adobe Acrobat AI Assistant para responder a sus consultas.
+>
+>[!BADGE PDF de la Guía de Dynamic Media con funciones OpenAPI]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Los responsables de marca y los especialistas en marketing mantienen un control estricto sobre los recursos de marca. Solo está disponible la versión aprobada y más reciente del recurso para su uso, lo que garantiza la coherencia de la marca en todos los canales y aplicaciones.
 
@@ -36,7 +42,7 @@ Si necesita ver la propiedad a la que está asignado el campo **[!UICONTROL Esta
 
 >[!NOTE]
 >
->Si los recursos o carpetas tienen un esquema predeterminado diferente, asegúrese de realizar esta actualización en ese esquema en particular.
+Si los recursos o carpetas tienen un esquema predeterminado diferente, asegúrese de realizar esta actualización en ese esquema en particular.
 
 ## Aprobación de recursos {#approve-assets}
 
@@ -78,7 +84,7 @@ Optimice su flujo de trabajo aprobando rápidamente varios recursos a la vez. Pu
 
 >[!NOTE]
 > 
->Este método aprueba los recursos recién creados en la carpeta. Para los recursos existentes en la carpeta, debe seleccionarlos y aprobarlos manualmente. <br> También puede usar la opción **[!UICONTROL Reprocesar]** para aplicar los cambios del perfil de metadatos a los recursos más antiguos.
+Este método aprueba los recursos recién creados en la carpeta. Para los recursos existentes en la carpeta, debe seleccionarlos y aprobarlos manualmente. <br> También puede usar la opción **[!UICONTROL Reprocesar]** para aplicar los cambios del perfil de metadatos a los recursos más antiguos.
 
 Del mismo modo, para aprobar recursos de forma masiva dentro de una carpeta en la vista Assets:
 
@@ -105,6 +111,6 @@ Para copiar la URL de envío de un recurso aprobado dentro del repositorio:
 
    >[!NOTE]
    >
-   >La opción para copiar la URL de envío para los recursos aprobados solo está disponible en la vista de Assets.
+   La opción para copiar la URL de envío para los recursos aprobados solo está disponible en la vista de Assets.
 
 Para obtener información sobre otras representaciones que se muestran en el panel Dynamic Media, consulte [Ver y descargar representaciones de Dynamic Media](/help/assets/renditions.md#view-download-dm-renditions).

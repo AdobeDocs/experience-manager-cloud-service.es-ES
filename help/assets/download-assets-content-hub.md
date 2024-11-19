@@ -3,9 +3,9 @@ title: Descarga de recursos desde Content Hub
 description: Obtenga información sobre cómo descargar recursos desde el portal de Content Hub
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 76337282b7d3008864763541a957c44327e1a5be
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '554'
 ht-degree: 3%
 
 ---
@@ -17,6 +17,12 @@ ht-degree: 3%
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Descarga de recursos](assets/download-asset-genstudio.jpeg)
+
+>[!AVAILABILITY]
+>
+>La guía de Content Hub ya está disponible en formato de PDF. Descargue toda la guía y utilice Adobe Acrobat AI Assistant para responder a sus consultas.
+>
+>[!BADGE PDF de guía de Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Content Hub le permite descargar y compartir sus recursos. Estos recursos pueden incluir imágenes, vídeos o cualquier otro contenido digital. Content Hub mejora la accesibilidad y la adaptabilidad para una distribución eficaz de los recursos.
 
@@ -36,7 +42,7 @@ También puede hacer clic en ![descargar](/help/assets/assets/download-icon.svg)
 
      >[!NOTE]
      >
-     >La casilla de verificación Términos y condiciones solo se muestra para los recursos con licencia. Además, el cuadro de diálogo de recursos muestra una vista previa de los términos y condiciones de licencia únicamente para los recursos con licencias aprobadas. [Apruebe la licencia del recurso](/help/assets/approve-assets-content-hub.md) antes de la descarga para habilitar la vista previa de los términos de licencia en el cuadro de diálogo del recurso.
+     La casilla de verificación Términos y condiciones solo se muestra para los recursos con licencia. Además, el cuadro de diálogo de recursos muestra una vista previa de los términos y condiciones de licencia únicamente para los recursos con licencias aprobadas. [Apruebe la licencia del recurso](/help/assets/approve-assets-content-hub.md) antes de la descarga para habilitar la vista previa de los términos de licencia en el cuadro de diálogo del recurso.
 
    * Haga clic en **Cuadro de representación original** para volver a la representación del recurso original en el panel izquierdo.
 1. Acepte los términos y condiciones de la licencia (para el recurso con licencia) y haga clic en **Descargar** para descargar el recurso.
@@ -48,13 +54,13 @@ También puede hacer clic en ![descargar](/help/assets/assets/download-icon.svg)
 
    >[!NOTE]
    >
-   >[Habilite la opción de descarga para los recursos caducados](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) para descargarlos. Solo los recursos caducados que hayan habilitado la descarga están disponibles para su descarga.
+   [Habilite la opción de descarga para los recursos caducados](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) para descargarlos. Solo los recursos caducados que hayan habilitado la descarga están disponibles para su descarga.
 
    <a id="Download-asset-dialog-box"></a> **Cuadro de diálogo Descargar recursos:** Este cuadro de diálogo muestra la lista de licencias asociadas con los recursos seleccionados en el panel izquierdo. Seleccione una licencia para obtener una vista previa de sus términos y condiciones (en formato pdf) en el panel central, y la vista previa de los recursos asociados y su recuento en el panel derecho. Las licencias revisadas aparecen resaltadas en azul claro.
 
    >[!NOTE]
    >
-   > El **cuadro de diálogo Descargar recurso** muestra una vista previa de los términos y condiciones de licencia únicamente para las licencias aprobadas. [Apruebe las licencias de los recursos](/help/assets/approve-assets-content-hub.md) antes de descargarlas para obtener una vista previa de sus términos de licencia en el **cuadro de diálogo Descargar recurso**.
+   El **cuadro de diálogo Descargar recurso** muestra una vista previa de los términos y condiciones de licencia únicamente para las licencias aprobadas. [Apruebe las licencias de los recursos](/help/assets/approve-assets-content-hub.md) antes de descargarlas para obtener una vista previa de sus términos de licencia en el **cuadro de diálogo Descargar recurso**.
 
 1. Haga clic en ![remove-icon](/help/assets/assets/remove-icon.svg) para quitar una licencia del cuadro de diálogo de descarga.
 

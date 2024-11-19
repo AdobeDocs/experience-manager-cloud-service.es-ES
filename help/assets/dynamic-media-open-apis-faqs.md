@@ -3,17 +3,23 @@ title: Preguntas frecuentes sobre Dynamic Media con funciones de OpenAPI
 description: Preguntas frecuentes sobre Dynamic Media con funciones de OpenAPI
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1512'
-ht-degree: 0%
+source-wordcount: '1546'
+ht-degree: 1%
 
 ---
 
 # Preguntas frecuentes sobre Dynamic Media con funciones de OpenAPI {#new-dynaminc-media-apis-frequently-asked-questions}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación de desarrollador de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>La guía de funciones de Dynamic Media con OpenAPI ya está disponible en formato de PDF. Descargue toda la guía y utilice Adobe Acrobat AI Assistant para responder a sus consultas.
+>
+>[!BADGE PDF de la Guía de Dynamic Media con funciones OpenAPI]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 +++**¿Todos los recursos del repositorio as a Cloud Service de Experience Manager Assets están disponibles para su búsqueda y envío mediante Dynamic Media con capacidades OpenAPI?**
 
@@ -103,7 +109,7 @@ Como usuario de DAM, es posible que no tenga permisos para [aprobar recursos](ap
 
 Dynamic Media con funciones OpenAPI y Dynamic Media representan soluciones distintas, cada una de las cuales ofrece sus funciones de envío especializadas. Es imperativo revisar a fondo sus requisitos específicos para determinar la solución más adecuada que se ajuste a sus necesidades.
 
-La guía general del Adobe es aprovechar Dynamic Media con la pila OpenAPI para cualquier caso de uso de integración (aplicaciones de origen o de terceros). Si ya existe una integración con la pila de Dynamic Media, se recomienda no cambiarla, ya que las URL de pila de OpenAPI son diferentes en estructura. Aproveche la pila OpenAPI solo para cualquier caso de uso de integración nuevo de red. Si su caso de uso requiere modificadores avanzados que no están disponibles con la pila de OpenAPI, evite la pila de OpenAPI hasta que el Adobe cierre la brecha. Incluso para la entrega nativa básica de los Cloud Service de AEM Assets, la pila de OpenAPI se puede evaluar siempre y cuando su caso de uso esté cubierto con los modificadores disponibles con la pila de OpenAPI. En conclusión, Dynamic Media y Dynamic Media con la pila de OpenAPI pueden coexistir, según la naturaleza del caso de uso.
+La guía general del Adobe es aprovechar Dynamic Media con la pila OpenAPI para cualquier caso de uso de integración (aplicaciones de origen o de terceros). Si ya existe una integración con la pila de Dynamic Media, se recomienda no cambiarla, ya que las URL de pila de OpenAPI son diferentes en estructura. Aproveche la pila OpenAPI solo para cualquier caso de uso de integración nuevo de red. Si su caso de uso requiere modificadores avanzados que no están disponibles con la pila de OpenAPI, evite la pila de OpenAPI hasta que el Adobe cierre la brecha. Incluso para la entrega nativa básica de los Cloud Service de AEM Assets, la pila de OpenAPI se puede evaluar siempre y cuando su caso de uso se cubra con los modificadores disponibles con la pila de OpenAPI. En conclusión, Dynamic Media y Dynamic Media con la pila de OpenAPI pueden coexistir, según la naturaleza del caso de uso.
 
 A continuación se indican algunas de las diferencias clave entre Dynamic Media con capacidades OpenAPI y Dynamic Media:
 
@@ -112,7 +118,7 @@ A continuación se indican algunas de las diferencias clave entre Dynamic Media 
 | [Disponible solo con Assets as a Cloud Service](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | También disponible con Managed Services On-Premise o de Adobe con pasos de configuración y aprovisionamiento adicionales. |
 | [Conjunto limitado de modificadores de imagen admitidos, como ancho, alto, giro, voltear, calidad y formato](/help/assets/deliver-assets-apis.md) | Conjunto enriquecido de modificadores de imagen disponibles |
 | [Entrega de recursos restringida en función de los usuarios, las funciones, la fecha y la hora](/help/assets/restrict-assets-delivery.md) | Todos los usuarios pueden acceder a los Assets publicados en Dynamic Media |
-| La mayoría de los desarrolladores están familiarizados con las especificaciones de OpenAPI. La extensibilidad de AEM Assets se vuelve muy sencilla con [Micro-Frontend Asset Selector](/help/assets/overview-asset-selector.md). | SOAP Las API basadas en, que se convierten en una barrera al desarrollar personalizaciones de integración. |
+| La mayoría de los desarrolladores están familiarizados con las especificaciones de OpenAPI. La extensibilidad de los AEM Assets se vuelve muy sencilla con [Micro-Frontend Asset Selector](/help/assets/overview-asset-selector.md). | SOAP Las API basadas en, que se convierten en una barrera al desarrollar personalizaciones de integración. |
 | Cualquier cambio realizado en los recursos aprobados en DAM, incluidas las actualizaciones de la versión y las modificaciones de metadatos, se refleja automáticamente en las direcciones URL de entrega. Con un valor corto de tiempo de vida (TTL) de 10 minutos configurado para Dynamic Media con funciones de OpenAPI a través de CDN, las actualizaciones se pueden ver en todas las interfaces de creación y publicación en menos de 10 minutos. | TTL de CDN recomendado de 10 horas. Puede anular el valor TTL mediante la acción de invalidación de la caché. |
 | Solo los recursos aprobados están disponibles para su entrega a aplicaciones posteriores, lo que permite utilizar recursos aprobados por la marca en experiencias digitales. | Las actualizaciones de un recurso publicado en Dynamic Media se publican automáticamente sin ningún flujo de trabajo de aprobación, lo que no garantiza que no haya recursos aprobados por la marca en las experiencias digitales. |
 | Informes de uso basados en el número de recursos entregados. Esta función estará disponible próximamente. | Los informes de uso no están disponibles. Esta función estará disponible próximamente. |
@@ -131,7 +137,7 @@ En la tabla siguiente se describen las principales diferencias entre las dos sol
 |---|---|
 | Assets en la implementación remota de DAM está disponible en AEM as a Cloud Service. | Assets en la implementación remota de DAM puede estar disponible en AEM as a Cloud Service o Adobe Managed Services. |
 | Los binarios de recursos no se copian cuando los recursos de una implementación remota de DAM están disponibles en una instancia de AEM Sites. | Los binarios de recursos se copian cuando los recursos de una implementación remota de DAM están disponibles en una instancia de AEM Sites. |
-| Compatibilidad con todos los tipos de formato de recursos compatibles con AEM Assets. | No se admiten vídeos. |
+| Compatibilidad con todos los tipos de formato de recursos admitidos por los AEM Assets. | No se admiten vídeos. |
 | Puede utilizar Dynamic Media en la implementación local de Sites mientras recupera recursos de la implementación remota de DAM. | La implementación de Dynamic Media en sitios locales es de solo lectura. |
 | No hay restricciones en el número de instancias de AEM Sites conectadas a una implementación remota de DAM. Puede [restringir el acceso a los recursos de la instancia de Sites configurando los roles](/help/assets/restrict-assets-delivery.md) para los recursos aprobados en el DAM remoto. | Restricción para conectar no más de 4 instancias de AEM Sites a la implementación remota de DAM. Un número mayor requiere pruebas adicionales. |
 | Tanto el Selector de recursos como Dynamic Media con capacidades OpenAPI son ampliables para permitir integraciones personalizadas. | Las API de Assets conectadas no son ampliables para permitir integraciones personalizadas. |

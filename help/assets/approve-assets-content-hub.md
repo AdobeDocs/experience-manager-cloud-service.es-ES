@@ -2,9 +2,9 @@
 title: Aprobación de recursos para Content Hub
 description: Obtenga información sobre cómo aprobar recursos en Assets as a Cloud Service para que estén disponibles en Content Hub.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 189fc257fed1115f66559d0f9063885ae527a0fa
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '774'
 ht-degree: 6%
 
 ---
@@ -16,6 +16,12 @@ ht-degree: 6%
 
 ![Aprobar recursos para Content Hub](assets/content-hub-approve-assets.png)
 
+>[!AVAILABILITY]
+>
+>La guía de Content Hub ya está disponible en formato de PDF. Descargue toda la guía y utilice Adobe Acrobat AI Assistant para responder a sus consultas.
+>
+>[!BADGE PDF de guía de Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+
 Los responsables de marca y los especialistas en marketing mantienen un control estricto sobre los recursos de marca. Solo la versión aprobada y más reciente del recurso está disponible para su uso en Content Hub, lo que garantiza la coherencia de la marca en todos los canales y aplicaciones.
 
 Puede aprobar recursos mediante AEM Assets as a Cloud Service para optimizar la administración de recursos, lo que garantiza un proceso controlado y eficiente para la administración de recursos.
@@ -24,7 +30,7 @@ Puede aprobar recursos mediante AEM Assets as a Cloud Service para optimizar la 
 
 Antes de empezar, debería tener:
 
-* Acceso al as a Cloud Service de AEM Assets
+* Acceso as a Cloud Service a AEM Assets
 
 * Permisos de escritura para editar metadatos de recursos a fin de poder editar el campo **[!UICONTROL Estado]** disponible en [propiedades de recursos](/help/assets/manage-organize-assets-view.md##manage-asset-status) para un recurso.
 
@@ -34,7 +40,7 @@ Los recursos marcados como `approved` en Assets as a Cloud Service están dispon
 
 >[!NOTE]
 >
->Assets as a Cloud Service y Content Hub deben utilizar la misma organización para que los recursos se muestren en Content Hub.
+Assets as a Cloud Service y Content Hub deben utilizar la misma organización para que los recursos se muestren en Content Hub.
 
 Para establecer el estado del recurso como `approved` mediante la vista de Assets en AEM as a Cloud Service:
 
@@ -49,7 +55,7 @@ Si necesita aprobar recursos con la vista de administrador, consulte [Aprobar re
 
 ## Aprobación masiva de recursos para Content Hub mediante la vista de Assets {#bulk-approve-assets-content-hub}
 
-Aprobación masiva de recursos mediante la vista de Assets para el as a Cloud Service de AEM Assets. Todos los recursos, aprobados de forma masiva, estarán disponibles en Content Hub.
+Aprobación masiva de recursos mediante la vista de Assets AEM Assets para as a Cloud Service. Todos los recursos, aprobados de forma masiva, estarán disponibles en Content Hub.
 
 Para aprobar recursos de forma masiva dentro de una carpeta en la vista Assets:
 
@@ -89,7 +95,7 @@ Siga estos pasos para automatizar la aprobación de los recursos recién ingerid
 
 >[!NOTE]
 > 
->Este método aprueba los recursos recién creados en la carpeta. Para los recursos existentes en la carpeta, debe seleccionarlos y aprobarlos manualmente.
+Este método aprueba los recursos recién creados en la carpeta. Para los recursos existentes en la carpeta, debe seleccionarlos y aprobarlos manualmente.
 
 ## Administración de recursos cargados mediante Content Hub {#manage-assets-uploaded-using-content-hub}
 
