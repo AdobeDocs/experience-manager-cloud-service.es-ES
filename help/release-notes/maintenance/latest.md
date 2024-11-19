@@ -4,10 +4,10 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 9a653fbe13b29fa60af7410fff178cbac6ca554d
+source-git-commit: f9f3d1fcb32445269e5ca4b9479b8e9075c73c10
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 93%
+source-wordcount: '852'
+ht-degree: 92%
 
 ---
 
@@ -33,6 +33,7 @@ La activación de funcionalidades 2024.11.0 proporcionará el conjunto completo 
 * SITES-24369: Fragmentos de contenido: mejoras en la documentación de OpenAPI.
 * SITES-25478: Fragmentos de contenido: adición de compatibilidad para referencias de recursos externos.
 * SITES-26119: Fragmentos de contenido: adición de compatibilidad con referencias de recursos externos en el tipo de referencia.
+* SITES-24609: Fragmentos de contenido: Mejore la validación al eliminar fragmentos de contenido.
 * SITES-21199: Edge Delivery con editor universal: adición de compatibilidad con las plantillas creadas a partir de páginas.
 * SITES-20311: Edge Delivery con editor universal: adición de compatibilidad para importar CSV en hojas de cálculo.
 * SITES-24821: Edge Delivery con editor universal: conversión de aem.page/aem.live en el predeterminado para integrarse con Edge Delivery.
