@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: f9f3d1fcb32445269e5ca4b9479b8e9075c73c10
 workflow-type: tm+mt
 source-wordcount: '852'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -18,14 +18,14 @@ En la siguiente sección se describen las notas de la versión técnicas actuale
 
 ## Versión 18598 {#18598}
 
-A continuación se resumen las mejoras continuas de la versión de mantenimiento 18598, que se publicó el jueves, 13 de noviembre de 2024. La versión de mantenimiento anterior fue la 18311. La versión 18459 ahora es privada debido a un problema.
+A continuación se resumen las mejoras continuas de la versión de mantenimiento 18598, que se publicó el 13 de noviembre de 2024. La versión de mantenimiento anterior fue la 18311. La versión 18459 ahora es privada debido a un problema.
 
 La activación de funcionalidades 2024.11.0 proporcionará el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
 ### Mejoras {#enhancements-18598}
 
 * CQ-4357471: Adición de compatibilidad con la traducción de diccionarios de i18n en AEMaaCS.
-* FORMS-11646: configuración de variables de contexto global para páginas relevantes de AEM Forms.
+* FORMS-11646: configuración de las variables globalContext para páginas relevantes de AEM Forms.
 * FORMS-14833: AEM Forms ahora tiene la capacidad de incluir fragmentos de formulario adaptable en el documento de registro (DoR) final.
 * FORMS-14255: los usuarios ahora pueden beneficiarse de una función de guardado automático que, de manera automática, guarda como borrador un formulario parcialmente completado. Pueden volver más tarde para terminar de rellenarlo en el mismo dispositivo o en otro distinto. 
 * SITES-23591: Fragmentos de contenido: actualización de los fragmentos de contenido para admitir UUID.
@@ -44,11 +44,11 @@ La activación de funcionalidades 2024.11.0 proporcionará el conjunto completo 
 * CQ-4358028: la creación del proyecto de AEM falla cuando un usuario con un grupo solo de administradores de proyectos carga una nueva miniatura en la página de creación del proyecto.
 * FORMS-14978: Habilitación de la carga de página para un formulario basado en componentes principales para el editor de temáticas.
 * FORMS-15682: el problema implica la integración de AEM Forms y Dynamics FDM. Cuando un usuario envía un formulario, el documento de registro (DOR) no se envía como archivo adjunto del PDF al campo de entidad especificado.
-* FORMS-15799: La página de firma de Adobe Sign GovCloud no se representa en el iframe.
+* FORMS - 15799: la página de firma de Adobe Sign GovCloud no se muestra en iFrame.
 * FORMS-16113: Cuando un usuario, que es administrador de la cuenta de Adobe Sign, intenta acceder a un documento enviado por otro usuario (también administrador), la API de obtención de acuerdo puede devolver un ID de acuerdo diferente al generado en un inicio cuando se creó el acuerdo.
 * FORMS-16596: Problema de accesibilidad: el lector de pantalla no reconoce los botones desactivados.
-* GRANITE-53907: No se puede identificar el usuario de servicio como superusuario de flujo de trabajo.
-* SKYOPS-90560: La última versión del modelo Sling afecta al rendimiento de la exportación del modelo Sling.
+* GRANITE-53907: no se puede identificar al usuario de servicio como superusuario de flujo de trabajo.
+* SKYOPS-90560: la última versión del modelo Sling afecta al rendimiento de la exportación del modelo Sling.
 * SITES-10575: MSM: Blueprint Bloomfilter Loader intenta cargar >100 000 filas.
 * SITES-20755: Fragmentos de contenido: la referencia de recurso con actualización UUID no muestra la miniatura.
 * SITES-26253: Fragmentos de contenido: migración UUID: cambio del tema del trabajo de Sling para que sea genérico.
@@ -69,7 +69,7 @@ La activación de funcionalidades 2024.11.0 proporcionará el conjunto completo 
 * SITES-25938: Lanzamientos: eliminación inesperada después de traducir el proyecto.
 * SITES-25393: Edge Delivery con editor universal: pérdida de nodos de texto al procesar texto enriquecido con formato de párrafo único.
 * SITES-24643: Edge Delivery con editor universal: los atributos de metadatos OpenGraph y twitter no funcionan en el modelo de metadatos de página.
-* SITES-25401: Fragmentos de experiencia: actualización de referencia de XF lenta.
+* SITES-25401: fragmentos de Experience: actualización de referencia de XF lenta.
 
 ### Problemas conocidos {#known-issues-18598}
 
