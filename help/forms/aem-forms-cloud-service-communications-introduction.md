@@ -5,10 +5,10 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: dcf7bde3bc73b70002f87f14d905cd294280ff94
 workflow-type: tm+mt
-source-wordcount: '2290'
-ht-degree: 100%
+source-wordcount: '2374'
+ht-degree: 96%
 
 ---
 
@@ -194,7 +194,7 @@ PDF documents contain metadata, which is information about the document (as dist
 
 ### Convertir y validar documentos compatibles con PDF/A
 
-Las API de conversión de documentos de comunicaciones ayudan a convertir un documento PDF en PDF/A. Puede utilizar las API para convertir un documento PDF en un documento compatible con PDF/A, así como para determinar si un documento PDF es compatible con PDF/A. PDF/A es un formato de archivo elaborado para la conservación del contenido del documento a largo plazo. Las fuentes están incrustadas en el documento y el archivo no está comprimido. Como resultado, un documento PDF/A suele ser más grande que un documento PDF estándar. Además, un documento PDF/A no contiene contenido de audio y vídeo.
+Las API de conversión de documentos de comunicaciones ayudan a convertir un documento PDF en PDF/A. Puede utilizar las API para convertir un documento PDF en un documento compatible con PDF/A, así como para determinar si un documento PDF es compatible con PDF/A. PDF/A es un formato de archivo elaborado para la conservación del contenido del documento a largo plazo. Las fuentes están incrustadas en el documento y el archivo no está comprimido. Como resultado, un documento PDF/A suele ser más grande que un documento PDF estándar. Además, un documento de PDF/A no contiene contenido de audio y vídeo. Los estándares de conformidad PDF/A admitidos incluyen PDF/A-1a, 1b, 2a, 2b, 3a y 3b.
 
 ### Convertir PDF a XDP {#convert-pdf-to-xdp}
 
@@ -214,6 +214,24 @@ Las API de firmas permiten a su organización proteger la seguridad y la privaci
 * Añada un campo de firma invisible a un documento PDF.
 * Firme el campo de firma especificado en un documento PDF.
 * Certificar un documento PDF
+* Quitar la firma del campo de firma especificado en un documento de PDF
+* Eliminar el campo de firma especificado de un documento de PDF
+
+<span class="preview"> Quite la firma del campo de firma especificado y elimine el campo de firma especificado de un documento de PDF que estén disponibles en el programa de usuarios que lo adoptaron por primera vez. Puede escribir a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa de primeros usuarios y solicitar acceso a esta funcionalidad. </span>
+
+
+<!--
+
+### Remove Signature APIs
+
+The Remove Signature API helps to remove an existing digital signatures from a PDF document. This API is useful when you need to update or revise a signed document and reapply signatures. It maintains document integrity while effectively clearing signatures from specific pages or the entire file. Use cases include re-signing documents with updated data or clearing previous approvals for revised versions.
+
+
+### Remove Signature Field APIs
+
+The Remove Signature Field API is tailored for removing signature fields from a PDF document. This is ideal when you need to delete empty or unused signature fields to streamline document presentation. It enables users to eliminate signature fields without impacting other form fields or the document structure, making it easier to create cleaner, final versions of a document that no longer require signatures.
+
+-->
 
 ### Las API de cifrado
 

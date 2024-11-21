@@ -5,10 +5,10 @@ keywords: Cómo seleccionar la acción de envío para un formulario adaptable, c
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 6266da34305bc5d8b2bbb0d336028f4fede6c165
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 100%
+source-wordcount: '701'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,8 @@ ht-degree: 100%
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=es) |
-| AEM as a Cloud Service | Este artículo |
+| AEM as a Cloud Service (componentes de base) | [Haga clic aquí](/help/forms/configuring-submit-actions.md) |
+| AEM as a Cloud Service (componentes principales) | Este artículo |
 
 Una acción de envío permite elegir el destino de los datos capturados mediante un formulario adaptable. Se activa cuando un usuario hace clic en el botón **[!UICONTROL Enviar]** en un formulario adaptable. Forms as a Cloud Service, para Formularios adaptables basados en componentes principales, ofrece una matriz de acciones de envío creadas previamente. Estas acciones de envío listas para usar le permiten lo siguiente:
 
@@ -68,11 +69,13 @@ Para obtener información detallada sobre las acciones de envío siguientes, con
 * [Enviar al punto final REST](/help/forms/configure-submit-action-restpoint.md)
 * [Enviar a OneDrive](/help/forms/configure-submit-action-onedrive.md)
 * [Invocar un flujo de trabajo de AEM](/help/forms/configure-submit-action-workflow.md)
+* [Enviar a Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 También puede enviar un formulario adaptable a otras configuraciones de almacenamiento:
 
 * [Conectar un formulario adaptable a la aplicación de Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Conectar un formulario adaptable a Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+* [Conectar un formulario adaptable a Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 
 Puede [personalizar las acciones de envío predeterminadas](custom-submit-action-form.md). Además, puede personalizar las acciones de envío para que se ajusten a requisitos específicos de su organización.
 

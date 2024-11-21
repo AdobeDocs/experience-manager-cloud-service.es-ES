@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: f6e1de0c2cc2c056b3bfcea6ce5d7aaed041f6f8
+source-git-commit: 7acbf2099a2b47b5f42885e8f9a9e1727a8112b5
 workflow-type: tm+mt
-source-wordcount: '2106'
-ht-degree: 50%
+source-wordcount: '2148'
+ht-degree: 48%
 
 ---
 
@@ -145,7 +145,13 @@ Si los campos múltiples permitidos en la función de condición When encuentran
 
 **[!UICONTROL Disable]**. Deshabilita el objeto especificado.
 
-**[!UICONTROL Invoke service]**. Invoca un servicio configurado en un modelo de datos de formulario (FDM). Al elegir la operación Invocar un servicio, aparece un campo. Al pulsar el campo, se muestran todos los servicios configurados en todos los modelos de datos de formularios de la instancia de [!DNL Experience Manager]. Al elegir un servicio del modelo de datos de formulario, aparecen más campos en los que se pueden asignar objetos de formulario con parámetros de entrada y salida para el servicio especificado. Consulte la regla de ejemplo para invocar los servicios del Modelo de datos de formulario (FDM).
+**[!UICONTROL Invoke service]**. Invoca un servicio configurado en un modelo de datos de formulario (FDM). Al elegir la operación Invocar un servicio, aparece un campo. Al pulsar el campo, se muestran todos los servicios configurados en todos los modelos de datos de formularios de la instancia de [!DNL Experience Manager]. Al elegir un servicio del Modelo de datos de formulario, aparecen más campos en los que se pueden asignar objetos de formulario con parámetros de entrada para el servicio especificado. Puede asignar los parámetros de salida a través de la opción de carga útil de evento para el servicio especificado. También puede crear reglas para gestionar las respuestas de éxito y error de la operación Invocar servicio con el editor de reglas.
+
+>[!NOTE]
+>
+> Para obtener más información acerca del servicio Invocar, [haga clic aquí](/help/forms/invoke-service-enhancements-rule-editor.md).
+
+Consulte la regla de ejemplo para invocar los servicios del Modelo de datos de formulario (FDM).
 
 Además del servicio de modelo de datos de formulario, puede especificar una URL de WSDL directa para invocar un servicio web. Sin embargo, un servicio de modelo de datos de formulario tiene muchas ventajas y es el método recomendado para invocar un servicio.
 

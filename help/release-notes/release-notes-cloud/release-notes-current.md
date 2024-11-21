@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 2b34b23c05ff125a24fb0969d0239a384e773011
+source-git-commit: b72d5fca4113f6d3b9cbabab655e36f2370231d9
 workflow-type: tm+mt
-source-wordcount: '1633'
-ht-degree: 98%
+source-wordcount: '1721'
+ht-degree: 42%
 
 ---
 
@@ -28,7 +28,7 @@ En la siguiente sección se describen las notas de la versión de la funcionalid
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de la versión de [!DNL Adobe Experience Manager] como versión de funcionalidad actual (2024.10.0) de [!DNL Cloud Service] es el 31 de octubre de 2024. La próxima versión de la funcionalidad (2024.11.0) está planificada para el 21 de noviembre de 2024.
+La fecha de la versión de [!DNL Adobe Experience Manager] como versión de funcionalidad actual (2024.11.0) de [!DNL Cloud Service] es el viernes, 21 de noviembre de 2024. La próxima versión de la funcionalidad (2024.12.0) está planificada para el viernes, 12 de diciembre de 2024.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
@@ -36,7 +36,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 <!-- ## Release Video {#release-video}
 
-Have a look at the October 2024 Release Overview video for a summary of the features added in the 2024.10.0 release:
+Have a look at the November 2024 Release Overview video for a summary of the features added in the 2024.11.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3434847?quality=12)
 
@@ -44,18 +44,15 @@ Have a look at the October 2024 Release Overview video for a summary of the feat
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-**Eventos de la página modernizados**
+**[!DNL Edge Delivery Services]plantillas de página con creación de editor universal**
 
-Los siguientes eventos de la página de AEM Sites ya están disponibles como eventos consumibles externos basados en AEM as a Cloud Service Eventing Platform. Los eventos se pueden procesar mediante Adobe I/O para interactuar con los procesos externos.
-* Página publicada
-* Página sin publicar
-* Página eliminada
+Convierta rápidamente cualquier página de Edge Delivery en una plantilla de página. Esto le permite iniciar una nueva página con una estructura y contenido predefinidos en lugar de una página en blanco. [Más información](/help/sites-cloud/authoring/universal-editor/templates.md).
+
+AEM Importador de CSV **[!DNL Edge Delivery Services]para la publicación a través de una instancia de**
+
+Administre sus datos de hojas de cálculo de Edge Delivery AEM de forma eficaz (p. ej., redirecciones) en su herramienta de hoja de cálculo favorita y cárguelos a través del nuevo importador de CSV a la hora de cargar los datos en su archivo de hoja de cálculo a través del nuevo importador de CSV. [Más información](/help/edge/wysiwyg-authoring/tabular-data.md#importing).
 
 ### Programa para primeros usuarios {#sites-early-adopter}
-
-**Generar variaciones**
-
-Aproveche la GenAI mediante la nueva función de AEM, [generar variaciones](/help/generative-ai/generate-variations.md), accesible ahora en Cloud Service. Generar variaciones le ayuda a generar y escalar la creación de contenido mediante el uso de IA generativa. Póngase en contacto con el equipo de cuentas de Adobe para que lo considere en el programa.
 
 **AEM REST OpenAPI para la entrega de fragmentos de contenido**
 
@@ -63,7 +60,7 @@ Aproveche la GenAI mediante la nueva función de AEM, [generar variaciones](/hel
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Función de acceso rápido en Dynamic Media {#dm-early-access}
+### Funciones de acceso anticipado en Dynamic Media {#dm-early-access}
 
 **Subtítulos de vídeo generados por IA**
 
@@ -71,49 +68,38 @@ Los subtítulos de vídeo generados por IA en Adobe Dynamic Media utilizan la in
 
 Para obtener acceso anticipado a la compatibilidad con subtítulos generados por IA en su cuenta de Dynamic Media, [cree y envíe un caso de asistencia al cliente de Adobe](/help/assets/dynamic-media/video.md##enable-dash).
 
+**informe de envío de Dynamic Media**
+
+Obtenga perspectivas de entrega para los recursos entregados con Dynamic Media, con recuento de entregas a nivel de recurso, información de referencia, ruta de recursos en AEM Assets e ID de recurso único. Se pueden generar informes para todos los recursos entregados mediante Dynamic Media para el repositorio de AEM Assets o para una jerarquía de carpetas específica en AEM Assets. Las perspectivas ayudan a medir el retorno de la inversión de los recursos entregados, medir el rendimiento del canal y realizar tareas de administración de recursos informadas para los recursos.
+
+Para obtener acceso anticipado al informe de entrega de Dynamic Media en su cuenta de Dynamic Media, [cree y envíe un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
+
 ### Nuevas funcionalidades de la vista Recursos {#assets-view-new-features}
 
-**Informes programados**
+**Panel de Dynamic Media**
 
-Ahora los informes se pueden generar automáticamente en la vista de Assets con una programación recurrente o en una fecha futura, lo que reduce el esfuerzo por descubrir perspectivas basadas en datos.
+La vista de Assets ahora le permite acceder a Dynamic Media y Dynamic Media con representaciones de OpenAPI desde un panel independiente disponible. Puede copiar la dirección URL de envío o descargar las representaciones en función del recurso y el tipo de representación. Para obtener más información, consulte [representaciones de Dynamic Media](/help/assets/renditions.md#dynamic-media-renditions) y [representaciones de Dynamic Media con capacidades de OpenAPI](/help/assets/renditions.md#dm-with-openapi-renditions).
 
-![Informes programados:](/help/assets/assets/scheduled-reports-tab.png)
-
-### Nuevas funciones en Content Hub {#content-hub-new-features}
-
-**Digital Rights Management para recursos con licencia**
-
-Las organizaciones ahora pueden aumentar el cumplimiento de las licencias y minimizar el riesgo de compartir recursos con términos y condiciones de la licencia aprovechando DRM para los recursos con licencia para los usuarios de Content Hub, exigiendo a los usuarios que revisen y acepten los términos y condiciones de la licencia para poder iniciar la descarga de los recursos con licencia. Para obtener más información, consulte [Administración de recursos con licencia en Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
-
-![descargar-múltiples-licencias](/help/assets/assets/download-multiple-license.png)
-
-**Configuración de metadatos de la tarjeta de recursos**
-
-Content Hub ahora le permite configurar los campos de metadatos clave que necesita mostrar en la tarjeta de recursos hasta un máximo de 6 campos. Para obtener más información, consulte la sección Tarjeta de recursos en [Configuración de Content Hub](/help/assets/configure-content-hub-ui-options.md#asset-card).
-
-![metadatos clave de la tarjeta de recursos](/help/assets/assets/asset-card-key-metadata.png)
-
-**Configurar la visibilidad y la descarga de los recursos caducados**
-
-Los administradores ahora pueden controlar si necesitan que los activos caducados estén visibles en Content Hub. Si los activos caducados están visibles, también se puede definir si los usuarios pueden descargarlos. Para obtener más información, consulte la sección Activos caducados en [Configuración de Content Hub](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub).
-
-![Activos caducados en Content Hub](/help/assets/assets/expired-assets-content-hub.png)
+![representaciones dinámicas](/help/assets/assets/dm-scene7-renditions.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Nueva función en AEM Forms {#forms-new-features}
+### Nuevas funciones en AEM Forms {#forms-new-features}
 
-* [Mejorar la experiencia del usuario con botones de navegación en los diseños de panel](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button): ahora puede añadir botones de navegación a los diseños de panel, como Pestañas horizontales, Pestañas verticales, Acordeones o el Asistente. Estos botones mejoran la experiencia del usuario al simplificar las transiciones entre paneles y se centran en el panel seleccionado.
+* **[Actualizar los ámbitos de Adobe Sign fácilmente](/help/forms/adobe-sign-integration-adaptive-forms.md)**: puede modificar los ámbitos de una configuración de Adobe Sign directamente desde la página Configuraciones de nube de AEM, lo que facilita y agiliza la actualización de las configuraciones existentes.
 
-<!--* **Specify Display Styles for Document of Record (DoR) Components**: In an XFA file, you can now specify the display styles for Document of Record components. These styles can later be applied to the corresponding components in Adaptive Forms Editor.-->
+* **[Compatibilidad con funciones asincrónicas para formularios adaptables](/help/forms/using-async-funct-in-rule-editor.md)**: cuando el formulario adaptable requiera operaciones asincrónicas, como esperar procesos externos o recuperar datos, puede implementar estas operaciones con funciones personalizadas y configurarlas en el Editor de reglas.
 
-### Nuevas funciones en la versión preliminar de AEM Forms {#forms-new-prerelease-features}
+### Funciones previas al lanzamiento en AEM Forms {#forms-new-prerelease-features}
 
-* [Guardar automáticamente un borrador para formularios adaptables basados en componentes principales](/help/forms/save-core-component-based-form-as-draft.md): los usuarios ahora pueden beneficiarse de una función de guardado automático que guarda automáticamente un formulario parcialmente completado como borrador. Pueden volver más tarde para terminar de rellenarlo en el mismo dispositivo o en otro distinto. Esta función mejora las tasas de conversión para las organizaciones al reducir el abandono de formularios, ya que los usuarios no tienen que volver a empezar a rellenar el formulario desde el principio.
+* **Administrar publicación**: puede usar el flujo de trabajo Administrar publicación para publicar o cancelar la publicación de formularios en entornos, generalmente desde la instancia de autor a las instancias de publicación y vista previa. Permite a los usuarios publicar, cancelar la publicación o programar la publicación de contenido de una manera optimizada.
 
-* [Actualizar los ámbitos de Adobe Sign fácilmente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms): puede modificar los ámbitos de una configuración de Adobe Sign directamente desde la página Configuraciones de nube de AEM, lo que facilita y agiliza la actualización de las configuraciones existentes.
+* **[Guardar automáticamente un borrador para formularios adaptables basados en componentes principales](/help/forms/save-core-component-based-form-as-draft.md)**: los usuarios ahora pueden beneficiarse de una función de guardado automático que guarda automáticamente un formulario parcialmente completado como borrador. Pueden volver más tarde para terminar de rellenarlo en el mismo dispositivo o en otro distinto. Esta función mejora las tasas de conversión para las organizaciones al reducir el abandono de formularios, ya que los usuarios no tienen que volver a empezar a rellenar el formulario desde el principio.
 
-* [Compatibilidad con funciones asincrónicas para formularios adaptables](/help/forms/using-async-funct-in-rule-editor.md): cuando el formulario adaptable requiera operaciones asincrónicas, como esperar procesos externos o recuperar datos, puede implementar estas operaciones con funciones personalizadas y configurarlas en el Editor de reglas.
+* **[Mejoras del editor de reglas](/help/forms/invoke-service-enhancements-rule-editor.md)**: para Forms adaptable basado en componentes principales, ahora puede rellenar opciones desplegables usando la salida de Invocar servicio, establecer paneles repetibles usando la salida de Invocar servicio, establecer paneles individuales usando la salida de Invocar servicio y usar el parámetro de salida de Invocar servicio para validar otros campos.
+
+* **[Mejorar la experiencia del usuario con botones de navegación en los diseños de panel](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)**: ahora puede añadir botones de navegación a los diseños de panel, como Pestañas horizontales, Pestañas verticales, Acordeones o el Asistente. Estos botones mejoran la experiencia del usuario al simplificar las transiciones entre paneles y se centran en el panel seleccionado.
+
 
 ### Funciones de acceso rápido de AEM Forms {#forms-new-early-access-features}
 
@@ -121,29 +107,54 @@ El programa para acceso rápido de AEM Forms ofrece una oportunidad única de ob
 
 En estas notas de la versión se indican las innovaciones de la versión actual. Para ver la lista completa de innovaciones disponibles en el programa para acceso rápido, consulte la [documentación del programa de acceso rápido de AEM Forms](/help/forms/early-access-ea-features.md).
 
-#### Asistente de IA de AEM Forms
+#### Integraciones
 
-[IA generativa para Forms adaptable](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features#aem-forms-ai-assistant-gen-ai) ofrece un nuevo nivel de potencia y facilidad para los procesos de desarrollo de formularios. Le permite crear mejores formularios y más rápido que nunca.
+* **[Integrar Forms adaptable con Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)**: AEM Forms as a Cloud Service ahora incluye una opción fácil de usar para conectar Forms adaptable con Adobe Marketo Engage. Esta integración le permite crear Forms adaptable directamente con la captura de posibles clientes de Marketo Engage y los objetos personalizados relacionados. Ahora puede rellenar previamente los campos de formulario con datos del Marketo Engage y enviar datos de vuelta para automatizar flujos de trabajo como las campañas inteligentes y la automatización de correo electrónico. También puede conectar un formulario adaptable con la biblioteca de Munchkin para realizar un seguimiento del número de visitas, clics y envíos de formularios.
 
-![Asistente de IA generativa, formularios adaptables](/help/forms/assets/generative-ai-assistant.png)
+#### Forms adaptable y HTML5 Forms
 
-Las funciones de IA generativa que se ofrecen son:
+* **[Crear Forms adaptable basado en una plantilla XFA existente](/help/forms/create-adaptive-form-using-xfa-templates.md)**: ahora puede crear Forms adaptable basado en componentes principales mediante plantillas de formulario XFA (archivos*.XDP). Esta capacidad facilita a los clientes locales de AEM Forms las inversiones existentes en tecnología XFA para adoptar AEM Forms as a Cloud Service.
 
-* **Asistente de IA para consultas de productos**: obtenga respuestas instantáneas a sus preguntas relacionadas con AEM Forms. El asistente de IA actúa como su propia base de conocimiento personal, proporcionando orientación y recomendaciones reveladoras directamente dentro de la plataforma.
+* **Forms de HTML5 (formularios web basados en XFA)**: Ahora, los clientes locales de AEM Forms que utilizan la tecnología XFA pueden realizar la transición sin esfuerzo al as a Cloud Service de AEM Forms, conservando al mismo tiempo su experiencia de usuario existente con Forms de HTML 5 (formularios web basados en XFA). Esta capacidad permite procesar plantillas de formulario XFA en formato HTML 5, lo que hace que los formularios sean accesibles en dispositivos que no admiten PDF forms basados en XFA.
 
-* **Generación de formularios adaptables**: cree sin esfuerzo formularios completos con indicaciones de la IA generativa. La IA generativa de Adobe genera automáticamente formularios fáciles de usar que reducen los abandonos y personalizan la experiencia.
+  ![Forms de HTML (formularios web basados en XFA)](/help/forms/assets/html-forms-xfa-based-web-forms.png)
 
-* **Generación de paneles para formularios**: genere secciones de formulario adaptadas a las necesidades específicas de recopilación de datos. Por ejemplo, generar secciones para recopilar información de pago, preferencias del cliente o detalles de viaje.
 
-* **Cambio de diseños de formulario**: experimente con diferentes presentaciones y diseños mediante las indicaciones de la IA generativa. Pruebe diferentes diseños, como las vistas del asistente o con pestañas, para encontrar la opción perfecta para su formulario. Utilice las indicaciones de la IA generativa para optimizar los formularios con capacidad de respuesta móvil y crear formularios atractivos visualmente que gusten a los usuarios.
+* **[Compatibilidad con cadenas codificadas en Base64 para archivos adjuntos](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**: El componente Archivo adjunto en Forms adaptable basado en componentes principales ahora incluye una opción para enviar archivos adjuntos como cadenas codificadas en Base64.
 
-* **Configurar la acción de envío**: utilice las indicaciones de la IA generativa para configurar sin esfuerzo una acción de envío para el formulario. Elija entre una biblioteca de acciones de envío creadas previamente o acciones de envío personalizadas, creadas e implementadas por el equipo de desarrollo.
+#### Comunicaciones interactivas y API de comunicación
+
+* **Editor de comunicaciones interactivas**: el editor de comunicaciones interactivas es una herramienta gráfica de diseño de comunicaciones fácil de usar que simplifica la creación de correspondencia personalizada basada en datos y se ejecuta en cualquier explorador moderno. Admite una integración de datos perfecta, definición de lógica compleja e integración de medios enriquecidos, lo que garantiza la generación profesional y compatible de documentos, comunicaciones y plantillas para diversas necesidades comerciales.
+
+  ![Editor de comunicaciones interactivas](/help/forms/assets/ic-editor.png)
+
+
+* **[Mejoras en el cumplimiento de las normas de PDF/A](/help/forms/aem-forms-cloud-service-communications-introduction.md#convert-to-and-validate-pdfa-compliant-documents)**: ahora puede usar las API de comunicación para convertir documentos de PDF a formatos de PDF/A (1a, 2a, 3a) con fines de archivo, al tiempo que garantiza la accesibilidad y comprueba el cumplimiento de estos estándares.
+
+
+* **[API de firma (documento Assurance)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance)**: una nueva API RESTful en las API de comunicación permite administrar fácilmente las firmas de PDF. Admite operaciones como las siguientes:
+   * Borrar firma: quita una firma de un campo especificado.
+   * Quitar campo de firma: elimina un campo de firma especificado.
+
+
+<!-- 
+* **Hamburger Menu Layout in Adaptive Forms**: Adaptive Forms now offers a responsive hamburger menu layout for mobile devices. This collapsible menu organizes form sections, making navigation more 
+intuitive and improving the mobile form-filling experience.
+
+* **Masked Field with Eye Icon (Password Box Component)**: The Password Box is a text input field that masks the characters typed into it by displaying placeholder symbols. It allows users to securely input sensitive information, such as passwords and enables them to toggle visibility on demand using the eye icon.
+
+-->
+
+## Servicio de conversión automatizada de formularios 
+
+* **[Convertir PDF forms a Forms adaptable basado en componentes principales](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms)**: ahora puede usar el servicio de Automated forms conversion para transformar PDF forms, AcroForms o formularios basados en XFA en Forms adaptable basado en componentes principales.
+
 
 >[!IMPORTANT]
 >
-> ¿Le interesa unirse al programa de acceso rápido para disponer de cualquier innovación de los formularios? Envíe un correo electrónico desde su dirección de correo electrónico oficial a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) con la lista de capacidades que le interesan.
+> ¿Le interesa unirse al programa de acceso rápido para disponer de cualquier innovación de los formularios? Envíe un correo electrónico desde su dirección de correo electrónico oficial a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) con la lista de capacidades que le interesan.CIF ## Complemento de {#cloud-services-cif}
 
-## Complemento CIF {#cloud-services-cif}
+## Complemento CIF {#cif}
 
 ### Correcciones de errores {#bug-fixes-cif}
 
@@ -152,52 +163,35 @@ Las funciones de IA generativa que se ofrecen son:
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Configuración para controlar los envíos de formularios {#configuration-submissions}
+### Rendimiento mejorado de replicación de árbol (y desaprobación del flujo de trabajo del árbol de contenido de Publish) {#tree-replication-performance}
 
-Para controlar los envíos de formularios de Coral o Foundation en ubicaciones específicas, AEM ha introducido una nueva configuración: `com.adobe.granite.ui.components.FormRestrict`. Esta configuración consta de dos campos:
+[El paso ](/help/operations/replication.md#tree-activation) del flujo de trabajo de activación de árbol es un nuevo paso recomendado para replicar jerarquías de contenido profundo. Tenga en cuenta que permite que las duplicaciones independientes (por ejemplo, mediante la publicación rápida o la administración de publicaciones) se realicen en paralelo con el flujo de trabajo de replicación de árbol en curso. Esto resulta especialmente útil si necesita publicar contenido con distinción de tiempo mientras una replicación masiva sigue en curso. El paso de replicación de árbol reemplaza al flujo de trabajo del árbol de contenido de Publish y a su paso de flujo de trabajo relacionado, que ya no se utilizan.
 
-1. **Adición de rutas permitidas**: especifica las rutas en las que se permiten las acciones de formulario.
-1. **Restricción de comportamiento**: determina el comportamiento de las rutas restringidas (rutas no incluidas en la lista de permitidos). Puede elegir entre dos opciones:
-   * **Emergente** (predeterminado): muestra una notificación emergente.
-   * **Impedir**: bloquea el envío de formularios.
+### API basadas en OpenAPI: programa de adopción anticipada {#open-apis-earlyadopter}
 
->[!NOTE]
->
->Esta configuración no es compatible con todos los formularios de Coral o Foundation ubicados en `/apps`, `/libs`, `/mnt/overlay` y `/mnt/override`.
+AEM Los desarrolladores pueden integrar profundamente las funciones de los Cloud Service de la integración de los en sus propias aplicaciones y herramientas. Las nuevas API de AEM as a Cloud Service seguirán la especificación de OpenAPI, con el objetivo de ser coherentes, bien documentadas y fáciles de usar. Las credenciales de los extremos que requieren autenticación se generarán creando proyectos de Adobe Developer Console.
 
-### Reenvío de registros de autoservicio con la opción de redes avanzadas {#log-forwarding}
+AEM Obtenga más información acerca de las API de basadas en OpenAPI y pruebe un tutorial completo que ilustre la configuración y el uso.
 
-Aunque los registros de AEM (incluidos Apache/Dispatcher) y CDN se pueden descargar desde Cloud Manager, muchas organizaciones consideran beneficioso transmitir esos registros a un destino de registro preferido. AEM ahora admite un [reenvío de registro](/help/implementing/developing/introduction/log-forwarding.md) a Azure Blob Storage, Datadog, HTTPS, Elasticsearch (y OpenSearch) y Splunk. De forma opcional, los registros de AEM se pueden reenviar a través de configuraciones de red avanzadas, como el uso de una dirección IP dedicada.
+En concreto, los puntos finales de API que se enumeran a continuación están disponibles como parte de un programa de usuarios que lo adoptaron por primera vez. Si está interesado, envíe un correo electrónico a [aem-apis@adobe.com](mailto:aem-apis@adobe.com) en el que se describa cómo piensa utilizarlos.
+* [API de fragmentos de contenido de sitios](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
+* [API de Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
+* [API de sitios y carpetas de Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
+* [API de comunicaciones de Forms](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
-Los usuarios configuran esta característica en forma de autoservicio y la implementan usando la [Canalización de configuración](/help/operations/config-pipeline.md).
+### Informática Edge - ¡Solicitud de comentarios! {#edge-computing-feedback}
 
-### Redirecciones de URL sin canalizaciones para usuarios empresariales {#pipeline-free-redirects}
-
-Las redirecciones del lado del explorador son útiles cuando una página web se ha eliminado o se ha movido, o en el caso de otros escenarios. Con las [Redirecciones de URL sin canalizaciones](/help/implementing/dispatcher/pipeline-free-url-redirects.md), puede colocar un archivo de mapa de reescritura de Apache en una ubicación de publicación de AEM, donde se carga automáticamente, sin necesidad de enviar el archivo al control de código fuente ni iniciar una canalización de Cloud Manager.
-
-Las opciones para publicar el archivo de reescritura incluyen cargarlo como un recurso, usar el Administrador de mapas de reescritura de ACS Commons o interactuar con una interfaz de usuario personalizada.
-
-### Configuración de la canalización para RDE {#config-pipeline-rdes}
-
-Los entornos de desarrollo rápido (RDE) son una potente herramienta para implementar y probar rápidamente el código y la configuración en un entorno en la nube. Los RDE ahora admiten la [sincronización de archivos YAML de configuración](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline), incluida la configuración de CDN, como las reglas de filtro de tráfico y las transformaciones de solicitud/respuesta, así como el reenvío de registros y otras opciones de configuración. [Consulte la lista completa](/help/operations/config-pipeline.md) de opciones de configuración admitidas para obtener más información.
-
-### Nuevos perfiles de producto {#new-product-profiles}
-
-Cuando se crea un nuevo entorno de AEM, los perfiles de producto aparecen automáticamente en Adobe Admin Console, lo que permite a los administradores asignar acceso a las soluciones y funciones con licencia.
-
-Los nuevos entornos ahora incluyen un conjunto actualizado de perfiles de producto, lo que los hace compatibles con futuras funciones, incluida la generación de credenciales de API en Adobe Developer Console. Los entornos existentes podrán actualizar sus perfiles de producto en una versión futura. [Más información](/help/onboarding/aem-cs-team-product-profiles.md).
+La informática de Edge acerca el procesamiento de datos al navegador, lo que ofrece ventajas como una menor latencia. AEM Como entrada en la hoja de ruta, nos encantaría saber si esta tecnología le resulta útil para los proyectos de entrega y Edge Delivery Services de Publish y para los que prevé utilizarla. Enviar un correo electrónico a [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) con preguntas y comentarios.
 
 ### Nuevo AEM Developer Console (Beta pública) {#aem-developer-console-beta}
 
 Pruebe la [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md) rediseñada, que ofrece una experiencia más interactiva para depurar código en entornos de la nube.
 
-Cualquiera puede acceder a la versión beta pública haciendo clic en el botón *Nueva consola disponible* en la versión actual de AEM Developer Console. Adobe agradece los comentarios, que puede enviar por correo electrónico a **<aemcs-new-devconsole-ui-beta@adobe.com>**.
-
-![Pantalla de paquetes OSGi en AEM Developer Console](/help/implementing/developing/introduction/assets/osgi-bundles.png)
+Cualquiera puede acceder a la versión beta pública haciendo clic en el botón *Nueva consola disponible* en la versión actual de AEM Developer Console. El Adobe agradece los comentarios, que puede enviar por correo electrónico a [aemcs-new-devconsole-ui-beta@adobe.com](mailto:aemcs-new-devconsole-ui-beta@adobe.com)
 
 ## Guías de [!DNL Experience Manager] {#guides}
 
-Puede encontrar una lista completa de las funciones nuevas y mejoradas de la última versión de Adobe Experience Manager Guides [aquí](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-0-release/whats-new-2024-10-0).
+Puede encontrar una lista completa de las funciones nuevas y mejoradas de la última versión de Adobe Experience Manager Guides [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0).
 
 ## Cloud Manager {#cloud-manager}
 

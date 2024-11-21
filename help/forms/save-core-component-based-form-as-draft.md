@@ -4,17 +4,17 @@ description: Aprenda a guardar formularios adaptables basados en componentes pri
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 2933b3be569724800a77b4ea93e91441046746f6
+source-git-commit: 2e4c9a7d30b954045082baf242737ac2f7426c70
 workflow-type: tm+mt
-source-wordcount: '1384'
-ht-degree: 8%
+source-wordcount: '1387'
+ht-degree: 7%
 
 ---
 
 
 # Guardar formularios como borradores y mostrarlos en la página de Sites
 
-<span class="preview"> Este artículo contiene contenido sobre la característica **Guardar automáticamente**, una característica previa al lanzamiento. Solo se puede acceder a la función previa al lanzamiento mediante nuestro [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features).</span>
+<span class="preview"> Este artículo contiene contenido sobre la característica **Borradores**, una característica previa al lanzamiento. Solo se puede acceder a la función previa al lanzamiento mediante nuestro [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features).</span>
 
 Considere a un usuario que comienza a rellenar un formulario pero necesita pausar y volver más tarde. AEM ofrece la opción `save-as-draft`, que permite al usuario guardar el formulario como borrador para una finalización futura. AEM Para facilitarle este proceso, proporciona de forma predeterminada el componente **Borradores y envíos** del portal de formularios, que muestra borradores y envíos en páginas de AEM Sites. El componente enumera los formularios que se han guardado como borradores para su posterior finalización, así como los que se han enviado. Solo los usuarios que inicien sesión pueden editar sus borradores o ver los formularios enviados. Sin embargo, si un usuario anónimo navega por la lista de formularios usando el componente **Buscar y listar** y guarda un formulario como borrador, ese borrador no aparecerá en la lista del componente **Borradores y envíos**. Para ver los borradores y los envíos, los usuarios deben haber iniciado sesión en el momento del envío del formulario.
 
@@ -137,7 +137,7 @@ Para guardar un formulario como borrador, cree una regla **Guardar formulario** 
 
 Cuando obtiene una vista previa de un formulario adaptable, lo rellena y hace clic en el botón **Guardar formulario**, el formulario se guarda como borrador.
 
-### Guardar automáticamente
+### Borradores
 
 >[!NOTE]
 >
@@ -147,13 +147,13 @@ También puede configurar un formulario adaptable para que se guarde automática
 
 1. En la instancia Autor, abra un formulario adaptable en modo de edición.
 1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
-1. Haga clic en el icono de las propiedades del contenedor de la guía ![Propiedades de la guía](/help/forms/assets/configure-icon.svg) y abra la pestaña **[!UICONTROL Guardar automáticamente]**.
+1. Haga clic en el icono de las propiedades del contenedor de la guía ![Propiedades de la guía](/help/forms/assets/configure-icon.svg) y abra la pestaña **[!UICONTROL Borradores]**.
 
    ![Guardar automáticamente](/help/forms/assets/auto-save.png)
 
-1. Seleccione la casilla de verificación **[!UICONTROL Habilitar]** para habilitar el guardado automático del formulario.
-1. Configure **[!UICONTROL Déclencheur]** como **Basado en tiempo**, para guardar automáticamente el formulario <!--based on the occurrence of an event or--> después de un intervalo de tiempo específico.
-1. Especifique el intervalo de tiempo en **[!UICONTROL Guardar automáticamente en este intervalo (en segundos)]** para establecer la duración que déclencheur el guardado automático del formulario en el intervalo definido.
+1. Active la casilla de verificación **[!UICONTROL Guardar borradores automáticamente]** para habilitar el guardado automático del formulario como borradores.
+1. Configure **[!UICONTROL Guardar preferencia]** como **Guardar borradores a intervalos regulares** para guardar automáticamente el formulario <!--based on the occurrence of an event or--> después de un intervalo de tiempo específico.
+1. Especifique el intervalo de tiempo en **[!UICONTROL Guardar frecuencia de intervalo (segundos)]** para establecer la duración que almacena en déclencheur el guardado automático del formulario en el intervalo definido.
 1. Haga clic en **[!UICONTROL Listo]**.
 
 ## Ver borradores/formularios enviados en la página de Sites mediante el componente Borradores y envíos
