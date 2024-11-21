@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2652582ce2a740c958c10bea42c7674513706735
+source-git-commit: 87acfc03c4497fcbfb94ff43cdd380cd6725bcf2
 workflow-type: tm+mt
-source-wordcount: '5799'
+source-wordcount: '5801'
 ht-degree: 98%
 
 ---
@@ -1186,7 +1186,8 @@ ht-degree: 98%
       + [Configuraciones y el explorador de configuración](/help/implementing/developing/introduction/configurations.md)
       + [Fundamentos técnicos de AEM](/help/implementing/developing/introduction/aem-technologies.md)
       + [Materiales de referencia de la API](/help/implementing/developing/reference-materials.md)
-      + [Generación de tokens de acceso para las API del servidor](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
+      + [API basadas en OpenAPI](/help/implementing/developing/open-api-based-apis.md)
+      + [Generación de los tókenes de acceso para las API del servidor](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
       + [Generación de los tókenes de acceso para las API del servidor (heredadas)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
       + [Creación rápida de sitios y personalización del front-end](/help/implementing/developing/introduction/quick-site-creation.md)
       + [Desarrollo de sitios con la canalización front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
