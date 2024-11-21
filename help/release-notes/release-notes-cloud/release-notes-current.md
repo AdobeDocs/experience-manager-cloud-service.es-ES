@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 083e334c2ac248e15168ae3ec4c8daf2b2888ee5
+source-git-commit: 5d2c09a3e1c67e6c2435d84112546107d284259f
 workflow-type: tm+mt
-source-wordcount: '1722'
-ht-degree: 42%
+source-wordcount: '1778'
+ht-degree: 40%
 
 ---
 
@@ -51,6 +51,10 @@ Convierta rápidamente cualquier página de Edge Delivery en una plantilla de p�
 AEM Importador de CSV **[!DNL Edge Delivery Services]para la publicación a través de una instancia de**
 
 Administre sus datos de hojas de cálculo de Edge Delivery AEM de forma eficaz (p. ej., redirecciones) en su herramienta de hoja de cálculo favorita y cárguelos a través del nuevo importador de CSV a la hora de cargar los datos en su archivo de hoja de cálculo a través del nuevo importador de CSV. [Más información](/help/edge/wysiwyg-authoring/tabular-data.md#importing).
+
+### Funciones de la versión preliminar en AEM Sites
+
+Referencias de fragmentos de contenido mejoradas con referencias basadas en ID únicas, lo que garantiza vínculos estables que permanecen válidos incluso cuando se mueven recursos o fragmentos, lo que elimina la necesidad de realizar actualizaciones o volver a publicar. Limitación actual: Las referencias de página aún no son compatibles con los ID únicos. Si se hace referencia a las páginas en los fragmentos de contenido, esta capacidad no debe utilizarse.
 
 ### Programa para primeros usuarios {#sites-early-adopter}
 
