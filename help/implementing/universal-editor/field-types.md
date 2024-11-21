@@ -4,10 +4,10 @@ description: Obtenga información acerca de los campos y los tipos de componente
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 13e5d573d7522d9772f5a4080c2b2f0b460b5513
 workflow-type: tm+mt
-source-wordcount: '1281'
-ht-degree: 13%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -139,7 +139,7 @@ AEM ![Captura de pantalla del tipo de componente de etiqueta de](assets/componen
 
 #### AEM Contenido de {#aem-content}
 
-AEM AEM Un tipo de componente de contenido de habilita un selector de contenido de la aplicación, que se puede utilizar para establecer referencias de contenido. Ofrece un tipo de validación adicional.
+AEM AEM AEM Un tipo de componente de contenido de la habilita un selector de contenido de la, que se puede utilizar para seleccionar cualquier recurso de la misma. AEM AEM A diferencia del componente [reference,](#reference), que solo puede seleccionar recursos, el componente de contenido de la puede hacer referencia a cualquier contenido de la lista de distribución de contenido. Ofrece un tipo de validación adicional.
 
 | Tipo de validación | Tipo de valor | Descripción | Requerido |
 |---|---|---|---|
@@ -636,6 +636,8 @@ Un tipo de componente de grupo de radio permite una selección mutuamente excluy
 >[!ENDTABS]
 
 #### Referencia {#reference}
+
+AEM AEM Un tipo de componente de referencia habilita un selector de recursos de, que se puede utilizar para seleccionar cualquier recurso de referencia a la que se pueda hacer referencia en el momento de la selección. AEM AEM A diferencia del componente de contenido [, ](#aem-content), que puede seleccionar cualquier recurso, el componente de referencia solo puede hacer referencia a recursos. Ofrece un tipo de validación adicional.
 
 Un tipo de componente de referencia permite hacer referencia a otro objeto de datos del objeto actual.
 
