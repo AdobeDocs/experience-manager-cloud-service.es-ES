@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: b72d5fca4113f6d3b9cbabab655e36f2370231d9
+source-git-commit: 083e334c2ac248e15168ae3ec4c8daf2b2888ee5
 workflow-type: tm+mt
-source-wordcount: '1721'
+source-wordcount: '1722'
 ht-degree: 42%
 
 ---
@@ -171,7 +171,7 @@ intuitive and improving the mobile form-filling experience.
 
 AEM Los desarrolladores pueden integrar profundamente las funciones de los Cloud Service de la integración de los en sus propias aplicaciones y herramientas. Las nuevas API de AEM as a Cloud Service seguirán la especificación de OpenAPI, con el objetivo de ser coherentes, bien documentadas y fáciles de usar. Las credenciales de los extremos que requieren autenticación se generarán creando proyectos de Adobe Developer Console.
 
-AEM Obtenga más información acerca de las API de basadas en OpenAPI y pruebe un tutorial completo que ilustre la configuración y el uso.
+AEM Obtenga más información sobre [las API de API de basadas en OpenAPI](/help/implementing/developing/open-api-based-apis.md) y pruebe un [tutorial completo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) que ilustre la configuración y el uso.
 
 En concreto, los puntos finales de API que se enumeran a continuación están disponibles como parte de un programa de usuarios que lo adoptaron por primera vez. Si está interesado, envíe un correo electrónico a [aem-apis@adobe.com](mailto:aem-apis@adobe.com) en el que se describa cómo piensa utilizarlos.
 * [API de fragmentos de contenido de sitios](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
