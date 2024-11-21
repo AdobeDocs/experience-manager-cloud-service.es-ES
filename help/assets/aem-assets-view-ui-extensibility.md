@@ -4,9 +4,9 @@ description: Obtenga información acerca de la capacidad de extensibilidad de la
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: e47a8fc65e58ae2ffff805966d7dae8c6edc7aac
+source-git-commit: af7e6ab40212dfa3d91cda80a76b1b6b01dd65a3
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '598'
 ht-degree: 3%
 
 ---
@@ -17,10 +17,13 @@ ht-degree: 3%
 | ------------- | --------------------------- |---------|----|-----|
 
 La vista AEM Assets tiene la capacidad Extensibilidad de IU. Esta capacidad permite a los usuarios agregar componentes de interfaz de usuario personalizados a la interfaz de usuario de la vista Assets para satisfacer necesidades comerciales específicas que las funcionalidades integradas de la vista AEM Assets no satisfacen. Esta función de extensibilidad mejora la flexibilidad de la vista de AEM Assets, que permite a las organizaciones adaptar la interfaz a flujos de trabajo y requisitos específicos.
-Puede añadir las extensiones a los niveles de recurso, carpeta y colección. La extensión añadida se muestra dentro de un panel dedicado en la página Detalles de recursos, colecciones o carpetas.
+Puede añadir las extensiones a los niveles de recurso, carpeta y colección. La extensión añadida se muestra dentro de un panel dedicado en la página Detalles de recurso, colección o carpeta.
 
 >[!IMPORTANT]
-> La extensibilidad de la IU de vista de AEM Assets está disponible con [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
+>
+> * La extensibilidad de la IU de vista de AEM Assets está disponible con [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
+> * La extensibilidad de la IU de vista de Assets está disponible en su versión de Beta. Para obtener acceso anticipado a la extensibilidad de la interfaz de usuario de la vista de Assets, [cree y envíe un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
+> * Para proporcionar comentarios sobre la documentación, expanda las opciones de Comentarios detallados y haga clic en Informar de un problema.
 
 ## <a id="1"></a> Cómo acceder a la vista de Assets
 
@@ -32,9 +35,6 @@ Acceda a la vista de Assets de las siguientes maneras:
 En la vista Assets, vaya a la página Detalles de un recurso, una carpeta o una colección. Esta página de detalles tiene un panel dedicado que muestra la extensión de la interfaz de usuario agregada.
 ![mi espacio de trabajo](/help/assets/assets/my-workspace-assets-view3.png)
 
->[!NOTE]
->
-> La extensibilidad de la IU de vista de AEM Assets está disponible en su versión de Beta. Para proporcionar comentarios sobre la documentación, expanda las opciones de Comentarios detallados y haga clic en Informar de un problema.
 
 ## Requisitos previos para añadir el componente de extensibilidad
 
