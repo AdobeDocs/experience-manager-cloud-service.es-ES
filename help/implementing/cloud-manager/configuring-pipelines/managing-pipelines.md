@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f7a8e823f058115f11241f0864517432a7dea5ab
+source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 32%
+source-wordcount: '1162'
+ht-degree: 34%
 
 ---
 
@@ -28,7 +28,7 @@ Al hacer clic en ![Puntos suspensivos - Icono de más](https://spectrum.adobe.co
 
 * [Ejecutar una canalización](#running-pipelines)
 * [Cancelar una canalización](#cancel)
-* [Edición de una canalización](#editing-pipelines)
+* [Editar una canalización](#editing-pipelines)
 * [Eliminación de una canalización](#deleting-pipelines)
 * [Ver los detalles de la última ejecución de una canalización](#view-details)
 
@@ -41,7 +41,7 @@ En la parte inferior de la lista de canalizaciones, tiene las siguientes opcione
 
 ## Página Canalizaciones {#pipelines}
 
-La página **Canalizaciones** muestra una lista completa de todas las canalizaciones del programa seleccionado. Esta información es útil porque presenta información más completa que la disponible en la [tarjeta de canalización](#pipeline-card).
+La página **Canalizaciones** muestra una lista completa de todas las canalizaciones para el programa seleccionado. Esta información es útil porque presenta información más completa que la disponible en la [tarjeta de canalización](#pipeline-card).
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
@@ -60,9 +60,9 @@ También puede hacer clic en ![Puntos suspensivos - Más icono](https://spectrum
 
 ![Acciones de canalización](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
 
-## Página de actividad {#activity}
+## Página Actividad {#activity}
 
-La página **Actividad** muestra una lista completa de todas las ejecuciones de canalizaciones para el programa seleccionado, así como otros eventos de programa importantes.
+La página **Actividad** muestra una lista completa de todas las ejecuciones de canalizaciones para el programa seleccionado y otros eventos de programa importantes.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
 
@@ -96,7 +96,7 @@ Para ver los detalles de la ejecución, vuelva a hacer clic en ![Puntos suspensi
 
 Según el tipo de canalización, puede cancelar la ejecución si hace clic de nuevo en ![Puntos suspensivos - Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y hace clic en **Cancelar**.
 
-## Edición de una canalización {#editing-pipelines}
+## Editar una canalización {#editing-pipelines}
 
 Puede editar una canalización si no se está ejecutando.
 

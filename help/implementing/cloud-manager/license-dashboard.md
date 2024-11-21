@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8f3ceb5ebf348b5f3f496b1db04d7dd7c9a0ac5c
+source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 25%
+source-wordcount: '890'
+ht-degree: 22%
 
 ---
 
@@ -41,9 +41,9 @@ El panel de licencias de Cloud Manager proporciona un acceso fácil a las autori
 
 El tablero se divide en tres secciones que le muestran lo siguiente:
 
-* **Soluciones**: Esta sección resume las soluciones para las que tiene licencia, como Sites o Assets.
-* **Complementos**: Esta sección resume qué complementos de las soluciones con licencia tiene disponibles.
-* **Otros derechos**: Esta sección resume qué zona protegida y entorno de desarrollo, así como otros derechos se pueden consumir dentro de su inquilino.
+* **Soluciones** - Qué soluciones tiene licencia.
+* **Complementos**: qué complementos de las soluciones con licencia tiene disponibles.
+* **Otros derechos** - Qué zona protegida y entorno de desarrollo y otros derechos se pueden consumir dentro de su inquilino.
 
 Cada sección resume lo que está disponible y cómo se utiliza, si es que lo está. Actualmente solo se muestran las soluciones de Sites y Assets, aunque existan otras soluciones en el inquilino.
 

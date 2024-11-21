@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 16941385a05358d9a5cf3f57405b8f2174902af2
+source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1276'
 ht-degree: 9%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 9%
 
 ## Introducción {#introduction}
 
-Las solicitudes de contenido hacen referencia a solicitudes realizadas a AEM Sites, incluidas las solicitudes relacionadas con Edge Delivery Services o sistemas de almacenamiento en caché proporcionados por el cliente, como una red de distribución de contenido. Estas solicitudes envían contenido o datos en formato HTML a través de vistas de página (por ejemplo, páginas y fragmentos de experiencias) o en formato JSON a través de llamadas de API de forma directa. Las solicitudes de contenido se cuentan como una vista de página o como cinco llamadas a la API y se miden a la entrada del primer sistema de almacenamiento en caché que recibe una solicitud de contenido. Algunas solicitudes HTTP se incluyen o excluyen con el fin de contar las solicitudes de contenido. La lista completa de dichas solicitudes HTTP incluidas y excluidas, así como sus definiciones técnicas, están disponibles en la documentación.
+Las solicitudes de contenido hacen referencia a solicitudes realizadas a AEM Sites, incluidas las solicitudes relacionadas con Edge Delivery Services o sistemas de almacenamiento en caché proporcionados por el cliente, como una red de distribución de contenido. Estas solicitudes envían contenido o datos en formato HTML a través de vistas de página (por ejemplo, páginas y fragmentos de experiencias) o en formato JSON a través de llamadas de API de forma directa. Las solicitudes de contenido se cuentan como una vista de página o como cinco llamadas a la API y se miden a la entrada del primer sistema de almacenamiento en caché que recibe una solicitud de contenido. Algunas solicitudes HTTP se incluyen o excluyen con el fin de contar las solicitudes de contenido. La lista completa de dichas solicitudes HTTP incluidas y excluidas, y sus definiciones técnicas, están disponibles en la documentación.
 
 ## Acerca de las solicitudes de contenido de Cloud Service {#understanding-cloud-service-content-requests}
 

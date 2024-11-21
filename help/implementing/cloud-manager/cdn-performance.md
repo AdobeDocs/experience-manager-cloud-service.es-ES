@@ -5,9 +5,9 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '374'
 ht-degree: 4%
 
 ---
@@ -42,7 +42,7 @@ El panel presenta una puntuación general para el rendimiento de la CDN junto co
 
 ![Panel de rendimiento de CDN](assets/cdn-performance-dashboard.png)
 
-Para obtener detalles sobre el rendimiento de su CDN, así como sugerencias sobre cómo mejorarlo, haga clic en **Ver tendencia**.
+Para obtener detalles sobre el rendimiento de su CDN y sugerencias sobre cómo mejorarlo, haga clic en **Ver tendencia**.
 
 ![Tendencia de rendimiento](assets/cdn-performance-trend.png)
 
