@@ -4,16 +4,22 @@ description: Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encab
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: afff23f505b789667e4d34683d0dfd11b1a436a8
 workflow-type: tm+mt
-source-wordcount: '1826'
-ht-degree: 95%
+source-wordcount: '1940'
+ht-degree: 90%
 
 ---
 
 # Formación para utilizar GraphQL con AEM: contenido y consultas de muestra {#learn-graphql-with-aem-sample-content-queries}
 
 Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encabezado explorando contenido y consultas de muestra.
+
+>[!IMPORTANT]
+>
+>Varias funciones de la API de GraphQL para su uso con fragmentos de contenido están disponibles a través del programa de adopción anticipada.
+>
+>Para ver el estado y cómo solicitarlo si está interesado, consulte las [Notas de la versión](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 >[!NOTE]
 >
@@ -1479,6 +1485,79 @@ La siguiente consulta devuelve todos los `attachments`, un campo específico (su
         ... on ArchiveRef {
           _path
           format
+        }
+      }
+    }
+  }
+}
+```
+
+### Consultas de muestra para un fragmento de contenido de un modelo específico mediante referencias UUID {#sample-wknd-fragment-specific-model-uuid-references}
+
+<!-- CQDOC-21487 - need more details on both, text must be checked too -->
+
+Estas consultas buscan:
+
+* el UUID para un fragmento de contenido y para fragmentos o recursos de contenido referenciados
+* el resultado se devuelve mediante la propiedad JSON `_id`
+
+#### Consulta de muestra para un fragmento de contenido de un modelo específico mediante una referencia UUID {#sample-wknd-fragment-specific-model-using-a-uuid-reference}
+
+La siguiente consulta devuelve todas las referencias de contenido usando `_id` y `_path`:
+
+```graphql
+{
+  articleList {
+    items {
+        _id
+        _path
+        title
+        featuredImage {
+          ... on ImageRef {
+            _id
+            _path           
+          }
+        }
+        authorFragment {
+          firstName
+          lastName
+          profilePicture {
+            ... on ImageRef {
+              _id
+              _path
+            }
+          }
+        }
+      }
+  }
+}
+```
+
+#### Consulta de muestra para fragmentos de contenido por referencia de UUID {#sample-wknd-fragment-specific-model-by-uuid-reference}
+
+La siguiente consulta devuelve todas las referencias de contenido relacionadas con un elemento específico `_id`:
+
+```graphql
+{
+  articleById(_id: "3ce2bf53-7436-4d3e-b19a-2793bc2ca63e") {
+    item {
+      _id
+      _path
+      title
+      featuredImage {
+        ... on ImageRef {
+          _id
+          _path
+        }
+      }
+      authorFragment {
+        firstName
+        lastName
+        profilePicture {
+          ... on ImageRef {
+            _id
+            _path
+          }
         }
       }
     }

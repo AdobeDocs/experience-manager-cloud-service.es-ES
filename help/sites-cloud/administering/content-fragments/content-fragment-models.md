@@ -5,14 +5,20 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 862a1f67782775cc1b2ee6e3d3d66ae5560a15ab
+source-git-commit: e59c432a2f6b0f2034829b3cb3f88679aa182048
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3591'
+ht-degree: 48%
 
 ---
 
 # Modelos de fragmento de contenido {#content-fragment-models}
+
+>[!IMPORTANT]
+>
+>Varias funciones de los modelos de fragmentos de contenido están disponibles a través del programa de adopción anticipada.
+>
+>Para ver el estado y cómo solicitarlo si está interesado, consulte las [Notas de la versión](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 Los modelos de fragmentos de contenido de Adobe Experience Manager AEM () as a Cloud Service definen la estructura del contenido de sus [fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md). Estos fragmentos se pueden utilizar para la creación de páginas o como base para el contenido sin encabezado.
 
@@ -180,18 +186,33 @@ Hay disponible una selección de tipos de datos para definir el modelo:
 
 * **Etiquetas**
    * Permite a los autores de fragmentos acceder y seleccionar áreas de etiquetas
+* **Referencia a fragmento**
+   * Referencias a otros fragmentos de contenido; se pueden usar para [crear contenido anidado](#using-references-to-form-nested-content)
+   * El tipo de datos se puede configurar para que los autores de fragmentos puedan hacer lo siguiente:
+      * Editar directamente el fragmento al que se hace referencia.
+      * Crear un nuevo fragmento de contenido basado en el modelo adecuado
+      * Crear nuevas instancias del campo
+   * La referencia especifica la ruta al recurso al que se hace referencia; por ejemplo `/content/dam/path/to/resource`
+* **Referencia de fragmento (UUID)**
+   * Referencias a otros fragmentos de contenido; se pueden usar para [crear contenido anidado](#using-references-to-form-nested-content)
+   * El tipo de datos se puede configurar para que los autores de fragmentos puedan hacer lo siguiente:
+      * Editar directamente el fragmento al que se hace referencia.
+      * Crear un nuevo fragmento de contenido basado en el modelo adecuado
+      * Crear nuevas instancias del campo
+   * En el editor, la referencia especifica la ruta al recurso al que se hace referencia; internamente, la referencia se mantiene como un ID único universal (UUID) que hace referencia al recurso
+      * No es necesario conocer el UUID; en el editor de fragmentos puede buscar el fragmento requerido
 
 * **Referencia de contenido**
    * Referencias a otros contenidos, de cualquier tipo; se pueden usar para [crear contenido anidado](#using-references-to-form-nested-content)
    * Si se hace referencia a una imagen, puede optar por mostrar una miniatura
    * El campo se puede configurar para permitir que los autores de fragmentos creen nuevas instancias del campo
-
-* **Referencia a fragmento**
-   * Referencias a otros fragmentos de contenido; se pueden usar para [crear contenido anidado](#using-references-to-form-nested-content)
-   * El campo se puede configurar para que los autores de fragmentos puedan hacer lo siguiente:
-      * Editar directamente el fragmento referenciado
-      * Crear un nuevo fragmento de contenido basado en el modelo adecuado
-      * Crear nuevas instancias del campo
+   * La referencia especifica la ruta al recurso al que se hace referencia; por ejemplo `/content/dam/path/to/resource`
+* **Referencia de contenido (UUID)**
+   * Referencias a otros contenidos, de cualquier tipo; se pueden usar para [crear contenido anidado](#using-references-to-form-nested-content)
+   * Si se hace referencia a una imagen, puede optar por mostrar una miniatura
+   * El campo se puede configurar para permitir que los autores de fragmentos creen nuevas instancias del campo
+   * En el editor, la referencia especifica la ruta al recurso al que se hace referencia; internamente, la referencia se mantiene como un ID único universal (UUID) que hace referencia al recurso
+      * No necesita conocer el UUID; en el editor de fragmentos puede navegar hasta el recurso de recurso requerido
 
 * **Objeto JSON**
    * Permite al autor del fragmento de contenido introducir la sintaxis JSON en los elementos correspondientes de un fragmento.
@@ -293,17 +314,28 @@ Varios tipos de datos ahora incluyen la posibilidad de definir los requisitos de
 
 Los fragmentos de contenido pueden formar contenido anidado mediante cualquiera de los siguientes tipos de datos:
 
-* **[Referencia de contenido](#content-reference)**
+* [Referencia de contenido](#content-reference)
    * Proporciona una sencilla referencia a otro contenido; de cualquier tipo.
+   * Proporcionado por los tipos de datos:
+      * **Referencia de contenido** - basado en ruta
+      * **Referencia de contenido (UUID)** - basada en UUID
    * Se puede configurar para una o varias referencias (en el fragmento resultante).
 
-* **[Referencia a fragmento](#fragment-reference-nested-fragments)** (fragmentos anidados)
+* [Referencia a fragmento](#fragment-reference-nested-fragments) (fragmentos anidados)
    * Hace referencia a otros fragmentos, según los modelos específicos definidos.
+   * Proporcionado por los tipos de datos:
+      * **Referencia de fragmento** - basado en ruta
+      * **Referencia de fragmento (UUID)** - basado en UUID
    * Permite incluir o recuperar datos estructurados.
+
      >[!NOTE]
      >
      Este método es de particular interés cuando se usa [Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
    * Se puede configurar para una o varias referencias (en el fragmento resultante).
+
+>[!NOTE]
+>
+Consulte [Actualizar los fragmentos de contenido para referencias de UUID](/help/headless/graphql-api/uuid-reference-upgrade.md) para obtener más información sobre las referencias de contenido/fragmento y las referencias de contenido/fragmento (UUID), y actualizar a los tipos de datos basados en UUID.
 
 >[!NOTE]
 >
@@ -323,11 +355,11 @@ AEM Para obtener más información, consulte la [API de GraphQL para usar con fr
 
 ### Referencia de contenido {#content-reference}
 
-La referencia de contenido le permite procesar contenido de otra fuente; por ejemplo, imagen, página o fragmento de experiencia.
+Los tipos de datos **Referencia de contenido** y **Referencia de contenido (UUID)** le permiten procesar contenido de otra fuente; por ejemplo, imagen, página o Fragmento de experiencia.
 
 Además de las propiedades estándar, puede especificar las siguentes:
 
-* La **ruta raíz**, que especifica dónde almacenar el contenido referenciado
+* La **Ruta raíz**, que especifica o representa dónde almacenar el contenido referenciado
   >[!NOTE]
   >
   Esto es obligatorio si desea cargar directamente y hacer referencia a imágenes en este campo al utilizar el editor de fragmentos de contenido.
@@ -350,7 +382,7 @@ Además de las propiedades estándar, puede especificar las siguentes:
 
 ### Referencia a fragmento (fragmentos anidados) {#fragment-reference-nested-fragments}
 
-La referencia a fragmento hace referencia a uno o varios fragmentos de contenido. Esta función es de especial interés cuando se recupera contenido para utilizarlo en la aplicación, ya que le permite recuperar datos estructurados con varias capas.
+Los tipos de datos **Referencia de fragmento** y **Referencia de fragmento (UUID)** pueden hacer referencia a uno o más fragmentos de contenido. Esta función es de especial interés cuando se recupera contenido para utilizarlo en la aplicación, ya que le permite recuperar datos estructurados con varias capas.
 
 Por ejemplo:
 
@@ -386,8 +418,8 @@ Además de las propiedades estándar, puede definir las siguientes:
 * **Tipo de modelo:**
 sueden seleccionar varios modelos. Al añadir referencias a un fragmento de contenido, cualquier fragmento al que se haga referencia debe haberse creado con estos modelos.
 
-* **Ruta raíz:**
-Esto especifica una ruta raíz para los fragmentos a los que se hace referencia.
+* **Ruta raíz**
+Esto especifica o representa una ruta raíz para los fragmentos a los que se hace referencia.
 
 * **Permitir creación de fragmentos**
 
