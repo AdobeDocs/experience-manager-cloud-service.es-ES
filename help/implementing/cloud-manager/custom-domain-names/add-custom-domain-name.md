@@ -5,9 +5,9 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d2fb23918b04f63aab3ae859485be673034e7aec
+source-git-commit: 9d169ad7a2982ee44d9b47a418d50b2806942ce2
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '1016'
 ht-degree: 16%
 
 ---
@@ -52,6 +52,11 @@ Los pasos para cualquiera de los métodos descritos en este documento se basan e
 1. En el cuadro de diálogo **Agregar dominio**, en el campo **Nombre de dominio**, escriba el nombre de dominio personalizado que está utilizando.
 Al escribir el nombre de dominio, no incluya `http://`, `https://` ni espacios.
 
+   >[!NOTE]
+   >
+   >Si necesita las versiones `www` y `non-www` de un dominio, debe agregarlas por separado. Por ejemplo, `example.com` y `www.example.com`.
+   <!-- Marius Petria on SLACK tmp-skyline-cdn-certificates - Actually  my opinion is that this option should be explicit in UI (that was present in the initial mocks of the design but for some reason it was dropped). I think when adding a domain there should be a check mark to also add www.domain. When adding example.com Customer should be prompted with the following options: Do you also want to add www.example.com and have a redirect example.com -> www.example.com?Do you also want to add www.example.com and have a redirect www.example.com -> example.com? -->
+
 1. Haga clic en **Crear**.
 
 1. En el cuadro de diálogo **Verificar dominio**, en **¿Qué tipo de certificado planea usar con este dominio?**, seleccione una de las siguientes opciones:
@@ -70,7 +75,7 @@ Al escribir el nombre de dominio, no incluya `http://`, `https://` ni espacios.
 
    >[!NOTE]
    >
-   >Si usa su propio certificado SSL administrado por el cliente (OV/EV o DV) y tiene intención de usar un CDN administrado por el cliente ***provider***, puede omitir agregar un certificado SSL e ir directamente a [Agregar una configuración de CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) cuando esté listo.
+   >Si utiliza su propio certificado SSL administrado por el cliente (OV/EV o DV) y tiene intención de utilizar un CDN administrado por el cliente ***provider***, puede omitir la adición de un certificado SSL. En su lugar, vaya directamente a [Agregar una configuración de CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) cuando esté listo.
 
 
 ### Pasos del certificado administrado de Adobe {#adobe-managed-cert-steps}
