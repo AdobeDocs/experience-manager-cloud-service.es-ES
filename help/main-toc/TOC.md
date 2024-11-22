@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b677ab1781491059098cbf63f13f72555d6012b3
+source-git-commit: d74ca698d0b6992d1f58173fbcd6bac399421fef
 workflow-type: tm+mt
-source-wordcount: '5880'
+source-wordcount: '5883'
 ht-degree: 97%
 
 ---
@@ -750,7 +750,7 @@ ht-degree: 97%
             + [Configuración de la acción de envío Enviar a punto final REST para formularios adaptables](/help/forms/configure-submit-action-restpoint.md)
             + [Configuración de la acción de envío Enviar correo electrónico para un formulario adaptable](/help/forms/configure-submit-action-send-email.md)
             + [Uso de Google reCAPTCHA en un formulario adaptable](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [Utilice hCAPTCHA en un formulario adaptable](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [Usar hCAPTCHA en componentes principales de un formulario adaptable](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
             + [Agregar un controlador de error personalizado en un formulario adaptable](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Añadir una configuración regional para Formularios adaptables basada en componentes principales](/help/forms/supporting-new-language-localization-core-components.md)
             + [Diseño de un esquema JSON para un formulario adaptable (componentes principales)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
@@ -797,7 +797,7 @@ ht-degree: 97%
          + Adición de componentes a un formulario adaptable {#add-components-to-an-adaptive-form}
             + [Uso de CAPTCHA en un formulario adaptable](/help/forms/captcha-adaptive-forms.md)
             + [Utilice hCaptcha en un formulario adaptable](/help/forms/integrate-adaptive-forms-hcaptcha.md)
-            + [Utilice Turnstile en un formulario adaptable](/help/forms/integrate-adaptive-forms-turnstile.md)
+            + [Usar CAPTCHA de torniquete en un formulario adaptable](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [Usar componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
             + [Aplicar firma manuscrita](/help/forms/signing-forms-using-scribble.md)
             + [Adición de una tabla a un formulario adaptable](/help/forms/adaptive-forms-tables.md)

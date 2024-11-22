@@ -3,13 +3,10 @@ title: AEM ¿Cómo se utiliza Turnstile en un formulario adaptable con un tipo d
 description: Mejore la seguridad de los formularios con el servicio Turnstile sin esfuerzo. Guía paso a paso en el interior
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
-hide: true
-hidefromtoc: true
-exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
 role: User, Developer
-source-git-commit: d69d64a02c62b9a796188107cfe1ab7543b5a2be
+source-git-commit: 553f456f0eab43cee11fb9e66ce9e1dbacdc2b5c
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '952'
 ht-degree: 26%
 
 ---
@@ -29,13 +26,13 @@ AEM Forms as a Cloud Service es compatible con las siguientes soluciones CAPTCHA
 
 ## Integración del entorno de AEM Forms con Turnstile Captcha
 
-El Turnstile Captcha de Cloudflare es una medida de seguridad que tiene como objetivo proteger los formularios y sitios de bots automatizados, ataques maliciosos, spam y tráfico automatizado no deseado. Presenta una casilla de verificación en el envío del formulario para verificar que son humanos, antes de permitirles enviar el formulario. AEM Forms as a Cloud Service es compatible con Turnstile Captcha en los componentes principales de Forms adaptable.
+El Turnstile Captcha de Cloudflare es una medida de seguridad que tiene como objetivo proteger los formularios y sitios de bots automatizados, ataques maliciosos, spam y tráfico automatizado no deseado. Presenta una casilla de verificación en el envío del formulario para verificar que son humanos, antes de permitirles enviar el formulario. AEM Forms as a Cloud Service es compatible con Turnstile Captcha en Forms adaptable.
 
 <!-- ![Turnstile](assets/Turnstile-challenge.png)-->
 
 ### Requisitos previos para integrar el entorno de AEM Forms con Turnstile Captcha {#prerequisite}
 
-Para configurar Turnstile para los componentes principales de AEM Forms, necesita obtener la clave del sitio [Turnstile y la clave secreta](https://developers.cloudflare.com/turnstile/get-started/) del sitio web de Turnstile.
+Para configurar Turnstile para AEM Forms, necesita obtener la clave del sitio [Turnstile y la clave secreta](https://developers.cloudflare.com/turnstile/get-started/) del sitio web de Turnstile.
 
 ### Pasos para configurar Turnstile para AEM Forms{#steps-to-configure-turnstile}
 

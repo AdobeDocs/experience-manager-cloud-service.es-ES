@@ -4,13 +4,10 @@ description: Mejore la seguridad sin esfuerzo con el servicio hCaptcha&reg;. Gu�
 topic-tags: Adaptive Forms, author
 keywords: Captcha&reg; service, Forms adaptable, desafío CAPTCHA, prevención de bots, seguridad de envío de formularios, prevención de spam de formularios
 feature: Adaptive Forms, Foundation Components
-hide: true
-hidefromtoc: true
-exl-id: dc7ca723-1008-472a-b6eb-8e9ed6332a16
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 553f456f0eab43cee11fb9e66ce9e1dbacdc2b5c
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '981'
 ht-degree: 33%
 
 ---
@@ -31,7 +28,7 @@ AEM Forms as a Cloud Service es compatible con las siguientes soluciones CAPTCHA
 
 El servicio hCaptcha® protege sus formularios de bots, correos no deseados y abusos automatizados. Plantea un desafío tipo Widget de la casilla de verificación y evalúa la respuesta del usuario para determinar si es un humano o un bot el que interactúa con el formulario. Evita que el usuario continúe si la prueba falla y ayuda a que las transacciones en línea sean seguras al impedir que los bots publiquen contenido no deseado o actividades maliciosas.
 
-AEM Forms as a Cloud Service es compatible con hCaptcha® en los componentes principales de Forms adaptable. Puede utilizarlo para presentar un desafío de widget de casilla de verificación al enviar el formulario.
+AEM Forms as a Cloud Service es compatible con hCaptcha® en Forms adaptable. Puede utilizarlo para presentar un desafío de widget de casilla de verificación al enviar el formulario.
 
 <!-- ![hCaptcha&reg;](assets/hCaptcha&reg;-challenge.png)-->
 
