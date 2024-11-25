@@ -3,10 +3,10 @@ title: API de envío
 description: Aprenda a utilizar las API de entrega.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 7727aa87693cc96e3497dcda71190866b198975d
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 3%
+source-wordcount: '619'
+ht-degree: 6%
 
 ---
 
@@ -40,6 +40,11 @@ La siguiente tabla ilustra el uso de las distintas API de envío disponibles:
 | [Metadatos de recursos](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata) | Devuelve las propiedades asociadas a un recurso como, por ejemplo, title, description, CreateDate, ModifyDate, etc. |
 | [Contenedor del reproductor para el recurso de vídeo](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | Devuelve el contenedor del reproductor para el recurso de vídeo. Puede incrustar el reproductor en un elemento del HTML de iframe y reproducir el vídeo. |
 | [Manifiestos de reproducción en el formato de salida seleccionado](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | Devuelve el archivo de manifiesto de reproducción del recurso de vídeo especificado en el formato de salida seleccionado. Debe crear un reproductor personalizado capaz de flujo adaptable a través de protocolos HLS o DASH para poder extraer el archivo de manifiesto de reproducción y reproducir el vídeo. |
+
+
+>[!NOTE]
+>
+Hay [ajustes preestablecidos de imagen, imágenes inteligentes y modificadores de imagen adicionales](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) disponibles como característica de disponibilidad limitada. Para obtener acceso, [cree y envíe un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
 
 ## Extremos de API de envío {#delivery-apis-endpoint}
 
