@@ -5,7 +5,7 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: abc114373f5db501bb8709fd2d4c33aebc1c5ec9
 workflow-type: tm+mt
 source-wordcount: '2504'
 ht-degree: 52%
@@ -14,7 +14,7 @@ ht-degree: 52%
 
 # Variaciones: Crear contenido de fragmentos{#variations-authoring-fragment-content}
 
-Las [variaciones](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) son una característica importante de los fragmentos de contenido en el as a Cloud Service de Adobe AEM Experience Manager (). Esto se debe a que le permiten crear y editar copias del contenido de **Master** para usarlas en canales y escenarios específicos. En particular, esto hace que la entrega de contenido sin encabezado sea aún más flexible.
+Las [variaciones](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) son una característica importante de los fragmentos de contenido en el as a Cloud Service de Adobe Experience Manager AEM (). Esto se debe a que le permiten crear y editar copias del contenido de **Master** para usarlas en canales y escenarios específicos. En particular, esto hace que la entrega de contenido sin encabezado sea aún más flexible.
 
 >[!NOTE]
 >
