@@ -1,18 +1,18 @@
 ---
-title: Agregar versiones, comentarios y anotaciones a un formulario.
-description: Utilice los componentes principales del formulario adaptable para agregar comentarios, anotaciones y versiones a un formulario adaptable.
+title: Añada versiones, comentarios y anotaciones a un formulario.
+description: Utilice los componentes básicos de un formulario adaptable para añadir comentarios, anotaciones y versiones a un formulario adaptable.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
 exl-id: 84b95a19-c804-41ad-8f4b-5868c8444cc0
 role: User, Developer, Admin
 source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '593'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Creación de versiones, revisión y comentarios sobre un formulario adaptable
+# Versiones, revisión y comentarios de un formulario adaptable
 
 <!--Before you can use versionings, comments, and annotations in an Adaptive Form, you must ensure you have [enabled Adaptive Form Core Components](
 https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components).-->
@@ -22,28 +22,28 @@ https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/cont
 <span class="preview"> Esta es una función previa al lanzamiento y se puede acceder a ella a través de nuestro [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features). </span>
 
 
-Los componentes principales de un formulario adaptable proporcionan una funcionalidad que permite a los autores de formularios incorporar versiones, comentarios y anotaciones en los formularios. Estas funciones sirven para optimizar el proceso de desarrollo de formularios, ya que permiten a los usuarios crear y administrar varias versiones de un formulario, participar en debates de colaboración mediante comentarios y adjuntar anotaciones a componentes de formulario específicos, lo que mejora la experiencia general de creación de formularios.
+Los componentes principales de un formulario adaptable proporcionan una funcionalidad que permite a los autores de formularios incorporar versiones, comentarios y anotaciones en los formularios. Estas funciones sirven para optimizar el proceso de desarrollo de formularios, ya que permiten a los usuarios crear y administrar varias versiones de un formulario, participar en conversaciones de colaboración mediante comentarios y adjuntar anotaciones a componentes de formulario específicos, lo que mejora la experiencia general de creación de formularios.
 
 
-## Versiones de formulario adaptable {#adaptive-form-versioning}
+## Versiones de formularios adaptables {#adaptive-form-versioning}
 
-Las versiones de formularios adaptables ayudan a agregar versiones a un formulario. Los autores de formularios pueden crear fácilmente varias versiones de un formulario y, finalmente, utilizar el que sea adecuado para los objetivos comerciales. Además, los usuarios de formularios también pueden revertir el formulario a las versiones anteriores. También facilita a los autores la comparación de dos versiones cualquiera de un formulario mediante la previsualización, lo que les permite analizar mejor los formularios desde las perspectivas de la interfaz de usuario. Vamos a ver en detalle cada funcionalidad de control de versiones de formulario adaptable:
+Las versiones de formularios adaptables ayudan a añadir versiones a un formulario. Los autores de formularios pueden crear fácilmente varias versiones de un formulario y, finalmente, utilizar la que mejor se adapte a los objetivos de la empresa. Además, los usuarios de formularios también pueden revertir el formulario a las versiones anteriores. También permite a los autores comparar dos versiones distintas de un formulario previsualizándolas, lo que les permite analizar mejor los formularios desde el punto de vista de la interfaz de usuario. Veamos en detalle cada una de las funcionalidades de las versiones de los formularios adaptativos:
 
-### Crear una versión de formulario {#create-a-form-version}
+### Creación de una versión del formulario {#create-a-form-version}
 
 Para crear una versión de un formulario, siga los pasos a continuación:
 
 1. Cree un formulario o utilice un formulario existente.
-1. AEM En la interfaz de usuario de, vaya a **[!UICONTROL Formulario]**>**[!UICONTROL Forms y documentos]** y seleccione su **Formulario**.
+1. En la interfaz de usuario de AEM, vaya a **[!UICONTROL Formulario]**>>**[!UICONTROL Formularios y documentos]** y seleccione su **Formulario**.
 1. En el menú desplegable de selección del panel izquierdo, seleccione **[!UICONTROL Versiones]**.
    ![Seleccionar un formulario](select-a-form.png)
-1. Haga clic en **tres puntos** situados en el panel inferior de la izquierda y, a continuación, haga clic en **[!UICONTROL Guardar como versión]**.
-1. Ahora, proporcione una etiqueta a la versión del formulario y puede proporcionar información sobre el formulario a través del comentario.
-   ![Crear una versión de formulario](create-a-form-version.png)
+1. Haga clic en los **tres puntos** situados en el panel inferior de la izquierda y, a continuación, haga clic en **[!UICONTROL Guardar como versión]**.
+1. Ahora, proporcione una etiqueta a la versión del formulario, y puede proporcionar información sobre el formulario a través del comentario.
+   ![Crear una versión de un formulario](create-a-form-version.png)
 
 ### Actualizar una versión de formulario {#update-a-form-version}
 
-Al editar y actualizar el formulario adaptable, se agrega una nueva versión al formulario. Siga los pasos de la última sección para asignar un nombre a una nueva versión del formulario, como se muestra en la imagen:
+Al editar y actualizar el formulario adaptable, se añade una nueva versión al formulario. Siga los pasos de la última sección para asignar un nombre a una nueva versión del formulario, como se muestra en la imagen:
 
 ![Actualizar una versión de formulario](update-a-form-version.png)
 
@@ -59,33 +59,33 @@ Los autores de formularios pueden comparar dos versiones diferentes de un formul
 
 ![Comparar versiones de formularios](compare-form-versions.png)
 
-## Agregar comentarios {#add-comments}
+## Añadir comentarios {#add-comments}
 
-Una revisión es un mecanismo que permite a uno o más revisores realizar comentarios sobre los formularios. Cualquier usuario de un formulario puede realizar comentarios en un formulario o revisarlo mediante comentarios. Para realizar comentarios en un formulario, seleccione un **[!UICONTROL Formulario]** y agregue un **[!UICONTROL Comentario]** al formulario.
+Una revisión es un mecanismo que permite a uno o más revisores realizar comentarios sobre los formularios.  Cualquier usuario de un formulario puede realizar comentarios en un formulario o revisarlo mediante comentarios. Para realizar comentarios en un formulario, seleccione un **[!UICONTROL Formulario]** y añada un **[!UICONTROL Comentario]** al formulario.
 
 >[!NOTE]
 > Cuando se usan comentarios en los componentes principales de los formularios adaptables, como se ha indicado anteriormente, la funcionalidad del formulario [Crear y administrar revisiones en formularios](/help/forms/create-reviews-forms.md) está deshabilitada.
 
 
-![Agregar comentarios en un formulario](form-comments.png)
+![Añadir comentarios en un formulario](form-comments.png)
 
-## Agregar anotaciones {#adaptive-form-annotations}
+## Añadir anotaciones {#adaptive-form-annotations}
 
-En muchos casos, los usuarios de grupos de formularios deben agregar anotaciones a un formulario con fines de revisión, por ejemplo, en una pestaña específica de un formulario o de sus componentes. En estos casos, los autores pueden utilizar anotaciones. Para agregar anotaciones a un formulario, realice los siguientes pasos:
+En muchos casos, los usuarios de grupos de formularios deben añadir anotaciones a un formulario con fines de revisión, por ejemplo, en una pestaña específica o en los componentes de un formulario. En estos casos, los autores pueden utilizar anotaciones. Para añadir anotaciones a un formulario, siga los siguientes pasos:
 
 1. Abra un formulario en el modo **[!UICONTROL Editar]**.
 
-1. Haga clic en el **icono de agregar** ubicado en el carril superior derecho como se indica en la imagen.
+1. Haga clic en el icono **añadir** situado en el carril superior derecho, como se indica en la imagen.
    ![Anotación](annotation.png)
 
-1. Haga clic en el **icono de agregar** ubicado en el carril superior izquierdo tal como se indica en la imagen para agregar la anotación.
-   ![Agregar anotación](add-annotation.png)
+1. Haga clic en el icono **añadir** situado en el carril superior izquierdo, como se indica en la imagen, para añadir la anotación.
+   ![Añadir anotación](add-annotation.png)
 
-1. Ahora puede agregar comentarios y dibujar bocetos con varios colores para formar componentes.
+1. Ahora puede añadir comentarios y dibujar bocetos con varios colores para formar componentes.
 
-1. Para ver todas las anotaciones agregadas a un formulario, seleccione el formulario y verá las anotaciones agregadas en el panel izquierdo, como se muestra en la imagen.
+1. Para ver todas las anotaciones añadidas a un formulario, seleccione el formulario y verá las anotaciones añadidas en el panel izquierdo, como se muestra en la imagen.
 
-   ![Ver anotaciones agregadas](see-annotations.png)
+   ![Ver anotaciones añadidas](see-annotations.png)
 
 ## Consulte también {#see-also}
 

@@ -1,14 +1,14 @@
 ---
-title: Cómo diseñar el esquema JSON para los componentes principales de un formulario adaptable
-description: Aprenda a crear un esquema JSON para los componentes principales de un formulario adaptable y a crear un formulario adaptable (componentes principales) basado en el esquema para producir datos de quejas de esquema.
+title: ¿Cómo diseñar un esquema JSON para los componentes principales de un formulario adaptable?
+description: Aprenda a crear un esquema JSON para los componentes principales de un formulario adaptable y a crear un formulario adaptable (sus componentes principales) basado en el esquema para producir datos de quejas de esquema.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 185b12bc-cea9-45c8-9b57-dc313bd0cfaa
 source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1347'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -23,18 +23,18 @@ ht-degree: 86%
 
 ## Requisitos previos {#prerequisites}
 
-Crear un formulario adaptable basado en componentes principales utilizando un esquema JSON como modelo de formulario requiere una comprensión básica del esquema JSON. Se recomienda leer el siguiente contenido antes de este artículo.
+Crear un formulario adaptable basado en componentes principales utilizando un esquema JSON como modelo de formulario requiere conocimientos básicos de esquema JSON. Se recomienda leer el siguiente contenido antes de este artículo.
 
 * [Creación de un formulario adaptable basado en componentes principales](/help/forms/creating-adaptive-form-core-components.md)
 * [Esquema JSON](https://json-schema.org/)
 
 ## Usar un esquema JSON como modelo de formulario  {#using-a-json-schema-as-form-model}
 
-Adobe Experience Manager Forms admite la creación de un formulario adaptable basado en componentes principales utilizando un esquema JSON existente como modelo de formulario. Este esquema JSON representa la estructura en la que el sistema back-end de su organización produce o consume datos. El esquema JSON que utilice debe cumplir con las [especificaciones v4](https://json-schema.org/draft-04/schema).
+Adobe Experience Manager Forms admite la creación de un formulario adaptable basado en componentes principales utilizando un esquema JSON existente como modelo del formulario. Este esquema JSON representa la estructura en la que el sistema back-end de su organización produce o consume datos. El esquema JSON que utilice debe cumplir con las [especificaciones v4](https://json-schema.org/draft-04/schema).
 
 Las funciones principales del uso de un esquema JSON son:
 
-* La estructura del JSON se muestra como un árbol en la pestaña Buscador de contenido en el modo de creación de un formulario adaptable. Puede arrastrar y agregar un elemento de la jerarquía JSON al formulario adaptable en función de los componentes principales.
+* La estructura del JSON se muestra como un árbol en la pestaña Buscador de contenido en el modo de creación de un formulario adaptable. Puede arrastrar y añadir elementos de la jerarquía JSON al formulario adaptable basado en componentes principales.
 * Puede rellenar previamente el formulario utilizando un JSON que cumpla con el esquema asociado.
 * En el envío, los datos especificados por el usuario se envían como JSON, que se adhiere al esquema asociado.
 * También puede crear el formulario basado en el esquema JSON según las especificaciones de la [versión 2012-20](https://json-schema.org/draft/2020-12/release-notes).
@@ -756,7 +756,7 @@ Here is the sample JSON code for previously mentioned examples.
 
 ## Limitar los valores aceptables para un componente de formulario adaptable {#limit-acceptable-values-for-an-adaptive-form-component}
 
-Puede agregar las siguientes restricciones a los elementos del esquema JSON para limitar los valores aceptables para un componente principal del formulario adaptable:
+Puede añadir las siguientes restricciones a los elementos del esquema JSON para limitar los valores aceptables para un componente principal de formulario adaptable:
 
 <table>
  <tbody>
@@ -893,7 +893,7 @@ Tiene dos opciones:
 
 La extensión del archivo de esquema JSON debe ser .schema.json. Por ejemplo, &lt;filename>.schema.json.
 
-**¿Se admite `aem:afProperties` como parte del esquema JSON en Forms adaptable basado en componentes principales?**
+**¿Se admite `aem:afProperties`como parte del esquema JSON en los formularios adaptables basados en componentes principales?**
 
 No, `aem:afProperties` no es compatible con los componentes principales. Esta propiedad solo se admite para componentes de base.
 

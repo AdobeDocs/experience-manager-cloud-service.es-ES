@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
 role: Admin, Developer, User
 source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1438'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 80%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-billable-apis) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-billable-apis) |
 | AEM as a Cloud Service | Este artículo |
 
 
@@ -26,14 +26,14 @@ AEM Forms ofrece varias API para enviar formularios, procesar documentos y repre
 * Convertir un documento de un formato a otro
 * Acoplar un documento PDF dinámico
 * Generar un documento de registro (mediante el servicio de Forms o el servicio de salida)
-* Combinar un documento PDF interactivo con otro documento PDF
-* AEM Uso de los pasos Asignar tarea y API de comunicación de flujos de trabajo de
+* Combinar un documento PDF interactivo con otro PDF
+* Uso del paso para asignar tarea y de los pasos de API de comunicación de los flujos de trabajo de AEM
 
-Las API de facturación no tienen en cuenta el número de páginas, la longitud de un documento o formulario o el formato final del documento representado. Un informe de transacciones divide las transacciones en dos categorías: Forms Enviado y Documentos representados.
+Las API de facturación no tienen en cuenta el número de páginas, la longitud de un documento o formulario o el formato final del documento representado. Un informe de transacciones divide las transacciones en dos categorías: formularios enviados y documentos representados.
 
-* **Formularios enviados:** Cuando los datos se envían desde cualquier tipo de formulario creado con AEM Forms y los datos se envían a cualquier repositorio de almacenamiento de datos o base de datos, se considera envío de formulario. Por ejemplo, enviar un formulario adaptable o un conjunto de formularios se considera un formulario enviado. Si un conjunto de formularios tiene 5 formularios y cuando se envía el conjunto de formularios, el servicio de informes de transacciones lo contabiliza como 5 envíos.
+* **Formularios enviados:** cuando los datos se envían desde cualquier tipo de formulario creado con AEM Forms y los datos se envían a cualquier repositorio de almacenamiento de datos o base de datos, se considera envío de formulario. Por ejemplo, enviar un formulario adaptable o un conjunto de formularios se considera un formulario enviado. Por ejemplo, si un conjunto de formularios tiene cinco formularios, cuando se envía el conjunto de formularios, el servicio de informes de transacciones lo contabiliza como cinco envíos.
 
-* **Documentos representados:** Generar un documento mediante la combinación de una plantilla y datos, la firma o certificación digitalmente de un documento, el uso de las API de servicios de documentos facturables para servicios de documento o la conversión de un documento de un formato a otro se contabilizan como documentos representados.
+* **Documentos representados:** generar un documento mediante la combinación de una plantilla y datos, la firma o certificación digitalmente de un documento, el uso de las API de servicios de documentos facturables para servicios de documento o la conversión de un documento de un formato a otro se contabilizan como documentos representados.
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_submission_graph_en"
@@ -200,13 +200,13 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#section/Before-you-start" target="_blank">createPDF</a></td>
-   <td>Generar un documento PDF a partir de una plantilla y combina los datos con ella;</td>
+   <td>Generar un documento PDF a partir de una plantilla y combinar los datos con ella;</td>
    <td>Documentos procesados</td>
    <td> </td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generatePrintedOutput/post" target="_blank">exportPDF</a></td>
-   <td>Convierte un archivo XDP o un documento de PDF en tipos de archivo compatibles.</td>
+   <td>Convierte un archivo XDP o un documento PDF en tipos de archivo compatibles.</td>
    <td>Documentos procesados</td>
    <td> </td>
   </tr>
@@ -316,9 +316,9 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/#tag/DocAssurance" target="_blank">secureDocument</a><br /> </td>
-   <td>Esta API le permite proteger su documento. Puede utilizar la API para firmar, certificar, leer, extender o cifrar un documento de PDF.</td>
+   <td>Esta API le permite proteger su documento. Puede utilizar la API para firmar, certificar, leer, extender o cifrar un documento PDF.</td>
    <td>Documentos procesados</td>
-   <td>Solo se factura la operación firmar y certificar del secureDocument.</td>
+   <td>Solo se factura la operación firmar y certificar de secureDocument.</td>
   </tr>
  </tbody>
 </table>
@@ -459,9 +459,9 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
  </tbody>
 </table>
 
-El uso de la API de invocación se cuenta como una transacción, cuando realiza una o más de las siguientes operaciones:
+El uso de la API de invocación se cuenta como una transacción cuando realiza una o más de las siguientes operaciones:
 
-1. Conversión de formatos que no son de PDF a formatos de PDF. <!--For instance, the conversion from XDP format to PDF format, catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
+1. Conversión de formatos que no son PDF a formatos PDF. <!--For instance, the conversion from XDP format to PDF format, catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
 1. Conversión de formato PDF a formato PDF/A.
 1. Conversión de formato PDF a formatos no PDF. Algunos ejemplos son la transformación de PDF a formato de imagen o la conversión de PDF a formato de texto.
 
@@ -566,9 +566,9 @@ Todos los eventos de envío de formularios adaptables se contabilizan como trans
 
 -->
 
-## AEM Flujos de trabajo de recursos centrados en formularios facturables {#billable--form-centric-aem-workflows}
+## Flujos de trabajo de AEM centrados en formularios facturables {#billable--form-centric-aem-workflows}
 
-AEM Los pasos de Asignar tareas y servicios de documentos de los flujos de trabajo de la centrada en formularios se contabilizan como transacciones. Si un paso de flujo de trabajo cuenta una transacción y el flujo de trabajo no se completa, el recuento de transacciones no se invierte.
+Los pasos de asignación de tareas y servicios de documentos de los flujos de trabajo de AEM centrados en formularios se contabilizan como transacciones. Si un paso de flujo de trabajo cuenta una transacción y el flujo de trabajo no se completa, el recuento de transacciones no se invierte.
 
 <!--
 Assign task and document services steps of Form-centric AEM Workflows on OSGi and all the renditions of interactive communication and are accounted as transactions. Previewing an interactive communication on the author instance and previewing on the publish instance using Agent UI are not accounted as transactions. If a workflow step accounts a transaction and the workflow fails to complete, the transaction count is not reversed.
@@ -621,7 +621,7 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
 
 -->
 
-### AEM Flujos de trabajo de creación de informes centrados en formularios {#form-centric-aem-workflows}
+### Flujos de trabajo de AEM centrados en formularios {#form-centric-aem-workflows}
 
 <table>
  <tbody>

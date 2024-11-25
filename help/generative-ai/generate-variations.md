@@ -1,192 +1,192 @@
 ---
 title: Generar variaciones
-description: Obtenga información sobre la generación de variaciones, accesible desde AEM as a Cloud Service y el Sidekick de Edge Delivery Services
+description: Obtenga información sobre “Generar variaciones”, accesible desde AEM as a Cloud Service y la barra de tareas de Edge Delivery Services
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
 source-git-commit: bbc51796c610af02b5260c063213cde2ef610ba2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3262'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
 # Generar variaciones {#generate-variations}
 
-Si está buscando una manera de optimizar sus canales digitales y acelerar la creación de contenido, puede utilizar Generar variaciones. Generate Variations utiliza inteligencia artificial (IA) generativa para crear variaciones de contenido basadas en mensajes; estos mensajes los proporciona Adobe o los crean y administran los usuarios. Después de crear variaciones, puede usar el contenido de su sitio web y también medir su éxito usando la funcionalidad [Experimentación](https://www.aem.live/docs/experimentation) de [Edge Delivery Services](/help/edge/overview.md).
+Si está buscando una manera de optimizar sus canales digitales y acelerar la creación de contenido, puede utilizar “Generar variaciones”. “Generar variaciones” utiliza inteligencia artificial (IA) generativa para crear variaciones de contenido basadas en indicaciones; estas indicaciones las proporciona Adobe o las crean y administran los usuarios. Después de crear variaciones, puede usar el contenido de su sitio web y también medir su éxito usando la funcionalidad [Experimentación](https://www.aem.live/docs/experimentation) de [Edge Delivery Services](/help/edge/overview.md).
 
-Puede [acceder a Generar variaciones](#access-generate-variations) desde:
+Puede [acceder a “Generar variaciones”](#access-generate-variations) desde:
 
-* [dentro de Adobe Experience Manager AEM () as a Cloud Service](#access-aemaacs)
-* [el Sidekick AEM de Edge Delivery Services de la](#access-aem-sidekick)
-* [en el Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md#generate-variations-ai)
+* [en Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
+* [la barra de tareas de AEM Edge Delivery Services](#access-aem-sidekick)
+* [el editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md#generate-variations-ai)
 
 >[!NOTE]
 >
->En todos los casos, para usar Generar variaciones debe asegurarse de que se cumplan los [requisitos previos de acceso](#access-prerequisites).
+>En todos los casos, para usar “Generar variaciones” debe asegurarse de que se cumplan los [requisitos previos de acceso](#access-prerequisites).
 
 Podrá hacer lo siguiente:
 
-* [Introducción](#get-started) mediante una plantilla de solicitud que el Adobe ha creado para un caso de uso específico.
-* Puede [editar un mensaje existente](#edit-the-prompt)
-* O [cree y use sus propios indicadores](#create-prompt):
-   * [Guarde sus indicadores](#save-prompt) para uso futuro
-   * [Acceda y utilice avisos compartidos](#select-prompt) de toda su organización
-* Defina los segmentos de [audience](#audiences) que se usarán en la solicitud al [generar contenido personalizado específico de la audiencia](#generate-copy).
-* Previsualice el resultado junto al mensaje, antes de realizar modificaciones y refinar los resultados si es necesario.
-* Use el Adobe Express [para generar imágenes](#generate-image) según las variaciones de copia; esto usa las capacidades de IA generativa de Firefly.
+* [Empezar](#get-started) mediante una plantilla de indicación que Adobe ha creado para un caso de uso específico.
+* Puede [editar una indicación existente](#edit-the-prompt)
+* O [crear y usar sus propias indicaciones](#create-prompt):
+   * [Guardar sus indicaciones](#save-prompt) para utilizarlas en el futuro
+   * [Acceder y utilizar indicaciones compartidas](#select-prompt) de toda su organización
+* Defina los segmentos de [público](#audiences) que se utilizarán en la indicación al [generar contenido personalizado específico para un público](#generate-copy).
+* Previsualice el resultado junto a la indicación, antes de realizar modificaciones y afinar los resultados, si fuera necesario.
+* Utilice [Adobe Express para generar imágenes](#generate-image) basadas en las variaciones de la copia; esto aprovecha las capacidades de IA generativa de Firefly.
 * Seleccione el contenido que desea utilizar en el sitio web o en un experimento.
 
-## Nota legal y de uso {#legal-usage-note}
+## Aviso legal y de uso {#legal-usage-note}
 
-AEM La IA generativa y la generación de variaciones para la son herramientas poderosas, pero **usted** es responsable del uso de la salida.
+La IA generativa y “Generar variaciones” para AEM son herramientas potentes; pero **usted** es responsable del uso que haga de los resultados.
 
-Las entradas del servicio deben estar vinculadas a un contexto. Este contexto puede ser el material de promoción de la marca, el contenido del sitio web, los datos, los esquemas para dichos datos, las plantillas u otros documentos de confianza.
+Lo que introduzca en el servicio debe estar vinculado a un contexto. Este contexto puede ser el material de personalización de la marca, el contenido del sitio web, los datos, los esquemas para dichos datos, las plantillas u otros documentos de confianza.
 
 Debe evaluar la precisión de cualquier resultado según corresponda para su caso de uso.
 
-Antes de usar Generar variaciones, debe aceptar las [Directrices del usuario de inteligencia artificial aplicada generativa de Adobe](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+Antes de usar “Generar variaciones”, debe aceptar las [Directrices del usuario de IA generativa de Adobe](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
 
-[El uso de Generar variaciones](#generative-action-usage) está ligado al consumo de acciones generativas.
+[El uso de “Generar variaciones”](#generative-action-usage) está ligado al consumo de acciones generativas.
 
 ## Información general {#overview}
 
-Cuando abra Generar variaciones (y expanda el panel izquierdo), verá lo siguiente:
+Cuando abra “Generar variaciones” (y expanda el panel izquierdo), verá lo siguiente:
 
-![Generar variaciones - panel principal](assets/generate-variations-main-panel.png)
+![Generar variaciones: panel principal](assets/generate-variations-main-panel.png)
 
 * Panel derecho
    * Esto depende de la selección que realice en el panel de navegación izquierdo.
-   * De manera predeterminada, se muestran **plantillas de solicitud**.
+   * De manera predeterminada, se muestran **plantillas de indicación**.
 * Navegación izquierda
    * A la izquierda de **Generar variaciones**, existe la opción (menú de sándwich) de expandir u ocultar el panel de navegación izquierdo.
-   * **Plantillas de mensajes**:
-      * Muestra vínculos a los distintos indicadores, que pueden incluir:
-         * Proporcionado por el Adobe para ayudarle a generar contenido; marcado con el Adobe.
-         * Creado por usted mismo.
-         * Creado dentro de su organización IMS; marcado con un icono que muestra varios encabezados.
-      * Incluye el vínculo [Nueva solicitud](#create-prompt) para crear su propia solicitud.
-      * Puede **eliminar** mensajes creados por usted mismo o dentro de su organización IMS. Esto se realiza mediante el menú al que se accede con los puntos suspensivos de la tarjeta correspondiente.
-   * [Favoritos](#favorites): muestra los resultados de generaciones anteriores que ha marcado como Favoritos.
-   * [Recientes](#recents): proporciona vínculos a mensajes y sus entradas que ha utilizado recientemente.
-   * **Ayuda y preguntas frecuentes**: vínculos a documentación, incluidas preguntas frecuentes.
+   * **Plantillas de indicación**:
+      * Muestra vínculos a las distintas indicaciones, que pueden incluir:
+         * Proporcionadas por Adobe para ayudarle a generar contenido; marcadas con el icono de Adobe.
+         * Creadas por usted mismo.
+         * Creadas dentro de su organización IMS; marcadas con un icono que muestra varias cabezas.
+      * Incluye el vínculo [Nueva indicación](#create-prompt) para crear su propia indicación.
+      * Puede **eliminar** indicaciones creadas por usted mismo o dentro de su organización IMS. Esto se realiza mediante el menú al que se accede con los puntos suspensivos de la tarjeta correspondiente.
+   * [Favoritos](#favorites): muestra los resultados de generaciones anteriores que ha marcado como favoritos.
+   * [Recientes](#recents): proporciona vínculos a las indicaciones y sus entradas que ha utilizado recientemente.
+   * **Ayuda y preguntas frecuentes**: vínculos a documentación, incluidas las preguntas frecuentes.
    * **Directrices de usuario**: vínculos a las directrices legales.
 
 ## Introducción {#get-started}
 
-La interfaz le guía a través del proceso de generación de contenido. Después de abrir la interfaz, el primer paso es seleccionar la solicitud que desee utilizar.
+La interfaz le guía a través del proceso de generación de contenido. Tras abrir la interfaz, el primer paso es seleccionar la indicación que desea utilizar.
 
-### Seleccionar indicador {#select-prompt}
+### Seleccionar indicación {#select-prompt}
 
 En el panel principal, puede seleccionar:
 
-* una plantilla de indicador proporcionada por el Adobe para empezar a generar contenido,
-* [Nueva solicitud](#create-prompt) para crear su propia solicitud,
-* una plantilla que haya creado únicamente para su uso,
+* una plantilla de indicación proporcionada por Adobe para empezar a generar contenido,
+* la opción [Nueva indicación](#create-prompt) para crear su propia indicación,
+* una plantilla que ha creado para su uso exclusivo,
 * una plantilla que usted o alguien de su organización hayan creado.
 
-Para diferenciar:
+Cómo diferenciarlas:
 
-* Las indicaciones proporcionadas por el Adobe se marcan con el Adobe
-* Los indicadores disponibles en toda la organización IMS se marcan con un icono de varios encabezados.
-* Los indicadores privados no se marcan específicamente.
+* Las indicaciones proporcionadas por Adobe están marcadas con el icono de Adobe.
+* Las indicaciones disponibles en toda su organización IMS están marcadas con un icono de varias cabezas.
+* Las indicaciones privadas no están marcadas de forma específica.
 
-![Generar variaciones - solicitar plantillas](assets/generate-variations-prompt-templates.png)
+![Generar variaciones: plantillas de indicación](assets/generate-variations-prompt-templates.png)
 
 ### Proporcionar entradas {#provide-inputs}
 
-Cada mensaje le pedirá que proporcione cierta información para que pueda obtener el contenido adecuado de la IA generativa.
+Cada indicación necesita que usted proporcione cierta información para que la IA generativa pueda devolverle el contenido adecuado.
 
-Los campos de entrada le guían a través de qué información es necesaria. Para ayudarle, ciertos campos tienen valores predeterminados que puede utilizar o modificar según sea necesario, así como descripciones que explican los requisitos.
+Los campos de entrada le guiarán sobre la información necesaria. Para ayudarle, ciertos campos tienen valores predeterminados que puede utilizar o modificar según sea necesario, así como descripciones que explican los requisitos.
 
-Existen varios campos de entrada clave que son comunes a varios indicadores (algunos campos no siempre están disponibles):
+Hay varios campos de entrada clave que son comunes a varias indicaciones (algunos campos no siempre están disponibles):
 
 * **Recuento de**/**Número de**
    * Puede seleccionar cuántas variaciones de contenido desea crear en una generación.
-   * Según el mensaje, puede tener una de varias etiquetas; por ejemplo, Recuento, Número de variaciones, Número de ideas, etc.
-* **Audiencia Source**/**Audiencia de destino**
-   * Ayuda a generar contenido personalizado para una audiencia específica.
-   * El Adobe proporciona audiencias predeterminadas o puede especificar audiencias adicionales; consulte [Audiencias](#audiences).
+   * Dependiendo de la indicación, esto puede tener una de varias etiquetas; por ejemplo Recuento, Número de variaciones, Número de ideas, etc.
+* **Fuente de público**/**Público destinatario**
+   * Ayuda a generar contenido personalizado para un público específico.
+   * Adobe proporciona públicos predeterminados; o puede especificar públicos adicionales. Consulte [Públicos](#audiences).
 * **Contexto adicional**
-   * Inserte contenido relevante para ayudar a la inteligencia artificial aplicada a la generación a crear una mejor respuesta basada en la entrada. Por ejemplo, si está creando un banner web para una página o producto en particular, es posible que desee incluir información sobre la página o el producto.
+   * Inserte contenido relevante para ayudar a la IA generativa a elaborar una respuesta mejor basada en la entrada. Por ejemplo, si está creando un banner web para una página o producto en particular, es posible que desee incluir información sobre la página o el producto.
 * **Temperatura**
-Utilice para modificar la temperatura del Adobe IA generativa:
-   * Una temperatura más alta se aleja del indicador y conduce a más variación, aleatoriedad y creatividad.
-   * Una temperatura más baja es más determinista y permanece más cerca de lo que está en el indicador.
-   * De forma predeterminada, la temperatura se establece en 1. Puede experimentar con diferentes temperaturas si los resultados generados no son de su agrado.
-* **Editar mensaje**
-   * La [petición de datos subyacente se puede editar](#edit-the-prompt) para restringir los resultados generados.
+Utilice esta opción para modificar la temperatura de la IA generativa de Adobe:
+   * Una temperatura más alta se aleja de la indicación y conduce a una mayor variación, aleatoriedad y creatividad.
+   * Una temperatura más baja es más determinística y se ciñe más a lo que dice la indicación.
+   * Por defecto, la temperatura está establecida en 1. Puede experimentar con diferentes temperaturas si los resultados generados no son de su agrado.
+* **Editar indicación**
+   * La indicación subyacente [puede editarse](#edit-the-prompt) para afinar los resultados generados.
 
 ### Generar copia {#generate-copy}
 
-Después de rellenar los campos de entrada o modificar el mensaje, está listo para generar contenido y revisar las respuestas.
+Después de rellenar los campos de entrada o de modificar la indicación, ya podrá generar contenido y revisar las respuestas.
 
-Seleccione **Generar** para ver las respuestas generadas por IA generativa. Las variaciones de contenido generadas se muestran en el mensaje que las generó.
+Seleccione **Generar** para ver las respuestas generadas por la IA generativa. Las variaciones de contenido generadas se muestran bajo la indicación que las generó.
 
-![Generar variaciones - generar copia](assets/generate-variations-generate-content.png)
+![Generar variaciones: generar copia](assets/generate-variations-generate-content.png)
 
 >[!NOTE]
 >
->La mayoría de las plantillas de solicitud de Adobe incluyen **Motivo de IA** en la respuesta de variación. Esto proporciona transparencia sobre por qué la IA generativa generó esa variación en particular.
+>La mayoría de las plantillas de indicación de Adobe incluyen un **motivo de IA** en la variación. Esto proporciona transparencia sobre por qué la IA generativa generó esa variación en particular.
 
-Cuando selecciona una sola variación, están disponibles las siguientes acciones:
+Cuando seleccione una única variación, dispondrá de las siguientes acciones:
 
 * **Favorito**
-   * Marcar como **favorito** para uso futuro (se mostrará en [Favoritos](#favorites)).
-* Pulgares arriba/Pulgares abajo
-   * Utilice los indicadores de pulgares hacia arriba / hacia abajo para notificar al Adobe de la calidad de las respuestas.
+   * Marcar como **favorito** para su uso futuro (se mostrará en [Favoritos](#favorites)).
+* Pulgar arriba/abajo
+   * Utilice los indicadores de pulgar arriba/abajo para informar a Adobe sobre la calidad de las respuestas.
 * **Copiar**
-   * Copie en el portapapeles para utilizarlo durante la creación de contenido en su sitio web o en un [Experimento](https://www.aem.live/docs/experimentation).
+   * Copie la variación en el portapapeles para utilizarla durante la creación de contenido en su sitio web o en un [Experimento](https://www.aem.live/docs/experimentation).
 * **Quitar**
 
-Si necesita perfeccionar las entradas o la solicitud, puede realizar ajustes y seleccionar **Generar** de nuevo para obtener un conjunto de respuestas nuevas. Las nuevas peticiones de datos y respuestas se muestran debajo de la petición de datos y respuesta iniciales; puede desplazarse hacia arriba y hacia abajo para ver los distintos conjuntos de contenido.
+Si necesita afinar las entradas o la indicación, puede realizar ajustes y seleccionar **Generar** de nuevo para obtener un conjunto de respuestas nuevas. La nueva indicación y respuesta se muestran debajo de la indicación y la respuesta iniciales; puede desplazarse hacia arriba y hacia abajo para ver los distintos conjuntos de contenido.
 
-Encima de cada conjunto de variaciones se encuentra el indicador que las creó, junto con una opción **Reutilizar**. Si alguna vez necesita volver a ejecutar una solicitud con sus entradas, seleccione **Volver a utilizar** para volver a cargarlas en **Entradas**.
+Encima de cada conjunto de variaciones aparece la indicación que las creó, junto con la opción **Reutilizar**. Si alguna vez necesita volver a ejecutar una indicación con sus entradas, seleccione **Reutilizar** para volver a cargarlas en **Entradas**.
 
 ### Generar imagen {#generate-image}
 
-Después de generar variaciones de texto, puede generar imágenes en Adobe Express mediante las capacidades de IA generativa de Firefly.
+Después de haber generado variaciones de texto, puede generar imágenes en Adobe Express utilizando las capacidades de IA generativa de Firefly.
 
 >[!NOTE]
 >
->**Generar imagen** solo está disponible si tiene un derecho de Adobe Express como parte de su organización IMS y acceso concedido a usted en el Admin Console.
+>**Generar imagen** solo está disponible si dispone de un derecho de Adobe Express como parte de su organización IMS y se le ha concedido acceso en Admin Console.
 
-Seleccione una variación, seguida de **Generar imagen**, para abrir directamente **Texto a imagen** en [Adobe Express](https://www.adobe.com/express/). El mensaje se rellena previamente en función de la selección de variante y las imágenes se generan automáticamente según ese mensaje.
+Seleccione una variación, seguida de **Generar imagen**, para abrir directamente **Texto a imagen** en [Adobe Express](https://www.adobe.com/express/). La indicación se rellena previamente en función de su selección de variantes y las imágenes se generan automáticamente de acuerdo con esa indicación.
 
-![Generar variaciones - expresar imágenes](assets/generate-variations-express-images.png)
+![Generar variaciones: imágenes exprés](assets/generate-variations-express-images.png)
 
 Puede realizar más cambios:
 
-* [escriba su propio mensaje en el Adobe Express](https://helpx.adobe.com/firefly/using/tips-and-tricks.html) describiendo lo que desea ver,
-* ajustar las opciones **Texto a imagen**,
+* [escriba su propia indicación en Adobe Express](https://helpx.adobe.com/firefly/using/tips-and-tricks.html) describiendo lo que le gustaría ver,
+* ajuste las opciones **Texto a imagen**,
 * luego **Actualice** las imágenes generadas.
 
-También puedes usar **Explorar más** para obtener más información.
+También puede utilizar **Explorar más** para obtener más opciones.
 
-Cuando termine, seleccione la imagen que desee y **Guardar** para cerrar el Adobe Express. La imagen se devuelve y se guarda con la variación.
+Cuando haya terminado, seleccione la imagen deseada y **Guardar** para cerrar Adobe Express. La imagen se devuelve y se guarda con la variación.
 
-![Generar variaciones - imagen rápida guardada](assets/generate-variations-express-image-saved.png)
+![Generar variaciones: imagen exprés guardada](assets/generate-variations-express-image-saved.png)
 
-Aquí puede pasar el ratón sobre la imagen para mostrar los elementos de acción de:
+Aquí puede pasar el ratón por encima de la imagen para mostrar los siguientes elementos de acción:
 
 * **Copiar**: [copiar la imagen en el portapapeles para usarla en otro lugar](#use-content)
-* **Editar**: abre el Adobe Express para poder realizar cambios en la imagen
-* **Descargar**: descargue la imagen en el equipo local
-* **Eliminar**: elimine la imagen de la variación
+* **Editar**: abre Adobe Express para poder realizar cambios en la imagen
+* **Descargar**: descargar la imagen en el equipo local
+* **Eliminar**: eliminar la imagen de la variación
 
 >[!NOTE]
 >
->[Los Contentes credentials](https://helpx.adobe.com/creative-cloud/help/content-credentials.html) no persisten cuando se utilizan en la creación basada en documentos.
+>[Las credenciales de contenido](https://helpx.adobe.com/creative-cloud/help/content-credentials.html) no se conservan cuando se utilizan en la creación basada en documentos.
 
-### Usar contenido {#use-content}
+### Utilizar el contenido {#use-content}
 
 Para utilizar el contenido generado con IA generativa, debe copiar el contenido en el portapapeles para utilizarlo en otra parte.
 
 Esto se realiza mediante los iconos de copia:
 
-* Para texto: utilice el icono de copia visible en el panel de variaciones
-* Para la imagen: pase el ratón sobre la imagen para ver el icono de copia
+* Para el texto, utilice el icono de copia visible en el panel de variaciones
+* Para la imagen, pase el ratón sobre la imagen para ver el icono de copia
 
 Una vez copiada en el portapapeles, puede pegar la información para utilizarla al crear contenido para el sitio web. También puede ejecutar un [experimento](https://www.aem.live/docs/experimentation).
 
@@ -194,33 +194,33 @@ Una vez copiada en el portapapeles, puede pegar la información para utilizarla 
 
 Después de revisar el contenido, puede guardar las variaciones seleccionadas como favoritas.
 
-Una vez guardados, se muestran en **Favoritos** en el panel de navegación izquierdo. Los favoritos se mantienen (hasta que los **elimine** o borre la caché del explorador).
+Una vez guardadas, se muestran en **Favoritos** en el panel de navegación izquierdo. Los favoritos se mantienen (hasta que los **elimine** o borre la caché del explorador).
 
 * Los favoritos y las variaciones se pueden copiar y pegar en el portapapeles para su uso en el contenido del sitio web.
-* Los favoritos pueden ser **Eliminados**.
+* Los favoritos pueden **quitarse**.
 
 ## Recientes {#recents}
 
-Esta sección incluye vínculos a su actividad reciente. Se agrega una entrada **Reciente** después de seleccionar **Generar**. Tiene el nombre del mensaje y una marca de tiempo. Si selecciona un vínculo, se carga el mensaje, se rellenan los campos de entrada según corresponda y se muestran las variaciones generadas.
+Esta sección incluye vínculos a su actividad reciente. Se añade una entrada **Reciente** después de seleccionar **Generar**. Tiene el nombre de la indicación y una marca de tiempo. Si selecciona un vínculo, se carga la indicación, se rellenan los campos de entrada según corresponda y se muestran las variaciones generadas.
 
-## Editar el indicador {#edit-the-prompt}
+## Editar la indicación {#edit-the-prompt}
 
-El mensaje subyacente se puede editar. Puede que desee hacer lo siguiente:
+La indicación subyacente puede editarse. Puede que quiera hacer esto:
 
 * Si los resultados generados que obtiene necesitan un mayor refinamiento
-* Desea modificar y [guardar el mensaje](#save-prompt) para uso futuro
+* Desea modificar y [guardar la indicación](#save-prompt) para utilizarla en el futuro
 
-Seleccione **Editar solicitud**:
+Seleccione **Editar indicación**:
 
-![Generar variaciones - mensaje de edición](assets/generate-variations-prompt-edit.png)
+![Generar variaciones: editar indicación](assets/generate-variations-prompt-edit.png)
 
-Esto abre el editor de mensajes, donde puede realizar los cambios:
+Esto abre el editor de indicaciones, donde puede realizar los cambios:
 
-![Generar variaciones - editor de mensajes](assets/generate-variations-prompt-editor.png)
+![Generar variaciones: editor de indicaciones](assets/generate-variations-prompt-editor.png)
 
-### Agregar entradas de indicador {#add-prompt-inputs}
+### Añadir entradas de indicación {#add-prompt-inputs}
 
-Al crear o editar una solicitud, es posible que desee añadir campos de entrada. Los campos de entrada actúan como variables en el mensaje y proporcionan la flexibilidad de usar el mismo mensaje en distintos escenarios. Permiten a los usuarios definir elementos específicos del mensaje, sin tener que escribir todo el mensaje.
+Al crear o editar una indicación, es posible que desee añadir campos de entrada. Los campos de entrada actúan como variables en la indicación y dan flexibilidad para utilizar la misma indicación en varios escenarios. Permiten a los usuarios definir elementos específicos de la indicación, sin tener que escribir toda la indicación.
 
 * Un campo se define con llaves dobles `{{ }}` que encierran un nombre de marcador de posición.
 Por ejemplo, `{{tone_of_voice}}`.
@@ -235,9 +235,9 @@ Por ejemplo, `{{tone_of_voice}}`.
    * `default`
    * `type`
 
-#### Ejemplo: Agregar nuevo campo de texto: tono de voz {#example-add-new-text-field-tone-of-voice}
+#### Ejemplo: Añadir nuevo campo de texto: tono de voz {#example-add-new-text-field-tone-of-voice}
 
-Para agregar un nuevo campo de texto titulado **Tono de voz**, use la sintaxis siguiente en el mensaje:
+Para añadir un nuevo campo de texto titulado **Tono de voz**, utilice la siguiente sintaxis en su indicación:
 
 ```prompt
 {{@tone_of_voice, 
@@ -248,7 +248,7 @@ Para agregar un nuevo campo de texto titulado **Tono de voz**, use la sintaxis s
 }}
 ```
 
-![Generar variaciones - mensaje editado con tono de voz](assets/generate-variations-prompt-edited.png)
+![Generar variaciones: indicación editada con tono de voz](assets/generate-variations-prompt-edited.png)
 
 <!--
 #### Example: Add new dropdown field - Page Type {#example-add-new-dropdown-field-page-type}
@@ -273,15 +273,15 @@ To create an input field Page Type providing a dropdown selection:
    ```
 -->
 
-## Crear una solicitud {#create-prompt}
+## Crear una indicación {#create-prompt}
 
-Cuando selecciona **Nueva solicitud** de **Plantillas de solicitud**, un panel nuevo le permitirá introducir una nueva solicitud. A continuación, puede especificarlas, junto con la **Temperatura**, para **Generar** contenido.
+Al seleccionar **Nueva indicación** en **Plantillas de indicación**, un nuevo panel le permitirá introducir una nueva indicación. A continuación, puede especificarlas, junto con la **Temperatura**, para **generar** contenido.
 
-Consulte [Guardar solicitud](#save-prompt) para obtener más información sobre cómo guardar la solicitud en el futuro.
+Consulte [Guardar indicación](#save-prompt) para saber cómo guardar la indicación para el futuro.
 
-Consulte [Agregar entradas de solicitud](#add-prompt-inputs) para obtener más información sobre cómo agregar sus propias entradas de solicitud.
+Consulte [Añadir entradas de indicación](#add-prompt-inputs) para obtener más información sobre cómo añadir sus propias entradas de indicación.
 
-Si desea conservar el formato tanto en la interfaz de usuario como cuando se copia y pega en el flujo de creación basado en documentos, incluya lo siguiente en el mensaje:
+Si desea conservar el formato tanto en la interfaz de usuario como al copiar y pegar en el flujo de creación basado en documentos, incluya lo siguiente en la indicación:
 
 <!-- CHECK - are the double-quotes needed? -->
 
@@ -290,104 +290,104 @@ Si desea conservar el formato tanto en la interfaz de usuario como cuando se cop
 La siguiente imagen muestra las ventajas de hacerlo:
 
 * en el primer ejemplo se combinan `Title` y `Description`
-* mientras que en el segundo ejemplo se les aplica formato por separado: esto se ha hecho incluyendo la solicitud JSON en el indicador.
+* mientras que en el segundo ejemplo se les aplica formato por separado: esto se ha hecho incluyendo la solicitud JSON en la indicación.
 
-![Generar variaciones - preguntar con Título y Descripción formateados por separado](assets/generate-variations-prompt-formatted.png)
+![Generar variaciones: indicación con el título y la descripción con formato independiente](assets/generate-variations-prompt-formatted.png)
 
 ## Guardar indicación {#save-prompt}
 
-Después de editar o crear mensajes, es posible que desee guardarlos para usarlos en el futuro; solo para su organización IMS o para usted. La solicitud guardada aparecerá como una tarjeta de **Plantilla de solicitud**.
+Después de editar o crear indicaciones, es posible que desee guardarlas para utilizarlas en el futuro; ya sea para su organización IMS o para usted solo. La indicación guardada aparecerá como una tarjeta de **plantilla de indicación**.
 
-Cuando haya editado la solicitud, la opción **Guardar** estará disponible en la parte inferior de la sección Entradas, a la izquierda de **Generar**.
+Cuando haya editado la indicación, la opción **Guardar** estará disponible en la parte inferior de la sección Entradas, a la izquierda de la opción **Generar**.
 
-Cuando se selecciona, se abre el cuadro de diálogo **Guardar solicitud**:
+Cuando se selecciona, se abre el cuadro de diálogo **Guardar indicación**:
 
-![Generar variaciones - cuadro de diálogo para solicitud de guardado](assets/generate-variations-prompt-save-dialog.png)
+![Generar variaciones: cuadro de diálogo para guardar la indicación](assets/generate-variations-prompt-save-dialog.png)
 
-1. Agregue un **Nombre del mensaje** único; utilizado para identificar el mensaje en **Plantillas del mensaje**.
-   1. Un nombre nuevo y único crea una nueva plantilla de solicitud.
-   1. Un nombre existente sobrescribe esa solicitud; se muestra un mensaje.
+1. Añada un **Nombre de indicación** único; se utiliza para identificar la indicación dentro de **Plantillas de indicación**.
+   1. Un nombre nuevo y único crea una nueva plantilla de indicación.
+   1. Introducir un nombre existente sobrescribe esa indicación; se muestra un mensaje.
 1. Si lo desea, añada una descripción.
-1. Active o desactive la opción **Compartida en toda la organización**, en función de si el mensaje debe ser privado para usted o estar disponible en toda la organización IMS. Este estado se muestra en la tarjeta [resultante mostrada en las plantillas de mensajes](#select-prompt).
-1. **Guardar** el mensaje; o **Cancelar** la acción.
+1. Active o desactive la opción **Compartido en toda la organización**, dependiendo de si la indicación debe ser privada para usted o estar disponible en toda su organización IMS. Este estado se muestra en la [tarjeta resultante que aparece en las plantillas de indicación](#select-prompt).
+1. **Guarde** la indicación; o **cancele** la acción.
 
 >[!NOTE]
 >
->Se le informará (advertirá) si está sobrescribiendo o actualizando un mensaje existente.
+>Se le informará (advertirá) si está sobrescribiendo o actualizando una indicación existente.
 
 >[!NOTE]
 >
->Desde **Plantillas de mensajes** puede eliminar mensajes (mediante el menú al que se accede con los puntos suspensivos) creados por usted mismo o dentro de su organización IMS.
+>Desde **Plantillas de indicación** puede eliminar las indicaciones (utilizando el menú al que se accede haciendo clic en los tres puntos) creadas por usted mismo o dentro de su organización IMS.
 
 ## Audiencias {#audiences}
 
-Para generar contenido personalizado, la inteligencia artificial aplicada a la generación debe comprender la audiencia. El Adobe proporciona varias audiencias predeterminadas o puede agregar las suyas propias.
+Para generar contenido personalizado, la IA generativa debe contar con información sobre el público. Adobe proporciona una serie de públicos predeterminados; también puede añadir los suyos propios.
 
-Al añadir una audiencia, debe describirla en lenguaje natural. Por ejemplo:
+Al añadir un público, debe describirlo en lenguaje natural. Por ejemplo:
 
-* para crear una audiencia:
+* para crear un público:
    * `Student`
 * podría decir:
    * `The audience consists of students, typically individuals who are pursuing education at various academic levels, such as primary, secondary, or tertiary education. They are engaged in learning and acquiring knowledge in diverse subjects, seeking academic growth, and preparing for future careers or personal development.`
 
-Se admiten dos fuentes de audiencia:
+Se admiten dos fuentes de público:
 
 * [Adobe Target](#audience-adobe-target)
 * [Archivo CSV](#audience-csv-file)
 
-![Generar variaciones - orígenes de audiencia](assets/generate-variations-audiences.png)
+![Generar variaciones: fuentes de público](assets/generate-variations-audiences.png)
 
-### Audience - Adobe Target {#audience-adobe-target}
+### Público: Adobe Target {#audience-adobe-target}
 
-Si se selecciona una audiencia **Adobe Target** en el mensaje, se permite personalizar la generación de contenido para esa audiencia.
+La selección de un público de **Adobe Target** en la indicación permite generar contenido personalizado para ese público.
 
 >[!NOTE]
 >
 >Para utilizar esta opción, su organización IMS debe tener acceso a Adobe Target.
 
 1. Seleccione **Adobe Target**.
-1. A continuación, seleccione la **Audiencia de destino** necesaria en la lista proporcionada.
+1. A continuación, seleccione el **público destinatario** deseado de la lista proporcionada.
 
    >[!NOTE]
    >
-   >Para usar una audiencia **Adobe Target**, debe rellenarse el campo de descripción. Si no es así, la audiencia se muestra en la lista desplegable como no disponible. Para agregar una descripción, vaya a Target y [agregue una descripción de audiencia](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences).
+   >Para utilizar un público de **Adobe Target**, debe rellenarse el campo de descripción. En caso contrario, el público aparece en la lista desplegable como no disponible. Para añadir una descripción, vaya a Target y [añada una descripción del público](https://experienceleague.adobe.com/es/docs/target-learn/tutorials/audiences/create-audiences).
 
-   ![Generar variaciones - origen de audiencia - Adobe Target](assets/generate-variations-audiences-adobe-target.png)
+   ![Generar variaciones: fuente de público de Adobe Target](assets/generate-variations-audiences-adobe-target.png)
 
-#### Añadir audiencia de Adobe Target {#add-adobe-target-audience}
+#### Añadir público de Adobe Target {#add-adobe-target-audience}
 
-Consulte [Crear audiencias](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences) para crear una audiencia en Adobe Target.
+Consulte [Crear públicos](https://experienceleague.adobe.com/es/docs/target-learn/tutorials/audiences/create-audiences) para crear un público en Adobe Target.
 
-### Audience: archivo CSV {#audience-csv-file}
+### Público: archivo CSV {#audience-csv-file}
 
-Si se selecciona una audiencia de **archivo CSV** en el mensaje, se puede personalizar la generación de contenido para la **audiencia de destino** seleccionada.
+La selección de un público de **archivo CSV** en la indicación permite generar contenido personalizado para el **público destinatario** seleccionado.
 
-El Adobe proporciona una serie de audiencias para utilizar.
+Adobe ofrece una serie de públicos para su uso.
 
 1. Seleccione **archivo CSV**.
-1. A continuación, seleccione la **Audiencia de destino** necesaria en la lista proporcionada.
+1. A continuación, seleccione el **público destinatario** deseado de la lista proporcionada.
 
-   ![Generar variaciones - origen de la audiencia - archivo CSV](assets/generate-variations-audiences-csv-file.png)
+   ![Generar variaciones: fuente de público de archivo CSV](assets/generate-variations-audiences-csv-file.png)
 
-#### Añadir archivo CSV de Audience {#add-audience-csv-file}
+#### Añadir público de archivo CSV {#add-audience-csv-file}
 
-Puede agregar un archivo CSV desde varias plataformas (por ejemplo, Google Drive, Dropbox o Sharepoint) que tengan la capacidad de proporcionar una URL al archivo una vez que esté disponible públicamente.
+Puede añadir un archivo CSV desde varias plataformas (por ejemplo, Google Drive, Dropbox o SharePoint) que tengan la capacidad de proporcionar una URL al archivo una vez que esté disponible públicamente.
 
 >[!NOTE]
 >
 >En las plataformas compartidas, *debe* tener la capacidad de hacer que el archivo sea de acceso público.
 
-Por ejemplo, para agregar una audiencia de un archivo en Google Drive:
+Por ejemplo, para añadir un público desde un archivo de Google Drive:
 
 1. En Google Drive, cree un archivo de hoja de cálculo con dos columnas:
-   1. La primera columna se muestra en la lista desplegable.
-   1. La segunda columna es la descripción de la audiencia.
-1. Publish el archivo:
+   1. La primera columna aparecerá en la lista desplegable.
+   1. La segunda columna será la descripción del público.
+1. Publique el archivo:
    1. Archivo -> Compartir -> publicar en la web -> CSV
 1. Copie la URL en el archivo publicado.
-1. Vaya a Generar variaciones.
-1. Abra el Editor de mensajes.
-1. Busque la audiencia **Adobe Target** en los metadatos y reemplace la URL.
+1. Vaya a “Generar variaciones”.
+1. Abra el editor de indicaciones.
+1. Busque el público de **Adobe Target** en los metadatos y sustituya la URL.
 
    >[!NOTE]
    >
@@ -395,7 +395,7 @@ Por ejemplo, para agregar una audiencia de un archivo en Google Drive:
 
    Por ejemplo:
 
-   ![Generar variaciones - agregar archivo CSV de audiencia](assets/generate-variations-audiences-csv-save.png)
+   ![Generar variaciones: añadir archivo CSV de público](assets/generate-variations-audiences-csv-save.png)
 
 ## Uso de acciones generativas {#generative-action-usage}
 
@@ -403,51 +403,51 @@ La administración del uso depende de la acción realizada:
 
 * Generar variaciones
 
-  Una generación de una variante de copia es igual a una acción generativa. AEM Como cliente, tiene una serie de acciones generativas que se incluyen con su licencia de. Una vez consumida la asignación de derechos base, puede adquirir acciones adicionales.
+  Una generación de una variante de copia es igual a una acción generativa. Como cliente, dispone de un determinado número de acciones generativas que vienen con su licencia de AEM. Una vez que haya consumido los derechos básicos, podrá adquirir acciones adicionales.
 
   >[!NOTE]
   >
-  >Ver [Adobe Experience Manager: Cloud Service | Descripción del producto](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) para obtener más información acerca de los derechos básicos y póngase en contacto con el equipo de la cuenta si desea adquirir acciones más generativas.
+  >Consulte [Adobe Experience Manager: Cloud Service | Descripción del producto](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) para obtener más información acerca de los derechos básicos, y póngase en contacto con el equipo de la cuenta si desea adquirir acciones más generativas.
 
 * Adobe Express
 
   El uso de generación de imágenes se administra mediante derechos de Adobe Express y [créditos generativos](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
 
-## Acceso a Generar variaciones {#access-generate-variations}
+## Acceso a “Generar variaciones” {#access-generate-variations}
 
-Después de cumplir los requisitos previos, puede acceder a Generate Variations desde AEM as a Cloud Service o desde el Sidekick de los Edge Delivery Services.
+Después de cumplir los requisitos previos, puede acceder a “Generar variaciones” desde AEM as a Cloud Service o desde la barra de tareas de Edge Delivery Services.
 
 ### Requisitos previos de acceso {#access-prerequisites}
 
-Para utilizar Generar variaciones, debe asegurarse de que se cumplen los requisitos previos:
+Para utilizar “Generar variaciones”, debe asegurarse de que se cumplen los requisitos previos:
 
-* [Acceso al as a Cloud Service en Experience Manager con Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services)
+* [Acceso a Experience Manager as a Cloud Service con Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services)
 
-#### Acceso al as a Cloud Service en Experience Manager con Edge Delivery Services{#access-to-aemaacs-with-edge-delivery-services}
+#### Acceso a Experience Manager as a Cloud Service con Edge Delivery Services{#access-to-aemaacs-with-edge-delivery-services}
 
-Los usuarios que necesiten acceder a Generate Variations deben tener derecho a un entorno as a Cloud Service Experience Manager con Edge Delivery Services.
+Los usuarios que necesiten acceder a “Generar variaciones” deben tener derecho a un entorno de Experience Manager as a Cloud Service con Edge Delivery Services.
 
 >[!NOTE]
 >
->Si el contrato del as a Cloud Service de AEM Sites no incluye Edge Delivery Services, deberá firmar un nuevo contrato para obtener acceso.
+>Si su contrato de AEM Sites as a Cloud Service no incluye Edge Delivery Services, deberá firmar un nuevo contrato para obtener acceso.
 >
->Póngase en contacto con el equipo de su cuenta para hablar sobre cómo puede pasar al as a Cloud Service de AEM Sites con los Edge Delivery Services.
+>Debe ponerse en contacto con su equipo de cuentas para hablar sobre cómo puede pasarse a AEM Sites as a Cloud Service con Edge Delivery Services.
 
-Para conceder acceso a usuarios específicos, asigne su cuenta de usuario al perfil de producto correspondiente. AEM Consulte [Asignación de perfiles de producto de para obtener más información](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+Para conceder acceso a usuarios específicos, asigne su cuenta de usuario al perfil de producto correspondiente. Consulte [Asignación de perfiles de productos de AEM para obtener más detalles](/help/journey-onboarding/assign-profiles-cloud-manager.md).
 
 ### Acceso desde AEM as a Cloud Service {#access-aemaacs}
 
-Se puede acceder a Generar variaciones desde el [Panel de navegación](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) de AEM as a Cloud Service:
+Se puede acceder a “Generar variaciones” desde el [panel de navegación](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) de AEM as a Cloud Service:
 
 ![Panel de navegación](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
 
-### Acceso desde el AEM Sidekick {#access-aem-sidekick}
+### Acceso desde la barra de tareas de AEM {#access-aem-sidekick}
 
-Se necesita alguna configuración para poder acceder a Generate Variations desde el Sidekick (de Edge Delivery Services).
+Es necesario realizar alguna configuración antes de poder acceder a “Generar variaciones” desde la barra de tareas (de Edge Delivery Services).
 
-1. Consulte el documento [Instalación del AEM Sidekick](https://www.aem.live/docs/sidekick-extension) para obtener información sobre cómo instalar y configurar el Sidekick.
+1. Consulte el documento [Instalación de la barra de tareas de AEM](https://www.aem.live/docs/sidekick-extension) para obtener información sobre cómo instalar y configurar la barra de tareas.
 
-1. Para utilizar la opción Generate Variations en el Sidekick (de Edge Delivery Services), incluya la siguiente configuración en sus proyectos de Edge Delivery Services en:
+1. Para utilizar la función “Generar variaciones” en la barra de tareas (de Edge Delivery Services), incluya la siguiente configuración en sus proyectos de Edge Delivery Services en:
 
    * `tools/sidekick/config.json`
 
@@ -473,91 +473,91 @@ Se necesita alguna configuración para poder acceder a Generate Variations desde
    }
    ```
 
-1. Es posible que deba asegurarse de que los usuarios tengan [acceso al as a Cloud Service del Experience Manager con Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services).
+1. A continuación, es posible que tenga que asegurarse de que los usuarios disponen de [Acceso a Experience Manager as a Cloud Service con Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services).
 
-1. A continuación, puede acceder a la función seleccionando **Generar variaciones** en la barra de herramientas del Sidekick:
+1. A continuación, puede acceder a la función seleccionando **Generar variaciones** en la barra de herramientas de la barra de tareas:
 
-   AEM ![Generar variaciones - acceso desde la página de inicio de sesión de Sidekicj](assets/generate-variations-sidekick-toolbar.png)
+   ![Generar variaciones: acceso desde la barra de tareas de AEM](assets/generate-variations-sidekick-toolbar.png)
 
 ## Información adicional {#further-information}
 
 Para obtener más información, también puede leer:
 
-* [GenAI genera variaciones en GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
-* [Experimentación con Edge Delivery Services](https://www.aem.live/docs/experimentation)
+* [Generar variaciones de IA generativa en GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
+* [Experimentación de Edge Delivery Services](https://www.aem.live/docs/experimentation)
 
 ## Preguntas frecuentes {#faqs}
 
-### Salida con formato {#formatted-outpu}
+### Resultados con formato {#formatted-outpu}
 
-**La respuesta generada no me está dando el resultado con formato que necesito. ¿Cómo se modifica el formato? p. ej.: necesito un título y un subtítulo, pero la respuesta es solo el título**
+**La respuesta generada no me ofrece el resultado con el formato que necesito. ¿Cómo se modifica el formato? Por ejemplo: necesito un título y un subtítulo, pero la respuesta es solo el título.**
 
-1. Abra la solicitud real en modo de edición.
-1. Vaya a Requisitos.
-1. Encontrará requisitos que hablan sobre el resultado.
-   1. Ejemplo: &quot;El texto debe constar de tres partes, un título, un cuerpo y una etiqueta de botón&quot;. o &quot;Dé formato a la respuesta como una matriz de objetos JSON válida con los atributos &quot;Title&quot;, &quot;Body&quot; y &quot;ButtonLabel&quot;.
+1. Abra la indicación en cuestión en modo de edición.
+1. Vaya a los requisitos.
+1. Encontrará requisitos relativos a los resultados.
+   1. Ejemplo: “El texto debe constar de tres partes: un título, un cuerpo y una etiqueta de botón”. o “Formatear la respuesta como una matriz de objetos JSON válida con los atributos &quot;Title&quot;, &quot;Body&quot; y &quot;ButtonLabel&quot;”.
 1. Modifique los requisitos para adaptarlos a sus necesidades.
 
    >[!NOTE]
    >
-   >Si tiene restricciones de recuento de palabras/caracteres en la nueva salida introducida, cree un requisito.
+   >Si tiene restricciones de número de palabras/caracteres para los nuevos resultados introducidos, cree un requisito.
 
-   Ejemplo: &quot;El texto del título no debe superar las 10 palabras o los 50 caracteres, incluidos los espacios&quot;.
-1. Guarde la solicitud para uso futuro.
+   Ejemplo: “El texto del título no debe superar las 10 palabras o los 50 caracteres, incluidos los espacios”.
+1. Guarde la indicación para utilizarla en el futuro.
 
-### Duración de la respuesta {#length-of-response}
+### Longitud de la respuesta {#length-of-response}
 
 **La respuesta generada es demasiado larga o demasiado corta. ¿Cómo se cambia la longitud?**
 
-1. Abra la solicitud real en modo de edición.
-1. Vaya a Requisitos.
-1. Verá que para cada salida hay un límite correspondiente de palabra/carácter.
-   1. Ejemplo: &quot;El texto del título no debe superar las 10 palabras o los 50 caracteres, incluidos los espacios&quot;.
+1. Abra la indicación en cuestión en modo de edición.
+1. Vaya a los requisitos.
+1. Verá que para cada resultado hay un límite de palabras/caracteres correspondiente.
+   1. Ejemplo: “El texto del título no debe superar las 10 palabras o los 50 caracteres, incluidos los espacios”.
 1. Modifique los requisitos para adaptarlos a sus necesidades.
-1. Guarde la solicitud para uso futuro.
+1. Guarde la indicación para utilizarla en el futuro.
 
-### Mejore las respuestas {#improve-responses}
+### Mejorar las respuestas {#improve-responses}
 
-**Las respuestas que recibo no son exactamente lo que estoy buscando. ¿Qué puedo hacer para mejorarlos?**
+**Las respuestas que obtengo no son exactamente las que esperaba. ¿Qué puedo hacer para mejorarlas?**
 
-1. Intente cambiar la temperatura en Configuración avanzada.
-   1. Una temperatura más alta se aleja del indicador y conduce a más variación, aleatoriedad y creatividad.
-   1. Una temperatura más baja es más determinista y se adhiere a lo que está en el indicador.
-1. Abra la solicitud real en el modo de edición y revísela. Preste especial atención a la sección de requisitos que describe el tono de voz y otros criterios importantes.
+1. Intente cambiar la temperatura en Ajustes avanzados.
+   1. Una temperatura más alta se aleja de la indicación y conduce a una mayor variación, aleatoriedad y creatividad.
+   1. Una temperatura más baja es más determinística y se ciñe a lo que dice la indicación.
+1. Abra la indicación en cuestión en el modo de edición y revísela. Preste especial atención a la sección de requisitos que describe el tono de voz y otros criterios importantes.
 
-### Comentarios en una solicitud {#comments-in-prompt}
+### Comentarios en una indicación {#comments-in-prompt}
 
-**¿Cómo puedo usar comentarios en una solicitud?**
+**¿Cómo puedo utilizar comentarios en una indicación?**
 
-Los comentarios de una solicitud se utilizan para incluir notas, explicaciones o instrucciones que no están pensadas para formar parte del resultado real. Estos comentarios se encapsulan dentro de una sintaxis específica: comienzan y finalizan con llaves dobles y comienzan con un hash (por ejemplo, `{{# Comment Here }}`). Los comentarios ayudan a aclarar la estructura o la intención del mensaje de texto sin afectar a la respuesta generada.
+Los comentarios en una indicación se utilizan para incluir notas, explicaciones o instrucciones que no deben formar parte de los resultados generados. Estos comentarios se encapsulan dentro de una sintaxis específica: comienzan y finalizan con llaves dobles y comienzan con un hash (por ejemplo, `{{# Comment Here }}`). Los comentarios ayudan a aclarar la estructura o la intención de la indicación sin afectar a la respuesta generada.
 
-### Buscar una solicitud compartida {#find-a-shared-prompt}
+### Encontrar una indicación compartida {#find-a-shared-prompt}
 
-**¿Qué puedo hacer si no encuentro una plantilla de mensaje que alguien haya compartido?**
+**¿Qué puedo hacer si no encuentro una plantilla de indicación que alguien ha compartido?**
 
-En esta situación hay varios detalles que comprobar:
+En esta situación hay diversos aspectos que debe comprobar:
 
-1. Utilice la dirección URL de su entorno.
+1. Utilice la URL de su entorno.
 Por ejemplo, https://experience.adobe.com/#/aem/generate-variations
-1. Asegúrese de que la organización de IMS seleccionada sea correcta.
-1. Confirme que la solicitud se ha guardado como Compartida.
+1. Asegúrese de que la organización de IMS seleccionada sea la correcta.
+1. Confirme que la indicación se ha guardado como “Compartida”.
 
-### Mensajes personalizados en la versión 2.0.0 {#custom-prompts-v200}
+### Indicaciones personalizadas en la versión 2.0.0 {#custom-prompts-v200}
 
-**En la versión 2.0.0, mis mensajes personalizados han desaparecido. ¿Qué puedo hacer?**
+**En la versión 2.0.0, mis indicaciones personalizadas han desaparecido: ¿qué puedo hacer?**
 
-Si se cambia a la versión 2.0.0, las plantillas de mensajes personalizadas se romperán, por lo que no estarán disponibles.
+El paso a la versión 2.0.0 provocará la rotura de las plantillas de indicación personalizadas, por lo que no estarán disponibles.
 
-Para recuperarlos:
+Para recuperarlas:
 
-1. Vaya a la carpeta prompt-template de Sharepoint.
-1. Copie el mensaje.
-1. Abra la aplicación Generar variaciones.
-1. Seleccione la tarjeta Nuevo mensaje.
-1. Pegue el mensaje.
-1. Compruebe que el mensaje funciona.
-1. Guarde el mensaje.
+1. Vaya a la carpeta “prompt-template” de Sharepoint.
+1. Copie la indicación.
+1. Abra la aplicación “Generar variaciones”.
+1. Seleccione la tarjeta “Nueva indicación”.
+1. Pegue la indicación.
+1. Compruebe que la indicación funciona.
+1. Guarde la indicación.
 
 ## Historial de versiones {#release-history}
 
-Para obtener más información sobre las versiones actuales y anteriores, consulte las [Notas de la versión para generar variaciones](/help/generative-ai/release-notes-generate-variations.md)
+Para más detalles sobre la versión actual, y las anteriores, consulte las [Notas de la versión de “Generar variaciones”](/help/generative-ai/release-notes-generate-variations.md).
