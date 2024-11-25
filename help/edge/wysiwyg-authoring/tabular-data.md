@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 4e4234c1aaf0a410cb419140e9e353348ce118c1
 workflow-type: tm+mt
 source-wordcount: '1284'
-ht-degree: 73%
+ht-degree: 78%
 
 ---
 
@@ -44,7 +44,7 @@ Este documento utiliza el ejemplo de los redireccionamientos para ilustrar cómo
 
 Para crear asignaciones con hojas de cálculo en su proyecto de AEM con Edge Delivery Services, debe haber creado el sitio con la última plantilla del sitio.
 
-Consulte el documento [Guía de introducción para desarrolladores para la creación de WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para obtener más información.
+Consulte el documento [Guía de introducción del desarrollador para la creación WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para obtener más información.
 
 ## Creación de una hoja de cálculo {#spreadsheet}
 
@@ -150,7 +150,7 @@ Para que AEM pueda publicar los datos en la hoja de cálculo, también debe actu
 
    >[!NOTE]
    >
-   >Esta entrada `paths.json` se basa en el ejemplo de creación de redirecciones con datos de tabla. Asegúrese de actualizar la ruta de acceso correspondiente al [tipo de hoja de cálculo que está creando.](#other)
+   >Esta entrada `paths.json` se basa en el ejemplo de creación de redireccionamientos utilizando datos tabulares. Asegúrese de actualizar la ruta correspondiente al [tipo de hoja de cálculo que está creando.](#other)
 
 1. Haga clic en **Confirmar cambios…** para guardar los cambios en `main`.
 

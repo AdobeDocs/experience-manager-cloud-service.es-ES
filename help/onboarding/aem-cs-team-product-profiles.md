@@ -7,7 +7,7 @@ role: Admin, User, Developer
 source-git-commit: c8534ddf84998377ee63575403417165ccec2dbd
 workflow-type: tm+mt
 source-wordcount: '2059'
-ht-degree: 34%
+ht-degree: 88%
 
 ---
 
@@ -42,9 +42,9 @@ AEM as a Cloud Service es una oferta totalmente nativa de la nube que ofrece AEM
 >
 > Algunas de las instancias y perfiles de producto descritos en este artículo pueden aparecer solo para entornos recién creados. Un mecanismo futuro también permitirá actualizar los entornos existentes.
 
-Cuando Adobe AEM procesa las licencias de una solución de por primera vez, aparecen dos instancias de producto en Adobe Admin Console, en el producto de Adobe Experience Manager as a Cloud Service:
+Cuando Adobe procesa las licencias de una solución de AEM por primera vez, aparecen dos instancias de producto en Adobe Admin Console, en el producto de Adobe Experience Manager as a Cloud Service:
 
-* AEM AEM **Org-Level**: contiene uno o más perfiles de producto que representan el acceso a características con ámbito para todos los entornos de la, en lugar de solo uno
+* **Nivel de organización de AEM**: contiene uno o varios perfiles de producto que representan el acceso a funciones que están definidas para todos los entornos de AEM, en lugar de para uno solo.
 * **Cloud Manager**: contiene perfiles de producto correspondientes a diferentes niveles de acceso a las características de Cloud Manager.
 
 <!--
@@ -55,23 +55,23 @@ Cuando Adobe AEM procesa las licencias de una solución de por primera vez, apar
 
 ![Instancias de producto de nivel de organización](/help/onboarding/assets/orglevel.png)
 
-AEM AEM AEM Dentro de la instancia de producto de nivel de organización de la organización de la organización de la organización se encuentra un perfil de producto denominado Informes de nivel de organización de la organización, que no se utiliza en este momento, pero que puede utilizarse en el futuro para representar el acceso a la recuperación de información sobre licencias de producto de la organización de la organización de la organización, que se llama.
+Dentro de la instancia de producto de nivel de organización de AEM hay un perfil de producto denominado “Informadores de nivel de organización de AEM”, que no se utiliza en este momento, pero podría utilizarse en el futuro para representar el acceso a la recuperación de información sobre licencias de productos de AEM.
 
-Cuando se concede una licencia a una solución de comunicación de Forms AEM, también aparecerá un perfil de producto correspondiente en la instancia de producto de nivel de organización de la organización de la organización de la.
+Cuando se obtiene una licencia para una solución de comunicación de formularios, también aparecerá un perfil de producto correspondiente en la instancia de producto a nivel de organización de AEM.
 
-![Perfil de producto de reporteros](/help/onboarding/assets/org-level-reporters.png)
+![Perfil de producto de informadores](/help/onboarding/assets/org-level-reporters.png)
 
 ### Instancias de producto de entorno y nivel {#environment-and-tier-level-product-instances}
 
-AEM Al aprovisionar nuevos programas con uno o más entornos de, aparecerán dos instancias de producto por entorno, que contienen perfiles de producto para creación y publicación, respectivamente.
+Al aprovisionar nuevos programas con uno o más entornos de AEM, aparecerán dos instancias de producto por entorno, que contendrán perfiles de producto para la creación y la publicación, respectivamente.
 
 ![Instancias de producto de entorno](/help/onboarding/assets/env-productinstances.png)
 
-A continuación se muestran los perfiles de producto en una instancia de producto de autor, para una organización que ha aprovisionado un entorno en un programa que contiene AEM Sites:
+A continuación se muestran los perfiles de producto en una instancia de producto de creación, para una organización que ha aprovisionado un entorno en un programa que contiene AEM Sites:
 
-![Instancias de producto de sitios](/help/onboarding/assets/sites-product-instances.png)
+![Instancias de producto de Sites](/help/onboarding/assets/sites-product-instances.png)
 
-En la siguiente tabla se describe una lista de los posibles perfiles de producto debajo de una instancia de producto específica del nivel de entorno.
+En la siguiente tabla se describe una lista de los posibles perfiles de producto debajo de una instancia de producto específica de nivel y de entorno.
 
 <table style="table-layout:auto">
     <tr>
@@ -82,14 +82,14 @@ En la siguiente tabla se describe una lista de los posibles perfiles de producto
     </tr>
     <tr>
         <td>AEM Author</td>
-        <td>Administradores de contenido de AEM Sites - Autor - Programa <code>id</code> - Entorno <code>id</code></td>
+        <td>Administradores de contenido de AEM Sites - Creación - Programa <code>id</code> - Entorno <code>id</code></td>
         <td>Administradores de contenido de AEM Sites</td>
         <td>
             <ul>
-                <li>Está pensado para el acceso controlado a las funciones de creación de AEM Sites en este entorno. Los usuarios de este perfil de producto serán miembros del grupo de usuarios de creación de contenido de AEM Sites AEM AEM, que se crea de forma automática en la. AEM AEM Los permisos de grupo deben configurarse en el nivel de acceso deseado, con el nivel de acceso que desee.</li><br>
-                <li>Si el servicio predeterminado permanece seleccionado
+                <li>Está pensado para el acceso controlado a las funciones de creación de AEM Sites en este entorno. Los usuarios de este perfil de producto serán miembros del grupo de autores de contenido de AEM Sites, que se crea automáticamente en AEM.  Los permisos de grupo de AEM deben configurarse en AEM con el nivel de acceso deseado.</li><br>
+                <li>Si el servicio predeterminado permanece seleccionado,
                     <ul>
-                        <li>Los usuarios de este perfil de producto también serán miembros del grupo de usuarios "Gestores de contenido de AEM Sites - Servicio" (AEM Content Managers - Service.</li>
+                        <li>los usuarios de este perfil de producto también serán miembros del grupo de usuarios de AEM “Administradores de contenido de AEM Sites: servicio”.</li>
                       <!--  <li>users in this product profile will have access to AEM Sites Content Management API.</li>
                         <li>an Adobe Developer Console API OAuth S2S project containing AEM Sites Content Management API can optionally be scoped to this environment.</li>-->
                     </ul>
@@ -99,14 +99,14 @@ En la siguiente tabla se describe una lista de los posibles perfiles de producto
     </tr>
     <tr>
         <td></td>
-        <td>AEM Administradores de - Autor - Programa <code>id</code> - Entorno <code>id</code></td>
-        <td>AEM Administradores de</td>
+        <td>Administradores de AEM - Creación - Programa <code>id</code> - Entorno <code>id</code></td>
+        <td>Administradores de AEM</td>
         <td>
             <ul>
-                <li>AEM Se ha diseñado para permitir el acceso sin restricciones a las funciones de los entornos de creación y publicación de. AEM AEM AEM Los usuarios de este perfil de producto serán miembros del grupo de creación de administradores de creado automáticamente en el grupo de usuarios de.</li><br>
-                <li>Si el servicio predeterminado permanece seleccionado
+                <li>Destinado al acceso sin restricciones a las funciones del entorno de creación y publicación de AEM. Los usuarios de este perfil de producto serán miembros del grupo de administradores de creación de AEM que se crea automáticamente en AEM.</li><br>
+                <li>Si el servicio predeterminado permanece seleccionado,
                     <ul>
-                        <li>AEM AEM Los usuarios de este perfil de producto también serán miembros del grupo "Administradores de la - Servicio" de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de</li>
+                        <li>los usuarios de este perfil de producto también serán miembros del grupo de AEM “Administradores de AEM: servicio”.</li>
                     </ul>
                 </li>
             </ul>
@@ -114,14 +114,14 @@ En la siguiente tabla se describe una lista de los posibles perfiles de producto
     </tr>
     <tr>
         <td></td>
-        <td>AEM Usuarios - Autor - Programa <code>id</code> - Entorno <code>id</code></td>
+        <td>Usuarios de AEM - Creación - Programa <code>id</code> - Entorno <code>id</code></td>
         <td>Usuarios de AEM </td>
         <td>
             <ul>
-                <li>AEM Se ha diseñado para un acceso muy limitado a las funciones del entorno de creación de. AEM AEM Los usuarios de este perfil de producto serán miembros del grupo de usuarios "Colaboradores" creado automáticamente en el grupo de usuarios de</li><br>
-                <li>Si el servicio predeterminado permanece seleccionado
+                <li>Destinado a un acceso muy limitado a las funciones del entorno de creación de AEM.  Los usuarios de este perfil de producto serán miembros del grupo de AEM “Colaboradores” que se crea automáticamente en AEM</li><br>
+                <li>Si el servicio predeterminado permanece seleccionado,
                     <ul>
-                        <li>AEM AEM Los usuarios de este perfil de producto también serán miembros del grupo "Usuarios de la - Servicio</li>
+                        <li>los usuarios de este perfil de producto también serán miembros del grupo de AEM “Usuarios de AEM: servicio”.</li>
                     </ul>
                 </li>
             </ul>
@@ -129,21 +129,21 @@ En la siguiente tabla se describe una lista de los posibles perfiles de producto
     </tr>
     <tr>
         <td></td>
-        <td>AEM Reporteros en tiempo real - Autor - Programa <code>id</code> - Entorno <code>id</code></td>
-        <td>AEM Reporteros de</td>
+        <td>Informadores de AEM - Creación - Programa <code>id</code> - Entorno <code>id</code></td>
+        <td>Informadores de AEM</td>
         <td>
             <ul>
-                <li>No se utiliza actualmente, pero en el futuro puede proporcionar acceso a la información de creación de informes sobre el nivel de creación para este entorno.</li>
+                <li>No se utilizan actualmente, pero en el futuro pueden proporcionar acceso a la creación de informes sobre el nivel de creación para este entorno.</li>
             </ul>
         </td>
     </tr>
     <tr>
         <td></td>
-        <td>Colaborador de AEM Assets - autor - Programa <code>id</code> - Entorno <code>id</code></td>
-        <td>Usuarios de Collaborator de AEM Assets</td>
+        <td>Colaborador de AEM Assets - Creación - Programa <code>id</code> - Entorno <code>id</code></td>
+        <td>Usuarios colaboradores de AEM Assets</td>
         <td>
         <ul>
-                <li>Está pensado para el acceso de solo lectura a DAM. AEM AEM Los usuarios de este perfil de producto serán miembros del grupo de usuarios "Colaboradores" creado automáticamente en el grupo de usuarios de.
+                <li>Está pensado para el acceso de solo lectura a DAM. Los usuarios de este perfil de producto serán miembros del grupo de AEM “Colaboradores” que se crea automáticamente en AEM.
                 </li>
                 <li>
                 Además, otorga derechos de Adobe Express para crear variaciones de recursos.
@@ -152,11 +152,11 @@ En la siguiente tabla se describe una lista de los posibles perfiles de producto
     </tr>
     <tr>
         <td></td>
-        <td>Usuario avanzado de AEM Assets - autor - Programa <code>id</code> - Entorno <code>id</code></td>
+        <td>Usuario avanzado de AEM Assets - Creación - Programa <code>id</code> - Entorno <code>id</code></td>
         <td>Usuarios avanzados de AEM Assets</td>
 <td>
         <ul>
-                <li>Está pensado para el acceso de solo lectura a DAM. AEM AEM Los usuarios de este perfil de producto serán miembros del grupo de usuarios "Colaboradores" creado automáticamente en el grupo de usuarios de.
+                <li>Está pensado para el acceso de solo lectura a DAM. Los usuarios de este perfil de producto serán miembros del grupo de AEM “Colaboradores” que se crea automáticamente en AEM.
                 </li>
                 <li>
                 Además, otorga derechos de Adobe Express para crear variaciones de recursos.
@@ -166,14 +166,14 @@ En la siguiente tabla se describe una lista de los posibles perfiles de producto
     </tr>
     <tr>
         <td></td>
-        <td>Administradores de contenido de AEM Forms - Autor - Programa <code>id</code> - Entorno <code>id</code></td>
+        <td>Administradores de contenido de AEM Forms - Creación - Programa <code>id</code> - Entorno <code>id</code></td>
         <td>Administradores de contenido de AEM Forms</td>
         <td>
             <ul>
-                <li>Está pensado para el acceso controlado a las funciones de creación de AEM Forms en este entorno. Los usuarios de este perfil de producto serán miembros del grupo de usuarios de formularios de AEM Forms AEM AEM, que se crea de forma automática en el grupo de usuarios de formularios de.</li><br>
-                <li>Si el servicio predeterminado permanece seleccionado
+                <li>Está pensado para el acceso controlado a las funciones de creación de AEM Forms en este entorno. Los usuarios de este perfil de producto serán miembros del grupo de AEM de usuarios de formularios de AEM Forms, que se crea de forma automática en AEM.</li><br>
+                <li>Si el servicio predeterminado permanece seleccionado,
                     <ul>
-                        <li>Los usuarios de este perfil de producto también serán miembros del grupo de usuarios "Gestores de contenido de AEM Forms - Servicio" (AEM Content Managers - Service.</li>
+                        <li>los usuarios de este perfil de producto también serán miembros del grupo de usuarios de AEM “Administradores de contenido de AEM Forms: servicio”.</li>
                     </ul>
                 </li>
             </ul>
@@ -181,14 +181,14 @@ En la siguiente tabla se describe una lista de los posibles perfiles de producto
     </tr>
     <tr>
         <td></td>
-        <td>Desarrolladores de AEM Forms - autor - Programa <code>id</code> - Entorno <code>id</code></td>
+        <td>Desarrolladores de AEM Forms - Creación - Programa <code>id</code> - Entorno <code>id</code></td>
         <td>Desarrolladores de AEM Forms</td>
         <td>
             <ul>
-                <li>Está pensado para el acceso controlado a las funciones de creación de AEM Forms en este entorno. Los usuarios de este perfil de producto serán miembros del grupo de usuarios avanzados de formularios de AEM Forms AEM AEM, que se crea de forma automática en el grupo de usuarios avanzados de la aplicación de la aplicación de la aplicación de la. Estos usuarios tienen derechos para cargar XDP y crear modelos de datos de formulario, además de las tareas normales de creación de formularios.</li><br>
-                <li>Si el servicio predeterminado permanece seleccionado
+                <li>Está pensado para el acceso controlado a las funciones de creación de AEM Forms en este entorno. Los usuarios de este perfil de producto serán miembros del grupo de AEM de usuarios avanzados de formularios de AEM Forms, que se crea de forma automática en AEM. Estos usuarios tienen derechos para cargar XDP y crear modelos de datos de formulario, además de las tareas normales de creación de formularios.</li><br>
+                <li>Si el servicio predeterminado permanece seleccionado,
                     <ul>
-                        <li>Los usuarios de este perfil de producto también serán miembros del grupo de usuarios "Desarrolladores de AEM Forms - Servicio" (AEM Developers - Service.</li>
+                        <li>los usuarios de este perfil de producto también serán miembros del grupo de AEM “Desarrolladores de AEM Forms: servicio”.</li>
                     </ul>
                 </li>
             </ul>
@@ -196,14 +196,14 @@ En la siguiente tabla se describe una lista de los posibles perfiles de producto
     </tr>
     <tr>
         <td></td>
-        <td>Usuarios del servicio de comunicaciones de AEM Forms - Autor - Programa <code>id</code> - Entorno <code>id</code></td>
+        <td>Usuarios del servicio de comunicaciones de AEM Forms - Creación - Programa <code>id</code> - Entorno <code>id</code></td>
         <td>Usuarios del servicio de comunicaciones de AEM Forms</td>
         <td>
             <ul>
-                <li>Diseñado para el acceso controlado a las funciones de AEM Forms Communications Services en este entorno. Los usuarios de este perfil de producto serán miembros del grupo de usuarios de formularios de AEM Forms AEM AEM, que se crea de forma automática en el grupo de usuarios de formularios de.</li><br>
-                <li>Si el servicio predeterminado permanece seleccionado
+                <li>Está pensado para el acceso controlado a las funciones del servicio de comunicaciones de AEM Forms en este entorno. Los usuarios de este perfil de producto serán miembros del grupo de AEM de usuarios de formularios de AEM Forms, que se crea de forma automática en AEM.</li><br>
+                <li>Si el servicio predeterminado permanece seleccionado,
                     <ul>
-                        <li>Los usuarios de este perfil de producto también serán miembros del grupo de usuarios de "Servicio de comunicaciones de AEM Forms AEM - Servicio" de.</li>
+                        <li>los usuarios de este perfil de producto también serán miembros del grupo de usuarios de AEM “Servicio de comunicaciones de AEM Forms: servicio”.</li>
                     </ul>
                 </li>
             </ul>
@@ -211,14 +211,14 @@ En la siguiente tabla se describe una lista de los posibles perfiles de producto
     </tr>
     <tr>
         <td>Publicación de AEM</td>
-        <td>AEM Usuarios - Publicar - Programa <code>id</code> - Entorno <code>id</code></td>
+        <td>Usuarios de AEM - Publicación - Programa <code>id</code> - Entorno <code>id</code></td>
         <td>Usuarios de AEM </td>
         <td>
             <ul>
-                <li>AEM Se ha diseñado para un acceso muy limitado a las funciones del entorno de creación de. AEM AEM Los usuarios de este perfil de producto serán miembros del grupo de usuarios "contrib" creado automáticamente en el grupo de usuarios ""</li><br>
-                <li>Si el servicio predeterminado permanece seleccionado
+                <li>Destinado a un acceso muy limitado a las funciones del entorno de creación de AEM.  Los usuarios de este perfil de producto serán miembros del grupo de AEM “colaboradores” que se crea automáticamente en AEM</li><br>
+                <li>Si el servicio predeterminado permanece seleccionado,
                     <ul>
-                        <li>AEM AEM Los usuarios de este perfil de producto también serán miembros del grupo "Usuarios de la - Servicio" de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de.</li>
+                        <li>los usuarios de este perfil de producto también serán miembros del grupo de AEM “Usuarios de AEM: servicio”.</li>
                     </ul>
                 </li>
             </ul>
@@ -226,24 +226,24 @@ En la siguiente tabla se describe una lista de los posibles perfiles de producto
     </tr>
     <tr>
         <td></td>
-        <td>AEM Reporteros de - Publicar - Programa <code>id</code> - Entorno <code>id</code></td>
-        <td>AEM Reporteros de</td>
+        <td>Informadores de AEM - Publicación - Programa <code>id</code> - Entorno <code>id</code></td>
+        <td>Informadores de AEM</td>
         <td>
             <ul>
-                <li>No se utiliza actualmente, pero puede proporcionar acceso a la información de creación de informes sobre el nivel de publicación para este entorno.</li>
+                <li>No se utilizan actualmente, pero en el futuro pueden proporcionar acceso a la creación de informes sobre el nivel de publicación para este entorno.</li>
             </ul>
         </td>
     </tr>
    <tr>
         <td></td>
-        <td>Usuarios del servicio de comunicaciones de AEM Forms - Publicar - Programa <code>id</code> - Entorno <code>id</code></td>
+        <td>Usuarios del servicio de comunicaciones de AEM Forms - Publicación - Programa <code>id</code> - Entorno <code>id</code></td>
         <td>Usuarios del servicio de comunicaciones de AEM Forms</td>
         <td>
             <ul>
-                <li>Diseñado para el acceso controlado a las funciones de AEM Forms Communications Services en este entorno. Los usuarios de este perfil de producto serán miembros del grupo de usuarios de formularios de AEM Forms AEM AEM, que se crea de forma automática en el grupo de usuarios de formularios de.</li><br>
-                <li>Si el servicio predeterminado permanece seleccionado
+                <li>Está pensado para el acceso controlado a las funciones del servicio de comunicaciones de AEM Forms en este entorno. Los usuarios de este perfil de producto serán miembros del grupo de AEM de usuarios de formularios de AEM Forms, que se crea de forma automática en AEM.</li><br>
+                <li>Si el servicio predeterminado permanece seleccionado,
                     <ul>
-                        <li>Los usuarios de este perfil de producto también serán miembros del grupo de usuarios de "Servicio de comunicaciones de AEM Forms AEM - Servicio" de.</li>
+                        <li>los usuarios de este perfil de producto también serán miembros del grupo de usuarios de AEM “Servicio de comunicaciones de AEM Forms: servicio”.</li>
                     </ul>
                 </li>
             </ul>
@@ -251,15 +251,15 @@ En la siguiente tabla se describe una lista de los posibles perfiles de producto
     </tr>
 </table>
 
-Tenga en cuenta que cada perfil de producto tiene un servicio de perfil de producto asociado habilitado de forma predeterminada. A menos que tenga requisitos de acceso complejos, se recomienda mantener seleccionado solo el servicio predeterminado. AEM AEM Se creará un grupo de usuarios correspondiente de manera que se establezca un nombre para el grupo `<Product Profile Prefix> - Service` (por ejemplo, **AEM Sites AEM Content Managers - Service**), y los usuarios de los perfiles de producto principales se convertirán automáticamente en miembros de ese grupo de usuarios correspondiente.
+Tenga en cuenta que cada perfil de producto tiene un servicio de perfil de producto asociado habilitado de forma predeterminada. A menos que tenga requisitos de acceso complejos, se recomienda mantener seleccionado solo el servicio predeterminado. Se creará un grupo de AEM correspondiente en AEM con la convención de nomenclatura `<Product Profile Prefix> - Service` (por ejemplo, **Administradores de contenido de AEM Sites: servicio**), y los usuarios de los perfiles de producto principales se convertirán automáticamente en miembros de ese grupo de AEM correspondiente.
 
-AEM AEM El grupo de usuarios de la lista de productos asociados en el servicio tendrá el conjunto agregado de usuarios que existen en todos los perfiles de producto asociados de ese servicio para esa combinación de nivel de entorno.
+El grupo de AEM en AEM asociado con el servicio tendrá el conjunto agregado de usuarios que existen en todos los perfiles de producto asociados de ese servicio para esa combinación de entorno y nivel.
 
 ![Servicios](/help/onboarding/assets/services.png)
 
-AEM La siguiente imagen representa los grupos de que reflejan el nivel de creación Perfil de producto y servicio de AEM Sites Content Managers.
+La siguiente imagen representa los grupos de AEM que reflejan el nivel de creación del perfil de producto y el servicio de los administradores de contenido de AEM Sites.
 
-AEM ![Asignación de grupo a servicio](/help/onboarding/assets/profile-to-service-mapping.png)
+![Asignación de grupo a servicio de AEM](/help/onboarding/assets/profile-to-service-mapping.png)
 
 >[!NOTE]
 >

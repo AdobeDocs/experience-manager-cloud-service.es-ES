@@ -1,12 +1,12 @@
 ---
 title: Dynamic Media con funciones de OpenAPI
-description: Conozca conceptos clave como por qué utilizar Dynamic Media con las capacidades de OpenAPI y cómo habilitarlo.
+description: Conozca conceptos clave como por qué utilizar Dynamic Media con funciones de OpenAPI y cómo habilitarlo.
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
 source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
 source-wordcount: '1109'
-ht-degree: 2%
+ht-degree: 96%
 
 ---
 
@@ -21,67 +21,67 @@ ht-degree: 2%
 >
 >[!BADGE PDF de la Guía de Dynamic Media con funciones OpenAPI]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
-En el acelerado mundo digital actual, desbloquear todo el potencial de los activos digitales de su marca es crucial para mantenerse por delante de la competencia. Una solución integral de administración de Assets digital (DAM) facilita la administración de los recursos, promueve la coherencia de la marca y acelera la entrega de contenido a la vez que garantiza la integridad de la marca y experiencias de cliente excepcionales.
+En el vertiginoso mundo digital actual, aprovechar todo el potencial de los recursos digitales de su marca es crucial para ir un paso por delante de la competencia. Una solución integral de administración de recursos digitales (DAM) facilita la gobernanza de los recursos, promueve la uniformidad de la marca y acelera la entrega de contenido, al tiempo que garantiza la integridad de la marca y una experiencia excepcional para el cliente.
 
-Dynamic Media con capacidades OpenAPI coloca a DAM en el centro de un ecosistema de cadena de suministro de contenido ágil y eficiente para garantizar la gobernanza y la entrega de los recursos.
+Dynamic Media con funciones de OpenAPI coloca a DAM en el centro de un ecosistema de cadena de suministro de contenido ágil y eficiente para garantizar la gobernanza y la entrega de los recursos.
 
-## ¿Por qué utilizar Dynamic Media con las funcionalidades de OpenAPI? {#dynamic-media-open-api-features}
+## ¿Por qué utilizar Dynamic Media con funciones de OpenAPI? {#dynamic-media-open-api-features}
 
 Dynamic Media con funciones de OpenAPI ofrece las siguientes ventajas clave:
 
-* **Integraciones perfectas**: Dynamic Media con capacidades OpenAPI ofrece un conjunto completo de API de búsqueda y entrega. Permite a los desarrolladores [integrar fácilmente la entrega de recursos con sus aplicaciones](/help/assets/integrate-dynamic-media-open-apis.md). Las aplicaciones incluyen aplicaciones de Adobe y de terceros. Proporciona una [interfaz de usuario del selector de recursos de Micro Frontend](/help/assets/overview-asset-selector.md) para buscar y seleccionar recursos aprobados. El selector se puede integrar fácilmente con cualquier aplicación basada en marcos de trabajo de JavaScript como React JS, Angular JS y Vanilla JS.
+* **Integraciones perfectas**: Dynamic Media con funciones de OpenAPI ofrece un conjunto completo de API de búsqueda y entrega. Permite a los desarrolladores [integrar fácilmente la entrega de recursos con sus aplicaciones](/help/assets/integrate-dynamic-media-open-apis.md). Las aplicaciones incluyen aplicaciones de Adobe y de terceros. Proporciona una [interfaz de usuario del Selector de recursos de Micro-Frontend](/help/assets/overview-asset-selector.md) para buscar y seleccionar recursos aprobados. El selector se puede integrar fácilmente con cualquier aplicación basada en marcos de trabajo de JavaScript como React JS, Angular JS y Vanilla JS.
 
-* **Administración centralizada de recursos digitales**: DAM es la única fuente fiable para todos los recursos digitales. Los recursos digitales se administran de forma centralizada en los AEM Assets y se entregan a las aplicaciones consumidoras por referencia mediante direcciones URL de entrega, sin copiar los binarios de recursos.
+* **Administración centralizada de recursos digitales**: DAM es la única fuente de confianza para todos los recursos digitales. Los recursos digitales se administran de forma centralizada en AEM Assets y se entregan a las aplicaciones consumidoras por referencia mediante direcciones URL de entrega, sin copiar los binarios de recursos.
 
-* **Actualizaciones en tiempo real**: Cualquier cambio realizado en los recursos aprobados en DAM, incluidas las actualizaciones de la versión y las modificaciones de metadatos, se refleja automáticamente en las direcciones URL de envío. Con un valor corto de tiempo de vida (TTL) de 10 minutos configurado para Dynamic Media con funciones de OpenAPI a través de CDN, las actualizaciones se pueden ver en todas las interfaces de creación y publicación en menos de 10 minutos.
+* **Actualizaciones en tiempo real**: cualquier cambio realizado en los recursos aprobados en DAM, incluidas las actualizaciones de la versión y las modificaciones de metadatos, se refleja automáticamente en las direcciones URL de entrega. Con un valor corto de tiempo de vida (TTL) de 10 minutos configurado para Dynamic Media con funciones de OpenAPI a través de CDN, las actualizaciones se pueden ver en todas las interfaces de creación y publicación en menos de 10 minutos.
 
-* **Consistencia de la marca**: Solo [los recursos aprobados por la marca](/help/assets/approve-assets.md) están expuestos a aplicaciones de flujo descendente. [Los gerentes de marcas y los especialistas en mercadotecnia mantienen un control estricto sobre los recursos de marca](/help/assets/restrict-assets-delivery.md). Solo está disponible la versión aprobada y más reciente del recurso para su uso, lo que garantiza la coherencia de la marca en todos los canales y aplicaciones.
+* **Uniformidad de la marca**: solo [los recursos de marca aprobados](/help/assets/approve-assets.md) están expuestos a aplicaciones descendentes. [Los directores de marcas y los especialistas en marketing mantienen un control estricto sobre los recursos de la marca](/help/assets/restrict-assets-delivery.md). Solo está disponible la versión aprobada y más reciente del recurso para su uso, lo que garantiza la coherencia de marca en todos los canales y aplicaciones.
 
-* **Entrega optimizada para la web**: Los recursos digitales se entregan en formatos optimizados para la web a fin de mejorar los elementos vitales principales de las experiencias digitales. Esto incluye compatibilidad con representaciones WebP para imágenes, flujo adaptable a través de protocolos HLS o DASH para vídeos y representaciones originales para documentos.
+* **Entrega optimizada para la web**: los recursos digitales se entregan en formatos optimizados para la web a fin de mejorar los elementos vitales principales de las experiencias digitales. Esto incluye compatibilidad con representaciones WebP para imágenes, streaming adaptable a través de protocolos HLS o DASH para vídeos y representaciones originales para documentos.
 
-* **Transformación dinámica de recursos**: Nuestro sistema permite la transformación de imágenes sobre la marcha mediante parámetros de URL conocidos como modificadores de imagen. [Por ejemplo, anchura, altura, rotación, voltear, calidad, recorte, formato y recorte inteligente](/help/assets/deliver-assets-apis.md). Las representaciones transformadas se generan dinámicamente y se entregan sin problemas a través de la CDN.
+* **Transformación dinámica de recursos**: nuestro sistema permite la transformación de imágenes sobre la marcha mediante parámetros de URL conocidos como modificadores de imagen. [Por ejemplo, anchura, altura, girar, voltear, calidad, recorte, formato y recorte inteligente](/help/assets/deliver-assets-apis.md). Las representaciones transformadas se generan dinámicamente y se entregan sin problemas a través de la CDN.
 
-* **Envío seguro de recursos**: Dynamic Media con capacidades OpenAPI proporciona un mecanismo para controlar el acceso a sus recursos digitales. Puede especificar roles de usuario o grupos como metadatos para los recursos que se van a proteger y establecer un intervalo de tiempo predefinido durante el cual [solo los usuarios autorizados puedan acceder a estos recursos](/help/assets/restrict-assets-delivery.md). Las direcciones URL de entrega de los activos protegidos no se resuelven para los usuarios no autorizados durante el período restringido.
+* **Entrega segura de recursos**: Dynamic Media con funciones de OpenAPI proporciona un mecanismo para controlar el acceso a sus recursos digitales. Puede especificar roles de usuario o grupos como metadatos para los recursos que se van a proteger y establecer un intervalo de tiempo predefinido durante el cual [solo los usuarios autorizados puedan acceder a estos recursos](/help/assets/restrict-assets-delivery.md). Las URL de entrega de los recursos protegidos no se resuelven para los usuarios no autorizados durante el período restringido.
 
-* **Perspectivas de datos para tomar decisiones informadas (próximas)**: más allá de la administración y la entrega de recursos, captura perspectivas de datos de entrega en las entregas de recursos en CDN, lo que permite a los administradores de marcas rastrear las métricas de entrega en varios canales. Les permite tomar decisiones basadas en datos para una optimización continua de la gobernanza de recursos y las estrategias de entrega.
+* **Perspectivas de datos para tomar decisiones informadas (próximas)**: más allá de la administración y la entrega de recursos, captura perspectivas de datos de entrega en las entregas de recursos en CDN, lo que permite a los directores de marca rastrear las métricas de entrega en varios canales. Les permite tomar decisiones basadas en datos para una optimización continua de la gobernanza de recursos y las estrategias de entrega.
 
 ![Diagrama del flujo de datos de la API abierta de Dynamic Media](assets/dm-openapi-dfd.png)
 
 ## Requisitos previos para acceder a Dynamic Media con funciones de OpenAPI {#prerequisites-dynaminc-media-open-apis}
 
-Para acceder a Dynamic Media con las funciones de OpenAPI, debe tener licencias para:
+Para acceder a Dynamic Media con funciones de OpenAPI, debe tener licencias para:
 
 * AEM Assets as a Cloud Service
 
 * AEM Dynamic Media
 
-## ¿Cómo se habilita Dynamic Media con las funcionalidades de OpenAPI? {#enable-dynamic-media-open-apis}
+## ¿Cómo se habilita Dynamic Media con funciones de OpenAPI? {#enable-dynamic-media-open-apis}
 
-Antes de enviar una solicitud para habilitar Dynamic Media con las funciones de OpenAPI en AEM as a Cloud Service, asegúrese de que aún no esté habilitado.
+Antes de enviar una solicitud para habilitar Dynamic Media con funciones de OpenAPI en AEM as a Cloud Service, asegúrese de que aún no esté habilitado.
 
-Una vez cumplidos los [requisitos previos](#prerequisites-dynaminc-media-open-apis) y si Dynamic Media con las capacidades de OpenAPI está habilitado en su instancia de AEM as a Cloud Service, habrá una URL de entrega disponible para cada recurso aprobado en el repositorio. Para obtener información sobre cómo copiar la URL de envío, consulte [Copiar URL de envío para recursos aprobados](approve-assets.md#copy-delivery-url-approved-assets) . El Adobe recomienda utilizar este método para comprobar que Dynamic Media con capacidades OpenAPI está habilitado en AEM as a Cloud Service antes de enviar un ticket de asistencia para habilitarlo.
+Una vez cumplidos los [requisitos previos](#prerequisites-dynaminc-media-open-apis) y si Dynamic Media con funciones de OpenAPI está habilitado en su instancia de AEM as a Cloud Service, habrá una URL de entrega disponible para cada recurso aprobado en el repositorio. Para obtener información sobre cómo copiar la URL de entrega, consulte [Copiar URL de entrega para recursos aprobados](approve-assets.md#copy-delivery-url-approved-assets) . Adobe recomienda utilizar este método para comprobar que Dynamic Media con funciones de OpenAPI está habilitado en AEM as a Cloud Service antes de enviar un vale de asistencia para habilitarlo.
 
-Para habilitar Dynamic Media con las funcionalidades de OpenAPI en AEM as a Cloud Service, envíe un ticket de asistencia de Adobe con los siguientes detalles:
+Para habilitar Dynamic Media con funciones de OpenAPI en AEM as a Cloud Service, envíe un vale de asistencia de Adobe con los siguientes detalles:
 
-* ID de entorno y programa de Cloud Service
+* ID de entorno y programa de Cloud Services
 
-* Detalles del caso de uso para resolver con Dynamic Media con la integración de las capacidades de OpenAPI.
+* Detalles del caso de uso que quiere resolver con la integración de Dynamic Media con funciones de OpenAPI.
 
-* Detalles de las aplicaciones de flujo descendente para integrar con Dynamic Media con capacidades de OpenAPI.
+* Detalles de las aplicaciones descendentes que quiere integrar con Dynamic Media con funciones de OpenAPI.
 
   >[!NOTE]
   >
-  Para integrarse con una aplicación que no sea de Adobe, proporcione nombres de dominio a la lista de permitidos donde se aloja la aplicación.
+  Para integrarse con una aplicación que no sea de Adobe, proporcione nombres de dominio de la lista de permitidos donde se aloja la aplicación.
 
-* Detalles de los contactos de cliente clave implicados en el proyecto de integración.
+* Detalles de los contactos de los clientes clave implicados en el proyecto de integración.
 
-* Lista de los miembros del equipo de la cuenta de Adobe clave (correo electrónico).
+* Lista de los miembros clave del equipo de cuentas de Adobe (correo electrónico).
 
-Una vez enviado el vale de soporte, el Adobe permite a Dynamic Media usar las funciones de OpenAPI en el entorno de los Cloud Service y compartir los detalles, como el ID del cliente IMS, para que pueda continuar con la integración.
+Una vez enviado el vale de asistencia, Adobe habilita Dynamic Media con funciones de OpenAPI en el entorno de Cloud Services y comparte los detalles, como el ID del cliente de IMS, para que pueda continuar con la integración.
 
 >[!NOTE]
 >
-Excluya a `/conf/global/settings/dam/assets-configurations/assetdelivery` de cualquier paquete de contenido para evitar la desactivación de Dynamic Media con las capacidades de OpenAPI.
+Excluya a `/conf/global/settings/dam/assets-configurations/assetdelivery` de cualquier paquete de contenido para evitar la desactivación de Dynamic Media con funciones de OpenAPI.
 
 ## Profundizar más en las funcionalidades clave {#learn-more-key-capabilities}
 
@@ -96,20 +96,20 @@ Excluya a `/conf/global/settings/dam/assets-configurations/assetdelivery` de cua
       </a>
    </div>
    <p>
-      <em>Apruebe recursos en AEM Assets para optimizar la administración de recursos, lo que garantiza un proceso controlado y eficiente para administrar recursos.</em>
+      <em>Apruebe recursos en AEM Assets para optimizar la administración de recursos, lo que garantiza un proceso controlado y eficiente de gestión de recursos.</em>
    </p>
 </td>
 <td>
    <a href="/help/assets/integrate-dynamic-media-open-apis.md">
-   <img alt="Integración de AEM Assets con aplicaciones de flujo descendente" src="./assets/asset-selector-integration.png" />
+   <img alt="Integrar AEM Assets con aplicaciones descendentes" src="./assets/asset-selector-integration.png" />
    </a>
    <div>
       <a href="/help/assets/integrate-dynamic-media-open-apis.md">
-      <strong>Integrar AEM Assets con aplicaciones de flujo descendente</strong>
+      <strong>Integrar AEM Assets con aplicaciones descendentes</strong>
       </a>
    </div>
    <p>
-      <em>Integre su propia interfaz de usuario personalizada con el repositorio de Experience Manager Assets mediante las API de búsqueda y envío o use el Selector de recursos de Micro-FrontEnd de Adobe.</em>
+      <em>Integre su propia interfaz de usuario personalizada con el repositorio de Experience Manager Assets mediante las API de búsqueda y entrega o use el Selector de recursos de Micro-Frontend de Adobe.</em>
    </p>
 </td>
 <td>
@@ -141,20 +141,20 @@ Excluya a `/conf/global/settings/dam/assets-configurations/assetdelivery` de cua
       </a>
    </div>
    <p>
-      <em>Busque recursos en el repositorio de AEM Assets para que puedan enviarse a aplicaciones de flujo descendente.</em>
+      <em>Busque recursos en el repositorio de AEM Assets para que puedan enviarse a aplicaciones descendentes.</em>
    </p>
 </td>
 <td>
    <a href="/help/assets/deliver-assets-apis.md">
-   <img alt="Entrega de recursos a aplicaciones posteriores" src="./assets/delivery-url.png" />
+   <img alt="Envío de recursos a aplicaciones descendentes" src="./assets/delivery-url.png" />
    </a>
    <div>
       <a href="/help/assets/deliver-assets-apis.md">
-      <strong>Enviar recursos a aplicaciones de flujo descendente</strong>
+      <strong>Enviar recursos a aplicaciones descendentes</strong>
       </a>
    </div>
    <p>
-      <em>Envíe recursos a aplicaciones de flujo descendente integradas mediante una dirección URL de envío.</em>
+      <em>Envíe recursos a aplicaciones descendentes integradas mediante una dirección URL de entrega.</em>
    </p>
 </td>
 <td>
@@ -163,11 +163,11 @@ Excluya a `/conf/global/settings/dam/assets-configurations/assetdelivery` de cua
    </a>
    <div>
       <a href="/help/assets/restrict-assets-delivery.md">
-      <strong>Restringir el acceso a los recursos del Experience Manager</strong>
+      <strong>Restringir el acceso a los recursos de Experience Manager</strong>
       </a>
    </div>
    <p>
-      <em>: el administrador de DAM o los administradores de marcas restringen el acceso configurando funciones para los recursos aprobados en la instancia de autor de AEM as a Cloud Service.</em>
+      <em>: el administrador de DAM o los directores de marcas restringen el acceso configurando funciones para los recursos aprobados en la instancia de autor de AEM as a Cloud Service.</em>
    </p>
 </td>
 
@@ -179,11 +179,11 @@ Excluya a `/conf/global/settings/dam/assets-configurations/assetdelivery` de cua
    </a>
    <div>
       <a href="/help/assets/integrate-remote-approved-assets-with-sites.md">
-      <strong>Integrar AEM Assets remotos con AEM Sites</strong>
+      <strong>Integración de AEM Assets remoto con AEM Sites</strong>
       </a>
    </div>
    <p>
-      <em>Aprenda a integrar AEM Assets remotos con el entorno de AEM Sites. </em>
+      <em>Aprenda a integrar AEM Assets remoto con el entorno de AEM Sites. </em>
    </p>
 </td>
 <td>
@@ -192,11 +192,11 @@ Excluya a `/conf/global/settings/dam/assets-configurations/assetdelivery` de cua
    </a>
    <div>
       <a href="/help/assets/dynamic-media-open-apis-faqs.md">
-      <strong>Preguntas frecuentes sobre Dynamic Media con capacidades OpenAPI</strong>
+      <strong>Preguntas frecuentes sobre Dynamic Media con funciones de OpenAPI</strong>
       </a>
    </div>
    <p>
-      <em>Obtenga una respuesta a las preguntas más frecuentes sobre Dynamic Media con capacidades OpenAPI.</em>
+      <em>Obtenga una respuesta a las preguntas más frecuentes sobre Dynamic Media con funciones de OpenAPI.</em>
    </p>
 </td>
 <td>
@@ -205,7 +205,7 @@ Excluya a `/conf/global/settings/dam/assets-configurations/assetdelivery` de cua
    </a>
    <div>
       <a href="/help/assets/configure-custom-domain.md">
-      <strong>Configurar dominio personalizado</strong>
+      <strong>Configuración del dominio personalizado</strong>
       </a>
    </div>
    <p>

@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
 workflow-type: tm+mt
 source-wordcount: '5886'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -475,9 +475,9 @@ ht-degree: 96%
    + [Accesibilidad en [!DNL Assets]](/help/assets/accessibility.md)
    + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
    + [Habilitar Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
-   + [Assets as a Cloud Service](/help/assets/assets-prime.md)
-   + [Usuarios de Assets Collaborator](/help/assets/assets-collaborator-users.md)
-   + Administre recursos digitales {#manage}
+   + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
+   + [Usuarios colaboradores de Assets](/help/assets/assets-collaborator-users.md)
+   + Administre los recursos digitales {#manage}
       + Selector de recursos de Micro-Frontend {#asset-selector}
          + [Información general del Selector de recursos](/help/assets/overview-asset-selector.md)
          + Integraciones del Selector de recursos {#asset-selector-integration}
@@ -532,7 +532,7 @@ ht-degree: 96%
       + [Facetas de búsqueda](/help/assets/search-facets.md)
       + [API de HTTP de Assets](/help/assets/mac-api-assets.md)
       + [Compatibilidad con fragmentos de contenido en la API HTTP de Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
-      + [Recursos conectados](/help/assets/use-assets-across-connected-assets-instances.md)
+      + [Recursos de red](/help/assets/use-assets-across-connected-assets-instances.md)
       + [Generación solo para representaciones de colocación](/help/assets/configure-fpo-renditions.md)
       + [Informes de Asset](/help/assets/asset-reports.md)
       + [Metadatos en cascada](/help/assets/cascading-metadata.md)
@@ -655,7 +655,7 @@ ht-degree: 96%
       + [Propiedades del recurso](/help/assets/asset-properties-content-hub.md)
       + [Uso compartido de recursos en Content Hub](/help/assets/share-assets-content-hub.md)
       + [Descarga de recursos mediante Content Hub](/help/assets/download-assets-content-hub.md)
-      + [Administración de Assets con licencia en Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md)
+      + [Administración de recursos con licencia en Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md)
       + [Administración de colecciones en Content Hub](/help/assets/collections-content-hub.md)
       + [Edición de imágenes con Adobe Express en Content Hub](/help/assets/edit-images-content-hub.md)
       + [Perspectivas de recursos en Content Hub](/help/assets/insights-content-hub.md)
@@ -1043,7 +1043,7 @@ ht-degree: 96%
          + [Editor de Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=es)
       + [Árbol de estructura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=es)
       + [Vista previa de JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=es)
-   + [AEM API de para la entrega y administración de contenido estructurado](/help/headless/apis-headless-and-content-fragments.md)
+   + [API de AEM para la entrega y administración de contenido estructurado](/help/headless/apis-headless-and-content-fragments.md)
    + API de GraphQL {#graphql-api}
       + [API de GraphQL para fragmentos de contenido](/help/headless/graphql-api/content-fragments.md)
       + [Administración de puntos de conexión de GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
@@ -1054,7 +1054,7 @@ ht-degree: 96%
       + [Actualización de los fragmentos de contenido para referencias de UUID](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [Ejemplos de consultas de GraphQL](/help/headless/graphql-api/sample-queries.md)
       + [Resolución de problemas de consultas de GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [AEM API abierta de REST para la entrega de fragmentos de contenido](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+   + [REST OpenAPI de AEM para la entrega de fragmentos de contenido](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
    + [OpenAPI de fragmentos de contenido y modelos](/help/headless/content-fragment-openapis.md)
    + [Compatibilidad con fragmentos de contenido en la API HTTP de Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=es)
    + Seguridad {#security}
@@ -1160,7 +1160,7 @@ ht-degree: 96%
          + [Introducción a Edge Delivery Services en Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Añadir un sitio de Edge Delivery a Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
          + [Configuración de la validación push para un sitio de Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
-         + [Compatibilidad con sitios de Edge Delivery en Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
+         + [Administración de sitios de Edge Delivery en Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + Configuración del dominio {#custom-domain-names}
          + [Introducción a la configuración de dominios](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [Añadir un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
