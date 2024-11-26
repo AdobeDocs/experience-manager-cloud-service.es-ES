@@ -4,9 +4,9 @@ description: Aprenda a crear bloques instrumentados para utilizarlos con el edit
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 487d918059e85e3f5dd19d2248b3a8365da41dee
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1428'
 ht-degree: 97%
 
 ---
@@ -328,8 +328,6 @@ Añadiendo una propiedad `classes` al bloque, la propiedad se representa en el e
 Esta guía le indica que se ha comprometido directamente con la rama `main` en aras de la simplicidad. Para la experimentación en un repositorio de muestra, esto no suele ser un problema. Para el trabajo real del proyecto, [debe seguir las prácticas recomendadas de desarrollo](https://www.aem.live/docs/dev-collab-and-good-practices) desarrollando en una rama diferente y revisando todos los cambios mediante una solicitud de extracción antes de combinar en `main`.
 
 Cuando no esté desarrollando en la rama `main`, puede anexar `?ref=<branch>` en la barra de ubicación del Editor universal para cargar la página desde la rama. `<branch>` es el nombre de la rama que se usaría para la vista previa del proyecto o las URL activas, p. ej. `https://<branch>--<repo>--<owner>.hlx.page`.
-
-La publicación de contenido con un nuevo modelo solo se admite cuando el modelo se combina con la rama `main`.
 
 ## Reutilización de bloques para la creación basada en documentos {#reusing-blocks}
 
