@@ -3,9 +3,10 @@ title: Notas de la versión 2024.10.0 de la versión de  [!DNL Adobe Experience 
 description: Notas de la versión 2024.10.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 941d544a983ac4ad9b82c82edf3b68c964267e9c
+exl-id: 7a63f04f-10f0-4879-bd06-4182bb288a9b
+source-git-commit: c3beecaab03c3721ad2fb70658a335d17f9a66d0
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1664'
 ht-degree: 100%
 
 ---
@@ -32,13 +33,11 @@ La fecha de la versión de [!DNL Adobe Experience Manager] como versión de func
 
 Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help/release-notes/maintenance/latest.md).
 
-<!-- ## Release Video {#release-video}
+## Vídeo de la versión {#release-video}
 
-Have a look at the October 2024 Release Overview video for a summary of the features added in the 2024.10.0 release:
+Eche un vistazo al vídeo Información general sobre la versión de octubre de 2024 para ver un resumen de las funcionalidades añadidas en la versión 2024.10.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3434847?quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3440501?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
