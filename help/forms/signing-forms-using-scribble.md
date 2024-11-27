@@ -7,10 +7,10 @@ topic-tags: author
 feature: Adaptive Forms, Foundation Components
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: ad28fd933a85c8b5ba1cdad4927f0a0a45ad478d
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 100%
+source-wordcount: '1318'
+ht-degree: 74%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 | AEM as a Cloud Service | Este artículo |
 
 
-Puede usar los componentes **Firma manuscrita** y **Paso de firma** para dibujar la firma (manuscrita) en un formulario adaptable. El componente Paso de firma muestra una versión PDF del formulario adaptable. Para utilizar el componente Paso de firma, necesita activar la opción Documento de registro o un formulario adaptable basado en una plantilla de formulario.
+Puede usar el componente **Firma manuscrita** para dibujar la firma (manuscrita) en un formulario adaptable. <!-- The Signature step component displays a PDF version of the Adaptive Form. You require a Document of Record option enabled or form template based Adaptive Forms to use the Signature step component. -->
 
 ![Cuadro de diálogo Firma manuscrita](assets/scribble-signature.png)
 
@@ -55,50 +55,89 @@ Puede seleccionar el icono **Configurar** ![configurar](assets/configure.png) p
 
 ## Configuración de un formulario adaptable para utilizar una firma manuscrita {#configure-an-adaptive-form-to-use-scribble-signature}
 
-1. Active la opción Documento de registro o utilice un formulario adaptable basado en una plantilla de formulario. Para obtener información paso a paso, consulte [Crear un formulario adaptable](creating-adaptive-form.md).
+1. Abra un formulario adaptable en modo de edición.
 1. Arrastre y coloque el componente **Firma manuscrita** desde el Explorador de componentes al formulario adaptable.
-1. Seleccione el icono **Configurar** ![configurar](assets/configure.png). Se abrirá el explorador de propiedades, donde verá las propiedades del componente Firma manuscrita. Configure las propiedades del componente Firma manuscrita.
-1. Arrastre y coloque el componente Paso de firma desde el Explorador de componentes al formulario adaptable.
+1. Seleccione el icono **Configurar** ![configurar](assets/configure.png). Se abrirá el explorador de propiedades, donde verá las propiedades del componente Firma manuscrita. [Configure las propiedades de la firma manuscrita](#properties-of-scribble-signature-component) tal como se describe en la siguiente sección.
 
-   >[!NOTE]
-   >
-   >El componente Paso de firma ocupa el ancho completo disponible en el formulario. Se recomienda no colocar ningún otro componente en la sección que contiene el componente Paso de firma.
+   ![Firma manuscrita](/help/forms/assets/scribblesig.png)
 
-1. En el explorador de contenido, seleccione **Contenedor de formulario** y seleccione el icono **Configurar** ![configurar](assets/configure.png). Se abrirá el explorador de propiedades, donde verá las propiedades del contenedor de formularios adaptables. Vaya a **Contenedor de formulario adaptable** > **Firma electrónica** y deseleccione la opción **Habilitar Adobe Sign**. Seleccione el icono Listo ![aem_forms_save](assets/aem_forms_save.png) para guardar los cambios.
+1. Seleccione el icono Listo ![aem_forms_save](assets/aem_forms_save.png) para guardar los cambios. La firma se ha configurado correctamente.
 
-   >[!NOTE]
-   >
-   >Cuando se agrega un componente Paso de firma a un formulario adaptable, la opción Habilitar Adobe Sign se selecciona automáticamente.
+## Configurar propiedades del componente Firma manuscrita
 
-1. Seleccione el icono **Configurar** ![configurar](assets/configure.png). Se abrirá el explorador de propiedades, donde verá las propiedades del Paso de firma. Configure las siguientes propiedades:
+Puede personalizar fácilmente el componente Firma manuscrita para los visitantes con el Cuadro de diálogo de configuración.
 
-   * **Nombre del elemento**: especifique el nombre del componente.
+### Pestaña Básicos
 
-   * **Título:** especifique un título único para el componente.
-   * **Mensaje de plantilla:** especifique el mensaje que se mostrará mientras se carga el PDF de firma. Los servicios de Adobe Sign tardan algún tiempo en preparar y cargar el PDF de firma.
-   * **Servicio de firma:** selecciona la opción **Firma manuscrita**.
+![Pestaña Básicos](/help/forms/assets/scribblesig-basic.png)
 
-   * **Clase CSS**: especifique la clase CSS de la biblioteca de cliente, si la hay. Adobe recomienda utilizar [temas](themes.md) y [estilos en línea](inline-style-adaptive-forms.md) en lugar de la clase CSS.
+* **Nombre**: puede identificar fácilmente un componente de formulario con su nombre único tanto en el formulario como en el editor de reglas, pero el nombre no debe contener espacios ni caracteres especiales.
 
-   Seleccione el icono Listo ![aem_forms_save](assets/aem_forms_save.png) para guardar los cambios. La firma se ha configurado correctamente.
+* **Título**: con su título, puede identificar fácilmente un componente en un formulario y, de forma predeterminada, el título aparece sobre el componente. Si no agrega un título, se mostrará el nombre del componente en lugar del texto del título.
 
-   Ahora, al rellenar un formulario, se muestra una versión PDF del formulario adaptable y se proporcionan las opciones para firmar el documento PDF. Para obtener información detallada, consulte [Firmar un formulario adaptable con una firma manuscrita](signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
+* **Permitir texto enriquecido en el título**: esta función permite a los usuarios dar formato a los títulos de texto sin formato, incorporando funciones como negrita, cursiva, texto subrayado, varias fuentes, tamaños de fuente, colores y opciones adicionales para mejorar la presentación visual y la personalización. Ofrece una mayor flexibilidad y control creativo para hacer que los títulos destaquen dentro de los documentos, sitios web o aplicaciones.\
+  Al seleccionar la casilla de verificación de **Permitir texto enriquecido en el título**, las opciones de formato se vuelven visibles para aplicar estilo al título del componente. Para acceder a todas las opciones de formato disponibles, puede hacer clic en la pestaña ![Icono de pantalla completa](/help/forms/assets/fullscreen-icon.png).
 
-## Firmar un formulario adaptable con una firma manuscrita {#sign-an-adaptive-form-using-scribble-signature}
+  ![Compatibilidad del texto enriquecido](/help/forms/assets/richtext-support-title.png)
 
-1. Después de rellenar un formulario adaptable y llegar a la página Paso de firma, se muestra la pantalla de firma.
+* **Ocultar título**: seleccione la opción para ocultar el título del componente.
+* **Campo obligatorio**: seleccione la opción para que el campo sea obligatorio.
+* **Mensaje de campo obligatorio** - **Mensaje de campo obligatorio** es un mensaje personalizable que se muestra a los usuarios cuando intentan enviar un formulario sin rellenar un campo obligatorio.
+* **Referencia de enlace del modelo de datos**: una referencia de enlace es una referencia a un elemento de datos almacenado en una fuente de datos externa y utilizado en un formulario. La referencia de enlace permite enlazar datos de forma dinámica a campos de formulario, de modo que el formulario pueda mostrar los datos más actualizados de la fuente de datos. Por ejemplo, se puede utilizar una referencia de enlace para mostrar el nombre y la dirección de un cliente en un formulario, según el ID introducido en el formulario por el cliente. La referencia de enlace también se puede utilizar para actualizar la fuente de datos con los datos del formulario. De este modo, AEM Forms permite crear formularios que interactúen con fuentes de datos externas, lo que proporciona al usuario una experiencia óptima para recopilar y administrar datos.
+* **Ocultar objeto**: seleccione la opción para ocultar el componente del formulario. El componente permanece accesible para otros fines, como utilizarlo para los cálculos en el Editor de reglas. Esto resulta útil cuando necesita almacenar información que el usuario no necesita ver o cambiar directamente.
+* **Deshabilitar objeto**: seleccione la opción para deshabilitar el componente. El componente desactivado no está activo ni puede editarlo el usuario final. El usuario puede ver el valor del campo, pero no modificarlo. El componente permanece accesible para otros fines, como utilizarlo para los cálculos en el Editor de reglas.
+* **Proporción de aspecto**: la proporción de aspecto de un componente de firma manuscrita define la relación proporcional entre su anchura y altura.
+* **Diseño de campo**: la opción **Diseño de campo** determina cómo se colocan los elementos de formulario, incluidas las etiquetas (títulos) y los mensajes de error, en relación con el componente. **Pie de ilustración y error como parte superior del widget** coloca el pie de ilustración (etiqueta) del campo y los mensajes de error sobre el componente. **Heredar de la configuración del formulario adaptable** utiliza la configuración predeterminada de diseño de campo especificada en la configuración del formulario adaptable.
+* **Clase CSS**: la **clase CSS** le permite aplicar estilos personalizados a un componente al asignar una o más clases CSS definidas en su hoja de estilos. Permite aplicar un estilo y una personalización del diseño coherentes en todo el formulario adaptable.
 
-   ![Pantalla de firma de la página EchoSign](assets/esignscribblesign.jpg)
+### Contenido de Ayuda
 
-1. Haga clic en **[!UICONTROL Firmar]**. Aparecerá el cuadro de diálogo Firma manuscrita. Firme el formulario y haga clic en el icono Listo ![aem_forms_save](assets/aem_forms_save.png) para guardar la firma.
+![Pestaña Contenido de ayuda](/help/forms/assets/scribblesig-help.png)
 
-   ![Cuadro de diálogo Firma manuscrita](assets/scribblewidget.png)
+* **Descripción breve**: una descripción breve es una explicación de texto corta que proporciona información adicional o aclaraciones acerca del propósito de un campo de formulario específico. Ayuda al usuario a comprender qué tipo de datos se deben escribir en el campo y puede proporcionar directrices o ejemplos para garantizar que la información introducida sea válida y cumpla los criterios deseados. De forma predeterminada, las descripciones cortas permanecen ocultas. Active la opción **Mostrar siempre una descripción breve** para mostrarla debajo del componente.
 
-1. Haga clic en Completar para finalizar el proceso de firma.
+* **Mostrar siempre una descripción breve**: active la opción para mostrar la descripción breve debajo del componente.
 
-   ![Completar el proceso de firma](assets/scribblecomplete.jpg)
+* **Descripción larga**: hace referencia a información o instrucciones adicionales que se proporcionan al usuario para ayudarle a rellenar correctamente un campo de formulario. Aparece cuando el usuario hace clic en el icono de ayuda (i) situado junto al componente. Proporciona información más detallada que la etiqueta de un campo de formulario o el texto de marcador de posición, y está diseñado para ayudar al usuario a comprender los requisitos o restricciones del campo. También puede ofrecer sugerencias o ejemplos para que el formulario sea más fácil y preciso.
 
-Las firmas se agregan al formulario y el control de formulario pasa al siguiente panel.
+### Pestaña Accesibilidad {#accessibility}
+
+![Pestaña Accesibilidad](/help/forms/assets/scribblesig-acc.png)
+
+En la pestaña **Accesibilidad**, se pueden configurar valores para las etiquetas de [Accesibilidad ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) del componente. Hay varias opciones disponibles para usar el texto del lector de pantalla:
+
+* **Prioridad de Reader de pantalla**: la prioridad de Reader de pantalla se refiere a texto adicional que está específicamente destinado a ser leído por tecnologías de asistencia, como lectores de pantalla, que utilizan personas con problemas de visión. Este texto proporciona una descripción del audio del propósito del campo de formulario y puede incluir información sobre el título, la descripción, el nombre y cualquier mensaje relevante (texto personalizado) del campo. El texto del lector de pantalla ayuda a garantizar que el formulario sea accesible para todos los usuarios, incluidos los que tengan deficiencias visuales, y les ofrezca una comprensión completa del campo del formulario y de sus requisitos.
+
+   * **Texto personalizado**: seleccione esta opción para utilizar el texto personalizado para las etiquetas de accesibilidad de ARIA. Al seleccionar esta opción, aparece el cuadro de diálogo Texto personalizado. Puede agregar información relevante en el cuadro de diálogo Texto personalizado.
+   * **Descripción breve**: seleccione esta opción para usar la descripción de las etiquetas de accesibilidad ARIA.
+   * **Título**: seleccione esta opción para utilizar el título para las etiquetas de accesibilidad de ARIA.
+   * **Nombre**: seleccione esta opción para utilizar el nombre para las etiquetas de accesibilidad de ARIA.
+   * **Ninguno**: seleccione esta opción si no desea agregar etiquetas de accesibilidad de ARIA.
+
+<!--
+
+ * **Element Name**: Specify name of the component.
+
+    * **Title:** Specify unique title of the component.
+    * **Template message:** Specify the message to be displayed while the signature PDF is being loaded. Adobe Sign services take some time to prepare and load signature PDF.
+    * **Signing Service:** Select the **Scribble Signature** option.
+
+    * **CSS Class**: Specify CSS class of the client library, if any. Adobe recommends using [themes](themes.md) and [in-line styles](inline-style-adaptive-forms.md) instead of CSS Class.
+## Sign an Adaptive Form using Scribble Signature {#sign-an-adaptive-form-using-scribble-signature}
+
+1. After you fill an Adaptive Form and reach the Signature Step page, the signature screen is displayed.
+
+   ![Signature screen for EchoSign page](assets/esignscribblesign.jpg)
+
+1. Click **[!UICONTROL Sign]**. The scribble sign dialog appears. Sign the form and click the Done ![aem_forms_save](assets/aem_forms_save.png) icon to save the signature.
+
+   ![Scribble sign dialog](assets/scribblewidget.png)
+
+1. Click complete to finish the signing process.
+
+   ![Complete the signing process](assets/scribblecomplete.jpg)
+
+The signatures are added to the form and the form control moves to the next panel. -->
 
 ## Consulte también {#see-also}
 
