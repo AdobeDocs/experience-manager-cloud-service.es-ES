@@ -3,9 +3,9 @@ title: API de envío
 description: Aprenda a utilizar las API de entrega.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 7727aa87693cc96e3497dcda71190866b198975d
+source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '627'
 ht-degree: 6%
 
 ---
@@ -44,7 +44,8 @@ La siguiente tabla ilustra el uso de las distintas API de envío disponibles:
 
 >[!NOTE]
 >
-Hay [ajustes preestablecidos de imagen, imágenes inteligentes y modificadores de imagen adicionales](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) disponibles como característica de disponibilidad limitada. Para obtener acceso, [cree y envíe un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
+* Hay [ajustes preestablecidos de imagen, imágenes inteligentes y modificadores de imagen adicionales](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) disponibles como característica de disponibilidad limitada. Para obtener acceso, [cree y envíe un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
+* El recorte inteligente no está disponible con [Assets Prime](/help/assets/assets-ultimate-overview.md).
 
 ## Extremos de API de envío {#delivery-apis-endpoint}
 

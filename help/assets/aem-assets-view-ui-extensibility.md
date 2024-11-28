@@ -4,9 +4,9 @@ description: Obtenga información acerca de la capacidad de extensibilidad de la
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: af7e6ab40212dfa3d91cda80a76b1b6b01dd65a3
+source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '589'
 ht-degree: 3%
 
 ---
@@ -39,7 +39,7 @@ En la vista Assets, vaya a la página Detalles de un recurso, una carpeta o una 
 ## Requisitos previos para añadir el componente de extensibilidad
 
 * [Acceso a la vista de Assets](#1).
-* Acceso al [generador de aplicaciones de Adobe](https://developer.adobe.com/app-builder/docs/overview/), que está incluido en [Assets Ultimate](/help/assets/assets-ultimate-overview.md) de forma predeterminada.
+* Acceso al [generador de aplicaciones de Adobe](https://developer.adobe.com/app-builder/docs/overview/).
 * Con derecho a desarrollador de la función Administrador del sistema dentro de la organización. Consulte [this](https://developer.adobe.com/uix/docs/guides/get-access/) para obtener más información.
 * La herramienta de línea de comandos de Adobe IO (AIO CLI) debe estar instalada en los equipos locales. Esta herramienta es esencial para crear e implementar proyectos de extensión. Consulte [this](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up) para obtener más información.
 * Buen conocimiento de las tecnologías JavaScript, Node.js y React.
