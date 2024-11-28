@@ -1,16 +1,16 @@
 ---
-title: Propiedades del recurso en  [!DNL the Content Hub]
-description: Obtenga información sobre cómo ver y administrar propiedades de recursos en  [!DNL Content Hub]
+title: Vista previa del recurso y sus propiedades en  [!DNL the Content Hub]
+description: Obtenga información sobre cómo obtener una vista previa de recursos y propiedades en  [!DNL Content Hub]
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 2be8d61f1f00444f01772515760d15f2a6f81cd9
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 11%
+source-wordcount: '682'
+ht-degree: 10%
 
 ---
 
-# Administración de propiedades de recursos en Content Hub {#asset-properties}
+# Vista previa del recurso y sus propiedades en Content Hub {#asset-properties}
 
 | [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación de desarrollador de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
@@ -25,17 +25,17 @@ ht-degree: 11%
 
 [!DNL The Content Hub] le permite ver información sobre el recurso que es crítica para una distribución eficiente de los recursos. Es la recopilación de todos los datos disponibles para un recurso.
 
-La visualización de las propiedades de los recursos le ayuda a categorizar los recursos y resulta útil a medida que aumenta la cantidad de información digital. Es posible administrar algunos cientos de archivos basados únicamente en los nombres de archivo, miniaturas y memoria. Sin embargo, este enfoque no es escalable cuando aumenta el número de personas involucradas y el número de recursos administrados. Además, el valor de un recurso digital aumenta a medida que este se convierte en lo siguiente:
+La visualización de la vista previa de recursos y sus propiedades le ayuda a categorizar los recursos y resulta útil a medida que aumenta la cantidad de información digital. Es posible administrar algunos cientos de archivos basados únicamente en los nombres de archivo, miniaturas y memoria. Sin embargo, este enfoque no es escalable cuando aumenta el número de personas involucradas y el número de recursos administrados. Además, el valor de un recurso digital aumenta a medida que este se convierte en lo siguiente:
 
 * Más accesible: los sistemas y los usuarios pueden encontrarlo fácilmente.
-* Más fácil de administrar: puede encontrar recursos con el mismo conjunto de propiedades fácilmente y aplicarles cambios.
+* Más fácil de actuar: tiene información completa sobre los elementos visuales de los recursos e información relacionada, para poder actuar en ellos más rápido y con más confianza.
 * Completado: el recurso lleva más información y contexto.
 
 ## Requisitos previos {#prerequisites}
 
 [Usuarios de Content Hub](deploy-content-hub.md#onboard-content-hub-users) pueden realizar las acciones mencionadas en este artículo.
 
-## Ver las propiedades de un recurso {#properties-ui}
+## Previsualizar el recurso y sus propiedades {#properties-ui}
 
 Antes de usar, compartir o descargar un recurso, puede verlo más de cerca. La función de vista previa permite ver no solo las imágenes, sino también algunos otros tipos de recursos admitidos. No solo puede ver el recurso, sino también ver su información detallada y realizar otras acciones. Para ver información de un recurso, navegue hasta él o [busque](search-assets.md) el recurso y, a continuación, haga clic en él para abrir sus propiedades. En la siguiente figura se muestran los campos disponibles en una página de propiedades de recurso:
 
@@ -54,9 +54,9 @@ Antes de usar, compartir o descargar un recurso, puede verlo más de cerca. La f
 * **K:** Cerrar pantalla de vista previa
 * **L:** información de un recurso que incluye título, formato, tamaño, resolución, etiquetas, etiquetas de color y etiquetas inteligentes.
 
-## Formatos compatibles {#supported-formats}
+## Formatos de recurso admitidos {#supported-formats}
 
-En la tabla siguiente se muestran los formatos de archivo admitidos en [!DNL the Content Hub]:
+[!DNL Content Hub] admite todos los tipos de recursos y formatos que admite el repositorio [!DNL Assets] subyacente. En la tabla siguiente se enumeran los formatos de archivo clave de [!DNL the Content Hub], que proporcionan compatibilidad adicional para obtener una vista previa de los recursos visualmente:
 
 <table> 
     <tbody>
@@ -104,15 +104,15 @@ En la tabla siguiente se muestran los formatos de archivo admitidos en [!DNL the
     </tbody>
    </table>
 
-### Propiedades derivadas después de cargar un recurso {#derived-properties}
+### Propiedades derivadas {#derived-properties}
 
-Una vez cargado un recurso, Content Hub obtiene algunas propiedades que se generan automáticamente. A continuación se muestra una lista de algunos de ellos:
+Algunas propiedades de los recursos mostrados en [!DNL Content Hub] se derivan o se generan automáticamente cuando los recursos se cargan en [!DNL Assets] y se aprueban para su disponibilidad en [!DNL Content Hub]. A continuación se muestra una lista de algunos de ellos:
 
-* **Tamaño:** El tamaño muestra el valor lógico de un recurso según sus dimensiones. Aclara el espacio que un recurso está ocupando en un repositorio. [!DNL The Content Hub] admite recursos de hasta 2 GB.
+* **Tamaño:** El tamaño representa el tamaño del binario de recursos almacenado en el repositorio subyacente.
 
 <!--* **Tags:** Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. -->
 
-* **Etiquetas inteligentes:** [!DNL The Content Hub] utiliza los servicios de contenido inteligente de Adobe Sensei para entrenar recursos mediante el algoritmo de reconocimiento en la estructura basada en etiquetas. A continuación, esta inteligencia de contenido se utiliza para aplicar las etiquetas relevantes a un conjunto diferente de recursos. Las etiquetas inteligentes aumentan la velocidad del contenido de los proyectos al ayudarle a encontrar recursos relevantes rápidamente. Las etiquetas inteligentes son un ejemplo de información de recursos que no está contenida en la imagen. [!DNL The Content Hub] aplica automáticamente las etiquetas inteligentes a los recursos, de manera predeterminada.
+* **Etiquetas inteligentes:** [!DNL The Content Hub] utiliza los servicios de contenido inteligente de Adobe Sensei para entrenar recursos mediante el algoritmo de reconocimiento en la estructura basada en etiquetas. A continuación, esta inteligencia de contenido se utiliza para aplicar las etiquetas relevantes a un conjunto diferente de recursos. Las etiquetas inteligentes aumentan la velocidad del contenido de los proyectos al ayudarle a encontrar recursos relevantes rápidamente. Las etiquetas inteligentes son un ejemplo de información de recursos que no está contenida en la imagen. [!DNL Experience Manager Assets] aplica automáticamente las etiquetas inteligentes a los recursos, de manera predeterminada.
 
 * **Etiquetas de color:** [Las etiquetas de color](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) le ayudan a reconocer un recurso mediante colores que se identifican automáticamente en un recurso mediante las capacidades de IA de Sensei de Adobe.
 
@@ -126,7 +126,10 @@ Una vez cargado un recurso, Content Hub obtiene algunas propiedades que se gener
 
 También hay propiedades que se especifican al agregar recursos a Content Hub. Para obtener más información, consulte [Agregar recursos aprobados por la marca a Content Hub](upload-brand-approved-assets.md). Estas propiedades también se muestran en la página de propiedades del recurso.
 
-Los administradores también pueden configurar las propiedades que se muestran para cada recurso. Para obtener más información, consulte [Configuración de la interfaz de usuario de Content Hub](configure-content-hub-ui-options.md#configure-asset-details-content-hub).
+Los administradores también pueden configurar las propiedades, que se muestran para cada recurso:
+
+* En la interfaz de usuario de vista previa de recursos: consulte [Configuración de la interfaz de usuario de Content Hub](configure-content-hub-ui-options.md#configure-asset-details-content-hub).
+* En tarjetas de recursos en resultados de búsqueda o colecciones: consulte [Configuración de la interfaz de usuario de Content Hub](configure-content-hub-ui-options.md#asset-card).
 
 <!--
 
