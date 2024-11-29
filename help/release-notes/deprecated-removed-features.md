@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 1ff3a9a0ff6b408794956323f12194f136d6b2ad
 workflow-type: tm+mt
 source-wordcount: '2800'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
@@ -39,13 +39,13 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 | [!DNL Sites] | Propiedades de Fragmentos de experiencias para **Estado de los medios sociales**. | La función se eliminará próximamente. |
 | [!DNL Sites] | Fragmentos de contenido simples basados en plantillas. | [Fragmentos de contenido estructurados basados en modelos](/help/assets/content-fragments/content-fragments-models.md) ahora. |
 | [!DNL Assets] | `DAM Asset Update` flujo de trabajo para procesar imágenes grabadas. | Ahora, el consumo de recursos utiliza [los microservicios](/help/assets/asset-microservices-overview.md) de recursos. |
-| [!DNL Assets] | Cargar recursos directamente en [!DNL Experience Manager].  Consulte [API de carga de recursos en desuso](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Utilice la [carga binaria directa](/help/assets/add-assets.md). Para obtener más información técnica, consulte [API de carga directa](/help/assets/developer-reference-material-apis.md#upload-binary). |
+| [!DNL Assets] | Cargar recursos directamente en [!DNL Experience Manager]. Consulte [API de carga de recursos en desuso](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Utilice la [carga binaria directa](/help/assets/add-assets.md). Para obtener más información técnica, consulte [API de carga directa](/help/assets/developer-reference-material-apis.md#upload-binary). |
 | [!DNL Assets] | No se admiten [determinados pasos](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) en el flujo de trabajo `DAM Asset Update`, incluida la llamada a herramientas de línea de comandos como [!DNL ImageMagick]. | [Los microservicios de recursos](/help/assets/asset-microservices-overview.md) sustituyen a muchos flujos de trabajo. Para el procesamiento personalizado, utilice [flujos de trabajo posteriores al procesamiento](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | FFmpeg transcodificar vídeos. | Para la generación de miniaturas de FFmpeg, use los [microservicios de Asset](/help/assets/asset-microservices-overview.md). Para la transcodificación FFmpeg, utilice [Dynamic Media](/help/assets/manage-video-assets.md). |
-| [!DNL Foundation] | IU de replicación de árbol en la pestaña Distribuir del agente de replicación (eliminación después del 30 de septiembre de 2021) | [Administrar publicación](/help/operations/replication.md#manage-publication) o [Paso de flujo de trabajo de activación de árbol](/help/operations/replication.md#tree-activation) enfoques. |
-| [!DNL Foundation] | Ni la pestaña Distribuir de la pantalla del administrador del agente de replicación ni la API de replicación pueden utilizarse para replicar paquetes de contenido de más de 10 MB. | [Administrar publicación](/help/operations/replication.md#manage-publication) o [Paso de flujo de trabajo de activación de árbol](/help/operations/replication.md#tree-activation) |
+| [!DNL Foundation] | IU de replicación de árbol en la pestaña Distribuir del agente de replicación (eliminación después del 30 de septiembre de 2021) | Enfoques [Administrar publicación](/help/operations/replication.md#manage-publication) o [Paso de flujo de trabajo de activación de árbol](/help/operations/replication.md#tree-activation). |
+| [!DNL Foundation] | No se pueden utilizar ni la pestaña Distribuir de la pantalla del administrador del agente de replicación ni la API de replicación para replicar paquetes de contenido de más de 10 MB.  | [Administrar publicación](/help/operations/replication.md#manage-publication) o [Paso de flujo de trabajo de activación de árbol](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation] | Las integraciones que utilizan credenciales generadas a partir de proyectos de Adobe Developer Console perderán gradualmente la compatibilidad con las credenciales de la cuenta de servicio (JWT). No se pueden crear nuevas credenciales de cuenta de servicio (JWT) enAdobe Developer Console a partir del 1 de mayo de 2024, aunque las credenciales de cuenta de servicio (JWT) existentes se pueden seguir utilizando para integraciones ya configuradas hasta el 1 de enero de 2025, momento en el que las credenciales de cuenta de servicio (JWT) existentes dejarán de funcionar y los clientes deberán migrar a las credenciales de servidor a servidor de OAuth. [Más información](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrar](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) a las credenciales de servidor a servidor de OAuth. |
-| [!DNL Foundation] | Flujo de trabajo del árbol de contenido de Publish y el paso relacionado del flujo de trabajo del árbol de contenido de Publish, que se utilizaba para replicaciones de jerarquías de contenido. | Utilice [Paso del flujo de trabajo de activación de árbol](/help/operations/replication.md#tree-activation), que es más eficaz. |
+| [!DNL Foundation] | Flujo de trabajo Publicar árbol de contenido y el paso de flujo de trabajo Publicar árbol de contenido relacionado, que se utilizaba para replicaciones de jerarquías de contenido. | Utilizar [Paso del flujo de trabajo de activación de árbol](/help/operations/replication.md#tree-activation), que es más eficaz. |
 
 
 ## Funciones eliminadas {#removed-features}
@@ -274,7 +274,7 @@ A continuación se incluye una lista detallada de las API de AEM en desuso y su 
   </tr>
   <tr>
     <td>org.slf4j.event    </td>
-    <td>Esta API slf4j interna no es compatible con AEM as a Cloud Service.</td>
+    <td>Esta API slf4j interna no es compatible con AEM as a Cloud Service</td>
     <td>11/4/2022</td>
     <td>30/8/2024</td>
   </tr>
@@ -367,7 +367,7 @@ Las dos listas siguientes reflejan la superficie de configuración de AEM as a C
 
 Si la configuración de OSGI no aparece en la lista, puede configurarse mediante el código de cliente.
 
-Estas reglas se validan durante el proceso de compilación de Cloud Manager.  Con el tiempo se pueden añadir reglas adicionales y la fecha de aplicación esperada se indica en la tabla. Se espera que los clientes cumplan estas reglas en la fecha objetivo de aplicación. Si no se respetan las reglas después de la fecha de eliminación, se generarán errores en el proceso de generación de Cloud Manager. Los proyectos de Maven deben incluir [el complemento Maven AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=es) para marcar los errores de configuración de OSGI durante el desarrollo local del SDK.
+Estas reglas se validan durante el proceso de compilación de Cloud Manager. Con el tiempo se pueden añadir reglas adicionales y la fecha de aplicación esperada se indica en la tabla. Se espera que los clientes cumplan estas reglas en la fecha objetivo de aplicación. Si no se respetan las reglas después de la fecha de eliminación, se generarán errores en el proceso de generación de Cloud Manager. Los proyectos de Maven deben incluir [el complemento Maven AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=es) para marcar los errores de configuración de OSGI durante el desarrollo local del SDK.
 
 Puede encontrar información adicional sobre la configuración de OSGI en [esta ubicación](/help/implementing/deploying/configuring-osgi.md).
 
@@ -529,15 +529,15 @@ Actualice el uso de bnd-maven-plugin a la versión 6.4.0 para garantizar la comp
 
 #### Versión mínima de aemanalyser-maven-plugin {#aemanalyser-maven-plugin}
 
-Actualice el uso del complemento aemanalyser-maven-plugin a la versión 1.6.6 o superior para garantizar la compatibilidad con los tiempos de ejecución de JVM más recientes.
+Actualice el uso de aemanalyser-maven-plugin a la versión 1.6.6 o superior para garantizar la compatibilidad con los tiempos de ejecución de JVM más recientes.
 
 #### Versión mínima de maven-bundle-plugin  {#maven-bundle-plugin}
 
-Actualice el uso del complemento maven-bundle-plugin a la versión 5.1.5 o superior para garantizar la compatibilidad con los tiempos de ejecución de JVM más recientes.
+Actualice el uso de maven-bundle-plugin a la versión 5.1.5 o superior para garantizar la compatibilidad con los tiempos de ejecución de JVM más recientes.
 
 #### Actualizar dependencias en maven-scr-plugin  {#maven-scr-plugin}
 
-`maven-scr-plugin` no es directamente compatible con Java 17 y 21. Sin embargo, es posible generar los archivos descriptor actualizando la versión de dependencia de ASM en la configuración del complemento, de forma similar al siguiente fragmento:
+`maven-scr-plugin` no es directamente compatible con Java 17 y 21. Sin embargo, es posible generar los archivos descriptores actualizando la versión de dependencia de ASM dentro de la configuración del complemento, de forma similar al siguiente fragmento:
 
 ```
 [source,xml]
