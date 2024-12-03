@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
+source-git-commit: 47ee6803146acd93ed62b7eef1419d52f870ae90
 workflow-type: tm+mt
-source-wordcount: '5886'
-ht-degree: 97%
+source-wordcount: '5890'
+ht-degree: 100%
 
 ---
 
@@ -205,6 +205,7 @@ ht-degree: 97%
    + Notas de la versión del editor universal {#univeral-editor}
       + [Notas de la versión actual del editor universal](/help/release-notes/universal-editor/current.md)
       + 2024 {#2024}
+         + [Notas de la versión 2024.11.13](/help/release-notes/universal-editor/2024/2024-11-13.md)
          + [Notas de la versión 2024.11.05](/help/release-notes/universal-editor/2024/2024-11-05.md)
          + [Notas de la versión 2024.10.29](/help/release-notes/universal-editor/2024/2024-10-29.md)
          + [Notas de la versión 2024.09.27](/help/release-notes/universal-editor/2024/2024-09-27.md)
@@ -644,7 +645,7 @@ ht-degree: 97%
       + [Administrar etiquetas](/help/assets/tagging-management-assets-view.md)
       + [Credenciales de contenido](/help/assets/content-credentials.md)
       + [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
-      + [AEM Assets Ver extensibilidad de IU](/help/assets/aem-assets-view-ui-extensibility.md)
+      + [Extensibilidad de la IU de la vista de AEM Assets](/help/assets/aem-assets-view-ui-extensibility.md)
    + Centro de contenido {#content-hub}
       + [Información general](/help/assets/product-overview.md)
       + [Implementación de Content Hub](/help/assets/deploy-content-hub.md)
@@ -720,11 +721,11 @@ ht-degree: 97%
          + [Trabajo con el modelo de datos de formulario](/help/forms/work-with-form-data-model.md)
          + [Uso del modelo de datos de formulario](/help/forms/using-form-data-model.md)
          + [Diseño de un esquema XML para un formulario adaptable](/help/forms/adaptive-form-xml-schema-form-model.md)
-         + Integrar Forms adaptable con Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
-            + [Integración de Adobe Marketo Engage con AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
-            + [Configurar nuevo formulario para integrarlo con el Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-            + [Configuración de la fuente de datos de Adobe Marketo Engage para el Forms adaptable existente](/help/forms/use-marketo-engage-data-source-in-form.md)
-            + [Configuración de la acción de envío al Marketo Engage para los formularios existentes](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+         + Integrar formularios adaptables con Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
+            + [Integrar Adobe Marketo Engage con AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+            + [Configurar nuevo formulario para integrarlo con Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+            + [Configurar la fuente de datos de Adobe Marketo Engage para formularios adaptables existentes](/help/forms/use-marketo-engage-data-source-in-form.md)
+            + [Configuración de la acción de envío a Marketo Engage para formularios existentes](/help/forms/submit-adaptive-form-to-marketo-engage.md)
    + Formularios adaptables {#adaptive-forms-authoring}
       + [Creación de un formulario adaptable](/help/forms/create-an-adaptive-form.md)
       + [Crear fragmento de formulario adaptable](/help/forms/adaptive-form-fragments.md)
@@ -750,13 +751,13 @@ ht-degree: 97%
             + [Configuración de la acción de envío Enviar a punto final REST para formularios adaptables](/help/forms/configure-submit-action-restpoint.md)
             + [Configuración de la acción de envío Enviar correo electrónico para un formulario adaptable](/help/forms/configure-submit-action-send-email.md)
             + [Uso de Google reCAPTCHA en un formulario adaptable](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [Usar hCAPTCHA en componentes principales de un formulario adaptable](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [Uso de hCAPTCHA en un formulario adaptable (componentes principales)](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
             + [Agregar un controlador de error personalizado en un formulario adaptable](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Añadir una configuración regional para Formularios adaptables basada en componentes principales](/help/forms/supporting-new-language-localization-core-components.md)
             + [Diseño de un esquema JSON para un formulario adaptable (componentes principales)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Añadir versiones, comentarios y anotaciones a un formulario adaptable](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Nuevos formularios adaptables](/help/forms/compare-forms.md)
-            + [Crear acción de envío personalizada](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
+            + [Creación de una acción de envío personalizada](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [Convertir formularios adaptables basados en componentes de base a formularios basados en componentes principales mediante la herramienta de utilidad de migración](/help/forms/migration-utility-tool-for-af-core-components.md)
             + Introducción al Editor de reglas para formularios adaptables basados en componentes principales{#rule-editor-core-components}
                + [Introducción al Editor de reglas para formularios adaptables basados en componentes principales](/help/forms/rule-editor-core-components.md)
@@ -765,11 +766,11 @@ ht-degree: 97%
                + [Tipos de operadores y eventos disponibles en el editor de reglas para un formulario adaptable basado en componentes principales](/help/forms/rule-editor-core-components-events-operators.md)
                + [Ejemplos de un Editor de reglas para un formulario adaptable basado en componentes principales](/help/forms/rule-editor-core-components-usecases.md)
                + [Usar funciones asincrónicas en un formulario adaptable](/help/forms/using-async-funct-in-rule-editor.md)
-               + [Invocar mejoras de servicio en el Editor de reglas visuales para formularios basados en componentes principales](/help/forms/invoke-service-enhancements-rule-editor.md)
+               + [Invocar mejoras de servicio en el editor de reglas visuales para formularios basados en componentes principales](/help/forms/invoke-service-enhancements-rule-editor.md)
             + Introducción a las funciones personalizadas para formularios adaptables basados en componentes principales{#create-and-use-custom-function-core-component}
                + [Introducción a las funciones personalizadas para formularios adaptables basados en componentes principales](/help/forms/create-and-use-custom-functions.md)
                + [Crear y utilizar una función personalizada para un Formulario adaptable basado en componentes principales](/help/forms/custom-function-core-component-create-function.md)
-               + [Objeto Scope en funciones personalizadas](/help/forms/custom-function-core-component-scope-function.md)
+               + [Objeto de ámbito en funciones personalizadas](/help/forms/custom-function-core-component-scope-function.md)
                + [Ejemplos de funciones personalizadas para un formulario adaptable basado en componentes principales](/help/forms/custom-function-core-components-use-cases.md)
             + Introducción al portal de Forms y sus componentes{#introduction-to-forms-portal}
                + [Introducción al componente Portal de Forms](/help/forms/configure-forms-portal.md)
@@ -797,7 +798,7 @@ ht-degree: 97%
          + Adición de componentes a un formulario adaptable {#add-components-to-an-adaptive-form}
             + [Uso de CAPTCHA en un formulario adaptable](/help/forms/captcha-adaptive-forms.md)
             + [Utilice hCaptcha en un formulario adaptable](/help/forms/integrate-adaptive-forms-hcaptcha.md)
-            + [Usar CAPTCHA de torniquete en un formulario adaptable](/help/forms/integrate-adaptive-forms-turnstile.md)
+            + [Uso de CAPTCHA de Turnstile en un formulario adaptable](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [Usar componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
             + [Aplicar firma manuscrita](/help/forms/signing-forms-using-scribble.md)
             + [Adición de una tabla a un formulario adaptable](/help/forms/adaptive-forms-tables.md)
@@ -1124,7 +1125,7 @@ ht-degree: 97%
          + [Administración de repositorios en Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Adición de un repositorio de Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Adición de un repositorio privado](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [Añadir un repositorio externo (Beta limitado)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Adición de un repositorio externo (Beta limitado)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [Acceder a repositorios](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Compatibilidad con los submódulos de Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Uso de Git con Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)

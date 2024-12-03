@@ -1,20 +1,20 @@
 ---
-title: Notas de la versión 2024.11.13 del editor universal
-description: Son las notas de la versión 2024.11.13 del editor universal.
+title: Notas de la versión 2024.12.02 del editor universal
+description: Estas son las notas de la versión 2024.12.02 del editor universal.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 98795cab471470442cf5c424a67ce2846cfe85dc
-workflow-type: ht
-source-wordcount: '370'
-ht-degree: 100%
+source-git-commit: 2aae8c63358680758e4f5324f38dea1bc2c47155
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 16%
 
 ---
 
 
-# Notas de la versión 2024.11.13 del editor universal {#release-notes}
+# Notas de la versión 2024.12.02 del editor universal {#release-notes}
 
-Estas son las notas de la versión del 13 de noviembre de 2024 del editor universal.
+Estas son las notas de la versión del editor universal del 2 de diciembre de 2024.
 
 >[!TIP]
 >
@@ -22,22 +22,18 @@ Estas son las notas de la versión del 13 de noviembre de 2024 del editor univer
 
 ## Novedades {#what-is-new}
 
-* **Opción de reintento en el tiempo de espera de CORS:** con la [versión 2024.09.26,](/help/release-notes/universal-editor/2024/2024-09-26.md) se introdujo un panel de error cuando el editor no pudo establecer una conexión con la página cargada, lo que evitó estados de carga interminables.
-   * Con esta versión, el editor sigue realizando reintentos de forma automática y, una vez establecida la conexión, se puede reanudar la edición.
-   * Esto es muy útil para páginas que tienen más de un minuto de tiempo de espera al inicializarse.
-* **Mejoras de extensibilidad para desarrolladores:** el editor universal ahora admite la difusión de eventos en extensiones, lo que permite a los desarrolladores de extensiones suscribirse a [eventos.](/help/implementing/universal-editor/events.md)
-   * Esto permite a los desarrolladores [reaccionar a los eventos del editor dentro de sus extensiones personalizadas.](/help/implementing/universal-editor/customizing.md#extending)
-* **Selección persistente de componentes:** los componentes seleccionados en el editor persistirán incluso después de actualizar el explorador.
-   * Esto garantiza que los usuarios puedan seguir trabajando sin perder su contexto al volver a cargar la página.
-* **Vínculos rápidos localizados:** la sección **Vínculos rápidos** de la pantalla de inicio ahora proporciona vínculos localizados a la documentación, lo que ayuda a los usuarios a acceder con facilidad a las guías relevantes en función de sus preferencias de idioma.
-* **ID de solicitud para depuración avanzada:** las notificaciones de error ahora incluyen un **ID de solicitud** en la sección de detalles, que se correlaciona con `x-request-id header`.
-   * Esto facilita a los equipos de ingeniería de Adobe el seguimiento y el diagnóstico de problemas al hacer coincidir esos errores con los registros internos.
+* **Navegación por teclado del árbol de contenido**: [El árbol de contenido,](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) disponible en el panel lateral, ahora es totalmente accesible mediante el teclado.
+   * Los autores pueden navegar e interactuar con elementos de vista de árbol mediante controles de teclado estándar, siguiendo las [directrices WCAG 2.1](/help/sites-cloud/authoring/page-editor/accessible-content.md) para accesibilidad.
+   * Esta mejora garantiza que todos los elementos interactivos del árbol se puedan utilizar con el teclado, lo que mejora la inclusividad de los usuarios que dependen de la navegación mediante el teclado.
+* **Anulación de selección de elementos editables**: los autores ahora pueden anular la selección de elementos editables seleccionados anteriormente en la página.
+   * Esto elimina las distracciones cuando los autores desean ver la página sin bordes de selección activos.
+* **Selector de fragmentos**: en las instancias de AEM as a Cloud Service, las referencias a fragmentos ahora abren el selector de fragmentos como selector de contenido, lo que ofrece una funcionalidad mejorada, como obedecer a los modelos de fragmentos de contenido permitidos, buscar fragmentos de contenido y una experiencia general mejorada.
+   * Esto se alinea con otras IU de Adobe y mejora la coherencia.
+   * AEM [Para entornos de 6.5 de la,](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) el selector de contenido existente permanece en uso.
+* **Descripción del contenedor**: [El componente contenedor](/help/implementing/universal-editor/field-types.md#container) utilizado en el panel [propiedades,](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel-properties-rail) para hacer referencia al contenido, ahora admite un atributo de descripción, mostrado sobre los campos de contenedor.
+   * Esta adición mejora la claridad al proporcionar a los autores contexto sobre los campos agrupados que están editando.
 
 ## Otras mejoras {#other-improvements}
 
-* **Etiquetas largas de árbol de contenido corregidas:** se ha resuelto un problema por el que las etiquetas largas del panel **Árbol de contenido** se cortaban
-   * Esto garantiza que los controladores de arrastrar y soltar siempre estén visibles para la reordenación del contenido.
-* **Etiquetas de propiedades largas corregidas:** se ha corregido un error por el que las etiquetas de campos largos del panel **Propiedades** se superponían con la información de validación de campos
-* **Desplazamiento horizontal en el panel Propiedades:** se ha corregido un problema por el que los elementos anchos en el panel **Propiedades** provocaban un desplazamiento horizontal
-* **Barra de herramientas inactiva durante las notificaciones corregida:** la barra de herramientas superior de **Adobe Experience Cloud** ahora funciona por completo cuando se muestran las notificaciones de [toast](https://spectrum.adobe.com/page/toast/).
-* **Estabilidad mejorada:** se han añadido límites de error para gestionar valores inesperados, lo que evita que toda la interfaz de usuario se bloquee cuando falla un solo procesador o validador y aumenta la solidez
+* **Sincronización de campos de texto enriquecido**: se mejoró la sincronización del contenido sin procesar y procesado en los campos de texto enriquecido en el panel de propiedades, y se solucionaron problemas en los proyectos de Edge Delivery Services en los que el contenido de texto enriquecido y la representación procesada pueden diferir.
+* **Eventos de modo de edición**: el editor universal ahora emite de forma fiable eventos de modo de edición, incluso después de volver a cargar aplicaciones remotas.
