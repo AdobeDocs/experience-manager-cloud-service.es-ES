@@ -5,10 +5,10 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: dcf7bde3bc73b70002f87f14d905cd294280ff94
+source-git-commit: 13c1febf55c9b15eab49d356fc1ba3f3d91ad055
 workflow-type: tm+mt
 source-wordcount: '2374'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -33,6 +33,9 @@ La funcionalidad ofrece varias API para generar y manipular documentos. Puede ge
 * Las API HTTP para facilitar la integración con sistemas externos. Se incluyen API independientes para operaciones bajo demanda (baja latencia) y por lotes (operaciones de alto rendimiento).
 
 * Un acceso seguro a los datos. Las API de comunicaciones se conectan y acceden a los datos únicamente desde los repositorios de datos designados por el cliente, lo que hace que las comunicaciones sean muy seguras.
+
+La [documentación de referencia de la API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) ofrece información detallada sobre todos los parámetros, métodos de autenticación y diversos servicios que ofrecen las API. La documentación de referencia de la API también está disponible en formato YAML. Puede descargar el archivo YAML y cargarlo en Postman para comprobar la funcionalidad de las API.
+
 
 <!-- 
 ![A sample credit card statement](assets/statement.png)
@@ -194,7 +197,7 @@ PDF documents contain metadata, which is information about the document (as dist
 
 ### Convertir y validar documentos compatibles con PDF/A
 
-Las API de conversión de documentos de comunicaciones ayudan a convertir un documento PDF en PDF/A. Puede utilizar las API para convertir un documento PDF en un documento compatible con PDF/A, así como para determinar si un documento PDF es compatible con PDF/A. PDF/A es un formato de archivo elaborado para la conservación del contenido del documento a largo plazo. Las fuentes están incrustadas en el documento y el archivo no está comprimido. Como resultado, un documento PDF/A suele ser más grande que un documento PDF estándar. Además, un documento de PDF/A no contiene contenido de audio y vídeo. Los estándares de conformidad PDF/A admitidos incluyen PDF/A-1a, 1b, 2a, 2b, 3a y 3b.
+Las API de conversión de documentos de comunicaciones ayudan a convertir un documento PDF en PDF/A. Puede utilizar las API para convertir un documento PDF en un documento compatible con PDF/A, así como para determinar si un documento PDF es compatible con PDF/A. PDF/A es un formato de archivo elaborado para la conservación del contenido del documento a largo plazo. Las fuentes están incrustadas en el documento y el archivo no está comprimido. Como resultado, un documento PDF/A suele ser más grande que un documento PDF estándar. Además, un documento PDF/A no contiene contenido de audio y vídeo.  Los estándares de conformidad de PDF/A admitidos incluyen PDF/A-1a, 1b, 2a, 2b, 3a y 3b.
 
 ### Convertir PDF a XDP {#convert-pdf-to-xdp}
 
@@ -214,10 +217,10 @@ Las API de firmas permiten a su organización proteger la seguridad y la privaci
 * Añada un campo de firma invisible a un documento PDF.
 * Firme el campo de firma especificado en un documento PDF.
 * Certificar un documento PDF
-* Quitar la firma del campo de firma especificado en un documento de PDF
-* Eliminar el campo de firma especificado de un documento de PDF
+* Quitar la firma del campo de firma especificado en un documento PDF
+* Eliminar el campo de firma especificado de un documento PDF
 
-<span class="preview"> Quite la firma del campo de firma especificado y elimine el campo de firma especificado de un documento de PDF que estén disponibles en el programa de usuarios que lo adoptaron por primera vez. Puede escribir a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa de primeros usuarios y solicitar acceso a esta funcionalidad. </span>
+<span class="preview"> Las opciones que permiten quitar la firma del campo de firma especificado y eliminar el campo de firma especificado de un documento PDF están disponibles en el programa para usuarios pioneros. Puede enviar un correo electrónico a aem-forms-ea@adobe.com desde su ID oficial para unirse al programa de usuarios pioneros y solicitar acceso a esta funcionalidad. </span>
 
 
 <!--
@@ -304,8 +307,6 @@ Las distintas funciones de derechos de uso para ampliar los servicios de Reader 
 
 * **Mensaje**: mensaje que se muestra en Adobe Acrobat Reader al abrir un documento PDF con uno o más derechos de uso aplicados.
 * **Desbloquear contraseña**: la contraseña necesaria para abrir un documento PDF cifrado. Normalmente, es la contraseña de apertura del documento, pero si el documento de PDF está protegido además por una contraseña de permisos, puede utilizar cualquiera de ellas para abrirlo.
-
-La [documentación de referencia de la API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) ofrece información detallada sobre todos los parámetros, métodos de autenticación y diversos servicios que ofrecen las API. La documentación de referencia de la API también está disponible en formato YAML. Puede descargar el archivo YAML y cargarlo en Postman para comprobar la funcionalidad de las API.
 
 ## Tipos de API de comunicaciones {#types}
 
