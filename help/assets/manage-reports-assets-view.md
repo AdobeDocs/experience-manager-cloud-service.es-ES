@@ -4,10 +4,10 @@ description: Acceda a los datos de la sección de informes de la vista Recursos 
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
-source-git-commit: 5ff36490c4d9a6f61255ad06ffab984f18c1823b
+source-git-commit: 6e0cd465f8695c948ece4679e083d6b9b35dded4
 workflow-type: tm+mt
-source-wordcount: '1200'
-ht-degree: 31%
+source-wordcount: '1564'
+ht-degree: 67%
 
 ---
 
@@ -20,7 +20,7 @@ Los informes de recursos proporcionan a los administradores visibilidad de la ac
 
 ## Acceso a los informes {#access-reports}
 
-Todas las personas asignadas al perfil de producto Administradores de la vista Recursos pueden acceder al tablero de Insights o crear informes definidos por el usuario en la vista Recursos.
+AEM Todos los usuarios asignados al Perfil de producto de los administradores de la aplicación pueden acceder al panel de perspectivas o crear informes definidos por el usuario en la vista de Assets.
 
 Para acceder a los informes, vaya a **[!UICONTROL Informes]** debajo de **[!UICONTROL Configuración]**.
 
@@ -37,29 +37,29 @@ In the **[!UICONTROL Reports]** screen, various components are shown in the tabu
 * **Created**: Gives information of the date when the report was generated.
 -->
 
-## Crear un informe {#create-report}
+## Creación de un informe {#create-report}
 
-El entorno de vista de los AEM Assets ofrece funcionalidades completas de creación de informes a través del panel Informes. Esta capacidad permite a los usuarios generar y descargar informes CSV que detallan las cargas y descargas de recursos en intervalos de tiempo especificados, desde intervalos únicos hasta intervalos diarios, semanales, mensuales o anuales.
+El entorno de vista de los AEM Assets ofrece funcionalidades completas de creación de informes a través del panel Informes. Esta función permite a los usuarios generar y descargar informes CSV en los que se detallan las cargas y descargas de recursos en intervalos de tiempo especificados, desde intervalos únicos hasta intervalos diarios, semanales, mensuales o anuales.
 
 **Para crear un informe:**
 
 1. Vaya a **Informes** y haga clic en **Crear informe** (en la parte superior derecha). El cuadro de diálogo **crear informe** muestra los siguientes campos:
    ![create-report](/help/assets/assets/executed-reports1.svg)
 
-   **En la ficha Configuración:**
+   **En pestaña Configuración:**
 
-   1. **Tipo de informe:** Seleccione entre el tipo de carga y descarga.
-   1. **Título:** Agregue un título al informe.
-   1. **Descripción:** Agregue una descripción opcional al informe.
-   1. **Seleccionar ruta de acceso a la carpeta:** Seleccione una ruta de acceso a la carpeta para generar el informe de los recursos cargados y descargados dentro de esa carpeta específica. Por ejemplo, si necesita el informe de recursos cargados en una carpeta, especifique la ruta a esa carpeta.
-   1. **Seleccionar intervalo de fecha:** Seleccione el intervalo de fecha para ver la actividad de carga o descarga dentro de la carpeta.
+   1. **Tipo de informe:** Seleccione entre el tipo [!UICONTROL cargar], [!UICONTROL descargar] o [Informe de envío de Dynamic Media](#dynamic-media-delivery-reports).
+   1. **Título:** añada un título al informe.
+   1. **Descripción:** añada una descripción opcional al informe.
+   1. **Seleccionar ruta de la carpeta:** seleccione una ruta de la carpeta para generar el informe de los recursos cargados y descargados dentro de esa carpeta específica. Por ejemplo, si necesita que el informe de recursos se cargue en una carpeta, especifique la ruta a esa carpeta.
+   1. **Seleccionar intervalo de fechas:** seleccione el intervalo de fechas para ver la actividad de carga o descarga dentro de la carpeta.
    <br>
 
    >[!NOTE]
    >
    > La vista Recursos convierte todas las zonas horarias locales a la hora universal coordinada (UTC).
 
-   **En la ficha Columnas:** Seleccione los nombres de columna que se mostrarán en el informe. En la tabla siguiente se explica el uso de todas las columnas:
+   **Pestaña En las columnas:** seleccione los nombres de columna que se mostrarán en el informe. En la tabla siguiente se explica el uso de todas las columnas:
 
    <table>
     <tbody>
@@ -76,7 +76,7 @@ El entorno de vista de los AEM Assets ofrece funcionalidades completas de creaci
      <tr>
       <td>Ruta</td>
       <td>Ruta de la carpeta en la que el recurso está disponible en la vista Recursos.</td>
-      <td>Cargar y descargar</td>
+      <td>Carga, descarga y envío de Dynamic Media</td>
      </tr>
      <tr>
       <td>Tipo MIME</td>
@@ -122,42 +122,101 @@ El entorno de vista de los AEM Assets ofrece funcionalidades completas de creaci
       <td>Descargado por (nombre de usuario)</td>
       <td>Nombre del usuario que descargó el recurso.</td>
       <td>Descargar</td>
-     </tr>           
+     </tr> 
+     <tr>
+      <td>Referencia</td>
+      <td>Dirección URL donde se entrega o se incluye el recurso</td>
+      <td>Entrega de Dynamic Media</td>
+     </tr>  
+     <tr>
+      <td>Visitas</td>
+      <td>El número de veces que se entrega el recurso (recuento de envíos)</td>
+      <td>Entrega de Dynamic Media</td>
+     </tr>          
     </tbody>
    </table>
 
-## Ver y descargar un informe existente {#View-and-download-existing-report}
+## Informes de envío de Dynamic Media {#dynamic-media-delivery-reports}
 
-Los informes existentes se muestran en la ficha **Informes ejecutados**. Haga clic en **Informes** y seleccione **Informes ejecutados** para ver todos los informes creados con el estado **completado**, lo que indica que están listos para descargarse. Para descargar el informe en formato CSV o eliminarlo, seleccione la fila del informe. Luego selecciona **Descargar CSV** o **Eliminar**.
+Obtenga información de envío para los recursos que se envían con Dynamic Media, con el recuento de envíos a nivel de recurso, información del remitente del envío, ruta de recursos en AEM Assets e ID de recurso único. Se pueden generar informes para todos los recursos entregados mediante el repositorio de Dynamic Media para AEM Assets o para una jerarquía de carpetas específica en AEM Assets. Además, las perspectivas de los informes de entrega de Dynamic Media ayudan a medir el retorno de la inversión de los recursos entregados, medir el rendimiento del canal y realizar tareas de administración de recursos informadas para los recursos.
+
+>[!NOTE]
+> 
+>Para obtener acceso anticipado al informe de entrega de Dynamic Media en su cuenta de Dynamic Media, [cree y envíe un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
+
+### Requisitos previos {#prereqs-dynamic-media-delivery-reports}
+
+Debe tener una licencia de Dynamic Media para crear y utilizar este informe.
+
+>[!IMPORTANT]
+> 
+>* Se proporcionan informes para los recursos enviados a través de Dynamic Media.
+>* Los informes se generan para el primer millón de filas. Para capturar todos los archivos que se encuentran dentro de este límite, considere la posibilidad de incluir la columna de referente para las carpetas más pequeñas.
+>* Solo se pueden generar informes de los últimos 3 meses.
+
+### Creación de un informe de envío de Dynamic Media{#create-dynamic-media-delivery-report}
+
+1. Cree un informe de envío de Dynamic Media siguiendo los pasos mencionados en [Crear un informe](#create-report).
+
+1. Seleccione **[!UICONTROL Envío de Dynamic Media]** de la lista desplegable **[!UICONTROL Tipo de informe]**.
+
+   ![Lista desplegable de informes de envío de Dynamic Media](assets/dynamic-media-delivery-report-option.png)
+
+
+1. En la ficha **[!UICONTROL Columnas]**, puede seleccionar la columna **[!UICONTROL Referente]** para incluirla en el informe.
+
+   ![Referente](assets/referrer.png)
+
+   Todas las columnas del informe descargado son de solo lectura, excepto la columna **Referente**, que puede modificar para incluir o excluir del informe. <!--Choosing a referrer displays the number of visitors received from each referred report that directs traffic to the site. It offers insights into the sources of traffic and the origin of the visitors. Such insights help measure ROI of delivered assets, measure channel performance, and help take informed asset management tasks for assets.-->
+
+### Acciones realizadas en el informe de envío de Dynamic Media {#actions-performed-dynamic-media-delivery-reports}
+
+Después de crear el informe, puede realizar las siguientes acciones:
+
+* **[!UICONTROL Eliminar]**: puede eliminar el informe seleccionado.
+* **[!UICONTROL Descargar CSV]**: Puede descargar el informe seleccionado en formato CSV. El informe descargado consta de las columnas Nombre, Ruta, Dynamic MediaID, Referente, Visitas.
+   * La columna **Referente** enumera la dirección URL donde se entrega o se incluye el recurso.
+
+   * La columna **Visitas** enumera la cantidad de veces que se entrega el recurso (recuento de envíos).
+
+Para eliminar o descargar el informe de envío de Dynamic Media como CSV, consulte [Ver y descargar el informe existente](#View-and-download-existing-report).
+
+![CSV descargado en el informe de envío de Dynamic Media](assets/csv-dynamic-media-delivery-report.png)
+
+
+## Visualización y descarga de un informe existente {#View-and-download-existing-report}
+
+Los informes existentes se muestran en la pestaña **Informes ejecutados**. Haga clic en **Informes** y seleccione **Informes ejecutados** para ver todos los informes creados con el estado **completado**, lo que indica que están listos para descargarse. Para descargar el informe en formato CSV o eliminarlo, seleccione la fila del informe. A continuación, seleccione **Descargar CSV** o **Eliminar**.
 ![ver y descargar informes existentes](/help/assets/assets/view-download-existing-report.png)
 
-## Programar un informe {#schedule-report}
 
-En la interfaz de usuario de la vista AEM Assets, **Programar informe** configura la generación automática de informes en intervalos futuros especificados, como diario, semanal, mensual o anual. Esta función ayuda a optimizar las necesidades recurrentes de creación de informes y garantiza actualizaciones de datos puntuales. Mientras **Crear informe** genera informes para fechas pasadas. Los informes completados se enumeran en **Informes ejecutados** y los informes próximos se encuentran en **Informes programados**.
+## Programación de un informe {#schedule-report}
 
-Para programar un informe, siga los pasos a continuación:
+En la interfaz de usuario de la vista AEM Assets, **Programar informe** configura la generación automática de informes en intervalos futuros especificados, como diario, semanal, mensual o anual. Esta función ayuda a optimizar las necesidades recurrentes de creación de informes y garantiza actualizaciones de datos puntuales. En **Crear informe** se generan informes para fechas pasadas. Los informes completados se indican en **Informes ejecutados** y los próximos informes se encuentran en **Informes programados**.
+
+Para programar un informe, siga los pasos que se indican a continuación:
 
 1. Haga clic en Informes en el panel izquierdo y, a continuación, haga clic en Crear informe (desde la parte superior derecha).
 1. El cuadro de diálogo del informe muestra la siguiente información:
-   1. **Tipo de informe:** Seleccione entre el tipo de carga y descarga.
-   1. **Título:** Agregue un título al informe.
-   1. **Descripción**: agregue una descripción opcional al informe.
-   1. **Seleccionar ruta de carpeta:** Seleccione una ruta de carpeta para generar un informe para los recursos que se cargarán o descargarán de esa carpeta específica en el futuro.
-   1. Alternar **Programar informe:** Alternar para programar el informe para un momento posterior o para su repetición repetida.
-      ![informe de programación](/help/assets/assets/schedule-reports1.svg)
+   1. **Tipo de informe:** seleccione entre el tipo de carga y descarga.
+   1. **Título:** añada un título al informe.
+   1. **Descripción**: añada una descripción opcional al informe.
+   1. **Seleccionar ruta de carpeta:** seleccione una ruta de la carpeta para generar un informe para los recursos que se cargarán o descargarán de esa carpeta específica en el futuro.
+   1. Marque **Programar informe:** marque para programar el informe para un momento posterior o para que se repita.
+      ![programar informe](/help/assets/assets/schedule-reports1.svg)
 
-   1. **Elija la frecuencia:** Especifique el intervalo para generar el informe (por ejemplo, diario, semanal, mensual, anual o una vez) y establezca la fecha y la hora para ejecutar el informe junto con la fecha final para la periodicidad. AEM Para un informe único, seleccione el intervalo de fechas para el informe en el tipo de actividad seleccionado en el entorno de trabajo de la actividad de la actividad de la que se ha hecho clic en el botón de la opción de menú de una sola vez. Por ejemplo, si necesita un informe sobre los recursos descargados del 10 al 29 (fechas futuras) de un mes específico, seleccione estas fechas en el campo **Seleccionar intervalo de fecha**.
+   1. **Elegir frecuencia:** especifique el intervalo de generación del informe (por ejemplo, diario, semanal, mensual, anual o una vez) y establezca la fecha y la hora para ejecutar el informe junto con la fecha de finalización para la periodicidad. Para un informe único, seleccione el intervalo de fechas para el informe sobre el tipo de actividad seleccionado en el entorno de AEM. Por ejemplo, si necesita un informe sobre los recursos descargados del 10 al 29 (fechas futuras) de un mes específico, seleccione estas fechas en el campo **Seleccionar intervalo de fechas**.
 
    >[!NOTE]
    >
    > La vista Recursos convierte todas las zonas horarias locales a la hora universal coordinada (UTC).
 
-## Ver informes programados {#view-scheduled-reports}
+## Visualización de informes programados {#view-scheduled-reports}
 
-Los informes programados se muestran en la ficha **Informes programados** de una manera organizada de manera sistemática. Todos los informes completados de cada informe programado se almacenan en una sola carpeta de informes. Haga clic![expandir contracción](/help/assets/assets/expand-icon1.svg)para ver los informes completados. Por ejemplo, si ha programado un informe diario, todos los informes completados se agrupan en una carpeta. Esta organización simplifica tanto la navegación como la detección de informes. Para ver los informes programados, haga clic en **Informes** y luego haga clic en **Informes programados**. Se muestran todos los informes programados con su estado en curso o completado. Los informes completados están listos para descargarse.\
+Los informes programados se muestran en la ficha **Informes programados** de una manera organizada de manera sistemática. Todos los informes completados de cada informe programado se almacenan en una sola carpeta de informes. Haga clic![expandir contracción](/help/assets/assets/expand-icon1.svg)para ver los informes completados. Por ejemplo, si ha programado un informe diario, todos los informes completados se agrupan conjuntamente en una carpeta. Esta organización simplifica tanto la navegación como la capacidad de detección de informes. Para ver los informes programados, haga clic en **Informes** y luego haga clic en **Informes programados**. Se muestran todos los informes programados con su estado en curso o completado. Los informes completados están listos para descargarse.\
 ![informe programado](/help/assets/assets/scheduled-reports-tab.png)
 
-## Editar y cancelar informes programados {#edit-cancel-scheduled-reports}
+## Edición y cancelación de informes programados {#edit-cancel-scheduled-reports}
 
 1. Vaya a la pestaña **Informes programados**.
 1. Seleccione la fila del informe.
@@ -167,7 +226,7 @@ Los informes programados se muestran en la ficha **Informes programados** de una
 
 ### Reanudar programación {#resume-schedule}
 
-Para reanudar la programación cancelada, seleccione la fila del informe y haga clic en **Reanudar programación**. Cuando se reanuda, las siguientes entradas de tiempo de ejecución se muestran de nuevo y el estado es En curso.
+Para reanudar la programación cancelada, seleccione la fila del informe y haga clic en **Reanudar programación**. Cuando se reanuda, las siguientes entradas en tiempo de ejecución se muestran de nuevo y el estado se muestra en curso.
 ![reanudar programación](/help/assets/assets/resume-schedule.png)
 
 >[!NOTE]

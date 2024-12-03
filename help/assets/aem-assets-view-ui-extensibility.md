@@ -1,17 +1,17 @@
 ---
-title: AEM Assets Ver extensibilidad de IU
+title: Extensibilidad de la IU de la vista de AEM Assets
 description: Obtenga información acerca de la capacidad de extensibilidad de la IU de la vista AEM Assets. La IU de vista de AEM Assets permite agregar componentes de IU personalizados para satisfacer necesidades comerciales específicas.
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
+source-git-commit: bbb183470e12c0fc81c821fc2e0c1e7d77c33707
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 3%
+source-wordcount: '576'
+ht-degree: 5%
 
 ---
 
-# AEM Assets Ver extensibilidad de IU{#AEM-Assets-View-UI-Extensibility}
+# Extensibilidad de la IU de la vista de AEM Assets{#AEM-Assets-View-UI-Extensibility}
 
 | [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación de desarrollador de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
@@ -22,7 +22,7 @@ Puede añadir las extensiones a los niveles de recurso, carpeta y colección. La
 >[!IMPORTANT]
 >
 > * La extensibilidad de la IU de vista de AEM Assets está disponible con [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
-> * La extensibilidad de la IU de vista de Assets está disponible en su versión de Beta. Para obtener acceso anticipado a la extensibilidad de la interfaz de usuario de la vista de Assets, [cree y envíe un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
+> * Para obtener acceso a la extensibilidad de la interfaz de usuario de la vista de Assets, [cree y envíe un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
 > * Para proporcionar comentarios sobre la documentación, expanda las opciones de Comentarios detallados y haga clic en Informar de un problema.
 
 ## <a id="1"></a> Cómo acceder a la vista de Assets
