@@ -8,9 +8,9 @@ feature: Adaptive Forms, Foundation Components
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 role: User, Developer
 source-git-commit: ad28fd933a85c8b5ba1cdad4927f0a0a45ad478d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1318'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 74%
 | AEM as a Cloud Service | Este artículo |
 
 
-Puede usar el componente **Firma manuscrita** para dibujar la firma (manuscrita) en un formulario adaptable. <!-- The Signature step component displays a PDF version of the Adaptive Form. You require a Document of Record option enabled or form template based Adaptive Forms to use the Signature step component. -->
+Puede usar el componente **Firma a mano alzada** para dibujar la firma (garabato) en un formulario adaptable. <!-- The Signature step component displays a PDF version of the Adaptive Form. You require a Document of Record option enabled or form template based Adaptive Forms to use the Signature step component. -->
 
 ![Cuadro de diálogo Firma manuscrita](assets/scribble-signature.png)
 
@@ -57,15 +57,15 @@ Puede seleccionar el icono **Configurar** ![configurar](assets/configure.png) p
 
 1. Abra un formulario adaptable en modo de edición.
 1. Arrastre y coloque el componente **Firma manuscrita** desde el Explorador de componentes al formulario adaptable.
-1. Seleccione el icono **Configurar** ![configurar](assets/configure.png). Se abrirá el explorador de propiedades, donde verá las propiedades del componente Firma manuscrita. [Configure las propiedades de la firma manuscrita](#properties-of-scribble-signature-component) tal como se describe en la siguiente sección.
+1. Seleccione el icono **Configurar** ![configurar](assets/configure.png). Se abrirá el explorador de propiedades, donde verá las propiedades del componente Firma manuscrita. [Configure las propiedades de la firma a mano alzada](#properties-of-scribble-signature-component) tal como se describe en la siguiente sección.
 
-   ![Firma manuscrita](/help/forms/assets/scribblesig.png)
+   ![Firma a mano alzada](/help/forms/assets/scribblesig.png)
 
 1. Seleccione el icono Listo ![aem_forms_save](assets/aem_forms_save.png) para guardar los cambios. La firma se ha configurado correctamente.
 
-## Configurar propiedades del componente Firma manuscrita
+## Configure las propiedades del componente Firma a mano alzada.
 
-Puede personalizar fácilmente el componente Firma manuscrita para los visitantes con el Cuadro de diálogo de configuración.
+Puede personalizar fácilmente el componente Firma a mano alzada para los visitantes con el cuadro de diálogo de configuración.
 
 ### Pestaña Básicos
 
@@ -82,13 +82,13 @@ Puede personalizar fácilmente el componente Firma manuscrita para los visitante
 
 * **Ocultar título**: seleccione la opción para ocultar el título del componente.
 * **Campo obligatorio**: seleccione la opción para que el campo sea obligatorio.
-* **Mensaje de campo obligatorio** - **Mensaje de campo obligatorio** es un mensaje personalizable que se muestra a los usuarios cuando intentan enviar un formulario sin rellenar un campo obligatorio.
-* **Referencia de enlace del modelo de datos**: una referencia de enlace es una referencia a un elemento de datos almacenado en una fuente de datos externa y utilizado en un formulario. La referencia de enlace permite enlazar datos de forma dinámica a campos de formulario, de modo que el formulario pueda mostrar los datos más actualizados de la fuente de datos. Por ejemplo, se puede utilizar una referencia de enlace para mostrar el nombre y la dirección de un cliente en un formulario, según el ID introducido en el formulario por el cliente. La referencia de enlace también se puede utilizar para actualizar la fuente de datos con los datos del formulario. De este modo, AEM Forms permite crear formularios que interactúen con fuentes de datos externas, lo que proporciona al usuario una experiencia óptima para recopilar y administrar datos.
+* **Mensaje de campo obligatorio**: el **Mensaje de campo obligatorio** es un mensaje personalizable que se muestra a los usuarios cuando intentan enviar un formulario sin rellenar un campo obligatorio.
+* **Referencia a un vínculo del modelo de datos**: una referencia a un vínculo es una referencia a un elemento de datos que se almacena en una fuente de datos externa y se utiliza en un formulario. La referencia de enlace permite enlazar datos de forma dinámica a campos de formulario, de modo que el formulario pueda mostrar los datos más actualizados de la fuente de datos. Por ejemplo, se puede utilizar una referencia de enlace para mostrar el nombre y la dirección de un cliente en un formulario, según el ID introducido en el formulario por el cliente. La referencia de enlace también se puede utilizar para actualizar la fuente de datos con los datos del formulario. De este modo, AEM Forms permite crear formularios que interactúen con fuentes de datos externas, lo que proporciona al usuario una experiencia óptima para recopilar y administrar datos.
 * **Ocultar objeto**: seleccione la opción para ocultar el componente del formulario. El componente permanece accesible para otros fines, como utilizarlo para los cálculos en el Editor de reglas. Esto resulta útil cuando necesita almacenar información que el usuario no necesita ver o cambiar directamente.
 * **Deshabilitar objeto**: seleccione la opción para deshabilitar el componente. El componente desactivado no está activo ni puede editarlo el usuario final. El usuario puede ver el valor del campo, pero no modificarlo. El componente permanece accesible para otros fines, como utilizarlo para los cálculos en el Editor de reglas.
-* **Proporción de aspecto**: la proporción de aspecto de un componente de firma manuscrita define la relación proporcional entre su anchura y altura.
-* **Diseño de campo**: la opción **Diseño de campo** determina cómo se colocan los elementos de formulario, incluidas las etiquetas (títulos) y los mensajes de error, en relación con el componente. **Pie de ilustración y error como parte superior del widget** coloca el pie de ilustración (etiqueta) del campo y los mensajes de error sobre el componente. **Heredar de la configuración del formulario adaptable** utiliza la configuración predeterminada de diseño de campo especificada en la configuración del formulario adaptable.
-* **Clase CSS**: la **clase CSS** le permite aplicar estilos personalizados a un componente al asignar una o más clases CSS definidas en su hoja de estilos. Permite aplicar un estilo y una personalización del diseño coherentes en todo el formulario adaptable.
+* **Relación de aspecto**: la relación de aspecto de un componente de firma a mano alzada define la relación proporcional entre su anchura y altura.
+* **Diseño de campo**: la opción **Diseño de campo** determina cómo se sitúan los elementos de formulario, incluidas las etiquetas (títulos) y los mensajes de error, en relación con el componente. **Pie de ilustración y error en la parte superior del widget** coloca el pie de ilustración (etiqueta) del campo y los mensajes de error encima del componente. **Heredar configuración de formulario adaptable** utiliza la configuración predeterminada de diseño de campo especificada en la configuración del formulario adaptable.
+* **Clase de CSS**: la **clase de CSS** le permite aplicar estilos personalizados a un componente al asignar una o más clases CSS definidas en su hoja de estilo. Permite aplicar un estilo y una personalización del diseño coherentes en todo el formulario adaptable.
 
 ### Contenido de Ayuda
 
@@ -96,9 +96,9 @@ Puede personalizar fácilmente el componente Firma manuscrita para los visitante
 
 * **Descripción breve**: una descripción breve es una explicación de texto corta que proporciona información adicional o aclaraciones acerca del propósito de un campo de formulario específico. Ayuda al usuario a comprender qué tipo de datos se deben escribir en el campo y puede proporcionar directrices o ejemplos para garantizar que la información introducida sea válida y cumpla los criterios deseados. De forma predeterminada, las descripciones cortas permanecen ocultas. Active la opción **Mostrar siempre una descripción breve** para mostrarla debajo del componente.
 
-* **Mostrar siempre una descripción breve**: active la opción para mostrar la descripción breve debajo del componente.
+* **Mostrar siempre una descripción breve**: active esta opción para mostrar la descripción breve debajo del componente.
 
-* **Descripción larga**: hace referencia a información o instrucciones adicionales que se proporcionan al usuario para ayudarle a rellenar correctamente un campo de formulario. Aparece cuando el usuario hace clic en el icono de ayuda (i) situado junto al componente. Proporciona información más detallada que la etiqueta de un campo de formulario o el texto de marcador de posición, y está diseñado para ayudar al usuario a comprender los requisitos o restricciones del campo. También puede ofrecer sugerencias o ejemplos para que el formulario sea más fácil y preciso.
+* **Descripción larga**: hace referencia a información o guía adicionales que se proporcionan al usuario para ayudarle a rellenar correctamente un campo de formulario. Aparece cuando el usuario hace clic en el icono de ayuda (i) situado junto al componente. Proporciona información más detallada que la etiqueta de un campo de formulario o el texto del marcador de posición y está diseñado para ayudar al usuario a comprender los requisitos o restricciones del campo. También puede ofrecer sugerencias o ejemplos para que el formulario sea más fácil y preciso.
 
 ### Pestaña Accesibilidad {#accessibility}
 
@@ -106,13 +106,13 @@ Puede personalizar fácilmente el componente Firma manuscrita para los visitante
 
 En la pestaña **Accesibilidad**, se pueden configurar valores para las etiquetas de [Accesibilidad ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) del componente. Hay varias opciones disponibles para usar el texto del lector de pantalla:
 
-* **Prioridad de Reader de pantalla**: la prioridad de Reader de pantalla se refiere a texto adicional que está específicamente destinado a ser leído por tecnologías de asistencia, como lectores de pantalla, que utilizan personas con problemas de visión. Este texto proporciona una descripción del audio del propósito del campo de formulario y puede incluir información sobre el título, la descripción, el nombre y cualquier mensaje relevante (texto personalizado) del campo. El texto del lector de pantalla ayuda a garantizar que el formulario sea accesible para todos los usuarios, incluidos los que tengan deficiencias visuales, y les ofrezca una comprensión completa del campo del formulario y de sus requisitos.
+* **Prioridad de lector de pantalla**: la Prioridad de lector de pantalla se refiere a texto adicional que está específicamente diseñado para ser leído por tecnologías de soporte, como lectores de pantalla, se utilizan personas con deficiencias visuales. Este texto proporciona una descripción del audio del propósito del campo de formulario y puede incluir información sobre el título, la descripción, el nombre y cualquier mensaje relevante (texto personalizado) del campo. El texto del lector de pantalla ayuda a garantizar que el formulario sea accesible para todos los usuarios, incluidos los que tengan deficiencias visuales, y les ofrezca una comprensión completa del campo del formulario y de sus requisitos.
 
    * **Texto personalizado**: seleccione esta opción para utilizar el texto personalizado para las etiquetas de accesibilidad de ARIA. Al seleccionar esta opción, aparece el cuadro de diálogo Texto personalizado. Puede agregar información relevante en el cuadro de diálogo Texto personalizado.
-   * **Descripción breve**: seleccione esta opción para usar la descripción de las etiquetas de accesibilidad ARIA.
+   * **Descripción breve**: seleccione esta opción para utilizar la descripción para las etiquetas de accesibilidad de ARIA.
    * **Título**: seleccione esta opción para utilizar el título para las etiquetas de accesibilidad de ARIA.
    * **Nombre**: seleccione esta opción para utilizar el nombre para las etiquetas de accesibilidad de ARIA.
-   * **Ninguno**: seleccione esta opción si no desea agregar etiquetas de accesibilidad de ARIA.
+   * **Ninguno**: seleccione esta opción si no desea añadir etiquetas de accesibilidad de ARIA.
 
 <!--
 

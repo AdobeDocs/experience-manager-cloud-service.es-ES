@@ -5,7 +5,7 @@ exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 source-git-commit: 487d918059e85e3f5dd19d2248b3a8365da41dee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1428'
 ht-degree: 100%
 
@@ -51,7 +51,7 @@ El siguiente ejemplo de bloque de comillas sigue este enfoque.
 
 ![Clonación del proyecto](assets/create-block/clone.png)
 
-&#x200B;2. Edite el archivo `component-definition.json` en la raíz del proyecto, añada la siguiente definición para el nuevo bloque de cita y guarde el archivo.
+2. Edite el archivo `component-definition.json` en la raíz del proyecto, añada la siguiente definición para el nuevo bloque de cita y guarde el archivo.
 
 >[!BEGINTABS]
 
@@ -83,7 +83,7 @@ El siguiente ejemplo de bloque de comillas sigue este enfoque.
 
 >[!ENDTABS]
 
-&#x200B;3. Edite el archivo `component-models.json` en la raíz del proyecto, añada la siguiente [definición de modelo](/help/implementing/universal-editor/field-types.md#model-structure) para el nuevo bloque de presupuesto y guarde el archivo.
+3. Edite el archivo `component-models.json` en la raíz del proyecto, añada la siguiente [definición de modelo](/help/implementing/universal-editor/field-types.md#model-structure) para el nuevo bloque de presupuesto y guarde el archivo.
 
 * Consulte el documento [Modelado de contenido para la creación WYSIWYG con proyectos de Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) para obtener más información acerca de lo que es importante tener en cuenta al crear modelos de contenido.
 
@@ -119,7 +119,7 @@ El siguiente ejemplo de bloque de comillas sigue este enfoque.
 
 >[!ENDTABS]
 
-&#x200B;4. Edite el archivo `component-filters.json` en la raíz del proyecto, añada el bloque de cita a la [definición de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) para permitir que el bloque se añada a cualquier sección y guarde el archivo.
+4. Edite el archivo `component-filters.json` en la raíz del proyecto, añada el bloque de cita a la [definición de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) para permitir que el bloque se añada a cualquier sección y guarde el archivo.
 
 >[!BEGINTABS]
 
@@ -147,7 +147,7 @@ El siguiente ejemplo de bloque de comillas sigue este enfoque.
 
 >[!ENDTABS]
 
-&#x200B;5. Con Git, confirme estos cambios en su rama `main`.
+5. Con Git, confirme estos cambios en su rama `main`.
 
 * El compromiso con `main` sólo tiene fines ilustrativos. [Siga las prácticas recomendadas](https://www.aem.live/docs/dev-collab-and-good-practices) y utilice una solicitud de extracción para el trabajo real del proyecto.
 
@@ -196,7 +196,7 @@ Ahora que tiene un bloque de cita de trabajo, puede aplicarle estilo.
 
 ![Creación de una carpeta de comillas](assets/create-block/new-folder.png)
 
-&#x200B;3. En la nueva carpeta `quote`, añada un archivo `quote.js` para implementar la decoración de bloques añadiendo el siguiente JavaScript y guarde el archivo.
+3. En la nueva carpeta `quote`, añada un archivo `quote.js` para implementar la decoración de bloques añadiendo el siguiente JavaScript y guarde el archivo.
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-&#x200B;4. En la carpeta `quote`, añada un archivo `quote.css` para definir el estilo del bloque añadiendo el siguiente código CSS y guarde el archivo.
+4. En la carpeta `quote`, añada un archivo `quote.css` para definir el estilo del bloque añadiendo el siguiente código CSS y guarde el archivo.
 
 >[!BEGINTABS]
 
@@ -263,17 +263,17 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-&#x200B;5. Con Git, confirme estos cambios en su rama `main`.
+5. Con Git, confirme estos cambios en su rama `main`.
 
 * El compromiso con `main` sólo tiene fines ilustrativos. [Siga las prácticas recomendadas](https://www.aem.live/docs/dev-collab-and-good-practices) y utilice una solicitud de extracción para el trabajo real del proyecto.
 
-&#x200B;6. Vuelva a la pestaña del explorador del editor universal donde estaba editando la página del proyecto y vuelva a cargar la página para ver el bloque con estilo.
+6. Vuelva a la pestaña del explorador del editor universal donde estaba editando la página del proyecto y vuelva a cargar la página para ver el bloque con estilo.
 
-&#x200B;7. Vea el bloque de cita con estilo en la página.
+7. Vea el bloque de cita con estilo en la página.
 
 ![El bloque de comillas con estilo en el editor universal](assets/create-block/quote-styled.png)
 
-&#x200B;8. Compruebe que los cambios se hayan insertado en producción navegando a la página publicada. El vínculo es similar al siguiente `https://<branch>--<repo>--<owner>.hlx.page`
+8. Compruebe que los cambios se hayan insertado en producción navegando a la página publicada. El vínculo es similar al siguiente `https://<branch>--<repo>--<owner>.hlx.page`
 
 ![El bloque de cita publicado y con estilo](assets/create-block/quote-styled-published.png)
 
