@@ -4,10 +4,10 @@ description: Aproveche el Centro de Acciones para actuar convenientemente sobre 
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 41e06c75229d78827e35164eca37a96d6feeb730
+source-git-commit: 1bfa9ff24d3515a450216f3569b1e8b0b1e31ecc
 workflow-type: tm+mt
-source-wordcount: '1098'
-ht-degree: 48%
+source-wordcount: '1118'
+ht-degree: 47%
 
 ---
 
@@ -86,4 +86,5 @@ En la tabla siguiente se enumeran los tipos de notificación admitidos actualmen
 | Usuarios añadidos directamente al grupo personalizado | Proactivo | AEM Los usuarios deben añadirse a los grupos de IMS relevantes y estos grupos de IMS deben añadirse como miembros de grupos de. Alinear con [prácticas recomendadas de IMS](/help/security/ims-support.md) | |
 | Contenido JCR faltante | Proactivo | Añada el nodo de contenido JCR que falta. Consulte [Documentación del validador de contenido de Assets](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
 | Flujos de trabajo completados no depurados | Proactivo | Minimice el número de instancias del flujo de trabajo y mejore el rendimiento depurando las instancias del flujo de trabajo con más de 90 días de antigüedad. Aprenda a [configurar tareas de mantenimiento](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance) | |
-| Falta el tipo de recurso de Sling en la página | Proactivo | Añada el nodo de tipo de recurso Sling que falta. Consulte [Documentación del validador de contenido de Assets](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) |
+| Falta el tipo de recurso de Sling en la página | Proactivo | Añada el nodo de tipo de recurso Sling que falta. Consulte [Documentación del validador de contenido de Assets](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
+| Consulta lenta | Proactivo | Corrija las consultas lentas definiendo definiciones de índice correctas tal como sugiere la [hoja de trucos de consultas JCQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf) |
