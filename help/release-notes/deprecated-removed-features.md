@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: 1ff3a9a0ff6b408794956323f12194f136d6b2ad
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2800'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -521,11 +521,11 @@ Este paquete se puede incluir indirectamente añadiendo dependencias de terceros
 
 ### Requisitos en tiempo de compilación
 
-Estos ajustes son necesarios para permitir la creación del proyecto con versiones más recientes de Java, pero no son necesarios para la compatibilidad de tiempo de ejecución. Los complementos de Maven se pueden actualizar en cualquier momento, ya que son compatibles con versiones anteriores de Java.
+Estos ajustes son necesarios para permitir la compilación del proyecto con versiones más recientes de Java, pero no son necesarios para la compatibilidad de tiempo de ejecución. Los complementos de Maven se pueden actualizar en cualquier momento, ya que son compatibles con versiones anteriores de Java.
 
 #### Versión mínima de bnd-maven-plugin {#bnd-maven-plugin}
 
-Actualice el uso de bnd-maven-plugin a la versión 6.4.0 para garantizar la compatibilidad con los tiempos de ejecución de JVM más recientes. Las versiones 7 o posteriores no son compatibles con Java 11 o versiones posteriores, por lo que no se recomienda una actualización a esa versión en este momento.
+Actualice el uso de bnd-maven-plugin a la versión 6.4.0 o superior para garantizar la compatibilidad con los tiempos de ejecución de JVM más recientes. Las versiones 7 o posteriores no son compatibles con Java 11 o versiones posteriores, por lo que no se recomienda una actualización a dicha versión en este momento.
 
 #### Versión mínima de aemanalyser-maven-plugin {#aemanalyser-maven-plugin}
 
