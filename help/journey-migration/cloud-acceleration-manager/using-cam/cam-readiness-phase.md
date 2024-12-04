@@ -4,9 +4,9 @@ description: Esta página proporciona información general sobre la fase de prep
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 feature: Migration
 role: Admin
-source-git-commit: f86d681c8f8cb6d602058ef30b648c53ff7bad69
+source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1096'
 ht-degree: 7%
 
 ---
@@ -60,7 +60,7 @@ Siga los pasos a continuación para ir a la fase de preparación:
    ![Obtener clave de carga](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
 
    >[!IMPORTANT]
-   >El informe se puede cargar manualmente, pero el uso de la clave de carga optimiza la operación. Tenga en cuenta que el informe no se puede cargar manualmente si se encuentra en el modo de incógnito del explorador.
+   >El informe se puede cargar manualmente, pero el uso de la clave de carga optimiza la operación. Tenga en cuenta que el informe no se puede cargar manualmente si su tamaño es de aproximadamente 200 MB o más. El informe tampoco se puede cargar utilizando el modo de incógnito del explorador.
 
 1. Una vez cargado un nuevo informe, puede ver el informe Análisis de las prácticas recomendadas en CAM.
 

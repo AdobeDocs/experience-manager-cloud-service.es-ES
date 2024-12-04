@@ -4,10 +4,10 @@ description: Aprenda a utilizar el Analizador de prácticas recomendadas para co
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 9f5d7ee97da1c92d3a3d4573fa3ec737356f54a9
+source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
 workflow-type: tm+mt
-source-wordcount: '2701'
-ht-degree: 39%
+source-wordcount: '2724'
+ht-degree: 38%
 
 ---
 
@@ -85,6 +85,9 @@ Siga esta sección para obtener información sobre la vista del informe Analizad
 
 >[!NOTE]
 >Tiene la opción de omitir la carga automática a CAM al seleccionar **Omitir la carga automática de informe a CAM**. Si decide omitir, deberá descargar manualmente el informe de BPA como archivo de valor separado por comas y, a continuación, cargar el archivo en CAM. Se recomienda utilizar la opción de clave de carga, ya que optimiza la operación.
+
+>[!IMPORTANT]
+>Cuando se carga manualmente en CAM, el tamaño de los informes está restringido a aproximadamente 200 MB. Para informes más grandes, deberá aprovechar la carga automática.
 
 1. El botón **Generate** se activa cuando se proporciona una clave válida. Haga clic en **Generar** para iniciar la generación del informe.
 
