@@ -6,7 +6,7 @@ feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 source-git-commit: 13c1febf55c9b15eab49d356fc1ba3f3d91ad055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2374'
 ht-degree: 100%
 
@@ -424,7 +424,7 @@ An interactive PDF document contains various elements that constitute a form. Th
 
 When such an interactive PDF document is flattened using the Communications APIs, the state of the form is not retained. To ensure that the state of the form is retained even after the form is flattened, set the Boolean value _retainFormState_ to True to save and retain the state of the form.  -->
 
-## Consulte también {#see-also}
+## Ver también {#see-also}
 
 * [Procesamiento de comunicaciones: API sincrónicas](/help/forms/aem-forms-cloud-service-communications.md)
 * [Procesamiento de comunicaciones: API por lotes](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

@@ -8,9 +8,9 @@ feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 role: User, Developer
 source-git-commit: 13c1febf55c9b15eab49d356fc1ba3f3d91ad055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2323'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -222,12 +222,12 @@ El controlador de errores personalizado es una función (Biblioteca de cliente) 
 Para comprender cómo crear y utilizar un controlador de errores personalizado con la acción [Invocar servicio del editor de reglas](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=es#invoke), vamos a ver un ejemplo de formulario adaptable con dos campos, **ID de mascota** y **Nombre de mascota**. Además, usar un controlador de errores personalizado en el campo **ID de mascota** para comprobar si hay varios errores devueltos por el punto final REST configurado para invocar un servicio externo, por ejemplo, `200 - OK`, `404 - Not Found` y `400 - Bad Request`.
 
 Para añadir y utilizar un controlador de errores personalizado en un formulario adaptable, realice los siguientes pasos:
-1. [Agregar función personalizada para el controlador de errores](#1-add-the-custom-function-for-the-error-handler)
+1. [Añadir función personalizada para el controlador de errores](#1-add-the-custom-function-for-the-error-handler)
 2. [Utilice el Editor de reglas para configurar el controlador de errores personalizado](#use-custom-error-handler)
 
 #### 1. Añada la función personalizada para el controlador de errores
 
-Para obtener información sobre cómo agregar funciones personalizadas, haga clic en [Crear funciones personalizadas en un formulario adaptable basadas en componentes principales](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function).
+Para obtener información sobre cómo añadir funciones personalizadas, haga clic en [Crear funciones personalizadas en un formulario adaptable basadas en componentes principales](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function).
 
 <!-- To create a custom error function, perform the following steps:
 
@@ -237,7 +237,7 @@ Para obtener información sobre cómo agregar funciones personalizadas, haga cli
 4. Create a folder named `js`.
 5. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder. -->
 
-1. Agregue el siguiente código para el controlador de error personalizado en el archivo JavaScript, por ejemplo, `function.js`. El archivo contiene el código del controlador de errores personalizado.
+1. Añada el siguiente código para el controlador de errores personalizado en el archivo JavaScript, por ejemplo, `function.js`. El archivo contiene el código del controlador de errores personalizado.
 Vamos a añadir el siguiente código al archivo JavaScript para mostrar la respuesta y los encabezados, recibidos del extremo del servicio REST, en la consola del explorador.
 
    ```javascript
@@ -258,8 +258,8 @@ Vamos a añadir el siguiente código al archivo JavaScript para mostrar la respu
 
    >[!NOTE]
    >
-   > * Para llamar al controlador de error predeterminado desde el controlador de error personalizado, se utiliza la línea siguiente del código de ejemplo: `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
-   > * En el archivo `.content.xml`, agregue las propiedades `allowProxy` y `categories` para utilizar la biblioteca de cliente del controlador de error personalizado en un formulario adaptable.
+   > * Para llamar al controlador de errores predeterminado desde el controlador de errores personalizado, se utiliza la siguiente línea del código de ejemplo: `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+   > * En el archivo `.content.xml`, añada las propiedades `allowProxy` y `categories` para utilizar la biblioteca de cliente del controlador de errores personalizado en un formulario adaptable.
    >
    >   * `allowProxy = [Boolean]true`
    >   * `categories= customfunctionsdemo`
