@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 114b7e795df6267d76d1bd923a7dff8826c67029
 workflow-type: tm+mt
 source-wordcount: '3296'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -169,12 +169,12 @@ AEM Si &quot;Actualizaciones de la versión de la versión de la&quot; está act
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### Error de ingesta debido a que el entorno de la nube no está listo {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
+### Error de ingesta debido a que el entorno de nube no está listo {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_cloud_environment_not_in_ready_state"
->title="El Entorno De Nube No Está En Estado Listo"
->abstract="En casos excepcionales, el entorno de la nube de Target puede estar experimentando problemas inesperados, lo que provocará que la ingesta falle."
+>title="El entorno de nube no está listo"
+>abstract="En casos excepcionales, el entorno de la nube de destino podría estar experimentando problemas inesperados, lo que hará que la ingesta falle."
 
 En casos excepcionales, el entorno del Cloud Service de destino de la ingesta puede estar experimentando problemas inesperados. Como resultado, la ingesta fallará ya que el entorno no está en el estado de preparado esperado. Consulte el registro de ingesta para mostrar más detalles del estado de error encontrado.
 
