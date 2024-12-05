@@ -5,9 +5,9 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9d169ad7a2982ee44d9b47a418d50b2806942ce2
+source-git-commit: b2852673ad313e5ea6be6dc0ed185d60a46fedeb
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1020'
 ht-degree: 16%
 
 ---
@@ -86,7 +86,7 @@ Si seleccionó el tipo de certificado *certificado administrado por el Adobe*, c
 
 Para verificar el dominio en uso, es necesario agregar y verificar un CNAME.
 
-Un registro `CNAME` o A, una vez aprovisionado, enruta todo el tráfico de Internet para el dominio a donde señale. Se produce una interrupción si esa ubicación no está preparada para abastecer el tráfico. Si no se ha probado, puede haber errores en el contenido. Por este motivo, este paso siempre se realiza una vez finalizada la prueba y está listo para su lanzamiento.
+Un tipo de registro `CNAME` o un tipo de registro `A`, una vez aprovisionado, enruta todo el tráfico de Internet para el dominio a donde señale. Se produce una interrupción si esa ubicación no está preparada para abastecer el tráfico. Si no se ha probado, puede haber errores en el contenido. Por este motivo, este paso siempre se realiza una vez finalizada la prueba y está listo para su lanzamiento.
 
 Para establecer esta configuración, determine si se debe configurar un registro `CNAME` o Apex para que apunte el nombre de dominio personalizado al nombre de dominio de Cloud Manager. Las siguientes secciones de este documento pueden ayudarle a determinar qué tipo de registro es apropiado para su configuración de DNS.
 
@@ -130,7 +130,7 @@ Agregue los siguientes `A` registros a la configuración DNS de su dominio a tra
 
 >[!TIP]
 >
->El *CNAME* o *Registro A* se puede establecer en el servidor DNS de administración para ahorrarle tiempo.
+>El *registro CNAME* o *Un registro* se puede establecer en el servidor DNS de administración para ahorrarle tiempo.
 
 <!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)
