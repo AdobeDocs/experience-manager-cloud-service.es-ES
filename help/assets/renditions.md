@@ -4,10 +4,10 @@ description: Descubra cómo los AEM Assets y Dynamic Media simplifican la admini
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: a3a6456dec178c36c9fe8acfb6f98915fc86e490
+source-git-commit: eb5886b5ed6a6f5b52303b4fccf5c266178b36f8
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,12 +25,22 @@ Las representaciones se clasifican como estáticas y dinámicas; cada tipo prese
 ## Representaciones estáticas {#static-renditions}
 
 Las representaciones estáticas son versiones generadas previamente de recursos digitales, que generalmente se crean durante la ingesta o modificación de recursos. Estas representaciones están optimizadas para propósitos y plataformas específicos, como miniaturas web, formatos compatibles con dispositivos móviles para un diseño interactivo o versiones de alta resolución para la impresión, lo que garantiza una experiencia eficiente y coherente.
-Obtenga información sobre [cómo ver y descargar](#view-dynamic-renditions) representaciones estáticas en [!DNL Experience Manager Assets].
+Obtenga información sobre cómo [ver y descargar representaciones estáticas](#view-and-download-static-renditions) en Experience Manager Assets.
+
+### Ver y descargar representaciones estáticas{#view-and-download-static-renditions}
+
+Para ver las representaciones de recursos y descargarlas, siga estos pasos:
+
+1. En la vista Assets, haz clic en **Assets**, navega a una carpeta, selecciona un recurso y haz clic en **Detalles**.
+1. Haga clic en el icono de la representación, disponible en el panel derecho.
+1. Seleccione una representación para previsualizarla y haga clic en ![icono de descarga](/help/assets/assets/download-icon.svg) para descargarla.
+
+   ![Ver y descargar representaciones dinámicas](/help/assets/assets/view-download-static-rendition.png)
 
 ## Representaciones dinámicas {#dynamic-renditions}
 
 Las representaciones dinámicas son versiones personalizadas de recursos creados en tiempo real para satisfacer necesidades específicas, como cambiar el tamaño de las imágenes en función de la resolución del dispositivo o recortarlas para adaptarlas a diferentes relaciones de aspecto.
-Estas representaciones permiten a las organizaciones ofrecer experiencias personalizadas y optimizadas para diversas necesidades de audiencia. Puede ver y descargar representaciones dinámicas en [!DNL Experience Manager Assets].
+Estas representaciones permiten a las organizaciones ofrecer experiencias personalizadas y optimizadas para diversas necesidades de audiencia. Puede ver y descargar representaciones dinámicas en Experience Manager Assets.
 
 ## Representaciones de Dynamic Media {#dynamic-media-renditions}
 
