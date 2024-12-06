@@ -4,9 +4,9 @@ description: Aprenda a utilizar Cloud Acceleration Manager para introducir conte
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 114b7e795df6267d76d1bd923a7dff8826c67029
+source-git-commit: 550d84f43cba472d74c7be6323bd69ba808c96f8
 workflow-type: tm+mt
-source-wordcount: '3296'
+source-wordcount: '3322'
 ht-degree: 12%
 
 ---
@@ -64,8 +64,9 @@ Siga los pasos a continuación para ingerir el conjunto de migración mediante C
    >[!IMPORTANT]
    > AEM Solo puede iniciar una ingesta en el entorno de destino si pertenece al grupo local **administradores** en el servicio de creación de Cloud Service de destino Si no puede iniciar una ingesta, consulte [No se puede iniciar la ingesta](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) para obtener más detalles.
 
-1. Una vez seleccionadas las opciones de ingesta, se mostrará una estimación de su duración. Se trata de una estimación del esfuerzo máximo basada en datos históricos de ingestas similares.
+1. Una vez seleccionadas las opciones de ingesta, se puede mostrar una estimación de su duración. Se trata de una estimación del esfuerzo máximo basada en datos históricos de ingestas similares.
 
+   * Esta estimación no se calcula ni se muestra para **ingestas sin borrado**, ya que CAM no sabe cuánto contenido hay en el sistema de destino en este caso.
    * Esta estimación solo se calcula y se muestra si los valores &quot;Comprobar tamaño&quot; de la extracción se recopilaron y están disponibles.
    * Este valor es una estimación y, aunque se calcula de forma inteligente, no debe considerarse exacto. Varios factores pueden cambiar la duración real.
    * Mientras se ejecuta la ingesta, este valor también estará disponible en el cuadro de diálogo de duraciones, al que se accede mediante la acción &quot;**Ver duraciones**&quot; de la ingesta.
