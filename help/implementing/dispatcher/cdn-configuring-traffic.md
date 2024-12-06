@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo configurar el tráfico de CDN decl
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: e5e0606c83f144f92f9ae57e5380a30389e8df1b
+source-git-commit: 4e65a0fb32273548860731c09e27cb58fab93ab4
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1377'
 ht-degree: 1%
 
 ---
@@ -241,7 +241,7 @@ data:
 
 ## Transformaciones de respuesta {#response-transformations}
 
-Las reglas de transformación de respuestas permiten establecer y anular la configuración de encabezados de las respuestas salientes de CDN. Además, consulte el ejemplo anterior para hacer referencia a una variable configurada anteriormente en una regla de transformación de solicitud.
+Las reglas de transformación de respuestas permiten establecer y anular la configuración de encabezados de las respuestas salientes de CDN. Además, consulte el ejemplo anterior para hacer referencia a una variable configurada anteriormente en una regla de transformación de solicitud. También se puede establecer el código de estado de la respuesta.
 
 Ejemplo de configuración:
 
@@ -282,6 +282,15 @@ data:
           - type: set
             respHeader: x-resp-header-2
             value: value-set-by-resp-rule-2
+      # Example: setting status code
+      - name: status-code-rule
+        when:
+          reqProperty: path
+          like: status-code
+        actions:
+          - type: set
+            respProperty: status
+            value: '410'        
 ```
 
 **Acciones**
@@ -291,6 +300,7 @@ En la tabla siguiente se explican las acciones disponibles.
 | Nombre | Propiedades | Significado |
 |-----------|--------------------------|-------------|
 | **conjunto** | reqHeader, valor | Establece un encabezado especificado en un valor determinado de la respuesta. |
+|          | respProperty, valor | Establece una propiedad response. Admite solo la propiedad &quot;status&quot; para establecer el código de estado. |
 | **anular** | respHeader | Quita un encabezado especificado de la respuesta. |
 
 ## Selectores de origen {#origin-selectors}
