@@ -3,13 +3,13 @@ title: Asignación de rutas para Edge Delivery Services
 description: Aprenda a asignar rutas de página utilizadas en la instancia de creación de AEM a rutas de página públicas utilizadas en el sitio web y a controlar qué contenido se publica en Edge Delivery Services.
 feature: Edge Delivery Services
 role: User
-source-git-commit: 2727744f276ee5facae718a987dcc6dc54d4e917
-workflow-type: ht
+exl-id: 3d68135d-e84c-4bf4-93d1-38a0be70ce4a
+source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+workflow-type: tm+mt
 source-wordcount: '567'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
-
 
 # Asignación de rutas para Edge Delivery Services {#path-mapping}
 
@@ -20,7 +20,7 @@ Aprenda a asignar rutas de página utilizadas en la instancia de creación de AE
 Para poder crear contenido WYSIWYG mediante AEM y publicarlo en Edge Delivery Services, debe configurar la asignación de rutas del proyecto. Esta asignación tiene dos propósitos.
 
 * Se asigna y se crea una relación entre las rutas de página utilizadas en su instancia de creación de AEM y las rutas de página públicas utilizadas en su sitio web.
-* Controla qué contenido (páginas, hojas, recursos, etc.) se publica en Edge Delivery Services.
+* Controla qué contenido (páginas, hojas, recursos, etc.) se publica en los Edge Delivery Services.
 
 La asignación de ruta debe configurarse para cada proyecto de forma individual y según el contenido del proyecto y la estructura de la URL. AEM lo utiliza durante la publicación de contenido y al editarlo en el [editor universal.](/help/sites-cloud/authoring/universal-editor/navigation.md)
 
@@ -79,7 +79,7 @@ Las asignaciones de rutas se pueden configurar de una de las dos maneras siguien
 
    ```text
    curl --request POST \
-     --url https://admin.hlx.page/config/{org}/sites/{site}/public.json \
+     --url https://admin.aem.page/config/{org}/sites/{site}/public.json \
      --header 'Content-Type: application/json' \
      --header 'x-auth-token: ......' \
      --data '{
