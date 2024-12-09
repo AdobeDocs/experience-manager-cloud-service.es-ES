@@ -3,10 +3,11 @@ title: Assets Prime
 description: Obtenga más información sobre los aspectos clave de Assets Prime, como las ventajas clave, los tipos de usuarios y sus privilegios.
 feature: Asset Management
 role: User, Admin
-source-git-commit: f033efd954ea7f9d27a891bfb9c0226e9d9c1432
+exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
+source-git-commit: 92faabc50ce4b83ad1015bbbadeac416d66c3b0b
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 2%
+source-wordcount: '1124'
+ht-degree: 15%
 
 ---
 
@@ -17,37 +18,43 @@ ht-degree: 2%
 
 ![Imagen del titular de AEM Assets Prime](/help/assets/assets/aem-assets-prime-package-banner.png)
 
-Assets as a Cloud Service Prime includes a lightweight DAM that enables you to perform various key capabilities, such as:
+Assets as a Cloud Service Prime incluye un DAM ligero que le permite realizar varias funciones clave, como las siguientes:
 
-* ****
+* **Servicios de biblioteca y administración de recursos**: herramientas que permiten a los usuarios ingestar, almacenar, catalogar, controlar, administrar y gobernar los recursos digitales de una marca en un repositorio centralizado
 
-* ****
+* **Búsqueda, descubrimiento y colaboración**: herramientas que permiten a los usuarios examinar, descubrir, colaborar y compartir los recursos que necesitan para crear experiencias de cliente enriquecidas.
 
-* ****
+* **Seguridad y Rights Management**: herramientas para administrar el acceso, los permisos, los derechos y la seguridad con el fin de garantizar el cumplimiento, la coherencia y la integridad de la marca.
 
-* ****
+* **Conexiones de Creative Cloud**: herramientas que permiten a los equipos creativos y de marketing colaborar con el acceso simplificado, los comentarios, la revisión y las anotaciones para actualizar o finalizar los recursos digitales.
 
-* ****
+* **Conexiones de Experience Cloud**: herramientas para admitir el acceso nativo a recursos digitales desde otras aplicaciones y servicios de Experience Cloud.
 
-* ****
+* **Experiencia del portal de distribución sin opciones de extensibilidad (Content Hub)**: Herramientas para ampliar el acceso a los recursos digitales aprobados de una marca a las partes interesadas extendidas a fin de garantizar el uso y la coherencia de la marca.
 
-* ****
+* **Integraciones**: integraciones con otras aplicaciones de Adobe y que no sean de Adobe.
 
-* ****
+* **Dynamic Media (complemento)**: herramientas para transformar y enviar imágenes, vídeos y otro contenido emergente para experiencias multimedia interactivas enriquecidas para cualquier dispositivo a escala.
 
-[](/help/assets/assets-ultimate-overview.md)
+  >[!NOTE]
+  >
+  >Dynamic Media con capacidades OpenAPI, que le proporciona acceso a modificadores de imagen básicos como rotar, recortar (solo manual: sin recorte inteligente), voltear, tamaño, preferir, pc, altura, anchura, calidad, formato y flujo de vídeo adaptable, también está disponible con Assets Prime. Póngase en contacto con el equipo de la cuenta de Adobe para obtener más información.
 
-This article provides an end-to-end workflow to enable Assets as a Cloud Service Prime.
+1. [Crear un nuevo programa](/help/journey-onboarding/create-program.md).
+
+Sin embargo, a medida que sus necesidades de DAM crezcan y necesite más funcionalidades, como extensibilidad de la interfaz de usuario, automatización impulsada por API e implementación de código personalizado, debe considerar la posibilidad de actualizar a [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
+
+Este artículo proporciona un flujo de trabajo completo para habilitar Assets as a Cloud Service Prime.
 
 ## Habilitar Assets as a Cloud Service Prime{#enable-assets-prime}
 
 Habilite Assets Prime al crear un nuevo programa con Cloud Manager. Ejecute los siguientes pasos:
 
-1. Inicie sesión en Cloud Manager como administrador del sistema. Ensure that you select the right organization while logging in.
+1. Inicie sesión en Cloud Manager como administrador del sistema. Asegúrese de seleccionar la organización correcta al iniciar sesión.
 
    >[!NOTE]
    >
-   >Ensure that you are added to the appropriate Cloud Manager product profile to add a new program. [](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)
+   >Asegúrese de que está añadido al perfil de producto de Cloud Manager correspondiente para añadir un nuevo programa. Para obtener más información, consulte [Permisos basados en roles en Cloud Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions).
 
 1. [Crear un nuevo programa](/help/journey-onboarding/create-program.md).
 
@@ -60,66 +67,66 @@ Habilite Assets Prime al crear un nuevo programa con Cloud Manager. Ejecute los 
 
 1. Haga clic en la tarjeta de programa y luego en **[!UICONTROL Agregar entorno]**.
 
-1. ****
+1. Especifique el nombre del entorno, defina una región y haga clic en **[!UICONTROL Guardar]** para crear el entorno.
 
-   ![](assets/aem-assets-prime-add-environment.png)
+   ![Agregar entorno a Assets Prime](assets/aem-assets-prime-add-environment.png)
 
 >[!NOTE]
 >
->Assets Prime only allows you to create a production environment. The option to Add environment is no longer available once the production environment is created successfully.
+>Assets Prime solo le permite crear un entorno de producción. La opción Añadir entorno ya no está disponible una vez que el entorno de producción se ha creado correctamente.
 
-Assets Prime is now enabled for Experience Manager Assets as a Cloud Service.
+Assets Prime ahora está habilitado para Experience Manager Assets as a Cloud Service.
 
-![](assets/aem-assets-prime-setup-complete.png)
+![AEM Assets Prime está disponible](assets/aem-assets-prime-setup-complete.png)
 
-System administrator is automatically entitled as AEM administrator and receives an email to navigate to Admin Console to manage product profiles.
+AEM El administrador del sistema tiene automáticamente derecho de administrador de la aplicación y recibe un correo electrónico para ir al Admin Console y administrar los perfiles de producto.
 
 
-Your AEM as a Cloud Service instance on Admin Console comprises the following product profiles:
+La instancia de AEM as a Cloud Service en Admin Console consta de los siguientes perfiles de producto:
 
-* AEM Administrators
+* Administradores de AEM
 
 * Usuarios de AEM 
 
-* [AEM Assets Collaborator Users](#onboard-collaborator-users)
+* [Usuarios colaboradores de AEM Assets](#onboard-collaborator-users)
 
-* [AEM Assets Power Users](#onboard-power-users)
+* [Usuarios avanzados de AEM Assets](#onboard-power-users)
 
 
-![Perfiles de producto de AEM Assets](assets/aem-assets-product-profiles.png)
+![Perfiles de producto para AEM Assets](assets/aem-assets-product-profiles.png)
 
-Puede empezar a añadir usuarios o grupos de usuarios a los perfiles de producto de Usuarios de AEM Assets Collaborator y Usuarios avanzados de AEM Assets. Para obtener más información, consulte [Incorporar usuarios de AEM Assets Collaborator](#onboard-collaborator-users) y [Incorporar usuarios de AEM Assets Power](#onboard-power-users).
+Puede empezar a añadir usuarios o grupos de usuarios a los perfiles de producto de AEM Assets, usuarios de Collaborator y usuarios avanzados de AEM Assets. Para obtener más información, consulte [AEM Assets incorporados, usuarios colaboradores](#onboard-collaborator-users) y [AEM Assets incorporados, usuarios avanzados](#onboard-power-users).
 
-`delivery`
+Si ha habilitado Content Hub para Assets as a Cloud Service, hay una nueva instancia creada dentro del Admin Console as a Cloud Service de AEM Assets con `delivery` como sufijo:
 
-![](assets/new-instance-content-hub.png)
-
->[!NOTE]
->
->`contenthub`
-
-`author``publish`
-
-`AEM Assets Limited Users`
-
-![](assets/content-hub-product-profile.png)
-
-You can start adding users or user groups to this product profile to provide them access to Content Hub.
+![Nueva instancia para Content Hub](assets/new-instance-content-hub.png)
 
 >[!NOTE]
 >
->`contenthub``Limited Users``delivery`
+>Si ha aprovisionado Content Hub antes del 14 de agosto de 2024, la nueva instancia se creará con `contenthub` como sufijo.
 
-## Onboard AEM Assets Collaborator users {#onboard-collaborator-users}
+Tenga en cuenta que no hay `author` ni `publish` en el nombre de instancia de Content Hub.
 
-AEM Assets Collaborator users can work with assets from Experience manager via integrations of Assets available to your organization in other Adobe products and non-Adobe applications, create and edit assets using built-in Adobe Express and Firefly leveraging professionally designed templates, brand kits, Adobe Stock assets, and so on, and access and leverage approved assets from your organization using AEM Assets Content Hub portal.
+Haga clic en el nombre de la instancia para ver el perfil de producto de Content Hub `AEM Assets Limited Users`.
 
-To onboard Collaborator users:
+![Perfil de producto de Content Hub](assets/content-hub-product-profile.png)
 
-1. Access Experience Manager Assets product profiles by clicking the AEM as a Cloud Service product name in the list of products on Admin Console.
+Puede empezar a añadir usuarios o grupos de usuarios a este perfil de producto para proporcionarles acceso a Content Hub.
 
-1. Click the production author instance for AEM as a Cloud Service:
-   ![](assets/aem-cloud-service-instances.png)
+>[!NOTE]
+>
+>Si ha aprovisionado Content Hub antes del 14 de agosto de 2024, el perfil de producto de Content Hub tiene `contenthub` mencionado después de `Limited Users` en lugar de `delivery`.
+
+## Incorporación de usuarios de AEM Assets Collaborator {#onboard-collaborator-users}
+
+AEM Assets Los usuarios de Collaborator pueden trabajar con recursos de Experience Manager mediante integraciones de Assets disponibles para su organización en otros productos de Adobe y aplicaciones que no sean de Adobe, crear y editar recursos mediante Adobes Express y Firefly integrados aprovechando las plantillas, los kits de marca, los recursos de Adobe Stock, etc. de diseño profesional, y acceder a los recursos aprobados de su organización y aprovecharlos mediante el portal de AEM Assets Content Hub.
+
+Para incorporar usuarios de Collaborator:
+
+1. Acceda a los perfiles de producto de Experience Manager Assets haciendo clic en el nombre del producto de AEM as a Cloud Service en la lista de productos en el Admin Console.
+
+1. Haga clic en la instancia de autor de producción para AEM as a Cloud Service:
+   ![Perfiles de producto para AEM as a Cloud Service](assets/aem-cloud-service-instances.png)
 
 1. Haga clic en el perfil de producto Usuarios de Collaborators y luego en **[!UICONTROL Agregar usuarios]** para agregar el usuario al perfil de producto.
    ![Perfil de producto de usuario](assets/aem-assets-collaborator-user-permissions.png)
@@ -128,28 +135,28 @@ To onboard Collaborator users:
 
 También puede acceder y ver los servicios asignados a los usuarios de Collaborator, como se muestra en la siguiente imagen:
 
-![](assets/aem-assets-collaborator-users.png)
+![Servicios para usuarios de Collaborator](assets/aem-assets-collaborator-users.png)
 
 Los servicios `Adobe Express` y `AEM Assets Collaborator Users` están habilitados de manera predeterminada. Puede desactivar y activar la opción según sus necesidades; sin embargo, Adobe recomienda utilizar los servicios predeterminados habilitados para los perfiles de producto.
 
-## Incorporación de usuarios avanzados de AEM Assets {#onboard-power-users}
+## AEM Assets integrados Usuarios avanzados {#onboard-power-users}
 
-Los usuarios avanzados de AEM Assets pueden acceder a todas las funciones de AEM Assets, incluida la administración de recursos, permisos, metadatos y al control y la automatización generales de los recursos digitales, trabajar con recursos de Experience Manager mediante integraciones de Assets disponibles para su organización en otras aplicaciones de Adobe y que no sean de Adobe, crear y editar recursos con Adobe Express y Firefly integrados aprovechando las plantillas diseñadas profesionalmente, los kits de marca, los recursos de Adobe Stock, etc., y acceder y aprovechar los recursos aprobados de su organización mediante AEM Assets Content Hub Portal.
+AEM Assets Los usuarios avanzados pueden acceder a todas las funciones de los AEM Assets, incluida la administración de recursos, permisos, metadatos y al control y la automatización generales de los recursos digitales, trabajar con recursos de Experience Manager mediante integraciones de Assets disponibles para su organización en otras aplicaciones de Adobe y que no sean de Adobe, crear y editar recursos mediante Adobes Express y Firefly integrados que aprovechan plantillas diseñadas profesionalmente, kits de marca, recursos de Adobe Stock, etc., y acceder y aprovechar los recursos aprobados de su organización mediante el portal de AEM Assets de Content Hub.
 
 Para incorporar usuarios avanzados:
 
 1. Acceda a los perfiles de producto de Experience Manager Assets haciendo clic en el nombre del producto de AEM as a Cloud Service en la lista de productos en el Admin Console.
 
-1. Click the production author instance for AEM as a Cloud Service:
-   ![](assets/aem-cloud-service-instances.png)
+1. Haga clic en la instancia de autor de producción para AEM as a Cloud Service:
+   ![Perfiles de producto para AEM as a Cloud Service](assets/aem-cloud-service-instances.png)
 
-1. ****
-   ![](assets/aem-assets-power-user-permissions.png)
+1. Haga clic en el perfil de producto Usuarios avanzados y haga clic en **[!UICONTROL Agregar usuarios]** para agregar el usuario al perfil de producto.
+   ![Perfil de producto de usuario](assets/aem-assets-power-user-permissions.png)
 
-1. ****
+1. Haga clic en **[!UICONTROL Guardar]** para guardar los cambios.
 
-You can also access and view the services assigned to Power users, as depicted in the following image:
+También puede acceder y ver los servicios asignados a usuarios avanzados, como se muestra en la siguiente imagen:
 
-![](assets/aem-assets-power-users.png)
+![Servicios para usuarios avanzados](assets/aem-assets-power-users.png)
 
-`Adobe Express``AEM Assets Power Users` You can turn the toggle off and on, as per your requirements, however, Adobe recommends to use the default services enabled for the product profiles.
+Los servicios `Adobe Express` y `AEM Assets Power Users` están habilitados de manera predeterminada. Puede desactivar y activar la opción según sus necesidades; sin embargo, Adobe recomienda utilizar los servicios predeterminados habilitados para los perfiles de producto.
