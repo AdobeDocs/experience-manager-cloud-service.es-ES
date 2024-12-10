@@ -3,10 +3,11 @@ title: Redirecciones de URL sin canalizaciones
 description: Aprenda a declarar redirecciones 301 o 302 sin acceso a canalizaciones Git o Cloud Manager.
 feature: Dispatcher
 role: Admin
-source-git-commit: 36b7d72f24bd60ad94762c9c9937105bea6e31b6
+exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
+source-git-commit: c80454204837529007c1fda7eef4486c213eb509
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -57,9 +58,9 @@ maps:
   path: /content/dam/redirectmaps/mysite-redirectmap.txt
 ```
 
-A continuación, en un archivo de configuración de Apache como `rewrites/rewrite.rules` o `<yourfile>.vhost`, debe configurar el archivo de asignación al que hace referencia la propiedad de nombre (`my.map` en el ejemplo anterior).
+A continuación, en un archivo de configuración de Apache como `rewrites/rewrite.rules` o `<yourfile>.vhost`, debe configurar el archivo de asignación al que hace referencia la propiedad de nombre (`my.map` en el ejemplo anterior). Una vez cargado, este archivo de asignación se guarda en el almacenamiento local de Dispatcher en la ubicación **fija** `/tmp/rewrites/`.
 
-La directiva `RewriteMap` debe indicar que los datos están almacenados en un formato de archivo de administrador de base de datos (DBM) utilizando el formato `sdbm` (DBM simple).
+La directiva `RewriteMap` debe indicar que los datos se almacenan en un formato de archivo de administrador de base de datos (DBM) utilizando el formato `sdbm` (DBM simple), y la ruta de acceso completa del archivo se deriva del prefijo de ubicación de almacenamiento y de la propiedad name.
 
 El resto de la configuración depende del formato de `redirectmap.txt`. El formato más sencillo, que se muestra en el ejemplo siguiente, es una asignación individual entre la dirección URL original y la asignada:
 
