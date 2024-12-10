@@ -4,10 +4,10 @@ description: Aprenda a crear bloques instrumentados para utilizarlos con el edit
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+source-git-commit: fb7da1530f916ec63d5993446fd0c328af09ae7c
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 100%
+source-wordcount: '1415'
+ht-degree: 96%
 
 ---
 
@@ -45,13 +45,13 @@ El siguiente ejemplo de bloque de comillas sigue este enfoque.
 
 ### Crear la definición y el modelo del bloque {#create-block-model}
 
-1. Clone el proyecto de GitHub localmente que ha creado en la [Guía de introducción para desarrolladores para la creación WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) y ábrala en un editor de su elección.
+1\. Clone el proyecto de GitHub localmente que creó en la guía de introducción para desarrolladores de [para la creación de WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) y ábralo en un editor de su elección.
 
 * El código Microsoft se utiliza aquí con fines ilustrativos.
 
 ![Clonación del proyecto](assets/create-block/clone.png)
 
-&#x200B;2. Edite el archivo `component-definition.json` en la raíz del proyecto, añada la siguiente definición para el nuevo bloque de cita y guarde el archivo.
+2\. Edite el archivo `component-definition.json` en la raíz del proyecto, agregue la siguiente definición para el nuevo bloque de comillas y guarde el archivo.
 
 >[!BEGINTABS]
 
@@ -83,7 +83,7 @@ El siguiente ejemplo de bloque de comillas sigue este enfoque.
 
 >[!ENDTABS]
 
-&#x200B;3. Edite el archivo `component-models.json` en la raíz del proyecto, añada la siguiente [definición de modelo](/help/implementing/universal-editor/field-types.md#model-structure) para el nuevo bloque de presupuesto y guarde el archivo.
+3\. Edite el archivo `component-models.json` en la raíz del proyecto y añada la siguiente [definición de modelo](/help/implementing/universal-editor/field-types.md#model-structure) para el nuevo bloque de presupuesto; guarde el archivo.
 
 * Consulte el documento [Modelado de contenido para la creación WYSIWYG con proyectos de Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) para obtener más información acerca de lo que es importante tener en cuenta al crear modelos de contenido.
 
@@ -119,7 +119,7 @@ El siguiente ejemplo de bloque de comillas sigue este enfoque.
 
 >[!ENDTABS]
 
-&#x200B;4. Edite el archivo `component-filters.json` en la raíz del proyecto, añada el bloque de cita a la [definición de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) para permitir que el bloque se añada a cualquier sección y guarde el archivo.
+4\. Edite el archivo `component-filters.json` en la raíz del proyecto y añada el bloque de comillas a la [definición de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) para permitir que el bloque se añada a cualquier sección y guardar el archivo.
 
 >[!BEGINTABS]
 
@@ -147,7 +147,7 @@ El siguiente ejemplo de bloque de comillas sigue este enfoque.
 
 >[!ENDTABS]
 
-&#x200B;5. Con Git, confirme estos cambios en su rama `main`.
+5\. Con Git, confirme estos cambios en su rama `main`.
 
 * El compromiso con `main` sólo tiene fines ilustrativos. [Siga las prácticas recomendadas](https://www.aem.live/docs/dev-collab-and-good-practices) y utilice una solicitud de extracción para el trabajo real del proyecto.
 
@@ -190,13 +190,13 @@ Ahora que el bloque de comillas básico está definido y comprometido con el pro
 
 Ahora que tiene un bloque de cita de trabajo, puede aplicarle estilo.
 
-1. Vuelva al editor del proyecto.
+1\. Vuelva al editor del proyecto.
 
-2. Cree una carpeta `quote` dentro de la carpeta `blocks`.
+2\. Cree una carpeta `quote` dentro de la carpeta `blocks`.
 
-![Creación de una carpeta de comillas](assets/create-block/new-folder.png)
+![Creación de una carpeta de cita](assets/create-block/new-folder.png)
 
-&#x200B;3. En la nueva carpeta `quote`, añada un archivo `quote.js` para implementar la decoración de bloques añadiendo el siguiente JavaScript y guarde el archivo.
+3\. En la nueva carpeta `quote`, añada un archivo `quote.js` para implementar la decoración de bloques añadiendo el siguiente JavaScript y guarde el archivo.
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-&#x200B;4. En la carpeta `quote`, añada un archivo `quote.css` para definir el estilo del bloque añadiendo el siguiente código CSS y guarde el archivo.
+4\. En la carpeta `quote`, añada un archivo `quote.css` para definir el estilo del bloque añadiendo el siguiente código CSS y guarde el archivo.
 
 >[!BEGINTABS]
 
@@ -263,17 +263,17 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-&#x200B;5. Con Git, confirme estos cambios en su rama `main`.
+5\. Con Git, confirme estos cambios en su rama `main`.
 
 * El compromiso con `main` sólo tiene fines ilustrativos. [Siga las prácticas recomendadas](https://www.aem.live/docs/dev-collab-and-good-practices) y utilice una solicitud de extracción para el trabajo real del proyecto.
 
-&#x200B;6. Vuelva a la pestaña del explorador del editor universal donde estaba editando la página del proyecto y vuelva a cargar la página para ver el bloque con estilo.
+6\. Vuelva a la pestaña del explorador del editor universal donde estaba editando la página del proyecto y vuelva a cargar la página para ver el bloque con estilo.
 
-&#x200B;7. Vea el bloque de cita con estilo en la página.
+7\. Vea el bloque de cita ahora con estilo en la página.
 
-![El bloque de comillas con estilo en el editor universal](assets/create-block/quote-styled.png)
+![El bloque de cita con estilo en el editor universal](assets/create-block/quote-styled.png)
 
-&#x200B;8. Compruebe que los cambios se hayan insertado en producción navegando a la página publicada. El vínculo es similar al siguiente `https://<branch>--<repo>--<owner>.aem.page`
+8\. Compruebe que los cambios se hayan insertado en producción navegando a la página publicada. El vínculo es similar al siguiente `https://<branch>--<repo>--<owner>.aem.page`
 
 ![El bloque de cita publicado y con estilo](assets/create-block/quote-styled-published.png)
 
@@ -344,4 +344,3 @@ Consulte el documento [Modelado de contenido para la creación WYSIWYG con proye
 >[!TIP]
 >
 >Para obtener una guía completa sobre la creación de un nuevo proyecto de Edge Delivery Services que esté habilitado para la creación WYSIWYG con AEM as a Cloud Service como fuente de contenido, vea [este seminario web de GEM de AEM.](https://experienceleague.adobe.com/es/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
-
