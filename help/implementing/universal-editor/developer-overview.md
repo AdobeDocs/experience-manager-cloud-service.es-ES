@@ -4,9 +4,9 @@ description: AEM Si usted es un desarrollador de interesado en cómo funciona el
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: d82a88e5b7337e9d81a91e812f6a90237e80b1ea
 workflow-type: tm+mt
-source-wordcount: '3139'
+source-wordcount: '3160'
 ht-degree: 0%
 
 ---
@@ -150,7 +150,7 @@ Debe añadir la biblioteca JavaScript necesaria al componente Página de la apli
 1. Añada la biblioteca JavaScript al final del archivo.
 
    ```html
-   <script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>
+   <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
    ```
 
 1. Haga clic en **Guardar todo** y vuelva a cargar el editor universal.
@@ -160,7 +160,12 @@ La página ahora se carga con la biblioteca JavaScript adecuada para permitir qu
 >[!TIP]
 >
 >* La biblioteca se puede cargar en el encabezado o en el pie de página.
->* La biblioteca [ de `universal-editor-embedded.js` está disponible en NPM](https://www.npmjs.com/package/@adobe/universal-editor-cors) y puede alojarla usted mismo si es necesario o colocarla directamente en su aplicación.
+
+>[!NOTE]
+>
+>Ya no se recomienda el método recomendado anteriormente para incluir la biblioteca de JavaScript `<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>` o a través de npmjs.com, ya que el paquete ha quedado obsoleto.
+>
+>Si una aplicación sigue utilizando el paquete obsoleto, el editor universal muestra una advertencia en la interfaz de usuario de que se ha detectado un paquete obsoleto.
 
 ## Definición de una conexión para mantener los cambios {#connection}
 

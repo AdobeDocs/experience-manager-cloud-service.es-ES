@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo acceder al editor universal y cóm
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: edef86c67becf3b8094196d39baa9e69d6c81777
+source-git-commit: 8357caf2b0d396f6a1bd7b6160d6b48d8d6c026c
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 72%
+source-wordcount: '627'
+ht-degree: 62%
 
 ---
 
@@ -24,7 +24,17 @@ AEM Aunque el editor universal puede editar contenido desde cualquier fuente, es
 
 ## Instrumentación de la página {#instrument-page}
 
-El servicio de editor universal requiere un [nombre de recurso uniforme (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) para identificar y utilizar el sistema back-end correcto para el contenido de la aplicación que se está editando. Por lo tanto, se requiere un esquema URN para volver a asignar contenido a los recursos de contenido.
+El editor universal requiere una biblioteca JavaScript para procesar y editar la página en el editor.
+
+Además, el servicio de editor universal requiere un [nombre de recurso uniforme (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) para identificar y utilizar el sistema backend correcto para el contenido en la aplicación que se está editando. Por lo tanto, se requiere un esquema URN para volver a asignar contenido a los recursos de contenido.
+
+### Incluir la biblioteca CORS del editor universal {#cors-library}
+
+Para que el editor universal se conecte a su aplicación, esta debe incluir la biblioteca CORS del editor universal. Añada el siguiente script a su aplicación.
+
+```html
+ <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
+```
 
 ### Creación de conexiones {#connections}
 
