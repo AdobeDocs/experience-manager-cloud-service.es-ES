@@ -1,30 +1,30 @@
 ---
 title: Generar representaciones solo para ubicación para Adobe InDesign
-description: Genere representaciones FPO de recursos nuevos y existentes mediante el flujo de trabajo de Experience Manager Assets y ImageMagick.
+description: Genere representaciones de FPO (solo para ubicación) de recursos nuevos y existentes mediante el flujo de trabajo de Experience Manager Assets y ImageMagick.
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
 exl-id: 869c1c34-6287-4d62-bb7a-aa4df580ac0e
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 979c4accca8b271ba2ff0ba176985c94b6d469c7
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 10%
+source-wordcount: '527'
+ht-degree: 13%
 
 ---
 
 # Generar representaciones solo para ubicación para Adobe InDesign {#fpo-renditions}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación de desarrollador de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/configure-fpo-renditions.html?lang=en) |
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/configure-fpo-renditions) |
 | AEM as a Cloud Service | Este artículo |
 
 Al colocar recursos de gran tamaño de Experience Manager en documentos de Adobe InDesign, un profesional creativo debe esperar un tiempo considerable después de [colocar un recurso](https://helpx.adobe.com/indesign/using/placing-graphics.html). Mientras tanto, se bloquea al usuario el uso del InDesign. Esto interrumpe el flujo creativo y afecta negativamente a la experiencia del usuario. El Adobe permite colocar temporalmente representaciones de pequeño tamaño en documentos de InDesign para empezar. Cuando se requiere la salida final, por ejemplo, para los flujos de trabajo de impresión y publicación, los recursos originales de resolución completa reemplazan la representación temporal en segundo plano. Esta actualización asíncrona en segundo plano acelera el proceso de diseño para mejorar la productividad y no obstaculiza el proceso creativo.
 
-Assets proporciona representaciones que se utilizan solo para ubicación (FPO). Estas representaciones de FPO tienen un tamaño de archivo pequeño, pero son de la misma proporción de aspecto. Si una representación de FPO no está disponible para un recurso, Adobe InDesign utiliza el recurso original en su lugar. Este mecanismo de reserva garantiza que el flujo de trabajo creativo se desarrolle sin interrupciones.
+Assets proporciona representaciones que se utilizan para ubicación solamente (FPO). Estas representaciones de FPO tienen un tamaño de archivo pequeño, pero son de la misma proporción de aspecto. Si una representación de FPO no está disponible para un recurso, Adobe InDesign utiliza el recurso original en su lugar. Este mecanismo de reserva garantiza que el flujo de trabajo creativo se desarrolle sin interrupciones.
 
 Experience Manager as a Cloud Service ofrece funciones de procesamiento de recursos nativas de la nube para generar las representaciones de FPO. Utilice los microservicios de recursos para generar representaciones. Puede configurar la generación de representaciones de los recursos recién cargados y de los recursos que existen en Experience Manager.
 
@@ -59,7 +59,7 @@ Para generar representaciones, seleccione los recursos y siga estos pasos.
 
 ## Ver representaciones de FPO {#view-fpo-renditions}
 
-Puede comprobar las representaciones de FPO generadas una vez finalizado el flujo de trabajo. En la interfaz de usuario de Experience Manager Assets, haga clic en el recurso para abrir una vista previa grande. Abra el carril izquierdo y seleccione **[!UICONTROL Representaciones]**. También puede usar el método abreviado de teclado `Alt + 3` cuando la vista previa esté abierta.
+Puede comprobar que las representaciones de FPO generadas una vez finalizado el flujo de trabajo. En la interfaz de usuario de Experience Manager Assets, haga clic en el recurso para abrir una vista previa grande. Abra el carril izquierdo y seleccione **[!UICONTROL Representaciones]**. También puede usar el método abreviado de teclado `Alt + 3` cuando la vista previa esté abierta.
 
 Haga clic en **[!UICONTROL Representación de FPO]** para cargar su vista previa. De forma opcional, puede hacer clic con el botón derecho en la representación y guardarla en el sistema de archivos. Compruebe las representaciones disponibles en el carril izquierdo.
 
