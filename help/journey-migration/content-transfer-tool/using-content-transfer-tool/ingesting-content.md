@@ -4,9 +4,9 @@ description: Aprenda a utilizar Cloud Acceleration Manager para introducir conte
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 550d84f43cba472d74c7be6323bd69ba808c96f8
+source-git-commit: 67b04abfc0213ac175afca34b9424dafbe150a25
 workflow-type: tm+mt
-source-wordcount: '3322'
+source-wordcount: '3412'
 ht-degree: 12%
 
 ---
@@ -48,6 +48,9 @@ Siga los pasos a continuación para ingerir el conjunto de migración mediante C
 
    >[!NOTE]
    > Si el nivel de destino es `Author`, la instancia de autor se cierra durante toda la ingesta y no está disponible para los usuarios (por ejemplo, los autores o cualquier persona que realice tareas de mantenimiento). El motivo es proteger el sistema y evitar cualquier cambio que pueda perderse o causar un conflicto de ingesta. Asegúrese de que su equipo esté al tanto de este hecho. Tenga en cuenta también que el entorno parece hibernado durante la ingesta del autor.
+
+   >[!NOTE]
+   > Si el nivel de destino es `Publish`, la instancia de publicación permanece en ejecución durante la ingesta.  Sin embargo, si el proceso de compactación se está ejecutando mientras se produce la ingesta, es probable que se produzca un conflicto entre los dos procesos.  Por este motivo, el proceso de ingesta 1) desactiva el script temporizado de compactación, de modo que la compactación no se inicia durante la ingesta, y 2) comprueba si la compactación se está ejecutando actualmente y, si lo está, espera a que se complete antes de que la ingesta continúe.  Si la ingesta de publicación está tardando más de lo esperado, compruebe los registros de ingesta para ver si hay instrucciones de registro relacionadas.
 
    * **Borrar:** Elija el valor `Wipe`
       * La opción **Borrar** establece el punto de inicio de la ingesta en el destino. AEM Si **Borrar** está habilitado, el destino que incluye todo su contenido se restablecerá a la versión de que se especifica en Cloud Manager. Si no está habilitado, el destino mantiene su contenido actual como punto de partida.
