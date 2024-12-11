@@ -4,7 +4,7 @@ description: Aprenda a declarar redirecciones 301 o 302 sin acceso a canalizacio
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: 639a8927fb232f7d4a18e0f49b1221c184066787
+source-git-commit: 7968aa15df2a592efb41af228ee79e8c8d4e218b
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 1%
@@ -30,7 +30,7 @@ AEM as a Cloud Service ofrece [varios enfoques](https://experienceleague.adobe.c
 AEM El núcleo de esta función es la capacidad de Apache/Dispatcher para cargar (o volver a cargar) uno o más archivos de asignación de reescritura que se han colocado en una ubicación especificada del repositorio de publicación. Es importante mencionar que la forma en que los archivos llegan a ese punto está fuera del ámbito de esta función, pero puede considerar uno de los siguientes métodos:
 
 * Ingesta de la asignación de reescritura como un recurso en la interfaz de usuario de creación y publicación.
-* Instalando [ACS Commons Rewrite Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)([al menos la versión 6.7.0 o superior](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), que incluye una interfaz de usuario para administrar las asignaciones de URL y también puede publicar el archivo de asignación de reescritura.
+* Instalando [ACS Commons Rewrite Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) ([al menos la versión 6.7.0 o superior](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), que incluye una interfaz de usuario para administrar las asignaciones de URL y también puede publicar el archivo de asignación de reescritura.
 * Flexibilidad total al escribir una aplicación personalizada. AEM Por ejemplo, una interfaz de usuario o de línea de comandos para administrar las asignaciones de URL o, alternativamente, un formulario para cargar una asignación de reescritura, que luego utiliza las API de para publicar el archivo de asignación de reescritura.
 
 >[!NOTE]
