@@ -4,10 +4,10 @@ description: Aprenda a optimizar las consultas de GraphQL al filtrar, paginar y 
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: e8f992df5a270e7335af466a524daa013bff5f42
 workflow-type: tm+mt
-source-wordcount: '1874'
-ht-degree: 64%
+source-wordcount: '1824'
+ht-degree: 65%
 
 ---
 
@@ -82,16 +82,6 @@ Consulte:
 
 * [Almacenamiento en caché de las consultas persistentes](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)
 * [Administración de la caché para las consultas persistentes](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
-
-#### AEM Usar el almacenamiento en caché previo de GraphQL {#use-aem-graphql-pre-caching}
-
-**Recomendación**
-
-AEM Esta capacidad permite a los usuarios almacenar en caché contenido adicional dentro del ámbito de las consultas de GraphQL que luego se pueden ensamblar como bloques en la salida JSON en lugar de línea a línea.
-
-**Referencia adicional**
-
-Póngase en contacto con el Adobe para habilitar esta capacidad para su programa y entornos de AEM Cloud Service.
 
 ### Optimización de consultas de GraphQL {#graphql-query-optimization}
 
