@@ -4,10 +4,10 @@ description: Descubra cómo el editor universal permite la edición de lo que se
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
+source-git-commit: b8d56873b7bc23295fefc35a826b8047c626649e
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 51%
+source-wordcount: '992'
+ht-degree: 52%
 
 ---
 
@@ -22,7 +22,7 @@ El editor universal proporciona una experiencia de creación en contexto eficaz 
 
 AEM Los autores se benefician de la flexibilidad del editor universal, ya que admite la misma edición visual coherente para todas las formas de contenido: la edición in situ y la composición del diseño son posibles del mismo modo tanto para los fragmentos de contenido como para los componentes de página. Las dos formas de contenido se pueden editar incluso cuando se muestran una al lado de la otra en una experiencia web, sin que los autores tengan que cambiar de contexto. AEM Esta es una tremenda mejora en comparación con editores anteriores en los que solo se admitía un tipo de contenido en el que se mostraba un solo tipo de contenido.
 
-Los desarrolladores se benefician de la versatilidad del editor universal, ya que también admite el desacoplamiento real de la implementación. Permite a los desarrolladores utilizar prácticamente cualquier marco o arquitectura de su elección, sin imponer restricciones de SDK o tecnología. Esta flexibilidad incluso facilita la instrumentación de aplicaciones web existentes para el editor universal sin tener que volver a diseñarlas.
+Los desarrolladores se benefician de la versatilidad del editor universal, ya que también admite el desacoplamiento real de la implementación. Permite a los desarrolladores utilizar prácticamente cualquier estructura o arquitectura de su elección, sin imponer restricciones SDK o tecnológicas. Esta flexibilidad incluso facilita la instrumentación de aplicaciones web existentes para el editor universal sin tener que volver a diseñarlas.
 
 ## Verdaderamente universal {#universal}
 
@@ -87,8 +87,7 @@ Un profesional del marketing quiere crear contenido que esté adaptado al diseñ
 A medida que explore el editor universal y avance en la implementación de él en sus propios proyectos, tenga en cuenta las siguientes limitaciones.
 
 * AEM No más de 25 recursos de (fragmentos de contenido, páginas, fragmentos de experiencias, Assets, etc.) deben ser referencias como instrumentación en una sola página.
-* AEM as a Cloud Service AEM es el único backend compatible con la interfaz de usuario de.
-   * [AEM La compatibilidad con la versión.5 está disponible como parte de un programa de adopción anticipada.](/help/release-notes/universal-editor/current.md#early-adoption)
+* AEM as a Cloud Service AEM AEM y [6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) son los únicos backends compatibles con el servicio de seguridad de la red de seguridad de la red de área de nombres de la red ().
 * Se requiere la versión de AEM as a Cloud Service `2023.8.13099` o superior.
 * Los autores de contenido deben tener sus propias cuentas de Experience Cloud individuales.
 * AEM AEM Como parte de la, el editor universal admite los mismos exploradores de escritorio que el editor de archivos de escritorio de la versión de.
