@@ -4,9 +4,9 @@ description: AEM Tiene API amplias y potentes que puede utilizar para su proyect
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7c2d2fc7b37d70bee4764921a138af6379401064
+source-git-commit: 4182374ea9d603ed53e75511d34fdfcf69829200
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '660'
 ht-degree: 5%
 
 ---
@@ -70,16 +70,21 @@ AEM ofrece componentes personalizables y opciones de envío de contenido.
 | [Los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) | AEM Componentes estandarizados de gestión de contenido web (WCM) para acelerar el tiempo de desarrollo y reducir el coste de mantenimiento de los sitios web. Se han diseñado para que los componentes de gestión de contenido web (WCM) sean más eficaces. |
 | [Exportador JSON](/help/implementing/developing/components/json-exporter.md) | AEM Entregar el contenido de cualquier página de en formato de modelo de datos JSON. |
 | [Activación de la exportación de JSON para un componente](/help/implementing/developing/components/enabling-json-exporter.md) | Generar una exportación JSON del contenido del componente en función de un marco de modelado |
+| [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) | API abiertas de modelos de fragmentos de contenido y fragmentos de contenido |
+| [AEM REST OpenAPI para la entrega de fragmentos de contenido](/help/headless/aem-rest-openapi-content-fragment-delivery.md) | AEM Una API HTTP REST en Edge Delivery Services de, diseñada para entregar contenido estructurado desde fragmentos de contenido en formato JSON. |
+| [API de GraphQL de fragmento de contenido](/help/headless/graphql-api/content-fragments.md) | Habilite la entrega eficiente de fragmentos de contenido a clientes de JavaScript en implementaciones de CMS sin encabezado |
+|  |  |
 | [API de Assets](/help/assets/mac-api-assets.md) | Permite operaciones de creación, lectura, actualización y eliminación (CRUD) en recursos, incluidos binarios, metadatos, representaciones y comentarios. Consulte API HTTP de AEM Assets |
 | [Fragmentos de contenido: API HTTP](/help/assets/content-fragments/assets-api-content-fragments.md) | Acceso al contenido de fragmentos de contenido directamente a través de la API HTTP mediante operaciones CRUD |
-| [API de GraphQL de fragmento de contenido](/help/headless/graphql-api/content-fragments.md) | Habilite la entrega eficiente de fragmentos de contenido a clientes de JavaScript en implementaciones de CMS sin encabezado |
 | [Fragmentos de contenido API HTTP de Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | Formato exacto de las solicitudes de recursos HTTP admitidas |
-| [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) | API abiertas de modelos de fragmentos de contenido y fragmentos de contenido |
-| AEM [REST OpenAPI para la entrega de fragmentos de contenido](/help/headless/aem-rest-openapi-content-fragment-delivery.md) | AEM Una API HTTP REST en Edge Delivery Services de, diseñada para entregar contenido estructurado desde fragmentos de contenido en formato JSON. |
+
+>[!NOTE]
+>
+>AEM Consulte [API de para la administración y entrega de contenido estructurado](/help/headless/apis-headless-and-content-fragments.md) para obtener una descripción general de las diversas API disponibles y una comparación de algunos de los conceptos involucrados.
 
 ## SPA API específicas de la {#spa-apis}
 
-AEM SPA El marco del SDK del Editor de aplicaciones de una sola página () proporciona referencias específicas a la API de JavaScript.
+AEM SPA El marco de trabajo del Editor de aplicaciones de una sola página () de SDK proporciona referencias específicas a la API de JavaScript.
 
 | API | Descripción |
 |---|---|
