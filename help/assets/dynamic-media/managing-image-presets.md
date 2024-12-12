@@ -1,36 +1,36 @@
 ---
 title: Administrar ajustes preestablecidos de imagen
-description: Obtenga información sobre los ajustes preestablecidos de imagen y cómo crear, modificar y administrar ajustes preestablecidos de imagen.
+description: Obtenga información sobre los ajustes preestablecidos de imagen y cómo crearlos, modificarlos y administrarlos.
 contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: baffc15d482ad3b57337c1ee5fe3e622253ae8cb
 workflow-type: tm+mt
-source-wordcount: '3587'
-ht-degree: 8%
+source-wordcount: '3550'
+ht-degree: 6%
 
 ---
 
 # Administrar ajustes preestablecidos de imagen{#managing-image-presets}
 
-Los ajustes preestablecidos de imagen permiten a Adobe Experience Manager Assets entregar dinámicamente imágenes en diferentes tamaños, en diferentes formatos o con otras propiedades de imagen que se generan dinámicamente. Cada ajuste preestablecido de imagen representa una colección predefinida de comandos de tamaño y formato para mostrar imágenes. Al crear un ajuste preestablecido de imagen, elige un tamaño para la entrega de imágenes. También puede elegir comandos de formato para optimizar el aspecto de la imagen cuando se envíe la imagen para su visualización.
+Los ajustes preestablecidos de imagen permiten a Adobe Experience Manager Assets ofrecer imágenes dinámicamente en diferentes tamaños, en diferentes formatos o con otras propiedades de imagen que se generan dinámicamente. Cada ajuste preestablecido de imagen representa una colección predefinida de comandos de tamaño y formato para mostrar imágenes. Al crear un ajuste preestablecido de imagen, elige un tamaño para la entrega de imágenes. También puede elegir comandos de formato para optimizar el aspecto de la imagen cuando se envíe la imagen para su visualización.
 
 Los administradores pueden crear ajustes preestablecidos para exportar recursos. Los usuarios pueden elegir un ajuste preestablecido al exportar imágenes, que también redistribuye las imágenes según las especificaciones del administrador.
 
-También puede crear ajustes preestablecidos de imagen que respondan. Si aplica un ajuste preestablecido de imagen adaptable a los recursos, cambiarán según el dispositivo o el tamaño de pantalla en que se visualicen. Puede configurar los ajustes preestablecidos de imagen para que utilicen CMYK en el espacio de color, además del RGB o el gris.
+También puede crear ajustes preestablecidos de imagen que respondan. Si aplica un ajuste preestablecido de imagen interactivo a los recursos, cambiarán según el dispositivo o el tamaño de pantalla en que se visualicen. Puede configurar los ajustes preestablecidos de imagen para que utilicen CMYK en el espacio de color, además del RGB o el gris.
 
-En esta sección se describe cómo crear, modificar y administrar ajustes preestablecidos de imagen. Puede aplicar un ajuste preestablecido de imagen a una imagen cada vez que la previsualice. Consulte [Aplicar ajustes preestablecidos de imagen](/help/assets/dynamic-media/image-presets.md).
+En esta sección se describe cómo crear, modificar y administrar ajustes preestablecidos de imagen de forma general. Puede aplicar un ajuste preestablecido de imagen a una imagen cada vez que la previsualice. Consulte [Aplicar ajustes preestablecidos de imagen](/help/assets/dynamic-media/image-presets.md).
 
 >[!NOTE]
 >
->Las imágenes inteligentes funcionan con los ajustes preestablecidos de imagen existentes y utilizan inteligencia en el último milisegundo de entrega para reducir aún más el tamaño del archivo de imagen en función de la velocidad de conexión del explorador o de la red. Consulte [Imágenes inteligentes](/help/assets/dynamic-media/imaging-faq.md) para obtener más información.
+>Las imágenes inteligentes funcionan con los ajustes preestablecidos de imagen existentes y utilizan inteligencia en el último milisegundo de envío para reducir aún más el tamaño del archivo de imagen en función de la velocidad de conexión del explorador o de la red. Consulte [Imágenes inteligentes](/help/assets/dynamic-media/imaging-faq.md) para obtener más información.
 
 ## Más información sobre los ajustes preestablecidos de imagen {#understanding-image-presets}
 
 Al igual que una macro, un ajuste preestablecido de imagen es una colección predefinida de comandos de tamaño y formato guardados con un nombre. Para comprender cómo funcionan los ajustes preestablecidos de imagen, supongamos que el sitio web requiere que cada imagen de producto aparezca en diferentes tamaños, formatos y tasas de compresión para el escritorio y la entrega móvil.
 
-Puede crear dos ajustes preestablecidos de imagen: uno con 500 x 500 píxeles para la versión de escritorio y otro con 150 x 150 píxeles para la versión móvil. Puede crear dos ajustes preestablecidos de imagen, uno denominado `Enlarge` para mostrar imágenes a 500x500 píxeles y otro denominado `Thumbnail` para mostrar imágenes a 150 x 150 píxeles. Para enviar imágenes con los tamaños `Enlarge` y `Thumbnail`, el Experience Manager encuentra la definición de los ajustes preestablecidos Ampliar imagen y Miniatura de imagen. A continuación, el Experience Manager genera dinámicamente una imagen con el tamaño y las especificaciones de formato de cada ajuste preestablecido de imagen.
+Puede crear dos ajustes preestablecidos de imagen: 500 x 500 píxeles para escritorio y 150 x 150 píxeles para móvil. Puede crear dos ajustes preestablecidos de imagen, uno denominado `Enlarge` para mostrar imágenes a 500x500 píxeles y otro denominado `Thumbnail` para mostrar imágenes a 150 x 150 píxeles. Para enviar imágenes con el tamaño `Enlarge` y `Thumbnail`, el Experience Manager encuentra la definición de `Enlarge Image Preset` y `Thumbnail Image Preset`. A continuación, el Experience Manager genera dinámicamente una imagen con el tamaño y las especificaciones de formato de cada ajuste preestablecido de imagen.
 
 Las imágenes de tamaño reducido cuando se envían de forma dinámica pueden perder nitidez y detalle. Por este motivo, cada ajuste preestablecido de imagen contiene controles de formato para optimizar una imagen cuando se entrega a un tamaño determinado. Estos controles garantizan que las imágenes sean nítidas y claras cuando se envíen al sitio web o a la aplicación.
 
@@ -44,7 +44,7 @@ Para administrar los ajustes preestablecidos de imagen en Experience Manager, se
 
 >[!NOTE]
 >
->Todos los ajustes preestablecidos de imagen que cree también están disponibles como representaciones dinámicas al previsualizar o enviar recursos.
+>Los ajustes preestablecidos de imagen que cree también estarán disponibles como representaciones dinámicas al obtener una vista previa de los recursos o enviarlos.
 >
 >No necesita *not* publicar ajustes preestablecidos de imagen, ya que los ajustes preestablecidos de imagen se publican automáticamente.
 >
@@ -67,13 +67,13 @@ El componente `Create Sub Asset process` crea los subrecursos dentro del flujo d
 
 <!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
 
-Puede ver los subrecursos o las páginas al abrir el recurso, seleccionar el menú Contenido y seleccionar **[!UICONTROL Subrecursos]** o **[!UICONTROL Páginas]**. Los subactivos son activos reales. Es decir, el componente de flujo de trabajo `Create Sub Asset` extrae las páginas del PDF. Luego se almacenan como `page1.pdf`, `page2.pdf`, etc., debajo del recurso principal. Una vez almacenados, el flujo de trabajo `DAM Update Asset` los procesará.
+Puede ver los subrecursos o las páginas al abrir el recurso, seleccionar el menú Contenido y seleccionar **[!UICONTROL Subrecursos]** o **[!UICONTROL Páginas]**. Los subactivos son activos reales. El componente de flujo de trabajo `Create Sub Asset` extrae las páginas del PDF. Luego se almacenan como `page1.pdf`, `page2.pdf`, etc., debajo del recurso principal. Una vez almacenados, el flujo de trabajo `DAM Update Asset` los procesará.
 
 Para utilizar Dynamic Media para previsualizar y generar representaciones dinámicas para archivos AI, EPS o de PDF, se requieren los siguientes pasos de procesamiento:
 
 1. En el flujo de trabajo `DAM Update Asset`, el componente de proceso `Rasterize PDF/AI Image Preview Rendition` rasteriza la primera página del recurso original (con la resolución configurada) en una representación `cqdam.preview.png`.
 
-1. A continuación, el componente de proceso `Dynamic Media Process Image Assets` del flujo de trabajo optimiza la representación `cqdam.preview.png` en un PTIFF.
+1. El componente de proceso `Dynamic Media Process Image Assets` del flujo de trabajo optimiza la representación de `cqdam.preview.png` en un PTIFF.
 
 >[!NOTE]
 >
@@ -83,12 +83,12 @@ Para utilizar Dynamic Media para previsualizar y generar representaciones dinám
 
 | **Propiedad de metadatos** | **Descripción** |
 |---|---|
-| dam:Physicalwidthininches | Ancho del documento en pulgadas. |
-| dam:Physicalheightininches | Altura del documento en pulgadas. |
+| `dam:Physicalwidthininches` | Ancho del documento en pulgadas. |
+| `dam:Physicalheightininches` | Altura del documento en pulgadas. |
 
 Puede acceder a `Rasterize PDF/AI Image Preview Rendition` opciones de componentes de proceso a través del flujo de trabajo `DAM Update Asset`.
 
-Seleccione Adobe Experience Manager en la esquina superior izquierda y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**. En la página Modelos de flujo de trabajo, seleccione **[!UICONTROL Recurso de actualización DAM]** y, en la barra de herramientas, seleccione **[!UICONTROL Editar]**. En la página Flujo de trabajo de recursos de actualización de DAM, haga doble clic en el componente de proceso `Rasterize PDF/AI Image Preview Rendition` para abrir el cuadro de diálogo Propiedades del paso.
+Seleccione Adobe Experience Manager en la esquina superior izquierda y haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**. En la página Modelos de flujo de trabajo, seleccione **[!UICONTROL Recurso de actualización DAM]** y, en la barra de herramientas, seleccione **[!UICONTROL Editar]**. En la página Flujo de trabajo de recursos de actualización de DAM, haga doble clic en el componente de proceso `Rasterize PDF/AI Image Preview Rendition` para abrir el cuadro de diálogo Propiedades del paso.
 
 #### Rasterizar PDF/AI a las opciones de representación de previsualización de imagen {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -121,7 +121,7 @@ El componente de proceso Extracción de medios del flujo de trabajo `DAM Update 
 
 ![Las rutas ExtendScript en los argumentos del proceso de extracción de medios](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
 
-Las rutas ExtendScript en los argumentos del componente de proceso Extracción de medios en el flujo de trabajo de recursos de actualización de DAM.
+Las rutas ExtendScript en los argumentos del componente Proceso de extracción de medios en el flujo de trabajo de recursos de actualización de DAM.
 
 La integración con Dynamic Media utiliza los siguientes scripts:
 
@@ -129,14 +129,14 @@ La integración con Dynamic Media utiliza los siguientes scripts:
 | Nombre de ExtendScript | Predeterminado | Descripción |
 |---|---|---|
 | ThumbnailExport.jsx | Sí | Genera una representación de 300 PPI `thumbnail.jpg` que está optimizada y convertida en una representación PTIFF por el componente de proceso `Dynamic Media Process Image Assets`. |
-| JPEGPagesExport.jsx | Sí | Genera un subactivo de JPEG de 300 PPP para cada página. El subactivo JPEG es un activo real almacenado bajo el activo InDesign. También se ha optimizado y convertido en un PTIFF mediante el flujo de trabajo `DAM Update Asset`. |
+| JPEGPagesExport.jsx | Sí | Genera un subactivo de JPEG de 300 PPP para cada página. El subactivo JPEG es un activo real almacenado bajo el activo InDesign. El flujo de trabajo `DAM Update Asset` lo optimiza y lo convierte en un PTIFF. |
 | PDFPagesExport.jsx | No | Genera un subactivo de PDF para cada página. El subactivo PDF se procesa como se describió anteriormente. Dado que el PDF contiene solo una página, no se generan subrecursos. |
 
-### Configurar tamaño de miniatura de la imagen {#configuring-image-thumbnail-size}
+### Configurar el tamaño de la miniatura de la imagen {#configuring-image-thumbnail-size}
 
 Puede configurar el tamaño de las miniaturas configurando estos valores en el flujo de trabajo **[!UICONTROL Recurso de actualización DAM]**. En el flujo de trabajo hay dos pasos en los que puede configurar el tamaño de la miniatura de los recursos de imagen. Se utiliza un (**[!UICONTROL Assets de imagen de proceso de Dynamic Media]**) para los recursos de imagen dinámica. El otro (**[!UICONTROL Procesar miniaturas]**) se usa para generar miniaturas estáticas o cuando los demás procesos no generan miniaturas. Independientemente, *ambos* deben tener la misma configuración.
 
-Con el paso **[!UICONTROL Recursos de imagen de proceso de Dynamic Media]**, el servidor de imágenes genera miniaturas y esta configuración es independiente de la configuración aplicada al paso **[!UICONTROL Procesar miniaturas]**. La generación de miniaturas a través del paso **[!UICONTROL Miniaturas de proceso]** es la forma más lenta y con mayor consumo de memoria para crear miniaturas.
+El paso **[!UICONTROL Dynamic Media Process Image Assets]** utiliza el servidor de imágenes para generar miniaturas, independientemente de la configuración aplicada al paso **[!UICONTROL Procesar miniaturas]**. La generación de miniaturas a través del paso **[!UICONTROL Miniaturas de proceso]** es la forma más lenta y con mayor consumo de memoria para crear miniaturas.
 
 El tamaño de la miniatura se define en el formato siguiente: **[!UICONTROL ancho:height:centro]**, por ejemplo, `80:80:false`. La anchura y la altura determinan el tamaño en píxeles de la miniatura. El valor central puede ser false o true. Si se establece en true, indica que la imagen en miniatura tiene exactamente el tamaño indicado en la configuración. Si la imagen redimensionada es más pequeña, se centra dentro de la miniatura.
 
@@ -206,7 +206,7 @@ Ver [formato de archivo de InDesign (INDD)](#indesign-indd-file-format).
 
    >[!NOTE]
    >
-   >Para que este ajuste preestablecido de imagen sea interactivo, borre los valores de los campos de **[!UICONTROL anchura]** y **[!UICONTROL altura]** y déjelos en blanco.
+   >Para que este ajuste preestablecido de imagen sea interactivo, borre los valores de los campos **[!UICONTROL width]** y **[!UICONTROL height]** y déjelos en blanco.
 
 1. En la ventana **[!UICONTROL Editar ajuste preestablecido de imagen]**, escriba valores en las fichas **[!UICONTROL Básico]** y **[!UICONTROL Avanzado]** según corresponda, incluido un nombre. Las opciones se describen en [Opciones de ajustes preestablecidos de imagen](#image-preset-options). Los ajustes preestablecidos aparecen en el panel izquierdo y se pueden utilizar sobre la marcha con otros recursos.
 
@@ -216,7 +216,7 @@ Ver [formato de archivo de InDesign (INDD)](#indesign-indd-file-format).
 
 ### Creación de un ajuste preestablecido de imagen interactivo {#creating-a-responsive-image-preset}
 
-Para crear un ajuste preestablecido de imagen adaptable, realice los pasos que se indican en [Crear ajustes preestablecidos de imagen](#creating-image-presets). Cuando introduzca la altura y anchura en la ventana **[!UICONTROL Editar ajuste preestablecido de imagen]**, borre los valores y déjelos en blanco.
+Para crear un ajuste preestablecido de imagen interactivo, realice los pasos que se indican en [Crear ajustes preestablecidos de imagen](#creating-image-presets). Cuando introduzca la altura y anchura en la ventana **[!UICONTROL Editar ajuste preestablecido de imagen]**, borre los valores y déjelos en blanco.
 
 Si los deja en blanco, el Experience Manager verá que este ajuste preestablecido de imagen responde. Puede ajustar los demás valores según corresponda.
 
@@ -230,7 +230,7 @@ Si los deja en blanco, el Experience Manager verá que este ajuste preestablecid
 
 ### Opciones de ajustes preestablecidos de imagen {#image-preset-options}
 
-Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descritas en esta sección. Además, Adobe recomienda estas opciones de &quot;práctica recomendada&quot; para comenzar:
+Al crear o editar ajustes preestablecidos de imagen, tiene las opciones que se describen en esta sección. Además, Adobe recomienda estas opciones de &quot;práctica recomendada&quot; para comenzar:
 
 * **[!UICONTROL Formato]** (ficha **[!UICONTROL Básico]**): seleccione **[!UICONTROL JPEG]** u otro formato que cumpla sus requisitos. Todos los navegadores web admiten el formato de imagen JPEG; ofrece un buen equilibrio entre los tamaños de archivos pequeños y la calidad de imagen. Sin embargo, las imágenes en formato JPEG utilizan un esquema de compresión con pérdidas que puede introducir artefactos de imagen no deseados si el ajuste de compresión es demasiado bajo. Por este motivo, Adobe recomienda establecer la calidad de compresión en 75. Este ajuste ofrece un buen equilibrio entre la calidad de imagen y el tamaño de archivo pequeño.
 
@@ -244,7 +244,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
 | --- | --- |
 | **Nombre** | Introduzca un nombre descriptivo sin espacios en blanco. Para ayudar a los usuarios a identificar este ajuste preestablecido de imagen, incluya la especificación de tamaño de imagen en el nombre. |
 | **Anchura y altura** | Especifique el tamaño en píxeles de la imagen resultante. La anchura y la altura deben ser superiores a 0 píxeles. Si alguno de los valores es 0, no se crea ningún ajuste preestablecido. Si ambos valores están en blanco, se crea un ajuste preestablecido de imagen interactivo. |
-| **Formato** | Elija un formato en el menú.<br>Elegir **JPEG** ofrece las siguientes opciones:<br>· **Calidad** - La escala de calidad JPEG es de 1 a 100. La escala es visible cuando arrastra el control deslizante.<br>· **Habilitar la disminución de resolución de crominancia en el JPG**: dado que el ojo es menos sensible a la información de color de alta frecuencia que la luminancia de alta frecuencia, las imágenes en JPEG dividen la información de la imagen en componentes de luminancia y color. Cuando se comprime una imagen del JPEG, el componente de luminancia se deja a resolución completa, mientras que los componentes de color se reducen de resolución promediando grupos de píxeles juntos. La disminución de la resolución reduce el volumen de datos en la mitad o en un tercio, sin afectar casi nada a la calidad percibida. La disminución de resolución no es aplicable a imágenes en escala de grises. Esta técnica reduce la cantidad de compresión útil para imágenes con alto contraste (por ejemplo, imágenes con texto superpuesto).<br><br>Elegir **GIF** o **GIF con alfa** proporciona estas opciones adicionales de **Cuantificación de color de GIF**:<br>· **Tipo** - Seleccionar **Adaptable** (predeterminado), **Web** o **Macintosh**. Si selecciona **GIF con Alpha**, la opción Macintosh no estará disponible.<br>· **Tramado** - Seleccionar **Difuso** o **Desactivado**.<br>· **Número de colores** - Escriba un número de 2 a 256.<br>· **Lista de colores**: escriba una lista separada por comas. Por ejemplo, para blanco, gris y negro, escriba `000000,888888,ffffff`.<br><br>Elegir **PDF**, **TIFF** o **TIFF con alfa** proporciona esta opción adicional:<br>· **Compresión** - Seleccione un algoritmo de compresión. Las opciones de algoritmo para PDF son **None**, **Zip** y **Jpeg**; para TIFF son **None**, **LZW**, **Jpeg** y **Zip**; y para TIFF con Alpha son **None**, **LZW** y **Zip**.<br><br>Elegir **PNG**, **PNG con Alpha** o **EPS** no proporciona opciones adicionales. |
+| **Formato** | Elija un formato en el menú.<br>Elegir **JPEG** ofrece las siguientes opciones:<br>· **Calidad** - La escala de calidad JPEG es de 1 a 100. La escala es visible al arrastrar el control deslizante.<br>· **Habilitar la disminución de resolución de crominancia en el JPG**: dado que el ojo es menos sensible a la información de color de alta frecuencia que la luminancia de alta frecuencia, las imágenes en JPEG dividen la información de la imagen en componentes de luminancia y color. Cuando se comprime una imagen del JPEG, el componente de luminancia se deja a resolución completa, mientras que los componentes de color se reducen de resolución promediando grupos de píxeles juntos. La disminución de resolución reduce el volumen de datos a la mitad o a un tercio con un impacto mínimo en la calidad percibida. La disminución de resolución no es aplicable a imágenes en escala de grises. Esta técnica reduce la cantidad de compresión útil para imágenes con alto contraste (por ejemplo, imágenes con texto superpuesto).<br><br>Elegir **GIF** o **GIF con alfa** proporciona estas opciones adicionales de **Cuantificación de color de GIF**:<br>· **Tipo** - Seleccionar **Adaptable** (predeterminado), **Web** o **Macintosh**. Si selecciona **GIF con Alpha**, la opción Macintosh no estará disponible.<br>· **Tramado** - Seleccionar **Difuso** o **Desactivado**.<br>· **Número de colores** - Escriba un número de 2 a 256.<br>· **Lista de colores**: escriba una lista separada por comas. Por ejemplo, para blanco, gris y negro, escriba `000000,888888,ffffff`.<br><br>Elegir **PDF**, **TIFF** o **TIFF con alfa** proporciona esta opción adicional:<br>· **Compresión** - Seleccione un algoritmo de compresión. Las opciones de algoritmo para PDF son **None**, **Zip** y **Jpeg**; para TIFF son **None**, **LZW**, **Jpeg** y **Zip**; y para TIFF con Alpha son **None**, **LZW** y **Zip**.<br><br>Elegir **PNG**, **PNG con Alpha** o **EPS** no proporciona opciones adicionales. |
 | **Enfoque** | Seleccione **Activar enfoque simple** para aplicar un filtro de enfoque básico a la imagen después de cambiar su tamaño. El enfoque puede ayudar a compensar el desenfoque que puede producirse cuando se muestra una imagen en un tamaño diferente. |
 
 #### Opciones de pestaña avanzadas {#advanced-tab-options}
@@ -268,7 +268,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
    <td>Puede anular la interpretación predeterminada. Las intenciones de representación determinan lo que sucede con los colores que no se pueden reproducir en el perfil de color de destino (fuera de la gama). La Interpretación se ignora si no es compatible con el perfil ICC.
     <ul>
      <li>Seleccione <strong>Perceptual</strong> para comprimir la gama total de un espacio de color en otro espacio de color cuando uno o más colores de la imagen original estén fuera de la gama del espacio de color de destino.</li>
-     <li>Seleccione <strong>Colorimétrico relativo</strong> cuando un color del espacio de color actual esté fuera de la gama en el espacio de color de destino. Y desea asignarlo al color más cercano posible dentro de la gama del espacio de color de destino sin afectar a ningún otro color. </li>
+     <li>Seleccione <strong>Colorimétrico relativo</strong> cuando un color del espacio de color actual esté fuera de la gama en el espacio de color de destino. Y desea asignarlo a la gama de colores de destino más cercana sin alterar otros colores. </li>
      <li>Seleccione <strong>Saturación</strong> si desea reproducir la saturación de color de la imagen original al convertirla en el espacio de color de destino. </li>
      <li>Seleccione <strong>Colorimétrico absoluto</strong> para que coincida exactamente con los colores sin ningún ajuste para el punto blanco o el punto negro que alteraría el brillo de la imagen.</li>
     </ul> </td>
@@ -279,7 +279,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
   </tr>
   <tr>
    <td><strong>Distorsión</strong></td>
-   <td>Seleccione esta opción para evitar o reducir los defectos de las bandas de colores. </td>
+   <td>Seleccione esta opción para evitar o reducir posibles defectos de bandas de colores. </td>
   </tr>
   <tr>
    <td><strong>Tipo de enfoque</strong></td>
@@ -292,12 +292,12 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
     <ul>
      <li><strong>Cantidad</strong>: controla la cantidad de contraste aplicado a los píxeles del borde. El valor predeterminado del número real es 1,0. Para imágenes de alta resolución, puede aumentarla hasta 5,0. Considere la cantidad como una medida de la intensidad del filtro.</li>
      <li><strong>Radio</strong>: Determina el número de píxeles adyacentes a los píxeles de borde que afectarán al enfoque. Para imágenes de alta resolución, introduzca un número real entre 1 y 2. Un valor bajo enfoca únicamente los píxeles de borde; un valor alto enfoca una banda más ancha de píxeles. El valor correcto depende del tamaño de la imagen.</li>
-     <li><strong>Umbral</strong>: determina el intervalo de contraste que se omitirá cuando se aplique el filtro de máscara de enfoque. En otras palabras, esta opción determina la diferencia que debe existir entre los píxeles enfocados y el área adyacente para que se consideren píxeles de borde y se enfoquen. Para evitar la introducción de ruido, experimente con valores enteros entre 2 y 20. </li>
+     <li><strong>Umbral</strong>: determina el intervalo de contraste que se omitirá cuando se aplique el filtro Máscara de enfoque. En otras palabras, esta opción define en qué medida los píxeles enfocados deben diferir del área circundante para considerarse píxeles de borde y enfoque. Para evitar la introducción de ruido, experimente con valores enteros entre 2 y 20. </li>
      <li><strong>Aplicar a</strong>: determina si el enfoque se aplica a cada color o brillo.</li>
     </ul>
     <div>
       El enfoque se describe en
-     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media">Uso del vídeo Enfoque de imágenes con el Experience Manager Dynamic Media</a>, en el tema de ayuda en línea <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#master-files">Enfoque de una imagen</a> y en las <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Prácticas recomendadas para enfocar imágenes en el PDF descargable de Dynamic Media Classic</a>.
+     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Uso del vídeo Enfoque de imágenes con el Experience Manager Dynamic Media</a>, en el tema de ayuda en línea <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">Enfoque de una imagen</a> y en las <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Prácticas recomendadas para enfocar imágenes en el PDF descargable de Dynamic Media Classic</a>.
     </div> </td>
   </tr>
   <tr>
@@ -305,8 +305,8 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
    <td>Seleccione una opción <strong>Modo de remuestreo</strong>. Estas opciones enfocan la imagen cuando se reduce su resolución:
     <ul>
      <li><strong>Bilinear</strong>: el método de remuestreo más rápido. Pueden verse algunos defectos de solapamiento.</li>
-     <li><strong>Bicúbico</strong>: aumenta el uso de la CPU, pero genera imágenes más nítidas con defectos de solapamiento menos evidentes.</li>
-     <li><strong>Enfocado2</strong> - Puede producir resultados ligeramente más enfocados que los Bicúbicos, pero con un costo de CPU aún mayor.</li>
+     <li><strong>Bicúbico</strong>: aumenta el uso de CPU, pero genera imágenes más nítidas con artefactos de solapamiento menos evidentes.</li>
+     <li><strong>Enfocado2</strong> - Puede producir resultados ligeramente más enfocados que los Bicúbicos, pero a un costo de CPU aún mayor.</li>
      <li><strong>Bi-Sharp</strong>: selecciona el remuestreador predeterminado de Photoshop para reducir el tamaño de imagen, lo que se denomina <strong>enfoque bicúbico</strong> en Adobe Photoshop.</li>
      <li><strong>Cada color</strong> y <strong>brillo</strong> - cada método puede basarse en el color o el brillo. De manera predeterminada, <strong>Cada color</strong> está seleccionado.</li>
     </ul> </td>
@@ -317,7 +317,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
   </tr>
   <tr>
    <td><strong>Modificador de imagen</strong></td>
-   <td><p>Más allá de la configuración de imagen común disponible en la interfaz de usuario, Dynamic Media admite numerosas modificaciones de imagen avanzadas que se pueden especificar en el campo <strong>Modificadores de imagen</strong>. Estos parámetros se definen en la <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview.html">referencia de comando del protocolo Image Server</a>.</p> <p>Importante: No se admiten las siguientes funciones enumeradas en la API:</p>
+   <td><p>Más allá de la configuración de imagen común disponible en la interfaz de usuario, Dynamic Media admite numerosas modificaciones de imagen avanzadas que se pueden especificar en el campo <strong>Modificadores de imagen</strong>. Estos parámetros se definen en la <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview">referencia de comando del protocolo Image Server</a>.</p> <p>Importante: No se admiten las siguientes funciones enumeradas en la API:</p>
     <ul>
      <li>Comandos básicos de creación de plantillas y procesamiento de texto: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> y <code>textPs=</code></li>
      <li>Comandos de localización: <code>locale=</code> y <code>req=xlate</code></li>
@@ -334,7 +334,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
 
 ### Definir opciones de ajustes preestablecidos de imagen con modificadores de imagen {#defining-image-preset-options-with-image-modifiers}
 
-Además de las opciones disponibles en las pestañas Básico y Avanzado, puede definir modificadores de imagen para que tenga más opciones al definir ajustes preestablecidos de imagen. El procesamiento de imágenes se basa en la API de procesamiento de imágenes de Dynamic Media y se define en detalle en la [Referencia de protocolo HTTP](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api).
+Además de las opciones disponibles en las pestañas Básico y Avanzado, puede definir modificadores de imagen para que tenga más opciones al definir ajustes preestablecidos de imagen. El procesamiento de imágenes se basa en la API de procesamiento de imágenes de Dynamic Media y se define en detalle en la [Referencia de protocolo HTTP](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api).
 
 A continuación se muestran algunos ejemplos básicos de lo que se puede hacer con los modificadores de imagen.
 
@@ -342,7 +342,7 @@ A continuación se muestran algunos ejemplos básicos de lo que se puede hacer c
 >
 >Algunos modificadores de imagen [no se pueden usar en el Experience Manager](#advanced-tab-options).
 
-* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html): invierte cada componente de color para obtener un efecto de imagen negativo.
+* [op_invert](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert): invierte cada componente de color para obtener un efecto de imagen negativo.
 
   ```xml {.line-numbers}
   &op_invert=1
@@ -350,7 +350,7 @@ A continuación se muestran algunos ejemplos básicos de lo que se puede hacer c
 
   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html): aplica un filtro de desenfoque a la imagen.
+* [op_blur](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur): aplica un filtro de desenfoque a la imagen.
 
   ```xml {.line-numbers}
   &op_blur=7
@@ -366,7 +366,7 @@ A continuación se muestran algunos ejemplos básicos de lo que se puede hacer c
 
   ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_bright](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html): disminuye o aumenta el brillo.
+* [op_bright](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness): disminuye o aumenta el brillo.
 
   ```xml {.line-numbers}
   &op_brightness=58
@@ -374,7 +374,7 @@ A continuación se muestran algunos ejemplos básicos de lo que se puede hacer c
 
   ![6_5_imagepreset-edit-bright](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html): ajusta la opacidad de la imagen. Permite reducir la opacidad en primer plano.
+* [opac](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac): ajusta la opacidad de la imagen. Permite reducir la opacidad en primer plano.
 
   ```xml {.line-numbers}
   opac=29
