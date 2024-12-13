@@ -4,10 +4,10 @@ description: Obtenga información sobre el impacto de las credenciales de JWT en
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: ht
-source-wordcount: '483'
-ht-degree: 100%
+source-git-commit: d3c00c33925a23ad5b1080c1e864cfdb5a8d1c1b
+workflow-type: tm+mt
+source-wordcount: '769'
+ht-degree: 63%
 
 ---
 
@@ -59,3 +59,35 @@ Los clientes crean proyectos de Adobe Developer Console para que puedan invocar 
 Cuando Cloud Manager aprovisiona entornos AEM as a Cloud Service, genera automáticamente un proyecto de Adobe Developer Console con credenciales de JWT. Este proyecto está marcado como de solo lectura, como se ilustra en la captura de pantalla siguiente. Los clientes no pueden ni deben intentar migrar estos proyectos a las credenciales de servidor a servidor de OAuth. En su lugar, Adobe migra estos proyectos por su cuenta antes de que las credenciales queden ain efecto.
 
 ![Proyectos generados automáticamente](/help/security/assets/jwt-deprecation-autogen-projects.png)
+
+## Preguntas frecuentes sobre proyectos generados automáticamente {#autogen-projects-faqs}
+
+Esta sección proporciona respuestas a las preguntas más frecuentes sobre la obsolescencia de las credenciales de JWT para proyectos generados automáticamente en AEM as a Cloud Service.
+
+**¿Cómo puedo hacer qué proyectos se generan automáticamente?**
+Vaya a Adobe Developer Console. | Sección Proyectos.  Los proyectos generados automáticamente por AEM as a Cloud Service tendrán un icono de candado con el identificador &quot;Generado automáticamente&quot;.  AEM Los proyectos generados automáticamente siguen el formato -p#####-e###### y los crea el usuario de cuenta técnica.
+
+<img width="439" alt="image" src="https://git.corp.adobe.com/storage/user/16149/files/6b20a8a3-3711-4741-8f2c-ec5e36fe97cc">
+
+
+**¿Qué sucede si surgen problemas con nuestros proyectos autogenerados?**
+
+Póngase en contacto con el Servicio de atención al cliente de [Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html?lang=es).
+
+**¿Debo continuar y migrar nuestros proyectos generados automáticamente?**
+
+No se requiere ninguna acción, ya que el Adobe AEM migrará generado automáticamente en su nombre para entornos con 17258 de versión de (agosto de 2024) y posteriores.
+
+**¿Cuáles son los plazos para la migración de proyectos autogenerados?**
+
+Adobe iniciará un enfoque de migración por fases en el primer trimestre de 2025, a partir de los entornos de desarrollo.
+
+**¿Cómo se verá afectada nuestra instancia de AEM as a Cloud Service AEM AEM si tenemos una versión de la aplicación que es anterior a la versión de la 17258 (agosto de 2024)?**
+
+Las integraciones de proyecto generadas automáticamente dejarán de funcionar si no se migran a OAuth en junio de 2025.
+
+Para garantizar una transición sin problemas, los clientes deben ponerse en contacto con el Servicio de atención al cliente de [Adobe AEM](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html?lang=es) con prontitud y comenzar el proceso de actualización a la [última versión](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest) de la versión. Esto proporcionará tiempo suficiente para realizar pruebas de regresión y permitirá que el Adobe administre de forma eficaz la migración de proyectos.
+
+**¿Puedo actualizar a una versión de OAuth compatible sin actualizar mi versión de AEM as a Cloud Service AEM?**
+
+No. Para garantizar una transición sin problemas, los clientes deben ponerse en contacto con el Servicio de atención al cliente de [Adobe AEM](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html?lang=es) con prontitud y comenzar el proceso de actualización a la [última versión](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest) de la versión. Esto proporcionará tiempo suficiente para realizar pruebas de regresión y permitirá que el Adobe administre de forma eficaz la migración de proyectos.
