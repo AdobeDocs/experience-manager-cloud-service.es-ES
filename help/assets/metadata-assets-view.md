@@ -5,16 +5,16 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 1252814d99927cb8fff81b66f6e7caca92bb6e9a
 workflow-type: tm+mt
-source-wordcount: '1801'
-ht-degree: 86%
+source-wordcount: '1904'
+ht-degree: 82%
 
 ---
 
 # Metadatos en la vista de recursos {#metadata}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación de desarrollador de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 Los metadatos son los datos o la descripción de los datos. Por ejemplo, las imágenes, como recurso, pueden contener información acerca de la cámara en la que se hizo clic o cualquier información de copyright. Esta información son los metadatos de la imagen. Los metadatos son esenciales para una administración eficiente de los recursos. Los metadatos son la recopilación de todos los datos disponibles para un recurso, pero es posible que no estén necesariamente contenidos en ese recurso.
@@ -170,6 +170,19 @@ Para asignar un formulario de metadatos a una carpeta:
 1. Seleccione la carpeta y haga clic en **[!UICONTROL Quitar]**. También puede seleccionar varias carpetas de la lista.
 
 También puede ir hasta la página de detalles de la carpeta y seleccionar **[!UICONTROL Formulario de metadatos asignado al sistema]** en **[!UICONTROL Formularios de metadatos]** para quitar el formulario de metadatos asignado de una carpeta.
+
+### Uso del componente Vínculo en el formulario de metadatos {#link-component-metadata-form}
+
+El componente de vínculo se utiliza para habilitar direcciones URL externas, incluidos vínculos de almacenamiento, información de copyright, formularios de contacto, etc. Para usar el componente de vínculo en el formulario de metadatos, debe [configurar el formulario de metadatos](#metadata-forms).
+
+Siga los pasos a continuación para utilizar el componente de vínculo en el formulario de metadatos:
+
+1. Vaya a la página de detalles del recurso y luego a **[!UICONTROL URL del vínculo]**.
+1. Añada una URL que desee utilizar para redirigir el recurso seleccionado.
+1. Haga clic en **[!UICONTROL Agregar vínculo]**. Realice una de las siguientes acciones:
+   * Haga clic en ![icono de copia](assets/do-not-localize/copy.svg) para copiar la dirección URL.
+   * Haga clic en ![editar icono](assets/do-not-localize/edit.svg) para editar la dirección URL.
+1. Haga clic en **[!UICONTROL Guardar]** para guardar los cambios.
 
 ## Siguientes pasos {#next-steps}
 
