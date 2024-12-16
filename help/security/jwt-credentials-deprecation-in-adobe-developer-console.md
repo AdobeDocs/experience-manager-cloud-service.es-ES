@@ -4,9 +4,9 @@ description: Obtenga información sobre el impacto de las credenciales de JWT en
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: d3c00c33925a23ad5b1080c1e864cfdb5a8d1c1b
+source-git-commit: 18e9daad8bec6749d493994264792c0cd3b55d15
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '770'
 ht-degree: 63%
 
 ---
@@ -65,10 +65,10 @@ Cuando Cloud Manager aprovisiona entornos AEM as a Cloud Service, genera automá
 Esta sección proporciona respuestas a las preguntas más frecuentes sobre la obsolescencia de las credenciales de JWT para proyectos generados automáticamente en AEM as a Cloud Service.
 
 **¿Cómo puedo hacer qué proyectos se generan automáticamente?**
-Vaya a Adobe Developer Console. | Sección Proyectos.  Los proyectos generados automáticamente por AEM as a Cloud Service tendrán un icono de candado con el identificador &quot;Generado automáticamente&quot;.  AEM Los proyectos generados automáticamente siguen el formato -p#####-e###### y los crea el usuario de cuenta técnica.
 
-<img width="439" alt="image" src="https://git.corp.adobe.com/storage/user/16149/files/6b20a8a3-3711-4741-8f2c-ec5e36fe97cc">
+Vaya a Adobe Developer Console. | Sección Proyectos.  Los proyectos generados automáticamente por AEM as a Cloud Service tendrán un icono de bloqueo con el identificador &quot;Generado automáticamente&quot;.  AEM Los proyectos generados automáticamente siguen el formato -p#####-e###### y los crea el usuario de cuenta técnica.
 
+![Proyectos generados automáticamente](/help/security/assets/jwt-alert.png)
 
 **¿Qué sucede si surgen problemas con nuestros proyectos autogenerados?**
 
