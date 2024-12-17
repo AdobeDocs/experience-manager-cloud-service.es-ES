@@ -2,7 +2,8 @@
 title: Cambiar nombre y cambiar el nombre de los recursos en bloque en  [!DNL Assets view]
 description: Obtenga información sobre cómo cambiar el nombre de los recursos de forma masiva mediante la nueva interfaz de usuario de Assets (vista Assets). Permite cambiar el nombre de varios recursos a la vez.
 role: User
-source-git-commit: 8a62db7ecae8b90e05939b031344c226000bb304
+exl-id: e041811b-0246-408f-9246-248da55f66a1
+source-git-commit: 97be9d7eafe5baa55c1314ca431cb0fabca06b5e
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 15%
@@ -50,7 +51,7 @@ A continuación se muestran algunos ejemplos de cómo utilizar IA para cambiar e
 * Elimine el prefijo y el sufijo, solo mantenga la parte central del nombre.
 * Agregue a los archivos el prefijo 001, 002, etc. y traducirlo al inglés.
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3440975)
+>[!VIDEO](https://video.tv.adobe.com/v/3440975)
 
 >[!NOTE]
 >
