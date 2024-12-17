@@ -1,7 +1,8 @@
 ---
 title: Integración de AEM Assets durante la creación de contenido para Edge Delivery Services
-description: 'Aprenda a integrar a los AEM Assets con los Edge Delivery Services. Esta integración le permite: integrar AEM Assets con Microsoft Word y Google Docs, integrar AEM Assets con Universal Editor, integrar Dynamic Media con capacidades OpenAPI con Universal Editor e integrar Dynamic Media con capacidades OpenAPI con Microsoft Word y Google Docs. Después de esta integración, puede usar AEM Assets en Microsoft Word y Google Docs, usar AEM Assets en Universal Editor, usar Dynamic Media con funciones OpenAPI en Universal Editor para entregar recursos y usar Dynamic Media con funciones OpenAPI en Microsoft Word y Google Docs para entregar recursos.'
-source-git-commit: 6cb7fbb5fa09542b999ec5f2178880dd1c47d2e0
+description: Aprenda a integrar a los AEM Assets con los Edge Delivery Services. Esta integración le permite integrar AEM Assets con Microsoft Word y Google Docs, integrar AEM Assets con Universal Editor, integrar Dynamic Media con capacidades OpenAPI con Universal Editor e integrar Dynamic Media con capacidades OpenAPI con Microsoft Word y Google Docs. Después de esta integración, puede utilizar AEM Assets en Microsoft Word y Google Docs, utilizar AEM Assets en Universal Editor, utilizar Dynamic Media con las funciones de OpenAPI en Universal Editor para entregar recursos y utilizar Dynamic Media con las funciones de OpenAPI en Microsoft Word y Google Docs para entregar recursos.
+exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
+source-git-commit: 87acadf3664a180df758ee40e5f5e35c68aef7b8
 workflow-type: tm+mt
 source-wordcount: '744'
 ht-degree: 0%
