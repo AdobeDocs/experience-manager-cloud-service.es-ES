@@ -2,9 +2,9 @@
 title: Integración de AEM Assets durante la creación de contenido para Edge Delivery Services
 description: Aprenda a integrar a los AEM Assets con los Edge Delivery Services. Esta integración le permite integrar AEM Assets con Microsoft Word y Google Docs, integrar AEM Assets con Universal Editor, integrar Dynamic Media con capacidades OpenAPI con Universal Editor e integrar Dynamic Media con capacidades OpenAPI con Microsoft Word y Google Docs.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: def807c2bb1b2fe337879b3abe2c0a5d1b5f1dea
+source-git-commit: 9e7701152e1da4afc73d3d5ba271b04df2054397
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -60,11 +60,11 @@ Para utilizar la referencia de recursos, debe tener:
 * Derecho a un entorno de Cloud Service de Assets donde Dynamic Media con capacidades de API abierta está habilitado.
 * Una licencia de Dynamic Media.
 * El complemento de la barra de tareas de los AEM Assets habilitado con la copia de referencia para los recursos de imagen habilitada. Para obtener más información, vea [this](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode) para la creación basada en documentos y [this](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) para la creación basada en el editor universal.
-* Assets que se han aprobado. El Assets aprobado tiene `dam:status=Approved` a través del backend de los Cloud Service de Assets o de las acciones de la IU.
+* Assets que se han aprobado. Los recursos aprobados tienen `dam:status=Approved` a través del backend de los Cloud Service de Assets o de las acciones de la interfaz de usuario.
 
 ### Uso de recursos entregados mediante Dynamic Media con funciones de OpenAPI{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
 
-Para utilizar recursos entregados mediante Dynamic Media con las funciones de OpenAPI durante la creación de contenido, consulte:
+Para utilizar recursos entregados mediante Dynamic Media con funciones de OpenAPI durante la creación de contenido, consulte:
 
 * [Usando referencias de imagen](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-image-references-when-authoring-content)
 * [Usando referencias de vídeo](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
