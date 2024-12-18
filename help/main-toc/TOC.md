@@ -967,8 +967,8 @@ ht-degree: 99%
       + [Páginas con DAM Assets](/help/edge/wysiwyg-authoring/dam-assets.md)
       + [Funciones de sitios de trabajo en curso](/help/edge/wysiwyg-authoring/wip-features.md)
       + [Reutilización del código en varios sitios](/help/edge/wysiwyg-authoring/repoless.md)
-      + [Repoless Multi Site Management](/help/edge/wysiwyg-authoring/repoless-msm.md)
-      + [Volver a procesar entornos de ensayo y producción](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+      + [Administración de varios sitios sin repositorio](/help/edge/wysiwyg-authoring/repoless-msm.md)
+      + [Entornos de ensayo y producción sin repositorio](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
    + Creación basada en documentos {#document-authoring}
       + [Creación](/help/edge/docs/authoring.md)
       + [Metadatos por lotes](/help/edge/docs/bulk-metadata.md)
