@@ -3,13 +3,13 @@ title: Reutilización del código en varios sitios
 description: Si tiene muchos sitios similares que en su mayoría tienen el mismo aspecto y comportamiento, pero tienen contenido diferente, descubra cómo puede compartir código en varios sitios en un modelo sin respuestas.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: e25e21984ebadde7076d95c6051b8bfca5b2ce03
+exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
+source-git-commit: 7b37f3d387f0200531fe12cde649b978f98d5d49
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 0%
+source-wordcount: '1041'
+ht-degree: 2%
 
 ---
-
 
 # Reutilización del código en varios sitios {#repoless}
 
@@ -45,7 +45,7 @@ Existen varios pasos para activar la funcionalidad de reutilización en su proye
 
 1. [Recuperar token de acceso](#access-token)
 1. [Configurar el servicio de configuración](#config-service)
-1. [Establecer control de acceso](#access-control)
+1. [Agregar configuración de sitio y cuenta técnica](#access-control)
 1. [AEM Actualizar configuración de la](#update-aem)
 1. [Autenticar sitio](#authenticate-site)
 
@@ -126,9 +126,9 @@ Póngase en contacto con el Adobe a través del canal del Slack del proyecto o g
 
 Una vez creada la configuración pública, puede acceder a ella a través de una dirección URL similar a `https://main--<your-aem-project>--<your-github-org>.aem.page/config.json` para verificarla.
 
-### Establecer control de acceso {#access-control}
+### Agregar asignación de ruta para configuración de sitio y establecer cuenta técnica {#access-control}
 
-Para configurar el control de acceso, debe proporcionar la cuenta técnica.
+Debe crear una configuración de sitio y agregarla a la asignación de ruta.
 
 1. Cree una nueva página en la raíz del sitio y elija la plantilla [**Configuración**.](/help/edge/wysiwyg-authoring/tabular-data.md#other)
    * Puede dejar vacía la configuración con solo las columnas predefinidas `key` y `value`. Solo es necesario crearlo.
@@ -156,28 +156,31 @@ Para configurar el control de acceso, debe proporcionar la cuenta técnica.
    ```text
    curl 'https://main--<your-aem-project>--<your-github-org>.aem.live/config.json'
    ```
-1. En su explorador, ahora puede recuperar la cuenta técnica en la respuesta del siguiente vínculo.
+
+Una vez asignada la configuración del sitio, puede configurar el control de acceso definiendo la cuenta técnica para que tenga privilegios de publicación.
+
+1. En su explorador, recupere la cuenta técnica en la respuesta del siguiente vínculo.
 
    ```text
    https://author-p<programID>-e<envionmentID>.adobeaemcloud.com/bin/franklin.delivery/<your-github-org>/<your-aem-project>/main/.helix/config.json
    ```
 
-La respuesta será similar a la siguiente.
+1. La respuesta será similar a la siguiente.
 
-```json
-{
-  "total": 1,
-  "offset": 0,
-  "limit": 1,
-  "data": [
-    {
-      "key": "admin.role.publish",
-      "value": "<tech-account-id>@techacct.adobe.com"
-    }
-  ],
-  ":type": "sheet"
-}
-```
+   ```json
+   {
+     "total": 1,
+     "offset": 0,
+     "limit": 1,
+     "data": [
+       {
+         "key": "admin.role.publish",
+         "value": "<tech-account-id>@techacct.adobe.com"
+       }
+     ],
+     ":type": "sheet"
+   }
+   ```
 
 1. Establezca la cuenta técnica en la configuración con un comando cURL similar al siguiente.
 
@@ -226,8 +229,8 @@ El proyecto está configurado para su uso sin reposo.
 
 Ahora que el sitio base está configurado para el uso de reinicios, puede crear sitios adicionales que aprovechen la misma base de código. Consulte la siguiente documentación en función de su caso de uso.
 
-* [Repoless Multi Site Management](/help/edge/wysiwyg-authoring/repoless-msm.md)
-* [Volver a procesar entornos de ensayo y producción](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+* [Administración de varios sitios sin repositorio](/help/edge/wysiwyg-authoring/repoless-msm.md)
+* [Entornos de ensayo y producción sin repositorio](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
 
 ## Solución de problemas {#troubleshooting}
 
