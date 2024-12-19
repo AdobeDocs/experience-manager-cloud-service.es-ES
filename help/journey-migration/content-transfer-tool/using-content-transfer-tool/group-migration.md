@@ -2,9 +2,9 @@
 title: Migración de grupos
 description: Información general sobre la migración de grupos en AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 7e7b311d425ae6cdee9eb9311c0a12af84f81096
+source-git-commit: bb041cf13d5e82fc4135f0849b03eeeed9a5d009
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1476'
 ht-degree: 4%
 
 ---
@@ -37,16 +37,16 @@ Un cambio importante en AEM as a Cloud Service es el uso completamente integrado
 
 La herramienta de transferencia de contenido y Cloud Acceleration Manager migrarán todos los grupos asociados con el contenido que se está migrando al sistema de la nube. AEM La herramienta de transferencia de contenido lo hace copiando todos los grupos del sistema de fuentes de datos durante el proceso de extracción. A continuación, Ingesta de CAM selecciona y migra solo ciertos grupos:
 
+* Si un grupo se encuentra en una directiva ACL o CUG de contenido migrado, ese grupo se migrará, con algunas excepciones que se enumeran a continuación.
 * Hay varios grupos integrados y ya presentes en el sistema de la nube de Target; no se migran nunca.
-* Se migrarán los grupos de miembros directos de cualquier grupo integrado al que se haga referencia directa o indirectamente en una directiva ACL o CUG de contenido migrado, para garantizar que los usuarios que sean miembros directos o indirectos de dichos grupos mantengan su acceso al contenido migrado.
-* Si un grupo se encuentra en una directiva ACL o CUG de contenido migrado, ese grupo se migrará.
+   * Algunos grupos integrados pueden incluir grupos de miembros que están integrados _no_; cualquier grupo de miembros (miembros directos o miembros de miembros, etc.) al que se haga referencia en una directiva ACL o CUG de contenido migrado se migrará para garantizar que los usuarios que sean miembros de estos grupos (directa o indirectamente) mantengan su acceso al contenido migrado.
 * Otros grupos, como los que no se encuentran en una directiva ACL o CUG, los que ya están en el sistema de destino y los que tienen datos restringidos de exclusividad en el sistema de destino, no se migrarán.
 
 Tenga en cuenta que la ruta registrada o registrada para un grupo es solo la primera ruta que activó la migración de ese grupo y que ese grupo también podría estar en otras rutas de contenido.
 
 La mayoría de los grupos migrados están configurados para ser administrados por IMS.  AEM AEM AEM Esto significa que un grupo en IMS con el mismo nombre se vinculará al grupo en el que se encuentra, y cualquier usuario de IMS en el grupo de IMS se convertirá en usuario y miembro del grupo en el que se encuentra el grupo en el que se encuentra el grupo en el que se encuentra el grupo en el que se encuentra el grupo en el que se encuentra el grupo en el que se encuentra el grupo en el que se encuentra el.  Esto permite a estos usuarios tener acceso al contenido según las directivas ACL o CUG para el grupo.
 
-AEM Tenga en cuenta que los grupos migrados ya no se consideran &quot;grupos locales&quot;; son grupos de IMS y deben volver a crearse en IMS para que se puedan sincronizar entre los grupos de y el IMS. Los grupos migrados deben volver a crearse en IMS para que se puedan sincronizar entre los grupos de y el IMS.  Los grupos se pueden crear en IMS mediante Admin Console, entre otros métodos, de forma individual o en lote.  Consulte [Administrar grupos de usuarios](https://helpx.adobe.com/ca/enterprise/using/user-groups.html) para obtener más información sobre cómo crear grupos de forma individual o en masa en el Admin Console.
+AEM AEM Tenga en cuenta que los grupos migrados ya no se consideran &quot;grupos locales&quot;; son grupos listos para IMS en la práctica, aunque es posible que aún no existan en IMS.  AEM Se deben volver a crear por separado en IMS para que se puedan sincronizar entre el IMS y el.  Los grupos se pueden crear en IMS mediante Admin Console, entre otros métodos, de forma individual o en lote.  Consulte [Administrar grupos de usuarios](https://helpx.adobe.com/ca/enterprise/using/user-groups.html) para obtener más información sobre cómo crear grupos de forma individual o en masa en el Admin Console.
 
 La excepción a esta configuración de IMS es con grupos creados por colecciones de Assets. AEM Cuando se crea una colección en la nube, se crean grupos para acceder a ella; estos grupos se migran al sistema en la nube, pero no se configuran para que los administre IMS.  Para agregar usuarios de IMS a estos grupos, deben agregarse en la página Propiedades del grupo de la interfaz de usuario de Assets, ya sea de forma individual o colectiva como parte de otro grupo de IMS.
 
