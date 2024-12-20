@@ -1114,7 +1114,7 @@ ht-degree: 99%
    + [Implementación de aplicaciones para AEM as a Cloud Service](/help/implementing/home.md)
    + Usar Cloud Manager {#using-cloud-manager}
       + [Navegación](/help/implementing/cloud-manager/navigation.md)
-      + [AEM Panel de lanzamiento de](/help/implementing/cloud-manager/aem-home.md)
+      + [AEM Launchpad](/help/implementing/cloud-manager/aem-home.md)
       + Programas {#programs}
          + [Programas y tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [Programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
