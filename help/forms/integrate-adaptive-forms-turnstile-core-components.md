@@ -5,7 +5,7 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
-source-git-commit: 709b3381eedefe7619cb961f345f202cadf512f3
+source-git-commit: eba6aec89e645e443ba6f4ca5aff66a39288ff1e
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 23%
@@ -98,6 +98,7 @@ Para integrar AEM Forms con el servicio de torniquete, realice los siguientes pa
       * **Mensaje de error:** Proporcione el mensaje de error que se mostrará al usuario cuando falle el envío del Captcha.
         >[!NOTE]
         >* Solo aparece un mensaje de error si el CAPTCHA está relleno en el lado del cliente.
+
 1. Haga clic en **[!UICONTROL Listo]**.
 
 
