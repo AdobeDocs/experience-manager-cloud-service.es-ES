@@ -7,9 +7,9 @@ user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Ser
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 9388187a14129420d17d5ccdadd20313f123d870
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5938'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -640,7 +640,7 @@ ht-degree: 99%
       + [Edición de vídeos](/help/assets/edit-videos-assets-view.md)
       + [Visualización y administración de representaciones](/help/assets/renditions.md)
       + [Administración de metadatos de recursos](/help/assets/metadata-assets-view.md)
-      + [Cambiar nombre por lotes](/help/assets/bulk-rename-assets-view.md)
+      + [Cambiar nombre de forma masiva](/help/assets/bulk-rename-assets-view.md)
       + [Edición masiva de metadatos](/help/assets/bulk-metadata-edit.md)
       + [Compartir recursos](/help/assets/share-links-for-assets-view.md)
       + [Administrar colecciones](/help/assets/manage-collections-assets-view.md)
@@ -755,8 +755,8 @@ ht-degree: 99%
             + [Configuración de la acción de envío Enviar a punto final REST para formularios adaptables](/help/forms/configure-submit-action-restpoint.md)
             + [Configuración de la acción de envío Enviar correo electrónico para un formulario adaptable](/help/forms/configure-submit-action-send-email.md)
             + [Uso de Google reCAPTCHA en un formulario adaptable](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [Uso de Chcaptcha en componentes principales de un formulario adaptable](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
-            + [Usar Captcha de torniquete en componentes principales de un formulario adaptable](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+            + [Uso de hCaptcha en los componentes principales de un formulario formulario](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [Uso de Turnstile Captcha en los componentes principales de un formulario adaptable](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [Agregar un controlador de error personalizado en un formulario adaptable](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Añadir una configuración regional para Formularios adaptables basada en componentes principales](/help/forms/supporting-new-language-localization-core-components.md)
             + [Diseño de un esquema JSON para un formulario adaptable (componentes principales)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
