@@ -2,9 +2,9 @@
 title: Integración de AEM Assets durante la creación de contenido para Edge Delivery Services
 description: Aprenda a integrar a los AEM Assets con los Edge Delivery Services. Esta integración le permite integrar AEM Assets con Microsoft Word y Google Docs, integrar AEM Assets con Universal Editor, integrar Dynamic Media con capacidades OpenAPI con Universal Editor e integrar Dynamic Media con capacidades OpenAPI con Microsoft Word y Google Docs.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: b908cb1e8d9c7814f4b23142aee589af74047cd8
+source-git-commit: fc19e2bf43237418f3636d982c46915c8013cbfa
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '698'
 ht-degree: 3%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 ![EDS2](/help/assets/assets/EDS2.png)
 
-Edge Delivery Services es un conjunto de servicios componibles que permiten un alto grado de flexibilidad en la forma en que se crea y se proporciona contenido en el sitio web. AEM Puede usar la creación de [administración de contenido ](/help/sites-cloud/authoring/author-publish.md)y la creación de [WYSIWYG mediante el editor universal, así como la creación basada en documentos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring).
+[Edge Delivery Services](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/edge-delivery/overview) es un conjunto de servicios que se pueden componer y que permiten un alto grado de flexibilidad en la forma en que se crea y se entrega contenido en el sitio web. AEM Puede usar la creación de [administración de contenido ](/help/sites-cloud/authoring/author-publish.md)y la creación de [WYSIWYG mediante el editor universal, así como la creación basada en documentos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring).
 
 Puede editar contenido en:
 
