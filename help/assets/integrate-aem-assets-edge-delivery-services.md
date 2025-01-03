@@ -2,9 +2,9 @@
 title: Integración de AEM Assets durante la creación de contenido para Edge Delivery Services
 description: Aprenda a integrar a los AEM Assets con los Edge Delivery Services. Esta integración le permite integrar AEM Assets con Microsoft Word y Google Docs, integrar AEM Assets con Universal Editor, integrar Dynamic Media con capacidades OpenAPI con Universal Editor e integrar Dynamic Media con capacidades OpenAPI con Microsoft Word y Google Docs.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: fc19e2bf43237418f3636d982c46915c8013cbfa
+source-git-commit: e6fd7b1d16aac5e7021a8c309f6483f98746e85e
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '743'
 ht-degree: 3%
 
 ---
@@ -27,6 +27,8 @@ Después de editar el contenido, puede publicarlo en Edge Delivery Services.
 
 La integración de AEM Assets con las herramientas de creación basada en documentos, como Microsoft Word o Google Docs, proporciona un selector de recursos directamente en el editor. Utilice este selector de recursos para acceder a los AEM Assets e insertar los recursos aprobados en el documento.
 
+Si ya tiene un sitio web de Edge Delivery Services, consulte [Complemento de AEM Assets](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) para integrar AEM Assets AEM con su proyecto de existente. Si no tiene un sitio web de Edge Delivery Services, vea las secciones [Requisitos previos](#integrate-aem-assets-with-microsoft-word-and-google-docs) e [Integración de AEM Assets con el entorno de creación basada en documentos](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) a continuación.
+
 ### Requisitos previos{#integrate-aem-assets-with-microsoft-word-and-google-docs}
 
 Antes de empezar, asegúrese de que el entorno de creación basada en documentos está listo:
@@ -35,7 +37,7 @@ Antes de empezar, asegúrese de que el entorno de creación basada en documentos
 
 ### Integración de AEM Assets con el entorno de creación basada en documentos{#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs}
 
-Configure el complemento Sidekick de AEM Assets para utilizar recursos durante la creación de contenido en documentos de Microsoft Word o Google.
+Configure el complemento Sidekick de AEM Assets para que utilice recursos durante la creación de contenido en documentos de Microsoft Word o Google.
 
 * Consulte [Complemento de Sidekick de Adobe Experience Manager Assets](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-experience-manager-assets-for-website-authors) para obtener información sobre cómo acceder y utilizar AEM Assets en documentos de Microsoft Word o Google.
 * Consulte [Configuración del complemento Adobe Experience Manager Assets Sidekick](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin) para obtener más información sobre la configuración.
