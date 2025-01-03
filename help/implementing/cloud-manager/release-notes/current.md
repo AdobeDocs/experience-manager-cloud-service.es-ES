@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 8e89adcaadbc53c3d525d57ef452f671137a619f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '645'
-ht-degree: 43%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Obtenga información sobre el lanzamiento de Cloud Manager 2024.12.0 en AEM (Ado
 
 La fecha de lanzamiento de Cloud Manager 2024.12.0 en AEM as a Cloud Service es el jueves, 5 de diciembre de 2024.
 
-La próxima versión planificada es el viernes, 23 de enero de 2025.
+La próxima versión planificada es el 23 de enero de 2025.
 
 
 ## Novedades {#what-is-new}
@@ -32,21 +32,21 @@ La próxima versión planificada es el viernes, 23 de enero de 2025.
 
     Starting February 2025, sandboxes and dev environments upgrade to the Java 21 runtime, regardless of the build version (Java 8, 11, 17, or 21). Production environments follow with an upgrade in April 2025. -->
 
-* **Tipos de registro A:** Se ha agregado compatibilidad con tipos de registro A para mejorar la preparación para el lanzamiento de dominios que usan configuraciones de CDN en AEM Cloud Manager. Ahora tiene la opción de lanzarse agregando un tipo de registro CNAME o un tipo de registro A que represente las IP de Fastly, lo que simplifica el enrutamiento de dominios. Esta mejora elimina la restricción de depender únicamente de registros CNAME para la configuración de dominios con Fastly.
+* **Tipos de registro A:** se ha añadido compatibilidad con tipos de registro A para mejorar los Preparativos para lanzamiento de dominios que usan configuraciones de CDN en AEM Cloud Manager. Ahora tiene la opción de iniciar el lanzamiento añadiendo un tipo de registro CNAME o un tipo de registro A que represente las IP de Fastly, lo que simplifica el enrutamiento de dominios. Esta mejora elimina la restricción de depender únicamente de registros CNAME para la configuración de dominios con Fastly.
 
-  Ver [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). <!-- CMGR-63076 -->
+  Consulte [Añadir un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).<!-- CMGR-63076 -->
 
 <!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. -->
 
-* **Agregar varios dominios a un sitio de Edge Delivery:** Ahora puede agregar varios dominios, incluidos dominios Apex y no Apex, a un sitio de Edge Delivery (EDS) en AEM Cloud Manager. Esta mejora resuelve las limitaciones anteriores que restringían la capacidad de asociar varios dominios con un origen EDS. La actualización garantiza una mejor flexibilidad para administrar las configuraciones de dominio y simplifica los procesos de lanzamiento para sitios con configuraciones de dominio complejas. <!-- CMGR-63007 -->
+* **Añadir varios dominios a un sitio de Edge Delivery:** ahora puede añadir varios dominios, incluidos dominios Apex y no Apex, a un sitio de Edge Delivery (EDS) en AEM Cloud Manager. Esta mejora resuelve las limitaciones anteriores que restringían la posibilidad de asociar varios dominios con un origen EDS. La actualización garantiza una mejor flexibilidad para administrar las configuraciones de dominio y simplifica los procesos de lanzamiento para sitios con configuraciones de dominio complejas. <!-- CMGR-63007 -->
 
-* **Opciones de filtrado avanzadas:** Se han introducido opciones de filtrado avanzadas en las páginas de ejecución de la canalización y en las páginas de certificados SSL en AEM Cloud Manager. Ahora puede filtrar por varios criterios, lo que le permite un acceso más rápido a los datos relevantes y mejorar la eficacia de la implementación. <!-- CMGR-26263 -->
+* **Opciones de filtrado avanzadas:** se han introducido opciones de filtrado avanzadas en las páginas de ejecución de canalización y en las páginas de certificados SSL en AEM Cloud Manager. Ahora puede filtrar por varios criterios, lo que le permite un acceso más rápido a los datos relevantes y mejorar la eficacia de la implementación. <!-- CMGR-26263 -->
 
-   * **Filtrado de actividades de canalización:** Incluye el filtrado de actividades de canalización, lo que permite refinar los resultados de búsqueda para actividades de canalización específicas. Los filtros disponibles incluyen canalización, acción y estado.
+   * **Filtrado de actividades de canalización:** incluye el filtrado de actividades de canalización, lo que permite detallar los resultados de búsqueda para actividades de canalización específicas. Los filtros disponibles incluyen canalización, acción y estado.
      ![Filtrado de actividades de canalización](/help/implementing/cloud-manager/assets/filters-pipeline.png)
 
 
-   * **Filtrado de certificados SSL:** Incluye el filtrado de certificados SSL, que le permite refinar los resultados de búsqueda para certificados específicos. Los filtros disponibles incluyen el nombre, la propiedad y el estado del certificado SSL.
+   * **Filtrado de certificados SSL:** incluye el filtrado de certificados SSL, que le permite detallar los resultados de búsqueda para certificados específicos. Los filtros disponibles incluyen el nombre, la propiedad y el estado del certificado SSL.
      ![Filtrado de certificados SSL](/help/implementing/cloud-manager/assets/filters-ssl-certificates.png)
 
 ## Programa para primeros usuarios {#early-adoption}
@@ -57,9 +57,9 @@ Participe en nuestro programa para primeros usuarios de Cloud Manager y tenga la
 
 <!-- BOTH CS & AMS -->
 
-La función **Traer tu propio Git** se ha ampliado para incluir compatibilidad con repositorios externos, como GitLab y Bitbucket. Esta nueva compatibilidad se suma a la compatibilidad ya existente con repositorios de GitHub privados y de empresa. Al añadir estos nuevos repositorios, también puede vincularlos directamente a sus canalizaciones. Puede alojar estos repositorios en plataformas públicas en la nube o dentro de su infraestructura o nube privada. Esta integración también elimina la necesidad de sincronización constante del código con el repositorio de Adobe y proporciona la capacidad de validar las solicitudes de extracción antes de combinarlas en una rama principal.
+La función **Bring Your Own Git** se ha ampliado para incluir compatibilidad con repositorios externos, como GitLab y Bitbucket. Esta nueva compatibilidad se suma a la compatibilidad ya existente con repositorios de GitHub privados y de empresa. Al añadir estos nuevos repositorios, también puede vincularlos directamente a sus canalizaciones. Puede alojar estos repositorios en plataformas públicas en la nube o dentro de su infraestructura o nube privada. Esta integración también elimina la necesidad de sincronización constante del código con el repositorio de Adobe y proporciona la capacidad de validar las solicitudes de extracción antes de combinarlas en una rama principal.
 
-Las canalizaciones que usan repositorios externos (excepto las hospedadas en GitHub) y el **Déclencheur de implementación** establecido en **Cambios en Git** ahora se inician automáticamente.
+Las canalizaciones que usan repositorios externos (excepto las alojadas en GitHub) y el **Activador de la implementación** establecido en **Cambios en Git** ahora se inician automáticamente.
 
 Consulte [Adición de repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
@@ -73,8 +73,8 @@ Si le interesa probar esta nueva función y compartir sus comentarios, envíe un
 
 ## Correcciones de errores
 
-* Se ha agregado una protección para evitar la eliminación de dominios con asignaciones de dominios activas en AEM Cloud Manager. Los usuarios que intenten eliminar estos dominios ahora reciben un mensaje de error que les indica que eliminen primero la asignación de dominio antes de continuar con la eliminación del dominio. Este flujo de trabajo garantiza la integridad del dominio y evita errores de configuración accidentales. <!-- CMGR-63033 -->
-* De forma poco frecuente, los usuarios no podían agregar un nombre de dominio o actualizar un certificado SSL debido a un estado incorrecto asociado en los casos respectivos. <!-- CMGR-62816 -->
+* Se ha añadido una protección para evitar la eliminación de dominios con asignaciones de dominios activas en AEM Cloud Manager. Los usuarios que intenten eliminar estos dominios ahora reciben un mensaje de error que les indica que eliminen primero la asignación de dominio antes de continuar con la eliminación del dominio. Este flujo de trabajo garantiza la integridad del dominio y evita errores de configuración accidentales. <!-- CMGR-63033 -->
+* De forma poco frecuente, los usuarios no podían añadir un nombre de dominio o actualizar un certificado SSL debido a un estado incorrecto asociado en los casos respectivos. <!-- CMGR-62816 -->
 
 
 <!-- ## Known issues {#known-issues} -->
