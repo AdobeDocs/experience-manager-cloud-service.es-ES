@@ -4,10 +4,10 @@ description: AEM AEM Aprenda a utilizar la CDN administrada por el y a apuntar s
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: c31441baa6952d92be4446f9035591b784091324
+source-git-commit: 6600f5c1861e496ae8ee3b6d631ed8c033c4b7ef
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1745'
+ht-degree: 11%
 
 ---
 
@@ -28,7 +28,7 @@ Los clientes que deseen publicar en el nivel de Edge Delivery Services pueden ap
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
-## CDN administrada por Adobe {#aem-managed-cdn}
+## CDN administrado por Adobe {#aem-managed-cdn}
 
 <!-- CQDOC-21758, 5a -->
 
@@ -120,7 +120,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->Al utilizar su propia CDN, no es necesario instalar dominios y certificados en Cloud Manager. El enrutamiento en la CDN de Adobe se realiza utilizando el dominio predeterminado `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`, que debe enviarse en el encabezado de la solicitud `Host`. Si se sobrescribe el encabezado de solicitud `Host` con un nombre de dominio personalizado, es posible que la solicitud se enrute incorrectamente a través de la CDN de Adobe.
+>Al utilizar su propia CDN, no es necesario instalar dominios y certificados en Cloud Manager. El enrutamiento en la CDN de Adobe se realiza utilizando el dominio predeterminado `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`, que debe enviarse en el encabezado de la solicitud `Host`. Si se sobrescribe el encabezado de solicitud `Host` con un nombre de dominio personalizado, es posible que la solicitud se enrute incorrectamente a través de la CDN de Adobe o que se produzcan errores 421.
 
 >[!NOTE]
 >
@@ -133,6 +133,30 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 AEM El salto adicional entre la CDN del cliente y la CDN del cliente solo es necesario si se produce una pérdida de caché. Al utilizar las estrategias de optimización de caché descritas en este artículo, la adición de una CDN de cliente solo debe introducir una latencia insignificante.
 
 Esta configuración de CDN del cliente es compatible con el nivel de publicación, pero no delante del de creación.
+
+### Depuración de configuración
+
+Para depurar una configuración de BYOCDN, utilice el encabezado `x-aem-debug` con un valor de `edge=true`. Por ejemplo:
+
+En Linux®:
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" -H "x-aem-debug: edge=true"
+```
+
+En Windows:
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" --header "x-aem-debug: edge=true"
+```
+
+Esto reflejará ciertas propiedades utilizadas en la solicitud en el encabezado de respuesta `x-aem-debug`. Por ejemplo:
+
+```
+x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-Edge-Key=set,host=publish-p87058-e257304-cmstg.adobeaemcloud.com,x-forwarded-host=wknd.site,adobe_unlocked_byocdn=true
+```
+
+Con este software se puede verificar, por ejemplo, los valores de host, si está configurada la autenticación de Edge, así como el valor del encabezado x-forwarded-host, si se establece una clave de Edge y qué clave se utiliza (en caso de que una clave coincida).
 
 ### Configuraciones de proveedor de CDN de muestra {#sample-configurations}
 
@@ -160,6 +184,11 @@ Las configuraciones de muestra proporcionadas muestran la configuración base ne
 **Redirección al extremo del servicio de publicación**
 
 Cuando una solicitud recibe una respuesta 403 prohibida, significa que a la solicitud le faltan algunos encabezados obligatorios. Una causa común de esto es que la red de distribución de contenido (CDN) está administrando el tráfico de dominio Apex y `www`, pero no está agregando el encabezado correcto para el dominio `www`. Este problema se puede solucionar comprobando los registros de CDN de AEM as a Cloud Service y los encabezados de solicitud necesarios.
+
+**Error 421 de redirección mal dirigida**
+
+Cuando una solicitud recibe un error 421 con un cuerpo alrededor de `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate`, indica que el conjunto HTTP `Host` no coincide con ningún host en los certificados para el host. Esto generalmente indica que `Host` o la configuración de SNI es incorrecta. Asegúrese de que tanto `Host` como la configuración SNI apuntan a publish-p&lt;PROGRAM_ID>-e<ENV-ID>Host de .adobeaemcloud.com.
+
 
 **Demasiadas redirecciones en bucle**
 

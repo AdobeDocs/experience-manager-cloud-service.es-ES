@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo configurar las credenciales y la a
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 37d399c63ae49ac201a01027069b25720b7550b9
+source-git-commit: d6484393410d32f348648e13ad176ef5136752f2
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1497'
 ht-degree: 4%
 
 ---
@@ -28,12 +28,14 @@ Hay una sección sobre cómo [rotar claves](#rotating-secrets), lo cual es una b
 
 Como se describe en la página [CDN en AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#point-to-point-CDN), los clientes pueden elegir enrutar el tráfico a través de su propia CDN, que se denomina CDN del cliente (también denominada a veces BYOCDN).
 
-Como parte de la configuración, la CDN de Adobe y la CDN del cliente deben acordar un valor del encabezado HTTP `X-AEM-Edge-Key`. Este valor se establece en cada solicitud, en la red de distribución de contenido (CDN) del cliente, antes de enrutarse a la red de distribución de contenido (CDN) de Adobe AEM, la cual valida que el valor es el esperado, de modo que puede confiar en otros encabezados HTTP, incluidos los que ayudan a enrutar la solicitud a la red de distribución de contenido (CDN) adecuada.
+Como parte de la configuración, la CDN de Adobe y la CDN del cliente deben acordar un valor del encabezado HTTP `X-AEM-Edge-Key`. Este valor se establece en cada solicitud en la CDN del cliente antes de enrutarse a la CDN de Adobe AEM, que luego valida que el valor es el esperado, por lo que puede confiar en otros encabezados HTTP, incluidos los que ayudan a enrutar la solicitud al origen de la correspondiente.
 
 AEM Las propiedades `edgeKey1` y `edgeKey2` de un archivo con el nombre `cdn.yaml` o similar, en algún lugar de una carpeta de nivel superior `config`, hacen referencia al valor *X--Edge-Key*. Lea [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#folder-structure) para obtener detalles acerca de la estructura de carpetas y cómo implementar la configuración.  La sintaxis se describe en el ejemplo siguiente.
 
+Para obtener más información de depuración y errores comunes, compruebe [Errores comunes](/help/implementing/dispatcher/cdn.md#common-errors).
+
 >[!WARNING]
->AEM El acceso directo sin una X--Edge-Key correcta se denegará para todas las solicitudes que coincidan con la condición (en el ejemplo siguiente, esto significa todas las solicitudes al nivel de publicación). Si necesita introducir gradualmente la autenticación, consulte la sección [Migración segura para reducir el riesgo de tráfico bloqueado](#migrating-safely).
+>AEM El acceso directo sin una X--Edge-Key correcta se denegará para todas las solicitudes que coincidan con la condición (en el ejemplo siguiente, esto significa todas las solicitudes al nivel de publicación). Si necesita implementar gradualmente la autenticación, consulte la sección [Migración segura para reducir el riesgo de tráfico bloqueado](#migrating-safely).
 
 ```
 kind: "CDN"
@@ -147,7 +149,7 @@ Entre las propiedades adicionales se incluyen:
    * name: una cadena descriptiva.
    * type: debe ser purge.
    * purgeKey1 - su valor debe hacer referencia a una [variable de entorno de tipo secreto Cloud Manager](/help/operations/config-pipeline.md#secret-env-vars). En el campo Servicio aplicado, seleccione Todo. Se recomienda que el valor (por ejemplo, `${{CDN_PURGEKEY_031224}}`) refleje el día en que se agregó.
-   * purgeKey2 se usa para la rotación de secretos, que se describe en la sección [rotación de secretos](#rotating-secrets) a continuación. Se debe declarar al menos uno de `purgeKey1` y `purgeKey2`.
+   * purgeKey2: se usa para la rotación de secretos, que se describe en la sección [girar secretos](#rotating-secrets) a continuación. Se debe declarar al menos uno de `purgeKey1` y `purgeKey2`.
 * Reglas: le permite declarar cuál de los autenticadores debe utilizarse y si es para el nivel de publicación o vista previa.  Incluye:
    * nombre: una cadena descriptiva
    * when: una condición que determina cuándo se debe evaluar la regla, según la sintaxis del artículo [Reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md). Normalmente, incluye una comparación del nivel actual (por ejemplo, ... publicar).
@@ -202,7 +204,7 @@ Además, la sintaxis incluye lo siguiente:
    * nombre: una cadena descriptiva
    * tipo: debe ser `basic`
    * una matriz de hasta 10 credenciales, cada una de las cuales incluye los siguientes pares de nombre/valor, que los usuarios finales pueden introducir en el cuadro de diálogo autenticación básica:
-      * user: nombre del usuario
+      * user: nombre del usuario.
       * password: su valor debe hacer referencia a una [variable de entorno de tipo secreto Cloud Manager](/help/operations/config-pipeline.md#secret-env-vars), con **All** seleccionado como campo de servicio.
 * Rules: permite declarar cuál de los autenticadores se debe utilizar y qué recursos se deben proteger. Cada regla incluye:
    * nombre: una cadena descriptiva
