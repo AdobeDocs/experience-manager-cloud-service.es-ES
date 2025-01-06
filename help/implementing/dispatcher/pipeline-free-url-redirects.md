@@ -4,9 +4,9 @@ description: Aprenda a declarar redirecciones 301 o 302 sin acceso a canalizacio
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: e30a9fbe74f1f5cd8a924dc3fec140fad5e0a164
+source-git-commit: 8f5dd529b5f317326d9742be1dd3a3104fe6957a
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '758'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ AEM as a Cloud Service ofrece [varios enfoques](https://experienceleague.adobe.c
 * El número de redirecciones va de unas pocas a decenas de miles.
 * Desea la opción de una interfaz de usuario, ya sea creada como un proyecto personalizado o usando el [Administrador de mapas de redireccionamiento de ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) o [Administrador de redireccionamiento de ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html).
 
-AEM El núcleo de esta función es la capacidad de Apache/Dispatcher para cargar (o volver a cargar) uno o más archivos de asignación de reescritura que se han colocado en una ubicación especificada del repositorio de publicación. Es importante mencionar que la forma en que los archivos llegan a ese punto está fuera del ámbito de esta función, pero puede considerar uno de los siguientes métodos:
+AEM El núcleo de esta función es la capacidad de Apache/Dispatcher AEM para cargar (o volver a cargar) uno o más archivos de asignación de reescritura que se han colocado en una ubicación especificada del repositorio de publicación (de modo que se pueda descargar desde la publicación). Es importante mencionar que la forma en que los archivos llegan a ese punto está fuera del ámbito de esta función, pero puede considerar uno de los siguientes métodos:
 
 * Ingesta de la asignación de reescritura como un recurso en la interfaz de usuario de creación y publicación.
 * Instalando [ACS Commons Redirect Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) ([al menos la versión 6.7.0 o superior](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), que incluye una interfaz de usuario para administrar las asignaciones de URL y también puede publicar el archivo de asignación de reescritura.
