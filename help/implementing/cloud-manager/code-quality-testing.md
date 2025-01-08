@@ -5,10 +5,10 @@ exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6f17afc82b2d26fd6025a9ba8449a0cb1b368d48
 workflow-type: tm+mt
-source-wordcount: '1173'
-ht-degree: 96%
+source-wordcount: '1169'
+ht-degree: 79%
 
 ---
 
@@ -29,21 +29,23 @@ Consulte la [Configuración de la canalización de CI/CD](/help/implementing/clo
 
 ## Reglas de calidad de código {#understanding-code-quality-rules}
 
-Las pruebas de calidad del código analizan el código fuente para asegurarse de que cumple determinados criterios de calidad. Esto se lleva a cabo mediante una combinación de SonarQube y un examen a nivel de paquete de contenido usando OakPAL. Hay más de 100 reglas, que combinan reglas genéricas de Java y reglas específicas de AEM. Algunas de las reglas específicas de AEM se crean en función de las prácticas recomendadas de AEM Engineering y se denominan [reglas de calidad de código personalizadas](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+Las pruebas de calidad del código analizan el código fuente para asegurarse de que cumple determinados criterios de calidad. Una combinación de SonarQube y un examen a nivel de paquete de contenido usando OakPAL implementa este paso. Hay más de 100 reglas, que combinan reglas genéricas de Java y reglas específicas de AEM. Algunas de las reglas específicas de AEM se crean en función de las prácticas recomendadas de AEM Engineering y se denominan [reglas de calidad de código personalizadas](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
->[!NOTE]
+Puede descargar la lista completa actual de reglas [mediante este vínculo](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
+
+>[!IMPORTANT]
 >
->Puede descargar la lista completa de reglas [con este vínculo](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
+>A partir del jueves, 13 de febrero de 2025 (Cloud Manager 2025.2.0), Calidad del código de Cloud Manager utilizará una versión actualizada de SonarQube 9.9 y una lista actualizada de reglas que puede [descargar aquí](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx).
 
 ### Clasificaciones en tres niveles {#three-tiered-gate}
 
 Los problemas identificados por las pruebas de calidad del código se asignan a una de las tres categorías.
 
-* **Crítico**: estos son problemas que causan un fallo inmediato de la canalización.
+* **Crítico**: problemas que causan un fallo inmediato de la canalización.
 
-* **Importante**: estos son problemas que hacen que la canalización introduzca un estado pausado. Un administrador de implementación, un administrador de proyectos o un propietario empresarial pueden anular los problemas, en cuyo caso la canalización continúa, o pueden aceptar los problemas, en cuyo caso la canalización se detiene con un error.
+* **Importante**: problemas que hacen que la canalización entre en estado de pausa. Un administrador de implementación, un administrador de proyectos o un propietario empresarial pueden anular los problemas y permitir que continúe la canalización. De forma alternativa, pueden aceptar los problemas, lo cual haría que la canalización se detenga con un error. 
 
-* **Información**: se trata de problemas que se proporcionan exclusivamente con fines informativos y que no afectan a la ejecución de la canalización
+* **Información**: problemas que se proporcionan exclusivamente con fines informativos y que no afectan la ejecución de la canalización
 
 >[!NOTE]
 >
@@ -68,7 +70,7 @@ En la tabla siguiente se resumen las clasificaciones y los umbrales de fallo de 
 
 >[!NOTE]
 >
->Consulte [Definiciones de métricas de SonarQube](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) para obtener definiciones más detalladas.
+>Consulte [Definiciones de métricas de SonarQube](https://docs.sonarsource.com/sonarqube-server/latest/user-guide/code-metrics/metrics-definition/) para obtener definiciones más detalladas.
 
 >[!NOTE]
 >
@@ -76,7 +78,7 @@ En la tabla siguiente se resumen las clasificaciones y los umbrales de fallo de 
 
 ## Tratar con falsos positivos {#dealing-with-false-positives}
 
-El proceso de digitalización de la calidad no es perfecto y a veces identifica incorrectamente los problemas que no son realmente problemáticos. Esto se conoce como **falso positivo**.
+El proceso de digitalización de la calidad no es perfecto y a veces identifica incorrectamente los problemas que no son realmente problemas. Este estado se denomina **falso positivo**.
 
 En estos casos, el código fuente se puede anotar con la anotación de Java estándar `@SuppressWarnings` que especifica el ID de regla como atributo de anotación. Por ejemplo, un falso positivo común es que la regla SonarQube para detectar contraseñas codificadas puede ser agresiva sobre cómo se identifica una contraseña codificada.
 
@@ -87,7 +89,7 @@ El siguiente código es bastante común en un proyecto de AEM, que tiene código
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-SonarQube generará una vulnerabilidad de bloqueo. Pero después de revisar el código, reconoce que no se trata de una vulnerabilidad y puede anotar el código con el ID de regla adecuado.
+SonarQube genera una vulnerabilidad de bloqueo. Pero después de revisar el código, se reconoce que este problema no supone una vulnerabilidad y se puede anotar el código con el ID de regla adecuado.
 
 ```java
 @SuppressWarnings("squid:S2068")
@@ -95,7 +97,7 @@ SonarQube generará una vulnerabilidad de bloqueo. Pero después de revisar el c
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-Sin embargo, si el código era realmente así:
+Sin embargo, si el código era realmente como se indica a continuación:
 
 ```java
 @Property(label = "Service Password", value = "mysecretpassword")
@@ -106,14 +108,14 @@ A continuación, la solución correcta es quitar la contraseña codificada.
 
 >[!NOTE]
 >
->Aunque es una práctica recomendada hacer que la anotación `@SuppressWarnings` sea lo más específica posible, es decir, anotar solo la declaración o el bloque específico que causa el problema; es posible realizar anotaciones a nivel de clase.
+>Aunque es recomendable hacer que la anotación de `@SuppressWarnings` sea lo más específica posible (por ejemplo, anotar solo la instrucción o el bloque que causa el problema), también es posible realizar anotaciones en el nivel de clase.
 
 >[!NOTE]
 >Aunque no hay ningún paso explícito de prueba de seguridad, hay reglas de calidad de código relacionadas con la seguridad evaluadas durante el paso de calidad del código. Consulte el documento [Información general de seguridad para AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) para obtener más información sobre la seguridad en Cloud Service.
 
 ## Optimización del análisis de paquetes de contenido {#content-package-scanning-optimization}
 
-Como parte del proceso de análisis de calidad, Cloud Manager realiza un análisis de los paquetes de contenido producidos por la compilación de Maven. Cloud Manager ofrece optimizaciones para acelerar este proceso, que son efectivas cuando se observan ciertas restricciones de empaquetado. Lo más significativo es la optimización realizada para proyectos que generan un paquete de contenido único, generalmente denominado paquete &quot;todo&quot;, que contiene varios paquetes de contenido producidos por la compilación, que se marcan como omitidos. Cuando Cloud Manager detecta este escenario, en lugar de desempaquetar el paquete “todo”, los paquetes de contenido individuales se analizan directamente y se ordenan según las dependencias. Por ejemplo, considere la siguiente salida de compilación.
+Como parte del proceso de análisis de calidad, Cloud Manager realiza un análisis de los paquetes de contenido producidos por la compilación de Maven. Cloud Manager ofrece optimizaciones para acelerar este proceso, que es eficaz cuando se observan ciertas restricciones de empaquetado. La optimización más significativa se dirige a proyectos que producen un único paquete &quot;todo&quot;, que contiene varios paquetes de contenido de la compilación, que se marcan como omitidos. Cuando Cloud Manager detecta este escenario, en lugar de desempaquetar el paquete “todo”, los paquetes de contenido individuales se analizan directamente y se ordenan según las dependencias. Por ejemplo, considere la siguiente salida de compilación.
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip` (content-package)
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (skipped-content-package)
@@ -123,9 +125,9 @@ Si los únicos elementos dentro de `myco-all-1.0.0-SNAPSHOT.zip` son los dos paq
 
 Para los proyectos que producen decenas de paquetes incrustados, se ha demostrado que esta optimización ahorra más de 10 minutos por ejecución de canalización.
 
-Se puede producir un caso especial cuando el paquete de contenido “todo” contiene una combinación de paquetes de contenido omitidos y paquetes OSGi. Por ejemplo, si `myco-all-1.0.0-SNAPSHOT.zip` contenía los dos paquetes incrustados mencionados anteriormente, así como uno o más paquetes OSGi, entonces se construye un nuevo paquete de contenido mínimo con solo los paquetes OSGi. Este paquete siempre tiene el nombre `cloudmanager-synthetic-jar-package` y los paquetes contenidos se colocan en `/apps/cloudmanager-synthetic-installer/install`.
+Se puede producir un caso especial cuando el paquete de contenido “todo” contiene una combinación de paquetes de contenido omitidos y paquetes OSGi. Por ejemplo, si `myco-all-1.0.0-SNAPSHOT.zip` contenía los dos paquetes incrustados mencionados anteriormente, así como uno o más paquetes OSGi, entonces se construye un nuevo paquete de contenido mínimo con solo los paquetes OSGi. Este paquete siempre tiene el nombre `cloudmanager-synthetic-jar-package`, y los paquetes contenidos se colocan en `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
 >
 >* Esta optimización no afecta a los paquetes que se implementan en AEM.
->* Debido a que la coincidencia entre los paquetes de contenido incrustado y los paquetes de contenido omitido se basa en los nombres de archivo, esta optimización no se puede realizar si varios paquetes de contenido omitidos tienen exactamente el mismo nombre de archivo o si el nombre de archivo se cambia al incrustar.
+>* La coincidencia entre paquetes de contenido incrustado y paquetes de contenido omitido depende de los nombres de archivo. Esta optimización no se puede producir si varios paquetes omitidos comparten el mismo nombre de archivo o si el nombre de archivo cambia durante la incrustación.
