@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: e4db952e8284dba578c6b3ac86405e9ab640e7c0
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 22%
+source-wordcount: '1378'
+ht-degree: 23%
 
 ---
 
@@ -118,14 +118,17 @@ Según las necesidades del flujo de trabajo, es posible que desee editar el frag
 >
 >El editor universal [valida los campos de fragmento de contenido según sus modelos](/help/assets/content-fragments/content-fragments-models.md#validation), lo que le permite aplicar reglas de integridad de datos como patrones regex y restricciones de exclusividad.
 >
->Esto garantiza que el contenido cumpla con los requisitos comerciales específicos antes de publicarse.
+>Esto garantiza que el contenido cumple los requisitos de la empresa antes de su publicación.
 
 ### Adición de componentes a contenedores {#adding-components}
 
 1. Seleccione un componente contenedor en el [árbol de contenido](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) o en el editor.
-1. A continuación, seleccione el icono de añadir en el panel de propiedades.
 
    ![Seleccionar un componente para agregarlo a un contenedor](assets/ue-add-component.png)
+
+1. A continuación, seleccione el icono de añadir en el panel de propiedades.
+
+   ![Seleccionar icono de agregar](assets/add-icon.png)
 
 El componente se inserta en el contenedor y se puede editar en el editor.
 

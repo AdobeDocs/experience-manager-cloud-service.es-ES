@@ -4,7 +4,7 @@ description: Aprenda a crear bloques instrumentados para utilizarlos con el edit
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: fb7da1530f916ec63d5993446fd0c328af09ae7c
+source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 96%
@@ -45,13 +45,13 @@ El siguiente ejemplo de bloque de comillas sigue este enfoque.
 
 ### Crear la definición y el modelo del bloque {#create-block-model}
 
-1\. Clone el proyecto de GitHub localmente que creó en la guía de introducción para desarrolladores de [para la creación de WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) y ábralo en un editor de su elección.
+1\. Clone localmente el proyecto de GitHub que ha creado en la [Guía de introducción para desarrolladores para la creación WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) y ábralo en un editor de su elección.
 
 * El código Microsoft se utiliza aquí con fines ilustrativos.
 
 ![Clonación del proyecto](assets/create-block/clone.png)
 
-2\. Edite el archivo `component-definition.json` en la raíz del proyecto, agregue la siguiente definición para el nuevo bloque de comillas y guarde el archivo.
+2\. Edite el archivo [`component-definition.json`](/help/implementing/universal-editor/component-definition.md) en la raíz del proyecto, agregue la siguiente definición para el nuevo bloque de comillas y guarde el archivo.
 
 >[!BEGINTABS]
 
@@ -119,7 +119,7 @@ El siguiente ejemplo de bloque de comillas sigue este enfoque.
 
 >[!ENDTABS]
 
-4\. Edite el archivo `component-filters.json` en la raíz del proyecto y añada el bloque de comillas a la [definición de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) para permitir que el bloque se añada a cualquier sección y guardar el archivo.
+4\. Edite el archivo [`component-filters.json`](/help/implementing/universal-editor/customizing.md#filtering-components) en la raíz del proyecto y agregue el bloque de comillas a la [definición de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) para permitir que el bloque se agregue a cualquier sección y guarde el archivo.
 
 >[!BEGINTABS]
 

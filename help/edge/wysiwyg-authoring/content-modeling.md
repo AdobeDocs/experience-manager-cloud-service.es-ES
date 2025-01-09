@@ -4,10 +4,10 @@ description: Aprenda cómo funciona el modelado de contenido para la creación W
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: dce661331c42ba2cc082553e1e344c73556ce18d
+source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
 workflow-type: tm+mt
-source-wordcount: '2196'
-ht-degree: 98%
+source-wordcount: '2195'
+ht-degree: 99%
 
 ---
 
@@ -84,7 +84,7 @@ El archivo [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplat
 
 Tenga en cuenta que no todos los bloques deben tener un modelo. Algunos bloques son simplemente [contenedores](#container) de una lista de tareas secundarias, donde cada elemento secundario tiene su propio modelo.
 
-También es necesario definir qué bloques existen y se pueden añadir a una página con el editor universal. El archivo [`component-definitions.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) enumera los componentes tal como están disponibles en el editor universal.
+También es necesario definir qué bloques existen y se pueden añadir a una página con el editor universal. El archivo [`component-definitions.json`](/help/implementing/universal-editor/component-definition.md) enumera los componentes tal como están disponibles en el Editor universal.
 
 ```json
 {
