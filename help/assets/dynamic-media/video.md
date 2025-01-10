@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: c142ac7ad12179dd842ce6c81cc4d97ece36a197
+source-git-commit: 222636f9520c17203df632778d3f60b62369a47b
 workflow-type: tm+mt
-source-wordcount: '10543'
-ht-degree: 1%
+source-wordcount: '10564'
+ht-degree: 2%
 
 ---
 
@@ -31,7 +31,8 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 
    * Cree su propio perfil de codificación de vídeo. O bien, puede usar el perfil predefinido _Codificación de vídeo adaptable_ que se incluye con Dynamic Media.
 
-      * [Crear un perfil de codificación de vídeo](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
+      * [Crear un perfil de codificación de vídeo](/help/assets/dynamic-media/video-profiles.
+      * La resolución máxima de codificación de vídeo de salida es de 8.192 × 4.320 o 4.320 × 8.192,md#creating-a-video-encoding-profile-for-adaptive-streaming).
       * Más información sobre [Prácticas recomendadas para la codificación de vídeo](#best-practices-for-encoding-videos).
 
    * Asocie el perfil de procesamiento de vídeo a una o varias carpetas en las que va a cargar los vídeos de origen principales.
@@ -41,7 +42,8 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 
    * Cargue los vídeos de origen principales en las carpetas designadas. Una vez añadidos, los vídeos se codifican según el perfil de procesamiento de vídeo asignado a la carpeta.
 
-      * Dynamic Media admite principalmente vídeos de formato corto con una duración máxima de 30 minutos y una resolución mínima superior a 25 x 25.
+      * Dynamic Media admite principalmente vídeos de formato corto con una duración máxima de 30 minutos y una resolución mínima superior a 25 × 25.
+      * La resolución de entrada de vídeo máxima admitida es de 16.384 × 16.384.
       * Puede cargar archivos de vídeo de hasta 15 GB cada uno.
       * [Cargue sus vídeos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
       * Más información sobre [Formatos de archivo de entrada compatibles](/help/assets/file-format-support.md).
@@ -104,7 +106,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 
 El vídeo en Dynamic Media es una solución completa que facilita la publicación de vídeo adaptable de alta calidad para su transmisión por streaming en varias pantallas, incluidas escritorios, tabletas y dispositivos móviles. Un conjunto de vídeos adaptable agrupa versiones del mismo vídeo que se codifican a diferentes velocidades de bits y formatos, como 400 kbps, 800 kbps y 1000 kbps. El equipo de escritorio o dispositivo móvil detecta el ancho de banda disponible.
 
-Por ejemplo, en un dispositivo móvil iOS, detecta un ancho de banda como 3G, 4G o Wi-Fi. A continuación, selecciona automáticamente el vídeo codificado correcto entre las distintas velocidades de bits de vídeo dentro del conjunto de vídeos adaptables. El vídeo se transmite a equipos de escritorio, dispositivos móviles o tabletas.
+Por ejemplo, en un dispositivo móvil iOS, detecta un ancho de banda, como 3G, 4G o Wi-Fi. A continuación, selecciona automáticamente el vídeo codificado correcto entre las distintas velocidades de bits de vídeo dentro del conjunto de vídeos adaptables. El vídeo se transmite a equipos de escritorio, dispositivos móviles o tabletas.
 
 Además, la calidad de vídeo cambia automáticamente si las condiciones de red cambian en el escritorio o en el dispositivo móvil. Además, si un cliente entra en modo de pantalla completa en un equipo de escritorio, el conjunto de vídeos adaptable responde con una mejor resolución, lo que mejora la experiencia de visualización del cliente. El uso de conjuntos de vídeos adaptables le ofrece la mejor experiencia de visualización posible para los clientes que reproducen vídeo de Dynamic Media en varias pantallas y dispositivos.
 
@@ -153,7 +155,7 @@ Los ajustes preestablecidos de visualizador de vídeo Dynamic Media HTML5 son re
 
 En el lado del diseño del reproductor, puede diseñar la funcionalidad del reproductor de vídeo con herramientas de desarrollo web estándar. Por ejemplo, puede diseñar los botones, los controles y el fondo de imagen de póster personalizado con HTML5 y CSS para ayudarle a llegar a sus clientes con un aspecto personalizado.
 
-En la parte de reproducción del visor, detecta automáticamente la capacidad de vídeo del explorador. A continuación, sirve el vídeo mediante HLS o DASH, también conocido como flujo de vídeo adaptable. O bien, si estos métodos de envío no están presentes, se utiliza HTML 5 progressive en su lugar.
+En la parte de reproducción del visor, detecta automáticamente la capacidad de vídeo del explorador. A continuación, sirve el vídeo mediante HLS o DASH, también conocidos como flujo de vídeo adaptable. O bien, si estos métodos de envío no están presentes, se utiliza HTML 5 progressive en su lugar.
 
 >[!NOTE]
 >
@@ -198,7 +200,7 @@ En la tabla siguiente se describe el dispositivo, el explorador y el método de 
   <tr>
    <td>Escritorio</td>
    <td>Internet Explorer 11+</td>
-   <td>En Windows® 8 y Windows® 10: forzar el uso de HTTPS siempre que se solicite DASH o HLS. Limitación conocida: HTTP en DASH o HLS no funciona en esta combinación de explorador/sistema operativo <br /> <br /> En Windows® 7: descarga progresiva. Utiliza la lógica estándar para el protocolo HTTP frente al protocolo HTTPS.</td>
+   <td>En Windows® 8 y Windows® 10: forzar el uso de HTTPS cada vez que se solicite DASH o HLS. Limitación conocida: HTTP en DASH o HLS no funciona en esta combinación de explorador/sistema operativo <br /> <br /> En Windows® 7: descarga progresiva. Utiliza la lógica estándar para el protocolo HTTP frente al protocolo HTTPS.</td>
   </tr>
   <tr>
    <td>Escritorio</td>
@@ -228,7 +230,7 @@ En la tabla siguiente se describe el dispositivo, el explorador y el método de 
   <tr>
    <td>Mobile</td>
    <td>Chrome (Android™ 7 o posterior)</td>
-   <td>Velocidad de bits adaptable HLS o DASH* streaming/td&gt;
+   <td>HLS o DASH* adaptive bitrate streaming/td&gt;
   </tr>
   <tr>
    <td>Mobile</td>
@@ -284,16 +286,16 @@ Las siguientes son sugerencias recomendadas para codificar archivos de vídeo de
 
 Cuando codifique un archivo de vídeo, utilice un archivo de vídeo de origen de la máxima calidad posible. Evite utilizar archivos de vídeo codificados anteriormente porque estos archivos ya están comprimidos y una codificación posterior crea un vídeo de calidad inferior.
 
-* Dynamic Media admite principalmente vídeos de formato corto con una duración máxima de 30 minutos y una resolución mínima superior a 25 x 25.
+* Dynamic Media admite principalmente vídeos de formato corto con una duración máxima de 30 minutos y una resolución mínima superior a 25 × 25.
 * Puede cargar archivos de vídeo de origen principales de hasta 15 GB cada uno.
 
 En la tabla siguiente se describe el tamaño recomendado, la relación de aspecto y la velocidad de bits mínima que deben tener los archivos de vídeo de origen antes de codificarlos:
 
 | Tamaño | Proporción de aspecto | Velocidad de bits mínima |
 |--- |--- |--- |
-| 1024 X 768 | 4:3 | 4500 Kbps para la mayoría de los vídeos. |
-| 1280 X 720 | 16:9 | 3000 - 6000 kbps, dependiendo de la cantidad de movimiento en el vídeo. |
-| 1920 X 1080 | 16:9 | 6.000 a 8.000 kbps, en función de la cantidad de movimiento del vídeo. |
+| 1024 × 768 | 4:3 | 4500 Kbps para la mayoría de los vídeos. |
+| 1280 × 720 | 16:9 | 3000 - 6000 kbps, dependiendo de la cantidad de movimiento en el vídeo. |
+| 1920 × 1080 | 16:9 | 6.000 a 8.000 kbps, en función de la cantidad de movimiento del vídeo. |
 
 ### Obtener los metadatos de un archivo {#obtaining-a-file-s-metadata}
 
@@ -320,7 +322,7 @@ En la tabla siguiente se describe cómo se traducen los resultados de la fórmul
 | 1,78 | 16:9 |
 | 0,56 | 09:16 |
 
-Por ejemplo, un vídeo de 1440 anchura x 1080 altura tiene una relación de aspecto de 1440/1080 o 1,33. En este caso, elija un ajuste preestablecido de codificación de vídeo con una relación de aspecto de 4:3 para codificar el archivo de vídeo.
+Por ejemplo, un vídeo de 1440 de anchura × 1080 de altura tiene una relación de aspecto de 1440/1080 o 1,33. En este caso, elija un ajuste preestablecido de codificación de vídeo con una relación de aspecto de 4:3 para codificar el archivo de vídeo.
 
 ### Velocidad de bits {#bitrate}
 
@@ -354,16 +356,16 @@ En esta tabla se describe la velocidad de datos de las velocidades de conexión 
 
 ### Resolución {#resolution}
 
-**Resolución** describe la altura y anchura de un archivo de vídeo en píxeles. La mayor parte del vídeo de origen se almacena en alta resolución (por ejemplo, 1920 x 1080). Para fines de streaming, el vídeo de origen se comprime con una resolución más pequeña (640 x 480 o menor).
+**Resolución** describe la altura y anchura de un archivo de vídeo en píxeles. La mayor parte del vídeo de origen se almacena en alta resolución (por ejemplo, 1920 × 1080). Para fines de streaming, el vídeo de origen se comprime con una resolución más pequeña (640 × 480 o menor).
 
-La resolución y la velocidad de datos son dos factores integrados que determinan la calidad del vídeo. Para mantener la misma calidad de vídeo, cuanto mayor sea el número de píxeles de un archivo de vídeo (mayor será la resolución), mayor deberá ser la velocidad de datos. Por ejemplo, considere el número de píxeles por fotograma en una resolución de 320 x 240 y un archivo de vídeo de resolución de 640 x 480:
+La resolución y la velocidad de datos son dos factores integrados que determinan la calidad del vídeo. Para mantener la misma calidad de vídeo, cuanto mayor sea el número de píxeles de un archivo de vídeo (mayor será la resolución), mayor deberá ser la velocidad de datos. Por ejemplo, considere el número de píxeles por fotograma en una resolución de 320 × 240 y un archivo de vídeo de resolución de 640 × 480:
 
 | Resolución | Píxeles por cuadro |
 |--- |--- |
-| 320 x 240 | 76.800 |
-| 640 x 480 | 307.200 |
+| 320 × 240 | 76.800 |
+| 640 × 480 | 307.200 |
 
-El archivo de 640 x 480 tiene cuatro veces más píxeles por fotograma. Para lograr la misma velocidad de datos para estas dos resoluciones de ejemplo, se aplica cuatro veces la compresión al archivo de 640 x 480, lo que puede reducir la calidad del vídeo. Por lo tanto, una velocidad de datos de vídeo de 250 Kbps produce una visualización de alta calidad con una resolución de 320 x 240, pero no con una resolución de 640 x 480.
+El archivo de 640 × 480 tiene cuatro veces más píxeles por fotograma. Para lograr la misma velocidad de datos para estas dos resoluciones de ejemplo, se aplica cuatro veces la compresión al archivo de 640 × 480, lo que puede reducir la calidad del vídeo. Por lo tanto, una velocidad de datos de vídeo de 250 Kbps produce una visualización de alta calidad con una resolución de 320 × 240, pero no con una resolución de 640 × 480.
 
 En general, cuanto mayor sea la velocidad de datos que utilice, mejor aparecerá el vídeo y, cuanto mayor sea la resolución que utilice, mayor será la velocidad de datos que deberá mantener con calidad de visualización (en comparación con resoluciones más bajas).
 
@@ -383,6 +385,8 @@ Cuando elija (o cree) un ajuste preestablecido de codificación de vídeo para e
 | 720p | 720 | Pantalla grande |
 | 1080p | 1080 | Pantalla grande de alta definición |
 
+La resolución de entrada de vídeo máxima admitida es de 16.384 × 16.384. La resolución máxima de codificación de vídeo de salida es de 8.192 × 4.320 o 4.320 × 8.192.
+
 ### Fps (fotogramas por segundo) {#fps-frames-per-second}
 
 En Estados Unidos y Japón, la mayor parte del vídeo se graba a 29,97 fps; en Europa, la mayor parte del vídeo se graba a 25 fps. Se filma una película a 24 fps.
@@ -397,14 +401,14 @@ Para calcular esta proporción, se divide el ancho de origen por el ancho codifi
 
 Si la proporción resultante es un entero, significa que el vídeo se escala de forma óptima. Si la proporción resultante no es un entero, afecta a la calidad del vídeo al dejar artefactos de píxeles sobrantes en la pantalla. Este efecto es más evidente cuando el vídeo tiene texto.
 
-Por ejemplo, supongamos que el vídeo de origen es de 1920 x 1080. En la tabla siguiente, los tres vídeos codificados proporcionan la configuración de codificación óptima para utilizar.
+Por ejemplo, supongamos que el vídeo de origen es 1920 × 1080. En la tabla siguiente, los tres vídeos codificados proporcionan la configuración de codificación óptima para utilizar.
 
-| Tipo de vídeo | Anchura x altura | Proporción de anchura | Proporción de altura |
+| Tipo de vídeo | Anchura × altura | Proporción de anchura | Proporción de altura |
 |--- |--- |--- |--- |
-| Origen | 1920 x 1080 | 1 | 1 |
-| Codificado | 960 x 540 | 2 | 2 |
-| Codificado | 640 x 360 | 3 | 3 |
-| Codificado | 480 x 270 | 4 | 4 |
+| Origen | 1920 × 1080 | 1 | 1 |
+| Codificado | 960 × 540 | 2 | 2 |
+| Codificado | 640 × 360 | 3 | 3 |
+| Codificado | 480 × 270 | 4 | 4 |
 
 ### Formato de archivo de vídeo codificado {#encoded-video-file-format}
 
@@ -532,7 +536,7 @@ Al habilitar cualquiera de las tres capacidades anteriores, se habilitan todas. 
 
 | Capacidad | Descripción |
 | --- | --- |
-| GUIÓN | DASH (Digital Adaptive Streaming over HTTP) es el estándar internacional para streaming de video y es ampliamente adoptado en diferentes visores de video. Cuando DASH está habilitado en su cuenta, tiene la opción de elegir entre DASH o HLS para flujo de vídeo adaptable. O bien, puede optar por ambos con el cambio automático entre reproductores cuando **[!UICONTROL auto]** está seleccionado como el tipo de reproducción en el ajuste preestablecido del visor.<br>Algunas ventajas clave de habilitar DASH en tu cuenta son las siguientes:<ul><li>Empaquete el vídeo de flujo DASH para la transmisión de velocidad de bits adaptable. Este método aumenta la eficacia del envío. El streaming adaptable garantiza la mejor experiencia de visualización para sus clientes.</li><li>El streaming optimizado para el navegador con reproductores Dynamic Media cambia entre el streaming HLS y DASH para garantizar la mejor calidad de servicio. El reproductor de vídeo cambia automáticamente a HLS cuando se utiliza un explorador Safari.</li><li>Puede configurar su método de flujo preferido (HLS o DASH) editando el ajuste preestablecido del visualizador de vídeo.</li><li>La codificación de vídeo optimizada garantiza que no se utilice almacenamiento adicional al habilitar la capacidad DASH. Se crea un único conjunto de codificaciones de vídeo para HLS y DASH para optimizar los costes de almacenamiento de vídeo.</li><li>Ayuda a que la entrega de vídeo sea más accesible para los clientes.</li><li>Obtenga también la URL de flujo continuo mediante API.</li></ul> |
+| GUIÓN | DASH (Digital Adaptive Streaming over HTTP) es el estándar internacional para streaming de video y es ampliamente adoptado en diferentes visores de video. Cuando DASH está habilitado en su cuenta, tiene la opción de elegir entre DASH o HLS para flujo de vídeo adaptable. O bien, puede optar por ambos con el cambio automático entre reproductores cuando **[!UICONTROL auto]** está seleccionado como el tipo de reproducción en el ajuste preestablecido del visor.<br>Algunas ventajas clave de habilitar DASH en tu cuenta son las siguientes:<ul><li>Empaquete el vídeo de flujo DASH para la transmisión de velocidad de bits adaptable. Este método aumenta la eficacia del envío. El streaming adaptable garantiza la mejor experiencia de visualización para sus clientes.</li><li>El streaming optimizado para el navegador con reproductores de Dynamic Media cambia entre el streaming de HLS y DASH para garantizar la mejor calidad de servicio. El reproductor de vídeo cambia automáticamente a HLS cuando se utiliza un explorador Safari.</li><li>Puede configurar su método de streaming preferido (HLS o DASH) editando el ajuste preestablecido del visualizador de vídeo.</li><li>La codificación de vídeo optimizada garantiza que no se utilice almacenamiento adicional al habilitar la capacidad DASH. Se crea un único conjunto de codificaciones de vídeo para HLS y DASH a fin de optimizar los costes de almacenamiento de vídeo.</li><li>Ayuda a que la entrega de vídeo sea más accesible para los clientes.</li><li>Obtenga también la URL de flujo continuo mediante API.</li></ul> |
 | Subtítulos múltiples y pistas de audio | Puede beneficiarse de tener habilitada automáticamente la compatibilidad con múltiples subtítulos y pistas de audio. Después de la activación, todos los vídeos posteriores que cargue se procesarán con una nueva arquitectura de back-end que incluya compatibilidad para agregar varios subtítulos y pistas de audio a los vídeos. |
 | Subtítulos generados por IA (disponibilidad limitada) | Cree subtítulos para sus vídeos con tecnología de IA. Con IA, crea la transcripción del vídeo y la convierte en subtítulos. Incluso la línea de tiempo está definida, también. |
 
@@ -731,7 +735,7 @@ Los subtítulos añadidos son compatibles con los formatos WebVTT y VTT de Adobe
 
       | Metadatos de pista de audio | Descripción |
       |--- |--- |
-      | Nombre de archivo | El nombre de archivo predeterminado se deriva del nombre de archivo original. El nombre de archivo solo se puede cambiar durante la carga y no se puede cambiar más adelante. Los requisitos de caracteres de nombre de archivo son los mismos que para AEM Assets.<br>No se puede usar el mismo nombre de archivo para archivos de pista de audio o de rótulo adicionales. |
+      | Nombre de archivo | El nombre de archivo predeterminado se deriva del nombre de archivo original. El nombre de archivo solo se puede cambiar durante la carga y no se puede cambiar más adelante. Los requisitos de caracteres de nombre de archivo son los mismos que para los AEM Assets.<br>No se puede usar el mismo nombre de archivo para archivos de pista de audio o de rótulo adicionales. |
       | Idioma | Seleccione el idioma correcto de la pista de audio. |
       | Tipo | Seleccione el tipo de pista de audio que está utilizando.<br>**Original**: la pista de audio adjuntada originalmente al vídeo y representada como `[Original]` en la etiqueta con el idioma `English` seleccionado de forma predeterminada. Aunque **[!UICONTROL Label]** y **[!UICONTROL Language]** se pueden cambiar en el cuadro de diálogo **[!UICONTROL Editar pista de audio]**, el valor predeterminado son los valores originales si se vuelve a procesar el vídeo principal.<br>**Estándar**: pista de audio de complemento para un idioma distinto del original.<br>**Descripción del audio**: pista de audio que también incluye una narración descriptiva de gestos y acciones no verbales en el vídeo, lo que hace que el contenido sea más accesible para las personas con problemas de visión. |
       | Etiqueta | El texto que se muestra como nombre de la pista de audio en la lista emergente **[!UICONTROL Seleccionar audio o rótulo]** del reproductor multimedia. La etiqueta es lo que ve un cliente y que corresponde a una pista de audio. Por ejemplo, `English [Original]`. La etiqueta de audio adjunto a un vídeo está establecida en `[Original]` de forma predeterminada. |
@@ -762,7 +766,7 @@ Los subtítulos añadidos son compatibles con los formatos WebVTT y VTT de Adobe
 
       | Metadatos de rótulo | Descripción |
       |--- |--- |
-      | Nombre de archivo | El nombre de archivo predeterminado se deriva del nombre de archivo original. El nombre de archivo solo se puede cambiar durante la carga y no se puede cambiar más adelante. Los requisitos de caracteres de nombre de archivo son los mismos que para AEM Assets.<br>No se puede usar el mismo nombre de archivo para archivos de subtítulos y de pistas de audio adicionales. |
+      | Nombre de archivo | El nombre de archivo predeterminado se deriva del nombre de archivo original. El nombre de archivo solo se puede cambiar durante la carga y no se puede cambiar más adelante. Los requisitos de caracteres de nombre de archivo son los mismos que para los AEM Assets.<br>No se puede usar el mismo nombre de archivo para archivos de subtítulos y de pistas de audio adicionales. |
       | Idioma | Seleccione el idioma del pie de ilustración. Después de procesar un archivo de rótulo, este campo de idioma deja de poder editarse (aparece atenuado) |
       | Tipo | Seleccione el tipo de rótulo que está utilizando.<br>**Subtítulo**: el texto del título que se muestra con el vídeo que traduce o transcribe el cuadro de diálogo.<br>**Pie de ilustración**: el texto del pie de ilustración incluye ruidos de fondo, diferenciación del altavoz y otros detalles relevantes, junto con la traducción o transcripción del cuadro de diálogo, lo que mejora la accesibilidad para las personas sordas o con dificultades auditivas. |
       | Etiqueta | Texto que se muestra para el nombre del pie de ilustración en la lista emergente **[!UICONTROL Seleccionar audio o pie de ilustración]** del reproductor multimedia. La etiqueta es lo que ve un cliente y que corresponde a un subtítulo o pista de rótulo. Por ejemplo, `English (CC)`. |
@@ -1224,7 +1228,7 @@ Based on the total time of the video, Dynamic Media captures ten (default) thumb
 
 Ideally, you can add a video thumbnail anytime after you upload your video but before you publish the video on your website.
 
-If you prefer, you can choose to upload a custom thumbnail to represent your video instead of using a thumbnail generated by Dynamic Media. For example, you could create a custom thumbnail image that has the title of your video, an eye-catching opening image, or a very specific image captured from your video. The custom video thumbnail image that you upload should have a maximum resolution of 1280 x 720 pixels (minimum width of 640 pixels) and be no larger than 2MB.
+If you prefer, you can choose to upload a custom thumbnail to represent your video instead of using a thumbnail generated by Dynamic Media. For example, you could create a custom thumbnail image that has the title of your video, an eye-catching opening image, or a very specific image captured from your video. The custom video thumbnail image that you upload should have a maximum resolution of 1280 &times; 720 pixels (minimum width of 640 pixels) and be no larger than 2MB.
 
 See also [About video thumbnails](/help/assets/dynamic-media/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
