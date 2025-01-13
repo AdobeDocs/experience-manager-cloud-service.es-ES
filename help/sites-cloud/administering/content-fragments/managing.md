@@ -5,14 +5,20 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 2daddd852f4cfcbcd6b1d4aea9cd96e045c93ca0
 workflow-type: tm+mt
-source-wordcount: '2628'
-ht-degree: 45%
+source-wordcount: '2661'
+ht-degree: 44%
 
 ---
 
 # Administración de los fragmentos de contenido {#managing-content-fragments}
+
+>[!IMPORTANT]
+>
+>Varias funciones de los fragmentos de contenido y los modelos de fragmentos de contenido están disponibles a través del programa de adopción anticipada.
+>
+>Para ver el estado y cómo solicitarlo si está interesado, consulte las [Notas de la versión](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 Aprenda a administrar sus **Fragmentos de contenido** en Adobe Experience Manager AEM () as a Cloud Service, desde la [consola Fragmentos de contenido](#content-fragments-console) y el [Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor). Estos fragmentos de contenido se pueden utilizar como base del contenido sin encabezado o para la creación de páginas.
 

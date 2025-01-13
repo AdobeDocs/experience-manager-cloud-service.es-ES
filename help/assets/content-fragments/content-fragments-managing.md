@@ -5,10 +5,10 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
 workflow-type: tm+mt
-source-wordcount: '1896'
-ht-degree: 66%
+source-wordcount: '1907'
+ht-degree: 65%
 
 ---
 
@@ -313,6 +313,7 @@ Además de las opciones estándar, [Cronología](/help/assets/manage-digital-ass
 >* Introducidas en el editor de fragmentos
 >* Específicas para un segmento seleccionado de texto dentro del fragmento
 >
+>No mostrar los comentarios introducidos en el nuevo [editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment).
 
 Por ejemplo:
 
