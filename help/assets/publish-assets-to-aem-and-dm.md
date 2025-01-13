@@ -4,9 +4,9 @@ description: Quick Publish en la vista de Assets AEM le permite publicar recurso
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing, Dynamic Media
 role: User
-source-git-commit: 8ab19fe82fc390d28d33b17222177fd8486c8fc7
+source-git-commit: 991888d532b3396054bd04c11c7257b61c337725
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1212'
 ht-degree: 2%
 
 ---
@@ -22,18 +22,18 @@ La vista de Experience Manager Assets AEM proporciona la flexibilidad para publi
 
 ## Antes de empezar {#before-you-begin}
 
-AEM Configure estas opciones para ver las opciones de publicación de la aplicación para la aplicación y el Dynamic Media:
+AEM Configure estas opciones para ver las opciones de publicación de los informes de publicación para la aplicación y el Dynamic Media:
 
-* Para ver las opciones de publicación de Dynamic Media, configure las siguientes opciones en la vista Administrador:
+* Para ver las opciones de publicación de Dynamic Media, configure las siguientes opciones con la vista Administrador:
 
    * [Crear una configuración de nube de Dynamic Media](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
    * Configure el modo Dynamic Media Publish en el nivel de carpeta. También puede establecer estas opciones al crear la configuración de Dynamic Media Cloud. Para sobrescribir esa configuración en el nivel de carpeta, consulte [Configuración de Selective Publish en el nivel de carpeta en Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
 
-* AEM AEM Para ver las Opciones de publicación de los recursos, debe configurar el punto final de publicación de los recursos para su entorno de publicación de la.
+* AEM AEM Para ver las opciones de publicación de los recursos, debe configurar el punto final de publicación de los recursos para su entorno de publicación de la.
 
 ## Publish Assets durante la carga {#piblish-assets-during-upload}
 
-AEM Puede publicar recursos en Dynamic Media y al cargarlos en una carpeta. Las opciones de publicación que se muestran dependen del modo de publicación de Dynamic Media establecido en la carpeta en la que se cargan los recursos. El modo de publicación de Dynamic Media se puede establecer en:
+AEM Puede publicar recursos en Dynamic Media y al cargarlos en una carpeta. Las opciones de publicación que se muestran dependen de la configuración del modo Publicación de Dynamic Media de la carpeta en la que se cargan los recursos. El modo de publicación de Dynamic Media se puede establecer en:
 
 * **Tras la activación:** Cuando los recursos se cargan en esta carpeta, debe publicarlos explícitamente primero antes de proporcionar un vínculo incrustado o de URL.
 
@@ -42,7 +42,7 @@ AEM Puede publicar recursos en Dynamic Media y al cargarlos en una carpeta. Las 
 
 ### El modo Dynamic Media Publish se establece en tras la activación {#dynamic-media-publish-mode-set-to-upon-activation}
 
-Para publicar recursos durante la carga en una carpeta con el modo Dynamic Media Publish establecido en **Tras la activación**:
+Para publicar recursos al cargarlos en una carpeta cuyo modo Dynamic Media Publish esté establecido en **Tras la activación**:
 
 1. Haga clic en **Agregar Assets** > **Examinar** > **Examinar archivos** para desplazarse a la carpeta adecuada y cargar los recursos. La sección **Opciones de Publish** muestra el **Modo DM Publish** como **Tras la activación**.
    ![Cargar imagen tras la activación](/help/assets/assets/upload-uactivation.svg)
@@ -50,15 +50,15 @@ Para publicar recursos durante la carga en una carpeta con el modo Dynamic Media
 
 ### El modo Dynamic Media Publish se ha establecido en Inmediato {#dynamic-media-publish-mode-set-to-immediate}
 
-Para publicar recursos durante la carga en una carpeta con el modo Dynamic Media Publish establecido en **Inmediato**:
+Para publicar recursos al cargarlos en una carpeta cuyo modo Dynamic Media Publish esté establecido en **Inmediato**:
 
-1. Haga clic en **Agregar Assets** > **Examinar** > **Examinar archivos** para desplazarse a la carpeta adecuada y cargar los recursos. La sección Opciones de Publish muestra **DM Publish Mode** como **Inmediato**.
+1. Haga clic en **Agregar Assets** > **Examinar** > **Examinar archivos** para desplazarse a la carpeta adecuada y cargar los recursos. La sección **Opciones de Publish** muestra **DM Publish Mode** como **Inmediato**.
    ![imagen de carga de archivo - modo inmediato](/help/assets/assets/resized-image-pdf-svg-new.svg)
 
 
    Como el modo Dynamic Media Publish es **Inmediato**, los recursos cargados se publican automáticamente en Dynamic Media al hacer clic en **Cargar**.
 
-2. Seleccione Publish AEM AEM para **publicar** los recursos cargados para su publicación y haga clic en Cargar para su publicación en la página de inicio de la página de inicio de la página de inicio de la página de inicio de sesión
+2. Seleccione **Publish AEM AEM a {1000000000000000000000000000000000000000000000000000000000000 para publicar los recursos cargados en la publicación y hacer clic en para publicar. Seleccione {**
 
    Si selecciona **Publish AEM AEM para la publicación de**, los recursos se publicarán en Dynamic Media y en el servicio de publicación de recursos. En caso contrario, los recursos se publicarán en Dynamic Media.
 
@@ -68,7 +68,7 @@ Para publicar recursos durante la carga en una carpeta con el modo Dynamic Media
 
 Para publicar recursos durante la carga en una carpeta con el modo Dynamic Media Publish establecido en **Publish selectivo**:
 
-1. Haga clic en **Agregar Assets** > **Examinar** > **Examinar archivos** para desplazarse a la carpeta adecuada y cargar los recursos. La sección Opciones de Publish muestra **DM Publish Mode** como **Selective Publish**.
+1. Haga clic en **Agregar Assets** > **Examinar** > **Examinar archivos** para desplazarse a la carpeta adecuada y cargar los recursos. La sección **Opciones de Publish** muestra **DM Publish Mode** como **Publish selectivo**.
    ![cargar modo de publicación selectivo de imágenes](/help/assets/assets/upload-selective.svg)
 
 2. Seleccione **Publish AEM para la selección de**, **Publish para Dynamic Media** o ambos según sus necesidades y haga clic en **Cargar**.
@@ -92,7 +92,7 @@ No puede publicar una carpeta que tenga el modo Dynamic Media Publish establecid
 
 Para publicar recursos mediante la página de resultados de búsqueda de recursos:
 
-1. Especifique los criterios en la barra de búsqueda y haga clic en el icono Buscar para ver los resultados.
+1. Especifique los criterios en la barra de búsqueda y haga clic en el icono de búsqueda para ver los resultados.
 2. Seleccione los recursos que necesita publicar y haga clic en **Publish.**
 3. AEM Seleccione la opción, Dynamic Media o ambos según sus necesidades y haga clic en **Publish.**
    ![buscar imagen](/help/assets/assets/search-mode.svg)
