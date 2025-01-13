@@ -1,17 +1,17 @@
 ---
-title: Volver a procesar entornos de ensayo y producción
+title: Entornos de ensayo y producción sin repositorio
 description: Aprenda a configurar sitios independientes para los entornos de ensayo y producción aprovechando una sola base de código de forma independiente.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 709d0661286d023c5cec51be2c51a1123ef7deb6
+exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
+source-git-commit: 42218450ab03201c69c59053f720954183f4b652
 workflow-type: tm+mt
 source-wordcount: '654'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-
-# Volver a procesar entornos de ensayo y producción {#repoless-stage-prod}
+# Entornos de ensayo y producción sin repositorio {#repoless-stage-prod}
 
 Aprenda a configurar sitios independientes para los entornos de ensayo y producción aprovechando una sola base de código de forma independiente.
 
@@ -73,7 +73,7 @@ Para configurar un sitio de producción independiente hay que seguir dos pasos.
                    "admin": [
                        "*@adobe.com"
                    ],
-                   "publish": [
+                   "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
                    ]
                },

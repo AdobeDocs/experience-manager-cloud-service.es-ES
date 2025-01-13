@@ -1,17 +1,17 @@
 ---
-title: Repoless Multi Site Management
+title: Administración de varios sitios sin repositorio
 description: Conozca las recomendaciones de prácticas recomendadas sobre cómo configurar un proyecto de forma independiente con sitios localizados que aprovechen una sola base de código, cada uno servido por Edge Delivery Services.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: e25e21984ebadde7076d95c6051b8bfca5b2ce03
+exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
+source-git-commit: 42218450ab03201c69c59053f720954183f4b652
 workflow-type: tm+mt
 source-wordcount: '1222'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-
-# Repoless Multi Site Management {#repoless-msm}
+# Administración de varios sitios sin repositorio {#repoless-msm}
 
 Conozca las recomendaciones de prácticas recomendadas sobre cómo configurar un proyecto de forma independiente con sitios localizados que aprovechen una sola base de código, cada uno servido por Edge Delivery Services.
 
@@ -140,7 +140,7 @@ AEM Para este ejemplo, crearemos el sitio `wknd-ch` para la presencia suiza de w
                    "admin": [
                        "*@adobe.com"
                    ],
-                   "publish": [
+                   "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
                    ]
                },
