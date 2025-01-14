@@ -4,13 +4,13 @@ Description: Learn how to integrate your Marketo Engage instance with AEM Forms 
 Keywords: How to connect a Marketo instance with form? , Connect a form to Marketo, Integrate a form with Marketo Engage, Integrate an Adaptive Form with a Marketo instance.
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: 1fcba628-ffd8-416a-a8b5-76b35d4aabd4
+source-git-commit: e46c5afac945620cc44e9064956848acecc786bf
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 9%
 
 ---
-
 
 # Configuración del nuevo formulario para integrarlo con el Marketo Engage
 
@@ -35,6 +35,8 @@ Requisito previo para conectar el Marketo Engage con formularios:
 * Cree la configuración del servicio en la nube [para integrar al Marketo Engage con formularios](/help/forms/integrate-form-to-marketo-engage.md).
 
 ## Configuración del nuevo formulario adaptable para integrarlo con Marketo Engage
+
+>[!VIDEO](https://video.tv.adobe.com/v/3442867/marketo-aem-marketo-engage-engage-aem-forms)
 
 Para configurar el nuevo formulario adaptable para que se integre con Marketo Engage, realice los siguientes pasos:
 
