@@ -1249,7 +1249,7 @@ ht-degree: 99%
          + [Introducción](/help/implementing/universal-editor/introduction.md)
          + [Casos de uso](/help/implementing/universal-editor/use-cases.md)
          + [Atributos y tipos de elementos](/help/implementing/universal-editor/attributes-types.md)
-         + [Definición del componente](/help/implementing/universal-editor/component-definition.md)
+         + [Definición de componente](/help/implementing/universal-editor/component-definition.md)
          + [Definiciones del modelo, campos y tipos de componentes](/help/implementing/universal-editor/field-types.md)
          + [Aplicación SecurBank de muestra](/help/implementing/universal-editor/securbank.md)
          + [Eventos](/help/implementing/universal-editor/events.md)
