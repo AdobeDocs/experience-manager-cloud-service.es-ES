@@ -4,7 +4,7 @@ description: Este artículo ofrece una información general completa del Editor 
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '1633'
 ht-degree: 93%
@@ -16,6 +16,8 @@ ht-degree: 93%
 Las aplicaciones de una sola página (SPA) pueden ofrecer experiencias atractivas para los usuarios de sitios web. Los desarrolladores quieren poder generar sitios usando marcos de SPA y los autores quieren editar contenido dentro de AEM para un sitio generado usando dichos marcos.
 
 El Editor de SPA ofrece una solución completa para admitir las SPA dentro de AEM. Esta página proporciona información general sobre cómo se estructura el soporte de las SPA en AEM, cómo funciona el Editor de SPA y cómo el marco de trabajo de las SPA y AEM se mantiene sincronizado.
+
+{{ue-over-spa}}
 
 ## Introducción {#introduction}
 

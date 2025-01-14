@@ -4,7 +4,7 @@ description: Información general sobre las referencias de la API de aplicacione
 exl-id: c1cc2bd8-8ff1-406c-a0ce-0af001d66b53
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 0%
@@ -13,9 +13,11 @@ ht-degree: 0%
 
 # SPA Materiales de referencia {#spa-reference-materials}
 
+{{ue-over-spa}}
+
 ## SPA Referencias de la API de JavaScript para módulos NMP {#api-references}
 
-A continuación, se muestran las referencias de la API de JavaScript AEM SPA disponibles de los módulos NPM para el marco del SDK del Editor de.
+A continuación, se muestran las referencias de la API de JavaScript AEM SPA disponibles de los módulos NPM para el marco de trabajo de SDK de Editor de.
 
 * [Asignación de componentes](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [Administrador de modelos de página](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)

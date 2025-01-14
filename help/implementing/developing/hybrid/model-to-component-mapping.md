@@ -1,10 +1,10 @@
 ---
 title: SPA Asignación de modelos dinámicos a componentes para la creación de
-description: En este artículo se describe cómo se produce la asignación de modelos dinámicos a componentes en el SDK de JavaScript SPA AEM para la creación de segmentos de tipo de.
+description: En este artículo se describe cómo se produce la asignación de modelos dinámicos a componentes en JavaScript SPA SDK AEM para su.
 exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -13,7 +13,9 @@ ht-degree: 0%
 
 # SPA Asignación de modelos dinámicos a componentes para la creación de {#dynamic-model-to-component-mapping-for-spas}
 
-En este documento se describe cómo se produce la asignación de modelos dinámicos a componentes en el SDK de JavaScript SPA AEM para la asignación de componentes a componentes (SDK) para la asignación de componentes.
+En este documento se describe cómo se produce la asignación de modelos dinámicos a componentes en JavaScript SPA SDK AEM para su uso en el sector de la.
+
+{{ue-over-spa}}
 
 ## Módulo de asignación de componentes {#componentmapping-module}
 
@@ -27,7 +29,7 @@ Consulte también el paquete npm: [@adobe/aem-spa-component-mapping](https://www
 
 ## Aplicación de una sola página impulsada por modelo {#model-driven-single-page-application}
 
-Las aplicaciones de una sola página que utilizan el SDK de JavaScript SPA AEM para la creación de informes de la página para la creación de informes están basadas en modelos:
+Las aplicaciones de una sola página que utilizan JavaScript SPA SDK AEM para la creación de informes están basadas en modelos:
 
 1. Los componentes front-end se registran a sí mismos en el [Almacén de asignaciones de componentes](#componentmapping-module).
 1. A continuación, el [contenedor](blueprint.md#container), una vez proporcionado con un modelo por el [proveedor de modelos](blueprint.md#the-model-provider), se repite sobre el contenido de su modelo (`:items`).

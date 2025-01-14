@@ -1,8 +1,8 @@
 ---
-source-git-commit: 60cf4c34f3b4d7c7a757f2274f1a02de8ae51e11
+source-git-commit: f6be839d58b796b3791342375ff61d17b1f8cb0f
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 88%
+source-wordcount: '1367'
+ht-degree: 96%
 
 ---
 # Fragmentos de código {#snippets}
@@ -54,7 +54,7 @@ ht-degree: 88%
 * [Conectar un formulario adaptable a la aplicación de Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Conectar un formulario adaptable a Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
 * [Conectar un formulario adaptable a Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
-* [Crear acción de envío personalizada](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
+* [Creación de una acción de envío personalizada](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
 ## Consulte también {#see-more-forms-eds}
 
@@ -114,8 +114,8 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
    </td>
    </tr>
    <tr>
-   <td>Desplazamiento entre los paneles</td>
-   <td> Los componentes <b>Botón siguiente</b> y <b>Botón anterior</b> se proporcionan para desplazarse entre los paneles. Un botón de navegación colocado dentro del contenedor funciona en sus elementos secundarios</td>
+   <td>Navegar por los paneles</td>
+   <td> Los componentes <b>Botón siguiente</b> y <b>Botón anterior</b> se proporcionan para navegar por los paneles. El botón de navegación colocado dentro del contenedor funciona en sus elementos secundarios</td>
    <td> La regla <b>Navegación en el panel</b> está disponible en el editor de reglas, lo que permite a los usuarios crear reglas para navegar entre los elementos secundarios de los paneles.
    </td>
    </tr>
@@ -133,10 +133,10 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 * [Diferentes casos de uso del Editor de reglas para un formulario adaptable basado en componentes principales](/help/forms/rule-editor-core-components-usecases.md)
 * [Diferencia en varias ediciones del editor de reglas](/help/forms/rule-editor-core-components-difference-tables.md)
 * [Usar funciones asincrónicas en un formulario adaptable](/help/forms/using-async-funct-in-rule-editor.md)
-* [Invocar mejoras de servicio en el Editor de reglas visuales para formularios basados en componentes principales](/help/forms/invoke-service-enhancements-rule-editor.md)
+* [Invocar mejoras de servicio en el editor de reglas visuales para formularios basados en componentes principales](/help/forms/invoke-service-enhancements-rule-editor.md)
 * [Introducción a las funciones personalizadas para formularios adaptables basados en componentes principales](/help/forms/create-and-use-custom-functions.md)
 * [Crear una función personalizada para un formulario adaptable basado en componentes principales](/help/forms/custom-function-core-component-create-function.md)
-* [Objeto Scope en funciones personalizadas](/help/forms/custom-function-core-component-scope-function.md)
+* [Objeto de ámbito en funciones personalizadas](/help/forms/custom-function-core-component-scope-function.md)
 * [Ejemplos de desarrollo y uso de funciones personalizadas](/help/forms/custom-function-core-components-use-cases.md)
 
 
@@ -149,10 +149,10 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 
 ## Marketo Engage{#marketo-engage-see-also}
 
-* [Integración de Marketo Engage con AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
-* [Configurar nuevo formulario para integrarlo con el Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-* [Configuración de la fuente de datos del Marketo Engage para Forms adaptable existente](/help/forms/use-marketo-engage-data-source-in-form.md)
-* [Configuración de la acción de envío al Marketo Engage para los formularios existentes](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [Integrar Marketo Engage con AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+* [Configurar nuevo formulario para integrarlo con Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+* [Configurar la fuente de datos de Marketo Engage para formularios adaptables existentes](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [Configuración de la acción de envío a Marketo Engage para formularios existentes](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 ## Lista de IP permitidas de Cloud Manager y canalizaciones front-end {#allowlist-frontend-pipeline}
 
@@ -189,7 +189,7 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 >
 >Si desea utilizar el editor universal, debe hacer lo siguiente:
 >
->* No habilitar Listas de permitidos IP.
+>* No habilitar las listas de IP permitidas.
 >* [Ejecute su propia instancia del servicio de editor universal.](/help/implementing/universal-editor/local-dev.md)
 
 ## Trabajar con Dynamic Media {#work-with-dynamic-media}
@@ -223,7 +223,7 @@ Si un problema del producto requiere una investigación y resolución de problem
 
 Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge Delivery en Cloud Manager. Se recomienda registrar su sitio web con Cloud Manager para todos los usuarios de AEM as a Cloud Service y [esto aporta una serie de ventajas](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Consulte [la documentación de Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) para obtener más información si aún no ha registrado el sitio.
 
-**Para registrar un vale de soporte técnico:**
+**Registro de un vale de asistencia:**
 
 1. [Siga el proceso de asistencia estándar](https://experienceleague.adobe.com/?support-tab=home#support) y cree un vale.
 1. Añada **Edge Delivery** en el título del ticket.
@@ -232,3 +232,11 @@ Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge 
    * URL del sitio web activo. Por ejemplo: `www.mydomain.com`.
    * URL del sitio web de origen (`.hlx` URL).
 
+## SPA Se prefiere el editor universal sobre el editor de {#ue-over-spa}
+
+>[!IMPORTANT]
+>
+>SPA El Editor de segmentos sigue siendo compatible con el Adobe AEM, pero los editores preferidos para administrar contenido sin encabezado en el son ahora:
+>
+>* [Editor universal](/help/edge/wysiwyg-authoring/authoring.md) para editar contenido sin encabezado de forma visual.
+>* [Editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) para la edición de contenido sin encabezado basada en formularios.

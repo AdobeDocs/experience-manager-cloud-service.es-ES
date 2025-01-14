@@ -4,7 +4,7 @@ description: AEM SPA SDK AEM de Editor de se presentó en una serie de sesiones 
 exl-id: 93c950be-be80-42d5-93eb-805a91b6ebba
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 1ad37259616147113a222267ffeb3956cb5ac9bf
+source-git-commit: 9441c4e489cc338548aa632a568f45dc567d66cf
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 # Profundización en SPA {#spa-deep-dives}
 
 AEM SPA SDK AEM de Editor de se presentó en una serie de sesiones de Gems de la. [Adobe Experience Manager Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) es una serie de conocimientos técnicos que ofrecen expertos en Adobe. Alojado por ingenieros de Adobe AEM SPA, esta serie puede servir como una gran guía para obtener una comprensión más profunda de la SDK de editor de páginas en un nivel más bajo.
+
+{{ue-over-spa}}
 
 ## Sesiones de Gem {#gem-sessions}
 

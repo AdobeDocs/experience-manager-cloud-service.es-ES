@@ -4,7 +4,7 @@ description: SPA SPA Este artículo presenta una aplicación de ejemplo para la 
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 6%
@@ -20,6 +20,8 @@ SPA SPA AEM La función de creación de ofrece una solución completa para la as
 >[!NOTE]
 >
 >Este artículo se basa en el marco de React. Para el documento correspondiente para la estructura de Angular SPA AEM, consulte [Introducción a la creación de cuadros de trabajo en la - Angular](getting-started-angular.md).
+
+{{ue-over-spa}}
 
 ## Introducción {#introduction}
 
@@ -268,4 +270,4 @@ Normalmente, es necesario que los componentes de una aplicación de una sola pá
 * La [Información general del Editor de SPA](editor-overview.md) profundiza en el modelo de comunicación entre AEM y el SPA.
 * SPA SPA AEM El [Proyecto de WKND de](wknd-tutorial.md) es un tutorial paso a paso para implementar un proyecto de simple en el área de trabajo de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de.
 * SPA SPA AEM [Asignación de modelos dinámicos a componentes para el modelo dinámico para el que se ha asignado el componente ](model-to-component-mapping.md) explica el modelo dinámico a la asignación de componentes y cómo funciona dentro de la asignación de componentes de la de trabajo de la.
-* [Modelo de](blueprint.md) ofrece una explicación detallada de cómo funciona el SDK de la para el trabajo en caso de que desee implementar un módulo de trabajo en el que no sea React o Angular, o simplemente desee tener una comprensión más detallada de cómo funciona el SDK de la para el trabajo en el caso de que desee implementar un módulo de trabajo en un entorno de trabajo que no sea React o SPA SPA AEM SPA AEM.
+* [Modelo de](blueprint.md) proporciona una explicación detallada del funcionamiento de SDK AEM SPA AEM para la en caso de que desee implementarlo en un entorno de trabajo que no sea React o Angular, o simplemente desee tener una comprensión más profunda de lo que está en juego para la implementación de un entorno de trabajo que no sea React o SPA SPA.

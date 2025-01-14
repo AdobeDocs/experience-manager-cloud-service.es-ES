@@ -4,7 +4,7 @@ description: SPA SPA AEM En este documento se describe el contrato general indep
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 # Modelo SPA {#spa-blueprint}
 
 AEM SPA SPA SPA Para permitir que el autor use el Editor de de trabajo para editar el contenido de un, hay requisitos que el autor debe cumplir. El Editor de la de trabajo de la publicación de contenido de la publicación de contenido debe cumplir varios requisitos.
+
+{{ue-over-spa}}
 
 ## Introducción {#introduction}
 
@@ -51,7 +53,7 @@ AEM Cada elemento presente en el modelo contiene un campo `:type` que expone un 
 
 #### Asignación de modelos dinámicos a componentes {#dynamic-model-to-component-mapping}
 
-Para obtener más información sobre cómo se produce la asignación de modelos dinámicos a componentes en el SDK de JavaScript para obtener más información, consulte el artículo [Asignación de modelos dinámicos a componentes para el SDK de SPA AEM SPA para la asignación de componentes para el SDK {1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](model-to-component-mapping.md)
+Para obtener más información sobre cómo se produce la asignación de modelos dinámicos a componentes en JavaScript SPA SDK AEM SPA para su uso, consulte el artículo [Asignación de modelos dinámicos a componentes para la aplicación de modelos de](model-to-component-mapping.md).
 
 ### Capa específica del marco de trabajo {#framework-specific-layer}
 

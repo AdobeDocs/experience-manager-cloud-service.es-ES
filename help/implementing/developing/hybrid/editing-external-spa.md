@@ -4,9 +4,9 @@ description: SPA AEM En este documento se describen los pasos recomendados para 
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
 workflow-type: tm+mt
-source-wordcount: '2374'
+source-wordcount: '2370'
 ht-degree: 1%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 1%
 # Edición de un SPA externo dentro de AEM {#editing-external-spa-within-aem}
 
 SPA AEM SPA AEM A la hora de decidir [qué nivel de integración](/help/implementing/developing/headful-headless.md) desea que tenga entre su externo y su, tenga en cuenta que debe poder editar y ver los elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista, con frecuencia
+
+{{ue-over-spa}}
 
 ## Información general {#overview}
 
@@ -35,7 +37,7 @@ SPA AEM En primer lugar, debe cargar el recurso externo en el proyecto de.
 
 1. Reemplace `src` en la carpeta del proyecto `/ui.frontend` con la carpeta `src` de su aplicación React.
 1. Incluya dependencias adicionales en `package.json` de la aplicación en el archivo `/ui.frontend/package.json`.
-   * SPA Asegúrese de que las dependencias del SDK de la sean de [versiones recomendadas](/help/implementing/developing/hybrid/getting-started-react.md#dependencies).
+   * SPA Asegúrese de que las dependencias de SDK de la sean de [versiones recomendadas](/help/implementing/developing/hybrid/getting-started-react.md#dependencies).
 1. Incluya cualquier personalización en la carpeta `/public`.
 1. Incluya cualquier script en línea o estilo agregado en el archivo `/public/index.html`.
 
@@ -43,7 +45,7 @@ SPA AEM En primer lugar, debe cargar el recurso externo en el proyecto de.
 
 SPA AEM AEM Ahora que la externa forma parte del proyecto de la, debe configurarse en la siguiente configuración de la interfaz de usuario de la interfaz de usuario de.
 
-### Incluir paquetes de SDK de Adobe SPA {#include-spa-sdk-packages}
+### Incluir Adobe SPA Paquetes SDK {#include-spa-sdk-packages}
 
 AEM SPA Para aprovechar las características de la, existen dependencias en los tres paquetes siguientes.
 
@@ -79,7 +81,7 @@ En este ejemplo, `ModelManager` se inicializa y se crea un `ModelStore` vacío.
 
 * `path`: en la inicialización, el modelo de la ruta definida se recupera y se almacena en `ModelStore`. Esta ruta se puede usar para recuperar `rootModel` en la inicialización, si es necesario.
 * `modelClient`: permite proporcionar un cliente personalizado responsable de recuperar el modelo.
-* `model` - Un objeto `model` pasado como parámetro normalmente se rellena al [usar SSR](/help/implementing/developing/hybrid/ssr.md).
+* `model` - Un objeto `model` pasado como parámetro normalmente se rellena al usar SSR.
 
 ### AEM Componentes de hoja autorizables {#authorable-leaf-components}
 
@@ -375,4 +377,3 @@ SPA AEM El siguiente material de referencia puede resultar útil para comprender
 * [SPA Materiales de referencia (referencias de API)](/help/implementing/developing/hybrid/reference-materials.md)
 * [SPA Modelo de página y administrador de modelos de página](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
 * [SPA Enrutamiento de modelo de](/help/implementing/developing/hybrid/routing.md)
-* [SPA Procesamiento del lado del servidor y de](/help/implementing/developing/hybrid/ssr.md)

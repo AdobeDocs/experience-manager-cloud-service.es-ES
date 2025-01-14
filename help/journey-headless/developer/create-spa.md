@@ -5,9 +5,9 @@ exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1250'
 ht-degree: 100%
 
 ---
@@ -127,7 +127,6 @@ A continuación se muestran algunos recursos adicionales que profundizan en algu
 * [Introducción y tutorial de SPA](/help/implementing/developing/hybrid/introduction.md): una buena introducción a las SPA en AEM.
 * [Desarrollo de las SPA para AEM](/help/implementing/developing/hybrid/developing.md): directrices sobre cómo desarrollar las SPA para AEM
 * [Información general del editor de SPA](/help/implementing/developing/hybrid/editor-overview.md): detalles del funcionamiento del editor de SPA.
-* [Procesamiento del lado del servidor](/help/implementing/developing/hybrid/ssr.md): cómo configurar SSR para las SPA de AEM
 * [Documentos de referencia de SPA](/help/implementing/developing/hybrid/reference-materials.md): referencias de la API de JavaScript y vínculos a los proyectos de GitHub de SPA en AEM de código abierto
 * [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments): cómo crear fragmentos de contenido
 * [Arquetipo del proyecto de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es): plantilla de Maven que crea un proyecto mínimo, basado en las prácticas recomendadas de Adobe Experience Manager (AEM) como punto de partida para su sitio web

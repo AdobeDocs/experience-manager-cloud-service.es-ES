@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 07539e1f0907b87d0b866a2cbcd534bb2c87692b
+source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
 workflow-type: tm+mt
-source-wordcount: '5957'
+source-wordcount: '5954'
 ht-degree: 99%
 
 ---
@@ -1214,6 +1214,7 @@ ht-degree: 99%
       + [Desarrollo de sitios con la canalización front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [Personalización de plantillas y temas del sitio](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
       + [Encabezado y sin encabezado en AEM](/help/implementing/developing/headful-headless.md)
+      + [No permitir la serialización de ResourceResolvers mediante el exportador de modelos Sling](/help/implementing/developing/disallow-resourceresolver-serialization.md)
       + Desarrollo full stack de AEM {#full-stack}
          + [Introducción al desarrollo de AEM Sites: Tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
          + [Estructura de la IU de AEM](/help/implementing/developing/introduction/ui-structure.md)
@@ -1278,11 +1279,9 @@ ht-degree: 99%
          + [El componente RemotePage](/help/implementing/developing/hybrid/remote-page.md)
          + [Edición de un SPA externo dentro de AEM](/help/implementing/developing/hybrid/editing-external-spa.md)
          + [Componentes compuestos en SPA](/help/implementing/developing/hybrid/composite-components.md)
-         + [Procesamiento del lado del servidor](/help/implementing/developing/hybrid/ssr.md)
          + [Activación de la exportación de JSON para un componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=es)
          + [Integración de Launch](/help/implementing/developing/hybrid/launch-integration.md)
          + [Documentos de referencia de SPA](/help/implementing/developing/hybrid/reference-materials.md)
-         + [No permitir la serialización de ResourceResolvers mediante el exportador de modelos Sling](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
    + Herramientas para desarrolladores {#developer-tools}
       + [Modo de desarrollador](/help/implementing/developing/tools/developer-mode.md)
       + [Herramientas para desarrolladores de AEM para Eclipse](/help/implementing/developing/tools/eclipse.md)

@@ -4,7 +4,7 @@ description: SPA AEM El componente RemotePage es un componente de página person
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 # El componente RemotePage {#remote-page-component}
 
 SPA AEM SPA AEM Al decidir [qué nivel de integración](/help/implementing/developing/headful-headless.md) desea que tenga entre su externo y su, a menudo está claro que necesita poder ver y editar el nivel de integración dentro de los entornos de trabajo de los que se dispone en el sitio web de la comunidad de usuarios de. El componente RemotePage es un componente de página personalizado solo para este propósito.
+
+{{ue-over-spa}}
 
 ## Información general {#overview}
 
