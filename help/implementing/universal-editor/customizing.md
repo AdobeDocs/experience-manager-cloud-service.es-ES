@@ -4,10 +4,10 @@ description: Obtenga información acerca de los diferentes puntos de extensión 
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 732b0648e7114594cb8d35df03f83b842d62736e
+source-git-commit: afcb3cbc2b0868de7bac9446eb07ae30c033de66
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 1%
+source-wordcount: '579'
+ht-degree: 4%
 
 ---
 
@@ -41,39 +41,7 @@ Por lo tanto, el botón **Publish** se puede suprimir por completo en una aplica
 
 ### Filtrado de componentes {#filtering-components}
 
-Al utilizar el Editor universal, puede restringir los componentes permitidos por componente de contenedor. Para ello, debe introducir una etiqueta de script adicional, que apunte a la definición del filtro.
-
-```html
-<script type="application/vnd.adobe.aue.filter+json" src="/static/filter-definition.json"></script>
-```
-
-Una definición de filtro puede tener el aspecto siguiente, que restringiría un contenedor para permitir únicamente agregar texto e imágenes.
-
-```json
-[
-  {
-    "id": "container-filter",
-     "components": ["text", "image"]
-   }
-]
-```
-
-A continuación, puede hacer referencia a la definición del filtro desde el componente contenedor agregando la propiedad `data-aue-filter`, pasando el ID del filtro definido anteriormente.
-
-```html
-data-aue-filter="container-filter"
-```
-
-Al establecer el atributo `components` en una definición de filtro en `null`, se permiten todos los componentes, como si no hubiera ningún filtro.
-
-```json
-[
-  {
-    "id": "another-container-filter",
-     "components": null
-   }
-]
-```
+Puede restringir los componentes permitidos por contenedor en el Editor universal mediante filtros de componente. Consulte el documento [Componentes de filtrado](/help/implementing/universal-editor/filtering.md) para obtener más información.
 
 ### Mostrar y ocultar condicionalmente componentes en el panel Propiedades {#conditionally-hide}
 
@@ -120,7 +88,7 @@ Las condiciones se pueden definir usando el esquema [JsonLogic.](https://jsonlog
 
 Puede especificar una URL de vista previa personalizada mediante una metaconfiguración de `urn:adobe:aue:config:preview`, que se abrirá al hacer clic en el botón **Abrir página** en la barra de herramientas superior derecha del [editor.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
 
-Esto es especialmente útil para aplicaciones con requisitos de vista previa específicos, como las que [utilizan Edge Delivery Services con la creación de WYSIWYG.](/help/edge/wysiwyg-authoring/authoring.md)
+Esto es especialmente útil para aplicaciones con requisitos de vista previa específicos, como las que [utilizan Edge Delivery Services con la creación WYSIWYG.](/help/edge/wysiwyg-authoring/authoring.md)
 
 Para ello, simplemente incluya la URL de vista previa deseada en una metaetiqueta de la aplicación instrumentada como en el siguiente ejemplo.
 

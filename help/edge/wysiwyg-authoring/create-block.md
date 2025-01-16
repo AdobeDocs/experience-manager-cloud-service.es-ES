@@ -4,10 +4,10 @@ description: Aprenda a crear bloques instrumentados para utilizarlos con el edit
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '1415'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ El siguiente ejemplo de bloque de comillas sigue este enfoque.
 
 ![Clonación del proyecto](assets/create-block/clone.png)
 
-2\. Edite el archivo [`component-definition.json`](/help/implementing/universal-editor/component-definition.md) en la raíz del proyecto, agregue la siguiente definición para el nuevo bloque de comillas y guarde el archivo.
+2\. Edite el [`component-definition.json`archivo](/help/implementing/universal-editor/component-definition.md) en la raíz del proyecto, añada la siguiente definición para el nuevo bloque de comillas y guarde el archivo.
 
 >[!BEGINTABS]
 
@@ -119,7 +119,7 @@ El siguiente ejemplo de bloque de comillas sigue este enfoque.
 
 >[!ENDTABS]
 
-4\. Edite el archivo [`component-filters.json`](/help/implementing/universal-editor/customizing.md#filtering-components) en la raíz del proyecto y agregue el bloque de comillas a la [definición de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) para permitir que el bloque se agregue a cualquier sección y guarde el archivo.
+4\. Edite el archivo [`component-filters.json`](/help/implementing/universal-editor/filtering.md) en la raíz del proyecto y añada el bloque de comillas a la [definición de filtro](/help/implementing/universal-editor/filtering.md) para permitir que el bloque se añada a cualquier sección y guarde el archivo.
 
 >[!BEGINTABS]
 

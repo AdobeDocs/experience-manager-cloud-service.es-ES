@@ -4,10 +4,10 @@ description: Aprenda cómo funciona el modelado de contenido para la creación W
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '2195'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ El archivo [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplat
 
 Tenga en cuenta que no todos los bloques deben tener un modelo. Algunos bloques son simplemente [contenedores](#container) de una lista de tareas secundarias, donde cada elemento secundario tiene su propio modelo.
 
-También es necesario definir qué bloques existen y se pueden añadir a una página con el editor universal. El archivo [`component-definitions.json`](/help/implementing/universal-editor/component-definition.md) enumera los componentes tal como están disponibles en el Editor universal.
+También es necesario definir qué bloques existen y se pueden añadir a una página con el editor universal. El archivo [`component-definitions.json`](/help/implementing/universal-editor/component-definition.md) enumera los componentes tal como están disponibles en el editor universal.
 
 ```json
 {
@@ -113,7 +113,7 @@ Para cada bloque, el desarrollador:
    * El nombre del bloque se utiliza para recuperar el estilo y el script adecuados para decorar el bloque.
 * Puede definir un [ID de modelo.](/help/implementing/universal-editor/field-types.md#model-structure)
    * El ID de modelo es una referencia al modelo del componente, que define los campos disponibles para el autor en el panel de propiedades.
-* Puede definir un [ID de filtro.](/help/implementing/universal-editor/customizing.md#filtering-components)
+* Puede definir un [ID de filtro.](/help/implementing/universal-editor/filtering.md)
    * El ID de filtro es una referencia al filtro del componente, que permite cambiar el comportamiento de creación, por ejemplo, al limitar qué elementos secundarios se pueden añadir al bloque o a la sección, o qué funciones RTE están habilitadas.
 
 Toda esta información se almacena en AEM cuando se añade un bloque a una página. Si falta el tipo de recurso o el nombre del bloque, el bloque no se procesará en la página.
@@ -245,7 +245,7 @@ Un ejemplo de esto es el [metadatos de sección.](/help/edge/developer/markup-se
 
 Ambas estructuras anteriores tienen una sola dimensión: la lista de propiedades. Los bloques contenedores permiten añadir tareas secundarias (normalmente del mismo tipo o modelo) y, por lo tanto, son bidimensionales. Estos bloques siguen admitiendo sus propias propiedades, representadas como filas con una sola columna en primer lugar. Pero también permiten añadir tareas secundarias, para los que cada elemento se procesa como fila y cada propiedad como columna dentro de esa fila.
 
-En el siguiente ejemplo, un bloque acepta una lista de iconos vinculados como tareas secundarias, donde cada icono vinculado tiene una imagen y un vínculo. Observe que el [ID de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) se establece en los datos del bloque para hacer referencia a la configuración del filtro.
+En el siguiente ejemplo, un bloque acepta una lista de iconos vinculados como tareas secundarias, donde cada icono vinculado tiene una imagen y un vínculo. Observe que el [ID de filtro](/help/implementing/universal-editor/filtering.md) se establece en los datos del bloque para hacer referencia a la configuración del filtro.
 
 >[!BEGINTABS]
 
@@ -536,9 +536,9 @@ Del mismo modo que un desarrollador puede definir y modelar varios [bloques,](#b
 
 El modelo de contenido de Edge Delivery Services permite deliberadamente un solo nivel de anidación, que es cualquier contenido o bloque predeterminado contenido en una sección. Esto significa que, para tener componentes visuales más complejos que puedan contener otros componentes, deben modelarse como secciones y combinarse utilizando el bloqueo automático del lado del cliente. Ejemplos típicos de ello son las pestañas y las secciones contraíbles como acordeones.
 
-Una sección se puede definir del mismo modo que un bloque, pero con el tipo de recurso de `core/franklin/components/section/v1/section`. Las secciones pueden tener un nombre y un [ID de filtro,](/help/implementing/universal-editor/customizing.md#filtering-components) que utilizan los clientes de [Editor universal](/help/implementing/universal-editor/introduction.md) solamente, así como un [ID del modelo,](/help/implementing/universal-editor/field-types.md#model-structure) que se utiliza para procesar los metadatos de la sección. El modelo es, de este modo, el modelo del bloque de metadatos de sección, que se anexará automáticamente a una sección como bloque clave-valor si no está vacío.
+Una sección se puede definir del mismo modo que un bloque, pero con el tipo de recurso de `core/franklin/components/section/v1/section`. Las secciones pueden tener un nombre y un [ID de filtro,](/help/implementing/universal-editor/filtering.md) que utilizan los clientes de [Editor universal](/help/implementing/universal-editor/introduction.md) solamente, así como un [ID del modelo,](/help/implementing/universal-editor/field-types.md#model-structure) que se utiliza para procesar los metadatos de la sección. El modelo es, de este modo, el modelo del bloque de metadatos de sección, que se anexará automáticamente a una sección como bloque clave-valor si no está vacío.
 
-El [ID de modelo](/help/implementing/universal-editor/field-types.md#model-structure) y [ID de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) de la sección predeterminada es `section`. Se puede utilizar para modificar el comportamiento de la sección predeterminada. En el siguiente ejemplo se agregan algunos estilos y una imagen de fondo al modelo de metadatos de sección.
+El [ID de modelo](/help/implementing/universal-editor/field-types.md#model-structure) y [ID de filtro](/help/implementing/universal-editor/filtering.md) de la sección predeterminada es `section`. Se puede utilizar para modificar el comportamiento de la sección predeterminada. En el siguiente ejemplo se agregan algunos estilos y una imagen de fondo al modelo de metadatos de sección.
 
 ```json
 {
