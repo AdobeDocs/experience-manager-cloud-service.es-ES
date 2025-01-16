@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo acceder al editor universal y cóm
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 8357caf2b0d396f6a1bd7b6160d6b48d8d6c026c
+source-git-commit: 75acf37e7804d665e38e9510cd976adc872f58dd
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 62%
+source-wordcount: '956'
+ht-degree: 41%
 
 ---
 
@@ -119,6 +119,51 @@ Si solo desea tener ciertas extensiones habilitadas para una página, puede esta
 ```html
 <meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
 ```
+
+## Defina para qué rutas de contenido o `sling:resourceType` se debe abrir el Editor universal. (Opcional) {#content-paths}
+
+AEM Si tiene un proyecto de existente que usa [el editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md), cuando los autores de contenido editan las páginas, estas se abren automáticamente con el editor de páginas. AEM Puede definir qué editor debe abrirse en función de las rutas de contenido o de `sling:resourceType`, lo que hace que la experiencia sea perfecta para los autores, independientemente del editor que se requiera para el contenido seleccionado.
+
+1. Abra el Administrador de configuración.
+
+   `http://<host>:<port>/system/console/configMgr`
+
+1. Busque **Servicio de URL del editor universal** en la lista y haga clic en **Editar los valores de configuración**.
+
+1. Defina para qué rutas de contenido o `sling:resourceType` se debe abrir el Editor universal.
+
+   * En el campo **Asignación de apertura de editor universal**, proporcione las rutas para las que se abre el editor universal.
+   * En el campo **Sling:resourceTypes que abrirá el editor universal**, proporcione una lista de los recursos que el editor universal abrirá directamente.
+
+1. Haga clic en **Guardar**.
+
+AEM Se abrirá el Editor universal para las páginas basadas en esta configuración en el siguiente orden.
+
+1. AEM Se comprobarán las asignaciones en `Universal Editor Opening Mapping` y, si el contenido se encuentra en alguna de las rutas definidas, se abrirá el Editor universal para él.
+1. AEM Para el contenido que no se encuentra en las rutas definidas en `Universal Editor Opening Mapping`, comprueba si el `resourceType` del contenido coincide con los definidos en **Sling:resourceTypes, que abrirá el editor universal**. Si el contenido coincide con uno de esos tipos, el editor universal se abrirá para él en `${author}${path}.html`.
+1. AEM De lo contrario, abre el Editor de páginas.
+
+Las siguientes variables están disponibles para definir las asignaciones en el campo **Asignación de apertura de editor universal**.
+
+* `path`: ruta de contenido del recurso a abrir
+* `localhost`: entrada del externalizador para `localhost` sin esquema, p. ej. `localhost:4502`
+* `author`: entrada de externalizador para el autor sin esquema, p. ej. `localhost:4502`
+* `publish`: entrada de externalizador para publicación sin esquema, p. ej. `localhost:4503`
+* `preview`: entrada del externalizador para vista previa sin esquema, p. ej. `localhost:4504`
+* `env`: `prod`, `stage`, `dev` según los modos de ejecución de Sling definidos
+* `token`: token de consulta necesario para `QueryTokenAuthenticationHandler`
+
+### Asignaciones de ejemplo {#example-mappings}
+
+* AEM Abra todas las páginas por debajo de `/content/foo` en el Autor de la:
+
+   * `/content/foo:${author}${path}.html?login-token=${token}`
+   * Esto resulta en abrir `https://localhost:4502/content/foo/x.html?login-token=<token>`
+
+* Abra todas las páginas por debajo de `/content/bar` en un servidor NextJS remoto y proporcione todas las variables como información:
+
+   * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
+   * Esto resulta en abrir `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
 
 ## Todo listo para usar el editor Universal {#youre-ready}
 
