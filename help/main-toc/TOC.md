@@ -225,7 +225,7 @@ ht-degree: 99%
    + [Información general de seguridad para AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
    + [Configurar la conexión avanzada para AEM as a Cloud Service](/help/security/configuring-advanced-networking.md)
    + [Compatibilidad con IMS para AEM as a Cloud Service](/help/security/ims-support.md)
-   + [Cambios en la sincronización de grupos de usuarios y perfil de producto](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
+   + [Cambios en la sincronización de grupo de usuarios y perfil de producto](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
    + [Compatibilidad con cookies del mismo sitio para AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [Compatibilidad con OAuth2 para el servicio de correo](/help/security/oauth2-support-for-mail-service.md)
    + [Reglas de filtro de tráfico, incluidas reglas WAF](/help/security/traffic-filter-rules-including-waf.md)
@@ -233,7 +233,7 @@ ht-degree: 99%
    + [Credenciales JWT de Adobe Developer Console en desuso](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [Configuración de integraciones de IMS para AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [Prácticas recomendadas para la asignación de usuarios al servicio Sling y la definición de usuarios del servicio](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
-   + [Claves gestionadas por el cliente para el as a Cloud Service de Adobe](/help/security/customer-managed-keys.md)
+   + [Claves administradas por el cliente para Adobe as a Cloud Service](/help/security/customer-managed-keys.md)
 + Incorporación {#onboarding}
    + [Empiece aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=es)
    + Recorrido de incorporación {#journey}
