@@ -4,10 +4,10 @@ description: Acceda a los datos de la sección de informes de la vista Recursos 
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
-source-git-commit: 6e0cd465f8695c948ece4679e083d6b9b35dded4
+source-git-commit: c92fc95d7f2774b24664b457bf785120945fc966
 workflow-type: tm+mt
-source-wordcount: '1564'
-ht-degree: 67%
+source-wordcount: '1540'
+ht-degree: 85%
 
 ---
 
@@ -48,7 +48,7 @@ El entorno de vista de los AEM Assets ofrece funcionalidades completas de creaci
 
    **En pestaña Configuración:**
 
-   1. **Tipo de informe:** Seleccione entre el tipo [!UICONTROL cargar], [!UICONTROL descargar] o [Informe de envío de Dynamic Media](#dynamic-media-delivery-reports).
+   1. **Tipo de informe:** seleccione entre el tipo [!UICONTROL cargar], [!UICONTROL descargar] o [Informe de entrega de Dynamic Media](#dynamic-media-delivery-reports).
    1. **Título:** añada un título al informe.
    1. **Descripción:** añada una descripción opcional al informe.
    1. **Seleccionar ruta de la carpeta:** seleccione una ruta de la carpeta para generar el informe de los recursos cargados y descargados dentro de esa carpeta específica. Por ejemplo, si necesita que el informe de recursos se cargue en una carpeta, especifique la ruta a esa carpeta.
@@ -124,8 +124,8 @@ El entorno de vista de los AEM Assets ofrece funcionalidades completas de creaci
       <td>Descargar</td>
      </tr> 
      <tr>
-      <td>Referencia</td>
-      <td>Dirección URL donde se entrega o se incluye el recurso</td>
+      <td>Remitente del reenvío</td>
+      <td>La URL donde se entrega o se incluye el recurso</td>
       <td>Entrega de Dynamic Media</td>
      </tr>  
      <tr>
@@ -138,11 +138,13 @@ El entorno de vista de los AEM Assets ofrece funcionalidades completas de creaci
 
 ## Informes de envío de Dynamic Media {#dynamic-media-delivery-reports}
 
-Obtenga información de envío para los recursos que se envían con Dynamic Media, con el recuento de envíos a nivel de recurso, información del remitente del envío, ruta de recursos en AEM Assets e ID de recurso único. Se pueden generar informes para todos los recursos entregados mediante el repositorio de Dynamic Media para AEM Assets o para una jerarquía de carpetas específica en AEM Assets. Además, las perspectivas de los informes de entrega de Dynamic Media ayudan a medir el retorno de la inversión de los recursos entregados, medir el rendimiento del canal y realizar tareas de administración de recursos informadas para los recursos.
+Obtenga información de envío para los recursos que se envían con Dynamic Media, con el recuento de envíos a nivel de recurso, información del remitente del envío, ruta de recursos en AEM Assets e ID de recurso único. Se pueden generar informes para todos los recursos que se envían mediante el repositorio de Dynamic Media para AEM o para una jerarquía de carpetas específica en AEM Assets. Además, la información de envío de Dynamic Media ayuda a medir el retorno de la inversión de los recursos enviados, a medir el rendimiento del canal y ayuda a realizar tareas de administración de recursos con conocimiento de causa para los recursos.
 
+<!--
 >[!NOTE]
 > 
->Para obtener acceso anticipado al informe de entrega de Dynamic Media en su cuenta de Dynamic Media, [cree y envíe un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+-->
 
 ### Requisitos previos {#prereqs-dynamic-media-delivery-reports}
 
@@ -158,14 +160,14 @@ Debe tener una licencia de Dynamic Media para crear y utilizar este informe.
 
 1. Cree un informe de envío de Dynamic Media siguiendo los pasos mencionados en [Crear un informe](#create-report).
 
-1. Seleccione **[!UICONTROL Envío de Dynamic Media]** de la lista desplegable **[!UICONTROL Tipo de informe]**.
+1. Seleccione **[!UICONTROL Entrega de Dynamic Media]** de la lista desplegable **[!UICONTROL Tipo de informe]**.
 
-   ![Lista desplegable de informes de envío de Dynamic Media](assets/dynamic-media-delivery-report-option.png)
+   ![Informe de envío de Dynamic Media](assets/dynamic-media-delivery-report-option.png)
 
 
-1. En la ficha **[!UICONTROL Columnas]**, puede seleccionar la columna **[!UICONTROL Referente]** para incluirla en el informe.
+1. En la pestaña **[!UICONTROL Columnas]**, puede seleccionar la columna **[!UICONTROL Remitente del reenvío]** para incluirla en el informe.
 
-   ![Referente](assets/referrer.png)
+   ![Remitente del reenvío](assets/referrer.png)
 
    Todas las columnas del informe descargado son de solo lectura, excepto la columna **Referente**, que puede modificar para incluir o excluir del informe. <!--Choosing a referrer displays the number of visitors received from each referred report that directs traffic to the site. It offers insights into the sources of traffic and the origin of the visitors. Such insights help measure ROI of delivered assets, measure channel performance, and help take informed asset management tasks for assets.-->
 
@@ -174,14 +176,14 @@ Debe tener una licencia de Dynamic Media para crear y utilizar este informe.
 Después de crear el informe, puede realizar las siguientes acciones:
 
 * **[!UICONTROL Eliminar]**: puede eliminar el informe seleccionado.
-* **[!UICONTROL Descargar CSV]**: Puede descargar el informe seleccionado en formato CSV. El informe descargado consta de las columnas Nombre, Ruta, Dynamic MediaID, Referente, Visitas.
-   * La columna **Referente** enumera la dirección URL donde se entrega o se incluye el recurso.
+* **[!UICONTROL Descargar CSV]**: puede descargar el informe seleccionado en formato CSV. El informe descargado consta de las columnas Nombre, Ruta, DynamicMediaID, Referente, Visitas.
+   * La columna **Remitente del reenvío** enumera la dirección URL donde se entrega o se incluye el recurso.
 
    * La columna **Visitas** enumera la cantidad de veces que se entrega el recurso (recuento de envíos).
 
-Para eliminar o descargar el informe de envío de Dynamic Media como CSV, consulte [Ver y descargar el informe existente](#View-and-download-existing-report).
+Para eliminar o descargar el informe de entrega de Dynamic Media como CSV, consulte [Ver y descargar el informe existente](#View-and-download-existing-report).
 
-![CSV descargado en el informe de envío de Dynamic Media](assets/csv-dynamic-media-delivery-report.png)
+![CSV descargado en el informe de entrega de Dynamic Media](assets/csv-dynamic-media-delivery-report.png)
 
 
 ## Visualización y descarga de un informe existente {#View-and-download-existing-report}
