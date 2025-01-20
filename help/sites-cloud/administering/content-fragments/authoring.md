@@ -1,14 +1,14 @@
 ---
 title: Creación de fragmentos de contenido
-description: Aprenda a crear contenido para los fragmentos de contenido y a crear variaciones de ese contenido según el propósito. Esto proporciona una mayor flexibilidad para la entrega sin encabezado y la creación de páginas.
+description: Aprenda a crear contenido para los fragmentos de contenido y a crear variaciones de ese contenido según el propósito. Los fragmentos de contenido proporcionan una flexibilidad añadida para la entrega sin encabezado y la creación de páginas.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 6a971fd5d0e071f72c17cf0a42f3dd8da0b476ae
+source-git-commit: 84e329e893ead1d67a3a0f651d0d2d4b24021b12
 workflow-type: tm+mt
-source-wordcount: '2841'
-ht-degree: 7%
+source-wordcount: '2851'
+ht-degree: 6%
 
 ---
 
@@ -68,7 +68,9 @@ Cuando abra el Editor de fragmentos de contenido por primera vez, verá cuatro �
 * panel central: muestra los campos y el contenido reales de la variación seleccionada
    * permite editar el contenido
       * cuando se configura (como múltiple) en el modelo, varios tipos de datos le permiten **agregar** instancias del campo correspondiente
-   * si los campos **Marcador de pestaña** se definen dentro del modelo, se mostrarán aquí y se podrán usar para navegar; se presentarán horizontalmente o como una lista desplegable.
+   * si los campos **Marcador de pestaña** se definen dentro del modelo, se mostrarán aquí y:
+      * se puede utilizar para navegar
+      * se mostrarán horizontalmente o como una lista desplegable
 
   >[!NOTE]
   >
@@ -102,7 +104,7 @@ En el panel izquierdo puede ver lo siguiente:
 
 ### Seguir vínculos {#follow-links}
 
-En varias partes del editor puede ver el icono de vínculo. Se puede utilizar para abrir el elemento mostrado; por ejemplo, un modelo de fragmento de contenido, una referencia principal o un fragmento al que se hace referencia:
+En varias partes del editor puede ver el icono de vínculo. Este icono se puede utilizar para abrir el elemento mostrado; por ejemplo, un modelo de fragmento de contenido, una referencia principal o un fragmento al que se hace referencia:
 
 ![Editor de fragmentos de contenido: icono de vínculo](assets/cf-authoring-link-icon.png)
 
@@ -475,7 +477,7 @@ Por ejemplo:
 
 ## Comentarios sobre el fragmento {#commenting-on-your-fragment}
 
-La ficha **Comentarios** del panel derecho proporciona las siguientes capacidades:
+Para permitirle colaborar en el producto y en el contexto, la pestaña **Comentarios** del panel derecho proporciona las siguientes capacidades:
 
 * Añadir un nuevo comentario
 * Etiquetar usuarios específicos en un comentario
