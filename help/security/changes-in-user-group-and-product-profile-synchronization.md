@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
 source-git-commit: cddfcddc0ca3652270bdb735e580386ac9ff1fc7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '361'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 65%
 
 Cada vez que se inicia sesión en AEM as a Cloud Service o se utiliza un token de acceso, los grupos de usuarios, perfiles de producto y servicios de perfil de producto de Adobe Admin Console se sincronizan con el repositorio de AEM como grupos.
 
-AEM AEM Con versiones superiores a 18751 (una versión de mantenimiento comenzará a implementarse en los entornos de producción el 27 de enero), para reducir el desorden de la interfaz de usuario y optimizar el rendimiento, se producirán algunos cambios en el comportamiento de sincronización, lo que dará como resultado que aparezcan menos grupos en las versiones de. Se eliminarán dos categorías de grupos de AEM:
+Con las versiones de AEM superiores a 18751 (el 27 de enero se comenzará a lanzar una versión de mantenimiento en los entornos de producción), para reducir el desorden de la interfaz de usuario y optimizar el rendimiento, se producirán algunos cambios en el comportamiento de sincronización, lo que hará que aparezcan menos grupos en AEM. Se eliminarán dos categorías de grupos de AEM:
 
-1. Grupos de AEM con sufijo `GROUP_NAME_SUFFIX`. Estos grupos no aparecen en Adobe Developer Console, pero sí en la pantalla Administración de grupos de AEM, como se muestra a continuación. AEM En el improbable caso de que la aplicación haga referencia a estos grupos, asegúrese de hacer referencia a grupos de usuarios de Adobe Admin Console sin ese sufijo en su lugar.
+1. Grupos de AEM con sufijo `GROUP_NAME_SUFFIX`. Estos grupos no aparecen en Adobe Developer Console, pero sí en la pantalla Administración de grupos de AEM, como se muestra a continuación. En el improbable caso de que su aplicación AEM haga referencia a estos grupos, asegúrese de usar grupos de usuarios de Adobe Admin Console sin ese sufijo.
 
    ![Grupos eliminados 1](/help/security/assets/removed-groups-1.png)
 
-1. AEM grupos de productos asociados con perfiles de producto de Adobe Admin Console no relacionados con el entorno específico. Esto puede incluir perfiles de producto que:
+1. Los grupos de AEM asociados a los perfiles de producto de Adobe Admin Console no relacionados con el entorno específico. Esto puede incluir perfiles de producto que:
 
    * estén relacionados con otros productos de Adobe
    * estén relacionados con otros programas de AEM
@@ -42,5 +42,5 @@ Esto le llevará a Adobe Admin Console, como se muestra en la captura de pantall
 
 ![Sufijos en Admin Console](/help/security/assets/admin-console-profile-suffixes.png)
 
-AEM AEM AEM En el improbable caso de que la aplicación haga referencia a un grupo que ya no aparecerá en la aplicación, asegúrese de usar en su lugar i) un perfil de producto de la instancia correcta de la aplicación o ii) un grupo de usuarios de Adobe Admin Console, en su lugar, un perfil de producto de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la.
+En el improbable caso de que la aplicación AEM haga referencia a un grupo que ya no va a aparecer en AEM, asegúrese de usar en su lugar i) un perfil de producto de la instancia correcta de AEM o ii) un grupo de usuarios de Adobe Admin Console.
 
