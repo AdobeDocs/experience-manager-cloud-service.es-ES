@@ -5,14 +5,14 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 66fd6f506aa8dddc2a948b3c7a07134b9ae3df54
+source-git-commit: 812b1e41b460783d3fa220bd24ecfcfd4208a5df
 workflow-type: tm+mt
-source-wordcount: '2368'
-ht-degree: 97%
+source-wordcount: '2370'
+ht-degree: 100%
 
 ---
 
-# Creación de un formulario adaptable {#creating-an-adaptive-form-core-components}
+# Creación de un formulario adaptable (componentes principales) {#creating-an-adaptive-form-core-components}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -35,7 +35,7 @@ Antes de empezar, obtenga información sobre el tipo de componentes de Forms dis
 
 Para crear un formulario adaptable, es necesario lo siguiente:
 
-* **Habilitar los componentes principales de formularios adaptables para su entorno**: al crear un nuevo programa, los componentes principales de formularios adaptables ya están habilitados para su entorno. Si tiene un entorno de formularios as a Cloud Service basado en Archetype 39 o anterior, [Habilite los componentes principales de formularios adaptables para su entorno](enable-adaptive-forms-core-components.md). Al habilitar los componentes principales para su entorno, las plantillas y temáticas **Forms adaptable (componente principal)** se agregan al entorno. Si su versión del SDK de AEM es anterior a la 2023.02.0, [compruebe que tiene `prerelease` activado el indicador en su entorno](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features), ya que los componentes principales de formularios adaptables formaban parte de la versión preliminar anterior a la 2023.02.0.
+* **Habilitar los componentes principales de formularios adaptables para su entorno**: al crear un nuevo programa, los componentes principales de formularios adaptables ya están habilitados para su entorno. Si tiene un entorno de formularios as a Cloud Service basado en Archetype 39 o anterior, [Habilite los componentes principales de formularios adaptables para su entorno](enable-adaptive-forms-core-components.md). Al habilitar los componentes principales para su entorno, las plantillas y las temáticas de **Formularios adaptables (componente principal)** se añaden a su entorno. Si su versión del SDK de AEM es anterior a la 2023.02.0, [compruebe que tiene `prerelease` activado el indicador en su entorno](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features), ya que los componentes principales de formularios adaptables formaban parte de la versión preliminar anterior a la 2023.02.0.
 
 * **Una plantilla de formulario adaptable**: Una plantilla ofrece una estructura básica y define el aspecto (diseños y estilos) de un formulario adaptable. Tiene componentes con formato previo que contienen determinadas propiedades y estructura de contenido. También ofrece opciones para definir una temática y una acción de envío. La temática define la apariencia, y la acción de envío define la acción que debe realizarse al enviar un Formulario adaptable. Por ejemplo, enviar los datos recopilados a una fuente de datos. El servicio en la nube proporciona una plantilla OOTB, denominada en blanco:
 
@@ -109,7 +109,7 @@ Ahora puede arrastrar y soltar los [componentes principales de formularios adapt
 
 >[!NOTE]
 >
-> También puede [crear Forms adaptable mediante plantillas de formulario XFA (archivos *.XDP)](/help/forms/create-adaptive-form-using-xfa-templates.md). Permite ahorrar tiempo reutilizando campos de archivos XDP directamente en Forms adaptable.
+> También puede [crear formularios adaptables mediante plantillas de formulario XFA (archivos *.XDP)](/help/forms/create-adaptive-form-using-xfa-templates.md). Permite ahorrar tiempo reutilizando campos de archivos XDP directamente en los formularios adaptables.
 
 ## Configuración de una acción de envío para un formulario adaptable {#configure-submit-action-for-form}
 
@@ -217,7 +217,7 @@ Para cambiar el nombre de un formulario adaptable, realice los siguientes pasos:
 
 -->
 
-## Ver también {#see-also}
+## Consulte también {#see-also}
 
 {{see-also}}
 * [Adición de un comportamiento dinámico a los formularios mediante el editor de reglas](/help/forms/rule-editor-core-components.md)

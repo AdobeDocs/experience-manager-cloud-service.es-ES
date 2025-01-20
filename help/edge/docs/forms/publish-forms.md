@@ -4,10 +4,10 @@ description: Publique un Edge Delivery Services para AEM Forms
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '549'
-ht-degree: 100%
+source-git-commit: 4e6045aadd7d927851e431e2204cb2d56767a5a3
+workflow-type: tm+mt
+source-wordcount: '594'
+ht-degree: 77%
 
 ---
 
@@ -30,9 +30,9 @@ Una vez que esté listo para compartir el formulario con los clientes para la re
 
 1. Abra su cuenta de Microsoft SharePoint o de Google Drive y vaya al directorio del proyecto de Edge Delivery de AEM.
 
-1. Abra la hoja de cálculo que contiene el formulario. Por ejemplo, el formulario `enquiry` del libro de Excel de Microsoft.
+1. Abra la hoja de cálculo que contiene el formulario. Por ejemplo, la [consulta](/help/edge/assets/enquiry.xlsx) del libro de Excel de Microsoft.
 
-1. Utilice [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para previsualizar la hoja.
+1. Utilice [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para obtener una vista previa de la hoja.
 
    ![Utilice AEM Sidekick para obtener una vista previa de la hoja](/help/edge/assets/preview-form.png)
 
@@ -44,16 +44,16 @@ Una vez que esté listo para compartir el formulario con los clientes para la re
 
 
    ```JSON
-       https://<branch>--<repository>--<owner>.hlx.live/<form>.json
+       https://<branch>--<repository>--<owner>.aem.live/<form>.json
    ```
 
    * `<branch>` hace referencia a la rama del repositorio de GitHub.
    * `<repository>` indica su repositorio de GitHub.
    * `<owner>` hace referencia al nombre de usuario de la cuenta de GitHub que aloja el repositorio de GitHub.
 
-   Por ejemplo, si el repositorio del proyecto se llama “portal”, está ubicado en la cuenta “wkndforms” y usa la rama “principal”, la dirección URL tiene el siguiente aspecto:
+   Por ejemplo, si el repositorio de su proyecto se denomina &quot;wefinance&quot;, está ubicado en la cuenta &quot;wkndform&quot; y está utilizando la rama y el formulario &quot;principal&quot; como &quot;consulta&quot;, la dirección URL tiene el siguiente aspecto:
 
-   `https://main--portal--wkndforms.hlx.page/enquiry.json`
+   [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json)
 
 +++
 
@@ -66,15 +66,15 @@ Para añadir el formulario a la página web:
 
 1. Acceda a su cuenta de Microsoft SharePoint o Google Drive y navegue hasta su `[AEM Edge Delivery project directory]`.
 
-1. Abra un archivo de documento donde quiera incrustar el formulario. Por ejemplo, puede abrir el archivo `index.docx` o, alternativamente, crear un nuevo documento.
+1. Abra un archivo de documento donde quiera incrustar el formulario. Por ejemplo, puede abrir el archivo [query-form.docx](/help/edge/assets/enquiry-form.docx) o, alternativamente, crear un nuevo documento.
 
 1. Identifique la sección deseada dentro del documento en la que quiere insertar el formulario y navegue hasta ella según corresponda.
 
-1. Añada un bloque denominado &quot;Form&quot; al archivo, similar al ejemplo que se proporciona a continuación:
+1. Agregue un bloque denominado &quot;Form&quot; al archivo. Por ejemplo, si el repositorio de su proyecto se llama &quot;wefinance&quot;, se encuentra bajo el propietario de la cuenta &quot;wkndform&quot; y está utilizando la rama &quot;principal&quot;.
 
    | Formulario |
    |---|
-   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
 
    ![Añada un bloque denominado &quot;Form&quot; al archivo](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
@@ -85,25 +85,29 @@ Para añadir el formulario a la página web:
    >
    > Asegúrese de que la dirección URL tenga formato de hipervínculo en lugar de mostrarse como texto sin formato.
 
-   Utilice la URL de vista previa (URL .page) con fines de desarrollo o prueba o la URL de publicación (.live) para producción. Estos son ejemplos con URL de vista previa y publicación:
+   Utilice la URL de vista previa (URL .page) con fines de desarrollo o prueba, o la URL de publicación (.live) para producción.
+
+   Por ejemplo, si el repositorio de su proyecto se llama &quot;wefinance&quot;, se encuentra bajo el propietario de la cuenta &quot;wkndform&quot; y está utilizando la rama &quot;principal&quot;.
+
+   Estos son ejemplos con URL de vista previa y publicación:
 
    **URL de vista previa**
 
    | Formulario |
    |---|
-   | [https://main--wefinance--wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json) |
+   | [https://main--wefinance--wkndform.aem.page/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
 
 
    **URL de publicación**
 
    | Formulario |
    |---|
-   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
 
-1. Utilice [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para obtener una vista previa de la página web. La página ahora muestra el formulario. Por ejemplo, este es el formulario basado en [hoja de cálculo de consulta](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0):
+1. Utilice [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para obtener una vista previa de la página web. La página ahora muestra el formulario. Por ejemplo, este es el formulario basado en [hoja de cálculo de consulta](/help/edge/assets/enquiry.xlsx):
 
 
-   ![Un formulario EDS de ejemplo](/help/edge/assets/eds-form.png)
+   ![Un formulario EDS de ejemplo](/help/edge/assets/updated-form.png)
 
 1. Utilice el AEM Sidekick para publicar el formulario. Ahora, sus clientes pueden rellenar el formulario y enviarlo.
 
