@@ -4,7 +4,7 @@ description: Conozca las directrices para el desarrollo en AEM as a Cloud Servic
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 16379d9cb7cdf876502205c12a233a95b410a67a
+source-git-commit: 9c684e3a82353c9e241efc9ee1f3bed694d8635a
 workflow-type: tm+mt
 source-wordcount: '2770'
 ht-degree: 4%
@@ -174,7 +174,7 @@ Los volcados de hilos en entornos de Cloud se recopilan de forma continua, pero 
 
 Para el desarrollo local, los desarrolladores tienen acceso completo al CRXDE Lite AEM (`/crx/de`) y a la consola web de la (`/system/console`).
 
-En el desarrollo local (mediante el SDK), `/apps` y `/libs` se pueden escribir directamente en, lo que es diferente de los entornos de la nube, donde esas carpetas de nivel superior son inmutables.
+En el desarrollo local (mediante SDK), `/apps` y `/libs` se pueden escribir directamente en, lo que es diferente de los entornos de la nube, donde esas carpetas de nivel superior son inmutables.
 
 ### Herramientas de desarrollo de AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
@@ -191,7 +191,7 @@ En su lugar, el Explorador de repositorios se puede iniciar desde AEM as a Cloud
 
 Un conjunto de herramientas para depurar entornos de desarrollador de AEM as a Cloud Service está disponible en AEM as a Cloud Service Developer Console para entornos de RDE, desarrollo, fase y producción. La dirección URL se puede determinar ajustando las direcciones URL del autor o del servicio Publish de la siguiente manera:
 
-`https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
+`https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
 Como método abreviado, se puede utilizar el siguiente comando CLI de Cloud Manager para iniciar AEM as a Cloud Service Developer Console en función de un parámetro de entorno que se describe a continuación:
 
