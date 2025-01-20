@@ -4,7 +4,7 @@ description: Este tutorial le ayudará a ponerse en marcha con un nuevo proyecto
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 8cf72ab1958b313196341bef4f3ece121721ac14
+source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
 source-wordcount: '1806'
 ht-degree: 92%
@@ -67,7 +67,7 @@ La plantilla repetitiva de AEM Forms le permite empezar rápidamente con un proy
    * `<repository>` indica su repositorio de GitHub.
    * `<owner>` hace referencia al nombre de usuario de la cuenta de GitHub que aloja el repositorio de GitHub.
 
-   Por ejemplo, si el nombre de la rama es `main`, el repositorio es `wefinance` y el propietario es `wkndform`, el sitio web estaría funcionando en [https://main--wefinance--wkndforms.aem.page/](https://main--wefinance--wkndform.aem.page/)
+   Por ejemplo, si el nombre de la rama es `main`, el repositorio es `wefinance` y el propietario es `wkndform`, el sitio web estaría funcionando en [https://main--wefinance--wkndform.aem.page](https://main--wefinance--wkndform.aem.page)
 
 
 
