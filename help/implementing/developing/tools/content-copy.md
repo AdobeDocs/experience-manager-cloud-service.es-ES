@@ -4,10 +4,10 @@ description: La herramienta de copia de contenido permite a los usuarios copiar 
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: dfd44fc637e60f48c3d13430f1f4b9b7b9427d3d
+source-git-commit: fef97af53726d45cae36e2c9c6a5d82aa2f872c2
 workflow-type: tm+mt
-source-wordcount: '1347'
-ht-degree: 34%
+source-wordcount: '1286'
+ht-degree: 36%
 
 ---
 
@@ -200,10 +200,3 @@ La herramienta de copia de contenido tiene las siguientes limitaciones.
 * La herramienta de copia de contenido no tiene capacidad de control de versiones y no puede detectar automáticamente el contenido modificado o creado en el entorno de origen en un conjunto de contenido desde la última operación de copia de contenido.
    * Si desea actualizar el entorno de destino solo con cambios de contenido, desde la última operación de copia de contenido, debe crear un conjunto de contenido. A continuación, especifique las rutas en la instancia de origen en las que se han realizado cambios desde la última operación de copia de contenido.
 * La información de la versión no se incluye en una copia de contenido.
-
-## Problemas conocidos {#known-issues}
-
-Tenga en cuenta el siguiente problema conocido al usar la funcionalidad [copia de contenido.](/help/implementing/developing/tools/content-copy.md)
-
-* Si se cambia el nombre de un recurso en el entorno de origen, puede provocar que la operación de copia de contenido falle debido a UUID en conflicto en el entorno de destino.
-   * Para evitar este error, en lugar de cambiar el nombre de los recursos, primero elimínelos y vuelva a crearlos con el nuevo nombre de recurso que desee.
