@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: c374d95e6b64b8f35f89d469d698add8b95e01eb
+source-git-commit: 92a5599ac94d5bf09311d34dd0287def46b14353
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 8%
@@ -31,7 +31,7 @@ AEM ![Herramientas de modernización de](/help/forms/assets/aem-modernize-tools.
 
 >[!NOTE]
 > 
-> AEM AEM Se recomienda instalar las herramientas de modernización de la local. Migre el Forms adaptable basado en componentes de base a formularios basados en componentes principales. Descargue el formulario junto con sus recursos. A continuación, cargue el formulario y sus recursos en el entorno requerido.
+>AEM AEM Se recomienda instalar las herramientas de modernización de la local. Migre el Forms adaptable basado en componentes de base a formularios basados en componentes principales. Descargue el formulario junto con sus recursos. A continuación, cargue el formulario y sus recursos en el entorno requerido.
 
 ## AEM Consideraciones al utilizar las herramientas de modernización de la {#considerations}
 
@@ -39,6 +39,7 @@ AEM ![Herramientas de modernización de](/help/forms/assets/aem-modernize-tools.
 * La configuración de traducción utilizada en el formulario original no se transfiere. Vuelva a configurar la traducción del formulario convertido.
 * Si el formulario creado en Foundation Components contiene scripts o reglas de función personalizadas, debe volver a escribirlos para el formulario convertido basado en Core Components.
 * Los siguientes componentes de base OOTB aún no son compatibles con los componentes principales y, por lo tanto, se eliminan en el formulario convertido:
+
    * Bloque de Adobe Sign
    * Gráfico
    * Lista de archivos adjuntos
@@ -54,10 +55,9 @@ AEM ![Herramientas de modernización de](/help/forms/assets/aem-modernize-tools.
 
 * [Configurar un entorno de desarrollo local para AEM Forms](/help/forms/setup-local-development-environment.md)
 * [Habilite los componentes principales de Forms adaptables para su entorno.](/help/forms/enable-adaptive-forms-core-components.md)
-
 * Agregue los usuarios al grupo [!DNL forms-users]. Los miembros del grupo [!DNL forms-users] tienen permisos para crear un formulario adaptable.
-
 * AEM AEM Los usuarios con las siguientes funciones tienen los permisos para instalar las herramientas de modernización de dentro de un entorno de trabajo:
+
    * Función Desarrollador
    * Función de administrador
 
@@ -68,7 +68,7 @@ Para obtener una lista detallada de los grupos de usuarios específicos de formu
 AEM Para instalar y configurar las herramientas de modernización de la:
 
 1. [AEM Instalación de herramientas de modernización de la en el entorno local de AEM Forms](#install-aem-modernize-Tools)
-2. [AEM Habilite las herramientas de modernización de recursos para su entorno local de AEM Forms](#enable-aem-modernize-Tools)
+1. [AEM Habilite las herramientas de modernización de recursos para su entorno local de AEM Forms](#enable-aem-modernize-Tools)
 
 ### AEM Instalación de herramientas de modernización de la en el entorno local de AEM Forms {#install-aem-modernize-Tools}
 
@@ -93,6 +93,7 @@ AEM Siga estos pasos para instalar las herramientas de modernización de la en e
    ```Shell
        mvn clean install 
    ```
+
 ![Imagen de instalación correcta](/help/forms/assets/aem-modernize-install-steps.png)
 
 AEM Después de la instalación correcta, las herramientas de modernización de la estarán disponibles para su entorno.
@@ -128,10 +129,12 @@ AEM ![Actualizar Regla De Componente](/help/forms/assets/aem-modernize-tools-com
 
 1. Especifique **[!UICONTROL Nombre de trabajo]**.
 1. En la ficha **[!UICONTROL Formulario]**, puede seleccionar una de las siguientes opciones:
+
    * **Ninguno**: seleccione la opción si no desea crear una copia de los formularios basados en el componente Foundation antes de iniciar la conversión del formulario.
    * **Restaurar**: seleccione la opción para restaurar el formulario al estado en el que se encontraba antes de iniciar la conversión del formulario.
    * **Copiar en Target**: seleccione la opción para crear una copia de los formularios basados en el componente Foundation antes de iniciar la conversión del formulario.
-En nuestro caso, la opción **Copiar a destino** está seleccionada. Si se selecciona la opción **Copiar a destino**, las opciones **[!UICONTROL Ruta de Source]** y **[!UICONTROL Ruta de destino]** se volverán visibles.
+
+   En nuestro caso, la opción **Copiar a destino** está seleccionada. Si se selecciona la opción **Copiar a destino**, las opciones **[!UICONTROL Ruta de Source]** y **[!UICONTROL Ruta de destino]** se volverán visibles.
 
 1. Especifique el nombre de `source folder` en la **[!UICONTROL ruta de acceso de Source]**.
 1. Especifique el nombre de `target folder` en la **[!UICONTROL ruta de destino]**.
@@ -152,6 +155,7 @@ En nuestro caso, la opción **Copiar a destino** está seleccionada. Si se selec
    AEM ![Éxito en la modernización de herramientas de](/help/forms/assets/aem-modernize-tools-success.png)
 
 1. Seleccione el formulario adaptable y seleccione > **[!UICONTROL Propiedades]**. Se abre la página Propiedades del formulario.
+
    AEM ![Carpeta De Destino De Herramientas De Modernización De](/help/forms/assets/aem-modernize-tools-destination-folder.png)
 
 1. Seleccione **[!UICONTROL Guardar y cerrar]** para volver a guardar las propiedades del formulario convertido.
