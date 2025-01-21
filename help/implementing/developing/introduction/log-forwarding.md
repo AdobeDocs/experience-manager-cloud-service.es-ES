@@ -4,10 +4,10 @@ description: Obtenga información acerca del reenvío de registros a proveedores
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: f6de6b6636d171b6ab08fdf432249b52c2318c45
+source-git-commit: 6e91ad839de6094d7f6abd47881dabc6357a80ff
 workflow-type: tm+mt
-source-wordcount: '1781'
-ht-degree: 0%
+source-wordcount: '1975'
+ht-degree: 1%
 
 ---
 
@@ -31,23 +31,21 @@ AEM Hay una opción para que los registros de la y de Apache/Dispatcher AEM se e
 
 Tenga en cuenta que el ancho de banda de red asociado con los registros enviados al destino de registro se consideran parte del uso de E/S de red de su organización.
 
-
 ## Organización de este artículo {#how-organized}
 
 Este artículo está organizado de la siguiente manera:
 
 * Configuración: común para todos los destinos de registro
+* Transporte y redes avanzadas: se debe considerar la configuración de la red antes de crear la configuración de registro
 * Registro de configuraciones de destino: cada destino tiene un formato ligeramente diferente
 * Formatos de entrada de registro: información sobre los formatos de entrada de registro
-* AEM Redes avanzadas: envío de registros de Apache/Dispatcher y de los recursos de red a través de una salida dedicada o a través de una VPN
 * Migración desde el reenvío de registros heredado: cómo pasar del reenvío de registros configurado anteriormente por Adobe al enfoque de autoservicio
-
 
 ## Configuración {#setup}
 
 1. Cree un archivo con el nombre `logForwarding.yaml`. Debe contener metadatos, tal como se describe en el [artículo de la canalización de configuración](/help/operations/config-pipeline.md#common-syntax) (**kind** debe establecerse en `LogForwarding` y la versión debe establecerse en &quot;1&quot;), con una configuración similar a la siguiente (usamos Splunk como ejemplo).
 
-   ```
+   ```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -71,7 +69,7 @@ Los tokens de la configuración (como `${{SPLUNK_TOKEN}}`) representan secretos 
 
 AEM Es posible establecer diferentes valores entre los registros de CDN y los registros de (incluido Apache/Dispatcher), incluyendo un bloque **cdn** o **aem** adicional después del bloque **default**, donde las propiedades pueden anular las definidas en el bloque **default**; solo se requiere la propiedad enabled. Un posible caso de uso podría ser utilizar un índice de Splunk diferente para los registros de CDN, como se ilustra en el ejemplo siguiente.
 
-```
+```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -91,7 +89,7 @@ AEM Es posible establecer diferentes valores entre los registros de CDN y los re
 
 AEM Otro escenario es deshabilitar el reenvío de los registros de CDN o los registros de (incluido Apache/Dispatcher). Por ejemplo, para reenviar solo los registros de CDN, se puede configurar lo siguiente:
 
-```
+```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -107,13 +105,90 @@ AEM Otro escenario es deshabilitar el reenvío de los registros de CDN o los reg
          enabled: false
 ```
 
+## Transporte y redes avanzadas {#transport-advancednetworking}
+
+Algunas organizaciones eligen restringir qué tráfico pueden recibir los destinos de registro, otras pueden requerir el uso de puertos que no sean HTTPS (443).  Si es así, será necesario configurar [Redes avanzadas](/help/security/configuring-advanced-networking.md) antes de implementar la configuración del reenvío de registros.
+
+Utilice la tabla siguiente para ver cuáles son los requisitos para la configuración de Red avanzada y Registro en función de si está utilizando el puerto 443 o no, y de si necesita que los registros aparezcan o no desde una dirección IP fija.
+<html>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+</style>
+<table>
+  <tbody>
+    <tr>
+      <th>Puerto de destino</th>
+      <th>¿Requisito para que los registros aparezcan desde una IP fija?</th>
+      <th>Redes avanzadas necesarias</th>
+      <th>Se necesita definición de puerto LogForwarding.yaml</th>
+    </tr>
+    <tr>
+      <td rowspan="2">HTTPS (443)</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Sí</td>
+      <td>Sí, <a href="/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address">salida dedicada</a></td>
+      <td>No</td>
+    <tr>
+    <tr>
+      <td rowspan="2">Puerto no estándar (por ejemplo, 8088)</td>
+      <td>No</td>
+      <td>Sí, <a href="/help/security/configuring-advanced-networking.md#flexible-port-egress-flexible-port-egress">salida flexible</a></td>
+      <td>Sí</td>
+    </tr>
+    <tr>
+      <td>Sí</td>
+      <td>Sí, <a href="/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address">salida dedicada</a></td>
+      <td>Sí</td>
+  </tbody>
+</table>
+</html>
+
+>[!NOTE]
+>El que los registros aparezcan desde una sola dirección IP viene determinado por la configuración de red avanzada que haya elegido.  Debe utilizarse una salida dedicada para facilitar esto.
+>
+> La configuración avanzada de redes es un [proceso de dos pasos](/help/security/configuring-advanced-networking.md#configuring-and-enabling-advanced-networking-configuring-enabling) que requiere habilitación a nivel de programa y entorno.
+
+AEM Para los registros de datos (incluido Apache/Dispatcher), si ha configurado [Redes avanzadas](/help/security/configuring-advanced-networking.md), puede usar la propiedad `aem.advancedNetworking` para reenviarlos desde una dirección IP de salida dedicada o a través de una VPN.
+
+El ejemplo siguiente muestra cómo configurar el registro en un puerto HTTPS estándar con funciones de red avanzadas.
+
+```yaml
+kind: "LogForwarding"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  splunk:
+    default:
+      enabled: true
+      host: "splunk-host.example.com"
+      port: 443
+      token: "${{SPLUNK_TOKEN}}"
+      index: "aemaacs"
+    aem:
+      advancedNetworking: true
+```
+
+Para los registros de CDN, puede incluir en la lista de permitidos las direcciones IP, tal como se describe en [Documentación de Fastly: Lista de IP públicas](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Si esa lista de direcciones IP compartidas es demasiado grande, considere la posibilidad de enviar tráfico a un servidor https o a un almacén de blobs de Azure (que no sea de Adobe) donde se pueda escribir lógica para enviar los registros de una IP conocida a su destino final.
+
+>[!NOTE]
+>AEM No es posible que los registros de CDN aparezcan desde la misma dirección IP desde la que aparecen los registros de, ya que los registros se envían directamente desde Fastly y no desde AEM Cloud Service.
+
 ## Configuración de destino de registro {#logging-destinations}
 
 A continuación se enumeran las configuraciones para los destinos de registro admitidos, junto con cualquier consideración específica.
 
 ### Almacenamiento de Azure Blob {#azureblob}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -147,7 +222,7 @@ Cada uno de los servidores de registro distribuidos globalmente producirá un nu
 
 Por ejemplo, en algún momento:
 
-```
+```text
 aemcdn/
    2024-03-04T10:00:00.000-abc.log
    2024-03-04T10:00:00.000-def.log
@@ -155,7 +230,7 @@ aemcdn/
 
 Y luego 30 segundos después:
 
-```
+```text
 aemcdn/
    2024-03-04T10:00:00.000-abc.log
    2024-03-04T10:00:00.000-def.log
@@ -164,7 +239,7 @@ aemcdn/
    2024-03-04T10:00:30.000-mno.log
 ```
 
-Cada archivo contiene varias entradas de registro json, cada una en una línea independiente. Los formatos de entrada de registro se describen en [Registro para AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md), y cada entrada de registro también incluye las propiedades adicionales que se mencionan en la sección [Formatos de entrada de registro](#log-format) a continuación.
+Cada archivo contiene varias entradas de registro json, cada una en una línea independiente. Los formatos de entrada de registro se describen en [Registro para AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md), y cada entrada de registro también incluye las propiedades adicionales que se mencionan en la sección [Formatos de entrada de registro](#log-formats) a continuación.
 
 #### AEM Registros de Azure Blob Storage {#azureblob-aem}
 
@@ -181,10 +256,9 @@ En cada carpeta, se crea un solo archivo y se anexa a. Los clientes son responsa
 
 Consulte los formatos de entrada de registro en [Registro para AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md). Las entradas de registro también incluirán las propiedades adicionales mencionadas en la sección [Formatos de entrada de registro](#log-formats) a continuación.
 
-
 ### Datadog {#datadog}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -210,11 +284,9 @@ Consideraciones:
 * La etiqueta de servicio Datadog está establecida en `adobeaemcloud`, pero puede sobrescribirla en la sección de etiquetas
 * Si la canalización de ingesta utiliza etiquetas Datadog para determinar el índice adecuado para los registros de reenvío, compruebe que estas etiquetas estén correctamente configuradas en el archivo YAML de reenvío de registros. Las etiquetas que faltan pueden impedir la ingesta correcta del registro si la canalización depende de ellas.
 
-
-
 ### Elasticsearch y OpenSearch {#elastic}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -239,7 +311,7 @@ Consideraciones:
 * AEM Para los registros de datos, `index` se ha establecido en `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess` o `aemhttpderror`
 * La propiedad de canalización opcional debe establecerse en el nombre de la canalización de ingesta de Elasticsearch o OpenSearch, que puede configurarse para enrutar la entrada de registro al índice adecuado. El tipo de procesador de la canalización debe establecerse en *script* y el idioma del script debe establecerse en *sin dolor*. Este es un ejemplo de fragmento de script para enrutar las entradas de registro a un índice como aemaccess_dev_26_06_2024:
 
-```
+```text
 def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
 def sourceType = ctx._index;
 def date = new SimpleDateFormat('dd_MM_yyyy').format(new Date());
@@ -248,7 +320,7 @@ ctx._index = sourceType + "_" + envType + "_" + date;
 
 ### HTTPS {#https}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -279,7 +351,7 @@ También debe haber una propiedad denominada `sourcetype`, que se ha establecido
 
 #### AEM Registros de HTTPS {#https-aem}
 
-AEM Para los registros de datos (incluido apache/dispatcher), las solicitudes web (POST) se enviarán continuamente, con una carga útil json que es una matriz de entradas de registro, con los distintos formatos de entrada de registro como se describe en [Registro para AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md). A continuación se mencionan propiedades adicionales en la sección [Formatos de entrada de registro](#log-format).
+AEM Para los registros de datos (incluido apache/dispatcher), las solicitudes web (POST) se enviarán continuamente, con una carga útil json que es una matriz de entradas de registro, con los distintos formatos de entrada de registro como se describe en [Registro para AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md). A continuación se mencionan propiedades adicionales en la sección [Formatos de entrada de registro](#log-formats).
 
 También debe existir una propiedad denominada `Source-Type`, que se establezca en uno de estos valores:
 
@@ -292,7 +364,7 @@ También debe existir una propiedad denominada `Source-Type`, que se establezca 
 
 ### Splunk {#splunk}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -313,16 +385,14 @@ Consideraciones:
   *aemrequest*, *aemdispatcher*, *aemhttpdaccess*, *aemhttpderror*, *aemcdn*
 * Si las IP requeridas se han incluido en la lista de permitidos y los registros siguen sin entregarse, compruebe que no haya reglas de firewall que apliquen la validación de tokens de Splunk. Realiza rápidamente un paso de validación inicial al enviar intencionadamente un token de Splunk no válido. Si el cortafuegos está configurado para finalizar conexiones con tokens de Splunk no válidos, el proceso de validación fallará, lo que impide que Fastly envíe registros a la instancia de Splunk.
 
-
 >[!NOTE]
 >
 > [Si se migra](#legacy-migration) del reenvío de registro heredado a este modelo de autoservicio, es posible que los valores del campo `sourcetype` enviados a su índice de Splunk hayan cambiado, por lo que debe ajustarlos en consecuencia.
 
-
 <!--
 ### Sumo Logic {#sumologic}
 
-   ```
+   ```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -351,36 +421,11 @@ Dado que los registros de varios programas y entornos se pueden reenviar al mism
 
 Por ejemplo, las propiedades podrían tener los siguientes valores:
 
-```
+```text
 aem_env_id: 1242
 aem_env_type: dev
 aem_program_id: 12314
 aem_tier: author
-```
-
-## Redes avanzadas {#advanced-networking}
-
-Algunas organizaciones eligen restringir qué tráfico pueden recibir los destinos de registro.
-
-Para el registro de CDN, puede incluir en la lista de permitidos las direcciones IP, tal como se describe en [documentación de Fastly: Lista de IP públicas](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Si esa lista de direcciones IP compartidas es demasiado grande, considere la posibilidad de enviar tráfico a un servidor https o a un almacén de blobs de Azure (que no sea de Adobe) donde se pueda escribir lógica para enviar los registros de una IP conocida a su destino final.
-
-AEM Para los registros de datos (incluido Apache/Dispatcher), si ha configurado [red avanzada](/help/security/configuring-advanced-networking.md), puede usar la propiedad advancedNetworking para reenviarlos desde una dirección IP de salida dedicada o a través de una VPN.
-
-```
-kind: "LogForwarding"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  splunk:
-    default:
-      enabled: true
-      host: "splunk-host.example.com"
-      port: 443
-      token: "${{SPLUNK_TOKEN}}"
-      index: "aemaacs"
-    aem:
-      advancedNetworking: true
 ```
 
 ## Migración desde el reenvío de registros heredado {#legacy-migration}
@@ -399,10 +444,6 @@ Cuando esté listo para migrar, simplemente configure el archivo YAML como se de
 Se recomienda, pero no es obligatorio, que se implemente una configuración en todos los entornos para que todos estén bajo control de autoservicio. Si no es así, es posible que olvide qué entornos se han configurado mediante Adobe en comparación con los configurados de forma automática.
 
 >[!NOTE]
->
 >Los valores del campo `sourcetype` enviados a su índice de Splunk pueden haber cambiado, así que ajústelos en consecuencia.
-
->[!NOTE]
 >
 >Cuando se implementa el reenvío de registros en un entorno previamente configurado por la compatibilidad con el Adobe, es posible que reciba registros duplicados durante un máximo de unas horas. Esto finalmente se resolverá automáticamente.
-
