@@ -4,9 +4,9 @@ description: Aprenda a utilizar entornos de desarrollo rápido para iteraciones 
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 33a30ea29023f90cc6ce1c8b64ed4f9cfdd4f4a7
+source-git-commit: 24c34daebf7d45d9262181890310eb196c58a7db
 workflow-type: tm+mt
-source-wordcount: '4863'
+source-wordcount: '4990'
 ht-degree: 3%
 
 ---
@@ -204,7 +204,7 @@ Para obtener más información y demostración, vea el tutorial en vídeo [cómo
 
 Adobe recomienda el siguiente flujo de trabajo para desarrollar una nueva función:
 
-* Cuando se alcance un hito intermedio y se valide correctamente localmente con el SDK de AEM as a Cloud Service, confirme el código a una rama de características de Git. La rama aún no debe formar parte de la línea principal, aunque comprometerse con Git es opcional. Lo que constituye un &quot;hito intermedio&quot; varía en función de los hábitos del equipo. Algunos ejemplos son unas pocas líneas de código nuevas, medio día de trabajo o completar una subfunción.
+* Cuando se alcance un hito intermedio y se valide correctamente localmente con AEM as a Cloud Service SDK, confirme el código a una rama de características de Git. La rama aún no debe formar parte de la línea principal, aunque comprometerse con Git es opcional. Lo que constituye un &quot;hito intermedio&quot; varía en función de los hábitos del equipo. Algunos ejemplos son unas pocas líneas de código nuevas, medio día de trabajo o completar una subfunción.
 
 * Restablezca el RDE si lo ha utilizado otra característica y desea [restablecerlo a un estado predeterminado](#reset-rde). <!-- Alexandru: hiding for now, do not delete This can be done by way of [Cloud Manager](#reset-the-rde-cloud-manager) or by way of the [command line](#reset-the-rde-command-line). -->El restablecimiento tarda unos minutos y se elimina todo el contenido y código existentes. Puede utilizar el comando Estado de RDE para confirmar que el RDE está listo. AEM El RDE vuelve con la versión de lanzamiento más reciente de la versión de la.
 
@@ -548,23 +548,23 @@ Al restablecer el editor de texto enriquecido, se eliminan todos los códigos pe
 
 AEM Un restablecimiento establece el RDE a la última versión disponible de la.
 
-<!-- Alexandru: hiding for now, do not delete
+El restablecimiento se puede realizar mediante [Cloud Manager](#reset-the-rde-cloud-manager) o a través de la [línea de comandos](#reset-the-rde-command-line). El restablecimiento tarda unos minutos y todo el contenido y el código existentes se eliminan del editor de código.
 
-Resetting can be done by way of [Cloud Manager](#reset-the-rde-cloud-manager) or by way of the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code is deleted from the RDE.
-
->[NOTE!]
+>[NOTA!]
 >
->You must be assigned the Cloud Manager Developer role to use the reset feature. If not, a reset action results in an error.
+>Se le debe asignar la función de desarrollador de Cloud Manager para utilizar la función de restablecimiento. Si no es así, una acción de restablecimiento producirá un error.
 
-### Reset the RDE by way of Command Line {#reset-the-rde-command-line}
+### Restablecer el RDE a través de la línea de comandos {#reset-the-rde-command-line}
 
-You can reset the RDE and return it to a default state by running:
+Puede restablecer el RDE y devolverlo a un estado predeterminado ejecutando:
 
 `aio aem:rde:reset`
 
-This usually takes a few minutes. Use the [status command](#checking-rde-status) to check when the environment is ready again.
+Esto generalmente toma unos minutos y reportará ```Environment reset.``` cuando se realice correctamente o ```Failed to reset the environment.``` si hay errores. Para obtener un resultado estructurado, consulte el capítulo sobre el resultado ```--json``` que aparece a continuación.
 
-### Reset the RDE in Cloud Manager {#reset-the-rde-cloud-manager} -->
+Utilice el [comando status](#checking-rde-status) para comprobar si el entorno está listo de nuevo.
+
+### Restablecer el RDE en Cloud Manager {#reset-the-rde-cloud-manager}
 
 Puede utilizar Cloud Manager para restablecer su RDE siguiendo los pasos siguientes:
 
@@ -942,7 +942,7 @@ La mayoría de los comandos admiten el indicador global ```--json```, que suprim
 }
 ```
 
-#### Esperar a la finalización {#wait}
+#### Esperar a la finalización, restablecido correctamente {#wait-success}
 
 ```$ aio aem rde reset --json```
 
@@ -951,6 +951,18 @@ La mayoría de los comandos admiten el indicador global ```--json```, que suprim
   "programId": "myProgram",
   "environmentId": "myEnv",
   "status": "reset"
+}
+```
+
+#### Esperar a la finalización, error al restablecer {#wait-failed}
+
+```$ aio aem rde reset --json```
+
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "reset_failed"
 }
 ```
 
