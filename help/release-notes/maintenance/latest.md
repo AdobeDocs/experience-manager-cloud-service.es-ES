@@ -4,10 +4,10 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c8a798e1f1b7234f91682b6e5ef7072e024df022
-workflow-type: ht
-source-wordcount: '693'
-ht-degree: 100%
+source-git-commit: a091dd6b1b69d77f9eeb50065e8946af0133f4f9
+workflow-type: tm+mt
+source-wordcount: '476'
+ht-degree: 42%
 
 ---
 
@@ -16,72 +16,59 @@ ht-degree: 100%
 
 En la siguiente sección se describen las notas de la versión técnicas actuales sobre el mantenimiento de Experience Manager as a Cloud Service.
 
-## Versión 18751 {#18751}
+## Versión 19149 {#19149}
 
-A continuación se resumen las mejoras continuas de la versión de mantenimiento 18751, que se publicó el jueves, 11 de diciembre de 2024. La versión de mantenimiento anterior fue la 18598.
+A continuación se resumen las mejoras continuas de la versión de mantenimiento 19149, que se publicó el miércoles, 21 de enero de 2025. La versión de mantenimiento anterior fue la 18751.
 
 La activación de funcionalidades 2025.1.0 proporcionará el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
-### Mejoras {#enhancements-18751}
+### Mejoras {#enhancements-19149}
 
-* SKYOPS-88509: compatibilidad con Java 21 para el SDK de AEM.
+* ASSETS-45286: mostrar el progreso granular del trabajo asincrónico de archivado de descarga.
+* ASSETS-46296: Compatibilidad con plantillas de Dynamic Media en el Selector de recursos.
+* ASSETS-44796: Activar eventos de Assets para trabajos de recursos asincrónicos de DAM.
 
-### Problemas solucionados {#fixed-issues-18751}
+### Problemas solucionados {#fixed-issues-19149}
 
-* ASSETS-42802: el botón Atrás de MFE no siempre funciona y muestra cuadros de diálogo adicionales.
-* ASSETS-44148: el evento NODE_MOVED corregido en AEM puede provocar NPE.
-* ASSETS-44418: el entorno Correct corregido no está configurado en skyline.
-* ASSETS-44821: se ha corregido el filtro de evento de actualización para incluir datos codificados con URL para los eventos de carga.
-* CNTBF-298: la copia de contenido corregido falla con conflictos de UUID.
-* CNTBF-331: [content-copy-bundle] versión 2.0.14.
-* FORMS-16572: eliminar errores de prueba del flujo de trabajo para la compilación de SDK de java 21.
-* GRANITE-36205: actualización automatizada para la versión interna de Oak en QS.
-* GRANITE-53704: volver a evaluar Sling Discovery en el servicio de repositorio.
-* GRANITE-54300: actualización Oak a la última versión pública (1.70.0).
-* GRANITE-54416: actualizar Filevault a la versión 3.8.2.
-* GRANITE-54462: configurar SubscriberAgents para que utilice hc.tags de &quot;systemready&quot;.
-* GRANITE-54542: actualizar la dependencia de commons-io a 2.17.0.
-* GRANITE-54658: añadir delayFactor y configuraciones OSGi de tamaño por lotes para fullGC en QS.
-* GRANITE-54696: amplia gama de importaciones para la API de Jackrabbit.
-* AEM GRANITE-54803: deshabilitar ClusterAtExchange en AEM cuando imsauth esté activo.
-* GRANITE-55095: actualización Oak a la última versión pública (1.72.0).
-* GUIDES-20006: el estado del documento marcado como Listo vuelve al Borrador antes de guardar una nueva versión, lo que provoca que el estado Listo no persista en ninguna versión del documento.
-* GUIDES-21840: en la salida del PDF nativo, faltan títulos de capítulo en la TDC, lo que conduce a una jerarquía incorrecta.
-* GUIDES-19558: editar y luego guardar una línea de base en una configuración en la nube agota el tiempo de espera después de 1 minuto si la línea de base tiene un gran número de temas o mapas.
-* GUIDES-19733: la traducción de mapas mediante la línea de base se vuelve lenta y, finalmente, no puede cargar la lista de todos los temas asociados y los archivos de mapas.
-* SITES-26798: la promoción automática de lanzamiento no actualiza el estado de la promoción (fecha de promoción).
-* SITES-27137: eliminar la dependencia de métricas de Sling Commons del núcleo de MSM.
-* SKYOPS-75446: el AEM corregido a veces devuelve un valor 404 o páginas a las que les falta contenido.
-* SKYOPS-76366: no hay métricas de Jetty Threadpool en el lanzamiento de la versión 15977 y posteriores.
-* SKYOPS-82371: java.io.IOException: classFile.delete() ha dado error.
-* SKYOPS-83369: las implementaciones de AEM no se inician si la ejecución del trabajo de transformación no genera paquetes.
-* SKYOPS-83910: se han encontrado problemas de accesos simultáneos en SKYOPS-82371.
-* SKYOPS-84821: establecer la configuración sling.includes.checkcontenttype del servlet principal de Sling en true.
-* SKYOPS-85798: el trabajo de transformación corregido genera definiciones de índice vacías.
-* SKYOPS-86251: actualizar al núcleo de AEM Analyser 1.5.6 y habilitar el analizador de importación de paquetes de productos en el trabajo de transformación.
-* SKYOPS-86710: eliminar los errores de prueba de Minify para la compilación del SDK de java 21.
-* SKYOPS-86745: actualizar a Sling ResourceResolver 1.122.
-* SKYOPS-89616: se ha corregido No se puede crear una cuenta técnica en Adobe Developer Console.
-* SKYOPS-89691: se ha corregido un ID de artefacto incorrecto utilizado para las advertencias de ASM.
-* SKYOPS-89699: faltan advertencias para las versiones antiguas de Groovy incrustadas en el sabor &quot;orbinson&quot; de Groovy Console.
-* SKYOPS-88664: registrar y proteger contra un caso cuando el archivo de mapa descargado tiene una línea que supera el límite de 1024.
-* SKYOPS-89734: lanzamiento de la imagen de Dispatcher 2.0.235.
+* GRANITE-55074: Asegúrese de que los encabezados de respuesta CORS estén configurados en respuestas de error.
+* ASSETS-43755: Mejoras de escalabilidad relacionadas con recursos en lote.
+* ASSETS-45399: redirija a la consola de Assets después de crear una Live Copy de recursos.
+* ASSETS-45462: Problemas de almacenamiento en caché del explorador con miniaturas de carpetas personalizadas.
+* ASSETS-46398: Ocultar las acciones de descarga y reprocesamiento de plantillas DM.
+* ASSETS-44484: Problemas al volver a guardar la configuración de Assets conectado.
+* ASSETS-44122: El trabajo de copiar recursos asincrónicos no cambia el nombre de la carpeta de destino al copiar a la carpeta actual.
+* ASSETS-44463: el botón Descargar CSV no está visible durante la exportación de metadatos correcta.
+* ASSETS-45134: Mover el trabajo con el título de destino anula todos los títulos de carpeta.
+* ASSETS-45137: entra en conflicto con las cargas masivas a través de la vista de Assets.
+* ASSETS-45758: las relaciones de recursos obtienen una animación infinita de ocupado/carga después de agregar una relación.
+* ASSETS AEM-44148: el evento NODE_MOVED en el caso de los archivos de registro puede causar un NPE espurio en los registros.
+* ASSETS-28607: Error de JS al configurar la miniatura de vídeo personalizada.
+* GRANITE-55781: Mejore la sincronización de grupos entre Adobe Developer Console AEM y los grupos de trabajo de los grupos de trabajo de los. Más detalles en [Cambios en la sincronización de grupos de usuarios y perfiles de productos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization).
+* GRANITE-55754: Asegúrese de que los scripts de inicio de SDK admitan Java 21.
+* GRANITE-54248: no se puede desplazar por todos los elementos de la carpeta de recursos grandes.
+* SCRNS-4597: Mejoras en la vista de listas de resultados de búsqueda.
 
-Para obtener más información sobre las funciones nuevas y mejoradas y los problemas corregidos en Experience Manager Guides, consulte la [hoja de ruta de la versión de Experience Manager Guides](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
-### Problemas conocidos {#known-issues-18751}
+### Problemas conocidos {#known-issues-19149}
 
 Ninguna.
 
-### Características y API obsoletas {#deprecated-18751}
+### Características y API obsoletas {#deprecated-19149}
+
+Cuando se utiliza Adobe Admin Console AEM para la administración de permisos, NO se DEBEN utilizar los siguientes grupos, ya que ya no se sincronizarán con los que se van a realizar las tareas de administración de permisos:
+* AEM Grupos que terminan con _GROUP_NAME_SUFFIX.
+* Perfiles de producto de otros entornos, programas o productos.
+
+Para obtener más información, compruebe [Cambios en la sincronización de grupos de usuarios y perfiles de productos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization).
+
 
 Las funciones y API obsoletas y eliminadas de AEM as a Cloud Service se detallan en el documento [Funciones y API obsoletas y eliminadas](/help/release-notes/deprecated-removed-features.md).
 
-### Correcciones de seguridad {#security-18751}
+### Correcciones de seguridad {#security-19149}
 
-AEM as a Cloud Service se dedica a optimizar la seguridad y el rendimiento de su plataforma. Esta versión de mantenimiento aborda 3 vulnerabilidades identificadas, reforzando nuestro compromiso con una sólida protección del sistema.
+AEM as a Cloud Service se dedica a optimizar la seguridad y el rendimiento de su plataforma. Esta versión de mantenimiento aborda 4 vulnerabilidades identificadas, reforzando nuestro compromiso con una sólida protección del sistema.
 
-### Tecnologías integradas {#embedded-tech-18751}
+### Tecnologías integradas {#embedded-tech-19149}
 
 | Tecnología | Versión | Vínculo |
 |---|---|---|
