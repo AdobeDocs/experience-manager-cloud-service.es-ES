@@ -3,10 +3,10 @@ title: Selector de recursos para  [!DNL Adobe Experience Manager]  as a  [!DNL C
 description: Utilice el Selector de recursos para buscar y recuperar metadatos y representaciones de recursos en la aplicación.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
-workflow-type: ht
+source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
+workflow-type: tm+mt
 source-wordcount: '1332'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -159,10 +159,10 @@ Puede ordenar los recursos en el Selector de recursos por nombre, dimensiones o 
 
 El Selector de recursos le permite ver el recurso en cuatro vistas diferentes:
 
-* **![vista de lista](assets/do-not-localize/list-view.png) [!UICONTROL Vista de lista]**: la vista de lista muestra los archivos y carpetas desplazables en una sola columna.
-* **![vista de cuadrícula](assets/do-not-localize/grid-view.png) [!UICONTROL Vista de cuadrícula]**: la vista de cuadrícula muestra archivos y carpetas desplazables en una cuadrícula de filas y columnas.
-* **![vista de galería](assets/do-not-localize/gallery-view.png) [!UICONTROL Vista de galería]**: la vista de galería muestra los archivos o carpetas en una lista horizontal bloqueada en el centro.
-* **![vista de cascada](assets/do-not-localize/waterfall-view.png) [!UICONTROL Vista de cascada]**: la vista de cascada muestra los archivos o carpetas en forma de puente.
+* ![vista de lista](assets/do-not-localize/list-view.png) [!UICONTROL **Vista de lista**]: la vista de lista muestra los archivos y carpetas desplazables en una sola columna.
+* ![vista de cuadrícula](assets/do-not-localize/grid-view.png) [!UICONTROL **Vista de cuadrícula**]: la vista de cuadrícula muestra archivos y carpetas desplazables en una cuadrícula de filas y columnas.
+* ![vista de galería](assets/do-not-localize/gallery-view.png) [!UICONTROL **Vista de galería**]: la vista de galería muestra los archivos o carpetas en una lista horizontal bloqueada en el centro.
+* ![Vista de cascada](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Vista de cascada**] La vista de cascada muestra archivos o carpetas en forma de Bridge.
 
 **Gráfico de información general**
 

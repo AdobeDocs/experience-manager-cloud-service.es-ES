@@ -4,32 +4,33 @@ description: Administrar documentos del PDF en [!DNL Adobe Experience Manager] a
 feature: Asset Management
 role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 5%
+source-wordcount: '853'
+ht-degree: 6%
 
 ---
 
 # Administrar documentos de PDF en Experience Manager Assets as a Cloud Service {#add-assets-to-experience-manager}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación de desarrollador de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 Experience Manager Assets se integra perfectamente con el Visor de PDF de Document Cloud, lo que permite previsualizar varias páginas de un documento de PDF. Además, también puede utilizar funciones avanzadas del visualizador de PDF de Document Cloud como anotaciones, buscar texto, navegar por el documento de PDF mediante marcadores y miniaturas, etc., en el mismo entorno. Experience Manager Assets también permite cargar documentos en otros formatos compatibles y previsualizarlos en formato de PDF.
 
-El visualizador de PDF de Document Cloud beneficia a AEM Assets de las siguientes maneras:
+El visualizador de PDF de Document Cloud beneficia a los AEM Assets de las siguientes maneras:
+
 * [Compatibilidad con los componentes del visor del Document Cloud PDF](#pdf-doc-cloud)
 * [Compatibilidad con la vista previa de varias páginas y anotaciones para el recurso de PDF](#multi-page)
 * [Compatibilidad con la vista previa de varias páginas para documentos en otros formatos](#multi-format)
 
-> Sugerencia
-> Si no puede obtener una vista previa de varias páginas de un documento de PDF previamente cargado, seleccione el PDF y haga clic en **![Volver a procesar](/help/assets/assets/Reprocess.svg) volver a procesar Assets**.
+>[!TIP]
 >
+> Si no puede obtener una vista previa de varias páginas de un documento de PDF previamente cargado, seleccione el PDF y haga clic en ![Volver a procesar](/help/assets/assets/Reprocess.svg) **Volver a procesar Assets**.
 
 ## Compatibilidad con los componentes del visor del Document Cloud PDF {#pdf-doc-cloud}
 
-El visualizador nativo de PDF de Doc Cloud tiene los siguientes componentes en AEM Assets:
+El visualizador nativo de PDF de Doc Cloud tiene los siguientes componentes en los AEM Assets:
 
 * **El visor de PDF que usa miniaturas de página** La vista de miniaturas es una pequeña previsualización de las páginas de un documento de PDF. Con las miniaturas, puede saltar directamente a la página deseada. Puede acceder a las miniaturas del documento de PDF seleccionado a través de ![thumbnail](/help/assets/assets/thumbnail.svg) en el panel izquierdo.
 
@@ -57,9 +58,9 @@ Adobe Experience Manager Assets permite obtener una vista previa del documento d
 
 También puede aplicar [anotaciones](#pdf-annotations) al documento de PDF en una vista previa de varias páginas.
 
-> NOTA
-> El tamaño máximo de un recurso que puede previsualizar es de hasta 100 MB.
+>[!NOTE]
 >
+> El tamaño máximo de un recurso que puede previsualizar es de hasta 100 MB.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409355)
 
@@ -72,6 +73,7 @@ También puede aplicar [anotaciones](#pdf-annotations) al documento de PDF en un
 Experience Manager Assets permite agregar comentarios a un documento de PDF. Un documento de PDF puede tener varias anotaciones.
 
 Para anotar un documento de PDF, realice los siguientes pasos:
+
 1. Vaya a la interfaz de Assets y desplácese hasta el documento de PDF que desee anotar. El visor de PDF nativo se abre a la derecha y muestra una vista previa del documento de PDF seleccionado.
 1. Haga clic en **Anotar** en el menú superior.
 A continuación, se muestran las anotaciones que se pueden aplicar en un documento de PDF:
@@ -126,15 +128,16 @@ Además de los documentos del PDF, también puede obtener una vista previa de va
 ![Vista previa de varias páginas de documentos en otros formatos](/help/assets/assets/multi-page-other-formats.png)
 
 Para la vista previa de varias páginas de otros formatos de documento admitidos, realice los siguientes pasos:
+
 1. AEM Siga los pasos para [cargar recursos en la carpeta de recursos de la carpeta de trabajo {10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en)
 1. Examine el documento que desea cargar y previsualizar.
 1. Abra el documento.
 1. Seleccione PDF en la sección estática del panel izquierdo. El panel derecho muestra la vista previa de varias páginas de un recurso. Seleccione la miniatura del panel izquierdo para elegir la página que desea previsualizar.
 
-> NOTA
+>[!NOTE]
+>
 > * El tamaño máximo de un recurso que puede previsualizar es de hasta 100 MB.
 > * El tamaño máximo de los archivos XLS o XLSX que se van a previsualizar es de 20 MB.
->
 
 **Consulte también**
 
