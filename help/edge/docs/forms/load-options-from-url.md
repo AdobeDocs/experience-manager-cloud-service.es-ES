@@ -4,10 +4,10 @@ description: Las opciones de la lista desplegable se incluyen en una hoja de cá
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 role: Admin, Architect, Developer
-source-git-commit: 35fe88437dd86d490feeafe5bfc25ffda23234fb
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 93%
+source-wordcount: '506'
+ht-degree: 87%
 
 ---
 
@@ -56,7 +56,8 @@ Introduzca las opciones de país en la columna &quot;Opción&quot; (y la columna
 1. Previsualice y publique la hoja `shared-country` usando [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
    Por ejemplo, si el repositorio de su proyecto se llama &quot;wefinance&quot;, se encuentra en el propietario de la cuenta &quot;wkndform&quot; y está utilizando la rama &quot;main&quot;, la dirección URL que muestra la hoja `shared-country`:
-   [https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country](https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)
+   `https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country`
+   <!--(https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)  -->
 
 >[!NOTE]
 >
@@ -80,9 +81,10 @@ Puede consultar la [hoja de cálculo de consulta](/help/edge/assets/enquiry.xlsx
 
 Después de integrar la dirección URL en la definición de formulario para cargar las opciones de la lista desplegable, las opciones de la lista desplegable `Destination` empiezan a aparecer desde la URL.
 
-<!-- For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch, the below URL displays the `enquiry` form displaying the options saved in the separate sheet:
+Por ejemplo, si el repositorio de su proyecto se llama &quot;wefinance&quot;, está ubicado bajo el propietario de la cuenta &quot;wkndform&quot; y está utilizando la rama &quot;main&quot;, la siguiente URL muestra el formulario `enquiry` con las opciones guardadas en la hoja independiente:
 
-[https://main--wefinance--wkndform.aem.live/enquiry-form](https://main--wefinance--wkndform.aem.live/enquiry-form) 
+`https://main--wefinance--wkndform.aem.live/enquiry-form`
+<!--(https://main--wefinance--wkndform.aem.live/enquiry-form) 
 -->
 
 ## Consulte también

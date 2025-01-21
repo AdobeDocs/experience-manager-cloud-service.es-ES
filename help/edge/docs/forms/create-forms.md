@@ -4,10 +4,10 @@ description: 'Elabore formularios perfectos, ¡y rápido! ⚡ Creación de docum
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
-source-git-commit: 4dcc580a6e3b49b1839fbb0f101c172bddf5cfcc
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 88%
+source-wordcount: '782'
+ht-degree: 86%
 
 ---
 
@@ -60,8 +60,6 @@ Ensure a smooth GitHub build process by addressing potential issues:
 * **Handle Linting Errors:**
     Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project. -->
 
-+++
-
 +++ Paso 1: Crear un formulario con Microsoft Excel o Google Sheets.
 
 En lugar de navegar por procesos complejos, la creación de un formulario se puede lograr fácilmente con una hoja de cálculo. Puede definir las filas y columnas que componen la estructura del formulario. Cada fila representa un [campo de formulario](/help/edge/docs/forms/form-components.md#available-components) individual y los encabezados de columna definen las [propiedades de campo](/help/edge/docs/forms/form-components.md#components-properties) correspondientes.
@@ -76,15 +74,15 @@ Para continuar con la creación del formulario, haga lo siguiente:
 
 1. Cree un libro de Microsoft Excel o una hoja de Google Sheets en cualquier lugar dentro del directorio del proyecto de Edge Delivery de AEM. Por ejemplo, cree una hoja de cálculo llamada `enquiry` en el directorio de proyectos de Edge Delivery de AEM en Google Drive.
 
-   ![Contenido de muestra en Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
+   <!-- ![Sample Content on Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)-->
 
 1. Asegúrese de que la hoja se comparte con el usuario de AEM correspondiente (por ejemplo, `forms@adobe.com`) [según las configuraciones especificadas para su proyecto](https://www.aem.live/docs/setup-customer-sharepoint). Conceda al usuario permiso de edición de la hoja.
 
-1. Abra la hoja de cálculo creada y cambie el nombre de la hoja predeterminada a “shared-default”.
+1. Abra la hoja de cálculo creada y cambie el nombre de la hoja predeterminada a shared-aem.
 
    ![cambie el nombre de la hoja predeterminada a “shared-default”](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. Para agregar los campos del formulario, inserte las filas y los encabezados de columna en la hoja “shared-default”. Cada fila debe representar un [campo de formulario](/help/edge/docs/forms/form-components.md#available-components), con encabezados de columna que definan las [propiedades](/help/edge/docs/forms/form-components.md#components-properties) del campo correspondiente.
+1. Para agregar los campos del formulario, inserte filas y encabezados de columna en la hoja &quot;shared-aem&quot;. Cada fila debe representar un [campo de formulario](/help/edge/docs/forms/form-components.md#available-components), con encabezados de columna que definan las [propiedades](/help/edge/docs/forms/form-components.md#components-properties) del campo correspondiente.
 
 
    Para empezar rápidamente, considere la posibilidad de copiar el contenido de la [hoja de cálculo de consulta](/help/edge/assets/enquiry.xlsx) en su hoja de cálculo. Después de copiar el contenido, guárdela.
@@ -109,7 +107,8 @@ Para continuar con la creación del formulario, haga lo siguiente:
 
    Por ejemplo, si el repositorio de su proyecto se llama &quot;wefinance&quot;, está ubicado en la cuenta &quot;wkndform&quot; y está utilizando la rama &quot;principal&quot;, la dirección URL tiene el siguiente aspecto:
 
-   [https://main--wefinance--wkndform.aem.page/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json)
+`https://main--wefinance--wkndform.aem.page/enquiry.json`
+&lt;!—(https://main--wefinance--wkndform.aem.page/enquiry.json)-->
 
 
 +++
@@ -131,7 +130,7 @@ Hasta ahora, ha preparado la estructura del formulario. Ahora, para obtener una 
 
    | Formulario |
    |---|
-   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
 
    ![Añadir un bloque de formularios adaptables a su página web](/help/edge/assets/enquiry-doc-to-embed-form.png)

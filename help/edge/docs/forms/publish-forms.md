@@ -4,10 +4,10 @@ description: Publique un Edge Delivery Services para AEM Forms
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 role: Admin, Architect, Developer
-source-git-commit: 4e6045aadd7d927851e431e2204cb2d56767a5a3
+source-git-commit: 81fbf43572c5129efb0a0718b408f0c9ae4a5ad3
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 77%
+source-wordcount: '587'
+ht-degree: 78%
 
 ---
 
@@ -53,7 +53,8 @@ Una vez que esté listo para compartir el formulario con los clientes para la re
 
    Por ejemplo, si el repositorio de su proyecto se denomina &quot;wefinance&quot;, está ubicado en la cuenta &quot;wkndform&quot; y está utilizando la rama y el formulario &quot;principal&quot; como &quot;consulta&quot;, la dirección URL tiene el siguiente aspecto:
 
-   [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json)
+   `https://main--wefinance--wkndform.aem.live/enquiry.json`
+&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry.json)-->
 
 +++
 
@@ -74,7 +75,7 @@ Para añadir el formulario a la página web:
 
    | Formulario |
    |---|
-   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
    ![Añada un bloque denominado &quot;Form&quot; al archivo](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
@@ -95,16 +96,16 @@ Para añadir el formulario a la página web:
 
    | Formulario |
    |---|
-   | [https://main--wefinance--wkndform.aem.page/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.page/enquiry.json` |
 
 
    **URL de publicación**
 
    | Formulario |
    |---|
-   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
-1. Utilice [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para obtener una vista previa de la página web. La página ahora muestra el formulario. Por ejemplo, este es el formulario basado en [hoja de cálculo de consulta](/help/edge/assets/enquiry.xlsx):
+1. Utilice [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para obtener una vista previa de la página web. La página ahora muestra el formulario. Por ejemplo, este es el formulario basado en [hoja de cálculo de consulta](/help/edge/assets/enquiry-form.docx):
 
 
    ![Un formulario EDS de ejemplo](/help/edge/assets/updated-form.png)
