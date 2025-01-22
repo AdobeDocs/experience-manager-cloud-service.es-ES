@@ -2,7 +2,7 @@
 source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
 source-wordcount: '1371'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 # Fragmentos de código {#snippets}
@@ -233,11 +233,11 @@ Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge 
    * URL del sitio web activo. Por ejemplo: `www.mydomain.com`.
    * URL del sitio web de origen (`.hlx` URL).
 
-## SPA Se prefiere el editor universal sobre el editor de {#ue-over-spa}
+## El Editor de SPA es preferible al editor universal {#ue-over-spa}
 
 >[!IMPORTANT]
 >
->SPA El Editor de segmentos sigue siendo compatible con el Adobe AEM, pero los editores preferidos para administrar contenido sin encabezado en el son ahora:
+>El Editor de SPA sigue siendo compatible con Adobe, pero los editores preferidos para administrar contenido sin encabezado en AEM ahora son:
 >
->* [Editor universal](/help/edge/wysiwyg-authoring/authoring.md) para editar contenido sin encabezado de forma visual.
->* [Editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) para la edición de contenido sin encabezado basada en formularios.
+>* [El Editor universal](/help/edge/wysiwyg-authoring/authoring.md) para editar contenido sin encabezado de forma visual.
+>* [El Editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) para la edición de contenido sin encabezado basada en formularios.
