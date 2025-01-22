@@ -1,19 +1,18 @@
 ---
-title: Notas de la versión para Cloud Manager 2024.12.0 en Adobe Experience Manager as a Cloud Service
-description: Obtenga información acerca del lanzamiento de Cloud Manager 2024.12.0 en AEM as a Cloud Service.
+title: Notas de la versión para Cloud Manager 2025.1.0 en Adobe Experience Manager as a Cloud Service
+description: Obtenga información acerca del lanzamiento de Cloud Manager 2025.1.0 en AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 6f17afc82b2d26fd6025a9ba8449a0cb1b368d48
+source-git-commit: bf12306969581723e4e9ce1517a8f0d445f26521
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 92%
+source-wordcount: '363'
+ht-degree: 22%
 
 ---
 
-# Notas de la versión para Cloud Manager 2024.12.0 en Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notas de la versión para Cloud Manager 2025.1.0 en Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Obtenga información sobre el lanzamiento de Cloud Manager 2024.12.0 en AEM (Adobe Experience Manager) as a Cloud Service.
+Obtenga información sobre el lanzamiento de Cloud Manager 2025.1.0 en AEM (Adobe Experience Manager) as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,64 +20,50 @@ Obtenga información sobre el lanzamiento de Cloud Manager 2024.12.0 en AEM (Ado
 
 ## Fechas de lanzamiento {#release-date}
 
-La fecha de lanzamiento de Cloud Manager 2024.12.0 en AEM as a Cloud Service es el jueves, 5 de diciembre de 2024.
+La fecha de lanzamiento de Cloud Manager 2025.1.0 en AEM as a Cloud Service es el miércoles, 22 de enero de 2025.
 
-La próxima versión planificada es el 23 de enero de 2025.
+La próxima versión planificada es el viernes, 13 de febrero de 2025.
 
 
 ## Novedades {#what-is-new}
 
-* **Reglas de calidad del código:** A partir del jueves 13 de febrero de 2025, el paso de calidad del código de Cloud Manager ahora utiliza una versión actualizada de SonarQube 9.9.5.90363.
+* **Reglas de calidad del código:** El paso de calidad del código de Cloud Manager empezará a usar SonarQube Server 9.9 con la versión Cloud Manager 2025.2.0, programada para el jueves 13 de febrero de 2025.
 
-  Las reglas actualizadas, disponibles para Cloud Manager en AEM as a Cloud Service en [este vínculo](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules), determinan las puntuaciones de seguridad y la calidad del código para las canalizaciones de Cloud Manager. Esta actualización puede afectar a las puertas de calidad y bloquear potencialmente las implementaciones.
+Para prepararse, las reglas actualizadas de SonarQube ya están disponibles en [Reglas de calidad de código](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules).
 
-<!-- * **Java 21 support:** Customers can now optionally build with Java 17 or Java 21, benefiting from performance improvements and new language features. See [Build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) for configuration steps, including updating your Maven project description, and certain library versions. When the build version is set to Java 17 or Java 21, the runtime defaults to Java 21.
+Puede &quot;comprobar antes&quot; las nuevas reglas configurando la siguiente variable de texto de canalización:
 
-    Starting February 2025, sandboxes and dev environments upgrade to the Java 21 runtime, regardless of the build version (Java 8, 11, 17, or 21). Production environments follow with an upgrade in April 2025. -->
+`CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-* **Tipos de registro A:** se ha añadido compatibilidad con tipos de registro A para mejorar los Preparativos para lanzamiento de dominios que usan configuraciones de CDN en AEM Cloud Manager. Ahora tiene la opción de iniciar el lanzamiento añadiendo un tipo de registro CNAME o un tipo de registro A que represente las IP de Fastly, lo que simplifica el enrutamiento de dominios. Esta mejora elimina la restricción de depender únicamente de registros CNAME para la configuración de dominios con Fastly.
+Además, establezca la siguiente variable para asegurarse de que el paso de calidad del código se ejecuta para la misma confirmación (normalmente se omite para el mismo `commitId`):
 
-  Consulte [Añadir un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).<!-- CMGR-63076 -->
+`CM_DISABLE_BUILD_REUSE` = `true`
 
-<!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. -->
-
-* **Añadir varios dominios a un sitio de Edge Delivery:** ahora puede añadir varios dominios, incluidos dominios Apex y no Apex, a un sitio de Edge Delivery (EDS) en AEM Cloud Manager. Esta mejora resuelve las limitaciones anteriores que restringían la posibilidad de asociar varios dominios con un origen EDS. La actualización garantiza una mejor flexibilidad para administrar las configuraciones de dominio y simplifica los procesos de lanzamiento para sitios con configuraciones de dominio complejas. <!-- CMGR-63007 -->
-
-* **Opciones de filtrado avanzadas:** se han introducido opciones de filtrado avanzadas en las páginas de ejecución de canalización y en las páginas de certificados SSL en AEM Cloud Manager. Ahora puede filtrar por varios criterios, lo que le permite un acceso más rápido a los datos relevantes y mejorar la eficacia de la implementación. <!-- CMGR-26263 -->
-
-   * **Filtrado de actividades de canalización:** incluye el filtrado de actividades de canalización, lo que permite detallar los resultados de búsqueda para actividades de canalización específicas. Los filtros disponibles incluyen canalización, acción y estado.
-     ![Filtrado de actividades de canalización](/help/implementing/cloud-manager/assets/filters-pipeline.png)
-
-
-   * **Filtrado de certificados SSL:** incluye el filtrado de certificados SSL, que le permite detallar los resultados de búsqueda para certificados específicos. Los filtros disponibles incluyen el nombre, la propiedad y el estado del certificado SSL.
-     ![Filtrado de certificados SSL](/help/implementing/cloud-manager/assets/filters-ssl-certificates.png)
-
-## Programa para primeros usuarios {#early-adoption}
-
-Participe en nuestro programa para primeros usuarios de Cloud Manager y tenga la oportunidad de probar algunas de las próximas funciones.
-
-### Usar su propio Git: ahora se admiten GitLab y Bitbucket {#gitlab-bitbucket}
-
-<!-- BOTH CS & AMS -->
-
-La función **Bring Your Own Git** se ha ampliado para incluir compatibilidad con repositorios externos, como GitLab y Bitbucket. Esta nueva compatibilidad se suma a la compatibilidad ya existente con repositorios de GitHub privados y de empresa. Al añadir estos nuevos repositorios, también puede vincularlos directamente a sus canalizaciones. Puede alojar estos repositorios en plataformas públicas en la nube o dentro de su infraestructura o nube privada. Esta integración también elimina la necesidad de sincronización constante del código con el repositorio de Adobe y proporciona la capacidad de validar las solicitudes de extracción antes de combinarlas en una rama principal.
-
-Las canalizaciones que usan repositorios externos (excepto las alojadas en GitHub) y el **Activador de la implementación** establecido en **Cambios en Git** ahora se inician automáticamente.
-
-Consulte [Adición de repositorios externos en Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
-
-![Cuadro de diálogo Añadir repositorio](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
+![Página de configuración de variables](/help/implementing/cloud-manager/release-notes/assets/variables-config.png)
 
 >[!NOTE]
 >
->Actualmente, las comprobaciones de calidad del código de las solicitudes de extracción listas para usar son exclusivas de los repositorios alojados en GitHub, pero se está trabajando en una actualización para ampliar esta funcionalidad a otros proveedores de Git.
+>Adobe recomienda crear una nueva canalización de calidad de código de CI/CD, configurada en la misma rama que la canalización de producción principal. Establezca las variables apropiadas *antes* de la versión del 13 de febrero de 2025 para validar que las nuevas reglas aplicadas no introduzcan bloqueadores.
 
-Si le interesa probar esta nueva función y compartir sus comentarios, envíe un correo electrónico a [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID. Asegúrese de incluir qué plataforma Git desea utilizar y si se encuentra en una estructura de repositorio privado/público o de empresa.
+* **Compatibilidad con Java 17 y Java 21 Build:** Los clientes ahora pueden compilar con Java 17 o Java 21, obteniendo acceso a mejoras de rendimiento y nuevas características del lenguaje. Para ver los pasos de configuración, incluida la actualización del proyecto Maven y las versiones de la biblioteca, consulte [Entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). Cuando la versión de compilación se establece en Java 17 o Java 21, el tiempo de ejecución implementado es Java 21.
 
-## Correcciones de errores
+   * **Habilitación de características**
+      * Esta función se habilitará para todos los clientes el jueves 13 de febrero de 2025, coincidiendo con el despliegue predeterminado de la nueva versión de SonarQube.
+      * Los clientes pueden habilitarlo *inmediatamente* estableciendo las dos configuraciones de variables descritas anteriormente para actualizar la versión de SonarQube 9.9.
 
-* Se ha añadido una protección para evitar la eliminación de dominios con asignaciones de dominios activas en AEM Cloud Manager. Los usuarios que intenten eliminar estos dominios ahora reciben un mensaje de error que les indica que eliminen primero la asignación de dominio antes de continuar con la eliminación del dominio. Este flujo de trabajo garantiza la integridad del dominio y evita errores de configuración accidentales. <!-- CMGR-63033 -->
-* De forma poco frecuente, los usuarios no podían añadir un nombre de dominio o actualizar un certificado SSL debido a un estado incorrecto asociado en los casos respectivos. <!-- CMGR-62816 -->
+   * **Implementación de tiempo de ejecución de Java 21**
+      * El tiempo de ejecución de Java 21 se implementa al crear con Java 17 o Java 21.
+      * El despliegue gradual en todos los entornos de Cloud Manager comienza en febrero para los entornos de pruebas y desarrollo y se extiende a los entornos de producción en abril.
+      * Los clientes que deseen adoptar el tiempo de ejecución de Java 21 *antes* pueden ponerse en contacto con el Adobe en [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
+
+
+<!-- ## Early adoption program {#early-adoption}
+
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
+
+<!-- ## Bug fixes -->
+
+
 
 
 <!-- ## Known issues {#known-issues} -->

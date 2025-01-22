@@ -4,10 +4,10 @@ description: Notas de versión específicas de las funciones en desuso y elimina
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 33dd48cc6484675ca54cfba19f741d23ee4f5ff1
-workflow-type: ht
-source-wordcount: '2768'
-ht-degree: 100%
+source-git-commit: b0bc2eb4298a88c6dc421390dd9527e181386b5d
+workflow-type: tm+mt
+source-wordcount: '2513'
+ht-degree: 98%
 
 ---
 
@@ -510,43 +510,43 @@ Las configuraciones de +++OSGi están sujetas a reglas de validación de compila
 
 ## Actualización de Java Runtime a la versión 21 {#java-runtime-update-21}
 
-<!-- NEW but needed to be removed for now; removed 12/5/24 LEAVE HERE, DO NOT DELETE Adobe Experience Manager as a Cloud Service is transitioning to the Java 21 runtime. To ensure compatibility, updating library versions as outlined in [Runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) is essential. -->
+Adobe Experience Manager as a Cloud Service está realizando la transición a Java 21 Runtime. Para garantizar la compatibilidad, es esencial actualizar las versiones de la biblioteca tal como se describe en [Requisitos de tiempo de ejecución](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 
-AEM as a Cloud Service se trasladará al tiempo de ejecución de Java 21. Para garantizar la compatibilidad, es esencial realizar los siguientes ajustes:
+<!-- (OLD Removed from here to end of topic 1/16/25 as per instruction in https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3359689801) AEM as a Cloud Service will be moving to Java 21 runtime. In order to ensure compatibility, it is essential to make the following adjustments:
 
-### Requisitos de tiempo de ejecución
+### Runtime Requirements
 
-Estos ajustes son necesarios para garantizar la compatibilidad con el tiempo de ejecución de Java 21. Las bibliotecas se pueden actualizar en cualquier momento, ya que son compatibles con versiones anteriores de Java.
+These adjustments are required to ensure compatibility with the Java 21 runtime. The libraries can be updated at any time as they are compatible with older versions of Java.
 
-#### Versión mínima de org.objectweb.asm {#org.objectweb.asm}
+#### Minimum version of org.objectweb.asm {#org.objectweb.asm}
 
-Actualice el uso de org.objectweb.asm a la versión 9.5 o superior para garantizar la compatibilidad con los tiempos de ejecución de JVM más recientes.
+Update the usage of org.objectweb.asm to version 9.5 or higher to ensure support for newer JVM runtimes.
 
-#### Versión mínima de org.apache.groovy {#org.apache.groovy}
+#### Minimum version of org.apache.groovy {#org.apache.groovy}
 
-Actualice el uso de org.apache.groovy a la versión 4.0.22 o superior para garantizar la compatibilidad con los tiempos de ejecución de JVM más recientes.
+Update the usage of org.apache.groovy to version 4.0.22 or higher to ensure support for newer JVM runtimes.
 
-Este paquete se puede incluir indirectamente añadiendo dependencias de terceros como la consola de AEM Groovy.
+This bundle can be indirectly included by adding third party dependencies such as the AEM Groovy Console.
 
-### Requisitos en tiempo de compilación
+### Build-time Requirements
 
-Estos ajustes son necesarios para permitir la compilación del proyecto con versiones más recientes de Java, pero no son necesarios para la compatibilidad de tiempo de ejecución. Los complementos de Maven se pueden actualizar en cualquier momento, ya que son compatibles con versiones anteriores de Java.
+These adjustments are required to allow building the project with newer versions of Java but not required for runtime compatibility. The Maven plug-ins can be updated at any time as they are compatible with older versions of Java.
 
-#### Versión mínima de bnd-maven-plugin {#bnd-maven-plugin}
+#### Minimum version of bnd-maven-plugin {#bnd-maven-plugin}
 
-Actualice el uso de bnd-maven-plugin a la versión 6.4.0 o superior para garantizar la compatibilidad con los tiempos de ejecución de JVM más recientes. Las versiones 7 o posteriores no son compatibles con Java 11 o versiones posteriores, por lo que no se recomienda una actualización a dicha versión en este momento.
+Update the usage of bnd-maven-plugin to version 6.4.0 to ensure support for newer JVM runtimes. Versions 7 or higher are not compatible with Java 11 or lower so an upgrade to that version is not recommended at this time.
 
-#### Versión mínima de aemanalyser-maven-plugin {#aemanalyser-maven-plugin}
+#### Minimum version of aemanalyser-maven-plugin {#aemanalyser-maven-plugin}
 
-Actualice el uso de aemanalyser-maven-plugin a la versión 1.6.6 o superior para garantizar la compatibilidad con los tiempos de ejecución de JVM más recientes.
+Update the usage of aemanalyser-maven-plugin to version 1.6.6 or higher to ensure support for newer JVM runtimes.
 
-#### Versión mínima de maven-bundle-plugin  {#maven-bundle-plugin}
+#### Minimum version of maven-bundle-plugin  {#maven-bundle-plugin}
 
-Actualice el uso de maven-bundle-plugin a la versión 5.1.5 o superior para garantizar la compatibilidad con los tiempos de ejecución de JVM más recientes.
+Update the usage of maven-bundle-plugin to version 5.1.5 or higher to ensure support for newer JVM runtimes.
 
-#### Actualizar dependencias en maven-scr-plugin  {#maven-scr-plugin}
+#### Update dependencies in maven-scr-plugin  {#maven-scr-plugin}
 
-`maven-scr-plugin` no es directamente compatible con Java 17 y 21. Sin embargo, es posible generar los archivos descriptores actualizando la versión de dependencia de ASM dentro de la configuración del complemento, de forma similar al siguiente fragmento:
+The `maven-scr-plugin` is not directly compatible with Java 17 and 21. However, it is possible to generate the descriptor files by updating the ASM dependency version within the plugin configuration, similar to the snippet below: 
 
 ```
 [source,xml]
@@ -584,3 +584,4 @@ Actualice el uso de maven-bundle-plugin a la versión 5.1.5 o superior para gara
    ...
  </project>
 ```
+-->
