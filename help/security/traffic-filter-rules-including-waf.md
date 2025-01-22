@@ -4,9 +4,9 @@ description: Configuración de las reglas de filtro de tráfico, incluidas las r
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 51c54d29f998d4c5fcd6ff2e5139638c495955b3
+source-git-commit: 1b4c427a36ee26522e9da499156f78276e099bd0
 workflow-type: tm+mt
-source-wordcount: '4019'
+source-wordcount: '4037'
 ht-degree: 99%
 
 ---
@@ -184,7 +184,7 @@ Un grupo de condiciones está compuesto por varias condiciones simples o de grup
 
 | **Propiedad** | **Tipo** | **Descripción** |
 |---|---|---|
-| reqProperty | `string` | Solicitar propiedad.<br><br>Uno de:<br><ul><li>`path`: devuelve la ruta completa de una dirección URL sin los parámetros de consulta.</li><li>`queryString`: devuelve la parte de consulta de una dirección URL</li><li>`method`: devuelve el método HTTP utilizado en la solicitud.</li><li>`tier`: devuelve uno de `author`, `preview` o `publish`.</li><li>`domain`: devuelve la propiedad de dominio (tal como se define en el encabezado `Host`) en minúsculas</li><li>`clientIp`: devuelve la IP del cliente.</li><li>`clientCountry`: devuelve un código de dos letras ([Símbolo de indicador regional](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) que identifica en qué país se encuentra el cliente.</li></ul> |
+| reqProperty | `string` | Solicitar propiedad.<br><br>Uno de:<br><ul><li>`path`: devuelve la ruta de acceso completa de una dirección URL sin los parámetros de consulta. (usar `pathRaw` para la variante sin escape)</li><li>`url`: devuelve la dirección URL completa, incluidos los parámetros de consulta. (usar `urlRaw` para la variante sin escape)</li><li>`queryString`: devuelve la parte de consulta de una dirección URL</li><li>`method`: devuelve el método HTTP utilizado en la solicitud.</li><li>`tier`: devuelve uno de `author`, `preview` o `publish`.</li><li>`domain`: devuelve la propiedad de dominio (tal como se define en el encabezado `Host`) en minúsculas</li><li>`clientIp`: devuelve la IP del cliente.</li><li>`clientCountry`: devuelve un código de dos letras ([Símbolo de indicador regional](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) que identifica en qué país se encuentra el cliente.</li></ul> |
 | reqHeader | `string` | Devuelve el encabezado de la solicitud con el nombre especificado |
 | queryParam | `string` | Devuelve el parámetro de consulta con el nombre especificado |
 | reqCookie | `string` | Devuelve una cookie con el nombre especificado |
