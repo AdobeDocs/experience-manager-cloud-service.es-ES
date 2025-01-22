@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 5321fed58f66b2beabcacc2de4b7dfb2dc3754f1
+source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
 workflow-type: tm+mt
 source-wordcount: '3145'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -75,13 +75,11 @@ Puede aprovechar al máximo esta función utilizando las siguientes opciones:
 
 Antes de empezar a incrustar un nuevo formulario adaptable o un formulario adaptable preexistente mediante **[!UICONTROL Formularios adaptables: Incrustados (v2)]**, habilite **Componentes principales de Formularios adaptables** y agregue **Bibliotecas de cliente de Formularios adaptables** a su página de AEM Sites:
 
-+++  Habilitar los componentes principales de formularios adaptables para su entorno de AEM Cloud Service
+### Habilitar los componentes principales de formularios adaptables para su entorno de AEM Cloud Service
 
 Asegúrese de que los [componentes principales de formularios adaptables estén habilitados para su entorno de AEM Forms as a Cloud Service](enable-adaptive-forms-core-components.md).
 
-+++
-
-+++  Añada bibliotecas de cliente de formularios adaptables a los componentes de la página de AEM Sites o de fragmento de experiencia
+### Añada bibliotecas de cliente de formularios adaptables a los componentes de la página de AEM Sites o de fragmento de experiencia
 
 Cuando la opción **[!UICONTROL Cuando el formulario abarca toda la anchura de una página]** está seleccionada en el cuadro de diálogo de configuración de **[!UICONTROL Contenedores de formulario]** y se utilizan los Formularios adaptables con componentes principales, es necesario incluir las bibliotecas de cliente en la página del sitio correspondiente.
 
@@ -130,9 +128,7 @@ Añada las bibliotecas de cliente **Customheaderlibs** y **Customfoterlibs** a l
 
 1. [Ejecute la canalización de implementación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=es) para implementar las bibliotecas de cliente en el entorno de AEM as a Cloud Service.
 
-+++
-
-+++ Habilitar **[!UICONTROL Formularios adaptables: Incrustados (v2)]** para su página de AEM Sites o fragmento de experiencia
+### Habilitar Forms adaptable: incrustado (v2) para la página de AEM Sites o el fragmento de experiencia
 
 Para habilitar el componente **[!UICONTROL Formularios adaptables: Incrustados (v2)]** en la política de la plantilla, siga los siguientes pasos:
 
@@ -142,8 +138,6 @@ Para habilitar el componente **[!UICONTROL Formularios adaptables: Incrustados (
 1. Haga clic en **[!UICONTROL Listo]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
-
-+++
 
 ## Para incrustar un formulario adaptable utilizando el componente Formularios adaptables: incrustados (v2) {#embed-an-adaptive-form-in-sites-editor-or-experience-fragment}
 

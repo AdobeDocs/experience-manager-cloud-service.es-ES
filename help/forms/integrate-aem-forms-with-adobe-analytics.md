@@ -5,7 +5,7 @@ exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 hidefromtoc: true
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
 workflow-type: tm+mt
 source-wordcount: '1709'
 ht-degree: 100%
@@ -118,7 +118,7 @@ Realice los siguientes pasos para configurar los elementos de datos:
 
 1. Seleccione **[!UICONTROL Guardar]** para guardar el elemento de datos.
 
-   >[!VIDEO](https://video.tv.adobe.com/v/337472)
+>[!VIDEO](https://video.tv.adobe.com/v/337472)
 
 ### Configurar reglas {#configure-rules}
 
@@ -180,7 +180,7 @@ Realice los siguientes pasos para crear reglas basadas en la extensión **[!UICO
 
    Puede crear reglas para todos los tipos de eventos, como Abandonar, Error, Visita de campo, Ayuda, Procesar, Guardar y Enviar.
 
-   >[!VIDEO](https://video.tv.adobe.com/v/337425)
+>[!VIDEO](https://video.tv.adobe.com/v/337425)
 
 
 ### Flujos de publicación {#publish-flow}

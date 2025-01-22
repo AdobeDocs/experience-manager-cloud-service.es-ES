@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
 workflow-type: tm+mt
 source-wordcount: '3184'
 ht-degree: 100%
@@ -72,13 +72,11 @@ Puede aprovechar al máximo esta función utilizando las siguientes opciones:
 
 Antes de empezar a crear o a crear un formulario adaptable, habilite los componentes principales de formularios adaptables y añada las bibliotecas de cliente de formularios adaptables a su página de AEM Sites:
 
-+++  Habilitar los componentes principales de formularios adaptables para su entorno de AEM Cloud Service
+### Habilitar los componentes principales de formularios adaptables para su entorno de AEM Cloud Service
 
 Asegúrese de que los [componentes principales de formularios adaptables estén habilitados para su entorno de AEM Forms as a Cloud Service](enable-adaptive-forms-core-components.md).
 
-+++
-
-+++  Añada bibliotecas de cliente de formularios adaptables a los componentes de la página de AEM Sites o de fragmento de experiencia
+### Añada bibliotecas de cliente de formularios adaptables a los componentes de la página de AEM Sites o de fragmento de experiencia
 
 Para habilitar la funcionalidad completa del componente Contenedor de formularios adaptables, añada las bibliotecas de cliente Customheaderlibs y Customfooterlibs a la página de AEM Sites mediante la canalización de implementación. Para añadir las bibliotecas:
 
@@ -123,9 +121,7 @@ Para habilitar la funcionalidad completa del componente Contenedor de formulario
 
 1. [Ejecute la canalización de implementación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=es) para implementar las bibliotecas de cliente en el entorno de AEM as a Cloud Service.
 
-+++
-
-+++ Habilitar Contenedor de Formularios adaptables para su página de AEM Sites o Fragmento de experiencia
+### Habilitar Contenedor de Formularios adaptables para su página de AEM Sites o Fragmento de experiencia
 
 Para habilitar el [!UICONTROL Contenedor de formularios adaptables] en la política de la plantilla, siga los siguientes pasos:
 
