@@ -5,16 +5,16 @@ mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: f64f6d90c6ae2490be4be5067df0f96e9df6be38
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '984'
 ht-degree: 68%
 
 ---
 
 # Presentación de la vista Assets {#assets-view}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación de desarrollador de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Implementación de Assets Essentials](assets/banner-image.jpg)
@@ -68,7 +68,7 @@ Reciba una solución de administración de activos digitales que comprende las d
 
 ![Información general de Mi espacio de trabajo](assets/my-workspace-demo.gif)
 
-[![Consulte la Guía](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](my-workspace-assets-view.md)
+[![Ver la guía](assets/see-the-guide-sm.png)](my-workspace-assets-view.md)
 
 ### Perspectivas para tomar decisiones basadas en datos {#insights-data}
 
@@ -76,7 +76,7 @@ Para mantener el ritmo de la velocidad del contenido son esenciales perspectivas
 
 ![Información general sobre Insights](assets/insights-overview.gif)
 
-[![Consulte la guía](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
+[![Ver la guía](assets/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
 
 ### Integración de Adobe Photoshop Express para acelerar la colaboración {#accelerate-collaboration}
 
@@ -86,7 +86,7 @@ Vea este vídeo para comprender la potencia de la integración de la vista de re
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420922)
 
-[![Consulte la guía](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](edit-images-assets-view.md)
+[![Ver la guía](assets/see-the-guide-sm.png)](edit-images-assets-view.md)
 
 Las próximas versiones para el as a Cloud Service de Assets también incluirían la integración de [Adobe Firefly mediante el Adobe Express](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838).
 
@@ -96,7 +96,7 @@ Configure rápidamente una estructura de carpetas para su organización mediante
 
 ![Carga de carpetas](assets/folder-uploads.gif)
 
-[![Consulte la guía](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](add-delete-assets-view.md)
+[![Ver la guía](assets/see-the-guide-sm.png)](add-delete-assets-view.md)
 
 ### Enfoque de búsqueda prioritaria para mejorar la eficacia {#search-first}
 
@@ -110,7 +110,7 @@ La vista de Assets permite supervisar las operaciones realizadas en los recursos
 
 ![Recibir notificaciones](assets/notifications.gif)
 
-[![Consulte la guía](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](manage-notifications-assets-view.md)
+[![Ver la guía](assets/see-the-guide-sm.png)](manage-notifications-assets-view.md)
 
 ### Eliminación progresiva de recursos para proporcionar un mejor control a los administradores {#soft-delete-assets}
 
@@ -118,7 +118,7 @@ La carpeta Papelera disponible en la vista Recursos enumera los recursos elimina
 
 ![Eliminación progresiva](assets/soft-delete.gif)
 
-[![Consulte la guía](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](navigate-assets-view.md)
+[![Ver la guía](assets/see-the-guide-sm.png)](navigate-assets-view.md)
 
 Además de estas funciones, la vista Recursos también permite realizar las siguientes funciones que no están disponibles en la vista del administrador:
 
