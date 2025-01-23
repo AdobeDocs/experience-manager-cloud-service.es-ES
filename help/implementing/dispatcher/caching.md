@@ -4,9 +4,9 @@ description: Obtenga información acerca de los conceptos básicos del almacenam
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: fc555922139fe0604bf36dece27a2896a1a374d9
 workflow-type: tm+mt
-source-wordcount: '2897'
+source-wordcount: '2924'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Define DISABLE_DEFAULT_CACHING
 
 Este método es útil, por ejemplo, cuando la lógica empresarial requiere ajustar el encabezado age (con un valor basado en el día del calendario) ya que, de forma predeterminada, el encabezado age se establece en 0. Dicho esto, **tenga cuidado al desactivar el almacenamiento en caché predeterminado.**
 
-* se puede sobrescribir para todo el contenido de HTML/texto definiendo la variable `EXPIRATION_TIME` en `global.vars` con las herramientas Dispatcher del SDK para AEM as a Cloud Service.
+* se puede sobrescribir para todo el contenido de HTML/texto definiendo la variable `EXPIRATION_TIME` en `global.vars` con las herramientas de AEM as a Cloud Service SDK Dispatcher.
 * puede anularse en un nivel más preciso, incluido el control independiente de la CDN y la caché del explorador, con las siguientes directivas de Apache `mod_headers`:
 
   ```
@@ -240,12 +240,24 @@ Las direcciones URL del sitio web suelen incluir parámetros de campañas de mar
 En el caso de los entornos creados en octubre de 2023 o posterior, para almacenar en caché mejor las solicitudes, la CDN eliminará los parámetros de consulta comunes relacionados con el marketing, específicamente los que coinciden con el siguiente patrón regex:
 
 ```
-^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$
+^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid|msclkid|ttclid)$
 ```
 
-Envíe un ticket de asistencia si desea deshabilitar este comportamiento.
+Esta funcionalidad se puede activar y desactivar mediante el indicador `requestTransformations` en la [configuración de CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 
-Para entornos creados antes de octubre de 2023, se recomienda configurar la propiedad `ignoreUrlParams` de la configuración de Dispatcher; consulte [Configuración de Dispatcher: omitiendo parámetros de URL](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
+Por ejemplo, para detener la eliminación de parámetros de marketing en el nivel CDN, uno debe implementar `removeMarketingParams: false` mediante una configuración que contenga la siguiente sección.
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev", "stage", "prod"]
+data:
+  requestTransformations:
+    removeMarketingParams: false
+```
+
+En caso de que la funcionalidad `removeMarketingParams` esté deshabilitada en el nivel CDN, se recomienda configurar la propiedad `ignoreUrlParams` de la configuración de Dispatcher; consulte [Configuración de Dispatcher: omitiendo parámetros de URL](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
 
 Existen dos formas de ignorar los parámetros de marketing. (Donde se prefiere el primero para ignorar la eliminación de caché mediante parámetros de consulta):
 
@@ -518,7 +530,7 @@ Cuando se publican las nuevas versiones de las bibliotecas de en producción, la
 
 El mecanismo detrás de esta capacidad es un hash serializado, que se anexa al vínculo de biblioteca del cliente. Garantiza una URL única con versiones para que el explorador almacene en caché el CSS/JS. El hash serializado solo se actualiza cuando cambia el contenido de la biblioteca de cliente. Lo que significa que si se producen actualizaciones no relacionadas (es decir, no se producen cambios en el css/js subyacente de la biblioteca del cliente) incluso con una nueva implementación, la referencia sigue siendo la misma. A su vez, garantiza menos interrupciones en la caché del explorador.
 
-### Activación de versiones de caché larga de bibliotecas del lado del cliente: inicio rápido del SDK de AEM as a Cloud Service {#enabling-longcache}
+### Activación de las versiones de caché larga de las bibliotecas del lado del cliente: inicio rápido de AEM as a Cloud Service SDK {#enabling-longcache}
 
 Las inclusiones clientlib predeterminadas en una página de HTML tienen el siguiente aspecto:
 
