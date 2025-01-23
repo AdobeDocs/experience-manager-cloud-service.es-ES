@@ -4,10 +4,10 @@ description: Obtenga información acerca de los campos y los tipos de componente
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 13e5d573d7522d9772f5a4080c2b2f0b460b5513
+source-git-commit: f6ae3160fc2f12519f840f646f852169b2dcb57c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1343'
+ht-degree: 13%
 
 ---
 
@@ -316,7 +316,7 @@ El selector de fragmentos de contenido se puede usar para seleccionar un [fragme
 >
 >El editor universal [valida los campos de fragmento de contenido según sus modelos](/help/assets/content-fragments/content-fragments-models.md#validation), lo que le permite aplicar reglas de integridad de datos como patrones regex y restricciones de exclusividad.
 >
->Esto garantiza que el contenido cumpla con los requisitos comerciales específicos antes de publicarse.
+>Esto garantiza que el contenido cumple los requisitos de la empresa antes de su publicación.
 
 >[!BEGINTABS]
 
@@ -455,14 +455,17 @@ El selector Fragmento de experiencia se puede usar para seleccionar un [Fragment
 ```json
 [
   {
-    "id": "aem-experience-fragment",
+    "id": "experience-fragment",
     "fields": [
       {
         "component": "aem-experience-fragment",
-        "name": "picker",
-        "label": "Experience Fragment Picker",
         "valueType": "string",
-        "variationName": "experienceFragmentVariation"
+        "name": "experience-fragment",
+        "label": "experience-fragment",
+        "variationName": "experienceFragmentVariation",
+        "validation": {
+            "rootPath": "/content/refresh"
+        }
       }
     ]
   }
