@@ -4,9 +4,9 @@ description: Aprenda a configurar sitios independientes para los entornos de ens
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: 42218450ab03201c69c59053f720954183f4b652
+source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '693'
 ht-degree: 2%
 
 ---
@@ -45,6 +45,10 @@ Para configurar un sitio de producción independiente hay que seguir dos pasos.
    * La configuración de `code` debe ser la misma que utilizó para la creación inicial del proyecto.
    * `content` > `source` > `url` debe adaptarse al nombre del nuevo sitio que está creando. En este ejemplo, es `wknd-prod`.
    * Es decir, el nombre del sitio en la dirección URL del POST y `content` > `source` > `url` deben ser iguales.
+   * Adapte el bloque `admin` para definir los usuarios que deben tener acceso administrativo completo al sitio.
+      * Es una matriz de direcciones de correo electrónico.
+      * Se puede usar el comodín `*`.
+      * Consulte el documento [Configuración de la autenticación para autores](https://www.aem.live/docs/authentication-setup-authoring#default-roles) para obtener más información.
 
    ```text
    curl --request POST \
@@ -71,7 +75,7 @@ Para configurar un sitio de producción independiente hay que seguir dos pasos.
            "admin": {
                "role": {
                    "admin": [
-                       "*@adobe.com"
+                       "<email>@<domain>.<tld>"
                    ],
                    "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"

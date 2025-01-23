@@ -4,9 +4,9 @@ description: Si tiene muchos sitios similares que en su mayoría tienen el mismo
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: 7b37f3d387f0200531fe12cde649b978f98d5d49
+source-git-commit: e7f7c169e7394536fc2968ecf1418cd095177679
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '971'
 ht-degree: 2%
 
 ---
@@ -34,10 +34,11 @@ Para aprovechar esta función, asegúrese de haber hecho lo siguiente.
 * Su sitio ya está completamente configurado al seguir el documento [Guía de introducción para desarrolladores de WYSIWYG Authoring con Edge Delivery Services.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
 * Está ejecutando AEM as a Cloud Service 2024.08 como mínimo.
 
-También deberá pedir al Adobe que configure dos elementos por usted. Póngase en contacto con el Adobe a través del canal del Slack o plantee un problema de asistencia para realizar estas solicitudes.
+También deberá solicitar al Adobe que configure los siguientes elementos por usted. Póngase en contacto con a través del canal del Slack o plantee un problema de asistencia para solicitar el Adobe para realizar estos cambios:
 
-* El [servicio de configuración aem.live](https://www.aem.live/docs/config-service-setup#prerequisites) está activo para su entorno y usted se ha configurado como administrador.
-* La función de reutilización debe habilitarse para su programa por Adobe.
+* Pida que se active el [servicio de configuración de aem.live](https://www.aem.live/docs/config-service-setup#prerequisites) para su entorno y que se haya configurado como administrador.
+* Solicite habilitar la función de reutilización para su programa por Adobe.
+* Pida al Adobe que cree la organización por usted.
 
 ## Activar función de reutilización {#activate}
 
@@ -64,67 +65,6 @@ Una vez que tenga el token de acceso, se puede pasar en el encabezado de las sol
 ```text
 --header 'x-auth-token: <your-token>'
 ```
-
-### Configurar el servicio de configuración {#config-service}
-
-Como se menciona en los [requisitos previos,](#prerequisites) el servicio de configuración debe estar habilitado para su entorno. Puede comprobar la configuración del servicio de configuración con este comando cURL.
-
-```text
-curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
---header 'x-auth-token: <your-token>'
-```
-
-Si el servicio de configuración está configurado correctamente, se devolverá un archivo JSON similar al siguiente.
-
-```json
-{
-  "title": "<your-github-org>",
-  "description": "Your GitHub Org",
-  "lastModified": "2024-11-14T12:14:04.230Z",
-  "created": "2024-11-14T12:13:37.032Z",
-  "version": 1,
-  "users": [
-    {
-      "email": "justthisguyyouknow@adobe.com",
-      "roles": [
-        "admin"
-      ],
-      "id": "<your-id>"
-    }
-  ]
-}
-```
-
-Póngase en contacto con el Adobe a través del canal del Slack del proyecto o genere un problema de asistencia si el servicio de configuración no está habilitado. Una vez que tenga el token y haya comprobado que el servicio de configuración está habilitado, puede continuar con la configuración.
-
-1. Compruebe que el origen de contenido esté configurado correctamente.
-
-   ```text
-   curl --request GET \
-   --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>.json \
-   --header 'x-auth-token: <your-token>'
-   ```
-
-1. Agregue una asignación de ruta a la configuración pública.
-
-   ```text
-   curl --request POST \
-     --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>/public.json \
-     --header 'x-auth-token: <your-token>' \
-     --header 'Content-Type: application/json' \
-     --data '{
-       "paths": {
-           "mappings": [
-               "/content/<your-site-content>/:/"
-      ],
-           "includes": [
-               "/content/<your-site-content>/"
-           ]
-       }
-   }'
-   ```
-
-Una vez creada la configuración pública, puede acceder a ella a través de una dirección URL similar a `https://main--<your-aem-project>--<your-github-org>.aem.page/config.json` para verificarla.
 
 ### Agregar asignación de ruta para configuración de sitio y establecer cuenta técnica {#access-control}
 
@@ -184,6 +124,11 @@ Una vez asignada la configuración del sitio, puede configurar el control de acc
 
 1. Establezca la cuenta técnica en la configuración con un comando cURL similar al siguiente.
 
+   * Adapte el bloque `admin` para definir los usuarios que deben tener acceso administrativo completo al sitio.
+      * Es una matriz de direcciones de correo electrónico.
+      * Se puede usar el comodín `*`.
+      * Consulte el documento [Configuración de la autenticación para autores](https://www.aem.live/docs/authentication-setup-authoring#default-roles) para obtener más información.
+
    ```text
    curl --request POST \
      --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>/access.json \
@@ -193,7 +138,7 @@ Una vez asignada la configuración del sitio, puede configurar el control de acc
        "admin": {
            "role": {
                "admin": [
-                   "*@adobe.com"
+                   "<email>@<domain>.<tld>"
                ],
                "config_admin": [
                    "<tech-account-id>@techacct.adobe.com"
