@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 14162af8ab209b04645502546912af106c67f2b1
+source-git-commit: ee01e5a2b805330f47af7ff563ca1ac90036f0bf
 workflow-type: tm+mt
 source-wordcount: '1313'
 ht-degree: 36%
@@ -117,7 +117,7 @@ AEM Cuando se ejecuta la localmente con Java 21, los scripts de inicio (`crx-qui
 >Cuando `.cloudmanager/java-version` se establece en `21` o `17`, se implementa el tiempo de ejecución de Java 21. El tiempo de ejecución de Java 21 está programado para su despliegue gradual en todos los entornos (no solo en aquellos cuyo código se haya creado con Java 11) a partir del jueves, 13 de febrero de 2025. El despliegue comenzará con los entornos de pruebas y desarrollo y, a continuación, se implementará en todos los entornos de producción en abril de 2025. Los clientes que deseen adoptar el tiempo de ejecución de Java 21 *antes* pueden ponerse en contacto con el Adobe en [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
 
-#### Requisitos de tiempo de compilación
+#### Requisitos de tiempo de compilación {#build-time-reqs}
 
 Se requieren los siguientes ajustes para permitir la creación del proyecto con Java 21 y Java 17. Pueden actualizarse incluso antes de ejecutar Java 21 y Java 17, ya que son compatibles con versiones de Java más antiguas.
 

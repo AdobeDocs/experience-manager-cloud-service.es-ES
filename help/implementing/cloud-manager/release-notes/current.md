@@ -4,10 +4,10 @@ description: Obtenga información acerca del lanzamiento de Cloud Manager 2025.1
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: f6c1aa32647bcabeb0781973f81b75c11edc6a5d
+source-git-commit: ee01e5a2b805330f47af7ff563ca1ac90036f0bf
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 19%
+source-wordcount: '695'
+ht-degree: 11%
 
 ---
 
@@ -32,15 +32,15 @@ La próxima versión planificada es el viernes, 13 de febrero de 2025.
 
 * **Reglas de calidad del código - Actualización del servidor de SonarQube:** El paso de calidad del código de Cloud Manager empezará a utilizar SonarQube Server 9.9 con la versión 2025.2.0 de Cloud Manager, programada para el jueves 13 de febrero de 2025.
 
-Para prepararse, las reglas actualizadas de SonarQube ya están disponibles en [Reglas de calidad de código](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules).
+  Para prepararse, las reglas actualizadas de SonarQube ya están disponibles en [Reglas de calidad de código](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules).
 
-Puede &quot;comprobar antes&quot; las nuevas reglas configurando la siguiente variable de texto de canalización:
+  Puede &quot;comprobar antes&quot; las nuevas reglas configurando la siguiente variable de texto de canalización:
 
-`CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
+  `CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-Además, establezca la siguiente variable para asegurarse de que el paso de calidad del código se ejecuta para la misma confirmación (normalmente se omite para el mismo `commitId`):
+  Además, establezca la siguiente variable para asegurarse de que el paso de calidad del código se ejecuta para la misma confirmación (normalmente se omite para el mismo `commitId`):
 
-`CM_DISABLE_BUILD_REUSE` = `true`
+  `CM_DISABLE_BUILD_REUSE` = `true`
 
 ![Página de configuración de variables](/help/implementing/cloud-manager/release-notes/assets/variables-config.png)
 
@@ -59,9 +59,27 @@ Además, establezca la siguiente variable para asegurarse de que el paso de cali
       * El despliegue gradual en todos los entornos de Cloud Manager comienza en febrero para los entornos de pruebas y desarrollo y se extiende a los entornos de producción en abril.
       * Los clientes que usen Java 11 y deseen adoptar el tiempo de ejecución de Java 21 *antes* pueden ponerse en contacto con el Adobe en [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
-* Se cambió el nombre de **&quot;Configuraciones de CDN&quot; a &quot;Asignaciones de dominio&quot;:** Como parte de las mejoras en la interfaz de usuario en AEM Cloud Manager, se cambió el nombre de la etiqueta &quot;Configuraciones de CDN&quot; a &quot;Asignaciones de dominio&quot; para mejorar la alineación de la terminología con la funcionalidad. <!-- CMGR-64738 -->
+* Se cambió el nombre de **&quot;Configuraciones de CDN&quot; a &quot;Asignaciones de dominio&quot;:** Como parte de las mejoras en la interfaz de usuario en AEM Cloud Manager, ahora se cambia el nombre de la etiqueta &quot;Configuraciones de CDN&quot; a &quot;Asignaciones de dominio&quot;. Este cambio mejora la alineación de la terminología con la funcionalidad. <!-- CMGR-64738 -->
 
   Se cambió el nombre de ![ &quot;Configuraciones de CDN&quot; a &quot;Asignaciones de dominio&quot; en la interfaz de usuario](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
+
+* **Aprovisionar un sitio Edge Delivery con un solo clic:** Cloud Manager ahora permite a los usuarios con los permisos y licencias apropiados crear un sitio de Edge Delivery Services de ejemplo con un solo clic. Este proceso optimizado ofrece las siguientes funcionalidades automatizadas:
+
+   * **Integración de GitHub**: crea automáticamente un repositorio de GitHub dentro de una organización existente, preconfigurado con una plantilla de plantillas para Edge Delivery Services.
+   * AEM AEM **Instalación de la aplicación de sincronización de código de**: instala la aplicación de sincronización de código de la aplicación en el repositorio, lo que garantiza una sincronización e implementación sin problemas.
+   * **Configuración de Collaboration de contenido**: vincula una carpeta designada de Google Drive para el almacenamiento de contenido, lo que proporciona un entorno de colaboración para la administración de contenido.
+   * **Publicación de contenido**: Los usuarios ahora pueden publicar contenido para sitios aprovisionados directamente desde la interfaz de usuario de Cloud Manager, lo que simplifica los flujos de trabajo y mejora la eficacia.
+   * **Collaboration mejorado**: la plataforma permite a los usuarios agregar varios colaboradores a la carpeta de almacenamiento de contenido de Google Drive, lo que facilita el trabajo en equipo y las contribuciones de contenido.
+
+  Estas mejoras tienen como objetivo mejorar la automatización, simplificar los procesos de configuración y mejorar la colaboración entre los usuarios de Edge Delivery Services. <!-- CMGR-59362 -->
+
+  ![Aprovisionamiento de un sitio de Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/eds-one-click-60.png)
+
+  ![Aprovisionar cuadro de diálogo del sitio de Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/eds-provision-60.png)
+
+* **Compatibilidad mejorada con los sitios de Edge Delivery Services:** Cloud Manager ahora admite la incorporación de los sitios de Edge Delivery Services más recientes. Esta actualización incluye una refactorización completa de la red de distribución de contenido (CDN) y de la pila de envíos, lo que mejora la solidez y la capacidad de mantenimiento.
+
+* **Actualización anticipada del programa del usuario que lo adoptó - Soporte de validación de PR para Bitbucket y GitLab:** Cloud Manager ahora admite la validación de solicitudes de extracción (PR) tanto para la nube como para las versiones autohospedadas de Bitbucket y GitLab. Esta función permite a los clientes probar los cambios de código en relación con los umbrales de calidad del código de Adobe antes de combinar una PR. Al garantizar una mayor calidad del código antes de la combinación, esta mejora mejora mejora significativamente la tasa de éxito de los cambios de código en las canalizaciones de producción, lo que reduce el tiempo de salida al mercado y optimiza los flujos de trabajo de desarrollo.
 
 
 <!-- ## Early adoption program {#early-adoption}
