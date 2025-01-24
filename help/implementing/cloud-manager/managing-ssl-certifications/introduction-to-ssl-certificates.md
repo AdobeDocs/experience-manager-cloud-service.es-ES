@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+source-git-commit: 3d9ad70351bfdedb6d81e90d9d193fac3088a3ec
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 22%
+source-wordcount: '1025'
+ht-degree: 19%
 
 ---
 
@@ -40,7 +40,7 @@ Cloud Manager ofrece herramientas de autoservicio para instalar y administrar ce
 
 | | Modelo | Descripción |
 | --- | --- | --- |
-| A | **[Certificado SSL administrado por Adobe (DV)](#adobe-managed)** | Cloud Manager permite a los usuarios configurar los certificados DV (validación de dominio) que proporciona Adobe para configurar rápidamente los dominios. |
+| A | **[Certificado SSL administrado por Adobe (DV)](#adobe-managed)** | Cloud Manager permite a los usuarios configurar los certificados DV (validación de dominio) proporcionados por Adobe para configurar rápidamente el dominio. |
 | B | **[Certificado SSL administrado por el cliente (OV/EV)](#customer-managed)** | Cloud Manager ofrece un servicio TLS (Transport Layer Security) para permitirle administrar los certificados SSL OV y EV de su propiedad y las claves privadas de autoridades de certificación de terceros, como *Let&#39;s Encrypt*. |
 
 Ambos modelos ofrecen las siguientes funciones generales para administrar los certificados:
@@ -73,20 +73,47 @@ Además, OV y EV ofrecen estas características con respecto a los certificados 
 >
 >Si tiene varios dominios personalizados, es posible que no desee cargar un certificado cada vez que agregue un nuevo dominio. En ese caso, podría beneficiarse de obtener un único certificado que abarque varios dominios.
 
->[!NOTE]
->
->Si se instalan dos certificados que cubren el mismo dominio, se aplica el que sea más exacto.
->
->Por ejemplo, si el dominio es `dev.adobe.com` y tiene un certificado para `*.adobe.com` y otro para `dev.adobe.com`, se utilizará el más específico (`dev.adobe.com`).
-
 #### Requisitos para los certificados SSL OV/EV administrados por el cliente {#requirements}
 
 Si decide añadir su propio certificado SSL OV/EV administrado por el cliente, debe cumplir los siguientes requisitos:
 
-* AEM as a Cloud Service acepta certificados que se ajustan a la directiva OV (validación de organización) o EV (validación extendida).
+* El certificado debe cumplir las directivas OV (validación de organización) o EV (validación extendida).
    * Cloud Manager no admite la adición de sus propios certificados DV (validación de dominio).
+* No se admiten certificados firmados automáticamente.
 * Cualquier certificado debe ser un certificado TLS X.509 de una autoridad de certificación de confianza con una clave privada RSA de 2048 bits que corresponda.
-* No se aceptan los certificados firmados automáticamente.
+
+#### Prácticas recomendadas para la administración de certificados
+
+* **Evitar certificados superpuestos:**
+
+   * Para garantizar una administración de certificados sin problemas, evite implementar certificados superpuestos que coincidan con el mismo dominio. Por ejemplo, tener un certificado comodín (*.example.com) junto con un certificado específico (dev.example.com) puede generar confusión.
+   * La capa TLS da prioridad al certificado más específico y implementado recientemente.
+
+  Casos de ejemplo:
+
+   * El &quot;certificado de desarrollo&quot; cubre `dev.example.com` y se implementa como una asignación de dominio para `dev.example.com`.
+   * El &quot;certificado de ensayo&quot; cubre `stage.example.com` y se implementa como una asignación de dominio para `stage.example.com`.
+   * Si &quot;Certificado de ensayo&quot; se implementa o actualiza *después de* &quot;Certificado de desarrollador&quot;, también sirve solicitudes para `dev.example.com`.
+
+     Para evitar estos conflictos, asegúrese de que los certificados tengan un ámbito cuidadoso en los dominios a los que están destinados.
+
+* **Certificados comodín:**
+
+  Aunque se admiten certificados comodín (por ejemplo, `*.example.com`), solo deben usarse cuando sea necesario. En casos de superposición, el certificado más específico tiene prioridad. Por ejemplo, el certificado específico sirve `dev.example.com` en lugar del comodín (`*.example.com`).
+
+* **Validación y solución de problemas:**
+Antes de intentar instalar un certificado con Cloud Manager, Adobe recomienda validar la integridad del certificado localmente mediante herramientas como `openssl`. Por ejemplo,
+
+  `openssl verify -untrusted intermediate.pem certificate.pem`
+
+
+<!--
+>[!NOTE]
+>
+>If two certificates cover the same domain are installed, the one that is more exact is applied.
+>
+>For example, if your domain is `dev.adobe.com` and you have one certificate for `*.adobe.com` and another for `dev.adobe.com`, the more specific one (`dev.adobe.com`) is used.
+-->
 
 #### Formato de los certificados administrados por el cliente {#certificate-format}
 
@@ -112,13 +139,9 @@ Los siguientes comandos `openssl` se pueden utilizar para convertir certificados
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
 
->[!TIP]
->
->El Adobe recomienda validar la integridad del certificado localmente mediante una herramienta como `openssl verify -untrusted intermediate.pem certificate.pem` antes de intentar instalarlo mediante Cloud Manager.
-
 ## Limitación del número de certificados SSL instalados {#limitations}
 
-En cualquier momento dado, Cloud Manager permite un máximo de 50 certificados SSL instalados. Estos certificados se pueden asociar a uno o más entornos de su programa e incluir también certificados caducados.
+En cualquier momento dado, Cloud Manager admite hasta 50 certificados instalados. Estos certificados se pueden asociar a uno o más entornos de su programa e incluir también certificados caducados.
 
 Si ha alcanzado el límite, revise los certificados y considere la posibilidad de eliminar cualquier certificado caducado. O bien, agrupe varios dominios en el mismo certificado, ya que un certificado puede abarcar varios dominios (hasta 100 SAN).
 
