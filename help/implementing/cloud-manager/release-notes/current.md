@@ -4,10 +4,10 @@ description: Obtenga información acerca del lanzamiento de Cloud Manager 2025.1
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: ee01e5a2b805330f47af7ff563ca1ac90036f0bf
+source-git-commit: 9850a52626c2bd80f7528931d23691dff1dd3eb2
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 11%
+source-wordcount: '811'
+ht-degree: 10%
 
 ---
 
@@ -80,6 +80,17 @@ La próxima versión planificada es el viernes, 13 de febrero de 2025.
 * **Compatibilidad mejorada con los sitios de Edge Delivery Services:** Cloud Manager ahora admite la incorporación de los sitios de Edge Delivery Services más recientes. Esta actualización incluye una refactorización completa de la red de distribución de contenido (CDN) y de la pila de envíos, lo que mejora la solidez y la capacidad de mantenimiento.
 
 * **Actualización anticipada del programa del usuario que lo adoptó - Soporte de validación de PR para Bitbucket y GitLab:** Cloud Manager ahora admite la validación de solicitudes de extracción (PR) tanto para la nube como para las versiones autohospedadas de Bitbucket y GitLab. Esta función permite a los clientes probar los cambios de código en relación con los umbrales de calidad del código de Adobe antes de combinar una PR. Al garantizar una mayor calidad del código antes de la combinación, esta mejora mejora mejora significativamente la tasa de éxito de los cambios de código en las canalizaciones de producción, lo que reduce el tiempo de salida al mercado y optimiza los flujos de trabajo de desarrollo.
+
+* **Opciones de filtrado avanzadas para canalizaciones:** Cloud Manager ahora cuenta con opciones de filtrado avanzadas en la página Canalizaciones, lo que le permite acceder rápidamente a los datos relevantes y mejorar la eficacia de la implementación. Algunas de las características clave son las siguientes:
+
+   * **Filtrado de criterios múltiples:** Refine los resultados de búsqueda con filtros como el nombre de la canalización, el entorno y el código de implementación.
+   * **Búsqueda optimizada de canalizaciones:** Localice fácilmente canalizaciones específicas para una navegación más rápida y una administración mejorada del flujo de trabajo.
+
+  En conjunto, estas mejoras hacen que la administración y la implementación de canalizaciones sean más eficientes y fáciles de usar.
+
+  ![Función de filtros de canalización](/help/implementing/cloud-manager/release-notes/assets/pipeline-filters.png)
+
+* **Configuración de CDN de autoservicio para el servicio Edge Delivery:** Los nuevos usuarios que adoptan el servicio Edge Delivery ahora pueden configurar su CDN de forma independiente a través de Cloud Manager. Esta actualización amplía la compatibilidad de `.hlx.page/live` con el nuevo `.aem.page/live`, lo que proporciona mayor flexibilidad y una configuración optimizada para los usuarios.
 
 
 <!-- ## Early adoption program {#early-adoption}
