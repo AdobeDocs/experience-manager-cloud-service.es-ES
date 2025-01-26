@@ -4,23 +4,31 @@ description: Cree formularios potentes más rápido con hojas de cálculo y camp
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
+source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 65%
+source-wordcount: '890'
+ht-degree: 79%
 
 ---
 
 # Configure Google Sheets o los archivos de Microsoft Excel para empezar a aceptar datos
 
 
-Una vez que haya [creado y previsualizado el formulario](/help/edge/docs/forms/create-forms.md), es hora de habilitar la hoja de cálculo correspondiente para que comience a recibir datos. Puede habilitar manualmente la hoja de cálculo para que acepte datos o utilizar las API de administrador para habilitar una hoja de cálculo que acepte datos.
+Una vez que haya [creado y previsualizado el formulario](/help/edge/docs/forms/create-forms.md), es hora de habilitar la hoja de cálculo correspondiente para que comience a recibir datos. Puede hacer lo siguiente:
+
+* [Habilite manualmente la hoja de cálculo para aceptar datos](#manually-enable-the-spreadsheet-to-accept-data)
+* [Utilice las API de administrador para habilitar una hoja de cálculo que acepte datos](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
 
 ![Ecosistema de creación basado en documentos](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 
+<!--
+
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
 
+-->
+
+Puede [configurar el servicio de envío de Forms manualmente](#configuring-the-forms-submission-service-manually) o [configurar el servicio de envío de Forms mediante la API](#configuring-the-forms-submission-service-using-api).
 
 
 ## Habilitar manualmente la hoja de cálculo para que acepte datos
@@ -60,118 +68,112 @@ Una vez configurada la hoja para recibir datos, puede [obtener una vista previa 
 >
 >  Las hojas &quot;compartidas de aem&quot; nunca deben contener información personal identificable o datos confidenciales con los que no se sienta cómodo de ser de acceso público.
 
-<!--
-### Use Admin APIs to enable a spreadsheet to accept data
 
-You can also send a POST request to the form to enable it to accept data and configure headers for the `incoming` sheet. Upon receiving the POST request, the service analyzes the body of request and autonomously generates the essential headers and sheets needed for data ingestion.
+## Utilice las API de administrador para habilitar una hoja de cálculo que acepte datos
 
-To use Admin APIs to enable a spreadsheet to accept data: 
+También puede enviar una petición POST al formulario para habilitarla para que acepte datos y configurar los encabezados de la hoja `incoming`. Al recibir la petición POST, el servicio analiza el cuerpo de la solicitud y genera de forma autónoma los encabezados y hojas esenciales necesarios para la ingesta de datos.
 
-
-1. Open the workbook that you have created and change the name of the default sheet to `incoming`. 
-
-    >[!WARNING] 
-    >
-    > If the `incoming` sheet doesn't exist, AEM won't send any data to this workbook.
-
-1. Preview the sheet in the sidekick.
-
-    >[!NOTE] 
-    >
-    >Even if you have previewed the sheet before, you must preview it again after creating the `incoming` sheet for the first time.
-
-1. Send the POST request to generate the appropriate headers in the `incoming` sheet, and add the `shared-default` sheets to your spread sheet, if it does not exist already.
-
-    To understand how to format the POST request for setting up your sheet, refer to the [Admin API documentation](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). You can look at the example provided below: 
-
-    **Request** 
-    
-    ```JSON
-
-    POST 'https://admin.aem.page/form/{owner}/{repo}/{branch}/contact-us.json' \
-    --header 'Content-Type: application/json' \
-    --data '{
-        "data": {
-            "Email": "john@wknd.com",
-            "Name": "John",
-            "Subject": "Regarding Product Inquiry",
-            "Message": "I have some questions about your products.",
-            "Phone": "123-456-7890",
-            "Company": "Adobe Inc.",
-            "Country": "United States",
-            "PreferredContactMethod": "Email",
-            "SubscribeToNewsletter": true
-        }
-    }'
-
-    ```
+Para utilizar las API de administrador para habilitar una hoja de cálculo que acepte datos:
 
 
-    **Response**
+1. Abra el libro que ha creado y cambie el nombre de la hoja predeterminada a `incoming`.
 
-    ```JSON
+   >[!WARNING]
+   >
+   > Si la hoja `incoming` no existe, AEM no enviará ningún dato a este libro de trabajo.
 
-    HTTP/2 200 
-    content-type: application/json
-    x-invocation-id: 1b3bd30a-8cfb-4f85-a662-4b1f7cf367c5
-    cache-control: no-store, private, must-revalidate
-    accept-ranges: bytes
-    date: Sat, 10 Feb 2024 09:26:48 GMT
-    via: 1.1 varnish
-    x-served-by: cache-del21736-DEL
-    x-cache: MISS
-    x-cache-hits: 0
-    x-timer: S1707557205.094883,VS0,VE3799
-    strict-transport-security: max-age=31557600
-    content-length: 138
+1. Previsualice la hoja en la barra de tareas.
 
-    {"rowCount":2,"columns":["Email","Name","Subject","Message","Phone","Company","Country",      "PreferredContactMethod","SubscribeToNewsletter"]}%
+   >[!NOTE]
+   >
+   >Incluso si ya ha previsualizado la hoja anteriormente, debe volver a previsualizarla después de crear la hoja `incoming` por primera vez.
 
-    ```
+1. Envíe la petición POST para generar los encabezados adecuados en la hoja `incoming` y añada las hojas `shared-default` a la hoja de cálculo, si no existe todavía.
 
-    You can use tools like curl or Postman to execute this POST request, as demonstrated below:
+   Para saber cómo dar formato a la petición POST para configurar la hoja, consulte la [Documentación de API de administrador](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). Puede ver el ejemplo que se proporciona a continuación:
 
-    ```JSON
+   **Petición**
 
-    curl -s -i -X POST 'https://admin.aem.page/form/wkndform/wefinance/main/contact-us.json' \
-        --header 'Content-Type: application/json' \
-        --data '{
-            "data": {
-                "Email": "john@wknd.com",
-                "Name": "John",
-                "Subject": "Regarding Product Inquiry",
-                "Message": "I have some questions about your products.",
-                "Phone": "123-456-7890",
-                "Company": "Wknd Inc.",
-                "Country": "United States",
-                "PreferredContactMethod": "Email",
-                "SubscribeToNewsletter": true
-        }
-    }'
+   ```JSON
+   POST 'https://admin.aem.page/form/{owner}/{repo}/{branch}/contact-us.json' \
+   --header 'Content-Type: application/json' \
+   --data '{
+       "data": {
+           "Email": "john@wknd.com",
+           "Name": "John",
+           "Subject": "Regarding Product Inquiry",
+           "Message": "I have some questions about your products.",
+           "Phone": "123-456-7890",
+           "Company": "Adobe Inc.",
+           "Country": "United States",
+           "PreferredContactMethod": "Email",
+           "SubscribeToNewsletter": true
+       }
+   }'
+   ```
 
-    ```
 
-    The above mentioned POST request provides sample data, including both form fields and their respective sample values. This data is used by the Admin service to set up the form.
+   **Respuesta**
 
-    Your form is now enabled to accept data. You also observe the following changes in your spreadsheet: 
+   ```JSON
+   HTTP/2 200 
+   content-type: application/json
+   x-invocation-id: 1b3bd30a-8cfb-4f85-a662-4b1f7cf367c5
+   cache-control: no-store, private, must-revalidate
+   accept-ranges: bytes
+   date: Sat, 10 Feb 2024 09:26:48 GMT
+   via: 1.1 varnish
+   x-served-by: cache-del21736-DEL
+   x-cache: MISS
+   x-cache-hits: 0
+   x-timer: S1707557205.094883,VS0,VE3799
+   strict-transport-security: max-age=31557600
+   content-length: 138
+   
+   {"rowCount":2,"columns":["Email","Name","Subject","Message","Phone","Company","Country",      "PreferredContactMethod","SubscribeToNewsletter"]}%
+   ```
 
-## Automatic changes to sheet once it is enabled to accept data. 
+   Puede utilizar herramientas como cURL o Postman para ejecutar esta petición POST, como se muestra a continuación:
 
-Once the sheet is set to recieve data, you observe the following changes in your spreadsheet: 
+   ```JSON
+   curl -s -i -X POST 'https://admin.aem.page/form/wkndform/wefinance/main/contact-us.json' \
+       --header 'Content-Type: application/json' \
+       --data '{
+           "data": {
+               "Email": "john@wknd.com",
+               "Name": "John",
+               "Subject": "Regarding Product Inquiry",
+               "Message": "I have some questions about your products.",
+               "Phone": "123-456-7890",
+               "Company": "Wknd Inc.",
+               "Country": "United States",
+               "PreferredContactMethod": "Email",
+               "SubscribeToNewsletter": true
+       }
+   }'
+   ```
 
-A sheet named "Slack" is added to your Excel Workbook or Google Sheet. In this sheet, you can configure automatic notifications for a designated Slack channel whenever new data is ingested into your spreadsheet. At present, AEM supports notifications exclusively to the AEM Engineering Slack organization and the Adobe Enterprise Support organization.
+   La petición POST mencionada anteriormente proporciona datos de muestra, incluidos los campos de formulario y sus respectivos valores de ejemplo. El servicio de administración utiliza estos datos para configurar el formulario.
 
-1. To set up Slack notifications enter the "teamId" of the Slack workspace and the "channel name" or "ID". You can also ask the slack-bot (with the debug command) for the "teamId" and the "channel ID". Using the "channel ID" instead of the "channel name" is preferable, as it survives channel renames.
+   El formulario ahora está habilitado para aceptar datos. También observará los siguientes cambios en la hoja de cálculo:
 
-    >[!NOTE] 
-    >
-    > Older forms didn't have the "teamId" column. The "teamId" was included in the channel column, separated by a "#" or "/".
+## Cambia automáticamente a la hoja una vez que está habilitada para aceptar datos.
 
-1. Enter any title that you want and under fields enter the names of the fields you want to see in the Slack notification. Each heading should be separated by a comma (For example name, email).
+Una vez que la hoja está configurada para recibir datos, se observan los siguientes cambios en la hoja de cálculo:
 
-    >[!WARNING] 
-    >
-    >  Never should the "shared-default" sheets contain any personally identifiable information or sensitive data that you are not comfortable with being publicly accessible.
+Se agrega una hoja denominada “Slack” al libro de Excel o a la hoja de Google Sheets. En esta hoja, puede configurar las notificaciones automáticas para un canal de Slack designado cada vez que se incorporen nuevos datos en la hoja de cálculo. En la actualidad, AEM admite notificaciones únicamente a las organizaciones AEM Engineering Slack y Adobe Enterprise Support.
+
+1. Para configurar las notificaciones de Slack, escriba “teamId” en el espacio de trabajo de Slack y el nombre del canal o “ID”. También puede solicitar al bot de Slack (con el comando debug) para el “teamId” y “channel ID”. Es preferible utilizar el “ID de canal” en lugar del “nombre de canal”, ya que se mantiene después de cambiar el nombre del canal.
+
+   >[!NOTE]
+   >
+   > Los formularios anteriores no tenían la columna “teamId”. El “teamId” se incluía en la columna del canal, separado por “#” o “/”.
+
+1. Introduzca el título que desee y en los campos escriba los nombres de los campos que desea ver en la notificación de Slack. Cada encabezado debe separarse con una coma (por ejemplo, nombre, correo electrónico).
+
+   >[!WARNING]
+   >
+   >  Las hojas &quot;shared-default&quot; nunca deben contener información personal identificable o datos confidenciales con los que no se sienta cómodo si tienen acceso público.
 
 
 

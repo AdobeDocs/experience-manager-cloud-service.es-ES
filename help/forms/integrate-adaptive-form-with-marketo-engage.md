@@ -5,14 +5,14 @@ Keywords: How to connect a Marketo instance with form? , Connect a form to Marke
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
 exl-id: 1fcba628-ffd8-416a-a8b5-76b35d4aabd4
-source-git-commit: e46c5afac945620cc44e9064956848acecc786bf
+source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '576'
 ht-degree: 9%
 
 ---
 
-# Configuración del nuevo formulario para integrarlo con el Marketo Engage
+# Integración de un formulario adaptable con Marketo Engage
 
 <span class="preview"> La funcionalidad está disponible en el programa de primeros usuarios. Puede escribir a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa de primeros usuarios y solicitar acceso a esta funcionalidad. </span>
 
