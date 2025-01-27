@@ -4,10 +4,10 @@ description: Obtenga información acerca del lanzamiento de Cloud Manager 2025.1
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 9850a52626c2bd80f7528931d23691dff1dd3eb2
+source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 10%
+source-wordcount: '841'
+ht-degree: 9%
 
 ---
 
@@ -59,7 +59,7 @@ La próxima versión planificada es el viernes, 13 de febrero de 2025.
       * El despliegue gradual en todos los entornos de Cloud Manager comienza en febrero para los entornos de pruebas y desarrollo y se extiende a los entornos de producción en abril.
       * Los clientes que usen Java 11 y deseen adoptar el tiempo de ejecución de Java 21 *antes* pueden ponerse en contacto con el Adobe en [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
-* Se cambió el nombre de **&quot;Configuraciones de CDN&quot; a &quot;Asignaciones de dominio&quot;:** Como parte de las mejoras en la interfaz de usuario en AEM Cloud Manager, ahora se cambia el nombre de la etiqueta &quot;Configuraciones de CDN&quot; a &quot;Asignaciones de dominio&quot;. Este cambio mejora la alineación de la terminología con la funcionalidad. <!-- CMGR-64738 -->
+* Se cambió el nombre de **&quot;Configuraciones de CDN&quot; a &quot;Asignaciones de dominio&quot; :** Como parte de las mejoras en la interfaz de usuario en AEM Cloud Manager, se cambió el nombre de la etiqueta &quot;Configuraciones de CDN&quot; a &quot;Asignaciones de dominio&quot;. Este cambio mejora la alineación de la terminología con la funcionalidad. <!-- CMGR-64738 -->
 
   Se cambió el nombre de ![ &quot;Configuraciones de CDN&quot; a &quot;Asignaciones de dominio&quot; en la interfaz de usuario](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
 
@@ -80,6 +80,8 @@ La próxima versión planificada es el viernes, 13 de febrero de 2025.
 * **Compatibilidad mejorada con los sitios de Edge Delivery Services:** Cloud Manager ahora admite la incorporación de los sitios de Edge Delivery Services más recientes. Esta actualización incluye una refactorización completa de la red de distribución de contenido (CDN) y de la pila de envíos, lo que mejora la solidez y la capacidad de mantenimiento.
 
 * **Actualización anticipada del programa del usuario que lo adoptó - Soporte de validación de PR para Bitbucket y GitLab:** Cloud Manager ahora admite la validación de solicitudes de extracción (PR) tanto para la nube como para las versiones autohospedadas de Bitbucket y GitLab. Esta función permite a los clientes probar los cambios de código en relación con los umbrales de calidad del código de Adobe antes de combinar una PR. Al garantizar una mayor calidad del código antes de la combinación, esta mejora mejora mejora significativamente la tasa de éxito de los cambios de código en las canalizaciones de producción, lo que reduce el tiempo de salida al mercado y optimiza los flujos de trabajo de desarrollo.
+
+Para obtener más información sobre &quot;Traer su propio Git&quot; (ahora compatible con GitLab y Bitbucket) y registrarse como usuario que adopta anticipadamente, consulte [Notas de la versión de Cloud Manager de octubre de 2024](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
 
 * **Opciones de filtrado avanzadas para canalizaciones:** Cloud Manager ahora cuenta con opciones de filtrado avanzadas en la página Canalizaciones, lo que le permite acceder rápidamente a los datos relevantes y mejorar la eficacia de la implementación. Algunas de las características clave son las siguientes:
 
