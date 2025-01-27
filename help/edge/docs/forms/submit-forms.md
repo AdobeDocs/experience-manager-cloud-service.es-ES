@@ -4,10 +4,10 @@ description: Cree formularios potentes más rápido con hojas de cálculo y camp
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
+source-git-commit: 552779d9d1cee2ae9f233cabc2405eb6416c41bc
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 79%
+source-wordcount: '873'
+ht-degree: 81%
 
 ---
 
@@ -27,9 +27,6 @@ Una vez que haya [creado y previsualizado el formulario](/help/edge/docs/forms/c
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
 
 -->
-
-Puede [configurar el servicio de envío de Forms manualmente](#configuring-the-forms-submission-service-manually) o [configurar el servicio de envío de Forms mediante la API](#configuring-the-forms-submission-service-using-api).
-
 
 ## Habilitar manualmente la hoja de cálculo para que acepte datos
 
