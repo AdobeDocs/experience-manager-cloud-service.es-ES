@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ef6f00203241c12fce08cf81495b36f47e64613e
+source-git-commit: eb2c451019e1c9d6f48558154ee58598bd1f2e02
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '756'
 ht-degree: 4%
 
 ---
@@ -43,10 +43,13 @@ Antes de continuar, asegúrese de haber cargado la plantilla de HTML en el entor
 1. Abra el formulario adaptable para editarlo.
 1. Vaya al **Explorador de contenido**, seleccione el **Contenedor de la guía** y pulse el icono de propiedades. Aparece un cuadro de diálogo con el título `Adaptive Form Container`.
 1. Vaya a la pestaña **Envío** y seleccione la acción de envío **Enviar correo electrónico**.
+
+   ![Enviar acción de envío por correo electrónico](/help/forms/assets/send-email-action.png)
+
 1. Habilite la opción **Usar plantilla externa**.
 1. Habilite la opción **Usar plantilla de HTML**.
 1. Haga clic en el icono de la carpeta para la opción Ruta de la plantilla externa y busque y seleccione la plantilla del HTML.
-1. Haga clic en Listo para guardar la configuración.
+1. Haga clic en **Listo** para guardar la configuración.
 
 La plantilla del HTML ahora está configurada para el formulario adaptable.
 
@@ -55,7 +58,6 @@ La plantilla del HTML ahora está configurada para el formulario adaptable.
 1. Abra el formulario adaptable para editarlo.
 1. Vaya al **Explorador de contenido**, seleccione el **Contenedor de la guía** y pulse el icono de propiedades. Aparece un cuadro de diálogo con el título `Adaptive Form Container`.
 1. Vaya a la pestaña **Envío** y seleccione la acción de envío **Enviar correo electrónico**.
-1. Habilite la opción **Usar plantilla externa**.
 1. Habilite la opción **Usar plantilla de HTML**.
 1. Escriba o pegue su código de HTML directamente en el cuadro **Plantilla de correo electrónico** proporcionado.
 
@@ -149,8 +151,6 @@ Este es un ejemplo de plantilla de correo electrónico de texto sin formato:
     Best regards,
     Your Team
 ```
-
-Reemplace los marcadores de posición (${name}, ${email}, etc.) con los nombres de los campos de formulario correspondientes en el formulario adaptable.
 
 ## Prácticas recomendadas para plantillas de correo electrónico de HTML
 
