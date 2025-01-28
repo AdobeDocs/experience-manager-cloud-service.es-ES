@@ -4,10 +4,10 @@ description: Obtenga información sobre las tareas de mantenimiento en AEM as a 
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 3692cf1b14fda80f35eb34583fbbf6b256a89917
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 30%
+source-wordcount: '2043'
+ht-degree: 31%
 
 ---
 
@@ -267,7 +267,7 @@ Tenga en cuenta que para que la configuración sea válida:
 * todas las propiedades deben estar definidas. No hay valores predeterminados heredados.
 * se deben respetar los tipos (enteros, cadenas, booleanos, etc.) de las tablas de propiedades siguientes.
 
-**4**: cree una canalización de configuración en Cloud Manager, tal como se describe en el artículo [canalización de configuración.](/help/operations/config-pipeline.md#managing-in-cloud-manager) Las zonas protegidas y los entornos de desarrollo rápido (RDE) no admiten la depuración.
+**4**: cree una canalización de configuración en Cloud Manager, tal como se describe en el artículo [canalización de configuración.](/help/operations/config-pipeline.md#managing-in-cloud-manager)
 
 ### Depuración de la versión {#version-purge}
 
@@ -373,4 +373,4 @@ Las columnas que indican *default* indican los valores predeterminados en el fut
 | reglas | - | - | Sí | Objeto | Uno o más de los siguientes nodos: replicación, páginas, DAM. Cada uno de estos nodos define reglas, con las propiedades a continuación. Todas las propiedades deben declararse. |
 | maximumAgeDays | 7 días | para todos, 2557 (7 años + 2 días bisiestos) | Sí | integer | Para replicación, páginas o dam: número de días que se guardan los registros de auditoría. Los registros de auditoría anteriores al valor configurado se depuran. |
 | contentPath | &quot;/content&quot; | &quot;/content&quot; | Sí | Cadena | Ruta de acceso en la que se purgarán los registros de auditoría, para el tipo relacionado. Debe establecerse en &quot;/content&quot;. |
-| tipos | todos los valores | todos los valores | Sí | Matriz de enumeración | Para **replication**, los valores enumerados son: Activate, Deactivate, Delete, Test, Reverse, Internal Poll. Para **páginas**, los valores enumerados son: PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestored, PageRolled Out, PageValid, PageInvalid. Para **dam**, los valores enumerados son: ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET_UPDATED , SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJECTED. |
+| tipos | todos los valores | todos los valores | Sí | Matriz de enumeración | Para **replication**, los valores enumerados son: Activate, Deactivate, Delete, Test, Reverse, Internal Poll. Para **páginas**, los valores enumerados son: PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestored, PageRolled Out, PageValid, PageInvalid. Para **dam**, los valores enumerados son: ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET_UPDATED, SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJECTED. |

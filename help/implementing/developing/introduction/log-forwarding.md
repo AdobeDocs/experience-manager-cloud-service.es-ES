@@ -4,9 +4,9 @@ description: Obtenga información acerca del reenvío de registros a proveedores
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6e91ad839de6094d7f6abd47881dabc6357a80ff
+source-git-commit: 9c258e2906c37ee9b91d2faa78f7dfdaa5956dc2
 workflow-type: tm+mt
-source-wordcount: '1975'
+source-wordcount: '1985'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ AEM Los clientes con una licencia con un proveedor de registro o que alojen un p
 * HTTPS
 * Splunk
 
-El reenvío de registros se configura en modo de autoservicio declarando una configuración en Git e implementándola a través de la canalización de configuración de Cloud Manager en los tipos de entorno de RDE, desarrollo, fase y producción en programas de producción (que no sean de zona protegida).
+El reenvío de registros se configura en modo de autoservicio declarando una configuración en Git y se puede implementar mediante canalizaciones de configuración de Cloud Manager en los tipos de entorno de desarrollo, ensayo y producción. El archivo de configuración se puede implementar en entornos de desarrollo rápido (RDE) mediante herramientas de línea de comandos.
 
 AEM Hay una opción para que los registros de la y de Apache/Dispatcher AEM se enruten a través de infraestructuras de red avanzadas de la interfaz de usuario, como la IP de salida dedicada.
 
