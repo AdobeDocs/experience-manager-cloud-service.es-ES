@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '6492'
 ht-degree: 99%
@@ -14,7 +14,9 @@ ht-degree: 99%
 
 # Adición de reglas a un formulario adaptable {#adaptive-forms-rule-editor}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/creating-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
+>[!NOTE]
+>
+> El Adobe recomienda usar la captura de datos moderna y extensible [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear nuevos Forms adaptables](/help/forms/creating-adaptive-form-core-components.md) o [agregar Forms adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base.
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -561,7 +563,7 @@ Incluir una etiqueta `jsdoc` es obligatorio:
 * Si desea una configuración y descripción personalizadas.
 * Porque hay varias formas de declarar una función en `JavaScript,` y los comentarios permiten realizar un seguimiento de las funciones.
 
-El editor de reglas admite la sintaxis de JavaScript ES5 para scripts y funciones personalizadas.
+El editor de reglas admite la sintaxis de JavaScript ES5 para scripts y funciones personalizadas. 
 Para obtener más información, consulte [jsdoc.app](https://jsdoc.app/).
 
 Etiquetas `jsdoc` compatibles:
