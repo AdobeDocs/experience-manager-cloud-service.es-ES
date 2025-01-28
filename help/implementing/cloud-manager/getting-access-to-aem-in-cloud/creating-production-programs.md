@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: 8b15b203d0d6a5947a80c9bd217c7fdcdb8f494c
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 13%
+source-wordcount: '1045'
+ht-degree: 12%
 
 ---
 
@@ -33,15 +33,15 @@ Según los derechos de su organización, es posible que vea [opciones adicionale
 
 1. En el asistente *Vamos a crear su programa*, en el campo de texto **Nombre del programa**, escriba el nombre que desee para el programa.
 
-1. En **Objetivo del programa**, seleccione **`Set up for production`**.
+1. En **Objetivo del programa**, seleccione ![Icono del globo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg)**Configurado para producción**.
 
    ![Creación del asistente del programa](assets/create-production-program.png)
 
-1. (Opcional) En la esquina inferior derecha del cuadro de diálogo del asistente, realice una de las siguientes acciones:
+1. (Opcional) En la esquina inferior derecha del cuadro de diálogo del asistente, realice una de las acciones siguientes:
 
-   * Arrastre y suelte un archivo de imagen en el destino **Agregar una imagen de programa**.
-   * Haga clic en **Agregar una imagen de programa** y, a continuación, seleccione una imagen de un explorador de archivos.
-   * Haga clic en el icono de la papelera para eliminar una imagen que haya agregado.
+   * Arrastre y suelte un archivo de imagen en el ![icono de imagen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **Agregue un destino de imagen de programa**.
+   * Haga clic en ![icono de imagen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **Agregar una imagen de programa** y, a continuación, seleccione una imagen de un explorador de archivos.
+   * Haga clic en ![Eliminar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) para eliminar una imagen que haya agregado.
 
 1. Haga clic en **Continuar**.
 
@@ -52,13 +52,13 @@ Según los derechos de su organización, es posible que vea [opciones adicionale
    * Seleccione **Edge Deliver Services** para una solución de CDN totalmente administrada que optimice las experiencias digitales. Ver [Acerca del uso de Edge Delivery Services para entregar el proyecto de Cloud Manager](#edge-overview)
    * Si seleccionó la opción **[Habilitar seguridad mejorada](#security)**, solo podrá seleccionar tantas soluciones para las que los derechos HIPAA estén disponibles.
 
-   ![Seleccionar soluciones](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
+     ![Seleccionar soluciones](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
 
-1. Haga clic en las comillas angulares a la izquierda del nombre de una solución para mostrar los complementos opcionales, como la opción de complemento **Commerce** en **Sitios**.
+   * Haga clic en ![Icono de tamaño 300 de cheurón](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) a la izquierda del nombre de una solución para mostrar los complementos opcionales, como la opción de complemento **Commerce** en **Sitios**.
 
    ![Seleccionar complementos](assets/setup-prod-commerce.png)
 
-1. Con las soluciones y los complementos seleccionados, haga clic en **Continuar**.
+1. Cuando termine de seleccionar las soluciones y los complementos, haga clic en **Continuar**.
 
 1. En la ficha **Fecha de lanzamiento**, escriba la fecha en la que planea que su programa de producción se ponga en marcha.
 
@@ -69,7 +69,7 @@ Según los derechos de su organización, es posible que vea [opciones adicionale
 
 1. Haga clic en **Crear**. Cloud Manager crea el programa y lo muestra en la página de aterrizaje para su selección.
 
-![Información general de Cloud Manager](assets/navigate-cm.png)
+   ![Información general de Cloud Manager](assets/navigate-cm.png)
 
 ## Opciones adicionales del programa de producción {#options}
 
@@ -98,7 +98,7 @@ Si tiene los derechos necesarios, la ficha **SLA** se muestra como la segunda o 
 
 ![Opciones de SLA](assets/create-production-program-sla.png)
 
-AEM Sites y Forms ofrecen un acuerdo estándar de nivel de servicio del 99,9 % (SLA). La opción **Contrato de nivel de servicio al 99,99 %** habilita un porcentaje de tiempo de actividad mínimo del 99,99 % para los entornos de producción de Sites y/o Forms.
+AEM Sites y Forms ofrecen un 99,9 % de service level agreement estándar (SLA). La opción **99,99% de Service level agreement** habilita un porcentaje de tiempo de actividad mínimo del 99,99% para los entornos de producción de Sites o Forms.
 
 El 99,99 % de SLA ofrece beneficios que incluyen una mayor disponibilidad y una menor latencia, y requiere que se aplique una [región de publicación adicional](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) al entorno de producción en el programa.
 

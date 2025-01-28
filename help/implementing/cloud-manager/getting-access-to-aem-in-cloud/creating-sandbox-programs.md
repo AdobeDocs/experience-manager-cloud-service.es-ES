@@ -5,7 +5,7 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
+source-git-commit: 8b15b203d0d6a5947a80c9bd217c7fdcdb8f494c
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 15%
@@ -32,7 +32,7 @@ Obtenga más información acerca de los tipos de programas en el documento [Expl
 
    ![Creación de un tipo de programa](assets/create-sandbox.png)
 
-1. (Opcional) En la esquina inferior derecha del cuadro de diálogo del asistente, realice una de las acciones siguientes:
+1. (Opcional) En la esquina inferior derecha del cuadro de diálogo del asistente, realice una de las siguientes acciones:
 
    * Arrastre y suelte un archivo de imagen en el ![icono de imagen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **Agregue un destino de imagen de programa**.
    * Haga clic en ![icono de imagen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **Agregar una imagen de programa** y, a continuación, seleccione una imagen de un explorador de archivos.
