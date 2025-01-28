@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: b0bc2eb4298a88c6dc421390dd9527e181386b5d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2513'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -510,7 +510,7 @@ Las configuraciones de +++OSGi están sujetas a reglas de validación de compila
 
 ## Actualización de Java Runtime a la versión 21 {#java-runtime-update-21}
 
-Adobe Experience Manager as a Cloud Service está realizando la transición a Java 21 Runtime. Para garantizar la compatibilidad, es esencial actualizar las versiones de la biblioteca tal como se describe en [Requisitos de tiempo de ejecución](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
+Adobe Experience Manager as a Cloud Service está realizando la transición al tiempo de ejecución de Java 21. Para garantizar la compatibilidad, es esencial actualizar las versiones de la biblioteca tal como se describe en [Requisitos de tiempo de ejecución](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 
 <!-- (OLD Removed from here to end of topic 1/16/25 as per instruction in https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3359689801) AEM as a Cloud Service will be moving to Java 21 runtime. In order to ensure compatibility, it is essential to make the following adjustments:
 
