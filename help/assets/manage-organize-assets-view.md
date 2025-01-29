@@ -5,16 +5,16 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 92%
+source-wordcount: '1633'
+ht-degree: 73%
 
 ---
 
 # Administración de recursos {#manage-assets}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación de desarrollador de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 Puede realizar varias tareas de administración de activos digitales (DAM) fácilmente mediante la interfaz de usuario sencilla de usar de [!DNL Assets view]. Una vez añadidos los recursos, puede buscarlos, descargarlos, moverlos, copiarlos, cambiarles el nombre, eliminarlos, actualizarlos y editarlos.
@@ -138,6 +138,53 @@ Si tiene Dynamic Media con capacidades OpenAPI proporcionadas para su entorno, E
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
+
+
+### Definir destino de aprobación {#set-approval-target}
+
+La vista de Assets le permite publicar recursos aprobados en Dynamic Media con capacidades de OpenAPI, Content Hub o ambas en función del valor establecido en el campo **Destino de aprobación** disponible en la página Detalles del recurso.
+
+Para establecer el objetivo de aprobación:
+
+1. Seleccione el recurso y haga clic en **[!UICONTROL Detalles]** en la barra de herramientas.
+
+1. En la ficha **[!UICONTROL Básico]**, seleccione el estado del recurso en la lista desplegable **[!UICONTROL Estado]**. Los valores posibles incluyen Aprobado, Rechazado y Sin estado (predeterminado).
+
+1. Si selecciona **Aprobado** en el paso 2, seleccione un destino de aprobación. Los valores posibles incluyen Delivery y Content Hub.
+
+   * **Delivery** es la opción predeterminada seleccionada en el menú desplegable y publica el recurso en [Dynamic Media con OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) y [Content Hub](/help/assets/product-overview.md), si ambos están habilitados para Experience Manager Assets.
+
+   * Al seleccionar **Content Hub**, se publica el recurso en Content Hub. Content Hub solo se muestra como opción si está habilitado para Experience Manager Assets.
+
+   * Si no selecciona una opción en la lista desplegable, la opción predeterminada habilitada para su entorno de AEM as a Cloud Service se aplica automáticamente al recurso.
+
+
+   Para obtener más información sobre las opciones disponibles, consulte [Destino de aprobación predeterminado y destinos de publicación para recursos aprobados](#default-approval-target-options-publish-destinations).
+
+   >[!NOTE]
+   >
+   >La configuración de un objetivo de aprobación es una función de disponibilidad limitada. Puede activarlo o desactivarlo creando un ticket de asistencia. Si tiene Dynamic Media con OpenAPI habilitado, está habilitado de forma predeterminada.
+
+   ![Estado de aprobación](/help/assets/assets/approval-status-delivery.png)
+
+1. Especifique otras propiedades del recurso y haga clic en **[!UICONTROL Guardar]**.
+
+Otros puntos que hay que tener en cuenta son:
+
+* Si no usa el formulario de metadatos predeterminado y no puede ver el campo **[!UICONTROL Destino de aprobación]**, [edite el formulario de metadatos](/help/assets/metadata-assets-view.md#metadata-forms) para arrastrar el campo **[!UICONTROL Aprobación para]** desde los componentes disponibles hasta el formulario de metadatos y haga clic en **[!UICONTROL Guardar]**.
+
+* Al seleccionar el destino de aprobación como `Content Hub` mediante la vista de Assets, los recursos se ponen a disposición de los usuarios de Content Hub que forman parte de la misma organización.
+
+#### Destinos de aprobación predeterminados y destinos de publicación para recursos aprobados {#default-approval-target-options-publish-destinations}
+
+La siguiente tabla ilustra los requisitos previos para la visualización de la lista desplegable `Approval Target` y el objetivo de aprobación predeterminado en función de la habilitación de DM con OpenAPI y Content Hub en el entorno de AEM as a Cloud Service:
+
+| Dynamic Media con OpenAPI | Content Hub | ¿Se muestra la lista desplegable Destino de aprobación? | Destino de aprobación predeterminado para recursos aprobados | Publish destination |
+| --- | --- | --- | --- |---|
+| Habilitado | Habilitado | Sí | Entrega | Dynamic Media con OpenAPI y Content Hub |
+| No disponible | Habilitado | Sí | Content Hub | Content Hub |
+| Habilitado | No disponible | Sí | Entrega | Dynamic Media con OpenAPI |
+| No disponible | No disponible | No | N/D | N/D |
 
 ### Configuración de la fecha de caducidad del recurso {#set-asset-expiration-date}
 
