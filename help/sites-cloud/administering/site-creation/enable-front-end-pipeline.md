@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
+source-git-commit: a5661b6b75180dd77eb794eb5d215fd2e1d5eed0
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 45%
+source-wordcount: '625'
+ht-degree: 39%
 
 ---
 
@@ -66,3 +66,14 @@ Ahora, el sitio está listo para usar la canalización front-end. Para obtener m
 * [Uso del carril del sitio para administrar el tema del sitio](site-rail.md)
 * [Recorrido de creación rápida de sitios](/help/journey-sites/quick-site/overview.md): este recorrido de documentación le ofrece una visión general de principio a fin del proceso de implementación rápida de un sitio mediante la canalización front-end y la herramienta de creación rápida del sitio.
 * [Canalizaciones CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end): este documento describe la canalización front-end en el contexto de las canalizaciones full-stack y de nivel web.
+
+## Canalización front-end y dominios personalizados {#custom-domains}
+
+Como se describe en la sección [Detalles técnicos](#technical-details), al activar la característica de canalización front-end para un sitio se crean `SiteConfig` y `HtmlPageItemsConfig` nodos por debajo de `/conf/<site-name>/sling:configs`.
+
+Si desea usar la función de dominios personalizados [Cloud Manager](/help/implementing/cloud-manager/custom-domain-names/introduction.md) para su sitio junto con la canalización front-end, se deben agregar propiedades adicionales a estos nodos.
+
+1. Establezca la propiedad `customFrontendPrefix` en `SiteConfig` para el sitio.
+1. Esto actualiza el valor `prefixPath` de `HtmlPageItemsConfig` con el dominio personalizado.
+
+Las páginas del sitio hacen referencia a artefactos de temas de la dirección URL actualizada.
