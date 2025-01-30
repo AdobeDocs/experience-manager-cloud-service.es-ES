@@ -7,14 +7,14 @@ role: Admin, Architect, Developer
 source-git-commit: 552779d9d1cee2ae9f233cabc2405eb6416c41bc
 workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 81%
+ht-degree: 97%
 
 ---
 
 # Configure Google Sheets o los archivos de Microsoft Excel para empezar a aceptar datos
 
 
-Una vez que haya [creado y previsualizado el formulario](/help/edge/docs/forms/create-forms.md), es hora de habilitar la hoja de cálculo correspondiente para que comience a recibir datos. Puede hacer lo siguiente:
+Una vez que haya [creado y previsualizado el formulario](/help/edge/docs/forms/create-forms.md), es hora de permitir que la hoja de cálculo correspondiente comience a recibir datos. Puede hacer lo siguiente:
 
 * [Habilite manualmente la hoja de cálculo para aceptar datos](#manually-enable-the-spreadsheet-to-accept-data)
 * [Utilice las API de administrador para habilitar una hoja de cálculo que acepte datos](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
@@ -32,7 +32,7 @@ Una vez que haya [creado y previsualizado el formulario](/help/edge/docs/forms/c
 
 Para permitir que la hoja de cálculo acepte datos
 
-1. Abra la hoja de cálculo que tiene el formulario y anexe una hoja nueva, cambiando el nombre a `incoming`. Por ejemplo, la [consulta](/help/edge/assets/enquiry.xlsx) del libro de Excel de Microsoft.
+1. Abra la hoja de cálculo que tiene el formulario y anexe una hoja nueva, cambiando el nombre por el de `incoming`. Por ejemplo, el libro de Microsotf Excel del formulario de [consulta](/help/edge/assets/enquiry.xlsx).
 
    >[!WARNING]
    >
@@ -40,17 +40,17 @@ Para permitir que la hoja de cálculo acepte datos
 
 1. En esta hoja, inserte una tabla denominada &quot;intake_form&quot;. Seleccione el número de columnas necesarias para hacer coincidir los nombres de los campos de formulario. A continuación, en la barra de herramientas, vaya a Insertar > Tabla y haga clic en Aceptar.
 
-1. Cambie el nombre de la tabla por &quot;intake_form&quot;.  En Microsoft Excel, para cambiar el nombre de la tabla, seleccione la tabla y haga clic en Diseño de tabla.
+1. Cambie el nombre de la tabla por &quot;intake_form&quot;. En Microsoft Excel, para cambiar el nombre de la tabla, seleccione la tabla y haga clic en Diseño de tabla.
 
-1. A continuación, añada los nombres de los campos de formulario como encabezados de tabla. Para asegurarse de que los campos son exactamente los mismos, puede copiarlos y pegarlos desde la hoja &quot;shared-aem&quot;.  En la hoja &quot;shared-aem&quot;, seleccione y copie los ID de formulario enumerados en la columna &quot;Nombre&quot;, excepto el campo de envío.
+1. A continuación, añada los nombres de los campos de formulario como encabezados de tabla. Para asegurarse de que los campos son exactamente los mismos, puede copiarlos y pegarlos en la hoja &quot;shared-aem&quot;.  En la hoja &quot;shared-aem&quot;, seleccione y copie los ID de formulario listados en la columna &quot;Nombre&quot;, excepto el campo de envío.
 
 1. En la hoja &quot;incoming&quot;, seleccione Pegado especial > Transponer filas a columnas para copiar los ID de campo como encabezados de columna en esta nueva hoja. Mantener solo los campos cuyos datos necesitan capturar otros datos se puede ignorar.
 
-   Cada valor de la columna `Name` de la hoja `shared-aem`, excluyendo el botón de envío, puede servir como encabezado en la hoja `incoming`. Por ejemplo, vea la siguiente imagen que ilustra los encabezados de un formulario de &quot;consulta&quot;:
+   Cada valor de la columna `Name` de la hoja `shared-aem`, excluyendo el botón de envío, puede servir como encabezado en la hoja `incoming`. Por ejemplo, considere la siguiente imagen que ilustra los encabezados de un formulario de &quot;consulta&quot;:
 
    ![Campos para un formulario contáctenos](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-1. Utilice la extensión [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para obtener una vista previa de las actualizaciones del formulario. La hoja ya está lista para aceptar los envíos de formulario entrantes.
+1. Utilice la extensión de [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para obtener una vista previa de las actualizaciones del formulario. La hoja ya está lista para aceptar los envíos de formulario entrantes.
 
    >[!NOTE]
    >
@@ -59,11 +59,11 @@ Para permitir que la hoja de cálculo acepte datos
 
 Una vez añadidos los nombres de campo a la hoja `incoming`, el formulario estará listo para aceptar envíos. Puede obtener una vista previa del formulario y enviar datos a la hoja utilizándolo.
 
-Una vez configurada la hoja para recibir datos, puede [obtener una vista previa del formulario](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) <!--or [use POST requests](#use-admin-apis-to-send-data-to-your-sheet)--> para comenzar a enviar datos a la hoja.
+Una vez configurada la hoja para recibir datos, puede [previsualizar el formulario](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) <!--or [use POST requests](#use-admin-apis-to-send-data-to-your-sheet)--> para empezar a enviar datos a la hoja.
 
 >[!WARNING]
 >
->  Las hojas &quot;compartidas de aem&quot; nunca deben contener información personal identificable o datos confidenciales con los que no se sienta cómodo de ser de acceso público.
+>  Las hojas &quot;shared-aem&quot; nunca deben contener información personal identificable o datos confidenciales con los que no se sienta cómodo si son de acceso público.
 
 
 ## Utilice las API de administrador para habilitar una hoja de cálculo que acepte datos

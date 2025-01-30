@@ -87,7 +87,7 @@ ht-degree: 99%
          + [Notas de la versión 2020.2.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
    + Notas de la versión de mantenimiento de AEMaaCS {#maintenance}
       + [Notas de la versión actuales sobre el mantenimiento](/help/release-notes/maintenance/latest.md)
-      + {#2025} de 2025
+      + 2025 {#2025}
          + [Notas de la versión de mantenimiento de 2025.1.0](/help/release-notes/maintenance/2025/2025-1-0.md)
       + 2024 {#2024}
          + [Notas de la versión de mantenimiento de 2024.11.0](/help/release-notes/maintenance/2024/2024-11-0.md)
@@ -701,7 +701,7 @@ ht-degree: 99%
    + Configuración y migración {#setup-configure-migrate}
       + [Incorporación al entorno de Cloud Service](/help/forms/setup-forms-cloud-service.md)
       + [Configuración de un entorno de desarrollo local](/help/forms/setup-local-development-environment.md)
-      + [Habilitar los componentes principales de formularios adaptables en el entorno AEM Forms as a Cloud Service y en el de desarrollo local.](/help/forms/enable-adaptive-forms-core-components.md)
+      + [Habilitar los componentes principales de formularios adaptables en el entorno AEM Forms as a Cloud Service y en el de desarrollo local](/help/forms/enable-adaptive-forms-core-components.md)
       + [Configurar el conector de almacenamiento unificado](/help/forms/configure-unified-storage-connector.md)
       + [Migrar desde [!DNL AEM 6.5 Forms] o anterior a [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Grupos y permisos](/help/forms/forms-groups-privileges-tasks.md)
@@ -1017,7 +1017,7 @@ ht-degree: 99%
          + [Usar reglas para añadir un comportamiento dinámico a un formulario](/help/edge/docs/forms/rules-forms.md)
          + [Expresiones regex para validaciones](/help/edge/docs/forms/regex-forms.md)
          + [Mostrar un mensaje de agradecimiento personalizado después del envío del formulario](/help/edge/docs/forms/thank-you-page-form.md)
-         + [Usar el servicio de envío de Forms](/help/forms/forms-submission-service.md)
+         + [Uso del servicio de envío de formularios](/help/forms/forms-submission-service.md)
       + WYSIWYG {#universal-editor}
          + [Información general: editor universal para Edge Delivery Services de Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
       + Funciones {#advanced-features-edge-delivery-services-forms}
@@ -1027,7 +1027,7 @@ ht-degree: 99%
          + [Utilizar reCAPTCHA para proteger los formularios](/help/edge/docs/forms/recaptacha-forms.md)
          + [Componentes personalizados](/help/edge/docs/forms/custom-components-forms.md)
          + [Monitorizar el uso real de formularios](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-         + [Publicación de Forms para Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
+         + [Publicación de formularios para Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
       + Referencias {#forms-references}
          + [Componentes de bloque de formulario adaptable y sus propiedades](/help/edge/docs/forms/form-components.md)
    + Recursos de Edge Delivery {#resources}
