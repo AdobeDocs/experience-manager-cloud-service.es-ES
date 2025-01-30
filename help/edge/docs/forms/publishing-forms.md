@@ -1,45 +1,45 @@
 ---
-title: Publicación de Forms para Edge Delivery Services
-description: Aprenda cómo funciona la publicación de formularios con Edge Delivery Services AEM y cómo publicar formularios de la con Edge Delivery Services.
+title: Publicación de formularios para Edge Delivery Services
+description: Descubra cómo funciona la publicación de formularios con Edge Delivery Services y cómo publicar formularios de AEM con Edge Delivery Services.
 feature: Edge Delivery Services
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: bdc0e51a8b16df432f1f1aeabed11135fb8c8e0c
-workflow-type: tm+mt
+exl-id: b90c27e3-22ea-4b18-b16e-a5c5a0ed58b8
+source-git-commit: 67384a9141ced3bf5be63c8489dd5c329a288056
+workflow-type: ht
 source-wordcount: '993'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
+# Publicación de formularios para Edge Delivery Services
 
-# Publicación de Forms para Edge Delivery Services
-
-AEM Este artículo le guía a través del proceso de publicación de formularios a los Edge Delivery Services de la.
-Para publicar formularios en Edge Delivery Services AEM, primero debe establecer una conexión entre el entorno de la aplicación y el repositorio de GitHub. Una vez conectado, puede crear los formularios con el Editor universal, que sigue un enfoque de WYSIWYG (What You See Is What You Get) para una experiencia de usuario fluida y coherente con Sites.
+Este artículo le guía a través del proceso de publicación de formularios en AEM Edge Delivery Services.
+Para publicar formularios en Edge Delivery Services, primero debe establecer una conexión entre el entorno de AEM y el repositorio de GitHub. Una vez conectado, puede crear los formularios con el editor universal, que sigue un enfoque WYSIWYG (What You See Is What You Get) para una experiencia de usuario fluida y coherente con Sites.
 
 ## Requisitos previos
 
-* ¿Es nuevo en el Forms adaptable? Configure su repositorio de GitHub siguiendo el [tutorial](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) proporcionado.
-* Si ya usa Edge Delivery Services, agregue la versión más reciente del [bloque de Forms adaptable](/help/edge/docs/forms/tutorial.md#) a su repositorio de GitHub.
+* ¿Es nuevo en los formularios adaptables? Configure su repositorio de GitHub siguiendo el [tutorial](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) suministrado.
+* Si ya usa Edge Delivery Services, añada la versión más reciente del [bloque de formularios adaptables](/help/edge/docs/forms/tutorial.md#) a su repositorio de GitHub.
 * La instancia de autor de AEM Forms incluye una plantilla basada en Edge Delivery Services. Asegúrese de que la [última versión de los componentes principales](https://github.com/adobe/aem-core-forms-components) esté instalada en su entorno.
-* Tenga a mano la URL de la instancia de autor del as a Cloud Service de AEM Forms y del repositorio de GitHub.
+* Tenga a mano la URL de la instancia de autor de AEM Forms as a Cloud Service y el repositorio de GitHub.
 
-## Publish Forms para Edge Delivery Services
+## Publicación de formularios para Edge Delivery Services
 
 Para publicar formularios para Edge Delivery Services, realice los siguientes pasos:
 
-[AEM 1. Vincule el repositorio de GitHub a la instancia de](#link-github-repository-to-aem-instance)
+[1. Vincular el repositorio de GitHub a la instancia de AEM](#link-github-repository-to-aem-instance)
 
-[AEM 2. Vincular instancia de la al repositorio de GitHub](#link-aem-instance-to-github-repository)
+[2. Vincular la instancia de AEM al repositorio de GitHub](#link-aem-instance-to-github-repository)
 
-### AEM Vincular repositorio de GitHub a instancia de
+### Vincular el repositorio de GitHub a la instancia de AEM
 
 Para vincular [su proyecto en el repositorio de GitHub](/help/edge/docs/forms/tutorial.md) a la instancia de autor de AEM Forms, realice los siguientes pasos:
 
 1. Vaya al repositorio de GitHub que ha creado o configurado para sus Edge Delivery Services.
 1. Abra el archivo `fstab.yaml` para editarlo.
-1. Actualice el archivo `fstab.yaml` en su repositorio de GitHub con la URL de su instancia as a Cloud Service de AEM Forms.
+1. Actualice el archivo `fstab.yaml` en su repositorio de GitHub con la URL de su instancia de AEM Forms as a Cloud Service.
 
    ```javascript
     mountpoints:
@@ -49,7 +49,7 @@ Para vincular [su proyecto en el repositorio de GitHub](/help/edge/docs/forms/tu
         suffix: ".html"
    ```
 
-   Por ejemplo, si el repositorio de GitHub se llama &quot;aemcrosswalk&quot;, está ubicado en la cuenta &quot;wkndform&quot; y está usando la rama &quot;principal&quot;, la URL de la instancia de autor tendrá el siguiente aspecto:
+   Por ejemplo, si el repositorio de GitHub se llama “aemcrosswalk”, está ubicado en la cuenta “wkndform” y usa la rama “principal”, la dirección URL de la instancia de autor tiene el siguiente aspecto:
 
    ```
         mountpoints:
@@ -61,24 +61,24 @@ Para vincular [su proyecto en el repositorio de GitHub](/help/edge/docs/forms/tu
 
 1. Confirme los cambios realizados en el archivo `fstab.yaml`.
 
-### AEM Vincular instancia a repositorio de GitHub
+### Vincular la instancia de AEM al repositorio de GitHub
 
 Para vincular la instancia de autor de AEM Forms a [su proyecto en el repositorio de GitHub](/help/edge/docs/forms/tutorial.md), realice los siguientes pasos:
 
-[1. Cree un formulario adaptable basado en la plantilla Edge Delivery Services](#1-create-an-adaptive-form-based-on-the-edge-delivery-services-template)
+[1. Crear un formulario adaptable basado en la plantilla de Edge Delivery Services](#1-create-an-adaptive-form-based-on-the-edge-delivery-services-template)
 
-[AEM 2. Busque el contenedor de configuración del formulario en la instancia de autor de la](#2-locate-your-forms-configuration-container-in-aem-author-instance)
+[2. Buscar el contenedor de configuración del formulario en la instancia de autor de AEM](#2-locate-your-forms-configuration-container-in-aem-author-instance)
 
 [3. Crear el formulario en el editor universal](#3-author-the-form-in-the-universal-editor)
 
-[4. Publish y previsualizar el formulario](#4-publish-and-preview-the-form)
+[4. Publicar y previsualizar el formulario](#4-publish-and-preview-the-form)
 
-#### 1. Cree un formulario adaptable basado en la plantilla Edge Delivery Services
+#### 1. Crear un formulario adaptable basado en la plantilla de Edge Delivery Services
 
-1. Acceda a la instancia de autor del as a Cloud Service de AEM Forms.
-1. Seleccione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms y documentos]**.1. Seleccione **[!UICONTROL Crear]** > **[!UICONTROL Forms adaptable]**. Se abre el asistente. En la pestaña Source, seleccione una plantilla de formulario basada en Edge Delivery Services:
+1. Acceda a la instancia de autor de AEM Forms as a Cloud Service.
+1. Seleccione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.1. Seleccione **[!UICONTROL Crear]** > **[!UICONTROL Formularios adaptables]**. Se abre el asistente. En la pestaña Origen, seleccione una plantilla de formulario basada en Edge Delivery Services:
 
-   ![Crear Forms EDS](/help/edge/assets/create-eds-forms.png){width=50%, align-center}
+   ![Crear formularios EDS](/help/edge/assets/create-eds-forms.png){width=50%, align-center}
 
 1. Haga clic en **[!UICONTROL Crear]** y aparecerá el asistente **Crear formulario**.
 1. Especifique la **URL de GitHub**. Por ejemplo, si el repositorio de GitHub se llama &quot;aemcrosswalk&quot; y está ubicado en la cuenta &quot;wkndform&quot;, la dirección URL es la siguiente:
@@ -95,9 +95,9 @@ Para vincular la instancia de autor de AEM Forms a [su proyecto en el repositori
    >
    > La configuración de Edge Delivery Services para los formularios basados en la plantilla de Edge Delivery Services se crea automáticamente en el contenedor de configuración del formulario.
 
-#### AEM 2. Busque el contenedor de configuración del formulario en la instancia de autor de la
+#### 2. Buscar el contenedor de configuración del formulario en la instancia de autor de AEM
 
-1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configuración de Edge Delivery Services]** en la instancia de as a Cloud Service de AEM Forms.
+1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuración de Edge Delivery Services]** en la instancia de autor de AEM Forms as a Cloud Service.
 1. Seleccione la carpeta que coincida con el nombre del formulario. Por ejemplo, si el formulario se llama &quot;contact-us&quot;, elija la carpeta `forms/contact-us`, seleccione la configuración y publique la configuración:
 
    ![Configuración de Edge Delivery Services](/help/forms/assets/aem-instance-eds-configuration.png){width=50%, align-center}
@@ -105,54 +105,54 @@ Para vincular la instancia de autor de AEM Forms a [su proyecto en el repositori
 1. Haga clic en **[!UICONTROL Propiedades]** para ver la configuración.\
    ![Configuración creada automáticamente](/help/edge/assets/aem-forms-create-configuration-github.png){width=50%, align-center}
 
-   Puede dejar la opción Host de Edge tal cual. El formulario se publicaría en los entornos de vista previa (.page) y en directo (.live).
+   Puede dejar la opción Host de Edge tal como está. El formulario se publicaría en los entornos de vista previa (.page) y activo (.live).
 
 1. Haga clic en **[!UICONTROL Guardar y cerrar]**. La configuración se ha guardado.
 
 #### 3. Crear el formulario en el editor universal
 
-Al hacer clic en **[!UICONTROL Crear]**, el formulario se abrirá en el Editor universal para la creación.
+Al hacer clic en **[!UICONTROL Crear]**, el formulario se abrirá en el editor universal para la creación.
 
-1. Abra el Explorador de contenido y vaya al componente **[!UICONTROL Formulario adaptable]** en el **Árbol de contenido**.
+1. Abra el explorador de contenido y vaya al componente **[!UICONTROL Formulario adaptable]** en el **Árbol de contenido**.
 
    ![árbol de contenido](/help/edge/assets/content-tree.png){width=50%, align-center}
 
-1. Haga clic en el icono **[!UICONTROL Agregar]** y agregue los componentes deseados de la lista **Componentes de formulario adaptable**.
+1. Haga clic en el icono de **[!UICONTROL Añadir]** y añada los componentes deseados de la lista **Componentes de formularios adaptables**.
 
-   ![agregar componente](/help/edge/assets/add-component.png){width=50%, align-center}
+   ![añadir componente](/help/edge/assets/add-component.png){width=50%, align-center}
 
-1. Seleccione el componente de formulario adaptable agregado y actualice sus propiedades mediante **[!UICONTROL Propiedades]**.
+1. Seleccione el componente de formulario adaptable añadido y actualice sus propiedades mediante **[!UICONTROL Propiedades]**.
 
    ![abrir propiedades](/help/edge/assets/component-properties.png){width=50%, align-center}
 
    La siguiente captura de pantalla muestra el formulario &quot;Contáctenos&quot; sencillo creado en el editor universal:
 
-   ![formulario de contacto](/help/edge/assets/contact-us.png){width=50%, align-center}
+   ![formulario de contáctenos](/help/edge/assets/contact-us.png){width=50%, align-center}
 
-#### 4. Publish y previsualizar el formulario
+#### 4. Publicar y previsualizar el formulario
 
-Ahora, publique el formulario para los Edge Delivery Services haciendo clic en el botón **[!UICONTROL Publish]** en la esquina superior derecha del editor universal.
+Ahora, publique el formulario en Edge Delivery Services haciendo clic en el botón **[!UICONTROL Publicar]** en la esquina superior derecha del editor universal.
 
 ![publicar formulario](/help/edge/assets/publish-form.png){width=50%, align-center}
 
 
-Así se accede al formulario en Edge Delivery Services:
+A continuación, se explica cómo acceder al formulario en Edge Delivery Services:
 
 * **Versión ensayada (para pruebas)**: la versión ensayada muestra la versión de trabajo sin publicar del formulario para realizar pruebas. Utilice el siguiente formato de URL para previsualizar el formulario antes de que se active:
 
   `https://<branch>--<repo>--<owner>.aem.page/content/forms/af/<form_name>`
 
-  Por ejemplo, si el repositorio de su proyecto se llama &quot;aemcrosswalk&quot;, está ubicado en la cuenta &quot;wkndform&quot; y está usando la rama &quot;principal&quot; y el formulario como &quot;contáctenos&quot;, la URL de la versión ensayada tendrá el siguiente aspecto:
+  Por ejemplo, si el repositorio del proyecto se llama “aemcrosswalk”, está ubicado en la cuenta “wkndform” y usa la rama “principal” y el formulario como &quot;contáctenos&quot;, la dirección URL tiene el siguiente aspecto:
 https://main--aemcrosswalk--wkndform.aem.page/content/forms/af/contact-us
 
-* **Versión activa (formulario publicado)**:   La versión activa muestra la versión publicada más recientemente del formulario, accesible para los usuarios finales. Utilice el siguiente formato de URL para acceder a la versión publicada y activa del formulario:
+* **Versión activa (formulario publicado)**: la versión activa muestra la versión publicada más recientemente del formulario, accesible para los usuarios finales. Utilice el siguiente formato de URL para acceder a la versión publicada y activa del formulario:
 
   `https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form_name>`
 
-  Por ejemplo, si el repositorio de su proyecto se llama &quot;aemcrosswalk&quot;, está ubicado en la cuenta &quot;wkndform&quot; y está usando la rama &quot;principal&quot; y el formulario como &quot;contáctenos&quot;, la URL de la versión ensayada tendrá el siguiente aspecto:
+  Por ejemplo, si el repositorio del proyecto se llama “aemcrosswalk”, está ubicado en la cuenta “wkndform” y usa la rama “principal” y el formulario como &quot;contáctenos&quot;, la dirección URL tiene el siguiente aspecto:
 https://main--aemcrosswalk--wkndform.aem.live/content/forms/af/contact-us
 
-La estructura de la URL sigue siendo la misma para las versiones organizadas y activas. Sin embargo, el contenido que ve difiere según el contexto:
+La estructura de la URL sigue siendo la misma para las versiones ensayadas y activas. Sin embargo, el contenido que ve difiere según el contexto:
 
 ![Ver formulario publicado](/help/edge/assets/eds-view-publish-form.png){width=50%, align-center}
 
@@ -160,13 +160,13 @@ La estructura de la URL sigue siendo la misma para las versiones organizadas y a
 
 ¿Tiene problemas para cargar el formulario? Estos son algunos problemas comunes y cómo solucionarlos:
 
-* **Dirección URL del formulario**: Compruebe que la dirección URL del formulario no incluya la extensión &quot;.html&quot; al final. El servicio de envío de Edge no requiere esta extensión.
+* **Dirección URL del formulario**: compruebe que la dirección URL del formulario no incluya la extensión &quot;.html&quot; al final. Edge Delivery Service no requiere esta extensión.
 
-* AEM AEM **URL de autor de** L: asegúrese de que la URL de autor de la lista del archivo `fstab.yaml` tenga el formato correcto. Debe incluir los siguientes detalles:
+* **URL de autor de AEM**: asegúrese de que la URL de autor que aparece listada en el archivo `fstab.yaml` tenga el formato correcto. Debe incluir los siguientes detalles:
 
    * El propietario correcto de GitHub
    * El nombre de repositorio correcto
-   * La rama específica que utiliza para los Edge Delivery Services
+   * La rama específica que utiliza para Edge Delivery Services
 
 <!-- * **JSON Display**: If you see only JSON data instead of the actual form, your form block might be outdated. You can update it to the latest version available on https://github.com/adobe-rnd/aem-boilerplate-forms.
 -->
