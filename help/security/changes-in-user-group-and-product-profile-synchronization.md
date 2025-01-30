@@ -6,10 +6,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
-source-git-commit: cddfcddc0ca3652270bdb735e580386ac9ff1fc7
-workflow-type: ht
-source-wordcount: '361'
-ht-degree: 100%
+source-git-commit: 5c103fcce1ae47bc89f4f572d89967c62c1f7603
+workflow-type: tm+mt
+source-wordcount: '385'
+ht-degree: 79%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Cada vez que se inicia sesión en AEM as a Cloud Service o se utiliza un token de acceso, los grupos de usuarios, perfiles de producto y servicios de perfil de producto de Adobe Admin Console se sincronizan con el repositorio de AEM como grupos.
 
-Con las versiones de AEM superiores a 18751 (el 27 de enero se comenzará a lanzar una versión de mantenimiento en los entornos de producción), para reducir el desorden de la interfaz de usuario y optimizar el rendimiento, se producirán algunos cambios en el comportamiento de sincronización, lo que hará que aparezcan menos grupos en AEM. Se eliminarán dos categorías de grupos de AEM:
+AEM A partir de la 19149 de la versión de mantenimiento de la, el comportamiento de sincronización de grupos se cambia para reducir el desorden de la IU y optimizar el rendimiento. AEM En concreto, ya no se sincronizará la pertenencia a grupos de usuarios de las dos categorías de grupos de usuarios que se indican a continuación:
 
 1. Grupos de AEM con sufijo `GROUP_NAME_SUFFIX`. Estos grupos no aparecen en Adobe Developer Console, pero sí en la pantalla Administración de grupos de AEM, como se muestra a continuación. En el improbable caso de que su aplicación AEM haga referencia a estos grupos, asegúrese de usar grupos de usuarios de Adobe Admin Console sin ese sufijo.
 
@@ -44,3 +44,4 @@ Esto le llevará a Adobe Admin Console, como se muestra en la captura de pantall
 
 En el improbable caso de que la aplicación AEM haga referencia a un grupo que ya no va a aparecer en AEM, asegúrese de usar en su lugar i) un perfil de producto de la instancia correcta de AEM o ii) un grupo de usuarios de Adobe Admin Console.
 
+Las pertenencias de grupo del usuario se sincronizan cuando inicia sesión en el entorno y se eliminan de los grupos no relacionados con el entorno actual. Los propios grupos permanecen e incluyen usuarios que no han iniciado sesión desde que se habilitó la función.
