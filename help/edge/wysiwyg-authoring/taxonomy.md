@@ -4,12 +4,13 @@ description: Aprenda a administrar datos de taxonomía para usar etiquetas con A
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+source-git-commit: 701a7c08d591d9a3ffabfe041745748194c923b2
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 100%
+source-wordcount: '974'
+ht-degree: 85%
 
 ---
+
 
 # Administración de datos de taxonomía {#managing-taxonomy-data}
 
@@ -77,7 +78,7 @@ Se empieza editando una página de taxonomía como cualquier otra página en AEM
 
 La página mostrada en el Editor de página es de solo lectura porque el contenido de la taxonomía se genera automáticamente a partir de las etiquetas y los espacios de nombres seleccionados. Actúan como una especie de filtro para generar automáticamente el contenido de la taxonomía. Por lo tanto, no es necesario editar directamente la página en el editor.
 
-AEM actualiza automáticamente el contenido de la página de taxonomía cuando se actualizan las etiquetas y los espacios de nombres subyacentes. Sin embargo, debe [volver a publicar la taxonomía](#publishing) después de realizar cualquier cambio para que los cambios estén disponibles para los usuarios.
+AEM actualiza automáticamente el contenido de la página de taxonomía cuando se actualizan las etiquetas y los espacios de nombres subyacentes. Sin embargo, debe [volver a publicar la taxonomía](#publishing) después de cualquier cambio para que los cambios estén disponibles para los usuarios.
 
 ## Actualizar paths.json para la publicación de taxonomías {#paths-json}
 
@@ -155,6 +156,10 @@ Utilice el elemento `<taxonomy-json-name>` que definió al [asignar la taxonomí
       "title": "Translate"
     }
   ],
+  "columns": [
+    "tag",
+    "title"
+  ],
   ":type": "sheet"
 }
 ```
@@ -162,3 +167,47 @@ Utilice el elemento `<taxonomy-json-name>` que definió al [asignar la taxonomí
 Estos datos JSON se actualizarán automáticamente a medida que actualice la taxonomía y vuelva a publicarla. Su aplicación puede acceder mediante programación a esta información para los usuarios.
 
 [Si mantiene etiquetas en varios idiomas,](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages) puede tener acceso a esos idiomas pasando el código de idioma ISO2 como valor de un parámetro `sheet=`.
+
+## Exposición de propiedades de etiqueta adicionales {#additional-properties}
+
+De manera predeterminada, su taxonomía contendrá `tag` y `title` valores como se vio [ en el ejemplo anterior.](#accessing) Puede configurar su taxonomía para exponer propiedades de etiquetas adicionales. En este ejemplo, se muestra la descripción de la etiqueta.
+
+1. Utilice la consola Sitios para seleccionar la taxonomía que ha creado.
+1. Toque o haga clic en el icono **Propiedades** de la barra de herramientas.
+1. En la sección **Propiedades adicionales**, toque o haga clic en **Agregar** para agregar un campo.
+1. En el nuevo campo, introduzca el nombre de la propiedad JRC que desea exponer. En este caso, escriba `jcr:description` para la descripción de la etiqueta.
+1. Haga clic o pulse en **Guardar y cerrar**.
+1. Con la taxonomía aún seleccionada, toque o haga clic en **Quick Publish** en la barra de herramientas.
+
+Ahora [al acceder a su taxonomía,](#accessing) la descripción de la etiqueta (o la propiedad que haya elegido exponer) se incluye en el JSON.
+
+```json
+{
+  "total": 3,
+  "offset": 0,
+  "limit": 3,
+  "data": [
+    {
+      "tag": "default:",
+      "title": "Standard Tags",
+      "jcr:description": "These are the standard tags"
+    },
+    {
+      "tag": "do-not-translate",
+      "title": "Do Not Translate",
+      "jcr:description": "Tag to mark pages that should not be translated"
+    },
+    {
+      "tag": "translate",
+      "title": "Translate",
+      "jcr:description": "Tag to mark pages that should be translated"
+    }
+  ],
+  "columns": [
+    "tag",
+    "title",
+    "jcr:description"
+  ],
+  ":type": "sheet"
+}
+```

@@ -1,8 +1,8 @@
 ---
-source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
+source-git-commit: 7b4bb513b928bf94b4ada4e1a06a1e254f33aafa
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 99%
+source-wordcount: '1388'
+ht-degree: 97%
 
 ---
 # Fragmentos de código {#snippets}
@@ -66,7 +66,7 @@ ht-degree: 99%
 * [Añadir secciones repetibles a un formulario](/help/edge/docs/forms/repeatable-forms.md)
 * [Mostrar un mensaje de agradecimiento personalizado después del envío del formulario](/help/edge/docs/forms/thank-you-page-form.md)
 * [Componentes de bloque de formulario adaptable y sus propiedades](/help/edge/docs/forms/form-components.md)
-* [Usar el servicio de envío de formularios](/help/forms/forms-submission-service.md)
+* [Uso del servicio de envío de formularios](/help/forms/forms-submission-service.md)
 
 
 ## Diferencia entre el editor de reglas en los componentes principales y el editor de reglas en los componentes de base {#rule-editor-diff}
@@ -141,7 +141,7 @@ En la tabla siguiente se muestra la diferencia entre las funciones disponibles e
 * [Ejemplos de desarrollo y uso de funciones personalizadas](/help/forms/custom-function-core-components-use-cases.md)
 
 
-## Portal de Forms {#forms-portal-see-also}
+## Portal de Forms{#forms-portal-see-also}
 
 * [Introducción a los componentes del Portal de Forms](/help/forms/configure-forms-portal.md)
 * [Mostrar los formularios en la página de Sites](/help/forms/list-forms-on-sites-page.md)
@@ -237,7 +237,7 @@ Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge 
 
 >[!IMPORTANT]
 >
->El Editor de SPA sigue siendo compatible con Adobe, pero los editores preferidos para administrar contenido sin encabezado en AEM ahora son:
+>SPA El editor de la [ha quedado obsoleto](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated) para nuevos proyectos. Sigue siendo compatible con el Adobe de los proyectos existentes, pero no debe utilizarse para nuevos proyectos. AEM Los editores preferidos para administrar contenido sin encabezado en las ahora son:
 >
 >* [El Editor universal](/help/edge/wysiwyg-authoring/authoring.md) para editar contenido sin encabezado de forma visual.
 >* [El Editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) para la edición de contenido sin encabezado basada en formularios.
