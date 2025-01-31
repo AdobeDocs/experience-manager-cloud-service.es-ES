@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3b7a77fd77226f79510b61f9bb20ad9477b6654e
+source-git-commit: 52c3c780802025e0895bacc675ba60e97fdce4c5
 workflow-type: tm+mt
-source-wordcount: '1812'
-ht-degree: 43%
+source-wordcount: '1750'
+ht-degree: 41%
 
 ---
 
@@ -150,12 +150,6 @@ El Forms adaptable permite utilizar plantillas de correo electrónico de HTML. L
 #### Compatibilidad mejorada con almacenamiento en la nube: carga directa del PDF al almacenamiento del blob de Azure
 
 Las API de generación de documentos de AEM Forms ahora admiten la carga directa de documentos de PDF generados al almacenamiento del blob de Azure. Esta mejora optimiza el almacenamiento y la recuperación, mejorando la eficiencia y la integración con los flujos de trabajo en la nube.
-
-* **[Compatibilidad con cadenas codificadas en Base64 para archivos adjuntos](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**: el componente Archivo adjunto de los formularios adaptables basados en componentes principales ahora incluye una opción para enviar archivos adjuntos como cadenas codificadas en Base64.
-
->[!IMPORTANT]
->
-> ¿Le interesa unirse al programa de acceso rápido para disponer de cualquier innovación de los formularios? Envíe un correo electrónico desde su dirección de correo electrónico oficial a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) con la lista de capacidades que le interesan.## Complemento CIF {#cloud-services-cif}
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
