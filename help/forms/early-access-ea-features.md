@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: b4ed1039e199f520a1d7b44ae9af11ecdf52f5c3
+source-git-commit: 3bd7b574b34d09b3a205cf72b307d459efc00eab
 workflow-type: tm+mt
-source-wordcount: '1779'
-ht-degree: 33%
+source-wordcount: '1998'
+ht-degree: 30%
 
 ---
 
@@ -109,6 +109,11 @@ Básicamente, AEM Forms to Marketo Connector le ayuda a aprovechar las ventajas 
 
 ## Innovaciones adicionales de acceso anticipado
 
+### Plantillas de correo electrónico de HTML en Forms adaptable
+
+El Forms adaptable permite utilizar plantillas de correo electrónico de HTML. Las plantillas de correo electrónico de HTML le permiten enviar correos electrónicos enriquecidos, personalizados y visualmente atractivos cuando se envía un formulario. Estos correos electrónicos se pueden personalizar con los datos del formulario y mejorar mediante varias etiquetas de correo electrónico, como imágenes y vínculos. Con Forms adaptable, puede cargar un archivo que contenga una plantilla de HTML o utilizar un editor de texto sin formato para crear estas plantillas.
+
+
 ### Compatibilidad con idiomas de derecha a izquierda (RTL)
 
 Ahora, el Forms adaptable se puede mostrar en un lenguaje de derecha a izquierda (RTL), lo que permite una experiencia de usuario más inclusiva y fácil de usar.
@@ -170,6 +175,20 @@ El servicio Forms genera PDF forms interactivos para la captura de datos. Tambi�
 * **Extracción e importación de datos**: importe datos a un formulario de PDF existente y extraiga datos de un formulario de PDF rellenado. Se admiten los formatos de datos XDP y XML y la importación a PDF forms que no sean XFA (también conocidos como AcroForms) admite además datos FDF y XFDF.
 
 * **Validación de datos**: valide los datos enviados, en formato XDP o XML con una plantilla creada con AEM Forms Designer.
+
+### API de generación de documentos
+
+La API de generación de documentos incluye una función opcional que permite la carga directa de PDF generados al almacenamiento del blob de Azure. Algunas ventajas clave de cargar PDF directamente en Azure Blob Storage mediante la API de generación de documentos son:
+
+* **Integración perfecta con Cloud Storage**:
+La carga directa de PDF generados en Azure Blob Storage elimina la necesidad de realizar pasos adicionales manuales o programáticos para transferir archivos, optimizar los flujos de trabajo y mejorar la eficacia.
+
+* **Administración centralizada de documentos**:
+El almacenamiento de PDF en Azure Blob Storage permite una administración centralizada de documentos, lo que facilita la organización, recuperación y administración de archivos generados en varios casos de uso.
+
+* **Seguridad mejorada**: al aprovechar las características de seguridad integradas de Azure, como el cifrado en reposo y el control de acceso basado en roles (RBAC), los documentos confidenciales permanecen protegidos durante el almacenamiento.
+
+* **Rutas de almacenamiento personalizables**: La capacidad de definir rutas de directorio personalizadas garantiza que los PDF generados se almacenen en ubicaciones organizadas y específicas de la aplicación, lo que mejora la administración de archivos.
 
 ## Consulte también
 
