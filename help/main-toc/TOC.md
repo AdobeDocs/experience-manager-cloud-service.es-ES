@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 32cc525d5443f455f1579ef027c08796ffc209e7
+source-git-commit: d6cbfb2b374aba6ce52a8ac7e1af37d687cc13d9
 workflow-type: tm+mt
-source-wordcount: '6003'
+source-wordcount: '6006'
 ht-degree: 99%
 
 ---
@@ -576,6 +576,7 @@ ht-degree: 99%
       + [Archivo de newsletters sobre Dynamic Media de Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Configuración de Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Trabajar con Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
+      + [Dynamic Media templates](/help/assets/dynamic-media/dynamic-media-templates.md)
       + [Configuración de Dynamic Media](/help/assets/dynamic-media/config-dm.md)
       + [Opcional: configuración de Dynamic Media, configuración general](/help/assets/dynamic-media/dm-general-settings.md)
       + [Opcional: configuración de Dynamic Media, configuración de publicaciones](/help/assets/dynamic-media/dm-publish-settings.md)
