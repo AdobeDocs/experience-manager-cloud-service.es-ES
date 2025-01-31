@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: cd15fd36b8baf8e693ae449031a51fa1febefaee
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '447'
 ht-degree: 11%
 
 ---
@@ -31,8 +31,8 @@ En el caso de los CDN administrados por Adobe, al utilizar un certificado SSL de
 
    | Caso de uso | Etapas |
    | --- | --- |
-   | Quiero agregar una configuración de CDN a un *sitio Edge Delivery existente* en Cloud Manager | a. En el menú del lado izquierdo, debajo de **Servicios**, haga clic en **Sitios Edge Delivery**.<br>b. En la tabla de Edge Delivery, al final de una fila que no tiene un dominio asociado, haga clic en ![Más iconos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).<br>c. Haga clic en **Configurar CDN**. |
-   | Quiero añadir una configuración de CDN en Cloud Manager | a. En el menú del lado izquierdo, debajo de **Servicios**, haga clic en **Configuraciones de CDN**.<br>b. Cerca de la esquina superior derecha de la página Configuraciones de CDN, haga clic en **Agregar**. |
+   | Quiero agregar una configuración de CDN a un *sitio Edge Delivery existente* en Cloud Manager | a. En el menú del lado izquierdo, debajo de **Servicios**, haga clic en ![Icono de páginas web](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Sitios Edge Delivery**.<br>b. En la tabla de Edge Delivery, al final de una fila que no tiene un dominio asociado, haga clic en ![Más iconos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).<br>c. Haga clic en **Configurar CDN**. |
+   | Quiero añadir una configuración de CDN en Cloud Manager | a. En el menú del lado izquierdo, debajo de **Servicios**, haga clic en ![Icono de red social](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Asignaciones de dominio**.<br>b. Cerca de la esquina superior derecha de la página Asignaciones de dominio, haga clic en **Agregar**. |
 
 1. En el cuadro de diálogo **Configurar CDN**, en la lista desplegable **Origen**, seleccione una de las siguientes opciones:
 

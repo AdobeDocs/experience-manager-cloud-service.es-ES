@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '1659'
-ht-degree: 39%
+source-wordcount: '1665'
+ht-degree: 38%
 
 ---
 
@@ -133,7 +133,7 @@ Un programa de producción puede tener un distintivo para mostrar las funciones 
 
 * ![Insignia WAF-DDOS](assets/waf-ddos-protection.png) [Protección WAF-DDOS](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
-* [99,99% SLA (contrato de nivel de servicio)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
+* [99,99 % SLA (Service level agreement)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
 
 El icono de información también permite acceder rápidamente a la información adicional sobre el programa (útil en la vista de listas).
 
@@ -215,7 +215,7 @@ Cada programa tiene muchas opciones y datos asociados. Estas opciones y datos se
 * ![Icono de páginas web](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) [Sitios Edge Delivery](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) - Administrar sitios Edge Delivery
 * ![Icono de configuración](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [Configuración de dominio](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Administrar nombres de dominio personalizados para el programa
 * ![Icono de bloqueo cerrado](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md): administre los certificados SSL para el programa
-* ![Icono de red social](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [Configuraciones de CDN](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Administrar configuraciones de CDN
+* ![Icono de red social](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [Asignaciones de dominio](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Administrar asignaciones de dominio
 * ![Icono de lista de tareas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md): defina listas de permitidos para determinadas direcciones IP
 * ![Icono de cuadro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [Conjuntos de contenido](/help/implementing/developing/tools/content-copy.md) - Conjuntos de contenido creados con fines de copia
 * ![Icono de historial](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [Copiar actividad de contenido](/help/implementing/developing/tools/content-copy.md) - Actividades de copia de contenido
@@ -243,7 +243,7 @@ Para un programa activo, el estado de la última implementación con vínculos p
 
 La tarjeta **Entornos** le ofrece una descripción general de sus entornos, así como vínculos para acciones rápidas.
 
-La tarjeta **Entornos** solo enumera tres entornos. Haga clic en **Mostrar todo** para ver todos los entornos del programa.
+La tarjeta **Entornos** solo enumera tres entornos. Haga clic en ![icono de flujo de trabajo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Mostrar todo** para ver todos los entornos del programa.
 
 Consulte también [Administrar entornos](/help/implementing/cloud-manager/manage-environments.md).
 
@@ -251,7 +251,7 @@ Consulte también [Administrar entornos](/help/implementing/cloud-manager/manage
 
 La tarjeta de **Canalizaciones** le ofrece una descripción general de sus canalizaciones, así como vínculos para acciones rápidas.
 
-La tarjeta **Canalizaciones** solo enumera tres canalizaciones. Haga clic en **Mostrar todo** para ver todas las canalizaciones del programa.
+La tarjeta **Canalizaciones** solo enumera tres canalizaciones. Haga clic en ![icono de flujo de trabajo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Mostrar todo** para ver todas las canalizaciones del programa.
 
 Consulte también [Administrar canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) para obtener detalles sobre cómo administrar sus canalizaciones.
 

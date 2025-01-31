@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '2367'
-ht-degree: 40%
+source-wordcount: '2374'
+ht-degree: 39%
 
 ---
 
@@ -194,9 +194,9 @@ Si ha activado regiones de publicación adicionales, puede comprobar el estado d
 
 También puede obtener acceso a la misma información desde la ficha **Entornos**.
 
-1. En la página **Información general**, seleccione la pestaña **Entornos**.
+1. En la página **Información general**, haga clic en ![Icono de datos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Entornos**.
 
-1. En la ficha **Entornos**, seleccione el entorno que desee consultar en el menú de la izquierda.
+1. En la página **Entornos**, seleccione el entorno que desee consultar en el menú del lado izquierdo.
 
 1. Después de seleccionar un entorno:
 
@@ -306,7 +306,7 @@ Esta opción también está disponible en la ficha **Entorno** de la ventana **I
 
      ![Iniciar sesión localmente](assets/environ-login-locally.png)
 
-   * En el panel lateral izquierdo, haga clic en **Entornos**. En la página **Entornos**, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y, a continuación, haga clic en **Inicio de sesión local**.
+   * En el panel lateral izquierdo, haga clic en ![Icono de datos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Entornos**. En la página **Entornos**, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y, a continuación, haga clic en **Inicio de sesión local**.
 
      ![Iniciar sesión localmente desde la pestaña Entornos](assets/environ-login-locally-2.png)
 
@@ -322,7 +322,7 @@ Los nombres de dominio personalizados se admiten en los programas de Cloud Manag
 
 Cloud Manager admite una Lista de permitidos IP para los servicios de creación, publicación y vista previa de los programas de Sites.
 
-Para administrar Listas de permitidos IP, vaya a la ficha **Entornos** de la página **Información general** de su programa. Haga clic en un entorno individual para poder administrar sus detalles.
+Para administrar Listas de permitidos IP, vaya a la página ![Icono de datos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Entornos** de la página **Información general** de su programa. Haga clic en un entorno individual para poder administrar sus detalles.
 
 ### Aplicar una Lista de permitidos IP {#apply-ip-allow-list}
 

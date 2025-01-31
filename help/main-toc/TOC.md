@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c27b8e413c060de601a72a669d86c4add2a4167d
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
 source-wordcount: '6020'
 ht-degree: 99%
@@ -1198,9 +1198,9 @@ ht-degree: 99%
          + [Añadir un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [Solución de problemas de errores de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [Administrar certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + Configuraciones de CDN {#cdn-configurations}
+      + Asignaciones de dominio {#cdn-configurations}
          + [Añadir una configuración de CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-         + [Administración de configuraciones de CDN](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
+         + [Administrar asignaciones de dominio](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + Listas de permitidos de IP {#ip-allow-lists}
          + [Introducción a las listas de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [Añadir una lista de IP permitidas](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
