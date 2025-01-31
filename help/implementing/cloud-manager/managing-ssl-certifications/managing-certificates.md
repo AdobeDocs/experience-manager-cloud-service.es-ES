@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 9%
+source-wordcount: '1023'
+ht-degree: 14%
 
 ---
 
@@ -21,7 +21,7 @@ Obtenga información sobre cómo utilizar Cloud Manager para comprobar el estado
 
 Cloud Manager ofrece una descripción general del estado de todos los certificados del programa.
 
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione el programa apropiado.
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione el programa adecuado.
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
 1. En la esquina superior izquierda de la página, haga clic en ![Mostrar icono de menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para mostrar el menú lateral.
 1. Bajo el encabezado **Servicios**, haga clic en ![Icono de bloqueo cerrado](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificados SSL**.
@@ -42,11 +42,11 @@ Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrado
 
 **Para actualizar un certificado SSL administrado por el cliente caducado:**
 
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione el programa apropiado.
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione el programa adecuado.
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
 1. En la esquina superior izquierda de la página, haga clic en ![Mostrar icono de menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para mostrar el menú lateral.
 1. Bajo el encabezado **Servicios**, haga clic en ![Icono de bloqueo cerrado](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificados SSL**.
-1. En la fila del certificado administrado por el cliente caducado que desea actualizar, haga clic en https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg en el extremo derecho, luego haga clic en **Ver y actualizar**.
+1. En la fila del certificado administrado por el cliente caducado que desea actualizar, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) en el extremo derecho y, a continuación, haga clic en **Ver y actualizar**.
 
    ![Actualizar una certificación SSL administrada por el cliente caducada](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
@@ -62,7 +62,7 @@ Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrado
 
 >[!NOTE]
 >
->Si tiene dos o más certificados SAN que cubren la misma entrada de dominio SAN, si ese dominio está cubierto por un certificado y el otro se actualiza, este último se instala para el dominio.
+>Si dos o más certificados SAN cubren la misma entrada de dominio SAN y uno de ellos se actualiza, el sistema instala el certificado actualizado para el dominio.
 >
 >Consulte [Solucionar problemas de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert) para obtener más información.
 
@@ -80,7 +80,7 @@ A continuación se indican algunas razones por las que puede que desee cambiar e
 
 **Para cambiar el nombre de un certificado SSL administrado por el Adobe:**
 
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione el programa apropiado.
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione el programa adecuado.
 
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
 
@@ -109,7 +109,7 @@ Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrado
 
 **Para eliminar un certificado SSL:**
 
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione el programa apropiado.
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione el programa adecuado.
 
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
 

@@ -5,10 +5,10 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 24%
+source-wordcount: '420'
+ht-degree: 25%
 
 ---
 
@@ -21,12 +21,12 @@ Desde la **Descripción general del programa**, los usuarios con los permisos ne
 
 * Agregar la solución Sites a un programa existente con Assets y a la inversa.
 * Eliminar Sites o Assets de un programa existente que incluya ambos.
-* Agregue un segundo derecho de solución no utilizado a un programa existente o como nuevo programa.
+* Agregar un derecho de solución no utilizado a un programa existente o crear un nuevo programa.
 * Eliminar programas de zona protegida.
 
 ## Permisos {#permissions}
 
-Debe ser miembro del rol **Propietario del negocio** para editar programas o eliminar programas de zonas protegidas y para acceder al tablero de licencias.
+Debe tener la función **Propietario del negocio** para editar programas, eliminar programas de zona protegida y acceder al tablero de licencias.
 
 ## Editar un programa {#editing}
 
@@ -46,7 +46,7 @@ Cada vez que se edita un programa, incluida la adición o eliminación de una so
 
    ![Pestaña General](assets/edit-program-prod1.png)
 
-1. Las opciones disponibles para editar el programa son las mismas que al crearlo.
+1. Las opciones disponibles para editar el programa son las mismas para la creación de programas.
    * Consulte [Crear programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) y [Crear programas de espacio aislado](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) para obtener más información sobre las opciones individuales.
    * [Puede haber opciones adicionales](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) disponibles para su programa de producción en función de los derechos de su organización.
 
@@ -70,7 +70,7 @@ Al eliminar un programa de zona protegida se eliminan todos los entornos y canal
 
    ![Opción Eliminar programa](assets/delete-sandbox1.png)
 
-También puede hacer clic en https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg en la tarjeta de su programa desde la página de información general de Cloud Manager y seleccionar **Eliminar programa**.
+También puede hacer clic en el ![icono Más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) de la tarjeta del programa desde la página de información general de Cloud Manager y seleccionar **Eliminar programa**.
 
 ![Eliminar zona protegida de la tarjeta de programa](assets/delete-sandbox2.png)
 

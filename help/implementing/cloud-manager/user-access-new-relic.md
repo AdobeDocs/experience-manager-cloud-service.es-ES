@@ -5,9 +5,9 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8f8662360d23926df91e91881e78dadea33504f0
+source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1818'
 ht-degree: 41%
 
 ---
@@ -49,7 +49,7 @@ Para un programa recién creado, se crea una cuenta secundaria de New Relic One.
 
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, haga clic en el programa para el que desea administrar a los usuarios de New Relic One.
 
-1. En la parte inferior de la tarjeta **Entornos** en la página de información general del programa, haga clic en https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg y seleccione **Activar New Relic**.
+1. En la parte inferior de la tarjeta **Entornos** en la página de información general del programa, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y seleccione **Activar New Relic**.
 
    ![Administrar usuarios](assets/newrelic-activate-sub-account.png)
 
@@ -71,7 +71,7 @@ Siga los siguientes pasos para definir los usuarios de la cuenta secundaria de N
 
 1. Haga clic en el programa para el que desee administrar los usuarios de New Relic One.
 
-1. En la parte inferior de la tarjeta **Entornos** en la página de información general del programa, haga clic en https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg y seleccione **Administrar usuarios**.
+1. En la parte inferior de la tarjeta **Entornos** en la página de información general del programa, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y seleccione **Administrar usuarios**.
 
    ![Administrar usuarios](assets/newrelic-manage-users.png)
 
@@ -121,7 +121,7 @@ Una vez que haya [activado su cuenta de New Relic](#activate-account), podrá ac
 
 1. Haga clic en el programa para el que desea acceder a New Relic One.
 
-1. En la parte inferior de la tarjeta **Entornos** en la página de información general del programa, haga clic en https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg y seleccione **Abrir New Relic**.
+1. En la parte inferior de la tarjeta **Entornos** en la página de información general del programa, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y seleccione **Abrir New Relic**.
 
    ![Administrar usuarios](assets/newrelic-access.png)
 

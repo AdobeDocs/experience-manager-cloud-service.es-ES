@@ -5,9 +5,9 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
+source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '698'
 ht-degree: 42%
 
 ---
@@ -30,7 +30,7 @@ Puede tardar hasta unos minutos en que los entornos de programa de zona protegid
 
 Puede hibernar manualmente el programa de zona protegida desde Developer Console. Cualquier usuario de Cloud Manager puede acceder a Developer Console para un programa de zona protegida.
 
-**Para hibernar manualmente un entorno de zona protegida:**
+**Para hibernar manualmente un entorno de programa de zona protegida:**
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
@@ -68,13 +68,13 @@ Puede hibernar manualmente el programa de zona protegida desde Developer Console
 >
 >Un usuario con un rol de **Desarrollador** puede anular la hibernación de un entorno de programa de zona protegida.
 
-**Para anular manualmente la hibernación de un programa de zona protegida desde Developer Console:**
+**Para anular manualmente la hibernación de un programa de zona protegida de Developer Console:**
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, haga clic en el programa que desea anular la hibernación para mostrar sus detalles.
 
-1. En la tarjeta **Entornos**, haga clic en https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg y luego en **Developer Console**.
+1. En la tarjeta **Entornos**, haga clic en ![Más icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y luego en **Developer Console**.
 
    * Consulte [Acceso a Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) para obtener más información sobre Developer Console.
 
