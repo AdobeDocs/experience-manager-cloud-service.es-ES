@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 190e68ebcd3c2a7ba7b995690c802a04728e6962
+source-git-commit: 20db0990c506aeb473b71132813cec053009275f
 workflow-type: tm+mt
-source-wordcount: '1749'
-ht-degree: 41%
+source-wordcount: '1750'
+ht-degree: 38%
 
 ---
 
@@ -126,13 +126,21 @@ Los subtítulos de vídeo generados por IA en Adobe Dynamic Media utilizan la in
 
 ### Nuevas funciones en AEM Forms {#forms-new-features}
 
-* **Administrar publicación**: puede usar el flujo de trabajo &quot;Administrar publicación&quot; para publicar o cancelar la publicación de formularios en entornos, generalmente desde la instancia de autor a las instancias de publicación y vista previa. Permite a los usuarios publicar, cancelar la publicación o programar la publicación de contenido de una manera optimizada.
+#### Administrar publicación    
 
-* **[Guardar automáticamente un borrador para formularios adaptables basados en componentes principales](/help/forms/save-core-component-based-form-as-draft.md)**: los usuarios ahora pueden beneficiarse de una función de guardado automático que guarda automáticamente un formulario parcialmente completado como borrador. Pueden volver más tarde para terminar de rellenarlo en el mismo dispositivo o en otro distinto. Esta función mejora las tasas de conversión para las organizaciones al reducir el abandono de formularios, ya que los usuarios no tienen que volver a empezar a rellenar el formulario desde el principio.
+Puede utilizar el flujo de trabajo &quot;Administrar publicación&quot; para publicar o cancelar la publicación de formularios en entornos, generalmente desde la instancia de autor a las instancias de publicación y previsualización. Permite a los usuarios publicar, cancelar la publicación o programar la publicación de contenido de una manera optimizada.
 
-* **[Mejoras en el editor de reglas](/help/forms/invoke-service-enhancements-rule-editor.md)**: para Forms adaptable basado en componentes principales, puede usar la salida de Invocar servicio para rellenar opciones desplegables y establecer paneles repetibles o individuales. Además, este resultado se puede utilizar para validar otros campos.
+#### Guardar automáticamente un borrador para los componentes principales basados en formularios adaptables
 
-* **[Mejorar la experiencia del usuario con botones de navegación en los diseños de panel](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)**: ahora puede añadir botones de navegación a los diseños de panel, como Pestañas horizontales, Pestañas verticales, Acordeones o el Asistente. Estos botones mejoran la experiencia del usuario al simplificar las transiciones entre paneles y se centran en el panel seleccionado.
+Los usuarios ahora pueden beneficiarse de una [característica de guardado automático](/help/forms/save-core-component-based-form-as-draft.md) que guarda automáticamente un formulario parcialmente completado como borrador. Pueden volver más tarde para terminar de rellenarlo en el mismo dispositivo o en otro distinto. Esta función mejora las tasas de conversión para las organizaciones al reducir el abandono de formularios, ya que los usuarios no tienen que volver a empezar a rellenar el formulario desde el principio.
+
+#### Mejoras del editor de reglas
+
+Para Forms adaptable basado en componentes principales, puede usar la [salida de Invocar servicio para rellenar opciones desplegables y establecer paneles repetibles o individuales](/help/forms/invoke-service-enhancements-rule-editor.md). Además, este resultado se puede utilizar para validar otros campos.
+
+#### Mejorar la experiencia del usuario con los botones de navegación en los diseños de panel
+
+Ahora puede agregar botones de navegación a los diseños de panel, como Pestañas horizontales, Pestañas verticales, Acordeones o Asistente. Estos botones [mejoran la experiencia del usuario al simplificar las transiciones entre paneles, centrándose en el panel seleccionado](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button).
 
 
 ### Funciones de acceso rápido de AEM Forms {#forms-new-early-access-features}
@@ -141,15 +149,15 @@ El programa para acceso rápido de AEM Forms ofrece una oportunidad única de ob
 
 En estas notas de la versión se indican las innovaciones de la versión actual. Para ver la lista completa de innovaciones disponibles en el programa para acceso rápido, consulte la [documentación del programa de acceso rápido de AEM Forms](/help/forms/early-access-ea-features.md).
 
-#### [Plantillas de correo electrónico de HTML en Forms adaptable](/help/forms/html-email-templates-in-adaptive-forms.md)
+#### Plantillas de correo electrónico de HTML en Forms adaptable
 
-El Forms adaptable permite utilizar plantillas de correo electrónico de HTML. Las plantillas de correo electrónico de HTML le permiten enviar correos electrónicos enriquecidos, personalizados y visualmente atractivos cuando se envía un formulario. Estos correos electrónicos se pueden personalizar con los datos del formulario y mejorar mediante varias etiquetas de correo electrónico, como imágenes y vínculos. Con Forms adaptable, puede cargar un archivo que contenga una plantilla de HTML o utilizar un editor de texto sin formato para crear estas plantillas.
+El Forms adaptable le permite usar [plantillas de correo electrónico de HTML](/help/forms/html-email-templates-in-adaptive-forms.md). Las plantillas de correo electrónico de HTML le permiten enviar correos electrónicos enriquecidos, personalizados y visualmente atractivos cuando se envía un formulario. Estos correos electrónicos se pueden personalizar con los datos del formulario y mejorar mediante varias etiquetas de correo electrónico, como imágenes y vínculos. Con Forms adaptable, puede cargar un archivo que contenga una plantilla de HTML o utilizar un editor de texto sin formato para crear estas plantillas.
 
 ![plantillas de correo electrónico de HTML](/help/forms/assets/html-email.png)
 
 #### Compatibilidad mejorada con almacenamiento en la nube: carga directa del PDF al almacenamiento del blob de Azure
 
-Las API de generación de documentos de AEM Forms ahora admiten la carga directa de documentos de PDF generados al almacenamiento del blob de Azure. Esta mejora optimiza el almacenamiento y la recuperación, mejorando la eficiencia y la integración con los flujos de trabajo en la nube.
+Las API de generación de documentos de AEM Forms ahora le permiten [cargar directamente documentos de PDF generados al almacenamiento de Azure Blob](/help/forms/early-access-ea-features.md#doc-generation-api). Esta mejora optimiza el almacenamiento y la recuperación, mejorando la eficiencia y la integración con los flujos de trabajo en la nube.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
