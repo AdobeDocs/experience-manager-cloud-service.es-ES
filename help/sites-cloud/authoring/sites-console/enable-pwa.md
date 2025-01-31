@@ -5,7 +5,7 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 4c4e05ae636701d914b654b7342a4bc2403c56c0
+source-git-commit: 190e68ebcd3c2a7ba7b995690c802a04728e6962
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 64%
@@ -29,7 +29,7 @@ A través de una configuración sencilla, un autor de contenido ahora puede habi
 
 >[!IMPORTANT]
 >
->Las funciones de aplicación web progresiva (PWA) de AEM Sites han quedado obsoletas.
+>Las características de la aplicación web progresiva (PWA) para AEM Sites [ han quedado obsoletas.](/help/release-notes/release-notes-cloud/release-notes-current.md#pwa-features)
 >
 >Los proyectos existentes que utilicen esta función seguirán siendo compatibles, pero los nuevos proyectos no deberán utilizarla.
 
