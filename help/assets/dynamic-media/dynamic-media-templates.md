@@ -3,9 +3,10 @@ title: ¿Cómo se administran las plantillas de Dynamic Media?
 description: Aprenda a crear plantillas de Dynamic Media con un editor de plantillas de WYSIWYG e incluir varias imágenes y capas de texto para crear rápidamente titulares y folletos y utilizarlos en aplicaciones de flujo descendente.
 hide: true
 role: User
-source-git-commit: ada339567716a126d3288246c148c551dff298f4
+exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
+source-git-commit: ea903daafedb420602700f4b1b4a3ad6bd8ede97
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2590'
 ht-degree: 0%
 
 ---
@@ -55,19 +56,18 @@ Para crear una plantilla de DM, siga estos pasos:
 1. [Edición o eliminación de una capa](#edit-or-delete-a-layer)
 1. [Parametrizar capas](#parameterise-a-layer)
 
-
 ### Crear un lienzo en blanco{#create-a-canvas}
 
 Siga estos pasos para crear un lienzo en blanco:
 
-1. Vaya a la vista Assets y haga clic en **Dynamic Media Assets**, disponible en el panel izquierdo.
+1. Vaya a la vista Assets y haga clic en **[!UICONTROL Dynamic Media Assets]**, disponible en el panel izquierdo.
 
    ![](/help/assets/assets/dm-templates/DM-Assets1.png)
 
-1. Haga clic en **Crear plantilla** para guardar la plantilla en Dynamic Media Assets o navegue a una carpeta y haga clic en **Crear plantilla** para guardar la plantilla en esa carpeta. Se muestra el cuadro de diálogo **Nueva plantilla**.
+1. Haga clic en **[!UICONTROL Crear plantilla]** para guardar la plantilla en Dynamic Media Assets o navegue a una carpeta y haga clic en **[!UICONTROL Crear plantilla]** para guardar la plantilla en esa carpeta. Se muestra el cuadro de diálogo **[!UICONTROL Nueva plantilla]**.
    ![](/help/assets/assets/dm-templates/new-template.png)
-Para [crear una carpeta](/help/assets/add-delete-assets-view.md) en **Dynamic Media Assets**, cree una carpeta en **Assets**. El árbol de carpetas de **Assets** se replica en **Dynamic Media Assets**.
-1. Especifique un nombre de plantilla, defina la anchura y altura del lienzo y haga clic en **Crear**. Se muestra un lienzo en blanco con opciones de menú en ambos lados que se utilizan para crear la plantilla. Pase el ratón sobre las opciones del menú para ver su información sobre herramientas.
+Para [crear una carpeta](/help/assets/add-delete-assets-view.md) en **[!UICONTROL Dynamic Media Assets]**, cree una carpeta en **[!UICONTROL Assets]**. El árbol de carpetas de **[!UICONTROL Assets]** se replica en **[!UICONTROL Dynamic Media Assets]**.
+1. Especifique un nombre de plantilla, defina la anchura y altura del lienzo y haga clic en **[!UICONTROL Crear]**. Se muestra un lienzo en blanco con opciones de menú en ambos lados que se utilizan para crear la plantilla. Pase el ratón sobre las opciones del menú para ver su información sobre herramientas.
    ![](/help/assets/assets/dm-templates/blank-canvas-page.png)
 
 >[!NOTE]
@@ -91,7 +91,7 @@ Para [crear una carpeta](/help/assets/add-delete-assets-view.md) en **Dynamic Me
 * ![](/help/assets/assets/dm-templates/zoomout.svg): haga clic para alejar el lienzo o presione **Ctrl** + **-** (Windows) o **Cmd** + **-** (Mac).
 * Pulse **Retroceso** o **eliminar** para eliminar la capa seleccionada si no se está editando ningún texto o propiedad.
 
-Haga clic en ![](/help/assets/assets/dm-templates/show-layers-list.svg) y más opciones (![](/help/assets/assets/dm-templates/three-dots.svg)) en la capa Lienzo para editar las dimensiones de lienzo en cualquier momento mientras crea la plantilla.
+Haga clic en ![](/help/assets/assets/dm-templates/show-layers-list.svg) **>** más opciones (![](/help/assets/assets/dm-templates/three-dots.svg)) en la capa de lienzo para editar las dimensiones de lienzo en cualquier momento mientras crea la plantilla.
 ![](/help/assets/assets/dm-templates/edit-canvas1.png)
 
 >[!NOTE]
@@ -104,7 +104,7 @@ Siga estos pasos para agregar imágenes al lienzo:
 
 1. Haga clic en ![](/help/assets/assets/dm-templates/add-image.svg) para mostrar el panel [Selector de recursos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector). El panel muestra las imágenes de la instancia de AEM Assets sincronizadas con Dynamic Media.
 1. Examine el panel o utilice palabras clave en la barra de búsqueda para encontrar una imagen específica.
-1. Arrastre y suelte una imagen en el lienzo para utilizarla. Consulte el [panel Propiedades](#4) para cambiar el tamaño o la posición de una capa en el lienzo.
+1. Arrastre y suelte una imagen en el lienzo para utilizarla. Consulte el [**[!UICONTROL Panel de propiedades]**](#reposition-resize-delete-a-layer) para cambiar el tamaño o la posición de una capa en el lienzo.
    ![](/help/assets/assets/dm-templates/add-image-to-canvas.png)
 
 ### Añadir capas de texto al lienzo{#add-text-to-the-canvas}
@@ -113,10 +113,10 @@ Siga estos pasos para agregar capas de texto al lienzo:
 
 1. Haga clic en ![](/help/assets/assets/dm-templates/add-text.svg) para agregar una capa de texto al lienzo y abrir el panel Propiedades.
 1. Seleccione la capa y haga clic en el texto para actualizarla.
-1. Habilite **Cambio de tamaño del texto inteligente** en el panel Propiedades para ajustar automáticamente la longitud del texto y el tamaño de fuente de modo que se ajusten de manera óptima al área designada.
+1. Habilite **[!UICONTROL Cambio de tamaño del texto inteligente]** en el panel Propiedades para ajustar automáticamente la longitud del texto y el tamaño de fuente de modo que se ajusten de manera óptima al área designada.
    ![](/help/assets/assets/dm-templates/add-text-layer.png)
 
-Consulte el [panel Propiedades](#4) para cambiar la posición, el tamaño, la rotación o la eliminación de la capa. Dé formato al texto según la fuente, el tamaño, el color, el estilo y la alineación deseados (en la capa) al cambiar sus valores en los campos respectivos de la sección **Texto** del panel.
+Consulte el [**[!UICONTROL Panel de propiedades]**](#reposition-resize-delete-a-layer) para cambiar la posición, el tamaño, la rotación o la eliminación de la capa. Dé formato al texto según la fuente, el tamaño, el color, el estilo y la alineación deseados (en la capa) al cambiar sus valores en los campos respectivos de la sección **[!UICONTROL Texto]** del panel.
 
 >[!NOTE]
 >
@@ -128,8 +128,8 @@ Siga estos pasos para editar o eliminar una capa de lienzo:
 
 1. Haga clic en ![](/help/assets/assets/dm-templates/show-layers-list.svg) y seleccione la capa en el lienzo o en la lista Capas.
 1. Haga clic en **más opciones** (![](/help/assets/assets/dm-templates/three-dots.svg)) para editar o eliminar la capa.
-1. Haga clic en **Eliminar** para eliminar la capa.
-1. Haga clic en **Editar** para editar la capa con el [panel Propiedades](#4).
+1. Haga clic en **[!UICONTROL Eliminar]** para eliminar la capa.
+1. Haga clic en **[!UICONTROL Editar]** para editar la capa con el [**[!UICONTROL Panel Propiedades]**](#reposition-resize-delete-a-layer).
    ![](/help/assets/assets/dm-templates/edit-delete-layer.png)
 
 ### Panel Propiedades{#properties-panel}
@@ -144,7 +144,7 @@ Este panel muestra la posición del punto central de la capa en el plano del lie
 ![](/help/assets/assets/dm-templates/properties-panel.png)
 
 En el panel de propiedades de una capa, seleccione otra capa del lienzo para ir a su panel de propiedades.
-<a id="4"></a>
+
 
 #### Cambiar la posición, el tamaño, la rotación o la eliminación de una capa{#reposition-resize-delete-a-layer}
 
@@ -153,27 +153,27 @@ Consulte estas acciones comunes de edición de capas para editar un texto o una 
 * **Cambiar la posición de la capa:** Arrastre la capa para moverla a cualquier lugar del lienzo. Esta acción actualiza los valores X e Y en el panel de propiedades.
 * **Cambiar el tamaño de la capa:** Seleccione la capa y arrastre sus controladores de borde para cambiar su tamaño. Esta acción actualiza los valores de anchura y altura en el panel de propiedades.
 * **Rotar la capa:** Arrastre el controlador cuadrado colocado verticalmente sobre la capa para girarlo alrededor de su centro. Esta acción actualiza los valores de ángulo en el panel de propiedades.
-* **Eliminar la capa:** Presione **Retroceso** o **eliminar** y luego haga clic en **Confirmar** para eliminar una capa seleccionada.
+* **Eliminar la capa:** Presione **Retroceso** o **eliminar** y luego haga clic en **[!UICONTROL Confirmar]** para eliminar una capa seleccionada.
 
 #### Opciones de formato de texto{#text-formatting-options-on-properties-panel}
 
-Dé formato al texto según la fuente, el tamaño, el color, el estilo y la alineación deseados (en la capa) al cambiar sus valores en los campos respectivos de la sección **Texto** del panel.
+Dé formato al texto según la fuente, el tamaño, el color, el estilo y la alineación deseados (en la capa) al cambiar sus valores en los campos respectivos de la sección **[!UICONTROL Texto]** del panel.
 
-**Cambio de tamaño de texto inteligente:** Asegúrese de incluir **Cambio de tamaño de texto inteligente** ([Ajuste de texto inteligente](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)) para ajustar de forma óptima cualquier texto del área designada ajustando su tamaño y longitud de fuente de forma inteligente. Esta capacidad evita que el texto se desborde o minimiza los espacios adicionales en la parte inferior del texto.
+**[!UICONTROL Cambio de tamaño del texto inteligente]** Asegúrese de incluir **[!UICONTROL Cambio de tamaño del texto inteligente]** ([Ajuste de texto inteligente](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)) para ajustar de forma óptima cualquier texto del área designada ajustando su tamaño y longitud de fuente de forma inteligente. Esta capacidad evita que el texto se desborde o minimiza los espacios adicionales en la parte inferior del texto.
 ![](/help/assets/assets/dm-templates/smart-text-resize.png)
 
 ### Parametrizar capas {#parameterise-a-layer}
 
 Después de crear una plantilla con varias capas de imágenes y textos, parametriza las capas seleccionadas. Cuando se parametriza una capa o su propiedad, obtiene un par clave-valor (también denominado como parámetro). Este parámetro se puede incluir en la dirección URL de la plantilla para actualizar la posición, el tamaño o el contenido de la capa en tiempo real, lo que resulta en la personalización de la plantilla en poco tiempo.
 
-Para parametrizar una capa: <a id="1"></a>
+Para parametrizar una capa:
 
-1. haga clic en ![](/help/assets/assets/dm-templates/show-layers-list.svg), seleccione una capa y haga clic en **Parámetros**. Se muestra el panel **Parámetros**.
-1. Cambie **Include Parameter** para asignar parámetros a una propiedad. Consulte [this](#parameterisation-options-or-allowed-parameters) para conocer el comportamiento de la propiedad después de la parametrización.
+1. haga clic en ![](/help/assets/assets/dm-templates/show-layers-list.svg), seleccione una capa y haga clic en **[!UICONTROL Parámetros]**. Se muestra el panel **[!UICONTROL Parámetros]**.
+1. Cambie **[!UICONTROL Include Parameter]** para asignar parámetros a una propiedad. Consulte [this](#parameterisation-options-or-allowed-parameters) para conocer el comportamiento de la propiedad después de la parametrización.
 1. **Opcional:** Cambie el nombre del parámetro. Un nombre de parámetro tiene un nombre de capa seguido de un sufijo. Para una capa seleccionada, todas sus propiedades parametrizadas comparten el mismo nombre de capa seguido de un sufijo variable. Cambie el nombre de la capa siguiendo la convención de nomenclatura semántica, de modo que cuando incluya el parámetro en la URL, el nombre del parámetro explica por sí mismo el contenido de la capa o su propósito.
-1. Haga clic en **Guardar**.
+1. Haga clic en **[!UICONTROL Guardar]**.
    ![](/help/assets/assets/dm-templates/parameterise-a-layer.png)
-Para cambiar entre el panel Parámetro de una capa de imagen y de texto, seleccione la capa en el lienzo y haga clic en **Parámetros**.
+Para cambiar entre el panel Parámetro de una capa de imagen y de texto, seleccione la capa en el lienzo y haga clic en **[!UICONTROL Parámetros]**.
 
 #### Opción del panel Parámetros {#parameterisation-options-or-allowed-parameters}
 
@@ -203,32 +203,32 @@ Otra forma de mantener las plantillas flexibles es utilizar un nombre de paráme
 
 Siga estos pasos para asignar el mismo nombre a los parámetros de ocultación (![](/help/assets/assets/dm-templates/Visibility-icon.svg)) de varias capas, lo que le permite ocultarlos o mostrarlos simultáneamente.
 
-1. Vaya al [panel Parámetros](#1) de una capa.
-1. Cambie el parámetro **Hide** si no está parametrizado anteriormente.
+1. Vaya al [**[!UICONTROL Panel de propiedades]**](#parameterise-a-layer) de una capa.
+1. Cambie el parámetro **[!UICONTROL Hide]** si no está parametrizado anteriormente.
 1. **Opcional:** Cambie el nombre del parámetro Hide.
 1. Copie el nombre Ocultar parámetro.
-1. Vaya al panel Parámetro de otras capas seleccionándolas en el lienzo y alterne su parámetro **Hide** si no está parametrizado.
-1. Reemplace su nombre **Hide Parameter** con el nombre copiado.
-1. Haga clic en **Guardar** para agrupar las capas.
-1. Ejecute el paso 3 y luego el 4 en la sección [Vista previa y Publish](#2) para ver los cambios.
+1. Vaya al panel Parámetro de otras capas seleccionándolas en el lienzo y alterne su parámetro **[!UICONTROL Hide]** si no está parametrizado.
+1. Reemplace su nombre **[!UICONTROL Hide parameter]** con el nombre copiado.
+1. Haga clic en **[!UICONTROL Guardar]** para agrupar las capas.
+1. Ejecute el paso 3 y luego el 4 en la sección [**[!UICONTROL Vista previa y Publish]**](#preview-and-publish-template-and-copy-template-deliver-url) para ver los cambios.
 
 ## Previsualice y publique la plantilla para copiar la dirección URL de envío{#preview-and-publish-template-and-copy-template-deliver-url}
 
 Siga estos pasos para previsualizar y publicar la plantilla y copiar la dirección URL de envío:
 
-1. En la página de lienzo, haga clic en **Vista previa**. También puede ir a **Vista de Assets > Dynamic Media Assets >**, buscar y seleccionar la plantilla **>**, hacer clic en **Editar plantilla >** y hacer clic en **Vista previa**. La página de vista previa muestra la plantilla, sus parámetros (capas y propiedades parametrizadas), el estado de publicación y la opción **Publish**. <a id="3"></a>
-1. Seleccione parámetros del panel **Parámetros de plantilla** para editar sus valores y actualizar instantáneamente el contenido, el tamaño, la posición o el formato de texto de la capa de plantilla correspondiente en la vista previa. Por ejemplo:
+1. En la página de lienzo, haga clic en **[!UICONTROL Vista previa]**. También puede navegar a la **[!UICONTROL vista Assets]** **>** **[!UICONTROL Dynamic Media Assets]** **>**, buscar y seleccionar su plantilla **>**, hacer clic en **[!UICONTROL Editar plantilla]** **>**, y hacer clic en **[!UICONTROL Vista previa]**. La página de vista previa muestra la plantilla, sus parámetros (capas y propiedades parametrizadas), el estado de publicación y la opción **[!UICONTROL Publish]**.
+1. Seleccione parámetros del panel **[!UICONTROL Parámetros de plantilla]** para editar sus valores y actualizar instantáneamente el contenido, el tamaño, la posición o el formato de texto de la capa de plantilla correspondiente en la vista previa. Por ejemplo:
    1. Seleccione una capa de texto y edite su texto o
-   1. Seleccione una capa de imagen, haga clic en ![](/help/assets/assets/dm-templates/add-image.svg), seleccione una imagen del selector de recursos y haga clic en **Actualizar**.
+   1. Seleccione una capa de imagen, haga clic en ![](/help/assets/assets/dm-templates/add-image.svg), seleccione una imagen del selector de recursos y haga clic en **[!UICONTROL Actualizar]**.
 
-   La plantilla se actualiza inmediatamente, mostrando el texto editado y reemplazando la imagen anterior por la nueva. Además, el valor del parámetro de imagen refleja la nueva ruta de imagen. Del mismo modo, puede cambiar el tamaño de una capa ajustando sus valores, y los cambios se aplican a la plantilla en tiempo real. <a id="2"></a>
+   La plantilla se actualiza inmediatamente, mostrando el texto editado y reemplazando la imagen anterior por la nueva. Además, el valor del parámetro de imagen refleja la nueva ruta de imagen. Del mismo modo, puede cambiar el tamaño de una capa ajustando sus valores, y los cambios se aplican a la plantilla en tiempo real.
 1. Seleccione el parámetro hide de [capas agrupadas](#group-layers) en la lista para mostrarlas u ocultarlas juntas en la plantilla.
-1. **Opcional:** Cambie el valor de **Ocultar parámetro** entre 0 y 1 y haga clic en **Actualizar** para ver los cambios. Las capas con el mismo parámetro hide se ocultan o se muestran juntas. Del mismo modo, se puede controlar la visibilidad de las capas desde la dirección URL.
+1. **Opcional:** Cambie el valor del parámetro **[!UICONTROL Hide]** entre 0 y 1 y haga clic en **[!UICONTROL Refresh]** para ver los cambios. Las capas con el mismo parámetro hide se ocultan o se muestran juntas. Del mismo modo, se puede controlar la visibilidad de las capas desde la dirección URL.
 
    ![](/help/assets/assets/dm-templates-publish-status.png)
-También puede alternar **Incluir todos los parámetros** para editar todos los valores de parámetros mostrados y ver las actualizaciones en la vista previa de la plantilla.
+También puede alternar **[!UICONTROL Incluir todos los parámetros]** para editar todos los valores de parámetros mostrados y ver las actualizaciones en la vista previa de la plantilla.
    <br>
-1. Para publicar la plantilla en la página de vista previa, haz clic en **Publish** y confirma la publicación. Se muestra el mensaje Publish Complete y el estado de publicación se actualiza a Published.
+1. Para publicar la plantilla en la página de vista previa, haz clic en **[!UICONTROL Publish]** y confirma la publicación. Se muestra el mensaje Publish Complete y el estado de publicación se actualiza a Published.
 
 >[!NOTE]
 >
@@ -236,12 +236,12 @@ También puede alternar **Incluir todos los parámetros** para editar todos los 
 
 ### Copiar la dirección URL de envío
 
-Los parámetros seleccionados en la página **Vista previa** se convierten en los parámetros de URL en la URL de la plantilla.
+Los parámetros seleccionados en la página **[!UICONTROL Vista previa]** se convierten en los parámetros de URL en la URL de la plantilla.
 
 Para copiar la URL de la plantilla publicada que se muestra en la vista previa:
 
-1. Haga clic en **Copiar URL**. Se muestra el cuadro de diálogo **Copiar URL**. Seleccione y copie la dirección URL mostrada. Observe que el primer parámetro de la dirección URL comienza después del signo de interrogación **(?)** y un par clave-valor comienza con **$** y termina con **&amp;**. La clave y el valor están separados por un signo igual **(=)**, con la clave a la izquierda y el valor a la derecha.
-1. Pegue esta dirección URL en la pestaña del explorador y vea la plantilla activa. Personalice la plantilla en tiempo real actualizando el valor del parámetro requerido (valor de clave) en la dirección URL directamente como se muestra en el [paso 2](#3) de la sección **Vista previa y Publish**.
+1. Haga clic en **[!UICONTROL Copiar URL]**. Se muestra el cuadro de diálogo **[!UICONTROL Copiar URL]**. Seleccione y copie la dirección URL mostrada. Observe que el primer parámetro de la dirección URL comienza después del signo de interrogación **(?)** y un par clave-valor comienza con **$** y termina con **&amp;**. La clave y el valor están separados por un signo igual **(=)**, con la clave a la izquierda y el valor a la derecha.
+1. Pegue esta dirección URL en la pestaña del explorador y vea la plantilla activa. Personalice la plantilla en tiempo real actualizando el valor del parámetro requerido (valor de clave) en la dirección URL directamente como se muestra en el [paso 2](#preview-and-publish-template-and-copy-template-deliver-url) de la sección **Vista previa y Publish**.
 1. Utilice esta URL para la comercialización rápida de sus productos o servicios. Puede compartir esta URL con sus clientes o integrarla en su sitio web o en cualquier aplicación de terceros descendente para mostrar el banner y realizar actualizaciones en tiempo real para reflejar las ofertas en curso.
 
 Aprenda a crear una plantilla de Dynamic Media paso a paso en este vídeo.
@@ -264,10 +264,10 @@ Pegue esta URL actualizada en el explorador para ver los cambios.
 
 Edite la plantilla siguiendo estos pasos:
 
-1. En la vista Assets, haga clic en **Dynamic Media Assets**.
+1. En la vista Assets, haga clic en **[!UICONTROL Dynamic Media Assets]**.
 2. Navegue hasta la ubicación de la plantilla.
 3. Seleccione la plantilla.
-4. Haga clic en **Editar plantilla**. El lienzo de la plantilla muestra la plantilla y la lista de todas sus capas en el panel Capas. Comience a editar la plantilla según los requisitos.
+4. Haga clic en **[!UICONTROL Editar plantilla]**. El lienzo de la plantilla muestra la plantilla y la lista de todas sus capas en el panel Capas. Comience a editar la plantilla según sus necesidades.
 
 ## Puntos importantes que debe tener en cuenta {#important-points-to-note}
 
