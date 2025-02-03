@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 613a5602706d4d0d63fce7a20bf52660d9a9d335
 workflow-type: tm+mt
 source-wordcount: '923'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -98,9 +98,9 @@ Participe en nuestro programa para primeros usuarios de Cloud Manager y tenga la
 
   Para obtener más información sobre “Traer su propio Git” (ahora compatible con GitLab y Bitbucket) y registrarse en el programa para primeros usuarios, consulte [Notas de la versión de Cloud Manager de octubre de 2024](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
 
-* **Entorno de prueba avanzado:** Una solución diseñada específicamente para salvar la distancia entre desarrollo y producción. Adaptado a las necesidades empresariales, este entorno duplica las especificaciones de nivel de producción para admitir pruebas de aceptación del usuario (UAT) precisas y evaluaciones de rendimiento exhaustivas.
+* **Entorno de prueba avanzado:** una solución diseñada específicamente para salvar la distancia entre desarrollo y producción. Adaptada a las necesidades empresariales, este entorno replica las especificaciones de nivel de producción para admitir pruebas de aceptación del usuario (UAT) precisas y evaluaciones de rendimiento exhaustivas.
 
-  Si está interesado en unirse al programa de adopción anticipada, [complete este formulario](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqdgpuOMAVL5CQpkZ6ths76Qks8%24&amp;data=05%7C02%panchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIjoi4wLjAwMDA iLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0) y envíe un correo electrónico a [earlyadopter_cs_advtestenvironment@adobe.com](mailto:earlyadopter_cs_advtestenvironment@adobe.com) con su `OrgID`.
+  Si está interesado en unirse al programa de adopción anticipada, [complete este formulario](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqddgpuOMAVL5CQpkZ6ths76Qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0) y envíe un correo electrónico a [earlyadopter_cs_advtestenvironment@adobe.com](mailto:earlyadopter_cs_advtestenvironment@adobe.com) con su `OrgID`.
 
 
 
