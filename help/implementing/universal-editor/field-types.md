@@ -4,7 +4,7 @@ description: Obtenga información acerca de los campos y los tipos de componente
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: f6ae3160fc2f12519f840f646f852169b2dcb57c
+source-git-commit: 2e22a2570a11df8d5f82037414f689f20b6fdb94
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 13%
@@ -158,7 +158,10 @@ AEM AEM AEM Un tipo de componente de contenido de la habilita un selector de con
       "name": "reference",
       "value": "",
       "label": "AEM Content Picker",
-      "valueType": "string"
+      "valueType": "string",
+      "validation": {
+            "rootPath": "/content/refresh"
+        }
     }
   ]
 }
@@ -332,7 +335,10 @@ El selector de fragmentos de contenido se puede usar para seleccionar un [fragme
         "name": "picker",
         "label": "Content Fragment Picker",
         "valueType": "string",
-        "variationName": "contentFragmentVariation"
+        "variationName": "contentFragmentVariation",
+        "validation": {
+            "rootPath": "/content/refresh"
+        }
       }
     ]
   }
