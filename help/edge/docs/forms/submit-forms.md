@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
 source-git-commit: 552779d9d1cee2ae9f233cabc2405eb6416c41bc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '873'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 97%
 
 Una vez que haya [creado y previsualizado el formulario](/help/edge/docs/forms/create-forms.md), es hora de permitir que la hoja de cálculo correspondiente comience a recibir datos. Puede hacer lo siguiente:
 
-* [Habilite manualmente la hoja de cálculo para aceptar datos](#manually-enable-the-spreadsheet-to-accept-data)
-* [Utilice las API de administrador para habilitar una hoja de cálculo que acepte datos](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
+* [Habilitar manualmente la aceptación de datos en la hoja de cálculo](#manually-enable-the-spreadsheet-to-accept-data)
+* [Utilice las API de administrador para habilitar la aceptación de datos en la hoja de cálculo](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
 
 ![Ecosistema de creación basado en documentos](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -66,7 +66,7 @@ Una vez configurada la hoja para recibir datos, puede [previsualizar el formular
 >  Las hojas &quot;shared-aem&quot; nunca deben contener información personal identificable o datos confidenciales con los que no se sienta cómodo si son de acceso público.
 
 
-## Utilice las API de administrador para habilitar una hoja de cálculo que acepte datos
+## Utilice las API de administrador para habilitar la aceptación de datos en la hoja de cálculo
 
 También puede enviar una petición POST al formulario para habilitarla para que acepte datos y configurar los encabezados de la hoja `incoming`. Al recibir la petición POST, el servicio analiza el cuerpo de la solicitud y genera de forma autónoma los encabezados y hojas esenciales necesarios para la ingesta de datos.
 
@@ -154,7 +154,7 @@ Para utilizar las API de administrador para habilitar una hoja de cálculo que a
 
    El formulario ahora está habilitado para aceptar datos. También observará los siguientes cambios en la hoja de cálculo:
 
-## Cambia automáticamente a la hoja una vez que está habilitada para aceptar datos.
+## Cambios automáticos en la hoja una vez que está habilitada para aceptar datos.
 
 Una vez que la hoja está configurada para recibir datos, se observan los siguientes cambios en la hoja de cálculo:
 
@@ -306,6 +306,6 @@ There are a few different ways that you can format the form data in the POST bod
 
 A continuación, puede [personalizar el mensaje de agradecimiento](/help/edge/docs/forms/thank-you-page-form.md).
 
-## Consulte también
+## Ver también
 
 {{see-more-forms-eds}}

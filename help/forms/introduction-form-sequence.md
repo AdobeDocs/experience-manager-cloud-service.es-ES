@@ -6,9 +6,9 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
 source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '537'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 93%
 
 >[!NOTE]
 >
-> El Adobe recomienda usar la captura de datos moderna y extensible [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear nuevos Forms adaptables](/help/forms/creating-adaptive-form-core-components.md) o [agregar Forms adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base.
+> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear nuevos formularios adaptables](/help/forms/creating-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear formularios adaptables con componentes de base.
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -55,6 +55,6 @@ Veamos un caso de uso en el que debe crear una secuencia para los pasos de relle
 Después de definir la secuencia del formulario en la plantilla de formulario, puede utilizarla para crear formularios que tengan la estructura básica definida como dicha secuencia, aunque siempre puede personalizar el formulario para adaptarlo a sus necesidades.
 
 
-## Consulte también {#see-also}
+## Ver también {#see-also}
 
 {{see-also}}

@@ -6,9 +6,9 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
 source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1138'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
-> El Adobe recomienda usar la captura de datos moderna y extensible [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear nuevos Forms adaptables](/help/forms/creating-adaptive-form-core-components.md) o [agregar Forms adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base.
+> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear nuevos formularios adaptables](/help/forms/creating-adaptive-form-core-components.md) o [adición de formularios adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear formularios adaptables con componentes de base.
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -133,6 +133,6 @@ Siga estos pasos para desactivar el modo Diseño:
 1. Seleccione la pestaña **[!UICONTROL Configuración de diseño]** y **[!UICONTROL Desactivar el modo Diseño]**.
 1. Seleccione ![Guardar cambios](assets/save_icon.svg) para guardar las propiedades de la plantilla.
 
-## Consulte también {#see-also}
+## Ver también {#see-also}
 
 {{see-also}}

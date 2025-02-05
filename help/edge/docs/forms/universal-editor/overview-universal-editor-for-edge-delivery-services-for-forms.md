@@ -1,35 +1,36 @@
 ---
-title: Editor universal para Edge Delivery Services para Forms (bloque Forms de EDS)
-description: Utilice el Editor universal para Edge Delivery Services para Forms (bloque Forms de EDS) para crear Forms adaptable.
+title: Editor universal para Edge Delivery Services para formularios (bloque de formularios de EDS)
+description: Utilice el Editor universal para Edge Delivery Services para formularios (bloque de formularios de EDS) para crear formularios adaptables.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: tm+mt
+exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
+source-git-commit: 5059437eca1dcfbfb26d1ff7b12d532472951568
+workflow-type: ht
 source-wordcount: '1114'
-ht-degree: 12%
+ht-degree: 100%
 
 ---
 
-# Editor universal para Edge Delivery Services para Forms (bloque Forms de EDS)
+# Editor universal para Edge Delivery Services para formularios (bloque de formularios de EDS)
 
-El editor universal revoluciona la creación de formularios para los servicios de envío de Adobe Edge (EDS) al ofrecer una interfaz de What You See Is What You Get (WYSIWYG) sencilla, visual e intuitiva. Diseñado para creadores de contenido y autores de formularios, elimina la complejidad de los procesos tradicionales de creación de formularios, lo que lo hace accesible incluso para usuarios no técnicos.
+El editor universal revoluciona la creación de formularios para los servicios de envío de Adobe Edge (EDS) al ofrecer una interfaz de What You See Is What You Get (WYSIWYG o “lo que ve es lo que obtiene”) sencilla, visual e intuitiva. Diseñado para creadores de contenido y autores de formularios, elimina la complejidad de los procesos tradicionales de creación de formularios, lo que lo hace accesible incluso para usuarios no técnicos.
 
-Con el editor universal, puede diseñar rápidamente formularios interactivos y adaptables mediante componentes creados previamente, como campos de texto, casillas de verificación y botones de opción. Su robusto conjunto de funciones admite reglas dinámicas, integración de datos fluida y personalización avanzada, lo que garantiza que cada formulario se adapte a sus necesidades.
+Con el editor universal, puede diseñar con rapidez formularios interactivos y adaptables mediante componentes creados previamente, como campos de texto, casillas de verificación y botones de opción. Su sólido conjunto de funciones admite reglas dinámicas, integración de datos fluida y personalización avanzada, lo que garantiza que cada formulario se adapte a sus necesidades.
 
-Tanto si gestiona un procesamiento ligero del lado del cliente, garantiza la compatibilidad entre exploradores o cumple con estrictos estándares de accesibilidad, el editor universal ofrece una solución optimizada para crear y administrar formularios.
+Tanto si gestiona un renderizado ligero del lado del cliente, garantiza la compatibilidad entre exploradores o cumple con estrictos estándares de accesibilidad, el editor universal ofrece una solución optimizada para crear y administrar formularios.
 
-![Editor universal](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} —>
+![Editor universal](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} -->
 
-## Características principales del editor universal para EDS Forms
+## Características principales del editor universal para formularios de EDS
 
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interfaz de WYSIWYG"> 
     <h3>Interfaz de WYSIWYG</h3>
-    <p>El editor universal proporciona una interfaz de WYSIWYG para el diseño de formularios con una biblioteca de componentes prediseñada, diseño interactivo, creación basada en plantillas y modificaciones de campos en tiempo real.
+    <p>El editor universal proporciona una interfaz de WYSIWYG para el diseño de formularios con una biblioteca de componentes prediseñada, diseño interactivo, creación con plantillas y modificaciones de campos en tiempo real.
  </p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
@@ -47,30 +48,30 @@ Tanto si gestiona un procesamiento ligero del lado del cliente, garantiza la com
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="Personalización"> 
     <h3>Personalización</h3>
-    <p>Personalization utiliza los datos de usuario para ofrecer experiencias de formulario adaptadas, ajustando dinámicamente el contenido, el diseño o las opciones en función de las preferencias del usuario.</p>
+    <p>Personalización utiliza los datos de usuario para ofrecer experiencias de formulario adaptadas, ajustando de forma dinámica el contenido, el diseño o las opciones en función de las preferencias del usuario.</p>
   </div>
     <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="Servicios de rellenado previo">
     <h3>Servicios de rellenado previo</h3>
-    <p>Los servicios de rellenado previo rellenan automáticamente los campos de formulario con datos de usuario relevantes de varias fuentes, lo que reduce la entrada manual y mejora la experiencia del usuario.</p>
+    <p>Los servicios de rellenado previo completan de forma automática los campos de formulario con datos de usuario relevantes de varias fuentes, lo que reduce la entrada manual y mejora la experiencia del usuario.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="Editor de reglas">
     <h3>Pruebas A/B</h3>
-    <p>Las pruebas A/B (experimentación) permiten a las organizaciones experimentar con diferentes diseños de formulario, diseños y características para identificar las variantes de mejor rendimiento.</p>
+    <p>Las pruebas A/B (experimentación) permiten a las organizaciones probar con diferentes diseños de formulario, diseños y características para identificar las variantes de mejor rendimiento.</p>
   </div>
 </div>
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="Analytics y seguimiento">
-    <h3>Analytics y seguimiento</h3>
+    <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="Análisis y seguimiento">
+    <h3>Análisis y seguimiento</h3>
     <p>Obtenga información sobre el comportamiento del usuario, las interacciones de formularios y las tasas de envío con análisis y seguimiento integrados para permitir la optimización de formularios basada en datos.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="Integración con Adobe Workfront">
     <h3> Administración de tareas </h3>
-    <p>La integración con Adobe Workfront permite a los equipos de administrar tareas para la creación y el mantenimiento de formularios, lo que garantiza flujos de trabajo optimizados.</p>
+    <p>La integración con Adobe Workfront permite a los equipos administrar tareas para la creación y el mantenimiento de formularios, lo que garantiza flujos de trabajo optimizados.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/data-binding.svg" alt="Enlace de datos">
@@ -81,9 +82,9 @@ Tanto si gestiona un procesamiento ligero del lado del cliente, garantiza la com
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="Internacionalización/Localización">
+    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="Internacionalización/localización">
     <h3>Publicación/cancelación de publicación</h3>
-    <p>Controle fácilmente la visibilidad de sus formularios: publíquelos o cancele su publicación directamente desde el editor con solo unos clics, lo que le permite administrar dinámicamente las actualizaciones de disponibilidad y contenido en tiempo real.</p>
+    <p>Controle con facilidad la visibilidad de sus formularios: publíquelos o cancele la publicación directamente desde el editor con solo unos clics, lo que le permite administrar de manera dinámica las actualizaciones de disponibilidad y contenido en tiempo real.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="Acciones de envío">
@@ -104,14 +105,14 @@ Tanto si gestiona un procesamiento ligero del lado del cliente, garantiza la com
     <p>Los desarrolladores pueden ampliar la funcionalidad del editor mediante extensiones de interfaz de usuario, lo que permite soluciones adaptadas que se ajustan a las necesidades específicas de la organización.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="Incrustación de Forms">
-    <h3>Incrustación de Forms</h3>
-    <p>Incruste formularios directamente en las páginas de Sites de Edge Delivery Services mediante el componente incrustado integrado del editor universal para lograr una experiencia de usuario perfecta.</p>
+    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="Incrustación de formularios">
+    <h3>Incrustación de formularios</h3>
+    <p>Incruste formularios directamente en las páginas de Sites de Edge Delivery Services mediante el componente incrustado integrado del editor universal para lograr una experiencia del usuario perfecta.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="Componentes personalizados">
     <h3>Configuración de agradecimiento</h3>
-    <p>Personalice fácilmente el mensaje de confirmación o la página que se muestra a los usuarios después de enviar correctamente el formulario.
+    <p>Personalice con facilidad el mensaje de confirmación o la página que se muestra a los usuarios después de enviar correctamente el formulario.
     </p>
   </div>
 </div>
@@ -139,9 +140,9 @@ Tanto si gestiona un procesamiento ligero del lado del cliente, garantiza la com
 
 * **Editor Customization via UI Extension**: Developers can extend the functionality of the Universal Editor through UI extensions, enabling tailored solutions that fit specific organizational needs. -->
 
-## Componentes de formulario creados previamente
+## Componentes de formulario generados previamente
 
-El editor universal proporciona los siguientes componentes de formulario predeterminados:
+El editor universal proporciona los siguientes componentes listos para usar de forma predeterminada:
 
 <table>
   <thead>
@@ -159,7 +160,7 @@ El editor universal proporciona los siguientes componentes de formulario predete
     </tr>
     <tr>
       <td><b>Botón</b></td>
-      <td>Agrega elementos interactivos para acciones como navegación o lógica personalizada.</td>
+      <td>Añade elementos interactivos para acciones como navegación o lógica personalizada.</td>
     </tr>
     <tr>
       <td><b>Captcha</b></td>
@@ -223,7 +224,7 @@ El editor universal proporciona los siguientes componentes de formulario predete
     </tr>
     <tr>
       <td><b>Botón Enviar</b></td>
-      <td>Déclencheur en el envío de formularios e inicia flujos de trabajo definidos.</td>
+      <td>Activa el envío de formularios e inicia flujos de trabajo definidos.</td>
     </tr>
     <tr>
       <td><b>Campo de número de teléfono</b></td>
@@ -235,7 +236,7 @@ El editor universal proporciona los siguientes componentes de formulario predete
     </tr>
     <tr>
       <td><b>Campo de texto</b></td>
-      <td>DCaptura la entrada de una sola línea, como nombres o direcciones de correo electrónico.</td>
+      <td>Captura la entrada de una sola línea, como nombres o direcciones de correo electrónico.</td>
     </tr>
     <tr>
       <td><b>Asistente</b></td>
@@ -281,27 +282,27 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## Incorporación
 
-Para activar el editor universal y sus funciones avanzadas como el editor de reglas escríbanos a aem-forms-ea@adobe.com desde su ID oficial de correo electrónico . El equipo de Adobe está a su disposición para ayudarle a transformar su experiencia de creación de formularios.
+Para activar el editor universal y sus funciones avanzadas, como el editor de reglas, escríbanos a aem-forms-ea@adobe.com desde su ID oficial de correo electrónico. El equipo de Adobe está a su disposición para ayudar a transformar su experiencia de creación de formularios.
 
 ## Preguntas frecuentes
 
-**Q. ¿Quién puede utilizar el editor universal?**
+**P: ¿Quién puede utilizar el editor universal?**
 El editor universal está diseñado para una audiencia amplia que incluye:
 
 * Creadores de contenido que deseen crear formularios visualmente atractivos.
 * Desarrolladores que necesitan funcionalidades avanzadas de personalización e integración.
 * Organizaciones que buscan soluciones de formularios escalables, seguras y compatibles.
 
-**Q: ¿Puedo integrar formularios creados con el editor universal en mis sistemas existentes?**
+**P: ¿Puedo integrar formularios creados con el editor universal en mis sistemas existentes?**
 Por supuesto. El editor universal admite el enlace de datos sin problemas con sistemas back-end, lo que permite actualizaciones en tiempo real y asignación de datos avanzada. También se integra con herramientas como Adobe Workfront para la administración de tareas y admite extremos seguros para los flujos de trabajo de envío de datos.
 
-**Q: ¿es posible personalizar los componentes del formulario?**
+**P: ¿es posible personalizar los componentes del formulario?**
 Sí, el editor universal permite a los desarrolladores crear componentes personalizados adaptados a necesidades organizativas específicas. Además, puede ampliar la funcionalidad del editor mediante extensiones de interfaz de usuario y flujos de trabajo personalizados.
 
-**Q: ¿Cómo administra la accesibilidad el Editor universal?**
+**P: ¿Cómo administra la accesibilidad el editor universal?**
 El editor universal está diseñado con un estricto cumplimiento de los estándares de accesibilidad, incluidas las WCAG (Directrices de accesibilidad al contenido web). Esto garantiza que las personas con discapacidad puedan utilizar los formularios, lo que proporciona una experiencia inclusiva.
 
-**Q: ¿Qué tipo de análisis puedo obtener de los formularios?**
+**P: ¿Qué tipo de análisis puedo obtener de los formularios?**
 El editor universal incluye herramientas de seguimiento y análisis integradas para monitorizar las interacciones del usuario, las tasas de envío de formularios y las métricas de conversión. Estas perspectivas ayudan a optimizar los formularios para obtener un mejor rendimiento.
 
 

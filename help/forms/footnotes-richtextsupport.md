@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 role: User, Developer
 source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '429'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 91%
 
 >[!NOTE]
 >
-> El Adobe recomienda usar la captura de datos moderna y extensible [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear nuevos Forms adaptables](/help/forms/creating-adaptive-form-core-components.md) o [agregar Forms adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base.
+> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear nuevos formularios adaptables](/help/forms/creating-adaptive-form-core-components.md) o [adición de formularios adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear formularios adaptables con componentes de base.
 
 La **[!UICONTROL Nota al pie]** es el extra de información o nota que aparece al final de la página. [!UICONTROL Nota al pie] comprende las notas que se indican en el texto con números como superíndice.
 
@@ -61,6 +61,6 @@ Para añadir una nota al pie en un formulario adaptable, siga estos pasos:
 Durante el tiempo de ejecución, el número aparece en el texto como un superíndice y su descripción correspondiente aparece en el componente **[!UICONTROL Nota al pie]** en la posición donde [!UICONTROL Marcador de nota al pie] está colocado en el formulario adaptable. Puede ir directamente a la descripción de la nota al pie haciendo clic en su número correspondiente en la [!UICONTROL Nota al pie].
 
 
-## Consulte también {#see-also}
+## Ver también {#see-also}
 
 {{see-also}}

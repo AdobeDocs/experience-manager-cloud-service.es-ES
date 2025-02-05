@@ -9,9 +9,9 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
 source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1742'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,14 +19,14 @@ ht-degree: 97%
 
 >[!NOTE]
 >
-> El Adobe recomienda usar la captura de datos moderna y extensible [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear nuevos Forms adaptables](/help/forms/creating-adaptive-form-core-components.md) o [agregar Forms adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base.
+> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear nuevos formularios adaptables](/help/forms/creating-adaptive-form-core-components.md) o [adición de formularios adaptables a páginas de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear formularios adaptables con componentes de base.
 
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html?lang=es) |
 | AEM as a Cloud Service | Este artículo |
-| Se aplica a lo siguiente: | Formulario adaptable basado en componentes de base. <br> Para los formularios adaptables basados en componentes principales, [Haga clic aquí](/help/forms/captcha-adaptive-forms-core-components.md). |
+| Se aplica a | Formulario adaptable basado en componentes de base. <br> Para los formularios adaptables basados en componentes principales, [Haga clic aquí](/help/forms/captcha-adaptive-forms-core-components.md). |
 
 
 CAPTCHA (prueba de Turing completamente automática y pública para diferenciar ordenadores de humanos) es un programa que se utiliza comúnmente en transacciones en línea para distinguir entre humanos y programas o bots automatizados. Plantea un desafío y evalúa la respuesta del usuario para determinar si es un humano o un bot que interactúa con el sitio. Evita que el usuario continúe si la prueba falla y ayuda a que las transacciones en línea sean seguras al impedir que los bots publiquen contenido no deseado o con fines malintencionados.
@@ -346,7 +346,7 @@ Establezca la propiedad **[!UICONTROL af.cloudservices.recaptcha.domain]** de la
 
 Para establecer los valores de una configuración, [Generar configuraciones OSGi mediante el SDK de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=es#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [implemente la configuración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=es#deployment-process) a su instancia de Cloud Service.
 
-## Vea también {#see-also}
+## Ver también {#see-also}
 
 {{see-also}}
 

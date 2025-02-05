@@ -6,9 +6,9 @@ role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
 source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3145'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -128,7 +128,7 @@ Añada las bibliotecas de cliente **Customheaderlibs** y **Customfoterlibs** a l
 
 1. [Ejecute la canalización de implementación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=es) para implementar las bibliotecas de cliente en el entorno de AEM as a Cloud Service.
 
-### Habilitar Forms adaptable: incrustado (v2) para la página de AEM Sites o el fragmento de experiencia
+### Habilitar formularios adaptables: incrustados (v2) para su página de AEM Sites o fragmento de experiencia
 
 Para habilitar el componente **[!UICONTROL Formularios adaptables: Incrustados (v2)]** en la política de la plantilla, siga los siguientes pasos:
 
@@ -246,7 +246,7 @@ Puede personalizar la configuración avanzada del componente **[!UICONTROL Formu
 * **Después del envío**: seleccione la acción que debe activarse después del envío del formulario. Puede elegir mostrar un mensaje o una página de agradecimiento.
    * **Mostrar mensaje de agradecimiento**: escriba un mensaje usando el editor de texto enriquecido para mostrar en el envío del formulario. Esta opción solo está disponible cuando elige mostrar un mensaje de agradecimiento.
    * **Página de agradecimiento**: examine y seleccione la página que desea mostrar después al enviar el formulario. Esta opción solo está disponible cuando elige mostrar una página de agradecimiento.
-   * **Redirigir a la página de agradecimiento**: active la opción para reemplazar la página que contiene el formulario adaptable incrustado por una página de agradecimiento. De lo contrario, la página de agradecimiento reemplaza al formulario adaptable en el componente **[!UICONTROL Formularios adaptables: incrustados]**, sin actualizar la página de Sites subyacente. Esta opción solo está disponible cuando elige mostrar una página de agradecimientos.
+   * **Redirigir a la página de agradecimiento**: active la opción para reemplazar la página que contiene el formulario adaptable incrustado por una página de agradecimiento. De lo contrario, la página de agradecimiento reemplaza al formulario adaptable en el componente **[!UICONTROL Formularios adaptables: incrustados]**, sin actualizar la página de Sites subyacente. Esta opción solo está disponible cuando elige mostrar una página de agradecimiento.
    * **Mensaje de agradecimientos**: confirmación breve o que se muestra en la pantalla después de enviar correctamente un formulario.
    * **Página de agradecimiento**: examine y seleccione la página que desea mostrar después del envío correcto de un formulario.
 
@@ -367,7 +367,7 @@ Tenga en cuenta los siguientes puntos al incrustar formularios adaptables en pá
 * La acción de envío configurada en el formulario original se mantiene en el formulario incrustado.
 * Si Adobe Analytics está configurado para el formulario original, los datos de análisis del formulario incrustado se capturan en esta aplicación. Sin embargo, no está disponible en el informe de análisis de Forms.
 
-## Consulte también {#see-also}
+## Ver también {#see-also}
 
 * [Crear formularios adaptables independientes basados en los componentes principales](/help/forms/creating-adaptive-form-core-components.md)
 * [Creación de un formulario adaptable basado en componentes principales directamente en una página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
