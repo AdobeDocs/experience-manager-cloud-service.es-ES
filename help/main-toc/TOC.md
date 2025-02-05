@@ -774,7 +774,7 @@ ht-degree: 99%
             + [Nuevos formularios adaptables](/help/forms/compare-forms.md)
             + [Creación de una acción de envío personalizada](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [Convertir formularios adaptables basados en componentes de base a formularios basados en componentes principales mediante la herramienta de utilidad de migración](/help/forms/migration-utility-tool-for-af-core-components.md)
-            + [Plantillas de correo electrónico en Forms adaptable](/help/forms/html-email-templates-in-adaptive-forms.md)
+            + [Plantillas de correo electrónico en formularios adaptables](/help/forms/html-email-templates-in-adaptive-forms.md)
             + Introducción al Editor de reglas para formularios adaptables basados en componentes principales{#rule-editor-core-components}
                + [Introducción al Editor de reglas para formularios adaptables basados en componentes principales](/help/forms/rule-editor-core-components.md)
                + [Interfaz de usuario del Editor de reglas para formularios adaptables basados en componentes principales](/help/forms/rule-editor-core-components-user-interface.md)
@@ -1024,7 +1024,7 @@ ht-degree: 99%
          + [Mostrar un mensaje de agradecimiento personalizado después del envío del formulario](/help/edge/docs/forms/thank-you-page-form.md)
          + [Uso del servicio de envío de formularios](/help/forms/forms-submission-service.md)
       + WYSIWYG {#universal-editor}
-         + [Información general: editor universal para Edge Delivery Services de Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [Información general: editor universal de Edge Delivery Services para formularios](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Introducción](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [Agregar reglas a mediante el Editor de reglas](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
       + Funciones {#advanced-features-edge-delivery-services-forms}
