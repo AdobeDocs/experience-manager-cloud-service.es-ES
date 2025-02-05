@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2414'
 ht-degree: 90%
@@ -46,7 +46,7 @@ Cada configuración de lanzamiento utiliza un activador de lanzamiento que hace 
 
 En la siguiente tabla, se enumeran las opciones de configuración de despliegue listas para usarse de AEM. La tabla incluye las acciones de activación y sincronización de cada configuración de lanzamiento.
 
-Si las acciones de configuración de despliegue instaladas no cumplen con sus requisitos, puede [crear una configuración de despliegue.](#creating-a-rollout-configuration)
+Si las acciones de configuración de despliegue instaladas no cumplen con sus requisitos, puede [crear una configuración de despliegue](#creating-a-rollout-configuration).
 
 | Nombre | Descripción | Activador | [Acciones de sincronización](#synchronization-actions) |
 |---|---|---|---|
@@ -61,7 +61,7 @@ Si las acciones de configuración de despliegue instaladas no cumplen con sus re
 
 En la siguiente tabla, se enumeran las opciones de sincronización listas para usarse de AEM.
 
-Si las acciones instaladas no cumplen con sus requisitos, puede [Crear una nueva acción de sincronización.](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
+Si las acciones instaladas no cumplen con sus requisitos, puede [Crear una nueva acción de sincronización](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action).
 
 | Nombre de la acción | Descripción | Propiedades |
 |---|---|---|
@@ -88,7 +88,7 @@ Si las acciones instaladas no cumplen con sus requisitos, puede [Crear una nueva
 Puede [crear una configuración de despliegue](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) cuando las configuraciones de despliegue instaladas no cumplan con los requisitos de su aplicación realizando los siguientes pasos.
 
 1. [Creación de la configuración de despliegue:](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
-1. [Añada acciones de sincronización a la configuración de lanzamiento.](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
+1. [Agregar acciones de sincronización a la configuración de despliegue](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration).
 
 La nueva configuración de despliegue está disponible al configurar opciones de configuración de despliegue en una página de modelo o Live Copy.
 

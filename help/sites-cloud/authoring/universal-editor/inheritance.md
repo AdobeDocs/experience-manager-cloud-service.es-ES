@@ -4,13 +4,13 @@ description: Descubra cómo el Editor universal admite la herencia de contenido 
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 773ce75975f4dcc2c5310422bcc377b487ebec25
+exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '475'
 ht-degree: 4%
 
 ---
-
 
 # Herencia de contenido en el editor universal {#inheritance}
 
@@ -42,7 +42,7 @@ Para modificar parte del contenido de las copias, los autores rompen la herencia
 
 Cuando una página forma parte de MSM o de un lanzamiento y el contenido se edita con el editor universal, el editor desactiva automáticamente la herencia de todos los cambios realizados por los autores en esa página, lo que garantiza que el contenido modificado se conserva cuando las actualizaciones se sincronizan desde el modelo.
 
-El autor no necesita hacer clic en un botón ni realizar ningún otro paso para deshabilitar la herencia antes de realizar modificaciones locales. Tan pronto como se realiza un cambio, la herencia se cancela implícitamente. Esto contrasta con el [Editor de páginas.](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components)
+El autor no necesita hacer clic en un botón ni realizar ningún otro paso para deshabilitar la herencia antes de realizar modificaciones locales. Tan pronto como se realiza un cambio, la herencia se cancela implícitamente. Este flujo de trabajo contrasta con [Editor de páginas](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components).
 
 El editor universal no afecta al mecanismo subyacente de herencia. Para obtener más información sobre cómo funciona la herencia, consulte la siguiente documentación.
 
@@ -55,6 +55,6 @@ El editor universal no afecta al mecanismo subyacente de herencia. Para obtener 
    * La herencia solo se puede revertir para toda la página mediante el
       * [Consola de información general de Live Copy](/help/sites-cloud/administering/msm/live-copy-overview.md)
       * [Consola de lanzamiento](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-      * Usando el botón **Restablecer** en la ficha **Live Copy** de la ventana de propiedades de [página.](/help/sites-cloud/authoring/sites-console/page-properties.md)
+      * Usando el botón **Restablecer** en la ficha **Live Copy** de la [ventana de propiedades de página](/help/sites-cloud/authoring/sites-console/page-properties.md).
 * Los autores no tienen comentarios visuales para ver qué componentes tienen deshabilitada la herencia y cuáles aún la conservan.
 * Actualmente, estas características están limitadas a los componentes de las páginas y aún no se aplican a [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md), a pesar de que también tienen capacidades de MSM y Launch.

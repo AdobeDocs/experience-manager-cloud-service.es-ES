@@ -5,7 +5,7 @@ exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1936'
 ht-degree: 81%
@@ -68,7 +68,7 @@ En función de su ubicación, puede publicar lo siguiente:
 
 ### Publicar desde el editor de páginas {#publishing-from-the-page-editor}
 
-Si está editando una página en el [editor de páginas,](/help/sites-cloud/authoring/page-editor/introduction.md) se puede publicar directamente desde el editor.
+Si está editando una página en el [editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md), puede publicarla directamente desde el editor.
 
 1. Seleccione el icono **Información de página** para abrir el menú y, a continuación, elija la opción **Publicar página**.
 

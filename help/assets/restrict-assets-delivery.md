@@ -3,10 +3,10 @@ title: Restringir la entrega de recursos con Dynamic Media con las funciones de 
 description: Obtenga información sobre cómo restringir la entrega de recursos con las funciones de OpenAPI.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1151'
-ht-degree: 2%
+source-wordcount: '1150'
+ht-degree: 5%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 2%
 
 >[!AVAILABILITY]
 >
->La guía de funciones de Dynamic Media con OpenAPI ya está disponible en formato de PDF. Descargue toda la guía y utilice Adobe Acrobat AI Assistant para responder a sus consultas.
+>La guía de Dynamic Media con funciones de OpenAPI ya está disponible en formato de PDF. Descargue la guía completa y utilice el Asistente de IA de Adobe Acrobat para responder sus consultas.
 >
->[!BADGE PDF de la Guía de Dynamic Media con funciones OpenAPI]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE Guía en PDF de Dynamic Media con funciones OpenAPI]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 La administración central de recursos en Experience Manager permite al administrador de DAM o a los administradores de marcas administrar el acceso a los recursos disponibles a través de Dynamic Media con funciones OpenAPI. Pueden restringir la entrega de recursos aprobados (a un recurso individual) a [Usuarios o grupos de Adobe Identity Management System (IMS)](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy) seleccionados configurando ciertos metadatos en los recursos de su servicio de AEM as a Cloud Service Author.
 

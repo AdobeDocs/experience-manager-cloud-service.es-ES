@@ -4,7 +4,7 @@ description: AEM AEM Una visión general de los fundamentos técnicos de la, inc
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2130'
 ht-degree: 0%
@@ -17,7 +17,7 @@ AEM es una plataforma sólida basada en tecnologías probadas, escalables y flex
 
 >[!TIP]
 >
->AEM Antes de sumergirse en las tecnologías principales de la, Adobe recomienda completar el [Tutorial de WKND de Introducción al desarrollo de AEM Sites.](develop-wknd-tutorial.md)
+>AEM Antes de sumergirse en las tecnologías principales de la, Adobe recomienda completar [Introducción al desarrollo de AEM Sites - Tutorial de WKND](develop-wknd-tutorial.md).
 
 ## Aspectos básicos {#fundamentals}
 

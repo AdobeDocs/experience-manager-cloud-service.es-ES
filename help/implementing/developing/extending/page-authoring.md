@@ -4,7 +4,7 @@ description: Obtenga información sobre los mecanismos que proporciona AEM as a 
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 3%
@@ -54,7 +54,7 @@ Puede encontrar la definición de capa de MSM (para referencia) en:
 
 Este es un paquete de ejemplo que muestra cómo crear una capa (modo) para la vista MSM.
 
-Puede encontrar el código de esta página en [GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)
+Puedes encontrar el código de esta página en [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode).
 
 ## Añadir nueva categoría de selección al navegador de recursos {#add-new-selection-category-to-asset-browser}
 
@@ -64,7 +64,7 @@ El explorador de recursos muestra recursos de varios tipos o categorías (por ej
 
 `aem-authoring-extension-assetfinder-flickr` es un paquete de muestra que muestra cómo agregar un grupo al buscador de recursos. Este ejemplo se conecta al flujo público de [Flickr](https://www.flickr.com) y los muestra en el panel lateral.
 
-Puede encontrar el código de esta página en [GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)
+Puedes encontrar el código de esta página en [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr).
 
 ## Filtrado de recursos {#filtering-resources}
 
@@ -75,7 +75,7 @@ Para mantener la lista a un tamaño razonable y también relevante para el caso 
 * Implemente el predicado personalizado implementando la interfaz [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/predicate/package-summary.html).
 * Especifique un nombre para el predicado y haga referencia a ese nombre cuando use `pathbrowser`.
 
-Para obtener más información sobre cómo crear un predicado personalizado, vea [este artículo.](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
+Para obtener más información sobre cómo crear un predicado personalizado, vea [este artículo](/help/implementing/developing/introduction/query-builder-custom-predicate.md).
 
 ## Agregar una nueva acción a una barra de herramientas de componentes {#add-new-action-to-a-component-toolbar}
 
@@ -85,7 +85,7 @@ Cada componente suele tener una barra de herramientas que proporciona acceso a u
 
 `aem-authoring-extension-toolbar-screenshot` es un paquete de ejemplo que muestra cómo crear una acción personalizada de la barra de herramientas para procesar componentes.
 
-Puede encontrar el código de esta página en [GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)
+Puedes encontrar el código de esta página en [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot).
 
 ## Añadir nuevo editor en contexto {#add-new-in-place-editor}
 
@@ -156,7 +156,7 @@ Para implementar un nuevo editor in situ (dentro de la clientlib):
 
 AEM `aem-authoring-extension-inplace-editor` es un paquete de muestra que muestra cómo crear un editor local en el sitio de la aplicación de la.
 
-Puede encontrar el código de esta página en [GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
+Puedes encontrar el código de esta página en [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor).
 
 ## Añadir una acción de nueva página {#add-a-new-page-action}
 
@@ -166,7 +166,7 @@ Para agregar una nueva acción de página a la barra de herramientas de la pági
 
 `aem-authoring-extension-header-backtosites` es un paquete de ejemplo que muestra cómo crear una acción personalizada de la barra de encabezado para volver a la consola Sitios.
 
-Puede encontrar el código de esta página en [GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)
+Puedes encontrar el código de esta página en [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites).
 
 ## Personalizar el flujo de trabajo de solicitud de activación {#customizing-the-request-for-activation-workflow}
 

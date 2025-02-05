@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo ampliar la funcionalidad del Admin
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2337'
 ht-degree: 1%
@@ -21,7 +21,7 @@ Este documento le ayuda a comprender cómo ampliar la funcionalidad del Administ
 
 >[!TIP]
 >
->Esta página es más fácil de entender en el contexto del documento [Reutilización del contenido: Administrador de varios sitios.](/help/sites-cloud/administering/msm/overview.md)
+>Esta página es más fácil de entender en el contexto del documento [Reutilización del contenido: Administrador de varios sitios](/help/sites-cloud/administering/msm/overview.md).
 
 >[!CAUTION]
 >
@@ -255,7 +255,7 @@ El siguiente procedimiento requiere que haya agregado el perfil `adobe-public` a
    * **`artifactName`**: `MyLiveActionFactory package`
    * **`packageGroup`**: `myPackages`
 
-1. Inicie Eclipse y [importe el proyecto Maven.](/help/implementing/developing/tools/eclipse.md#import-the-maven-project-into-eclipse)
+1. Inicie Eclipse y [importe el proyecto Maven](/help/implementing/developing/tools/eclipse.md#import-the-maven-project-into-eclipse).
 
 ### Añadir dependencias al archivo POM {#add-dependencies-to-the-pom-file}
 

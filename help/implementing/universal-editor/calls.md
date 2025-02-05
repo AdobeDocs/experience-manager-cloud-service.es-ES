@@ -4,7 +4,7 @@ description: Obtenga información sobre los distintos tipos de llamadas que el E
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 2%
@@ -150,7 +150,7 @@ Se produce una llamada a `add` cuando se coloca un componente nuevo en la aplica
 
 Su carga útil incluye un objeto `path` que contiene dónde se debe agregar el contenido.
 
-También incluye un objeto `content` con objetos adicionales para detalles específicos del extremo del contenido que se va a almacenar [ para cada complemento.AEM ](/help/implementing/universal-editor/architecture.md) Por ejemplo, si su aplicación se basa en contenido de los Magento y los usuarios de la aplicación, la carga útil contendría un objeto de datos para cada sistema.
+También incluye un objeto `content` con objetos adicionales para detalles específicos del extremo del contenido que se va a almacenar [para cada complemento](/help/implementing/universal-editor/architecture.md). AEM Por ejemplo, si la aplicación se basa en el contenido de los Magento y de la aplicación, la carga útil contendría un objeto de datos para cada sistema.
 
 >[!BEGINTABS]
 

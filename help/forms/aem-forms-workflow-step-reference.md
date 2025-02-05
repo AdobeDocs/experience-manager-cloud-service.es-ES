@@ -6,10 +6,10 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Uso de flujos de trabajo de AEM, uso de los pasos Asignar tarea, paso Convertir en PDF/A, paso Generar documento de registro, uso de flujos de trabajo, paso Firmar documento, paso Generar salida impresa, paso Generar salida de PDF no interactiva
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '7379'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -121,7 +121,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
     -->
 
 * **[!UICONTROL Usuario asignado]** > **[!UICONTROL Asignar opciones]**: especifique el método para asignar la tarea a un usuario. Puede asignar dinámicamente la tarea a un usuario o grupo mediante el script del selector de participantes o asignar la tarea a un usuario o grupo AEM específico.
-* **[!UICONTROL Selector de participantes]**: la opción está disponible cuando la variable **[!UICONTROL Dinámicamente a un usuario o grupo]** está seleccionada en el campo Asignar opciones. Puede utilizar un ECMAScript o un servicio para seleccionar dinámicamente un usuario o un grupo. Para obtener más información, consulte [Asignar dinámicamente un flujo de trabajo a los usuarios](https://helpx.adobe.com/es/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) y [Crear un paso de participante dinámico de Adobe Experience Manager personalizado.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es&amp;CID=RedirectAEMCommunityKautuk)
+* **[!UICONTROL Selector de participantes]**: la opción está disponible cuando la variable **[!UICONTROL Dinámicamente a un usuario o grupo]** está seleccionada en el campo Asignar opciones. Puede utilizar un ECMAScript o un servicio para seleccionar dinámicamente un usuario o un grupo. Para obtener más información, consulte [Asignar dinámicamente un flujo de trabajo a los usuarios](https://helpx.adobe.com/es/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) y [Crear un paso de participante dinámico de Adobe Experience Manager personalizado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es&amp;CID=RedirectAEMCommunityKautuk).
 
 * **[!UICONTROL Participantes]**: el campo está disponible cuando la opción **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** está seleccionada en el campo **[!UICONTROL Selector de participantes]**. El campo permite seleccionar usuarios o grupos para la opción RandomParticipantChooser.
 

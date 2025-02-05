@@ -9,10 +9,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 1c6ab84a7fadb543cc8e28424efe634627923e70
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '1380'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -67,7 +67,7 @@ Para garantizar una transición sin problemas de AEM Forms 6.5 a un entorno de A
 * En un entorno de Cloud Service, la utilidad de migración funciona junto con la herramienta de transferencia de contenido. La utilidad de migración hace que los recursos de [!DNL AEM Forms] sean compatibles con Cloud Service y la herramienta de transferencia de contenido migra el contenido de su entorno de [!DNL AEM Forms] a un entorno de [!DNL AEM] as a Cloud Service. Antes de usar la utilidad de migración, conozca el proceso de [mover a AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html?lang=es). El proceso utiliza la siguiente herramienta:
    * [Herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=es#cloud-migration): la herramienta de transferencia de contenido le ayuda a preparar y transferir contenido de un entorno existente a un entorno de Cloud Service. Ayuda a los usuarios a realizar actualizaciones fácilmente de AEM Forms al entorno de la nube.
 * Las cuentas con privilegios de administrador en [!DNL AEM Forms] as a Cloud Service y su entorno local de [!DNL AEM Forms].
-* Descargue e instale el Analizador de prácticas recomendadas, la herramienta de transferencia de contenido y la utilidad de migración de [!DNL AEM Forms] del [Portal de distribución de software.](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html)
+* Descargue e instale el Analizador de prácticas recomendadas, la herramienta de transferencia de contenido y la utilidad de migración [!DNL AEM Forms] de [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html).
 
 * Ejecute el [Analizador de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=es#cloud-migration) y corrija el problema del que se ha informado. Para ver los posibles problemas relacionados con la migración de Adobe Experience Manager Forms a Adobe Experience Manager Forms as a Cloud Service, consulte [Detección de patrones de AEM para Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=es#viewing-report).
 

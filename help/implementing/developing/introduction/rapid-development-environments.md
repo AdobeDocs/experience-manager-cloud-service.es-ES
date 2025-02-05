@@ -4,7 +4,7 @@ description: Aprenda a utilizar entornos de desarrollo rápido para iteraciones 
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 24c34daebf7d45d9262181890310eb196c58a7db
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4990'
 ht-degree: 3%
@@ -1062,7 +1062,7 @@ Para obtener más información sobre RDE en AEM as a Cloud Service, vea el tutor
 
 ### AEM Cómo obtener la versión más reciente de un RDE existente. {#get-latest-aem-version}
 
-Una vez creados, los RDE se establecen en la versión de Adobe Experience Manager AEM () más reciente disponible. Un [restablecimiento de RDE,](#reset-rde) que se puede realizar mediante Cloud Manager AEM o el comando `aio aem:rde:reset`, ciclos el RDE y lo establece en la última versión de la versión de la aplicación disponible en el mercado de trabajo de la versión más reciente de la versión de la aplicación de la aplicación de la aplicación de la aplicación de datos ().
+Una vez creados, los RDE se establecen en la versión de Adobe Experience Manager AEM () más reciente disponible. Un [restablecimiento de RDE](#reset-rde), que se puede realizar mediante Cloud Manager AEM o el comando `aio aem:rde:reset`, efectúa un ciclo de RDE y lo establece en la última versión disponible de la versión de la versión de la versión de la versión de la versión de la versión de la versión de la versión más reciente disponible.
 
 ## solución de problemas del complemento aio RDE {#aio-rde-plugin-troubleshooting}
 

@@ -4,10 +4,10 @@ description: Descubra cómo el as a Cloud Service de Adobe Experience Manager AE
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
-source-git-commit: 73fac04561f43a4053e1694da9e096a2ecbc1484
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '997'
+ht-degree: 2%
 
 ---
 
@@ -97,7 +97,7 @@ Si encuentra un problema relacionado con la regresión, envíe un caso de asiste
 
 ## Almacén de nodos compuestos {#composite-node-store}
 
-Normalmente, las actualizaciones no implican ningún tiempo de inactividad, incluida la instancia de creación, que es un clúster de nodos. Las actualizaciones móviles son posibles debido a [la característica de almacén de nodos compuestos en Oak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
+Normalmente, las actualizaciones no implican ningún tiempo de inactividad, incluida la instancia de creación, que es un clúster de nodos. Las actualizaciones móviles son posibles debido a [la característica de almacén de nodos compuestos en Oak](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html).
 
 AEM Esta función permite a los usuarios hacer referencia a varios repositorios de forma simultánea. AEM En una [implementación móvil](/help/implementing/deploying/overview.md#how-rolling-deployments-work), la nueva versión de la aplicación contiene su propio `/libs` (el repositorio inmutable basado en TarMK). AEM Es distinto de la versión de la versión anterior, aunque ambos hacen referencia a un repositorio mutable compartido basado en DocumentMK que contiene áreas como `/content` , `/conf` , `/etc` y otras.
 

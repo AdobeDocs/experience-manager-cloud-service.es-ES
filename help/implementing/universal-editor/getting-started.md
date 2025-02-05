@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo acceder al editor universal y cóm
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 75acf37e7804d665e38e9510cd976adc872f58dd
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '956'
-ht-degree: 41%
+ht-degree: 38%
 
 ---
 
@@ -18,7 +18,7 @@ Obtenga información sobre cómo acceder al editor universal y cómo instrumenta
 
 >[!TIP]
 >
->Si prefiere ir directamente a un ejemplo, puede revisar la [Aplicación de muestra del editor universal en GitHub.](https://github.com/adobe/universal-editor-sample-editable-app)
+>Si prefiere sumergirse directamente en un ejemplo, puede revisar la aplicación de ejemplo [Universal Editor en GitHub](https://github.com/adobe/universal-editor-sample-editable-app).
 
 AEM Aunque el editor universal puede editar contenido desde cualquier fuente, este documento utiliza una aplicación de la aplicación de la como ejemplo. Este documento le guiará a través de estos pasos.
 

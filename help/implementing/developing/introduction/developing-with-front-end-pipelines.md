@@ -4,7 +4,7 @@ description: Con la canalización front-end, se da más independencia a los desa
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1169'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Desarrollo de Sites con la canalización front-end {#developing-site-with-front-end-pipeline}
 
-[Con la canalización front-end,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) se da más independencia a los desarrolladores de front-end y el proceso de desarrollo puede ganar una velocidad sustancial. En este documento se describe cómo funciona este proceso, así como algunas consideraciones que hay que tener en cuenta para aprovechar todo el potencial de este proceso.
+[Con la canalización front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end), se da más independencia a los desarrolladores de front-end y el proceso de desarrollo puede ganar una velocidad sustancial. En este documento se describe cómo funciona este proceso, así como algunas consideraciones que hay que tener en cuenta para aprovechar todo el potencial de este proceso.
 
 >[!TIP]
 >

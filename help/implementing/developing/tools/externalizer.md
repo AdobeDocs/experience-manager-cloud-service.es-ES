@@ -4,7 +4,7 @@ description: El externalizador es un servicio OSGi que permite transformar media
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 0%
@@ -50,7 +50,7 @@ El servicio externalizador permite definir de forma centralizada el dominio que 
 
 >[!NOTE]
 >
->Al igual que al aplicar cualquier configuración de [OSGi para AEM as a Cloud Service,](/help/implementing/deploying/overview.md#osgi-configuration) los siguientes pasos deben realizarse en una instancia de desarrollador local y luego comprometerse con el código del proyecto para su implementación.
+>Al igual que al aplicar cualquier configuración de [OSGi para AEM as a Cloud Service](/help/implementing/deploying/overview.md#osgi-configuration), los siguientes pasos deben realizarse en una instancia de desarrollador local y luego comprometerse con el código del proyecto para su implementación.
 
 Para definir una asignación de dominio para el servicio externalizador:
 

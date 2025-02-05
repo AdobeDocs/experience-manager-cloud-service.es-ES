@@ -5,7 +5,7 @@ exl-id: 355b60c5-a82e-4bbb-98ea-bfcc0126b7fd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 64%
@@ -18,7 +18,7 @@ AEM Obtenga información sobre cómo administrar las páginas de su sitio web en
 
 >[!TIP]
 >
->AEM Antes de empezar a administrar las páginas, familiarícese con [cómo se organizan las páginas en la.](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+>AEM Antes de empezar a administrar las páginas, familiarícese con [cómo se organizan las páginas en la organización de las páginas en la organización de las páginas en la organización de las páginas en la organización de las páginas en el sitio](/help/sites-cloud/authoring/sites-console/organizing-pages.md).
 
 >[!TIP]
 >
@@ -32,9 +32,9 @@ Si se producen problemas, le sugerimos que se ponga en contacto con el administr
 
 ## Abrir una página para su edición {#opening-a-page-for-editing}
 
-Después de [crear una página](/help/sites-cloud/authoring/sites-console/creating-pages.md) o de navegar a una página existente usando [la consola de **Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) puede abrirla para editarla.
+Después de [crear una página](/help/sites-cloud/authoring/sites-console/creating-pages.md) o de navegar a una página existente usando [la consola de **Sites**](/help/sites-cloud/authoring/sites-console/introduction.md), puedes abrirla para editarla.
 
-1. Abra [la consola **Sitios**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Abra [la consola **Sitios**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Desplácese hasta encontrar la página que desea editar.
 1. Seleccione la página mediante:
 
@@ -53,7 +53,7 @@ Después de [crear una página](/help/sites-cloud/authoring/sites-console/creati
 
 Puede copiar una página y todas sus páginas secundarias en una nueva ubicación:
 
-1. Abra [la consola **Sitios**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Abra [la consola **Sitios**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Desplácese hasta encontrar la página que desea copiar.
 1. Seleccione la página mediante lo siguiente:
 
@@ -95,7 +95,7 @@ El procedimiento para mover o cambiar el nombre de una página es básicamente e
 
 AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga referencia a la página que se está moviendo o cambiando de nombre. Esto se puede hacer página por página para proporcionar una flexibilidad total.
 
-1. Abra [la consola **Sitios**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Abra [la consola **Sitios**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Desplácese hasta encontrar la página que desea mover.
 1. Seleccione la página mediante lo siguiente:
 
@@ -181,7 +181,7 @@ El estado de los trabajos asincrónicos se puede comprobar en [**Estado de los t
 
 ### Eliminar una página {#deleting-a-page}
 
-1. Abra [la consola **Sitios**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Abra [la consola **Sitios**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Desplácese hasta la página que desee eliminar.
 1. Uso [modo de selección](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) para seleccionar la página requerida, luego utilice **Eliminar** en la barra de herramientas:
 
@@ -213,7 +213,7 @@ Puede [bloquear/desbloquear una página](/help/sites-cloud/authoring/page-editor
 
 Puede crear carpetas para organizar archivos y páginas.
 
-1. Abra [la consola **Sitios**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Abra [la consola **Sitios**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Vaya a la ubicación requerida.
 1. Para abrir la lista de opciones, seleccione **Crear** en la barra de herramientas
 1. Seleccione **Carpeta** para abrir el cuadro de diálogo. Aquí puede indicar el **Nombre** y el **Título**:

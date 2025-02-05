@@ -4,9 +4,9 @@ description: Descubra cómo puede utilizar las canalizaciones de configuración 
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 5e96d5d71abf78a0dba179cb37cad0322688351b
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '991'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ La siguiente tabla ofrece una lista completa de estas configuraciones con víncu
 
 ## Creación y administración de canalizaciones de configuración {#creating-and-managing}
 
-Para obtener información sobre cómo crear y configurar canalizaciones, consulte el documento [Canalizaciones de CI/CD.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)
+Para obtener información sobre cómo crear y configurar canalizaciones, consulte [Canalizaciones de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
 
 Al crear una canalización de configuración en Cloud Manager, asegúrese de seleccionar una **implementación dirigida** en lugar de **código de pila completa** al configurar la canalización.
 
@@ -95,7 +95,7 @@ o
     cdn.yaml
 ```
 
-Los nombres de carpeta y archivos por debajo de `/config` son arbitrarios. Sin embargo, el archivo YAML debe incluir un valor de propiedad [`kind` válido.](#configurations)
+Los nombres de carpeta y archivos por debajo de `/config` son arbitrarios. Sin embargo, el archivo YAML debe incluir un valor de propiedad [`kind` válido](#configurations).
 
 Normalmente, las configuraciones se implementan en todos los entornos. Si todos los valores de propiedad son idénticos para cada entorno, un solo archivo YAML será suficiente. Sin embargo, es común que los valores de las propiedades difieran entre entornos, por ejemplo al probar un entorno más bajo.
 

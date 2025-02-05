@@ -4,7 +4,7 @@ description: Conozca las recomendaciones de prácticas recomendadas sobre cómo 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1261'
 ht-degree: 2%
@@ -26,7 +26,7 @@ Puede utilizar MSM para crear una estructura de contenido completa para su marca
 Para configurar MSM en un caso de uso de reutilización, primero debe completar una serie de tareas.
 
 * Este documento supone que ya ha creado un sitio para su proyecto basado en la guía de introducción para desarrolladores de [para la creación de WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
-* Ya debe haber [habilitado la característica de reutilización para su proyecto.](/help/edge/wysiwyg-authoring/repoless.md)
+* Ya debe haber [habilitado la característica de reutilización para su proyecto](/help/edge/wysiwyg-authoring/repoless.md).
 
 ## Caso práctico {#use-case}
 
@@ -55,9 +55,9 @@ El contenido de `language-masters` es la fuente de Live Copies para los sitios l
 
 Existen varios pasos para configurar el caso de uso de las réplicas de MSM.
 
-1. [AEM Actualice las configuraciones del sitio.](#update-aem-configurations)
-1. [Cree nuevos sitios de Edge Delivery Services para las páginas localizadas.](#create-edge-sites)
-1. [AEM Actualice la configuración de nube en para sus sitios localizados.](#update-cloud-configurations)
+1. AEM [Actualizar configuraciones del sitio de la](#update-aem-configurations).
+1. [Cree nuevos sitios de Edge Delivery Services para las páginas localizadas](#create-edge-sites).
+1. AEM [Actualice la configuración de nube en la configuración de la nube para sus sitios localizados](#update-cloud-configurations).
 
 ### AEM Actualizar configuraciones del sitio {#update-aem-configurations}
 

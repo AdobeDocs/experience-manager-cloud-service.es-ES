@@ -4,10 +4,10 @@ description: Aprenda a utilizar fragmentos de contenido de AEM para diseñar, cr
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '341'
-ht-degree: 85%
+ht-degree: 72%
 
 ---
 
@@ -29,7 +29,7 @@ Los autores de contenido generarán el número de fragmentos de contenido que co
 
 1. Inicie sesión en AEM as a Cloud Service y, en el menú principal, seleccione **Navegación** > **Fragmentos de contenido**.
 
-1. Seleccione la [carpeta que creó anteriormente.](create-assets-folder.md)
+1. Seleccione la [carpeta que creó anteriormente](create-assets-folder.md).
 1. Seleccione **Crear**.
 1. La creación de un fragmento de contenido se presenta como un cuadro de diálogo.
 Seleccione la ubicación y el modelo que desee utilizar para crear el fragmento de contenido.
@@ -49,8 +49,8 @@ Los fragmentos de contenido también pueden hacer referencia a otros recursos en
 
 ## Siguientes pasos {#next-steps}
 
-Ahora que ha creado un fragmento de contenido, puede pasar a la parte final de la guía de introducción y [crear solicitudes de API para acceder y entregar fragmentos de contenido.](create-api-request.md)
+Ahora que ha creado un fragmento de contenido, puede pasar a la parte final de la guía de introducción y [crear solicitudes de API para acceder y enviar fragmentos de contenido](create-api-request.md).
 
 >[!TIP]
 >
->Para obtener información detallada acerca de la administración de fragmentos de contenido, consulte la [Documentación de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md)
+>Para obtener información detallada acerca de la administración de fragmentos de contenido, consulte la [Documentación de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md).

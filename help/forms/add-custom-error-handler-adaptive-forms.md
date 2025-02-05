@@ -7,8 +7,8 @@ content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 100%
 
@@ -296,7 +296,7 @@ The created folder structure looks like:
     ```
 -->
 
-1. [Ejecutar la canalización.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#setup-pipeline)
+1. [Ejecutar la canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#setup-pipeline). 
 
 Una vez que la canalización se haya ejecutado correctamente, el controlador de errores personalizado estará disponible en el editor de reglas del formulario adaptable. Ahora, vamos a comprender cómo configurar y utilizar un controlador de errores personalizado mediante el servicio Invocar del Editor de reglas de AEM Forms.
 

@@ -5,10 +5,10 @@ exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1020'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -26,7 +26,7 @@ Elimina cualquier conocimiento de desarrollador para la creación del sitio, sup
 
 ## Información general en vídeo {#video-overview}
 
-Para obtener una descripción general rápida de esta característica en acción, [puede ver esta introducción de cinco minutos.](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw)
+Para obtener una descripción general rápida de esta característica en acción, [puedes ver esta introducción de cinco minutos](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw).
 
 Este recorrido de documentación le llevará a través de todas las funciones del vídeo paso a paso y en detalle para que entienda el flujo de trabajo y pueda recrear el proceso en su propio entorno.
 
@@ -70,7 +70,7 @@ Ya puede empezar su Recorrido de creación rápida de sitios de Adobe.
 
 * Si es administrador de AEM o Cloud Manager, o si cumple las funciones de desarrollador y administrador front-end, o si simplemente desea comprender el proceso de extremo a extremo en AEM, comience al principio del recorrido con la [Comprensión de Cloud Manager](cloud-manager.md), como se indica a continuación.
 * Si solo es responsable del desarrollo front-end e interactuará con los administradores de AEM y Cloud Manager, puede saltar a [Recuperación de información de acceso al repositorio de Git](retrieve-access.md) para obtener acceso al repositorio de Git de AEM y comenzar a personalizar.
-* Si ya comprende que AEM Sites y Cloud Manager trabajan juntos y quiere comenzar directamente con la configuración, puede [ir directamente a la creación de un sitio nuevo a partir de una plantilla.](create-site.md)
+* Si ya sabes que AEM Sites y Cloud Manager trabajan juntos y quieres comenzar directamente con la configuración, puedes [saltar directamente a la creación de un sitio a partir de una plantilla](create-site.md).
 
 ## Recursos adicionales {#additional-resources}
 

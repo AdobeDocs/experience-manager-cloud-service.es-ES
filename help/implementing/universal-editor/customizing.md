@@ -4,10 +4,10 @@ description: Obtenga información acerca de los diferentes puntos de extensión 
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: afcb3cbc2b0868de7bac9446eb07ae30c033de66
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '579'
-ht-degree: 4%
+ht-degree: 1%
 
 ---
 
@@ -45,9 +45,9 @@ Puede restringir los componentes permitidos por contenedor en el Editor universa
 
 ### Mostrar y ocultar condicionalmente componentes en el panel Propiedades {#conditionally-hide}
 
-Aunque un componente o componentes suelen estar disponibles para los autores, puede haber ciertas situaciones en las que no tiene sentido. En estos casos, puede ocultar componentes en el panel de propiedades agregando un atributo `condition` a los [campos del modelo de componentes.](/help/implementing/universal-editor/field-types.md#fields)
+Aunque un componente o componentes suelen estar disponibles para los autores, puede haber ciertas situaciones en las que no tiene sentido. En estos casos, puede ocultar componentes en el panel de propiedades agregando un atributo `condition` a los [campos del modelo de componente](/help/implementing/universal-editor/field-types.md#fields).
 
-Las condiciones se pueden definir usando el esquema [JsonLogic.](https://jsonlogic.com/) Si la condición es verdadera, se mostrará el campo. Si la condición es falsa, el campo estará oculto.
+Las condiciones se pueden definir usando [JsonLogic schema](https://jsonlogic.com/). Si la condición es verdadera, se muestra el campo. Si la condición es falsa, el campo estará oculto.
 
 >[!BEGINTABS]
 
@@ -86,9 +86,9 @@ Las condiciones se pueden definir usando el esquema [JsonLogic.](https://jsonlog
 
 ### URL de vista previa personalizadas {#custom-preview-urls}
 
-Puede especificar una URL de vista previa personalizada mediante una metaconfiguración de `urn:adobe:aue:config:preview`, que se abrirá al hacer clic en el botón **Abrir página** en la barra de herramientas superior derecha del [editor.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
+Puede especificar una URL de vista previa personalizada mediante una metaconfiguración de `urn:adobe:aue:config:preview`, que se abrirá al hacer clic en el botón **Abrir página** en la barra de herramientas superior derecha del [editor](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
-Esto es especialmente útil para aplicaciones con requisitos de vista previa específicos, como las que [utilizan Edge Delivery Services con la creación WYSIWYG.](/help/edge/wysiwyg-authoring/authoring.md)
+Esto es particularmente útil para aplicaciones con requisitos de vista previa específicos, como las que [usan Edge Delivery Services con WYSIWYG Authoring](/help/edge/wysiwyg-authoring/authoring.md).
 
 Para ello, simplemente incluya la URL de vista previa deseada en una metaetiqueta de la aplicación instrumentada como en el siguiente ejemplo.
 
@@ -110,6 +110,6 @@ Si desea explorar estas posibilidades, consulte los siguientes recursos:
 
 >[!TIP]
 >
->AEM Si prefiere aprender con el ejemplo, consulte el tutorial de extensibilidad de la interfaz de usuario de [.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) Aunque se centra en ampliar la consola de fragmentos de contenido, los conceptos para implementar una extensión de interfaz de usuario en el editor universal son los mismos.
+>AEM Si prefiere aprender con el ejemplo, consulte el [tutorial de extensibilidad de la interfaz de usuario de ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Aunque se centra en ampliar la consola de fragmentos de contenido, los conceptos para implementar una extensión de interfaz de usuario en el editor universal son los mismos.
 
-[Con Extension Manager en AEM Sites,](https://developer.adobe.com/uix/docs/extension-manager/) puede habilitar o deshabilitar las extensiones por instancia, tener acceso a las extensiones de origen de Adobe, incluidas las del editor universal, y mucho más.
+[Con Extension Manager en AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), puede habilitar o deshabilitar las extensiones por instancia, tener acceso a las extensiones de origen de Adobe, incluidas las del editor universal, y mucho más.

@@ -5,10 +5,10 @@ exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2120'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -72,7 +72,7 @@ Recibirá un mensaje que indica que se creó el proyecto.
 
 >[!NOTE]
 >
->Se supone que ya se ha creado la estructura lingüística necesaria para los idiomas de traducción como parte de la [definición de la estructura de contenido.](getting-started.md#content-structure) Esto debería hacerse en colaboración con el arquitecto de contenido.
+>Se supone que ya se ha creado la estructura de idioma necesaria para los idiomas de traducción como parte de la [definición de la estructura de contenido](getting-started.md#content-structure). Esto debe hacerse en colaboración con el arquitecto de contenido.
 >
 >Si las carpetas de idioma no se crean con antelación, no podrá crear copias de idioma como se describió en los pasos anteriores.
 
@@ -187,7 +187,7 @@ Para añadir contenido a un trabajo de traducción:
 >
 >El navegador de rutas es una potente herramienta que le permite buscar, filtrar y navegar por el contenido. Seleccione el botón **Solo contenido/Filtros** para alternar el panel lateral y mostrar filtros avanzados como **Fecha de modificación** o **Estado de la traducción**.
 >
->Puede obtener más información sobre el navegador de rutas en la [sección de recursos adicionales.](#additional-resources)
+>Puede obtener más información sobre el explorador de rutas en la sección [recursos adicionales](#additional-resources).
 
 Puede utilizar los pasos anteriores para agregar el contenido necesario a todos los idiomas (trabajos) del proyecto. Una vez que haya seleccionado todo el contenido, puede iniciar la traducción.
 
@@ -205,7 +205,7 @@ Las traducciones automáticas se devuelven automáticamente con un estado de **A
 
 ## Revisión del contenido traducido {#reviewing}
 
-[Como se ha visto anteriormente,](#using-translation-project) el contenido traducido por el equipo vuelve a AEM con el estado de **Aprobado** dado que se supone que como se está utilizando la traducción automática, no se requiere ninguna intervención humana. Sin embargo, todavía es posible revisar el contenido traducido.
+AEM [Como se ha visto anteriormente](#using-translation-project), el contenido traducido por el equipo vuelve a estar en el estado de **Aprobado**, ya que se supone que como se está utilizando la traducción automática, no se requiere ninguna intervención humana. Sin embargo, todavía es posible revisar el contenido traducido.
 
 Simplemente, vaya al trabajo de traducción completado y seleccione un elemento de línea tocando o haciendo clic en la casilla de verificación. El icono **Revelar en Fragmento de contenido** se muestra en la barra de herramientas.
 
@@ -249,7 +249,7 @@ Amplíe este conocimiento y continúe con su recorrido de traducción sin encabe
 
 ## Recursos adicionales {#additional-resources}
 
-Aunque se recomienda pasar a la siguiente parte del recorrido de traducción sin encabezado revisando el documento [Publicar contenido traducido](publish-content.md), los siguientes son algunos recursos opcionales adicionales que profundizan en varios conceptos mencionados en este documento, pero no son necesarios para continuar el recorrido sin encabezado.
+Aunque se recomienda pasar a la siguiente parte del recorrido de traducción sin encabezado revisando el documento [Contenido traducido de Publish](publish-content.md), los siguientes son algunos recursos opcionales extra. Profundizan en varios conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido sin encabezado.
 
 * [Administración de proyectos de traducción](/help/sites-cloud/administering/translation/managing-projects.md): Conozca los detalles de los proyectos de traducción y las funciones adicionales, como flujos de trabajo de traducción humana y proyectos en varios idiomas.
 * [Herramientas y entorno de creación](/help/sites-cloud/authoring/path-selection.md#path-selection): AEM ofrece varios mecanismos para organizar y editar el contenido, incluido un explorador de rutas robusto.

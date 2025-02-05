@@ -4,8 +4,8 @@ description: Obtenga información sobre cómo generar una plantilla para un docu
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '4170'
 ht-degree: 100%
 
@@ -55,7 +55,7 @@ Cargue la plantilla XFA (archivo XDP) en la instancia de AEM Forms. Realice los 
 1. En la ventana Propiedades, seleccione **[!UICONTROL Modelo de formulario]**.
 1. En la pestaña **[!UICONTROL Modelo de formulario]**, en el menú desplegable **[!UICONTROL Seleccionar de]**, elija **[!UICONTROL Esquema]** o **[!UICONTROL Ninguno]**. También puede seleccionar un modelo de formulario al crear un formulario.
 1. En la sección Configuración de plantilla de documento de registro de la pestaña Modelo de formulario, seleccione **Asociar plantilla de formulario como plantilla de documento de registro**. Al seleccionar esta opción, se muestran todas las plantillas XFA (archivos XDP) disponibles en el equipo. Seleccione el archivo apropiado. Además, asegúrese de que se utiliza el mismo esquema (esquema de datos) para el formulario adaptable y la plantilla XFA seleccionada (archivo XDP).
-1. Haga clic en **[!UICONTROL Listo.]**
+1. Haga clic en **[!UICONTROL Listo]**.
 
 El formulario adaptable ahora está configurado para utilizar un archivo XDP como plantilla para el documento de registro. Los siguientes pasos son [enlazar componentes de formulario adaptable con campos de plantilla correspondientes](#bind-adaptive-form-components-with-template-fields).
 
@@ -68,7 +68,7 @@ Cargue el PDF de Adobe Acrobat (AcroForm) a su instancia de AEM Forms. Realiza l
 1. En la ventana Propiedades, seleccione **[!UICONTROL Modelo de formulario]**.
 1. En la pestaña **[!UICONTROL Modelo de formulario]**, en el menú desplegable **[!UICONTROL Seleccionar de]**, elija **[!UICONTROL Esquema]** o **[!UICONTROL Ninguno]**. También puede seleccionar un modelo de formulario al crear un formulario.
 1. En la sección Configuración de plantilla de documento de registro de la pestaña Modelo de formulario, seleccione **Asociar plantilla de formulario como plantilla de documento de registro**. Al seleccionar esta opción, se muestran todos los PDF de Acrobat (AcroForm) disponibles en el equipo. Seleccione el archivo apropiado.
-1. Haga clic en **[!UICONTROL Listo.]**
+1. Haga clic en **[!UICONTROL Listo]**.
 
 El formulario adaptable ahora está configurado para utilizar AcroForm como plantilla para el documento de registro. Los siguientes pasos son [enlazar componentes de formulario adaptable con campos de plantilla correspondientes](#bind-adaptive-form-components-with-template-fields).
 
@@ -89,7 +89,7 @@ Siga estos pasos para configurar un formulario adaptable para generar automátic
 1. En la ventana Propiedades, seleccione **[!UICONTROL Modelo de formulario]**.
 1. En la pestaña **[!UICONTROL Modelo de formulario]**, en el menú desplegable **[!UICONTROL Seleccionar de]**, elija **[!UICONTROL Esquema]** o **[!UICONTROL Ninguno]**. También puede seleccionar un modelo de formulario al crear un formulario.
 1. En la sección Configuración de plantilla de documento de registro de la pestaña Modelo de formulario, seleccione **Generar documento de registro**.
-1. Haga clic en **[!UICONTROL Listo.]**
+1. Haga clic en **[!UICONTROL Listo]**.
 
 ## Enlazar componentes de formulario adaptable con campos de plantilla {#bind-adaptive-form-components-with-template-fields}
 

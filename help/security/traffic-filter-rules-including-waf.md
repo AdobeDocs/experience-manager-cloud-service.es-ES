@@ -4,10 +4,10 @@ description: Configuración de las reglas de filtro de tráfico, incluidas las r
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: bc5dbee5b5accc747288638fd8e22ed8f2d12fd5
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4049'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,7 @@ La mayoría de estas reglas de filtro de tráfico están disponibles para todos 
 
 Una subcategoría de reglas de filtro de tráfico requiere una licencia de seguridad mejorada o una licencia de protección WAF-DDoS. Estas potentes reglas se conocen como reglas de filtro de tráfico WAF (cortafuegos de aplicación web) (o reglas WAF para abreviar) y tienen acceso a [Indicadores WAF](#waf-flags-list) que se describen más adelante en este artículo.
 
-Las reglas de filtro de tráfico se pueden implementar mediante canalizaciones de configuración de Cloud Manager para los tipos de entorno de desarrollo, ensayo y producción. El archivo de configuración se puede implementar en entornos de desarrollo rápido (RDE) mediante herramientas de línea de comandos.
+Las reglas de filtro de tráfico se pueden implementar mediante canalizaciones de configuración de Cloud Manager para los tipos de entorno de desarrollo, fase y producción. El archivo de configuración se puede implementar en entornos de desarrollo rápido (RDE) mediante herramientas de línea de comandos.
 
 [Siga un tutorial](#tutorial) para adquirir rápidamente conocimientos sobre esta funcionalidad.
 
@@ -63,7 +63,7 @@ Los clientes pueden tomar medidas proactivas para mitigar los ataques de la capa
 
 Por ejemplo, en la capa de Apache, los clientes pueden configurar el [módulo de Dispatcher](https://experienceleague.adobe.com/es/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) o [ModSecurity](https://experienceleague.adobe.com/es/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) para limitar el acceso a determinado contenido.
 
-Y, tal como se describe en este artículo, las reglas de filtro de tráfico pueden implementarse en la CDN administrada por Adobe mediante las [canalizaciones de configuración de Cloud Manager.](/help/operations/config-pipeline.md)Además de las reglas de filtro de tráfico basadas en propiedades como la dirección IP, la ruta y los encabezados, o las reglas basadas en la configuración de límites de volumen, los clientes también pueden obtener una licencia para una potente subcategoría de reglas de filtro de tráfico denominadas reglas WAF.
+Como se describe en este artículo, las reglas de filtro de tráfico pueden implementarse en la CDN administrada por Adobe mediante las [canalizaciones de configuración](/help/operations/config-pipeline.md) de Cloud Manager. Además de las reglas de filtro de tráfico basadas en propiedades como la dirección IP, la ruta y los encabezados o las reglas basadas en la configuración de límites de volumen, los clientes también pueden obtener una licencia de una potente subcategoría de reglas de filtro de tráfico denominadas reglas WAF.
 
 ## Proceso sugerido {#suggested-process}
 
@@ -105,11 +105,11 @@ A continuación, se presenta un proceso de extremo a extremo recomendado de alto
 
 1. Si las reglas WAF tienen licencia, debe habilitar la función en Cloud Manager, tal como se describe a continuación para los escenarios de programa nuevos y existentes.
 
-   1. Para configurar WAF en un nuevo programa, marque la casilla de verificación **Protección WAF-DDOS** de la pestaña **Seguridad** cuando [añada un programa de producción.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+   1. Para configurar WAF en un nuevo programa, marque la casilla **Protección WAF-DDOS** en la pestaña **Seguridad** cuando [agregue un programa de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
    1. Para configurar WAF en un programa existente, [edite el programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) y en la pestaña **Seguridad** desmarque o marque la opción **WAF-DDOS** en cualquier momento.
 
-1. Cree una canalización de configuración en Cloud Manager, tal como se describe en el [artículo sobre canalización de configuración.](/help/operations/config-pipeline.md#managing-in-cloud-manager) La canalización hará referencia a una carpeta `config` de nivel superior con el archivo `cdn.yaml` colocado en algún lugar por debajo; consulte [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#folder-structure).
+1. Cree una canalización de configuración en Cloud Manager, tal como se describe en [artículo de canalización de configuración](/help/operations/config-pipeline.md#managing-in-cloud-manager). La canalización hará referencia a una carpeta de nivel superior `config` con el archivo `cdn.yaml` colocado en algún lugar por debajo. Consulte [Uso de canalizaciones de configuración](/help/operations/config-pipeline.md#folder-structure).
 
 ## Sintaxis de reglas de filtro de tráfico {#rules-syntax}
 

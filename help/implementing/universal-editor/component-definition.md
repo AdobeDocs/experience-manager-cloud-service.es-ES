@@ -4,7 +4,7 @@ description: Comprenda en detalle el contrato JSON entre la definición del comp
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 1%
@@ -21,7 +21,7 @@ El archivo `component-definition.json` define los componentes disponibles para l
 
 >[!TIP]
 >
->Para obtener una descripción general del proceso de modelado de contenido, consulte el documento [Modelado de contenido para la creación de WYSIWYG con proyectos de Edge Delivery Services.](/help/edge/wysiwyg-authoring/content-modeling.md)
+>Para obtener una descripción general del proceso de modelado de contenido, consulte el documento [Modelado de contenido para la creación de WYSIWYG con proyectos de Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md).
 
 >[!TIP]
 >
@@ -67,7 +67,7 @@ El siguiente es un ejemplo completo, pero simple `component-definition.json`.
 
 ## `groups` {#groups}
 
-`groups` define los grupos de componentes que el autor ve en el editor universal al hacer clic en el icono **Agregar** en el panel de propiedades del editor para [agregar un nuevo componente a una página.](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) grupos ayudan a organizar los componentes. Los grupos comunes pueden ser **Componentes generales** y **Componentes avanzados**.
+`groups` define los grupos de componentes que el autor ve en el editor universal al hacer clic en el icono **Agregar** en el panel de propiedades del editor para [agregar un nuevo componente a una página](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components). Los grupos ayudan a organizar los componentes. Los grupos comunes pueden ser **Componentes generales** y **Componentes avanzados**.
 
 * `title` define la descripción textual del grupo que se muestra en la interfaz de usuario del editor.
 * `id` identifica de forma exclusiva el grupo.
@@ -94,7 +94,7 @@ El siguiente es un ejemplo completo, pero simple `component-definition.json`.
 Una vez definido `plugin`, debe indicar si está relacionado con la página o con el fragmento.
 
 * `page` indica que el componente es contenido en la página actual.
-* `cf` indica que el componente está relacionado con contenido de un [fragmento de contenido.](/help/assets/content-fragments/content-fragments.md)
+* `cf` indica que el componente está relacionado con contenido de un [fragmento de contenido](/help/assets/content-fragments/content-fragments.md).
 
 ### `page` {#page}
 

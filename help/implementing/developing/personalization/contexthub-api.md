@@ -4,7 +4,7 @@ description: La API de JavaScript de ContextHub está disponible para los script
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4602'
 ht-degree: 2%
@@ -483,7 +483,7 @@ Resuelve el parámetro dado.
 
 ## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-`ContextHub.Store.PersistedJSONPStore` amplía [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore), de modo que hereda todas las funciones de esa clase. Sin embargo, los datos recuperados del servicio JSONP se conservan según la configuración de persistencia de ContextHub. (Consulte [Modos de persistencia:](adding-contexthub.md#persistence-modes))
+`ContextHub.Store.PersistedJSONPStore` amplía [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore), de modo que hereda todas las funciones de esa clase. Sin embargo, los datos recuperados del servicio JSONP se conservan según la configuración de persistencia de ContextHub. (Consulte [Modos de persistencia](adding-contexthub.md#persistence-modes))
 
 ## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 
@@ -1033,7 +1033,7 @@ ContextHub.Utils.JSON.tree.sanitizeKey(key)
 
 #### setItem(árbol, clave, valor) {#setitem-tree-key-value}
 
-Agrega un par clave/valor al árbol de datos de una copia de un objeto. Para obtener información acerca de los árboles de datos, vea [Persistencia.](contexthub.md#persistence)
+Agrega un par clave/valor al árbol de datos de una copia de un objeto. Para obtener información acerca de los árboles de datos, vea [Persistencia](contexthub.md#persistence).
 
 ##### Parámetros {#parameters-setitem-2}
 

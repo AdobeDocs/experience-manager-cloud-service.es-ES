@@ -5,7 +5,7 @@ exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 39%
@@ -14,11 +14,11 @@ ht-degree: 39%
 
 # AEM Editor de página de {#editing-page-content}
 
-AEM Una vez creada la página en la consola [**Sitios**,](/help/sites-cloud/authoring/sites-console/introduction.md) podrá editar el contenido de la página mediante el editor de páginas de la página de la página de la página, una herramienta eficaz para crear contenido.
+AEM Una vez creada la página en la consola [**Sitios**](/help/sites-cloud/authoring/sites-console/introduction.md), podrá editar el contenido de la página con el editor de páginas de la página de la página de la página, una herramienta eficaz para crear contenido.
 
 >[!NOTE]
 >
->Al editar una página en la consola [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) la consola abrirá el editor correspondiente a la [plantilla:](/help/sites-cloud/authoring/page-editor/templates.md) del editor de páginas descrito en este documento o del [editor universal.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+>Al editar una página en la consola [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md), la consola abrirá el editor apropiado para la [plantilla](/help/sites-cloud/authoring/page-editor/templates.md) de la página, ya sea el editor de páginas descrito en este documento o el [Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md).
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ La barra de herramientas de la página ofrece acceso a la funcionalidad adecuada
 
 #### Panel lateral {#side-panel-button}
 
-Se abrirá o cerrará el panel lateral [, ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md), que contiene el Explorador de recursos, el Explorador de componentes y el Árbol de contenido.
+Esto abre o cierra el [panel lateral](/help/sites-cloud/authoring/page-editor/editor-side-panel.md), que contiene el Explorador de recursos, el Explorador de componentes y el Árbol de contenido.
 
 ![Alternar panel lateral](assets/page-editor-side-panel-toggle.png)
 
@@ -78,7 +78,7 @@ Esto activa o desactiva la barra de herramientas del emulador [1}, que se usa pa
 
 #### ContextHub {#context-hub}
 
-Se abrirá [ContextHub.](/help/sites-cloud/authoring/personalization/contexthub.md) Solo está disponible en el modo **Vista previa**.
+Se abrirá [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md). Solo está disponible en el modo **Vista previa**.
 
 ![Botón Context Hub](assets/page-editor-context-hub.png)
 
@@ -114,7 +114,7 @@ Al editar una página existen varios modos que permiten realizar diferentes acci
 
 #### Vista previa {#preview}
 
-El botón **Vista previa** habilita el modo de vista previa [1.](#preview-mode), mostrando la página tal como aparecerá cuando se publique.
+El botón **Vista previa** habilita el [modo de vista previa](#preview-mode), y muestra la página tal como aparecerá cuando se publique.
 
 ![Botón Vista previa](assets/page-editor-preview.png)
 

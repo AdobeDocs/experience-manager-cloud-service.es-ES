@@ -4,7 +4,7 @@ description: SPA SPA AEM En este documento se describe el contrato general indep
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 1%
@@ -81,7 +81,7 @@ El modelo de página utiliza el Exportador de modelos JSON, que a su vez se basa
 * `:itemsOrder`: lista ordenada de los elementos secundarios. El objeto de asignación JSON no garantiza el orden de sus campos. Al tener el mapa y la matriz actual, el consumidor de la API tiene las ventajas de ambas estructuras
 * `:path`: ruta de contenido de un elemento (presente en elementos que representan una página)
 
-AEM Consulte también [Introducción a los servicios de contenido de la.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)
+AEM Consulte también [Introducción a los servicios de contenido de la](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es).
 
 ### Módulo específico del marco de trabajo {#framework-specific-module}
 

@@ -5,10 +5,10 @@ exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '949'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -18,7 +18,7 @@ Cree una canalización front-end para administrar la personalización del tema d
 
 ## La historia hasta ahora {#story-so-far}
 
-En el documento anterior del recorrido de Creación rápida del sitio de AEM, [Crear sitio a partir de una plantilla,](create-site.md) ha aprendido a utilizar una plantilla de sitio para crear rápidamente un sitio AEM que se pueda personalizar aún más con herramientas front-end y ahora debería:
+AEM En el documento anterior del recorrido AEM de creación rápida de sitios de la plantilla [Crear sitio a partir de la plantilla](create-site.md), ha aprendido a utilizar una plantilla de sitio para crear rápidamente un sitio que se pueda personalizar aún más mediante herramientas front-end y ahora debería:
 
 * Entender cómo obtener plantillas del sitio de AEM.
 * Obtenga información sobre cómo crear un sitio con una plantilla.
@@ -114,11 +114,11 @@ Ahora que ha completado esta parte del Recorrido de creación rápida de sitios 
 * Comprender qué es una canalización front-end.
 * Saber cómo configurar una canalización front-end en Cloud Manager.
 
-Aproveche este conocimiento y continúe con su recorrido de Creación rápida de sitios AEM al revisar el documento [Conceder acceso al desarrollador de front-end,](grant-access.md) donde incorporará a los desarrolladores de front-end en Cloud Manager para que tengan acceso al repositorio de Git de su sitio AEM y a la canalización.
+AEM Aproveche este conocimiento y continúe con su recorrido de Creación rápida de sitios de la revisando el documento [Conceder acceso al desarrollador front-end](grant-access.md), donde incorporará a los desarrolladores front-end en Cloud Manager AEM para que tengan acceso al repositorio de Git del sitio y a la canalización.
 
 ## Recursos adicionales {#additional-resources}
 
-Aunque se recomienda pasar a la siguiente parte del recorrido de creación rápida de sitios al revisar el documento [Personalizar el tema del sitio,](customize-theme.md) los siguientes son algunos recursos opcionales que profundizan ciertos conceptos mencionados en este documento, pero no son necesarios para continuar el recorrido.
+Aunque se recomienda pasar a la siguiente parte del recorrido de creación rápida de sitios al revisar el documento [Personalizar el tema del sitio](customize-theme.md), los siguientes son algunos recursos opcionales extra. Profundizan en varios conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido.
 
 * [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=es): si desea obtener más información sobre las funciones de Cloud Manager, puede consultar directamente los documentos técnicos detallados.
 * [Repositorios de Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md): si necesita más información sobre cómo configurar y administrar repositorios Git para su proyecto AEMaaCS, consulte este documento.

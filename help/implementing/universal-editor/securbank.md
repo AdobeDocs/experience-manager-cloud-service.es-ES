@@ -4,7 +4,7 @@ description: Obtenga información sobre el editor universal con experiencia prá
 exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
@@ -24,12 +24,12 @@ Obtenga información sobre el editor universal con experiencia práctica mediant
 
 La instalación de la aplicación de SecurBank es sencilla, pero como afecta a muchas áreas de AEM as a Cloud Service, hay que seguir una serie de pasos. A continuación se ofrece una descripción general de los pasos principales.
 
-1. [Cree un programa de zona protegida en Cloud Manager.](#create-sandbox-program)
-1. [AEM Clone el repositorio de Git del programa y actualícelo con el contenido del proyecto de SecurBank.](#clone-and-update)
-1. [AEM Ejecute la canalización para implementar el proyecto de SecurBank.](#run-pipeline)
-1. [Recupere las credenciales de Cloud Manager para el desarrollo de aplicaciones web locales.](#retrieve-credentials)
-1. [Descargue y configure la aplicación web de SecurBank.](#download-web-app)
-1. [Ejecute la aplicación web de SecurBank.](#run-web-app)
+1. [Crear un programa de zona protegida en Cloud Manager](#create-sandbox-program).
+1. AEM [Clona el repositorio git del programa y actualízalo con el contenido del proyecto SecurBank](#clone-and-update).
+1. AEM [Ejecute la canalización para implementar el proyecto de seguridad de SecureBank](#run-pipeline).
+1. [Recuperar credenciales de Cloud Manager para el desarrollo local de aplicaciones web](#retrieve-credentials).
+1. [Descargue y configure la aplicación web de SecurBank](#download-web-app).
+1. [Ejecute la aplicación web de SecurBank](#run-web-app).
 
 Las siguientes secciones detallan las tareas individuales necesarias.
 
@@ -42,13 +42,13 @@ Necesitará un nuevo programa de Cloud Manager donde pueda instalar SecurBank.
 1. Cree un nuevo programa de zona protegida para la aplicación SecurBank.
 
    * Use las opciones predeterminadas al seleccionar **Soluciones y complementos**.
-   * Para obtener más información sobre cómo crear un programa de zona protegida, consulte el documento [Creación de programas de zona protegida.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+   * Para obtener más información sobre cómo crear un programa de zona protegida, consulte el documento [Creación de programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md).
 
 ### AEM Clone el repositorio de Git del programa y actualícelo con el contenido del proyecto de SecurBank. {#clone-and-update}
 
 1. Una vez creado el programa, ábralo y en la ficha **Repositorios**, toque o haga clic en el botón **Acceder a la info del repositorio** para abrir el cuadro de diálogo **Información del repositorio** y ver las credenciales necesarias para acceder al repositorio de Git para el entorno de zona protegida.
 
-   * Para obtener más información sobre cómo obtener acceso a la información del repositorio, consulte el documento [Acceso a repositorios.](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+   * Para obtener más información sobre cómo acceder a la información del repositorio, consulte el documento [Acceder a repositorios](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 1. Con las credenciales del cuadro de diálogo **Información del repositorio**, clone el repositorio en el equipo local.
 
@@ -71,7 +71,7 @@ AEM Una vez que el proyecto de seguridad para SecurBank esté comprometido con e
 1. Vuelva a la pestaña **Información general** de su programa de zona protegida en Cloud Manager y ejecute la canalización de no producción de pila completa.
 
    * Desmarque todas las opciones para la ejecución de la canalización.
-   * Para obtener más información acerca de la ejecución de canalizaciones, consulte el documento [Administración de canalizaciones.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)
+   * Para obtener más información sobre la ejecución de canalizaciones, consulte el documento [Administración de canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines).
 
 ### Recupere las credenciales de Cloud Manager para el desarrollo de aplicaciones web locales. {#retrieve-credentials}
 
@@ -132,7 +132,7 @@ Con todo configurado tanto en Cloud Manager como localmente, puede ejecutar la a
 
       * Tenga en cuenta que esto es para fines de desarrollo y, como tal, no se proporciona ningún certificado válido. Como tal, es posible que deba informar al explorador para que pueda acceder a la página.
 
-Enhorabuena. Ahora debería ver la aplicación de SecurBank ejecutándose correctamente en el explorador.
+¡Enhorabuena! Ahora debería ver la aplicación de SecurBank ejecutándose correctamente en el explorador.
 
 Si el contenido aún no aparece, asegúrese de que la canalización **Implementar en desarrollador** que ejecutó se haya completado correctamente.
 

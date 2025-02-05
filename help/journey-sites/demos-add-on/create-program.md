@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo configurar un nuevo programa y una
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ Obtenga información sobre cómo configurar un nuevo programa y una canalizació
 
 ## La historia hasta ahora {#story-so-far}
 
-En el documento anterior del recorrido del complemento de las demostraciones de referencia de Adobe Experience Manager (AEM), [Comprender la instalación del complemento de demostración de referencia,](installation.md) ha aprendido cómo funciona el proceso de instalación del complemento de demostraciones de referencia, ilustrando cómo funcionan juntas las diferentes piezas. Ahora debería hacer lo siguiente:
+En el documento anterior del recorrido del complemento de demostraciones de referencia de Adobe Experience Manager AEM (), [Comprender la instalación del complemento de demostraciones de referencia](installation.md), ha aprendido cómo funciona el proceso de instalación del complemento de demostraciones de referencia, ilustrando cómo funcionan juntas las diferentes piezas. Ahora debería hacer lo siguiente:
 
 * Obtenga información básica sobre Cloud Manager.
 * Comprenda cómo las canalizaciones ofrecen contenido y configuración a AEM.

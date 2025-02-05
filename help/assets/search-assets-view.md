@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo buscar y descubrir recursos en la 
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2020'
 ht-degree: 94%
@@ -13,7 +13,7 @@ ht-degree: 94%
 
 # Búsqueda de recursos en [!DNL Assets view] {#search-assets}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación de desarrollador de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
@@ -142,7 +142,7 @@ Para generar nuevos recursos mediante [!DNL Adobe Firefly]:
 
    ![Integración de Firefly](assets/firefly-integration.png)
 
-   Los nuevos recursos se han generado correctamente. Además, puede cambiar la descripción de la imagen escribiendo el nuevo mensaje de texto en el cuadro de descripción. [Aprenda a escribir un buen indicador de IA para generar contenido extraordinario y relevante.](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html?lang=es) También puede [editar la imagen con otras características como cambiar el estilo, las dimensiones de la imagen y mucho más.](https://helpx.adobe.com/in/firefly/using/text-to-image.html?lang=es)
+   Los nuevos recursos se han generado correctamente. Además, puede cambiar la descripción de la imagen escribiendo el nuevo mensaje de texto en el cuadro de descripción. [Aprenda a escribir un buen aviso de IA para generar contenido extraordinario y relevante](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html?lang=es). También puede [editar la imagen con otras características como cambiar el estilo, las dimensiones de la imagen y más](https://helpx.adobe.com/in/firefly/using/text-to-image.html?lang=es).
 
    ![Integración de Firefly](assets/bugatti-type-57.png)
 

@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '919'
-ht-degree: 63%
+ht-degree: 61%
 
 ---
 
@@ -59,7 +59,7 @@ El administrador de despliegue le permite activar o desactivar la administració
 
 Esto se realiza mediante la [configuración OSGi](/help/implementing/deploying/configuring-osgi.md) del **administrador de despliegue de gestión de contenido web CQ por día**. Establezca el valor **Gestión conflictos con páginas creadas manualmente** (`rolloutmgr.conflicthandling.enabled`) a true si el administrador de despliegue debe gestionar los conflictos de una página creada en Live Copy con un nombre que exista en el modelo.
 
-AEM tiene [comportamiento predefinido cuando la administración de conflictos se ha desactivado.](#behavior-when-conflict-handling-deactivated)
+AEM tiene [comportamiento predefinido cuando se ha desactivado la administración de conflictos](#behavior-when-conflict-handling-deactivated).
 
 ## Controladores de conflictos {#conflict-handlers}
 
@@ -118,7 +118,7 @@ Los controladores de conflictos personalizados pueden hacer lo siguiente:
 
 ### Comportamiento cuando los controladores de conflicto están desactivados {#behavior-when-conflict-handling-deactivated}
 
-Si [desactiva los controladores de conflictos](#rollout-manager-and-conflict-handling) manualmente, AEM no realiza ninguna acción en ninguna página en conflicto. Las páginas que no entran en conflicto se despliegan según lo esperado.
+AEM Si [desactiva manualmente la administración de conflictos](#rollout-manager-and-conflict-handling), no realiza ninguna acción en las páginas que tengan conflictos con el usuario, ya que no realiza ninguna acción en las mismas. Las páginas que no entran en conflicto se despliegan según lo esperado.
 
 >[!CAUTION]
 >

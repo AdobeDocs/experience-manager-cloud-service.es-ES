@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 solution: Experience Manager Sites
-source-git-commit: c4cb466bf6a9b6f8f4a28943d28bdb524610f5ad
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1447'
-ht-degree: 72%
+ht-degree: 69%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 72%
 
 El marco de trabajo de integración de traducciones se conecta con los servicios de traducción de terceros para organizar la traducción de contenido de AEM. Requiere tres pasos básicos.
 
-1. [Conéctese a su proveedor de servicios de traducción.](#connecting-to-a-translation-service-provider)
-1. [Cree una configuración del marco de trabajo de integración de traducción.](#creating-a-translation-integration-configuration)
-1. [Asocie las configuraciones de nube con sus páginas.](#configuring-pages-for-translation)
+1. [Conéctese a su proveedor de servicios de traducción](#connecting-to-a-translation-service-provider).
+1. [Crear una configuración del módulo de integración de traducción](#creating-a-translation-integration-configuration).
+1. [Asocie las configuraciones en la nube con sus páginas](#configuring-pages-for-translation).
 
-Para obtener una descripción general de las funciones de traducción de contenido de AEM, consulte [Traducción de contenido para sitios multilingües](overview.md).
+Para obtener información general sobre las funciones de traducción de contenido de AEM, consulte [Traducción de contenido para sitios multilingües](overview.md).
 
 >[!TIP]
 >
->Si es nuevo traduciendo contenido, consulte nuestro [Recorrido de traducción de Sites,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante las potentes herramientas de traducción de AEM. Es ideal para aquellos que no tengan experiencia ni en traducción ni en AEM.
+>Si no tiene experiencia en la traducción de contenido, consulte el [Recorrido de traducción de sitios](/help/journey-sites/translation/overview.md), que es una ruta guiada a través de la traducción del contenido de AEM Sites AEM AEM mediante herramientas de traducción potentes que se utilizan para traducir contenido. Es ideal para aquellos que no tienen experiencia en traducción o en traducción de sitios.
 
 ## Conexión a un proveedor de servicios de traducción {#connecting-to-a-translation-service-provider}
 
@@ -58,7 +58,7 @@ Después de configurar un marco de trabajo de integración de traducciones, pued
 
 Una sola configuración del marco de trabajo controla cómo se traducen el contenido de la página y los recursos. Para crear una nueva configuración de traducción haga lo siguiente:
 
-1. En el [menú de navegación global,](/help/sites-cloud/authoring/basic-handling.md#global-navigation) seleccione **Herramientas > Cloud Service y Cloud Service de traducción**.
+1. En el [menú de navegación global](/help/sites-cloud/authoring/basic-handling.md#global-navigation), seleccione **Herramientas > Cloud Service y Cloud Service de traducción**.
 1. Desplácese hasta donde desee crear la configuración en la estructura de contenido. A menudo se basa en un sitio en particular, pero puede ser global.
 1. Proporcione la siguiente información en los campos y seleccione **Crear**.:
    1. Seleccione **Tipo de configuración** en la lista desplegable.

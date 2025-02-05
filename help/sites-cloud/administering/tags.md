@@ -5,7 +5,7 @@ exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
 solution: Experience Manager Sites
 feature: Workflow
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2200'
 ht-degree: 1%
@@ -75,8 +75,8 @@ AEM ![La consola de etiquetado en el código de tiempo de trabajo](/help/sites-c
 Existen varios pasos para crear y utilizar etiquetas para organizar el contenido.
 
 1. [Cree un área de nombres para sus etiquetas](#creating-namespaces) (o elija una existente para reutilizarla).
-1. [Cree una etiqueta nueva.](#creating-tags)
-1. [Publish la etiqueta.](#publishing-tags)
+1. [Crear una etiqueta nueva](#creating-tags).
+1. [Publish usa la etiqueta](#publishing-tags).
 
 ### Creación de áreas de nombres {#creating-namespaces}
 
@@ -96,7 +96,7 @@ Se utiliza un área de nombres para organizar otras etiquetas. Se puede consider
 
 Se crea el área de nombres. En la consola de etiquetado, las áreas de nombres se encuentran en el nivel inferior (en la columna del extremo izquierdo de la consola) y se representan mediante iconos de carpeta, que reflejan su naturaleza como &quot;contenedor&quot; o agrupación de otras etiquetas.
 
-Ahora puede [crear nuevas etiquetas](#creating-tags) en este espacio de nombres o [administrar las etiquetas existentes.](#managing-tags)
+Ahora puede [crear nuevas etiquetas](#creating-tags) en este espacio de nombres o [administrar etiquetas existentes](#managing-tags).
 
 Un área de nombres no necesita contener subetiquetas. Como un área de nombres es en sí misma una etiqueta, se puede utilizar para organizar el contenido como cualquier otra etiqueta. Sin embargo, para continuar creando una taxonomía de etiquetado estructurada, puede [crear subetiquetas](#creating-tags) dentro de ese área de nombres en función de los requisitos de su proyecto.
 
@@ -104,7 +104,7 @@ Un área de nombres no necesita contener subetiquetas. Como un área de nombres 
 
 Las etiquetas se suelen añadir a áreas de nombres.
 
-1. Para crear una etiqueta, abra la [consola de etiquetado.](#tagging-console)
+1. Para crear una etiqueta, abra la [consola de etiquetado](#tagging-console).
 
 1. Seleccione el área de nombres donde desea crear la etiqueta. O seleccione otra etiqueta para crear una subetiqueta debajo de ella.
 
@@ -132,7 +132,7 @@ Las etiquetas permiten la creación flexible de su propia taxonomía en función
 
 AEM Al igual que con la creación de cualquier otro contenido en la, después de crear una etiqueta (o área de nombres), solo existe en el entorno de creación. Para que las etiquetas estén disponibles para los usuarios, debe publicarlas.
 
-1. Para publicar una etiqueta, abra la [consola de etiquetado.](#tagging-console)
+1. Para publicar una etiqueta, abra la [consola de etiquetado](#tagging-console).
 
 1. Seleccione las etiquetas que desee publicar y, en la barra de herramientas, seleccione **Publish**.
 
@@ -176,7 +176,7 @@ Cuando se selecciona una sola etiqueta, un área de nombres u otra etiqueta en l
 
 Puede ver más detalles sobre la etiqueta, incluidos quién la publicó por última vez y cuándo cambió la consola a la vista **Propiedades**.
 
-1. Para ver las propiedades de una etiqueta, abra la [consola de etiquetado.](#tagging-console)
+1. Para ver las propiedades de una etiqueta, abra la [consola de etiquetado](#tagging-console).
 
 1. Seleccione la etiqueta cuyas propiedades desee ver y, en el carril izquierdo, seleccione **Propiedades**.
 
@@ -192,7 +192,7 @@ Para obtener más información sobre la selección de los modos de visualizació
 
 Las etiquetas y los espacios de nombre se pueden editar después de la creación.
 
-1. Para editar una etiqueta, abra la [consola de etiquetado.](#tagging-console)
+1. Para editar una etiqueta, abra la [consola de etiquetado](#tagging-console).
 
 1. Seleccione la etiqueta que desee editar y, en la barra de herramientas, seleccione **Editar**.
 
@@ -206,13 +206,13 @@ Las etiquetas y los espacios de nombre se pueden editar después de la creación
 
 Para obtener más información sobre cómo agregar traducciones de idiomas, consulte la sección sobre [Administración de etiquetas en diferentes idiomas](#managing-tags-in-different-languages).
 
-Si los cambios que realizó fueron a una etiqueta ya publicada, es posible que desee [volver a publicarla.](#publishing-tags)
+Si los cambios que realizó fueron a una etiqueta ya publicada, es posible que desee [volver a publicarla](#publishing-tags).
 
 ### Cancelar publicación de etiquetas {#unpublishing-tags}
 
 Para desactivar la etiqueta en la instancia de autor y quitarla de la instancia de publicación, puede cancelar la publicación.
 
-1. Para cancelar la publicación de una etiqueta, abra la [consola de etiquetado.](#tagging-console)
+1. Para cancelar la publicación de una etiqueta, abra la [consola de etiquetado](#tagging-console).
 
 1. Seleccione la etiqueta o etiquetas cuya publicación desea cancelar y, en la barra de herramientas, seleccione **Cancelar publicación**.
 
@@ -232,7 +232,7 @@ Las etiquetas seleccionadas se han puesto en la cola de cancelación de publicac
 
 Puede resultar útil ver a qué contenido se aplica una etiqueta en particular. Puede hacerlo usando la vista **Referencias** de la consola de etiquetado.
 
-1. Para ver las referencias de una etiqueta, abra la [consola de etiquetado.](#tagging-console)
+1. Para ver las referencias de una etiqueta, abra la [consola de etiquetado](#tagging-console).
 
 1. Seleccione la etiqueta cuyas referencias desee ver y, en el carril izquierdo, seleccione **Referencias**.
 
@@ -258,7 +258,7 @@ Puede ser necesario limpiar o reorganizar la taxonomía de etiquetado moviendo u
 >
 >Se recomienda que solo se permita a los administradores mover y cambiar el nombre de las etiquetas.
 
-1. Para mover o cambiar el nombre de una etiqueta, abra la [consola de etiquetado.](#tagging-console)
+1. Para mover o cambiar el nombre de una etiqueta, abra la [consola de etiquetado](#tagging-console).
 
 1. Seleccione la etiqueta que quiera mover o cambiar de nombre y seleccione **Mover** en la barra de herramientas.
 
@@ -281,7 +281,7 @@ Se cambia el nombre de la etiqueta o se mueve a su nueva ubicación. Si la etiqu
 
 Si la taxonomía de etiquetado tiene duplicados o etiquetas similares, puede resultar útil combinar esas etiquetas. Cuando la etiqueta `A` se combina con la etiqueta `B`, todas las páginas etiquetadas con la etiqueta `A` se etiquetarán con la etiqueta `B` y la etiqueta `A` ya no estará disponible para los autores.
 
-1. Para combinar dos etiquetas, abra la [consola de etiquetado.](#tagging-console)
+1. Para combinar dos etiquetas, abra la [consola de etiquetado](#tagging-console).
 
 1. Seleccione la etiqueta que desee combinar en otra etiqueta y, a continuación, seleccione **Combinar** en la barra de herramientas.
 
@@ -297,7 +297,7 @@ La etiqueta seleccionada en la consola se combina con la etiqueta especificada e
 
 Si la taxonomía de etiquetado cambia y hace que una etiqueta o área de nombres sea innecesaria, se puede eliminar.
 
-1. Para eliminar una etiqueta, abra la [consola de etiquetado.](#tagging-console)
+1. Para eliminar una etiqueta, abra la [consola de etiquetado](#tagging-console).
 
 1. Seleccione la etiqueta que desee eliminar y, a continuación, seleccione **Eliminar** en la barra de herramientas.
 
@@ -358,7 +358,7 @@ La propiedad `title` de una etiqueta se puede traducir a varios idiomas. Una vez
 
 Supongamos que tenemos una etiqueta llamada `Animals` que queremos traducir al alemán y al francés.
 
-1. Abra la [consola de etiquetado.](#tagging-console)
+1. Abra la [consola de etiquetado](#tagging-console).
 
 1. Seleccione la etiqueta que desee traducir y, a continuación, seleccione **Editar** en la barra de herramientas.
 

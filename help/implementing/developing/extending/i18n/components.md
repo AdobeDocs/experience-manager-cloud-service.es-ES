@@ -5,10 +5,11 @@ topic-tags: components
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: b55f7260628f759de2718290624cdc82da7a2961
+exl-id: 0276b310-b9a9-44b6-b295-06c51ef17208
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '349'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -20,7 +21,7 @@ Internacionalice los componentes y los cuadros de diálogo para que las cadenas 
 
 Realice el siguiente proceso para internacionalizar los componentes y proporcionar la interfaz de usuario en diferentes idiomas:
 
-1. [Implemente sus componentes con código que internacionalice las cadenas.](/help/implementing/developing/extending/i18n/dev.md) Su código identifica las cadenas que se van a traducir y selecciona el idioma que se va a presentar durante la ejecución.
+1. [Implemente sus componentes con código que internacionalice las cadenas](/help/implementing/developing/extending/i18n/dev.md). El código identifica las cadenas que se van a traducir y selecciona el idioma que se va a presentar durante la ejecución.
 1. Cree diccionarios y añada las cadenas en inglés para traducir.
 1. AEM Exporte el diccionario al formato XLIFF, traduzca las cadenas y, a continuación, importe los archivos XLIFF de nuevo a los archivos de formato XLIFF de la lista de valores de la lista de valores de la lista de valores de la lista de valores.
 1. Incorpore el diccionario en el proceso de gestión de versiones de su aplicación.

@@ -4,10 +4,10 @@ description: Con esta guía de inicio rápido, conozca los aspectos básicos de 
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 feature: Headless
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '278'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -44,4 +44,4 @@ Sin embargo, en una situación de producción, las tareas las realizan diferente
 
 ## Siguiente paso {#next-step}
 
-¿Listo para obtener más información? A continuación, comience leyendo la primera parte de la Configuración sin encabezado: [Creación de una configuración.](create-configuration.md)
+¿Listo para obtener más información? A continuación, comience leyendo la primera parte de la instalación sin encabezado: [Creación de una configuración](create-configuration.md).

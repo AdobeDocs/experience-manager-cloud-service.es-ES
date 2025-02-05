@@ -5,10 +5,10 @@ exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1485'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ Obtenga información sobre cómo crear rápidamente un nuevo sitio de AEM con un
 
 ## La historia hasta ahora {#story-so-far}
 
-En el documento anterior del Recorrido de creación rápida de sitios de AEM, [Comprensión de Cloud Manager y el Flujo de trabajo de creación rápida de sitios,](cloud-manager.md) ha aprendido acerca de Cloud Manager y cómo vincula el nuevo proceso de creación rápida de sitios. Ahora debería hacer lo siguiente:
+AEM En el documento anterior del recorrido de creación rápida de sitios de la, [Comprensión de Cloud Manager y el Flujo de trabajo de creación rápida de sitios](cloud-manager.md), ha aprendido acerca de Cloud Manager y cómo vincula el nuevo proceso de creación rápida de sitios. Ahora debería hacer lo siguiente:
 
 * Comprender cómo AEM Sites y Cloud Manager colaboran para facilitar el desarrollo front-end
 * Vea cómo el paso de personalización del front-end está completamente disociado de AEM y no requiere conocimientos de AEM.
@@ -54,7 +54,7 @@ Las plantillas son potentes, porque se pueden reutilizar para que los autores de
 
 ## Obtención de una plantilla del sitio {#obtaining-template}
 
-La forma más sencilla de empezar es [descargar la última versión de la plantilla de sitio estándar de AEM desde su repositorio de GitHub.](https://github.com/adobe/aem-site-template-standard/releases)
+AEM La forma más sencilla de empezar es [descargar la última versión de la plantilla de sitio estándar de la plataforma de GitHub de su repositorio de GitHub](https://github.com/adobe/aem-site-template-standard/releases).
 
 Una vez descargado, puede cargarlo en su entorno de AEM como lo haría con cualquier otro paquete. Consulte la [sección Recursos adicionales](#additional-resources) para obtener más información sobre cómo trabajar con paquetes si necesita más detalles sobre este tema.
 
@@ -177,11 +177,11 @@ Ahora que ha completado esta parte del Recorrido de creación rápida de sitios 
 * Obtenga información sobre cómo crear un sitio con una plantilla.
 * Consulte cómo descargar la plantilla del nuevo sitio para facilitarla al desarrollador front-end.
 
-Aproveche este conocimiento y continúe con su Recorrido de creación rápida de sitios de AEM revisando el documento [Configurar la canalización,](pipeline-setup.md) donde creará una canalización front-end para administrar la personalización del tema de su sitio.
+AEM Aproveche este conocimiento y continúe con su recorrido de Creación rápida de sitios de la revisando el documento [Configurar la canalización](pipeline-setup.md), donde creará una canalización front-end para administrar la personalización del tema de su sitio.
 
 ## Recursos adicionales {#additional-resources}
 
-Aunque se recomienda pasar a la siguiente parte del Recorrido de creación rápida de sitios de AEM al revisar el documento [Configuración de la canalización,](pipeline-setup.md) los siguientes son algunos recursos opcionales extra. Profundizan en varios conceptos mencionados en este documento, pero no son necesarios para continuar el recorrido.
+Aunque se recomienda pasar a la siguiente parte del recorrido de creación rápida de sitios al revisar el documento [Configurar la canalización](pipeline-setup.md), los siguientes son algunos recursos opcionales que profundizan ciertos conceptos mencionados en este documento, pero que no son necesarios para continuar en el recorrido.
 
 * [Plantilla de sitio estándar de AEM](https://github.com/adobe/aem-site-template-standard): este es el repositorio de GitHub de la plantilla de sitio estándar de AEM.
 * [Organización de páginas](/help/sites-cloud/authoring/sites-console/organizing-pages.md): esta guía detalla cómo organizar las páginas de su sitio de AEM.

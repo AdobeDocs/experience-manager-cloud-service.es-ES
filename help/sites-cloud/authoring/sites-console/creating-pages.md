@@ -5,7 +5,7 @@ exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 27%
@@ -19,7 +19,7 @@ Aprenda a crear páginas nuevas para el sitio web mediante la consola **Sitios**
 
 >[!TIP]
 >
->AEM Antes de empezar a crear páginas nuevas, familiarícese con [cómo se organizan las páginas en los elementos de la vista de la página de la página de la página de inicio de la página de inicio de la página de inicio](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+>AEM Antes de empezar a crear páginas nuevas, familiarícese con [cómo se organizan las páginas en la organización de las páginas en la organización de las páginas en la organización de las páginas en la organización de las páginas en el sitio](/help/sites-cloud/authoring/sites-console/organizing-pages.md).
 
 ## Privilegios de acceso {#access-privileges}
 
@@ -31,7 +31,7 @@ Si tiene algún problema, póngase en contacto con el administrador del sistema.
 
 A menos que se hayan creado todas las páginas por adelantado, debe crear una página para poder empezar a crear contenido:
 
-1. Abra [la consola **Sitios**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Abra [la consola **Sitios**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Desplácese hasta la ubicación en la que desee crear la nueva página.
 1. Abra el selector desplegable con **Crear** en la barra de herramientas y, a continuación, seleccione **Página** en la lista:
 
@@ -40,7 +40,7 @@ A menos que se hayan creado todas las páginas por adelantado, debe crear una p�
 1. En el primer paso del asistente, puede hacer lo siguiente:
 
    * Seleccione la plantilla que desee usar para crear la nueva página y, a continuación, seleccione **Siguiente** para continuar o **Cancelar** para anular el proceso.
-   * Las plantillas son compatibles tanto con el [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md) como con el [Editor universal.](/help/sites-cloud/authoring/universal-editor/templates.md)
+   * Las plantillas son compatibles con [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md) y con [Editor universal](/help/sites-cloud/authoring/universal-editor/templates.md).
 
    ![Selección de una plantilla para una nueva página](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 
@@ -76,7 +76,7 @@ A menos que se hayan creado todas las páginas por adelantado, debe crear una p�
 
    * Si elige **Abrir**, la consola **Sitios** abre el editor correspondiente basado en la plantilla de la nueva página, ya sea:
       * [El Editor de página](/help/sites-cloud/authoring/page-editor/introduction.md)
-      * [El editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md)
+      * [Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 Si vuelve a la consola, podrá ver la nueva página:
 

@@ -5,10 +5,10 @@ exl-id: 8eb52793-b709-4e66-832d-533ef06bc0e1
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 43%
+ht-degree: 47%
 
 ---
 
@@ -18,7 +18,7 @@ A menudo, durante la creación es necesario seleccionar otro recurso, como cuand
 
 ## Campos de rutas   {#path-fields}
 
-El ejemplo que se utiliza aquí a modo de ilustración se corresponde con el componente de imagen. Para obtener más información acerca de cómo usar y editar componentes, vea [Componentes para la creación de páginas.](/help/sites-cloud/authoring/page-editor/components.md)
+El ejemplo que se utiliza aquí a modo de ilustración se corresponde con el componente de imagen. Para obtener más información sobre cómo utilizar y editar componentes, consulte [Componentes para la creación de páginas](/help/sites-cloud/authoring/page-editor/components.md).
 
 Los campos de rutas de acceso disponen de las funciones de completado automático y de predicción de texto para que la localización de recursos resulte más sencilla.
 
@@ -32,7 +32,7 @@ También puede empezar a escribir en el campo de rutas, y AEM le ofrecerá rutas
 
 ## Navegador de rutas {#path-browser}
 
-El explorador de rutas está organizado como la [vista de columna](/help/sites-cloud/authoring/basic-handling.md#column-view) de la consola [**Sitios**,](/help/sites-cloud/authoring/sites-console/introduction.md) lo que permite una selección más detallada de los recursos.
+El explorador de rutas está organizado como la [vista de columna](/help/sites-cloud/authoring/basic-handling.md#column-view) de la consola [**Sitios**](/help/sites-cloud/authoring/sites-console/introduction.md), lo que permite una selección más detallada de los recursos.
 
 ![Navegador de rutas](/help/sites-cloud/authoring/assets/path-browser.png)
 

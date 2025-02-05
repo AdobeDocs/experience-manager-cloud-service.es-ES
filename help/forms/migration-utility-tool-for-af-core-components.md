@@ -8,10 +8,10 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 92a5599ac94d5bf09311d34dd0287def46b14353
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1060'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
@@ -53,8 +53,8 @@ AEM ![Herramientas de modernización de](/help/forms/assets/aem-modernize-tools.
 
 ## AEM Requisitos previos para utilizar las herramientas de modernización de
 
-* [Configurar un entorno de desarrollo local para AEM Forms](/help/forms/setup-local-development-environment.md)
-* [Habilite los componentes principales de Forms adaptables para su entorno.](/help/forms/enable-adaptive-forms-core-components.md)
+* [Configurar el entorno de desarrollo local para AEM Forms](/help/forms/setup-local-development-environment.md).
+* [Habilite los componentes principales de Forms adaptable para su entorno](/help/forms/enable-adaptive-forms-core-components.md).
 * Agregue los usuarios al grupo [!DNL forms-users]. Los miembros del grupo [!DNL forms-users] tienen permisos para crear un formulario adaptable.
 * AEM AEM Los usuarios con las siguientes funciones tienen los permisos para instalar las herramientas de modernización de dentro de un entorno de trabajo:
 

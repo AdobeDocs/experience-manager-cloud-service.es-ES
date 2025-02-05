@@ -8,10 +8,10 @@ exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1147'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -62,7 +62,7 @@ Si elige otro proveedor, el administrador debe instalar el paquete del conector 
 >
 >El uso del traductor de Microsoft incorporado en AEM no requiere ninguna configuración adicional y funciona tal cual sin tener que configurar el conector adicional.
 >
->Si decide utilizar el conector del traductor de Microsoft para realizar pruebas, no es necesario realizar los pasos de las dos secciones siguientes: [Creación de una configuración de integración de traducción](#create-config) y [Asociar la configuración con su contenido.](#associate) Sin embargo, se recomienda leerlas para que esté familiarizado con los pasos para cuándo necesite configurar el conector preferido.
+>Si decide usar el conector del traductor de Microsoft para realizar pruebas, no necesita realizar los pasos de las dos secciones siguientes: [Creación de una configuración de integración de traducción](#create-config) y [Asociar la configuración con su contenido](#associate). Sin embargo, se recomienda leerlas para que esté familiarizado con los pasos para cuándo necesite configurar el conector preferido.
 >
 >La licencia de la versión de prueba del conector del traductor de Microsoft no está pensada para fines de producción y si decide conceder la licencia, el administrador del sistema debe seguir los pasos detallados en la sección [Recursos adicionales](#additional-resources) al final de este documento para configurar esa licencia.
 
@@ -123,7 +123,7 @@ Para ello, vaya a la raíz de idioma del contenido. Como ejemplo, sería lo sigu
 1. Vaya a la navegación global y luego a **Navegación** > **Recursos** > **Archivos**.
 1. En la consola de recursos, seleccione la raíz de idioma que desea configurar y haga clic en **Propiedades**.
 1. Seleccione la pestaña **Cloud Services**.
-1. En **Configuraciones de Cloud Service** en el menú desplegable **Agregar configuración**, seleccione el conector. Debe aparecer en el menú desplegable cuando haya instalado su paquete como se ha [descrito anteriormente.](#connect-translation-provider)
+1. En **Configuraciones de Cloud Service** en el menú desplegable **Agregar configuración**, seleccione el conector. Debe aparecer en la lista desplegable cuando haya instalado su paquete como [descrito anteriormente](#connect-translation-provider).
 1. En **Configuraciones de Cloud Service** en el menú desplegable **Agregar configuración**, seleccione también la configuración.
 1. Seleccione **Guardar y cerrar**.
 
@@ -136,7 +136,7 @@ Ahora que ha completado esta parte del recorrido de traducción de AEM Sites, de
 * Comprender los parámetros importantes del marco de trabajo de integración de traducción en AEM.
 * Puede configurar su propia conexión con el servicio de traducción.
 
-Aproveche este conocimiento y continúe con su recorrido de traducción de AEM Sites revisando el documento [Configurar las reglas de traducción,](translation-rules.md) donde aprenderá a definir qué contenido traducir.
+Aproveche este conocimiento y continúe con su recorrido de traducción de AEM Sites revisando el documento [Configuración de reglas de traducción](translation-rules.md), donde aprenderá a definir qué contenido traducir.
 
 ## Recursos adicionales {#additional-resources}
 

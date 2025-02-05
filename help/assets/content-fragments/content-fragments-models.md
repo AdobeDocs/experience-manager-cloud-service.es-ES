@@ -5,7 +5,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 862a1f67782775cc1b2ee6e3d3d66ae5560a15ab
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3120'
 ht-degree: 78%
@@ -14,7 +14,7 @@ ht-degree: 78%
 
 # Modelos de fragmento de contenido {#content-fragment-models}
 
-AEM Los modelos de fragmentos de contenido de la definición de la estructura de contenido de los [fragmentos de contenido,](/help/assets/content-fragments/content-fragments.md) que sirven de base para el contenido sin encabezado, se definen en la.
+AEM Los modelos de fragmentos de contenido de la definición de la estructura de contenido de los [fragmentos de contenido](/help/assets/content-fragments/content-fragments.md), que sirven de base para el contenido sin encabezado, se definen en la definición de los modelos de fragmentos de contenido.
 
 Para usar modelos de fragmentos de contenido, haga lo siguiente:
 

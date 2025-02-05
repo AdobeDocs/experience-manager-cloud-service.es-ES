@@ -5,10 +5,10 @@ exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '13685'
-ht-degree: 96%
+ht-degree: 92%
 
 ---
 
@@ -50,11 +50,11 @@ La siguiente sección presenta las [capas de las directrices WCAG 2.1](https://w
 
 ## Principio 1: perceptible     {#principle-perceivable}
 
-[Principio 1: perceptible. Los componentes de la interfaz de usuario y de la información se deben presentar a los usuarios de forma perceptible.](https://www.w3.org/TR/WCAG/#perceivable)
+[Principio 1: perceptible. Los componentes de la interfaz de usuario y de la información se deben presentar a los usuarios de forma perceptible](https://www.w3.org/TR/WCAG/#perceivable).
 
 ### Alternativas de texto (1.1)     {#text-alternatives}
 
-[Directrices 1.1 Alternativas de texto: Proporcione alternativas de texto para cualquier contenido no textual y así poder cambiarlo por otras formas que la gente puede necesitar, como letras grandes, braille, voz, símbolos o lenguaje más sencillo.](https://www.w3.org/TR/WCAG/#text-alternatives)
+[Directrices 1.1 Alternativas de texto: proporcione alternativas de texto para cualquier contenido no textual para poder cambiarlo por otras formas que la gente necesite, como letras grandes, braille, voz, símbolos o lenguaje más sencillo](https://www.w3.org/TR/WCAG/#text-alternatives).
 
 ### Contenido no textual (1.1.1) {#non-text-content}
 
@@ -117,9 +117,9 @@ Los tipos específicos de contenido no textual que requieren alternativas textua
 
 #### Más información: Contenido no textual (1.1.1) {#more-information-non-text-content}
 
-* [Entender los criterios de éxito 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
-* [Cumplir los criterios de éxito 1.1.1](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
-* [Explicación de W3C y alternativas para los Captcha](https://www.w3.org/TR/turingtest/)
+* [Entender los criterios de éxito 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html).
+* [Cumplir los criterios de éxito 1.1.1](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content).
+* [Explicación de W3C y alternativas para CAPTCHA](https://www.w3.org/TR/turingtest/).
 
 <!--
 * [W3C: HTML5 Techniques for providing useful text alternatives (draft)](https://dev.w3.org/html5/alt-techniques/)
@@ -127,7 +127,7 @@ Los tipos específicos de contenido no textual que requieren alternativas textua
 
 ### Medios basados en el tiempo (1.2)     {#time-based-media}
 
-[Directriz 1.2 Medios basados en el tiempo: proporcionar alternativas para medios basados en el tiempo.](https://www.w3.org/TR/WCAG/#time-based-media)
+[Directrices 1.2 Medios basados en el tiempo: Proporcione alternativas para los medios basados en el tiempo](https://www.w3.org/TR/WCAG/#time-based-media).
 
 Trata el contenido de la página web *basado en el tiempo*. Abarca el contenido que puede reproducir el usuario (como vídeos, audios y contenido animado) y puede ser pregrabado o reproducido en vivo.
 
@@ -173,8 +173,8 @@ Insertar contenido multimedia en sus páginas web de AEM es similar a insertar u
 
 #### Más información: Solo audio y solo vídeo (pregrabado) (1.2.1) {#more-information-audio-only-and-video-only-prerecorded}
 
-* [Entender los criterios de éxito 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html)
-* [Cumplir los criterios de éxito 1.2.1](https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded)
+* [Entender los criterios de éxito 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html).
+* [Cumplir los criterios de éxito 1.2.1](https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded).
 
 ### Subtítulos (pregrabados) (1.2.2) {#captions-prerecorded}
 
@@ -195,19 +195,19 @@ Los subtítulos pueden ser:
 
 Utilice subtítulos cerrados siempre que sea posible, ya que proporciona a los usuarios la opción de verlos o no.
 
-Para los subtítulos cerrados, debe crear y proporcionar un archivo de subtítulos sincronizado en un formato adecuado (como [SMIL](https://www.w3.org/AudioVideo/)) junto con el archivo de vídeo (los detalles sobre cómo hacerlo exceden el alcance de esta guía, pero se proporcionan vínculos a varios tutoriales en [Más información: subtítulos (pregrabados) (1.2.2)](#more-information-captions-prerecorded). Asegúrese de proporcionar una nota o activar la función de subtítulo en el reproductor de vídeo para que los usuarios sepan que el vídeo tiene subtítulos disponibles.
+Para los subtítulos cerrados debe crear y proporcionar un archivo de subtítulos sincronizados en un formato apropiado (como [SMIL](https://www.w3.org/AudioVideo/)) junto al archivo de vídeo (los detalles de cómo hacerlo exceden el ámbito de esta guía, pero se proporcionan vínculos a algunos tutoriales en [Más información: Subtítulos (pregrabados) (1.2.2)](#more-information-captions-prerecorded)). Asegúrese de proporcionar una nota o activar la función de subtítulo en el reproductor de vídeo para que los usuarios sepan que el vídeo tiene subtítulos disponibles.
 
 Si necesita utilizar subtítulos abiertos, incorpore el texto en la pista de vídeo. Esto se puede conseguir con aplicaciones de edición de vídeo que permiten superponer títulos.
 
 #### Más información: Subtítulos (pregrabados) (1.2.2) {#more-information-captions-prerecorded}
 
-* [Entender los criterios de éxito 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
-* [Cumplir los criterios de éxito 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
+* [Entender los criterios de éxito 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html).
+* [Cumplir los criterios de éxito 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded).
 
 c
-* [W3C: Medios multimedia sincronizados](https://www.w3.org/AudioVideo/)
-* [Subtítulos, transcripciones y descripciones de audio: por WebAIM](https://webaim.org/techniques/captions/)
--->
+* [W3C: Medios multimedia sincronizados](https://www.w3.org/AudioVideo/).
+* [Subtítulos, transcripciones y descripciones de audio - por WebAIM](https://webaim.org/techniques/captions/).
+—>
 
 ### Descripción del audio o medios alternativos (pregrabados) (1.2.3) {#audio-description-or-media-alternative-prerecorded}
 
@@ -235,8 +235,8 @@ Los detalles exactos de cómo crear vídeos descritos por audio quedan fuera del
 
 #### Más información: Descripción del audio o medios alternativos (pregrabados) (1.2.3) {#more-information-audio-description-or-media-alternative-prerecorded}
 
-* [Comprender los criterios de éxito 1.2.3](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html)
-* [Cumplir los criterios de éxito 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
+* [Entender los criterios de éxito 1.2.3](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html).
+* [Cumplir los criterios de éxito 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded).
 
 <!--
 * [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
@@ -288,7 +288,7 @@ Siga las directrices que se proporcionan para la [Descripción del audio o medio
 
 ### Adaptable (1.3)     {#adaptable}
 
-[Directriz 1.3 adaptable: cree contenido que se pueda presentar de diferentes maneras (por ejemplo, con un diseño más sencillo) sin perder información o estructura.](https://www.w3.org/TR/WCAG/#adaptable)
+[Directriz 1.3 adaptable: crea contenido que se puede presentar de diferentes maneras (por ejemplo, con un diseño más sencillo) sin perder información o estructura](https://www.w3.org/TR/WCAG/#adaptable).
 
 Esta directriz cubre los requisitos necesarios para apoyar a las siguientes personas:
 
@@ -454,12 +454,12 @@ Asegúrese de que cualquier información relativa a las características visuale
 
 #### Más información: Características sensoriales (1.3.3)     {#more-information-sensory-characteristics}
 
-* [Entender los criterios de éxito 1.3.3](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
-* [Cumplir los criterios de éxito 1.3.3](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)
+* [Entender los criterios de éxito 1.3.3](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html).
+* [Cumplir los criterios de éxito 1.3.3](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics).
 
 ### Distinguible (1.4)     {#distinguishable}
 
-[Directrices 1.4 Distinguible: Facilitar a los usuarios ver y oír el contenido incluyendo la posibilidad de separar el primer plano del fondo.](https://www.w3.org/TR/WCAG/#distinguishable)
+[Directriz 1.4 Distinguible: Facilita a los usuarios ver y oír el contenido, incluida la separación del primer plano del fondo](https://www.w3.org/TR/WCAG/#distinguishable).
 
 ### Uso del color (1.4.1)          {#use-of-color}
 
@@ -491,8 +491,8 @@ Si se utiliza el color como medio para transmitir información, se debería prop
 
 #### Más información: Uso del color (1.4.1) {#more-information-use-of-color}
 
-* [Entender los criterios de éxito 1.4.1](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)
-* [Cumplir los criterios de éxito 1.4.1](https://www.w3.org/WAI/WCAG21/quickref/#use-of-color)
+* [Entender los criterios de éxito 1.4.1](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html).
+* [Cumplir los criterios de éxito 1.4.1](https://www.w3.org/WAI/WCAG21/quickref/#use-of-color).
 
 ### Control de audio (1.4.2)  {#audio-control}
 
@@ -516,8 +516,8 @@ Siga las directrices de [Cómo cumplir los criterios de éxito 1.4.2](https://ww
 
 #### Más información: Control de audio (1.4.2) {#more-information-audio-control}
 
-* [Entender los criterios de éxito 1.4.2](https://www.w3.org/WAI/WCAG21/Understanding/audio-control.html)
-* [Cumplir los criterios de éxito 1.4.2](https://www.w3.org/WAI/WCAG21/quickref/#audio-control)
+* [Entender los criterios de éxito 1.4.2](https://www.w3.org/WAI/WCAG21/Understanding/audio-control.html).
+* [Cumplir los criterios de éxito 1.4.2](https://www.w3.org/WAI/WCAG21/quickref/#audio-control).
 
 ### Contraste (mínimo) (1.4.3)     {#contrast-minimum}
 
@@ -573,8 +573,8 @@ Si no se pueden cumplir los niveles de contraste recomendados, debe proporcionar
 
 #### Más información: Contraste (mínimo) (1.4.3)     {#more-information-contrast-minimum}
 
-* [Entender los criterios de éxito 1.4.3](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
-* [Cumplir los criterios de éxito 1.4.3](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)
+* [Entender los criterios de éxito 1.4.3](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html).
+* [Cumplir los criterios de éxito 1.4.3](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum).
 
 ### Cambiar el tamaño del texto (1.4.4)  {#resize-text}
 
@@ -592,8 +592,8 @@ Además de seguir las directrices de [Cumplir los criterios de éxito 1.4.4](htt
 
 #### Más información: Cambiar el tamaño del texto (1.4.4) {#more-information-resize-text}
 
-* [Entender los criterios de éxito 1.4.4](https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html)
-* [Cumplir los criterios de éxito 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text)
+* [Entender los criterios de éxito 1.4.4](https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html).
+* [Cumplir los criterios de éxito 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text).
 
 ### Imágenes de texto (1.4.5)          {#images-of-text}
 
@@ -617,16 +617,16 @@ Si es necesario utilizar imágenes de texto, utilice CSS para reemplazar las im�
 
 #### Más información: Imágenes de texto (1.4.5)          {#more-information-images-of-text}
 
-* [Entender los criterios de éxito 1.4.5](https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html)
-* [Cumplir los criterios de éxito 1.4.5](https://www.w3.org/WAI/WCAG21/quickref/#images-of-text)
+* [Entender los criterios de éxito 1.4.5](https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html).
+* [Cumplir los criterios de éxito 1.4.5](https://www.w3.org/WAI/WCAG21/quickref/#images-of-text).
 
 ## Principio 2: operable          {#principle-operable}
 
-[Principio 2: operable. Los componentes y la navegación de interfaz de usuario deben ser operables.](https://www.w3.org/TR/WCAG/#operable)
+[Principio 2: operable - Los componentes y la navegación de la interfaz de usuario deben ser operables](https://www.w3.org/TR/WCAG/#operable).
 
 ### Teclado accesible (2.1) {#keyboard-accessible}
 
-[Directriz 2.1 Teclado accesible: Haga que toda la funcionalidad esté disponible desde un teclado.](https://www.w3.org/TR/WCAG/#keyboard-accessible)
+[Directriz 2.1 Teclado accesible: haga que toda la funcionalidad esté disponible desde un teclado](https://www.w3.org/TR/WCAG/#keyboard-accessible).
 
 Se trata de garantizar que los usuarios puedan acceder a todas las funciones mediante un teclado.
 
@@ -646,8 +646,8 @@ Siga las directrices de [Cómo cumplir los criterios de éxito 2.1.1](https://ww
 
 #### Más información: Teclado (2.1.1) {#more-information-keyboard}
 
-* [Entender los criterios de éxito 2.1.1](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)
-* [Cumplir los criterios de éxito 2.1.1](https://www.w3.org/WAI/WCAG21/quickref/#keyboard)
+* [Entender los criterios de éxito 2.1.1](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html).
+* [Cumplir los criterios de éxito 2.1.1](https://www.w3.org/WAI/WCAG21/quickref/#keyboard).
 
 ### Sin trampas para el foco del teclado (2.1.2)  {#no-keyboard-trap}
 
@@ -667,12 +667,12 @@ Siga las directrices de [Cómo cumplir los criterios de éxito 2.1.2](https://ww
 
 #### Más información: Sin trampas para el foco del teclado (2.1.2) {#more-information-no-keyboard-trap}
 
-* [Entender los criterios de éxito 2.1.2](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)
-* [Cumplir los criterios de éxito 2.1.2](https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap)
+* [Entender los criterios de éxito 2.1.2](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html).
+* [Cumplir los criterios de éxito 2.1.2](https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap).
 
 ### Tiempo suficiente (2.2) {#enough-time}
 
-[Directrices 2.2 Tiempo suficiente: Proporcione a los usuarios tiempo suficiente para leer y usar el contenido.](https://www.w3.org/TR/WCAG/#enough-time)
+[Directrices 2.2 Tiempo suficiente: Proporcione a los usuarios tiempo suficiente para leer y usar el contenido](https://www.w3.org/TR/WCAG/#enough-time).
 
 Esto trata de garantizar que los usuarios tengan tiempo suficiente para leer y actuar.
 
@@ -692,8 +692,8 @@ Siga las directrices de [Cómo cumplir los criterios de éxito 2.2.1](https://ww
 
 #### Más información: Tiempo ajustable (2.2.1) {#more-information-timing-adjustable}
 
-* [Entender los criterios de éxito 2.2.1](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html)
-* [Cumplir los criterios de éxito 2.2.1](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable)
+* [Entender los criterios de éxito 2.2.1](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html).
+* [Cumplir los criterios de éxito 2.2.1](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable).
 
 ### Pausar, parar, ocultar (2.2.2)          {#pause-stop-hide}
 
@@ -726,12 +726,12 @@ Según la naturaleza del contenido, se puede aplicar una o varias de las siguien
 
 #### Más información: Pausar, parar, ocultar (2.2.2)     {#more-information-pause-stop-hide}
 
-* [Entender los criterios de éxito 2.2.2](https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html)
-* [Cumplir los criterios de éxito 2.2.2](https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide)
+* [Entender los criterios de éxito 2.2.2](https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html).
+* [Cumplir los criterios de éxito 2.2.2](https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide).
 
 ### Parpadeos y reacciones físicas (2.3) {#seizures-and-physcial-reactions}
 
-[Directrices 2.3 Parpadeos: No diseñar contenido de manera que se conozca que cause parpadeos o reacciones físicas.](https://www.w3.org/TR/WCAG/#seizures-and-physical-reactions)
+[Directrices 2.3 Parpadeos: no diseñe contenido de manera que cause parpadeos o reacciones físicas](https://www.w3.org/TR/WCAG/#seizures-and-physical-reactions).
 
 ### Tres parpadeos o por debajo del umbral (2.3.1)     {#three-flashes-or-below-threshold}
 
@@ -756,12 +756,12 @@ Siga estos pasos para asegurarse de que se aplican las siguientes técnicas:
 
 #### Más información: Tres parpadeos o por debajo de los límites (2.3.1) {#more-information-three-flashes-or-below-threshold}
 
-* [Entender los criterios de éxito 2.3.1](https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold.html)
-* [Cumplir los criterios de éxito 2.3.1](https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold)
+* [Entender los criterios de éxito 2.3.1](https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold.html).
+* [Cumplir los criterios de éxito 2.3.1](https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold).
 
 ### Navegable (2.4) {#navigable}
 
-[Directriz 2.4 navegable: Proporcione formas de ayudar a los usuarios a navegar, buscar contenido y determinar dónde se encuentran.](https://www.w3.org/TR/WCAG/#navigable)
+[Directriz 2.4 navegable: proporciona maneras de ayudar a los usuarios a navegar, buscar contenido y determinar dónde se encuentran](https://www.w3.org/TR/WCAG/#navigable).
 
 Esto garantiza los usuarios encuentren fácil y sencillo navegar por el contenido.
 
@@ -781,8 +781,8 @@ Siga las directrices de [Cómo cumplir los criterios de éxito 2.4.1](https://ww
 
 #### Más información: Omitir bloques (2.4.1) {#more-information-bypass-blocks}
 
-* [Entender los criterios de éxito 2.4.1](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html)
-* [Cumplir los criterios de éxito 2.4.1](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks)
+* [Entender los criterios de éxito 2.4.1](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html).
+* [Cumplir los criterios de éxito 2.4.1](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks).
 
 ### Página titulada (2.4.2)          {#page-titled}
 
@@ -802,8 +802,8 @@ También puede editar el título de página al editarla. Se puede acceder a él 
 
 #### Más información: Página titulada (2.4.2) {#more-information-page-titled}
 
-* [Entender los criterios de éxito 2.4.2](https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html)
-* [Cumplir los criterios de éxito 2.4.2](https://www.w3.org/WAI/WCAG21/quickref/#page-titled)
+* [Entender los criterios de éxito 2.4.2](https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html).
+* [Cumplir los criterios de éxito 2.4.2](https://www.w3.org/WAI/WCAG21/quickref/#page-titled).
 
 ### Orden de enfoque (2.4.3)  {#focus-order}
 
@@ -821,8 +821,8 @@ Siga las directrices de [Cómo cumplir los criterios de éxito 2.4.3](https://ww
 
 #### Más información: Orden de enfoque (2.4.3) {#more-information-focus-order}
 
-* [Entender los criterios de éxito 2.4.3](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html)
-* [Cumplir los criterios de éxito 2.4.3](https://www.w3.org/WAI/WCAG21/quickref/#focus-order)
+* [Entender los criterios de éxito 2.4.3](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html).
+* [Cumplir los criterios de éxito 2.4.3](https://www.w3.org/WAI/WCAG21/quickref/#focus-order).
 
 ### Objetivo del vínculo (en contexto) (2.4.4)                    {#link-purpose-in-context}
 
@@ -884,8 +884,8 @@ Alternativamente, los scripts se pueden usar para que se proporcione una cantida
 
 #### Más información: Objetivo del vínculo (en contexto) (2.4.4) {#more-information-link-purpose-in-context}
 
-* [Entender los criterios de éxito 2.4.4](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html)
-* [Cumplir los criterios de éxito 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context)
+* [Entender los criterios de éxito 2.4.4](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html).
+* [Cumplir los criterios de éxito 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
 
 <!--
 * [C7: Using CSS to hide a portion of the link text](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C7)
@@ -909,8 +909,8 @@ Siga las directrices de [Cómo cumplir los criterios de éxito 2.4.5](https://ww
 
 #### Más información: Múltiples formas (2.4.5) {#more-information-multiple-ways}
 
-* [Entender los criterios de éxito 2.4.5](https://www.w3.org/WAI/WCAG21/Understanding/multiple-ways.html)
-* [Cumplir los criterios de éxito 2.4.5](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways)
+* [Entender los criterios de éxito 2.4.5](https://www.w3.org/WAI/WCAG21/Understanding/multiple-ways.html).
+* [Cumplir los criterios de éxito 2.4.5](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways).
 
 ### Encabezados y etiquetas (2.4.6)  {#headings-and-labels}
 
@@ -928,8 +928,8 @@ Siga las directrices de [Cómo cumplir los criterios de éxito 2.4.6](https://ww
 
 #### Más información: Encabezados y etiquetas (2.4.6) {#more-information-headings-and-labels}
 
-* [Entender los criterios de éxito 2.4.6](https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html)
-* [Cumplir los criterios de éxito 2.4.6](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels)
+* [Entender los criterios de éxito 2.4.6](https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html).
+* [Cumplir los criterios de éxito 2.4.6](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels).
 
 ### Enfoque visible (2.4.7)  {#focus-visible}
 
@@ -956,11 +956,11 @@ Siga las directrices de [Cómo cumplir los criterios de éxito 2.4.7](https://ww
 
 ## Principio 3: comprensible          {#principle-understandable}
 
-[Principio 3: Comprensible: la información y el funcionamiento de la interfaz del usuario deben ser comprensibles.](https://www.w3.org/TR/WCAG/#understandable)
+[Principio 3: comprensible: la información y el funcionamiento de la interfaz de usuario deben ser comprensibles](https://www.w3.org/TR/WCAG/#understandable).
 
 ### Hacer que el contenido del texto sea legible y comprensible (3.1)          {#make-text-content-readable-and-understandable}
 
-[Directrices 3.1 Legible: hacer que el contenido del texto sea legible y comprensible.](https://www.w3.org/TR/WCAG/#readable)
+[Directriz 3.1 legible: haga que el contenido del texto sea legible y comprensible](https://www.w3.org/TR/WCAG/#readable).
 
 ### Idioma de la página (3.1.1)          {#language-of-page}
 
@@ -1043,7 +1043,7 @@ Para añadir el elemento “span” (extensión), con un idioma adecuado, puede 
 
 ### Predecible (3.2) {#predictable}
 
-[Directriz 3.2 Predecible: Hacer que las páginas web aparezcan y funcionen de manera predecible.](https://www.w3.org/TR/WCAG/#predictable)
+[Directriz 3.2 predecible: haga que las páginas web aparezcan y funcionen de manera predecible](https://www.w3.org/TR/WCAG/#predictable).
 
 Esto trata de garantizar que las páginas web tengan un aspecto y un funcionamiento coherentes.
 
@@ -1141,7 +1141,7 @@ Siga las directrices de [Cómo cumplir los criterios de éxito 3.2.4](https://ww
 
 ### Asistencia de entrada (3.3) {#input-assistance}
 
-[Directrices 3.3 Asistencia de la entrada: ayudar a los usuarios a evitar y corregir errores.](https://www.w3.org/TR/WCAG/#input-assistance)
+[Directrices 3.3 Asistencia de entrada: ayudar a los usuarios a evitar y corregir errores](https://www.w3.org/TR/WCAG/#input-assistance).
 
 ### Identificación de errores (3.3.1)  {#error-identification}
 
@@ -1275,11 +1275,11 @@ Siga las directrices de [Cómo cumplir los criterios de éxito 3.3.4](https://ww
 
 ## Principio 4: Sólido {#principle-robust}
 
-[Principio 4: Sólido. El contenido debe ser lo suficientemente sólido como para que lo interpreten una amplia variedad de agentes de usuario, incluidas las tecnologías de asistencia.](https://www.w3.org/TR/WCAG/#robust)
+[Principio 4: Sólido. El contenido debe ser lo suficientemente robusto como para que pueda ser interpretado por una amplia variedad de agentes de usuario, incluidas las tecnologías de asistencia](https://www.w3.org/TR/WCAG/#robust).
 
 ### Compatible (4.1) {#compatible}
 
-[Directrices 4.1 Compatible: Maximice la compatibilidad con los agentes de usuario actuales y futuros, incluidas las tecnologías de asistencia.](https://www.w3.org/TR/WCAG/#compatible)
+[Directrices 4.1 Compatible: Maximice la compatibilidad con los agentes de usuario actuales y futuros, incluidas las tecnologías de asistencia](https://www.w3.org/TR/WCAG/#compatible).
 
 Maximice la compatibilidad con los agentes de usuario actuales y futuros, incluidas las tecnologías de asistencia.
 

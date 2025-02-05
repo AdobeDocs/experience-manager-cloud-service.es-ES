@@ -4,13 +4,13 @@ description: Puede utilizar temáticas para aplicar estilo y proporcionar una id
 keywords: formularios adaptables que aplican estilo a los componentes principales uso de la temática en los componentes principales, aplicación de estilos a un formulario adaptable, personalización de temáticas
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 076ee3616ad56b4d463d93e407a9e7e67e54b4ac
-workflow-type: ht
+exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '2816'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
-
 
 # Utilizar temáticas para aplicar estilo a los formularios adaptables basados en componentes principales{#themes-for-af-using-core-components}
 
@@ -65,7 +65,7 @@ La personalización de una temática hace referencia al proceso de modificación
 
 * Familiarícese con la [configuración de una canalización en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#setup-pipeline) y cómo tener los conocimientos básicos para configurar una canalización ayuda a administrar e implementar de forma eficaz las personalizaciones de temas.
 * Obtenga información sobre cómo [configurar un usuario con la función colaborador](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=es). Si sabe cómo configurar un usuario con la función de colaborador, puede conceder los permisos necesarios para personalizar temáticas.
-* Instale la última versión de Apache Maven [.Apache Maven ](https://maven.apache.org/download.cgi) es una herramienta de automatización de compilaciones que se utiliza comúnmente en proyectos Java™. La instalación de la última versión garantiza que tenga las dependencias necesarias para la personalización de temáticas.
+* Instale la última versión de [Apache Maven](https://maven.apache.org/download.cgi). Apache Maven es una herramienta de automatización de compilaciones que se utiliza comúnmente en proyectos Java™. La instalación de la última versión garantiza que tenga las dependencias necesarias para la personalización de temáticas.
 * Instale un editor de texto sin formato. Por ejemplo, Microsoft® Visual Studio Code. Utilizar un editor de texto sin formato como Microsoft® Visual Studio Code proporciona un entorno fácil de usar para editar y modificar archivos de temas.
 
 ### Configurar su entorno
@@ -373,7 +373,7 @@ Ahora, inserte los cambios en el repositorio de temáticas de AEM Forms Cloud Se
 
 ##### 5.3. Ejecutar la canalización de front-end {#run-a-frontend-pipeline}
 
-La temática se implementa mediante la canalización front-end [.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=es). Para implementar una temática, siga estos pasos:
+El tema se implementa mediante la [canalización front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=es). Para implementar una temática, siga estos pasos:
 
 1. Inicie sesión en el repositorio de AEM Cloud Manager.
 1. Haga clic en el botón **[!UICONTROL Añadir]** en la sección **[!UICONTROL Canalizaciones]**.

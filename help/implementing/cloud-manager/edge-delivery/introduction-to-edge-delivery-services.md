@@ -4,10 +4,10 @@ description: Aprenda a enviar sus proyectos de Cloud Manager con Edge Delivery S
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0fb5476b4cff9e26971696bd8352181a71e7b3e4
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '766'
-ht-degree: 89%
+ht-degree: 98%
 
 ---
 
@@ -67,19 +67,19 @@ Se puede añadir Edge Delivery Services de varias formas diferentes, en función
 
 <!-- &#x2460; for "1" inside circle -->
 
-La **lista de tareas pendientes de Edge Delivery** en Cloud Manager es una lista de comprobación de tareas de incorporación diseñada para guiarle a través de la incorporación y administrar su sitio de Edge Delivery hasta [Go-Live](/help/journey-onboarding/go-live-checklist.md).
+La **lista de tareas pendientes de Edge Delivery** en Cloud Manager es una lista de comprobación de tareas de incorporación diseñada para guiarlo a través de la incorporación y administrar su sitio de Edge Delivery hasta [el lanzamiento](/help/journey-onboarding/go-live-checklist.md).
 
-![Lista de tareas pendientes del sitio de Edge Delivery en Cloud Manager](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+![Lista de tareas pendientes del sitio de Edge Delivery en Cloud Manager.](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | Tarea | Descripción |
 | --- | --- | --- |
 | 1 | Únase al canal de colaboración de productos | Al hacer clic en **Enviar solicitud ahora**, se envía una solicitud a Adobe para crear un canal para su compañía. Si el canal ya existe, se le reenviará al canal de su compañía. |
-| 2 | Complete los requisitos previos | Ver [tutorial de introducción](https://www.aem.live/developer/tutorial). |
+| 2 | Complete los requisitos previos | Consulte [Ver el tutorial de introducción](https://www.aem.live/developer/tutorial). |
 | 3 | Añadir el sitio de Edge Delivery | Consulte [Añadir un sitio de Edge Delivery](#eds-add-site). |
 | 4 | Añadir dominio | Consulte [Añadir un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 | 5 | Añadir certificado SSL | Consulte [Añadir certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
 | 6 | Configure la CDN de su sitio de Edge Delivery | Consulte [Añadir una configuración de CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md). |
-| 7 | Configurar validación push | Ver [Configuración de validación push para un sitio Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
+| 7 | Configuración de validación push | Ver [Configuración de validación push para un sitio Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 8 | Go-Live | Consulte [Lista de comprobación de lanzamiento](/help/edge/docs/go-live-checklist.md). |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)

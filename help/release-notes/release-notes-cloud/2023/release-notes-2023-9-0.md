@@ -4,10 +4,10 @@ description: Notas de la versión 2023.9.0 de la versión de  [!DNL Adobe Experi
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 79%
+ht-degree: 81%
 
 ---
 
@@ -28,7 +28,7 @@ En la siguiente sección se describen las notas de la versión de funciones de l
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] (2023.9.0) fue el viernes, 28 de septiembre de 2023. La siguiente versión con funcionalidades (2023.10.0) está planificada para el viernes, 26 de octubre de 2023.
+La fecha de lanzamiento de la versión de funcionalidad actual de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.9.0) fue el viernes, 28 de septiembre de 2023. La próxima versión con funcionalidades (2023.10.0) se planificó para el viernes, 26 de octubre de 2023.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
@@ -58,7 +58,7 @@ Ahora puede asignar un formulario de metadatos a una carpeta específica dentro 
 
 ### Nuevas funciones de la vista Administrador {#admin-view-features}
 
-* **Integrar AEM Assets as a Cloud Service con la creación basada en documentos para Edge Delivery Services**: integre AEM Assets con la creación basada en documentos para Edge Delivery Services para permitir que los autores de sitios web [utilicen imágenes disponibles en repositorios de AEM Assets al crear documentos en documentos de Microsoft Word o Google](/help/edge/using.md#integrate-assets-edge).
+* **Integrar AEM Assets as a Cloud Service con la creación basada en documentos para Edge Delivery Services**: integre AEM Assets con la creación basada en documentos para Edge Delivery Services para permitir que los autores de sitios web [utilicen imágenes disponibles en repositorios de AEM Assets al crear documentos en Microsoft Word o Google Docs](/help/edge/using.md#integrate-assets-edge).
 
 * **Extraer archivos ZIP**: Posibilidad de seleccionar archivos ZIP que se administran en el Experience Manager y [extraer los archivos directamente en el Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) sin descargarlos.
 
@@ -118,9 +118,9 @@ Ahora puede asignar un formulario de metadatos a una carpeta específica dentro 
 
 ### Nuevo comportamiento de almacenamiento en caché de CDN para parámetros de URL relacionados con campañas {#cache-url-params}
 
-Para los nuevos entornos, la CDN eliminará los parámetros de consulta relacionados con el marketing de forma predeterminada para aumentar el rendimiento de la campaña de marketing y las proporciones de visitas de la caché. Los entornos existentes no se ven afectados. [Más información.](/help/implementing/dispatcher/caching.md#marketing-parameters)
+Para los nuevos entornos, la CDN eliminará los parámetros de consulta relacionados con el marketing de forma predeterminada para aumentar el rendimiento de la campaña de marketing y las proporciones de visitas de la caché. Los entornos existentes no se ven afectados. [Más información](/help/implementing/dispatcher/caching.md#marketing-parameters).
 
-### Programa de adopción anticipada de Reglas de filtro de tráfico (incluidas las Reglas WAF) {#waf-early-adopter}
+### Programa de adopción anticipada de reglas de filtro de tráfico (incluidas las reglas de WAF) {#waf-early-adopter}
 
 Filtre el tráfico en la red de distribución de contenido (CDN) en función de lo siguiente:
 

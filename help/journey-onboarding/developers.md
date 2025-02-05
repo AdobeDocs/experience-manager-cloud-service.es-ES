@@ -4,21 +4,21 @@ description: Una vez que el administrador del sistema haya configurado los recur
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1397'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
 
 # Tareas del desarrollador y del administrador de implementación {#developer-deployment-manager}
 
-En esta parte opcional del [recorrido de incorporación,](overview.md) aprenderá cómo los desarrolladores y los administradores de implementación pueden acceder a Git para desarrollar aplicaciones y utilizar canalizaciones para implementarlas.
+En esta parte opcional del [recorrido de incorporación](overview.md), aprenderá cómo los desarrolladores y los administradores de implementación pueden acceder a Git para desarrollar aplicaciones y utilizar canalizaciones para implementarlas.
 
 ## La historia hasta ahora {#story-so-far}
 
-¡Ha recorrido un largo camino en su recorrido de incorporación! ¡Enhorabuena! El administrador del sistema ha completado el recorrido de incorporación, ha configurado los recursos de nube necesarios y otorgado acceso en el documento [Asignar perfiles de producto de AEM.](assign-profiles-aem.md)
+¡Ha recorrido un largo camino en su recorrido de incorporación! ¡Enhorabuena! El administrador del sistema ha completado el recorrido AEM de incorporación al configurar los recursos de nube necesarios y conceder acceso en el documento [Asignar perfiles de producto](assign-profiles-aem.md).
 
 En este punto, los desarrolladores y los administradores de implementación pueden empezar a crear sus propias aplicaciones, mientras que los usuarios de AEM pueden empezar a crear contenido. En este sentido, la incorporación es completa y es el momento de usar su nuevo sistema AEM as a Cloud Service, que ilustrará este documento.
 
@@ -136,7 +136,7 @@ Ahora que ha leído este documento, debería saber lo siguiente:
 
 Se ha puesto en marcha como desarrollador o administrador de implementación, no solo con conocimientos prácticos de Cloud Manager, sino también con entornos de trabajo, repositorios y canalizaciones. Pero hay más que aprender sobre las poderosas herramientas de CI/CD de AEM as a Cloud Service. Consulte la sección [Recursos adicionales](#additional-resources) para obtener más información.
 
-Si le interesa cómo acceden y usan AEM as a Cloud Service los autores de contenido, continúe con la parte final del recorrido de incorporación, [Tareas del usuario de AEM.](aem-users.md)
+AEM Si le interesa cómo acceden y utilizan los autores de contenido de as a Cloud Service, continúe con la parte final del recorrido AEM de incorporación, [Tareas del usuario](aem-users.md), que se encuentra en la parte superior de la página de inicio de la aplicación, que se encuentra en la parte superior de la página de inicio de la aplicación, que se encuentra en la parte superior de la página de inicio de la aplicación, y que se encuentra en la parte superior de la página de inicio de la página de inicio de la aplicación .
 
 >[!TIP]
 >

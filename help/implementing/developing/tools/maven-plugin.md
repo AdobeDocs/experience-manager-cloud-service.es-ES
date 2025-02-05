@@ -4,7 +4,7 @@ description: AEM Utilice el complemento Maven del paquete de contenido para impl
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d757c94475f257ee4b05092671ae5e6384b8342e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Utilice el complemento Maven del paquete de contenido de Adobe para integrar las tareas de implementación y administración de paquetes en sus proyectos Maven.
 
-AEM La implementación de los paquetes construidos en el paquete de contenido de Adobe AEM es realizada por el complemento Maven del paquete de contenido y permite la automatización de las tareas que se realizan normalmente usando el administrador de paquetes [:](/help/implementing/developing/tools/package-manager.md)
+AEM La implementación de los paquetes construidos para la creación de paquetes es realizada por el complemento Maven del paquete de contenido de Adobe AEM y permite la automatización de las tareas que se realizan normalmente utilizando [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md).
 
 * Cree nuevos paquetes a partir de los archivos del sistema de archivos.
 * AEM Instale y desinstale paquetes en el entorno de la aplicación de.
@@ -23,7 +23,7 @@ AEM La implementación de los paquetes construidos en el paquete de contenido de
 * AEM Obtenga una lista de los paquetes instalados en los paquetes de.
 * AEM Elimine un paquete de la lista de distribución de.
 
-Este documento detalla cómo utilizar Maven para administrar estas tareas. AEM Sin embargo, también es importante comprender [cómo se estructuran los proyectos de y sus paquetes.](#aem-project-structure)
+Este documento detalla cómo utilizar Maven para administrar estas tareas. AEM Sin embargo, también es importante comprender [cómo se estructuran los proyectos de y sus paquetes](#aem-project-structure).
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Este documento detalla cómo utilizar Maven para administrar estas tareas. AEM S
 
 >[!NOTE]
 >
->La creación del paquete **creation** ahora es propiedad del complemento Maven del paquete [Apache Jackrabbit FileVault.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
+>La creación del paquete **creation** ahora es propiedad del complemento [Apache Jackrabbit FileVault Package Maven](https://jackrabbit.apache.org/filevault-package-maven-plugin/).
 >
 >AEM En este artículo se describe la **implementación** de los paquetes construidos que se van a crear para que sean ejecutados por el complemento Maven del paquete de contenido de Adobe.
 
@@ -45,7 +45,7 @@ AEM as a Cloud Service AEM se adhiere a las prácticas recomendadas más recient
 
 ## Obtención del complemento Maven del paquete de contenido {#obtaining-the-content-package-maven-plugin}
 
-El complemento está disponible en el [Repositorio de Maven Central.](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public)
+El complemento está disponible en el [Repositorio de Maven Central](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public).
 
 ## Parámetros y objetivos del complemento Maven del paquete de contenido
 

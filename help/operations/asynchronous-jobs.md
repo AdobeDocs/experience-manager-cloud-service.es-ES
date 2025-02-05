@@ -4,10 +4,10 @@ description: Adobe Experience Manager optimiza el rendimiento completando asincr
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '854'
-ht-degree: 64%
+ht-degree: 60%
 
 ---
 
@@ -85,7 +85,7 @@ AEM ejecuta un trabajo de depuración todos los días a la 01:00 para eliminar l
 
 Puede modificar la programación del trabajo de depuración y la duración por la cual se conservan los detalles de los trabajos completados antes de que se eliminen. También puede configurar el número máximo de trabajos completados para los que se conservan los detalles en cualquier momento.
 
-1. AEM AEM Inicie sesión en la consola web de inicio rápido del Jar de inicio rápido del SDK de la en `https://<host>:<port>/system/console` como usuario administrador.
+1. AEM Inicie sesión como usuario administrador en la consola web de la aplicación de inicio rápido de SDK AEM de la plataforma de inicio de sesión de la plataforma de inicio de sesión de la plataforma de en `https://<host>:<port>/system/console`.
 1. Vaya a **OSGi** > **Configuración**
 1. Abra el trabajo **[!UICONTROL Trabajo programado de depuración de trabajos asincrónicos de Adobe Granite]**.
 1. Especifique:
@@ -101,9 +101,9 @@ Puede modificar la programación del trabajo de depuración y la duración por l
 
 Si el número de recursos o carpetas que se van a eliminar supera el número de umbral, la operación de eliminación se realiza de manera asincrónica.
 
-1. AEM AEM Inicie sesión en la consola web de inicio rápido del Jar de inicio rápido del SDK de la en `https://<host>:<port>/system/console` como usuario administrador.
+1. AEM Inicie sesión como usuario administrador en la consola web de la aplicación de inicio rápido de SDK AEM de la plataforma de inicio de sesión de la plataforma de inicio de sesión de la plataforma de en `https://<host>:<port>/system/console`.
 1. Vaya a **OSGi** > **Configuración**
-1. En la consola web, abra la  **[!UICONTROL Configuración de cola predeterminada del proceso asincrónico.]**
+1. En la consola web, abra la **[!UICONTROL Configuración de cola predeterminada de proceso asincrónico]**.
 1. En el cuadro **[!UICONTROL Umbral de número de recursos]**, especifique el número de umbral de recursos o carpetas para el procesamiento asincrónico de las operaciones de eliminación.
 
    ![Umbral de eliminación de recursos](assets/async-delete-threshold.png)
@@ -115,9 +115,9 @@ Si el número de recursos o carpetas que se van a eliminar supera el número de 
 
 Si el número de recursos, carpetas o referencias que se van a mover supera el número de umbral, la operación de movimiento se realiza de manera asincrónica.
 
-1. AEM AEM Inicie sesión en la consola web de inicio rápido del Jar de inicio rápido del SDK de la en `https://<host>:<port>/system/console` como usuario administrador.
+1. AEM Inicie sesión como usuario administrador en la consola web de la aplicación de inicio rápido de SDK AEM de la plataforma de inicio de sesión de la plataforma de inicio de sesión de la plataforma de en `https://<host>:<port>/system/console`.
 1. Vaya a **OSGi** > **Configuración**
-1. En la consola web, abra la **[!UICONTROL Configuración de procesamiento asincrónico de trabajos de operación de movimiento.]**
+1. En la consola web, abra la **[!UICONTROL Configuración de procesamiento asincrónico de trabajo de operación de movimiento]**.
 1. En el cuadro **[!UICONTROL Número de umbral de recursos/referencias]**, especifique el número de umbral de recursos, carpetas o referencias para el procesamiento asincrónico de operaciones de movimiento.
 
    ![Umbral de movimiento de recursos](assets/async-move-threshold.png)
@@ -127,9 +127,9 @@ Si el número de recursos, carpetas o referencias que se van a mover supera el n
 
 ### Configurar operaciones asincrónicas de MSM {#configuring-asynchronous-msm-operations}
 
-1. AEM AEM Inicie sesión en la consola web de inicio rápido del Jar de inicio rápido del SDK de la en `https://<host>:<port>/system/console` como usuario administrador.
+1. AEM Inicie sesión como usuario administrador en la consola web de la aplicación de inicio rápido de SDK AEM de la plataforma de inicio de sesión de la plataforma de inicio de sesión de la plataforma de en `https://<host>:<port>/system/console`.
 1. Vaya a **OSGi** > **Configuración**
-1. En la consola web, abra la **[!UICONTROL Configuración de procesamiento asincrónico de trabajo de operación de movimiento de página.]**
+1. En la consola web, abra la **[!UICONTROL Configuración de procesamiento asincrónico de trabajo de operación de movimiento de página]**.
 1. Marque la opción **Habilitar notificación por correo electrónico** para recibir notificaciones por correo electrónico para este estado del trabajo. Por ejemplo, éxito, error.
 
    ![Configuración de MSM](assets/async-msm.png)

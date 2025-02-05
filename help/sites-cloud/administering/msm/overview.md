@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2721'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -122,7 +122,7 @@ Se puede acceder directamente a MSM desde la IU mediante diversas opciones desde
 
 * **Creación de Live Copy** (**Sites**)
 
-   * MSM le permite [crear una Live Copy ad-hoc (única) de una página o rama individual de un sitio web.](creating-live-copies.md#creating-a-live-copy-of-a-page) Por ejemplo, duplicar una subrama para proporcionar información sobre una versión nueva o actualizada de un producto. Crear una Live Copy de esta manera:
+   * MSM le permite [crear una Live Copy ad-hoc (única) de una página o rama individual de un sitio web](creating-live-copies.md#creating-a-live-copy-of-a-page). Por ejemplo, duplicar una subrama para proporcionar información sobre una versión nueva o actualizada de un producto. Crear una Live Copy de esta manera:
       * Crea una Live Copy ad-hoc (no se requiere configuración de modelo).
       * Se puede utilizar para crear (inmediatamente) una Live Copy de cualquier página o rama.
       * Requiere **Sincronizar** (no proporciona el botón **Despliegue**).
@@ -137,11 +137,11 @@ Se puede acceder directamente a MSM desde la IU mediante diversas opciones desde
 
 * **Información general de Live Copy** (**Sites**)
 
-   * Esta consola le permite [ver y administrar su modelo y sus Live Copies.](live-copy-overview.md)
+   * Esta consola le permite [ver y administrar su modelo y sus Live Copies](live-copy-overview.md).
 
 * **Modelos** (**Herramientas** - **Sites**)
 
-   * Esta consola le permite [crear y administrar las configuraciones de modelo.](creating-live-copies.md#creating-a-blueprint-configuration)
+   * Esta consola le permite [crear y administrar sus configuraciones de modelo](creating-live-copies.md#creating-a-blueprint-configuration).
 
 >[!NOTE]
 >
@@ -293,7 +293,7 @@ Las configuraciones de despliegue se pueden reutilizar, de modo que más de una 
 
 ### Despliegue de conflictos {#rollout-conflicts}
 
-Los despliegues se pueden complicar, especialmente cuando los autores editan contenido tanto en el origen como en la Live Copy. Por lo tanto, es útil tener en cuenta cómo AEM gestiona los [conflictos que pueden producirse durante el despliegue.](rollout-conflicts.md)
+Los despliegues se pueden complicar, especialmente cuando los autores editan contenido tanto en el origen como en la Live Copy. AEM Por lo tanto, es útil tener en cuenta cómo gestiona el usuario los [conflictos que puedan producirse durante el despliegue](rollout-conflicts.md).
 
 ### Suspender y cancelar la herencia y sincronización {#suspending-and-cancelling-inheritance-and-synchronization}
 
@@ -329,7 +329,7 @@ Los siguientes pasos describen el procedimiento estándar de uso de MSM para reu
 
 1. Determine dónde debe [especificar las configuraciones de despliegue que se van a utilizar](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) y configúrelas según sea necesario.
 1. Si es necesario, [cree una configuración de modelo](creating-live-copies.md#creating-a-blueprint-configuration) que identifique el contenido de origen de Live Copy.
-1. [Cree una Live Copy.](creating-live-copies.md#creating-a-live-copy)
+1. [Crear una Live Copy](creating-live-copies.md#creating-a-live-copy).
 1. Realice los cambios necesarios en el contenido de origen. Debe utilizar el proceso normal de revisión y aprobación de contenido que ha establecido su organización.
 1. [Despliegue](creating-live-copies.md#rolling-out-a-blueprint) el modelo o [sincronice la Live Copy](creating-live-copies.md#synchronizing-a-live-copy) con los cambios.
 

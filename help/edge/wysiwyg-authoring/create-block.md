@@ -4,10 +4,10 @@ description: Aprenda a crear bloques instrumentados para utilizarlos con el edit
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1415'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -22,9 +22,9 @@ Esta guía proporciona instrucciones paso a paso para crear bloques instrumentad
 
 Esta guía requiere necesariamente conocimientos existentes sobre la creación WYSIWYG con proyectos de Edge Delivery Services, así como con el editor universal.  Antes de comenzar esta guía, ya debería tener acceso a Edge Delivery Services y estar familiarizado con sus conceptos básicos, incluidos los siguientes:
 
-* Ha completado el [Tutorial del servicio de envío de Edge.](/help/edge/developer/tutorial.md)
-* Tiene acceso a una [Zona protegida de AEM Cloud Service.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-* Ha [habilitado el Editor universal en el mismo entorno de zona protegida.](/help/implementing/universal-editor/getting-started.md)
+* Ha completado el [tutorial del servicio Edge Delivery](/help/edge/developer/tutorial.md).
+* Tiene acceso a una [zona protegida de AEM Cloud Service](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
+* Ha [habilitado el editor universal en el mismo entorno de zona protegida](/help/implementing/universal-editor/getting-started.md).
 * Ha completado la [Guía de introducción para desarrolladores para la creación WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 
 Esta guía se basa en el trabajo realizado en la guía [Guía de introducción para desarrolladores para la creación WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
@@ -155,7 +155,7 @@ El siguiente ejemplo de bloque de comillas sigue este enfoque.
 
 Ahora que el bloque de comillas básico está definido y comprometido con el proyecto de muestra, puede agregar un bloque de comillas a una página existente.
 
-1. En un explorador, inicie sesión en AEM as a Cloud Service. [Mediante la consola de Sites,](/help/sites-cloud/authoring/basic-handling.md) vaya al sitio que creó en la [Guía de introducción para desarrolladores para la creación WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) y seleccione una página.
+1. En un explorador, inicie sesión en AEM as a Cloud Service. [Con la consola Sites](/help/sites-cloud/authoring/basic-handling.md), vaya al sitio que creó en la guía de [Guía de introducción para desarrolladores de WYSIWYG para la creación con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) y seleccione una página.
 
    * En este caso, `index` se utiliza con fines ilustrativos.
 
@@ -281,7 +281,7 @@ Enhorabuena. Ahora tiene un bloque de cita completamente funcional y con estilo.
 
 ### Opciones de bloque {#block-options}
 
-Si necesita que un bloque tenga un aspecto o un comportamiento ligeramente diferente en función de determinadas circunstancias, pero no lo suficientemente diferente como para convertirse en un nuevo bloque en sí mismo, puede permitir que los autores elijan entre [opciones de bloque.](content-modeling.md#type-inference)
+Si necesita que un bloque tenga un aspecto o un comportamiento ligeramente distinto según determinadas circunstancias, pero no lo suficientemente distinto como para convertirse en un nuevo bloque en sí mismo, puede permitir que los autores elijan entre [opciones de bloque](content-modeling.md#type-inference).
 
 Añadiendo una propiedad `classes` al bloque, la propiedad se representa en el encabezado de tabla para bloques simples o como lista de valores para elementos en un bloque de contenedor.
 
@@ -343,4 +343,4 @@ Consulte el documento [Modelado de contenido para la creación WYSIWYG con proye
 
 >[!TIP]
 >
->Para obtener una guía completa sobre la creación de un nuevo proyecto de Edge Delivery Services que esté habilitado para la creación WYSIWYG con AEM as a Cloud Service como fuente de contenido, vea [este seminario web de GEM de AEM.](https://experienceleague.adobe.com/es/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Para ver un tutorial completo sobre la creación de un nuevo proyecto de Edge Delivery Services habilitado para la creación de WYSIWYG con AEM as a Cloud Service AEM como fuente de contenido, visite [este seminario web de GEMs ](https://experienceleague.adobe.com/es/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)en la red de GEMs de.

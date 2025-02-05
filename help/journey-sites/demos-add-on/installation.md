@@ -4,10 +4,10 @@ description: Obtenga información sobre Cloud Manager y cómo se utiliza para in
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '941'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -104,7 +104,7 @@ Ahora que ha completado esta parte del recorrido del complemento de las demostra
 * Comprenda cómo las canalizaciones ofrecen contenido y configuración a AEM.
 * Vea cómo las plantillas pueden crear sitios previamente rellenados con contenido de demostración con solo unos clics.
 
-Amplíe este conocimiento y continúe con su recorrido de creación rápida de sitios AEM con el documento [Crear un programa y una canalización,](create-program.md) donde aprenderá a configurar un nuevo programa y una canalización para implementar el complemento.
+AEM Aproveche este conocimiento y continúe con su recorrido de Creación rápida de sitios de la revisando [Crear un programa y una canalización](create-program.md), donde aprenderá a configurar un nuevo programa y una canalización para implementar el complemento.
 
 ## Recursos adicionales {#additional-resources}
 

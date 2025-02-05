@@ -4,9 +4,9 @@ description: Obtenga información acerca de la compatibilidad con fragmentos de 
 feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: 7386298ee83eef5693ce00077659bbc4a1a70d24
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1827'
 ht-degree: 14%
 
 ---
@@ -39,7 +39,7 @@ Obtenga información acerca de la compatibilidad con fragmentos de contenido en 
 
 >[!NOTE]
 >
->Para obtener la información más reciente sobre las API de Experience Manager, visita también [API de Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+>Para obtener la información más reciente sobre las API de Experience Manager, visita [API de Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 La [API de REST de Assets](/help/assets/mac-api-assets.md) permite a los desarrolladores que Adobe Experience Manager as a Cloud Service AEM accedan al contenido (almacenado en el archivo de comandos) directamente a través de la API HTTP, mediante las operaciones CRUD (Crear, Leer, Actualizar, Eliminar).
 

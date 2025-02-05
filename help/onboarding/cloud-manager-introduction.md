@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo Cloud Manager admite su proyecto d
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '864'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ El administrador del sistema es el responsable de configurar el equipo de Cloud 
 
 Siga estos pasos para navegar a Cloud Manager.
 
-1. Vaya a la página de inicio de sesión de Cloud Manager en [`https://my.cloudmanager.adobe.com`.](https://my.cloudmanager.adobe.com/).
+1. Vaya a la página de inicio de sesión de Cloud Manager en [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/).
 
 1. Seleccione la página **Programas y productos** de Cloud Manager para abrir la página **Información general**.
 

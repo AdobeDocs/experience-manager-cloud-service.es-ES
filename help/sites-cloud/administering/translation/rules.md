@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1288'
-ht-degree: 93%
+ht-degree: 88%
 
 ---
 
@@ -18,11 +18,11 @@ Las reglas de traducción identifican el contenido que se debe traducir para pá
 
 >[!TIP]
 >
->Si acaba de empezar a traducir contenido, consulte el [Recorrido de traducción de Sites,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante las poderosas herramientas de traducción de AEM, ideal para aquellos que no tengan experiencia con la traducción o con AEM.
+>Si no tiene experiencia en la traducción de contenido, consulte el [Recorrido de traducción de sitios](/help/journey-sites/translation/overview.md), que es una ruta guiada a través de la traducción del contenido de AEM Sites AEM AEM mediante herramientas de traducción potentes que se utilizan para traducir contenido. Es ideal para aquellos que no tienen experiencia en traducción o en traducción de sitios.
 
 ## Fragmentos de contenido y reglas de traducción {#content-fragments}
 
-Las reglas de traducción descritas en este documento solo se aplican a los fragmentos de contenido si la opción **Habilitar campos de modelo de contenido para la traducción** no se ha activado en el [nivel de configuración del marco trabajo de integración de traducción.](integration-framework.md#assets-configuration-properties)
+Las reglas de traducción descritas en este documento solo se aplican a los fragmentos de contenido si la opción **Habilitar campos de modelo de contenido para la traducción** no se ha activado en el [nivel de configuración del marco de trabajo de integración de traducción](integration-framework.md#assets-configuration-properties).
 
 Si la opción **Habilitar campos de modelo de contenido para la traducción** está activa, AEM usará el campo **Traducible** en [Modelos de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) para determinar si el campo se va a traducir y crea automáticamente reglas de traducción según corresponda. Esta opción reemplaza las reglas de traducción que haya creado y no requiere intervención ni pasos adicionales.
 

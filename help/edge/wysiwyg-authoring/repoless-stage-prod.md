@@ -4,7 +4,7 @@ description: Aprenda a configurar sitios independientes para los entornos de ens
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 2%
@@ -17,7 +17,7 @@ Aprenda a configurar sitios independientes para los entornos de ensayo y producc
 
 ## Información general {#overview}
 
-Es posible que desee configurar un sitio para el entorno de producción aparte del entorno de ensayo. Configurar un segundo sitio para una configuración de ensayo y producción independiente es similar a la configuración [ necesaria para la administración de varios sitios.](/help/edge/wysiwyg-authoring/repoless-msm.md) De hecho, se puede combinar con estructuras de sitio de MSM si es necesario.
+Es posible que desee configurar un sitio para el entorno de producción aparte del entorno de ensayo. Configurar un segundo sitio para una configuración de ensayo y producción independiente es similar a la [configuración necesaria para la administración de varios sitios](/help/edge/wysiwyg-authoring/repoless-msm.md). De hecho, se puede combinar con estructuras de sitio de MSM si es necesario.
 
 Este documento utiliza el ejemplo típico de entornos de ensayo y producción independientes. Puede crear entornos independientes para cualquier entorno que desee.
 
@@ -33,8 +33,8 @@ En este ejemplo, suponemos que ya se ha creado un sitio de producción para el p
 
 Para configurar un sitio de producción independiente hay que seguir dos pasos.
 
-1. [Cree nuevos sitios de Edge Delivery Services para el entorno de producción.](#create-edge-site)
-1. [AEM Actualice la configuración de nube en para el sitio de producción de.](#update-cloud-configuration)
+1. [Cree nuevos sitios de Edge Delivery Services para su entorno de producción](#create-edge-site).
+1. AEM [Actualice la configuración de nube en el sitio de producción en el que se encuentra el sitio](#update-cloud-configuration).
 
 ### Creación de nuevos sitios de Edge Delivery Services para el entorno de producción {#create-edge-site}
 

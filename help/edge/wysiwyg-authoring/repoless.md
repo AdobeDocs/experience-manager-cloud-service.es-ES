@@ -4,7 +4,7 @@ description: Si tiene muchos sitios similares que en su mayoría tienen el mismo
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: e7f7c169e7394536fc2968ecf1418cd095177679
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 2%
@@ -21,7 +21,7 @@ AEM De forma predeterminada, la está estrechamente ligada al repositorio de có
 
 AEM En lugar de crear varios repositorios de GitHub y ejecutar cada sitio desde un repositorio de GitHub dedicado mientras se mantienen sincronizados, admite la ejecución de varios sitios desde el mismo código base.
 
-Esta configuración simplificada, que elimina la necesidad de replicación de código, también se conoce como [&quot;repoless&quot;,](https://www.aem.live/docs/repoless) porque todos los sitios, excepto el primero, no necesitan un repositorio propio de GitHub.
+Esta configuración simplificada, que elimina la necesidad de replicación de código, también se conoce como [&quot;repoless&quot;](https://www.aem.live/docs/repoless), porque todos los sitios, excepto el primero, no necesitan un repositorio propio de GitHub.
 
 Si el proyecto requiere la flexibilidad de reutilización de código entre sitios, puede activar la función.
 
@@ -31,7 +31,7 @@ Independientemente de cuántos sitios desee crear en última instancia de forma 
 
 Para aprovechar esta función, asegúrese de haber hecho lo siguiente.
 
-* Su sitio ya está completamente configurado al seguir el documento [Guía de introducción para desarrolladores de WYSIWYG Authoring con Edge Delivery Services.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+* Su sitio ya está completamente configurado al seguir el documento [Guía de introducción para desarrolladores de WYSIWYG Authoring con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 * Está ejecutando AEM as a Cloud Service 2024.08 como mínimo.
 
 También deberá solicitar al Adobe que configure los siguientes elementos por usted. Póngase en contacto con a través del canal del Slack o plantee un problema de asistencia para solicitar el Adobe para realizar estos cambios:
@@ -70,7 +70,7 @@ Una vez que tenga el token de acceso, se puede pasar en el encabezado de las sol
 
 Debe crear una configuración de sitio y agregarla a la asignación de ruta.
 
-1. Cree una nueva página en la raíz del sitio y elija la plantilla [**Configuración**.](/help/edge/wysiwyg-authoring/tabular-data.md#other)
+1. Cree una nueva página en la raíz del sitio y elija la plantilla [**Configuración**](/help/edge/wysiwyg-authoring/tabular-data.md#other).
    * Puede dejar vacía la configuración con solo las columnas predefinidas `key` y `value`. Solo es necesario crearlo.
 1. Cree una asignación en la configuración pública a la configuración del sitio mediante un comando cURL similar al siguiente.
 

@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo restaurar el contenido de AEM as a
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: c7488b9a10704570c64eccb85b34f61664738b4e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 50%
+source-wordcount: '1338'
+ht-degree: 49%
 
 ---
 
@@ -31,7 +31,7 @@ AEM En ambos casos, la versión del código personalizado y la versión de la pe
 
 >[!TIP]
 >
->También es posible restaurar copias de seguridad [mediante la API pública.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
+>También es posible restaurar copias de seguridad [mediante la API pública](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/).
 
 >[!WARNING]
 >
@@ -43,10 +43,10 @@ AEM En ambos casos, la versión del código personalizado y la versión de la pe
 
 Antes de restaurar a una restauración de contenido completa, tenga en cuenta estas opciones para restaurar el contenido con mayor facilidad.
 
-* Si hay disponible un paquete para la ruta eliminada, instale de nuevo el paquete con el [Administrador de paquetes.](/help/implementing/developing/tools/package-manager.md)
-* Si la ruta eliminada era una página de Sites, use la función [Restaurar árbol.](/help/sites-cloud/authoring/sites-console/page-versions.md)
-* Si la ruta eliminada era una carpeta de recursos y los archivos originales están disponibles, vuelva a cargarlos a través de [la consola de Assets.](/help/assets/add-assets.md)
-* Si el contenido eliminado eran recursos, considere [restaurar versiones anteriores de los recursos.](/help/assets/manage-digital-assets.md)
+* Si hay un paquete disponible para la ruta eliminada, instálelo de nuevo con el [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md).
+* Si la ruta eliminada era una página de Sites, use la [función Restaurar árbol](/help/sites-cloud/authoring/sites-console/page-versions.md).
+* Si la ruta eliminada era una carpeta de recursos y los archivos originales están disponibles, vuelva a cargarlos a través de [la consola de Assets](/help/assets/add-assets.md).
+* Si el contenido eliminado eran recursos, considere [restaurar versiones anteriores de los recursos](/help/assets/manage-digital-assets.md).
 
 Si ninguna de las opciones anteriores funciona y el contenido de la ruta eliminada es significativo, realice una restauración de contenido como se detalla en las secciones siguientes.
 
@@ -93,7 +93,7 @@ En primer lugar, determine el lapso de tiempo del contenido que desea restaurar.
 
    ![Copias de seguridad disponibles](assets/backup-available.png)
 
-1. AEM Busque la copia de seguridad que desea restaurar mediante el icono de información para ver información relativa a la versión del código y la versión incluidos en dicha copia de seguridad y tenga en cuenta las implicaciones de una restauración cuando [elija la copia de seguridad.](#choosing-the-right-backup)
+1. AEM Busque la copia de seguridad que desea restaurar mediante el icono de información para ver información sobre la versión del código y el lanzamiento incluidos en dicha copia de seguridad y tenga en cuenta las implicaciones de una restauración cuando [elija la copia de seguridad](#choosing-the-right-backup).
 
    ![Información de copia de seguridad](assets/backup-info.png)
 

@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 solution: Experience Manager Sites
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 51%
@@ -91,4 +91,4 @@ Si se encuentra una página &quot;independiente&quot;, MSM elige cambiar el nomb
 
 Esta página independiente en un subárbol de Live Copy suele ser el resultado de una operación **Desasociar**, o bien la página anterior de Live Copy fue eliminada manualmente por un autor y luego recreada con el mismo nombre.
 
-Para evitarlo, usa la característica de Live Copy **Suspender** en lugar de **Desasociar**. Encontrará más detalles sobre la acción **Desasociar** en [este artículo.](creating-live-copies.md)
+Para evitarlo, usa la característica de Live Copy **Suspender** en lugar de **Desasociar**. Encontrará más detalles sobre la acción **Desasociar** en [este artículo](creating-live-copies.md).

@@ -4,21 +4,21 @@ description: Una vez que el administrador del sistema haya configurado los recur
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '576'
-ht-degree: 100%
+ht-degree: 81%
 
 ---
 
 
 # Tareas del usuario de AEM {#aem-user-tasks}
 
-En esta parte opcional del [recorrido de incorporación,](overview.md) aprenderá cómo los usuarios de AEM pueden acceder a AEM as a Cloud Service para crear contenido.
+En esta parte opcional del [recorrido AEM de incorporación](overview.md), aprenderá cómo los usuarios pueden acceder a AEM as a Cloud Service para crear contenido de autor de manera que se pueda acceder a él de manera más sencilla.
 
 ## La historia hasta ahora {#story-so-far}
 
-¡Ha recorrido un largo camino en su recorrido de incorporación! ¡Enhorabuena! El administrador del sistema ha completado el recorrido de incorporación, ha configurado los recursos de nube necesarios y otorgado acceso en el documento [Asignar perfiles de producto de AEM.](assign-profiles-aem.md)
+¡Ha recorrido un largo camino en su recorrido de incorporación! ¡Enhorabuena! El administrador del sistema ha completado el recorrido AEM de incorporación al configurar los recursos de nube necesarios y conceder acceso en el documento [Asignar perfiles de producto](assign-profiles-aem.md).
 
 En este punto, los usuarios de AEM pueden empezar a crear contenido. En este sentido, la incorporación es completa y es el momento de usar su nuevo sistema AEM as a Cloud Service, que ilustra este documento.
 
@@ -48,9 +48,9 @@ Antes de comenzar las tareas descritas en este documento como usuario de AEM, as
 
 Como autor de AEM, debe iniciar sesión en AEM para comenzar a crear contenido.
 
-1. Navegue hasta la página de inicio de sesión de Cloud Manager en [`https://my.cloudmanager.adobe.com`.](https://my.cloudmanager.adobe.com/)
+1. Vaya a la página de inicio de sesión de Cloud Manager en [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/).
 
-1. Seleccione el programa adecuado de la página **Programas y productos** de Cloud Manager para iniciar la página **Información general**. Pregunte al administrador del sistema si no está seguro a qué programa acceder.
+1. Seleccione el programa apropiado de la página **Programas y productos** de Cloud Manager para iniciar la página **Información general**. Pregunte al administrador del sistema si no está seguro a qué programa acceder.
 
 1. En la página **Información general** en Cloud Manager, haga clic en el vínculo de autor desde la tarjeta **Entornos**.
 
@@ -73,7 +73,7 @@ Ahora que ha leído este documento, debería saber cómo:
 
 ¡Enhorabuena! Ya está listo para crear y publicar contenido de AEM. Consulte la sección [Recursos adicionales](#additional-resources) para obtener más información sobre cómo crear contenido en AEM y cómo administrarlo.
 
-Si le interesa cómo crean y administran los desarrolladores y los administradores de implementación aplicaciones personalizadas para AEM as a Cloud Service, continúe con la segunda parte opcional del recorrido de incorporación, [Tareas del desarrollador de AEM.](developers.md)
+AEM Si le interesa cómo crean y administran los desarrolladores y los administradores de implementación aplicaciones personalizadas para Cloud Service, continúe con la segunda parte opcional del recorrido AEM de incorporación, [Tareas del desarrollador de la implementación](developers.md).
 
 >[!TIP]
 >

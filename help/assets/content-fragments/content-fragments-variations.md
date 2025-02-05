@@ -5,7 +5,7 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2518'
 ht-degree: 51%
@@ -105,7 +105,7 @@ El editor de texto de pantalla completa proporciona lo siguiente:
 
 También están disponibles las siguientes acciones (para todas los [formatos](#formats)) cuando el editor de pantalla completa (es decir, texto multilínea) está abierto:
 
-* Seleccione el [formato](#formats) ([Texto enriquecido](#rich-text), [Texto sin formato,](#plain-text) [Markdown](#markdown))
+* Seleccione el [formato](#formats) ([Texto enriquecido](#rich-text), [Texto sin formato](#plain-text), [Markdown](#markdown))
 
 * [Cargar contenido](#uploading-content)
 

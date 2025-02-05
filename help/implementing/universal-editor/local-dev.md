@@ -4,7 +4,7 @@ description: Descubra cómo puede ejecutar su propio servicio de editor universa
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: ccdb43c31e3ba1365a514bff696c9ec11dbbc21e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 2%
@@ -21,7 +21,7 @@ Descubra cómo puede ejecutar su propio servicio de editor universal para el des
 El servicio de editor universal es lo que une al editor universal y al sistema backend. Para poder desarrollar localmente para el editor universal, debe ejecutar una copia local del servicio de editor universal. Esto se debe a que:
 
 * El servicio de edición universal oficial de Adobe AEM está alojado a nivel global, y su instancia de local tendría que estar expuesta a Internet.
-* AEM Al desarrollar con un SDK de local, no se puede acceder al servicio de editor universal de Adobe desde Internet.
+* AEM Mientras se desarrolla con un SDK local de, no se puede acceder al servicio de editor universal de Adobe desde Internet.
 * AEM Si la instancia de la tiene restricciones de IP y el servicio de editor universal de Adobe no está en un intervalo de IP definido, puede alojarlo usted mismo.
 
 ## Casos de uso {#use-cases}
@@ -101,7 +101,7 @@ La siguiente tabla detalla estos y los valores adicionales disponibles.
 | `UES_SPLUNK_TOKEN` | Sí | Ninguno | Token de Splunk |
 | `UES_SPLUNK_INDEX` | Sí | Ninguno | Índice para escribir registros en |
 | `UES_SPLUNK_SOURCE` | Sí | `universal-editor-service` | Nombre del origen en los registros de splunk |
-| `UES_CORS_PRIVATE_NETWORK` | Sí | `false` | Habilitar el envío de encabezados CORS para permitir [red privada.](https://wicg.github.io/private-network-access/#private-network-request) necesario para los usuarios de Chrome versión 130+ |
+| `UES_CORS_PRIVATE_NETWORK` | Sí | `false` | Habilitar el envío de encabezados CORS para permitir [red privada](https://wicg.github.io/private-network-access/#private-network-request). Necesario para usuarios de Chrome versión 130 o posterior |
 
 >[!NOTE]
 >
@@ -155,6 +155,6 @@ Una vez configurado, debería ver que cada llamada de actualización de contenid
 Con el servicio de editor universal [ejecutándose localmente](#running-ue) y la página de contenido [instrumentada para usar el servicio local](#using-loca-ue), ahora puede iniciar el editor.
 
 1. Abra el explorador a `https://localhost:8000/ping`.
-1. Indique a su explorador que acepte [su certificado firmado automáticamente.](#ue-https)
+1. Indique a su explorador que acepte [su certificado firmado automáticamente](#ue-https).
 1. Una vez que el certificado autofirmado sea de confianza, puede editar la página mediante el servicio de editor universal local.
 

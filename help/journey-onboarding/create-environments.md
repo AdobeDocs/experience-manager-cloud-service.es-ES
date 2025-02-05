@@ -4,20 +4,20 @@ description: Aprenda a utilizar Cloud Manager para crear sus primeros entornos.
 role: Admin, User, Developer
 exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
 feature: Onboarding
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '725'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
 # Crear entornos {#create-environments}
 
-En esta parte del [recorrido de incorporación,](overview.md) aprenderá a utilizar Cloud Manager para crear sus primeros entornos.
+En esta parte del [recorrido de incorporación](overview.md), aprenderá a utilizar Cloud Manager para crear sus primeros entornos.
 
 ## Objetivo {#objective}
 
-Después de leer el documento anterior en este recorrido de incorporación, [Creación de programas,](create-program.md) ahora tiene su propio programa de Cloud Manager. Ahora puede aprender a utilizar Cloud Manager para crear sus primeros entornos para ese programa.
+Después de leer el documento anterior de este recorrido de incorporación, [Creación de programas](create-program.md), ahora tiene su propio programa de Cloud Manager. Ahora puede aprender a utilizar Cloud Manager para crear sus primeros entornos para ese programa.
 
 Después de leer este documento, debería poder hacer lo siguiente:
 

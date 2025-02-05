@@ -4,20 +4,20 @@ description: Obtenga información sobre cómo acceder a Cloud Manager para confi
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1040'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
 # Acceder a Cloud Manager {#cloud-resources}
 
-En esta parte del [recorrido de incorporación,](overview.md) aprenderá a acceder a Cloud Manager para poder configurar sus recursos de proyecto.
+En esta parte del [recorrido de incorporación](overview.md), aprenderá a acceder a Cloud Manager para configurar los recursos de su proyecto.
 
 ## Objetivo {#objective}
 
-En el artículo anterior de este recorrido de incorporación, [Asignar integrantes del equipo a perfiles de producto de Cloud Manager,](assign-profiles-cloud-manager.md) ha concedido a su equipo de AEMaaCS las funciones adecuadas. Ahora aprenda a acceder a Cloud Manager para poder configurar los recursos de su proyecto que utilizará su equipo.
+En el artículo anterior de este recorrido de incorporación, [Asignación de integrantes del equipo a perfiles de producto de Cloud Manager](assign-profiles-cloud-manager.md), usted otorgó a su equipo de AEMaaCS las funciones adecuadas. Ahora aprenda a acceder a Cloud Manager para poder configurar los recursos de su proyecto que utilizará su equipo.
 
 Desde que ha completado el paso anterior en este recorrido, su equipo puede acceder a Cloud Manager. Cloud Manager se utiliza para crear y administrar los recursos de sus proyectos, como programas y entornos.
 
@@ -40,7 +40,7 @@ Antes de los integrantes del equipo que usted asignó a la función **Propietari
 
 1. Asegúrese de que, como administrador del sistema, tiene la función **Propietario empresarial** asignada.
 
-   * Regrese al paso anterior de este recorrido, [Asignar integrantes del equipo a perfiles de producto de Cloud Manager,](assign-profiles-cloud-manager.md) para obtener más información sobre cómo asignar la función **Propietario empresarial** al administrador del sistema si aún no lo ha hecho.
+   * Regrese al paso anterior de este recorrido, [Asignar integrantes del equipo a perfiles de producto de Cloud Manager](assign-profiles-cloud-manager.md), para obtener más información sobre cómo asignar la función **Propietario empresarial** al administrador del sistema.
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y aparecerá la página de aterrizaje normal.
 

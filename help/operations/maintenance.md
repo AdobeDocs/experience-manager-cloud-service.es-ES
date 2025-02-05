@@ -4,7 +4,7 @@ description: Obtenga información sobre las tareas de mantenimiento en AEM as a 
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 3692cf1b14fda80f35eb34583fbbf6b256a89917
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2043'
 ht-degree: 31%
@@ -267,7 +267,7 @@ Tenga en cuenta que para que la configuración sea válida:
 * todas las propiedades deben estar definidas. No hay valores predeterminados heredados.
 * se deben respetar los tipos (enteros, cadenas, booleanos, etc.) de las tablas de propiedades siguientes.
 
-**4**: cree una canalización de configuración en Cloud Manager, tal como se describe en el artículo [canalización de configuración.](/help/operations/config-pipeline.md#managing-in-cloud-manager)
+**4**: cree una canalización de configuración en Cloud Manager, tal como se describe en el artículo [canalización de configuración](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 ### Depuración de la versión {#version-purge}
 

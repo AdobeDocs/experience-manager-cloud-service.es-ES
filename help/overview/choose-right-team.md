@@ -4,10 +4,10 @@ description: Aprenda a elegir a las personas adecuadas y asignarlas a las funcio
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -76,7 +76,7 @@ Ahora que sabe qué funciones son necesarias, consulte el gráfico siguiente par
 
 <br>
 
-![Gráfico de barras horizontales que muestra las funciones ficticias y su nivel de participación en el equipo de AEM Assets.](/help/overview/assets/team_involvement2.png)
+![Gráfico de barras horizontales que muestra los roles ficticios y su nivel de participación en el equipo de AEM Assets](/help/overview/assets/team_involvement2.png).
 
 >[!TIP]
 >

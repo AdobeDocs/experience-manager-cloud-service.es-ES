@@ -4,7 +4,7 @@ description: Monitorización de infraestructura y servicios en AEM as a Cloud Se
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
 feature: Operations
 role: Admin
-source-git-commit: c7488b9a10704570c64eccb85b34f61664738b4e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 5%
@@ -29,7 +29,7 @@ La disponibilidad externa consta de dos partes: Service Edge y Monitorización p
 
 ### Service Edge {#service-edge}
 
-La disponibilidad de todos los entornos de AEM as a Cloud Service se supervisa. Sin embargo, la monitorización de Service Edge solo se configura para entornos de producción y las métricas se utilizan para calcular el SLA del cliente. Tiene en cuenta el tiempo de ejecución del entorno y la CDN de AEM as a Cloud Service. Service Edge Monitoring emplea cinco ubicaciones distintas cercanas a la región elegida y comprueba periódicamente la disponibilidad. Déclencheur La indisponibilidad de un sitio avisa y pone en contacto a los equipos y procesos de asistencia a petición de los Adobes.
+La disponibilidad de todos los entornos de AEM as a Cloud Service se supervisa. Sin embargo, la Monitorización de Service Edge solo se configura para entornos de producción y las métricas se utilizan para calcular el SLA del cliente. Tiene en cuenta el tiempo de ejecución del entorno y la CDN de AEM as a Cloud Service. Service Edge Monitoring emplea cinco ubicaciones distintas cercanas a la región elegida y comprueba periódicamente la disponibilidad. Déclencheur La indisponibilidad de un sitio avisa y pone en contacto a los equipos y procesos de asistencia a petición de los Adobes.
 
 ### Monitorización personalizada {#custom-monitoring}
 
@@ -37,7 +37,7 @@ Con la supervisión personalizada, los clientes pueden, opcionalmente, proporcio
 
 >[!NOTE]
 >
-> Esta funcionalidad solo se ofrece para entornos de producción y clientes con [Soporte avanzado en la nube.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) Si tiene alguna pregunta, comuníquese con el equipo de la cuenta de Adobe.
+> Esta funcionalidad solo se ofrece para entornos de producción y clientes con [Soporte avanzado en la nube](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons). Si tiene alguna pregunta, póngase en contacto con el equipo de su cuenta de Adobe.
 
 ## Monitorización del módulo interno {#module-monitoring}
 

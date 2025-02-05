@@ -5,16 +5,16 @@ exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
 # Obtenga más información acerca del desarrollo de CMS sin encabezado {#learn-about}
 
-En esta parte del [recorrido para desarrolladores sin encabezado de AEM,](overview.md) aprenda sobre la tecnología sin encabezado y por qué la utilizaría.
+AEM En esta parte del [Recorrido para desarrolladores sin encabezado](overview.md), aprenda acerca de la tecnología sin encabezado y por qué debería utilizarla.
 
 ## Objetivo {#objective}
 
@@ -127,9 +127,9 @@ Aproveche este conocimiento y continúe su recorrido de contenido sin encabezado
 
 ## Recursos adicionales {#additional-resources}
 
-Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo de contenido sin encabezado revisando el documento [Introducción a AEM Headless as a Cloud Service,](getting-started.md) los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido.
+Aunque se recomienda pasar a la siguiente parte del recorrido AEM as a Cloud Service de desarrollo sin encabezado revisando el documento [Introducción al desarrollo sin encabezado ](getting-started.md), los siguientes son algunos recursos opcionales extra. Profundizan en varios conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido sin encabezado.
 
-* [Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md), comprender la estructura de AEM as a Cloud Service
+* [Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md): comprender la estructura de AEM as a Cloud Service.
 * Una [Introducción a AEM como CMS sin encabezado](/help/headless/introduction.md)
 * El [Portal para desarrolladores de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
 * [Tutoriales de contenido sin encabezado de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es): utilice estos tutoriales prácticos para explorar cómo utilizar las distintas opciones para enviar contenido a puntos de conexión sin encabezado con AEM y elegir el más adecuado para usted.

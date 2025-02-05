@@ -4,10 +4,10 @@ description: Obtenga información acerca de los aspectos básicos y las práctic
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: 1ad144fb630eca51f2004300c71d75f627cf9977
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3440'
-ht-degree: 95%
+ht-degree: 93%
 
 ---
 
@@ -112,7 +112,7 @@ Después de cambiar a una nueva versión de la aplicación:
    * Configuración según el contexto (cualquier elemento en `/conf`) (agregar, modificar, eliminar)
    * Scripts (los paquetes pueden activar Instalar vínculos en varias etapas del proceso de instalación del paquete). Consulte la [documentación de Jackrabbit Filevault](https://jackrabbit.apache.org/filevault/installhooks.html) acerca de instalar vínculos. Tenga en cuenta que CS de AEM actualmente utiliza la versión 3.4.0 de Filevault, que limita instalar vínculos a usuarios que son administradores, usuarios del sistema y miembros del grupo de administradores.
 
-Es posible limitar la instalación de contenido mutable a la creación o publicación incrustando paquetes en una carpeta install.author o install.publish en `/apps`. La reestructuración para reflejar esta separación se llevó a cabo en AEM 6.5 y se puede encontrar información detallada sobre la reestructuración del proyecto recomendado en la [documentación de AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=es)
+Es posible limitar la instalación de contenido mutable a la creación o publicación incrustando paquetes en una carpeta install.author o install.publish en `/apps`. AEM AEM La reestructuración para reflejar esta separación se llevó a cabo en la versión 6.5 de la y los detalles sobre la reestructuración recomendada del proyecto se encuentran en la [documentación de la versión 6.5 del proyecto](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=es).
 
 >[!NOTE]
 >Los paquetes de contenido se implementan en todos los tipos de entorno (des., fase, prod.). No es posible limitar la implementación a un entorno específico. Esta limitación se aplica para garantizar la opción de una ejecución de prueba de ejecución automatizada. El contenido específico de un entorno requiere una instalación manual mediante el [administrador de paquetes](/help/implementing/developing/tools/package-manager.md).
@@ -121,7 +121,7 @@ Además, no hay ningún mecanismo para revertir los cambios del paquete de conte
 
 Cualquier paquete de terceros incluido debe validarse como compatible con AEM as a Cloud Service; de lo contrario, su inclusión dará como resultado un error de implementación.
 
-Como se ha mencionado anteriormente, los clientes con bases de código existentes deben ajustarse al ejercicio de reestructuración del repositorio que requieren los cambios de repositorios de la versión 6.5 descritos en la [documentación de AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=es)
+AEM Como se mencionó anteriormente, los clientes con bases de código existentes deben ajustarse al ejercicio de reestructuración de repositorios necesario por los cambios de repositorio de 6.5 descritos en la [documentación de 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=es).
 
 ## RepoInit {#repoinit}
 

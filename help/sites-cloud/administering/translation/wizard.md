@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '270'
-ht-degree: 59%
+ht-degree: 46%
 
 ---
 
@@ -18,7 +18,7 @@ El Asistente para copia de idioma es una experiencia guiada para crear e instrum
 
 >[!TIP]
 >
->Si acaba de empezar a traducir contenido, consulte nuestro [Recorrido de traducción de Sites,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante las poderosas herramientas de traducción de AEM, ideal para aquellos que no tengan experiencia con la traducción o con AEM.
+>Si no tiene experiencia en la traducción de contenido, consulte el [Recorrido de traducción de sitios](/help/journey-sites/translation/overview.md), que es una ruta guiada a través de la traducción del contenido de AEM Sites AEM AEM mediante herramientas de traducción potentes que se utilizan para traducir contenido. Es ideal para aquellos que no tienen experiencia en traducción o en traducción de sitios.
 
 >[!NOTE]
 >

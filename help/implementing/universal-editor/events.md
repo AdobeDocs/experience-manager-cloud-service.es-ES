@@ -4,7 +4,7 @@ description: Obtenga información sobre los diferentes eventos que envía el edi
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 2%
@@ -27,7 +27,7 @@ Todos los eventos siguen una convención de nombres.
 
 Por ejemplo, `aue:content-update` y `aue:ui-select`
 
-Los eventos incluyen la carga útil de la solicitud y la respuesta y se activan una vez que la llamada correspondiente se realiza correctamente. Para obtener más información acerca de las llamadas y ejemplos de sus cargas útiles, consulte el documento [Llamadas al editor universal.](/help/implementing/universal-editor/calls.md)
+Los eventos incluyen la carga útil de la solicitud y la respuesta y se activan una vez que la llamada correspondiente se realiza correctamente. Para obtener más información acerca de las llamadas y ejemplos de sus cargas útiles, consulte el documento [Llamadas al editor universal](/help/implementing/universal-editor/calls.md).
 
 ## Eventos de actualización de contenido {#content-events}
 

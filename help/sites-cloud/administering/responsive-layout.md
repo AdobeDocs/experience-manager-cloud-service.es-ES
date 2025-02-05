@@ -5,7 +5,7 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 3%
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # Configuración del contenedor y el modo de diseño {#configuring-layout-container-and-layout-mode}
 
-[Diseño adaptable](/help/sites-cloud/authoring/page-editor/responsive-layout.md) es un mecanismo para realizar [diseño web adaptable.](https://en.wikipedia.org/wiki/Responsive_web_design): esto permite al autor del contenido crear páginas web con un diseño y dimensiones dependientes de los dispositivos que utilizan sus usuarios.
+[Diseño interactivo](/help/sites-cloud/authoring/page-editor/responsive-layout.md) es un mecanismo para realizar [diseño web interactivo](https://en.wikipedia.org/wiki/Responsive_web_design). Esto permite al autor del contenido crear páginas web con un diseño y dimensiones dependientes de los dispositivos que utilizan los usuarios.
 
 AEM realiza un diseño interactivo para sus páginas mediante una combinación de diferentes mecanismos:
 
@@ -228,4 +228,4 @@ Para permitir que los autores agreguen más cuadrículas adaptables a las págin
 
 ### Configuración de la cuadrícula del contenedor de diseño {#configure-the-grid-of-the-layout-container}
 
-Puede configurar el número de columnas disponibles para cada instancia específica del contenedor de diseño [editando las plantillas de página.](/help/sites-cloud/authoring/page-editor/templates.md)
+Puede configurar el número de columnas disponibles para cada instancia específica del contenedor de diseño [editando las plantillas de página](/help/sites-cloud/authoring/page-editor/templates.md).

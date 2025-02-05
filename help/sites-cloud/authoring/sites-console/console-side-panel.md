@@ -5,7 +5,7 @@ exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 23%
@@ -108,11 +108,11 @@ Seleccione el tipo de referencia adecuado para obtener más información. En det
 
 ## Sitio {#site}
 
-La vista **Sitio** del panel lateral muestra detalles de los sitios [creados con una plantilla de sitio.](/help/sites-cloud/administering/site-creation/create-site.md)
+La vista **Sitio** del panel lateral muestra detalles de los sitios [creados con una plantilla de sitio](/help/sites-cloud/administering/site-creation/create-site.md).
 
 ![Panel del sitio](assets/console-side-panel-site-paenl.png)
 
-Consulte el documento [Uso del panel del sitio para administrar el tema del sitio](/help/sites-cloud/administering/site-creation/site-rail.md) para obtener más información sobre cómo usar el panel para administrar el tema [del sitio.](/help/sites-cloud/administering/site-creation/site-themes.md).
+Consulte el documento [Uso del panel del sitio para administrar el tema del sitio](/help/sites-cloud/administering/site-creation/site-rail.md) para obtener más información sobre cómo puede usar el panel para administrar el [tema del sitio](/help/sites-cloud/administering/site-creation/site-themes.md).
 
 Si todavía no ha configurado la canalización front-end para habilitar la creación de sitios basados en temas, el panel lateral ofrecerá esa opción.
 
@@ -120,7 +120,7 @@ Si todavía no ha configurado la canalización front-end para habilitar la creac
 
 >[!TIP]
 >
->Puede encontrar una descripción completa del proceso de crear un sitio a partir de una plantilla y personalizar su tema en el [Recorrido de creación rápida de sitios.](/help/journey-sites/quick-site/overview.md)
+>Puede encontrar una descripción completa del proceso de crear un sitio a partir de una plantilla y personalizar su tema en el [Recorrido de creación rápida de sitios](/help/journey-sites/quick-site/overview.md).
 
 ## Filter {#filter}
 

@@ -4,20 +4,20 @@ description: Antes de iniciar sesión en AEMaaCS, es útil conocer parte de la t
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
 # Terminología de AEM as a Cloud Service {#terminology}
 
-En esta parte del [recorrido de incorporación,](overview.md) aprenderá parte de la terminología de AEM as a Cloud Service y su estructura básica.
+En esta parte del [recorrido de incorporación](overview.md), aprenderá parte de la terminología de AEM as a Cloud Service y su estructura básica.
 
 ## Objetivo {#objective}
 
-Ahora que comprende lo que ha llevado al proceso de incorporación al leer el documento [Preparar la incorporación,](preparation.md) es útil conocer parte de la terminología del sistema y su estructura básica antes de iniciar sesión.
+Ahora que comprende lo que ha llevado al proceso de incorporación al leer el documento [Preparación para la incorporación](preparation.md), es útil conocer parte de la terminología del sistema y su estructura básica antes de iniciar sesión.
 
 AEM as a Cloud Service es una herramienta potente y flexible y para utilizar cualquier herramienta, debe estar familiarizado con su organización, la terminología y el lenguaje que se usa para describirla. Este documento resume algunos términos clave que debe comprender antes de comenzar a utilizar el sistema.
 

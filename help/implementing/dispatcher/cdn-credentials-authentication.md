@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo configurar las credenciales y la a
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: d6484393410d32f348648e13ad176ef5136752f2
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1497'
 ht-degree: 4%
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # Configuración de las credenciales y la autenticación de CDN {#cdn-credentials-authentication}
 
-La CDN proporcionada por la Adobe tiene varias funciones y servicios, algunos de los cuales dependen de las credenciales y la autenticación para garantizar un nivel adecuado de seguridad empresarial. Al declarar reglas en un archivo de configuración implementado mediante la canalización de configuración [config de Cloud Manager,](/help/operations/config-pipeline.md) los clientes pueden configurar, en forma de autoservicio, lo siguiente:
+La CDN proporcionada por la Adobe tiene varias funciones y servicios, algunos de los cuales dependen de las credenciales y la autenticación para garantizar un nivel adecuado de seguridad empresarial. Al declarar reglas en un archivo de configuración implementado mediante la [canalización de configuración](/help/operations/config-pipeline.md) de Cloud Manager, los clientes pueden configurar, en modo de autoservicio, lo siguiente:
 
 * AEM El valor del encabezado HTTP X--Edge-Key utilizado por la CDN de Adobe para validar solicitudes procedentes de una CDN administrada por el cliente.
 * El token de API utilizado para purgar recursos en la caché de CDN.

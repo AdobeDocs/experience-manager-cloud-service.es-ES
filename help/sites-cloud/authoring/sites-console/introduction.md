@@ -5,9 +5,9 @@ exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '1625'
 ht-degree: 45%
 
 ---
@@ -45,7 +45,7 @@ Las opciones presentadas dependen de la consola actual. Por ejemplo, en **Sitios
 
 ![Ejemplo de selector de panel lateral](assets/sites-console-side-panel-selector.png)
 
-Para obtener más información acerca del panel lateral, consulte el documento [Panel lateral de la consola Sites.](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
+Para obtener más información sobre el panel lateral, consulte [Panel lateral de la consola Sites](/help/sites-cloud/authoring/sites-console/console-side-panel.md).
 
 ### Rutas de exploración {#breadcrumbs}
 
@@ -194,7 +194,7 @@ La vista de lista proporciona información para cada recurso del nivel actual de
 ![Vista de lista](assets/sites-console-list-view.png)
 
 * Puede navegar hacia abajo en el árbol tocando o haciendo clic en el nombre del recurso, y hacia arriba utilizando las [rutas de exploración en el encabezado](#the-header).
-* Para seleccionar fácilmente todos los elementos de la lista, use la casilla de verificación [**Seleccionar todo** de la barra de herramientas.](#select-all)
+* Para seleccionar fácilmente todos los elementos de la lista, use la casilla de verificación [**Seleccionar todo** de la barra de herramientas](#select-all).
 
 * Seleccione las columnas a mostrar mediante la opción **Ajustes de visualización**, que se encuentra debajo del botón Vistas. Las siguientes columnas están disponibles para su visualización:
 

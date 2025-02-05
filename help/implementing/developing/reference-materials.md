@@ -4,7 +4,7 @@ description: AEM Tiene API amplias y potentes que puede utilizar para su proyect
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 4182374ea9d603ed53e75511d34fdfcf69829200
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 5%
@@ -23,7 +23,7 @@ AEM Las siguientes API son fundamentales para la.
 |---|---|
 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Abstracciones de productos, como páginas, recursos, flujos de trabajo, etc. |
 | [IU de Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Pila web abierta de Adobe que proporciona varios componentes esenciales (los materiales de Granite 6.5 se aplican a AEMaaCS) |
-| [IU de Coral](https://opensource.adobe.com/coral-spectrum/documentation/) | Estilo visual del Adobe para las IU de la nube, diseñado para proporcionar coherencia en la experiencia del usuario |
+| [IU de Coral](https://opensource.adobe.com/coral-spectrum/documentation/) | Estilo visual de Adobe para las IU de la nube, diseñado para proporcionar coherencia en la experiencia del usuario |
 
 <!---
 |Editor core JavaScript API reference|Provides all the base objects and concepts to support authoring of content resources|
@@ -59,7 +59,7 @@ AEM Si proporciona una API, la prefiere en lugar de Sling, JCR y OSGi. AEM Si no
 
 >[!TIP]
 >
->Para obtener detalles sobre estas directrices, consulte el documento [Comprender las prácticas recomendadas de la API de Java.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+>Para obtener más información sobre estas directrices, consulte el documento [Comprender las prácticas recomendadas de la API de Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html).
 
 ## AEM API y servicios de envío y administración de contenido {#delivery-apis}
 

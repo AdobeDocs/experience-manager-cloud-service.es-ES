@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo anular la página de error predete
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 137ea509de353f9f800f0b64bb8f2f6375e7d83d
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Configuración de páginas de error de CDN {#cdn-error-pages}
 
-En el improbable caso de que [CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) administrado por el Adobe AEM no pueda alcanzar el origen de la, la CDN proporciona de forma predeterminada una página de error genérica sin marca que indica que no se puede llegar al servidor. Puede anular la página de error predeterminada alojando archivos estáticos en un almacenamiento autoalojado como Amazon S3 o Azure Blob Storage y haciendo referencia a ellos en un archivo de configuración que se implementa mediante la canalización de configuración de Cloud Manager [config.](/help/operations/config-pipeline.md#managing-in-cloud-manager)
+En el improbable caso de que [CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) administrado por el Adobe AEM no pueda alcanzar el origen de la, la CDN proporciona de forma predeterminada una página de error genérica sin marca que indica que no se puede llegar al servidor. Puede anular la página de error predeterminada alojando archivos estáticos en un almacenamiento autoalojado como Amazon S3 o Azure Blob Storage y haciendo referencia a ellos en un archivo de configuración que se implementa mediante la canalización de Cloud Manager [config](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 ## Configuración {#setup}
 

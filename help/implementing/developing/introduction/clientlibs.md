@@ -4,7 +4,7 @@ description: AEM proporciona Carpetas de biblioteca del lado del cliente, que le
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2497'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Uso de bibliotecas del lado del cliente en AEM as a Cloud Service {#using-client-side-libraries}
 
-Las experiencias digitales dependen en gran medida del procesamiento del lado del cliente impulsado por código CSS y JavaScript complejo. AEM Las bibliotecas del lado del cliente (clientlibs) le permiten organizar y almacenar de forma centralizada estas bibliotecas del lado del cliente dentro del repositorio. AEM AEM Junto con el proceso de compilación del front-end [en el tipo de archivo del proyecto de,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) la administración del código del front-end para el proyecto de la se vuelve sencilla.
+Las experiencias digitales dependen en gran medida del procesamiento del lado del cliente impulsado por código CSS y JavaScript complejo. AEM Las bibliotecas del lado del cliente (clientlibs) le permiten organizar y almacenar de forma centralizada estas bibliotecas del lado del cliente dentro del repositorio. AEM AEM Junto con el proceso de compilación del front-end [en el tipo de archivo del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html), la administración del código del front-end para el proyecto de la aplicación se vuelve sencilla.
 
 AEM Entre las ventajas de usar clientlibs en la práctica se incluyen las siguientes:
 
@@ -27,7 +27,7 @@ Clientlibs es la solución integrada para ofrecer CSS y JavaScript AEM desde el 
 
 >[!TIP]
 >
->Los desarrolladores de front-end que estén creando CSS y JavaScript AEM AEM para proyectos de también deben familiarizarse con el [Arquetipo de proyecto de la aplicación y su proceso automatizado de versión del front-end.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+>Los desarrolladores de front-end que estén creando CSS y JavaScript AEM AEM para proyectos de también deben familiarizarse con el [Arquetipo de proyecto de y su proceso automatizado de compilación de front-end](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
 
 ## Qué son las bibliotecas del lado del cliente {#what-are-clientlibs}
 
@@ -37,7 +37,7 @@ AEM el CSS y el JavaScript del sitio en un solo archivo, en una ubicación centr
 
 ## Desarrollo front-end para AEM as a Cloud Service {#fed-for-aemaacs}
 
-Todos los recursos de JavaScript AEM, CSS y otros recursos front-end deben mantenerse en el módulo [ui.frontend del tipo de archivo del proyecto de.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) La flexibilidad del tipo de archivo le permite utilizar las herramientas web modernas que elija para crear y administrar estos recursos.
+Todos los recursos de JavaScript AEM, CSS y otros recursos front-end deben mantenerse en el módulo [ui.frontend del tipo de archivo del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html). La flexibilidad del tipo de archivo permite utilizar las herramientas web modernas que elija para crear y administrar estos recursos.
 
 A continuación, el tipo de archivo puede compilar los recursos en archivos CSS y JS únicos, incrustándolos automáticamente en un `cq:clientLibraryFolder` del repositorio.
 
@@ -92,7 +92,7 @@ Para que se pueda acceder a las bibliotecas de cliente de `/apps`, se utiliza un
 1. Si necesita administrar recursos estáticos, cree una subcarpeta con el nombre `resources` debajo de la carpeta de la biblioteca de cliente.
    * Si almacena recursos estáticos en cualquier lugar que no sea la carpeta `resources`, no se podrá hacer referencia a ellos en una instancia de publicación.
 1. Añada los archivos de origen a la carpeta de la biblioteca.
-   * AEM Esto suele hacerlo el proceso de compilación del front-end del tipo de archivo del proyecto [.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
+   * AEM Esto generalmente lo hace el proceso de compilación del front-end de [Arquetipo de proyecto de ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
    * Si lo desea, puede organizar los archivos de origen en subcarpetas.
 1. Seleccione la carpeta de la biblioteca de cliente y haga clic en **Crear > Crear archivo**.
 1. En el cuadro de nombre de archivo, escriba uno de los siguientes nombres de archivo y haga clic en Aceptar:
@@ -109,7 +109,7 @@ Para que se pueda acceder a las bibliotecas de cliente de `/apps`, se utiliza un
 
 ## Servicio de bibliotecas del lado del cliente {#serving-clientlibs}
 
-Una vez que la carpeta de la biblioteca de cliente esté [configurada según se requiera,](#creating-clientlib-folders) sus clientlibs se podrán solicitar mediante proxy. A modo de ejemplo:
+Una vez que la carpeta de la biblioteca de cliente esté [configurada según se requiera](#creating-clientlib-folders), se podrán solicitar los clientlibs a través de un proxy. A modo de ejemplo:
 
 * Tiene una clientlib en `/apps/myproject/clientlibs/foo`
 * Tiene una imagen estática en `/apps/myprojects/clientlibs/foo/resources/icon.png`
@@ -137,7 +137,7 @@ This is possible. Still need detail.
 
 ## Bibliotecas de cliente en Author y Publish {#clientlibs-author-publish}
 
-AEM La mayoría de los clientlibs son obligatorios en la instancia de publicación de la. Es decir, la mayoría de los propósitos de los clientlibs son producir la experiencia del usuario final del contenido. Para clientlibs en instancias de publicación, [herramientas de compilación del front-end](#fed-for-aemaacs) se pueden usar e implementar a través de [carpetas de biblioteca de cliente como se describe más arriba.](#creating-clientlib-folders)
+AEM La mayoría de los clientlibs son obligatorios en la instancia de publicación de la. Es decir, la mayoría de los propósitos de los clientlibs son producir la experiencia del usuario final del contenido. Para clientlibs en instancias de publicación, [herramientas de compilación del front-end](#fed-for-aemaacs) se pueden usar e implementar a través de [carpetas de biblioteca de cliente como se describe más arriba](#creating-clientlib-folders).
 
 Sin embargo, hay ocasiones en que puede ser necesario usar bibliotecas de cliente para personalizar la experiencia de creación. AEM Por ejemplo, la personalización de un cuadro de diálogo puede requerir la implementación de pequeños bits de CSS o JS en la instancia de creación de la aplicación de la instancia de creación de la.
 

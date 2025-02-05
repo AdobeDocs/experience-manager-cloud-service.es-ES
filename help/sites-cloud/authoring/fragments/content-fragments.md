@@ -5,7 +5,7 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: b2b38a3163925fdc2bd4c5f78aaddb44ae716601
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 83%
@@ -129,8 +129,8 @@ Esto le permite agregar contenido adicional [intermedio (es decir, contenido int
 
 Para el contenido intermedio puede hacer lo siguiente:
 
-* Agregar componentes desde el explorador de [componentes.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
-* Agregar recursos desde el [explorador Assets.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
+* Agregar componentes desde el [Explorador de componentes](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+* Agregar recursos desde el [explorador Assets](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
 * Utilizar [contenido asociado](#using-associated-content) como fuente para el contenido intermedio.
 
 >[!CAUTION]

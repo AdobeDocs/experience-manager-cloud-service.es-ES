@@ -4,7 +4,7 @@ description: Referencia de predicado para la API de Query Builder en AEM as a Cl
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2270'
 ht-degree: 1%
@@ -171,7 +171,7 @@ No admite la extracción de facetas.
 
 ### hasPermission {#haspermission}
 
-Este predicado restringe el resultado a los elementos en los que la sesión actual tiene los [privilegios JCR especificados.](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+Este predicado restringe el resultado a los elementos en los que la sesión actual tiene los [privilegios JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) especificados.
 
 Un predicado solo de filtrado y no puede utilizar un índice de búsqueda. No admite la extracción de facetas.
 

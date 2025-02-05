@@ -4,7 +4,7 @@ description: Conozca los conceptos básicos de AEM; administración de paquetes 
 feature: Administering, Developing
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 7fdb4e3da7172e3a94f105c8b2a46ef77a565532
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3772'
 ht-degree: 3%
@@ -197,7 +197,7 @@ Al crear reglas, defina una expresión regular (también conocida como regex, re
 | include | Include incluirá todos los archivos y carpetas del directorio especificado que coincidan con la expresión regular. Incluir **no** incluirá otros archivos o carpetas de la ruta raíz especificada. |
 | excluir | Excluir excluirá todos los archivos y carpetas que coincidan con la expresión regular. |
 
-Los filtros de paquetes se definen con mayor frecuencia la primera vez que [crea el paquete.](#creating-a-new-package) Sin embargo, también se pueden editar más adelante, después de lo cual el paquete debe volver a generarse para actualizar su contenido en función de las nuevas definiciones de filtro.
+Los filtros de paquetes se definen con mayor frecuencia la primera vez que [crea el paquete](#creating-a-new-package). Sin embargo, también se pueden editar más adelante, después de lo cual el paquete debe volver a crearse para actualizar su contenido en función de las nuevas definiciones de filtro.
 
 >[!TIP]
 >
@@ -242,7 +242,7 @@ Se pueden realizar muchas acciones en un paquete.
 
 ### Creación de un paquete {#creating-a-new-package}
 
-1. [Acceda al Administrador de paquetes.](#accessing)
+1. [Acceder al Administrador de paquetes](#accessing).
 
 1. Haga clic en **Crear paquete**.
 
@@ -266,7 +266,7 @@ Se pueden realizar muchas acciones en un paquete.
 
    ![Nuevo paquete](assets/new-package.png)
 
-1. Haga clic en **Editar** para definir el contenido del [paquete.](#package-contents) Haz clic en **Guardar** cuando hayas terminado de editar la configuración.
+1. Haga clic en **Editar** para definir el [contenido del paquete](#package-contents). Haga clic en **Guardar** cuando termine de editar la configuración.
 
 1. Ahora puede [compilar](#building-a-package) su paquete.
 
@@ -274,13 +274,13 @@ No es obligatorio crear inmediatamente el paquete después de crearlo. Un paquet
 
 >[!TIP]
 >
->Para evitar tiempos de espera, el Adobe recomienda [no crear paquetes grandes.](#package-size)
+>Para evitar tiempos de espera, el Adobe recomienda [no crear paquetes grandes](#package-size).
 
 ### Creación de un paquete {#building-a-package}
 
 Un paquete se crea a menudo al mismo tiempo que [crea el paquete](#creating-a-new-package), pero puede volver más tarde para compilarlo o reconstruirlo. Esto puede resultar útil si el contenido del repositorio ha cambiado o los filtros del paquete han cambiado.
 
-1. [Acceda al Administrador de paquetes.](#accessing)
+1. [Acceder al Administrador de paquetes](#accessing).
 
 1. Abra los detalles del paquete en la lista de paquetes haciendo clic en el nombre del paquete.
 
@@ -290,13 +290,13 @@ Un paquete se crea a menudo al mismo tiempo que [crea el paquete](#creating-a-ne
 
 >[!TIP]
 >
->Para evitar tiempos de espera, el Adobe recomienda [no crear paquetes grandes.](#package-size)
+>Para evitar tiempos de espera, el Adobe recomienda [no crear paquetes grandes](#package-size).
 
 ### Edición de un paquete {#edit-package}
 
 AEM Una vez cargado un paquete en el repositorio de, puede modificar su configuración.
 
-1. [Acceda al Administrador de paquetes.](#accessing)
+1. [Acceder al Administrador de paquetes](#accessing).
 
 1. Abra los detalles del paquete en la lista de paquetes haciendo clic en el nombre del paquete.
 
@@ -310,7 +310,7 @@ Es posible que tenga que [reconstruir el paquete](#building-a-package) para actu
 
 Una vez que se ha creado un paquete, se puede volver a empaquetar. Al volver a ajustar, se cambia la información del paquete sin incluir miniaturas, descripciones, etc., sin cambiar el contenido del paquete.
 
-1. [Acceda al Administrador de paquetes.](#accessing)
+1. [Acceder al Administrador de paquetes](#accessing).
 
 1. Abra los detalles del paquete en la lista de paquetes haciendo clic en el nombre del paquete.
 
@@ -324,7 +324,7 @@ Una vez que se ha creado un paquete, se puede volver a empaquetar. Al volver a a
 
 Dado que cada versión de un paquete aparece en la lista como cualquier otro paquete, el Administrador de paquetes puede encontrar otras versiones de un paquete seleccionado.
 
-1. [Acceda al Administrador de paquetes.](#accessing)
+1. [Acceder al Administrador de paquetes](#accessing).
 
 1. Abra los detalles del paquete en la lista de paquetes haciendo clic en el nombre del paquete.
 
@@ -334,7 +334,7 @@ Dado que cada versión de un paquete aparece en la lista como cualquier otro paq
 
 Una vez creado un paquete, puede ver su contenido.
 
-1. [Acceda al Administrador de paquetes.](#accessing)
+1. [Acceder al Administrador de paquetes](#accessing).
 
 1. Abra los detalles del paquete en la lista de paquetes haciendo clic en el nombre del paquete.
 
@@ -348,7 +348,7 @@ Una vez creado un paquete, puede ver su contenido.
 
 ### Descarga de paquetes en el sistema de archivos {#downloading-packages-to-your-file-system}
 
-1. [Acceda al Administrador de paquetes.](#accessing)
+1. [Acceder al Administrador de paquetes](#accessing).
 
 1. Abra los detalles del paquete en la lista de paquetes haciendo clic en el nombre del paquete.
 
@@ -358,11 +358,11 @@ Una vez creado un paquete, puede ver su contenido.
 
 >[!TIP]
 >
->Para evitar tiempos de espera, el Adobe recomienda [no crear paquetes grandes.](#package-size)
+>Para evitar tiempos de espera, el Adobe recomienda [no crear paquetes grandes](#package-size).
 
 ### Carga de paquetes desde el sistema de archivos {#uploading-packages-from-your-file-system}
 
-1. [Acceda al Administrador de paquetes.](#accessing)
+1. [Acceder al Administrador de paquetes](#accessing).
 
 1. Seleccione la carpeta del grupo en la que desea cargar el paquete.
 
@@ -370,7 +370,7 @@ Una vez creado un paquete, puede ver su contenido.
 
 1. Proporcione la información necesaria sobre el paquete cargado.
 
-   ![Cuadro de diálogo de carga de paquetes](assets/package-upload-dialog.png)
+   ![Cuadro de diálogo de carga de paquetes.](assets/package-upload-dialog.png)
 
    * **Paquete** - Utilice el botón **Examinar...** para seleccionar el paquete requerido de su sistema de archivos local.
    * **Forzar carga**: si ya existe un paquete con este nombre, esta opción fuerza la carga y sobrescribe el paquete existente.
@@ -381,7 +381,7 @@ AEM El contenido del paquete ahora existe en la, pero para que el contenido est�
 
 >[!TIP]
 >
->Para evitar tiempos de espera, el Adobe recomienda [no crear paquetes grandes.](#package-size)
+>Para evitar tiempos de espera, el Adobe recomienda [no crear paquetes grandes](#package-size).
 
 ### Validación de paquetes {#validating-packages}
 
@@ -471,14 +471,14 @@ Con la información proporcionada por la validación, los nodos afectados se pue
 
 La validación de paquetes se puede realizar de dos formas diferentes:
 
-* [A través de la IU del Administrador de paquetes](#via-package-manager)
-* [Mediante una solicitud del POST HTTP como con cURL](#via-post-request)
+* [A través de la IU del Administrador de paquetes](#via-package-manager).
+* [Mediante una solicitud de POST HTTP como con cURL](#via-post-request).
 
 La validación siempre debe producirse después de cargar el paquete, pero antes de instalarlo.
 
 ##### Validación De Paquetes Mediante El Administrador De Paquetes {#via-package-manager}
 
-1. [Acceda al Administrador de paquetes.](#accessing)
+1. [Acceder al Administrador de paquetes](#accessing).
 
 1. Abra los detalles del paquete en la lista de paquetes haciendo clic en el nombre del paquete.
 
@@ -516,7 +516,7 @@ Al validar mediante una solicitud de POST, la respuesta se devuelve como un obje
 
 Los paquetes se definen mediante sus filtros. Puede hacer que el Administrador de paquetes aplique filtros de un paquete al contenido del repositorio existente para mostrar qué contenido del repositorio está cubierto por la definición del filtro del paquete.
 
-1. [Acceda al Administrador de paquetes.](#accessing)
+1. [Acceder al Administrador de paquetes](#accessing).
 
 1. Abra los detalles del paquete en la lista de paquetes haciendo clic en el nombre del paquete.
 
@@ -534,7 +534,7 @@ Al cargar un paquete, solo se añade el contenido del paquete al repositorio, pe
 
 Antes de la instalación del paquete, el Administrador de paquetes crea automáticamente un paquete de instantáneas que contiene el contenido que se sobrescribe. Esta instantánea se vuelve a instalar si desinstala el paquete.
 
-1. [Acceda al Administrador de paquetes.](#accessing)
+1. [Acceder al Administrador de paquetes](#accessing).
 
 1. Abra los detalles del paquete que desee instalar en la lista de paquetes haciendo clic en el nombre del paquete.
 
@@ -556,7 +556,7 @@ Una vez completada y completada la instalación, se actualiza la lista de paquet
 
 ### Reinstalación de paquetes {#reinstalling-packages}
 
-La reinstalación de paquetes realiza los mismos pasos en un paquete ya instalado que se procesan al [instalar inicialmente el paquete.](#installing-packages)
+La reinstalación de paquetes realiza los mismos pasos en un paquete ya instalado que se procesan al [instalar inicialmente el paquete](#installing-packages).
 
 ### Carga e instalación basadas en el sistema de archivos {#file-system-based-upload-and-installation}
 
@@ -576,7 +576,7 @@ Si la instancia no se está ejecutando, los paquetes colocados en la carpeta `in
 
 Al desinstalar un paquete, el contenido del repositorio se revierte a la instantánea realizada automáticamente por el Administrador de paquetes antes de la instalación.
 
-1. [Acceda al Administrador de paquetes.](#accessing)
+1. [Acceder al Administrador de paquetes](#accessing).
 
 1. Abra los detalles del paquete que desee desinstalar de la lista de paquetes haciendo clic en el nombre del paquete.
 
@@ -590,7 +590,7 @@ Al desinstalar un paquete, el contenido del repositorio se revierte a la instant
 
 Al eliminar un paquete, solo se eliminan sus detalles del Administrador de paquetes. Si este paquete ya estaba instalado, el contenido instalado no se eliminará.
 
-1. [Acceda al Administrador de paquetes.](#accessing)
+1. [Acceder al Administrador de paquetes](#accessing).
 
 1. Abra los detalles del paquete que desee eliminar de la lista de paquetes haciendo clic en el nombre del paquete.
 
@@ -602,7 +602,7 @@ Al eliminar un paquete, solo se eliminan sus detalles del Administrador de paque
 
 Repita el contenido de un paquete para instalarlo en la instancia de publicación.
 
-1. [Acceda al Administrador de paquetes.](#accessing)
+1. [Acceder al Administrador de paquetes](#accessing).
 
 1. Abra los detalles del paquete que desee duplicar desde la lista de paquetes haciendo clic en el nombre del paquete.
 
@@ -614,6 +614,6 @@ Repita el contenido de un paquete para instalarlo en la instancia de publicació
 
 AEM Los paquetes de se pueden utilizar para crear y compartir contenido en entornos AEMaaCS.
 
-AEM AEM [La distribución de software](https://downloads.experiencecloud.adobe.com) proporciona paquetes de para su uso en el SDK local de desarrollo de la aplicación de desarrollo de software (SDK). AEM Los paquetes proporcionados en la distribución de software no deben instalarse en entornos de nube AEMaaCS a menos que el soporte de Adobe los apruebe expresamente.
+AEM AEM [La distribución de software](https://downloads.experiencecloud.adobe.com) proporciona paquetes de para su uso en el desarrollo local de SDK. AEM Los paquetes proporcionados en la distribución de software no deben instalarse en entornos de nube AEMaaCS a menos que el soporte de Adobe los apruebe expresamente.
 
-Para obtener más información, consulte la [documentación de distribución de software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=es)
+Para obtener más información, consulte la [documentación de distribución de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=es).

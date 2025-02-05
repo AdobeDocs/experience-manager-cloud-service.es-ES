@@ -4,7 +4,7 @@ description: El siguiente tutorial muestra los pasos para crear un componente pe
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 2%
@@ -30,7 +30,7 @@ Para completar este tutorial, necesita lo siguiente:
 
 1. Entorno de desarrollo local
 
-Los pasos y las capturas de pantalla del tutorial se realizan con **CRXDE Lite**. Los IDE también se pueden utilizar para completar el tutorial. AEM Encontrará más información sobre cómo usar un IDE para desarrollar [con aquí.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)
+Los pasos y las capturas de pantalla del tutorial se realizan con **CRXDE Lite**. Los IDE también se pueden utilizar para completar el tutorial. AEM Encontrará más información sobre el uso de un IDE para desarrollar [con aquí](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html).
 
 
 ## Configuración del proyecto {#project-setup}

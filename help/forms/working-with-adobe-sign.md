@@ -6,10 +6,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '3243'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -93,7 +93,7 @@ Para crear un formulario adaptable habilitado para firmar:
 
    * Si no cuenta con una plantilla de formulario personalizada, seleccione la opción **[!UICONTROL Generar documento de registro]**. Cuando se utiliza la opción, el documento enviado para firmar muestra todos los campos del formulario adaptable.
 
-1. Seleccione **[!UICONTROL Crear.]** Se crea un formulario adaptable con firma habilitada. Puede agregar campos de [!DNL Adobe Sign] al formulario y enviarlo para su firma.
+1. Seleccione **[!UICONTROL Crear]**. Se crea un formulario adaptable con firma habilitada. Puede agregar campos de [!DNL Adobe Sign] al formulario y enviarlo para su firma.
 
 #### Habilitar [!DNL Adobe Sign] para un formulario adaptable {#editafsign}
 

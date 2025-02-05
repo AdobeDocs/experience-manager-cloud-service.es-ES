@@ -3,13 +3,13 @@ title: Bloques para la creación WYSIWYG y basada en documentos
 description: Descubra cómo puede crear bloques que se puedan utilizar tanto para la creación WYSIWYG como para la creación basada en documentos.
 feature: Edge Delivery Services
 role: User
-source-git-commit: 3419fa943eb865d87467443527ea97fcd64909c2
-workflow-type: ht
+exl-id: f039c70a-e1a0-4fcc-8f42-dfa0f8bb3764
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '235'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
-
 
 # Bloques para la creación WYSIWYG y basada en documentos {#wysiwyg-and-doc-blocks}
 
@@ -17,7 +17,7 @@ Descubra cómo puede crear bloques que se puedan utilizar tanto para la creació
 
 ## Información general {#overview}
 
-En determinados proyectos, puede admitir tanto la creación [WYSIWYG mediante el editor universal](/help/edge/wysiwyg-authoring/authoring.md) como la creación [basada en documentos.](/help/edge/docs/authoring.md) Para minimizar el tiempo de desarrollo y garantizar la misma experiencia en el sitio, puede crear un conjunto de bloques para admitir ambos casos de uso.
+En ciertos proyectos, es posible que quiera admitir la creación de [WYSIWYG con el editor universal](/help/edge/wysiwyg-authoring/authoring.md), así como la creación basada en [documentos](/help/edge/docs/authoring.md). Para minimizar el tiempo de desarrollo y garantizar la misma experiencia del sitio, puede crear un conjunto de bloques para admitir ambos casos de uso.
 
 Para ello, debe utilizar el mismo enfoque de modelado de contenido tanto para su configuración de creación WYSIWYG como para su configuración de creación basada en documentos.
 

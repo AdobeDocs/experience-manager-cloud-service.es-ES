@@ -4,7 +4,7 @@ description: El CRXDE Lite AEM forma parte del inicio rápido de la y está disp
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 2%
@@ -42,7 +42,7 @@ La interfaz de usuario de CRXDE Lite tiene muchas partes y muchas funciones.
 
 ### Barra de conmutación superior {#top-switcher-bar}
 
-La barra de cambio superior le permite cambiar rápidamente entre CRXDE Lite y [Administrador de paquetes.](package-manager.md)
+La barra de cambio superior le permite cambiar rápidamente entre CRXDE Lite y [Administrador de paquetes](package-manager.md).
 
 ### Widget de ruta del nodo {#node-path-widget}
 
@@ -183,7 +183,7 @@ Para crear una carpeta con el CRXDE Lite:
 Para crear un nodo con un CRXDE Lite:
 
 1. Abra el CRXDE Lite en el explorador.
-1. En el [**Panel del explorador**,](#explorer-pane) haga clic con el botón secundario en el nodo donde desea crear el nuevo nodo, seleccione **Crear** y, a continuación, **Crear nodo**.
+1. En el [**Panel del explorador**](#explorer-pane), haga clic con el botón secundario en el nodo donde desea crear el nuevo nodo, seleccione **Crear** y, a continuación, **Crear nodo**.
 1. Escriba **Name** y seleccione **Type**.
 1. Haga clic en **OK**.
 1. Haga clic en el botón [**Guardar todo**](#save-all-button) para guardar los cambios en el servidor.
@@ -201,7 +201,7 @@ El repositorio también lleva a cabo la validación con respecto a si el tipo de
 Para crear una propiedad con el CRXDE Lite:
 
 1. Abra el CRXDE Lite en el explorador.
-1. En el [**Panel del explorador**,](#explorer-pane), seleccione el nodo en el que desea agregar la nueva propiedad.
+1. En el [**Panel del explorador**](#explorer-pane), seleccione el nodo al que desea agregar la nueva propiedad.
 1. En la [**ficha Propiedades**](#properties-tab) del panel inferior, escriba **Nombre**, **Tipo** y **Valor**.
 1. Haga clic en **Agregar**.
 1. Haga clic en el botón [**Guardar todo**](#save-all-button) para guardar los cambios en el servidor.
@@ -211,10 +211,10 @@ Para crear una propiedad con el CRXDE Lite:
 Para crear un archivo con el CRXDE Lite:
 
 1. Abra el CRXDE Lite en el explorador.
-1. En el [**Panel del explorador**,](#explorer-pane) haga clic con el botón secundario del mouse (ratón) en el componente donde desea crear el archivo, seleccione **Crear** y, a continuación, **Crear archivo**.
+1. En el [**Panel del explorador**](#explorer-pane), haga clic con el botón secundario en el componente donde desea crear el archivo, seleccione **Crear** y, a continuación, **Crear archivo**.
 1. Escriba el archivo **Name**, incluida su extensión.
 1. Haga clic en **OK**.
-1. El nuevo archivo se abrirá como una ficha en el [**Panel de edición**.](#edit-pane)
+1. El nuevo archivo se abrirá como una ficha en el [**Panel de edición**](#edit-pane).
 1. Edite el archivo.
 1. Haga clic en el botón [**Guardar todo**](#save-all-button) para guardar los cambios.
 

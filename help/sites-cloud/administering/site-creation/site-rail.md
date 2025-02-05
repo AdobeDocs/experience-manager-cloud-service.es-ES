@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '583'
-ht-degree: 38%
+ht-degree: 31%
 
 ---
 
@@ -34,7 +34,7 @@ El panel Sitio se utiliza para administrar la información relacionada con el te
 
 ## Descarga de fuentes de temas {#downloading-theme-sources}
 
-AEM Cuando crea un sitio en base a una plantilla de sitio [en el sitio,](site-templates.md) puede descargar el [tema del sitio](site-themes.md) mediante el panel Sitio.
+AEM Cuando crea un sitio en base a una [plantilla del sitio](site-templates.md), puede descargar el [tema del sitio](site-themes.md) mediante el panel Sitio.
 
 Con el panel Sitio en la consola Sitios, seleccione la raíz del sitio para mostrar la información del tema sobre el sitio.
 
@@ -44,7 +44,7 @@ Seleccione **Descargar fuentes de temas** para descargar una copia local del tem
 
 ## Descarga de recursos de plantilla {#downloading-template-resources}
 
-[Plantillas de sitio](site-templates.md) puede contener información además de la estructura de contenido del sitio y [tema del sitio.](site-themes.md) Las plantillas de sitio pueden contener diseños de malla metálica u otros archivos relacionados con el sitio, por ejemplo.
+[Plantillas de sitio](site-templates.md) pueden contener información además de la estructura de contenido del sitio y el [tema del sitio](site-themes.md). Las plantillas de sitio pueden contener diseños de malla metálica u otros archivos relacionados con el sitio, por ejemplo.
 
 Si el sitio se basa en una plantilla de sitio, y el panel Sitio se muestra en la consola Sitios, seleccione la raíz del sitio para mostrar la información del tema sobre el sitio, incluidos los recursos del sitio adicionales.
 
@@ -84,4 +84,4 @@ Con el panel Sitio en la consola Sitios, seleccione la raíz del sitio para most
 
 ![Habilitar canalización front-end](/help/sites-cloud/administering/assets/enable-fep.png)
 
-Para obtener más información, consulte el documento [Activación de la canalización front-end.](enable-front-end-pipeline.md)
+Para obtener más información, consulte el documento [Habilitar la canalización front-end](enable-front-end-pipeline.md).

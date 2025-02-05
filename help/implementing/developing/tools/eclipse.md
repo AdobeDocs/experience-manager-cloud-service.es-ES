@@ -4,7 +4,7 @@ description: AEM Aprenda a utilizar las herramientas para desarrolladores de par
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 2%
@@ -62,7 +62,7 @@ Cuando haya cumplido los [requisitos](#requirements) anteriores, puede instalar 
 
 ## AEM La perspectiva de la {#the-aem-perspective}
 
-En Eclipse, una perspectiva determina las acciones y vistas disponibles dentro de una ventana y permite la interacción orientada a tareas con recursos en Eclipse. Para obtener más información acerca de Perspective, consulte la [documentación de Eclipse.](https://help.eclipse.org/latest/index.jsp)
+En Eclipse, una perspectiva determina las acciones y vistas disponibles dentro de una ventana y permite la interacción orientada a tareas con recursos en Eclipse. Para obtener más información sobre Perspective, consulte la [documentación de Eclipse](https://help.eclipse.org/latest/index.jsp).
 
 _Herramientas de desarrollo de Experience Manager AEM AEM para Eclipse_ proporcionan una perspectiva de que le ofrece control total sobre sus Proyectos e instancias de la comunidad de la comunidad de la que se ha realizado el trabajo de la comunidad de trabajo. AEM Para abrir la Perspectiva de la:
 
@@ -200,7 +200,7 @@ Si desea volver a compilar un paquete a partir del proyecto, haga clic con el bo
 
 Ahora tiene una carpeta de destino creada con el paquete dentro de (por ejemplo, `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
-## Resolución de problemas {#troubleshooting}
+## Solución de problemas {#troubleshooting}
 
 ### Resolver definición de proyecto no válida {#resolving-invalid-project-definition}
 

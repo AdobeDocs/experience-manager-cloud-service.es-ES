@@ -4,10 +4,10 @@ description: Aprenda a utilizar DocuSign con un formulario adaptable para recopi
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1534'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -185,7 +185,7 @@ Para crear un formulario adaptable habilitado para firmar:
 
    - Si no cuenta con una plantilla de formulario personalizada, seleccione la opción **[!UICONTROL Generar documento de registro]**. Cuando se utiliza la opción, el documento enviado para firmar muestra todos los campos del formulario adaptable.
 
-1. Seleccione **[!UICONTROL Crear.]** Se crea un formulario adaptable con firma habilitada. Puede agregar campos de [!DNL DocuSign] al formulario y enviarlo para su firma.
+1. Seleccione **[!UICONTROL Crear]**. Se crea un formulario adaptable con firma habilitada. Puede agregar campos de [!DNL DocuSign] al formulario y enviarlo para su firma.
 1. Abra el formulario adaptable en modo de edición. En la pestaña **[!UICONTROL Contenido]**, seleccione **[!UICONTROL Contenedor del formulario]** y seleccione ![Configurar](assets/configure-icon.svg).
 
 1. En la sección **[!UICONTROL Envío]**, seleccione **[!UICONTROL Enviar con firmas electrónicas de DocuSign]** de la lista desplegable **[!UICONTROL Enviar acción]**.

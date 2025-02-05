@@ -4,10 +4,10 @@ description: Aprenda a guardar formularios adaptables basados en componentes pri
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 2e4c9a7d30b954045082baf242737ac2f7426c70
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1387'
-ht-degree: 7%
+ht-degree: 15%
 
 ---
 
@@ -22,9 +22,9 @@ Considere a un usuario que comienza a rellenar un formulario pero necesita pausa
 
 ## Requisitos previos
 
-* [Habilite los componentes principales de Forms adaptables para su entorno.](/help/forms/enable-adaptive-forms-core-components.md)
+* [Habilite los componentes principales de Forms adaptable para su entorno](/help/forms/enable-adaptive-forms-core-components.md).
 
-  Después de implementar los componentes principales más recientes en su entorno, los componentes del portal de Forms pasan a ser accesibles en el entorno de creación.
+  Después de implementar los componentes principales más recientes en su entorno, los componentes del Portal de formularios pasan a ser accesibles en el entorno de creación.
 
 * [Configurar el almacenamiento de Azure y el conector de almacenamiento unificado para el componente del portal de Forms Borradores y envíos](#configure-azure-storage-and-unified-storage-connector-for-drafts--submissions-forms-portal-component)
 
@@ -76,20 +76,20 @@ Una vez que haya configurado correctamente el almacenamiento de Azure y el conec
 
 Puede utilizar los componentes listos para usar del portal de Forms para enumerar borradores y envíos en la página de Sites. Realice los siguientes pasos para agregar el componente de portal **Borradores y envíos**:
 
-1. Abra la página de AEM Sites en modo **Editar**.
+1. Abra la página de AEM Sites en el modo **Editar**.
 1. Vaya a la **[!UICONTROL Información de la página]** > **[!UICONTROL Editar plantilla]**
-   ![Editar directiva de plantilla](/help/forms/assets/save-form-as-draft-edit-template.png)
+   ![Editar la política de plantilla](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. AEM Haga clic en la **[!UICONTROL directiva]** y seleccione la casilla de verificación **[!UICONTROL Borradores y envíos]** bajo el **[Nombre de proyecto de tipo de archivo] - Forms y el portal de comunicaciones**.
 
-   ![Selección de directiva](/help/forms/assets/save-form-as-draft-enable-policy.png)
+   ![Selección de política](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
 1. Haga clic en **[!UICONTROL Listo]**.
 1. Ahora vuelva a abrir la página de AEM Sites en el modo Autor.
-1. Busque la sección en el editor de páginas que le permite agregar el componente Portal de Forms.
-1. Haga clic en el icono **Agregar**. El icono es un signo más (+) que significa la opción de agregar nuevos componentes.
+1. Busque la sección en el editor de páginas que le permite añadir el componente del Portal de formularios.
+1. Haga clic en el icono **Añadir**. El icono es un signo más (+) que representa la opción de añadir nuevos componentes.
 
-   Al hacer clic en el icono **Agregar**, se muestra un cuadro de diálogo **Insertar nuevo componente** que muestra varios componentes para su inserción.
+   Al hacer clic en el icono **Añadir** aparece un cuadro de diálogo **Insertar nuevo componente** que muestra varios componentes para su inserción.
 
    >[!NOTE]
    >

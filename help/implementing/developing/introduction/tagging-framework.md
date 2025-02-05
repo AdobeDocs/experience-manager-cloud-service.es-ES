@@ -4,7 +4,7 @@ description: AEM Etiquete el contenido y utilice la infraestructura de etiquetad
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 0%
@@ -24,9 +24,9 @@ AEM Este artículo se centra en el marco de trabajo subyacente que admite el eti
 
 AEM Para etiquetar contenido y utilizar la infraestructura de etiquetado de:
 
-* La etiqueta debe existir como un nodo de tipo [`cq:Tag`](#cq-tag-node-type) bajo el [nodo raíz de taxonomía.](#taxonomy-root-node)
+* La etiqueta debe existir como un nodo de tipo [`cq:Tag`](#cq-tag-node-type) bajo el [nodo raíz de taxonomía](#taxonomy-root-node).
 * El nodo de contenido etiquetado `NodeType` debe incluir el mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin).
-* [`TagID`](#tagid) se agrega a la propiedad [`cq:tags`](#cq-tags-property) del nodo de contenido y se resuelve en un nodo de tipo [`cq:Tag`.](#cq-tag-node-type)
+* [`TagID`](#tagid) se agrega a la propiedad [`cq:tags`](#cq-tags-property) del nodo de contenido y se resuelve en un nodo de tipo [`cq:Tag`](#cq-tag-node-type).
 
 ## cq:Tipo de nodo de etiqueta {#cq-tag-node-type}
 
@@ -41,18 +41,18 @@ El marco de etiquetado también restringe a los autores y visitantes del sitio a
 ### Características de etiquetas {#tag-characteristics}
 
 * El tipo de nodo es `cq:Tag`.
-* El nombre de nodo es un componente de [`TagID`.](#tagid)
-* [`TagID`](#tagid) siempre incluye un área de nombres [namespace.](#tag-namespace)
+* El nombre de nodo es un componente de [`TagID`](#tagid).
+* [`TagID`](#tagid) siempre incluye un [área de nombres](#tag-namespace).
 * La propiedad `jcr:title` (el Título que se mostrará en la interfaz de usuario) es opcional.
 * La propiedad `jcr:description` es opcional.
-* Cuando contiene nodos secundarios, se denomina [etiqueta contenedora.](#container-tags)
-* La etiqueta se almacena en el repositorio bajo una ruta base denominada nodo raíz de taxonomía [.](#taxonomy-root-node)
+* Cuando contiene nodos secundarios, se denomina [etiqueta contenedora](#container-tags).
+* La etiqueta se almacena en el repositorio debajo de una ruta base denominada [nodo raíz de taxonomía](#taxonomy-root-node).
 
 ### ID de etiqueta {#tagid}
 
 Un(a) `TagID` identifica una ruta que se resuelve en un nodo de etiqueta en el repositorio.
 
-Normalmente, `TagID` es un método abreviado `TagID` que comienza con el espacio de nombres o puede ser un `TagID` absoluto que comienza desde el nodo raíz de la taxonomía [4}.](#taxonomy-root-node)
+Normalmente, `TagID` es un método abreviado `TagID` que comienza con el espacio de nombres o puede ser un `TagID` absoluto que comienza desde el [nodo raíz de taxonomía](#taxonomy-root-node).
 
 Cuando se etiqueta contenido, si aún no existe, la propiedad [`cq:tags`](#cq-tags-property) se agrega al nodo de contenido y `TagID` se agrega al valor de matriz `String` de la propiedad.
 
@@ -68,7 +68,7 @@ AEM En la ruta de acceso base es `/content/cq:tags` y el nodo raíz es de tipo `
 
 Las áreas de nombres permiten agrupar cosas. El caso de uso más típico es tener un área de nombres por sitio (por ejemplo, pública frente a interna) o por aplicación más grande (por ejemplo, Sites o Assets), pero las áreas de nombres se pueden utilizar para otras necesidades. Los espacios de nombres se utilizan en la interfaz de usuario para mostrar únicamente el subconjunto de etiquetas (es decir, las etiquetas de un determinado espacio de nombres) que se aplica al contenido actual.
 
-El área de nombres de la etiqueta es el primer nivel del subárbol de taxonomía, que es el nodo inmediatamente inferior al nodo raíz de la taxonomía [.](#taxonomy-root-node) Un espacio de nombres es un nodo de tipo `cq:Tag` cuyo primario no es un tipo de nodo `cq:Tag`.
+El área de nombres de la etiqueta es el primer nivel del subárbol de taxonomía, que es el nodo inmediatamente inferior al [nodo raíz de taxonomía](#taxonomy-root-node). Un área de nombres es un nodo de tipo `cq:Tag` cuyo primario no es un tipo de nodo `cq:Tag`.
 
 Todas las etiquetas tienen un área de nombres. Si no se especifica ningún espacio de nombres, la etiqueta se asigna al espacio de nombres predeterminado, que es `TagID` `default`, es decir, `/content/cq:tags/default`. El título predeterminado es `Standard Tags` en estos casos.
 
@@ -107,7 +107,7 @@ Para obtener más información, consulte lo siguiente:
 
 ### Control de acceso {#access-control}
 
-Las etiquetas existen como nodos en el repositorio bajo el nodo raíz de la taxonomía [.](#taxonomy-root-node) Para permitir o denegar a los autores y visitantes del sitio la creación de etiquetas en un área de nombres determinada, se pueden establecer las ACL adecuadas en el repositorio.
+Las etiquetas existen como nodos en el repositorio bajo el [nodo raíz de taxonomía](#taxonomy-root-node). Permitir o denegar a los autores y visitantes del sitio la creación de etiquetas en un área de nombres determinada se puede lograr estableciendo ACL adecuados en el repositorio.
 
 La denegación de permisos de lectura para determinadas etiquetas o áreas de nombres controla la capacidad de aplicar etiquetas a contenido específico.
 

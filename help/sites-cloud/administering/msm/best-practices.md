@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 92%
+source-wordcount: '1414'
+ht-degree: 91%
 
 ---
 
@@ -99,7 +99,7 @@ Las modificaciones en la estructura de contenido de un modelo o árbol de fuente
 * **Mover** páginas a un modelo **no** hará que las páginas correspondientes se muevan a Live Copies después del despliegue con la configuración de despliegue estándar:
    * El motivo de este comportamiento es que mover una página incluye implícitamente eliminar una página. Esto podría provocar un comportamiento inesperado al publicar, ya que al eliminar páginas en el autor se desactiva automáticamente el contenido correspondiente al publicar. Esto también puede tener un efecto adicional en elementos relacionados, como vínculos, marcadores, etc.
       * La herencia de contenido en las respectivas páginas de Live Copy se actualiza para reflejar la nueva ubicación de sus fuentes en el modelo.
-      * Para mover por completo una página de un modelo a Live Copies, tenga en cuenta las [prácticas recomendadas para mover páginas.](#page-move)
+      * Para mover por completo una página de un modelo a Live Copies, tenga en cuenta las [prácticas recomendadas para mover páginas].(#page-move)
 
 ### Prácticas recomendadas para mover páginas {#page-move}
 

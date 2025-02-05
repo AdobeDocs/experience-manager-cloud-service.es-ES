@@ -5,10 +5,10 @@ exl-id: fe065972-39db-4074-a802-85895c701efd
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1002'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ Aprenda cómo implementar el tema del sitio mediante la canalización.
 
 ## La historia hasta ahora {#story-so-far}
 
-En el documento anterior del recorrido de creación rápida del sitio de AEM, [Personalizar el tema del sitio,](customize-theme.md) ha aprendido cómo se crea el tema, cómo personalizarlo y cómo probarlo con contenido AEM dinámico, y ahora debería:
+AEM En el documento anterior del recorrido AEM de creación rápida de sitios de la, [Personalizar el tema del sitio](customize-theme.md), ha aprendido cómo se crea el tema, cómo personalizarlo y cómo probarlo con contenido de la versión activa del sitio, y ahora debería:
 
 * Comprender la estructura básica del tema del sitio y cómo editarlo.
 * Consulte cómo probar las personalizaciones de temas mediante contenido AEM real a través de un proxy local.
@@ -78,7 +78,7 @@ Puede comprobar el estado de la canalización para ver los detalles de su progre
 Una vez finalizada la canalización, puede informar al administrador para validar los cambios. El administrador deberá hacer lo siguiente:
 
 1. Abrir el entorno de creación de AEM.
-1. Ir al [sitio que el administrador creó anteriormente.](create-site.md)
+1. Vaya a [el sitio que el administrador creó anteriormente](create-site.md).
 1. Editar una de las páginas de contenido.
 1. Consultar los cambios aplicados.
 

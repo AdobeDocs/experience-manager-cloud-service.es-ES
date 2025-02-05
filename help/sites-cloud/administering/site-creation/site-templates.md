@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '556'
-ht-degree: 94%
+ht-degree: 85%
 
 ---
 
@@ -20,7 +20,7 @@ Descubra cómo se pueden utilizar las plantillas de sitio AEM para predefinir la
 
 Es práctico tener estructuras predefinidas disponibles para implementar rápidamente un nuevo sitio basado en un conjunto de estándares existentes. Las plantillas de sitio son una forma de combinar el contenido básico del sitio en un paquete conveniente y reutilizable.
 
-Las plantillas de sitio generalmente incluyen contenido y estructura base del sitio, así como información de estilo del sitio, conocida como [tema del sitio](site-themes.md), para poner en marcha un nuevo sitio rápidamente. Los administradores seleccionan una plantilla de sitio en la que basar el sitio [durante el proceso de creación del sitio.](create-site.md)
+Las plantillas de sitio generalmente contienen contenido y estructura base del sitio, así como información de estilo del sitio, conocida como [tema del sitio](site-themes.md), para comenzar un nuevo sitio rápidamente. Los administradores seleccionan una plantilla de sitio en la que basar el sitio [durante el proceso de creación del sitio](create-site.md).
 
 Las plantillas son eficaces, ya que se pueden reutilizar y personalizar. Y como puede tener varias plantillas disponibles en la instalación de AEM, tiene la flexibilidad de crear diferentes sitios para satisfacer diversas necesidades comerciales.
 
@@ -67,7 +67,7 @@ Las plantillas de sitio son simplemente paquetes con una estructura lógica que 
 
 ## Plantilla de sitio estándar {#standard-site-template}
 
-Adobe proporciona una plantilla de referencia de prácticas recomendadas que puede utilizar como base para crear sus propias plantillas. [La plantilla de sitio estándar está disponible en GitHub.](https://github.com/adobe/aem-site-template-standard)
+Adobe proporciona una plantilla de referencia de prácticas recomendadas que puede utilizar como base para crear sus propias plantillas. [La plantilla de sitio estándar está disponible en GitHub](https://github.com/adobe/aem-site-template-standard).
 
 [La última versión de la plantilla de sitio estándar](https://github.com/adobe/aem-site-template-standard/releases) se puede descargar y utilizar directamente para [crear nuevos sitios](create-site.md).
 

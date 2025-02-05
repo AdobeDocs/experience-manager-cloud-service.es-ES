@@ -4,13 +4,13 @@ description: Descubra cómo la consola de plantillas sirve como ubicación centr
 solution: Experience Manager Sites
 feature: Administering
 role: User
-source-git-commit: 993f81e0ff2b71ce2edf59a2c74398db3abe8f06
+exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '863'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # La consola Plantillas {#templates-console}
 
@@ -20,10 +20,10 @@ Descubra cómo la consola de plantillas sirve como ubicación central para ver y
 
 Al crear una página, debe seleccionar una plantilla. La plantilla de página se utiliza como base para la nueva página. AEM [Las plantillas editables que se están utilizando](/help/implementing/developing/components/templates.md) pueden definir la estructura de la página resultante, cualquier contenido inicial y los componentes que se pueden utilizar (propiedades de diseño).
 
-A los autores de contenido se les presenta una selección de plantillas disponibles cuando [crean páginas nuevas en la consola Sitios.](/help/sites-cloud/authoring/sites-console/creating-pages.md) plantillas se pueden usar para crear páginas editables con:
+A los autores de contenido se les presenta una selección de plantillas disponibles cuando [crean páginas nuevas en la consola Sitios](/help/sites-cloud/authoring/sites-console/creating-pages.md). Las plantillas se pueden utilizar para crear páginas editables con:
 
 * [El editor de páginas](/help/sites-cloud/authoring/page-editor/templates.md) o
-* [El editor universal](/help/sites-cloud/authoring/universal-editor/templates.md)
+* [Editor universal](/help/sites-cloud/authoring/universal-editor/templates.md)
 
 La consola de plantillas permite a un administrador ver y administrar todas las plantillas de página en una ubicación central.
 
@@ -58,7 +58,7 @@ Seleccione una plantilla para mostrar las opciones disponibles en la barra de he
 Al editar una plantilla, se abre el editor que se utilizó para crearla. O bien, haga lo siguiente:
 
 * [Editor de plantillas](/help/sites-cloud/authoring/page-editor/templates.md)
-* [El editor universal](/help/sites-cloud/authoring/universal-editor/templates.md)
+* [Editor universal](/help/sites-cloud/authoring/universal-editor/templates.md)
 
 Con cualquier editor, puede realizar los cambios necesarios en la plantilla. Tenga en cuenta que la edición de una plantilla en uso puede afectar a los autores.
 
@@ -73,7 +73,7 @@ Si un autor inicia una plantilla creada con el editor de plantillas que ya se ha
 
 ## Propiedades {#properties}
 
-Puede editar las [propiedades de la plantilla](/help/sites-cloud/authoring/page-editor/templates.md) de la misma manera que puede [editar las propiedades de página.](/help/sites-cloud/authoring/sites-console/page-properties.md) propiedades de plantilla incluyen:
+Puede editar las [propiedades de la plantilla](/help/sites-cloud/authoring/page-editor/templates.md) de la misma manera que puede [editar las propiedades de la página](/help/sites-cloud/authoring/sites-console/page-properties.md). Las propiedades de la plantilla incluyen:
 
 * Título de plantilla
 * Descripción
@@ -135,6 +135,6 @@ Seleccione la plantilla y, a continuación, toque o haga clic en **Eliminar** pa
 
 ## Creación de plantillas {#create}
 
-Use el botón **Crear** de la consola para crear una nueva plantilla en su ubicación actual. Para obtener más información sobre cómo crear una plantilla, consulte el documento [Plantillas para crear páginas que se pueden editar con el editor de páginas.](/help/sites-cloud/authoring/page-editor/templates.md)
+Use el botón **Crear** de la consola para crear una nueva plantilla en su ubicación actual. Para obtener más información sobre cómo crear una plantilla, consulte el documento [Plantillas para crear páginas que se pueden editar con el editor de páginas](/help/sites-cloud/authoring/page-editor/templates.md).
 
 El botón **Crear** solo se usa para crear plantillas que se puedan editar con el Editor de páginas. Consulte el documento [Plantillas para crear páginas que se pueden editar con el editor universal](/help/sites-cloud/authoring/universal-editor/templates.md) para obtener más información acerca de la creación de plantillas basadas en páginas creadas con el editor universal.

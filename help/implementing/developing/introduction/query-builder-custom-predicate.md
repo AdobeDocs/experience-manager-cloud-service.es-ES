@@ -4,7 +4,7 @@ description: AEM El Generador de consultas de ofrece una forma fácil y personal
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 0%
@@ -101,7 +101,7 @@ Agrupar predicados de metadatos de replicación con un evaluador de predicados p
 
 >[!TIP]
 >
->AEM [el tutorial de WKND explica en detalle la configuración de nuevos proyectos de, incluido el uso de maven.](develop-wknd-tutorial.md)
+>AEM [el tutorial de WKND](develop-wknd-tutorial.md) explica en detalle la configuración de nuevos proyectos de, incluido el uso de maven.
 
 En primer lugar, debe actualizar las dependencias Maven del proyecto. El objeto `PredicateEvaluator` forma parte del artefacto `cq-search`, por lo que debe agregarse al archivo Pom de Maven.
 

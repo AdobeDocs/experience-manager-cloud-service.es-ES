@@ -4,7 +4,7 @@ description: Obtenga información acerca de los campos y los tipos de componente
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2e22a2570a11df8d5f82037414f689f20b6fdb94
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 13%
@@ -24,7 +24,7 @@ Este documento proporciona información general sobre la definición de un model
 
 >[!TIP]
 >
->AEM Si no está familiarizado con la instrumentación de la aplicación para el editor universal, consulte el documento [Información general del editor universal para desarrolladores de.](/help/implementing/universal-editor/developer-overview.md)
+>AEM Si no está familiarizado con cómo instrumentar su aplicación para el editor universal, consulte el documento [Información general del editor universal para desarrolladores de](/help/implementing/universal-editor/developer-overview.md).
 
 ## Estructura de definición de modelo {#model-structure}
 
@@ -139,7 +139,7 @@ AEM ![Captura de pantalla del tipo de componente de etiqueta de](assets/componen
 
 #### AEM Contenido de {#aem-content}
 
-AEM AEM AEM Un tipo de componente de contenido de la habilita un selector de contenido de la, que se puede utilizar para seleccionar cualquier recurso de la misma. AEM AEM A diferencia del componente [reference,](#reference), que solo puede seleccionar recursos, el componente de contenido de la puede hacer referencia a cualquier contenido de la lista de distribución de contenido. Ofrece un tipo de validación adicional.
+AEM AEM AEM Un tipo de componente de contenido de la habilita un selector de contenido de la, que se puede utilizar para seleccionar cualquier recurso de la misma. AEM AEM A diferencia del [componente de referencia](#reference), que solo puede seleccionar recursos, el componente de contenido de la puede hacer referencia a cualquier contenido de la lista de elementos permitidos. Ofrece un tipo de validación adicional.
 
 | Tipo de validación | Tipo de valor | Descripción | Requerido |
 |---|---|---|---|
@@ -646,7 +646,7 @@ Un tipo de componente de grupo de radio permite una selección mutuamente excluy
 
 #### Referencia {#reference}
 
-AEM AEM Un tipo de componente de referencia habilita un selector de recursos de, que se puede utilizar para seleccionar cualquier recurso de referencia a la que se pueda hacer referencia en el momento de la selección. AEM AEM A diferencia del componente de contenido [, ](#aem-content), que puede seleccionar cualquier recurso, el componente de referencia solo puede hacer referencia a recursos. Ofrece un tipo de validación adicional.
+AEM AEM Un tipo de componente de referencia habilita un selector de recursos de, que se puede utilizar para seleccionar cualquier recurso de referencia a la que se pueda hacer referencia en el momento de la selección. AEM AEM A diferencia del [componente de contenido de la](#aem-content), que puede seleccionar cualquier recurso, el componente de referencia solo puede hacer referencia a recursos. Ofrece un tipo de validación adicional.
 
 Un tipo de componente de referencia permite hacer referencia a otro objeto de datos del objeto actual.
 

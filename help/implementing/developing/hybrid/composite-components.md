@@ -4,7 +4,7 @@ description: AEM SPA Aprenda a crear sus propios componentes compuestos, compone
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 1%
@@ -30,16 +30,16 @@ Este artículo utiliza el componente de tarjeta típico como ejemplo de uso. Las
 Los siguientes modelos para admitir los casos de uso de componentes compuestos requieren los siguientes requisitos previos.
 
 * AEM La instancia de desarrollo de la se está ejecutando localmente en el puerto 4502 con un proyecto de ejemplo.
-* AEM Tiene una aplicación React externa en funcionamiento [habilitada para la edición en el.](editing-external-spa.md)
-* AEM La aplicación React se cargó en el editor de [mediante el componente RemotePage.](remote-page.md)
+* AEM Tiene una aplicación React externa en funcionamiento [habilitada para la edición en la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación ](editing-external-spa.md) en la que se está trabajando para la edición de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación {.
+* AEM La aplicación React se carga en el editor de [mediante el componente RemotePage](remote-page.md).
 
 ## SPA Adición de componentes compuestos a un grupo de componentes {#adding-composite-components}
 
 SPA AEM Existen tres modelos diferentes para implementar el componente compuesto en función de la implementación de la dentro de la aplicación de la combinación de componentes
 
-* [AEM El componente no existe en el proyecto de.](#component-does-not-exist)
-* [AEM El componente existe en el proyecto de, pero el contenido requerido no.](#content-does-not-exist)
-* [AEM Tanto el componente como el contenido requerido existen en el proyecto de.](#both-exist)
+* AEM [El componente no existe en el proyecto de la](#component-does-not-exist).
+* AEM [El componente existe en el proyecto de la, pero el contenido requerido no](#content-does-not-exist).
+* AEM [El componente y su contenido requerido existen en el proyecto de la](#both-exist).
 
 En las siguientes secciones se proporcionan ejemplos de implementación de cada caso utilizando el componente de tarjeta como ejemplo.
 
@@ -134,7 +134,7 @@ AEM En este caso, el componente de tarjeta ya se ha creado en el proyecto de que
 
 SPA A continuación, puede agregarlo a la y recuperar su contenido.
 
-1. SPA Cree un componente correspondiente en la lista de componentes para este elemento AEM SPA Asegúrese de que los componentes secundarios estén asignados a sus tipos de recursos de la correspondientes dentro del proyecto de la aplicación. En este ejemplo utilizamos los mismos componentes `AEMText` y `AEMImage` que se detallaron [en el caso anterior.](#component-does-not-exist)
+1. SPA Cree un componente correspondiente en la lista de componentes para este elemento AEM SPA Asegúrese de que los componentes secundarios estén asignados a sus tipos de recursos de la correspondientes dentro del proyecto de la aplicación. En este ejemplo utilizamos los mismos componentes `AEMText` y `AEMImage` que se detallaron [en el caso anterior](#component-does-not-exist).
 
    ```javascript
    import React from 'react';
@@ -178,4 +178,4 @@ AEM SPA Si el contenido existe en la, se puede incluir directamente en la misma 
 
 ![Ruta compuesta en la estructura del nodo](assets/composite-path.png)
 
-El componente `AEMCard` es el mismo que se definió [ en el caso de uso anterior.AEM SPA ](#content-does-not-exist) Aquí se incluye en la lista el contenido definido en la ubicación anterior del proyecto de la.
+El componente `AEMCard` es el mismo que se definió [en el caso de uso anterior](#content-does-not-exist). AEM SPA Aquí se incluye en la lista el contenido definido en la ubicación anterior del proyecto de la.

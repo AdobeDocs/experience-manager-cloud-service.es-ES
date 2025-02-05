@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 67%
@@ -15,7 +15,7 @@ ht-degree: 67%
 
 # Organización de páginas {#creating-and-organizing-pages}
 
-AEM Aprenda a organizar su sitio web con la ayuda de los usuarios de. Una vez que sepa cómo organizar las páginas, puede [crear páginas nuevas](/help/sites-cloud/authoring/sites-console/creating-pages.md) y [administrar las páginas existentes.](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+AEM Aprenda a organizar su sitio web con la ayuda de los usuarios de. Una vez que sepa cómo organizar las páginas, puede [crear páginas nuevas](/help/sites-cloud/authoring/sites-console/creating-pages.md) y [administrar las páginas existentes](/help/sites-cloud/authoring/sites-console/managing-pages.md).
 
 {{edge-delivery-authoring}}
 
@@ -51,7 +51,7 @@ A continuación se muestra un ejemplo del sitio [WKND Tutorial](https://experien
    /...
 ```
 
-Esta estructura se puede ver desde la consola [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md), donde puede navegar por las páginas de su sitio web y realizar acciones en las páginas.
+Esta estructura se puede ver desde la consola [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md), donde puede navegar por las páginas de su sitio web y realizar acciones en las páginas.
 
 ## Convenciones de nomenclatura de páginas {#page-naming-conventions}
 
@@ -130,7 +130,7 @@ AEM incluye varias plantillas listas para usar de forma predeterminada. Las plan
 
 ## Componentes {#components}
 
-AEM [Componentes](/help/implementing/developing/components/overview.md) son los elementos proporcionados por los elementos para que pueda agregar tipos de contenido específicos. AEM El complemento incluye una serie de componentes predeterminados, denominados [componentes principales,](/help/implementing/developing/components/overview.md#core-components), que proporcionan una funcionalidad completa. Algunos ejemplos de componentes son los siguientes:
+AEM [Componentes](/help/implementing/developing/components/overview.md) son los elementos proporcionados por los elementos para que pueda agregar tipos de contenido específicos. AEM El complemento incluye una serie de componentes predeterminados, denominados [componentes principales](/help/implementing/developing/components/overview.md#core-components), que proporcionan una funcionalidad completa. Algunos ejemplos de componentes son los siguientes:
 
 * Texto
 * Imagen

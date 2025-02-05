@@ -8,10 +8,10 @@ exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '776'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -104,6 +104,6 @@ Aproveche este conocimiento y continúe con su recorrido de traducción de AEM S
 
 ## Recursos adicionales {#additional-resources}
 
-Aunque se recomienda pasar a la siguiente parte del recorrido de traducción al revisar el documento [Traducción de contenido,](translate-content.md) los siguientes son algunos recursos opcionales que profundizan ciertos conceptos mencionados en este documento, pero que no son necesarios para continuar el recorrido.
+Aunque se recomienda pasar a la siguiente parte del recorrido de traducción al revisar el documento [Traducir contenido](translate-content.md), los siguientes son algunos recursos opcionales que profundizan ciertos conceptos mencionados en este documento, pero que no son necesarios para continuar en el recorrido.
 
 * [Identificación del contenido para traducir](/help/sites-cloud/administering/translation/rules.md): aprenda cómo las reglas de traducción identifican el contenido que necesita traducirse.

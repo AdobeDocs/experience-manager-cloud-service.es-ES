@@ -7,7 +7,7 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2332'
 ht-degree: 100%
@@ -232,8 +232,8 @@ Para crear una función de error personalizada, realice los siguientes pasos:
 
 Para crear una función de error personalizada, realice los siguientes pasos:
 
-1. [Clone su repositorio de AEM Forms as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#accessing-git).
-1. Cree una carpeta dentro de la carpeta `[AEM Forms as a Cloud Service repository folder]/apps/`. Por ejemplo, cree una carpeta denominada `experience-league`
+1. [Clone su repositorio de AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#accessing-git).
+1. Crear una carpeta dentro de la carpeta `[AEM Forms as a Cloud Service repository folder]/apps/`. Por ejemplo, cree una carpeta denominada `experience-league`
 1. Vaya a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` y cree un `ClientLibraryFolder` como `clientlibs`.
 1. Cree una carpeta con el nombre `js`.
 1. Navegue hasta la carpeta `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js`. 
@@ -290,7 +290,7 @@ Vamos a añadir el siguiente código al archivo JavaScript para mostrar la respu
        git push
    ```
 
-1. [Ejecutar la canalización.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#setup-pipeline)
+1. [Ejecutar la canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#setup-pipeline). 
 
 Una vez que la canalización se haya ejecutado correctamente, el controlador de errores personalizado estará disponible en el editor de reglas del formulario adaptable. Ahora, vamos a comprender cómo configurar y utilizar un controlador de errores personalizado mediante el servicio Invocar del Editor de reglas de AEM Forms.
 

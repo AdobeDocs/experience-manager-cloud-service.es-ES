@@ -5,7 +5,7 @@ exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 41abdfcf142a3f39854978c5acf0e5d28872b3c4
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4415'
 ht-degree: 77%
@@ -23,7 +23,7 @@ Cuando un autor crea una página, debe seleccionar una plantilla, que se utiliza
 
 >[!NOTE]
 >
->[Las plantillas también están disponibles para crear páginas que se pueden editar con el editor universal.](/help/sites-cloud/authoring/universal-editor/templates.md)
+>[Las plantillas también están disponibles para crear páginas que se pueden editar con el editor universal](/help/sites-cloud/authoring/universal-editor/templates.md).
 
 Con el **Editor de plantillas**, la creación y el mantenimiento de plantillas no es una tarea exclusiva para desarrolladores. Un tipo de usuario avanzado, que se denomina **autor de plantillas**, puede crear plantillas. Los desarrolladores deben configurar el entorno, crear bibliotecas de cliente y crear los componentes que se van a utilizar, pero una vez que estos conceptos básicos están establecidos, el **autor de plantillas** tiene la flexibilidad de crear y configurar plantillas sin involucrar a un desarrollador.
 
@@ -95,7 +95,7 @@ Al crear una plantilla editable, debe hacer lo siguiente:
 >
 >Nunca ingrese información que deba ser [internacionalizada](/help/implementing/developing/extending/i18n/dev.md) en una plantilla.
 >
->Para los elementos de la plantilla como encabezados y pies de página que se deben localizar, aproveche las características de la [localización de los componentes principales.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=es)
+>Para elementos de plantilla como encabezados y pies de página que se deben localizar, use las [características de localización de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=es).
 
 ### Creación de una carpeta de plantillas: administrador {#creating-a-template-folder-admin}
 
@@ -210,7 +210,7 @@ Una plantilla puede estar disponible o no disponible para determinadas ramas de 
 
 Como la plantilla se toma como referencia cuando se representa la página, la plantilla completamente configurada debe publicarse para que esté disponible en el entorno de publicación.
 
-Plantillas de Publish usando la consola **[Plantillas.](/help/sites-cloud/administering/templates-console.md)**
+Plantillas Publish que usan la **[Consola de plantillas](/help/sites-cloud/administering/templates-console.md)**.
 
 ## Edición de plantillas: autores de plantillas   {#editing-templates-template-authors}
 
@@ -305,7 +305,7 @@ Una vez añadido, cada componente se marca con lo siguiente:
 
 >[!NOTE]
 >
->Aunque no sea una operación idéntica, la adición de componentes y recursos a una plantilla tiene muchas similitudes con acciones similares que se llevan a cabo al [crear páginas.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+>Aunque no sea una operación idéntica, la adición de componentes y recursos a una plantilla tiene muchas similitudes con acciones similares que se llevan a cabo al [crear páginas](/help/sites-cloud/authoring/page-editor/edit-content.md).
 
 #### Acciones de componente {#component-actions}
 
@@ -647,4 +647,4 @@ Al crear plantillas, debe tener en cuenta lo siguiente:
    >AEM proporciona advertencias explícitas al cambiar el estado de bloqueo de los componentes de las plantillas que ya no son borradores.
 
 1. [Creación de sus propias carpetas](#creating-a-template-folder-admin) para las plantillas específicas del sitio.
-1. [Publish usa tus plantillas](#publishing-a-template-template-author) desde la consola **[Plantillas.]**(/help/sites-cloud/administering/templates-console.md)
+1. [Publish usa tus plantillas](#publishing-a-template-template-author) desde la **[consola Plantillas]**(/help/sites-cloud/administering/templates-console.md).

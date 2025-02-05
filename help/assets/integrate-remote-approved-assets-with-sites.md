@@ -2,10 +2,10 @@
 title: Integración de AEM Assets remoto con AEM Sites
 description: AEM Obtenga información sobre cómo configurar y conectar sitios de con AEM Assets aprobados.
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 15%
+source-wordcount: '1028'
+ht-degree: 17%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 15%
 
 >[!AVAILABILITY]
 >
->La guía de funciones de Dynamic Media con OpenAPI ya está disponible en formato de PDF. Descargue toda la guía y utilice Adobe Acrobat AI Assistant para responder a sus consultas.
+>La guía de Dynamic Media con funciones de OpenAPI ya está disponible en formato de PDF. Descargue la guía completa y utilice el Asistente de IA de Adobe Acrobat para responder sus consultas.
 >
->[!BADGE PDF de la Guía de Dynamic Media con funciones OpenAPI]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE Guía en PDF de Dynamic Media con funciones OpenAPI]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 La administración eficaz de los recursos digitales es crucial para ofrecer experiencias de marca atractivas y coherentes en varias plataformas en línea. Dynamic Media con funciones OpenAPI mejora la administración de recursos digitales al permitir una integración perfecta entre AEM Sites y los as a Cloud Service de los AEM Assets. AEM Esta innovadora función le permite compartir y administrar fácilmente diferentes tipos de recursos digitales aprobados en varios entornos de trabajo, lo que optimiza los flujos de trabajo para los autores de sitios y editores de contenido.
 

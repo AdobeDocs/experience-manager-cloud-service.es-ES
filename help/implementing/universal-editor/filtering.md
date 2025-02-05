@@ -3,13 +3,13 @@ title: Filtrado de componentes
 description: Descubra cómo puede restringir los componentes permitidos por contenedor en el Editor universal mediante filtros de componente.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 48c1a109c060db4ce19bf645723357008d51c572
+exl-id: eeae8d7c-c563-4d9b-8c54-1098a4e98c18
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '151'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
-
 
 # Filtrado de componentes {#filtering-components}
 
@@ -53,4 +53,4 @@ Al establecer el atributo `components` en una definición de filtro en `null`, s
 
 >[!TIP]
 >
->Obtenga información acerca de otras opciones de personalización y extensión disponibles para el editor universal en el documento [Personalización y ampliación del editor universal.](/help/implementing/universal-editor/customizing.md)
+>Obtenga información acerca de otras opciones de personalización y extensión disponibles para el editor universal en el documento [Personalización y ampliación del editor universal](/help/implementing/universal-editor/customizing.md).

@@ -5,10 +5,10 @@ exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -79,7 +79,7 @@ En la IU **Configuración de traducción**, hay un número de opciones disponibl
 1. Seleccione el contexto que acaba de crear y luego seleccione **Editar**. Esto abre el **Editor de reglas de traducción** para configurar las propiedades.
    ![Editor de reglas de traducción](assets/translation-rules-editor.png)
 1. De forma predeterminada, todas las configuraciones se heredan de la ruta principal, en este caso, `/content/dam`. Desmarque la opción **Heredar de`/content/dam`** para añadir campos adicionales a la configuración.
-1. Una vez desmarcado, en la sección **General** de la lista, añada los nombres de propiedad de los modelos de fragmento de contenido que haya [identificado anteriormente como campos para traducción.](getting-started.md#content-models)
+1. Cuando esté desmarcada, en la sección **General** de la lista, agregue los nombres de propiedad de los modelos de fragmentos de contenido que [identificó anteriormente como campos para la traducción](getting-started.md#content-models).
    1. En el campo **Nueva propiedad**, introduzca el nombre de la propiedad. Las opciones **Traducir** y **Heredar** se marcan automáticamente.
    1. Seleccione **Añadir**.
    1. Repita estos pasos para todos los campos que debe traducir.
@@ -105,6 +105,6 @@ Aproveche este conocimiento y continúe con su recorrido de traducción de AEM s
 
 ## Recursos adicionales {#additional-resources}
 
-Aunque se recomienda pasar a la siguiente parte del recorrido de traducción sin encabezado al revisar el documento [Traducción de contenido](translate-content.md), los siguientes son algunos recursos opcionales que profundizan ciertos conceptos mencionados en este documento, pero que no son necesarios para continuar el recorrido sin encabezado.
+Aunque se recomienda pasar a la siguiente parte del recorrido de traducción sin encabezado revisando el documento [Traducir contenido](translate-content.md), los siguientes son algunos recursos opcionales extra. Profundizan en varios conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido sin encabezado.
 
 * [Identificación del contenido para traducir](/help/sites-cloud/administering/translation/rules.md): aprenda cómo las reglas de traducción identifican el contenido que necesita traducirse.

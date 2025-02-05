@@ -1,14 +1,14 @@
 ---
-title: Edición de las propiedades de página
+title: 'Edición de las propiedades de página  '
 description: AEM Obtenga información sobre cómo definir las propiedades necesarias para administrar una página en la administración de páginas en la.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2268'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -38,7 +38,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Marca**
 
-  Aplique una identidad de marca uniforme en todas las páginas adjuntando un slug de marca al título de cada página. Esta funcionalidad requiere el uso del componente de página de la versión 2.14.0 o posterior de los [Componentes principales.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
+  Aplique una identidad de marca uniforme en todas las páginas adjuntando un slug de marca al título de cada página. Esta funcionalidad requiere el uso del componente Página de la versión 2.14.0 o posterior de [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es).
 
    * **Anotaciones de marca**
 

@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo se utilizan las plantillas editabl
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 33eb71b2828314ee2c75206ef7034313e2638360
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3443'
 ht-degree: 4%
@@ -225,7 +225,7 @@ Para crear una carpeta, puede hacer lo siguiente:
 
 >[!NOTE]
 >
->En el [Explorador de configuración,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) puede editar la carpeta global y activar la opción **Plantillas editables** si desea crear plantillas dentro de esta carpeta; sin embargo, esta no es una práctica recomendada.
+>En el [Explorador de configuración](/help/implementing/developing/introduction/configurations.md#using-configuration-browser), puede editar la carpeta global y activar la opción **Plantillas editables** si desea crear plantillas dentro de esta carpeta; sin embargo, esta no es una práctica recomendada.
 
 ### ACL y grupos {#acls-and-groups}
 
@@ -467,7 +467,7 @@ Define el contenido inicial que tendrá una nueva página al crearla:
 
 ### Diseño {#layout}
 
-Al [editar una plantilla, puede definir el diseño](/help/sites-cloud/authoring/page-editor/templates.md), que usa [diseño interactivo estándar](/help/sites-cloud/administering/responsive-layout.md), que el autor de contenido puede [configurar en la página.](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+Al [editar una plantilla, puede definir el diseño](/help/sites-cloud/authoring/page-editor/templates.md), usa [diseño interactivo estándar](/help/sites-cloud/administering/responsive-layout.md), que el autor de contenido puede [configurar en la página](/help/sites-cloud/authoring/page-editor/responsive-layout.md).
 
 ### Políticas de contenido {#content-policies}
 

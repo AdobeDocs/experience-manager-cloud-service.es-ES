@@ -4,10 +4,10 @@ description: Notas de la versión 2021.5.0 de la versión de  [!DNL Adobe Experi
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 46%
+ht-degree: 45%
 
 ---
 
@@ -35,7 +35,7 @@ La de la siguiente versión (2021.6.0) será el 28 de junio de 2021.
 
 * [Desaprobación de API](/help/release-notes/deprecated-removed-features.md): hay disponible una lista de las API obsoletas más recientes para AEM as a Cloud Service.
 
-* [Complemento Maven del analizador de compilaciones de SDK de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=es): Actualice sus proyectos maven a la versión más reciente, que incluye una comprobación de API de Java obsoletas y otras mejoras.
+* [Complemento Maven de AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=es): Actualice sus proyectos maven a la versión más reciente, que incluye una comprobación de API de Java obsoletas y otras mejoras.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -70,7 +70,7 @@ La de la siguiente versión (2021.6.0) será el 28 de junio de 2021.
 
 #### Novedades de Dynamic Media {#what-is-new-dm}
 
-* La RGPD (proporción de píxeles de dispositivo) de imágenes inteligentes y la optimización del ancho de banda de la red le permiten ofrecer imágenes de la mejor calidad de forma eficaz, en dispositivos con pantallas de alta resolución y ancho de banda de red restringido. Para obtener más información, consulte [Preguntas frecuentes sobre imágenes inteligentes](/help/assets/dynamic-media/imaging-faq.md) y [Optimización de imágenes con los formatos de imagen de próxima generación WebP y AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+* La RGPD (proporción de píxeles de dispositivo) de imágenes inteligentes y la optimización del ancho de banda de la red le permiten ofrecer imágenes de la mejor calidad de forma eficaz, en dispositivos con pantallas de alta resolución y ancho de banda de red restringido. Para obtener más información, consulte [Preguntas frecuentes sobre imágenes inteligentes](/help/assets/dynamic-media/imaging-faq.md) y [Optimización de imágenes con los formatos de imagen de próxima generación WebP y AVIF](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4).
 * Se ha introducido la compatibilidad con el formato de imagen de próxima generación AVIF en la entrega de Dynamic Media (modificador de URL de fmt).
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -104,7 +104,7 @@ Esta sección describe las notas de la versión para Cloud Manager en AEM as a C
 ### Fecha de lanzamiento {#release-date-cm-may}
 
 La fecha de lanzamiento de Cloud Manager en AEM as a Cloud Service 2021.5.0 es el 6 de mayo de 2021.
-La próxima versión está planificada para el viernes, 03 de junio de 2021.
+La versión siguiente fue planificada para el viernes, 03 de junio de 2021.
 
 ### Novedades {#what-is-new-may}
 

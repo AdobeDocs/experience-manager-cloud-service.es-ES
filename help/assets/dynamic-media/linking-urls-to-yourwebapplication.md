@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Publishing,Upload,Viewer Presets,Image Presets,Video
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 4%
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 Sus sitios web y aplicaciones acceden a los servicios de Dynamic Media mediante llamadas URL. Después de publicar un recurso, Dynamic Media activa una cadena URL que hace referencia al recurso. Puede pegar estas direcciones URL en un explorador web para probarlas.
 
-Solo puede vincular a direcciones URL si *no* usa Adobe Experience Manager como WCM. La vinculación, en lugar de la incrustación, se utiliza cuando desea distribuir un reproductor de vídeo como ventana emergente o modal. Si usa Experience Manager como WCM, [agrega los recursos directamente en la página.](adding-dynamic-media-assets-to-pages.md)
+Solo puede vincular a direcciones URL si *no* usa Adobe Experience Manager como WCM. La vinculación, en lugar de la incrustación, se utiliza cuando desea distribuir un reproductor de vídeo como ventana emergente o modal. Si usa Experience Manager como WCM, [agrega los recursos directamente en la página](adding-dynamic-media-assets-to-pages.md).
 
 Para colocar estas cadenas de URL en las páginas web y aplicaciones, cópielas desde Dynamic Media.
 

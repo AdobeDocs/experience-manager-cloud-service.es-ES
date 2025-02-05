@@ -4,7 +4,7 @@ description: Configuración de OSGi con valores secretos y valores específicos 
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 role: Admin
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3321'
 ht-degree: 1%
@@ -22,7 +22,7 @@ AEM Puede administrar las opciones de configuración de los componentes de OSGi 
 
 >[!TIP]
 >
->Puede usar Cloud Manager para configurar variables de entorno. Para obtener más información, consulte la documentación [aquí.](/help/implementing/cloud-manager/environment-variables.md)
+>Puede usar Cloud Manager para configurar variables de entorno. Para obtener más información, consulte la documentación [aquí](/help/implementing/cloud-manager/environment-variables.md).
 
 ## Archivos de configuración de OSGi {#osgi-configuration-files}
 
@@ -187,15 +187,15 @@ Los nombres de los archivos de fábrica de configuración OSGi utilizan la conve
 1. Guardar los cambios en el nuevo archivo `.cfg.json`
 1. Añada y confirme su nuevo archivo de configuración OSGi en Git
 
-### AEM Generación de configuraciones de OSGi mediante el inicio rápido del SDK de {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
+### AEM Generación de configuraciones de OSGi mediante el inicio rápido de SDK de la {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
 
-AEM AEM La consola web del Jar de inicio rápido de SDK de la se puede utilizar para configurar componentes OSGi y exportar configuraciones OSGi como JSON. AEM AEM Esto resulta útil para configurar los componentes OSGi proporcionados por el administrador del proyecto, cuyas propiedades OSGi y sus formatos de valor pueden no ser bien entendidos por el desarrollador que define las configuraciones OSGi en el proyecto de.
+AEM La consola web del Jar de inicio rápido de SDK AEM se puede utilizar para configurar componentes OSGi y exportar configuraciones de OSGi como JSON. AEM AEM Esto resulta útil para configurar los componentes OSGi proporcionados por el administrador del proyecto, cuyas propiedades OSGi y sus formatos de valor pueden no ser bien entendidos por el desarrollador que define las configuraciones OSGi en el proyecto de.
 
 >[!NOTE]
 >
 >AEM La interfaz de usuario de configuración de la consola web de no escribe `.cfg.json` archivos en el repositorio. AEM Por lo tanto, tenga en cuenta este flujo de trabajo para evitar posibles comportamientos inesperados durante el desarrollo local, cuando las configuraciones de OSGi definidas por el proyecto pueden diferir de las configuraciones generadas.
 
-1. AEM AEM Inicie sesión en la consola web de inicio rápido del Jar de inicio rápido del SDK de la en `https://<host>:<port>/system/console` como usuario administrador
+1. AEM Inicie sesión en la consola web de la aplicación de inicio rápido de SDK AEM de la consola de la aplicación de inicio de sesión de la aplicación de inicio de sesión de la aplicación de en `https://<host>:<port>/system/console` como usuario administrador
 1. Vaya a **OSGi** > **Configuración**
 1. Para configurarlo, busque el componente OSGi y seleccione el título que desea editar
    ![Configuración de OSGi](./assets/configuring-osgi/configuration.png)

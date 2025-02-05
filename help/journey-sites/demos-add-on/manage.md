@@ -4,10 +4,10 @@ description: Obtenga información sobre las herramientas disponibles para ayudar
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '927'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -17,13 +17,13 @@ Obtenga información sobre las herramientas disponibles para ayudarle a administ
 
 ## La historia hasta ahora {#story-so-far}
 
-En el documento anterior del recorrido del complemento de demostraciones de referencia de AEM, [Creación de un sitio,](create-site.md) ha creado un nuevo sitio de muestra basado en las plantillas del complemento de demostraciones de referencia. Ahora debería hacer lo siguiente:
+AEM En el documento anterior del recorrido del complemento Demostraciones de referencia de la, [Crear sitio](create-site.md), creó un nuevo sitio de demostración basado en las plantillas del complemento Demostraciones de referencia. Ahora debería hacer lo siguiente:
 
 * Comprender cómo acceder al entorno de creación de AEM.
 * Saber cómo crear un sitio basado en una plantilla.
 * Entender los conceptos básicos para navegar por la estructura del sitio y editar una página.
 
-Si además [ha habilitado AEM Screens para su sitio de muestra,](screens.md) también puede hacer lo siguiente:
+Si también [habilitó AEM Screens para su sitio de demostración](screens.md), también debería:
 
 * Conocer los conceptos básicos de AEM Screens.
 * Comprender el contenido de la demostración de We.Cafe.

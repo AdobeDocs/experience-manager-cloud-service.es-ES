@@ -4,7 +4,7 @@ description: Con un diseño interactivo, las mismas experiencias se pueden mostr
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 0%
@@ -73,7 +73,7 @@ El [tutorial de WKND](develop-wknd-tutorial.md) utiliza esta estrategia para def
 
 ### AEM Uso de consultas de medios con páginas de {#using-media-queries-with-aem-pages}
 
-AEM [El proyecto de ejemplo WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) y [Arquetipo de proyecto de la](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) utilizan el [Componente principal de página,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html), que incluye los clientlibs a través de la directiva de página.
+AEM [El proyecto de ejemplo WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) y [Arquetipo de proyecto de la](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) utilizan el [componente principal de página](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html), que incluye los clientlibs a través de la directiva de página.
 
 Si su propio componente de página no se basa en el componente principal de página, también puede incluir la carpeta de biblioteca de cliente en el script HTL o JSP del mismo. Al hacerlo, se genera y se hace referencia al archivo CSS con las consultas de medios necesarias para que funcione la cuadrícula adaptable.
 

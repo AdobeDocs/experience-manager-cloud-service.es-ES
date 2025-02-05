@@ -4,10 +4,10 @@ description: Cree una configuración como primer paso para empezar a utilizar si
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '325'
-ht-degree: 92%
+ht-degree: 74%
 
 ---
 
@@ -21,7 +21,7 @@ El explorador de configuración proporciona una API de configuración genérica,
 
 En el contexto de la administración de contenido sin encabezado en AEM, piense en una configuración como lugar de trabajo dentro de AEM donde puede crear los modelos de contenido, que definen la estructura de su contenido futuro y los fragmentos de contenido. Puede tener varias configuraciones para separar estos modelos.
 
-Si está familiarizado con las [plantillas de página en una implementación de AEM e de pila completa](/help/sites-cloud/authoring/page-editor/templates.md), el uso de configuraciones para la administración de modelos de contenido es similar.
+AEM Si está familiarizado con las [plantillas de página en una implementación de pila completa de los modelos de contenido](/help/sites-cloud/authoring/page-editor/templates.md), el uso de configuraciones para la administración de modelos de contenido es similar.
 
 ## Cómo crear una configuración {#how-to-create-a-configuration}
 
@@ -49,8 +49,8 @@ Si es necesario, puede crear varias configuraciones. Las configuraciones tambié
 
 ## Siguientes pasos {#next-steps}
 
-Con esta configuración, ahora puede pasar a la segunda parte de la guía de introducción y [crear modelos de fragmentos de contenido.](create-content-model.md)
+Con esta configuración, ahora puede pasar a la segunda parte de la guía de introducción y [crear modelos de fragmentos de contenido](create-content-model.md).
 
 >[!TIP]
 >
->Para obtener información detallada acerca del Explorador de configuración, [consulte la documentación del Explorador de configuración](/help/implementing/developing/introduction/configurations.md).
+>Para obtener información detallada acerca del Explorador de configuración, consulte la [documentación del Explorador de configuración](/help/implementing/developing/introduction/configurations.md).

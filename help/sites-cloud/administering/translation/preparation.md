@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 73%
+ht-degree: 66%
 
 ---
 
@@ -18,7 +18,7 @@ Por lo general, los sitios web multilingües ofrecen contenido en varios idiomas
 
 >[!TIP]
 >
->Si acaba de empezar a traducir contenido, consulte el [Recorrido de traducción de Sites,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante las poderosas herramientas de traducción de AEM, ideal para aquellos que no tengan experiencia con la traducción o con AEM.
+>Si no tiene experiencia en la traducción de contenido, consulte el [Recorrido de traducción de sitios](/help/journey-sites/translation/overview.md), que es una ruta guiada a través de la traducción del contenido de AEM Sites AEM AEM mediante herramientas de traducción potentes que se utilizan para traducir contenido. Es ideal para aquellos que no tienen experiencia en traducción o en traducción de sitios.
 
 El [Sitio del tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) incluye varias ramas de idioma y utiliza la siguiente estructura:
 
@@ -61,7 +61,7 @@ Siga estos pasos para preparar su sitio para la traducción:
 1. Cree el contenido del maestro de idioma.
 1. Cree la raíz de idioma de cada copia de idioma para su sitio. Por ejemplo, la copia en francés del sitio de muestra de WKND es `/content/wknd/language-masters/fr`.
 
-Después de preparar el contenido para la traducción, puede crear automáticamente las páginas que faltan en las copias de idioma y en los proyectos de traducción asociados. (Consulte [Creación de un proyecto de traducción](managing-projects.md).) Para obtener una descripción general del proceso de traducción de contenido en AEM, consulte [Traducción de contenido para sitios web multilingües](overview.md).
+Después de preparar el contenido para la traducción, puede crear automáticamente las páginas que faltan en las copias de idioma y en los proyectos de traducción asociados. AEM (Consulte [Creación de un proyecto de traducción](managing-projects.md).) Para obtener una descripción general del proceso de traducción de contenido en la documentación, consulte [Traducción de contenido para sitios web multilingües](overview.md).
 
 ## Creación de una raíz de idioma {#creating-a-language-root}
 

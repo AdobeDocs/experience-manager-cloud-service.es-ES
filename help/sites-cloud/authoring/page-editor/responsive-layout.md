@@ -5,7 +5,7 @@ exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1740'
 ht-degree: 78%
@@ -137,7 +137,7 @@ Un **contenedor de diseño** es un sistema de párrafos que:
 
 >[!NOTE]
 >
->Si no está disponible, el **contenedor de diseño** debe estar [activado explícitamente para un sistema de párrafos o una página.](/help/sites-cloud/administering/responsive-layout.md)
+>Si no está disponible, el **contenedor de diseño** debe estar [activado explícitamente para un sistema de párrafos o una página](/help/sites-cloud/administering/responsive-layout.md).
 
 1. El **contenedor de diseño** está disponible como componente estándar en el [navegador de componentes](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). Desde aquí puede arrastrarlo a la ubicación deseada en la página tras la cual podrá ver el marcador de posición **Arrastrar componentes aquí**.
 1. A continuación, puede agregar componentes al contenedor del diseño. Estos componentes contendrán el contenido real:
@@ -184,7 +184,7 @@ El modo **Diseño** puede iniciarse de dos formas.
 * Mediante el uso del [menú de modo de la barra de herramientas](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) y seleccionando el modo **Diseño**.
    * Seleccione el modo **Diseño** del mismo modo que si desea cambiar al modo **Editar** o **Segmentación**.
    * El modo **Diseño** se mantiene y no abandona el modo **Diseño** hasta que se selecciona otro modo a través del selector correspondiente.
-* Al [editar un componente individual.](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout)
+* Al [editar un componente individual](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout).
    * Mediante la opción **Diseño** en el menú de acción rápida del componente, puede cambiar al modo **Diseño**.
    * El modo **Diseño** persiste mientras se edita el componente y vuelve al modo **Editar** en cuanto el enfoque cambia a otro componente.
 

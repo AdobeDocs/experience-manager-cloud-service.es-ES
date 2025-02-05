@@ -4,10 +4,10 @@ description: Utilice modelos de fragmentos de contenido de AEM para definir la e
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '375'
-ht-degree: 83%
+ht-degree: 81%
 
 ---
 
@@ -38,7 +38,7 @@ Un administrador solo tendría que crear carpetas ocasionalmente para organizar 
    ![Crear carpeta](../assets/assets-folder-create.png)
 1. Seleccione la carpeta que ha creado pasando el puntero sobre ella y pulsando la marca de verificación. A continuación, seleccione **Propiedades** en la barra de herramientas (o utilice el `p` [método abreviado de teclado](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)).
 1. En la ventana **Propiedades**, seleccione la pestaña **Servicios de nube**.
-1. Para la **Configuración de nube**, seleccione la [configuración que creó anteriormente.](create-configuration.md)
+1. Para la **configuración de nube**, seleccione la [configuración que creó anteriormente](create-configuration.md).
    ![Configurar la carpeta de recursos](../assets/assets-folder-configure.png)
 1. Seleccione **Guardar y cerrar**.
 1. Seleccione **Aceptar** en la ventana de confirmación.

@@ -4,10 +4,10 @@ description: Comprenda las configuraciones de Adobe Experience Manager AEM AEM (
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1482'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -78,7 +78,7 @@ AEM Es sencillo crear una configuración en mediante el Explorador de configurac
 
    * El **Título** debe ser descriptivo.
    * El **nombre** se convierte en el nombre de nodo del repositorio.
-      * AEM Se genera automáticamente en función del título y se ajusta según [convenciones de nomenclatura de los nombres de los usuarios](naming-conventions.md).
+      * Se genera automáticamente en función del título y se ajusta según las [convenciones de nomenclatura de AEM](naming-conventions.md).
       * Se puede modificar si es necesario.
 1. Compruebe el tipo de configuraciones que desea permitir.
    * [Segmentos de Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -200,7 +200,7 @@ AEM Para admitir esto, la búsqueda de configuración tiene un mecanismo de here
 
 AEM Las configuraciones en las configuraciones de los segmentos de la lista se basan en Configuraciones según el contexto de Sling. Los paquetes Sling proporcionan una API de servicio que se puede utilizar para obtener configuraciones según el contexto. Las configuraciones según el contexto son configuraciones que están relacionadas con un recurso de contenido o un árbol de recursos como se [describió en el ejemplo anterior](#developer-example).
 
-Para obtener más información acerca de configuraciones según el contexto, ejemplos y cómo usarlas, consulte la [documentación de Sling.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
+Para obtener más información sobre configuraciones según el contexto, ejemplos y cómo usarlos, consulte la [documentación de Sling](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
 
 ### Consola web de ConfMgr {#confmgr-web-console}
 
