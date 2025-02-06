@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 17489f3f65a71c6fc0f805af37cb233ab1c5470a
 workflow-type: tm+mt
-source-wordcount: '4011'
-ht-degree: 82%
+source-wordcount: '4129'
+ht-degree: 79%
 
 ---
 
@@ -275,6 +275,28 @@ Puede agregar páginas, activos o etiquetas al trabajo de su proyecto de traducc
 >[!TIP]
 >
 >Este método agrega páginas/activos y sus tareas secundarias al proyecto. Seleccione **Activo/Página (sin tareas secundarias)** si solo desea agregar los elementos principales.
+
+### Adición de diccionarios i18n a un trabajo de traducción {#adding-i-n-dictionaries-to-a-translation-job}
+
+Puede añadir páginas, recursos, etiquetas o diccionarios i18n al trabajo de traducción de su proyecto de traducción. Para añadir un diccionario i18n:
+
+1. En la parte inferior del mosaico Trabajo de traducción del proyecto de traducción, haga clic en los puntos suspensivos.
+
+   ![Mosaico de trabajo de traducción](../assets/translation-job.png)
+
+1. Haga clic en Agregar y en Diccionario I18N.
+
+   ![Agregar diccionario i18n](../assets/add-i18n.png)
+
+1. Seleccione el **directorio raíz** y el diccionario (si es necesario) que desea agregar y, a continuación, seleccione **Agregar**.
+
+   ![Seleccionar diccionario i18N](../assets/select-i18n.png)
+
+El diccionario se encuentra ahora en el trabajo de traducción y se puede iniciar el proceso de traducción para crear las copias de idioma del diccionario en `/content/cq:i18n` y enviar esas copias de idioma del diccionario para su traducción.
+
+>[!NOTE]
+>
+>Para obtener más información sobre diccionarios i18n, lea [Uso del traductor para administrar diccionarios](/help/implementing/developing/extending/i18n/translator.md).
 
 ### Adición de etiquetas a un trabajo de traducción {#adding-tags-to-a-translation-job}
 
