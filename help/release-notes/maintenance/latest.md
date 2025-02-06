@@ -4,9 +4,9 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
+source-git-commit: 636183e0597bed24b3e437ed53a35c9e64ac0504
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '950'
 ht-degree: 21%
 
 ---
@@ -56,6 +56,11 @@ La activación de funcionalidades 2025.2.0 proporcionará el conjunto completo d
 
 ### Problemas solucionados {#fixed-issues-19352}
 
+* CQ-4356756: no traduzca la compatibilidad con recursos relacionados.
+* CQ-4358206: El Planificador de traducción repetida no funciona para proyectos de traducción.
+* CQ-4358126: no se puede seleccionar la subcarpeta de configuración en el servicio de nube de traducción.
+* FORMS-18098, FORMS-17954: El Forms adaptable no se puede cargar en el modo Internet Explorer del explorador Microsoft Edge.
+* FORMS-17162: la publicación de un recurso lleva a la ejecución de consultas OOTB que degradan el rendimiento de la publicación.
 * SITES-28415: Edge Delivery con editor universal: botón Corregir propiedades abiertas para hojas de cálculo.
 * SITES-26669: Edge Delivery con el editor universal: corrija los problemas al cargar archivos CSV codificados en UTF-8 con una BOM como hoja de cálculo.
 * SITES-26543: Edge Delivery con el editor universal: corrija bloques vacíos sin un modelo que procese el marcado incorrecto.
@@ -85,8 +90,6 @@ La activación de funcionalidades 2025.2.0 proporcionará el conjunto completo d
 * SITES-26660: la comparación de versiones de fragmentos de contenido puede romperse cuando el @ContentType es del tipo &quot;cadena&quot;.
 * SITES-26626: falta customErrorMessage en los campos numéricos y booleanos.
 * SITES-26268: Se ha devuelto un código de estado incorrecto si una referencia no es válida al crear un fragmento.
-* FORMS-18098, FORMS-17954: El Forms adaptable no se puede cargar en el modo Internet Explorer del explorador Microsoft Edge.
-* FORMS-17162: la publicación de un recurso lleva a la ejecución de consultas OOTB que degradan el rendimiento de la publicación.
 
 ### Problemas conocidos {#known-issues-19352}
 
