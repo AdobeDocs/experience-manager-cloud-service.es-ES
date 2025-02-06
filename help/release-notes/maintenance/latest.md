@@ -4,10 +4,10 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a3c414f9b5e575856a942e02661e8c70a7083495
+source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 89%
+source-wordcount: '919'
+ht-degree: 21%
 
 ---
 
@@ -16,69 +16,91 @@ ht-degree: 89%
 
 En la siguiente sección se describen las notas de la versión técnicas actuales sobre el mantenimiento de Experience Manager as a Cloud Service.
 
-## Versión 19149 {#19149}
+## Versión 19352 {#19352}
 
-A continuación se resumen las mejoras continuas de la versión de mantenimiento 19149, que se publicó el 21 de enero de 2025. La versión de mantenimiento anterior fue la 18751.
+A continuación se resumen las mejoras continuas para la versión de mantenimiento 19352, que se publicó el jueves, 05 de febrero de 2025. La versión de mantenimiento anterior fue la 19149.
 
-La activación de funcionalidades 2025.1.0 proporcionará el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
+La activación de funcionalidades 2025.2.0 proporcionará el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
-### Mejoras {#enhancements-19149}
+### Mejoras {#enhancements-19352}
 
-* ASSETS-45286: Mostrar progreso granular del trabajo asíncrono de archivado de descarga.
-* ASSETS-46296: Compatibilidad con plantillas de Dynamic Media en el selector de recursos.
-* ASSETS-44796: Activar eventos de Assets para trabajos de recursos asíncronos de DAM.
+* FORMS-13998: Añadir el componente Acordeón.
+* FORMS-17913: Agregar variante de tarjeta para el grupo de radio.
+* FORMS-17333: Habilitación de plantillas de correo electrónico de HTML AEM en el envío de formularios de.
+* FORMS-17702: habilite los PDF generados en las API de sincronización de salida para que se carguen en Azure Blob Storage.
+* SITES-28282: Edge Delivery con editor universal: proporcione la ruta base, el nombre del sitio y la organización como información de página para cualquier página.
+* SITES-27055: Edge Delivery con el editor universal: admite parámetros de consulta en el servlet proxy inverso.
+* SITES-26796: Edge Delivery con editor universal: admite columnas personalizadas para la hoja de cálculo de taxonomía.
+* SITES-26087: Edge Delivery con editor universal: admite la exportación de CSV para hojas de cálculo.
+* SITES-26265: Edge Delivery con el editor universal: muestra la cuenta de TA para integrarla con Edge Delivery en la interfaz de usuario de configuración.
+* SITES-20372: Edge Delivery con editor universal: habilite casos de uso básicos de MSM para hojas de cálculo.
+* SITES-26681: Edge Delivery con editor universal: admite el parámetro ?sheet= para las hojas de cálculo de taxonomía en el autor.
+* SITES-26479: [Esquema] Modelo de fragmento de contenido Punto final de estado de publicación programada.
+* SITES-25944: [Información general de Livecopy] agrega el estado &quot;Live Copy actualizado con herencia limitada&quot;.
+* SITES-28713: [V2] Agregue compatibilidad con datos estructurados al raspador de contenido.
+* SITES-27896: CommentsTab se abre automáticamente al recibir una notificación.
+* SITES-26720: no se debe permitir al usuario seleccionar una colección completa del selector de recursos.
+* SITES-27875: permite mover de forma predeterminada cualquier elemento editable dentro de un contenedor.
+* SITES-28340: complemento del servicio de editor universal de Dark Alley.
+* SITES-26098: Posibilidad de evitar la publicación de páginas referenciadas al publicar un fragmento de contenido.
+* SITES-27789: compatibilidad del atributo de datos data-aue-component en el DOM.
+* SITES-25997: mejora las variaciones para admitir la fecha de modificación.
+* SITES-28023: salida de GraphQL para referencias de recursos remotos (repositorio + ID de recurso).
+* SITES-26058: Punto final del estado de publicación programada del modelo de fragmento de contenido.
+* SITES-25108: migración de modelos para referencias de UUID.
+* SITES-26630: punto final del estado de publicación programada del fragmento de contenido para varios fragmentos de contenido.
+* SITES-23432: mejore la capacidad de eliminación de referencias.
+* SITES-25797: Compatibilidad con referencias de recursos externos: GraphQL.
+* SITES-17514: elimine la mejora del extremo para cancelar la publicación del fragmento de contenido.
+* SITES-14633: Validar el modelo de fragmento de contenido para crear cargas útiles antes de instalar: ejecución en seco.
 
-### Problemas solucionados {#fixed-issues-19149}
+### Problemas solucionados {#fixed-issues-19352}
 
-* GRANITE-55074: Asegurarse de que los encabezados de respuesta de CORS estén configurados en respuestas de error.
-* ASSETS-43755: Mejoras de escalabilidad relacionadas con recursos en bloque.
-* ASSETS-45399: Redirigir a la consola de Assets después de crear una live-copy de recursos.
-* ASSETS-45462: Problemas de almacenamiento en caché del explorador con miniaturas de carpetas personalizadas.
-* ASSETS-46398: Ocultar las acciones de descarga y reprocesamiento de plantillas de DM.
-* ASSETS-44484: Problemas al volver a guardar la configuración de los recursos de red.
-* ASSETS-44122: El trabajo de copia asíncrona de recursos no cambia el nombre de la carpeta de destino al copiar en la carpeta actual.
-* ASSETS-44463: El botón Descargar CSV no está visible durante la exportación de metadatos correcta.
-* ASSETS-45134: Mover el trabajo con el título de destino anula todos los títulos de carpeta.
-* ASSETS-45137: Conflictos con las cargas masivas a través de la vista de recursos.
-* ASSETS-45758: Las relaciones de recursos obtienen una animación infinita de ocupado/carga después de añadir una relación.
-* ASSETS-44148: el evento NODE_MOVED en AEM puede provocar NPE falso en los registros.
-* ASSETS-28607: Error de JS al configurar la miniatura de vídeo personalizada.
-* GRANITE-55781: Mejorar la sincronización de grupos entre Adobe Developer Console y AEM. Más detalles en [Cambios en la sincronización de grupos de usuarios y perfil de producto](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization).
-* GRANITE-55754: Asegurarse de que los scripts de inicio de SDK admitan Java 21.
-* GRANITE-54248: No se puede desplazar por todos los elementos de la carpeta de recursos grandes.
-* SCRNS-4597: Mejoras en la vista de listas de resultados de búsqueda.
+* SITES-28415: Edge Delivery con editor universal: botón Corregir propiedades abiertas para hojas de cálculo.
+* SITES-26669: Edge Delivery con el editor universal: corrija los problemas al cargar archivos CSV codificados en UTF-8 con una BOM como hoja de cálculo.
+* SITES-26543: Edge Delivery con el editor universal: corrija bloques vacíos sin un modelo que procese el marcado incorrecto.
+* SITES-26857: Edge Delivery con editor universal: corrija que el token de autenticación del sitio sea visible en la interfaz de usuario para configuraciones basadas en archivos.
+* SITES-26662: Edge Delivery con editor universal: solucione problemas con metadatos masivos que distinguen entre mayúsculas y minúsculas.
+* SITES-28133: Publish para &quot;Previsualizar&quot; está haciendo que el contenido esté disponible en producción.
+* SITES-27187: la activación programada de la página/recurso, incluidas las referencias (experimental), no se pueden publicar referencias.
+* SITES-27264: 2 pruebas de Selenium relacionadas con la creación de LiveCopy y los fragmentos de contenido fallan de forma consistente en la página maestra.
+* SITES-26559: Anclar la consulta de modelos de fragmento de contenido al índice cqPageLucene.
+* SITES-24469: el elemento interactivo no es accesible mediante el teclado.
+* Los botones SITES-24518: Nombre y Modelo de la tabla Referencia principal no son accesibles mediante el teclado.
+* SITES-27937: las restricciones de UISchema se establecen en null después de actualizar el modelo.
+* SITES-27852: falta el esquema UIS del modelo en Categorizaciones.
+* SITES-27904: falta el esquema de metadatos en los modelos de fragmento de contenido de lista/búsqueda para una proyección completa.
+* SITES-26827: La lista de fragmentos termina en un bucle infinito.
+* SITES-27678: [Rendimiento] Impide la captura innecesaria de _referencias.
+* SITES-27589: error de actualización de UUID para modelos de fragmento de contenido con varios campos de referencia de contenido/fragmento.
+* SITES-26679: cancelar la publicación de los modelos de fragmentos de contenido solo debe validar las referencias publicadas.
+* SITES-26666: referencesTree y referencias que devuelven puntos de conexión con resultados diferentes.
+* GET SITES-26499: Orden incorrecto del valor del campo de etiqueta en los fragmentos y el PATCH aleatorizan el orden.
+* SITES-26585: corrija un error de descripción pequeña en el esquema.
+* SITES-26647: la validación de referencia de Eliminar extremo y UnpublishFragments puede fallar para usuarios no administradores.
+* SITES-26458: [Modelo de fragmento de contenido de búsqueda] Corrija el filtrado por estado de replicación.
+* SITES-23513: [Editor del modelo de fragmento de contenido] La validación falla para la propiedad &quot;Referencia de fragmento&quot; - &quot;Modelo de fragmento de contenido permitido&quot;.
+* SITES-26575: la cancelación de la publicación de un fragmento de la vista previa debe actualizar el previewStatus.
+* SITES-26571: las referencias de página no se pueden guardar cuando FT_SITES-12435 está habilitado.
+* SITES-26660: la comparación de versiones de fragmentos de contenido puede romperse cuando el @ContentType es del tipo &quot;cadena&quot;.
+* SITES-26626: falta customErrorMessage en los campos numéricos y booleanos.
+* SITES-26268: Se ha devuelto un código de estado incorrecto si una referencia no es válida al crear un fragmento.
+* FORMS-18098, FORMS-17954: El Forms adaptable no se puede cargar en el modo Internet Explorer del explorador Microsoft Edge.
+* FORMS-17162: la publicación de un recurso lleva a la ejecución de consultas OOTB que degradan el rendimiento de la publicación.
 
-
-### Problemas conocidos {#known-issues-19149}
+### Problemas conocidos {#known-issues-19352}
 
 Ninguna.
 
-### Características y API obsoletas {#deprecated-19149}
+### Características y API obsoletas {#deprecated-19352}
 
 Las funciones y API obsoletas y eliminadas de AEM as a Cloud Service se detallan en el documento [Funciones y API obsoletas y eliminadas](/help/release-notes/deprecated-removed-features.md).
 
-#### Cambios en la sincronización de grupo de usuarios y perfil de producto
+### Correcciones de seguridad {#security-19352}
 
-Cuando se utiliza Adobe Admin Console para la administración de permisos, NO SE DEBEN utilizar los siguientes grupos porque ya no se sincronizarán más con AEM:
-* Grupos de AEM que terminan con _GROUP_NAME_SUFFIX.
-* Perfiles de producto de otros entornos, programas o productos.
+AEM as a Cloud Service se dedica a optimizar la seguridad y el rendimiento de su plataforma. Esta versión de mantenimiento aborda 36 vulnerabilidades identificadas, reforzando nuestro compromiso con una sólida protección del sistema.
 
-Para obtener más información, compruebe [Cambios en la sincronización de grupos de usuarios y perfil de producto](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization).
-
-#### SPA Obsolescencia del editor de {#deprecate-spa-editor}
-
-SPA [El Editor de la](/help/implementing/developing/hybrid/introduction.md) ha quedado obsoleto para nuevos proyectos que comienzan con la versión 2025.1.0. SPA El Editor de segmentos sigue siendo compatible con los proyectos existentes, pero no debe utilizarse para nuevos proyectos.
-
-AEM Los editores preferidos para administrar contenido sin encabezado en las son:
-
-* [Editor universal](/help/edge/wysiwyg-authoring/authoring.md) para la edición visual.
-* [Editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) para la edición basada en formularios.
-
-### Correcciones de seguridad {#security-19149}
-
-AEM as a Cloud Service se dedica a optimizar la seguridad y el rendimiento de su plataforma. Esta versión de mantenimiento aborda 4 vulnerabilidades identificadas, reforzando nuestro compromiso con una sólida protección del sistema.
-
-### Tecnologías integradas {#embedded-tech-19149}
+### Tecnologías integradas {#embedded-tech-19352}
 
 | Tecnología | Versión | Vínculo |
 |---|---|---|

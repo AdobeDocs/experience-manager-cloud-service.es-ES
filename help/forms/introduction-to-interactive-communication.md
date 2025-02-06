@@ -3,7 +3,7 @@ title: Introducción a la comunicación interactiva
 description: Diseñe comunicaciones dinámicas impulsadas por datos con facilidad con las comunicaciones interactivas de AEM Forms
 feature: Release Information
 role: Admin
-source-git-commit: 2f4fd0c380c612042cfe5d755b0b1e5ddc7e7c88
+source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 3%
@@ -18,12 +18,12 @@ Puede utilizar nuestra intuitiva herramienta de diseño gráfico de apuntar y ha
 
 Desde las instituciones financieras que generan estados de cuenta hasta las agencias gubernamentales que simplifican los avisos de beneficios, las comunicaciones interactivas son la herramienta para crear correspondencia de alta calidad, segura y compatible con la ley con facilidad y eficiencia.
 
-
-[!VIDEO](https://video.tv.adobe.com/v/3444094/)
+>[!VIDEO](https://video.tv.adobe.com/v/3444094/)
 
 <!-- ![Interactive Communication Editor](/help/assets/ic-editor.png)
 
 -->
+
 ## Capacidades principales
 
 Las funciones principales del editor de comunicaciones interactivas son:
