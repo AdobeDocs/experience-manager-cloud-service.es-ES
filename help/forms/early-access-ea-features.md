@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 3bd7b574b34d09b3a205cf72b307d459efc00eab
+source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
 workflow-type: tm+mt
-source-wordcount: '1998'
-ht-degree: 30%
+source-wordcount: '2056'
+ht-degree: 29%
 
 ---
 
@@ -111,7 +111,19 @@ Básicamente, AEM Forms to Marketo Connector le ayuda a aprovechar las ventajas 
 
 ### Plantillas de correo electrónico de HTML en Forms adaptable
 
-El Forms adaptable permite utilizar plantillas de correo electrónico de HTML. Las plantillas de correo electrónico de HTML le permiten enviar correos electrónicos enriquecidos, personalizados y visualmente atractivos cuando se envía un formulario. Estos correos electrónicos se pueden personalizar con los datos del formulario y mejorar mediante varias etiquetas de correo electrónico, como imágenes y vínculos. Con Forms adaptable, puede cargar un archivo que contenga una plantilla de HTML o utilizar un editor de texto sin formato para crear estas plantillas.
+
+El Forms adaptable le permite usar [plantillas de correo electrónico de HTML](/help/forms/html-email-templates-in-adaptive-forms.md). Las plantillas de correo electrónico de HTML le permiten enviar correos electrónicos enriquecidos, personalizados y visualmente atractivos cuando se envía un formulario. Estos correos electrónicos se pueden personalizar con los datos del formulario y mejorar mediante varias etiquetas de correo electrónico, como imágenes y vínculos. Con Forms adaptable, puede cargar un archivo que contenga una plantilla de HTML o utilizar un editor de texto sin formato para crear estas plantillas.
+
+![plantillas de correo electrónico de HTML](/help/forms/assets/html-email.png)
+
+### Acción de envío de servicios web RESTful
+
+Ahora, los Forms adaptables pueden enviar sin problemas los datos capturados a puntos de conexión REST externos autenticados con la nueva acción de envío de los servicios web RESTful:
+
+* Estándares admitidos: Swagger 2.0 y 3.0 para una fácil integración de API
+* Autenticación segura: OAuth 2.0, autenticación básica, clave de API y autenticación personalizada
+* Formatos de datos flexibles: datos de formulario de varias partes, JSON y con codificación URL (pares clave-valor)
+
 
 
 ### Compatibilidad con idiomas de derecha a izquierda (RTL)
@@ -190,7 +202,7 @@ El almacenamiento de PDF en Azure Blob Storage permite una administración centr
 
 * **Rutas de almacenamiento personalizables**: La capacidad de definir rutas de directorio personalizadas garantiza que los PDF generados se almacenen en ubicaciones organizadas y específicas de la aplicación, lo que mejora la administración de archivos.
 
-## Consulte también
+## Ver también
 
 * [Últimas innovaciones en AEM Forms](/help/forms/latest-innovations.md)
 
