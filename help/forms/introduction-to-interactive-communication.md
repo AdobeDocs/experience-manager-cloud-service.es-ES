@@ -3,15 +3,12 @@ title: Introducción a la comunicación interactiva
 description: Diseñe comunicaciones dinámicas impulsadas por datos con facilidad con las comunicaciones interactivas de AEM Forms
 feature: Release Information
 role: Admin
-hide: true
-hidefromtoc: true
-source-git-commit: a771aa7e683cfbcacc8a9d5765c63d50169a2756
+source-git-commit: 2f4fd0c380c612042cfe5d755b0b1e5ddc7e7c88
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 4%
+source-wordcount: '306'
+ht-degree: 3%
 
 ---
-
 
 # Comunicaciones interactivas
 
@@ -21,8 +18,12 @@ Puede utilizar nuestra intuitiva herramienta de diseño gráfico de apuntar y ha
 
 Desde las instituciones financieras que generan estados de cuenta hasta las agencias gubernamentales que simplifican los avisos de beneficios, las comunicaciones interactivas son la herramienta para crear correspondencia de alta calidad, segura y compatible con la ley con facilidad y eficiencia.
 
-![Editor de comunicación interactiva](/help/forms/assets/ic-editor.png)
 
+[!VIDEO](https://video.tv.adobe.com/v/3444094/)
+
+<!-- ![Interactive Communication Editor](/help/assets/ic-editor.png)
+
+-->
 ## Capacidades principales
 
 Las funciones principales del editor de comunicaciones interactivas son:
@@ -41,14 +42,11 @@ Las funciones principales del editor de comunicaciones interactivas son:
 | **Integración en la nube** | Editar documentos directamente en AEM Forms as a Cloud Service |
 
 
-## Incorporación
+## Introducción
 
-El editor de comunicaciones interactivas está disponible en el programa de acceso anticipado para implementaciones as a Cloud Service de Forms. Para solicitar acceso, envíe un correo electrónico con el identificador de su organización y los detalles del programa para sus implementaciones as a Cloud Service de Forms a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) desde su dirección oficial. Una vez que se le proporcione acceso, comience [a crear su primera correspondencia](/help/forms/create-your-first-communication.md)
-
-
-
-
-
+1. **Solicitar acceso**: Envíe un correo electrónico a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) desde su dirección oficial
+2. **Configuración del administrador**: el Adobe habilitará el acceso y proporcionará privilegios de administrador
+3. **Empiece a crear**: Empiece con su primera correspondencia con nuestro [editor intuitivo](https://video.tv.adobe.com/v/3444094/).
 
 
 
@@ -122,10 +120,8 @@ With Interactive Communication, you can integrate PDF documents into existing wo
 
 ## Siguiente
 
-* [Crear su primera correspondencia](/help/forms/create-your-first-communication.md)
-* [Problemas más frecuentes](/help/forms/interactive-communications-faq.md)
+* Crear su primera correspondencia
 * Familiarícese con terminología y conceptos
 * Tutorial del editor de comunicaciones interactivas
 * Creación de un fragmento
 * Previsualizar y probar una correspondencia
-
