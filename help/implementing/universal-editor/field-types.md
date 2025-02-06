@@ -4,9 +4,9 @@ description: Obtenga información acerca de los campos y los tipos de componente
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: a27da2d6d675d68d69071d0b393ad5e0f82bb7ae
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1353'
 ht-degree: 13%
 
 ---
@@ -305,11 +305,13 @@ Un tipo de componente contenedor permite agrupar componentes. Ofrece una configu
 
 #### Fragmento de contenido {#content-fragment}
 
-El selector de fragmentos de contenido se puede usar para seleccionar un [fragmento de contenido](/help/sites-cloud/authoring/fragments/content-fragments.md) y sus variaciones (si es necesario). Ofrece una configuración y validación adicionales.
+El selector de fragmentos de contenido se puede usar para seleccionar un [fragmento de contenido](/help/sites-cloud/authoring/fragments/content-fragments.md) y sus variaciones (si es necesario). Ofrece una configuración adicional.
 
 | Configuración | Tipo de valor | Descripción | Requerido |
 |---|---|---|---|
 | `variationName` | `string` | Nombre de variable para almacenar la variación seleccionada. Si no se define, no se muestra ningún selector de variaciones | No |
+
+También ofrece un tipo de validación adicional.
 
 | Tipo de validación | Tipo de valor | Descripción | Requerido |
 |---|---|---|---|
@@ -444,11 +446,13 @@ También ofrece un tipo de validación adicional.
 
 #### Fragmento de experiencias {#experience-fragment}
 
-El selector Fragmento de experiencia se puede usar para seleccionar un [Fragmento de experiencia](/help/sites-cloud/authoring/fragments/experience-fragments.md) y sus variaciones (si es necesario). Ofrece una configuración y validación adicionales.
+El selector Fragmento de experiencia se puede usar para seleccionar un [Fragmento de experiencia](/help/sites-cloud/authoring/fragments/experience-fragments.md) y sus variaciones (si es necesario). Ofrece una configuración adicional.
 
 | Configuración | Tipo de valor | Descripción | Requerido |
 |---|---|---|---|
 | `variationName` | `string` | Nombre de variable para almacenar la variación seleccionada. Si no se define, no se muestra ningún selector de variaciones | No |
+
+También ofrece un tipo de validación adicional.
 
 | Tipo de validación | Tipo de valor | Descripción | Requerido |
 |---|---|---|---|
