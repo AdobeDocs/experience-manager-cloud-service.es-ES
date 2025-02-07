@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: 20db0990c506aeb473b71132813cec053009275f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1750'
-ht-degree: 38%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ En la siguiente sección se describen las notas de la versión de la funcionalid
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de lanzamiento de [!DNL Adobe Experience Manager] como versión de funcionalidad actual (2025.1.0) de [!DNL Cloud Service] es el viernes, 30 de enero de 2025. La próxima versión de la funcionalidad (2025.2.0) está planificada para el viernes, 27 de febrero de 2025.
+La fecha de la versión de [!DNL Adobe Experience Manager] como versión de funcionalidad actual (2025.1.0) de [!DNL Cloud Service] es el 30 de enero de 2025. La próxima versión de funcionalidad (2025.2.0) está planificada para el 27 de febrero de 2025.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
@@ -46,77 +46,77 @@ Have a look at the January 2025 Release Overview video for a summary of the feat
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-**Los comentarios del editor de fragmentos de contenido ya están disponibles de forma general**
+**Los comentarios del editor de fragmentos de contenido ya están disponibles de forma generalizada**
 
-AEM AEM Colabore fácilmente con sus compañeros de trabajo al crear fragmentos de contenido de la mediante el uso del servicio de comentarios nuevo y modernizado en el Editor de fragmentos de contenido de la.
-[Más información](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring?#commenting-on-your-fragment).
+Colabore fácilmente con sus compañeros de trabajo para crear fragmentos de contenido de AEM mediante el uso del servicio de comentarios nuevos y modernizados en el Editor de fragmentos de contenido de AEM.
+[Más información](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring?#commenting-on-your-fragment).
 
-**Editor de fragmentos de contenido e interfaces de usuario de administración, compatibilidad actualizada con la versión de AEM as a Cloud Service**
+**Editor de fragmentos de contenido e interfaces de usuario de administración: compatibilidad actualizada con la versión de AEM as a Cloud Service**
 
-La versión mínima de AEM as a Cloud Service admitida para las nuevas interfaces de usuario de Administrador y Editor de fragmentos de contenido es ahora 2023.8.13099. Ya no se admiten las versiones anteriores a la versión de disponibilidad general de las nuevas interfaces de usuario
+La versión mínima de AEM as a Cloud Service compatible con las nuevas interfaces de usuario de Administrador y Editor de fragmentos de contenido es ahora 2023.8.13099. Las versiones anteriores a la versión de disponibilidad general de las nuevas interfaces de usuario ya no serán compatibles
 
 ### Programa para primeros usuarios {#sites-early-adopter}
 
-**Fragmentos de contenido mejorado**
+**Fragmentos de contenido mejorados**
 
-Se mejoró la referencia a [fragmento de contenido con referencias basadas en ID únicas](/help/headless/graphql-api/uuid-reference-upgrade.md), lo que ayuda a garantizar que las consultas de GraphQL de fragmentos de contenido individuales puedan permanecer estables incluso si el fragmento se movió a otra ubicación. Esto ahora es posible con consultas &quot;ByID&quot;. Aunque las rutas pueden cambiar, lo que potencialmente rompe las consultas &quot;ByPath&quot;, los UUID son estables. Los nuevos ID también se pueden devolver como propiedades en cualquier consulta u otra solicitud de API aplicable. Limitación actual (2025.1): Las referencias de página aún no son compatibles con los ID únicos. Si se hace referencia a las páginas en los fragmentos de contenido, esta capacidad no debe utilizarse. Se prevé eliminar esta limitación en la próxima versión de AEM as a Cloud Service.
+Se han mejorado las [referencias a fragmentos de contenido con referencias basadas en ID únicos](/help/headless/graphql-api/uuid-reference-upgrade.md), lo que ayuda a garantizar que las consultas de GraphQL de fragmentos de contenido individuales puedan permanecer estables incluso si el fragmento se movió a otra ubicación. Esto ahora es posible con las consultas &quot;ByID&quot;. Aunque las rutas pueden cambiar, lo que potencialmente rompe las consultas &quot;ByPath&quot;, los UUID son estables. Los nuevos ID también se pueden devolver como propiedades en cualquier consulta u otra solicitud de API aplicable. Limitación actual (2025.1): las referencias de página aún no son compatibles con ID únicos. Si se hace referencia a las páginas en los fragmentos de contenido, esta función no debe utilizarse. Se prevé eliminar esta limitación en la próxima versión de AEM as a Cloud Service.
 
 **AEM REST OpenAPI para la entrega de fragmentos de contenido**
 
-AEM La API abierta de [REST para la entrega de fragmentos de contenido](/help/headless/aem-rest-openapi-content-fragment-delivery.md) ya está disponible para AEM as a Cloud Service.
+[AEM REST OpenApi para la entrega de fragmentos de contenido](/help/headless/aem-rest-openapi-content-fragment-delivery.md) ya está disponible para AEM as a Cloud Service.
 
 ### Funciones en desuso {#sites-deprecated}
 
-#### SPA Editor de {#spa-editor}
+#### Editor de SPA  {#spa-editor}
 
-SPA [El Editor de la](/help/implementing/developing/hybrid/introduction.md) ha quedado obsoleto para nuevos proyectos que comienzan con la versión 2025.1.0. SPA El Editor de segmentos sigue siendo compatible con los proyectos existentes, pero no debe utilizarse para nuevos proyectos.
+El [Editor de SPA](/help/implementing/developing/hybrid/introduction.md) ha quedado obsoleto para nuevos proyectos a partir de la versión 2025.1.0. El editor de SPA sigue siendo compatible con los proyectos existentes, pero no debe utilizarse en nuevos proyectos.
 
-AEM Los editores preferidos para administrar contenido sin encabezado en las ahora son:
+Los editores preferidos para administrar contenido sin encabezado en AEM ahora son:
 
-* [Editor universal](/help/edge/wysiwyg-authoring/authoring.md) para la edición visual.
-* [Editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) para la edición basada en formularios.
+* [El editor universal](/help/edge/wysiwyg-authoring/authoring.md) para la edición visual.
+* [El editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) para la edición de contenido sin encabezado basada en formularios.
 
-#### Funciones del PWA {#pwa-features}
+#### Funciones de PWA {#pwa-features}
 
-[Las características de la aplicación web progresiva (PWA)](/help/sites-cloud/authoring/sites-console/enable-pwa.md) para AEM Sites están en desuso para los nuevos proyectos a partir de la versión 2025.1.0. Esta función sigue siendo compatible con los proyectos existentes, pero no debe utilizarse para nuevos proyectos
+[Las características de Progressive Web Application (PWA)](/help/sites-cloud/authoring/sites-console/enable-pwa.md) para AEM Sites están en desuso para nuevos proyectos a partir de la versión 2025.1.0. Esta función sigue siendo compatible con los proyectos existentes, pero no debe utilizarse para nuevos proyectos
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nuevas funciones de los AEM Assets {#new-features-assets}
+### Nuevas funciones de AEM Assets {#new-features-assets}
 
-**plantillas de Dynamic Media**
+**Plantillas de Dynamic Media**
 
-Personalice los titulares de imágenes y textos sobre la marcha con un editor de plantillas de Dynamic Media de WYSIWYG fácil de usar, incrustando la URL en cualquier aplicación de origen o de terceros para impulsar experiencias muy atractivas con actualizaciones de contenido de banners en tiempo real.
+Personalice los titulares de imágenes y textos sobre la marcha con un editor de plantillas de Dynamic Media WYSIWYG fácil de usar, integrando la URL en cualquier aplicación de origen o de terceros para impulsar experiencias muy atractivas con actualizaciones de contenido de titulares en tiempo real.
 
 ![representaciones dinámicas](/help/assets/assets/dm-templates-smart-text-resize.png)
 
-**informes de envío de Dynamic Media**
+**Informes de envío de Dynamic Media**
 
-Obtenga perspectivas de entrega para los recursos entregados a través de Dynamic Media, incluidos recuentos de entregas en el nivel de recurso, detalles del referente, rutas de recursos en AEM Assets e ID de recursos únicos. Generar informes para todos los recursos del repositorio de AEM Assets o jerarquías de carpetas específicas. Estas perspectivas le permiten medir el ROI de los recursos entregados, evaluar el rendimiento del canal y tomar decisiones informadas para la administración de recursos.
+Obtenga información de envío de los recursos que se envían mediante Dynamic Media, incluyendo el recuento de envíos a nivel de recurso, información del remitente del envío, la ruta de los recursos de AEM Assets y los ID de recurso único. Genere informes para todos los recursos del repositorio de AEM Assets o jerarquías de carpetas específicas. Esta información le permite medir el retorno de la inversión de los recursos enviados, evaluar el rendimiento del canal y tomar decisiones fundamentadas para la administración de recursos.
 
 ![representaciones dinámicas](/help/assets/assets/referrer.png)
 
-**Pie de ilustración y audio de Dynamic Media**
+**Subtítulos y audio múltiples de Dynamic Media**
 
-[Compatibilidad con varios subtítulos y pistas de audio para vídeos en Dynamic Media](/help/assets/dynamic-media/video.md#about-msma): Ahora puede agregar fácilmente varios subtítulos y pistas de audio a un vídeo principal. Esta capacidad significa que los vídeos son accesibles para una audiencia global. Puede personalizar un solo vídeo principal publicado para un público global en varios idiomas y seguir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
+[Compatibilidad con subtítulos y pistas de audio múltiples para vídeos en Dynamic Media](/help/assets/dynamic-media/video.md#about-msma): ahora se pueden añadir fácilmente múltiples subtítulos y pistas de audio a un vídeo principal. Esta capacidad significa que los vídeos son accesibles para un público global. Puede personalizar un solo vídeo principal publicado para un público global en varios idiomas y seguir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
 
-**Compatibilidad con flujo adaptable dinámico a través de HTTP**
+**Compatibilidad con Dynamic Adaptive Streaming over HTTP**
 
 Lanzamiento de nuevo protocolo de asistencia (DASH - Dynamic Adaptive Streaming over HTTP) para streaming adaptable en la entrega de vídeo de Dynamic Media (con CMAF habilitado):
 
-* El streaming adaptable (DASH/HLS) garantiza una mejor experiencia de visualización de los usuarios para los vídeos.
+* Adaptive Streaming (DASH/HLS) garantiza una mejor experiencia de visualización de vídeos por parte del usuario
 
-* DASH es el protocolo estándar internacional para la transmisión de vídeo adaptable y es ampliamente adoptado en el sector.
+* DASH es el protocolo estándar internacional para streaming de vídeo adaptable y es ampliamente adoptado en el sector.
 
 **Relaciones de recursos**
 
-La vista de Assets ahora admite la visualización y edición de relaciones de recursos en un panel de detalles de recursos simplificado. Agregue fácilmente relaciones como Source y Derivative al contenido para que los usuarios puedan encontrar de forma más eficaz el contenido relevante para los héroes.
+La vista de Assets ahora admite la visualización y edición de relaciones de recursos en un panel de detalles de recursos simplificado. Añada fácilmente relaciones como Origen y Derivado al contenido para que los usuarios puedan encontrar de forma más eficaz el contenido relevante principal.
 
-**Volver a procesar recursos**
+**Reprocesamiento de los recursos**
 
-La vista de Assets ahora admite el reprocesamiento de recursos disponibles en una carpeta. Puede seleccionar usar la opción **Proceso completo** o usar opciones avanzadas como, por ejemplo, representaciones de vista previa predeterminada, metadatos, flujo de trabajo de posprocesamiento y perfil de procesamiento.
+La vista de Assets ahora admite el reprocesamiento de los recursos disponibles en una carpeta. Puede seleccionar entre utilizar la opción **Proceso completo** o utilizar opciones avanzadas como, por ejemplo, representaciones de la vista previa predeterminada, metadatos, flujo de trabajo de posprocesamiento y perfil de procesamiento.
 
-### Funciones de acceso anticipado en AEM Assets {#early-access-features-assets}
+### Funciones de acceso rápido de AEM Assets {#early-access-features-assets}
 
 **Subtítulos de vídeo generados por IA**
 
@@ -126,21 +126,21 @@ Los subtítulos de vídeo generados por IA en Adobe Dynamic Media utilizan la in
 
 ### Nuevas funciones en AEM Forms {#forms-new-features}
 
-#### Administrar publicación    
+#### Administrar publicación
 
-Puede utilizar el flujo de trabajo &quot;Administrar publicación&quot; para publicar o cancelar la publicación de formularios en entornos, generalmente desde la instancia de autor a las instancias de publicación y previsualización. Permite a los usuarios publicar, cancelar la publicación o programar la publicación de contenido de una manera optimizada.
+Puede utilizar el flujo de trabajo &quot;Administrar publicación&quot; para publicar o cancelar la publicación de formularios en entornos, generalmente desde la instancia de autor a las instancias de publicación y vista previa. Permite a los usuarios publicar, cancelar la publicación o programar la publicación de contenido de una manera optimizada.
 
 #### Guardar automáticamente un borrador para los componentes principales basados en formularios adaptables
 
-Los usuarios ahora pueden beneficiarse de una [característica de guardado automático](/help/forms/save-core-component-based-form-as-draft.md) que guarda automáticamente un formulario parcialmente completado como borrador. Pueden volver más tarde para terminar de rellenarlo en el mismo dispositivo o en otro distinto. Esta función mejora las tasas de conversión para las organizaciones al reducir el abandono de formularios, ya que los usuarios no tienen que volver a empezar a rellenar el formulario desde el principio.
+Los usuarios ahora pueden beneficiarse de una [función de guardar automáticamente](/help/forms/save-core-component-based-form-as-draft.md) que, de manera automática, guarda como borrador un formulario parcialmente completado. Pueden volver más tarde para terminar de rellenarlo en el mismo dispositivo o en otro distinto. Esta función mejora las tasas de conversión para las organizaciones al reducir el abandono de formularios, ya que los usuarios no tienen que volver a empezar a rellenar el formulario desde el principio.
 
-#### Mejoras del editor de reglas
+#### Mejoras en el editor de reglas
 
-Para Forms adaptable basado en componentes principales, puede usar la [salida de Invocar servicio para rellenar opciones desplegables y establecer paneles repetibles o individuales](/help/forms/invoke-service-enhancements-rule-editor.md). Además, este resultado se puede utilizar para validar otros campos.
+En el caso de los formularios adaptables basados en componentes principales, puede utilizar la [salida de Invocar servicio para rellenar opciones desplegables y establecer paneles repetibles o individuales](/help/forms/invoke-service-enhancements-rule-editor.md). Además, este resultado se puede utilizar para validar otros campos.
 
-#### Mejorar la experiencia del usuario con los botones de navegación en los diseños de panel
+#### Mejora de la experiencia del usuario con los botones de navegación en los diseños del panel
 
-Ahora puede agregar botones de navegación a los diseños de panel, como Pestañas horizontales, Pestañas verticales, Acordeones o Asistente. Estos botones [mejoran la experiencia del usuario al simplificar las transiciones entre paneles, centrándose en el panel seleccionado](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button).
+Ahora puede añadir botones de navegación a los diseños del panel, como, por ejemplo, Pestañas horizontales, Pestañas verticales, Acordeones o Asistente. Estos botones [mejoran la experiencia del usuario al simplificar las transiciones entre paneles y se centran en el panel seleccionado.](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)
 
 
 ### Funciones de acceso rápido de AEM Forms {#forms-new-early-access-features}
@@ -149,37 +149,37 @@ El programa para acceso rápido de AEM Forms ofrece una oportunidad única de ob
 
 En estas notas de la versión se indican las innovaciones de la versión actual. Para ver la lista completa de innovaciones disponibles en el programa para acceso rápido, consulte la [documentación del programa de acceso rápido de AEM Forms](/help/forms/early-access-ea-features.md).
 
-#### Plantillas de correo electrónico de HTML en Forms adaptable
+#### Plantillas de correo electrónico HTML de los formularios adaptables
 
-El Forms adaptable le permite usar [plantillas de correo electrónico de HTML](/help/forms/html-email-templates-in-adaptive-forms.md). Las plantillas de correo electrónico de HTML le permiten enviar correos electrónicos enriquecidos, personalizados y visualmente atractivos cuando se envía un formulario. Estos correos electrónicos se pueden personalizar con los datos del formulario y mejorar mediante varias etiquetas de correo electrónico, como imágenes y vínculos. Con Forms adaptable, puede cargar un archivo que contenga una plantilla de HTML o utilizar un editor de texto sin formato para crear estas plantillas.
+Los formularios adaptables le permite utilizar [plantillas de correo electrónico HTML](/help/forms/html-email-templates-in-adaptive-forms.md). Las plantillas de correo electrónico HTML le permiten enviar correos electrónicos enriquecidos, personalizados y visualmente atractivos cuando se envía un formulario. Estos correos electrónicos se pueden personalizar con los datos del formulario y mejorar mediante varias etiquetas de correo electrónico, como imágenes y vínculos. Con los formularios adaptables, puede cargar un archivo que contenga una plantilla HTML o utilizar un editor de texto sin formato para crear estas plantillas.
 
-![plantillas de correo electrónico de HTML](/help/forms/assets/html-email.png)
+![Plantilla de correo electrónico HTML](/help/forms/assets/html-email.png)
 
-#### Compatibilidad mejorada con almacenamiento en la nube: carga directa del PDF al almacenamiento del blob de Azure
+#### Compatibilidad mejorada con el almacenamiento en la nube: carga directa del PDF en el almacenamiento del blob de Azure
 
-Las API de generación de documentos de AEM Forms ahora le permiten [cargar directamente documentos de PDF generados al almacenamiento de Azure Blob](/help/forms/early-access-ea-features.md#doc-generation-api). Esta mejora optimiza el almacenamiento y la recuperación, mejorando la eficiencia y la integración con los flujos de trabajo en la nube.
+Las API de generación de documentos de AEM Forms ahora le permiten [cargar directamente documentos de PDF generados en el almacenamiento del blob de Azure](/help/forms/early-access-ea-features.md#doc-generation-api). Esta mejora optimiza el almacenamiento y la recuperación, mejorando la eficiencia y la integración con los flujos de trabajo en la nube.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Compatibilidad con Java 21 {#java21}
 
-Ahora puede generar código con Java 21, que incluye nuevas funciones (por ejemplo, coincidencia de patrones para instrucciones de switch, clases selladas) y mejoras de rendimiento; las compilaciones de Java 17 también son compatibles recientemente. Para ver los pasos de configuración, incluida la actualización del proyecto Maven y las versiones de la biblioteca, consulte el artículo [Entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support).
+Ahora puede generar código con Java 21, que incluye nuevas funciones (por ejemplo, coincidencia de patrones para instrucciones de cambio, clases selladas) y mejoras de rendimiento; las compilaciones de Java 17 también son compatibles recientemente. Para ver los pasos de configuración, incluida la actualización del proyecto Maven y las versiones de la biblioteca, consulte el artículo [Entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support). 
 
-El Java 21 **runtime** con mayor rendimiento se implementará automáticamente cuando se detecte una compilación de Java 17 o 21. Sin embargo, también recomendamos la inclusión en el tiempo de ejecución de Java 21 para entornos creados con Java 11, enviando un correo electrónico a [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Obtenga información acerca de [requisitos de tiempo de ejecución de Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
+El **entorno de ejecución** de Java 21 de mayor rendimiento se implementará automáticamente cuando se detecte una compilación de Java 17 o 21. Sin embargo, también recomendamos optar por el tiempo de ejecución de Java 21 para entornos creados con Java 11, enviando un correo electrónico a [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Obtenga información sobre los [requisitos del tiempo de ejecución de Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 
 >[!IMPORTANT]
 >
-> Java 21 **runtime** se implementará gradualmente en **todos los** entornos (además de los ya creados con Java 17 o 21, que ya tienen Java 21 en tiempo de ejecución), empezando por los entornos limitados y dev/RDE en febrero y luego la fase/producción en abril.
+> El **tiempo de ejecución** de Java 21 se implementará gradualmente en **todos los** entornos (además de los ya creados con Java 17 o 21, que ya tienen el tiempo de ejecución de Java 21), empezando por los entornos limitados y dev/RDE en febrero y luego fases/producción en abril.
 
 ### Los programas de zona protegida admiten canalizaciones de configuración {#sandbox-config-pipelines}
 
 Los programas de zona protegida ahora admiten canalizaciones de configuración, que se pueden configurar en Cloud Manager para implementar archivos yaml persistentes en Git.
 
-[Obtenga más información](/help/operations/config-pipeline.md) acerca de las canalizaciones de configuración, que permiten la configuración de la CDN, el reenvío de registros y las tareas de mantenimiento de purga de versiones/purga de registros de auditoría.
+[Obtenga más información](/help/operations/config-pipeline.md) sobre las canalizaciones de configuración, que permiten la configuración de CDN, el reenvío de registros y tareas de mantenimiento de purga de versiones/purga de registros de auditoría.
 
 ### API basadas en OpenAPI: programa para primeros usuarios {#open-apis-earlyadopter}
 
-Los desarrolladores pueden integrar completamente las funciones de AEM as a Cloud Service en sus propias aplicaciones y herramientas. Las nuevas API de AEM as a Cloud Service siguen la especificación de OpenAPI, con el objetivo de ser coherentes, bien documentadas y fáciles de usar. Las credenciales de los puntos de conexión que requieren autenticación se generan al crear proyectos de Adobe Developer Console.
+Los desarrolladores pueden integrar completamente las funciones de AEM as a Cloud Service en sus propias aplicaciones y herramientas. Las nuevas API de AEM as a Cloud Service siguen la especificación de OpenAPI, con el objetivo de ser coherentes, bien documentadas y fáciles de usar. Las credenciales de los puntos finales que requieren autenticación se generarán creando proyectos de Adobe Developer Console.
 
 Obtenga más información sobre las [API de AEM basadas en OpenAPI](/help/implementing/developing/open-api-based-apis.md) y realice un [tutorial completo](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) que ilustra la configuración y el uso.
 
@@ -192,7 +192,7 @@ En concreto, los puntos finales de API que se enumeran a continuación están di
 
 ### Edge Computing: solicitud de comentarios {#edge-computing-feedback}
 
-Edge Computing acerca el procesamiento de datos al explorador, lo que ofrece ventajas como una menor latencia. A Adobe AEM le encantaría saber si esta tecnología resulta útil para los proyectos de entrega y Edge Delivery Services de Publish de la. Además, indíquenos para qué prevé utilizarlo como entrada en la hoja de ruta del producto. Envíe un correo electrónico a [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) con preguntas y comentarios.
+Edge Computing acerca el procesamiento de datos al explorador, lo que ofrece ventajas como una menor latencia. A Adobe le encantaría saber si esta tecnología le resulta útil para los proyectos de AEM Publish Delivery y Edge Delivery Services. Además, indíquenos para qué prevé utilizarla como aportación a la hoja de ruta del producto. Envíe un correo electrónico a [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) con preguntas y comentarios.
 
 ### Nuevo AEM Developer Console (Beta pública) {#aem-developer-console-beta}
 
