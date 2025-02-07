@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3d9ad70351bfdedb6d81e90d9d193fac3088a3ec
+source-git-commit: a91b15836d0ca0308fbc860ec57aacda908f610d
 workflow-type: tm+mt
-source-wordcount: '1025'
-ht-degree: 19%
+source-wordcount: '1088'
+ht-degree: 16%
 
 ---
 
@@ -20,7 +20,7 @@ Obtenga información acerca de las herramientas de autoservicio que proporciona 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="Administrar certificados SSL"
->abstract="Descubra la forma en la que Cloud Manager le proporciona herramientas de autoservicio para instalar y administrar certificados SSL con el fin de proteger su sitio en beneficio de sus usuarios. Cloud Manager utiliza un servicio TLS de plataforma para administrar certificados SSL y claves privadas propiedad de clientes y obtenidas de autoridades de certificación de terceros."
+>abstract="Descubra cómo Cloud Manager tiene herramientas de autoservicio para instalar y administrar certificados SSL con el fin de proteger su sitio para los usuarios. Cloud Manager utiliza un servicio TLS de plataforma para administrar certificados SSL y claves privadas propiedad de clientes y obtenidas de autoridades de certificación de terceros."
 >additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Ver, actualizar y reemplazar un certificado SSL"
 >additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Comprobar el estado de un certificado SSL"
 
@@ -59,7 +59,7 @@ Los certificados DV son el nivel más básico de certificación SSL y se utiliza
 
 Una vez creado el certificado DV, el Adobe lo renueva automáticamente cada tres meses, a menos que se elimine.
 
-### Certificados SSL OV/EV administrados por el cliente {#customer-managed}
+### Certificados SSL administrados por el cliente (OV/EV) {#customer-managed}
 
 Los certificados OV y EV ofrecen información validada por CA. Esta información ayuda a los usuarios a comprobar si se puede confiar en el propietario del sitio web, el remitente del correo electrónico o la firma digital de los documentos de código o PDF. Los certificados DV no permiten esta verificación de propiedad.
 
@@ -75,12 +75,23 @@ Además, OV y EV ofrecen estas características con respecto a los certificados 
 
 #### Requisitos para los certificados SSL OV/EV administrados por el cliente {#requirements}
 
-Si decide añadir su propio certificado SSL OV/EV administrado por el cliente, debe cumplir los siguientes requisitos:
+Si decide añadir su propio certificado SSL administrado por el cliente, debe cumplir los siguientes requisitos actualizados:
 
+* No se admiten certificados de validación de dominio (DV) ni certificados autofirmados.
 * El certificado debe cumplir las directivas OV (validación de organización) o EV (validación extendida).
-   * Cloud Manager no admite la adición de sus propios certificados DV (validación de dominio).
-* No se admiten certificados firmados automáticamente.
-* Cualquier certificado debe ser un certificado TLS X.509 de una autoridad de certificación de confianza con una clave privada RSA de 2048 bits que corresponda.
+* El certificado debe ser un certificado TLS X.509 emitido por una autoridad de certificación (CA) de confianza.
+* Los tipos de clave criptográfica admitidos son los siguientes:
+
+   * Soporte estándar RSA de 2048 bits.
+Las claves RSA de más de 2048 bits (como las claves RSA de 3072 o 4096 bits) no son compatibles en este momento.
+   * Claves de curva elíptica (EC) `prime256v1` (`secp256r1`) y `secp384r1`
+   * Certificados ECDSA (Elliptic Curve Digital Signature Algorithm). Estos certificados se recomiendan en Adobe sobre RSA para mejorar el rendimiento, la seguridad y la eficacia.
+
+* Los certificados deben tener el formato correcto para pasar la validación. Las claves privadas deben tener el formato `PKCS#8`.
+
+>[!NOTE]
+>Si su organización requiere conformidad mediante claves RSA de 3072 bits, la alternativa recomendada por el Adobe es utilizar certificados ECDSA (`secp256r1` o `secp384r1`).
+
 
 #### Prácticas recomendadas para la administración de certificados
 
