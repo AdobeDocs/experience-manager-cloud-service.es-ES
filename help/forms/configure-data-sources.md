@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 6266da34305bc5d8b2bbb0d336028f4fede6c165
+source-git-commit: c20b8909bb884f14bd7fe59f190de3cd375a7111
 workflow-type: tm+mt
-source-wordcount: '2129'
-ht-degree: 100%
+source-wordcount: '2339'
+ht-degree: 94%
 
 ---
 
@@ -123,7 +123,10 @@ Para configurar la carpeta para las configuraciones de servicios en la nube:
 
 ## Configurar servicios web de RESTful {#configure-restful-web-services}
 
-El servicio web RESTful se puede describir con las [especificaciones de Swagger](https://swagger.io/specification/v2/) en formato JSON o YAML en un archivo de definición de [!DNL Swagger]. Para configurar el servicio web RESTful en [!DNL Experience Manager] as a Cloud Service, asegúrese de que dispone del archivo [!DNL Swagger] ([versión 2.0 de Swagger](https://swagger.io/specification/v2/)) o [!DNL Swagger] ([versión 3.0 de Swagger](https://swagger.io/specification/v3/)) en su sistema de archivos o la URL donde se hospeda el archivo.
+Los servicios web RESTful se pueden describir con [Especificaciones de Swagger](https://swagger.io/specification/v2/) en formato JSON o YAML en un archivo de definición de [!DNL Swagger] o un extremo de servicio.
+
+>[!NOTE]
+> Para configurar el servicio web RESTful en [!DNL Experience Manager] as a Cloud Service, asegúrese de que dispone del archivo [!DNL Swagger] ([versión 2.0 de Swagger](https://swagger.io/specification/v2/)) o [!DNL Swagger] ([versión 3.0 de Swagger](https://swagger.io/specification/v3/)) en su sistema de archivos o la URL donde se hospeda el archivo.
 
 ### Configuración de servicios RESTful para la especificación de API abierta versión 2.0 {#configure-restful-services-open-api-2.0}
 
@@ -177,6 +180,31 @@ Algunas de las operaciones no admitidas por los servicios de la especificación 
 * Diferentes cuerpos de solicitud para diferentes tipos de MIME para una sola operación
 
 Consulte [Especificación de OpenAPI 3.0](https://swagger.io/specification/v3/) para obtener información detallada.
+
+### Configurar servicios RESTful mediante el extremo de servicio {#configure-restful-services-service-endpoint}
+
+<span class="preview">: la capacidad Punto final de servicio está en el programa de usuarios que la adoptaron por anticipado y solo se aplica a los componentes principales. Puede enviar un correo electrónico a aem-forms-ea@adobe.com desde su ID oficial para unirse al programa de usuarios pioneros y solicitar acceso a esta funcionalidad. </span>
+
+1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Seleccione para elegir la carpeta en la que desea crear una configuración de nube.
+
+   Consulte [Configurar carpetas para configuraciones de servicios en la nube](configure-data-sources.md#cloud-folder) para obtener información sobre la creación y configuración de una carpeta para configuraciones de servicios en la nube.
+
+1. Seleccione **[!UICONTROL Crear]** para abrir el **[!UICONTROL Asistente para crear la configuración de Data Source]**.
+
+1. Especifique un nombre y, opcionalmente, un título para la configuración, seleccione **[!UICONTROL Servicio RESTful]** en la lista desplegable **[!UICONTROL Tipo de servicio]**; opcionalmente puede examinar y seleccionar una imagen de miniatura para la configuración y seleccionar **[!UICONTROL Siguiente]**.
+
+1. En la página siguiente, seleccione **[!UICONTROL Extremo de servicio]** de la lista desplegable **[!UICONTROL Servicio RESTful]**.
+
+   ![Punto final de servicio](/help/forms/assets/select-service-endpoint.png)
+
+1. Especifique **[!UICONTROL URL de extremo de servicio]**.
+
+   >[!NOTE]
+   > De forma predeterminada, el Tipo de método es POST.
+1. Seleccione uno de los tipos de contenido que desee elegir en la lista desplegable. Los tipos de contenido son datos de formulario de varias partes, JSON y con codificación URL (par clave-valor).
+1. Ahora puede seleccionar cualquiera de los tipos de autenticación, como OAuth 2.0, autenticación básica, clave de API y autenticación personalizada, en la lista desplegable.
+   ![Tipo de autenticación de extremo de servicio](/help/forms/assets/service-endpoint-authtype.png)
+1. Haga clic en Crear.
 
 ### Configuración del cliente HTTP del modelo de datos del formulario (FDM) para optimizar el rendimiento {#fdm-http-client-configuration}
 
