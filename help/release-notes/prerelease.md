@@ -5,9 +5,9 @@ exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1264'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Aprenda a utilizar el canal de la versión preliminar para obtener una vista pre
 
 ## Introducción {#introduction}
 
-Adobe Experience Manager as a Cloud Service ofrece nuevas características en una cadencia normal, según la [hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es#aem-as-cloud-service).
+Adobe Experience Manager as a Cloud Service ofrece nuevas funciones con regularidad, según la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es#aem-as-cloud-service).
 
 Para familiarizarse con las funciones programadas para el lanzamiento de la siguiente futura versión, puede suscribirse al canal de la versión preliminar, al que puede acceder configurando sus entornos de desarrollo o cualquier zona protegida. Puede obtener una vista previa de los cambios a los que puede acceder mediante la interfaz de usuario de AEM y crear código para cualquier API de versión preliminar nueva.
 
@@ -50,7 +50,7 @@ Para aprovechar al máximo el canal de la versión preliminar se requieren cuatr
 
 ## Marcado de calendarios {#mark-calendars}
 
-Las versiones de funcionalidades se programan con mucha antelación y las fechas de activación de la versión de funcionalidades se publican el [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es#aem-as-cloud-service).
+Las versiones de funciones se programan con mucha antelación y sus fechas de activación se publican en [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es#aem-as-cloud-service).
 
 Tenga en cuenta las fechas de lanzamiento para planificar el tiempo necesario para revisar y probar las próximas funciones.
 
@@ -97,7 +97,7 @@ Para actualizar un entorno de nube a fin de utilizar la versión preliminar, deb
 
 También puede utilizar la API y la CLI de Cloud Manager para actualizar las variables de entorno.
 
-* Al usar el extremo ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables) de las variables de entorno de la API de Cloud Manager [, establezca la variable de entorno `AEM_RELEASE_CHANNEL` en el valor `prerelease`.
+* Mediante el [punto final de variables de entorno de API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables), establezca la variable de entorno `AEM_RELEASE_CHANNEL` en el valor `prerelease`.
 
   ```text
   PATCH /program/{programId}/environment/{environmentId}/variables
