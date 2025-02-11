@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '498'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -48,12 +48,12 @@ Cerca de la esquina superior derecha de la página, haga clic en **Añadir sitio
 
    | Número de paso | Descripción |
    | - | - |
-   | **1** | Añada un archivo con la ruta y el nombre `well-known/adobe/cloudmanager-challenge.txt` a la rama `main` del repositorio de Git que aparece en el campo **URL del repositorio**. *No* añada un punto al principio de la ruta de ubicación.<br>Si es necesario, haga clic en ![Copiar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) para copiar la ruta de acceso en el portapapeles. |
-   | **2** | Añada el código visto en el campo de texto del paso 2 al archivo que acaba de crear en el paso 1.<br>Si es necesario, haga clic en ![Icono de copia](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) para copiar el código en el portapapeles. |
+   | **1** | Añada un archivo con la ruta y el nombre `well-known/adobe/cloudmanager-challenge.txt` a la rama `main` del repositorio de Git que aparece en el campo **URL del repositorio**. *No* añada un punto al principio de la ruta de ubicación.<br>Si es necesario, haga clic en ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) para copiar la ruta en el portapapeles. |
+   | **2** | Añada el código visto en el campo de texto del paso 2 al archivo que acaba de crear en el paso 1.<br>Si es necesario, haga clic en ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) para copiar el código en el portapapeles. |
    | **3** | Cree una solicitud de extracción en el repositorio de Git para los cambios que acaba de crear y, a continuación, combínela en `main` para confirmar el código. |
 
 1. Haga clic en **Verificar**.
 
 Una vez verificado el repositorio, se actualiza su estado en la tabla de sitios de Edge Delivery. El círculo verde con una marca de verificación blanca en el interior indica el estado.
 
-En la misma tabla, haga clic en ![Información acerca del icono del sitio Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) para ver los detalles del sitio. Esta información incluye la URL del repositorio verificada, junto con las URL del sitio web de previsualización y producción.
+En la misma tabla, haga clic en el icono de ![Información acerca del sitio de Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) para ver los detalles del sitio. Esta información incluye la URL del repositorio verificada, junto con las URL del sitio web de previsualización y producción.
