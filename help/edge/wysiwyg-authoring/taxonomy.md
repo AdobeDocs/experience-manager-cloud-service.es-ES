@@ -7,7 +7,7 @@ exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '974'
-ht-degree: 65%
+ht-degree: 75%
 
 ---
 
@@ -78,7 +78,7 @@ Se empieza editando una página de taxonomía como cualquier otra página en AEM
 
 La página mostrada en el Editor de página es de solo lectura porque el contenido de la taxonomía se genera automáticamente a partir de las etiquetas y los espacios de nombres seleccionados. Actúan como una especie de filtro para generar automáticamente el contenido de la taxonomía. Por lo tanto, no es necesario editar directamente la página en el editor.
 
-AEM actualiza automáticamente el contenido de la página de taxonomía cuando se actualizan las etiquetas y los espacios de nombres subyacentes. Sin embargo, debe [volver a publicar la taxonomía](#publishing) después de cualquier cambio para que los cambios estén disponibles para los usuarios.
+AEM actualiza automáticamente el contenido de la página de taxonomía cuando se actualizan las etiquetas y los espacios de nombres subyacentes. Sin embargo, debe [volver a publicar la taxonomía](#publishing) después de realizar cualquier cambio para que los cambios estén disponibles para los usuarios.
 
 ## Actualizar paths.json para la publicación de taxonomías {#paths-json}
 
@@ -172,9 +172,9 @@ Estos datos JSON se actualizarán automáticamente a medida que actualice la tax
 
 De manera predeterminada, su taxonomía contendrá `tag` y `title` valores como se vio [en el ejemplo anterior](#accessing). Puede configurar su taxonomía para exponer propiedades de etiquetas adicionales. En este ejemplo, se muestra la descripción de la etiqueta.
 
-1. Utilice la consola Sitios para seleccionar la taxonomía que ha creado.
+1. Utilice la consola Sitios para seleccionar la taxonomía que creó.
 1. Toque o haga clic en el icono **Propiedades** de la barra de herramientas.
-1. En la sección **Propiedades adicionales**, toque o haga clic en **Agregar** para agregar un campo.
+1. En la sección **Propiedades adicionales**, pulse o haga clic en **Añadir** para añadir un campo.
 1. En el nuevo campo, introduzca el nombre de la propiedad JRC que desea exponer. En este caso, escriba `jcr:description` para la descripción de la etiqueta.
 1. Haga clic o pulse en **Guardar y cerrar**.
 1. Con la taxonomía aún seleccionada, toque o haga clic en **Publicación rápida** en la barra de herramientas.

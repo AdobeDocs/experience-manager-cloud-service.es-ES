@@ -708,7 +708,7 @@ ht-degree: 99%
       + [Migrar desde [!DNL AEM 6.5 Forms] o anterior a [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Grupos y permisos](/help/forms/forms-groups-privileges-tasks.md)
       + [Importación, exportación y organización de formularios adaptables, formularios PDF y otros recursos](/help/forms/import-export-forms-templates.md)
-      + [Publicar Forms adaptable mediante Administrar publicación](/help/forms/manage-publication.md)
+      + [Publicar formularios adaptables con Administrar publicación](/help/forms/manage-publication.md)
    + Introducción {#getting-started-forms}
       + [Caso de uso y entorno de desarrollo de configuración](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [Creación del formulario de solicitud de préstamo](/help/forms/create-adaptive-form-tutorial.md)
@@ -1028,7 +1028,7 @@ ht-degree: 99%
       + WYSIWYG {#universal-editor}
          + [Información general: editor universal de Edge Delivery Services para formularios](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Introducción](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [Agregar reglas a mediante el Editor de reglas](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [Añadir reglas mediante el Editor de reglas](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
       + Funciones {#advanced-features-edge-delivery-services-forms}
          + [Usar fragmentos de formulario](/help/edge/docs/forms/form-fragments.md)
          + [Añadir secciones repetibles a un formulario](/help/edge/docs/forms/repeatable-forms.md)
