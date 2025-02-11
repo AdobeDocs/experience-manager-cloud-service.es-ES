@@ -237,7 +237,7 @@ Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge 
 
 >[!IMPORTANT]
 >
->SPA El editor de la [ha quedado obsoleto](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated) para nuevos proyectos. Sigue siendo compatible con el Adobe de los proyectos existentes, pero no debe utilizarse para nuevos proyectos. AEM Los editores preferidos para administrar contenido sin encabezado en las ahora son:
+>El editor de SPA [ha quedado obsoleto](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated) para nuevos proyectos. Adobe lo sigue admitiendo para los proyectos existentes, pero no debe utilizarse para nuevos proyectos. Los editores preferidos para administrar contenido sin encabezado en AEM ahora son:
 >
 >* [El Editor universal](/help/edge/wysiwyg-authoring/authoring.md) para editar contenido sin encabezado de forma visual.
 >* [El Editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) para la edición de contenido sin encabezado basada en formularios.

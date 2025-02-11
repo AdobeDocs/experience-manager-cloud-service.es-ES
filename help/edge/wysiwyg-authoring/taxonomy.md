@@ -26,7 +26,7 @@ El editor universal solo funciona con los ID de las etiquetas. Al crear una pág
 
 ## Creación de una página de taxonomía {#creating}
 
-AEM Se crea una taxonomía como [cualquier otra página de la lista de nombres de usuario de la página en la que se ha creado la lista de nombres de usuario ](/help/sites-cloud/authoring/sites-console/creating-pages.md).
+Se crea una taxonomía como [cualquier otra página de AEM](/help/sites-cloud/authoring/sites-console/creating-pages.md).
 
 1. Vaya a la consola [**Sitios**](/help/sites-cloud/authoring/sites-console/introduction.md).
 
@@ -82,7 +82,7 @@ AEM actualiza automáticamente el contenido de la página de taxonomía cuando s
 
 ## Actualizar paths.json para la publicación de taxonomías {#paths-json}
 
-Al igual que cuando [administra y publica datos tabulares para el sitio de Edge Delivery Services](/help/edge/wysiwyg-authoring/tabular-data.md), debe actualizar el archivo `paths.json` del proyecto para permitir la publicación de los datos de taxonomía.
+Al igual que cuando [administra y publica datos tabulares para su sitio Edge Delivery Services](/help/edge/wysiwyg-authoring/tabular-data.md), debe actualizar el archivo `paths.json` de su proyecto para permitir la publicación de los datos de taxonomía.
 
 1. Abra la raíz del proyecto en GitHub.
 
@@ -118,7 +118,7 @@ Este proceso solo debe realizarse una vez por página de taxonomía. Una vez fin
 
 El editor universal o los usuarios no pueden acceder a una taxonomía hasta que se publique.
 
-Las páginas de taxonomía se publican como cualquier otra página por [mediante los iconos **Quick Publish** o **Administrar publicación** de la barra de herramientas](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
+Las páginas de taxonomía se publican como cualquier otra página por [mediante los iconos **Publicación rápida** o **Administrar publicación** de la barra de herramientas](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
 
 Debe volver a publicar la página de taxonomía cada vez que:
 
@@ -177,7 +177,7 @@ De manera predeterminada, su taxonomía contendrá `tag` y `title` valores como 
 1. En la sección **Propiedades adicionales**, toque o haga clic en **Agregar** para agregar un campo.
 1. En el nuevo campo, introduzca el nombre de la propiedad JRC que desea exponer. En este caso, escriba `jcr:description` para la descripción de la etiqueta.
 1. Haga clic o pulse en **Guardar y cerrar**.
-1. Con la taxonomía aún seleccionada, toque o haga clic en **Quick Publish** en la barra de herramientas.
+1. Con la taxonomía aún seleccionada, toque o haga clic en **Publicación rápida** en la barra de herramientas.
 
 Ahora [al acceder a su taxonomía](#accessing), la descripción de la etiqueta (o la propiedad que haya elegido exponer) se incluye en el JSON.
 

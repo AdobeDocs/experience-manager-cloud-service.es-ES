@@ -576,7 +576,7 @@ ht-degree: 99%
       + [Archivo de newsletters sobre Dynamic Media de Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Configuración de Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Trabajar con Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
-      + [Dynamic Media templates](/help/assets/dynamic-media/dynamic-media-templates.md)
+      + [Plantillas de Dynamic Media](/help/assets/dynamic-media/dynamic-media-templates.md)
       + [Configuración de Dynamic Media](/help/assets/dynamic-media/config-dm.md)
       + [Opcional: configuración de Dynamic Media, configuración general](/help/assets/dynamic-media/dm-general-settings.md)
       + [Opcional: configuración de Dynamic Media, configuración de publicaciones](/help/assets/dynamic-media/dm-publish-settings.md)
@@ -656,7 +656,7 @@ ht-degree: 99%
       + [Administrar informes](/help/assets/manage-reports-assets-view.md)
       + [Reproceso](/help/assets/reprocessing-assets-view.md)
       + [Administrar etiquetas](/help/assets/tagging-management-assets-view.md)
-      + [Credenciales de contenido](/help/assets/content-credentials.md)
+      + [Content Credentials](/help/assets/content-credentials.md)
       + [Publicación de recursos en AEM y Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
       + [Extensibilidad de la IU de la vista de AEM Assets](/help/assets/aem-assets-view-ui-extensibility.md)
    + Centro de contenido {#content-hub}
@@ -708,7 +708,7 @@ ht-degree: 99%
       + [Migrar desde [!DNL AEM 6.5 Forms] o anterior a [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Grupos y permisos](/help/forms/forms-groups-privileges-tasks.md)
       + [Importación, exportación y organización de formularios adaptables, formularios PDF y otros recursos](/help/forms/import-export-forms-templates.md)
-      + [Forms adaptable de Publish con Administrar publicación](/help/forms/manage-publication.md)
+      + [Publicar Forms adaptable mediante Administrar publicación](/help/forms/manage-publication.md)
    + Introducción {#getting-started-forms}
       + [Caso de uso y entorno de desarrollo de configuración](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [Creación del formulario de solicitud de préstamo](/help/forms/create-adaptive-form-tutorial.md)

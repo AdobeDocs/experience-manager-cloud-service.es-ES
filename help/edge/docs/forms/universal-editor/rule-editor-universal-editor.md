@@ -5,13 +5,13 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: c27b8e413c060de601a72a669d86c4add2a4167d
+exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
+source-git-commit: 0410e1d16ad26d3169c01cca3ad9040e3c4bfc9f
 workflow-type: tm+mt
 source-wordcount: '2111'
 ht-degree: 11%
 
 ---
-
 
 # Introducción al Editor de reglas en el Editor universal
 
