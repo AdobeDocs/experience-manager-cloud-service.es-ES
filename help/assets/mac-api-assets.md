@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 2f4c5db2b40d55e2e46e14cb5309754969b5bdea
+source-git-commit: 3143ca304ec7ff56d45502a3fd5e49b3b9ed6ce4
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1709'
 ht-degree: 6%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 6%
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
-## Información general {#overview}
+## AEM Introducción a la API HTTP de [!DNL Assets] de la {#overview}
 
-AEM La API HTTP de [!DNL Assets] permite las operaciones CRUD (crear, leer, actualizar y eliminar) en recursos digitales a través de una interfaz REST en /`api/assets`. Estas operaciones se aplican a los metadatos de recursos, las representaciones y los comentarios. Incluye [compatibilidad con fragmentos de contenido](/help/assets/content-fragments/assets-api-content-fragments.md).
+AEM La API HTTP de [!DNL Assets] permite las operaciones CRUD (crear, leer, actualizar y eliminar) en recursos digitales a través de una interfaz REST disponible en /`api/assets`. Estas operaciones se aplican a los metadatos de recursos, las representaciones y los comentarios. Incluye [compatibilidad con fragmentos de contenido](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ La respuesta de la API es un archivo JSON para algunos tipos de MIME y un códig
 >
 >Todas las llamadas de API relacionadas con la carga o actualización de recursos o binarios en general (como representaciones) están en desuso para [!DNL Experience Manager] como una implementación de [!DNL Cloud Service]. Para cargar binarios, usa [API de carga binaria directa](developer-reference-material-apis.md#asset-upload).
 
-## Fragmentos de contenido {#content-fragments}
+## Administrar fragmentos de contenido {#content-fragments}
 
 Un [fragmento de contenido](/help/assets/content-fragments/content-fragments.md) es un recurso estructurado que almacena texto, números y fechas. Dado que existen varias diferencias entre los recursos de `standard` (como imágenes o documentos), algunas reglas adicionales se aplican al manejo de fragmentos de contenido.
 
@@ -53,7 +53,7 @@ Para obtener más información, consulte [Compatibilidad con fragmentos de conte
 >
 >Las [OpenAPI de fragmento de contenido y modelo de fragmento de contenidos](/help/headless/content-fragment-openapis.md) también están disponibles.
 
-## Modelo de datos {#data-model}
+## Examinar el modelo de datos {#data-model}
 
 La API HTTP [!DNL Assets] expone principalmente dos elementos: carpetas y recursos estándar. También proporciona elementos detallados para los modelos de datos personalizados utilizados en fragmentos de contenido. Para obtener más información, consulte Modelos de datos de fragmentos de contenido. Consulte [Modelos de datos de fragmentos de contenido](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) para obtener más información.
 
@@ -61,7 +61,7 @@ La API HTTP [!DNL Assets] expone principalmente dos elementos: carpetas y recurs
 >
 >Las [OpenAPI de fragmento de contenido y modelo de fragmento de contenidos](/help/headless/content-fragment-openapis.md) también están disponibles.
 
-### Carpetas {#folders}
+### Administración de carpetas {#folders}
 
 Las carpetas son como los directorios, como en los sistemas de archivos tradicionales. Las carpetas pueden contener recursos, subcarpetas o ambos. Las carpetas tienen los siguientes componentes:
 
@@ -82,7 +82,7 @@ Las carpetas son como los directorios, como en los sistemas de archivos tradicio
 * `parent`: un vínculo a la carpeta principal.
 * `thumbnail` (opcional): un vínculo a una imagen en miniatura de carpeta.
 
-### Recursos {#assets}
+### Administración de recursos {#assets}
 
 En [!DNL Experience Manager], un recurso contiene los siguientes elementos:
 
@@ -103,7 +103,7 @@ En [!DNL Experience Manager], una carpeta tiene los siguientes componentes:
 * Propiedades.
 * Vínculos.
 
-## Funciones disponibles {#available-features}
+## Explorar operaciones de API disponibles {#available-features}
 
 La API HTTP [!DNL Assets] incluye las siguientes características:
 
@@ -293,7 +293,7 @@ Elimina un recurso (-tree) en la ruta proporcionada.
 * 412: ERROR DE CONDICIÓN PREVIA: si no se encuentra la colección raíz o no se puede acceder a ella.
 * 500 - ERROR INTERNO DEL SERVIDOR - si algo más sale mal.
 
-## Sugerencias, prácticas recomendadas y limitaciones {#tips-limitations}
+## Siga las prácticas recomendadas y anote las limitaciones {#tips-limitations}
 
 * Assets y sus representaciones dejarán de estar disponibles a través de la interfaz web [!DNL Assets] y la API HTTP cuando se llegue al [!UICONTROL Tiempo de inactividad]. La API devuelve un error 404 si el [!UICONTROL Tiempo de activación] es futuro o el [!UICONTROL Tiempo de inactividad] es anterior.
 
@@ -301,7 +301,7 @@ Elimina un recurso (-tree) en la ruta proporcionada.
 
 * Algunas propiedades de la carpeta o el recurso se asignan a un prefijo diferente al actualizarse mediante las API. El prefijo `jcr` de `jcr:title`, `jcr:description` y `jcr:language` se reemplaza por el prefijo `dc`. Por lo tanto, en el JSON devuelto, `dc:title` y `dc:description` contienen los valores de `jcr:title` y `jcr:description`, respectivamente.
 
-**Consulte también**
+**Explorar recursos relacionados**
 
 * [Traducir recursos](translate-assets.md)
 * [Formatos de archivo compatibles con recursos](file-format-support.md)
