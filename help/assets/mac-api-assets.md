@@ -5,14 +5,14 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 4cec40947f1b50dd627321cabfbe43033a224f8b
+source-git-commit: 2f4c5db2b40d55e2e46e14cb5309754969b5bdea
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1693'
 ht-degree: 6%
 
 ---
 
-# API HTTP [!DNL Adobe Experience Manager Assets] {#assets-http-api}
+# Administrar recursos digitales con la API HTTP [!DNL Adobe Experience Manager Assets]{#assets-http-api}
 
 | [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación de desarrollador de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
@@ -24,7 +24,7 @@ ht-degree: 6%
 
 ## Información general {#overview}
 
-La API HTTP [!DNL Assets] permite realizar operaciones de creación, lectura, actualización y eliminación (CRUD) en recursos digitales, incluidos metadatos, representaciones y comentarios, así como contenido estructurado mediante [!DNL Experience Manager] fragmentos de contenido. Se expone en `/api/assets` y se implementa como API de REST. Incluye [compatibilidad con fragmentos de contenido](/help/assets/content-fragments/assets-api-content-fragments.md).
+AEM La API HTTP de [!DNL Assets] permite las operaciones CRUD (crear, leer, actualizar y eliminar) en recursos digitales a través de una interfaz REST en /`api/assets`. Estas operaciones se aplican a los metadatos de recursos, las representaciones y los comentarios. Incluye [compatibilidad con fragmentos de contenido](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ La respuesta de la API es un archivo JSON para algunos tipos de MIME y un códig
 
 ## Fragmentos de contenido {#content-fragments}
 
-Un [fragmento de contenido](/help/assets/content-fragments/content-fragments.md) es un tipo especial de recurso. Se puede utilizar para acceder a datos estructurados, como textos, números, fechas, entre otros. Dado que existen varias diferencias entre los recursos de `standard` (como imágenes o documentos), algunas reglas adicionales se aplican al manejo de fragmentos de contenido.
+Un [fragmento de contenido](/help/assets/content-fragments/content-fragments.md) es un recurso estructurado que almacena texto, números y fechas. Dado que existen varias diferencias entre los recursos de `standard` (como imágenes o documentos), algunas reglas adicionales se aplican al manejo de fragmentos de contenido.
 
 Para obtener más información, consulte [Compatibilidad con fragmentos de contenido en la [!DNL Experience Manager Assets] API HTTP](/help/assets/content-fragments/assets-api-content-fragments.md).
 
@@ -55,7 +55,7 @@ Para obtener más información, consulte [Compatibilidad con fragmentos de conte
 
 ## Modelo de datos {#data-model}
 
-La API HTTP [!DNL Assets] expone dos elementos, carpetas y recursos principales (para recursos estándar). Además, expone elementos más detallados para los modelos de datos personalizados que describen el contenido estructurado en Fragmentos de contenido. Consulte [Modelos de datos de fragmentos de contenido](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) para obtener más información.
+La API HTTP [!DNL Assets] expone principalmente dos elementos: carpetas y recursos estándar. También proporciona elementos detallados para los modelos de datos personalizados utilizados en fragmentos de contenido. Para obtener más información, consulte Modelos de datos de fragmentos de contenido. Consulte [Modelos de datos de fragmentos de contenido](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) para obtener más información.
 
 >[!NOTE]
 >
@@ -63,14 +63,14 @@ La API HTTP [!DNL Assets] expone dos elementos, carpetas y recursos principales 
 
 ### Carpetas {#folders}
 
-Las carpetas son como los directorios, como en los sistemas de archivos tradicionales. La carpeta solo puede contener recursos, carpetas o carpetas y recursos. Las carpetas tienen los siguientes componentes:
+Las carpetas son como los directorios, como en los sistemas de archivos tradicionales. Las carpetas pueden contener recursos, subcarpetas o ambos. Las carpetas tienen los siguientes componentes:
 
 **Entidades**: las entidades de una carpeta son sus elementos secundarios, que pueden ser carpetas y recursos.
 
 **Propiedades**:
 
-* `name` es el nombre de la carpeta. Es igual que el último segmento de la ruta URL sin la extensión.
-* `title` es un título opcional de la carpeta que se puede mostrar en lugar de su nombre.
+* `name`: el nombre de la carpeta (el último segmento de la ruta de acceso de la dirección URL, sin la extensión).
+* `title`: título opcional mostrado en lugar del nombre de la carpeta.
 
 >[!NOTE]
 >
@@ -78,18 +78,18 @@ Las carpetas son como los directorios, como en los sistemas de archivos tradicio
 
 **Vínculos** Las carpetas muestran tres vínculos:
 
-* `self`: vínculo consigo mismo.
-* `parent`: vínculo a la carpeta principal.
-* `thumbnail`: (Opcional) vínculo a una imagen en miniatura de carpeta.
+* `self`: un vínculo a la carpeta en sí.
+* `parent`: un vínculo a la carpeta principal.
+* `thumbnail` (opcional): un vínculo a una imagen en miniatura de carpeta.
 
 ### Recursos {#assets}
 
 En [!DNL Experience Manager], un recurso contiene los siguientes elementos:
 
-* Las propiedades y los metadatos del recurso.
-* Archivo binario cargado originalmente del recurso.
-* Varias representaciones según la configuración. Pueden ser imágenes de diferentes tamaños, vídeos de diferentes codificaciones o páginas extraídas de archivos del PDF o [!DNL Adobe InDesign].
-* Comentarios opcionales.
+* **Propiedades y metadatos:** Información descriptiva sobre el recurso.
+* **Archivo binario:** El archivo cargado originalmente.
+* **Representaciones:** varias representaciones configuradas (como imágenes en varios tamaños, diferentes codificaciones de vídeo o páginas extraídas de archivos de Adobe InDesign o PDF).
+* **Comentarios (opcional):** Comentarios proporcionados por el usuario.
 
 Para obtener información sobre los elementos de los fragmentos de contenido, consulte [Compatibilidad con fragmentos de contenido en la API HTTP de Experience Manager Assets](/help/assets/content-fragments/assets-api-content-fragments.md).
 
@@ -173,7 +173,7 @@ Una llamada de API produce un error con un código de respuesta `500` si el nodo
 
 ## Crear un recurso {#create-an-asset}
 
-Consulte [carga de recursos](developer-reference-material-apis.md) para obtener información sobre cómo crear un recurso. No puede crear un recurso mediante la API HTTP.
+La creación de recursos no es compatible con esta API HTTP. Para crear recursos, use la API [carga de recursos](developer-reference-material-apis.md).
 
 ## Actualizar un binario de recursos {#update-asset-binary}
 
@@ -181,7 +181,7 @@ Consulte [carga de recursos](developer-reference-material-apis.md) para obtener 
 
 ## Actualización de metadatos de un recurso {#update-asset-metadata}
 
-Actualiza las propiedades de los metadatos del recurso. Si actualiza cualquier propiedad en el espacio de nombres `dc:`, la API actualiza la misma propiedad en el espacio de nombres `jcr`. La API no sincroniza las propiedades en las dos áreas de nombres.
+Esta operación actualiza los metadatos del recurso. Al actualizar propiedades en el espacio de nombres `dc:`, se actualiza la propiedad `jcr:` correspondiente. Sin embargo, la API no sincroniza las propiedades en las dos áreas de nombres.
 
 **Solicitud**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
 
@@ -196,7 +196,10 @@ Actualiza las propiedades de los metadatos del recurso. Si actualiza cualquier p
 
 Crear una representación para un recurso. Si no se proporciona el nombre del parámetro de solicitud, se utilizará el nombre de archivo como nombre de representación.
 
-**Parámetros**: los parámetros son `name` para el nombre de la representación y `file` como referencia de archivo.
+**Parámetros**: Los parámetros son:
+
+`name`: para el nombre de representación.
+`file`: archivo binario para la representación como referencia.
 
 **Petición**
 
@@ -292,9 +295,9 @@ Elimina un recurso (-tree) en la ruta proporcionada.
 
 ## Sugerencias, prácticas recomendadas y limitaciones {#tips-limitations}
 
-* Transcurrido el [!UICONTROL tiempo de inactividad], un recurso y sus representaciones no estarán disponibles a través de la interfaz web [!DNL Assets] ni a través de la API HTTP. La API devuelve el mensaje de error 404 si el [!UICONTROL Tiempo de activación] es futuro o el [!UICONTROL Tiempo de inactividad] es anterior.
+* Assets y sus representaciones dejarán de estar disponibles a través de la interfaz web [!DNL Assets] y la API HTTP cuando se llegue al [!UICONTROL Tiempo de inactividad]. La API devuelve un error 404 si el [!UICONTROL Tiempo de activación] es futuro o el [!UICONTROL Tiempo de inactividad] es anterior.
 
-* La API HTTP de Assets no devuelve los metadatos completos. Las áreas de nombres están codificadas y solo se devuelven esas áreas de nombres. Para ver los metadatos completos, consulte la ruta de recursos `/jcr_content/metadata.json`.
+* La API HTTP de Assets devuelve solo un subconjunto de metadatos. Las áreas de nombres están codificadas y solo se devuelven esas áreas de nombres. Para ver los metadatos completos, consulte la ruta de recursos `/jcr_content/metadata.json`.
 
 * Algunas propiedades de la carpeta o el recurso se asignan a un prefijo diferente al actualizarse mediante las API. El prefijo `jcr` de `jcr:title`, `jcr:description` y `jcr:language` se reemplaza por el prefijo `dc`. Por lo tanto, en el JSON devuelto, `dc:title` y `dc:description` contienen los valores de `jcr:title` y `jcr:description`, respectivamente.
 

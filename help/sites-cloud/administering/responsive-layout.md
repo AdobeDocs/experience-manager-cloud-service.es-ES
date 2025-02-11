@@ -5,16 +5,28 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 3%
+source-wordcount: '1377'
+ht-degree: 2%
 
 ---
 
+
 # Configuración del contenedor y el modo de diseño {#configuring-layout-container-and-layout-mode}
 
-[Diseño interactivo](/help/sites-cloud/authoring/page-editor/responsive-layout.md) es un mecanismo para realizar [diseño web interactivo](https://en.wikipedia.org/wiki/Responsive_web_design). Esto permite al autor del contenido crear páginas web con un diseño y dimensiones dependientes de los dispositivos que utilizan los usuarios.
+Aprenda a configurar el contenedor y el modo de diseño para habilitar los diseños adaptables para los autores de contenido.
+
+>[!TIP]
+>
+>Este documento describe cómo un administrador del sitio puede configurar el contenedor de diseño para admitir el diseño web adaptable. Hay recursos adicionales disponibles:
+>
+>* Para los autores de contenido, los detalles de cómo utilizar las características de diseño adaptables en una página de contenido están disponibles en el documento [Diseño adaptable.](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+>* Para los desarrolladores, los detalles del contenedor de diseño y de la cuadrícula adaptable se describen en [El documento de diseño adaptable,](/help/implementing/developing/introduction/responsive-design.md), que proporciona sugerencias y sugerencias para utilizar contenedores de diseño y cuadrícula adaptable al diseñar el sitio.
+
+## Información general {#overview}
+
+El diseño interactivo es un mecanismo para realizar [diseño web interactivo](https://en.wikipedia.org/wiki/Responsive_web_design). Esto permite al autor del contenido crear páginas web con un diseño y dimensiones dependientes de los dispositivos que utilizan los usuarios.
 
 AEM realiza un diseño interactivo para sus páginas mediante una combinación de diferentes mecanismos:
 
@@ -229,3 +241,9 @@ Para permitir que los autores agreguen más cuadrículas adaptables a las págin
 ### Configuración de la cuadrícula del contenedor de diseño {#configure-the-grid-of-the-layout-container}
 
 Puede configurar el número de columnas disponibles para cada instancia específica del contenedor de diseño [editando las plantillas de página](/help/sites-cloud/authoring/page-editor/templates.md).
+
+### Cuadrículas adaptables anidadas {#nested-responsive-grids}
+
+La práctica recomendada de Adobe es mantener la estructura lo más plana posible.
+
+Si no puede evitar utilizar cuadrículas adaptables anidadas, consulte el documento para desarrolladores [Diseño adaptable.](/help/implementing/developing/introduction/responsive-design.md#nested-responsive-grids)

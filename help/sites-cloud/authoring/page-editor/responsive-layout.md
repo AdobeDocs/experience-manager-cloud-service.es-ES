@@ -1,22 +1,32 @@
 ---
 title: Diseño adaptable
-description: AEM le permite crear un diseño adaptable para sus páginas,
+description: AEM le permite crear un diseño adaptable para las páginas mediante el uso del componente Contenedor de diseño.
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
 workflow-type: tm+mt
-source-wordcount: '1740'
-ht-degree: 78%
+source-wordcount: '1789'
+ht-degree: 76%
 
 ---
+
 
 # Diseño adaptable {#responsive-layout}
 
 AEM le permite tener un diseño adaptable para sus páginas mediante el componente **Contenedor de diseño**.
 
-Proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula adaptable. Esta cuadrícula puede reorganizar el diseño según el tamaño y el formato del dispositivo o la ventana. El componente se usa junto con el modo [**Diseño**](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector), que le permite crear y editar su diseño interactivo en función del dispositivo.
+>[!TIP]
+>
+>Este documento proporciona información general sobre las funciones del contenedor de diseño disponibles para los autores de contenido. Hay recursos adicionales disponibles:
+>
+>* Para los administradores del sitio, los detalles sobre cómo configurar el contenedor de diseño para sus sitios se describen en el documento [Configuración del contenedor de diseño y el modo de diseño.](/help/sites-cloud/administering/responsive-layout.md)
+>* Para los desarrolladores, los detalles del contenedor de diseño y de la cuadrícula adaptable se describen en [El documento de diseño adaptable,](/help/implementing/developing/introduction/responsive-design.md), que proporciona sugerencias y sugerencias para utilizar contenedores de diseño y cuadrícula adaptable al diseñar el sitio.
+
+## Información general {#overview}
+
+El componente **Contenedor de diseño** proporciona un sistema de párrafos que le permite colocar componentes dentro de una cuadrícula adaptable. Esta cuadrícula puede reorganizar el diseño según el tamaño y el formato del dispositivo o la ventana. El componente se usa junto con el modo [**Diseño**](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector), que le permite crear y editar su diseño interactivo en función del dispositivo.
 
 El contenedor de diseño:
 
@@ -49,10 +59,6 @@ Con estos mecanismos de cuadrícula adaptable puede hacer lo siguiente:
 * Realizar el control de columnas.
 
 Según el proyecto, el contenedor de diseño se puede utilizar como sistema de párrafos predeterminado para las páginas o como componente disponible para añadirse a su página mediante el explorador de componentes (o ambos).
-
->[!TIP]
->
->El Adobe AEM AEM proporciona [documentación de GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) del diseño interactivo como referencia que se puede proporcionar a los desarrolladores de interfaces de usuario, lo que les permite usar la cuadrícula de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario de GitHub, por ejemplo, al crear maquetas de HTML AEM estáticos para un sitio de interfaz de usuario en el futuro. El diseño de la interfaz de usuario de GitHub se puede proporcionar a los desarrolladores de interfaces de usuario de usuario de GitHub como una referencia que les permita usar la cuadrícula de la interfaz de usuario de un sitio en el futuro.
 
 >[!NOTE]
 >

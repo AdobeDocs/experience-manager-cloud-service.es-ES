@@ -4,14 +4,26 @@ description: Con un diseño interactivo, las mismas experiencias se pueden mostr
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '1165'
 ht-degree: 0%
 
 ---
 
+
 # Diseño interactivo {#responsive-design}
+
+Con un diseño interactivo, las mismas experiencias se pueden mostrar de forma eficaz en varios dispositivos y en varias orientaciones.
+
+>[!TIP]
+>
+>AEM Este documento proporciona información general sobre el diseño adaptable para desarrolladores y cómo se aplican las funciones en los entornos de trabajo de la aplicación de diseño de la aplicación de la aplicación de forma. Hay recursos adicionales disponibles:
+>
+>* Para los autores de contenido, los detalles de cómo utilizar las características de diseño adaptables en una página de contenido están disponibles en el documento [Diseño adaptable.](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+>* Para los administradores del sitio, los detalles sobre cómo configurar el contenedor de diseño para sus sitios se describen en el documento [Configuración del contenedor de diseño y el modo de diseño.](/help/sites-cloud/administering/responsive-layout.md)
+
+## Información general {#overview}
 
 Diseñe sus experiencias para que se adapten a la ventanilla del cliente en la que se muestran. Con un diseño interactivo, las mismas páginas se pueden mostrar de forma eficaz en varios dispositivos en ambas orientaciones. La siguiente imagen muestra algunas formas en que una página puede responder a los cambios en el tamaño de la ventanilla móvil:
 
@@ -132,4 +144,65 @@ Las páginas adaptables se adaptarán dinámicamente al dispositivo en el que se
 
 AEM contenedor de diseño le permite implementar de forma eficiente y eficaz el diseño adaptable para adaptar las dimensiones de la página a la ventanilla del cliente.
 
-Consulte el documento [Configuración del contenedor de diseño y el modo de diseño](/help/sites-cloud/administering/responsive-layout.md) para obtener más información sobre cómo funciona el contenedor de diseño y cómo habilitar los diseños adaptables para el contenido.
+>AEM AEM [La documentación de GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) de la cuadrícula adaptable es una referencia que se puede dar a los desarrolladores de front-end para que puedan usar la cuadrícula de la fuera de la red de, por ejemplo, al crear maquetas de HTML AEM estáticos para un sitio de futuro.
+
+>[!TIP]
+>
+>Consulte el documento [Configuración del contenedor de diseño y el modo de diseño](/help/sites-cloud/administering/responsive-layout.md) para obtener más información sobre cómo funciona el contenedor de diseño y cómo habilitar los diseños adaptables para el contenido.
+
+## Cuadrículas adaptables anidadas {#nested-responsive-grids}
+
+Puede haber ocasiones en que sea necesario anidar cuadrículas adaptables para satisfacer las necesidades del proyecto. Sin embargo, tenga en cuenta que la práctica recomendada de Adobe es mantener la estructura lo más plana posible.
+
+Cuando no pueda evitar utilizar cuadrículas adaptables anidadas, asegúrese de lo siguiente:
+
+* Todos los contenedores (contenedores, pestañas, acordeones, etc.) tienen la propiedad `layout = responsiveGrid`.
+* No mezcle la propiedad `layout = simple` en la jerarquía de contenedor.
+
+Esto incluye todos los contenedores estructurales de la plantilla de página.
+
+El número de columna del contenedor interno nunca debe ser mayor que el del contenedor externo. El ejemplo siguiente cumple esta condición. Mientras que el número de columna del contenedor externo es 8 para la pantalla predeterminada (escritorio), el número de columna del contenedor interno es 4.
+
+>[!BEGINTABS]
+
+>[!TAB Ejemplo de estructura de nodos]
+
+```text
+container
+  @layout = responsiveGrid
+  cq:responsive
+    default
+      @offset = 0
+      @width = 8
+  container
+  @layout = responsiveGrid
+    cq:responsive
+      default
+        @offset = 0
+        @width = 4
+    text
+      @text =" Text Column 1"
+```
+
+>[!TAB Ejemplo de HTML resultante]
+
+```html
+<div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">
+  <div id="container-c9955c233c" class="cmp-container">
+    <div class="aem-Grid aem-Grid--8 aem-Grid--default--8 ">
+      <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+        <div id="container-8414e95866" class="cmp-container">
+          <div class="aem-Grid aem-Grid--4 aem-Grid--default--4 ">
+            <div class="text aem-GridColumn aem-GridColumn--default--4">
+              <div data-cmp-data-layer="..." id="text-1234567890" class="cmp-text">
+                <p>Text Column 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+>[!ENDTABS]
