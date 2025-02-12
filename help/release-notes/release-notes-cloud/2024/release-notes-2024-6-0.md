@@ -3,7 +3,8 @@ title: Notas de la versión 2024.6.0 de la versión de  [!DNL Adobe Experience M
 description: Notas de la versión 2024.6.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
+exl-id: 4033abf4-7094-4ce4-ba93-c936062667e3
+source-git-commit: 6d548f10caa32bb5a7a6b0afe762f60058eca2fe
 workflow-type: tm+mt
 source-wordcount: '1972'
 ht-degree: 100%
@@ -230,7 +231,7 @@ La CDN administrada por Adobe es ahora compatible con [Edge Side Includes (ESI)]
 
 ## Guías de [!DNL Experience Manager] {#guides}
 
-Puede encontrar una lista completa de las funciones nuevas y mejoradas de la última versión de Adobe Experience Manager Guides [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0).
+Puede encontrar una lista completa de las funciones nuevas y mejoradas de la última versión de Adobe Experience Manager Guides [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

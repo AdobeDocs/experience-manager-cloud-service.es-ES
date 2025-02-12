@@ -3,7 +3,8 @@ title: Notas de la versión 2024.11.0 de la versión de  [!DNL Adobe Experience 
 description: Notas de la versión 2024.11.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: fbcb022da15610009d59abd868f02ec2c2f6669d
+exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
+source-git-commit: aafa51c246ee67f9fed014a39ecfb4605ac6152f
 workflow-type: tm+mt
 source-wordcount: '1809'
 ht-degree: 100%
@@ -189,7 +190,7 @@ Cualquiera puede acceder a la versión beta pública haciendo clic en el botón 
 
 ## Guías de [!DNL Experience Manager] {#guides}
 
-Puede encontrar una lista completa de las funciones nuevas y mejoradas de la última versión de Adobe Experience Manager Guides [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0).
+Puede encontrar una lista completa de las funciones nuevas y mejoradas de la última versión de Adobe Experience Manager Guides [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

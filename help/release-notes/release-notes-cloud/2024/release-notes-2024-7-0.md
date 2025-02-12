@@ -4,10 +4,10 @@ description: Notas de la versión 2024.7.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: 6194df9d-8c3c-4c7f-be59-099b970a565a
-source-git-commit: 79bf9d669c1b8757f456b83aad87550df306c78b
+source-git-commit: ce6b0db34488a49d15d4c1197bdee80c63a2e0fa
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 76%
+ht-degree: 83%
 
 ---
 
@@ -63,21 +63,21 @@ Los autores de contenido ahora pueden examinar, ver y realizar acciones en imág
 
 El Selector de recursos ahora permite a los autores de contenido cargar recursos finales directamente desde el selector, arrastrándolos o explorando desde el sistema de archivos local. Esta funcionalidad permite cargar los recursos finales en DAM desde la aplicación de su elección.
 
-### Función de acceso anticipado en Dynamic Media {#dm-early-access}
+### Función de acceso rápido en Dynamic Media {#dm-early-access}
 
-**subtítulos de vídeo generados por IA**
+**Subtítulos de vídeo generados por IA**
 
-Los subtítulos de vídeo generados por IA en Adobe Dynamic Media usan la inteligencia artificial para generar subtítulos automáticamente para el contenido de vídeo. Esta función está diseñada para mejorar la accesibilidad y la experiencia del usuario al proporcionar subtítulos precisos en tiempo real. La IA analiza la pista de audio del vídeo para transcribir voz y crear subtítulos, que se pueden editar para mejorar la precisión o la personalización. Estos subtítulos ayudan a cumplir con los requisitos de accesibilidad y mejorar la participación en vídeo de las audiencias que dependen de la compatibilidad con vídeo basado en texto o prefieren hacerlo.
+Los subtítulos de vídeo generados por IA en Adobe Dynamic Media utilizan la inteligencia artificial para generar subtítulos automáticamente para el contenido de vídeo. Esta función está diseñada para mejorar la accesibilidad y la experiencia del usuario gracias a la provisión de subtítulos precisos en tiempo real. La IA analiza la pista de audio del vídeo para transcribir la voz y crear subtítulos, que se pueden editar para mejorar la precisión o la personalización. Estos subtítulos ayudan a cumplir con los requisitos de accesibilidad y mejorar la participación en vídeo de los públicos que dependen de la compatibilidad con vídeo basado en texto o la prefieren.
 
 Para obtener acceso anticipado a la compatibilidad con subtítulos generados por IA en su cuenta de Dynamic Media, [cree y envíe un caso de asistencia al cliente de Adobe](/help/assets/dynamic-media/video.md##enable-dash).
 
 ### Nuevas funcionalidades de la vista Recursos {#assets-view-new-features}
 
-**Integración de credenciales de contenido**
+**Integración de Content Credentials**
 
-Experience Manager Assets ahora admite credenciales de contenido para los formatos de imagen admitidos. Esta capacidad proporciona información sobre el linaje del recurso y cómo se creó, incluso si se modificó con GenAI.
+Experience Manager Assets ahora admite Content Credentials para los formatos de imagen admitidos. Esta capacidad proporciona información sobre el linaje del recurso y cómo se creó, incluso si se modificó con GenAI.
 
-![Credenciales de contenido](/help/assets/assets/content-credentials.png)
+![Content Credentials](/help/assets/assets/content-credentials.png)
 
 **Vistas previas visuales del contenido de la carpeta**
 
@@ -190,7 +190,7 @@ El Centro de acciones le notifica de forma proactiva cuando se detecta un recurs
 
 ## Guías de [!DNL Experience Manager] {#guides}
 
-Puede encontrar una lista completa de las funciones nuevas y mejoradas de la última versión de Adobe Experience Manager Guides [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0).
+Puede encontrar una lista completa de las funciones nuevas y mejoradas de la última versión de Adobe Experience Manager Guides [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

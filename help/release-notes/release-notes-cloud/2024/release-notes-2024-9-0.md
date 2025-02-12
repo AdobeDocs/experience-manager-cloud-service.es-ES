@@ -3,7 +3,8 @@ title: Notas de la versión 2024.9.0 de la versión de  [!DNL Adobe Experience M
 description: Notas de la versión 2024.9.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 0c4db1b70aa665e1802a316ece26db1e06f40b24
+exl-id: 75ecd154-112a-4468-9962-de50bb1f4cd0
+source-git-commit: b0208964fc193e0e839bccaaf8245c86f280767d
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 91%
@@ -85,7 +86,7 @@ Los usuarios ahora pueden beneficiarse de una función de guardado automático q
 
 ### Funciones de acceso rápido de AEM Forms {#forms-new-early-access-features}
 
-El programa para acceso rápido de AEM Forms ofrece una oportunidad única de obtener acceso exclusivo a innovaciones punteras y ayudar a dar forma a su desarrollo. 
+El programa para acceso rápido de AEM Forms ofrece una oportunidad única de obtener acceso exclusivo a innovaciones punteras y ayudar a dar forma a su desarrollo.
 
 En estas notas de la versión se indican las innovaciones de la versión actual. Para ver la lista completa de innovaciones disponibles en el programa para acceso rápido, consulte la [documentación del programa de acceso rápido de AEM Forms](/help/forms/early-access-ea-features.md).
 
@@ -157,7 +158,7 @@ La [Canalización de configuración](/help/operations/config-pipeline.md) se usa
 
 ## Guías de [!DNL Experience Manager] {#guides}
 
-Puede encontrar una lista completa de las funciones nuevas y mejoradas de la última versión de Adobe Experience Manager Guides [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0).
+Puede encontrar una lista completa de las funciones nuevas y mejoradas de la última versión de Adobe Experience Manager Guides [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

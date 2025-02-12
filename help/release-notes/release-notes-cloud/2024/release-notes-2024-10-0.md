@@ -4,7 +4,7 @@ description: Notas de la versión 2024.10.0 de la versión de  [!DNL Adobe Exper
 feature: Release Information
 role: Admin
 exl-id: 7a63f04f-10f0-4879-bd06-4182bb288a9b
-source-git-commit: c3beecaab03c3721ad2fb70658a335d17f9a66d0
+source-git-commit: bf3ccd88bc29db136ff5445f76e196b6ac8c52c7
 workflow-type: tm+mt
 source-wordcount: '1664'
 ht-degree: 100%
@@ -114,7 +114,7 @@ Los administradores ahora pueden controlar si necesitan que los activos caducado
 
 ### Funciones de acceso rápido de AEM Forms {#forms-new-early-access-features}
 
-El programa para acceso rápido de AEM Forms ofrece una oportunidad única de obtener acceso exclusivo a innovaciones punteras y ayudar a dar forma a su desarrollo. 
+El programa para acceso rápido de AEM Forms ofrece una oportunidad única de obtener acceso exclusivo a innovaciones punteras y ayudar a dar forma a su desarrollo.
 
 En estas notas de la versión se indican las innovaciones de la versión actual. Para ver la lista completa de innovaciones disponibles en el programa para acceso rápido, consulte la [documentación del programa de acceso rápido de AEM Forms](/help/forms/early-access-ea-features.md).
 
@@ -194,7 +194,7 @@ Cualquiera puede acceder a la versión beta pública haciendo clic en el botón 
 
 ## Guías de [!DNL Experience Manager] {#guides}
 
-Puede encontrar una lista completa de las funciones nuevas y mejoradas de la última versión de Adobe Experience Manager Guides [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-0-release/whats-new-2024-10-0).
+Puede encontrar una lista completa de las funciones nuevas y mejoradas de la última versión de Adobe Experience Manager Guides [aquí](https://experienceleague.adobe.com/es/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
