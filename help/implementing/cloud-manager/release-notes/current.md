@@ -4,10 +4,10 @@ description: Obtenga información acerca del lanzamiento de Cloud Manager 2025.2
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: c2a0961cae6d36d8ea3116c6e7982889257f90c8
+source-git-commit: ee7a99c5bf08b39a743d4b326ac23cc8546c512e
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 35%
+source-wordcount: '639'
+ht-degree: 18%
 
 ---
 
@@ -28,45 +28,49 @@ La próxima versión planificada es el viernes, 13 de marzo de 2025.
 
 ## Novedades {#what-is-new}
 
-* **Actualización de las reglas de calidad del código.**
-A partir del jueves, 13 de febrero de 2025, el paso de calidad del código de Cloud Manager ahora utiliza una versión actualizada de SonarQube 9.9.5.90363.
+* **Actualización de las reglas de calidad del código**
 
-  Las reglas actualizadas, disponibles para Cloud Manager en AEM as a Cloud Service en [este vínculo](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules), determinan las puntuaciones de seguridad y la calidad del código para las canalizaciones de Cloud Manager. Esta actualización puede afectar a las puertas de calidad y bloquear potencialmente las implementaciones.
+  A partir del jueves, 13 de febrero de 2025, el paso de calidad del código de Cloud Manager ahora utiliza SonarQube 9.9.5.90363.
 
-* **Compatibilidad con la versión Java 17 y Java 21.**
+  Las reglas actualizadas, disponibles para Cloud Manager en AEM as a Cloud Service en [este vínculo](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules), determinan las puntuaciones de seguridad y la calidad del código para las canalizaciones de Cloud Manager.
+
+* SonarQube 9.9 es ahora el motor de análisis de calidad de código predeterminado para todos los clientes.
+
+* **Compatibilidad con la versión Java 17 y Java 21**
 
   Los clientes ahora pueden compilar con Java 17 o Java 21, y obtener acceso a las mejoras de rendimiento y a las nuevas funciones de idioma. Para ver los pasos de configuración, incluida la actualización del proyecto Maven y las versiones de la biblioteca, consulte [Entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). Cuando la versión de compilación se establece en Java 17 o Java 21, el tiempo de ejecución implementado es Java 21.
 
-   * **Habilitación de funciones**
-      * Esta función se habilitará para todos los clientes el jueves, 13 de febrero de 2025, coincidiendo con el despliegue predeterminado de la nueva versión de SonarQube.
-      * Los clientes pueden habilitarla *inmediatamente* estableciendo las dos configuraciones de variables descritas anteriormente para actualizar la versión de SonarQube 9.9.
+* **99,99% de informes de tiempo de actividad de SLA para Edge Delivery Services**
 
-   * **Implementación de tiempo de ejecución de Java 21**
-      * El tiempo de ejecución de Java 21 se implementa al generar con Java 17 o Java 21.
-      * El despliegue gradual en todos los entornos de Cloud Manager comienza en febrero para los entornos de zonas protegidas y de desarrollo, y se extenderá a los entornos de producción en abril.
-      * Los clientes que usen Java 11 y deseen adoptar el tiempo de ejecución de Java 21 *antes*, pueden ponerse en contacto con Adobe en [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
-
-* Informes de tiempo de actividad de **99,99 % para Edge Delivery Services.**
-Los informes de tiempo de actividad del 99,99 % de alta disponibilidad ya están disponibles para los programas Edge Delivery Services aptos. Para habilitar esta función, los clientes deben incorporar correctamente sus sitios de Edge Delivery Services y aplicar su Service level agreement (SLA) al 99,99 % en Cloud Manager.
+  Los informes de tiempo de actividad del 99,99 % de alta disponibilidad ya están disponibles para los programas Edge Delivery Services aptos. Para habilitar esta función, los clientes deben incorporar correctamente sus sitios de Edge Delivery Services y aplicar su Service level agreement (SLA) al 99,99 % en Cloud Manager.
 
   Ver también [SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla).
 
-* **Se ha mejorado la experiencia de invitación de usuarios para Edge Delivery Services.**
-Se mejoró la experiencia al invitar a usuarios al repositorio de contenido asociado con Edge Delivery Services. <!-- CMGR-65331 -->
+* **Se mejoró la experiencia de invitación de usuarios para Edge Delivery Services**
 
-* **Creación automática de perfiles de administración en instancias de publicación.**
-Anteriormente, Cloud Manager permitía la creación manual de perfiles de administración en instancias de publicación, pero no admitía la creación automática de forma predeterminada. Con esta actualización, los perfiles de administración ahora se crean automáticamente en instancias de publicación, lo que mejora la facilidad de uso y reduce el tiempo de configuración para los clientes.
+  Se mejoró la experiencia al invitar a usuarios al repositorio de contenido asociado con Edge Delivery Services. <!-- CMGR-65331 -->
+
+* **Creación automática de perfiles de administración en instancias de publicación**
+
+  Anteriormente, Cloud Manager permitía la creación manual de perfiles de administración en instancias de publicación, pero no admitía la creación automática de forma predeterminada. Con esta actualización, los perfiles de administración ahora se crean automáticamente en instancias de publicación, lo que mejora la facilidad de uso y reduce el tiempo de configuración para los clientes.
 
   Para obtener más información, consulte [Permisos personalizados](/help/implementing/cloud-manager/custom-permissions.md).
 
   ![Filtrado de actividades de canalización](/help/implementing/cloud-manager/release-notes/assets/product-profiles.png)
 
-* **Transición a OAuth para entornos Cloud Service.**
-Los nuevos entornos de Cloud Service ahora utilizan la autenticación de servicio a servicio basada en OAuth para proyectos de integración de Adobe Developer Console en lugar del método de autenticación JWT utilizado anteriormente. La autenticación JWT está en desuso y su finalización está prevista para junio de 2025.
+* **Transición a OAuth para entornos Cloud Service**
 
-* **Compatibilidad con claves privadas EC (Elliptic Curve) (secp384r1).**
-Cloud Manager ahora admite claves privadas de curva elíptica (EC) `secp384r1`, lo que proporciona una seguridad y conformidad mejoradas para los certificados SSL OV/EV administrados por el cliente.
+  Los nuevos entornos de Cloud Service ahora utilizan la autenticación de servicio a servicio basada en OAuth para proyectos de integración de Adobe Developer Console en lugar del método de autenticación JWT utilizado anteriormente. La autenticación JWT está en desuso y su finalización está prevista para junio de 2025.
+
+* **Compatibilidad con claves privadas EC (Elliptic Curve) (secp384r1)**
+
+  Cloud Manager ahora admite claves privadas de curva elíptica (EC) `secp384r1`, lo que proporciona una seguridad y conformidad mejoradas para los certificados SSL OV/EV administrados por el cliente.
 Para obtener más información, consulte [Requisitos para los certificados SSL OV/EV administrados por el cliente](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md). <!-- CMGR-63636 -->
+
+* **Entornos de prueba especializados**
+
+  A partir del 27 de febrero de 2025, se pondrá a disposición de los primeros usuarios un nuevo entorno de desarrollo con recursos mejorados.
+
 
 <!--
 ## Early adoption program {#early-adoption}
