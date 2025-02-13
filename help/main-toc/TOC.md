@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 901172d201e968ec00eb8c988107a6a9fb7a5e7b
+source-git-commit: 3ab46e78581893591f56793bc0561aea4f2fbef5
 workflow-type: tm+mt
-source-wordcount: '6058'
+source-wordcount: '6077'
 ht-degree: 99%
 
 ---
@@ -737,7 +737,8 @@ ht-degree: 99%
          + [Configuración de [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Conectar el formulario adaptable a la aplicación Salesforce mediante el flujo de credenciales de cliente de OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
          + [Configuración de almacenamiento de  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
-         + [Configurar [!DNL Microsoft Dynamics 365] y [!DNL Salesforce] cloud services](/help/forms/configure-msdynamics-salesforce.md)
+         + [Configurar  [!DNL Microsoft Dynamics 365] servicios en la nube](/help/forms/configure-msdynamics.md)
+         + [Configuración de Salesforce Cloud Services](/help/forms/configure-salesforce.md)
          + [Crear modelo de datos de formulario](/help/forms/create-form-data-models.md)
          + [Trabajo con el modelo de datos de formulario](/help/forms/work-with-form-data-model.md)
          + [Uso del modelo de datos de formulario](/help/forms/using-form-data-model.md)
@@ -761,8 +762,11 @@ ht-degree: 99%
             + [Configuración de una acción de envío para un formulario adaptable](/help/forms/configure-submit-actions-core-components.md)
             + [Envío de un formulario adaptable a Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Envío de un formulario adaptable a Microsoft](/help/forms/configure-submit-action-onedrive.md)
-            + [Conectar un formulario adaptable a Microsoft](/help/forms/configure-submit-action-sharepoint.md)
-            + [Configuración del sitio de SharePoint con acceso limitado mediante el ámbito de autorización](/help/forms/configure-sharepoint-site-limited-access.md)
+            + Conectar un formulario adaptable a Microsoft® SharePoint{#connect-to-sharepoint}
+               + [Conectar un formulario adaptable a Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+               + [Enviar a la biblioteca de documentos de SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md)
+               + [Enviar a la lista de SharePoint](/help/forms/connect-forms-to-sharepoint-list.md)
+               + [Configuración del sitio de SharePoint con acceso limitado mediante el ámbito de autorización](/help/forms/configure-sharepoint-site-limited-access.md)
             + [Integración del formulario adaptable de AEM con el flujo de trabajo de AEM](/help/forms/configure-submit-action-workflow.md)
             + [Configuración de la acción de envío Enviar a punto final REST para formularios adaptables](/help/forms/configure-submit-action-restpoint.md)
             + [Configuración de la acción de envío Enviar correo electrónico para un formulario adaptable](/help/forms/configure-submit-action-send-email.md)
