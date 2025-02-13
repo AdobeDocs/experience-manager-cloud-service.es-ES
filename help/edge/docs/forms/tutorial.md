@@ -4,9 +4,9 @@ description: Este tutorial le ayudará a ponerse en marcha con un nuevo proyecto
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: ec3a9982494df35faf1df9f49416197dc96f1b4a
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1920'
 ht-degree: 92%
 
 ---
@@ -28,7 +28,7 @@ Este tutorial de AEM Forms le guía a través de la creación, la previsualizaci
 * Comprende los conceptos básicos de HTML, CSS y JavaScript.
 * Ha instalado Node/npm para el desarrollo local.
 
-**Atención.** Este tutorial utiliza macOS, Chrome y Visual Studio Code. Aunque los pasos se pueden adaptar para otras configuraciones, las capturas de pantalla y los elementos específicos de la IU pueden diferir según el sistema operativo, el explorador y el editor de código que haya elegido.
+**Atención** Este tutorial utiliza macOS, Chrome y Visual Studio Code. Aunque los pasos se pueden adaptar para otras configuraciones, las capturas de pantalla y los elementos específicos de la IU pueden diferir según el sistema operativo, el explorador y el editor de código que haya elegido.
 
 
 ## Creación de un nuevo proyecto de AEM preconfigurado con el bloque de Formularios adaptables
@@ -67,7 +67,7 @@ La plantilla repetitiva de AEM Forms le permite empezar rápidamente con un proy
    * `<repository>` indica su repositorio de GitHub.
    * `<owner>` hace referencia al nombre de usuario de la cuenta de GitHub que aloja el repositorio de GitHub.
 
-   Por ejemplo, si el nombre de la rama es `main`, el repositorio es `wefinance` y el propietario es `wkndforms`, el sitio web estaría funcionando a las `https://main--wefinance--wkndforms.aem.page`
+   Por ejemplo, si el nombre de la rama es `main`, el repositorio es `wefinance` y el propietario es `wkndforms`, el sitio web estaría activo y en funcionamiento en `https://main--wefinance--wkndforms.aem.page`
 &lt;!—(https://main--wefinance--wkndform.aem.page)-->
 
 ### Vincular su propio origen de contenido
@@ -89,9 +89,9 @@ Para copiar el contenido de muestra en su propia carpeta de contenido y dirigir 
 
    Asegúrese de haber proporcionado derechos de edición sobre la carpeta al usuario de Adobe Experience Manager.
 
-   AEM ![Compartir la carpeta con el usuario de la cuenta de usuario, proporcionar derechos de edición: SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png){width=50%}
+   ![Compartir carpeta con el usuario de AEM, proporcionar derechos de edición-SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png){width=50%}
 
-   AEM ![Compartir la carpeta con el usuario de la carpeta, proporcionar derechos de edición: Google Drive](/help/edge/assets/add-aem-user-google-folder.png){width=50%}
+   ![Compartir la carpeta con el usuario de AEM, proporcionar derechos de edición- Google Drive](/help/edge/assets/add-aem-user-google-folder.png){width=50%}
 
 1. Copie el [contenido de ejemplo](/help/edge/assets/wefinance1.zip) en su carpeta. Para copiar, haga lo siguiente:
 
@@ -112,7 +112,7 @@ Para copiar el contenido de muestra en su propia carpeta de contenido y dirigir 
 
    1. Vaya al repositorio de GitHub que creó anteriormente con el elemento repetitivo de AEM Forms.
    1. Abra `fstab.yaml` para editarlo.
-   1. AEM Reemplace la referencia existente por la ruta de acceso a la carpeta que compartió con el usuario de la cuenta de usuario de la cuenta de usuario de la cuenta de usuario de la cuenta de usuario (forms@adobe.com).
+   1. Reemplace la referencia existente por la ruta de acceso a la carpeta que compartió con el usuario de AEM (forms@adobe.com).
 
       ![Contenido de muestra en Google Drive](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -182,7 +182,7 @@ Para una vista previa del contenido sin publicar, haga lo siguiente:
 
    URL `https://<branch>--<repo>--<owner>.aem.page/enquiry`.
 
-   Por ejemplo, si el repositorio de su proyecto se llama &quot;wefinance&quot;, está ubicado bajo el propietario de la cuenta &quot;wkndform&quot; y está utilizando la rama &quot;principal&quot; y el nombre del formulario como `enquiry`, la dirección URL es: `https://main--wefinance--wkndform.aem.live/enquiry`.
+   Por ejemplo, si el repositorio de su proyecto se llama &quot;wefinance”, está ubicado en el propietario de la cuenta “wkndform” y utiliza la rama “principal” y el nombre de formulario como `enquiry`, la dirección URL es la siguiente: `https://main--wefinance--wkndform.aem.live/enquiry`.
 &lt;!—(https://main--wefinance--wkndform.aem.live/enquiry).-->
 
 ### Creación de un formulario
@@ -277,12 +277,31 @@ Si tiene un proyecto de AEM existente, puede integrar el bloque de formularios a
 
 Para integrar, haga lo siguiente:
 
-1. Clone el repositorio del bloque de formularios adaptables: [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms) a su equipo.
+1. **Agregar los archivos y carpetas necesarios**
+   1. Copie y pegue las siguientes carpetas y archivos de [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) en su proyecto de AEM:
 
-1. Dentro de la carpeta descargada, busque la carpeta `blocks/form`. Cópiela. A continuación, vaya a la carpeta local del proyecto de AEM `blocks` y pegue la carpeta de formulario copiada aquí.
+      * [bloque de formulario](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) carpeta
+      * carpeta [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)
+      * carpeta [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components)
+      * [archivo form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js)
+      * [archivo form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)
 
-1. Confirme e inserte estos cambios en su proyecto de AEM en GitHub.
+1. **Actualizar los archivos de modelos y definiciones de componentes**
+   1. Vaya al archivo `../models/_component-definition.json` de su proyecto de AEM y actualícelo con los cambios del archivo [_component-definition.json en la plantilla de AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
 
+   1. Vaya al archivo `../models/_component-models.json` de su proyecto de AEM y actualícelo con los cambios del archivo [_component-models.json en la plantilla de AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
+
+1. **Agregar editor de formularios en el script del editor**
+   1. Vaya al archivo `../scripts/editor-support.js` de su proyecto de AEM y actualícelo con los cambios del archivo [editor-support.js en la plantilla de AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
+1. **Actualizar archivo de configuración de ESLint**
+   1. Vaya al archivo `../.eslintignore` de su proyecto de AEM y agregue la línea de códigos siguiente para evitar errores relacionados con el motor de reglas de bloque de formularios:
+
+      ```
+          blocks/form/rules/formula/*
+          blocks/form/rules/model/*
+      ```
+
+1. Confirme e inserte estos cambios en el repositorio del Proyecto de AEM en GitHub.
 
 Eso es todo. El bloque de formularios adaptables ahora forma parte de su proyecto de AEM. Puede empezar a crear y agregar formularios a las páginas de AEM.
 

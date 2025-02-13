@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 17489f3f65a71c6fc0f805af37cb233ab1c5470a
+source-git-commit: 477d29855ca6ea89322cdb91e01140983243678c
 workflow-type: tm+mt
-source-wordcount: '6039'
+source-wordcount: '6052'
 ht-degree: 99%
 
 ---
@@ -1013,6 +1013,7 @@ ht-degree: 99%
       + [Redireccionamientos](/help/edge/docs/redirects.md)
    + Creación de formularios {#build-forms}
       + [Información general](/help/edge/docs/forms/overview.md)
+      + [¿Cómo funciona Edge Delivery Services Forms?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + Introducción {#getting-started-edge-delivery-services-forms}
          + [Introducción](/help/edge/docs/forms/tutorial.md)
          + [Crear un formulario con Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
@@ -1028,7 +1029,9 @@ ht-degree: 99%
       + WYSIWYG {#universal-editor}
          + [Información general: editor universal de Edge Delivery Services para formularios](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Introducción](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [Añadir reglas mediante el Editor de reglas](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [Agregar reglas a mediante el Editor de reglas](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [Crear componentes personalizados](/help/edge/docs/forms/universal-editor/create-custom-component)
+         + [Uso de reCAPTCHA en formularios](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
       + Funciones {#advanced-features-edge-delivery-services-forms}
          + [Usar fragmentos de formulario](/help/edge/docs/forms/form-fragments.md)
          + [Añadir secciones repetibles a un formulario](/help/edge/docs/forms/repeatable-forms.md)

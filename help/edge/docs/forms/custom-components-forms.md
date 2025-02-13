@@ -6,10 +6,10 @@ hide: true
 hidefromtoc: true
 exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
 role: Admin, Architect, Developer
-source-git-commit: 812b1e41b460783d3fa220bd24ecfcfd4208a5df
+source-git-commit: 52ad4537b78604e5f6948876870b58657ffcbd3a
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 100%
+source-wordcount: '625'
+ht-degree: 96%
 
 ---
 
@@ -46,7 +46,7 @@ Antes de empezar a crear el componente personalizado, debe:
 
 Analicemos ahora cada paso en detalle.
 
-Consulte la [hoja de cálculo de consulta](/help/edge/docs/forms/assets/enquiry.xlsx) para personalizar el componente `range`, siguiendo los pasos que se explican a continuación.
+<!--Refer to the [enquiry spreadsheet](/help/edge/docs/forms/assets/enquiry.xlsx) to customize the `range` component, by following the steps as explained below.-->
 
 ### Añadir una función personalizada para decorar el componente
 
@@ -56,11 +56,10 @@ La función personalizada añadida en `[../Form Block/components]` consta de:
 * **Implementación lógica**: escriba la lógica para añadir el comportamiento personalizado para el componente.
 * **Exportación de funciones**: haga accesible la función en `[Form Block]`.
 
-Ahora vamos a crear un archivo JavaScript con el nombre `range.js` para aplicar un estilo al componente Intervalo. Para añadir una función personalizada:
+Para añadir una función personalizada:
 
-1. Vaya a la carpeta Proyectos AEM de Google Drive o SharePoint.
 1. Navegue hasta `[../Form Block/components]`.
-1. Añada un nuevo archivo con el nombre `range.js`.
+1. Busque un archivo de nombre `range.js`. si no está presente, créelo.
 1. Añada la siguiente línea de código:
 
    ```javascript
@@ -137,7 +136,7 @@ Para insertar el decorador en el bloque de formularios:
    .... existing code ....
    if (fieldType === 'range') {
    const module = await import('./components/range.js');
-   return module.default(element,fd);;
+   return module.default(element,fd);
    }
     return null; // null should be returned to use the original markup
    }
@@ -212,20 +211,158 @@ Para añadir estilos a un componente en el archivo CSS:
 
 ### Implemente los archivos y genere el proyecto
 
-Implemente los archivos `range.js`, `mapping.css` y `form.css` actualizados en el proyecto de GitHub y compruebe que la compilación se ha realizado correctamente.
+Implemente los archivos `range.js`, `mapping.js` y `form.css` actualizados en el proyecto de GitHub y compruebe que la compilación se ha realizado correctamente.
 
 ### Vista previa del formulario con AEM Sidekick
 
-Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para obtener una vista previa del formulario con la función recién implementada que aplica estilos al componente `range`.
+Obtenga una vista previa del formulario con la función recién implementada que aplica estilo al componente `range`.
 
 ![Formulario de componente personalizado](/help/edge/assets/custom-componet-form.png)
 
 El nuevo estilo del componente `range` muestra los valores mínimo, máximo y seleccionado en la línea mediante la adición de estilos con CSS y una función personalizada que incluye un decorador para el componente.
+<!--
+Now, you can extend the created custom component for WYSIWYG based authoring.
 
+## Enable Component for WYSIWYG authoring
+
+To enable component for WYSIWYG authoring:
+
+1. Navigate to  `[../Form Block/components]`.
+2. Locate a file named `_range.json`. if not present, create it.
+3. Add the following code in the  `_range.json` file:
+
+    ```javascript
+    {
+    "definitions": [
+        {
+         "title": "Range",
+         "id": "range",
+        "plugins": {
+          "xwalk": {
+           "page": {
+               "resourceType": "core/fd/components/form/numberinput/v1/numberinput",
+              "template": {
+              "jcr:title": "Range",
+              "fieldType": "number-input",
+              "fd:viewType": "range",
+              "enabled": true,
+              "visible": true
+             }
+            }
+            }
+        }
+        }
+    ],
+    "models": [
+     {
+          "id": "range",
+        "fields": [
+          {
+              "component": "container",
+             "name": "basic",
+             "label": "Basic",
+             "collapsible": false,
+             "...": "../../../../models/form-common/_basic-input-fields.json"
+             {
+             "component": "number",
+             "name": "stepValue",
+             "label": "Step Value",
+              "valueType": "number"
+        }
+         },
+         {
+              "...": "../../../../models/form-common/_help-container.json"
+            },
+            {
+          "component": "container",
+          "name": "validation",
+          "label": "Validation",
+          "collapsible": true,
+          "...": "../../../../models/form-common/_number-validation-fields.json"
+            }
+        ]
+        }
+    ]
+    }
+    ```
+
+    The above code snippet in the `_range.json` file includes the component definition, component model and custom properties for your custom component.
+
+
+    ![component definition and model](/help/edge/docs/forms/universal-editor/assets/custom-component-json-file.png)
+
+4. Navigate to the `/blocks/form/_form.json` file and add the `fd:viewType` value from the `definitions[]` to the components array of the object with `id="form"`.
+
+    ```javascript
+
+        "filters": [
+        {
+         "id": "form",
+        "components": [
+        "captcha",
+        "checkbox",
+        "checkbox-group",
+        "date-input",
+        "drop-down",
+        "email",
+        "file-input",
+        "form-accordion",
+        "form-button",
+        "form-fragment",
+        "form-image",
+        "form-modal",
+        "form-reset-button",
+        "form-submit-button",
+        "number-input",
+        "panel",
+        "plain-text",
+        "radio-group",
+        "rating",
+        "telephone-input",
+        "text-input",
+        "tnc",
+        "wizard",
+        "range"
+      ]
+        }
+    ]
+      ```
+
+    The above code snippet defines the section in which the custom component can be used in Universal Editor.
+    
+    ![component filter](/help/edge/docs/forms/universal-editor/assets/custom-component-form-file.png)
+
+5. Navigate to the `/blocks/form/mappings.js` file and add the `fd:viewType` value from the `definitions[]` array to the `customComponents[]` array.
+
+    ```javascript
+    let customComponents = ["range"];
+    const OOTBComponentDecorators = ['file-input',
+                                 'wizard', 
+                                 'modal', 'tnc',
+                                'toggleable-link',
+                                'rating',
+                                'datetime',
+                                'list',
+                                'location',
+                                'accordion'];
+    ```
+
+The above code snippet enables the form block to recognize the custom component and load its properties defined in the component model during form authoring in Universal Editor.
+
+![component mapping](/help/edge/docs/forms/universal-editor/assets/custom-component-mapping-file.png)
+
+Now, you can see your custom component in the WYSIWYG based authoring:
+
+![Range component](/help/edge/docs/forms/universal-editor/assets/custom-component-range-doc-based.png)
+
+>[!NOTE]
+>
+> For detailed steps on creating a custom component for the Universal Editor, refer to the [Create Custom Component in WYSIWYG based authoring](/help/edge/docs/forms/universal-editor/create-custom-component) article. -->
 
 ## Consulte también
 
 {{see-more-forms-eds}}
+
 
 
 
