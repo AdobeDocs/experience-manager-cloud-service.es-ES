@@ -5,13 +5,13 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ac005e5bc143c35eb29ba177a26aa6cc33897db4
+exl-id: beee9be7-8215-496b-9fb9-61fba000a055
+source-git-commit: ba38294710553145a670ea42dd2b7571fa4eba7b
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '733'
 ht-degree: 18%
 
 ---
-
 
 # Acción de envío de un formulario adaptable
 
@@ -44,7 +44,7 @@ Para configurar un extremo REST:
 1. Especifique la URL del extremo REST.
 1. También puede **habilitar la solicitud POST** y proporcionar una URL para publicar la solicitud.
 
-{width=50%,height=50%}![Habilitar la solicitud de publicación para formularios adaptables](/help/forms/assets/enable-post-request-ue.png)
+![Habilitar solicitud de publicación para formularios adaptables](/help/forms/assets/enable-post-request-ue.png)
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ La acción de envío Enviar correo electrónico permite enviar un correo electr�
 1. Ayuda a optimizar el flujo de trabajo al integrar directamente los envíos de formularios en las notificaciones por correo electrónico.
 1. Ayuda a las organizaciones a personalizar el contenido del correo electrónico, lo que lo hace adecuado para necesidades de comunicación específicas.
 
-{width=50%,height=50%}![Propiedades de formulario adaptable en el editor universal](/help/forms/assets/submit-actions-ue.png)
+![Propiedades de formulario adaptable en el editor universal](/help/forms/assets/submit-actions-ue.png)
 
 
 Para configurar una acción de envío como correo electrónico para el envío del formulario:
@@ -140,5 +140,3 @@ La opción Al enviar le ayuda a configurar un mensaje de acción de envío en el
 1. Al hacer clic en, verá la siguiente opción:
    * **[!UICONTROL Al enviar]**: Al enviar le ayuda a personalizar un mensaje que se mostrará cuando se envíe un formulario. De forma predeterminada, se muestra un mensaje personalizado &quot;Gracias por enviar el formulario&quot; al usuario cuando se envía un formulario correctamente.
 También puede personalizar el mensaje de agradecimiento al enviar el formulario, seleccionando la opción para **[!UICONTROL Mostrar mensaje]**, y agregar o editar el mensaje en el editor de texto enriquecido **Editor**.
-
-
