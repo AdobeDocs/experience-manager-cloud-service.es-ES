@@ -4,9 +4,9 @@ description: Aprenda a utilizar Cloud Acceleration Manager para introducir conte
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 01c2bda6b688bb85a214991f7594585f87850ec2
 workflow-type: tm+mt
-source-wordcount: '3411'
+source-wordcount: '3441'
 ht-degree: 12%
 
 ---
@@ -43,7 +43,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración mediante C
       * Las ingestas no admiten destinos de tipo Entorno de desarrollo rápido (RDE) o Vista previa, y no aparecen como una posible opción de destino, aunque el usuario tenga acceso a ellos.
       * Aunque un conjunto de migración se puede ingerir en varios destinos simultáneamente, un destino solo puede ser el destino de una ingesta en ejecución o en espera a la vez.
 
-   * **Nivel:** Seleccione el nivel. (Autor/Publish).
+   * **Nivel:** Seleccione el nivel. (Autor/Publicación).
       * Si el origen era `Author`, se recomienda ingerirlo en el nivel `Author` en el destino. Del mismo modo, si el origen era `Publish`, el destino debería ser `Publish` también.
 
    >[!NOTE]
@@ -53,7 +53,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración mediante C
    > Si el nivel de destino es `Publish`, la instancia de publicación permanece en ejecución durante la ingesta.  Sin embargo, si el proceso de compactación se está ejecutando mientras se produce la ingesta, es probable que se produzca un conflicto entre los dos procesos.  Por este motivo, el proceso de ingesta 1) desactiva el script temporizado de compactación, de modo que la compactación no se inicia durante la ingesta, y 2) comprueba si la compactación se está ejecutando actualmente y, si lo está, espera a que se complete antes de que la ingesta continúe.  Si la ingesta de publicación está tardando más de lo esperado, compruebe los registros de ingesta para ver si hay instrucciones de registro relacionadas.
 
    * **Borrar:** Elija el valor `Wipe`
-      * La opción **Borrar** establece el punto de inicio de la ingesta en el destino. AEM Si **Borrar** está habilitado, el destino que incluye todo su contenido se restablecerá a la versión de que se especifica en Cloud Manager. Si no está habilitado, el destino mantiene su contenido actual como punto de partida.
+      * La opción **Borrar** establece el punto de inicio de la ingesta en el destino. Si **Borrar** está habilitado, el destino, incluido todo su contenido, se restablecerá a la versión de AEM especificada en Cloud Manager. Si no está habilitado, el destino mantiene su contenido actual como punto de partida.
       * Esta opción **NOT** afecta a la forma en que se realizará la ingesta de contenido. La ingesta siempre usa una estrategia de reemplazo de contenido y _no_ una estrategia de combinación de contenido, por lo que, en los casos de **borrado** y **sin borrado**, la ingesta de un conjunto de migración sobrescribirá el contenido en la misma ruta de acceso del destino. Por ejemplo, si el conjunto de migración contiene `/content/page1` y el destino ya contiene `/content/page1/product1`, la ingesta elimina toda la ruta de acceso de `page1` y sus subpáginas, incluida `product1`, y la reemplaza por el contenido del conjunto de migración. Esto significa que se debe realizar una planificación cuidadosa al realizar una ingesta de **Sin borrado** en un destino que contenga cualquier contenido que se deba mantener.
       * Las ingestas sin borrado están diseñadas específicamente para el caso de uso de ingesta superior. Estas ingestas están pensadas para tener una cantidad incremental de contenido nuevo que ha cambiado desde la última ingesta en un conjunto de migración existente. La realización de ingestas sin borrado fuera de este caso de uso podría provocar tiempos de ingesta muy largos.
 
@@ -65,7 +65,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración mediante C
       * Si se utiliza la ingesta con copia previa (para S3 o Azure Data Store), se recomienda ejecutar la ingesta de `Author` primero solo. Al hacerlo, se acelera la ingesta de `Publish` cuando se ejecuta más adelante.
 
    >[!IMPORTANT]
-   > AEM Solo puede iniciar una ingesta en el entorno de destino si pertenece al grupo local **administradores** en el servicio de creación de Cloud Service de destino Si no puede iniciar una ingesta, consulte [No se puede iniciar la ingesta](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) para obtener más detalles.
+   > Solo puede iniciar una ingesta en el entorno de destino si pertenece al grupo local **administradores de AEM** en el servicio de Cloud Service Author de destino. Si no puede iniciar una ingesta, consulte [No se puede iniciar la ingesta](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) para obtener más detalles.
 
 1. Una vez seleccionadas las opciones de ingesta, se puede mostrar una estimación de su duración. Se trata de una estimación del esfuerzo máximo basada en datos históricos de ingestas similares.
 
@@ -104,7 +104,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración mediante C
 La herramienta de transferencia de contenido tiene una característica que permite extraer contenido diferencial realizando una *recarga* del conjunto de migración. Esto permite modificar el conjunto de migración para incluir únicamente el contenido que ha cambiado desde la extracción anterior sin tener que extraer todo el contenido de nuevo.
 
 >[!NOTE]
->Después de la transferencia de contenido inicial, se recomienda realizar frecuentes recargas de contenido diferencial para acortar el período de congelación de contenido para la transferencia de contenido diferencial final antes de lanzarse al Cloud Service. Si ha utilizado el paso de precopia para la primera ingesta, puede omitir la precopia para las ingestas de recarga posteriores (si el tamaño del conjunto de migración de recarga es inferior a 200 GB). El motivo es que puede añadir tiempo a todo el proceso.
+>Después de la transferencia de contenido inicial, se recomienda realizar frecuentes recargas de contenido diferencial para acortar el período de congelación de contenido para la transferencia de contenido diferencial final antes de lanzarse a Cloud Service. Si ha utilizado el paso de precopia para la primera ingesta, puede omitir la precopia para las ingestas de recarga posteriores (si el tamaño del conjunto de migración de recarga es inferior a 200 GB). El motivo es que puede añadir tiempo a todo el proceso.
 
 Para ingerir contenido diferencial una vez que se hayan completado algunas ingestas, debe ejecutar una [Extracción superior](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) y luego usar el método de ingesta con la opción **Borrar** **deshabilitada**. No olvide leer la explicación **Borrar** anterior para evitar perder contenido que ya se encuentra en el destino.
 
@@ -122,7 +122,7 @@ Comience creando un trabajo de ingesta y asegúrese de que **Borrar** esté desh
 
 ### CAM no puede recuperar el token de migración {#cam-unable-to-retrieve-the-migration-token}
 
-La recuperación automática del token de migración puede fallar por diferentes motivos, entre ellos [configurar una lista de permitidos IP a través de Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) en el entorno del Cloud Service de destino. En estos casos, verá el siguiente cuadro de diálogo cuando intente iniciar una ingesta:
+La recuperación automática del token de migración puede fallar por diferentes motivos, entre ellos [configurar una lista de permitidos IP a través de Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) en el entorno de Cloud Service de destino. En estos casos, verá el siguiente cuadro de diálogo cuando intente iniciar una ingesta:
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
 
@@ -130,11 +130,11 @@ Recupere el token de migración manualmente haciendo clic en el vínculo &quot;O
 
 >[!NOTE]
 >
->AEM El token está disponible para los usuarios que pertenecen al grupo **administradores** locales del servicio de autor del Cloud Service de destino.
+>El token está disponible para los usuarios que pertenecen al grupo local **administradores de AEM** en el servicio de Cloud Service Author de destino.
 
 ### No se puede iniciar la ingesta {#unable-to-start-ingestion}
 
-AEM Solo puede iniciar una ingesta en el entorno de destino si pertenece al grupo local **administradores** en el servicio de creación de Cloud Service de destino AEM Si no pertenece al grupo de administradores de la, verá un error como se muestra a continuación cuando intente iniciar una ingesta. AEM Puede pedirle al administrador que le añada a los **administradores** locales o que le pida el token en sí, que puede pegar en el campo **Entrada del token de migración**.
+Solo puede iniciar una ingesta en el entorno de destino si pertenece al grupo local **administradores de AEM** en el servicio de Cloud Service Author de destino. Si no pertenece al grupo de administradores de AEM, verá un error como se muestra a continuación cuando intente iniciar una ingesta. Puede pedirle al administrador que le añada a los **administradores locales de AEM** o que le pida el token en sí, que puede pegar en el campo **Entrada del token de migración**.
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
@@ -151,25 +151,25 @@ Este mensaje indica que Cloud Acceleration Manager no pudo contactar con el serv
 > El campo &quot;Token de migración&quot; se muestra porque, en algunos casos, la recuperación de ese token es lo que realmente no está permitido. Al permitir que se proporcione manualmente, puede permitir al usuario iniciar la ingesta rápidamente, sin ninguna ayuda adicional. Si se proporciona el token y sigue apareciendo el mensaje, el problema no consistió en recuperar el token.
 
 * AEM as a Cloud Service mantiene el estado del entorno y, ocasionalmente, debe reiniciar el servicio de migración por varios motivos normales. Si ese servicio se está reiniciando, no se podrá acceder a él, pero estará disponible en algún momento.
-* Es posible que se esté ejecutando otro proceso en la instancia. AEM Por ejemplo, si [Actualizaciones de versión de](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) está aplicando una actualización, es posible que el sistema esté ocupado y que el servicio de migración no esté disponible con regularidad. Una vez completado ese proceso, se puede volver a intentar iniciar la ingesta.
+* Es posible que se esté ejecutando otro proceso en la instancia. Por ejemplo, si [Actualizaciones de la versión de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) está aplicando una actualización, es posible que el sistema esté ocupado y que el servicio de migración no esté disponible con regularidad. Una vez completado ese proceso, se puede volver a intentar iniciar la ingesta.
 * Si se ha aplicado una Lista de permitidos de [IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) a través de Cloud Manager, se bloquea el acceso de Cloud Acceleration Manager al servicio de migración. No se puede añadir una dirección IP para ingestas porque es dinámica. Actualmente, la única solución es deshabilitar la lista de permitidos de IP durante el proceso de ingesta e indexación.
 * Puede haber otras razones que requieren investigación. Si la ingesta o la indexación siguen fallando, póngase en contacto con el Servicio de atención al cliente de Adobe.
 
-### AEM Actualizaciones e ingestas de versiones de {#aem-version-updates-and-ingestions}
+### Actualizaciones e ingestas de versiones de AEM {#aem-version-updates-and-ingestions}
 
-AEM [Las actualizaciones de versión de](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) se aplican automáticamente a los entornos para mantenerlos actualizados con la versión más reciente de AEM as a Cloud Service. Si la actualización se activa cuando se realiza una ingesta, puede causar resultados impredecibles, incluido el daño del entorno.
+[Las actualizaciones de la versión de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) se aplican automáticamente a los entornos para mantenerlos actualizados con la última versión de AEM as a Cloud Service. Si la actualización se activa cuando se realiza una ingesta, puede causar resultados impredecibles, incluido el daño del entorno.
 
-AEM Si el programa de destino incorpora las &quot;Actualizaciones de versión de&quot;, el proceso de ingesta intenta deshabilitar su cola antes de iniciarse. Cuando se completa la ingesta, el estado del actualizador de versiones se devuelve a como estaba antes de que se iniciaran las ingestas.
-
->[!NOTE]
->
-> AEM Ya no es necesario registrar un ticket de asistencia para desactivar las &quot;Actualizaciones de versión de la versión de la aplicación&quot; de la aplicación.
-
-AEM Si &quot;Actualizaciones de la versión de la versión de la&quot; está activo (es decir, las actualizaciones se están ejecutando o están en cola para ejecutarse), la ingesta no comenzará y la interfaz de usuario mostrará el siguiente mensaje. Una vez completadas las actualizaciones, se puede iniciar la ingesta. Cloud Manager se puede utilizar para ver el estado actual de las canalizaciones del programa.
+Si &quot;Actualizaciones de la versión de AEM&quot; está incorporado en el programa de destino, el proceso de ingesta intenta desactivar su cola antes de iniciarse. Cuando se completa la ingesta, el estado del actualizador de versiones se devuelve a como estaba antes de que se iniciaran las ingestas.
 
 >[!NOTE]
 >
-> AEM &quot;Actualizaciones de la versión de la aplicación&quot; se ejecuta en la canalización del entorno y espera hasta que la canalización esté limpia. Si las actualizaciones se ponen en cola durante más tiempo del esperado, asegúrese de que un flujo de trabajo personalizado no tenga la canalización bloqueada de forma involuntaria.
+> Ya no es necesario registrar un ticket de asistencia para desactivar &quot;Actualizaciones de versión de AEM&quot;.
+
+Si &quot;Actualizaciones de versión de AEM&quot; está activo (es decir, las actualizaciones se están ejecutando o están en cola para ejecutarse), la ingesta no comenzará y la interfaz de usuario mostrará el siguiente mensaje. Una vez completadas las actualizaciones, se puede iniciar la ingesta. Cloud Manager se puede utilizar para ver el estado actual de las canalizaciones del programa.
+
+>[!NOTE]
+>
+> &quot;Actualizaciones de versión de AEM&quot; se ejecuta en el canal del entorno y espera hasta que el canal esté libre. Si las actualizaciones se ponen en cola durante más tiempo del esperado, asegúrese de que un flujo de trabajo personalizado no tenga la canalización bloqueada de forma involuntaria.
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
@@ -180,7 +180,7 @@ AEM Si &quot;Actualizaciones de la versión de la versión de la&quot; está act
 >title="El entorno de nube no está listo"
 >abstract="En casos excepcionales, el entorno de la nube de destino podría estar experimentando problemas inesperados, lo que hará que la ingesta falle."
 
-En casos excepcionales, el entorno del Cloud Service de destino de la ingesta puede estar experimentando problemas inesperados. Como resultado, la ingesta fallará ya que el entorno no está en el estado de preparado esperado. Consulte el registro de ingesta para mostrar más detalles del estado de error encontrado.
+En casos excepcionales, el entorno de Cloud Service de destino de la ingesta puede estar experimentando problemas inesperados. Como resultado, la ingesta fallará ya que el entorno no está en el estado de preparado esperado. Consulte el registro de ingesta para mostrar más detalles del estado de error encontrado.
 
 Asegúrese de que el entorno de creación esté disponible y espere unos minutos antes de volver a intentar la ingesta. Si el problema persiste, póngase en contacto con el servicio de atención al cliente con el estado de error encontrado.
 
@@ -196,7 +196,7 @@ Una causa común de un error de [ingesta superior](/help/journey-migration/conte
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: La restricción de unicidad violó la propiedad [jcr:uuid] con valor a1a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
-AEM Cada nodo de la interfaz de usuario de debe tener un uuid único. Este error indica que un nodo que se está ingiriendo tiene el mismo uuid que uno que existe en una ruta diferente en la instancia de destino. Esta situación puede ocurrir por dos razones:
+Cada nodo de AEM debe tener un uuid único. Este error indica que un nodo que se está ingiriendo tiene el mismo uuid que uno que existe en una ruta diferente en la instancia de destino. Esta situación puede ocurrir por dos razones:
 
 * Un nodo se mueve en el origen entre una extracción y una [extracción superior](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) posterior
    * _RECORDAR_: Para las extracciones de nivel superior, el nodo seguirá existiendo en el conjunto de migración, aunque ya no exista en el origen.
@@ -239,7 +239,7 @@ Esta es una restricción de MongoDB.
 
 Consulte la nota `Node property value in MongoDB` en [Requisitos previos para la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) para obtener más información y un vínculo a una herramienta de Oak que pueda ayudar a encontrar todos los nodos grandes. Una vez corregidos todos los nodos con tamaños grandes, ejecute de nuevo la extracción y la ingesta.
 
-AEM Para evitar posiblemente esta restricción, ejecute el [Analizador de prácticas recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) en la instancia de origen y revise los resultados que presenta, en particular el patrón [&quot;Estructura de repositorio no admitida&quot; (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs).
+Para evitar posiblemente esta restricción, ejecute el [Analizador de prácticas recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) en la instancia de AEM de origen y revise los resultados que presenta, en particular el patrón [&quot;Estructura de repositorio no admitida&quot; (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs).
 
 >[!NOTE]
 >
@@ -258,6 +258,7 @@ A veces, problemas intermitentes inesperados podrían prestarse a ingestas falli
 
 * `Atlas prescale timeout error`: en la fase de ingesta se intentará escalar previamente la base de datos de la nube de Target a un tamaño adecuado que se ajuste al tamaño del contenido del conjunto de migración que se está ingiriendo. De forma poco frecuente, esta operación no se completa dentro del intervalo de tiempo esperado.
 * `Exhausted mongo restore retries`: se agotaron los intentos de restaurar un volcado local del contenido del conjunto de migración ingerido en la base de datos de la nube. Esto indica un problema general de salud/red con MongoDB, que a menudo se cura solo después de unos minutos.
+* `Mongo network error`: a veces, el establecimiento de una conexión con MongoDB puede fallar, lo que provoca que el proceso de ingesta se cierre antes y notifique como fallido. Se debe intentar un simple reintento de la ingesta.
 
 ### Ingesta rescindida {#ingestion-rescinded}
 
@@ -272,12 +273,12 @@ Una ingesta creada con una extracción en ejecución como el conjunto de migraci
 
 En general, no se recomienda modificar los datos del entorno de la nube entre ingestas.
 
-Cuando se elimina un recurso del destino del Cloud Service mediante la IU táctil de Assets, los datos del nodo se eliminan, pero el blob de recursos con la imagen no se elimina inmediatamente. Se marca para su eliminación de modo que ya no aparezca en la interfaz de usuario; sin embargo, permanece en el almacén de datos hasta que se produce la recolección de elementos no utilizados y se elimina el blob.
+Cuando se elimina un recurso del destino de Cloud Service mediante la IU táctil de Assets, los datos del nodo se eliminan, pero el blob de recursos con la imagen no se elimina inmediatamente. Se marca para su eliminación de modo que ya no aparezca en la interfaz de usuario; sin embargo, permanece en el almacén de datos hasta que se produce la recolección de elementos no utilizados y se elimina el blob.
 
 En el escenario en el que se elimina un recurso migrado anteriormente y la siguiente ingesta se ejecuta antes de que el recolector de elementos no utilizados haya terminado de eliminar el recurso, la ingesta del mismo conjunto de migración no restaurará el recurso eliminado. Cuando la ingesta comprueba el entorno de nube del recurso, no hay datos del nodo; por lo tanto, la ingesta copiará los datos del nodo en el entorno de nube. Sin embargo, cuando comprueba el almacén de blobs, ve que el blob está presente y omite la copia del blob. Por este motivo, los metadatos están presentes después de la ingesta cuando se mira el recurso desde la interfaz de usuario táctil, pero la imagen no. Recuerde que los conjuntos de migración y la ingesta de contenido no se diseñaron para manejar este caso. Su objetivo es añadir contenido nuevo al entorno de la nube y no restaurar el contenido migrado anteriormente.
 
 ## Siguientes pasos {#whats-next}
 
-AEM Cuando la ingesta se haya realizado correctamente, la indexación de la se iniciará automáticamente. Consulte [Indexación después de migrar contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) para obtener más información.
+Cuando la ingesta se haya realizado correctamente, la indexación de AEM se iniciará automáticamente. Consulte [Indexación después de migrar contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) para obtener más información.
 
 Una vez que haya completado la ingesta de contenido en Cloud Service, puede ver los registros de cada paso (extracción e ingesta) y buscar errores. Consulte [Visualización de registros de un conjunto de migración](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md) para obtener más información.
