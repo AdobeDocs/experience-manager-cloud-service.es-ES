@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: ba38294710553145a670ea42dd2b7571fa4eba7b
+source-git-commit: da2f673319dd5cec764408b4517698a9d39031bb
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '735'
 ht-degree: 18%
 
 ---
@@ -140,3 +140,8 @@ La opción Al enviar le ayuda a configurar un mensaje de acción de envío en el
 1. Al hacer clic en, verá la siguiente opción:
    * **[!UICONTROL Al enviar]**: Al enviar le ayuda a personalizar un mensaje que se mostrará cuando se envíe un formulario. De forma predeterminada, se muestra un mensaje personalizado &quot;Gracias por enviar el formulario&quot; al usuario cuando se envía un formulario correctamente.
 También puede personalizar el mensaje de agradecimiento al enviar el formulario, seleccionando la opción para **[!UICONTROL Mostrar mensaje]**, y agregar o editar el mensaje en el editor de texto enriquecido **Editor**.
+
+
+## Ver también
+
+{{see-more-forms-eds}}
