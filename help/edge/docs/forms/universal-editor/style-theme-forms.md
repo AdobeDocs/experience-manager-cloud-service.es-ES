@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 4fc312fe8a52b7c5733a68014136e297479ab2a0
+source-git-commit: d09dce45efb7d8d881420cf724de493837b6ae71
 workflow-type: tm+mt
 source-wordcount: '1843'
 ht-degree: 87%
@@ -53,8 +53,7 @@ El Bloque de formularios adaptables ofrece una estructura de HTML estandarizada 
 * **Actualizar estilos predeterminados**: puede modificar los estilos predeterminados de un formulario si edita `/blocks/form/form.css file`. Este archivo proporciona un estilo completo para un formulario, que admite formularios de asistente de varios pasos. Hace hincapié en el uso de variables CSS personalizadas para facilitar la personalización, el mantenimiento y el estilo uniforme en todos los formularios. &lt;!: para obtener instrucciones sobre cómo agregar el bloque de Forms adaptable al proyecto, consulte [crear un formulario](/help/edge/docs/forms/create-forms.md).
 
 * **Estilo CSS para Forms**: Para asegurarse de que los estilos se aplican correctamente, ajuste el CSS específico del formulario dentro del selector `main .form form`. Esto garantiza que los estilos se dirijan únicamente a los elementos del formulario dentro del área de contenido principal, evitando conflictos con otras partes del sitio web.
-
-  Ejemplo:
+Ejemplo:
 
   ```css
   main .form form input {
@@ -68,8 +67,7 @@ El Bloque de formularios adaptables ofrece una estructura de HTML estandarizada 
   main .form form label {
     /* Add styles specific to labels inside the form */
   }
-  ```
-
+  
 ## Estructura de componentes
 
 El bloque de formularios adaptables ofrece una estructura HTML coherente para varios elementos de formulario, lo que garantiza una gestión y un estilo más sencillos. Puede modificar los componentes mediante CSS con fines de estilo.
