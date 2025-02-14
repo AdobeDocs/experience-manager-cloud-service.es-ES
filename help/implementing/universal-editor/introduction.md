@@ -4,7 +4,7 @@ description: Descubra cómo el editor universal permite la edición de lo que se
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: b8d56873b7bc23295fefc35a826b8047c626649e
+source-git-commit: 2947c4cb1fad7e1c7635a0e423a4adfe23013f79
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 52%
@@ -20,7 +20,7 @@ El editor universal es un editor visual versátil que forma parte de Adobe Exper
 
 El editor universal proporciona una experiencia de creación en contexto eficaz e intuitiva que requiere una formación mínima. Con él, los autores pueden administrar su contenido directamente en el contexto de la experiencia web, exactamente como se mostrará a los visitantes. Al ser un editor real como servicio y, en general, más flexible, pretende reemplazar finalmente al Editor de páginas.
 
-AEM Los autores se benefician de la flexibilidad del editor universal, ya que admite la misma edición visual coherente para todas las formas de contenido: la edición in situ y la composición del diseño son posibles del mismo modo tanto para los fragmentos de contenido como para los componentes de página. Las dos formas de contenido se pueden editar incluso cuando se muestran una al lado de la otra en una experiencia web, sin que los autores tengan que cambiar de contexto. AEM Esta es una tremenda mejora en comparación con editores anteriores en los que solo se admitía un tipo de contenido en el que se mostraba un solo tipo de contenido.
+Los autores se benefician de la flexibilidad del editor universal, ya que admite la misma edición visual coherente para todas las formas de contenido de AEM: la edición in situ y la composición del diseño son posibles del mismo modo tanto para los fragmentos de contenido como para los componentes de página. Las dos formas de contenido se pueden editar incluso cuando se muestran una al lado de la otra en una experiencia web, sin que los autores tengan que cambiar de contexto. Esto supone una tremenda mejora en comparación con editores anteriores en los que AEM solo admitía un tipo de contenido.
 
 Los desarrolladores se benefician de la versatilidad del editor universal, ya que también admite el desacoplamiento real de la implementación. Permite a los desarrolladores utilizar prácticamente cualquier estructura o arquitectura de su elección, sin imponer restricciones SDK o tecnológicas. Esta flexibilidad incluso facilita la instrumentación de aplicaciones web existentes para el editor universal sin tener que volver a diseñarlas.
 
@@ -39,7 +39,7 @@ Los usuarios suelen pensar que una implementación sin encabezado limita a los a
 Los requisitos de una implementación para utilizar el editor universal son muy sencillos y compatibles con lo siguiente:
 
 * **Cualquier arquitectura**: procesamiento del lado del servidor, procesamiento del lado del borde, procesamiento del lado del cliente, etc.
-* AEM **Cualquier módulo** - Vanilla o cualquier módulo de terceros como React, Next.js, Angular, etc.
+* **Cualquier módulo**: AEM de vainilla o cualquier módulo de terceros como React, Next.js, Angular, etc.
 * **Cualquier alojamiento**: se puede alojar localmente en AEM o en un dominio remoto.
 
 ### Cualquier contenido {#any-content}
@@ -86,11 +86,11 @@ Un profesional del marketing quiere crear contenido que esté adaptado al diseñ
 
 A medida que explore el editor universal y avance en la implementación de él en sus propios proyectos, tenga en cuenta las siguientes limitaciones.
 
-* AEM No más de 25 recursos de (fragmentos de contenido, páginas, fragmentos de experiencias, Assets, etc.) deben ser referencias como instrumentación en una sola página.
-* AEM as a Cloud Service AEM AEM y [6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) son los únicos backends compatibles con el servicio de seguridad de la red de seguridad de la red de área de nombres de la red ().
+* No más de 25 recursos de AEM (fragmentos de contenido, páginas, fragmentos de experiencias, Assets, etc.) deben ser referencias como instrumentación en una sola página.
+* AEM as a Cloud Service y [AEM 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) son los únicos backends de AEM compatibles.
 * Se requiere la versión de AEM as a Cloud Service `2023.8.13099` o superior.
 * Los autores de contenido deben tener sus propias cuentas de Experience Cloud individuales.
-* AEM AEM Como parte de la, el editor universal admite los mismos exploradores de escritorio que el editor de archivos de escritorio de la versión de.
+* Como parte de AEM, el editor universal [ admite los mismos exploradores de escritorio que AEM.](/help/overview/supported-platforms.md)
    * Las versiones móviles de estos exploradores no son compatibles.
 
 {{ue-ip-allow-lists}}
