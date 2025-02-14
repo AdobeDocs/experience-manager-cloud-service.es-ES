@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: a765af62628d8b6308d6f712f450a5a1e62640d9
+source-git-commit: ac005e5bc143c35eb29ba177a26aa6cc33897db4
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Puede publicar cualquier **formulario adaptable basado en EDS** en Edge Delivery
 1. Para comprobar el estado de publicación del formulario, haga clic de nuevo en **Publicar**.
    ![Estado de publicación](/help/forms/assets/publish-status.png)
 
-1. Para **cancelar la publicación** de un formulario, ábralo en el editor, haga clic en el menú de tres puntos en la esquina superior derecha y seleccione **Cancelar la publicación**.
+1. Para **cancelar la publicación** de un formulario, ábralo en el editor, haz clic en el menú de tres puntos en la esquina superior derecha y haz clic en **Cancelar la publicación**.
    ![Cancelar publicación](/help/forms/assets/unpublish--form.png)
 
 ## Habilitar el envío de formularios en Edge Delivery mediante la configuración de un filtro de referente para AEM Publisher
