@@ -4,7 +4,7 @@ description: Obtenga información acerca del lanzamiento de Cloud Manager 2025.2
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: ee7a99c5bf08b39a743d4b326ac23cc8546c512e
+source-git-commit: aaef376b733c10643e44205e55a0921c22008990
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 18%
@@ -65,7 +65,7 @@ La próxima versión planificada es el viernes, 13 de marzo de 2025.
 * **Compatibilidad con claves privadas EC (Elliptic Curve) (secp384r1)**
 
   Cloud Manager ahora admite claves privadas de curva elíptica (EC) `secp384r1`, lo que proporciona una seguridad y conformidad mejoradas para los certificados SSL OV/EV administrados por el cliente.
-Para obtener más información, consulte [Requisitos para los certificados SSL OV/EV administrados por el cliente](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md). <!-- CMGR-63636 -->
+Para obtener más información, consulte [Requisitos para los certificados SSL OV/EV administrados por el cliente](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements). <!-- CMGR-63636 -->
 
 * **Entornos de prueba especializados**
 
