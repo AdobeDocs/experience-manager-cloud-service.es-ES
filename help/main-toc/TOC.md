@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 203286407113ac5d277e72f071ec9c30495e58b3
+source-git-commit: dfd6384c15ae28556b2366e9230d96a324ed3644
 workflow-type: tm+mt
-source-wordcount: '6074'
+source-wordcount: '6077'
 ht-degree: 98%
 
 ---
@@ -598,6 +598,7 @@ ht-degree: 98%
       + [Imágenes inteligentes](/help/assets/dynamic-media/imaging-faq.md)
       + [Imágenes inteligentes con proporción de píxeles de dispositivo del lado del cliente](/help/assets/dynamic-media/client-side-dpr.md)
       + [Entrega de recursos de Dynamic Media](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+      + [Plantillas de Dynamic Media](/help/assets/dynamic-media/dynamic-media-templates.md)
       + [Activación de la protección de enlaces interactivos en Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
       + [Compatibilidad con 3D](/help/assets/dynamic-media/assets-3d.md)
       + [Limitaciones de Dynamic Media](/help/assets/dynamic-media/limitations.md)
