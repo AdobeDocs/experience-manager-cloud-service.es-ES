@@ -5,13 +5,13 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d71c5d6488935de4a02c8d3828f287542b979d0f
+exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
+source-git-commit: ee5171e36c24526f331b3722fcd9bd7a1c72072b
 workflow-type: tm+mt
-source-wordcount: '1561'
-ht-degree: 6%
+source-wordcount: '1736'
+ht-degree: 5%
 
 ---
-
 
 # Crear componentes personalizados en WYSIWYG Authoring
 
@@ -173,24 +173,25 @@ En este ejemplo, agregamos Step Value como propiedad personalizada al componente
 
 Para agregar la propiedad personalizada Valor del paso, anexe el modelo de componente con las siguientes líneas de código en el archivo ` _<component>.json`:
 
-```javascript
+    &quot;javascript
     {
-    "component": "number",
-    "name": "stepValue",
-    "label": "Step Value",
-    "valueType": "number"
-    }
-    ```
-The JSON snippet defines a custom property called **Step Value** for a **Range** component. Below is a breakdown of each field:
+    &quot;component&quot;: &quot;number&quot;,
+    &quot;name&quot;: &quot;stepValue&quot;,
+    &quot;label&quot;: &quot;Step Value&quot;,
+    &quot;valueType&quot;: &quot;number&quot;
+    
+    &quot;
 
-* **component**: Specifies the type of input field used in the Property dialog. In this case, `number` indicates that the field accepts numeric values.
-* **name**: The identifier for the property, used to reference it in the component’s logic. Here, the `stepValue` represents the step value setting for the range.
-* **label**: The display name of the property as seen in the Property dialog. 
-* **valueType**: Defines the data type expected for the property. The `number` ensures that only numeric inputs are allowed.
+El fragmento JSON define una propiedad personalizada llamada **Valor de paso** para un componente **Range**. A continuación se muestra un desglose de cada campo:
 
-You can now use `stepValue` as a custom property in the JSON properties of `range.js` and implement dynamic behavior based on its value at runtime.
+* **componente**: especifica el tipo de campo de entrada utilizado en el cuadro de diálogo Propiedad. En este caso, `number` indica que el campo acepta valores numéricos.
+* **name**: El identificador de la propiedad, usado para hacer referencia a ella en la lógica del componente. En este caso, `stepValue` representa la configuración del valor de paso para el intervalo.
+* **label**: el nombre para mostrar de la propiedad tal como se ve en el cuadro de diálogo Propiedad.
+* **valueType**: define el tipo de datos esperado para la propiedad. `number` garantiza que solo se permiten entradas numéricas.
 
-Hence, the final `_range.json` file, after adding the component definition, component model and custom properties, is as follows:
+Ahora puede usar `stepValue` como propiedad personalizada en las propiedades JSON de `range.js` e implementar un comportamiento dinámico basado en su valor durante la ejecución.
+
+Por lo tanto, el archivo `_range.json` final, después de agregar la definición del componente, el modelo del componente y las propiedades personalizadas, es el siguiente:
 
 ```javascript
  {
@@ -322,6 +323,10 @@ const OOTBComponentDecorators = ['file-input',
 Después de completar los pasos anteriores, el componente personalizado aparece en la lista de componentes del formulario en el Editor universal. A continuación, puede arrastrarlo y soltarlo en la sección del formulario.
 
 ![componente de rango](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+
+La captura de pantalla siguiente muestra las propiedades del componente `range` agregado al modelo de componentes, que especifica las propiedades que el autor del formulario puede configurar.:
+
+![Propiedades del componente de intervalo](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
 
 Ahora puede definir el comportamiento en tiempo de ejecución del componente personalizado añadiendo estilo y funcionalidad.
 
