@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: ee5171e36c24526f331b3722fcd9bd7a1c72072b
+source-git-commit: bf70adcb95ddf88d0ea9a496efe3ae47f71f6a1d
 workflow-type: tm+mt
-source-wordcount: '1736'
+source-wordcount: '1725'
 ht-degree: 5%
 
 ---
@@ -173,14 +173,14 @@ En este ejemplo, agregamos Step Value como propiedad personalizada al componente
 
 Para agregar la propiedad personalizada Valor del paso, anexe el modelo de componente con las siguientes líneas de código en el archivo ` _<component>.json`:
 
-    &quot;javascript
-    {
-    &quot;component&quot;: &quot;number&quot;,
-    &quot;name&quot;: &quot;stepValue&quot;,
-    &quot;label&quot;: &quot;Step Value&quot;,
-    &quot;valueType&quot;: &quot;number&quot;
-    
-    &quot;
+```javascript
+      {
+      "component": "number",
+      "name": "stepValue",
+      "label": "Step Value",
+      "valueType": "number"
+      }
+```
 
 El fragmento JSON define una propiedad personalizada llamada **Valor de paso** para un componente **Range**. A continuación se muestra un desglose de cada campo:
 

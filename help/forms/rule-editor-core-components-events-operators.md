@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: 7acbf2099a2b47b5f42885e8f9a9e1727a8112b5
+source-git-commit: dab2b94d1e456622f061741ba1b5192c9163c295
 workflow-type: tm+mt
-source-wordcount: '2148'
-ht-degree: 48%
+source-wordcount: '2171'
+ht-degree: 47%
 
 ---
 
@@ -111,7 +111,7 @@ _
 
 * Asegúrese de que el componente principal [está configurado en la versión 3.0.14 o posterior](https://github.com/adobe/aem-core-forms-components) para usar esta característica en el editor de reglas.
 * Si las reglas se aplican a diferentes campos dentro de la condición When, la regla entra en déclencheur aunque solo se cambie uno de esos campos.
-
+* Solo puede agregar los campos múltiples en la condición **When** para una regla **AND**. No es posible para una regla **OR**.
 
 <!--
 * It is not possible to add multiple fields in the When condition while applying rules to a button.
