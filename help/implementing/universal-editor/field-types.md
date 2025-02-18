@@ -4,10 +4,10 @@ description: Obtenga información acerca de los campos y los tipos de componente
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a27da2d6d675d68d69071d0b393ad5e0f82bb7ae
+source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 13%
+source-wordcount: '1496'
+ht-degree: 12%
 
 ---
 
@@ -24,7 +24,7 @@ Este documento proporciona información general sobre la definición de un model
 
 >[!TIP]
 >
->AEM Si no está familiarizado con cómo instrumentar su aplicación para el editor universal, consulte el documento [Información general del editor universal para desarrolladores de](/help/implementing/universal-editor/developer-overview.md).
+>Si no está familiarizado con cómo instrumentar su aplicación para el editor universal, consulte el documento [Información general del editor universal para desarrolladores de AEM](/help/implementing/universal-editor/developer-overview.md).
 
 ## Estructura de definición de modelo {#model-structure}
 
@@ -43,11 +43,41 @@ La definición del modelo es una estructura JSON que comienza con una matriz de 
 
 Consulte la sección **[Campos](#fields)** de este documento para obtener más información sobre cómo definir la matriz `fields`.
 
+Puede vincular un modelo a un componente de dos maneras: usando la [definición de componente](#component-definition) o [a través de la instrumentación.](#instrumentation)
+
+### Vinculación con la definición del componente {#component-definition}
+
+Este es el método preferido para vincular el modelo al componente. Al hacerlo, puede mantener el vínculo de forma centralizada en la definición del componente y permite arrastrar componentes a través de contenedores.
+
+Simplemente incluya la propiedad `model` en la directiva `template` en el archivo component-definition.json.
+
+```json
+...
+"template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  ...
+           }
+...
+```
+
+Para obtener más información, consulte el documento [Definición del componente.](/help/implementing/universal-editor/component-definition.md)
+
+### Vinculación mediante instrumentación {#instrumentation}
+
 Para usar la definición del modelo con un componente, se puede usar el atributo `data-aue-model`.
 
 ```html
 <div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
 ```
+
+>[!NOTE]
+>
+>El editor universal comprueba primero si un modelo está vinculado mediante la instrumentación y lo utiliza antes de comprobar la definición del componente. Esto significa lo siguiente:
+>
+>* Los proyectos que hayan implementado el vínculo al modelo a través de la instrumentación seguirán funcionando tal cual sin necesidad de cambios.
+>* Si define el modelo en la [definición de componente](#component-definition) así como en la instrumentación, se utilizará siempre la instrumentación.
 
 ## Carga de una definición de modelo {#loading-model}
 
@@ -92,8 +122,8 @@ A continuación se indican los tipos de componentes que se pueden utilizar para 
 
 | Descripción | Tipo de componente |
 |---|---|
-| AEM [Etiqueta de](#aem-tag) | `aem-tag` |
-| AEM [Contenido de la](#aem-content) | `aem-content` |
+| [Etiqueta de AEM](#aem-tag) | `aem-tag` |
+| [Contenido de AEM](#aem-content) | `aem-content` |
 | [Booleana](#boolean) | `boolean` |
 | [Grupo de casillas de verificación](#checkbox-group) | `checkbox-group` |
 | [Contenedor](#container) | `container` |
@@ -109,9 +139,9 @@ A continuación se indican los tipos de componentes que se pueden utilizar para 
 | [Ficha](#tab) | `tab` |
 | [Texto](#text) | `text` |
 
-#### AEM Etiqueta de {#aem-tag}
+#### Etiqueta de AEM {#aem-tag}
 
-AEM AEM Un tipo de componente de etiqueta de habilita un selector de etiquetas de, que se puede utilizar para adjuntar etiquetas al componente.
+El tipo de componente de etiquetas de AEM habilita un selector de etiquetas de AEM, que se puede utilizar para adjuntar etiquetas al componente.
 
 >[!BEGINTABS]
 
@@ -133,17 +163,17 @@ AEM AEM Un tipo de componente de etiqueta de habilita un selector de etiquetas d
 
 >[!TAB Captura de pantalla]
 
-AEM ![Captura de pantalla del tipo de componente de etiqueta de](assets/component-types/aem-tag-picker.png)
+![Captura de pantalla del tipo de componente de etiqueta AEM](assets/component-types/aem-tag-picker.png)
 
 >[!ENDTABS]
 
-#### AEM Contenido de {#aem-content}
+#### Contenido de AEM {#aem-content}
 
-AEM AEM AEM Un tipo de componente de contenido de la habilita un selector de contenido de la, que se puede utilizar para seleccionar cualquier recurso de la misma. AEM AEM A diferencia del [componente de referencia](#reference), que solo puede seleccionar recursos, el componente de contenido de la puede hacer referencia a cualquier contenido de la lista de elementos permitidos. Ofrece un tipo de validación adicional.
+Un tipo de componente de contenido de AEM habilita un selector de contenido de AEM, que se puede utilizar para seleccionar cualquier recurso de AEM. A diferencia del [componente de referencia](#reference), que solo puede seleccionar recursos, el componente de contenido de AEM puede hacer referencia a cualquier contenido de AEM. Ofrece un tipo de validación adicional.
 
 | Tipo de validación | Tipo de valor | Descripción | Requerido |
 |---|---|---|---|
-| `rootPath` | `string` | AEM Ruta que abrirá el selector de contenido para que el usuario seleccione contenido de la, limitando la selección a ese directorio y subdirectorios | No |
+| `rootPath` | `string` | Ruta que abrirá el selector de contenido para que el usuario seleccione contenido de AEM, limitando la selección a ese directorio y subdirectorios | No |
 
 >[!BEGINTABS]
 
@@ -169,7 +199,7 @@ AEM AEM AEM Un tipo de componente de contenido de la habilita un selector de con
 
 >[!TAB Captura de pantalla]
 
-AEM ![Captura de pantalla del tipo de componente de contenido de la](assets/component-types/aem-content-picker.png)
+![Captura de pantalla del tipo de componente de contenido de AEM](assets/component-types/aem-content-picker.png)
 
 >[!ENDTABS]
 
@@ -650,7 +680,7 @@ Un tipo de componente de grupo de radio permite una selección mutuamente excluy
 
 #### Referencia {#reference}
 
-AEM AEM Un tipo de componente de referencia habilita un selector de recursos de, que se puede utilizar para seleccionar cualquier recurso de referencia a la que se pueda hacer referencia en el momento de la selección. AEM AEM A diferencia del [componente de contenido de la](#aem-content), que puede seleccionar cualquier recurso, el componente de referencia solo puede hacer referencia a recursos. Ofrece un tipo de validación adicional.
+Un tipo de componente de referencia habilita un selector de recursos de AEM, que se puede utilizar para seleccionar cualquier recurso de AEM al que hacer referencia. A diferencia del [componente de contenido de AEM](#aem-content), que puede seleccionar cualquier recurso de AEM, el componente de referencia solo puede hacer referencia a recursos. Ofrece un tipo de validación adicional.
 
 Un tipo de componente de referencia permite hacer referencia a otro objeto de datos del objeto actual.
 

@@ -4,9 +4,9 @@ description: Comprenda en detalle el contrato JSON entre la definición del comp
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
@@ -33,35 +33,42 @@ El siguiente es un ejemplo completo, pero simple `component-definition.json`.
 
 ```json
 {
-  "groups": [
+  "groups":[
     {
-      "title": "General Components",
-      "id": "general",
-      "components": [
+      "title":"General Components",
+      "id":"general",
+      "components":[
         {
-          "title": "Text",
-          "id": "text",
-          "plugins": {
-            "aem": {
-              "page": {
-                "resourceType": "wknd/components/text",
-                "template": {
-                  "text": "Default Text"
+          "title":"Text",
+          "id":"text",
+          "plugins":{
+            "aem":{
+              "page":{
+                "resourceType":"wknd/components/text",
+                "template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  "filter":"texts"
                 }
               }
             },
-            "aem65": {
-              "page": {
-                "resourceType": "wknd/components/text",
-                "template": {
-                  "text": "Default Text"
+            "aem65":{
+              "page":{
+                "resourceType":"wknd/components/text",
+                "template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  "filter":"texts"
                 }
               }
             }
           }
-        },
-      }
-   ]
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -86,7 +93,7 @@ El siguiente es un ejemplo completo, pero simple `component-definition.json`.
 `plugins` define qué complemento es responsable de mantener el componente. Los complementos comunes incluyen:
 
 * `aem` para AEM as a Cloud Service.
-* AEM `aem5` para la versión 6.5 de.
+* `aem5` para AEM 6.5.
 * `xwalk` para la creación de AEM as a Cloud Service WYSIWYG.
 
 ## `page` o `cf` {#page-cf}
@@ -100,11 +107,18 @@ Una vez definido `plugin`, debe indicar si está relacionado con la página o co
 
 Si el componente tiene contenido en la página, puede proporcionar la siguiente información.
 
-* `name` define un nombre opcional guardado en el JCR para el componente recién creado.
-   * Solo informativo y, por lo general, no se muestra en la interfaz de usuario como lo es `title`.
 * `resourceType` define [Sling](/help/implementing/developing/introduction/sling-cheatsheet.md) `resourceType` utilizado para procesar el componente.
-* `template` define claves/valores opcionales para que se escriban automáticamente en el componente recién creado.
+* `template` define los valores o claves opcionales que se escribirán automáticamente en el componente recién creado y define qué filtro o modelo se debe aplicar al componente.
    * Útil para texto explicativo, de muestra o de marcador de posición.
+
+#### `template` {#template}
+
+Si se proporcionan pares clave/valor opcionales, `template` puede escribirlos automáticamente en el nuevo componente. Además, también se pueden especificar los siguientes valores opcionales.
+
+* `model` define qué [modelo](/help/implementing/universal-editor/field-types.md#model-structure) se usa con el componente.
+   * Por lo tanto, el modelo se mantiene de forma centralizada en la definición del componente y no es necesario [especificar la instrumentación.](/help/implementing/universal-editor/field-types.md#instrumentation)
+   * Esto le permite mover componentes entre contenedores.
+* `filter` define qué [filtro](/help/implementing/universal-editor/filtering.md) debe usarse con el componente.
 
 ### `cf` {#cf}
 

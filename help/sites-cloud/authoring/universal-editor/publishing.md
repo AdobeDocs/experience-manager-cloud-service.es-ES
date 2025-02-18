@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 73b1a318325e7641ee0fd7a76a3a73a7299c8b91
+source-git-commit: 64c257adc7e1f22531c0fe45b44b27ab4e0badb8
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 61%
+source-wordcount: '857'
+ht-degree: 42%
 
 ---
 
@@ -17,19 +17,46 @@ ht-degree: 61%
 
 Descubra cómo el editor universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
 
-## Publicación de contenido como autor {#publishing-content}
-
-Cuando usted, como autor de contenido, esté listo para publicar su contenido, solo tiene que tocar o hacer clic en [el icono **Publicar** en la barra de herramientas del Editor universal.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
-
-También puede publicar [desde la consola Sitios,](/help/sites-cloud/authoring/sites-console/publishing-pages.md) lo cual puede resultar útil cuando desea publicar varias páginas de contenido.
-
->[!NOTE]
+>[!TIP]
 >
->El editor universal admite [extensiones y extensibilidad de la interfaz de usuario](/help/implementing/universal-editor/extending.md) para permitir que los flujos de trabajo admitan el proceso de publicación.
+>El proceso de publicación que se describe aquí es la función predeterminada estándar del editor universal.
+>
+>El editor universal también admite [extensiones y extensibilidad de la interfaz de usuario](/help/implementing/universal-editor/extending.md) para permitir que los flujos de trabajo admitan el proceso de publicación, por lo que el flujo de publicación puede variar.
 
-## Similitudes con AEM {#similarities}
+## Publicación de contenido desde el editor universal {#publishing-content}
 
-Para los usuarios de AEM, el proceso de publicación de contenido con el editor universal funciona como está acostumbrado: al publicarse en AEM, el contenido se duplica desde el nivel de creación al de publicación.
+Cuando usted, como autor de contenido, esté listo para publicar su contenido, solo tiene que tocar o hacer clic en el icono **Publicar** en la barra de herramientas del Editor universal.
+
+![Páginas de publicación](assets/publish-menu.png)
+
+1. En el Editor universal, pulse o haga clic en [el icono **Publicar** de la barra de herramientas del Editor universal.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
+1. Si tienes un [servicio de vista previa](/help/sites-cloud/authoring/sites-console/previewing-content.md) disponible, puedes elegir dónde publicar el contenido, ya sea en **Vista previa** o en **Publicar**.
+1. La sección **Items** enumera el contenido que se incluye en la publicación, que incluye:
+   * **Nuevos** elementos que aún no se han publicado.
+   * **Modificado** contenido que se ha publicado, pero modificado desde la última publicación.
+   * **Publicado** contenido que se ha publicado y no se ha modificado desde esa publicación.
+
+   Pulse o haga clic en las casillas de verificación situadas junto a esos elementos para incluirlos o excluirlos de la publicación, según sea necesario. Pulse o haga clic en **Extender** para ver los elementos individuales incluidos en los totales de las tres categorías y para poder incluirlos o excluirlos individualmente.
+
+   ![Publicar elementos](assets/publish-items.png)
+
+   Pulse o haga clic en la flecha hacia atrás situada junto al encabezado **Elementos** para volver a la descripción general.
+
+1. Pulse o haga clic en **Publicar** para publicar o en **Cancelar** para cancelar.
+
+## Cancelar la publicación de contenido desde el editor universal {#unpublishing-content}
+
+La cancelación de la publicación de contenido funciona de manera similar a la publicación de contenido. Cuando usted, como autor de contenido, esté listo para quitar contenido de la publicación, toque o haga clic en el icono de puntos suspensivos en la barra de herramientas del Editor universal y, a continuación, **Cancelar la publicación**.
+
+Entonces tiene las mismas opciones para cancelar la publicación de contenido que tenía al [publicar contenido.](#publishing-content) incluida la cancelación de la publicación de una instancia de vista previa si está disponible y qué elementos se incluirán en la cancelación de la publicación.
+
+## Publicar y cancelar la publicación desde la consola Sitios {#publishing-sites-console}
+
+También puede publicar [desde la consola Sitios,](/help/sites-cloud/authoring/sites-console/publishing-pages.md), lo que puede resultar útil cuando desea publicar varias páginas de contenido o programar la publicación o cancelación de la publicación.
+
+## Similitudes con el editor de páginas {#similarities}
+
+Para los usuarios del [Editor de páginas de AEM](/help/sites-cloud/authoring/page-editor/introduction.md), el proceso para publicar contenido con el Editor universal funciona como está acostumbrado: al publicar en AEM, el contenido se replica desde el nivel de creación al de publicación.
 
 ## Diferencias {#differences}
 

@@ -1,14 +1,14 @@
 ---
 title: Publicar páginas
-description: AEM Obtenga información sobre cómo publicar y cancelar la publicación de páginas mediante varios mecanismos en la documentación de.
+description: Obtenga información sobre cómo publicar y cancelar la publicación de páginas mediante varios mecanismos en AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c738a123eccbb9b8c011f75ac60d79aba7a2a2d8
 workflow-type: tm+mt
-source-wordcount: '1936'
-ht-degree: 81%
+source-wordcount: '1926'
+ht-degree: 75%
 
 ---
 
@@ -16,26 +16,26 @@ ht-degree: 81%
 
 Cuando haya creado y revisado el contenido en el entorno de creación, el objetivo consiste en [que esté disponible en su sitio web público](/help/sites-cloud/authoring/author-publish.md) (su entorno de publicación).
 
-Es lo que se denomina publicar una página. Quitar una página del entorno de publicación, se denomina cancelar la publicación. Al publicar y cancelar la publicación, la página permanece disponible en el entorno de creación para realizar más cambios hasta que se elimine.
+Es lo que se denomina publicar una página. Quitar una página del entorno de publicación, se denomina cancelar la publicación. Al publicar y cancelar la publicación, la página permanece disponible en el entorno de creación para realizar más cambios hasta que la elimine.
 
 Puede publicar una página (o cancelar su publicación) inmediatamente o en un momento posterior predefinido.
 
 >[!NOTE]
 >
->La publicación de un fragmento de experiencia básicamente sigue el mismo procedimiento que para publicar una página, aunque desde la consola o el editor de fragmentos de experiencias.
+>La publicación de un [fragmento de experiencia](/help/sites-cloud/authoring/fragments/experience-fragments.md) básicamente sigue el mismo procedimiento que para publicar una página, aunque desde la consola o el editor de fragmentos de experiencias.
 
 ## Terminología {#terminology}
 
 Puede encontrar diferentes términos relacionados con la publicación al trabajar con Adobe Experience Manager (AEM) as a Cloud Service.
 
 * **Publicar o cancelar la publicación**
-   * Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los visitantes en su entorno de publicación.
+   * Estos son los términos principales de las acciones que hacen que el contenido esté disponible o no para los entornos de publicación o vista previa.
    * Estos son los términos utilizados en la documentación de AEM.
 * **Activar o desactivar**
    * Estos términos son sinónimos de publicar y cancelar la publicación.
    * Estos términos se utilizaban en versiones anteriores de AEM.
 * **Replicar o replicación**
-   * Son los términos técnicos que describen el movimiento de datos (por ejemplo, contenido de páginas, archivos, códigos o comentarios de usuarios) de un entorno a otro cuando publica una página.
+   * Son los términos técnicos que describen el movimiento de datos (por ejemplo, contenido de página, archivos, código, comentarios del usuario) de un servicio a otro cuando publica una página (por ejemplo, de autor a vista previa).
    * Los desarrolladores son quienes, principalmente, utilizan estos términos.
 
 ## Publicar páginas {#publishing-pages-1}
@@ -56,15 +56,12 @@ En función de su ubicación, puede publicar lo siguiente:
 
 >[!NOTE]
 >
->Si desea conservar el orden de las páginas, debe usar [Administrar publicación](#manage-publication) para publicar la página principal junto con las páginas secundarias, en una sola acción.
+>Si desea conservar el orden de las páginas, debe usar [Administrar publicación](#manage-publication) para publicar la página principal junto con las páginas secundarias en una sola acción.
 >
 >No se garantiza el orden de las páginas:
+>
 >* si solo se seleccionan páginas secundarias para la publicación (ya que la información de pedido se mantiene en la página principal)
 >* si las páginas principales y secundarias se publican en acciones independientes
-
->[!NOTE]
->
-> Para obtener más información, consulte **Tiempo de activación** y **Tiempo de inactividad** en la [pestaña Básico de Propiedades de página](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
 
 ### Publicar desde el editor de páginas {#publishing-from-the-page-editor}
 
@@ -78,7 +75,7 @@ Si está editando una página en el [editor de páginas](/help/sites-cloud/autho
 
    * La página se publica directamente si no hay ninguna referencia por publicar.
    * Si la página tiene referencias que es necesario publicar, se enumeran en el asistente **Publicar**, donde puede:
-      * Especifique cuál de los recursos, o etiquetas, etc., desea publicar junto con la página y, a continuación, utilice **Publish** para completar el proceso.
+      * Especifique cuál de los recursos, o etiquetas, etc., desea publicar junto con la página y, a continuación, utilice **Publicar** para completar el proceso.
       * Utilizar **Cancelar** para anular la acción.
 
    ![Publicación de referencias con la página](/help/sites-cloud/authoring/assets/publishing-references.png)
@@ -112,7 +109,7 @@ En la consola **Sites** hay dos opciones para la publicación:
 
 Para publicar una página con Publicación rápida:
 
-1. Seleccione la página o páginas en la consola Sitios y haga clic en el botón **Quick Publish**.
+1. Seleccione la página o páginas en la consola Sitios y haga clic en el botón **Publicación rápida**.
 
    ![Selección de páginas para publicación](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -128,15 +125,7 @@ Para publicar una página con Publicación rápida:
 
 #### Administrar publicación     {#manage-publication}
 
-**Administrar publicación** ofrece más opciones que **Publicación rápida**, pues permite incluir páginas secundarias, personalizar las referencias e iniciar cualquier flujo de trabajo aplicable, además de la opción de publicar en una fecha posterior.
-
->[!NOTE]
->
->Si desea conservar el orden de las páginas, debe usar **Administrar publicación** para publicar la página principal junto con las páginas secundarias en una sola acción.
->
->No se garantiza el orden de las páginas:
->* si solo se seleccionan páginas secundarias para la publicación (ya que la información de pedido se mantiene en la página principal)
->* si las páginas principales y secundarias se publican en acciones independientes
+**Administrar publicación** ofrece más opciones que **Publicación rápida**, ya que permite incluir páginas secundarias, personalizar las referencias, publicar en un servicio de vista previa (si está disponible) e iniciar cualquier flujo de trabajo aplicable, además de poder publicar en un momento posterior.
 
 Para publicar o cancelar la publicación de una página con Administrar publicación:
 
@@ -150,6 +139,10 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
      Elija si publica o cancela la publicación de las páginas seleccionadas.
 
+   * **Destino**
+
+     Seleccione si desea publicar en el servicio de publicación (predeterminado) o en el servicio de vista previa. Solo está disponible si tiene configurado un servicio de [vista previa.](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+
    * **Programación**
 
      Elija realizar esa acción ahora o en una fecha posterior.
@@ -159,6 +152,10 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
      >[!NOTE]
      >
      >Si desea cancelar una acción de publicación/cancelación de la publicación posteriormente, vaya a la [consola Flujo de trabajo](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) para finalizar el flujo de trabajo correspondiente.
+
+     >[!NOTE]
+     >
+     >Programar contenido para la publicación no es lo mismo que [**Tiempo de activación** y **Tiempo de inactividad** disponibles en las propiedades de la página,](/help/sites-cloud/authoring/sites-console/page-properties.md#basic), pero se pueden usar en circunstancias similares.
 
    ![Administrar opciones de publicación](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
@@ -232,6 +229,8 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
    * Definir un título para el paquete de flujos de trabajo si se eligió la opción para mantener dicho paquete.
 
 1. Haga clic en **Publicar** o **Publicar más tarde** para completar la publicación.
+
+
 
 ## Cancelar la publicación de páginas {#unpublishing-pages}
 

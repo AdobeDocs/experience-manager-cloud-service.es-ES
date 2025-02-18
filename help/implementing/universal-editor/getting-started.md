@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo acceder al editor universal y cóm
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 0ee6689460ac0ecc5c025fb6a940d69a16699c85
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 38%
@@ -20,7 +20,7 @@ Obtenga información sobre cómo acceder al editor universal y cómo instrumenta
 >
 >Si prefiere sumergirse directamente en un ejemplo, puede revisar la aplicación de ejemplo [Universal Editor en GitHub](https://github.com/adobe/universal-editor-sample-editable-app).
 
-AEM Aunque el editor universal puede editar contenido desde cualquier fuente, este documento utiliza una aplicación de la aplicación de la como ejemplo. Este documento le guiará a través de estos pasos.
+Aunque el editor universal puede editar contenido desde cualquier fuente, este documento utilizará una aplicación de AEM como ejemplo. Este documento le guiará a través de estos pasos.
 
 ## Instrumentación de la página {#instrument-page}
 
@@ -102,7 +102,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 Puede usar el prefijo `config` en el URN de conexión para establecer los extremos de servicio y extensión si es necesario.
 
-Si no desea utilizar el servicio de editor universal, que se aloja mediante Adobe, sino su propia versión alojada, puede establecerlo en una metaetiqueta. Para sobrescribir el extremo de servicio predeterminado que proporciona el Editor universal, establezca su propio extremo de servicio:
+Si no desea utilizar el servicio de editor universal, que aloja Adobe, sino su propia versión alojada, puede establecerlo en una metaetiqueta. Para sobrescribir el extremo de servicio predeterminado que proporciona el Editor universal, establezca su propio extremo de servicio:
 
 * Meta name - `urn:adobe:aue:config:service`
 * Meta content - `content="https://adobe.com"` (ejemplo)
@@ -122,7 +122,7 @@ Si solo desea tener ciertas extensiones habilitadas para una página, puede esta
 
 ## Defina para qué rutas de contenido o `sling:resourceType` se debe abrir el Editor universal. (Opcional) {#content-paths}
 
-AEM Si tiene un proyecto de existente que usa [el editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md), cuando los autores de contenido editan las páginas, estas se abren automáticamente con el editor de páginas. AEM Puede definir qué editor debe abrirse en función de las rutas de contenido o de `sling:resourceType`, lo que hace que la experiencia sea perfecta para los autores, independientemente del editor que se requiera para el contenido seleccionado.
+Si tiene un proyecto de AEM existente que usa [el editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md), cuando los autores de contenido editan las páginas, estas se abren automáticamente con el editor de páginas. Puede definir qué editor debe abrir AEM en función de las rutas de contenido o `sling:resourceType`, para que la experiencia sea perfecta para los autores, independientemente del editor que se requiera para el contenido seleccionado.
 
 1. Abra el Administrador de configuración.
 
@@ -137,11 +137,11 @@ AEM Si tiene un proyecto de existente que usa [el editor de páginas](/help/site
 
 1. Haga clic en **Guardar**.
 
-AEM Se abrirá el Editor universal para las páginas basadas en esta configuración en el siguiente orden.
+AEM abrirá el Editor universal para páginas basadas en esta configuración en el siguiente orden.
 
-1. AEM Se comprobarán las asignaciones en `Universal Editor Opening Mapping` y, si el contenido se encuentra en alguna de las rutas definidas, se abrirá el Editor universal para él.
-1. AEM Para el contenido que no se encuentra en las rutas definidas en `Universal Editor Opening Mapping`, comprueba si el `resourceType` del contenido coincide con los definidos en **Sling:resourceTypes, que abrirá el editor universal**. Si el contenido coincide con uno de esos tipos, el editor universal se abrirá para él en `${author}${path}.html`.
-1. AEM De lo contrario, abre el Editor de páginas.
+1. AEM comprobará las asignaciones de `Universal Editor Opening Mapping` y, si el contenido se encuentra en alguna de las rutas definidas, se abrirá el Editor universal para él.
+1. Para el contenido que no se encuentra en las rutas definidas en `Universal Editor Opening Mapping`, AEM comprueba si el `resourceType` del contenido coincide con los definidos en **Sling:resourceTypes, que abrirá el editor universal**. Si el contenido coincide con uno de esos tipos, el editor universal se abre para él en `${author}${path}.html`.
+1. De lo contrario, AEM abre el Editor de páginas.
 
 Las siguientes variables están disponibles para definir las asignaciones en el campo **Asignación de apertura de editor universal**.
 
@@ -155,7 +155,7 @@ Las siguientes variables están disponibles para definir las asignaciones en el 
 
 ### Asignaciones de ejemplo {#example-mappings}
 
-* AEM Abra todas las páginas por debajo de `/content/foo` en el Autor de la:
+* Abra todas las páginas por debajo de `/content/foo` en AEM Author:
 
    * `/content/foo:${author}${path}.html?login-token=${token}`
    * Esto resulta en abrir `https://localhost:4502/content/foo/x.html?login-token=<token>`
@@ -177,7 +177,7 @@ Para obtener más información acerca del editor universal, consulte estos docum
 
 * [Introducción al editor universal](introduction.md): descubra cómo el editor universal permite editar cualquier aspecto de los contenidos en varias implementaciones para ofrecer experiencias excepcionales, aumentar la velocidad de contenido y proporcionar una experiencia de desarrollador de última generación.
 * [Creación de contenido con el editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md): aprenda lo fácil e intuitivo que es para los autores de contenido crearlo con el editor universal.
-* [Publicación de contenido con el editor universal](/help/sites-cloud/authoring/universal-editor/publishing.md): aprenda cómo el editor universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
+* [Publicación de contenido con el editor universal](/help/implementing/universal-editor/publishing.md): aprenda cómo el editor universal publica contenido y cómo sus aplicaciones pueden gestionar el contenido publicado.
 * [Arquitectura del editor universal](architecture.md): obtenga información acerca de la arquitectura del editor universal y cómo fluyen los datos entre sus servicios y capas.
 * [Atributos y tipos](attributes-types.md): obtenga información acerca de los atributos y tipos de datos que requiere el editor universal.
 * [Autenticación del editor universal](authentication.md): obtenga información sobre cómo se autentica el editor universal.
