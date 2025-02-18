@@ -4,9 +4,9 @@ description: Conozca los principales casos de uso del editor universal y cómo o
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
@@ -29,18 +29,18 @@ Este documento explica en detalle estos dos casos de uso y le muestra cómo pued
 
 El editor universal presenta un editor visual cómodo e intuitivo a los autores de contenido, independientemente del tipo de contenido que creen. Los dos casos de uso principales son:
 
-* [Creación en WYSIWYG](#wysiwyg-authoring): use la consola de AEM Sites AEM para administrar el contenido y las páginas de creación dentro de las páginas de creación mediante el uso del Editor universal (Universal Editor).
+* [Creación en WYSIWYG](#wysiwyg-authoring): use la consola de AEM Sites para administrar el contenido y las páginas de creación en AEM mediante el editor universal
 * [Creación sin encabezado](#headless-authoring): Cree contenido en su propia aplicación sin encabezado personalizada mediante el Editor universal.
 
 ### Creación WYSIWYG {#wysiwyg-authoring}
 
-AEM Si ya está familiarizado con la administración de páginas, puede utilizar la consola Sitios para crear y administrar sus páginas y, a continuación, editarlas con el Editor universal.
+Si ya está familiarizado con AEM, puede utilizar la consola Sitios para crear y administrar sus páginas y, a continuación, editarlas con el Editor universal.
 
 De este modo, puede beneficiarse de las herramientas disponibles en la consola Sites, como la administración de páginas (copiar, pegar, mover) y los flujos de trabajo, pero también beneficiarse del editor universal moderno.
 
-AEM Si este es su caso de uso, como paso siguiente inmediato, consulte los siguientes documentos para obtener una descripción general completa de cómo ponerse en marcha con el editor universal en la documentación de la aplicación de la.
+Si este es su caso de uso, como paso siguiente, consulte los siguientes documentos para obtener una descripción general completa de cómo ponerse en marcha con el editor universal en AEM.
 
-1. [Guía de introducción para desarrolladores para la creación de WYSIWYG con Edge Delivery Services AEM](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md): Empiece con su primer proyecto de Universal Editor en el mundo de la creación de contenido en el sitio web de
+1. [Guía de introducción para desarrolladores para la creación de WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md): Empiece con su primer proyecto de Universal Editor en AEM
 1. [Creación de bloques instrumentados para su uso con el editor universal](/help/edge/wysiwyg-authoring/create-block.md): aprenda a instrumentar bloques para poder editar su contenido en el editor universal
 1. [Modelado de contenido para la creación de WYSIWYG con proyectos de Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md): conozca los detalles de cómo se estructuran los bloques para modelar de forma eficaz el contenido y utilizarlo con el editor universal.
 
@@ -48,7 +48,7 @@ Una vez que haya leído esos documentos, puede volver a esta página para conoce
 
 ### Creación sin encabezado {#headless-authoring}
 
-AEM Si ya tiene una aplicación sin encabezado, puede utilizar el Editor universal para crear contenido para la aplicación y mantener su contenido como fragmentos de contenido en la aplicación. El único requisito es que la aplicación esté instrumentada para permitir el uso del editor universal.
+Si ya tiene una aplicación sin encabezado, puede utilizar el Editor universal para crear contenido para la aplicación y mantener su contenido como fragmentos de contenido en AEM. El único requisito es que la aplicación esté instrumentada para permitir el uso del editor universal.
 
 Si este es su caso de uso, como paso siguiente inmediato, consulte el siguiente documento para ver un ejemplo de una aplicación sin encabezado instrumentada para utilizar el Editor universal.
 
@@ -63,7 +63,7 @@ El poder del editor universal es su capacidad para crear cualquier contenido in 
 El editor universal funciona de la siguiente manera.
 
 1. Un desarrollador instrumenta la aplicación o página para utilizar el Editor universal. Esta instrumentación indica al editor qué contenido se puede editar y cómo conservarlo.
-   * Si sigue la [Guía de introducción para desarrolladores de WYSIWYG Authoring con la documentación de Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md), sus páginas se instrumentarán automáticamente.
+   * Si sigue la [Guía de introducción para desarrolladores de WYSIWYG Authoring con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md), sus páginas se instrumentarán automáticamente.
    * Para la creación sin encabezado, la aplicación se puede instrumentar fácilmente.
 1. El autor del contenido carga el editor universal, que a su vez carga la página para editarla. Como está instrumentado, sabe qué contenido es editable y cómo se representará y persistirá.
 1. El autor del contenido edita el contenido de la página en una interfaz intuitiva de WYSIWYG y lo edita in situ.
@@ -81,4 +81,5 @@ Para que el editor universal pueda editar una página o aplicación, debe estar 
 
 El editor universal también se puede adaptar a las necesidades de su proyecto.
 
-* [Personalización de la experiencia de creación del editor universal](/help/implementing/universal-editor/customizing.md): la experiencia del editor universal se puede adaptar filtrando varios aspectos del editor o ampliando la funcionalidad del editor.
+* [Personalización del editor universal](/help/implementing/universal-editor/customizing.md): la experiencia del editor universal se puede adaptar filtrando varios aspectos del editor o ampliando la funcionalidad del editor.
+* [Ampliación del editor universal](/help/implementing/universal-editor/extending.md): la interfaz de usuario del editor universal se puede ampliar para ampliar sus capacidades y así satisfacer las necesidades de su proyecto.

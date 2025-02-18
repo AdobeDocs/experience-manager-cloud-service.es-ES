@@ -4,9 +4,9 @@ description: Descubra cómo puede restringir los componentes permitidos por cont
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: eeae8d7c-c563-4d9b-8c54-1098a4e98c18
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '153'
 ht-degree: 3%
 
 ---
@@ -53,4 +53,7 @@ Al establecer el atributo `components` en una definición de filtro en `null`, s
 
 >[!TIP]
 >
->Obtenga información acerca de otras opciones de personalización y extensión disponibles para el editor universal en el documento [Personalización y ampliación del editor universal](/help/implementing/universal-editor/customizing.md).
+>Obtenga información acerca de otras opciones de personalización y extensión disponibles en el editor universal en los siguientes documentos:
+>
+>* [Personalización del editor universal](/help/implementing/universal-editor/customizing.md)
+>* [Ampliación del editor universal](/help/implementing/universal-editor/extending.md)

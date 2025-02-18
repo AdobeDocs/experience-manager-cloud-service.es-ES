@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9daa4ea54e87694c297a42748aa8705eb712d182
 workflow-type: tm+mt
-source-wordcount: '1613'
+source-wordcount: '1616'
 ht-degree: 27%
 
 ---
@@ -37,7 +37,7 @@ Para poder crear contenido para una aplicación con el editor universal, el desa
 
 ## Acceso al editor universal {#accessing}
 
-Una vez que la aplicación está instrumentada para trabajar con el Editor Universal, el Editor Universal puede acceder tanto dentro de AEM as a Cloud Service AEM como directamente sin acceder a la.
+Una vez que la aplicación está instrumentada para trabajar con el editor universal, este puede acceder tanto dentro de AEM as a Cloud Service como directamente sin acceder a AEM.
 
 ### Acceso en AEM as a Cloud Service {#accessing-aem}
 
@@ -75,7 +75,7 @@ El encabezado de Experience Cloud siempre está presente en la parte superior de
 
 #### Experience Manager {#experience-manager}
 
-Seleccione el vínculo de Adobe Experience Cloud a la izquierda del encabezado para ir a la raíz de la solución de Experience Manager y obtener acceso a herramientas como [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) y [Distribución de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=es).
+Seleccione el vínculo de Adobe Experience Cloud a la izquierda del encabezado para ir a la raíz de su solución de Experience Manager y acceder a herramientas como [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) y [Distribución de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=es).
 
 ![Botón Navegación global](assets/global-navigation.png)
 
@@ -111,7 +111,7 @@ Seleccione el icono que representa a su usuario para acceder a la configuración
 
 ### Barra de herramientas del editor universal {#universal-editor-toolbar}
 
-La barra de herramientas del editor universal siempre está presente en la parte superior de la pantalla justo debajo de [el encabezado del Experience Cloud](#experience-cloud-header). Esto le permite desplazarse rápidamente a otra página para editarla y publicarla.
+La barra de herramientas del editor universal siempre está presente en la parte superior de la pantalla justo debajo de [el encabezado de Experience Cloud](#experience-cloud-header). Esto le permite desplazarse rápidamente a otra página para editarla y publicarla.
 
 ![Barra de herramientas del Editor universal](assets/universal-editor-toolbar.png)
 
@@ -213,8 +213,8 @@ Por ejemplo, se puede cancelar la publicación de una página (es decir, inverti
 
 El editor universal ofrece una experiencia de creación personalizable y ampliable. Si ve botones adicionales en la barra de herramientas, se ha ampliado el editor universal.
 
-* Para obtener más información sobre las posibilidades de extensión, consulte [Personalización y ampliación del editor universal](/help/implementing/universal-editor/customizing.md).
-* Para obtener más información sobre cómo funciona una extensión individual, consulte la [documentación del Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
+* Para obtener más información sobre las posibilidades de extensión, consulte [Ampliación del editor universal](/help/implementing/universal-editor/extending.md).
+* Para obtener más información sobre cómo funciona una extensión individual, consulte la [documentación de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ### El Editor {#editor}
 
@@ -308,12 +308,12 @@ Al tocar o hacer clic en el botón Eliminar [se elimina el componente](/help/sit
 >
 >Utilice la tecla de acceso directo `Shift+Backspace` para eliminar un componente seleccionado de un contenedor.
 
-#### Botones adicionales {#additional-properties-rail-buttons}
+## Funciones adicionales {#additional-features}
 
-El editor universal ofrece una experiencia de creación personalizable y ampliable. Si ve botones adicionales en el panel de propiedades, se ha ampliado el editor universal.
+El editor universal ofrece una experiencia de creación personalizable y ampliable. Si ve botones u opciones adicionales en el panel de propiedades o en la barra de herramientas, se ha ampliado el editor universal.
 
 * Para obtener más información sobre las posibilidades de extensión, consulte [Personalización y ampliación del editor universal](/help/implementing/universal-editor/customizing.md).
-* Para obtener más información sobre cómo funciona una extensión individual, consulte la [documentación del Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
+* Para obtener más información sobre cómo funciona una extensión individual, consulte la [documentación de Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ## Siguientes pasos {#next-steps}
 
