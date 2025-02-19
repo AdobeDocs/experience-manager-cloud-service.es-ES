@@ -4,7 +4,7 @@ description: Comprenda en detalle el contrato JSON entre la definición del comp
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
+source-git-commit: afb59345b48b39376b62a13cce8910bc9bc42c38
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 1%
@@ -41,15 +41,15 @@ El siguiente es un ejemplo completo, pero simple `component-definition.json`.
         {
           "title":"Text",
           "id":"text",
+          "model": "text",
+          "filter": "texts",
           "plugins":{
             "aem":{
               "page":{
                 "resourceType":"wknd/components/text",
                 "template":{
                   "text":"Default Text",
-                  "name":"Text",
-                  "model":"text",
-                  "filter":"texts"
+                  "name":"Text"
                 }
               }
             },
@@ -58,9 +58,7 @@ El siguiente es un ejemplo completo, pero simple `component-definition.json`.
                 "resourceType":"wknd/components/text",
                 "template":{
                   "text":"Default Text",
-                  "name":"Text",
-                  "model":"text",
-                  "filter":"texts"
+                  "name":"Text"
                 }
               }
             }
@@ -87,6 +85,10 @@ El siguiente es un ejemplo completo, pero simple `component-definition.json`.
 * `id` identifica de forma exclusiva el componente.
    * El [modelo de componente](/help/implementing/universal-editor/field-types.md#model-structure) del mismo `id` define los campos del componente.
    * Como es único, se puede usar, por ejemplo, en una [definición de filtro](/help/implementing/universal-editor/filtering.md) para determinar qué componentes se pueden agregar a un contenedor.
+* `model` define qué [modelo](/help/implementing/universal-editor/field-types.md#model-structure) se usa con el componente.
+   * Por lo tanto, el modelo se mantiene de forma centralizada en la definición del componente y no es necesario [especificar la instrumentación.](/help/implementing/universal-editor/field-types.md#instrumentation)
+   * Esto le permite mover componentes entre contenedores.
+* `filter` define qué [filtro](/help/implementing/universal-editor/filtering.md) debe usarse con el componente.
 
 ## `plugins` {#plugins}
 
@@ -114,11 +116,6 @@ Si el componente tiene contenido en la página, puede proporcionar la siguiente 
 #### `template` {#template}
 
 Si se proporcionan pares clave/valor opcionales, `template` puede escribirlos automáticamente en el nuevo componente. Además, también se pueden especificar los siguientes valores opcionales.
-
-* `model` define qué [modelo](/help/implementing/universal-editor/field-types.md#model-structure) se usa con el componente.
-   * Por lo tanto, el modelo se mantiene de forma centralizada en la definición del componente y no es necesario [especificar la instrumentación.](/help/implementing/universal-editor/field-types.md#instrumentation)
-   * Esto le permite mover componentes entre contenedores.
-* `filter` define qué [filtro](/help/implementing/universal-editor/filtering.md) debe usarse con el componente.
 
 ### `cf` {#cf}
 
