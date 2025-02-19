@@ -4,9 +4,9 @@ description: Obtenga información acerca de los campos y los tipos de componente
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
+source-git-commit: 8ced236b9bbbae498c46e14a265f7cfa29499f53
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1499'
 ht-degree: 12%
 
 ---
@@ -49,18 +49,7 @@ Puede vincular un modelo a un componente de dos maneras: usando la [definición 
 
 Este es el método preferido para vincular el modelo al componente. Al hacerlo, puede mantener el vínculo de forma centralizada en la definición del componente y permite arrastrar componentes a través de contenedores.
 
-Simplemente incluya la propiedad `model` en la directiva `template` en el archivo component-definition.json.
-
-```json
-...
-"template":{
-                  "text":"Default Text",
-                  "name":"Text",
-                  "model":"text",
-                  ...
-           }
-...
-```
+Simplemente incluya la propiedad `model` en el objeto de componente en la matriz `components` del archivo `component-definition.json`.
 
 Para obtener más información, consulte el documento [Definición del componente.](/help/implementing/universal-editor/component-definition.md)
 
