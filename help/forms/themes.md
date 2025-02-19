@@ -4,10 +4,10 @@ description: Utiliza temáticas de formularios adaptables para aplicar estilos y
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
+source-git-commit: 449ff970f3b1e4479309e52d16aacf0979a0ec41
+workflow-type: tm+mt
 source-wordcount: '5558'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -494,7 +494,7 @@ Ahora puede utilizar fuentes disponibles en un servicio web en un formulario ada
 
 Para configurar Adobe Fonts en Experience Manager, realice los siguientes pasos:
 
-1. En la instancia de autor, haga clic en ![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager ]**>**[!UICONTROL  Herramientas ]**![hammer](assets/hammer.png) >**[!UICONTROL  Implementación ]**>**[!UICONTROL  Cloud Service ]**.
+1. En la instancia de autor, haga clic en ![Adobe Experience Manager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Herramientas]** ![martillo](assets/hammer.png) > **[!UICONTROL Implementación]** > **[!UICONTROL Cloud Services]**.
 1. En la página **[!UICONTROL Cloud Service]**, vaya y abra la opción **[!UICONTROL Adobe Fonts]**. Abra la carpeta de configuración y haga clic en **[!UICONTROL Crear]**.
 1. En el cuadro de diálogo **[!UICONTROL Crear configuración]**, especifique un título para la configuración y haga clic en **[!UICONTROL Crear]**.
 
