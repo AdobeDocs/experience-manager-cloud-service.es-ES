@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1212'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Esta guía le ayudará a empezar a utilizar un un nuevo sitio de Adobe Experienc
 
 Antes de comenzar esta guía, debe estar familiarizado con los conceptos básicos de y tener acceso a los Edge Delivery Services, incluidos los siguientes:
 
-* Ha completado el [tutorial del servicio Edge Delivery](/help/edge/developer/tutorial.md).
+* Ha completado el [tutorial de Edge Delivery Services](/help/edge/developer/tutorial.md).
 * Tiene acceso a una [zona protegida de AEM Cloud Service](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
 * Ha [habilitado el editor universal en el mismo entorno de zona protegida](/help/implementing/universal-editor/getting-started.md).
 
@@ -52,7 +52,7 @@ Los sitios web se crean automáticamente para cada una de las ramas, desde la pr
 
 ## Introducción a la creación WYSIWYG y Edge Delivery Services {#getting-started}
 
-Una vez que haya cumplido [los requisitos previos](#prerequisites) y haya tomado [la decisión de usar el Editor universal](#editor-choice), puede comenzar con su propio proyecto.
+Una vez que haya cumplido [los requisitos previos](#prerequisites) y haya hecho [la elección de utilizar el editor universal](#editor-choice), puede empezar con su propio proyecto.
 
 ### Creación de un proyecto de GitHub {#create-github-project}
 
@@ -128,7 +128,7 @@ Ahora que tiene un proyecto de GitHub, debe crear un nuevo sitio que el proyecto
 
 1. Descargue la última plantilla de sitio de creación WYSIWYG con Edge Delivery Services desde GitHub en [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 
-1. Inicie sesión en la instancia de creación de AEM as a Cloud Service, vaya a la consola Sitios y haga clic en **Crear** > **Sitio a partir de la plantilla**.
+1. Inicie sesión en la instancia de creación de AEM as a Cloud Service, vaya a la consola Sites y haga clic en **Crear** > **Sitio a partir de una plantilla**.
 
    ![Creación de un nuevo sitio desde la consola](assets/edge-dev-getting-started/create-site-console.png)
 
@@ -140,14 +140,14 @@ Ahora que tiene un proyecto de GitHub, debe crear un nuevo sitio que el proyecto
 
    * La plantilla solo debe cargarse una vez. Una vez cargada, puede reutilizarse para crear sitios adicionales.
 
-1. Una vez importada la plantilla, aparecerá en el asistente. Haga clic para seleccionarlo y luego haga clic en **Siguiente**.
+1. Una vez importada la plantilla, aparece en el asistente. Haga clic para seleccionarla y luego haga clic en **Siguiente**.
 
    ![Seleccionar plantilla](assets/edge-dev-getting-started/select-template.png)
 
 1. Proporcione los siguientes campos y pulse o haga clic en **Crear**.
 
    * **Título del sitio**: añada un título descriptivo para el sitio.
-   * **Título del sitio** - Use el `<site-name>` que definió en el [paso anterior](#create-github-project).
+   * **Título del sitio**: utilice el elemento `<site-name>` que definió en el [paso anterior](#create-github-project).
    * **URL de GitHub**: utilice la dirección URL del proyecto de GitHub que creó en el paso anterior.
 
    ![Detalles del sitio](assets/edge-dev-getting-started/create-site-details.png)
@@ -156,7 +156,7 @@ Ahora que tiene un proyecto de GitHub, debe crear un nuevo sitio que el proyecto
 
    ![Asistente para la creación del sitio](assets/edge-dev-getting-started/site-creation-confirmation.png)
 
-1. En la consola Sitios, navegue hasta `index.html` del sitio recién creado y haga clic en **Editar** en la barra de herramientas.
+1. En la consola de sitios, navegue hasta el elemento `index.html` del sitio recién creado y haga clic en **Editar** en la barra de herramientas.
 
    ![Edición del nuevo sitio](assets/edge-dev-getting-started/new-site.png)
 
@@ -194,4 +194,4 @@ Consulte la guía [Creación de bloques instrumentados para su uso con el editor
 
 >[!TIP]
 >
->Para ver un tutorial completo sobre la creación de un nuevo proyecto de Edge Delivery Services habilitado para la creación de WYSIWYG con AEM as a Cloud Service AEM como fuente de contenido, visite [este seminario web de GEMs ](https://experienceleague.adobe.com/es/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)en la red de GEMs de.
+>Para obtener un tutorial completo sobre cómo crear un nuevo proyecto de Edge Delivery Services que esté habilitado para la creación WYSIWYG con AEM as a Cloud Service como fuente de contenido, vea [este seminario web de GEM de AEM](https://experienceleague.adobe.com/es/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).

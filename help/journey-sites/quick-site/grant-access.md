@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '776'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 82%
 
 Incorpore a los desarrolladores front-end en Cloud Manager para que tengan acceso al repositorio de Git y a la canalización del sitio de AEM.
 
-## La historia hasta ahora {#story-so-far}
+## Lo que hemos visto hasta ahora {#story-so-far}
 
-AEM En el documento anterior del recorrido de creación rápida de sitios de la, [Configuración de la canalización](pipeline-setup.md), ha aprendido a crear una canalización front-end para administrar la personalización del tema de su sitio y ahora debería:
+En el documento anterior del recorrido de creación rápida de sitios de AEM, [Configuración de la canalización](pipeline-setup.md), ha aprendido a crear una canalización front-end para administrar la personalización del tema de su sitio, y ahora debería ser capaz de:
 
 * Comprender qué es una canalización front-end.
 * Saber cómo configurar una canalización front-end en Cloud Manager.
@@ -101,10 +101,10 @@ Ahora que ha completado esta parte del Recorrido de creación rápida de sitios 
 * Cómo añadir un desarrollador front-end como usuario.
 * Cómo conceder las funciones necesarias al desarrollador front-end.
 
-AEM Aproveche este conocimiento y continúe con su recorrido de Creación rápida de sitios de la revisando el documento [Recuperación de información de acceso al repositorio de Git](retrieve-access.md), que cambia la perspectiva exclusivamente al desarrollador front-end y explica cómo usa Cloud Manager para acceder a la información del repositorio de Git.
+Partiendo de estos conocimientos, continúe con el recorrido de creación rápida de sitios de AEM revisando el documento [Recuperación de información de acceso al repositorio de Git](retrieve-access.md), que pasa a centrarse exclusivamente en la perspectiva del desarrollador de front-end y explica cómo los usuarios desarrolladores de front-end utilizan Cloud Manager para acceder a la información del repositorio de Git.
 
 ## Recursos adicionales {#additional-resources}
 
-Aunque se recomienda pasar a la siguiente parte del recorrido de creación rápida de sitios al revisar el documento [Recuperar credenciales de desarrollador front-end](retrieve-access.md), los siguientes son algunos recursos opcionales extra. Profundizan en varios conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido.
+Aunque se recomienda pasar a la siguiente parte del recorrido de creación rápida de sitios de AEM revisando el documento [Recuperación de credenciales de desarrollador de front-end](retrieve-access.md), a continuación se presentan algunos recursos adicionales y opcionales que profundizan en algunos conceptos mencionados en este documento, pero que no son necesarios para continuar con el recorrido.
 
 * [Recorrido de incorporación](/help/journey-onboarding/overview.md): esta guía sirve como punto de partida para garantizar que sus equipos estén configurados y tengan acceso a AEM as a Cloud Service.

@@ -5,9 +5,9 @@ exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '809'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 86%
 
 Cree un sitio de demostración en AEM basado en una biblioteca de plantillas preconfiguradas.
 
-## La historia hasta ahora {#story-so-far}
+## Lo que hemos visto hasta ahora {#story-so-far}
 
-AEM En el documento anterior del recorrido del complemento Demostraciones de referencia de la, [Crear programa](create-program.md), ha dado el primer paso de configuración para crear un programa con fines de prueba y ha utilizado una canalización para implementar el contenido del complemento. Ahora debería hacer lo siguiente:
+En el documento anterior del recorrido del complemento de demostraciones de referencia de AEM, [Creación de un programa](create-program.md), ha dado el primer paso de configuración para crear un programa con fines de prueba y ha utilizado una canalización para implementar el contenido del complemento. Ahora debería ser capaz de:
 
 * Aprenda a utilizar Cloud Manager para crear un programa.
 * Obtenga información sobre cómo activar el complemento de demostraciones de referencia para el nuevo programa.
@@ -105,8 +105,8 @@ Ahora que ha completado esta parte del recorrido del complemento de demostració
 
 Ahora puede probar las características de AEM usando contenido de complementos. Tiene dos opciones para continuar con el recorrido:
 
-* Si desea realizar una demostración completa y probar el contenido de AEM Screens, asegúrese de haber implementado un sitio basado en la **Plantilla de sitio de We.Cafe** como se describió anteriormente y continúe con [Habilitar AEM Screens para el sitio de demostración](screens.md).
-* Si solo tiene que mostrar contenido de Sites, continúe con [Administrar los sitios de demostración](manage.md), donde conocerá las herramientas disponibles para ayudarle a administrar los sitios de demostración y cómo eliminarlos.
+* Si desea llevar a cabo una demostración y una prueba completas del contenido de AEM Screens, asegúrese de que ha implementado un sitio basado en la **Plantilla de sitio de We.Cafe**, tal como se ha descrito antes. Continúe con [Habilitación de AEM Screens para el sitio de demostración](screens.md).
+* Si solo quiere realizar una demostración del contenido de Sites, continúe con [Administración de los sitios de demostración](manage.md), donde aprenderá sobre las herramientas disponibles para ayudarle a administrar los sitios de demostración y cómo eliminarlos.
 
 ## Recursos adicionales {#additional-resources}
 

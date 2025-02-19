@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '860'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Aunque puede ir directamente a una parte concreta del recorrido, muchos concepto
 
 ## Siguientes pasos {#what-is-next}
 
-Ya está listo para empezar su recorrido de Adobe sin encabezado. Le recomendamos que continúe con la siguiente parte del recorrido AEM y lea el artículo [Creación para el as a Cloud Service sin encabezado: una introducción](introduction.md) de la creación de la página de inicio de sesión sin encabezado de la página de inicio de la página de inicio de la página de inicio de la página creación de la página de inicio de sesión sin encabezado.
+Ya está listo para empezar su recorrido de Adobe sin encabezado. Le animamos a que continúe con la siguiente parte del recorrido y lea el artículo [Creación de contenido sin encabezado de AEM as a Cloud Service: una introducción](introduction.md).
 
 <!--
 ### Choose Your Own Adventure {#choose-your-path}

@@ -5,20 +5,20 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1520'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # Asignar integrantes del equipo a perfiles de producto de Cloud Manager {#assign-team-members}
 
-En esta parte del [recorrido de incorporación](overview.md), aprenderá a asignar miembros del equipo a perfiles de producto de Cloud Manager.
+En esta parte del [recorrido de incorporación](overview.md), aprenderá a asignar integrantes del equipo a perfiles de producto de Cloud Manager.
 
 ## Objetivo {#objective}
 
-En el paso anterior de este recorrido, [Acceso al Admin Console](admin-console.md), ha aprendido a iniciar sesión en el Admin Console y comprobar sus privilegios como administrador del sistema. Ya está listo para permitir que los miembros de su equipo tengan acceso a Cloud Manager. Para ello, debe asignar perfiles de producto.
+En el paso anterior de este recorrido, [Acceso a Admin Console](admin-console.md), ha aprendido a iniciar sesión en Admin Console y comprobar sus privilegios como administrador del sistema. Ya está listo para permitir que los miembros de su equipo tengan acceso a Cloud Manager. Para ello, debe asignar perfiles de producto.
 
 Al conceder a los usuarios acceso a una solución de Adobe, no necesariamente desea darles acceso completo. Los perfiles de producto permiten que cada solución tenga su propio conjunto de permisos de usuario. Admin Console se utiliza para asignar perfiles de producto.
 
@@ -170,14 +170,14 @@ Sus usuarios con la función **Desarrollador** se han asignado y ahora pueden ac
 
 ¡Enhorabuena! Su equipo de Cloud Manager recién formado (incluido usted asignado al **Propietario empresarial**). Con la función de **Propietario empresarial**, ya está a un paso de iniciar sesión en Cloud Manager y de habilitar la creación de sus recursos en la nube.
 
-En esta parte del recorrido de incorporación, ha aprendido a asignar los integrantes del equipo a los perfiles en Admin Console. Ahora debería hacer lo siguiente:
+En esta parte del recorrido de incorporación, ha aprendido a asignar los integrantes del equipo a los perfiles en Admin Console. Ahora debería ser capaz de:
 
 * Comprenda cuáles son los perfiles de producto.
 * Comprenda qué es Cloud Manager.
 * Conozca los tres perfiles de producto importantes de Cloud Manager: **Propietario empresarial**, **Administrador de implementación** y **Desarrollador**.
 * Puede asignar miembros del equipo a perfiles de producto de Cloud Manager.
 
-Ya está listo para continuar con su recorrido de incorporación revisando el documento [Acceder a Cloud Manager](cloud-manager.md), donde aprenderá a acceder a Cloud Manager y a crear sus recursos de proyecto.
+Ahora ya puede continuar con su recorrido de incorporación revisando el documento [Acceder a Cloud Manager](cloud-manager.md), donde aprenderá a acceder a Cloud Manager y a crear sus recursos de proyecto.
 
 ## Recursos adicionales {#additional-resources}
 

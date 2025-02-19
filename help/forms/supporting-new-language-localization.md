@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 role: User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1220'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Para añadir compatibilidad con una nueva configuración regional en el tiempo d
 #### 1. Clonar el repositorio {#clone-the-repository}
 
 1. Desde la línea de comandos, vaya a donde desee clonar el repositorio de Cloud Service de Forms.
-1. Ejecute el comando que [recuperó de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#accessing-git). Es similar a `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
+1. Ejecute el comando que [ha recuperado de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=es#accessing-git).  Es similar a `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
 1. Utilice el nombre de usuario y la contraseña de Git para clonar el repositorio.
 1. Abra la carpeta clonada del repositorio de Cloud Service de Forms en su editor preferido.
 

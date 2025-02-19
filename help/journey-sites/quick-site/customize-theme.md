@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '954'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 83%
 
 Descubra cómo se crea el tema del sitio, cómo personalizarlo y cómo probarlo con contenido de AEM en directo.
 
-## La historia hasta ahora {#story-so-far}
+## Lo que hemos visto hasta ahora {#story-so-far}
 
-AEM En el documento anterior del recorrido de creación rápida de sitios de la, [Recuperación de información de acceso al repositorio de Git](retrieve-access.md), ha aprendido cómo el desarrollador front-end utiliza Cloud Manager para acceder a la información del repositorio de Git, y ahora debería hacer lo siguiente:
+En el documento anterior del recorrido de creación rápida de sitios de AEM, [Recuperación de información de acceso al repositorio de Git](retrieve-access.md), ha aprendido cómo los desarrolladores front-end usan Cloud Manager para acceder a la información del repositorio de Git, y ahora debería hacer lo siguiente:
 
 * Comprender a alto nivel qué es Cloud Manager.
 * Haber recuperado sus credenciales para acceder al Git de AEM y confirmar sus personalizaciones.
@@ -111,7 +111,7 @@ Puede seguir personalizando el tema en función de los requisitos que le proporc
 Una vez completadas las personalizaciones, puede enviarlas al repositorio de Git de AEM. Primero debe clonar el repositorio en el equipo local.
 
 1. Desde la línea de comandos, vaya a donde desee clonar el repositorio.
-1. Ejecute el comando que [recuperó anteriormente de Cloud Manager](retrieve-access.md). Debe ser similar a `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`. Use el nombre de usuario y la contraseña de Git que [recuperó en la parte anterior de este recorrido](retrieve-access.md).
+1. Ejecute el comando que [ha recuperado anteriormente de Cloud Manager](retrieve-access.md).  Debe ser similar a `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`. Utilice el nombre de usuario y la contraseña de Git que [recuperó en la parte anterior de este recorrido](retrieve-access.md).
 
    ![Clonar repositorio](assets/clone-repo.png)
 
@@ -138,11 +138,11 @@ Ahora que ha completado esta parte del Recorrido de creación rápida de sitios 
 * Consulte cómo probar las personalizaciones de temas mediante contenido AEM real a través de un proxy local.
 * Obtenga información sobre cómo confirmar los cambios en el repositorio de Git de AEM.
 
-AEM Aproveche este conocimiento y continúe con su recorrido de Creación rápida de sitios de la revisando el documento [Implementar un tema personalizado](deploy-theme.md), donde aprenderá a implementar el tema usando la canalización front-end.
+Partiendo de estos conocimientos, continúe con el recorrido de creación rápida de sitios de AEM revisando el documento [Implementar un tema personalizado](deploy-theme.md), donde aprenderá a implementar el tema utilizando la canalización front-end.
 
 ## Recursos adicionales {#additional-resources}
 
-Aunque se recomienda pasar a la siguiente parte del recorrido de creación rápida de sitios al revisar el documento [Implementar un tema personalizado](deploy-theme.md), los siguientes son algunos recursos opcionales que profundizan ciertos conceptos mencionados en este documento, pero que no son necesarios para continuar en el recorrido.
+Aunque se recomienda pasar a la siguiente parte del recorrido de creación rápida de sitios revisando el documento [Implementar un tema personalizado](deploy-theme.md), a continuación se presentan algunos recursos adicionales y opcionales que profundizan en algunos conceptos mencionados en este documento, pero que no son necesarios para continuar con el recorrido.
 
 * [Tema del sitio de AEM](https://github.com/adobe/aem-site-template-standard-theme-e2e): este es el repositorio de GitHub del tema del sitio de AEM.
 * [npm](https://www.npmjs.com): los temas de AEM utilizados para construir sitios rápidamente se basan en npm.

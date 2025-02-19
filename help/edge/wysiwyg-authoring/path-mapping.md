@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: User
 exl-id: 3d68135d-e84c-4bf4-93d1-38a0be70ce4a
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '567'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Para poder crear contenido WYSIWYG mediante AEM y publicarlo en Edge Delivery Se
 * Se asigna y se crea una relación entre las rutas de página utilizadas en su instancia de creación de AEM y las rutas de página públicas utilizadas en su sitio web.
 * Controla qué contenido (páginas, hojas, recursos, etc.) se publica en Edge Delivery Services.
 
-La asignación de ruta debe configurarse para cada proyecto de forma individual y según el contenido del proyecto y la estructura de la URL. AEM Lo utiliza el usuario durante la publicación de contenido y la edición de contenido en el [Editor universal](/help/sites-cloud/authoring/universal-editor/navigation.md).
+La asignación de ruta debe configurarse para cada proyecto de forma individual y según el contenido del proyecto y la estructura de la URL. AEM lo utiliza durante la publicación de contenido y al editar contenido en el [editor universal](/help/sites-cloud/authoring/universal-editor/navigation.md).
 
 ## Formato de configuración {#configuration-format}
 

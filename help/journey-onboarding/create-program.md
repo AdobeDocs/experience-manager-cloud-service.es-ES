@@ -5,19 +5,19 @@ role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 feature: Onboarding
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '669'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Crear un programa {#create-program}
 
-En esta parte del [recorrido de incorporación](overview.md), aprenderá a usar Cloud Manager para crear su primer programa.
+En esta parte del [recorrido de incorporación](overview.md), aprenderá a utilizar Cloud Manager para crear su primer programa.
 
 ## Objetivo {#objective}
 
-Después de revisar el documento anterior de este recorrido de incorporación, [Acceder a Cloud Manager](cloud-manager.md), se aseguró de tener acceso apropiado a Cloud Manager. Ahora puede crear su primer programa.
+Tras revisar el documento anterior de este recorrido de incorporación, [Acceder a Cloud Manager](cloud-manager.md), se ha asegurado de tener acceso adecuado a Cloud Manager. Ahora puede crear su primer programa.
 
 Después de leer este documento, debería poder hacer lo siguiente:
 

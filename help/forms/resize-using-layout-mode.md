@@ -6,9 +6,9 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1138'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -126,7 +126,7 @@ Puede desactivar el modo Diseño para formularios con un diseño adaptable antig
 Siga estos pasos para desactivar el modo Diseño:
 
 1. Seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Plantillas]** y abra la plantilla utilizada en el formulario en el modo **[!UICONTROL Editar]**.
-1. Seleccione el contenedor del formulario en el panel izquierdo y seleccione **[!UICONTROL Directiva]**.
+1. Seleccione el contenedor del formulario en el panel izquierdo y luego, **[!UICONTROL Directiva]**.
 
    ![Desactivar el modo Diseño](assets/policy_disable_layout_mode.png)
 

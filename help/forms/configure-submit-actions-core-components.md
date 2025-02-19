@@ -1,14 +1,14 @@
 ---
-title: ¿Configurar una acción de envío para un formulario adaptable?
+title: ¿Cómo configurar una acción de envío para un formulario adaptable?
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesará un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias
 keywords: Cómo seleccionar la acción de envío para un formulario adaptable, conectar un formulario adaptable a una lista de SharePoint, conectar un formulario adaptable a una biblioteca de documentos de SharePoint, conectar un formulario adaptable al modelo de datos de formulario (FDM)
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 role: User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '699'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Para definir una acción de envío para un adaptable, utilice el cuadro de diál
 * Pestaña del modelo de datos de formulario
 * Pestaña Envío
 
-Puede definir las propiedades del contenedor de formulario utilizando el cuadro de diálogo Configuración. Para obtener más información sobre el cuadro de diálogo de configuración de un componente Contenedor de formularios, [haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html?lang=es).
+Puede definir las propiedades del contenedor de formulario utilizando el cuadro de diálogo Configuración. Para obtener más información sobre el cuadro de diálogo de configuración de componente de contenedor de formulario, [haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html?lang=es).
 
 ## Seleccionar y configurar una acción de envío para un formulario adaptable {#select-and-configure-submit-action}
 

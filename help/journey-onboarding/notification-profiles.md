@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1130'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ De vez en cuando, Adobe se pone en contacto con los usuarios en relación con su
 * **Notificación de incidente**: estas notificaciones se envían durante un incidente o cuando Adobe ha identificado un posible problema de disponibilidad con su entorno AEM as a Cloud Service.
 * **Notificación proactiva**: estas notificaciones se envían cuando un miembro del equipo de asistencia de Adobe desea proporcionar orientación sobre una posible optimización o recomendación que pueda beneficiar a su entorno AEM as a Cloud Service.
 
-Los usuarios también pueden recibir estas notificaciones para programas específicos según sus [permisos de grupo personalizados](/help/implementing/cloud-manager/custom-permissions.md).
+Los usuarios también pueden recibir estas notificaciones para programas específicos en función de sus [permisos de grupo personalizados](/help/implementing/cloud-manager/custom-permissions.md).
 
 Además, se admite la asignación de grupos a notificación proactiva y los usuarios y grupos pueden asignarse directamente a los perfiles de producto.
 
@@ -43,7 +43,7 @@ Debido a que los perfiles de usuario se crean y mantienen en la Admin Console, a
 
 Para configurar correctamente la recepción de notificaciones, cree dos perfiles de usuario. Estos pasos se realizan solo una vez.
 
-1. Inicie sesión en el Admin Console en [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
+1. Inicie sesión en Admin Console en [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
 1. Asegúrese de que se encuentra en la organización correcta.
 
@@ -103,7 +103,7 @@ Siga estos pasos para añadir usuarios para los que aún no se han configurado l
 
    ![Usuarios](assets/product_services.png)
 
-1. Si el Federated ID para los integrantes del equipo aún no se ha configurado, seleccione la pestaña **Usuarios** en la barra de navegación superior. A continuación, seleccione **Agregar usuario**. De lo contrario, vaya a la sección [Agregar usuarios existentes a perfiles](#existing-users).
+1. Si el Federated ID para los integrantes del equipo aún no se ha configurado, seleccione la pestaña **Usuarios** en la barra de navegación superior. A continuación, seleccione **Agregar usuario**. De lo contrario, pase a la sección [Agregar usuarios existentes a perfiles](#existing-users).
 
    ![Usuarios](assets/cloud_manager_add_user.png)
 
@@ -136,7 +136,7 @@ Siga estos pasos para añadir usuarios para los que ya existen Federated ID.
 
 1. Seleccione la pestaña **Usuarios** en la barra de navegación superior.
 
-1. Si el Federated ID ya existe para el miembro del equipo al que desea agregar un perfil de notificación, localice ese usuario en la lista y haga clic en él. De lo contrario, vaya a la sección [Agregar nuevos usuarios a los perfiles](#add-user).
+1. Si el Federated ID ya existe para el miembro del equipo al que desea agregar un perfil de notificación, localice ese usuario en la lista y haga clic en él. De lo contrario, pase a la sección [Agregar usuarios nuevos a perfiles](#add-user).
 
 1. En la sección **Productos** de la ventana de detalles del usuario, haga clic en los puntos suspensivos y, a continuación, seleccione **Editar**.
 

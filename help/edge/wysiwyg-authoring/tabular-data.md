@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1284'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -34,11 +34,11 @@ Este documento utiliza el ejemplo de los redireccionamientos para ilustrar cómo
 
 >[!TIP]
 >
->Para obtener más información sobre cómo funcionan las hojas de cálculo en general con los Edge Delivery Services, consulte el documento [Hojas de cálculo y JSON](/help/edge/developer/spreadsheets.md).
+>Para obtener más información sobre cómo funcionan las hojas de cálculo con Edge Delivery Services en general, consulte el documento [Hojas de cálculo y JSON](/help/edge/developer/spreadsheets.md).
 
 >[!TIP]
 >
->Las hojas de cálculo solo deben utilizarse para mantener datos tabulares. AEM Para almacenar datos estructurados, [compruebe las características sin encabezado de la salida de datos](/help/headless/introduction.md), que se encuentran en la parte superior de la pantalla.
+>Las hojas de cálculo solo deben utilizarse para mantener datos tabulares. Para almacenar datos estructurados, [consulte las funciones sin encabezado de AEM](/help/headless/introduction.md).
 
 ## Requisitos previos {#prerequisites}
 
@@ -150,7 +150,7 @@ Para que AEM pueda publicar los datos en la hoja de cálculo, también debe actu
 
    >[!NOTE]
    >
-   >Esta entrada `paths.json` se basa en el ejemplo de creación de redireccionamientos utilizando datos tabulares. Asegúrese de actualizar la ruta de acceso correspondiente al [tipo de hoja de cálculo que está creando](#other).
+   >Esta entrada `paths.json` se basa en el ejemplo de creación de redireccionamientos utilizando datos tabulares. Asegúrese de actualizar la ruta correspondiente al [tipo de hoja de cálculo que va a crear](#other).
 
 1. Haga clic en **Confirmar cambios…** para guardar los cambios en `main`.
 
@@ -205,7 +205,7 @@ Además, puede [crear su propia hoja de cálculo](#own-spreadsheet) con columnas
 
 ## Creación de su propia hoja de cálculo {#own-spreadsheet}
 
-1. Siga los mismos pasos en la sección [Crear hoja de cálculo](#spreadsheet).
+1. Siga los mismos pasos en la sección [Creación de hoja de cálculo](#spreadsheet).
 
 1. Al seleccionar la plantilla, elija **Hoja de cálculo**.
 

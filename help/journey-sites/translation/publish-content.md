@@ -9,9 +9,9 @@ solution: Experience Manager Sites
 feature: Translation
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1326'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 92%
 
 Aprenda a publicar el contenido traducido y a actualizar las traducciones como actualizaciones de contenido.
 
-## La historia hasta ahora {#story-so-far}
+## Lo que hemos visto hasta ahora {#story-so-far}
 
-En el documento anterior del recorrido AEM de trabajo de traducción de AEM Sites, [Traducir contenido](configure-connector.md), ha aprendido a utilizar proyectos de traducción de para traducir su contenido. Ahora debería hacer lo siguiente:
+En el documento anterior del recorrido de traducción de AEM Sites, [Traducir contenido](configure-connector.md), ha aprendido a utilizar proyectos de traducción de AEM para traducir su contenido. Ahora debería ser capaz de:
 
 * Comprender qué es un proyecto de traducción.
 * Poder crear nuevos proyectos de traducción.
@@ -122,7 +122,7 @@ Verá que se ha agregado una nueva tarjeta de trabajo al proyecto. En este ejemp
 
 Puede observar que las estadísticas que aparecen en la tarjeta nueva son diferentes. Esto se debe a que AEM reconoce qué ha cambiado desde la última traducción y solo incluye el contenido que debe traducirse. Esto incluye una nueva traducción del contenido actualizado y la primera traducción del contenido nuevo.
 
-A partir de este punto, [inicia y administra tu trabajo de traducción al igual que lo hiciste con el original](translate-content.md#using-translation-project).
+A partir de este punto, [inicie y administre su trabajo de traducción tal como lo hizo con el original](translate-content.md#using-translation-project).
 
 ### Actualización de un proyecto de traducción creado manualmente {#updating-manual-project}
 
@@ -144,19 +144,19 @@ Para actualizar una traducción, puede agregar un nuevo trabajo al proyecto exis
    ![Seleccionar idioma de destino](assets/select-target-language.png)
 
 1. Una vez configurado el idioma de destino del nuevo trabajo de traducción, haga clic en el botón de puntos suspensivos en la parte inferior de la tarjeta de trabajo para ver los detalles del trabajo.
-1. El trabajo está vacío la primera vez que se crea. Agregue contenido al trabajo tocando o haciendo clic en el botón **Agregar** y utilizando el explorador de rutas [como hacía antes al crear originalmente el proyecto de traducción](translate-content.md##manually-creating).
+1. El trabajo está vacío la primera vez que se crea. Añada contenido al trabajo tocando o haciendo clic en el botón **Añadir** y utilizando el explorador de rutas [como lo hizo previamente al crear el proyecto de traducción](translate-content.md##manually-creating).
 
 >[!TIP]
 >
->Los poderosos filtros del explorador de rutas pueden ser útiles de nuevo para encontrar solo el contenido que se ha actualizado.
+>Los avanzados filtros del explorador de rutas pueden ser útiles de nuevo para encontrar solo el contenido que se ha actualizado.
 >
->Puede obtener más información sobre el explorador de rutas en la sección [recursos adicionales](#additional-resources).
+>Puede obtener más información sobre el explorador de rutas en la [sección de recursos adicionales](#additional-resources).
 
-A partir de este punto, [inicia y administra tu trabajo de traducción al igual que lo hiciste con el original](translate-content.md#using-translation-project).
+A partir de este punto, [inicie y administre su trabajo de traducción tal como lo hizo con el original](translate-content.md#using-translation-project).
 
 ## ¿Fin del recorrido? {#end-of-journey}
 
-Felicitaciones! Ha completado el recorrido de traducción de AEM Sites. Ahora debería hacer lo siguiente:
+Felicitaciones! Ha completado el recorrido de traducción de AEM Sites. Ahora debería ser capaz de:
 
 * Tenga una comprensión básica de las funciones de administración de contenido de AEM.
 * Comprenda las funciones de traducción de AEM y cómo se relacionan con el contenido de sus sitios.

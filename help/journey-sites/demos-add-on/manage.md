@@ -5,9 +5,9 @@ exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '927'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -15,15 +15,15 @@ ht-degree: 95%
 
 Obtenga información sobre las herramientas disponibles para ayudarle a administrar los sitios de muestra y cómo eliminarlos.
 
-## La historia hasta ahora {#story-so-far}
+## Lo que hemos visto hasta ahora {#story-so-far}
 
-AEM En el documento anterior del recorrido del complemento Demostraciones de referencia de la, [Crear sitio](create-site.md), creó un nuevo sitio de demostración basado en las plantillas del complemento Demostraciones de referencia. Ahora debería hacer lo siguiente:
+En el documento anterior del recorrido del complemento de demostraciones de referencia de AEM, [Creación de un sitio](create-site.md), ha creado un nuevo sitio de demostraciones basado en las plantillas del complemento de demostraciones de referencia. Ahora debería ser capaz de:
 
 * Comprender cómo acceder al entorno de creación de AEM.
 * Saber cómo crear un sitio basado en una plantilla.
 * Entender los conceptos básicos para navegar por la estructura del sitio y editar una página.
 
-Si también [habilitó AEM Screens para su sitio de demostración](screens.md), también debería:
+Si además [ha habilitado AEM Screens para su sitio de demostración](screens.md), también puede hacer lo siguiente:
 
 * Conocer los conceptos básicos de AEM Screens.
 * Comprender el contenido de la demostración de We.Cafe.
@@ -92,7 +92,7 @@ Puede eliminar las plantillas del mismo modo bajo el encabezado **Eliminar plant
 
 ## ¿Fin del recorrido? {#end-of-journey}
 
-¡Felicitaciones! Ha completado el recorrido del complemento de demostraciones de referencia de AEM. Ahora debería hacer lo siguiente:
+¡Felicitaciones! Ha completado el recorrido del complemento de demostraciones de referencia de AEM. Ahora debería ser capaz de:
 
 * Obtenga información básica sobre Cloud Manager y comprenda cómo las canalizaciones envían contenido y configuración a AEM.
 * Aprenda a utilizar Cloud Manager para crear un programa.

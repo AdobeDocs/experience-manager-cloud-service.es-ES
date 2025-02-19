@@ -6,17 +6,17 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1344'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Cómo acceder al contenido a través de las API de entrega de AEM {#access-your-content}
 
-AEM En esta parte del [Recorrido para desarrolladores sin encabezado](overview.md), puede aprender a usar las consultas de GraphQL para acceder al contenido de los fragmentos de contenido y enviarlo a la aplicación (envío sin encabezado).
+En esta parte del [Recorrido para desarrolladores de contenido de AEM sin encabezado](overview.md), puede aprender a utilizar las consultas de GraphQL para acceder al contenido de sus fragmentos de contenido y alimentarlo en su aplicación (entrega sin encabezado).
 
-## La historia hasta ahora {#story-so-far}
+## Lo que hemos visto hasta ahora {#story-so-far}
 
 En el documento anterior del recorrido sin encabezado de AEM, [Cómo modelar el contenido](model-your-content.md), ha aprendido los conceptos básicos del modelado de contenido en AEM, por lo que ahora debe comprender cómo modelar la estructura de contenido y, a continuación, comprender dicha estructura utilizando modelos de fragmentos de contenido de AEM y los fragmentos de contenido.
 

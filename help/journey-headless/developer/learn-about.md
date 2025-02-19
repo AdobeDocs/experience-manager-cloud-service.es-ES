@@ -6,15 +6,15 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1626'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Obtenga más información acerca del desarrollo de CMS sin encabezado {#learn-about}
 
-AEM En esta parte del [Recorrido para desarrolladores sin encabezado](overview.md), aprenda acerca de la tecnología sin encabezado y por qué debería utilizarla.
+En esta parte del [recorrido para desarrolladores sin encabezado de AEM](overview.md), aprenderá sobre la tecnología sin encabezado y los motivos por los que utilizarla.
 
 ## Objetivo {#objective}
 
@@ -127,7 +127,7 @@ Aproveche este conocimiento y continúe su recorrido de contenido sin encabezado
 
 ## Recursos adicionales {#additional-resources}
 
-Aunque se recomienda pasar a la siguiente parte del recorrido AEM as a Cloud Service de desarrollo sin encabezado revisando el documento [Introducción al desarrollo sin encabezado ](getting-started.md), los siguientes son algunos recursos opcionales extra. Profundizan en varios conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido sin encabezado.
+Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo de contenido sin encabezado, al documento [Introducción al contenido sin encabezado de AEM as a Cloud Service](getting-started.md), a continuación se presentan algunos recursos adicionales y opcionales que profundizan en conceptos, pero que no son necesarios para continuar con el recorrido de desarrollo sin encabezado.
 
 * [Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md): comprender la estructura de AEM as a Cloud Service.
 * Una [Introducción a AEM como CMS sin encabezado](/help/headless/introduction.md)

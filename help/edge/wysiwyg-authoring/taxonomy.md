@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '974'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -26,9 +26,9 @@ El editor universal solo funciona con los ID de las etiquetas. Al crear una pág
 
 ## Creación de una página de taxonomía {#creating}
 
-Se crea una taxonomía como [cualquier otra página de AEM](/help/sites-cloud/authoring/sites-console/creating-pages.md).
+Una taxonomía se crea como [cualquier otra página en AEM](/help/sites-cloud/authoring/sites-console/creating-pages.md).
 
-1. Vaya a la consola [**Sitios**](/help/sites-cloud/authoring/sites-console/introduction.md).
+1. Navegue hasta la consola de [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md).
 
 1. Seleccione la ubicación donde desea crear la taxonomía.
 
@@ -46,7 +46,7 @@ Se crea una taxonomía como [cualquier otra página de AEM](/help/sites-cloud/au
 
 1. Haga clic o pulse en **Crear**.
 
-Se ha creado la página de taxonomía. En el cuadro de diálogo **Correcto**, puede tocar o hacer clic en el cuadro de diálogo **Listo** para descartar el mensaje o **Abrir** para editar la página en [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md).
+Se ha creado la página de taxonomía. En el cuadro de diálogo **Correcto**, puede tocar o hacer clic en **Listo** para descartar el mensaje o en **Abrir** para editar la página en el [Editor de página](/help/sites-cloud/authoring/page-editor/introduction.md).
 
 Tome nota del nombre de página resultante de la página de taxonomía para utilizarlo en los pasos siguientes.
 
@@ -54,7 +54,7 @@ Tome nota del nombre de página resultante de la página de taxonomía para util
 
 Se empieza editando una página de taxonomía como cualquier otra página en AEM.
 
-1. Vaya a la consola [**Sitios**](/help/sites-cloud/authoring/sites-console/introduction.md).
+1. Navegue hasta la consola de [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md).
 
 1. Seleccione la taxonomía que desee editar.
 
@@ -82,7 +82,7 @@ AEM actualiza automáticamente el contenido de la página de taxonomía cuando s
 
 ## Actualizar paths.json para la publicación de taxonomías {#paths-json}
 
-Al igual que cuando [administra y publica datos tabulares para su sitio Edge Delivery Services](/help/edge/wysiwyg-authoring/tabular-data.md), debe actualizar el archivo `paths.json` de su proyecto para permitir la publicación de los datos de taxonomía.
+Al igual que cuando [administra y publica datos tabulares para el sitio de Edge Delivery Services](/help/edge/wysiwyg-authoring/tabular-data.md), necesita actualizar el archivo `paths.json` del proyecto para permitir la publicación de los datos de taxonomía.
 
 1. Abra la raíz del proyecto en GitHub.
 
@@ -101,7 +101,7 @@ Al igual que cuando [administra y publica datos tabulares para su sitio Edge Del
    }
    ```
 
-   * `<taxonomy-page-name>` debe coincidir con el nombre de la [página de taxonomía que creó](#creating).
+   * `<taxonomy-page-name>` debe coincidir con el nombre de la página de taxonomía [ que ha creado](#creating).
    * `<taxonomy-json-name>` puede ser cualquier nombre válido que elija.
 
 1. Haga clic en **Confirmar cambios…** para guardar los cambios en `main`.
@@ -118,14 +118,14 @@ Este proceso solo debe realizarse una vez por página de taxonomía. Una vez fin
 
 El editor universal o los usuarios no pueden acceder a una taxonomía hasta que se publique.
 
-Las páginas de taxonomía se publican como cualquier otra página por [mediante los iconos **Publicación rápida** o **Administrar publicación** de la barra de herramientas](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
+Las páginas de taxonomía se publican como cualquier otra página [mediante los iconos **Publicación rápida** o **Administrar publicación** de la barra de herramientas](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
 
 Debe volver a publicar la página de taxonomía cada vez que:
 
 * Edite la página de taxonomía.
 * Edite o añada a las etiquetas y espacios de nombres incluidos en la página de taxonomía.
 
-Si crea una nueva página de taxonomía, primero debe [agregarle una asignación al archivo `paths.json` de su proyecto](#paths-json).
+Si crea una nueva página de taxonomía, primero debe [añadir una asignación al archivo `paths.json` del proyecto](#paths-json).
 
 ## Acceso a la información de la taxonomía {#accessing}
 
@@ -135,7 +135,7 @@ Puede acceder a la taxonomía como datos JSON en la siguiente dirección.
 
 `https://<branch>--<repository>--<owner>.aem.page/<taxonomy-json-name>.json`
 
-Use el `<taxonomy-json-name>` que definió al [asignar su taxonomía al archivo `paths.json` de su proyecto](#paths-json). Los datos de taxonomía se devuelven como datos JSON, como en el siguiente ejemplo.
+Utilice el elemento `<taxonomy-json-name>` que ha definido al [asignar la taxonomía al archivo `paths.json` de su proyecto](#paths-json). Los datos de taxonomía se devuelven como datos JSON, como en el ejemplo siguiente.
 
 ```json
 {
@@ -170,7 +170,7 @@ Estos datos JSON se actualizarán automáticamente a medida que actualice la tax
 
 ## Exposición de propiedades de etiqueta adicionales {#additional-properties}
 
-De manera predeterminada, su taxonomía contendrá `tag` y `title` valores como se vio [en el ejemplo anterior](#accessing). Puede configurar su taxonomía para exponer propiedades de etiquetas adicionales. En este ejemplo, se muestra la descripción de la etiqueta.
+De manera predeterminada, su taxonomía contendrá los valores `tag` y `title` como se vio [en el ejemplo anterior](#accessing). Puede configurar su taxonomía para exponer propiedades de etiquetas adicionales. En este ejemplo, se muestra la descripción de la etiqueta.
 
 1. Utilice la consola Sitios para seleccionar la taxonomía que creó.
 1. Toque o haga clic en el icono **Propiedades** de la barra de herramientas.

@@ -3,9 +3,9 @@ title: Preguntas frecuentes (FAQ) sobre Content Hub
 description: Obtenga respuestas a algunas de las preguntas más frecuentes (FAQ) sobre Content Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1112'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Es posible evaluar Content Hub sin afectar a los usuarios ni al contenido de pro
 * El administrador de Admin Console añade [algunos usuarios seleccionados](/help/assets/deploy-content-hub.md#onboard-content-hub-users) al perfil de producto de Content Hub para que puedan iniciar la evaluación.
 * Una vez finalizada la evaluación, los usuarios de AEM en la instancia de autor pueden eliminar la aprobación de los recursos de prueba, aprobar los recursos de producción para Content Hub y, a continuación, el administrador de Admin Console puede añadir a todos los usuarios que necesiten acceder a Content Hub y al contenido aprobado. Enhorabuena, Content Hub ya está activo.
 
-Hay un programa de acceso rápido a Content Hub en los programas de zona protegida y sus entornos de producción de creación. Para más información, consulte [Introducción a los programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Para obtener más información sobre el programa de acceso anticipado, póngase en contacto con el equipo de la cuenta de Adobe.
+Hay un programa de acceso rápido a Content Hub en los programas de zona protegida y sus entornos de producción de creación. Para más información, consulte [Introducción a los programas de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Para obtener más información sobre el programa de acceso anticipado, póngase en contacto con el equipo de cuentas de Adobe.
 
 Content Hub aún no está disponible en entornos que no sean de producción (ensayo y desarrollo). La disponibilidad prevista en los entornos de ensayo/desarrollo de Assets Ultimate es marzo de 2025.
 

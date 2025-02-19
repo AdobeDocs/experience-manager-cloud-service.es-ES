@@ -3,12 +3,13 @@ Title: How to configure submit to Rest Endpoint submit action for an Adaptive Fo
 Description: Discover the steps to set up Rest Endpoint when submitting an Adaptive Form.
 keywords: Punto final REST de AEM Forms, Enviar a punto final REST, Publicar datos en URL REST, Configurar acción de punto final REST
 feature: Adaptive Forms, Core Components
-title: ¿Configurar una acción de envío para un formulario adaptable?
+title: ¿Cómo configurar una acción de envío para un formulario adaptable?
 role: User, Developer
-source-git-commit: c20b8909bb884f14bd7fe59f190de3cd375a7111
-workflow-type: tm+mt
+exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
+source-git-commit: cc9b72fbebc673aeb29032915f371c8f5e156b28
+workflow-type: ht
 source-wordcount: '703'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -68,18 +69,18 @@ Para configurar la acción de envío en función de la especificación de API ab
 
 1. Haga clic en **[!UICONTROL Listo]**.
 
-### Configurar la acción de envío en función del extremo de REST de servicio {#config-service-endpoint-auth}
+### Configurar la acción de envío en función del punto final de REST de servicio {#config-service-endpoint-auth}
 
-<span class="preview">: la capacidad Punto final de servicio está en el programa de usuarios que la adoptaron por anticipado y solo se aplica a los componentes principales. Puede enviar un correo electrónico a aem-forms-ea@adobe.com desde su ID oficial para unirse al programa de usuarios pioneros y solicitar acceso a esta funcionalidad. </span>
+<span class="preview"> La capacidad de punto final de servicio está en el programa para primeros usuarios y solo se aplica a los componentes principales. Puede enviar un correo electrónico a aem-forms-ea@adobe.com desde su ID de correo electrónico oficial para unirse al programa para primeros usuarios y solicitar acceso a esta funcionalidad. </span>
 
 1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
 1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
 1. Abra la pestaña **[!UICONTROL Envío]**.
 1. En la lista desplegable **[!UICONTROL Acción de envío]**, seleccione la opción **[!UICONTROL Enviar al punto final REST]**.
-1. Habilite la solicitud de POST.
-1. Especifique la URL del extremo REST.
-1. Seleccione la configuración que ha creado para su Tipo de autenticación de extremo de REST de servicio y los Tipos de contenido. Para obtener más información acerca del tipo de autenticación y los tipos de contenido, visite [configurar fuentes de datos](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
-   ![Configurar el extremo REST](assets/rest-service-endpoint-config.png)
+1. Habilite la petición POST.
+1. Especifique la URL de punto final REST.
+1. Seleccione la configuración que ha creado para su tipo de autenticación de punto final REST de servicio y los tipos de contenido. Para obtener más información acerca del tipo de autenticación y los tipos de contenido, visite [configurar fuentes de datos](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
+   ![Configuración del punto final REST](assets/rest-service-endpoint-config.png)
 1. Haga clic en Listo.
 
 ## Prácticas recomendadas

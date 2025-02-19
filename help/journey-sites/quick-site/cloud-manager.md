@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1113'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Este documento le ayuda a comprender cómo funciona la herramienta de creación 
 
 Este documento se centra en comprender estas partes fundamentales de la solución de creación rápida de sitios antes de pasar al siguiente paso del recorrido en el que se inicia la configuración.
 
-Aunque se recomienda continuar con este recorrido paso a paso, si ya comprende que AEM Sites y Cloud Manager trabajan juntos y desean comenzar directamente con la configuración, puede [pasar al siguiente paso del recorrido](create-site.md).
+Aunque se recomienda continuar con este recorrido paso a paso, si ya comprende que AEM Sites y Cloud Manager trabajan juntos, y desea comenzar directamente con la configuración, puede [ir al siguiente paso del recorrido](create-site.md).
 
 ## Función responsable {#responsible-role}
 
@@ -122,11 +122,11 @@ Ahora que ha completado esta parte del Recorrido de creación rápida de sitios 
 * Comprender cómo AEM Sites y Cloud Manager colaboran para facilitar el desarrollo front-end
 * Vea cómo el paso de personalización del front-end está completamente disociado de AEM y no requiere conocimientos de AEM.
 
-AEM Aproveche este conocimiento y continúe con su recorrido AEM de Creación rápida de sitios de la revisando el documento [Crear sitio a partir de la plantilla](create-site.md), donde aprenderá a crear rápidamente un nuevo sitio de la plantilla mediante una plantilla.
+Partiendo de estos conocimientos, continúe con el recorrido de creación rápida de sitios de AEM y revise el documento [Creación de un sitio a partir de una plantilla](create-site.md), donde aprenderá a crear rápidamente un nuevo sitio de AEM con una plantilla.
 
 ## Recursos adicionales {#additional-resources}
 
-Aunque se recomienda pasar a la siguiente parte del recorrido de creación rápida de sitios al revisar el documento [Crear sitio a partir de la plantilla](create-site.md), los siguientes son algunos recursos opcionales extra. Profundizan en varios conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido.
+Aunque se recomienda pasar a la siguiente parte del recorrido de creación rápida de sitios revisando el documento [Creación de un sitio a partir de una plantilla](create-site.md), a continuación se presentan algunos recursos adicionales y opcionales que profundizan en algunos conceptos mencionados en este documento, pero que no son necesarios para continuar con el recorrido.
 
 * [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=es): si desea obtener más información sobre las funciones de Cloud Manager, puede consultar directamente los documentos técnicos detallados.
 * [Permisos basados en roles](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=es): Cloud Manager tiene funciones preconfiguradas con los permisos adecuados. Vea este documento para obtener detalles sobre estas funciones y cómo administrarlas.

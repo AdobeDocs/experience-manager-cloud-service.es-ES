@@ -6,9 +6,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2816'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -373,7 +373,7 @@ Ahora, inserte los cambios en el repositorio de temáticas de AEM Forms Cloud Se
 
 ##### 5.3. Ejecutar la canalización de front-end {#run-a-frontend-pipeline}
 
-El tema se implementa mediante la [canalización front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=es). Para implementar una temática, siga estos pasos:
+La temática se implementa mediante la [canalización front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=es).  Para implementar una temática, siga estos pasos:
 
 1. Inicie sesión en el repositorio de AEM Cloud Manager.
 1. Haga clic en el botón **[!UICONTROL Añadir]** en la sección **[!UICONTROL Canalizaciones]**.

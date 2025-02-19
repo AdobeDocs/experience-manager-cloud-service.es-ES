@@ -6,17 +6,17 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3068'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Introducción al contenido sin encabezado de AEM as a Cloud Service {#getting-started}
 
-AEM En esta parte del [Recorrido AEM para desarrolladores sin encabezado](overview.md), aprenda lo que se necesita para comenzar su propio proyecto con el sin encabezado
+En esta parte del [Recorrido para desarrolladores de contenido sin encabezado de AEM](overview.md), aprenderá sobre lo que se necesita para comenzar su propio proyecto con contenido sin encabezado de AEM.
 
-## La historia hasta ahora {#story-so-far}
+## Lo que hemos visto hasta ahora {#story-so-far}
 
 En el documento anterior del recorrido sin encabezado de AEM, [Obtenga información sobre el desarrollo sin encabezado de CMS](learn-about.md) aprendió la teoría básica de lo que es un CMS sin encabezado y ahora debería poder hacer lo siguiente:
 
@@ -65,7 +65,7 @@ En su nivel más sencillo, la creación de experiencias digitales en AEM requier
 1. Cuando este contenido está listo, se replica en el ejemplo de publicación.
 1. Luego se puede llamar a las API para recuperar este contenido.
 
-AEM La tecnología sin encabezado se basa en esta base técnica al ofrecer potentes herramientas para administrar el contenido sin encabezado [descrito en la siguiente sección](#aem-headless-basics).
+AEM sin encabezado crea esta base técnica al ofrecer herramientas potentes para administrar el contenido sin encabezado, [que se describe en la siguiente sección](#aem-headless-basics).
 
 ## Conceptos básicos del contenido sin encabezado de AEM {#aem-headless-basics}
 
@@ -195,7 +195,7 @@ La jerarquía de carpetas puede resolver dos problemas importantes con respecto 
 * [Traducción](#translation): AEM administra la traducción del contenido manteniendo copias del contenido en carpetas específicas de la configuración regional.
 * Organización: las carpetas se utilizan para definir una jerarquía de contenido necesaria con el fin de satisfacer las necesidades de traducción y administrar lógicamente los fragmentos de contenido.
 
-AEM permite una estructura de contenido flexible, y una jerarquía puede ser arbitrariamente grande. Sin embargo, es importante tener en cuenta que cualquier cambio en la estructura de carpetas puede tener consecuencias no deseadas para las consultas existentes que [dependen de la ruta de contenido](#developer). Por lo tanto, una jerarquía bien definida que se establezca claramente por adelantado, puede ser útil para los autores de contenido.
+AEM permite una estructura de contenido flexible, y una jerarquía puede ser arbitrariamente grande. Sin embargo, es importante tener en cuenta que cualquier cambio en la estructura de carpetas puede tener consecuencias no deseadas para las consultas existentes que [se basan en la ruta de contenido](#developer). Por lo tanto, una jerarquía bien definida y claramente establecida por adelantado puede ser útil para sus autores de contenido.
 
 Las carpetas también se pueden restringir para permitir solo ciertos tipos de contenido (según los modelos de fragmento de contenido). Se recomienda especificar siempre explícitamente qué modelos se permiten para todas las carpetas de la jerarquía. Especificación del contenido permitido para una carpeta determinada:
 
@@ -241,7 +241,7 @@ Los desarrolladores deben tener en cuenta las siguientes recomendaciones básica
 * Para obtener el mejor rendimiento de las consultas, utilice siempre consultas persistentes en AEM. De esto se habla más adelante en el recorrido.
 * GraphQL es un lenguaje declarativo que sigue el lema “Pida exactamente lo que necesita, y obtenga exactamente eso”. Esto significa que, al crear consultas de GraphQL, evite siempre consultas de tipo `select *` que podría crear en una base de datos relacional.
 
-AEM AEM Para una implementación sin encabezado típica de [usando la implementación sin encabezado de](#level-1), el desarrollador no requiere conocimientos de codificación de la implementación.
+Para una [implementación sin encabezado típica mediante AEM](#level-1), el desarrollador no necesita tener conocimientos de codificación de AEM.
 
 ### Requisitos de rendimiento {#performance-requirements}
 
@@ -280,7 +280,7 @@ Debe continuar su recorrido sin encabezado de AEM revisando a continuación el d
 
 ## Recursos adicionales {#additional-resources}
 
-Aunque se recomienda pasar a la siguiente parte del recorrido AEM de desarrollo sin encabezado al revisar el documento [Ruta a la primera experiencia usando sin encabezado](path-to-first-experience.md), los siguientes son algunos recursos opcionales extra. Profundizan en varios conceptos mencionados en este documento, pero no son necesarios para continuar con el recorrido sin encabezado.
+Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo sin encabezado revisando el documento [Ruta de la primera experiencia para usar el contenido sin encabezado de AEM](path-to-first-experience.md), a continuación se presentan algunos recursos adicionales y opcionales que profundizan en algunos conceptos mencionados en este documento, pero que no son necesarios para continuar con el recorrido de desarrollo sin encabezado.
 
 * [Recorrido de traducción sin encabezado en AEM](/help/journey-headless/translation/overview.md): este recorrido de documentación le ofrece una amplia explicación de la tecnología sin encabezado, cómo AEM sirve contenido sin encabezado y cómo puede traducirlo.
 * [Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md): comprender la estructura de AEM as a Cloud Service.

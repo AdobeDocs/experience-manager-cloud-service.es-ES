@@ -10,9 +10,9 @@ hide: true
 hidefromtoc: true
 exl-id: 9496e4f5-ed74-4b40-b8f9-17153170af66
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1328'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -122,7 +122,7 @@ Complete los siguientes pasos para publicar todos los recursos de administració
 
 ## Automatizar la publicación y cancelación de publicación para formularios y documentos {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
-[!DNL AEM Forms] le permite programar la publicación y cancelación de publicación de recursos para formularios y documentos. Puede especificar la programación en el Editor de metadatos. Para obtener más información sobre la administración de metadatos de formulario, consulte [Administración de metadatos de formulario](manage-form-metadata.md).
+[!DNL AEM Forms] le permite programar la publicación y cancelación de publicación de recursos para formularios y documentos. Puede especificar la programación en el Editor de metadatos. Para obtener más información sobre la administración de metadatos de formularios, consulte [Administrar metadatos de formulario](manage-form-metadata.md).
 
 Siga estos pasos para programar la fecha y la hora de publicación y cancelación de la publicación de recursos de formularios y documentos:
 

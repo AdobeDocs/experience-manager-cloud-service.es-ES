@@ -5,15 +5,15 @@ exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1071'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Acceder a Admin Console {#accessing-admin-console}
 
-En esta parte del [recorrido de incorporación](overview.md), aprenderá la preparación necesaria para poder iniciar sesión en el sistema por primera vez.
+En esta parte del [recorrido de incorporación](overview.md), aprenderá sobre la preparación necesaria para poder iniciar sesión en el sistema por primera vez.
 
 ## Objetivo {#objective}
 

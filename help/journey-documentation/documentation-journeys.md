@@ -6,9 +6,9 @@ hidefromtoc: true
 feature: Release Information
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1347'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Los Recorridos de documentación proporcionan una estructura narrativa dentro de
 
 Un Recorrido de documentación une muchos temas y características diferentes y complejos. Proporciona una narrativa que ayuda al lector (que puede ser nuevo en AEM) a entender y resolver un problema empresarial de principio a fin, mientras asume un conocimiento previo mínimo de AEM.
 
-Los Recorridos de documentación se contrastan con documentos técnicos existentes de AEM que se centran principalmente en una única función y documentación de tareas, suponiendo que estén familiarizados con AEM. Al centrarse en los conceptos y diferir los detalles en profundidad a la documentación técnica existente, los Recorridos de documentación proporcionan a los lectores nuevos en AEM un punto de partida para comprender cómo se puede utilizar la plataforma mediante las prácticas recomendadas para satisfacer las necesidades y los flujos de trabajo empresariales comunes. Por este motivo, los Recorrido AEM de documentación sirven como complemento y no como reemplazo de [documentación técnica existente que se encuentra en uso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es).
+Los Recorridos de documentación se contrastan con documentos técnicos existentes de AEM que se centran principalmente en una única función y documentación de tareas, suponiendo que estén familiarizados con AEM. Al centrarse en los conceptos y diferir los detalles en profundidad a la documentación técnica existente, los Recorridos de documentación proporcionan a los lectores nuevos en AEM un punto de partida para comprender cómo se puede utilizar la plataforma mediante las prácticas recomendadas para satisfacer las necesidades y los flujos de trabajo empresariales comunes. Por este motivo, los recorridos de documentación sirven como complemento y no como sustituto de la [documentación técnica existente de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es).
 
 ### Aprender Por Narrativa {#narrative}
 

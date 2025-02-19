@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1024'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Esta guía le lleva a través de los temas más importantes de la traducción si
 
 El objetivo es ofrecerle un amplio panorama de la tecnología sin encabezado, cómo AEM sirve el contenido sin encabezado y cómo traducirlo. Si no está familiarizado con ninguno de estos temas, este es el lugar ideal para empezar.
 
-Si ya está familiarizado con AEM, el contenido sin encabezado y su traducción, es posible que ya tenga los conocimientos básicos de este recorrido. Considere la posibilidad de consultar nuestra documentación técnica vinculada en la sección [recursos adicionales a continuación](#additional-resources).
+Si ya está familiarizado con AEM, el contenido sin encabezado y su traducción, es posible que ya tenga los conocimientos básicos de este recorrido. Si es así, contemple la posibilidad de consultar nuestra documentación técnica vinculada en la [sección de recursos adicionales a continuación](#additional-resources).
 
 ## Recorridos de documentación de AEM {#documentation-journeys}
 

@@ -5,15 +5,15 @@ exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '760'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Preparación de la incorporación {#onboarding-preparation}
 
-Ahora que sabe lo que le queda en el proceso de incorporación, al leer el artículo [Introducción al Recorrido de incorporación de AEM as a Cloud Service](overview.md), probablemente esté listo para continuar. Sin embargo, antes de que comience el proceso de incorporación, hay una serie de pasos preparatorios que el administrador del sistema debe comprender antes de iniciar sesión en el sistema.
+Ahora que sabe lo que aprenderá en el proceso de incorporación tras leer el artículo [Introducción al recorrido de incorporación a AEM as a Cloud Service](overview.md), es probable que esté listo para empezar. Sin embargo, antes de que comience el proceso de incorporación, hay una serie de pasos preparatorios que el administrador del sistema debe comprender antes de iniciar sesión en el sistema.
 
 ## Objetivo {#objective}
 

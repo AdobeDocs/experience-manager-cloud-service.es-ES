@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1071'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 En esta parte del [recorrido para desarrolladores de AEM sin encabezado](overview.md), aprenda a implementar un lanzamiento de la aplicación sin encabezado tomando su código local en Git y mudándolo a Cloud Manager Git para la canalización CI/CD.
 
-## La historia hasta ahora {#story-so-far}
+## Lo que hemos visto hasta ahora {#story-so-far}
 
 En el documento anterior del recorrido de AEM sin encabezado, [Cómo juntar su aplicación y contenido en AEM sin encabezado](put-it-all-together.md), aprendió a utilizar las herramientas de desarrollo de AEM para unir todas las facetas de su proyecto.
 
@@ -129,7 +129,7 @@ Ya ha iniciado su primer proyecto de AEM sin encabezado o ahora tiene los conoci
 
 Sin embargo, las tiendas sin encabezado de AEM no tienen que detenerse aquí. Tal vez recuerde que en la [parte de introducción del recorrido](getting-started.md#integration-levels) analizamos brevemente cómo AEM no solo admite entregas sin encabezado y modelos de pila completa tradicionales, sino que también puede admitir modelos híbridos que combinan las ventajas de ambos.
 
-Si este tipo de flexibilidad es algo que necesita para su proyecto, continúe con la parte opcional adicional del recorrido SPA AEM, [Cómo crear aplicaciones de una sola página () con el método de trabajo ](create-spa.md).
+Si este es el tipo de flexibilidad que necesita para su proyecto, continúe con la parte opcional adicional del recorrido, [Cómo crear aplicaciones de una sola página (SPA) con AEM](create-spa.md).
 
 ## Recursos adicionales {#additional-resources}
 
