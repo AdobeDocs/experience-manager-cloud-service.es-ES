@@ -1,20 +1,20 @@
 ---
 title: 'Modelos de fragmentos de contenido (Assets: fragmentos de contenido)'
-description: AEM Descubra cómo los modelos de fragmentos de contenido sirven de base para su contenido sin encabezado en las, lo que le permite crear fragmentos de contenido con contenido estructurado.
+description: Descubra cómo los modelos de fragmentos de contenido sirven de base para el contenido sin encabezado en AEM, lo que le permite crear fragmentos de contenido con contenido estructurado.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 883eadc8ce2c84eba526b081ef90c678845989aa
 workflow-type: tm+mt
 source-wordcount: '3120'
-ht-degree: 78%
+ht-degree: 77%
 
 ---
 
 # Modelos de fragmento de contenido {#content-fragment-models}
 
-AEM Los modelos de fragmentos de contenido de la definición de la estructura de contenido de los [fragmentos de contenido](/help/assets/content-fragments/content-fragments.md), que sirven de base para el contenido sin encabezado, se definen en la definición de los modelos de fragmentos de contenido.
+Los modelos de fragmentos de contenido de AEM definen la estructura del contenido de sus [fragmentos de contenido](/help/assets/content-fragments/content-fragments.md), y sirven como base del contenido sin encabezado.
 
 Para usar modelos de fragmentos de contenido, haga lo siguiente:
 
@@ -261,6 +261,7 @@ Los fragmentos de contenido pueden formar contenido anidado mediante cualquiera 
 * **[Referencia a fragmento](#fragment-reference-nested-fragments)** (fragmentos anidados)
    * Hace referencia a otros fragmentos, según los modelos específicos definidos.
    * Permite incluir o recuperar datos estructurados.
+
      >[!NOTE]
      >
      Este método reviste especial interés en conjunción con la [Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
@@ -434,6 +435,7 @@ Para configurar las **Directivas** para **Modelos de fragmento de contenido perm
 1. **Guardar** cualquier cambio.
 
 Los modelos de fragmento de contenido permitidos para una carpeta se resuelven de la siguiente manera:
+
 * Las **Directivas** para los **Modelos de fragmento de contenido permitidos**.
 * Si está vacío, intente determinar la directiva utilizando las reglas de herencia.
 * Si la cadena de herencia no proporciona un resultado, consulte la configuración de **Cloud Services** para esa carpeta (primero directamente y luego mediante herencia).
@@ -510,7 +512,7 @@ Esta funcionalidad proporciona control para los modelos de fragmento de contenid
 
 ### Requisitos {#the-requirements}
 
-* Para concienciar a los usuarios sobre los riesgos que se plantean al editar modelos que ya se utilizan para la entrega de contenido en directo (es decir, modelos que se han publicado).
+* Para concienciar a los usuarios sobre los riesgos que se plantean al editar modelos que ya se utilizan para la entrega de contenido en directo; es decir, modelos que se han publicado.
 
 * Además, para evitar cambios no deseados.
 
