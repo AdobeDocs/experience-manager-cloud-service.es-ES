@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 7c65208b948345ea185032a04595ffe65e95876d
-workflow-type: ht
+source-git-commit: f81e8434029ade26dd2c30b249537699971e9a4b
+workflow-type: tm+mt
 source-wordcount: '1750'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -128,7 +128,7 @@ Los subtítulos de vídeo generados por IA en Adobe Dynamic Media utilizan la in
 
 #### Administrar publicación
 
-Puede utilizar el flujo de trabajo &quot;Administrar publicación&quot; para publicar o cancelar la publicación de formularios en entornos, generalmente desde la instancia de autor a las instancias de publicación y vista previa. Permite a los usuarios publicar, cancelar la publicación o programar la publicación de contenido de una manera optimizada.
+Puede usar el flujo de trabajo [Administrar publicación](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option) para publicar o cancelar la publicación de formularios en entornos, normalmente desde la instancia de autor a las instancias de publicación y vista previa. Permite a los usuarios publicar, cancelar la publicación o programar la publicación de contenido de una manera optimizada.
 
 #### Guardar automáticamente un borrador para los componentes principales basados en formularios adaptables
 

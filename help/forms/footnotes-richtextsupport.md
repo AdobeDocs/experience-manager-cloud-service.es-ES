@@ -4,8 +4,8 @@ description: Utilizar el editor de texto enriquecido (RTE) para notas al pie de 
 feature: Adaptive Forms, Foundation Components
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 100%
 
@@ -51,6 +51,7 @@ Para añadir una nota al pie en un formulario adaptable, siga estos pasos:
    >* Si hay notas al pie duplicadas, la numeración es la misma para todas.
 
 1. Desde el explorador de componentes, arrastre y suelte el componente **[!UICONTROL Marcador de nota al pie]** en el formulario adaptable.
+
    >[!NOTE]
    >
    >* En la instancia de publicación, las notas al pie se muestran en la posición en la que se coloca el componente **[!UICONTROL Marcador de nota al pie]** en el formulario adaptable.

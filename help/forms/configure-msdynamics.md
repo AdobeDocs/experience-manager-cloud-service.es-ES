@@ -3,7 +3,8 @@ title: Configurar los modelos de datos de formulario predeterminados de Microsof
 description: Aprenda a integrar Microsoft Dynamics 365 con Forms adaptable.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
-source-git-commit: 25284474793742a1af28e3c81976a3061d9eaf3e
+exl-id: 29ee324c-cd4c-403b-bb3d-b1eda8e8ad88
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 15%
@@ -51,6 +52,7 @@ Cree una cuenta en el **Centro de administración de Power Platform** para:
    * Habilitar aplicaciones de Microsoft Dynamics 365
 
    Siga los pasos del vídeo para crear una cuenta en el Centro de administración de Power Platform. En este vídeo, se ha creado una cuenta de prueba con fines de demostración.
+
    >[!VIDEO](https://video.tv.adobe.com/v/3444388)
 
 1. **Registrar una aplicación para [!DNL Microsoft® Dynamics 365] en Azure Active Directory**

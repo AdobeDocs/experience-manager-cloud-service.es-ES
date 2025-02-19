@@ -4,7 +4,7 @@ description: Crear comunicaciones personalizadas y orientadas a la marca
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '1706'
 ht-degree: 100%
@@ -78,9 +78,10 @@ Antes de utilizar una operación por lotes:
 * Crear una configuración del almacén de datos por lotes
 * Cargue plantillas y otros recursos a su instancia de Experience Manager Forms Cloud Service
 
-### Cargar datos de clientes (archivos XML) al almacenamiento de Azure {#upload-customer-data-to-Azure-Storage}
+### Cargar datos de clientes (archivos XML) al almacenamiento de Azure
 
 En su almacenamiento de Microsoft Azure, cree [contenedores](https://docs.microsoft.com/es-es/azure/vs-azure-tools-storage-explorer-blobs) y [cargue datos de clientes (XML)](https://docs.microsoft.com/es-es/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container) a las [carpetas](https://docs.microsoft.com/es-es/azure/storage/blobs/storage-quickstart-blobs-portal) dentro de los contenedores.
+
 >[!NOTE]
 >
 >Puede configurar el almacenamiento de Microsoft Azure para que limpie automáticamente la carpeta de entrada o mueva el contenido de la carpeta de salida a una ubicación diferente a intervalos programados. Con todo, asegúrese de que las carpetas no se limpien cuando se siga ejecutando una operación por lotes que haga referencia a las carpetas.

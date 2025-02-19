@@ -5,10 +5,11 @@ topic-tags: Adaptive Forms, author
 keywords: Servicio reCAPTCHA de Google, Formularios adaptables, desafío CAPTCHA, prevención de bots, componentes principales, seguridad de envío de formularios, prevención de correo no deseado de formularios
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: ec2f2a2951689ef20434ea6f531089502299bcb5
+exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '1418'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -27,9 +28,9 @@ AEM Forms as a Cloud Service es compatible con las siguientes soluciones CAPTCHA
 * [hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
 
 
-## Conecte los componentes principales de AEM Forms con el servicio reCAPTCHA de Google {#connect-your-forms-environment-with-recaptcha-service-by-google}
+## Conecte sus componentes principales de AEM Forms con el servicio reCAPTCHA de Google {#connect-your-forms-environment-with-recaptcha-service-by-google}
 
-Los creadores de formularios pueden utilizar el servicio reCAPTCHA de Google para implementar el reCAPTCHA en los formularios adaptables. Ofrece funcionalidades de Captcha avanzadas para proteger su sitio. Para obtener más información sobre cómo funciona reCAPTCHA, consulte [Google reCAPTCHA](https://developers.google.com/recaptcha/). Lo utiliza para presentar un desafío CAPTCHA al enviar el formulario.[!DNL AEM Forms] as a [!DNL Cloud Service] admite Google reCAPTCHA v2 y reCAPTCHA Enterprise. No existe compatibilidad con ninguna otra versión. Tenga en cuenta también que reCAPTCHA en Forms adaptable no es compatible con el modo sin conexión en la aplicación de AEM Forms.
+Los creadores de formularios pueden utilizar el servicio reCAPTCHA de Google para implementar el reCAPTCHA en los formularios adaptables. Ofrece funcionalidades de Captcha avanzadas para proteger su sitio. Para obtener más información sobre cómo funciona reCAPTCHA, consulte [Google reCAPTCHA](https://developers.google.com/recaptcha/). Puede utilizarlo para presentar un desafío de CAPTCHA en el envío de formularios.[!DNL AEM Forms] as a [!DNL Cloud Service] admite reCAPTCHA v2 de Google y reCAPTCHA Enterprise.  No existe compatibilidad con ninguna otra versión. También hay que tener en cuenta que reCAPTCHA en formularios adaptables no es compatible con el modo sin conexión en la aplicación AEM Forms.
 
 Según sus necesidades, puede configurar el servicio reCAPTCHA para habilitar lo siguiente:
 
@@ -119,19 +120,21 @@ Para utilizar el reCAPTCHA en Formularios adaptables, haga lo siguiente:
 
 1. Seleccione el componente **[!UICONTROL reCAPTCHA del Formulario adaptable]** y seleccione el ![Icono Propiedades](assets/configure-icon.svg). Abre el cuadro de diálogo de propiedades. Especifique las siguientes propiedades obligatorias:
    * **[!UICONTROL Nombre]:** puede identificar fácilmente el componente de un formulario con su nombre único, tanto en el formulario como en el editor de reglas, pero el nombre no debe contener espacios ni caracteres especiales.
-   * **[!UICONTROL Título]:** Especifique un título para el widget CAPTCHA. El valor predeterminado es **Captcha**. Seleccione **Ocultar título** si no desea que aparezca el título. Seleccione **Permitir texto enriquecido para el título** para editar el título en formato de texto enriquecido. También puede marcar su título como **Elemento de formulario independiente**.
-   * **[!UICONTROL Configuración de CAPTCHA]:** Seleccione una configuración de la lista desplegable Configuración para **reCAPTCHA Enterprise** o **reCAPTCHA v2** para presentar el cuadro de diálogo de Google reCAPTCHA para el formulario:
+   * **[!UICONTROL Título]:** especifique un título para el widget CAPTCHA. El valor predeterminado es **Captcha**. Seleccione **Ocultar título** si no desea que aparezca el título. Seleccione **Permitir texto enriquecido para el título** para editar el título en formato de texto enriquecido. También puede marcar su título como **Elemento de formulario independiente**.
+   * **[!UICONTROL Configuración de captcha]:** seleccione una configuración de la lista desplegable Configuración para **recaptcha Enterprise** o **recaptcha versión 2** para presentar el cuadro de diálogo de Google recaptcha para el formulario:
       1. Si selecciona la versión **reCAPTCHA empresarial**, el tipo de clave puede ser **casilla de verificación** o **basado en puntuación**, se compone de la selección realizada al configurar la [clave del sitio para sitios web](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key):
+
          >[!NOTE]
          >
          >* En la configuración de nube con **tipo de clave** como **casilla de verificación**, el mensaje de error personalizado aparece como un mensaje en línea si falla la validación del captcha.
          >* En la configuración en la nube con **tipo de clave** como **basado en puntuación**, el mensaje de error personalizado se muestra como un mensaje emergente si falla la validación del captcha.
+
       1. Puede seleccionar el tamaño como **[!UICONTROL normal]** y **[!UICONTROL compacto]**.
 
      >[!NOTE]
      >* Puede tener varias configuraciones de la nube en su entorno para un propósito similar. Por lo tanto, elija el servicio con cuidado. Si no aparece ningún servicio, consulte [Conectar su entorno de AEM Forms con el servicio reCAPTCHA de Google](#connect-your-forms-environment-with-recaptcha-service-by-google) para aprender a crear un Cloud Service que conecte su entorno de AEM Forms con el servicio reCAPTCHA de Google.
 
-   * **Tamaño del Captcha:** puede seleccionar el tamaño de visualización del diálogo de comprobación del reCAPTCHA de Google. Use la opción **[!UICONTROL Compacta]** para mostrar una opción de tamaño pequeño y la opción **[!UICONTROL Normal]** para mostrar un cuadro de diálogo de desafío reCAPTCHA de Google de tamaño relativamente grande.
+   * **Tamaño del Captcha:** puede seleccionar el tamaño de visualización del diálogo de comprobación del reCAPTCHA de Google. Utilice la opción **[!UICONTROL Compacto]** para mostrar un tamaño pequeño y la opción **[!UICONTROL Normal]** para mostrar un cuadro de diálogo de comprobación de reCAPTCHA de Google de tamaño relativamente grande.
 Si selecciona la versión **reCAPTCHA v2**:
       1. Puede seleccionar el tamaño **[!UICONTROL normal]** o **[!UICONTROL compacto]** para el widget reCAPTCHA.
       1. También puede seleccionar la opción **[!UICONTROL Invisible]** para mostrar la comprobación de CAPTCHA solamente en el caso de una actividad sospechosa.

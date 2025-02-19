@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
-source-wordcount: '1543'
-ht-degree: 100%
+source-wordcount: '1542'
+ht-degree: 97%
 
 ---
 
@@ -128,9 +128,10 @@ Se pueden agregar varias anulaciones seleccionando **[!UICONTROL +]**.
       1. Cambie el valor de `newURL` en función del entorno (o modo de ejecución).
       1. Para cambiar el valor secreto en función del modo de ejecución, se puede crear una variable secreta mediante la [API de Cloud Manager](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) y más adelante en la sección [Configuración de OSGi](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values). 
 Cuando este tipo de archivo del proyecto se implementa mediante la canalización de CM, la anulación ofrece valores diferentes en entornos diferentes (o modos de ejecución).
+
       >[!NOTE]
       >
-      >Los usuarios de [!DNL Adobe Managed Service] pueden cifrar los valores secretos utilizando la compatibilidad con cifrado (para obtener más información, consulte [compatibilidad con cifrado para propiedades de configuración](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html?lang=es#enabling-encryption-support) y colocar texto cifrado en el valor después de [las configuraciones según el contexto están disponibles en Service Pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=es#runmode-specific-context-aware-config).
+      >Los usuarios de [!DNL Adobe Managed Service] pueden cifrar los valores secretos usando la compatibilidad con cifrado para obtener detalles, vea [compatibilidad con cifrado para propiedades de configuración](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html?lang=es#enabling-encryption-support) y coloque texto cifrado en el valor después de que las [configuraciones según el contexto estén disponibles en el Service Pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=es#runmode-specific-context-aware-config).
 
 1. Actualice las definiciones de fuentes de datos mediante la opción para actualizar las definiciones de fuentes de datos en el [Editor del modelo de datos de formulario](#data-sources) para actualizar la caché de FDM mediante la interfaz de usuario de FDM y obtener la configuración más reciente.
 

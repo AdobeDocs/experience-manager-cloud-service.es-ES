@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 914139a6340f15ee77024793bf42fa30c913931e
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 100%
+source-wordcount: '1705'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,8 @@ ht-degree: 100%
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html?lang=es) |
-| AEM as a Cloud Service | Este artículo |
+| AEM as a Cloud Service (componentes principales) | [Haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
+| AEM as a Cloud Service (componentes de base) | Este artículo |
 
 Un formulario adaptable ofrece varias acciones de envío de forma predeterminada (OOTB). Una acción de envío especifica los detalles de las acciones que se realizarán en los datos recopilados mediante el formulario adaptable. Por ejemplo, el envío de datos en un correo electrónico.
 
@@ -73,7 +74,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 Cuando adjunta archivos al formulario adaptable, el servidor valida los archivos adjuntos después del envío del formulario adaptable y muestra un mensaje de error si ocurre lo siguiente:
 
-* Los archivos adjuntos incluyen un nombre de archivo que empieza por un carácter (.) contiene los caracteres \ / : * ? &quot; &lt; > | ; % $, o contiene nombres de archivo especiales reservados para el sistema operativo Windows, como `nul`, `prn`, `con`, `lpt` o `com`.
+* Los archivos adjuntos incluyen un nombre de archivo que empieza por (.) carácter, contiene \ / : * ? &quot; &lt; > | ; % $, o contiene nombres de archivo especiales reservados para el sistema operativo Windows, como `nul`, `prn`, `con`, `lpt` o `com`.
 
 * El tamaño del archivo adjunto es de 0 bytes.
 
@@ -108,25 +109,29 @@ Una acción de envío es sling:Folder, que incluye lo siguiente:
 
 ## Crear una acción de envío personalizada {#creating-a-custom-submit-action}
 
+>[!NOTE]
+>
+> Para obtener información sobre cómo crear una acción de envío personalizada para los componentes principales, consulte [Crear una acción de envío personalizada para un Forms adaptable (componentes principales)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components).
+
 Realice los siguientes pasos para crear una acción de envío personalizada que guarde los datos en el repositorio CRX y luego le envíe un correo electrónico. El formulario adaptable contiene el contenido del almacén de acciones de envío OOTB (obsoleto) que guarda los datos en el repositorio CRX. Además, AEM facilitará un API de [Correo electrónico](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) que se puede utilizar para enviar correos electrónicos. Antes de usar el API de correo electrónico, configure el servicio Day CQ Mail mediante la consola del sistema. Puede reutilizar la acción Almacenar contenido (obsoleta) para almacenar los datos en el repositorio. La acción Almacenar contenido (obsoleta) está disponible en la ubicación /libs/fd/af/components/guidesubmittype/store en el repositorio CRX.
 
 1. Inicie sesión en CRXDE Lite en la URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Cree un nodo con la propiedad sling:Folder y el nombre store_and_mail en la carpeta /apps/custom_submit_action. Cree la carpeta custom_submit_action si todavía no existe.
 
    ![Captura de pantalla que representa la creación de un nodo con la propiedad sling:Folder](assets/step1.png)
 
-1. **Facilite los campos de configuración obligatorios.**
+2. **Facilite los campos de configuración obligatorios.**
 
    Añada la configuración que requiere la acción Almacenar. Copie el nodo **cq:dialog** de la acción Almacenar de /libs/fd/af/components/guidesubmittype/store a la carpeta de acciones en /apps/custom_submit_action/store_and_email.
 
    ![Captura de pantalla que muestra la copia del nodo de diálogo a la carpeta de acciones](assets/step2.png)
 
-1. **Falicite campos de configuración para solicitar al autor que configure el correo electrónico.**
+3. **Falicite campos de configuración para solicitar al autor que configure el correo electrónico.**
 
    El formulario adaptable también ofrece una acción de correo electrónico que envía correos electrónicos a los usuarios. Personalice esta acción según sus necesidades. Vaya a /libs/fd/af/components/guidesubmittype/email/dialog. Copie los nodos dentro del nodo cq:dialog al nodo cq:dialog de su acción de envío (/apps/custom_submit_action/store_and_email/dialog).
 
    ![Personalizar la acción de correo electrónico](assets/step3.png)
 
-1. **Haga que la acción esté disponible en el cuadro de diálogo Editar el formulario adaptable.**
+4. **Haga que la acción esté disponible en el cuadro de diálogo Editar el formulario adaptable.**
 
    Añada las siguientes propiedades en el nodo store_and_email:
 
@@ -138,15 +143,15 @@ Realice los siguientes pasos para crear una acción de envío personalizada que 
 
    * **submitService** de tipo **Cadena** y valor **Almacenamiento y correo electrónico**. Para obtener más información, consulte [Programar el envío del formulario adaptable para acciones personalizadas](#schedule-adaptive-form-submission).
 
-1. Abra cualquier formulario adaptable. Haga clic en el botón **Editar** junto a **Inicio** para abrir el cuadro de diálogo **Editar** del contenedor del formulario adaptable. La nueva acción se muestra en la pestaña **Acciones de envío**. Al seleccionar **Acción de almacenamiento y correo electrónico**, muestra la configuración añadida en el nodo de diálogo.
+5. Abra cualquier formulario adaptable. Haga clic en el botón **Editar** junto a **Inicio** para abrir el cuadro de diálogo **Editar** del contenedor del formulario adaptable. La nueva acción se muestra en la pestaña **Acciones de envío**. Al seleccionar **Acción de almacenamiento y correo electrónico**, muestra la configuración añadida en el nodo de diálogo.
 
    ![Cuadro de diálogo Configuración de la acción de envío](assets/store_and_email_submit_action_dialog.jpg)
 
-1. **Utilice la acción para completar una tarea.**
+6. **Utilice la acción para completar una tarea.**
 
    Añada el script post.POST.jsp a su acción. (/apps/custom_submit_action/store_and_mail/).
 
-   Ejecute la acción Almacenamiento OOTB (script post.POST.jsp). Utilice el API [FormsHelper.runAction](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction-java.lang.String-java.lang.String-org.apache.sling.api.resource.Resource-org.apache.sling.api.SlingHttpServletRequest-org.apache.sling.api.SlingHttpServletResponse-)(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse)) que CQ ofrece en su código para ejecutar la acción de almacenamiento. Añada el siguiente código en su archivo JSP:
+   Ejecute la acción Almacenamiento OOTB (script post.POST.jsp). Utilice el API [FormsHelper.runAction](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction-java.lang.String-java.lang.String-org.apache.sling.api.resource.Resource-org.apache.sling.api.SlingHttpServletRequest-org.apache.sling.api.SlingHttpServletResponse-)&#x200B;(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse)) que CQ ofrece en su código para ejecutar la acción de almacenamiento. Añada el siguiente código en su archivo JSP:
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 

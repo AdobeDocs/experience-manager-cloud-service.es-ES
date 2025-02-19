@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 3b901af3283263e7ded0424e8557130ee49fa4cc
+source-git-commit: d055ac12b8f36deb4e0244df7b6d5df8ec627557
 workflow-type: tm+mt
-source-wordcount: '1844'
+source-wordcount: '1828'
 ht-degree: 87%
 
 ---
@@ -51,7 +51,7 @@ Entender los [conceptos fundamentales de CSS](https://www.w3schools.com/css/css_
 
 El Bloque de formularios adaptables ofrece una estructura de HTML estandarizada que simplifica el proceso de selección y estilo de los componentes del formulario:
 
-* **Actualizar estilos predeterminados**: puede modificar los estilos predeterminados de un formulario si edita `/blocks/form/form.css file`. Este archivo proporciona un estilo completo para un formulario, que admite formularios de asistente de varios pasos. Hace hincapié en el uso de variables CSS personalizadas para facilitar la personalización, el mantenimiento y el estilo uniforme en todos los formularios. &lt;!: para obtener instrucciones sobre cómo agregar el bloque de Forms adaptable al proyecto, consulte [crear un formulario](/help/edge/docs/forms/create-forms.md).
+* **Actualizar estilos predeterminados**: puede modificar los estilos predeterminados de un formulario si edita `/blocks/form/form.css file`. Este archivo proporciona un estilo completo para un formulario, que admite formularios de asistente de varios pasos. Hace hincapié en el uso de variables CSS personalizadas para facilitar la personalización, el mantenimiento y el estilo uniforme en todos los formularios.
 
 * **Estilo CSS para Forms**: Para asegurarse de que los estilos se aplican correctamente, ajuste el CSS específico del formulario dentro del selector `main .form form`. Esto garantiza que los estilos se dirijan únicamente a los elementos del formulario dentro del área de contenido principal, evitando conflictos con otras partes del sitio web.
 Ejemplo:
@@ -80,14 +80,15 @@ Todos los campos de formulario, excepto los menús desplegables, los grupos de o
 +++ Estructura HTML de los componentes generales
 
 ```HTML
-<div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
-   <label for="{FieldId}" class="field-label">First Name</label>
-   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
-   <div class="field-description" aria-live="polite" id="{FieldId}-description">
-    Hint - First name should be minimum 3 characters and a maximum of 10 characters.
-   </div>
-</div>
+  <div class="{Type}-wrapper field-{Name}   field-wrapper" data-required={Required}>
+     <label for="{FieldId}" class="field-label">First   Name</label>
+     <input type="{Type}" placeholder="{Placeholder}"   maxlength="{Max}" id={FieldId}" name="{Name}"   aria-describedby="{FieldId}-description">
+     <div class="field-description" aria-live="polite"  id="{FieldId}-description">
+      Hint - First name should be minimum 3 characters  and a maximum of 10 characters.
+     </div>
+  </div>
 ```
+
 * Clases: el elemento div tiene varias clases para dirigirse a elementos y estilos específicos. Necesita las clases `{Type}-wrapper` o `field-{Name}` para desarrollar un selector de CSS para aplicar estilo a un campo de formulario:
    * {Type}: identifica el componente por tipo de campo. Por ejemplo, texto (ajustador de texto), número (ajustador de número), fecha (ajustador de fecha).
    * {Name}: identifica el componente por su nombre. El nombre del campo solo puede tener caracteres alfanuméricos. Los múltiples guiones consecutivos del nombre se sustituyen por un solo guion `(-)`, y los guiones inicial y final del nombre de un campo se eliminan. Por ejemplo, nombre (campo-nombre ajustador de campo).
@@ -848,55 +849,3 @@ Este CSS identifica todos los elementos de entrada que se encuentran dentro de u
 ## Consulte también
 
 {{see-more-forms-eds}}
-
-
-<!--
-
-## Styling a form for Adaptive Forms Block
-
-The Adaptive Forms Block offers a standardized HTML structure, simplifying the process of selecting and styling form components:
-
-* **Update default styles**: You can modify the default styles of a form by editing the `/blocks/form/form.css file`. This file provides comprehensive styling for a form, supporting multi-step wizard forms. It emphasizes using custom CSS variables for easy customization, maintenance, and uniform styling across forms. <!--For instructions on adding the Adaptive Forms Block to your project, refer to [create a form](/help/edge/docs/forms/create-forms.md).
-
-* **CSS Styling for Forms**: To ensure that your styles are applied correctly, wrap your form-specific CSS within the `main .form form` selector. This ensures that your styles target only the form elements within the main content area, avoiding conflicts with other parts of the website.
-
-  Example:
-  ```css
-  main .form form input {
-    /* Add styles specific to input fields inside the form */
-  }
-
-  main .form form button {
-    /* Add styles specific to buttons inside the form */
-  }
-
-  main .form form label {
-    /* Add styles specific to labels inside the form */
-  }
-  ```
-
--->
-
-<!--
-
-**Customization**: Use the default `forms.css` as a base and customize it to modify the look and feel of your form components, making it visually appealing and user-friendly. The file's structure encourages organization and maintains styles for forms, promoting consistent designs across your website.
-
--->
-
-<!--
-
-## Breakdown of forms.css's structure
-
-* **Global variables:** Defined at the `:root` level, these variables (`--variable-name`) store values used throughout the style sheet for consistency and ease of updates. These variables define colors, font sizes, padding, and other properties. You can declare your own Global variables or modify existing ones to change the form's style.
-
-* **Universal selector styles:** The `*` selector matches every element in the form, ensuring styles are applied to all components by default, including setting the `box-sizing` property to `border-box`.
-
-* **Form styling:** This section focuses on styling form components using selectors to target specific HTML elements. It defines styles for input fields, text areas, checkboxes, radio buttons, file inputs, form labels, and descriptions.
-
-* **Wizard styling (if applicable):** This section is dedicated to styling the wizard layout, a multi-step form where each step is displayed one at a time. It defines styles for the wizard container, fieldsets, legends, navigation buttons, and responsive layouts.
-
-* **Media queries:** These provide styles for different screen sizes, adjusting layout and styling accordingly.
-
-* **Miscellaneous styling:**: This section covers styles for success or error messages, file upload areas, and other elements you might encounter in a form.
-
--->
