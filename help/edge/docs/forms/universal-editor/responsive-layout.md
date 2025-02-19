@@ -4,9 +4,9 @@ description: Este artículo explica cómo obtener una vista previa de los formul
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: ae0ec8135c7f7f644e2116be9177e7d7677b8dc7
+source-git-commit: 1abc1092872d4a3e0253ddf0388d23e39a6c2de9
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '425'
 ht-degree: 18%
 
 ---
@@ -23,16 +23,16 @@ El modo interactivo permite a los desarrolladores diseñar diseños que se adapt
 
 ## Vista previa de Forms en modo interactivo para diferentes dispositivos
 
-El editor universal proporciona un icono de **Emulador** ![Icono de emulador](/help/edge/docs/forms/universal-editor/assets/emulator.png){height-3%,width=3%} ubicado en la esquina superior derecha de la pantalla que le permite obtener una vista previa de las páginas en diferentes tamaños de dispositivo y probar el comportamiento de su diseño interactivo para una mejor experiencia de usuario.
+El editor universal proporciona un icono **Emulador** ubicado en la esquina superior derecha de la pantalla que le permite obtener una vista previa de las páginas en diferentes tamaños de dispositivo y probar el comportamiento de su diseño interactivo para una mejor experiencia de usuario.
 
 Para ver cómo el editor universal procesa los formularios en diferentes tamaños de pantalla, realice los siguientes pasos:
 
 1. Abra el formulario en el Editor universal para editarlo.
-1. Seleccione el ![icono Emulador](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=3%,width=3%} disponible en la barra de herramientas del editor universal y haga clic en el icono Emulador para mostrar la opción.
+2. Seleccione el ![icono Emulador](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%,width=2%} disponible en la barra de herramientas del editor universal y haga clic en el icono Emulador para mostrar la opción.
 
    ![Modo interactivo](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
 
-1. Seleccione la opción para emular un dispositivo móvil y en el Editor universal
+3. Seleccione la opción para emular un dispositivo móvil y en el Editor universal
 
    ![Modo interactivo](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png){width=40%,height=40%}
 
@@ -47,19 +47,19 @@ El editor universal proporciona diferentes emuladores para obtener una vista pre
     </tr>
     <tr>
         <td>Escritorio</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="Emulador de escritorio"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="Emulador de escritorio" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>Tableta</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Emulador de tableta"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Emulador de tableta" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>Dispositivo móvil</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Emulador móvil" "></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Emulador móvil" style="width: auto; height: auto"></td>
     </tr>
     <tr>
         <td>Dispositivo personalizado</td>
-        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Emulador de dispositivo personalizado"></td>
+        <td><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Emulador de dispositivo personalizado" style="width: auto; height: auto"></td>
     </tr>
 </table>
 
