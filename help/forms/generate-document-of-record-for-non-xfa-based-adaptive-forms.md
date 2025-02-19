@@ -70,7 +70,7 @@ Cargue el PDF de Adobe Acrobat (AcroForm) a su instancia de AEM Forms. Realiza l
 1. En la sección Configuración de plantilla de documento de registro de la pestaña Modelo de formulario, seleccione **Asociar plantilla de formulario como plantilla de documento de registro**. Al seleccionar esta opción, se muestran todos los PDF de Acrobat (AcroForm) disponibles en el equipo. Seleccione el archivo apropiado.
 1. Haga clic en **[!UICONTROL Listo]**.
 
-El formulario adaptable ahora está configurado para utilizar AcroForm como plantilla para el documento de registro. Los siguientes pasos son [enlazar componentes de formulario adaptable con campos de plantilla correspondientes](#bind-adaptive-form-components-with-template-fields).
+El formulario adaptable ahora está configurado para utilizar Acroform como plantilla para el documento de registro. Los siguientes pasos son [enlazar componentes de formulario adaptable con campos de plantilla correspondientes](#bind-adaptive-form-components-with-template-fields).
 
 ## Generar automáticamente un documento de registro {#auto-generate-a-document-of-record}
 

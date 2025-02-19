@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: e4398678566b53412ae0aeea0a18cd0172268ec1
 workflow-type: tm+mt
 source-wordcount: '6083'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -865,7 +865,7 @@ ht-degree: 98%
       + [Vista previa de un formulario](/help/forms/previewing-forms.md)
    + Comunicación interactiva {#interactive-communocation}
       + [Introducción a la comunicación interactiva](/help/forms/introduction-to-interactive-communication.md)
-      + [Cree su primera comunicación interactiva](/help/forms/create-your-first-communication.md)
+      + [Crear su primera comunicación interactiva](/help/forms/create-your-first-communication.md)
       + [Preguntas frecuentes](/help/forms/interactive-communications-faq.md)
    + Flujos de trabajo centrados en formularios {#create-form-centric-workflows}
       + [Introducción a los flujos de trabajo centrados en formularios](/help/forms/aem-forms-workflow.md)
@@ -1373,7 +1373,7 @@ ht-degree: 98%
       + Internacionalización{#internationalization}
          + [Internacionalización de componentes](/help/implementing/developing/extending/i18n/components.md)
          + [Internacionalización de cadenas de IU](/help/implementing/developing/extending/i18n/dev.md)
-         + [Usar Translator para administrar diccionarios](/help/implementing/developing/extending/i18n/translator.md)
+         + [Uso de Translator para administrar diccionarios](/help/implementing/developing/extending/i18n/translator.md)
          + [Extracción de cadenas para traducir](/help/implementing/developing/extending/i18n/extract.md)
    + Implementación en AEM as a Cloud Service {#deploying}
       + [Implementación en AEM as a Cloud Service](/help/implementing/deploying/overview.md)
