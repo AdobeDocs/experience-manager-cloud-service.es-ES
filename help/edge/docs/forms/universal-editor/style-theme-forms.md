@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: d055ac12b8f36deb4e0244df7b6d5df8ec627557
+source-git-commit: 7f4257433c441eb6b0109f22545b3ef708c9323b
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 87%
@@ -29,7 +29,7 @@ Al final del artículo:
 
 ## Explicación de los tipos de campo de formulario
 
-Antes de sumergirse en el estilo, vamos a revisar los [tipos de campo](/help/edge/docs/forms/form-components.md) del formulario común compatibles con el Bloque de formularios adaptables:
+Antes de sumergirse en el estilo, vamos a revisar los [tipos de campo](/help/edge/docs/forms/universal-editor/create-custom-component.md#supported-fieldtypes) del formulario común compatibles con el Bloque de formularios adaptables:
 
 * Campos de entrada: incluyen entradas de texto, entradas de correo electrónico, entradas de contraseña y mucho más.
 * Grupos de casillas de verificación: se utilizan para seleccionar varias opciones.
@@ -57,17 +57,17 @@ El Bloque de formularios adaptables ofrece una estructura de HTML estandarizada 
 Ejemplo:
 
   ```css
-  main .form form input {
-    /* Add styles specific to input fields inside the form */
-  }
+    main .form form input {
+        /* Add styles specific to input fields inside the form */
+    }
   
-  main .form form button {
-    /* Add styles specific to buttons inside the form */
-  }
+    main .form form button {
+        /* Add styles specific to buttons inside the form */
+    }
   
-  main .form form label {
-    /* Add styles specific to labels inside the form */
-  }
+    main .form form label {
+        /* Add styles specific to labels inside the form */
+    }
   
 ## Estructura de componentes
 
@@ -90,10 +90,10 @@ Todos los campos de formulario, excepto los menús desplegables, los grupos de o
 ```
 
 * Clases: el elemento div tiene varias clases para dirigirse a elementos y estilos específicos. Necesita las clases `{Type}-wrapper` o `field-{Name}` para desarrollar un selector de CSS para aplicar estilo a un campo de formulario:
-   * {Type}: identifica el componente por tipo de campo. Por ejemplo, texto (ajustador de texto), número (ajustador de número), fecha (ajustador de fecha).
-   * {Name}: identifica el componente por su nombre. El nombre del campo solo puede tener caracteres alfanuméricos. Los múltiples guiones consecutivos del nombre se sustituyen por un solo guion `(-)`, y los guiones inicial y final del nombre de un campo se eliminan. Por ejemplo, nombre (campo-nombre ajustador de campo).
-   * {FieldId}: es un identificador único para el campo, generado automáticamente.
-   * {Required}: es un booleano que indica si el campo es obligatorio.
+* {Type}: identifica el componente por tipo de campo. Por ejemplo, texto (ajustador de texto), número (ajustador de número), fecha (ajustador de fecha).
+* {Name}: identifica el componente por su nombre. El nombre del campo solo puede tener caracteres alfanuméricos. Los múltiples guiones consecutivos del nombre se sustituyen por un solo guion `(-)`, y los guiones inicial y final del nombre de un campo se eliminan. Por ejemplo, nombre (campo-nombre ajustador de campo).
+* {FieldId}: es un identificador único para el campo, generado automáticamente.
+* {Required}: es un booleano que indica si el campo es obligatorio.
 * Etiqueta: el elemento `label` proporciona un texto descriptivo para el campo y lo asocia al elemento de entrada mediante el atributo `for`.
 * Entrada: el elemento `input` define el tipo de datos que se van a introducir. Por ejemplo, texto, número, correo electrónico.
 * Descripción (opcional): la `div` con clase `field-description` proporciona información o instrucciones adicionales para el usuario.
