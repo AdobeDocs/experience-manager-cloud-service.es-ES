@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: aaef376b733c10643e44205e55a0921c22008990
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '639'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -30,9 +30,9 @@ La próxima versión planificada es el jueves, 13 de marzo de 2025.
 
 * **Actualización de las reglas de calidad del código**
 
-  A partir del jueves, 13 de febrero de 2025, el paso de calidad del código de Cloud Manager ahora utiliza SonarQube 9.9.5.90363.
+  A partir del jueves 13 de febrero de 2025, el paso de calidad del código de Cloud Manager utiliza ahora SonarQube 9.9.5.90363.
 
-  Las reglas actualizadas, disponibles para Cloud Manager en AEM as a Cloud Service en [este vínculo](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules), determinan las puntuaciones de seguridad y la calidad del código para las canalizaciones de Cloud Manager.
+  Las reglas actualizadas, disponibles para Cloud Manager en AEM as a Cloud Service en [este vínculo](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules), determinan las puntuaciones de seguridad y la calidad del código para las canalizaciones de Cloud Manager. 
 
 * SonarQube 9.9 es ahora el motor de análisis de calidad de código predeterminado para todos los clientes.
 
@@ -40,31 +40,31 @@ La próxima versión planificada es el jueves, 13 de marzo de 2025.
 
   Los clientes ahora pueden crear con Java 17 o Java 21, lo que les ofrece acceso a mejoras de rendimiento y nuevas funciones de idioma. Para ver los pasos de configuración, incluida la actualización del proyecto Maven y las versiones de la biblioteca, consulte [Entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). Cuando la versión de compilación se establece en Java 17 o Java 21, el tiempo de ejecución implementado es Java 21.
 
-* **99,99% de informes de tiempo de actividad de SLA para Edge Delivery Services**
+* **Sistema de informes con un tiempo de actividad SLA al 99,99 % para Edge Delivery Services**
 
-  Los informes de tiempo de actividad del 99,99 % de alta disponibilidad ya están disponibles para los programas Edge Delivery Services aptos. Para habilitar esta función, los clientes deben incorporar correctamente sus sitios de Edge Delivery Services y aplicar su acuerdo de nivel de servicio al 99,99 % en Cloud Manager.
+  Ya está disponible el sistema de informes con un tiempo de actividad del 99,99 % de alta disponibilidad para los programas Edge Delivery Services que cumplan los requisitos. Para habilitar esta función, los clientes deben incorporar correctamente sus sitios de Edge Delivery Services y aplicar su acuerdo de nivel de servicio al 99,99 % en Cloud Manager.
 
   Véase también [SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla).
 
-* **Se mejoró la experiencia de invitación de usuarios para Edge Delivery Services**
+* **Se ha mejorado la experiencia de invitación de usuarios para Edge Delivery Services**
 
-  Se mejoró la experiencia al invitar a usuarios al repositorio de contenido asociado con Edge Delivery Services. <!-- CMGR-65331 -->
+  Se han introducido mejoras en la experiencia de invitar a usuarios al repositorio de contenido asociado con Edge Delivery Services. <!-- CMGR-65331 -->
 
-* **Creación automática de perfiles de administración en instancias de publicación**
+* **Creación automática de perfiles de administrador en las instancias de publicación**
 
-  Anteriormente, Cloud Manager permitía la creación manual de perfiles de administración en instancias de publicación, pero no admitía la creación automática de forma predeterminada. Con esta actualización, ahora los perfiles de administrador se crean automáticamente en las instancias de publicación, lo que mejora la facilidad de uso y reduce el tiempo de configuración de los clientes.
+  Anteriormente, Cloud Manager permitía crear manualmente perfiles de administrador en las instancias de publicación, pero no admitía la creación automática de forma predeterminada. Con esta actualización, ahora los perfiles de administrador se crean automáticamente en las instancias de publicación, lo que mejora la facilidad de uso y reduce el tiempo de configuración de los clientes.
 
   Para obtener más información, consulte [Permisos personalizados. ](/help/implementing/cloud-manager/custom-permissions.md)
 
   ![Filtrado de actividades de canalización](/help/implementing/cloud-manager/release-notes/assets/product-profiles.png)
 
-* **Transición a OAuth para entornos Cloud Service**
+* **Transición a OAuth para los entornos de Cloud Service**
 
-  Los nuevos entornos de Cloud Service ahora utilizan la autenticación de servicio a servicio basada en OAuth para proyectos de integración de Adobe Developer Console en lugar del método de autenticación JWT utilizado anteriormente. La autenticación JWT está obsoleta y está previsto que deje de utilizarse en junio de 2025.
+  Ahora los nuevos entornos de Cloud Service utilizan la autenticación de servicio a servicio basada en OAuth para proyectos de integración de Adobe Developer Console en lugar del método de autenticación JWT utilizado anteriormente. La autenticación JWT está obsoleta y está previsto que deje de utilizarse en junio de 2025.
 
-* **Compatibilidad con claves privadas EC (Elliptic Curve) (secp384r1)**
+* **Compatibilidad con claves privadas de EC (Elliptic Curve) (secp384r1)**
 
-  Cloud Manager ahora admite claves privadas de curva elíptica (EC) `secp384r1`, lo que proporciona una seguridad y conformidad mejoradas para los certificados SSL OV/EV administrados por el cliente.
+  Cloud Manager ahora admite las claves privadas `secp384r1` de Elliptic Curve (EC), lo que mejora la seguridad y conformidad de los certificados SSL OV/EV administrados por el cliente.
 Para obtener más información, consulte [Requisitos para los certificados SSL OV/EV administrados por el cliente](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements). <!-- CMGR-63636 -->
 
 * **Entornos de prueba especializados**
