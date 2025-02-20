@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 4828e1965514a5ce5cd6d8528c72af33b7b748ea
+source-git-commit: 5680e2381f5826a48e731906aa8aab9d06a0e944
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 83%
+source-wordcount: '1109'
+ht-degree: 84%
 
 ---
 
@@ -31,17 +31,17 @@ Este es el diseño con tarjetas de igual ancho (con columnas de ancho fijo):
 
 | ![Interfaz de WYSIWYG](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg) | ![Editor de reglas](/help/edge/docs/forms/universal-editor/assets/rule-editor.svg) | ![Acciones de envío](/help/edge/docs/forms/universal-editor/assets/submit-actions.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**Interfaz de WYSIWYG**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/universal-editor-user-interface) | [**Editor de reglas**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/rule-editor-universal-editor) | [**Acciones de envío**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action) |
+| [**Interfaz de WYSIWYG**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | [**Editor de reglas**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**Acciones de envío**](/help/edge/docs/forms/universal-editor/submit-action.md) |
 | El editor universal proporciona una interfaz de WYSIWYG para el diseño de formularios con una biblioteca de componentes prediseñada, diseño interactivo, creación con plantillas y modificaciones de campos en tiempo real. | El editor de reglas permite a los usuarios crear interacciones de formulario dinámicas mediante reglas impulsadas por eventos, validación instantánea y administración de errores a través de JavaScript y JSON ligeros. | Las acciones de envío admiten la integración back-end, la lógica de envío condicional, los extremos seguros y los preprocesadores, lo que optimiza los flujos de trabajo de envío. |
 
 | ![Publicación/Cancelación de publicación](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![Modo interactivo](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![Componentes personalizados](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**Publicación/Cancelación de publicación**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/publish-forms) | **Modo interactivo** | [**Componentes personalizados**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/create-custom-component) |
+| [**Publicación/Cancelación de publicación**](/help/edge/docs/forms/universal-editor/publish-forms.md) | [**Modo interactivo**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**Componentes personalizados**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 | Controle fácilmente la visibilidad de los formularios: publíquelos o cancele su publicación directamente desde el editor con solo unos clics. | Diseñe formularios que se adapten sin problemas a todos los dispositivos (equipos de escritorio, tabletas y dispositivos móviles). Utilice el modo interactivo para previsualizar y probar formularios para varios tamaños de pantalla. | Los componentes personalizados permiten a los desarrolladores ampliar las capacidades de los formularios creando elementos únicos adaptados a casos de uso organizativos específicos. |
 
 | ![Estilo](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![Servicios de rellenado previo](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![Prueba A/B](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**Estilo**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms) | **Servicios de rellenado previo** (próximamente) | [**Prueba A/B**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
+| [**Estilo**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **Servicios de rellenado previo** (próximamente) | [**Prueba A/B**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | El estilo con CSS permite a los desarrolladores personalizar el aspecto de los elementos del formulario y crear un diseño visualmente atractivo que se ajuste a la estética del sitio web. | Los servicios de rellenado previo completan de forma automática los campos de formulario con datos de usuario relevantes de varias fuentes, lo que reduce la entrada manual y mejora la experiencia del usuario. | Las pruebas A/B permiten a las organizaciones experimentar con diferentes diseños de formulario, diseños y características para identificar las variantes con mejor rendimiento. |
 
 | ![Análisis y seguimiento](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Administración de tareas](/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg) | ![Enlace de datos](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
@@ -51,7 +51,7 @@ Este es el diseño con tarjetas de igual ancho (con columnas de ancho fijo):
 
 | ![Personalización del editor](/help/edge/docs/forms/universal-editor/assets/editor-customization.svg) | ![Incrustando Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Configuración de agradecimiento](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-| **Personalización del editor** | **Incrustando Forms** | [**Configuración de agradecimiento**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/submit-action#submit-action-message-ue) |
+| **Personalización del editor** | **Incrustando Forms** | [**Configuración de agradecimiento**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
 | Los desarrolladores pueden ampliar la funcionalidad del editor mediante extensiones de interfaz de usuario, lo que permite soluciones adaptadas que se ajustan a las necesidades específicas de la organización. | Incrustar formularios directamente en páginas de Edge Delivery Services Sites mediante el componente incrustado integrado del editor universal. | Personalice con facilidad el mensaje de confirmación o la página que se muestra a los usuarios después de enviar correctamente el formulario. |
 
 
