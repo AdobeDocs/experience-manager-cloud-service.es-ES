@@ -4,10 +4,10 @@ description: Obtenga información acerca de las distintas opciones para personal
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
+source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 3%
+source-wordcount: '334'
+ht-degree: 8%
 
 ---
 
@@ -28,6 +28,16 @@ Por lo tanto, el botón **Publicar** se puede suprimir por completo en una aplic
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish"/>
+```
+
+## Desactivación de la publicación para previsualización {#publish-preview}
+
+Algunos flujos de trabajo de creación podrían impedir la publicación en el [servicio de vista previa](/help/sites-cloud/authoring/sites-console/previewing-content.md) (si está disponible).
+
+Por lo tanto, la opción **Preview** de la ventana de publicación se puede suprimir por completo en una aplicación si agrega los siguientes metadatos.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
 ```
 
 ## Filtrado de componentes {#filtering-components}
@@ -79,7 +89,7 @@ Las condiciones se pueden definir usando [JsonLogic schema](https://jsonlogic.co
 
 Puede especificar una URL de vista previa personalizada mediante una metaconfiguración de `urn:adobe:aue:config:preview`, que se abrirá al hacer clic en el botón **Abrir página** en la barra de herramientas superior derecha del [editor](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
-Esto es particularmente útil para aplicaciones con requisitos de vista previa específicos, como las que [usan Edge Delivery Services con la creación de WYSIWYG](/help/edge/wysiwyg-authoring/authoring.md).
+Esto es especialmente útil para aplicaciones con requisitos de vista previa específicos, como las que [utilizan Edge Delivery Services con la creación WYSIWYG](/help/edge/wysiwyg-authoring/authoring.md).
 
 Para ello, simplemente incluya la URL de vista previa deseada en una metaetiqueta de la aplicación instrumentada como en el siguiente ejemplo.
 
