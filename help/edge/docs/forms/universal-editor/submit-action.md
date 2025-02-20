@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: da2f673319dd5cec764408b4517698a9d39031bb
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 18%
+ht-degree: 19%
 
 ---
 
@@ -41,7 +41,7 @@ Para configurar un extremo REST:
 1. Seleccionar **[!UICONTROL bloque de formulario adaptable]**.
 1. Haga clic en el icono de propiedades ![properties](/help/forms/assets/Smock_Properties_18_N.svg).
 1. Seleccione **[!UICONTROL Enviar a un extremo REST]** de la lista desplegable **[!UICONTROL Enviar acción]**.
-1. Especifique la URL del extremo REST.
+1. Especifique la URL de punto final REST.
 1. También puede **habilitar la solicitud POST** y proporcionar una URL para publicar la solicitud.
 
 ![Habilitar solicitud de publicación para formularios adaptables](/help/forms/assets/enable-post-request-ue.png)
@@ -144,4 +144,5 @@ También puede personalizar el mensaje de agradecimiento al enviar el formulario
 
 ## Ver también
 
-{{see-more-forms-eds}}
+{{universal-editor-see-also}}
+

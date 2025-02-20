@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 7a868ddc3d13eaf3b5352e130b2026db64a02723
+source-git-commit: 7d0b735b367189852e4897702738eefc1e87d892
 workflow-type: tm+mt
-source-wordcount: '1108'
-ht-degree: 77%
+source-wordcount: '1038'
+ht-degree: 83%
 
 ---
 
@@ -36,7 +36,6 @@ Este es el diseño con tarjetas de igual ancho (con columnas de ancho fijo):
 
 | ![Publicación/Cancelación de publicación](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![Modo interactivo](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![Componentes personalizados](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
 |:-------------:|:-------------:|:-------------:|
-
 | [**Publicación/Cancelación de publicación**](/help/edge/docs/forms/universal-editor/publish-forms.md) | [**Modo interactivo**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**Componentes personalizados**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 | Controle fácilmente la visibilidad de los formularios: publíquelos o cancele su publicación directamente desde el editor con solo unos clics. | Diseñe formularios que se adapten sin problemas a todos los dispositivos (equipos de escritorio, tabletas y dispositivos móviles). Utilice el modo interactivo para previsualizar y probar formularios para varios tamaños de pantalla. | Los componentes personalizados permiten a los desarrolladores ampliar las capacidades de los formularios creando elementos únicos adaptados a casos de uso organizativos específicos. |
 
@@ -52,9 +51,8 @@ Este es el diseño con tarjetas de igual ancho (con columnas de ancho fijo):
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Incrustando Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Configuración de agradecimiento](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-
-| **Personalización del editor** | **Incrustación de Forms** | [**Configuración de agradecimiento**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
-| Los desarrolladores pueden ampliar la funcionalidad del editor mediante extensiones de interfaz de usuario, lo que permite soluciones adaptadas que se ajustan a las necesidades específicas de la organización. | Incrustar formularios directamente en páginas de Edge Delivery Services Sites mediante el componente incrustado integrado del editor universal. | Personalice fácilmente el mensaje de confirmación o la página que se muestra a los usuarios después de enviar correctamente el formulario. |
+| **Personalización del editor** | **Incrustando Forms** | [**Configuración de agradecimiento**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
+| Los desarrolladores pueden ampliar la funcionalidad del editor mediante extensiones de interfaz de usuario, lo que permite soluciones adaptadas que se ajustan a las necesidades específicas de la organización. | Incrustar formularios directamente en páginas de Edge Delivery Services Sites mediante el componente incrustado integrado del editor universal. | Personalice con facilidad el mensaje de confirmación o la página que se muestra a los usuarios después de enviar correctamente el formulario. |
 
 
 <!-- ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg)  **WYSIWYG interface for Form creation**: Universal Editor provides a WYSIWYG interface for form design. It provides pre-built component library, responsive design support, and template-based form creation. You can instantly add or remove form fields and modify field properties (like label, data binding, validation). You can also plugin custom form components to Universal Editor.
@@ -246,13 +244,5 @@ El editor universal incluye herramientas de seguimiento y análisis integradas p
 
 ## Empezar a crear formularios
 
-* [Introducción a Edge Delivery Services para AEM Forms](/help/edge/docs/forms/tutorial.md)
-* [Crear un formulario con Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Configurar Google Sheets o los archivos de Microsoft Excel para empezar a aceptar datos](/help/edge/docs/forms/submit-forms.md)
-* [Publicar el formulario y empezar a recopilar datos](/help/edge/docs/forms/publish-forms.md)
-* [Personalizar el aspecto de los formularios](/help/edge/docs/forms/style-theme-forms.md)
-* [Añadir secciones repetibles a un formulario](/help/edge/docs/forms/repeatable-forms.md)
-* [Mostrar un mensaje de agradecimiento personalizado después del envío del formulario](/help/edge/docs/forms/thank-you-page-form.md)
-* [Componentes de bloque de formulario adaptable y sus propiedades](/help/edge/docs/forms/form-components.md)
-* [Monitorización de usuarios reales](https://www.aem.live/developer/rum#authentication)
+{{universal-editor-see-also}}
 

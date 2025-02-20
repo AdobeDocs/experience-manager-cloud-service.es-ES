@@ -4,13 +4,13 @@ description: Este tutorial le ayuda a ponerse en marcha con la interfaz del edit
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: f62bccacd3252422899a35d2b431450c919982de
+exl-id: 90321e81-bb55-48b2-b329-4944bf926309
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
-source-wordcount: '1495'
-ht-degree: 5%
+source-wordcount: '1425'
+ht-degree: 0%
 
 ---
-
 
 # Exploración de la interfaz del Editor universal (WYSIWYG)
 
@@ -231,16 +231,6 @@ La opción **Delete** elimina un componente, que está seleccionado en el árbol
 El editor permite editar el formulario, y el formulario especificado en la barra de ubicación se procesa en el área de edición. Si el editor se encuentra en el modo de vista previa, puede desplazarse por el formulario mediante los botones y vínculos disponibles.
 ![Editor](/help/edge/docs/forms/universal-editor/assets/ue-editor.png){width=50%,height=50%}
 
-## Consulte también
+## Ver también
 
-* [Introducción a Edge Delivery Services para AEM Forms](/help/edge/docs/forms/tutorial.md)
-* [Crear un formulario con Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Configurar Google Sheets o los archivos de Microsoft Excel para empezar a aceptar datos](/help/edge/docs/forms/submit-forms.md)
-* [Publicar el formulario y empezar a recopilar datos](/help/edge/docs/forms/publish-forms.md)
-* [Personalizar el aspecto de los formularios](/help/edge/docs/forms/style-theme-forms.md)
-* [Añadir secciones repetibles a un formulario](/help/edge/docs/forms/repeatable-forms.md)
-* [Mostrar un mensaje de agradecimiento personalizado después del envío del formulario](/help/edge/docs/forms/thank-you-page-form.md)
-* [Componentes de bloque de formulario adaptable y sus propiedades](/help/edge/docs/forms/form-components.md)
-* [Monitorización de usuarios reales](https://www.aem.live/developer/rum#authentication)
-
-
+{{universal-editor-see-also}}

@@ -4,10 +4,10 @@ description: Este artículo explica cómo obtener una vista previa de los formul
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: 222ee977f6ee76908fecf9cb3171287fddba8790
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 18%
+source-wordcount: '360'
+ht-degree: 2%
 
 ---
 
@@ -65,16 +65,9 @@ El editor universal proporciona diferentes emuladores para obtener una vista pre
 
 Puede usar el icono **Rotador de pantalla** para alternar entre las orientaciones vertical y horizontal al obtener una vista previa de un formulario en diferentes dispositivos. Ayuda a los desarrolladores a probar cómo el diseño adaptable se adapta a las rotaciones de pantalla en varios dispositivos.
 
-## Consulte también
+## Ver también
 
-* [Introducción a Edge Delivery Services para AEM Forms](/help/edge/docs/forms/tutorial.md)
-* [Crear un formulario con Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Configurar Google Sheets o los archivos de Microsoft Excel para empezar a aceptar datos](/help/edge/docs/forms/submit-forms.md)
-* [Publicar el formulario y empezar a recopilar datos](/help/edge/docs/forms/publish-forms.md)
-* [Personalizar el aspecto de los formularios](/help/edge/docs/forms/style-theme-forms.md)
-* [Añadir secciones repetibles a un formulario](/help/edge/docs/forms/repeatable-forms.md)
-* [Mostrar un mensaje de agradecimiento personalizado después del envío del formulario](/help/edge/docs/forms/thank-you-page-form.md)
-* [Componentes de bloque de formulario adaptable y sus propiedades](/help/edge/docs/forms/form-components.md)
-* [Monitorización de usuarios reales](https://www.aem.live/developer/rum#authentication)
+{{universal-editor-see-also}}
+
 
 

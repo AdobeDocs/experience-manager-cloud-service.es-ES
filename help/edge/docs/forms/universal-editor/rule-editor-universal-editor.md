@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 320ab86bc73e874705d985b927e90eec3cad1cf9
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
-source-wordcount: '2236'
-ht-degree: 77%
+source-wordcount: '2166'
+ht-degree: 76%
 
 ---
 
@@ -383,14 +383,6 @@ Este artículo proporciona información limitada sobre el Editor de reglas dispo
 
 {{see-also-rule-editor}}
 
-## Consulte también
+## Ver también
 
-* [Introducción a Edge Delivery Services para AEM Forms](/help/edge/docs/forms/tutorial.md)
-* [Crear un formulario con Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Configurar Google Sheets o los archivos de Microsoft Excel para empezar a aceptar datos](/help/edge/docs/forms/submit-forms.md)
-* [Publicar el formulario y empezar a recopilar datos](/help/edge/docs/forms/publish-forms.md)
-* [Personalizar el aspecto de los formularios](/help/edge/docs/forms/style-theme-forms.md)
-* [Añadir secciones repetibles a un formulario](/help/edge/docs/forms/repeatable-forms.md)
-* [Mostrar un mensaje de agradecimiento personalizado después del envío del formulario](/help/edge/docs/forms/thank-you-page-form.md)
-* [Componentes de bloque de formulario adaptable y sus propiedades](/help/edge/docs/forms/form-components.md)
-* [Monitorización de usuarios reales](https://www.aem.live/developer/rum#authentication)
+{{universal-editor-see-also}}
