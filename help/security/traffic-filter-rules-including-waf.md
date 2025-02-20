@@ -4,10 +4,10 @@ description: Configuración de las reglas de filtro de tráfico, incluidas las r
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '4049'
-ht-degree: 100%
+source-git-commit: cdf15df0b8b288895db4db0032137c38994f4faf
+workflow-type: tm+mt
+source-wordcount: '4215'
+ht-degree: 95%
 
 ---
 
@@ -206,7 +206,7 @@ Un grupo de condiciones está compuesto por varias condiciones simples o de grup
 
 **Notas**
 
-* La propiedad de solicitud `clientIp` solo se puede utilizar con los siguientes predicados: `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` también se puede comparar con intervalos de IP cuando se utilizan los predicados `in` y `notIn`. En el siguiente ejemplo se implementa una condición para evaluar si una IP de cliente está en el rango de IP de 192.168.0.0/24 (o sea, desde 192.168.0.0 hasta 192.168.0.255):
+* La propiedad de solicitud `clientIp` solo se puede utilizar con los siguientes predicados: `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` también se puede comparar con intervalos de IP cuando se utilizan los predicados `in` y `notIn`. El siguiente ejemplo implementa una condición para evaluar si una IP de cliente está en el intervalo de IP de 192.168.0.0/24 (por ejemplo, de 192.168.0.0 a 192.168.0.255):
 
 ```
 when:
@@ -235,8 +235,12 @@ Las acciones se priorizan según sus tipos en la siguiente tabla, que se ordena 
 
 La propiedad `wafFlags`, que se puede utilizar en las reglas de filtro de tráfico WAF con licencia, puede hacer referencia a lo siguiente:
 
+#### Tráfico malintencionado
+
 | **Identificador de marca** | **Nombre de indicador** | **Descripción** |
 |---|---|---|
+| ATACAR | Atacar | Indicador que identifica las solicitudes que contienen uno o varios de los tipos de ataque enumerados en esa tabla |
+| ATTACK-FROM-BAD-IP | Ataque desde IP incorrecta | Indicador que identifica las solicitudes procedentes de `BAD-IP` y que contienen uno o varios de los tipos de ataque enumerados en esa tabla |
 | SQLI | Inyección de SQL | La inyección de SQL es el intento de obtener acceso a una aplicación o de obtener información privilegiada ejecutando consultas de base de datos arbitrarias. |
 | PUERTA TRASERA | Puerta trasera | Una señal de puerta trasera es una solicitud que intenta determinar si hay un archivo de puerta trasera común en el sistema. |
 | CMDEXE | Ejecución de comandos | La ejecución de comandos es el intento de obtener control o dañar un sistema objetivo a través de comandos arbitrarios del sistema por medio de la entrada del usuario. |
@@ -245,24 +249,37 @@ La propiedad `wafFlags`, que se puede utilizar en las reglas de filtro de tráfi
 | TRAVERSAL | Traversal de directorios | Traversal de directorios es el intento de navegar por carpetas privilegiadas a través de un sistema con la esperanza de obtener información confidencial. |
 | USERAGENT | Herramienta de ataque | La herramienta de ataque es el uso de software automatizado para identificar vulnerabilidades de seguridad o para intentar explotar una vulnerabilidad descubierta. |
 | LOG4J-JNDI | Log4J JNDI | Los ataques Log4J JNDI intentan explotar la [vulnerabilidad de Log4Shell](https://en.wikipedia.org/wiki/Log4Shell) presente en las versiones de Log4J anteriores a la versión 2.16.0 |
+| CVE | CVE | Indicador que identifica una CVE. Siempre se combina con un indicador `CVE-<CVE Number>`. Póngase en contacto con Adobe para obtener más información sobre los CVE de los que Adobe le protegerá. |
+
+#### Tráfico sospechoso
+
+| **Identificador de marca** | **Nombre de indicador** | **Descripción** |
+|---|---|---|
+| ABNORMALPATH | Ruta anormal | Ruta anormal indica que la ruta original difiere de la ruta normalizada (por ejemplo, `/foo/./bar` se normaliza a `/foo/bar`) |
+| IP INCORRECTA | IP incorrecta | El indicador para identificar la solicitud proveniente de direcciones IP se identifica como incorrecta, ya sea porque hay fuentes identificadas como malintencionadas (`SANS`, `TORNODE`) o porque WAF las ha identificado como erróneas después de enviar demasiadas solicitudes malintencionadas |
 | BHH | Encabezados de salto incorrecto | Los encabezados de salto incorrecto indican un intento de introducir HTTP a través de un encabezado Transfer-Encoding (TE) o Content-Length (CL) mal formado o un encabezado TE y CL bien formado |
 | CODEINJECTION | Inyección de código | La inyección de código es el intento de obtener control o dañar un sistema de destino a través de comandos arbitrarios del código de aplicación por medio de la entrada del usuario. |
-| ABNORMALPATH | Ruta anormal | Ruta anormal indica que la ruta original difiere de la ruta normalizada (por ejemplo, `/foo/./bar` se normaliza a `/foo/bar`) |
-| DOUBLEENCODING | Codificación doble | La codificación doble comprueba la técnica de evasión de los caracteres HTML de doble codificación |
+| COMPRIMIDO | Compresión detectada | El cuerpo de la solicitud POST está comprimido y no se puede inspeccionar. Por ejemplo, si se especifica un encabezado de solicitud `Content-Encoding: gzip` y el cuerpo de la PUBLICACIÓN no es texto sin formato. |
+| RESPONSESPLIT | División de respuesta HTTP | Identifica cuándo se envían los caracteres CRLF como entrada a la aplicación para insertar encabezados en la respuesta HTTP |
 | NOTUTF8 | Codificación no válida | La codificación no válida puede hacer que el servidor traduzca caracteres malintencionados de una solicitud a una respuesta, lo que provoca una denegación de servicio o XSS |
-| JSON-ERROR | Error de codificación de JSON | Un cuerpo de solicitud POST, PUT o PATCH que se especifica que contiene JSON dentro del encabezado de solicitud &quot;Content-Type&quot;, pero que contiene errores de análisis de JSON. Esto suele estar relacionado con un error de programación o una solicitud automatizada o maliciosa. |
 | MALFORMED-DATA | Datos mal formados en el cuerpo de la solicitud | Un cuerpo de solicitud POST, PUT o PATCH con un formato incorrecto según el encabezado de solicitud &quot;Content-Type&quot;. Por ejemplo, si se especifica un encabezado de solicitud &quot;Content-Type: application/x-www-form-urlencoded&quot; y contiene un cuerpo POST que es json. Esto suele ser un error de programación, una solicitud automatizada o maliciosa. Requiere agente 3.2 o superior. |
 | SANS | Tráfico IP malintencionado | [Centro de tormentas de Internet SANS](https://isc.sans.edu/): lista de direcciones IP notificadas que han participado en actividades maliciosas. |
 | NO-CONTENT-TYPE | Falta el encabezado de solicitud &quot;Content-Type&quot; | Una solicitud POST, PUT o PATCH que no tiene un encabezado de solicitud &quot;Content-Type&quot;. De forma predeterminada, los servidores de aplicaciones deben suponer &quot;Content-Type: text/plain; charset=us-ascii&quot; en este caso. Es posible que a muchas solicitudes automatizadas y maliciosas les falte &quot;Tipo de contenido&quot;. |
 | NOUA | No hay agente de usuario | Indica que una solicitud no contiene un encabezado “Agente-Usuario” o que el valor del encabezado no se ha establecido. |
-| TORNODE | Tráfico de Tor | Tor es un software que oculta la identidad de un usuario. Un pico en el tráfico de Tor puede indicar que un atacante está tratando de ocultar su ubicación. |
 | NULLBYTE | Byte nulo | Los bytes nulos no suelen aparecer en una solicitud e indican que la solicitud tiene un formato incorrecto y es potencialmente maliciosa. |
+| OOB-DOMAIN | Dominio fuera de banda | Los dominios fuera de banda generalmente se utilizan durante las pruebas de penetración para identificar vulnerabilidades en las que se permite el acceso a la red. |
 | PRIVATEFILE | Archivos privados | Los archivos privados suelen ser de naturaleza confidencial, como un archivo `.htaccess` Apache o un archivo de configuración que podría filtrar información confidencial |
 | ESCÁNER | Escáner | Identifica los servicios y herramientas de digitalización más populares |
-| RESPONSESPLIT | División de respuesta HTTP | Identifica cuándo se envían los caracteres CRLF como entrada a la aplicación para insertar encabezados en la respuesta HTTP |
-| XML-ERROR | Error de codificación XML | Un cuerpo de solicitud POST, PUT o PATCH que se especifica que contiene XML dentro del encabezado de solicitud &quot;Content-Type&quot;, pero que contiene errores de análisis de XML. Esto suele estar relacionado con un error de programación o una solicitud automatizada o maliciosa. |
-| CENTRO DE DATOS | Centro de datos | Identifica la solicitud como procedente de un proveedor de alojamiento conocido. Este tipo de tráfico no suele estar asociado a un usuario final real. |
 
+#### Tráfico misceláneo
+
+| **Identificador de marca** | **Nombre de indicador** | **Descripción** |
+|---|---|---|
+| CENTRO DE DATOS | Centro de datos | Identifica la solicitud como procedente de un proveedor de alojamiento conocido. Este tipo de tráfico no suele estar asociado a un usuario final real. |
+| DOUBLEENCODING | Codificación doble | La codificación doble comprueba la técnica de evasión de los caracteres HTML de doble codificación |
+| JSON-ERROR | Error de codificación de JSON | Un cuerpo de solicitud POST, PUT o PATCH que se especifica que contiene JSON dentro del encabezado de solicitud &quot;Content-Type&quot;, pero que contiene errores de análisis de JSON. Esto suele estar relacionado con un error de programación o una solicitud automatizada o maliciosa. |
+| TORNODE | Tráfico de Tor | Tor es un software que oculta la identidad de un usuario. Un pico en el tráfico de Tor puede indicar que un atacante está tratando de ocultar su ubicación. |
+| XML-ERROR | Error de codificación XML | Un cuerpo de solicitud POST, PUT o PATCH que se especifica que contiene XML dentro del encabezado de solicitud &quot;Content-Type&quot;, pero que contiene errores de análisis de XML. Esto suele estar relacionado con un error de programación o una solicitud automatizada o maliciosa. |
 
 ## Consideraciones {#considerations}
 
@@ -282,7 +299,7 @@ A continuación se muestran algunos ejemplos de reglas. Consulte la [sección so
 
 **Ejemplo: 1**
 
-Esta regla bloquea las solicitudes procedentes de **IP 192.168.1.1**:
+Esta regla bloquea las solicitudes que provienen de **IP192.168.1.1**:
 
 ```
 kind: "CDN"
@@ -322,7 +339,7 @@ data:
 
 **Ejemplo 3**
 
-Esta regla bloquea solicitudes en la publicación que contienen el parámetro de consulta `foo`, pero permite todas las solicitudes procedentes de IP 192.168.1.1:
+Esta regla bloquea las solicitudes en publicación que contienen el parámetro de consulta `foo`, pero permite todas las solicitudes procedentes de la dirección IP 192.168.1.1:
 
 ```
 kind: "CDN"
