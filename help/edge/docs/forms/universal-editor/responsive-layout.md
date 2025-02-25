@@ -4,19 +4,20 @@ description: Este artículo explica cómo obtener una vista previa de los formul
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+hidefromtoc: true
+source-git-commit: 0d28009332feccb4552e2cc42d7b1a8da43d579c
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 2%
 
 ---
 
-
 # Modo interactivo en la creación de WYSIWYG
 
 El [Editor universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) le permite obtener una vista previa de Edge Delivery Services Forms con diferentes emuladores para ver el aspecto del formulario durante la creación.
 
 El modo interactivo permite a los desarrolladores diseñar diseños que se adaptan automáticamente a diferentes tamaños de pantalla, incluidos escritorios, tabletas y dispositivos móviles. El editor universal admite emuladores para equipos de escritorio, tabletas y dispositivos móviles. Puede establecer la altura y la anchura según el tamaño de la pantalla y realizar las siguientes acciones:
+
 * Establecer la orientación
 * Especificar la anchura y la altura
 * Cambiar la orientación
@@ -68,6 +69,3 @@ Puede usar el icono **Rotador de pantalla** para alternar entre las orientacione
 ## Ver también
 
 {{universal-editor-see-also}}
-
-
-

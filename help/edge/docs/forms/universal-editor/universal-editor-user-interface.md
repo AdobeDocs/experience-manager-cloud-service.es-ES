@@ -4,8 +4,9 @@ description: Este tutorial le ayuda a ponerse en marcha con la interfaz del edit
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
+hidefromtoc: true
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0d28009332feccb4552e2cc42d7b1a8da43d579c
 workflow-type: tm+mt
 source-wordcount: '1425'
 ht-degree: 0%
@@ -42,7 +43,7 @@ El encabezado de Experience Cloud se encuentra en la parte superior de la consol
 ![Encabezado Experience Cloud de editor universal](/help/edge/docs/forms/universal-editor/assets/universal-editor-experience-manager-header.png)
 
 
-Vamos a comprender cada uno de sus componentes.
+Vamos a entender cada uno de sus componentes.
 
 * **Adobe Experience Cloud**
 
@@ -85,7 +86,7 @@ El icono representa los detalles del autor del formulario, junto con el nombre d
 La barra de herramientas permite desplazarse a otros formularios y editarlos. También les permite publicar o cancelar la publicación del formulario, editar sus propiedades y acceder al editor de reglas.
 ![Barra de herramientas del editor universal](/help/edge/docs/forms/universal-editor/assets/ue-toolbar.png)
 
-Vamos a comprender cada uno de sus componentes.
+Vamos a entender cada uno de sus componentes.
 
 * **Botón de inicio**
 El botón de inicio le permite navegar a la página de inicio del Editor universal. También puede introducir directamente la dirección URL del formulario que desea editar con el editor universal.
@@ -151,7 +152,7 @@ El **Panel de propiedades** se encuentra a la derecha del editor. Muestra los de
 ![panel de propiedades de uso](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png){width=50%,height=50%}
 
 
-Vamos a comprender cada uno de sus componentes.
+Vamos a entender cada uno de sus componentes.
 
 
 * **Modo Propiedades**
@@ -183,7 +184,7 @@ La opción **Árbol de contenido** muestra la jerarquía del formulario. Cuando 
 
 
 * **Personalization**
-La opción **Personalization** configura la configuración para establecer una conexión entre los formularios y Adobe Experience Platform (AEP) que forman parte del ecosistema de Adobe o de aplicaciones externas.
+La opción **Personalization** configura las opciones para establecer una conexión entre los formularios y Adobe Experience Platform (AEP) que forman parte del ecosistema de Adobe o aplicaciones externas.
   ![Personalization](/help/edge/docs/forms/universal-editor/assets/ue-personalizaton.png){width=50%,height=50%}
 
 
