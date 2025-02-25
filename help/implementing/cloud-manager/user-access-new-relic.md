@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: 26a80ce68c5f6eee032ded355a8e5747ad6449a7
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 41%
+source-wordcount: '1809'
+ht-degree: 40%
 
 ---
 
@@ -161,7 +161,7 @@ Si se le agregó como usuario de New Relic One, tal como se describe en [Adminis
 
 1. New Relic le envía un correo electrónico con un vínculo para confirmar la cuenta.
 
-Si completa el proceso de registro y no puede iniciar sesión en su cuenta debido a mensajes de error de correo electrónico o contraseña, registre un ticket de asistencia a través del [Admin Console](https://adminconsole.adobe.com/).
+Si completa el proceso de registro y no puede iniciar sesión en su cuenta debido a mensajes de error de correo electrónico o contraseña, registre un ticket de asistencia a través de [Admin Console](https://adminconsole.adobe.com/).
 
 Si no recibe un correo electrónico de New Relic, haga lo siguiente:
 
@@ -179,19 +179,19 @@ Las siguientes limitaciones se aplican a la adición de usuarios a New Relic One
 
 >[!NOTE]
 >
->Si no se detecta ninguna actividad en la subcuenta de New Relic One durante 90 días o más, el agente de APM se detiene.
+>Si no se detecta ninguna actividad en la subcuenta de New Relic One durante 30 días o más, el agente de APM se detiene.
 >
 >Siga los mismos pasos en la sección [Activar la subcuenta de New Relic One](#activate-sub-account) de este documento para reactivar la subcuenta de New Relic One.
 
-Para obtener más ayuda o instrucciones adicionales sobre las ofertas de New Relic One para su programa de AEM as a Cloud Service AEM, abra un ticket de asistencia a través del [Portal de asistencia técnica de](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
+Para obtener más ayuda o instrucciones adicionales sobre las ofertas de New Relic One para su programa de AEM as a Cloud Service, abra un ticket de asistencia a través del [Portal de asistencia de AEM](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
 
 ## Preguntas frecuentes {#faqs}
 
-+++**¿Qué monitoriza el Adobe con New Relic One?** {#adobe-monitor}
++++**¿Qué monitoriza Adobe con New Relic One?** {#adobe-monitor}
 
 Adobe monitoriza los servicios de autor, publicación y vista previa (cuando están disponibles) de AEM as a Cloud Service de a través del complemento Java de New Relic One. Adobe permite la telemetría y monitorización personalizada de APM New Relic One en entornos de AEM as a Cloud Service que sean de producción y de no producción.
 
-La cuenta de New Relic One se adjunta a una cuenta principal mantenida por Adobe y tiene varias aplicaciones: tres por entorno de AEM as a Cloud Service.
+La cuenta de New Relic One se adjunta a una cuenta principal mantenida por Adobe y tiene varias aplicaciones; tres por entorno de AEM as a Cloud Service.
 
 * Una aplicación para el servicio de creación por entorno
 * Una aplicación para el servicio `Publish` por entorno (incluido Golden Publish)
@@ -201,12 +201,13 @@ Nota:
 
 * Cada aplicación utiliza una clave de licencia.
 * Los entornos de AEM as a Cloud Service solo informan a una cuenta de New Relic One.
-* Las métricas y los eventos de monitorización completos para New Relic One se conservan durante tres meses. &lt;!— CQDOC-22238: actualizado de siete días a tres meses. >
+* Las métricas y los eventos de monitorización completos para New Relic One se conservan durante tres meses.
+
 +++
 
-+++**¿El Adobe envía notificaciones de New Relic One?** {#alerting-new-relic}
++++**¿Adobe envía notificaciones de alerta desde New Relic One?** {#alerting-new-relic}
 
-El Adobe de proporciona acceso a New Relic One únicamente para fines de observación y no lo utiliza para alertas de cliente o alertas operativas internas. Las notificaciones de cualquier incidente se envían usando [perfiles de notificación de usuario](/help/journey-onboarding/notification-profiles.md).
+Adobe proporciona acceso a New Relic One únicamente para fines de observación y no lo utiliza para alertas de cliente o alertas operativas internas. Las notificaciones de cualquier incidente se envían usando [perfiles de notificación de usuario](/help/journey-onboarding/notification-profiles.md).
 +++
 
 +++**¿Quién puede acceder a los datos del servicio en la nube de New Relic One?** {#access-new-relic-cloud}
@@ -225,7 +226,7 @@ New Relic One es la nueva plataforma de observabilidad de New Relic y permite al
 
 New Relic One ofrece a los usuarios la capacidad de buscar en todas las cuentas donde tengan acceso y visualizar los datos de todos los servicios y hosts de un solo vistazo.
 
-La compatibilidad con Adobes supervisa AEM as a Cloud Service con New Relic One y otras herramientas, mientras que sus equipos aún pueden utilizar New Relic para servicios e infraestructura locales. Pueden visualizar los datos tanto de la cuenta de Adobe New Relic One como de las cuentas de New Relic administradas por el cliente.
+La compatibilidad con Adobe supervisa AEM as a Cloud Service con New Relic One y otras herramientas, mientras que sus equipos pueden seguir utilizando New Relic para servicios e infraestructura locales. Pueden visualizar los datos tanto de la cuenta de Adobe New Relic One como de las cuentas de New Relic administradas por el cliente.
 
 >[!NOTE]
 >
@@ -235,5 +236,5 @@ La compatibilidad con Adobes supervisa AEM as a Cloud Service con New Relic One 
 
 +++**El agente de APM para mi cuenta de New Relic One está detenido. ¿Qué sucedió?** {#deactivated}
 
-[Los agentes de APM se detienen](#limitations) si no se detecta ninguna actividad durante 90 días o más. Siga los mismos pasos en la sección [Activar la subcuenta de New Relic One](#activate-sub-account) de este documento para reactivar la subcuenta de New Relic One.
+[Los agentes de APM se detienen](#limitations) si no se detecta ninguna actividad durante 30 días o más. Siga los mismos pasos en la sección [Activar la subcuenta de New Relic One](#activate-sub-account) de este documento para reactivar la subcuenta de New Relic One.
 +++
