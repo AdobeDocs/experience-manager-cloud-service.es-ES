@@ -5,16 +5,16 @@ feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: c88aa13c6bc75c8f9cd624d00ef768290981c840
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '206'
-ht-degree: 23%
+ht-degree: 100%
 
 ---
 
 
 # Notas de la versión 2025.02.17 del editor universal {#release-notes}
 
-Estas son las notas de la versión del editor universal del 17 de febrero de 2025.
+Estas son las notas de la versión del 17 de febrero de 2025 del editor universal.
 
 >[!TIP]
 >
@@ -22,9 +22,9 @@ Estas son las notas de la versión del editor universal del 17 de febrero de 202
 
 ## Novedades {#what-is-new}
 
-* **Publicar para vista previa** - [Al publicar (o cancelar la publicación) su contenido](/help/sites-cloud/authoring/universal-editor/publishing.md) mediante el Editor universal, ahora puede elegir si desea publicar en su [entorno de vista previa](/help/sites-cloud/authoring/sites-console/previewing-content.md) además del entorno de publicación
+* **Publicar para vista previa**. [Al publicar (o cancelar la publicación) su contenido](/help/sites-cloud/authoring/universal-editor/publishing.md) mediante el Editor universal, puede elegir si desea hacerlo en su [entorno de vista previa](/help/sites-cloud/authoring/sites-console/previewing-content.md) además del entorno de publicación
    * Esto permite revisar el contenido antes de publicarlo.
-* **El modelo y el filtro se pueden definir en la definición del componente**. Ahora puede definir qué modelo y filtro usa un componente [en la definición del componente.](/help/implementing/universal-editor/component-definition.md#template)
+* **El modelo y el filtro se pueden definir en la definición del componente**. Ahora puede definir qué modelo y filtro un componente usa [en la definición del componente.](/help/implementing/universal-editor/component-definition.md#template)
    * Esta información se puede mantener de forma centralizada en la definición y no necesita especificarse en la instrumentación.
    * Esto le permite mover componentes entre contenedores.
 * **Los elementos secundarios de los contenedores se consideran implícitamente componentes**. Si [un elemento con `data-aue-resource`](/help/implementing/universal-editor/attributes-types.md#data-properties) se coloca como elemento secundario directo en un contenedor, se considera un componente y se puede mover sin tener que especificar `data-aue-behavior="component"`.

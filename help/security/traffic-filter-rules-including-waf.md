@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: cdf15df0b8b288895db4db0032137c38994f4faf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4215'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -206,7 +206,7 @@ Un grupo de condiciones está compuesto por varias condiciones simples o de grup
 
 **Notas**
 
-* La propiedad de solicitud `clientIp` solo se puede utilizar con los siguientes predicados: `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` también se puede comparar con intervalos de IP cuando se utilizan los predicados `in` y `notIn`. El siguiente ejemplo implementa una condición para evaluar si una IP de cliente está en el intervalo de IP de 192.168.0.0/24 (por ejemplo, de 192.168.0.0 a 192.168.0.255):
+* La propiedad de solicitud `clientIp` solo se puede utilizar con los siguientes predicados: `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` también se puede comparar con intervalos de IP cuando se utilizan los predicados `in` y `notIn`. En el siguiente ejemplo se implementa una condición para evaluar si una IP de cliente está en el rango de IP de 192.168.0.0/24 (o sea desde 192.168.0.0 hasta 192.168.0.255):
 
 ```
 when:
@@ -214,7 +214,7 @@ when:
   in: [ "192.168.0.0/24" ]
 ```
 
-* Adobe recomienda el uso de [regex101](https://regex101.com/) y [Fastly Fiddle](https://fiddle.fastly.dev/) cuando se utiliza una expresión regular. También puede obtener más información sobre cómo administra Fastly la expresión regular en [Documentación de fastly: expresiones regulares en Fastly VCL](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
+* Adobe recomienda el uso de [regex101](https://regex101.com/) y [Fastly Fiddle](https://fiddle.fastly.dev/) cuando se utiliza Regex. También puede obtener más información sobre cómo administra Fastly la expresión regular en [Documentación de fastly: expresiones regulares en Fastly VCL](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
 
 
 ### Estructura de acción {#action-structure}
@@ -239,7 +239,7 @@ La propiedad `wafFlags`, que se puede utilizar en las reglas de filtro de tráfi
 
 | **Identificador de marca** | **Nombre de indicador** | **Descripción** |
 |---|---|---|
-| ATACAR | Atacar | Indicador que identifica las solicitudes que contienen uno o varios de los tipos de ataque enumerados en esa tabla |
+| ATAQUE | Ataque | Indicador que identifica las solicitudes que contienen uno o varios de los tipos de ataque enumerados en esta tabla |
 | ATTACK-FROM-BAD-IP | Ataque desde IP incorrecta | Indicador que identifica las solicitudes procedentes de `BAD-IP` y que contienen uno o varios de los tipos de ataque enumerados en esa tabla |
 | SQLI | Inyección de SQL | La inyección de SQL es el intento de obtener acceso a una aplicación o de obtener información privilegiada ejecutando consultas de base de datos arbitrarias. |
 | PUERTA TRASERA | Puerta trasera | Una señal de puerta trasera es una solicitud que intenta determinar si hay un archivo de puerta trasera común en el sistema. |
@@ -249,17 +249,17 @@ La propiedad `wafFlags`, que se puede utilizar en las reglas de filtro de tráfi
 | TRAVERSAL | Traversal de directorios | Traversal de directorios es el intento de navegar por carpetas privilegiadas a través de un sistema con la esperanza de obtener información confidencial. |
 | USERAGENT | Herramienta de ataque | La herramienta de ataque es el uso de software automatizado para identificar vulnerabilidades de seguridad o para intentar explotar una vulnerabilidad descubierta. |
 | LOG4J-JNDI | Log4J JNDI | Los ataques Log4J JNDI intentan explotar la [vulnerabilidad de Log4Shell](https://en.wikipedia.org/wiki/Log4Shell) presente en las versiones de Log4J anteriores a la versión 2.16.0 |
-| CVE | CVE | Indicador que identifica una CVE. Siempre se combina con un indicador `CVE-<CVE Number>`. Póngase en contacto con Adobe para obtener más información sobre los CVE de los que Adobe le protegerá. |
+| CVE | CVE | Indicador que identifica una CVE. Siempre se combina con un indicador `CVE-<CVE Number>`. Póngase en contacto con Adobe para obtener más información sobre las CVE de las que Adobe le protegerá. |
 
 #### Tráfico sospechoso
 
 | **Identificador de marca** | **Nombre de indicador** | **Descripción** |
 |---|---|---|
 | ABNORMALPATH | Ruta anormal | Ruta anormal indica que la ruta original difiere de la ruta normalizada (por ejemplo, `/foo/./bar` se normaliza a `/foo/bar`) |
-| IP INCORRECTA | IP incorrecta | El indicador para identificar la solicitud proveniente de direcciones IP se identifica como incorrecta, ya sea porque hay fuentes identificadas como malintencionadas (`SANS`, `TORNODE`) o porque WAF las ha identificado como erróneas después de enviar demasiadas solicitudes malintencionadas |
+| BAD-IP | IP incorrecta | El indicador para identificar la solicitud proveniente de direcciones IP se identifica como incorrecta, ya sea porque hay fuentes identificadas como malintencionadas (`SANS`, `TORNODE`) o porque WAF las ha identificado como erróneas después de enviar demasiadas solicitudes malintencionadas |
 | BHH | Encabezados de salto incorrecto | Los encabezados de salto incorrecto indican un intento de introducir HTTP a través de un encabezado Transfer-Encoding (TE) o Content-Length (CL) mal formado o un encabezado TE y CL bien formado |
 | CODEINJECTION | Inyección de código | La inyección de código es el intento de obtener control o dañar un sistema de destino a través de comandos arbitrarios del código de aplicación por medio de la entrada del usuario. |
-| COMPRIMIDO | Compresión detectada | El cuerpo de la solicitud POST está comprimido y no se puede inspeccionar. Por ejemplo, si se especifica un encabezado de solicitud `Content-Encoding: gzip` y el cuerpo de la PUBLICACIÓN no es texto sin formato. |
+| COMPRESSED | Compresión detectada | El cuerpo de la petición POST está comprimido y no se puede inspeccionar. Por ejemplo, si se especifica un encabezado de solicitud `Content-Encoding: gzip` y el cuerpo de POST no es texto sin formato. |
 | RESPONSESPLIT | División de respuesta HTTP | Identifica cuándo se envían los caracteres CRLF como entrada a la aplicación para insertar encabezados en la respuesta HTTP |
 | NOTUTF8 | Codificación no válida | La codificación no válida puede hacer que el servidor traduzca caracteres malintencionados de una solicitud a una respuesta, lo que provoca una denegación de servicio o XSS |
 | MALFORMED-DATA | Datos mal formados en el cuerpo de la solicitud | Un cuerpo de solicitud POST, PUT o PATCH con un formato incorrecto según el encabezado de solicitud &quot;Content-Type&quot;. Por ejemplo, si se especifica un encabezado de solicitud &quot;Content-Type: application/x-www-form-urlencoded&quot; y contiene un cuerpo POST que es json. Esto suele ser un error de programación, una solicitud automatizada o maliciosa. Requiere agente 3.2 o superior. |
@@ -271,7 +271,7 @@ La propiedad `wafFlags`, que se puede utilizar en las reglas de filtro de tráfi
 | PRIVATEFILE | Archivos privados | Los archivos privados suelen ser de naturaleza confidencial, como un archivo `.htaccess` Apache o un archivo de configuración que podría filtrar información confidencial |
 | ESCÁNER | Escáner | Identifica los servicios y herramientas de digitalización más populares |
 
-#### Tráfico misceláneo
+#### Tráfico vario
 
 | **Identificador de marca** | **Nombre de indicador** | **Descripción** |
 |---|---|---|
@@ -299,7 +299,7 @@ A continuación se muestran algunos ejemplos de reglas. Consulte la [sección so
 
 **Ejemplo: 1**
 
-Esta regla bloquea las solicitudes que provienen de **IP192.168.1.1**:
+ Esta regla bloquea las solicitudes procedentes de la **IP192.168.1.1**:
 
 ```
 kind: "CDN"
@@ -339,7 +339,7 @@ data:
 
 **Ejemplo 3**
 
-Esta regla bloquea las solicitudes en publicación que contienen el parámetro de consulta `foo`, pero permite todas las solicitudes procedentes de la dirección IP 192.168.1.1:
+Esta regla bloquea solicitudes en la publicación que contienen el parámetro de consulta `foo`, pero permite todas las solicitudes procedentes de la IP 192.168.1.1:
 
 ```
 kind: "CDN"

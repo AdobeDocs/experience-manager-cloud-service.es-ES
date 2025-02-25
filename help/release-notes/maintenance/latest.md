@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 81e3ce8cdceee37a22e76e74008452f88b6bf003
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '186'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ En la siguiente sección se describen las notas de la versión técnicas actuale
 
 ## Versión 19586 {#19586}
 
-A continuación se resumen las mejoras continuas para la versión de mantenimiento 19586, que se publicó el jueves, 19 de febrero de 2025. La versión de mantenimiento anterior fue la 19567.
+A continuación se resumen las mejoras continuas para la versión de mantenimiento 19586, que se publicó el 19 de febrero de 2025. La versión de mantenimiento anterior fue la 19567.
 
 La activación de funcionalidades 2025.2.0 proporcionará el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
@@ -28,7 +28,7 @@ Ninguna.
 
 ### Problemas corregidos {#fixed-issues-19586}
 
-* SITES-29314: los extremos de GraphQL pueden producir InvalidSchemaException para solicitudes válidas.
+* SITES-29314: los puntos finales de GraphQL pueden producir InvalidSchemaException para solicitudes válidas.
 
 ### Problemas conocidos {#known-issues-19586}
 
