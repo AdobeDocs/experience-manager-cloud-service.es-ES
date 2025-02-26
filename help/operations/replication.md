@@ -4,9 +4,9 @@ description: Obtenga información acerca de la distribución y la resolución de
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 68b21abbc00b6c766fc33bf70e259c8ad9fc8e59
+source-git-commit: 9dac0b63fec56bede7db9331d47ef479b29e67d0
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1711'
 ht-degree: 31%
 
 ---
@@ -96,10 +96,10 @@ Crear un modelo de flujo de trabajo que utilice el paso de proceso `TreeActivati
 
 **Filtros de soporte**
 
-| Nombre | descripción |
+| Nombre | Descripción |
 | ------------- | ------------------------------------------- |
-| onlyModified | Nodos (nuevos y preexistentes) que se modificaron desde la última publicación |
-| onlyActivated | Nodos publicados anteriormente |
+| onlyModified | Nodos: tanto nuevos como preexistentes que se han modificado desde la última publicación |
+| onlyActivated | Nodos: que se publicaron antes de la última publicación |
 
 
 **Reanudar compatibilidad**
