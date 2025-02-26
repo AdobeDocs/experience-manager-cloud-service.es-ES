@@ -4,9 +4,9 @@ description: Si tiene muchos sitios similares que en su mayoría tienen el mismo
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '976'
 ht-degree: 2%
 
 ---
@@ -17,9 +17,9 @@ Si tiene muchos sitios similares que en su mayoría tienen el mismo aspecto y co
 
 ## Un código base para varios sitios {#one-codebase}
 
-AEM De forma predeterminada, la está estrechamente ligada al repositorio de código, que cumple con la mayoría de los casos de uso. Sin embargo, puede tener varios sitios que difieren principalmente en su contenido, pero que podrían aprovechar la misma base de código.
+De forma predeterminada, AEM está estrechamente enlazado con su repositorio de código, que cumple con la mayoría de los casos de uso. Sin embargo, puede tener varios sitios que difieren principalmente en su contenido, pero que podrían aprovechar la misma base de código.
 
-AEM En lugar de crear varios repositorios de GitHub y ejecutar cada sitio desde un repositorio de GitHub dedicado mientras se mantienen sincronizados, admite la ejecución de varios sitios desde el mismo código base.
+En lugar de crear varios repositorios de GitHub y ejecutar cada sitio desde un repositorio de GitHub dedicado mientras se mantienen sincronizados, AEM admite la ejecución de varios sitios desde el mismo código base.
 
 Esta configuración simplificada, que elimina la necesidad de replicación de código, también se conoce como [&quot;repoless&quot;](https://www.aem.live/docs/repoless), porque todos los sitios, excepto el primero, no necesitan un repositorio propio de GitHub.
 
@@ -34,11 +34,11 @@ Para aprovechar esta función, asegúrese de haber hecho lo siguiente.
 * Su sitio ya está completamente configurado al seguir el documento [Guía de introducción para desarrolladores de WYSIWYG Authoring con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 * Está ejecutando AEM as a Cloud Service 2024.08 como mínimo.
 
-También deberá solicitar al Adobe que configure los siguientes elementos por usted. Póngase en contacto con a través del canal del Slack o plantee un problema de asistencia para solicitar el Adobe para realizar estos cambios:
+También deberá solicitar a Adobe que configure los siguientes elementos por usted. Póngase en contacto a través de su canal de Slack o plantee un problema de asistencia para solicitar a Adobe que realice estos cambios:
 
 * Pida que se active el [servicio de configuración de aem.live](https://www.aem.live/docs/config-service-setup#prerequisites) para su entorno y que se haya configurado como administrador.
-* Solicite habilitar la función de reutilización para su programa por Adobe.
-* Pida al Adobe que cree la organización por usted.
+* Solicite habilitar la función de reutilización para su programa mediante Adobe.
+* Pida a Adobe que cree la organización por usted.
 
 ## Activar función de reutilización {#activate}
 
@@ -47,7 +47,7 @@ Existen varios pasos para activar la funcionalidad de reutilización en su proye
 1. [Recuperar token de acceso](#access-token)
 1. [Configurar el servicio de configuración](#config-service)
 1. [Agregar configuración de sitio y cuenta técnica](#access-control)
-1. [AEM Actualizar configuración de la](#update-aem)
+1. [Actualizar configuración de AEM](#update-aem)
 1. [Autenticar sitio](#authenticate-site)
 
 Estos pasos utilizan el sitio `https://wknd.site` como ejemplo. Sustituye a los tuyos adecuadamente.
@@ -56,7 +56,7 @@ Estos pasos utilizan el sitio `https://wknd.site` como ejemplo. Sustituye a los 
 
 Primero necesitará un token de acceso para utilizar el servicio de configuración y configurarlo para el caso de uso de reinicios.
 
-1. Vaya a `https://admin.hlx.page/login` y use la dirección `login_adobe` para iniciar sesión con el proveedor de identidad de Adobe.
+1. Vaya a `https://admin.hlx.page/login` y utilice la dirección `login_adobe` para iniciar sesión con el proveedor de identidad de Adobe.
 1. Se le reenviará a `https://admin.hlx.page/profile`.
 1. Con las herramientas para desarrolladores del explorador, copie el valor de `x-auth-token` desde la cookie de token web JSON que establece la página `admin.hlx.page`.
 
@@ -155,13 +155,13 @@ Dado que ahora utiliza el servicio de configuración, puede quitar `fstab.yaml` 
 >
 >Al usar el servicio de configuración y exponer la asignación de ruta de acceso mediante `config.json`, se omite el archivo `path.json`.
 
-AEM Una vez configurado el servicio de configuración para el uso de repoless, debe usar y proporcionar un `config.json` válido con la asignación de rutas de acceso.
+Una vez configurado AEM para el uso de reprocesamiento, debe usar el servicio de configuración y proporcionar un `config.json` válido con la asignación de rutas.
 
-### AEM Actualizar configuración de la {#update-aem}
+### Actualizar configuración de AEM {#update-aem}
 
-Ahora está listo para realizar los cambios necesarios en los Edge Delivery Services AEM de la aplicación en la.
+Ahora está listo para realizar los cambios necesarios en su Edge Delivery Services en AEM.
 
-1. AEM Inicie sesión en la instancia de autor de la y vaya a **Herramientas** -> **Cloud Service** -> **Configuración de Edge Delivery Services**, seleccione la configuración que se creó automáticamente para su sitio y toque o haga clic en **Propiedades** en la barra de herramientas.
+1. Inicie sesión en la instancia de autor de AEM y vaya a **Herramientas** -> **Cloud Services** -> **Configuración de Edge Delivery Services**, seleccione la configuración que se creó automáticamente para su sitio y toque o haga clic en **Propiedades** en la barra de herramientas.
 1. En la ventana **Configuración de Edge Delivery Services**, cambie el tipo de proyecto a **aem.live con la configuración de repoless** y toque o haga clic en **Guardar y cerrar**.
    ![Configuración de Edge Delivery Services](/help/edge/wysiwyg-authoring/assets/repoless/edge-delivery-services-configuration.png)
 1. Vuelva al sitio mediante el Editor universal y asegúrese de que aún se procesa correctamente.
@@ -176,14 +176,15 @@ Ahora que el sitio base está configurado para el uso de reinicios, puede crear 
 
 * [Administración de varios sitios sin repositorio](/help/edge/wysiwyg-authoring/repoless-msm.md)
 * [Entornos de ensayo y producción sin repositorio](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+* [Autenticación del sitio para la creación de contenido](/help/edge/wysiwyg-authoring/site-authentication.md)
 
 ## Solución de problemas {#troubleshooting}
 
 El problema más común que se ha encontrado después de configurar el caso de uso de las réplicas es que las páginas del editor universal ya no se representan, o que recibe una página en blanco o un mensaje de error genérico de AEM as a Cloud Service. En tales casos:
 
 * Ver el origen de la página representada.
-   * ¿Se ha procesado realmente algo (encabezado de HTML correcto con `scripts.js`, `aem.js` y archivos JSON relacionados con el editor)?
-* AEM Compruebe las excepciones en el recurso `error.log` de la instancia de autor.
+   * ¿Se ha procesado realmente algo (corregir el encabezado de HTML con `scripts.js`, `aem.js` y archivos JSON relacionados con el editor)?
+* Compruebe si hay excepciones en la AEM `error.log` de la instancia de autor.
    * El problema más común es que el componente de página falla con errores 404.
    * `config.json or paths.json` no se puede cargar
    * `component-definition.json`, etc. no se puede cargar

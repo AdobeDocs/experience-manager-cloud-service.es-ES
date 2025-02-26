@@ -4,9 +4,9 @@ description: Aprenda a configurar sitios independientes para los entornos de ens
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '747'
 ht-degree: 2%
 
 ---
@@ -21,12 +21,19 @@ Es posible que desee configurar un sitio para el entorno de producción aparte d
 
 Este documento utiliza el ejemplo típico de entornos de ensayo y producción independientes. Puede crear entornos independientes para cualquier entorno que desee.
 
+## Requisitos  {#requirements}
+
+Para configurar los entornos de fase y producción de repoless, primero debe completar las siguientes tareas:
+
+* Este documento supone que ya ha creado un sitio para su proyecto basado en la [Guía de introducción para desarrolladores de WYSIWYG Authoring with Edge Delivery Services.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+* Ya debe haber [habilitado la característica de reutilización para su proyecto.](/help/edge/wysiwyg-authoring/repoless.md)
+
 ## Configuración {#configuration}
 
 En este documento se describe cómo configurar un sitio de producción independiente para el proyecto utilizando la misma base de código. Se realizan las siguientes suposiciones.
 
 * El sitio de ensayo ya está configurado y ahora desea crear una configuración para el sitio de producción.
-* AEM La estructura de contenido en la creación de los informes de contenido es similar.
+* La estructura de contenido en la creación de AEM es similar.
 * Se utilizarán las mismas asignaciones de ruta para el ensayo y la producción.
 
 En este ejemplo, suponemos que ya se ha creado un sitio de producción para el proyecto llamado wknd, cuyo repositorio de GitHub también se llama wknd.
@@ -34,17 +41,17 @@ En este ejemplo, suponemos que ya se ha creado un sitio de producción para el p
 Para configurar un sitio de producción independiente hay que seguir dos pasos.
 
 1. [Cree nuevos sitios de Edge Delivery Services para su entorno de producción](#create-edge-site).
-1. AEM [Actualice la configuración de nube en el sitio de producción en el que se encuentra el sitio](#update-cloud-configuration).
+1. [Actualice la configuración de nube en AEM para su sitio de producción](#update-cloud-configuration).
 
-### Creación de nuevos sitios de Edge Delivery Services para el entorno de producción {#create-edge-site}
+### Crear nuevos sitios de Edge Delivery Services para el entorno de producción {#create-edge-site}
 
 1. Recupere el token de autenticación y la cuenta técnica para su programa.
    * Consulte el documento **Reutilización del código en varios sitios** para obtener más información sobre cómo [obtener el token de acceso](/help/edge/wysiwyg-authoring/repoless.md#access-token) y la [cuenta técnica](/help/edge/wysiwyg-authoring/repoless.md#access-control) para su programa.
 1. Cree un nuevo sitio realizando la siguiente llamada al servicio de configuración. Tenga en cuenta:
-   * El nombre del proyecto en la dirección URL del POST debe ser el nuevo nombre del sitio que está creando. En este ejemplo, es `wknd-prod`.
+   * El nombre del proyecto en la URL de POST debe ser el nuevo nombre del sitio que está creando. En este ejemplo, es `wknd-prod`.
    * La configuración de `code` debe ser la misma que utilizó para la creación inicial del proyecto.
    * `content` > `source` > `url` debe adaptarse al nombre del nuevo sitio que está creando. En este ejemplo, es `wknd-prod`.
-   * Es decir, el nombre del sitio en la dirección URL del POST y `content` > `source` > `url` deben ser iguales.
+   * Es decir, el nombre del sitio en la URL de POST y `content` > `source` > `url` deben ser iguales.
    * Adapte el bloque `admin` para definir los usuarios que deben tener acceso administrativo completo al sitio.
       * Es una matriz de direcciones de correo electrónico.
       * Se puede usar el comodín `*`.
@@ -108,11 +115,11 @@ Para configurar un sitio de producción independiente hay que seguir dos pasos.
 
 Compruebe que la configuración pública del nuevo sitio funcione llamando a `https://main--wknd-prod--<your-github-org>.aem.page/config.json` y verificando el contenido del JSON devuelto.
 
-### AEM Actualización de las configuraciones de nube en la de su sitio de producción {#update-cloud-configuration}
+### Actualizar las configuraciones de nube en AEM para el sitio de producción {#update-cloud-configuration}
 
-AEM El sitio de producción debe estar configurado para usar el nuevo sitio de Edge Delivery que creó en la sección anterior para un sitio de producción dedicado. En este ejemplo, el contenido bajo `/content/wknd` en su entorno de producción necesita saber cómo usar el sitio `wknd-prod` que creó.
+El AEM de producción debe configurarse para utilizar los nuevos sitios de Edge Delivery que creó en la sección anterior para un sitio de producción dedicado. En este ejemplo, el contenido bajo `/content/wknd` en su entorno de producción necesita saber cómo usar el sitio `wknd-prod` que creó.
 
-1. AEM Inicie sesión en la instancia de producción de y vaya a **Herramientas** -> **Cloud Service** -> **Configuración de Edge Delivery Services**.
+1. Inicie sesión en la instancia de producción de AEM y vaya a **Herramientas** -> **Cloud Services** -> **Configuración de Edge Delivery Services**.
 1. Seleccione la configuración que se creó automáticamente para su proyecto.
 1. Pulse o haga clic en **Propiedades** en la barra de herramientas.
 1. En la ventana **Configuración de Edge Delivery Services**:
@@ -125,7 +132,7 @@ AEM El sitio de producción debe estar configurado para usar el nuevo sitio de E
 
 Ahora que ha realizado todos los cambios de configuración necesarios, compruebe que todo funciona según lo esperado.
 
-1. AEM Inicie sesión en la instancia de creación de producción de la.
+1. Inicie sesión en la instancia de creación de producción de AEM.
 1. Vaya a la consola **Sitios**. Para ello, vaya a **Navegación** -> **Sitios**.
 1. Seleccione una página del sitio.
 1. Toque o haga clic en **Editar** en la barra de herramientas.

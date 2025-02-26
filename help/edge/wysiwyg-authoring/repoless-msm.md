@@ -4,9 +4,9 @@ description: Conozca las recomendaciones de prácticas recomendadas sobre cómo 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1260'
 ht-degree: 2%
 
 ---
@@ -19,11 +19,11 @@ Conozca las recomendaciones de prácticas recomendadas sobre cómo configurar un
 
 [Administrador de varios sitios (MSM)](/help/sites-cloud/administering/msm/overview.md) y sus características de Live Copy le permiten usar el mismo contenido del sitio en varias ubicaciones, a la vez que permiten variaciones. Puede crear contenido una vez y crear Live Copies. MSM mantiene relaciones activas entre el contenido de origen y sus Live Copies para que, al cambiar el contenido de origen, se puedan sincronizar el origen y las Live Copies.
 
-Puede utilizar MSM para crear una estructura de contenido completa para su marca en diferentes configuraciones regionales e idiomas, creando el contenido de forma centralizada. Los Edge Delivery Services pueden entregar los sitios localizados, aprovechando una base de código central.
+Puede utilizar MSM para crear una estructura de contenido completa para su marca en diferentes configuraciones regionales e idiomas, creando el contenido de forma centralizada. Los sitios localizados se pueden entregar mediante Edge Delivery Services, aprovechando una base de código central.
 
 ## Requisitos  {#requirements}
 
-Para configurar MSM en un caso de uso de reutilización, primero debe completar una serie de tareas.
+Para configurar MSM en un caso de uso de repoless, primero debe completar las siguientes tareas:
 
 * Este documento supone que ya ha creado un sitio para su proyecto basado en la guía de introducción para desarrolladores de [para la creación de WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 * Ya debe haber [habilitado la característica de reutilización para su proyecto](/help/edge/wysiwyg-authoring/repoless.md).
@@ -55,13 +55,13 @@ El contenido de `language-masters` es la fuente de Live Copies para los sitios l
 
 Existen varios pasos para configurar el caso de uso de las réplicas de MSM.
 
-1. AEM [Actualizar configuraciones del sitio de la](#update-aem-configurations).
+1. [Actualizar configuraciones del sitio de AEM](#update-aem-configurations).
 1. [Cree nuevos sitios de Edge Delivery Services para las páginas localizadas](#create-edge-sites).
-1. AEM [Actualice la configuración de nube en la configuración de la nube para sus sitios localizados](#update-cloud-configurations).
+1. [Actualice la configuración de nube en AEM para sus sitios localizados](#update-cloud-configurations).
 
-### AEM Actualizar configuraciones del sitio {#update-aem-configurations}
+### Actualizar configuraciones del sitio de AEM {#update-aem-configurations}
 
-[Configuraciones](/help/implementing/developing/introduction/configurations.md) se puede considerar como espacios de trabajo que se pueden usar para recopilar grupos de configuraciones y su contenido asociado con fines organizativos. AEM Cuando crea un sitio en la, se crea automáticamente una configuración para él.
+[Configuraciones](/help/implementing/developing/introduction/configurations.md) se puede considerar como espacios de trabajo que se pueden usar para recopilar grupos de configuraciones y su contenido asociado con fines organizativos. Al crear un sitio en AEM, se crea automáticamente una configuración para él.
 
 Por lo general, desea compartir determinado contenido entre sitios, como:
 
@@ -78,7 +78,7 @@ Puede crear configuraciones adicionales para facilitar este uso compartido. En e
 
 Es decir, tendrá una configuración para la raíz del contenido de la marca wknd (`/content/wknd`) utilizado por los modelos y una configuración utilizada por cada sitio localizado (Suiza y Alemania).
 
-1. AEM Inicie sesión en la instancia de creación de la.
+1. Inicie sesión en la instancia de creación de AEM.
 1. Vaya a **Explorador de configuración**. Para ello, vaya a **Herramientas** -> **General** -> **Explorador de configuración**.
 1. Seleccione la configuración que se creó automáticamente para su proyecto (en este caso wknd) y, a continuación, toque o haga clic en **Crear** en la barra de herramientas.
 1. En el cuadro de diálogo **Crear configuración**, proporcione un **Nombre** descriptivo para su sitio localizado (como `Switzerland`) y para el **Título** use el mismo título del tamaño localizado (en este caso `ch`).
@@ -89,7 +89,7 @@ Cree configuraciones para cada sitio localizado que necesite. En el caso de wknd
 
 Una vez creadas las configuraciones, debe asegurarse de que los sitios localizados las utilicen.
 
-1. AEM Inicie sesión en la instancia de creación de la.
+1. Inicie sesión en la instancia de creación de AEM.
 1. Vaya a la consola **Sitios**. Para ello, vaya a **Navegación** -> **Sitios**.
 1. Seleccione el sitio localizado como `Switzerland`.
 1. Pulse o haga clic en **Propiedades** en la barra de herramientas.
@@ -101,17 +101,17 @@ Asigne las configuraciones respectivas a las ubicaciones localizadas adicionales
 
 ### Creación de nuevos sitios de Edge Delivery Services para las páginas localizadas {#create-edge-sites}
 
-Para conectar más sitios a Edge Delivery Services AEM para una configuración de sitio en varias regiones y varios idiomas, debe configurar un nuevo sitio de aem.live para cada uno de los sitios de MSM de la. AEM Hay una relación 1:1 entre los sitios de MSM y los sitios de aem.live con un repositorio de Git compartido y una base de código.
+Para conectar más sitios a Edge Delivery Services para una configuración de sitio en varias regiones y varios idiomas, debe configurar un nuevo sitio aem.live para cada uno de los sitios MSM de AEM. Existe una relación 1:1 entre los sitios de MSM de AEM y los sitios de aem.live con un repositorio de Git compartido y una base de código.
 
-AEM Para este ejemplo, crearemos el sitio `wknd-ch` para la presencia suiza de wknd, cuyo contenido localizado se encuentra en la ruta de acceso de la `/content/wknd/ch`.
+Para este ejemplo, crearemos el sitio `wknd-ch` para la presencia suiza de wknd, cuyo contenido localizado se encuentra en la ruta de AEM `/content/wknd/ch`.
 
 1. Recupere el token de autenticación y la cuenta técnica para su programa.
    * Consulte el documento **Reutilización del código en varios sitios** para obtener más información sobre cómo [obtener el token de acceso](/help/edge/wysiwyg-authoring/repoless.md#access-token) y la [cuenta técnica](/help/edge/wysiwyg-authoring/repoless.md#access-control) para su programa.
 1. Cree un nuevo sitio realizando la siguiente llamada al servicio de configuración. Tenga en cuenta:
-   * El nombre del proyecto en la dirección URL del POST debe ser el nuevo nombre del sitio que está creando. En este ejemplo, es `wknd-ch`.
+   * El nombre del proyecto en la URL de POST debe ser el nuevo nombre del sitio que está creando. En este ejemplo, es `wknd-ch`.
    * La configuración de `code` debe ser la misma que utilizó para la creación inicial del proyecto.
    * `content` > `source` > `url` debe adaptarse al nombre del nuevo sitio que está creando. En este ejemplo, es `wknd-ch`.
-   * Es decir, el nombre del sitio en la dirección URL del POST y `content` > `source` > `url` deben ser iguales.
+   * Es decir, el nombre del sitio en la URL de POST y `content` > `source` > `url` deben ser iguales.
    * Adapte el bloque `admin` para definir los usuarios que deben tener acceso administrativo completo al sitio.
       * Es una matriz de direcciones de correo electrónico.
       * Se puede usar el comodín `*`.
@@ -177,11 +177,11 @@ AEM Para este ejemplo, crearemos el sitio `wknd-ch` para la presencia suiza de w
 
 Repita los pasos para crear sitios localizados adicionales. En el caso de wknd, también deberá crear un sitio `wknd-de` para la presencia alemana.
 
-### AEM Actualizar las configuraciones de nube en la para las páginas localizadas {#update-cloud-configurations}
+### Actualizar las configuraciones de nube en AEM para las páginas localizadas {#update-cloud-configurations}
 
-AEM Sus páginas en la lista de distribución deben estar configuradas para utilizar los nuevos sitios de Edge Delivery que creó en la sección anterior para su presencia localizada. En este ejemplo, el contenido bajo `/content/wknd/ch` necesita saber cómo usar el sitio `wknd-ch` que creó. Del mismo modo, el contenido de `/content/wknd/de` debe utilizar el sitio `wknd-de`.
+Las páginas de AEM deben configurarse para que utilicen los nuevos sitios de Edge Delivery que creó en la sección anterior para su presencia localizada. En este ejemplo, el contenido bajo `/content/wknd/ch` necesita saber cómo usar el sitio `wknd-ch` que creó. Del mismo modo, el contenido de `/content/wknd/de` debe utilizar el sitio `wknd-de`.
 
-1. AEM Inicie sesión en la instancia de autor de la y vaya a **Herramientas** -> **Cloud Service** -> **Configuración de Edge Delivery Services**.
+1. Inicie sesión en la instancia de autor de AEM y vaya a **Herramientas** -> **Cloud Services** -> **Configuración de Edge Delivery Services**.
 1. Seleccione la configuración que se creó automáticamente para el proyecto y, a continuación, la carpeta que se creó para la página localizada. En este caso, sería Suiza (`ch`).
 1. Toque o haga clic en **Crear** > **Configuración** en la barra de herramientas.
 1. En la ventana **Configuración de Edge Delivery Services**:
@@ -194,7 +194,7 @@ AEM Sus páginas en la lista de distribución deben estar configuradas para util
 
 Ahora que ha realizado todos los cambios de configuración necesarios, compruebe que todo funciona según lo esperado.
 
-1. AEM Inicie sesión en la instancia de creación de la.
+1. Inicie sesión en la instancia de creación de AEM.
 1. Vaya a la consola **Sitios**. Para ello, vaya a **Navegación** -> **Sitios**.
 1. Seleccione el sitio localizado como `Switzerland`.
 1. Toque o haga clic en **Editar** en la barra de herramientas.
