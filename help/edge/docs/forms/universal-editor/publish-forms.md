@@ -3,17 +3,18 @@ title: Publique AEM Forms para Edge Delivery Services.
 description: Publique sus formularios Edge Delivery Services de forma rápida y sencilla.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
 
 # Publicación del formulario adaptable en Edge Delivery Services
+
+<span class="preview"> Esta característica está disponible a través del programa de acceso anticipado. Para solicitar acceso, envía un correo electrónico desde tu dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> con tu nombre de organización de GitHub y el nombre del repositorio. Por ejemplo, si la dirección URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es adobe y el nombre del repositorio es abc.</span>
+
 
 Cuando el formulario esté terminado y listo para usarse, puede publicarlo para que sus clientes puedan acceder a él para recopilar y enviar datos. La publicación garantiza que el formulario esté disponible en Edge Delivery, lo que permite a los usuarios interactuar con él sin problemas. Este proceso permite a los clientes rellenar y enviar el formulario en tiempo real, lo que garantiza una captura de datos eficiente y un procesamiento optimizado.
 
@@ -37,7 +38,7 @@ Puede publicar cualquier **formulario adaptable basado en EDS** en Edge Delivery
 1. Vuelva a hacer clic en **Publicar** y aparecerá una ventana emergente de confirmación que indica que el formulario se ha publicado.
    ![Éxito de publicación](/help/forms/assets/publish-success.png)
 
-1. Para comprobar el estado de publicación del formulario, haga clic de nuevo en **Publicar**.
+1. Para comprobar el estado de publicación del formulario, vuelva a hacer clic en **Publicar**.
    ![Estado de publicación](/help/forms/assets/publish-status.png)
 
 1. Para **cancelar la publicación** de un formulario, ábralo en el editor, haz clic en el menú de tres puntos en la esquina superior derecha y haz clic en **Cancelar la publicación**.

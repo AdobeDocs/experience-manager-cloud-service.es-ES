@@ -3,18 +3,19 @@ title: Cómo utilizar el editor de reglas para aplicar reglas a los campos de fo
 description: El editor de reglas de formularios adaptables permite añadir un comportamiento dinámico y generar una lógica compleja en los formularios sin codificación ni scripts.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '2166'
-ht-degree: 76%
+source-wordcount: '2214'
+ht-degree: 73%
 
 ---
 
 
 # Introducción al Editor de reglas en la creación de WYSIWYG
+
+<span class="preview"> Esta característica está disponible a través del programa de acceso anticipado. Para solicitar acceso, envía un correo electrónico desde tu dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> con tu nombre de organización de GitHub y el nombre del repositorio. Por ejemplo, si la dirección URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es adobe y el nombre del repositorio es abc.</span>
+
 
 Puede añadir el comportamiento del formulario dinámico mediante el Editor de reglas, que le permite crear reglas. Estas reglas habilitan la visibilidad de campo condicional, automatizan los cálculos en función de los datos introducidos por el usuario y mejoran la experiencia general del usuario. Al optimizar el proceso de rellenado de formularios, el Editor de reglas garantiza tanto la precisión como la eficacia.
 
@@ -185,7 +186,7 @@ Ahora, vamos a explorar cómo [escribir reglas en el Editor de reglas](#write-ru
 
 ## Escribir reglas
 
-Para comprender cómo escribir reglas en el Editor de reglas visual, veamos un ejemplo sencillo de un formulario de cálculo de impuestos:
+Para comprender cómo escribir reglas en el Editor de reglas visuales, veamos un ejemplo sencillo de un formulario de cálculo de impuestos:
 
 ![Ejemplo del Editor de reglas](/help/edge/docs/forms/assets/rule-editor-1.png)
 
