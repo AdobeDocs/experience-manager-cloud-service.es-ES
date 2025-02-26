@@ -5,23 +5,24 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: cb9707e4f53e32ed6e5aec244b1ef2240fcf376c
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 12%
+source-wordcount: '1098'
+ht-degree: 11%
 
 ---
 
 
 # Creación de programas de producción {#create-production-program}
 
-AEM Un programa de producción es para usuarios familiarizados con el uso de la y Cloud Manager, listos para escribir, generar y probar código, con el objetivo de implementarlo para gestionar el tráfico en directo.
+Un programa de producción es para usuarios familiarizados con Adobe Experience Manager (AEM) y Cloud Manager, listos para escribir, generar y probar código, con el objetivo de implementarlo para gestionar el tráfico en directo.
 
 Obtenga más información acerca de los tipos de programas en el documento [Explicación de los tipos de programas y programas](program-types.md).
 
 ## Creación de un programa de producción {#create}
 
-Según los derechos de su organización, es posible que vea [opciones adicionales](#options) al agregar su programa.
+Según los derechos de su organización, puede ver opciones de programa de producción adicionales al agregar su programa.
+Ver [opciones adicionales del programa de producción](#options).
 
 **Para crear un programa de producción:**
 
@@ -49,7 +50,7 @@ Según los derechos de su organización, es posible que vea [opciones adicionale
 
    * Si tiene dudas sobre si necesita uno o más programas para las distintas soluciones disponibles, seleccione la que le interese. Si desea activar soluciones adicionales, [puede editar el programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) más tarde. Consulte el [Documento de introducción a los programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) para conocer más recomendaciones sobre la configuración del programa.
    * Se requiere al menos una solución para la creación del programa.
-   * Seleccione **Edge Deliver Services** para una solución de CDN totalmente administrada que optimice las experiencias digitales. Ver [Acerca del uso de Edge Delivery Services para entregar el proyecto de Cloud Manager](#edge-overview)
+   * Seleccione **Edge Deliver Services** para una solución de CDN totalmente administrada que optimice las experiencias digitales. Ver [Acerca del uso de Edge Delivery Services para entregar el proyecto Cloud Manager](#edge-overview)
    * Si seleccionó la opción **[Habilitar seguridad mejorada](#security)**, solo podrá seleccionar tantas soluciones para las que los derechos HIPAA estén disponibles.
 
      ![Seleccionar soluciones](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
@@ -73,7 +74,7 @@ Según los derechos de su organización, es posible que vea [opciones adicionale
 
 ## Opciones adicionales del programa de producción {#options}
 
-Según los derechos disponibles para su organización, puede tener opciones adicionales disponibles al crear un programa de producción.
+Según los derechos disponibles para su organización, puede tener las siguientes opciones adicionales disponibles al crear un programa de producción.
 
 ### Seguridad {#security}
 
@@ -83,7 +84,7 @@ Si tiene los derechos necesarios, la ficha **Security** se muestra como la prime
 
 La pestaña **Security** proporciona las opciones para activar **HIPAA**, **Protección WAF-DDOS** o ambas para tu programa de producción.
 
-Adobe Compatible con HIPAA y WAF-DDOS (cortafuegos de aplicaciones web - denegación de servicio distribuida) facilita la seguridad basada en la nube como parte de un enfoque de varios niveles para la protección contra vulnerabilidades.
+Compatible con HIPAA de Adobe y WAF-DDOS (cortafuegos de aplicaciones web - denegación de servicio distribuida) facilita la seguridad basada en la nube como parte de un enfoque de varios niveles para la protección contra vulnerabilidades.
 
 * **HIPAA**: esta opción habilita la implementación de la solución compatible con HIPPA de Adobe.
    * [Más información](https://www.adobe.com/trust/compliance/hipaa-ready.html) acerca de la implementación de la solución compatible con HIPAA de Adobe.
@@ -98,23 +99,25 @@ Si tiene los derechos necesarios, la ficha **SLA** se muestra como la segunda o 
 
 ![Opciones de SLA](assets/create-production-program-sla.png)
 
-AEM Sites y Forms ofrecen un 99,9 % de service level agreement estándar (SLA). La opción **99,99% de Service level agreement** habilita un porcentaje de tiempo de actividad mínimo del 99,99% para los entornos de producción de Sites o Forms.
+Sites y Forms ofrecen un 99,9 % de service level agreement estándar (SLA). La opción **99,99% de Service level agreement** garantiza un tiempo de actividad mínimo del 99,99% para los entornos de producción, ya sea para Sites, Forms, Edge Delivery Services o los tres.
 
-El 99,99 % de SLA ofrece beneficios que incluyen una mayor disponibilidad y una menor latencia, y requiere que se aplique una [región de publicación adicional](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) al entorno de producción en el programa.
+El 99,99 % de SLA ofrece ventajas que incluyen una mayor disponibilidad y una menor latencia.
 
-Cuando se cumplan los [requisitos](#sla-requirements) para habilitar el 99,99 % de SLA, debe ejecutar una [canalización de pila completa](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) para activarla.
+Para los programas de Sites y Forms, el 99,99 % de SLA requiere que se aplique una [región de publicación adicional](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) al entorno de producción en el programa. Cuando se cumplan los [requisitos](#sla-requirements) para habilitar el 99,99 % de SLA, debe ejecutar una [canalización de pila completa](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) para activarla.
+
+Para Edge Delivery Services, no hay *ningún* requisito aparte de configurar la licencia de SLA al 99,99% en el programa.
 
 #### Requisitos para SLA al 99,99 % {#sla-requirements}
 
-Más allá de los derechos requeridos, el 99,99 % de SLA tiene requisitos adicionales para su uso.
+Además de los derechos requeridos, el uso del 99,99 % de SLA para sitios o programas de Forms incluye los siguientes requisitos adicionales:
 
 * La organización debe tener un 99,99 % de SLA y derechos de región de publicación adicionales disponibles al aplicar un 99,99 % de SLA al programa.
 * Cloud Manager comprueba que hay disponible un derecho de [región de publicación adicional](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) sin usar antes de aplicar el 99,99 % de SLA al programa.
 * Al editar un programa, si ya contiene un entorno de producción con al menos una región de publicación adicional, Cloud Manager solo comprueba la disponibilidad de un derecho de SLA del 99,99 %.
 * Para la activación del 99,99 % de SLA y los informes, se debe haber creado el [entorno de producción/ensayo](/help/implementing/cloud-manager/manage-environments.md#adding-environments) y se debe haber aplicado al menos una región de publicación adicional en el entorno de producción/ensayo.
-   * Si usa [red avanzada](/help/security/configuring-advanced-networking.md), asegúrese de comprobar el documento [Agregar varias regiones de Publish a un nuevo entorno](/help/implementing/cloud-manager/manage-environments.md#adding-regions) para obtener recomendaciones con el fin de mantener la conectividad si se produce un error regional.
-* Al menos una región de publicación adicional debe permanecer en el programa SLA al 99,99 %. Los usuarios no pueden eliminar la última región de publicación adicional de su programa de SLA al 99,99 %.
-* 99,99% SLA es compatible con programas de producción que tienen activada la solución Sites o Forms.
+   * Si usa [red avanzada](/help/security/configuring-advanced-networking.md), asegúrese de comprobar el documento [Agregar varias regiones de publicación a un nuevo entorno](/help/implementing/cloud-manager/manage-environments.md#adding-regions) para ver las recomendaciones, de modo que se mantenga la conectividad si se produce un error regional.
+* El programa SLA al 99,99 % siempre debe incluir al menos una región de publicación adicional. Los usuarios no pueden eliminar la última región de publicación adicional restante del programa.
+* Su SLA al 99,99 % es compatible con programas de producción que tengan activada la solución Sites o Forms.
 * Ejecute una [canalización de pila completa](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) para activar o, al editar un programa, desactivar el SLA 99,99%.
 
 ## Acceso a su programa {#accessing}
