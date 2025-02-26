@@ -4,10 +4,10 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 81e3ce8cdceee37a22e76e74008452f88b6bf003
-workflow-type: ht
-source-wordcount: '186'
-ht-degree: 100%
+source-git-commit: 6de7743992e65225d557775cbedde0ae3889b2c3
+workflow-type: tm+mt
+source-wordcount: '189'
+ht-degree: 84%
 
 ---
 
@@ -16,33 +16,33 @@ ht-degree: 100%
 
 En la siguiente sección se describen las notas de la versión técnicas actuales sobre el mantenimiento de Experience Manager as a Cloud Service.
 
-## Versión 19586 {#19586}
+## Versión 19687 {#19687}
 
-A continuación se resumen las mejoras continuas para la versión de mantenimiento 19586, que se publicó el 19 de febrero de 2025. La versión de mantenimiento anterior fue la 19567.
+A continuación se resumen las mejoras continuas para la versión de mantenimiento 19687 , que se publicó el 26 de febrero de 2025. La versión de mantenimiento anterior fue la 19586.
 
 La activación de funcionalidades 2025.2.0 proporcionará el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
-### Mejoras {#enhancements-19586}
+### Mejoras {#enhancements-19687}
 
 Ninguna.
 
-### Problemas corregidos {#fixed-issues-19586}
+### Problemas corregidos {#fixed-issues-19687}
 
-* SITES-29314: los puntos finales de GraphQL pueden producir InvalidSchemaException para solicitudes válidas.
+* SKYOPS-97524: el estado de alternancia de características puede ser incorrecto y afectar intermitentemente a varias funciones de AEM.
 
-### Problemas conocidos {#known-issues-19586}
+### Problemas conocidos {#known-issues-19687}
 
 Ninguna.
 
-### Características y API obsoletas {#deprecated-19586}
+### Características y API obsoletas {#deprecated-19687}
 
 Las funciones y API obsoletas y eliminadas de AEM as a Cloud Service se detallan en el documento [Funciones y API obsoletas y eliminadas](/help/release-notes/deprecated-removed-features.md).
 
-### Correcciones de seguridad {#security-19586}
+### Correcciones de seguridad {#security-19687}
 
 Ninguna.
 
-### Tecnologías integradas {#embedded-tech-19586}
+### Tecnologías integradas {#embedded-tech-19687}
 
 | Tecnología | Versión | Vínculo |
 |---|--------------|-------------------------------------------------------------------------------------------------------------------|
