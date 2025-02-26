@@ -4,16 +4,16 @@ description: Obtenga información acerca de la distribución y la resolución de
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 4e57908ceebc820b64ce0ec5f8e5ba01ee6f5eb2
+source-git-commit: 68b21abbc00b6c766fc33bf70e259c8ad9fc8e59
 workflow-type: tm+mt
-source-wordcount: '1701'
+source-wordcount: '1704'
 ht-degree: 31%
 
 ---
 
 # Replicación {#replication}
 
-Adobe Experience Manager as a Cloud Service usa la capacidad [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) para mover el contenido que se va a replicar a un servicio de canalización que se ejecute en Adobe Developer AEM que esté fuera del tiempo de ejecución de la.
+Adobe Experience Manager as a Cloud Service usa la capacidad [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) para mover el contenido que se va a replicar a un servicio de canalización que se ejecute en Adobe Developer que esté fuera del tiempo de ejecución de AEM.
 
 >[!NOTE]
 >
@@ -44,9 +44,9 @@ Para realizar la replicación automática de esta característica, habilite **Re
 
 ### Administrar publicación     {#manage-publication}
 
-Administrar publicación ofrece más opciones que Quick Publish, pues permite incluir páginas secundarias, personalizar las referencias e iniciar cualquier flujo de trabajo aplicable, además de poder publicar más adelante.
+Administrar publicación ofrece más opciones que Publicación rápida, pues permite incluir páginas secundarias, personalizar las referencias e iniciar cualquier flujo de trabajo aplicable, además de poder publicar más adelante.
 
-Si se incluyen los elementos secundarios de una carpeta para la opción &quot;publicar más tarde&quot;, se invoca el flujo de trabajo del árbol de contenido de Publish que se describe en este artículo.
+Si se incluyen los elementos secundarios de una carpeta para la opción &quot;publicar más tarde&quot;, se invoca el flujo de trabajo Publicar árbol de contenido, descrito en este artículo.
 
 Puede encontrar información más detallada sobre Administrar publicación en la [Documentación de aspectos básicos de la publicación](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
 
@@ -98,7 +98,7 @@ Crear un modelo de flujo de trabajo que utilice el paso de proceso `TreeActivati
 
 | Nombre | descripción |
 | ------------- | ------------------------------------------- |
-| onlyModified | Nodos modificados desde la última publicación |
+| onlyModified | Nodos (nuevos y preexistentes) que se modificaron desde la última publicación |
 | onlyActivated | Nodos publicados anteriormente |
 
 
@@ -131,7 +131,7 @@ El flujo de trabajo procesa el contenido en fragmentos, cada uno de los cuales r
 
 Puede activar una replicación de árbol seleccionando **Herramientas - Flujo de trabajo - Modelos** y copiando el modelo de flujo de trabajo integrado **Árbol de contenido de publicación**, como se muestra a continuación:
 
-![Tarjeta de flujo de trabajo del árbol de contenido de Publish](/help/operations/assets/publishcontenttreeworkflow.png)
+![La tarjeta de flujo de trabajo para publicar árbol de contenido](/help/operations/assets/publishcontenttreeworkflow.png)
 
 No invoque el modelo original. En su lugar, asegúrese de copiar primero el modelo e invocar esa copia.
 
@@ -271,7 +271,7 @@ El tamaño del contenido transmitido por llamada de replicación no debe superar
 
 Para solucionar problemas de replicación, vaya a las colas de replicación en la interfaz de usuario web del servicio de autor de AEM:
 
-1. AEM En el menú Inicio de la, vaya a **Herramientas** > **Implementación** > **Distribución**
+1. En el menú Inicio de AEM, vaya a **Herramientas** > **Implementación** > **Distribución**
 1. Seleccione la tarjeta **publicar**
 
    ![Estado](assets/publish-status.png "Estado")
@@ -282,6 +282,6 @@ Para solucionar problemas de replicación, vaya a las colas de replicación en l
 
 ![Registros](assets/publish-logs.png "Registros")
 
-AEM Si no se ha podido publicar el contenido, toda la publicación se revierte desde el servicio de Publish de.
+Si no se pudo publicar el contenido, toda la publicación se revierte desde el servicio de publicación de AEM.
 
 En ese caso, la cola principal editable muestra un estado rojo y debe revisarse para identificar qué elementos provocaron la cancelación de la publicación. Al hacer clic en esa cola, se muestran los elementos pendientes, desde los cuales se puede borrar un solo elemento o todos los elementos si es necesario.
