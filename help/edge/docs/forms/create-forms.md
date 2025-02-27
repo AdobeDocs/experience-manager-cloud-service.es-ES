@@ -4,10 +4,10 @@ description: 'Elabore formularios perfectos, ¡y rápido! ⚡ Creación de docum
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 86%
+source-wordcount: '781'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ Estos formularios envían datos directamente a un archivo de Microsoft Excel o G
 
 Antes de comenzar, asegúrese de haber completado los siguientes pasos:
 
-* AEM Configure un [proyecto de con la plantilla de AEM Forms](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [agregó el bloque de Forms AEM adaptable al proyecto de GitHub existente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) y clone el repositorio de GitHub correspondiente en el equipo local.
+* Configure un [proyecto de AEM usando el bloque de formularios adaptables añadido](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [del elemento repetitivo de AEM Forms al proyecto de AEM existente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) y clone el repositorio de GitHub correspondiente en su equipo local.
 <!--In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]`.  -->
 * Asegúrese de tener acceso a Google Sheets o a Microsoft SharePoint. Para configurar Microsoft SharePoint como fuente de contenido, consulte [Uso de SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
@@ -64,7 +64,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 En lugar de navegar por procesos complejos, la creación de un formulario se puede lograr fácilmente con una hoja de cálculo. Puede definir las filas y columnas que componen la estructura del formulario. Cada fila representa un [campo de formulario](/help/edge/docs/forms/form-components.md#available-components) individual y los encabezados de columna definen las [propiedades de campo](/help/edge/docs/forms/form-components.md#components-properties) correspondientes.
 
-Por ejemplo, vea la siguiente hoja de cálculo en la que las filas describen los campos de una hoja de cálculo [query](/help/edge/assets/enquiry.xlsx) y los encabezados de columna definen sus propiedades:
+Por ejemplo, considere la siguiente hoja de cálculo en la que las filas describen los campos de una hoja de cálculo de formulario de [consulta](/help/edge/assets/enquiry.xlsx) y los encabezados de columna definen sus propiedades:
 
 ![Hoja de cálculo de consulta](/help/edge/assets/enquiry-form-spreadsheet.png)
 
@@ -78,11 +78,11 @@ Para continuar con la creación del formulario, haga lo siguiente:
 
 1. Asegúrese de que la hoja se comparte con el usuario de AEM correspondiente (por ejemplo, `forms@adobe.com`) [según las configuraciones especificadas para su proyecto](https://www.aem.live/docs/setup-customer-sharepoint). Conceda al usuario permiso de edición de la hoja.
 
-1. Abra la hoja de cálculo creada y cambie el nombre de la hoja predeterminada a shared-aem.
+1. Abra la hoja de cálculo creada y cambie el nombre de la hoja predeterminada a “shared-aem”.
 
    ![cambie el nombre de la hoja predeterminada a “shared-default”](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. Para agregar los campos del formulario, inserte filas y encabezados de columna en la hoja &quot;shared-aem&quot;. Cada fila debe representar un [campo de formulario](/help/edge/docs/forms/form-components.md#available-components), con encabezados de columna que definan las [propiedades](/help/edge/docs/forms/form-components.md#components-properties) del campo correspondiente.
+1. Para añadir los campos del formulario, inserte las filas y los encabezados de columna en la hoja “shared-aem&quot;. Cada fila debe representar un [campo de formulario](/help/edge/docs/forms/form-components.md#available-components), con encabezados de columna que definan las [propiedades](/help/edge/docs/forms/form-components.md#components-properties) del campo correspondiente.
 
 
    Para empezar rápidamente, considere la posibilidad de copiar el contenido de la [hoja de cálculo de consulta](/help/edge/assets/enquiry.xlsx) en su hoja de cálculo. Después de copiar el contenido, guárdela.
@@ -105,7 +105,7 @@ Para continuar con la creación del formulario, haga lo siguiente:
    * `<repository>` indica su repositorio de GitHub.
    * `<owner>` hace referencia al nombre de usuario de la cuenta de GitHub que aloja el repositorio de GitHub.
 
-   Por ejemplo, si el repositorio de su proyecto se llama &quot;wefinance&quot;, está ubicado en la cuenta &quot;wkndform&quot; y está utilizando la rama &quot;principal&quot;, la dirección URL tiene el siguiente aspecto:
+   Por ejemplo, si el repositorio del proyecto se llama “wefinance”, está ubicado en la cuenta “wkndform” y se usa la rama “principal”, la dirección URL tiene el siguiente aspecto:
 
 `https://main--wefinance--wkndform.aem.page/enquiry.json`
 &lt;!—(https://main--wefinance--wkndform.aem.page/enquiry.json)-->
@@ -113,7 +113,7 @@ Para continuar con la creación del formulario, haga lo siguiente:
 
 +++
 
-+++ Paso 2: Vista previa del formulario con la página de Edge Delivery Services (EDS).
++++ Paso 2: Previsualice el formulario con la página de Edge Delivery Services.
 
 
 Hasta ahora, ha preparado la estructura del formulario. Ahora, para obtener una vista previa del formulario:

@@ -4,9 +4,9 @@ description: Publique sus formularios Edge Delivery Services de forma rápida y 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Cuando el formulario esté terminado y listo para usarse, puede publicarlo para 
 
 ## Requisitos previos
 
-* Un formulario creado con la **plantilla de Edge Delivery Services (EDS)**. [Más información](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) sobre la creación de un formulario basado en EDS.
+* Un formulario creado con la **plantilla de Edge Delivery Services**. [Más información](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) sobre la creación de un formulario basado en EDS.
 
 ## Publicación del formulario
 

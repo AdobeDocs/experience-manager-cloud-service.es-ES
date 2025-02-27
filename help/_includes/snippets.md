@@ -1,8 +1,8 @@
 ---
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: d06399fd63d38738e7aff8503aec9a72a2081b5c
 workflow-type: tm+mt
-source-wordcount: '1392'
-ht-degree: 97%
+source-wordcount: '1390'
+ht-degree: 96%
 
 ---
 # Fragmentos de código {#snippets}
@@ -59,14 +59,13 @@ ht-degree: 97%
 
 ## Editor universal{#universal-editor-see-also}
 
-* [Introducción a Edge Delivery Services para AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [Publicación del formulario](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [Envíe su formulario](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [Personalización del aspecto de los formularios](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-* [Creación de reglas para el formulario](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-* [Usar reCAPTCHA en el formulario](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-* [Crear un componente personalizado para el formulario](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [Vista previa del formulario en modo interactivo](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+* [Crear El Primer Formulario Con El Editor Universal](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Añadir el comportamiento dinámico a Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Configurar y personalizar las acciones de envío de formularios](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Publicación e implementación de Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Diseño hermoso Forms: Guía de estilo y temática](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Crear componentes de formulario personalizados](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [Proteja su Forms del spam: Añadir la seguridad reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## Consulte también {#see-more-forms-eds}
 

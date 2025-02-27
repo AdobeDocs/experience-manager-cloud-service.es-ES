@@ -3,10 +3,11 @@ title: 'Comprender el editor universal: modo interactivo'
 description: Este artículo explica cómo obtener una vista previa de los formularios utilizando diferentes emuladores en el editor universal para visualizar su aspecto durante la creación.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
+source-git-commit: 8f5b4d863ab469c44b4c221eab1fb128706b45c7
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 1%
+source-wordcount: '865'
+ht-degree: 2%
 
 ---
 
@@ -66,6 +67,54 @@ El editor universal proporciona diferentes emuladores para obtener una vista pre
 </table>
 
 Puede usar el icono **Rotador de pantalla** para alternar entre las orientaciones vertical y horizontal al obtener una vista previa de un formulario en diferentes dispositivos. Ayuda a los desarrolladores a probar cómo el diseño adaptable se adapta a las rotaciones de pantalla en varios dispositivos.
+
+El editor universal admite los distintos diseños de formulario. Para explorar los diferentes diseños, consulte la sección [Funciones de diseño](#layout-capabilities).
+
+## Funciones de diseño
+
+El editor universal permite crear formularios fáciles de usar que ofrecen experiencias dinámicas a los usuarios finales. El diseño del formulario controla cómo se muestran los elementos o los componentes de un formulario.
+
+El editor universal admite los siguientes tipos de diseños para formularios:
+* [Diseño de panel](#panel-layout)
+* [Diseño del asistente](#wizard-layout)
+* [Diseño de acordeón](#accordion-layout)
+
+### Diseño de panel
+
+El diseño del panel es útil para organizar los campos relacionados de una manera que facilite la navegación y la búsqueda del contenido correspondiente. El diseño del panel organiza los componentes del formulario en secciones o paneles distintos de los formularios.
+
+![Diseño de panel](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
+
+Puede usar [componente de panel](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) para agregar el diseño de panel en un formulario. Para obtener instrucciones detalladas sobre cómo configurar varias propiedades del componente del panel, consulte el artículo [componente del panel](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+
+### Diseño del asistente
+
+
+El diseño del asistente ayuda a simplificar un formulario complejo dividiéndolo en pasos distintos. Cada paso representa una parte diferente del proceso y los usuarios navegan por los pasos secuencialmente, a menudo con los botones **Siguiente** y **Atrás**. Puede utilizar el diseño de asistente para crear un formulario que incluya varias secciones o pasos.
+
+![Diseño del asistente](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
+
+Puede usar el [componente de asistente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) para agregar el diseño de asistente en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de asistente, consulte el artículo [componente de asistente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+
+### Diseño de acordeón
+
+El diseño de acordeón muestra el contenido en secciones o paneles contraíbles de un formulario adaptable. Cuando se expande una sección, muestra el contenido dentro de, mientras que otras secciones permanecen contraídas. Este diseño es ideal para mostrar grandes cantidades de información en un formulario compacto.
+
+![Diseño de acordeón](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
+
+Puede usar el [componente de acordeón](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) para agregar el diseño de acordeón en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de acordeón, consulte el artículo [componente de acordeón](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
+
+### ¿Cómo elegir el diseño correcto?
+
+Es importante seleccionar el diseño adecuado para optimizar la experiencia del usuario y la funcionalidad del formulario. La tabla le ayuda a comprender las diferentes opciones de diseño disponibles y le guía para seleccionar el diseño más adecuado según sus necesidades específicas y casos de uso:
+
+| Funcionalidad | Diseño de panel | Diseño del asistente | Diseño de acordeón |
+|----------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
+| **Propósito** | Agrupa el contenido relacionado en secciones distintas | Guía a los usuarios a través de un formulario o un proceso de varios pasos | Organiza el contenido en secciones contraíbles |
+| **Estructura** | Secciones distintas | Pasos/páginas secuenciales | Paneles/secciones contraíbles |
+| **Navegación** | Haga clic en los encabezados del panel para desplazarse | - Adelante: botón &quot;Siguiente&quot;<br>- Atrás: botón &quot;Atrás&quot;<br>- Pasos de omisión opcionales | Haga clic en los encabezados para expandir o contraer secciones |
+| **Experiencia del usuario** | Organiza grandes cantidades de contenido de una manera manejable | Guía paso a paso para reducir la sobrecarga | Vista compacta con secciones expandidas/contraídas |
+| **Caso práctico** | Formularios complejos con secciones categorizadas | Configuración de procesos, formularios complejos | Preguntas más frecuentes, menús de configuración y secciones de contenido detalladas |
 
 ## Ver también
 
