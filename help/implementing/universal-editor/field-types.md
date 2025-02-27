@@ -4,10 +4,10 @@ description: Obtenga información acerca de los campos y los tipos de componente
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 8ced236b9bbbae498c46e14a265f7cfa29499f53
+source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
 workflow-type: tm+mt
-source-wordcount: '1499'
-ht-degree: 12%
+source-wordcount: '1526'
+ht-degree: 11%
 
 ---
 
@@ -155,6 +155,10 @@ El tipo de componente de etiquetas de AEM habilita un selector de etiquetas de A
 ![Captura de pantalla del tipo de componente de etiqueta AEM](assets/component-types/aem-tag-picker.png)
 
 >[!ENDTABS]
+
+>[!TIP]
+>
+>Consulte el documento [Administración de datos de taxonomía](/help/edge/wysiwyg-authoring/taxonomy.md) para obtener más información sobre cómo puede usar hojas de cálculo para administrar los datos de taxonomía de su proyecto de Edge Delivery Services.
 
 #### Contenido de AEM {#aem-content}
 

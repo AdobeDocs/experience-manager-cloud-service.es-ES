@@ -4,10 +4,10 @@ description: Aprenda a administrar datos de taxonomía para usar etiquetas con A
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '974'
-ht-degree: 100%
+source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
+workflow-type: tm+mt
+source-wordcount: '1003'
+ht-degree: 97%
 
 ---
 
@@ -23,6 +23,10 @@ El etiquetado es una función importante que le ayuda a organizar y administrar 
 Estas etiquetas son útiles no solo para usted y sus autores a la hora de organizar el contenido, sino que también pueden serlo para sus lectores. Las etiquetas y su taxonomía se pueden utilizar en componentes de la página para ayudar a los lectores a navegar por el contenido.
 
 El editor universal solo funciona con los ID de las etiquetas. Al crear una página de taxonomía para el contenido, se exponen las descripciones de estas etiquetas en todos los idiomas al editor universal para que pueda utilizar esa información al procesar el contenido.
+
+>[!TIP]
+>
+>Consulte el documento [Definiciones de modelo, campos y tipos de componentes](/help/implementing/universal-editor/field-types.md) para obtener más información sobre el campo Etiqueta de AEM disponible para el editor universal, que puede trabajar con su taxonomía.
 
 ## Creación de una página de taxonomía {#creating}
 
