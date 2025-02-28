@@ -4,10 +4,10 @@ description: Notas de la versión de “Generar variaciones”, accesibles desde
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
-source-wordcount: '218'
-ht-degree: 100%
+source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 83%
 
 ---
 
@@ -21,7 +21,19 @@ Esta página documenta las notas de la versión de “generar variaciones”, ac
 
 ## Puntos destacados de la versión {#release-highlights}
 
-La versión actual es la 2.2.0.
+La versión actual es la 3.0.0.
+
+### 3.0.0 {#release-notes-3-0-0}
+
+Puede [acceder a Generar variaciones](/help/generative-ai/generate-variations-integrated-editor.md#access-generate-variations) desde los siguientes editores ([una vez configurados](#access-generate-variations)):
+
+* [en Sidekick de AEM Edge Delivery Services; para la creación basada en documentos](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-sidekick)
+* [en el editor universal](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-universal-editor)
+* [el editor de fragmentos de contenido](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-content-fragment-editor)
+
+>[!NOTE]
+>
+>Se puede acceder directamente a la versión anterior de [Generar variaciones](/help/generative-ai/generate-variations.md).
 
 ### 2.2.0 {#release-notes-2-2-0}
 
