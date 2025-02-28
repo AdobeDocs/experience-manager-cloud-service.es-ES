@@ -1,13 +1,13 @@
 ---
 title: Extracción de contenido del origen
-description: Obtenga información sobre cómo extraer contenido de una instancia de Adobe Experience Manager AEM () de origen para transferirlo más tarde a una instancia de Cloud Service AEM de.
+description: Obtenga información sobre cómo extraer contenido de una instancia de Adobe Experience Manager (AEM) de origen para transferirlo posteriormente a una instancia de AEM de Cloud Service.
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 feature: Migration
 role: Admin
-source-git-commit: 4408f15ef85d0fc2c6a0e2b45038dc900d212187
+source-git-commit: d568619bd8ebb42a6914211401df680352c921ab
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 19%
+source-wordcount: '789'
+ht-degree: 17%
 
 ---
 
@@ -37,11 +37,11 @@ Siga los pasos a continuación para extraer el conjunto de migración de la herr
    >[!IMPORTANT]
    >
    >Asegúrese de que la clave de extracción sea válida y no esté cerca de su caducidad. Si está cerca de su fecha de caducidad, puede renovar la clave de extracción seleccionando el conjunto de migración y haciendo clic en Propiedades. Haga clic en **Renovar**. Esto lo lleva a Cloud Acceleration Manager, donde puede hacer clic en **Copiar clave de extracción**. Cada vez que hace clic en **Copiar clave de extracción**, se genera una nueva clave de extracción que es válida durante 14 días desde el momento de la creación.
-   >![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
+   >![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/migrationSetDetails.png)
 
 1. Esto abre el cuadro de diálogo Extracción. Haga clic en **Extraer** para iniciar la fase de extracción.
 
-   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14c.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/migrationSetExtraction.png)
 
    >[!NOTE]
    >Opcionalmente, puede sobrescribir el contenedor de ensayo durante la fase de extracción. Si **Sobrescribir contenedor de almacenamiento provisional** está deshabilitado, puede acelerar las extracciones en migraciones posteriores en las que las rutas de contenido o la configuración de las versiones de inclusión no hayan cambiado. Sin embargo, si la configuración de las rutas de contenido o las versiones de inclusión ha cambiado, **Sobrescribir contenedor de almacenamiento provisional** debe estar habilitado.
@@ -52,7 +52,7 @@ Siga los pasos a continuación para extraer el conjunto de migración de la herr
 
    Puede hacer clic en **Ver progreso** para obtener una vista granular de la extracción en curso.
 
-   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
+   ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/viewProgress.png)
 
    También puede monitorizar el progreso de la fase de extracción desde Cloud Acceleration Manager. Para ello, visite la página de transferencia de contenido y véala con más detalle haciendo clic en **...** > **Ver detalles**.
 
@@ -68,8 +68,14 @@ Siga los pasos a continuación para extraer el conjunto de migración de la herr
 La herramienta de transferencia de contenido tiene una función que permite agregar contenido diferencial donde solo es posible transferir los cambios realizados desde la actividad de transferencia de contenido anterior.
 
 >[!NOTE]
->Después de la transferencia de contenido inicial, se recomienda realizar frecuentes recargas de contenido diferencial para acortar el período de congelación de contenido para la transferencia de contenido diferencial final antes de lanzarse al Cloud Service. Si ha utilizado el paso de precopia para la primera extracción completa, puede omitir la precopia para las siguientes extracciones de recarga (si el tamaño del conjunto de migración superior es inferior a 200 GB). El motivo es que puede añadir tiempo a todo el proceso.
+>Después de la transferencia de contenido inicial, se recomienda realizar frecuentes recargas de contenido diferencial para acortar el período de congelación de contenido para la transferencia de contenido diferencial final antes de lanzarse a Cloud Service. Si ha utilizado el paso de precopia para la primera extracción completa, puede omitir la precopia para las siguientes extracciones de recarga (si el tamaño del conjunto de migración superior es inferior a 200 GB). El motivo es que puede añadir tiempo a todo el proceso.
 >Además, es esencial que la estructura de contenido del contenido existente no cambie desde el momento en que se realiza la extracción inicial hasta cuando se ejecuta la extracción superior. Las recargas no se pueden ejecutar en contenido cuya estructura se haya cambiado desde la extracción inicial. Asegúrese de restringir esto durante el proceso de migración.
+
+>[!NOTE]
+>Una vez migradas las rutas de contenido al contenedor de ensayo, esas rutas o cualquier subruta dentro de ellas no se pueden eliminar ni excluir de las migraciones superiores posteriores.
+>Ejemplo: Migración inicial: content/dam/weRetail,
+>Siguiente intento de exclusión superior: content/dam/weRetail/ab.
+>En esta situación, no es posible excluir content/dam/weRetail/ab porque los datos ya se han migrado al contenedor de ensayo.
 
 Una vez completado el proceso de extracción, se puede transferir contenido delta mediante el método de extracción superior.
 
@@ -83,7 +89,7 @@ Complete los siguientes pasos:
 
    >[!IMPORTANT]
    >Se debe desactivar la opción **Sobrescribir el contenedor de ensayo durante la extracción** .
-   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam20.png)
+   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/overwriteStagingContainer.png)
 
 
 ## Siguientes pasos {#whats-next}

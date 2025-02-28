@@ -4,10 +4,10 @@ description: Aprenda a utilizar el Analizador de prácticas recomendadas para co
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
+source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
 workflow-type: tm+mt
-source-wordcount: '2724'
-ht-degree: 38%
+source-wordcount: '2796'
+ht-degree: 37%
 
 ---
 
@@ -23,14 +23,14 @@ ht-degree: 38%
 
 En la sección siguiente se comprenden las consideraciones importantes al ejecutar el Analizador de prácticas recomendadas (BPA):
 
-* El informe de BPA se ha generado a partir de los resultados de [Pattern Detector](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html) de Adobe Experience Manager AEM (). La versión de Pattern Detector utilizada por BPA se incluye en el paquete de instalación de BPA.
+* El informe de BPA se ha creado a partir de los resultados de [Pattern Detector](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html) de Adobe Experience Manager (AEM). La versión de Pattern Detector utilizada por BPA se incluye en el paquete de instalación de BPA.
 
 * Solo el usuario **admin** o un usuario del grupo **administradores** pueden ejecutar BPA.
 
-* AEM BPA es compatible con instancias de con la versión 6.1 y posteriores.
+* BPA es compatible con instancias de AEM con la versión 6.1 y posteriores.
 
   >[!NOTE]
-  >AEM AEM Consulte [Instalar en la versión 6.1](#installing-on-aem61) de para conocer los requisitos especiales para instalar BPA en la versión 6.1.
+  >Consulte [Instalar en AEM 6.1](#installing-on-aem61) para conocer los requisitos especiales para instalar BPA en AEM 6.1.
 
 * BPA se puede ejecutar en cualquier entorno, pero se prefiere que se ejecute en un entorno *Stage*.
 
@@ -48,14 +48,14 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 >title="Descargar Best Practices Analyzer"
 >abstract="Best Practices Analyzer se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM)."
 
-Best Practices Analyzer se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete a través de [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en la instancia de Adobe Experience Manager AEM () de origen.
+Best Practices Analyzer se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en la instancia de origen de Adobe Experience Manager (AEM).
 
 >[!NOTE]
 >Descargue el Analizador de prácticas recomendadas desde el portal [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html).
 
 ## Conectividad del entorno de Source {#source-environment-connectivity}
 
-AEM La instancia de origen puede estar ejecutándose detrás de un cortafuegos donde solo puede llegar a ciertos hosts que se han añadido a una Lista de permitidos. Para cargar correctamente el informe generado por BPA en Cloud Acceleration Manager AEM, es necesario poder acceder a los siguientes extremos desde la instancia de que se está ejecutando:
+Es posible que la instancia de AEM de origen se esté ejecutando detrás de un cortafuegos donde solo puede llegar a ciertos hosts que se han añadido a una Lista de permitidos. Para cargar correctamente el informe generado por BPA en Cloud Acceleration Manager, es necesario poder acceder a los siguientes extremos desde la instancia que ejecuta AEM:
 
 * El servicio de almacenamiento del blob de Azure: `casstorageprod.blob.core.windows.net`
 
@@ -78,6 +78,20 @@ Siga esta sección para obtener información sobre la vista del informe Analizad
 1. Haga clic en **Generar informe** para ejecutar el Analizador de prácticas recomendadas.
 
    ![Generar informe](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
+
+>[!NOTE]
+> A partir de la versión 2.1.54 de BPA, se ha introducido una nueva función para obtener la puntuación de Lighthouse.
+1. Después de hacer clic en **Generar informe**, aparecerá una ventana emergente solicitando la URL del sitio público de AEM para la puntuación de Lighthouse. El usuario debe introducir una URL válida en el campo proporcionado.
+
+   ![imagen](/help/journey-migration/best-practices-analyzer/assets/bpa_popup_url.png)
+
+   1. Si la dirección URL es válida, se mostrará un mensaje de éxito.
+
+      ![imagen](/help/journey-migration/best-practices-analyzer/assets/valid_url.png)
+
+   1. Si la dirección URL no es válida, se mostrará un mensaje de error.
+
+      ![imagen](/help/journey-migration/best-practices-analyzer/assets/invalid_url.png)
 
 1. Proporcione la clave de carga de BPA para cargar automáticamente el informe de BPA generado en [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). Para obtener la clave de carga, vaya al [Análisis de prácticas recomendadas en CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
@@ -153,7 +167,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=es#analysis-report" text="Revisar el informe de Best Practices Analyzer"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=es" text="Explicación de las categorías del informe de Best Practices Analyzer"
 
-AEM Cuando la herramienta Analizador de prácticas recomendadas se ejecuta en la instancia de la, el informe se muestra en los resultados de la ventana de herramientas.
+Cuando la herramienta Analizador de prácticas recomendadas se ejecuta en la instancia de AEM, el informe se muestra en los resultados de la ventana de herramientas.
 
 El formato del informe es el siguiente:
 
@@ -162,7 +176,7 @@ El formato del informe es el siguiente:
    * **Hora de caducidad**: cuando caduque la caché de contenido del informe.
    * **Período de tiempo de generación**: tiempo empleado por el proceso de generación de contenido del informe.
    * **Recuento de búsqueda**: número total de conclusiones incluidas en el informe.
-* AEM **Información general del sistema**: Información acerca del sistema de la en el que se ejecutó el BPA.
+* **Información general del sistema**: Información sobre el sistema AEM en el que se ejecutó el BPA.
 * **Búsqueda de categorías**: varias secciones en las que cada una de ellas aborda uno o más resultados de la misma categoría. Cada sección incluye lo siguiente: nombre de la categoría, subtipos, número de búsquedas e importancia, resumen, vínculo a la documentación de la categoría e información de búsqueda individual.
 
 Se asigna un nivel de importancia a cada resultado para indicar una prioridad aproximada para la acción.
@@ -181,7 +195,7 @@ Siga la tabla siguiente para comprender los niveles de importancia:
 
 ## Interpretación del informe CSV del analizador de prácticas recomendadas {#cra-csv-report}
 
-AEM Al hacer clic en la opción **CSV** desde la instancia de la instancia de, el formato CSV del informe Analizador de prácticas recomendadas se crea desde la caché de contenido y se devuelve al explorador. Según la configuración del explorador, este informe se descarga automáticamente como archivo con el nombre predeterminado `results.csv`.
+Al hacer clic en la opción **CSV** desde la instancia de AEM, el formato CSV del informe Analizador de prácticas recomendadas se crea desde la caché de contenido y se devuelve al explorador. Según la configuración del explorador, este informe se descarga automáticamente como archivo con el nombre predeterminado `results.csv`.
 
 Si la caché ha caducado, el informe se regenera antes de crear y descargar el archivo CSV.
 
@@ -203,7 +217,7 @@ El valor &quot;\N&quot; en una columna para una búsqueda individual indica que 
 
 ## Interfaz HTTP {#http-interface}
 
-AEM El BPA proporciona una interfaz HTTP que puede utilizarse como alternativa a su interfaz de usuario dentro de los entornos de trabajo de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario de la interfaz de. La interfaz admite comandos HEAD y GET. Se puede utilizar para generar el informe de BPA y devolverlo en uno de los tres formatos siguientes: JSON, CSV y valores separados por tabuladores (TSV).
+El BPA proporciona una interfaz HTTP que puede utilizarse como alternativa a su interfaz de usuario en AEM. La interfaz admite comandos HEAD y GET. Se puede utilizar para generar el informe de BPA y devolverlo en uno de los tres formatos siguientes: JSON, CSV y valores separados por tabuladores (TSV).
 
 Las siguientes direcciones URL están disponibles para el acceso HTTP, donde `<host>` es el nombre de host y el puerto, si es necesario, del servidor en el que está instalado el BPA:
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json` para el formato JSON
@@ -242,7 +256,7 @@ Cuando están presentes tanto un encabezado HTTP como el parámetro de consulta 
 Una manera sencilla de iniciar la generación del informe a través de la interfaz HTTP es con el siguiente comando:
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.json?max-age=0&respond-async=true'`.
 
-Una vez realizada una solicitud, el cliente no necesita permanecer activo para que se genere el informe. La generación de informes se puede iniciar con un cliente mediante una solicitud HTTP y, una vez generado el informe, se puede ver desde la GET AEM con otro cliente o con la herramienta BPA en la interfaz de usuario de la interfaz de usuario de la aplicación de configuración de etiquetas de datos (BPA, por sus siglas en inglés).
+Una vez realizada una solicitud, el cliente no necesita permanecer activo para que se genere el informe. La generación de informes se puede iniciar con un cliente mediante una petición HTTP GET y, una vez generado el informe, se puede ver desde la caché con otro cliente o con la herramienta BPA en la interfaz de usuario de AEM.
 
 ### Respuestas {#http-responses}
 
@@ -259,19 +273,19 @@ Los siguientes valores de respuesta son posibles:
 
 ### Ajuste de duración de caché {#cache-adjustment}
 
-La duración predeterminada de la caché de BPA es de 24 horas. AEM Con la opción para actualizar un informe y volver a generar la caché, tanto en la instancia de como en la interfaz HTTP, es probable que este valor predeterminado sea adecuado para la mayoría de los usos del BPA. AEM Si el tiempo de generación de informes es particularmente largo para la instancia de la, es posible que desee ajustar la duración de la caché para minimizar la regeneración del informe.
+La duración predeterminada de la caché de BPA es de 24 horas. Con la opción para actualizar un informe y regenerar la caché, tanto en la instancia de AEM como en la interfaz HTTP, es probable que este valor predeterminado sea adecuado para la mayoría de los usos del BPA. Si el tiempo de generación de informes es especialmente largo para la instancia de AEM, es posible que desee ajustar la duración de la caché para minimizar la regeneración del informe.
 
 El valor de duración de la caché se almacena como la `maxCacheAge` propiedad en el siguiente nodo de repositorio:
 `/apps/best-practices-analyzer/content/BestPracticesReport/jcr:content`
 
 El valor de esta propiedad es la duración de la caché en segundos. Un administrador puede ajustar la duración de la caché mediante CRX/DE Lite.
 
-### AEM Instalación en.1 {#installing-on-aem61}
+### Instalación en AEM 6.1 {#installing-on-aem61}
 
-BPA utiliza una cuenta de usuario de servicio del sistema denominada `repository-reader-service` para ejecutar Pattern Detector. Esta cuenta está disponible en AEM 6.2 y posteriores. AEM En la versión 6.1, se debe crear esta cuenta *antes de* instalar BPA, para ello, siga estos pasos:
+BPA utiliza una cuenta de usuario de servicio del sistema denominada `repository-reader-service` para ejecutar Pattern Detector. Esta cuenta está disponible en AEM 6.2 y posteriores. En AEM 6.1, esta cuenta debe crearse *antes de* la instalación de BPA siguiendo los pasos siguientes:
 
 1. Siga las instrucciones en [Crear un nuevo usuario de servicio](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) para crear un usuario. Establezca el UserID en `repository-reader-service` y deje la ruta intermedia vacía y luego haga clic en la marca de verificación verde.
 
 2. Siga las instrucciones en [Administrar usuarios y grupos](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#managing-users-and-groups), específicamente las instrucciones para Añadir usuarios a un grupo para agregar el `repository-reader-service` usuario al `administrators` grupo.
 
-3. AEM Instale el paquete BPA mediante el Administrador de paquetes en la instancia de origen de la instancia de la. (Esto agregará la modificación de configuración necesaria a la configuración de ServiceUserMapper para el usuario del servicio `repository-reader-service` del sistema).
+3. Instale el paquete BPA mediante el Administrador de paquetes en la instancia de origen de AEM. (Esto agregará la modificación de configuración necesaria a la configuración de ServiceUserMapper para el usuario del servicio `repository-reader-service` del sistema).

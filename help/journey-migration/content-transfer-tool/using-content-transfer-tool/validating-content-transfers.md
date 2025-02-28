@@ -4,7 +4,7 @@ description: Utilice la herramienta de transferencia de contenido para validar l
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: b7e485e3b7ce6f2d2fa7fe9b2953d2296186871d
+source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 1%
@@ -22,7 +22,7 @@ Los usuarios pueden determinar de forma fiable si todo el contenido extraído po
 >
 >Esta función estará disponible a partir de la versión de la herramienta de transferencia de contenido (CTT) 1.8.x. El entorno de destino de AEM Cloud Service debe ejecutar al menos la versión 6158 o superior. También requiere que se configure el entorno de origen para ejecutar [la copia previa](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). La función de validación busca el archivo azcopy.config en el origen. Si no encuentra este archivo, no se ejecutará la validación. Para obtener más información sobre cómo configurar un archivo azcopy.config, consulte [Gestión de repositorios de contenido grandes: configurar un archivo azcopy.config](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
-La validación de una transferencia de contenido es una función opcional. Al habilitar esta función, se aumentará el tiempo necesario para realizar una extracción y una ingesta. AEM Para utilizar la función, habilítela en la consola del sistema del entorno de origen de la siguiendo estos pasos:
+La validación de una transferencia de contenido es una función opcional. Al habilitar esta función, se aumentará el tiempo necesario para realizar una extracción y una ingesta. Para utilizar la función, actívela en la consola del sistema del entorno de AEM de origen siguiendo estos pasos:
 
 1. Vaya a la consola web de Adobe Experience Manager en la instancia de origen, en **Herramientas - Operaciones - Consola web** o directamente a la dirección URL en *https://serveraddress:serverport/system/console/configMgr*
 1. Buscar **Configuración del servicio de extracción de herramienta de transferencia de contenido**
@@ -37,7 +37,7 @@ Para obtener más información sobre cómo instalar la herramienta de transferen
 
 ## Validación de una transferencia de contenido {#how-to-validate-a-content-transfer}
 
-AEM Con la validación de migración habilitada en el entorno de origen de la, inicie una extracción.
+Con la validación de migración habilitada en el entorno de AEM de origen, inicie una extracción.
 
 Si **Sobrescribir contenedor de almacenamiento provisional durante la extracción** está habilitado, todos los nodos involucrados con la extracción se registrarán en el resumen de la ruta de extracción. Cuando se usa esta configuración, es importante habilitar la opción **Borrar el contenido existente en la instancia de Cloud antes de la ingesta** durante la ingesta; de lo contrario, puede que parezca que faltan nodos en el resumen de la ingesta. Estos son los nodos que ya están presentes en el destino desde ingestas anteriores.
 
@@ -47,7 +47,7 @@ Para ver una ilustración gráfica de esto, consulte los siguientes ejemplos:
 
 * **Extracción (sobrescribir)**
 
-  ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+  ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/example1-extraction.png)
 
 * **Ingesta (borrado)**
 
@@ -61,7 +61,7 @@ Para ver una ilustración gráfica de esto, consulte los siguientes ejemplos:
 
 * **Extracción**
 
-  ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+  ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/example2-extraction.png)
 
 * **Ingesta**
 
