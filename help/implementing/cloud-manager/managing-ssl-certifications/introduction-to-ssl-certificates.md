@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: a91b15836d0ca0308fbc860ec57aacda908f610d
 workflow-type: tm+mt
 source-wordcount: '1088'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
@@ -20,7 +20,7 @@ Obtenga información acerca de las herramientas de autoservicio que proporciona 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="Administrar certificados SSL"
->abstract="Descubra cómo Cloud Manager tiene herramientas de autoservicio para instalar y administrar certificados SSL con el fin de proteger su sitio para los usuarios. Cloud Manager utiliza un servicio TLS de plataforma para administrar certificados SSL y claves privadas propiedad de clientes y obtenidas de autoridades de certificación de terceros."
+>abstract="Descubra la forma en la que Cloud Manager proporciona herramientas de autoservicio para instalar y administrar certificados SSL con el fin de proteger su sitio en beneficio de sus usuarios. Cloud Manager utiliza un servicio TLS de plataforma para administrar certificados SSL y claves privadas propiedad de clientes y obtenidas de autoridades de certificación de terceros."
 >additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Ver, actualizar y reemplazar un certificado SSL"
 >additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Comprobar el estado de un certificado SSL"
 
@@ -57,7 +57,7 @@ Ambos modelos ofrecen las siguientes funciones generales para administrar los ce
 
 Los certificados DV son el nivel más básico de certificación SSL y se utilizan a menudo para fines de prueba o para proteger sitios web con cifrado básico. Los certificados DV están disponibles tanto en [programas de producción como en programas de zonas protegidas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
-Una vez creado el certificado DV, el Adobe lo renueva automáticamente cada tres meses, a menos que se elimine.
+Una vez creado el certificado DV, Adobe lo renueva automáticamente cada tres meses, a menos que se elimine.
 
 ### Certificados SSL administrados por el cliente (OV/EV) {#customer-managed}
 
@@ -85,12 +85,12 @@ Si decide añadir su propio certificado SSL administrado por el cliente, debe cu
    * Soporte estándar RSA de 2048 bits.
 Las claves RSA de más de 2048 bits (como las claves RSA de 3072 o 4096 bits) no son compatibles en este momento.
    * Claves de curva elíptica (EC) `prime256v1` (`secp256r1`) y `secp384r1`
-   * Certificados ECDSA (Elliptic Curve Digital Signature Algorithm). Estos certificados se recomiendan en Adobe sobre RSA para mejorar el rendimiento, la seguridad y la eficacia.
+   * Certificados ECDSA (Elliptic Curve Digital Signature Algorithm). Estos certificados son recomendados por Adobe sobre RSA para mejorar el rendimiento, la seguridad y la eficacia.
 
 * Los certificados deben tener el formato correcto para pasar la validación. Las claves privadas deben tener el formato `PKCS#8`.
 
 >[!NOTE]
->Si su organización requiere conformidad mediante claves RSA de 3072 bits, la alternativa recomendada por el Adobe es utilizar certificados ECDSA (`secp256r1` o `secp384r1`).
+>Si su organización requiere conformidad mediante claves RSA de 3072 bits, la alternativa recomendada por Adobe es utilizar certificados ECDSA (`secp256r1` o `secp384r1`).
 
 
 #### Prácticas recomendadas para la administración de certificados
