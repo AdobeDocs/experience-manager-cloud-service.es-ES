@@ -5,16 +5,16 @@ feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: ad72a4a724cd69376a936a2beb4fc8fd9d7a730e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '101'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
 
 # Notas de la versión 2025.02.25 del editor universal {#release-notes}
 
-Estas son las notas de la versión del editor universal del 25 de febrero de 2025.
+Estas son las notas de la versión del 25 de febrero de 2025 del editor universal.
 
 >[!TIP]
 >
@@ -22,5 +22,5 @@ Estas son las notas de la versión del editor universal del 25 de febrero de 202
 
 ## Otras mejoras {#other-improvements}
 
-* **Selector de etiquetas para AEM 6.5**: el selector de etiquetas ahora se abre correctamente al [ejecutar el Editor universal con AEM 6.5.](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
-* **Selector de recursos para AEM 6.5**: el selector de recursos 6.5 ahora se abre correctamente al [ejecutar el editor universal con AEM 6.5.](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
+* **Selector de etiquetas para AEM 6.5**: el selector de etiquetas ahora se abre correctamente al [ejecutar el editor universal con AEM 6.5.](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
+* **Selector de recursos de AEM 6.5**: el selector de recursos de 6.5 ahora se abre correctamente al [ejecutar el editor universal con AEM 6.5.](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
