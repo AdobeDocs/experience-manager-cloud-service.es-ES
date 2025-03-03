@@ -4,7 +4,7 @@ description: Aprenda a utilizar el Analizador de prácticas recomendadas para co
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
+source-git-commit: 951f7fb56d1d8a3285973fda945cbc21f310925f
 workflow-type: tm+mt
 source-wordcount: '2796'
 ht-degree: 37%
@@ -81,6 +81,8 @@ Siga esta sección para obtener información sobre la vista del informe Analizad
 
 >[!NOTE]
 > A partir de la versión 2.1.54 de BPA, se ha introducido una nueva función para obtener la puntuación de Lighthouse.
+
+
 1. Después de hacer clic en **Generar informe**, aparecerá una ventana emergente solicitando la URL del sitio público de AEM para la puntuación de Lighthouse. El usuario debe introducir una URL válida en el campo proporcionado.
 
    ![imagen](/help/journey-migration/best-practices-analyzer/assets/bpa_popup_url.png)
