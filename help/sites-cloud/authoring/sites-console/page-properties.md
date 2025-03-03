@@ -1,14 +1,14 @@
 ---
 title: 'Edición de las propiedades de página  '
-description: AEM Obtenga información sobre cómo definir las propiedades necesarias para administrar una página en la administración de páginas en la.
+description: Obtenga información sobre cómo definir las propiedades necesarias para administrar una página en AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 8d4d60a2105915108393cc295949491e59e5fc2b
 workflow-type: tm+mt
-source-wordcount: '2268'
-ht-degree: 89%
+source-wordcount: '2296'
+ht-degree: 88%
 
 ---
 
@@ -101,7 +101,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
    * **Idioma**: el idioma de la página
    * **Raíz del idioma**: si la página es la raíz de una copia en un idioma, es necesario marcar esta opción
-   * **Redirigir**: indica la página a la que esta página debe redirigirse automáticamente con un estado de HTML `302 Found`.
+   * **Redireccionar**: indica la página a la que esta página debe redireccionarse automáticamente con un estado de HTML `302 Found`.
       * **Redirección permanente**: cuando se selecciona, la página redirige a la ruta de destino proporcionada junto con un estado HTML `301 Moved Permanently`.
    * **Diseño**: indica si se muestra o se oculta la página en la navegación de páginas del sitio resultante
    * **Alias**: especifica un alias que se usará con esta página
@@ -119,6 +119,8 @@ Las propiedades se distribuyen entre varias pestañas.
 * **Configuración de plantilla**
 
    * **Plantillas permitidas**: [define la lista de plantillas que están disponibles](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author) dentro de esta rama secundaria
+   * **Usar página como plantilla** - [Cree una nueva plantilla basada en la página actual.](/help/sites-cloud/authoring/universal-editor/templates.md)
+      * Solo se aplica a las páginas creadas para utilizarlas con el editor universal que aprovecha Edge Delivery Services.
 
 * **Requisito de autenticación**
 
