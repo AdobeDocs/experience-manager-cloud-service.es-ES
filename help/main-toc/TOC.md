@@ -740,8 +740,8 @@ ht-degree: 95%
          + [Configuración de [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Conectar el formulario adaptable a la aplicación Salesforce mediante el flujo de credenciales de cliente de OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
          + [Configuración de almacenamiento de  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
-         + [Configurar  [!DNL Microsoft Dynamics 365] servicios en la nube](/help/forms/configure-msdynamics.md)
-         + [Configuración de Salesforce Cloud Services](/help/forms/configure-salesforce.md)
+         + [Configuración de Servicios de nube de  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
+         + [Configuración de los servicios en la nube de Salesforce](/help/forms/configure-salesforce.md)
          + [Crear modelo de datos de formulario](/help/forms/create-form-data-models.md)
          + [Trabajo con el modelo de datos de formulario](/help/forms/work-with-form-data-model.md)
          + [Uso del modelo de datos de formulario](/help/forms/using-form-data-model.md)
@@ -765,8 +765,8 @@ ht-degree: 95%
             + [Configuración de una acción de envío para un formulario adaptable](/help/forms/configure-submit-actions-core-components.md)
             + [Envío de un formulario adaptable a Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Envío de un formulario adaptable a Microsoft](/help/forms/configure-submit-action-onedrive.md)
-            + Conectar un formulario adaptable a Microsoft® SharePoint{#connect-to-sharepoint}
-               + [Conectar un formulario adaptable a Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+            + Conexión de un formulario adaptable a la lista de Microsoft® SharePoint{#connect-to-sharepoint}
+               + [Conexión de un formulario adaptable a Microsoft](/help/forms/configure-submit-action-sharepoint.md)
                + [Enviar a la biblioteca de documentos de SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md)
                + [Enviar a la lista de SharePoint](/help/forms/connect-forms-to-sharepoint-list.md)
                + [Configuración del sitio de SharePoint con acceso limitado mediante el ámbito de autorización](/help/forms/configure-sharepoint-site-limited-access.md)
@@ -784,7 +784,7 @@ ht-degree: 95%
             + [Creación de una acción de envío personalizada](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [Convertir formularios adaptables basados en componentes de base a formularios basados en componentes principales mediante la herramienta de utilidad de migración](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [Plantillas de correo electrónico en formularios adaptables](/help/forms/html-email-templates-in-adaptive-forms.md)
-            + [&#x200B;Administrar publicación en Experience Manager Forms](/help/forms/manage-publication.md)
+            + [Administración de publicaciones en Experience Manager Forms](/help/forms/manage-publication.md)
             + Introducción al Editor de reglas para formularios adaptables basados en componentes principales{#rule-editor-core-components}
                + [Introducción al Editor de reglas para formularios adaptables basados en componentes principales](/help/forms/rule-editor-core-components.md)
                + [Interfaz de usuario del Editor de reglas para formularios adaptables basados en componentes principales](/help/forms/rule-editor-core-components-user-interface.md)
@@ -1024,7 +1024,7 @@ ht-degree: 95%
       + [Redireccionamientos](/help/edge/docs/redirects.md)
    + Creación de formularios {#build-forms}
       + [Información general](/help/edge/docs/forms/overview.md)
-      + [¿Cómo funciona Edge Delivery Services Forms?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
+      + [¿Cómo funcionan los formularios de Edge Delivery Services?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + [Preguntas más frecuentes](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + Creación basada en documentos {#getting-started-edge-delivery-services-forms}
          + [Crear su primer formulario: Guía de inicio rápido con hojas de Google y Excel](/help/edge/docs/forms/tutorial.md)
@@ -1297,7 +1297,7 @@ ht-degree: 95%
          + [Eventos](/help/implementing/universal-editor/events.md)
          + [Filtrado de componentes](/help/implementing/universal-editor/filtering.md)
          + [Personalización](/help/implementing/universal-editor/customizing.md)
-         + [Ampliando](/help/implementing/universal-editor/extending.md)
+         + [Ampliación](/help/implementing/universal-editor/extending.md)
          + [Arquitectura](/help/implementing/universal-editor/architecture.md)
          + [Autenticación](/help/implementing/universal-editor/authentication.md)
          + [Introducción](/help/implementing/universal-editor/getting-started.md)

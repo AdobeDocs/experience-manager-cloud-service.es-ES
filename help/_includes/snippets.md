@@ -2,7 +2,7 @@
 source-git-commit: d06399fd63d38738e7aff8503aec9a72a2081b5c
 workflow-type: tm+mt
 source-wordcount: '1390'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 # Fragmentos de código {#snippets}
@@ -15,7 +15,7 @@ ht-degree: 96%
 
 [!BADGE Para crear contenido de AEM para Edge Delivery Services, haga clic aquí.]{type=Positive url="/help/edge/overview.md" tooltip="Creación de contenido de AEM para Edge Delivery Services"}
 
-## Consulte también {#see-also}
+## Véase también {#see-also}
 
 * [Crear un formulario adaptable de AEM](/help/forms/creating-adaptive-form-core-components.md)
 * [Añadir un formulario adaptable de AEM a la página de AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
@@ -53,7 +53,7 @@ ht-degree: 96%
 * [Enviar a Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Enviar a Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Conectar un formulario adaptable a la aplicación de Salesforce](/help/forms/aem-forms-salesforce-integration.md)
-* [Conectar un formulario adaptable a Microsoft](/help/forms/configure-msdynamics.md)
+* [Conexión de un formulario adaptable a Microsoft](/help/forms/configure-msdynamics.md)
 * [Conectar un formulario adaptable a Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [Creación de una acción de envío personalizada](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
@@ -67,7 +67,7 @@ ht-degree: 96%
 * [Crear componentes de formulario personalizados](/help/edge/docs/forms/universal-editor/create-custom-component.md)
 * [Proteja su Forms del spam: Añadir la seguridad reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
-## Consulte también {#see-more-forms-eds}
+## Véase también {#see-more-forms-eds}
 
 * [Introducción a Edge Delivery Services para AEM Forms](/help/edge/docs/forms/tutorial.md)
 * [Crear un formulario con Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)

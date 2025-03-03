@@ -1,13 +1,13 @@
 ---
-title: Publique AEM Forms para Edge Delivery Services.
-description: Publique sus formularios Edge Delivery Services de forma rápida y sencilla.
+title: Publicación de formularios de AEM para Edge Delivery Services.
+description: Publique sus formularios de Edge Delivery Services de forma rápida y fluida.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
 source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
 source-wordcount: '514'
-ht-degree: 0%
+ht-degree: 87%
 
 ---
 
@@ -41,18 +41,18 @@ Puede publicar cualquier **formulario adaptable basado en EDS** en Edge Delivery
 1. Para comprobar el estado de publicación del formulario, vuelva a hacer clic en **Publicar**.
    ![Estado de publicación](/help/forms/assets/publish-status.png)
 
-1. Para **cancelar la publicación** de un formulario, ábralo en el editor, haz clic en el menú de tres puntos en la esquina superior derecha y haz clic en **Cancelar la publicación**.
+1. Para **cancelar la publicación** de un formulario, ábralo en el editor, haga clic en el menú de tres puntos en la esquina superior derecha y haga clic en **Cancelar la publicación**.
    ![Cancelar publicación](/help/forms/assets/unpublish--form.png)
 
 ## Habilitar el envío de formularios en Edge Delivery mediante la configuración de un filtro de referente para AEM Publisher
 
 Para garantizar el envío seguro del formulario, debe configurar un **Filtro de referente** en AEM Publisher. Este filtro garantiza que solo las solicitudes autorizadas de Edge Delivery puedan realizar operaciones de escritura (POST, PUT, DELETE, COPY, MOVE), lo que evita modificaciones no autorizadas. A continuación se indican los pasos necesarios para configurar un filtro de referente para AEM Publisher:
 
-### Actualizar la URL de instancia de AEM en Edge Delivery
+### Actualización de la URL de instancia de AEM en Edge Delivery
 
 Modifique `submitBaseUrl` en el archivo **constant.js** dentro del bloque del formulario para especificar la URL de la instancia de AEM:
 
-**Configuración de nube:**
+**Para la configuración de nube:**
 
 ```js
 export const submitBaseUrl = 'https://publish-p120-e12.adobeaemcloud.com';
@@ -65,9 +65,9 @@ export const submitBaseUrl = 'http://localhost:4503';
 
 ### Modificación de la configuración de CORS
 
-Ajuste la **configuración de CORS** para permitir las solicitudes de envío de formularios de los dominios de Edge Delivery. Consulte la [Guía de configuración de CORS](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors) para obtener más información.
+Ajuste la **configuración de CORS** para permitir las solicitudes de envío de formularios de los dominios de Edge Delivery. Consulte la [Guía de configuración de CORS](https://experienceleague.adobe.com/es/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors) para obtener más información.
 
-**Ejemplo de configuración CORS:**
+**Ejemplo de configuración de CORS:**
 
 ```apache
 # Developer Localhost
@@ -79,11 +79,11 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 # Franklin Live
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
 ```
-Para el desarrollo local, consulte la [documentación](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) para habilitar CORS desde su **URL de host de IU de desarrollo**.
+Para el desarrollo local, consulte la [documentación](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) para habilitar CORS desde su **URL de host de IU de desarrollo**.
 
-### Configuración del filtro de referente
+### Configuración del Filtro de referente
 
-Configure **Filtro de referente** en AEM Cloud Service mediante Cloud Manager. [Más información](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) acerca de la configuración del filtro de referente en una instancia de AEM Cloud Service mediante un administrador de nube.
+Configure **Filtro de referente** en AEM Cloud Service mediante Cloud Manager. [Más información](https://experienceleague.adobe.com/es/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) acerca de la configuración del filtro de referente en una instancia de AEM Cloud Service mediante un administrador de nube.
 
 **Configuración JSON para el filtro de referente:**
 
@@ -110,7 +110,7 @@ Configure **Filtro de referente** en AEM Cloud Service mediante Cloud Manager. [
 
 Esta configuración especifica qué métodos HTTP se filtran, qué referentes se permiten y qué agentes de usuario se excluyen del filtro. Al implementar estas configuraciones, **los envíos de formularios a través de Edge Delivery** se protegerán y restringirán solo a fuentes autorizadas.
 
-### Acceder Al Formulario Adaptable Publicado
+### Acceso al formulario adaptado publicado
 
 Ahora se puede acceder al formulario adaptable a través de **Edge Delivery** con el siguiente formato de dirección URL:
 
@@ -118,14 +118,14 @@ Ahora se puede acceder al formulario adaptable a través de **Edge Delivery** co
 https://<branch>--<repo>--<owner>.aem.page/content/forms/af/<form_name>
 ```
 
-Por ejemplo, la dirección URL de **Wknd-Form** es:
+Por ejemplo, la dirección URL de **Wknd-Form** es:
 
 ```
 https://main--universaleditor--wkndforms.aem.live/content/forms/af/wknd-form
 ```
 
 
-## Ver también
+## Véase también
 
 {{universal-editor-see-also}}
 

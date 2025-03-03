@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
 source-wordcount: '1656'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ En la era digital de hoy en día, la creación de formularios fáciles de usar e
 
 Estos formularios envían datos directamente a un archivo de Microsoft Excel o Google Sheets, lo que le permite utilizar un ecosistema dinámico y API sólidas de Google Sheets, Microsoft Excel y Microsoft SharePoint para procesar fácilmente los datos enviados o iniciar un flujo de trabajo empresarial existente.
 
-AEM Forms proporciona un bloque, conocido como bloque de Formularios adaptables, para ayudarle a crear fácilmente formularios para capturar y almacenar los datos capturados. Puede [crear un nuevo proyecto de AEM preconfigurado con el bloque de Forms adaptable](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) <!--or [add the Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-your-existing-aem-project)-->.
+AEM Forms proporciona un bloque, conocido como bloque de Formularios adaptables, para ayudarle a crear fácilmente formularios para capturar y almacenar los datos capturados. Puede [crear un nuevo proyecto de AEM previamente configurado con el bloque de formularios adaptables](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) <!--or [add the Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-your-existing-aem-project)-->.
 
 Este tutorial de AEM Forms le guía a través de la creación, la previsualización y la publicación de su propio formulario personalizado con un nuevo proyecto de Adobe Experience Manager (AEM) Forms.
 
@@ -59,7 +59,7 @@ La plantilla repetitiva de AEM Forms le permite empezar rápidamente con un proy
    >[!NOTE]
    >
    >
-   > Si utiliza GitHub Enterprise con filtrado de IP, puede agregar la siguiente IP a la lista de permitidos: 3.227.118.73
+   > Si utiliza GitHub Enterprise con filtrado de IP, puede añadir la siguiente IP a la lista de permitidos: 3.227.118.73
 
    Enhorabuena. Tiene un nuevo sitio web en ejecución `https://<branch>--<repo>--<owner>.aem.page/`.
 
@@ -316,6 +316,6 @@ Si aparece el error &quot;No se puede resolver la ruta al módulo &quot;&#39;../
 Si encuentra algún error de linting, puede omitirlo. Abra el archivo [EDS Project]/package.json y modifique la secuencia de comandos “lint” desde `"lint": "npm run lint:js && npm run lint:css"` hasta `"lint": "echo 'skipping linting for now'"`. Guarde el archivo y confirme los cambios en su proyecto de GitHub.
 
 
-## Consulte también
+## Véase también
 
 {{see-more-forms-eds}}

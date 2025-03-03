@@ -1,45 +1,45 @@
 ---
-title: 'Comprender el editor universal: modo interactivo'
-description: Este artículo explica cómo obtener una vista previa de los formularios utilizando diferentes emuladores en el editor universal para visualizar su aspecto durante la creación.
+title: 'Descripción del editor universal: modo adaptable'
+description: Este artículo explica cómo obtener una vista previa de los formularios utilizando diferentes emuladores en el editor universal para visualizar su apariencia durante la creación.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
 source-git-commit: 8f5b4d863ab469c44b4c221eab1fb128706b45c7
 workflow-type: tm+mt
 source-wordcount: '865'
-ht-degree: 2%
+ht-degree: 34%
 
 ---
 
-# Modo interactivo en la creación de WYSIWYG
+# Modo adaptable en la creación de WYSIWYG
 
 <span class="preview"> Esta característica está disponible a través del programa de acceso anticipado. Para solicitar acceso, envía un correo electrónico desde tu dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> con tu nombre de organización de GitHub y el nombre del repositorio. Por ejemplo, si la dirección URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es adobe y el nombre del repositorio es abc.</span>
 
 
-El [Editor universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) le permite obtener una vista previa de Edge Delivery Services Forms con diferentes emuladores para ver el aspecto del formulario durante la creación.
+El [Editor universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) le permite obtener una vista previa de los formularios de Edge Delivery Services con diferentes emuladores para ver la apariencia del formulario durante la creación.
 
-El modo interactivo permite a los desarrolladores diseñar diseños que se adaptan automáticamente a diferentes tamaños de pantalla, incluidos escritorios, tabletas y dispositivos móviles. El editor universal admite emuladores para equipos de escritorio, tabletas y dispositivos móviles. Puede establecer la altura y la anchura según el tamaño de la pantalla y realizar las siguientes acciones:
+El modo adaptable permite a los desarrolladores crear diseños que se adaptan automáticamente a diferentes tamaños de pantalla, incluidos escritorios, tabletas y dispositivos móviles. El editor universal admite emuladores para equipos de escritorio, tabletas y dispositivos móviles. Puede establecer la altura y la anchura según el tamaño de la pantalla y realizar las siguientes acciones:
 
 * Establecer la orientación
-* Especificar la anchura y la altura
+* Definir la anchura y la altura
 * Cambiar la orientación
 
-## Vista previa de Forms en modo interactivo para diferentes dispositivos
+## Vista previa de los formularios en modo adaptable para diferentes dispositivos
 
 El editor universal proporciona un icono **Emulador** ubicado en la esquina superior derecha de la pantalla que le permite obtener una vista previa de las páginas en diferentes tamaños de dispositivo y probar el comportamiento de su diseño interactivo para una mejor experiencia de usuario.
 
 Para ver cómo el editor universal procesa los formularios en diferentes tamaños de pantalla, realice los siguientes pasos:
 
-1. Abra el formulario en el Editor universal para editarlo.
+1. Abra un formulario en el editor universal para editarlo.
 1. Seleccione el ![icono Emulador](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%,width=2%} disponible en la barra de herramientas del editor universal y haga clic en el icono Emulador para mostrar la opción.
 
-   ![Modo interactivo](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
+   ![Modo adaptable](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
 
 1. Seleccione una opción para emular un formulario en el editor universal en un dispositivo seleccionado: escritorio, tableta, móvil.
 
-   ![Modo interactivo](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png){width=40%,height=40%}
+   ![Modo adaptable](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png){width=40%,height=40%}
 
-   De forma predeterminada, el editor se abre en un diseño de escritorio, con la altura y la anchura determinadas automáticamente por el explorador. También puede emular un formulario en un dispositivo móvil o tableta. También puede personalizar el ancho y el alto de la pantalla para dispositivos personalizados.
+   De forma predeterminada, el editor se abre en un diseño de escritorio en el que el explorador define automáticamente la altura y la anchura. También puede emular un formulario en un dispositivo móvil o tableta. También puede personalizar la anchura y la altura de la pantalla para dispositivos personalizados.
 
 El editor universal proporciona diferentes emuladores para obtener una vista previa de los formularios en varios dispositivos. En la tabla siguiente se enumeran los tipos de emulador disponibles junto con sus representaciones de dispositivo correspondientes:
 
@@ -66,7 +66,7 @@ El editor universal proporciona diferentes emuladores para obtener una vista pre
     </tr>
 </table>
 
-Puede usar el icono **Rotador de pantalla** para alternar entre las orientaciones vertical y horizontal al obtener una vista previa de un formulario en diferentes dispositivos. Ayuda a los desarrolladores a probar cómo el diseño adaptable se adapta a las rotaciones de pantalla en varios dispositivos.
+Puede usar el icono de **Rotador de pantalla** para conmutar entre las orientaciones vertical y horizontal al obtener una vista previa de un formulario en diferentes dispositivos. Ayuda a los desarrolladores a probar cómo el diseño adaptable se adapta a las rotaciones de pantalla en varios dispositivos.
 
 El editor universal admite los distintos diseños de formulario. Para explorar los diferentes diseños, consulte la sección [Funciones de diseño](#layout-capabilities).
 
@@ -116,6 +116,6 @@ Es importante seleccionar el diseño adecuado para optimizar la experiencia del 
 | **Experiencia del usuario** | Organiza grandes cantidades de contenido de una manera manejable | Guía paso a paso para reducir la sobrecarga | Vista compacta con secciones expandidas/contraídas |
 | **Caso práctico** | Formularios complejos con secciones categorizadas | Configuración de procesos, formularios complejos | Preguntas más frecuentes, menús de configuración y secciones de contenido detalladas |
 
-## Ver también
+## Véase también
 
 {{universal-editor-see-also}}

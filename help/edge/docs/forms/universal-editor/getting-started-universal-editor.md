@@ -7,7 +7,7 @@ exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
 source-wordcount: '1826'
-ht-degree: 84%
+ht-degree: 97%
 
 ---
 
@@ -157,27 +157,27 @@ Si tiene un proyecto de AEM existente, puede integrar el bloque de formularios a
 >[!NOTE]
 >
 >
-> Este paso se aplica a los proyectos creados con el [elemento repetitivo de AEM](https://github.com/adobe-rnd/aem-boilerplate-xwalk). Si creó el proyecto de AEM con [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), puede omitir este paso.
+> Este paso se aplica a los proyectos creados con el [elemento repetitivo de AEM](https://github.com/adobe-rnd/aem-boilerplate-xwalk). Si ha creado el proyecto de AEM mediante el [elemento repetitivo de AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms), puede omitir este paso.
 
-Para integrar:
-1. **Agregar los archivos y carpetas necesarios**
-   1. Copie y pegue las siguientes carpetas y archivos de [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) en su proyecto de AEM:
+Para integrar, haga lo siguiente:
+1. **Añada los archivos y las carpetas necesarios**
+   1. Copie y pegue las siguientes carpetas y archivos del [elemento repetitivo de AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms) en su proyecto de AEM:
 
-      * [bloque de formulario](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) carpeta
-      * carpeta [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)
+      * carpeta [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) 
+      * carpeta [form-common]( https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)
       * carpeta [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components)
-      * [archivo form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js)
-      * [archivo form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)
+      * archivo [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 
+      * archivo [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)
 
-1. **Actualizar los archivos de modelos y definiciones de componentes**
-   1. Vaya al archivo `../models/_component-definition.json` de su proyecto de AEM y actualícelo con los cambios del archivo [_component-definition.json en la plantilla de AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
+1. **Actualice las definiciones de componentes y archivos de modelos**
+   1. Vaya al archivo `../models/_component-definition.json` de su proyecto de AEM y actualícelo con los cambios del [archivo _component-definition.json en el elemento repetitivo de AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
 
-   1. Vaya al archivo `../models/_component-models.json` de su proyecto de AEM y actualícelo con los cambios del archivo [_component-models.json en la plantilla de AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
+   1. Vaya al archivo `../models/_component-models.json` de su proyecto de AEM y actualícelo con los cambios del [archivo _component-models.json en el elemento repetitivo de AEM Forms]( https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
 
-1. **Agregar editor de formularios en el script del editor**
-   1. Vaya al archivo `../scripts/editor-support.js` de su proyecto de AEM y actualícelo con los cambios del archivo [editor-support.js en la plantilla de AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
-1. **Actualizar archivo de configuración de ESLint**
-   1. Vaya al archivo `../.eslintignore` de su proyecto de AEM y agregue la línea de códigos siguiente para evitar errores relacionados con el motor de reglas de bloque de formularios:
+1. **Añada el editor de formularios en el script del editor**
+   1. Vaya al archivo `../scripts/editor-support.js` de su proyecto de AEM y actualícelo con los cambios del [archivo editor-support.js en el elemento repetitivo de AEM Forms]( https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
+1. **Actualice el archivo de configuración ESLint**
+   1. Vaya al archivo `../.eslintignore` de su proyecto de AEM y añada la línea de códigos siguiente para evitar errores relacionados con el motor de reglas del bloque de formularios:
 
       ```
           blocks/form/rules/formula/*
@@ -193,14 +193,14 @@ Eso es todo. El Bloque de formularios adaptables ahora forma parte de su Proyect
 Puede abrir el proyecto de AEM en el Editor universal para la creación de WYSIWYG, donde puede editar el proyecto y añadir la sección Formulario adaptable para incluir formularios de Edge Delivery Services en páginas del Proyecto de AEM.
 
 1. Añada la sección Formulario adaptable a la página del Proyecto de AEM. Para añadir:
-   1. Vaya al proyecto de AEM en la consola Sitios, seleccione la página del sitio que desee editar y haga clic en **Editar**. La página del proyecto de AEM se abre en el Editor universal para editarla.
+   1. Vaya al proyecto de AEM en la consola de Sites, seleccione la página del sitio que desee editar y haga clic en **Editar**. Se abrirá la página del proyecto de AEM en el Editor universal para editarlo.
 En este caso, la página `index.html` se usa como ilustración.
-   1. Abra el árbol de contenido y vaya a la sección en la que desee agregar la sección Formulario adaptable.
+   1. Abra el árbol de contenido y vaya hasta la sección en la que desea añadir la sección Formulario adaptable.
    1. Haga clic en el icono **[!UICONTROL Añadir]** y seleccione el componente **[!UICONTROL Formulario adaptable]** de la lista de componentes.
 
    ![árbol de contenido](/help/edge/docs/forms/assets/add-adaptive-form-block.png)
 
-   Se agrega la sección Formulario adaptable. Ahora puede empezar a añadir componentes a la página del Proyecto de AEM.
+   Se añade la sección Formulario adaptable. Ahora puede empezar a añadir componentes a la página del Proyecto de AEM.
 
 1. Añada componentes de formulario a la sección del formulario adaptable añadido. Para añadir componentes de formulario:
    1. Vaya a la sección del Formulario adaptable añadido en el árbol de contenido.
@@ -218,12 +218,12 @@ En este caso, la página `index.html` se usa como ilustración.
 
       ![abrir propiedades](/help/edge/docs/forms/assets/component-properties.png)
 
-   1. Previsualice el formulario.
+   1. Obtenga una vista previa del formulario. 
 La siguiente captura de pantalla muestra el formulario creado en el Proyecto de AEM mediante la creación de WYSIWYG:
 
       ![se agregó el formulario](/help/edge/docs/forms/assets/added-form-aem-sites.png)
 
-      Una vez que esté satisfecho con la vista previa, el usuario puede continuar publicando la página.
+      Cuando esté satisfecho con la vista previa, el usuario podrá continuar publicando la página.
 
       >[!NOTE]
       >
@@ -295,6 +295,6 @@ Si encuentra algún error de linting, puede omitirlo. Abra el archivo [EDS Proje
 * **Resolver error de ruta del módulo:**
 Si aparece el error &quot;No se puede resolver la ruta al módulo &quot;&#39;../../scripts/lib-franklin.js&quot;&quot;, vaya al archivo [Proyecto EDS]/blocks/forms/form.js. Actualice la instrucción de importación reemplazando el archivo lib-franklin.js por aem.js.
 
-## Ver también
+## Véase también
 
 {{universal-editor-see-also}}

@@ -7,12 +7,12 @@ exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
 source-wordcount: '2214'
-ht-degree: 73%
+ht-degree: 96%
 
 ---
 
 
-# Introducción al Editor de reglas en la creación de WYSIWYG
+# Introducción al editor de reglas en la creación de WYSIWYG
 
 <span class="preview"> Esta característica está disponible a través del programa de acceso anticipado. Para solicitar acceso, envía un correo electrónico desde tu dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> con tu nombre de organización de GitHub y el nombre del repositorio. Por ejemplo, si la dirección URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es adobe y el nombre del repositorio es abc.</span>
 
@@ -43,13 +43,13 @@ Para obtener instrucciones detalladas paso a paso, consulte [agregar una regla d
 
 ## ¿Cómo se habilita la extensión del Editor de reglas?
 
-En el Editor universal, la extensión del Editor de reglas no está habilitada de forma predeterminada. Para habilitar la extensión del Editor de reglas, escríbanos a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) desde su ID de correo electrónico oficial.
+En el editor universal, la extensión del Editor de reglas no está habilitada de forma predeterminada. Para habilitar la extensión del Editor de reglas, escríbanos a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) desde su ID de correo electrónico oficial.
 
 Una vez habilitada la extensión del Editor de reglas para su entorno, aparecerá el icono ![edit-rules](/help/forms/assets/edit-rules-icon.svg) en la esquina superior derecha del editor.
 
 ![Editor universal de reglas](/help/edge/docs/forms/assets/universal-editor-rule-editor.png)
 
-Seleccione el componente de formulario para el que desea escribir una regla y haga clic en el icono ![edit-rules](/help/forms/assets/edit-rules-icon.svg). Aparecerá la interfaz de usuario del editor de reglas.
+Seleccione el componente de formulario para el que desea escribir una regla y haga clic en el icono ![edit-rules](/help/forms/assets/edit-rules-icon.svg).  Aparecerá la interfaz de usuario del editor de reglas.
 
 ![Interfaz de usuario del Editor de reglas](/help/edge/docs/forms/assets/rule-editor-for-field.png)
 
@@ -59,7 +59,7 @@ Ahora puede empezar a escribir reglas o lógica empresarial para el campo de for
 
 ## Explicación de la interfaz de usuario del Editor de reglas
 
-El editor del Editor de reglas se abre al hacer clic en el icono ![edit-rules](/help/forms/assets/edit-rules-icon.svg):
+El editor del Editor de reglas se abrirá al hacer clic en el icono ![edit-rules](/help/forms/assets/edit-rules-icon.svg):
 
 ![Interfaz de usuario del Editor de reglas](/help/edge/docs/forms/assets/rule-editor-interface.png)
 
@@ -77,11 +77,11 @@ El editor del Editor de reglas se abre al hacer clic en el icono ![edit-rules](/
     </tr>
     <tr>
       <td>2. Objetos y funciones de formulario</td>
-      <td>La pestaña <b>Objetos de Forms</b> muestra una vista jerárquica de todos los componentes del formulario. La ficha <b>Funciones</b> incluye un conjunto de funciones integradas en el editor de reglas.</td>
+      <td>La pestaña <b>Objetos de formularios</b> muestra una vista jerárquica de todos los componentes contenidos en el formulario. La pestaña <b>Funciones</b> incluye un conjunto de funciones integradas en el editor de reglas.</td>
     </tr>
     <tr>
       <td>3. Alternar entre funciones y objetos de formulario</td>
-      <td>El botón de alternancia muestra u oculta alternativamente el panel de funciones y objetos de formulario. </td>
+      <td>Al pulsar el botón de conmutación, se muestran o se ocultan los objetos de formulario y el panel de funciones. </td>
     </tr>
     <tr>
       <td>4. Editor de reglas visual</td>
@@ -94,7 +94,7 @@ El editor del Editor de reglas se abre al hacer clic en el icono ![edit-rules](/
   </tbody>
 </table>
 
-Cualquier regla existente en un componente de formulario se enumera al seleccionar el componente. Puede ver el título y una vista previa del resumen de la regla en el Editor de reglas. Además, puede cambiar el orden de las reglas, editarlas, habilitarlas o deshabilitarlas, o eliminarlas.
+Cualquier regla existente en un componente de formulario se muestra al seleccionar el componente. Puede ver el título y una vista previa del resumen de reglas en el Editor de reglas. Además, puede cambiar el orden de las reglas, editarlas, habilitarlas o deshabilitarlas, o eliminarlas.
 
 ![mostrar las reglas disponibles del objeto de formulario](/help/edge/docs/forms/assets/rule-editor15.png)
 
@@ -112,7 +112,7 @@ El Editor de reglas proporciona un conjunto de tipos de reglas predefinidas que 
   <tbody>
     <tr>
       <td>Establecer valor de</td>
-      <td>Establece el valor de un componente de formulario en función de si la condición especificada se cumple o no.</td>
+      <td>Establezca el valor de un componente de formulario en función de si se cumple o no la condición especificada.</td>
     </tr>
     <tr>
       <td>Borrar valor de</td>
@@ -132,7 +132,7 @@ El Editor de reglas proporciona un conjunto de tipos de reglas predefinidas que 
     </tr>
     <tr>
       <td>Cuando </td>
-      <td>Especifica una condición para la evaluación seguida de una acción de déclencheur si se cumple la condición. Sigue a la construcción de reglas de acción <i>condition-action-alternate</i> o a la construcción de reglas <i>condition-action</i>. </td>
+      <td>Especifica una condición para la evaluación seguida de una acción que se activa si se cumple la condición. Sigue la construcción de la regla de acción <i>condition-action-alternate</i> o la construcción de la regla <i>condition-action</i>.  </td>
     </tr>
     <tr>
       <td>Formato</td>
@@ -140,7 +140,7 @@ El Editor de reglas proporciona un conjunto de tipos de reglas predefinidas que 
     </tr>
     <tr>
       <td>Invocar servicio</td>
-      <td>Invoca un servicio configurado mediante API externas, un modelo de datos de formulario o servicios web RESTful.</td>
+      <td>Invoca un servicio configurado mediante las API externas, un modelo de datos de formulario o servicios web RESTful.</td>
     </tr>
     <tr>
       <td>Establecer propiedad</td>
@@ -148,11 +148,11 @@ El Editor de reglas proporciona un conjunto de tipos de reglas predefinidas que 
     </tr>
     <tr>
       <td>Establecer enfoque</td>
-      <td>Define el enfoque del componente de formulario especificado.</td>
+      <td>Establece el enfoque del componente de formulario especificado.</td>
     </tr>
     <tr>
       <td>Guardar formulario</td>
-      <td>Permite al usuario guardar el formulario como borrador mediante el componente Borradores y envíos del portal de Forms. </td>
+      <td>Permite al usuario guardar el formulario como un borrador mediante el componente Borradores y envíos del Portal de formularios. </td>
     </tr>
     <tr>
       <td>Enviar formulario</td>
@@ -216,10 +216,10 @@ Para crear un formulario en el Editor universal:
 1. Abra un formulario en el Editor universal para editarlo.
 1. Añada los siguientes componentes de formulario:
    * Formulario de cálculo de impuestos (título)
-   * Salario bruto (número de entrada)
+   * Salario bruto (entrada de número)
    * Deducción adicional (entrada de número)
-   * Ingresos gravables (número de entrada)
-   * Impuesto a Pagar (Número de Entrada)
+   * Ingresos gravables (entrada de número)
+   * Impuestos a pagar (entrada de número)
    * Enviar (botón Enviar)
 1. Ocultar el campo de formulario `Additional Deduction` abriendo su `Properties`.
 
@@ -229,7 +229,7 @@ Para crear un formulario en el Editor universal:
 
 Una vez haya creado el formulario, escriba la primera regla para mostrar el campo `Additional Deduction` solo si el salario bruto supera los 50 000 $. Para añadir una regla de condición:
 
-1. Abra un formulario en el Editor universal para editarlo, seleccione el campo **[!UICONTROL Salario bruto]** en el árbol de contenido y seleccione ![edit-rules](/help/forms/assets/edit-rules-icon.svg). También puede seleccionar el campo **[!UICONTROL salario bruto]** directamente desde el panel **[!UICONTROL Objeto Forms]**.
+1. Abra un formulario en el Editor universal para editarlo, seleccione el campo **[!UICONTROL Salario bruto]** en el árbol de contenido y seleccione ![edit-rules](/help/forms/assets/edit-rules-icon.svg). También puede seleccionar el campo **[!UICONTROL salario bruto]** directamente desde el panel **[!UICONTROL Objeto de formularios]**.
    ![Ejemplo1 del Editor de reglas](/help/edge/docs/forms/assets/rule-editor3.png)
 Aparecerá la interfaz visual del Editor de reglas.
 1. Haga clic en **[!UICONTROL Crear]** para crear reglas.
@@ -265,8 +265,8 @@ La regla aparece de la siguiente manera en el Editor de reglas.
 
 A continuación, escriba una regla para calcular `Taxable Income`, que es la diferencia entre `Gross Salary` y `Additional Deduction` (si corresponde). Para añadir una regla de cálculo en el campo **[!UICONTROL Ingresos gravables]**, realice los siguientes pasos:
 
-1. En el modo de creación, seleccione el campo **[!UICONTROL Ingresos gravables]** y seleccione el icono ![edit-rules](/help/forms/assets/edit-rules-icon.svg). También puede seleccionar el campo **[!UICONTROL Ingresos gravables]** directamente desde el panel **[!UICONTROL Objeto Forms]**.
-1. A continuación, seleccione **[!UICONTROL Crear]** para crear la regla.
+1. En el modo de creación, seleccione el campo **[!UICONTROL Ingresos gravables]** y seleccione el icono ![edit-rules](/help/forms/assets/edit-rules-icon.svg). También puede seleccionar el campo **[!UICONTROL Ingresos gravables]** directamente desde el panel **[!UICONTROL Objeto de formularios]**.
+1. A continuación, seleccione **[!UICONTROL Crear]** para crear la regla.
    ![Ejemplo13 del Editor de reglas](/help/edge/docs/forms/assets/rule-editor16.png)
 1. Seleccione **[!UICONTROL Seleccionar opción]** y seleccione **[!UICONTROL Expresión matemática]**. Se abre un campo para escribir una expresión matemática.
    ![Ejemplo14 del Editor de reglas](/help/edge/docs/forms/assets/rule-editor17.png)
@@ -372,18 +372,18 @@ Para utilizar la función personalizada en el Editor de Reglas:
 
    ![Funciones personalizadas en el Editor de reglas](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 
-1. **Vista previa del formulario**: Obtenga una vista previa del formulario con la función recién implementada.
+1. **Vista previa del formulario**: obtenga una vista previa del formulario con la función recién implementada.
 
 ## Información adicional
 
 >[!NOTE]
 >
-> En el editor universal, las importaciones estáticas y dinámicas no son compatibles con los scripts de funciones personalizadas. Debe agregar el código completo en el archivo `../[blocks]/form/functions.js`.
+> En el editor universal, las importaciones estáticas y dinámicas no son compatibles con los scripts de funciones personalizadas. Debe añadir el código completo en el archivo `../[blocks]/form/functions.js`.
 
-Este artículo proporciona información limitada sobre el Editor de reglas disponible en el Editor universal. Para obtener más información sobre el Editor de reglas y las funciones personalizadas, consulte los siguientes artículos:
+En este artículo se ofrece información limitada sobre el Editor de reglas disponible en el editor universal. Para obtener más información sobre el Editor de reglas y las funciones personalizadas, consulte los siguientes artículos:
 
 {{see-also-rule-editor}}
 
-## Ver también
+## Véase también
 
 {{universal-editor-see-also}}
