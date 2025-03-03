@@ -5,9 +5,9 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Workflow
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
 source-git-commit: c17e4e70fa8cec176c908983230b03f2899bc1ca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '637'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -73,5 +73,5 @@ Estas son las directrices a seguir a la hora de utilizar flujos de trabajo de AE
 >
 >* [Configuración de fuentes de datos para AEM Forms](/help/forms/configure-data-sources.md)
 >* [Configuración del almacenamiento de Azure para AEM Forms](/help/forms/configure-azure-storage.md)
->* [Integrar Microsoft Dynamics 365](/help/forms/configure-msdynamics.md)
->  [Añadir Portal de Forms a una página de AEM Sites](/help/forms/configure-forms-portal.md)
+>* [Integración de Microsoft Dynamics 365](/help/forms/configure-msdynamics.md)
+>  [Añadir Portal de formularios a una página de AEM Sites](/help/forms/configure-forms-portal.md)

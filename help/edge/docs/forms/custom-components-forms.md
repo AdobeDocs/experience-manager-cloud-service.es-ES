@@ -5,14 +5,15 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d71c5d6488935de4a02c8d3828f287542b979d0f
-workflow-type: tm+mt
+exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
+source-git-commit: 62dfa8ad73bf6684bd93f6a26b98b1c193770214
+workflow-type: ht
 source-wordcount: '625'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Crear componentes personalizados
+# Creación de componentes personalizados
 
 Edge Delivery Services para AEM Forms le permite personalizar los [componentes de formulario HTML nativos](/help/edge/docs/forms/form-components.md) y crear formularios interactivos fáciles de usar. Permite modificar los componentes del formulario con marcado predefinido, tal como se explica en [Estilo de los campos del formulario](/help/edge/docs/forms/style-theme-forms.md) mediante CSS (hojas de estilo en cascada) personalizadas y código personalizado para decorar el componente, lo que mejora la apariencia de los campos del formulario dentro de un bloque de formularios adaptables.
 
@@ -58,7 +59,7 @@ La función personalizada añadida en `[../Form Block/components]` consta de:
 Para añadir una función personalizada:
 
 1. Navegue hasta `[../Form Block/components]`.
-1. Busque un archivo de nombre `range.js`. si no está presente, créelo.
+1. Localice un archivo con el nombre `range.js`. Si no está, deberá crearlo.
 1. Añada la siguiente línea de código:
 
    ```javascript
@@ -214,7 +215,7 @@ Implemente los archivos `range.js`, `mapping.js` y `form.css` actualizados en el
 
 ### Vista previa del formulario con AEM Sidekick
 
-Obtenga una vista previa del formulario con la función recién implementada que aplica estilo al componente `range`.
+Obtenga una vista previa del formulario con la función recién implementada que aplica estilos al componente `range`.
 
 ![Formulario de componente personalizado](/help/edge/assets/custom-componet-form.png)
 
@@ -358,10 +359,6 @@ Now, you can see your custom component in the WYSIWYG based authoring:
 >
 > For detailed steps on creating a custom component for the Universal Editor, refer to the [Create Custom Component in WYSIWYG based authoring](/help/edge/docs/forms/universal-editor/create-custom-component) article. -->
 
-## Consulte también
+## Véase también
 
 {{see-more-forms-eds}}
-
-
-
-

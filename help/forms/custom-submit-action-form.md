@@ -6,9 +6,9 @@ role: User, Developer
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
 source-git-commit: 914139a6340f15ee77024793bf42fa30c913931e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1705'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html?lang=es) |
-| AEM as a Cloud Service (componentes principales) | [Haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
+| AEM as a Cloud Service (componentes principales) | [Haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
 | AEM as a Cloud Service (componentes de base) | Este artículo |
 
 Un formulario adaptable ofrece varias acciones de envío de forma predeterminada (OOTB). Una acción de envío especifica los detalles de las acciones que se realizarán en los datos recopilados mediante el formulario adaptable. Por ejemplo, el envío de datos en un correo electrónico.
@@ -74,7 +74,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 Cuando adjunta archivos al formulario adaptable, el servidor valida los archivos adjuntos después del envío del formulario adaptable y muestra un mensaje de error si ocurre lo siguiente:
 
-* Los archivos adjuntos incluyen un nombre de archivo que empieza por (.) carácter, contiene \ / : * ? &quot; &lt; > | ; % $, o contiene nombres de archivo especiales reservados para el sistema operativo Windows, como `nul`, `prn`, `con`, `lpt` o `com`.
+* Los archivos adjuntos incluyen un nombre de archivo que empieza por el carácter (.), contiene los caracteres \ / : * ?  &quot; &lt; > | ; % $, o contiene nombres de archivo especiales reservados para el sistema operativo Windows, como `nul`, `prn`, `con`, `lpt` o `com`.
 
 * El tamaño del archivo adjunto es de 0 bytes.
 
@@ -111,7 +111,7 @@ Una acción de envío es sling:Folder, que incluye lo siguiente:
 
 >[!NOTE]
 >
-> Para obtener información sobre cómo crear una acción de envío personalizada para los componentes principales, consulte [Crear una acción de envío personalizada para un Forms adaptable (componentes principales)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components).
+> Para obtener información sobre cómo crear una acción de envío personalizada para los componentes principales, consulte [Crear una acción de envío personalizada para formularios adaptables (componentes principales)](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components).
 
 Realice los siguientes pasos para crear una acción de envío personalizada que guarde los datos en el repositorio CRX y luego le envíe un correo electrónico. El formulario adaptable contiene el contenido del almacén de acciones de envío OOTB (obsoleto) que guarda los datos en el repositorio CRX. Además, AEM facilitará un API de [Correo electrónico](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) que se puede utilizar para enviar correos electrónicos. Antes de usar el API de correo electrónico, configure el servicio Day CQ Mail mediante la consola del sistema. Puede reutilizar la acción Almacenar contenido (obsoleta) para almacenar los datos en el repositorio. La acción Almacenar contenido (obsoleta) está disponible en la ubicación /libs/fd/af/components/guidesubmittype/store en el repositorio CRX.
 

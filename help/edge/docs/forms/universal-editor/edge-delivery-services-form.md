@@ -8,50 +8,50 @@ hide: true
 hidefromtoc: true
 exl-id: db58ce85-139a-4cc1-8e18-73da76357299
 source-git-commit: 320ab86bc73e874705d985b927e90eec3cad1cf9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1040'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
 
-# Edge Delivery Services Forms
+# Formularios de Edge Delivery Services
 
-Adobe Edge Delivery Services Forms transforma la forma en que se crean, ejecutan y procesan los formularios. Al aprovechar Edge Delivery Services, las organizaciones pueden crear formularios digitales rápidos, seguros y de alta disponibilidad, mejorando la experiencia del usuario y la eficacia operativa con un entorno de desarrollo rápido. Con Edge Delivery Services Forms, puede impulsar las conversiones, reducir los costes y acelerar la entrega de contenido.
+Los formularios de Adobe Edge Delivery Services transforman la forma en que se crean, ejecutan y procesan los formularios. Al aprovechar Edge Delivery Services, las organizaciones pueden crear formularios digitales rápidos, seguros y de alta disponibilidad, mejorando la experiencia del usuario y la eficacia operativa con un entorno de desarrollo rápido. Con los formularios de Edge Delivery Services, puede impulsar las conversiones, reducir los costes y acelerar el envío de contenido.
 
-## Ventajas de Edge Delivery Services Forms
+## Ventajas de los formularios de Edge Delivery Services
 
-* **Creación de formularios más rápida**: Cree formularios de alto rendimiento con una puntuación perfecta en Lighthouse y supervise continuamente su rendimiento real mediante el monitoreo de usuarios reales (RUM).
+* **Creación más rápida de formularios**: cree formularios de alto rendimiento con una puntuación perfecta de Lighthouse y supervise continuamente su rendimiento real mediante la monitorización de usuarios reales (RUM).
 
-* **Proceso de creación optimizado**: Administre fácilmente el contenido de múltiples fuentes para obtener mayor flexibilidad. De forma predeterminada, puede crear formularios utilizando WYSIWYG y la creación basada en documentos, lo que permite una integración perfecta de varios formatos de contenido.
+* **Proceso de creación optimizado**: administre fácilmente el contenido de múltiples fuentes para obtener mayor flexibilidad. De forma predeterminada, puede crear formularios utilizando WYSIWYG y la creación basada en documentos, lo que permite una integración perfecta de varios formatos de contenido.
 
 * **Facilidad de uso para usuarios no técnicos**: Edge Delivery Services permite a los usuarios no programadores administrar y publicar fácilmente formularios sin necesidad de tener amplios conocimientos de programación.
 
-* **Experiencia del usuario mejorada**: Garantice tiempos de carga rápidos e interacciones fluidas, proporcionando a los usuarios tiempos de espera mínimos y una experiencia intuitiva de cumplimentación de formularios.
+* **Mejor experiencia del usuario**: garantice tiempos de carga rápidos e interacciones fluidas, proporcionando a los usuarios tiempos de espera mínimos y una experiencia intuitiva de cumplimentación de formularios.
 
 * **Ejecución sin servidor**: Edge Delivery Services permite la ejecución sin servidor de la lógica del formulario. Esto incluye:
 
    * **Validación del lado del cliente**: la validación de campos de formulario se produce en el lado del cliente, lo que reduce los retrasos de ida y vuelta.
 
-   * **Rellenado previo y Personalization**: el rellenado previo de los datos del formulario se administra en el lado del cliente para una experiencia de usuario perfecta.
+   * **Rellenado previo y personalización**: el rellenado previo de los datos del formulario se administra en el lado del cliente para una experiencia de usuario perfecta.
 
    * **Procesamiento de envíos**: los envíos de formularios se validan y se reenvían de forma segura sin un servidor central
 
-## ¿Cómo funciona Edge Delivery Services Forms?
+## ¿Cómo funcionan los formularios de Edge Delivery Services?
 
-Los usuarios pueden crear Edge Delivery Services Forms con herramientas de creación basadas en documentos como Google Drive, SharePoint o el editor universal (creación de WYSIWYG), a la vez que aprovechan el estilo, el comportamiento y los componentes básicos disponibles en el repositorio de GitHub. Una vez creado, Edge Delivery Services Forms puede enviar datos a cualquier plataforma mediante el servicio de envío de Forms.
+Los usuarios pueden crear formularios de Edge Delivery Services con herramientas de creación basadas en documentos como Google Drive, SharePoint o el editor universal (creación de WYSIWYG), a la vez que aprovechan el estilo, el comportamiento y los componentes básicos disponibles en el repositorio de GitHub. Una vez creados, los formularios de Edge Delivery Services pueden enviar datos a cualquier plataforma mediante el servicio de envío de formularios.
 
-![Funcionamiento de Edge Delivery Services Forms](/help/edge/docs/forms/assets/eds-forms-working.png)
+![Funcionamiento de los formularios de Edge Delivery Services](/help/edge/docs/forms/assets/eds-forms-working.png)
 
-### Componentes clave de Edge Delivery Services Forms
+### Componentes clave de los formularios de Edge Delivery Services
 
-Los componentes clave de Edge Delivery Services Forms son:
+Los componentes clave de los formularios de Edge Delivery Services son:
 
-* **Repositorio de GitHub**: el repositorio de GitHub sirve como modelo para crear Edge Delivery Services Forms. Los formularios aprovechan la funcionalidad y el estilo básicos del repositorio y permiten a los usuarios agregar personalizaciones y componentes personalizados al Forms de Edge Delivery Services.
+* **Repositorio de GitHub**: el repositorio de GitHub sirve como modelo para crear formularios de Edge Delivery Services. Los formularios aprovechan el estilo y la funcionalidad básicos del repositorio y permiten a los usuarios añadir personalizaciones y componentes personalizados a los formularios de Edge Delivery Services.
 
-* **Creación de formularios**: Edge Delivery Services Forms admite dos tipos de creación: WYSIWYG y la creación basada en documentos. La creación basada en documentos permite a los usuarios crear formularios utilizando herramientas conocidas como Google Docs y Microsoft Office. La creación de WYSIWYG permite a los usuarios diseñar formularios de forma visual mediante el Editor universal, lo que facilita a los usuarios sin conocimientos técnicos la creación y administración de formularios. Universal Editor ofrece una experiencia de creación de formularios intuitiva y proporciona acceso a numerosas funciones de formulario.
+* **Creación de formularios**: los formularios de Edge Delivery Services admiten dos tipos de creación: WYSIWYG y la creación basada en documentos. La creación basada en documentos permite a los usuarios crear formularios utilizando herramientas conocidas como Google Docs y Microsoft Office. La creación de WYSIWYG permite a los usuarios diseñar formularios de forma visual mediante el editor universal, lo que facilita a los usuarios sin conocimientos técnicos la creación y administración de formularios. Universal Editor ofrece una experiencia de creación de formularios intuitiva y proporciona acceso a numerosas funciones de formulario.
 
-* **Servicio de envío de Forms**: El servicio de envío de Forms le permite almacenar datos de los envíos de formularios en cualquier plataforma, como OneDrive, SharePoint o Hojas de cálculo de Google, lo que facilita el acceso y la administración de los datos de formulario en su sistema preferido.
+* **Servicio de envío de formularios**: El servicio de envío de formularios le permite almacenar datos de los envíos de formularios en cualquier plataforma, como OneDrive, SharePoint o Hojas de cálculo de Google, lo que facilita el acceso y la administración de los datos de formulario en su sistema preferido.
 
 ## Creación de un formulario
 
@@ -112,6 +112,6 @@ En la siguiente tabla se describen las funciones y los casos de uso de cada edit
 >
 > Si encuentra que falta alguna función en el editor universal que antes estaba disponible en el editor de formularios adaptables, puede solicitarla enviando un correo electrónico a mailto:aem-forms-ea@adobe.com con su dirección de correo electrónico oficial.
 
-## Ver también
+## Véase también
 
 {{see-more-forms-eds}}

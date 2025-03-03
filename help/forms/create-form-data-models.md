@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
 source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1542'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -131,7 +131,7 @@ Cuando este tipo de archivo del proyecto se implementa mediante la canalización
 
       >[!NOTE]
       >
-      >Los usuarios de [!DNL Adobe Managed Service] pueden cifrar los valores secretos usando la compatibilidad con cifrado para obtener detalles, vea [compatibilidad con cifrado para propiedades de configuración](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html?lang=es#enabling-encryption-support) y coloque texto cifrado en el valor después de que las [configuraciones según el contexto estén disponibles en el Service Pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=es#runmode-specific-context-aware-config).
+      >Los usuarios de [!DNL Adobe Managed Service] pueden cifrar los valores secretos utilizando la compatibilidad con cifrado (para obtener más información, consulte [compatibilidad con cifrado para propiedades de configuración](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html?lang=es#enabling-encryption-support)) y colocar texto cifrado en el valor después de [las configuraciones según el contexto están disponibles en Service Pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=es#runmode-specific-context-aware-config).
 
 1. Actualice las definiciones de fuentes de datos mediante la opción para actualizar las definiciones de fuentes de datos en el [Editor del modelo de datos de formulario](#data-sources) para actualizar la caché de FDM mediante la interfaz de usuario de FDM y obtener la configuración más reciente.
 
