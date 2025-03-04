@@ -7,8 +7,8 @@ Role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: db58ce85-139a-4cc1-8e18-73da76357299
-source-git-commit: 320ab86bc73e874705d985b927e90eec3cad1cf9
-workflow-type: ht
+source-git-commit: bb01a76ae2bfd78ae648e91545f34f20fabebd10
+workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 100%
 
@@ -63,7 +63,7 @@ Adobe Experience Manager ofrece y admite varios editores para crear un formulari
 
 El editor universal es un editor visual versátil que ofrece una función WYSIWYG (what-you-see-is-what-you-get), lo que garantiza una experiencia de creación de formularios intuitiva. Se recomienda utilizar el editor universal para crear nuevos formularios, ya que ofrece un diseño moderno y fácil de usar, así como una interfaz práctica de arrastrar y soltar.
 
-Para crear formularios con el editor universal, se utilizan las plantillas de Edge Delivery Services disponibles en el entorno de AEM. Estos formularios heredan la apariencia de las configuraciones del repositorio de GitHub de Edge Delivery Services. [Para habilitar la publicación de estos formularios en Edge Delivery Services, se ha establecido una conexión entre su entorno de AEM y el repositorio de GitHub de Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md).
+Para crear formularios con el editor universal, se utilizan las plantillas de Edge Delivery Services disponibles en el entorno de AEM. Estos formularios heredan la apariencia de las configuraciones del repositorio de GitHub de Edge Delivery Services. [Para habilitar la publicación de estos formularios en Edge Delivery Services, se ha establecido una conexión entre su entorno de AEM y el repositorio de GitHub de Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
 
 Para obtener más información sobre cómo crear con el editor universal, consulte el artículo [Creación de contenido con el editor universal.](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/sites/authoring/universal-editor/authoring)
 
