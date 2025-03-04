@@ -3,10 +3,10 @@ title: Descarga de recursos desde Content Hub
 description: Obtenga información sobre cómo descargar recursos desde el portal de Content Hub
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 07d533962ae2922c8a467924361fdfefc5c594eb
+source-git-commit: 523ba2ae59bfc0d35cca350a8daf3e20ac9e5332
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 9%
+source-wordcount: '778'
+ht-degree: 8%
 
 ---
 
@@ -128,7 +128,7 @@ Más información sobre [ver y administrar representaciones en Experience Manage
 
 >[!NOTE]
 > 
-* Para obtener acceso anticipado a la cuenta de Dynamic Media, [cree y envíe un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
+* La función de representaciones de recorte dinámico e inteligente se encuentra en la fase de adopción anticipada. Para obtener acceso a la funcionalidad, [cree y envíe un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
 * Los clientes recién incorporados en [Servicios de API abierta de Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) deben revisar los ajustes preestablecidos de imagen existentes para su aprobación.
 
 
