@@ -1,20 +1,18 @@
 ---
-title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: Notas de la versión 2025.1.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notas de la versión 2025.1.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 1105fedcf17cb74c9abec9de68485e1ef714ebbe
+source-git-commit: f899398182f9d0991123828ca217379653a4e397
 workflow-type: tm+mt
-source-wordcount: '1393'
-ht-degree: 60%
+source-wordcount: '1513'
+ht-degree: 87%
 
 ---
 
-# Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notas de la versión 2025.1.0 para [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-En la siguiente sección se describen las notas de la versión de la funcionalidad actual (la más reciente) de [!DNL Experience Manager] as a Cloud Service.
+En la siguiente sección se describen las notas de la versión de funciones de la versión 2025.1.0 de [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ En la siguiente sección se describen las notas de la versión de la funcionalid
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de la versión de [!DNL Adobe Experience Manager] como versión de funcionalidad actual (2025.2.0) de [!DNL Cloud Service] es el miércoles, 04 de marzo de 2025. La próxima versión de funcionalidad (2025.3.0) está planificada para el viernes, 27 de marzo de 2025.
+La fecha de la versión de [!DNL Adobe Experience Manager] como versión de funcionalidad actual (2025.1.0) de [!DNL Cloud Service] es el 30 de enero de 2025. La próxima versión de funcionalidad (2025.2.0) está planificada para el 4 de marzo de 2025.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
@@ -38,7 +36,7 @@ Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help
 
 ## Release Video {#release-video}
 
-Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
+Have a look at the January 2025 Release Overview video for a summary of the features added in the 2025.1.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
@@ -46,60 +44,72 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
+**Los comentarios del editor de fragmentos de contenido ya están disponibles de forma generalizada**
 
-### Nuevas funciones de AEM Sites {#new-features-sites}
+Colabore fácilmente con sus compañeros de trabajo para crear fragmentos de contenido de AEM mediante el uso del servicio de comentarios nuevos y modernizados en el Editor de fragmentos de contenido de AEM.
+[Más información](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring?#commenting-on-your-fragment).
 
-** de etiquetado automático de fragmentos de contenido **
+**Editor de fragmentos de contenido e interfaces de usuario de administración: compatibilidad actualizada con la versión de AEM as a Cloud Service**
 
-Al crear fragmentos de contenido, ahora es posible heredar automáticamente las etiquetas asignadas al modelo de contenido. Esto permite una potente clasificación automática del contenido almacenado en los fragmentos de contenido.
+La versión mínima de AEM as a Cloud Service compatible con las nuevas interfaces de usuario de Administrador y Editor de fragmentos de contenido es ahora 2023.8.13099. Las versiones anteriores a la versión de disponibilidad general de las nuevas interfaces de usuario ya no serán compatibles
 
-** de compatibilidad con UUID de fragmentos de contenido **
+### Programa para primeros usuarios {#sites-early-adopter}
 
-La compatibilidad con UUID de fragmento de contenido ahora es GA. La nueva funcionalidad no altera el comportamiento basado en rutas de las operaciones dentro de AEM, como mover, cambiar el nombre y desplegar, donde las rutas se ajustan automáticamente, pero puede hacer que el consumo externo de fragmentos de contenido sea más fácil y estable, especialmente cuando se utilizan consultas de GraphQL que dirigen directamente a fragmentos individuales con consultas ByPath. Estas consultas pueden romperse si cambia una ruta de fragmento. Al utilizar el nuevo tipo de consulta ById, la consulta ahora permanece estable, ya que el UUID de un fragmento no cambia en los casos en que las rutas sí lo hacen.
+**Fragmentos de contenido mejorados**
 
-** Dynamic Media con compatibilidad con OpenAPI en el Editor de fragmentos de contenido y GraphQL **
+Se han mejorado las [referencias a fragmentos de contenido con referencias basadas en ID únicos](/help/headless/graphql-api/uuid-reference-upgrade.md), lo que ayuda a garantizar que las consultas de GraphQL de fragmentos de contenido individuales puedan permanecer estables incluso si el fragmento se movió a otra ubicación. Esto ahora es posible con las consultas &quot;ByID&quot;. Aunque las rutas pueden cambiar, lo que potencialmente rompe las consultas &quot;ByPath&quot;, los UUID son estables. Los nuevos ID también se pueden devolver como propiedades en cualquier consulta u otra solicitud de API aplicable. Limitación actual (2025.1): las referencias de página aún no son compatibles con ID únicos. Si se hace referencia a las páginas en los fragmentos de contenido, esta función no debe utilizarse. Se prevé eliminar esta limitación en la próxima versión de AEM as a Cloud Service.
 
-Assets que se almacenan en programas de AEM as a Cloud Service diferentes a los fragmentos de contenido y que se habilitan con la nueva capacidad Dynamic Media con OpenAPI, ahora se puede utilizar en fragmentos de contenido. El selector de imágenes en el nuevo Editor de fragmentos de contenido ahora permite seleccionar repositorios &quot;remotos&quot; como fuente para los recursos de imagen a los que se hace referencia en el fragmento. Además, al enviar estos fragmentos de contenido mediante AEM GraphQL, la respuesta JSON ahora incluye propiedades necesarias para los recursos remotos (assetId, repositoryId), de modo que las aplicaciones cliente puedan crear Dynamic Media respectivos con URL de OpenAPI para recuperar la imagen.
+**AEM REST OpenAPI para la entrega de fragmentos de contenido**
 
-** de API HTTP de traducción **
+[AEM REST OpenApi para la entrega de fragmentos de contenido](/help/headless/aem-rest-openapi-content-fragment-delivery.md) ya está disponible para AEM as a Cloud Service.
 
-La API de REST HTTP de traducción de AEM que lleva un tiempo en el modo de usuario inicial es ahora GA. La documentación se encuentra [aquí](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/). La API permite automatizar los pasos necesarios en el proceso de administración de traducciones para el contenido en AEM.
+### Funciones en desuso {#sites-deprecated}
 
+#### Editor de SPA  {#spa-editor}
+
+El [Editor de SPA](/help/implementing/developing/hybrid/introduction.md) ha quedado obsoleto para nuevos proyectos a partir de la versión 2025.1.0. El editor de SPA sigue siendo compatible con los proyectos existentes, pero no debe utilizarse en nuevos proyectos.
+
+Los editores preferidos para administrar contenido sin encabezado en AEM ahora son:
+
+* [El editor universal](/help/edge/wysiwyg-authoring/authoring.md) para la edición visual.
+* [El editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) para la edición de contenido sin encabezado basada en formularios.
+
+#### Funciones de PWA {#pwa-features}
+
+[Las características de la aplicación web progresiva (PWA)](/help/sites-cloud/authoring/sites-console/enable-pwa.md) para AEM Sites ya no se utilizan en los nuevos proyectos que comiencen con la versión 2025.1.0. Esta función sigue siendo compatible con los proyectos existentes, pero no debe utilizarse para nuevos proyectos
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nuevas funciones de AEM Assets {#new-features-assets}
-
-**Nueva estructura de empaquetado de Dynamic Media**
-
-Ya está disponible una estructura de empaquetado de Dynamic Media actualizada para cumplir mejor con las expectativas del mercado y admitir el seguimiento. La nueva estructura de embalaje incluye:
-
-* Dynamic Media Prime, que incluye Dynamic Media con API y vídeo para mejorar la entrega.
-
-* Dynamic Media Ultimate añade funciones de entrega y transformación para satisfacer requisitos de uso más exigentes.
-
-Debe tener Assets as a Cloud Service Prime o Ultimate para beneficiarse de la nueva estructura de empaquetado.
-
-**Subtítulos de vídeo generados por IA**
-
-Los subtítulos de vídeo generados por IA en Adobe Dynamic Media utilizan la inteligencia artificial para generar subtítulos automáticamente para el contenido de vídeo. Esta función está diseñada para mejorar la accesibilidad y la experiencia del usuario al proporcionar subtítulos precisos. Los subtítulos se generan a partir del audio original, cualquier pista de audio adicional o subtítulos adicionales se proporcionan en la pestaña &quot;Subtítulos y audio&quot; en la página de propiedades de vídeo. Con compatibilidad con más de 60 idiomas, los subtítulos se pueden revisar y previsualizar antes de publicar el vídeo.
+### Nuevas funciones de la vista AEM Assets {#new-features-assets}
 
 **Personalizar filtros de búsqueda**
 
 Los filtros de búsqueda personalizada mejoran la precisión y la eficacia de la búsqueda de información relevante. Permite realizar búsquedas más adaptadas y filtrar los datos según atributos específicos como marca, producto, categoría u otros identificadores clave. Esto mejora la organización, reduce el tiempo empleado en tamizar los resultados irrelevantes y permite una toma de decisiones más rápida. También admite la escalabilidad, ya que los conjuntos de datos grandes son más fáciles de navegar y analizar.
 
-![personalizar filtros de búsqueda](/help/assets/assets/custom-search-filters.png)
+![filtros de búsqueda personalizados](/help/assets/assets/custom-search-filters.png)
 
+### Nuevas funciones en Content Hub {#new-features-content-hub}
 
-### Funciones de acceso anticipado en Content Hub {#early-access-content-hub}
+Descripción
 
-Content Hub ahora le permite ver y descargar representaciones dinámicas y de recorte inteligente, además de las representaciones estáticas existentes. Como administrador de Content Hub, también puede configurar la disponibilidad de estas representaciones para los usuarios mediante la interfaz de usuario de configuración.
+### Funciones de acceso rápido de AEM Assets {#early-access-features-assets}
 
-![representaciones dinámicas](/help/assets/assets/download-single-asset-renditions-dynamic.png)
+**Subtítulos de vídeo generados por IA**
 
-
+Los subtítulos de vídeo generados por IA en Adobe Dynamic Media utilizan la inteligencia artificial para generar subtítulos automáticamente para el contenido de vídeo. Esta función está diseñada para mejorar la accesibilidad y la experiencia del usuario gracias a la provisión de subtítulos precisos en tiempo real. Los subtítulos se generan a partir del audio original, de cualquier pista de audio adicional o de los subtítulos adicionales proporcionados en la pestaña &quot;Subtítulos y audio&quot; de la página de propiedades del vídeo. Con compatibilidad con más de 60 idiomas, los subtítulos se pueden revisar y previsualizar antes de publicar el vídeo.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### Nuevas funciones en AEM Forms {#forms-new-features}
+
+* **Administrar publicación**: puede usar el flujo de trabajo [Administrar publicación](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option)) para publicar o cancelar la publicación de formularios en entornos, generalmente desde la instancia de autor a las instancias de publicación y vista previa. Permite a los usuarios publicar, cancelar la publicación o programar la publicación de contenido de una manera optimizada.
+
+* **[Guardar automáticamente un borrador para formularios adaptables basados en componentes principales](/help/forms/save-core-component-based-form-as-draft.md)**: los usuarios ahora pueden beneficiarse de una función de guardado automático que guarda automáticamente un formulario parcialmente completado como borrador. Pueden volver más tarde para terminar de rellenarlo en el mismo dispositivo o en otro distinto. Esta función mejora las tasas de conversión para las organizaciones al reducir el abandono de formularios, ya que los usuarios no tienen que volver a empezar a rellenar el formulario desde el principio.
+
+* **[Mejoras en el editor de reglas](/help/forms/invoke-service-enhancements-rule-editor.md)**: para Forms adaptable basado en componentes principales, puede usar la salida de Invocar servicio para rellenar opciones desplegables y establecer paneles repetibles o individuales. Además, este resultado se puede utilizar para validar otros campos.
+
+* **[Mejorar la experiencia del usuario con botones de navegación en los diseños de panel](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)**: ahora puede añadir botones de navegación a los diseños de panel, como Pestañas horizontales, Pestañas verticales, Acordeones o el Asistente. Estos botones mejoran la experiencia del usuario al simplificar las transiciones entre paneles y se centran en el panel seleccionado.
+
 
 ### Funciones de acceso rápido de AEM Forms {#forms-new-early-access-features}
 
@@ -107,16 +117,15 @@ El programa para acceso rápido de AEM Forms ofrece una oportunidad única de ob
 
 En estas notas de la versión se indican las innovaciones de la versión actual. Para ver la lista completa de innovaciones disponibles en el programa para acceso rápido, consulte la [documentación del programa de acceso rápido de AEM Forms](/help/forms/early-access-ea-features.md).
 
-#### Plantillas de correo electrónico de HTML en Forms adaptable
+#### [Plantillas de correo electrónico de HTML en Forms adaptable](/help/forms/html-email-templates-in-adaptive-forms.md)
 
-El Forms adaptable le permite usar [plantillas de correo electrónico de HTML](/help/forms/html-email-templates-in-adaptive-forms.md). Las plantillas de correo electrónico HTML le permiten enviar correos electrónicos enriquecidos, personalizados y visualmente atractivos cuando se envía un formulario. Estos correos electrónicos se pueden personalizar con los datos del formulario y mejorar mediante varias etiquetas de correo electrónico, como imágenes y vínculos. Con los formularios adaptables, puede cargar un archivo que contenga una plantilla HTML o utilizar un editor de texto sin formato para crear estas plantillas.
+El Forms adaptable permite utilizar plantillas de correo electrónico de HTML. Las plantillas de correo electrónico HTML le permiten enviar correos electrónicos enriquecidos, personalizados y visualmente atractivos cuando se envía un formulario. Estos correos electrónicos se pueden personalizar con los datos del formulario y mejorar mediante varias etiquetas de correo electrónico, como imágenes y vínculos. Con los formularios adaptables, puede cargar un archivo que contenga una plantilla HTML o utilizar un editor de texto sin formato para crear estas plantillas.
 
 ![Plantilla de correo electrónico HTML](/help/forms/assets/html-email.png)
 
 #### Compatibilidad mejorada con el almacenamiento en la nube: carga directa del PDF en el almacenamiento del blob de Azure
 
-Las API de generación de documentos de AEM Forms ahora le permiten [cargar directamente documentos de PDF](/help/forms/early-access-ea-features.md#doc-generation-api) generados en Azure Blob Storage. Esta mejora optimiza el almacenamiento y la recuperación, mejorando la eficiencia y la integración con los flujos de trabajo en la nube.
-
+Las API de generación de documentos de AEM Forms ahora admiten la carga directa de documentos de PDF generados al almacenamiento del blob de Azure. Esta mejora optimiza el almacenamiento y la recuperación, mejorando la eficiencia y la integración con los flujos de trabajo en la nube.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 

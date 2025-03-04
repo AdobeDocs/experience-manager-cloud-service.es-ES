@@ -5,7 +5,7 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: dfa378e6ff8d0295a1e59cbf2cc71ca1a3eae9cb
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 60%
@@ -25,11 +25,11 @@ A través de una configuración sencilla, un autor de contenido ahora puede habi
 >* Comprensión de las estrategias de almacenamiento en caché
 >* Asistencia de su equipo de desarrollo
 >
->Antes de utilizar esta función, Adobe recomienda hablar con su equipo de desarrollo para definir la mejor manera de utilizarla para su proyecto.
+>Antes de utilizar esta función, Adobe recomienda hablar con su equipo de desarrollo para definir la mejor manera de utilizarla en su proyecto.
 
 >[!IMPORTANT]
 >
->Las características de la aplicación web progresiva (PWA) para AEM Sites [han quedado obsoletas](/help/release-notes/release-notes-cloud/release-notes-current.md#pwa-features).
+>Las características de la aplicación web progresiva (PWA) para AEM Sites [han quedado obsoletas](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features).
 >
 >Los proyectos existentes que utilicen esta función seguirán siendo compatibles, pero los nuevos proyectos no deberán utilizarla.
 
@@ -37,9 +37,9 @@ A través de una configuración sencilla, un autor de contenido ahora puede habi
 
 Las [Aplicaciones web progresivas (PWA)](https://developer.mozilla.org/es-ES/docs/Web/Progressive_web_apps) habilitan experiencias de aplicación inmersivas para AEM Sites, lo que les permite almacenarse localmente en el equipo de un usuario y estar accesibles sin conexión. Un usuario podría navegar por un sitio mientras está fuera de casa, incluso si pierde la conexión a Internet. Los PWA permiten una experiencia perfecta incluso si la red se pierde o es inestable.
 
-En lugar de requerir la grabación del sitio, un autor de contenido puede configurar las propiedades del PWA como una ficha adicional en las [propiedades de página](/help/sites-cloud/authoring/sites-console/page-properties.md) de un sitio.
+En lugar de requerir la grabación del sitio, un autor de contenido puede configurar las propiedades de PWA como una ficha adicional en las [propiedades de página](/help/sites-cloud/authoring/sites-console/page-properties.md) de un sitio.
 
-* Cuando se guarda o publica, esta configuración almacena en déclencheur un controlador de eventos que escribe los [archivos de manifiesto](https://developer.mozilla.org/es-ES/docs/Web/Manifest) y un [service worker](https://developer.mozilla.org/es-ES/docs/Web/API/Service_Worker_API) que habilitan las características de PWA en el sitio.
+* Cuando se guarda o publica, esta configuración almacena en déclencheur un controlador de eventos que escribe los [archivos de manifiesto](https://developer.mozilla.org/es-ES/docs/Web/Manifest) y un [trabajador de servicio](https://developer.mozilla.org/es-ES/docs/Web/API/Service_Worker_API) que habilitan las características de PWA en el sitio.
 * Las asignaciones de Sling también se mantienen para garantizar que el trabajador de servicio se proporciona desde la raíz de la aplicación y habilita el contenido de proxy que permite las funciones sin conexión dentro de la aplicación.
 
 Con la PWA, el usuario tiene una copia local del sitio, lo que ofrece una experiencia similar a la de una aplicación incluso sin conexión a Internet.
@@ -63,7 +63,7 @@ La versión 2.15.0 y posteriores de los componentes principales admiten completa
 
 >[!NOTE]
 >
->El Adobe no recomienda el uso de las características de PWA en componentes personalizados o no [extendidos desde los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=es).
+>Adobe no recomienda usar las características de PWA en componentes personalizados o no [extendidos desde los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=es).
 <!--
 Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API), which supports the PWA features.
 
@@ -138,7 +138,7 @@ El sitio está configurado y puede [instalarlo como una aplicación local](#usin
 
 ## Uso del sitio habilitado para el PWA {#using-pwa-enabled-site}
 
-Ahora que ha [configurado su sitio para admitir al PWA](#enabling-pwa-for-your-site), puede experimentarlo usted mismo.
+Ahora que ha [configurado su sitio para admitir PWA](#enabling-pwa-for-your-site), puede experimentarlo usted mismo.
 
 1. Acceda al sitio en un [navegador compatible](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary).
 1. Verá un nuevo icono en la barra de direcciones del explorador que indica que el sitio se puede instalar como aplicación local.
@@ -149,13 +149,13 @@ Ahora que ha [configurado su sitio para admitir al PWA](#enabling-pwa-for-your-s
 
 ## Opciones detalladas {#detailed-options}
 
-La siguiente sección proporciona más detalles sobre las opciones disponibles al [configurar el sitio para el PWA](#enabling-pwa-for-your-site).
+La siguiente sección proporciona más detalles sobre las opciones disponibles al [configurar el sitio para PWA](#enabling-pwa-for-your-site).
 
 ### Configuración de una experiencia instalable {#configure-installable-experience}
 
 Esta configuración permite que el sitio se comporte como una aplicación nativa permitiendo instalarlo en la pantalla de inicio del visitante y haciendo que esté disponible sin conexión.
 
-* **Habilitar PWA**: esta es la opción principal para habilitar el PWA en el sitio.
+* **Habilitar PWA**: esta es la opción principal para habilitar PWA en el sitio.
 * **URL de inicio**: esta es la [URL de inicio preferida](https://developer.mozilla.org/en-US/docs/Web/Manifest/start_url) que la aplicación abre cuando el usuario carga la aplicación instalada localmente.
    * Puede ser cualquier ruta en la estructura de contenido.
    * No tiene que ser la raíz, y a menudo se trata de una página de bienvenida dedicada para la aplicación.
@@ -169,7 +169,7 @@ Esta configuración permite que el sitio se comporte como una aplicación nativa
    * **IU mínima**: el explorador está oculto, como una aplicación nativa, pero se exponen los controles básicos de navegación.
    * **Pantalla completa**: el explorador está oculto, como una aplicación nativa, pero se representa en modo de pantalla completa.
       * Con esta opción, la navegación de la aplicación debe ser posible por completo a través del contenido mediante vínculos y componentes en las páginas del sitio, sin utilizar los controles de navegación del explorador.
-* **Orientación de la pantalla**: como aplicación local, el PWA debe saber cómo manejar las [orientaciones del dispositivo](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation).
+* **Orientación de la pantalla**: como aplicación local, PWA debe saber cómo gestionar las [orientaciones del dispositivo](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation).
    * **Cualquiera**: la aplicación se ajusta a la orientación del dispositivo del usuario. Este es el valor predeterminado.
    * **Vertical**: esto fuerza a la aplicación a abrirse en formato vertical independientemente de la orientación del dispositivo del usuario.
    * **Horizontal**: esto fuerza a la aplicación a abrirse en formato horizontal independientemente de la orientación del dispositivo del usuario.
@@ -220,7 +220,7 @@ Adobe recomienda limitar el número de páginas que se prealmacenarán en caché
 
 ### Habilite PWA después de estabilizar los scripts de proyecto y las hojas de estilo. {#pwa-stabilized}
 
-Las bibliotecas de cliente se entregan con la adición de un selector de caché que cumple el siguiente patrón `lc-<checksumHash>-lc`. Cada vez que cambia uno de los archivos (y dependencias) que componen una biblioteca, este selector también cambia. Si enumeró una biblioteca de cliente para que la prealmacene en caché el trabajador de servicio y desea hacer referencia a una nueva versión, recupere y actualice manualmente la entrada. Como resultado, Adobe recomienda configurar el sitio para que sea un PWA después de estabilizar los scripts de proyecto y las hojas de estilos.
+Las bibliotecas de cliente se entregan con la adición de un selector de caché que cumple el siguiente patrón `lc-<checksumHash>-lc`. Cada vez que cambia uno de los archivos (y dependencias) que componen una biblioteca, este selector también cambia. Si enumeró una biblioteca de cliente para que la prealmacene en caché el trabajador de servicio y desea hacer referencia a una nueva versión, recupere y actualice manualmente la entrada. Como resultado, Adobe recomienda configurar el sitio para que sea un PWA después de estabilizar los scripts de proyecto y las hojas de estilo.
 
 ### Minimice el número de variaciones de imagen. {#minimize-variations}
 
@@ -228,6 +228,6 @@ El componente de imagen de los componentes principales de AEM determina en el fr
 
 Al configurar la precaché, el usuario debe enumerar todas las variaciones de ruta que se pueden recuperar. Estas variaciones están compuestas de parámetros como calidad y anchura. Se recomienda reducir el número de estas variaciones a un máximo de tres: pequeñas, medianas y grandes. Puede hacerlo a través del cuadro de diálogo de la directiva de contenido de [Componente de imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=es).
 
-Si no se configura con cuidado, la memoria y el consumo de red pueden afectar gravemente al rendimiento de su PWA. Además, si tiene intención de prealmacenar en caché, por ejemplo, 50 imágenes y tiene tres anchos por imagen, el usuario que mantenga el sitio deberá mantener una lista de hasta 150 entradas en la sección PWA de precaché de las propiedades de página.
+Si no se configura con cuidado, la memoria y el consumo de red pueden afectar gravemente al rendimiento de su PWA. Además, si tiene intención de prealmacenar en caché, por ejemplo, 50 imágenes y tiene tres anchos por imagen, el usuario que mantenga el sitio deberá mantener una lista de hasta 150 entradas en la sección de precaché de PWA de las propiedades de página.
 
 Adobe también le recomienda configurar su sitio para que sea una PWA después de que el uso de imágenes en el proyecto se haya estabilizado.

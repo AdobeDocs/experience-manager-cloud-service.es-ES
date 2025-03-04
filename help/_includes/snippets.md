@@ -1,5 +1,5 @@
 ---
-source-git-commit: d06399fd63d38738e7aff8503aec9a72a2081b5c
+source-git-commit: 3f656e592a4a7a46a1f868f8400f22fb47bcd160
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 97%
@@ -248,7 +248,7 @@ Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge 
 
 >[!IMPORTANT]
 >
->El editor de SPA [ha quedado obsoleto](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated) para nuevos proyectos. Sigue siendo compatible con Adobe para los proyectos existentes, pero no debe utilizarse para nuevos proyectos. Los editores preferidos para administrar contenido en AEM ahora son:
+>El editor de SPA [ha quedado obsoleto](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#spa-editor) para nuevos proyectos. Sigue siendo compatible con Adobe para los proyectos existentes, pero no debe utilizarse para nuevos proyectos. Los editores preferidos para administrar contenido en AEM ahora son:
 >
 >* [El Editor universal](/help/edge/wysiwyg-authoring/authoring.md) para editar contenido sin encabezado de forma visual.
 >* [El Editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) para la edición de contenido sin encabezado basada en formularios.
