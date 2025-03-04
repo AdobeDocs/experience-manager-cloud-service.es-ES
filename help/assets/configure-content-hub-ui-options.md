@@ -2,9 +2,9 @@
 title: Configuración de la interfaz de usuario de Content Hub
 description: Configuración de la interfaz de usuario de Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 323fe1ba95b027f3c0d625e122b1885723e94b0f
+source-git-commit: e0c459ce360837fa0031278804d8e7b46b15d0e5
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1668'
 ht-degree: 16%
 
 ---
@@ -229,19 +229,17 @@ Si la visibilidad de los recursos caducados está habilitada, Content Hub tambi�
 
 Las representaciones son versiones personalizadas de recursos digitales, como imágenes, documentos, etc., diseñadas para diferentes dispositivos y plataformas a fin de garantizar un rendimiento óptimo. Ver más sobre [representaciones en Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
-Content Hub permite descargar representaciones estáticas. Las representaciones estáticas son diferentes representaciones del archivo original de un recurso que se generan de forma nativa. Algunos ejemplos son las miniaturas o las representaciones optimizadas para móviles. Los administradores pueden administrar y controlar la disponibilidad de las representaciones de recursos, y administrar si se pueden descargar los recursos originales o no.
-
 Para ello, ejecute los siguientes pasos:
 
 En la interfaz de usuario de [Configurations](#access-configuration-options-content-hub), haga clic en **[!UICONTROL Renditions]**. Las opciones disponibles son las siguientes:
 
-* Habilite la opción [!UICONTROL Habilitar disponibilidad de representaciones estáticas] para que todas las representaciones estáticas sean visibles en Content Hub.
+* Habilite la opción [!UICONTROL Habilitar disponibilidad de representaciones] para que todas las representaciones estén visibles en Content Hub.
 
 * Habilite o deshabilite **[!UICONTROL Permitir que los usuarios descarguen los recursos originales]** para controlar la disponibilidad para descargar los recursos originales.
 
   ![Configurar representaciones en Content Hub](assets/config-renditions.png)
 
-Para obtener información sobre cómo ver y descargar representaciones estáticas en Content Hub, consulte [descargar recursos en Content Hub](/help/assets/download-assets-content-hub.md).
+Para obtener información sobre cómo ver y descargar representaciones en Content Hub, consulte [descargar recursos en Content Hub](/help/assets/download-assets-content-hub.md).
 
 ### Vínculos personalizados {#configure-custom-links-content-hub}
 
