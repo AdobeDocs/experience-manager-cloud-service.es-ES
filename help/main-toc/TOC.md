@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '6222'
+source-wordcount: '6220'
 ht-degree: 95%
 
 ---
@@ -1032,9 +1032,22 @@ ht-degree: 95%
       + [Información general](/help/edge/docs/forms/overview.md)
       + [¿Cómo funcionan los formularios de Edge Delivery Services?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + [Preguntas más frecuentes](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
+      + Creación WYSIWYG {#universal-editor}
+         + [Introducción al Editor universal de Forms para Edge Delivery Services: Guía completa](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [Cómo empezar a crear con el editor universal: tutorial paso a paso](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Cómo crear el primer formulario con el editor universal](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [Guía de la interfaz del editor universal: herramientas, funciones y navegación explicadas](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [Haga que su Forms sea compatible con dispositivos móviles: diseño interactivo en el editor universal](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [Diseño de una hermosa Forms: Guía de estilo y temática para el editor universal](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [Añadir el comportamiento dinámico a Forms: Guía completa del editor de reglas](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [Guía de envío de formularios: Configurar y personalizar las acciones de envío de formularios](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [Proteja su Forms del spam: Añadir la seguridad reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [Cómo publicar e implementar Forms: Guía de publicación del editor universal](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [Crear componentes de formulario personalizados: Guía para desarrolladores de Universal Editor](/help/edge/docs/forms/universal-editor/create-custom-component.md)
       + Creación basada en documentos {#getting-started-edge-delivery-services-forms}
          + [Crear su primer formulario: Guía de inicio rápido con hojas de Google y Excel](/help/edge/docs/forms/tutorial.md)
          + [Cómo crear Forms con hojas de Google o Excel: Guía paso a paso](/help/edge/docs/forms/create-forms.md)
+         + [Varios componentes del bloque de formulario adaptable](/help/edge/docs/forms/form-components.md)
          + [Conectar el formulario a hojas de Google: Guía de configuración de recopilación de datos](/help/edge/docs/forms/submit-forms.md)
          + [Publique el formulario: guía de publicación y recopilación de datos](/help/edge/docs/forms/publish-forms.md)
          + [Validación de campos de formulario: agregar comprobaciones de error a Forms](/help/edge/docs/forms/validate-forms.md)
@@ -1049,21 +1062,7 @@ ht-degree: 95%
          + [Hacer que el formulario sea global: Guía de traducción del formulario](/help/edge/docs/forms/translate-forms.md)
          + [Proteja su Forms: Añadir la seguridad reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Crear componentes de formulario personalizados: Guía para desarrolladores](/help/edge/docs/forms/custom-components-forms.md)
-         + [Monitorizar el rendimiento del formulario: Guía de monitorización de uso real](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-      + Creación WYSIWYG {#universal-editor}
-         + [Introducción al Editor universal de Forms para Edge Delivery Services: Guía completa](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [Cómo empezar a crear con el editor universal: tutorial paso a paso](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [Cómo crear el primer formulario con el editor universal](/help/edge/docs/forms/universal-editor/create-forms.md)
-         + [Guía de la interfaz del editor universal: herramientas, funciones y navegación explicadas](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [Haga que su Forms sea compatible con dispositivos móviles: diseño interactivo en el editor universal](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-         + [Diseño de una hermosa Forms: Guía de estilo y temática para el editor universal](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [Añadir el comportamiento dinámico a Forms: Guía completa del editor de reglas](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [Guía de envío de formularios: Configurar y personalizar las acciones de envío de formularios](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [Proteja su Forms del spam: Añadir la seguridad reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [Cómo publicar e implementar Forms: Guía de publicación del editor universal](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [Crear componentes de formulario personalizados: Guía para desarrolladores de Universal Editor](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-      + Referencias {#forms-references}
-         + [Componentes de bloque de formulario adaptable y sus propiedades](/help/edge/docs/forms/form-components.md)
+         + [Supervisar el rendimiento del formulario: guías de supervisión de uso real](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
    + Recursos de Edge Delivery {#resources}
       + Barra de tareas {#sidekick}
          + [Uso de la barra de tareas](/help/edge/docs/sidekick.md)

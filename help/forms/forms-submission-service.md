@@ -5,14 +5,17 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '883'
 ht-degree: 1%
 
 ---
 
 # Servicio de envío de Forms con Edge Delivery Services Forms
+
+<span class="preview"> Esta característica está disponible a través del programa de acceso anticipado. Para solicitar acceso, envía un correo electrónico desde tu dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> con tu nombre de organización de GitHub y el nombre del repositorio. Por ejemplo, si la dirección URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es adobe y el nombre del repositorio es abc.</span>
+
 
 El servicio de envío de Forms le permite almacenar datos de los envíos de formularios en cualquier hoja de cálculo, como OneDrive, SharePoint o Hojas de cálculo de Google, lo que le permite acceder y administrar fácilmente los datos del formulario en su plataforma de hoja de cálculo preferida.
 
@@ -30,12 +33,12 @@ Algunas ventajas de utilizar el servicio de envío de Forms con hojas de cálcul
 
 A continuación se muestran los requisitos previos para utilizar el servicio de envío de Forms:
 
-* AEM Asegúrese de que el proyecto de tenga la última versión del bloque de formulario adaptable.
+* Asegúrese de que el proyecto de AEM tenga el último bloque de formulario adaptable.
 * Asegúrese de que el repositorio de Git se añada a la lista de permitidos para utilizar el servicio de envío de Forms. [mailto:aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) con su nombre de organización de GitHub y el nombre de repositorio para que se añadan a la lista de permitidos para utilizar el servicio de envío de Forms.
 
 ## Configuración del servicio de envío de Forms
 
-AEM Cree un nuevo proyecto de configurado con el bloque de Forms adaptable. AEM Consulte el artículo [Introducción - Tutorial para desarrolladores](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) para aprender a crear un nuevo proyecto de. Actualice el archivo `fstab.yaml` en el proyecto. Reemplace la referencia existente por la ruta de acceso a la carpeta que ha compartido con el `forms@adobe.com`
+Cree un nuevo proyecto de AEM configurado con el bloque de Forms adaptable. Consulte el artículo [Introducción - Tutorial para desarrolladores](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) para aprender a crear un nuevo proyecto de AEM. Actualice el archivo `fstab.yaml` en el proyecto. Reemplace la referencia existente por la ruta de acceso a la carpeta que ha compartido con el `forms@adobe.com`
 
 Puede [configurar el servicio de envío de Forms manualmente](#configuring-the-forms-submission-service-manually) o [configurar el servicio de envío de Forms mediante la API](#configuring-the-forms-submission-service-using-api).
 
@@ -59,7 +62,7 @@ Una vez creado y previsualizado el formulario, habilite la hoja de cálculo corr
 
 >[!WARNING]
 >
-> AEM Si la hoja `incoming` no existe, no se enviará ningún dato a este libro de trabajo, ya que no se enviará ningún dato a la hoja de cálculo .
+> Si la hoja `incoming` no existe, AEM no enviará ningún dato a este libro.
 
 #### 3. Comparta la hoja de cálculo y genere un vínculo.
 
@@ -84,7 +87,7 @@ Para configurar el servicio de envío de Forms con Google Sheets o Microsoft Exc
 
    ![Vincular una hoja de cálculo](/help/forms/assets/form-submission-sheet-linking.png)
 
-1. Obtenga una vista previa y publique la hoja con el [AEM Sidekick](https://www.aem.live/docs/sidekick) con el servicio de envío de formularios actualizado.
+1. Obtenga una vista previa y publique la hoja mediante [AEM Sidekick](https://www.aem.live/docs/sidekick) con el servicio de envío de formularios actualizado.
 
 >[!NOTE]
 >
@@ -96,13 +99,13 @@ También puede enviar una solicitud **POST** al formulario para actualizar la ho
 
 >[!NOTE]
 >
-> * AEM Si la hoja `incoming` no existe, no se enviará ningún dato a este libro de trabajo, ya que no se enviará ningún dato a la hoja de cálculo .
+> * Si la hoja `incoming` no existe, AEM no enviará ningún dato a este libro.
 > * Compartir la hoja `incoming` con Adobe Experience Manager el `forms@adobe.com` y conceder acceso de edición.
 > * Previsualizar y publicar la hoja `incoming` en la barra de tareas.
 
-Para saber cómo dar formato a la solicitud de POST para configurar su hoja, consulte la [documentación de API](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/). Puede ver el ejemplo que se proporciona a continuación:
+Para saber cómo dar formato a la petición POST para configurar su hoja, consulte la [documentación de API](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/). Puede ver el ejemplo que se proporciona a continuación:
 
-Puede utilizar herramientas como curl o Postman para ejecutar esta solicitud de POST, como se muestra a continuación.
+Puede utilizar herramientas como curl o Postman para ejecutar esta petición POST, como se muestra a continuación.
 
 * **Usando Postman**:
 
@@ -149,8 +152,8 @@ Por ejemplo, ejecute el siguiente comando en el terminal o símbolo del sistema 
 
     &quot;json
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; \
-    —encabezado &quot;Content-Type: application/json&quot; \
-    —encabezado &quot;x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization]&quot; \
+    —header &quot;Content-Type: application/json&quot; \
+    —header &quot;x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization]&quot; \
     —data &#39;{
     &quot;data&quot;: {
     &quot;startDate&quot;: &quot;2025-01-10&quot;,
@@ -173,15 +176,15 @@ Por ejemplo, ejecute el siguiente comando en el terminal o símbolo del sistema 
     &quot;json
     
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; ^
-    —encabezado &quot;Content-Type: application/json&quot; ^
-    —encabezado &quot;x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization]&quot; ^
+    —header &quot;Content-Type: application/json&quot; ^
+    —header &quot;x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization]&quot; ^
     —data &quot;{\&quot;data\&quot;: {\&quot;startDate\&quot;: \&quot;2025-01-10\&quot;, \&quot;endDate\&quot;: \&quot;2025-01-25\&quot;, \&quot;destination\&quot;: \&quot;Australia\&quot;, \&quot;class\&quot;: \&quot;First Class\&quot;, \&quot;budget\&quot;: \&quot;2000\&quot;, \&quot;amount\&quot;: \&quot;1000000\&quot;, \&quot;name\&quot;: \&quot;Joe\&quot;, \&quot;age\&quot;: \&quot;35\&quot;, \&quot;subscribe\&quot;: null, \&quot;email\&quot;: \&quot;mary@gmail.com\&quot;}&quot;
     
     &quot;
 
 >[!ENDTABS]
 
-La solicitud de POST mencionada anteriormente actualiza la hoja `incoming` con la siguiente respuesta:
+La solicitud POST mencionada anteriormente actualiza la hoja `incoming` con la siguiente respuesta:
 
 ```json
     < HTTP/1.1 201 Created
@@ -203,6 +206,6 @@ La siguiente pantalla muestra la captura de pantalla de la hoja `incoming` actua
 
 ![hoja actualizada](/help/forms/assets/updated-sheet.png)
 
-## Consulte también
+## Véase también
 
 {{see-more-forms-eds}}
