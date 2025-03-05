@@ -1,15 +1,15 @@
 ---
-title: Características actuales de acceso anticipado de  [!DNL Adobe Experience Manager Forms] as a Cloud Service.
-description: Características actuales de acceso anticipado de  [!DNL Adobe Experience Manager Forms] as a Cloud Service.
+title: Funciones actuales de acceso anticipado de  [!DNL Adobe Experience Manager Forms] as a Cloud Service.
+description: Funciones actuales de acceso anticipado de  [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
+source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
 workflow-type: tm+mt
-source-wordcount: '2056'
-ht-degree: 29%
+source-wordcount: '2155'
+ht-degree: 31%
 
 ---
 
@@ -48,7 +48,7 @@ Las funciones de IA generativa que se ofrecen a través del Asistente de IA de A
 
 ### Conector de AEM Forms Workfront Fusion
 
-AEM Forms Workfront Fusion Connector permite una integración perfecta entre Adobe Experience Manager AEM () Forms y Adobe Workfront Fusion. Adobe Workfront sirve como aplicación de administración de trabajo, centralizando todo el ciclo de vida del trabajo, mientras que Workfront Fusion actúa como plataforma de integración que facilita la conectividad entre Workfront y varias aplicaciones empresariales.
+AEM Forms Workfront Fusion Connector permite una integración perfecta entre Adobe Experience Manager (AEM) Forms y Adobe Workfront Fusion. Adobe Workfront sirve como aplicación de administración de trabajo, centralizando todo el ciclo de vida del trabajo, mientras que Workfront Fusion actúa como plataforma de integración que facilita la conectividad entre Workfront y varias aplicaciones empresariales.
 
 Con AEM Forms Workfront Fusion Connector, puede diseñar flujos de trabajo que se activan automáticamente al enviar un formulario adaptable. Por ejemplo, imagine un escenario en el que se inicia un flujo de trabajo para asignar a un individuo específico la tarea de revisar los datos enviados, lo que permite la aprobación o el rechazo de una solicitud en función de la información capturada a través del formulario adaptable. Esta integración optimizada mejora la eficacia y aporta un nuevo nivel de automatización a los procesos de flujo de trabajo.
 
@@ -76,7 +76,7 @@ Los Forms de conversación son algo más que un nuevo aspecto: cambian el panora
 
 ### Creación de WYSIWYG para Edge Delivery Services
 
-La creación de WYSIWYG proporciona interfaces de WYSIWYG (editor universal y editor de Forms adaptable) para crear y publicar formularios adaptables en los Edge Delivery Services. WYSIWYG Authoring ofrece todas las capacidades de [Creación basada en documentos](/help/edge/docs/forms/overview.md#document-based-authoring-features), además de una amplia gama de características adicionales:
+La creación de WYSIWYG proporciona interfaces de WYSIWYG (editor universal y editor de Forms adaptable) para crear y publicar formularios adaptables en Edge Delivery Services. WYSIWYG Authoring ofrece todas las capacidades de [Creación basada en documentos](/help/edge/docs/forms/overview.md#document-based-authoring-features), además de una amplia gama de características adicionales:
 
 * Editor de reglas avanzado para crear lógica compleja.
 * Extensibilidad del lado del servidor para funcionalidades personalizadas.
@@ -90,11 +90,11 @@ La creación de WYSIWYG proporciona interfaces de WYSIWYG (editor universal y ed
 
 ### Conector de AEM Forms a Marketo
 
-El [conector de AEM Forms a Marketo](/help/forms/integrate-form-to-marketo-engage.md) reduce la brecha entre sus formularios web (Forms adaptable) creados con Adobe Experience Manager AEM () y su plataforma de automatización de marketing, Marketo.
+El [conector de AEM Forms a Marketo](/help/forms/integrate-form-to-marketo-engage.md) reduce la brecha entre sus formularios web (Forms adaptable) creados con Adobe Experience Manager (AEM) y su plataforma de automatización de marketing, Marketo.
 
-AEM Cuando alguien envía un formulario en su sitio web creado con Forms adaptable, el conector garantiza que los datos enviados se envíen automáticamente a Marketo. Esto elimina la necesidad de introducir los datos manualmente y reduce el riesgo de errores.
+Cuando alguien envía un formulario en su sitio web creado con AEM Adaptive Forms, el conector garantiza que los datos enviados se envíen automáticamente a Marketo. Esto elimina la necesidad de introducir los datos manualmente y reduce el riesgo de errores.
 
-AEM ![Formulario de - Conector de Marketo](/help/forms/assets/aem-forms-marketo-connector.jpeg)
+![Formulario de AEM - Conector de Marketo](/help/forms/assets/aem-forms-marketo-connector.jpeg)
 
 Al optimizar el proceso de transferencia de datos, el conector puede ayudarle a mejorar las tasas de conversión del sitio web. Al enviar automáticamente datos de posibles clientes a Marketo, puede asegurarse de que los posibles clientes cualificados se introduzcan rápidamente en sus programas de nutrición.
 
@@ -103,18 +103,40 @@ Básicamente, AEM Forms to Marketo Connector le ayuda a aprovechar las ventajas 
 ¿Listo para empezar? Los siguientes artículos proporcionan instrucciones detalladas para utilizar la innovación.
 
 * [Integrar Marketo Engage con AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
-* [Integrar un formulario adaptable con el Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-* [Configuración del Marketo Engage y la fuente de datos para el Forms adaptable existente](/help/forms/use-marketo-engage-data-source-in-form.md)
-* [Enviar un formulario adaptable existente al Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [Integrar un formulario adaptable con Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+* [Configuración de Marketo Engage y fuente de datos para Forms adaptable existente](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [Enviar un formulario adaptable existente a Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+
+### Tablero de realización de valores
+
+Rastree y analice el rendimiento de los formularios con el panel de realización de valores. Esta herramienta de análisis le ayuda a tomar decisiones basadas en datos para optimizar su estrategia de formularios.
+
+![Panel de información de uso de Forms](/help/forms/assets/forms-usage-insights.png)
+
+**Características principales:**
+
+* Supervisar los envíos de formularios, las representaciones de documentos y las métricas de creación y publicación de formularios
+* Seguimiento del uso y reutilización de fragmentos de formulario en toda la organización
+* Identificar tendencias, períodos de mayor actividad y oportunidades de mejora
+
+El panel proporciona información a través de dos secciones principales:
+
+* **Actividad de formularios y documentos a lo largo del tiempo**: Rastrea envíos, representaciones y creación/publicación de formularios
+* **Uso del fragmento**: supervisa la adopción y reutilización de fragmentos
+
+Para obtener información detallada:
+
+* [Comprender el panel de realización de valores](/help/forms/aem-forms-value-realization-dashboard.md)
+* [Interpretación de perspectivas de uso de formularios y documentos](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
 
 ## Innovaciones adicionales de acceso anticipado
 
-### Plantillas de correo electrónico de HTML en Forms adaptable
+### Plantillas de correo electrónico HTML de los formularios adaptables
 
 
-El Forms adaptable le permite usar [plantillas de correo electrónico de HTML](/help/forms/html-email-templates-in-adaptive-forms.md). Las plantillas de correo electrónico de HTML le permiten enviar correos electrónicos enriquecidos, personalizados y visualmente atractivos cuando se envía un formulario. Estos correos electrónicos se pueden personalizar con los datos del formulario y mejorar mediante varias etiquetas de correo electrónico, como imágenes y vínculos. Con Forms adaptable, puede cargar un archivo que contenga una plantilla de HTML o utilizar un editor de texto sin formato para crear estas plantillas.
+Los formularios adaptables le permite utilizar [plantillas de correo electrónico HTML](/help/forms/html-email-templates-in-adaptive-forms.md). Las plantillas de correo electrónico HTML le permiten enviar correos electrónicos enriquecidos, personalizados y visualmente atractivos cuando se envía un formulario. Estos correos electrónicos se pueden personalizar con los datos del formulario y mejorar mediante varias etiquetas de correo electrónico, como imágenes y vínculos. Con los formularios adaptables, puede cargar un archivo que contenga una plantilla HTML o utilizar un editor de texto sin formato para crear estas plantillas.
 
-![plantillas de correo electrónico de HTML](/help/forms/assets/html-email.png)
+![Plantilla de correo electrónico HTML](/help/forms/assets/html-email.png)
 
 ### Acción de envío de servicios web RESTful
 
@@ -161,15 +183,15 @@ Al ofrecer varias opciones de CAPTCHA, AEM Forms le ha permitido seleccionar la 
 ### API de Doc Assurance
 
 
-Las API de Assurance de documentos de AEM Forms son un conjunto de herramientas dentro de las API de comunicación del Cloud Service de AEM Forms que le permiten administrar la seguridad y la interacción del usuario en los documentos de su PDF.
+Las API de Assurance de documentos de AEM Forms son un conjunto de herramientas dentro de las API de comunicación de AEM Forms Cloud Service que le permiten administrar la seguridad y la interacción del usuario en sus documentos de PDF.
 
 Este es un desglose de lo que las API de Doc Assurance pueden hacer:
 
-* **Cifrar y descifrar documentos**: haga que Protect lea sus documentos haciendo que su contenido sea ilegible con cifrado. Puede controlar qué partes del PDF están cifradas, incluido todo el documento, contenido específico, metadatos o archivos adjuntos.
+* **Cifrar y descifrar documentos**: proteja sus documentos haciendo que su contenido sea ilegible con cifrado. Puede controlar qué partes de PDF están cifradas, incluido todo el documento, contenido específico, metadatos o archivos adjuntos.
 
 * **Firmar documentos digitalmente**: agregue firmas digitales a sus documentos para la validación y verificación a prueba de manipulaciones. Esto se puede utilizar con fines de certificación o para garantizar la integridad del documento
 
-* **Reader Ampliar sus documentos (Aplicar o editar derechos de uso de documentos de PDF)**: permite a su organización compartir fácilmente documentos interactivos de PDF mediante la ampliación de la funcionalidad de Adobe Reader con derechos de uso adicionales.
+* **Reader amplía sus documentos (aplica o edita los derechos de uso de los documentos de PDF)**: permite a su organización compartir fácilmente documentos interactivos de PDF al ampliar la funcionalidad de Adobe Reader con derechos de uso adicionales.
 
   Las API de extensión de Reader (derechos de uso) agregan derechos de uso a un documento de PDF. Esta acción activa funciones que normalmente no están disponibles cuando se abre un documento PDF con Adobe Reader, como agregar comentarios a un documento, rellenar formularios y guardar el documento. Los usuarios de terceros no requieren software ni complementos adicionales para trabajar con los documentos con derechos activados.
 
@@ -190,23 +212,23 @@ El servicio Forms genera PDF forms interactivos para la captura de datos. Tambi�
 
 ### API de generación de documentos
 
-La API de generación de documentos incluye una función opcional que permite la carga directa de PDF generados al almacenamiento del blob de Azure. Algunas ventajas clave de cargar PDF directamente en Azure Blob Storage mediante la API de generación de documentos son:
+La API de generación de documentos incluye una función opcional que permite la carga directa de archivos PDF generados al almacenamiento del blob de Azure. Algunas ventajas clave de cargar archivos PDF directamente en Azure Blob Storage mediante la API de generación de documentos son:
 
 * **Integración perfecta con Cloud Storage**:
-La carga directa de PDF generados en Azure Blob Storage elimina la necesidad de realizar pasos adicionales manuales o programáticos para transferir archivos, optimizar los flujos de trabajo y mejorar la eficacia.
+La carga directa de archivos PDF generados en Azure Blob Storage elimina la necesidad de realizar pasos adicionales manuales o programáticos para transferir archivos, optimizar los flujos de trabajo y mejorar la eficacia.
 
 * **Administración centralizada de documentos**:
 El almacenamiento de PDF en Azure Blob Storage permite una administración centralizada de documentos, lo que facilita la organización, recuperación y administración de archivos generados en varios casos de uso.
 
 * **Seguridad mejorada**: al aprovechar las características de seguridad integradas de Azure, como el cifrado en reposo y el control de acceso basado en roles (RBAC), los documentos confidenciales permanecen protegidos durante el almacenamiento.
 
-* **Rutas de almacenamiento personalizables**: La capacidad de definir rutas de directorio personalizadas garantiza que los PDF generados se almacenen en ubicaciones organizadas y específicas de la aplicación, lo que mejora la administración de archivos.
+* **Rutas de almacenamiento personalizables**: La capacidad de definir rutas de directorio personalizadas garantiza que los archivos PDF generados se almacenen en ubicaciones organizadas y específicas de la aplicación, lo que mejora la administración de archivos.
 
-## Ver también
+## Véase también
 
 * [Últimas innovaciones en AEM Forms](/help/forms/latest-innovations.md)
 
-* [Capacidades de AEM Forms como Cloud Service](/help/forms/home.md)
+* [Capacidades de AEM Forms as a Cloud Services](/help/forms/home.md)
 
-* [AEM Diferencia entre Forms (AMS y local) de 6.5 y AEM Forms as a Cloud Service AEM (Forms de CS](/help/forms/notable-changes.md)
+* [Diferencia entre AEM 6.5 Forms (AMS y local) y AEM Forms as a Cloud Services (AEM CS Forms)](/help/forms/notable-changes.md)
 
