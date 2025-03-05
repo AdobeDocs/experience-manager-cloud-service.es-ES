@@ -1,11 +1,11 @@
 ---
 title: 'Administración de fragmentos de contenido (Assets: fragmentos de contenido)'
-description: Aprenda a utilizar la consola de Assets AEM para administrar los fragmentos de contenido de la, como base del contenido sin encabezado o para la creación de páginas.
+description: Aprenda a utilizar la consola de Assets para administrar los fragmentos de contenido de AEM, como base del contenido sin encabezado o para la creación de páginas.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
+source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
 workflow-type: tm+mt
 source-wordcount: '1907'
 ht-degree: 65%
@@ -14,7 +14,7 @@ ht-degree: 65%
 
 # Administración de los fragmentos de contenido {#managing-content-fragments}
 
-Aprenda a utilizar la consola de Assets AEM para administrar los fragmentos de contenido de la, como base del contenido sin encabezado o para la creación de páginas.
+Aprenda a utilizar la consola de Assets para administrar los fragmentos de contenido de AEM, como base del contenido sin encabezado o para la creación de páginas.
 
 Después de definir los [Modelos de fragmento de contenido](#creating-a-content-model) puede utilizarlas para [crear los fragmentos de contenido](#creating-a-content-fragment).
 
@@ -39,7 +39,7 @@ El [Editor de fragmentos de contenido](#opening-the-fragment-editor) proporciona
 >
 >Los fragmentos de contenido son una función de Sites, pero se almacenan como **Assets**.
 >
->Ahora se administran principalmente con la consola **[Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**, aunque aún se pueden administrar desde la consola **Assets**. Esta sección cubre la administración desde la consola **Assets**.
+>Ahora se administran principalmente con la consola **[Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, aunque aún se pueden administrar desde la consola **Assets**. Esta sección cubre la administración desde la consola **Assets**.
 >
 >Existen dos editores para crear fragmentos de contenido; aunque la funcionalidad básica es la misma, existen algunas diferencias. Esta sección trata sobre el editor original, al que se accede principalmente desde la consola **Assets**. Consulte la documentación de Sites, [Fragmentos de contenido: creación](/help/sites-cloud/administering/content-fragments/authoring.md), para obtener detalles del nuevo editor (al que se accede principalmente desde la consola **Fragmentos de contenido**). Ambos editores tienen un conmutador en la barra de herramientas superior para proporcionar acceso rápido al otro editor.
 
@@ -128,7 +128,7 @@ Seleccione el fragmento para mostrar la barra de herramientas con las acciones a
 
 >[!NOTE]
 >
->Muchas de estas son [acciones estándar para Assets AEM](/help/assets/manage-digital-assets.md) y/o la [aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es) de la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de la aplicación .
+>Muchas de ellas son [acciones estándar para Assets](/help/assets/manage-digital-assets.md) y/o la [aplicación de escritorio de AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es).
 
 ## Apertura del editor de fragmentos {#opening-the-fragment-editor}
 
@@ -198,7 +198,7 @@ Algunas funciones de la barra de herramientas superior están disponibles en var
    * **Modificado**: naranja
    * **Desactivado**: rojo
 
-* Un botón le permite **Probar nuevo editor**, abriendo directamente el *nuevo* [Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md) al que se puede acceder a través de la [consola de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+* Un botón le permite **Probar nuevo editor**, abriendo directamente el *nuevo* [Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md) al que se puede acceder a través de la [consola de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
 
   >[!WARNING]
   >

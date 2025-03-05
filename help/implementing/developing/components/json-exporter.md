@@ -1,10 +1,10 @@
 ---
 title: Exportador JSON para servicios de contenido
-description: AEM AEM Los servicios de contenido están diseñados para generalizar la descripción y la entrega de contenido desde o hacia el exterior, más allá de un enfoque en las páginas web. Los servicios de contenido están diseñados para proporcionar una descripción y una entrega de contenido desde o hacia el interior de las páginas web. AEM Proporcionan la entrega de contenido a canales que no son páginas web tradicionales, utilizando métodos estandarizados que cualquier cliente puede consumir.
+description: Los servicios de contenido de AEM están diseñados para generalizar la descripción y la entrega de contenido desde o hacia AEM, más allá del enfoque en las páginas web. Proporcionan la entrega de contenido a canales que no son páginas web tradicionales de AEM, utilizando métodos estandarizados que cualquier cliente puede consumir.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 17%
@@ -13,21 +13,21 @@ ht-degree: 17%
 
 # Exportador JSON para servicios de contenido {#json-exporter-for-content-services}
 
-AEM AEM Los servicios de contenido están diseñados para generalizar la descripción y la entrega de contenido desde o hacia el interior de las páginas web, más allá del foco de las páginas web.
+Los servicios de contenido de AEM están diseñados para generalizar la descripción y la entrega de contenido desde o hacia AEM más allá del enfoque de las páginas web.
 
 Proporcionan la entrega de contenido a canales que no son páginas web de AEM tradicionales, mediante métodos estandarizados que cualquier cliente puede consumir. Estos canales pueden incluir lo siguiente:
 
 * Aplicaciones de una sola página
 * Aplicaciones móviles nativas
-* AEM Otros canales y puntos de contacto externos a los que se puede acceder mediante el uso de la
+* Otros canales y puntos de contacto externos a AEM
 
-AEM Con los fragmentos de contenido que utilizan contenido estructurado, puede proporcionar servicios de contenido mediante el exportador JSON para entregar el contenido de una página en formato de modelo de datos JSON (y) en formato de modelo de datos JSON. Esto se puede consumir en sus propias aplicaciones.
+Con los fragmentos de contenido que utilizan contenido estructurado, puede proporcionar servicios de contenido mediante el exportador JSON para entregar el contenido de una página AEM en formato de modelo de datos JSON. Esto se puede consumir en sus propias aplicaciones.
 
 ## Exportador JSON con componentes principales de fragmentos de contenido {#json-exporter-with-content-fragment-core-components}
 
-AEM AEM Con el exportador de JSON de puede enviar el contenido de una página de modelo de datos JSON en formato de modelo de datos JSON de y. Esto se puede consumir en sus propias aplicaciones.
+Con el exportador JSON de AEM puede entregar el contenido de una página de AEM (y) en formato de modelo de datos JSON. Esto se puede consumir en sus propias aplicaciones.
 
-AEM Dentro de la entrega se logra el envío mediante el selector `model` y la extensión `.json`.
+En AEM, la entrega se logra mediante el selector `model` y la extensión `.json`.
 
 `.model.json`
 
@@ -79,6 +79,6 @@ La página puede contener un solo fragmento de contenido o varios componentes de
 ## Documentación relacionada {#related-documentation}
 
 * [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md)
-* [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [Creación con fragmentos de contenido](/help/sites-cloud/authoring/fragments/content-fragments.md)
 * [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y el [componente de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es)

@@ -5,7 +5,7 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 83%
@@ -14,17 +14,17 @@ ht-degree: 83%
 
 # Fragmentos de contenido {#content-fragments}
 
-Los fragmentos de contenido en Adobe Experience Manager AEM () as a Cloud Service [se han creado y administrado como recursos independientes de la página](/help/sites-cloud/administering/content-fragments/overview.md), lo que le permite crear contenido neutro con respecto al canal, así como variaciones (posiblemente específicas del canal). Puede utilizar estos fragmentos, y sus variaciones, al crear páginas de contenido.
+Los fragmentos de contenido de Adobe Experience Manager (AEM) as a Cloud Service se [crean y administran como recursos independientes de la página](/help/sites-cloud/administering/content-fragments/overview.md), lo que le permite crear contenido neutro con respecto al canal, además de variaciones (posiblemente específicas del canal). Puede utilizar estos fragmentos, y sus variaciones, al crear páginas de contenido.
 
 >[!CAUTION]
 >
->AEM Esta página se debe leer junto con [Trabajo con fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md) (y las páginas relacionadas), ya que presenta terminología y conceptos básicos, junto con información sobre la creación y administración de fragmentos y la entrega de fragmentos de contenido estructurados a canales que no sean páginas de la lista de distribución de contenido.
+>Esta página se debe leer junto con [Trabajo con fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md) (y las páginas relacionadas), ya que presenta terminología y conceptos básicos, junto con información sobre la creación y administración de fragmentos y la entrega de fragmentos de contenido estructurados a canales que no sean páginas de AEM.
 
 >[!NOTE]
 >
 >Los fragmentos de contenido son una característica de **Sites**, pero se almacenan como **Assets**.
 >
->Ahora se administran principalmente con la consola **[Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**, aunque aún se pueden administrar desde la consola **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**.
+>Ahora se administran principalmente con la consola **[Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, aunque aún se pueden administrar desde la consola **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**.
 >
 >Existen dos editores para crear fragmentos de contenido:
 >

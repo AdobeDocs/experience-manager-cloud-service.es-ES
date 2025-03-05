@@ -1,10 +1,10 @@
 ---
 title: Configuraciones y el explorador de configuración
-description: Comprenda las configuraciones de Adobe Experience Manager AEM AEM () y cómo administran la configuración del espacio de trabajo en los entornos de trabajo de los usuarios de la.
+description: Comprenda las configuraciones de Adobe Experience Manager (AEM) y cómo administran la configuración del espacio de trabajo en AEM.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 5%
@@ -13,30 +13,30 @@ ht-degree: 5%
 
 # Configuraciones y el explorador de configuración {#configuration-browser}
 
-Las configuraciones de Adobe Experience Manager AEM AEM () sirven para administrar la configuración de los espacios de trabajo de y sirven como espacios de trabajo de.
+Las configuraciones de Adobe Experience Manager (AEM) sirven para administrar la configuración de AEM y sirven como espacios de trabajo.
 
 ## ¿Qué es una configuración? {#what-is-a-configuration}
 
 Una configuración se puede considerar desde dos puntos de vista diferentes.
 
-* AEM [Un administrador](#configurations-administrator) usa configuraciones como espacios de trabajo dentro de los espacios de trabajo para definir y administrar grupos de configuraciones.
-* AEM [Un desarrollador](#configurations-developer) usa el mecanismo de configuración subyacente que implementa las configuraciones para mantener y buscar configuraciones en los recursos de la configuración de la aplicación de la configuración de la aplicación de la aplicación de configuración de la aplicación de la aplicación de configuración de la plataforma de datos de.
+* [Un administrador](#configurations-administrator) usa configuraciones como espacios de trabajo dentro de AEM para definir y administrar grupos de configuraciones.
+* [Un desarrollador](#configurations-developer) usa el mecanismo de configuración subyacente que implementa las configuraciones para mantener y buscar la configuración en AEM.
 
-AEM AEM En resumen: desde el punto de vista de un administrador, las configuraciones son la forma en que se crean espacios de trabajo para administrar la configuración en el repositorio, mientras que el desarrollador debe comprender cómo utiliza y administra estas configuraciones en el repositorio el desarrollador, de manera que los usuarios puedan utilizarlas y administrarlas de forma más eficaz, en el repositorio de.
+En resumen: desde el punto de vista de un administrador, las configuraciones son la forma de crear espacios de trabajo para administrar la configuración en AEM, mientras que el desarrollador debe comprender cómo AEM utiliza y administra estas configuraciones dentro del repositorio.
 
-AEM Independientemente de su perspectiva, las configuraciones sirven para dos propósitos principales en la:
+Independientemente de su perspectiva, las configuraciones sirven para dos propósitos principales en AEM:
 
 * Las configuraciones habilitan determinadas funciones para determinados grupos de usuarios.
 * Las configuraciones definen los derechos de acceso para esas funciones.
 
 ## Configuraciones como administrador {#configurations-administrator}
 
-AEM El administrador y los autores de la pueden considerar las configuraciones como espacios de trabajo. Estos espacios de trabajo se pueden utilizar para recopilar grupos de configuraciones y su contenido asociado con fines organizativos mediante la implementación de derechos de acceso para esas funciones.
+El administrador y los autores de AEM pueden considerar las configuraciones como espacios de trabajo. Estos espacios de trabajo se pueden utilizar para recopilar grupos de configuraciones y su contenido asociado con fines organizativos mediante la implementación de derechos de acceso para esas funciones.
 
-AEM Se pueden crear configuraciones para muchas funciones diferentes dentro de los entornos de trabajo de la aplicación de la.
+Se pueden crear configuraciones para muchas funciones diferentes dentro de AEM.
 
 * [Segmentos de Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-* [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [Plantillas editables](/help/sites-cloud/authoring/page-editor/templates.md)
 * varias configuraciones de nube
 
@@ -60,7 +60,7 @@ Configuraciones similares son posibles no solo para plantillas editables, sino t
 
 ### Uso del explorador de configuración {#using-configuration-browser}
 
-AEM El Explorador de configuración permite a un administrador crear, administrar y configurar fácilmente derechos de acceso a las configuraciones en las configuraciones de los usuarios de la interfaz de usuario de la interfaz de usuario de.
+El Explorador de configuración permite a un administrador crear, administrar y configurar fácilmente los derechos de acceso a las configuraciones en AEM.
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ AEM El Explorador de configuración permite a un administrador crear, administra
 
 #### Creación de una configuración {#creating-a-configuration}
 
-AEM Es sencillo crear una configuración en mediante el Explorador de configuración en la interfaz de usuario de la interfaz de usuario de.
+Es sencillo crear una configuración en AEM mediante el Explorador de configuración.
 
 1. Inicie sesión en AEM as a Cloud Service y, en el menú principal, seleccione **Herramientas** > **General** > **Explorador de configuración**.
 1. Seleccione **Crear**.
@@ -82,7 +82,7 @@ AEM Es sencillo crear una configuración en mediante el Explorador de configurac
       * Se puede modificar si es necesario.
 1. Compruebe el tipo de configuraciones que desea permitir.
    * [Segmentos de Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-   * [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
    * [Plantillas editables](/help/sites-cloud/authoring/page-editor/templates.md)
    * varias configuraciones de nube
 1. Seleccione **Crear**.
@@ -120,12 +120,12 @@ Como desarrollador, es importante saber cómo funciona AEM as a Cloud Service co
 
 ### Separación de configuración y contenido {#separation-of-config-and-content}
 
-AEM Aunque el administrador y los usuarios de [pueden considerar las configuraciones como lugares de trabajo](#configurations-administrator) para administrar diferentes configuraciones y contenido, es importante entender que las configuraciones y el contenido se almacenan y administran por separado por los usuarios de la base de datos en el repositorio.
+Aunque el administrador y los usuarios de [pueden considerar las configuraciones como lugares de trabajo](#configurations-administrator) para administrar diferentes configuraciones y contenido, es importante comprender que AEM almacena y administra las configuraciones y el contenido por separado en el repositorio.
 
 * `/content` es el hogar de todo el contenido.
 * `/conf` es el hogar de toda la configuración.
 
-El contenido hace referencia a su configuración asociada mediante una propiedad `cq:conf`. AEM una búsqueda basada en el contenido y su propiedad `cq:conf` contextual para encontrar la configuración adecuada.
+El contenido hace referencia a su configuración asociada mediante una propiedad `cq:conf`. AEM realiza una búsqueda basada en el contenido y su propiedad `cq:conf` contextual para encontrar la configuración adecuada.
 
 ### Ejemplos {#developer-example}
 
@@ -169,7 +169,7 @@ Finalmente, verá la propiedad `bgkcolor` que necesita este código de ejemplo. 
 
 El ejemplo básico anterior mostraba una sola configuración. Pero hay muchos casos en los que desea tener diferentes configuraciones, como una configuración global predeterminada, una diferente para cada marca y tal vez una específica para sus subproyectos.
 
-AEM Para admitir esto, la búsqueda de configuración tiene un mecanismo de herencia y reserva en el siguiente orden de preferencia:
+Para admitir esto en la búsqueda de configuración, AEM tiene un mecanismo de herencia y reserva en el siguiente orden de preferencia:
 
 1. `/conf/<siteconfig>/<parentconfig>/<myconfig>`
    * Configuración específica a la que se hace referencia desde `cq:conf` en algún lugar de `/content`
@@ -191,14 +191,14 @@ AEM Para admitir esto, la búsqueda de configuración tiene un mecanismo de here
    * Corregido con la implementación de aplicaciones
    * Solo lectura durante la ejecución
 1. `/libs`
-   * AEM Valores predeterminados de producto
-   * Solo se puede cambiar por Adobe; no se permite el acceso al proyecto
+   * Valores predeterminados de producto de AEM
+   * Solo se puede cambiar mediante Adobe, no se permite el acceso al proyecto
    * Corregido con la implementación de aplicaciones
    * Solo lectura durante la ejecución
 
 ### Uso de configuraciones {#using-configurations}
 
-AEM Las configuraciones en las configuraciones de los segmentos de la lista se basan en Configuraciones según el contexto de Sling. Los paquetes Sling proporcionan una API de servicio que se puede utilizar para obtener configuraciones según el contexto. Las configuraciones según el contexto son configuraciones que están relacionadas con un recurso de contenido o un árbol de recursos como se [describió en el ejemplo anterior](#developer-example).
+Las configuraciones en AEM se basan en Configuraciones según el contexto de Sling. Los paquetes Sling proporcionan una API de servicio que se puede utilizar para obtener configuraciones según el contexto. Las configuraciones según el contexto son configuraciones que están relacionadas con un recurso de contenido o un árbol de recursos como se [describió en el ejemplo anterior](#developer-example).
 
 Para obtener más información sobre configuraciones según el contexto, ejemplos y cómo usarlos, consulte la [documentación de Sling](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
 

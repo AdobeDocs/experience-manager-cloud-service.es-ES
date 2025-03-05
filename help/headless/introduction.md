@@ -5,7 +5,7 @@ landing-page-description: Obtenga información sobre cómo usar y administrar Si
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 feature: Headless
 role: Admin, Developer
-source-git-commit: 7386298ee83eef5693ce00077659bbc4a1a70d24
+source-git-commit: b155ea4734a86e6ca9151a89d3ac6f76c3ad6420
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 94%
@@ -44,9 +44,9 @@ AEM as a Cloud Service es una herramienta flexible para el modelo de implementac
 1. **Fragmentos de contenido**
    * Un fragmento de contenido se crea basado en un modelo.
    * Los fragmentos de contenido los crean los autores de contenido mediante el editor de fragmentos de contenido de AEM.
-   * Los fragmentos de contenido se almacenan como Recursos AEM, pero se pueden administrar mediante la consola Recursos o la [consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+   * Los fragmentos de contenido se almacenan como Recursos AEM, pero se pueden administrar mediante la consola Recursos o la [consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
 1. **API de contenido para entrega**
-   * AEM Consulte [API de para la administración y entrega de contenido estructurado](/help/headless/apis-headless-and-content-fragments.md) para obtener una descripción general de las diversas API disponibles y una comparación de algunos de los conceptos involucrados.
+   * Consulte [API de AEM para la administración y entrega de contenido estructurado](/help/headless/apis-headless-and-content-fragments.md) para obtener una descripción general de las diversas API disponibles y una comparación de algunos de los conceptos involucrados.
 
    * La entrega de contenido directa también es posible con la [Exportación JSON del componente principal del fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es).
 
@@ -65,7 +65,7 @@ Hay varios recursos disponibles para empezar a utilizar las funciones sin encabe
 
 ## Comparación entre con encabezado y sin encabezado {#headful-headless}
 
-Esta guía se centra en el modelo completo de implementación sin encabezado de AEM. AEM Sin embargo, con encabezado o sin encabezado no tiene por qué ser una elección binaria en el caso de los archivos de tipo. Las funciones sin encabezado se pueden usar para administrar y entregar contenido a varios puntos de contacto, al tiempo que permiten a los autores de contenido editar aplicaciones de una sola página. Todo en AEM.
+Esta guía se centra en el modelo completo de implementación sin encabezado de AEM. Sin embargo, con encabezado o sin encabezado no necesita ser una opción binaria en AEM. Las funciones sin encabezado se pueden usar para administrar y entregar contenido a varios puntos de contacto, al tiempo que permiten a los autores de contenido editar aplicaciones de una sola página. Todo en AEM.
 
 >[!TIP]
 >

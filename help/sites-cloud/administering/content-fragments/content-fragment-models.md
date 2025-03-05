@@ -1,18 +1,18 @@
 ---
-title: Modelos de fragmento de contenido
-description: AEM Descubra cómo los modelos de fragmentos de contenido sirven de base para los fragmentos de contenido en las, lo que le permite crear contenido estructurado para utilizarlo en entregas sin encabezado o en la creación de páginas.
+title: Definición de los modelos de fragmento de contenido
+description: Descubra cómo los modelos de fragmentos de contenido sirven de base para los fragmentos de contenido en AEM, lo que le permite crear contenido estructurado para utilizarlo en entregas sin encabezado o en la creación de páginas.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: e59c432a2f6b0f2034829b3cb3f88679aa182048
+source-git-commit: 806f6bb210a04a4c0512414e0550c64640ebe8b6
 workflow-type: tm+mt
-source-wordcount: '3591'
-ht-degree: 48%
+source-wordcount: '2260'
+ht-degree: 36%
 
 ---
 
-# Modelos de fragmento de contenido {#content-fragment-models}
+# Definición de los modelos de fragmento de contenido {#defining-content-fragment-models}
 
 >[!IMPORTANT]
 >
@@ -20,80 +20,15 @@ ht-degree: 48%
 >
 >Para ver el estado y cómo solicitarlo si está interesado, consulte las [Notas de la versión](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-Los modelos de fragmentos de contenido de Adobe Experience Manager AEM () as a Cloud Service definen la estructura del contenido de sus [fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md). Estos fragmentos se pueden utilizar para la creación de páginas o como base para el contenido sin encabezado.
+Los modelos de fragmentos de contenido de Adobe Experience Manager (AEM) as a Cloud Service definen la estructura del contenido de sus [fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md). Estos fragmentos se pueden utilizar para la creación de páginas o como base para el contenido sin encabezado.
 
-Para usar modelos de fragmentos de contenido, haga lo siguiente:
-
-1. [Habilite la funcionalidad de modelos de fragmentos de contenido para la instancia.](/help/sites-cloud/administering/content-fragments/setup.md)
-1. [Cree](#creating-a-content-fragment-model) y [configure](#defining-your-content-fragment-model) sus modelos de fragmentos de contenido.
-1. [Habilite los modelos de fragmento de contenido](#enabling-disabling-a-content-fragment-model) para usar al crear fragmentos de contenido
-1. [Permita los modelos de fragmentos de contenido en las carpetas de recursos necesarias](#allowing-content-fragment-models-assets-folder) configurando **Políticas**.
-
-## Creación de un modelo de fragmento de contenido {#creating-a-content-fragment-model}
-
-1. Vaya a **Herramientas**, **General** y, a continuación, abra **Modelos de fragmentos de contenido**.
-1. Vaya a la carpeta adecuada para su [configuración o subconfiguración](/help/sites-cloud/administering/content-fragments/setup.md).
-1. Use **Crear** para abrir el asistente.
-
-   >[!CAUTION]
-   >
-   >Si no se ha habilitado el uso de [modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/setup.md), la opción **Crear** no estará disponible.
-
-1. Especifique **Título de modelo**.
-También puede definir varias propiedades; por ejemplo, agregar **Etiquetas**, una **Descripción**, seleccionar **Habilitar modelo** para [habilitar el modelo](#enabling-disabling-a-content-fragment-model) si es necesario y definir el
-   **Patrón de URL de vista previa predeterminado**.
-
-   >[!NOTE]
-   >
-   >Consulte [Modelo de fragmento de contenido: propiedades](#content-fragment-model-properties) para obtener información detallada.
-
-   ![Título y descripción](assets/cf-cfmodels-create.png)
-
-1. Use **Crear** para guardar el modelo vacío. Un mensaje indica el éxito de la acción. Puede seleccionar **Abrir** para editar inmediatamente el modelo o **Listo** para volver a la consola.
+Esta página cubre cómo definir el modelo de fragmento de contenido mediante el editor dedicado. Consulte [Administración de los modelos de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) para obtener más información sobre las tareas y opciones disponibles una vez creados los fragmentos, incluidas las [acciones disponibles en la consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#actions), [permitir el modelo en la carpeta](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder) y [publicar el modelo](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model).
 
 >[!CAUTION]
 >
 >Si va a consultar varios fragmentos a los que se hace referencia, no se recomienda que los distintos modelos de fragmento tengan nombres de campo con el mismo nombre, pero con tipos diferentes.
 >
->AEM Para obtener más información, consulte la [API de GraphQL para usar con fragmentos de contenido: limitaciones](/help/headless/graphql-api/content-fragments.md#limitations)
-
-### Modelo de fragmento de contenido: propiedades {#content-fragment-model-properties}
-
-Estas propiedades se definen al crear un modelo y se pueden editar más adelante con la opción **Propiedades** para el modelo de fragmento de contenido:
-
-* **Básico**
-   * **Título de modelo**
-   * **Etiquetas**
-   * **Descripción**
-   * **Habilitar modelo**
-   * **Patrón de URL de vista previa predeterminado**
-El editor de fragmentos de contenido permite a los autores **previsualizar** su contenido en una aplicación de front-end externa. Una vez configurado el **servicio de vista previa**, agregue la dirección URL de la aplicación de front-end.
-
-     La URL de vista previa debe seguir este patrón:
-    `https://<preview_url>?param=${expression}`
-
-     Las expresiones disponibles son:
-
-      * `${contentFragment.path}`
-      * `${contentFragment.model.path}`
-      * `${contentFragment.model.name}`
-      * `${contentFragment.variation}`
-      * `${contentFragment.id}`
-
-   * **Cargar imagen**
-
-<!-- CHECK: currently under FT -->
-<!--
-* **GraphQL**
-  Define names relevant for GraphQL.
-  Changing the GraphQL API Name, or Query field names will impact client applications.
-  * **API Name**
-    Represents the GraphQL type and query field names in the GraphQL schema.
-  * **Single Query Field Name**
-    Represents the GraphQL single query field name in the GraphQL schema.
-  * **Multiple Query Field Name**
-    Represents the GraphQL multiple query field name in the GraphQL schema.
--->
+>Para obtener más información, consulte [API de AEM GraphQL para uso con fragmentos de contenido: limitaciones](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ## Definición del modelo de fragmento de contenido {#defining-your-content-fragment-model}
 
@@ -103,9 +38,12 @@ El modelo de fragmento de contenido define de forma efectiva la estructura de lo
 >
 >Editar un modelo que ya se utiliza en fragmentos de contenido existentes puede afectar a esos fragmentos dependientes.
 
-1. Vaya a **Herramientas**, **General** y, a continuación, abra **Modelos de fragmentos de contenido**.
+1. En la consola Fragmento de contenido, seleccione el panel de [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#basic-structure-handling-content-fragment-models-console) y vaya a la carpeta que contiene el modelo de fragmento de contenido.
 
-1. Vaya a la carpeta que contiene el modelo de fragmento de contenido.
+   >[!NOTE]
+   >
+   >También puede abrir un modelo directamente después de [crearlo](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
+
 1. Abra el modelo necesario para **Editar**; utilice la acción rápida o seleccione el modelo y, después, la acción en la barra de herramientas.
 
    Una vez abierto, el editor de modelos muestra lo siguiente:
@@ -117,7 +55,7 @@ El modelo de fragmento de contenido define de forma efectiva la estructura de lo
    >
    >Cuando un campo se define como **Obligatorio**, la **Etiqueta** indicada en el panel izquierdo se marca con un asterisco (**&#42;**).
 
-![Propiedades](assets/cf-cfmodels-empty-model.png)
+   ![Propiedades](assets/cf-cfmodels-empty-model.png)
 
 1. **Adición de un campo**
 
@@ -127,7 +65,7 @@ El modelo de fragmento de contenido define de forma efectiva la estructura de lo
 
    * Una vez agregado un campo al modelo, el panel derecho muestra las **Propiedades** que se pueden definir para ese tipo de datos en particular. Aquí puede definir lo que se requiere para ese campo.
 
-      * Muchas propiedades se explican por sí mismas; para obtener más información, consulte [Propiedades](#properties).
+      * Muchas propiedades se explican por sí mismas; para obtener más información, consulte [Propiedades (tipos de datos)](#properties).
       * Escribir una **Etiqueta de campo** autocompleta **Nombre de propiedad**, si está vacío, y se puede actualizar de forma manual posteriormente.
 
         >[!CAUTION]
@@ -229,7 +167,7 @@ Hay disponible una selección de tipos de datos para definir el modelo:
      >
      Este tipo de datos se utiliza exclusivamente para dar formato; el esquema AEM GraphQL lo ignora.
 
-## Propiedades {#properties}
+## Propiedades (tipos de datos) {#properties}
 
 Muchas propiedades se explican por sí mismas; para otras, a continuación se proporcionan detalles adicionales:
 
@@ -351,7 +289,7 @@ Si crea una consulta profunda que devuelve varios fragmentos de contenido refere
 >
 Si va a consultar varios fragmentos a los que se hace referencia, no se recomienda que los distintos modelos de fragmento tengan nombres de campo con el mismo nombre, pero con tipos diferentes.
 >
-AEM Para obtener más información, consulte la [API de GraphQL para usar con fragmentos de contenido: limitaciones](/help/headless/graphql-api/content-fragments.md#limitations)
+Para obtener más información, consulte [API de AEM GraphQL para uso con fragmentos de contenido: limitaciones](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### Referencia de contenido {#content-reference}
 
@@ -434,203 +372,3 @@ Esto especifica o representa una ruta raíz para los fragmentos a los que se hac
 Existe un mecanismo de protección contra la recurrencia. Prohíbe que el usuario seleccione el fragmento de contenido actual en la Referencia a fragmento y puede provocar un cuadro de diálogo vacío del selector de Referencia a fragmento.
 >
 También hay protección contra recurrencias para las referencias a fragmento en GraphQL. Si crea una consulta profunda en dos fragmentos de contenido que se hacen referencia entre sí, devolverá un valor nulo.
-
-## Activación o desactivación de un modelo de fragmento de contenido {#enabling-disabling-a-content-fragment-model}
-
-Puede **Habilitar** o **Deshabilitar** sus modelos de fragmentos de contenido para tener un control total sobre su uso.
-
-### Activación de un modelo de fragmento de contenido {#enabling-a-content-fragment-model}
-
-Una vez creado un modelo, debe activarse para que:
-
-* Está disponible para su selección al crear un fragmento de contenido.
-* Se pueda hacer referencia a él desde un modelo de fragmento de contenido.
-* Esté disponible para GraphQL y por lo tanto, se genere el esquema.
-
-Para habilitar un modelo marcado como lo siguiente:
-
-* **Borrador** : nuevo (nunca habilitado).
-* **Desactivado**: se ha deshabilitado específicamente.
-
-Utilice la opción **Habilitar** desde:
-
-* La barra de herramientas superior, cuando se selecciona el Modelo requerido.
-* La Acción rápida correspondiente (pase el ratón sobre el Modelo requerido).
-
-![Activar un borrador o un modelo desactivado](assets/cf-cfmodels-status-enable.png)
-
-### Desactivación de un modelo de fragmento de contenido {#disabling-a-content-fragment-model}
-
-Un modelo también se puede desactivar para que:
-
-* El modelo ya no esté disponible como base para la creación de *nuevos* fragmentos de contenido.
-* Sin embargo:
-   * El esquema de GraphQL se siga generando y aún se pueda consultar (para evitar afectar a la API de JSON).
-   * Cualquier fragmento de contenido basado en el modelo se puede consultar y devolver desde el extremo de GraphQL.
-* Ya no se puede hacer referencia al modelo, pero las referencias existentes no se tocan y aún se pueden consultar y devolver desde el extremo GraphQL.
-
-Para deshabilitar un modelo marcado como **Habilitado**, use la opción **Deshabilitar** desde:
-
-* La barra de herramientas superior, cuando se selecciona el Modelo requerido.
-* La Acción rápida correspondiente (pase el ratón sobre el Modelo requerido).
-
-![Desactivación de un modelo habilitado](assets/cf-cfmodels-status-disable.png)
-
-## Permitir modelos de fragmento de contenido en la carpeta de recursos {#allowing-content-fragment-models-assets-folder}
-
-Para implementar el control de contenido, puede configurar las **Directivas** en la carpeta Recursos para controlar qué modelos de fragmento de contenido están permitidos para la creación de fragmentos en esa carpeta.
-
->[!NOTE]
->
-El mecanismo es similar a [permitir plantillas de página](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) para una página, y sus elementos secundarios, en propiedades avanzadas de una página.
-
-Para configurar las **Directivas** para **Modelos de fragmento de contenido permitidos**:
-
-1. Navegar y abrir **Propiedades** para la carpeta de recursos necesaria.
-
-1. Abra la pestaña **Directivas**, donde puede configurar lo siguiente:
-
-   * **Heredado de`<folder>`**
-
-     Las directivas se heredan automáticamente al crear nuevas carpetas secundarias; la directiva se puede reconfigurar (y la herencia se rompe) si las subcarpetas necesitan permitir modelos diferentes de la carpeta principal.
-
-   * **Modelos de fragmento de contenido permitidos por ruta**
-
-     Se pueden permitir varios modelos.
-
-   * **Modelos de fragmento de contenido permitidos por etiquetas**
-
-     Se pueden permitir varios modelos.
-
-   ![Directiva del modelo de fragmento de contenido](assets/cf-cfmodels-policy-assets-folder.png)
-
-1. **Guardar** cualquier cambio.
-
-Los modelos de fragmento de contenido permitidos para una carpeta se resuelven de la siguiente manera:
-* Las **Directivas** para los **Modelos de fragmento de contenido permitidos**.
-* Si está vacío, intente determinar la directiva utilizando las reglas de herencia.
-* Si la cadena de herencia no proporciona un resultado, consulte la configuración de **Cloud Services** para esa carpeta (primero directamente y luego mediante herencia).
-* Si ninguno de los anteriores proporciona ningún resultado, no hay modelos permitidos para esa carpeta.
-
-## Eliminación de un modelo de fragmento de contenido {#deleting-a-content-fragment-model}
-
->[!CAUTION]
->
-La eliminación de un modelo de fragmento de contenido puede afectar a los fragmentos dependientes.
-
-Para eliminar un modelo de fragmento de contenido:
-
-1. Vaya a **Herramientas**, **General** y, a continuación, abra **Modelos de fragmentos de contenido**.
-
-1. Vaya a la carpeta que contiene el modelo de fragmento de contenido.
-1. Seleccione el modelo, seguido de **Eliminar** en la barra de herramientas.
-
-   >[!NOTE]
-   >
-   Si se hace referencia al modelo, se envía una advertencia para que pueda realizar las acciones adecuadas.
-
-## Publicación de un modelo de fragmento de contenido {#publishing-a-content-fragment-model}
-
-Los modelos de fragmento de contenido deben publicarse cuando se publican fragmentos de contenido dependientes, o antes de hacerlo.
-
-Para publicar un modelo de fragmento de contenido:
-
-1. Vaya a **Herramientas**, **General** y, a continuación, abra **Modelos de fragmentos de contenido**.
-
-1. Vaya a la carpeta que contiene el modelo de fragmento de contenido.
-1. Seleccione el modelo, seguido de **Publicación** en la barra de herramientas.
-El estado publicado se muestra en la consola.
-
-   >[!NOTE]
-   >
-   Si publica un fragmento de contenido para el que el modelo aún no se ha publicado, la lista de selección lo indicará y el modelo se publicará con el fragmento.
-
-## Cancelación de la publicación de un modelo de fragmento de contenido {#unpublishing-a-content-fragment-model}
-
-Los modelos de fragmento de contenido se pueden cancelar si ningún fragmento hace referencia a ellos.
-
-Para cancelar la publicación de un modelo de fragmento de contenido:
-
-1. Vaya a **Herramientas**, **General** y, a continuación, abra **Modelos de fragmentos de contenido**.
-
-1. Vaya a la carpeta que contiene el modelo de fragmento de contenido.
-1. Seleccione el modelo, seguido de **Cancelar la publicación** en la barra de herramientas.
-El estado publicado se indica en la consola.
-
-Si intenta cancelar la publicación de un modelo que actualmente utiliza uno o varios fragmentos, se muestra una advertencia de error. Por ejemplo:
-
-![Mensaje de error del modelo de fragmento de contenido al cancelar la publicación de un modelo que está en uso](assets/cf-cfmodels-unpublish-error.png)
-
-El mensaje sugiere que verifique el panel [Referencias](/help/sites-cloud/authoring/basic-handling.md#references) para investigar más a fondo:
-
-![Modelo de fragmento de contenido en referencias](assets/cf-cfmodels-references.png)
-
-## Modelos de fragmento de contenido bloqueados (publicados) {#locked-published-content-fragment-models}
-
-Esta funcionalidad proporciona control para los modelos de fragmento de contenido que se han publicado.
-
-### Desafíos {#the-challenge}
-
-* Los modelos de fragmentos de contenido determinan el esquema de las consultas de GraphQL en AEM.
-
-   * Los esquemas de GraphQL de AEM se crean en cuanto se genera un modelo de fragmento de contenido y pueden existir en entornos de creación y publicación.
-
-   * Los esquemas en la publicación son los más críticos, ya que proporcionan la base para la entrega en directo de contenido de fragmento de contenido en formato JSON.
-
-* Pueden producirse problemas cuando se modifican los modelos de fragmento de contenido o, dicho de otro modo, se editan. Esto significa que el esquema cambia, lo que a su vez puede afectar a las consultas de GraphQL existentes.
-
-* La adición de nuevos campos a un modelo de fragmento de contenido no debería (normalmente) tener ningún efecto perjudicial. Sin embargo, si se modifican los campos de datos existentes (por ejemplo, su nombre) o se eliminan las definiciones de campos, las consultas de GraphQL existentes se romperán al solicitar estos campos.
-
-### Requisitos {#the-requirements}
-
-* Para concienciar a los usuarios sobre los riesgos que se plantean al editar modelos que ya se utilizan para la entrega de contenido en directo (es decir, modelos que se han publicado).
-
-* Además, para evitar cambios no deseados.
-
-Cualquiera de estos criterios podría generar consultas si se vuelven a publicar los modelos modificados.
-
-### Solución {#the-solution}
-
-Para solucionar estos problemas, los modelos de fragmentos de contenido son *bloqueados* en modo de SOLO LECTURA en el autor, tan pronto como se hayan publicado. Este estado está indicado por **Bloqueado**:
-
-![Tarjeta del modelo de fragmento de contenido bloqueado](assets/cf-cfmodels-locked.png)
-
-Cuando el modelo es **Bloqueado** (en modo de SOLO LECTURA), puede ver el contenido y la estructura de los modelos, pero no puede editarlos.
-
-Puede administrar modelos **Bloqueados** desde la consola o desde el editor de modelos:
-
-* Consola
-
-  Desde la consola, puede administrar el modo de SOLO LECTURA con las acciones **Desbloquear** y **Bloqueo** de la barra de herramientas:
-
-  ![Barra de herramientas del modelo de fragmento de contenido bloqueado](assets/cf-cfmodels-locked.png)
-
-   * Puede **Desbloquear** un modelo para activar las ediciones.
-
-     Si selecciona **Desbloquear**, se mostrará una advertencia y deberá confirmar la acción **Desbloquear**:
-     ![Mensaje al desbloquear el modelo de fragmento de contenido](assets/cf-cfmodels-unlock-message.png)
-
-     A continuación, puede abrir el modelo para editarlo.
-
-   * También puede **Bloquear** el modelo después.
-   * Volver a publicar el modelo inmediatamente lo devuelve al modo **Bloqueado** (SOLO LECTURA).
-
-* Editor de modelo
-
-   * Al abrir un modelo bloqueado, se le avisará y se le presentarán tres acciones: **Cancelar**, **Ver solo lectura**, **Editar**:
-
-     ![Mensaje al ver un modelo de fragmento de contenido bloqueado](assets/cf-cfmodels-editor-lock-message.png)
-
-   * Si selecciona **Ver solo lectura**, podrá ver el contenido y la estructura del modelo:
-
-     ![Ver solo lectura: modelo de fragmento de contenido bloqueado](assets/cf-cfmodels-editor-locked-view-only.png)
-
-   * Si seleccionas **Editar**, puedes editar y guardar tus actualizaciones:
-
-     ![Editar: modelo de fragmento de contenido bloqueado](assets/cf-cfmodels-editor-locked-edit.png)
-
-     >[!NOTE]
-     >
-     Puede que todavía haya una advertencia en la parte superior, pero es cuando el modelo ya está siendo utilizado por fragmentos de contenido existentes.
-
-   * **Cancelar** le devuelve a la consola.

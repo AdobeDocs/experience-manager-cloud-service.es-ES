@@ -4,7 +4,7 @@ description: Los componentes se pueden adaptar para generar la exportación JSON
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 6%
@@ -30,7 +30,7 @@ En primer lugar, se debe definir un modelo Sling para el componente.
 
 >[!NOTE]
 >
->AEM Para ver un ejemplo del uso de modelos Sling, consulte el artículo [Desarrollo de exportadores de modelos Sling en la sección de modelos Sling en la sección de modelos Sling en la sección ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=es).
+>Para ver un ejemplo del uso de modelos Sling, consulte el artículo [Desarrollo de exportadores de modelos Sling en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=es).
 
 La clase de implementación del modelo Sling debe estar anotada con lo siguiente:
 
@@ -79,6 +79,6 @@ Para ver un ejemplo, consulte la implementación del modelo Sling del componente
 ## Documentación relacionada {#related-documentation}
 
 * [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md)
-* [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [Creación con fragmentos de contenido](/help/sites-cloud/authoring/fragments/content-fragments.md)
 * [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y el [componente de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es)

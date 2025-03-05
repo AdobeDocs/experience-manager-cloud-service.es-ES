@@ -5,7 +5,7 @@ exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 100%
@@ -43,4 +43,4 @@ Ahora, puede poner en práctica todos estos conocimientos y empezar a crear frag
 
 * [Uso de etiquetas](/help/sites-cloud/authoring/sites-console/tags.md)
 
-* [Modelos de fragmento de contenido: permitir modelos de fragmento de contenido en la carpeta de recursos](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
+* [Modelos de fragmento de contenido: permitir modelos de fragmento de contenido en la carpeta de recursos](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder)

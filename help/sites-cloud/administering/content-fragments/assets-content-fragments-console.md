@@ -1,22 +1,35 @@
 ---
 title: Visualización y administración de Assets en la consola Fragmentos de contenido
-description: Obtenga información sobre cómo ver y administrar Assets en la **Consola Fragmentos de contenido** de Adobe Experience Manager as a Cloud Service.
+description: Obtenga información sobre cómo ver y administrar Assets en la consola Fragmentos de contenido de Adobe Experience Manager as a Cloud Service.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 865e1fa8-2956-45cf-9dd7-034d491808fe
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 175a7c069f57069b7a5ff1f0e5785147d9a4f6c9
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 6%
+source-wordcount: '277'
+ht-degree: 5%
 
 ---
 
 # Visualización y administración de Assets en la consola Fragmentos de contenido {#viewing-managing-assets-content-fragments-console}
 
-De manera predeterminada, la [consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) de Adobe Experience Manager as a Cloud Service presenta sus [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md).
+De manera predeterminada, la [consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) de Adobe Experience Manager as a Cloud Service presenta sus [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md).
 
 Sin embargo, también puede ver y administrar todos los demás tipos de **Assets** en esta **consola Fragmentos de contenido**.
+
+>[!IMPORTANT]
+>
+>Varias funciones de la Consola de fragmento de contenido están disponibles a través del Programa de pioneros.
+>
+>Para ver el estado y cómo solicitarlo si está interesado, consulte las [Notas de la versión](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
+>[!NOTE]
+>
+>Esta página describe la sección de la consola que (solo) muestra Assets. Para ver otros paneles, consulte:
+>
+>* [Administrar fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md)
+>* [Administrar modelos de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 
 >[!NOTE]
 >
@@ -42,6 +55,7 @@ Desde la vista de **Assets** de la consola Fragmentos de contenido puede:
 * [Crear una carpeta.](/help/assets/manage-digital-assets.md#creating-folders)
 * [Cargar recursos](/help/assets/add-delete-assets-view.md)
 * Configure el tipo de vista (Lista, Cuadrícula, Galería, Cascada) y, cuando corresponda, las columnas visibles
+* Hay una selección de [métodos abreviados de teclado](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) disponibles para usar en esta consola
 
 También puede realizar acciones en una o más Assets seleccionadas:
 
