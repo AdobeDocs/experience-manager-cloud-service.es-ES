@@ -3,13 +3,13 @@ title: Configurar la autenticación de sitios para la creación de contenido
 description: Descubra cómo AEM Live admite la autenticación basada en tokens y cómo puede configurar AEM para que utilice la autenticación con la creación de WYSIWYG.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 6d28b831fb902173bb5fbadd4aa2a52ba58e0a3b
+exl-id: b2838da2-79c7-49b1-a101-15c21e80197e
+source-git-commit: 7b46af35b202446fdea67e4125d74c3965d302d9
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '324'
 ht-degree: 2%
 
 ---
-
 
 # Configurar la autenticación de sitios para la creación de contenido {#site-authentication}
 
@@ -46,11 +46,13 @@ Estos elementos son necesarios para completar la configuración de la autenticac
 Una vez configurada la autenticación del sitio, puede activarla en el entorno de creación de AEM.
 
 1. Inicie sesión en la instancia de autor de AEM y vaya a **Herramientas** -> **Cloud Services** -> **Configuración de Edge Delivery Services**, seleccione la configuración que se creó automáticamente para su sitio y toque o haga clic en **Propiedades** en la barra de herramientas.
-1. En la ventana **Configuración de Edge Delivery Services**, seleccione la ficha **Autenticación** y proporcione los siguientes valores, que observó al configurar la autenticación del sitio.
-
-   * **Id. de cuenta técnica**
-   * **Token de autenticación del sitio**
+1. En la ventana **Configuración de Edge Delivery Services**, seleccione la pestaña **Autenticación** y proporcione el **Token de autenticación del sitio**, que copió anteriormente.
 
    ![Configuración de Edge Delivery Services](/help/edge/wysiwyg-authoring/assets/site-authentication/configure-aem-author.png)
+
+1. Compruebe que **El id. de cuenta técnica** coincide con el que copió anteriormente.
+
+   * Este campo es de solo lectura y está predefinido.
+   * La cuenta técnica es la misma para todos los sitios en un solo entorno de creación de AEM.
 
 1. Haga clic o pulse en **Guardar y cerrar**.

@@ -4,9 +4,9 @@ description: Si tiene muchos sitios similares que en su mayoría tienen el mismo
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
+source-git-commit: 7b46af35b202446fdea67e4125d74c3965d302d9
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1039'
 ht-degree: 2%
 
 ---
@@ -99,30 +99,14 @@ Debe crear una configuración de sitio y agregarla a la asignación de ruta.
 
 Una vez asignada la configuración del sitio, puede configurar el control de acceso definiendo la cuenta técnica para que tenga privilegios de publicación.
 
-1. En su explorador, recupere la cuenta técnica en la respuesta del siguiente vínculo.
+1. Inicie sesión en la instancia de autor de AEM y vaya a **Herramientas** -> **Cloud Services** -> **Configuración de Edge Delivery Services**, seleccione la configuración que se creó automáticamente para su sitio y toque o haga clic en **Propiedades** en la barra de herramientas.
 
-   ```text
-   https://author-p<programID>-e<envionmentID>.adobeaemcloud.com/bin/franklin.delivery/<your-github-org>/<your-aem-project>/main/.helix/config.json
-   ```
+1. En la ventana **Configuración de Edge Delivery Services**, seleccione la ficha **Autenticación** y copie el valor de **El identificador técnico de la cuenta**.
 
-1. La respuesta será similar a la siguiente.
+   * Se verá similar a `<tech-account-id>@techacct.adobe.com`
+   * La cuenta técnica es la misma para todos los sitios en un solo entorno de creación de AEM.
 
-   ```json
-   {
-     "total": 1,
-     "offset": 0,
-     "limit": 1,
-     "data": [
-       {
-         "key": "admin.role.publish",
-         "value": "<tech-account-id>@techacct.adobe.com"
-       }
-     ],
-     ":type": "sheet"
-   }
-   ```
-
-1. Establezca la cuenta técnica en la configuración con un comando cURL similar al siguiente.
+1. Establezca la cuenta técnica para la configuración de repoless con un comando cURL similar al siguiente, utilizando el ID de cuenta técnica que ha copiado.
 
    * Adapte el bloque `admin` para definir los usuarios que deben tener acceso administrativo completo al sitio.
       * Es una matriz de direcciones de correo electrónico.
