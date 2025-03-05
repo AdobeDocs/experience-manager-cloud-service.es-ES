@@ -4,10 +4,10 @@ description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: b1b28cdc5fd1b697a2c2cd2893340d3c6afc8562
+source-git-commit: bc578aca8e07b010194143062322d9fd8820b408
 workflow-type: tm+mt
-source-wordcount: '5814'
-ht-degree: 76%
+source-wordcount: '6021'
+ht-degree: 73%
 
 ---
 
@@ -39,11 +39,11 @@ El uso de la API de GraphQL en AEM permite la entrega eficiente de fragmentos de
 
 >[!NOTE]
 >
->AEM Consulte [API de para la administración y entrega de contenido estructurado](/help/headless/apis-headless-and-content-fragments.md) para obtener una descripción general de las diversas API disponibles y una comparación de algunos de los conceptos involucrados.
+>Consulte [API de AEM para la administración y entrega de contenido estructurado](/help/headless/apis-headless-and-content-fragments.md) para obtener una descripción general de las diversas API disponibles y una comparación de algunos de los conceptos involucrados.
 
 >[!NOTE]
 >
->Para obtener la información más reciente sobre las API de Experience Manager, visita también [API de Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+>Para obtener la información más reciente sobre las API de Experience Manager, visite también [API de Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 ## La API de GraphQL {#graphql-api}
 
@@ -252,7 +252,7 @@ Dentro del esquema hay campos individuales, de dos categorías básicas:
 
    * También hay que tener en cuenta el ajuste **Procesar como**, ya que los usuarios pueden configurar determinados tipos de datos. Por ejemplo, se puede configurar un campo de texto de una sola línea para que contenga varios textos de una sola línea eligiendo `multifield` de la lista desplegable.
 
-* GraphQL AEM para la también genera [campos de ayuda](#helper-fields).
+* GraphQL para AEM también genera [campos de ayuda](#helper-fields).
 
 ### Tipos de datos {#data-types}
 
@@ -268,7 +268,7 @@ GraphQL para AEM admite una lista de tipos. Se representan todos los tipos de da
 | Lista desglosada | `String` | Se utiliza para mostrar una opción de una lista de opciones definidas en la creación del modelo |
 | Etiquetas | `[String]` | Se utiliza para mostrar una lista de cadenas que representan las etiquetas utilizadas en AEM |
 | Referencia de contenido | `String`, `[String]` | Se utiliza para mostrar la ruta hacia otro recurso en AEM |
-| Referencia de contenido (UUID) | `String`, `[String]` | AEM Se utiliza para mostrar la ruta, representada por un UUID hacia otro recurso en la lista de recursos de la |
+| Referencia de contenido (UUID) | `String`, `[String]` | Se utiliza para mostrar la ruta, representada por un UUID hacia otro recurso en AEM |
 | Referencia al fragmento |  *Un tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo, al que se hace referencia directamente <br><br>Multicampo, con un tipo al que se hace referencia: `[Model]` - Matriz de tipo `Model`, al que se hace referencia directamente desde la matriz <br><br>Multicampo, con varios tipos a los que se hace referencia: `[AllFragmentModels]` - Matriz de todos los tipos de modelo, a la que se hace referencia desde la matriz con tipo de unión |  Se utiliza para hacer referencia a uno o más fragmentos de contenido de ciertos tipos de modelo, definidos cuando se creó el modelo |
 | Referencia de fragmento (UUID) |  *Un tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo, al que se hace referencia directamente <br><br>Multicampo, con un tipo al que se hace referencia: `[Model]` - Matriz de tipo `Model`, al que se hace referencia directamente desde la matriz <br><br>Multicampo, con varios tipos a los que se hace referencia: `[AllFragmentModels]` - Matriz de todos los tipos de modelo, a la que se hace referencia desde la matriz con tipo de unión |  Se utiliza para hacer referencia a uno o más fragmentos de contenido de ciertos tipos de modelo, definidos cuando se creó el modelo |
 
@@ -276,7 +276,7 @@ GraphQL para AEM admite una lista de tipos. Se representan todos los tipos de da
 
 ### Campos de ayuda {#helper-fields}
 
-Además de los tipos de datos de los campos generados por el usuario, GraphQL AEM para la distribución de contenido también genera varios campos *Helper* para ayudar a identificar un fragmento de contenido o para proporcionar información adicional acerca de un fragmento de contenido.
+Además de los tipos de datos de los campos generados por el usuario, GraphQL para AEM también genera varios campos *de ayuda* para ayudar a identificar un fragmento de contenido o para proporcionar información adicional acerca de un fragmento de contenido.
 
 Estos [campos de ayuda](#helper-fields) se marcan con un `_` que los precede para distinguir entre lo que ha definido el usuario y lo que se ha generado automáticamente.
 
@@ -317,7 +317,7 @@ Consulte [Consulta de muestra: un solo fragmento de ciudad específico](/help/he
 
 #### ID (UUID) {#id-uuid}
 
-AEM El campo de ID también se utiliza como identificador en el GraphQL de la. AEM Representa la ruta del recurso de fragmento de contenido dentro del repositorio de, pero en lugar de mantener la ruta real, contiene un UUID que representa el recurso. Lo hemos elegido como identificador de un fragmento de contenido, por los motivos siguientes:
+El campo de ID también se utiliza como identificador en AEM GraphQL. Representa la ruta del recurso de fragmento de contenido dentro del repositorio de AEM, pero en lugar de contener la ruta real, contiene un UUID que representa el recurso. Lo hemos elegido como identificador de un fragmento de contenido, por los motivos siguientes:
 
 * es único dentro de AEM,
 * se puede recuperar fácilmente,
@@ -775,11 +775,11 @@ La solución de GraphQL significa que puede hacer lo siguiente:
 
 >[!NOTE]
 >
->Se puede usar una **referencia de contenido** tanto para los recursos DAM como para los Dynamic Media. Al recuperar la URL adecuada se utilizan parámetros diferentes:
+>Se puede usar una **referencia de contenido** tanto para recursos DAM como para recursos de Dynamic Media. Al recuperar la URL adecuada se utilizan parámetros diferentes:
 >* `_dynamicUrl` : un recurso DAM
 >* `_dmS7Url` : un recurso de Dynamic Media
 > 
->Si el recurso al que se hace referencia es un recurso DAM, el valor de `_dmS7Url` será `null`. Ver [entrega de recursos de Dynamic Media por dirección URL en consultas de GraphQL](#dynamic-media-asset-delivery-by-url).
+>Si el recurso al que se hace referencia es un recurso DAM, el valor de `_dmS7Url` será `null`. Consulte [Entrega de recursos de Dynamic Media por dirección URL en consultas de GraphQL](#dynamic-media-asset-delivery-by-url).
 
 ### Estructura de la solicitud de transformación {#structure-transformation-request}
 
@@ -957,7 +957,7 @@ Existen las siguientes limitaciones:
 
 ## Entrega de recursos de Dynamic Media por dirección URL en consultas de GraphQL{#dynamic-media-asset-delivery-by-url}
 
-Los fragmentos de contenido de GraphQL AEM AEM para la le permiten solicitar una dirección URL a un recurso de Dynamic Media (Scene7) de la aplicación (al que hace referencia una **referencia de contenido**).
+GraphQL para fragmentos de contenido de AEM le permite solicitar una URL para un recurso de Dynamic Media de AEM (Scene7) (al que hace referencia una **referencia de contenido**).
 
 La solución de GraphQL significa que puede hacer lo siguiente:
 
@@ -980,7 +980,7 @@ La solución de GraphQL significa que puede hacer lo siguiente:
 
 >[!NOTE]
 >
->Se puede usar una **referencia de contenido** tanto para los recursos DAM como para los Dynamic Media. Al recuperar la URL adecuada se utilizan parámetros diferentes:
+>Se puede usar una **referencia de contenido** tanto para recursos DAM como para recursos de Dynamic Media. Al recuperar la URL adecuada se utilizan parámetros diferentes:
 >
 >* `_dmS7Url` : un recurso de Dynamic Media
 >* `_dynamicUrl` : un recurso DAM
@@ -1085,6 +1085,110 @@ query allTeams {
 } 
 ```
 
+## Compatibilidad con recursos de Dynamic Media para OpenAPI (Assets remoto) {#dynamic-media-for-openapi-asset-support}
+
+La integración de [Recursos remotos](/help/sites-cloud/administering/content-fragments/authoring.md#reference-remote-assets) le permite hacer referencia a Assets, que no son locales de la instancia actual de AEM, desde el Editor de fragmentos de contenido. Se implementa mediante Dynamic Media para la compatibilidad con recursos OpenAPI en el Editor de fragmentos de contenido y GraphQL JSON.
+
+### Consulta de muestra para Dynamic Media para la compatibilidad con recursos OpenAPI (Assets remoto) {#sample-query-dynamic-media-for-openapi-asset-support}
+
+A continuación se muestra una solicitud de ejemplo:
+
+* para ilustrar el concepto de referencia a recursos remotos
+
+  ```graphql
+  {
+    testModelList {
+      items {
+        remoteasset {
+          ... on RemoteRef {
+              repositoryId
+                  assetId
+          }
+        }
+        multiplecontent {
+          ... on ImageRef {
+            _path
+            _authorUrl
+            _publishUrl
+          }
+          ... on RemoteRef {
+              repositoryId
+              assetId
+          }
+        }
+      }
+      _references {
+        ... on ImageRef {
+            _path
+            _authorUrl
+            _publishUrl
+          }
+          ... on RemoteRef {
+              repositoryId
+              assetId
+          }
+      }
+    }
+  }
+  ```
+
+* la respuesta
+
+  ```graphql
+  {
+    "data": {
+      "testModelList": {
+        "items": [
+          {
+            "remoteasset": {
+              "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+              "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+            },
+            "multiplecontent": [
+              {
+                "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+                "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+              },
+              {
+                "_path": "/content/dam/test-folder/test.jpg",
+                "_authorUrl": "http://localhost:4502/content/dam/test-folder/test.jpg",
+                "_publishUrl": "http://localhost:4503/content/dam/test-folder/test.jpg"
+              }
+            ]
+          }
+        ],
+        "_references": [
+          {
+            "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+            "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+          },
+          {
+            "_path": "/content/dam/test-folder/test.jpg",
+            "_authorUrl": "http://localhost:4502/content/dam/test-folder/test.jpg",
+            "_publishUrl": "http://localhost:4503/content/dam/test-folder/test.jpg"
+          }
+        ]
+      }
+    }
+  }  
+  ```
+
+**Limitaciones**
+
+Las limitaciones actuales son:
+
+* La entrega de GraphQL solo admite `repositoryId` y `assetId` (no se devuelven otros metadatos de recursos)
+
+  >[!NOTE]
+  >
+  >A continuación, la dirección URL completa debe crearse en el lado del cliente en función de la [API de entrega de recursos](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat).
+
+* Solo los *recursos aprobados* estarán disponibles para su consulta en los repositorios remotos
+* Si se elimina un recurso al que se hace referencia del repositorio remoto, se producirá una referencia a un recurso de fragmento de contenido roto.
+* Todos los repositorios de recursos de entrega a los que el usuario tiene acceso estarán disponibles para su selección, la lista disponible no se puede limitar.
+* Tanto la instancia de AEM como las instancias del repositorio de recursos remoto deben tener la misma versión.
+* No se expusieron metadatos de recursos a través de [la API de administración](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) y [la API de entrega](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/). Debe utilizar la API de metadatos del recurso para recuperar los detalles de los metadatos del recurso.
+
 ## GraphQL para AEM: resumen de extensiones {#graphql-extensions}
 
 El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la especificación estándar de GraphQL. Para las consultas de GraphQL con AEM hay algunas extensiones:
@@ -1164,8 +1268,8 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
 
    * Para la entrega de imágenes:
 
-      * AEM `_authorURL`: la dirección URL completa del recurso de imagen en el autor de la
-      * AEM `_publishURL`: la dirección URL completa del recurso de imagen en Publish, en la que se ha producido la
+      * `_authorURL`: la dirección URL completa del recurso de imagen en AEM Author
+      * `_publishURL`: la dirección URL completa del recurso de imagen en AEM Publish
 
       * Para [entrega de imágenes optimizadas para la web](#web-optimized-image-delivery-in-graphql-queries) (de recursos DAM):
 
@@ -1185,9 +1289,9 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
 
       * `_dmS7Url`: en la referencia `ImageRef` para el envío de la URL a un [recurso de Dynamic Media](#dynamic-media-asset-delivery-by-url)
 
-         * Ver [Consulta de muestra para la entrega de recursos de Dynamic Media por dirección URL: ImageRef](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+         * Consulte [Consulta de muestra para la entrega de recursos de Dynamic Media por dirección URL: ImageRef](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
-         * Ver [Consulta de muestra para la entrega de recursos de Dynamic Media por dirección URL: varias referencias](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+         * Consulte [Consulta de muestra para la entrega de recursos de Dynamic Media por dirección URL: varias referencias](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
    * `_tags`: para revelar los identificadores de los fragmentos de contenido o las variaciones que contienen etiquetas; se trata de una matriz de identificadores `cq:tags`.
 

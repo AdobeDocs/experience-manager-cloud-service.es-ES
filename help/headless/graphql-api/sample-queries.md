@@ -4,10 +4,10 @@ description: Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encab
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
+source-git-commit: bc578aca8e07b010194143062322d9fd8820b408
 workflow-type: tm+mt
-source-wordcount: '1940'
-ht-degree: 90%
+source-wordcount: '1972'
+ht-degree: 88%
 
 ---
 
@@ -1873,7 +1873,7 @@ Esta consulta busca lo siguiente:
 } 
 ```
 
-## Consultas de muestra para la entrega de DAM y Dynamic Media Assets {#sample-queries-delivery-DAM-DM}
+## Consultas de muestra para el envío de DAM y Dynamic Media Assets {#sample-queries-delivery-DAM-DM}
 
 Para la entrega de imágenes optimizadas para la web (de recursos DAM):
 
@@ -1883,9 +1883,13 @@ Para la entrega de imágenes optimizadas para la web (de recursos DAM):
 
 Para la entrega de la URL a un recurso de Dynamic Media
 
-* Ver [Consulta de muestra para la entrega de recursos de Dynamic Media por dirección URL: referencia de imagen](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+* Consulte [Consulta de muestra para la entrega de recursos de Dynamic Media por dirección URL: referencia de imagen](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
-* Ver [Consulta de muestra para la entrega de recursos de Dynamic Media por dirección URL: varias referencias](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+* Consulte [Consulta de muestra para la entrega de recursos de Dynamic Media por dirección URL: varias referencias](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+
+Para la entrega de recursos remotos, que no son locales de la instancia de AEM actual, desde el Editor de fragmentos de contenido.
+
+* Consulte [Consulta de muestra para Dynamic Media para la compatibilidad con recursos OpenAPI (Assets remoto)](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-for-openapi-asset-support)
 
 ## La estructura del fragmento de contenido de muestra (utilizada con GraphQL) {#content-fragment-structure-graphql}
 
