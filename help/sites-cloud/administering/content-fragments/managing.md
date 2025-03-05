@@ -1,13 +1,13 @@
 ---
 title: Administración de los fragmentos de contenido
-description: AEM Obtenga información sobre cómo administrar los fragmentos de contenido de la consola y el editor, para crear contenido como base de contenido sin encabezado o para crear páginas.
+description: Aprenda a administrar los fragmentos de contenido de AEM desde la consola y el editor, para crear contenido como base del contenido sin encabezado o para la creación de páginas.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 2daddd852f4cfcbcd6b1d4aea9cd96e045c93ca0
+source-git-commit: f5523968ef4548c287ec939b63db1cf914c7fbeb
 workflow-type: tm+mt
-source-wordcount: '2661'
+source-wordcount: '2686'
 ht-degree: 44%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 44%
 >
 >Para ver el estado y cómo solicitarlo si está interesado, consulte las [Notas de la versión](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-Aprenda a administrar sus **Fragmentos de contenido** en Adobe Experience Manager AEM () as a Cloud Service, desde la [consola Fragmentos de contenido](#content-fragments-console) y el [Editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor). Estos fragmentos de contenido se pueden utilizar como base del contenido sin encabezado o para la creación de páginas.
+Aprenda a administrar sus **fragmentos de contenido** en Adobe Experience Manager (AEM) as a Cloud Service, desde la [consola Fragmentos de contenido](#content-fragments-console) y el [editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor). Estos fragmentos de contenido se pueden utilizar como base del contenido sin encabezado o para la creación de páginas.
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ Para obtener más información detallada, consulte:
 
 >[!CAUTION]
 >
->Esta consola está *solamente* disponible en el as a Cloud Service en línea de Adobe Experience Manager AEM ().
+>Esta consola está *solamente* disponible en línea en Adobe Experience Manager (AEM) as a Cloud Service.
 
 ### Estructura y gestión básicas de la consola {#basic-structure-handling-content-fragments-console}
 
@@ -163,7 +163,7 @@ Al seleccionar un fragmento específico, se abre una barra de herramientas centr
 
 >[!NOTE]
 >
->Acciones como Publish, Cancelar publicación, Eliminar, Mover, Cambiar nombre y Copiar cada déclencheur en un trabajo asincrónico. El progreso de ese trabajo se puede monitorizar a través de la interfaz de usuario de trabajos asincrónicos de AEM.
+>Acciones como Publicar, Cancelar la publicación, Eliminar, Mover, Cambiar el nombre y Copiar cada déclencheur en un trabajo asincrónico. El progreso de ese trabajo se puede monitorizar a través de la interfaz de usuario de trabajos asincrónicos de AEM.
 
 ### La información proporcionada sobre sus fragmentos de contenido {#information-content-fragments}
 
@@ -237,6 +237,7 @@ Crear un fragmento de contenido:
 
    * **Ubicación**: completado automáticamente con la ubicación actual, pero puede seleccionar una ubicación diferente si es necesario.
    * **Modelo de fragmento de contenido**: seleccione el modelo que se utilizará como base del fragmento en la lista desplegable.
+   * **Etiqueta automática**: al seleccionar esta opción, todas las etiquetas asignadas al modelo de fragmento de contenido las hereda y se agregan al nuevo fragmento de contenido.
    * **Título**
    * **Nombre** - Completado automáticamente según el **Título**, pero puede editarlo si es necesario.
    * **Descripción**
@@ -310,7 +311,7 @@ Puede publicar los fragmentos de contenido en:
 
   >[!CAUTION]
   >
-  >La publicación de fragmentos de contenido en el **servicio de vista previa** solo está disponible desde la consola Fragmentos de contenido; se utilizará la acción **Publish**.
+  >La publicación de fragmentos de contenido en el **servicio de vista previa** solo está disponible desde la consola Fragmentos de contenido; se utiliza la acción **Publicar**.
 
   >[!NOTE]
   >
@@ -324,7 +325,7 @@ Puede publicar los fragmentos de contenido en:
 
 ### Publicación {#publishing}
 
-Puede publicar los fragmentos de contenido usando la opción **Publish** desde:
+Puede publicar los fragmentos de contenido usando la opción **Publicar** desde las ubicaciones siguientes:
 
 * la barra de herramientas de la [consola Fragmentos de contenido](#actions-selected-content-fragment)
 
@@ -332,7 +333,7 @@ Puede publicar los fragmentos de contenido usando la opción **Publish** desde:
 
 * la barra de herramientas del [editor de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)
 
-Después de seleccionar la acción **Publish**:
+Después de seleccionar la acción **Publicar**:
 
 1. Seleccione cualquiera de las siguientes opciones para abrir el cuadro de diálogo correspondiente:
 
