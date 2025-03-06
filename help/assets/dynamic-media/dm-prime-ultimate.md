@@ -2,9 +2,10 @@
 title: Dynamic Media Prime y Ultimate
 description: Obtenga más información acerca de Dynamic Media Prime y Ultimate, sus ventajas y diferencias entre ambos.
 role: User
-source-git-commit: dce23f34cab2248d65e0e19d98fdfd529eadbdc6
+exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
+source-git-commit: 0c0d33b3e022ff0265220bf3106b888b83e8af99
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '417'
 ht-degree: 14%
 
 ---
@@ -44,18 +45,16 @@ Algunas de las otras ventajas clave de Dynamic Media Prime son:
 
 ## Dynamic Media Ultimate {#dynamic-media-ultimate}
 
-Dynamic Media Ultimate es un servicio de activación para Experience Manager Assets, que incluye Dynamic Media con funciones básicas y avanzadas de OpenAPI, así como la solución Dynamic Media en AEM as a Cloud Service. Permite a las organizaciones generar y entregar múltiples variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
+Dynamic Media Ultimate es un servicio de activación para Experience Manager Assets, que incluye [Dynamic Media con OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) funciones básicas y avanzadas, así como la solución [Dynamic Media en AEM as a Cloud Service](/help/assets/dynamic-media/dynamic-media.md). Permite a las organizaciones generar y entregar múltiples variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
 
 Además de las funciones de Dynamic Media Prime, como la integración de AEM Assets con aplicaciones de Adobe o que no sean de Adobe, la transformación (girar, recortar, voltear, cambiar el tamaño, preferir página web, alto, ancho, calidad) y la entrega optimizada, Dynamic Media Ultimate también ofrece lo siguiente:
 
-* Dynamic Media con funciones avanzadas de OpenAPI como:
+* [Dynamic Media con funciones avanzadas de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) como:
 
    * Entrega segura de recursos,
    * [Recorte inteligente, imágenes inteligentes, ajustes preestablecidos de imagen y modificadores de imagen adicionales](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/).
 
 * [Solución de Dynamic Media en AEM as a Cloud Service](/help/assets/dynamic-media/dynamic-media.md), que también incluye las siguientes funcionalidades clave:
-
-   * [Automatización de contenido](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-automation/overview)
 
    * [Plantillas de Dynamic Media](/help/assets/dynamic-media/dynamic-media-templates.md)
 
@@ -70,3 +69,6 @@ Además de las funciones de Dynamic Media Prime, como la integración de AEM Ass
 * [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
 
 Para obtener más información sobre la lista completa de funcionalidades, consulte [Dynamic Media con capacidades OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) y [Uso de Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+
+Para obtener información sobre cómo habilitar Dynamic Media Prime y Ultimate para su entorno de AEM as a Cloud Service, consulte [Habilitar Dynamic Media Prime y Ultimate](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md).
+
