@@ -6,20 +6,18 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 1%
 
 ---
 
-
 # Uso del panel de realización de valor para analizar las tendencias de uso de formularios y documentos
 
 <span class="preview"> Esta característica está disponible a través del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial a aem-forms-ea@adobe.com. <span>
 
 ![Panel de realización de valores](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
-
 
 Al supervisar regularmente las métricas presentadas en el panel &quot;Perspectivas de uso de Forms&quot;, puede obtener información valiosa sobre el rendimiento de los formularios, documentos y fragmentos de formulario. Utilice estos datos para tomar decisiones informadas sobre el diseño del formulario, la administración de fragmentos y la estrategia general del formulario.
 
