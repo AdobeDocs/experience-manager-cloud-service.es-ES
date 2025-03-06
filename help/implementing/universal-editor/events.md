@@ -4,9 +4,9 @@ description: Obtenga información sobre los diferentes eventos que envía el edi
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fefbb01c786cc00a31602c4646ca8b015e16ed98
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '520'
 ht-degree: 2%
 
 ---
@@ -180,29 +180,6 @@ Carga de respuesta
 
 ## Eventos de IU {#ui-events}
 
-### aue:ui-publish {#ui-publish}
-
-El evento `aue:ui-publish` se activa cuando se publica contenido (con invocación en el nivel `BODY`).
-
-La carga útil es una lista de ID de elementos y su estado de publicación.
-
-### aue:ui-select {#ui-select}
-
-El evento `aue:ui-select` se activa cuando se selecciona un componente.
-
-La carga útil es el ID de elemento, las propiedades de elemento y el tipo de elemento del componente seleccionado.
-
-```json
-{
-    details: {
-        resource: string;       // resource of the selected
-        prop: string;           // prop of the selected
-        type: string;           // type of the selected
-        selected: boolean;      // was selected or unselected
-    }
-}
-```
-
 ### aue:ui-preview {#ui-preview}
 
 El evento `aue:ui-preview` se activa cuando el modo de edición de la página se cambia a **Vista previa**.
@@ -271,7 +248,6 @@ La carga útil está vacía para este evento.
 
 | Evento | Comportamiento |
 |---|---|
-| `aue:ui-publish` | No hacer nada |
 | `aue:ui-select` | Desplazarse al elemento seleccionado |
 | `aue:ui-preview` | Agregar `class="adobe-ue-preview"` a la etiqueta de HTML |
 | `aue:ui-edit` | Agregar `class=adobe-ue-edit"` a la etiqueta de HTML |
