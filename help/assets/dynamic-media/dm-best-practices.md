@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 9d4c8946dcdf0e175a54a1dcf55513f01e5648aa
+source-git-commit: 6cc21d0e7330b3dd4254ad15b64dc94c065417f7
 workflow-type: tm+mt
-source-wordcount: '4114'
+source-wordcount: '4071'
 ht-degree: 0%
 
 ---
@@ -35,14 +35,14 @@ Stage Business Problem Best Practice Recommendation: This section will outline s
 
 {{see-also-dm}}
 
-Las organizaciones se enfrentan a una explosión de canales y dispositivos para interactuar con los usuarios. El recorrido del cliente abarca tiendas físicas, web, móviles, medios sociales, correos electrónicos y comercio. Para satisfacer esta demanda, Dynamic Media en Adobe Experience Manager AEM () ofrece una solución completa. Optimiza la entrega de recursos, gestiona la personalización y garantiza experiencias coherentes, de rendimiento y alineadas con la marca en todos los canales y dispositivos.
+Las organizaciones se enfrentan a una explosión de canales y dispositivos para interactuar con los usuarios. El recorrido del cliente abarca tiendas físicas, web, móviles, medios sociales, correos electrónicos y comercio. Para satisfacer esta demanda, Dynamic Media en Adobe Experience Manager (AEM) ofrece una solución completa. Optimiza la entrega de recursos, gestiona la personalización y garantiza experiencias coherentes, de rendimiento y alineadas con la marca en todos los canales y dispositivos.
 
 Algunos de los principios clave de Dynamic Media son los siguientes:
 
 * **Enfoque de un solo archivo:** Con Dynamic Media, almacena un archivo de origen principal, y todas las variaciones de tamaño y los efectos visuales se crean y optimizan dinámicamente en el momento de la entrega. Este enfoque ahorra costes de almacenamiento y elimina la complejidad del flujo de trabajo.
 * **Imágenes inteligentes totalmente globales:** Las imágenes inteligentes aplicadas durante la entrega de contenido reducen significativamente el tamaño de la imagen y el peso de la página sin poner en riesgo la calidad visual. Está optimizado para ancho de banda de red y proporción de píxeles del dispositivo.
 * **Con tecnología de IA:** Recorte inteligente, una característica impulsada por IA, automatiza el recorte de imágenes y puntos de interés de vídeo. Elimina el esfuerzo manual y se adapta de forma eficaz para el uso empresarial.
-* **Vídeo fácil:** Cargue vídeos de origen principal en Dynamic Media y envíelos en línea de forma adaptativa en varios idiomas con audio descriptivo.
+* **Vídeo fácil:** Cargue vídeos de origen principal en Dynamic Media y envíelos en secuencias de forma adaptativa en varios idiomas con audio descriptivo.
 * **Biblioteca de visualizadores de experiencias:** Personalice y convierta en marca los visualizadores de experiencias para imágenes y vídeos. Estos visores se integran perfectamente en sus experiencias digitales.
 * **Compatibilidad con formatos emergentes:** Dynamic Media permite la entrega de experiencias 3D y panorámicas.
 
@@ -52,29 +52,29 @@ A medida que explora el [Recorrido de Dynamic Media](https://experienceleague.ad
 
 >[!IMPORTANT]
 >
->Las prácticas recomendadas de Dynamic Media en este artículo pueden evolucionar con el tiempo a medida que surjan nuevas tecnologías en Dynamic Media. La información siguiente es actualizada para la última versión de Dynamic Media.
+>Las prácticas recomendadas sobre Dynamic Media de este artículo pueden evolucionar con el tiempo a medida que surjan nuevas tecnologías en Dynamic Media. La información siguiente es actual para la última versión de Dynamic Media.
 
 
 ## Ingesta de recursos en Dynamic Media
 
 **Caso comercial:** *Administre de manera eficiente grandes volúmenes de recursos y asegúrese de que solo el contenido relevante y aprobado se entregue a los usuarios finales.*
 
-Optimice la administración de grandes cantidades de recursos de forma eficaz. Asegúrese de que solo el contenido autorizado apropiado llegue a los usuarios finales mediante las funciones **Sincronización selectiva** y **Publish selectiva** de Dynamic Media.
+Optimice la administración de grandes cantidades de recursos de forma eficaz. Asegúrese de que solo el contenido autorizado y apropiado llegue a los usuarios finales mediante las características de **Sincronización selectiva** y **Publicación selectiva** de Dynamic Media.
 
 * **Sincronización selectiva:**
-Función proactiva que le permite elegir qué recursos sincronizar con Dynamic Media. Por ejemplo, puede decidir sincronizar solo las carpetas que contienen recursos que han recibido la aprobación final. Este flujo de trabajo le ayuda a mantener el control sobre los recursos que se están preparando para su entrega a los clientes.
+Característica proactiva que le permite elegir qué recursos sincronizar con Dynamic Media. Por ejemplo, puede decidir sincronizar solo las carpetas que contienen recursos que han recibido la aprobación final. Este flujo de trabajo le ayuda a mantener el control sobre los recursos que se están preparando para su entrega a los clientes.
 
 * **Publicación selectiva:**
-Después de sincronizar los recursos, Selective Publish le permite controlar qué recursos son visibles para los clientes. Esta capacidad significa que puede controlar qué recursos aprobados se entregan realmente a través de sus canales, lo que garantiza que sus clientes solo vean el contenido mejor y más relevante.
+Después de sincronizar los recursos, la publicación selectiva le permite controlar qué recursos son visibles para sus clientes. Esta capacidad significa que puede controlar qué recursos aprobados se entregan realmente a través de sus canales, lo que garantiza que sus clientes solo vean el contenido mejor y más relevante.
 
 Estas dos prácticas recomendadas le ayudan a lograr un mejor control, control y productividad sobre el contenido con medios enriquecidos.
 
-¿Desea obtener más información? Vaya a [Configurar Publish selectivo en el nivel de carpeta en Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
+¿Desea obtener más información? Vaya a [Configurar publicación selectiva en el nivel de carpeta en Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
 
 
 ## Visores de Dynamic Media
 
-Las prácticas recomendadas del visualizador de Dynamic Media son directrices esenciales diseñadas para optimizar el rendimiento, la funcionalidad y la experiencia del usuario de los recursos de Dynamic Media AEM en los entornos de trabajo de los usuarios de los recursos de los que se dispone en el. Estas prácticas garantizan que los recursos se sincronicen, publiquen y configuren correctamente para utilizar todas las funcionalidades de Dynamic Media.
+Las prácticas recomendadas del visualizador de Dynamic Media son directrices esenciales diseñadas para optimizar el rendimiento, la funcionalidad y la experiencia del usuario de los recursos de Dynamic Media en AEM. Estas prácticas garantizan que los recursos se sincronicen, publiquen y configuren correctamente para utilizar todas las capacidades de Dynamic Media.
 
 Si sigue estas prácticas recomendadas, podrá lograr una integración optimizada, una administración eficiente de los recursos y unas interacciones mejoradas con el visualizador. La sincronización de recursos, el uso del recorte inteligente y la adherencia a las directrices de inclusión de archivos de JavaScript son prácticas importantes. Estas recomendaciones ayudan a mantener la integridad y fiabilidad de la entrega de medios en varias plataformas y dispositivos.
 
@@ -84,19 +84,19 @@ Asegúrese de que todos los recursos del visualizador estén sincronizados con D
    * Acceda a la página de administrador de muestra en `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`. Esta página permite resincronizar los recursos de un visor, incluidos los iconos, los archivos CSS y los ajustes preestablecidos predeterminados.
    * Si encuentra algún problema con el visor, vaya al artículo [Solucionar problemas de visualizadores de Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#viewers).
 
-* **Publish Assets:**
+* **Publicar Assets:**
 Asegúrese de que los recursos se publican antes de verlos en los visores de envío.
 * **Vídeos de reproducción automática silenciados:**
 Para la funcionalidad de reproducción automática de vídeos, utilice la configuración de vídeo en silencio porque los navegadores restringen la reproducción de vídeos con volumen.
 * **Recorte inteligente:**
 Utilice el componente Image v3 para el recorte inteligente a fin de mejorar la presentación de los recursos de imagen.
 * **Inclusión de archivo JavaScript:**
-Incluya solo el archivo JavaScript del visor principal en la página. Evite hacer referencia a archivos JavaScript adicionales que la lógica de tiempo de ejecución del visor pueda descargar. En concreto, no vincule directamente a la biblioteca `Utils.js` del SDK de HTML5 desde la ruta de contexto `/s7viewers` (conocida como inclusión de SDK consolidada). La lógica del visor administra la ubicación de `Utils.js` o bibliotecas de visor en tiempo de ejecución similares, que pueden cambiar entre versiones. El Adobe no conserva versiones anteriores de las inclusiones del visor secundario en el servidor, por lo que la referencia directa a ellas puede interrumpir la funcionalidad del visor en futuras actualizaciones.
+Incluya solo el archivo JavaScript del visor principal en la página. Evite hacer referencia a archivos JavaScript adicionales que la lógica de tiempo de ejecución del visor pueda descargar. En concreto, no vincule directamente a la biblioteca HTML5 SDK `Utils.js` desde la ruta de contexto `/s7viewers` (conocida como inclusión de SDK consolidada). La lógica del visor administra la ubicación de `Utils.js` o bibliotecas de visor en tiempo de ejecución similares, que pueden cambiar entre versiones. Adobe no conserva versiones anteriores de las inclusiones del visor secundario en el servidor, por lo que la referencia directa a ellas puede interrumpir la funcionalidad del visor en futuras actualizaciones.
 * **Directrices de incrustación:**
 Utilice la documentación para incrustar directrices específicas para cada visor.
-¿Desea obtener más información? Vaya a [Visores de AEM Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
+¿Desea obtener más información? Ir a [Visores para AEM Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
 * **Tutorial y ejemplos de SDK:**
-Consulte los ejemplos de [Tutorial del SDK de visualizadores](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) y [aplicación del SDK de HTML 5](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) para obtener información detallada sobre las API de componentes de SDK.
+Consulte el [Tutorial de Viewer SDK](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) y los [ejemplos de aplicaciones de HTML5 SDK](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) para obtener información detallada sobre las API de componentes de SDK.
 
 
 ## Preparación de recursos para su entrega
@@ -114,7 +114,7 @@ Para organizar los recursos de forma eficaz, es necesario clasificarlos en carpe
 El etiquetado de recursos mejora la capacidad de búsqueda, la creación de colecciones y la clasificación de búsqueda. La IA de Adobe Sensei emplea un algoritmo de autoaprendizaje para un etiquetado preciso, lo que permite una recuperación rápida de los recursos. Adobe Sensei también reconoce y asigna etiquetas relevantes (incluidas las personalizadas) a los recursos, lo que simplifica la administración de recursos con un etiquetado automático y descriptivo.
 ¿Desea obtener más información? Vaya a [Organizar recursos con etiquetas](/help/assets/organize-assets.md#use-tags-to-organize-assets).
 * **Organizar recursos como colecciones:**
-Dynamic Media junto con Experience Manager Assets permite crear, editar y compartir de forma eficaz colecciones de recursos entre los usuarios. Puede establecer varios tipos de colección, incluidas listas estáticas y compilaciones dinámicas basadas en búsquedas. Estos tipos de colecciones se pueden compartir en varias ubicaciones con derechos de edición y acceso personalizables.
+Dynamic Media junto con Experience Manager Assets permiten la creación, edición y uso compartido eficientes de colecciones de recursos entre los usuarios. Puede establecer varios tipos de colección, incluidas listas estáticas y compilaciones dinámicas basadas en búsquedas. Estos tipos de colecciones se pueden compartir en varias ubicaciones con derechos de edición y acceso personalizables.
 ¿Desea obtener más información? Vaya a [Organizar recursos como colecciones](/help/assets/manage-collections.md).
 * **Organizar recursos mediante perfiles:**
 Un perfil de procesamiento automatiza la administración de recursos en carpetas designadas, lo que optimiza la organización. La estandarización de los metadatos, los nombres de archivo y las estructuras de carpetas permite la aplicación coherente y precisa de estos perfiles a medida que se amplía la colección de recursos digitales.
@@ -130,7 +130,7 @@ Para mejorar la calidad de la imagen es necesario tener en cuenta diversos facto
 
 ¿Desea obtener más información? Vaya a [Prácticas recomendadas para optimizar la calidad de las imágenes](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md).
 
-Debido a que la percepción de la calidad de la imagen varía de persona a persona, a veces un enfoque sistemático de la experimentación es esencial para lograr resultados deseables. Adobe Experience Manager facilita este proceso con más de 100 comandos de Dynamic Media para mejorar la imagen.
+Debido a que la percepción de la calidad de la imagen varía de persona a persona, a veces un enfoque sistemático de la experimentación es esencial para lograr resultados deseables. Adobe Experience Manager facilita este proceso con más de 100 comandos de Dynamic Media para mejorar las imágenes.
 
 ¿Desea obtener más información? Ver [instantánea de Dynamic Media](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minutos y 17 segundos).
 
@@ -142,7 +142,7 @@ Para evaluar el impacto de estos comandos en la calidad de la imagen, puede carg
 
 **Caso comercial:** *Estandarizar de forma eficaz el estilo y la transformación aplicados a mis recursos de imagen.*
 
-Utilice ajustes preestablecidos de imagen con regularidad en Dynamic Media para poder ajustar de forma coherente y dinámica los tamaños, formatos y propiedades de la imagen. Considere un ajuste preestablecido de imagen como una macro: es un conjunto con nombre de comandos para cambiar el tamaño y el formato. Por ejemplo, si su sitio necesita imágenes de productos en varios tamaños y formatos, con una compresión específica para equipos de escritorio y dispositivos móviles, los ajustes preestablecidos de imagen automatizan este proceso de forma eficaz.
+Utilice ajustes preestablecidos de imagen con regularidad en Dynamic Media para que pueda ajustar de forma coherente y dinámica los tamaños, formatos y propiedades de la imagen. Considere un ajuste preestablecido de imagen como una macro: es un conjunto con nombre de comandos para cambiar el tamaño y el formato. Por ejemplo, si su sitio necesita imágenes de productos en varios tamaños y formatos, con una compresión específica para equipos de escritorio y dispositivos móviles, los ajustes preestablecidos de imagen automatizan este proceso de forma eficaz.
 
 ¿Quieres probarlo? Vaya a [Aspectos básicos de la creación de ajustes preestablecidos de imagen para procesar recursos](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-e)
 
@@ -150,11 +150,11 @@ Utilice ajustes preestablecidos de imagen con regularidad en Dynamic Media para 
 
 **Caso comercial:** *Asegúrese de que el punto de interés principal de mis imágenes o vídeos permanece enfocado en todos los dispositivos.*
 
-Recorte inteligente es una función de Dynamic Media que utiliza Adobe Sensei, la IA de Adobe y el módulo de aprendizaje automático para automatizar el recorte de imágenes y vídeos. Detecta de forma inteligente y se centra en el tema principal o punto de interés de una imagen o vídeo. Esta inteligencia garantiza que el punto focal se mantenga en varios tamaños de pantalla en equipos de escritorio y dispositivos móviles.
+Recorte inteligente es una función de Dynamic Media que utiliza Adobe Sensei, la IA de Adobe y el marco de aprendizaje automático, para automatizar el recorte de imágenes y vídeos. Detecta de forma inteligente y se centra en el tema principal o punto de interés de una imagen o vídeo. Esta inteligencia garantiza que el punto focal se mantenga en varios tamaños de pantalla en equipos de escritorio y dispositivos móviles.
 
 Una práctica recomendada es crear un perfil de imagen con recorte inteligente. En el perfil, puede definir varios tamaños de pantalla y dejar que Adobe Sensei haga el resto, lo que garantiza que las imágenes y los vídeos siempre estén optimizados para el dispositivo del visualizador.
 
-¿Desea obtener más información? Vea [Uso del recorte inteligente con AEM Assets Dynamic Media](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minutos, 35 segundos) y [Uso del recorte inteligente de Dynamic Media para el vídeo](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) (6 minutos, 22 segundos).
+¿Desea obtener más información? Vea [Uso del recorte inteligente con AEM Assets en Dynamic Media](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minutos, 35 segundos) y [Uso del recorte inteligente de Dynamic Media para el vídeo](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) (6 minutos, 22 segundos).
 
 ### Mejore las clasificaciones SEO
 
@@ -182,7 +182,7 @@ Aprenda a transformar de forma condicional las URL en función de varios factore
 ¿Desea obtener más información? Vaya a [Use conjuntos de reglas para transformar las direcciones URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md).
 * **Imágenes inteligentes y recorte inteligente:**
 Utilice las funciones de imágenes inteligentes y recorte inteligente de Dynamic Media para ofrecer imágenes optimizadas y adaptables. Al hacerlo, no solo mejora los tiempos de carga de la página, sino que también contribuye positivamente a las clasificaciones de SEO.
-¿Desea obtener más información? Vaya a [Imágenes inteligentes](/help/assets/dynamic-media/imaging-faq.md) o vea [Uso del recorte inteligente con AEM Assets Dynamic Media](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minutos y 35 segundos).
+¿Desea obtener más información? Vaya a [Imágenes inteligentes](/help/assets/dynamic-media/imaging-faq.md) o vea [Uso del recorte inteligente con Dynamic Media de los AEM Assets](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minutos, 35 segundos).
 
 Recuerde, estas prácticas recomendadas se alinean bien con las prácticas recomendadas de SEO de imágenes de Google. Estas prácticas enfatizan la importancia de proporcionar contexto y claridad a los motores de búsqueda a través de convenciones de nomenclatura adecuadas, datos estructurados y una entrega de imágenes optimizada.
 
@@ -204,7 +204,7 @@ Dynamic Media ofrece un conjunto de comandos para mejorar imágenes y crear efec
 
 #### Agregar un borde de imagen
 
-Dynamic Media permite manipular imágenes directamente mediante direcciones URL, lo que lo convierte en una potente herramienta para crear experiencias digitales dinámicas. A continuación se muestran algunos ejemplos. Empecemos con la siguiente URL de imagen original: [https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel).
+Dynamic Media permite manipular imágenes directamente a través de direcciones URL, lo que lo convierte en una potente herramienta para crear experiencias digitales dinámicas. A continuación se muestran algunos ejemplos. Empecemos con la siguiente URL de imagen original: [https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel).
 
 | Tarea | Qué hacer |
 | --- | --- |
@@ -216,13 +216,13 @@ Siéntase libre de experimentar con estas URL para lograr los efectos visuales d
 
 #### Creación de superposiciones de imagen
 
-Si desea superponer un logotipo o un icono en una imagen existente, Dynamic Media proporciona una manera directa de conseguirlo utilizando comandos de URL. Vamos a desglosar los escalones.
+Si desea superponer un logotipo o un icono en una imagen existente, Dynamic Media proporciona una manera directa de conseguirlo mediante comandos de URL. Vamos a desglosar los escalones.
 
 | Paso | Qué hacer |
 | --- | --- |
 | **Cargar y publicar la imagen base** | En primer lugar, cargue y publique la imagen base sobre la que desee superponer el logotipo o el icono. Puede utilizar cualquier imagen como base.<br>Por ejemplo, aquí hay una imagen base:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa). |
 | **Cargar y publicar el logotipo o la imagen del icono** | A continuación, cargue y publique la imagen que desee superponer sobre la imagen base. Esta imagen debe ser un PNG transparente con el logotipo o el icono que desee superponer.<br>Esta es la imagen PNG transparente de un objeto de estrella con efectos de transparencia que se superpondrá:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
-| **Aplicar la URL de Dynamic Media** | Ahora cree una dirección URL de Dynamic Media que combine la imagen base y el logotipo o la imagen de icono. Puede utilizar comandos de URL para lograr este efecto.<br>La estructura de la dirección URL tiene este aspecto:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>donde el recurso<ul><li> `hotspotRetailBaseImage` es la imagen base.</li><li> `starxp` es la imagen del logotipo/icono.</li><li> `layer=1` especifica que el logotipo o icono se debe colocar en capas sobre la imagen base.</li><li> `scale=1.25` ajusta el tamaño del logotipo/icono.</li><li> `posN=0.33,-.25` determina la posición del logotipo/icono en relación con la imagen base.</li><li> `fmt=png` garantiza que la salida esté en formato PNG.</li></ul> |
+| **Aplicar la URL de Dynamic Media** | Ahora, cree una URL de Dynamic Media que combine la imagen base y el logotipo o la imagen del icono. Puede utilizar comandos de URL para lograr este efecto.<br>La estructura de la dirección URL tiene este aspecto:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>donde el recurso<ul><li> `hotspotRetailBaseImage` es la imagen base.</li><li> `starxp` es la imagen del logotipo/icono.</li><li> `layer=1` especifica que el logotipo o icono se debe colocar en capas sobre la imagen base.</li><li> `scale=1.25` ajusta el tamaño del logotipo/icono.</li><li> `posN=0.33,-.25` determina la posición del logotipo/icono en relación con la imagen base.</li><li> `fmt=png` garantiza que la salida esté en formato PNG.</li></ul> |
 
 ¿Qué desea saber más? Vaya a [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) para obtener más información sobre el comando `src` y otros comandos de URL de Dynamic Media.
 
@@ -280,17 +280,17 @@ No dude en explorar estas variaciones para sus necesidades específicas.
 
 ### Distribución de imágenes de GIF
 
-**Caso comercial:** *GIF de secuencias que utilizan Dynamic Media*
+**Caso comercial:** *Transmitir GIF mediante Dynamic Media*
 
-Puede cargar y enviar GIF mediante Dynamic Media. Para procesar un GIF animado, reemplace `is/image` por `is/content` en la dirección URL. Por ejemplo, si subió `abc.gif`, use lo siguiente:
+Puede cargar y enviar GIF a través de Dynamic Media. Para procesar un GIF animado, reemplace `is/image` por `is/content` en la dirección URL. Por ejemplo, si subió `abc.gif`, use lo siguiente:
 
-* Esta ruta de URL representa una vista estática del GIF:
+* Esta ruta de URL representa una vista estática de GIF:
 
   ```
   https://your.domain.com/is/image/yourfolder/abc
   ```
 
-* Esta ruta URL representa la vista de animación del GIF:
+* Esta ruta URL representa la vista de animación de GIF:
 
   ```
   https://your.domain.com/is/content/yourfolder/abc
@@ -300,7 +300,7 @@ Puede cargar y enviar GIF mediante Dynamic Media. Para procesar un GIF animado, 
 >
 >Al usar `is/content` en la ruta de acceso URL, los comandos de transformación de imágenes no se aplican al recurso.
 
-### Publish muestra un vídeo para mi sitio web
+### Publicar un vídeo para mi sitio web
 
 **Caso comercial:** *Publique rápidamente un vídeo para un sitio de marketing.*
 
@@ -318,7 +318,7 @@ Después de la publicación, tiene dos opciones.
    * **Vínculo directamente:**
 Utilice la dirección URL proporcionada para vincular directamente al vídeo. Conéctelo correctamente a su sitio de marketing.
    * **Incrustar el vídeo:**
-Copie el código incrustado proporcionado y péguelo en el HTML de la página web en la que desea que aparezca el vídeo. Al hacerlo, el vídeo se reproduce directamente en el sitio.
+Copie el código incrustado proporcionado y péguelo en la HTML de la página web en la que desea que aparezca el vídeo. Al hacerlo, el vídeo se reproduce directamente en el sitio.
 
 ¿Desea obtener más información? Ir a [Vídeo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
 
@@ -328,10 +328,10 @@ Copie el código incrustado proporcionado y péguelo en el HTML de la página we
 
 Para garantizar la mejor calidad y participación en sus vídeos, considere la posibilidad de implementar una combinación de las siguientes estrategias de prácticas recomendadas:
 
-* **Usar el visor de vídeo integrado de HTML5:**
-Los ajustes preestablecidos del visualizador de vídeo HTML5 de Dynamic Media son reproductores de vídeo sólidos. Utilícelos para evitar problemas comunes asociados con la reproducción de vídeo de HTML5 y dispositivos móviles.
+* **Usar el visor de vídeo HTML5 integrado:**
+Los ajustes preestablecidos del visualizador de vídeo HTML5 de Dynamic Media son reproductores de vídeo sólidos. Utilícelos para evitar problemas comunes asociados con la reproducción de vídeo HTML5 y dispositivos móviles.
 Estos ajustes preestablecidos afrontan desafíos como la entrega de flujo de bits adaptable y el alcance limitado del explorador de escritorio.
-¿Desea obtener más información? Vaya a [Práctica recomendada: Usar el visor de vídeo de HTML 5](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer).
+¿Desea obtener más información? Vaya a [Práctica recomendada: usar el visor de vídeo de HTML 5](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer).
 
 * **Usar perfiles de vídeo de Dynamic Media:**
 Los perfiles de vídeo de Dynamic Media ayudan a administrar de forma eficaz el vídeo, a conseguir una calidad uniforme y a utilizar el flujo adaptable.
@@ -346,11 +346,6 @@ El streaming adaptable ajusta la calidad del vídeo en función de la velocidad 
 Utiliza protocolos como HLS (HTTP Live Streaming) o DASH (`Dynamic Adaptive Streaming over HTTP`) para garantizar una calidad de reproducción óptima.
 A diferencia del streaming progresivo, que ofrece vídeos de forma lineal, el streaming adaptable minimiza el almacenamiento en búfer y ofrece una experiencia de visualización perfecta.
 
-* **Habilite DASH en su cuenta (transmisión adaptable digital a través de HTTP):**
-DASH proporciona contenido de vídeo de forma dinámica mediante flujo adaptable.
-Para habilitar DASH, cree un ticket de asistencia para su entorno.
-¿Desea obtener más información? Vaya a [Habilitar DASH en su cuenta de Dynamic Media](/help/assets/dynamic-media/video.md#enable-dash).
-
 ### Internacionalización de vídeos para consumo multilingüe
 
 **Caso comercial:** *Prepare los vídeos para el consumo multilingüe.*
@@ -364,18 +359,18 @@ La internacionalización de los vídeos para el consumo multilingüe es esencial
    * Dynamic Media admite principalmente vídeos de formato corto (hasta 30 minutos) con una resolución mínima superior a 25 × 25. Se pueden cargar archivos de vídeo de hasta 15 GB1.
 
 * **Administrar los vídeos:**
-   * AEM Organizar, examinar y buscar recursos de vídeo dentro de las listas de recursos de.
+   * Organice, examine y busque recursos de vídeo en AEM.
    * Previsualización y publicación de recursos de vídeo.
    * Vea el vídeo de origen y sus representaciones codificadas junto con las miniaturas asociadas.
    * Edite propiedades de vídeo como título, descripción y etiquetas2.
 
 * **Localización:**
    * Para cada geografía/idioma de destino, cree pistas de audio y subtítulos.
-   * AEM Añada estas pistas de audio y subtítulos a sus vídeos desde la interfaz de la.
+   * Añada estas pistas de audio y subtítulos a sus vídeos desde la interfaz de AEM.
    * A medida que los usuarios reproducen los vídeos, pueden seleccionar su idioma preferido para el audio y los subtítulos.
 
 * **Publicación:**
-   * AEM Si utiliza como sistema de administración de contenido web (WCM), puede agregar vídeos directamente a sus páginas web.
+   * Si utiliza AEM como sistema de administración de contenido web (WCM), puede agregar vídeos directamente a las páginas web.
    * Si utiliza un sistema WCM de terceros, puede vincular o incrustar vídeos en las páginas web mediante direcciones URL o códigos incrustados.
 
 ¿Desea obtener más información? Vaya a [Acerca de la compatibilidad con múltiples subtítulos y pistas de audio para vídeos en Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) o vea [Agregar múltiples subtítulos y pistas de audio a un vídeo](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play) (1 minuto, 41 segundos).
@@ -389,7 +384,7 @@ La internacionalización de los vídeos para el consumo multilingüe es esencial
 
 Dynamic Media Smart Imaging es una potente herramienta que mejora el rendimiento de la entrega de imágenes al optimizar automáticamente el formato, el tamaño y la calidad de la imagen en función de las capacidades del explorador del cliente.
 
-Adobe recomienda usar las funcionalidades de Smart Imaging en lugar de establecer manualmente el formato de imagen en `webp` o `avif`. He aquí la razón:
+Adobe recomienda usar las capacidades de Smart Imaging en lugar de establecer manualmente el formato de imagen en `webp` o `avif`. He aquí la razón:
 
 * **Compatibilidad de explorador:**
 Imágenes inteligentes garantiza que el formato de imagen entregado sea compatible con el explorador del usuario.
@@ -408,7 +403,7 @@ Al utilizar imágenes inteligentes, puede asegurarse de que las imágenes se ent
 
 **Caso comercial:** *Después de publicar contenido nuevo o de sobrescribir contenido existente, ¿cómo se puede garantizar que los cambios aparezcan inmediatamente en la CDN?*
 
-La CDN (red de distribución de contenido) almacena en caché los recursos de Dynamic Media para enviarlos rápidamente a los clientes. Cuando se realizan actualizaciones en estos recursos, es importante que los cambios surtan efecto inmediatamente en el sitio web. Al purgar o invalidar la caché de la CDN, los recursos entregados por Dynamic Media se pueden actualizar rápidamente. Este método elimina la necesidad de esperar a que la caché caduque en función del valor TTL (Tiempo de vida), que normalmente se establece en diez horas. Según el caso de uso específico, puede actualizar la configuración del TTL de CDN (Tiempo de vida) en consecuencia.
+La CDN (red de distribución de contenido) almacena en caché los recursos de Dynamic Media para una entrega rápida a los clientes. Cuando se realizan actualizaciones en estos recursos, es importante que los cambios surtan efecto inmediatamente en el sitio web. Al purgar o invalidar la caché de la CDN, los recursos entregados por Dynamic Media se pueden actualizar rápidamente. Este método elimina la necesidad de esperar a que la caché caduque en función del valor TTL (Tiempo de vida), que normalmente se establece en diez horas. Según el caso de uso específico, puede actualizar la configuración del TTL de CDN (Tiempo de vida) en consecuencia.
 
 ¿Desea obtener más información? Vaya a [Invalidar la caché de CDN mediante Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
