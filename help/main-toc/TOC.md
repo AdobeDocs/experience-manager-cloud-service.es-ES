@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 6a907b3d3241010e152669a70dec405215fbc6b1
 workflow-type: tm+mt
-source-wordcount: '6228'
+source-wordcount: '6239'
 ht-degree: 95%
 
 ---
@@ -586,6 +586,8 @@ ht-degree: 95%
       + [Configuración de Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Trabajar con Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
       + [Configuración de Dynamic Media](/help/assets/dynamic-media/config-dm.md)
+      + [Dynamic Media Prime y Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)
+      + [Habilitar Dynamic Media Prime y Ultimate](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md)
       + [Opcional: configuración de Dynamic Media, configuración general](/help/assets/dynamic-media/dm-general-settings.md)
       + [Opcional: configuración de Dynamic Media, configuración de publicaciones](/help/assets/dynamic-media/dm-publish-settings.md)
       + [Resolución de problemas de Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)
@@ -892,7 +894,7 @@ ht-degree: 95%
    + Informes de transacciones {#using-communications}
       + [API facturables de informes de transacciones](/help/forms/transaction-reports-billable-apis.md)
       + [Registrar una transacción para una implementación personalizada](/help/forms/record-transaction-custom-implementation.md)
-   + Panel de realización de valor {#vr-dashboard}
+   + Tablero de realización de valores {#vr-dashboard}
       + [Comprender el panel de realización de valores](/help/forms/aem-forms-value-realization-dashboard.md)
       + [Uso del panel de realización de valor para analizar las tendencias de uso de formularios y documentos](/help/forms/using-the-value-realization-dashboard.md)
    + Referencia de API de desarrollador {#aem-forms-developer-api-reference}
