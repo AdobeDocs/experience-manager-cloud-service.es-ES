@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo habilitar  [!DNL Dynamic Media] of
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: 3962b687a7d0d3f5551b23fbe5c2ee2c21bd1d89
+source-git-commit: 6ec63a4d1a1c0af71e597b18d5a52d0a53c94c8c
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 2%
@@ -28,9 +28,11 @@ Ejecute los siguientes pasos en su entorno de servicio en la nube para habilitar
 1. [Configurar [!DNL Dynamic Media] soluciones](#configure-dynamic-media-solutions)
 1. [Crear y enumerar  [!DNL Dynamic Media] empresas](#create-and-list-dynamic-media-companies)
 1. [Configurar dominio personalizado en el nivel de entrega](#configure-custom-domain-in-delivery-tier)
+
 <!--
 1. [Onboard API keys using the [!DNL AEM] [!DNL Dynamic Media] API card](#onboarding-api-keys)
 -->
+
 Si necesita habilitar [!DNL Dynamic Media Prime], vea los vínculos rápidos proporcionados en [Habilitar [!DNL Dynamic Media Prime]](#enable-dynamic-media-prime).
 
 ### Activar [!DNL Dynamic Media with OpenAPI] {#activate-dynamic-media-with-openapi}
