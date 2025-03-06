@@ -4,9 +4,9 @@ description: Notas de la versión 2023.4.0 de la versión de  [!DNL Adobe Experi
 exl-id: c34aedee-e45a-4e2a-ae7f-930bc0cc026f
 feature: Release Information
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1122'
+source-git-commit: b4ffcddddfcd990c359380071f19b5442dee9eb2
+workflow-type: tm+mt
+source-wordcount: '1112'
 ht-degree: 100%
 
 ---
@@ -67,7 +67,6 @@ Eche un vistazo al vídeo Información general sobre la versión de abril de 202
 * Lanzamiento de nuevo protocolo de asistencia (DASH - Dynamic Adaptive Streaming over HTTP) para streaming adaptable en la entrega de vídeo de Dynamic Media (con CMAF habilitado):
    * La transmisión adaptable (DASH/HLS) garantiza una mejor experiencia de visualización de vídeos por parte del usuario
    * DASH es el protocolo estándar internacional para la transmisión de vídeo adaptable y es ampliamente adoptado en el sector.
-   * Disponible en todas las regiones, para habilitar mediante ticket de asistencia
 
 * _Instantánea_ de Dynamic Media: Experimento con imágenes de prueba o URL de Dynamic Media para ver el output de diferentes modificadores de imagen y evaluar las optimizaciones de imágenes inteligentes para el tamaño de archivo (con entrega WebP y AVIF), el ancho de banda de la red y la proporción de píxeles del dispositivo. Consulte la [Instantánea de Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=es).
 

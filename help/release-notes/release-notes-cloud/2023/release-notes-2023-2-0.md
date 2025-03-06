@@ -4,9 +4,9 @@ description: Notas de la versión 2023.2.0 de la versión de [!DNL Adobe Experie
 exl-id: 671056e6-84cc-4c2c-bca3-fde68d5cc835
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b4ffcddddfcd990c359380071f19b5442dee9eb2
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '716'
 ht-degree: 100%
 
 ---
@@ -49,7 +49,6 @@ Eche un vistazo al vídeo de información general sobre la versión de febrero d
 * Nuevo protocolo (DASH - Dynamic Adaptive Streaming over HTTP) compatible con el flujo adaptable en la entrega de vídeo de Dynamic Media (con CMAF habilitado):
    * La transmisión adaptable (DASH/HLS) garantiza una mejor experiencia de visualización de vídeos por parte del usuario
    * DASH es el protocolo estándar internacional para la transmisión de vídeo adaptable y es ampliamente adoptado en el sector.
-   * Disponible en NA, que se habilitará mediante ticket de soporte, próximamente en APAC, EMEA
 
 * Se ha añadido compatibilidad con imágenes WebP para extraer automáticamente metadatos, generar miniaturas y representaciones personalizadas. Ahora, las funciones Smart Tag y Smart Crop también son compatibles con estos archivos.
 
