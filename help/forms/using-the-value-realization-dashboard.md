@@ -6,7 +6,7 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
+source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Este artículo proporciona instrucciones de uso detalladas e interpretación de 
 Para acceder al panel de información de uso de Forms:
 
 1. Vaya a **Forms** > **Forms y documentos**
-1. Haga clic en **Panel de información**. El tablero se abre en una nueva ventana.
+1. Haga clic en **Tablero de InProduct**. El tablero se abre en una nueva ventana.
 
    ![Panel de realización de valores](/help/forms/assets/forms-usage-insights.png)
 

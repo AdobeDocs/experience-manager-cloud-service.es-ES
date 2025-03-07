@@ -6,9 +6,9 @@ role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
 exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
-source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
+source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,6 @@ Este tablero es la ventana al mundo del uso del formulario. Este es un desglose 
 * **Envíos de formularios**: vea las tendencias en la frecuencia con que se completan los formularios.
 * **Representaciones de documentos**: haga un seguimiento de la cantidad de documentos representados a lo largo del tiempo.
 * **Forms creado y publicado**: supervise la velocidad a la que se crean e implementan nuevos formularios.
-* **Tiempos de creación y publicación de formularios**: Analice los tiempos promedio para crear y publicar formularios a fin de identificar áreas que se puedan mejorar.
 
 ### Uso de fragmentos
 
