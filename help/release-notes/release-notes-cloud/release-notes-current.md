@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: edfec41a9e33fbe818cb19f878ac42d435d62419
+source-git-commit: 896a2927c0f5733ab23ca9f6c9e975f8388daff9
 workflow-type: tm+mt
 source-wordcount: '1419'
 ht-degree: 48%
@@ -46,25 +46,23 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-
 ### Nuevas funciones de AEM Sites {#new-features-sites}
 
-** de etiquetado automático de fragmentos de contenido **
+**Etiquetado automático de fragmentos de contenido**
 
 Al crear fragmentos de contenido, ahora es posible heredar automáticamente las etiquetas asignadas al modelo de contenido. Esto permite una potente clasificación automática del contenido almacenado en los fragmentos de contenido.
 
-** de compatibilidad con UUID de fragmentos de contenido **
+**Compatibilidad con UUID de fragmento de contenido**
 
 La compatibilidad con UUID de fragmento de contenido ahora es GA. La nueva funcionalidad no altera el comportamiento basado en rutas de las operaciones dentro de AEM, como mover, cambiar el nombre y desplegar, donde las rutas se ajustan automáticamente, pero puede hacer que el consumo externo de fragmentos de contenido sea más fácil y estable, especialmente cuando se utilizan consultas de GraphQL que dirigen directamente a fragmentos individuales con consultas ByPath. Estas consultas pueden romperse si cambia una ruta de fragmento. Al utilizar el nuevo tipo de consulta ById, la consulta ahora permanece estable, ya que el UUID de un fragmento no cambia en los casos en que las rutas sí lo hacen.
 
-** Dynamic Media con compatibilidad con OpenAPI en el Editor de fragmentos de contenido y GraphQL **
+**Dynamic Media con compatibilidad con OpenAPI en el Editor de fragmentos de contenido y GraphQL**
 
 Assets que se almacenan en programas de AEM as a Cloud Service diferentes a los fragmentos de contenido y que se habilitan con la nueva capacidad Dynamic Media con OpenAPI, ahora se puede utilizar en fragmentos de contenido. El selector de imágenes en el nuevo Editor de fragmentos de contenido ahora permite seleccionar repositorios &quot;remotos&quot; como fuente para los recursos de imagen a los que se hace referencia en el fragmento. Además, al enviar estos fragmentos de contenido mediante AEM GraphQL, la respuesta JSON ahora incluye propiedades necesarias para los recursos remotos (assetId, repositoryId), de modo que las aplicaciones cliente puedan crear Dynamic Media respectivos con URL de OpenAPI para recuperar la imagen.
 
-** de API HTTP de traducción **
+**API HTTP de traducción**
 
 La API de REST HTTP de traducción de AEM que lleva un tiempo en el modo de usuario inicial es ahora GA. La documentación se encuentra [aquí](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/). La API permite automatizar los pasos necesarios en el proceso de administración de traducciones para el contenido en AEM.
-
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
