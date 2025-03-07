@@ -1,14 +1,14 @@
 ---
-title: Panel de realización de valor de AEM Forms
-description: Monitorice sin esfuerzo los envíos de formularios en las instancias de AEM Forms con nuestro intuitivo panel de seguimiento.
+title: Tablero de Realización de Valores AEM Forms
+description: Monitorice sin esfuerzo los envíos de formularios en las instancias de AEM Forms con un tablero de seguimiento intuitivo.
 feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
 exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,7 @@ ht-degree: 0%
 
 Bienvenido a su ventanilla única para comprender el valor que aportan sus formularios. Este tablero le proporciona información valiosa para optimizar los formularios, optimizar los flujos de trabajo y, en última instancia, lograr los objetivos más rápido.
 
-Este artículo proporciona una visión general conceptual del Panel de realización de valores y sus ventajas. Para obtener instrucciones de uso detalladas e interpretación de métricas, consulte [Interpretación de las perspectivas de uso del formulario mediante el panel de Realización de valores](/help/forms/using-the-value-realization-dashboard.md).
-
-
+Este artículo proporciona una visión general conceptual del Panel de realización de valores y sus ventajas. Para obtener instrucciones de uso detalladas e interpretación de métricas, consulte [uso del panel de realización de valor para analizar las tendencias de uso de formularios y documentos](/help/forms/using-the-value-realization-dashboard.md).
 
 
 ## ¿Qué hay en el tablero? {#content-of-dashboard}
@@ -50,7 +48,7 @@ Este tablero es la ventana al mundo del uso del formulario. Este es un desglose 
 
 Este tablero le permite tomar decisiones basadas en datos sobre sus formularios. A continuación se muestra cómo:
 
-* **Identificar Forms populares**: las altas tasas de envío indican formularios valiosos. Analícelas para conocer las prácticas recomendadas y poder replicarlas en otros.
+* **Identificar Forms populares**: las altas tasas de envío indican formularios valiosos. Analice estos formularios para conocer las prácticas recomendadas de replicación en otros.
 * **Optimizar la creación de formularios**: Reduzca los tiempos de creación mediante la identificación de cuellos de botella. Explore las plantillas creadas previamente para optimizar los flujos de trabajo.
 * **Aumentar la reutilización de fragmentos**: fomente la colaboración y la detección de fragmentos reutilizables. Las bibliotecas de fragmentos bien organizadas pueden mejorar significativamente la eficacia.
 
@@ -77,4 +75,4 @@ Al analizar estas tendencias, puede crear mejores formularios, ahorrar tiempo en
 
 ## Véase también
 
-* [Uso del panel para analizar las tendencias de uso de Forms y documentos](/help/forms/using-the-value-realization-dashboard.md)
+* [Uso del tablero para analizar las tendencias de uso de Forms y documentos](/help/forms/using-the-value-realization-dashboard.md)
