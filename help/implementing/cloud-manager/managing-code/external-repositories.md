@@ -1,19 +1,19 @@
 ---
 title: 'Adición de repositorios externos en Cloud Manager: beta limitada'
-description: Obtenga información sobre cómo añadir un repositorio administrado a Adobe en Cloud Manager. Cloud Manager admite la integración con repositorios de GitHub, GitLab y Bitbucket.
+description: Obtenga información sobre cómo añadir un repositorio administrado a Adobe en Cloud Manager. Cloud Manager admite la integración con repositorios de GitHub Enterprise Server, GitLab y Bitbucket.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 5e2db30d9a505000881a0781dd5c4c2412a17ca8
+source-git-commit: 7ce39020870943243e2d48aa66370f2cca9c2ac0
 workflow-type: tm+mt
-source-wordcount: '1614'
-ht-degree: 40%
+source-wordcount: '1618'
+ht-degree: 37%
 
 ---
 
 # Adición de repositorios externos en Cloud Manager: versión beta limitada {#external-repositories}
 
-Obtenga información sobre cómo añadir un repositorio administrado a Adobe en Cloud Manager. Cloud Manager admite la integración con repositorios de GitHub, GitLab y Bitbucket.
+Obtenga información sobre cómo añadir un repositorio administrado a Adobe en Cloud Manager. Cloud Manager admite la integración con repositorios de GitHub Enterprise Server, GitLab y Bitbucket.
 
 >[!NOTE]
 >
@@ -64,9 +64,9 @@ La configuración de un repositorio externo en Cloud Manager consta de tres paso
    | Tipo de token | Descripción |
    | --- | --- |
    | **Usar token de acceso existente** | Si ya ha proporcionado un token de acceso al repositorio para su organización y tiene acceso a varios repositorios, puede seleccionar un token existente. Utilice la lista desplegable **Nombre de token** para elegir el token que desea aplicar al repositorio. De lo contrario, añada un nuevo token de acceso. |
-   | **Añadir nuevo token de acceso** | **Tipo de repositorio: GitHub**<br>• En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que va a crear.<br>• Cree un token de acceso personal siguiendo las instrucciones de la [documentación de GitHub](https://docs.github.com/es/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<br>· Para obtener los permisos necesarios, consulte [Crear nueva ruta de acceso para GitHub](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-providers/create-new-github-pat).<br>• En el campo **Token de acceso**, pegue el token que acaba de crear. |
-   |  | **Tipo de repositorio: GitLab**<br>•  En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que va a crear.<br>• Cree un token de acceso personal siguiendo las instrucciones de la [documentación de GitLab](https://docs.gitlab.com/user/profile/personal_access_tokens/).<br>· Para obtener los permisos necesarios, consulte [Crear una nueva ruta de acceso para GitLab](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-providers/create-new-gitlab-pat).<br>• En el campo **Token de acceso**, pegue el token que acaba de crear. |
-   |  | **Tipo de repositorio: Bitbucket**<br>· En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que va a crear.<br>• Cree un token de acceso al repositorio mediante la [documentación de Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<br>· Para obtener los permisos necesarios, consulte [Crear una nueva ruta de acceso para el bloque de bits](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-providers/create-new-bitbucket-path). |
+   | **Añadir nuevo token de acceso** | **Tipo de repositorio: GitHub**<br>• En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que va a crear.<br>• Cree un token de acceso personal siguiendo las instrucciones de la [documentación de GitHub](https://docs.github.com/es/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<br>· Para obtener los permisos necesarios, consulte la siguiente información: ![Crear nueva ruta de acceso para GitHub](/help/implementing/cloud-manager/managing-code/assets/webhook-github-enterprise-server.png)<br>· En el campo **Token de acceso**, pegue el token que acaba de crear. |
+   |  | **Tipo de repositorio: GitLab**<br>•  En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que va a crear.<br>• Cree un token de acceso personal siguiendo las instrucciones de la [documentación de GitLab](https://docs.gitlab.com/user/profile/personal_access_tokens/).<br>· Para obtener los permisos necesarios, consulte la siguiente información: ![Crear una nueva ruta de acceso para GitLab](/help/implementing/cloud-manager/managing-code/assets/webhook-gitlab.png)<br>· En el campo **Token de acceso**, pegue el token que acaba de crear. |
+   |  | **Tipo de repositorio: Bitbucket**<br>· En el campo de texto **Nombre de token**, escriba un nombre para el token de acceso que va a crear.<br>• Cree un token de acceso al repositorio mediante la [documentación de Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<br>· Para obtener los permisos necesarios, consulte la siguiente información ![Crear una nueva ruta de acceso para el bloque de bits](/help/implementing/cloud-manager/managing-code/assets/webhook-bitbucket.png). |
 
    >[!NOTE]
    >
