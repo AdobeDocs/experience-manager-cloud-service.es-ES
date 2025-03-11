@@ -2,7 +2,7 @@
 source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
 source-wordcount: '1505'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 # Fragmentos de código {#snippets}
@@ -59,15 +59,15 @@ ht-degree: 94%
 
 ## Editor universal{#universal-editor-see-also}
 
-* [Crear El Primer Formulario Con El Editor Universal](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [Añadir el comportamiento dinámico a Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Crear el primer formulario con el editor universal](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Añadir comportamiento dinámico a formularios](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
 * [Configurar y personalizar las acciones de envío de formularios](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [Publicación e implementación de Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [Diseño hermoso Forms: Guía de estilo y temática](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-* [Crear componentes de formulario personalizados](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [Proteja su Forms del spam: Añadir la seguridad reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+* [Publicar e implementar formularios](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Diseñar formularios atractivos: Guía de estilo y temas](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Generar componentes de formulario personalizados](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [Proteger los formularios del spam: añadir seguridad reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
-## Véase también {#see-more-forms-eds}
+## Consulte también {#see-more-forms-eds}
 
 * [Introducción a Edge Delivery Services para AEM Forms](/help/edge/docs/forms/tutorial.md)
 * [Crear un formulario con Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
@@ -255,15 +255,15 @@ Para registrar un ticket de asistencia, primero debe registrar el sitio de Edge 
 
 ## Editor universal{#ue-see-also}
 
-* [Crear El Primer Formulario Con El Editor Universal](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [Añadir el comportamiento dinámico a Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Crear el primer formulario con el editor universal](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Añadir comportamiento dinámico a formularios](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
 * [Configurar y personalizar las acciones de envío de formularios](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [Publicación e implementación de Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [Diseño hermoso Forms: Guía de estilo y temática](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-* [Crear componentes de formulario personalizados](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [Proteja su Forms del spam: Añadir la seguridad reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+* [Publicar e implementar formularios](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Diseñar formularios atractivos: Guía de estilo y temas](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Generar componentes de formulario personalizados](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [Proteger los formularios del spam: añadir seguridad reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
-## Véase también {#see-more-eds-forms}
+## Consulte también {#see-more-eds-forms}
 
 * [Introducción a Edge Delivery Services para AEM Forms](/help/edge/docs/forms/tutorial.md)
 * [Crear un formulario con Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)

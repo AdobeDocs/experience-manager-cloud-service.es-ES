@@ -7,14 +7,14 @@ exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
 source-wordcount: '1706'
-ht-degree: 10%
+ht-degree: 12%
 
 ---
 
 
 # Exploración de la interfaz (WYSIWYG) del editor universal
 
-El [Editor universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) ofrece una interfaz de What You See Is What You Get (WYSIWYG) simple, visual e intuitiva para Adobe Edge Delivery Services Forms. Proporciona una interfaz moderna e intuitiva para la creación eficiente de formularios.
+El [editor universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) ofrece una interfaz WYSIWYG (What You See Is What You Get - Lo que se ve es lo que se obtiene) sencilla, visual e intuitiva para los formularios de Adobe Edge Delivery Services. Proporciona una interfaz moderna e intuitiva para la creación eficiente de formularios.
 
 ![Interfaz de usuario del editor universal](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 

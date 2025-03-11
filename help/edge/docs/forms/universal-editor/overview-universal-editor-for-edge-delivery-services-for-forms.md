@@ -1,22 +1,22 @@
 ---
-title: Editor universal para Edge Delivery Services para Forms
-description: Utilice el Editor universal para Edge Delivery Services para Forms para crear Forms adaptable.
+title: Editor universal de Edge Delivery Services para formularios
+description: Utilice el editor universal de Edge Delivery Services para formularios y crear formularios adaptables.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
 source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '1078'
-ht-degree: 83%
+ht-degree: 97%
 
 ---
 
 
-# Editor universal para Edge Delivery Services para Forms
+# Editor universal de Edge Delivery Services para formularios
 
-<span class="preview"> Esta característica está disponible a través del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el nombre de su organización de GitHub y el nombre del repositorio desde su dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Por ejemplo, si la dirección URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es adobe y el nombre del repositorio es abc.</span>
+<span class="preview"> Esta función está disponible a través del programa de acceso rápido. Para solicitar acceso, envíe un correo electrónico con el nombre de su organización de GitHub y el nombre del repositorio desde su dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Por ejemplo, si la URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es adobe y el nombre del repositorio es abc.</span>
 
-El editor universal revoluciona la creación de formularios para los servicios de envío de Adobe Edge al ofrecer una interfaz de What You See Is What You Get (WYSIWYG) sencilla, visual e intuitiva. Diseñado para creadores de contenido y autores de formularios, elimina la complejidad de los procesos tradicionales de creación de formularios, lo que lo hace accesible incluso para usuarios no técnicos.
+El editor universal revoluciona la creación de formularios para Adobe Edge Delivery Services al ofrecer una interfaz WYSIWYG (What You See Is What You Get - Lo que se ve es lo que se obtiene) sencilla, visual e intuitiva. Diseñado para creadores de contenido y autores de formularios, elimina la complejidad de los procesos tradicionales de creación de formularios, lo que lo hace accesible incluso para usuarios no técnicos.
 
 Con el editor universal, puede diseñar con rapidez formularios interactivos y adaptables mediante componentes creados previamente, como campos de texto, casillas de verificación y botones de opción. Su sólido conjunto de funciones admite reglas dinámicas, integración de datos fluida y personalización avanzada, lo que garantiza que cada formulario se adapte a sus necesidades.
 
@@ -24,7 +24,7 @@ Tanto si gestiona un renderizado ligero del lado del cliente, garantiza la compa
 
 ![Editor universal](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
-## Funciones clave de Universal Editor para Edge Delivery Services para Forms
+## Funciones principales del editor universal de Edge Delivery Services para formularios
 
 
 
@@ -45,12 +45,12 @@ Tanto si gestiona un renderizado ligero del lado del cliente, garantiza la compa
 
 | ![Análisis y seguimiento](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Fragmentos de formulario](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![Enlace de datos](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**Análisis y seguimiento**](https://www.aem.live/developer/martech-integration) | **Fragmentos de formulario** (próximamente) | **Enlace De Datos** (Próximamente) |
-| Obtenga información sobre el comportamiento del usuario, las interacciones de formularios y las tasas de envío con análisis y seguimiento integrados para permitir la optimización de formularios basada en datos. | Los fragmentos de formulario permiten la reutilización al permitir que las secciones utilizadas comúnmente se creen una vez y se reutilicen en varios formularios, lo que garantiza la coherencia y reduce el esfuerzo de mantenimiento. | El enlace de datos permite conexiones directas entre campos de formulario y fuentes de datos back-end, lo que admite actualizaciones en tiempo real y una asignación de datos avanzada. |
+| [**Análisis y seguimiento**](https://www.aem.live/developer/martech-integration) | **Fragmentos de formulario** (próximamente) | **Enlace de datos** (próximamente) |
+| Obtenga información sobre el comportamiento del usuario, las interacciones de formularios y las tasas de envío con análisis y seguimiento integrados para permitir la optimización de formularios basada en datos. | Los fragmentos de formulario habilitan la reutilización al permitir que las secciones utilizadas comúnmente se creen una vez y se reutilicen en varios formularios, lo que garantiza la coherencia y reduce el esfuerzo de mantenimiento. | El enlace de datos permite conexiones directas entre campos de formulario y fuentes de datos back-end, lo que admite actualizaciones en tiempo real y una asignación de datos avanzada. |
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Incorporación de formularios](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Configuración de agradecimiento](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Incrustación De Forms** (Próximamente) | [**Configuración de agradecimiento**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
+| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Incorporación de formularios** (próximamente) | [**Configuración de agradecimiento**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
 | Utilice reCAPTCHA para proteger los formularios de bots automatizados, lo que garantiza una recopilación de datos segura y fiable. | Incorpore formularios directamente en las páginas de Sites de Edge Delivery Services mediante el componente incrustado integrado del editor universal. | Personalice con facilidad el mensaje de confirmación o la página que se muestra a los usuarios después de enviar correctamente el formulario. |
 
 

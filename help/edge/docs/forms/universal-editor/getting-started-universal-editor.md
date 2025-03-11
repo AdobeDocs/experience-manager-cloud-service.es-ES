@@ -7,14 +7,14 @@ exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '1846'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
 
 # Introducción a Edge Delivery Services para AEM Forms con el editor universal (WYSIWYG)
 
-<span class="preview"> Esta característica está disponible a través del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el nombre de su organización de GitHub y el nombre del repositorio desde su dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Por ejemplo, si la dirección URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es adobe y el nombre del repositorio es abc.</span>
+<span class="preview"> Esta función está disponible a través del programa de acceso rápido. Para solicitar acceso, envíe un correo electrónico con el nombre de su organización de GitHub y el nombre del repositorio desde su dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Por ejemplo, si la URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es adobe y el nombre del repositorio es abc.</span>
 
 
 En la era digital de hoy en día, unos formularios fáciles de usar son esenciales para todas las organizaciones. Edge Delivery Services Forms se crea mediante el editor universal, que ofrece funciones de WYSIWYG (lo que se ve es lo que se obtiene). Proporciona una interfaz moderna e intuitiva para la creación eficiente de formularios.
@@ -301,6 +301,6 @@ Si encuentra algún error de linting, puede omitirlo. Abra el archivo [EDS Proje
 * **Resolver error de ruta del módulo:**
 Si aparece el error &quot;No se puede resolver la ruta al módulo &quot;&#39;../../scripts/lib-franklin.js&quot;&quot;, vaya al archivo [Proyecto EDS]/blocks/forms/form.js. Actualice la instrucción de importación reemplazando el archivo lib-franklin.js por aem.js.
 
-## Véase también
+## Consulte también
 
 {{universal-editor-see-also}}

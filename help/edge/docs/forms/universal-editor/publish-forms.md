@@ -7,20 +7,20 @@ exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
 source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '514'
-ht-degree: 87%
+ht-degree: 96%
 
 ---
 
 # Publicación del formulario adaptable en Edge Delivery Services
 
-<span class="preview"> Esta característica está disponible a través del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el nombre de su organización de GitHub y el nombre del repositorio desde su dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Por ejemplo, si la dirección URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es adobe y el nombre del repositorio es abc.</span>
+<span class="preview"> Esta función está disponible a través del programa de acceso rápido. Para solicitar acceso, envíe un correo electrónico con el nombre de su organización de GitHub y el nombre del repositorio desde su dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Por ejemplo, si la URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es adobe y el nombre del repositorio es abc.</span>
 
 
 Cuando el formulario esté terminado y listo para usarse, puede publicarlo para que sus clientes puedan acceder a él para recopilar y enviar datos. La publicación garantiza que el formulario esté disponible en Edge Delivery, lo que permite a los usuarios interactuar con él sin problemas. Este proceso permite a los clientes rellenar y enviar el formulario en tiempo real, lo que garantiza una captura de datos eficiente y un procesamiento optimizado.
 
 ## Requisitos previos
 
-* Un formulario creado con la **plantilla de Edge Delivery Services**. [Más información](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) sobre la creación de un formulario basado en EDS.
+* Un formulario creado con la **plantilla de Edge Delivery Services (EDS)**. [Más información](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) sobre la creación de un formulario basado en EDS.
 
 ## Publicación del formulario
 
@@ -125,7 +125,7 @@ https://main--universaleditor--wkndforms.aem.live/content/forms/af/wknd-form
 ```
 
 
-## Véase también
+## Consulte también
 
 {{universal-editor-see-also}}
 

@@ -7,14 +7,14 @@ exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
 source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '1285'
-ht-degree: 8%
+ht-degree: 42%
 
 ---
 
 
 # Modo adaptable en la creación de WYSIWYG
 
-<span class="preview"> Esta característica está disponible a través del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el nombre de su organización de GitHub y el nombre del repositorio desde su dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Por ejemplo, si la dirección URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es adobe y el nombre del repositorio es abc.</span>
+<span class="preview"> Esta función está disponible a través del programa de acceso rápido. Para solicitar acceso, envíe un correo electrónico con el nombre de su organización de GitHub y el nombre del repositorio desde su dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Por ejemplo, si la URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es adobe y el nombre del repositorio es abc.</span>
 
 ## Introducción a Forms interactivo
 
@@ -24,7 +24,7 @@ El [Editor universal](/help/edge/docs/forms/universal-editor/overview-universal-
 
 ## Vista previa de los formularios en modo adaptable para diferentes dispositivos
 
-El editor universal proporciona un icono **Emulador** ubicado en la esquina superior derecha de la pantalla que le permite obtener una vista previa de las páginas en diferentes tamaños de dispositivo y probar el comportamiento de su diseño interactivo para una mejor experiencia de usuario.
+El editor universal proporciona un icono **Emulador** ubicado en la esquina superior derecha de la pantalla que le permite obtener una vista previa de las páginas en diferentes tamaños de dispositivo y probar el comportamiento de su diseño interactivo para una mejor experiencia del usuario.
 
 Para obtener una vista previa de un formulario en modo interactivo:
 
@@ -65,19 +65,19 @@ El editor universal proporciona diferentes emuladores para obtener una vista pre
     </tr>
 </table>
 
-## Funciones de diseño
+## Capacidades de diseño
 
-El editor universal permite crear formularios fáciles de usar que ofrecen experiencias dinámicas a los usuarios finales. El diseño del formulario controla cómo se muestran los elementos o los componentes de un formulario.
+El editor universal le permite crear formularios fáciles de usar que ofrecen experiencias dinámicas a los usuarios finales. El diseño del formulario controla cómo se muestran los elementos o los componentes de un formulario.
 
 El editor universal admite los siguientes tipos de diseños para formularios:
 
 - [Diseño de panel](#panel-layout)
-- [Diseño del asistente](#wizard-layout)
+- [Diseño de asistente](#wizard-layout)
 - [Diseño de acordeón](#accordion-layout)
 
 ### Diseño de panel
 
-El diseño del panel es útil para organizar los campos relacionados de una manera que facilite la navegación y la búsqueda del contenido correspondiente. El diseño del panel organiza los componentes del formulario en secciones o paneles distintos de los formularios.
+El diseño de panel es útil para organizar los campos relacionados de una manera que facilite la navegación y la búsqueda del contenido correspondiente. El diseño del panel organiza los componentes del formulario en secciones o paneles distintos de los formularios.
 
 ![Diseño de panel que muestra varias secciones distintas dentro de un formulario](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
 
@@ -85,9 +85,9 @@ El diseño del panel es útil para organizar los campos relacionados de una mane
 
 **Comportamiento interactivo:** En pantallas más pequeñas, los paneles suelen apilarse verticalmente, manteniendo sus diferentes agrupaciones y ajustándose a la anchura más estrecha.
 
-Puede usar [componente de panel](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) para agregar el diseño de panel en un formulario. Para obtener instrucciones detalladas sobre cómo configurar varias propiedades del componente del panel, consulte el artículo [componente del panel](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+Puede usar el [componente de panel](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) para añadir el diseño de panel en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de panel, consulte el artículo [componente de panel](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
 
-### Diseño del asistente
+### Diseño de asistente
 
 El diseño del asistente ayuda a simplificar un formulario complejo dividiéndolo en pasos distintos. Cada paso representa una parte diferente del proceso y los usuarios navegan por los pasos secuencialmente, a menudo con los botones **Siguiente** y **Atrás**. Puede utilizar el diseño de asistente para crear un formulario que incluya varias secciones o pasos.
 
@@ -97,11 +97,11 @@ El diseño del asistente ayuda a simplificar un formulario complejo dividiéndol
 
 **Comportamiento interactivo:** En dispositivos móviles, el asistente mantiene su enfoque paso a paso, pero ajusta el contenido de cada paso para que se ajuste a la pantalla más estrecha y, a menudo, apilando elementos que aparecerían uno al lado del otro en pantallas más grandes.
 
-Puede usar el [componente de asistente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) para agregar el diseño de asistente en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de asistente, consulte el artículo [componente de asistente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+Puede usar el [componente de asistente](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) para añadir el diseño de asistente en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de asistente, consulte el artículo [componente de asistente](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
 
 ### Diseño de acordeón
 
-El diseño de acordeón muestra el contenido en secciones o paneles contraíbles de un formulario adaptable. Cuando se expande una sección, muestra el contenido dentro de, mientras que otras secciones permanecen contraídas. Este diseño es ideal para mostrar grandes cantidades de información en un formulario compacto.
+El diseño de acordeón muestra el contenido en secciones o paneles contraíbles en un formulario adaptable. Cuando se expande una sección, se muestra el contenido incluido en ella, mientras que las demás secciones permanecen contraídas. Este diseño es ideal para mostrar grandes cantidades de información en un formulario compacto.
 
 ![Diseño de acordeón que muestra secciones ampliables en un formulario](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
 
@@ -109,19 +109,19 @@ El diseño de acordeón muestra el contenido en secciones o paneles contraíbles
 
 **Comportamiento interactivo:** Los acordeones funcionan especialmente bien en dispositivos móviles, ya que conservan espacio vertical de forma natural al mostrar únicamente la sección de contenido expandida, lo que los hace ideales para pantallas más pequeñas.
 
-Puede usar el [componente de acordeón](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) para agregar el diseño de acordeón en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de acordeón, consulte el artículo [componente de acordeón](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
+Puede usar el [componente de acordeón](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) para añadir el diseño de acordeón en un formulario. Para obtener instrucciones detalladas sobre cómo configurar las distintas propiedades del componente de acordeón, consulte el artículo [componente de acordeón](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
 
 ### ¿Cómo elegir el diseño correcto?
 
 Es importante seleccionar el diseño adecuado para optimizar la experiencia del usuario y la funcionalidad del formulario. La tabla le ayuda a comprender las diferentes opciones de diseño disponibles y le guía para seleccionar el diseño más adecuado según sus necesidades específicas y casos de uso:
 
-| Funcionalidad | Diseño de panel | Diseño del asistente | Diseño de acordeón |
+| Funcionalidad | Diseño de panel | Diseño de asistente | Diseño de acordeón |
 |----------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
-| **Propósito** | Agrupa el contenido relacionado en secciones distintas | Guía a los usuarios a través de un formulario o un proceso de varios pasos | Organiza el contenido en secciones contraíbles |
+| **Propósito** | Agrupa el contenido relacionado en secciones distintas | Guía a los usuarios a través de un proceso o formulario con varias etapas | Organiza el contenido en secciones contraíbles |
 | **Estructura** | Secciones distintas | Pasos/páginas secuenciales | Paneles/secciones contraíbles |
-| **Navegación** | Haga clic en los encabezados del panel para desplazarse | - Adelante: botón &quot;Siguiente&quot;<br>- Atrás: botón &quot;Atrás&quot;<br>- Pasos de omisión opcionales | Haga clic en los encabezados para expandir o contraer secciones |
+| **Navegación** | Haga clic en los encabezados del panel para navegar | - Adelante: botón &quot;Siguiente&quot;<br>- Atrás: botón &quot;Atrás&quot;<br>- Pasos de omisión opcionales | Haga clic en los encabezados para expandir o contraer secciones |
 | **Experiencia del usuario** | Organiza grandes cantidades de contenido de una manera manejable | Guía paso a paso para reducir la sobrecarga | Vista compacta con secciones expandidas/contraídas |
-| **Caso práctico** | Formularios complejos con secciones categorizadas | Configuración de procesos, formularios complejos | Preguntas más frecuentes, menús de configuración y secciones de contenido detalladas |
+| **Caso práctico** | Formularios complejos con secciones clasificadas | Configuración de procesos, formularios complejos | Preguntas frecuentes, menús de configuración, secciones de contenido detalladas |
 | **Lo mejor para dispositivos móviles** | Moderar: los paneles se apilan verticalmente | Bueno: mantiene el enfoque solo en el paso actual | Excelente - conserva el espacio con secciones plegables |
 
 ## Prácticas recomendadas para Forms interactivo
@@ -154,6 +154,6 @@ Para garantizar que los formularios proporcionen la mejor experiencia en todos l
 | Formulario demasiado lento en dispositivos móviles | Imágenes grandes o secuencias de comandos excesivas | Optimizar imágenes, minimizar JavaScript y considerar la carga diferida de elementos no críticos |
 | Diferente apariencia entre el emulador y los dispositivos reales | Representación específica del explorador o variaciones de dispositivo | Realizar pruebas en dispositivos reales siempre que sea posible, no solo en emuladores |
 
-## Véase también
+## Consulte también
 
 {#see-more-eds-forms}

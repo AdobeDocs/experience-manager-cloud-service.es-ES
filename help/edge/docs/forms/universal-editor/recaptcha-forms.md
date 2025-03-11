@@ -8,14 +8,14 @@ exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
 source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
 source-wordcount: '1085'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
 # Proteja su Forms del spam con Google reCAPTCHA
 
-<span class="preview"> Esta característica está disponible a través del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> con su nombre de organización de GitHub y el nombre del repositorio.</span>
+<span class="preview"> Esta función está disponible a través del programa de acceso rápido. Para solicitar acceso, envíe un correo electrónico desde su dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> con su nombre de organización de GitHub y el nombre del repositorio.</span>
 
 
 

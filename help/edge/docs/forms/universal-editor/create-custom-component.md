@@ -7,13 +7,13 @@ exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '1773'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
 # Generación de componentes personalizados en creación de WYSIWYG
 
-<span class="preview"> Esta característica está disponible a través del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el nombre de su organización de GitHub y el nombre del repositorio desde su dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Por ejemplo, si la dirección URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es adobe y el nombre del repositorio es abc.</span>
+<span class="preview"> Esta función está disponible a través del programa de acceso rápido. Para solicitar acceso, envíe un correo electrónico con el nombre de su organización de GitHub y el nombre del repositorio desde su dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Por ejemplo, si la URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es adobe y el nombre del repositorio es abc.</span>
 
 
 Los formularios de Edge Delivery Services ofrecen personalización, lo que permite a los desarrolladores front-end generar componentes de formulario personalizados. Estos componentes personalizados se integran a la perfección en la experiencia de creación de WYSIWYG, lo que permite a los autores de formularios añadirlos, configurarlos y administrarlos fácilmente dentro del editor de formularios. Con los componentes personalizados, los autores pueden mejorar la funcionalidad a la vez que garantizan un proceso de creación fluido e intuitivo.
@@ -187,7 +187,7 @@ Para añadir la propiedad personalizada Valor de paso, anexe el modelo de compon
 El fragmento JSON define una propiedad personalizada llamada **Valor de paso** para un componente de **rango**. A continuación se muestra un desglose de cada campo:
 
 * **component**: especifica el tipo de campo de entrada utilizado en el cuadro de diálogo Propiedad. En este caso, `number` indica que el campo acepta valores numéricos.
-* **name**: El identificador de la propiedad, usado para hacer referencia a ella en la lógica del componente. En este caso, `stepValue` representa la configuración del valor de paso para el intervalo.
+* **name**: el identificador de la propiedad, usado para hacer referencia a ella en la lógica del componente. En este caso, `stepValue` representa la configuración del valor de paso para el intervalo.
 * **label**: el nombre para mostrar de la propiedad tal como se ve en el cuadro de diálogo Propiedad.
 * **valueType**: define el tipo de dato esperado para la propiedad. `number` garantiza que solo se permitan entradas numéricas.
 
@@ -509,6 +509,6 @@ Los tipos de campo admitidos para los formularios son los siguientes:
 * image
 * button
 
-## Véase también
+## Consulte también
 
 {{universal-editor-see-also}}

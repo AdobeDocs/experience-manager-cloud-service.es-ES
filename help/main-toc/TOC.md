@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 6a907b3d3241010e152669a70dec405215fbc6b1
 workflow-type: tm+mt
 source-wordcount: '6239'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -983,7 +983,7 @@ ht-degree: 95%
          + [Atributos personalizados para crear un carrusel de productos de CIF](/help/commerce-cloud/customizing/product-carousel.md)
    + [PWA Studio de Adobe Commerce](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [Migración](/help/commerce-cloud/migration.md)
-   + [Preguntas más frecuentes](/help/commerce-cloud/faq.md)
+   + [Preguntas frecuentes](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
    + [Información general de Edge Delivery Services](/help/edge/overview.md)
    + [Uso de Edge Delivery Services con AEM](/help/edge/using.md)
@@ -1002,7 +1002,7 @@ ht-degree: 95%
       + [Reutilización del código en varios sitios](/help/edge/wysiwyg-authoring/repoless.md)
       + [Administración de varios sitios sin repositorio](/help/edge/wysiwyg-authoring/repoless-msm.md)
       + [Entornos de ensayo y producción sin repositorio](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
-      + [Configurar la autenticación del sitio](/help/edge/wysiwyg-authoring/site-authentication.md)
+      + [Configuración de la autenticación del sitio](/help/edge/wysiwyg-authoring/site-authentication.md)
       + [Funciones de sitios de trabajo en curso](/help/edge/wysiwyg-authoring/wip-features.md)
    + Creación basada en documentos {#document-authoring}
       + [Creación](/help/edge/docs/authoring.md)
@@ -1033,37 +1033,37 @@ ht-degree: 95%
    + Creación de formularios {#build-forms}
       + [Información general](/help/edge/docs/forms/overview.md)
       + [¿Cómo funcionan los formularios de Edge Delivery Services?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
-      + [Preguntas más frecuentes](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
+      + [Preguntas frecuentes](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + Creación WYSIWYG {#universal-editor}
-         + [Introducción al Editor universal de Forms para Edge Delivery Services: Guía completa](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [Introducción al editor universal de formularios para Edge Delivery Services: Guía completa](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Cómo empezar a crear con el editor universal: tutorial paso a paso](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [Cómo crear el primer formulario con el editor universal](/help/edge/docs/forms/universal-editor/create-forms.md)
-         + [Guía de la interfaz del editor universal: herramientas, funciones y navegación explicadas](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [Haga que su Forms sea compatible con dispositivos móviles: diseño interactivo en el editor universal](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-         + [Diseño de una hermosa Forms: Guía de estilo y temática para el editor universal](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [Añadir el comportamiento dinámico a Forms: Guía completa del editor de reglas](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [Guía de envío de formularios: Configurar y personalizar las acciones de envío de formularios](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [Proteja su Forms del spam: Añadir la seguridad reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [Cómo publicar e implementar Forms: Guía de publicación del editor universal](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [Crear componentes de formulario personalizados: Guía para desarrolladores de Universal Editor](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+         + [Guía de la interfaz del editor universal: explicación de herramientas, funciones y navegación](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [Compatibilizar los formularios con dispositivos móviles: diseño interactivo en el editor universal](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [Diseñar formularios atractivos: Guía de estilo y temas para el editor universal](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [Añadir comportamiento dinámico a formularios: Guía completa del editor de reglas](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [Guía de envío de formularios: configurar y personalizar las acciones de envío de formularios](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [Proteger los formularios del spam: añadir seguridad reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [Cómo publicar e implementar formularios: Guía de publicación del editor universal](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [Generar componentes de formulario personalizados: Guía del editor universal para desarrolladores](/help/edge/docs/forms/universal-editor/create-custom-component.md)
       + Creación basada en documentos {#getting-started-edge-delivery-services-forms}
-         + [Crear su primer formulario: Guía de inicio rápido con hojas de Google y Excel](/help/edge/docs/forms/tutorial.md)
-         + [Cómo crear Forms con hojas de Google o Excel: Guía paso a paso](/help/edge/docs/forms/create-forms.md)
+         + [Creación del primer formulario: Guía de inicio rápido con Hojas de cálculo de Google y Excel](/help/edge/docs/forms/tutorial.md)
+         + [Cómo crear formularios con Hojas de cálculo de Google o Excel: Guía paso a paso](/help/edge/docs/forms/create-forms.md)
          + [Varios componentes del bloque de formulario adaptable](/help/edge/docs/forms/form-components.md)
-         + [Conectar el formulario a hojas de Google: Guía de configuración de recopilación de datos](/help/edge/docs/forms/submit-forms.md)
-         + [Publique el formulario: guía de publicación y recopilación de datos](/help/edge/docs/forms/publish-forms.md)
-         + [Validación de campos de formulario: agregar comprobaciones de error a Forms](/help/edge/docs/forms/validate-forms.md)
-         + [Diseño hermoso Forms: Guía de estilo y personalización](/help/edge/docs/forms/style-theme-forms.md)
+         + [Conectar el formulario a Hojas de cálculo de Google: Guía de configuración de recopilación de datos](/help/edge/docs/forms/submit-forms.md)
+         + [Publique el formulario: Guía de publicación y recopilación de datos](/help/edge/docs/forms/publish-forms.md)
+         + [Validación de campos de formulario: añadir comprobaciones de errores a los formularios](/help/edge/docs/forms/validate-forms.md)
+         + [Diseñar formularios atractivos: Guía de estilo y personalización](/help/edge/docs/forms/style-theme-forms.md)
          + [Crear mensajes de éxito: personalizar la página de agradecimiento del formulario](/help/edge/docs/forms/thank-you-page-form.md)
-         + [Guía de envío de formularios: uso del servicio de envío de Forms](/help/forms/forms-submission-service.md)
-         + [Campos de formulario dinámico: Cargar opciones desde direcciones URL](/help/edge/docs/forms/load-options-from-url.md)
-         + [Agregar comportamiento inteligente: Guía lógica y reglas de formulario](/help/edge/docs/forms/rules-forms.md)
+         + [Guía de envío de formularios: uso del servicio de envío de formularios](/help/forms/forms-submission-service.md)
+         + [Campos de formulario dinámico: cargar opciones desde direcciones URL](/help/edge/docs/forms/load-options-from-url.md)
+         + [Añadir comportamiento inteligente: Guía de reglas y lógica de formulario](/help/edge/docs/forms/rules-forms.md)
          + [Validación avanzada de formularios: Guía de expresiones regulares](/help/edge/docs/forms/regex-forms.md)
-         + [Generar Forms reutilizable: guía para fragmentos de formulario](/help/edge/docs/forms/form-fragments.md)
-         + [Crear Dynamic Forms: Añadir Secciones Repetibles](/help/edge/docs/forms/repeatable-forms.md)
-         + [Hacer que el formulario sea global: Guía de traducción del formulario](/help/edge/docs/forms/translate-forms.md)
-         + [Proteja su Forms: Añadir la seguridad reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
-         + [Crear componentes de formulario personalizados: Guía para desarrolladores](/help/edge/docs/forms/custom-components-forms.md)
+         + [Generar formularios reutilizables: Guía sobre fragmentos de formulario](/help/edge/docs/forms/form-fragments.md)
+         + [Crear formularios dinámicos: añadir secciones repetibles](/help/edge/docs/forms/repeatable-forms.md)
+         + [Globalizar el formulario: Guía de traducción del formulario](/help/edge/docs/forms/translate-forms.md)
+         + [Proteger los formularios: añadir seguridad reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
+         + [Generar componentes de formulario personalizados: Guía para desarrolladores](/help/edge/docs/forms/custom-components-forms.md)
          + [Supervisar el rendimiento del formulario: guías de supervisión de uso real](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
    + Recursos de Edge Delivery {#resources}
       + Barra de tareas {#sidekick}
@@ -1071,7 +1071,7 @@ ht-degree: 95%
          + [Instalación de la extensión](/help/edge/docs/sidekick-extension.md)
          + [Configurador de proyectos](https://www.aem.live/tools/sidekick/)
          + [Biblioteca de la barra de tareas](/help/edge/docs/sidekick-library.md)
-      + [Preguntas más frecuentes](/help/edge/docs/faq.md)
+      + [Preguntas frecuentes](/help/edge/docs/faq.md)
       + [API de administrador](https://www.aem.live/docs/admin.html)
       + [Estado de AEM](https://status.adobe.com)
       + Herramientas {#tools}
@@ -1156,7 +1156,7 @@ ht-degree: 95%
          + [Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido](/help/journey-headless/author/metadata-tagging.md)
 + IA generativa {#generative-ai}
    + [Generar variaciones](/help/generative-ai/generate-variations.md)
-   + [Generar variaciones: integrado en editores de AEM](/help/generative-ai/generate-variations-integrated-editor.md)
+   + [Generar variaciones: integrado en editores AEM](/help/generative-ai/generate-variations-integrated-editor.md)
    + [Asistente (Beta limitado)](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + Implementación {#implementing}
    + [Implementación de aplicaciones para AEM as a Cloud Service](/help/implementing/home.md)

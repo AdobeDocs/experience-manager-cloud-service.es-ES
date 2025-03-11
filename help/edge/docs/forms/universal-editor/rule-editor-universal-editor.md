@@ -7,14 +7,14 @@ exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '2214'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
 
 # Introducción al editor de reglas en la creación de WYSIWYG
 
-<span class="preview"> Esta característica está disponible a través del programa de acceso anticipado. Para solicitar acceso, envíe un correo electrónico con el nombre de su organización de GitHub y el nombre del repositorio desde su dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Por ejemplo, si la dirección URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es adobe y el nombre del repositorio es abc.</span>
+<span class="preview"> Esta función está disponible a través del programa de acceso rápido. Para solicitar acceso, envíe un correo electrónico con el nombre de su organización de GitHub y el nombre del repositorio desde su dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Por ejemplo, si la URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es adobe y el nombre del repositorio es abc.</span>
 
 
 Puede añadir el comportamiento del formulario dinámico mediante el Editor de reglas, que le permite crear reglas. Estas reglas habilitan la visibilidad de campo condicional, automatizan los cálculos en función de los datos introducidos por el usuario y mejoran la experiencia general del usuario. Al optimizar el proceso de rellenado de formularios, el Editor de reglas garantiza tanto la precisión como la eficacia.
@@ -186,7 +186,7 @@ Ahora, vamos a explorar cómo [escribir reglas en el Editor de reglas](#write-ru
 
 ## Escribir reglas
 
-Para comprender cómo escribir reglas en el Editor de reglas visuales, veamos un ejemplo sencillo de un formulario de cálculo de impuestos:
+Para comprender cómo escribir reglas en el Editor de reglas visual, veamos un ejemplo sencillo de un formulario de cálculo de impuestos:
 
 ![Ejemplo del Editor de reglas](/help/edge/docs/forms/assets/rule-editor-1.png)
 
@@ -384,6 +384,6 @@ En este artículo se ofrece información limitada sobre el Editor de reglas disp
 
 {{see-also-rule-editor}}
 
-## Véase también
+## Consulte también
 
 {{universal-editor-see-also}}
