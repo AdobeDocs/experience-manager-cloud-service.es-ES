@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo añadir un repositorio administrad
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 7ce39020870943243e2d48aa66370f2cca9c2ac0
+source-git-commit: bfa059ed4e3f04ae6ee1e07910edc62635b03e5a
 workflow-type: tm+mt
-source-wordcount: '1618'
-ht-degree: 37%
+source-wordcount: '1597'
+ht-degree: 38%
 
 ---
 
@@ -136,6 +136,9 @@ Pegue la dirección URL en un archivo de texto sin formato. La URL copiada es ne
 Pegue el secreto en un archivo de texto sin formato. El secreto copiado es necesario para la configuración del webhook del proveedor Git.
 1. Haga clic en **Cerrar**.
 1. Vaya a la solución de su proveedor de Git (GitHub Enterprise, GitLab o Bitbucket).
+
+   Todos los detalles de la configuración del gancho web y los eventos necesarios para cada proveedor están disponibles en [Agregar un repositorio externo](#add-ext-repo). En el paso 8, consulte la tabla.
+
 1. Busque la sección Configuración de **Webhook** de la solución.
 1. Pegue la dirección URL del webhook copiada anteriormente en el campo de texto URL.
    1. Reemplace el parámetro de consulta `api_key` en la dirección URL del webhook por su propia clave de API real.
@@ -145,11 +148,6 @@ Pegue el secreto en un archivo de texto sin formato. El secreto copiado es neces
 1. Pegue el secreto de webhook que copió anteriormente en el campo de texto **Secreto** (o **Clave secreta**, o **Token secreto**).
 1. Configure el webhook para enviar los eventos apropiados que Cloud Manager espera.
 
-   Todos los detalles de la configuración del webhook y los eventos necesarios para cada proveedor están disponibles en:
-
-   * [Configurar webhooks para GitHub Enterprise Server](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-providers/create-new-github-pat?id=webhook-events).
-   * [Configurar webhooks para GitLab](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-providers/create-new-gitlab-pat?id=webhook-events).
-   * [Configurar webhooks para Bitbucket](https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-providers/create-new-bitbucket-path?id=webhook-events).
 
 ### Validación de solicitudes de extracción con webhooks
 
