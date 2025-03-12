@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Administering
 role: User
 exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 7201cc90c0f698454d8ccda0eb83e433a330c1eb
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '857'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ Descubra cómo la consola de plantillas sirve como ubicación central para ver y
 
 ## Información general {#overview}
 
-Al crear una página, debe seleccionar una plantilla. La plantilla de página se utiliza como base para la nueva página. AEM [Las plantillas editables que se están utilizando](/help/implementing/developing/components/templates.md) pueden definir la estructura de la página resultante, cualquier contenido inicial y los componentes que se pueden utilizar (propiedades de diseño).
+Al crear una página, debe seleccionar una plantilla. La plantilla de página se utiliza como base para la nueva página. [Las plantillas editables de AEM](/help/implementing/developing/components/templates.md) pueden definir la estructura de la página resultante, el contenido inicial y los componentes que se pueden utilizar (propiedades de diseño).
 
 A los autores de contenido se les presenta una selección de plantillas disponibles cuando [crean páginas nuevas en la consola Sitios](/help/sites-cloud/authoring/sites-console/creating-pages.md). Las plantillas se pueden utilizar para crear páginas editables con:
 
@@ -95,12 +95,12 @@ Cuando se crea una plantilla, está de forma predeterminada en un estado **Borra
 
 Se debe habilitar una plantilla para que los autores de contenido puedan utilizarla para crear páginas. Si una plantilla ya no es necesaria, se puede deshabilitar para que ya no se muestre en el asistente de creación de páginas.
 
-* Seleccione la plantilla y toque o haga clic en **Deshabilitar** para deshabilitar la plantilla.
-* Seleccione la plantilla y toque o haga clic en **Habilitar** para habilitarla.
+* Seleccione la plantilla y haga clic en **Deshabilitar** para deshabilitarla.
+* Seleccione la plantilla y haga clic en **Habilitar** para habilitarla.
 
 ## Publicación {#publish}
 
-Una plantilla creada con el editor de plantillas solo se puede utilizar una vez publicada. Seleccione la plantilla y toque o haga clic en **Publish** para publicar.
+Una plantilla creada con el editor de plantillas solo se puede utilizar una vez publicada. Seleccione la plantilla y haga clic en **Publicar** para publicar.
 
 No es necesario publicar las plantillas creadas con el editor universal para poder utilizarlas.
 
@@ -117,7 +117,7 @@ Una vez pegado, puede:
 * [Edite la plantilla](#edit) para ajustarla según sea necesario.
 * [Use la ventana de propiedades](#properties) para actualizar el título de la plantilla.
 * [Habilite la plantilla](#enable-disable) para que pueda utilizarse para crear página.
-* [Publish usa la plantilla](#publish) si es necesario.
+* [Publicar la plantilla](#publish) si es necesario.
 
 >[!TIP]
 >
