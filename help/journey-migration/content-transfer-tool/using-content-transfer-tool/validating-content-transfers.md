@@ -4,9 +4,9 @@ description: Utilice la herramienta de transferencia de contenido para validar l
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
+source-git-commit: 9b05ed38e8eb337b3a07ee2051c6a0d530088af2
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1220'
 ht-degree: 1%
 
 ---
@@ -145,13 +145,14 @@ Para ver esta información, vaya a Cloud Acceleration Manager. Haga clic en la t
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-Verá un cuadro de diálogo con la información de resumen. Utilice los iconos de ayuda para leer una descripción más completa. Haga clic en el botón **Descargar informe** para descargar el informe completo separado por comas (CSV).  Tenga en cuenta también que al final de este informe se encuentra el Informe de usuarios, que puede utilizarse para la administración de usuarios después de la migración.
+Verá un cuadro de diálogo con la información de resumen. Utilice los iconos de ayuda para leer una descripción más completa. Para descargar el informe completo de migración de principales separado por comas (CSV), seleccione **Informe de migración de principales** en la lista desplegable de **Descargar un archivo...** y haga clic en el botón **Descargar**. Tenga en cuenta también que al final de este informe se encuentra el Informe de usuarios, que puede utilizarse para la administración de usuarios después de la migración.
 
 ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
 El informe Migración principal informa de lo siguiente:
 
 * Cada grupo migró y la primera ruta de contenido que activó la migración de ese grupo; el grupo también podría estar en otras rutas, pero solo se informa de la primera que se encuentra para un grupo determinado. También informa de si se ha encontrado en una directiva ACL o CUG.
+* Cada grupo migrado como grupo local tendrá la palabra &quot;local&quot; indicada en la línea del grupo.
 * No se migraron todos los grupos y el motivo por el que no se migraron.  Por lo general, será por uno de estos motivos:
    * Es un grupo integrado
    * Ya está en el sistema de destino
