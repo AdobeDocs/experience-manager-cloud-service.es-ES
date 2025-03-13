@@ -5,9 +5,9 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
+source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '849'
 ht-degree: 20%
 
 ---
@@ -37,7 +37,7 @@ Se muestra el detalle del estado. Su dominio personalizado está listo para usar
 
 >[!NOTE]
 >
->Si usa un certificado SSL administrado por Adobe *DV)* con el dominio, Cloud Manager comprobará automáticamente la déclencheur al hacer clic en **Verificar** en el cuadro de diálogo Verificar dominio al [agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+>Si usa un *certificado SSL administrado por Adobe (DV)* con el dominio, Cloud Manager registra automáticamente la verificación de déclencheur al hacer clic en **Verificar** en el cuadro de diálogo Verificar dominio al [agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 >
 >Si planea usar un certificado SSL **administrado por el cliente (OV/EV)**, su dominio se verifica *después de* de [agregar el certificado SSL OV/EV](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 
@@ -50,7 +50,7 @@ Cloud Manager verifica la propiedad del dominio a través del certificado SSL ad
 | --- | --- |
 | Error de verificación de dominio | Falta el certificado EV/OV administrado por el cliente o se detecta con errores.<br> Siga las instrucciones proporcionadas en el mensaje de estado para resolver el problema. Cuando esté listo, debe seleccionar el icono **Verificar de nuevo** junto al estado. |
 | Verificación del dominio en curso | La verificación está en curso.<br>Este estado suele verse después de seleccionar el icono **Verificar de nuevo** junto al estado. La verificación del DNS puede tardar unas horas en procesarse debido a los retrasos de propagación del DNS. |
-| Verificado: error de implementación | La verificación del certificado EV/OV se realizó correctamente, pero la implementación de CDN falló.<br>En tales casos, comuníquese con el representante del Adobe. |
+| Verificado: error de implementación | La verificación del certificado EV/OV se realizó correctamente, pero la implementación de CDN falló.<br>En estos casos, póngase en contacto con su representante de Adobe. |
 | Dominio verificado e implementado | Este estado indica que el nombre de dominio personalizado está listo para utilizarse.<br>En este momento, su nombre de dominio personalizado está listo para la prueba y se dirigirá al nombre de dominio de Cloud Manager. Consulte [Agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) para obtener más información. |
 | Eliminando | La eliminación de un nombre de dominio personalizado está en curso. |
 | Error de eliminación | Error al eliminar un nombre de dominio personalizado y se debe volver a intentar.<br>Vea [Administrar nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) para obtener más información. |
@@ -76,7 +76,7 @@ El error se corrige de la siguiente manera:
 
 * Utilice esta opción para vincular el dominio Apex y todos los subdominios a la cuenta de AEM as a Cloud Service de Fastly. Consulte [Uso de dominios en la documentación de Fastly](https://docs.fastly.com/en/guides/working-with-domains) para obtener más información.
 
-* Si el dominio Apex tiene varios subdominios para AEM as a Cloud Service AEM y sitios que no sean de la red y que necesitan vincularse a distintas cuentas de Fastly, intente instalar el dominio en Cloud Manager. Este proceso ayuda a administrar las conexiones de subdominios en diferentes cuentas de Fastly. Si la instalación del dominio falla, cree un ticket de asistencia al cliente con Fastly para que el Adobe pueda seguir con Fastly en su nombre.
+* Si el dominio Apex tiene varios subdominios para sitios de AEM as a Cloud Service y que no sean de AEM que necesitan vincularse a diferentes cuentas de Fastly, intente instalar el dominio en Cloud Manager. Este proceso ayuda a administrar las conexiones de subdominios en diferentes cuentas de Fastly. Si la instalación del dominio falla, cree un ticket de asistencia al cliente con Fastly para que Adobe pueda realizar el seguimiento con Fastly en su nombre.
 
 >[!TIP]
 >
@@ -88,7 +88,7 @@ El error se corrige de la siguiente manera:
 
 ## Configuraciones preexistentes de CDN para nombres de dominio personalizados {#pre-existing-cdn}
 
-Si ya tiene una configuración de CDN para sus nombres de dominio personalizados, aparecerá un mensaje informativo en las páginas **Nombres de dominio personalizados** y **Entorno**. Le anima a añadir estas configuraciones a través de la interfaz de usuario para que se puedan administrar y ver en Cloud Manager.
+Si ya tiene una configuración de CDN (red de distribución de contenido) para sus nombres de dominio personalizados, aparecerá un mensaje informativo en las páginas **Nombres de dominio personalizados** y **Entorno**. Le anima a añadir estas configuraciones a través de la interfaz de usuario para que se puedan administrar y ver en Cloud Manager.
 
 El mensaje desaparece después de migrar todas las configuraciones de entorno preexistentes mediante la interfaz de usuario. El mensaje puede tardar entre 1 y 2 días hábiles en desaparecer.
 
