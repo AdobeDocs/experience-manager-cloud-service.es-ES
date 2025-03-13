@@ -1,13 +1,13 @@
 ---
 title: Carga masiva de identidades a IMS después de usar CTT
 description: Información general sobre la carga masiva de archivos para grupos y usuarios, y cómo utilizarlos en Admin Console para crear grupos y usuarios en IMS.
-source-git-commit: c3a13f75757a478996918c6868a172d75158aafe
+exl-id: 43ebd6f1-1492-461a-8d9b-2b55dcde9052
+source-git-commit: b9c739a03b358de7c011e50ddbdd609c90f86b6f
 workflow-type: tm+mt
-source-wordcount: '2382'
+source-wordcount: '2384'
 ht-degree: 0%
 
 ---
-
 
 # Carga masiva de identidades a IMS después de usar CTT {#bulk-principal-uploading}
 
@@ -28,10 +28,11 @@ Consulte también [Administrar usuarios](https://helpx.adobe.com/es/enterprise/u
 
 Existen algunas directrices generales para editar y utilizar ambos tipos de archivos de carga:
 
-* Para poder seguir estas instrucciones, primero debe concederse acceso de administrador a Admin Console
-* Tenga en cuenta que hay varias formas diferentes de crear usuarios y grupos en IMS.  Consulte [Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service](/help/security/ims-support.md) para obtener más información sobre todas las opciones disponibles.  Aquí solo se describen los métodos de carga masiva de Admin Console
-* Hay tres tipos de identidad posibles en IMS: **Adobe ID**, **Enterprise ID** y **Federated ID**. Las instrucciones de esta página se proporcionan solo para **Adobe ID**.  Si necesita usar Enterprise ID o Federated ID, consulte la [documentación completa de Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html) y también la documentación específica para la [carga de grupos masivos de Admin Console](https://helpx.adobe.com/es/enterprise/using/user-groups.html) y la [carga de usuarios masivos de Admin Console](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html).  Las especificaciones para los archivos de carga son algo diferentes para esos dos tipos de identidad
-* Si un solo campo CSV permite varias entradas (como varios perfiles de producto, varios grupos o varios administradores), las entradas deben estar contenidas entre comillas dobles y separadas por una coma, por ejemplo: `"profile 1,profile 2"`
+* Para poder seguir estas instrucciones, primero debe concederse acceso de administrador a Admin Console.
+* Tenga en cuenta que hay varias formas diferentes de crear usuarios y grupos en IMS.  Consulte [Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/ims-support) para obtener más información sobre todas las opciones disponibles.  Aquí solo se describen los métodos de carga masiva de Admin Console.
+* Hay tres tipos de identidad posibles en IMS: Adobe ID, Enterprise ID y Federated ID.  Las instrucciones de esta página se proporcionan solo para **Adobe ID**.  Si necesita usar Enterprise ID o Federated ID, consulte la [documentación completa de Admin Console](https://helpx.adobe.com/ca/enterprise/using/admin-console.html) y también la documentación específica para la [carga de grupos masivos de Admin Console](https://helpx.adobe.com/ca/enterprise/using/user-groups.html) y la [carga de usuarios masivos de Admin Console](https://helpx.adobe.com/ca/enterprise/using/bulk-upload-users.html).  Las especificaciones para los archivos de carga son algo diferentes para esos dos tipos de identidad.
+* Si un solo campo CSV permite varias entradas (como varios perfiles de producto, varios grupos o varios administradores), las entradas deben estar contenidas entre comillas dobles y separadas por una coma, por ejemplo: `"profile 1,profile 2"`.
+
    * En este caso, se pueden utilizar comillas simples en lugar de comillas dobles, pero si edita el archivo en Microsoft Excel, pueden producirse problemas de análisis. Si utiliza Excel para editar estos archivos, asegúrese de utilizar comillas dobles en lugar de comillas simples.
 
 ## Carga de grupo en lotes {#group-upload}
@@ -55,6 +56,7 @@ Para utilizar la funcionalidad de carga de grupos por lotes de Admin Console des
       * _Administradores de grupos de usuarios_ - Se debe incluir al menos un administrador de grupos en este campo. Para asignar varios administradores, separe cada uno con una coma y escriba la lista entre comillas. La entrada para cada administrador debe incluir el tipo de identidad del usuario, seguido de un guion y, a continuación, la dirección de correo electrónico.  Por ejemplo
         `"Adobe ID-myAdmin@example.com,Adobe ID-myOtherAdmin@example.com"`. No incluya un espacio después de la coma que separa a los administradores. No puede incluir usuarios (como administradores) que actualmente no forman parte de la organización en Admin Console
       * _Perfiles de producto asignados_: este campo es opcional. Puede asignar varios perfiles de producto separando cada perfil con una coma y escribiendo la lista entre comillas. Sin embargo, los perfiles de producto que incluya ya deben estar configurados para la organización. Asegúrese de especificar el nombre del perfil de producto y no el nombre del producto.  La pertenencia de perfiles de producto asignados a un grupo la heredarán todos los usuarios ubicados en ese grupo.  Para buscar un perfil de producto:
+
          1. Ir a Admin Console
          1. Busque su producto (por ejemplo, Adobe Experience Manager as a Cloud Service) y haga clic en él
          1. Busque su entorno (instancia) y haga clic en él
@@ -68,6 +70,7 @@ Para utilizar la funcionalidad de carga de grupos por lotes de Admin Console des
    1. En el lado derecho, haga clic en el botón &quot;...&quot;. Elija **Agregar grupos de usuarios mediante CSV** en el menú y elija el CSV que desea cargar. Haga clic en **Cargar**
    1. Recibirá una respuesta que indica que el CSV se ha cargado (en Admin Console), pero aún no se ha importado a IMS
    1. Vaya al mismo menú &quot;...&quot; y elija **Resultados de operaciones masivas**. Le mostrará una lista de los intentos de carga en lotes y le indicará (en **Estado**) si la carga en lotes se está procesando, se ha realizado correctamente o ha fallado
+
       * Al principio se mostrará Procesando, lo que indica que aún no ha finalizado
       * Una vez finalizado correctamente, haga clic en el vínculo **Agregar grupos de usuarios** para ver un mensaje de estado simple para cada línea.
       * Si, en su lugar, ha fallado, haga clic en el icono pequeño bajo **Archivo** y proporcionará un poco más de información sobre el motivo del error.  Se hace referencia a los números de línea de grupo a partir de la fila 1.
@@ -81,52 +84,52 @@ Admin Console incluye dos acciones independientes para cargar y editar los detal
 
 #### Caso de uso: los grupos se han migrado a AEM as a Cloud Service y se han cargado mediante carga masiva u otro método.  Es posible que los usuarios no estén presentes en IMS/Admin Console, por lo que deben cargarse y vincularse a sus grupos en IMS mediante Admin Console.
 
-Para utilizar la funcionalidad de carga masiva de usuarios de Admin Console, siga estos pasos:
-
-1. Descargar el archivo de usuario en bloque desde CAM
-1. En CAM, vaya a **Transferencia de contenido** y seleccione **Trabajos de ingesta**.
-1. Haga clic en los puntos suspensivos (...) en la línea de la ingesta en cuestión y elija **Ver resumen principal**.
-1. En el cuadro de diálogo que aparece, seleccione **Archivo de usuario en lotes** de la lista desplegable bajo **Descargar un archivo...** y haga clic en el botón **Descargar**.
-1. Guarde el archivo CSV resultante
-
 >[!NOTE]
 >
 >Un usuario aparecerá en el archivo **Carga masiva de usuarios** si está en un grupo ingerido durante la misma ingesta desde la que se creó el archivo. También puede aparecer si el usuario está directamente en una ACL o CUG de contenido migrado, o si es miembro de un grupo integrado o de un grupo local que está en una ACL o CUG del contenido migrado. Consulte [Migración de grupos](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) para obtener más información sobre estos casos.
 
-* Edición del archivo de usuario en bloque
-* Cada línea representa un usuario que se va a cargar y tiene quince campos (los nombres de los campos constituyen la primera línea del archivo). Algunos campos son opcionales y no se describen aquí. Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format).  Los campos son:
-   * _Tipo de identidad_ - Opcional.  Si no se especifica, se creará como una Adobe ID
-   * _Nombre de usuario_: opcional y no se usa para las cargas de Adobe ID
-   * _Dominio_: opcional y no utilizado para cargas de Adobe ID
-   * _Correo electrónico_ - Obligatorio.  La dirección de correo electrónico se utilizará para la verificación la primera vez que el usuario inicie sesión
-   * _Nombre_ - Opcional.  Debe usarse porque aparece, con Apellidos, en varios lugares
-   * _Apellido_ - Opcional.  Debe usarse porque aparece en varios lugares
-   * _Código de país_: opcional y no se usa para las cargas de Adobe ID
-   * _ID_: opcional y no se usa para las cargas de Adobe ID
-   * _Configuraciones de producto_ - Opcional. Este campo también se heredará de cualquier grupo al que pertenezca el usuario
-   * _Roles de administrador_ - Opcional. Utilice este campo si el usuario es administrador. Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información
-   * _Configuraciones de producto administradas_ - Opcional.  Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información. Este campo también se heredará de cualquier grupo al que pertenezca el usuario
-   * _Grupos de usuarios_ - Opcional. Lista de grupos a los que el usuario debe asignarse como miembro. Cada grupo debe ser un grupo de IMS ya existente. Cuando se descarga el archivo de usuario en bloque desde CAM, este campo se rellena previamente con los nombres de los grupos habilitados para IMS de los que el usuario era miembro (directa o indirectamente) antes de la migración
-   * _Grupos de usuarios administrados_ - Opcional.  Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información. Este campo también se heredará de cualquier grupo al que pertenezca el usuario
-   * _Productos administrados_ - Opcional.  Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información. Este campo también se heredará de cualquier grupo al que pertenezca el usuario
-   * _Contratos administrados_ - Opcional.  Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información
-   * _Acceso de desarrollador_ - Opcional.  Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información
-   * _Productos asignados automáticamente_ - Opcional.  Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información
+Para utilizar la funcionalidad de carga masiva de usuarios de Admin Console, siga estos pasos:
+
+1. Descargar el archivo de usuario en bloque desde CAM
+   1. En CAM, vaya a **Transferencia de contenido** y seleccione **Trabajos de ingesta**.
+   1. Haga clic en los puntos suspensivos (...) en la línea de la ingesta en cuestión y elija **Ver resumen principal**.
+   1. En el cuadro de diálogo que aparece, seleccione **Archivo de usuario en lotes** de la lista desplegable bajo **Descargar un archivo...** y haga clic en el botón **Descargar**.
+   1. Guarde el archivo CSV resultante
+1. Edición del archivo de usuario en bloque
+   * Cada línea representa un usuario que se va a cargar y tiene quince campos (los nombres de los campos constituyen la primera línea del archivo). Algunos campos son opcionales y no se describen aquí. Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format).  Los campos son:
+
+      * _Tipo de identidad_ - Opcional.  Si no se especifica, se creará como una Adobe ID
+      * _Nombre de usuario_: opcional y no se usa para las cargas de Adobe ID
+      * _Dominio_: opcional y no utilizado para cargas de Adobe ID
+      * _Correo electrónico_ - Obligatorio.  La dirección de correo electrónico se utilizará para la verificación la primera vez que el usuario inicie sesión
+      * _Nombre_ - Opcional.  Debe usarse porque aparece, con Apellidos, en varios lugares
+      * _Apellido_ - Opcional.  Debe usarse porque aparece en varios lugares
+      * _Código de país_: opcional y no se usa para las cargas de Adobe ID
+      * _ID_: opcional y no se usa para las cargas de Adobe ID
+      * _Configuraciones de producto_ - Opcional. Este campo también se heredará de cualquier grupo al que pertenezca el usuario
+      * _Roles de administrador_ - Opcional. Utilice este campo si el usuario es administrador. Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información
+      * _Configuraciones de producto administradas_ - Opcional.  Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información. Este campo también se heredará de cualquier grupo al que pertenezca el usuario
+      * _Grupos de usuarios_ - Opcional. Lista de grupos a los que el usuario debe asignarse como miembro. Cada grupo debe ser un grupo de IMS ya existente. Cuando se descarga el archivo de usuario en bloque desde CAM, este campo se rellena previamente con los nombres de los grupos habilitados para IMS de los que el usuario era miembro (directa o indirectamente) antes de la migración
+      * _Grupos de usuarios administrados_ - Opcional.  Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información. Este campo también se heredará de cualquier grupo al que pertenezca el usuario
+      * _Productos administrados_ - Opcional.  Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información. Este campo también se heredará de cualquier grupo al que pertenezca el usuario
+      * _Contratos administrados_ - Opcional.  Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información
+      * _Acceso de desarrollador_ - Opcional.  Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información
+      * _Productos asignados automáticamente_ - Opcional.  Consulte [Formato CSV de usuario en lotes](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obtener más información
+
    * Al editar el CSV, algunas aplicaciones pueden añadir comillas adicionales al guardar, lo que provoca que falle el procesamiento. Se recomienda inspeccionar el CSV sin procesar en un editor de texto simple para asegurarse de que cada campo tenga solo una comilla de apertura y una de cierre (y no deban ser &quot;comillas inteligentes&quot;)
 
-1. Cargar el archivo de usuario en bloque en Admin Console
+1. Utilice Admin Console para importar el archivo de usuario en bloque
 
    1. En Admin Console, vaya a Usuarios
    1. Haga clic en el botón **Agregar usuarios mediante CSV**
    1. Arrastre y suelte o seleccione un archivo CSV de usuario en bloque descargado de CAM
    1. Haga clic en el botón **Cargar**
    1. Recibirá una respuesta que indica que el CSV se ha cargado (en Admin Console), pero aún no se ha importado a IMS.
+   1. Vaya al menú &quot;...&quot; de la derecha y elija **Resultados de operaciones masivas**.  Mostrará una lista de intentos de carga en lotes y mostrará (en **Estado**) si la carga en lotes se está procesando, se ha realizado correctamente o ha fallado.
 
-1. Vaya al menú &quot;...&quot; de la derecha y elija **Resultados de operaciones masivas**.  Mostrará una lista de intentos de carga en lotes y mostrará (en **Estado**) si la carga en lotes se está procesando, se ha realizado correctamente o ha fallado.
-
-   * Al principio se mostrará Procesando, lo que indica que aún no ha finalizado
-   * Una vez finalizado correctamente, haga clic en el vínculo **Agregar usuarios** para ver un mensaje de estado simple para cada línea
-   * Si en su lugar ha fallado, haga clic en el icono pequeño bajo **Archivo** y le dará un poco más de información sobre por qué falló. Se hace referencia a los números de línea del usuario a partir de la fila 1.
+      * Al principio se mostrará Procesando, lo que indica que aún no ha finalizado
+      * Una vez finalizado correctamente, haga clic en el vínculo **Agregar usuarios** para ver un mensaje de estado simple para cada línea
+      * Si en su lugar ha fallado, haga clic en el icono pequeño bajo **Archivo** y le dará un poco más de información sobre por qué falló. Se hace referencia a los números de línea del usuario a partir de la fila 1.
 
 1. Utilice Admin Console para comprobar los cambios.
 
@@ -164,8 +167,8 @@ Para utilizar la funcionalidad de edición masiva de usuarios de Admin Console, 
    1. Recibirá una respuesta que indica que el CSV se ha cargado (en Admin Console), pero aún no se ha importado a IMS
    1. Vaya al menú &quot;...&quot; de la derecha y elija **Resultados de operaciones masivas**. Muestra una lista de los intentos de carga masiva y le informa (en Estado) de si la carga masiva se está procesando, se ha realizado correctamente o ha fallado.
 
-   * Al principio se mostrará Procesando, lo que indica que aún no ha finalizado
-   * Una vez finalizado correctamente, haga clic en el vínculo **Editar detalles del usuario** para ver un mensaje de estado simple para cada línea
-   * Si en su lugar ha fallado, haga clic en el icono pequeño bajo **Archivo** y se mostrará un poco más de información sobre el motivo del error. Se hace referencia a los números de línea del usuario a partir de la fila 1.
+      * Al principio se mostrará Procesando, lo que indica que aún no ha finalizado
+      * Una vez finalizado correctamente, haga clic en el vínculo **Editar detalles del usuario** para ver un mensaje de estado simple para cada línea
+      * Si en su lugar ha fallado, haga clic en el icono pequeño bajo **Archivo** y se mostrará un poco más de información sobre el motivo del error. Se hace referencia a los números de línea del usuario a partir de la fila 1.
 
 1. Utilice Admin Console para comprobar los cambios.
