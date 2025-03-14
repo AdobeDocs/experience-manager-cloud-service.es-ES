@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d4b8e0700f325b43f9142608641a75f9870c7784
+source-git-commit: f4b079837dee960401a16073293969954cad3e77
 workflow-type: tm+mt
-source-wordcount: '6064'
+source-wordcount: '6065'
 ht-degree: 98%
 
 ---
@@ -697,16 +697,14 @@ ht-degree: 98%
       + [Eliminación de dependencias externas para instalaciones existentes](/help/assets/remove-external-dependencies.md)
       + [Configuración de [!DNL enhanced connector] para  [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [Actualizar [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
-
    + Integración con Adobe Express {#integration-adobe-express}
       + [Integración nativa con Adobe Express](/help/assets/native-integration-adobe-express.md)
-
    + Integración con Creative Cloud {#integration-creative-cloud}
       + [Conectar AEM Assets a Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
-
 + Forms {#forms}
    + Información general {#forms-overview}
       + [Introducción](/help/forms/home.md)
+      + [Introducción](/help/forms/home2.md)
       + [Principales innovaciones de Adobe Experience Manager Forms](/help/forms/latest-innovations.md)
       + [Funciones de acceso rápido (EA)](/help/forms/early-access-ea-features.md)
       + [Cambios importantes](/help/forms/notable-changes.md)
