@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 896a2927c0f5733ab23ca9f6c9e975f8388daff9
+source-git-commit: a2f26e7befe4aa23350cfdca6a2c342500a909db
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 48%
+source-wordcount: '1493'
+ht-degree: 46%
 
 ---
 
@@ -59,6 +59,10 @@ La compatibilidad con UUID de fragmento de contenido ahora es GA. La nueva funci
 **Dynamic Media con compatibilidad con OpenAPI en el Editor de fragmentos de contenido y GraphQL**
 
 Assets que se almacenan en programas de AEM as a Cloud Service diferentes a los fragmentos de contenido y que se habilitan con la nueva capacidad Dynamic Media con OpenAPI, ahora se puede utilizar en fragmentos de contenido. El selector de imágenes en el nuevo Editor de fragmentos de contenido ahora permite seleccionar repositorios &quot;remotos&quot; como fuente para los recursos de imagen a los que se hace referencia en el fragmento. Además, al enviar estos fragmentos de contenido mediante AEM GraphQL, la respuesta JSON ahora incluye propiedades necesarias para los recursos remotos (assetId, repositoryId), de modo que las aplicaciones cliente puedan crear Dynamic Media respectivos con URL de OpenAPI para recuperar la imagen.
+
+**Despliegue del editor de fragmentos de contenido**
+
+Seguiremos habilitando el nuevo Editor de fragmentos de contenido basado en la IU de Spectrum en AEM as a Cloud Service. Después de convertirse en el valor predeterminado para todos los entornos de Cloud Service Developer en noviembre de 2024, se establecerá como predeterminado para todos los entornos de Stage el 1 de abril de 2025, y para todos los entornos de Producción el 1 de mayo de 2025. En todos los casos, los usuarios seguirán teniendo la opción de volver al editor de fragmentos de contenido tradicional en la IU táctil de AEM.
 
 **API HTTP de traducción**
 
