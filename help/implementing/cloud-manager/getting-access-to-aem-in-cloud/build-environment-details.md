@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f37795b99f7c79aa73615748a0a7df61f9afbdb7
+source-git-commit: 83def24319831c3f14f396f2f6b92b053a9d46a9
 workflow-type: tm+mt
-source-wordcount: '1551'
-ht-degree: 30%
+source-wordcount: '1569'
+ht-degree: 28%
 
 ---
 
@@ -49,7 +49,7 @@ Cloud Manager crea y prueba su código mediante un entorno de compilación espec
 
 >[!NOTE]
 >
->Aunque Cloud Manager no define una versión específica de `jacoco-maven-plugin`, la versión utilizada debe ser al menos `0.7.5.201505241946`.
+>Cloud Manager no especifica una versión específica de `jacoco-maven-plugin`, pero la versión requerida depende de la versión Java del proyecto. Para Java 8, la versión del complemento debe ser al menos `0.7.5.201505241946`, mientras que las versiones más recientes de Java pueden requerir una versión más reciente.
 
 ## Repositorios de Maven HTTPS {#https-maven}
 
@@ -88,11 +88,11 @@ Para migrar a la versión de compilación con Java 21 o Java 17, primero debe ac
 
 Al migrar la aplicación a una nueva versión de compilación de Java y de tiempo de ejecución, realice pruebas exhaustivas en los entornos de desarrollo y ensayo antes de su implementación en producción.
 
-Recomendamos la siguiente estrategia de implementación:
+Adobe recomienda la siguiente estrategia de implementación:
 
 1. Ejecute su SDK local con Java 21, que puede descargar de https://experience.adobe.com/#/downloads, e implemente su aplicación en él y valide su funcionalidad. Compruebe en los registros que no hay errores, lo que indica problemas con la carga de clases o el tejido de código de bytes.
-1. Configure una rama en el repositorio de Cloud Manager para utilizar Java 21 como versión de Java en tiempo de compilación, configure una canalización de DEV para utilizar esta rama y ejecute la canalización. Ejecute las pruebas de validación.
-1. Si tiene buen aspecto, configure la canalización de fase/producción para utilizar Java 21 como versión de Java en tiempo de compilación y ejecute la canalización.
+1. Configure una rama en el repositorio de Cloud Manager para utilizar Java 21 como la versión de Java en tiempo de compilación, configure una canalización de DEV para utilizar esta rama y ejecute la canalización. Ejecute las pruebas de validación.
+1. Si tiene buen aspecto, configure la canalización de fase/producción para utilizar Java 21 como la versión de Java en tiempo de compilación y ejecute la canalización.
 
 ##### Acerca de algunas funciones de traducción {#translation-features}
 
@@ -118,7 +118,7 @@ Actualice el uso de los paquetes Java `org.apache.groovy` o `org.codehaus.groovy
 * **Versión mínima de Aries SPIFly:**
 Actualice el uso del paquete Java `org.apache.aries.spifly.dynamic.bundle` a la versión 1.3.6 o posterior para garantizar la compatibilidad con los tiempos de ejecución de JVM más recientes.
 
-AEM Cloud Service SDK es compatible con Java 21 y se puede utilizar para validar la compatibilidad del proyecto con Java 21 antes de ejecutar una canalización de Cloud Manager.
+AEM Cloud Service SDK admite Java 21 y le permite comprobar la compatibilidad del proyecto con Java 21 antes de ejecutar una canalización de Cloud Manager.
 
 * **Editar un parámetro de tiempo de ejecución:**
 Al ejecutar AEM localmente con Java 21, los scripts de inicio (`crx-quickstart/bin/start` o `crx-quickstart/bin/start.bat`) fallan debido al parámetro `MaxPermSize`. Como solución, quite `-XX:MaxPermSize=256M` del script o defina la variable de entorno `CQ_JVM_OPTS`, estableciéndola en `-Xmx1024m -Djava.awt.headless=true`.
@@ -127,7 +127,7 @@ Al ejecutar AEM localmente con Java 21, los scripts de inicio (`crx-quickstart/b
 
 >[!IMPORTANT]
 >
->Cuando `.cloudmanager/java-version` se establece en `21` o `17`, se implementa el tiempo de ejecución de Java 21. El tiempo de ejecución de Java 21 está programado para su despliegue gradual en todos los entornos (no solo en aquellos cuyo código se haya creado con Java 11) a partir del martes, 4 de febrero de 2025. El despliegue comenzará con los entornos de pruebas y desarrollo y, a continuación, se implementará en todos los entornos de producción en abril de 2025. Los clientes que deseen adoptar el tiempo de ejecución de Java 21 *antes* pueden comunicarse con Adobe en [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
+>Cuando `.cloudmanager/java-version` se establece en `21` o `17`, se implementa el tiempo de ejecución de Java 21. El tiempo de ejecución de Java 21 está programado para su despliegue gradual en todos los entornos (no solo en aquellos cuyo código se haya creado con Java 11) a partir del martes, 4 de febrero de 2025. Los despliegues comienzan con entornos limitados y de desarrollo, seguidos de todos los entornos de producción en abril de 2025. Los clientes que deseen adoptar el tiempo de ejecución de Java 21 *antes* pueden comunicarse con Adobe en [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
 
 #### Requisitos de tiempo de compilación {#build-time-reqs}
