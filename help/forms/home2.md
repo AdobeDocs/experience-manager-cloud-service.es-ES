@@ -6,7 +6,7 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
-source-git-commit: 2c41fae87821a28af1fd00701780e9fc52b5577d
+source-git-commit: 4b4bc6f754c6336136d409cf49617c7fafd4f4c3
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 11%
@@ -39,12 +39,12 @@ El servicio siempre está actualizado, siempre está disponible, y aprende const
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] es una solución centrada en apoyar cada paso del recorrido del cliente:
 
-<div class="card-container">
-  <div class="card">
-    <div class="card-header">
+<div class="card-container" style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
+  <div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>Formularios adaptables</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>Cree formularios dinámicos y adaptables que se adapten a los datos introducidos por el usuario y al tipo de dispositivo:</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components">Crear Forms adaptable</a>: cree formularios que se ajusten automáticamente a diferentes tamaños de pantalla y entradas de usuario</li>
@@ -60,11 +60,11 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] es una solución centra
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>API de comunicación</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>Generar, manipular y proteger documentos mediante programación:</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#document-generation">Generar comunicaciones personalizadas</a>: cree documentos personalizados basados en plantillas y datos</li>
@@ -81,11 +81,26 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] es una solución centra
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
+      <h3>Edge Delivery Services para Forms</h3>
+    </div>
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
+      <p>Crear y enviar formularios con Edge Delivery Services:</p>
+      <ul>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/overview">Información general sobre Edge Delivery Forms</a>: obtenga información sobre los formularios con Edge Delivery Services</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/getting-started-universal-editor">Editor universal para Forms</a>: cree formularios con el Editor universal de WYSIWYG</li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial">Creación basada en documentos</a>: cree formularios con Microsoft Word o Google Docs</li>
+        <li><a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms">Aplicar estilo a Edge Delivery Forms</a> - Aplicar estilo personalizado a los formularios</li>
+      </ul>
+    </div>
+  </div>
+
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>Forms sin encabezado</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>Ofrezca experiencias de formulario en cualquier canal o marco de trabajo de front-end:</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/overview">Introducción a Forms sin encabezado</a>: Obtenga información sobre el enfoque sin encabezado para los formularios</li>
@@ -97,26 +112,11 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] es una solución centra
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
-      <h3>Edge Delivery Services para Forms</h3>
-    </div>
-    <div class="card-body">
-      <p>Crear y enviar formularios con Edge Delivery Services:</p>
-      <ul>
-        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/overview">Información general sobre Edge Delivery Forms</a>: obtenga información sobre los formularios con Edge Delivery Services</li>
-        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/getting-started-universal-editor">Editor universal para Forms</a>: cree formularios con el Editor universal de WYSIWYG</li>
-        <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial">Creación basada en documentos</a>: cree formularios con Microsoft Word o Google Docs</li>
-        <li><a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/universal-editor/style-theme-forms">Aplicar estilo a Edge Delivery Forms</a> - Aplicar estilo personalizado a los formularios</li>
-      </ul>
-    </div>
-  </div>
-
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>Automatización del flujo de trabajo</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>Automatice los procesos empresariales con formularios y documentos:</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference#assign-task-step">Crear procesos empresariales</a>: envíe formularios para recibir aprobación o comentarios, flujos de trabajo posteriores al envío o flujos de trabajo back-end para administrar los procesos de inscripción</li>
@@ -126,11 +126,11 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] es una solución centra
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>Firmas electrónicas</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>Agregar firmas electrónicas legalmente vinculantes a sus formularios y documentos:</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms">Integración de Adobe Sign</a> - Habilitar firmas electrónicas en Forms adaptable</li>
@@ -140,11 +140,11 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] es una solución centra
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>Analytics y perspectivas</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>Obtenga información sobre el uso y el rendimiento del formulario:</p>
       <ul>
         <li><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation">Habilitar Adobe Analytics</a> - Rastrear el uso y el rendimiento de los formularios</li>
@@ -154,11 +154,11 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] es una solución centra
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>Integración de datos</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
       <p>Conecte los formularios a sus fuentes de datos y sistemas existentes:</p>
       <h4>Ecosistema de Adobe</h4>
       <ul>
@@ -192,42 +192,42 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] es una solución centra
 
 ## Introducción a AEM Forms as a Cloud Service
 
-<div class="card-container">
-  <div class="card">
-    <div class="card-header">
+<div class="card-container" style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
+  <div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>Para usuarios empresariales</h3>
     </div>
-    <div class="card-body">
-      <ol>
-        <li><strong>Comprender los conceptos básicos</strong>: Obtenga información acerca de <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components">Forms adaptable</a> y cómo pueden ayudar a digitalizar los procesos empresariales.</li>
-        <li><strong>Explorar plantillas</strong>: Examine las <a href="https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components">plantillas y temas pregenerados</a> para comenzar con sus proyectos de formularios.</li>
-        <li><strong>Aprenda a crear formularios</strong>: Siga la <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring">guía de creación de formularios</a> para crear su primer formulario.</li>
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
+      <ol style="margin-top: 10px; padding-left: 25px;">
+        <li style="margin-bottom: 8px;"><strong>Comprender los conceptos básicos</strong>: Obtenga información acerca de <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components">Forms adaptable</a> y cómo pueden ayudar a digitalizar los procesos empresariales.</li>
+        <li style="margin-bottom: 8px;"><strong>Explorar plantillas</strong>: Examine las <a href="https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components">plantillas y temas pregenerados</a> para comenzar con sus proyectos de formularios.</li>
+        <li style="margin-bottom: 8px;"><strong>Aprenda a crear formularios</strong>: Siga la <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring">guía de creación de formularios</a> para crear su primer formulario.</li>
       </ol>
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>Para desarrolladores</h3>
     </div>
-    <div class="card-body">
-      <ol>
-        <li><strong>Configure su entorno</strong>: configure su <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment">entorno de desarrollo local</a> para AEM Forms.</li>
-        <li><strong>Conozca la arquitectura</strong>: Comprenda la <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture">arquitectura de AEM Forms as a Cloud Service</a>.</li>
-        <li><strong>Explorar API</strong>: Familiarícese con <a href="https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/"> las API </a> y SDK disponibles para ampliar e integrar Forms.</li>
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
+      <ol style="margin-top: 10px; padding-left: 25px;">
+        <li style="margin-bottom: 8px;"><strong>Configure su entorno</strong>: configure su <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment">entorno de desarrollo local</a> para AEM Forms.</li>
+        <li style="margin-bottom: 8px;"><strong>Conozca la arquitectura</strong>: Comprenda la <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture">arquitectura de AEM Forms as a Cloud Service</a>.</li>
+        <li style="margin-bottom: 8px;"><strong>Explorar API</strong>: Familiarícese con <a href="https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/"> las API </a> y SDK disponibles para ampliar e integrar Forms.</li>
       </ol>
     </div>
   </div>
 
-<div class="card">
-    <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
       <h3>Para administradores</h3>
     </div>
-    <div class="card-body">
-      <ol>
-        <li><strong>Incorporación a Cloud Service</strong>: siga la <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service">guía de incorporación</a> para configurar AEM Forms as a Cloud Service.</li>
-        <li><strong>Configurar servicios</strong>: configure <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation">integraciones con otros servicios de Adobe</a> como Adobe Analytics.</li>
-        <li><strong>Migrar desde AEM 6.5</strong>: Si viene desde AEM 6.5, siga la <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html">guía de migración</a> para pasar a Cloud Service.</li>
+    <div class="card-body" style="padding: 20px; background-color: #ffffff;">
+      <ol style="margin-top: 10px; padding-left: 25px;">
+        <li style="margin-bottom: 8px;"><strong>Incorporación a Cloud Service</strong>: siga la <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service">guía de incorporación</a> para configurar AEM Forms as a Cloud Service.</li>
+        <li style="margin-bottom: 8px;"><strong>Configurar servicios</strong>: configure <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation">integraciones con otros servicios de Adobe</a> como Adobe Analytics.</li>
+        <li style="margin-bottom: 8px;"><strong>Migrar desde AEM 6.5</strong>: Si viene desde AEM 6.5, siga la <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html">guía de migración</a> para pasar a Cloud Service.</li>
       </ol>
     </div>
   </div>
@@ -235,98 +235,24 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] es una solución centra
 
 ## Funciones de usuario pionero
 
-<div class="card">
-  <div class="card-header">
+<div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; margin-bottom: 30px;">
+  <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
     <h3>Programa de acceso anticipado de AEM Forms</h3>
   </div>
-  <div class="card-body">
+  <div class="card-body" style="padding: 20px; background-color: #ffffff;">
     <p>El <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features">Programa de acceso anticipado de AEM Forms</a> ofrece acceso exclusivo a funciones de vanguardia antes de que estén disponibles en general, entre ellas:</p>
-    <ul>
-      <li><strong>Asistente de IA de AEM Forms (IA general)</strong>: cree formularios más rápido con sugerencias con tecnología de IA</li>
-      <li><strong>Conector de AEM Forms Workfront Fusion</strong>: Automatice los flujos de trabajo activados por los envíos de formularios</li>
-      <li><strong>Forms de conversación</strong>: crea experiencias de formulario de estilo chat en cualquier página de AEM Sites</li>
-      <li><strong>Creación de WYSIWYG para Edge Delivery</strong>: cree formularios con el editor universal para Edge Delivery Services</li>
-      <li><strong>Conector de AEM Forms a Marketo</strong>: integrar envíos de formularios con Marketo Engage</li>
+    <ul style="margin-top: 10px; padding-left: 25px;">
+      <li style="margin-bottom: 8px;"><strong>Asistente de IA de AEM Forms (IA general)</strong>: cree formularios más rápido con sugerencias con tecnología de IA</li>
+      <li style="margin-bottom: 8px;"><strong>Conector de AEM Forms Workfront Fusion</strong>: Automatice los flujos de trabajo activados por los envíos de formularios</li>
+      <li style="margin-bottom: 8px;"><strong>Forms de conversación</strong>: crea experiencias de formulario de estilo chat en cualquier página de AEM Sites</li>
+      <li style="margin-bottom: 8px;"><strong>Creación de WYSIWYG para Edge Delivery</strong>: cree formularios con el editor universal para Edge Delivery Services</li>
+      <li style="margin-bottom: 8px;"><strong>Conector de AEM Forms a Marketo</strong>: integrar envíos de formularios con Marketo Engage</li>
     </ul>
     <p>Para obtener una lista completa de las innovaciones de acceso anticipado y la documentación detallada, visite la <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features">página Programa de acceso anticipado de AEM Forms</a>.</p>
   </div>
 </div>
 
-<div class="cta-card">
-  <h3>¿Listo para empezar?</h3>
-  <p><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service">Incorpórese a AEM Forms as a Cloud Service</a> hoy y transforme la experiencia de formularios digitales de su organización.</p>
+<div style="background-color: #f0f7ff; border-left: 4px solid #1473e6; padding: 20px; margin: 30px 0; border-radius: 4px;">
+  <h3 style="margin-top: 0; color: #1473e6;">¿Listo para empezar?</h3>
+  <p><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service" style="font-weight: bold; color: #1473e6;">Incorpórese a AEM Forms as a Cloud Service</a> hoy y transforme la experiencia de formularios digitales de su organización.</p>
 </div>
-
-<style>
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-bottom: 30px;
-}
-
-.card {
-  flex: 1 1 calc(50% - 20px);
-  min-width: 300px;
-  border: 1px solid #e1e1e1;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-}
-
-.card-header {
-  background-color: #f5f5f5;
-  padding: 15px 20px;
-  border-bottom: 1px solid #e1e1e1;
-}
-
-.card-header h3 {
-  margin: 0;
-  color: #2c2c2c;
-  font-size: 1.25rem;
-}
-
-.card-body {
-  padding: 20px;
-  background-color: #ffffff;
-}
-
-.card-body ul, .card-body ol {
-  margin-top: 10px;
-  padding-left: 25px;
-}
-
-.card-body li {
-  margin-bottom: 8px;
-}
-
-.cta-card {
-  background-color: #f0f7ff;
-  border-left: 4px solid #1473e6;
-  padding: 20px;
-  margin: 30px 0;
-  border-radius: 4px;
-}
-
-.cta-card h3 {
-  margin-top: 0;
-  color: #1473e6;
-}
-
-.cta-card a {
-  font-weight: bold;
-  color: #1473e6;
-}
-
-@media (max-width: 768px) {
-  .card {
-    flex: 1 1 100%;
-  }
-}
-</style>
