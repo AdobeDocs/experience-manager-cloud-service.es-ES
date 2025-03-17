@@ -4,16 +4,16 @@ description: Este tutorial le ayudará a ponerse en marcha con un nuevo proyecto
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
+source-git-commit: e2259e542df5a12748705af901d073e4486292c4
 workflow-type: tm+mt
-source-wordcount: '1656'
-ht-degree: 98%
+source-wordcount: '1907'
+ht-degree: 99%
 
 ---
 
 # Introducción: Tutorial para desarrolladores
 
-En la era digital de hoy en día, la creación de formularios fáciles de usar es esencial para cualquier organización. Edge Delivery Services para AEM Forms le permite crear formularios con herramientas conocidas como Google Docs y Microsoft Office.
+En la era digital de hoy en día, la creación de formularios fáciles de usar es esencial para cualquier organización. Edge Delivery Services para AEM Forms le permite crear formularios utilizando herramientas conocidas como Documentos de Google y Microsoft Office.
 
 Estos formularios envían datos directamente a un archivo de Microsoft Excel o Google Sheets, lo que le permite utilizar un ecosistema dinámico y API sólidas de Google Sheets, Microsoft Excel y Microsoft SharePoint para procesar fácilmente los datos enviados o iniciar un flujo de trabajo empresarial existente.
 
@@ -138,8 +138,6 @@ Para copiar el contenido de muestra en su propia carpeta de contenido y dirigir 
 
       Esto conecta la carpeta de contenido con el sitio web. Después de actualizar la referencia, es posible que experimente inicialmente el error “404 Not Found”. Esto se debe a que el contenido aún no se ha previsualizado. En la siguiente sección se explica cómo empezar a crear y previsualizar el contenido.
 
-
-
 ### Previsualización y publicación del contenido
 
 Después de completar el último paso, el nuevo origen de contenido no está vacío, pero no será visible en el sitio web hasta que se promocione a la vista previa o a las fases en directo. Actualmente, esto puede causar errores del tipo 404.
@@ -261,49 +259,47 @@ Producción: `https://<branch>--<repo>--<owner>.aem.live/`
 
 Enhorabuena. Ha configurado correctamente su entorno de desarrollo local e implementado los cambios.
 
+## Añadir un bloque de formularios adaptables al proyecto de AEM existente
 
 <!--
-## Add Adaptive Forms Block to your existing AEM project
+>[!VIDEO](https://video.tv.adobe.com/v/3427789)-->
 
-
->[!VIDEO](https://video.tv.adobe.com/v/3427789)
-
-If you have an existing AEM Project, you can integrate the Adaptive Forms Block into your current project to get started on form creation. 
+Si tiene un proyecto de AEM existente, puede integrar el bloque de formularios adaptables en su proyecto actual para empezar a crear formularios.
 
 >[!NOTE]
 >
 >
-> This step applies to projects built with the [AEM Boilerplate](https://github.com/adobe/aem-boilerplate). If you created your AEM project using the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), you can skip this step.
+> Este paso se aplica a los proyectos creados con el [elemento repetitivo de AEM](https://github.com/adobe/aem-boilerplate). Si ha creado el proyecto de AEM con el [elemento repetitivo de AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms), puede omitir este paso.
 
-To Integrate:
+Para integrar, haga lo siguiente:
 
-1. **Add required files and folders**
-   1. Copy and paste the following folders and files from the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) into your AEM Project:
+1. **Añada los archivos y las carpetas necesarios**
+   1. Copie y pegue las siguientes carpetas y archivos del [elemento repetitivo de AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms) en su proyecto de AEM:
 
-      * [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)  folder
-       * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)  folder
-       * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) folder
-       * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) file
-       * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) file
+      * carpeta [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) 
+      * carpeta [form-common]( https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)
+      * carpeta [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components)
+      * archivo [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 
+      * archivo [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)
 
-1. **Update component definitions and models files**
-    1. Navigate to the `../models/_component-definition.json` file in your AEM Project and update it with the changes from the [_component-definition.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
-    
-    1. Navigate to the `../models/_component-models.json` file in your AEM Project and update it with the changes from the [_component-models.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
+1. **Actualice las definiciones de componentes y archivos de modelos**
+   1. Vaya al archivo `../models/_component-definition.json` de su proyecto de AEM y actualícelo con los cambios del [archivo _component-definition.json en el elemento repetitivo de AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
 
-1. **Add Form Editor in editor script**
-    1. Navigate to the `../scripts/editor-support.js` file in your AEM Project and update it with the changes from the [editor-support.js file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
-1. **Update ESLint configuration file**
-    1. Navigate to the `../.eslintignore` file in your AEM Project and add the following line of codes to prevent errors related to the Form Block rule engine:
-        ```
-            blocks/form/rules/formula/*
-            blocks/form/rules/model/*
-        ```
+   1. Vaya al archivo `../models/_component-models.json` de su proyecto de AEM y actualícelo con los cambios del [archivo _component-models.json en el elemento repetitivo de AEM Forms]( https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
 
-1. Commit and push these changes to your AEM Project repository on GitHub.
+1. **Añada el editor de formularios en el script del editor**
+   1. Vaya al archivo `../scripts/editor-support.js` de su proyecto de AEM y actualícelo con los cambios del [archivo editor-support.js en el elemento repetitivo de AEM Forms]( https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
+1. **Actualice el archivo de configuración ESLint**
+   1. Vaya al archivo `../.eslintignore` de su proyecto de AEM y añada la línea de códigos siguiente para evitar errores relacionados con el motor de reglas del bloque de formularios:
 
-That's it! The Adaptive Forms Block is now part of your AEM project. You can start creating and adding forms to your AEM pages.
--->
+      ```
+          blocks/form/rules/formula/*
+          blocks/form/rules/model/*
+      ```
+
+1. Confirme e inserte estos cambios en el repositorio del Proyecto de AEM en GitHub.
+
+Eso es todo. El bloque de formularios adaptables ahora forma parte de su proyecto de AEM. Puede empezar a crear y agregar formularios a las páginas de AEM.
 
 ## Solución de problemas de compilación de GitHub
 
@@ -316,6 +312,6 @@ Si aparece el error &quot;No se puede resolver la ruta al módulo &quot;&#39;../
 Si encuentra algún error de linting, puede omitirlo. Abra el archivo [EDS Project]/package.json y modifique la secuencia de comandos “lint” desde `"lint": "npm run lint:js && npm run lint:css"` hasta `"lint": "echo 'skipping linting for now'"`. Guarde el archivo y confirme los cambios en su proyecto de GitHub.
 
 
-## Véase también
+## Consulte también
 
 {{see-more-forms-eds}}
