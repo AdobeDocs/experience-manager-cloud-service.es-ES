@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
+source-git-commit: fdf28905b16b4cc5c6947b8b216940b0c43b2a6a
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 34%
+source-wordcount: '1377'
+ht-degree: 29%
 
 ---
 
@@ -95,6 +95,23 @@ También puede hacer clic en ![Puntos suspensivos - Icono de más](https://spect
 Para ver los detalles de la ejecución, vuelva a hacer clic en ![Puntos suspensivos - Más icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y haga clic en **[Ver detalles](#view-details)**.
 
 Según el tipo de canalización, puede cancelar la ejecución si hace clic de nuevo en ![Puntos suspensivos - Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) y hace clic en **Cancelar**.
+
+## Ejecutar varias canalizaciones {#run-multiple-pipelines}
+
+Con Cloud Manager puede ejecutar varias canalizaciones simultáneamente, lo que mejora la eficacia de la implementación para los clientes de AEM as a Cloud Service. La función **Ejecutar selección** le permite seleccionar varias canalizaciones y almacenarlas en déclencheur para ejecutarlas a la vez. Reduce el esfuerzo manual de tener que ejecutar las canalizaciones individualmente y optimiza los flujos de trabajo de compilación e implementación.
+
+**Para ejecutar varias canalizaciones:**
+
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y programa adecuados.
+1. En el menú del lado izquierdo, haga clic en ![Icono de flujo de trabajo ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Canalizaciones**.
+1. En la tabla de la página **Canalización**, active las casillas de verificación situadas junto a las canalizaciones que desee ejecutar.
+Si es necesario, haga clic en el icono ![Filtro, embudo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **Filtros** para ordenar las canalizaciones por nombre, o entorno, o tipo de código implementado, o una combinación de los tres.
+1. Cerca de la esquina superior derecha de la página, haga clic en **Ejecutar selección (x)**.
+1. En el cuadro de diálogo **Ejecutar canalizaciones seleccionadas (x)**, haga clic en **Ejecutar (x)**.
+
+   El botón **Ejecutar** refleja el número de canalizaciones que pueden continuar. Por ejemplo, puede que haya seleccionado cuatro canalizaciones, pero una ya se está ejecutando. O bien, ya no existe un entorno vinculado a una canalización seleccionada. En estos casos, el sistema se ajusta en consecuencia. El botón se actualiza a &quot;Ejecutar (3)&quot; para indicar que pueden continuar tres canalizaciones.
+
+1. Las canalizaciones comienzan a ejecutarse y su estado se actualiza en la lista **Canalizaciones**.
 
 ## Editar una canalización {#editing-pipelines}
 
