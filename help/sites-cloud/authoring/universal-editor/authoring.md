@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: fced4707e781242132a018d28d4dd121960469eb
+source-git-commit: 08bcf9a65854478d2ce057e31b4c27690d1bf240
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1405'
 ht-degree: 22%
 
 ---
@@ -161,7 +161,7 @@ El componente seleccionado se ha eliminado.
 >
 >Utilice la tecla de acceso directo `Shift+Backspace` para eliminar el componente seleccionado de su contenedor.
 
-### Reordenación de componentes en contenedores {#reordering-components}
+### Reordenación de componentes {#reordering-components}
 
 1. Si aún no está en [modo de árbol de contenido](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode), cambie a él.
 1. Seleccione un componente de contenedor en el árbol de contenido o en el editor.
@@ -176,7 +176,7 @@ Los componentes se reordenan tanto en el árbol de contenido como en el editor.
 
 >[!NOTE]
 >
->Los componentes no se pueden mover entre contenedores si se establece un [filtro de componente](/help/implementing/universal-editor/filtering.md) diferente entre los contenedores de origen y destino.
+>Los componentes solo se pueden mover entre contenedores si el contenedor de destino [filtro de componentes](/help/implementing/universal-editor/filtering.md) permite el componente seleccionado.
 
 ### Creación de variaciones utilizando GenAI con Generar variaciones {#generate-variations-ai}
 
