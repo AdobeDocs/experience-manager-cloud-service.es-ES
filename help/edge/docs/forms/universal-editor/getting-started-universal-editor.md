@@ -4,9 +4,9 @@ description: Este tutorial le ayudará a ponerse en marcha con un nuevo proyecto
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 882e3e1340a6faaec8b4a8e26ff50007458b244a
+source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1857'
 ht-degree: 98%
 
 ---
@@ -195,7 +195,7 @@ Para integrar, haga lo siguiente:
 
 Eso es todo. El Bloque de formularios adaptables ahora forma parte de su Proyecto de AEM. Puede [empezar a crear y añadir formularios a su proyecto de AEM](#add-edge-delivery-services-forms-to-aem-site-project).
 
-## Crear formularios de AEM con WYSIWYG
+## Crear Forms con WYSIWYG
 
 Puede abrir el proyecto de AEM en el Editor universal para la creación de WYSIWYG, donde puede editar el proyecto y añadir la sección Formulario adaptable para incluir formularios de Edge Delivery Services en páginas del Proyecto de AEM.
 

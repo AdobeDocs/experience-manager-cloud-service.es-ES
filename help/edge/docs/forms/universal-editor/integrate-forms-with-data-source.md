@@ -1,17 +1,17 @@
 ---
-title: Crear un modelo de datos de formulario (FDM) para un formulario en el editor universal
+title: Cómo integrar el Modelo de datos de formulario (FDM) para un formulario en el Editor universal
 description: Aprenda a crear formularios basados en un modelo de datos de formulario (FDM). Generar y editar datos de ejemplo para objetos de modelo de datos en el modelo de datos de formulario (FDM).
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 hide: true
 hidefromtoc: true
-source-git-commit: e2259e542df5a12748705af901d073e4486292c4
+exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
+source-git-commit: 381aad580762fe957e1dc1d5824e4d35098f1ca4
 workflow-type: tm+mt
 source-wordcount: '1036'
 ht-degree: 11%
 
 ---
-
 
 # Integrar formularios con el modelo de datos de formulario en el editor universal
 
@@ -128,7 +128,7 @@ Cuando se crea un formulario no basado en esquemas, no se configura ninguna fuen
 
    ![Generar formulario](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
-   También puede agregar manualmente enlaces de datos a un elemento de formulario especificándolo en las propiedades **Bind Reference** del elemento de formulario.
+   Debe agregar manualmente el enlace de datos a un elemento de formulario especificándolo en las propiedades **Bind Reference** del elemento de formulario.
 Por ejemplo, vamos a agregar una referencia de enlace de datos al cuadro de texto **Nombre del animal doméstico** que ya está presente en el formulario:
 
    ![Agregar manualmente datos que enlazan para un campo de formulario](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)

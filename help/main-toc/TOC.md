@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c4b4bc50fc9530d0e1ed982185c38716299abbb0
+source-git-commit: 381aad580762fe957e1dc1d5824e4d35098f1ca4
 workflow-type: tm+mt
-source-wordcount: '6086'
+source-wordcount: '6098'
 ht-degree: 98%
 
 ---
@@ -1047,7 +1047,8 @@ ht-degree: 98%
          + [Proteger los formularios del spam: añadir seguridad reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [Cómo publicar e implementar formularios: Guía de publicación del editor universal](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Generar componentes de formulario personalizados: Guía del editor universal para desarrolladores](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [Integración del modelo de datos de formulario: integración de Forms con el modelo de datos de formulario](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [Integración del modelo de datos de formulario: integrar Forms con el modelo de datos de formulario](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [Segmentos reutilizables, modulares e independientes: crear y usar fragmentos de formulario en formularios](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
       + Creación basada en documentos {#getting-started-edge-delivery-services-forms}
          + [Creación del primer formulario: Guía de inicio rápido con Hojas de cálculo de Google y Excel](/help/edge/docs/forms/tutorial.md)
          + [Cómo crear formularios con Hojas de cálculo de Google o Excel: Guía paso a paso](/help/edge/docs/forms/create-forms.md)
