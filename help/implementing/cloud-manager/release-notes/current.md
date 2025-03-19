@@ -4,9 +4,9 @@ description: Obtenga información acerca del lanzamiento de Cloud Manager 2025.3
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 5983c8579dd8606bc8bedfe6fa2a3838493452cd
+source-git-commit: 663234640f16e6aa653251399751abf5daa17f82
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '329'
 ht-degree: 31%
 
 ---
@@ -33,6 +33,8 @@ La próxima versión planificada es el viernes, 10 de abril de 2025.
   La capacidad de ejecutar varias canalizaciones simultáneamente se ha introducido en la página Canalizaciones. Los usuarios deben seleccionar al menos una canalización, pero no más de diez. Cerca de la esquina superior derecha de la página Canalizaciones, haga clic en **Ejecutar seleccionados (x)**. Aparecerá un cuadro de diálogo modal que enumera cualquier canalización que no se pueda iniciar. Haga clic en **Ejecutar** para iniciar todas las canalizaciones válidas.
 
   ![Ejecutar cuadro de diálogo de canalizaciones seleccionadas](/help/implementing/cloud-manager/release-notes/assets/run-selected-pipelines.png)
+
+  Ver también [Ejecutar varias canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#run-multiple-pipelines)
 
 * **Se ha ampliado la compatibilidad a las versiones de Node.js**
 
