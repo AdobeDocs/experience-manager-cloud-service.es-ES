@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: a2f26e7befe4aa23350cfdca6a2c342500a909db
 workflow-type: tm+mt
 source-wordcount: '1493'
-ht-degree: 46%
+ht-degree: 95%
 
 ---
 
@@ -28,7 +28,7 @@ En la siguiente sección se describen las notas de la versión de la funcionalid
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de la versión de [!DNL Adobe Experience Manager] como versión de funcionalidad actual (2025.2.0) de [!DNL Cloud Service] es el miércoles, 04 de marzo de 2025. La próxima versión de funcionalidad (2025.3.0) está planificada para el viernes, 27 de marzo de 2025.
+La fecha de la versión de [!DNL Adobe Experience Manager] como versión de funcionalidad actual (2025.2.0) de [!DNL Cloud Service] es el 4 de marzo de 2025. La próxima versión de funcionalidad (2025.3.0) está planificada para el 27 de marzo de 2025.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
@@ -48,17 +48,17 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ### Nuevas funciones de AEM Sites {#new-features-sites}
 
-**Etiquetado automático de fragmentos de contenido**
+**Etiquetado automático de los fragmentos de contenido**
 
-Al crear fragmentos de contenido, ahora es posible heredar automáticamente las etiquetas asignadas al modelo de contenido. Esto permite una potente clasificación automática del contenido almacenado en los fragmentos de contenido.
+Al crear fragmentos de contenido, ahora es posible heredar automáticamente las etiquetas asignadas al modelo de contenido. Esto permite realizar una potente clasificación automática del contenido almacenado en los fragmentos de contenido.
 
-**Compatibilidad con UUID de fragmento de contenido**
+**Compatibilidad con UUID de los fragmentos de contenido**
 
-La compatibilidad con UUID de fragmento de contenido ahora es GA. La nueva funcionalidad no altera el comportamiento basado en rutas de las operaciones dentro de AEM, como mover, cambiar el nombre y desplegar, donde las rutas se ajustan automáticamente, pero puede hacer que el consumo externo de fragmentos de contenido sea más fácil y estable, especialmente cuando se utilizan consultas de GraphQL que dirigen directamente a fragmentos individuales con consultas ByPath. Estas consultas pueden romperse si cambia una ruta de fragmento. Al utilizar el nuevo tipo de consulta ById, la consulta ahora permanece estable, ya que el UUID de un fragmento no cambia en los casos en que las rutas sí lo hacen.
+La compatibilidad con UUID de los fragmentos de contenido ya tiene disponibilidad general (GA). La nueva funcionalidad no altera el comportamiento basado en las rutas de las operaciones dentro de AEM como mover, cambiar el nombre y desplegar. Las rutas se ajustan automáticamente, pero puede hacer que el consumo externo de fragmentos de contenido sea más fácil y estable, especialmente cuando se utilizan consultas GraphQL que se dirigen directamente a fragmentos individuales con consultas ByPath. Estas consultas pueden interrumpirse si cambia una ruta de fragmento. Al utilizar el nuevo tipo de consulta ById, la consulta ahora permanece estable, ya que el UUID de un fragmento no cambia en los casos en que sí lo hacen las rutas.
 
-**Dynamic Media con compatibilidad con OpenAPI en el Editor de fragmentos de contenido y GraphQL**
+**Compatibilidad de Dynamic Media con OpenAPI en el Editor de fragmentos de contenido y GraphQL**
 
-Assets que se almacenan en programas de AEM as a Cloud Service diferentes a los fragmentos de contenido y que se habilitan con la nueva capacidad Dynamic Media con OpenAPI, ahora se puede utilizar en fragmentos de contenido. El selector de imágenes en el nuevo Editor de fragmentos de contenido ahora permite seleccionar repositorios &quot;remotos&quot; como fuente para los recursos de imagen a los que se hace referencia en el fragmento. Además, al enviar estos fragmentos de contenido mediante AEM GraphQL, la respuesta JSON ahora incluye propiedades necesarias para los recursos remotos (assetId, repositoryId), de modo que las aplicaciones cliente puedan crear Dynamic Media respectivos con URL de OpenAPI para recuperar la imagen.
+Los recursos que se almacenan en programas de AEM as a Cloud Service diferentes a los fragmentos de contenido y que se habilitan con la nueva funcionalidad Dynamic Media con OpenAPI, ahora se pueden utilizar en los fragmentos de contenido. El selector de imágenes en el nuevo Editor de fragmentos de contenido ahora permite seleccionar repositorios &quot;remotos&quot; como fuente para los recursos de imagen a los que se hace referencia en el fragmento. Además, en el envío de estos fragmentos de contenido mediante AEM GraphQL, la respuesta JSON ahora incluye propiedades necesarias para los recursos remotos (assetId, repositoryId), de modo que las aplicaciones cliente puedan crear direcciones URL de Dynamic Media con OpenAPI para recuperar la imagen.
 
 **Despliegue del editor de fragmentos de contenido**
 
@@ -66,7 +66,7 @@ Seguiremos habilitando el nuevo Editor de fragmentos de contenido basado en la I
 
 **API HTTP de traducción**
 
-La API de REST HTTP de traducción de AEM que lleva un tiempo en el modo de usuario inicial es ahora GA. La documentación se encuentra [aquí](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/). La API permite automatizar los pasos necesarios en el proceso de administración de traducciones para el contenido en AEM.
+La API REST HTTP de traducción de AEM que ha estado en modo de primer usuario durante un tiempo ahora ya tiene disponibilidad general (GA). La documentación se encuentra [aquí](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/). La API permite automatizar los pasos necesarios en el proceso de administración de traducciones para el contenido en AEM.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -74,26 +74,26 @@ La API de REST HTTP de traducción de AEM que lleva un tiempo en el modo de usua
 
 **Nueva estructura de empaquetado de Dynamic Media**
 
-Ya está disponible una estructura de empaquetado de Dynamic Media actualizada para cumplir mejor con las expectativas del mercado y admitir el seguimiento. La nueva estructura de embalaje incluye:
+Ya está disponible una estructura de empaquetado de Dynamic Media actualizada para cumplir mejor con las expectativas del mercado y facilitar el seguimiento. La nueva estructura de empaquetado incluye lo siguiente:
 
-* Dynamic Media Prime, que incluye Dynamic Media con API y vídeo para mejorar la entrega.
+* Dynamic Media Prime, que incluye Dynamic Media con OpanAPIs y vídeo para mejorar el envío.
 
-* Dynamic Media Ultimate añade funciones de entrega y transformación para satisfacer requisitos de uso más exigentes.
+* Dynamic Media Ultimate añade funciones de envío y transformación para satisfacer requisitos de uso más exigentes.
 
 Debe tener Assets as a Cloud Service Prime o Ultimate para beneficiarse de la nueva estructura de empaquetado.
 
 **Subtítulos de vídeo generados por IA**
 
-Los subtítulos de vídeo generados por IA en Adobe Dynamic Media utilizan la inteligencia artificial para generar subtítulos automáticamente para el contenido de vídeo. Esta función está diseñada para mejorar la accesibilidad y la experiencia del usuario al proporcionar subtítulos precisos. Los subtítulos se generan a partir del audio original, cualquier pista de audio adicional o subtítulos adicionales se proporcionan en la pestaña &quot;Subtítulos y audio&quot; en la página de propiedades de vídeo. Con compatibilidad con más de 60 idiomas, los subtítulos se pueden revisar y previsualizar antes de publicar el vídeo.
+Los subtítulos de vídeo generados por IA en Adobe Dynamic Media utilizan la inteligencia artificial para generar subtítulos automáticamente para el contenido de vídeo. Esta función se ha diseñado para mejorar la accesibilidad y la experiencia del usuario gracias a la provisión de subtítulos precisos. Los subtítulos se generan a partir del audio original, de cualquier pista de audio adicional o de subtítulos adicionales proporcionados en la pestaña &quot;Subtítulos y audio&quot; de la página de propiedades del vídeo. Con compatibilidad con más de 60 idiomas, los subtítulos se pueden revisar y previsualizar antes de publicar el vídeo.
 
-**Personalizar filtros de búsqueda**
+**Filtros de búsqueda personalizados**
 
-Los filtros de búsqueda personalizada mejoran la precisión y la eficacia de la búsqueda de información relevante. Permite realizar búsquedas más adaptadas y filtrar los datos según atributos específicos como marca, producto, categoría u otros identificadores clave. Esto mejora la organización, reduce el tiempo empleado en tamizar los resultados irrelevantes y permite una toma de decisiones más rápida. También admite la escalabilidad, ya que los conjuntos de datos grandes son más fáciles de navegar y analizar.
+Los filtros de búsqueda personalizados mejoran la precisión y la eficacia de la búsqueda de información relevante. Permiten realizar búsquedas más adaptadas y filtrar los datos según atributos específicos como la marca, el producto, la categoría u otros identificadores clave. Esto mejora la organización, reduce el tiempo dedicado a buscar entre los resultados irrelevantes y permite tomar decisiones más rápidamente. También admiten la escalabilidad, ya que los conjuntos de datos grandes son más fáciles de navegar y analizar.
 
-![personalizar filtros de búsqueda](/help/assets/assets/custom-search-filters.png)
+![filtros de búsqueda personalizados](/help/assets/assets/custom-search-filters.png)
 
 
-### Funciones de acceso anticipado en Content Hub {#early-access-content-hub}
+### Funciones de acceso rápido de Content Hub {#early-access-content-hub}
 
 Content Hub ahora le permite ver y descargar representaciones dinámicas y de recorte inteligente, además de las representaciones estáticas existentes. Como administrador de Content Hub, también puede configurar la disponibilidad de estas representaciones para los usuarios mediante la interfaz de usuario de configuración.
 
@@ -109,40 +109,40 @@ El programa para acceso rápido de AEM Forms ofrece una oportunidad única de ob
 
 En estas notas de la versión se indican las innovaciones de la versión actual. Para ver la lista completa de innovaciones disponibles en el programa para acceso rápido, consulte la [documentación del programa de acceso rápido de AEM Forms](/help/forms/early-access-ea-features.md).
 
-#### Plantillas de correo electrónico de HTML en Forms adaptable
+#### Plantillas de correo electrónico HTML de los formularios adaptables
 
-El Forms adaptable le permite usar [plantillas de correo electrónico de HTML](/help/forms/html-email-templates-in-adaptive-forms.md). Las plantillas de correo electrónico HTML le permiten enviar correos electrónicos enriquecidos, personalizados y visualmente atractivos cuando se envía un formulario. Estos correos electrónicos se pueden personalizar con los datos del formulario y mejorar mediante varias etiquetas de correo electrónico, como imágenes y vínculos. Con los formularios adaptables, puede cargar un archivo que contenga una plantilla HTML o utilizar un editor de texto sin formato para crear estas plantillas.
+Los formularios adaptables le permiten utilizar [plantillas de correo electrónico HTML](/help/forms/html-email-templates-in-adaptive-forms.md). Las plantillas de correo electrónico HTML le permiten enviar correos electrónicos enriquecidos, personalizados y visualmente atractivos cuando se envía un formulario. Estos correos electrónicos se pueden personalizar con los datos del formulario y mejorar mediante varias etiquetas de correo electrónico, como imágenes y vínculos. Con los formularios adaptables, puede cargar un archivo que contenga una plantilla HTML o utilizar un editor de texto sin formato para crear estas plantillas.
 
 ![Plantilla de correo electrónico HTML](/help/forms/assets/html-email.png)
 
 #### Compatibilidad mejorada con el almacenamiento en la nube: carga directa del PDF en el almacenamiento del blob de Azure
 
-Las API de generación de documentos de AEM Forms ahora le permiten [cargar directamente documentos de PDF](/help/forms/early-access-ea-features.md#doc-generation-api) generados en Azure Blob Storage. Esta mejora optimiza el almacenamiento y la recuperación, mejorando la eficiencia y la integración con los flujos de trabajo en la nube.
+Las API de generación de documentos de AEM Forms ahora le permiten [cargar directamente los documentos PDF generados](/help/forms/early-access-ea-features.md#doc-generation-api) en Azure Blob Storage. Esta mejora optimiza el almacenamiento y la recuperación, mejorando la eficiencia y la integración con los flujos de trabajo en la nube.
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Compatibilidad con Java 21 {#java21}
 
-Como se mencionó en las notas de la versión de enero, ahora puede generar código con Java 21, que incluye nuevas funciones (por ejemplo, coincidencia de patrones para instrucciones de switch, clases selladas) y mejoras de rendimiento; las compilaciones de Java 17 también son compatibles recientemente. Para ver los pasos de configuración, incluida la actualización del proyecto Maven y las versiones de la biblioteca, consulte el artículo [Entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support). 
+Como se menciona en la versión de enero, ahora puede generar código con Java 21, que incluye nuevas funciones (por ejemplo, coincidencia de patrones para instrucciones de cambio, clases selladas) y mejoras de rendimiento; las compilaciones de Java 17 también son compatibles desde hace poco. Para ver los pasos de configuración, incluida la actualización del proyecto Maven y las versiones de la biblioteca, consulte el artículo [Entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support). 
 
 El **entorno de ejecución** de Java 21 de mayor rendimiento se implementará automáticamente cuando se detecte una compilación de Java 17 o 21. Sin embargo, también recomendamos optar por el tiempo de ejecución de Java 21 para entornos creados con Java 11, enviando un correo electrónico a [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Obtenga información sobre los [requisitos del tiempo de ejecución de Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 
 >[!IMPORTANT]
 >
-> En febrero, Java 21 **runtime** se implementó en entornos dev/RDE (aparte de los ya creados con Java 17 o 21, que ya tienen Java 21 runtime). Java 21 se aplicará a los entornos de ensayo/producción en abril.
+> En febrero, Java 21 **runtime** se implementó en entornos para desarrolladores/RDE (aparte de los ya creados con Java 17 o 21, que ya tienen Java 21 runtime). Java 21 se aplicará a los entornos de ensayo/producción en abril.
 
 ### Edge Computing: solicitud de comentarios {#edge-computing-feedback}
 
-Edge Computing acerca el procesamiento de datos al explorador, lo que ofrece ventajas como una menor latencia. Adobe le gustaría saber si esta tecnología le resulta útil para los proyectos de AEM Publish Delivery y Edge Delivery Services. Además, indíquenos para qué prevé utilizarlo como entrada en la hoja de ruta del producto.
+Edge Computing acerca el procesamiento de datos al explorador, lo que ofrece ventajas como una menor latencia. A Adobe le encantaría saber si esta tecnología le resulta útil para los proyectos de AEM Publish Delivery y Edge Delivery Services. Además, indíquenos para qué prevé utilizarla como aportación a la hoja de ruta del producto. 
 
-Algunos casos de uso posibles:
+Algunos casos de uso posibles son los siguientes:
 * Autenticación con un IdP para acceder al contenido
-* Representar contenido dinámico (personalizado, localizado) en función de la geolocalización, el tipo de dispositivo, los atributos de usuario, etc.
+* Representación de contenido dinámico (personalizado, localizado) en función de la geolocalización, el tipo de dispositivo, los atributos de usuario, etc.
 * Manipulación avanzada de imágenes
 * Middleware entre la CDN y un origen
-* Una capa entre el explorador y una API de terceros, tal vez para reformatear la respuesta de la API
-* Agregar datos de varios orígenes para que el explorador del cliente pueda procesarlos con mayor facilidad
+* Una capa entre el explorador y una API de terceros, tal vez para cambiar el formato de la respuesta de la API
+* Añadir datos de varios orígenes para que el explorador del cliente pueda procesarlos con mayor facilidad
 
 Envíe un correo electrónico a [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) con preguntas y comentarios.
 
