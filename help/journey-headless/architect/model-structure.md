@@ -5,10 +5,10 @@ exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 99%
+source-wordcount: '636'
+ht-degree: 75%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 99%
 
 Al principio del [recorrido de autor de contenido sin encabezado de AEM](overview.md), los [Conceptos básicos de modelado de contenido para usuarios sin encabezado con AEM](basics.md) abarcaban los conceptos básicos y la terminología relevantes para la creación sin encabezado.
 
-Este artículo se basa en estos modelos para que pueda comprender cómo crear sus propios modelos de fragmento de contenido para su proyecto sin encabezado de AEM.
+Este artículo se basa en estos principios para que pueda comprender cómo crear sus propios modelos de fragmentos de contenido para su proyecto sin encabezado de AEM.
 
 ## Objetivo {#objective}
 
@@ -42,17 +42,33 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## Creación de modelos de fragmento de contenido {#creating-content-fragment-models}
 
-A continuación, se pueden crear los modelos de fragmento de contenido y definir la estructura. Esto se puede hacer en **Herramientas** > **General** > **Modelos de fragmento de contenido**.
+A continuación, se pueden crear los modelos de fragmentos de contenido y definir la estructura.
 
-![Modelos de fragmento de contenido en Herramientas](assets/cfm-tools.png)
+1. En la Consola de fragmento de contenido, seleccione el panel para Modelos de fragmento de contenido.
 
-Después de seleccionarlo, navegue a la ubicación del modelo y seleccione **Crear**. Aquí puede introducir varios detalles fundamentales.
+1. Vaya a la carpeta adecuada para su configuración o subconfiguración.
 
-La opción **Habilitar modelo** está activada de forma predeterminada. Esto significa que el modelo estará disponible para su uso (en la creación de fragmentos de contenido) en cuanto lo haya guardado. Puede desactivarlo si lo desea; más adelante tendrá la oportunidad de habilitar (o deshabilitar) un modelo existente.
+1. Use **Crear** para abrir el cuadro de diálogo **Nuevo modelo de fragmento de contenido**.
 
-![Crear Modelo de fragmento de contenido](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
+   ![Título y descripción](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-create.png)
 
-Confirme con **Crear** y entonces podrá **Abrir** el modelo para comenzar a definir la estructura.
+1. Completar los detalles
+
+1. Use **Crear** para guardar el modelo vacío o **Crear y abrir**.
+
+<!--
+Then the Content Fragments Models can be created and the structure defined. This can be done under **Tools** > **General** > **Content Fragment Models**. 
+
+![Content Fragment Models in Tools](assets/cfm-tools.png)
+
+After selecting this you navigate to the location for your model and select **Create**. Here you can enter various key details.
+
+The option **Enable model** is activated by default. This means that your model is available for use (in creating Content Fragments) as soon as you have saved it. You can deactivate this if you want - there are opportunities later to enable (or disable) an existing model.
+
+![Create Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
+
+Confirm with **Create** and you can then **Open** your model to start defining the structure.
+-->
 
 ## Definición de los modelos de fragmento de contenido {#defining-content-fragment-models}
 
@@ -66,7 +82,7 @@ Puede arrastrar instancias de los **Tipos de datos** en el espacio de la izquier
 
  ![Definición de campos](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 
-Una vez que haya agregado un tipo de datos, se le pedirá que defina las **Propiedades** para ese campo. Estas dependerán del tipo que se utilice. Por ejemplo:
+Una vez que haya agregado un tipo de datos, se le pedirá que defina las **Propiedades** para ese campo. Estas propiedades dependen del tipo que se utilice. Por ejemplo:
 
 ![Propiedades de datos](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
@@ -89,7 +105,7 @@ Sus autores de contenido no ven los tipos de datos ni las propiedades reales que
 La administración de modelos de fragmento de contenido implica lo siguiente:
 
 * Habilitarlos (o deshabilitarlos): esto hace que estén disponibles para los autores al crear fragmentos de contenido.
-* Eliminación: la eliminación siempre es necesaria, pero debe tener en cuenta la eliminación de un modelo que ya se esté utilizando para los fragmentos de contenido, en particular los fragmentos que ya se han publicado.
+* Eliminar: la eliminación siempre es necesaria, pero debe tener en cuenta la eliminación de un modelo que ya se utiliza para fragmentos de contenido; en particular, fragmentos que ya se han publicado.
 
 ## Publicación {#publishing}
 
@@ -99,7 +115,7 @@ Los modelos de fragmento de contenido deben publicarse cuando se publican fragme
 
 >[!NOTE]
 >
->Si un autor intenta publicar un fragmento de contenido para un modelo que aún no se ha publicado, la lista de selección lo indica y el modelo se publica con el fragmento.
+>Si un autor intenta publicar un fragmento de contenido para el que el modelo aún no se ha publicado, una lista de selección lo indica y el modelo se publica con el fragmento.
 
 En cuanto se publica el modelo, aparece *bloqueado* en modo de SOLO LECTURA en el autor. Esto tiene como objetivo evitar cambios que pudieran provocar errores en los esquemas y consultas de GraphQL existentes, especialmente en el entorno de publicación. En la consola se indica como **Bloqueado**.
 
