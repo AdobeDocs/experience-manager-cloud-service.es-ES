@@ -7,13 +7,13 @@ exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
 source-git-commit: e4a71d1a513bebed67b9571a483871dc16c36daa
 workflow-type: tm+mt
 source-wordcount: '514'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Publicación del formulario adaptable en Edge Delivery Services
 
-<span class="preview"> Esta función está disponible a través del programa de acceso rápido. Para solicitar acceso, envíe un correo electrónico con el nombre de su organización de GitHub y el nombre del repositorio desde su dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Por ejemplo, si la URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es adobe y el nombre del repositorio es abc.</span>
+<span class="preview"> Esta función está disponible a través del programa de acceso rápido. Para solicitar acceso, envíe un correo electrónico con el nombre de su organización de GitHub y el nombre del repositorio desde su dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Por ejemplo, si la URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es “adobe” y el nombre del repositorio es “abc”.</span>
 
 
 Cuando el formulario esté terminado y listo para usarse, puede publicarlo para que sus clientes puedan acceder a él para recopilar y enviar datos. La publicación garantiza que el formulario esté disponible en Edge Delivery, lo que permite a los usuarios interactuar con él sin problemas. Este proceso permite a los clientes rellenar y enviar el formulario en tiempo real, lo que garantiza una captura de datos eficiente y un procesamiento optimizado.
@@ -125,7 +125,7 @@ https://main--universaleditor--wkndforms.aem.live/content/forms/af/wknd-form
 ```
 
 
-## Consulte también
+## Vea también
 
 {{universal-editor-see-also}}
 

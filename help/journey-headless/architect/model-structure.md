@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
 workflow-type: tm+mt
 source-wordcount: '636'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -98,7 +98,7 @@ Sus autores de contenido no ven los tipos de datos ni las propiedades reales que
 >
 >Consulte Recursos adicionales: Modelos de fragmento de contenido.
 
-## Administración de modelos de fragmento de contenido {#managing-content-fragment-models}
+## Administración de los modelos de fragmento de contenido {#managing-content-fragment-models}
 
 <!-- needs more details -->
 

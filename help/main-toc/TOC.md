@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: d693097226839c8d496c6a8b3466953b32eacac5
 workflow-type: tm+mt
 source-wordcount: '6103'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -422,7 +422,7 @@ ht-degree: 98%
          + [Información general y conceptos](/help/sites-cloud/administering/content-fragments/overview.md)
          + [Entrega sin encabezado con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
          + [Configuración de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/setup.md)
-         + [Administración de modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+         + [Administración de los modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
          + [Definición de los modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
          + [Administración de los fragmentos de contenido](/help/sites-cloud/administering/content-fragments/managing.md)
          + [Creación del contenido de fragmentos](/help/sites-cloud/administering/content-fragments/authoring.md)
@@ -571,7 +571,7 @@ ht-degree: 98%
       + [Entrega sin encabezado con fragmentos de contenido y GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
       + [Habilitación de la funcionalidad de fragmento de contenido para la instancia](/help/assets/content-fragments/content-fragments-configuration-browser.md)
       + [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
-      + [Administrar fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md)
+      + [Administración de los fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md)
       + [Variaciones: Crear contenido de fragmentos](/help/assets/content-fragments/content-fragments-variations.md)
       + [Contenido asociado de fragmentos de contenido](/help/assets/content-fragments/content-fragments-assoc-content.md)
       + [Metadatos: Propiedades del fragmento](/help/assets/content-fragments/content-fragments-metadata.md)
@@ -895,8 +895,8 @@ ht-degree: 98%
    + Informes de transacciones {#using-communications}
       + [API facturables de informes de transacciones](/help/forms/transaction-reports-billable-apis.md)
       + [Registrar una transacción para una implementación personalizada](/help/forms/record-transaction-custom-implementation.md)
-   + Tablero de realización de valores {#vr-dashboard}
-      + [Comprender el panel de realización de valores](/help/forms/aem-forms-value-realization-dashboard.md)
+   + Tablero de realización de valor {#vr-dashboard}
+      + [Información acerca del panel de realización de valor](/help/forms/aem-forms-value-realization-dashboard.md)
       + [Uso del panel de realización de valor para analizar las tendencias de uso de formularios y documentos](/help/forms/using-the-value-realization-dashboard.md)
    + Referencia de API de desarrollador {#aem-forms-developer-api-reference}
       + [Referencia de la API de los formularios adaptables](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
@@ -1052,7 +1052,7 @@ ht-degree: 98%
       + Creación basada en documentos {#getting-started-edge-delivery-services-forms}
          + [Creación del primer formulario: Guía de inicio rápido con Hojas de cálculo de Google y Excel](/help/edge/docs/forms/tutorial.md)
          + [Cómo crear formularios con Hojas de cálculo de Google o Excel: Guía paso a paso](/help/edge/docs/forms/create-forms.md)
-         + [Varios componentes del bloque de formulario adaptable](/help/edge/docs/forms/form-components.md)
+         + [Distintos componentes del bloque de formulario adaptable](/help/edge/docs/forms/form-components.md)
          + [Conectar el formulario a Hojas de cálculo de Google: Guía de configuración de recopilación de datos](/help/edge/docs/forms/submit-forms.md)
          + [Publique el formulario: Guía de publicación y recopilación de datos](/help/edge/docs/forms/publish-forms.md)
          + [Validación de campos de formulario: añadir comprobaciones de errores a los formularios](/help/edge/docs/forms/validate-forms.md)
@@ -1067,7 +1067,7 @@ ht-degree: 98%
          + [Globalizar el formulario: Guía de traducción del formulario](/help/edge/docs/forms/translate-forms.md)
          + [Proteger los formularios: añadir seguridad reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Generar componentes de formulario personalizados: Guía para desarrolladores](/help/edge/docs/forms/custom-components-forms.md)
-         + [Supervisar el rendimiento del formulario: guías de supervisión de uso real](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [Monitorizar el rendimiento del formulario: guías de monitorización de uso real](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
    + Recursos de Edge Delivery {#resources}
       + Barra de tareas {#sidekick}
          + [Uso de la barra de tareas](/help/edge/docs/sidekick.md)

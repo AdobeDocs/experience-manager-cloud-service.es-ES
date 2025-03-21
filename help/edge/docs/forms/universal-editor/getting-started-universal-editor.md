@@ -7,7 +7,7 @@ exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
 workflow-type: tm+mt
 source-wordcount: '1857'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ En la era digital de hoy en día, unos formularios fáciles de usar son esencial
 
 AEM Forms proporciona un bloque, conocido como bloque de formularios adaptables, para ayudarle a crear fácilmente formularios de Edge Delivery Services para capturar y almacenar los datos. Puede [crear un nuevo proyecto de AEM preconfigurado con el bloque de formularios adaptables](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) o [añadir el bloque de formularios adaptables a un proyecto de AEM existente](#add-adaptive-forms-block-to-your-existing-aem-project).
 
-![Flujo De Trabajo Del Repositorio De Github](/help/edge/assets/repo-workflow.png){width="50%" align="center" height="50%"}
+![Flujo de trabajo de repositorio de Github](/help/edge/assets/repo-workflow.png){width="50%" align="center" height="50%"}
 
 Este tutorial le guía a través de la creación, previsualización y publicación de su propio formulario con un proyecto de sitio de Adobe Experience Manager nuevo o existente mediante la creación de WYSIWYG en el editor universal.
 
@@ -306,6 +306,6 @@ Si encuentra algún error de linting, puede omitirlo. Abra el archivo [EDS Proje
 * **Resolver error de ruta del módulo:**
 Si aparece el error &quot;No se puede resolver la ruta al módulo &quot;&#39;../../scripts/lib-franklin.js&quot;&quot;, vaya al archivo [Proyecto EDS]/blocks/forms/form.js. Actualice la instrucción de importación reemplazando el archivo lib-franklin.js por aem.js.
 
-## Consulte también
+## Vea también
 
 {{universal-editor-see-also}}
