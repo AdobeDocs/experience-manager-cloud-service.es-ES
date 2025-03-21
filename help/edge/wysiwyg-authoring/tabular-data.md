@@ -4,10 +4,10 @@ description: Aprenda a utilizar hojas de cálculo para administrar los datos tab
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1284'
-ht-degree: 100%
+source-git-commit: fcbe7d79958301c39c8f894ff03ad39af6aded5b
+workflow-type: tm+mt
+source-wordcount: '1294'
+ht-degree: 99%
 
 ---
 
@@ -180,10 +180,10 @@ La hoja de cálculo de redirecciones ahora está publicada y se puede acceder p�
 
 Ahora que sabe cómo crear una hoja de cálculo de redirecciones, puede crear cualquier otro tipo de hoja de cálculo estándar:
 
-* Marcadores de posición
-* Metadatos
-* Encabezados
-* Configuración
+* [Marcadores de posición](https://www.aem.live/docs/placeholders)
+* [Metadatos](https://www.aem.live/docs/bulk-metadata)
+* [Encabezados](https://www.aem.live/docs/custom-headers)
+* [Configuración](https://www.aem.live/docs/configuration) - como para [invalidación de caché](https://www.aem.live/docs/byo-cdn-adobe-managed#setup-push-invalidation)
 * [Taxonomía](/help/edge/wysiwyg-authoring/taxonomy.md)
 
 Simplemente, siga los mismos pasos en las secciones [Crear hoja de cálculo](#spreadsheet) y [Actualizar paths.json](#paths-json), elija la plantilla adecuada y actualice el archivo `paths.json` correctamente.
