@@ -1,20 +1,57 @@
 ---
 title: Accesibilidad en Dynamic Media
-description: Aprenda a trabajar con vídeo en Dynamic Media, como las prácticas recomendadas para codificar vídeos, publicar vídeos en YouTube y ver informes de vídeo. También aprenderá a añadir subtítulos, subtítulos o marcadores de capítulo a los vídeos.
+description: Aprenda a trabajar con vídeo en Dynamic Media, como prácticas recomendadas para codificar vídeos, publicar vídeos en YouTube y ver informes de vídeo. También aprenderá a añadir subtítulos, subtítulos o marcadores de capítulo a los vídeos.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 feature: Accessibility
 role: Admin,User
 exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 1%
+source-wordcount: '684'
+ht-degree: 3%
 
 ---
 
 # Accesibilidad en Dynamic Media {#accessibility-in-dm}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 {{work-with-dynamic-media}}
 
@@ -22,7 +59,7 @@ Dynamic Media admite tecnologías de control de teclado y asistencia, como lecto
 
 ## Compatibilidad de accesibilidad del teclado en Dynamic Media {#keyboard-support-in-dm}
 
-Como Dynamic Media es un complemento de [!DNL Experience Manager Assets], la mayor parte del comportamiento de control de teclado es el mismo que en [!DNL Experience Manager Assets]. Por ejemplo, el botón `Cancel` de Dynamic Media tiene el mismo resaltado de enfoque que en [!DNL Experience Manager Assets]. También reacciona a la clave `Spacebar` como en [!DNL Experience Manager Assets]. Ver [métodos abreviados de teclado en Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Debido a que Dynamic Media es un complemento de [!DNL Experience Manager Assets], la mayor parte del comportamiento de control de teclado es el mismo que en [!DNL Experience Manager Assets]. Por ejemplo, el botón `Cancel` de Dynamic Media tiene el mismo resaltado de enfoque que en [!DNL Experience Manager Assets]. También reacciona a la clave `Spacebar` como en [!DNL Experience Manager Assets]. Ver [métodos abreviados de teclado en Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Las pulsaciones de tecla admitidas por los elementos de la interfaz de usuario individual en Dynamic Media son, en la mayoría de los casos, obvias y fáciles de encontrar. El control de teclado en Dynamic Media es aproximadamente el siguiente:
 
@@ -51,7 +88,7 @@ Ver [Edición del recorte inteligente o la muestra inteligente de una sola image
 
 Los elementos de la interfaz de usuario de Dynamic Media funcionan con tecnologías de asistencia como lectores de pantalla. Por ejemplo, reconoce los puntos de referencia de una página cuando se navegan por ellos mediante el método abreviado de teclado `D` o regiones mediante el método abreviado de teclado `R`. También narra el encabezado al navegar mediante el método abreviado de teclado de encabezado `H`.
 
-## Compatibilidad de accesibilidad del teclado en los visores de Dynamic Media {#keyboard-accessibility-for-dm-viewers}
+## Compatibilidad con accesibilidad del teclado en visores de Dynamic Media {#keyboard-accessibility-for-dm-viewers}
 
 Todos los componentes listos para usar de los visores de Dynamic Media admiten la accesibilidad del teclado para sus clientes.
 
@@ -59,14 +96,14 @@ Consulte [Navegación y accesibilidad por teclado](https://experienceleague.adob
 
 ## Compatibilidad con tecnología de asistencia en los visores de Dynamic Media {#assistive-technology=support-for-dm-viewers}
 
-Todos los componentes del visor de Dynamic Media admiten los roles y atributos ARIA (Aplicaciones de Internet enriquecidas accesibles) para mejorar la integración con tecnologías de asistencia como lectores de pantalla.
-Consulte el tema de ayuda **Soporte técnico de tecnología de asistencia** en cualquier tema de personalización del visor en la Guía de referencia de visores de Dynamic Media. Por ejemplo, consulte [Compatibilidad con tecnología de asistencia](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) para el visor de vídeo o [Compatibilidad con tecnología de asistencia](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) para el visor de imágenes interactivas.
+Todos los componentes del visualizador de Dynamic Media admiten los roles y atributos de ARIA (Aplicaciones de Internet enriquecidas accesibles) para mejorar la integración con tecnologías de asistencia como lectores de pantalla.
+Consulte el tema de ayuda **Compatibilidad con tecnología de asistencia** en cualquier tema de personalización de visualizadores de la Guía de referencia de visualizadores de Dynamic Media. Por ejemplo, consulte [Compatibilidad con tecnología de asistencia](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) para el visor de vídeo o [Compatibilidad con tecnología de asistencia](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) para el visor de imágenes interactivas.
 
 ## Compatibilidad con subtítulos ocultos en [!DNL Dynamic Media] {#closed-caption-support}
 
 Dynamic Media admite la entrega de vídeos y conjuntos de vídeos adaptables con subtítulos. Los subtítulos deben mostrarse sobre el contenido del vídeo.
 
-Ver [vídeo en Dynamic Media: agregar subtítulos para el vídeo](/help/assets/dynamic-media/video.md#adding-captions-to-video).
+Ver [vídeo en Dynamic Media: agregar subtítulos opcionales al vídeo](/help/assets/dynamic-media/video.md#adding-captions-to-video).
 
 
 >[!MORELIKETHIS]

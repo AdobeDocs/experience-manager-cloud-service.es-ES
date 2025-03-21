@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Asset Management,DRM
 role: User, Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1386'
-ht-degree: 6%
+source-wordcount: '1414'
+ht-degree: 7%
 
 ---
 
 # Digital Rights Management para recursos digitales {#digital-rights-management-in-assets}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -97,9 +131,9 @@ La consola [!DNL Assets] puede mostrar varios estados para los recursos. Según 
 
 1. En la interfaz de usuario [!DNL Assets], seleccione un recurso.
 
-1. Seleccione **[!UICONTROL Publish]** en la barra de herramientas. Si no ve la opción [!UICONTROL Publish] en la barra de herramientas, haga clic en **[!UICONTROL Más]** en la barra de herramientas y busque la opción **[!UICONTROL Publish]**.
+1. Seleccione **[!UICONTROL Publicar]** en la barra de herramientas. Si no ve la opción [!UICONTROL Publish] en la barra de herramientas, haga clic en **[!UICONTROL Más]** en la barra de herramientas y busque la opción **[!UICONTROL Publish]**.
 
-1. Elija **[!UICONTROL Publish]** en el menú y, a continuación, cierre el cuadro de diálogo de confirmación.
+1. Elija **[!UICONTROL Publicar]** en el menú y luego cierre el cuadro de diálogo de confirmación.
 
 1. Salga del modo de selección. El estado de publicación del recurso aparece en la parte inferior de la miniatura del recurso en la vista de tarjeta. En la vista de lista, la columna Publicado muestra la hora a la que se publicó el recurso.
 
@@ -121,7 +155,7 @@ La consola [!DNL Assets] puede mostrar varios estados para los recursos. Según 
 
 1. Seleccione `Return` y haga clic en [!DNL Experience Manager].
 
-1. En el panel de búsqueda, haga clic en **[!UICONTROL Estado de Publish]** y seleccione **[!UICONTROL Publicado]** para buscar recursos publicados en [!DNL Assets].
+1. En el panel de búsqueda, haga clic en **[!UICONTROL Estado de publicación]** y seleccione **[!UICONTROL Publicado]** para buscar recursos publicados en [!DNL Assets].
 
 1. Para buscar recursos aprobados o rechazados, seleccione **[!UICONTROL Estado de aprobación]** y seleccione la opción adecuada.
 
@@ -140,11 +174,11 @@ Si la selección contiene varios recursos protegidos, seleccione un recurso a la
 Un activo se considera protegido si se cumple cualquiera de estas condiciones:
 
 * La propiedad de metadatos del recurso `xmpRights:WebStatement` señala a la ruta de acceso de la página que contiene el contrato de licencia del recurso.
-* El valor de la propiedad de metadatos del recurso `adobe_dam:restrictions` es un HTML sin procesar que especifica el acuerdo de licencia.
+* El valor de la propiedad de metadatos del recurso `adobe_dam:restrictions` es una HTML sin procesar que especifica el contrato de licencia.
 
 >[!NOTE]
 >
->La ubicación `/etc/dam/drm/licences` se usó para almacenar licencias en las versiones anteriores de [!DNL Experience Manager]. La ubicación ya no se utiliza. Si crea o modifica páginas de licencias o transfiere las páginas de versiones anteriores de [!DNL Experience Manager], Adobe recomienda almacenar dichos recursos en `/apps/settings/dam/drm/licenses` o `/conf/*/settings/dam/drm/licenses` ubicaciones.
+>La ubicación `/etc/dam/drm/licences` se usó para almacenar licencias en las versiones anteriores de [!DNL Experience Manager]. La ubicación ya no se utiliza. Si crea o modifica páginas de licencias o transfiere las páginas de versiones anteriores de [!DNL Experience Manager], Adobe recomienda almacenar estos recursos en `/apps/settings/dam/drm/licenses` o `/conf/*/settings/dam/drm/licenses` ubicaciones.
 
 ### Descarga de recursos protegidos por DRM {#downloading-drm-assets}
 

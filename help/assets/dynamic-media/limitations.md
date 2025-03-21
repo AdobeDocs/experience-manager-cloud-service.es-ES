@@ -8,25 +8,62 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
-source-git-commit: 973cec704b5e8f34e3b2c448fc10e09226ffa933
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 12%
+source-wordcount: '354'
+ht-degree: 16%
 
 ---
 
 # Limitaciones de Dynamic Media
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
+
 Las secciones siguientes describen las limitaciones de Dynamic Media.
 
 Este tema incluye las siguientes secciones:
 
-* [Prácticas recomendadas y límites impuestos por Dynamic Media en los tipos de recursos](#best-practice-enforced-limits)
+* [Prácticas recomendadas y límites aplicados por Dynamic Media en los tipos de recursos](#best-practice-enforced-limits)
 * [Combinaciones de explorador web y sistema operativo no admitidas para Dynamic Media](#unsupported-browser-os)
 
-## Prácticas recomendadas y límites impuestos por Dynamic Media en los tipos de recursos {#best-practice-enforced-limits}
+## Prácticas recomendadas y límites aplicados por Dynamic Media en los tipos de recursos {#best-practice-enforced-limits}
 
-Al crear un conjunto de giros o de imágenes, o al cargar PDF para la extracción de páginas, Adobe recomienda las siguientes prácticas recomendadas y aplica los límites siguientes:
+Al crear un conjunto de giros o un conjunto de imágenes, o al cargar PDF para la extracción de páginas, Adobe recomienda las siguientes prácticas recomendadas y aplica los límites siguientes:
 
 | Recurso: tipo de límite | Práctica recomendada | Límite impuesto |
 | --- | --- | --- |
@@ -34,7 +71,7 @@ Al crear un conjunto de giros o de imágenes, o al cargar PDF para la extracció
 | **Todos los conjuntos**: número de recursos duplicados por conjunto | No hay duplicados | 20 |
 | **Todos los conjuntos**: número máximo de recursos por conjunto | 5-10 imágenes por conjunto | 1000 |
 | **Conjunto de giros**: número máximo de filas/columnas por conjunto 2D | 12 a 18 imágenes por conjunto | 1000 |
-| **PDF**: número máximo de páginas para que un PDF se considere para la extracción |  | 100 (para todos los PDF) |
+| **PDF**: número máximo de páginas de un PDF que se tendrán en cuenta para la extracción |  | 100 (para todos los PDF) |
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 

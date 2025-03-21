@@ -1,97 +1,132 @@
 ---
-title: Enable Assets Ultimate
-description: Learn how to enable Assets Ultimate for new and existing customers.
+title: Habilitar Assets Ultimate
+description: Obtenga información sobre cómo habilitar Assets Ultimate para clientes nuevos y existentes.
 feature: Asset Management
 role: User, Admin
-source-git-commit: 16ce83409044ad54140754112eb4d35b97883b44
+exl-id: 45cd8ccd-e5cf-42cd-aa7f-4ae59d0587f7
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1420'
-ht-degree: 2%
+source-wordcount: '1448'
+ht-degree: 4%
 
 ---
 
-# [!DNL Assets] {#enable-assets-cloud-service-ultimate}
+# Habilitar [!DNL Assets] as a Cloud Service Ultimate {#enable-assets-cloud-service-ultimate}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación de desarrollador de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
-![](/help/assets/assets/upgrade-assets-cs-ultimate-package-banner.png)
+![Actualizar a Asset Cloud Service Ultimate](/help/assets/assets/upgrade-assets-cs-ultimate-package-banner.png)
 
-Assets as a Cloud Service Ultimate enables you to perform various key DAM capabilities, such as, asset management and library services, security and rights management, Creative and Experience Cloud connections, UI extensibility, API-driven automation, integrations with Adobe and non-Adobe applications, custom code deployment and many more. [](/help/assets/assets-ultimate-overview.md)
+Assets as a Cloud Service Ultimate le permite realizar varias funciones clave de DAM, como administración de recursos y servicios de biblioteca, administración de seguridad y derechos, conexiones de Creative y Experience Cloud, extensibilidad de la interfaz de usuario, automatización impulsada por API, integraciones con aplicaciones de Adobe y que no sean de Adobe, implementación de código personalizado y mucho más. Consulte [Información general sobre Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md) para obtener la lista completa.
 
-## Enable Assets Ultimate {#enable-assets-ultimate}
+## Habilitar Assets Ultimate {#enable-assets-ultimate}
 
-New Assets as a Cloud Service customers must first enable Assets Ultimate by creating a new program using Cloud Manager.
+Los nuevos clientes de Assets as a Cloud Service primero deben habilitar Assets Ultimate creando un nuevo programa con Cloud Manager.
 
 Ejecute los siguientes pasos:
 
-1. As a system administrator, log on to Cloud Manager. Ensure that you select the right organization while logging in.
+1. Inicie sesión en Cloud Manager como administrador del sistema. Asegúrese de seleccionar la organización correcta al iniciar sesión.
 
    >[!NOTE]
    >
-   >Ensure that you are added to the appropriate Cloud Manager product profile to add a new program. [](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)
+   >Asegúrese de que está añadido al perfil de producto de Cloud Manager correspondiente para añadir un nuevo programa. Para obtener más información, consulte [Permisos basados en roles en Cloud Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions).
 
-1. [](/help/journey-onboarding/create-program.md)[](/help/journey-onboarding//create-environments.md)
+1. [Cree un nuevo programa](/help/journey-onboarding/create-program.md) y [agréguele entornos](/help/journey-onboarding//create-environments.md).
 
-   ******** ********[](/help/assets/product-overview.md)
+   Al crear el nuevo programa, en la ficha **[!UICONTROL Soluciones y complementos]**, seleccione **[!UICONTROL Assets Ultimate]**. También puede expandir **[!UICONTROL Assets Ultimate]** y seleccionar **[!UICONTROL Content Hub]** para habilitar [Content Hub](/help/assets/product-overview.md) para la distribución de recursos.
 
-   ![](assets/aem-assets-ultimate-solutions.png)
+   ![AEM Assets Ultimate](assets/aem-assets-ultimate-solutions.png)
 
-1. Haga clic en **[!UICONTROL Crear]** para crear la programa. Assets Ultimate ahora está habilitado para Experience Manager Assets como Cloud Service.
+1. Haga clic en **[!UICONTROL Crear]** para crear el programa. Assets Ultimate ahora está habilitado para Experience Manager Assets as a Cloud Service.
 
-El administrador del sistema tiene derecho automáticamente como administrador de AEM en Assets Ultimate y recibe un correo electrónico para navegar a Admin Console para administrar los perfiles de productos disponibles.
+El administrador del sistema tiene automáticamente derecho como administrador de AEM en Assets Ultimate y recibe un correo electrónico para navegar a Admin Console y administrar los perfiles de producto disponibles.
 
-Su AEM como Cloud Service instancia en Admin Console comprende los siguientes perfiles de producto:
+La instancia de AEM as a Cloud Service en Admin Console consta de los siguientes perfiles de producto:
 
-* AEM Administradores de
+* Administradores de AEM
 
 * Usuarios de AEM 
 
-* [Recursos AEM usuarios colaboradores](#onboard-collaborator-users)
+* [Usuarios colaboradores de AEM Assets](#onboard-collaborator-users)
 
-* [Usuarios avanzados de Recursos AEM](#onboard-power-users)
+* [Usuarios avanzados de AEM Assets](#onboard-power-users)
 
-  ![Recursos AEM perfiles de producto](assets/aem-assets-product-profiles.png)
+  ![Perfiles de producto para AEM Assets](assets/aem-assets-product-profiles.png)
 
-Si ha habilitado el Centro de contenido para Assets como Cloud Service, hay una nueva instancia creada dentro de Recursos AEM como un Cloud Service en Admin Console con `delivery` como sufijo:
+Si ha habilitado Content Hub para Assets as a Cloud Service, hay una nueva instancia creada dentro de AEM Assets as a Cloud Service en Admin Console con `delivery` como sufijo:
 
-![Nuevo instancia para el Centro de contenido](assets/new-instance-content-hub.png)
+![Nueva instancia para Content Hub](assets/new-instance-content-hub.png)
 
 >[!NOTE]
 >
->Si ha aprovisionado el Centro de contenido antes del 14 de agosto de 2024, la nueva instancia se crea `contenthub` con el sufijo.
+>Si ha aprovisionado Content Hub antes del 14 de agosto de 2024, la nueva instancia se creará con `contenthub` como sufijo.
 
 Tenga en cuenta que no hay `author` ni `publish` en el nombre de instancia de Content Hub.
 
 Haga clic en el nombre de la instancia para ver el perfil de producto de Content Hub `AEM Assets Limited Users`.
 
-![](assets/content-hub-product-profile.png)
+![Perfil de producto de Content Hub](assets/content-hub-product-profile.png)
 
-You can start adding users or user groups to this product profile to provide them access to Content Hub.
+Puede empezar a añadir usuarios o grupos de usuarios a este perfil de producto para proporcionarles acceso a Content Hub.
 
 >[!NOTE]
 >
->`contenthub``Limited Users``delivery`
+>Si ha aprovisionado Content Hub antes del 14 de agosto de 2024, el perfil de producto de Content Hub tiene `contenthub` mencionado después de `Limited Users` en lugar de `delivery`.
 
 ## Habilitar Assets Ultimate para clientes existentes {#enable-assets-ultimate-existing-customers}
 
-Los clientes existentes de Assets as a Cloud Service pueden actualizar a Assets Ultimate ejecutando dos sencillos pasos. Puede navegar al programa as a Cloud Service de Assets en Cloud Manager y ver el estado de actualización en la tarjeta de programa en función de la disponibilidad de los créditos de Assets Ultimate. Si hay suficientes créditos disponibles para actualizar a Assets Ultimate, puede ver el estado como `Assets license upgrade required`, como se muestra en la siguiente imagen:
+Los clientes existentes de Assets as a Cloud Service pueden actualizar a Assets Ultimate ejecutando dos sencillos pasos. Puede navegar al programa Assets as a Cloud Service en Cloud Manager y ver el estado de actualización en la tarjeta de programa en función de la disponibilidad de los créditos de Assets Ultimate. Si hay suficientes créditos disponibles para actualizar a Assets Ultimate, puede ver el estado como `Assets license upgrade required`, como se muestra en la siguiente imagen:
 
-![Actualización de AEM Assets a Assets Ultimate](assets/aem-assets-upgrade-status-ultimate.png)
+![AEM Assets actualizan a Assets Ultimate](assets/aem-assets-upgrade-status-ultimate.png)
 
 Si un cliente existente compra una nueva licencia para Assets Ultimate, el estado de actualización se muestra como `Assets license upgrade available`.
 
 ### Requisitos previos para la actualización {#prerequisites-assets-upgrade}
 
-`2024.10.18175` If you do not meet the minimum requirements, contact your Adobe representative to switch to the required AEM release version.
+Todos los entornos deben actualizarse a la última versión de AEM as a Cloud Service o a un mínimo de `2024.10.18175`. Si no cumple los requisitos mínimos, póngase en contacto con su representante de Adobe para cambiar a la versión de AEM requerida.
 
 ### Actualizar a Assets Ultimate {#upgrade-assets-ultimate}
 
 Ejecute los siguientes pasos:
 
-1. After switching to the minimum requirements for the AEM release version, click the program name. ****
+1. Después de cambiar a los requisitos mínimos de la versión de AEM, haga clic en el nombre del programa. Se muestra una tarjeta de actualización justo encima de la sección **[!UICONTROL Entornos]**, como se muestra en la siguiente imagen:
 
-   ![](assets/aem-assets-upgrade-card.png)
+   ![AEM Assets actualizan a Assets Ultimate](assets/aem-assets-upgrade-card.png)
 
 1. Haga clic en **[!UICONTROL Agregar perfiles de producto]**. Cloud Manager muestra las opciones para agregar nuevos perfiles de producto a todos los entornos disponibles en el programa o en entornos individuales.
 
@@ -99,11 +134,11 @@ Ejecute los siguientes pasos:
 
 1. Haga clic en **[!UICONTROL Todos los entornos]** para agregar los nuevos perfiles de producto a todos los entornos del programa o en **[!UICONTROL Entornos individuales]** para agregar los nuevos perfiles de producto a los entornos seleccionados.
 
-   ****
+   Al hacer clic en **[!UICONTROL Entornos individuales]**, se muestra la lista de todos los entornos disponibles en el programa.
 
 1. Haga clic en el icono de Más opciones correspondiente a un entorno y seleccione **[!UICONTROL Agregar perfiles de producto]** para agregar los nuevos perfiles de producto al entorno seleccionado.
 
-   ![AEM Assets selecciona entornos individuales](assets/aem-assets-individual-environments.png)
+   ![Los AEM Assets seleccionan entornos individuales](assets/aem-assets-individual-environments.png)
 
    También puede agregar perfiles de producto a entornos seleccionados si navega hasta la sección **[!UICONTROL Entornos]**, hace clic en el icono Más opciones correspondiente a un entorno y selecciona **[!UICONTROL Agregar perfiles de producto]**.
 
@@ -111,95 +146,95 @@ Ejecute los siguientes pasos:
 
    Debe agregar perfiles de producto a todos los entornos disponibles en el programa, individualmente o en todos los entornos juntos, antes de ejecutar el siguiente paso.
 
-1. Haga clic en **[!UICONTROL Actualizar]**. ****
+1. Haga clic en **[!UICONTROL Actualizar]**. La opción **[!UICONTROL Actualizar]** solo se muestra cuando agrega perfiles de producto a todos los entornos disponibles.
 
-   ![](assets/aem-assets-upgrade-button.png)
+   ![Último paso en el proceso de actualización](assets/aem-assets-upgrade-button.png)
 
-   The upgrade process is complete and you have successfully upgraded your Assets as a Cloud Service to Assets Ultimate. `Assets Ultimate`
+   El proceso de actualización ha finalizado y ha actualizado correctamente su Assets as a Cloud Service a Assets Ultimate. El estado del programa muestra `Assets Ultimate`.
 
-   ![](assets/program-status-post-upgrade.png)
+   ![Estado del programa después de la actualización](assets/program-status-post-upgrade.png)
 
-Your AEM as a Cloud Service instance on Admin Console now comprises the following product profiles:
+La instancia de AEM as a Cloud Service en Admin Console ahora incluye los siguientes perfiles de producto:
 
-* AEM Administrators
+* Administradores de AEM
 
 * Usuarios de AEM 
 
-* [AEM Assets Collaborator Users](#onboard-collaborator-users)
+* [Usuarios colaboradores de AEM Assets](#onboard-collaborator-users)
 
-* [AEM Assets Power Users](#onboard-power-users)
+* [Usuarios avanzados de AEM Assets](#onboard-power-users)
 
-![](assets/aem-assets-product-profiles.png)
+![Perfiles de producto para AEM Assets](assets/aem-assets-product-profiles.png)
 
-**** ******** This step enables the Content Hub for Assets Ultimate. `delivery`
+Si necesita habilitar Content Hub, haga clic en el botón Más opciones (...) del nombre del programa en Cloud Manager y seleccione **[!UICONTROL Editar programa]**. Expanda **[!UICONTROL Assets Ultimate]** y haga clic en **[!UICONTROL Content Hub]**. Este paso habilita Content Hub para Assets Ultimate. Se ha creado una nueva instancia en AEM Assets as a Cloud Service en Admin Console con `delivery` como sufijo:
 
-![](assets/new-instance-content-hub.png)
-
->[!NOTE]
->
->`contenthub`
-
-`author``publish`
-
-`AEM Assets Limited Users`
-
-![](assets/content-hub-product-profile.png)
-
-You can start adding users or user groups to this product profile to provide them access to Content Hub.
+![Nueva instancia para Content Hub](assets/new-instance-content-hub.png)
 
 >[!NOTE]
 >
->`contenthub``Limited Users``delivery`
+>Si ha aprovisionado Content Hub antes del 14 de agosto de 2024, la nueva instancia se creará con `contenthub` como sufijo.
 
-## Onboard AEM Assets Collaborator users {#onboard-collaborator-users}
+Tenga en cuenta que no hay `author` ni `publish` en el nombre de instancia de Content Hub.
 
-AEM Assets Collaborator users can work with assets from Experience manager via integrations of Assets available to your organization in other Adobe products and non-Adobe applications, create and edit assets using built-in Adobe Express and Firefly leveraging professionally designed templates, brand kits, Adobe Stock assets, and so on, and access and leverage approved assets from your organization using AEM Assets Content Hub portal.
+Haga clic en el nombre de la instancia para ver el perfil de producto de Content Hub `AEM Assets Limited Users`.
 
-Para incorporar usuarios colaboradores:
+![Perfil de producto de Content Hub](assets/content-hub-product-profile.png)
 
-1. Para acceder a Experience Manager Assets perfiles de producto, haga clic en la AEM como nombre de producto Cloud Service en la lista de productos en Admin Console.
+Puede empezar a añadir usuarios o grupos de usuarios a este perfil de producto para proporcionarles acceso a Content Hub.
 
-1. Haga clic en la instancia de autor de producción para AEM como Cloud Service:
-   ![Perfiles de producto para AEM como Cloud Service](assets/aem-cloud-service-instances.png)
+>[!NOTE]
+>
+>Si ha aprovisionado Content Hub antes del 14 de agosto de 2024, el perfil de producto de Content Hub tiene `contenthub` mencionado después de `Limited Users` en lugar de `delivery`.
+
+## Incorporación de usuarios de AEM Assets Collaborator {#onboard-collaborator-users}
+
+AEM Assets Los usuarios de Collaborator pueden trabajar con recursos de Experience Manager mediante integraciones de Assets disponibles para su organización en otros productos de Adobe y aplicaciones que no sean de Adobe, crear y editar recursos mediante Adobe Express y Firefly integrados aprovechando las plantillas, los kits de marca, los recursos de Adobe Stock, etc. de diseño profesional, y acceder a los recursos aprobados de su organización y aprovecharlos mediante el portal de AEM Assets Content Hub.
+
+Para incorporar usuarios de Collaborator:
+
+1. Para acceder a los perfiles de producto de Experience Manager Assets, haga clic en el nombre del producto de AEM as a Cloud Service en la lista de productos en Admin Console.
+
+1. Haga clic en la instancia de autor de producción para AEM as a Cloud Service:
+   ![Perfiles de producto para AEM as a Cloud Service](assets/aem-cloud-service-instances.png)
 
 1. Haga clic en el perfil de producto Usuarios de Collaborators y luego en **[!UICONTROL Agregar usuarios]** para agregar usuarios o grupos de usuarios al perfil de producto.
    ![Perfil de producto de usuario](assets/aem-assets-collaborator-user-permissions.png)
 
 1. Haga clic en **[!UICONTROL Guardar]** para guardar los cambios.
 
-También puede acceder y vista los servicios asignados a los usuarios colaboradores, como se muestra en la siguiente imagen:
+También puede acceder y ver los servicios asignados a los usuarios de Collaborator, como se muestra en la siguiente imagen:
 
-![Servicios para usuarios colaboradores](assets/aem-assets-collaborator-users.png)
+![Servicios para usuarios de Collaborator](assets/aem-assets-collaborator-users.png)
 
-`Adobe Express` y `AEM Assets Collaborator Users` los servicios están habilitados de forma predeterminada.
+Los servicios `Adobe Express` y `AEM Assets Collaborator Users` están habilitados de manera predeterminada.
 
 >[!NOTE]
 >
->Puede desactivar y activar para habilitar o deshabilitar los servicios disponibles, según sus requisitos, sin embargo, Adobe Systems recomienda utilizar los servicios predeterminados habilitados para los perfiles de producto.
+>Puede desactivar y activar la opción para habilitar o deshabilitar los servicios disponibles, según sus necesidades; sin embargo, Adobe recomienda utilizar los servicios predeterminados habilitados para los perfiles de producto.
 
 
-## Incorporación de usuarios avanzados de AEM Assets {#onboard-power-users}
+## AEM Assets integrados Usuarios avanzados {#onboard-power-users}
 
-Los usuarios avanzados de AEM Assets pueden acceder a todas las funciones de AEM Assets, incluida la administración de recursos, permisos, metadatos y al control y la automatización generales de los recursos digitales, trabajar con recursos de Experience Manager mediante integraciones de Assets disponibles para su organización en otras aplicaciones de Adobe y que no sean de Adobe, crear y editar recursos con Adobe Express y Firefly integrados aprovechando las plantillas diseñadas profesionalmente, los kits de marca, los recursos de Adobe Stock, etc., y acceder y aprovechar los recursos aprobados de su organización mediante AEM Assets Content Hub Portal.
+AEM Assets Los usuarios avanzados pueden acceder a todas las funciones de los AEM Assets, incluida la administración de recursos, permisos, metadatos, y al control y la automatización generales de los recursos digitales, trabajar con recursos de Experience Manager mediante integraciones de Assets disponibles para su organización en otras aplicaciones de Adobe y que no sean de Adobe, crear y editar recursos mediante Adobe Express y Firefly integrados que aprovechan las plantillas de diseño profesional, los kits de marca, los recursos de Adobe Stock, etc., y acceder a los recursos aprobados de su organización y aprovecharlos mediante el portal de AEM Assets de Content Hub.
 
-To onboard Power users:
+Para incorporar usuarios avanzados:
 
-1. Access Experience Manager Assets product profiles by clicking the AEM as a Cloud Service product name in the list of products on Admin Console.
+1. Para acceder a los perfiles de producto de Experience Manager Assets, haga clic en el nombre del producto de AEM as a Cloud Service en la lista de productos en Admin Console.
 
-1. Click the production author instance for AEM as a Cloud Service:
-   ![](assets/aem-cloud-service-instances.png)
+1. Haga clic en la instancia de autor de producción para AEM as a Cloud Service:
+   ![Perfiles de producto para AEM as a Cloud Service](assets/aem-cloud-service-instances.png)
 
 1. Haga clic en el perfil de producto Usuarios avanzados y haga clic en **[!UICONTROL Agregar usuarios]** para agregar usuarios o grupos de usuarios al perfil de producto.
-   ![perfil del producto del usuario](assets/aem-assets-power-user-permissions.png)
+   ![Perfil de producto de usuario](assets/aem-assets-power-user-permissions.png)
 
 1. Haga clic en **[!UICONTROL Guardar]** para guardar los cambios.
 
-También puede acceder y vista los servicios asignados a los usuarios avanzados, como se muestra en la siguiente imagen:
+También puede acceder y ver los servicios asignados a usuarios avanzados, como se muestra en la siguiente imagen:
 
 ![Servicios para usuarios avanzados](assets/aem-assets-power-users.png)
 
-`Adobe Express` y `AEM Assets Power Users` los servicios están habilitados de forma predeterminada.
+Los servicios `Adobe Express` y `AEM Assets Power Users` están habilitados de manera predeterminada.
 
 >[!NOTE]
 >
->Puede desactivar y activar para habilitar o deshabilitar los servicios disponibles, según sus requisitos, sin embargo, Adobe Systems recomienda utilizar los servicios predeterminados habilitados para los perfiles de producto.
+>Puede desactivar y activar la opción para habilitar o deshabilitar los servicios disponibles, según sus necesidades; sin embargo, Adobe recomienda utilizar los servicios predeterminados habilitados para los perfiles de producto.

@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 6a03eb1a4ac8284299c1ffcf27d6a6c8a8b9abc4
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '1019'
 ht-degree: 10%
 
 ---
 
 # Informes de recurso {#asset-reports}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación de desarrollador de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -69,7 +103,7 @@ Los administradores de [!DNL Adobe Experience Manager] pueden generar y personal
 
    >[!NOTE]
    >
-   >AEM Asignarse a un **perfil de producto del administrador** para crear un informe de **Descarga**. AEM AEM Consulte [Asignación de perfiles de producto de](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) para obtener acceso a un perfil de producto de administrador de recursos de la aplicación de correo electrónico de la aplicación de correo electrónico.
+   >Asigne un título a un **perfil de producto del administrador de AEM** para crear un informe de **Descargar**. Consulte [Asignación de perfiles de producto de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) para obtener un perfil de producto de administrador de AEM.
 
    ![Seleccionar tipo de informe](assets/choose_report.png)
 
@@ -121,7 +155,7 @@ Los administradores de [!DNL Adobe Experience Manager] pueden generar y personal
 
    >[!NOTE]
    >
-   >Puede generar informes basados en los eventos generados durante los últimos 360 días. El Experience Manager conserva los datos del ID de usuario durante 30 días.
+   >Puede generar informes basados en los eventos generados durante los últimos 360 días. Experience Manager conserva los datos del ID de usuario durante 30 días.
 
 ## Añadir columnas personalizadas a informes {#add-custom-columns}
 

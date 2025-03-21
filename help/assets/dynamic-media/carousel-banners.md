@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Carousel Banners
 role: User
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '4492'
+source-wordcount: '4538'
 ht-degree: 1%
 
 ---
 
 # Banner de carrusel{#carousel-banners}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Los titulares de carrusel permiten a los especialistas en marketing impulsar la conversión creando fácilmente contenido promocional giratorio interactivo y entregándolo en cualquier pantalla.
 
@@ -79,9 +116,9 @@ Para ponerse en marcha rápidamente:
 
    Consulte [ (Opcional) Banners de carrusel de vista previa](#optional-previewing-carousel-banners) - Opcional. Si lo desea, puede ver una representación del conjunto de carrusel y probar su interactividad.
 
-1. [Banners de carrusel de Publish](#publishing-carousel-banners).
+1. [Publicar titulares de carrusel](#publishing-carousel-banners).
 
-   Publica un conjunto de carrusel como lo haría con cualquier recurso. En Assets, vaya al conjunto de carrusel, selecciónelo y seleccione **[!UICONTROL Publish]**. La publicación de un conjunto de carrusel activa la URL y la cadena de incrustación.
+   Publica un conjunto de carrusel como lo haría con cualquier recurso. En Assets, vaya al conjunto de carrusel, selecciónelo y seleccione **[!UICONTROL Publicar]**. La publicación de un conjunto de carrusel activa la URL y la cadena de incrustación.
 
 1. Realice una de las siguientes acciones:
 
@@ -89,7 +126,7 @@ Para ponerse en marcha rápidamente:
 
       * [Integrar el titular del carrusel con una vista rápida existente](#integrating-the-carousel-banner-with-an-existing-quickview). Si utiliza un sistema de administración de contenido web de terceros, debe integrar el nuevo banner de carrusel con la implementación de vista rápida existente en el sitio web.
 
-   * [Agregue un banner de carrusel al sitio web en Experience Manager](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md). Si es cliente de Experience Manager Sites, puede agregar el conjunto de carrusel directamente a la página mediante el componente de medios interactivos.
+   * [Agregue un banner de carrusel a su sitio web en Experience Manager](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md). Si es cliente de Experience Manager Sites, puede agregar el conjunto de carrusel directamente a la página mediante el componente de medios interactivos.
 
 Si necesita editar los conjuntos de carrusel, consulte [Editar conjuntos de carrusel](#editing-carousel-sets). Además, puede ver y editar [propiedades del conjunto de carrusel](/help/assets/manage-digital-assets.md#editing-properties).
 
@@ -181,7 +218,7 @@ Considere los siguientes ejemplos de direcciones URL de vista rápida y las vari
 
 ## Cargar titulares de imagen {#uploading-image-banners}
 
-Si ya has subido las imágenes que quieres usar, avanza al siguiente paso: [Crear conjuntos de carrusel](#creating-carousel-sets). Las imágenes utilizadas en el carrusel deben cargarse una vez habilitado Dynamic Media.
+Si ya has subido las imágenes que quieres usar, avanza al siguiente paso: [Crear conjuntos de carrusel](#creating-carousel-sets). Las imágenes utilizadas en el carrusel deben cargarse después de habilitar Dynamic Media.
 
 Para cargar titulares de imagen, consulte [Cargar recursos](/help/assets/manage-digital-assets.md).
 
@@ -328,9 +365,9 @@ Ver [Fragmentos de experiencias](/help/sites-cloud/authoring/fragments/content-f
    También puede obtener una vista previa del aspecto del titular del carrusel. Consulte [ (Opcional) Vista previa de titulares de carrusel](#optional-previewing-carousel-banners).
 
 1. Seleccione **[!UICONTROL Guardar]**.
-1. Publish el conjunto de carrusel. Al publicar, se crea el código incrustado o la dirección URL que puede utilizar en la página del sitio web. Si es cliente de Experience Manager Sites, agregue el conjunto de carrusel directamente a la página web.
+1. Publique el conjunto de carrusel. Al publicar, se crea el código incrustado o la dirección URL que puede utilizar en la página del sitio web. Si es cliente de Experience Manager Sites, agregue el conjunto de carrusel directamente a la página web.
 
-   Consulte [recursos de Publish](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+   Consulte [Publicar recursos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
    Ver [Agregar un conjunto de carrusel a la página de aterrizaje del sitio web](#adding-a-carousel-banner-to-your-website-page)
 
@@ -402,9 +439,9 @@ Puede obtener una vista previa de los titulares de carrusel desde el Editor de c
 1. En la lista **[!UICONTROL Visualizadores]** del panel de la izquierda de la página, seleccione el nombre del ajuste preestablecido del visualizador de banners de carrusel que desee utilizar.
 1. Para probar las acciones asociadas, seleccione las zonas interactivas o los mapas de imagen de la imagen.
 
-## Titulares del carrusel de Publish {#publishing-carousel-banners}
+## Publicar titulares de carrusel {#publishing-carousel-banners}
 
-Para utilizar el carrusel, debe publicarlo. La publicación de un conjunto de carrusel activa la URL y el código de incrustación. También publica el carrusel en la nube de Dynamic Media, que está integrado con una CDN para una entrega escalable y con rendimiento.
+Para utilizar el carrusel, debe publicarlo. La publicación de un conjunto de carrusel activa la URL y el código de incrustación. También publica el carrusel en la nube de Dynamic Media, que está integrada con una CDN para una entrega escalable y con rendimiento.
 
 >[!NOTE]
 >
@@ -412,7 +449,7 @@ Para utilizar el carrusel, debe publicarlo. La publicación de un conjunto de ca
 >
 >Además, si modifica una imagen interactiva publicada preexistente que utiliza en un titular de carrusel, publique la imagen interactiva para que esos cambios se reflejen en el titular del carrusel.
 
-Consulte [Publish Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obtener información sobre cómo publicar titulares de carrusel.
+Consulte [Publicar Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obtener información sobre cómo publicar titulares de carrusel.
 
 ## Añadir un titular de carrusel a la página del sitio web {#adding-a-carousel-banner-to-your-website-page}
 
@@ -444,7 +481,7 @@ La implementación de Quickview existente normalmente representa una cadena de a
 1. La lógica back-end devuelve los datos de vista rápida o el contenido correspondientes al código front-end.
 1. El código front-end carga los datos de vista rápida o el contenido.
 1. De forma opcional, el código front-end convierte los datos de vista rápida cargados en una representación de HTML.
-1. El código front-end muestra un cuadro de diálogo o panel modal y procesa el contenido del HTML en la pantalla para el usuario.
+1. El código front-end muestra un cuadro de diálogo o panel modal y procesa el contenido de HTML en la pantalla para el usuario.
 
 Estas llamadas no representan llamadas de API públicas independientes a las que la lógica de página web puede llamar desde un paso arbitrario. En su lugar, es una llamada encadenada en la que cada paso siguiente se oculta en la última fase (llamada de retorno) del paso anterior.
 

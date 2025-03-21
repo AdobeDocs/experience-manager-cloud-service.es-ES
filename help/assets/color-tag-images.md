@@ -4,21 +4,55 @@ description: Adobe Experience Manager Assets permite distinguir entre colores en
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 feature: Smart Imaging, Interactive Images, Asset Management
 role: User, Admin
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 7%
+source-wordcount: '1290'
+ht-degree: 8%
 
 ---
 
 # Etiquetas de color para imágenes {#color-tag-images}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 ![Banner De Etiquetado De Color](assets/banner-image.png)
 
-Adobe Experience Manager AEM () Assets utiliza las capacidades de IA de Adobe Sensei para distinguir entre colores en una imagen y aplicarlos como etiquetas automáticamente al ingerirlos. Estas etiquetas permiten una experiencia de búsqueda mejorada, basada en la composición de color de la imagen.
+Adobe Experience Manager (AEM) Assets utiliza las funcionalidades de IA de Adobe Sensei para distinguir entre colores en una imagen y aplicarlos como etiquetas automáticamente al ingerirlos. Estas etiquetas permiten una experiencia de búsqueda mejorada, basada en la composición de color de la imagen.
 
 Puede configurar el número de colores, dentro de un rango de uno a 40, que están etiquetados en una imagen para que pueda buscar imágenes basadas en esos colores más adelante. Experience Manager Assets aplica las etiquetas en función de la cobertura de color de una imagen. También puede configurar el formato de visualización de una etiqueta de color.
 
@@ -45,7 +79,7 @@ Para administrar las propiedades de etiquetado de color de las imágenes:
 
    ![Propiedades de etiquetado de color](assets/color-tag-settings.png)
 
-1. Especifique un formato de visualización para la etiqueta de color en el campo **[!UICONTROL Formato de visualización]**. Las opciones posibles incluyen el nombre del color, el RGB o el formato HEX.
+1. Especifique un formato de visualización para la etiqueta de color en el campo **[!UICONTROL Formato de visualización]**. Las opciones posibles incluyen el nombre del color, el formato RGB o HEX.
 
 1. Especifique el número de colores que desea etiquetar para las imágenes en el campo **[!UICONTROL Limit]**. Estos colores se muestran al ver las propiedades de una imagen. Puede definir un número entre uno y 40 en este campo. El valor predeterminado de este campo es diez colores.
 
@@ -55,7 +89,7 @@ Para administrar las propiedades de etiquetado de color de las imágenes:
 
    >[!NOTE]
    >
-   >El Adobe recomienda utilizar un valor cercano al valor predeterminado en este campo. Si establece un valor de número alto para este campo (por ejemplo, mayor que 25), es posible que se devuelvan pocos resultados de búsqueda. Del mismo modo, si establece un valor de número bajo (por ejemplo, menos de 6), puede que se devuelvan demasiados resultados de búsqueda, lo que puede no ser útil.
+   >Adobe recomienda utilizar un valor cercano al valor predeterminado en este campo. Si establece un valor de número alto para este campo (por ejemplo, mayor que 25), es posible que se devuelvan pocos resultados de búsqueda. Del mismo modo, si establece un valor de número bajo (por ejemplo, menos de 6), puede que se devuelvan demasiados resultados de búsqueda, lo que puede no ser útil.
 
 1. Haga clic en **[!UICONTROL Guardar]**.
 
@@ -146,7 +180,7 @@ Puede configurar un filtro de búsqueda para imágenes. A continuación, puede b
 
 >[!NOTE]
 >
->Configure el predicado de color de AEM Assets solo si no está utilizando el formulario de búsqueda predeterminado.
+>Configure el predicado de color AEM Assets solo si no está utilizando el formulario de búsqueda predeterminado.
 
 Para configurar el filtro de búsqueda, cree un predicado de color de recurso con el carril de Assets Admin Search.
 
@@ -177,7 +211,7 @@ Para buscar imágenes basadas en colores:
 1. Seleccione **[!UICONTROL Filter]** de la lista desplegable.
    ![Filtrar Assets](assets/filter-assets.png)
 
-1. Seleccione el [predicado de color de AEM Assets](#configure-search-predicate).
+1. Seleccione el predicado de color [AEM Assets](#configure-search-predicate).
 
 1. Arrastre el selector de color para seleccionar el color adecuado. El color seleccionado se muestra en el campo de solo lectura disponible debajo del selector de color. Puede seleccionar RGB o HEX como formato de visualización para el color.
 

@@ -8,18 +8,55 @@ content-type: reference
 feature: 3D Assets
 role: User
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '2252'
-ht-degree: 2%
+source-wordcount: '2298'
+ht-degree: 3%
 
 ---
 
 # Uso de recursos 3D en Dynamic Media {#working-with-three-d-assets-dm}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
+
 Dynamic Media le permite cargar, gestionar, ver y distribuir recursos 3D como experiencias envolventes.
 
-* Publicación en un solo clic (con **[!UICONTROL Quick Publish]** en la barra de herramientas) de recursos 3D para generar una dirección URL.
+* Publicación en un solo clic (con **[!UICONTROL Publicación rápida]** en la barra de herramientas) de recursos 3D para generar una dirección URL.
 * Compatibilidad optimizada para ver recursos 3D con el ajuste preestablecido de visualizador dimensional interactivo de alta calidad con tecnología Adobe Dimension.
 * El componente 3D Media WCM permite agregar fácilmente recursos 3D a las páginas de [!DNL Adobe Experience Manager Sites].
 
@@ -48,9 +85,9 @@ El componente WCM de medios en 3D y la vista previa 3D de la página de detalles
 
 La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para ayudarle a ponerse en marcha rápidamente con los recursos 3D en Dynamic Media.
 
-Antes de trabajar con recursos 3D en Dynamic Media, asegúrese de que su administrador de [!DNL Experience Manager] ya haya habilitado y configurado los Cloud Service de Dynamic Media.
+Antes de trabajar con recursos 3D en Dynamic Media, asegúrese de que su administrador de [!DNL Experience Manager] ya haya habilitado y configurado los servicios en la nube de Dynamic Media.
 
-Consulte [Configuración de Cloud Service de Dynamic Media](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+Consulte [Configurar servicios de nube de Dynamic Media](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
 1. **Cargar recursos 3D**
 
@@ -74,9 +111,9 @@ Consulte [Configuración de Cloud Service de Dynamic Media](/help/assets/dynamic
       * [Administración de metadatos para recursos digitales](/help/assets/manage-digital-assets.md#editing-properties)
       * [Esquemas de metadatos](/help/assets/metadata-schemas.md)
 
-1. **Recursos de Publish 3D**
+1. **Publicar recursos 3D**
 
-   * [Publish static Dynamic Media 3D assets](#publishing-three-d-assets)
+   * [Publicación de recursos estáticos de Dynamic Media 3D](#publishing-three-d-assets)
    * [Métodos alternativos para publicar recursos de Dynamic Media 3D mediante el visualizador dimensional](#alternate-publish-methods)
 
 ## Visualización e interacción con recursos 3D {#viewing-three-d-assets}
@@ -159,7 +196,7 @@ Un recurso 3D completamente interactivo tal como se muestra en el modo **[!UICON
 
 ## Acerca del trabajo con el componente de medios en 3D {#working-with-three-d-media-component}
 
-Dynamic Media incluye un componente multimedia de Dynamic Media 3D que puede usar en [!DNL Experience Manager Sites] para habilitar la visualización interactiva de modelos 3D en sus páginas web.
+Dynamic Media incluye un componente Dynamic Media 3D Media que puede usar en [!DNL Experience Manager Sites] para habilitar la visualización interactiva de modelos 3D en sus páginas web.
 
 * [Añadir el componente Medios 3D a la plantilla de página](#adding-three-d-media-component-to-page-template)
 * [Adición del componente Medios 3D a una página web](#adding-the-three-d-media-component-to-a-web-page)
@@ -177,7 +214,7 @@ Dynamic Media incluye un componente multimedia de Dynamic Media 3D que puede usa
 
 1. Para seleccionar un área vacía y abrir su barra de herramientas asociada, seleccione el área vacía en la región **[!UICONTROL Contenedor de diseño]**.
 1. En la barra de herramientas, seleccione el icono **[!UICONTROL Directiva]** para abrir el **[!UICONTROL Editor de directivas]**.
-1. En la sección **[!UICONTROL Propiedades]**, en la ficha **[!UICONTROL Componentes permitidos]**, desplácese hasta **[!UICONTROL Dynamic Media]**, expanda la lista y verifique **[!UICONTROL Medios en 3D]**.
+1. En la sección **[!UICONTROL Propiedades]**, en la ficha **[!UICONTROL Componentes permitidos]**, desplácese hasta **[!UICONTROL Dynamic Media]**, expanda la lista y verifique **[!UICONTROL 3D Media]**.
 1. Seleccione **[!UICONTROL Listo]** para guardar los cambios y cerrar el **[!UICONTROL Editor de directivas]**.
 
    Ahora puede colocar el componente Dynamic Media 3D Media en todas las páginas que utilicen esta plantilla.
@@ -188,7 +225,7 @@ Si utiliza [!DNL Experience Manager] como sistema de administración de contenid
 
 Consulte también [Agregar recursos de Dynamic Media a las páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
-1. Abra [!DNL Experience Manager Sites] y seleccione la página web a la que desee agregar el componente multimedia de Dynamic Media 3D.
+1. Abra [!DNL Experience Manager Sites] y seleccione la página web a la que desea agregar el componente Dynamic Media 3D Media.
 1. Para abrir la página en el editor de páginas, seleccione el icono **[!UICONTROL Editar]** (lápiz). Asegúrese de que el modo **[!UICONTROL Editar]** esté seleccionado cerca de la parte superior derecha de la página.
 
    ![3d-media-component-add](/help/assets/dynamic-media/assets/3d-media-component-edita.png)
@@ -235,9 +272,9 @@ Consulte [Agregar el componente multimedia 3D a una página web](#adding-the-thr
 >
 >Mientras una página web se encuentra en el modo [!DNL Experience Manager Sites] **[!UICONTROL Editar]**, el componente multimedia 3D muestra el recurso 3D, pero no es posible interactuar con él. Para que el recurso sea interactivo, puede usar la característica **[!UICONTROL Vista previa]** para ver la página web en el editor de páginas con acceso completo a la funcionalidad del componente de medios en 3D.
 
-## Publish static Dynamic Media 3D assets {#publishing-three-d-assets}
+## Publicación de recursos estáticos de Dynamic Media 3D {#publishing-three-d-assets}
 
-Dynamic Media acepta varios formatos de archivo 3D compatibles con *contenido estático* en Dynamic Media. Contenido estático significa que puede cargar y publicar recursos 3D, pero no hay compatibilidad con imágenes *dinámicas* o ajustes de imagen asociados con el recurso 3D. El motivo es que Dynamic Media Imaging Server no reconoce formatos 3D. De este modo, después de publicar un recurso 3D en Dynamic Media, tiene una URL instantánea que puede copiar. La dirección URL del recurso 3D sigue la estructura URL habitual de Dynamic Media. Sin embargo, no se puede editar ningún parámetro en la dirección URL del recurso, a diferencia de los recursos de imagen tradicionales de Dynamic Media.
+Dynamic Media acepta varios formatos de archivo 3D compatibles como *contenido estático* en Dynamic Media. Contenido estático significa que puede cargar y publicar recursos 3D, pero no hay compatibilidad con imágenes *dinámicas* o ajustes de imagen asociados con el recurso 3D. El motivo es que Dynamic Media Imaging Server no reconoce formatos 3D. De este modo, después de publicar un recurso 3D en Dynamic Media, tiene una URL instantánea que puede copiar. La dirección URL del recurso 3D sigue la estructura habitual de direcciones URL de Dynamic Media. Sin embargo, no puede editar ningún parámetro en la dirección URL del recurso, a diferencia de los recursos de imagen tradicionales de Dynamic Media.
 
 Consulte también [Obtener una dirección URL para un recurso estático](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset).
 
@@ -245,14 +282,14 @@ En la **[!UICONTROL vista de tarjeta]**, aparece un pequeño icono de globo terr
 
 Si utiliza [!DNL Experience Manager] como WCM, utilice este método de publicación para agregar los recursos de Dynamic Media 3D directamente en la página web.
 
-Consulte también [recursos de Publish Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Consulte también [Publicar recursos de Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-Ver también [páginas de Publish](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
+Consulte también [Publicar páginas](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
 
 **Para publicar recursos estáticos de Dynamic Media 3D:**
 
 1. Abra un recurso 3D (formato de archivo GLB, OBJ o STL).
-1. En la página Detalles, en la barra de herramientas, seleccione **[!UICONTROL Quick Publish]**.
+1. En la página Detalles, en la barra de herramientas, seleccione **[!UICONTROL Publicación rápida]**.
 
    ![publicación rápida de recursos en 3d](/help/assets/dynamic-media/assets/3d-asset-quick-publisha.png)
 
@@ -263,7 +300,7 @@ Ver también [páginas de Publish](/help/sites-cloud/authoring/sites-console/pub
 
 1. Seleccione **[!UICONTROL original]**. Cuando se publica un recurso 3D (o &quot;activado&quot;), el botón **[!UICONTROL URL]** aparece cerca de la esquina inferior izquierda de la página si se cumplen todas las condiciones siguientes para el recurso 3D:
    * El recurso 3D es un formato compatible (GLB, OBJ, STL y USDZ).
-   * El recurso 3D se ha introducido en Dynamic Media Image Production System (IPS).
+   * El recurso 3D se ha introducido en el sistema de producción de imágenes (IPS) de Dynamic Media.
    * Se publica el recurso 3D.
 
    ![3d-asset-url](/help/assets/dynamic-media/assets/3d-asset-urla.png)
@@ -274,7 +311,7 @@ Ver también [páginas de Publish](/help/sites-cloud/authoring/sites-console/pub
 
 Use los dos métodos siguientes para publicar recursos de Dynamic Media 3D si *no* usa [!DNL Experience Manager] como WCM.
 
-* **[!UICONTROL URL]** - Utilice **[!UICONTROL URL]** si utiliza un sistema de administración de contenido web de terceros y desea vincular recursos de Dynamic Media 3D a sus páginas web mediante el visualizador dimensional.
+* **[!UICONTROL URL]** - Utilice **[!UICONTROL URL]** si está usando un sistema de administración de contenido web de terceros y desea vincular recursos de Dynamic Media 3D a sus páginas web mediante el visualizador dimensional.
 
   Ver [URL de vínculo a su aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
 

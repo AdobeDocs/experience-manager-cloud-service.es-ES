@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1421'
-ht-degree: 21%
+source-wordcount: '1449'
+ht-degree: 22%
 
 ---
 
 # Perfiles de metadatos {#metadata-profiles}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -111,7 +145,7 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de me
 
 * Vaya a `https://[aem_server]/mnt/overlay/dam/gui/content/assets/v2/foldersharewizard.html/content/dam`, aplique el perfil adecuado y haga clic en **[!UICONTROL Guardar]**.
 
-* Vaya al CRXDE Lite en el siguiente nodo: `/content/dam/jcr:content`. Agregue la propiedad `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. Haga clic en **Guardar todo**.
+* Vaya a CRXDE Lite hasta el siguiente nodo: `/content/dam/jcr:content`. Agregue la propiedad `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. Haga clic en **Guardar todo**.
 
 ## Eliminación de perfiles de metadatos de carpetas {#removing-a-metadata-profile-from-folders}
 
@@ -121,7 +155,7 @@ Puede quitar un perfil de metadatos de una carpeta desde el menú **Herramientas
 
 ### Eliminación de perfiles de metadatos de carpetas mediante la interfaz de usuario Perfiles {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Haga clic en el logotipo del Experience Manager y vaya a **[!UICONTROL Herramientas > Assets > Perfiles de metadatos]**.
+1. Haga clic en el logotipo de Experience Manager y vaya a **[!UICONTROL Herramientas > Assets > Perfiles de metadatos]**.
 1. Seleccione el perfil de metadatos que desea eliminar de una o varias carpetas.
 1. Haga clic en **[!UICONTROL Quitar perfil de metadatos de las carpetas]**, seleccione la carpeta o carpetas que desee usar para quitar un perfil y haga clic en **[!UICONTROL Listo]**.
 
@@ -129,7 +163,7 @@ Puede quitar un perfil de metadatos de una carpeta desde el menú **Herramientas
 
 ### Eliminación de perfiles de metadatos de carpetas mediante Propiedades {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Haga clic en el logotipo del Experience Manager, navegue por **[!UICONTROL Assets]** y, a continuación, vaya a la carpeta de la que desee quitar un perfil de metadatos.
+1. Haga clic en el logotipo de Experience Manager, navegue por **[!UICONTROL Assets]** y, a continuación, vaya a la carpeta de la que desee quitar un perfil de metadatos.
 1. En la carpeta, haga clic en la marca de verificación para seleccionarla y luego haga clic en **[!UICONTROL Propiedades]**.
 1. Seleccione la pestaña **[!UICONTROL Perfiles de metadatos]**, seleccione **[!UICONTROL Ninguno]** en el menú desplegable y haga clic en **[!UICONTROL Guardar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 

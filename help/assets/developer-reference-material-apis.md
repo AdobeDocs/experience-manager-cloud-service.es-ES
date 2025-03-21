@@ -1,21 +1,55 @@
 ---
 title: Referencias de desarrollador para  [!DNL Assets]
-description: "[!DNL Assets] API y contenido de referencia de desarrollador le permite administrar recursos, incluidos archivos binarios, metadatos, representaciones, comentarios y  [!DNL Content Fragments]."
+description: '[!DNL Assets] API y contenido de referencia de desarrollador le permite administrar recursos, incluidos archivos binarios, metadatos, representaciones, comentarios y  [!DNL Content Fragments].'
 contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1956'
+source-wordcount: '1984'
 ht-degree: 8%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets] casos de uso para desarrolladores, API y material de referencia {#assets-cloud-service-apis}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 El artículo contiene recomendaciones, materiales de referencia y recursos para desarrolladores de [!DNL Assets] como [!DNL Cloud Service]. Incluye nuevo módulo de carga de recursos, referencia de la API e información sobre la compatibilidad proporcionada en los flujos de trabajo posteriores al procesamiento.
 
@@ -33,7 +67,7 @@ El artículo contiene recomendaciones, materiales de referencia y recursos para 
 | × | No compatible. No utilice. |
 | - | No disponible |
 
-| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) API de Java | [servicio de Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es) |
+| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) API de Java | [Servicio de cómputo de recursos](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **binario original** |  |  |  |  |  |  |
 | Crear original | ✓ | × | - | × | × | - |
@@ -72,7 +106,7 @@ El artículo contiene recomendaciones, materiales de referencia y recursos para 
 En [!DNL Experience Manager] como [!DNL Cloud Service], puede cargar directamente los recursos al almacenamiento en la nube mediante la API HTTP. A continuación se indican los pasos para cargar un archivo binario. Ejecute estos pasos en una aplicación externa y no dentro de la JVM [!DNL Experience Manager].
 
 1. [Enviar una solicitud HTTP](#initiate-upload). Informa a [!DNL Experience Manage]r implementación de su intención de cargar un nuevo binario.
-1. [PUT el contenido del binario](#upload-binary) a uno o más URI proporcionados por la solicitud de inicio.
+1. [PUT cambió el contenido del binario](#upload-binary) a uno o más URI proporcionados por la solicitud de inicio.
 1. [Envíe una solicitud HTTP](#complete-upload) para informar al servidor de que el contenido del binario se cargó correctamente.
 
 ![Descripción general del protocolo de carga binaria directa](assets/add-assets-technical.png)
@@ -92,11 +126,11 @@ El método ofrece una administración escalable y más eficaz de las cargas de r
 >
 >[!IMPORTANT]
 >
->En determinadas circunstancias, es posible que los cambios no se propaguen completamente entre solicitudes y Experience Manager debido a la naturaleza finalmente coherente del almacenamiento en Cloud Service. Esto provoca que se produzcan respuestas 404 para iniciar o completar llamadas de carga debido a que no se propagan las creaciones de carpetas necesarias. Los clientes deben esperar respuestas 404 y gestionarlas implementando un reintento con una estrategia de back-off.
+>En determinadas circunstancias, es posible que los cambios no se propaguen completamente entre solicitudes a Experience Manager debido a la naturaleza finalmente coherente del almacenamiento en Cloud Service. Esto provoca que se produzcan respuestas 404 para iniciar o completar llamadas de carga debido a que no se propagan las creaciones de carpetas necesarias. Los clientes deben esperar respuestas 404 y gestionarlas implementando un reintento con una estrategia de back-off.
 
 ### Iniciar carga {#initiate-upload}
 
-Envíe una solicitud de POST HTTP a la carpeta deseada. Los Assets se crean o actualizan en esta carpeta. Incluya el selector `.initiateUpload.json` para indicar que la solicitud es para iniciar la carga de un archivo binario. Por ejemplo, la ruta a la carpeta donde se debe crear el recurso es `/assets/folder`. La solicitud del POST es `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`.
+Envíe una solicitud HTTP POST a la carpeta deseada. Los Assets se crean o actualizan en esta carpeta. Incluya el selector `.initiateUpload.json` para indicar que la solicitud es para iniciar la carga de un archivo binario. Por ejemplo, la ruta a la carpeta donde se debe crear el recurso es `/assets/folder`. La solicitud de POST es `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`.
 
 El tipo de contenido del cuerpo de la solicitud debe ser `application/x-www-form-urlencoded` datos de formulario, que contengan los campos siguientes:
 
@@ -136,7 +170,7 @@ Se puede utilizar una sola solicitud para iniciar cargas para varios binarios, s
 
 ### Cargar binario {#upload-binary}
 
-La salida del inicio de una carga incluye uno o más valores de URI de carga. Si se proporciona más de un URI, el cliente puede dividir el binario en partes y realizar solicitudes de PUT de cada parte a los URI de carga proporcionados, por orden. Si decide dividir el binario en partes, siga las siguientes directrices:
+La salida del inicio de una carga incluye uno o más valores de URI de carga. Si se proporciona más de un URI, el cliente puede dividir el binario en partes y realizar solicitudes PUT de cada parte a los URI de carga proporcionados, por orden. Si decide dividir el binario en partes, siga las siguientes directrices:
 
 * Cada parte, a excepción de la última, debe tener un tamaño mayor o igual que `minPartSize`.
 * Cada parte debe tener un tamaño inferior o igual a `maxPartSize`.
@@ -166,7 +200,7 @@ Si la carga se realiza correctamente, el servidor responde a cada solicitud con 
 
 ### Carga completa {#complete-upload}
 
-Una vez cargadas todas las partes de un archivo binario, envíe una solicitud de POST HTTP al URI completo proporcionado por los datos de inicio. El tipo de contenido del cuerpo de la solicitud debe ser `application/x-www-form-urlencoded` datos de formulario, que contengan los campos siguientes.
+Una vez cargadas todas las partes de un archivo binario, envíe una solicitud HTTP POST al URI completo proporcionado por los datos de inicio. El tipo de contenido del cuerpo de la solicitud debe ser `application/x-www-form-urlencoded` datos de formulario, que contengan los campos siguientes.
 
 | Campos | Tipo | Requerido o no | Descripción |
 |---|---|---|---|

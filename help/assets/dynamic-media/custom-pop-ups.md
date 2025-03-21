@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 2%
+source-wordcount: '990'
+ht-degree: 3%
 
 ---
 
 # Creación de ventanas emergentes personalizadas con Quickview {#using-quickviews-to-create-custom-pop-ups}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, donde se muestra una ventana emergente con información del producto para impulsar una compra. Sin embargo, puede almacenar en déclencheur el contenido personalizado para que se muestre en los elementos emergentes. Según el visualizador que utilice, los clientes pueden seleccionar un punto interactivo, una imagen en miniatura o un mapa de imagen para ver información o contenido relacionado.
 
@@ -155,7 +192,7 @@ El controlador también requiere una llamada a la función para que funcione la 
    }
    ```
 
-   * Cargue una página de HTML de pruebas en un servidor web y ábrala.
+   * Cargue una página de HTML de prueba en un servidor web y ábrala.
 
      Las variables de la vista rápida están asignadas. La llamada a la función está configurada. Y la consola del explorador escribe el valor de la variable en la consola del explorador. Para ello, utiliza la función de ejemplo proporcionada.
 
@@ -196,7 +233,7 @@ El controlador también requiere una llamada a la función para que funcione la 
    </script>
    ```
 
-1. Cargue una página del HTML de pruebas en el servidor web y abra. El visor muestra la ventana emergente `DIV` cuando un usuario invoca una vista rápida.
+1. Cargue una página de HTML de prueba en el servidor web y abra. El visor muestra la ventana emergente `DIV` cuando un usuario invoca una vista rápida.
 1. **Cómo mostrar la ventana emergente personalizada en modo de pantalla completa**
 
    Algunos visores, como el visualizador de vídeo interactivo, admiten la visualización en modo de pantalla completa. Sin embargo, el uso de la ventana emergente como se describe en los pasos anteriores hace que se muestre detrás del visor mientras está en modo de pantalla completa.

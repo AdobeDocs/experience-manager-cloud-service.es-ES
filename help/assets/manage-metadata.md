@@ -6,17 +6,51 @@ mini-toc-levels: 1
 feature: Asset Management, Metadata
 role: User, Architect, Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1962'
+source-wordcount: '1990'
 ht-degree: 9%
 
 ---
 
 # Administración de metadatos de recursos digitales {#managing-metadata-for-digital-assets}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -130,14 +164,14 @@ La fecha de la última modificación y el usuario no cambian:
 
 Existen varias formas de incrustar metadatos en los archivos. Se admite una selección de estándares de codificación:
 
-* XMP: utilizado por [!DNL Assets] para almacenar los metadatos extraídos dentro del repositorio.
+* XMP: usado por [!DNL Assets] para almacenar los metadatos extraídos dentro del repositorio.
 * ID3: para archivos de audio y vídeo.
 * EXIF: para archivos de imagen.
 * Otro/Heredado: de [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], etc.
 
 ### XMP {#xmp}
 
-XMP [!DNL Extensible Metadata Platform] () es un estándar abierto que utiliza [!DNL Experience Manager Assets] para toda la administración de metadatos. El estándar ofrece codificación de metadatos universal que puede incrustarse en todos los formatos de archivo. Adobe XMP y otras empresas admiten el estándar, ya que proporciona un modelo de contenido enriquecido. XMP Los usuarios de la norma de y de [!DNL Experience Manager Assets] tienen una plataforma potente sobre la cual pueden generar contenido. XMP Para obtener más información, consulte [](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) es un estándar abierto que utiliza [!DNL Experience Manager Assets] para toda la administración de metadatos. El estándar ofrece codificación de metadatos universal que puede incrustarse en todos los formatos de archivo. Adobe y otras empresas admiten el estándar XMP, ya que proporciona un modelo de contenido enriquecido. Los usuarios del estándar XMP y de [!DNL Experience Manager Assets] tienen una potente plataforma sobre la cual construir. Para obtener más información, consulte [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -157,7 +191,7 @@ El formato de archivo de imagen intercambiable (Exif) es el formato de metadatos
 
 Una limitación importante de EXIF es que algunos formatos de archivo de imagen populares, como BMP, GIF o PNG, no lo admiten.
 
-Los campos de metadatos definidos por EXIF suelen ser de naturaleza técnica y su uso para la gestión descriptiva de metadatos es limitado. XMP Por este motivo, [!DNL Experience Manager Assets] ofrece la asignación de propiedades EXIF a [esquemas de metadatos comunes](metadata-schemas.md) y a los archivos de datos de la base de datos de la base de datos de.
+Los campos de metadatos definidos por EXIF suelen ser de naturaleza técnica y su uso para la gestión descriptiva de metadatos es limitado. Por este motivo, [!DNL Experience Manager Assets] ofrece la asignación de propiedades EXIF a [esquemas de metadatos comunes](metadata-schemas.md) y a XMP.
 
 #### Otros metadatos {#other-metadata}
 
@@ -229,7 +263,7 @@ A continuación se enumeran los esquemas de metadatos admitidos.
 * DICOM - Imágenes digitales y comunicaciones en medicina.
 * `Iptc4xmpCore` y `iptc4xmpExt` - International Press Communications Standard contiene muchos metadatos específicos de temas.
 * RDF, Resource Description Framework, para metadatos web semánticos genéricos.
-* XMP [!DNL Extensible Metadata Platform].
+* XMP: [!DNL Extensible Metadata Platform].
 * `xmpBJ` - Oferta de trabajo básica.
 
 ### Metadatos específicos de la aplicación {#application-specific-metadata}
@@ -245,10 +279,10 @@ Los metadatos específicos de la aplicación incluyen metadatos técnicos y desc
 * LR: [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto and MP - Microsoft Photo.
-* PDF y PDF/X
+* PDF y PDF/X.
 * Photoshop y psAux: [!DNL Adobe Photoshop].
 
-### metadatos de Digital Rights Management {#digital-rights-management-metadata}
+### Metadatos de Digital Rights Management {#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
@@ -256,7 +290,7 @@ Los metadatos específicos de la aplicación incluyen metadatos técnicos y desc
 <!--THIS LINK IS 404 WITH NO SUITABLE REPLACEMENT * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata). -->
 * PRL - PRISM Rights Language.
 * PUR - Derechos de uso de PRISM.
-* XMP `xmpPlus`: integración de PLUS con el.
+* `xmpPlus`: integración de PLUS con XMP.
 
 ### Metadatos específicos de fotografía {#photography-specific-metadata}
 
@@ -269,8 +303,8 @@ Los metadatos específicos de la aplicación incluyen metadatos técnicos y desc
 
 * PDF y PDF/X: aplicaciones de Adobe PDF y de terceros.
 <!--THIS LINK IS 404 WITH NO SUITABLE REPLACEMENT * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata). -->
-* XMP [!DNL Extensible Metadata Platform].
-* XMP `xmpPG`: metadatos de la página para texto de la página de la página de la página de destino.
+* XMP: [!DNL Extensible Metadata Platform].
+* `xmpPG`: metadatos de XMP para texto paginado.
 
 ### Metadatos específicos de medios múltiples {#multimedia-specific-metadata}
 

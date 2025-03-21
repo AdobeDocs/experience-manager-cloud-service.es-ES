@@ -4,17 +4,51 @@ description: Distribuya sus recursos digitales mediante métodos como compartir 
 feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1847'
-ht-degree: 3%
+source-wordcount: '1875'
+ht-degree: 4%
 
 ---
 
 # Compartir y distribuir recursos administrados en [!DNL Experience Manager] {#share-assets-from-aem}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -115,7 +149,7 @@ Una plantilla bien diseñada transmite profesionalidad y competencia, mejorando 
 
 #### Formato de una plantilla de correo electrónico personalizada {#format-of-custom-email-template}
 
-La plantilla de correo electrónico se puede personalizar mediante texto sin formato o HTML. El vínculo de plantilla editable predeterminado se encuentra en `/libs/settings/dam/adhocassetshare/en.txt`. Puede anular la plantilla creando el archivo `/apps/settings/dam/adhocassetshare/en.txt`. Puede modificar la plantilla de correo electrónico tantas veces como sea necesario.
+La plantilla de correo electrónico se puede personalizar con texto sin formato o HTML. El vínculo de plantilla editable predeterminado se encuentra en `/libs/settings/dam/adhocassetshare/en.txt`. Puede anular la plantilla creando el archivo `/apps/settings/dam/adhocassetshare/en.txt`. Puede modificar la plantilla de correo electrónico tantas veces como sea necesario.
 
 | Marcadores de posición | Descripción |
 |---|-----|
@@ -250,9 +284,9 @@ Los usuarios pueden descargar los recursos necesarios y compartirlos fuera de [!
 
 Los especialistas en marketing y los usuarios de la línea de negocios pueden compartir fácilmente recursos aprobados con sus profesionales creativos mediante,
 
-* **aplicación de escritorio de Experience Manager**: la aplicación funciona en Windows y Mac. Ver [descripción general de la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=es). Para saber cómo cualquier usuario de escritorio autorizado puede acceder fácilmente a los recursos compartidos, consulte [examinar, buscar y previsualizar recursos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Los usuarios de escritorio pueden crear recursos y volver a compartirlos con sus homólogos que sean usuarios Experience Manager, por ejemplo, cargando nuevas imágenes. Ver [cargar recursos mediante una aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **Aplicación de escritorio de Experience Manager**: La aplicación funciona en Windows y Mac. Ver [descripción general de la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=es). Para saber cómo cualquier usuario de escritorio autorizado puede acceder fácilmente a los recursos compartidos, consulte [examinar, buscar y previsualizar recursos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Los usuarios de escritorio pueden crear recursos y volver a compartirlos con sus homólogos que sean usuarios de Experience Manager, por ejemplo, cargando nuevas imágenes. Ver [cargar recursos mediante una aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
-* **Vínculo de recursos de Adobe**: Los profesionales creativos pueden buscar y usar recursos directamente desde [!DNL Adobe InDesign], [!DNL Adobe Illustrator] y [!DNL Adobe Photoshop].
+* **Adobe Asset Link**: Los profesionales creativos pueden buscar y utilizar recursos directamente desde [!DNL Adobe InDesign], [!DNL Adobe Illustrator] y [!DNL Adobe Photoshop].
 
 ## Configurar el uso compartido de recursos {#configure-sharing}
 
@@ -312,7 +346,7 @@ Ver [cómo configurar [!DNL Assets] para utilizarlo con [!DNL Adobe Asset Link]]
 ## Prácticas recomendadas y solución de problemas {#bestpractices}
 
 * Es posible que las carpetas de recursos o las colecciones que contienen un espacio en blanco en su nombre no se compartan.
-* Si los usuarios no pueden descargar los recursos compartidos, consulte con el administrador del Experience Manager cuáles son los límites de descarga. El valor predeterminado es 100 MB.
+* Si los usuarios no pueden descargar los recursos compartidos, consulte con el administrador de Experience Manager cuáles son los límites de descarga. El valor predeterminado es 100 MB.
 * Para que un usuario obtenga una vista previa de un vídeo compartido mediante el uso compartido de vínculos, el vídeo debe tener una representación de vídeo estática disponible en la ubicación `/jcr:content/renditions` en el nodo del vídeo en el repositorio. La vista previa no depende de la disponibilidad de una representación de [!DNL Dynamic Media].
 * Al descargar un recurso de vídeo mediante el uso compartido de vínculos, las representaciones de [!DNL Dynamic Media] no se incluyen en el archivo descargado.
 

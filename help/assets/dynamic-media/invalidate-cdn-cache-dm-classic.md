@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Asset Management,Dynamic Media Classic
 role: Admin,User
 exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 15%
+source-wordcount: '717'
+ht-degree: 17%
 
 ---
 
 # Invalidación de la caché de CDN mediante Dynamic Media Classic {#invalidating-your-cdn-cached-content}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 La CDN (red de distribución de contenido) almacena en caché los recursos de Dynamic Media para agilizar la entrega. Sin embargo, cuando realiza actualizaciones en un recurso, desea que los cambios surtan efecto inmediatamente. La invalidación del contenido en caché de la CDN le permite actualizar rápidamente los recursos que entrega Dynamic Media, en lugar de esperar a que la caché caduque.
 
@@ -30,7 +67,7 @@ La CDN (red de distribución de contenido) almacena en caché los recursos de Dy
 
 1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en su cuenta.
 
-   El Adobe proporcionó sus credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con Atención al cliente.
+   Adobe proporcionó sus credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con Atención al cliente.
 
 1. Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**.
 1. En la página Configuración general de la aplicación, en el encabezado del grupo Servidores, busque el cuadro de texto **[!UICONTROL Plantilla de invalidación de CDN]**.
@@ -41,7 +78,7 @@ La CDN (red de distribución de contenido) almacena en caché los recursos de Dy
 
    `https://server.com/is/image/Company/<ID>?$product$`
 
-   Si la plantilla solo contiene `<ID>`, Dynamic Media rellena `https://<server>/is/image` donde `<server>` es el nombre del servidor de Publish que se define en Configuración general y &lt;ID> son los recursos seleccionados para invalidar.
+   Si la plantilla solo contiene `<ID>`, Dynamic Media rellena `https://<server>/is/image`, donde `<server>` es el nombre del servidor de publicación definido en Configuración general y &lt;ID> son los recursos seleccionados para invalidar.
 
 1. En la esquina inferior derecha de la página, seleccione **[!UICONTROL Cerrar]**.
 1. En la interfaz de usuario de Dynamic Media Classic (Scene7), seleccione uno o varios recursos y vaya a **[!UICONTROL Archivo]** > **[!UICONTROL Invalidar CDN]**. Verá una lista de una o más direcciones URL generadas a partir de la plantilla que creó y los recursos seleccionados. Utiliza la URL del servidor que aparece en &quot;Nombre de servidor publicado&quot; en la Configuración general de la aplicación.

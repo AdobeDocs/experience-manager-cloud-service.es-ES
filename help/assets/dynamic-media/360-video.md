@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 0%
+source-wordcount: '1053'
+ht-degree: 1%
 
 ---
 
 # Vídeo 360/VR {#vr-video}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Los vídeos de 360° graban una vista en todas las direcciones al mismo tiempo. Se filman con una cámara omnidireccional o una colección de cámaras. Durante la reproducción, en una pantalla plana, el usuario tiene control del ángulo de visión; la reproducción en dispositivos móviles suele aplicar sus controles giroscópicos integrados.
 
@@ -22,7 +59,7 @@ Puede utilizar el visualizador de vídeo 360/VR para procesar vídeo equirectang
 
 Actualmente no se admite audio espacial; si el audio se mezcla en estéreo, el equilibrio (I/D) no cambia a medida que el cliente cambia el ángulo de visión de la cámara.
 
-Ver [Uso de vídeos Dynamic Media 360 y miniatura de vídeo personalizada con AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media).
+Ver [Uso de vídeos de Dynamic Media 360 y miniaturas de vídeo personalizadas con AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media).
 
 Consulte también [Administración de ajustes preestablecidos de visor](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -58,7 +95,7 @@ Ver [Editar vídeo de 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-3
    * Lo ideal es que el contenido original de vídeo de 360 bits tenga una de las siguientes resoluciones:
 
       * 1080p - 1920 x 1080, conocida como resolución Full HD o FHD o,
-      * 2160p: 3840 x 2160, conocida como resolución 4k, UHD o HD Ultra. Esta resolución de pantalla grande se encuentra más a menudo en televisores y monitores de ordenador de primera calidad. La resolución de 2160p se denomina a menudo &quot;4k&quot; porque la anchura está cerca de los 4000 píxeles. En otras palabras, ofrece cuatro veces los píxeles de 1080p.
+      * 2160p: 3840 x 2160, conocida como resolución 4k, UHD o Ultra HD. Esta resolución de pantalla grande se encuentra más a menudo en televisores y monitores de ordenador de primera calidad. La resolución de 2160p se denomina a menudo &quot;4k&quot; porque la anchura está cerca de los 4000 píxeles. En otras palabras, ofrece cuatro veces los píxeles de 1080p.
 
    * [Crear un perfil de vídeo adaptable personalizado](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) con representaciones de mayor calidad. Por ejemplo, puede crear un perfil de vídeo adaptable que contenga las tres configuraciones siguientes:
 
@@ -68,7 +105,7 @@ Ver [Editar vídeo de 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-3
 
    * Procesar contenido de vídeo de 360 en una carpeta dedicada exclusivamente a recursos de vídeo de 360.
 
-   Este enfoque impone mayores exigencias a la red y la CPU del usuario.
+   Este enfoque impone mayores exigencias a la red y al CPU del usuario.
 
 1. [Cargue el vídeo en la carpeta](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
@@ -103,13 +140,13 @@ Cuando esté satisfecho con el vídeo 360, puede publicarlo.
 
 Ver [Incrustación del visor de vídeo o de imágenes en una página web](/help/assets/dynamic-media/embed-code.md).
 Ver [URL de vinculación a su aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, en particular vínculos a páginas de [!DNL Experience Manager Sites].
-Ver [Agregar Dynamic Media Assets a las páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Consulte [Agregar Dynamic Media Assets a las páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 **Para obtener una vista previa de 360 vídeos:**
 
 1. En **[!UICONTROL Assets]**, desplácese hasta un vídeo 360 existente que haya creado. Para abrirlo en modo de vista previa, seleccione el recurso de vídeo 360.
 
-   ![Captura de pantalla de un recurso de vídeo 360 cargado, tal como se ve en la vista de tarjeta del Experience Manager.](assets/6_5_360video-selecttopreview-1.png)
+   ![Captura de pantalla de un recurso de vídeo 360 cargado, tal como se ve en la vista de tarjeta de Experience Manager.](assets/6_5_360video-selecttopreview-1.png)
 
    Para obtener una vista previa del vídeo, seleccione el recurso de vídeo 360.
 
@@ -135,7 +172,7 @@ Ver [Agregar Dynamic Media Assets a las páginas](/help/assets/dynamic-media/add
 
 ## Publicación de vídeo 360 {#publishing-video}
 
-Para utilizar el vídeo 360, debe publicarlo. La publicación de un vídeo 360 activa la URL y el código de incrustación. También publica el vídeo 360 en la nube de Dynamic Media, que está integrado con una CDN para una entrega escalable y con rendimiento.
+Para utilizar el vídeo 360, debe publicarlo. La publicación de un vídeo 360 activa la URL y el código de incrustación. También publica el vídeo 360 en la nube de Dynamic Media, que está integrada con una CDN para una entrega escalable y con buen rendimiento.
 
 Consulte [Publicación de Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar vídeo 360.
 Vea también [Incrustación del visor de vídeo o de imágenes en una página web](/help/assets/dynamic-media/embed-code.md).

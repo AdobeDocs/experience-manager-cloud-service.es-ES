@@ -4,23 +4,57 @@ description: Actualizar [!DNL Workfront for Experience Manager enhanced connecto
 exl-id: 09276b4d-a7c8-4927-8c0a-40eda48e55a7
 feature: Workfront Integrations and Apps
 role: Admin
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 2%
+source-wordcount: '272'
+ht-degree: 7%
 
 ---
 
 # Actualización [!DNL Workfront for Experience Manager enhanced connector] {#update-enhanced-connector-for-workfront}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
-[!UICONTROL Experience Manager Assets as a Cloud Service] le permite actualizar [!DNL Workfront for Experience Manager enhanced connector] de una versión anterior a la versión más reciente.
+[!UICONTROL Experience Manager Assets as a Cloud Service] le permite actualizar [!DNL Workfront for Experience Manager enhanced connector] de una versión anterior a la más reciente.
 
 >[!TIP]
 >
->AEM ¿Está buscando la documentación de actualización de [!DNL Workfront for Experience Manager enhanced connector] para la versión 6.5 de? Haga clic [aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=en##update-enhanced-connector-for-workfront).
+>¿Está buscando la documentación de actualización de [!DNL Workfront for Experience Manager enhanced connector] para AEM 6.5? Haga clic [aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=en##update-enhanced-connector-for-workfront).
 
 
 Para actualizar [!DNL Workfront for Experience Manager enhanced connector] a la última versión:
@@ -29,7 +63,7 @@ Para actualizar [!DNL Workfront for Experience Manager enhanced connector] a la 
 
 1. [Acceda](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) y clone su repositorio de AEM as a Cloud Service desde Cloud Manager.
 
-1. Abra el repositorio as a Cloud Service Experience Manager clonado mediante un IDE de su elección.
+1. Abra el repositorio clonado de Experience Manager as a Cloud Service mediante un IDE de su elección.
 
 1. Coloque el archivo zip del conector mejorado descargado en el paso 1 en la siguiente ruta:
 

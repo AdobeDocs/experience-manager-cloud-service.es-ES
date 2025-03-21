@@ -1,6 +1,6 @@
 ---
 title: Recorrido en Dynamic Media, parte II
-description: El Recorrido de Dynamic Media cubre los conceptos básicos de Dynamic Media, su funcionamiento, lo que puede hacer por usted y el valor que aporta a su trabajo y a sus clientes.
+description: El Recorrido de Dynamic Media cubre los conceptos básicos de Dynamic Media, cómo funciona, qué puede hacer por usted y qué valor aporta a su trabajo y a sus clientes.
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
@@ -11,41 +11,78 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 74172fe7fcf9a22837645a154f2e85fd6fa6b40e
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '2621'
+source-wordcount: '2667'
 ht-degree: 0%
 
 ---
 
 # Recorrido de Dynamic Media: Conceptos básicos, parte II  {#dm-journey-part2}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
+
 {{see-also-dm}}
 
-Bienvenido al Recorrido de Dynamic Media: Conceptos básicos, parte II, donde aprenderá lo siguiente:
+Bienvenido a Recorrido de Dynamic Media: Conceptos básicos, parte II, donde aprenderá lo siguiente:
 
-* Estructura de una URL de Dynamic Media y forma en que Dynamic Media entrega el contenido.
+* Estructura de una URL de Dynamic Media y cómo Dynamic Media entrega contenido.
 * Aspectos básicos de la creación de ajustes preestablecidos de imagen para procesar recursos.
 * Conjuntos de imágenes, conjuntos de giros y conjuntos de medios mixtos.
 
-Consulte también [Recorrido de Dynamic Media; Conceptos básicos, Parte I](/help/assets/dynamic-media/dm-journey-part1.md).
+Consulte también [Recorrido de Dynamic Media; Conceptos básicos, parte I](/help/assets/dynamic-media/dm-journey-part1.md).
 
 >[!TIP]
 >
 >Para obtener los mejores resultados, Adobe recomienda leer y ver este Recorrido de Dynamic Media en un equipo de escritorio.
 
-## Estructura de una URL de Dynamic Media y cómo Dynamic Media entrega el contenido {#dm-journey-d}
+## Estructura de una URL de Dynamic Media y cómo Dynamic Media entrega contenido {#dm-journey-d}
 
 Una vez cargados y publicados los recursos de Dynamic Media, puede copiar la URL generada de un recurso y pegarla en el explorador para ver cómo aparecerá el recurso para un cliente. La siguiente URL copiada para una imagen de reloj se desglosa por color para facilitar su lectura y comprensión.
 
 ![Estructura de una URL de Dynamic Media](/help/assets/dynamic-media/assets/dm-colored-url.png)
 _Estructura de una URL de Dynamic Media._
 
-La primera parte de la dirección URL en rojo hace referencia al propio dominio del servidor. En este caso, Dynamic Media se está ejecutando en un dominio de servidor genérico, que es `https://s7d1.scene7.com/is/image/`. Es fácil poder ver un conjunto de imágenes y comprender si Dynamic Media las proporciona simplemente mirando el dominio del servidor. La dirección URL va a ser bastante coherente. Sin embargo, hay algunos clientes de Dynamic Media que han cambiado a un dominio de servidor específico donde podría ser `name-of-your-company.scene7.com`. Se requiere un dominio de servidor dedicado para imágenes inteligentes.
+La primera parte de la dirección URL en rojo hace referencia al propio dominio del servidor. En este caso, Dynamic Media se está ejecutando en un dominio de servidor genérico, que es `https://s7d1.scene7.com/is/image/`. Es fácil poder ver un conjunto de imágenes y comprender si están siendo proporcionadas por Dynamic Media simplemente mirando el dominio del servidor. La dirección URL va a ser bastante coherente. Sin embargo, hay algunos clientes de Dynamic Media que han cambiado a un dominio de servidor dedicado donde podría ser `name-of-your-company.scene7.com`. Se requiere un dominio de servidor dedicado para imágenes inteligentes.
 
 El nombre de la cuenta es la porción en morado. En este caso, la cuenta se llama `jpearldemo`.
 
-El nombre o ID del recurso `AdobeStock_28563982` está en verde. Observe que el recurso tiene _no_ extensión de archivo, como `.png` o `.jpg`. Cuando los recursos se incorporan en Dynamic Media, la extensión de archivo se elimina y se crea un tipo diferente de archivo: un archivo TIFF piramidal. El TIFF pirámico permite a Dynamic Media crear rápidamente representaciones sobre la marcha.
+El nombre o ID del recurso `AdobeStock_28563982` está en verde. Observe que el recurso tiene _no_ extensión de archivo, como `.png` o `.jpg`. Cuando los recursos se incorporan en Dynamic Media, la extensión de archivo se elimina y se crea un tipo diferente de archivo: un archivo piramidal de TIFF. El pyramic-TIFF permite a Dynamic Media crear rápidamente representaciones sobre la marcha.
 
 Y finalmente, hay algunos parámetros de procesamiento de imágenes, `?wid=1000&fmt=jpeg&qlt=85`, que se muestran en amarillo al final.
 
@@ -62,7 +99,7 @@ Ahora añada un parámetro de procesamiento de imagen al final de la dirección 
 Observe que se genera una nueva representación del reloj. Una clave para entender de este sencillo ejercicio de cambiar el ancho de la imagen, es que la imagen vista se genera 100% dinámicamente.
 
 Ahora cambie el valor de anchura de `500` píxeles a `1000` píxeles y, a continuación, presione **[!UICONTROL Entrar]**. [Inténtelo](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target="_blank}.
-En el momento en que presione **[!UICONTROL Intro]**, el explorador regresará al servidor de imágenes de Dynamic Media. Genera una representación completamente nueva del reloj, en función del nuevo valor de anchura que acaba de introducir, devuelve la nueva imagen al explorador y la almacena en caché.
+En el momento en que pulse **[!UICONTROL Intro]**, el explorador volverá al servidor de imágenes de Dynamic Media. Genera una representación completamente nueva del reloj, en función del nuevo valor de anchura que acaba de introducir, devuelve la nueva imagen al explorador y la almacena en caché.
 
 Dynamic Media tiene numerosos parámetros de procesamiento de imágenes que puede utilizar para ajustar los recursos de imagen en las páginas web. Puedes [ver una lista de ellos aquí](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
 
@@ -70,18 +107,18 @@ Ahora intente agregar un parámetro de rotación a la imagen del reloj. Y el fin
 
 El reloj sigue un poco sesgado hacia la izquierda. Cambie el valor de giro de `90` a `92` y, a continuación, presione **[!UICONTROL Entrar]**. [Inténtelo](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9){target="_blank"}.
 
-De nuevo, en el momento en que presiona **[!UICONTROL Enter]**, se genera una nueva representación del reloj de forma casi instantánea. Puede ver el tipo de rendimiento que obtiene, lo que explica por qué Dynamic Media puede entregar más de 800 000 solicitudes de imagen _por segundo_, en un fin de semana ajetreado o en días festivos importantes.
+De nuevo, en el momento en que presiona **[!UICONTROL Enter]**, se genera una nueva representación del reloj de forma casi instantánea. Puede ver el tipo de rendimiento que obtiene, lo que explica por qué Dynamic Media puede entregar más de 800 000 solicitudes de imagen, _por segundo_, en un fin de semana ajetreado o en vacaciones importantes.
 
 Aunque es posible cambiar los parámetros de procesamiento de imágenes en una URL imagen por imagen, no es un método eficiente, especialmente si tiene decenas de miles de imágenes que conforman su sitio web. Un enfoque mucho mejor es el uso de ajustes preestablecidos de imagen.
 
 ## Aspectos básicos de la creación de ajustes preestablecidos de imagen para procesar recursos {#dm-journey-e}
 
-Existen varias formas y lugares en los que querrá crear una imagen o en los que una imagen estará disponible. Tradicionalmente, un creativo entra en Adobe Photoshop y guarda cada una de estas diferentes representaciones como imágenes estáticas.
+Existen varias formas y lugares en los que querrá crear una imagen o en los que una imagen estará disponible. Tradicionalmente, un Creative entra en Adobe Photoshop y guarda cada una de estas diferentes representaciones como imágenes estáticas.
 
 ![Imágenes estáticas](/help/assets/dynamic-media/assets/dm-static-images.png)
 _Bueno: imágenes estáticas, cada una creada manualmente._
 
-Ahora imaginen que Creative Director mira las imágenes y dice:
+Ahora imaginen que el director de Creative mira las imágenes y dice:
 
 _&quot;Realmente quería esta toma para que la mano grande señale a los cuatro y la mano pequeña señale al 1 para que el dial del reloj sea más fácil de ver.&quot;_
 
@@ -112,11 +149,11 @@ Por un momento, veamos cómo se crea un ajuste preestablecido de imagen en Dynam
 ![Creando un ajuste preestablecido de imagen que comienza con la pestaña Básico](/help/assets/dynamic-media/assets/dm-image-preset-basictab.png)
 _Creando un ajuste preestablecido de imagen a partir de la ficha Básico._
 
-En el ejemplo anterior, puede ver que se creó un nuevo ajuste preestablecido de imagen con el nombre _Medium_. Dynamic Media utiliza un ejemplo de imagen predeterminada (la mochila) para ayudarle a ver las características del ajuste preestablecido de imagen a medida que lo crea.
+En el ejemplo anterior, puede ver que se creó un nuevo ajuste preestablecido de imagen con el nombre _Medium_. Dynamic Media utiliza una imagen de ejemplo predeterminada, la mochila, para ayudarle a ver las características del ajuste preestablecido de imagen a medida que lo crea.
 
-El ajuste preestablecido de imagen _Medium_ tiene una anchura de 500 píxeles y una altura de 800 píxeles. En la parte I de este Recorrido, se explica cómo ofrecer recursos en diferentes formatos. En el menú desplegable **[!UICONTROL Formato]**, puede elegir enviar recursos como JPEG, PNG, TIFF u otros formatos. Aquí tiene flexibilidad.
+El ajuste preestablecido de imagen _Medium_ tiene una anchura de 500 píxeles y una altura de 800 píxeles. En la parte I de este Recorrido, se explica cómo ofrecer recursos en diferentes formatos. En el menú desplegable **[!UICONTROL Formato]**, puede elegir enviar recursos como JPEG, PNG, TIFF o varios otros formatos. Aquí tiene flexibilidad.
 
-Al seleccionar la pestaña **[!UICONTROL Avanzado]**, tiene opciones para el espacio de color del recurso. Según el formato seleccionado en la ficha **[!UICONTROL Básico]** (en el ejemplo anterior, se seleccionó JPEG), puede enviar recursos en RGB, escala de grises o CMYK. En el menú desplegable **[!UICONTROL Perfil de color]**, puede seleccionar cómo desea enviar un recurso de imagen CMYK para utilizarlo en la impresión. Tenga en cuenta también que hay parámetros adicionales que puede aplicar para enfocar las imágenes. En este caso, se aplicó **[!UICONTROL máscara de enfoque]**.
+Al seleccionar la pestaña **[!UICONTROL Avanzado]**, tiene opciones para el espacio de color del recurso. Según el formato que haya seleccionado en la ficha **[!UICONTROL Básico]** (en el ejemplo anterior, se seleccionó JPEG), puede enviar recursos en RGB, escala de grises o CMYK. En el menú desplegable **[!UICONTROL Perfil de color]**, puede seleccionar cómo desea enviar un recurso de imagen CMYK para utilizarlo en la impresión. Tenga en cuenta también que hay parámetros adicionales que puede aplicar para enfocar las imágenes. En este caso, se aplicó **[!UICONTROL máscara de enfoque]**.
 
 ![Creación de un ajuste preestablecido de imagen seleccionando opciones en la pestaña Avanzado](/help/assets/dynamic-media/assets/dm-image-preset-advancedtab.png)
 _Creando un ajuste preestablecido de imagen seleccionando opciones en la pestaña Avanzado._
@@ -134,7 +171,7 @@ Copie la dirección URL y péguela en el explorador para comprobar el aspecto de
 
 En el explorador, observe el nombre del ajuste preestablecido de imagen _Medium_ en la ruta de URL completa.
 
-Se puede ver el tipo de claridad que se muestra en la imagen. Esa cualidad se debe en parte a la forma en que el tazón de chocolate fue disparado. Además, esto se debe en parte a que con Dynamic Media puede almacenar imágenes de mayor tamaño que las que se envían a los canales digitales.
+Se puede ver el tipo de claridad que se muestra en la imagen. Esa cualidad se debe en parte a la forma en que el tazón de chocolate fue disparado. Además, se debe en parte a que con Dynamic Media puede almacenar imágenes más grandes que las que se envían a los canales digitales.
 
 Si todo parece satisfactorio para tu tazón de chocolate, pega la URL en tus páginas web donde quieras que aparezca la imagen en tu sitio web.
 
@@ -156,7 +193,7 @@ Algunos de los usos más populares de Dynamic Media son la capacidad de crear co
 
 Los conjuntos de imágenes suelen estar formados por una serie de recursos de imagen que se presentan como una sola entidad. Este tipo de conjuntos proporcionan a los usuarios una experiencia de visualización integrada, en la que pueden ver diferentes vistas de un elemento haciendo clic en una imagen en miniatura. Los conjuntos de imágenes permiten presentar vistas alternativas de algo y el visor ofrece herramientas de zoom para examinar las imágenes de cerca. [Ver un conjunto de imágenes llamado &quot;En ejecución&quot; que usa el visor flotante](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running).
 
-Aquí dentro de Dynamic Media puedes ver varias imágenes de zapatillas de running. Es una serie de líneas de productos que las ventas y el marketing desean que los clientes vean como una sola presentación; un conjunto de imágenes.
+Aquí dentro de Dynamic Media puede ver varias imágenes de zapatillas de running. Es una serie de líneas de productos que las ventas y el marketing desean que los clientes vean como una sola presentación; un conjunto de imágenes.
 
 ![Creando un conjunto de imágenes](/help/assets/dynamic-media/assets/dm-create-image-set.png)
 _Inicio de la creación de un conjunto de imágenes._
@@ -197,7 +234,7 @@ El visor flotante es un visor predeterminado y listo para usar cuyas propiedades
 
 Ahora, supongamos que a su equipo de ventas y marketing no le gusta el visor flotante. Les gusta la función de zoom, pero quieren que los clientes vean el efecto de zoom directamente sobre los zapatos. En tal caso, simplemente aplique el visor InlineZoom al conjunto de imágenes y copie y pegue su URL en el explorador para ver cómo se comporta. [Inténtelo](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target="_blank"}.
 
-Cuando mueve el puntero del mouse sobre el zapato, se acerca a esa imagen y puede ver más detalles a medida que mueve el puntero. Y la razón de esto es simplemente el tamaño de la imagen que se cargó inicialmente en Dynamic Media.
+Cuando mueve el puntero del mouse sobre el zapato, se acerca a esa imagen y puede ver más detalles a medida que mueve el puntero. Y la razón es simplemente el tamaño de la imagen que se cargó inicialmente en Dynamic Media.
 
 Al considerar la posibilidad de vivir como consumidor, o al trabajar en su función diaria, y al visitar diferentes sitios web, ve cosas como esta. Piense en cómo se está haciendo y cómo puede utilizar el poder de Dynamic Media en su propio trabajo y en el sitio web de su compañía.
 

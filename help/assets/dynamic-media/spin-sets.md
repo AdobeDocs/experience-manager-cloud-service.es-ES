@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1956'
-ht-degree: 8%
+source-wordcount: '2002'
+ht-degree: 9%
 
 ---
 
 # Conjuntos de giros{#spin-sets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Un conjunto de giros simula el acto del mundo real de girar un objeto para examinarlo. Los conjuntos de giros permiten ver los elementos desde cualquier ángulo, obteniendo los detalles visuales clave desde cualquier ángulo.
 
@@ -32,7 +69,7 @@ Al crear un conjunto de giros, Adobe recomienda la siguiente práctica recomenda
 | --- | --- | --- |
 | Número máximo de filas/columnas por conjunto 2D | 12 a 18 imágenes por conjunto | 1000 |
 
-Ver también [limitaciones de Dynamic Media](/help/assets/dynamic-media/limitations.md).
+Consulte también [Limitaciones de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 ## Inicio rápido: Conjuntos de giros {#quick-start-spin-sets}
 
@@ -72,7 +109,7 @@ Para ponerse en marcha rápidamente con los conjuntos de giros, siga estos pasos
 
    Seleccione el conjunto de giros y podrá previsualizarlo. Gire el conjunto de giros. Puede elegir diferentes visores en el menú **[!UICONTROL Visualizadores]**, disponible en el menú desplegable del carril izquierdo.
 
-1. [Conjuntos de giros Publish](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+1. [Publicar conjuntos de giros](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
    La publicación de un conjunto de giros activa la URL y la cadena de incrustación. Además, debe [publicar el ajuste preestablecido de visor](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -96,7 +133,7 @@ Puede cargar imágenes para los conjuntos de giros como haría [cargar cualquier
 
 ### Directrices para capturar imágenes de un conjunto de giros {#guidelines-for-shooting-spin-set-images}
 
-A continuación se indican algunas prácticas recomendadas en las imágenes de conjuntos de giros. En general, cuantas más imágenes tenga en un conjunto de giros, mejor será el efecto de giro de la imagen. Sin embargo, incluir muchas imágenes en el conjunto también aumenta la cantidad de tiempo que tardan las imágenes en cargarse. El Experience Manager recomienda estas directrices para grabar imágenes para utilizarlas en conjuntos de giros:
+A continuación se indican algunas prácticas recomendadas en las imágenes de conjuntos de giros. En general, cuantas más imágenes tenga en un conjunto de giros, mejor será el efecto de giro de la imagen. Sin embargo, incluir muchas imágenes en el conjunto también aumenta la cantidad de tiempo que tardan las imágenes en cargarse. Experience Manager recomienda estas directrices para grabar imágenes para utilizarlas en conjuntos de giros:
 
 * Como mínimo, utilice 8-12 imágenes en un conjunto de giros unidimensional y 16-24 imágenes en un conjunto de giros bidimensional. Es necesario un mínimo de 8 imágenes para poder girar 360°. Los conjuntos de giros unidimensionales son más comunes, ya que la creación de conjuntos de giros bidimensionales requiere mucha mano de obra.
 * Utilice un formato sin pérdidas; se recomienda TIFF y PNG.
@@ -112,7 +149,7 @@ En esta sección se describe cómo crear conjuntos de giros.
 >
 >También puede crear conjuntos de giros automáticamente mediante los [ajustes preestablecidos de conjuntos de lotes](/help/assets/dynamic-media/config-dm.md). **Importante:** IPS (Image Production System) crea los conjuntos de lotes como parte de la ingesta de recursos.
 >
->Consulte &quot;Creación de ajustes preestablecidos de conjunto por lotes para generar automáticamente conjuntos de imágenes y conjuntos de giros&quot; en [Configuración de Dynamic Media](/help/assets/dynamic-media/config-dm.md).
+>Consulte &quot;Creación de ajustes preestablecidos de conjunto por lotes para generar automáticamente conjuntos de imágenes y conjuntos de giros&quot; en [Configurar Dynamic Media](/help/assets/dynamic-media/config-dm.md).
 
 >[!NOTE]
 >
@@ -124,7 +161,7 @@ Al crear un conjunto de giros, Adobe recomienda la siguiente práctica recomenda
 | --- | --- | --- |
 | Número máximo de filas/columnas por conjunto 2D | 12 a 18 imágenes por conjunto | 1000 |
 
-Ver también [limitaciones de Dynamic Media](/help/assets/dynamic-media/limitations.md).
+Consulte también [Limitaciones de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 **Para crear conjuntos de giros:**
 
@@ -138,7 +175,7 @@ Ver también [limitaciones de Dynamic Media](/help/assets/dynamic-media/limitati
 
    >[!NOTE]
    >
-   >Al crear el conjunto de giros, puede cambiar la miniatura del conjunto de giros o permitir que el Experience Manager seleccione la miniatura automáticamente en función de los recursos del conjunto de giros. Para seleccionar una miniatura, selecciona **[!UICONTROL Cambiar miniatura]** y selecciona cualquier imagen (también puedes navegar a otras carpetas para buscar imágenes). Si ha seleccionado una miniatura y, a continuación, decide que quiere que Experience Manager genere una del conjunto de giros, seleccione **[!UICONTROL Cambiar a miniatura automática]**.
+   >Al crear el conjunto de giros, puede cambiar la miniatura del conjunto de giros o permitir que Experience Manager seleccione la miniatura automáticamente en función de los recursos del conjunto de giros. Para seleccionar una miniatura, selecciona **[!UICONTROL Cambiar miniatura]** y selecciona cualquier imagen (también puedes navegar a otras carpetas para buscar imágenes). Si ha seleccionado una miniatura y, a continuación, decide que quiere que Experience Manager genere una del conjunto de giros, seleccione **[!UICONTROL Cambiar a Miniatura automática]**.
 
 1. Realice una de las siguientes acciones:
 
@@ -190,7 +227,7 @@ Puede crear conjuntos de giros en la interfaz de usuario o automáticamente medi
 
 1. Desde la búsqueda, puede seleccionar **[!UICONTROL Filtros]**, luego expandir **[!UICONTROL Dynamic Media]** y seleccionar **[!UICONTROL Conjuntos]**.
 
-   La búsqueda devuelve conjuntos coincidentes creados manualmente en la interfaz de usuario o creados automáticamente mediante ajustes preestablecidos de conjuntos de lotes. Para los conjuntos automatizados, la búsqueda se realiza usando `Starts with` criterios de búsqueda diferentes de la búsqueda del Experience Manager que se basa en el uso de `Contains` criterios de búsqueda. Establecer el filtro en **[!UICONTROL Conjuntos]** es la única manera de buscar conjuntos automatizados.
+   La búsqueda devuelve conjuntos coincidentes creados manualmente en la interfaz de usuario o creados automáticamente mediante ajustes preestablecidos de conjuntos de lotes. Para los conjuntos automatizados, la consulta de búsqueda se realiza usando `Starts with` criterios de búsqueda que son diferentes de la búsqueda de Experience Manager que se basa en el uso de `Contains` criterios de búsqueda. Establecer el filtro en **[!UICONTROL Conjuntos]** es la única manera de buscar conjuntos automatizados.
 
    ![chlimage_1-158](assets/chlimage_1-386.png)
 
@@ -218,7 +255,7 @@ Puede realizar varias tareas de edición en conjuntos de giros, como las siguien
    * Para reordenar las imágenes, arrastre una imagen a una nueva ubicación (seleccione el icono de reordenar para mover los elementos).
    * Para ordenar los elementos en orden ascendente o descendente, seleccione el encabezado de la columna.
    * Para agregar un recurso o actualizar un recurso existente, seleccione **[!UICONTROL Agregar recurso]**. Vaya a un recurso, selecciónelo y, a continuación, seleccione **[!UICONTROL Seleccionar]** cerca de la esquina superior derecha.
-Si elimina la imagen que el Experience Manager utiliza para la miniatura reemplazándola por otra imagen, se seguirá mostrando el recurso original.
+Si elimina la imagen que Experience Manager utiliza para la miniatura reemplazándola por otra imagen, se seguirá mostrando el recurso original.
    * Para eliminar un recurso, selecciónelo y seleccione **[!UICONTROL Eliminar recurso]**.
    * Para aplicar un ajuste preestablecido, seleccione el icono Ajuste preestablecido y elija uno.
    * Para eliminar un conjunto de giros completo, ve al conjunto de giros, selecciónalo y selecciona **[!UICONTROL Eliminar]**
@@ -232,6 +269,6 @@ Si elimina la imagen que el Experience Manager utiliza para la miniatura reempla
 
 Consulte [Vista previa de recursos](/help/assets/dynamic-media/previewing-assets.md).
 
-## Conjuntos de giros Publish {#publishing-spin-sets}
+## Publicar conjuntos de giros {#publishing-spin-sets}
 
-Consulte [recursos de Publish](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Consulte [Publicar recursos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).

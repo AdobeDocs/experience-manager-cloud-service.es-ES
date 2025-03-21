@@ -9,17 +9,51 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1686'
-ht-degree: 83%
+source-wordcount: '1714'
+ht-degree: 82%
 
 ---
 
 # Configuración de la transcripción en [!DNL Experience Manager Assets] {#configure-transcription-service}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 La transcripción es el proceso de pasar el audio de un archivo de audio o vídeo a texto (voz a texto) utilizando la tecnología de reconocimiento de voz.
 [!DNL Adobe Experience Manager Assets] está configurado con [!DNL Azure Media Services], que genera automáticamente la transcripción textual del idioma hablado en un archivo de audio o vídeo compatible en formato WebVTT (.vtt). Cuando se procesa un recurso de audio o vídeo en [!DNL Experience Manager Assets], el servicio de transcripción genera automáticamente la representación de transcripción de texto del recurso de audio o vídeo y la almacena en la misma ubicación del repositorio de Assets en la que reside el recurso original. El servicio de transcripción [!DNL Experience Manager Assets] permite a los especialistas en marketing administrar de forma eficaz el contenido de audio y vídeo con una mayor capacidad de detección del contenido de texto y aumentar el retorno de la inversión de estos recursos al admitir la accesibilidad y la localización.
@@ -102,7 +136,7 @@ Una vez configurado el perfil de procesamiento para la transcripción de archivo
 >
 >Un perfil de procesamiento aplicado a una carpeta funciona para todo el árbol, sin embargo, se puede sobrescribir con otro perfil aplicado a una subcarpeta.
 >
->Cuando los recursos se cargan en una carpeta, el Experience Manager se comunica con las propiedades de la carpeta contenedora para identificar el perfil de procesamiento. Si no se aplica ninguno, se comprueba la existencia de un perfil de procesamiento en una carpeta principal de la jerarquía.
+>Cuando los recursos se cargan en una carpeta, Experience Manager se comunica con las propiedades de la carpeta contenedora para identificar el perfil de procesamiento. Si no se aplica ninguno, se comprueba la existencia de un perfil de procesamiento en una carpeta principal de la jerarquía.
 
 
 ## Generación de transcripciones de recursos de audio o vídeo {#generate-transcription}

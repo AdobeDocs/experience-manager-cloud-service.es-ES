@@ -1,22 +1,56 @@
 ---
-title: AEM ¿Cómo se agregan etiquetas inteligentes a los recursos en la?
-description: AEM Añada etiquetas inteligentes a los recursos en con un servicio inteligente artificialmente que aplique etiquetas comerciales contextuales y descriptivas.
+title: ¿Cómo se agregan etiquetas inteligentes a los recursos en AEM?
+description: Añada etiquetas inteligentes a los recursos en AEM con un servicio inteligente artificialmente que aplique etiquetas comerciales contextuales y descriptivas.
 contentOwner: AG
 feature: Smart Tags
 role: Admin, User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2506'
 ht-degree: 7%
 
 ---
 
 
-# AEM Adición de etiquetas inteligentes a los recursos en la {#smart-tags-assets-aem}
+# Adición de etiquetas inteligentes a los recursos en AEM {#smart-tags-assets-aem}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -27,17 +61,17 @@ Las organizaciones que trabajan con recursos digitales utilizan cada vez más vo
 
 En comparación con los vocabularios de lenguajes naturales, el etiquetado basado en la taxonomía empresarial ayuda a alinear los recursos con el negocio de una empresa y garantiza que los recursos más relevantes aparezcan en las búsquedas. Por ejemplo, un fabricante de automóviles puede etiquetar imágenes de automóviles con nombres de modelos para que solo se muestren imágenes relevantes cuando se busquen para diseñar una campaña de promoción.
 
-En segundo plano, la funcionalidad usa el marco artificial inteligente de [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar las etiquetas relevantes a un conjunto diferente de recursos. AEM De forma predeterminada, la aplicación de etiquetas inteligentes a los recursos cargados se aplica de forma predeterminada.
+En segundo plano, la funcionalidad usa el marco artificial inteligente de [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar las etiquetas relevantes a un conjunto diferente de recursos. De forma predeterminada, AEM aplica etiquetas inteligentes a los recursos cargados.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-## AEM Tipos de recursos compatibles con las etiquetas inteligentes en la {#smart-tags-supported-file-formats}
+## Tipos de recursos compatibles con las etiquetas inteligentes en AEM {#smart-tags-supported-file-formats}
 
 Puede etiquetar los siguientes tipos de recursos:
 
-* **Imágenes**: las imágenes en muchos formatos se etiquetan usando los servicios de contenido inteligente de Adobe Sensei. Ha [creado un modelo de formación](#train-model) y, a continuación, las imágenes cargadas se etiquetan automáticamente. Las etiquetas inteligentes se aplican a los tipos de archivo compatibles que generan representaciones en formato JPG y PNG.
+* **Imágenes**: las imágenes en muchos formatos se etiquetan usando los servicios de contenido inteligente de Adobe Sensei. Ha [creado un modelo de formación](#train-model) y, a continuación, las imágenes cargadas se etiquetan automáticamente. Las etiquetas inteligentes se aplican a los tipos de archivo admitidos que generan representaciones en formato JPG y PNG.
 * **Recursos basados en texto**: [!DNL Experience Manager Assets] etiqueta automáticamente los recursos basados en texto admitidos cuando se cargaron.
 * **Recursos de vídeo**: el etiquetado de vídeo está habilitado de forma predeterminada en [!DNL Adobe Experience Manager] como [!DNL Cloud Service]. [Los vídeos se etiquetan automáticamente](/help/assets/smart-tags-video-assets.md) al cargar vídeos nuevos o al volver a procesar los existentes.
 
@@ -45,7 +79,7 @@ Puede etiquetar los siguientes tipos de recursos:
 |----|-----|------|
 | image/jpeg | CSV | MP4 (H264/AVC) |
 | image/tiff | DOC | MKV (H264/AVC) |
-| image/png | DOCX | MOV (H264/AVC, JPEG de movimiento) |
+| image/png | DOCX | MOV (H264/AVC, Motion JPEG) |
 | image/bmp | HTML | AVI (indeo4) |
 | image/gif | PDF | FLV (H264/AVC, vp6f) |
 | image/pjpeg | PPT | WMV (WMV2) |
@@ -62,7 +96,7 @@ Puede etiquetar los siguientes tipos de recursos:
 | image/psd |  |  |
 | image/vnd.adobe.photoshop |  |  |
 
-AEM De forma predeterminada, las Etiquetas inteligentes se añaden automáticamente a los recursos basados en texto y a los vídeos. Para agregar automáticamente etiquetas inteligentes a las imágenes, complete las siguientes tareas.
+AEM agrega automáticamente las etiquetas inteligentes a los recursos basados en texto y a los vídeos de forma predeterminada. Para agregar automáticamente etiquetas inteligentes a las imágenes, complete las siguientes tareas.
 
 * [Comprenda los modelos de etiquetas y las directrices](#understand-tag-models-guidelines).
 * [Entrenar el modelo](#train-model).
@@ -97,11 +131,11 @@ Asegúrese de que las imágenes del conjunto de formación se ajusten a las sigu
 
 ![Imágenes ilustrativas para ejemplificar las directrices de formación](assets/do-not-localize/completeness.png)
 
-**Número de etiquetas**: el Adobe recomienda entrenar un modelo con al menos dos etiquetas distintas y al menos diez imágenes diferentes para cada etiqueta. En un modelo de etiqueta única, no agregue más de 50 etiquetas.
+**Número de etiquetas**: Adobe recomienda entrenar un modelo con al menos dos etiquetas distintas y al menos diez imágenes diferentes para cada etiqueta. En un modelo de etiqueta única, no agregue más de 50 etiquetas.
 
-**Número de ejemplos**: Para cada etiqueta, agregue al menos diez ejemplos. Sin embargo, el Adobe recomienda unos 30 ejemplos. Se admite un máximo de 50 ejemplos por etiqueta.
+**Número de ejemplos**: Para cada etiqueta, agregue al menos diez ejemplos. Sin embargo, Adobe recomienda unos 30 ejemplos. Se admite un máximo de 50 ejemplos por etiqueta.
 
-**Evitar falsos positivos y conflictos**: el Adobe recomienda crear un solo modelo de etiquetas para un solo aspecto visual. Estructurar los modelos de etiquetas de forma que se eviten las etiquetas superpuestas entre los modelos. Por ejemplo, no utilice etiquetas comunes como `sneakers` en dos nombres de modelos de etiquetas diferentes: `shoes` y `footwear`. El proceso de formación sobrescribe un modelo de etiqueta entrenado con el otro para una palabra clave común.
+**Evitar falsos positivos y conflictos**: Adobe recomienda crear un solo modelo de etiquetas para un solo aspecto visual. Estructurar los modelos de etiquetas de forma que se eviten las etiquetas superpuestas entre los modelos. Por ejemplo, no utilice etiquetas comunes como `sneakers` en dos nombres de modelos de etiquetas diferentes: `shoes` y `footwear`. El proceso de formación sobrescribe un modelo de etiqueta entrenado con el otro para una palabra clave común.
 
 **Ejemplos**: Algunos ejemplos más para obtener orientación son:
 
@@ -192,7 +226,7 @@ Para comprobar si el servicio Etiquetas inteligentes ha recibido formación sobr
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
-## AEM Etiquetado de recursos con etiquetas inteligentes en la aplicación de etiquetas {#tag-assets}
+## Etiquetado de recursos con etiquetas inteligentes en AEM {#tag-assets}
 
 [!DNL Experience Manager Assets] etiqueta automáticamente todos los tipos de recursos compatibles al cargarlos. El etiquetado está habilitado y funciona de forma predeterminada. AEM aplica las etiquetas inteligentes adecuadas en tiempo casi real. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
@@ -259,7 +293,7 @@ Para buscar archivos con etiquetas inteligentes (regulares o mejoradas), use la 
 >[!NOTE]
 >
 >La capacidad de las etiquetas inteligentes para aprender sobre sus etiquetas y aplicarlas en otras imágenes depende de la calidad de las imágenes que utilice para la formación.
->Para obtener los mejores resultados, Adobe recomienda utilizar imágenes visualmente similares para entrenar el servicio de para cada etiqueta.
+>Para obtener los mejores resultados, Adobe recomienda utilizar imágenes visualmente similares para entrenar el servicio para cada etiqueta.
 
 **Consulte también**
 

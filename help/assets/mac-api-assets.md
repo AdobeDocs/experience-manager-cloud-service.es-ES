@@ -5,26 +5,60 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 3143ca304ec7ff56d45502a3fd5e49b3b9ed6ce4
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1737'
 ht-degree: 6%
 
 ---
 
 # Administrar recursos digitales con la API HTTP [!DNL Adobe Experience Manager Assets]{#assets-http-api}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación de desarrollador de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=en) |
 | AEM as a Cloud Service | Este artículo |
 
-## AEM Introducción a la API HTTP de [!DNL Assets] de la {#overview}
+## Introducción a la API HTTP de AEM [!DNL Assets] {#overview}
 
-AEM La API HTTP de [!DNL Assets] permite las operaciones CRUD (crear, leer, actualizar y eliminar) en recursos digitales a través de una interfaz REST disponible en /`api/assets`. Estas operaciones se aplican a los metadatos de recursos, las representaciones y los comentarios. Incluye [compatibilidad con fragmentos de contenido](/help/assets/content-fragments/assets-api-content-fragments.md).
+La API HTTP de AEM [!DNL Assets] habilita las operaciones CRUD (crear, leer, actualizar y eliminar) en recursos digitales a través de una interfaz REST disponible en /`api/assets`. Estas operaciones se aplican a los metadatos de recursos, las representaciones y los comentarios. Incluye [compatibilidad con fragmentos de contenido](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 >[!NOTE]
 >
@@ -35,7 +69,7 @@ Para acceder a la API:
 1. Abra el documento de servicio de API en `https://[hostname]:[port]/api.json`.
 1. Seguir el vínculo de servicio [!DNL Assets] que lleva a `https://[hostname]:[server]/api/assets.json`.
 
-La respuesta de la API es un archivo JSON para algunos tipos de MIME y un código de respuesta para todos los tipos de MIME. La respuesta JSON es opcional y es posible que no esté disponible, por ejemplo, para archivos de PDF. Confíe en el código de respuesta para realizar más análisis o acciones.
+La respuesta de la API es un archivo JSON para algunos tipos de MIME y un código de respuesta para todos los tipos de MIME. La respuesta JSON es opcional y es posible que no esté disponible, por ejemplo, para los archivos PDF. Confíe en el código de respuesta para realizar más análisis o acciones.
 
 >[!NOTE]
 >
@@ -49,7 +83,7 @@ Para obtener más información, consulte [Compatibilidad con fragmentos de conte
 
 >[!NOTE]
 >
->AEM Consulte [API de para la administración y entrega de contenido estructurado](/help/headless/apis-headless-and-content-fragments.md) para obtener una descripción general de las diversas API disponibles y una comparación de algunos de los conceptos involucrados.
+>Consulte [API de AEM para la administración y entrega de contenido estructurado](/help/headless/apis-headless-and-content-fragments.md) para obtener una descripción general de las diversas API disponibles y una comparación de algunos de los conceptos involucrados.
 >
 >Las [OpenAPI de fragmento de contenido y modelo de fragmento de contenidos](/help/headless/content-fragment-openapis.md) también están disponibles.
 
@@ -88,7 +122,7 @@ En [!DNL Experience Manager], un recurso contiene los siguientes elementos:
 
 * **Propiedades y metadatos:** Información descriptiva sobre el recurso.
 * **Archivo binario:** El archivo cargado originalmente.
-* **Representaciones:** varias representaciones configuradas (como imágenes en varios tamaños, diferentes codificaciones de vídeo o páginas extraídas de archivos de Adobe InDesign o PDF).
+* **Representaciones:** varias representaciones configuradas (como imágenes en varios tamaños, diferentes codificaciones de vídeo o páginas extraídas de archivos PDF/Adobe InDesign).
 * **Comentarios (opcional):** Comentarios proporcionados por el usuario.
 
 Para obtener información sobre los elementos de los fragmentos de contenido, consulte [Compatibilidad con fragmentos de contenido en la API HTTP de Experience Manager Assets](/help/assets/content-fragments/assets-api-content-fragments.md).

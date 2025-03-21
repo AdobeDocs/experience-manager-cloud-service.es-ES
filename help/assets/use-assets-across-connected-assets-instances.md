@@ -6,18 +6,52 @@ mini-toc-levels: 2
 feature: Asset Management, Connected Assets, Asset Distribution
 role: Admin, User, Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '3887'
-ht-degree: 13%
+source-wordcount: '3915'
+ht-degree: 14%
 
 ---
 
 
 # Use Assets conectado para compartir recursos DAM en [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -28,7 +62,7 @@ En las grandes empresas se puede distribuir la infraestructura necesaria para cr
 
 >[!NOTE]
 >
->El Adobe recomienda aprovechar Dynamic Media con las funcionalidades de OpenAPI para conectar el as a Cloud Service de AEM Assets y AEM Sites. Ver [Integrar AEM Assets remoto con AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md).
+>Adobe recomienda aprovechar Dynamic Media con las funciones de OpenAPI para conectar a los AEM Assets con as a Cloud Service y AEM Sites. Ver [Integrar AEM Assets remotos con AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md).
 
 La funcionalidad de Assets conectado admite los casos de uso anteriores al integrar [!DNL Experience Manager Sites] y [!DNL Experience Manager Assets]. Los usuarios pueden crear páginas web en [!DNL Sites] que utilicen los recursos digitales de [!DNL Assets] implementaciones independientes.
 
@@ -47,7 +81,7 @@ Para los autores de [!DNL Sites], los recursos remotos están disponibles como r
 Antes de usar o configurar esta capacidad, asegúrese de lo siguiente:
 
 * Los usuarios forman parte de los grupos correspondientes en cada implementación.
-* Para [!DNL Adobe Experience Manager] tipos de implementación, se cumple uno de los criterios admitidos. [!DNL Experience Manager] el as a Cloud Service [!DNL Assets] funciona con [!DNL Experience Manager] 6.5. Para obtener más información sobre cómo funciona esta funcionalidad en [!DNL Experience Manager] 6.5, consulte [Assets conectado en [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
+* Para [!DNL Adobe Experience Manager] tipos de implementación, se cumple uno de los criterios admitidos. [!DNL Experience Manager] as a Cloud Service [!DNL Assets] funciona con [!DNL Experience Manager] 6.5. Para obtener más información sobre cómo funciona esta funcionalidad en [!DNL Experience Manager] 6.5, consulte [Assets conectado en [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
 
   | | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] en AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] local |
   |---|---|---|---|
@@ -78,9 +112,9 @@ A continuación se describen las distintas funciones que se deben configurar, la
 
 ### Arquitectura de Assets conectada {#connected-assets-architecture}
 
-El Experience Manager le permite conectar una implementación remota de DAM como origen a varias implementaciones del Experience Manager [!DNL Sites]. Sin embargo, puede conectar una implementación de [!DNL Sites] con una sola implementación de DAM remota.
+Experience Manager le permite conectar una implementación remota de DAM como origen a varias implementaciones de Experience Manager [!DNL Sites]. Sin embargo, puede conectar una implementación de [!DNL Sites] con una sola implementación de DAM remota.
 
-Evalúe la cantidad óptima de instancias de Sites para conectarse a una implementación remota de DAM. El Adobe recomienda conectar gradualmente las instancias de Sites a la implementación y probar que no hay ningún impacto en el rendimiento en el DAM remoto, ya que cada instancia de Sites conectada contribuye al tráfico de datos en el DAM remoto.
+Evalúe la cantidad óptima de instancias de Sites para conectarse a una implementación remota de DAM. Adobe recomienda conectar gradualmente las instancias de Sites a la implementación y probar que no hay ningún impacto en el rendimiento en el DAM remoto, ya que cada instancia de Sites conectada contribuye al tráfico de datos en el DAM remoto.
 
 Los siguientes diagramas ilustran los escenarios admitidos:
 
@@ -172,9 +206,9 @@ Para configurar [!DNL Dynamic Media] en [!DNL Assets] y [!DNL Sites] implementac
 1. Configure [!DNL Dynamic Media] en [!DNL Sites] locales e implementaciones [!DNL Assets] remotas. Siga las instrucciones para [configurar [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
    * Utilice el mismo nombre de empresa en todas las configuraciones.
-   * En [!DNL Sites] local, en [!UICONTROL modo de sincronización con Dynamic Media], seleccione **[!UICONTROL Deshabilitado de forma predeterminada]**. La implementación [!DNL Sites] debe tener acceso de solo lectura a la cuenta [!DNL Dynamic Media].
-   * En [!DNL Sites] local, en la opción **[!UICONTROL Publish Assets]**, seleccione **[!UICONTROL Publish selectivo]**. No seleccione **[!UICONTROL Sincronizar todo el contenido]**.
-   * En la implementación remota de [!DNL Assets], en [!UICONTROL modo de sincronización con Dynamic Media], seleccione **[!UICONTROL Habilitado de forma predeterminada]**.
+   * En [!DNL Sites] local, en [!UICONTROL modo de sincronización de Dynamic Media], seleccione **[!UICONTROL Deshabilitado de forma predeterminada]**. La implementación [!DNL Sites] debe tener acceso de solo lectura a la cuenta [!DNL Dynamic Media].
+   * En [!DNL Sites] local, en la opción **[!UICONTROL Publicar Assets]**, seleccione **[!UICONTROL Publicación selectiva]**. No seleccione **[!UICONTROL Sincronizar todo el contenido]**.
+   * En la implementación remota de [!DNL Assets], en [!UICONTROL modo de sincronización de Dynamic Media], seleccione **[!UICONTROL Habilitado de forma predeterminada]**.
 
 1. Habilitar compatibilidad con [[!DNL Dynamic Media] en el componente principal de imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Esta característica permite que el [componente de imagen](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html) predeterminado muestre [!DNL Dynamic Media] imágenes cuando los autores utilizan [!DNL Dynamic Media] imágenes en páginas web en la implementación local de [!DNL Sites].
 
@@ -253,9 +287,9 @@ Al mover un recurso de una ubicación a otra, asegúrese de [ajustar las referen
 
 También puede actualizar las propiedades de metadatos de un recurso en DAM remoto y los cambios están disponibles en la implementación local de Sites.
 
-AEM Los creadores de Sites pueden obtener una vista previa de las actualizaciones disponibles en la implementación de Sites y, a continuación, volver a publicar los cambios para que estén disponibles en la instancia de publicación de la.
+Los creadores de Sites pueden obtener una vista previa de las actualizaciones disponibles en la implementación de Sites y, a continuación, volver a publicar los cambios para que estén disponibles en la instancia de publicación de AEM.
 
-El Experience Manager muestra un indicador visual de estado `expired` en los recursos del Buscador de contenido de Assets remoto para impedir que los creadores del sitio usen el recurso en una página de Sites. Si utiliza un recurso con un estado `expired` en una página de Sites, el recurso no se mostrará en la instancia de publicación del Experience Manager.
+Experience Manager muestra un indicador visual de estado `expired` en los recursos del Buscador de contenido de Assets remoto para impedir que los creadores del sitio usen el recurso en una página de Sites. Si utiliza un recurso con un estado `expired` en una página de Sites, el recurso no se mostrará en la instancia de publicación de Experience Manager.
 
 ## Preguntas frecuentes {#frequently-asked-questions}
 
@@ -283,7 +317,7 @@ Puede conectar una implementación remota de DAM a una implementación de [!DNL 
 
 +++
 
-+++**¿Puede utilizar recursos de Dynamic Media de su implementación de [!DNL Sites] después de configurar Connected Assets?**
++++**¿Puede utilizar recursos de Dynamic Media desde su implementación de [!DNL Sites] después de configurar Connected Assets?**
 
 Después de configurar Connected Assets, los recursos de [!DNL Dynamic Media] están disponibles en la implementación de [!DNL Sites] en modo de solo lectura. Como resultado, no puede usar [!DNL Dynamic Media] para procesar recursos en la implementación de [!DNL Sites]. Para obtener más información, consulte [Configuración de una conexión entre las implementaciones de Sites y Dynamic Media](#dynamic-media-assets).
 

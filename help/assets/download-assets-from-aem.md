@@ -5,17 +5,51 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1354'
-ht-degree: 4%
+source-wordcount: '1382'
+ht-degree: 5%
 
 ---
 
 # Descargar recursos de [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -32,11 +66,11 @@ Puede descargar recursos, incluidas representaciones estáticas y dinámicas. Ta
 
 No se pueden descargar los siguientes tipos de recursos: conjuntos de imágenes, conjuntos de giros, conjuntos de medios mixtos y conjuntos de carrusel.
 
-Puede descargar recursos desde Experience Manager mediante los siguientes métodos:
+Puede descargar recursos desde Experience Manager mediante los métodos siguientes:
 
 <!-- * [Link Share](#link-share-download) -->
 
-* [Interfaz de usuario del Experience Manager](#download-assets)
+* [Interfaz de usuario de Experience Manager](#download-assets)
 * [Uso compartido de recursos Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
@@ -58,9 +92,9 @@ Las descargas asincrónicas se activan en cualquiera de los siguientes casos:
 * Si el tamaño de la descarga es superior a 100 MB
 * Si la descarga tarda más de 30 segundos en prepararse
 
-Mientras que la descarga asincrónica se ejecuta en el back-end de, el usuario puede seguir explorando y trabajando más en Experience Manager. Además de las notificaciones de la bandeja de entrada del Experience Manager, el Experience Manager puede enviar correos electrónicos para notificar al usuario una vez completado el proceso de descarga. Para habilitar esta función, los administradores pueden configurar el servicio de correo electrónico al [configurar una conexión de servidor SMTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+Mientras que la descarga asincrónica se ejecuta en el servidor, el usuario puede seguir explorando y trabajando en Experience Manager. Además de las notificaciones de la bandeja de entrada de Experience Manager, Experience Manager puede enviar correos electrónicos para notificar al usuario una vez completado el proceso de descarga. Para habilitar esta función, los administradores pueden configurar el servicio de correo electrónico al [configurar una conexión de servidor SMTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
-Una vez configurado el servicio de correo electrónico, los administradores y los usuarios pueden activar las notificaciones por correo electrónico desde la interfaz del Experience Manager.
+Una vez configurado el servicio de correo electrónico, los administradores y usuarios pueden activar las notificaciones por correo electrónico desde la interfaz de Experience Manager.
 
 Para habilitar las notificaciones por correo electrónico:
 
@@ -113,7 +147,7 @@ La [!UICONTROL Bandeja de entrada de descarga] muestra el estado de procesamient
 
 El servlet predeterminado en [!DNL Experience Manager] permite que los usuarios autenticados emitan solicitudes de descarga simultáneas y arbitrariamente grandes para crear archivos ZIP de recursos. La preparación de la descarga puede tener implicaciones de rendimiento o incluso puede sobrecargar el servidor y la red. Para mitigar estos riesgos potenciales de tipo DoS causados por esta característica, el componente OSGi `AssetDownloadServlet` está deshabilitado para las instancias de publicación. Si no necesita la función de descarga en instancias de autor, deshabilite el servlet en Author.
 
-Para permitir la descarga de recursos desde su DAM, por ejemplo, cuando utilice algo como Asset Share Commons u otra implementación similar a un portal, habilite manualmente el servlet a través de una configuración OSGi. El Adobe recomienda configurar el tamaño de descarga permitido lo más bajo posible sin afectar a los requisitos de descarga diarios. Un valor alto puede afectar al rendimiento.
+Para permitir la descarga de recursos desde su DAM, por ejemplo, cuando utilice algo como Asset Share Commons u otra implementación similar a un portal, habilite manualmente el servlet a través de una configuración OSGi. Adobe recomienda configurar el tamaño de descarga permitido lo más bajo posible sin afectar a los requisitos de descarga diarios. Un valor alto puede afectar al rendimiento.
 
 1. Cree una carpeta con una convención de nombres que se dirija al modo de ejecución de publicación, es decir, `config.publish`:
 
@@ -166,5 +200,5 @@ Para obtener más información sobre cómo agregar una configuración OSGi vací
 >[!MORELIKETHIS]
 >
 >* [Descargar recursos protegidos por DRM](drm.md)
->* [Descargar recursos con la aplicación de escritorio de Experience Manager en equipos de escritorio Win o Mac](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
->* [Descargue recursos mediante el vínculo Assets de Adobe desde las aplicaciones Adobe Creative Cloud compatibles](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [Descargar recursos mediante la aplicación de escritorio de Experience Manager en Windows o Mac Desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+>* [Descargue recursos mediante Adobe Assets Link desde las aplicaciones de Adobe Creative Cloud admitidas](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html)

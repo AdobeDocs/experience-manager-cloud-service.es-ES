@@ -1,27 +1,61 @@
 ---
-title: ¿Cómo le beneficia la vista de Assets AEM en el caso de los?
-description: Obtenga más información acerca de las ventajas clave de la vista de Assets AEM en la. Adobe, con su experiencia en el empoderamiento de los profesionales creativos y de marketing, presenta una nueva experiencia de usuario que cambia el juego.
+title: ¿En qué le beneficia la vista de Assets en AEM?
+description: Obtenga más información sobre las ventajas clave de la vista de Assets en AEM. Adobe, con su experiencia en el empoderamiento de los profesionales creativos y de marketing, presenta una nueva experiencia de usuario que cambia el panorama.
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: f64f6d90c6ae2490be4be5067df0f96e9df6be38
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '1012'
 ht-degree: 68%
 
 ---
 
 # Presentación de la vista Assets {#assets-view}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación de desarrollador de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 ![Implementación de Assets Essentials](assets/banner-image.jpg)
 
-En el vertiginoso panorama digital actual, en el que la creación y la entrega de contenido en tiempo real son esenciales, es primordial contar con una experiencia de gestión de activos digitales (DAM) diseñada para la velocidad de marketing descendente. Adobe, con su experiencia en el empoderamiento de los profesionales creativos y de marketing, presenta una nueva experiencia de usuario que cambia el juego. Este enfoque, que da prioridad al flujo de trabajo, revoluciona la forma en que las empresas gestionan sus recursos digitales dinámicos, lo que permite a los especialistas en marketing maximizar la eficacia a la hora de buscar, colaborar, personalizar y entregar recursos. Estos flujos de trabajo optimizados aceleran la velocidad del contenido e impulsan los esfuerzos de marketing a nuevas cuotas.
+En el vertiginoso panorama digital actual, en el que la creación y la entrega de contenido en tiempo real son esenciales, es primordial contar con una experiencia de gestión de activos digitales (DAM) diseñada para la velocidad de marketing descendente. Adobe, con su experiencia en el empoderamiento de los profesionales creativos y de marketing, presenta una nueva experiencia de usuario que cambia el panorama. Este enfoque, que da prioridad al flujo de trabajo, revoluciona la forma en que las empresas gestionan sus recursos digitales dinámicos, lo que permite a los especialistas en marketing maximizar la eficacia a la hora de buscar, colaborar, personalizar y entregar recursos. Estos flujos de trabajo optimizados aceleran la velocidad del contenido e impulsan los esfuerzos de marketing a nuevas cuotas.
 
-Para obtener más información acerca de las experiencias basadas en personas disponibles para el as a Cloud Service de Assets, consulta [Presentación del as a Cloud Service de Assets](/help/assets/overview.md#persona-based-experiences).
+Para obtener más información sobre las experiencias basadas en personas disponibles para Assets as a Cloud Service, consulta [Presentación de Assets as a Cloud Service](/help/assets/overview.md#persona-based-experiences).
 
 ## ¿Cómo acceder a la vista Recursos? {#access-assets-view}
 
@@ -68,7 +102,7 @@ Reciba una solución de administración de activos digitales que comprende las d
 
 ![Información general de Mi espacio de trabajo](assets/my-workspace-demo.gif)
 
-[![Ver la guía](assets/see-the-guide-sm.png)](my-workspace-assets-view.md)
+[![Consulte la guía](assets/see-the-guide-sm.png)](my-workspace-assets-view.md)
 
 ### Perspectivas para tomar decisiones basadas en datos {#insights-data}
 
@@ -76,7 +110,7 @@ Para mantener el ritmo de la velocidad del contenido son esenciales perspectivas
 
 ![Información general sobre Insights](assets/insights-overview.gif)
 
-[![Ver la guía](assets/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
+[![Consulte la guía](assets/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
 
 ### Integración de Adobe Photoshop Express para acelerar la colaboración {#accelerate-collaboration}
 
@@ -86,9 +120,9 @@ Vea este vídeo para comprender la potencia de la integración de la vista de re
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420922)
 
-[![Ver la guía](assets/see-the-guide-sm.png)](edit-images-assets-view.md)
+[![Consulte la guía](assets/see-the-guide-sm.png)](edit-images-assets-view.md)
 
-Las próximas versiones para el as a Cloud Service de Assets también incluirían la integración de [Adobe Firefly mediante el Adobe Express](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838).
+Las próximas versiones para Assets as a Cloud Service también incluirían la integración de [Adobe Firefly mediante Adobe Express](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838).
 
 ### Cargas de carpetas para configurar la estructura jerárquica de su organización {#folder-uploads}
 
@@ -96,7 +130,7 @@ Configure rápidamente una estructura de carpetas para su organización mediante
 
 ![Carga de carpetas](assets/folder-uploads.gif)
 
-[![Ver la guía](assets/see-the-guide-sm.png)](add-delete-assets-view.md)
+[![Consulte la guía](assets/see-the-guide-sm.png)](add-delete-assets-view.md)
 
 ### Enfoque de búsqueda prioritaria para mejorar la eficacia {#search-first}
 
@@ -110,7 +144,7 @@ La vista de Assets permite supervisar las operaciones realizadas en los recursos
 
 ![Recibir notificaciones](assets/notifications.gif)
 
-[![Ver la guía](assets/see-the-guide-sm.png)](manage-notifications-assets-view.md)
+[![Consulte la guía](assets/see-the-guide-sm.png)](manage-notifications-assets-view.md)
 
 ### Eliminación progresiva de recursos para proporcionar un mejor control a los administradores {#soft-delete-assets}
 
@@ -118,7 +152,7 @@ La carpeta Papelera disponible en la vista Recursos enumera los recursos elimina
 
 ![Eliminación progresiva](assets/soft-delete.gif)
 
-[![Ver la guía](assets/see-the-guide-sm.png)](navigate-assets-view.md)
+[![Consulte la guía](assets/see-the-guide-sm.png)](navigate-assets-view.md)
 
 Además de estas funciones, la vista Recursos también permite realizar las siguientes funciones que no están disponibles en la vista del administrador:
 

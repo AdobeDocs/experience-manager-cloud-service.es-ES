@@ -8,14 +8,51 @@ feature: Image Profiles
 role: User,Admin
 mini-toc-levels: 4
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 0%
+source-wordcount: '717'
+ht-degree: 2%
 
 ---
 
 # Acerca de la configuración de una cuenta de alias de empresa de Dynamic Media {#about-dm-alias-acct}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 <!-- hide: yes
 hidefromtoc: yes -->
@@ -24,37 +61,37 @@ hidefromtoc: yes -->
 >
 >This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) for information on how to enable the feature for your environment. The feature is generally available in the February 2022 release. -->
 
-Las direcciones URL de Dynamic Media y el código de incrustación de visor contienen el nombre de cuenta de la empresa. Este nombre de cuenta se creó en el momento del aprovisionamiento de Dynamic Media. Puede haber casos en los que su empresa haya sufrido una adquisición o un cambio de marca, o simplemente desee utilizar un nombre más memorable. En estos casos, no es fácil actualizar manualmente el nombre de la cuenta de su empresa en todas las direcciones URL y el código incrustado de visor que aparece de forma predeterminada. Además, existe la posibilidad de que afecte a su repositorio de Dynamic Media existente o al contenido en directo. Para resolver este problema, puede configurar una cuenta de alias de compañía de Dynamic Media.
+Las direcciones URL de Dynamic Media y el código incrustado de visualizador contienen el nombre de la cuenta de empresa. Este nombre de cuenta se creó en el momento del aprovisionamiento de Dynamic Media. Puede haber casos en los que su empresa haya sufrido una adquisición o un cambio de marca, o simplemente desee utilizar un nombre más memorable. En estos casos, no es fácil actualizar manualmente el nombre de la cuenta de su empresa en todas las direcciones URL y el código incrustado de visor que aparece de forma predeterminada. Además, existe la posibilidad de que afecte a su repositorio de Dynamic Media existente o al contenido en directo. Para resolver este problema, puede configurar una cuenta de alias de empresa de Dynamic Media.
 
-Una cuenta de alias de empresa de Dynamic Media garantiza que todas las URL de Dynamic Media y el código incrustado de visualizador integrados en la interfaz de usuario reflejen cualquier actualización realizada en el contexto empresarial, como el cambio de marca. Una cuenta de alias también tiene un impacto positivo en el SEO (optimización del motor de búsqueda), ya que las direcciones URL de Dynamic Media y el código de incrustación de visor reflejan el nuevo nombre de cuenta de la empresa.
+Una cuenta de alias de empresa de Dynamic Media garantiza que todas las URL de Dynamic Media y el código incrustado de visualizador integrados en la interfaz de usuario reflejen cualquier actualización realizada en el contexto empresarial, como el cambio de marca. Una cuenta de alias también tiene un impacto positivo en el SEO (optimización del motor de búsqueda), ya que las URL de Dynamic Media y el código de incrustación de visor reflejan el nuevo nombre de cuenta de la empresa.
 
-Cuando configure una cuenta de alias de compañía de Dynamic Media, tenga en cuenta lo siguiente:
+Cuando configure una cuenta de alias de empresa de Dynamic Media, tenga en cuenta lo siguiente:
 
-* Cualquier URL de Dynamic Media existente o código incrustado de visor en las propiedades digitales de *live* debe actualizarse manualmente para reflejar el nuevo nombre de alias. Sin embargo, cualquier URL o código incrustado de visualizador con el nombre original de la empresa de Dynamic Media seguirá funcionando para los recursos existentes o nuevos.
-* La capacidad de la cuenta de alias de empresa de Dynamic Media se limita al modo de creación y envío de Experience Manager Assets. El nombre del alias de la empresa no funciona con Experience Manager Sites. Los componentes WCM (Web Content Management) no se actualizan para este cambio. Estos componentes siguen funcionando con el nombre de empresa original de Dynamic Media para recuperar los recursos de Dynamic Media.
-* Solo puede configurar una cuenta de alias de compañía en la página **[!UICONTROL Editar configuración de Dynamic Media]**. Sin embargo, se pueden crear tantas cuentas de alias de compañía como sea necesario mediante un caso de soporte y reflejar manualmente el nombre de alias necesario en las URL de Dynamic Media o en el código de incrustación de visualizador.
-* La funcionalidad predeterminada [Invalidación de caché](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md) de Dynamic Media invalida las direcciones URL con las cuentas de alias de compañía y compañía configuradas en la página Configuración de Dynamic Media en Cloud Service.
-* Al configurar una cuenta de alias de compañía en la página **[!UICONTROL Editar configuración de Dynamic Media]**, para que la invalidación de la caché se realice correctamente, debe invalidar las direcciones URL de *tanto* como de la cuenta de **[!UICONTROL Compañía]** y la cuenta de **[!UICONTROL Alias de compañía]** simultáneamente.
+* Cualquier URL de Dynamic Media existente o código incrustado de visualizador en sus propiedades digitales de *live* debe actualizarse manualmente para reflejar el nuevo nombre de alias. Sin embargo, cualquier URL o código incrustado de visualizador con el nombre original de la empresa de Dynamic Media seguirá funcionando para los recursos existentes o nuevos.
+* La capacidad de la cuenta de alias de empresa de Dynamic Media se limita al modo de creación y envío de Experience Manager Assets. El nombre del alias de la empresa no funciona con Experience Manager Sites. Los componentes WCM (Web Content Management) no se actualizan para este cambio. Estos componentes siguen funcionando con el nombre de empresa original de Dynamic Media para recuperar recursos de Dynamic Media.
+* Solo puede configurar una cuenta de alias de compañía en la página **[!UICONTROL Editar configuración de Dynamic Media]**. Sin embargo, puede crear tantas cuentas de alias de compañía como desee mediante un caso de soporte y reflejar manualmente el nombre de alias necesario en las URL de Dynamic Media o en el código de incrustación de visualizador.
+* La capacidad predeterminada [Invalidación de caché](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md) de Dynamic Media invalida las direcciones URL con las cuentas de alias de compañía y compañía configuradas en la página Configuración de Dynamic Media en Cloud Services.
+* Cuando configura una cuenta de alias de compañía en la página **[!UICONTROL Editar configuración de Dynamic Media]**, para que la invalidación de la caché se realice correctamente, debe invalidar las direcciones URL de *tanto* como de **[!UICONTROL Compañía]** y la cuenta de **[!UICONTROL Alias de compañía]** simultáneamente.
 
-Consulte también [Crear una configuración de Dynamic Media en Cloud Service](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)
+Consulte también [Crear una configuración de Dynamic Media en Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)
 
 ## Configuración de una cuenta de alias de empresa de Dynamic Media {#configure-dm-alias-account}
 
-Para configurar una cuenta de alias de empresa de Dynamic Media, primero debe enviar un caso de asistencia. Este paso es obligatorio.
+Para configurar una cuenta de alias de empresa de Dynamic Media, primero envíe un caso de asistencia. Este paso es obligatorio.
 
-1. [Use el Admin Console para crear un caso de soporte](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
+1. [Use Admin Console para crear un caso de soporte](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
 1. Proporcione la siguiente información en su caso de asistencia:
 
    * El nombre de alias de empresa de Dynamic Media que desea utilizar. El nombre debe contener *solamente* letras (se permiten mayúsculas y minúsculas), números, guiones y guiones bajos.
    * Su región.
-   * Si se están usando [conjuntos de reglas](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md) anteriormente para lograr entregar contenido de Dynamic Media a través de un nombre de cuenta de compañía de Dynamic Media alternativo.
+   * Indica si se están utilizando [conjuntos de reglas](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md) anteriormente para lograr la entrega de contenido de Dynamic Media a través de un nombre de cuenta de compañía de Dynamic Media alternativo.
 
-1. Una vez que la asistencia técnica haya creado la cuenta de alias de Dynamic Media, en la instancia de autor as a Cloud Service de Experience Manager, seleccione el logotipo as a Cloud Service de Experience Manager para acceder a la consola de navegación global.
-1. A la izquierda de la consola, selecciona el ícono Herramientas y luego ve a **[!UICONTROL Cloud Service > Configuración de Dynamic Media]**.
+1. Una vez que la asistencia técnica haya creado la cuenta de alias de Dynamic Media, en la instancia de autor de Experience Manager as a Cloud Service, seleccione el logotipo de Experience Manager as a Cloud Service para acceder a la consola de navegación global.
+1. A la izquierda de la consola, selecciona el icono Herramientas y luego ve a **[!UICONTROL Cloud Services > Configuración de Dynamic Media]**.
 1. En la página Explorador de configuración de Dynamic Media, en el panel izquierdo, seleccione **[!UICONTROL global]** (no seleccione el icono de carpeta a la izquierda de **[!UICONTROL global]**). Luego selecciona **[!UICONTROL Editar]**.
 
-   ![Campo de texto Alias de compañía de Dynamic Media](/help/assets/assets-dm/dm-company-alias.png)
+   ![Campo de texto Alias de empresa de Dynamic Media](/help/assets/assets-dm/dm-company-alias.png)
 
-1. En la página **[!UICONTROL Editar configuración de Dynamic Media]**, en el campo de texto **[!UICONTROL Alias de la compañía]**, escriba el nombre de la cuenta de alias de Dynamic Media que especificó en su caso de soporte técnico anteriormente.
+1. En la página **[!UICONTROL Editar configuración de Dynamic Media]**, en el campo de texto **[!UICONTROL Alias de la empresa]**, escriba el nombre de la cuenta de alias de Dynamic Media que especificó anteriormente en su caso de soporte técnico.
 1. En la parte superior derecha de la página, selecciona **[!UICONTROL Guardar]**.
-La cuenta de alias de compañía de Dynamic Media ahora está guardada y habilitada; todas las URL y el código incrustado de visualizador de recursos existentes y nuevos ahora reflejan el nuevo nombre de alias de compañía.
+La cuenta de alias de empresa de Dynamic Media ahora está guardada y habilitada; todas las URL y el código incrustado de visualizador de recursos existentes y nuevos ahora reflejan el nuevo nombre de alias de empresa.

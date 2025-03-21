@@ -1,26 +1,60 @@
 ---
-title: Selector de recursos para [!DNL Adobe Experience Manager] como un [!DNL Cloud Service]
+title: Selector de recursos para  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service]
 description: Integre el selector de recursos con varias aplicaciones de Adobe, que no sean de Adobe y de terceros.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 4%
+source-wordcount: '930'
+ht-degree: 7%
 
 ---
 
 # Integración de Dynamic Media con funciones de OpenAPI {#integrate-asset-selector-dynamic-media-open-apis}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
-El Selector de recursos le permite integrarse utilizando varias aplicaciones de Adobe para permitirles trabajar juntos sin problemas.
+El Selector de recursos le permite integrarse utilizando varias aplicaciones de Adobe para permitir que funcionen juntas sin problemas.
 
 
 ## Requisitos previos {#prereqs-polaris}
 
-Utilice los siguientes requisitos previos si integra el Selector de recursos con Dynamic Media con las funciones de OpenAPI:
+Utilice los siguientes requisitos previos si integra el Selector de recursos con Dynamic Media con las capacidades de OpenAPI:
 
 * [Métodos de comunicación](/help/assets/overview-asset-selector.md#prereqs)
 * Para acceder a Dynamic Media con las funciones de OpenAPI, debe tener licencias para:
@@ -30,11 +64,11 @@ Utilice los siguientes requisitos previos si integra el Selector de recursos con
 
 ## Integración de Dynamic Media con funciones de OpenAPI {#adobe-app-integration-polaris}
 
-La integración del Selector de recursos con el proceso OpenAPI de Dynamic Media implica varios pasos que incluyen la creación de una URL de medios dinámicos personalizada o una URL lista para elegir, etc.
+La integración del Selector de recursos con el proceso OpenAPI de Dynamic Media implica varios pasos, entre los que se incluye la creación de una URL de Dynamic Media personalizada o una URL de Dynamic Media lista para elegir, etc.
 
 ### Integre el Selector de recursos para Dynamic Media con las funciones de OpenAPI {#integrate-dynamic-media}
 
-Las propiedades `rootPath` y `path` no deben formar parte de Dynamic Media con capacidades OpenAPI. En su lugar, puede configurar la propiedad `aemTierType`. A continuación se muestra la sintaxis de la configuración:
+Las propiedades `rootPath` y `path` no deben formar parte de Dynamic Media con capacidades de OpenAPI. En su lugar, puede configurar la propiedad `aemTierType`. A continuación se muestra la sintaxis de la configuración:
 
 ```
 aemTierType:[1: "delivery"]
@@ -107,7 +141,7 @@ A continuación se muestran las dos formas de atravesar el objeto JSON:
 
 ![URL de envío dinámico](assets/dynamic-delivery-url.png)
 
-* **Miniatura:** Las miniaturas pueden ser imágenes y recursos de PDF, vídeo, imágenes, etc. Sin embargo, puede utilizar los atributos de altura y anchura de la miniatura de un recurso como representación de envío dinámico.
+* **Miniatura:** Las miniaturas pueden ser imágenes y recursos como PDF, vídeo, imágenes, etc. Sin embargo, puede utilizar los atributos de altura y anchura de la miniatura de un recurso como representación de envío dinámico.
 Se puede utilizar el siguiente conjunto de representaciones para los recursos de tipo PDF:
 Una vez que se selecciona un pdf en la barra de tareas, el contexto de selección ofrece la siguiente información. A continuación se muestra la forma de atravesar el objeto JSON:
 
@@ -124,7 +158,7 @@ Una vez que se selecciona un pdf en la barra de tareas, el contexto de selecció
   } 
   ```
 
-En la captura de pantalla anterior, la dirección URL de entrega de la representación original del PDF debe incorporarse a la experiencia de destino si se requiere PDF y no su miniatura. Por ejemplo, `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+En la captura de pantalla anterior, la dirección URL de envío de la representación original de PDF debe incorporarse en la experiencia de destino si se requiere PDF y no su miniatura. Por ejemplo, `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
 
 * **Vídeo:** Puede usar la URL del reproductor de vídeo para los recursos de tipo de vídeo que usan un iFrame incrustado. Puede utilizar las siguientes representaciones de matrices en la experiencia de Target:
   <!--![Video dynamic delivery url](image.png)-->
@@ -140,13 +174,13 @@ En la captura de pantalla anterior, la dirección URL de entrega de la represent
 
   Puede hacer referencia a `selection[0].....selection[4]` para la matriz de vínculos de representación desde la captura de pantalla anterior. Por ejemplo, las propiedades clave de una de las representaciones de miniaturas incluyen:
 
-  El fragmento de código de la captura de pantalla anterior es un ejemplo de un recurso de vídeo. Incluye la matriz de vínculos de representaciones. El `selection[5]` del extracto es el ejemplo de una miniatura de imagen que puede utilizarse como marcador de posición de una miniatura de vídeo en la experiencia de destino. `selection[5]` en la matriz de representaciones es para el reproductor de vídeo. Esto sirve a un HTML y se puede establecer como `src` del iframe. Admite flujo de velocidad de bits adaptable, que es una entrega del vídeo optimizada para la web.
+  El fragmento de código de la captura de pantalla anterior es un ejemplo de un recurso de vídeo. Incluye la matriz de vínculos de representaciones. El `selection[5]` del extracto es el ejemplo de una miniatura de imagen que puede utilizarse como marcador de posición de una miniatura de vídeo en la experiencia de destino. `selection[5]` en la matriz de representaciones es para el reproductor de vídeo. Esto sirve un HTML y se puede establecer como `src` del iframe. Admite flujo de velocidad de bits adaptable, que es una entrega del vídeo optimizada para la web.
 
   En el ejemplo anterior, la dirección URL del reproductor de vídeo es `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
 
 ### Configuración de filtros personalizados {#configure-custom-filters-dynamic-media-open-api}
 
-El Selector de recursos para Dynamic Media con capacidades OpenAPI le permite configurar propiedades personalizadas y los filtros basados en ellas. La propiedad `filterSchema` se usa para configurar dichas propiedades. La personalización puede exponerse como `metadata.<metadata bucket>.<property name>.`, en función de la cual se pueden configurar los filtros, donde,
+El Selector de recursos para Dynamic Media con funciones de OpenAPI le permite configurar propiedades personalizadas y los filtros basados en ellas. La propiedad `filterSchema` se usa para configurar dichas propiedades. La personalización puede exponerse como `metadata.<metadata bucket>.<property name>.`, en función de la cual se pueden configurar los filtros, donde,
 
 * `metadata` es la información de un recurso
 * `embedded` es el parámetro estático utilizado para la configuración, y
@@ -160,9 +194,9 @@ Para obtener el nombre, se debe realizar una actividad única. Realice una llama
 
 ### Interfaz de usuario del Selector de recursos para Dynamic Media con funciones de OpenAPI {#interface-dynamic-media-open-api}
 
-Después de la integración con el selector de recursos de Micro-Front-end del Adobe, podrá ver la estructura de recursos solamente de todos los recursos aprobados disponibles en el repositorio de recursos de Experience Manager.
+Después de la integración con el Selector de recursos de Micro-FrontEnd de Adobe, puede ver la estructura de recursos solamente de todos los recursos aprobados disponibles en el repositorio de recursos de Experience Manager.
 
-![Dynamic Media con la interfaz de usuario de funciones OpenAPI](assets/polaris-ui.png)
+![Dynamic Media con la IU de capacidades de OpenAPI](assets/polaris-ui.png)
 
 * **A**: [Ocultar/Mostrar panel](#hide-show-panel)
 * **B**: [Assets](#repository)
@@ -176,5 +210,5 @@ Después de la integración con el selector de recursos de Micro-Front-end del A
 >[!MORELIKETHIS]
 >
 >* [Integrar el Selector de recursos con varias aplicaciones](/help/assets/integrate-asset-selector.md)
->* [Propiedades del selector de recursos](/help/assets/asset-selector-properties.md)
+>* [Propiedades del Selector de recursos](/help/assets/asset-selector-properties.md)
 >* [Personalizaciones del Selector de recursos](/help/assets/asset-selector-customization.md)

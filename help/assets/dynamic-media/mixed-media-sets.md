@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1507'
-ht-degree: 11%
+source-wordcount: '1553'
+ht-degree: 12%
 
 ---
 
 # Conjuntos de medios mixtos{#mixed-media-sets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Los conjuntos de medios mixtos permiten combinar imágenes, conjuntos de imágenes, conjuntos de giros y vídeos en una presentación.
 
@@ -52,7 +89,7 @@ Para ponerse en marcha rápidamente con los conjuntos de medios mixtos, siga est
 
    Seleccione el conjunto de medios mixtos y podrá previsualizarlo. Para examinar el conjunto de medios mixtos en el visor seleccionado, seleccione los iconos de miniatura. Puede elegir diferentes visores en el menú **[!UICONTROL Visualizadores]**, disponible en el menú desplegable del carril izquierdo.
 
-1. [Conjuntos de medios mixtos Publish](#publishing-mixed-media-sets).
+1. [Publicar conjuntos de medios mixtos](#publishing-mixed-media-sets).
 
    Al publicar un conjunto de medios mixtos, se activan la URL y la cadena de incrustación. Además, debe [publicar el ajuste preestablecido de visor](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets).
 
@@ -96,7 +133,7 @@ Al agregar recursos al conjunto, estos se agregan automáticamente en orden alfa
 
    >[!NOTE]
    >
-   >Al crear el conjunto de medios mixtos, puede cambiar la miniatura del conjunto de medios mixtos o permitir que el Experience Manager seleccione la miniatura automáticamente en función de los recursos del conjunto de medios mixtos. Para seleccionar una miniatura, selecciona **[!UICONTROL Cambiar miniatura]** y selecciona cualquier imagen (también puedes navegar a otras carpetas para buscar imágenes). Si ha seleccionado una miniatura y decide que quiere que Experience Manager genere una del conjunto de medios mixtos, seleccione **[!UICONTROL Cambiar a Miniatura automática]**.
+   >Al crear el conjunto de medios mixtos, puede cambiar la miniatura del conjunto de medios mixtos o permitir que Experience Manager seleccione la miniatura automáticamente en función de los recursos del conjunto de medios mixtos. Para seleccionar una miniatura, selecciona **[!UICONTROL Cambiar miniatura]** y selecciona cualquier imagen (también puedes navegar a otras carpetas para buscar imágenes). Si ha seleccionado una miniatura y decide que quiere que Experience Manager genere una del conjunto de medios mixtos, seleccione **[!UICONTROL Cambiar a Miniatura automática]**.
 
 1. Para seleccionar los recursos que desea incluir en el conjunto de medios mixtos, seleccione el Selector de recursos. Selecciónelos y seleccione **[!UICONTROL Seleccionar]**.
 
@@ -158,7 +195,7 @@ Puede realizar varias tareas de edición en los recursos de conjuntos de medios 
 
    >[!NOTE]
    >
-   >* Para editar los recursos de un conjunto de medios mixtos, vaya al conjunto de medios mixtos. Seleccione (no seleccione) el conjunto para poder abrirlo en la página Vista previa del conjunto de Experience Manager. En el carril izquierdo, seleccione el circunflejo invertido para abrir la lista desplegable y, a continuación, seleccione **[!UICONTROL Definir miembros]**. En la página Definir miembros, coloque el puntero sobre un recurso y, a continuación, seleccione **[!UICONTROL Editar]** (icono de lápiz) para abrir la página de edición.
+   >* Para editar los recursos de un conjunto de medios mixtos, vaya al conjunto de medios mixtos. Seleccione (no seleccione) el conjunto para poder abrirlo en la página Vista previa de conjunto de Experience Manager. En el carril izquierdo, seleccione el circunflejo invertido para abrir la lista desplegable y, a continuación, seleccione **[!UICONTROL Definir miembros]**. En la página Definir miembros, coloque el puntero sobre un recurso y, a continuación, seleccione **[!UICONTROL Editar]** (icono de lápiz) para abrir la página de edición.
    >
    >* Para eliminar un conjunto de medios mixtos completo, en cualquier modo de visualización (como la vista de tarjeta o la vista de columna), vaya al conjunto de medios mixtos. Pase el ratón sobre el conjunto y luego seleccione **[!UICONTROL Seleccionar]** (icono de marca de verificación). Presione **[!UICONTROL Retroceso]** en el teclado o seleccione **[!UICONTROL Más]** (fila de tres puntos) y luego seleccione **[!UICONTROL Eliminar]**.
 
@@ -166,9 +203,9 @@ Puede realizar varias tareas de edición en los recursos de conjuntos de medios 
 
 Consulte [Previsualizar recursos](/help/assets/dynamic-media/previewing-assets.md) para obtener más información sobre cómo obtener una vista previa de conjuntos de medios mixtos.
 
-## Conjuntos de medios mixtos de Publish {#publishing-mixed-media-sets}
+## Publicar conjuntos de medios mixtos {#publishing-mixed-media-sets}
 
-Consulte [recursos de Publish](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obtener detalles sobre cómo publicar conjuntos de medios mixtos.
+Consulte [Publicar recursos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar conjuntos de medios mixtos.
 
 >[!NOTE]
 >

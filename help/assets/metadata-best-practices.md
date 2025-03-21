@@ -4,10 +4,10 @@ description: Conozca las prácticas recomendadas sobre metadatos para administra
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1399'
-ht-degree: 1%
+source-wordcount: '1427'
+ht-degree: 2%
 
 ---
 
@@ -18,8 +18,39 @@ experience manager metadata-->
 
 # Administración de metadatos y prácticas recomendadas {#metadata-best-practices}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Para que su empresa destaque y atraiga a más clientes, es crucial utilizar imágenes de alta calidad, como imágenes, vídeos y otros recursos digitales. Para conseguirlo, necesita un proceso que le permita añadir metadatos a todos los recursos digitales, facilitando su búsqueda. Los metadatos son los datos que proporcionan detalles esenciales sobre los recursos digitales, como el nombre, el tipo, la ubicación dentro de un repositorio, la fecha de modificación y las etiquetas asociadas. Los metadatos optimizan la administración de recursos, mejoran la capacidad de búsqueda y accesibilidad, y garantizan un control de versiones eficaz.
 
@@ -69,7 +100,7 @@ Los metadatos administrativos garantizan la administración correcta de los recu
 
 La administración de metadatos comienza con la definición de una estrategia de metadatos para proporcionar una base para evaluar el valor a largo plazo.
 
-La creación de un esquema de metadatos personalizado según sus necesidades es crucial a la hora de planificar su estrategia de metadatos. Un esquema bien diseñado proporciona un marco de trabajo estructurado para categorizar y organizar los recursos dentro de Experience Manager.
+La creación de un esquema de metadatos personalizado según sus necesidades es crucial a la hora de planificar su estrategia de metadatos. Un esquema bien diseñado proporciona un marco de trabajo estructurado para categorizar y organizar los recursos en Experience Manager.
 
 #### Vídeo: Agregar campos personalizados al esquema de metadatos
 
@@ -113,7 +144,7 @@ Estas son algunas de las prácticas recomendadas a seguir:
 * **Evitar valores duplicados:** Si tiene una colección de imágenes de una campaña de marketing, use nombres coherentes y evite duplicados.<br>
 Por ejemplo, en lugar de usar nombres duplicados como *campaign_image_001* y *campaign_image_002*, implemente una convención de nombres sistemática como *event_promotion* y *product_launch*, que garantice una identificación clara y ordenada.
 
-* **Use vocabularios controlados de forma eficaz:** Implemente vocabularios controlados empleando términos estandarizados para las etiquetas. AEM Aprenda a implementar [Esquema de etiquetado de etiquetas ](/help/implementing/developing/introduction/tagging-framework.md) de forma eficaz.  <br>
+* **Use vocabularios controlados de forma eficaz:** Implemente vocabularios controlados empleando términos estandarizados para las etiquetas. Aprenda a implementar [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md) de forma eficaz.  <br>
 Por ejemplo, use términos como *product_launch* o *event_promotion* de forma consistente al etiquetar imágenes con temas para mantener una secuencia sistemática.
 
 * **Mantener la precisión y la integridad:** Para mantener la coherencia, la precisión, la integridad y la alineación de los metadatos en varios orígenes son cruciales.
@@ -169,4 +200,4 @@ Examine la cadena de suministro de contenido para encontrar fuentes de metadatos
 
 Comunicar los objetivos, el progreso, los hitos y los desafíos desde el principio para recibir las aportaciones y la cooperación de todas las partes interesadas. Fomente la colaboración en toda la organización para crear procesos eficientes y metadatos valiosos.
 
-Obtenga más información acerca de [metadatos y sus conceptos relacionados](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html) para administrar de manera eficaz los metadatos de Experience Manager.
+Obtenga más información acerca de [metadatos y sus conceptos relacionados](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html) para administrar de manera eficaz sus metadatos de Experience Manager.

@@ -1,22 +1,56 @@
 ---
 title: Configuración de la asignación de metadatos de recursos entre Workfront y Experience Manager Assets
-description: Asigne los campos de metadatos del recurso entre Adobe Workfront y las aplicaciones as a Cloud Service del Experience Manager. Como resultado de la asignación de campos de metadatos, cuando envía un recurso de Workfront a Experience Manager Assets, puede ver los metadatos del recurso asignado en Experience Manager Assets.
+description: Asigne los campos de metadatos del recurso entre las aplicaciones de Adobe Workfront y Experience Manager as a Cloud Service. Como resultado de la asignación de campos de metadatos, cuando envía un recurso de Workfront a Experience Manager Assets, puede ver los metadatos del recurso asignado en Experience Manager Assets.
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 feature: Metadata, Workfront Integrations and Apps
 role: User, Admin
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 4%
+source-wordcount: '1058'
+ht-degree: 6%
 
 ---
 
 # Configuración de la asignación de metadatos de recursos entre Adobe Workfront y Experience Manager Assets {#asset-metadata-mapping-workfront-aem-assets}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
-Puede asignar los campos de metadatos del recurso entre Adobe Workfront y las aplicaciones as a Cloud Service del Experience Manager. Como resultado de la asignación de campos de metadatos, cuando envía un recurso de Workfront a Experience Manager Assets, puede ver los metadatos del recurso asignado en Experience Manager Assets.
+Puede asignar los campos de metadatos de recursos entre las aplicaciones de Adobe Workfront y Experience Manager as a Cloud Service. Como resultado de la asignación de campos de metadatos, cuando envía un recurso de Workfront a Experience Manager Assets, puede ver los metadatos del recurso asignado en Experience Manager Assets.
 
 Por ejemplo, si necesita conservar los campos de metadatos de una imagen, como el nombre, la descripción y el proyecto al que pertenece en Workfront al enviar la imagen a Experience Manager Assets, configure y asigne estos campos a las propiedades de Experience Manager Assets.
 
@@ -32,9 +66,9 @@ Existe una imagen `add-users-workfront.png` en el proyecto `Metadata Syncs` en l
 
 ## Requisitos previos {#prerequisites}
 
-* Un administrador puede acceder a las aplicaciones as a Cloud Service de Workfront y Experience Manager Assets.
+* Un administrador puede acceder a las aplicaciones de Workfront y Experience Manager Assets as a Cloud Service.
 
-* Integración entre [Workfront y las aplicaciones as a Cloud Service de Experience Manager Assets](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2Fsetup-asset-essentials.htm&amp;_LANG=enus).
+* Integración entre [aplicaciones de Workfront y Experience Manager Assets as a Cloud Service](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2Fsetup-asset-essentials.htm&amp;_LANG=enus).
 
 ## Configuración de la asignación de metadatos en Workfront {#set-up-metadata-mapping}
 
@@ -46,7 +80,7 @@ Para establecer la asignación de metadatos para los campos Nombre del proyecto,
 
 1. Seleccione la integración de Experience Manager Assets y haga clic en **[!UICONTROL Editar]**.
 
-1. Haga clic en **[!UICONTROL Metadatos]**. En la ficha **[!UICONTROL Assets]**, asigne el campo de Workfront [!UICONTROL Proyecto] > [!UICONTROL Nombre] al campo de Experience Manager Assets `wm:projectName`. Si no encuentra la coincidencia exacta, el Adobe recomienda buscar la mejor coincidencia para asignar el campo Workfront y Experience Manager Assets. Puede evitar asignar campos de diferentes tipos de datos. Por ejemplo, asignar un campo de Workfront de fecha a un campo de Assets de descripción.
+1. Haga clic en **[!UICONTROL Metadatos]**. En la ficha **[!UICONTROL Assets]**, asigne el campo de Workfront [!UICONTROL Proyecto] > [!UICONTROL Nombre] al campo de Experience Manager Assets `wm:projectName`. Si no encuentra la coincidencia exacta, Adobe recomienda buscar la mejor coincidencia para asignar el campo Workfront y Experience Manager Assets. Puede evitar asignar campos de diferentes tipos de datos. Por ejemplo, asignar un campo de Workfront de fecha a un campo de Assets de descripción.
 1. Asigne el campo de Workfront [!UICONTROL Documento] > [!UICONTROL Nombre] al campo de Experience Manager Assets `wm:documentName`.
 
    ![Asignación en Workfront](assets/workfront-metadata-mapping.png)
@@ -67,7 +101,7 @@ Para enviar la imagen de Workfront a Experience Manager Assets:
 
 1. Haga clic en **[!UICONTROL Enviar a]** y, a continuación, elija el nombre de la integración de Experience Manager Assets Essentials.
 
-   AEM ![Enviar a la dirección de correo electrónico](assets/send-to-aem.png)
+   ![Enviar a AEM](assets/send-to-aem.png)
 
 1. Elija la carpeta de destino del recurso y haga clic en **[!UICONTROL Seleccionar carpeta]**.
 
@@ -75,7 +109,7 @@ Para enviar la imagen de Workfront a Experience Manager Assets:
 
 ## Configuración de la asignación de metadatos de recursos en Experience Manager as a Cloud Service {#metadata-mapping-aem}
 
-Después de [configurar la asignación de metadatos de recursos en Adobe Workfront](#set-up-metadata-mapping), debe usar la misma asignación en la aplicación as a Cloud Service de Experience Manager Assets para mostrar los resultados de metadatos apropiados para la imagen.
+Después de [configurar la asignación de metadatos de recursos en Adobe Workfront](#set-up-metadata-mapping), debe usar la misma asignación en la aplicación Experience Manager Assets as a Cloud Service para mostrar los resultados de metadatos apropiados para la imagen.
 
 La asignación de metadatos se realiza mediante esquemas de metadatos en Experience Manager Assets. Puede editar un formulario de esquema de metadatos recién agregado o existente. El formulario de esquema de metadatos incluye pestañas y elementos de formulario en pestañas. Puede asignar o configurar estos elementos de formulario a un campo dentro de un nodo de metadatos en el repositorio de CRX. Puede agregar pestañas o elementos de formulario al formulario de esquema de metadatos. Para obtener más información, consulte [Esquemas de metadatos](metadata-schemas.md).
 
@@ -100,7 +134,7 @@ Para configurar la asignación de metadatos mediante un nuevo formulario de meta
 
       `wm` hace referencia al nombre del área de nombres y `projectName` hace referencia al título de la propiedad. Utilice el formato `namespace:propertyTitle` para definir asignaciones de campos de metadatos.
 
-      AEM ![Enviar a la dirección de correo electrónico](assets/metadata-schema-mapping.png)
+      ![Enviar a AEM](assets/metadata-schema-mapping.png)
 
 1. Haga clic en la ficha **[!UICONTROL Generar formulario]** y arrastre el componente **[!UICONTROL Texto de una sola línea]** al formulario. Haga clic en el componente en el formulario. En la ficha **[!UICONTROL Generar formulario]**:
 
@@ -122,7 +156,7 @@ Al configurar asignaciones en Workfront, ha asignado el campo `dc:description` d
 
 ## Aplicar configuración de metadatos a la carpeta de imágenes {#apply-metadata-settings-image-folder}
 
-Después de establecer la configuración de metadatos en la aplicación as a Cloud Service de Experience Manager, aplique esa configuración a la carpeta [folder que contiene la imagen que se envía desde la aplicación de Workfront](#send-image-workfront-assets).
+Después de establecer la configuración de metadatos en la aplicación Experience Manager as a Cloud Service, aplique esa configuración a la carpeta [folder que contiene la imagen que se envía desde la aplicación Workfront](#send-image-workfront-assets).
 
 Para aplicar la configuración de metadatos a la carpeta de imágenes:
 

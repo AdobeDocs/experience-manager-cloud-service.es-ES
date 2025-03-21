@@ -1,24 +1,61 @@
 ---
 title: Práctica recomendada para optimizar la calidad de las imágenes
-description: Conozca las prácticas recomendadas que le ayudan a optimizar la calidad de los recursos de imagen con Dynamic Media.
+description: Conozca las prácticas recomendadas que le ayudan a optimizar la calidad de los recursos de imagen mediante Dynamic Media.
 contentOwner: Rick Brough
 feature: Asset Management, Best Practices
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 1%
+source-wordcount: '1694'
+ht-degree: 2%
 
 ---
 
 # Práctica recomendada para optimizar la calidad de las imágenes {#best-practices-for-optimizing-the-quality-of-your-images}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
+
 {{work-with-dynamic-media}}
 
 La optimización de la calidad de la imagen puede ser un proceso laborioso, ya que muchos factores contribuyen a obtener resultados aceptables. El resultado es en parte subjetivo porque los individuos perciben la calidad de la imagen de manera diferente. La experimentación estructurada es clave.
 
-Adobe Experience Manager incluye más de 100 comandos de entrega de imágenes de Dynamic Media para ajustar y optimizar imágenes y resultados de procesamiento. Las siguientes directrices pueden ayudarle a optimizar el proceso y obtener buenos resultados rápidamente mediante algunos comandos esenciales y prácticas recomendadas.
+Adobe Experience Manager incluye más de 100 comandos de entrega de imágenes de Dynamic Media para ajustar y optimizar imágenes y procesar resultados. Las siguientes directrices pueden ayudarle a optimizar el proceso y obtener buenos resultados rápidamente mediante algunos comandos esenciales y prácticas recomendadas.
 
 <!-- ADDED THE FOLLOWING TOPIC AS PER CQDOC-21594 -->
 
@@ -38,7 +75,7 @@ Adobe Experience Manager incluye más de 100 comandos de entrega de imágenes de
 
 **Comportamiento predeterminado:**
 
-* Cuando no se especifica ningún comando de formato en la URL y Smart Imaging no está habilitado, la entrega de imágenes de Dynamic Media toma el formato predeterminado de JPEG.
+* Cuando no se especifica ningún comando de formato en la dirección URL y Smart Imaging no está habilitado, la entrega de imágenes de Dynamic Media utiliza de forma predeterminada el formato JPEG.
 
 Al tomar decisiones informadas sobre los formatos de imagen y habilitar Imágenes inteligentes, puede afectar significativamente al rendimiento y la experiencia del usuario.
 
@@ -83,11 +120,11 @@ Como práctica recomendada para el tamaño de imagen, use `&wid=<value>&hei=<val
 
 ## Prácticas recomendadas para el enfoque de imágenes {#best-practices-for-image-sharpening}
 
-El enfoque de imágenes es el aspecto más complejo del control de imágenes en su sitio web y donde se cometen muchos errores. Tómese el tiempo necesario para obtener más información sobre el funcionamiento de las máscaras de enfoque y enfoque en Experience Manager consultando los siguientes recursos útiles:
+El enfoque de imágenes es el aspecto más complejo del control de imágenes en su sitio web y donde se cometen muchos errores. Tómese el tiempo necesario para obtener más información sobre el funcionamiento del enfoque y el enmascaramiento de enfoque en Experience Manager consultando los siguientes recursos útiles:
 
-* El documento técnico sobre prácticas recomendadas [Prácticas recomendadas de calidad de imagen y enfoque de Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) también se aplica al Experience Manager.
+* El documento técnico sobre prácticas recomendadas [Prácticas recomendadas para la calidad y el enfoque de imágenes de Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) también se aplica a Experience Manager.
 
-* Ver [Usar enfoque de imagen con el Experience Manager - Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
+* Vea [Usar enfoque de imagen con Experience Manager - Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
 Con Experience Manager, puede enfocar las imágenes durante la ingesta, la entrega o ambas cosas. Sin embargo, normalmente es mejor enfocar las imágenes con un solo método o con el otro, pero no con ambos. Enfoque de las imágenes en el momento de la entrega, en una dirección URL, normalmente le ofrece los mejores resultados.
 
@@ -109,9 +146,9 @@ Existen dos métodos de enfoque de imagen que puede utilizar:
 
      Para obtener más información sobre cómo configurar estos tres parámetros, incluidas las prácticas recomendadas para su uso con el filtro, consulte los siguientes recursos:
 
-      * El documento técnico sobre prácticas recomendadas [Prácticas recomendadas de calidad de imagen y enfoque de Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) también se aplica al Experience Manager.
+      * El documento técnico sobre prácticas recomendadas [Prácticas recomendadas para la calidad y el enfoque de imágenes de Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) también se aplica a Experience Manager.
 
-      * Ver [Usar enfoque de imagen con el Experience Manager - Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
+      * Vea [Usar enfoque de imagen con Experience Manager - Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
       * Experience Manager también permite controlar un cuarto parámetro: monocromo (0,1). Este parámetro determina si se aplica máscara de enfoque a cada componente de color por separado utilizando el valor 0 o al brillo/intensidad de la imagen utilizando el valor 1.
 
@@ -128,25 +165,25 @@ Deje el parámetro monocromo en 0.
 
 ### Prácticas recomendadas para la compresión JPEF (`&qlt=`) {#best-practices-for-jpef-compression-qlt}
 
-* JPG Este parámetro controla la calidad de codificación de la. Un valor más alto significa una imagen de mayor calidad pero un tamaño de archivo grande; alternativamente, un valor más bajo significa una imagen de menor calidad pero un tamaño de archivo más pequeño. El rango de este parámetro es de 0 a 100.
+* Este parámetro controla la calidad de codificación de JPG. Un valor más alto significa una imagen de mayor calidad pero un tamaño de archivo grande; alternativamente, un valor más bajo significa una imagen de menor calidad pero un tamaño de archivo más pequeño. El rango de este parámetro es de 0 a 100.
 * Para optimizar la calidad, no establezca el valor del parámetro en 100. La diferencia entre un ajuste de 90 o 95 y 100 es casi imperceptible. Y sin embargo 100 aumenta innecesariamente el tamaño del archivo de imagen. Por lo tanto, para optimizar la calidad pero evitar que los archivos de imagen sean demasiado grandes, establezca `qlt= value` en 90 o 95.
 * Para optimizar para un archivo de imagen pequeño pero mantener la calidad de la imagen en un nivel aceptable, establezca `qlt= value` en 80. Los valores por debajo de 70 a 75 dan como resultado una degradación significativa de la calidad de imagen.
 * Como práctica recomendada, para permanecer en el medio, establezca `qlt= value` en 85 para permanecer en el medio.
 * Uso del indicador de croma en `qlt=`
 
-   * El parámetro `qlt=` tiene una segunda configuración que le permite activar la disminución de resolución de cromaticidad del RGB con el valor `,1` o desactivar con el valor `,0`.
-   * Para que sea sencillo, comience con la disminución de resolución de cromaticidad RGB desactivada (`,0`). Esta configuración suele mejorar la calidad de imagen, especialmente en imágenes sintéticas con muchos bordes nítidos y contraste.
+   * El parámetro `qlt=` tiene una segunda configuración que le permite activar la disminución de resolución de cromaticidad de RGB con el valor `,1` o desactivar con el valor `,0`.
+   * Para que sea sencillo, comience con la disminución de resolución de cromaticidad de RGB desactivada (`,0`). Esta configuración suele mejorar la calidad de imagen, especialmente en imágenes sintéticas con muchos bordes nítidos y contraste.
 
-Como práctica recomendada para la compresión en JPG, use `&qlt=85,0`.
+Como práctica recomendada para la compresión de JPG, use `&qlt=85,0`.
 
 ## Prácticas recomendadas para el tamaño de JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
 El parámetro `jpegSize` es útil si desea garantizar que una imagen no supere un tamaño determinado para su entrega a dispositivos con memoria limitada.
 
 * Este parámetro se establece en kilobytes (`jpegSize=&lt;size_in_kilobytes&gt;`). Define el tamaño máximo permitido para la entrega de imágenes.
-* `&jpegSize=` interactúa con el parámetro de compresión `&qlt=` del JPG de la aplicación. Si la respuesta del JPG con el parámetro de compresión del JPG de la aplicación especificado (`&qlt=`) no excede el valor jpegSize, la imagen se devuelve con `&qlt=` tal como se definió. De lo contrario, `&qlt=` se reducirá gradualmente hasta que la imagen se ajuste al tamaño máximo permitido. O bien, hasta que el sistema determine que no cabe y devuelva un error.
+* `&jpegSize=` interactúa con el parámetro de compresión de JPG `&qlt=`. Si la respuesta de JPG con el parámetro de compresión de JPG especificado (`&qlt=`) no supera el valor jpegSize, la imagen se devuelve con `&qlt=` tal como se definió. De lo contrario, `&qlt=` se reducirá gradualmente hasta que la imagen se ajuste al tamaño máximo permitido. O bien, hasta que el sistema determine que no cabe y devuelva un error.
 
-JPG Como práctica recomendada, establezca `&jpegSize=` y agregue el parámetro `&qlt=` si va a enviar imágenes de calidad superior a dispositivos con memoria limitada.
+Se recomienda configurar `&jpegSize=` y agregar el parámetro `&qlt=` si va a enviar imágenes de JPG a dispositivos con memoria limitada.
 
 ## Resumen de prácticas recomendadas {#best-practices-summary}
 
@@ -163,5 +200,5 @@ Si los resultados de enfoque siguen sin ser satisfactorios, aumente el radio en 
 A medida que experimenta, las siguientes sugerencias generales son útiles para optimizar el flujo de trabajo:
 
 * Pruebe diferentes parámetros en tiempo real directamente en una dirección URL.
-* Como práctica recomendada, recuerde que puede agrupar comandos del servicio de imágenes de Dynamic Media en un ajuste preestablecido de imagen. Un ajuste preestablecido de imagen son básicamente macros de comandos de URL con nombres de ajustes preestablecidos personalizados como `$thumb_low$` y `&product_high$`. El nombre del ajuste preestablecido personalizado en una ruta URL llama a estos ajustes preestablecidos. Esta funcionalidad le ayuda a administrar comandos y configuraciones de calidad para diferentes patrones de uso de imágenes en el sitio web y acorta la longitud general de las direcciones URL.
-* Experience Manager también proporciona formas más avanzadas de ajustar la calidad de la imagen, como aplicar imágenes de enfoque durante la ingesta. Para ajustar y optimizar los resultados de procesamiento, los servicios de consultoría de [Adobe](https://business.adobe.com/customers/consulting-services/main.html) pueden ayudarle con información y prácticas recomendadas personalizadas.
+* Como práctica recomendada, recuerde que puede agrupar comandos de servicio de imágenes de Dynamic Media en un ajuste preestablecido de imagen. Un ajuste preestablecido de imagen son básicamente macros de comandos de URL con nombres de ajustes preestablecidos personalizados como `$thumb_low$` y `&product_high$`. El nombre del ajuste preestablecido personalizado en una ruta URL llama a estos ajustes preestablecidos. Esta funcionalidad le ayuda a administrar comandos y configuraciones de calidad para diferentes patrones de uso de imágenes en el sitio web y acorta la longitud general de las direcciones URL.
+* Experience Manager también proporciona formas más avanzadas de ajustar la calidad de la imagen, como aplicar imágenes de enfoque al ingerir. Para ajustar y optimizar los resultados de procesamiento, [los servicios de consultoría de Adobe](https://business.adobe.com/customers/consulting-services/main.html) pueden ayudarle con información y prácticas recomendadas personalizadas.

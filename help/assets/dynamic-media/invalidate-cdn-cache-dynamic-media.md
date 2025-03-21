@@ -5,20 +5,57 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1397'
-ht-degree: 1%
+source-wordcount: '1443'
+ht-degree: 2%
 
 ---
 
 # Invalidación de la caché de CDN mediante Dynamic Media {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}
 
-La CDN (red de distribución de contenido) almacena en caché los recursos de Dynamic Media para una entrega rápida a sus clientes. Sin embargo, cuando realice actualizaciones en esos recursos, desea que los cambios surtan efecto inmediatamente en el sitio web. La depuración o invalidación de la caché de la CDN permite actualizar rápidamente los recursos que envía Dynamic Media. Ya no tiene que esperar a que la caché caduque con un valor TTL (Tiempo de vida) (el valor predeterminado es de diez horas). En su lugar, puede enviar una solicitud desde la interfaz de usuario de Dynamic Media para que la caché caduque en cuestión de minutos.
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
+
+La CDN (red de distribución de contenido) almacena en caché los recursos de Dynamic Media para una entrega rápida a sus clientes. Sin embargo, cuando realice actualizaciones en esos recursos, desea que los cambios surtan efecto inmediatamente en el sitio web. La depuración o invalidación de la caché de la CDN permite actualizar rápidamente los recursos que entrega Dynamic Media. Ya no tiene que esperar a que la caché caduque con un valor TTL (Tiempo de vida) (el valor predeterminado es de diez horas). En su lugar, puede enviar una solicitud desde la interfaz de usuario de Dynamic Media para que la caché caduque en cuestión de minutos.
 
 >[!NOTE]
 >
->Esta función requiere que utilice la CDN agrupada en Adobe que viene con Adobe Experience Manager Dynamic Media. Esta función no admite ninguna otra CDN personalizada.
+>Esta función requiere que utilice la CDN integrada en Adobe que se incluye con Adobe Experience Manager Dynamic Media. Esta función no admite ninguna otra CDN personalizada.
 
 <!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Cache overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
 
@@ -46,7 +83,7 @@ Sin embargo, esta invalidación no es el caso de los dominios genéricos que no 
    | Escenario | Opción |
    | --- | --- |
    | Ya he creado una plantilla de invalidación de CDN en el pasado mediante Dynamic Media Classic. | El campo de texto **[!UICONTROL Crear plantilla]** está rellenado previamente con los datos de la plantilla. En este caso, puede editar la plantilla o continuar con el siguiente paso. |
-   | Tengo que crear una plantilla. ¿En qué puedo participar? | En el campo de texto **[!UICONTROL Crear plantilla]**, escriba una URL de imagen (incluidos los ajustes preestablecidos o modificadores de imagen) que haga referencia a `<ID>`, en lugar de un ID de imagen específico como en el siguiente ejemplo:<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br>Si la plantilla contiene solo `<ID>`, Dynamic Media rellena `https://<publishserver_name>/is/image/<company_name>/<ID>`, donde `<publishserver_name>` es el nombre de su servidor de Publish que se define en Configuración general en Dynamic Media Classic. `<company_name>` es el nombre de la raíz de la compañía asociada con esta instancia de Experience Manager y `<ID>` son los recursos seleccionados a través del selector de recursos que se van a invalidar.<br>Todos los ajustes preestablecidos o modificadores que siguen a `<ID>` se copian tal cual en la definición de la dirección URL.<br>Solo las imágenes (es decir, `/is/image`) se pueden formar automáticamente según la plantilla.<br>Para `/is/content/`, agregar recursos como vídeos o PDF mediante el selector de recursos no genera automáticamente direcciones URL. En su lugar, debe especificar dichos recursos en la plantilla de invalidación de CDN o puede agregar manualmente la dirección URL a dichos recursos en *Parte 2 de 2: Configurar las opciones de invalidación de CDN*.<br>**Ejemplos:**<br> En este primer ejemplo, la plantilla de invalidación contiene `<ID>` junto con la dirección URL del recurso que tiene `/is/content`. Por ejemplo, `http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>`. Dynamic Media forma la dirección URL en función de esta ruta, donde `<ID>` son los recursos seleccionados mediante el selector de recursos que desea invalidar.<br>En este segundo ejemplo, la plantilla de invalidación contiene la dirección URL completa del recurso utilizado en las propiedades web con `/is/content` (no depende del selector de recursos). Por ejemplo, `http://my.publishserver.com:8080/is/content/dms7snapshot/backpack` donde la mochila es el ID del recurso.<br>Los formatos de recursos compatibles con Dynamic Media pueden invalidarse. Los tipos de archivos de recursos *no* admitidos para la invalidación de la CDN son PostScript®, PostScript® encapsulada, Adobe Illustrator, Adobe InDesign, Microsoft® Powerpoint, Microsoft® Excel, Microsoft® Word y formato de texto enriquecido.<br><br>· Cuando cree la plantilla, pero asegúrese de prestar mucha atención a la sintaxis y a los errores tipográficos; Dynamic Media no realiza ninguna validación de plantilla.<br>· La plantilla de invalidación de CDN puede guardar texto de hasta 2500 caracteres.<br>· Especifique las direcciones URL para los recortes inteligentes de imagen en esta plantilla de invalidación de CDN o en el campo de texto **[!UICONTROL Agregar dirección URL]** en *Parte 2: Configurar las opciones de invalidación de CDN.*<br>· Cada entrada de una plantilla de invalidación de CDN debe estar en su propia línea.<br>· El siguiente ejemplo de plantilla de invalidación de CDN es solo para fines de demostración. |
+   | Tengo que crear una plantilla. ¿En qué puedo participar? | En el campo de texto **[!UICONTROL Crear plantilla]**, escriba una URL de imagen (incluidos los ajustes preestablecidos o modificadores de imagen) que haga referencia a `<ID>`, en lugar de un ID de imagen específico como en el siguiente ejemplo:<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br>Si la plantilla contiene solo `<ID>`, Dynamic Media rellena `https://<publishserver_name>/is/image/<company_name>/<ID>`, donde `<publishserver_name>` es el nombre del servidor de publicación definido en Configuración general en Dynamic Media Classic. `<company_name>` es el nombre de la raíz de su compañía asociada con esta instancia de Experience Manager y `<ID>` son los recursos seleccionados a través del selector de recursos que se van a invalidar.<br>Todos los ajustes preestablecidos o modificadores que siguen a `<ID>` se copian tal cual en la definición de la dirección URL.<br>Solo las imágenes (es decir, `/is/image`) se pueden formar automáticamente según la plantilla.<br>Para `/is/content/`, agregar recursos como vídeos o PDF mediante el selector de recursos no genera automáticamente direcciones URL. En su lugar, debe especificar dichos recursos en la plantilla de invalidación de CDN o puede agregar manualmente la dirección URL a dichos recursos en *Parte 2 de 2: Configurar las opciones de invalidación de CDN*.<br>**Ejemplos:**<br> En este primer ejemplo, la plantilla de invalidación contiene `<ID>` junto con la dirección URL del recurso que tiene `/is/content`. Por ejemplo, `http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>`. Dynamic Media forma la dirección URL en función de esta ruta, donde `<ID>` son los recursos seleccionados a través del selector de recursos que desea invalidar.<br>En este segundo ejemplo, la plantilla de invalidación contiene la dirección URL completa del recurso utilizado en las propiedades web con `/is/content` (no depende del selector de recursos). Por ejemplo, `http://my.publishserver.com:8080/is/content/dms7snapshot/backpack` donde la mochila es el ID del recurso.<br>Los formatos de recurso compatibles con Dynamic Media pueden invalidarse. Los tipos de archivos de recursos *no* admitidos para la invalidación de la CDN son PostScript®, PostScript® encapsulado, Adobe Illustrator, Adobe InDesign, Microsoft® Powerpoint, Microsoft® Excel, Microsoft® Word y formato de texto enriquecido.<br><br>· Cuando cree la plantilla, pero asegúrese de prestar especial atención a la sintaxis y a los errores tipográficos; Dynamic Media no realiza ninguna validación de plantilla.<br>· La plantilla de invalidación de CDN puede guardar texto de hasta 2500 caracteres.<br>· Especifique las direcciones URL para los recortes inteligentes de imagen en esta plantilla de invalidación de CDN o en el campo de texto **[!UICONTROL Agregar dirección URL]** en *Parte 2: Configurar las opciones de invalidación de CDN.*<br>· Cada entrada de una plantilla de invalidación de CDN debe estar en su propia línea.<br>· El siguiente ejemplo de plantilla de invalidación de CDN es solo para fines de demostración. |
 
    ![Plantilla de invalidación de CDN - Crear](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
@@ -58,7 +95,7 @@ Sin embargo, esta invalidación no es el caso de los dominios genéricos que no 
    *Parte 2 de 2: Estableciendo opciones de invalidación de CDN*
    <br>
 
-1. En el as a Cloud Service del Experience Manager, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Invalidación de CDN]**.
+1. En Experience Manager as a Cloud Service, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Invalidación de CDN]**.
 
    ![Característica de validación de CDN](/help/assets/assets-dm/cdn-invalidation-path.png)
 

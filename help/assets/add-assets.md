@@ -4,17 +4,51 @@ description: Agregue sus recursos digitales a [!DNL Adobe Experience Manager] as
 feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '3162'
-ht-degree: 9%
+source-wordcount: '3190'
+ht-degree: 10%
 
 ---
 
 # Agregar recursos digitales a [!DNL Adobe Experience Manager] como [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 [!DNL Adobe Experience Manager Assets] acepta muchos tipos de recursos digitales de muchos orígenes. Almacena los binarios y las representaciones creadas. Puede realizar el procesamiento de recursos mediante varios flujos de trabajo y [!DNL Adobe Sensei] servicios, lo que permite la distribución a través de muchos canales en muchas superficies.
 
@@ -26,14 +60,14 @@ Aunque puede cargar y administrar cualquier archivo binario en [!DNL Experience 
 
 También puede solicitar que se realice un procesamiento adicional de los recursos cargados. Se pueden configurar varios perfiles de procesamiento de recursos en la carpeta, en la que se cargan los recursos, para agregar metadatos, representaciones o servicios de procesamiento de imágenes específicos. Ver [recursos de proceso al cargar](#process-when-uploaded).
 
-[!DNL Assets] proporciona los siguientes métodos de carga. El Adobe recomienda que entienda su caso de uso y la aplicabilidad de una opción de carga antes de utilizarla.
+[!DNL Assets] proporciona los siguientes métodos de carga. Adobe recomienda que entienda su caso de uso y la aplicabilidad de una opción de carga antes de utilizarla.
 
 | Método de carga | ¿Cuándo usar? | Persona principal |
 |---------------------|----------------|-----------------|
 | [Interfaz de usuario de la consola Assets](#upload-assets) | Carga ocasional, facilidad para presionar y arrastrar, carga del buscador. No utilice para cargar muchos recursos. | Todos los usuarios |
 | [Cargar API](#upload-using-apis) | Para las decisiones dinámicas durante la carga. | Desarrollador |
 | Aplicación de escritorio de [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Ingesta de recursos de bajo volumen, pero no para la migración. | Administrador, Especialista en marketing |
-| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) | Resulta útil cuando los creativos y los especialistas en marketing trabajan en recursos desde las aplicaciones de escritorio de [!DNL Creative Cloud] admitidas. | Creativo, Especialista en marketing |
+| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) | Resulta útil cuando los creativos y los especialistas en marketing trabajan en recursos desde las aplicaciones de escritorio de [!DNL Creative Cloud] admitidas. | Creative, experto en marketing |
 | [Ingestor masivo de recursos](#asset-bulk-ingestor) | Recomendado para migraciones a gran escala e ingestas masivas ocasionales. Solo para almacenes de datos compatibles. | Administrador, Desarrollador |
 
 ## Carga de activos {#upload-assets}
@@ -74,7 +108,7 @@ Para cargar un archivo (o varios archivos), puede seleccionarlos en el escritori
 1. Para cargar los recursos, realice una de las siguientes acciones:
 
    * En la barra de herramientas, haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Archivos]**. Puede cambiar el nombre del archivo en el cuadro de diálogo presentado si es necesario.
-   * En un explorador que admita HTML5, arrastre los recursos directamente a la interfaz de usuario de [!DNL Assets]. No se muestra el cuadro de diálogo para cambiar el nombre del archivo.
+   * En un explorador que admita HTML5, arrastre los recursos directamente a la interfaz de usuario [!DNL Assets]. No se muestra el cuadro de diálogo para cambiar el nombre del archivo.
 
    ![crear_menú](assets/create_menu.png)
 
@@ -218,7 +252,7 @@ Seleccione la configuración y haga clic en **[!UICONTROL Eliminar]** para elimi
 
 ### Validar la conexión con el origen de datos {#validate-connection}
 
-Para validar la conexión con el origen de datos, seleccione la configuración y haga clic en **[!UICONTROL comprobar]**. Si la conexión se realiza correctamente, el Experience Manager muestra el siguiente mensaje:
+Para validar la conexión con el origen de datos, seleccione la configuración y haga clic en **[!UICONTROL comprobar]**. Si la conexión se realiza correctamente, Experience Manager muestra el siguiente mensaje:
 
 ![Mensaje de éxito de importación masiva](assets/bulk-import-success-message.png)
 
@@ -226,7 +260,7 @@ Para validar la conexión con el origen de datos, seleccione la configuración y
 
 Seleccione la configuración y haga clic en **[!UICONTROL Ejecución en seco]** para invocar una ejecución de prueba para el trabajo de importación en lotes. Experience Manager muestra los siguientes detalles sobre el trabajo de importación masiva:
 
-![Resultado del simulacro](assets/dry-assets-result.png)
+![Resultado del ensayo](assets/dry-assets-result.png)
 
 ### Uso de nombres de archivo durante la importación masiva {#filename-handling-bulkimport}
 
@@ -335,7 +369,7 @@ Después de [configurar la herramienta Importación masiva](#configure-bulk-inge
 
 Para iniciar el proceso de importación en lotes, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Importación en lotes]**, seleccione la [configuración de importación en lotes](#configure-bulk-ingestor-tool) y, a continuación, haga clic en **[!UICONTROL Ejecutar]**. Vuelva a hacer clic en **[!UICONTROL Ejecutar]** para confirmar.
 
-El Experience Manager actualiza el estado del trabajo a **Procesando** y a **Correcto** tras completar correctamente el trabajo. Para ver los recursos importados en Experience Manager, haga clic en **Ver Assets**.
+Experience Manager actualiza el estado del trabajo a **Procesando** y a **Correcto** tras completar correctamente el trabajo. Para ver los recursos importados en Experience Manager, haga clic en **Ver Assets**.
 
 Cuando el trabajo está en curso, también puede seleccionar la configuración y hacer clic en **Detener** para detener el proceso de ingesta masiva. Vuelva a hacer clic en **Ejecutar** para reanudar el proceso. También puede hacer clic en **Ejecución en seco** para conocer los detalles de los recursos que aún están pendientes de importación.
 
@@ -347,7 +381,7 @@ Para acceder al historial de trabajos de una configuración, seleccione la confi
 
 ![Programar trabajo de ingestor masivo](assets/job-history-bulk-import.png)
 
-El Experience Manager muestra el historial de trabajos. En la página Historial de trabajos de importación masiva, también puede hacer clic en **Eliminar** para eliminar ese trabajo para la configuración de importación masiva.
+Experience Manager muestra el historial de trabajos. En la página Historial de trabajos de importación masiva, también puede hacer clic en **Eliminar** para eliminar ese trabajo para la configuración de importación masiva.
 
 
 ## Carga de recursos mediante clientes de escritorio {#upload-assets-desktop-clients}
@@ -381,13 +415,13 @@ En el caso de las carpetas que tienen un perfil de procesamiento asignado, el no
 
 ## Carga o ingesta de recursos mediante API {#upload-using-apis}
 
-Los detalles técnicos de las API y el protocolo de carga, así como los vínculos al SDK de código abierto y a los clientes de muestra, se proporcionan en la sección [carga de recursos](developer-reference-material-apis.md#asset-upload) de la referencia para desarrolladores.
+Los detalles técnicos de las API y el protocolo de carga, así como los vínculos a SDK de código abierto y clientes de muestra, se proporcionan en la sección [carga de recursos](developer-reference-material-apis.md#asset-upload) de la referencia para desarrolladores.
 
 ## Sugerencias, prácticas recomendadas y limitaciones {#tips-limitations}
 
 * La carga binaria directa es un nuevo método para cargar recursos. Es compatible de forma predeterminada con las funciones y los clientes del producto, como la interfaz de usuario [!DNL Experience Manager], [!DNL Adobe Asset Link] y la aplicación de escritorio [!DNL Experience Manager]. Cualquier código personalizado personalizado o ampliado por los equipos técnicos de los clientes debe utilizar las nuevas API y protocolos de carga.
 
-* El Adobe recomienda no agregar más de 1000 recursos en cada carpeta de [!DNL Experience Manager Assets]. Si intenta hacerlo, puede recibir un mensaje de alerta que diga: &quot;Este directorio contiene más de 1000 elementos. Las cargas y las nuevas creaciones de carpetas pueden retrasarse&quot;. Aunque todavía puede agregar más recursos a una carpeta, puede experimentar problemas de rendimiento como una navegación más lenta a dichas carpetas.
+* Adobe recomienda no agregar más de 1000 recursos en cada carpeta de [!DNL Experience Manager Assets]. Si intenta hacerlo, puede recibir un mensaje de alerta que diga: &quot;Este directorio contiene más de 1000 elementos. Las cargas y las nuevas creaciones de carpetas pueden retrasarse&quot;. Aunque todavía puede agregar más recursos a una carpeta, puede experimentar problemas de rendimiento como una navegación más lenta a dichas carpetas.
 
 * Cuando selecciona **[!UICONTROL Reemplazar]** en el cuadro de diálogo [!UICONTROL Conflicto de nombres], el ID de recurso se regenera para el nuevo recurso. Este ID es diferente del ID del recurso anterior. Si [Assets Insights](/help/assets/assets-insights.md) está habilitado para rastrear impresiones o clics con [!DNL Adobe Analytics], el ID de recurso regenerado invalida los datos capturados para el recurso en [!DNL Analytics].
 

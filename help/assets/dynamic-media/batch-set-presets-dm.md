@@ -1,18 +1,55 @@
 ---
 title: Valores preestablecidos de conjunto por lotes
-description: Obtenga información sobre cómo automatizar la creación de conjuntos de imágenes y conjuntos de giros mediante ajustes preestablecidos de conjuntos por lotes en Dynamic Media.
+description: Obtenga información sobre cómo automatizar la creación de conjuntos de imágenes y conjuntos de giros mediante ajustes preestablecidos de conjunto por lotes en Dynamic Media.
 contentOwner: Rick Brough
 feature: Image Presets,Viewer Presets
 role: User
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '3434'
-ht-degree: 0%
+source-wordcount: '3480'
+ht-degree: 1%
 
 ---
 
 # Acerca de los ajustes preestablecidos del lote {#about-bsp}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Use **[!UICONTROL Ajustes preestablecidos de conjunto de lotes]** para crear y organizar varios recursos en un conjunto de imágenes o conjunto de giros en el momento de cargar archivos de recursos en una carpeta, ya sea de forma individual o mediante la ingesta masiva. Puede hacer que el ajuste preestablecido se ejecute junto con los trabajos de importación de recursos que programe en [!DNL Dynamic Media]. Cada ajuste preestablecido es un conjunto de instrucciones independientes con un nombre único que define cómo construir el conjunto de imágenes o el conjunto de giros utilizando imágenes que coinciden con las convenciones de nomenclatura definidas en la fórmula de ajuste preestablecido.
 
@@ -20,14 +57,14 @@ Use **[!UICONTROL Ajustes preestablecidos de conjunto de lotes]** para crear y o
 >
 >¿Está usando ajustes preestablecidos de conjunto por lotes en [!DNL Dynamic Media Classic] y migrando de [!DNL Dynamic Media Classic] a Adobe Experience Manager as a Cloud Service? Si es así, debe volver a crear manualmente las definiciones de ajustes preestablecidos del conjunto de lotes en [!DNL Adobe Experience Manager as a Cloud Service].
 
-**Práctica recomendada**: al trabajar con el Adobe de ajustes preestablecidos de conjuntos de lotes, se recomienda el siguiente flujo de trabajo:
+**Práctica recomendada**: al trabajar con ajustes preestablecidos de conjunto de lotes, Adobe recomienda el siguiente flujo de trabajo:
 
 1. Cree un ajuste preestablecido de conjunto de lotes. Consulte [Crear un ajuste preestablecido de conjunto por lotes para un conjunto de imágenes o un conjunto de giros](#creating-bsp).
 1. Cree una carpeta de recursos o use una carpeta de recursos existente y asegúrese de que esté sincronizada con [!DNL Dynamic Media]. Consulte [Crear carpetas](/help/assets/manage-digital-assets.md#creating-folders).
 1. Aplique el ajuste preestablecido del conjunto de lotes a la carpeta de recursos. Consulte [Acerca de la aplicación de ajustes preestablecidos de conjuntos de lotes a las carpetas](#apply-bsp).
 1. Cargue imágenes en la carpeta de recursos. Consulte [Cargar recursos para conjuntos de imágenes](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Cargar recursos para conjuntos de giros](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets) o [Agregar recursos digitales a Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager).
 1. El conjunto de imágenes o el conjunto de giros se genera automáticamente en la carpeta deseada.
-1. Publish su conjunto de imágenes o conjunto de giros. Consulte [Publish Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+1. Publique el conjunto de imágenes o de giros. Consulte [Publicar Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Crear un ajuste preestablecido de conjunto por lotes para un conjunto de imágenes o un conjunto de giros {#creating-bsp}
 
@@ -44,7 +81,7 @@ Puede crear muchos ajustes preestablecidos de conjuntos de lotes para cubrir tod
 
 El área **[!UICONTROL Convención de nomenclatura de activos]** de la página **[!UICONTROL Ajuste preestablecido de conjunto de lotes]** tiene dos elementos que puede usar para definir el ajuste preestablecido de conjunto de lotes: **[!UICONTROL Coincidencia]** y **[!UICONTROL Nombre base]**. Estos elementos permiten definir una convención de nombres e identificar la parte de la convención utilizada para asignar un nombre al conjunto en el que están contenidos. <!-- While **[!UICONTROL Match]** is required, **[!UICONTROL Base Name]** is mandatory only if the **[!UICONTROL Match]** field does not already specify a base name through the use of a bracket grouping. -->
 
-La convención de nombres individual de una empresa suele utilizar una o más líneas de definición de cada uno de estos dos elementos. Puede utilizar tantas líneas para la definición única y agruparlas en elementos distintos, como para la imagen principal, el elemento Color, el elemento de vista alternativo y el elemento Muestra.
+La convención de nombres individual de una compañía suele utilizar una o más líneas de definición de cada uno de estos dos elementos. Puede utilizar tantas líneas para la definición única y agruparlas en elementos distintos, como para la imagen principal, el elemento Color, el elemento de vista alternativo y el elemento Muestra.
 
 Por ejemplo, la sintaxis de una expresión regular de coincidencia literal podría ser similar a la siguiente:
 
@@ -66,7 +103,7 @@ Cuando termine de crear un ajuste preestablecido de conjunto de lotes, aplíquel
 
 **Para crear un ajuste preestablecido de conjunto por lotes para un conjunto de imágenes o un conjunto de giros:**
 
-1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos por lotes]**.
+1. Seleccione el logotipo de Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos por lotes]**.
 
    ![bsp-create1.png](/help/assets/assets-dm/bsp-create1.png)
 
@@ -142,7 +179,7 @@ Vuelva a procesar los recursos en una carpeta si se da cualquiera de las dos sit
 
 ### Aplique ajustes preestablecidos de conjunto de lotes a las carpetas de recursos desde la página Ajustes preestablecidos de conjunto de lotes {#apply-bsp-to-folders-via-bsp-page}
 
-1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos por lotes]**.
+1. Seleccione el logotipo de Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos por lotes]**.
 1. En la página **[!UICONTROL Ajustes preestablecidos de conjunto de lotes]**, a la izquierda de la columna **[!UICONTROL Nombre de ajuste preestablecido]**, active la casilla de verificación de cada ajuste preestablecido de conjunto de lotes que desee aplicar a las carpetas.
 1. En la barra de herramientas, seleccione **[!UICONTROL Aplicar ajuste preestablecido de lotes a las carpetas]**.
 1. En la página **[!UICONTROL Seleccionar carpetas]**, active la casilla de verificación de cada carpeta a la que desee aplicar los ajustes preestablecidos del conjunto de lotes.
@@ -150,7 +187,7 @@ Vuelva a procesar los recursos en una carpeta si se da cualquiera de las dos sit
 
 ### Aplicar ajustes preestablecidos de conjunto de lotes desde la página Propiedades de una carpeta de recursos {#apply-bsp-to-folders-via-properties}
 
-1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Assets]** > **[!UICONTROL Archivos]**.
+1. Seleccione el logotipo de Experience Manager y vaya a **[!UICONTROL Assets]** > **[!UICONTROL Archivos]**.
 1. Vaya a la carpeta en la que desea aplicar uno o más ajustes preestablecidos de conjunto de lotes.
 1. En la página, a la izquierda de la columna **[!UICONTROL Nombre]**, active la casilla de verificación de una carpeta.
 1. En la barra de herramientas, seleccione **[!UICONTROL Propiedades]**.
@@ -178,7 +215,7 @@ Si desea que el ajuste preestablecido recién editado se vuelva a aplicar a los 
 
 **Para editar un ajuste preestablecido de conjunto por lotes:**
 
-1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos por lotes]**.
+1. Seleccione el logotipo de Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos por lotes]**.
 1. En la página **[!UICONTROL Ajustes preestablecidos de conjunto de lotes]**, a la izquierda de la columna **[!UICONTROL Nombre de ajuste preestablecido]**, compruebe el ajuste preestablecido de conjunto de lotes que desea cambiar.
 1. En la barra de herramientas, seleccione **[!UICONTROL Editar conjunto de lotes preestablecido]**.
 1. Edite el ajuste preestablecido según sea necesario.
@@ -192,7 +229,7 @@ Si copia un ajuste preestablecido existente al que hacen referencia las carpetas
 
 **Copiar un ajuste preestablecido de conjunto de lotes existente:**
 
-1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos por lotes]**.
+1. Seleccione el logotipo de Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos por lotes]**.
 1. En la página **[!UICONTROL Ajustes preestablecidos de conjunto de lotes]**, a la izquierda de la columna **[!UICONTROL Nombre de ajuste preestablecido]**, active la casilla del ajuste preestablecido de conjunto de lotes que desee copiar.
 1. En la barra de herramientas, seleccione **[!UICONTROL Copiar]**.
 1. En el cuadro de diálogo **[!UICONTROL Copiar ajuste preestablecido de conjunto de lotes]**, en el cuadro de texto **[!UICONTROL Título]**, escriba un nuevo nombre para el ajuste preestablecido.
@@ -214,7 +251,7 @@ Puede utilizar dos métodos para eliminar los ajustes preestablecidos del conjun
 
 ### Elimine los ajustes preestablecidos del conjunto de lotes de las carpetas mediante la página Ajustes preestablecidos de conjuntos de lotes {#remove-bsp-from-folders-via-bsp-page}
 
-1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos por lotes]**.
+1. Seleccione el logotipo de Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos por lotes]**.
 1. En la página **[!UICONTROL Ajustes preestablecidos de conjunto de lotes]**, a la izquierda de la columna **[!UICONTROL Nombre de ajuste preestablecido]**, active la casilla de uno o más ajustes preestablecidos de conjunto de lotes que desee eliminar de una o varias carpetas.
 1. En la barra de herramientas, seleccione **[!UICONTROL Quitar ajuste preestablecido de lotes de las carpetas]**.
 
@@ -227,11 +264,11 @@ Puede utilizar dos métodos para eliminar los ajustes preestablecidos del conjun
 
 ### Elimine los ajustes preestablecidos del conjunto de lotes de la página Propiedades de una carpeta {#remove-bsp-from-folders-via-properties}
 
-1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Assets]** > **[!UICONTROL Archivos]**.
+1. Seleccione el logotipo de Experience Manager y vaya a **[!UICONTROL Assets]** > **[!UICONTROL Archivos]**.
 1. Vaya a la carpeta en la que desea eliminar uno o más ajustes preestablecidos de conjunto de lotes.
 1. En la página, a la izquierda de la columna **[!UICONTROL Nombre]**, active la casilla de verificación de una carpeta.
 1. En la barra de herramientas, seleccione **[!UICONTROL Propiedades]**.
-1. En la página Propiedades de la carpeta, seleccione **[!UICONTROL Dynamic Media Processing]**.
+1. En la página Propiedades de la carpeta, seleccione **[!UICONTROL Procesamiento de Dynamic Media]**.
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-remove-via-properties2.png)
 
@@ -249,7 +286,7 @@ Si desea *eliminar* ajustes preestablecidos de las carpetas, consulte [Eliminar 
 
 **Para eliminar los ajustes preestablecidos del conjunto de lotes:**
 
-1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos por lotes]**.
+1. Seleccione el logotipo de Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos por lotes]**.
 1. En la página **[!UICONTROL Ajustes preestablecidos de conjunto de lotes]**, a la izquierda de la columna **[!UICONTROL Nombre de ajuste preestablecido]**, active la casilla de uno o más ajustes preestablecidos de conjunto de lotes que desee eliminar.
 1. En la barra de herramientas, seleccione **[!UICONTROL Eliminar ajustes preestablecidos del conjunto de lotes]**.
 
@@ -266,4 +303,4 @@ Si desea *eliminar* ajustes preestablecidos de las carpetas, consulte [Eliminar 
 >* [Conjuntos de imágenes](/help/assets/dynamic-media/image-sets.md)
 >* [Conjuntos de giros](/help/assets/dynamic-media/spin-sets.md)
 >* [Configurar la publicación selectiva en el nivel de carpeta en Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder). Consulte &quot;Modo de sincronización&quot; en el tema si desea obtener más información acerca de la sincronización de una sola carpeta con [!DNL Dynamic Media].
->* [Crear una configuración de Dynamic Media en Cloud Service](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services). Consulte &quot;Modo de sincronización de Dynamic Media&quot; en el tema si desea obtener más información sobre cómo sincronizar todas las carpetas en [!DNL Dynamic Media].
+>* [Crear una configuración de Dynamic Media en Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services). Consulte &quot;Modo de sincronización de Dynamic Media&quot; en el tema si desea obtener más información sobre cómo sincronizar todas las carpetas con [!DNL Dynamic Media].

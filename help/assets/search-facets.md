@@ -4,17 +4,51 @@ description: En este artículo se describe cómo crear, modificar y utilizar fac
 feature: Metadata
 role: Admin, User
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2523'
-ht-degree: 19%
+source-wordcount: '2551'
+ht-degree: 20%
 
 ---
 
 # Facetas de búsqueda {#search-facets}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -35,7 +69,7 @@ Las facetas de búsqueda que aparecen en el panel Filtros se definen en el formu
 
 Para las búsquedas de texto completo, agregue el predicado `Fulltext` al formulario. Utilice el predicado Propiedad para buscar recursos que coincidan con una sola propiedad especificada. Utilice el predicado Opciones para buscar recursos que coincidan con uno o varios valores de una propiedad en particular. Agregue el predicado Intervalo de fechas para buscar recursos creados dentro de un intervalo de fechas especificado.
 
-1. Haga clic en el logotipo del Experience Manager y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar en Forms]**.
+1. Haga clic en el logotipo de Experience Manager y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar Forms]**.
 1. En la página Buscar Forms, seleccione **[!UICONTROL Carril de búsqueda de administración de Assets]** y, a continuación, seleccione **Editar** ![aemassets_edit](assets/aemassets_edit.png).
 
    ![Busque y seleccione el carril de búsqueda de administración de Assets](assets/assets_admin_searchrail.png)
@@ -104,7 +138,7 @@ Si desea utilizar un nodo existente, especifíquelo mediante el cuadro de diálo
 >
 >El predicado Opciones es un contenedor personalizado que incluye predicados de propiedad para demostrar el comportamiento descrito. Actualmente, no hay ningún extremo REST disponible para admitir la funcionalidad de forma nativa.
 
-1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Herramientas > General > Buscar en Forms]**.
+1. Seleccione el logotipo de Experience Manager y, a continuación, vaya a **[!UICONTROL Herramientas > General > Buscar Forms]**.
 1. En la página **[!UICONTROL Buscar en Forms]**, seleccione **[!UICONTROL Carril de búsqueda de administración de Assets]** y, a continuación, seleccione el icono Editar.
 1. En la página **[!UICONTROL Editar formulario de búsqueda]**, arrastre **[!UICONTROL Predicado de opciones]** desde la pestaña **[!UICONTROL Seleccionar predicado]** al panel principal.
 1. En la pestaña **[!UICONTROL Configuración]**, indique una etiqueta y un nombre para la propiedad. Por ejemplo, para buscar recursos según su formato, especifique un nombre descriptivo para la etiqueta, por ejemplo, **[!UICONTROL Tipo de archivo]**. Especifique la propiedad en función de la cual se realizará la búsqueda en el campo de propiedad, por ejemplo, `jcr:content/metadata/dc:format.`
@@ -126,7 +160,7 @@ Si desea utilizar un nodo existente, especifíquelo mediante el cuadro de diálo
 
 El predicado `Multi Value Property` le permite buscar recursos para varios valores. Imagine un escenario en el que tiene imágenes de varios productos en [!DNL Assets] y los metadatos de cada imagen incluyen un número de SKU asociado al producto. Puede utilizar este predicado para buscar imágenes de productos basadas en varios números de SKU.
 
-1. Haga clic en el logotipo del Experience Manager y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar en Forms]**.
+1. Haga clic en el logotipo de Experience Manager y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar Forms]**.
 1. En la página Buscar Forms, seleccione **[!UICONTROL Carril de búsqueda de administración de Assets]** y, a continuación, **Editar** ![aemassets_edit](assets/aemassets_edit.png).
 1. En la página Editar formulario de búsqueda, arrastre un **[!UICONTROL predicado de propiedades de varios valores]** desde la pestaña **[!UICONTROL Seleccionar predicado]** hasta el panel principal.
 1. En la ficha **[!UICONTROL Configuración]**, escriba una etiqueta y un texto de marcador de posición para el predicado. Especifique el nombre de la propiedad en función del cual se realizará la búsqueda en el campo de propiedad, por ejemplo, `jcr:content/metadata/dc:value`. También puede utilizar el cuadro de diálogo de selección para seleccionar un nodo.
@@ -139,7 +173,7 @@ El predicado `Multi Value Property` le permite buscar recursos para varios valor
 
 El predicado `Tags` le permite realizar búsquedas de recursos basadas en etiquetas. De manera predeterminada, [!DNL Assets] busca recursos para una o más coincidencias de etiquetas en función de las etiquetas especificadas. En otras palabras, la consulta de búsqueda realiza una operación OR utilizando las etiquetas especificadas. Sin embargo, puede utilizar la opción Coincidir con todas las etiquetas para buscar recursos que incluyan todas las etiquetas que especifique.
 
-1. Haga clic en el logotipo del Experience Manager y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar en Forms]**.
+1. Haga clic en el logotipo de Experience Manager y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar Forms]**.
 1. En la página Buscar en Forms, seleccione **[!UICONTROL Carril de búsqueda de administración de Assets]** y, a continuación, seleccione **Editar** ![aemassets_edit](assets/aemassets_edit.png).
 1. En la página Editar formulario de búsqueda, arrastre **[!UICONTROL Predicado de etiquetas]** desde la pestaña Seleccionar predicado al panel principal.
 1. En la pestaña Configuración, introduzca un texto de marcador de posición para el predicado. Especifique el nombre de la propiedad en función del cual se realizará la búsqueda en el campo de propiedad, por ejemplo, `jcr:content/metadata/cq:tags`. También puede seleccionar un nodo en CRXDE desde el cuadro de diálogo de selección.
@@ -309,7 +343,7 @@ De forma similar a la forma de agregar un predicado Propiedad o Opciones, puede 
 
 ## Eliminar las facetas de búsqueda predeterminadas {#removing-default-search-facets}
 
-El Adobe recomienda tener cuidado al eliminar las facetas de búsqueda predeterminadas para evitar problemas de rendimiento. La eliminación de las facetas de búsqueda predeterminadas también puede afectar al comportamiento de las funciones predeterminadas.
+Adobe recomienda tener cuidado al eliminar las facetas de búsqueda predeterminadas para evitar problemas de rendimiento. La eliminación de las facetas de búsqueda predeterminadas también puede afectar al comportamiento de las funciones predeterminadas.
 
 No elimine los siguientes campos ocultos, ya que provoca un problema de rendimiento de consulta con OmniSearch y las colecciones inteligentes:
 

@@ -1,21 +1,55 @@
 ---
-title: AEM ¿Cómo se traducen los recursos en la?
-description: AEM Obtenga información sobre cómo automatizar flujos de trabajo para traducir recursos en, incluidos binarios, metadatos y etiquetas a varios idiomas.
+title: ¿Cómo se traducen los recursos en AEM?
+description: Obtenga información sobre cómo automatizar flujos de trabajo para traducir recursos en AEM, incluidos binarios, metadatos y etiquetas a varios idiomas.
 contentOwner: AG
 feature: Asset Management, Translation
 role: Admin, User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2633'
+source-wordcount: '2661'
 ht-degree: 17%
 
 ---
 
-# AEM Traducción de recursos en la {#multilingual-assets}
+# Traducción de recursos en AEM {#multilingual-assets}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -24,11 +58,11 @@ ht-degree: 17%
 
 Recursos multilingües: recursos con binarios, metadatos y etiquetas en varios idiomas. Por lo general, los binarios, los metadatos y las etiquetas de los recursos existen en un idioma y se traducen a otros idiomas para su uso en proyectos multilingües. Adobe Experience Manager Assets permite automatizar los flujos de trabajo para traducir recursos (incluidos binarios, metadatos y etiquetas) y generarlos en otros idiomas para utilizarlos en proyectos multilingües.
 
-AEM Para automatizar la traducción de recursos de la, se integran los proveedores de servicios de traducción con Experience Manager y se crean proyectos para traducir recursos a varios idiomas. Experience Manager admite flujos de trabajo de traducción automática y humana.
+Para automatizar la traducción de recursos de AEM, se integran los proveedores de servicios de traducción con Experience Manager y se crean proyectos para traducir recursos a varios idiomas. Experience Manager admite flujos de trabajo de traducción automática y humana.
 
-AEM Traducción de recursos humanos en el recurso: los recursos traducidos se devuelven y se importan en el Experience Manager. Cuando el proveedor de traducción está integrado con Experience Manager, los recursos se envían automáticamente entre el Experience Manager y el proveedor de traducción.
+Traducción de recursos humanos en AEM: los recursos traducidos se devuelven e importan en Experience Manager. Cuando el proveedor de traducción está integrado con Experience Manager, los recursos se envían automáticamente entre Experience Manager y el proveedor de traducción.
 
-AEM Traducción automática de recursos en el recurso: el servicio de traducción automática traduce inmediatamente los metadatos y las etiquetas de los recursos.
+Traducción automática de recursos en AEM: el servicio de traducción automática traduce inmediatamente los metadatos y las etiquetas de los recursos.
 
 <!--
 We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
@@ -217,7 +251,7 @@ Ejecute este flujo de trabajo para traducir un grupo adicional de recursos e inc
 
 >[!NOTE]
 >
->Si inicia un flujo de trabajo de traducción para recursos complejos, como archivos de PDF y archivos de Adobe InDesign, sus subrecursos o representaciones (si los hay) no se envían para su traducción.
+>Si inicia un flujo de trabajo de traducción para recursos complejos, como archivos PDF y archivos Adobe InDesign, sus subrecursos o representaciones (si los hay) no se envían para su traducción.
 
 ### Crear y traducir flujo de trabajo {#create-and-translate-workflow}
 
@@ -255,7 +289,7 @@ La aplicación de servicios de nube de traducción directamente a la carpeta de 
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
 1. Vaya a la pestaña **[!UICONTROL Cloud Services]**.
-1. En la lista Configuraciones del Cloud Service, seleccione el proveedor de traducción deseado. Por ejemplo, si desea utilizar los servicios de traducción de Microsoft, elija **[!UICONTROL Microsoft Translator]**.
+1. En la lista Configuraciones de Cloud Service, elija el proveedor de traducción deseado. Por ejemplo, si desea utilizar los servicios de traducción de Microsoft, elija **[!UICONTROL Microsoft Translator]**.
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
@@ -270,7 +304,7 @@ La aplicación de servicios de nube de traducción directamente a la carpeta de 
 Si desea aplicar un conector personalizado para los servicios de traducción que desea utilizar en los flujos de trabajo de traducción. Para aplicar un conector personalizado, primero instale el conector desde [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md). A continuación, configure el conector desde la consola de Cloud Services. Después de configurar el conector, estará disponible en la lista de conectores de la pestaña Cloud Services que se describe en [Aplicación de los serviciosde traducción](#applying-the-translation-services). Después de aplicar el conector personalizado y ejecutar los flujos de trabajo de traducción, el mosaico **[!UICONTROL Resumen de traducción]** del proyecto de traducción muestra los detalles del conector en los encabezados **[!UICONTROL Proveedor]** y **[!UICONTROL Método]**.
 
 1. Instale el conector desde [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md).
-1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Herramientas > Implementación > Cloud Service]**.
+1. Seleccione el logotipo de Experience Manager y vaya a **[!UICONTROL Herramientas > Implementación > Cloud Services]**.
 1. Coloque el conector que instaló en **[!UICONTROL Servicios de terceros]** en la página **[!UICONTROL Cloud Services]**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)

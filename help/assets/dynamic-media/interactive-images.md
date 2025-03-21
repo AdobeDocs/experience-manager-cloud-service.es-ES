@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '4072'
+source-wordcount: '4118'
 ht-degree: 1%
 
 ---
 
 # Imágenes interactivas{#interactive-images}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Puede convertir fácilmente las imágenes estáticas en experiencias atractivas y enriquecidas para los clientes arrastrando y soltando puntos interactivos &quot;de venta&quot; en una imagen. Los puntos de acceso de compra combinan información adicional sobre un producto o servicio con una capacidad directa de punto de venta de &quot;Agregar al carro de compras&quot; o &quot;Comprar&quot;. Los clientes pueden seleccionar estos puntos interactivos que se vinculan directamente al producto o servicio, añadirlo a un carro de compras o vincularlo a una página web. Las experiencias directas como estas aumentan la participación de los clientes y las conversiones en el sitio web.
 
@@ -39,7 +76,7 @@ El tutorial ayuda a ilustrar los pasos de integración de imágenes interactivas
 Pasos de las imágenes interactivas:
 
 1. **(Opcional) Identificar variables de puntos interactivos**. Si utiliza Adobe Experience Manager Assets y Dynamic Media de forma independiente, identifique las variables dinámicas utilizadas en la implementación de Quickview existente. Al hacerlo, se garantiza la entrada de datos de puntos interactivos al crear la imagen interactiva. Consulte [(Opcional) Identificación de variables de punto interactivo](#optional-identifying-hotspot-variables).
-Sin embargo, si utiliza Experience Manager Sites, o comercio electrónico de Experience Manager, o ambos, este paso no es necesario.
+Sin embargo, si utiliza Experience Manager Sites, Experience Manager eCommerce o ambos, este paso no es necesario.
 
 1. **(Opcional): cree un ajuste preestablecido de visualizador de imágenes interactivo**. Personalice la imagen gráfica que se utiliza para representar las zonas interactivas. No es necesario crear su propio ajuste preestablecido de visualizador de imágenes interactivas si desea utilizar el ajuste preestablecido de visualizador de imágenes interactivas predeterminado denominado `Shoppable_Banner` en su lugar.
 Consulte [(Opcional) Creación de un ajuste preestablecido de visualizador de imágenes interactivo](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset).
@@ -52,7 +89,7 @@ Ver [Agregar puntos interactivos a un titular de imagen](#adding-hotspots-to-an-
 Consulte [Vista previa de imágenes interactivas](#optional-previewing-interactive-images) - Opcional. Si lo desea, puede ver una representación del titular de la compra y probar su interactividad.
 Consulte [Publicación de Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar recursos de imágenes interactivas.
 
-1. **Agregue una imagen interactiva a su sitio web o a su sitio web en Experience Manager**. Si utiliza Sites, eCommerce o ambos, puede añadir imágenes interactivas directamente a una página web en Experience Manager. Arrastre el componente Medios interactivos a la página. Consulte [Agregar Dynamic Media Assets a las páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+1. **Agregue una imagen interactiva a su sitio web o a su sitio web en Experience Manager**. Si utiliza Sites, comercio electrónico o ambos, puede agregar imágenes interactivas directamente a una página web en Experience Manager. Arrastre el componente Medios interactivos a la página. Consulte [Agregar Dynamic Media Assets a las páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 Si utiliza Experience Manager Assets y Dynamic Media de forma independiente, copie el código incrustado en el sitio web. A continuación, integre la vista rápida existente. Ver [Integración de una imagen interactiva con su sitio web](#integrating-an-interactive-image-with-your-website).
 Si utiliza un WCM (Administrador de contenido web) de terceros, integre el nuevo vídeo interactivo con la vista rápida existente que se utiliza en el sitio web. Ver [Integración de una imagen interactiva con una vista rápida existente](#integrating-an-interactive-image-with-an-existing-quickview).
 
@@ -63,7 +100,7 @@ Si utiliza un WCM (Administrador de contenido web) de terceros, integre el nuevo
 >Esta tarea solo es necesaria si se cumplen los siguientes criterios:
 >
 >* Desea añadir interactividad a la imagen activando en Vistas rápidas.
->* Su implementación de Experience Manager *no* usa un módulo de integración de comercio electrónico para extraer datos de productos en Experience Manager desde cualquier solución de comercio electrónico. Estas soluciones incluyen IBM® WebSphere® Commerce, Elastic Path, SAP Hybris o Intershop.
+>* Su implementación de Experience Manager *no* utiliza un marco de integración de comercio electrónico para extraer datos de productos en Experience Manager desde cualquier solución de comercio electrónico. Estas soluciones incluyen IBM® WebSphere® Commerce, Elastic Path, SAP Hybris o Intershop.
 >
 >Si la implementación de Experience Manager utiliza el comercio electrónico, puede omitir esta tarea y continuar con la siguiente.
 
@@ -196,7 +233,7 @@ Después de guardar el ajuste preestablecido de visualizador, se activa automát
 
    Asegúrese de publicar el nuevo ajuste preestablecido de visualizador.
 
-   Consulte [Ajustes preestablecidos de visor de Publish](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets).
+   Consulte [Publicar ajustes preestablecidos del visor](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets).
 
    Ya está listo para cargar un titular de imagen.
 
@@ -294,9 +331,9 @@ Ver [Fragmentos de experiencias](/help/sites-cloud/authoring/fragments/content-f
         >Las herramientas para compartir en medios sociales de la imagen interactiva no son compatibles cuando se incrusta el visualizador en un fragmento de experiencia. En su lugar, utilice o cree ajustes preestablecidos de visualizador que no tengan herramientas de uso compartido de medios sociales. Estos ajustes preestablecidos de visualizador le permiten incrustarlo correctamente en los fragmentos de experiencias.
 
 1. Seleccione **[!UICONTROL Guardar]** para guardar su trabajo y volver a la página de exploración.
-1. Publish muestra la imagen interactiva. La publicación ofrece el banner a través de la nube y también genera código incrustado que le permite integrarse con un sitio web de terceros.
+1. Publique la imagen interactiva. La publicación ofrece el banner a través de la nube y también genera código incrustado que le permite integrarse con un sitio web de terceros.
 
-   Consulte [recursos de Publish](/help/assets/manage-digital-assets.md#publish-assets).
+   Consulte [Publicar recursos](/help/assets/manage-digital-assets.md#publish-assets).
 
    Después de añadir puntos interactivos y publicar la imagen interactiva, ya puede añadirla al sitio web existente.
 
@@ -322,9 +359,9 @@ Consulte [Agregar Dynamic Media Assets a las páginas](/help/assets/dynamic-medi
 1. En la lista Visualizadores, seleccione **[!UICONTROL Shoppable_Banner]** o el nombre del ajuste preestablecido de visualizador de imágenes interactivo que ha creado.
 1. Para probar las acciones asociadas de las zonas interactivas, seleccione las zonas interactivas de la imagen.
 
-## Recursos de imagen interactiva de Publish {#publishing-interactive-image-assets}
+## Publicar recursos de imagen interactiva {#publishing-interactive-image-assets}
 
-Consulte [Publish Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar recursos de imagen interactivos.
+Consulte [Publicar Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar recursos de imágenes interactivas.
 
 ## Integración de una imagen interactiva con el sitio web {#integrating-an-interactive-image-with-your-website}
 
@@ -378,7 +415,7 @@ La implementación de Quickview existente normalmente representa una cadena de a
 1. La lógica back-end devuelve los datos de vista rápida o el contenido correspondiente al código front-end.
 1. El código front-end carga los datos de vista rápida o el contenido.
 1. De forma opcional, el código front-end convierte los datos de vista rápida cargados en una representación de HTML.
-1. El código front-end muestra un cuadro de diálogo o panel modal y procesa el contenido del HTML en la pantalla para el usuario.
+1. El código front-end muestra un cuadro de diálogo o panel modal y procesa el contenido de HTML en la pantalla para el usuario.
 
 Estas llamadas no representan necesariamente llamadas independientes a la API pública a las que llama la lógica de página web desde un paso arbitrario. En su lugar, es una llamada encadenada en la que cada paso siguiente se oculta en la última fase (llamada de retorno) del paso anterior.
 

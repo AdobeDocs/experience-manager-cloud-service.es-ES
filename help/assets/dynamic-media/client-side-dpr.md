@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Device Pixel Ratio,Smart Imaging
 role: Admin,User
 exl-id: 556710c7-133c-487a-8cd9-009a5912e94c
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 0%
+source-wordcount: '368'
+ht-degree: 5%
 
 ---
 
 # Acerca de las imágenes inteligentes con proporción de píxeles de dispositivo (DPR) del lado del cliente {#client-side-dpr}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 La solución actual de imágenes inteligentes utiliza cadenas del agente de usuario para determinar el tipo de dispositivo (escritorio, tableta, móvil, etc.) que se está utilizando.
 
@@ -26,7 +63,7 @@ El RGPD del lado del cliente le proporciona valores de precisión del 100 % y fu
 
 **Aplicaciones procesadas del lado del servidor**
 
-1. Cargue el inicio del trabajador de servicio (`srvinit.js`) incluyendo el siguiente script en la sección del encabezado de la página del HTML:
+1. Cargue el inicio del trabajador de servicio (`srvinit.js`) incluyendo el siguiente script en la sección del encabezado de su página de HTML:
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
@@ -34,7 +71,7 @@ El RGPD del lado del cliente le proporciona valores de precisión del 100 % y fu
 
    Adobe recomienda cargar este script _antes de_ cualquier otro script para que el trabajador de servicio inicie la inicialización de inmediato.
 
-1. Incluya el siguiente código de etiqueta de imagen DPR en la parte superior de la sección del cuerpo de la página de HTML:
+1. Incluya el siguiente código de etiqueta de imagen DPR en la parte superior de la sección del cuerpo de su página de HTML:
 
    ```html
    <img src="aem_dm_dpr_1x.jpg" style="width:1px;height:1px;display:none"
@@ -45,11 +82,11 @@ El RGPD del lado del cliente le proporciona valores de precisión del 100 % y fu
        aem_dm_dpr_5x.jpg 5x">
    ```
 
-   Es obligatorio incluir este código de etiqueta de imagen DPR _antes_ de todas las imágenes estáticas en la página de HTML.
+   Es obligatorio incluir este código de etiqueta de imagen DPR _antes_ de todas las imágenes estáticas en su página de HTML.
 
 **Aplicaciones procesadas del lado del cliente**
 
-1. Incluya los siguientes scripts de DPR en la sección de encabezado de la página de HTML:
+1. Incluya los siguientes scripts de DPR en la sección de encabezado de su página de HTML:
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
@@ -58,12 +95,12 @@ El RGPD del lado del cliente le proporciona valores de precisión del 100 % y fu
 
    Puede combinar ambos scripts de DPR en uno para evitar varias solicitudes de red.
 
-   El Adobe recomienda cargar estos scripts _antes_ de cualquier otro script en la página del HTML.
-El Adobe también recomienda almacenar la aplicación en Bootstrap con la etiqueta de HTML de diferencia en lugar de con un elemento de cuerpo. El motivo es que `dprImageInjection.js` inserta dinámicamente la etiqueta de imagen en la parte superior de la sección del cuerpo de la página del HTML.
+   Adobe recomienda cargar estos scripts _antes_ de cualquier otro script en la página de HTML.
+Adobe también recomienda que Bootstrap la aplicación con la etiqueta HTML de diferenciación en lugar de con un elemento de cuerpo. El motivo es que `dprImageInjection.js` inserta dinámicamente la etiqueta de imagen en la parte superior de la sección del cuerpo de la página de HTML.
 
 ## Descarga de archivos JavaScript {#client-side-dpr-script}
 
-Los siguientes archivos JavaScript de la descarga solo se proporcionan como referencia de ejemplo. Si tiene intención de utilizar estos archivos en páginas de HTML, asegúrese de editar el código de cada archivo para adaptarlo a sus necesidades.
+Los siguientes archivos JavaScript de la descarga solo se proporcionan como referencia de ejemplo. Si tiene intención de utilizar estos archivos en páginas de HTML, asegúrese de editar el código de cada archivo para adaptarlo a sus propios requisitos.
 
 * `dprImageInjection.js`
 * `srvinit.js`

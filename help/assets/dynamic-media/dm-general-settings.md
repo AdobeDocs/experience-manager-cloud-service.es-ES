@@ -1,6 +1,6 @@
 ---
 title: Configuración general de Dynamic Media
-description: Aprenda a administrar la Configuración general en Dynamic Media. Puede configurar los nombres de los servidores de publicación y origen y establecer las opciones de sobrescritura de imágenes. Ajuste la configuración de carga predeterminada para el enmascaramiento de enfoque y el procesamiento de archivos para archivos de PostScript, Photoshop, PDF y Illustrator.
+description: Aprenda a administrar la configuración general en Dynamic Media. Puede configurar los nombres de los servidores de publicación y origen y establecer las opciones de sobrescritura de imágenes. Ajuste la configuración de carga predeterminada para el enmascaramiento de enfoque y el procesamiento de archivos para archivos de PostScript, Photoshop, PDF y Illustrator.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
@@ -9,14 +9,51 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: 6251b9bb6f56d387fa1a158ac62ef3b25b1ab56b
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '2506'
-ht-degree: 0%
+source-wordcount: '2552'
+ht-degree: 1%
 
 ---
 
 # Configuración general de Dynamic Media
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 <!-- hide: yes
 hidefromtoc: yes -->
@@ -25,24 +62,24 @@ hidefromtoc: yes -->
 
 La configuración de **[!UICONTROL Configuración general de Dynamic Media]** solo está disponible si:
 
-* Tiene una *configuración de Dynamic Media ]*****[!UICONTROL  existente (en **[!UICONTROL Cloud Service]**) en Adobe Experience Manager as a Cloud Service. Consulte [Crear una configuración de Dynamic Media en Cloud Service](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
-* Es administrador del sistema Experience Manager con privilegios de administrador.
+* Tiene una *configuración de Dynamic Media* **[!UICONTROL existente]** (en **[!UICONTROL Cloud Services]**) en Adobe Experience Manager as a Cloud Service. Consulte [Crear una configuración de Dynamic Media en Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+* Es administrador del sistema de Experience Manager con privilegios de administrador.
 
-Los desarrolladores y programadores de sitios web con experiencia son la audiencia a la que va dirigido Configuración general de Dynamic Media. Adobe Dynamic Media recomienda que los usuarios que cambien la configuración de publicación estén familiarizados con Dynamic Media en Adobe Experience Manager y con la tecnología básica de creación de imágenes.
+Los desarrolladores y programadores de sitios web con experiencia son la audiencia a la que va dirigida la Configuración general de Dynamic Media. Adobe Dynamic Media recomienda que los usuarios que cambien la configuración de publicación estén familiarizados con Dynamic Media en Adobe Experience Manager y con la tecnología básica de creación de imágenes.
 
-Al crear la cuenta, Adobe Dynamic Media proporciona automáticamente los servidores asignados a su empresa. Estos servidores se utilizan para construir cadenas de URL para el sitio web y las aplicaciones. Estas llamadas de URL son específicas de su cuenta de.
+Al crear la cuenta, Adobe Dynamic Media proporciona automáticamente los servidores asignados para su empresa. Estos servidores se utilizan para construir cadenas de URL para el sitio web y las aplicaciones. Estas llamadas de URL son específicas de su cuenta de.
 
-La página Configuración de Dynamic Media Publish establece la configuración predeterminada que determina cómo se envían los recursos desde los servidores de Dynamic Media de Adobe a los sitios web o las aplicaciones. Si no se especifica ninguna configuración, el servidor de Dynamic Media de Adobe envía un recurso según una configuración predeterminada que se configuró en la página Configuración de Dynamic Media Publish.
+La página Configuración de publicación de Dynamic Media establece la configuración predeterminada que determina cómo se envían los recursos desde los servidores de Dynamic Media de Adobe a los sitios web o las aplicaciones. Si no se especifica ninguna configuración, el servidor de Adobe Dynamic Media envía un recurso según una configuración predeterminada que se configuró en la página Configuración de publicación de Dynamic Media.
 
 Consulte también [Opcional: configuración de Dynamic Media](/help/assets/dynamic-media/config-dm.md#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings) para ver más tareas de configuración opcionales.
 
 >[!NOTE]
 >
->¿Desea actualizar de Dynamic Media Classic a Dynamic Media en Adobe Experience Manager? La página Configuración general y la página [Configuración de Publish](/help/assets/dynamic-media/dm-publish-settings.md) de Dynamic Media ya se han rellenado con los valores tomados de su cuenta de Dynamic Media Classic. Las excepciones son todos los valores enumerados en el área **[!UICONTROL Opciones de carga predeterminadas]** de la página Configuración general. Estos valores ya están en Experience Manager. Como tal, cualquier cambio que realice en **[!UICONTROL Opciones de carga predeterminadas]** en cualquiera de las cinco pestañas, a través de la interfaz de usuario del Experience Manager, se reflejará en Dynamic Media, no en Dynamic Media Classic. El resto de la configuración y los valores de la página Configuración general y de la página [Configuración de Publish](/help/assets/dynamic-media/dm-publish-settings.md) se mantienen entre Dynamic Media Classic y Dynamic Media en Experience Manager.
+>¿Desea actualizar de Dynamic Media Classic a Dynamic Media en Adobe Experience Manager? La página Configuración general y la página [Configuración de publicación](/help/assets/dynamic-media/dm-publish-settings.md) de Dynamic Media se han rellenado previamente con los valores tomados de su cuenta de Dynamic Media Classic. Las excepciones son todos los valores enumerados en el área **[!UICONTROL Opciones de carga predeterminadas]** de la página Configuración general. Estos valores ya están en Experience Manager. Como tal, cualquier cambio que realice en **[!UICONTROL Opciones de carga predeterminadas]** en cualquiera de las cinco pestañas, a través de la interfaz de usuario de Experience Manager, se reflejará en Dynamic Media, no en Dynamic Media Classic. El resto de la configuración y los valores de la página Configuración general y la página [Configuración de publicación](/help/assets/dynamic-media/dm-publish-settings.md) se mantienen entre Dynamic Media Classic y Dynamic Media en Experience Manager.
 
 **Para establecer la configuración general de Dynamic Media:**
 
-1. En el modo Autor del Experience Manager, seleccione el logotipo del Experience Manager para acceder a la consola de navegación global.
+1. En el modo Autor de Experience Manager, seleccione el logotipo de Experience Manager para acceder a la consola de navegación global.
 1. En el carril izquierdo, haga clic en ![Icono de herramientas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) > **[!UICONTROL Assets]** > ![Engranajes editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GearsEdit_18_N.svg) **[!UICONTROL Configuración general de Dynamic Media]**.
 1. En la página Servidor, establezca **[!UICONTROL Nombre del servidor publicado]** y **[!UICONTROL Nombre del servidor de origen]** y, a continuación, utilice las cinco pestañas para configurar las opciones de carga predeterminadas de edición de imágenes y de los archivos Postscript, Photoshop, PDF y Illustrator.
 
@@ -61,7 +98,7 @@ Consulte también [Opcional: configuración de Dynamic Media](/help/assets/dynam
 
 ## Servidor {#server-general-setting}
 
-Al crear la cuenta, Adobe Dynamic Media proporciona automáticamente los servidores asignados a su empresa. Estos servidores se utilizan para construir cadenas de URL para el sitio web y las aplicaciones. Estas llamadas de URL son específicas de su cuenta de.
+Al crear la cuenta, Adobe Dynamic Media proporciona automáticamente los servidores asignados para su empresa. Estos servidores se utilizan para construir cadenas de URL para el sitio web y las aplicaciones. Estas llamadas de URL son específicas de su cuenta de.
 
 | Opción | Descripción |
 | --- | --- |
@@ -72,15 +109,15 @@ Al crear la cuenta, Adobe Dynamic Media proporciona automáticamente los servido
 
 * **[!UICONTROL Sobrescribir imágenes]**
 
-  Adobe Dynamic Media no permite que dos archivos tengan el mismo nombre. El ID de Dynamic Media de Adobe de cada elemento (el nombre de imagen menos la extensión del nombre de archivo) debe ser único. Debido a esta regla, **[!UICONTROL la carga en la aplicación]** se ha sobrescrito. El efecto exacto de esta opción depende de la opción Sobrescribir imágenes especificada que haya elegido. Estas opciones especifican cómo se cargan las imágenes de reemplazo: si reemplazan las imágenes originales o se convierten en imágenes duplicadas. Se cambió el nombre de las imágenes duplicadas por `-1`. Por ejemplo, `chair.tif` cambió el nombre a `chair-1.tif`. Estas opciones afectan a las imágenes cargadas en una carpeta diferente a la original o a las imágenes con una extensión de nombre de archivo diferente a la original, como por ejemplo, JPG, TIF o PNG.
+  Adobe Dynamic Media no permite que dos archivos tengan el mismo nombre. El ID de Dynamic Media de Adobe de cada elemento (el nombre de imagen menos la extensión del nombre de archivo) debe ser único. Debido a esta regla, **[!UICONTROL la carga en la aplicación]** se ha sobrescrito. El efecto exacto de esta opción depende de la opción Sobrescribir imágenes especificada que haya elegido. Estas opciones especifican cómo se cargan las imágenes de reemplazo: si reemplazan las imágenes originales o se convierten en imágenes duplicadas. Se cambió el nombre de las imágenes duplicadas por `-1`. Por ejemplo, `chair.tif` cambió el nombre a `chair-1.tif`. Estas opciones afectan a las imágenes cargadas en una carpeta diferente a la original o a las imágenes con una extensión de nombre de archivo diferente a la original, como JPG, TIF o PNG.
 
   >[!NOTE]
   >
-  >Para mantener la coherencia con el Experience Manager, seleccione la opción Sobrescribir imágenes **[!UICONTROL Sobrescribir en la carpeta actual, mismo nombre/extensión base]**.
+  >Para mantener la coherencia con Experience Manager, seleccione la opción Sobrescribir imágenes **[!UICONTROL Sobrescribir en la carpeta actual, mismo nombre/extensión de base]**.
 
   | Sobrescribir imágenes, opción | Descripción |
   | --- | --- |
-  | **[!UICONTROL Sobrescribir en la carpeta actual, mismo nombre/extensión de base]** | *Predeterminado* solo para nuevas cuentas de Dynamic Media.<br>Esta opción es la regla más estricta para el reemplazo. Requiere que cargue la imagen de reemplazo en la misma carpeta que el original y que la imagen de reemplazo tenga la misma extensión de nombre de archivo que el original. Si no se cumplen estos requisitos, se crea un duplicado.<br>*Para mantener la coherencia con Experience Manager, seleccione esta opción*. |
+  | **[!UICONTROL Sobrescribir en la carpeta actual, mismo nombre/extensión de base]** | *Predeterminado* solo para las nuevas cuentas de Dynamic Media.<br>Esta opción es la regla más estricta para el reemplazo. Requiere que cargue la imagen de reemplazo en la misma carpeta que el original y que la imagen de reemplazo tenga la misma extensión de nombre de archivo que el original. Si no se cumplen estos requisitos, se crea un duplicado.<br>*Para mantener la coherencia con Experience Manager, seleccione esta opción*. |
   | **[!UICONTROL Sobrescribir en la carpeta actual, mismo nombre de base independientemente de la extensión]** | Requiere que cargue la imagen de reemplazo en la misma carpeta que el original, pero la extensión del nombre del archivo puede ser diferente del original. Por ejemplo, chair.tif reemplaza chair.jpg. |
   | **[!UICONTROL Sobrescribir en cualquier carpeta con mismo nombre y extensión de recurso base]** | Requiere que la imagen de reemplazo tenga la misma extensión de nombre de archivo que la imagen original (por ejemplo, chair.jpg debe reemplazar chair.jpg, no chair.tif). Sin embargo, puede cargar la imagen de sustitución en una carpeta diferente a la original. La imagen actualizada reside en la nueva carpeta; el archivo ya no se puede encontrar en su ubicación original. |
   | **[!UICONTROL Sobrescribir en cualquier carpeta, mismo nombre de recurso base independientemente de la extensión]** | Esta opción es la regla de reemplazo más inclusiva. Puede cargar una imagen de reemplazo en una carpeta diferente a la original, cargar un archivo con una extensión de nombre de archivo diferente y reemplazar el archivo original. Si el archivo original está en una carpeta diferente, la imagen de reemplazo reside en la nueva carpeta a la que se cargó. |
@@ -101,7 +138,7 @@ El efecto Máscara de enfoque utiliza las mismas opciones que el filtro Máscara
 
 | Opciones de máscara de enfoque | Descripción |
 | --- | --- |
-| **[!UICONTROL Importe]** | Requerido.<br>Controla la cantidad de contraste que se aplica a los píxeles del borde.<br>Considérelo como la intensidad del efecto. Los valores de cantidad de la máscara de enfoque difieren entre Adobe Dynamic Media y Adobe Photoshop. Photoshop ofrece un rango de cantidades del 1% al 500%. Mientras que en Adobe Dynamic Media, el intervalo de valores es de `0.0` a `5.0`. Un valor de 5,0 en Adobe Dynamic Media es el equivalente aproximado de 500 % en Photoshop; un valor de 0,9 es el equivalente de 90 %, y así sucesivamente. |
+| **[!UICONTROL Importe]** | Requerido.<br>Controla la cantidad de contraste que se aplica a los píxeles del borde.<br>Considérelo como la intensidad del efecto. Los valores de cantidad de la máscara de enfoque difieren entre Adobe Dynamic Media y Adobe Photoshop. Photoshop ofrece un rango de cantidades del 1% al 500%. Mientras que en Adobe Dynamic Media, el intervalo de valores es de `0.0` a `5.0`. Un valor de 5,0 en Adobe Dynamic Media es el equivalente aproximado de 500% en Photoshop; un valor de 0,9 es el equivalente de 90%, y así sucesivamente. |
 | **[!UICONTROL Radio]** | Requerido.<br>Controla el radio del efecto.<br>El intervalo de valores es de `0` a `250`. El efecto se ejecuta en todos los píxeles de una imagen y se irradia desde todos los píxeles en todas las direcciones. El radio se mide en píxeles. Por ejemplo, para obtener un efecto de enfoque similar para una imagen de 2000 x 2000 píxeles e imagen de 500 x 500 píxeles, debe establecer un radio de dos píxeles en la imagen de 2000 x 2000 píxeles. A continuación, defina un valor de radio de un píxel en la imagen de 500 x 500 píxeles. Se utiliza un valor mayor para una imagen que tiene más píxeles. |
 | **[!UICONTROL Umbral]** | Requerido.<br>El umbral es un rango de contraste que se ignora cuando se aplica el filtro Máscara de enfoque. Este efecto es importante para que no se introduzca ningún &quot;ruido&quot; en una imagen cuando se utilice este filtro. El intervalo de valores es de `0` a `255`, que es el número de pasos de brillo de una imagen en escala de grises. `0`=negro, `128`=50% gris y `255`=blanco.<br>Un valor de umbral de `12` ignora las ligeras variaciones en el brillo del tono de la piel para evitar agregar ruido, pero agrega contraste al borde de las áreas de contrastes, como cuando las pestañas tocan la piel.<br>Si tienes una foto de la cara de alguien, la máscara de enfoque afecta a las partes contrastadas de la imagen. Por ejemplo, donde las pestañas y la piel se juntan para crear una zona obvia de contraste, y la piel lisa en sí misma. Incluso la piel más suave muestra cambios sutiles en los valores de brillo. Si no utiliza un valor de umbral, el filtro acentúa estos cambios sutiles en los píxeles de la piel. A su vez, se crea un efecto ruidoso e indeseable mientras que el contraste en las pestañas aumenta, lo que aumenta la nitidez.<br>Para evitar este problema, se introduce un valor de umbral que indica al filtro que ignore los píxeles que no cambian drásticamente el contraste, como la apariencia suave.<br>En el gráfico de cremallera mostrado anteriormente, observe la textura junto a las cremalleras. El ruido de la imagen se muestra porque los valores de umbral eran demasiado bajos para suprimir el ruido. |
 | **[!UICONTROL Monocromo]** | Seleccione esta opción para resaltar el brillo (intensidad) de la imagen con máscara de enfoque.<br>Anule la selección para aplicar máscara de enfoque a cada componente de color por separado. |
@@ -112,7 +149,7 @@ Vea también [Enfoque de imágenes en Adobe Dynamic Media y en Image Server](htt
 
 Puede rasterizar archivos de Adobe PostScript®, mantener fondos transparentes, elegir una resolución y elegir un espacio de color.
 
-Puede utilizar archivos Adobe PostScript® (EPS) en Adobe Dynamic Media. Adobe Dynamic Media ofrece comandos para configurar estos archivos a medida que se cargan.
+Puede utilizar archivos de Adobe PostScript® (EPS) en Dynamic Media de Adobe. Adobe Dynamic Media ofrece comandos para configurar estos archivos a medida que se cargan.
 
 Al cargar archivos de imagen de PostScript (EPS), puede aplicarles formato de varias formas. Puede rasterizar los archivos, mantener el fondo transparente, elegir una resolución y elegir un espacio de color.
 
@@ -121,39 +158,39 @@ Al cargar archivos de imagen de PostScript (EPS), puede aplicarles formato de va
 | **[!UICONTROL Procesando]** | Elija Rasterizar para convertir los gráficos vectoriales del archivo al formato de mapa de bits. |
 | **[!UICONTROL Mantener un fondo transparente en las imágenes procesadas]** | Conserva la transparencia de fondo del archivo. |
 | **[!UICONTROL Resolución (píxel/pulgada)]** | Determina la configuración de resolución. Esta configuración determina cuántos píxeles se muestran por pulgada en el archivo. |
-| **[!UICONTROL Espacio de color]** | · **[!UICONTROL Detectar automáticamente]**: conserva el espacio de color del archivo.<br>· **[!UICONTROL Forzar como RGB]**: se convierte al espacio de color del RGB.<br>· **[!UICONTROL Forzar como CMYK]**: se convierte al espacio de color CMYK.<br>· **[!UICONTROL Forzar como escala de grises]**: se convierte al espacio de color de escala de grises. |
+| **[!UICONTROL Espacio de color]** | · **[!UICONTROL Detectar automáticamente]**: conserva el espacio de color del archivo.<br>· **[!UICONTROL Forzar como RGB]**: se convierte al espacio de color de RGB.<br>· **[!UICONTROL Forzar como CMYK]**: se convierte al espacio de color CMYK.<br>· **[!UICONTROL Forzar como escala de grises]**: se convierte al espacio de color de escala de grises. |
 
 ### Pestaña Photoshop {#photoshop-tab}
 
-Puede crear plantillas a partir de archivos de Adobe ® Photoshop®, mantener las capas, especificar cómo se asignan los nombres a las capas, extraer el texto y especificar cómo se anclan las imágenes en las plantillas.
+Puede crear plantillas a partir de archivos de Adobe® Photoshop®, mantener las capas, especificar cómo se asignan los nombres a las capas, extraer texto y especificar cómo se anclan las imágenes en las plantillas.
 
 | Opción Photoshop | Descripción |
 | --- | --- |
-| **[!UICONTROL Mantener capas]** | Extrae las capas del PSD, si las hay, en recursos individuales. Las capas de recursos permanecen asociadas al PSD. Para verlos, abra el fichero PSD en Vista de detalles y seleccione el panel Capa. Consulte Visualización y edición de capas en un fichero de PSD. |
-| **[!UICONTROL Crear una plantilla]** | Crea una plantilla a partir de las capas del fichero de PSD. |
+| **[!UICONTROL Mantener capas]** | Extrae las capas de PSD, si las hay, en recursos individuales. Las capas de recursos permanecen asociadas a PSD. Para verlos, abra el archivo PSD en Vista de detalles y seleccione el panel Capa. Consulte Visualización y edición de capas en un archivo PSD. |
+| **[!UICONTROL Crear una plantilla]** | Crea una plantilla a partir de las capas del archivo PSD. |
 | **[!UICONTROL Extraer texto]** | Extrae el texto para que los usuarios puedan buscar texto en un visor. |
 | **[!UICONTROL Extender las capas al tamaño del fondo]** | Amplía el tamaño de las capas de imagen copiadas al tamaño de la capa de fondo. |
-| **[!UICONTROL Nomenclatura de capas]** | Amplía el tamaño de las capas de imagen copiadas al tamaño de la capa de fondo.<br>· **[!UICONTROL Nombre de capa]** - Nombra las imágenes después de sus nombres de capa en el archivo PSD. Por ejemplo, una capa denominada Etiqueta de precio en el archivo PSD original se convierte en una imagen denominada Etiqueta de precio. Sin embargo, si los nombres de las capas del fichero de PSD son nombres de capas Photoshop por defecto (Fondo, Capa 1, Capa 2, etc.), las imágenes recibirán los nombres de sus números de capa en el fichero de PSD. <br>· **[!UICONTROL Photoshop y número de capa]** - Nombra las imágenes después de sus números de capa en el archivo PSD, ignorando los nombres de capa originales. Las imágenes se nombran con el nombre de archivo Photoshop y un número de capa anexado. Por ejemplo, la segunda capa de un archivo denominado `Spring Ad.psd` se denomina `Spring Ad_2` aunque no tuviera un nombre predeterminado en Photoshop.<br>· **[!UICONTROL Photoshop y nombre de capa]** - Nombra las imágenes después del archivo de PSD seguido del nombre de capa o número de capa. El número de capa se utiliza si los nombres de capa del fichero de PSD son nombres de capa de Photoshop por defecto. Por ejemplo, una capa denominada `Price Tag` en un archivo de PSD denominado `SpringAd` se denomina `Spring Ad_Price Tag`. Una capa con el nombre predeterminado Capa 2 se llama `Spring Ad_2`. |
-| **[!UICONTROL Anclaje]** | Especifique cómo se anclan las imágenes en las plantillas que se generan a partir de la maquetación por capas producida a partir del fichero PSD. De forma predeterminada, el anclaje es el centro. Un anclaje central permite que las imágenes de reemplazo llenen mejor el mismo espacio, sin importar la proporción de aspecto de la imagen de reemplazo. Las imágenes con un aspecto diferente que reemplazan a esta imagen, al hacer referencia a la plantilla y utilizar la sustitución de parámetros, ocupan efectivamente el mismo espacio. Cambie a una configuración diferente si la aplicación requiere las imágenes de reemplazo para rellenar el espacio asignado en la plantilla. |
+| **[!UICONTROL Nomenclatura de capas]** | Amplía el tamaño de las capas de imagen copiadas al tamaño de la capa de fondo.<br>· **[!UICONTROL Nombre de capa]** - Nombra las imágenes después de sus nombres de capa en el archivo PSD. Por ejemplo, una capa denominada Etiqueta de precio del archivo PSD original se convierte en una imagen denominada Etiqueta de precio. Sin embargo, si los nombres de las capas del fichero PSD son nombres de capas Photoshop por defecto (Fondo, Capa 1, Capa 2, etc.), las imágenes recibirán los nombres de sus números de capa en el fichero PSD. <br>· **[!UICONTROL Photoshop y número de capa]**: nombra las imágenes después de sus números de capa en el archivo PSD, omitiendo los nombres de capa originales. Las imágenes se nombran con el nombre de archivo Photoshop y un número de capa anexado. Por ejemplo, la segunda capa de un archivo denominado `Spring Ad.psd` se denomina `Spring Ad_2` aunque no tuviera un nombre predeterminado en Photoshop.<br>· **[!UICONTROL Photoshop y nombre de capa]** - Nombra las imágenes después del archivo PSD seguido del nombre o número de capa. El número de capa se utiliza si los nombres de capa del fichero PSD son nombres de capa Photoshop por defecto. Por ejemplo, una capa denominada `Price Tag` en un archivo de PSD denominado `SpringAd` se denomina `Spring Ad_Price Tag`. Una capa con el nombre predeterminado Capa 2 se llama `Spring Ad_2`. |
+| **[!UICONTROL Anclaje]** | Especifique cómo se anclan las imágenes en las plantillas que se generan a partir de la composición por capas producida a partir del archivo PSD. De forma predeterminada, el anclaje es el centro. Un anclaje central permite que las imágenes de reemplazo llenen mejor el mismo espacio, sin importar la proporción de aspecto de la imagen de reemplazo. Las imágenes con un aspecto diferente que reemplazan a esta imagen, al hacer referencia a la plantilla y utilizar la sustitución de parámetros, ocupan efectivamente el mismo espacio. Cambie a una configuración diferente si la aplicación requiere las imágenes de reemplazo para rellenar el espacio asignado en la plantilla. |
 
-### pestaña PDF {#pdf-tab}
+### Pestaña PDF {#pdf-tab}
 
-El número máximo de páginas para que un PDF se tenga en cuenta para la extracción es de 5000 para las nuevas cargas. Este límite cambiará a 100 páginas (para todos los PDF) el 31 de diciembre de 2022. Ver también [limitaciones de Dynamic Media](/help/assets/dynamic-media/limitations.md).
+El número máximo de páginas de un PDF que se deben tener en cuenta para la extracción es de 5000 para las nuevas cargas. Este límite cambiará a 100 páginas (para todos los PDF) el 31 de diciembre de 2022. Consulte también [Limitaciones de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 Puede elegir entre rasterizar los archivos, extraer palabras de búsqueda y vínculos, definir la resolución y elegir un espacio de color.
 
-| opción de PDF | Descripción |
+| Opción PDF | Descripción |
 | --- | --- |
-| **[!UICONTROL Procesando]** | · **[!UICONTROL Ninguno]**: no se ha completado ningún procesamiento del PDF.<br>· **[!UICONTROL Miniatura]**: rasga cada página en el archivo del PDF y la convierte en una imagen en miniatura.<br> · **[!UICONTROL Rasterizar]**: rasga las páginas del archivo PDF y convierte los gráficos vectoriales en imágenes de mapa de bits. Para crear un catálogo electrónico, elija esta opción. |
-| **[!UICONTROL Extraer]** | · **[!UICONTROL Ninguno]**: no se extraen palabras de búsqueda ni vínculos del PDF.<br>· **[!UICONTROL Palabras de búsqueda]**: el sistema extrae las palabras de búsqueda del archivo PDF, lo que habilita las búsquedas de palabras clave en un visor de catálogos electrónicos.<br>· **[!UICONTROL Vínculos]**: extrae vínculos de los archivos del PDF y los convierte en mapas de imágenes que se utilizan en un visor de catálogos electrónicos.<br>· **[!UICONTROL Palabras de búsqueda y vínculos]**: extrae tanto las palabras de búsqueda como los vínculos para usarlos en un visor de catálogos electrónicos. |
-| **[!UICONTROL Resolución (píxel/pulgada)]** | Determina la configuración de resolución. Esta configuración determina cuántos píxeles se muestran por pulgada en el archivo de PDF. El valor predeterminado es 150. |
-| **[!UICONTROL Espacio de color]** | · **[!UICONTROL Detectar automáticamente]**: mantiene el espacio de color del archivo del PDF.<br>· **[!UICONTROL Forzar como RGB]**: se convierte al espacio de color del RGB.<br>· **[!UICONTROL Forzar como CMYK]**: se convierte al espacio de color CMYK.<br>· **[!UICONTROL Forzar como escala de grises]**: se convierte al espacio de color de escala de grises. |
+| **[!UICONTROL Procesando]** | · **[!UICONTROL Ninguno]**: no se ha completado ningún procesamiento de PDF.<br>· **[!UICONTROL Miniatura]**: rasga cada página del archivo PDF y la convierte en una imagen en miniatura.<br> · **[!UICONTROL Rasterizar]**: rasga las páginas del archivo PDF y convierte los gráficos vectoriales en imágenes de mapa de bits. Para crear un catálogo electrónico, elija esta opción. |
+| **[!UICONTROL Extraer]** | · **[!UICONTROL Ninguno]**: no se extraen palabras de búsqueda ni vínculos de PDF.<br>· **[!UICONTROL Palabras de búsqueda]**: el sistema extrae palabras de búsqueda del archivo PDF, lo que permite realizar búsquedas de palabras clave en un visor de catálogos electrónicos.<br>· **[!UICONTROL Vínculos]**: extrae vínculos de los archivos PDF y los convierte a mapas de imágenes que se utilizan en un visor de catálogos electrónicos.<br>· **[!UICONTROL Palabras de búsqueda y vínculos]**: extrae tanto las palabras de búsqueda como los vínculos para usarlos en un visor de catálogos electrónicos. |
+| **[!UICONTROL Resolución (píxel/pulgada)]** | Determina la configuración de resolución. Esta configuración determina cuántos píxeles se muestran por pulgada en el archivo PDF. El valor predeterminado es 150. |
+| **[!UICONTROL Espacio de color]** | · **[!UICONTROL Detectar automáticamente]**: mantiene el espacio de color del archivo PDF.<br>· **[!UICONTROL Forzar como RGB]**: se convierte al espacio de color de RGB.<br>· **[!UICONTROL Forzar como CMYK]**: se convierte al espacio de color CMYK.<br>· **[!UICONTROL Forzar como escala de grises]**: se convierte al espacio de color de escala de grises. |
 
 ### Pestaña Illustrator {#illustrator-tab}
 
 Puede rasterizar archivos de Adobe Illustrator®, mantener fondos transparentes, elegir una resolución y elegir un espacio de color.
 
-Puede utilizar archivos de Adobe ® Illustrator® (AI) en Adobe Dynamic Media. Adobe Dynamic Media ofrece comandos para configurar estos archivos a medida que se cargan.
+Puede utilizar archivos de Adobe® Illustrator® (AI) en Adobe Dynamic Media. Adobe Dynamic Media ofrece comandos para configurar estos archivos a medida que se cargan.
 
 Al cargar archivos de imagen de Illustrator (AI), puede aplicarles formato de varias formas. Puede rasterizar los archivos, mantener el fondo transparente, elegir una resolución y elegir un espacio de color. Las opciones para dar formato a los archivos de PostScript y Illustrator están disponibles en la pantalla Cargar, en Opciones de PostScript y Opciones de Illustrator, en el cuadro Opciones del trabajo de carga.
 
@@ -163,4 +200,4 @@ Al cargar archivos de imagen de Illustrator (AI), puede aplicarles formato de va
 | **[!UICONTROL Procesando]** | Elija Rasterizar para convertir los gráficos vectoriales del archivo al formato de mapa de bits. |
 | **[!UICONTROL Mantener un fondo transparente en las imágenes procesadas]** | Conserva la transparencia de fondo del archivo. |
 | **[!UICONTROL Resolución (píxel/pulgada)]** | Determina la configuración de resolución. Esta configuración determina cuántos píxeles se muestran por pulgada en el archivo. |
-| **[!UICONTROL Espacio de color]** | · **[!UICONTROL Detectar automáticamente]**: conserva el espacio de color del archivo.<br>· **[!UICONTROL Forzar como RGB]**: se convierte al espacio de color del RGB.<br>· **[!UICONTROL Forzar como CMYK]**: se convierte al espacio de color CMYK.<br>· **[!UICONTROL Forzar como escala de grises]**: se convierte al espacio de color de escala de grises. |
+| **[!UICONTROL Espacio de color]** | · **[!UICONTROL Detectar automáticamente]**: conserva el espacio de color del archivo.<br>· **[!UICONTROL Forzar como RGB]**: se convierte al espacio de color de RGB.<br>· **[!UICONTROL Forzar como CMYK]**: se convierte al espacio de color CMYK.<br>· **[!UICONTROL Forzar como escala de grises]**: se convierte al espacio de color de escala de grises. |

@@ -5,23 +5,54 @@ contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 feature: Best Practices
 role: User
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '2542'
-ht-degree: 2%
+source-wordcount: '2570'
+ht-degree: 3%
 
 ---
 
-# Prácticas recomendadas de búsqueda de AEM Assets
+# Prácticas recomendadas de búsqueda para AEM Assets
 
-| [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 [!DNL Adobe Experience Manager Assets] proporciona métodos de búsqueda de recursos sólidos que le ayudan a lograr una mayor velocidad de contenido. A veces, encontrar el recurso adecuado puede ser arduo y requerir mucho tiempo. Por lo tanto, la capacidad de búsqueda de recursos en [!DNL Adobe Experience Manager Assets] es fundamental para el uso de un sistema de administración de recursos digitales, ya sea para su uso posterior por parte de creativos, para la administración sólida de recursos por parte de usuarios empresariales y especialistas en marketing o para la administración por parte de administradores de DAM.
 
-AEM AEM Este documento de ayuda contiene prácticas recomendadas de búsqueda en la aplicación de la búsqueda con la ayuda de varios escenarios para ayudar a los usuarios a realizar búsquedas de nivel básico a avanzado.
+Este documento de ayuda contiene prácticas recomendadas de búsqueda de AEM con la ayuda de varios escenarios para ayudar a los usuarios de AEM a realizar búsquedas de nivel básico a avanzado.
 
-## Búsqueda del Experience Manager de acceso {#access-experience-manager-search}
+## Acceso a Experience Manager Search {#access-experience-manager-search}
 
 A continuación se indican los pasos básicos que se deben seguir en Experience Manager antes de comenzar la búsqueda:
 
@@ -41,7 +72,7 @@ Los resultados de búsqueda que coinciden con todos los términos de búsqueda e
 2. Coincidencias de `Classic Car` en etiquetas inteligentes.
 3. Coincidencias de `Classic` o de `Car` en etiquetas inteligentes.
 
-Especifique `classic car` como palabra clave de búsqueda y haga clic en Buscar. Puede ver las sugerencias de búsqueda en una lista desplegable a medida que escribe la palabra clave. Las sugerencias de búsqueda se basan en el contenido del índice de búsqueda de la implementación del Experience Manager. Si no puede ver los recursos adecuados en el menú desplegable, pulse la tecla Intro para ver la lista de resultados. Los resultados se ordenan por relevancia, empezando por las coincidencias más cercanas.
+Especifique `classic car` como palabra clave de búsqueda y haga clic en Buscar. Puede ver las sugerencias de búsqueda en una lista desplegable a medida que escribe la palabra clave. Las sugerencias de búsqueda se basan en el contenido del índice de búsqueda de la implementación de Experience Manager. Si no puede ver los recursos adecuados en el menú desplegable, pulse la tecla Intro para ver la lista de resultados. Los resultados se ordenan por relevancia, empezando por las coincidencias más cercanas.
 
 <!--![Performing basic search method 1](assets/simple-search-1.png)-->
 
@@ -94,7 +125,7 @@ Si desea ser específico con los resultados de búsqueda y desea una opción en 
 
 ### operador NOT {#not-operator}
 
-Si desea recuperar resultados excluyendo algunas palabras clave, puede utilizar el operador NOT. AEM El operador NOT utiliza el símbolo de guion (-) para dirigir la búsqueda a los elementos que se excluirán de los resultados de la búsqueda. Por ejemplo, la consulta de búsqueda `car - classic` que especifica metadatos que contienen `car` pero excluyen `classic`.
+Si desea recuperar resultados excluyendo algunas palabras clave, puede utilizar el operador NOT. El operador NOT utiliza el símbolo de guión (-) para indicar a la búsqueda de AEM qué elementos se excluirán de los resultados de búsqueda. Por ejemplo, la consulta de búsqueda `car - classic` que especifica metadatos que contienen `car` pero excluyen `classic`.
 
 ![Buscar sin operador](assets/not-operator.png)
 
@@ -167,7 +198,7 @@ Ejecute los siguientes pasos en **[!UICONTROL vista de administrador]**:
 1. Escriba `classic car` en la barra de búsqueda.
 1. Vaya a Filtros. En [!UICONTROL Tipo de archivo], expanda [!UICONTROL Documentos] y después [!UICONTROL Procesamiento de texto].
 1. Seleccione [!UICONTROL PDF].
-1. Vaya a [!UICONTROL Estado] > [!UICONTROL Publish] > [!UICONTROL Publicación cancelada].
+1. Ir a [!UICONTROL Estado] > [!UICONTROL Publicar] > [!UICONTROL Publicación cancelada].
 
 <!--![Filter example 2](assets/filter-2.png)-->
 
@@ -196,9 +227,9 @@ Para buscar recursos usando el escenario mencionado en **[!UICONTROL Assets view
 
 ## Búsqueda avanzada {#advanced-search}
 
-AEM La búsqueda de segmentos le permite crear consultas de búsqueda complejas con menos esfuerzo. A continuación se muestran varios ejemplos para ayudarle a crear consultas de búsqueda complejas:
+La búsqueda de AEM permite crear consultas de búsqueda complejas con menos esfuerzo. A continuación se muestran varios ejemplos para ayudarle a crear consultas de búsqueda complejas:
 
-**Escenario 6: buscar todos los documentos en el repositorio del Experience Manager con `classic car` en sus metadatos. El contenido del documento debe contener la palabra clave `classic car`.**
+**Escenario 6: buscar todos los documentos en el repositorio de Experience Manager con `classic car` en sus metadatos. El contenido del documento debe contener la palabra clave `classic car`.**
 
 Adobe Experience Manager le permite agregar varios criterios a la búsqueda. Puede utilizar una combinación de palabras clave, operadores y filtros para reducir los resultados de búsqueda.
 
@@ -212,7 +243,7 @@ Para realizar una búsqueda del escenario 6:
 
 No se puede ejecutar el escenario 6 en **[!UICONTROL Assets view]** porque no admite el uso de caracteres comodín.
 
-**Escenario 7: buscar todos los documentos en el repositorio del Experience Manager en los que el contenido del documento debe incluir `car` pero excluir `classic`. La misma condición se aplica a los metadatos de un recurso.**
+**Escenario 7: buscar todos los documentos en el repositorio de Experience Manager en los que el contenido del documento debe incluir `car` pero excluir `classic`. La misma condición se aplica a los metadatos de un recurso.**
 
 Para realizar una búsqueda del escenario 7:
 
@@ -252,7 +283,7 @@ La búsqueda muestra resultados similares si también estás trabajando en la **
 
 **Escenario 9: buscar una coincidencia similar para el color rojo del coche**
 
-AEM Al realizar la búsqueda en los recursos, puede filtrar los resultados mostrando recursos similares a los seleccionados. Puede usar la opción **Buscar similares** para restringir la búsqueda a la coincidencia exacta o similar del recurso buscado. Esto ayuda a encontrar recursos que tienen etiquetas inteligentes similares a las del recurso seleccionado. Por ejemplo, cuando desee buscar recursos similares, ejecute los siguientes pasos:
+Al realizar la búsqueda en AEM, puede filtrar los resultados mostrando recursos similares a los seleccionados. Puede usar la opción **Buscar similares** para restringir la búsqueda a la coincidencia exacta o similar del recurso buscado. Esto ayuda a encontrar recursos que tienen etiquetas inteligentes similares a las del recurso seleccionado. Por ejemplo, cuando desee buscar recursos similares, ejecute los siguientes pasos:
 
 1. Busque el recurso según sus necesidades.
 1. Pase el ratón sobre el recurso > haga clic en los puntos suspensivos > seleccione [!UICONTROL Buscar similares].

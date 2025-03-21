@@ -5,23 +5,57 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 10%
+source-wordcount: '785'
+ht-degree: 12%
 
 ---
 
 # Importación y exportación de metadatos de recursos de forma masiva {#import-and-export-asset-metadata-in-bulk}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación para desarrolladores de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Adobe Experience Manager Assets permite importar metadatos de recursos de forma masiva mediante un archivo CSV. Puede realizar actualizaciones masivas de los recursos cargados recientemente o de los recursos existentes importando un archivo CSV. También puede introducir metadatos de recursos de forma masiva desde sistemas de terceros en formato CSV.
 
 ## Importar metadatos {#import-metadata}
 
-La importación de metadatos es asíncrona y no impide el rendimiento del sistema. La actualización simultánea de los metadatos de varios recursos puede consumir muchos recursos debido a la actividad de reescritura de metadatos mediante microservicios de recursos. Adobe recomienda planificar las operaciones masivas durante el uso del servidor lean para que el rendimiento de otros usuarios no se vea afectado.
+La importación de metadatos es asíncrona y no impide el rendimiento del sistema. La actualización simultánea de los metadatos de varios recursos puede consumir muchos recursos debido a la actividad de reescritura de metadatos mediante microservicios de recursos. Adobe recomienda planificar cualquier operación masiva durante el uso del servidor lean para que el rendimiento de otros usuarios no se vea afectado.
 
 >[!NOTE]
 >
@@ -36,7 +70,7 @@ La importación de metadatos es asíncrona y no impide el rendimiento del sistem
    | Tamaño de lote | Número de recursos de un lote cuyos metadatos se van a importar. El valor predeterminado es 50. El valor máximo es 100. |
    | Separador de campos | El valor predeterminado es `,` (una coma). Puede especificar cualquier otro carácter. |
    | Delimitador de varios valores | Separador para valores de metadatos. El valor predeterminado es `|`. |
-   | Lanzar flujos de trabajo | False de forma predeterminada. XMP Cuando se establece en `true` y la configuración predeterminada está en vigor para el flujo de trabajo de escritura de metadatos DAM (que escribe metadatos en los datos binarios). Al habilitar los flujos de trabajo, el sistema se ralentiza. |
+   | Lanzar flujos de trabajo | False de forma predeterminada. Cuando se establece en `true` y la configuración predeterminada está activa para el flujo de trabajo de escritura de metadatos DAM (que escribe metadatos en los datos binarios de XMP). Al habilitar los flujos de trabajo, el sistema se ralentiza. |
    | Nombre de columna de ruta de activos | Define el nombre de columna del archivo CSV con recursos. |
 
 1. Seleccione **[!UICONTROL Importar]** en la barra de herramientas. Una vez importados los metadatos, se envía una notificación a la bandeja de entrada de notificaciones. Vaya a la página de propiedades del recurso y compruebe si los valores de los metadatos se importan correctamente para los recursos.
@@ -55,7 +89,7 @@ La importación de metadatos es asíncrona y no impide el rendimiento del sistem
 
 ## Exportar metadatos {#export-metadata}
 
-Puede exportar metadatos de varios recursos en formato CSV. Los metadatos se exportan de forma asíncrona y no afectan al rendimiento del sistema. Para exportar metadatos, el Experience Manager recorre las propiedades del nodo de recurso `jcr:content/metadata` y sus nodos secundarios y exporta las propiedades de metadatos en un archivo CSV.
+Puede exportar metadatos de varios recursos en formato CSV. Los metadatos se exportan de forma asíncrona y no afectan al rendimiento del sistema. Para exportar metadatos, Experience Manager recorre las propiedades del nodo de recursos `jcr:content/metadata` y sus nodos secundarios y exporta las propiedades de metadatos en un archivo CSV.
 
 Algunos casos de uso para exportar metadatos por lotes son:
 

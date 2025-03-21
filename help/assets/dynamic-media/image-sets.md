@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '2145'
-ht-degree: 3%
+source-wordcount: '2191'
+ht-degree: 5%
 
 ---
 
 # Conjuntos de imágenes {#image-sets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Los conjuntos de imágenes proporcionan a los usuarios una experiencia de visualización integrada, en la que pueden ver diferentes vistas de un elemento haciendo clic en una imagen en miniatura. Los conjuntos de imágenes permiten presentar vistas alternativas de un elemento y el visor ofrece herramientas de zoom para examinar las imágenes de cerca.
 
@@ -37,7 +74,7 @@ Al crear un conjunto de imágenes, Adobe recomienda las siguientes prácticas re
 | Número de recursos duplicados por conjunto | No hay duplicados | 20 |
 | Número máximo de imágenes por conjunto | 5-10 imágenes por conjunto | 1000 |
 
-Ver también [limitaciones de Dynamic Media](/help/assets/dynamic-media/limitations.md).
+Consulte también [Limitaciones de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 ## Inicio rápido: Conjuntos de imágenes {#quick-start-image-sets}
 
@@ -78,7 +115,7 @@ Para ponerse en marcha rápidamente:
 
    Seleccione el conjunto de imágenes y podrá previsualizarlo. Para examinar el conjunto de imágenes en el visor seleccionado, seleccione los iconos de miniaturas. Puede elegir diferentes visores en el menú **[!UICONTROL Visualizadores]**, disponible en la lista desplegable del carril izquierdo.
 
-1. [Conjuntos de imágenes de Publish](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+1. [Publicar conjuntos de imágenes](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
    La publicación de un conjunto de imágenes activa la URL y la cadena de incrustación. Además, debe [publicar cualquier ajuste preestablecido de visor personalizado](/help/assets/dynamic-media/managing-viewer-presets.md) que haya creado. Los ajustes preestablecidos de visualizador listos para usar ya se han publicado.
 
@@ -143,11 +180,11 @@ Al crear un conjunto de imágenes, Adobe recomienda las siguientes prácticas re
 | Número de recursos duplicados por conjunto | No hay duplicados | 20 |
 | Número máximo de imágenes por conjunto | 5-10 imágenes por conjunto | 1000 |
 
-Ver también [limitaciones de Dynamic Media](/help/assets/dynamic-media/limitations.md).
+Consulte también [Limitaciones de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 **Para crear conjuntos de imágenes:**
 
-1. En Adobe Experience Manager, seleccione el logotipo del Experience Manager para acceder a la consola de navegación global.
+1. En Adobe Experience Manager, seleccione el logotipo de Experience Manager para acceder a la consola de navegación global.
 1. Seleccione **[!UICONTROL Navegación]** > **[!UICONTROL Assets]**. Vaya a donde desee crear un conjunto de imágenes y, a continuación, vaya a **[!UICONTROL Crear]** > **[!UICONTROL Conjunto de imágenes]** para abrir la página Editor de conjuntos de imágenes.
 
    También puede crear el conjunto desde una carpeta que contenga los recursos.
@@ -188,7 +225,7 @@ Ver también [limitaciones de Dynamic Media](/help/assets/dynamic-media/limitati
 
    >[!NOTE]
    >
-   >Al crear el conjunto de imágenes, puede cambiar la miniatura del conjunto de imágenes. O bien, puede permitir que el Experience Manager seleccione la miniatura automáticamente en función de los recursos del conjunto de imágenes. Para seleccionar una miniatura, seleccione **[!UICONTROL Cambiar miniatura]** encima del campo Título en la página Editor de conjuntos de imágenes. A continuación, seleccione cualquier imagen (puede navegar a otras carpetas para buscar imágenes también). Si seleccionó una miniatura y, a continuación, decide que quiere que el Experience Manager genere una del conjunto de imágenes, seleccione **[!UICONTROL Cambiar a]** **[!UICONTROL Miniatura automática]**.
+   >Al crear el conjunto de imágenes, puede cambiar la miniatura del conjunto de imágenes. O bien, puede permitir que Experience Manager seleccione la miniatura automáticamente en función de los recursos del conjunto de imágenes. Para seleccionar una miniatura, seleccione **[!UICONTROL Cambiar miniatura]** encima del campo Título en la página Editor de conjuntos de imágenes. A continuación, seleccione cualquier imagen (puede navegar a otras carpetas para buscar imágenes también). Si seleccionó una miniatura y, a continuación, decide que Experience Manager debe generar una del conjunto de imágenes, seleccione **[!UICONTROL Cambiar a]** **[!UICONTROL Miniatura automática]**.
 
 1. Haga clic en **[!UICONTROL Guardar]**. El conjunto de imágenes creado aparecerá en la carpeta en la que lo creó.
 
@@ -245,7 +282,7 @@ Puede realizar varias tareas de edición en conjuntos de imágenes, como las sig
    * Para agregar un recurso o actualizar un recurso existente, haga clic en **[!UICONTROL Agregar recurso]**. Vaya a un recurso, selecciónelo y, a continuación, seleccione **[!UICONTROL Seleccionar]** cerca de la esquina superior derecha de la página.
      >[!NOTE]
      >
-     >Si elimina la imagen que el Experience Manager utiliza para la miniatura reemplazándola por otra imagen, se seguirá mostrando el recurso original.
+     >Si elimina la imagen que Experience Manager utiliza para la miniatura reemplazándola por otra imagen, se seguirá mostrando el recurso original.
    * Para eliminar un recurso, selecciónelo y seleccione **[!UICONTROL Eliminar recurso]**.
    * Para aplicar un ajuste preestablecido, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Ajuste preestablecido]** y, a continuación, seleccione un ajuste preestablecido de visor.
    * Para añadir o cambiar una miniatura, seleccione el icono de miniatura situado junto a la derecha del recurso. Vaya a la nueva miniatura o recurso de muestra, selecciónelo y, a continuación, seleccione **[!UICONTROL Seleccionar]**.
@@ -263,4 +300,4 @@ Consulte [Vista previa de recursos](/help/assets/dynamic-media/previewing-assets
 
 ## Publicación de conjuntos de imágenes {#publishing-image-sets}
 
-Consulte [Publish Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Ver [Publicar Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).

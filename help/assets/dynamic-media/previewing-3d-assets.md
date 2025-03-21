@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 6%
+source-wordcount: '667'
+ht-degree: 8%
 
 ---
 
 # Vista previa de recursos 3D en Adobe Experience Manager{#previewing-3d-assets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -25,7 +62,7 @@ Puede obtener una vista previa de los recursos 3D con las representaciones de mi
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Formatos compatibles para la vista previa de miniaturas en el Experience Manager{#supported-thumbnail-previewing-assets}
+## Formatos compatibles para la vista previa de miniaturas en Experience Manager{#supported-thumbnail-previewing-assets}
 
 Experience Manager genera miniaturas para los siguientes formatos de archivo de forma predeterminada:
 
@@ -66,11 +103,11 @@ El tiempo que se tarda en abrir un recurso 3D en la página de vista de detalles
 
 Además, las capacidades del equipo cliente, como una estación de trabajo, un portátil o un dispositivo táctil móvil, también son importantes a la hora de manipular la cámara de forma interactiva. Un sistema razonablemente potente con buenas capacidades gráficas puede hacer que la experiencia de visualización 3D interactiva sea más fluida y favorable.
 
-**Para obtener una vista previa de los recursos 3D en el Experience Manager:**
+**Para obtener una vista previa de recursos 3D en Experience Manager:**
 
 1. Asegúrese de haber cargado recursos 3D en Experience Manager.
 Ver [Formatos compatibles para vista previa 3D](#supported-3d-previewing-assets) y [Cargar recursos](/help/assets/manage-digital-assets.md#uploading-assets).
-1. Desde el Experience Manager, en la página **[!UICONTROL Navegación]**, ve a **[!UICONTROL Assets]** > **[!UICONTROL Archivos]**.
+1. Desde Experience Manager, en la página **[!UICONTROL Navegación]**, ve a **[!UICONTROL Assets]** > **[!UICONTROL Archivos]**.
 
    ![Página de navegación](/help/assets/dynamic-media/assets/navigation-assets.png)
 

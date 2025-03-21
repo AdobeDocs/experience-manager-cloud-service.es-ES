@@ -4,19 +4,53 @@ description: Cambios importantes en  [!DNL Adobe Experience Manager Assets] in [
 feature: Release Information
 role: User, Leader, Architect, Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 979c4accca8b271ba2ff0ba176985c94b6d469c7
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1052'
 ht-degree: 10%
 
 ---
 
 # Cambios importantes en [!DNL Experience Manager Assets] como [!DNL Cloud Service] {#notable-changes}
 
-| [Prácticas recomendadas de búsqueda](/help/assets/search-best-practices.md) | [Prácticas recomendadas de metadatos](/help/assets/metadata-best-practices.md) | [Centro de contenido](/help/assets/product-overview.md) | [Dynamic Media con funciones de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentación de desarrollador de AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Prácticas recomendadas de metadatos</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Centro de contenido</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funciones de OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentación de desarrollador de AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] ofrece muchas nuevas características y posibilidades para administrar sus proyectos de Experience Manager. Existen muchas diferencias entre [!DNL Experience Manager Assets] local o alojado como servicio administrado por Adobe en comparación con [!DNL Experience Manager] como [!DNL Cloud Service]. Este artículo resalta las diferencias importantes para las capacidades de [!DNL Assets].
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] ofrece muchas nuevas características y posibilidades para administrar sus proyectos de Experience Manager. Existen muchas diferencias entre [!DNL Experience Manager Assets] local o alojado como el servicio administrado de Adobe en comparación con [!DNL Experience Manager] como [!DNL Cloud Service]. Este artículo resalta las diferencias importantes para las capacidades de [!DNL Assets].
 
 Las principales diferencias con respecto a [!DNL Experience Manager] 6.5 se encuentran en las siguientes áreas:
 
@@ -36,13 +70,13 @@ La carga de recursos está optimizada para lograr una mayor eficacia al permitir
    * Ver [configurar y usar microservicios de recursos](/help/assets/asset-microservices-configure-and-use.md)
    * Para tener pasos personalizados del flujo de trabajo en el procesamiento, se pueden usar [flujos de trabajo posteriores al procesamiento](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows).
 
-* Los componentes del sitio web que entregan un archivo binario sin ninguna transformación pueden utilizar la descarga directa. El servlet de GET de Sling se actualiza para habilitar esta funcionalidad de forma predeterminada. Los componentes del sitio web que proporcionan un binario con alguna transformación (por ejemplo, cambiar su tamaño mediante un servlet) pueden seguir funcionando tal cual.
+* Los componentes del sitio web que entregan un archivo binario sin ninguna transformación pueden utilizar la descarga directa. El servlet Sling GET se actualiza para habilitar esta funcionalidad de forma predeterminada. Los componentes del sitio web que proporcionan un binario con alguna transformación (por ejemplo, cambiar su tamaño mediante un servlet) pueden seguir funcionando tal cual.
 
 Las representaciones estándar generadas con los microservicios de recursos se almacenan de forma compatible con versiones anteriores en los nodos del repositorio de recursos mediante las mismas convenciones de nomenclatura.
 
 ## Desarrollar y probar microservicios de recursos {#asset-microservices}
 
-Los microservicios de recursos proporcionan un procesamiento escalable y resiliente de los recursos mediante servicios en la nube. Adobe administra los servicios de nube para una gestión óptima de los distintos tipos de recursos y opciones de procesamiento. Los microservicios de recursos ayudan a evitar la necesidad de herramientas y métodos de procesamiento de terceros (como [!DNL ImageMagick]) y a simplificar las configuraciones, a la vez que proporcionan funcionalidad predeterminada para tipos de archivos comunes. Ahora puede procesar una [amplia gama de tipos de archivos](/help/assets/file-format-support.md) que abarcan más formatos predeterminados que los posibles con versiones anteriores de Experience Manager. Por ejemplo, ahora es posible extraer miniaturas de los formatos PSD y PSB que antes requerían soluciones de terceros, como [!DNL ImageMagick]. No puede usar las configuraciones complejas de [!DNL ImageMagick] para la configuración de [!UICONTROL Perfiles de procesamiento]. Use [!DNL Dynamic Media] para la transcodificación avanzada de vídeos FFmpeg y use perfiles de procesamiento para [transcodificación básica de vídeos MP4](/help/assets/manage-video-assets.md#transcode-video).
+Los microservicios de recursos proporcionan un procesamiento escalable y resiliente de los recursos mediante servicios en la nube. Adobe administra los servicios de nube para una gestión óptima de los distintos tipos de recursos y opciones de procesamiento. Los microservicios de recursos ayudan a evitar la necesidad de herramientas y métodos de procesamiento de terceros (como [!DNL ImageMagick]) y a simplificar las configuraciones, a la vez que proporcionan funcionalidad predeterminada para tipos de archivos comunes. Ahora puede procesar una [amplia gama de tipos de archivos](/help/assets/file-format-support.md) que abarcan más formatos predeterminados que los posibles con versiones anteriores de Experience Manager. Por ejemplo, ahora es posible extraer miniaturas de los formatos PSD y PSB que anteriormente requerían soluciones de terceros como [!DNL ImageMagick]. No puede usar las configuraciones complejas de [!DNL ImageMagick] para la configuración de [!UICONTROL Perfiles de procesamiento]. Use [!DNL Dynamic Media] para la transcodificación avanzada de vídeos FFmpeg y use perfiles de procesamiento para [transcodificación básica de vídeos MP4](/help/assets/manage-video-assets.md#transcode-video).
 
 Los microservicios de recursos son un servicio nativo de la nube que se aprovisiona automáticamente y se conecta a [!DNL Experience Manager] en los programas de clientes y entornos administrados en Cloud Manager. Para ampliar o personalizar [!DNL Experience Manager], los desarrolladores pueden utilizar contenido o recursos existentes con representaciones generadas en un entorno de nube. Esta capacidad les permite probar y validar su código utilizando, mostrando o descargando recursos.
 
@@ -59,12 +93,12 @@ Para realizar una validación completa del código y el proceso, incluida la ing
 | Reescritura de metadatos | Esto funciona de forma diferente | Deshabilitado de forma predeterminada. Active el iniciador del flujo de trabajo correspondiente si es necesario. Los microservicios de recursos se encargan de la reescritura. |
 | Procesamiento de recursos cargados mediante el Administrador de paquetes | Esto necesita una intervención manual | Volver a procesar manualmente con la acción **[!UICONTROL Volver a procesar recurso]**. |
 | Detección de tipo MIME | No compatible. | Si carga un recurso digital sin una extensión o con una extensión incorrecta, es posible que no se procese como se desea. Los usuarios aún pueden almacenar los archivos binarios sin una extensión en DAM. Ver [detección de tipo MIME en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/detect-asset-mime-type-with-tika). |
-| Generación de subrecursos para recursos compuestos | No compatible. | Es posible que los casos de uso dependientes como anotaciones no se cumplan. Ver [creación de subrecursos en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/managing-linked-subassets#generate-subassets). La vista previa del PDF de algunos tipos de archivo está disponible a partir de la versión [2021.7.0](/help/release-notes/release-notes-cloud/release-notes-current.md). |
-| Edición de imágenes | No compatible | No se admite la edición de recursos en el as a Cloud Service de Experience Manager. Ver [cómo funcionaba en el Experience Manager 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#editing-images). |
+| Generación de subrecursos para recursos compuestos | No compatible. | Es posible que los casos de uso dependientes como anotaciones no se cumplan. Ver [creación de subrecursos en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/managing-linked-subassets#generate-subassets). La vista previa de PDF de algunos tipos de archivo está disponible a partir de la [versión 2021.7.0](/help/release-notes/release-notes-cloud/release-notes-current.md). |
+| Edición de imágenes | No compatible | La edición de recursos no es compatible con Experience Manager as a Cloud Service. Ver [cómo funcionaba en Experience Manager 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#editing-images). |
 | Página de inicio | No compatible | Ver [[!DNL Assets] experiencia de página principal en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/assets-home-page) |
 | Extraer recursos del archivo ZIP | No compatible | Ver [extracción ZIP en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#extractzip). |
 | Clasificaciones de Assets | No compatible | No se admite el widget de clasificación en el editor de esquemas de metadatos. |
-| Filtro de disposición de contenido | No compatible | Un caso de uso popular de `ContentDispositionFilter` es permitir que los administradores configuren [!DNL Experience Manager] para ofrecer archivos de HTML y abrir archivos de PDF en línea en lugar de descargarlos. En las instancias de publicación, puede administrar la disposición mediante la configuración de Dispatcher. En las instancias de creación, el Adobe no recomienda la modificación del encabezado Disposición de contenido. Ver [filtro de disposición de contenido en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/content-disposition-filter). |
+| Filtro de disposición de contenido | No compatible | Un caso de uso popular de `ContentDispositionFilter` es permitir que los administradores configuren [!DNL Experience Manager] para ofrecer archivos de HTML y abrir archivos de PDF en línea en lugar de descargarlos. En las instancias de publicación, puede administrar la disposición mediante la configuración de Dispatcher. En las instancias de creación, Adobe no recomienda realizar modificaciones en el encabezado Disposición de contenido. Ver [filtro de disposición de contenido en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/content-disposition-filter). |
 | Plantilla de sesión fotográfica del producto | No compatible | Ver [plantilla de sesión fotográfica de producto en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/managing-product-information). |
 | Traducción inteligente | No compatible | La traducción inteligente no se admite en [!DNL Experience Manager] como [!DNL Cloud Service]. |
 | WebDAV | No compatible | Para ver alternativas, consulte [[!DNL Creative Cloud] integración](/help/assets/aem-cc-integration-best-practices.md) o [material de referencia para desarrolladores](/help/assets/developer-reference-material-apis.md). |
