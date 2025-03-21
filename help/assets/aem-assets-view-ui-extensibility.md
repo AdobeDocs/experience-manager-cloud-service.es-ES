@@ -4,9 +4,9 @@ description: Obtenga información acerca de la capacidad de extensibilidad de la
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 5d155ab940da84561ea52396e410b0cc15395310
+source-git-commit: 2de6352363959f4258c0786910eaef7babe68f15
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '542'
 ht-degree: 3%
 
 ---
@@ -47,9 +47,7 @@ ht-degree: 3%
     </tr>
 </table>
 
-[!DNL AEM Assets View] admite la extensibilidad de la interfaz de usuario, lo que le permite agregar componentes de la interfaz de usuario personalizados a la interfaz de usuario de [!DNL Assets View] para flujos de trabajo específicos y requisitos empresariales que no cumplen las capacidades predeterminadas de [!DNL AEM Assets View]. Esta capacidad de extensibilidad de la interfaz de usuario de [!DNL AEM Assets View] mejora su flexibilidad, lo que permite a las organizaciones adaptar la interfaz para flujos de trabajo y requisitos específicos.
-
-Habilite la extensibilidad de la interfaz de usuario en [!DNL AEM Assets View] para agregar componentes personalizados a la interfaz de usuario de [!DNL Assets View] a fin de satisfacer requisitos empresariales específicos que no cumplen las capacidades predeterminadas de [!DNL AEM Assets View].\
+[!DNL AEM Assets View] admite la extensibilidad de la interfaz de usuario, lo que le permite agregar componentes de la interfaz de usuario personalizados a la interfaz de usuario de [!DNL Assets View] para flujos de trabajo específicos y requisitos empresariales que no cumplen las capacidades predeterminadas de [!DNL AEM Assets View]. Esta capacidad de extensibilidad de la interfaz de usuario de [!DNL AEM Assets View] mejora su flexibilidad, lo que permite a las organizaciones adaptar la interfaz para flujos de trabajo y requisitos específicos.\
 Puede agregar sus extensiones a los niveles **Asset**, **Folder** y **Collection**. La extensión agregada se muestra en un panel dedicado en la página **Recurso**, **Colección** o **Carpeta** **[!UICONTROL Detalles]**.
 
 >[!IMPORTANT]
