@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: a495178529a0a4229095ea3a11f52b376c81715b
 workflow-type: tm+mt
-source-wordcount: '4117'
+source-wordcount: '4095'
 ht-degree: 1%
 
 ---
@@ -355,7 +355,7 @@ Después de la publicación, tiene dos opciones.
    * **Vínculo directamente:**
 Utilice la dirección URL proporcionada para vincular directamente al vídeo. Conéctelo correctamente a su sitio de marketing.
    * **Incrustar el vídeo:**
-Copie el código incrustado proporcionado y péguelo en la HTML de la página web en la que desea que aparezca el vídeo. Al hacerlo, el vídeo se reproduce directamente en el sitio.
+Copie el código incrustado proporcionado y péguelo en la HTML de la página web donde desee que aparezca el vídeo. Al hacerlo, el vídeo se reproduce directamente en el sitio.
 
 ¿Desea obtener más información? Ir a [Vídeo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
 
@@ -399,7 +399,7 @@ La internacionalización de los vídeos para el consumo multilingüe es esencial
    * Organice, examine y busque recursos de vídeo en AEM.
    * Previsualización y publicación de recursos de vídeo.
    * Vea el vídeo de origen y sus representaciones codificadas junto con las miniaturas asociadas.
-   * Edite propiedades de vídeo como título, descripción y etiquetas2.
+   * Edite propiedades de vídeo, como título, descripción y etiquetas2.
 
 * **Localización:**
    * Para cada geografía/idioma de destino, cree pistas de audio y subtítulos.
@@ -410,7 +410,7 @@ La internacionalización de los vídeos para el consumo multilingüe es esencial
    * Si utiliza AEM como sistema de administración de contenido web (WCM), puede agregar vídeos directamente a las páginas web.
    * Si utiliza un sistema WCM de terceros, puede vincular o incrustar vídeos en las páginas web mediante direcciones URL o códigos incrustados.
 
-¿Desea obtener más información? Vaya a [Acerca de la compatibilidad con múltiples subtítulos y pistas de audio para vídeos en Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) o vea [Agregar múltiples subtítulos y pistas de audio a un vídeo](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play) (1 minuto, 41 segundos).
+¿Desea obtener más información? Vaya a [Acerca de la compatibilidad con múltiples subtítulos y pistas de audio para vídeos en Dynamic Media](/help/assets/dynamic-media/video.md#about-msma).
 
 
 ## Entrega de recursos a los clientes
