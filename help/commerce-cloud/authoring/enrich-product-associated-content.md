@@ -1,8 +1,8 @@
 ---
-title: AEM Enriquecimiento de datos de producto con contenido asociado de la
+title: Enriquecimiento de datos de producto con contenido de AEM asociado
 description: Descubra cómo los especialistas en marketing pueden enriquecer los datos de productos con contenido asociado de Adobe Experience Manager añadiendo contenido de marketing de forma dinámica a las páginas de productos. Esto abre una amplia gama de posibilidades para que los especialistas en marketing se dirijan a páginas de productos específicas con contenido adicional como imágenes y vídeo.
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: feature-video
 activity: use
 audience: marketer
@@ -11,16 +11,16 @@ kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 1%
 
 ---
 
-# AEM Enriquecimiento de datos de producto con contenido asociado de la
+# Enriquecimiento de datos de producto con contenido de AEM asociado
 
-Descubra cómo los especialistas en marketing pueden enriquecer los datos de productos con contenido asociado de Adobe Experience Manager. AEM El contenido, como los recursos, los fragmentos de experiencias y los fragmentos de contenido en los que se realiza el trabajo, se pueden asociar a productos de comercio en los que se realiza el trabajo. Una vez asociados, estos tipos de contenido se pueden insertar dinámicamente en un marcador de posición dentro de una página de producto o de categoría. Esto abre una amplia gama de posibilidades para que los especialistas en marketing dirijan su página de producto específica con contenido adicional como imágenes y vídeo.
+Descubra cómo los especialistas en marketing pueden enriquecer los datos de productos con contenido asociado de Adobe Experience Manager. El contenido, como los recursos, los fragmentos de experiencias y los fragmentos de contenido de AEM, se pueden asociar con productos de comercio. Una vez asociados, estos tipos de contenido se pueden insertar dinámicamente en un marcador de posición dentro de una página de producto o de categoría. Esto abre una amplia gama de posibilidades para que los especialistas en marketing dirijan su página de producto específica con contenido adicional como imágenes y vídeo.
 
 ## Recursos digitales {#digital-assets}
 

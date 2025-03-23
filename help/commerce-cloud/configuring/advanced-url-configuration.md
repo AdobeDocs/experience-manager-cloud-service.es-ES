@@ -2,7 +2,7 @@
 title: Configuraciones de URL avanzadas
 description: Aprenda a personalizar las direcciones URL de las páginas de productos y categorías. La personalización permite que las implementaciones optimicen las direcciones URL de los motores de búsqueda y promuevan la detección.
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: technical-video
 activity: setup
 audience: administrator
@@ -11,7 +11,7 @@ kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '2059'
 ht-degree: 9%
@@ -22,7 +22,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
-> La optimización de los motores de búsqueda (SEO) se ha convertido en una preocupación clave para muchos expertos en marketing. Como resultado, las preocupaciones de SEO deben ser abordadas en muchos proyectos en Adobe Experience Manager AEM () as a Cloud Service. Consulte [Prácticas recomendadas para la administración de direcciones URL y SEO](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html) para obtener más información.
+> La optimización de los motores de búsqueda (SEO) se ha convertido en una preocupación clave para muchos expertos en marketing. Como resultado, las preocupaciones de SEO deben abordarse en muchos proyectos en Adobe Experience Manager (AEM) as a Cloud Service. Consulte [Prácticas recomendadas para la administración de direcciones URL y SEO](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html) para obtener más información.
 
 Los [componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components) proporcionan configuraciones avanzadas para personalizar las direcciones URL de las páginas de productos y categorías. Muchas implementaciones personalizan estas direcciones URL con fines de optimización de los motores de búsqueda (SEO). En el siguiente vídeo se explica cómo configurar el `UrlProvider` servicio y las funciones de las [Asignaciones de Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) para personalizar las direcciones URL de las páginas de productos y categorías.
 
@@ -30,11 +30,11 @@ Los [componentes principales del CIF de AEM](https://github.com/adobe/aem-core-c
 
 ## Configuración {#configuration}
 
-CIF Para configurar el servicio `UrlProvider` según los requisitos y necesidades de SEO, un proyecto debe proporcionar una configuración OSGI para la _configuración del proveedor de URL_.
+Para configurar el servicio `UrlProvider` según los requisitos y necesidades de SEO, un proyecto debe proporcionar una configuración OSGI para la _configuración del proveedor de URL de CIF_.
 
 >[!NOTE]
 >
-> AEM CIF Desde la versión 2.0.0 de los componentes principales de la de trabajo, la configuración del proveedor de URL solo proporciona formatos de URL predefinidos, en lugar de los formatos configurables de texto libre conocidos en las versiones 1.x. Además, el uso de selectores para pasar datos en direcciones URL se ha sustituido por sufijos.
+> Desde la versión 2.0.0 de los componentes principales de CIF de AEM, la configuración del proveedor de URL solo proporciona formatos de URL predefinidos, en lugar de formatos de texto libre configurables conocidos en las versiones 1.x. Además, el uso de selectores para pasar datos en direcciones URL se ha sustituido por sufijos.
 
 ### Formato de URL de página de producto {#product}
 
@@ -81,17 +81,17 @@ Con los datos del ejemplo anterior, la dirección URL de una página de categor�
 
 ### Configuración específica de la tienda {#store-specific-urlformats}
 
-CIF Los formatos de dirección URL de categoría y página de producto para todo el sistema establecidos por la _configuración de proveedor de URL de la aplicación_ se pueden cambiar para cada tienda.
+Los formatos de URL de categoría y página de producto para todo el sistema establecidos por la _configuración del proveedor de URL de CIF_ se pueden cambiar en cada tienda.
 
-CIF En la Configuración de la categoría, un editor puede seleccionar un formato de dirección URL de página de producto o categoría alternativo. Si no se selecciona nada allí, la implementación vuelve a la configuración de todo el sistema.
+En la configuración de CIF, un editor puede seleccionar un formato de dirección URL de página de categoría o producto alternativo. Si no se selecciona nada allí, la implementación vuelve a la configuración de todo el sistema.
 
 Cambiar el formato de URL de un sitio web activo puede tener un impacto negativo en el tráfico orgánico del sitio. Consulte las [Prácticas recomendadas](#best-practices) que se describen a continuación y planifique cuidadosamente el cambio de formato de URL con anticipación.
 
-CIF ![Formatos de URL en la configuración de la](assets/store-specific-url-formats.png)
+![Formatos de URL en la configuración de CIF](assets/store-specific-url-formats.png)
 
 >[!NOTE]
 >
-> CIF La configuración específica del almacén de los formatos de URL requiere [Componentes principales 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) y la versión más reciente del complemento Commerce y contenido de Adobe Experience Manager.
+> La configuración específica del almacén de los formatos de URL requiere [CIF Core Components 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) y la versión más reciente del complemento Commerce y contenido de Adobe Experience Manager.
 
 ## URL de páginas de productos según las categorías {#context-aware-pdps}
 
@@ -108,7 +108,7 @@ Este esquema selecciona el(la) `url_path` con la mayor cantidad de antecesores, 
 
 Sin embargo, cuando un comprador navega de una página de categoría a una página de producto, o de una página de producto a otra página de producto relacionada en la misma categoría, vale la pena conservar el contexto de categoría actual. En este caso, la selección `url_path` debería preferir las alternativas que se encuentran dentro del contexto de categoría actual sobre la selección _canónica_ descrita anteriormente.
 
-CIF Esta característica debe habilitarse en la _configuración del proveedor de URL de la_. Si se habilita, las alternativas de puntuaciones de selección serán más altas cuando
+Esta característica debe habilitarse en la _configuración del proveedor de URL de CIF_. Si se habilita, las alternativas de puntuaciones de selección serán más altas cuando
 
 * coinciden con partes de `url_path` de una categoría determinada desde el principio (coincidencia de prefijo difuso)
 * o coinciden con `url_key` de una categoría determinada en cualquier lugar (coincidencia parcial exacta)
@@ -154,7 +154,7 @@ La alternativa &quot;new-products/new-in-summer-2022/gold-cirque-earrings.html&q
 
 >[!NOTE]
 >
-> CIF Las direcciones URL de productos según la categoría requieren [Componentes principales 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) o posteriores
+> Las direcciones URL de productos según la categoría requieren [Componentes principales de CIF 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) o posterior.
 
 ## Categoría específica y páginas del producto {#specific-pages}
 
@@ -181,13 +181,13 @@ Las páginas de productos específicas se seleccionan según el SKU o la categor
 
 >[!NOTE]
 >
-> CIF Para seleccionar páginas de productos específicas por categoría se requiere [Componentes principales 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) o posterior.
+> Para seleccionar páginas de productos específicas por categoría se requieren [Componentes principales de CIF 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) o posterior.
 
 ### Vinculación profunda {#specific-pages-deep-linking}
 
 `UrlProvider` está preconfigurado para generar vínculos profundos a categorías específicas y páginas de productos en instancias de nivel de creación. Esta capacidad es útil para los editores que exploran un sitio mediante el modo de vista previa, navegan a una página de producto o categoría específica y vuelven al modo de edición para editar la página.
 
-En las instancias de nivel de publicación, por otro lado, las direcciones URL de la página del catálogo deben mantenerse estables para no perder ganancias en las clasificaciones de los motores de búsqueda, por ejemplo. Debido a ese nivel de publicación, las instancias no representan vínculos profundos a páginas de catálogo específicas de forma predeterminada. CIF Para cambiar este comportamiento, la _Estrategia de página específica del proveedor de URL de_ se puede configurar para que siempre genere direcciones URL de página específicas.
+En las instancias de nivel de publicación, por otro lado, las direcciones URL de la página del catálogo deben mantenerse estables para no perder ganancias en las clasificaciones de los motores de búsqueda, por ejemplo. Debido a ese nivel de publicación, las instancias no representan vínculos profundos a páginas de catálogo específicas de forma predeterminada. Para cambiar este comportamiento, se puede configurar la _estrategia de página específica del proveedor de URL de CIF_ para que siempre genere direcciones URL de página específicas.
 
 ### Varias páginas del catálogo {#multiple-product-pages}
 
@@ -199,7 +199,7 @@ Se recomienda que las páginas de producto y categoría de una página del catá
 
 >[!NOTE]
 >
-> CIF La compatibilidad total con varias páginas del catálogo requiere [Componentes principales 2.10.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) o posteriores
+> La compatibilidad total con varias páginas del catálogo requiere [Componentes principales de CIF 2.10.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) o posterior.
 
 ## Personalizaciones {#customization}
 
@@ -211,11 +211,11 @@ Las implementaciones de formato de URL personalizadas deben implementar un par d
 
 ### Combinación con asignaciones de Sling {#sling-mapping}
 
-Además de `UrlProvider`, también es posible configurar [Asignaciones de Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) para reescribir y procesar direcciones URL. AEM El proyecto de tipo de archivo también proporciona [una configuración de ejemplo](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) para configurar algunas asignaciones de Sling para el puerto 4503 (publicación) y 80 (Dispatcher).
+Además de `UrlProvider`, también es posible configurar [Asignaciones de Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) para reescribir y procesar direcciones URL. El proyecto AEM Archetype también proporciona [una configuración de ejemplo](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) para configurar algunas asignaciones de Sling para el puerto 4503 (publicación) y 80 (Dispatcher).
 
-### AEM Combinación con el Dispatcher de {#dispatcher}
+### Combinación con AEM Dispatcher {#dispatcher}
 
-AEM Las reescrituras de URL también se pueden lograr usando el servidor HTTP de Dispatcher con el módulo `mod_rewrite` de la interfaz de usuario. El [tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype) proporciona una referencia a la configuración de AEM Dispatcher que ya incluye las [reglas de reescritura](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) básicas para el tamaño generado.
+Las reescrituras de URL también se pueden lograr utilizando el servidor HTTP AEM Dispatcher con el módulo `mod_rewrite`. El [tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype) proporciona una referencia a la configuración de AEM Dispatcher que ya incluye las [reglas de reescritura](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) básicas para el tamaño generado.
 
 ## Prácticas recomendadas {#best-practices}
 
@@ -225,11 +225,11 @@ Como se mencionó antes de seleccionar uno de los formatos predeterminados dispo
 
 _**Use un formato de dirección URL de página de producto que contenga el SKU.**_
 
-CIF Los componentes principales utilizan el SKU como identificador principal en todos los componentes. Si el formato de URL de la página del producto no contiene el SKU, es necesario realizar una consulta GraphQL para resolverlo. Esta resolución puede afectar al tiempo hasta el primer byte. Además, es posible que los compradores puedan encontrar productos por SKU utilizando motores de búsqueda.
+Los componentes principales de CIF utilizan el SKU como identificador principal en todos los componentes. Si el formato de URL de la página del producto no contiene el SKU, es necesario realizar una consulta GraphQL para resolverlo. Esta resolución puede afectar al tiempo hasta el primer byte. Además, es posible que los compradores puedan encontrar productos por SKU utilizando motores de búsqueda.
 
 _**Use un formato de dirección URL de página de producto que contenga el contexto de categoría.**_
 
-CIF Algunas características del proveedor de URL de la solo están disponibles cuando se usan formatos de URL de productos que codifican el contexto de categoría, como la categoría `url_key` o la categoría `url_path`. Incluso si estas funciones pueden no ser necesarias para una tienda nueva, el uso de uno de estos formatos de URL al principio ayuda a reducir los esfuerzos de migración en el futuro.
+Algunas características del proveedor de URL de CIF solo están disponibles cuando se usan formatos de URL de productos que codifican el contexto de categoría, como la categoría `url_key` o la categoría `url_path`. Incluso si estas funciones pueden no ser necesarias para una tienda nueva, el uso de uno de estos formatos de URL al principio ayuda a reducir los esfuerzos de migración en el futuro.
 
 _**Equilibrio entre la longitud de la dirección URL y la información codificada.**_
 
@@ -243,7 +243,7 @@ Muchos de los formatos de URL predeterminados son compatibles entre sí, lo que 
 
 Por otro lado, los motores de búsqueda necesitan tiempo para volver a rastrear todas las páginas del catálogo con el nuevo formato de URL. Para admitir este proceso y también para mejorar la experiencia del usuario final, se recomienda proporcionar redirecciones que reenvíen al usuario de las direcciones URL antiguas a las nuevas.
 
-Un método para hacerlo sería conectar un entorno de ensayo al back-end de comercio electrónico de producción y configurarlo para utilizar el nuevo formato de URL. CIF Después, obtenga el [mapa del sitio del producto generado por el generador de mapas del sitio de productos de la serie](../../overview/seo-and-url-management.md) para el entorno de ensayo y producción, y utilícelo para crear un [mapa de reescritura de Apache httpd](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). Esta asignación de reescritura se puede implementar en Dispatcher junto con el despliegue del nuevo formato de URL.
+Un método para hacerlo sería conectar un entorno de ensayo al back-end de comercio electrónico de producción y configurarlo para utilizar el nuevo formato de URL. Después, obtenga el [mapa del sitio del producto generado por el generador de mapas del sitio de productos de CIF](../../overview/seo-and-url-management.md) tanto para el entorno de ensayo como de producción y úselo para crear un [mapa de reescritura Apache httpd](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). Esta asignación de reescritura se puede implementar en Dispatcher junto con el despliegue del nuevo formato de URL.
 
 ## Ejemplo {#example}
 

@@ -1,8 +1,8 @@
 ---
-title: AEM Configuración de un sistema de comercio con varios sistemas de comercio
+title: Configuración de AEM con varios sistemas de comercio
 description: Obtenga información sobre cómo configurar Adobe Experience Manager con varios sistemas Commerce. Esto permite que los proyectos admitan una sola capa de administración de experiencias que se conecte a varios back-ends de comercio de Adobe o de terceros para tiendas de varias marcas y regiones.
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: technical-video
 activity: setup
 feature: Commerce Integration Framework
@@ -12,7 +12,7 @@ level: Beginner
 kt: 10529
 thumbnail: 346811.jpeg
 exl-id: 5328fe30-79ca-4496-8ebd-f1ef51ccfccf
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 0%
@@ -21,8 +21,8 @@ ht-degree: 0%
 
 # Configuración de varios sistemas de comercio
 
-El sistema de único de Adobe Experience Manager AEM CIF () se puede utilizar para conectarse a varios sistemas de Adobe o de comercio de terceros para admitir implementaciones avanzadas. Esto resulta útil en casos de tiendas de varias regiones y marcas, en las que la capa de administración de experiencias única simplifica el proceso de creación y entrega de contenido comercial. Esto también ayuda a las organizaciones a acelerar el tiempo de respuesta al valor (TTV) y disminuye el coste total de propiedad (TCO).
+El único sistema de CIF de Adobe Experience Manager (AEM) se puede utilizar para conectarse a varios sistemas de comercio de Adobe o de terceros para admitir implementaciones avanzadas. Esto resulta útil en casos de tiendas de varias regiones y marcas, en las que la capa de administración de experiencias única simplifica el proceso de creación y entrega de contenido comercial. Esto también ayuda a las organizaciones a acelerar el tiempo de respuesta al valor (TTV) y disminuye el coste total de propiedad (TCO).
 
-AEM Un tutorial en vídeo que detalla cómo configurar entornos de comercio de Adobe múltiple para la creación de entornos de comercio de. AEM La Administración de varios sitios de (MSM) incluye funciones como Live Copy y copia de idioma. Estas características se usan con el Commerce integration framework CIF () para crear una tienda de varias regiones donde __las tiendas de la región de la UE__ se conectan a __la tienda de la región de la UE Adobe Commerce__ y la tienda de la región de __Norteamérica (NA)__ se conectan al sistema de __NA Adobe Commerce__.
+Un tutorial en vídeo que detalla cómo configurar AEM con varios entornos de comercio de Adobe. AEM Multi-Site Management (MSM) incluye funciones como Live Copy y copia de idioma. Estas características se usan con Commerce integration framework (CIF) para crear una tienda de varias regiones en la que __las tiendas de la región de la UE__ se conectan a __la tienda de la región de la UE Adobe Commerce__ y la tienda de la región de __Norteamérica (NA)__ se conectan al sistema de __NA Adobe Commerce__.
 
 >[!VIDEO](https://video.tv.adobe.com/v/346811/?quality=12&learn=on)

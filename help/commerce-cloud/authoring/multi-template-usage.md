@@ -2,7 +2,7 @@
 title: Creación de páginas de múltiples productos y categorías
 description: Aprenda a enriquecer las páginas de aterrizaje de categorías y detalles del producto con contenido de marketing segmentado.
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: feature-video
 activity: use
 audience: marketer
@@ -11,7 +11,7 @@ kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 45%
@@ -22,7 +22,7 @@ ht-degree: 45%
 
 >[!NOTE]
 >
-> CIF Esta funcionalidad solo funciona para escaparates basados en la distribución de tiendas (por ejemplo, Venia), según el tipo de tienda que haya en el mercado (por ejemplo, Venia).
+> Esta funcionalidad solo funciona para tiendas basadas en CIF (por ejemplo, Venia).
 
 Los [componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components) ofrecen a los autores de contenido la capacidad de crear categorías y páginas de productos adicionales. Estas páginas pueden enriquecerse con contenido de marketing adicional y configurarse para dirigirse a categorías y productos específicos. El siguiente vídeo describe la configuración de esta función.
 
@@ -37,4 +37,4 @@ Puede encontrar más información sobre este tema en los siguientes recursos:
 
 ## Recursos relacionados {#related}
 
-También es posible segmentar dinámicamente regiones específicas de una página y reutilizar la misma plantilla. AEM Obtenga información sobre cómo [enriquecer datos de productos con contenido de productos asociado](./enrich-product-associated-content.md) con el contenido de la.
+También es posible segmentar dinámicamente regiones específicas de una página y reutilizar la misma plantilla. Aprenda a [enriquecer datos de productos con contenido de AEM asociado](./enrich-product-associated-content.md).
