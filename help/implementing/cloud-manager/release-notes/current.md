@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 663234640f16e6aa653251399751abf5daa17f82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '329'
-ht-degree: 31%
+ht-degree: 100%
 
 ---
 
@@ -22,23 +22,23 @@ Consulte también las [notas de la versión actual de Adobe Experience Manager a
 
 ## Fechas de lanzamiento {#release-date}
 
-La fecha de lanzamiento de Cloud Manager 2025.3.0 en AEM as a Cloud Service es el viernes, 13 de marzo de 2025.
+La fecha de lanzamiento de Cloud Manager 2025.3.0 en AEM as a Cloud Service es el jueves, 13 de marzo de 2025.
 
-La próxima versión planificada es el viernes, 10 de abril de 2025.
+La próxima versión planificada es el jueves, 10 de abril de 2025.
 
 ## Novedades {#what-is-new}
 
 * **Ejecutar varias canalizaciones**
 
-  La capacidad de ejecutar varias canalizaciones simultáneamente se ha introducido en la página Canalizaciones. Los usuarios deben seleccionar al menos una canalización, pero no más de diez. Cerca de la esquina superior derecha de la página Canalizaciones, haga clic en **Ejecutar seleccionados (x)**. Aparecerá un cuadro de diálogo modal que enumera cualquier canalización que no se pueda iniciar. Haga clic en **Ejecutar** para iniciar todas las canalizaciones válidas.
+  Se ha introducido en la página Canalizaciones la posibilidad de ejecutar varias canalizaciones simultáneamente. Los usuarios deben seleccionar al menos una canalización, pero no más de 10. Cerca de la esquina superior derecha de la página Canalizaciones, haga clic en **Ejecutar seleccionadas (x)**. Aparecerá un cuadro de diálogo modal que enumera cualquier canalización que no se pueda iniciar. Haga clic en **Ejecutar** para iniciar todas las canalizaciones válidas.
 
-  ![Ejecutar cuadro de diálogo de canalizaciones seleccionadas](/help/implementing/cloud-manager/release-notes/assets/run-selected-pipelines.png)
+  ![Cuadro de diálogo Ejecutar canalizaciones seleccionadas](/help/implementing/cloud-manager/release-notes/assets/run-selected-pipelines.png)
 
-  Ver también [Ejecutar varias canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#run-multiple-pipelines)
+  Véase también [Ejecutar varias canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#run-multiple-pipelines)
 
-* **Se ha ampliado la compatibilidad a las versiones de Node.js**
+* **Compatibilidad ampliada a las versiones de Node.js**
 
-  El entorno de compilación del front-end ahora es compatible con las siguientes `Node.js` versiones:
+  El entorno de compilación front-end ahora es compatible con las siguientes versiones de `Node.js`:
 
    * 23
    * 22
@@ -54,13 +54,13 @@ Be a part of Cloud Manager's early adoption program and have a chance to test up
 
 ## Correcciones de errores
 
-* **(IU) Corrección para las actualizaciones &#39;Configuración de red avanzada&#39; en Cloud Manager**
+* **(IU) Corrección de las actualizaciones &#39;Configuración de red avanzada&#39; en Cloud Manager**
 
-  Se ha resuelto un problema poco frecuente que impedía realizar actualizaciones en la **Configuración avanzada de red** cuando había una notificación &quot;Actualización disponible&quot;. Anteriormente, Cloud Manager bloqueaba las modificaciones de configuración, incluida la configuración avanzada de red, para evitar conflictos durante una actualización. Los clientes ahora pueden almacenar en déclencheur manualmente la actualización pendiente para aplicar los cambios necesarios sin restricciones. <!-- CMGR-65913 and CMGR-65788 -->
+  Se ha resuelto un problema poco frecuente que impedía realizar actualizaciones en la **Configuración de red avanzada** cuando había una notificación &quot;Actualización disponible&quot;. Anteriormente, Cloud Manager bloqueaba las modificaciones de configuración, incluida la configuración avanzada de red, para evitar conflictos durante una actualización. Ahora los clientes ahora pueden activar manualmente la actualización pendiente para aplicar los cambios necesarios sin restricciones. <!-- CMGR-65913 and CMGR-65788 -->
 
-* **(IU) Corrección para actualizaciones de lista de permitidos de IP atascadas en estado &quot;Actualizando&quot;**
+* **(IU) Corrección de las actualizaciones de la lista de direcciones IP permitidas bloqueadas en el estado &quot;Actualizando&quot;**
 
-  Se ha resuelto un problema poco frecuente en el que las actualizaciones de lista de permitidos de IP en Cloud Manager permanecían atascadas en el estado &quot;Actualizando&quot; debido a la configuración de dominio activo duplicado para un entorno. Anteriormente, los clientes experimentaban retrasos de procesamiento indefinidos al actualizar las listas de permitidos IP, lo que impedía realizar los ajustes de acceso a la red necesarios. Esta corrección garantiza que las actualizaciones de la lista de permitidos de IP ahora se puedan completar correctamente sin quedarse atascadas. <!-- CMGR-65786 -->
+  Se ha resuelto un problema poco frecuente en el que las actualizaciones de la lista de direcciones IP permitidas de Cloud Manager permanecían bloqueadas en el estado &quot;Actualizando&quot; debido a la configuración de dominio activo duplicado para un entorno. Anteriormente, los clientes experimentaban retrasos de procesamiento indefinidos al actualizar las listas de IP permitidas, lo que impedía realizar los ajustes de acceso a la red necesarios. Esta corrección garantiza que las actualizaciones de la lista de direcciones IP permitidas ahora se puedan completar correctamente sin quedarse bloqueadas. <!-- CMGR-65786 -->
 
 
 

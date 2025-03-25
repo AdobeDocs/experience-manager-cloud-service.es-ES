@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: a2f26e7befe4aa23350cfdca6a2c342500a909db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1493'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ Los recursos que se almacenan en programas de AEM as a Cloud Service diferentes 
 
 **Despliegue del editor de fragmentos de contenido**
 
-Seguiremos habilitando el nuevo Editor de fragmentos de contenido basado en la IU de Spectrum en AEM as a Cloud Service. Después de convertirse en el valor predeterminado para todos los entornos de Cloud Service Developer en noviembre de 2024, se establecerá como predeterminado para todos los entornos de Stage el 1 de abril de 2025, y para todos los entornos de Producción el 1 de mayo de 2025. En todos los casos, los usuarios seguirán teniendo la opción de volver al editor de fragmentos de contenido tradicional en la IU táctil de AEM.
+Seguiremos habilitando el nuevo editor de fragmentos de contenido basado en la IU de Spectrum en AEM as a Cloud Service. Después de convertirse en el valor predeterminado para todos los entornos de Cloud Service Developer en noviembre de 2024, se establecerá como valor predeterminado para todos los entornos de ensayo el 1 de abril de 2025, y para todos los entornos de producción el 1 de mayo de 2025. En todos los casos, los usuarios seguirán teniendo la opción de volver al editor de fragmentos de contenido tradicional en la IU táctil de AEM.
 
 **API HTTP de traducción**
 
