@@ -5,15 +5,15 @@ exl-id: 43ebd6f1-1492-461a-8d9b-2b55dcde9052
 source-git-commit: b9c739a03b358de7c011e50ddbdd609c90f86b6f
 workflow-type: tm+mt
 source-wordcount: '2384'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# Carga masiva de identidades a IMS después de usar CTT {#bulk-principal-uploading}
+# Carga masiva de identidades principales en IMS después de usar CTT {#bulk-principal-uploading}
 
 >[!CONTEXTUALHELP]
 >id="bulk-principal-uploading"
->title="Carga masiva de identidades"
+>title="Carga masiva de identidades principales"
 >abstract="Información general sobre la carga masiva de archivos para grupos y usuarios, y cómo utilizarlos en Admin Console para crear grupos y usuarios en IMS."
 >additional-url="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="Documentación del Admin Console de AEM"
 >additional-url="https://adminconsole.adobe.com/" text="Admin Console de AEM"
