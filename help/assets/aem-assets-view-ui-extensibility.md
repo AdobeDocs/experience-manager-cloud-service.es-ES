@@ -4,7 +4,7 @@ description: Obtenga información acerca de la capacidad de extensibilidad de la
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 1927a1147e4b33d6173f08953d64b5a91d3473d7
+source-git-commit: 969860593670ce490cc688a92c349addb952b3b4
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 3%
@@ -48,7 +48,7 @@ ht-degree: 3%
 </table>
 
 [!DNL AEM Assets View] admite la extensibilidad de la interfaz de usuario, lo que le permite agregar componentes de la interfaz de usuario personalizados a la interfaz de usuario de [!DNL Assets View] para flujos de trabajo específicos y requisitos empresariales que no cumplen las capacidades predeterminadas de [!DNL AEM Assets View]. Esta capacidad de extensibilidad de la interfaz de usuario de [!DNL AEM Assets View] mejora su flexibilidad, lo que permite a las organizaciones adaptar la interfaz para flujos de trabajo y requisitos específicos.\
-Puede agregar sus extensiones a los niveles **Asset**, **Folder** y **Collection**. La extensión agregada se mostrará en un panel dedicado de la página **Recurso**, **Colección** o **Carpeta** **[!UICONTROL Detalles]**.
+Puede agregar sus extensiones a los niveles **Asset**, **Folder** y **Collection**. La extensión agregada se muestra en un panel dedicado en la página **Recurso**, **Colección** o **Carpeta** **[!UICONTROL Detalles]**.
 
 >[!IMPORTANT]
 >
