@@ -2,9 +2,9 @@
 title: Edición masiva de metadatos en  [!DNL Assets View]
 description: Descubra cómo puede actualizar un conjunto predefinido de campos de metadatos estándar para varios recursos disponibles en [DNL! Vista de Assets] simultáneamente.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 46d64c089ff22492bc871ead36e8c08d683043b1
+source-git-commit: 19c5155363ef3f5083d36af880727a33c7224e84
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '496'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 3%
     </tr>
 </table>
 
-La capacidad **[!DNL Bulk Metadata Edit]** de [!DNL Assets View] le permite editar simultáneamente un conjunto predefinido de campos de metadatos estándar para varios archivos de recursos. Seleccione varios recursos y actualice de forma masiva su conjunto predefinido de metadatos estándar a la vez, en lugar de actualizar dichos metadatos estándar para cada recurso de forma individual. Esta capacidad de editar de forma masiva el conjunto estándar de propiedades de metadatos para varios recursos a la vez mantiene la eficacia, coherencia y precisión de esas propiedades de metadatos estándar en el gran conjunto de recursos, lo que mejora la capacidad de búsqueda y organización de esos recursos.
+La capacidad **[!DNL Bulk Metadata Edit]** de [!DNL Assets View] le permite editar simultáneamente un conjunto predefinido de campos de metadatos estándar para varios archivos de recursos. Seleccione varios recursos y actualice de forma masiva su conjunto predefinido de metadatos estándar a la vez, en lugar de actualizar dichos metadatos estándar para cada recurso de forma individual. Esta capacidad mantiene la eficacia, coherencia y precisión del conjunto de propiedades de metadatos estándar en los grandes conjuntos de recursos, lo que mejora la capacidad de búsqueda y organización de esos recursos.
 
 ## Edición masiva de metadatos de recursos {#how-to-bulk-edit-the-metadata-of-multiple-assets-on-assets-view}
 
