@@ -1,17 +1,18 @@
 ---
-title: Administración de modelos de fragmento de contenido
+title: Administración de los modelos de fragmento de contenido
 description: Aprenda a administrar modelos de fragmentos de contenido; sirven como base para los fragmentos de contenido en AEM, lo que le permite crear contenido estructurado para utilizarlo en entregas sin encabezado o en la creación de páginas.
 feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
-source-git-commit: 175a7c069f57069b7a5ff1f0e5785147d9a4f6c9
+exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
+source-git-commit: b8a56b73f8178c432941b50821be91777f203dec
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2288'
 ht-degree: 36%
 
 ---
 
-# Administración de modelos de fragmento de contenido {#managing-content-fragment-models}
+# Administración de los modelos de fragmento de contenido {#managing-content-fragment-models}
 
 Desde la consola de fragmentos de contenido puede administrar los modelos de fragmentos de contenido y, a continuación, [abrir el editor](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) para definir la estructura.
 
@@ -49,7 +50,7 @@ Como descripción general muy rápida, para trabajar con los modelos de fragment
 
 Puede usar el panel del extremo izquierdo de la consola [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) para seleccionar **Modelos de fragmentos de contenido** como tipo de recurso para ver, examinar y administrar:
 
-![Consola de fragmentos de contenido: navegación](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
+![Consola de fragmentos de contenido: navegación](/help/sites-cloud/administering/content-fragments/assets/cf-console-models-navigation.png)
 
 Se abrirá la vista para modelos de fragmentos de contenido:
 
@@ -62,7 +63,7 @@ Aquí se pueden ver tres áreas principales:
    * También muestra su organización IMS
    * Proporciona varias [acciones](#actions-unselected)
 * El panel izquierdo
-   * Muestra todas las [configuraciones](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) enumeradas como carpetas
+   * Muestra las [rutas de acceso a todas las configuraciones](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) enumeradas como carpetas
    * Aquí puede ocultar o mostrar el árbol de carpetas
    * Puede seleccionar una carpeta específica del árbol
    * Se puede cambiar el tamaño para mostrar carpetas anidadas (subconfiguraciones)
@@ -75,7 +76,7 @@ Aquí se pueden ver tres áreas principales:
          * [Puede seleccionar qué columnas mostrar](#select-columns-console)
       * [Varios campos de información](#information-content-fragment-models) acerca de un modelo de fragmento de contenido proporcionan vínculos; según el campo, pueden:
          * Abra el modelo adecuado en el editor
-         * Mostrar información sobre la configuración
+         * Mostrar información sobre la ruta a la configuración
          * Mostrar información sobre el estado del modelo
       * [Algunos otros campos de información](#information-content-fragments) acerca de un modelo de fragmento de contenido se pueden usar para [Filtrado rápido](#fast-filtering):
          * Seleccione un valor en la columna y se aplicará inmediatamente como filtro
@@ -96,8 +97,8 @@ El panel principal/derecho (vista de tabla) de la consola proporciona una amplia
    * Proporciona un vínculo para abrir el modelo en el editor.
 * Bloqueado
    * Cuando el modelo está bloqueado, esto se indica con un icono de candado.
-* **Configuración**
-   * Proporciona un vínculo para abrir la configuración en la consola.
+* **Ruta**
+   * Proporciona la ruta de acceso como vínculo para abrir la configuración en la consola.
 Al pasar el ratón por encima del nombre de la carpeta, se muestra la ruta JCR.
 * **Estado**
    * Solo información.
@@ -123,7 +124,7 @@ Al seleccionar un modelo específico, se muestran las propiedades de dicho model
 
 ![Consola de fragmentos de contenido: información para un modelo de fragmento de contenido seleccionado](assets/cf-managing-content-fragment-models-selected.png)
 
-* **[Configuración](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
+* **[Ruta](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
 * **[Estado](#enabling-a-content-fragment-model)**
 * **Título**
 * **Etiquetas**
@@ -233,7 +234,7 @@ Por ejemplo, seleccione **Habilitado** en la columna **Estado**. Una vez selecci
    >* Si se ha habilitado el uso de [modelos de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/setup.md)
    >* cuando haya seleccionado la carpeta en la que desea crear el modelo.
 
-1. Seleccione **Configuración** y especifique **Nombre**.
+1. Seleccione la **ruta** a la configuración y especifique el **nombre**.
 
    >[!NOTE]
    >
