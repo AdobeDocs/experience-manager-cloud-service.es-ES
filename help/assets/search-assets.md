@@ -6,12 +6,13 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 07cfbb643785127a45a1c7712a9f4ff81767b7e1
 workflow-type: tm+mt
-source-wordcount: '5552'
+source-wordcount: '5931'
 ht-degree: 6%
 
 ---
+
 
 # Búsqueda de recursos en AEM {#search-assets-in-aem}
 
@@ -313,7 +314,7 @@ La capacidad de búsqueda [!DNL Experience Manager] admite la búsqueda de colec
 
 ## Selector de recursos {#asset-picker}
 
-El selector de recursos (denominado selector de recursos en versiones anteriores de [!DNL Adobe Experience Manager]) le permite buscar, filtrar y examinar los recursos DAM de una manera especial. El selector de recursos está disponible en `https://[aem_server]:[port]/aem/assetpicker.html`. Puede recuperar los metadatos de los recursos seleccionados mediante el selector de recursos. Puede iniciarlo con parámetros de solicitud admitidos, como el tipo de recurso (imagen, vídeo, texto) y el modo de selección (selecciones únicas o múltiples). Estos parámetros establecen el contexto del selector de recursos para una instancia de búsqueda determinada y permanecen intactos durante toda la selección.
+[Selector de recursos AEM](/help/assets/overview-asset-selector.md) (llamado selector de recursos en versiones anteriores de [!DNL Adobe Experience Manager]) le permite buscar, filtrar y examinar los recursos DAM de una manera especial. El selector de recursos está disponible en `https://[aem_server]:[port]/aem/assetpicker.html`. Puede recuperar los metadatos de los recursos seleccionados mediante el selector de recursos. Puede iniciarlo con parámetros de solicitud admitidos, como el tipo de recurso (imagen, vídeo, texto) y el modo de selección (selecciones únicas o múltiples). Estos parámetros establecen el contexto del selector de recursos para una instancia de búsqueda determinada y permanecen intactos durante toda la selección.
 
 El selector de recursos utiliza el mensaje HTML5 `Window.postMessage` para enviar datos del recurso seleccionado al destinatario. Solo funciona en el modo Examinar y solo con la página de resultados de Omnisearch.
 
@@ -370,6 +371,8 @@ La funcionalidad de búsqueda puede tener limitaciones de rendimiento en los sig
 
 * **Indexación**: En los resultados de la búsqueda solo se devuelven metadatos y recursos indizados. Para obtener una mejor cobertura y rendimiento, garantice una indexación adecuada y siga las prácticas recomendadas. Ver [indexación](#searchindex).
 
+Ver más [Prácticas recomendadas de búsqueda](search-best-practices.md).
+
 ## Algunos ejemplos que ilustran la búsqueda {#samples}
 
 Utilice comillas dobles alrededor de las palabras clave para encontrar los recursos que contienen la frase exacta en el orden exacto especificado por el usuario.
@@ -407,62 +410,56 @@ Utilice comillas dobles alrededor de las palabras clave para encontrar los recur
 
 *Figura: uso del guión para buscar recursos que no contengan una palabra clave excluida.*
 
-<!--
-## Configuration and administration tasks related to search functionality {#configadmin}
+## Tareas de configuración y administración relacionadas con la funcionalidad de búsqueda {#configadmin}
 
-### Search index configurations {#searchindex}
+### Buscar configuraciones de índice {#searchindex}
 
-Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [indexing](/help/operations/indexing.md).
--->
+La detección de recursos se basa en la indexación del contenido de DAM, incluidos los metadatos. La detección de recursos más rápida y precisa depende de la indexación optimizada y las configuraciones adecuadas. Ver [indexación](/help/operations/indexing.md).
 
-<!--
-### Visual or similarity search {#configvisualsearch}
+### Búsqueda visual o de similitudes {#configvisualsearch}
 
-Visual search uses Smart Tags. After configuring smart tagging functionality, follow these steps.
+La búsqueda visual utiliza etiquetas inteligentes. Después de configurar la funcionalidad de etiquetado inteligente, siga estos pasos.
 
-1. In [!DNL Experience Manager] CRXDE, in `/oak:index/lucene` node, add the following properties and values and save the changes.
+1. En [!DNL Experience Manager] CRXDE, en el nodo `/oak:index/lucene`, agregue las siguientes propiedades y valores y guarde los cambios.
 
-    * `costPerEntry` property of type `Double` with the value `10`.
+   * `costPerEntry` propiedad de tipo `Double` con el valor `10`.
 
-    * `costPerExecution` property of type `Double` with the value `2`.
+   * `costPerExecution` propiedad de tipo `Double` con el valor `2`.
 
-    * `refresh` property of type `Boolean` with the value `true`.
+   * `refresh` propiedad de tipo `Boolean` con el valor `true`.
 
-   This configuration allows searches from the appropriate index.
+   Esta configuración permite realizar búsquedas desde el índice adecuado.
 
-1. To create Lucene index, in CRXDE, at `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`, create node named `imageFeatures` of type `nt-unstructured`. In `imageFeatures` node,
+1. Para crear el índice Lucene, en CRXDE, en `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`, cree un nodo con el nombre `imageFeatures` de tipo `nt-unstructured`. En el nodo `imageFeatures`,
 
-    * Add `name` property of type `String` with the value `jcr:content/metadata/imageFeatures/haystack0`.
+   * Agregue la propiedad `name` de tipo `String` con el valor `jcr:content/metadata/imageFeatures/haystack0`.
 
-    * Add `nodeScopeIndex` property of type `Boolean` with the value of `true`.
+   * Agregue la propiedad `nodeScopeIndex` de tipo `Boolean` con el valor `true`.
 
-    * Add `propertyIndex` property of type `Boolean` with the value of `true`.
+   * Agregue la propiedad `propertyIndex` de tipo `Boolean` con el valor `true`.
 
-    * Add `useInSimilarity` property of type `Boolean` with the value `true`.
+   * Agregue la propiedad `useInSimilarity` de tipo `Boolean` con el valor `true`.
 
-   Save the changes.
+   Guarde los cambios.
 
-1. Access `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` and add `similarityTags` property of type `Boolean` with the value of `true`.
-1. Apply Smart Tags to the assets in your [!DNL Experience Manager] repository. See [how to configure smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring).
-1. In CRXDE, in `/oak-index/damAssetLucene` node, set the `reindex` property to `true`. Save the changes.
-1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save the changes.
+1. Obtenga acceso a `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` y agregue la propiedad `similarityTags` de tipo `Boolean` con el valor de `true`.
+1. Aplicar etiquetas inteligentes a los recursos del repositorio [!DNL Experience Manager]. Ver [cómo configurar etiquetas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring).
+1. En CRXDE, en el nodo `/oak-index/damAssetLucene`, establezca la propiedad `reindex` en `true`. Guarde los cambios.
+1. (Opcional) Si ha personalizado el formulario de búsqueda, copie el nodo `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` en `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Guarde los cambios.
 
-For related information, see [understand smart tags in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html) and [how to manage smart tags](/help/assets/smart-tags.md).
--->
+Para obtener información relacionada, consulte [comprender las etiquetas inteligentes en Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html) y [cómo administrarlas](/help/assets/smart-tags.md).
 
-<!--
-### Mandatory metadata {#mandatorymetadata}
+### Metadatos obligatorios {#mandatorymetadata}
 
-Business users, administrators, or DAM librarians can define some metadata as mandatory metadata that is a must for the business processes to work. For various reasons, some assets may be missing this metadata, such as legacy assets or assets migrated in bulk. Assets with missing or invalid metadata are detected and reported based on the indexed metadata property. To configure it, see [mandatory metadata](/help/assets/metadata-schemas.md#defining-mandatory-metadata).
+Los usuarios empresariales, los administradores o los bibliotecarios de DAM pueden definir algunos metadatos como metadatos obligatorios, algo que es imprescindible para que funcionen los procesos empresariales. Por varios motivos, es posible que a algunos recursos les falten estos metadatos, como recursos heredados o recursos migrados de forma masiva. Se detectan y comunican los Assets con metadatos que faltan o no son válidos en función de la propiedad de metadatos indizados. Para configurarlo, consulte [metadatos obligatorios](/help/assets/metadata-schemas.md#defining-mandatory-metadata).
 
-### Modify search facets {#searchfacets}
+### Modificar facetas de búsqueda {#searchfacets}
 
-To improve the speed of discovery, [!DNL Experience Manager Assets] offers search facets using which you can filter the search results. The Filters panel includes a few standard facets by default. Administrators can customize the Filters panel to modify the default facets using the in-built predicates. [!DNL Experience Manager] provides a good collection of in-built predicates and an editor to customize the facets. See [search facets](/help/assets/search-facets.md).
+Para mejorar la velocidad de detección, [!DNL Experience Manager Assets] ofrece facetas de búsqueda mediante las cuales puede filtrar los resultados de búsqueda. El panel Filtros incluye algunas facetas estándar de forma predeterminada. Los administradores pueden personalizar el panel Filtros para modificar las facetas predeterminadas mediante los predicados integrados. [!DNL Experience Manager] proporciona una buena colección de predicados integrados y un editor para personalizar las facetas. Ver [facetas de búsqueda](/help/assets/search-facets.md).
 
-### Extract text when uploading assets {#extracttextupload}
+### Extraer texto al cargar recursos {#extracttextupload}
 
-You can configure [!DNL Experience Manager] to extract the text from the assets when users upload assets, such as PSD or PDF files. [!DNL Experience Manager] indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/manage-digital-assets.md#uploading-assets).
--->
+Puede configurar [!DNL Experience Manager] para que extraiga el texto de los recursos cuando los usuarios carguen recursos, como archivos de PSD o PDF. [!DNL Experience Manager] indexa el texto extraído y ayuda a los usuarios a buscar estos recursos en función del texto extraído. Consulte [cargar recursos](/help/assets/manage-digital-assets.md#uploading-assets).
 
 ### Predicados personalizados para filtrar los resultados de búsqueda {#custompredicates}
 
@@ -507,7 +504,7 @@ Ordene los resultados de búsqueda para descubrir los recursos necesarios más r
 
 En la vista de lista, puede ordenar los resultados de búsqueda del mismo modo que puede ordenar los recursos de cualquier carpeta. La ordenación funciona en estas columnas: Nombre, Título, Estado, Dimensiones, Tamaño, Clasificación, Uso, (Fecha) de creación, (Fecha) de modificación, (Fecha) de publicación, Flujo de trabajo y Retirado.
 
-Para ver las limitaciones de la funcionalidad de ordenación, consulte [limitaciones](#limitations).
+<!--For limitations of sort functionality, see [limitations](#limitations).-->
 
 ### Comprobación de la información detallada de un recurso {#checkinfo}
 
@@ -523,13 +520,13 @@ Para comprobar los comentarios de un recurso o del historial de versiones de un 
 
 ### Descargar recursos buscados {#download}
 
-Puede descargar los recursos buscados y sus representaciones igual que descarga los recursos normales de las carpetas. Seleccione uno o más recursos de los resultados de búsqueda y haga clic en **[!UICONTROL Descargar]** en la barra de herramientas.
+Puede descargar los recursos buscados y sus representaciones igual que descarga los recursos normales de las carpetas. Seleccione uno o más recursos de los resultados de búsqueda y haga clic en **[!UICONTROL Descargar]** en la barra de herramientas. Ver [descargar recursos](/help/assets/download-assets-from-aem.md)
 
 ### Actualizar propiedades de metadatos en lote {#metadata-updates}
 
 Es posible realizar actualizaciones masivas en los campos de metadatos comunes de varios recursos. En los resultados de búsqueda, seleccione uno o varios recursos. Haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas y actualice los metadatos según sea necesario. Haga clic en **[!UICONTROL Guardar y cerrar]** cuando haya terminado. Se sobrescriben los metadatos existentes anteriormente en los campos actualizados.
 
-Para los recursos que están disponibles en una sola carpeta o una colección, es más fácil [actualizar los metadatos de forma masiva](/help/assets/manage-metadata.md#manage-assets-metadata) sin usar la funcionalidad de búsqueda. Para los recursos disponibles en todas las carpetas o que coinciden con un criterio común, es más rápido actualizar los metadatos por lotes mediante la búsqueda.
+Para los recursos que están disponibles en una sola carpeta o una colección, es más fácil [actualizar los metadatos de forma masiva](/help/assets/bulk-metadata-edit.md) sin usar la funcionalidad de búsqueda. Para los recursos disponibles en todas las carpetas o que coinciden con un criterio común, es más rápido actualizar los metadatos por lotes mediante la búsqueda.
 
 ### Colecciones inteligentes {#smart-collections}
 
@@ -578,7 +575,6 @@ Vaya a la ubicación de la carpeta para los recursos mostrados en los resultados
 
 * [Prácticas recomendadas de búsqueda](search-best-practices.md)
 * [Traducir recursos](translate-assets.md)
-* [API HTTP de recursos](mac-api-assets.md)
 * [Formatos de archivo compatibles con recursos](file-format-support.md)
 * [Recursos de red](use-assets-across-connected-assets-instances.md)
 * [Informes de recurso](asset-reports.md)
