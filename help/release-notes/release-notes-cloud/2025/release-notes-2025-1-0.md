@@ -3,10 +3,11 @@ title: Notas de la versión 2025.1.0 de la versión de  [!DNL Adobe Experience M
 description: Notas de la versión 2025.1.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: f899398182f9d0991123828ca217379653a4e397
+exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
+source-git-commit: 3b6b11a325246fe5e86ae37e95351d7701716491
 workflow-type: tm+mt
-source-wordcount: '1513'
-ht-degree: 87%
+source-wordcount: '1716'
+ht-degree: 92%
 
 ---
 
@@ -80,17 +81,33 @@ Los editores preferidos para administrar contenido sin encabezado en AEM ahora s
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nuevas funciones de la vista AEM Assets {#new-features-assets}
+### Nuevas funciones de AEM Assets {#new-features-assets}
 
-**Personalizar filtros de búsqueda**
+**Informes de envío de Dynamic Media**
 
-Los filtros de búsqueda personalizada mejoran la precisión y la eficacia de la búsqueda de información relevante. Permite realizar búsquedas más adaptadas y filtrar los datos según atributos específicos como marca, producto, categoría u otros identificadores clave. Esto mejora la organización, reduce el tiempo empleado en tamizar los resultados irrelevantes y permite una toma de decisiones más rápida. También admite la escalabilidad, ya que los conjuntos de datos grandes son más fáciles de navegar y analizar.
+Obtenga información de envío de los recursos que se envían mediante Dynamic Media, incluyendo el recuento de envíos a nivel de recurso, información del remitente del envío, la ruta de los recursos de AEM Assets y los ID de recurso único. Genere informes para todos los recursos del repositorio de AEM Assets o jerarquías de carpetas específicas. Esta información le permite medir el retorno de la inversión de los recursos enviados, evaluar el rendimiento del canal y tomar decisiones fundamentadas para la administración de recursos.
 
-![filtros de búsqueda personalizados](/help/assets/assets/custom-search-filters.png)
+![representaciones dinámicas](/help/assets/assets/referrer.png)
 
-### Nuevas funciones en Content Hub {#new-features-content-hub}
+**Subtítulos y audio múltiples de Dynamic Media**
 
-Descripción
+[Compatibilidad con subtítulos y pistas de audio múltiples para vídeos en Dynamic Media](/help/assets/dynamic-media/video.md#about-msma): ahora se pueden añadir fácilmente múltiples subtítulos y pistas de audio a un vídeo principal. Esta capacidad significa que los vídeos son accesibles para un público global. Puede personalizar un solo vídeo principal publicado para un público global en varios idiomas y seguir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
+
+**Compatibilidad con Dynamic Adaptive Streaming over HTTP**
+
+Lanzamiento de nuevo protocolo de asistencia (DASH - Dynamic Adaptive Streaming over HTTP) para streaming adaptable en la entrega de vídeo de Dynamic Media (con CMAF habilitado):
+
+* Adaptive Streaming (DASH/HLS) garantiza una mejor experiencia de visualización de vídeos por parte del usuario
+
+* DASH es el protocolo estándar internacional para streaming de vídeo adaptable y es ampliamente adoptado en el sector.
+
+**Relaciones de recursos**
+
+La vista de Assets ahora admite la visualización y edición de relaciones de recursos en un panel de detalles de recursos simplificado. Añada fácilmente relaciones como Origen y Derivado al contenido para que los usuarios puedan encontrar de forma más eficaz el contenido relevante principal.
+
+**Reprocesamiento de los recursos**
+
+La vista de Assets ahora admite el reprocesamiento de los recursos disponibles en una carpeta. Puede seleccionar entre utilizar la opción **Proceso completo** o utilizar opciones avanzadas como, por ejemplo, representaciones de la vista previa predeterminada, metadatos, flujo de trabajo de posprocesamiento y perfil de procesamiento.
 
 ### Funciones de acceso rápido de AEM Assets {#early-access-features-assets}
 
