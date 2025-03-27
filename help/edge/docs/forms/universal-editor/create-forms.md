@@ -6,10 +6,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: 979aad24ebbd0ef1d4d1fc92d402fca20bc27a44
+source-git-commit: c81698c2d424d39688d1c9fad6c085223f5854a5
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 68%
+source-wordcount: '1080'
+ht-degree: 67%
 
 ---
 
@@ -21,7 +21,7 @@ Este artículo le guía a través del proceso de creación de los formularios in
 
 AEM Forms proporciona un bloque, conocido como bloque de formularios adaptables, para ayudarle a crear fácilmente formularios de Edge Delivery Services para capturar y almacenar los datos. Puede [crear un nuevo proyecto de AEM preconfigurado con el bloque de formularios adaptables](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) o [añadir el bloque de formularios adaptables a un proyecto de sitio de AEM existente](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
-![Flujo de trabajo de repositorio de Github](/help/edge/assets/repo-workflow.png)
+![Flujo de trabajo del repositorio de Github](/help/edge/assets/repo-workflow.png){width=50%}
 
 ## Requisitos previos
 
