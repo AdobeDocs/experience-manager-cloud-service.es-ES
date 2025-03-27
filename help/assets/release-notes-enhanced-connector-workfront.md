@@ -5,9 +5,9 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
 source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1724'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,16 +16,16 @@ ht-degree: 98%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
         </td>
         <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integración de AEM Assets con Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidad de la IU</b></a>
         </td>
           <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
@@ -94,9 +94,9 @@ La versión más reciente de [!DNL Workfront for Experience Manager enhanced con
 
 ### Versión de enero de 2024 {#january-2024-release}
 
-* La configuración [!DNL Workfront] en [!DNL CRX DE] actualmente no almacena el `project ID`, lo que provoca errores al aplicar el permiso de solo lectura. Obtenga más información sobre cómo [configurar permisos](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders).
+* La configuración [!DNL Workfront] en [!DNL CRX DE] actualmente no almacena el `project ID`, lo que provoca errores al aplicar el permiso de solo lectura. Obtenga más información sobre cómo [configurar permisos](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=es#linked-folders).
 
-* No hay documentación pública sobre cómo agregar una propiedad personalizada a la definición de índice predeterminada.  Más información sobre [agregar propiedad personalizada](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping).
+* No hay documentación pública sobre cómo agregar una propiedad personalizada a la definición de índice predeterminada.  Más información sobre [agregar propiedad personalizada](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=es#metadata-schema-mapping).
 
 * La eliminación de las configuraciones de conexión en el conector mejorado afecta significativamente a las suscripciones de evento y otras configuraciones guardadas, lo que hace que apunten a una dirección URL antigua.
 
