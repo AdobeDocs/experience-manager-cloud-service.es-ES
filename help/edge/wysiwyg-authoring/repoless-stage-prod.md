@@ -4,9 +4,9 @@ description: Aprenda a configurar sitios independientes para los entornos de ens
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
+source-git-commit: beda1168323d511cd7b89bb5d0a6eccb742de36f
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '799'
 ht-degree: 2%
 
 ---
@@ -141,3 +141,9 @@ Ahora que ha realizado todos los cambios de configuración necesarios, compruebe
 1. Visite su nuevo sitio de Edge Delivery Services para esa página en `https://main--wknd-prod--<your-github-org>.aem.page`.
 
 Si ve los cambios realizados, la configuración del sitio de producción independiente funciona correctamente.
+
+## Uso {#usage}
+
+Una vez que haya configurado el proyecto con entornos de ensayo y producción reutilizados, puede administrar el código para ellos de forma independiente. El diagrama siguiente ilustra la relación del contenido en los distintos entornos de AEM, los sitios de Edge Delivery Services y los repositorios de GitHub.
+
+![Ilustración de entornos de AEM y entornos de producción/ensayo de reprocesamiento](assets/repoless/aem-edge-github.png)
