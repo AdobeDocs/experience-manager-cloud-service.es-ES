@@ -3,9 +3,9 @@ title: API de envío
 description: Aprenda a utilizar las API de entrega.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 2ec0b4125aa0990b6e022350a1f861fe394e6b1f
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '634'
 ht-degree: 11%
 
 ---
@@ -75,11 +75,7 @@ La siguiente tabla ilustra el uso de las distintas API de envío disponibles:
 | [Contenedor del reproductor para el recurso de vídeo](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | Devuelve el contenedor del reproductor para el recurso de vídeo. Puede incrustar el reproductor en un elemento de HTML de iframe y reproducir el vídeo. |
 | [Manifiestos de reproducción en el formato de salida seleccionado](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | Devuelve el archivo de manifiesto de reproducción del recurso de vídeo especificado en el formato de salida seleccionado. Debe crear un reproductor personalizado capaz de flujo adaptable a través de protocolos HLS o DASH para poder extraer el archivo de manifiesto de reproducción y reproducir el vídeo. |
 
-
->[!NOTE]
->
-* Hay [ajustes preestablecidos de imagen, imágenes inteligentes y modificadores de imagen adicionales](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) disponibles como característica de disponibilidad limitada. Para obtener acceso, [cree y envíe un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
-* El recorte inteligente no está disponible con [Assets Prime](/help/assets/assets-ultimate-overview.md).
+Para obtener información sobre las ofertas disponibles de Dynamic Media y sus capacidades, consulte [Dynamic Media Prime y Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md).
 
 ## Extremos de API de envío {#delivery-apis-endpoint}
 
