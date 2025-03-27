@@ -1,20 +1,18 @@
 ---
-title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: Notas de la versión 2025.2.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notas de la versión 2025.2.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 1964d4a40d1272baf661473641381ace900407d1
+source-git-commit: 43a9b29132aca8f5231634b845c55538b59f5ee4
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 76%
+source-wordcount: '1500'
+ht-degree: 100%
 
 ---
 
-# Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notas de la versión 2025.2.0 para [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-En la siguiente sección se describen las notas de la versión de la funcionalidad actual (la más reciente) de [!DNL Experience Manager] as a Cloud Service.
+En la siguiente sección se describen las notas de la versión de funciones de la versión 2025.2.0 de [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ En la siguiente sección se describen las notas de la versión de la funcionalid
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de la versión de [!DNL Adobe Experience Manager] como versión de funcionalidad actual (2025.3.0) de [!DNL Cloud Service] es el viernes, 27 de marzo de 2025. La próxima versión con funcionalidades (2025.4.0) está planificada para el viernes, 24 de abril de 2025.
+La fecha de la versión de [!DNL Adobe Experience Manager] como versión de funcionalidad actual (2025.2.0) de [!DNL Cloud Service] es el 4 de marzo de 2025. La próxima versión de funcionalidad (2025.3.0) está planificada para el 27 de marzo de 2025.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
@@ -44,20 +42,59 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 -->
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### Nuevas funciones de AEM Sites {#new-features-sites}
+
+**Etiquetado automático de los fragmentos de contenido**
+
+Al crear fragmentos de contenido, ahora es posible heredar automáticamente las etiquetas asignadas al modelo de contenido. Esto permite realizar una potente clasificación automática del contenido almacenado en los fragmentos de contenido.
+
+**Compatibilidad con UUID de los fragmentos de contenido**
+
+La compatibilidad con UUID de los fragmentos de contenido ya tiene disponibilidad general (GA). La nueva funcionalidad no altera el comportamiento basado en las rutas de las operaciones dentro de AEM como mover, cambiar el nombre y desplegar. Las rutas se ajustan automáticamente, pero puede hacer que el consumo externo de fragmentos de contenido sea más fácil y estable, especialmente cuando se utilizan consultas GraphQL que se dirigen directamente a fragmentos individuales con consultas ByPath. Estas consultas pueden interrumpirse si cambia una ruta de fragmento. Al utilizar el nuevo tipo de consulta ById, la consulta ahora permanece estable, ya que el UUID de un fragmento no cambia en los casos en que sí lo hacen las rutas.
+
+**Compatibilidad de Dynamic Media con OpenAPI en el Editor de fragmentos de contenido y GraphQL**
+
+Los recursos que se almacenan en programas de AEM as a Cloud Service diferentes a los fragmentos de contenido y que se habilitan con la nueva funcionalidad Dynamic Media con OpenAPI, ahora se pueden utilizar en los fragmentos de contenido. El selector de imágenes en el nuevo Editor de fragmentos de contenido ahora permite seleccionar repositorios &quot;remotos&quot; como fuente para los recursos de imagen a los que se hace referencia en el fragmento. Además, en el envío de estos fragmentos de contenido mediante AEM GraphQL, la respuesta JSON ahora incluye propiedades necesarias para los recursos remotos (assetId, repositoryId), de modo que las aplicaciones cliente puedan crear direcciones URL de Dynamic Media con OpenAPI para recuperar la imagen.
+
+**Despliegue del editor de fragmentos de contenido**
+
+Seguiremos habilitando el nuevo editor de fragmentos de contenido basado en la IU de Spectrum en AEM as a Cloud Service. Después de convertirse en el valor predeterminado para todos los entornos de Cloud Service Developer en noviembre de 2024, se establecerá como valor predeterminado para todos los entornos de ensayo el 1 de abril de 2025, y para todos los entornos de producción el 1 de mayo de 2025. En todos los casos, los usuarios seguirán teniendo la opción de volver al editor de fragmentos de contenido tradicional en la IU táctil de AEM.
+
+**API HTTP de traducción**
+
+La API REST HTTP de traducción de AEM que ha estado en modo de primer usuario durante un tiempo ahora ya tiene disponibilidad general (GA). La documentación se encuentra [aquí](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/). La API permite automatizar los pasos necesarios en el proceso de administración de traducciones para el contenido en AEM.
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nuevas funciones en Dynamic Media {#new-features-dynamic-media}
+### Nuevas funciones de AEM Assets {#new-features-assets}
 
-**Compatibilidad con formularios largos para vídeos entregados mediante Dynamic Media con API abierta**
+**Nueva estructura de empaquetado de Dynamic Media**
 
-Dynamic Media con OpenAPI ahora es compatible con vídeos de formularios largos. Los vídeos de formato largo pueden admitir hasta 50 GB y 2 horas.
+Ya está disponible una estructura de empaquetado de Dynamic Media actualizada para cumplir mejor con las expectativas del mercado y facilitar el seguimiento. La nueva estructura de empaquetado incluye lo siguiente:
 
-### Nuevas funcionalidades de la vista Recursos {#new-features-assets-view}
+* Dynamic Media Prime, que incluye Dynamic Media con OpanAPIs y vídeo para mejorar el envío.
 
+* Dynamic Media Ultimate añade funciones de envío y transformación para satisfacer requisitos de uso más exigentes.
 
-**Compatibilidad con etiquetas raíz**
+Debe tener Assets as a Cloud Service Prime o Ultimate para beneficiarse de la nueva estructura de empaquetado.
 
-Ahora, AEM Assets admite la asignación de una propiedad de etiqueta en un formulario de metadatos a metadatos personalizados. Además, como administrador, puede restringir la disponibilidad de etiquetas a los usuarios restringiendo el acceso a una etiqueta raíz específica y a las etiquetas que existen bajo la etiqueta raíz.
+**Subtítulos de vídeo generados por IA**
+
+Los subtítulos de vídeo generados por IA en Adobe Dynamic Media utilizan la inteligencia artificial para generar subtítulos automáticamente para el contenido de vídeo. Esta función se ha diseñado para mejorar la accesibilidad y la experiencia del usuario gracias a la provisión de subtítulos precisos. Los subtítulos se generan a partir del audio original, de cualquier pista de audio adicional o de subtítulos adicionales proporcionados en la pestaña &quot;Subtítulos y audio&quot; de la página de propiedades del vídeo. Con compatibilidad con más de 60 idiomas, los subtítulos se pueden revisar y previsualizar antes de publicar el vídeo.
+
+**Filtros de búsqueda personalizados**
+
+Los filtros de búsqueda personalizados mejoran la precisión y la eficacia de la búsqueda de información relevante. Permiten realizar búsquedas más adaptadas y filtrar los datos según atributos específicos como la marca, el producto, la categoría u otros identificadores clave. Esto mejora la organización, reduce el tiempo dedicado a buscar entre los resultados irrelevantes y permite tomar decisiones más rápidamente. También admiten la escalabilidad, ya que los conjuntos de datos grandes son más fáciles de navegar y analizar.
+
+![filtros de búsqueda personalizados](/help/assets/assets/custom-search-filters.png)
+
+### Funciones de acceso rápido de Content Hub {#early-access-content-hub}
+
+Content Hub ahora le permite ver y descargar representaciones dinámicas y de recorte inteligente, además de las representaciones estáticas existentes. Como administrador de Content Hub, también puede configurar la disponibilidad de estas representaciones para los usuarios mediante la interfaz de usuario de configuración.
+
+![representaciones dinámicas](/help/assets/assets/download-single-asset-renditions-dynamic.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -87,15 +124,7 @@ El **entorno de ejecución** de Java 21 de mayor rendimiento se implementará au
 
 >[!IMPORTANT]
 >
-> Java 21 **runtime** se implementó en sus entornos de desarrollo/RDE en febrero; se aplicará a sus entornos de ensayo/producción el **28 y 29 de abril**. Tenga en cuenta que **crear código** con Java 21 (o Java 17) es independiente del tiempo de ejecución de Java 21; debe realizar explícitamente los pasos para generar código con Java 21 (o Java 17).
-
-### Registro y reenvío de AEM a más destinos: programa Beta {#log-forwarding-earlyadopter}
-
-Ahora en la versión beta, puede reenviar los registros de AEM a New Relic (mediante HTTPS), Amazon S3 y Sumo Logic. Tenga en cuenta que se admiten los registros de AEM (incluido Apache/Dispatcher), pero no los de CDN. Enviar correo electrónico a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para obtener acceso.
-
-Aunque los registros se pueden descargar desde Cloud Manager, muchas organizaciones consideran beneficioso transmitir esos registros a un destino de registro preferido. AEM ya admite (GA) el reenvío de registros de AEM y CDN a Azure Blob Storage, Datadog, HTTPS, Elasticsearch (y OpenSearch) y Splunk. Esta función se configura en forma de autoservicio y se implementa mediante la canalización de configuración.
-
-Obtenga más información en la [documentación de reenvío de registros](/help/implementing/developing/introduction/log-forwarding.md).
+> En febrero, Java 21 **runtime** se implementó en entornos para desarrolladores/RDE (aparte de los ya creados con Java 17 o 21, que ya tienen Java 21 runtime). Java 21 se aplicará a los entornos de ensayo/producción en abril.
 
 ### Edge Computing: solicitud de comentarios {#edge-computing-feedback}
 
