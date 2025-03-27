@@ -5,10 +5,10 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 2c74a3a42dd21e2eaf71c1922931d5fa5149f7c5
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 100%
+source-wordcount: '791'
+ht-degree: 89%
 
 ---
 
@@ -44,6 +44,13 @@ Algunas referencias tienen tipos de datos específicos (por ejemplo, Referencias
 
 Las referencias de contenido hacen precisamente eso: permiten hacer referencia a cualquier otro contenido. Se abre un explorador que permite seleccionar el elemento de contenido.
 
+Existen dos tipos:
+
+* **Referencia de contenido**
+   * especifica la ruta del recurso al que se hace referencia
+* **Referencia de contenido (UUID)**
+   * En el editor, la referencia especifica la ruta al recurso al que se hace referencia; internamente, la referencia se mantiene como un ID único universal (UUID) que hace referencia al recurso
+
 ## Referencias de recursos/medios {#assets-media-references}
 
 Se puede hacer referencia a los recursos (por ejemplo, imágenes o medios) dentro de un bloque de texto utilizando la opción **Insertar recurso**. Se abre un explorador que permite seleccionar el recurso.
@@ -75,6 +82,13 @@ Y esto es solo para empezar. Según la complejidad, un premio podría ser espec�
 La representación de estas interrelaciones se puede lograr con Referencias a fragmentos, tal como las entienden el usuario (el autor) y las aplicaciones sin encabezado.
 
 Como autor, no es responsable de definir estas relaciones (lo hace el arquitecto de contenido al crear el modelo de fragmento de contenido), pero necesita saber cómo reconocer y editar las referencias.
+
+Hay dos tipos:
+
+* **Referencia a fragmento**
+   * especifica la ruta del recurso al que se hace referencia
+* **Referencia de fragmento (UUID)**
+   * En el editor, la referencia especifica la ruta al recurso al que se hace referencia; internamente, la referencia se mantiene como un ID único universal (UUID) que hace referencia al recurso
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
