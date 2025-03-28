@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 6d729c8e7f84dccce9c11f1ca13553763d0547f8
 workflow-type: tm+mt
-source-wordcount: '1932'
-ht-degree: 85%
+source-wordcount: '2124'
+ht-degree: 79%
 
 ---
 
@@ -17,16 +17,16 @@ ht-degree: 85%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
         </td>
         <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integración de AEM Assets con Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidad de la IU</b></a>
         </td>
           <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
@@ -217,6 +217,39 @@ Siga los pasos a continuación para utilizar el componente de vínculo en el for
    * Hacer clic en el ![icono de copia](assets/do-not-localize/copy.svg) para copiar la URL.
    * Hacer clic en el ![icono de edición](assets/do-not-localize/edit.svg) para editar la URL.
 1. Haga clic en **[!UICONTROL Guardar]** para guardar los cambios.
+
+
+### Uso del componente Etiquetas en el formulario de metadatos {#tag-component-metadata-form}
+
+El elemento raíz representa la estructura de árbol de las etiquetas que puede asociar con los recursos, lo que ayuda a identificar el recurso en función de la etiqueta asignada. Además, puede restringir el acceso de una taxonomía específica al configurar el formulario de metadatos en el editor de metadatos.
+
+#### Configuración del componente Etiquetas {#tags-component-configuration}
+
+Configure el componente etiquetas ejecutando los siguientes pasos:
+
+1. Vaya al editor de metadatos, desplácese hasta **[!UICONTROL Etiquetas]** y colóquelo en el lienzo.
+1. Cambie el nombre del componente en el lienzo. Para ello, vaya a **[!UICONTROL Label]** bajo la [!UICONTROL propiedad Metadata] en el panel de configuración y agregue el texto para su identificación.
+1. En la [!UICONTROL propiedad de metadatos] del panel de configuración, busque la propiedad de metadatos que desee asignar al componente.
+1. Haga clic en **[!UICONTROL Restringir a una taxonomía específica]** para restringir la ruta raíz de la taxonomía. Para ello, examine las etiquetas y elija la taxonomía de la ruta concreta.
+1. Haga clic en **[!UICONTROL Guardar]** para guardar los cambios.
+
+   ![Configuración de etiquetas raíz](assets/root-tag-config.png)
+
+1. [Asignar formulario de metadatos a las carpetas](#assign-metadata-form-folder).
+
+<!--
+#### Mapping between assets and taxonomy {#asset-taxonomy-mapping}
+
+See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the steps below to perform mapping between folder and taxonomy:
+
+1. Go back to the Settings and click **[!UICONTROL Metadata forms]** 
+1. Select a Metadata form that needs mapping. 
+1. Click **[!UICONTROL Assign to folder(s)]**. **[!UICONTROL Select Folder(s)]** screen appears. 
+1. Navigate to the folder that you want to assign to the metadata form. You can select multiple folders.
+1. Click **[!UICONTROL Assign]**.
+-->
+
+Para ver las etiquetas raíz configuradas, vaya a la página de detalles del recurso, donde se realiza la asignación entre el formulario de metadatos y las etiquetas raíz.
 
 ## Siguientes pasos {#next-steps}
 
