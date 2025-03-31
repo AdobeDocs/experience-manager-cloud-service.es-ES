@@ -2,9 +2,9 @@
 title: Migración de grupos
 description: Información general sobre la migración de grupos en AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: c3a13f75757a478996918c6868a172d75158aafe
+source-git-commit: 50c8dd725e20cbd372a7d7858fc67b0f53a8d6d4
 workflow-type: tm+mt
-source-wordcount: '1914'
+source-wordcount: '1921'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ La mayoría de los grupos migrados están configurados para ser administrados po
 
 Tenga en cuenta que los grupos migrados ya no se consideran &quot;grupos locales&quot; de AEM; son grupos listos para IMS en AEM, aunque es posible que aún no existan en IMS.  Se deben volver a crear por separado en IMS para que se puedan sincronizar entre AEM e IMS.  Los grupos se pueden crear en IMS mediante Admin Console, entre otros métodos, de forma individual o en lote.  Consulte [Administrar grupos de usuarios](https://helpx.adobe.com/es/enterprise/using/user-groups.html) para obtener más información sobre cómo crear grupos de forma individual o en masa en Admin Console.
 
-La excepción a esta configuración de IMS es con grupos creados por colecciones de Assets. Cuando se crea una colección en AEM, se crean grupos para acceder a ella; estos grupos se migran al sistema en la nube, pero no se configuran para que los administre IMS.  Para agregar usuarios de IMS a estos grupos, deben agregarse en la página Propiedades del grupo de la interfaz de usuario de Assets, ya sea de forma individual o colectiva como parte de otro grupo de IMS.
+La excepción a esta configuración de IMS es con grupos creados por colecciones y carpetas privadas de Assets. Cuando se crea una colección o una carpeta privada en AEM, se crean grupos para acceder a ese contenido; dichos grupos se migran al sistema en la nube, pero no se configuran para que los administre IMS.  Para agregar usuarios de IMS a estos grupos, deben agregarse en la página Propiedades del grupo de la interfaz de usuario de Assets, ya sea de forma individual o colectiva como parte de otro grupo de IMS.
 
 
 ## Excluirse de la migración de grupo {#group-migration-option}
