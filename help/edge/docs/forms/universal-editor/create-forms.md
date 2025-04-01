@@ -9,7 +9,7 @@ exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: c81698c2d424d39688d1c9fad6c085223f5854a5
 workflow-type: tm+mt
 source-wordcount: '1080'
-ht-degree: 67%
+ht-degree: 83%
 
 ---
 
@@ -54,11 +54,11 @@ Con el editor universal, puede crear fácilmente formularios independientes, int
 
 
    Al seleccionar una plantilla basada en Edge Delivery Services, se habilita el botón **[!UICONTROL Crear]**.
-1. (Opcional) En las pestañas **[!UICONTROL Source de datos]** o **[!UICONTROL Envío]**, puede seleccionar un origen de datos o realizar una acción de envío.
+1. (Opcional) En las pestañas **[!UICONTROL Fuente de datos]** o **[!UICONTROL Envío]**, puede seleccionar una fuente de datos o una acción de envío.
 1. (Opcional) En la pestaña **[!UICONTROL Envío]**, puede especificar una fecha de publicación o cancelación de publicación para un formulario.
 
-1. Haga clic en **[!UICONTROL Crear]** y aparecerá el asistente **Crear formulario**.
-1. Especifique **Name** y **Title**.
+1. Haga clic en **[!UICONTROL Crear]** y aparece el asistente **Crear formulario**.
+1. Especifique el **Nombre** y **Título**.
 1. Especifique la **URL de GitHub**. Por ejemplo, si el repositorio de GitHub se llama `edsforms` y está ubicado en la cuenta `wkndforms`, la URL es la siguiente:
    `https://github.com/wkndforms/edsforms`
 1. Haga clic en **[!UICONTROL Crear]**.
@@ -162,7 +162,7 @@ Puede realizar varias operaciones en el formulario mediante la interfaz de usuar
   </tr>
   <tr>
    <td><p>Editar</p> </td>
-   <td><p>Abre el formulario en modo de edición.<br /> <br /> </p> </td>
+   <td><p>Abre el formulario en modo de edición.<br /> <br /> </p> </td>
   </tr>
     <tr>
    <td><p>Propiedades</p> </td>
@@ -173,15 +173,15 @@ Puede realizar varias operaciones en el formulario mediante la interfaz de usuar
   </tr>
    <tr>
    <td><p>Vista previa</p> </td>
-   <td><p>Proporciona opciones para obtener una vista previa del formulario como HTML o realizar una vista previa personalizada combinando los datos de un archivo XML con el formulario. <br /> </p> </td>
+   <td><p>Proporciona opciones para previsualizar el formulario como HTML u obtener una vista previa personalizada combinando los datos de un archivo XML con el formulario.<br /> </p> </td>
   </tr>
   <tr>
    <td><p>Descargar</p> </td>
-   <td><p>Descarga el formulario seleccionado.<br /> <br /> </p> </td>
+   <td><p>Descarga el formulario seleccionado.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Iniciar revisión/Administrar revisión</p> </td>
-   <td><p>Permite iniciar y administrar una revisión del formulario seleccionado.<br /> <br /> </p> </td>
+   <td><p>Iniciar revisión y Administrar revisión</p> </td>
+   <td><p>Permite iniciar y administrar una revisión del formulario seleccionado. <br /> <br /> </p> </td>
   </tr>
   <!--<tr>
    <td><p>Add Dictionary</p> </td>
@@ -189,15 +189,15 @@ Puede realizar varias operaciones en el formulario mediante la interfaz de usuar
   </tr>-->
   <tr>
    <td><p>Publicar o cancelar la publicación</p> </td>
-   <td><p>Publica/cancela la publicación del formulario seleccionado.<br /> <br /> </p> </td>
+   <td><p>Publica o cancela la publicación del formulario seleccionado.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Eliminar</p> </td>
-   <td><p>Elimina el formulario seleccionado.<br /> <br /> </p> </td>
+   <td><p>Elimina el formulario seleccionado.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Comparar</p> </td>
-   <td><p>Compara dos formularios diferentes con fines de vista previa.<br /> <br /> </p> </td>
+   <td><p>Compara dos formularios diferentes para obtener una vista previa.<br /> <br /> </p> </td>
   </tr>
  </tbody>
 </table>
