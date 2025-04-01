@@ -4,10 +4,10 @@ description: Notas de la versión 2025.1.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: 3b6b11a325246fe5e86ae37e95351d7701716491
+source-git-commit: 7cc979148f6699cfbd4aaae228beb83527709fa1
 workflow-type: tm+mt
-source-wordcount: '1716'
-ht-degree: 92%
+source-wordcount: '1740'
+ht-degree: 93%
 
 ---
 
@@ -33,15 +33,11 @@ La fecha de la versión de [!DNL Adobe Experience Manager] como versión de func
 
 Puede encontrar las últimas notas de la versión de mantenimiento [aquí](/help/release-notes/maintenance/latest.md).
 
-<!-- 
+## Vídeo de la versión {#release-video}
 
-## Release Video {#release-video}
+Eche un vistazo al vídeo Información general sobre la versión de enero de 2025 para ver un resumen de las funciones añadidas en la versión 2025.1.0:
 
-Have a look at the January 2025 Release Overview video for a summary of the features added in the 2025.1.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3456072?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
