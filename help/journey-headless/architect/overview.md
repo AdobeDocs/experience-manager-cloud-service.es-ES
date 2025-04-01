@@ -5,7 +5,7 @@ exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 0c1d930f3fcffc27b6564449db3ff1968b077720
 workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 100%
@@ -15,8 +15,6 @@ ht-degree: 100%
 # Recorrido para arquitectos de contenido sin encabezado de AEM {#aem-headless-content-architect-journey}
 
 Comience aquí para obtener un recorrido guiado a través de las funciones potentes y flexibles del contenido de AEM sin encabezado, sus funcionalidades y cómo usarlas en su primer proyecto sin encabezado.
-
-{{headless-trials-promotion}}
 
 ## Introducción {#introduction}
 
