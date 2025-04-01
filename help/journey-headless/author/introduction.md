@@ -5,7 +5,7 @@ exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: cc2e73da123d3e0676a8e175a18c1dc0bdff1daa
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 100%
@@ -15,8 +15,6 @@ ht-degree: 100%
 # Creación para AEM como un CMS sin encabezado: una introducción {#author-headless-introduction}
 
 En esta parte del [recorrido del autor de contenido sin encabezado de AEM](overview.md), puede aprender los conceptos (básicos) y la terminología necesaria para comprender la creación de contenido cuando utilice Adobe Experience Manager (AEM) as a Cloud Service como un CMS sin encabezado. Esto implica la estructuración y la creación de contenidos para la entrega de contenidos sin encabezado.
-
-{{headless-trials-promotion}}
 
 ## Objetivo {#objective}
 
