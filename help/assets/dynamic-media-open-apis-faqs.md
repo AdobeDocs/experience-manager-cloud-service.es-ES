@@ -3,9 +3,9 @@ title: Preguntas frecuentes sobre Dynamic Media con funciones de OpenAPI
 description: Preguntas frecuentes sobre Dynamic Media con funciones de OpenAPI
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1600'
 ht-degree: 98%
 
 ---
@@ -15,16 +15,16 @@ ht-degree: 98%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
         </td>
         <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integración de AEM Assets con Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidad de la IU</b></a>
         </td>
           <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
@@ -136,6 +136,12 @@ Para obtener más información, consulte [Restringir el acceso a los recursos en
 +++**¿Cómo puede obtener permisos para editar el estado de aprobación de un recurso?**
 
 Como usuario de DAM, es posible que no tenga permisos para [aprobar recursos](approve-assets.md#approve-assets). Para obtener permisos para editar el estado de aprobación de un recurso, los administradores pueden editar el esquema de metadatos predeterminado o cualquier otro esquema de metadatos aplicado a la carpeta de recursos para proporcionar permisos de edición en el campo **[!UICONTROL Estado de revisión]**. Para obtener más información, consulte [cómo deshabilitar la edición para el campo Estado de revisión](approve-assets.md#configuration).
+
++++
+
++++**¿Cuál es el tamaño de archivo admitido para los vídeos?**
+
+Dynamic Media con funciones de OpenAPI admite vídeos de formularios largos. Los vídeos pueden admitir hasta 50 GB y 2 horas.
 
 +++
 

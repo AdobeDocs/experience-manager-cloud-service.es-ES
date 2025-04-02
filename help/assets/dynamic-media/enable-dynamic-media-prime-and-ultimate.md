@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo habilitar  [!DNL Dynamic Media] of
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 2%
+source-wordcount: '1077'
+ht-degree: 4%
 
 ---
 
@@ -16,16 +16,16 @@ ht-degree: 2%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
         </td>
         <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integración de AEM Assets con Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidad de la IU</b></a>
         </td>
         <td>
             <a href="/help/assets/search-best-practices.md"><b>Prácticas recomendadas de búsqueda</b></a>
@@ -53,7 +53,7 @@ Este artículo proporciona un flujo de trabajo completo para habilitar las ofert
 
 ## Habilitar [!DNL Dynamic Media] Ultimate {#enable-dynamic-media-ultimate}
 
-Ejecute los siguientes pasos en su entorno de servicio en la nube para habilitar [!DNL Dynamic Media] Ultimate:
+Para habilitar [!DNL Dynamic Media] Ultimate:
 
 1. [Activar [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi)
 1. [Configurar [!DNL Dynamic Media] soluciones](#configure-dynamic-media-solutions)
@@ -186,11 +186,14 @@ Si falla la creación de la empresa [!DNL Dynamic Media], ejecute los siguientes
 
 1. Si **[!UICONTROL Estado]** está pendiente, comunica el problema al equipo de atención al cliente para que lo resuelva.
 
-   ![estado pendiente](/help/assets/assets/company-creation-pending-status.png){width="350" align="left"}
+
+   ![estado pendiente](/help/assets/assets/company-creation-pending-status.png){width="350" align="center"}
+
+
 
 1. Si **[!UICONTROL Status]** da error, vuelve a intentarlo según el motivo del error.
 
-   ![estado fallido](/help/assets/assets/company-creation-failure-status.png){width="380" align="left"}
+   ![estado fallido](/help/assets/assets/company-creation-failure-status.png){width="380" align="center"}
 
 ### Opcional: Configurar el dominio personalizado en el nivel de envío {#configure-custom-domain-in-delivery-tier}
 
@@ -303,7 +306,7 @@ TBD: Wiki in progress..
 
 ## Habilitar [!DNL Dynamic Media] Prime {#enable-dynamic-media-prime}
 
-Ejecute los siguientes pasos en su entorno de servicio en la nube para habilitar [!DNL Dynamic Media] Prime:
+Para habilitar [!DNL Dynamic Media] Prime:
 
 1. [Activar Dynamic Media con OpenAPI](#activate-dynamic-media-with-openapi)
 1. [Opcional: configurar dominio personalizado en el nivel de entrega](#configure-custom-domain-in-delivery-tier)
