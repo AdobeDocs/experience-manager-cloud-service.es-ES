@@ -5,10 +5,10 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9645ee21bc8c44020d5bb7cdd513d67429353c7d
+source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
 workflow-type: tm+mt
-source-wordcount: '996'
-ht-degree: 4%
+source-wordcount: '1021'
+ht-degree: 6%
 
 ---
 
@@ -40,7 +40,7 @@ Después de [agregar un nombre de dominio personalizado](/help/implementing/clou
 * **Para un certificado SSL administrado por Adobe (DV):**
    * El proceso de validación del dominio se realiza una vez que el dominio personalizado se agrega y verifica en Cloud Manager.
    * Ahora, debe [agregar un certificado SSL administrado por Adobe (DV)](#add-adobe-managed-ssl-cert).
-Una vez agregado a Cloud Manager, espere a que el Adobe emita e instale el certificado SSL de DV en su nombre.
+Una vez agregado a Cloud Manager, espere a que Adobe emita e instale el certificado SSL de DV en su nombre.
    * Cuando el certificado esté activo, el dominio personalizado estará listo para usarse.
 
 * **Para un certificado SSL administrado por el cliente (OV/EV):**
@@ -55,11 +55,11 @@ Consulte también [Introducción a los certificados SSL](/help/implementing/clou
 
 ## Añadir un certificado SSL administrado por Adobe (DV) {#add-adobe-managed-ssl-cert}
 
-¿Necesita ayuda para elegir si desea utilizar un certificado SSL administrado por Adobe (recomendado) o un certificado SSL administrado por el cliente con su dominio? Ver [Elección del certificado SSL que se agregará](#which-ssl-to-add)
+¿Necesita ayuda para elegir entre utilizar un certificado SSL administrado por Adobe (recomendado) o un certificado SSL administrado por el cliente con su dominio? Ver [Elección del certificado SSL que se agregará](#which-ssl-to-add)
 
 **Para agregar un certificado SSL administrado por Adobe (DV):**
 
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione el programa apropiado.
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione el programa adecuado.
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
 1. En la esquina superior izquierda de la página, haga clic en ![Mostrar icono de menú](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para mostrar el menú lateral.
 
@@ -69,21 +69,21 @@ Consulte también [Introducción a los certificados SSL](/help/implementing/clou
 
 1. Cerca de la esquina superior derecha de la página Certificados SSL, haga clic en **Agregar certificado SSL**.
 
-1. En el cuadro de diálogo **Agregar certificado SSL**, basado en [su caso de uso particular](#which-ssl-to-add), seleccione **Administrado por Adobe (DV)**.
+1. En el cuadro de diálogo **Agregar certificado SSL**, en función de [su caso de uso particular](#which-ssl-to-add), seleccione **Adobe Administrado (DV)**.
 
    ![Agregar certificado DV](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)
 
 1. En el campo **Nombre del certificado**, escriba un nombre que desee asociar con el certificado SSL de DV.
 
 1. En la lista desplegable **Seleccionar dominios**, seleccione uno o varios dominios comprobados que desee asociar con el certificado SSL de DV.
-   * ¿No hay dominios que seleccionar? Si es así, primero debe [agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) y asegurarse de que está comprobado antes de agregar un certificado SSL administrado por Adobe.
+   * ¿No hay dominios que seleccionar? Si es así, primero debe [agregar un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) y asegurarse de que está verificado antes de agregar un certificado SSL administrado por Adobe.
    * Cuando termine de agregar un nombre de dominio personalizado, vuelva a este tema y comience de nuevo en el paso 1.
 
 1. En la esquina inferior derecha del cuadro de diálogo, haga clic en **Guardar**.
 
    Una vez emitido correctamente el certificado SSL, se muestra con una marca de verificación válida de color verde en la tabla **Certificados SSL**.
 
-Ahora ha agregado un certificado SSL de DV administrado de Adobe de trabajo para su proyecto. Este paso suele ser el primero en configurar un nombre de dominio personalizado.
+Ahora ha agregado un certificado SSL de DV administrado de Adobe en funcionamiento para su proyecto. Este paso suele ser el primero en configurar un nombre de dominio personalizado.
 
 Ya está listo para agregar una [configuración de CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md).
 
@@ -91,11 +91,15 @@ Ya está listo para agregar una [configuración de CDN](/help/implementing/cloud
 
 <!-- IF THIS TOPIC GET UPDATED, REMEMBER TO UPDATE THE STEPS ALSO IN THE "MANAGE SSL CERTIFICATES TOPIC TOO -->
 
-¿Necesita ayuda para elegir si desea utilizar un certificado SSL administrado por Adobe (recomendado) o un certificado SSL administrado por el cliente con su dominio? Ver [Elección del certificado SSL que se agregará](#which-ssl-to-add)
+¿Necesita ayuda para elegir entre utilizar un certificado SSL administrado por Adobe (recomendado) o un certificado SSL administrado por el cliente con su dominio? Ver [Elección del certificado SSL que se agregará](#which-ssl-to-add)
+
+>[!IMPORTANT]
+>
+>Al agregar o actualizar un certificado SSL, no incluya el nuevo certificado en la cadena de certificados. Si se incluye, se evita que la carga se complete correctamente.
 
 **Para agregar un certificado SSL administrado por el cliente (OV/EV):**
 
-1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione el programa apropiado.
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione el programa adecuado.
 
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleccione el programa.
 

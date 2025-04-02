@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
+source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 14%
+source-wordcount: '1048'
+ht-degree: 13%
 
 ---
 
@@ -39,6 +39,10 @@ La página **Certificados SSL** proporciona el estado de sus certificados SSL.
 Cuando un certificado administrado por el cliente caduca, cualquier dominio que esté en uso con el certificado caducado ya no funciona. La actualización de los certificados garantiza que el dominio funcionará como se desea.
 
 Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrador de implementación** para completar esta tarea.
+
+>[!IMPORTANT]
+>
+>Al agregar o actualizar un certificado SSL, no incluya el nuevo certificado en la cadena de certificados. Si se incluye, se evita que la carga se complete correctamente.
 
 **Para actualizar un certificado SSL administrado por el cliente caducado:**
 
@@ -78,7 +82,7 @@ A continuación se indican algunas razones por las que puede que desee cambiar e
 * **Evitar confusiones**: si administra varios certificados, un nombre descriptivo y claro puede ayudar a evitar errores, como aplicar el certificado incorrecto al dominio incorrecto.
 * **Cumplimiento y auditoría**: Puede que sea más fácil realizar el seguimiento de los certificados con nombres correctos por motivos de seguridad y auditoría.
 
-**Para cambiar el nombre de un certificado SSL administrado por el Adobe:**
+**Para cambiar el nombre de un certificado SSL administrado por Adobe:**
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione el programa adecuado.
 
@@ -88,7 +92,7 @@ A continuación se indican algunas razones por las que puede que desee cambiar e
 
 1. Bajo el encabezado **Servicios**, haga clic en ![Icono de bloqueo cerrado](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificados SSL**.
 
-1. En la página **Certificados SSL**, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) al final de una fila cuyo certificado SSL **administrado por el Adobe** desea cambiar de nombre.
+1. En la página **Certificados SSL**, haga clic en ![Icono de más](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) al final de una fila cuyo certificado SSL **administrado por Adobe** desea cambiar de nombre.
 
 1. En el menú desplegable, haga clic en **Cambiar nombre**.
 
@@ -99,11 +103,11 @@ A continuación se indican algunas razones por las que puede que desee cambiar e
 
 ## Eliminar un certificado SSL {#deleting-an-ssl-certificate}
 
-La eliminación de los certificados SSL administrados por el Adobe o por el cliente de Cloud Manager es una acción permanente que no se puede deshacer. Como práctica recomendada, Adobe recomienda guardar los archivos SSL localmente antes de eliminarlos en Cloud Manager.
+La eliminación de certificados SSL administrados por Adobe o por el cliente de Cloud Manager es una acción permanente que no se puede deshacer. Como práctica recomendada, Adobe recomienda guardar los archivos SSL localmente antes de eliminarlos en Cloud Manager.
 
 >[!NOTE]
 >
->No puede eliminar un certificado SSL administrado por Adobe que tenga uno o más dominios activos asociados a él. Todos los dominios activos asociados deben eliminarse antes de eliminar el certificado SSL. Consulte [Administrar nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) para obtener más información.
+>No puede eliminar un certificado SSL administrado por Adobe que tenga uno o varios dominios activos asociados a él. Todos los dominios activos asociados deben eliminarse antes de eliminar el certificado SSL. Consulte [Administrar nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) para obtener más información.
 
 Un usuario debe ser miembro del rol **Propietario del negocio** o **Administrador de implementación** para completar esta tarea.
 
