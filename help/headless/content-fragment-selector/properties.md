@@ -2,13 +2,13 @@
 title: Propiedades del selector de fragmentos de contenido de Micro-FrontEnd para Adobe Experience Manager as a Cloud Service
 description: Propiedades para configurar el Selector de fragmentos de contenido de Micro-FrontEnd para buscar, buscar y recuperar fragmentos de contenido de la aplicación.
 role: Admin, User
-source-git-commit: 32e1b3cef768b420f32b70202ddadc80db2b74e8
+exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
+source-git-commit: a3d8961b6006903c42d983c82debb63ce8abe9ad
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '894'
 ht-degree: 3%
 
 ---
-
 
 # Selector de fragmentos de contenido: propiedades relacionadas {#content-fragment-selector-related-properties}
 
@@ -28,10 +28,10 @@ Puede utilizar las siguientes propiedades para personalizar cómo se procesa el 
 | `filters` | FragmentFilter | No | | Filtros que se aplicarán a la lista de fragmentos de contenido. De forma predeterminada, se mostrarán los fragmentos de `/content/dam`. Valor predeterminado: `{ folder: "/content/dam" }` |
 | `isOpen` | booleano | Sí | `false` | Marcar como déclencheur para abrir o cerrar el selector. |
 | `onDismiss` | () => void | Sí | | Función a la que se llamará cuando se seleccione **Dismiss**. |
-| `onSubmit` | ({ contentFragments: `{id: string, path: string}[]`, domainNames: `string[]` }) => void | Función a la que se llamará cuando se use **Select** después de seleccionar uno o más fragmentos de contenido. <br><br>La función recibirá:<br><ul><li> Seleccionar los fragmentos de contenido seleccionados con `id` y `path` campos</li><li>y nombres de dominio relacionados con el id de programa y el id de entorno del repositorio, que tienen el estado `ready` y la publicación `tier`</li></ul><br>Si no hay nombres de dominio, se utilizará la instancia de publicación como dominio de reserva. |
-| `theme` | &quot;light&quot; | &quot;oscuro&quot; | No | | Tema del selector de fragmentos de contenido. El tema predeterminado se establece en el tema del entorno UnifiedShell. |
-| `selectionType` | &quot;single&quot; | &quot;multiple&quot; | No | `single` | Tipo de selección que se puede utilizar para restringir la selección de FragmentSelector. |
-| `dialogSize` | &quot;pantalla completa&quot; | &quot;full screenTakeover&quot; | No | `fullscreen` | Propiedad opcional para controlar el tamaño del diálogo. |
+| `onSubmit` | ({ contentFragments: `{id: string, path: string}[]`, domainNames: `string[]` }) => void | Sí | | Función a la que se llamará cuando se use **Select** después de seleccionar uno o más fragmentos de contenido. <br><br>La función recibirá:<br><ul><li> Seleccionar los fragmentos de contenido seleccionados con `id` y `path` campos</li><li>y nombres de dominio relacionados con el id de programa y el id de entorno del repositorio, que tienen el estado `ready` y la publicación `tier`</li></ul><br>Si no hay nombres de dominio, se utilizará la instancia de publicación como dominio de reserva. |
+| `theme` | &quot;claro&quot; u &quot;oscuro&quot; | No | | Tema del selector de fragmentos de contenido. El tema predeterminado se establece en el tema del entorno UnifiedShell. |
+| `selectionType` | &quot;single&quot; o &quot;multiple&quot; | No | `single` | Tipo de selección que se puede utilizar para restringir la selección de FragmentSelector. |
+| `dialogSize` | &quot;fullscreen&quot; o &quot;fullscreenTakeover&quot; | No | `fullscreen` | Propiedad opcional para controlar el tamaño del diálogo. |
 | `waitForImsToken` | booleano | No | `false` | Indica si el selector de fragmentos de contenido se representa en el contexto del flujo SUSI y debe esperar a que `imsToken` esté listo. |
 | `imsAuthInfo` | ImsAuthInfo | No | | Objeto que contiene la información de autenticación IMS del usuario que ha iniciado sesión. |
 | `runningInUnifiedShell` | booleano | No | | Indica si el Selector de fragmentos de contenido se está ejecutando en UnifiedShell o de forma independiente. |
