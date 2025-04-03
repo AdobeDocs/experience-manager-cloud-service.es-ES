@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo añadir un repositorio administrad
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 4667a00a156b3a2f66ed87c64763f93397aad946
+source-git-commit: cc307e8fbe71b65e25c7184b0b720708bcb6405f
 workflow-type: tm+mt
-source-wordcount: '1890'
-ht-degree: 27%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -206,16 +206,9 @@ Se aplican los siguientes comportamientos:
 * Si los déclencheur de validación de PR o canalización no funcionan, compruebe que el secreto de webhook esté actualizado tanto en Cloud Manager como en el proveedor de Git.
 
 
-
-
-
-
-
-
-## Limitaciones
+## Limitación
 
 * Los repositorios externos no se pueden vincular a las canalizaciones de configuración.
-* Las canalizaciones con repositorios externos (no alojados en GitHub) y el déclencheur &quot;Cambios en Git&quot; no se inician automáticamente. Solo se pueden iniciar manualmente.
 
 
 <!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
