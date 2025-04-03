@@ -6,22 +6,24 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: c81698c2d424d39688d1c9fad6c085223f5854a5
+source-git-commit: b0cedf31a8759cdf403e1e7d6aadcab3bba03bab
 workflow-type: tm+mt
-source-wordcount: '1080'
-ht-degree: 83%
+source-wordcount: '1060'
+ht-degree: 78%
 
 ---
 
-# Guía paso a paso para crear formularios independientes en el editor universal
+# Crear Forms adaptable mediante el editor universal
 
 <span class="preview"> Esta función está disponible a través del programa de acceso rápido. Para solicitar acceso, envíe un correo electrónico con el nombre de su organización de GitHub y el nombre del repositorio desde su dirección oficial a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Por ejemplo, si la URL del repositorio es https://github.com/adobe/abc, el nombre de la organización es “adobe” y el nombre del repositorio es “abc”.</span>
 
-Este artículo le guía a través del proceso de creación de los formularios independientes con el Editor universal seleccionando una plantilla basada en Edge Delivery Services en el Asistente para la creación de formularios. También puede publicar los formularios creados con el editor universal en Edge Delivery Services de AEM.
+Universal Editor es un editor visual versátil que proporciona una experiencia de lo que se ve es lo que se obtiene (WYSIWYG) para editar formularios. Simplifica la creación de formularios adaptables y fáciles de usar con una función de arrastrar y soltar, que utiliza componentes de Forms adaptables disponibles como cuadros de texto, botones de opción y casillas de verificación.
 
-AEM Forms proporciona un bloque, conocido como bloque de formularios adaptables, para ayudarle a crear fácilmente formularios de Edge Delivery Services para capturar y almacenar los datos. Puede [crear un nuevo proyecto de AEM preconfigurado con el bloque de formularios adaptables](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) o [añadir el bloque de formularios adaptables a un proyecto de sitio de AEM existente](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
+AEM proporciona un bloque, conocido como el bloque de Forms adaptable, para ayudarle a crear fácilmente Edge Delivery Services Forms para capturar y almacenar datos mediante el Editor universal. Puede [crear un nuevo proyecto de AEM preconfigurado con el bloque de formularios adaptables](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) o [añadir el bloque de formularios adaptables a un proyecto de sitio de AEM existente](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
-![Flujo de trabajo del repositorio de Github](/help/edge/assets/repo-workflow.png){width=50%}
+![Flujo de trabajo de repositorio de Github](/help/edge/assets/repo-workflow.png)
+
+Este artículo le guía a través del proceso de creación de los formularios independientes con el Editor universal seleccionando una plantilla basada en Edge Delivery Services en el Asistente para la creación de formularios.
 
 ## Requisitos previos
 
@@ -32,7 +34,7 @@ AEM Forms proporciona un bloque, conocido como bloque de formularios adaptables,
 
 ## Trabajar con formularios en el editor universal
 
-Con el editor universal, puede crear fácilmente formularios independientes, interactivos y adaptables utilizando componentes ya preparados, como campos de texto, casillas de verificación y botones de opción. Ofrece potentes funciones, como reglas dinámicas, integración de datos sin problemas y opciones de personalización, que le permiten crear formularios según sus necesidades exactas. También puede publicar los formularios en AEM Edge Delivery Services. Puede realizar las siguientes acciones en los formularios en el editor universal:
+Con el editor universal, puede crear fácilmente formularios interactivos e interactivos independientes. Puede realizar las siguientes acciones en los formularios en el editor universal:
 * [Creación de un formulario](#create-a-form)
 * [Crear un formulario](#author-a-form)
 * [Publicación de un formulario](#publish-a-form)
@@ -93,7 +95,7 @@ Con el editor universal, puede crear fácilmente formularios independientes, int
 
    ![Formulario “Contáctenos”](/help/edge/assets/contact-us.png)
 
-   Ahora puede [configurar y personalizar las acciones de envío de formularios](/help/edge/docs/forms/universal-editor/submit-action.md).
+   Ahora puede [configurar y personalizar las acciones de envío para los formularios](/help/edge/docs/forms/universal-editor/submit-action.md).
 
 
 <!--
