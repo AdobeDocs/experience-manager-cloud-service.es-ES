@@ -4,10 +4,10 @@ description: Aprenda cómo los perfiles de equipo y de producto de AEM as a Clou
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: c8534ddf84998377ee63575403417165ccec2dbd
+source-git-commit: 86bb2e020a003fd418f8b1cf7bdf55987a2eaf3d
 workflow-type: tm+mt
-source-wordcount: '2059'
-ht-degree: 88%
+source-wordcount: '2062'
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ AEM as a Cloud Service es una oferta totalmente nativa de la nube que ofrece AEM
 
 >[!NOTE]
 >
-> Algunas de las instancias y perfiles de producto descritos en este artículo pueden aparecer solo para entornos recién creados. Un mecanismo futuro también permitirá actualizar los entornos existentes.
+> Algunas de las instancias y perfiles de producto descritos en este artículo pueden aparecer solo para entornos recién creados. Consulte la sección [Agregar perfiles de producto para entornos existentes](#adding-product-profiles-for-existing-environments) para ver cómo modernizar los entornos.
 
 Cuando Adobe procesa las licencias de una solución de AEM por primera vez, aparecen dos instancias de producto en Adobe Admin Console, en el producto de Adobe Experience Manager as a Cloud Service:
 
@@ -278,23 +278,23 @@ La siguiente imagen representa los grupos de AEM que reflejan el nivel de creaci
 
 ### Adición de perfiles de producto para entornos existentes {#adding-product-profiles-for-existing-environments}
 
-Es posible que a los entornos creados antes de principios de noviembre de 2024 les falte la instancia de producto de nivel de organización descrita en las secciones anteriores, así como ciertos perfiles de producto. A los perfiles de producto existentes también les faltarán los conmutadores de servicio. Se recomienda actualizar esos perfiles de producto, un requisito previo para acceder a algunas API futuras.
+Es posible que a los entornos creados antes de principios de abril de 2024 les falte la instancia de producto de nivel de organización descrita en las secciones anteriores, así como ciertos perfiles de producto. A los perfiles de producto existentes también les faltarán los conmutadores de servicio. Se recomienda actualizar esos perfiles de producto, lo que es un requisito previo para acceder a algunas API futuras.
 
-Si uno o más entornos de un programa necesitan que se actualicen sus perfiles de producto, Cloud Manager mostrará el aviso a continuación. AEM Tenga en cuenta que un entorno debe estar en la última versión de la aplicación para que se puedan actualizar sus perfiles de producto.
+Si uno o más entornos de un programa necesitan que se actualicen sus perfiles de producto, Cloud Manager mostrará el aviso a continuación. Tenga en cuenta que un entorno debe estar en la última versión de AEM antes de poder actualizar sus perfiles de producto.
 
 ![Modernizar perfiles de producto](/help/onboarding/assets/modernize-product-profiles.png)
 
-Al hacer clic en el botón **Agregar perfiles de producto** se abrirá un menú que muestra las opciones para agregar nuevos perfiles de producto a todos los entornos disponibles en el programa o en entornos individuales.
+Al hacer clic en el botón **Añadir perfiles de producto**, se abre un menú que muestra las opciones para añadir nuevos perfiles de producto a todos los entornos disponibles en el programa o en entornos individuales.
 
 ![Reemplazar entornos](/help/onboarding/assets/choose-env-r.png)
 
-Haga clic en **Todos los entornos** para agregar los nuevos perfiles de producto a todos los entornos del programa. También puede hacer clic en **Entornos individuales** para agregar los nuevos perfiles de producto a los entornos seleccionados; esto llevará al usuario a una página de lista de entornos, donde se puede seleccionar una acción **Agregar perfiles de producto** del icono **Más opciones**.
+Haga clic en **Todos los entornos** para añadir los nuevos perfiles de producto a todos los entornos del programa. También puede hacer clic en **Entornos individuales** para añadir los nuevos perfiles de producto a los entornos seleccionados; esto lleva al usuario a una página de lista de entornos, donde se puede seleccionar una acción **Añadir perfiles de producto** del icono **Más opciones**.
 
-![Entornos Individuales](/help/onboarding/assets/individual-environments.png)
+![Entornos individuales](/help/onboarding/assets/individual-environments.png)
 
-También puede agregar perfiles de producto a entornos seleccionados navegando a la sección Entornos de la página Información general del programa, haciendo clic en el icono Más opciones correspondiente a un entorno y seleccionando Agregar perfiles de producto.
+También puede añadir perfiles de producto a entornos seleccionados navegando a la sección Entornos de la página Información general del programa, haciendo clic en el icono Más opciones correspondiente a un entorno y seleccionando Añadir perfiles de producto.
 
-El estado del entorno muestra Añadir perfiles de producto mientras se agregan los nuevos perfiles de producto y, a continuación, muestra En ejecución cuando se completa el proceso.
+El estado del entorno muestra “Añadir perfiles de producto” mientras se añaden los nuevos perfiles de producto y, a continuación, muestra “En ejecución” cuando se completa el proceso.
 
 
 ## Perfiles de producto de Cloud Manager {#cloud-manager-product-profiles}
