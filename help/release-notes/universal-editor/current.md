@@ -4,10 +4,10 @@ description: Estas son las notas de la versión 2025.03.10 del editor universal.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: b3c98f5e41dbc5e1714d0ed418a317199c735b73
-workflow-type: ht
-source-wordcount: '200'
-ht-degree: 100%
+source-git-commit: beab4f94dc6d78c2b1ad87a02b9fe46dd0438bcc
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 68%
 
 ---
 
@@ -25,6 +25,15 @@ Estas son las notas de la versión de 10 de marzo de 2025 del editor universal.
 * **Mover componentes:** [Mover componentes entre contenedores](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) ahora detecta el filtro de componente del contenedor de destino.
    * Ya no es necesario tener la misma [definición de filtro](/help/implementing/universal-editor/filtering.md) para los contenedores de destino para poder mover el componente entre los contenedores.
 * **Páginas bloqueadas:** el servicio de editor universal detecta el [estado de bloqueo de una página](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) y solo escribe en páginas que no están bloqueadas o en las que el usuario ha bloqueado.
+
+## Nuevas extensiones para el editor universal {#extensions}
+
+Se han lanzado varias extensiones nuevas en [Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/) para el editor universal, lo que mejora la experiencia de creación.
+
+* **Extensión MSM**: ahora puede interrumpir y volver a crear instancias de la herencia de componentes/bloques mediante esta extensión.
+* **Extensión de propiedades de página**: Acceda a la ventana de propiedades de página de la página directamente desde el editor universal mediante esta extensión.
+* **Extensión del flujo de trabajo**: utilice flujos de trabajo en páginas y fragmentos de contenido instrumentados en la página que usa esta extensión.
+* **Extensión de bloqueo de página**: utilice esta extensión para bloquear y desbloquear una página directamente desde el editor universal.
 
 ## Otras mejoras {#other-improvements}
 

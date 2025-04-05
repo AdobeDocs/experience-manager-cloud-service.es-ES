@@ -4,9 +4,9 @@ description: Descubra cómo puede ejecutar su propio servicio de editor universa
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 300dc71969e8e1da32d4f86f0a987b7e2777ccf5
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '950'
 ht-degree: 2%
 
 ---
@@ -16,36 +16,40 @@ ht-degree: 2%
 
 Descubra cómo puede ejecutar su propio servicio de editor universal para el desarrollo local o como parte de su propia infraestructura.
 
+>[!NOTE]
+>
+>Los servicios de editor universal locales no son necesarios ni compatibles para los proyectos que utilizan la creación de AEM con Edge Delivery Services.
+
 ## Información general {#overview}
 
 El servicio de editor universal es lo que une al editor universal y al sistema backend. Para poder desarrollar localmente para el editor universal, debe ejecutar una copia local del servicio de editor universal. Esto se debe a que:
 
-* El servicio de edición universal oficial de Adobe AEM está alojado a nivel global, y su instancia de local tendría que estar expuesta a Internet.
-* AEM Mientras se desarrolla con un SDK local de, no se puede acceder al servicio de editor universal de Adobe desde Internet.
-* AEM Si la instancia de la tiene restricciones de IP y el servicio de editor universal de Adobe no está en un intervalo de IP definido, puede alojarlo usted mismo.
+* El servicio oficial de editor universal de Adobe está alojado a nivel global, y la instancia local de AEM tendría que estar expuesta a Internet.
+* Al desarrollar con un SDK de AEM local, no se puede acceder al servicio de editor universal de Adobe desde Internet.
+* Si la instancia de AEM tiene restricciones de IP y el servicio de editor universal de Adobe no está en un intervalo de IP definido, puede alojarla usted mismo.
 
 ## Casos de uso {#use-cases}
 
 Su propia copia del servicio de editor universal resulta útil si desea:
 
-* AEM Desarrollar localmente en la para su uso con el editor universal.
+* Desarrolle localmente en AEM para utilizarlo con el editor universal.
 * Ejecute su propio servicio de editor universal como parte de su propia infraestructura, independientemente del servicio de editor universal de Adobe.
 
-Se admiten ambos casos de uso. AEM En este documento se explica cómo ejecutar en HTTPS junto con una copia local del servicio de editor universal (Universal Editor Service).
+Se admiten ambos casos de uso. En este documento se explica cómo ejecutar AEM en HTTPS junto con una copia local del servicio de editor universal.
 
 Si desea ejecutar su propio servicio de editor universal como parte de su propia infraestructura, debe seguir los mismos pasos que en el ejemplo de desarrollo local.
 
-## AEM Configuración de la ejecución de la en HTTPS {#aem-https}
+## Configuración de AEM para que se ejecute en HTTPS {#aem-https}
 
-Dentro de un marco externo protegido con HTTPS, no se puede cargar un marco HTTP no seguro. AEM El servicio de editor universal se ejecuta en HTTPS y, por lo tanto, el servicio de editor universal o cualquier otra página remota también deben ejecutarse en HTTPS.
+Dentro de un marco externo protegido con HTTPS, no se puede cargar un marco HTTP no seguro. El servicio de editor universal se ejecuta en HTTPS y, por lo tanto, AEM o cualquier otra página remota también deben ejecutarse en HTTPS.
 
-AEM Para ello, debe configurar la ejecución de la en HTTPS. Para fines de desarrollo, puede utilizar un certificado autofirmado.
+Para ello, debe configurar AEM para que se ejecute en HTTPS. Para fines de desarrollo, puede utilizar un certificado autofirmado.
 
-AEM [Consulte este documento](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=es) sobre cómo configurar la ejecución de la aplicación en HTTPS, incluido un certificado firmado automáticamente que pueda utilizar.
+[Consulte este documento](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=es) sobre cómo configurar AEM que se ejecuta en HTTPS, incluido un certificado autofirmado que puede utilizar.
 
 ## Instalación del servicio de editor universal {#install-ue-service}
 
-AEM El servicio de editor universal no es una copia completa del editor universal, sino solo un subconjunto de sus funciones para garantizar que las llamadas desde su entorno de trabajo local no se enruten a través de Internet, sino desde un punto final definido que usted controle.
+El servicio de editor universal no es una copia completa del editor universal, sino solo un subconjunto de sus funciones para garantizar que las llamadas de su entorno de AEM local no se enruten a través de Internet, sino desde un punto final definido que usted controle.
 
 Se requiere la versión 20](https://nodejs.org/en/download/releases) de [NodeJS para ejecutar una copia local del servicio de editor universal.
 
@@ -148,7 +152,7 @@ Una vez configurado, debería ver que cada llamada de actualización de contenid
 
 >[!TIP]
 >
->AEM Para obtener más información sobre cómo se instrumentan las páginas para utilizar el servicio de editor universal global, consulte el documento [Introducción al editor universal en la documentación de {100000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/implementing/universal-editor/getting-started.md#instrument-page)
+>Para obtener más información sobre cómo se instrumentan las páginas para utilizar el servicio de editor universal global, consulte el documento [Introducción al editor universal en AEM](/help/implementing/universal-editor/getting-started.md#instrument-page)
 
 ## Edición de una página con el servicio de editor universal local {#editing}
 
