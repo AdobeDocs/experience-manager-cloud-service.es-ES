@@ -3,10 +3,10 @@ title: Selector de recursos para  [!DNL Adobe Experience Manager]  as a  [!DNL C
 description: Utilice el Selector de recursos para buscar y recuperar metadatos y representaciones de recursos en la aplicación.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 97%
+source-wordcount: '1427'
+ht-degree: 94%
 
 ---
 
@@ -15,16 +15,16 @@ ht-degree: 97%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
         </td>
         <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integración de AEM Assets con Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidad de la IU</b></a>
         </td>
           <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
@@ -81,7 +81,11 @@ El Selector de recursos ofrece muchas ventajas, como las siguientes:
 
 Debe asegurarse de que dispone de los siguientes métodos de comunicación:
 
-* La aplicación se está ejecutando en HTTPS.
+* La aplicación host se ejecuta en HTTPS.
+* No puede ejecutar la aplicación en `localhost`. Si desea integrar el Selector de recursos en su equipo local, debe crear un dominio personalizado, por ejemplo `[https://<your_campany>.localhost.com:<port_number>]`, y agregar este dominio personalizado en `redirectUrl list`.
+* Puede configurar y agregar `ADOBE_PROVIDED_CLIENT_ID` a la variable de entorno de AEM Cloud Service con el `imsClientId` correspondiente.
+  ![Entorno de ID de cliente de IMS del selector de recursos](assets/asset-selector-ims-client-id-env.png)
+* La lista de ámbitos de IMS debe definirse en la configuración del entorno.
 * La URL de la aplicación está en la lista de URL de redirección permitidas del cliente de IMS.
 * El flujo de inicio de sesión de IMS se configura y se representa mediante una ventana emergente en el explorador web. Por lo tanto, las ventanas emergentes deben habilitarse o permitirse en el explorador de destino.
 
@@ -91,7 +95,7 @@ Utilice los requisitos previos anteriores si necesita el flujo de trabajo de aut
 
 * [Integrar el Selector de recursos con una aplicación de Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
 * [Integrar el Selector de recursos con una aplicación que no sea de Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
-* [Integrar las API de apertura de Dynamic Media del Selector de recursos](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+* [Integrar el Selector de recursos API abiertas de Dynamic Media](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
 >[!IMPORTANT]
@@ -197,9 +201,6 @@ El Selector de recursos le permite ver el recurso en cuatro vistas diferentes:
 * ![vista de cuadrícula](assets/do-not-localize/grid-view.png) [!UICONTROL **Vista de cuadrícula**]: la vista de cuadrícula muestra archivos y carpetas desplazables en una cuadrícula de filas y columnas.
 * ![vista de galería](assets/do-not-localize/gallery-view.png) [!UICONTROL **Vista de galería**]: la vista de galería muestra los archivos o carpetas en una lista horizontal bloqueada en el centro.
 * ![vista en cascada](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Vista en cascada**] La vista en cascada muestra los archivos o carpetas en forma de puente.
-
-**Gráfico de información general**
-
 
 ## Más información sobre las funcionalidades clave {#key-capabilities-asset-selector}
 
