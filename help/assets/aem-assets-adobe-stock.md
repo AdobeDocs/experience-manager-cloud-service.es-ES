@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Adobe Stock
 role: Admin, User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: deab7ac707527e62f7a0fa3581080171e499cd32
+source-git-commit: 3d95dd29cf1b7d6c7056c91e062a5f7eb48cc322
 workflow-type: tm+mt
-source-wordcount: '2258'
-ht-degree: 5%
+source-wordcount: '2273'
+ht-degree: 6%
 
 ---
 
@@ -51,12 +51,11 @@ ht-degree: 5%
     </tr>
 </table>
 
-<!--
-| Version | Article link |
+| Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=en)                  |
-| AEM as a Cloud Service     | This article         |
--->
+| AEM 6.5 | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=en) |
+| AEM as a Cloud Service | Este artículo |
+
 El servicio [!DNL Adobe Stock] proporciona a diseñadores y empresas acceso a millones de fotografías, vectores, ilustraciones, vídeos, plantillas y recursos 3D de alta calidad, depurados y libres de derechos para todos sus proyectos creativos.
 
 [!DNL Adobe Stock] para la oferta empresarial, de forma predeterminada, incluye derechos de uso compartido en toda la organización. Una vez que un usuario de la organización ha concedido una licencia a un recurso, otros usuarios de la organización pueden identificar, descargar y utilizar este recurso sin tener que volver a obtener la licencia. Una vez que su organización ha concedido una licencia a un recurso, el derecho a utilizarlo es perpetuo.
@@ -253,7 +252,7 @@ Ejecute los siguientes pasos para configurar un programa en [!DNL Developer Cons
 1. Seleccione la tarjeta de credenciales **[!UICONTROL OAuth Server-to-Server]** y se mostrarán los **[!UICONTROL detalles de credenciales]**. Use estos [!DNL OAuth Server-to-Server] detalles de credenciales de su proyecto, como **[!UICONTROL ID de cliente]**, **[!UICONTROL Secreto de cliente]**, **[!UICONTROL Ámbito]**, **[!UICONTROL Nombre de credencial]**, **[!UICONTROL ID de cuenta técnica]**, **[!UICONTROL ID de organización]** para [agregar configuración en la instancia de autor de AEM](#add-configuration-in-the-aem-author-instance).
    ![recursos aem y adobe stock](/help/assets/assets/oauth-server-server-credentials-details-page.png)
 
-### Agregar configuración en la instancia de autor [!DNL AEM] {#add-configuration-in-the-aem-author-instance}
+### añadir configuración en el [!DNL AEM] instancia de autor {#add-configuration-in-the-aem-author-instance}
 
 Ejecute los siguientes pasos para agregar la configuración en su instancia de autor de [!DNL AEM]:
 
@@ -311,7 +310,7 @@ To configure the [!DNL Adobe Stock] cloud service:
 -->
 Su instancia de autor de [!DNL Experience Manager Assets] ahora está integrada con [!DNL Adobe Stock]. Puede crear varias configuraciones de [!DNL Adobe Stock] (por ejemplo, configuraciones basadas en la configuración regional). Ahora puede obtener acceso, buscar y obtener una licencia de los recursos de [!DNL Adobe Stock] desde la interfaz de usuario de [!DNL Experience Manager].
 
-![search-stock-assets](assets/aem-stock-searchstocks.png)
+![búsqueda-stock-activos](assets/aem-stock-searchstocks.png)
 
 >[!NOTE]
 >
@@ -360,7 +359,7 @@ Puede crear un grupo de usuarios o asignar permisos a un grupo de usuarios exist
 
 **Para proporcionar acceso a un usuario desde [!DNL User Admin Console]:**
 
-1. Abra el Admin Console de usuario [!DNL Experience Manager]. La URL predeterminada es `http://localhost:4502/userdamin`.
+1. Abra la [!DNL Experience Manager] Admin Console de usuario. La URL predeterminada es `http://localhost:4502/userdamin`.
 
 1. En el panel izquierdo, busque el usuario al escribir `user_id` o `name`. Haga doble clic para abrir las propiedades del usuario.
 
@@ -418,9 +417,9 @@ Una vez que un recurso de [!DNL Adobe Stock] tiene licencia en [!DNL Experience 
 
 ### Buscar recursos {#find-assets}
 
-Los usuarios de [!DNL Experience Manager] pueden buscar recursos en [!DNL Experience Manager] y [!DNL Adobe Stock]. Cuando la ubicación de búsqueda no está limitada a [!DNL Adobe Stock], se muestran los resultados de búsqueda de [!DNL Experience Manager] y [!DNL Adobe Stock].
+Los usuarios de [!DNL Experience Manager] pueden buscar recursos en [!DNL Experience Manager] y [!DNL Adobe Stock]. Cuando la ubicación del búsqueda no se limita a [!DNL Adobe Stock], los resultados de los búsqueda y [!DNL Adobe Stock] [!DNL Experience Manager] se muestran.
 
-* Para buscar [!DNL Adobe Stock] recursos, haga clic en **[!UICONTROL Navegación]** > **[!UICONTROL Assets]** > **[!UICONTROL Buscar Adobe Stock]**.
+* Para buscar búsqueda activos [!DNL Adobe Stock] , haga clic en **[!UICONTROL Navegación]** > **[!UICONTROL Assets >]** **[!UICONTROL Search Adobe Stock]**.
 
 * Para buscar recursos en [!DNL Adobe Stock] y [!DNL Experience Manager Assets], haga clic en buscar ![buscar](assets/do-not-localize/search_icon.png).
 

@@ -1,13 +1,16 @@
 ---
 title: Integrar [!DNL AEM Assets] al crear contenido para [!DNL Edge Delivery Services]
 description: Aprenda a integrar [!DNL AEM Assets] con [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] con [!DNL Microsoft Word] y [!DNL Google Docs], integrate [!DNL AEM Assets] con [!DNL Universal Editor], integrate [!DNL Dynamic Media] con [!DNL Edge Delivery Services], integrate [!DNL Dynamic Media with OpenAPI capabilities] con [!DNL Universal Editor] e integrar [!DNL Dynamic Media with OpenAPI capabilities] con [!DNL Microsoft Word] y [!DNL Google Docs].
+tags: "AEM Assets""Edge Delivery Services""Dynamic Media""Dynamic Media with OpenAPI capabilities""Universal Editor""Edge Delivery Services with Universal Editor"
+features: "How to use [!DNL  AEM Assets] with [!DNL Edge Delivery Services]""How to use [!DNL AEM Assets] with [!DNL Universal Editor]""How to use [!DNL Dynamic Media with OpenAPI capabilities] with [!DNL Edge Delivery Services]""How to use [!DNL Dynamic Media with OpenAPI capabilities] in [!DNL Universal Editor]""How to integrate [!DNL Universal Editor] with [!DNL Edge Delivery Services] and [!DNL AEM Assets]""How to use [!DNL Dynamic Media with OpenAPI capabilities] in document based authoring tools""How to use [!DNL AEM Assets] in [!DNL Microsoft word] and [!DNL Google docs]""How to use [!DNL Universal Editor] with [!DNL Edge Delivery Services]""How to use [!DNL Dynamic Media with OpenAPI capabilities] in [!DNL Microsoft word] and [!DNL Google docs]""How to use [!DNL Dynamic Media] for asset delivery in document based authoring tools and [!DNL Universal Editor]"
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 84fde065602d8303a03eb2c82bfa4c4bef0c1193
+source-git-commit: 64cf8feed8cc8c3c38b29f36ee7b2d7944f408d1
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: 671
 ht-degree: 6%
 
 ---
+
 
 # Integrar [!DNL AEM Assets] al crear contenido para [!DNL Edge Delivery Services] {#integrate-aem-assets-with-edge-delivery-services}
 
@@ -86,7 +89,7 @@ También puede utilizar los recursos entregados mediante [!DNL Dynamic Media wit
 * Entrega y optimización de medios enriquecidos, como la transmisión de vídeo adaptable de forma predeterminada y la entrega de recursos originales para PDF.
 * Informe de impresiones de nivel de recurso ([disponibilidad limitada](/help/assets/manage-reports-assets-view.md#dynamic-media-delivery-reports)).
 
-Para obtener más información sobre las capacidades, consulte la documentación de [[!DNL Dynamic Media with OpenAPI capabilities]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview).
+Para obtener más información sobre las capacidades, consulte la documentación de [[!DNL Dynamic Media with OpenAPI capabilities]](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview).
 
 ### Requisitos previos {#dynamic-media-with-universal-editor-and-edge-delivery-services}
 
