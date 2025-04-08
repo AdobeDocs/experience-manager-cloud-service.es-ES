@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: e3a8afaee6c3baeb593eb69a46648b0a8d2a069f
+source-git-commit: a764a9d1e7d9fcd0be6abf9e2fb409346dc0f549
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1073'
 ht-degree: 8%
 
 ---
@@ -87,7 +87,7 @@ Para que un dominio personalizado pueda servir tráfico, debe completar la confi
    | Opción | Etapas |
    | --- | --- |
    | Configurar un REGISTRO | Recomendado para dominios raíz como `example.com`<br><ol><li>Inicie sesión en el portal de su proveedor de servicios DNS.<li>Vaya a la sección Registros DNS.<li>Cree un registro A para que apunte a todas las direcciones IP de la lista.</li></ol> |
-   | Configurar CNAME | Recomendado para dominios personalizados como `www.example.com`<br><ol><li>Inicie sesión en el portal de su proveedor de servicios DMS.<li>Vaya a la sección Registros DNS.<li>Asigne [cdn.adobeaemcloud.com](https://cdn.adobeaemcloud.com/) (registro CNAME) en el registro DNS del proveedor de servicios DNS (su dominio personalizado). Esta asignación garantiza que las solicitudes recibidas en el dominio personalizado se redirijan a la CDN de Adobe.</li></ol> |
+   | Configurar CNAME | Recomendado para dominios personalizados como `www.example.com`<br><ol><li>Inicie sesión en el portal de su proveedor de servicios DMS.<li>Vaya a la sección Registros DNS.<li>Asigne `cdn.adobeaemcloud.com` (registro CNAME) en el registro DNS del proveedor de servicios DNS (su dominio personalizado). Esta asignación garantiza que las solicitudes recibidas en el dominio personalizado se redirijan a la CDN de Adobe.</li></ol> |
 
 1. En el cuadro de diálogo **Preparación para el lanzamiento**, haga clic en **Aceptar** para guardar el registro.
 
