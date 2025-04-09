@@ -4,9 +4,9 @@ description: Obtenga información acerca de los conceptos básicos del almacenam
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
-source-git-commit: fc555922139fe0604bf36dece27a2896a1a374d9
+source-git-commit: 4a586a0022682dadbc57bab1ccde0ba2afa78627
 workflow-type: tm+mt
-source-wordcount: '2924'
+source-wordcount: '3071'
 ht-degree: 1%
 
 ---
@@ -20,10 +20,21 @@ Esta página también describe cómo se invalida la caché de Dispatcher y cómo
 
 ## Almacenamiento en caché {#caching}
 
+El almacenamiento en caché de las respuestas HTTP en la CDN de AEM as a Cloud Service está controlado por los siguientes encabezados de respuesta HTTP del origen: `Cache-Control`, `Surrogate-Control` o `Expires`.
+
+Estos encabezados de caché generalmente se establecen en configuraciones vhost de AEM Dispatcher mediante mod_headers, pero también se pueden establecer en código Java™ personalizado que se ejecuta en la propia publicación de AEM (consulte [Cómo habilitar el almacenamiento en caché de CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching)).
+
+La clave de caché para los recursos de CDN contiene la dirección URL de solicitud completa, incluidos los parámetros de consulta, por lo que cada parámetro de consulta diferente producirá una entrada de caché diferente. Considere la posibilidad de eliminar los parámetros de consulta no deseados; [consulte lo siguiente](#marketing-parameters) para mejorar la proporción de visitas de caché.
+
+La CDN de AEM as a Cloud Service no almacena en caché las respuestas de origen que contienen `private`, `no-cache` o `no-store` en `Cache-Control` (consulte [Cómo deshabilitar el almacenamiento en caché de CDN
+](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching) para obtener más información).  Además, la CDN no almacena en caché las respuestas que configuran cookies, es decir, que tienen un encabezado de respuesta `Set-Cookie`.
+
 ### HTML/Texto {#html-text}
 
+La configuración de Dispatcher establece algunos encabezados de almacenamiento en caché predeterminados para el tipo de contenido `text/html`.
+
 * de forma predeterminada, el explorador almacena en caché durante cinco minutos, según el encabezado `cache-control` emitido por la capa de Apache. La CDN también respeta este valor.
-* la configuración predeterminada de almacenamiento en caché de texto/HTML se puede deshabilitar definiendo la variable `DISABLE_DEFAULT_CACHING` en `global.vars`:
+* la configuración predeterminada de almacenamiento en caché de HTML/texto se puede deshabilitar definiendo la variable `DISABLE_DEFAULT_CACHING` en `global.vars`:
 
 ```
 Define DISABLE_DEFAULT_CACHING
@@ -31,7 +42,7 @@ Define DISABLE_DEFAULT_CACHING
 
 Este método es útil, por ejemplo, cuando la lógica empresarial requiere ajustar el encabezado age (con un valor basado en el día del calendario) ya que, de forma predeterminada, el encabezado age se establece en 0. Dicho esto, **tenga cuidado al desactivar el almacenamiento en caché predeterminado.**
 
-* se puede sobrescribir para todo el contenido de HTML/texto definiendo la variable `EXPIRATION_TIME` en `global.vars` con las herramientas de AEM as a Cloud Service SDK Dispatcher.
+* se puede sobrescribir para todo el contenido de HTML/Text definiendo la variable `EXPIRATION_TIME` en `global.vars` con las herramientas de AEM as a Cloud Service SDK Dispatcher.
 * puede anularse en un nivel más preciso, incluido el control independiente de la CDN y la caché del explorador, con las siguientes directivas de Apache `mod_headers`:
 
   ```
@@ -45,7 +56,7 @@ Este método es útil, por ejemplo, cuando la lógica empresarial requiere ajust
   >[!NOTE]
   >El encabezado Surrogate-Control se aplica a la CDN administrada por Adobe. Si utiliza una [CDN administrada por el cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html#point-to-point-CDN), puede ser necesario un encabezado diferente en función de su proveedor de CDN.
 
-  Tenga cuidado al configurar encabezados de control de caché globales o encabezados de caché similares que coincidan con una regex amplia, de modo que no se apliquen al contenido que debe mantener privado. Considere la posibilidad de utilizar varias directivas para garantizar que las reglas se aplican de manera precisa. Dicho esto, AEM as a Cloud Service elimina el encabezado de la caché si detecta que Dispatcher lo ha aplicado a lo que detecta que no se puede almacenar en caché, tal como se describe en la documentación de Dispatcher. AEM Para obligar a los usuarios a aplicar siempre los encabezados de almacenamiento en caché, se puede agregar la opción **`always`** de la siguiente manera:
+  Tenga cuidado al configurar encabezados de control de caché globales o encabezados de caché similares que coincidan con una regex amplia, de modo que no se apliquen al contenido que debe mantener privado. Considere la posibilidad de utilizar varias directivas para garantizar que las reglas se aplican de manera precisa. Dicho esto, AEM as a Cloud Service elimina el encabezado de la caché si detecta que Dispatcher lo ha aplicado a lo que detecta que no se puede almacenar en caché, tal como se describe en la documentación de Dispatcher. Para obligar a AEM a aplicar siempre los encabezados de almacenamiento en caché, se puede agregar la opción **`always`** de la siguiente manera:
 
   ```
   <LocationMatch "^/content/.*\.(html)$">
@@ -76,14 +87,14 @@ Este método es útil, por ejemplo, cuando la lógica empresarial requiere ajust
 * Aunque el contenido de HTML establecido en privado no se almacena en caché en la red de distribución de contenido (CDN), se puede almacenar en caché en Dispatcher si se ha configurado [Almacenamiento en caché con permisos confidenciales](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=es), lo que garantiza que solo se pueda proporcionar el contenido a los usuarios autorizados.
 
   >[!NOTE]
-  >Los otros métodos, incluido el [proyecto Dispatcher AEM-ttl de ACS Commons ](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), no invalidan correctamente los valores.
+  >Los otros métodos, incluido el [proyecto Dispatcher-ttl AEM ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), no invalidan correctamente los valores.
 
   >[!NOTE]
   >Es posible que Dispatcher siga almacenando en caché el contenido según sus propias [reglas de almacenamiento en caché](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). Para que el contenido sea verdaderamente privado, asegúrese de que Dispatcher no lo almacene en caché.
 
 ### Bibliotecas del lado cliente (js,css) {#client-side-libraries}
 
-* AEM Al utilizar el marco de trabajo de biblioteca del lado del cliente de, el código JavaScript y CSS se genera de tal manera que los exploradores pueden almacenarlo en caché indefinidamente, ya que cualquier cambio se manifiesta como nuevos archivos con una ruta única. En otras palabras, los HTML que hacen referencia a las bibliotecas de cliente se generan según sea necesario para que los clientes puedan experimentar el nuevo contenido a medida que se publica. El control de caché se establece en &quot;inmutable&quot; o 30 días para exploradores más antiguos que no respetan el valor &quot;inmutable&quot;.
+* Al utilizar el marco de trabajo de biblioteca del lado del cliente de AEM, el código JavaScript y CSS se genera de tal manera que los exploradores pueden almacenarlo en caché indefinidamente, ya que cualquier cambio se manifiesta como nuevos archivos con una ruta única. En otras palabras, las HTML que hacen referencia a las bibliotecas de cliente se generan según sea necesario para que los clientes puedan experimentar el nuevo contenido a medida que se publica. El control de caché se establece en &quot;inmutable&quot; o 30 días para exploradores más antiguos que no respetan el valor &quot;inmutable&quot;.
 * consulte la sección [Bibliotecas del lado del cliente y coherencia de la versión](#content-consistency) para obtener más información.
 
 ### Las imágenes y cualquier contenido lo suficientemente grande como para almacenarse en el almacenamiento de blobs {#images}
@@ -99,9 +110,9 @@ En ambos casos, los encabezados de almacenamiento en caché se pueden anular en 
    </LocationMatch>
 ```
 
-Al modificar los encabezados de almacenamiento en caché en la capa de Dispatcher, tenga cuidado de no almacenar en caché demasiado ampliamente. Consulte la discusión en la sección de HTML/texto [más arriba](#html-text). Además, asegúrese de que los recursos que se pretende mantener privados (en lugar de almacenados en caché) no formen parte de los filtros de directiva `LocationMatch`.
+Al modificar los encabezados de almacenamiento en caché en la capa de Dispatcher, tenga cuidado de no almacenar en caché demasiado ampliamente. Consulte la discusión en la sección HTML/text [más arriba](#html-text). Además, asegúrese de que los recursos que se pretende mantener privados (en lugar de almacenados en caché) no formen parte de los filtros de directiva `LocationMatch`.
 
-AEM Los recursos JCR (superiores a 16 KB) almacenados en el almacén de blobs generalmente se sirven como redirecciones 302 por parte de los usuarios de. Estas redirecciones son interceptadas y seguidas por CDN y el contenido se entrega directamente desde el almacén de blobs. En estas respuestas solo se puede personalizar un conjunto limitado de encabezados. Por ejemplo, para personalizar `Content-Disposition` debe usar las directivas de Dispatcher de la siguiente manera:
+Los recursos JCR (superiores a 16 KB) almacenados en el almacén de blobs generalmente se sirven como redirecciones 302 mediante AEM. Estas redirecciones son interceptadas y seguidas por CDN y el contenido se entrega directamente desde el almacén de blobs. En estas respuestas solo se puede personalizar un conjunto limitado de encabezados. Por ejemplo, para personalizar `Content-Disposition` debe usar las directivas de Dispatcher de la siguiente manera:
 
 ```
 <LocationMatch "\.(?i:pdf)$">
@@ -130,9 +141,9 @@ vary
 
 #### Nuevo comportamiento de almacenamiento en caché predeterminado {#new-caching-behavior}
 
-AEM La capa establece encabezados de caché en función de si ya se ha establecido el encabezado de caché y el valor del tipo de solicitud. Si no se establece ningún encabezado de control de caché, el contenido público se almacena en caché y el tráfico autenticado se establece en privado. Si se establece un encabezado de control de caché, los encabezados de caché no se tocan.
+La capa de AEM establece los encabezados de caché en función de si ya se ha establecido el encabezado de caché y el valor del tipo de solicitud. Si no se establece ningún encabezado de control de caché, el contenido público se almacena en caché y el tráfico autenticado se establece en privado. Si se establece un encabezado de control de caché, los encabezados de caché no se tocan.
 
-| ¿Existe el encabezado de control de caché? | Tipo de solicitud | AEM establece encabezados de caché en |
+| ¿Existe el encabezado de control de caché? | Tipo de solicitud | AEM establece los encabezados de caché en |
 |------------------------------|---------------|------------------------------------------------|
 | No | público | Cache-Control: public, max-age=600, inmutable |
 | No | autenticado | Cache-Control: private, max-age=600, inmutable |
@@ -142,15 +153,15 @@ Aunque no se recomienda, es posible cambiar el nuevo comportamiento predetermina
 
 #### Comportamiento de almacenamiento en caché predeterminado anterior {#old-caching-behavior}
 
-AEM La capa no almacena en caché el contenido del blob de forma predeterminada.
+La capa de AEM no almacena en caché el contenido del blob de forma predeterminada.
 
 >[!NOTE]
->Cambie el comportamiento predeterminado anterior para que sea coherente con el nuevo comportamiento (ID de programa superiores a 65000) estableciendo la variable de entorno de Cloud Manager AEM:_BLOB_ENABLE_CACHING_HEADERS en true. Si el programa ya está activo, asegúrese de verificar que después de los cambios, el contenido se comporta como espera.
+>Cambie el comportamiento predeterminado anterior para que sea coherente con el nuevo comportamiento (ID de programa superiores a 65000) estableciendo la variable de entorno de Cloud Manager AEM_BLOB_ENABLE_CACHING_HEADERS en true. Si el programa ya está activo, asegúrese de verificar que después de los cambios, el contenido se comporta como espera.
 
-Ahora, las imágenes en el almacenamiento del blob marcadas como privadas no se pueden almacenar en caché en Dispatcher usando [Almacenamiento en caché con permisos confidenciales](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=es). AEM La imagen siempre se solicita desde el origen de la y se sirve si el usuario está autorizado.
+Ahora, las imágenes en el almacenamiento del blob marcadas como privadas no se pueden almacenar en caché en Dispatcher usando [Almacenamiento en caché con permisos confidenciales](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=es). La imagen siempre se solicita desde el origen de AEM y se sirve si el usuario está autorizado.
 
 >[!NOTE]
->AEM Los otros métodos, incluido el [proyecto Dispatcher-ttl de ACS Commons ](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), no anulan correctamente los valores.
+>Los otros métodos, incluido el [proyecto Dispatcher-ttl AEM ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), no anulan correctamente los valores.
 
 ### Otros tipos de archivo de contenido en el almacén de nodos {#other-content}
 
@@ -186,7 +197,7 @@ Ahora, las imágenes en el almacenamiento del blob marcadas como privadas no se 
      </LocationMatch>
      ```
 
-   * Almacene en caché las páginas del HTML durante cinco minutos con la actualización en segundo plano una hora en el explorador y 12 horas en CDN. Los encabezados Cache-Control siempre se agregan, por lo que es importante asegurarse de que las páginas HTML coincidentes en /content/* están pensadas para ser públicas. Si no es así, considere la posibilidad de utilizar una regex más específica.
+   * Almacene en caché las páginas de HTML durante cinco minutos con la actualización en segundo plano una hora en el explorador y 12 horas en CDN. Los encabezados Cache-Control siempre se agregan, por lo que es importante asegurarse de que las páginas HTML coincidentes en /content/* están pensadas para ser públicas. Si no es así, considere la posibilidad de utilizar una regex más específica.
 
      ```
      <LocationMatch "^/content/.*\.html$">
@@ -229,9 +240,9 @@ Ahora, las imágenes en el almacenamiento del blob marcadas como privadas no se 
 
 Consulte el [tutorial de análisis de proporción de aciertos de caché](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html) para obtener información sobre cómo descargar registros de CDN y analizar la proporción de blancos de caché del sitio mediante un tablero.
 
-### comportamiento de solicitud del HEAD {#request-behavior}
+### Comportamiento de petición HEAD {#request-behavior}
 
-Cuando se recibe una solicitud de HEAD en la red de distribución de contenido (CDN) de Adobe para un recurso que está en caché **no**, la solicitud se transforma y la recibe la instancia de Dispatcher AEM o de la instancia de como una solicitud de GET. Si la respuesta se puede almacenar en caché, las solicitudes de HEAD posteriores se proporcionan desde la CDN. Si la respuesta no se puede almacenar en caché, las solicitudes de HEAD subsiguientes se pasan a Dispatcher AEM, a la instancia de o a ambas durante un tiempo que depende del TTL `Cache-Control`.
+Cuando se recibe una solicitud de HEAD en la CDN de Adobe para un recurso que está en caché **no**, la solicitud se transforma y la recibe la instancia de Dispatcher o AEM como una solicitud de GET. Si la respuesta se puede almacenar en caché, las solicitudes de HEAD posteriores se proporcionan desde la CDN. Si la respuesta no se puede almacenar en caché, las solicitudes de HEAD posteriores se pasan a la instancia de Dispatcher, AEM o ambas, durante un tiempo que depende del TTL `Cache-Control`.
 
 ### Parámetros de campaña de marketing {#marketing-parameters}
 
@@ -272,7 +283,7 @@ En el ejemplo siguiente, solo no se omiten los parámetros `page` y `product`, y
 }
 ```
 
-1. Permitir todos los parámetros excepto los de marketing. El archivo [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) define una lista de parámetros de marketing que se omitirán y que se utilizarán con frecuencia. El Adobe no actualizará este archivo. Los usuarios pueden ampliarla en función de sus proveedores de marketing.
+1. Permitir todos los parámetros excepto los de marketing. El archivo [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) define una lista de parámetros de marketing que se omitirán y que se utilizarán con frecuencia. Adobe no actualizará este archivo. Los usuarios pueden ampliarla en función de sus proveedores de marketing.
 
 ```
 /ignoreUrlParams {
@@ -288,16 +299,16 @@ En general, no es necesario invalidar la caché de Dispatcher. En su lugar, debe
 
 ### Invalidación de la caché de Dispatcher durante la activación/desactivación {#cache-activation-deactivation}
 
-AEM Al igual que las versiones anteriores de la aplicación, la publicación o cancelación de la publicación de páginas borra el contenido de la caché de Dispatcher. Si se sospecha un problema de almacenamiento en caché, debe volver a publicar las páginas en cuestión y asegurarse de que haya un host virtual disponible que coincida con el host local `ServerAlias`, que es necesario para invalidar la caché de Dispatcher.
+Al igual que las versiones anteriores de AEM, la publicación o cancelación de la publicación de páginas borra el contenido de la caché de Dispatcher. Si se sospecha un problema de almacenamiento en caché, debe volver a publicar las páginas en cuestión y asegurarse de que haya un host virtual disponible que coincida con el host local `ServerAlias`, que es necesario para invalidar la caché de Dispatcher.
 
 >[!NOTE]
->Para la correcta invalidación de Dispatcher, asegúrese de que las solicitudes de &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;\*.local&quot;, &quot;\*.adobeaemcloud.com&quot; y &quot;\*.adobeaemcloud.net&quot; coincidan y se gestionen mediante una configuración de vhost para que se pueda atender la solicitud. AEM Puede realizar esta tarea haciendo coincidir globalmente &quot;*&quot; en una configuración de vhost global siguiendo el patrón de la referencia [tipo de archivo](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost). O bien, puede asegurarse de que la lista mencionada anteriormente sea capturada por uno de los vhosts.
+>Para la correcta invalidación de Dispatcher, asegúrese de que las solicitudes de &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;\*.local&quot;, &quot;\*.adobeaemcloud.com&quot; y &quot;\*.adobeaemcloud.net&quot; coincidan y se gestionen mediante una configuración de vhost para que se pueda atender la solicitud. Puede realizar esta tarea haciendo coincidir globalmente &quot;*&quot; en una configuración de vhost global siguiendo el patrón de la referencia [arquetipo de AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost). O bien, puede asegurarse de que la lista mencionada anteriormente sea capturada por uno de los vhosts.
 
 Cuando la instancia de publicación recibe una nueva versión de una página o recurso del autor, utiliza el agente de vaciado para invalidar las rutas adecuadas en su Dispatcher. La ruta actualizada se quita de la caché de Dispatcher, junto con sus elementos primarios, hasta un nivel (puede configurar este nivel con [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
 
 ## Invalidación explícita de la caché de Dispatcher {#explicit-invalidation}
 
-El Adobe recomienda confiar en los encabezados de caché estándar para controlar el ciclo de vida de la entrega de contenido. Sin embargo, si es necesario, es posible invalidar el contenido directamente en Dispatcher.
+Adobe recomienda confiar en los encabezados de caché estándar para controlar el ciclo de vida de la entrega de contenido. Sin embargo, si es necesario, es posible invalidar el contenido directamente en Dispatcher.
 
 La siguiente lista contiene escenarios en los que puede que desee invalidar explícitamente la caché (mientras escucha opcionalmente la finalización de la invalidación):
 
@@ -316,7 +327,7 @@ Los enfoques difieren en términos de disponibilidad de niveles, la capacidad de
   <tr>
     <th>N/D</th>
     <th>Disponibilidad de nivel</th>
-    <th>Anulación de duplicación </th>
+    <th>Deduplicación </th>
     <th>Garantía </th>
     <th>Acción </th>
     <th>Impacto </th>
@@ -371,9 +382,9 @@ Los enfoques difieren en términos de disponibilidad de niveles, la capacidad de
     <td>
      <ol>
        <li>Publica contenido e invalida la caché.</li>
-       <li>Del nivel de Author/Publish: elimina el contenido e invalida la caché.</li>
-       <li><p>AEM <strong>Del nivel de Author</strong>: elimina el contenido e invalida la caché (si se activa desde el nivel de Author en el agente de Publish).</p>
-           <p><strong>De nivel Publish AEM</strong>: invalida solo la caché (si se activa desde el nivel Publish en el agente de vaciado o vaciado solo de recursos).</p>
+       <li>Desde el nivel de creación/publicación: elimina el contenido e invalida la caché.</li>
+       <li><p><strong>Del nivel de Author</strong>: elimina el contenido e invalida la caché (si se activa desde el nivel de Author de AEM en el agente de publicación).</p>
+           <p><strong>Desde nivel de publicación</strong>: invalida solamente la caché (si se activa desde el nivel de publicación de AEM en el agente de vaciado o de vaciado solo de recursos).</p>
        </li>
      </ol>
      </td>
@@ -398,7 +409,7 @@ En resumen, si desea invalidar la caché de Dispatcher, la opción recomendada e
 
 Al utilizar la acción SCD de Autor, el patrón de implementación es el siguiente:
 
-1. Desde Autor, escriba código personalizado para invocar la distribución de contenido de sling [API](https://sling.apache.org/documentation/bundles/content-distribution.html), pasando la acción de invalidación con una lista de rutas:
+1. Desde Autor, escriba un código personalizado para invocar la API [API](https://sling.apache.org/documentation/bundles/content-distribution.html) de distribución de contenido sling y pase la acción de invalidación con una lista de rutas:
 
 ```
 @Reference
@@ -471,7 +482,7 @@ public class InvalidatedHandler implements EventHandler {
 
 >[!NOTE]
 >
->La CDN de Adobe no se vacía cuando se invalida Dispatcher. La CDN administrada por la Adobe respeta los TTL y, por lo tanto, no es necesario vaciarla.
+>La CDN de Adobe no se vacía cuando se invalida Dispatcher. La CDN administrada por Adobe respeta los TTL y, por lo tanto, no es necesario vaciarla.
 
 ### API de replicación {#replication-api}
 
@@ -522,11 +533,11 @@ The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushe
 
 ## Bibliotecas del lado del cliente y coherencia de versiones {#content-consistency}
 
-Las páginas están compuestas por HTML, JavaScript, CSS e imágenes. Se recomienda a los clientes que usen el [módulo de bibliotecas del lado del cliente (clientlibs)](/help/implementing/developing/introduction/clientlibs.md) para importar recursos de JavaScript y CSS en páginas de HTML, teniendo en cuenta las dependencias entre bibliotecas JS.
+Las páginas están compuestas por HTML, JavaScript, CSS e imágenes. Se recomienda a los clientes que usen el [marco de bibliotecas del lado del cliente (clientlibs)](/help/implementing/developing/introduction/clientlibs.md) para importar recursos de JavaScript y CSS en páginas de HTML, teniendo en cuenta las dependencias entre bibliotecas JS.
 
-El marco clientlibs proporciona administración automática de versiones. Esto significa que los desarrolladores pueden proteger los cambios realizados en las bibliotecas JS del control de código fuente y la versión más reciente estará disponible cuando un cliente publique su versión. Sin este flujo de trabajo, los desarrolladores deben cambiar manualmente el HTML con referencias a la nueva versión de la biblioteca, lo que resulta especialmente oneroso si la misma biblioteca comparte muchas plantillas de HTML.
+El marco clientlibs proporciona administración automática de versiones. Esto significa que los desarrolladores pueden proteger los cambios realizados en las bibliotecas JS del control de código fuente y la versión más reciente estará disponible cuando un cliente publique su versión. Sin este flujo de trabajo, los desarrolladores deben cambiar manualmente HTML con referencias a la nueva versión de la biblioteca, lo que resulta especialmente oneroso si la misma biblioteca comparte muchas plantillas de HTML.
 
-Cuando se publican las nuevas versiones de las bibliotecas de en producción, las páginas del HTML de referencia se actualizan con nuevos vínculos a esas versiones de la biblioteca actualizadas. Una vez que la caché del explorador caduca para una página de HTML determinada, no hay problema con que las bibliotecas antiguas se carguen desde la caché del explorador. AEM El motivo es que ahora se garantiza que la página actualizada (desde la versión de ) hace referencia a las nuevas versiones de las bibliotecas. Es decir, una página de HTML actualizada incluye todas las versiones de biblioteca más recientes.
+Cuando salen al mercado las nuevas versiones de las bibliotecas de, las páginas de referencia de HTML se actualizan con nuevos vínculos a esas versiones de biblioteca actualizadas. Una vez que la caché del explorador caduca para una página de HTML determinada, no preocupa que las bibliotecas antiguas se carguen desde la caché del explorador. El motivo es que ahora se garantiza que la página actualizada (de AEM) hace referencia a las nuevas versiones de las bibliotecas. Es decir, una página de HTML actualizada incluye todas las versiones de biblioteca más recientes.
 
 El mecanismo detrás de esta capacidad es un hash serializado, que se anexa al vínculo de biblioteca del cliente. Garantiza una URL única con versiones para que el explorador almacene en caché el CSS/JS. El hash serializado solo se actualiza cuando cambia el contenido de la biblioteca de cliente. Lo que significa que si se producen actualizaciones no relacionadas (es decir, no se producen cambios en el css/js subyacente de la biblioteca del cliente) incluso con una nueva implementación, la referencia sigue siendo la misma. A su vez, garantiza menos interrupciones en la caché del explorador.
 
@@ -549,8 +560,8 @@ Las versiones de clientlib estrictas están habilitadas de forma predeterminada 
 Para habilitar las versiones clientlib estrictas en el Quickstart de SDK local, haga lo siguiente:
 
 1. Vaya al Administrador de configuración de OSGi `<host>/system/console/configMgr`
-1. Busque la configuración OSGi para el administrador de bibliotecas del HTML de Adobe Granite:
+1. Busque la configuración OSGi para el administrador de bibliotecas de Adobe Granite HTML:
    * Marque la casilla de verificación para habilitar las versiones estrictas.
    * En el campo etiquetado **Clave de caché de cliente a largo plazo**, escriba el valor de /.*;hash
 1. Guarde los cambios. No es necesario guardar esta configuración en el control de código fuente, ya que AEM as a Cloud Service la habilita automáticamente en los entornos de desarrollo, fase y producción.
-1. Cada vez que se cambia el contenido de la biblioteca del cliente, se genera una nueva clave hash y se actualiza la referencia del HTML.
+1. Cada vez que se cambia el contenido de la biblioteca de cliente, se genera una nueva clave hash y se actualiza la referencia de HTML.
