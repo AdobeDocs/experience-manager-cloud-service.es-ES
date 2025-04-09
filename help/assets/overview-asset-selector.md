@@ -3,9 +3,9 @@ title: Selector de recursos para  [!DNL Adobe Experience Manager]  as a  [!DNL C
 description: Utilice el Selector de recursos para buscar y recuperar metadatos y representaciones de recursos en la aplicación.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
+source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
 workflow-type: tm+mt
-source-wordcount: '1427'
+source-wordcount: '1422'
 ht-degree: 94%
 
 ---
@@ -83,8 +83,9 @@ Debe asegurarse de que dispone de los siguientes métodos de comunicación:
 
 * La aplicación host se ejecuta en HTTPS.
 * No puede ejecutar la aplicación en `localhost`. Si desea integrar el Selector de recursos en su equipo local, debe crear un dominio personalizado, por ejemplo `[https://<your_campany>.localhost.com:<port_number>]`, y agregar este dominio personalizado en `redirectUrl list`.
-* Puede configurar y agregar `ADOBE_PROVIDED_CLIENT_ID` a la variable de entorno de AEM Cloud Service con el `imsClientId` correspondiente.
-  ![Entorno de ID de cliente de IMS del selector de recursos](assets/asset-selector-ims-client-id-env.png)
+* Puede configurar y agregar clientID a la variable de entorno de AEM Cloud Service con el `imsClientId` correspondiente.
+<!--* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
+![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)-->
 * La lista de ámbitos de IMS debe definirse en la configuración del entorno.
 * La URL de la aplicación está en la lista de URL de redirección permitidas del cliente de IMS.
 * El flujo de inicio de sesión de IMS se configura y se representa mediante una ventana emergente en el explorador web. Por lo tanto, las ventanas emergentes deben habilitarse o permitirse en el explorador de destino.
