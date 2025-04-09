@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: bbf66195593032eb2ccf073ec78685c9d9726235
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 65%
+ht-degree: 84%
 
 ---
 
@@ -28,7 +28,7 @@ En la siguiente sección se describen las notas de la versión de la funcionalid
 
 ## Fecha de lanzamiento {#release-date}
 
-La fecha de la versión de [!DNL Adobe Experience Manager] como versión de funcionalidad actual (2025.3.0) de [!DNL Cloud Service] es el viernes, 27 de marzo de 2025. La próxima versión con funcionalidades (2025.4.0) está planificada para el viernes, 24 de abril de 2025.
+La fecha de la versión de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] de funcionalidad actual (2025.3.0) es el 27 de marzo de 2025. La próxima versión con funcionalidades (2025.4.0) está planificada para el 24 de abril de 2025.
 
 ## Notas de la versión de mantenimiento {#maintenance}
 
@@ -46,27 +46,27 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features in Dynamic Media {#new-features-dynamic-media}
+### Nuevas funciones de Dynamic Media {#new-features-dynamic-media}
 
-**Long form support for videos delivered using Dynamic Media with Open API**
+**Compatibilidad con el formato largo de vídeos enviados mediante Dynamic Media con OpenAPI**
 
-Dynamic Media with OpenAPI now supports long form videos. The long form videos can support up to 50GB and 2 hours.
+Dynamic Media con OpenAPI ahora es compatible con vídeos de formato largo. Los vídeos de formato largo pueden admitir hasta 50 GB y 2 horas.
 
 ### Dynamic Media Classic {#dmc}
 
 <!-- CARRY OVER TO APRIL 2025 RELEASE NOTES -->
 
-The Bandwidth tab in the Dynamic Media Classic reporting dashboard is no longer supported as of April 2025.
+Desde abril de 2025, la pestaña Ancho de banda del panel de informes de Dynamic Media Classic ya no es compatible.
 
-See [Bandwidth and Storage, Types of reports](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
+Ver [Ancho de banda y almacenamiento, tipos de informes](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
 
 
 ## Nuevas funcionalidades de la vista Recursos {#new-features-assets-view}
 
 
-**Support for root tags**
+**Compatibilidad con etiquetas raíz**
 
-AEM Assets now supports mapping a tag property in a metadata form to custom metadata. In addition, as an administrator, you can restrict the availability of tags to users by restricting access to a specific root tag and the tags that exist under the root tag.
+Ahora, AEM Assets admite la asignación de una propiedad de etiqueta de un formulario de metadatos a los metadatos personalizados. Además, como administrador, puede restringir la disponibilidad de etiquetas a los usuarios restringiendo el acceso a una etiqueta raíz específica y a las etiquetas que existen bajo la etiqueta raíz.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -84,27 +84,27 @@ Los formularios adaptables le permiten utilizar [plantillas de correo electróni
 
 #### Compatibilidad mejorada con el almacenamiento en la nube: carga directa del PDF en el almacenamiento del blob de Azure
 
-AEM Forms Document Generation APIs now let you [directly upload generated PDF documents](/help/forms/early-access-ea-features.md#doc-generation-api) to Azure Blob Storage. Esta mejora optimiza el almacenamiento y la recuperación, mejorando la eficiencia y la integración con los flujos de trabajo en la nube.
+Las API de generación de documentos de AEM Forms ahora le permiten [cargar directamente documentos de PDF generados](/help/forms/early-access-ea-features.md#doc-generation-api) al almacenamiento de Azure Blob. Esta mejora optimiza el almacenamiento y la recuperación, mejorando la eficiencia y la integración con los flujos de trabajo en la nube.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Compatibilidad con Java 21 {#java21}
 
-As of the January release, you can build code with Java 21 and Java 17. You gain access to new features like pattern matching, sealed classes, and various performance improvements. For configuration steps, including updating your Maven project and library versions, see the [Build Environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) article.
+A partir de la versión de enero, puede crear código con Java 21 y Java 17. Puede obtener acceso a nuevas funciones como coincidencia de patrones, clases selladas y varias mejoras de rendimiento. Para ver los pasos de configuración, incluida la actualización del proyecto Maven y las versiones de la biblioteca, consulte el artículo [Entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support).
 
-The more performant Java 21 **runtime** is automatically deployed when a Java 17 or 21 build is detected. However, Adobe also recommends opting into the Java 21 runtime for environments built with Java 11, by emailing [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Obtenga información sobre los [requisitos del tiempo de ejecución de Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
+El Java 21 **runtime** con mayor rendimiento se implementa automáticamente cuando se detecta una compilación de Java 17 o 21. Sin embargo, Adobe también recomienda incluirse en el tiempo de ejecución de Java 21 para los entornos creados con Java 11, enviando un correo electrónico a [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Obtenga información sobre los [requisitos del tiempo de ejecución de Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 
 >[!IMPORTANT]
 >
-> The Java 21 **runtime** was deployed to your dev/RDE environments in February; it will be applied to your stage/production environments on **April 28 and 29**. Note that **building code** with Java 21 (or Java 17) is independent of the Java 21 runtime -- you must explicitly take steps to build code with Java 21 (or Java 17).
+> Java 21 **runtime** se implementó en sus entornos de desarrollo/RDE en febrero; se aplicará a sus entornos de ensayo/producción el **28 y 29 de abril**. Tenga en cuenta que **crear código** con Java 21 (o Java 17) es independiente del tiempo de ejecución de Java 21; debe realizar acciones explícitas para crear código con Java 21 (o Java 17).
 
-### AEM Log-Forwarding to more destinations - Beta Program {#log-forwarding-earlyadopter}
+### Reenvío de registros de AEM a más destinos: programa Beta {#log-forwarding-earlyadopter}
 
-Now in beta, you can forward AEM logs to New Relic (using HTTPS), Amazon S3, and Sumo Logic. Note that AEM logs (including Apache/Dispatcher) are supported, but not CDN logs. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) for access.
+Ahora en la versión Beta, puede reenviar los registros de AEM a New Relic (mediante HTTPS), Amazon S3 y Sumo Logic. Tenga en cuenta que los registros de AEM (incluido Apache/Dispatcher) son compatibles, los de CDN, no. Envíe un correo electrónico a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para obtener acceso.
 
-While logs can be downloaded from Cloud Manager, many organizations find it beneficial to stream those logs to a preferred logging destination. AEM already supports (GA) AEM and CDN log forwarding to Azure Blob Storage, Datadog, HTTPS, Elasticsearch (and OpenSearch), and Splunk. This feature is configured in a self-serve manner, and deployed using the Config Pipeline.
+Aunque los registros se pueden descargar desde Cloud Manager, muchas organizaciones consideran beneficioso transmitir estos registros a un destino de registro preferido. AEM ya admite (GA) el reenvío de registros de AEM y CDN a Azure Blob Storage, Datadog, HTTPS, Elasticsearch (y OpenSearch) y Splunk. Esta función se ha configurado en forma de autoservicio e implementado usando la canalización de configuración.
 
-Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md).
+Obtenga más información en la [documentación de reenvío de registros](/help/implementing/developing/introduction/log-forwarding.md).
 
 ### Edge Computing: solicitud de comentarios {#edge-computing-feedback}
 
