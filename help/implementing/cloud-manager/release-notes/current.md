@@ -4,7 +4,7 @@ description: Obtenga información acerca del lanzamiento de Cloud Manager 2025.4
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 75afe77aa52c4c308dc1a611e4ce544a9c9c3da2
+source-git-commit: 6dc92a0f824ca9bc3726b48581ace232302691e5
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 63%
@@ -73,7 +73,6 @@ Si le interesa probar esta nueva función y compartir sus comentarios, envíe un
 * La función que mejor se adapta a su perfil: Autor de contenido, Desarrollador, Propietario empresarial, Administrador u Otro (proporcione una descripción).
 * Su superficie de acceso principal a AEM: AEM Sites, AEM Assets, AEM Forms, Cloud Manager u Otro (proporcione una descripción).
 
-
 ## Correcciones de errores
 
 * **Problema con los certificados que carecen del campo de nombre común (CN)**
@@ -90,3 +89,4 @@ Si le interesa probar esta nueva función y compartir sus comentarios, envíe un
 
 
 <!-- ## Known issues {#known-issues} -->
+
