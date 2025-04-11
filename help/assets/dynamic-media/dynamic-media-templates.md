@@ -4,10 +4,10 @@ description: Aprenda a crear plantillas de Dynamic Media con un editor de planti
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: a5626c531c4a21b9d88272e2c866721ee7be9aed
 workflow-type: tm+mt
-source-wordcount: '2834'
-ht-degree: 1%
+source-wordcount: '3050'
+ht-degree: 2%
 
 ---
 
@@ -16,16 +16,16 @@ ht-degree: 1%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
         </td>
         <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integración de AEM Assets con Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidad de la IU</b></a>
         </td>
           <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
@@ -306,6 +306,41 @@ Edite la plantilla siguiendo estos pasos:
 3. Seleccione la plantilla.
 4. Haga clic en **[!UICONTROL Editar plantilla]**. El lienzo de la plantilla muestra la plantilla y la lista de todas sus capas en el panel Capas. Comience a editar la plantilla según sus necesidades.
 
+## Añadir el vínculo de la llamada a la acción a la capa de plantilla{#add-CTA-in-dynamic-media-templates}
+
+Convierta cualquier imagen o capa de texto de la plantilla de Dynamic Media en un hipervínculo agregándole un vínculo de CTA que dirija a los usuarios a una página de destino. Siga estos pasos para agregar un vínculo de CTA a una capa:
+
+1. Vaya a la ubicación de la plantilla, seleccione la plantilla y haga clic en ![editar](/help/assets/assets/edit-pen-icon.svg) **[!UICONTROL Editar plantilla]**. La plantilla se muestra en el lienzo.
+1. Seleccione la capa de plantilla y [navegue hasta su panel de propiedades](#edit-or-delete-a-layer) para agregarle un vínculo de CTA.
+1. En el panel Propiedades, seleccione **[!UICONTROL Agregar CTA]**, especifique la dirección URL de destino en el campo **[!UICONTROL URL]** y haga clic en **[!UICONTROL Guardar]**.
+   ![agregar CTA](/help/assets/assets/add-cta.png){width="300" align="center"}
+1. Haga clic en **[!UICONTROL Vista previa]** para obtener una vista previa de la plantilla y ver sus parámetros definidos.
+1. Haga clic en **[!UICONTROL Publicar]** y seleccione **[!UICONTROL Sí]** para publicar la plantilla, si no se publicó anteriormente.
+1. Vaya a la carpeta donde se guardó esta plantilla, selecciónela y haga clic en ![página de detalles](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Detalles]**.
+1. Haga clic en **[!UICONTROL Opciones de copia]** y seleccione **[!UICONTROL Copiar código incrustado]**.
+
+   ![copiar código incrustado](/help/assets/assets/copy-options1.png){width="300" align="center"}
+
+   El siguiente es un ejemplo de código incrustado:
+
+   ```
+    <div class="adobe-dynamicmedia-template-embed-container">
+    <img id="adobe-dynamicmedia-template-image" src="http://s7ap1.scene7.com/is/image/abcd/dm-template-cta-v2?wid=800&hei=300&qlt=100&fit=constrain&cache=off" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
+    <map name="adobe-dynamicmedia-template-map">
+    <area shape="rect" coords="417,-60,817,340" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
+    <area shape="rect" coords="6,206.57,129,231.43" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
+    </map>
+    </div>
+   ```
+
+1. Agregue el código incrustado copiado al archivo HTML del sitio y ejecútelo en el explorador para mostrar la plantilla.
+
+Haga clic en el elemento CTA de la plantilla para desplazarse a la página de destino.
+
+Vea este vídeo paso a paso para aprender a añadir un vínculo de CTA a una capa de plantilla.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3457577)
+
 ## Puntos importantes que debe tener en cuenta {#important-points-to-note}
 
 * Después de crear una plantilla con capas de imagen parametrizadas para actualizaciones dinámicas, asegúrese de que las imágenes destinadas a actualizaciones futuras compartan las mismas dimensiones que las imágenes parametrizadas. Esto garantiza que las imágenes se ajusten perfectamente dentro de las capas sin desbordarse ni dejar espacios vacíos. Actualmente, la plantilla no admite ajustes de dimensión automáticos para ajustar las imágenes a las capas.
@@ -315,7 +350,7 @@ Edite la plantilla siguiendo estos pasos:
 * Cualquier operación de actualización en una carpeta (por ejemplo, Publicar o Eliminar) desde la sección de Assets afecta a las plantillas de Dynamic Media disponibles en esa carpeta.
 * La papelera no funciona para las plantillas de Dynamic Media. Si un recurso se mueve a la papelera y, a continuación, se restaura, se restaura en AEM pero no en Dynamic Media. Lo mismo es válido para las plantillas de Dynamic Media.
 
-## Vea también
+## Véase también
 
 1. Explorar [Dynamic Media y sus capacidades](/help/assets/dynamic-media/dynamic-media.md)
 1. Explorar [Dynamic Media con funciones de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md)
