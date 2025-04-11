@@ -4,7 +4,7 @@ description: Aprenda a crear plantillas de Dynamic Media con un editor de planti
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 3d0e3430b886cefb9b18188641483d23ce66d442
+source-git-commit: 362bbcf872a37781dfa849b703425f49c30660ac
 workflow-type: tm+mt
 source-wordcount: '3050'
 ht-degree: 2%
@@ -313,13 +313,15 @@ Convierta cualquier imagen o capa de texto de la plantilla de Dynamic Media en u
 1. Vaya a la ubicación de la plantilla, seleccione la plantilla y haga clic en ![editar](/help/assets/assets/edit-pen-icon.svg) **[!UICONTROL Editar plantilla]**. La plantilla se muestra en el lienzo.
 1. Seleccione la capa de plantilla y [navegue hasta su panel de propiedades](#edit-or-delete-a-layer) para agregarle un vínculo de CTA.
 1. En el panel Propiedades, seleccione **[!UICONTROL Agregar CTA]**, especifique la dirección URL de destino en el campo **[!UICONTROL URL]** y haga clic en **[!UICONTROL Guardar]**.
-   ![agregar CTA](/help/assets/assets/add-cta.png){width="300" align="center"}
+
+![agregar CTA](/help/assets/assets/add-cta.png)
+
 1. Haga clic en **[!UICONTROL Vista previa]** para obtener una vista previa de la plantilla y ver sus parámetros definidos.
 1. Haga clic en **[!UICONTROL Publicar]** y seleccione **[!UICONTROL Sí]** para publicar la plantilla, si no se publicó anteriormente.
 1. Vaya a la carpeta donde se guardó esta plantilla, selecciónela y haga clic en ![página de detalles](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Detalles]**.
 1. Haga clic en **[!UICONTROL Opciones de copia]** y seleccione **[!UICONTROL Copiar código incrustado]**.
 
-   ![copiar código incrustado](/help/assets/assets/copy-options1.png){width="300" align="center"}
+   ![copiar código incrustado](/help/assets/assets/copy-options1.png)
 
    El siguiente es un ejemplo de código incrustado:
 
