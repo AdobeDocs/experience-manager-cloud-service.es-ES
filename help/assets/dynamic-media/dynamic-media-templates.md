@@ -4,7 +4,7 @@ description: Aprenda a crear plantillas de Dynamic Media con un editor de planti
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 362bbcf872a37781dfa849b703425f49c30660ac
+source-git-commit: 7bb15e0b8aa24f9737f70f86c78dc09be1ea4750
 workflow-type: tm+mt
 source-wordcount: '3050'
 ht-degree: 2%
@@ -314,7 +314,7 @@ Convierta cualquier imagen o capa de texto de la plantilla de Dynamic Media en u
 1. Seleccione la capa de plantilla y [navegue hasta su panel de propiedades](#edit-or-delete-a-layer) para agregarle un vínculo de CTA.
 1. En el panel Propiedades, seleccione **[!UICONTROL Agregar CTA]**, especifique la dirección URL de destino en el campo **[!UICONTROL URL]** y haga clic en **[!UICONTROL Guardar]**.
 
-![agregar CTA](/help/assets/assets/add-cta.png)
+   ![agregar CTA](/help/assets/assets/add-cta.png)
 
 1. Haga clic en **[!UICONTROL Vista previa]** para obtener una vista previa de la plantilla y ver sus parámetros definidos.
 1. Haga clic en **[!UICONTROL Publicar]** y seleccione **[!UICONTROL Sí]** para publicar la plantilla, si no se publicó anteriormente.
@@ -327,7 +327,7 @@ Convierta cualquier imagen o capa de texto de la plantilla de Dynamic Media en u
 
    ```json
     <div class="adobe-dynamicmedia-template-embed-container">
-    <img id="adobe-dynamicmedia-template-image" src="http://s7ap1.scene7.com/is/image/abcd/dm-template-cta-v2?wid=800&hei=300&qlt=100&fit=constrain&cache=off" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
+    <img id="<Image ID>>" src="<Image Source>>" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
     <map name="adobe-dynamicmedia-template-map">
     <area shape="rect" coords="417,-60,817,340" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
     <area shape="rect" coords="6,206.57,129,231.43" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
