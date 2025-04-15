@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: beab4f94dc6d78c2b1ad87a02b9fe46dd0438bcc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '295'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Estas son las notas de la versión de 10 de marzo de 2025 del editor universal.
 Se han lanzado varias extensiones nuevas en [Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/) para el editor universal, lo que mejora la experiencia de creación.
 
 * **Extensión MSM**: ahora puede interrumpir y volver a crear instancias de la herencia de componentes/bloques mediante esta extensión.
-* **Extensión de propiedades de página**: Acceda a la ventana de propiedades de página de la página directamente desde el editor universal mediante esta extensión.
+* **Extensión de propiedades de página**: acceda a la ventana de propiedades de página de la página directamente desde el editor universal mediante esta extensión.
 * **Extensión del flujo de trabajo**: utilice flujos de trabajo en páginas y fragmentos de contenido instrumentados en la página que usa esta extensión.
 * **Extensión de bloqueo de página**: utilice esta extensión para bloquear y desbloquear una página directamente desde el editor universal.
 
