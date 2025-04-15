@@ -4,9 +4,9 @@ description: Aprenda a crear plantillas de Dynamic Media con un editor de planti
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 7bb15e0b8aa24f9737f70f86c78dc09be1ea4750
+source-git-commit: 808ee16dbda140fe5bf64ecae249712b17f957db
 workflow-type: tm+mt
-source-wordcount: '3050'
+source-wordcount: '3071'
 ht-degree: 2%
 
 ---
@@ -87,6 +87,7 @@ Para crear una plantilla de Dynamic Media, debe tener:
 
 Para crear una plantilla de DM, siga estos pasos:
 
+1. Vaya a su página de inicio de [!DNL AEM Assets] y [cargue y publique sus imágenes en [!DNL AEM] y [!DNL Dynamic Media] simultáneamente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) para usarlas para crear la plantilla.
 1. [Crear un lienzo en blanco](#create-a-canvas)
 1. [Añadir imágenes al lienzo](#add-images-to-the-canvas)
 1. [Añadir capas de texto al lienzo](#add-text-to-the-canvas)
@@ -282,7 +283,7 @@ Para copiar la URL de la plantilla publicada que se muestra en la vista previa:
 1. Utilice esta URL para la comercialización rápida de sus productos o servicios. Puede compartir esta URL con sus clientes o integrarla en su sitio web o en cualquier aplicación de terceros descendente para mostrar el banner y realizar actualizaciones en tiempo real para reflejar las ofertas en curso.
 
 Aprenda a crear una plantilla de Dynamic Media paso a paso en este vídeo.
->[!VIDEO](https://video.tv.adobe.com/v/3443281)
+>[!VIDEO](https://video.tv.adobe.com/v/3457616)
 
 ## Realice actualizaciones en tiempo real de la plantilla desde la dirección URL{#update-the-template-from-the-url}
 

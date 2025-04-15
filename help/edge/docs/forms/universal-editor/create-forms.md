@@ -1,6 +1,6 @@
 ---
 title: ¿Cómo se crean formularios independientes basados en la plantilla de Edge Delivery Services mediante el Editor universal?
-description: En este artículo se explica cómo utilizar el Editor universal para crear formularios seleccionando una plantilla basada en Edge Delivery Services en el Asistente para la creación de formularios. También puede publicar los formularios en AEM Edge Delivery Services.
+description: En este artículo se explica cómo utilizar el Editor universal para crear formularios seleccionando una plantilla basada en Edge Delivery Services en el Asistente para la creación de formularios. También puede publicar los formularios en Edge Delivery Services de AEM.
 feature: Edge Delivery Services
 role: User
 hide: true
@@ -9,7 +9,7 @@ exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: b0cedf31a8759cdf403e1e7d6aadcab3bba03bab
 workflow-type: tm+mt
 source-wordcount: '1060'
-ht-degree: 78%
+ht-degree: 87%
 
 ---
 
@@ -34,18 +34,18 @@ Este artículo le guía a través del proceso de creación de los formularios in
 
 ## Trabajar con formularios en el editor universal
 
-Con el editor universal, puede crear fácilmente formularios interactivos e interactivos independientes. Puede realizar las siguientes acciones en los formularios en el editor universal:
-* [Creación de un formulario](#create-a-form)
-* [Crear un formulario](#author-a-form)
-* [Publicación de un formulario](#publish-a-form)
-* [Administración de un formulario](#manage-a-form)
+Con el editor universal, puede crear fácilmente formularios interactivos e interactivos independientes. Puede realizar las siguientes acciones en los formularios en el Editor universal:
+* [Crear un formulario](#create-a-form)
+* [Ser autor de un formulario](#author-a-form)
+* [Publicar un formulario](#publish-a-form)
+* [Administrar un formulario](#manage-a-form)
 
 >[!NOTE]
 >
-> También puede [crear un formulario en el sitio de AEM mediante la plantilla de sitio de Edge Delivery Services en el editor universal y publicarlo en Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project).
+> También puede [crear un formulario en AEM Site mediante la plantilla de sitio de Edge Delivery Services en el editor universal y publicarlo en Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project).
 
 
-### Creación de un formulario
+### Crear un formulario
 
 1. Inicie sesión en la instancia de autor de AEM Forms as a Cloud Service.
 1. Seleccione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
@@ -57,7 +57,7 @@ Con el editor universal, puede crear fácilmente formularios interactivos e inte
 
    Al seleccionar una plantilla basada en Edge Delivery Services, se habilita el botón **[!UICONTROL Crear]**.
 1. (Opcional) En las pestañas **[!UICONTROL Fuente de datos]** o **[!UICONTROL Envío]**, puede seleccionar una fuente de datos o una acción de envío.
-1. (Opcional) En la pestaña **[!UICONTROL Envío]**, puede especificar una fecha de publicación o cancelación de publicación para un formulario.
+1. (Opcional) En la pestaña **[!UICONTROL Entrega]**, puede especificar una fecha de publicación o cancelación de publicación de un formulario.
 
 1. Haga clic en **[!UICONTROL Crear]** y aparece el asistente **Crear formulario**.
 1. Especifique el **Nombre** y **Título**.
@@ -77,7 +77,7 @@ Con el editor universal, puede crear fácilmente formularios interactivos e inte
 
    Al hacer clic en **[!UICONTROL Crear]**, el formulario se abre en el editor universal para la creación.
 
-### Crear un formulario
+### Ser autor de un formulario
 
 1. Abra el explorador de contenido y vaya al componente **[!UICONTROL Formulario adaptable]** en el **Árbol de contenido**.
 
@@ -117,7 +117,7 @@ Con el editor universal, puede crear fácilmente formularios interactivos e inte
 
    1. Click **[!UICONTROL Save and Close]**. The configuration is saved. -->
 
-### Publicación de un formulario
+### Publicar un formulario
 
 Ahora, publique el formulario independiente en Edge Delivery Services haciendo clic en el botón **[!UICONTROL Publicar]** en la esquina superior derecha del editor universal.
 
@@ -147,7 +147,7 @@ La estructura de la URL sigue siendo la misma para las versiones ensayadas y act
 
 ![Ver formulario publicado](/help/edge/assets/eds-view-publish-form.png)
 
-### Administración de un formulario
+### Administrar un formulario
 
 Puede realizar varias operaciones en el formulario mediante la interfaz de usuario de AEM Forms.
 
