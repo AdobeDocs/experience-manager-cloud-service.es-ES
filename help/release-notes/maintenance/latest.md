@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 3fb9e633da6269b5b9847a825951746ddeb532f9
 workflow-type: tm+mt
-source-wordcount: '1589'
-ht-degree: 94%
+source-wordcount: '1588'
+ht-degree: 99%
 
 ---
 
@@ -43,7 +43,7 @@ La activación de funcionalidades 2025.4.0 proporciona el conjunto completo de f
 * SITES-27781: se ha implementado la validación a nivel de modelo para las referencias de fragmento de contenido, lo que permite validar los fragmentos a los que se hace referencia con respecto a sus restricciones de modelo y la etiqueta requerida.
 * SITES-27784: actualizar la generación de consultas SQL para utilizar la función PATH en lugar de `jcr:path`.
 * SITES-28040: Adobe Target ExperienceFragmentsReplicationListener está dañado.
-* SITES-28051: obtener los permisos del usuario actual sobre un fragmento de contenido: GET /cf/fragments/{fragmentId}/permissions.
+* SITES-28051: obtener los permisos del usuario actual sobre un fragmento de contenido: GET /cf/fragments/{fragmentId}/{fragmentId}/permissions.
 * SITES-28190: configuración para la prueba de integración de vista previa.
 * SITES-28227: al añadir recursos como referencias a un fragmento, validamos que el recurso existe.
 * SITES-28248: alternar eventos de sitios basados en la configuración OSGI.
@@ -67,10 +67,10 @@ La activación de funcionalidades 2025.4.0 proporciona el conjunto completo de f
 * SITES-24907: Edge Delivery con el editor universal: admite la publicación de Assets en varios sitios para casos de uso de MSM (acceso rápido).
 * SITES-27956: Edge Delivery con el editor universal: mejorar el rendimiento de la publicación (acceso rápido).
 * SITES-27956: Edge Delivery con el editor universal: mejorar la gestión de errores para publicar en Edge Delivery Services (acceso rápido).
-* SITES-29602: CIF: eliminación del uso de guayaba en core-cif-components-core.
-* SITES-25785: CIF: agregando la selección de variantes de producto para el tipo de datos de referencia de producto de CIF.
+* SITES-29602: CIF: eliminación del uso de Guava en core-cif-components-core.
+* SITES-25785: CIF: adición de la selección de variantes de producto para el tipo de datos de referencia de producto de CIF.
 * SITES-26392: CIF[Experimental]: JSON+LD en componentes principales de CIF en PDP.
-* SITES-21278: CIF[Experimental]: Capacidad de CIF para borrar la caché.
+* SITES-21278: CIF[Experimental]: posibilidad de que CIF borre la caché.
 
 ### Problemas solucionados {#fixed-issues-20133}
 
@@ -115,9 +115,9 @@ La activación de funcionalidades 2025.4.0 proporciona el conjunto completo de f
 * SITES-29363: el botón Restablecer Live Copy no funciona para la jerarquía de contenido de Live Copy anidada.
 * SITES-29369: problema de evento de Assets en AIO | Activación incorrecta de eventos de página publicada/no publicada.
 * SITES-29972: las acciones Eliminar y Cambiar nombre a veces producen comentarios de flujo de trabajo no verdaderos.
-* SITES-24631: CIF: Problema de búsqueda en el campo de producto.
-* SITES-24902: CIF: El formato de la dirección URL del producto no funciona como se esperaba para los #variant_sku.
-* SITES-29191: CIF: no se pueden añadir más de 20 SKU al componente de lista de productos.
+* SITES-24631: CIF: problema de búsqueda en el campo del producto.
+* SITES-24902: CIF: el formato de la dirección URL del producto no funciona como se esperaba para #variant_sku.
+* SITES-29191: CIF: no se pueden añadir más de 20 SKU al componente de lista de productos.
 
 ### Problemas conocidos {#known-issues-20133}
 
