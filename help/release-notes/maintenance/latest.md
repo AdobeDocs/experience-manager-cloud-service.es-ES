@@ -4,10 +4,10 @@ description: Notas de la versión actuales sobre el mantenimiento de [!DNL Adobe
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 3fb9e633da6269b5b9847a825951746ddeb532f9
+source-git-commit: c5152543550b5f81bf0b79741f288b0c16648584
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 99%
+source-wordcount: '452'
+ht-degree: 45%
 
 ---
 
@@ -16,145 +16,60 @@ ht-degree: 99%
 
 En la siguiente sección se describen las notas de la versión técnicas actuales sobre el mantenimiento de Experience Manager as a Cloud Service.
 
-## Versión 20133 {#20133}
+## Versión 20476 {#20476}
 
-A continuación, se resumen las mejoras continuas para la versión de mantenimiento 20133, que se publicó el 1 de abril de 2025. La versión de mantenimiento anterior fue la 19823.
+A continuación, se resumen las mejoras continuas para la versión de mantenimiento 20476, que se publicó el miércoles, 15 de abril de 2025. La versión de mantenimiento anterior fue la 20133.
 
 La activación de funcionalidades 2025.4.0 proporciona el conjunto completo de funcionalidades para esta versión de mantenimiento. Consulte la [Hoja de ruta de versiones de Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obtener más información.
 
-### Mejoras {#enhancements-20133}
+### Mejoras {#enhancements-20476}
 
-* ASSETS-47850: restringir la adición de configuraciones de Scene7 si AEM CS está habilitado para ES.
-* CQ-4359547: eliminación completa de Guava del repositorio de Git.
-* FORMS-17551: se ha añadido compatibilidad con el documento de registro (DoR) para integraciones de lista de SharePoint.
-* FORMS-18432: se ha implementado la configuración de relleno previo del lado del cliente específica del formulario (basada en regex) para habilitar la funcionalidad de relleno previo selectivo sin cambios en el nivel OSGI.
-* FORMS-18513: se ha implementado la compatibilidad con la transformación del árbol de datos en AEP Connector para mejorar la funcionalidad del asistente y las capacidades de gestión de datos.
-* FORMS-19068: se ha añadido compatibilidad con las acciones de envío de AEP Connector en las API de Forms Manager para mejorar las funcionalidades de integración de datos de formulario.
-* GRANITE-57717: actualizar el paquete de cliente en AEM.
-* SITES-10469: AdapterFactory siempre debe devolver la misma instancia de PageManager.
-* SITES - 25130: componentes básicos de la versión 2.27.0.
-* SITES-25433: admite el procesamiento de páginas completas al comparar versiones antiguas.
-* SITES-25923: LinkInfoStorageImpl puede bloquearse cuando ya no se almacenan direcciones URL.
-* SITES-26208: la eliminación de un fragmento de contenido mediante un flujo de trabajo ahora permite actualizar los recursos de referencia al eliminar el fragmento recién eliminado.
-* SITES-26500: adición de la opción para mover fragmentos de contenido a través del flujo de trabajo - `move-fragments`.
-* SITES-26711: activador de despliegue: los vínculos no se actualizan.
-* SITES-27583: los fragmentos de experiencia pierden el historial de versiones después de moverse.
-* SITES-27618: la búsqueda de referencias de un fragmento en páginas no devuelve todos los resultados.
-* SITES-27781: se ha implementado la validación a nivel de modelo para las referencias de fragmento de contenido, lo que permite validar los fragmentos a los que se hace referencia con respecto a sus restricciones de modelo y la etiqueta requerida.
-* SITES-27784: actualizar la generación de consultas SQL para utilizar la función PATH en lugar de `jcr:path`.
-* SITES-28040: Adobe Target ExperienceFragmentsReplicationListener está dañado.
-* SITES-28051: obtener los permisos del usuario actual sobre un fragmento de contenido: GET /cf/fragments/{fragmentId}/{fragmentId}/permissions.
-* SITES-28190: configuración para la prueba de integración de vista previa.
-* SITES-28227: al añadir recursos como referencias a un fragmento, validamos que el recurso existe.
-* SITES-28248: alternar eventos de sitios basados en la configuración OSGI.
-* SITES-28255: falta el nombre completo en las 3 propiedades de auditoría: creadas, modificadas y publicadas.
-* SITES-28390: PageImpl: Optimize hasContent().
-* SITES-28404: la eliminación de páginas en el autor debería cancelar su publicación en el servicio de vista previa.
-* SITES-28446: se han añadido dos nuevos campos que no eran visibles en la respuesta: el marcador de posición de NumberModelField y los modelos permitidos de LongTextModelField.
-* SITES-28536: crear el punto final `RENAME` para fragmentos de contenido.
-* SITES-28537: adición de la opción para cambiar el nombre de los fragmentos de contenido mediante el flujo de trabajo - `rename-fragments`.
-* SITES-28538: las referencias deben volverse a publicar para mantener un contenido válido en el autor y la publicación.
-* SITES-28549: crear `/cf/domains` para devolver el ID de dominio en función del nivel de AEM.
-* SITES-29026: se ha añadido un parámetro opcional que especifica la configuración regional del fragmento de contenido, utilizando un idioma y un código de país.
-* SITES-29031: se ha mejorado la lógica para los fragmentos PATCH-ing, lo que proporciona un mejor rendimiento.
-* SITES-29169: los recursos en el estado PUBLICADO se volverán a publicar si hacen referencia a un recurso que se movió, cambió de nombre o eliminó.
-* SITES-29376: añadir alternancia de código para validar la eliminación de recursos publicados.
-* SITES-29417: actualizar `/libs/cq/Page/proxy.jsp` para reenviar la solicitud al nodo jcr:content en lugar de incluirlo.
-* SITES-2947: crear/modificar la visualización kibana para comparar el rasp de publicación.
-* SITES-29733: mayor rendimiento de la búsqueda de modelos por etiquetas de fragmentos de contenido.
-* SITES-8316: políticas de contenido: almacenar en caché ContentPolicyManager.
-* SITES-24906: Edge Delivery con el editor universal: admite hojas de cálculo creadas por el autor sin una asignación (acceso rápido).
-* SITES-24907: Edge Delivery con el editor universal: admite la publicación de Assets en varios sitios para casos de uso de MSM (acceso rápido).
-* SITES-27956: Edge Delivery con el editor universal: mejorar el rendimiento de la publicación (acceso rápido).
-* SITES-27956: Edge Delivery con el editor universal: mejorar la gestión de errores para publicar en Edge Delivery Services (acceso rápido).
-* SITES-29602: CIF: eliminación del uso de Guava en core-cif-components-core.
-* SITES-25785: CIF: adición de la selección de variantes de producto para el tipo de datos de referencia de producto de CIF.
-* SITES-26392: CIF[Experimental]: JSON+LD en componentes principales de CIF en PDP.
-* SITES-21278: CIF[Experimental]: posibilidad de que CIF borre la caché.
+* CNTBF-411: Añada la posibilidad de eliminar el trabajo de Sling en caso de que JCR lo elimine.
+* CQ-4359813: Kit de traducción de AEM: 20 de marzo.
+* CQ-4359811: Kit de traducción de Granite: 20 de marzo.
+* GRANITE-57863: actualizar Filevault a la versión 3.8.4.
+* GRANITE-56154: Configurar reintentos exponenciales en oak-segment-azure.
+* GRANITE-55999: Mejora del rendimiento de UserPropertiesService.
+* GRANITE-55781: Evite la reconfiguración redundante de la pertenencia de usuarios.
+* GRANITE-53956: Actualice Azure SDK V8 a V12 para oak-segment-azure.
+* GRANITE-50654: en la pestaña de permisos principales, elimine la carga de &quot;todos&quot; de forma predeterminada en el front-end.
+* SKYOPS-103444: Actualización a Sling ResourceResolver 1.12.6.
+* SKYOPS-101147: Actualización de la configuración de caconfig impl.
+* SKYOPS-97124: agregue advertencias del analizador para versiones obsoletas del paquete SPIFly.
+* SKYOPS-95826: Actualice las versiones de Java en tiempo de ejecución a 11.0.26 y 21.0.6.
+* SKYOPS-53671: utiliza artefactos instalados por el cliente de modelos de funciones en reinicios de AEM (RDE).
 
-### Problemas solucionados {#fixed-issues-20133}
+### Problemas solucionados {#fixed-issues-20476}
 
-* CQ-4358378: gestión de errores de licencia en la ejecución de la traducción.
-* CQ-4359263: no aparece ningún mensaje en el cuadro de diálogo cuando se completa el trabajo.
-* CQ-4359386: no se puede añadir el diccionario i18n al proyecto de traducción en AEMaaCS.
-* FORMS-18068: problemas de procesamiento del texto en negrita en el documento de registro (DoR) para grupos de botones de opción y casillas de verificación que utilizan campos de texto enriquecido.
-* FORMS-18189: se ha modificado la gestión de funciones personalizadas para evitar el registro de errores en bibliotecas de cliente vacías y mejorar la visualización de errores en la IU.
-* FORMS-18213: se ha implementado la funcionalidad para ocultar/excluir campos deshabilitados del documento de registro (DoR) para mejorar la claridad del documento y la experiencia del usuario.
-* FORMS-18271: el editor de temáticas de Forms muestra mensajes de error no localizados, lo que afecta a la experiencia del usuario en la configuración del formulario y la personalización de temáticas.
-* FORMS-18304: los documentos PDF/A-1b que pasan la validación en Acrobat y LiveCycle ES4 se han marcado incorrectamente como no compatibles en AEM 6.5 Forms debido a errores de color dependientes del dispositivo.
-* FORMS-18325: se ha añadido la configuración en la nube de Adobe Experience Platform (AEP) para mejorar la integración de datos de formulario y las capacidades de procesamiento.
-* FORMS-18360: la administración mejorada del ámbito de la lista de SharePoint para equipos y sitios en Forms Document Management para mejorar la organización de los datos y el control de acceso.
-* FORMS-18375: los formularios basados en componentes base seleccionan incorrectamente las configuraciones de recaptcha de la carpeta `conf/global` cuando no se selecciona ningún contenedor de configuración específico.
-* FORMS-18426: la funcionalidad de búsqueda de listas de SharePoint falla cuando los nombres de lista contienen caracteres especiales (por ejemplo, &#39;-&#39;), lo que afecta a la integración del formulario con las listas de SharePoint.
-* FORMS-19028: la funcionalidad de relleno previo del lado del cliente interrumpe la gestión de eventos del formulario, lo que evita que los eventos Value commit y DOMContentLoaded se activen correctamente al cargarse el formulario.
-* FORMS-6950: se han añadido las funciones y los atributos ARIA necesarios a los componentes de vista de árbol del navegador del sistema de archivos para mejorar la accesibilidad del lector de pantalla y cumplir con el estándar WCAG 4.1.2 Nombre, función, valor (nivel A).
-* FORMS-7016: el orden de enfoque del teclado en el Editor de formularios no sigue la navegación lógica.
-* SITES-1960: rendimiento mejorado de la operación de vista previa JSON del Editor de fragmentos de contenido.
-* SITES-24308: la barra de desplazamiento horizontal aparece cuando se cambia el tamaño del contenido al 400 %.
-* SITES-24493: el elemento interactivo no tiene la función requerida.
-* SITES-24669: el divisor de la ventana del carril de referencias no es accesible mediante el teclado.
-* SITES-26881: error de accesibilidad de AEMaaCS: se proporciona la función incorrecta para el icono &quot;Tres puntos&quot; que aparece junto al campo de entrada de comentarios.
-* SITES-26956: seguimiento en SITES-24920 No se puede mover la página en el entorno de producción.
-* SITES-27707: la lista de recursos del Buscador de contenido falla debido a problemas con los nombres de recursos (regresión de 6.5 SP22).
-* SITES-27757: Edge Delivery con el editor universal: reescribir los iconos según la semántica helix-html-pipeline.
-* SITES-27780: aparece una etiqueta &lt;br> inesperada en RTE con el texto sin formato DefaultPasteMode en SP22.
-* SITES-27958: el verificador de vínculos genera errores &quot;Esta sesión se ha cerrado&quot;.
-* SITES-28149: ExperienceFragmentLinkRewriterProvider personalizado no se activa durante la exportación de XF a Target.
-* SITES-28449: error en la interfaz de usuario del widget del flujo de trabajo - Incluir los elementos secundarios no muestra todas las páginas secundarias en AEM.
-* SITES-28456: falta la notificación en la interfaz de usuario en caso de guardar una consulta persistente incorrecta en el Explorador de GraphiQL (seguimiento: SITES-28313).
-* SITES-28464: actualizar la consulta del fragmento para utilizar fechas con formato en milisegundos.
-* SITES-28486: la edición in situ en el nuevo Editor de fragmentos de contenido no redirige al editor antiguo.
-* SITES-28570: GraphQL del fragmento de contenido gestiona correctamente los metadatos de los recursos que faltan.
-* SITES-28580: el buscador de recursos de imagen clásico se ha interrumpido tras la actualización a SP22.
-* SITES-28600: Lanzamientos: contenido duplicado.
-* SITES-28668: no se puede promocionar el lanzamiento con LaunchPromotionParameters.
-* SITES-28820: prefijo de inicio añadido dos veces dentro de la nueva variación creada en rebase.
-* SITES-28877: el servicio de URL de la UE lanza una excepción cuando el punto final del externalizador local no está definido.
-* SITES-28956: la operación de eliminación de etiquetas muestra una advertencia, si los fragmentos de contenido hacen referencia a la etiqueta.
-* SITES-29208: las referencias y las variaciones se devuelven correctamente en situaciones en las que un campo de referencia contiene una ruta no válida.
-* SITES-29363: el botón Restablecer Live Copy no funciona para la jerarquía de contenido de Live Copy anidada.
-* SITES-29369: problema de evento de Assets en AIO | Activación incorrecta de eventos de página publicada/no publicada.
-* SITES-29972: las acciones Eliminar y Cambiar nombre a veces producen comentarios de flujo de trabajo no verdaderos.
-* SITES-24631: CIF: problema de búsqueda en el campo del producto.
-* SITES-24902: CIF: el formato de la dirección URL del producto no funciona como se esperaba para #variant_sku.
-* SITES-29191: CIF: no se pueden añadir más de 20 SKU al componente de lista de productos.
-
-### Problemas conocidos {#known-issues-20133}
-
+* ASSETS-49027: [Regresión] AemRequestEventFilter interrumpe las solicitudes POST a la consola web de OSGI.
+* ASSETS-44956: No se puede seleccionar ninguna representación de Dynamic Media. Las etiquetas de script deben cargarse en el componente de nivel superior.
+* CNTBF-410: puntero nulo CheckJob getId en el paquete ContentCopy.
+* CNTBF-341: Índice de exportación de ContentCopy fuera de los límites.
+* CQ-4355411: la información del objeto permanece en la pantalla del cuadro de diálogo Preferencias de usuario.
+* GRANITE-57265: Los valores de selección desplegable no se seleccionan.
+* GRANITE-57067: faltan políticas efectivas en la interfaz de usuario.
 * SITES-30727: es posible que se produzca un error al arrastrar y soltar subcomponentes dentro del editor de AEM.
+* SKYOPS-90607: Los trabajos de Sling se ejecutan en una implementación inactiva / contenido mutable.
+* SKYOPS-95722: eliminar el tamaño `MaxPermSize` de las marcas de inicio rápido en AEM-SDK.
+* SKYOPS-103569: Algunas imágenes no se pueden cargar con Java 21: `javax.imageio.IIOException: Cannot create Sun JPEGImageReader backend`.
 
-### Características y API obsoletas {#deprecated-20133}
+### Problemas conocidos {#known-issues-20476}
+
+Ninguna.
+
+### Características y API obsoletas {#deprecated-20476}
 
 Las funciones y API obsoletas y eliminadas de AEM as a Cloud Service se detallan en el documento [Funciones y API obsoletas y eliminadas](/help/release-notes/deprecated-removed-features.md).
 
-#### Cambios en la sincronización de grupos de usuarios y perfiles de producto {#changes-user-groups}
+### Correcciones de seguridad {#security-20476}
 
-Cuando se utiliza Adobe Admin Console para la administración de permisos, NO SE DEBEN utilizar los siguientes grupos porque ya no se sincronizarán más con AEM:
-* Grupos de AEM que terminan con _GROUP_NAME_SUFFIX.
-* Perfiles de producto de otros entornos, programas o productos.
+AEM as a Cloud Service se dedica a optimizar la seguridad y el rendimiento de su plataforma. Esta versión de mantenimiento aborda 5 vulnerabilidades identificadas, reforzando nuestro compromiso con una sólida protección del sistema.
 
-Para obtener más información, compruebe [Cambios en la sincronización de grupos de usuarios y perfil de producto](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization).
-
-#### Desuso del editor de SPA {#deprecate-spa-editor}
-
-El [Editor de SPA](/help/implementing/developing/hybrid/introduction.md) ha quedado obsoleto para nuevos proyectos a partir de la versión 2025.4.0. El editor de SPA sigue siendo compatible con los proyectos existentes, pero no debe utilizarse en nuevos proyectos.
-
-Los editores preferidos para administrar contenido sin encabezado son:
-
-* [El Editor universal](/help/edge/wysiwyg-authoring/authoring.md) para la edición visual.
-* [El editor de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) para la edición de contenido sin encabezado basada en formularios.
-
-Puede encontrar más información sobre este editor en desuso en el documento [Desuso del editor de SPA.](/help/implementing/developing/hybrid/spa-editor-deprecation.md)
-
-### Correcciones de seguridad {#security-20133}
-
-AEM as a Cloud Service se dedica a optimizar la seguridad y el rendimiento de su plataforma. Esta versión de mantenimiento aborda 34 vulnerabilidades identificadas, reforzando nuestro compromiso con una sólida protección del sistema.
-
-### Tecnologías integradas {#embedded-tech-20133}
+### Tecnologías integradas {#embedded-tech-20476}
 
 | Tecnología | Versión | Vínculo |
 |---|---|---|
-| AEM Oak | 1.76.0 | [API Oak 1.76.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.76.0/index.html) |
+| AEM Oak | 1.78.0 | [API Oak 1.78.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.78.0/index.html) |
 | API AEM SLING | 2.27.6 | [API de Apache Sling 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.26-1.4.0 | [Especificación de idioma de la plantilla HTML](https://github.com/adobe/htl-spec) |
 | Los componentes principales de AEM | 2.28.0 | [Componentes principales de WCM AEM](https://github.com/adobe/aem-core-wcm-components) |
