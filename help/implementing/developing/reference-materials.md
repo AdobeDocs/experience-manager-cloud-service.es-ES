@@ -1,29 +1,29 @@
 ---
 title: Materiales de referencia de la API
-description: AEM Tiene API amplias y potentes que puede utilizar para su proyecto de experiencia digital.
+description: AEM tiene API amplias y potentes que puede utilizar para su proyecto de experiencia digital.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 5%
+source-wordcount: '659'
+ht-degree: 4%
 
 ---
 
 # Materiales de referencia de la API {#api-reference-materials}
 
-Adobe Experience Manager AEM AEM () proporciona muchas API para desarrollar aplicaciones y ampliar el alcance de los recursos AEM La tecnología de código abierto se basa en varias tecnologías de código abierto, que también se pueden utilizar.
+Adobe Experience Manager (AEM) proporciona muchas API para desarrollar aplicaciones y ampliar AEM. AEM se basa en varias tecnologías de código abierto, que también se pueden utilizar.
 
-## AEM API de núcleo {#core-aem-apis}
+## API principales de AEM {#core-aem-apis}
 
-AEM Las siguientes API son fundamentales para la.
+Las siguientes API son fundamentales para AEM.
 
 | API | Descripción |
 |---|---|
 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Abstracciones de productos, como páginas, recursos, flujos de trabajo, etc. |
-| [IU de Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Pila web abierta de Adobe que proporciona varios componentes esenciales (los materiales de Granite 6.5 se aplican a AEMaaCS) |
-| [IU de Coral](https://opensource.adobe.com/coral-spectrum/documentation/) | Estilo visual de Adobe para las IU de la nube, diseñado para proporcionar coherencia en la experiencia del usuario |
+| [IU de Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Pila web abierta de Adobe que proporciona varios componentes esenciales (los materiales Granite 6.5 se aplican a AEMaaCS) |
+| [IU de Coral](https://opensource.adobe.com/coral-spectrum/documentation/) | Estilo visual de Adobe para IU en la nube, diseñado para proporcionar coherencia en la experiencia del usuario |
 
 <!---
 |Editor core JavaScript API reference|Provides all the base objects and concepts to support authoring of content resources|
@@ -31,11 +31,11 @@ AEM Las siguientes API son fundamentales para la.
 
 >[!NOTE]
 >
->Para obtener la información más reciente sobre las API de Experience Manager, visita también [API de Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+>Para obtener la información más reciente sobre las API de Experience Manager, visite también [API de Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 ## Marcos de trabajo adicionales {#additional-apis}
 
-AEM Se basa en varias API de código abierto adicionales.
+AEM se basa en varias API de código abierto adicionales.
 
 | API | Descripción |
 |---|---|
@@ -46,7 +46,7 @@ AEM Se basa en varias API de código abierto adicionales.
 
 ## Directrices de preferencias de API {#guidelines}
 
-AEM Se basa en los cuatro conjuntos de API de Java principales siguientes en orden descendente de preferencia.
+AEM se basa en los cuatro conjuntos de API de Java principales siguientes en orden descendente de preferencia.
 
 | Prioridad | API | Descripción |
 |---|---|---|
@@ -55,23 +55,23 @@ AEM Se basa en los cuatro conjuntos de API de Java principales siguientes en ord
 | 3 | [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Resumen de datos y contenido, como nodos, propiedades y sesiones. |
 | 4 | [Apache Felix](https://felix.apache.org/) | Abstracciones del contenedor de aplicaciones OSGi, como servicios y componentes (OSGi). |
 
-AEM Si proporciona una API, la prefiere en lugar de Sling, JCR y OSGi. AEM Si no proporciona una API, prefiera Sling en lugar de JCR y OSGi.
+Si AEM proporciona una API, prefiera esta en lugar de Sling, JCR y OSGi. Si AEM no proporciona una API, prefiera Sling sobre JCR y OSGi.
 
 >[!TIP]
 >
 >Para obtener más información sobre estas directrices, consulte el documento [Comprender las prácticas recomendadas de la API de Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html).
 
-## AEM API y servicios de envío y administración de contenido {#delivery-apis}
+## API y servicios de envío y administración de contenido de AEM {#delivery-apis}
 
-AEM ofrece componentes personalizables y opciones de envío de contenido.
+AEM ofrece componentes personalizables y opciones de entrega de contenido.
 
-| Funcionalidad | Descripción |
+| Función | Descripción |
 |---|---|
-| [Los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) | AEM Componentes estandarizados de gestión de contenido web (WCM) para acelerar el tiempo de desarrollo y reducir el coste de mantenimiento de los sitios web. Se han diseñado para que los componentes de gestión de contenido web (WCM) sean más eficaces. |
-| [Exportador JSON](/help/implementing/developing/components/json-exporter.md) | AEM Entregar el contenido de cualquier página de en formato de modelo de datos JSON. |
+| [Los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) | Componentes estandarizados de administración de contenido web (WCM) para AEM a fin de acelerar el tiempo de desarrollo y reducir el coste de mantenimiento de los sitios web |
+| [Exportador JSON](/help/implementing/developing/components/json-exporter.md) | Enviar el contenido de cualquier página de AEM en formato de modelo de datos JSON |
 | [Activación de la exportación de JSON para un componente](/help/implementing/developing/components/enabling-json-exporter.md) | Generar una exportación JSON del contenido del componente en función de un marco de modelado |
 | [API abiertas de modelos de fragmentos de contenido y fragmentos de contenido](/help/headless/content-fragment-openapis.md) | API abiertas de modelos de fragmentos de contenido y fragmentos de contenido |
-| [AEM REST OpenAPI para la entrega de fragmentos de contenido](/help/headless/aem-rest-openapi-content-fragment-delivery.md) | AEM Una API HTTP REST en Edge Delivery Services de, diseñada para entregar contenido estructurado desde fragmentos de contenido en formato JSON. |
+| [Envío de fragmentos de contenido de AEM con OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) | Una API de REST HTTP en AEM Edge Delivery Services, diseñada para entregar contenido estructurado desde fragmentos de contenido en formato JSON. |
 | [API de GraphQL de fragmento de contenido](/help/headless/graphql-api/content-fragments.md) | Habilite la entrega eficiente de fragmentos de contenido a clientes de JavaScript en implementaciones de CMS sin encabezado |
 |  |  |
 | [API de Assets](/help/assets/mac-api-assets.md) | Permite operaciones de creación, lectura, actualización y eliminación (CRUD) en recursos, incluidos binarios, metadatos, representaciones y comentarios. Consulte API HTTP de AEM Assets |
@@ -80,19 +80,19 @@ AEM ofrece componentes personalizables y opciones de envío de contenido.
 
 >[!NOTE]
 >
->AEM Consulte [API de para la administración y entrega de contenido estructurado](/help/headless/apis-headless-and-content-fragments.md) para obtener una descripción general de las diversas API disponibles y una comparación de algunos de los conceptos involucrados.
+>Consulte [API de AEM para la administración y entrega de contenido estructurado](/help/headless/apis-headless-and-content-fragments.md) para obtener una descripción general de las diversas API disponibles y una comparación de algunos de los conceptos involucrados.
 
-## SPA API específicas de la {#spa-apis}
+## API específicas de SPA {#spa-apis}
 
-AEM SPA El marco de trabajo del Editor de aplicaciones de una sola página () de SDK proporciona referencias específicas a la API de JavaScript.
+El marco de trabajo del Editor de aplicaciones de una sola página (SPA) de AEM SDK proporciona referencias específicas de la API de JavaScript.
 
 | API | Descripción |
 |---|---|
-| [Asignación de componentes](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping) | Proporciona una forma para que la aplicación de una sola página asigne componentes front-end a tipos de recursos de Adobe Experience Manager AEM (componentes de la página de inicio |
-| [Administrador de modelos de página](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager) | Un intérprete entre el Editor de Adobe Experience Manager y el Editor de aplicaciones de una sola página de Adobe Experience Manager SPA (Editor de aplicaciones de una sola página |
+| [Asignación de componentes](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping) | Proporciona una forma para que la aplicación de una sola página asigne componentes front-end a tipos de recursos de Adobe Experience Manager (componentes de AEM) |
+| [Administrador de modelos de página](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager) | Un intérprete entre Adobe Experience Manager Editor y el Editor de aplicaciones de una sola página (SPA) de Adobe Experience Manager |
 | [Componentes editables de React](https://www.npmjs.com/package/@adobe/aem-react-editable-components) | Proporciona los componentes de React y la capa de integración para ayudarle a empezar con el Editor del sitio de Adobe Experience Manager |
 | [Componentes editables de Angular](https://www.npmjs.com/package/@adobe/aem-angular-editable-components) | Proporciona los componentes de Angular y la capa de integración para ayudarle a empezar con el Editor del sitio de Adobe Experience Manager |
 
 >[!TIP]
 >
->SPA Consulte la [Introducción y tutorial de ](/help/implementing/developing/hybrid/introduction.md) para obtener más información sobre las aplicaciones de una sola página.
+>Consulte la [Introducción y tutorial de SPA](/help/implementing/developing/hybrid/introduction.md) para obtener más información sobre las aplicaciones de una sola página.

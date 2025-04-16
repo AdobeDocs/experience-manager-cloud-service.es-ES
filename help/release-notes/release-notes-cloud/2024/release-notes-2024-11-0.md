@@ -4,7 +4,7 @@ description: Notas de la versión 2024.11.0 de la versión de  [!DNL Adobe Exper
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: aafa51c246ee67f9fed014a39ecfb4605ac6152f
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
 source-wordcount: '1809'
 ht-degree: 100%
@@ -57,7 +57,7 @@ Se han mejorado las [referencias ael fragmento de contenido con referencias basa
 
 **AEM REST OpenAPI para la entrega de fragmentos de contenido**
 
-[AEM REST OpenApi para la entrega de fragmentos de contenido](/help/headless/aem-rest-openapi-content-fragment-delivery.md), ya está disponible para AEM as a Cloud Service.
+[AEM REST OpenApi para la entrega de fragmentos de contenido](/help/headless/aem-content-fragment-delivery-with-openapi.md), ya está disponible para AEM as a Cloud Service.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

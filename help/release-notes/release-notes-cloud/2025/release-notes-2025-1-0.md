@@ -4,7 +4,7 @@ description: Notas de la versión 2025.1.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: 7cc979148f6699cfbd4aaae228beb83527709fa1
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
 source-wordcount: '1740'
 ht-degree: 93%
@@ -58,7 +58,7 @@ Se han mejorado las [referencias a fragmentos de contenido con referencias basad
 
 **AEM REST OpenAPI para la entrega de fragmentos de contenido**
 
-[AEM REST OpenApi para la entrega de fragmentos de contenido](/help/headless/aem-rest-openapi-content-fragment-delivery.md) ya está disponible para AEM as a Cloud Service.
+[AEM REST OpenApi para la entrega de fragmentos de contenido](/help/headless/aem-content-fragment-delivery-with-openapi.md) ya está disponible para AEM as a Cloud Service.
 
 ### Funciones en desuso {#sites-deprecated}
 
