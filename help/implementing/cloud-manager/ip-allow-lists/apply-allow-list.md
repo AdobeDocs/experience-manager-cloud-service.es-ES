@@ -5,10 +5,10 @@ exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1902e9b237adbdaff172535d0904d0faa615e9d1
+source-git-commit: 328ae6d1866a7089fb291d4872d27dc5fa1d4caa
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '303'
+ht-degree: 12%
 
 ---
 
@@ -18,8 +18,6 @@ ht-degree: 0%
 Al aplicar Listas de permitidos IP, todos los intervalos de IP incluidos en la definición de la lista se asocian a un servicio de autor o publicación dentro de un entorno. Cancelar la aplicación de una lista es lo contrario a este proceso.
 
 {{add-cm-allowlist-frontend-pipeline}}
-
-{{ip-allow-lists-ue}}
 
 ## Aplicar Listas de permitidos IP {#applying}
 
@@ -33,7 +31,7 @@ Un usuario con el rol **Propietario del negocio** o **Administrador de implement
 1. Desde la página **Información general**, vaya a la pantalla **Entornos**.
 1. En la pantalla **Entornos**, vaya a la página de detalles específicos del entorno.
 1. Vaya a la tabla **Lista de permitidos IP**.
-1. Utilice los campos de entrada de la parte superior de la tabla para poder seleccionar la Lista de permitidos IP y el servicio de autor, Publish o vista previa al que desea aplicarla.
+1. Utilice los campos de entrada de la parte superior de la tabla para poder seleccionar la Lista de permitidos IP y el servicio de autor, publicación o vista previa al que desea aplicarla.
 La Lista de permitidos IP ya debe existir en Cloud Manager para aplicarla. Consulte [Agregar Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md).
 1. Haga clic en ![Agregar icono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Aplicar** y confirme el envío.
 
