@@ -4,10 +4,10 @@ description: Notas de la versión 2024.4.0 de la versión de  [!DNL Adobe Experi
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: bc0ae042c378f24b88da84768cdcc9573926ac89
+source-git-commit: 7069ee2453b0c589f92f9899db0b8307e4133756
 workflow-type: tm+mt
 source-wordcount: '2707'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -186,9 +186,9 @@ En el improbable caso de que la CDN no pueda enrutar el tráfico al origen de AE
 
 ### Programa para primeros usuarios {#foundation-early-adopter}
 
-#### Redirecciones del lado del cliente (programa para primeros usuarios) {#client-side-redirects-early-adopter}
+#### Redirecciones del lado del servidor (programa de usuarios pioneros) {#server-side-redirects-early-adopter}
 
-Configure las redirecciones del lado del cliente 301/302 en el control de código fuente e impleméntelas en la CDN. [Obtenga más información](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) y únase al programa de primeros usuarios enviando un correo electrónico a **<aemcs-cdn-config-adopter@adobe.com>**.
+Configure las redirecciones del lado del servidor 301/302 en el control de código fuente e implemente en la CDN. [Obtenga más información](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) y únase al programa de primeros usuarios enviando un correo electrónico a **<aemcs-cdn-config-adopter@adobe.com>**.
 
 #### Alertas de reglas de filtro de tráfico (programa de primeros usuarios) {#traffic-filter-rules-alerts-early-adopter}
 

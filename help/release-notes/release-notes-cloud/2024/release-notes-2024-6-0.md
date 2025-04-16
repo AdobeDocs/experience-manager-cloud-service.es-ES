@@ -4,10 +4,10 @@ description: Notas de la versión 2024.6.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: 4033abf4-7094-4ce4-ba93-c936062667e3
-source-git-commit: 6d548f10caa32bb5a7a6b0afe762f60058eca2fe
+source-git-commit: 650014d0c093b9e7c1947a8fe870a5452f3083e5
 workflow-type: tm+mt
 source-wordcount: '1972'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ Eche un vistazo al vídeo Información general sobre la versión de junio de 202
 
 ### Nueva función de Experience Manager Sites {#new-feature-sites}
 
-**Servicio de datos de monitorización de usuarios reales (RUM)** {#real-use-monitoring}
+**Servicio de datos de supervisión de uso real (RUM)** {#real-use-monitoring}
 
 El [servicio de datos de monitorización de usuarios reales (RUM)](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) ahora está disponible de forma generalizada, lo que permite la recopilación de datos del lado del cliente para AEM as a Cloud Service. Este servicio ofrece un reflejo más preciso de las interacciones del usuario, lo que garantiza una medida fiable de la participación en el sitio web. Ofrece a los clientes insights avanzados del tráfico y el rendimiento de sus páginas, lo que representa una valiosa oportunidad para comprender y mejorar el rendimiento de las páginas.
 
@@ -211,9 +211,9 @@ Anteriormente, se necesitaba un ticket de asistencia para generar la clave X--Ed
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### Redirecciones del lado del cliente (programa para primeros usuarios) {#client-side-redirects-early-adopter}
+#### Redirecciones Del Lado Del Servidor (Programa De Usuarios Iniciales) {#server-side-redirects-early-adopter}
 
-Configure las redirecciones del lado del cliente 301/302 en el control de código fuente e impleméntelas en la CDN. [Más información](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Tenga en cuenta que ya hay diversas otras funciones disponibles relacionadas con la [configuración de CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md), incluidas las transformaciones de solicitudes y respuestas, y el enrutamiento del tráfico a sitios fuera de AEM.
+Configure las redirecciones del lado del servidor 301/302 en el control de código fuente e implemente en la CDN. [Más información](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Tenga en cuenta que ya hay diversas otras funciones disponibles relacionadas con la [configuración de CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md), incluidas las transformaciones de solicitudes y respuestas, y el enrutamiento del tráfico a sitios fuera de AEM.
 
 #### Alertas de reglas de filtro de tráfico (programa de primeros usuarios) {#traffic-filter-rules-alerts-early-adopter}
 

@@ -4,7 +4,7 @@ description: Notas de la versión 2024.9.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: 75ecd154-112a-4468-9962-de50bb1f4cd0
-source-git-commit: b0208964fc193e0e839bccaaf8245c86f280767d
+source-git-commit: 1481983bde41bda51e725930bae492aa599b6c93
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 91%
@@ -136,9 +136,9 @@ La CDN administrada por Adobe es ahora compatible con [Edge Side Includes (ESI)]
 
 Proteja determinados recursos de contenido mostrando un cuadro de diálogo de autenticación básica que requiera un nombre de usuario y una contraseña. Esta función se dirige principalmente a casos de uso de autenticación ligera, como el de las partes interesadas empresariales que revisan el contenido, en lugar de servir como solución completa para los derechos de acceso de usuarios finales. La lista de nombre de usuario y contraseñas se administra mediante un archivo de configuración en Git que se implementa mediante la canalización de configuración, con una referencia a variables de entorno de Cloud Manager de tipo secreto. [Más información](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
-### Redirecciones del lado del cliente {#client-side-redirects}
+### Redirecciones del lado del servidor {#server-side-redirects}
 
-Declare [redirecciones de explorador](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) en un archivo de configuración Git que se implementan y evalúan en la CDN. Esto puede resultar útil para escenarios como eliminar páginas, cambiar la estructura del sitio y optimizar la SEO.
+Declare [redirecciones de explorador](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) en un archivo de configuración Git que se implementan y evalúan en la CDN. Esto puede resultar útil para escenarios como eliminar páginas, cambiar la estructura del sitio y optimizar la SEO.
 
 ### Nuevo AEM Developer Console (Beta pública) {#aem-developer-console-beta}
 

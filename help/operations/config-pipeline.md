@@ -4,7 +4,7 @@ description: Descubra cómo puede utilizar las canalizaciones de configuración 
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 0b4ed7a99400bb5f91f513bbcd01862cdced03c5
 workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 1%
@@ -38,14 +38,14 @@ La siguiente tabla ofrece una lista completa de estas configuraciones con víncu
 | [Reglas de filtro de tráfico, incluido WAF](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | Declarar reglas para bloquear el tráfico malintencionado |
 | [Solicitar transformaciones](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | Declarar reglas para transformar la forma de la solicitud de tráfico |
 | [Transformaciones de respuesta](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | Declarar reglas para transformar la forma de la respuesta de una solicitud determinada |
-| [Redirecciones del lado del cliente](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | Declarar redirecciones del lado del cliente de estilo 301/302 |
-| [Selectores de origen](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | Declarar reglas para enrutar el tráfico a diferentes back-ends, incluidas las aplicaciones que no sean de Adobe |
-| [Páginas de error de CDN](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | AEM Anule la página de error predeterminada si no se puede alcanzar el origen de la, haciendo referencia a la ubicación del contenido estático autoalojado en el archivo de configuración |
+| [Redirecciones del lado del servidor](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) | `CDN` | Declarar redirecciones del lado del servidor de estilo 301/302 |
+| [Selectores de origen](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | Declarar reglas para enrutar el tráfico a diferentes back-ends, incluidas las aplicaciones que no son de Adobe |
+| [Páginas de error de CDN](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | Anule la página de error predeterminada si no se puede acceder al origen de AEM, haciendo referencia a la ubicación del contenido estático autoalojado en el archivo de configuración |
 | [Purga de CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | Declare las claves API de depuración utilizadas para depurar la CDN |
-| [Token HTTP de CDN administrado por el cliente](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | AEM Declare el valor de la clave X--Edge necesaria para llamar a la CDN de Adobe desde una CDN de cliente |
+| [Token HTTP de CDN administrado por el cliente](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | Declare el valor de X-AEM-Edge-Key necesario para llamar a la CDN de Adobe desde una CDN de cliente |
 | [Autenticación básica](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Declare los nombres de usuario y contraseñas para un cuadro de diálogo de autenticación básico que proteja ciertas direcciones URL. |
-| [Tarea de mantenimiento de purga de versiones](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | AEM Optimice el repositorio de declarando reglas sobre cuándo se deben purgar las versiones de contenido |
-| [Tarea de mantenimiento de purga del registro de auditoría](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | AEM Optimizar el registro de auditoría de la para un mayor rendimiento declarando reglas sobre cuándo se deben purgar los registros |
+| [Tarea de mantenimiento de purga de versiones](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimizar el repositorio de AEM declarando reglas sobre cuándo se deben purgar las versiones de contenido |
+| [Tarea de mantenimiento de purga del registro de auditoría](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimice el registro de auditoría de AEM para obtener un mayor rendimiento declarando reglas sobre cuándo se deben purgar los registros |
 | [Reenvío de registros](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configure los extremos y las credenciales para reenviar registros a varios destinos, incluido Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk) |
 
 ## Creación y administración de canalizaciones de configuración {#creating-and-managing}

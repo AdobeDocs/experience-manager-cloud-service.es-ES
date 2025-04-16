@@ -1,10 +1,10 @@
 ---
 title: Configuración del tráfico en la CDN
-description: Obtenga información sobre cómo configurar el tráfico de CDN declarando reglas y filtros en un archivo de configuración e implementándolos en CDN mediante una canalización de configuración de Cloud Manager.
+description: Obtenga información sobre cómo configurar CDN tráfico declarando reglas y filtros en un archivo de configuración e implementándolos en el CDN mediante una canalización de configuración de Cloud Manager.
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: a43fdc3f9b9ef502eb0af232b1c6aedbab159f1f
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 1%
@@ -14,14 +14,14 @@ ht-degree: 1%
 
 # Configuración del tráfico en la CDN {#cdn-configuring-cloud}
 
-AEM as a Cloud Service ofrece una colección de características configurables en el nivel [CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) administrado por Adobe que modifican la naturaleza de las solicitudes entrantes o de las respuestas salientes. Se pueden declarar las siguientes reglas, descritas en detalle en esta página, para lograr el siguiente comportamiento:
+AEM como Cloud Service ofrece una colección de características configurables en la capa de CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) administrada por Adobe Systems [que modifican la naturaleza de las solicitudes entrantes o las respuestas salientes. Se pueden declarar las siguientes reglas, descritas en detalle en esta página, para lograr el siguiente comportamiento:
 
 * [Transformaciones de solicitudes](#request-transformations): modifique aspectos de las solicitudes entrantes, incluidos los encabezados, las rutas y los parámetros.
-* [Transformaciones de respuesta](#response-transformations): modifique los encabezados que están en camino de regreso al cliente (por ejemplo, un explorador web).
-* [Redirecciones del lado del cliente](#client-side-redirectors): déclencheur una redirección del explorador.
-* [Selectores de origen](#origin-selectors): proxy a un backend de origen diferente.
+* [Transformaciones de respuesta:](#response-transformations) modifique los encabezados que están en el camino de regreso al cliente (por ejemplo, un explorador web).
+* [Redirecciones del lado del](#server-side-redirectors) servidor: desencadenan un redirección explorador.
+* [Selectores](#origin-selectors) de origen: proxy a un back-end de origen diferente.
 
-También se pueden configurar en la CDN las reglas de filtro de tráfico (incluida WAF), que controlan qué tráfico permite o rechaza la CDN. Esta característica ya se ha lanzado y puede obtener más información al respecto en la página [Reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md), que incluye las reglas de WAF.
+También se pueden configurar al CDN las reglas de Filtrar de tráfico (incluido WAF), que controlan qué tráfico permite o deniega el CDN. Esta característica ya se ha lanzado y puede obtener más información al respecto en la página [Reglas de filtro de tráfico](/help/security/traffic-filter-rules-including-waf.md), que incluye las reglas de WAF.
 
 Además, si la CDN no puede ponerse en contacto con su origen, puede escribir una regla que haga referencia a una página de error personalizada autoalojada (que luego se procesará). Obtenga más información al leer el artículo [Configuración de páginas de error de CDN](/help/implementing/dispatcher/cdn-error-pages.md).
 
@@ -29,7 +29,7 @@ Todas estas reglas, declaradas en un archivo de configuración en el control de 
 
 ## Orden de evaluación {#order-of-evaluation}
 
-Desde el punto de vista funcional, las distintas funciones mencionadas anteriormente se evalúan en la siguiente secuencia:
+Funcionalmente, las diversas características mencionadas anteriormente se evalúan en la siguiente Secuencia:
 
 ![Orden de evaluación](/help/implementing/dispatcher/assets/order.png)
 
@@ -153,16 +153,16 @@ En la tabla siguiente se explican las acciones disponibles.
 
 | Nombre | Propiedades | Significado |
 |-----------|--------------------------|-------------|
-| **conjunto** | (reqProperty o reqHeader o queryParam o reqCookie), valor | Establece un parámetro de solicitud especificado (solo se admite la propiedad &quot;path&quot;), un encabezado de solicitud, un parámetro de consulta o una cookie, en un valor determinado, que puede ser un literal de cadena o un parámetro de solicitud. |
-|     | var, valor | Establece una propiedad de solicitud especificada en un valor determinado. |
-| **anular** | reqProperty | Quita un parámetro de solicitud especificado (solo se admite la propiedad &quot;path&quot;), un encabezado de solicitud, un parámetro de consulta o una cookie, de un valor determinado, que podría ser un literal de cadena o un parámetro de solicitud. |
-|         | var | Quita una variable especificada. |
+| **conjunto** | (reqProperty o reqHeader o queryParam o reqCookie), valor | Establece un parámetro de solicitud especificado (solo se admite la Propiedad &quot;ruta&quot;) o solicitud encabezado, consulta parámetro o cookie en un valor determinado, que puede ser un literal de cadena o un parámetro solicitud. |
+|     | var, valor | Establece un Propiedad de solicitud especificado en un valor determinado. |
+| **Unset** | reqProperty | Quita un parámetro de solicitud especificado (solo se admite la propiedad &quot;path&quot;), un encabezado de solicitud, un parámetro de consulta o una cookie, de un valor determinado, que podría ser un literal de cadena o un parámetro de solicitud. |
+|         | Var | Quita una variable especificada. |
 |         | queryParamMatch | Quita todos los parámetros de consulta que coinciden con una expresión regular especificada. |
 |         | queryParamDoesNotMatch | Quita todos los parámetros de consulta que no coinciden con una expresión regular especificada. |
 | **transformar** | op:replace, (reqProperty o reqHeader o queryParam o reqCookie o var), match, replace | Reemplaza parte del parámetro de solicitud (solo se admite la propiedad &quot;path&quot;), el encabezado de solicitud, el parámetro de consulta, la cookie o la variable por un nuevo valor. |
 |              | op:tolower, (reqProperty o reqHeader o queryParam o reqCookie o var) | Establece el parámetro de solicitud (solo se admite la propiedad &quot;path&quot;), el encabezado de solicitud, el parámetro de consulta, la cookie o la variable en minúsculas. |
 
-Las acciones de reemplazo admiten grupos de captura, como se muestra a continuación:
+Reemplazar acciones de apoyo a los grupos de captura, como se muestra a continuación:
 
 ```
       - name: extract-country-code-from-path
@@ -207,7 +207,7 @@ actions:
 
 ### Variables {#variables}
 
-Puede establecer variables durante la transformación de la solicitud y luego hacer referencia a ellas más adelante en la secuencia de evaluación. Consulte el diagrama [orden de evaluación](#order-of-evaluation) para obtener más información.
+Puede establecer variables durante el solicitud transformación y luego hacerles referencia más adelante en la Secuencia de evaluación. Consulte el diagrama [orden de evaluación](#order-of-evaluation) para obtener más información.
 
 Ejemplo de configuración:
 
@@ -242,7 +242,7 @@ data:
 
 ## Transformaciones de respuesta {#response-transformations}
 
-Las reglas de transformación de respuestas permiten establecer y anular la configuración de encabezados de las respuestas salientes de CDN. Además, consulte el ejemplo anterior para hacer referencia a una variable configurada anteriormente en una regla de transformación de solicitud. También se puede establecer el código de estado de la respuesta.
+Las reglas de transformación de respuesta le permiten definir y anular la configuración de encabezados de las respuestas salientes del CDN. Además, consulte el ejemplo anterior para hacer referencia a un variable establecido anteriormente en un regla de transformación de solicitud. También se puede establecer la código de estado de la respuesta.
 
 Ejemplo de configuración:
 
@@ -300,13 +300,13 @@ En la tabla siguiente se explican las acciones disponibles.
 
 | Nombre | Propiedades | Significado |
 |-----------|--------------------------|-------------|
-| **conjunto** | reqHeader, valor | Establece un encabezado especificado en un valor determinado de la respuesta. |
+| **poner** | reqHeader, valor | Establece un encabezado especificado en un valor determinado de la respuesta. |
 |          | respProperty, valor | Establece una propiedad response. Admite solo la propiedad &quot;status&quot; para establecer el código de estado. |
 | **anular** | respHeader | Quita un encabezado especificado de la respuesta. |
 
 ## Selectores de origen {#origin-selectors}
 
-AEM Puede aprovechar la CDN de la para enrutar el tráfico a diferentes backends, incluidas las aplicaciones que no sean de Adobe (tal vez por ruta o subdominio).
+Puede aprovechar la CDN de AEM para enrutar el tráfico a diferentes backends, incluidas aplicaciones que no sean de Adobe (tal vez por ruta o subdominio).
 
 Ejemplo de configuración:
 
@@ -340,7 +340,7 @@ La acción disponible se explica en la tabla siguiente.
 
 | Nombre | Propiedades | Significado |
 |-----------|--------------------------|-------------|
-| **selectOrigin** | originName | Nombre de uno de los orígenes definidos. |
+| **selectOrigin** | Nombre de origen | Nombre de uno de los orígenes definidos. |
 |     | skipCache (opcional, el valor predeterminado es false) | Indicar si se debe utilizar el almacenamiento en caché para las solicitudes que coinciden con esta regla. De forma predeterminada, las respuestas se almacenan en caché según el encabezado de almacenamiento en caché de respuestas (por ejemplo, Cache-Control o Expires) |
 
 **Orígenes**
@@ -359,12 +359,12 @@ Las conexiones a orígenes son solo SSL y utilizan el puerto 443.
 
 ### Proxy a Edge Delivery Services {#proxying-to-edge-delivery}
 
-AEM Hay escenarios en los que los selectores de origen deben utilizarse para enrutar el tráfico a través de Publish AEM a los Edge Delivery Services de la:
+Hay escenarios en los que los selectores de origen deben utilizarse para enrutar el tráfico a través de AEM Publish a AEM Edge Delivery Services:
 
-* AEM Parte del contenido lo entrega un dominio gestionado por Publish, mientras que parte del contenido del mismo dominio lo envían los Edge Delivery Services
-* El contenido entregado por los Edge Delivery Services se beneficiaría de las reglas implementadas mediante la canalización de configuración, incluidas las reglas de filtro de tráfico o las transformaciones de solicitud/respuesta
+* Parte del contenido se entrega mediante un dominio administrado por AEM Publish, mientras que otro contenido del mismo dominio se entrega mediante Edge Delivery Services
+* El contenido entregado por Edge Delivery Services se beneficiaría de las reglas implementadas mediante la canalización de configuración, incluidas las reglas de filtro de tráfico o las transformaciones de solicitud/respuesta
 
-Este es un ejemplo de regla de selector de origen que puede lograr esto:
+A continuación se muestra un ejemplo de una regla de selector origen que puede lograr esto:
 
 ```
 kind: CDN
@@ -390,12 +390,12 @@ data:
 ```
 
 >[!NOTE]
-> Dado que se usa la CDN administrada de Adobe, asegúrese de configurar la invalidación push en el modo **administrado**, siguiendo la [documentación de invalidación push de configuración](https://www.aem.live/docs/byo-dns#setup-push-invalidation) de los Edge Delivery Services.
+> Dado que se usa el CDN administrado de Adobe Systems, asegúrese de configurar la invalidación de inserción en **modo administrado** siguiendo la documentación](https://www.aem.live/docs/byo-dns#setup-push-invalidation) de invalidación de inserción de la configuración de servicios de entrega [perimetral.
 
 
-## Redirecciones del lado del cliente {#client-side-redirectors}
+## Redirecciones del lado del servidor {#server-side-redirectors}
 
-Puede utilizar reglas de redireccionamiento del lado del cliente para redirecciones del lado del cliente 301, 302 y similares. Si una regla coincide, la CDN responde con una línea de estado que incluye el código y el mensaje de estado (por ejemplo, HTTP/1.1 301 Movido permanentemente), así como el conjunto de encabezado de ubicación.
+Puede usar reglas de redirección del lado del cliente para las redirecciones 301, 302 y similares del lado del cliente. Si una regla coincide, el CDN responde con una línea de estado que incluye el código de estado y el mensaje (por ejemplo, HTTP/1.1 301 movido permanentemente), así como el conjunto de encabezados de ubicación.
 
 Se permiten ubicaciones absolutas y relativas con valores fijos.
 
@@ -429,7 +429,7 @@ data:
 | **redireccionamiento** | ubicación | Valor del encabezado &quot;Ubicación&quot;. |
 |     | estado (opcional, el valor predeterminado es 301) | Estado HTTP que se utilizará en el mensaje de redirección, 301 de forma predeterminada, los valores permitidos son: 301, 302, 303, 307, 308. |
 
-Las ubicaciones de una redirección pueden ser literales de cadena (por ejemplo, https://www.example.com/page) o el resultado de una propiedad (por ejemplo, ruta) que se transforme opcionalmente, con la siguiente sintaxis:
+Las ubicaciones de una redirección pueden ser literales de cadena (por ejemplo, https://www.example.com/page) o el resultado de un Propiedad (por ejemplo, ruta) que se transforma opcionalmente, con la siguiente sintaxis:
 
 ```
 redirects:

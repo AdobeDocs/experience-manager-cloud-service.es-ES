@@ -3,10 +3,11 @@ title: Notas de la versión 2024.5.0 de la versión de  [!DNL Adobe Experience M
 description: Notas de la versión 2024.5.0 de la versión de  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: d76f27e2b85cefe5e83f790a91466e94a619a077
+exl-id: 7b7a27f9-ba57-4eb2-9fcb-653b5213af04
+source-git-commit: a8c74573134597e83c2720de3b2a0f75ff7896a2
 workflow-type: tm+mt
 source-wordcount: '1949'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -213,9 +214,9 @@ Anteriormente, se necesitaba un ticket de asistencia para generar la clave X--Ed
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### Redirecciones del lado del cliente (programa para primeros usuarios) {#client-side-redirects-early-adopter}
+#### Redirecciones del lado del servidor (programa de adopción temprana) {#server-side-redirects-early-adopter}
 
-Configure las redirecciones del lado del cliente 301/302 en el control de código fuente e impleméntelas en la CDN. [Más información](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Tenga en cuenta que ya hay diversas otras funciones disponibles relacionadas con la [configuración de CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md), incluidas las transformaciones de solicitudes y respuestas, y el enrutamiento del tráfico a sitios fuera de AEM.
+Configure las redirecciones de del lado del servidor 301/302 en el control de código fuente y implementar al CDN. [Más información](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Tenga en cuenta que ya hay diversas otras funciones disponibles relacionadas con la [configuración de CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md), incluidas las transformaciones de solicitudes y respuestas, y el enrutamiento del tráfico a sitios fuera de AEM.
 
 #### Alertas de reglas de filtro de tráfico (programa de primeros usuarios) {#traffic-filter-rules-alerts-early-adopter}
 
