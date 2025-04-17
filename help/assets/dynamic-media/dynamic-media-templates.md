@@ -4,9 +4,9 @@ description: Aprenda a crear  [!DNL Dynamic Media] plantillas mediante un editor
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 946f943dd02bb6832674ed7e37830ddeb592e548
+source-git-commit: 184149144d1f8d204241fcc477f937fa7c225895
 workflow-type: tm+mt
-source-wordcount: '3026'
+source-wordcount: '3106'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 1%
     </tr>
 </table>
 
-Cree plantillas personalizables en tiempo real para sus banners y folletos usando [!DNL Dynamic Media] templates, un editor de plantillas de WYSIWYG. Utilice su plantilla [!DNL Dynamic Media] en aplicaciones de flujo descendente. Una plantilla [!DNL Dynamic Media] incluye capas de imagen y texto. Agregue parámetros a las capas de imagen y texto de la plantilla y utilice [[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) para cambiar la posición y el tamaño de la capa y actualizar su contenido en tiempo real.
+Cree plantillas personalizables en tiempo real para sus banners y folletos usando [!DNL Dynamic Media] templates, un editor de plantillas de WYSIWYG. Publique la plantilla [!DNL Dynamic Media] y utilícela en aplicaciones de flujo descendente. Una plantilla [!DNL Dynamic Media] incluye capas de imagen y texto. Agregue parámetros a las capas de imagen y texto de la plantilla y utilice [[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) para cambiar la posición y el tamaño de la capa y actualizar su contenido en tiempo real.
 
 Algunas de las características principales incluyen:
 
@@ -88,7 +88,7 @@ Para crear una plantilla [!DNL Dynamic Media], debe contar con:
 Ejecute los siguientes pasos para crear una plantilla [!DNL Dynamic Media]:
 
 1. Vaya a [!DNL Assets View] y [cree una carpeta](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) en ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**. El árbol de carpetas de ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** se replica en **[!UICONTROL Dynamic Media Assets]**. Guarde la plantilla [!DNL Dynamic Media] en esta carpeta [!UICONTROL Dynamic Media Assets].
-1. Seleccione ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**y [cargue y publique sus imágenes en [!DNL AEM] y [!DNL Dynamic Media] simultáneamente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) para usarlas para crear la plantilla.
+1. Seleccione ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**y [cargue y publique sus imágenes en [!DNL AEM] y [!DNL Dynamic Media] simultáneamente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) para usarlas para crear la plantilla. La publicación de imágenes es necesaria para generar la URL de entrega de la plantilla, que se puede utilizar en aplicaciones de flujo descendente.
 1. [Crear un lienzo en blanco](#create-a-canvas)
 1. [Añadir imágenes al lienzo](#add-images-to-the-canvas)
 1. [Añadir capas de texto al lienzo](#add-text-to-the-canvas)
@@ -108,6 +108,7 @@ Siga estos pasos para crear un lienzo en blanco:
    >[!NOTE]
    >
    >  La plantilla se guardará en la ubicación en la que la haya creado. En la página de inicio de [!DNL Assets View], seleccione **[!UICONTROL Dynamic Media Assets]** y haga clic en **[!UICONTROL Crear plantilla]** para guardar la plantilla en la carpeta raíz de **[!UICONTROL Dynamic Media Assets]**.
+
 1. Especifique un nombre de plantilla, defina la anchura y altura del lienzo y haga clic en **[!UICONTROL Crear]**. Se muestra un lienzo en blanco con opciones de menú en ambos lados que se utilizan para crear la plantilla. Pase el ratón sobre las opciones del menú para ver su información sobre herramientas.
    ![plantilla personalizable en tiempo real](/help/assets/assets/blank-canvas-page.png)
 
@@ -121,18 +122,18 @@ Siga estos pasos para crear un lienzo en blanco:
 * ![plantillas personalizables](/help/assets/assets/add-text.svg): haga clic para agregar textos al lienzo.
 * ![plantillas personalizables](/help/assets/assets/show-layers-list.svg): haga clic para ver la lista de todas las capas (imagen y texto) del lienzo. Cada imagen y texto añadido al lienzo se representa como una capa independiente.
 
-**Opciones de menú en el panel izquierdo:** Utilice estas opciones para acciones comunes del editor como se menciona a continuación.
+**Opciones de menú en el panel izquierdo:** Utilice estas opciones para las siguientes acciones comunes del editor.
 
-* ![Plantillas DM](/help/assets/assets/layer-selector.svg): seleccione una capa.
-* ![plantillas que admiten personalización](/help/assets/assets/bring-forward.svg): haga clic para avanzar una capa seleccionada o presione **Ctrl** + **]** (Windows) o **Cmd** + **]** (Mac).
-* ![cómo crear una plantilla que se pueda personalizar fácilmente](/help/assets/assets/send-backward.svg): haga clic para enviar una capa seleccionada hacia atrás o presione **Ctrl** + **[** (Windows) o **Cmd** + **[** (Mac).
-* ![crear una plantilla que se pueda personalizar al instante](/help/assets/assets/undo.svg): haz clic para deshacer la última acción o presiona **Ctrl** + **Z** (Windows) o **Cmd** + **Z** (Mac).
-* ![plantilla para crear titulares rápidamente](/help/assets/assets/redo.svg): haz clic para rehacer la última acción o presiona **Ctrl** + **Y** (Windows) o **Cmd** + **Y** (Mac).
-* ![plantilla para crear prospectos rápidamente](/help/assets/assets/zoom-in.svg): haga clic para ampliar el lienzo o presione **Ctrl** + **+** (Windows) o Cmd + **+** (Mac).
-* ![plantilla para crear titulares rápidamente](/help/assets/assets/Zoom-out.svg): haga clic para alejar el lienzo o presione **Ctrl** + **-** (Windows) o **Cmd** + **-** (Mac).
+* ![Plantillas DM](/help/assets/assets/layer-selector.svg): selecciona ![Plantillas DM](/help/assets/assets/layer-selector.svg) y haz clic en una capa del lienzo para seleccionarla.
+* ![plantillas compatibles con la personalización](/help/assets/assets/bring-forward.svg): haga clic en ![plantillas compatibles con la personalización](/help/assets/assets/bring-forward.svg) o use el método abreviado de teclado, **Ctrl** + **]** (Windows) o **Cmd** + **]** (Mac) para avanzar una capa seleccionada.
+* ![cómo crear una plantilla que se pueda personalizar fácilmente](/help/assets/assets/send-backward.svg): haga clic en ![cómo crear una plantilla que se pueda personalizar fácilmente](/help/assets/assets/send-backward.svg) o use el método abreviado de teclado, **Ctrl** + **[** (Windows) o **Cmd** + **[** (Mac) para enviar una capa seleccionada hacia atrás.
+* ![crear una plantilla que se pueda personalizar al instante](/help/assets/assets/undo.svg): haga clic en ![crear una plantilla que se pueda personalizar al instante](/help/assets/assets/undo.svg) o use el método abreviado de teclado, **Ctrl** + **Z** (Windows) o **Cmd** + **Z** (Mac) para deshacer la última acción.
+* ![plantilla para crear titulares rápidamente](/help/assets/assets/redo.svg): Haz clic en ![plantilla para crear titulares rápidamente](/help/assets/assets/redo.svg) o usa el método abreviado de teclado, **Ctrl** + **Y** (Windows) o **Cmd** + **Y** (Mac) para rehacer la última acción.
+* ![plantilla para crear prospectos rápidamente](/help/assets/assets/zoom-in.svg): haz clic en ![plantilla para crear prospectos rápidamente](/help/assets/assets/zoom-in.svg) o usa el método abreviado de teclado, **Ctrl** + **+** (Windows) o **Cmd** + **+** (Mac) para ampliar el lienzo.
+* ![plantilla para crear titulares rápidamente](/help/assets/assets/Zoom-out.svg): haz clic en ![plantilla para crear titulares rápidamente](/help/assets/assets/Zoom-out.svg) o usa el método abreviado de teclado, **Ctrl** + **-** (Windows) o **Cmd** + **-** (Mac) para alejar el lienzo.
 * Pulse **Retroceso** o **eliminar** para eliminar la capa seleccionada si no se está editando ningún texto o propiedad.
 
-Haga clic en ![plantilla para crear prospectos rápidamente](/help/assets/assets/show-layers-list.svg) **>** más opciones (![](/help/assets/assets/three-dots.svg)) en la capa Lienzo para editar las dimensiones de lienzo en cualquier momento mientras crea la plantilla.
+Haga clic en ![plantilla para crear prospectos rápidamente](/help/assets/assets/show-layers-list.svg) y seleccione más opciones (![](/help/assets/assets/three-dots.svg)) en la capa Lienzo para editar las dimensiones de lienzo en cualquier momento mientras crea la plantilla.
 ![](/help/assets/assets/edit-canvas1.png)
 
 >[!NOTE]
@@ -143,7 +144,7 @@ Haga clic en ![plantilla para crear prospectos rápidamente](/help/assets/assets
 
 Siga estos pasos para agregar imágenes al lienzo:
 
-1. Haga clic en ![crear un titular en poco tiempo](/help/assets/assets/add-image.svg) para mostrar el panel [Selector de recursos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector). El panel muestra las imágenes de la instancia de AEM Assets que están sincronizadas con [!DNL Dynamic Media].
+1. Haga clic en ![crear un titular en poco tiempo](/help/assets/assets/add-image.svg) para abrir el panel [Selector de recursos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector). El panel muestra las imágenes de la instancia de AEM Assets que están sincronizadas con [!DNL Dynamic Media].
 1. Examine el panel o utilice palabras clave en la barra de búsqueda para encontrar una imagen específica.
 1. Arrastre y suelte una imagen en el lienzo para utilizarla. Consulte el [**[!UICONTROL Panel de propiedades]**](#reposition-resize-delete-a-layer) para cambiar el tamaño o la posición de una capa en el lienzo.
    ![crear un titular en cuestión de segundos](/help/assets/assets/add-image-to-canvas.png)
