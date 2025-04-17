@@ -4,10 +4,10 @@ description: Novedades de Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: f854aaf8-e84d-4904-832f-f72433590920
 feature: Release Information
 role: Admin
-source-git-commit: d0dec1917a67def8bc7cb1cb940ba214feb2ca28
+source-git-commit: d2d45a7889b94d3886c6fd539231b72c5b796755
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 93%
+source-wordcount: '183'
+ht-degree: 92%
 
 ---
 
@@ -19,7 +19,7 @@ Para obtener una descripción general del Adobe Experience Manager as a Cloud Se
 * La [Introducción a AEM as a Cloud Service](/help/overview/introduction.md)
 * La [arquitectura](/help/overview/architecture.md) de Adobe Experience Manager as a Cloud Service
 * Una [descripción general de AEM as a Cloud Service: novedades y diferencias](/help/overview/what-is-new-and-different.md)
-* [Introducción a Assets as a Cloud Service](/help/assets/overview.md) para obtener una descripción general de Assets
+* la [Introducción a Assets as a Cloud Service](/help/assets/overview.md) para obtener una descripción general de Assets
 
 Si está familiarizado con versiones anteriores de AEM, consulte lo siguiente para obtener una descripción general de los cambios más importantes en AEM as a Cloud Service:
 
