@@ -4,9 +4,9 @@ description: Aprenda a guardar formularios adaptables basados en componentes pri
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 508265c72f458b062e1667fd42403743fa293586
+source-git-commit: b0c2523a6ca8b097cb7cc101b71162c06e424e52
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1365'
 ht-degree: 15%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 15%
 
 # Guardar formularios como borradores y mostrarlos en la página de Sites
 
-<span class="preview"> Este artículo contiene contenido sobre la característica **Borradores**, una característica previa al lanzamiento. Solo se puede acceder a la función previa al lanzamiento mediante nuestro [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features).</span>
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 Considere a un usuario que comienza a rellenar un formulario pero necesita pausar y volver más tarde. AEM ofrece la opción `save-as-draft`, que permite al usuario guardar el formulario como borrador para una futura finalización. Para facilitarle este proceso, AEM proporciona el componente **Borradores y envíos** del portal de Forms de forma predeterminada, que muestra borradores y envíos en páginas de AEM Sites. El componente enumera los formularios que se han guardado como borradores para su posterior finalización, así como los que se han enviado. Solo los usuarios que inicien sesión pueden editar sus borradores o ver los formularios enviados. Sin embargo, si un usuario anónimo navega por la lista de formularios usando el componente **Buscar y listar** y guarda un formulario como borrador, ese borrador no aparecerá en la lista del componente **Borradores y envíos**. Para ver los borradores y los envíos, los usuarios deben haber iniciado sesión en el momento del envío del formulario.
 

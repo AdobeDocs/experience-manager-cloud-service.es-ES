@@ -5,17 +5,15 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 keywords: invocar mejoras del servicio en VRE, rellenar opciones desplegables utilizando invocar servicio, establecer panel repetible utilizando la salida del servicio de invocación, establecer panel utilizando la salida del servicio de invocación, usar el parámetro de salida del servicio de invocación para validar otro campo.
-source-git-commit: f77e0cd03a63200cb86fada780f2fecff5fadf94
+exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
+source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1566'
 ht-degree: 3%
 
 ---
 
-
 # Usar Invocar servicio en el Editor de reglas visuales para formularios basados en componentes principales
-
-<span class="preview"> Esta es una función previa al lanzamiento y se puede acceder a ella a través de nuestro [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features). </span>
 
 El Editor de reglas visuales de un formulario adaptable admite la característica **Invocar servicio**, que le permite seleccionar un servicio de la lista de modelos de datos de formulario (FDM) configurados para su instancia. Puede asignar campos de formulario directamente a los parámetros de entrada del servicio. Para asignar campos de formulario a los parámetros de salida, utilice la opción de carga útil de evento para el servicio del modelo de datos de formulario especificado. Además, el editor de reglas visual le permite crear reglas para los controladores de éxito y de error para las operaciones **Invoke Service** en función de sus respuestas de salida. Los controladores de éxito administran la ejecución correcta de la operación **Invocar servicio**, mientras que los controladores de error resuelven cualquier error que se produzca.
 
@@ -242,4 +240,3 @@ Escriba `102` en el cuadro de texto `Pet ID` y el botón **Enviar** estará ocul
 ## Recursos adicionales
 
 {{see-also-rule-editor}}
-

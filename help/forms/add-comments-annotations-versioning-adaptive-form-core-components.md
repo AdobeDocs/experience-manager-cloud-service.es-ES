@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
 exl-id: 84b95a19-c804-41ad-8f4b-5868c8444cc0
 role: User, Developer, Admin
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
-workflow-type: ht
-source-wordcount: '593'
+source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
+workflow-type: tm+mt
+source-wordcount: '581'
 ht-degree: 100%
 
 ---
@@ -18,9 +18,6 @@ ht-degree: 100%
 https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components).-->
 
 <!--Adaptive Form Core Components facilitates to add versionings, comments, and annotations to a form. These features helps form authors and users to enhance the form development process where they can create multiple versions of a form, collaborate and add their comments to a form, and add annotations to form components.-->
-
-<span class="preview"> Esta es una función previa al lanzamiento y se puede acceder a ella a través de nuestro [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features). </span>
-
 
 Los componentes principales de un formulario adaptable proporcionan una funcionalidad que permite a los autores de formularios incorporar versiones, comentarios y anotaciones en los formularios. Estas funciones sirven para optimizar el proceso de desarrollo de formularios, ya que permiten a los usuarios crear y administrar varias versiones de un formulario, participar en conversaciones de colaboración mediante comentarios y adjuntar anotaciones a componentes de formulario específicos, lo que mejora la experiencia general de creación de formularios.
 

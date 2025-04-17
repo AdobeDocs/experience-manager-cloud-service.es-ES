@@ -4,13 +4,13 @@ description: Llamadas a funciones asincrónicas en el editor de reglas visual
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: f6e1de0c2cc2c056b3bfcea6ce5d7aaed041f6f8
+exl-id: a240ba26-a6d8-4643-8acb-1d8812dac61f
+source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
 workflow-type: tm+mt
-source-wordcount: '1437'
-ht-degree: 2%
+source-wordcount: '1409'
+ht-degree: 1%
 
 ---
-
 
 # Usar funciones asincrónicas en un formulario adaptable basado en componentes principales
 
@@ -38,8 +38,6 @@ Puede implementar las funciones asincrónicas para Forms adaptable mediante los 
 * [Salida de función](#how-to-use-function-output-rule-type)
 
 ## ¿Cómo se utiliza el tipo de regla Llamada a función asincrónica?
-
-<span class="preview"> Esta es una función previa al lanzamiento y se puede acceder a ella a través de nuestro [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features). </span>
 
 Puede escribir las [funciones personalizadas](/help/forms/custom-function-core-component-create-function.md) para operaciones asincrónicas y configurar las funciones asincrónicas usando el tipo de regla **[!UICONTROL Llamada a función asincrónica]** en el editor de reglas.
 
@@ -217,10 +215,10 @@ Para ver cómo funciona, vamos a agregar un botón y crear una regla para el bot
 
 ![creando regla para la función asincrónica](/help/forms/assets/rule-for-async-funct.png){width=50%}
 
-Consulte la captura de pantalla de la ventana de la consola siguiente para demostrar que cuando el usuario hace clic en el botón `Fetch`, se invoca la función personalizada `callAsyncFunction`, que a su vez llama a una función asincrónica `asyncFunction`. Inspect abre la ventana de la consola para ver la respuesta al botón y hacer clic en:
+Consulte la captura de pantalla de la ventana de la consola siguiente para demostrar que cuando el usuario hace clic en el botón `Fetch`, se invoca la función personalizada `callAsyncFunction`, que a su vez llama a una función asincrónica `asyncFunction`. Inspeccione la ventana de la consola para ver la respuesta al clic en el botón:
 
 ![Ventana de consola](/help/forms/assets/async-custom-funct-console.png)
 
-## Consulte también
+## Véase también
 
 {{see-also-rule-editor}}
