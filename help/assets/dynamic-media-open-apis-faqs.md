@@ -4,9 +4,9 @@ description: Preguntas frecuentes sobre Dynamic Media con funciones de OpenAPI
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
 source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1600'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -141,7 +141,7 @@ Como usuario de DAM, es posible que no tenga permisos para [aprobar recursos](ap
 
 +++**¿Cuál es el tamaño de archivo admitido para los vídeos?**
 
-Dynamic Media con funciones de OpenAPI admite vídeos de formularios largos. Los vídeos pueden admitir hasta 50 GB y 2 horas.
+Las funcionalidades de Dynamic Media con OpenAPI ahora son compatibles con vídeos de formato largo. Los vídeos de formato largo pueden admitir hasta 50 GB y 2 horas.
 
 +++
 
@@ -153,7 +153,7 @@ La recomendación general de Adobe es aprovechar la pila de Dynamic Media con Op
 
 A continuación, se indican algunas de las diferencias clave entre Dynamic Media con funciones de OpenAPI y Dynamic Media:
 
-| Dynamic Media con funciones de OpenAPI | Dynamic Media |
+| Funcionalidades de Dynamic Media con OpenAPI | Dynamic Media |
 |---|---|
 | [Disponible solo con Assets as a Cloud Service](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | También disponible con On-Premise o Adobe Managed Services con pasos de configuración y aprovisionamiento adicionales. |
 | [Conjunto limitado de modificadores de imagen compatibles, como anchura, altura, girar, voltear, calidad y formato](/help/assets/deliver-assets-apis.md). | Conjunto enriquecido de modificadores de imagen disponibles |
@@ -173,7 +173,7 @@ A continuación, se indican algunas de las diferencias clave entre Dynamic Media
 
 En la tabla siguiente se describen las principales diferencias entre las dos soluciones:
 
-| Dynamic Media con funciones de OpenAPI | Recursos de red |
+| Funcionalidades de Dynamic Media con OpenAPI | Recursos de red |
 |---|---|
 | Los recursos de la implementación remota de DAM están disponibles en AEM as a Cloud Service. | Los recursos de la implementación remota de DAM pueden estar disponibles en AEM as a Cloud Service o en Adobe Managed Services. |
 | Los binarios de recursos no se copian cuando los recursos de una implementación remota de DAM están disponibles en una instancia de AEM Sites. | Los binarios de recursos se copian cuando los recursos de una implementación remota de DAM están disponibles en una instancia de AEM Sites. |

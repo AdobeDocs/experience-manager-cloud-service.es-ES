@@ -5,9 +5,9 @@ exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 86bb2e020a003fd418f8b1cf7bdf55987a2eaf3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2062'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ AEM as a Cloud Service es una oferta totalmente nativa de la nube que ofrece AEM
 
 >[!NOTE]
 >
-> Algunas de las instancias y perfiles de producto descritos en este artículo pueden aparecer solo para entornos recién creados. Consulte la sección [Agregar perfiles de producto para entornos existentes](#adding-product-profiles-for-existing-environments) para ver cómo modernizar los entornos.
+> Algunas de las instancias y perfiles de producto descritos en este artículo pueden aparecer solo para entornos recién creados. Consulte la sección [Adición de perfiles de producto para entornos existentes](#adding-product-profiles-for-existing-environments) para ver cómo se modernizan los entornos.
 
 Cuando Adobe procesa las licencias de una solución de AEM por primera vez, aparecen dos instancias de producto en Adobe Admin Console, en el producto de Adobe Experience Manager as a Cloud Service:
 
@@ -278,7 +278,7 @@ La siguiente imagen representa los grupos de AEM que reflejan el nivel de creaci
 
 ### Adición de perfiles de producto para entornos existentes {#adding-product-profiles-for-existing-environments}
 
-Es posible que a los entornos creados antes de principios de abril de 2024 les falte la instancia de producto de nivel de organización descrita en las secciones anteriores, así como ciertos perfiles de producto. A los perfiles de producto existentes también les faltarán los conmutadores de servicio. Se recomienda actualizar esos perfiles de producto, lo que es un requisito previo para acceder a algunas API futuras.
+Es posible que a los entornos creados antes de principios de abril de 2024 les falte la instancia de producto a nivel de organización descrita en las secciones anteriores, así como determinados perfiles de producto. A los perfiles de producto existentes también les faltarán los conmutadores de servicio. Se recomienda actualizar esos perfiles de producto, lo que es un requisito previo para acceder a algunas API futuras.
 
 Si uno o más entornos de un programa necesitan que se actualicen sus perfiles de producto, Cloud Manager mostrará el aviso a continuación. Tenga en cuenta que un entorno debe estar en la última versión de AEM antes de poder actualizar sus perfiles de producto.
 
