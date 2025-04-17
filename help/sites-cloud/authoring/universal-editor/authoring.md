@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 08bcf9a65854478d2ce057e31b4c27690d1bf240
+source-git-commit: da14ed18b786c1f19d76926ed027d13a53275af3
 workflow-type: tm+mt
-source-wordcount: '1405'
-ht-degree: 22%
+source-wordcount: '1395'
+ht-degree: 17%
 
 ---
 
@@ -19,7 +19,7 @@ Aprenda lo fácil e intuitivo que es para los autores crear contenido con el edi
 
 ## Introducción {#introduction}
 
-El editor universal permite editar cualquier aspecto de todo tipo de contenido en todas las implementaciones para que pueda ofrecer experiencias excepcionales, aumentar la velocidad del contenido y proporcionar una experiencia de última generación a los desarrolladores.
+El editor universal permite editar cualquier aspecto de cualquier contenido en cualquier implementación para que pueda ofrecer experiencias excepcionales y aumentar la velocidad de contenido.
 
 Para ello, se proporciona una IU intuitiva que requiere una formación mínima para comenzar a editar contenido. Este documento describe la experiencia de creación del editor universal.
 
@@ -200,7 +200,7 @@ Para aprender a publicar contenido con el editor universal, consulte este docume
 
 Para obtener más información sobre los detalles técnicos del editor universal, consulte estos documentos para desarrolladores.
 
-* [Introducción al editor universal](/help/implementing/universal-editor/introduction.md): descubra cómo el editor universal permite editar cualquier aspecto de los contenidos en varias implementaciones para ofrecer experiencias excepcionales, aumentar la velocidad de contenido y proporcionar una experiencia de desarrollador de última generación.
+* [Introducción al editor universal](/help/implementing/universal-editor/introduction.md): Descubra cómo el editor universal permite editar cualquier aspecto de cualquier contenido en cualquier implementación para que pueda ofrecer experiencias excepcionales y aumentar la velocidad de contenido.
 * [Introducción al editor universal en AEM](/help/implementing/universal-editor/getting-started.md): obtenga información sobre cómo acceder al editor universal y cómo instrumentar la primera aplicación de AEM para utilizarlo.
 * [Arquitectura del editor universal](/help/implementing/universal-editor/architecture.md): obtenga información acerca de la arquitectura del editor universal y cómo fluyen los datos entre sus servicios y capas.
 * [Atributos y tipos](/help/implementing/universal-editor/attributes-types.md): obtenga información acerca de los atributos y tipos de datos que requiere el editor universal.
