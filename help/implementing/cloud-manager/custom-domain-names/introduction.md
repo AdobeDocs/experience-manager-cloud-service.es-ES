@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2724eaaaade94be89d33da5eecec4444cf851bd0
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 40%
+source-wordcount: '710'
+ht-degree: 41%
 
 ---
 
@@ -38,14 +38,14 @@ Puede comprar un nombre de dominio a través de un registrador de nombres de dom
 
 ## Nombres de dominio personalizados y sus propias CDN {#byo-cdn}
 
-AEM as a Cloud Service AEM ofrece un servicio integrado de CDN (red de distribución de contenido), pero también le permite comprar y traer su propia CDN para utilizarla con los servicios de red de distribución de contenido (CDN) de la red de distribución de contenido (CDN) para usar con los servicios de red de distribución de contenido (). Los dominios personalizados pueden instalarse en la CDN administrada por AEM o en una CDN que administre usted.
+AEM as a Cloud Service ofrece un servicio integrado de CDN (red de distribución de contenido), pero también le permite comprar (traer su propia) CDN para utilizarla con AEM. Los dominios personalizados pueden instalarse en la CDN administrada por AEM o en una CDN que administre usted.
 
-* Cloud Manager AEM administra los nombres de dominio personalizados y los certificados instalados en la CDN administrada por la CDN que administra la.
+* Cloud Manager administra los nombres de dominio personalizados y los certificados instalados en la CDN administrada por AEM.
 * Los nombres de dominio personalizados y los certificados instalados en una CDN BYO se administran directamente dentro de esa CDN.
 
-**Los dominios administrados en su propia CDN no requieren instalación a través de Cloud Manager AEM**. Se ponen a disposición de los usuarios a través de X-Forwarded-Host para que se instalen y coincidan con los vhosts definidos en Dispatcher. Consulte la [Documentación de la CDN](/help/implementing/dispatcher/cdn.md).
+**Los dominios administrados en su propia CDN no requieren instalación a través de Cloud Manager**. Están disponibles para AEM mediante X-Forwarded-Host y coinciden con los vhosts definidos en Dispatcher. Consulte la [Documentación de la CDN](/help/implementing/dispatcher/cdn.md).
 
-AEM En un entorno, puede tener ambos dominios instalados en la CDN administrada por el usuario e instalada en una CDN administrada por el usuario.
+En un entorno, puede tener ambos dominios instalados en la CDN administrada por AEM e instalados en una CDN por BYO.
 
 ## Flujo de trabajo {#workflow}
 
@@ -63,9 +63,7 @@ Para agregar un nombre de dominio personalizado es necesaria la interacción ent
 >
 >La configuración de nombres de dominio personalizados con AEM as a Cloud Service suele ser un proceso sencillo. Sin embargo, en ocasiones pueden producirse problemas de delegación de dominios que pueden tardar entre 1 y 2 días hábiles en resolverse. Por este motivo, se recomienda instalar los dominios mucho antes de la fecha de lanzamiento. Consulte el documento [Comprobar el estado del nombre de dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obtener más información.
 
-## Limitaciones {#limitations}
-
-El uso de nombres de dominio personalizados con AEMaaCS conlleva varias limitaciones.
+## Notas de uso {#usage-notes}
 
 * Los nombres de dominio personalizados solo se admiten en Cloud Manager para los servicios de publicación y vista previa de los programas de Sites.
    * No se admiten los dominios personalizados para servicios de autor.

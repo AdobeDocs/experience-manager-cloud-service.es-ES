@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3323da83584c4511b15145c0106031df4597891c
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 40%
+source-wordcount: '1820'
+ht-degree: 39%
 
 ---
 
@@ -169,9 +169,7 @@ Si no recibe un correo electrónico de New Relic, haga lo siguiente:
 * Si corresponde, [agregue New Relic a su lista de permitidos de correo electrónico](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
 * Si ninguna de estas sugerencias ayuda, proporcione comentarios sobre el ticket de asistencia.
 
-## Restricciones {#limitations}
-
-Las siguientes limitaciones se aplican a la adición de usuarios a New Relic One:
+## Notas de uso {#usage-notes}
 
 * Se puede agregar un máximo de 30 usuarios. Si se ha alcanzado el número máximo de usuarios, elimine algunos para poder añadir nuevos.
 * Los usuarios agregados a New Relic son del tipo **Básico**. Consulte la [documentación de New Relic para obtener detalles](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/).
@@ -179,7 +177,7 @@ Las siguientes limitaciones se aplican a la adición de usuarios a New Relic One
 
 >[!NOTE]
 >
->Si no se detecta ninguna actividad **user login** en su subcuenta de New Relic One durante 30 días o más, el agente de APM se detiene y los datos no se envían desde AEM Cloud Service a New Relic.  **No se volverán a enviar los datos hasta que se reactive su cuenta secundaria.**
+>Si no se detecta ninguna actividad **user login** en su subcuenta de New Relic One durante 30 días o más, se detendrá el agente de APM. No se envían datos de AEM Cloud Service a New Relic. *No se volverán a enviar los datos hasta que se reactive su cuenta secundaria.*
 >
 >Siga los mismos pasos en la sección [Activar la subcuenta de New Relic One](#activate-sub-account) de este documento para reactivar la subcuenta de New Relic One.
 

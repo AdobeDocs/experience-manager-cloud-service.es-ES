@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo usar los submódulos de Git para c
 exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: dc4008a33f6a786884a9aad30096ff4f0561346c
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '391'
 ht-degree: 24%
 
 ---
@@ -68,9 +68,7 @@ El resultado es un archivo `.gitmodules` similar al siguiente:
 
 Consulte también el [Manual de referencia de Git](https://git-scm.com/book/en/v2/Git-Tools-Submodules) para obtener más información sobre los submódulos Git.
 
-## Limitaciones y recomendaciones {#limitations-recommendations}
-
-Cuando utilice submódulos Git con repositorios administrados por Adobe, tenga en cuenta las siguientes limitaciones.
+## Notas de uso {#usage-notes}
 
 * La dirección URL de Git debe ser exacta como la sintaxis descrita en la sección anterior.
 * Solo se admiten submódulos en la raíz de la rama.
@@ -84,7 +82,7 @@ Por ejemplo, mediante el uso de lo siguiente:
 
 ## Compatibilidad con los submódulos de Git para repositorios privados {#private-repositories}
 
-La compatibilidad con submódulos Git en [repositorios privados](private-repositories.md) suele ser similar a su uso con repositorios de Adobe.
+La compatibilidad con los submódulos Git en [repositorios privados](private-repositories.md) suele ser similar a su uso con repositorios de Adobe.
 
 Sin embargo, después de configurar el archivo `pom.xml` y ejecutar los comandos `git submodule`, debe agregar un archivo `.gitmodules` al directorio raíz del repositorio del agregador para que Cloud Manager reconozca la configuración del submódulo.
 
@@ -92,10 +90,8 @@ Sin embargo, después de configurar el archivo `pom.xml` y ejecutar los comandos
 
 ![Agregador](assets/aggregator.png)
 
-### Limitaciones y recomendaciones {#limitations-recommendations-private-repos}
-
-Cuando utilice submódulos Git con repositorios privados, tenga en cuenta las siguientes limitaciones:
+### Notas de uso {#usage-notes-recommendations-private-repos}
 
 * Las direcciones URL de Git del submódulo pueden estar en formato HTTPS o SSH, pero deben apuntar a un repositorio GitHub.com. No se admite agregar un submódulo de repositorio de Adobe a un repositorio de agregador de GitHub o al revés.
-* La aplicación de Adobe de GitHub debe poder acceder a los submódulos de GitHub.
+* La aplicación de Adobe GitHub debe poder acceder a los submódulos de GitHub.
 * [Las limitaciones de uso de submódulos de Git con repositorios administrados por Adobe](#limitations-recommendations) también se aplican.

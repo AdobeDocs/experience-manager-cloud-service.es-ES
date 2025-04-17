@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 328ae6d1866a7089fb291d4872d27dc5fa1d4caa
+source-git-commit: e7c38b4103c3de4b794da3a6dfa26c6204e1c0c6
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 25%
+source-wordcount: '423'
+ht-degree: 26%
 
 ---
 
@@ -36,11 +36,7 @@ Después de agregar, [las Listas de permitidos IP se pueden aplicar o dejar de a
 >
 >Si no se aplica ninguna Lista de permitidos IP, de forma predeterminada se permiten todas las direcciones IP. Cuando se aplica una Lista de permitidos IP, no se permiten direcciones IP, excepto direcciones en la Lista de permitidos IP.
 
-## Limitaciones {#limitations}
-
-Antes de usar Listas de permitidos IP, es necesario que entienda las siguientes limitaciones en su funcionalidad, uso y efecto en otras características.
-
-### Limitaciones generales de las Listas de permitidos IP {#general}
+## Notas de uso {#usage-notes}
 
 * Se puede agregar un máximo de 50 Listas de permitidos IP al programa.
 * Se puede añadir un máximo de 50 direcciones IP/CIDR a cada Lista de permitidos IP.

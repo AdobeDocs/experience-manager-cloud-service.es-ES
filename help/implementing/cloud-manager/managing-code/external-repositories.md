@@ -1,23 +1,23 @@
 ---
-title: 'Adición de repositorios externos en Cloud Manager: Beta limitado'
+title: 'Adición de repositorios externos en Cloud Manager: usuario que los adoptó por primera vez'
 description: Obtenga información sobre cómo añadir un repositorio administrado a Adobe en Cloud Manager. Cloud Manager admite la integración con repositorios de GitHub Enterprise, GitLab y Bitbucket.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 9807e59dedd0be0655a5cb73e61233b4a2ba7a4c
+source-git-commit: 186c4cfc11bcab38b0b9b74143cabbd2af317a81
 workflow-type: tm+mt
-source-wordcount: '1870'
-ht-degree: 27%
+source-wordcount: '2307'
+ht-degree: 23%
 
 ---
 
-# Adición de repositorios externos en Cloud Manager: versión beta limitada {#external-repositories}
+# Adición de repositorios externos en Cloud Manager: usuario que los adoptó por primera vez {#external-repositories}
 
 Obtenga información sobre cómo añadir un repositorio administrado a Adobe en Cloud Manager. Cloud Manager admite la integración con repositorios de GitHub Enterprise, GitLab y Bitbucket.
 
 >[!NOTE]
 >
->Esta función solo está disponible a través del programa de adopción anticipada. Para obtener más información y registrarse como uno de los primeros usuarios, consulte [Traer su propio Git: ahora con soporte para GitLab y Bitbucket](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md#gitlab-bitbucket).
+>Las funciones descritas en este artículo solo están disponibles a través del programa de adopción temprana. Para obtener más información y registrarse como uno de los primeros usuarios, consulte [Traer su propio Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
 
 ## Configurar un repositorio externo
 
@@ -31,6 +31,14 @@ La configuración de un repositorio externo en Cloud Manager consta de tres paso
 
 
 ## Añadir un repositorio externo {#add-ext-repo}
+
+>[!NOTE]
+>
+>Los repositorios externos no se pueden vincular a las canalizaciones de configuración.
+
+<!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
+* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
+
 
 1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
@@ -206,12 +214,88 @@ Se aplican los siguientes comportamientos:
 * Si los déclencheur de validación de PR o canalización no funcionan, compruebe que el secreto de webhook esté actualizado tanto en Cloud Manager como en el proveedor de Git.
 
 
-## Limitación
+## Implementación en un entorno de desarrollo rápido desde proveedores de Git externos {#deploy-to-rde}
 
-* Los repositorios externos no se pueden vincular a las canalizaciones de configuración.
+>[!NOTE]
+>
+>Esta función está disponible a través del programa Early Adopter. Si está interesado en probar esta nueva característica y compartir sus comentarios, envíe un mensaje de correo electrónico a [CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com) desde su dirección de correo electrónico asociada a su Adobe ID. Asegúrese de incluir qué plataforma Git desea utilizar y si se encuentra en una estructura de repositorio privado/público o de empresa.
+
+Cloud Manager admite la implementación de código en entornos de desarrollo rápido (RDE) directamente desde proveedores de Git externos al usar la configuración [Traer su propio Git (BYOG)](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+
+La implementación en RDE desde un repositorio Git externo requiere lo siguiente:
+
+* El uso de un repositorio Git externo integrado con Cloud Manager (configuración BYOG).
+* El proyecto debe tener uno o más entornos RDE aprovisionados.
+* Si utiliza `github.com`, debe revisar y aceptar la instalación actualizada de la aplicación GitHub para conceder los nuevos permisos necesarios.
+
+**Notas de uso**
+
+* Actualmente, la implementación en RDE solo es compatible con contenido de AEM y paquetes de Dispatcher.
+* Aún no se admite la implementación de otros tipos de paquetes (por ejemplo, paquetes de aplicaciones de AEM completos).
+* Actualmente, no se admite el restablecimiento de un entorno RDE mediante un comentario. Los clientes deben usar los comandos CLI de AIO existentes, como [se describe aquí](/help/implementing/developing/introduction/rapid-development-environments.md).
+
+**Funcionamiento**
+
+1. **Mensaje de validación de calidad del código.**
+
+   Cuando una solicitud de extracción (PR) déclencheur la ejecución de una canalización de calidad de código, los resultados de validación indican si la implementación puede continuar en un entorno RDE.
+
+   Aspecto de GitHub Enterprise:
+   ![Mensaje de validación de calidad del código en GitHub Enterprise](/help/implementing/cloud-manager/managing-code/assets/rde-github-enterprise-code-quality-validation-message.png)
+
+   Aspecto de GitLab:
+   ![Mensaje de validación de calidad de código en GitLab](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-code-quality-validation-message.png)
+
+   Cómo se ve en Bitbucket:
+   ![Mensaje de validación de calidad de código en Bitbucket](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-code-quality-validation-message.png)
+
+1. **Implementación de Déclencheur mediante un comentario.**
+
+   Para iniciar la implementación, agregue un comentario al PR con el siguiente formato: `deploy on rde-environment-<envName>`
+
+   ![Implementación de Déclencheur mediante un comentario](/help/implementing/cloud-manager/managing-code/assets/rde-trigger-deployment-using-comment.png)
+
+   El `<envName>` debe coincidir con el nombre de un entorno RDE existente. Si no se encuentra el nombre, se devuelve un comentario que indica que el entorno no es válido.
+
+   Si el estado del entorno no está listo, se obtiene el siguiente comentario:
+
+   ![El entorno no está listo para implementarse](/help/implementing/cloud-manager/managing-code/assets/rde-environment-not-ready.png)
 
 
-<!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
-* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
+
+
+1. **Comprobación del entorno e implementación de artefactos.**
+
+   Si el RDE está listo, Cloud Manager publica un nuevo cheque en el PR.
+
+   Aspecto de GitHub Enterprise:
+
+   ![Estado del entorno en GitHub](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-status-is-ready.png)
+
+   Aspecto de GitLab:
+
+   ![Estado del entorno en GitLab](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-1.png)
+
+   Cómo se ve en Bitbucket:
+
+   ![Estado del entorno en Bitbucket](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-1.png)
+
+
+1. **Mensaje de implementación correcto.**
+
+   Cuando se completa la implementación, Cloud Manager publica un mensaje de éxito en el que se resumen los artefactos implementados en el entorno de destino.
+
+   Aspecto de GitHub Enterprise:
+
+   ![Estado de implementación del entorno en GitHub](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-deployed-artifacts.png)
+
+   Aspecto de GitLab:
+
+   ![Estado de implementación del entorno en GitLab](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-2.png)
+
+   Cómo se ve en Bitbucket:
+
+   ![Estado de implementación del entorno en Bitbucket](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-2.png)
+
 
 

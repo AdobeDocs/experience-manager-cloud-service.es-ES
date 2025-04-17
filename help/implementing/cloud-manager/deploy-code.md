@@ -5,9 +5,9 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1185'
 ht-degree: 38%
 
 ---
@@ -42,7 +42,7 @@ Todas las implementaciones de Cloud Service siguen un proceso gradual para garan
 
 1. En la consola **[Mis programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, haga clic en el programa para el que desea implementar el código.
 
-1. En la página **Información general**, en el área de llamada a acción, haga clic en **Implementar**.
+1. En la página **Información general**, en el área de call-to-action, haga clic en **Implementar**.
 
    ![CTA](assets/deploy-code1.png)
 
@@ -89,16 +89,16 @@ La fase **Prueba de fase** incluye los siguientes pasos:
 
 ### Fase de implementación de producción {#production-deployment}
 
-AEM El proceso de implementación en topologías de producción difiere ligeramente para minimizar el impacto en los visitantes de un sitio de.
+El proceso de implementación en topologías de producción difiere ligeramente para minimizar el impacto sobre los visitantes de un sitio de AEM.
 
 Las implementaciones de producción generalmente siguen los mismos pasos que se describieron anteriormente, pero de forma gradual. Estos pasos incluyen lo siguiente:
 
 1. Implementar paquetes de AEM para crear.
 1. Desasociar `dispatcher1` del equilibrador de carga.
-1. AEM Implementar paquetes en `publish1` y el paquete de Dispatcher en `dispatcher1`, vaciar la caché de Dispatcher.
+1. Implemente paquetes de AEM en `publish1` y el paquete de Dispatcher en `dispatcher1`, vacíe la memoria caché de Dispatcher.
 1. Vuelva a colocar `dispatcher1` en el equilibrador de carga.
 1. Cuando `dispatcher1` vuelva a estar en servicio, desasocie `dispatcher2` del equilibrador de carga.
-1. AEM Implementar paquetes en `publish2` y el paquete de Dispatcher en `dispatcher2`, vaciar la caché de Dispatcher.
+1. Implemente paquetes de AEM en `publish2` y el paquete de Dispatcher en `dispatcher2`, vacíe la memoria caché de Dispatcher.
 1. Vuelva a colocar `dispatcher2` en el equilibrador de carga.
 
 Este proceso continúa hasta que la implementación haya llegado a todos los editores y distribuidores de la topología.
@@ -134,7 +134,7 @@ En estas circunstancias, cuando se puede volver a ejecutar, la página de estado
 >
 >En una nueva ejecución, el paso de compilación se etiqueta en la IU para reflejar que está copiando artefactos y no reconstruyendo.
 
-### Limitaciones {#limitations}
+### Notas de uso {#usage-notes}
 
 * Volver a ejecutar el paso de implementación de producción solo está disponible para la última ejecución.
 * Volver a ejecutar no está disponible para ejecuciones de actualización push. Si la última ejecución es una ejecución de actualización push, no será posible volver a ejecutarla.
@@ -146,7 +146,7 @@ Además de estar disponible en IU, puede utilizar [la API de Cloud Manager](http
 
 #### Activación de una nueva ejecución {#reexecute-deployment-api}
 
-Para almacenar en déclencheur una nueva ejecución, realice una solicitud de PUT al vínculo HAL `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` en el estado del paso de implementación de producción.
+Para almacenar en déclencheur una nueva ejecución, realice una petición PUT al vínculo HAL `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` en el estado del paso de implementación de producción.
 
 * Si este vínculo está presente, la ejecución se puede reiniciar desde ese paso.
 * Si está ausente, la ejecución no se puede reiniciar desde ese paso. 
@@ -190,7 +190,7 @@ Este vínculo solo está disponible para el paso de implementación de producci�
 
 La sintaxis del valor href del vínculo HAL es solo un ejemplo. El valor real siempre debe leerse desde el vínculo HAL y no generarse.
 
-Enviar una solicitud de PUT a este extremo da como resultado una respuesta 201 si es correcta y el cuerpo de la respuesta es la representación de la nueva ejecución. Este flujo de trabajo es similar a iniciar una ejecución normal a través de la API.
+Enviar una solicitud PUT a este extremo da como resultado una respuesta 201 si es correcta, y el cuerpo de la respuesta es la representación de la nueva ejecución. Este flujo de trabajo es similar a iniciar una ejecución normal a través de la API.
 
 #### Identificación de una ejecución que se ha vuelto a ejecutar {#identify-reexecution}
 
