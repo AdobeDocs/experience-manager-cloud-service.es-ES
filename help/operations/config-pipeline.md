@@ -4,9 +4,9 @@ description: Descubra cómo puede utilizar las canalizaciones de configuración 
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 0b4ed7a99400bb5f91f513bbcd01862cdced03c5
+source-git-commit: 4c166193ec464bb66fe00ff648c2c449ab5b3eab
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '1024'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,8 @@ La siguiente tabla ofrece una lista completa de estas configuraciones con víncu
 | [Autenticación básica](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Declare los nombres de usuario y contraseñas para un cuadro de diálogo de autenticación básico que proteja ciertas direcciones URL. |
 | [Tarea de mantenimiento de purga de versiones](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimizar el repositorio de AEM declarando reglas sobre cuándo se deben purgar las versiones de contenido |
 | [Tarea de mantenimiento de purga del registro de auditoría](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimice el registro de auditoría de AEM para obtener un mayor rendimiento declarando reglas sobre cuándo se deben purgar los registros |
-| [Reenvío de registros](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configure los extremos y las credenciales para reenviar registros a varios destinos, incluido Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk) |
+| [Reenvío de registros](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configure los puntos de conexión y las credenciales para reenviar registros a varios destinos, como Azure Blob Storage, Datadog, HTTPS, Elasticsearch y Splunk |
+| [Registro de un ID de cliente](/help/implementing/developing/open-api-based-apis.md) | `API` | Asigne proyectos de API de Adobe Developer Console a entornos de AEM específicos mediante el registro del ID de cliente. Esto es necesario para el uso de API basadas en OpenAPI que requieren autenticación |
 
 ## Creación y administración de canalizaciones de configuración {#creating-and-managing}
 
