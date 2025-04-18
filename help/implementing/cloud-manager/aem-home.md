@@ -1,5 +1,5 @@
 ---
-title: Acerca de AEM Launchpad &ndash; Early Adopter
+title: Acerca de AEM Launchpad
 description: Obtenga información acerca de la página de Adobe Experience Manager Launchpad.
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -7,18 +7,19 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: 9368fb64b1dd9ce83094117e184b532119ce22e4
+source-git-commit: c389e136b315c8361d5b8c78bddba09968f68541
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 7%
+source-wordcount: '341'
+ht-degree: 9%
 
 ---
 
-# Acerca de AEM Launchpad - Early Adopter {#aem-launchpad}
+# Acerca de AEM Launchpad {#aem-launchpad}
 
 AEM Launchpad presenta un punto de partida centralizado para administrar contenido, recursos y sitios dentro de Adobe Experience Manager. Diseñado para ofrecer una experiencia personalizada, AEM Launchpad le permite navegar por el ecosistema de AEM sin problemas según sus funciones y objetivos. Como guía, proporciona perspectivas clave y acciones recomendadas para ayudarle a lograr sus objetivos de forma eficaz. Con un diseño claro y dirigido por el usuario, AEM Launchpad garantiza un acceso rápido a las herramientas esenciales, lo que permite una experiencia optimizada y eficaz en todas las funciones de AEM.
 
-Disponible para los primeros usuarios, AEM Launchpad ofrece una experiencia optimizada centrada en mejorar los flujos de trabajo, priorizar los objetivos y ofrecer resultados. La inclusión le permite influir en el desarrollo de AEM Launchpad, al proporcionar comentarios que le ayudarán a dar forma a su futuro y aumentar su valor para toda la comunidad de AEM.
+<!--
+Available to early adopters, AEM Launchpad offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence AEM Launchpad's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
 
 ## AEM Launchpad de cerca {#aem-launchpad-about}
 
