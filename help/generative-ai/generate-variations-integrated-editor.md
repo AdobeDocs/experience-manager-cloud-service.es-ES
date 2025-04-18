@@ -1,28 +1,28 @@
 ---
 title: Generar variaciones
-description: Obtenga información sobre la generación de variaciones, accesible desde varios editores dentro de AEM as a Cloud Service
+description: Obtenga información sobre Generar variaciones, a la que se puede acceder desde varios editores dentro de AEM as a Cloud Service
 feature: Generate Variations
 role: Admin, Architect, Developer, User
-source-git-commit: 257fcd8df8bf216deec1fe96e64dd38e52f3ebe1
+exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
+source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 34%
+source-wordcount: '1341'
+ht-degree: 97%
 
 ---
 
+# Generar variaciones: integrado en editores AEM {#generate-variations-integrated-in-aem-editors}
 
-# Generar variaciones: integrado en editores de AEM {#generate-variations-integrated-in-aem-editors}
+Si está buscando una manera de optimizar sus canales digitales y acelerar la creación de contenido, puede utilizar “Generar variaciones” integrado en los editores AEM. 
 
-Si busca una forma de optimizar sus canales digitales y acelerar la creación de contenido, puede utilizar la opción Generar variaciones integrada en los editores de AEM.
+Generar variaciones utiliza inteligencia artificial (IA) generativa para crear variaciones de contenido basadas en los datos introducidos. Después de crear variaciones, puede usar el contenido de su sitio web y también medir su éxito usando la funcionalidad [Experimentación](https://www.aem.live/docs/experimentation) de [Edge Delivery Services](/help/edge/overview.md).
 
-Generate Variations utiliza inteligencia artificial (IA) generativa para crear variaciones de contenido basadas en los datos introducidos. Después de crear variaciones, puede usar el contenido de su sitio web y también medir su éxito usando la funcionalidad [Experimentación](https://www.aem.live/docs/experimentation) de [Edge Delivery Services](/help/edge/overview.md).
+Esto ayuda a acelerar la velocidad del contenido mediante la creación rápida de contenido de la marca en minutos. Esto, a su vez, ayuda a mejorar la conversión con nuevas variantes de copia.
 
-Esto acelera la velocidad del contenido al crear rápidamente contenido de la marca en minutos. Esto, a su vez, ayuda a mejorar la conversión con nuevas variantes de copia.
+Puede [acceder a Generar variaciones](#access-generate-variations) desde los siguientes editores ([una vez ya configurados](#access-generate-variations)):
 
-Puede [acceder a Generar variaciones](#access-generate-variations) desde los siguientes editores ([una vez configurados](#access-generate-variations)):
-
-* [en Sidekick de AEM Edge Delivery Services; para la creación basada en documentos](#access-aem-sidekick)
-* [en el editor universal](#access-aem-universal-editor)
+* [en la barra de tareas de AEM Edge Delivery Services; para la creación basada en documentos](#access-aem-sidekick)
+* [el editor universal](#access-aem-universal-editor)
 * [el editor de fragmentos de contenido](#access-aem-content-fragment-editor)
 
 >[!IMPORTANT]
@@ -35,17 +35,17 @@ Puede [acceder a Generar variaciones](#access-generate-variations) desde los sig
 
 >[!NOTE]
 >
->Se puede acceder directamente a la versión independiente de [Generar variaciones](/help/generative-ai/generate-variations.md).
+>Se recomienda usar esta versión, ya que aunque se puede acceder directamente a la versión independiente de [Generar variaciones](/help/generative-ai/generate-variations.md), quedará obsoleta en el futuro.
 
 Podrá hacer lo siguiente:
 
-* [Seleccione el contenido con el que desea trabajar](#select-the-content), entre los bloques existentes de su contenido
-   * El bloque seleccionado dirige lo que se muestra y las acciones disponibles
-* [Describa los cambios que desee](#describe-the-changes-you-want)
-* [Genere variaciones de su contenido](#generate-copy), luego [tome acciones adicionales si lo desea](#take-further-action-on-a-variation)
+* [Seleccione el contenido con el que desea trabajar](#select-the-content) entre los bloques existentes de su contenido
+   * El bloque seleccionado determina lo que se muestra y las acciones disponibles
+* [Describir los cambios que desee](#describe-the-changes-you-want)
+* [Generar variaciones de su contenido](#generate-copy) y, luego, [tomar acciones adicionales si lo desea](#take-further-action-on-a-variation)
 * [Seleccionar y utilizar una variación](#use-a-generated-variation)
-* Revisa tu [historial](#history)
-* Ver tus [favoritos](#favorites)
+* Revisar su [historial](#history)
+* Ver sus [favoritos](#favorites)
 
 ## Aviso legal y de uso {#legal-usage-note}
 
@@ -63,12 +63,12 @@ Before using Generate Variations you are recommended to read the [Adobe Experien
 
 ## Información general {#overview}
 
-Cuando abra Generar variaciones integradas en un editor, verá la extensión como un panel flotante que tiene tres pestañas.
+Cuando abra “Generar variaciones” integrado en un editor, verá la extensión como un panel flotante con tres pestañas.
 
 ![Generar variaciones: información general sobre la creación basada en documentos](assets/generate-variations-doc-based-overview.png)
 
 * El editor:
-   * Esto muestra el flujo de contenido en el editor.
+   * Muestra el flujo de contenido en el editor.
    * Aquí puede seleccionar un bloque de contenido para utilizarlo en **Generar variaciones**.
 * **Generar variaciones**:
    * Es un panel flotante con tres pestañas, que se puede reubicar como desee
@@ -78,38 +78,38 @@ Cuando abra Generar variaciones integradas en un editor, verá la extensión com
       * Le permite [describir los cambios que desea](#describe-the-changes-you-want).
       * Le permite [Generar](#generate-copy) nuevas variaciones.
       * Muestra las variaciones generadas. <!--, together with their [brand score](#the-brand-score).-->
-      * [Realice más acciones en una variación](#take-further-action-on-a-variation).
+      * [Adoptar acciones adicionales en una variación](#take-further-action-on-a-variation).
       * [Usar una variación generada](#use-a-generated-variation).
    * [Historial](#history):
-      * Muestra su historia reciente de generaciones.
+      * Muestra su historial reciente de generaciones.
    * [Favoritos](#favorites):
-      * Muestra los resultados de generaciones anteriores que ha marcado como Favoritos.
-   * **Términos de IA generativa de Adobe**: Vínculos a [Directrices del usuario de IA generativa de Adobe Experience Cloud](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+      * Muestra los resultados de generaciones anteriores que ha marcado como favoritos.
+   * **Términos de IA generativa de Adobe**: vínculos a las [Directrices del usuario de IA generativa de Adobe Experience Cloud](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
 
-## Introducción a la generación de variaciones {#get-started-with-generate-variations}
+## Introducción a Generar variaciones {#get-started-with-generate-variations}
 
-La interfaz le guía a través del proceso de generación de contenido. Después de abrir la interfaz, el primer paso es seleccionar el bloque de contenido que desea utilizar.
+La interfaz le guía a través del proceso de generación de contenido. Tras abrir la interfaz, el primer paso es seleccionar el bloque de contenido que desea utilizar.
 
-### Selección del contenido {#select-the-content}
+### Seleccionar el contenido {#select-the-content}
 
-En el flujo de contenido principal del editor, seleccione el contenido para el que desea generar variaciones. Esta **selección** se mostrará en la ficha **Generar**.
+En el flujo de contenido principal del editor, seleccione el contenido para el que desea generar variaciones. Esta **selección** se mostrará en la pestaña **Generar**.
 
-### Describa los cambios que desee {#describe-the-changes-you-want}
+### Describir los cambios que desee {#describe-the-changes-you-want}
 
-Para generar variaciones del contenido, debe describir los cambios que desee. Puede seleccionar una de las **sugerencias** proporcionadas o proporcionar su propia descripción.
+Para generar variaciones del contenido, debe describir los cambios que desee realizar. Puede seleccionar una de las **sugerencias** ofrecidas o proporcionar su propia descripción.
 
 También puede especificar **Modificadores** para proporcionar más contexto:
 
 * **Hacer referencia a una página web**
-Proporcione una URL para obtener más contexto.
-* **Cargar información de contenido**
-Actualice un archivo `.docx` que contenga detalles de la información breve de contenido (10 MB o menos).
+Proporcione una URL para más contexto.
+* **Cargar resumen de contenido**
+Actualice un archivo `.docx` que contenga detalles de resumen del contenido (10 MB o menos).
 
 ### Generar copia {#generate-copy}
 
-Después de describir los cambios que desea, seleccione **Generar** para ver las respuestas de IA generativa.
+Después de describir los cambios que desea, seleccione **Generar** para ver las respuestas de la IA generativa.
 
-![Generar variaciones - generar copia basada en documento](assets/generate-variations-doc-based-generate-copy.png)
+![Generar variaciones: generar copia basada en documento](assets/generate-variations-doc-based-generate-copy.png)
 
 <!--
 ### The Brand Score {#the-brand-score}
@@ -117,7 +117,7 @@ Después de describir los cambios que desea, seleccione **Generar** para ver las
 The brand score shows you how on-brand the generated variation is.
 -->
 
-### Realizar más acciones en una variación {#take-further-action-on-a-variation}
+### Adoptar acciones adicionales en una variación {#take-further-action-on-a-variation}
 
 Al seleccionar una sola variación, puede utilizar las siguientes acciones:
 
@@ -126,36 +126,36 @@ Al seleccionar una sola variación, puede utilizar las siguientes acciones:
 
       * Las actualizaciones se pueden previsualizar en la página web.
 
-   * Guarde los cambios para usarlos más adelante.
+   * Guardar los cambios para utilizarlos más adelante.
 * **Favorito**
-   * Marque esta variación para referencia futura.
-   * Una vez marcado, se mostrará en la ficha [Favoritos](#favorites).
+   * Marcar esta variación para referencia futura.
+   * Una vez marcada, se mostrará en la pestaña [Favoritos](#favorites).
 * **Motivo de IA**
-   * Para lograr una mayor transparencia, esto proporciona una breve descripción de por qué la IA generativa generó esa variación en particular.
+   * Para lograr mayor transparencia, esto proporciona una breve descripción de por qué la IA generativa ha generado esa variación en particular.
 
 ### Usar una variación generada {#use-a-generated-variation}
 
-Para usar el contenido generado con IA generativa, primero debe seleccionar y **Exportar a CSV**.
+Para utilizar el contenido generado con IA generativa, primero debe seleccionarlo y **Exportarlo a CSV**.
 
-Después de la exportación, puede utilizar el contenido en cualquier otra parte; por ejemplo, al crear contenido para el sitio web. También puede ejecutar un [experimento](https://www.aem.live/docs/experimentation).
+Después de la exportación, puede utilizar el contenido en cualquier otra parte; por ejemplo, al crear contenido para su sitio web. También puede ejecutar un [experimento](https://www.aem.live/docs/experimentation).
 
 >[!NOTE]
 >
->Cuando se accede a Generar variaciones desde [el Editor universal de AEM](#access-aem-universal-editor) o [el Editor de fragmentos de contenido de AEM](#access-aem-content-fragment-editor), el contenido generado seleccionado se guarda automáticamente en AEM.
+>Cuando se accede a Generar variaciones desde el [Editor universal de AEM](#access-aem-universal-editor) o el [Editor de fragmentos de contenido de AEM](#access-aem-content-fragment-editor), el contenido generado seleccionado se guarda automáticamente en AEM.
 
 ## Historia {#history}
 
-Esta pestaña muestra su actividad anterior como después de seleccionar **Generar**. se ha agregado una entrada **History**.
+Esta pestaña muestra su actividad anterior después de seleccionar **Generar**. Se añade una entrada **Historial**.
 
-Si, en un momento posterior, selecciona el mismo contenido en el flujo principal y abre la pestaña **History**, verá todas las variaciones generadas para ese bloque.
+Si, en un momento posterior, selecciona el mismo contenido en el flujo principal y abre la pestaña **Historial**, verá todas las variaciones generadas para ese bloque.
 
 ## Favoritos {#favorites}
 
 Después de revisar el contenido, puede guardar las variaciones seleccionadas como favoritas.
 
-Una vez guardados, se muestran en **Favoritos**. Los favoritos se mantienen (hasta que los **elimine de sus favoritos** o borre la caché del explorador).
+Una vez guardadas, se muestran en **Favoritos**. Los favoritos se mantienen (hasta que los **quite de Favoritos** o borre la caché del explorador).
 
-* Puede **Editar**, **No marcar como favorito** o mostrar la **justificación de IA** para una entrada.
+* Puede **Editar**, **Quitar de Favoritos** o mostrar el **Motivo de IA** para una entrada.
 * Una vez seleccionada una variación, también puede **Exportar a CSV**.
 
 ## Uso de acciones generativas {#generative-action-usage}
@@ -202,9 +202,9 @@ Es necesario realizar alguna configuración antes de poder acceder a “Generar 
 >
 >Consulte el documento [Instalación de la barra de tareas de AEM](https://www.aem.live/docs/sidekick-extension) para obtener información sobre cómo instalar y configurar la barra de tareas.
 
-Para utilizar la opción Generar variaciones en Sidekick (de Edge Delivery Services), incluya las siguientes configuraciones en sus proyectos de Edge Delivery Services.
+Para utilizar “Generar variaciones” en la barra de tareas (de Edge Delivery Services), incluya la siguiente configuración en sus proyectos de Edge Delivery Services en:
 
-1. Habilite la aplicación en:
+1. Habilitar nuestra aplicación en:
 
    * `tools/sidekick/config.json`
 
@@ -287,7 +287,7 @@ Para utilizar la opción Generar variaciones en Sidekick (de Edge Delivery Servi
    }());
    ```
 
-1. Actualización:
+1. Actualizar:
 
    * `/scripts/scripts.js`
 
@@ -297,23 +297,23 @@ Para utilizar la opción Generar variaciones en Sidekick (de Edge Delivery Servi
      import('../tools/sidekick/aem-genai-variations.js');
    ```
 
-   Esto garantiza que `/tools/sidekick/aem-genai-variations.js` se cargue como parte del proceso de carga diferida.
+   Esto garantiza que `/tools/sidekick/aem-genai-variations.js` se cargue como parte del proceso de carga a medida.
 
-   ![Generar variaciones - cargador diferido](assets/generate-variations-sidekick-lazyloader.png)
+   ![Generar variaciones: cargador a medida](assets/generate-variations-sidekick-lazyloader.png)
 
 1. A continuación, es posible que tenga que asegurarse de que los usuarios disponen de [Acceso a Experience Manager as a Cloud Service con Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services).
 
-1. A continuación, puede acceder a la funcionalidad seleccionando **Generar con IA** en la barra de herramientas de Sidekick:
+1. A continuación, puede acceder a la función seleccionando **Generar con IA** en la barra de herramientas de la barra de tareas:
 
    ![Generar variaciones: acceso desde la barra de tareas de AEM](assets/generate-variations-doc-based-sidekick.png)
 
 ### Acceso desde el Editor universal de AEM {#access-aem-universal-editor}
 
-El acceso desde [AEM Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) está implementado como una extensión. Consulte [Extension Manager en AEM Experience Manager](https://developer.adobe.com/uix/docs/extension-manager/) para obtener más información.
+El acceso desde el [Editor universal de AEM](/help/sites-cloud/authoring/universal-editor/authoring.md) está implementado como una extensión. Consulte [Extension Manager en AEM Experience Manager](https://developer.adobe.com/uix/docs/extension-manager/) para obtener más información.
 
-### Acceso desde el Editor de fragmentos de contenido de AEM {#access-aem-content-fragment-editor}
+### Acceso desde el editor de fragmentos de contenido de AEM {#access-aem-content-fragment-editor}
 
-El acceso desde [AEM Content Fragment Editor](/help/sites-cloud/administering/content-fragments/authoring.md#generate-variations-ai) está implementado como una extensión. Consulte [Extension Manager en AEM Experience Manager](https://developer.adobe.com/uix/docs/extension-manager/) para obtener más información.
+El acceso desde el [Editor de fragmentos de contenido de AEM](/help/sites-cloud/administering/content-fragments/authoring.md#generate-variations-ai) está implementado como una extensión. Consulte [Extension Manager en AEM Experience Manager](https://developer.adobe.com/uix/docs/extension-manager/) para obtener más información.
 
 ## Información adicional {#further-information}
 
