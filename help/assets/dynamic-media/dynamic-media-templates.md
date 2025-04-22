@@ -4,9 +4,9 @@ description: Aprenda a crear  [!DNL Dynamic Media] plantillas mediante un editor
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: b877c4385d68778d31f0174aa1d3d87548c6016a
+source-git-commit: c237f53f771431cc15584b392106645b7eacaa30
 workflow-type: tm+mt
-source-wordcount: '3222'
+source-wordcount: '3168'
 ht-degree: 1%
 
 ---
@@ -75,21 +75,25 @@ Algunas de las ventajas clave de las plantillas de [!DNL Dynamic Media] son:
 
 ## Antes de empezar{#prerequisites-for-dynamic-media-wysiwyg-template}
 
-Para crear una plantilla [!DNL Dynamic Media], debe contar con:
+Complete los siguientes requisitos para crear una plantilla [!DNL Dynamic Media] y generar su dirección URL de envío:
 
 1. Acceso a [!DNL Dynamic Media].
-1. [Sincronizó las imágenes disponibles en su [!DNL AEM Assets] instancia con [!DNL Dynamic Media] para usarlas para crear la plantilla](/help/assets/dynamic-media/config-dm.md).
-1. Se ha verificado lo siguiente en la IU táctil:
+1. En la página de inicio [!DNL Assets View], tiene una carpeta en **[!UICONTROL Dynamic Media Assets]** para guardar la plantilla. [Cree una carpeta](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) en ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**para replicarla en**[!UICONTROL  Dynamic Media Assets ]**.
+1. [Sincroniza las imágenes disponibles en tu [!DNL AEM Assets] instancia con [!DNL Dynamic Media] para usarlas para crear la plantilla](/help/assets/dynamic-media/config-dm.md).
+1. Publique las imágenes que desee utilizar para crear la plantilla y generar la dirección URL de entrega de la plantilla después de crearla. La dirección URL de envío se puede utilizar en aplicaciones de flujo descendente.
+1. Para usar una fuente distinta a la predeterminada [!UICONTROL Adobe Sans F2] en la capa de texto de la plantilla, [cargue y publique el archivo de fuente en AEM y Dynamic Media simultáneamente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). Asegúrese de [volver a procesar](/help/assets/reprocessing-assets-view.md) las fuentes existentes para usarlas en la creación de la plantilla<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->. Consulte [Fuentes](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) para obtener más información.
+1. compruebe lo siguiente en la interfaz de usuario táctil:
    * En la página **[!UICONTROL Editar configuración de [!DNL Dynamic Media]]**, el modo de sincronización **[!UICONTROL [!DNL Dynamic Media]]** establecido en **[!UICONTROL Deshabilitado de forma predeterminada]** no se aplica a todas las carpetas de AEM (**[!UICONTROL Sincronizar todo el contenido]** está desmarcado). Consulte [Configuración de Dynamic Media Cloud Service](/help/assets/dynamic-media/config-dm.md) para obtener más información.
    * El modo de sincronización **[!UICONTROL [!DNL Dynamic Media]]** se ha establecido en **[!UICONTROL Habilitar para subcarpetas]** para la carpeta o subcarpeta de destino en la que guardará la plantilla después de crearla. Consulte [configurar [!DNL Dynamic Media] Cloud Service](/help/assets/dynamic-media/config-dm.md) para obtener más información.
 
 ## Crear plantilla [!DNL Dynamic Media]{#how-to-create-dynamic-media-template}
 
 Ejecute los siguientes pasos para crear una plantilla [!DNL Dynamic Media]:
-
-1. Vaya a [!DNL Assets View] y [cree una carpeta](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) en ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**. El árbol de carpetas de ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** se replica en **[!UICONTROL Dynamic Media Assets]**. Guarde la plantilla [!DNL Dynamic Media] en esta carpeta [!UICONTROL Dynamic Media Assets].
-1. Seleccione ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**y [cargue y publique sus imágenes en [!DNL AEM] y [!DNL Dynamic Media] simultáneamente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) para usarlas en la creación de la plantilla. Se requiere la publicación de imágenes para generar la dirección URL de entrega de la plantilla después de crearla. La dirección URL de envío se puede utilizar en aplicaciones de flujo descendente.
-1. [Ejecute estos pasos de carga y publicación de recursos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) para cargar y publicar un archivo de fuentes en AEM y Dynamic Media simultáneamente para utilizarlo en la creación de la plantilla. [!UICONTROL Adobe Sans F2] es la única fuente predeterminada disponible en la capa de texto. [Los formatos de archivo de fuente admitidos son, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Asegúrese de [reprocesar](/help/assets/reprocessing-assets-view.md) las fuentes existentes para usarlas en la creación de la plantilla (en la página de inicio de [!DNL Assets View], haga clic en ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**, vaya a la ubicación del archivo de fuentes, selecciónelo de uno en uno y haga clic en ![Reprocesar](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocesar]**). Consulte [Fuentes](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) para obtener más información.
+<!--
+1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
+1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
+1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
+-->
 1. [Crear un lienzo en blanco](#create-a-canvas)
 1. [Añadir imágenes al lienzo](#add-images-to-the-canvas)
 1. [Añadir capas de texto al lienzo](#add-text-to-the-canvas)
@@ -159,7 +163,7 @@ Siga estos pasos para agregar capas de texto al lienzo:
 1. Seleccione **[!UICONTROL Cambio de tamaño del texto inteligente]** en el panel Propiedades para ajustar automáticamente la longitud del texto y el tamaño de la fuente para que se ajusten de forma óptima en el área designada.
    ![mejores titulares personalizables](/help/assets/assets/add-text-layer.png)
 
-Consulte el [**[!UICONTROL Panel de propiedades]**](#reposition-resize-delete-a-layer) para cambiar la posición, el tamaño, la rotación o la eliminación de la capa. Dé formato al texto con la fuente, el tamaño, el color, el estilo y la alineación necesarios (en la capa) cambiando sus valores en los campos respectivos de la sección **[!UICONTROL Texto]** del panel. El campo **[!UICONTROL Familia de fuentes]** muestra la fuente predeterminada [!UICONTROL Adobe Sans F2], las fuentes existentes reprocesadas y las fuentes recién cargadas y publicadas. Consulte el [paso 3 de la sección Crear [!DNL Dynamic Media] plantilla](#how-to-create-dynamic-media-template) anterior para obtener más información.
+Consulte el [**[!UICONTROL Panel de propiedades]**](#reposition-resize-delete-a-layer) para cambiar la posición, el tamaño, la rotación o la eliminación de la capa. Dé formato al texto con la fuente, el tamaño, el color, el estilo y la alineación necesarios (en la capa) cambiando sus valores en los campos respectivos de la sección **[!UICONTROL Texto]** del panel. El campo **[!UICONTROL Familia de fuentes]** muestra la fuente predeterminada [!UICONTROL Adobe Sans F2], las fuentes existentes reprocesadas y las fuentes recién cargadas y publicadas. Consulte el punto 5 de la sección [Antes de comenzar](#prerequisites-for-dynamic-media-wysiwyg-template) anterior para obtener más información.
 
 ### Edición o eliminación de una capa {#edit-or-delete-a-layer}
 
@@ -269,15 +273,11 @@ También puede alternar **[!UICONTROL Incluir todos los parámetros]** para edit
    <br>
 1. Para publicar la plantilla desde la página de vista previa, haz clic en **[!UICONTROL Publicar]** y confirma la publicación. Aparece un mensaje **[!UICONTROL Publicación completa]** y el estado de publicación se actualiza a **[!UICONTROL Publicado]**.
 
-   >[!NOTE]
-   >
-   >La publicación de la plantilla requiere que las imágenes de la plantilla se publiquen primero.
-
 ### Copiar la dirección URL de envío
 
 Los parámetros seleccionados en la página **[!UICONTROL Vista previa]** se convierten en los parámetros de URL en la URL de la plantilla.
 
-Asegúrese de que las imágenes de la plantilla se publiquen en AEM y Dynamic Media para generar una URL de envío de la plantilla publicada.
+Asegúrese de que las imágenes de la plantilla ya se han publicado en AEM y Dynamic Media para generar la dirección URL de envío de la plantilla.
 
 Ejecute los siguientes pasos para copiar la dirección URL de entrega de la plantilla:
 
@@ -312,7 +312,9 @@ Edite la plantilla siguiendo estos pasos:
 
 ## Añadir el vínculo de la llamada a la acción (CTA) a la capa de plantilla{#add-CTA-in-dynamic-media-templates}
 
-Convierta cualquier imagen o capa de texto de la plantilla [!DNL Dynamic Media] en un hipervínculo agregándole un vínculo de CTA que dirija a los usuarios a una página de destino. Siga estos pasos para agregar un vínculo de CTA a una capa:
+Convierta cualquier imagen o capa de texto de la plantilla [!DNL Dynamic Media] en un hipervínculo agregándole un vínculo de CTA que dirija a los usuarios a una página de destino.
+
+Siga estos pasos para agregar un vínculo de CTA a una capa:
 
 1. Vaya a la ubicación de la plantilla, seleccione la plantilla y haga clic en ![editar](/help/assets/assets/edit-pen-icon.svg) **[!UICONTROL Editar plantilla]**. La plantilla se muestra en el lienzo.
 1. Seleccione la capa de plantilla y [navegue hasta su panel de propiedades](#edit-or-delete-a-layer) para agregarle un vínculo de CTA.
@@ -323,7 +325,7 @@ Convierta cualquier imagen o capa de texto de la plantilla [!DNL Dynamic Media] 
 1. Haga clic en **[!UICONTROL Vista previa]** para obtener una vista previa de la plantilla y ver sus parámetros definidos.
 1. Haga clic en **[!UICONTROL Publicar]** y seleccione **[!UICONTROL Sí]** para publicar la plantilla, si no se publicó anteriormente.
 1. Vaya a la carpeta donde se guardó esta plantilla, selecciónela y haga clic en ![página de detalles](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Detalles]**.
-1. Haga clic en **[!UICONTROL Opciones de copia]** y seleccione **[!UICONTROL Copiar código incrustado]**.
+1. Haga clic en **[!UICONTROL Opciones de copia]** y seleccione **[!UICONTROL Copiar código incrustado]**. Asegúrese de publicar las imágenes de la plantilla en [!DNL AEM and Dynamic Media] para copiar el código incrustado.
 
    ![copiar código incrustado](/help/assets/assets/copy-options1.png)
 
@@ -360,5 +362,3 @@ Vea este vídeo paso a paso para aprender a añadir un vínculo de CTA a una cap
 
 1. Explorar [[!DNL Dynamic Media] y sus capacidades](/help/assets/dynamic-media/dynamic-media.md)
 1. Explorar [[!DNL Dynamic Media] con capacidades de OpenAPI](/help/assets/dynamic-media-open-apis-overview.md)
-
-
