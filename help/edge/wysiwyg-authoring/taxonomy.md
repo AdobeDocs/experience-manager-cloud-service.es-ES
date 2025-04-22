@@ -4,10 +4,13 @@ description: Aprenda a administrar datos de taxonomía para usar etiquetas con A
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
 workflow-type: tm+mt
 source-wordcount: '1003'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 

@@ -1,13 +1,16 @@
 ---
-description: '**NOTA**: para proyectos que utilizan Sharepoint de Adobe (<https://adobe.sharepoint.com>) continúe aquí.'
+description: '**NOTA**: para proyectos que utilicen Sharepoint de Adobe (&lt;https://adobe.sharepoint.com&gt;), continúe aquí.'
 title: Cómo utilizar SharePoint
 feature: Edge Delivery Services
 exl-id: c0feb7bc-5418-4f93-bcfc-072cfe2e97bd
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 1e69fd3abf8dad01886007bc16b2ed0d0df0777c
 workflow-type: tm+mt
 source-wordcount: '20'
-ht-degree: 100%
+ht-degree: 40%
 
 ---
 

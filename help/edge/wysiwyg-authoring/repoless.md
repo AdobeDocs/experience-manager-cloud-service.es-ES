@@ -4,7 +4,10 @@ description: Si tiene muchos sitios similares que en su mayoría tienen el mismo
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: 7b46af35b202446fdea67e4125d74c3965d302d9
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
 workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 2%
