@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e7c38b4103c3de4b794da3a6dfa26c6204e1c0c6
+source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 26%
+source-wordcount: '515'
+ht-degree: 21%
 
 ---
 
@@ -77,3 +77,13 @@ Cuando [agregue la Lista de permitidos IP](/help/implementing/cloud-manager/ip-a
 Para evitar interrupciones en la ejecución de la canalización front-end, asegúrese de añadir esta Lista de permitidos IP de Cloud Manager. A continuación, aplique la lista al entorno de creación *antes de* de habilitar la canalización.
 
 Consulte [Aplicar Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) y [Habilitar canalización front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) para obtener más información.
+
+### El editor universal y las Listas de permitidos IP {#universal-editor}
+
+Si tiene intención de utilizar el editor universal para crear contenido, debe añadir las direcciones IP que utiliza el servicio de editor universal a una Lista de permitidos y aplicarla.
+
+1. Recupere las direcciones IP utilizadas por el servicio de editor universal desde el siguiente extremo de API: `http://universal-editor-service.adobe.io/ip-ranges`.
+1. Cree una lista de permitidos con esas direcciones IP y asígnele el nombre `Universal Editor Service` o similar.
+1. Aplicar la lista de permitidos `Universal Editor Service`.
+
+La lista de direcciones IP que utiliza el servicio de editor universal está sujeta a cambios y debe actualizar la lista de permitidos en consecuencia.

@@ -5,7 +5,7 @@ exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 328ae6d1866a7089fb291d4872d27dc5fa1d4caa
+source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 14%
@@ -20,6 +20,7 @@ Aprenda a añadir su propia Lista de permitidos IP con Cloud Manager.
 Un usuario con el rol **Propietario del negocio** o **Administrador de implementación** puede seguir estos pasos para agregar una Lista de permitidos IP.
 
 {{add-cm-allowlist-frontend-pipeline}}
+{{ip-allow-lists-ue}}
 
 **Para agregar una Lista de permitidos IP:**
 

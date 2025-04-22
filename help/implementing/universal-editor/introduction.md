@@ -4,7 +4,7 @@ description: El editor universal es una herramienta moderna de creación visual 
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 8d608d1ba00764613fbf4a5c1e1a0fcdc603283c
+source-git-commit: ae59b00e7e8149477a87d0b0b63493a6c2cfebe7
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 10%
@@ -108,7 +108,7 @@ A medida que explore el editor universal y avance en la implementación de él e
 * Como parte de AEM, el editor universal [ admite los mismos exploradores de escritorio que AEM.](/help/overview/supported-platforms.md)
    * Las versiones móviles de estos exploradores no son compatibles.
 
-{{ue-ip-allow-lists}}
+{{ip-allow-lists-ue}}
 
 ## Siguientes pasos {#next-steps}
 
