@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Conozca cómo funciona Experience Manager as a Cloud Service y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e470244d2b6e039f47d06c332a0fb98cff1b0433
+source-git-commit: e302cb6c85937755b7c9324dc1ee6c60a7562b80
 workflow-type: tm+mt
-source-wordcount: '6152'
+source-wordcount: '6135'
 ht-degree: 99%
 
 ---
@@ -1078,14 +1078,9 @@ ht-degree: 99%
       + Barra de tareas  {#sidekick}
          + [Uso de la barra de tareas](/help/edge/docs/sidekick.md)
          + [Instalación de la extensión](/help/edge/docs/sidekick-extension.md)
-         + [Configurador de proyectos](https://www.aem.live/tools/sidekick/)
          + [Biblioteca de la barra de tareas](/help/edge/docs/sidekick-library.md)
       + [Preguntas frecuentes](/help/edge/docs/faq.md)
-      + [API de administrador](https://www.aem.live/docs/admin.html)
-      + [Estado de AEM](https://status.adobe.com)
       + Herramientas {#tools}
-         + [Extensión de Chrome de la barra de tareas de AEM](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
-         + [Bot de Github](https://github.com/apps/aem-code-sync)
          + [Registro de auditorías](/help/edge/docs/auditlog.md)
 + Sin encabezado {#headless}
    + [¿Qué es un CMS sin encabezado?](/help/headless/what-is-headless.md)
