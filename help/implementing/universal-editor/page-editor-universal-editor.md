@@ -1,19 +1,19 @@
 ---
 title: Editor de páginas y editor universal
-description: El editor de páginas sigue siendo compatible con Adobe, pero el editor universal ofrece las posibilidades existentes a los nuevos proyectos.
+description: El editor de páginas sigue siendo compatible con Adobe, pero el editor universal ofrece interesantes posibilidades para sus nuevos proyectos.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9fdc24600c9dd4ebf6a3d12462eb9bd387815360
+exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
+source-git-commit: 4956552ca93351a7b319bc808e0c5ec930bcbe28
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 3%
 
 ---
 
-
 # Editor de páginas y editor universal {#page-editor-universal-editor}
 
-El editor de páginas sigue siendo compatible con Adobe, pero el editor universal ofrece las posibilidades existentes a los nuevos proyectos.
+El editor de páginas sigue siendo compatible con Adobe, pero el editor universal ofrece interesantes posibilidades para sus nuevos proyectos.
 
 ## Fondo {#background}
 
@@ -46,17 +46,17 @@ Debido a que la brecha entre las características de los dos editores se está r
 
 ### Persistencia {#persistence}
 
-|  | Editor de página | Nota | Editor universal | Notas |
+|  | Editor de página | Notas | Editor universal | Notas |
 |---|---|---|---|---|
 | Edición de componentes de página | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} |  |
 | Editando [fragmentos de contenido](/help/assets/content-fragments/content-fragments.md) | [!BADGE No disponible]{type=Negative} |  | [!BADGE Disponible]{type=Positive} | Incluir la inserción y reordenación de fragmentos |
 
 ### Capacidades {#capabilities}
 
-|  | Editor de página | Nota | Editor universal | Notas |
+|  | Editor de página | Notas | Editor universal | Notas |
 |---|---|---|---|---|
 | Plantillas de página | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} | El editor universal no es independiente del sistema de plantillas utilizado. Sin embargo, el patrón de implementación típico favorece las plantillas definidas por el desarrollador, ya que las herramientas modernas de front-end facilitan en gran medida a los desarrolladores la definición y el mantenimiento de la lógica de plantilla directamente en el código. |
-| Edición en WYSIWYG | [!BADGE Disponible]{type=Positive} limitado a páginas |  | [!BADGE Disponible]{type=Positive} | Páginas de soporte y fragmentos de contenido |
+| Edición en WYSIWYG | [!BADGE Disponible]{type=Positive} | Limitado a páginas | [!BADGE Disponible]{type=Positive} | Páginas de soporte y fragmentos de contenido |
 | [Generar variaciones](/help/generative-ai/generate-variations.md) | [!BADGE No disponible]{type=Negative} |  | [!BADGE Disponible]{type=Positive} | [Disponible como extensión](/help/implementing/universal-editor/extending.md) |
 | Insertar nuevo bloque | [!BADGE Disponible]{type=Positive} |  | [!BADGE Disponible]{type=Positive} |  |
 | Reordenar bloque | [!BADGE Disponible]{type=Positive} | Es posible con arrastrar y soltar en contexto, pero no en el panel lateral &quot;vista de árbol&quot; | [!BADGE Disponible]{type=Positive} | Posible mediante arrastrar y soltar en el panel lateral &quot;vista de árbol&quot;, pero aún no en contexto (planificado) |
