@@ -4,10 +4,10 @@ description: Configuración de las reglas de filtro de tráfico, incluidas las r
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: cdf15df0b8b288895db4db0032137c38994f4faf
-workflow-type: ht
-source-wordcount: '4215'
-ht-degree: 100%
+source-git-commit: 20d4ea369676baad28c43246fe399e2e2f4b1db7
+workflow-type: tm+mt
+source-wordcount: '4278'
+ht-degree: 98%
 
 ---
 
@@ -184,7 +184,7 @@ Un grupo de condiciones está compuesto por varias condiciones simples o de grup
 
 | **Propiedad** | **Tipo** | **Descripción** |
 |---|---|---|
-| reqProperty | `string` | Solicitar propiedad.<br><br>Uno de:<br><ul><li>`path`: devuelve la ruta completa de una dirección URL sin los parámetros de consulta. (use `pathRaw` para la variante sin escape)</li><li>`url`: devuelve la dirección URL completa, incluidos los parámetros de consulta. (use `urlRaw` para la variante sin escape)</li><li>`queryString`: devuelve la parte de consulta de una dirección URL</li><li>`method`: devuelve el método HTTP utilizado en la solicitud.</li><li>`tier`: devuelve uno de `author`, `preview` o `publish`.</li><li>`domain`: devuelve la propiedad de dominio (tal como se define en el encabezado `Host`) en minúsculas</li><li>`clientIp`: devuelve la IP del cliente.</li><li>`forwardedDomain`: devuelve el primer dominio definido en el encabezado `X-Forwarded-Host`, en minúsculas</li><li>`forwardedIp`: devuelve la primera IP del encabezado `X-Forwarded-For`.</li><li>`clientCountry`: devuelve un código de dos letras ([Símbolo de indicador regional](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) que identifica en qué país se encuentra el cliente.</li></ul> |
+| reqProperty | `string` | Solicitar propiedad.<br><br>Uno de:<br><ul><li>`path`: devuelve la ruta completa de una dirección URL sin los parámetros de consulta. (use `pathRaw` para la variante sin escape)</li><li>`url`: devuelve la dirección URL completa, incluidos los parámetros de consulta. (use `urlRaw` para la variante sin escape)</li><li>`queryString`: devuelve la parte de consulta de una dirección URL</li><li>`method`: devuelve el método HTTP utilizado en la solicitud.</li><li>`tier`: devuelve uno de `author`, `preview` o `publish`.</li><li>`domain`: devuelve la propiedad de dominio (tal como se define en el encabezado `Host`) en minúsculas</li><li>`clientIp`: devuelve la IP del cliente.</li><li>`forwardedDomain`: devuelve el primer dominio definido en el encabezado `X-Forwarded-Host`, en minúsculas</li><li>`forwardedIp`: devuelve la primera IP del encabezado `X-Forwarded-For`.</li><li>`clientRegion`: Devuelve el código de subdivisión de país que identifica en qué región se encuentra el cliente como se describe en [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2).</li><li>`clientCountry`: devuelve un código de dos letras ([Símbolo de indicador regional](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) que identifica en qué país se encuentra el cliente.</li><li>`clientContinent`: devuelve un código de dos letras (AF, AN, AS, EU, NA, OC, SA) que identifica en qué continente se encuentra el cliente.</li><li>`clientAsNumber`: Devuelve el número de [sistema autónomo](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) asociado a la dirección IP del cliente.</li><li>`clientAsName`: Devuelve el nombre asociado al número de sistema autónomo.</li></ul> |
 | reqHeader | `string` | Devuelve el encabezado de la solicitud con el nombre especificado |
 | queryParam | `string` | Devuelve el parámetro de consulta con el nombre especificado |
 | reqCookie | `string` | Devuelve una cookie con el nombre especificado |
