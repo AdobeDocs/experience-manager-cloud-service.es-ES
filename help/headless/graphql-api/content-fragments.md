@@ -4,21 +4,15 @@ description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience 
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
+source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
 workflow-type: tm+mt
-source-wordcount: '6021'
+source-wordcount: '5993'
 ht-degree: 73%
 
 ---
 
 
 # API de GraphQL de AEM para su uso con fragmentos de contenido {#graphql-api-for-use-with-content-fragments}
-
->[!IMPORTANT]
->
->Varias funciones de la API de GraphQL para su uso con fragmentos de contenido están disponibles a través del programa de adopción anticipada.
->
->Para ver el estado y cómo solicitarlo si está interesado, consulte las [Notas de la versión](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) as a Cloud Service con la API de GraphQL de AEM para la entrega de contenido sin encabezado.
 
@@ -1187,7 +1181,7 @@ Las limitaciones actuales son:
 * Si se elimina un recurso al que se hace referencia del repositorio remoto, se producirá una referencia a un recurso de fragmento de contenido roto.
 * Todos los repositorios de recursos de entrega a los que el usuario tiene acceso estarán disponibles para su selección, la lista disponible no se puede limitar.
 * Tanto la instancia de AEM como las instancias del repositorio de recursos remoto deben tener la misma versión.
-* No se expusieron metadatos de recursos a través de [la API de administración](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) y [la API de entrega](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/). Debe utilizar la API de metadatos del recurso para recuperar los detalles de los metadatos del recurso.
+* No se expusieron metadatos de recursos a través de la [API de sitios de administración](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) y la [entrega de fragmentos de contenido de AEM con OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/). Debe utilizar la API de metadatos del recurso para recuperar los detalles de los metadatos del recurso.
 
 ## GraphQL para AEM: resumen de extensiones {#graphql-extensions}
 
