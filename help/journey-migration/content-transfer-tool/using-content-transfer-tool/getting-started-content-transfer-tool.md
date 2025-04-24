@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo empezar a utilizar la herramienta 
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: ccd96892ccce0ed896cd01978f07e2a556c18527
+source-git-commit: 4dcfc36167a40b59e251750bb112b073beddc52f
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1642'
 ht-degree: 14%
 
 ---
@@ -22,14 +22,14 @@ ht-degree: 14%
 >title="Descargar"
 >abstract="La herramienta de transferencia de contenido se puede descargar como un archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM). Asegúrese de descargar la última versión."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=es" text="Notas de la versión"
->additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html" text="Portal de distribución de software"
+>additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Portal de distribución de software"
 
 La herramienta de transferencia de contenido se puede descargar como un archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en la instancia de origen de Adobe Experience Manager (AEM). Asegúrese de descargar la versión más reciente. Para obtener más información sobre la versión más reciente, consulte [Notas de la versión](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=es).
 
 Solo se admite la versión 2.0.0 y posteriores, y es aconsejable utilizar la versión más reciente.
 
 >[!NOTE]
->Descargue Content Transfer Tool desde el portal de [distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html).
+>Descargue Content Transfer Tool desde el portal de [distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 ## Conectividad del entorno de Source {#source-environment-connectivity}
 
@@ -95,11 +95,13 @@ La siguiente sección se aplica a la nueva versión de la herramienta de transfe
 
    Se muestra el siguiente cuadro de diálogo. Tenga en cuenta que un conjunto de migración caducará después de un período prolongado de inactividad. Después de mostrar advertencias en la tarjeta de proyecto y en las filas de la tabla de trabajos de migración durante un período de tiempo, el conjunto de migración caducará y sus datos dejarán de estar disponibles. Revise [Expiración del conjunto de migración](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) para obtener detalles.
 
+   Durante la creación del conjunto de migración, puede elegir la región geográfica en la que se almacenarán los datos de migración temporales.  Se recomienda elegir la región más cercana al entorno de nube de Target para garantizar un rendimiento óptimo durante las ingestas.  La región no se puede cambiar después de crear el conjunto de migración; para utilizar una región diferente, deberá crear un nuevo conjunto de migración.
+
    ![imagen](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
    >[!NOTE]
    >
-   >El nombre debe seguir las mismas convenciones de un nodo AEM, por lo que no puede contener ninguno de estos caracteres: . / : [ ] | *
+   >El nombre debe seguir las mismas convenciones de un nodo AEM, por lo que no puede contener ninguno de estos caracteres: `. / : [ ] | * &lt; > ^ ? { } % # &quot;ni ningún símbolo o emojis inusual.
 
 1. Ahora debería ver la lista de migración en la vista de lista. Seleccione el símbolo de tres puntos (**...**) para abrir la lista desplegable y seleccione **Copiar clave de extracción**. Necesita esta clave durante la fase de extracción. Copie esta clave de extracción.
 
