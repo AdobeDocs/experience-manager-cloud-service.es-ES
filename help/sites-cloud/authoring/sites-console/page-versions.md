@@ -1,14 +1,14 @@
 ---
-title: Uso de versiones de página
-description: AEM Obtenga información sobre cómo crear, comparar y restaurar versiones de sus páginas en la administración de segmentos de página en la administración de segmentos de la página de.
+title: 'Uso de versiones de página  '
+description: Obtenga información sobre cómo crear, comparar y restaurar versiones de sus páginas en AEM.
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b39c455c9bd4b50eb3777cd1a4bdbada48786d62
 workflow-type: tm+mt
-source-wordcount: '1516'
-ht-degree: 97%
+source-wordcount: '1574'
+ht-degree: 93%
 
 ---
 
@@ -25,6 +25,13 @@ Al generar una versión, se crea una “instantánea” de una página en un mom
 * Comparar la versión actual de una página con una versión anterior.
    * Se resaltan las diferencias entre el texto y las imágenes.
 * La deformación de tiempo emplea las versiones de página para determinar el estado del entorno de publicación.
+
+>[!NOTE]
+>
+>En el repositorio de AEM solo se crea una versión del contenido. Los recursos dinámicos, como código, CSS y JavaScript, no tienen versiones.
+>
+>* Cuando se visualizan versiones, el contenido se visualiza con el código, CSS y JavaScript actuales del repositorio.
+>* Al restaurar versiones, solo se restaura el contenido y se le aplican el código, CSS y JavaScript actuales del repositorio.
 
 ## Creación de una nueva versión   {#creating-a-new-version}
 
