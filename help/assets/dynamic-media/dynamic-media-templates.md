@@ -4,9 +4,9 @@ description: Aprenda a crear  [!DNL Dynamic Media] plantillas mediante un editor
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 5bdbd0c7273a1e8a650a87a7d0b0c9749f5e1030
+source-git-commit: f3dea4724f757090a504c3144e17fca7075acc52
 workflow-type: tm+mt
-source-wordcount: '3176'
+source-wordcount: '3165'
 ht-degree: 1%
 
 ---
@@ -310,7 +310,7 @@ Edite la plantilla siguiendo estos pasos:
 3. Seleccione la plantilla.
 4. Haga clic en **[!UICONTROL Editar plantilla]**. El lienzo de la plantilla muestra la plantilla y la lista de todas sus capas en el panel Capas. Comience a editar la plantilla según sus necesidades.
 
-## Añadir el vínculo de la llamada a la acción (CTA) a la capa de plantilla{#add-CTA-in-dynamic-media-templates}
+## Añadir el vínculo de Call to action (CTA) a la capa de plantilla{#add-CTA-in-dynamic-media-templates}
 
 Convierta cualquier imagen o capa de texto de la plantilla [!DNL Dynamic Media] en un hipervínculo agregándole un vínculo de CTA que dirija a los usuarios a una página de destino.
 
@@ -322,8 +322,7 @@ Siga estos pasos para agregar un vínculo de CTA a una capa:
 
    ![agregar CTA](/help/assets/assets/add-cta.png)
 
-1. Haga clic en **[!UICONTROL Vista previa]** para obtener una vista previa de la plantilla y ver sus parámetros definidos.
-1. Haga clic en **[!UICONTROL Publicar]** y seleccione **[!UICONTROL Sí]** para publicar la plantilla, si no se publicó anteriormente.
+1. Haga clic en **[!UICONTROL Vista previa]** y seleccione **[!UICONTROL Publicar]** para publicar la plantilla, si no se publicó anteriormente.
 1. Vaya a la carpeta donde se guardó esta plantilla, selecciónela y haga clic en ![página de detalles](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Detalles]**.
 1. Haga clic en **[!UICONTROL Opciones de copia]** y seleccione **[!UICONTROL Copiar código incrustado]**. Asegúrese de publicar las imágenes de la plantilla en [!DNL AEM and Dynamic Media] para copiar el código incrustado.
 
