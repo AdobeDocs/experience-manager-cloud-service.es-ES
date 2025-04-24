@@ -5,10 +5,10 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: b7f8b4886372e2210ca8899260b3eb11b75ee798
+source-git-commit: 89c47db38bf26f8c5984278e49ad7727a8ec03e5
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 63%
+source-wordcount: '1700'
+ht-degree: 65%
 
 ---
 
@@ -214,10 +214,6 @@ Para establecer el objetivo de aprobación:
 
 
    Para obtener más información sobre las opciones disponibles, consulte [Destino de aprobación predeterminado y destinos de publicación para recursos aprobados](#default-approval-target-options-publish-destinations).
-
-   >[!NOTE]
-   >
-   >La configuración de un objetivo de aprobación es una función de disponibilidad limitada. Puede activarlo o desactivarlo creando un ticket de asistencia. Si tiene Dynamic Media con OpenAPI habilitado, está habilitado de forma predeterminada.
 
    ![Estado de aprobación](/help/assets/assets/approval-status-delivery.png)
 
