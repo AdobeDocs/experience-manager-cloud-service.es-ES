@@ -3,10 +3,10 @@ title: Descarga de recursos desde Content Hub
 description: Obtenga información sobre cómo descargar recursos desde el portal de Content Hub
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: e108d25f3cdc025e0fbe8010854f245f62786baf
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 8%
+source-wordcount: '938'
+ht-degree: 10%
 
 ---
 
@@ -15,16 +15,16 @@ ht-degree: 8%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
         </td>
         <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integración de AEM Assets con Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidad de la IU</b></a>
         </td>
           <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
@@ -74,8 +74,8 @@ Para descargar un recurso y sus representaciones, ejecute los siguientes pasos:
 
    >[!NOTE]
    >
-   * Las representaciones se muestran únicamente si su visibilidad está habilitada mediante la interfaz de usuario de [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
-   * Puede descargar todas las [representaciones de recortes estáticas, dinámicas e inteligentes](#types-of-renditions) al descargar un recurso.
+   >* Las representaciones se muestran únicamente si su visibilidad está habilitada mediante la interfaz de usuario de [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
+   >* Puede descargar todas las [representaciones de recortes estáticas, dinámicas e inteligentes](#types-of-renditions) al descargar un recurso.
 
 1. Seleccione una o más representaciones y haga clic en **[!UICONTROL Descargar]**.
 
@@ -86,7 +86,7 @@ Si está descargando un recurso con licencia, seleccione **[!UICONTROL He leído
 
 >[!NOTE]
 >
-Los usuarios con acceso a [Dynamic Media con funciones de API abierta](/help/assets/dynamic-media-open-apis-overview.md) pueden ver y descargar representaciones de recortes dinámicas e inteligentes.
+> Los usuarios con acceso a [Dynamic Media con funciones de API abierta](/help/assets/dynamic-media-open-apis-overview.md) pueden ver y descargar representaciones de recortes dinámicas e inteligentes.
 
 ## Descargar varios recursos y sus representaciones {#download-multiple-assets-renditions}
 
@@ -103,8 +103,8 @@ Para descargar varios recursos y sus representaciones, ejecute los siguientes pa
 
      >[!NOTE]
      >
-     * Las representaciones se muestran únicamente si su visibilidad está habilitada mediante la interfaz de usuario de [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
-     * Solo puede descargar [representaciones estáticas](#types-of-renditions) al descargar varios recursos.
+     >* Las representaciones se muestran únicamente si su visibilidad está habilitada mediante la interfaz de usuario de [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
+     >* Solo puede descargar [representaciones estáticas](#types-of-renditions) al descargar varios recursos.
 
    Si alguno de los recursos seleccionados es un recurso con licencia, haga clic en la licencia del recurso en el panel izquierdo para ver su vista previa, lo que le permite seleccionar **[!UICONTROL He leído y aceptado los términos y condiciones mencionados anteriormente]** y, a continuación, haga clic en **[!UICONTROL Descargar]**. La vista previa de la licencia solo se muestra si el recurso se aprueba mediante el entorno de creación de Assets as a Cloud Service. Para obtener más información, consulte [Administración de recursos con licencia en Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
@@ -153,17 +153,35 @@ Más información sobre [ver y administrar representaciones en Experience Manage
 
 * [Representaciones estáticas](/help/assets/renditions.md#static-renditions): las representaciones estáticas son versiones creadas previamente de recursos digitales, que generalmente se generan durante la ingesta o modificación de recursos. Están optimizados para usos y plataformas específicos, como miniaturas web, formatos compatibles con dispositivos móviles para diseños adaptables o archivos de alta resolución para imprimir, lo que proporciona una experiencia optimizada y coherente.
 
-* [Representaciones dinámicas](/help/assets/renditions.md#dynamic-renditions): las representaciones dinámicas son versiones personalizadas en tiempo real de los recursos para realizar diversas acciones, como cambiar el tamaño de las imágenes para distintas resoluciones de dispositivo o recortarlas para adaptarlas a distintas proporciones de aspecto. Estas representaciones le permiten ofrecer experiencias personalizadas y optimizadas para satisfacer requisitos más amplios. Las representaciones dinámicas de recursos se crean en el entorno de creación [!DNL Adobe Experience Manager Assets].
+* [Representaciones dinámicas](/help/assets/renditions.md#dynamic-renditions): las representaciones dinámicas son versiones personalizadas en tiempo real de los recursos para realizar diversas acciones, como cambiar el tamaño de las imágenes para distintas resoluciones de dispositivo o recortarlas para adaptarlas a distintas proporciones de aspecto. Estas representaciones le permiten ofrecer experiencias personalizadas y optimizadas para satisfacer requisitos más amplios. Las representaciones dinámicas de recursos se crean en el entorno de creación [!DNL Adobe Experience Manager Assets]. Para obtener información sobre los pasos necesarios para habilitar las representaciones dinámicas, consulte [Habilitar representaciones dinámicas](#enable-dynamic-media-renditions).
 
 * [Recorte inteligente](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): El recorte inteligente se centra únicamente en la parte esencial de un recurso durante el proceso de recorte. Dynamic media smart crop for aprovecha la inteligencia artificial con tecnología de Adobe Sensei para rastrear el punto de interés, asegurándose de que nuestros recursos se vean como sus mejores en todos los tamaños de pantalla. [!DNL Adobe Experience Manager] recorte inteligente muestra la anchura y la altura de las representaciones de un recurso junto con el título. Ver más en [uso del Recorte inteligente con AEM Assets en Dynamic Media](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
+  Las representaciones de recorte inteligente se muestran y solo están disponibles para su descarga si tiene acceso a [Dynamic Media con capacidades OpenAPI](/help/assets/dynamic-media-open-apis-overview.md). Las representaciones de recorte inteligente solo están disponibles para los recursos de imagen.
+
   ![Tipos de representaciones](/help/assets/assets/renditions-types.png)
 
+### Habilitar representaciones dinámicas {#enable-dynamic-media-renditions}
 
->[!NOTE]
-> 
-* La función de representaciones de recorte dinámico e inteligente se encuentra en la fase de adopción anticipada. Para obtener acceso a la funcionalidad, [cree y envíe un caso de asistencia al cliente de Adobe](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
-* Los clientes recién incorporados en [Servicios de API abierta de Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) deben revisar los ajustes preestablecidos de imagen existentes para su aprobación.
+Para habilitar las representaciones dinámicas:
+
+1. Asegúrese de tener acceso a [Dynamic Media con capacidades OpenAPI](/help/assets/dynamic-media-open-apis-overview.md).
+
+   Una vez que tenga acceso a Dynamic Media con las capacidades de OpenAPI, todos los recursos marcados como `Approved` estarán disponibles para su envío público mediante Dynamic Media.
+
+1. Establezca el [objetivo de aprobación del recurso](/help/assets/approve-assets-content-hub.md#set-approval-target) en Content Hub para aprobar los recursos solamente para Content Hub.
+
+1. Habilite la opción **[!UICONTROL Habilitar disponibilidad de representaciones]** disponible en la ficha **[!UICONTROL Representaciones]** de la interfaz de usuario de [Configuración](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub).
+
+1. Vuelva a guardar los ajustes preestablecidos de imagen existentes para que estén disponibles en Content Hub. Solo es aplicable si ha incorporado recientemente a Dynamic Media con OpenAPI.
+
+   Para volver a guardar los ajustes preestablecidos de imagen existentes, vaya a la vista de administración y seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos de imagen]**. Seleccione un ajuste preestablecido, haga clic en **[!UICONTROL Editar]** y luego haga clic en **[!UICONTROL Guardar]**.
+
+
+
+   >[!NOTE]
+   > 
+   > Las representaciones dinámicas solo están disponibles para recursos de imagen.
 
 
 

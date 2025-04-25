@@ -2,10 +2,10 @@
 title: Aprobación de recursos para Content Hub
 description: Obtenga información sobre cómo aprobar recursos en Assets as a Cloud Service para que estén disponibles en Content Hub.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: ba73cc52c337d16a2cd33438eb568adcabd492dd
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 20%
+source-wordcount: '1276'
+ht-degree: 19%
 
 ---
 
@@ -14,16 +14,16 @@ ht-degree: 20%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime y Ultimate</b></a>
         </td>
         <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> integración de <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets con Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integración de AEM Assets con Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nueva</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidad de la interfaz de usuario</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidad de la IU</b></a>
         </td>
           <td>
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuevo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar Dynamic Media Prime y Ultimate</b></a>
@@ -74,7 +74,7 @@ Los recursos marcados como `approved` en Assets as a Cloud Service están dispon
 
 >[!NOTE]
 >
-Assets as a Cloud Service y Content Hub deben utilizar la misma organización para que los recursos se muestren en Content Hub.
+>Assets as a Cloud Service y Content Hub deben utilizar la misma organización para que los recursos se muestren en Content Hub.
 
 Para establecer el estado del recurso como `approved` mediante la vista de Assets en AEM as a Cloud Service:
 
@@ -98,6 +98,52 @@ Para aprobar recursos de forma masiva dentro de una carpeta en la vista Assets:
 1. Seleccione **[!UICONTROL Aprobado]** en el campo **[!UICONTROL Estado]** disponible en la sección [!UICONTROL Propiedades] del panel derecho.
 
 1. Haga clic en **[!UICONTROL Guardar]**.
+
+## Definir destino de aprobación {#set-approval-target}
+
+La vista de Assets le permite publicar recursos aprobados en Dynamic Media con capacidades de OpenAPI, Content Hub o ambas en función del valor establecido en el campo **Destino de aprobación** disponible en la página Detalles del recurso.
+
+Para establecer el objetivo de aprobación:
+
+1. Seleccione el recurso y haga clic en **[!UICONTROL Detalles]** en la barra de herramientas.
+
+1. En la ficha **[!UICONTROL Básico]**, seleccione el estado del recurso en la lista desplegable **[!UICONTROL Estado]**. Los valores posibles incluyen Aprobado, Rechazado y Sin estado (predeterminado).
+
+1. Si selecciona **Aprobado** en el paso 2, seleccione un destino de aprobación. Los valores posibles incluyen Delivery y Content Hub.
+
+   * **Delivery** es la opción predeterminada seleccionada en el menú desplegable y publica el recurso en [Dynamic Media con OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) y [Content Hub](/help/assets/product-overview.md), si ambos están habilitados para Experience Manager Assets.
+
+   * Al seleccionar **Content Hub**, se publica el recurso en Content Hub. Content Hub solo se muestra como opción si está habilitado para Experience Manager Assets.
+
+   * Si no selecciona una opción en la lista desplegable, la opción predeterminada habilitada para su entorno de AEM as a Cloud Service se aplica automáticamente al recurso.
+
+
+   Para obtener más información sobre las opciones disponibles, consulte [Destino de aprobación predeterminado y destinos de publicación para recursos aprobados](#default-approval-target-options-publish-destinations).
+
+   >[!NOTE]
+   >
+   >La configuración de un objetivo de aprobación es una función de disponibilidad limitada. Puede activarlo o desactivarlo creando un ticket de asistencia. Si tiene Dynamic Media con OpenAPI habilitado, está habilitado de forma predeterminada.
+
+   ![Estado de aprobación](/help/assets/assets/approval-status-delivery.png)
+
+1. Especifique otras propiedades del recurso y haga clic en **[!UICONTROL Guardar]**.
+
+Otros puntos que hay que tener en cuenta son:
+
+* Si no usa el formulario de metadatos predeterminado y no puede ver el campo **[!UICONTROL Destino de aprobación]**, [edite el formulario de metadatos](/help/assets/metadata-assets-view.md#metadata-forms) para arrastrar el campo **[!UICONTROL Aprobación para]** desde los componentes disponibles hasta el formulario de metadatos y haga clic en **[!UICONTROL Guardar]**.
+
+* Al seleccionar el destino de aprobación como `Content Hub` mediante la vista de Assets, los recursos se ponen a disposición de los usuarios de Content Hub que forman parte de la misma organización.
+
+### Destinos de aprobación predeterminados y destinos de publicación para recursos aprobados {#default-approval-target-options-publish-destinations}
+
+La siguiente tabla ilustra los requisitos previos para la visualización de la lista desplegable `Approval Target` y el objetivo de aprobación predeterminado en función de la habilitación de DM con OpenAPI y Content Hub en el entorno de AEM as a Cloud Service:
+
+| Dynamic Media con OpenAPI | Content Hub | ¿Se muestra la lista desplegable Destino de aprobación? | Destino de aprobación predeterminado para recursos aprobados | Destino de publicación |
+| --- | --- | --- | --- |---|
+| Habilitado | Habilitado | Sí | Entrega | Dynamic Media con OpenAPI y Content Hub |
+| No disponible | Habilitado | Sí | Content Hub | Content Hub |
+| Habilitado | No disponible | Sí | Entrega | Dynamic Media con OpenAPI |
+| No disponible | No disponible | No | N/D | N/D |
 
 ## Automatice la aprobación de los recursos recién ingeridos en la vista de administración {#automate-approval-newly-ingested-assets}
 
@@ -135,7 +181,7 @@ Siga estos pasos para automatizar la aprobación de los recursos recién ingerid
 
 >[!NOTE]
 > 
-Este método aprueba los recursos recién creados en la carpeta. Para los recursos existentes en la carpeta, debe seleccionarlos y aprobarlos manualmente.
+>Este método aprueba los recursos recién creados en la carpeta. Para los recursos existentes en la carpeta, debe seleccionarlos y aprobarlos manualmente.
 
 ## Administración de recursos cargados mediante Content Hub {#manage-assets-uploaded-using-content-hub}
 
