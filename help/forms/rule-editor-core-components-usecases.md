@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: e5f22d925f9b9ec3a5f80f9506353e42e8879da3
+source-git-commit: bcf8f9e5273819eaee09875ec81251fe4330701c
 workflow-type: tm+mt
-source-wordcount: '1384'
-ht-degree: 47%
+source-wordcount: '1561'
+ht-degree: 42%
 
 ---
 
@@ -17,6 +17,21 @@ ht-degree: 47%
 El artículo proporciona ejemplos detallados del Editor de reglas para un formulario adaptable basado en componentes principales, y proporciona perspectivas sobre su implementación adecuada para diferentes escenarios. El editor de reglas permite a los desarrolladores definir y administrar la lógica que controla el comportamiento de los formularios.
 Ahora, analicemos las diferentes implementaciones de un editor de reglas.
 
+## Definir el enfoque en otro panel al hacer clic en el botón si el primer panel es válido
+
+<span class="preview"> Esta es una función previa al lanzamiento y se puede acceder a ella a través de nuestro [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features). </span>
+
+El editor de reglas permite validar diseños de panel, como pestañas horizontales, pestañas verticales, acordeones o el asistente al hacer clic en un botón y establecer el enfoque en un objeto de formulario en otro panel. Puede utilizar esta funcionalidad para mejorar la navegación del formulario y la experiencia del usuario.
+
+Imagine un formulario de aplicación de varios pasos con un diseño Asistente. Debe completar el panel `Personal Information` antes de pasar a `Employment Details`. Al hacer clic en el botón `Next`, el editor de reglas valida el panel `Personal Information`. Si todos los campos obligatorios se rellenan correctamente, el formulario cambiará automáticamente el enfoque al panel `Employment Details`. De lo contrario, muestra un mensaje de error que pide a los usuarios que completen los campos que faltan.
+
+Puede crear una regla en el botón `Next` para validar el primer panel:
+
+![Regla para el botón Siguiente](/help/forms/assets/next-rule.png){width=50%}
+
+Al hacer clic en el botón **Siguiente**, se valida el panel **Información personal**. Si los detalles introducidos son correctos, el enfoque cambia al panel **Seguridad de la cuenta**; de lo contrario, un mensaje de error le pedirá que rellene los detalles que faltan.
+
+<!--![Video]()-->
 
 ## Desplazamiento entre paneles mediante el botón
 
@@ -158,6 +173,6 @@ En el formulario de pedido de compra que se explica en el ejemplo anterior, se d
 
 ![Example-validate](assets/example-validate.png)
 
-## Consulte también
+## Véase también
 
 {{see-also-rule-editor}}

@@ -4,10 +4,10 @@ description: Un formulario adaptable proporciona varias acciones de envío. Una 
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 role: User, Developer
-source-git-commit: db0487ab11f48690cb36b410b895324e0d4cf684
+source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
 workflow-type: tm+mt
-source-wordcount: '3929'
-ht-degree: 100%
+source-wordcount: '3957'
+ht-degree: 99%
 
 ---
 
@@ -239,6 +239,11 @@ Puede utilizar la configuración de la biblioteca de documentos de SharePoint cr
 Al enviar el formulario, los datos se guardan en el almacenamiento especificado de la biblioteca de documentos de Microsoft® SharePoint.
 La estructura de carpetas para guardar datos es `/folder_name/form_name/year/month/date/submission_id/data`.
 
+>[!NOTE]
+>
+> Los archivos adjuntos también se almacenan en el directorio `/folder_name/form_name/year/month/date/submission_id/data`. Sin embargo, si selecciona **Guardar archivos adjuntos con el nombre original**, los archivos adjuntos se almacenarán en la carpeta utilizando sus nombres de archivo originales.
+> ![image](/help/forms/assets/sp-doc-attachment-af1.png){height=50%,width=50%}
+
 ### Conectar un formulario adaptable a la lista de Microsoft® SharePoint {#connect-af-sharepoint-list}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
@@ -274,7 +279,7 @@ Para conectar AEM Forms a su lista de Sharepoint de Microsoft®:
 
 Puede utilizar la configuración de lista de SharePoint creada en un formulario adaptable para guardar datos o el documento de registro generado en una lista de SharePoint. Siga estos pasos para usar una configuración de almacenamiento de lista de SharePoint en un formulario adaptable como:
 
-1. [Creación de un modelo de datos de formulario con la configuración de la lista de Microsoft® SharePoint](/help/forms/create-form-data-models.md)
+1. [Cree un modelo de datos de formulario (FDM) con Microsoft](/help/forms/create-form-data-models.md)
 1. [Configure el modelo de datos de formulario (FDM) para recuperar y enviar datos](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Creación de un formulario adaptable](/help/forms/creating-adaptive-form.md)
 1. [Configure la acción de envío mediante un modelo de datos de formulario (FDM)](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)

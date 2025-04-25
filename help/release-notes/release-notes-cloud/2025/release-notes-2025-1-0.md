@@ -4,10 +4,10 @@ description: Notas de la versión 2025.1.0 de la versión de  [!DNL Adobe Experi
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+source-git-commit: e178672b51ede70b10bb57f0d7ffb4d39279a84e
 workflow-type: tm+mt
-source-wordcount: '1740'
-ht-degree: 93%
+source-wordcount: '1703'
+ht-degree: 92%
 
 ---
 
@@ -97,9 +97,6 @@ Lanzamiento de nuevo protocolo de asistencia (DASH - Dynamic Adaptive Streaming 
 
 * DASH es el protocolo estándar internacional para streaming de vídeo adaptable y es ampliamente adoptado en el sector.
 
-**Relaciones de recursos**
-
-La vista de Assets ahora admite la visualización y edición de relaciones de recursos en un panel de detalles de recursos simplificado. Añada fácilmente relaciones como Origen y Derivado al contenido para que los usuarios puedan encontrar de forma más eficaz el contenido relevante principal.
 
 **Reprocesamiento de los recursos**
 

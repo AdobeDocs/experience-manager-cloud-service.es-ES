@@ -4,13 +4,13 @@ Description: This article explains how to send data from your Adaptive Form to a
 keywords: Cómo conectar la biblioteca de documentos de SharePoint para un formulario adaptable, Enviar a SharePoint, Crear una configuración de biblioteca de documentos de SharePoint, Utilizar la acción de envío Enviar a SharePoint en un formulario adaptable, Biblioteca de documentos de SharePoint del modelo de datos de AEM Forms, Biblioteca de documentos de SharePoint del modelo de datos de Forms, Integrar el modelo de datos de Forms a la biblioteca de documentos de SharePoint
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 55e8f142e242f5f4010653a155a241ffcf801470
+exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
+source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 82%
+source-wordcount: '635'
+ht-degree: 75%
 
 ---
-
 
 # Conectar un formulario adaptable a la biblioteca de documentos de Microsoft® SharePoint {#connect-af-sharepoint-doc-library}
 
@@ -75,8 +75,14 @@ Puede utilizar la configuración de la biblioteca de documentos de SharePoint cr
 1. Seleccione la **[!UICONTROL Configuración de almacenamiento]**, donde desee guardar los datos.
 1. Haga clic en **[!UICONTROL Guardar]** para guardar la configuración de envío.
 
-Al enviar el formulario, los datos se guardan en el almacenamiento especificado de la biblioteca de documentos de Microsoft® SharePoint.
-La estructura de carpetas para guardar datos es `/folder_name/form_name/year/month/date/submission_id/data`.
+>[!NOTE]
+>
+> Cuando envía el formulario, los datos se guardan en el almacenamiento de la biblioteca de documentos de Microsoft® Sharepoint especificado. La estructura de carpetas para guardar datos es `/folder_name/form_name/year/month/date/submission_id/data`.
+
+>[!NOTE]
+>
+> Los archivos adjuntos también se almacenan en el directorio `/folder_name/form_name/year/month/date/submission_id/data`. Sin embargo, si selecciona **Guardar archivos adjuntos con el nombre original**, los archivos adjuntos se almacenarán en la carpeta utilizando sus nombres de archivo originales.
+> ![image](/help/forms/assets/sp-doc-attachment-af2.png){height=50%,width=50%}
 
 ## Artículos relacionados
 

@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: dab2b94d1e456622f061741ba1b5192c9163c295
+source-git-commit: 321116ce8d6da53c431f68f437cbf7c0050a47e8
 workflow-type: tm+mt
-source-wordcount: '2171'
-ht-degree: 47%
+source-wordcount: '2333'
+ht-degree: 41%
 
 ---
 
@@ -26,17 +26,21 @@ Al comprender y utilizar los tipos de operadores y eventos disponibles, puede de
 
 El editor de reglas proporciona los siguientes operadores lógicos y eventos mediante los cuales puede crear reglas.
 
-* **Is Equal To**
-* **Is Not Equal To**
-* **Starts With**
-* **Ends With**
-* **Contains**
-* **No contiene**
-* **Is Empty**
-* **Is Not Empty**
-* **Has Selected:** devuelve el valor True cuando el usuario selecciona una opción concreta para un botón de opción, un menú desplegable o una casilla de verificación.
-* **Is Initialized (event):** devuelve el valor True cuando un objeto de formulario se procesa en el explorador.
-* **Is Changed (event):** devuelve el valor True cuando el usuario cambia el valor indicado o la opción seleccionada para un objeto de formulario.
+* **Es igual a**: Comprueba si el objeto de formulario coincide con un valor especificado.
+* **No es igual a**: comprueba si un objeto de formulario no coincide con un valor especificado.
+* **Comienza con**: Comprueba si el objeto de formulario comienza con una cadena especificada.
+* **Termina con**: comprueba si un objeto de formulario termina con una cadena especificada.
+* **Contiene**: comprueba si un objeto de formulario incluye una subcadena especificada.
+* **No contiene**: comprueba si un objeto de formulario no incluye una subcadena especificada.
+* **Está vacío**: comprueba si el objeto de formulario está vacío o no se proporcionó.
+* **No está vacío** - Comprueba si el objeto de formulario está presente y no está vacío.
+* **Ha seleccionado**: devuelve el valor &quot;True&quot; cuando un usuario selecciona una casilla de verificación, una lista desplegable o una opción de botón de radio específicos.
+* **Se ha inicializado (evento)** - Devuelve el valor verdadero cuando se procesa un objeto de formulario en el explorador.
+* **Is Changed (event)**: devuelve el valor True cuando un usuario modifica el valor o la selección de un objeto de formulario.
+* **Se hizo clic (evento)** - Devuelve el valor verdadero cuando un usuario hace clic en un objeto de formulario, por ejemplo, un botón. Un usuario puede [agregar varias condiciones al botón y hacer clic](/help/forms/rule-editor-core-components-usecases.md#set-focus-to-another-panel-on-button-click-if-the-first-panel-is-valid).
+* **Es válido**: comprueba si un objeto de formulario cumple los criterios de validación.
+* **No es válido** - Comprueba si un objeto de formulario falla en los criterios de validación.
+
 
 <!--
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
@@ -113,6 +117,10 @@ _
 * Si las reglas se aplican a diferentes campos dentro de la condición When, la regla entra en déclencheur aunque solo se cambie uno de esos campos.
 * Solo puede agregar los campos múltiples en la condición **When** para una regla **AND**. No es posible para una regla **OR**.
 
+>[!NOTE]
+>
+> Para agregar varias condiciones que incluyan un clic en un botón, asegúrese de que el evento de clic en el botón se coloque como primera condición. Por ejemplo, `When button is clicked AND text input equals '5'` es válido, mientras que `When text input equals '5' AND button is clicked` no es compatible.
+
 <!--
 * It is not possible to add multiple fields in the When condition while applying rules to a button.
 
@@ -132,7 +140,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 Si los campos múltiples permitidos en la función de condición When encuentran algún problema, siga los pasos de solución de problemas como:
 
-1. Abra el formulario en modo de edición.
+1. Abra el formulario en modo de edición. 
 1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** de su formulario adaptable.
 1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
 1. Haga clic en Listo y vuelva a guardar el cuadro de diálogo.
@@ -384,6 +392,6 @@ To define a rule based on a form data model:
 
 Ahora vamos a entender varios [ejemplos de un editor de reglas para un formulario adaptable basado en componentes principales](/help/forms/rule-editor-core-components-usecases.md).
 
-## Consulte también
+## Véase también
 
 {{see-also-rule-editor}}
