@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 11d019e10dc9246e5560f7fe27472d047cdc7caa
+source-git-commit: 32aaabb3f47d2352245ab69f68a6ac98b9828449
 workflow-type: tm+mt
-source-wordcount: '1551'
-ht-degree: 48%
+source-wordcount: '1713'
+ht-degree: 43%
 
 ---
 
@@ -162,6 +162,20 @@ El **entorno de ejecución** de Java 21 de mayor rendimiento se implementará au
 >[!IMPORTANT]
 >
 > El **entorno de ejecución** de Java 21 se implementó en sus entornos de desarrollo/RDE en febrero; se aplicará a sus entornos de ensayo/producción el **28 y 29 de abril**. Tenga en cuenta que **crear código** con Java 21 (o Java 17) es independiente del tiempo de ejecución de Java 21; debe realizar acciones explícitas para crear código con Java 21 (o Java 17).
+
+### Aplicación de la directiva de configuración de registro de AEM {#logconfig-policy}
+
+Para garantizar una monitorización eficaz de los entornos de los clientes, los registros de Java de AEM deben mantener un formato coherente y no deben anularse con configuraciones personalizadas. La salida de registro debe permanecer dirigida a los archivos predeterminados. Para el código de producto de AEM, se deben conservar los niveles de registro predeterminados. Sin embargo, es aceptable ajustar los niveles de registro para el código desarrollado por el cliente.
+
+Para ello, no deben realizarse cambios en las siguientes propiedades OSGi:
+* **Configuración del registro de Apache Sling** (PID: `org.apache.sling.commons.log.LogManager`) — *todas las propiedades*
+* **Configuración del registrador de Apache Sling** (PID de fábrica: `org.apache.sling.commons.log.LogManager.factory.config`):
+   * `org.apache.sling.commons.log.file`
+   * `org.apache.sling.commons.log.pattern`
+
+A mediados de mayo, AEM aplicará una directiva en la que se ignorarán las modificaciones personalizadas a estas propiedades. Revise y ajuste sus procesos descendentes en consecuencia. Por ejemplo, si utiliza la función de reenvío de registros:
+* Si el destino de registro espera un formato de registro personalizado (no predeterminado), es posible que tenga que actualizar las reglas de ingesta.
+* Si los cambios en los niveles de registro reducen la cantidad de registros, tenga en cuenta que los niveles de registro predeterminados pueden provocar un aumento significativo del volumen de registro.
 
 ### Registro y reenvío de AEM a más destinos: programa Beta {#log-forwarding-earlyadopter}
 
