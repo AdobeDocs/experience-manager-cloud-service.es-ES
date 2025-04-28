@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 2f79251471d9ec3f586f838c737cde3533874b02
 workflow-type: tm+mt
 source-wordcount: '6134'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1117,7 +1117,7 @@ ht-degree: 99%
       + [Actualización de los fragmentos de contenido para referencias de UUID](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [Ejemplos de consultas de GraphQL](/help/headless/graphql-api/sample-queries.md)
       + [Resolución de problemas de consultas de GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [Entrega de fragmentos de contenido de AEM con OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)
+   + [Envío de fragmentos de contenido de AEM con OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)
    + [OpenAPI de fragmentos de contenido y modelos](/help/headless/content-fragment-openapis.md)
    + [Compatibilidad con fragmentos de contenido en la API HTTP de Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=es)
    + Seguridad {#security}
