@@ -171,7 +171,7 @@ Para integrar, haga lo siguiente:
    1. Copie y pegue las siguientes carpetas y archivos del [elemento repetitivo de AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms) en su proyecto de AEM:
 
       * carpeta [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) 
-      * carpeta [form-common]( https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)
+      * carpeta [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)
       * carpeta [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components)
       * archivo [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 
       * archivo [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)
@@ -179,10 +179,10 @@ Para integrar, haga lo siguiente:
 1. **Actualice las definiciones de componentes y archivos de modelos**
    1. Vaya al archivo `../models/_component-definition.json` de su proyecto de AEM y actualícelo con los cambios del [archivo _component-definition.json en el elemento repetitivo de AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
 
-   1. Vaya al archivo `../models/_component-models.json` de su proyecto de AEM y actualícelo con los cambios del [archivo _component-models.json en el elemento repetitivo de AEM Forms]( https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
+   1. Vaya al archivo `../models/_component-models.json` de su proyecto de AEM y actualícelo con los cambios del [archivo _component-models.json en el elemento repetitivo de AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
 
 1. **Añada el editor de formularios en el script del editor**
-   1. Vaya al archivo `../scripts/editor-support.js` de su proyecto de AEM y actualícelo con los cambios del [archivo editor-support.js en el elemento repetitivo de AEM Forms]( https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
+   1. Vaya al archivo `../scripts/editor-support.js` de su proyecto de AEM y actualícelo con los cambios del [archivo editor-support.js en el elemento repetitivo de AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
 1. **Actualice el archivo de configuración ESLint**
    1. Vaya al archivo `../.eslintignore` de su proyecto de AEM y añada la línea de códigos siguiente para evitar errores relacionados con el motor de reglas del bloque de formularios:
 
