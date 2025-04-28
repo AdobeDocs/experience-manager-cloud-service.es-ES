@@ -4,9 +4,9 @@ description: Utilice el Selector de recursos para buscar y recuperar metadatos y
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1422'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Debe asegurarse de que dispone de los siguientes métodos de comunicación:
 
 * La aplicación host se está ejecutando en HTTPS.
 * No puede ejecutar la aplicación en `localhost`. Si desea integrar el Selector de recursos en su equipo local, debe crear un dominio personalizado, por ejemplo `[https://<your_campany>.localhost.com:<port_number>]`, y añadir este dominio personalizado en la `redirectUrl list`.
-* Puede configurar y agregar clientID a la variable de entorno de AEM Cloud Service con el `imsClientId` correspondiente.
+* Puede configurar y añadir clientID a la variable de entorno de AEM Cloud Service con el `imsClientId` correspondiente.
 <!--* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
 ![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)-->
 * La lista de ámbitos de IMS debe definirse en la configuración del entorno.
