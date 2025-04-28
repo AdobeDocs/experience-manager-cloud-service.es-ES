@@ -4,7 +4,7 @@ description: Aprenda a crear  [!DNL Dynamic Media] plantillas mediante un editor
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: f3dea4724f757090a504c3144e17fca7075acc52
+source-git-commit: e1c571c4798152732d78b8a2c823d5da9664cb9e
 workflow-type: tm+mt
 source-wordcount: '3165'
 ht-degree: 1%
@@ -72,6 +72,9 @@ Algunas de las ventajas clave de las plantillas de [!DNL Dynamic Media] son:
 >[!NOTE]
 >
 >Los clientes con suscripciones al SKU de seguridad mejorada no pueden usar ninguna funcionalidad de [!DNL Dynamic Media], incluidas las plantillas [!DNL Dynamic Media], en ese programa de Cloud Services.
+
+Aprenda a crear una plantilla [!DNL Dynamic Media] paso a paso en este vídeo.
+>[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
 ## Antes de empezar{#prerequisites-for-dynamic-media-wysiwyg-template}
 
@@ -284,9 +287,6 @@ Ejecute los siguientes pasos para copiar la dirección URL de entrega de la plan
 1. Haga clic en **[!UICONTROL Copiar URL]**. Se muestra el cuadro de diálogo **[!UICONTROL Copiar URL]**. Seleccione y copie la dirección URL mostrada. El primer parámetro de la dirección URL comienza después del signo de interrogación **([!UICONTROL ?])** y un par clave-valor comienza con **[!UICONTROL $]** y termina con **[!UICONTROL &amp;]**. La clave y el valor están separados por un signo igual **([!UICONTROL =])**, con la clave a la izquierda y el valor a la derecha.
 1. Pegue esta dirección URL en la pestaña del explorador y vea la plantilla activa. Personalice la plantilla en tiempo real actualizando el valor del parámetro requerido (valor de clave) en la dirección URL directamente, tal como se muestra en el [paso 2](#preview-and-publish-template-and-copy-template-deliver-url) de la sección **Previsualizar y publicar**.
 1. Utilice esta URL para la comercialización rápida de sus productos o servicios. Puede compartir esta URL con sus clientes o integrarla en su sitio web o en cualquier aplicación de terceros descendente para mostrar el banner y realizar actualizaciones en tiempo real para reflejar las ofertas en curso.
-
-Aprenda a crear una plantilla [!DNL Dynamic Media] paso a paso en este vídeo.
->[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
 ## Realice actualizaciones en tiempo real de la plantilla desde la dirección URL{#update-the-template-from-the-url}
 
