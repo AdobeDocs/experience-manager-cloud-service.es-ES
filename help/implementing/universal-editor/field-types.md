@@ -4,10 +4,10 @@ description: Obtenga información acerca de los campos y los tipos de componente
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
+source-git-commit: 3583c8dad2ad8dce941845003dbf850ea0b8ad2a
 workflow-type: tm+mt
-source-wordcount: '1526'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -703,12 +703,7 @@ Un tipo de componente de referencia permite hacer referencia a otro objeto de da
 
 #### Texto enriquecido {#rich-text}
 
-El texto enriquecido permite la entrada de texto enriquecido multilínea. Ofrece tipos de validación adicionales.
-
-| Tipo de validación | Tipo de valor | Descripción | Requerido |
-|---|---|---|---|
-| `maxSize` | `number` | Número máximo de caracteres permitidos | No |
-| `customErrorMsg` | `string` | Mensaje que se mostrará si se supera `maxSize` | No |
+El texto enriquecido permite la entrada de texto enriquecido multilínea.
 
 >[!BEGINTABS]
 
@@ -723,26 +718,6 @@ El texto enriquecido permite la entrada de texto enriquecido multilínea. Ofrece
       "name": "rte",
       "label": "Rich Text",
       "valueType": "string"
-    }
-  ]
-}
-```
-
->[!TAB Muestra 2]
-
-```json
-{
-  "id": "another-richtext",
-  "fields": [
-    {
-      "component": "richtext",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string",
-      "validation": {
-        "maxSize": 1000,
-        "customErrorMsg": "That's about as funny as a screen door on a battleship."
-      }
     }
   ]
 }
