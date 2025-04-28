@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: bcf8f9e5273819eaee09875ec81251fe4330701c
+source-git-commit: e10451553692b6ad957421783e176409b36b642b
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 42%
@@ -31,7 +31,8 @@ Puede crear una regla en el botón `Next` para validar el primer panel:
 
 Al hacer clic en el botón **Siguiente**, se valida el panel **Información personal**. Si los detalles introducidos son correctos, el enfoque cambia al panel **Seguridad de la cuenta**; de lo contrario, un mensaje de error le pedirá que rellene los detalles que faltan.
 
-<!--![Video]()-->
+>[!VIDEO](https://video.tv.adobe.com/v/3457767)
+
 
 ## Desplazamiento entre paneles mediante el botón
 
