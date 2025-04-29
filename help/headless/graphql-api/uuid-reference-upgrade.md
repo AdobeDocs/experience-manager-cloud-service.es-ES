@@ -3,20 +3,15 @@ title: Actualizar los fragmentos de contenido para referencias de UUID
 description: Obtenga información sobre cómo actualizar los fragmentos de contenido para referencias de UUID optimizadas en Adobe Experience Manager as a Cloud Service para la entrega de contenido sin encabezado.
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 5aa04f3b042f8e9f9af97148ceab0288ff210238
+exl-id: 004d1340-8e3a-4e9a-82dc-fa013cea45a7
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1123'
 ht-degree: 2%
 
 ---
 
 # Actualizar los fragmentos de contenido para referencias de UUID {#upgrade-content-fragments-for-UUID-references}
-
->[!IMPORTANT]
->
->Varias funciones de la API de GraphQL para su uso con fragmentos de contenido están disponibles a través del programa de adopción anticipada.
->
->Para ver el estado y cómo solicitarlo si está interesado, consulte las [Notas de la versión](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 Para optimizar la estabilidad de los filtros de GraphQL, puede actualizar el contenido y las referencias de fragmento en los fragmentos de contenido para que utilicen identificadores únicos universales (UUID).
 
@@ -122,12 +117,12 @@ La actualización de contenido se puede administrar mediante el extremo: `/libs/
 | acción | `start` | |
 | serviceTypeId | `uuidUpgradeService` | El ID de tipo de servicio (predefinido, valor fijo). |
 |  segmentSize | `1000` | El número de fragmentos de contenido o modelos que se actualizarán en un segmento (lote). |
-| basePath | `/conf` | Especifique una de estas opciones:<ul><li>AEM la raíz `/conf` para actualizar todas las configuraciones de la</li><li>AEM una ruta de configuración de la seleccionada. para el cual se ejecuta la actualización de contenido<br>Por ejemplo: `/conf/wknd-shared` solo actualiza el inquilino único `wknd-shared`</li></ul> |
+| basePath | `/conf` | Especifique una de estas opciones:<ul><li>la raíz `/conf` para actualizar todas las configuraciones de AEM</li><li>una ruta de configuración de AEM seleccionada. para el cual se ejecuta la actualización de contenido<br>Por ejemplo: `/conf/wknd-shared` solo actualiza el inquilino único `wknd-shared`</li></ul> |
 | intervalo | `10` | Intervalo en segundos, después del cual se actualiza el siguiente segmento de fragmentos de contenido o modelos. |
-| modo | `replicate`, `noReplicate` | <ul><li>AEM `replicate`: replica el mismo trabajo en todas las instancias de Publish de la</li><li>AEM `noReplicate`: solo ejecuta el trabajo en instancias de autor de la</li></ul> |
+| modo | `replicate`, `noReplicate` | <ul><li>`replicate`: replica el mismo trabajo en todas las instancias de publicación de AEM</li><li>`noReplicate`: solo ejecuta el trabajo en instancias de autor de AEM</li></ul> |
 | dryRun |  `true`, `false` | <ul><li>`false`: simular la actualización de contenido, sin guardar ningún cambio de contenido</li><li>`true`: realice la actualización de contenido y guarde los cambios del contenido</li></ul> |
 | **Detalles de la respuesta** | **Valor** | |
-| jobId | `UUID` |  El ID del trabajo que ejecuta la actualización de contenido.<ul><li>Este ID es necesario en cualquier llamada posterior relacionada con esta ejecución.</li><li>AEM Si el valor `mode` está establecido en `replicate`, la ejecución en instancias de Publish también debe estar en la misma instancia de `jobId`.</li></ul> |
+| jobId | `UUID` |  El ID del trabajo que ejecuta la actualización de contenido.<ul><li>Este ID es necesario en cualquier llamada posterior relacionada con esta ejecución.</li><li>Si el valor `mode` está establecido en `replicate`, la ejecución en instancias de publicación de AEM también debe estar en el mismo `jobId`.</li></ul> |
 | parámetros | Los parámetros de actualización de contenido | Estos incluyen los parámetros iniciales proporcionados para iniciar la actualización del contenido y algunos valores predeterminados internos. |
 
 
@@ -267,7 +262,7 @@ Content-Length: 1116
 
 +++Archivos de registro de muestra
 
-AEM Además del estado de una actualización de contenido en ejecución obtenida del punto de conexión HTTP, los registros de proporcionan información detallada del progreso en el nivel de contenido. Por ejemplo:
+Además del estado de una actualización de contenido en ejecución obtenida del extremo HTTP, los registros de AEM proporcionan información detallada del progreso en el nivel de contenido. Por ejemplo:
 
 ```xml
 #Successful model upgrade

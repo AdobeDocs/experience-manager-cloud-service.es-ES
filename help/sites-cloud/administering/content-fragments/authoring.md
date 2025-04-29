@@ -5,20 +5,14 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2847'
+source-wordcount: '2817'
 ht-degree: 6%
 
 ---
 
 # Creación de fragmentos de contenido {#authoring-content-fragments}
-
->[!IMPORTANT]
->
->Varias funciones del editor de fragmentos de contenido están disponibles a través del programa de usuario anticipado.
->
->Para ver el estado y cómo solicitarlo si está interesado, consulte las [Notas de la versión](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 La creación de los fragmentos de contenido se centra en la entrega sin encabezado y en la creación de páginas.
 

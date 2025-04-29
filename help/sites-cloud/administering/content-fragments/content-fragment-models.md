@@ -5,20 +5,14 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 806f6bb210a04a4c0512414e0550c64640ebe8b6
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2260'
-ht-degree: 36%
+source-wordcount: '2230'
+ht-degree: 39%
 
 ---
 
 # Definición de los modelos de fragmento de contenido {#defining-content-fragment-models}
-
->[!IMPORTANT]
->
->Varias funciones de los modelos de fragmentos de contenido están disponibles a través del programa de adopción anticipada.
->
->Para ver el estado y cómo solicitarlo si está interesado, consulte las [Notas de la versión](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 Los modelos de fragmentos de contenido de Adobe Experience Manager (AEM) as a Cloud Service definen la estructura del contenido de sus [fragmentos de contenido](/help/sites-cloud/administering/content-fragments/overview.md). Estos fragmentos se pueden utilizar para la creación de páginas o como base para el contenido sin encabezado.
 
@@ -124,7 +118,7 @@ Hay disponible una selección de tipos de datos para definir el modelo:
 
 * **Etiquetas**
    * Permite a los autores de fragmentos acceder y seleccionar áreas de etiquetas
-* **Referencia a fragmento**
+* **Referencia al fragmento**
    * Referencias a otros fragmentos de contenido; se pueden usar para [crear contenido anidado](#using-references-to-form-nested-content)
    * El tipo de datos se puede configurar para que los autores de fragmentos puedan hacer lo siguiente:
       * Editar directamente el fragmento al que se hace referencia.
@@ -137,7 +131,7 @@ Hay disponible una selección de tipos de datos para definir el modelo:
       * Editar directamente el fragmento al que se hace referencia.
       * Crear un nuevo fragmento de contenido basado en el modelo adecuado
       * Crear nuevas instancias del campo
-   * En el editor, la referencia especifica la ruta al recurso al que se hace referencia; internamente, la referencia se mantiene como un ID único universal (UUID) que hace referencia al recurso
+   * En el editor, las referencia especifica la ruta al recurso al que se hace referencia; internamente, la referencia se mantiene como ID único universal (UUID) que hace referencia al recurso
       * No es necesario conocer el UUID; en el editor de fragmentos puede buscar el fragmento requerido
 
 * **Referencia de contenido**
@@ -149,7 +143,7 @@ Hay disponible una selección de tipos de datos para definir el modelo:
    * Referencias a otros contenidos, de cualquier tipo; se pueden usar para [crear contenido anidado](#using-references-to-form-nested-content)
    * Si se hace referencia a una imagen, puede optar por mostrar una miniatura
    * El campo se puede configurar para permitir que los autores de fragmentos creen nuevas instancias del campo
-   * En el editor, la referencia especifica la ruta al recurso al que se hace referencia; internamente, la referencia se mantiene como un ID único universal (UUID) que hace referencia al recurso
+   * En el editor, las referencia especifica la ruta al recurso al que se hace referencia; internamente, la referencia se mantiene como ID único universal (UUID) que hace referencia al recurso
       * No necesita conocer el UUID; en el editor de fragmentos puede navegar hasta el recurso de recurso requerido
 
 * **Objeto JSON**

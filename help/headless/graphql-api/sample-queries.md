@@ -4,22 +4,16 @@ description: Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encab
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: bc578aca8e07b010194143062322d9fd8820b408
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '1972'
-ht-degree: 88%
+source-wordcount: '1938'
+ht-degree: 90%
 
 ---
 
 # Formación para utilizar GraphQL con AEM: contenido y consultas de muestra {#learn-graphql-with-aem-sample-content-queries}
 
 Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encabezado explorando contenido y consultas de muestra.
-
->[!IMPORTANT]
->
->Varias funciones de la API de GraphQL para su uso con fragmentos de contenido están disponibles a través del programa de adopción anticipada.
->
->Para ver el estado y cómo solicitarlo si está interesado, consulte las [Notas de la versión](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 >[!NOTE]
 >
