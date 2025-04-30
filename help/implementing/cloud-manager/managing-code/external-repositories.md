@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Adoptador anticipado" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: ad74d7a68bfb1be9e72cc7faec4808c36fa0af03
+source-git-commit: 46d3c18f04f8cfb3daef48688f9fbe197fa0ea9a
 workflow-type: tm+mt
-source-wordcount: '1871'
+source-wordcount: '1872'
 ht-degree: 27%
 
 ---
@@ -22,7 +22,7 @@ Obtenga información sobre cómo añadir un repositorio administrado a Adobe en 
 
 ## Configurar un repositorio externo
 
-La configuración de un repositorio externo en Cloud Manager consta de tres pasos:
+La configuración de un repositorio externo en Cloud Manager consiste en los siguientes pasos:
 
 1. [Añada un repositorio externo](#add-external-repo) a un programa seleccionado.
 1. Proporcione un token de acceso al repositorio externo.
