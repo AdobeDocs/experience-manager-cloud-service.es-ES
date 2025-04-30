@@ -4,10 +4,10 @@ description: En este artículo se explica cómo crear plantillas adaptables de F
 feature: Edge Delivery Services
 role: User
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: c68e98cfe442d0b5a928fde596e193073d5cac21
+source-git-commit: e2ea802856a2fbab90d4ddb1ecf7280ce789d59c
 workflow-type: tm+mt
-source-wordcount: '1644'
-ht-degree: 28%
+source-wordcount: '1626'
+ht-degree: 29%
 
 ---
 
@@ -97,13 +97,13 @@ Siga estos pasos para elegir la plantilla y crear el formulario:
 1. Seleccione **[!UICONTROL Crear]** > **[!UICONTROL Formularios adaptables]**. Se abre el asistente.
 1. En la ficha **Source**, seleccione una **plantilla basada en componentes principales** y un **tema**, el botón **[!UICONTROL Crear]** está habilitado.:
 
-![Plantilla basada en componentes principales](/help/forms/assets/core-component-based-template.png)
+   ![Plantilla basada en componentes principales](/help/forms/assets/core-component-based-template.png)
 
 1. (Opcional) En las pestañas **[!UICONTROL Fuente de datos]** o **[!UICONTROL Envío]**, puede seleccionar una fuente de datos o una acción de envío.
 1. (Opcional) En la pestaña **[!UICONTROL Entrega]**, puede especificar una fecha de publicación o cancelación de publicación de un formulario.
 1. Haga clic en **[!UICONTROL Crear]** y aparecerá el asistente **Crear formulario** para:
    1. Especifique el **Nombre** y **Título**.
-   2. Especifique la ubicación en el campo **Ruta** donde se guardará el formulario adaptable.
+   1. Especifique la ubicación en el campo **Ruta** donde se guardará el formulario adaptable.
 
    ![Asistente para crear formularios](/help/forms/assets/create-cc-form.png)
 
@@ -174,30 +174,30 @@ Para publicar un formulario adaptable en Edge Delivery Services, debe [crear una
 Siga estos pasos para crear la configuración de Edge Delivery Services:
 
 >[!BEGINTABS]
->[!TAB Para formularios creados con la plantilla basada en Edge Delivery Services]
+>[!TAB Plantilla basada en Edge Delivery Services]
 
 
 La configuración de Edge Delivery Services para formularios basados en la plantilla basada en Edge Delivery Services se crea automáticamente en el contenedor de configuración del formulario.
 
 ![Configuración de Edge Delivery Services](/help/edge/assets/aem-instance-eds-configuration.png)
 
->[!TAB Para formularios creados con la plantilla basada en componentes principales]
+>[!TAB Plantilla basada en componentes principales]
 
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuración de Edge Delivery Services]** en la instancia de autor de AEM Forms as a Cloud Service.
 
    ![Seleccionar configuración de Edge Delivery Services](/help/edge/assets/select-eds-conf.png)
 
-1. Seleccione la carpeta que coincida con el nombre del formulario. Por ejemplo, si el formulario se llama `enrollment-form`, elija la carpeta `forms/enrollment-form` y haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Configuración]**:
+2. Seleccione la carpeta que coincida con el nombre del formulario. Por ejemplo, si el formulario se llama `enrollment-form`, elija la carpeta `forms/enrollment-form` y haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Configuración]**:
 
    ![Configuración de Edge Delivery Services](/help/forms/assets/create-eds-conf.png)
 
-1. Haga clic en **[!UICONTROL Configuración de Edge Delivery Services]** y luego en **[!UICONTROL Propiedades]** para abrir las propiedades:
+3. Haga clic en **[!UICONTROL Configuración de Edge Delivery Services]** y luego en **[!UICONTROL Propiedades]** para abrir las propiedades:
 
    ![Configuración creada automáticamente](/help/forms/assets/eds-conf.png)
 
    Aparecerá la Configuración de Edge Delivery Services.
 
-1. Especifique lo siguiente en la configuración de Edge Delivery Services:
+4. Especifique lo siguiente en la configuración de Edge Delivery Services:
 
    * **Organización**: especifique el nombre de su organización de GitHub.
 
@@ -206,7 +206,7 @@ La configuración de Edge Delivery Services para formularios basados en la plant
    * **(opcional) host de Edge**: deje la opción Host de Edge tal cual. El formulario se publica en los entornos preview (.page) y live (.live).
    * **(opcional) token de autenticación de sitio**: use el token de autenticación de sitio para autenticar de forma segura las solicitudes entre su instancia de AEM y Edge Delivery Services.
 
-1. Haga clic en **[!UICONTROL Guardar y cerrar]**. Se crea la configuración.
+5. Haga clic en **[!UICONTROL Guardar y cerrar]**. Se crea la configuración.
 
 >[!ENDTABS]
 
@@ -254,7 +254,7 @@ Para acceder al formulario en Edge Delivery Services, es obligatorio publicarlo.
 Las siguientes capturas de pantalla comparan las direcciones URL de los formularios clasificados y activos, así como las vistas previas visuales de los formularios creados con plantillas basadas en Edge Delivery Services y en componentes principales:
 
 >[!BEGINTABS]
->[!TAB Acceder a formularios creados con plantillas basadas en Edge Delivery Services]
+>[!TAB Plantilla basada en Edge Delivery Services]
 
 <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
     <thead>
@@ -275,7 +275,7 @@ Las siguientes capturas de pantalla comparan las direcciones URL de los formular
     </tbody>
   </table>
 
->[!TAB Acceder a formularios creados mediante una plantilla basada en componentes principales]
+>[!TAB Plantilla basada en componentes principales]
 
 <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
   <thead>
