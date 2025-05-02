@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 31fac8e421e58146977222d699bac1c7cf3ee4e5
 workflow-type: tm+mt
 source-wordcount: '1713'
-ht-degree: 43%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 **Nueva IU de administración del modelo de fragmento de contenido**
 
-Para completar aún más la lista de nuevas interfaces de usuario del lado del cliente al trabajar con fragmentos de contenido de AEM, ahora hay una nueva interfaz de usuario de administrador disponible para los modelos de fragmentos de contenido. La nueva interfaz de usuario proporciona una vista de lista limpia y moderna que permite buscar modelos con filtros y que muestra etiquetas de modelo y qué fragmentos de contenido existen basados en un modelo determinado. La documentación se encuentra [aquí](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
+Para completar aún más la lista de nuevas interfaces de usuario del lado del cliente al trabajar con fragmentos de contenido de AEM, ahora hay una nueva interfaz de usuario de administrador disponible para los modelos de fragmentos de contenido. La nueva interfaz de usuario proporciona una vista de lista limpia y moderna que permite buscar modelos con filtros y que muestra etiquetas de modelo y qué fragmentos de contenido existen basados en un modelo determinado. La documentación se encuentra [aquí](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md). 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -73,35 +73,35 @@ Desde abril de 2025, la pestaña Ancho de banda del panel de informes de Dynamic
 Véase [Ancho de banda y almacenamiento, tipos de informes](https://experienceleague.adobe.com/es/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
 
 
-## Nuevas funciones de la vista Assets {#new-features-assets-view}
+## Nuevas funcionalidades de la vista Recursos {#new-features-assets-view}
 
 **Relaciones de recursos**
 
-La vista de Assets ahora admite la visualización y edición de relaciones de recursos en un panel de detalles de recursos simplificado. Agregue fácilmente relaciones como Source y Derivative al contenido para que los usuarios puedan encontrar de forma más eficaz el contenido relevante para los héroes.
+La vista de Assets ahora admite la visualización y edición de relaciones de recursos en un panel de detalles de recursos simplificado. Añada fácilmente relaciones como Origen y Derivado al contenido para que los usuarios puedan encontrar de forma más eficaz el contenido relevante principal.
 
-![Ejemplo de relación de Assets](/help/assets/assets/asset-relations-example.png)
+![Ejemplo de relación de Recursos](/help/assets/assets/asset-relations-example.png)
 
 **Comparar versiones de un recurso**
 
-Ahora puede seleccionar y comparar rápidamente cualquier versión de un recurso con su última versión mediante la vista de Assets.
+Ahora puede seleccionar y comparar rápidamente cualquier versión de un recurso con su última versión mediante la vista de Recursos.
 
 ![comparar versiones del recurso](/help/assets/assets/version-compare2.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Funciones previas al lanzamiento
+### Características previas al lanzamiento
 
-* [Editor universal - Fragmentos de formulario](/help/edge/docs/forms/universal-editor/creating-form-fragments.md): El editor universal ahora le permite crear y reutilizar fragmentos de formulario para Forms adaptable. Estos fragmentos son secciones de formulario reutilizables (por ejemplo, detalles de contacto, campos de consentimiento) que se pueden crear una vez y aplicar en varios formularios. Esta función optimiza la creación de formularios, garantiza la coherencia y mejora la eficacia de la creación.
+* [Editor universal - Fragmentos de formulario](/help/edge/docs/forms/universal-editor/creating-form-fragments.md): El editor universal ahora le permite crear y reutilizar fragmentos de formulario para Formularios adaptables. Estos fragmentos son secciones de formulario reutilizables (por ejemplo, detalles de contacto, campos de consentimiento) que se pueden crear una vez y aplicar en varios formularios. Esta función optimiza la creación de formularios, garantiza la coherencia y mejora la eficacia de la creación.
 
 * [Biblioteca de documentos de SharePoint - Guardar archivos adjuntos con nombres de archivo originales](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): ahora tiene la opción de guardar los archivos adjuntos del formulario utilizando sus nombres de archivo originales al almacenarlos en una biblioteca de documentos de SharePoint. Esta mejora simplifica la identificación y administración de los archivos cargados.
 
 * **Editor de reglas**:
    * [Condición binaria con evento de clic en la cláusula &quot;When&quot;](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): El editor de reglas ahora permite combinar un evento de clic en botón (_Se hace clic_) con otras condiciones dentro de la cláusula &quot;When&quot;. Esto permite un control más preciso de la ejecución de reglas en función de la interacción del usuario y otros factores. Nota: Cuando se utilizan varias condiciones, el evento de clic debe ser la primera condición de la lista.
-   * [Condiciones de validación para campos y paneles](/help/forms/rule-editor-core-components-usecases.md): el editor de reglas ahora incluye _IsValid_ y _IsNotValid_ condiciones. Esto le permite comprobar el estado de validación de campos específicos o paneles completos (incluidos diseños como pestañas horizontales, pestañas verticales, acordeones y asistentes), lo que facilita la navegación mejorada del formulario y la experiencia del usuario basada en los resultados de validación.
+   * [Condiciones de validación para campos y paneles](/help/forms/rule-editor-core-components-usecases.md): el editor de reglas ahora incluye las condiciones _IsValid_ y _IsNotValid_. Esto le permite comprobar el estado de validación de campos específicos o paneles completos (incluidos diseños como pestañas horizontales, pestañas verticales, acordeones y asistentes), lo que facilita la navegación mejorada del formulario y la experiencia del usuario basada en los resultados de validación.
 * [Administración de ámbito mejorada para listas de SharePoint](/help/forms/connect-forms-to-sharepoint-list.md): Los sitios de SharePoint ahora admiten todas las rutas administradas, por ejemplo, /sitios y /equipos. Esta mejora permite una integración más amplia en varias estructuras del sitio de SharePoint, lo que ofrece una mayor flexibilidad para conectarse al contenido de la organización.
-* [Compatibilidad para guardar documentos de registro en listas de SharePoint](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields): Forms creado mediante un modelo de datos de formulario (FDM) basado en listas de SharePoint ahora puede guardar el documento de registro (DoR) en listas de SharePoint configurando la propiedad de campo Referencia de enlace de documento de registro. Esta mejora permite la integración perfecta de los datos de formulario y los documentos compatibles con el almacenamiento de SharePoint.
+* [Compatibilidad para guardar documentos de registro en listas de SharePoint](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields): Formularios creados mediante un modelo de datos de formulario (FDM) basado en listas de SharePoint ahora pueden guardar el documento de registro (DoR) en listas de SharePoint configurando la propiedad de campo Referencia de enlace de documento de registro. Esta mejora permite la integración perfecta de los datos de formulario y los documentos compatibles con el almacenamiento de SharePoint.
 
-### Funciones de acceso anticipado en AEM Forms {#forms-new-early-access-features}
+### Funciones de acceso rápido de AEM Forms {#forms-new-early-access-features}
 
 El programa para acceso rápido de AEM Forms ofrece una oportunidad única de obtener acceso exclusivo a innovaciones punteras y ayudar a dar forma a su desarrollo.
 
@@ -115,15 +115,15 @@ Las funcionalidades de integración entre Forms y AEP ya están disponibles para
 
 ### Mejoras {#enhancements-cif}
 
-* Agregar la selección de variantes de producto para el tipo de datos de referencia de producto de CIF
+* Adición de la selección de variantes de producto para el tipo de datos de referencia de producto de CIF
 * [Experimental]: JSON+LD en componentes principales de CIF en PDP
 * [Experimental]: Capacidad de CIF para borrar la caché
 
 ### Correcciones de errores {#bug-fixes-cif}
 
 * Corregir problema de búsqueda en el campo de producto
-* El formato de URL del producto no funciona como se esperaba para la #variant_sku
-* No se pueden añadir más de 20 SKU al componente de lista de productos
+* El formato de la dirección URL del producto no funciona como se esperaba para #variant_sku
+* No se pueden añadir más de 20 SKU al componente de lista de productos
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -175,9 +175,9 @@ Para ello, no deben realizarse cambios en las siguientes propiedades OSGi:
 
 A mediados de mayo, AEM aplicará una directiva en la que se ignorarán las modificaciones personalizadas a estas propiedades. Revise y ajuste sus procesos descendentes en consecuencia. Por ejemplo, si utiliza la función de reenvío de registros:
 * Si el destino de registro espera un formato de registro personalizado (no predeterminado), es posible que tenga que actualizar las reglas de ingesta.
-* Si los cambios en los niveles de registro reducen la cantidad de registros, tenga en cuenta que los niveles de registro predeterminados pueden provocar un aumento significativo del volumen de registro.
+* Si los cambios en los niveles de registro reducen la cantidad de registros, tenga en cuenta que los niveles de registro predeterminados pueden provocar un aumento significativo del volumen de registros.
 
-### Registro y reenvío de AEM a más destinos: programa Beta {#log-forwarding-earlyadopter}
+### Reenvío de registros de AEM a más destinos: programa Beta {#log-forwarding-earlyadopter}
 
 Ahora en la versión Beta, puede reenviar los registros de AEM a New Relic (mediante HTTPS), Amazon S3 y Sumo Logic. Tenga en cuenta que los registros de AEM (incluido Apache/Dispatcher) son compatibles, los de CDN, no. Envíe un correo electrónico a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para obtener acceso.
 
@@ -192,7 +192,7 @@ Edge Computing acerca el procesamiento de datos al explorador, lo que ofrece ven
 Algunos casos de uso posibles son los siguientes:
 
 * Autenticación con un IdP para acceder al contenido
-* Personalization procesando contenido dinámico en función de la geolocalización, el tipo de dispositivo, los atributos del usuario, etc.
+* Personalización mediante representación de contenido dinámico en función de la geolocalización, el tipo de dispositivo, los atributos de usuario, etc.
 * Manipulación avanzada de imágenes
 * Middleware entre la CDN y un origen
 * Una capa entre el explorador y una API de terceros, tal vez para cambiar el formato de la respuesta de la API
